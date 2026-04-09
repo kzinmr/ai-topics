@@ -1,19 +1,44 @@
 # Newsletter Digest - 2026-04-10
-**Subject:** Fwd: # Monday: Your Classmate Is a...
-**Processed:** 2026-04-09T16:26:11.982951+00:00
-**Articles scraped:** 1
+**Subject:** Fwd: Energy, Not Chips, Will Decide AI's Future: USA and China compared
+**Processed:** 2026-04-09T16:26:31.130856+00:00
+**Articles scraped:** 2
 
 ---
 
-## 1. AI is changing the way students talk in class and how teachers test them
+## 1. Terms of Use - beehiiv
 
-- **URL:** https://edition.cnn.com/2026/04/04/health/ai-impact-college-student-thinking-wellness
-- **Length:** 16954 chars
+- **URL:** https://hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f
+- **Length:** 26846 chars
 
-> EDITOR’S NOTE:
-> The writer is a junior at Yale University in New Haven, Connecticut, and spoke to her peers about their experience with AI usage in class for this article.
-> At this point in her senior year at Yale University, Amanda knows that many of her classmates turn to
-> AI chatbots
-> to write papers and other homework assignments.
-> But she started noticing something bizarre in her smaller seminar classes: Her classmates sit behind laptops with polished talking points and arguments, but the conver
+> Last updated: May 15, 2024
+> Acceptance of the Terms of Use
+> These terms of use are entered into by and between you (“
+> you
+> “ or “
+> your
+> ”) and beehiiv Inc. ( “
+> we
+> ,” “
+> us
+> ” or “
+> our
+> ”). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, “
+> Terms of Use
+> ”), govern your access to and use of our products, functionality and services, including without limitation, those provided through
+> https://www.beehiiv.com/
+> (collectively, “
+> beehiiv
+> ”)
+
+## 2. Hidden tracker
+
+- **URL:** https://email.beehiivstatus.com/93eaffcb4f7bd068b52ce4c6880ce95134da9322/hclick
+- **Length:** 249 chars
+
+> Hello!
+> We are Omnivery
+> You have found this page by following a hidden link in the message body. Congratulation but there is nothing significant to be found here.
+> Contact
+> If you have any questions, feel free to reach out to us at
+> support@omnivery.com
 
