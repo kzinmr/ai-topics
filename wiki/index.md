@@ -17,6 +17,14 @@ Persistent knowledge base for AI/ML technology trends, managed by Hermes Agent.
 <!-- Concept/topic pages: techniques, architectures, paradigms -->
 - [[project-glasswing]] — Anthropic's AI safety initiative for vulnerability research
 - [[ai-safety]] — AI safety concepts and practices (placeholder)
+- [[functional-emotions-llms]] — LLMs develop internal emotion representations that causally influence behavior
+- [[ai-agent-traps]] — Six-category framework for adversarial attacks on autonomous agents
+- [[caid-coordination]] — CMU's multi-agent coding framework using git operations
+- [[meta-harness]] — Automated harness optimization for LLM applications
+- [[long-context-coding-agents]] — Externalizing long-context processing to file systems
+- [[multi-agent-autonomy-scale]] — Self-organizing multi-agent systems at scale
+- [[reasoning-model-cost-transparency]] — Hidden costs in reasoning model API pricing
+- [[agentic-engineering]] — Simon Willison on AI agents as software engineering collaborators
 
 ## Comparisons
 <!-- Side-by-side analysis pages -->
