@@ -1,118 +1,105 @@
 # Newsletter Digest - 2026-04-10
-**Subject:** Fwd: [AINews] Good Friday
-**Processed:** 2026-04-09T16:27:14.391028+00:00
-**Articles scraped:** 6
+**Subject:** Fwd: Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why "This Time Is Different"
+**Processed:** 2026-04-09T16:27:28.471193+00:00
+**Articles scraped:** 7
 
 ---
 
-## 1. [AINews] Good Friday
+## 1. Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why "This Time Is Different"
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=193117526&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTMxMTc1MjYsImlhdCI6MTc3NTI1NDA0NSwiZXhwIjoxNzc3ODQ2MDQ1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.L4sZWMdo-eXYjm6XnMe_zIeVO1pVZ5Q3cCzKtABXajU
-- **Length:** 41989 chars
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=193082940&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTMwODI5NDAsImlhdCI6MTc3NTIzNTQ4NSwiZXhwIjoxNzc3ODI3NDg1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.9TxIIy0b-XlVZDxDSRYTgQHDvKWB0dfyRYqNIIUwAjw&utm_source=substack&utm_medium=email&utm_content=play_card#play
+- **Length:** 118673 chars
 
-> We covered this yesterday, but
-> positive Gemma reviews
-> keep streaming in.
-> Early analytics from our Marc Andreesen pod are already pointing towards it being one of the top Latent Space pods of all time. We’ll hear more from the creators of both OpenClaw and Pi (and many other top Europe-origin AI tools) live from London next week. Livestream links for
-> AIE Europe
-> next week is now up, including a great OpenClaw song.
-> Hit the bell
-> to help promote it in the algorithm please and thank you!
-> AI News for 
+> Fresh off
+> raising a monster $15B
+> ,
+> Marc Andreessen
+> has lived through multiple computing platform shifts firsthand, from Mosaic and Netscape to cofounding A16z.
+> In this episode, Marc joins swyx and Alessio in a16z’s legendary Sand Hill Road office to argue that AI is not just another hype cycle, but the payoff of an “80-year overnight success”: from neural nets and expert systems to transformers, reasoning models, coding, agents, and recursive self-improvement. He lays out why he thinks this mome
 
-## 2. [AINews] Good Friday
+## 2. Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why "This Time Is Different"
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=193117526&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTMxMTc1MjYsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzc1MjU0MDQ1LCJleHAiOjE3Nzc4NDYwNDUsImlzcyI6InB1Yi0xMDg0MDg5Iiwic3ViIjoicmVhY3Rpb24ifQ.XkXLnnq4yA8pRyO1goI2I0F_TkYcyfEXk7vV5jXeLgc&utm_medium=email&utm_campaign=email-reaction&r=2flx6
-- **Length:** 406 chars
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=193082940&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTMwODI5NDAsImlhdCI6MTc3NTIzNTQ4NSwiZXhwIjoxNzc3ODI3NDg1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.9TxIIy0b-XlVZDxDSRYTgQHDvKWB0dfyRYqNIIUwAjw&utm_source=substack&utm_medium=email&utm_content=play_card_show_logo#play
+- **Length:** 118673 chars
 
-> Hey — I came across your writing and really liked how you think.
-> I’m exploring something similar from a different angle — writing about human behavior through a system design lens (like debugging internal patterns).
-> Just started publishing on Substack. If you ever get a moment to read, I’d genuinely value your perspective.
-> Also happy to support your work — feels like there’s an interesting overlap here.
+> Fresh off
+> raising a monster $15B
+> ,
+> Marc Andreessen
+> has lived through multiple computing platform shifts firsthand, from Mosaic and Netscape to cofounding A16z.
+> In this episode, Marc joins swyx and Alessio in a16z’s legendary Sand Hill Road office to argue that AI is not just another hype cycle, but the payoff of an “80-year overnight success”: from neural nets and expert systems to transformers, reasoning models, coding, agents, and recursive self-improvement. He lays out why he thinks this mome
 
-## 3. [AINews] Good Friday
+## 3. Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why "This Time Is Different"
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=193117526&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTMxMTc1MjYsImlhdCI6MTc3NTI1NDA0NSwiZXhwIjoxNzc3ODQ2MDQ1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.L4sZWMdo-eXYjm6XnMe_zIeVO1pVZ5Q3cCzKtABXajU&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
-- **Length:** 406 chars
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=193082940&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTMwODI5NDAsImlhdCI6MTc3NTIzNTQ4NSwiZXhwIjoxNzc3ODI3NDg1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.9TxIIy0b-XlVZDxDSRYTgQHDvKWB0dfyRYqNIIUwAjw&utm_source=substack&utm_medium=email&utm_content=play_card_show_title#play
+- **Length:** 118673 chars
 
-> Hey — I came across your writing and really liked how you think.
-> I’m exploring something similar from a different angle — writing about human behavior through a system design lens (like debugging internal patterns).
-> Just started publishing on Substack. If you ever get a moment to read, I’d genuinely value your perspective.
-> Also happy to support your work — feels like there’s an interesting overlap here.
+> Fresh off
+> raising a monster $15B
+> ,
+> Marc Andreessen
+> has lived through multiple computing platform shifts firsthand, from Mosaic and Netscape to cofounding A16z.
+> In this episode, Marc joins swyx and Alessio in a16z’s legendary Sand Hill Road office to argue that AI is not just another hype cycle, but the payoff of an “80-year overnight success”: from neural nets and expert systems to transformers, reasoning models, coding, agents, and recursive self-improvement. He lays out why he thinks this mome
 
-## 4. [AINews] Good Friday
+## 4. Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why "This Time Is Different"
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=193117526&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTMxMTc1MjYsImlhdCI6MTc3NTI1NDA0NSwiZXhwIjoxNzc3ODQ2MDQ1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.L4sZWMdo-eXYjm6XnMe_zIeVO1pVZ5Q3cCzKtABXajU
-- **Length:** 41989 chars
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=193082940&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTMwODI5NDAsImlhdCI6MTc3NTIzNTQ4NSwiZXhwIjoxNzc3ODI3NDg1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.9TxIIy0b-XlVZDxDSRYTgQHDvKWB0dfyRYqNIIUwAjw&utm_source=substack&utm_medium=email&utm_content=play_card_post_title#play
+- **Length:** 118673 chars
 
-> We covered this yesterday, but
-> positive Gemma reviews
-> keep streaming in.
-> Early analytics from our Marc Andreesen pod are already pointing towards it being one of the top Latent Space pods of all time. We’ll hear more from the creators of both OpenClaw and Pi (and many other top Europe-origin AI tools) live from London next week. Livestream links for
-> AIE Europe
-> next week is now up, including a great OpenClaw song.
-> Hit the bell
-> to help promote it in the algorithm please and thank you!
-> AI News for 
+> Fresh off
+> raising a monster $15B
+> ,
+> Marc Andreessen
+> has lived through multiple computing platform shifts firsthand, from Mosaic and Netscape to cofounding A16z.
+> In this episode, Marc joins swyx and Alessio in a16z’s legendary Sand Hill Road office to argue that AI is not just another hype cycle, but the payoff of an “80-year overnight success”: from neural nets and expert systems to transformers, reasoning models, coding, agents, and recursive self-improvement. He lays out why he thinks this mome
 
-## 5. AINews | AINews
+## 5. Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why "This Time Is Different"
 
-- **URL:** https://substack.com/redirect/6a670dd5-6676-450f-9a41-15400926a7bd?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 1867 chars
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=193082940&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTMwODI5NDAsImlhdCI6MTc3NTIzNTQ4NSwiZXhwIjoxNzc3ODI3NDg1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.9TxIIy0b-XlVZDxDSRYTgQHDvKWB0dfyRYqNIIUwAjw&utm_source=substack&utm_medium=email&utm_content=play_card_duration#play
+- **Length:** 118673 chars
 
-> nemotron-3-super
-> gpt-oss-120b
-> qwen3.5-122b-a10b
-> nvidia
-> perplexity
-> replit
-> base44
-> vllm
-> llama.cpp
-> ollama
-> togethercompute
-> baseten
-> wandb
-> langchain
-> unsloth
-> model-architecture
-> model-optimization
-> inference-speed
-> kv-cache
-> multi-token-prediction
-> agent-infrastructure
-> orchestration
-> persistent-agents
-> model-serving
-> product-launches
-> karpathy
-> ctnzr
-> bnjmn_marie
-> artificialanlys
-> NVIDIA’s Nemotron 3 Super
-> is a
-> 120B parameter / ~12B active
-> open model featuring a
-> hybrid Mamba-Transformer / SSM Latent MoE
-> architecture
+> Fresh off
+> raising a monster $15B
+> ,
+> Marc Andreessen
+> has lived through multiple computing platform shifts firsthand, from Mosaic and Netscape to cofounding A16z.
+> In this episode, Marc joins swyx and Alessio in a16z’s legendary Sand Hill Road office to argue that AI is not just another hype cycle, but the payoff of an “80-year overnight success”: from neural nets and expert systems to transformers, reasoning models, coding, agents, and recursive self-improvement. He lays out why he thinks this mome
 
-## 6. Scaling without Slop
+## 6. - YouTube
 
-- **URL:** https://substack.com/redirect/10098c04-30a7-4f7a-924a-15a49d45cd5f?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 8131 chars
+- **URL:** https://substack.com/redirect/7d7fde9d-c699-4f77-838d-7909eac80064?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 146 chars
 
-> First off, a few major announcements
-> :
-> Yi Tay returns
-> to the podcast today! If you enjoyed his insights on being
-> a 10,000x Yolo Researcher
-> , then you’ll love
-> our catchup on Gemini’s IMO Gold
-> and more.
-> Welcome to
-> the 80,000 AINews subscribers
-> ! We are doubling down on Substack, making Latent Space the one email subscription to keep up on a daily (AINews), weekly (LS Pod), and broader (LS Essays) basis. You can
-> opt-in/out
-> as needed.
-> Latent Space is also turning into a podcast network! Our first ne
+> About
+> Press
+> Copyright
+> Contact us
+> Creators
+> Advertise
+> Developers
+> Terms
+> Privacy
+> Policy & Safety
+> How YouTube works
+> Test new features
+> NFL Sunday Ticket
+
+## 7. - YouTube
+
+- **URL:** https://substack.com/redirect/754ca01a-da65-4a7a-a8ab-cfe851383df4?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 146 chars
+
+> About
+> Press
+> Copyright
+> Contact us
+> Creators
+> Advertise
+> Developers
+> Terms
+> Privacy
+> Policy & Safety
+> How YouTube works
+> Test new features
+> NFL Sunday Ticket
 
