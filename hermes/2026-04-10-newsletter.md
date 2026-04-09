@@ -1,29 +1,31 @@
 # Newsletter Digest - 2026-04-10
-**Subject:** Fwd: Claude Code Leak Exposes Secret Features!
-**Processed:** 2026-04-09T16:28:08.346096+00:00
+**Subject:** Fwd: Alibaba Just Blindsided The West
+**Processed:** 2026-04-09T16:28:15.087888+00:00
 **Articles scraped:** 2
 
 ---
 
-## 1. Claude Code's Entire Source Code Got Leaked via a Sourcemap in npm, Let's Talk About it
+## 1. Zoox sets new geographic milestones, product features for its robotaxi
 
-- **URL:** https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it
-- **Length:** 24564 chars
+- **URL:** https://www.therobotreport.com/zoox-sets-geographic-milestones-product-features-robotaxi/
+- **Length:** 5555 chars
 
-> Earlier today (March 31st, 2026) - Chaofan Shou on X discovered something that Anthropic probably didn’t want the world to see: the
-> entire source code
-> of Claude Code, Anthropic’s official AI coding CLI, was sitting in plain sight on the npm registry via a sourcemap file bundled into the published package.
-> I’ve maintained a backup of that code on GitHub here
-> but that’s not the fun part
-> Let’s dive deep into what’s in it, how the leak happened and most importantly, the things we now know that were 
+> Zoox is expanding its footprint of operations in Las Vegas. | Credit: Zoox
+> Zoox Inc. this week announced a multi-city expansion of its autonomous ride-hailing operations, marking the largest growth phase in its history. The company plans to scale its existing service in San Francisco and Las Vegas while initiating robotaxi testing in Austin and Miami.
+> In addition to the geographic expansion, Foster City, Calif.-based Zoox is introducing a suite of products and services designed to support its pu
 
-## 2. Anthropic accidentally exposes Claude Code source code • The Register
+## 2. Amazon's Zoox to debut robotaxi rides in Austin, Miami later this year
 
-- **URL:** https://www.theregister.com/2026/03/31/anthropic_claude_code_source_code/
-- **Length:** 3714 chars
+- **URL:** https://www.cnbc.com/2026/03/24/amazon-zoox-robotaxi-rides-austin-miami.html
+- **Length:** 3589 chars
 
-> Would you like a closer look at Claude? Someone at Anthropic has some explaining to do, as the official npm package for Claude Code shipped with a map file exposing what appears to be the popular AI coding tool's entire source code.
-> It did as of Tuesday morning, at least, which is when security researcher Chaofan Shou appears to have spotted the exposure and
-> told the world
-> . Snapshots of Claude Code's source code were quickly backed up in a GitHub repository that has been forked more than 41,500
+> A Zoox autonomous robotaxi in San Francisco on Dec. 4, 2024.
+> David Paul Morris | Bloomberg | Getty Images
+> Amazon
+> 's
+> Zoox
+> self-driving unit is preparing to launch its
+> robotaxi
+> service to some members of the public in Austin and Miami later this year, the company announced Tuesday.
+> Zoox will soon deploy its toaster-shaped robotaxis, which have no steering wheel or pedals, for testing in "a small area" of both cities. Trips will initially be limited to Zoox employees and their family and friends, b
 
