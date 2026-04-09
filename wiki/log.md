@@ -40,3 +40,17 @@ Chronological log of all wiki actions.
   - **Comparisons (1):** frontier-models-2026-04
 - **Updated:** index.md (full rebuild), log.md
 - **Sources:** [[raw/articles/]] (97 articles processed)
+
+## 2026-04-09
+- Ingested 84 blog author entities from hn-popular-blogs-2025.opml
+
+## 2026-04-10 — OPML Blog Authors Wiki Ingestion
+- **Source:** ~/hn-popular-blogs-2025.opml (85 feeds)
+- **Entities created:** 84 blog author pages under wiki/entities/
+- **Raw data:** ~/scripts/blog_authors.json (scraped about pages + RSS feeds)
+- **Author name improvements:** Fixed 34 entity files that had domain names or handles as titles
+  - Examples: simonw → Simon Willison, daringfireball-net → John Gruber, paulgraham-com → Paul Graham
+  - mitchellh-com → Mitchell Hashimoto, righto-com → Ken Shirriff, pluralistic-net → Cory Doctorow
+  - krebsonsecurity-com → Brian Krebs, geohot-github-io → George Hotz, overreacted-io → Dan Abramov
+  - And 26 more...
+- **Updated:** wiki/index.md (all 84 bloggers listed with correct names), wiki/log.md
