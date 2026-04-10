@@ -1,8 +1,8 @@
 ---
 title: "Introducing Muse Spark: Scaling Towards Personal Superintelligence"
 url: "https://substack.com/redirect/ad5e29d4-ba95-4af1-86da-6a32b8b9eb1f?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E"
-fetched_at: 2026-04-10T14:11:15.768077+00:00
-source_date: 2026-04-10
+fetched_at: 2026-04-10T16:19:49.640295+00:00
+source_date: 2026-04-11
 tags: [newsletter, auto-ingested]
 ---
 

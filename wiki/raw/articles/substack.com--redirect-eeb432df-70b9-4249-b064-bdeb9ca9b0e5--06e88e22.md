@@ -1,8 +1,8 @@
 ---
 title: "muse-spark-thinking.md · GitHub"
 url: "https://substack.com/redirect/eeb432df-70b9-4249-b064-bdeb9ca9b0e5?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E"
-fetched_at: 2026-04-10T14:11:18.816978+00:00
-source_date: 2026-04-10
+fetched_at: 2026-04-10T16:19:53.064629+00:00
+source_date: 2026-04-11
 tags: [newsletter, auto-ingested]
 ---
 

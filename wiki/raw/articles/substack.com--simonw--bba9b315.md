@@ -1,8 +1,8 @@
 ---
 title: "Simon Willison | Substack"
 url: "https://substack.com/@simonw"
-fetched_at: 2026-04-10T14:11:12.025817+00:00
-source_date: 2026-04-10
+fetched_at: 2026-04-10T16:19:44.307151+00:00
+source_date: 2026-04-11
 tags: [newsletter, auto-ingested]
 ---
 

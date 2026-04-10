@@ -1,8 +1,8 @@
 ---
 title: "muse-spark-instant.md · GitHub"
 url: "https://substack.com/redirect/e4dbd44f-c362-451b-8ab6-0fbb847a1999?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E"
-fetched_at: 2026-04-10T14:11:18.062474+00:00
-source_date: 2026-04-10
+fetched_at: 2026-04-10T16:19:52.353895+00:00
+source_date: 2026-04-11
 tags: [newsletter, auto-ingested]
 ---
 

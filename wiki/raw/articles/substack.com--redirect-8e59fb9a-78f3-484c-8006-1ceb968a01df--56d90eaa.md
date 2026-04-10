@@ -1,8 +1,8 @@
 ---
 title: "Meta’s new model is Muse Spark, and meta.ai chat has some interesting tools"
 url: "https://substack.com/redirect/8e59fb9a-78f3-484c-8006-1ceb968a01df?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E"
-fetched_at: 2026-04-10T14:11:14.948894+00:00
-source_date: 2026-04-10
+fetched_at: 2026-04-10T16:19:49.068540+00:00
+source_date: 2026-04-11
 tags: [newsletter, auto-ingested]
 ---
 

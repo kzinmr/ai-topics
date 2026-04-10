@@ -1,8 +1,8 @@
 ---
 title: "Initial impressions of Llama 4"
 url: "https://substack.com/redirect/be66bf2c-b4a4-40c4-ad52-1ee826f0eedd?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E"
-fetched_at: 2026-04-10T14:11:16.497462+00:00
-source_date: 2026-04-10
+fetched_at: 2026-04-10T16:19:49.904071+00:00
+source_date: 2026-04-11
 tags: [newsletter, auto-ingested]
 ---
 
