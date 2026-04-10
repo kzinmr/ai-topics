@@ -163,8 +163,8 @@ Newsletter articles and papers processed into wiki pages:
 
 
 ### X/Twitter Accounts
-- [[entities/nathan-lambert|Nathan Lambert]] (@natolambert)
-- [[entities/sankalp-sinha|Sankalp Sinha]] (@dejavucoder)
-- [[entities/sero|Sero]] (@0xsero)
-- [[entities/teknium|Teknium]] (@teknium)
-- [[entities/will-brown|Will Brown]] (@willccbb)
+- [[entities/nathan-lambert|Nathan Lambert]] (@natolambert) — RL researcher, Interconnects newsletter
+- [[entities/will-brown|Will Brown]] (@willccbb) — Research Lead at Prime Intellect, verifiers library
+- [[entities/sero|Sero]] (@0xsero) — Sybil Solutions founder, AI infrastructure and local AI
+- [[entities/teknium|Teknium]] (@teknium1) — Nous Research co-founder, Hermes model family
+- [[entities/sankalp-sinha|Sankalp Sinha]] (@dejavucoder) — AI engineer, agentOS contributor

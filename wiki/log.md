@@ -55,5 +55,13 @@ Chronological log of all wiki actions.
   - And 26 more...
 - **Updated:** wiki/index.md (all 84 bloggers listed with correct names), wiki/log.md
 
-## 2026-04-10
-- Added 5 X account entity skeletons: @willccbb, @natolambert, @0xsero, @teknium, @dejavucoder
+## 2026-04-10 — X Account Entity Enrichment
+- **Enriched 5 X account entity pages** from skeleton → full research profiles:
+  - **Will Brown** (@willccbb) — Prime Intellect Research Lead, verifiers library creator, GRPO demos, GenAI Handbook author. Columbia PhD (Papadimitriou, Roughgarden advisors). Key contributor to open-source RL infrastructure.
+  - **Nathan Lambert** (@natolambert) — RL researcher, Interconnects newsletter author. OpenAI alum (2021-2022), Hugging Face alignment team (2023). Pioneer in open RLHF with Zephyr, TRL library. Focus on AI safety, model alignment, and AI safety policy.
+  - **Sero** (@0xsero) — Founder & CEO of Sybil Solutions (founded Oct 2023, $5.5M seed from Andreessen Horowitz). AI infrastructure for decentralized networks. Previously at Dapper Labs (CryptoKitties, NBA Top Shot). Advocate for local-first AI and privacy-preserving systems.
+  - **Teknium** (@teknium1) — Co-founder & Head of Post-Training at Nous Research ($1B valuation, Paradigm Series A 2025). Lead architect of Hermes model family (Hermes 2, 3, 4). Focus on post-training, synthetic data pipelines, RL environments. Open-source advocate.
+  - **Sankalp Sinha** (@dejavucoder) — AI engineer, applied LLM researcher based in India. Contributor to agentOS (Rivet). Focus on AI-assisted coding, agentic workflows, LLM evaluation. Writes extensively about coding tool evolution and developer productivity.
+- **Research methods:** Web search, blog analysis, GitHub profiling, X/Twitter activity review, newsletter analysis, company research
+- **Updated:** wiki/index.md (X/Twitter Accounts section with descriptions)
+- **Status:** All 5 pages now have full frontmatter (status: active), Core Ideas sections, Related wikilinks, and comprehensive project/timeline information
