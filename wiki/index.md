@@ -118,11 +118,13 @@ Blog authors, companies, and AI models/technologies.
 - [[entities/qwen3-6-plus]] — Qwen3.6-Plus
 - [[entities/zoox-expansion]] — Zoox Robotaxi Expansion
 
-## Concept Pages (15)
+## Concept Pages (25)
 
 Ideas, frameworks, and methodologies extracted from articles.
 
 ### AI Development & Engineering
+- [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents (Simon Willison)
+- [[concepts/gnu-ai-reimplementations]] — GNU & AI Reimplementations (antirez)
 
 - [[concepts/agentic-engineering]] — Agentic Engineering (Simon Willison)
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
@@ -133,14 +135,28 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[concepts/world-models-science]] — World Models for Scientific Discovery
 
 ### Agent Systems & Orchestration
+- [[concepts/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
+- [[concepts/anthropic-managed-agents]] — Anthropic Managed Agents
 
 - [[concepts/caid-coordination]] — CAID (Centralized Asynchronous Isolated Delegation)
 - [[concepts/long-context-coding-agents]] — Long-Context via Coding Agents
 - [[concepts/multi-agent-autonomy-scale]] — Multi-Agent Autonomy Scale
 
 ### AI Safety & Ethics
+- [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
 
 - [[concepts/ai-agent-traps]] — AI Agent Traps
+- [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
+
+### AI Infrastructure & Hardware
+
+- [[concepts/compute-scaling-bottlenecks]] — Compute Scaling Bottlenecks (Dylan Patel)
+
+### AI Economics & Industry
+
+- [[concepts/ai-bubble-economics]] — AI Bubble Economics (Ed Zitron)
+- [[concepts/ai-coding-reliability]] — AI Coding Reliability (Gary Marcus)
+- [[concepts/open-source-ai-destruction]] — Open Source AI Destruction (Jeff Geerling)
 - [[concepts/claude-code-leak]] — Claude Code Source Leak
 - [[concepts/project-glasswing]] — Project Glasswing
 - [[concepts/reasoning-model-cost-transparency]] — Reasoning Model Cost Transparency
@@ -183,6 +199,7 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 - [[entities/nathan-lambert|Nathan Lambert]] (@natolambert) — RL researcher, Interconnects newsletter
 - [[entities/dwarkesh-patel|Dwarkesh Patel]] — Long-form interviewer, AI compute/capability researcher
+- [[entities/dylan-patel]] — SemiAnalysis CEO, AI compute infrastructure analyst
 
 ### Bloggers & Writers
 
@@ -196,6 +213,62 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 - [[entities/teknium|Teknium]] (@teknium1) — Nous Research co-founder, Hermes model family
 - [[entities/sankalp-sinha|Sankalp Sinha]] (@dejavucoder) — AI engineer, agentOS contributor
 - [[entities/will-brown|Will Brown]] (@willccbb) — Research Lead at Prime Intellect, verifiers library
+- [[entities/abacaj|abacaj]] (@abacaj)
+- [[entities/alex-banks|Alex Banks]] (@thealexbanks)
+- [[entities/andriy-burkov|Andriy Burkov]] (@burkov)
+- [[entities/ankur-goyal|Ankur Goyal]] (@ankrgyl)
+- [[entities/arlan-r|Arlan R]] (@arlanr)
+- [[entities/armin-ronacher|Armin Ronacher]] (@mitsuhiko)
+- [[entities/ashpreet-bedi|Ashpreet Bedi]] (@ashpreetbedi)
+- [[entities/benjamin-clavi|Benjamin Clavié]] (@bclavie)
+- [[entities/boaz-barak|Boaz Barak]] (@boazbaraktcs)
+- [[entities/bryan-bischof|Bryan Bischof]] (@BEBischof)
+- [[entities/charles-frye|Charles Frye]] (@charles_irl)
+- [[entities/chip-huyen|Chip Huyen]] (@chipro)
+- [[entities/chris-tate|Chris Tate]] (@ctatedev)
+- [[entities/cl-mentine-fourrier|Clémentine Fourrier]] (@clefourrier)
+- [[entities/corbett|Corbett]] (@corbtt)
+- [[entities/daniel-van-strien|Daniel van Strien]] (@vanstriendaniel)
+- [[entities/dorialexander|Dorialexander]] (@Dorialexander)
+- [[entities/doug-turnbull|Doug Turnbull]] (@softwaredoug)
+- [[entities/drew-breunig|Drew Breunig]] (@dbreunig)
+- [[entities/elie-bakouch|Elie Bakouch]] (@eliebakouch)
+- [[entities/eric-hartford|Eric Hartford]] (@QuixiAI)
+- [[entities/eric-zhang|Eric Zhang]] (@ekzhang1)
+- [[entities/ethan-mollick|Ethan Mollick]] (@emollick)
+- [[entities/eugene-yan|Eugene Yan]] (@eugeneyan)
+- [[entities/geoffrey-litt|Geoffrey Litt]] (@geoffreylitt)
+- [[entities/gm8xx8|gm8xx8]] (@gm8xx8)
+- [[entities/grad|Grad]] (@Grad62304977)
+- [[entities/hamel-husain|Hamel Husain]] (@HamelHusain)
+- [[entities/hynek-schlawack|Hynek Schlawack]] (@hynek)
+- [[entities/ian-nuttall|Ian Nuttall]] (@iannuttall)
+- [[entities/jim-fan|Jim Fan]] (@DrJimFan)
+- [[entities/jo-bergum|Jo Bergum]] (@jobergum)
+- [[entities/jonathan-whitaker|Jonathan Whitaker]] (@johnowhitaker)
+- [[entities/jxmo|Jxmo]] (@jxmnop)
+- [[entities/karri-saarinen|Karri Saarinen]] (@karrisaarinen)
+- [[entities/koylan-ai|Koylan AI]] (@koylanai)
+- [[entities/lance-martin|Lance Martin]] (@RLanceMartin)
+- [[entities/late-interaction|Late Interaction]] (@lateinteraction)
+- [[entities/lilian-weng|Lilian Weng]] (@lilianweng)
+- [[entities/mario-zechner|Mario Zechner]] (@badlogicgames)
+- [[entities/nader-dabit|Nader Dabit]] (@dabit3)
+- [[entities/peter-steinberger|Peter Steinberger]] (@steipete)
+- [[entities/philipp-schmid|Philipp Schmid]] (@_philschmid)
+- [[entities/pratik-bhavsar|Pratik Bhavsar]] (@ptkbhv)
+- [[entities/rahul|Rahul]] (@rahulgs)
+- [[entities/ryan-carson|Ryan Carson]] (@ryancarson)
+- [[entities/samuel-colvin|Samuel Colvin]] (@samuelcolvin)
+- [[entities/scott-wu|Scott Wu]] (@ScottWu46)
+- [[entities/spike|Spike]] (@spikedoanz)
+- [[entities/thariq-shihipar|Thariq Shihipar]] (@trq212)
+- [[entities/tom-aarsen|Tom Aarsen]] (@tomaarsen)
+- [[entities/varun-trivedy|Varun Trivedy]] (@Vtrivedy10)
+- [[entities/will-mcgugan|Will McGugan]] (@willmcgugan)
+- [[entities/xjdr|xjdr]] (@_xjdr)
+- [[entities/yacine-mahdid|Yacine Mahdid]] (@yacinemtb)
+- [[entities/zach-mueller|Zach Mueller]] (@TheZachMueller)
 
 ### Local LLM
 

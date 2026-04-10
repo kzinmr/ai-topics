@@ -92,3 +92,34 @@ Chronological log of all wiki actions.
 
 ## 2026-04-10
 - Added 5 X account entity skeletons: @thdxr, @realmcore_, @a1zhang, @danielhanchen, @xeophon
+
+## 2026-04-10 — Major Content Backlog Processing
+
+Processed 47 highest-priority articles from blogwatcher backlog (2,238 total unread).
+
+### New Concept Pages Created (10)
+- [[concepts/cognitive-cost-of-agents]] — Simon Willison on mental load of AI coding
+- [[concepts/claude-mythos-glasswing]] — Anthropic's restricted security model release
+- [[concepts/gnu-ai-reimplementations]] — antirez on AI clean-room reimplementations
+- [[concepts/anthropic-managed-agents]] — Reddit discussion on Anthropic's managed agent platform
+- [[concepts/agent-orchestration-frameworks]] — Comparison of LangGraph, CrewAI, AutoGen etc.
+- [[concepts/compute-scaling-bottlenecks]] — Dylan Patel on ASML/TSMC/HBM constraints
+- [[concepts/ai-bubble-economics]] — Ed Zitron on AI spending reality vs hype
+- [[concepts/ai-coding-reliability]] — Gary Marcus on AI coding tool outages
+- [[concepts/open-source-ai-destruction]] — Jeff Geerling on AI impact on open source
+- [[entities/dylan-patel]] — SemiAnalysis CEO, AI compute infrastructure analyst
+
+### Updated Pages
+- [[concepts/agentic-engineering]] — Added Simon Willison Lenny's Podcast insights
+- [[concepts/local-llm]] — Added Google AI Edge Gallery, Qwen3.5-122B on RTX 6000
+- [[concepts/claude-code-leak]] — Added Project Glasswing details
+- [[index.md]] — Updated concept count (15 → 25), entity count, added new sections
+
+### Sources
+- 9 blogwatcher feeds (Simon Willison, antirez, Gary Marcus, Dwarkesh, Jeff Geerling, etc.)
+- 5 Reddit communities (r/LocalLLaMA, r/LocalLLM, r/AI_Agents, etc.)
+- News: NBC, Wired, Business Insider, Yahoo Finance
+
+
+## 2026-04-10
+- Added 56 X account entity skeletons: @geoffreylitt, @trq212, @RLanceMartin, @gm8xx8, @Grad62304977, @eliebakouch, @arlanr, @corbtt, @lilianweng, @johnowhitaker, @bclavie, @vanstriendaniel, @HamelHusain, @eugeneyan, @charles_irl, @ankrgyl, @TheZachMueller, @jxmnop, @Dorialexander, @BEBischof, @ptkbhv, @DrJimFan, @lateinteraction, @ryancarson, @spikedoanz, @_xjdr, @ctatedev, @Vtrivedy10, @dabit3, @burkov, @_philschmid, @badlogicgames, @dbreunig, @samuelcolvin, @willmcgugan, @mitsuhiko, @hynek, @karrisaarinen, @ScottWu46, @rahulgs, @koylanai, @steipete, @iannuttall, @boazbaraktcs, @ekzhang1, @jobergum, @softwaredoug, @QuixiAI, @emollick, @clefourrier, @ashpreetbedi, @yacinemtb, @abacaj, @tomaarsen, @thealexbanks, @chipro
