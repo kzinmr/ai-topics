@@ -2,9 +2,9 @@
 
 Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-10
+Last updated: 2026-04-10 (enrichment batch 4)
 
-## Entity Pages (103)
+## Entity Pages (111)
 
 Blog authors, companies, and AI models/technologies.
 
@@ -208,6 +208,15 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 - [[entities/ken-shirriff|Ken Shirriff]] — Righto.com, hardware reverse engineering
 
 ### X/Twitter Accounts
+
+- [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko), Flask/Jinja2/Sentry creator, Rust advocate
+- [[entities/benjamin-clavi]] — Benjamin Clavié (@bclavie), IR/NLP researcher, RAGatouille creator, Tokyo-based
+- [[entities/chip-huyen]] — Chip Huyen (@chipro), Author of 'Designing ML Systems' and 'AI Engineering', Stanford
+- [[entities/cl-mentine-fourrier]] — Clémentine Fourrier (@clefourrier), Hugging Face, Open LLM Leaderboard maintainer
+- [[entities/ethan-mollick]] — Ethan Mollick (@emollick), Wharton professor, 'Co-Intelligence' author
+- [[entities/eugene-yan]] — Eugene Yan (@eugeneyan), Anthropic MTS, applied ML expert
+- [[entities/lilian-weng]] — Lilian Weng (@lilianweng), OpenAI VP of Research, Thinking Machines Lab co-founder
+- [[entities/samuel-colvin]] — Samuel Colvin (@samuelcolvin), Pydantic creator, PydanticAI
 
 - [[entities/sero|Sero]] (@0xsero) — Sybil Solutions founder, AI infrastructure and local AI
 - [[entities/teknium|Teknium]] (@teknium1) — Nous Research co-founder, Hermes model family

@@ -1,3 +1,17 @@
+
+### 2026-04-10 — X Account Enrichment (Batch 4)
+- Enriched 8 skeleton entity pages from X/Twitter accounts:
+  - **Armin Ronacher** (@mitsuhiko) — Flask/Jinja2/Sentry creator, 15.8KB, left Sentry 2025, founded Earendil 2026, acquired Pi 2026
+  - **Benjamin Clavié** (@bclavie) — IR/NLP researcher, RAGatouille creator, 12.8KB, PhD at NII Tokyo, ModernBERT co-lead
+  - **Chip Huyen** (@chipro) — ML systems expert, Stanford CS329S, 15.2KB, author of 2 O'Reilly books, Claypot AI founder
+  - **Clémentine Fourrier** (@clefourrier) — HF evaluation researcher, 19.2KB, LightEval creator, Open LLM Leaderboard, GAIA benchmark
+  - **Ethan Mollick** (@emollick) — Wharton professor, 16.3KB, 'Co-Intelligence' NYT bestseller, 419K+ Substack subscribers
+  - **Eugene Yan** (@eugeneyan) — Anthropic MTS, 18.9KB, applied-ml (28.7K GitHub stars), 200+ blog posts
+  - **Lilian Weng** (@lilianweng) — OpenAI VP Research → Thinking Machines Lab co-founder, 15.4KB, $12B valuation
+  - **Samuel Colvin** (@samuelcolvin) — Pydantic creator, 13.3KB, 577M monthly downloads, PydanticAI 23.4K stars
+- All pages: status: complete, with Timeline, Core Ideas, Key Quotes, Related Concepts, Sources sections
+- Quality target: antirez.md (12.9KB) / simon-willison.md (8.8KB) — all exceeded
+- Remaining skeleton pages: 0 of original 8
 # Wiki Log
 
 Chronological log of all wiki actions.
