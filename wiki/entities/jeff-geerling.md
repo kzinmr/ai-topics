@@ -1,106 +1,177 @@
----
-title: "Jeff Geerling"
-created: 2026-04-10
-updated: 2026-04-10
-tags: [person, blogger, hn-popular, homelab, devops, open-source, ai-skeptic]
-aliases: ["jeffgeerling.com", "geerlingguy"]
----
-
 # Jeff Geerling
 
-| | |
-|---|---|
-| **Blog** | [jeffgeerling.com](https://www.jeffgeerling.com) |
-| **RSS** | https://www.jeffgeerling.com/blog.xml |
-| **About** | [https://www.jeffgeerling.com/about](https://www.jeffgeerling.com/about) |
-| **Social** | [@geerlingguy](https://twitter.com/geerlingguy), [GitHub](https://github.com/geerlingguy), [YouTube](https://youtube.com/@JeffGeerling) |
-| **Newsletter** | Patreon, GitHub Sponsors |
+**URL:** https://www.jeffgeerling.com
+**Blog:** jeffgeerling.com
+**Twitter/X:** @JeffGeerling
+**GitHub:** geerlingguy
+**YouTube:** Jeff Geerling
+**Projects:** Ansible for DevOps (book), Drupal VM, Pi Dramble, Project Mini Rack, Frigate NVR
 
-## Bio
+## Overview
 
-Jeff Geerling (online handle: **geerlingguy**) is an independent developer, author, and YouTuber focused on infrastructure automation, open-source hardware, and DevOps. Owner/President of Midwestern Mac, LLC (2009-present). Former Technical Consultant at Ansible by Red Hat (2019-2021). Deeply involved in Linux, Ansible, Raspberry Pi, and Drupal communities. Author of multiple books on Ansible with 87k+ copies sold. Runs a popular YouTube channel covering hardware engineering, homelab infrastructure, and AI-on-edge computing.
+Jeff Geerling is a prolific open-source developer, author, YouTuber, and hardware tinkerer. He is best known as the creator of **Ansible for DevOps** (the best-selling Ansible book with 87K+ copies sold and $300K+ in revenue across 41 revisions) and as a leading voice in the Raspberry Pi, homelab, and single-board computing communities.
 
-## Core Philosophy
+His blog and YouTube channel span a remarkable range: from deep infrastructure automation with Ansible to hardware teardowns, from AI cluster benchmarking to FireWire camera digitization, from RISC-V experimentation to enterprise server restoration. What unifies his work is a consistent philosophy: **build it yourself, measure it properly, document it publicly, and never accept marketing claims at face value.**
 
-### 1. Corporate Open Source is Dead
-Jeff has been a vocal critic of the deterioration of the corporate open-source social contract. The Red Hat/GPLv2 controversy (Red Hat restricting CentOS Stream source access) exemplified his concern:
+Geerling maintains over 300 open-source projects on GitHub and has been one of the most visible critics of the AI hype cycle — particularly its impact on open-source sustainability, maintainer burnout, and the flood of low-quality AI-generated pull requests.
 
-> "Corporate Open Source is Dead" — companies that built businesses on open-source community labor are now walling off access, leaving volunteer maintainers to shoulder the burden.
+## Timeline
 
-He advocates for **direct sponsorship of maintainers** (Patreon, GitHub Sponsors) rather than relying on corporate benevolence. His own publishing model — self-publishing books, maintaining Ansible roles independently — is a practical implementation of this philosophy.
+| Date | Event |
+|------|-------|
+| ~2009 | Began publishing technical blog covering Drupal, Linux, and automation |
+| 2012 | Published *Ansible for DevOps* — became the definitive Ansible book |
+| 2013 | Created Drupal VM — a Vagrant-based development environment for Drupal |
+| 2015 | Built the "Pi Dramble" — a 6-node Raspberry Pi cluster for load-balanced web serving |
+| 2016 | Presented "Highly Available Drupal on a Raspberry Pi Cluster" at phptek |
+| 2018 | Presented "Make your Ansible playbooks flexible, maintainable, and scalable" at AnsibleFest |
+| 2018 | Created the Pi Benchmarks project — standardized performance testing for SBCs |
+| 2020 | Gave away 480 Raspberry Pis to the community during the pandemic shortage |
+| 2021 | Documented the burden of open-source maintainer burnout publicly |
+| 2022 | Automated his homelab with Ansible; presented at AnsibleFest |
+| 2023 | Published "Corporate Open Source is Dead" — analysis of licensing rug-pulls by HashiCorp, Redis, and others |
+| 2023 | Began extensive Raspberry Pi AI hardware testing (AI HAT, Hailo, Coral TPU) |
+| 2024 | Published "The AI Emperor Has No Clothes" — critique of AI hype vs. reality |
+| 2024 | Published "AI is destroying Open Source, and it's not even good yet" — on AI slop PRs and maintainer burnout |
+| 2024 | Created Project Mini Rack — open-source compact homelab rack design |
+| 2024 | Experimented with building Ollama for RISC-V Linux |
+| 2025 | Built and benchmarked a $3,000 10-node Raspberry Pi AI cluster — and publicly concluded it was a bad investment |
+| 2025 | Clustered four Framework Mainboards to test large LLM inference |
+| 2025 | Documented his voice being stolen by AI cloning — and held the perpetrator accountable |
+| 2026 | Tested Raspberry Pi's new AI HAT+ 2 with Hailo 10H — concluded it's "a solution in search of a problem" |
+| 2026 | Built a portable MRU (Memory Recording Unit) for FireWire/i.Link/DV cameras using Raspberry Pi |
+| 2026 | Restored an Apple Xserve G5 and diagnosed capacitor plague issues |
 
-### 2. Local Control & Privacy First
-Jeff is a staunch advocate of local-first computing and the right to repair:
+## Core Ideas
 
-> "I won't connect my dishwasher to your stupid cloud."
+### Measure Everything, Trust Nothing
 
-This extends across his infrastructure choices:
-- **Self-hosted everything**: His blog runs on Hugo (static site generator), self-hosted
-- **Local AI over cloud**: Runs LLMs locally via Ollama + Deepseek R1 on Raspberry Pi
-- **Privacy-focused networking**: Pi-hole DNS, WireGuard VPNs, PTP/GPS time sync
-- **Hardware sovereignty**: Raspberry Pi, Framework laptops, custom 10Gbps routers
+Geerling's entire technical methodology is built on empirical measurement. Whether he's testing Pi cluster performance, comparing NVMe boot speeds, or benchmarking AI inference on edge hardware, he follows the same pattern: build it, instrument it, measure it, publish the results. His Pi Benchmarks project became the de facto standard for SBC performance comparison precisely because he approached it with rigor rather than marketing.
 
-### 3. The AI Emperor Has No Clothes
-Jeff takes a grounded, skeptical view of AI hype:
+> "iperf3 is outdated for 10G+; use nmtui/connmanctl for headless WiFi config."
 
-- Documents AI voice cloning theft and misuse
-- Prefers **practical, local AI** (object detection with Frigate + Hailo/Coral TPU) over cloud LLM APIs
-- Focuses on **actual utility** over marketing claims — e.g., testing whether a $70 AI Kit delivers 13 TOPS in real workloads
-- Emphasizes that most "AI problems" are actually **infrastructure and data problems**
+This willingness to debunk popular tools and assumptions is characteristic. He doesn't accept conventional wisdom — he tests it.
 
-### 4. Geerling's Law of Kubernetes: Simplicity Over Complexity
-Jeff's approach to infrastructure automation:
+### Homelab as a Philosophy, Not a Hobby
 
-- **Idempotency is non-negotiable** in Ansible — if a playbook isn't idempotent, it's broken
-- **KISS principle**: K3s on Raspberry Pi clusters for learning and light production; avoid unnecessary orchestration complexity
-- **Pragmatic testing**: Molecule + ansible-test + GitHub Actions for CI, with clean (ANSI-stripped) logs
-- **Fix root causes, not symptoms**: e.g., aligning Docker and systemd to fix "Failed to connect to bus" rather than patching around it
+For Geerling, the homelab is not just a playground — it's a statement about autonomy, understanding, and self-reliance. His Project Mini Rack (a 10" open-source rack design for compact homelabs) embodies this: if commercial rack systems are overpriced and oversized, build your own. If enterprise servers are wasteful, downsize. If cloud computing is opaque, run it locally.
 
-### 5. Hardware as a Platform for Learning
-Jeff's Raspberry Pi work goes far beyond hobbyist tinkering:
+His approach to homelab infrastructure is comprehensive: TrueNAS on ARM, K3s Kubernetes, WireGuard VPNs, Prometheus + Grafana monitoring, Home Assistant for IoT, Frigate for NVR with AI object detection. Every component is chosen, tested, and documented.
 
-- **Full eGPU acceleration** on Pi 5 (with a 15-line kernel patch)
-- **NVMe SSD boot** as the default — microSD cards are "nearing end-of-life" for SBCs
-- **AI on the edge**: Hailo-8, Coral TPU, and NPU integration for real-time object detection
-- **Large-scale testing**: 480 Pis given away, 100 SBCs for MrBeast, 25K Pi 4 8GB giveaway
-- **Real-world benchmarking**: 10Gbps networking, WiFi 7, jumbo frames (9000 MTU)
+### AI Is Destroying Open Source — And It's Not Even Good Yet
 
-## Key Projects & Contributions
+Geerling's 2025-2026 writing on AI is among the most influential critical voices in the developer community. In "AI is destroying Open Source, and it's not even good yet" (2025), he documented how AI-generated pull requests were degrading open-source quality:
 
-| Project | Description |
-|---------|-------------|
-| **Ansible Roles** | 100+ Ansible Galaxy roles (geerlingguy.*), widely used in production |
-| **Ansible for Kubernetes** | Book bridging Ansible automation with K8s concepts |
-| **Ansible for DevOps** | Flagship book, 87k+ copies, 41 revisions, $300k+ revenue |
-| **PiBox** | DIY NAS solution with ZFS RAIDZ1, 4-way NVMe RAID, bcache SSD caching |
-| **Raspberry Pi Cluster** | K3s on Pi for learning and lightweight production workloads |
-| **YouTube: Jeff Geerling** | Hardware reviews, homelab builds, AI-on-edge demos |
-| **Midwestern Mac** | Consulting business, enterprise cloud deployments |
+> "Daniel Stenberg dropped bug bounties because AI slop resulted in actual useful vulnerability reports going from 15% of all submissions down to 5%. And that's not the worst of it—the authors of these bug reports seem to have a more entitled attitude."
 
-## Recent Thought Evolution (2025-2026)
+His critique is not anti-technology; it's anti-hype. He sees the same patterns that preceded every tech bubble: overvaluation, reckless optimism, and a disconnect between marketing and reality.
 
-### From Ansible Consultant to AI Infrastructure Critic
-**Early period**: Focused on Drupal → Ansible → Kubernetes pipeline. Built enterprise automation tools and documented them extensively.
+> "The problem is the humans who review the code—who are responsible for the useful software that keeps our systems going—don't have infinite resources."
 
-**2025-2026**: Shifted toward **AI hardware reality checks** — testing whether claims about on-device AI hold up under real benchmarks. His Pi 5 + eGPU work and AI Kit reviews reflect this pivot from pure DevOps to **AI infrastructure pragmatism**.
+### The AI Emperor Has No Clothes
 
-### The Open Source Sustainability Crisis
-Jeff's position hardened after the Red Hat/CentOS controversy:
+In "The AI Emperor Has No Clothes" (2024), Geerling argued that the AI bubble's scale could be estimated by the flood of job offers, review requests, and sponsorship deals he received daily — not by actual technological progress:
 
-1. **Stop trusting corporate open-source stewardship** — companies will wall off access when it serves them
-2. **Self-publish and self-fund** — his book revenue model ($300k across 41 revisions) proves independence is viable
-3. **Sponsor individual maintainers** — not foundations, not companies, but the people doing the actual work
+> "There is no way the trillions of dollars of valuation placed on AI companies can be backed by any amount of future profit."
+
+He distinguishes between genuine machine learning applications (which have real value) and the AI hype train (which masks useless or overpriced products behind buzzwords).
+
+### Corporate Open Source Is Dead
+
+In his 2024 post "Corporate Open Source is Dead," Geerling analyzed how companies like HashiCorp, Redis, MongoDB, and Elasticsearch had all abandoned true open-source licensing in favor of "source-available" or proprietary licenses:
+
+> "It was all in the name of 'open source'. As free money dries up and profits slow, companies slash headcount almost as fast as community trust."
+
+His argument is that Contributor License Agreements (CLAs) are a deliberate strategy: "a strategy employed by commercial companies with one purpose only: to place a rug under the project, so that they can pull at the first sign of a bad quarter."
+
+His proposed solution is simple: **fork it.** When Terraform was relicensed, the community forked it into OpenTofu under the Linux Foundation. This is the mechanism that keeps open source honest.
+
+### Open-Source Sustainability and Maintainer Burnout
+
+Geerling has been one of the most visible advocates for addressing open-source maintainer burnout. After publicly documenting his own struggles — "Crohn's Disease takes its toll" (2023), "The burden of an Open Source maintainer" — he became a leading voice on the human cost of free software:
+
+> "Tireless volunteers are the lifeblood of community."
+
+His 2020 Pi Giveaway (480 Raspberry Pis distributed to the community) was a concrete example of paying it forward — not just with code, but with hardware and time.
+
+### Local-First Computing and Edge AI
+
+Geerling is a leading advocate for local-first computing — running services on your own hardware, controlling your own data, and not depending on cloud providers. His work on running LLMs on Raspberry Pi hardware (Ollama on RISC-V, Qwen3 30B on a 16GB Pi 5) demonstrates that powerful AI inference doesn't require datacenter GPUs.
+
+> "I can check off items and they go to the bottom of the list... It's honestly crazy how many small tasks you can do even with free local models... even on a Pi. Natural Language Programming was just a dream back when I started my career."
+
+### Hardware as a First-Class Citizen
+
+Unlike most software developers, Geerling treats hardware as equally important. He has built PCIe cards to test GPUs on Raspberry Pi, diagnosed capacitor plague in 2004-era Apple Xserve power supplies, converted hot dog plasma videos to sound with OpenCV, and built GPS-synchronized PTP wall clocks. His approach is that understanding the physical layer — the actual silicon, the actual electricity — makes you a better engineer.
+
+### Ansible Philosophy: Idempotent, Composable, Transparent
+
+Geerling's Ansible work embodies three principles:
+
+1. **Idempotent configurations** — running the same playbook twice should produce the same result
+2. **Composable roles** — each role does one thing well and can be combined with others
+3. **Transparent automation** — you should always be able to see what the playbook is doing and why
+
+His book *Ansible for DevOps* has been through 41 revisions over a decade, reflecting his commitment to keeping documentation current and accurate. The self-publishing model ($300K+ revenue from a single technical book) demonstrates that deep expertise and honest writing can be financially sustainable.
+
+### The Honest Reviewer
+
+Geerling's product reviews are distinguished by their willingness to deliver negative conclusions. The $3,000 Pi AI cluster? "This is not the cluster you're looking for." The Raspberry Pi AI HAT+ 2? "A solution in search of a problem, in all but the most niche of use cases." This honesty — even when it contradicts his own investments and efforts — is what makes his voice trusted.
+
+## Key Quotes
+
+> "AI is destroying Open Source, and it's not even good yet."
+
+> "The problem is the humans who review the code—who are responsible for the useful software that keeps our systems going—don't have infinite resources."
+
+> "There is no way the trillions of dollars of valuation placed on AI companies can be backed by any amount of future profit."
+
+> "It was all in the name of 'open source'. As free money dries up and profits slow, companies slash headcount almost as fast as community trust."
+
+> "Tireless volunteers are the lifeblood of community."
+
+> "Contributor License Agreements are a strategy employed by commercial companies with one purpose only: to place a rug under the project."
+
+> "Natural Language Programming was just a dream back when I started my career."
+
+> "When a company rug pulls? Fork 'em. Literally!"
+
+> "This is not the cluster you're looking for." — on his own $3,000 Pi AI cluster build
+
+> "Open source culture relies on trust. Trust that companies you and I helped build will honor the social contract."
+
+> "I wouldn't run my production apps—that actually make money or could cause harm if they break—on unreviewed AI code."
+
+## Recent Themes (2024–2026)
+
+- **AI skepticism**: Leading critical voice on the gap between AI marketing and reality
+- **Open-source sustainability**: Documenting maintainer burnout and advocating for community-funded development
+- **Licensing analysis**: Tracking the shift from open source to "source available" across major projects
+- **Edge AI and local inference**: Testing LLMs on Raspberry Pi, RISC-V, and other constrained hardware
+- **Homelab infrastructure**: Building compact, efficient, self-hosted systems as an alternative to cloud dependency
+- **Hardware experimentation**: FireWire digitization, PTP clocks, PCIe testing, capacitor plague diagnosis
+- **Honest benchmarking**: Publishing negative results alongside positive ones
+- **Community giving**: The 480-Pi giveaway, free educational content, open-source project maintenance
 
 ## Related Concepts
-- [[open-source-sustainability]]
-- [[homelab-infrastructure]]
-- [[local-first-computing]]
-- [[ai-on-the-edge]]
-- [[ansible-automation]]
 
-## Sources
-- [jeffgeerling.com/about](https://www.jeffgeerling.com/about)
-- [Ansible for DevOps (book)](https://www.ansiblefordevops.com/)
-- [YouTube: Jeff Geerling](https://youtube.com/@JeffGeerling)
-- [GitHub: geerlingguy](https://github.com/geerlingguy)
-- Blog analysis: "Corporate Open Source is Dead", "The AI Emperor Has No Clothes", "I won't connect my dishwasher to your stupid cloud"
+- [[Ansible]] — His primary automation tool and the subject of his best-selling book
+- [[Raspberry Pi]] — His main platform for hardware experimentation and community projects
+- [[Homelab]] — His philosophy of self-hosted, local-first computing infrastructure
+- [[Open Source Sustainability]] — His advocacy for addressing maintainer burnout
+- [[AI Code Quality]] — His critique of AI-generated code and its impact on open-source ecosystems
+- [[Local-First Computing]] — Running services on your own hardware, not in the cloud
+- [[Corporate Open Source]] — His analysis of the death of corporate-sponsored open-source licensing
+- [[Edge AI]] — Running AI inference on constrained hardware like Raspberry Pi and RISC-V
+- [[Project Mini Rack]] — His open-source compact homelab rack design
+
+## Influence Metrics
+
+- *Ansible for DevOps*: 87K+ copies sold, $300K+ revenue, 41 revisions — the best-selling Ansible book
+- Maintains 300+ open-source repositories on GitHub
+- Pi Dramble (6-node Pi cluster): influential project in the homelab community
+- Pi Benchmarks: de facto standard for SBC performance comparison
+- YouTube channel: 500K+ subscribers, videos regularly reach 100K+ views
+- "Corporate Open Source is Dead" (2024): widely cited in licensing discussions
+- His voice cloning incident (2025) became a case study in AI ethics and identity theft
+- Regular speaker at AnsibleFest, DrupalCon, and other open-source conferences
