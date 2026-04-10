@@ -54,3 +54,6 @@ Chronological log of all wiki actions.
   - krebsonsecurity-com → Brian Krebs, geohot-github-io → George Hotz, overreacted-io → Dan Abramov
   - And 26 more...
 - **Updated:** wiki/index.md (all 84 bloggers listed with correct names), wiki/log.md
+
+## 2026-04-10
+- Added 5 X account entity skeletons: @willccbb, @natolambert, @0xsero, @teknium, @dejavucoder

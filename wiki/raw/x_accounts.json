@@ -1,0 +1,224 @@
+[
+  {
+    "account": {
+      "handle": "@willccbb",
+      "name": "Will Brown",
+      "topics": [
+        "ai",
+        "ml-research",
+        "rlhf"
+      ],
+      "notes": "RLHF/alignment researcher, active on ML Twitter"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": ""
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@natolambert",
+      "name": "Nathan Lambert",
+      "blog": "https://www.interconnects.ai",
+      "rss": "https://www.interconnects.ai/feed",
+      "topics": [
+        "ai",
+        "rlhf",
+        "open-source-models",
+        "ai-policy"
+      ],
+      "notes": "Interconnects newsletter, ex-HuggingFace, AI2 RLHF lead"
+    },
+    "about": {
+      "bio": "Interconnects is a newsletter covering the latest AI models, the methods used to train them, and the trajectory of the technology. 1 to 3 times a week you\u2019ll receive a mix of essays, model reviews, interviews with researchers, and surveys of the open model ecosystem. Interconnects is founded and operated by\nNathan Lambert\n\u2014 a senior research scientist and post-training lead at the Allen Institute for AI (Ai2). At the non-profit Ai2, Nathan trains open language models (\nOlmos\n) and shares cutting edge research. Interconnects serves his broader goals of creating a more informed AI ecosystem built on openness and transparency.\nInterconnects grew out of a longer history of Nathan trying to share educational resources in the AI space. Soon after the release of ChatGPT, Nathan transitioned a hobbyist approach to writing into a weekly commitment with over 300 posts to date. This is now deeply intertwined with his research practice and taste \u2014 trying to transfer the feeling of understanding a cutting edge research topic in AI to his readers.\nNathan is also known for a series of prominent research works in post-training language models, such as\nOlmo\n,\nT\u00fclu 2 or 3\n,\nRewardBench\n,\nZephyr-Beta\n, the\nOpen LLM Leaderboard\n,\nMolmo\n, or the first textbook on\nRLHF\n. Core topics of Interconnects follow Nathan\u2019s work closely, from early days on\nreinforcement learning from human feedback\n(RLHF) to the\nreasoning models\nof today, with a particular focus on\nopen-source AI\nand\nopen models\n. To understand Nathan\u2019s approach to research, you can read more on his\npath into AI\n.\nMany of the most popular pieces on Interconnects are frontier model reviews, such as recapping the\nDeepSeek R1 recipe\nor explaining\no3\u2019s odd over-optimization\n. For some more timeless pieces, consider exploring:\nAll essays and model reviews are voice-overed by Nathan and available in\npodcast\nfeeds along with the interviews.\nThe most valuable thing is to\nsubscribe\nand spread the word with friends. On Substack, likes, com",
+      "about_url": "https://www.interconnects.ai/about",
+      "meta_author": "Nathan Lambert"
+    },
+    "rss_url": "https://www.interconnects.ai/feed",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@0xsero",
+      "name": "Sero",
+      "topics": [
+        "ai",
+        "ml-engineering",
+        "open-source"
+      ],
+      "notes": "ML engineering, open-source AI community"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": ""
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@teknium",
+      "name": "Teknium",
+      "topics": [
+        "ai",
+        "fine-tuning",
+        "open-source-models",
+        "datasets"
+      ],
+      "notes": "Creator of OpenHermes datasets, Nous Research co-founder"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": ""
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@dejavucoder",
+      "name": "Sankalp Sinha",
+      "blog": "https://sankalp.bearblog.dev",
+      "topics": [
+        "ai",
+        "coding",
+        "ml-engineering"
+      ],
+      "notes": "ML engineer, bearblog author"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": "sankalp's blog"
+    },
+    "rss_url": "https://sankalp.bearblog.dev/feed/",
+    "topics": [
+      "songs to wind down",
+      "Ideas to grow on X the everything app (formerly Twitter)",
+      "A Guide to Claude Code 2.0 and getting better at using coding agents",
+      "How prompt caching works - Paged Attention and Automatic Prefix Caching plus practical tips",
+      "how to hit prompt cache more consistently",
+      "Can LLMs dream of Electric Sheep?",
+      "My Experience With Claude Code After 2 Weeks of Adventures",
+      "shoulto and trent on dwarkesh podcast - ideas on becoming world class, how they became researchers and agency",
+      "claude code and openai codex cli are gimmicks",
+      "learning gpu programming basics till flash attention probably as first milestone"
+    ]
+  },
+  {
+    "account": {
+      "handle": "@willccbb",
+      "name": "Will Brown",
+      "topics": [
+        "ai",
+        "ml-research",
+        "rlhf"
+      ],
+      "notes": "RLHF/alignment researcher, active on ML Twitter"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": ""
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@natolambert",
+      "name": "Nathan Lambert",
+      "blog": "https://www.interconnects.ai",
+      "rss": "https://www.interconnects.ai/feed",
+      "topics": [
+        "ai",
+        "rlhf",
+        "open-source-models",
+        "ai-policy"
+      ],
+      "notes": "Interconnects newsletter, ex-HuggingFace, AI2 RLHF lead"
+    },
+    "about": {
+      "bio": "Interconnects is a newsletter covering the latest AI models, the methods used to train them, and the trajectory of the technology. 1 to 3 times a week you\u2019ll receive a mix of essays, model reviews, interviews with researchers, and surveys of the open model ecosystem. Interconnects is founded and operated by\nNathan Lambert\n\u2014 a senior research scientist and post-training lead at the Allen Institute for AI (Ai2). At the non-profit Ai2, Nathan trains open language models (\nOlmos\n) and shares cutting edge research. Interconnects serves his broader goals of creating a more informed AI ecosystem built on openness and transparency.\nInterconnects grew out of a longer history of Nathan trying to share educational resources in the AI space. Soon after the release of ChatGPT, Nathan transitioned a hobbyist approach to writing into a weekly commitment with over 300 posts to date. This is now deeply intertwined with his research practice and taste \u2014 trying to transfer the feeling of understanding a cutting edge research topic in AI to his readers.\nNathan is also known for a series of prominent research works in post-training language models, such as\nOlmo\n,\nT\u00fclu 2 or 3\n,\nRewardBench\n,\nZephyr-Beta\n, the\nOpen LLM Leaderboard\n,\nMolmo\n, or the first textbook on\nRLHF\n. Core topics of Interconnects follow Nathan\u2019s work closely, from early days on\nreinforcement learning from human feedback\n(RLHF) to the\nreasoning models\nof today, with a particular focus on\nopen-source AI\nand\nopen models\n. To understand Nathan\u2019s approach to research, you can read more on his\npath into AI\n.\nMany of the most popular pieces on Interconnects are frontier model reviews, such as recapping the\nDeepSeek R1 recipe\nor explaining\no3\u2019s odd over-optimization\n. For some more timeless pieces, consider exploring:\nAll essays and model reviews are voice-overed by Nathan and available in\npodcast\nfeeds along with the interviews.\nThe most valuable thing is to\nsubscribe\nand spread the word with friends. On Substack, likes, com",
+      "about_url": "https://www.interconnects.ai/about",
+      "meta_author": "Nathan Lambert"
+    },
+    "rss_url": "https://www.interconnects.ai/feed",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@0xsero",
+      "name": "Sero",
+      "topics": [
+        "ai",
+        "ml-engineering",
+        "open-source"
+      ],
+      "notes": "ML engineering, open-source AI community"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": ""
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@teknium",
+      "name": "Teknium",
+      "topics": [
+        "ai",
+        "fine-tuning",
+        "open-source-models",
+        "datasets"
+      ],
+      "notes": "Creator of OpenHermes datasets, Nous Research co-founder"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": ""
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@dejavucoder",
+      "name": "Sankalp Sinha",
+      "blog": "https://sankalp.bearblog.dev",
+      "topics": [
+        "ai",
+        "coding",
+        "ml-engineering"
+      ],
+      "notes": "ML engineer, bearblog author"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": "sankalp's blog"
+    },
+    "rss_url": "https://sankalp.bearblog.dev/feed/",
+    "topics": [
+      "songs to wind down",
+      "Ideas to grow on X the everything app (formerly Twitter)",
+      "A Guide to Claude Code 2.0 and getting better at using coding agents",
+      "How prompt caching works - Paged Attention and Automatic Prefix Caching plus practical tips",
+      "how to hit prompt cache more consistently",
+      "Can LLMs dream of Electric Sheep?",
+      "My Experience With Claude Code After 2 Weeks of Adventures",
+      "shoulto and trent on dwarkesh podcast - ideas on becoming world class, how they became researchers and agency",
+      "claude code and openai codex cli are gimmicks",
+      "learning gpu programming basics till flash attention probably as first milestone"
+    ]
+  }
+]
