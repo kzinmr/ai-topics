@@ -78,3 +78,17 @@ Chronological log of all wiki actions.
 - **Added:** @karpathy to ~/x-accounts.yaml
 - **Updated:** wiki/index.md (Entity count 99→100, added Karpathy to entity list and X/Twitter Accounts)
 - **Updated:** wiki/log.md with enrichment details
+
+## 2026-04-10
+- Added 4 X account entity skeletons: @_lopopolo, @bcherny, @mikeyk, @addyosmani
+- Removed Mike Krieger (@mikeyk) from X accounts (LinkedIn post, not X/Twitter)
+- Updated wiki/index.md People section with categorized key figures
+- Added Vinci Rufus reference to Agentic Engineering concept
+- Updated index.md entity count: 100→102 (added Boris Cherny, Ryan Lopopolo; removed Mike Krieger)
+- **Created:** [[concepts/local-llm]] — Local LLM inference ecosystem, privacy, open-source models
+- **Created:** [[entities/georgi-gerganov]] — llama.cpp creator, GGML/GGUF format pioneer
+- **Updated:** index.md with Local LLM concept and Georgi Gerganov entity
+- **Monitoring:** Added Reddit sources r/LocalLLaMA, r/LocalLLM, r/AI_Agents for tracking local LLM trends
+
+## 2026-04-10
+- Added 5 X account entity skeletons: @thdxr, @realmcore_, @a1zhang, @danielhanchen, @xeophon

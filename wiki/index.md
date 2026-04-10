@@ -4,7 +4,7 @@ Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon
 
 Last updated: 2026-04-10
 
-## Entity Pages (100)
+## Entity Pages (103)
 
 Blog authors, companies, and AI models/technologies.
 
@@ -126,7 +126,8 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 - [[concepts/agentic-engineering]] — Agentic Engineering (Simon Willison)
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
-- [[concepts/harness-engineering]] — Harness Engineering
+- [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo)
+- [[concepts/local-llm]] — Local LLM Inference (llama.cpp, Ollama, GGUF)
 - [[concepts/meta-harness]] — Meta-Harness
 - [[concepts/scaling-without-slop]] — Scaling without Slop
 - [[concepts/world-models-science]] — World Models for Scientific Discovery
@@ -156,12 +157,60 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 - [[comparisons/frontier-models-2026-04]] — Frontier Models Comparison — April 2026
 
+## People
+
+Key figures in AI/ML, from thought leaders to engineers shaping the field.
+
+### Agentic Engineering / AI Coding
+
+- [[entities/simon-willison|Simon Willison]] — AI educator, blogger. Coined "Agentic Engineering", advocates for humans-as-orchestrators
+- [[entities/andrej-karpathy|Andrej Karpathy]] — OpenAI co-founder, Eureka Labs. "Agentic Engineering is a magnitude 9 earthquake", "handwritten code is past"
+- [[entities/vinci-rufus|Vinci Rufus]] — AI tech exec. "Orchestration > Automation", "Vibe coding 30-70%, Agentic engineering 300-700%"
+- [[entities/ryan-lopopolo|Ryan Lopopolo]] (@_lopopolo) — OpenAI Frontier. Harness Engineering, Symphony multi-agent orchestration
+- [[entities/boris-cherny|Boris Cherny]] (@bcherny) — Head of Claude Code at Anthropic. "Coding is solved", 100% AI-authored codebase
+- [[entities/addy-osmani|Addy Osmani]] (@addyosmani) — Director, Google Cloud AI. Conductor→Orchestrator framework, Agent Teams/Swarms, AGENTS.md critique
+
+### AI Safety & Alignment
+
+- [[entities/gary-marcus|Gary Marcus]] — AI critic, NYU emeritus. Skeptical of pure scaling, advocates hybrid neuro-symbolic approaches
+
+### AI Infrastructure & Open Source
+
+- [[entities/george-hotz|George Hotz]] (@geohot) — comma.ai founder, tinygrad creator. "All compute is equal", open-source GPU driver
+- [[entities/armin-ronacher|Armin Ronacher]] (@mitsuhiko) — Flask/Click creator, Sentry. Rust Python, WebAssembly, self-hosted AI
+
+### AI Research
+
+- [[entities/nathan-lambert|Nathan Lambert]] (@natolambert) — RL researcher, Interconnects newsletter
+- [[entities/dwarkesh-patel|Dwarkesh Patel]] — Long-form interviewer, AI compute/capability researcher
+
+### Bloggers & Writers
+
+- [[entities/paul-graham|Paul Graham]] — YC co-founder, Lisp advocate. "AI won't replace programmers, it will make them 10x"
+- [[entities/dan-abramov|Dan Abramov]] (@dan_abramov) — React core team, overreacted.io. "Build > Plan", "AI is a tool, not a methodology"
+- [[entities/ken-shirriff|Ken Shirriff]] — Righto.com, hardware reverse engineering
+
+### X/Twitter Accounts
+
+- [[entities/sero|Sero]] (@0xsero) — Sybil Solutions founder, AI infrastructure and local AI
+- [[entities/teknium|Teknium]] (@teknium1) — Nous Research co-founder, Hermes model family
+- [[entities/sankalp-sinha|Sankalp Sinha]] (@dejavucoder) — AI engineer, agentOS contributor
+- [[entities/will-brown|Will Brown]] (@willccbb) — Research Lead at Prime Intellect, verifiers library
+
+### Local LLM
+
+- [[entities/georgi-gerganov|Georgi Gerganov]] (@ggerganov) — llama.cpp creator, GGML/GGUF format, enables local LLM on consumer hardware
+
 ## Raw Sources
 
 Newsletter articles and papers processed into wiki pages:
 - Location: `wiki/raw/articles/`
 - Count: 97 articles processed (as of 2026-04-10)
-
+- [[entities/akira-random-labs|Akira (Random Labs)]] (@realmcore_)
+- [[entities/alex-zhang|Alex Zhang]] (@a1zhang)
+- [[entities/daniel-han|Daniel Han]] (@danielhanchen)
+- [[entities/dax-raad|Dax Raad]] (@thdxr)
+- [[entities/florian-brand|Florian Brand]] (@xeophon)
 
 ### X/Twitter Accounts
 - [[entities/andrej-karpathy|Andrej Karpathy]] (@karpathy) — OpenAI co-founder, Tesla ex-AI Director, Eureka Labs founder
@@ -170,3 +219,6 @@ Newsletter articles and papers processed into wiki pages:
 - [[entities/sero|Sero]] (@0xsero) — Sybil Solutions founder, AI infrastructure and local AI
 - [[entities/teknium|Teknium]] (@teknium1) — Nous Research co-founder, Hermes model family
 - [[entities/sankalp-sinha|Sankalp Sinha]] (@dejavucoder) — AI engineer, agentOS contributor
+|- [[entities/addy-osmani|Addy Osmani]] (@addyosmani) — Director, Google Cloud AI. Conductor→Orchestrator framework, Agent Teams/Swarms, AGENTS.md critique
+|- [[entities/boris-cherny|Boris Cherny]] (@bcherny) — Head of Claude Code at Anthropic. "Coding is solved", 100% AI-authored codebase
+|- [[entities/ryan-lopopolo|Ryan Lopopolo]] (@_lopopolo) — OpenAI Frontier. Harness Engineering, Symphony multi-agent orchestration

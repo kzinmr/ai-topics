@@ -220,5 +220,442 @@
       "claude code and openai codex cli are gimmicks",
       "learning gpu programming basics till flash attention probably as first milestone"
     ]
+  },
+  {
+    "account": {
+      "handle": "@_lopopolo",
+      "name": "Ryan Lopopolo",
+      "blog": "https://hyperbo.la/",
+      "topics": [
+        "ai",
+        "coding-agents",
+        "developer-tools"
+      ],
+      "notes": "OpenAI Frontier. Creator of 'Harness Engineering' concept. Built Symphony (Elixir-based multi-agent orchestration). Previously at Snowflake, Brick, Stripe, Citadel.",
+      "github": "lopopolo"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": "@_lopopolo"
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@bcherny",
+      "name": "Boris Cherny",
+      "blog": "https://borischerny.com/",
+      "topics": [
+        "ai",
+        "coding-agents",
+        "developer-tools",
+        "typescript"
+      ],
+      "notes": "Creator and head of Claude Code at Anthropic. Author of 'Programming TypeScript' (O'Reilly). Believes 'coding is solved'. Previously at Instagram.",
+      "github": "bcherny"
+    },
+    "about": {
+      "bio": "About\nI\u2019m Boris and this is my blog.\nI am a Software Engineer at Anthropic, where I created\nClaude Code\n. Before that I was at Instagram, where I prototyped and scaled the next big ideas for product & infra. A few years ago I wrote a book:\nO\u2019Reilly\u2019s Programming TypeScript\n. I live in San Francisco. In my free time you can find me reading, running, and salting things.\nFind me on\nThreads\n,\nX\n,\nGithub\n, and\nLinkedIn\n, or get in touch at boris at this domain dot com.",
+      "about_url": "https://borischerny.com/about",
+      "meta_author": "Boris Cherny\u2019s Blog"
+    },
+    "rss_url": "https://borischerny.com/feed",
+    "topics": [
+      "NPM and NodeJS should do more to make ES Modules easy to use",
+      "Learning to work (very) remotely",
+      "Time and Timing",
+      "Dinosaur Food: 100 million year old foods we still eat today",
+      "Data Management on the Web Still Sucks",
+      "Public Opinion",
+      "React+TypeScript: Use unions of objects for props",
+      "On Contagion",
+      "13 Tips for Writing a Technical Book",
+      "On Derived State"
+    ]
+  },
+  {
+    "account": {
+      "handle": "@mikeyk",
+      "name": "Mike Krieger",
+      "topics": [
+        "ai",
+        "product",
+        "coding-agents"
+      ],
+      "notes": "CPO at Anthropic. Co-founder of Instagram and Artifact. Discussed how Anthropic uses AI to write 90-95% of code. Focus on product differentiation over raw coding speed."
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": ""
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@addyosmani",
+      "name": "Addy Osmani",
+      "blog": "https://addyosmani.com/",
+      "topics": [
+        "ai",
+        "coding-agents",
+        "web-development",
+        "developer-experience"
+      ],
+      "notes": "Engineering Lead at Google (Chrome & Web Platform). Wrote extensively on agentic coding, conductors vs orchestrators, self-improving coding agents, Claude Code swarms.",
+      "github": "addyosmani"
+    },
+    "about": {
+      "bio": "Home\nGitHub\nPress\nBiography\nLinkedIn\nTwitter\nNewsletter\nBlog\nSite credits\nTheme - A fork of\nCactus\nwith modifications by Addy Osmani\nIcons -\nPixelBuddha\nwith front-end customisations by Addy Osmani\nTools - Jekyll, Gulp, Critical, Imagemin, Minifycss, MinifyHTML, Uglify",
+      "about_url": "https://addyosmani.com/about",
+      "meta_author": "@addyosmani"
+    },
+    "rss_url": "http://addyosmani.com/rss.xml",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@_lopopolo",
+      "name": "Ryan Lopopolo",
+      "blog": "https://hyperbo.la/",
+      "topics": [
+        "ai",
+        "coding-agents",
+        "developer-tools"
+      ],
+      "notes": "OpenAI Frontier. Creator of 'Harness Engineering' concept. Built Symphony (Elixir-based multi-agent orchestration). Previously at Snowflake, Brick, Stripe, Citadel.",
+      "github": "lopopolo"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": "@_lopopolo"
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@bcherny",
+      "name": "Boris Cherny",
+      "blog": "https://borischerny.com/",
+      "topics": [
+        "ai",
+        "coding-agents",
+        "developer-tools",
+        "typescript"
+      ],
+      "notes": "Creator and head of Claude Code at Anthropic. Author of 'Programming TypeScript' (O'Reilly). Believes 'coding is solved'. Previously at Instagram.",
+      "github": "bcherny"
+    },
+    "about": {
+      "bio": "About\nI\u2019m Boris and this is my blog.\nI am a Software Engineer at Anthropic, where I created\nClaude Code\n. Before that I was at Instagram, where I prototyped and scaled the next big ideas for product & infra. A few years ago I wrote a book:\nO\u2019Reilly\u2019s Programming TypeScript\n. I live in San Francisco. In my free time you can find me reading, running, and salting things.\nFind me on\nThreads\n,\nX\n,\nGithub\n, and\nLinkedIn\n, or get in touch at boris at this domain dot com.",
+      "about_url": "https://borischerny.com/about",
+      "meta_author": "Boris Cherny\u2019s Blog"
+    },
+    "rss_url": "https://borischerny.com/feed",
+    "topics": [
+      "NPM and NodeJS should do more to make ES Modules easy to use",
+      "Learning to work (very) remotely",
+      "Time and Timing",
+      "Dinosaur Food: 100 million year old foods we still eat today",
+      "Data Management on the Web Still Sucks",
+      "Public Opinion",
+      "React+TypeScript: Use unions of objects for props",
+      "On Contagion",
+      "13 Tips for Writing a Technical Book",
+      "On Derived State"
+    ]
+  },
+  {
+    "account": {
+      "handle": "@mikeyk",
+      "name": "Mike Krieger",
+      "topics": [
+        "ai",
+        "product",
+        "coding-agents"
+      ],
+      "notes": "CPO at Anthropic. Co-founder of Instagram and Artifact. Discussed how Anthropic uses AI to write 90-95% of code. Focus on product differentiation over raw coding speed."
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": ""
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@addyosmani",
+      "name": "Addy Osmani",
+      "blog": "https://addyosmani.com/",
+      "topics": [
+        "ai",
+        "coding-agents",
+        "web-development",
+        "developer-experience"
+      ],
+      "notes": "Engineering Lead at Google (Chrome & Web Platform). Wrote extensively on agentic coding, conductors vs orchestrators, self-improving coding agents, Claude Code swarms.",
+      "github": "addyosmani"
+    },
+    "about": {
+      "bio": "Home\nGitHub\nPress\nBiography\nLinkedIn\nTwitter\nNewsletter\nBlog\nSite credits\nTheme - A fork of\nCactus\nwith modifications by Addy Osmani\nIcons -\nPixelBuddha\nwith front-end customisations by Addy Osmani\nTools - Jekyll, Gulp, Critical, Imagemin, Minifycss, MinifyHTML, Uglify",
+      "about_url": "https://addyosmani.com/about",
+      "meta_author": "@addyosmani"
+    },
+    "rss_url": "http://addyosmani.com/rss.xml",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@thdxr",
+      "name": "Dax Raad",
+      "blog": "https://thdxr.dev.opencode.ai/",
+      "topics": [
+        "ai",
+        "coding-agents",
+        "developer-tools",
+        "open-source"
+      ],
+      "notes": "Creator of OpenCode (open source AI coding agent for terminal), SST founder. Focus on TUI-first developer experience, multi-agent parallel sessions.",
+      "github": "thdxr"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": "opencode"
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@realmcore_",
+      "name": "Akira (Random Labs)",
+      "topics": [
+        "ai",
+        "coding-agents",
+        "swarm-intelligence",
+        "rlm"
+      ],
+      "notes": "Creator of Slate \u2014 first swarm-native coding agent using Thread Weaving architecture for persistent context in long-horizon engineering. Random Labs co-founder, YC S24. Advocate of RLM for coding.",
+      "github": "random-labs"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": ""
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@a1zhang",
+      "name": "Alex Zhang",
+      "blog": "https://alexzhang13.github.io/",
+      "topics": [
+        "ai",
+        "rlm",
+        "reinforcement-learning",
+        "ml-systems",
+        "open-source"
+      ],
+      "notes": "MIT CSAIL PhD student (advised by Omar Khattab & Tim Kraska). Proposed Recursive Language Models (RLMs). GPU MODE community core. Runs GPU MODE leaderboard with NVIDIA. Works on KernelBench, VideoGameBench, SWE-bench Multimodal.",
+      "github": "alexzhang13"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": "@a1zhang"
+    },
+    "rss_url": "https://alexzhang13.github.io/feed",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@danielhanchen",
+      "name": "Daniel Han",
+      "blog": "https://unsloth.ai/",
+      "topics": [
+        "ai",
+        "fine-tuning",
+        "reinforcement-learning",
+        "open-source-models",
+        "ml-systems"
+      ],
+      "notes": "Creator of Unsloth \u2014 makes fine-tuning & RL (GRPO, LoRA, QLoRA) accessible with 2x speed and 70% less VRAM. Collaborates with HuggingFace & NVIDIA on RL courses. 100K+ models trained with Unsloth on HF.",
+      "github": "danielhanchen"
+    },
+    "about": {
+      "bio": "About\nHey there! We started as a team of two brothers!",
+      "about_url": "https://unsloth.ai/about",
+      "meta_author": "Unsloth - Train and Run Models Locally"
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@xeophon",
+      "name": "Florian Brand",
+      "blog": "https://florianbrand.com/",
+      "topics": [
+        "ai",
+        "reinforcement-learning",
+        "distributed-training",
+        "open-source"
+      ],
+      "notes": "Prime Intellect engineer. Contributor to PRIME-RL, Verifiers, Environments Hub. Works on distributed RL training infrastructure and open superintelligence stack.",
+      "github": "xeophon"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": ""
+    },
+    "rss_url": "https://florianbrand.com/feeds/atom.xml",
+    "topics": [
+      "How FastHTML sparked my joy in web development",
+      "Sane Python dependency management with uv",
+      "A Guide to LLMs for Programmers",
+      "Using OpenAI's Deep Research to save Time and Money",
+      "Living in the Agentic Era",
+      "You're not using LLMs enough",
+      "Local models are (not) cope",
+      "Quo vadis, LLM benchmarks?"
+    ]
+  },
+  {
+    "account": {
+      "handle": "@thdxr",
+      "name": "Dax Raad",
+      "blog": "https://thdxr.dev.opencode.ai/",
+      "topics": [
+        "ai",
+        "coding-agents",
+        "developer-tools",
+        "open-source"
+      ],
+      "notes": "Creator of OpenCode (open source AI coding agent for terminal), SST founder. Focus on TUI-first developer experience, multi-agent parallel sessions.",
+      "github": "thdxr"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": "opencode"
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@realmcore_",
+      "name": "Akira (Random Labs)",
+      "topics": [
+        "ai",
+        "coding-agents",
+        "swarm-intelligence",
+        "rlm"
+      ],
+      "notes": "Creator of Slate \u2014 first swarm-native coding agent using Thread Weaving architecture for persistent context in long-horizon engineering. Random Labs co-founder, YC S24. Advocate of RLM for coding.",
+      "github": "random-labs"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": ""
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@a1zhang",
+      "name": "Alex Zhang",
+      "blog": "https://alexzhang13.github.io/",
+      "topics": [
+        "ai",
+        "rlm",
+        "reinforcement-learning",
+        "ml-systems",
+        "open-source"
+      ],
+      "notes": "MIT CSAIL PhD student (advised by Omar Khattab & Tim Kraska). Proposed Recursive Language Models (RLMs). GPU MODE community core. Runs GPU MODE leaderboard with NVIDIA. Works on KernelBench, VideoGameBench, SWE-bench Multimodal.",
+      "github": "alexzhang13"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": "@a1zhang"
+    },
+    "rss_url": "https://alexzhang13.github.io/feed",
+    "topics": [
+      "The Mismanaged Geniuses Hypothesis",
+      "Language Models will be Scaffolds",
+      "Recursive Language Models",
+      "A Meticulous Guide to Advances in Deep Learning Efficiency over the Years",
+      "The Annotated Kolmogorov-Arnold Network (KAN)",
+      "Highlights of NeurIPS 2023 from Reading All 3584 Abstracts"
+    ]
+  },
+  {
+    "account": {
+      "handle": "@danielhanchen",
+      "name": "Daniel Han",
+      "blog": "https://unsloth.ai/",
+      "topics": [
+        "ai",
+        "fine-tuning",
+        "reinforcement-learning",
+        "open-source-models",
+        "ml-systems"
+      ],
+      "notes": "Creator of Unsloth \u2014 makes fine-tuning & RL (GRPO, LoRA, QLoRA) accessible with 2x speed and 70% less VRAM. Collaborates with HuggingFace & NVIDIA on RL courses. 100K+ models trained with Unsloth on HF.",
+      "github": "danielhanchen"
+    },
+    "about": {
+      "bio": "About\nHey there! We started as a team of two brothers!",
+      "about_url": "https://unsloth.ai/about",
+      "meta_author": "Unsloth - Train and Run Models Locally"
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@xeophon",
+      "name": "Florian Brand",
+      "blog": "https://florianbrand.com/",
+      "topics": [
+        "ai",
+        "reinforcement-learning",
+        "distributed-training",
+        "open-source"
+      ],
+      "notes": "Prime Intellect engineer. Contributor to PRIME-RL, Verifiers, Environments Hub. Works on distributed RL training infrastructure and open superintelligence stack.",
+      "github": "xeophon"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": "florianbrand.com"
+    },
+    "rss_url": "https://florianbrand.com/feeds/atom.xml",
+    "topics": [
+      "How FastHTML sparked my joy in web development",
+      "Sane Python dependency management with uv",
+      "A Guide to LLMs for Programmers",
+      "Using OpenAI's Deep Research to save Time and Money",
+      "Living in the Agentic Era",
+      "You're not using LLMs enough",
+      "Local models are (not) cope",
+      "Quo vadis, LLM benchmarks?"
+    ]
   }
 ]
