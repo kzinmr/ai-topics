@@ -1,52 +1,157 @@
 ---
 title: "Boaz Barak"
+handle: "@boazbaraktcs"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, x-account, ai, theoretical-cs, ai-safety, education]
-aliases: ["@boazbaraktcs", "boazbaraktcs"]
-source: x-account
-status: skeleton
+tags: [person, ai, theoretical-cs, ai-safety, computational-complexity, cryptography, education, harvard, openai]
+aliases: ["@boazbaraktcs", "boazbaraktcs", "Boaz Barak Harvard", "Boaz Barak OpenAI"]
 ---
 
-# Boaz Barak
+# Boaz Barak (@boazbaraktcs)
 
 | | |
 |---|---|
-| **X/Twitter** | [@boazbaraktcs](https://x.com/boazbaraktcs) |
-| **Blog** | [https://windowsontheory.org](https://windowsontheory.org) |
-| **RSS** | https://windowsontheory.org/feed/ |
-| **About** | [https://windowsontheory.org/about](https://windowsontheory.org/about) |
-
-## Notes
-
-Harvard CS professor, 'Windows on Theory' blog, AI and society
-
-## Bio (scraped)
-
-This Blog was started by the researchers in theoretical computer science at Microsoft Research Silicon Valley center (MSR-SVC). The first blog post was posted by Omer Reingold on
-Feb 14, 2012
-. The blog’s founders later invited other theoretical CS researchers at MSR, including
-Boaz Barak
-(then at MSR New England) to
-join
-. Despite its many contributions to the scientific field of computer science and to Microsoft’s businesses, Microsoft Research SVC was
-closed down
-on September 18, 2014.  Since then, the scientists at MSR-SVC have gone on to many other places, continuing to do great work and advance the state of art of our field. These days, this blog is largely maintained by Boaz, though he is always on the lookout for guest posts on theoretical CS topics.
-Below is the original “about page” of the Windows on Theory blog:
-We offer this group blog as a forum for exchanging ideas and debating topics of interest to the Theory of Computing (TOC) community (otherwise known as TCS -Theoretical Computer Science). Over the years, TOC has been very successful and not surprisingly it has widened, it has deepened, it has grown! Traditional conferences, while still extremely important, now seem insufficient to keep us as one community (a goal which is still just as vital to our success as a field). Theory blogs, like ours, can be therefore viewed as a new kind of conference
-and
-its business meeting. We suspect that a blog run by a diverse group would be particularly suited for the task.
+| **X** | [@boazbaraktcs](https://x.com/boazbaraktcs) |
+| **Blog** | [windowsontheory.org](https://windowsontheory.org) |
+| **Academic Site** | [boazbarak.org](https://www.boazbarak.org/) |
+| **GitHub** | [boazbk](https://github.com/boazbk) |
+| **Role** | Gordon McKay Professor of Computer Science, Harvard SEAS; Member of Technical Staff, OpenAI |
+| **Known for** | Computational complexity theory, cryptography, AI safety research, "Windows on Theory" blog, co-author of "Computational Complexity: A Modern Approach" |
+| **Bio** | Theoretical computer scientist and AI safety researcher at Harvard University and OpenAI. Previously a principal researcher at Microsoft Research New England and tenured associate professor at Princeton. Co-authored the influential textbook "Computational Complexity: A Modern Approach" with Sanjeev Arora. Founded and maintains the "Windows on Theory" blog, a leading forum for theoretical computer science discourse. |
 
 ## Overview
 
-<!-- TODO: Hermes enrichment needed -->
-<!-- Research this person's work, contributions, and key ideas -->
-<!-- Aim for the depth of antirez-com.md or simon-willison.md -->
+Boaz Barak is one of the most prominent theoretical computer scientists working on AI safety and the foundations of machine learning. As the Gordon McKay Professor of Computer Science at Harvard SEAS and a Member of Technical Staff on OpenAI's alignment team (starting January 2024), he bridges the gap between rigorous theoretical foundations and practical AI safety challenges.
+
+His academic trajectory spans some of the most prestigious institutions in computer science: a PhD from the Weizmann Institute of Science, postdoctoral work at the Institute for Advanced Study in Princeton, tenured positions at Princeton University, a principal researcher role at Microsoft Research New England (where the "Windows on Theory" blog originated), and now his dual appointment at Harvard and OpenAI. Starting Fall 2025, he transitioned to a part-time Catalyst Professor role at Harvard while joining OpenAI full-time — a move that signals his deep commitment to addressing AI safety at the frontier of capability development.
+
+Barak's research spans computational complexity, algorithms, cryptography, and quantum computing. In recent years, he has increasingly focused on the **foundations of machine learning** and the **safety of artificial intelligence systems**. His Harvard course CS 2881: AI Safety (Fall 2025) was one of the first dedicated university courses on AI safety at a top computer science department, covering topics from specification learning to multi-agent alignment. He co-organizes the Harvard Machine Learning Foundations seminar and serves on the scientific board of the Simons Institute for the Theory of Computing.
+
+The **"Windows on Theory"** blog, which Barak founded and maintains, has become an essential reading source for anyone interested in theoretical computer science and its intersection with AI. Originally started by researchers at Microsoft Research Silicon Valley in February 2012, the blog evolved into a platform where leading theorists debate and explain complex topics in accessible ways. Barak's writing style — clear, rigorous, and deeply principled — has influenced a generation of computer scientists and continues to shape public discourse on AI safety.
 
 ## Core Ideas
 
-<!-- TODO: Hermes enrichment needed -->
+### AI Safety: Four Observations (2026)
 
-## Related
+In his landmark March 2026 post, "The state of AI safety in four fake graphs," Barak laid out his framework for understanding where AI safety stands:
 
-<!-- TODO: Add wikilinks to related entities/concepts -->
+1. **Exponential capability growth continues** — visible in the METR graph, revenue metrics, and possibly a "bending upward" as AI accelerates AI development
+2. **Alignment is improving but not fast enough** — models are more aligned as they become more capable, but the improvement doesn't match the rising stakes
+3. **We've passed the human-supervision threshold** — but haven't plateaued; we can still improve alignment using models to monitor other models
+4. **Society is not ready** — governments and institutions are failing to prepare for AI's impact on bio, cyber, economics, and democracy
+
+> *"We still have not fully solved challenges like adversarial robustness, dishonesty, and reward hacking, and we are still far from the standards of reliability and security that are required in high stake applications."*
+
+### Against AI Pauses, For Alignment Research
+
+Barak is skeptical of AI pause proposals:
+
+> *"I do not think such a pause is feasible or practical, and I am not confident that governments will use this time wisely — experience shows that it is hard to overestimate government's capability for inaction."*
+
+Instead, he advocates for **empirical, iterative alignment research**:
+
+> *"I do not believe that all alignment is missing is one clever idea. Rather, we need ways to productively scale up compute into improving intent-following, honesty, monitoring, multi-agent alignment. This work will require multiple iterations of empirical experiments."*
+
+### Faithful Obedience Without Legislating
+
+A central theme in Barak's alignment research is building systems that follow instructions faithfully without overstepping:
+
+> *"Increasing the slope of the 'alignment line' is the main focus of my technical research — working on building machines of faithful obedience that have good values but do not 'legislate from the bench'."*
+
+This framing captures his concern that over-aligned models might become paternalistic — making decisions about what humans *should* want rather than faithfully executing what they *do* want.
+
+### The Scheming Concern
+
+Barak has identified **model scheming and collusion** as a critical risk:
+
+> *"If models become schemers, then since they are already quite situationally aware, it will be hard to even measure their alignment, let alone improve it."*
+
+This concern has driven his interest in **multi-agent alignment** — ensuring that systems of interacting agents remain safe and aligned even when individual agents develop strategic behavior.
+
+### Theoretical Foundations: Complexity and Cryptography
+
+Barak's earlier work established foundational results in:
+
+- **Computational complexity**: Co-authored the standard graduate textbook with Sanjeev Arora; worked on the Unique Games Conjecture, sum-of-squares proofs, and the relationship between structure and combinatorics
+- **Cryptography**: Developed non-black-box techniques, bounded key-dependent message security, and a zero-knowledge warhead verification system with Robert Goldston and Alexander Glaser
+- **Communication complexity**: Won the 2013 SIAM Outstanding Paper Prize for "How to Compress Interactive Communication" with Mark Braverman, Xi Chen, and Anup Rao
+
+## Key Work
+
+### Textbooks
+
+- **"Computational Complexity: A Modern Approach"** (with Sanjeev Arora, Cambridge University Press, 2009) — The standard graduate textbook in the field, covering complexity theory from basics to frontier research
+- **"Introduction to Theoretical Computer Science"** (in progress) — Undergraduate textbook aimed at making theoretical CS accessible to a broader audience
+- **Lecture notes on the Sum of Squares algorithm** (with David Steurer)
+- **Lecture notes on Cryptography**
+
+### AI Safety Course (Harvard CS 2881)
+
+Taught Fall 2025, this was one of the first dedicated AI safety courses at Harvard. Topics included:
+- Specification learning and goal alignment
+- Adversarial robustness and security
+- Multi-agent systems and coordination
+- Honest behavior and deception detection
+- Scalable oversight and model monitoring
+
+Course materials, including video lectures and slides, are available publicly.
+
+### Selected Research Papers
+
+| Paper | Co-authors | Venue | Year |
+|-------|-----------|-------|------|
+| How to Compress Interactive Communication | Braverman, Chen, Rao | STOC / SIAM J. Comput. | 2010/2013 |
+| Tensor Prediction, Rademacher Complexity and Random 3-XOR | Moitra | COLT | 2016 |
+| A zero-knowledge system for nuclear warhead verification | Glaser, Goldston | Science & Global Security | 2014 |
+| Computational complexity and information asymmetry in financial products | Arora, Brunnermeier, Ge | Commun. ACM | 2011 |
+| Bounded Key-Dependent Message Security | Fehr, Gentry, et al. | EUROCRYPT | 2010 |
+
+### Blog Writing (Windows on Theory)
+
+Barak is the primary maintainer of the blog and has written extensively on:
+
+- **"Six thoughts on AI Safety"** — Foundational framework for thinking about AI alignment
+- **"AI will change the world, but won't take it over by playing '3-dimensional chess'"** — Critique of strategic-risk narratives
+- **"The uneasy relationship between deep learning and statistics"** — Examining why DL works despite violating statistical assumptions
+- **"The Complexity of Public-Key Cryptography"** — Survey for Oded Goldreich's 60th birthday
+- **"Bayesianism, frequentism, and the planted clique"** — Do algorithms believe in unicorns?
+- **"Hopes, Fears, and Software Obfuscation"** (Communications of the ACM, 2016)
+
+### Outreach and Community Building
+
+- **Addis Coder** (Ethiopia) — Board member; summer algorithms/coding program for Ethiopian high school students
+- **Jam Coders** (Jamaica) — Co-organizer; similar program for Jamaican students
+- **Quanta Magazine** — Advisory board member
+- **Simons Institute** — Scientific board member
+- **Theory of Computing Journal** — Editorial board member
+- **Electronic Colloquium of Computational Complexity** — Editorial board member
+
+## Blog / Recent Posts
+
+| Date | Title | Summary |
+|------|-------|---------|
+| 2026-03-30 | [The state of AI safety in four fake graphs](https://windowsontheory.org/2026/03/30/the-state-of-ai-safety-in-four-fake-graphs/) | Four-part framework: capabilities growing exponentially, alignment improving but lagging stakes, past human-supervision threshold, society unprepared |
+| 2026-01 | [Claude's Constitution vs. OpenAI's Model Spec](https://windowsontheory.org/) | Comparison of governance documents from major AI labs; analysis of constitutional AI approaches |
+| 2026-01 | [TheoryFest 2026 announcement](https://windowsontheory.org/) | Workshop proposals for STOC 2026 conference week |
+| 2025 | [AI Safety Course Introduction](https://windowsontheory.org/) | Overview of Harvard CS 2881: AI Safety, with links to first lecture video and slides |
+| N/A | [The uneasy relationship between deep learning and statistics](https://windowsontheory.org/) | Why deep learning works despite violating standard statistical assumptions |
+| N/A | [AI will change the world, but won't take it over by playing "3-dimensional chess"](https://windowsontheory.org/) | Critique of strategic-risk AI narratives; focus on concrete safety problems |
+
+## Related People
+
+- **[[sanjeev-arora]]** — Co-author of "Computational Complexity: A Modern Approach"; Princeton colleague
+- **[[david-steurer]]** — Collaborator on sum-of-squares algorithm lecture notes
+- **[[robert-goldston]]**, **[[alexander-glaser]]** — Co-developers of the zero-knowledge nuclear warhead verification system
+- **[[nicholas-carlini]]** — Guest lecturer in Barak's AI safety course; expert on adversarial robustness
+- **[[lucca-trevisan]]** — Honored with the Trevisan Prize; Barak has written about his expository contributions
+
+## X Activity Themes
+
+Barak's X activity (@boazbaraktcs) typically covers:
+
+1. **AI safety analysis** — Thoughtful, measured takes on alignment progress, capability trends, and risk assessments
+2. **Theoretical CS discourse** — Commentary on complexity theory, cryptography, and foundational questions
+3. **Academic announcements** — Course launches, workshop calls, student opportunities at Harvard and the Simons Institute
+4. **Policy commentary** — Thoughts on AI governance, regulation, and the societal implications of rapid AI advancement
+5. **Blog promotion** — Sharing new posts from Windows on Theory, particularly essays on AI safety and theoretical foundations
+6. **Community building** — Promoting Addis Coder, Jam Coders, and other outreach initiatives to broaden participation in computer science
