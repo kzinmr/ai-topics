@@ -4,7 +4,7 @@ Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon
 
 Last updated: 2026-04-10
 
-## Entity Pages (99)
+## Entity Pages (100)
 
 Blog authors, companies, and AI models/technologies.
 
@@ -52,6 +52,7 @@ Blog authors, companies, and AI models/technologies.
 - [[entities/jayden-milne]] — Jayden Milne
 - [[entities/jeff-geerling]] — Jeff Geerling
 - [[entities/jim-nielsen]] — Jim Nielsen
+- [[entities/andrej-karpathy]] — Andrej Karpathy
 - [[entities/john-d-cook-applied-mathematics-consulting]] — John D. Cook
 - [[entities/jyn]] — jyn
 - [[entities/k0nserv]] — Hugo Tunius
@@ -163,6 +164,7 @@ Newsletter articles and papers processed into wiki pages:
 
 
 ### X/Twitter Accounts
+- [[entities/andrej-karpathy|Andrej Karpathy]] (@karpathy) — OpenAI co-founder, Tesla ex-AI Director, Eureka Labs founder
 - [[entities/nathan-lambert|Nathan Lambert]] (@natolambert) — RL researcher, Interconnects newsletter
 - [[entities/will-brown|Will Brown]] (@willccbb) — Research Lead at Prime Intellect, verifiers library
 - [[entities/sero|Sero]] (@0xsero) — Sybil Solutions founder, AI infrastructure and local AI

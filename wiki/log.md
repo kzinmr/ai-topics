@@ -65,3 +65,16 @@ Chronological log of all wiki actions.
 - **Research methods:** Web search, blog analysis, GitHub profiling, X/Twitter activity review, newsletter analysis, company research
 - **Updated:** wiki/index.md (X/Twitter Accounts section with descriptions)
 - **Status:** All 5 pages now have full frontmatter (status: active), Core Ideas sections, Related wikilinks, and comprehensive project/timeline information
+
+## 2026-04-10 — Added Andrej Karpathy Entity Page
+- **Created:** wiki/entities/andrej-karpathy.md — full research profile
+  - **Andrej Karpathy** (@karpathy) — OpenAI co-founder, ex-Tesla AI Director, Eureka Labs founder
+  - Coined "vibe coding" (Apr 2025) and "agentic engineering" (Feb 2026)
+  - YouTube "Zero to Hero" series, CS231n at Stanford
+  - microgpt (200 lines of Python), autoresearch, nanoGPT, micrograd, ConvNetJS
+  - Key concepts: Software 2.0, Teacher+AI Symbiosis, Verifiability over Capability
+  - Bearblog posts: 2025 LLM Year in Review, Verifiability, The space of minds, etc.
+  - Viral Jan 2026 thread on AI coding workflow (39K+ likes, 7.5M+ impressions)
+- **Added:** @karpathy to ~/x-accounts.yaml
+- **Updated:** wiki/index.md (Entity count 99→100, added Karpathy to entity list and X/Twitter Accounts)
+- **Updated:** wiki/log.md with enrichment details
