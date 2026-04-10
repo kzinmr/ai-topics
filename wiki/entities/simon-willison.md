@@ -1,9 +1,9 @@
 ---
 title: "Simon Willison"
-created: 2026-04-09
+created: 2026-04-10
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, ai-engineering, open-source, llm]
-aliases: ["simonwillison.net"]
+tags: [person, blogger, hn-popular, developer-tools, ai-agents, open-source, python, data-journalism]
+aliases: ["simonw", "simon-willison"]
 ---
 
 # Simon Willison
@@ -11,81 +11,99 @@ aliases: ["simonwillison.net"]
 | | |
 |---|---|
 | **Blog** | [simonwillison.net](https://simonwillison.net) |
+| **TIL** | [til.simonwillison.net](https://til.simonwillison.net) |
+| **Newsletter** | Weekly-ish (free), monthly (paid sponsor tier) |
 | **RSS** | https://simonwillison.net/atom/everything/ |
-| **About** | [https://simonwillison.net/about](https://simonwillison.net/about) |
-| **Social** | [@simonw](https://twitter.com/simonw), [GitHub](https://github.com/simonw) |
-| **Newsletter** | Weekly (free), Monthly ($10 sponsor) |
+| **GitHub** | [github.com/simonw](https://github.com/simonw) |
+| **Mastodon** | [@simon@simonwillison.net](https://simonwillison.net/@simon) |
+| **Bluesky** | [simonwillison.net](https://bsky.app/profile/simonwillison.net) |
+| **Twitter** | [@simonw](https://twitter.com/simonw) |
+| **Role** | Independent open-source developer; PSF Board Member |
+| **Known for** | Django (co-creator), Datasette, `llm` CLI, coining "prompt injection" |
+| **Bio** | British web developer and software architect. Co-created the Django web framework in 2003 with Adrian Holovaty. Previously engineering director at Eventbrite (joined via Lanyrd acquisition). Currently works full-time building open-source tools for data journalism and AI exploration. Board member of the Python Software Foundation. Has been blogging since 2002. |
 
-## Bio
+## Core Ideas
 
-Simon Willison is an independent open-source developer focused on data journalism tools built around Datasette and SQLite. Co-creator of the Django Web Framework. Previously engineering director at Eventbrite (via acquisition of Lanyrd, Y Combinator 2010). Blogging about web development since 2002.
+Simon is a **pragmatic builder** who operates at the intersection of data journalism, open-source tooling, and AI research. Unlike hype-driven adopters, he maintains rigorous empirical standards — publishing detailed technical notes, benchmarks, and reproducible workflows. His approach to AI emphasizes **understanding capabilities through hands-on experimentation** rather than theoretical speculation. He blogs prolifically, publishing multiple posts per week about new tools, techniques, and findings.
 
-> "I send out a newsletter version of this blog once every week or so... At the end of every month I send out a much shorter newsletter to anyone who sponsors me for $10 or more on GitHub. It's intended to be a ten minute read that catches you up on the most important developments from the past month in LLMs and my other projects and research."
+### The AI Tooling Ecosystem
 
-## Core Philosophy
+Simon has emerged as a leading voice in the **practical AI tooling** space. Rather than treating LLMs as magical oracles, he builds concrete tools that integrate them into real developer workflows:
 
-### 1. Open Source as Public Infrastructure
-Simon views open-source tools (Datasette, SQLite, llm) as shared public infrastructure that should be accessible, transparent, and community-driven. He actively builds and maintains over 500 projects on GitHub.
+- **`llm` CLI** (April 2023) — Command-line utility for accessing LLMs via remote APIs or locally installed models. Enables terminal-based prompting, plugin-based model extensibility, and rapid prototyping. Over 11.5k GitHub stars. Recent ecosystem includes `llm-gemini`, `llm-openrouter` plugins and integration with Deep Research APIs.
+- **Datasette** — Open-source multi-tool for exploring and publishing data. Pairs SQLite with a web interface, enabling journalists and researchers to publish interactive data. Over 10.9k GitHub stars. Recent plugins include `datasette-llm`, `datasette-enrichments-llm`, `datasette-extract`, `datasette-graphql`, `datasette-turnstile`, `datasette-atom`, and `datasette-ports`.
+- **`sqlite-utils`** — Python CLI and library for manipulating SQLite databases. 2k GitHub stars.
+- **`shot-scraper`** — Command-line utility for taking automated screenshots of websites. 2.3k GitHub stars.
+- **`files-to-prompt`** — Concatenates a directory of files into a single prompt for LLMs. 2.6k GitHub stars.
+- **`scan-for-secrets`** — CLI tool for scanning directories for leaked API keys and secrets.
 
-### 2. Agentic Engineering: AI as Collaborator, Not Replacement
-From his Lenny's Podcast appearance (April 2026):
+His tooling philosophy centers on **reproducibility and transparency** — every project is open source, well-documented, and designed to solve concrete problems he encounters in his own work.
 
-> "Agentic engineering is the practice of using AI agents as software engineering collaborators rather than just code completion tools."
+### AI Security & Terminology
 
-Key aspects:
-- AI agents should handle **complex multi-step work** (planning, execution, verification)
-- **Human-in-the-loop** workflows where agents assist but humans direct
-- Beyond code completion — agents as **thinking partners** in development
+Simon has contributed critical vocabulary and frameworks for understanding AI security risks:
 
-### 3. Pragmatic Tool Building
-Simon's approach to AI is deeply practical — he builds tools to solve real problems, then shares them openly:
+- **"Prompt injection"** (coined, Sept 2022) — Security vulnerability affecting LLMs where untrusted input manipulates model behavior. Building on earlier demos by Riley Goodside, Simon formalized the framework and nomenclature now widely adopted in cybersecurity.
+- **"Slop"** (early 2020s) — Low-quality AI-generated content. Early proponent of the term as a descriptor for the flood of AI-produced noise online.
+- **"Lethal trifecta"** (June 2025) — High-risk AI agent configuration combining: (1) access to private data, (2) exposure to untrusted content, (3) ability to communicate externally. Systems with all three traits are highly vulnerable to prompt injection and data exfiltration.
+- **"Pelican benchmark"** (Oct 2024) — Informal LLM evaluation test measuring SVG generation capability for the prompt "a pelican riding a bicycle." Became a widely-adopted informal benchmark for multimodal model evaluation.
 
-- **scan-for-secrets 0.3**: Secret scanning with redaction capabilities
-- **asgi-gzip 0.3**: Extracted and maintained middleware from Starlette
-- **llm CLI**: Unified interface for interacting with multiple LLM providers
-- **GitHub Repo Size**: Simple tool addressing a common UI gap
+### AI Adoption & Agentic Engineering
 
-> "GitHub doesn't tell you the repo size in the UI, but it's available in the CORS-friendly API."
+Simon documents his AI experimentation extensively through both his main blog and his TIL site. Key observations and workflows:
 
-### 4. AI Safety and Responsible Disclosure
-Simon supports Anthropic's Project Glasswing approach:
+- **Agentic workflows**: Early adopter of agentic coding tools (Claude Code, Codex CLI, OpenClaw). Prefers tools that can read files, execute programs, and self-correct in a loop. Runs background agents for deep research and code exploration while maintaining human oversight.
+- **Local model experimentation**: Runs eval suites locally on Mac against models like `gpt-oss-20b` using LM Studio and `uv`. Connects OpenAI's Codex CLI to models hosted on NVIDIA DGX Spark via Tailscale for GPU acceleration.
+- **Today I Learned (TIL)**: His TIL blog at til.simonwillison.net serves as a living repository of practical insights, with 575+ entries covering Cloudflare rate limiting, Docker configurations, Python testing patterns, AI model benchmarking, and infrastructure automation.
+- **CI/CD pragmatism**: Uses GitHub Codespaces with devcontainers, Tailscale exit nodes to bypass IP blocks in GitHub Actions, and Cloudflare Pages for domain redirects. Documents all patterns publicly.
 
-> "Saying 'our model is too dangerous to release' is a great way to build buzz... but in this case I expect their caution is warranted."
+### The Datasette Philosophy
 
-He advocates for controlled rollout of powerful AI capabilities, particularly in cybersecurity, to allow industry preparation before proliferation.
+Simon's approach to data publishing embodies several core principles:
 
-### 5. Hands-On Research Methodology
-Simon demonstrates empirical rigor in his technical analysis:
+1. **Data should be explorable** — not just published as static files but as interactive, queryable resources
+2. **SQLite is underrated** — a powerful, embeddable database that deserves more respect in the data ecosystem
+3. **Plugins over monoliths** — extend functionality through composable plugins rather than building everything into one system
+4. **Transparency in sponsorship** — openly discloses all funding sources (GitHub Sponsors, Fly.io sponsorship for Datasette Cloud, Mozilla MIECO program) and maintains editorial independence
 
-- **SQLite WAL in Docker**: Verified shared memory semantics experimentally
-- **GLM-5.1 testing**: Ran actual prompts to verify SVG+HTML generation capabilities
-- **Meta Muse Spark**: Analyzed 16-tool harness through direct interaction
+### The TIL Pattern
 
-## Recent Thought Evolution (2026)
+Simon's "Today I Learned" approach represents a knowledge management methodology:
+- **Atomic notes**: Each TIL entry is self-contained, focused on one insight or technique
+- **Public by default**: Everything is published, creating a searchable knowledge base
+- **Reproducible**: Commands, code snippets, and configurations are included so others can replicate
+- **Accretive value**: Over 575+ entries create a compounding knowledge resource that benefits both the author and readers
 
-### The Shift from AI Hype to Critical Assessment
-Simon's content reveals a maturing perspective:
+### Data Journalism Infrastructure
 
-**Early 2026**: Enthusiastic about AI capabilities (GLM-5.1's impressive SVG generation)
-**Mid 2026**: More nuanced, recognizing both power and risks (Project Glasswing support, AI safety concerns)
+Simon builds tools specifically for journalistic workflows:
+- **CIA World Factbook Archive** (Feb 2026): Following CIA's discontinuation of the site, retrieved the final 2020 ZIP archive, extracted it, and published it to a public GitHub repository for long-term preservation
+- **HN Comment Analysis** (Mar 2026): Profiled Hacker News users based on their comment patterns using Datasette
+- **Global Power Plants dataset**: Published and maintained at `global-power-plants.datasettes.com`
 
-### Key Quotes and Positions
+## Key Quotes
 
-> "AI is destroying Open Source, and it's not even good yet." — *Discussing AI slop in open source projects*
+> *"AI basically let me put aside all my doubts on technical calls... Instead of 'I need to understand how SQLite's parsing works', it was 'I need to get AI to suggest an approach for me so I can tear it up and build something better'."* — on how AI changed his development workflow (via Lalit Maganti's syntaqlite experience)
 
-> "The problem is the humans who review the code—who are responsible for the useful software that keeps our systems going—don't have infinite resources."
+> *"You can't design a better problem for an LLM agent than exploitation research."* — Thomas Ptacek, cited by Simon on AI's role in security
 
-> "If you're running a personal weather dashboard or building a toy server for your Homelab, fine. But I wouldn't run my production apps—that actually make money or could cause harm if they break—on unreviewed AI code."
+> *"I do not receive any compensation for writing about specific topics on this blog. I plan to continue this policy."* — editorial independence disclosure
 
-## Related Concepts
-- [[agentic-engineering]]
-- [[open-source-sustainability]]
-- [[ai-safety-responsible-disclosure]]
-- [[pragmatic-ai-development]]
+## Related
+
+- [[concepts/agentic-engineering]] — Agent-first development workflows Simon actively uses and writes about
+- [[concepts/prompt-injection]] — Security vulnerability framework Simon coined and formalized
+- [[concepts/slop]] — Term for low-quality AI-generated content
+- [[entities/django]] — Web framework Simon co-created with Adrian Holovaty and others
+- [[entities/datasette]] — Data exploration tool Simon created
+- [[entities/llm-cli]] — Command-line tool for accessing LLMs
 
 ## Sources
-- [simonwillison.net/about](https://simonwillison.net/about)
-- [Lenny's Podcast highlights](https://simonwillison.net/2026/Apr/2/highlights-from-lenny-podcast-agentic-engineering/)
-- [Project Glasswing analysis](https://simonwillison.net/2026/Apr/7/project-glasswing/)
-- [GLM-5.1 testing](https://simonwillison.net/2026/Apr/7/glm-51/)
-- [AI destroying Open Source](https://simonwillison.net/2026/Apr/6/scan-for-secrets/)
+
+- [Simon Willison's Weblog](https://simonwillison.net/) (2002–present)
+- [Today I Learned](https://til.simonwillison.net/) (575+ entries)
+- [Simon Willison Wikipedia](https://en.wikipedia.org/wiki/Simon_Willison)
+- [GitHub: simonw](https://github.com/simonw)
+- [Datasette](https://datasette.io/)
+- [llm CLI](https://github.com/simonw/llm)
+- [shot-scraper](https://github.com/simonw/shot-scraper)
