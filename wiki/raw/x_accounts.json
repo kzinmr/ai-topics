@@ -1923,5 +1923,183 @@
     },
     "rss_url": "https://huyenchip.com/feed.xml",
     "topics": []
+  },
+  {
+    "account": {
+      "handle": "@lilianweng",
+      "name": "Lilian Weng",
+      "blog": "https://lilianweng.github.io",
+      "topics": [
+        "ai",
+        "ml-research",
+        "deep-learning",
+        "safety"
+      ],
+      "notes": "OpenAI VP of Research, famous ML blog posts (Lil'Log)"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": "Lilian Weng"
+    },
+    "rss_url": "https://lilianweng.github.io/index.xml",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@bclavie",
+      "name": "Benjamin Clavi\u00e9",
+      "blog": "https://ben.clavie.eu/posts",
+      "topics": [
+        "ai",
+        "information-retrieval",
+        "nlp",
+        "rag"
+      ],
+      "notes": "IR/NLP researcher, RAGatouille creator, ColBERT expert"
+    },
+    "about": {
+      "bio": "Hello \ud83d\udc4b\n#\nI\u2019m a French person working in Machine Learning, and more specifically, NLP and Information Retrieval. I\u2019m based in Tokyo, Japan, and intend to be for the rest of my time on this planet should I get the chance to.\nI work at\nMixedbread\n, where we\u2019re trying to solve information retrieval.\nOpen Things I\u2019ve Done\n#\nNowadays, my work is split between work on Mixedbread\u2019s internal models, which are not publicly released, and open science, as we\u2019re\nkeen to contribute to the IR ecosystem\n. Below, you may find open projects/publications, presented in no particular order and not particularly exhaustive.\nResearch/Models\n#\nRetrieval\n#\nJaColBERT (then JaColBERTv2), released in late ~2023, which improved the state-of-the-art for japanese retrieval by over 20 pct point at the time, and helped kickstart a wave of greatly improved JA embedding models.\nJaColBERTv2.5\n, released after JaColBERT finally lost its SOTA crown. It\u2019s a thorough study in considerably improving the training of retrievers/late interaction models, which has resulted in both the\nJaColBERTv2.5\nmodel itself (SOTA on JA retrieval with ~130M params) and\nanswerai-small-colbert-v2\n, a proof-of-~hubris~concept 33m param model competitive with 500m+ models on English retrieval, with over 2.5M monthly downloads on HF.\nToken Pooling\n, a shockingly simple clustering-based method which we introduced to improve a major issue with multi-vector models: the sheer number of vectors that need stored. Without any retraining, we can achieve a 50-to-66% reduction in the number of vectors, and thus the storage footprint, needed, without incurring any sort of retrieval quality hit! It\u2019s even been adopted by other teams who\nshowed it works on multimodal retrieval too\n\u263a\ufe0f\nI have been very interested in the importance of synthetic data for retrieval models, as well as how it can be combined with base models using model merging to avoid any sort of catastrophic forgetting. I have some pretty cool proofs of concepts that I need to e",
+      "about_url": "https://ben.clavie.eu/about",
+      "meta_author": "Ben"
+    },
+    "rss_url": "https://ben.clavie.eu/posts/index.xml",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@eugeneyan",
+      "name": "Eugene Yan",
+      "blog": "https://eugeneyan.com/writing",
+      "topics": [
+        "ai",
+        "ml-systems",
+        "recommender-systems",
+        "applied-ml"
+      ],
+      "notes": "Amazon senior applied scientist, ML systems in production"
+    },
+    "about": {
+      "bio": "Eugene possesses a rare blend of technical knowledge, business acumen, capacity to learn, and passion\n                    for doing the right thing for the customer/business. Throughout his time with Lazada he proactively\n                    sought feedback and improved himself, going from strength to strength in delivery, team development\n                    and individual mentoring. It would be a pleasure and honor to work with him again.\nKlemen Drole, Finance & Tech at Vestiaire Collective\nEugene gave a very inspirational keynote at the OLX Group Product and Tech 2019 conference in\n                    Amsterdam and absolutely nailed it! Given his hands-on experience as a data scientist, he was able\n                    to share the nitty gritty details with a technical audience. On the other hand, he was able to take\n                    a helicopter view explaining trends and developments. Thanks once again!\nMerlin De Graaf, Strategy at Vinted\nWe were having a project review and Eugene shared that he had resolved an unforeseen issue\n                    by writing a Python program. I noted that I didn\u2019t know he could code Python. He said\n                    he didn\u2019t, but that was before he\u2019d run into the issue. He found that Python was the best way to\n                    solve the problem, so he taught himself Python. I share this story because this captures the essence\n                    of Eugene. When a barrier is placed in front of him, he doesn\u2019t stop, he pushes through.\nKaren Midkiff, Manager Workforce Analytics at IBM\nEugene is an excellent leader whom I admire, respect, and am grateful to work with. Though he\n                    delivered creative and high-impact projects, he remains open-minded and humble. His philosophies\n                    of hiring and leadership played a crucial role in building Lazada's Data Science team as one of the\n                    strongest in SEA. He is the effective leader I\u2019d choose to follow because he supports, protects",
+      "about_url": "https://eugeneyan.com/about",
+      "meta_author": "Eugene Yan"
+    },
+    "rss_url": "https://eugeneyan.com/rss",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@samuelcolvin",
+      "name": "Samuel Colvin",
+      "topics": [
+        "python",
+        "open-source",
+        "pydantic",
+        "ai-tools"
+      ],
+      "notes": "Pydantic creator, PydanticAI, Python open-source"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": ""
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@mitsuhiko",
+      "name": "Armin Ronacher",
+      "blog": "https://lucumr.pocoo.org",
+      "topics": [
+        "python",
+        "rust",
+        "open-source",
+        "web"
+      ],
+      "notes": "Flask/Jinja2/Sentry creator, Rust advocate, Lucumr blog"
+    },
+    "about": {
+      "bio": "About Me\nHi, my name is Armin Ronacher!  I\u2019m deeply passionate about building\nteams, creating products, and contributing to the Open Source community.\nAs a dedicated software developer, I\u2019ve had the privilege of creating a\nnumber of very popular Open Source projects, including Flask, Jinja2, and\nmany\nother widely used things\n.\nI founded\nEarendil\n.  For a decade, I\u2019ve\nbeen working\non Sentry\n, building out one of our regional offices,\nworking on event ingestion, SDKs and leading the teams for our internal\ndeveloper platform.  I also love sharing knowledge and experiences, which is\nwhy I give\ntalks at conferences and events\nand write about\nengineering and life on this blog.\nIf my work has been valuable to you, I\u2019d greatly appreciate your support\nthrough GitHub sponsors.\nIf you want to contact me, you can reach me via one of the following\ncommunication channels:\nThere are some other things that you might be interested in:\nMy usual nickname is\nmitsuhiko\n.\nLike my Work?\nAll of the open source stuff I work on is liberally licensed which means\nyou can do with it whatever you want.\nI\u2019m currently not available for consulting or contract work, but you can\nsupport my work via GitHub sponsors.\nAbout this Website\nThe name of this website came when a friend of mine and me were joking\nabout what makes a great web 2.0 website.  We came up with three things: it\nhas to have round corners, fresh colors and a weirdly shortened name.  So\nthe first version of this blog was green, named after a fresh fruit\n(lucuma) and with a destroyed, abbreviated name.  Not much is left from\nthese days, but the name stuck.\nThe website itself is written in restructured text and built with a small\nscript.  Sourcecode can be\nfound on github\n.\nImprint\nImprint and contact information:\nArmin Ronacher\nHandelskai 132a/1/46; 1020 Vienna; Austria\nVAT number / UID: AT U68598289\nContact e-mail:\narmin.ronacher@active-4.com\ncopy as\n/\nview\nmarkdown",
+      "about_url": "https://lucumr.pocoo.org/about",
+      "meta_author": "@mitsuhiko"
+    },
+    "rss_url": "https://lucumr.pocoo.org/feed.atom",
+    "topics": [
+      "Mario and Earendil",
+      "Absurd In Production",
+      "Some Things Just Take Time",
+      "AI And The Ship of Theseus",
+      "The Final Bottleneck",
+      "A Language For Agents",
+      "Pi: The Minimal Agent Within OpenClaw",
+      "Colin and Earendil",
+      "Agent Psychosis: Are We Going Insane?",
+      "Porting MiniJinja to Go With an Agent"
+    ]
+  },
+  {
+    "account": {
+      "handle": "@emollick",
+      "name": "Ethan Mollick",
+      "blog": "https://www.oneusefulthing.org",
+      "topics": [
+        "ai",
+        "education",
+        "productivity",
+        "ai-adoption"
+      ],
+      "notes": "Wharton professor, 'One Useful Thing' blog, AI adoption researcher, 'Co-Intelligence' author"
+    },
+    "about": {
+      "bio": "This blog/newsletter provides a research-based view on the implications of AI, by me, Prof. Ethan Mollick (to answer a common question, I do write every post myself, only asking for AI feedback after I have finished a complete draft). I am very active on your favorite social media site (or at least\nX\n/\nBlueSky\n/\nLinkedIn\n). Free resources and prompts are compiled at the\nGenerative AI Labs at Wharton\n. You might also be interested in\nmy\nNew York Times\nbestselling boo\nk,\nCo-Intelligence\n.\nFor more about me, see my\nboring academic page\n.\nThe cover image was generated by MidJourney AI v3 with the prompt \u201cOne useful thing\u201d in pixelart style.",
+      "about_url": "https://www.oneusefulthing.org/about",
+      "meta_author": "Ethan Mollick"
+    },
+    "rss_url": "https://www.oneusefulthing.org/feed",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@clefourrier",
+      "name": "Cl\u00e9mentine Fourrier",
+      "blog": "https://clefourrier.github.io",
+      "topics": [
+        "ai",
+        "evaluation",
+        "huggingface",
+        "open-source"
+      ],
+      "notes": "Hugging Face, Open LLM Leaderboard maintainer, evaluation research"
+    },
+    "about": {
+      "bio": "",
+      "about_url": "",
+      "meta_author": ""
+    },
+    "rss_url": "",
+    "topics": []
+  },
+  {
+    "account": {
+      "handle": "@chipro",
+      "name": "Chip Huyen",
+      "blog": "https://huyenchip.com/blog",
+      "topics": [
+        "ai",
+        "ml-systems",
+        "ml-ops",
+        "education"
+      ],
+      "notes": "Author of 'Designing ML Systems' and 'AI Engineering', Stanford lecturer, ML systems expert"
+    },
+    "about": {
+      "bio": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at\njekyllrb.com\nYou can find the source code for the Jekyll new theme at:\njekyll\n/\nminima\nYou can find the source code for Jekyll at\njekyll\n/\njekyll",
+      "about_url": "https://huyenchip.com/about",
+      "meta_author": "Chip Huyen"
+    },
+    "rss_url": "https://huyenchip.com/feed.xml",
+    "topics": []
   }
 ]

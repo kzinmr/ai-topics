@@ -269,6 +269,14 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 - [[entities/xjdr|xjdr]] (@_xjdr)
 - [[entities/yacine-mahdid|Yacine Mahdid]] (@yacinemtb)
 - [[entities/zach-mueller|Zach Mueller]] (@TheZachMueller)
+- [[entities/armin-ronacher|Armin Ronacher]] (@mitsuhiko)
+- [[entities/benjamin-clavi|Benjamin Clavié]] (@bclavie)
+- [[entities/chip-huyen|Chip Huyen]] (@chipro)
+- [[entities/cl-mentine-fourrier|Clémentine Fourrier]] (@clefourrier)
+- [[entities/ethan-mollick|Ethan Mollick]] (@emollick)
+- [[entities/eugene-yan|Eugene Yan]] (@eugeneyan)
+- [[entities/lilian-weng|Lilian Weng]] (@lilianweng)
+- [[entities/samuel-colvin|Samuel Colvin]] (@samuelcolvin)
 
 ### Local LLM
 

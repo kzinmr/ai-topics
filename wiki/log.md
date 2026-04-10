@@ -134,3 +134,6 @@ Processed 47 highest-priority articles from blogwatcher backlog (2,238 total unr
   - Batch 4: @rahulgs, @realmcore_, @spikedoanz, @_xjdr, @yacinemtb
 - Each page includes: full frontmatter (status: active), overview, timeline, core ideas, key projects, related wikilinks, and sources
 - **Quality target met:** Pages match depth of antirez-com.md / simon-willison.md (8-24KB each)
+
+## 2026-04-10
+- Added 8 X account entity skeletons: @lilianweng, @bclavie, @eugeneyan, @samuelcolvin, @mitsuhiko, @emollick, @clefourrier, @chipro
