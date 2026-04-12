@@ -19,9 +19,19 @@ Django co-creator, open-source advocate, and leading voice in AI-assisted softwa
 
 ## Core Ideas
 
-- **Agentic Engineering**: Professional software engineering practice augmented by coding agents (Claude Code, Codex) — distinct from "vibe coding" in that it amplifies existing expertise rather than replacing it
-- **Evaluation-first mindset**: Emphasizes that 60-80% of AI-assisted development should be spent on testing and error analysis
-- **Tool building for agents**: Creates developer tools specifically designed for AI agent consumption (Showboat, Rodney, LLMLingua)
+### Agentic Engineering（2025-2026）
+> "Agentic engineering represents the other end of the scale: professional software engineers using coding agents to improve and accelerate their work by amplifying their existing expertise."
+
+**Vibe Codingとの明確な区別**:
+- Vibe Coding = 自然言語で依頼→コードを読まずにデプロイ→認知負債が累積
+- Agentic Engineering = エージェントを活用しつつ、テスト・検証・理解を体系化
+
+**核心哲学**:
+1. **評価ファースト**: 開発時間の60-80%をテストとエラー分析に費やすべき
+2. **コードを信じるな**: エージェントが生成したコードは実行して検証するまで信用しない
+3. **認知負債の管理**: Vibe Codingが蓄積する認知負債を、対話的解説とウォークスルーで返済
+4. **エージェント用ツール**: LLMのコンテキストウィンドウに最適化されたCLIツールを自作（Rodney、Showboat、LLMプラグイン）
+5. **構造化された状態引き継ぎ**: エージェント間のコミュニケーションはファイル経由で、会話履歴に依存しない
 
 ### Anthropic Engineeringとの収束点
 
@@ -35,6 +45,29 @@ Willisonの実践的知見はAnthropic Engineeringの公式ベストプラクテ
 | Git統合 | 「Version control with descriptive commits」 | エージェントの作業を追跡可能な状態に保つ |
 
 Anthropicが2025-2026年に発表した一連のEngineering記事は、Willisonが実践的に発見したパターンを**公式に検証・体系化**したものと言える。
+
+### Cognitive Debt（認知負債）理論
+Willisonが独自に提唱した概念。AIエージェントが生成したコードの動作理解を失うことで蓄積する「認知的負債」であり、技術的負債の認知版。
+
+> "If the core of our application becomes a black box that we don't fully understand we can no longer confidently reason about it, which makes planning new features harder and eventually slows our progress in the same way that accumulated technical debt does."
+
+**返済サイクル**:
+```
+コード生成 → テスト → Linear Walkthroughで理解 → 
+  対話的解説で深掘り → Showboatで記録 → 次のコード生成
+```
+
+### コンテキストウィンドウの戦略的管理
+LLMのコンテキストウィンドウは**限られたリソース**として扱うべき:
+- **圧縮**: 不要な情報を削除、重要な情報を保持
+- **構造化**: ファイルベースのコミュニケーション、会話履歴への依存回避
+- **優先順位付け**: 最も関連性の高い情報をコンテキストに含める
+- **エージェント設計**: コンテキストの制限を前提としたツール設計（RodneyのCLI第一アプローチ）
+
+### マルチエージェントパターン
+- **サブエージェント**: 独立したコンテキストとターミナルで並列タスク実行
+- **メタエージェント**: サブエージェントの起動・統合・結果の取りまとめ
+- **自己完結性**: サブエージェントへの指示は完全に自己完結である必要がある
 
 ## Key Quotes
 

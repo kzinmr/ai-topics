@@ -2,7 +2,7 @@
 
 Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-12 (Agentic Engineering / AI Agent Engineering / Harness Engineering taxonomy established; Anthropic patterns moved to ai-agent-engineering/)
+Last updated: 2026-04-12 (Agentic Engineering guide enrichment: +3 new concept pages, +1 enriched, Simon Willison entity page expanded with Cognitive Debt/Context Window/Subagents theory)
 
 ## Entity Pages (37)
 
@@ -135,6 +135,9 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[concepts/agentic-engineering/linear-walkthroughs]] — Linear Walkthroughs (Simon Willison)
 |- [[concepts/agentic-engineering/interactive-explanations]] — Interactive Explanations (Simon Willison)
 |- [[concepts/agentic-engineering/cognitive-debt]] — Cognitive Debt (Simon Willison)
+|- [[concepts/agentic-engineering/context-window-management]] — Context Window Management (Simon Willison)
+|- [[concepts/agentic-engineering/rodney]] — Rodney (Browser Automation CLI)
+|- [[concepts/agentic-engineering/subagents]] — Subagents (Parallel Agent Delegation)
 |- [[concepts/agentic-engineering/how-agents-work]] — How Coding Agents Work
 |- [[concepts/agentic-engineering/using-git-with-agents]] — Using Git with Agents
 

@@ -20,3 +20,12 @@ title: "Wiki Change Log"
 - Simon Willison entity page enriched with Agentic Engineering guide content
   - Sources: https://simonwillison.net/guides/agentic-engineering-patterns/
   - Added: 7 core patterns, 4 principles, 4 tool references, 4 related concepts
+  - Expanded: Cognitive Debt theory, Context Window Management, Multi-agent patterns
+
+### New Concept Pages (from Agentic Engineering guide)
+- **context-window-management.md** — コンテキストウィンドウの戦略的管理（圧縮、構造化、優先順位付け）
+- **rodney.md** — ブラウザ自動化CLIツール（エージェント向け設計、Showboat連携）
+- **subagents.md** — 並列AIエージェント委任パターン（独立性、自己完結性、バッチモード）
+
+### Enriched Concept Pages
+- **cognitive-debt.md** (1.5KB → 3.5KB): Vibe Coding vs Agentic Engineering対比表、認知負債のメカニズム、返済サイクル図を追加
