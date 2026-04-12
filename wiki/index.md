@@ -4,7 +4,7 @@ Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon
 
 Last updated: 2026-04-13 (+8 browser agent entities + Death of Browser concept page)
 
-## Entity Pages (37)
+## Entity Pages (45)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 
@@ -102,6 +102,17 @@ Last updated: 2026-04-13 (+8 browser agent entities + Death of Browser concept p
 
 - [[entities/anthropic]] — Anthropic
 - [[entities/meta]] — Meta
+
+### Browser Agents & Computer Use
+
+- [[entities/anthropic-computer-use]] — Anthropic Computer Use (Claude Sonnet 4.6, OSWorld 72.5%)
+- [[entities/openai-cua]] — OpenAI CUA / Operator (GPT-4o + RL, OSWorld 38.1%)
+- [[entities/browser-use]] — browser-use (Open source, 87k+ stars, DOM-based)
+- [[entities/browserbase]] — Browserbase / Stagehand (Cloud browser infra, $300M)
+- [[entities/manus]] — Manus / Browser Operator (Local browser agent, Meta acquired)
+- [[entities/perplexity-comet]] — Perplexity Comet (AI-native browser, search-first)
+- [[entities/webmcp]] — WebMCP (W3C standard, Chrome 146 preview)
+- [[concepts/death-of-browser]] — Death of Browser (Agentic browsing paradigm shift)
 
 ### AI Models & Technologies
 
