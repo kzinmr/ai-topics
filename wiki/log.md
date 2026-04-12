@@ -1,12 +1,25 @@
 
-### 2026-04-12 — AI Evals Article Processing
+### 2026-04-12 — AI Evals Article Processing (Lenny's Substack)
 - **Article:** Lenny's Podcast — "Why AI evals are the hottest new skill for product builders" (Sept 25, 2025)
-- Created: [[concepts/ai-evals.md]] — Systematic framework for evaluating AI systems
-- Created: [[entities/hamel-husain.md]] — AI evals educator, 2,000+ PMs & engineers trained
-- Created: [[entities/shreya-shankar.md]] — AI evals researcher, world's #1 evals course co-creator
-- Updated: index.md (entity count: 37→37+2, concept count: 25→27)
-- Updated: index.md (AI Evaluation & Testing section added)
-- Total raw articles: 98 (as of 2026-04-12)
+  - Source: https://open.substack.com/pub/lenny/p/why-ai-evals-are-the-hottest-new-skill
+- Created: [[concepts/ai-evals.md]] — Systematic framework for evaluating AI systems (3 levels, iteration flywheel, binary>likert, error analysis)
+- Created: [[concepts/critique-shadowing.md]] — 7-step process for building aligned LLM-as-Judge evaluators
+- Created: [[concepts/evals-skills.md]] — Coding agent skills/plugins for AI evaluations
+- Created: [[concepts/eval-tools-comparison.md]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI comparison
+- Created: [[entities/hamel-husain.md]] — AI evals educator, 50+ companies consulted, 4,000+ students taught
+- Updated: index.md (AI Evaluation & Testing section added, entity count updated)
+- Total raw articles: 99 (as of 2026-04-12)
+
+### 2026-04-12 — Hamel Husain Entity Page Upgrade
+- **Upgraded:** [[entities/hamel-husain.md]] from skeleton-style bio to full research profile (~17KB)
+- **Added sections:**
+  - Detailed career timeline (~2004 to 2026, 25+ years)
+  - Core Ideas: "The Harness is Data Science", Error Analysis First, Binary > Likert Scales, Critique Shadowing Framework, Eval-Driven Development is a Trap, Transition from Literate Programming
+  - Open Source Contributions: CodeSearchNet (GitHub Copilot precursor, 2M pairs across 6 languages), fast.ai ecosystem (nbdev, fastpages, ghapi), Axolotl, Kubeflow
+  - Key Quotes from podcasts, conferences, blog posts
+  - Related Entities: Jeremy Howard, Eric Ries, Shreya Shankar, Answer.AI, Parlance Labs
+- **Sources added:** hamel.dev blog, Parlace Labs team page, Answer.AI posts, arXiv:1909.09436 (CodeSearchNet), PyAI Conf 2026, O'Reilly book "Evals for AI Engineers" (forthcoming)
+- **Status:** Complete (no longer skeleton-level; matches antirez/simon-willison quality)
 
 ### 2026-04-10 — X Account Enrichment (Batch 4)
 - Enriched 8 skeleton entity pages from X/Twitter accounts:

@@ -2,7 +2,7 @@
 
 Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-12 (AI evals article from Lenny's Podcast)
+Last updated: 2026-04-12 (Hamel Husain entity page upgraded; AI evals concepts added)
 
 ## Entity Pages (37)
 
