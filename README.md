@@ -30,9 +30,14 @@ ai-topics/
 │   └── queries/            # [Layer 2] 調査クエリ結果
 │
 ├── config/
-│   └── feeds/              # 購読ソース定義 (設定)
-│       ├── blogs.opml      # HN人気ブログ 84件
-│       └── x-accounts.yaml # X/Twitter追跡アカウント定義
+│   ├── feeds/              # 購読ソース定義
+│   │   ├── blogs.opml      # HN人気ブログ 84件
+│   │   └── x-accounts.yaml # X/Twitter追跡アカウント定義
+│   └── hermes/             # Hermes Agent 設定 (skills.external_dirs 経由で読み込み)
+│       ├── SOUL.md         # エージェントの人格・責務定義
+│       └── skills/         # プロジェクト固有のlocalスキル
+│           ├── wiki/       # wikiエンティティ強化・アカウントエンリッチ
+│           └── research/   # ブログ分析・記事グルーピング
 │
 ├── scripts/                # 自動化スクリプト
 │   ├── process_email.py    # メール→raw/articles 変換パイプライン
@@ -100,3 +105,5 @@ Hermes Agent (Discord) が inbox/ + wiki/raw/ から知識を抽出・構造化:
 - `~/hn-popular-blogs-2025.opml` → `~/ai-topics/config/feeds/blogs.opml`
 - `~/x-accounts.yaml` → `~/ai-topics/config/feeds/x-accounts.yaml`
 - `~/SETUP.md` → `~/ai-topics/docs/SETUP.md`
+- `~/.hermes/SOUL.md` → `~/ai-topics/config/hermes/SOUL.md`
+- `~/.hermes/config.yaml` の `skills.external_dirs` → `~/ai-topics/config/hermes/skills/`
