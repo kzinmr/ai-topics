@@ -2,7 +2,7 @@
 
 Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-13 (+8 browser agent entities + Death of Browser concept page)
+Last updated: 2026-04-13 (+8 browser agent entities + Death of Browser + Anthropic Cookbooks: 4 concept pages)
 
 ## Entity Pages (45)
 
@@ -199,8 +199,14 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[concepts/scaling-without-slop]] — Scaling without Slop
 |- [[concepts/world-models-science]] — World Models for Scientific Discovery
 
+### Claude Agent SDK & Managed Agents
+|- [[concepts/claude-agent-sdk-sre-patterns]] — Claude Agent SDK SRE Agent Pattern (MCP, safety guardrails, subprocess)
+|- [[concepts/managed-agents-sre-incident-response]] — Managed Agents SRE Incident Response (Webhook, HITL, Skills)
+|- [[concepts/chief-of-staff-agent-patterns]] — Chief of Staff Agent Patterns (CLAUDE.md, Hooks, Plan Mode, Subagents)
+|- [[concepts/research-agent-fundamentals]] — Research Agent Fundamentals (Stateless vs Stateful, buffer management)
+
 ### Agent Systems & Orchestration
-|- [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
+||- [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
 |- [[concepts/caid-coordination]] — CAID (Centralized Asynchronous Isolated Delegation)
 |- [[concepts/long-context-coding-agents]] — Long-Context via Coding Agents
 |- [[concepts/multi-agent-autonomy-scale]] — Multi-Agent Autonomy Scale

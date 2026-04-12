@@ -6,6 +6,14 @@ title: "Wiki Change Log"
 
 ## 2026-04-13
 
+### Anthropic Cookbooks — Claude Agent SDK & Managed Agents (4件)
+Anthropic Cookbookから実用的なエージェント設計パターンを抽出し、概念ページとして整理。特にClaude Codeの検証済みユースケースをサーバーサイド自動化フローに転用する設計に焦点。
+- **claude-agent-sdk-sre-patterns.md** — MCPサブプロセス統合、3層安全ガードレール（ディレクトリ制限/コマンドAllowlist/PreToolUseフック）、自律的インシデント対応ワークフロー
+- **managed-agents-sre-incident-response.md** — Webhook駆動セッション開始、Skillsによるプログレッシブディスクロージャー、カスタムツール経由HITL承認（Slackボタン→PRマージ）
+- **chief-of-staff-agent-patterns.md** — CLAUDE.md永続メモリ、Planモード（`permission_mode="plan"`）、Output Styles、カスタムスラッシュコマンド、Hooks（PreToolUse/PostToolUse）、サブエージェント委任
+- **research-agent-fundamentals.md** — ステートレス(`query()`) vs ステートフル(`ClaudeSDKClient`)、バッファ管理(`max_buffer_size`)、システムプロンプトによる引用強制
+- **Sources**: https://platform.claude.com/cookbook/ (56 cookbooks中10件をスキャン、優先4件をwiki化)
+
 ### OpenAI Cookbook — 方法論コンセプト追加 (6件)
 OpenAI Cookbookからベンダー中立な方法論を抽出し、概念ページとして整理。
 - **evaluation-flywheel.md** — 評価→分析→改善→データ収集の継続的フィードバックループ。Golden Dataset構築、Multi-Metric Evaluation、Regression Detection
