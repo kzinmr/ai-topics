@@ -20,14 +20,14 @@ ai-topics/
 │   │
 │   ├── raw/                # [Layer 1] 不変のソース素材 (Hermesは読み取り専用)
 │   │   ├── articles/       # スクレイプ済み記事
-│   │   ├── papers/         # arXiv論文 (予約)
-│   │   ├── transcripts/    # ポッドキャスト文字起こし (予約)
-│   │   └── assets/         # 画像・図表 (予約)
+│   │   ├── papers/         # arXiv論文
+│   │   ├── transcripts/    # ポッドキャスト文字起こし
+│   │   └── assets/         # 画像・図表
 │   │
 │   ├── concepts/           # [Layer 2] 概念・手法・技術 (how/why)
 │   ├── entities/           # [Layer 2] 人物・企業・プロダクト (who/what)
 │   ├── comparisons/        # [Layer 2] ツール/モデル比較 (vs)
-│   └── queries/            # [Layer 2] 調査クエリ結果 (再導出コストが高い回答)
+│   └── queries/            # [Layer 2] 調査クエリ結果
 │
 ├── config/
 │   └── feeds/              # 購読ソース定義 (設定)
