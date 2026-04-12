@@ -141,7 +141,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[concepts/agentic-engineering/how-agents-work]] — How Coding Agents Work
 |- [[concepts/agentic-engineering/using-git-with-agents]] — Using Git with Agents
 
-### AI Agent Engineering (Anthropic)
+### AI Agent Engineering (Anthropic + OpenAI)
 |- [[concepts/ai-agent-engineering/_index]] — AI Agent Engineering (システム構築パターン集)
 |- [[concepts/ai-agent-engineering/building-effective-agents]] — Building Effective Agents (Anthropic)
 |- [[concepts/ai-agent-engineering/advanced-tool-use]] — Advanced Tool Use (Anthropic)
@@ -154,6 +154,11 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[concepts/ai-agent-engineering/context-engineering]] — Context Engineering (Anthropic)
 |- [[concepts/ai-agent-engineering/claude-code-best-practices]] — Claude Code Best Practices (Anthropic)
 |- [[concepts/ai-agent-engineering/effective-harnesses-for-long-running-agents]] — Effective Harnesses for Long-Running Agents (Anthropic)
+|- [[concepts/ai-agent-engineering/agent-loop-orchestration]] — Agent Loop Orchestration (OpenAI Responses API)
+|- [[concepts/ai-agent-engineering/context-compaction]] — Context Compaction (OpenAI Responses API)
+|- [[concepts/ai-agent-engineering/container-context]] — Container Context (OpenAI Hosted Container)
+|- [[concepts/ai-agent-engineering/agent-skills]] — Agent Skills / SKILL.md bundles (OpenAI)
+|- [[concepts/ai-agent-engineering/agent-security-patterns]] — Agent Security Patterns (OpenAI Egress Proxy)
 |- [[concepts/ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
 |- [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
 |- [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo / OpenAI Symphony)
