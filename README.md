@@ -30,9 +30,10 @@ ai-topics/
 │   ├── comparisons/        # [Layer 2] ツール/モデル比較 (vs)
 │   └── queries/            # [Layer 2] 調査クエリ結果 (再導出コストが高い回答)
 │
-├── feeds/                  # 情報ソース定義
-│   ├── hn-popular-blogs-2025.opml  # HN人気ブログ 84件
-│   └── x-accounts.yaml    # X/Twitter追跡アカウント定義
+├── config/
+│   └── feeds/              # 購読ソース定義 (設定)
+│       ├── blogs.opml      # HN人気ブログ 84件
+│       └── x-accounts.yaml # X/Twitter追跡アカウント定義
 │
 ├── scripts/                # 自動化スクリプト
 │   ├── process_email.py    # メール→raw/articles 変換パイプライン
@@ -71,7 +72,7 @@ ai-topics/
 ```
 ═══ 購読 & 受信 ═══
 
-feeds/                         購読先の定義 (設定)
+config/feeds/                  購読先の定義 (設定)
   │
   ├─ Newsletter Email → Maildir → process_email.py
   │    ├→ inbox/newsletters/*.md     日次ダイジェスト
@@ -96,6 +97,6 @@ Hermes Agent (Discord) が inbox/ + wiki/raw/ から知識を抽出・構造化:
 旧パスとの互換性のため以下のシンボリックリンクが存在:
 - `~/wiki` → `~/ai-topics/wiki/`
 - `~/scripts/*` → `~/ai-topics/scripts/*` (各スクリプト個別)
-- `~/hn-popular-blogs-2025.opml` → `~/ai-topics/feeds/hn-popular-blogs-2025.opml`
-- `~/x-accounts.yaml` → `~/ai-topics/feeds/x-accounts.yaml`
+- `~/hn-popular-blogs-2025.opml` → `~/ai-topics/config/feeds/blogs.opml`
+- `~/x-accounts.yaml` → `~/ai-topics/config/feeds/x-accounts.yaml`
 - `~/SETUP.md` → `~/ai-topics/docs/SETUP.md`

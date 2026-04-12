@@ -29,7 +29,7 @@ from bs4 import BeautifulSoup
 from readability import Document
 
 # Paths
-ACCOUNTS_PATH = Path.home() / "x-accounts.yaml"
+ACCOUNTS_PATH = Path.home() / "ai-topics" / "config" / "feeds" / "x-accounts.yaml"
 WIKI_ENTITIES = Path.home() / "wiki" / "entities"
 WIKI_INDEX = Path.home() / "wiki" / "index.md"
 WIKI_LOG = Path.home() / "wiki" / "log.md"

@@ -28,7 +28,7 @@ from bs4 import BeautifulSoup
 from readability import Document
 
 # Paths
-OPML_PATH = Path.home() / "hn-popular-blogs-2025.opml"
+OPML_PATH = Path.home() / "ai-topics" / "config" / "feeds" / "blogs.opml"
 WIKI_ENTITIES = Path.home() / "wiki" / "entities"
 WIKI_INDEX = Path.home() / "wiki" / "index.md"
 WIKI_LOG = Path.home() / "wiki" / "log.md"
