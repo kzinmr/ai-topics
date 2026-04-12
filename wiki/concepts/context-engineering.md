@@ -1,95 +1,72 @@
 ---
-title: "Context Engineering — Anthropic's Dynamic Token Curation Framework"
-status: draft
+title: "Context Engineering"
 created: 2026-04-13
-source: "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
-author: "Anthropic Engineering"
-tags: [context-engineering, prompt-engineering, jit-retrieval, compaction, memory-management]
-related: [claude-memory, chatgpt-memory-bitter-lesson, harness-engineering]
+source: "OpenAI Cookbook — Context engineering patterns"
+tags: [context-management, prompt-engineering, optimization]
+status: draft
 ---
 
-# Context Engineering — Anthropic's Dynamic Token Curation Framework
+# Context Engineering
 
-Anthropicが提唱する**コンテキストエンジニアリング** — プロンプトエンジニアリングからのパラダイムシフト。静的な指示書きから、エージェントループ全体での**動的トークンキュレーション**へ。
+OpenAI Cookbookで示される、コンテキストウィンドウを効果的に活用するパターン。AnthropicのContext Engineeringとは異なり、**技術的実装**に焦点を当てている。
 
-> "Context engineering is the art and science of curating what will go into the limited context window from that constantly evolving universe of possible information."
-> — Anthropic Engineering, Sep 2025
+## Core Concept
 
-## パラダイムシフト: Prompt vs Context Engineering
+限られたコンテキストウィンドウ内で、最も重要な情報を効果的に配置し、モデルの性能を最大化する。
 
-| 次元 | プロンプトエンジニアリング | コンテキストエンジニアリング |
-|------|--------------------------|------------------------------|
-| **焦点** | システム指示の作成・整理 | 推論中の**コンテキスト全体**の管理 |
-| **スコープ** | 離散的・1回限りのタスク | 反復的・循環的（エージェントターンごと） |
-| **構成要素** | システムプロンプト、few-shot例 | システムプロンプト、ツール、MCP、外部データ、メッセージ履歴、ランタイム検索 |
+## Key Techniques
 
-## The Finite "Attention Budget" & Context Rot
+### 1. Context Compression
 
-LLMはアーキテクチャ的に**有限の注意力バジェット**を持つ：
+- 冗長な情報の削除
+- 重要な事実の抽出と要約
+- キーワード/エンティティの優先順位付け
 
-- **Context Rot**: トークン数増加に伴い、想起精度が**勾配的に**低下（ハードな崖ではない）
-- **Transformerの制限**: 全トークンが全トークンに注目 → `n²` のペアワイズ関係
-- **位置エンコーディング補間**: 長いコンテキストを可能にするが、長期推論の精度が低下
-- **トレーニングバイアス**: モデルは主に短いシーケンスでトレーニングされている
+### 2. Context Ordering
 
-> "Every new token introduced depletes this budget by some amount, increasing the need to carefully curate the tokens available to the LLM."
+- 重要な情報を最初と最後に配置（recency/primacy effect）
+- 関連する情報をグループ化
+- 時系列または論理構造で整理
 
-## JIT Context Strategy（Just-in-Time コンテキスト）
+### 3. Dynamic Context Management
 
-**Anthropicが推奨するメモリ戦略**: 事前に全データをロードするのではなく、**必要なときに必要なだけ取得**。
+- タスクの複雑さに応じたコンテキスト量の調整
+- 不要な情報の動的排除
+- コンテキスト使用量の監視と最適化
 
-```
-軽量識別子（ファイルパス、保存クエリ、Webリンク）を保持
-         ↓
-ランタイムでツール経由でデータ取得（glob, grep, read）
-         ↓
-エージェントが段階的にコンテキストを発見
-```
+### 4. Context Chunking
 
-### 人間の認知との類似性
+- large documentsを意味のあるチャンクに分割
+- 各チャンクにメタデータを付加
+- 必要に応じてチャンクを組み合わせ
 
-| 人間の認知 | エージェントのJIT |
-|------------|-------------------|
-| 暗記ではなく索引に依存 | ファイルシステム・ブックマークに依存 |
-| 必要に応じて参照 | ツール呼び出しで動的取得 |
-| メタデータで行動を信号化 | フォルダ階層・命名規則・タイムスタンプ |
+## Implementation Patterns
 
-### ハイブリッド戦略（Anthropic推奨）
+### Retrieval-Augmented Context
 
-```
-静的/重要なコンテキスト → 事前ロード（CLAUDE.md等）
-動的コンテキスト     → JIT取得（glob/grep/検索）
+```python
+def build_context(query, documents, max_tokens):
+    relevant = retrieve_top_k(query, documents, k=5)
+    compressed = compress_documents(relevant, target_size=max_tokens*0.8)
+    instructions = load_system_instructions()
+    return combine(instructions, compressed)
 ```
 
-> 例: `CLAUDE.md`を最初にドロップ + `glob`/`grep`でオンデマンドファイルナビゲーション
+### Progressive Context Loading
 
-## 長時間タスクのための3つのメモリ戦略
+1. 基本コンテキストで初期応答生成
+2. ユーザーのフォローアップに応じて追加コンテキストロード
+3. 会話の進行に伴いコンテキストを更新
 
-| 戦略 | 仕組み | ユースケース | 実装ヒント |
-|------|--------|-------------|-----------|
-| **Compaction** | コンテキスト限界付近で会話を要約 → 高忠実度サマリーで再開 | 対話フロー、詳細なやり取り | アーキテクチャ決定と未解決バグを保持。冗長なツール出力を削除。**再現性を最優先**し、次に精度を調整 |
-| **Agentic Memory** (構造化メモ書き) | エージェントがコンテキスト外に永続メモを保存（`NOTES.md`、TODOリスト）→ 後で読み戻し | 反復的開発、明確なマイルストーン | 数千ステップにわたる進捗/依存関係の追跡を可能にする。Claude Dev Platform memory tool（ベータ）はファイルベース外部メモリをサポート |
-| **Sub-Agent** | メインエージェントが高レベル計画を調整 → サブエージェントが詳細実装 | 大規模タスク分解 | 各サブエージェントが独立したコンテキストを持つため、メインエージェントの注意力を節約 |
+## Anti-Patterns
 
-## ツール設計のメモリへの影響
+- **Context Overflow**: 最大トークン数を超える情報投入
+- **Context Dilution**: 無関係な情報で重要な事実が埋もれる
+- **Static Context**: 会話の進行に伴うコンテキスト更新を怠る
 
-- **トークン効率**: ツールは自己完結的で、冗長な出力を避ける
-- **オーバーラップ禁止**: 重複するツールは意思決定麻痺を引き起こす
-  > "If a human engineer can't definitively say which tool should be used in a given situation, an AI agent can't be expected to do better."
-- **入力パラメータ**: 記述的で明確、モデルの強みに合わせる
+## Related
 
-## Shlok Khemaniの「Bitter Lesson」との関係
-
-| Khemaniの主張 | Anthropicの実装 |
-|---------------|-----------------|
-| 「最良のメモリはメモリなし」 | JIT Context — 事前ロードせず必要時に取得 |
-| ファイルシステムがメモリ | CLAUDE.md + glob/grep パターン |
-| ステートレスセッション | Compactionで状態をリセット、サマリーで継続 |
-| 計算がメモリを置き換える | Sub-Agentでコンテキストを分散、注意力バジェットを節約 |
-
-**両者は同じ結論に収束**: 外部データベースではなく、**ファイルシステム + 動的取得**がスケーラブルなメモリ戦略。
-
-## Sources
-
-- [Effective Context Engineering for AI Agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — Anthropic Engineering, Sep 29, 2025
-- [ChatGPT's Memory Problem](https://www.shloked.com/writing/chatgpt-memory-bitter-lesson) — Shlok Khemani（比較分析）
+- [[concepts/context-window-management]] — Context Window Management
+- [[concepts/context-engineering]] — Context Engineering (Anthropic)
+- [[concepts/context-compaction]] — Context Compaction
+- [[concepts/long-context-coding-agents]] — Long-Context via Coding Agents

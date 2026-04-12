@@ -2,7 +2,7 @@
 
 Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-13 (+Cognition AI Data Analyst concept, Cognition/Devin Philosophy: Scott Wu, Nader Dabit, Walden Yan entity pages, 4 concept pages: cognition-devin-philosophy, closing-agent-loop, managed-devins, context-anxiety, 100x capability growth metrics, Agentic Slack, Agents From Anywhere)
+Last updated: 2026-04-13 (+8 browser agent entities + Death of Browser concept page)
 
 ## Entity Pages (37)
 
@@ -118,7 +118,7 @@ Last updated: 2026-04-13 (+Cognition AI Data Analyst concept, Cognition/Devin Ph
 - [[entities/qwen3-6-plus]] — Qwen3.6-Plus
 - [[entities/zoox-expansion]] — Zoox Robotaxi Expansion
 
-## Concept Pages (34)
+## Concept Pages (40)
 
 Ideas, frameworks, and methodologies extracted from articles.
 
@@ -173,6 +173,12 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[concepts/ai-agent-engineering/container-context]] — Container Context (OpenAI Hosted Container)
 |- [[concepts/ai-agent-engineering/agent-skills]] — Agent Skills / SKILL.md bundles (OpenAI)
 |- [[concepts/ai-agent-engineering/agent-security-patterns]] — Agent Security Patterns (OpenAI Egress Proxy)
+|- [[concepts/evaluation-flywheel]] — Evaluation Flywheel (OpenAI Cookbook)
+|- [[concepts/agentic-scaffolding]] — Agentic Scaffolding (OpenAI Cookbook)
+|- [[concepts/exec-plans]] — Execution Plans (OpenAI Cookbook)
+|- [[concepts/self-evolving-agents]] — Self-Evolving Agents (OpenAI Cookbook)
+|- [[concepts/resilient-prompt-engineering]] — Resilient Prompt Engineering (OpenAI Cookbook)
+|- [[concepts/context-engineering]] — Context Engineering (OpenAI Cookbook)
 |- [[concepts/ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
 |- [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
 |- [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo / OpenAI Symphony)

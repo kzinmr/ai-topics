@@ -6,6 +6,16 @@ title: "Wiki Change Log"
 
 ## 2026-04-13
 
+### OpenAI Cookbook — 方法論コンセプト追加 (6件)
+OpenAI Cookbookからベンダー中立な方法論を抽出し、概念ページとして整理。
+- **evaluation-flywheel.md** — 評価→分析→改善→データ収集の継続的フィードバックループ。Golden Dataset構築、Multi-Metric Evaluation、Regression Detection
+- **agentic-scaffolding.md** — エージェントの安全な動作のための多層ガードレール設計。Input Validation → Execution Constraints → Output Verification → Human Oversight
+- **exec-plans.md** — 計画と実行の分離パターン。事前Plan生成→レビュー→実行→検証のフロー。透明性・デバッグ性・再利用性向上
+- **self-evolving-agents.md** — 自己改善するエージェント設計。4レベル（Parameter Tuning → Strategy Adaptation → Capability Expansion → Architectural Evolution）
+- **resilient-prompt-engineering.md** — プロンプトをコードとして扱う設計。バージョン管理、テスト、レビュー、A/Bテスト、構造化プロンプティング
+- **context-engineering.md** — コンテキストウィンドウ最適化技術。Compression、Ordering、Dynamic Management、Chunking（Anthropic版のConceptual Context Engineeringと区別）
+- **Sources**: https://github.com/openai/openai-cookbook
+
 ### Steipete 過去1年投稿 — 追加Concept Pages
 - **New concept pages (5件)**:
   - `direct-prompting-philosophy.md` — 「Just Talk To It」哲学。RAG/サブエージェント/カスタムフック等の過剰工学を拒否し、直接的な会話的インタラクションでAIを操るアプローチ。パラレルターミナルウィンドウパターン、コンテキストポイズン警告、直感的ディレクション開発
