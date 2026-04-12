@@ -1,4 +1,13 @@
 
+### 2026-04-12 — AI Evals Article Processing
+- **Article:** Lenny's Podcast — "Why AI evals are the hottest new skill for product builders" (Sept 25, 2025)
+- Created: [[concepts/ai-evals.md]] — Systematic framework for evaluating AI systems
+- Created: [[entities/hamel-husain.md]] — AI evals educator, 2,000+ PMs & engineers trained
+- Created: [[entities/shreya-shankar.md]] — AI evals researcher, world's #1 evals course co-creator
+- Updated: index.md (entity count: 37→37+2, concept count: 25→27)
+- Updated: index.md (AI Evaluation & Testing section added)
+- Total raw articles: 98 (as of 2026-04-12)
+
 ### 2026-04-10 — X Account Enrichment (Batch 4)
 - Enriched 8 skeleton entity pages from X/Twitter accounts:
   - **Armin Ronacher** (@mitsuhiko) — Flask/Jinja2/Sentry creator, 15.8KB, left Sentry 2025, founded Earendil 2026, acquired Pi 2026

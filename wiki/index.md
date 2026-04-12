@@ -2,11 +2,11 @@
 
 Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-10 (enrichment batch 4)
+Last updated: 2026-04-12 (AI evals article from Lenny's Podcast)
 
-## Entity Pages (111)
+## Entity Pages (37)
 
-Blog authors, companies, and AI models/technologies.
+- [[entities/adam-rosenthal]] — Adam Rosenthal
 
 ### Blog Authors (HN Popular Blogs — 84 feeds)
 
@@ -118,21 +118,23 @@ Blog authors, companies, and AI models/technologies.
 - [[entities/qwen3-6-plus]] — Qwen3.6-Plus
 - [[entities/zoox-expansion]] — Zoox Robotaxi Expansion
 
-## Concept Pages (25)
+## Concept Pages (27)
 
 Ideas, frameworks, and methodologies extracted from articles.
 
 ### AI Development & Engineering
-- [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents (Simon Willison)
-- [[concepts/gnu-ai-reimplementations]] — GNU & AI Reimplementations (antirez)
+|- [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents (Simon Willison)
+|- [[concepts/gnu-ai-reimplementations]] — GNU & AI Reimplementations (antirez)
 
-- [[concepts/agentic-engineering]] — Agentic Engineering (Simon Willison)
-- [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
-- [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo)
-- [[concepts/local-llm]] — Local LLM Inference (llama.cpp, Ollama, GGUF)
-- [[concepts/meta-harness]] — Meta-Harness
-- [[concepts/scaling-without-slop]] — Scaling without Slop
-- [[concepts/world-models-science]] — World Models for Scientific Discovery
+|- [[concepts/agentic-engineering]] — Agentic Engineering (Simon Willison)
+|- [[concepts/ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
+|- [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
+|- [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo)
+|- [[concepts/llm-evaluation-harness]] — LLM Evaluation Harness
+|- [[concepts/local-llm]] — Local LLM Inference (llama.cpp, Ollama, GGUF)
+|- [[concepts/meta-harness]] — Meta-Harness
+|- [[concepts/scaling-without-slop]] — Scaling without Slop
+|- [[concepts/world-models-science]] — World Models for Scientific Discovery
 
 ### Agent Systems & Orchestration
 - [[concepts/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
@@ -289,13 +291,18 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 ### Local LLM
 
-- [[entities/georgi-gerganov|Georgi Gerganov]] (@ggerganov) — llama.cpp creator, GGML/GGUF format, enables local LLM on consumer hardware
+|- [[entities/georgi-gerganov|Georgi Gerganov]] (@ggerganov) — llama.cpp creator, GGML/GGUF format, enables local LLM on consumer hardware
+
+### AI Evaluation & Testing
+
+|- [[entities/hamel-husain|Hamel Husain]] (@HamelHusain) — AI evals educator, trained 2,000+ PMs & engineers at OpenAI/Anthropic
+|- [[entities/shreya-shankar|Shreya Shankar]] (@sh_reya) — AI evals researcher, co-creator of world's #1 evals course
 
 ## Raw Sources
 
 Newsletter articles and papers processed into wiki pages:
 - Location: `wiki/raw/articles/`
-- Count: 97 articles processed (as of 2026-04-10)
+- Count: 98 articles processed (as of 2026-04-12)
 - [[entities/akira-random-labs|Akira (Random Labs)]] (@realmcore_)
 - [[entities/alex-zhang|Alex Zhang]] (@a1zhang)
 - [[entities/daniel-han|Daniel Han]] (@danielhanchen)
