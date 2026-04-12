@@ -1,0 +1,14 @@
+[Unit]
+Description=Newsletter Email Watcher
+After=network-online.target
+
+[Service]
+Type=simple
+User=exedev
+ExecStart=/home/exedev/scripts/email_watcher.sh
+Restart=always
+RestartSec=10
+Environment=PATH=/home/exedev/.local/bin:/usr/local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=multi-user.target

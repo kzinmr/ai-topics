@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Caches
+scripts/blog_authors.json
+
+# OS
+.DS_Store

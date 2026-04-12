@@ -1,0 +1,16 @@
+[Unit]
+Description=Hermes Agent Gateway (Discord)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=exedev
+WorkingDirectory=/home/exedev/.hermes/hermes-agent
+ExecStart=/home/exedev/.local/bin/hermes gateway run
+Restart=always
+RestartSec=10
+EnvironmentFile=/home/exedev/.hermes/.env
+
+[Install]
+WantedBy=multi-user.target
