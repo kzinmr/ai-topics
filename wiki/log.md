@@ -6,6 +6,19 @@ title: "Wiki Change Log"
 
 ## 2026-04-13
 
+### Steipete 過去1年投稿 — 追加Concept Pages
+- **New concept pages (5件)**:
+  - `direct-prompting-philosophy.md` — 「Just Talk To It」哲学。RAG/サブエージェント/カスタムフック等の過剰工学を拒否し、直接的な会話的インタラクションでAIを操るアプローチ。パラレルターミナルウィンドウパターン、コンテキストポイズン警告、直感的ディレクション開発
+  - `cli-over-mcp-pattern.md` — MCPサーバーより標準CLIツールを優先する設計原則。コンテキストウィンドウ効率、モデル familiarly、デバッグ容易性の観点からCLIsが勝る。MCPが有効なユースケース（Webスクレイピング、DB探索、デザイン-to-コード）も記載
+  - `ai-addiction-burnout.md` — AIコーディングエージェントによる「スロットマシン効果」、Black Eye Club現象、80時間労働週の正常化リスク。バーンアウトサイクル（発見→執着→消耗→回復）と緩和戦略
+  - `self-hosting-ai-development.md` — Claude Max利用制限後のセルフホスティング検討。8xH200 vs APIコスト分析、ツール評価（opencode, charm, Cline, Gemini CLI）、Qwen3-Coder-480B vLLMデプロイガイド。「商業的にはトークン課金が経済的に健全」
+  - `main-branch-development.md` — feature branch/worktreeを避けmainで直接開発するパターン。アトミックコミット、Gitをセーフティネットとして活用、Arena機能1時間構築ケーススタディ
+- **Updated existing pages**:
+  - `index.md` — 5新概念エントリ追加、Last updated更新
+- **Sources**: steipete.me 過去1年分13投稿を抽出・分析（2025-07 〜 2026-02）
+
+## 2026-04-13
+
 ### Cognition AI Data Analyst — Devinをデータ分析エージェントにする設計
 - **New concept page**:
   - `concepts/cognition-ai-data-analyst.md` — Cognitionのデータ分析エージェント設計パターン。MCP+Knowledgeアーキテクチャ、SQL専用ツールとの違い、Knowledge設定テンプレート、実践的ワークフロー

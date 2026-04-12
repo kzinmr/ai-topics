@@ -149,6 +149,11 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[concepts/inference-speed-development]] — Inference Speed Development (Steipete)
 |- [[concepts/claude-code-best-practices]] — Claude Code Best Practices (Sankalp)
 |- [[concepts/context-window-management]] — Context Window Management (general patterns)
+|- [[concepts/direct-prompting-philosophy]] — Direct Prompting Philosophy / "Just Talk To It" (Steipete)
+|- [[concepts/cli-over-mcp-pattern]] — CLI Over MCP Pattern (Steipete)
+|- [[concepts/ai-addiction-burnout]] — AI Addiction & Burnout Patterns (Steipete)
+|- [[concepts/self-hosting-ai-development]] — Self-Hosting AI for Development (Steipete)
+|- [[concepts/main-branch-development]] — Main-Branch Development (Steipete)
 
 ### AI Agent Engineering (Anthropic + OpenAI)
 |- [[concepts/ai-agent-engineering/_index]] — AI Agent Engineering (システム構築パターン集)
