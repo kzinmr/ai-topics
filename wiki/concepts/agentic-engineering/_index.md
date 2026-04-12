@@ -22,7 +22,7 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 ## 関連概念
 
 [[ai-agent-engineering]] — エージェントを「構築する」システム設計・アーキテクチャ（Anthropic Engineering）
-[[harness-engineering]] — エージェントを「制御・構造化する」環境設計（共通概念）
+[[harness-engineering]] — エージェントを「制御・構造化する」環境設計（横断概念→タグ管理）
 
 ## リーダー別主要コンセプト
 

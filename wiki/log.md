@@ -4,6 +4,27 @@ title: "Wiki Change Log"
 
 # Wiki Change Log
 
+## 2026-04-13
+
+### Simon Willison — Agentic Engineering Patterns Guide (L3 Enrichment)
+- **simon-willison.md**: L3 Thought Analysisレベルにアップグレード
+  - Added: Hoarding（知識の蓄積）哲学 — "productive kind of hoarding"
+  - Added: Compound Engineering Loop — Write→Review→Improve→Save→Repeat
+  - Added: Git統合の具体的プラクティス — 小さく頻繁なコミット、人間向けのメッセージ
+  - Added: Writing Code is Cheap — 新しい習慣の必要性
+  - Updated sources: Agentic Engineering Patterns Guideリンクを追加
+- **New concept pages**:
+  - `agentic-engineering/compound-engineering-loop.md` — 複合エンジニアリングループ
+  - `agentic-engineering/code-hoarding.md` — 知識の蓄積と再利用パターン
+- **index.md**: Updated with new concept entries
+
+
+### Agent Team / Swarm Directory Created
+- Created `agent-team-swarm/_index.md` — フロントページ: 5レベルモデル（Spicy Autocomplete → Dark Factory）、主要実装比較表
+- Enriched `anthropic-managed-agents.md` — 公式ブログ3件（Claude Blog + Engineering Blog + Platform Docs）の情報を反映。Brain/Hands/Session分離アーキテクチャ、Multi-Agent Coordination、Pricing、Enterprise Adoption事例を追加
+- New `openai-symphony.md` — WORKFLOW.md駆動のタスクオーケストレーター。SPEC.md解析、アーキテクチャコンポーネント、Symphony Go等のエコシステム、HN議論の洞察
+- New `dark-factory-software-factory.md` — Simon Willison + Dan Shapiroの5レベルモデル、StrongDM実践事例、Attractor/CXB、Digital Twin Universe
+
 ## 2026-04-12
 
 ### Concept Taxonomy Restructure

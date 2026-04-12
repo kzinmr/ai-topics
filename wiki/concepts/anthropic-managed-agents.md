@@ -1,133 +1,168 @@
+---
+title: "Anthropic Managed Agents"
+created: 2026-04-09
+updated: 2026-04-13
+tags: [concept, agent-team-swarm, anthropic, platform, managed-agents]
+related: [agent-team-swarm, harness-engineering, ai-agent-engineering]
+sources:
+  - https://claude.com/blog/claude-managed-agents
+  - https://www.anthropic.com/engineering/managed-agents
+  - https://platform.claude.com/docs/en/managed-agents/quickstart
+---
+
 # Anthropic Managed Agents
 
-**Date:** April 9, 2026
-**Source:** Reddit discussion — "Anthropic's Managed Agents (the golden age of agents)"
-**Related:** [[Agentic Engineering]], [[Cognitive Cost of Agents]], [[Claude Mythos / Project Glasswing]], [[Agent Orchestration Frameworks]]
+**Source:** Anthropic Claude Blog + Engineering Blog + Platform Docs (April 2026)
+**Status:** Public Beta on Claude Platform
+**Related:** [[Agent Team / Swarm]], [[Harness Engineering]], [[Meta-Harness]]
 
 ---
 
-## Overview
+## Core Value Proposition
 
-In April 2026, a Reddit discussion titled **"Anthropic's Managed Agents (the golden age of agents)"** sparked widespread debate about Anthropic's entry into the managed agent services space. The post questioned whether we are entering a genuine golden age of AI agents or simply experiencing another wave of inflated expectations.
-
-Anthropic's managed agent offering provides **hosted, production-ready AI agents** that handle coding, analysis, and workflow automation tasks — removing the need for teams to deploy and maintain their own agent infrastructure.
+Anthropic Managed Agentsは、**AI Agentのプロトタイプから本番運用までを10倍速く**実現するプラットフォーム。インフラ構築（サンドボックス、認証、権限管理、チェックポイント、エラーリカバリー）をClaudeに委譲し、開発者はタスク定義・ツール・ガードレールの設計に集中できる。
 
 ---
 
-## The "Golden Age" Claim
+## Architecture: Brain/Hands/Sessionの分離
 
-### The Optimistic View
+Anthropic Engineering Blog「[Scaling Managed Agents: Decoupling the brain from the hands](https://www.anthropic.com/engineering/managed-agents)」の中核テーゼ:
 
-Proponents argue that managed agents represent a qualitative leap:
+> Agent harnesses inevitably encode assumptions about current model limitations. As AI capabilities improve, these assumptions become obsolete.
 
-- **Lower barrier to entry** — no infrastructure setup, no model selection, no prompt engineering expertise required
-- **Production reliability** — Anthropic-grade uptime, scaling, and security guarantees
-- **Integrated ecosystem** — seamless connection with Claude APIs, tool use, and enterprise systems
-- **Rapid iteration** — agents improve continuously without manual updates
-- **Cost efficiency** — pay-per-use model vs. maintaining dedicated GPU infrastructure
+初期設計ではSession・Harness・Sandboxが単一コンテナに結合（「ペット」）。現在の設計では以下の3要素を完全に分離（「家畜」）:
 
-### The Skeptical View
-
-Critics caution against hype:
-
-- **Vendor lock-in** — migrating away from a managed agent platform is harder than switching open-source tools
-- **Black box operations** — less visibility into agent behavior compared to self-hosted alternatives
-- **Pricing uncertainty** — managed services often start cheap and scale expensively
-- **Customization limits** — managed agents may not support niche workflows that self-hosted tools allow
-- **The "golden age" narrative** — every new technology wave is declared a golden age; most are not
-
----
-
-## Managed vs. Self-Hosted Agents
-
-### Comparison
-
-| Factor | Managed Agents | Self-Hosted Agents |
+| 要素 | 役割 | 分離のメリット |
 |---|---|---|
-| Setup | Zero — instant access | Significant — infrastructure, configuration |
-| Maintenance | Handled by provider | Your responsibility |
-| Customization | Limited to provider options | Full control |
-| Cost | Pay-per-use, scales with usage | Fixed infrastructure + compute costs |
-| Privacy | Data processed on provider infrastructure | Data stays in your environment |
-| Reliability | Provider SLA | Your own engineering |
-| Vendor lock-in | High | Low to moderate |
-| Speed to value | Immediate | Weeks to months |
+| **Brain** | Claude + Harness | ステートレス → 水平スケール可能 |
+| **Hands** | Sandbox/Tools | 必要時にプロビジョニング、失敗時は再作成 |
+| **Session** | Event Log（永続化） | コンテキストウィンドウ外の状態管理 |
 
-### When to Choose Managed
+### Key Interfaces
 
-- Small to medium teams without dedicated AI/ML infrastructure expertise
-- Use cases that fit standard agent patterns (coding assistance, document analysis, workflow automation)
-- Organizations that prioritize speed of deployment over customization
-- Projects where the cost of self-hosting exceeds the managed service pricing
+```
+Sandbox Execution:  execute(name, input) → string
+Container Lifecycle: provision({resources})
+Harness Recovery:   wake(sessionId) → reboot stateless harness
+                    getSession(id) → retrieve durable event log
+                    emitEvent(id, event) → append to session
+Context Query:      getEvents() → fetch positional slices
+```
 
-### When to Choose Self-Hosted
+### メタ・ハーネス哲学
 
-- Large organizations with existing AI infrastructure and expertise
-- Use cases requiring deep customization or proprietary model fine-tuning
-- Environments with strict data privacy or regulatory requirements
-- Teams that want full visibility and control over agent behavior
+> "We're opinionated about the shape of these interfaces, not about what runs behind them."
+
+Managed Agentsは**メタ・ハーネス**（[[Meta-Harness]]参照）として設計されている。特定の実装には意見を持たず、インターフェース境界だけを厳格に定義する。
 
 ---
 
-## Community Sentiment
+## Security: Credential Isolation
 
-The Reddit discussion revealed a **mixed but generally positive** reception:
-
-### Positive Reactions
-- "Finally, I can focus on building instead of managing agent infrastructure"
-- "Anthropic's track record with Claude suggests this will be well-executed"
-- "The managed approach is exactly what enterprises need to adopt agents at scale"
-
-### Concerns
-- "Another layer of abstraction between me and the model"
-- "What happens when Anthropic changes pricing or terms?"
-- "I don't trust any company with my entire development workflow"
-
-### Neutral Observations
-- "This is the natural evolution — just like managed Kubernetes was the natural evolution of self-hosted K8s"
-- "The golden age claim will only be validated in 12-18 months"
+- **Git Integration**: アクセストークンはSandbox初期化時にコンテナに直接注入。Claudeはトークンに触らずにpush/pull実行
+- **Custom Tools (MCP)**: OAuthトークンはセキュアボールトに保管。セッション固有トークンでプロキシ経由呼び出し
+- **構造的セキュリティ境界**: Sandboxにクレデンシャルが一切到達しない
 
 ---
 
-## Competitive Landscape
+## Multi-Agent Coordination (Research Preview)
 
-Anthropic's managed agents enter a crowded field:
-
-- **Claude Code** — Anthropic's own coding agent (self-hosted tool, now complemented by managed service)
-- **Cursor** — AI-first IDE with built-in agent capabilities
-- **Devin** (Cognition) — Fully autonomous coding agent
-- **GitHub Copilot Workspace** — Microsoft's integrated agent environment
-- **Open-source frameworks** — LangGraph, CrewAI, AutoGen for self-hosted orchestration
-
-The key differentiator for Anthropic is **tight integration with their model ecosystem** and the credibility that comes from building both the model and the agent platform.
+- **Agentが他のAgentをspawn**して複雑なワークフローを並列化
+- **Self-Evaluation & Iteration**: 成功基準を定義すると、Claudeが自律的に評価・改善を繰り返す
+- 内部テストにおいて、標準プロンプトループ比較で**最大10ポイント**の成果向上（特に難易度の高い課題で顕著）
 
 ---
 
-## Connection to Cognitive Cost
+## Session vs Context Window
 
-The managed agent model directly intersects with [[Cognitive Cost of Agents]] concerns:
+長時間タスクはClaudeのコンテキストウィンドウを超える。従来の解決策（圧縮・トリミング）は不可逆な保持/破棄判断を強制する問題があった。
 
-- **More abstraction = more cognitive distance** from the code being produced
-- **Easier to delegate = easier to lose understanding** of your own systems
-- **Managed reliability = less need to understand** the underlying mechanics
-- **Faster iteration = more code to review**, potentially increasing the reviewer burden
-
-The question is whether managed agents **amplify** the cognitive debt problem identified by [[Simon Willison]], or whether their reliability and consistency reduce the need for intensive review.
+**Sessionを外部コンテキストとして分離**することで:
+- 永続的・照会可能なストレージを保障
+- Harnessが任意のコンテキスト変換（キャッシュ最適化、将来のコンテキストエンジニアリング）を担当
+- ストレージ層を壊さずに将来のモデル能力進化に対応
 
 ---
 
-## Related Concepts
+## Performance Impact
 
-- [[Agentic Engineering]] — The broader practice framework that managed agents enable
-- [[Cognitive Cost of Agents]] — The hidden mental load of agent-assisted development
-- [[Claude Mythos / Project Glasswing]] — More powerful models improve managed agent capabilities
-- [[Agent Orchestration Frameworks]] — Self-hosted alternatives to managed agent platforms
-- [[Open Source Sustainability]] — How managed services affect the open-source ecosystem
+| Metric | Improvement | Reason |
+|---|---|---|
+| TTFT p50 | ~60% 削減 | 推論即時開始、Sandboxは必要時のみ |
+| TTFT p95 | >90% 削減 | 同上 |
+| Horizontal Scale | Many Brains | ステートレスHarnessが並列実行可能 |
+| Tool Context | Many Hands | 複数の実行コンテキストを横断的に操作 |
+
+---
+
+## API Quickstart
+
+**必須ヘッダー:** `anthropic-beta: managed-agents-2026-04-01`
+
+```python
+# 1. Agent作成
+agent = client.beta.agents.create(
+    name="Coding Assistant",
+    model="claude-sonnet-4-20260401",
+    system="You are a helpful coding assistant.",
+    tools=[{"type": "agent_toolset_20260401"}]
+)
+
+# 2. Environment作成
+environment = client.beta.environments.create(
+    name="prod-env",
+    config={"type": "cloud", "networking": {"type": "restricted"}}
+)
+
+# 3. Session開始
+session = client.beta.sessions.create(
+    agent=agent.id,
+    environment_id=environment.id
+)
+
+# 4. イベントストリーミング
+with client.beta.sessions.events.stream(session.id) as stream:
+    for event in stream:
+        match event.type:
+            case "agent.message": ...
+            case "agent.tool_use": ...
+            case "session.status_idle": ...
+```
+
+---
+
+## Pricing
+
+- Claude Platformの標準トークンレート
+- **+$0.08/セッション時間**（active runtime）
+
+---
+
+## Enterprise Adoption
+
+| 企業 | ユースケース | 引用 |
+|---|---|---|
+| **Notion** | Custom Agents（プライベートアルファ） | 「オープンエンドな複雑なタスクを委任可能に」 — Eric Liu, PM |
+| **Rakuten** | Slack/Teams向けエンタープライズAgent | 「1週間で専門Agentをデプロイ」 — Yusuke Kaji, GM AI for Business |
+| **Asana** | プロジェクト内AIチームメイト | 「開発を大幅に加速」 — Amritansh Raghav, CTO |
+| **Sentry** | Seer debugging + Claude patch agent | 「数月ではなく数週で出荷」 — Indragie Karunaratne |
+| **Atlassian (Jira)** | ワークフロー統合開発Agent | 「サンドボックス、セッション、権限管理を自動化」 — Sanchan Saxena, SVP Product |
+
+---
+
+## Related
+
+- [[Agent Team / Swarm]] — 複数Agent協調の上位概念
+- [[Harness Engineering]] — 単一Agentの実行環境設計
+- [[Meta-Harness]] — インターフェース中心の設計哲学
+- [[OpenAI Symphony]] — 競合のAgent Teamオーケストレーター
+- [[Dark Factory Software Factory]] — 完全自律開発の最先端事例
 
 ---
 
 ## Sources
 
-- Reddit discussion: "Anthropic's Managed Agents (the golden age of agents)" (April 9, 2026)
-- Anthropic managed agents announcement and documentation
-- Community analysis on Hacker News, Reddit, and Twitter/X
+- [Claude Blog: Claude Managed Agents](https://claude.com/blog/claude-managed-agents) (2026-04-08)
+- [Anthropic Engineering: Scaling Managed Agents](https://www.anthropic.com/engineering/managed-agents) (2026-04)
+- [Platform Docs: Get started with Claude Managed Agents](https://platform.claude.com/docs/en/managed-agents/quickstart) (2026-04)
+- Raw articles: `wiki/raw/articles/claude-managed-agents-20260408.md`

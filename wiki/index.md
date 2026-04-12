@@ -2,7 +2,7 @@
 
 Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-12 (Agentic Engineering guide enrichment: +3 new concept pages, +1 enriched, Simon Willison entity page expanded with Cognitive Debt/Context Window/Subagents theory)
+Last updated: 2026-04-12 (simon-willison.md L3 enrichment: +Compound Engineering Loop, +Code Hoarding, +Git practices, +Writing Code is Cheap philosophy)
 
 ## Entity Pages (37)
 
@@ -140,6 +140,8 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[concepts/agentic-engineering/subagents]] — Subagents (Parallel Agent Delegation)
 |- [[concepts/agentic-engineering/how-agents-work]] — How Coding Agents Work
 |- [[concepts/agentic-engineering/using-git-with-agents]] — Using Git with Agents
+|- [[concepts/agentic-engineering/compound-engineering-loop]] — Compound Engineering Loop (Simon Willison)
+|- [[concepts/agentic-engineering/code-hoarding]] — Code Hoarding / Knowledge Accumulation (Simon Willison)
 
 ### AI Agent Engineering (Anthropic + OpenAI)
 |- [[concepts/ai-agent-engineering/_index]] — AI Agent Engineering (システム構築パターン集)
@@ -169,12 +171,16 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[concepts/world-models-science]] — World Models for Scientific Discovery
 
 ### Agent Systems & Orchestration
-- [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
-- [[concepts/anthropic-managed-agents]] — Anthropic Managed Agents
+|- [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
+|- [[concepts/caid-coordination]] — CAID (Centralized Asynchronous Isolated Delegation)
+|- [[concepts/long-context-coding-agents]] — Long-Context via Coding Agents
+|- [[concepts/multi-agent-autonomy-scale]] — Multi-Agent Autonomy Scale
 
-- [[concepts/caid-coordination]] — CAID (Centralized Asynchronous Isolated Delegation)
-- [[concepts/long-context-coding-agents]] — Long-Context via Coding Agents
-- [[concepts/multi-agent-autonomy-scale]] — Multi-Agent Autonomy Scale
+### Agent Team / Swarm
+|- [[concepts/agent-team-swarm/_index]] — Agent Team / Swarm（複数Agent協調・Dark Factoryまでの5レベルモデル）
+|- [[concepts/anthropic-managed-agents]] — Anthropic Managed Agents（Brain/Hands/Session分離アーキテクチャ）
+|- [[concepts/openai-symphony]] — OpenAI Symphony（WORKFLOW.md駆動のタスクオーケストレーター）
+|- [[concepts/dark-factory-software-factory]] — Dark Factory Software Factory（StrongDM実践事例）
 
 ### AI Safety & Ethics
 - [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
