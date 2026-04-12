@@ -45,11 +45,14 @@ ai-topics/
 │   └── wiki-server.service
 │
 └── docs/                   # プロジェクトドキュメント
-    ├── SETUP.md                          # セットアップガイド
-    ├── hermes-o11y-strategy.md           # LLM o11y 戦略
-    ├── braintrust-logging-api-reference.md # Braintrust API リファレンス
-    ├── phoenix_research.md               # Arize Phoenix 調査
-    └── email-receiving-docs.md           # exe.dev メール受信設定
+│   ├── SETUP.md            # セットアップガイド
+│   └── email-receiving-docs.md  # exe.dev メール受信設定
+│
+├── shelley/                # Shelley (exe.dev コーディングエージェント) 作業領域
+│   ├── README.md           # この領域の説明
+│   ├── hermes-o11y-strategy.md           # LLM o11y 戦略
+│   ├── braintrust-logging-api-reference.md # Braintrust API リファレンス
+│   └── phoenix_research.md               # Arize Phoenix 調査
 ```
 
 ## サービス構成
