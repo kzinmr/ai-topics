@@ -173,3 +173,7 @@ Processed 47 highest-priority articles from blogwatcher backlog (2,238 total unr
 
 ## 2026-04-10
 - Added 8 X account entity skeletons: @lilianweng, @bclavie, @eugeneyan, @samuelcolvin, @mitsuhiko, @emollick, @clefourrier, @chipro
+
+- Moved: [[comparisons/agent-sandboxing.md]] from concepts/ (primary content is platform/tool comparison)
+- Moved: [[comparisons/agent-orchestration-frameworks.md]] from concepts/ (primary content is framework comparison)
+- Moved: [[comparisons/evals-skills.md]] from concepts/ (primary content is eval skills comparison)
