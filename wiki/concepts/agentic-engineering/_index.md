@@ -30,6 +30,8 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 |---------|--------------|-----------|
 | [[simon-willison]] | Agentic Engineering Patterns, Red/Green TDD, Cognitive Debt | 以下のWillisonパターン群 |
 | [[andrew-karpathy]] | Software 2.0, RLによるエージェント学習, データ中心AI | [[karpathy-rl-agents]] |
+| [[sankalp]] | Claude Code 2.0実用ガイド、サブエージェントのlossiness、Throw-Away Draft、コンテキスト60%ルール | 以下のSankalpパターン群 |
+| [[steipete]] | Agent-First Design, CLI-First Development, Plan Mode不要論, inference-speed bottleneck | 以下のSteipeteパターン群 |
 
 ## Simon Willisonの開発パターン
 
@@ -63,6 +65,22 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 |-------|------|
 | [[cognitive-debt]] | エージェント生成コードを理解せずにマージすると蓄積する「認知負債」 |
 | [[harness-engineering]] | OpenAI Symphony、エージェント協調制御（[[ryan-lopopolo]]） |
+
+### 🏗️ Sankalpの実用パターン
+
+| ページ | 概要 |
+|-------|------|
+| [[context-window-management]] | コンテキスト60%ルール、圧縮戦略 |
+| [[throw-away-draft-pattern]] | 捨て台本→比較→反復の開発サイクル |
+| [[subagents]] | サブエージェントのlossiness、使い分け指針 |
+
+### 🚀 Steipeteの推論速度開発
+
+| ページ | 概要 |
+|-------|------|
+| [[agent-first-design]] | 「人間向け」ではなく「エージェント向け」コード設計 |
+| [[cli-first-development]] | CLIから始めてフィードバックループを高速化 |
+| [[how-agents-work]] | Plan Mode不要論、会話的計画、Task Toolアーキテクチャ |
 
 ## Agentic Engineering vs AI Agent Engineering
 

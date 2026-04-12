@@ -2,7 +2,7 @@
 
 Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-12 (simon-willison.md L3 enrichment: +Compound Engineering Loop, +Code Hoarding, +Git practices, +Writing Code is Cheap philosophy)
+Last updated: 2026-04-13 (+agent-first-design, +cli-first-development, +throw-away-draft-pattern, enhanced context-window-management, how-agents-work, subagents with Sankalp & Steipete insights)
 
 ## Entity Pages (37)
 
@@ -142,6 +142,9 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[concepts/agentic-engineering/using-git-with-agents]] — Using Git with Agents
 |- [[concepts/agentic-engineering/compound-engineering-loop]] — Compound Engineering Loop (Simon Willison)
 |- [[concepts/agentic-engineering/code-hoarding]] — Code Hoarding / Knowledge Accumulation (Simon Willison)
+|- [[concepts/agentic-engineering/agent-first-design]] — Agent-First Codebase Design (Steipete)
+|- [[concepts/agentic-engineering/cli-first-development]] — CLI-First Development (Steipete, Sankalp)
+|- [[concepts/agentic-engineering/throw-away-draft-pattern]] — Throw-Away First Draft (Sankalp)
 
 ### AI Agent Engineering (Anthropic + OpenAI)
 |- [[concepts/ai-agent-engineering/_index]] — AI Agent Engineering (システム構築パターン集)
@@ -228,6 +231,18 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 - [[entities/ryan-lopopolo|Ryan Lopopolo]] (@_lopopolo) — OpenAI Frontier. Harness Engineering, Symphony multi-agent orchestration
 - [[entities/boris-cherny|Boris Cherny]] (@bcherny) — Head of Claude Code at Anthropic. "Coding is solved", 100% AI-authored codebase
 - [[entities/addy-osmani|Addy Osmani]] (@addyosmani) — Director, Google Cloud AI. Conductor→Orchestrator framework, Agent Teams/Swarms, AGENTS.md critique
+
+### AI Memory & Context Systems
+
+- [[entities/shlok-khemani|Shlok Khemani]] (@shloked) — Writer & programmer. AI memory systems analyst, competitive analysis of ChatGPT/Claude/Cognition memory architectures
+
+### Memory Architecture Deep Dives
+
+- [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson (stateless vs stateful agents)
+- [[concepts/claude-memory]] — Claude's File-Based Memory Architecture (CLAUDE.md, .agent/ directories)
+- [[concepts/claude-memory-tool]] — Cognition's Memory Tool (copying Claude's approach)
+- [[concepts/claude-code-source-patterns]] — Claude Code Source Patterns (leaked source analysis)
+- [[concepts/vajra-background-agent]] — Vajra Open-Source Background Coding Agent
 
 ### AI Safety & Alignment
 

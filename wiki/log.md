@@ -6,13 +6,15 @@ title: "Wiki Change Log"
 
 ## 2026-04-13
 
-### AI Memory Systems Analysis
+### Shlok Khemani — Memory Systems & Agent Architecture Analysis (5 articles)
 - **New concept pages**:
-  - `context-anxiety.md` — Sonnet 4.5のコンテキスト不安現象、AnthropicのMemory Tool (6ファイル操作)、Cognitionの戦略的ポジショニング
-  - `ai-memory-systems.md` — AIメモリシステムの設計哲学比較（ChatGPT明示的メモリ vs Claude暗黙的メモリ vs Cognitionハイブリッド）、「The Bitter Lesson」の観点からの分析
-  - `anthropic-memory-tool-cognition.md` — AnthropicのMemory ToolとCognitionの戦略的追随、「盗む」vs「独自開発」の競争力学
-- **Updated**: `ai-agent-engineering/_index.md` — 新概念3件を追加、著者名 typo 修正 (Khemeni → Khemani)
-- **Sources**: Shlok Khemani (shloked.com) 3記事、ByteByteGo コンテキストエンジニアリングガイド
+  - `chatgpt-memory-bitter-lesson.md` — ChatGPTメモリ問題と「The Bitter Lesson」。ステートフルメモリ vs ステートレスコンテキストウィンドウ
+  - `claude-memory.md` — Claudeのファイルベースメモリ（CLAUDE.md、.agent/、Git統合）
+  - `claude-memory-tool.md` — CognitionがClaudeのメモリをコピーしている理由と競争力学
+  - `claude-code-source-patterns.md` — Claude Code漏洩ソースの分析（プロンプト合成、キャッシュ最優先、Forkプリミティブ、Scratchpad圧縮）
+  - `vajra-background-agent.md` — Vajraオープンソースバックグラウンドコーディングエージェント（Graphviz DOT、Linear統合、ファイルシステム専用アーキテクチャ）
+- **New entity page**: `shlok-khemani.md` — Shlok Khemani (@shloked)
+- **Sources**: shloked.com 5記事（April 2026）
 
 ### Simon Willison — Agentic Engineering Patterns Guide (L3 Enrichment)
 - **simon-willison.md**: L3 Thought Analysisレベルにアップグレード
