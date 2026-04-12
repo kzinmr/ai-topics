@@ -5,7 +5,7 @@
 - Created: [[concepts/ai-evals.md]] — Systematic framework for evaluating AI systems (3 levels, iteration flywheel, binary>likert, error analysis)
 - Created: [[concepts/critique-shadowing.md]] — 7-step process for building aligned LLM-as-Judge evaluators
 - Created: [[concepts/evals-skills.md]] — Coding agent skills/plugins for AI evaluations
-- Created: [[concepts/eval-tools-comparison.md]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI comparison
+- Created: [[comparisons/eval-tools-comparison.md]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI comparison
 - Created: [[entities/hamel-husain.md]] — AI evals educator, 50+ companies consulted, 4,000+ students taught
 - Updated: index.md (AI Evaluation & Testing section added, entity count updated)
 - Total raw articles: 99 (as of 2026-04-12)

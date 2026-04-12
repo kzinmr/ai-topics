@@ -108,7 +108,7 @@ eval(my_eval_task(), model="openai/gpt-4")
 3. Prioritize human review capabilities over automated scoring
 4. Test the "trace → experiment → annotate" loop for friction before committing
 
-## Related Concepts
+## Related Pages
 
 - [[ai-evals]] — Main evaluation framework
 - [[llm-as-judge]] — Using LLMs to evaluate AI outputs

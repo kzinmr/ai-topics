@@ -118,7 +118,7 @@ Last updated: 2026-04-12 (Hamel Husain entity page upgraded; AI evals concepts a
 - [[entities/qwen3-6-plus]] — Qwen3.6-Plus
 - [[entities/zoox-expansion]] — Zoox Robotaxi Expansion
 
-## Concept Pages (27)
+## Concept Pages (37)
 
 Ideas, frameworks, and methodologies extracted from articles.
 
@@ -171,8 +171,9 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 - [[concepts/death-of-browser]] — Death of the Browser
 
-## Comparison Pages (1)
+## Comparison Pages (2)
 
+- [[comparisons/eval-tools-comparison]] — AI Eval Tools Comparison (LangSmith vs Braintrust vs Phoenix vs Inspect AI)
 - [[comparisons/frontier-models-2026-04]] — Frontier Models Comparison — April 2026
 
 ## People
