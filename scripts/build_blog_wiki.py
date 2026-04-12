@@ -32,7 +32,7 @@ OPML_PATH = Path.home() / "ai-topics" / "config" / "feeds" / "blogs.opml"
 WIKI_ENTITIES = Path.home() / "wiki" / "entities"
 WIKI_INDEX = Path.home() / "wiki" / "index.md"
 WIKI_LOG = Path.home() / "wiki" / "log.md"
-OUTPUT_JSON = Path.home() / "scripts" / "blog_authors.json"
+OUTPUT_JSON = Path(__file__).resolve().parent / "cache" / "blog_authors.json"
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger(__name__)

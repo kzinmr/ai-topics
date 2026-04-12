@@ -4,8 +4,8 @@ __pycache__/
 venv/
 .venv/
 
-# Caches
-scripts/blog_authors.json
+# Script build caches (regenerable)
+scripts/cache/
 
 # OS
 .DS_Store

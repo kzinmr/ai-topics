@@ -22,8 +22,7 @@ ai-topics/
 │   │   ├── articles/       # スクレイプ済み記事
 │   │   ├── papers/         # arXiv論文 (予約)
 │   │   ├── transcripts/    # ポッドキャスト文字起こし (予約)
-│   │   ├── assets/         # 画像・図表 (予約)
-│   │   └── x_accounts.json # X/Twitter処理済みデータ
+│   │   └── assets/         # 画像・図表 (予約)
 │   │
 │   ├── concepts/           # [Layer 2] 概念・手法・技術 (how/why)
 │   ├── entities/           # [Layer 2] 人物・企業・プロダクト (who/what)
@@ -41,7 +40,8 @@ ai-topics/
 │   ├── check_mail.sh       # メール手動確認CLI
 │   ├── build_blog_wiki.py  # OPML→entities ページ生成
 │   ├── build_x_wiki.py     # x-accounts→entities ページ生成
-│   └── wiki_server.py      # Wikiブラウザサーバー (port 8000)
+│   ├── wiki_server.py      # Wikiブラウザサーバー (port 8000)
+│   └── cache/              # スクレイプキャッシュ (.gitignore、再生成可能)
 │
 ├── systemd/                # systemd ユニットファイル
 │   ├── email-watcher.service

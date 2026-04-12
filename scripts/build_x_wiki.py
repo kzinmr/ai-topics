@@ -33,7 +33,7 @@ ACCOUNTS_PATH = Path.home() / "ai-topics" / "config" / "feeds" / "x-accounts.yam
 WIKI_ENTITIES = Path.home() / "wiki" / "entities"
 WIKI_INDEX = Path.home() / "wiki" / "index.md"
 WIKI_LOG = Path.home() / "wiki" / "log.md"
-OUTPUT_JSON = Path.home() / "wiki" / "raw" / "x_accounts.json"
+OUTPUT_JSON = Path(__file__).resolve().parent / "cache" / "x_accounts.json"
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger(__name__)

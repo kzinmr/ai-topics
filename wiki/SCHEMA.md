@@ -35,7 +35,6 @@ Only content that has been triaged and deemed worth preserving goes here.
 - **`raw/papers/`** — arXiv papers, PDFs (reserved)
 - **`raw/transcripts/`** — Podcast/interview transcripts (reserved)
 - **`raw/assets/`** — Images, diagrams referenced by sources (reserved)
-- **`raw/x_accounts.json`** — Processed X/Twitter account data
 
 Note: Newsletter digests and RSS scan reports live in `inbox/` (outside wiki/),
 not in `raw/`. The `inbox/` is the pipeline output before triage; `raw/` is the
