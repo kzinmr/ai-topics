@@ -2,7 +2,7 @@
 
 Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-13 (+Cognition/Devin Philosophy: Scott Wu, Nader Dabit, Walden Yan entity pages, 4 concept pages: cognition-devin-philosophy, closing-agent-loop, managed-devins, context-anxiety, 100x capability growth metrics, Agentic Slack, Agents From Anywhere)
+Last updated: 2026-04-13 (+Cognition AI Data Analyst concept, Cognition/Devin Philosophy: Scott Wu, Nader Dabit, Walden Yan entity pages, 4 concept pages: cognition-devin-philosophy, closing-agent-loop, managed-devins, context-anxiety, 100x capability growth metrics, Agentic Slack, Agents From Anywhere)
 
 ## Entity Pages (37)
 
@@ -221,6 +221,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[concepts/agent-team-swarm/managed-devins]] — Managed Devins (Cognition's conditional multi-agent)
 |- [[concepts/closing-agent-loop]] — Closing the Agent Loop (Write→Catch→Fix→Merge)
 |- [[concepts/ai-agent-engineering/context-anxiety]] — Context Anxiety (Sonnet 4.5 integration lessons)
+|- [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst (Devinをデータ分析エージェントにする設計)
 
 ## Comparison Pages (5)
 

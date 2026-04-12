@@ -6,6 +6,19 @@ title: "Wiki Change Log"
 
 ## 2026-04-13
 
+### Cognition AI Data Analyst — Devinをデータ分析エージェントにする設計
+- **New concept page**:
+  - `concepts/cognition-ai-data-analyst.md` — Cognitionのデータ分析エージェント設計パターン。MCP+Knowledgeアーキテクチャ、SQL専用ツールとの違い、Knowledge設定テンプレート、実践的ワークフロー
+- **Key insights**:
+  - AIソフトウェアエンジニアをデータ分析に使う理由: コードベースの文脈理解+完全なデータ系譜の把握
+  - MCPをセキュアなデータアクセスブリッジとして活用（Google MCP Toolbox, Metabase MCP Server 80+ツール）
+  - Knowledge設定（Purpose/Guidelines/Output Format/Macro）がエージェントの精度を決定
+  - Verifiable Outputs: 最終SQL+可視化+Metabaseリンクで人間が検証可能
+  - 150+時間/月 → 数分の効率化
+- **Sources**:
+  - [Build Your Own AI Data Analyst (Part 1)](https://devin.ai/ai-data-analyst-1)
+  - [Build Your Own AI Data Analyst (Part 2)](https://devin.ai/ai-data-analyst-2)
+
 ### Cognition/Devin Philosophy — Agentic Coding at Scale
 - **Enhanced entity pages**:
   - `entities/scott-wu.md` — X/Twitter activity追加（"Eventually, the future comes" Devin 2.2リリース）。100x capability growth metrics（週154→659 PRs、METR結果）、technical insights（Don't Build Multi-Agents、Managed Devins転換、Context Anxiety発見、Closing the Agent Loop）
