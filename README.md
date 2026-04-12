@@ -9,19 +9,20 @@ ai-topics/
 ├── README.md               # このファイル
 ├── .gitignore
 │
-├── hermes/                 # Newsletter ダイジェスト (日次自動生成)
-│   └── YYYY-MM-DD-newsletter.md
-│
 ├── wiki/                   # 知識ベース本体
 │   ├── SCHEMA.md           # 構造ポリシー・更新ルール
 │   ├── index.md            # 全ページの索引
 │   ├── log.md              # 更新履歴
-│   ├── concepts/           # 概念・手法・技術 (how/why)
-│   ├── entities/           # 人物・企業・プロダクト (who/what)
-│   ├── comparisons/        # ツール/モデル比較 (vs)
-│   ├── queries/            # 調査クエリ結果 (予約)
-│   └── raw/                # 生の情報源
-│       ├── articles/       # newsletter記事の自動取り込み
+│   │
+│   ├── concepts/           # [Layer 2] 概念・手法・技術 (how/why)
+│   ├── entities/           # [Layer 2] 人物・企業・プロダクト (who/what)
+│   ├── comparisons/        # [Layer 2] ツール/モデル比較 (vs)
+│   ├── queries/            # [Layer 2] 調査クエリ結果 (予約)
+│   │
+│   └── raw/                # [Layer 1] 取り込み前の生データ (情報源)
+│       ├── articles/       # newsletter記事の自動スクレイプ結果
+│       ├── newsletters/    # newsletter日次ダイジェスト (自動生成)
+│       ├── rss-scans/      # RSSスキャン日次レポート
 │       ├── papers/         # arXiv論文 (予約)
 │       ├── transcripts/    # ポッドキャスト文字起こし (予約)
 │       ├── assets/         # 画像・図表 (予約)
@@ -66,16 +67,23 @@ ai-topics/
 ## データフロー
 
 ```
+═══ Layer 1: 取り込み (wiki/raw/) ═══
+
 Newsletter Email → Maildir → email_watcher → process_email.py
-  → raw/articles/*.md (生記事)
-  → hermes/YYYY-MM-DD-newsletter.md (日次ダイジェスト)
+  → wiki/raw/articles/*.md       (個別記事スクレイプ)
+  → wiki/raw/newsletters/*.md    (日次ダイジェスト)
   → git push
 
-Hermes Agent (Discord) → wiki/concepts/, entities/, comparisons/
+RSS Feeds → blogwatcher-cli (cron) → wiki/raw/rss-scans/*.md
+
+═══ Layer 2: キュレーション (wiki/{concepts,entities,comparisons}/) ═══
+
+Hermes Agent (Discord) が raw/ から知識を抽出・構造化:
+  → wiki/concepts/    ▒ 技術概念
+  → wiki/entities/     ▒ 人物・企業
+  → wiki/comparisons/  ▒ ツール比較
   → index.md, log.md 更新
   → git push
-
-Cron (blogwatcher-cli) → daily RSS scan → ~/.blogwatcher-cli/
 ```
 
 ## シンボリックリンク

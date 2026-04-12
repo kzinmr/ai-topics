@@ -27,7 +27,8 @@ MAILDIR_NEW = Path.home() / "Maildir" / "new"
 MAILDIR_CUR = Path.home() / "Maildir" / "cur"
 MAILDIR_PROCESSED = Path.home() / "Maildir" / "processed"
 WIKI_RAW = Path.home() / "wiki" / "raw" / "articles"
-AI_TOPICS_DIR = Path.home() / "ai-topics" / "hermes"
+AI_TOPICS_REPO = Path.home() / "ai-topics"
+AI_TOPICS_DIR = AI_TOPICS_REPO / "wiki" / "raw" / "newsletters"
 LOG_FILE = Path.home() / "logs" / "email_processor.log"
 PROCESSED_DB = Path.home() / ".hermes" / "processed_emails.json"
 
@@ -176,7 +177,7 @@ def save_article(article: dict, date_str: str) -> Path:
 
 
 def save_to_ai_topics(articles: list[dict], email_subject: str, date_str: str):
-    """Save newsletter summary to ai-topics/hermes/ and push."""
+    """Save newsletter summary to wiki/raw/newsletters/ and push."""
     if not articles:
         return
 
@@ -204,10 +205,10 @@ def save_to_ai_topics(articles: list[dict], email_subject: str, date_str: str):
 
     # Git push (wiki + hermes digests)
     try:
-        repo = AI_TOPICS_DIR.parent
-        subprocess.run(["git", "add", "hermes/", "wiki/"], cwd=repo, check=True, capture_output=True)
+        repo = AI_TOPICS_REPO
+        subprocess.run(["git", "add", "wiki/"], cwd=repo, check=True, capture_output=True)
         subprocess.run(
-            ["git", "commit", "-m", f"hermes: newsletter digest {date_str}"],
+            ["git", "commit", "-m", f"wiki: newsletter digest {date_str}"],
             cwd=repo, check=True, capture_output=True,
         )
         subprocess.run(["git", "push"], cwd=repo, check=True, capture_output=True)
