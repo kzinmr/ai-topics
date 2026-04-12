@@ -26,6 +26,15 @@ Use `[[page-name]]` for internal links. Use `[[page-name|display text]]` for cus
 - Concepts: `concepts/rag-retrieval-augmented-generation.md`
 - Comparisons: `comparisons/rag-vs-llm-wiki.md`
 
+### Directory Structure Policy
+- **`entities/`** — People, companies, products, organizations (who/what)
+- **`concepts/`** — Single ideas, frameworks, methodologies, techniques (how/why)
+- **`comparisons/`** — Technical comparisons of two or more tools, models, or approaches
+  - Rule: If a page is primarily evaluating alternatives against each other (features, trade-offs, selection criteria), it belongs in `comparisons/`
+  - File naming: Use `vs` separator for comparisons (e.g., `langsmith-vs-braintrust.md`, `rag-vs-graph.md`)
+  - Comparisons should include a structured table or matrix, not just narrative text
+  - Related single-concept pages (e.g., `ai-evals.md`) stay in `concepts/`; only multi-tool/framework comparisons go in `comparisons/`
+
 ### Tag Taxonomy
 - **domain:** `ai-agents`, `llm`, `training`, `inference`, `safety`, `tooling`, `research`
 - **type:** `framework`, `model`, `technique`, `paper`, `product`, `company`, `person`
