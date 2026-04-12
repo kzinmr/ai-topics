@@ -213,7 +213,14 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 ### Web & Technology
 
-- [[concepts/death-of-browser]] — Death of the Browser
+|- [[concepts/death-of-browser]] — Death of the Browser
+
+### Cognition / Devin Philosophy
+
+|- [[concepts/cognition-devin-philosophy]] — Cognition/Devin Philosophy (Agentic Coding at Scale)
+|- [[concepts/agent-team-swarm/managed-devins]] — Managed Devins (Cognition's conditional multi-agent)
+|- [[concepts/closing-agent-loop]] — Closing the Agent Loop (Write→Catch→Fix→Merge)
+|- [[concepts/ai-agent-engineering/context-anxiety]] — Context Anxiety (Sonnet 4.5 integration lessons)
 
 ## Comparison Pages (5)
 
@@ -234,7 +241,10 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 - [[entities/vinci-rufus|Vinci Rufus]] — AI tech exec. "Orchestration > Automation", "Vibe coding 30-70%, Agentic engineering 300-700%"
 - [[entities/ryan-lopopolo|Ryan Lopopolo]] (@_lopopolo) — OpenAI Frontier. Harness Engineering, Symphony multi-agent orchestration
 - [[entities/boris-cherny|Boris Cherny]] (@bcherny) — Head of Claude Code at Anthropic. "Coding is solved", 100% AI-authored codebase
-- [[entities/addy-osmani|Addy Osmani]] (@addyosmani) — Director, Google Cloud AI. Conductor→Orchestrator framework, Agent Teams/Swarms, AGENTS.md critique
+|- [[entities/addy-osmani|Addy Osmani]] (@addyosmani) — Director, Google Cloud AI. Conductor→Orchestrator framework, Agent Teams/Swarms, AGENTS.md critique
+|- [[entities/scott-wu|Scott Wu]] (@ScottWu46) — Cognition CEO. Devin creator. "Build for the future, not tab-complete". 100x capability growth, context anxiety discovery
+|- [[entities/nader-dabit|Nader Dabit]] (@dabit3) — Cognition Growth Engineer. Cloud Agent Thesis, Agentic Slack, mobile-first agent orchestration
+|- [[entities/walden-yan|Walden Yan]] — Cognition engineer. "Don't Build Multi-Agents" — context continuity, single-threaded agent reliability
 
 ### AI Memory & Context Systems
 

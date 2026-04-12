@@ -6,6 +6,26 @@ title: "Wiki Change Log"
 
 ## 2026-04-13
 
+### Cognition/Devin Philosophy — Agentic Coding at Scale
+- **Enhanced entity pages**:
+  - `entities/scott-wu.md` — X/Twitter activity追加（"Eventually, the future comes" Devin 2.2リリース）。100x capability growth metrics（週154→659 PRs、METR結果）、technical insights（Don't Build Multi-Agents、Managed Devins転換、Context Anxiety発見、Closing the Agent Loop）
+  - `entities/nader-dabit.md` — X/Twitter activity追加（Agentic Slack, Agents From Anywhere）。ターミナル/IDEの限界→Slackをエージェントインターフェースに。非同期fire-and-forget、マルチプレイヤー化
+- **Enhanced concept page**:
+  - `concepts/cognition-devin-philosophy.md` — Scott Wu X投稿メトリクス、Nader Dabit Agentic Slack/Agents From Anywhere詳細追加。sourcesにXリンク追加
+- **Updated index.md**:
+  - PeopleセクションにScott Wu, Nader Dabit, Walden Yan追加
+  - Cognition/Devin Philosophyセクション新規追加（4概念ページ）
+- **Removed duplicate**: `concepts/cognition-devin-agentic-coding.md`（cognition-devin-philosophy.mdに統合）
+- **Sources**:
+  - [Scott Wu — Eventually, the future comes](https://x.com/scottwu46/status/2026350958213787903)
+  - [Nader Dabit — Agentic Slack](https://x.com/dabit3/status/2026385925593510302)
+  - [Nader Dabit — Agents From Anywhere](https://x.com/dabit3/status/2025936695661826481)
+  - [Cognition — Don't Build Multi-Agents](https://cognition.ai/blog/dont-build-multi-agents)
+  - [Cognition — Devin Can Now Manage Devins](https://cognition.ai/blog/devin-can-now-manage-devins)
+  - [Nader Dabit — Engineering for Agents That Never Sleep](https://nader.substack.com/p/engineering-for-agents-that-never)
+
+## 2026-04-13
+
 ### Sankalp & Steipete Articles — Core Concept Extraction
 - **New top-level concept pages**:
   - `inference-speed-development.md` — 推論速度で出荷する開発パラダイム (Steipete): 従来の日単位→分単位の開発サイクル、テスト駆動AI開発、UI開発パイプライン、50回試行パターン、人間の役割変化（Writer→Reviewer/Director）
