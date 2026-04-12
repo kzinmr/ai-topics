@@ -131,7 +131,9 @@ This mirrors how good engineering teams work with human developers.
 ## Further Reading
 
 - [Agentic Engineering](https://simonwillison.net/2025/Apr/11/agentic-engineering/) — Simon Willison
-- Related concepts: [[test-driven-development]], [[ai-pair-programming]], [[compound-engineering]]
+- [My Experience with Claude Code 2.0](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/) — Sankalp
+- [Shipping at Inference Speed](https://steipete.me/posts/2025/shipping-at-inference-speed) — Peter Steinberger (@steipete)
+- Related concepts: [[test-driven-development]], [[ai-pair-programming]], [[compound-engineering]], [[inference-speed-development]], [[claude-code-best-practices]], [[context-window-management]], [[claude-code-source-patterns]], [[ai-coding-reliability]]
 
 ---
 

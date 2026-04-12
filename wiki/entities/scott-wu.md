@@ -96,15 +96,58 @@ Cognition acquired Windsurf, a popular AI-powered IDE, to create a complete prod
 
 | Date | Title | Link |
 |---|---|---|
+| Mar 2026 | Devin Can Now Manage Devins | [cognition.ai](https://cognition.ai/blog/devin-can-now-manage-devins) |
+| Feb 2026 | Introducing Devin 2.2 | [cognition.ai](https://cognition.ai/blog/introducing-devin-2-2) |
+| Feb 2026 | Closing the Agent Loop: Devin Autofixes Review Comments | [cognition.ai](https://cognition.ai/blog/closing-the-agent-loop-devin-autofixes-review-comments) |
+| Jan 2026 | Devin Review: AI to Stop Slop | [cognition.ai](https://cognition.ai/blog/devin-review) |
+| Sep 2025 | Rebuilding Devin for Claude Sonnet 4.5: Lessons and Challenges | [cognition.ai](https://cognition.ai/blog/devin-sonnet-4-5-lessons-and-challenges) |
+| Jun 2025 | Don't Build Multi-Agents (Walden Yan) | [cognition.ai](https://cognition.ai/blog/dont-build-multi-agents) |
+| Jun 2025 | Coding Agents 101 | [devin.ai](https://devin.ai/agents101) |
 | Mar 2024 | Introducing Devin, the first AI software engineer | [cognition.ai](https://cognition.ai/blog/introducing-devin) |
-| Sep 2025 | Funding, growth, and the next frontier of AI coding agents | [cognition.ai](https://cognition.ai/blog/funding-growth-and-the-next-frontier-of-ai-coding-agents) |
-| Sep 2025 | Rebuilding Devin for Claude Sonnet 4.5: Lessons and Challenges | [cognition.ai](https://cognition.ai/blog/rebuilding-devin) |
-| Sep 2025 | Announcing Devin Agent Preview with Sonnet 4.5 | [cognition.ai](https://cognition.ai/blog/devin-agent-preview) |
-| Dec 2024 | The Devin Open Source Initiative | [cognition.ai](https://cognition.ai/blog/devin-open-source) |
 | Dec 2024 | Devin is now generally available | [cognition.ai](https://cognition.ai/blog/devin-ga) |
-| May 2025 | Devin 2.0 and the Future of SWE | [YouTube Talk](https://www.youtube.com/watch?v=MI83buT_23o) |
 
 Wu regularly publishes on the Cognition blog, covering product updates, technical insights, and company milestones.
+
+## X/Twitter Activity
+
+| Date | Content | Engagement |
+|---|---|---|
+| Feb 24, 2026 | "Eventually, the future comes" — Devin 2.2リリース。内部データ: 2025年ベスト週154 PRs → 2026年最新週659 PRs。METR結果: Opus 4.6/Codex 5.3が6時間+の人間作業を5分以内で実行（2024年比100x）。起動時間3倍高速化、Slack/Linear統合改善、エンドツーエンドテスト対応 | 1,094 likes, 148 reposts, 636K views |
+| Sep 2025 | Sonnet 4.5統合の課題発表 | 多数 |
+
+WuはX上でプロダクトの進捗と内部メトリクスを定期的に発信。特に「エージェント能力の指数関数的向上」と「インフラ整備の重要性」を強調。
+
+## Technical Insights & Philosophy (2025–2026)
+
+### Don't Build Multi-Agents (Walden Yan, Jun 2025)
+Cognitionがマルチエージェントに慎重な理由を公式化:
+> *"Share context, and share full agent traces, not just individual messages"*
+> *"Actions carry implicit decisions, and conflicting decisions carry bad results"*
+
+推奨アーキテクチャ:
+- **Single-Threaded Linear Agent** — 最も信頼性が高い
+- **Context Compression Agent** — コンテキストが溢れる場合のみ追加レイヤー
+- Claude Codeのサブエージェントが**逐次実行**に制限されている理由と同じ原理
+
+### Managed Devins への転換（Mar 2026）
+当初「Don't Build Multi-Agents」を唱えていたCognitionが、**条件付きマルチエージェント**を発表:
+- 各Managed Devinが独立VM（フルコンテキスト保持）
+- メインDevinがコーディネーター（スコープ分割、進捗管理、コンフリクト解消）
+- 子エージェントのtrajectoryを次回分解に活用（学習ループ）
+
+### Context Anxiety の発見（Sep 2025）
+Sonnet 4.5統合時に発見:
+- モデルが自身のコンテキスト限界を「自覚」し、早期に要約を開始
+- **1M Beta + 200k Cap Trick**: 1Mコンテキストを有効化し200kで制限。「余裕がある」と錯覚させ、不安によるショートカットを防ぐ
+- 並列ツール呼び出しの最大化 vs コンテキスト消費のトレードオフ
+
+### Closing the Agent Loop（Feb 2026）
+> *"A coding agent is a tool. A coding agent paired with a review agent... that's a system. Systems compound. Tools don't."*
+
+Write → Catch → Fix → Merge の完全自動化ループ:
+- Devin Review: インテリジェントなdiff整理、AIバグ検出
+- Bot Triggers: Lint, CI, セキュリティスキャナーへの自動対応
+- 人間の役割はアーキテクチャ判断のみに收窄
 
 ## Related People
 

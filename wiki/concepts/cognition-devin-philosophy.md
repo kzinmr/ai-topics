@@ -25,7 +25,9 @@ sources:
   - "https://cognition.ai/blog/closing-the-agent-loop-devin-autofixes-review-comments"
   - "https://cognition.ai/blog/introducing-devin-2-2"
   - "https://cognition.ai/blog/devin-can-now-manage-devins"
-  - "https://nader.substack.com/p/engineering-for-agents-that-never"
+  - "https://x.com/scottwu46/status/2026350958213787903"
+  - "https://x.com/dabit3/status/2026385925593510302"
+  - "https://x.com/dabit3/status/2025936695661826481"
 ---
 
 # Cognition/Devin Philosophy — Agentic Coding at Scale
@@ -114,6 +116,62 @@ Cognitionの内部データ（2026年3月時点）:
 4. リッチなシステムコンテキスト（アーキテクチャ・規約・サービス間相互作用）
 
 > *"Without it, you have agents that write code. With it, you have agents that ship software."*
+
+## Scott Wu: "Eventually, the future comes" (Feb 2026)
+> *"Most folks in code were still focused on tab-complete, but we wanted to build for the future instead."* — Scott Wu
+
+Devin 2.2リリースに際し、WuがX上で共有した内部メトリクスと哲学:
+
+**100x Capability Growth (2024 → 2026):**
+| Metric | 2024 | 2025 | 2026 |
+|---|---|---|---|
+| Cognition Internal PRs/Week | — | 154 (best week) | 659 (latest week) |
+| Enterprise Usage | Baseline | 65x growth in 13 months | Doubling every 6 weeks |
+| METR Task Execution | <5 min equivalent | — | 6+ hours human work |
+| Agent Startup Time | Baseline | — | 3x faster |
+
+**METR結果**: Opus 4.6とCodex 5.3が、2024年に6時間以上かかった人間作業を5分以内で実行。
+能力が**100倍**向上したことで、「未来のために構築する」ビジョンが現実化。
+
+**Devin 2.2の改善点:**
+- 起動時間3倍高速化
+- Slack & Linear統合の改善
+- エンドツーエンドテスト（computer use対応）
+- Devin ReviewのDevin体験への統合（Autofix + GitHub comments）
+- UX/デザインの数百の細部改善
+
+> *"We were very early (frankly too early) and only a few of the use cases that we envisioned were really possible at the time."*
+
+## Nader Dabit: Agentic Slack (Mar 2026)
+> *"The terminal is where most coding agents live, but it's also where they get stuck."* — Nader Dabit
+
+ターミナル/IDEの限界を超え、**Slackをエージェントの主要インターフェース**に:
+
+| Dimension | Terminal/IDE | Agentic Slack |
+|---|---|---|
+| Player | Single-player | Multiplayer |
+| Sync | Synchronous (watching, steering) | Asynchronous (fire-and-forget) |
+| Access | Developer only | Entire org (designers, PMs, support) |
+| Bottleneck | Engineer hours | Review capacity |
+
+- 「タグして説明して離れる」→ PRが完成している
+- スレッドに履歴があり、エージェントは昨日の議論を参照可能
+- 非エンジニア（デザイナー、サポート、PM）がGit不要で貢献可能
+- 制約が**エンジニアの時間**から**レビュー容量**へシフト
+
+> *"The teams that ship the most are treating agents like teammates, not tools."*
+
+## Nader Dabit: Agents From Anywhere (Feb 2026)
+モバイルファーストエージェントオーケストレーションの実践:
+- サンドボックス環境（独立VM）
+- 並列タスク実行
+- 電話/Slack/Linear/Webアプリからのエージェント起動
+- PR自動Push（タスク完了時）
+- 内蔵ブラウザ（リサーチ・テスト用）
+- シークレット管理
+- 場所/デバイスに依存しないセッション継続
+
+すべてDevinを活用し、**200秒以内**でセットアップ可能。
 
 ## Cognition vs Anthropic vs Willison — 比較
 

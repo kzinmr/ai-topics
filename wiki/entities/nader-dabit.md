@@ -107,6 +107,7 @@ His understanding of distributed systems and edge computing informs his current 
 
 | Date | Title | Summary |
 |---|---|---|
+| Mar 2026 | [Engineering for Agents That Never Sleep](https://nader.substack.com/p/engineering-for-agents-that-never) | Cognition内部データ: 70%人間起動→30%自動起動。予測: 1年で10/90に逆転。スキャフォールディング（テスト、ドキュメント、再現環境、システムコンテキスト）が「コードを書くエージェント」と「ソフトウェアを出荷するエージェント」を分ける |
 | Feb 2026 | [The Cloud Agent Thesis](https://nader.substack.com/p/the-cloud-agent-thesis) | Definitive framework distinguishing cloud agents from local AI coding tools; observes patterns from Cognition/Devin enterprise deployments |
 | Feb 2026 | [How I'm thinking about the next few years](https://nader.substack.com/p/how-im-thinking-about-the-next-few) | Reflection on AI's impact on developer roles; advocates for orchestration skills and continuous learning |
 | Sep 2020 | [The Complete Guide to Next.js Authentication](https://dev.to/dabit3) | Comprehensive tutorial on auth patterns in Next.js (909 reactions, 29 comments) |
@@ -120,8 +121,17 @@ His understanding of distributed systems and edge computing informs his current 
 - **Sahil Lavingia** (Shopify) — Dabit's work on serverless architecture intersects with Shopify's developer platform thinking
 - **Cognition team** — Colleagues working on Devin, including engineers building cloud agent infrastructure
 
+## X/Twitter Activity
+
+| Date | Content | Engagement |
+|---|---|---|
+| Mar 2026 | [Agentic Slack](https://x.com/dabit3/status/2026385925593510302) — ターミナル/IDEは「シングルプレイヤー」。Slackはチームの既存インターフェース。デザイナー、サポート、PMがGit不要でPR作成可能。非同期でfire-and-forget。制約はエンジニアの時間→レビュー容量へ | 114 likes, 147 bookmarks, 29K views |
+| Feb 2026 | [Agents From Anywhere](https://x.com/dabit3/status/2025936695661826481) — モバイルファーストエージェントオーケストレーション。サンドボックス環境、並列タスク、電話/Slack/Linearからの起動、PR自動Push。Devin活用 | 181 likes, 219 bookmarks, 29K views |
+
 ## X Activity Themes
 
+- **Agentic Slack** — ターミナル/IDEの限界を超え、Slackをエージェントの主要インターフェースに
+- **Mobile-first orchestration** — 携帯電話からのエージェント操作、場所/デバイス依存の解消
 - **Cloud agent architecture** — Frequent posts on the evolution from local coding assistants to cloud-based AI agents
 - **Developer productivity** — Commentary on how AI tools are reshaping engineering workflows and organizational capacity
 - **AI industry analysis** — Observations on enterprise AI adoption, pricing models, and competitive dynamics

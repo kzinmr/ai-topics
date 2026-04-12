@@ -6,6 +6,20 @@ title: "Wiki Change Log"
 
 ## 2026-04-13
 
+### Sankalp & Steipete Articles — Core Concept Extraction
+- **New top-level concept pages**:
+  - `inference-speed-development.md` — 推論速度で出荷する開発パラダイム (Steipete): 従来の日単位→分単位の開発サイクル、テスト駆動AI開発、UI開発パイプライン、50回試行パターン、人間の役割変化（Writer→Reviewer/Director）
+  - `claude-code-best-practices.md` — Claude Code実践パターン集 (Sankalp): MCP Server活用、サブエージェント委任（--max-turns）、CLAUDE.md戦略、セッションハイジーン、アンチパターン（無限セッション、過委任、盲目的信頼、プロンプト肥大）
+  - `context-window-management.md` — コンテキスト管理の一般パターン（両記事統合）: セッション分割、圧縮（`<analysis>→<summary>`）、フォークパターン、トークンエコノミクス、キャッシュ最優先エンジニアリング
+- **Updated existing pages**:
+  - `agentic-engineering.md` — Further ReadingにSankalp/Steipete記事追加、Related concepts拡張
+  - `index.md` — 3新概念エントリ追加、Last updated更新
+- **Sources**:
+  - [Sankalp — My Experience with Claude Code 2.0](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/)
+  - [Peter Steinberger (@steipete) — Shipping at Inference Speed](https://steipete.me/posts/2025/shipping-at-inference-speed)
+
+## 2026-04-13
+
 ### Sankalp & Steipete — Coding Agent Practical Patterns
 - **New concept pages**:
   - `agentic-engineering/agent-first-design.md` — 「人間向け」ではなく「エージェント向け」コード設計哲学 (Steipete)

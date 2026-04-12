@@ -2,7 +2,7 @@
 
 Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-13 (+agent-first-design, +cli-first-development, +throw-away-draft-pattern, enhanced context-window-management, how-agents-work, subagents with Sankalp & Steipete insights)
+Last updated: 2026-04-13 (+Cognition/Devin philosophy: Scott Wu X posts, Nader Dabit Agentic Slack/Agents From Anywhere, Managed Devins, 100x capability growth metrics, +scott-wu entity update, +nader-dabit entity update)
 
 ## Entity Pages (37)
 
@@ -146,6 +146,10 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[concepts/agentic-engineering/cli-first-development]] — CLI-First Development (Steipete, Sankalp)
 |- [[concepts/agentic-engineering/throw-away-draft-pattern]] — Throw-Away First Draft (Sankalp)
 
+|- [[concepts/inference-speed-development]] — Inference Speed Development (Steipete)
+|- [[concepts/claude-code-best-practices]] — Claude Code Best Practices (Sankalp)
+|- [[concepts/context-window-management]] — Context Window Management (general patterns)
+
 ### AI Agent Engineering (Anthropic + OpenAI)
 |- [[concepts/ai-agent-engineering/_index]] — AI Agent Engineering (システム構築パターン集)
 |- [[concepts/ai-agent-engineering/building-effective-agents]] — Building Effective Agents (Anthropic)
@@ -236,13 +240,16 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 - [[entities/shlok-khemani|Shlok Khemani]] (@shloked) — Writer & programmer. AI memory systems analyst, competitive analysis of ChatGPT/Claude/Cognition memory architectures
 
-### Memory Architecture Deep Dives
+### Memory & Context Systems
 
 - [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson (stateless vs stateful agents)
 - [[concepts/claude-memory]] — Claude's File-Based Memory Architecture (CLAUDE.md, .agent/ directories)
 - [[concepts/claude-memory-tool]] — Cognition's Memory Tool (copying Claude's approach)
 - [[concepts/claude-code-source-patterns]] — Claude Code Source Patterns (leaked source analysis)
 - [[concepts/vajra-background-agent]] — Vajra Open-Source Background Coding Agent
+- [[concepts/context-engineering]] — Context Engineering (Anthropic's dynamic token curation framework)
+- [[concepts/harness-design-long-running-apps]] — Harness Design for Long-Running Apps (Anthropic's multi-agent GAN loop)
+- [[concepts/memory-systems-design-patterns]] — Memory Systems Design Patterns (Anthropic vs OpenAI vs Cognition synthesis)
 
 ### AI Safety & Alignment
 
