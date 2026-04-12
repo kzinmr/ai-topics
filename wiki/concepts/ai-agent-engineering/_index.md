@@ -1,6 +1,7 @@
 ---
 title: "AI Agent Engineering — System Architecture & Design"
 aliases:
+  - ai-agent-engineering
   - ai-agent-engineering-index
   - agent-system-design
   - agent-architecture-patterns

@@ -1,6 +1,7 @@
 ---
 title: "Agentic Engineering — Developer Workflows & Patterns"
 aliases:
+  - agentic-engineering
   - agentic-engineering-index
   - agentic-coding-patterns
   - developer-agentic-workflows
