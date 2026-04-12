@@ -9,24 +9,26 @@ ai-topics/
 ├── README.md               # このファイル
 ├── .gitignore
 │
-├── wiki/                   # 知識ベース本体
-│   ├── SCHEMA.md           # 構造ポリシー・更新ルール
+├── inbox/                  # 受信データ (パイプライン出力、トリアージ待ち)
+│   ├── newsletters/        # emailパイプラインの日次ダイジェスト
+│   └── rss-scans/          # blogwatcher-cliの日次スキャンレポート
+│
+├── wiki/                   # llm-wiki スキル準拠の知識ベース
+│   ├── SCHEMA.md           # [Layer 3] 構造ポリシー・更新ルール
 │   ├── index.md            # 全ページの索引
 │   ├── log.md              # 更新履歴
+│   │
+│   ├── raw/                # [Layer 1] 不変のソース素材 (Hermesは読み取り専用)
+│   │   ├── articles/       # スクレイプ済み記事
+│   │   ├── papers/         # arXiv論文 (予約)
+│   │   ├── transcripts/    # ポッドキャスト文字起こし (予約)
+│   │   ├── assets/         # 画像・図表 (予約)
+│   │   └── x_accounts.json # X/Twitter処理済みデータ
 │   │
 │   ├── concepts/           # [Layer 2] 概念・手法・技術 (how/why)
 │   ├── entities/           # [Layer 2] 人物・企業・プロダクト (who/what)
 │   ├── comparisons/        # [Layer 2] ツール/モデル比較 (vs)
-│   ├── queries/            # [Layer 2] 調査クエリ結果 (予約)
-│   │
-│   └── raw/                # [Layer 1] 取り込み前の生データ (情報源)
-│       ├── articles/       # newsletter記事の自動スクレイプ結果
-│       ├── newsletters/    # newsletter日次ダイジェスト (自動生成)
-│       ├── rss-scans/      # RSSスキャン日次レポート
-│       ├── papers/         # arXiv論文 (予約)
-│       ├── transcripts/    # ポッドキャスト文字起こし (予約)
-│       ├── assets/         # 画像・図表 (予約)
-│       └── x_accounts.json # X/Twitter追跡アカウント (処理済みデータ)
+│   └── queries/            # [Layer 2] 調査クエリ結果 (再導出コストが高い回答)
 │
 ├── feeds/                  # 情報ソース定義
 │   ├── hn-popular-blogs-2025.opml  # HN人気ブログ 84件
@@ -67,23 +69,26 @@ ai-topics/
 ## データフロー
 
 ```
-═══ Layer 1: 取り込み (wiki/raw/) ═══
+═══ 購読 & 受信 ═══
 
-Newsletter Email → Maildir → email_watcher → process_email.py
-  → wiki/raw/articles/*.md       (個別記事スクレイプ)
-  → wiki/raw/newsletters/*.md    (日次ダイジェスト)
-  → git push
+feeds/                         購読先の定義 (設定)
+  │
+  ├─ Newsletter Email → Maildir → process_email.py
+  │    ├→ inbox/newsletters/*.md     日次ダイジェスト
+  │    └→ wiki/raw/articles/*.md     リンク先記事スクレイプ
+  │
+  └─ RSS feeds → blogwatcher-cli (cron)
+       └→ inbox/rss-scans/*.md       日次スキャンレポート
 
-RSS Feeds → blogwatcher-cli (cron) → wiki/raw/rss-scans/*.md
+═══ llm-wiki Layer 1 → Layer 2 (キュレーション) ═══
 
-═══ Layer 2: キュレーション (wiki/{concepts,entities,comparisons}/) ═══
-
-Hermes Agent (Discord) が raw/ から知識を抽出・構造化:
-  → wiki/concepts/    ▒ 技術概念
-  → wiki/entities/     ▒ 人物・企業
-  → wiki/comparisons/  ▒ ツール比較
-  → index.md, log.md 更新
-  → git push
+Hermes Agent (Discord) が inbox/ + wiki/raw/ から知識を抽出・構造化:
+  inbox/*          トリアージ (重要記事を特定し raw/ に取り込み)
+  wiki/raw/*   →  wiki/concepts/      技術概念
+                   wiki/entities/      人物・企業
+                   wiki/comparisons/   ツール比較
+                   wiki/queries/       調査結果
+                   index.md, log.md 更新 → git push
 ```
 
 ## シンボリックリンク
