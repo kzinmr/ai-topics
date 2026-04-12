@@ -2,7 +2,7 @@
 
 Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-12 (Hamel Husain entity page upgraded; AI evals concepts added)
+Last updated: 2026-04-12 (Agentic Engineering / AI Agent Engineering / Harness Engineering taxonomy established; Anthropic patterns moved to ai-agent-engineering/)
 
 ## Entity Pages (37)
 
@@ -126,10 +126,34 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents (Simon Willison)
 |- [[concepts/gnu-ai-reimplementations]] — GNU & AI Reimplementations (antirez)
 
-|- [[concepts/agentic-engineering]] — Agentic Engineering (Simon Willison)
+|- [[concepts/agentic-engineering/_index]] — Agentic Engineering (Willison開発パターン集)
+|- [[concepts/agentic-engineering/red-green-tdd]] — Red/Green TDD (Simon Willison)
+|- [[concepts/agentic-engineering/first-run-the-tests]] — First Run the Tests (Simon Willison)
+|- [[concepts/agentic-engineering/agentic-manual-testing]] — Agentic Manual Testing (Simon Willison)
+|- [[concepts/agentic-engineering/showboat]] — Showboat Documentation Tool (Simon Willison)
+|- [[concepts/agentic-engineering/vibe-coding]] — Vibe Coding vs Agentic Engineering (Simon Willison)
+|- [[concepts/agentic-engineering/linear-walkthroughs]] — Linear Walkthroughs (Simon Willison)
+|- [[concepts/agentic-engineering/interactive-explanations]] — Interactive Explanations (Simon Willison)
+|- [[concepts/agentic-engineering/cognitive-debt]] — Cognitive Debt (Simon Willison)
+|- [[concepts/agentic-engineering/how-agents-work]] — How Coding Agents Work
+|- [[concepts/agentic-engineering/using-git-with-agents]] — Using Git with Agents
+
+### AI Agent Engineering (Anthropic)
+|- [[concepts/ai-agent-engineering/_index]] — AI Agent Engineering (システム構築パターン集)
+|- [[concepts/ai-agent-engineering/building-effective-agents]] — Building Effective Agents (Anthropic)
+|- [[concepts/ai-agent-engineering/advanced-tool-use]] — Advanced Tool Use (Anthropic)
+|- [[concepts/ai-agent-engineering/multi-agent-research-system]] — Multi-Agent Research System (Anthropic)
+|- [[concepts/ai-agent-engineering/writing-tools-for-agents]] — Writing Effective Tools for AI Agents (Anthropic)
+|- [[concepts/ai-agent-engineering/code-execution-with-mcp]] — Code Execution with MCP (Anthropic)
+|- [[concepts/ai-agent-engineering/harness-design-long-running-apps]] — Harness Design for Long-Running Apps (Anthropic)
+|- [[concepts/ai-agent-engineering/evals-for-ai-agents]] — Evals for AI Agents (Anthropic)
+|- [[concepts/ai-agent-engineering/infrastructure-noise]] — Infrastructure Noise in Agentic Evals (Anthropic)
+|- [[concepts/ai-agent-engineering/context-engineering]] — Context Engineering (Anthropic)
+|- [[concepts/ai-agent-engineering/claude-code-best-practices]] — Claude Code Best Practices (Anthropic)
+|- [[concepts/ai-agent-engineering/effective-harnesses-for-long-running-agents]] — Effective Harnesses for Long-Running Agents (Anthropic)
 |- [[concepts/ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
 |- [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
-|- [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo)
+|- [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo / OpenAI Symphony)
 |- [[concepts/llm-evaluation-harness]] — LLM Evaluation Harness
 |- [[concepts/local-llm]] — Local LLM Inference (llama.cpp, Ollama, GGUF)
 |- [[concepts/meta-harness]] — Meta-Harness
