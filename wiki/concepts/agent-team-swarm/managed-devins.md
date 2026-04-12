@@ -1,100 +1,51 @@
 ---
-title: "Managed Devins (Cognition)"
-aliases:
-  - managed-devins
-  - cognition-managed-agents
-created: 2026-04-13
-updated: 2026-04-13
-tags:
-  - concept
-  - agent-team
-  - swarm
-  - multi-agent
-  - cognition
-  - devin
-related:
-  - "[[agent-team-swarm/_index]]"
-  - "[[anthropic-managed-agents]]"
-  - "[[openai-symphony]]"
-  - "[[multi-agent-autonomy-scale]]"
-  - "[[cognition-devin-philosophy]]"
+title: "Managed Devins"
+status: draft
+type: concept
+tags: [multi-agents, cognition, devin, orchestration]
+related: [cognition-devin-philosophy, agent-team-swarm]
 sources:
-  - "https://cognition.ai/blog/devin-can-now-manage-devins"
-  - "https://cognition.ai/blog/dont-build-multi-agents"
+  - https://cognition.ai/blog/devin-can-now-manage-devins
 ---
 
-# Managed Devins (Cognition)
+# Managed Devins — Conditional Multi-Agent Architecture
 
-2026年3月、Cognitionが発表した「DevinがDevinを管理する」機能。
-Anthropicの「Don't Build Multi-Agents」（Walden Yan, Jun 2025）からの**転換点**として注目される。
+Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.2.
 
-## 背景：なぜ「慎重だったマルチエージェント」に転じたか
+## Core Concept
 
-Cognitionは当初、マルチエージェントに強く反対していた:
-> *"In some cases, libraries such as OpenAI Swarm and Microsoft AutoGen actively push concepts which I believe to be the wrong way of building agents."*
-> — Walden Yan, "Don't Build Multi-Agents"
+**NOT traditional multi-agent** (many agents working in parallel on the same task)
 
-**問題点**と**解決策**:
-
-| 問題（Jun 2025の指摘） | Managed Devinsでの解決策（Mar 2026） |
-|------------------------|-----------------------------------|
-| コンテキスト分断 | 各Devinが独立VM（フルコンテキスト保持） |
-| 暗黙の決定の喪失 | コーディネーターが完全なtrajectoryを読む |
-| コンフリクト解決の難しさ | スコープされた独立タスクに分割 |
-| フォーカスの低下 | 1セッション = 1 narrow focus |
-
-## アーキテクチャ
+**Instead**: A single Devin instance that can conditionally spawn managed sub-Devins for specific subtasks.
 
 ```
-┌─────────────────────────────────────────────┐
-│              Coordinator Devin               │
-│  - タスク分解・スコーピング                   │
-│  - 子セッションへの指示・文脈付与             │
-│  - 進捗モニタリング & ACU消費追跡            │
-│  - コンフリクト解消 & 結果集約                │
-│  - 子エージェントのtrajectoryを学習に活用     │
-├───────────────────────────────────────────────┤
-│  ┌─────────┐  ┌─────────┐  ┌─────────┐      │
-│  │ Devin #1 │  │ Devin #2 │  │ Devin #N │      │
-│  │ 独立VM   │  │ 独立VM   │  │ 独立VM   │      │
-│  │ 独自Shell│  │ 独自Shell│  │ 独自Shell│      │
-│  │ 独自Test │  │ 独自Test │  │ 独自Test │      │
-│  └─────────┘  └─────────┘  └─────────┘      │
-└─────────────────────────────────────────────┘
+┌─────────────────────────────────────────┐
+│           Manager Devin                 │
+│  (maintains full context + thread)      │
+│                                         │
+│  ┌─────────┐  ┌─────────┐  ┌─────────┐ │
+│  │Sub-Devin│  │Sub-Devin│  │Sub-Devin│ │
+│  │(scoped) │  │(scoped) │  │(scoped) │ │
+│  └─────────┘  └─────────┘  └─────────┘ │
+└─────────────────────────────────────────┘
 ```
 
-## 主なユースケース
+## Key Principles
 
-| ユースケース | 方法 |
-|-------------|------|
-| **並列QA** | ページごとに子エージェントを起動、スクリーンショット付きレポート |
-| **大規模マイグレーション** | 依存関係のない単位に分割、並列実行 |
-| **セキュリティ監査** | サービス/パッケージごとに子セッション起動 |
-| **リファクタリング** | クラス→フックスなど、バッチ単位で独立実行 |
-| **新機能テスト** | 最近変更されたPRごとにエンドツーエンドテスト |
+1. **Context continuity** — Manager Devin maintains the full thread
+2. **Scoped delegation** — Sub-Devins get bounded, well-defined tasks
+3. **Conditional spawning** — Only spawn when needed, not by default
+4. **Centralized control** — One manager, many workers
 
-## Anthropic Managed Agentsとの比較
+## Why This Beats Traditional Multi-Agent
 
-| 次元 | Cognition Managed Devins | Anthropic Managed Agents |
-|------|------------------------|-------------------------|
-| スコープ | 単一タスクの並列分解 | 永続的なエージェントインフラ |
-| セッション | 独立VM（一時的） | Brain/Hands/Session完全分離 |
-| 学習 | trajectoryを次回分解に活用 | Self-Evaluation（研究プレビュー） |
-| 協調 | コーディネーター→子（一方向） | Agentが他のAgentをspawn可能 |
-| 位置づけ | タスク実行の最適化 | エンタープライズ基盤 |
+- Traditional multi-agent loses context during handoffs
+- Managed Devins preserve context through the manager
+- Workers are disposable — manager persists
+- No "who knows what" problem — manager knows everything
 
-## Dan Shapiroの5レベルモデルとの関係
+## See Also
 
-Managed Devinsは **Level 4（The Engineering Team）** に該当:
-- メインDevinが「エンジニアリングマネージャー」役
-- 子Devinが「実装担当者」役
-- 人間は判断・承認のみ
-
-Level 5（Dark Factory）には未到達 — 人間が最終レビューを行う前提。
-
-## 関連
-
-- [[cognition-devin-philosophy]] — Cognitionの全体哲学
-- [[anthropic-managed-agents]] — AnthropicのManaged Agents
-- [[openai-symphony]] — OpenAIのタスクオーケストレーター
-- [[agent-team-swarm/_index]] — Agent Team/Swarmの上位概念
+- [[concepts/cognition-devin-philosophy]] — Main Cognition philosophy
+- [[concepts/multi-agent-autonomy-scale]] — 5 levels of multi-agent autonomy
+- [[concepts/closing-agent-loop]] — Full development loop

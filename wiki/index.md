@@ -2,7 +2,7 @@
 
 Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-13 (+Cognition/Devin philosophy: Scott Wu X posts, Nader Dabit Agentic Slack/Agents From Anywhere, Managed Devins, 100x capability growth metrics, +scott-wu entity update, +nader-dabit entity update)
+Last updated: 2026-04-13 (+Cognition/Devin Philosophy: Scott Wu, Nader Dabit, Walden Yan entity pages, 4 concept pages: cognition-devin-philosophy, closing-agent-loop, managed-devins, context-anxiety, 100x capability growth metrics, Agentic Slack, Agents From Anywhere)
 
 ## Entity Pages (37)
 
