@@ -6,6 +6,14 @@ title: "Wiki Change Log"
 
 ## 2026-04-13
 
+### AI Memory Systems Analysis
+- **New concept pages**:
+  - `context-anxiety.md` — Sonnet 4.5のコンテキスト不安現象、AnthropicのMemory Tool (6ファイル操作)、Cognitionの戦略的ポジショニング
+  - `ai-memory-systems.md` — AIメモリシステムの設計哲学比較（ChatGPT明示的メモリ vs Claude暗黙的メモリ vs Cognitionハイブリッド）、「The Bitter Lesson」の観点からの分析
+  - `anthropic-memory-tool-cognition.md` — AnthropicのMemory ToolとCognitionの戦略的追随、「盗む」vs「独自開発」の競争力学
+- **Updated**: `ai-agent-engineering/_index.md` — 新概念3件を追加、著者名 typo 修正 (Khemeni → Khemani)
+- **Sources**: Shlok Khemani (shloked.com) 3記事、ByteByteGo コンテキストエンジニアリングガイド
+
 ### Simon Willison — Agentic Engineering Patterns Guide (L3 Enrichment)
 - **simon-willison.md**: L3 Thought Analysisレベルにアップグレード
   - Added: Hoarding（知識の蓄積）哲学 — "productive kind of hoarding"
