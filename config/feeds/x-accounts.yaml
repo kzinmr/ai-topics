@@ -429,3 +429,10 @@ accounts:
     topics: [ai, reinforcement-learning, distributed-training, open-source]
     notes: "Prime Intellect engineer. Contributor to PRIME-RL, Verifiers, Environments Hub. Works on distributed RL training infrastructure and open superintelligence stack."
     github: "xeophon"
+
+  - handle: "@shloked"
+    name: "Shlok Khemani"
+    blog: "https://www.shloked.com/"
+    topics: [ai, memory-systems, coding-agents, competitive-analysis]
+    notes: "Writer & programmer (Gurgaon, IN). Focuses on AI memory systems, coding agent competitive analysis, and agentic commerce. Authored key analyses on ChatGPT Memory vs Claude Memory, Anthropic's Memory Tool (6 file operations), and Cognition/Devin's strategy. Built claude-memory-tools (Python CLI + Next.js), OpenPoke, Centaur, Chatferry, Conjure. Previously at Decentralised.co (crypto). Looking for a cofounder."
+    github: "shlokkhemani"
