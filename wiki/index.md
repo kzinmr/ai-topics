@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-13 (Claude Mythos Preview, Meta Muse Spark, AI Digital NATO, Anthropic-OpenClaw, illusion of thinking, Peter Steinberger enriched, Ali Farhadi enriched, Shlok Khemani enriched, Scott Wu L3, Nader Dabit L3, Walden Yan L3)
+Last updated: 2026-04-13 (Jason Liu entity page — Instructor creator, structured outputs)
 
 ## Entity Pages (52)
 
@@ -320,3 +320,7 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 ### AI Agent Platforms & Developer Tools
 
 - [[entities/peter-steinberger|Peter Steinberger]] (@steipete) — OpenClaw creator, former PSPDFKit CEO. AI-native solo builder shipping 600+ commits/day via 5-10 parallel agents. Joined OpenAI Feb 2026. "Agent-first design" advocate, "Ship beats perfect" philosophy.
+
+### ML Systems & Inference Scaling
+
+- [[entities/alex-zhang|Alex L. Zhang]] (@a1zhang) — MIT CSAIL PhD (Khattab, Kraska). Recursive Language Models (RLMs). "Language models will be scaffolds." GPU MODE, KernelBench (ICML 2025 Best Paper).
