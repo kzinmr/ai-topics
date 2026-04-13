@@ -211,12 +211,86 @@ Domain-specific priorities:
 
 > "Most teams jump straight to Level 4 complexity and wonder why everything breaks."
 
+**Speaker Series: Systematically Improving RAG Applications**
+
+Jason curated a comprehensive speaker series (originally a cohort-based course, now closed) featuring practitioners from top companies. The series is organized into 5 chapters:
+
+| Chapter | Speaker | Key Insight |
+|:--------|:--------|:------------|
+| **Foundation & Evals** | Vitor (Zapier) | Simple UX changes increased daily feedback `10→40+` (4x). Specific prompts outperform generic ones. |
+| **Foundation & Evals** | Anton (ChromaDB) | Chunking remains essential despite infinite context windows due to embedding model limits. **Rule:** Always manually inspect chunks. |
+| **Foundation & Evals** | Kelly Hong | Generative benchmarking: filter chunks → generate realistic queries → evaluate retrieval. Custom benchmarks often contradict MTEB rankings. |
+| **Training & Fine-Tuning** | Manav (Glean) | Customer-specific embedding fine-tuning yields **20% performance gains** over 6 months. Smaller fine-tuned models beat larger general-purpose ones for company terminology. |
+| **Training & Fine-Tuning** | Ayush (LanceDB) | Re-rankers deliver **12–20% retrieval improvement** with minimal latency. Even 6M parameter models show significant gains. ColBERT is optimal middle ground. |
+| **Production & Monitoring** | Ben & Sidhant (Trellis) | Traditional error tracking (Sentry) fails for AI — no exceptions for bad outputs. Framework: discretize infinite outputs → prioritize by impact → recursively refine. |
+| **Production & Monitoring** | Skylar Payne | **90% of teams** adding complexity see worse performance. Silent document failures eliminate **20%+ of corpus** undetected. |
+| **Production & Monitoring** | Chris Lovejoy (Anterior) | Build expert review loops → generate failure-mode datasets → prioritize fixes by impact → dynamically augment prompts. |
+| **Query Analysis & Routing** | Anton (ChromaDB) | Monolithic indexes reduce recall due to ANN limitations. **Solution:** Separate indexes per user/data source outperform filtered large indexes. |
+| **Coding Agents** | Nik Pash (Cline) | Leading coding agents abandon embedding-based RAG for direct code exploration. "Narrative integrity" requires coherent thought, not disconnected snippets. |
+| **Coding Agents** | Colin Flaherty | Top SWE-Bench performers: simple CLI tools (`grep`, `find`) beat sophisticated embeddings due to agent persistence & course-correction. |
+| **Document Processing** | Adit (Reducto) | Hybrid CV + VLM pipelines beat pure text. **1–2° document skews** dramatically degrade extraction quality. |
+| **Multi-Modal** | Daniel (Superlinked) | LLMs are "pilots that see the world as strings" — struggle with numerical relationships. Use mixture of specialized encoders (text, numerical, location, graph). |
+| **Lexical Search** | John Berryman | Semantic search struggles with exact matching, product IDs, specialized terminology. Use lexical for filtering + metadata, semantic for meaning. |
+
+**Cross-series patterns:**
+1. Data quality examination beats algorithmic sophistication
+2. Teams iterating fastest on data examination consistently outperform those focused on algorithmic complexity
+3. Fine-tuning embeddings and re-rankers are more accessible and impactful than most teams realize
+4. Most teams underinvest in document processing, evaluation frameworks, and understanding their specific data distribution
+5. Successful RAG systems require a portfolio of techniques, not a single silver bullet
+
 **RAG Anti-Patterns** (with Skylar Payne, ex-Google/ex-LinkedIn):
-- Increasing complexity without evaluation (~90% of failures)
-- Naive embedding usage (trained for semantic similarity, not Q&A)
-- Chunking too small (losing context boundaries)
-- Ignoring query routing (using full RAG for simple metadata lookups)
-- Not using metadata (dates, ownership, status as cheap filters)
+
+From the lightning lesson interview, Jason and Skylar identified concrete failure modes with measurable impact:
+
+| Pipeline Stage | Anti-Pattern | Specific Impact | Fix |
+|:---------------|:-------------|:----------------|:----|
+| **Data Collection** | Silent encoding/format failures | `21%` of medical corpus silently dropped (Latin-1 vs UTF-8 mismatch) | Track document counts at every stage; log failures |
+| **Extraction** | Overly aggressive chunking (`~200 char` chunks) | `13%` hallucination rate in e-commerce (no single chunk held complete info) | Chunk by semantic boundaries; leverage modern context windows |
+| **Indexing** | Naive embedding usage + stale indexes | Financial news index unrefreshed for 2 weeks returned outdated earnings data | Bridge query/doc form mismatch via query expansion, late chunking, contextual retrieval |
+| **Retrieval** | Accepting vague queries; over-engineering simple lookups | Wasted compute on irrelevant nodes in large filtered indexes | Intent classification; route structured queries to direct metadata lookups |
+| **Generation** | Multi-hop reasoning failures | Medical chatbot hallucinated drug side effect not in source material | Force inline citations; validate citations exist in retrieved docs; semantic validation |
+
+**Key principles from anti-patterns analysis:**
+
+> *"The teams who can make that loop go as fast as possible are the ones who win, and that is pretty invariable."*
+
+> *"About 90% of the time, teams implement complex retrieval paths and re-ranking systems when the real problem was bad input data."*
+
+- **Quadrant Analysis framework:** Evaluate both **relevance** (is it related?) AND **sufficiency** (does it contain enough info to answer?)
+- **Re-ranking pitfalls:** Minimize manual boosting rules (hard to debug); blacklist known poor domains; consider custom cross-encoder re-ranker
+- **Metadata tagging reality:** ~40% of clients have indexes too small for metadata to provide meaningful benefits. Value scales with data volume + query diversity.
+- **Recommended tooling:** Lilypad (Mirascope) for evaluation & versioning, especially for teams without deep AI engineering backgrounds
+
+**Authority in RAG Systems** (March 2025)
+
+Jason identifies a critical gap: RAG systems over-index on **semantic similarity** while neglecting **authority** and **freshness**.
+
+> *"The newest and shiniest AI technique isn't always the complete solution."*
+
+| Dimension | Traditional Search (Google/Bing) | Semantic Search (Vector DBs) |
+|:---|:---|:---|
+| **Primary Signal** | Lexical match (BM25) + User engagement + Authority | Embedding similarity only |
+| **Authority Handling** | Explicit (PageRank, domain trust, backlinks) | Ignored (treats blogs & peer-reviewed papers identically) |
+| **User Visibility** | Sources shown; users can verify | Sources hidden; LLM synthesizes answer directly |
+| **Risk** | Lower | High: "Garbage in, garbage out" amplified by confident LLM tone |
+
+**Proposed solution: Learning to Rank (LTR)**
+
+LTR is a supervised ML approach that ranks documents using multi-dimensional features:
+- **Feature set:** Source reputation, domain authority, user engagement (clicks, dwell time), freshness/recency, citation count, PageRank, vector similarity score, BM25 score
+- **Training pipeline:** Collect query-document pairs with relevance labels → Extract features → Train model (XGBoost/LambdaMART) to optimize NDCG/MAP → Deploy to re-rank candidates
+- **Why XGBoost:** Provides feature importance metrics, models complex feature interactions, handles diverse data types, fast inference for production
+
+> *"The click signal is gold... If users consistently click on and spend time with certain documents for particular query types, that's powerful implicit feedback about what's truly useful."*
+
+**Query Routing + Specialized Indices architecture:**
+- `Recency Index` → Optimized for timeline/recent event queries
+- `High-Authority Index` → Contains only vetted/official sources
+- `Hybrid Index` → BM25 + vector search
+- **Router** → Analyzes query intent and directs to optimal index
+
+Industry examples: Bing/Google SGE (massive-scale RAG with LTR trained on billions of interactions), Perplexity.ai (explicitly leverages BM25 and domain authority alongside semantic search).
 
 **Context Engineering — The Future of RAG**
 
