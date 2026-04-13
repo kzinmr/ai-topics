@@ -92,6 +92,11 @@ Unlike many AI researchers, Hotz is **skeptical of AI safety concerns**:
 - **Anti-bloat software engineering** — Proving that minimal, elegant solutions can compete with complex systems
 - **Contrarian AI safety views** — Skepticism toward centralized AI governance and alignment research
 - **tiny corp expansion** — Building a small team to continue developing open-source AI infrastructure
+- **OpenAI response (Apr 2026)** — Published "OpenAI is nothing without its people" as a response to Sam Altman's blog, arguing for open-source AI and against "neofeudalism" of closed labs
+- **Molochian tragedy of the commons** — Fears not "great men" but the accumulation of small self-interested decisions that degrade collective outcomes
+- **Closed Source AI = Neofeudalism (Mar 2026)** — Argued that API access without weight sharing is feudalism; "Science never credits the first guy who came up with an idea, it credits the guy who published"
+- **Every minute you aren't running 69 agents (Mar 2026)** — Walked back hype rhetoric: "AI is not a magical game changer, it's simply the continuation of exponential progress"
+- **Two Worlds (Mar 2026)** — Capability vs. value distinction: "AI can keep getting better super fast, but the value of anything it produces by itself is low"
 
 ## Related
 

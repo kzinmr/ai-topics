@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-13 (+8 browser agent entities + Death of Browser + Anthropic Cookbooks: 4 concept pages)
+Last updated: 2026-04-13 (4/11-12 inbox triage: neurosymbolic AI, open model consortium, AI coding agent criticism)
 
 ## Entity Pages (45)
 
@@ -222,7 +222,14 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 - [[concepts/ai-agent-traps]] — AI Agent Traps
 
-### AI Infrastructure & Hardware
+- [[concepts/neurosymbolic-ai]] — Neurosymbolic AI (combining neural networks with symbolic reasoning)
+
+- [[concepts/ai-coding-agent-criticism]] — AI Coding Agent Criticism (Center Has a Bias thesis)
+
+### Open Source AI & Ecosystem
+- [[concepts/open-model-consortium]] — Open Model Consortium (Nemotron, Marin, Arcee)
+
+### AI Safety & Alignment
 
 - [[concepts/compute-scaling-bottlenecks]] — Compute Scaling Bottlenecks (Dylan Patel)
 
@@ -297,3 +304,7 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 ### AI Infrastructure & Open Source
 
 - [[entities/george-hotz|George Hotz]] (@geohot) — comma.ai founder, tinygrad creator. "All compute is equal", open-source GPU driver
+
+### Open Source AI & Consortium
+
+- [[entities/nathan-lambert|Nathan Lambert]] — Interconnects AI blogger. Open model consortium dynamics, Nemotron Coalition analysis

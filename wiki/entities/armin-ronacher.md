@@ -69,6 +69,7 @@ Ronacher's technical philosophy — simplicity, developer-first design, and prag
 | 2026-01-14 | Ported **MiniJinja** from Rust to Go using AI agents (Opus 4.5 + GPT-5.2 Codex) in ~45 minutes of active human time; the agent ran for 10 hours, 2,698 messages, 1,386 tool calls, $60 API cost |
 | 2026-01-27 | Announced founding of **Earendil** with co-founder Colin; incorporated as a PBC (Public Benefit Corporation) |
 | 2026-04-08 | **Earendil** acquired **Pi** (Mario Zechner's minimal coding agent); announced **Lefos**, a new kind of entity designed to be both capable and trustworthy |
+| 2026-04-11 | Published "**The Center Has a Bias**" — analysis of how discussions about AI coding agents are polarized, arguing that the "center" is biased toward engagement because crossing the threshold of use selects for curiosity |
 | 2026 | Flask reaches 71k+ GitHub stars with 70M+ monthly PyPI downloads |
 
 ## Core Ideas
@@ -166,7 +167,8 @@ Ronacher's technical philosophy — simplicity, developer-first design, and prag
 
 ## Related Concepts
 
-[[entities/david-cramer]] (Sentry co-founder), [[entities/charlie-marsh]] (Astral/uv/ruff), [[entities/mario-zechner]] (Pi/libGDX), [[entities/colin]] (Earendil co-founder), [[concepts/flask]], [[concepts/jinja2]], [[concepts/werkzeug]], [[concepts/sentry]], [[concepts/rust]], [[concepts/python-packaging]], [[concepts/ai-agents]], [[concepts/agentic-coding]], [[concepts/minijinja]], [[concepts/snapshot-testing]], [[concepts/rye]], [[concepts/earendil]], [[concepts/pi-coding-agent]], [[concepts/lefos]], [[concepts/pygments]]
+- [[concepts/ai-coding-agent-criticism]] — "The Center Has a Bias" thesis on engagement vs. abstract criticism
+- [[entities/mario-zechner]] (Pi/libGDX), [[entities/colin]] (Earendil co-founder), [[concepts/flask]], [[concepts/jinja2]], [[concepts/werkzeug]], [[concepts/sentry]], [[concepts/rust]], [[concepts/python-packaging]], [[concepts/ai-agents]], [[concepts/agentic-coding]], [[concepts/minijinja]], [[concepts/snapshot-testing]], [[concepts/rye]], [[concepts/earendil]], [[concepts/pi-coding-agent]], [[concepts/lefos]], [[concepts/pygments]]
 
 ## Sources
 
@@ -188,6 +190,7 @@ Ronacher's technical philosophy — simplicity, developer-first design, and prag
 - https://lucumr.pocoo.org/2025/6/10/genai-criticism/ — "GenAI Criticism and Moral Quandaries"
 - https://lucumr.pocoo.org/2025/11/21/agents-are-hard/ — "Agent Design Is Still Hard"
 - https://lucumr.pocoo.org/2026/1/14/minijinja-go-port/ — "Porting MiniJinja to Go With an Agent"
+- https://lucumr.pocoo.org/2026/4/11/the-center-has-a-bias/ — "The Center Has a Bias"
 - https://lucumr.pocoo.org/2026/1/27/earendil — "Colin and Earendil"
 - https://lucumr.pocoo.org/2024/2/15/rye-grows-with-uv/ — "Rye Grows With UV"
 - https://lucumr.pocoo.org/projects/ — Projects page
