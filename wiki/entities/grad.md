@@ -1,10 +1,11 @@
 ---
-title: "Grad (@Grad62304977)"
+title: "Fares Obeid (@Grad62304977)"
 created: 2026-04-10
-updated: 2026-04-10
-tags: [person, x-account, ml-researcher, nanogpt-speedrun, smollm2, transformer-architecture, optimization]
-aliases: ["@Grad62304977", "Grad"]
+updated: 2026-04-14
+tags: [person, ml-researcher, nanogpt-speedrun, transformer-architecture, optimization, rwkv, prime-intellect, imperial-college]
+aliases: ["@Grad62304977", "Grad", "Fares Obeid", "Fareso", "faresobeid"]
 source: x-account
+status: enriched
 ---
 
 # Grad (@Grad62304977)

@@ -299,9 +299,13 @@
    286|||- [[entities/nader-dabit|Nader Dabit]] (@dabit3) — Cognition Growth Engineer. Cloud Agent Thesis. "Engineering for Agents That Never Sleep" — 70/30 human→agent trigger ratio inverting to 10/90. AWS→Aave→Eigen→Cognition. Substack (1.7K+).
    287|||- [[entities/walden-yan|Walden Yan]] — Cognition Co-Founder & CPO. IOI 2020 Gold Medalist. "Don't Build Multi-Agents" — context continuity beats parallelism. Context Engineering principles. MIT PRIMES (cryptography, ML). Harvard CS.
    288|
-   289|### AI Memory & Context Systems
-   290|
-   291|- [[entities/shlok-khemani|Shlok Khemani]] (@shloked) — Writer & programmer. AI memory systems, multi-agent orchestration (OpenPoke), background coding agents (Vajra), cache-first engineering philosophy. "Personality ≠ Execution" pattern for AI assistants.
+### Information Retrieval & RAG
+
+- [[entities/benjamin-clavi|Benjamin Clavié]] (@bclavie) — Mixedbread ML R&D / NII Tokyo PhD. RAGatouille creator (3.9k★), ModernBERT co-lead (5.5k★). "ColBERT is a semantic keyword matcher." JaColBERT, mxbai-edge-colbert-v0, Wholembed v3. Late Interaction Workshop @ ECIR 2026 organizer.
+
+### AI Memory & Context Systems
+
+- [[entities/shlok-khemani|Shlok Khemani]] (@shloked) — Writer & programmer. AI memory systems, multi-agent orchestration (OpenPoke), background coding agents (Vajra), cache-first engineering philosophy. "Personality ≠ Execution" pattern for AI assistants.
    292|
    293|### Memory & Context Systems
    294|

@@ -1,3 +1,26 @@
+## 2026-04-15 — Benjamin Clavié Entity L3 confirmed, index.md updated
+
+### Updated Entity Pages
+- **[[entities/benjamin-clavi]]** → L3 depth already confirmed. Page covers:
+  - RAGatouille (3.9k★) creator, ModernBERT co-lead (5.5k★), Mixedbread ML R&D, NII Tokyo PhD
+  - Core philosophy: "ColBERT is a semantic keyword matcher", "Retrieval is the bottleneck of practical AI"
+  - 8 detailed Core Ideas sections with direct quotes (>30% quote rate achieved)
+  - JaColBERT, mxbai-edge-colbert-v0, Wholembed v3 (Recall@5 92.45, surpassing BM25)
+  - Late Interaction Workshop @ ECIR 2026 organizer, Mixedbread Search agentic search
+  - Complete career timeline (2017-2026), influence metrics, key quotes, related entities
+  - Health/productivity philosophy ("Working While Sick")
+- **wiki/index.md** — Added "Information Retrieval & RAG" section with Benjamin Clavié entry
+
+### Key Insights
+- **"Semantic keyword matcher"** — Clavié's most powerful framing: ColBERT isn't dense retrieval, it's TF-IDF with neural semantics
+- **BM25 surpassing is possible** — Wholembed v3 achieves Recall@5 92.45 vs BM25's 85.7 on LIMIT benchmark
+- **Agentic search** — Mixedbread Search optimizes for AI agent queries (sub-90ms latency), not human-written queries
+- **Open IR community** — Clavié advocates for the same open growth NLP/LM experienced, applied to Information Retrieval
+- **ML democratization** — "ML is infrastructure now" — bridging research-practice gap through open-source toolchains
+- **Small model philosophy** — 17M params outperforming ColBERTv2, challenging "bigger is better" narrative
+
+---
+
 ## 2026-04-14 — Ali Farhadi Entity Enriched to L3 Depth
 
 ### Updated Entity Pages
