@@ -1,3 +1,26 @@
+## 2026-04-15 — gm8xx8 Entity L3 enrichment, index.md updated
+
+### New/Updated Entity Pages
+- **[[entities/gm8xx8]]** → Upgraded from skeleton to L3 depth. Page covers:
+  - Pseudonymous AI infrastructure researcher with 132K Farcaster followers, 7K X followers
+  - cuLA (CUDA linear attention kernels) contributor — targeting Blackwell SM10X, Hopper SM90
+  - MiroMindAI ecosystem contributor (trace-blame, MiroEval, MiroRL)
+  - Active across 10+ OSS projects: capgym, GLM-skills, DIAL, MyPhoneBench, varex-bench
+  - Core philosophy: efficiency-first architectures, attention alternatives (FFT, linear, M2RNN), KV cache optimization
+  - HuggingFace activity: M2RNN/GDN model evaluation, 14 models liked in open-lm-engine collection
+  - "Practitioner-researcher" pattern: surfacing papers → technical analysis → code contributions
+  - Related entities: xjdr, Grad, karpathy, Chaofan Yu (cuLA lead), Max Fu (capgym)
+- **wiki/index.md** — Added gm8xx8 to "AI Infrastructure & Open Source" section, updated entity count to 64
+
+### Key Insights
+- **Signal filter role** — gm8xx8 acts as a critical information filter for ML systems community
+- **Attention alternatives focus** — Consistent engagement with non-quadratic attention (FFT, linear, delta networks)
+- **Agent-native infrastructure** — trace-blame explicitly designed for Claude Code/agent consumption with install-skill
+- **Pseudonymous impact** — No public real name or personal website, yet 132K Farcaster followers
+- **Cross-stack contributor** — From CUDA kernels (lowest level) to robot manipulation benchmarks (highest level)
+
+---
+
 ## 2026-04-15 — Benjamin Clavié Entity L3 confirmed, index.md updated
 
 ### Updated Entity Pages

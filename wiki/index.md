@@ -2,9 +2,9 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-     5|Last updated: 2026-04-14 (AI leaders entity pages: LeCun, Fei-Fei Li, Goodfellow + previous batch)
+     5|Last updated: 2026-04-14 (gm8xx8 L3 enrichment)
      6|
-     7|## Entity Pages (63)
+     7|## Entity Pages (64)
      8|
      9|- [[entities/adam-rosenthal]] — Adam Rosenthal
     10|
@@ -338,6 +338,7 @@
    308|### AI Infrastructure & Open Source
    309|
    310|- [[entities/george-hotz|George Hotz]] (@geohot) — comma.ai founder, tinygrad creator. "All compute is equal", open-source GPU driver
+- [[entities/gm8xx8|gm8xx8]] (@gm8xx8) — AI infrastructure researcher. cuLA CUDA kernels, MiroMindAI contributor, linear attention & M2RNN analysis. 132K Farcaster followers.
    311|
    312|### AI Research & Computer Vision
    313|
