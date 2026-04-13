@@ -8,8 +8,8 @@ depth_tracking:
   last_updated: 2026-04-13
 related_people:
   - Karthik Narasimhan (PhD advisor, Princeton)
-  - Omar Khattab (Stanford/MIT, ColBERT, RLM co-author of Alex Zhang)
-  - Tim Kraska (MIT CSAIL, RLM co-author of Alex Zhang)
+  - Omar Khattab (Stanford/MIT, ColBERT, RLM co-author with Zhang & Kraska)
+  - Tim Kraska (MIT CSAIL, RLM co-author with Zhang & Khattab)
   - Alex Zhang (RLM, overlapping scaffold/environment ideas)
   - Noah Shinn (Reflexion co-author, now at Sierra)
   - Theodore Sumers (CoALA co-author)
@@ -228,8 +228,8 @@ Prime Intellect (building on both researchers' work) captures the synthesis:
 - **[[tau-bench]]** — Tool-Agent-User interaction benchmark
 - **[[Computer-Using Agent]]** — Yao's current work at OpenAI
 - **[[Agent-Computer Interfaces]]** — Designing environments for agents
-- **[[RLM (Recursive Language Models)]]** — Zhang's parallel work on environment-first context
-- **[[Scaffold vs RL Debate]]** — Yao and Zhang both argue for trained scaffolds
+- **[[Scaffold vs RL Debate]]** — Yao argues for environment-first RL design
+- **[[RLM (Recursive Language Models)]]** — Zhang/Khattab/Kraska's parallel work on environment-first context management
 - **[[The Second Half]]** — Yao's philosophical framework for AI's future
 
 ## Status
