@@ -7,7 +7,7 @@ metadata:
     tags: [wiki, research, depth-analysis, opinion-leaders, quality-control]
     homepage: https://github.com/kzinmr/ai-topics
 prerequisites:
-  skills: [blog-author-thought-analysis, wiki-entity-upgrade]
+  skills: [blog-author-thought-analysis, wiki-entity-upgrade, cross-leader-synthesis]
 ---
 
 # Opinion Leader Depth Analysis Framework
