@@ -2,9 +2,9 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-13 (Claude Mythos Preview, Meta Muse Spark, AI Digital NATO, Anthropic-OpenClaw, illusion of thinking, Peter Steinberger)
+Last updated: 2026-04-13 (Claude Mythos Preview, Meta Muse Spark, AI Digital NATO, Anthropic-OpenClaw, illusion of thinking, Peter Steinberger enriched, Ali Farhadi enriched, Shlok Khemani enriched)
 
-## Entity Pages (46)
+## Entity Pages (49)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 
@@ -288,7 +288,7 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 ### AI Memory & Context Systems
 
-- [[entities/shlok-khemani|Shlok Khemani]] (@shloked) — Writer & programmer. AI memory systems analyst, competitive analysis of ChatGPT/Claude/Cognition memory architectures
+- [[entities/shlok-khemani|Shlok Khemani]] (@shloked) — Writer & programmer. AI memory systems, multi-agent orchestration (OpenPoke), background coding agents (Vajra), cache-first engineering philosophy. "Personality ≠ Execution" pattern for AI assistants.
 
 ### Memory & Context Systems
 
@@ -309,10 +309,14 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 - [[entities/george-hotz|George Hotz]] (@geohot) — comma.ai founder, tinygrad creator. "All compute is equal", open-source GPU driver
 
+### AI Research & Computer Vision
+
+- [[entities/ali-farhadi|Ali Farhadi]] — YOLO co-creator, Xnor.ai→Apple, former Ai2 CEO → Microsoft. "Open source is how we drive progress." OLMo, Molmo, Dolma.
+
 ### Open Source AI & Consortium
 
 - [[entities/nathan-lambert|Nathan Lambert]] — Interconnects AI blogger. Open model consortium dynamics, Nemotron Coalition analysis
 
 ### AI Agent Platforms & Developer Tools
 
-- [[entities/peter-steinberger|Peter Steinberger]] (@steipete) — OpenClaw creator. Joined OpenAI Feb 2026. "Agent-first design" advocate.
+- [[entities/peter-steinberger|Peter Steinberger]] (@steipete) — OpenClaw creator, former PSPDFKit CEO. AI-native solo builder shipping 600+ commits/day via 5-10 parallel agents. Joined OpenAI Feb 2026. "Agent-first design" advocate, "Ship beats perfect" philosophy.

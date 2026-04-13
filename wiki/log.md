@@ -6,6 +6,49 @@ title: "Wiki Change Log"
 
 ## 2026-04-13
 
+### Entity Page Enrichments (skeleton → L2/L3)
+
+#### Ali Farhadi (skeleton → L2)
+- **Bio**: YOLO co-creator, Xnor.ai founder (→Apple $200M), Ai2 CEO (2023-2026) → Microsoft (Mustafa Suleyman's AI team)
+- **Core Ideas**: Open-source AI as default ("Open source is how we drive progress"), financial reality of frontier AI, real-time object detection philosophy, multimodal AI grounding
+- **Contributions**: YOLO (80K+ citations), OLMo (#1 open model on HF Heatmap), Molmo, Dolma (5.9T tokens), OlmoTrace
+- **Philosophy**: Simplicity over complexity, transparency as prerequisite for progress, real-world applicability
+- **Sources**: homes.cs.washington.edu/~ali/, GeekWire articles on Ai2/Microsoft moves
+
+#### Peter Steinberger (skeleton → L3)
+- **Bio**: Austrian developer, PSPDFKit founder (1B+ device deployments, exited 2020), OpenClaw creator (135K+ instances), joined OpenAI Feb 2026
+- **Core Ideas**: "Ship beats perfect" philosophy, "I don't read code anymore, I weave it", closed loop principle (compile→run→test), PRs = "Prompt Requests", polyagentmorous development (5-10 parallel agents)
+- **Tooling Ecosystem**: OpenClaw, VibeTunnel, CodexBar, Peekaboo, mcporter, gogcli, agent-rules, Aspects (8.4K stars)
+- **Anthropic-OpenClaw Conflict**: April 2026 policy dispute over third-party tools; account suspended then restored
+- **Philosophy**: Agent-first design, CLI over MCP, cache-first engineering, main-branch development
+- **Sources**: steipete.me, thewantrepreneurshow.com interview, GitHub (@steipete, 46K+ followers)
+
+#### Shlok Khemani (skeleton → L2)
+- **Bio**: Writer/programmer in Gurgaon, India. Researching personal AI and memory systems. Previously at Decentralised.co (crypto products)
+- **Core Ideas**: Bitter Lesson applied to AI memory (ChatGPT's context-only approach), filesystem-first memory (Claude's CLAUDE.md vs ChatGPT's hidden profiles), personality ≠ execution separation (OpenPoke), cache-first engineering
+- **Contributions**: OpenPoke (465 stars, multi-agent Poke replica), Claude Memory Tools (53 stars), Vajra (background coding agent), ChatFerry, Conjure
+- **Writing**: ChatGPT Memory reverse-engineering (widely cited), Anthropic Memory Bet analysis, Claude Code source analysis
+- **Philosophy**: Personality ≠ Execution, Filesystem over Database, Cache-First Design, Background Execution, Transparency over Opacity
+- **Sources**: shloked.com, GitHub (@shlokkhemani)
+
+### Concept Pages Added (from entity enrichments)
+- `concepts/open-claw-ecosystem` — Peter Steinberger's OpenClaw framework
+- `concepts/chatgpt-memory-bitter-lesson` — Shlok Khemani's ChatGPT memory analysis
+- `concepts/claude-memory` — Claude's file-based memory architecture
+- `concepts/claude-memory-tool` — Cognition copying Claude's memory approach
+- `concepts/claude-code-source-patterns` — Leaked Claude Code source analysis
+- `concepts/vajra-background-agent` — Vajra open-source background coding agent
+- `concepts/olmo-open-language-model` — Ali Farhadi's OLMo project at Ai2
+
+### Updated Files
+- `wiki/entities/ali-farhadi.md` — skeleton → L2 (7KB)
+- `wiki/entities/peter-steinberger.md` — skeleton → L3 (7.4KB)
+- `wiki/entities/shlok-khemani.md` — skeleton → L2 (9.6KB)
+- `wiki/index.md` — entity count 46→49, People section descriptions updated, AI Research & Computer Vision section added
+- `wiki/log.md` — This entry
+
+## 2026-04-13
+
 ### Anthropic Cookbooks — Claude Agent SDK & Managed Agents (4件)
 Anthropic Cookbookから実用的なエージェント設計パターンを抽出し、概念ページとして整理。特にClaude Codeの検証済みユースケースをサーバーサイド自動化フローに転用する設計に焦点。
 - **claude-agent-sdk-sre-patterns.md** — MCPサブプロセス統合、3層安全ガードレール（ディレクトリ制限/コマンドAllowlist/PreToolUseフック）、自律的インシデント対応ワークフロー
