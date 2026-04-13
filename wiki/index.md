@@ -2,7 +2,7 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-     5|Last updated: 2026-04-14 (Ali Farhadi entity L3 enrichment)
+     5|Last updated: 2026-04-14 (Mitchell Hashimoto entity L3 enrichment confirmed)
      6|
      7|## Entity Pages (55)
      8|
