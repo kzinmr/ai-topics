@@ -2,9 +2,9 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-Last updated: 2026-04-15 (Sero entity page enriched to L3 depth)
+Last updated: 2026-04-15 (Hugo Bowne-Anderson entity page created, L3 depth)
 
-## Entity Pages (66)
+## Entity Pages (67)
      8|
      9|- [[entities/adam-rosenthal]] — Adam Rosenthal
     10|
@@ -46,7 +46,8 @@ Last updated: 2026-04-15 (Sero entity page enriched to L3 depth)
     46|- [[entities/geoffreylitt-com]] — Geoffrey Litt
 - [[entities/geohot-github-io]] — George Hotz
 - [[entities/georgi-gerganov]] — Georgi Gerganov
-- [[entities/gpjt]] — Giles Thomas
+|- [[entities/gpjt]] — Giles Thomas
+|- [[entities/hugo-bowne-anderson]] — Hugo Bowne-Anderson
     49|- [[entities/grantslatton-com]] — Grant Slatton
     50|- [[entities/gwern]] — Gwern Branwen
     51|- [[entities/herman-s-blog]] — Herman
@@ -314,6 +315,10 @@ Last updated: 2026-04-15 (Sero entity page enriched to L3 depth)
    286|||- [[entities/nader-dabit|Nader Dabit]] (@dabit3) — Cognition Growth Engineer. Cloud Agent Thesis. "Engineering for Agents That Never Sleep" — 70/30 human→agent trigger ratio inverting to 10/90. AWS→Aave→Eigen→Cognition. Substack (1.7K+).
    287|||- [[entities/walden-yan|Walden Yan]] — Cognition Co-Founder & CPO. IOI 2020 Gold Medalist. "Don't Build Multi-Agents" — context continuity beats parallelism. Context Engineering principles. MIT PRIMES (cryptography, ML). Harvard CS.
    288|
+### AI Education & Evaluation
+
+- [[entities/hugo-bowne-anderson|Hugo Bowne-Anderson]] (@hugobowne) — Independent AI educator & podcaster. Vanishing Gradients host. "Evaluation is the engine, not the afterthought." O'Reilly author: "Escaping POC Purgatory," "Beyond Prompt-and-Pray." Former Head of DevRel at Outerbounds (Metaflow) and Coiled. 6M+ learners via DataCamp. Evaluation-Driven Development, Structured Automation advocate.
+
 ### Information Retrieval & RAG
 
 - [[entities/benjamin-clavi|Benjamin Clavié]] (@bclavie) — Mixedbread ML R&D / NII Tokyo PhD. RAGatouille creator (3.9k★), ModernBERT co-lead (5.5k★). "ColBERT is a semantic keyword matcher." JaColBERT, mxbai-edge-colbert-v0, Wholembed v3. Late Interaction Workshop @ ECIR 2026 organizer.

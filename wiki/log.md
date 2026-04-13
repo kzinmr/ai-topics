@@ -1,3 +1,37 @@
+## 2026-04-15 — Hugo Bowne-Anderson Entity Page Created (L3 depth)
+
+### New Entity Pages
+- **[[entities/hugo-bowne-anderson]]** — Hugo Bowne-Anderson (@hugobowne): Independent AI educator, podcaster, consultant. Vanishing Gradients host. Page covers:
+  - Core Philosophy: "Evaluation is the engine, not the afterthought" — Eval-driven development for AI systems
+  - "Beyond Prompt-and-Pray" (O'Reilly, Jan 2025): Structured automation over runtime agent improvisation
+  - "Escaping POC Purgatory" (O'Reilly, Apr 2025): Eval-first methodology with synthetic data bootstrapping
+  - Vanishing Gradients Podcast: 72+ episodes with guests including Wes McKinney, Fei-Fei Li, Hamel Husain, Shreya Shankar, Samuel Colvin
+  - Career: Max Planck → Yale → DataCamp (30+ courses, 6M+ learners) → Coiled → Outerbounds (Metaflow) → Independent
+  - GitHub: 56 repos, top projects include deep-learning-from-scratch-pytorch (121★), building-with-ai (91★), build-your-own-deep-research-agent (64★)
+  - Maven course co-instructor with Stefan Krawczyk on "Building AI Applications"
+  - Conceptual frameworks: Traditional SDLC vs AI SDLC, Prompt-and-Pray vs Structured Automation, Eval Harness as Operating System
+
+### Updated
+- **wiki/index.md** — Added Hugo Bowne-Anderson to "AI Education & Evaluation" section, entity count to 67
+
+### Key Insights
+- **"You're not launching a product: You're launching a hypothesis."** — AI development requires experimental mindset
+- **Structured Automation over Prompt-and-Pray**: Business logic must be decoupled from conversational AI for production reliability
+- **POC Purgatory**: Teams build flashy LLM demos that never reach production due to nondeterminism and lack of structured validation
+- **Eval-First Methodology**: Start with ~50 manually written queries → bootstrap synthetic data → build automated eval harness → iterate via rejection analysis
+- **The "Agent Paradox"** (Ep. 66): Most productive enterprise AI systems aren't full agents — they're structured workflows with narrow scopes
+- **Connection to Harness Engineering**: Hugo's "Structured Automation" thesis directly aligns with Ryan Lopopolo's Harness Engineering — control and reliability trump autonomy
+
+### Sources
+- https://hugobowne.substack.com/ (Vanishing Gradients podcast/newsletter)
+- https://www.oreilly.com/people/hugo-bowne-anderson/ (O'Reilly author page)
+- https://github.com/hugobowne (GitHub)
+- https://hugobowne.github.io/ (Personal blog)
+- https://medium.com/@hugobowne (Medium)
+- https://www.linkedin.com/in/hugo-bowne-anderson-045939a5 (LinkedIn)
+
+---
+
 ## 2026-04-15 — Dax Raad Entity Page Created
 
 ### New Entity Pages
