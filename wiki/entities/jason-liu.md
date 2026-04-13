@@ -127,20 +127,37 @@ Liu identifies two systematic failures that plague RAG teams:
 
 > "About 90% of the time, teams implement complex retrieval paths and re-ranking systems when the real problem was bad input data."
 
-**The RAG Playbook — 8-Step Continuous Improvement Flywheel**
+**The RAG Playbook — Continuous Improvement Flywheel**
 
 From [The RAG Playbook](https://jxnl.co/writing/2024/08/19/rag-flywheel/):
 
+> "Too many teams focus on the wrong things. They obsess over generation before nailing search, implement RAG without understanding user needs, or get lost in complex improvements without clear metrics."
+
+> "Crawl Before You Walk: I've seen teams jump straight to end-to-end evaluations with LLM-generated responses. This is a mistake. Get your retrieval working first."
+
+The 9-step flywheel sequence:
+`Iteration → User Feedback Integration → Production Monitoring → System Improvements → Classification and Analysis → Real-World Data Collection → Fast Evaluations → Synthetic Data Generation → Initial Implementation`
+
 1. **Start with Synthetic Data** — Generate Q&A pairs from every chunk. Baseline recall should hit ~97%. "If your recall is 50%, that means half the time you're missing the relevant chunk entirely. No advanced prompt can fix that."
+   - Strategic value: Forces clarity on product goals before real data exists, enables lightning-fast evaluations (milliseconds vs. seconds per query), guides optimal embedding model & chunking strategy selection
+   - Team impact: Transforms stand-ups from vague updates to metric-driven progress (e.g., *"Improved recall by 5% by tweaking chunking strategy."*)
 2. **Avoid the Twin Biases** — Absence Bias and Intervention Bias (see above)
 3. **Segmentation & Failure Diagnosis** — Overall averages hide critical failures. A 70% recall might mask 5% recall on high-value multi-hop queries. Segment by topic, complexity, user role.
-4. **Structured Extraction & Multimodality** — "Don't rely on the LLM alone to interpret an image on the fly." Tables should never be chunked as raw text — store as actual DBs. Pre-extract image metadata via captioning models.
+   - **Inventory Problem vs Capability Problem:** Data missing entirely (uningested subfolder/DB column) vs data exists but can't be surfaced (needs better search, filtering, or metadata)
+4. **Structured Extraction & Multimodality** — "Don't rely on the LLM alone to interpret an image on the fly." Tables should not be chunked as raw text — store as actual DBs. Pre-extract image metadata via captioning models.
 5. **Query Routing & Specialized Indices** — When multiple searchers exist (vector, SQL, image, lexical), treat each index as a "tool" and use LLM function calling to route.
+   - Routing metrics: `Tool Recall` (% of queries correctly routed) and `Tool Precision` (% of tool calls actually necessary)
 6. **Fine-Tune Embeddings & Re-Rankers** — Domain-specific fine-tuning yields 10–30% recall boosts. Standard pipeline: quick vector search (Top K) → re-rank (cross-encoder) → pass top results to LLM.
 7. **Hybrid Search** — Full-text search (BM25) + vector search. "I found in practice that when I was doing tests against essays, full text search and embeddings basically performed the same, except full text search was about 10 times faster."
 8. **Close the Loop** — Deploy user feedback, track implicit signals (frustration patterns) alongside explicit ones (thumbs up/down), and feed back into synthetic data generation.
+9. **Leading Metrics Over Lagging Metrics** — Stop tracking overall app quality (lagging). Prioritize leading metrics that predict success: time to run eval suite, precision/recall improvements on synthetic data, number of retrieval experiments per week.
 
 > "Remember, the goal isn't to have a perfect system on day one. It's to build a flywheel of continuous improvement that compounds over time."
+
+**Practical Performance Metrics from Consulting:**
+- Multi-step RAG pipelines typically take `2–10 seconds` — streaming & interstitials are mandatory for UX
+- Expect `10–30% recall boost` by training embeddings/re-rankers on domain-specific triplets `(query, positive_chunk, negative_chunk)`
+- BM25 full-text search is ~10x faster than embeddings for exact-match queries, with comparable quality
 
 **The "Only 6 RAG Evals" Framework**
 
