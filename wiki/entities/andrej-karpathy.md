@@ -108,6 +108,16 @@ His YouTube series **"Neural Networks: Zero to Hero"** is one of the most popula
 - Culmination of micrograd → makemore → nanoGPT → microgpt progression
 - 4,192 parameters total — demonstrates that the full algorithmic content of an LLM fits in a tiny script
 - "I cannot simplify this any further" — Karpathy's statement on the script's minimalism
+- **Key insights from the project:**
+  - **Attention is token communication:** QKV projections where tokens "talk to" each other
+  - **MLP is where thinking happens:** 2-layer FFN (expand 4× → ReLU → contract) does the actual computation
+  - **RMSNorm > LayerNorm:** Simpler normalization without bias terms, equally effective
+  - **Residual connections enable depth:** `output = input + sublayer(LayerNorm(input))` prevents vanishing gradients
+  - **Next-token prediction is surprisingly powerful:** Loss drops from 3.3 (random) to 2.37 (pattern learning) in 1K iterations
+  - **Autograd from scratch:** Chain rule applied systematically — algorithmically identical to PyTorch's `.backward()`
+  - **Temperature controls creativity:** Low temp = conservative, high temp = diverse sampling
+- **Training data:** 32K names (character-level), vocabulary size 27 (26 letters + BOS token)
+- **Architecture:** Stateless function `gpt(token_id, pos_id, keys, values) → logits → softmax → next_token`
 
 ### autoresearch (2026)
 - AI agents running research experiments autonomously overnight on single-GPU nanochat setups
@@ -542,3 +552,4 @@ Future coding will resemble resource management games — setting up systems, de
 - [[computer-vision]] — PhD research area
 - [[simon-willison]] — Fellow AI educator and blogger
 - [[llm-education]] — Teaching LLMs from first principles
+- [[decoder-only-gpt]] — Complete GPT architecture explanation from microgpt
