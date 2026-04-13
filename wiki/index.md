@@ -2,7 +2,7 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-     5|Last updated: 2026-04-13 (DSPy concept page, LLM Integration Patterns comparison, Omar Khattab entity)
+     5|Last updated: 2026-04-13 (AI Organization concept hierarchy: Block hierarchy-to-intelligence, solo founder/Super IC, McKinsey Agentic Org + Fission-Fusion governance)
      6|
      7|## Entity Pages (54)
      8|
@@ -262,8 +262,15 @@
    260||- [[concepts/agent-team-swarm/managed-devins]] — Managed Devins (Cognition's conditional multi-agent)
    261||- [[concepts/closing-agent-loop]] — Closing the Agent Loop (Write→Catch→Fix→Merge)
    262||- [[concepts/ai-agent-engineering/context-anxiety]] — Context Anxiety (Sonnet 4.5 integration lessons)
-   263||- [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst (Devinをデータ分析エージェントにする設計)
-   264|
+|- [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst (Devinをデータ分析エージェントにする設計)
+
+### AI Organization (4)
+
+|- [[concepts/ai-organization/_index]] — AI Organization (階層からインテリジェンスへ、Solo Founder、Context as Moat)
+|- [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]] — Block: Hierarchy to Intelligence (Jack Dorsey)
+|- [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder & Super IC (Reddit/FourWeekMBA)
+|- [[concepts/ai-organization/ai-org-context-as-moat]] — Proprietary Context & Fission-Fusion (McKinsey/OrgPhysics)
+
 ## Comparison Pages (6)
 
 - [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks (LangGraph vs CrewAI vs AutoGen vs etc.)

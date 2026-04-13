@@ -260,6 +260,39 @@ Baleen introduced a **condensed retrieval** approach where LMs retrieve evidence
 
 ---
 
+## Philosophy: Decomposition at the Right Joints
+
+In 2026, Khattab articulated the unifying philosophy across all four of his major research contributions — a direct response to "bitter lesson maximalists" who believe only scale and compute matter:
+
+> *"A subtle thing that's worth observing is how all four are actually riffs on the same fundamental concept: decomposing something that the mainstream paradigm insists as treating as a monolith."*
+> — Omar Khattab (@lateinteraction), 2026
+
+The four "riffs" on decomposition:
+
+| Framework | What it Decomposes | Monolith it Replaces | Longevity |
+|-----------|-------------------|---------------------|-----------|
+| **Late Interaction (ColBERT)** | Document representations → sets of objects; similarity → compositional operations | Single-vector dense embeddings | 6.5+ years (2020–present) |
+| **DSPy** | Specification vs optimization; AI programs → symbolic modules with NL specs | Monolithic prompt debt | 3.5+ years (2023–present) |
+| **GEPA** | Learning signals → actual tokens + feedback (not scalar rewards) | Policy gradient RL rewards | Emerging (2025) |
+| **RLMs** | Hard problems → symbolic programs that invoke models; context → recursive access | Monolithic attention over massive contexts | Emerging (2025) |
+
+### Against Bitter Lesson Maximalism
+
+Khattab explicitly argues that decomposition, when done correctly, is **compatible with scaling** — not opposed to it:
+
+> *"I guess I failed to make that clear, but this is a post against the naive bitter lesson maximalists. You *can* and in fact *need* to win with decomposition. It's not against scale and does not need to expire with time. It's what enables scaling to go beyond brute force."*
+> — Omar Khattab, X post (2026)
+
+The key insight: **decomposition done poorly runs foul of the bitter lesson** (Sutton, 2019), but decomposition done at the *right fundamental joints* enables scaling to transcend brute force. All four of Khattab's frameworks have endured (6.5 years for ColBERT, 3.5 for DSPy) precisely because they decompose at natural architectural boundaries rather than imposing artificial structure.
+
+This philosophy connects directly to his PhD thesis: *"Making broad progress in AI is not restricted to training larger models, but can take the form of designing general tools that grant AI developers more control."*
+
+### Connection to Harness Engineering
+
+Khattab's decomposition philosophy aligns with Anthropic's Harness Engineering principle: **design the right scaffolding, don't just scale the model**. Both approaches recognize that the bottleneck is often *how we structure the interaction* between components, not the raw capability of any single component.
+
+---
+
 ## Key Quotes
 
 > *"Making broad progress in AI is not restricted to training larger models, but can take the form of designing general tools that grant AI developers more control."*
