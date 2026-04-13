@@ -2,7 +2,7 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-     5|Last updated: 2026-04-13 (AI leaders entity pages: Hinton, Altman, Schulman, Brockman, Sutskever, Sutton, Amodei, Huang)
+     5|Last updated: 2026-04-14 (AI leaders entity pages: LeCun, Fei-Fei Li, Goodfellow + previous batch)
      6|
      7|## Entity Pages (63)
      8|
@@ -346,6 +346,12 @@
    316|### Open Source AI & Consortium
    317|
    318|- [[entities/nathan-lambert|Nathan Lambert]] — Interconnects AI blogger. Open model consortium dynamics, Nemotron Coalition analysis
+
+### AI Research Pioneers
+
+|- [[entities/yann-lecun|Yann LeCun]] — Meta Chief AI Scientist. CNN inventor, 2018 Turing Award, JEPA/World Models, AMI Labs (2025)
+|- [[entities/fei-fei-li|Fei-Fei Li]] — Stanford Professor, ImageNet creator, World Labs CEO. Human-Centered AI pioneer, Spatial Intelligence
+|- [[entities/ian-goodfellow|Ian Goodfellow]] — GANs inventor, adversarial ML pioneer. Deep Learning co-author, Google Brain → Apple → DeepMind
    319|
 ### AI Agent Platforms & Developer Tools
 

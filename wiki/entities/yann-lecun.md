@@ -1,0 +1,120 @@
+---
+title: "Yann LeCun"
+description: "フランス系アメリカ人コンピュータサイエンティスト。CNNの発明者、2018年チューリング賞受賞者。Meta元チーフAIサイエンティスト、NYU教授。"
+type: "entity"
+status: "draft"
+tags: ["AI Researcher", "Deep Learning", "Computer Vision", "Meta", "NYU", "Turing Award"]
+related:
+  - "geoffrey-hinton.md"
+  - "yoshua-bengio.md"
+  - "juergen-schmidhuber.md"
+  - "andrew-ng.md"
+  - "fei-fei-li.md"
+  - "meta.md"
+  - "convolutional-neural-networks.md"
+  - "energy-based-models.md"
+sources:
+  - "https://grokipedia.com/page/Yann_LeCun"
+  - "https://yann.lecun.com/"
+  - "https://ai.meta.com/blog/yann-lecun-plans-exit-launch-startup-ft-reports-2025-11-11/"
+depth: L2
+---
+
+# Yann LeCun
+
+## 📌 基本プロフィール
+
+| 項目 | 内容 |
+|------|------|
+| **フルネーム** | Yann André LeCun |
+| **生年月日** | 1960年7月8日 |
+| **出生地** | ソワジー＝スー＝モンモランシー、フランス |
+| **国籍** | フランス系アメリカ人 |
+| **学歴** | ESIEE Paris（1983年、電気工学）、Université Pierre et Marie Curie（PhD、1987年） |
+| **所属** | NYU Silver Professor、Meta元チーフAIサイエンティスト（2013-2025） |
+| **現在の役職** | AMI Labsエグゼクティブチェアマン（2025年11月発表） |
+| **主な業績** | 畳み込みニューラルネットワーク（CNN）の発明、2018年ACMチューリング賞 |
+
+## 🎓 教育・初期の経験
+
+- **1983年**: ESIEE ParisよりDiplôme d'Ingénieur（電気工学）
+- **1984-1987年**: Université Pierre et Marie CurieでDEAおよびPhD取得
+  - 論文:「Modèles connexionnistes de l'apprentissage」（監督：Maurice Milgram）
+- **1987-1988年**: University of Torontoでポスドク研究員（Geoffrey Hintonのグループ）
+- **初期の影響**: 航空技術者だった父から実践的なものづくりを学ぶ。9歳頃に観た『2001年宇宙の旅』が知能システムへの関心のきっかけとなった。
+
+## 💼 経歴タイムライン
+
+| 期間 | 組織 | 役割・主要貢献 |
+|:---|:---|:---|
+| **1988-2002** | AT&T Bell Labs / AT&T Labs-Research | ニューラルネットワークを画像処理に応用。USPSメール仕分けや銀行小切手OCRにCNNを導入。画像処理研究部門長（1996-2002）。DjVu圧縮技術を共同開発。 |
+| **2002-2003** | NEC Laboratories America | フェロー。スケーラブルなMLをマルチメディア・コンピュータビジョンに応用。 |
+| **2003-現在** | New York University | 教授→Silver Professor（2008年）→Jacob T. Schwartz Chair。NYU Center for Data Scienceを設立（2013年）。大学全体のデータサイエンスイニシアチブを主導（2012-2014年）。ML、CV、自己教師あり学習を教育・指導。 |
+| **2013-2025** | Meta AI Research (FAIR) | 創設ディレクター→チーフAIサイエンティスト。FAIRをグローバルに拡大（パリ、モントリオール、ロンドン）。PyTorchの主要貢献者。MetaプラットフォームにAIを統合（レコメンデーション、モデレーション、バイアス緩和）。2025年11月、退職してAIワールドモデル企業を立ち上げることを発表。 |
+
+## 🔬 主要研究貢献
+
+### 畳み込みニューラルネットワーク（CNNs）
+
+- **アーキテクチャ**: Hubel & Wieselの哺乳類視覚皮質の構造に着想。畳み込み層、共有重み、プーリングを用いて位置・空間不変性を実現。
+- **学習**: バックプロパゲーションと確率的勾配降下法（SGD）によるエンドツーエンド最適化。
+- **影響**: 全結合ネットワークのスケーラビリティ・パラメータ効率の問題を解決。画像認識・コンピュータビジョンのベンチマークとなった。
+- **LeNet-5（1998年）**: 5層モデル、約6万パラメータ。MNIST手書き数字認識で99%超の精度を達成。AT&Tや銀行のチェック読み取りシステムに実装された。
+
+### エネルギーベースモデル（EBMs）と自己教師あり学習
+
+- **EBMs（2006年）**: データ構成にスカラーエネルギーを割り当て、教師あり/教師なし/半教師あり学習タスクにわたる依存関係を、明示的な確率正規化なしに捉える。
+- **JEPA（2022年）**: `Joint Embedding Predictive Architecture` – 非生成的な自己教師ありフレームワーク。マスクされたターゲットの潜在表現をエネルギー最小化で予測する。ピクセル再構成ではなく抽象的なワールドモデルに焦点。
+  - **拡張**: `V-JEPA`（ビジョン）、`VL-JEPA`（ビジョン-言語）
+  - **LeWorldModel（2026年3月）**: 1500万パラメータのJEPA。シンプルな2項損失で安定したトレーニングを実現。生のピクセル入力から単一GPUで`1秒未満`のフルプランニングを可能にする。
+
+### ソフトウェア・データセット・ツール
+
+- **Lush（1990年代）**: Léon Bottouと共同開発したオブジェクト指向Lisp方言。数値計算・MLのプロトタイピングを高速化。
+- **DjVu（1996年）**: テキスト/背景層を分離するウェーブレットベースのドキュメント圧縮。スキャン文書でJPEGより優位。
+- **NORBデータセット**: 様々な照明・ポーズ・クラッタ環境下のステレオ物体画像。階層的特徴学習と意味的不変性を前進させた。
+
+## 🏆 主要受賞歴・栄誉
+
+- **2018年**: ACM A.M. チューリング賞（Geoffrey Hinton、Yoshua Bengioと共同受賞）
+- **2023年**: Global Swiss AI Award
+- **2024年**: VinFuture Prize
+- **2025年**: クイーンエリザベス工学賞（7名の共同受賞者の一人）、NYAS初代トレイルブレイザー賞
+- **アカデミー会員**: 米国科学アカデミー（2017年）、米国国立科学アカデミー（2021年）、AAASフェロー、フランス科学アカデミー
+- **名誉博士号**: EPFL（2018年）、IPNメキシコ（2016年）、Université Côte d'Azur（2022年）、HKUST（2023年）、シエナ大学（2023年）、ジュネーブ大学（2024年）
+- **国家勲章**: レジオンドヌール勲章シュヴァリエ（2020年）
+
+## 💡 戦略的洞察・AIビジョン
+
+- **AI安全性と規制**: 「目的駆動型トレーニング」でリスクを緩和することを提唱。過度な規制がイノベーションを阻害する可能性を警告。
+- **LLM後のパラダイム**: 現在のLLMを「真の推論にはほぼ時代遅れ」と見なす。予測的で非生成的なワールドモデル（JEPA）を、人間的推論・時空間理解・ロボット計画への道筋として提唱。
+- **オープンソース**: オープンソースAI開発、グローバルな知識移転、透明なモデルデプロイメントの強力な推進者。
+- **2025年のキャリア転換**: Metaを退職し、AMI Labsを設立。エネルギーベース推論モデルによる次世代AIの実用化を目指す。
+
+## 📜 主要出版物・引用
+
+- **LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998).** "Gradient-based learning applied to document recognition." *Proceedings of the IEEE*, 86(11), 2278-2324. (100,000+ 引用)
+- **LeCun, Y., Beng al. (2015).** "Deep learning." *Nature*, 521(7553), 436-444. (100,000+ 引用)
+- **LeCun, Y. (2022).** "A Path Towards Autonomous Machine Intelligence." *OpenReview.*
+- **LeCun, Y. (2025).** "A Tutorial on Energy-Based Learning." *Meta AI Research.*
+
+## 🔗 関連人物・プロジェクト
+
+- **Geoffrey Hinton**: バックプロパゲーションの共同研究者。トロント大でポスドク時代に交流。
+- **Yoshua Bengio**: チューリング賞共同受賞者。深層学習のパイオニア。
+- **Jürgen Schmidhuysen**: CNNの先駆者。LeCunとは独立して類似のアーキテクチャを開発。
+- **Andrew Ng**: Google Brainで協力。深層学習の普及に貢献。
+- **PyTorch**: Meta FAIR時代に主要貢献。現在の深層学習フレームワークのデファクトスタンダード。
+- **ImageNet**: Fei-Fei Liが作成。LeCunのCNN研究の発展に大きく寄与。
+
+## ⚠️ 注目すべき出来事
+
+- **2025年11月**: Metaを退職し、AMI Labsを設立。エネルギーベース推論モデルによるAIの実用化を目指す。
+- **2025年**: クイーンエリザベス工学賞受賞。AI分野での長年の貢献が評価された。
+- **2024年**: VinFuture Prize受賞。CNNの開発が画像認識分野に革命をもたらしたことが評価された。
+
+---
+
+*最終更新: 2026年4月14日*
+*データソース: Grokipedia、Meta AIブログ、NYUプロフィール、学術論文*
+*深度: L2（基本プロフィール、経歴、研究貢献、受賞歴）→ L3へ升级予定（哲学、引用分析、概念的枠組み）*
