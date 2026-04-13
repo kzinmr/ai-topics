@@ -2,7 +2,7 @@
 title: "gm8xx8"
 handle: "@gm8xx8"
 created: 2026-04-10
-updated: 2026-04-14
+updated: 2026-04-16
 tags: [person, ml-infrastructure, llm-serving, cuda, systems-research, linear-attention, farcaster, web3]
 aliases: ["gm8xx8"]
 ---
@@ -191,3 +191,35 @@ This activity pattern confirms gm8xx8's focus on **efficiency-first architecture
 | Mar 2026 | Began contributing to InclusionAI/cuLA, MiroMindAI ecosystem |
 | Mar 2026 | Active in open-lm-engine M2RNN/GDN model evaluation (liked 13 models) |
 | Apr 2026 | cuLA v0.1.0 released; SGLang integration PR #22107 |
+| Apr 2026 | 29-paper curation batch: strong expansion into math/formal proofs, agentic systems (AgentFixer, Marco DeepResearch), 1-bit LLMs (Bonsai), VLA robotics, and embedding theory |
+
+## Recent Curation Analysis (April 2026 — 29 Papers)
+
+gm8xx8's latest paper curation batch reveals an **expanding scope** beyond pure ML systems efficiency into mathematical foundations and agentic infrastructure.
+
+### Cluster Breakdown
+
+| Cluster | Count | Key Papers | Signal |
+|---------|-------|-----------|--------|
+| **Evaluation & Data** | 5 | VideoZeroBench, ChartNet, VAREX, PruneFuse, DataFlex | Growing interest in systematic evaluation, data-centric training |
+| **Architecture & Training** | 4 | daVinci-LLM (science of pretraining), Transferable Hypersphere, No Static Vocabularies, Weight Tying Biases | Pretraining theory, vocabulary flexibility |
+| **Multimodal & Robotics** | 4 | LongCat-AudioDiT, LongCat-Next (discrete token modalities), Realtime-VLA V2, DIAL | VLA (Vision-Language-Action) models, tokenizing all modalities |
+| **Math & Formal Proofs** | 3 | Mathematical methods & human thought, Proofdoors/CDCL, Short proofs in combinatorics | New interest area: formal verification, mathematical reasoning |
+| **Embeddings & Retrieval** | 3 | Spectral Optimizers, Late Interaction Dynamics, Single-Vector Embeddings | Deepening work on retrieval architectures |
+| **Inference & Serving** | 3 | Loop Control TCPAs, Routing Polarization OCS, 1-bit Bonsai | Extreme quantization, GPU cluster networking |
+| **Reasoning & RL** | 2 | SKILL0 (Agentic RL), logπ→π (Soft Clipping) | RL for reasoning, skill internalization |
+| **Model Merging** | 2 | On merge-models, Preference-Aligned LoRA Merging | Model merging theory and practice |
+| **Agents & Systems** | 2 | AgentFixer, Marco DeepResearch | Agent failure recovery, verification-centric design |
+| **Kernel Optimization** | 1 | Kernel-Smith (Evolutionary Kernel Opt) | Continuation of kernel-level efficiency work |
+
+### Emerging Interest Signals
+
+1. **Math/Formal Proofs** (new cluster) — Three papers on mathematical reasoning, CDCL SAT solvers, and proof theory. This aligns with gm8xx8's contribution to LongCat-Flash-Prover (a math prover model) on HF and the `Lossfunk/Esolang-Bench` dataset like.
+
+2. **1-bit Quantization** — Bonsai whitepaper (PrismML) marks interest in extreme model compression. This is a natural extension of the efficiency-first philosophy: if linear attention reduces compute, 1-bit quantization reduces memory bandwidth.
+
+3. **VLA (Vision-Language-Action) Models** — Two robotics papers (Realtime-VLA V2, DIAL) plus continued DIAL (XPeng Robotics) contributions on GitHub. Suggests interest in grounding LLMs in physical action.
+
+4. **Agentic Failure Recovery** — AgentFixer paper (failure detection → fix recommendations) and Marco DeepResearch (verification-centric design) signal a shift from "how to build agents" to "how to make agents reliable."
+
+5. **Science of Pretraining** — daVinci-LLM and DataFlex suggest interest in making pretraining more principled and data-efficient rather than just scaling up.

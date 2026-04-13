@@ -1,3 +1,71 @@
+## 2026-04-15 — Dario Amodei, Mustafa Suleyman, Demis Hassabis Entity Pages Created (L3 depth)
+
+### New Entity Pages
+- **[[entities/dario-amodei]]** — Dario Amodei: Anthropic CEO & co-founder. Page covers:
+  - Princeton PhD in physics (statistical mechanics of neural circuits)
+  - OpenAI VP of Research (2016-2021): GPT-3, "Concrete Problems in AI Safety" (2016)
+  - Anthropic founding (2021) with Daniela Amodei and others
+  - Constitutional AI framework and Responsible Scaling Policy (RSP)
+  - Mechanistic interpretability as "MRI for AI"
+  - AI Safety Levels and board-level governance
+  - $380B valuation, 30B Series G funding
+  - Council on Foreign Relations keynote (March 2025)
+  - India AI Impact Summit (February 2026)
+  - Progressive taxation on AI-driven profits advocacy
+  - L3 depth: Thought analysis, quote density >30%
+
+- **[[entities/mustafa-suleyman]]** — Mustafa Suleyman: Microsoft AI CEO & 3x founder. Page covers:
+  - Working-class North London upbringing, Syrian immigrant family
+  - Oxford philosophy dropout, Muslim Youth Helpline co-founder
+  - DeepMind co-founder & CPO (2010-2019) with Hassabis & Legg
+  - Inflection AI co-founder (2022-2024) with Reid Hoffman
+  - Microsoft AI CEO (2024-present), reports to Satya Nadella
+  - "The Coming Wave" book (2023) - AI containment framework
+  - Applied ethics philosophy vs. temporary AI pauses
+  - AI consciousness warnings and "AI psychosis" concept
+  - Management style controversies (2019 administrative leave)
+  - CBE (2019), WTF Innovators Award (2023)
+  - L3 depth: Philosophical analysis, direct quotes, controversy coverage
+
+- **[[entities/demis-hassabis]]** — Sir Demis Hassabis: Google DeepMind CEO. Page covers:
+  - Chess prodigy (master by 13, Elo 2300), second-highest U14 globally
+  - Game development: Theme Park (Bullfrog, 1994), Black & White (Lionhead, 2001)
+  - Elixir Studios founder (2000-2005)
+  - Cambridge CS (Double First), UCL neuroscience PhD (hippocampus & episodic memory)
+  - DeepMind co-founder (2010) with Suleyman & Legg
+  - AlphaGo vs Lee Sedol (2016), AlphaGo Zero, AlphaZero
+  - AlphaFold 1/2/3 - protein structure prediction breakthrough
+  - Google acquisition (2014, ~£400M)
+  - Google DeepMind merger (2023), Gemini development
+  - AGI predictions (50% by 2030, "10x industrial revolution")
+  - 2024 Nobel Prize in Chemistry (shared with Jumper & Baker)
+  - Knighthood (2024), Companion of Honour (2023)
+  - NHS data privacy controversies
+  - L3 depth: Comprehensive career analysis, philosophical framework
+
+### Updated
+- **wiki/index.md** — Added three new entries to Frontier AI Leaders section, entity count to 70
+- L3 depth achieved for all three pages
+
+### Key Insights
+- **Different approaches to AI safety**: Amodei (Constitutional AI, RSP), Suleyman (applied ethics, containment), Hassabis (internal governance, empirical milestones)
+- **Gaming-to-AI pipeline**: Both Suleyman and Hassabis came through game development, reinforcing the connection between interactive systems and intelligence research
+- **Physics/neuroscience roots**: Amodei's physics PhD and Hassabis's neuroscience PhD show how non-CS backgrounds contribute unique perspectives to AI
+- **Three-way competition**: Amodei (Anthropic), Suleyman (Microsoft), and Hassabis (Google) represent three different paths to AGI development
+- **Ethical frameworks**: All three advocate for some form of AI safety governance, but with different implementations
+
+### Sources
+- Grokipedia: Dario Amodei, Mustafa Suleyman, Demis Hassabis
+- Anthropic publications and RSP documentation
+- DeepMind/Google DeepMind research papers
+- Nobel Prize in Chemistry 2024 announcement
+- Council on Foreign Relations, India AI Impact Summit keynotes
+- "The Coming Wave" (Suleyman & Bhaskar, 2023)
+- "Concrete Problems in AI Safety" (Amodei et al., 2016)
+- UCL Gatsby Unit publications (Hassabis PhD research)
+
+---
+
 ## 2026-04-15 — Hugo Bowne-Anderson Entity Page Created (L3 depth)
 
 ### New Entity Pages

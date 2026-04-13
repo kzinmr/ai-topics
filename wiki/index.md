@@ -2,9 +2,9 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-Last updated: 2026-04-15 (Hugo Bowne-Anderson entity page created, L3 depth)
+Last updated: 2026-04-15 (Dario Amodei, Mustafa Suleyman, Demis Hassabis entity pages created, L3 depth)
 
-## Entity Pages (67)
+## Entity Pages (70)
      8|
      9|- [[entities/adam-rosenthal]] — Adam Rosenthal
     10|

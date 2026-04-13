@@ -1,173 +1,151 @@
 ---
 title: "Scott Wu"
-type: entity
-tags: [cognition, devin, ceo, agentic-engineering, competitive-programming]
-aliases: ["scott-wu-cognition"]
-related:
-  - "concepts/cognition-devin-philosophy"
-  - "concepts/closing-agent-loop"
-  - "entities/walden-yan"
-  - "entities/nader-dabit"
-sources:
-  - "https://cognition.ai/blog/introducing-devin"
-  - "https://cognition.ai/blog/devin-2-2"
-  - "https://cognition.ai/blog/dont-build-multi-agents"
-  - "https://sfstandard.com/2026/03/24/grind-sf-startup-racing-build-ai-software-engineer/"
-  - "https://www.dwarkesh.com/p/dylan-patel"
-  - "https://www.youtube.com/watch?v=YwmQzWGyrRQ"
-  - "https://nader.substack.com/p/how-cognition-uses-devin-to-build"
-  - "https://x.com/scottwu46"
-updated: 2026-04-13
+handle: "@ScottWu46"
+created: 2026-04-16
+updated: 2026-04-16
+tags: [person, ai, coding-agents, developer-tools, startups]
+aliases: ["scott_wu", "Scott Wu"]
+depth: L2
 ---
 
-# Scott Wu (@scottwu46) — Cognition CEO & Co-Founder
+# Scott Wu
 
-| | |
-|---|---|
-| **Role** | CEO & Co-Founder, Cognition AI |
-| **Organization** | Cognition AI (formerly Cognition Labs) — applied AI lab building autonomous AI software engineers |
-| **Location** | San Francisco Bay Area |
-| **Born** | ~1996 (age 29 as of 2025) |
-| **Education** | Harvard University (Computer Science, dropped out after 2 years) |
-| **Notable Achievements** | 3× IOI Gold Medalist, Forbes 30 Under 30 (2019, for Lunchclub) |
-| **X/Twitter** | [@scottwu46](https://x.com/scottwu46) |
-| **LinkedIn** | [scottwu](https://linkedin.com/in/scottwu) |
-| **Years Active** | 2014 – Present |
+CEO and co-founder of **Cognition AI**, the company behind **Devin** — the world's first autonomous AI software engineer. Former competitive programming champion (3× IOI gold medals, 1st place in 2014).
 
-## Overview
+## Quick Facts
 
-Scott Wu is the CEO and co-founder of **Cognition AI**, the company behind Devin — widely recognized as the first production-grade autonomous AI software engineer. Wu is a former competitive programming prodigy who won **three gold medals at the International Olympiad in Informatics (IOI)**, and has built a company culture centered around elite technical talent and extreme execution speed.
+| Attribute | Detail |
+|-----------|--------|
+| Born | 1997, Louisiana, USA |
+| Education | Harvard University (Computer Science & AI; attended ~2 years, dropped out to found Lunchclub) |
+| Family | Older brother Neal Wu (also 3× IOI gold, ICPC silver, Google Code Jam 2nd place; works at Cognition AI) |
+| Parents | Chinese immigrant family |
+| Current Role | CEO & Co-founder, Cognition AI (Nov 2023–present) |
+| X/Twitter | @ScottWu46 |
 
-Under Wu's leadership, Cognition grew from a 10-person "nerdy group project" to a $10B+ company with offices in San Francisco, New York, Austin, and London, serving enterprise customers including Goldman Sachs, Citi, NASA, and Ramp.
+## Career Timeline
 
-Wu dropped out of Harvard after two years to pursue startup building, first co-founding the social platform **Lunchclub** (2019) before pivoting to AI with Cognition in late 2023.
+| Period | Role | Organization |
+|--------|------|-------------|
+| 2012–2014 | IOI competitor (3× Gold, 1st in 2014) | International Olympiad in Informatics |
+| 2014–2015 | Software Engineer | Addepar |
+| 2014–2016 | Harvard University (CS & AI) | Undergraduate |
+| 2016 | ICPC Gold (representing Harvard) | International Collegiate Programming Contest |
+| 2017–2022 | Co-founder & CTO | Lunchclub (AI-powered social networking) |
+| 2017 | Google Code Jam — 3rd place | Competitive programming |
+| 2020 | Forbes 30 Under 30 | For co-founding Lunchclub |
+| 2023–present | Co-founder & CEO | Cognition AI |
+| 2024 | Devin launched | World's first autonomous AI software engineer |
 
-## Timeline
+## Cognition AI & Devin
 
-| Date | Event |
-|------|-------|
-| ~2011–2014 | Wins 3 gold medals at International Olympiad in Informatics (IOI) |
-| 2014–2016 | Works at Addepar as a young software engineer |
-| 2016–2017 | Brief hiatus from competitive programming |
-| 2019 | Co-founds Lunchclub (social platform), recognized in Forbes 30 Under 30 |
-| Late 2023 | Co-founds Cognition AI with Steven Hao and Walden Yan |
-| Mar 2024 | Launches Devin 1.0 — first AI software engineer; achieves 13.86% on SWE-bench |
-| Apr 2024 | Raises $21M Series A led by Founders Fund |
-| 2025 | Grows to 40+ employees; publishes "Don't Build Multi-Agents" (Walden Yan) |
-| Nov 2025 | Wu publicly evaluates Claude Opus 4.5 — "stronger results on our hardest evals" |
-| Late 2025 | Cognition raises $400M at $10B+ valuation (Founders Fund-led) |
-| Feb 2026 | Nader Dabit joins Cognition as Growth Engineer |
-| Mar 2026 | Cognition merges 659 Devin PRs/week (up from 154 in 2025); profiled in SF Standard |
-| Apr 2026 | Acquires Codeium/Windsurf; Devin reaches general availability |
+### Company Background
 
-## Core Philosophy
+Cognition AI was co-founded by Scott Wu, Steven Hao, and Walden Yan in November 2023. The team is notable for its concentration of competitive programming talent — reportedly all members hold IOI gold medals. The company raised **$21M in Series A funding** from Peter Thiel's Founders Fund in early 2024.
 
-### "The Future of Software Engineering Is Telling Your Computer What to Build"
+As of 2025, Cognition has grown to ~30 employees and is valued at over **$4 billion**.
 
-Wu's philosophy centers on the belief that **AI should augment human engineers, not replace them**. He frames Devin as a "tireless, skilled teammate" rather than a replacement for developers:
+### Devin Product Vision
 
-> *"This would be a lot less fun for us to do if we thought that we were making ourselves irrelevant. We're working toward giving everyone their own buddy, Devin, who can go and build out their ideas for them into real software."* — SF Standard interview (Mar 2026)
+Devin is positioned as a **fully autonomous AI software engineer** — not a code completion tool, but an agent that can:
+- Build features end-to-end
+- Fix bugs autonomously
+- Test its own code
+- Make PRs for human review & merge
+- Integrate with Slack, Linear, and GitHub
 
-### Extreme Performance Culture
+Scott Wu's vision, articulated in the "Eventually, the Future Comes" post (April 2026):
 
-Cognition operates with what Wu describes as an **"extreme performance culture."** The company attracts competitive programming champions — the founding team collectively holds 10 IOI gold medals. Wu has said:
+> "The vision of Devin in 2024 was to give everyone an AI software engineer that could build features, fix bugs, test its own code, and make PRs that you could review & merge. Most folks in code were still focused on tab-complete, but we wanted to build for the future instead."
 
-> *"It's been a hackathon for like the last year and a half... one of the crazy things is we have a lot of people who came from this Olympiad background in math."* — American Optimist podcast
+### Key Metrics (as of April 2026)
 
-### Closing the Agent Loop
+| Metric | Value |
+|--------|-------|
+| Internal PRs (Cognition's best week 2025) | 154 Devin PRs merged |
+| Internal PRs (week of April 2026) | 659 Devin PRs merged |
+| Enterprise growth (last 13 months) | ~65x |
+| Enterprise adoption doubling period (2025) | Every ~2 months |
+| Enterprise adoption doubling period (early 2026) | Every ~6 weeks |
+| METR benchmark (Opus 4.6 / Codex 5.3) | 6+ hours of human work → <5 minutes (100x improvement vs 2024) |
 
-Wu enagents that handle the **full software development lifecycle** autonomously:
+### Product Evolution Timeline
 
-1. Write code
-2. Run tests and catch CI failures
-3. Autofix review comments
-4. Merge PRs without human intervention
+| Date | Milestone |
+|------|-----------|
+| Mar 2024 | Devin announced; $21M Series A from Founders Fund |
+| ~May 2024 | Devin driving significant PRs in Cognition's own codebase (2 months post-launch) |
+| ~Sep 2024 | First enterprise customer onboarded (6 months post-launch) |
+| 2025 | Manual onboarding of thousands of developers; enterprise usage doubling every ~2 months |
+| Apr 2026 | Major product update: 3x faster startup, improved Slack/Linear integrations, end-to-end testing with computer use, Devin Review with Autofix and GitHub comments |
 
-> *"Devin can now close the loop — no human needed for PR reviews."* — Devin 2.2 announcement
+### Philosophy: "Build for the Future, Eventually the Future Comes"
 
-> *"Eventually, the future comes."* — Devin 2.2 release tweet
+From Scott Wu's April 2026 post:
 
-### Alignment with Multi-Agent Skepticism
+> "We were very early (frankly too early) and only a few of the use cases that we envisioned were really possible at the time."
 
-Wu's public statements align closely with Walden Yan's "Don't Build Multi-Agents" thesis. The company favors **single-threaded agents with context continuity** over naive parallel agent architectures, though Cognition has developed a "conditional multi-agent" system ("Managed Devins") where a primary agent orchestrates subagents with full context traces.
+> "But it turns out that when you build for the future... eventually the future comes."
 
-## Background: Competitive Programming to AI
+> "The same form-factor that we always envisioned. Devin, but good."
 
-Wu's path to AI was unconventional. Growing up in **Baton Rouge, Louisiana** as the son of Chinese immigrants, he first gained attention with a national **Mathcounts championship** before dominating in competitive programming. His trajectory:
+Key principles:
+1. **Form-factor conviction** — async workflow, cloud VM, browser use, Slack/Linear/GitHub integrations (unchanged since 2024 vision)
+2. **Capability over UI** — focus on infrastructure and tooling to maximize model capabilities, not just UX polish
+3. **Iterative refinement** — "We've learned from our mistakes over the last couple years"
+4. **Enterprise-first adoption** — manual onboarding, gradual expansion from internal use to enterprise customers
 
-1. **Mathcounts national champion** → **3× IOI Gold** (one of the most decorated American competitive programmers)
-2. **Addepar** (2014–2016): Early professional experience at a fintech startup
-3. **Harvard University** (2016–2018): Studied Computer Science, but dropped out to build Lunchclub
-4. **Lunchclub** (2019–2023): Social networking platform, Forbes 30 Under 30 recognition
-5. **Cognition AI** (2023–present): Full-time focus on autonomous AI software engineering
+## Competitive Programming Background
 
-The competitive programming background deeply influences Cognition's engineering culture. Wu has repeatedly stated that the same skills that win IOI medals — **deep problem-solving, algorithmic thinking, and rapid iteration under constraints** — are the exact skills needed for building reliable AI agents.
+Scott Wu is one of the most decorated competitive programmers of his generation:
 
-## Cognition AI
+| Competition | Result | Year |
+|-------------|--------|------|
+| IOI (International Olympiad in Informatics) | 🥇 Gold (1st overall) | 2014 |
+| IOI | 🥇 Gold | 2013 |
+| IOI | 🥇 Gold | 2012 |
+| ICPC (representing Harvard) | 🥇 Gold (3rd overall) | 2016 |
+| Google Code Jam | 3rd place | 2021 |
+| Topcoder Open Algorithm | 3rd place | 2017 |
 
-### Founding Story
+## Cognition Team Culture
 
-Cognition began in late 2023 when Wu and two friends (Steven Hao, Walden Yan) recognized that two technological advances had converged:
+From the American Optimist podcast interview:
 
-1. **AlphaGo-style reinforcement learning** — showing AI could master complex tasks through trial and error
-2. **Transformer architecture** — enabling training on vast code and text corpora
+> "I feel like it's been a hackathon for like the last year and a half."
 
-They asked: *"Could a machine not just answer questions but take on tasks and complete them on its own?"*
+> "We have about 30 people on the team today and one of the crazy things is actually we have a lot of people [with competitive programming backgrounds]."
 
-### Devin: The AI Software Engineer
+The team is characterized by:
+- High concentration of competitive programming champions (IOI gold medalists)
+- Hackathon-like work culture
+- Math and programming competition networks as recruiting pipeline
+- Small, elite team (~30 people) driving outsized output
 
-Devin is Cognition's flagship product — an autonomous AI agent that can:
-- Plan and execute complex engineering tasks requiring thousands of decisions
-- Recall relevant context at every step and learn over time
-- Use a full sandboxed compute environment (shell, code editor, browser)
-- Collaborate with humans through real-time progress reporting and feedback
+## Related People
 
-**SWE-bench Performance:** In March 2024, Devin achieved **13.86%** on SWE-bench (unassisted), far exceeding the previous state-of-the-art of 1.96%. Even when given the exact files to edit, the best previous models resolved only 4.80%.
+| Person | Connection |
+|--------|-----------|
+| Steven Hao | Co-founder, Cognition AI |
+| Walden Yan | Co-founder, Cognition AI (LinkedIn: "Someone should give Devin a raise" post) |
+| Neal Wu | Older brother; 3× IOI gold medalist; works at Cognition AI |
+| Russell Kaplan | Cognition AI team (LinkedIn activity) |
+| David Morse | Cognition AI Enterprise GTM (LinkedIn activity) |
+| Kevin Scott | Liked Devin progress posts (LinkedIn activity) |
+| Peter Thiel | Founders Fund led $21M Series A |
 
-### Enterprise Adoption
+## External Appearances
 
-By April 2026, Devin is deployed at:
-- **Goldman Sachs** — piloting autonomous coding agents
-- **Citi** — rolling out Devin to 40,000+ developers
-- **Ramp** — using Devin for internal tooling
-- **Cal.com** — production use for feature development
-- **NASA** — research and prototyping
-- **Stripe** — 1,000+ agent-written PRs merged per week (with internal systems)
+| Date | Platform | Topic |
+|------|----------|-------|
+| 2025 | Lenny's Podcast | "Inside Devin: The world's first autonomous AI engineer that's set to write 50% of its company's code by end of year" |
+| 2025 | American Optimist Podcast | "From Math Prodigy to AI Genius: How Scott Wu Built Devin" |
+| Nov 2025 | Public statement | Evaluated Claude Opus 4.5: "provided stronger results on Cognition's most difficult evals" with consistent performance in 30-min autonomous coding sessions |
+| Apr 2026 | X/Twitter (@cognition) | "Eventually, the Future Comes" — Devin product update announcement |
 
-### Company Growth
+## See Also
 
-| Metric | 2024 | 2025 | 2026 |
-|--------|------|------|------|
-| Employees | ~10 | ~40 | 100+ |
-| Weekly PRs (Cognition internal) | — | 154 | 659 |
-| Valuation | ~$500M | ~$2B | $10B+ |
-| Offices | 1 (SF) | 2 (SF, NYC) | 4 (SF, NYC, Austin, London) |
-
-## Key Quotes
-
-> *"This would be a lot less fun for us to do if we thought that we were making ourselves irrelevant."* — On why AI agents won't make human engineers obsolete
-
-> *"Eventually, the future comes."* — Devin 2.2 announcement
-
-> *"Devin can now close the loop — no human needed for PR reviews."* — On autonomous development cycles
-
-> *"If you're not using AI, you are just slower."* — American Optimist podcast
-
-## Related
-
-- [[cognition-devin-philosophy]] — Cognition's approach to building AI agents
-- [[managed-devins]] — Conditional multi-agent architecture
-- [[closing-agent-loop]] — Full development cycle automation
-- [[entities/walden-yan]] — Cognition co-founder, context engineering advocate
-- [[entities/nader-dabit]] — Cognition growth engineer, cloud agent thesis
-
-## Sources
-
-- [Introducing Devin](https://cognition.ai/blog/introducing-devin) — Cognition AI (Mar 2024)
-- [Devin 2.2](https://cognition.ai/blog/devin-2-2) — Cognition AI (Sep 2025)
-- [Don't Build Multi-Agents](https://cognition.ai/blog/dont-build-multi-agents) — Walden Yan, Cognition AI (Jun 2025)
-- [Inside the grind: The SF startup racing to build an AI software engineer](https://sfstandard.com/2026/03/24/grind-sf-startup-racing-build-ai-software-engineer/) — SF Standard (Mar 2026)
-- [From Math Prodigy to AI Genius: How Scott Wu Built Devin](https://www.youtube.com/watch?v=YwmQzWGyrRQ) — American Optimist Podcast
-- [How Cognition Uses Devin to Build Devin](https://nader.substack.com/p/how-cognition-uses-devin-to-build) — Nader Dabit (Feb 2026)
-- [Engineering for Agents That Never Sleep](https://nader.substack.com/p/engineering-for-agents-that-never) — Nader Dabit (Mar 2026)
-- [The Cloud Agent Thesis](https://nader.substack.com/p/the-cloud-agent-thesis) — Nader Dabit (Feb 2026)
+- [[entities/devin]] — Devin AI software engineer product page
+- [[entities/cognition-ai]] — Cognition AI company page
+- [[concepts/agentic-engineering]] — Simon Willison's framework that describes tools like Devin
+- [[concepts/harness-engineering]] — Ryan Lopopolo's structured automation approach (contrasts with Devin's autonomous model)
