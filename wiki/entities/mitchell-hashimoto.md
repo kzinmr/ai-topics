@@ -52,6 +52,39 @@ The harness includes:
 - Structured feedback loops that turn agent mistakes into training data
 - Architectural constraints that make certain errors impossible
 
+### Building Block Economy — Software Composition in the AI Era
+
+Mitchell's April 2026 essay articulates a fundamental shift in how software should be built when AI agents are the primary consumers:
+
+> "The most effective way to build software and get massive adoption is no longer high quality mainline apps but via building blocks that enable and encourage others to build quantity over quality."
+
+Key insights:
+- **AI as assembly layer** — Agents excel at gluing together proven, well-documented components rather than building from scratch
+- **Outsourced R&D** — Maintainers observe working PoCs in the wild and cherry-pick the best ideas for mainline
+- **Reduced maintenance burden** — Provide the means to production, not the final product; easier to decline feature requests
+- **Open source advantage** — "Agents will more readily pick open and free software over closed and commercial"
+
+### Anti-Slop Pattern — Human-in-the-Loop Quality Control
+
+From the "Vibing a Non-Trivial Feature" post, Mitchell demonstrates a critical pattern:
+
+1. **Plan first** — Create a comprehensive plan interactively with an agent, save to spec.md
+2. **Execute via agent** — Let the agent fill in the details (Scaffold + TODO pattern)
+3. **Anti-slop session** — When agent gets stuck, step back, manually restructure, force deep understanding
+4. **Final manual review** — "Never ship AI-written code without a thorough manual review"
+
+This pattern ensures quality while maximizing the benefits of AI assistance. Mitchell's rule: **never ship code you don't understand**.
+
+### Transcription as External Memory
+
+Mitchell uses Wispr Flow (voice transcription) to narrate his thought process while coding, creating a searchable log of design decisions. This compounds over time as a form of "external working memory" that bridges sessions and prevents knowledge loss.
+
+### On Diminishing Returns in LLM Progress
+
+> "I don't see life-changing improvements anymore. The delta between models is getting smaller. You notice it, but it's not the same leap we saw before."
+
+The biggest gains now come from **workflow design** rather than model capability. Being able to consult a slower, more expensive model on demand rather than paying that cost for every little thing — that's where the real leverage is.
+
 ### The 6-Step AI Adoption Journey
 
 Mitchell documented his systematic path from AI skeptic to productive agent user:
@@ -194,6 +227,112 @@ Mitchell walked Richard Feldman through his actual AI-assisted workflow on a Gho
 ### Performance Work
 
 - **Render Thread Optimization** (Nov 2023, X post) — "Love doing highly targeted performance work. I've been working the past few days on changing the way the render thread in Ghostty reads the terminal data (which requires a lock that blocks IO). I've got lock held time down 2.4x so far."
+
+### "Vibing" a Non-Trivial Feature — Full Session Transparency (Oct 2025)
+
+Mitchell published a remarkably transparent account of shipping a real Ghostty feature using AI agentic coding tools. The feature: **unobtrusive macOS automatic update notifications** — triggered after a high-profile OpenAI keynote demo was rudely interrupted by a Ghostty update prompt.
+
+> "I recently shipped a non-trivial Ghostty feature that was largely developed with AI. I'm regularly asked to share non-trivial examples of how I use AI and agentic coding tools and this felt like a golden opportunity to walk through my process with a well-scoped, real-world, shipping feature. This post will share every single agentic coding session I had on the path to shipping this feature, unedited and in full."
+
+**Key workflow patterns demonstrated:**
+
+1. **Plan First, Code Second** — "Tip: Creating a comprehensive plan interactively with an agent is a really important first-step for anything non-trivial. I usually also save it out to something like `spec.md` and in future sessions I can say 'Consult the @spec.md and work on some task.'"
+
+2. **The "Anti-Slop Session"** — When AI gets stuck or produces messy code, Mitchell steps back and manually restructures. "I sometimes tongue-in-cheek refer to this as the 'anti-slop session'." He switched from optional-heavy struct to a tagged union pattern for the view model.
+
+3. **Scaffold + TODO Pattern** — "AI is very good at fill-in-the-blank or draw-the-rest-of-the-owl." Create the structure, leave TODOs, let the agent fill in.
+
+4. **Simulation Testing** — AI generates multiple test scenarios (happy path, errors, not found). This became a high-value use case.
+
+5. **Final Manual Review** — "Final manual review is super super super important. This probably shouldn't be a footnote, but I couldn't find a better place to emphasize it. Please don't ever ship AI-written code without a thorough manual review."
+
+**Cost & Time:** 16 sessions, $15.98 in token spend on Amp (using GPT-5.2-Codex), ~8 hours of wall-clock time over 3 calendar days. "I spent more than that in coffee shops in the two calendar days I spent on this feature."
+
+> "Many people on the internet argue whether AI enables you to work faster or not. In this case, I think I shipped this faster than I would have if I had done it all myself, in particular because iterating on minor SwiftUI styling is so tedious and time consuming for me personally and AI does it so well."
+
+### The Building Block Economy (Apr 2026)
+
+Mitchell's most recent philosophical essay marks a significant shift in how he views software development in the AI era. **Written entirely by hand, without AI assistance**, it articulates a new paradigm:
+
+> "The most effective way to build software and get massive adoption is no longer high quality mainline apps but via building blocks that enable and encourage others to build quantity over quality."
+
+**Key metrics cited:**
+- Ghostty: 1 million daily macOS update checks in 18 months
+- libghostty: Multiple millions of daily users in just 2 months
+- Similar trajectories: Pi Mono, Next.js, Tailwind
+
+> "AI is okay at building everything from scratch, but it is really good at gluing together high quality, well documented, and proven components. And, AI prefers to do this when it can unless explicitly prompted otherwise."
+
+**Strategic implications Mitchell identifies:**
+
+1. **Outsourced R&D** — Maintainers can observe working PoCs in the wild and cherry-pick the best ideas. "There's way less talk and way more walk."
+2. **Reduced Maintenance Burden** — Easier to decline feature requests since you provide the means to production, not the final product.
+3. **Lower Quality Bar for Niche Artifacts** — Niche implementations don't need to balance millions of use cases.
+4. **Mainline Becomes More Stable** — High-quality apps serve specific user groups while leveraging ecosystem-driven R&D.
+
+> "We have to accept that building blocks and software factories rule everything around us and accept and internalize the consequences of that. We can choose to run the other direction and create enclaves where we fight against it. Or we can choose to submit ourselves completely to the chaos."
+
+**On open source vs. commercial in the agentic era:**
+> "Agents will more readily pick open and free software over closed and commercial. At the time of writing this article, independent lab experiments confirm this trend."
+
+Mitchell acknowledges this creates a challenge for commercial software but notes the answer is nuanced and avoids prescribing definitive strategies without direct commercial product experience.
+
+### Ghostty Non-Profit Transition (Dec 2025)
+
+Ghostty is now fiscally sponsored by **Hack Club**, a registered 501(c)(3) non-profit. This represents a significant commitment to open-source sustainability:
+
+**Mitchell's rationale:**
+> "I want to lay bricks for a sustainable future for Ghostty that doesn't depend on my personal involvement technically or financially."
+
+> "I want to squelch any possible concerns about a 'rug pull'. A non-profit structure provides enforceable assurances: the mission cannot be quietly changed, funds cannot be diverted to private benefit, and the project cannot be sold off or repurposed for commercial gain."
+
+**Financial commitment:**
+- Mitchell's family donating $150,000 directly to Hack Club (separate from Ghostty)
+- $50,000 personal donation to Ghostty non-profit
+- 7% of donations go to Hack Club for administrative overhead
+- All financial transactions publicly viewable via Hack Club Bank ledger
+- **Zero** funds will go to Mitchell personally — legally guaranteed
+
+> "My ultimate goal with this initiative is to free Ghostty from its dependence on me, not just financially but eventually also as project lead and BDFL."
+
+Simon Willison noted on his blog: "I have been enjoying hitting refresh on the Hack Club Bank transactions throughout today and watching the number grow — it's up to $2,000 now which would fund 33 hours of contributor time based on Ghostty's announced $60/hour standard."
+
+Mitchell responded: "We're up to almost 200 paid developer hours at the time of posting this. Almost everyone who has given today is an individual. Individuals make a big difference."
+
+### libghostty — Embeddable Terminal Emulation (Sep 2025)
+
+Mitchell announced **libghostty**, a zero-dependency library extracted from Ghostty's production core:
+
+> "My answer to this is libghostty: a cross-platform, minimal dependency library that exposes a C API so feature-rich, correct, and fast terminal functionality can be embedded by any application anywhere."
+
+**Why it matters:** Hundreds of programs implement some form of terminal emulation — multiplexers (tmux, zellij), editors (JetBrains' jediterm, VS Code's xterm.js, Zed/Alacritty), web consoles (GitHub Actions, Vercel, Render). Each builds their own, often buggy and incomplete.
+
+**Technical highlights:**
+- Zero dependencies (doesn't even require libc)
+- SIMD-optimized parsing
+- Supports Kitty Graphics Protocol and Tmux Control Mode
+- Target: macOS, Linux, Windows, embedded, WASM
+- Initial Zig module available; C API in development
+
+> "Terminal emulation is a classic problem that appears simple on the surface but is riddled with unexpected complexities and edge cases."
+
+### Vouch — Community Trust Management System
+
+Beyond Ghostty, Mitchell created **Vouch** ([github.com/mitchellh/vouch](https://github.com/mitchellh/vouch)), a community trust management system based on explicit vouches. Written in Nushell, it has 4,000+ GitHub stars and represents his continued interest in decentralized trust models for open-source communities.
+
+### Technical Philosophy: Transcription as Memory
+
+Mitchell uses **Wispr Flow** (transcription tool) extensively to capture thoughts during coding sessions:
+
+> From Software Unscripted podcast: Mitchell uses voice transcription to narrate his thought process while working, creating a searchable log of design decisions and reasoning. This creates a form of "external working memory" that compounds over time.
+
+### On Diminishing Returns in LLM Progress
+
+From the Software Unscripted podcast (Feb 2026):
+> "I've never been the person who says AI will replace all developers. I've always viewed it pragmatically — it's clearly good at what it does. But I don't see life-changing improvements anymore. The delta between models is getting smaller. You notice it, but it's not the same leap we saw before."
+
+He notes that the biggest gains now come from **workflow design** rather than model capability:
+> "Being able to consult a slower, more expensive model on demand rather than paying that cost for every little thing — that's where the real leverage is."
 
 ## X Activity Themes
 

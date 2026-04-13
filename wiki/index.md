@@ -2,7 +2,7 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-     5|Last updated: 2026-04-13 (Local-First Software concept + Martin Kleppmann entity)
+     5|Last updated: 2026-04-14 (Ali Farhadi entity L3 enrichment)
      6|
      7|## Entity Pages (55)
      8|
@@ -323,7 +323,7 @@
    311|
    312|### AI Research & Computer Vision
    313|
-   314|- [[entities/ali-farhadi|Ali Farhadi]] — YOLO co-creator, Xnor.ai→Apple, former Ai2 CEO → Microsoft. "Open source is how we drive progress." OLMo, Molmo, Dolma.
+   314|- [[entities/ali-farhadi|Ali Farhadi]] — YOLO co-creator, Xnor.ai→Apple, former Ai2 CEO → Microsoft. "Open source is how we drive progress." OLMo, Molmo, Dolma, OLMoTrace, Tülu 3. "Language Model of a Crow" — embodied understanding as Grand Challenge. Radical openness philosophy. L3 depth.
    315|
    316|### Open Source AI & Consortium
    317|

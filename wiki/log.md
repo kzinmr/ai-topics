@@ -1,3 +1,43 @@
+## 2026-04-14 — Ali Farhadi Entity Enriched to L3 Depth
+
+### Updated Entity Pages
+- **[[entities/ali-farhadi]]** → **L3 depth** (was skeleton/L1). Major expansion:
+  - Complete career timeline: UIUC → CMU postdoc → UW professor → Ai2 → Xnor.ai → Apple → Ai2 CEO → Microsoft (2026)
+  - "Language Model of a Crow" Grand Challenge philosophy — embodied understanding as AI's ultimate test
+  - "Truly Open" AI philosophy — beyond open weights to full pipeline transparency (data + code + weights + recipes)
+  - Data transparency as safety — OLMoTrace output attribution, radical openness as the path to safe AI
+  - Nonprofit-to-corporate migration structural analysis — why frontier-scale open research requires corporate compute
+  - Embodied AI research arc — AI2-THOR, RoboTHOR, ProcTHOR, MolmoAct, Visual Commonsense Reasoning
+  - Research Philosophy Synthesis table (6 principles with quotes)
+  - Convergence analysis with Karpathy, Willison, Sanfilippo, Suleyman
+  - 15 major contributions catalogued with impact
+  - Related entities cross-references (Suleyman, Hajishirzi, Krishna, Redmon, OLMo concept pages)
+
+### Updated
+- **wiki/index.md** — Updated Ali Farhadi entry with comprehensive summary
+
+### Key Insights
+- **"Truly Open" > "Open Weights"** — Farhadi's most distinctive contribution: Meta's LLaMA is NOT open source because you lack the training data and recipes
+- **The Crow Challenge** — Set 10 years ago: can AI understand that a crow watching something buried will later return and act on it? This is embodied understanding, not pattern recognition
+- **Safety through radical transparency** — OLMoTrace traces every model output to specific training documents in real time. This is fundamentally different from closed-door evaluation approaches
+- **Nonprofit can't compete with corporate compute** — $1B+ cost barrier for frontier model training forces open advocates into corporate structures
+- **Microsoft as the pragmatic choice** — Unlike OpenAI, Microsoft still has room for genuinely open model development alongside proprietary products
+- **YOLO's elegance** — Single network, single pass. Same simplicity philosophy as Karpathy's autoresearch and antirez's Redis
+
+### Sources
+- https://homes.cs.washington.edu/~ali/
+- https://www.fastcompany.com/91283517/ai2s-ali-farhadi-advocates-for-open-source-ai-models-heres-why
+- https://www.fastcompany.com/91225845/ai2-ceo-ali-farhadi-believes-open-source-is-the-future
+- https://www.geekwire.com/2026/allen-institute-for-ai-ceo-ali-farhadi-steps-down-as-nonprofit-navigates-shifting-ai-landscape/
+- https://www.geekwire.com/2026/microsoft-hires-former-ai2-ceo-ali-farhadi-and-key-researchers-for-suleymans-ai-team/
+- https://madrona.com/ia-summit-2023-keynote-open-source-models-ali-farhadi
+- https://building.theatlantic.com/open-research-is-the-key-to-unlocking-safer-ai-15d1bac9085d
+- https://thelettertwo.com/2025/04/09/ai2s-olmotrace-tool-reveals-the-origins-of-ai-model-training-data/
+- https://raivn.cs.washington.edu/
+- https://www.youtube.com/watch?v=pNgFnmQ1ULs (Columbia Engineering lecture, 2026-03-13)
+
+---
+
 ## 2026-04-14 — Teknium Entity Page Enriched to L3 Depth
 
 ### Updated Entity Pages
