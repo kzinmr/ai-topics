@@ -2,146 +2,179 @@
 title: "Fares Obeid (@Grad62304977)"
 created: 2026-04-10
 updated: 2026-04-14
-tags: [person, ml-researcher, nanogpt-speedrun, transformer-architecture, optimization, rwkv, prime-intellect, imperial-college]
+tags: [person, ml-researcher, transformer-architecture, optimization, rwkv, prime-intellect, eleutherai, nanogpt-speedrun]
 aliases: ["@Grad62304977", "Grad", "Fares Obeid", "Fareso", "faresobeid"]
 source: x-account
 status: enriched
+depth: L3
 ---
 
-# Grad (@Grad62304977)
+# Fares Obeid (@Grad62304977)
 
 | | |
 |---|---|
 | **X/Twitter** | [@Grad62304977](https://x.com/Grad62304977) |
-| **GitHub** | [github.com/Grad62304977](https://github.com/Grad62304977) |
-| **Role** | Independent ML Researcher |
-| **Focus** | Transformer architecture optimization, training efficiency, NanoGPT speedrun |
-| **Known for** | Value residual learning, QK norm, logit softcap, SmolLM2 co-author |
+| **GitHub** | [Grad62304977](https://github.com/Grad62304977) |
+| **HuggingFace** | [Fareso](https://huggingface.co/Fareso) |
+| **LinkedIn** | [Fares Obeid](https://linkedin.com/in/fares-obeid-5461a7253) |
+| **Email** | @imperial.ac.uk, @kingsely.org |
+| **Role** | Research Engineer at Prime Intellect |
+| **Education** | MEng Computing (AI & ML), Imperial College London (2024-2027) |
+| **Known for** | NanoGPT speedrun records, Value Residual Learning, INTELLECT-3, GoldFinch RWKV/Transformer hybrid |
+| **Organizations** | EleutherAI, Recursal AI, Prime Intellect |
 
 ## Overview
 
-Grad (known online as **@Grad62304977**) is an independent ML researcher who has become one of the most prolific contributors to the **NanoGPT speedrun** — a collaborative/competitive effort to train a GPT-2-scale model (124M parameters) to target validation loss on FineWeb as fast as possible. Starting from Karpathy's 45-minute baseline on 8xH100, the speedrun has been pushed down to **under 3 minutes**, with Grad being responsible for the majority of the key architectural innovations that made this possible.
+**Fares Obeid** (handle **@Grad62304977** on X, **Fareso** on HuggingFace, **faresobeid** on GitHub) is an ML researcher who has made outsized contributions to open-source transformer architecture optimization despite being a student. He is responsible for multiple record-breaking improvements in the **NanoGPT speedrun**, a collaborative effort to train a 124M parameter GPT-2 model to target validation loss on FineWeb as quickly as possible. His work spans **value residual learning**, **attention normalization**, and **linear attention/transformer hybrids**.
 
-Beyond the speedrun, Grad is a co-author of the **SmolLM2** paper ("When Smol Goes Big — Data-Centric Training of a Small Language Model", Feb 2025), which documents the training of state-of-the-art small language models (135M, 360M, and 1.7B parameters) through careful data curation and multi-stage training.
+Beyond the speedrun, Fares is a co-author on significant papers including **Value Residual Learning** (ACL 2025), **GoldFinch** (RWKV/Transformer hybrid), and **INTELLECT-3** (106B parameter MoE model trained with large-scale RL). He is currently working at Prime Intellect on large-scale distributed training infrastructure.
 
-Grad embodies the growing movement of **independent researchers** making frontier-level contributions without institutional affiliation — demonstrating that deep technical insight, open collaboration, and public experimentation can rival well-funded lab research.
+## Identity Resolution
 
-## Key Architectural Contributions
+> @Grad62304977 = Fares Obeid = Fareso (HuggingFace) = faresobeid (GitHub) = Imperial College London student
 
-Grad is credited with introducing or co-developing the following transformer architecture modifications that became central to the NanoGPT speedrun:
+This was resolved through:
+- GitHub commits on [KellerJordan/modded-nanogpt](https://github.com/KellerJordan/modded-nanogpt) explicitly attributing records to `@Grad62304977`
+- HuggingFace profile [Fareso](https://hf.co/Fareso) listing 34252.8 TFLOPS, 13 papers, 2 models
+- OpenReview profile confirming Fares Obeid at Imperial College London
+- LinkedIn showing Fares Obeid, MEng Computing (AI & ML) at Imperial, 2024-2027
+- Author lists on GoldFinch (arXiv:2407.12077), Value Residual Learning (ACL 2025), INTELLECT-3
 
-| Innovation | Record | Impact |
-|------------|--------|--------|
-| **Pad embeddings** + **ReLU² activation** + **zero-init projections** + **QK norm** | 15.2 min (from 22.3) | Stabilized training, improved gradient flow |
-| **Untied embedding and lm_head** | 10.8 min (from 12.0) | Freed the model from weight tying constraints |
-| **Value residual learning** + **embedding skip connections** | 8.2 min (from 10.8) | Allowed information to bypass attention layers |
-| **Momentum warmup** | (contributed to) | Stabilized optimizer dynamics early in training |
-| **Logit softcap** (tanh scaling) | (contributed to) | Prevented logit explosion, improved stability |
-| **FlexAttention window size warmup** | 4.66 min (from 5.03) | Progressive attention window expansion |
-| **Long-short sliding window attention** + **attention scale** + **batched Muon** | 2.99 min | Combined multiple optimizations into one record |
+## NanoGPT Speedrun Contributions
 
-### Value Residual Learning
+The NanoGPT speedrun is a collaborative effort to train a 124M parameter GPT-2 model to 3.28 validation loss on FineWeb as fast as possible. Fares contributed to multiple record-breaking improvements:
 
-Perhaps Grad's most influential contribution is **value residual learning** — the idea of mixing attention values with a residual path before the output projection. In the modded-nanogpt codebase, this appears as:
+| Record | Time | Improvement | Key Changes |
+|--------|------|-------------|-------------|
+| #5 | 15.2 min | -7.1 min from #4 | Pad embeddings, ReLU², zero-init projections, QK norm |
+| #8 | 10.8 min | -4.4 min from #7 | Untied embedding and lm_head |
+| #9 | 8.2 min | -2.6 min from #8 | Value & embedding skip connections, momentum warmup, logit softcap |
+
+Combined, these three contributions reduced training time by **~45%** from the previous records. The current record stands at 2.9 minutes (as of 2025).
+
+> "The training has attained this speed due to the contributions of meself, @Grad62304977, @jxbz, @bozavlado, @brendanh0gan, @KoszarskyB, & @fernbear.bsky.social." — [alexjc/nanogpt-speedrun README](https://github.com/alexjc/nanogpt-speedrun)
+
+The speedrun code contains explicit `# @Grad62304977` attribution comments marking Fares's specific contributions:
 
 ```python
-# value residual lambda
-self.lamb = nn.Parameter(torch.tensor(0.5))  # @Grad62304977
-...
-v = (1 - self.lamb) * v + self.lamb * vi.view_as(v)  # @Grad62304977
+# @Grad62304977: https://x.com/Grad62304977/status/1849177879059161422
+# @Grad62304977: https://x.com/Grad62304977/status/1854295837741809933
 ```
 
-This technique allows the model to interpolate between the attention-computed values and an alternative pathway, providing a learnable balance that improves training stability and final performance. The approach was later incorporated into larger models and research.
+## Value Residual Learning (ACL 2025)
 
-### QK Norm
+Fares co-authored the **Value Residual Learning** paper with Zhanchao Zhou, Tianyi Wu, Zhiyun Jiang, and Zhenzhong Lan, published at ACL 2025.
 
-Grad suggested applying **normalization to Query and Key vectors** in the attention mechanism, which prevents the dot products from growing too large and destabilizing the softmax. This is now standard practice in modern transformer architectures.
+**Paper:** "Value Residual Learning For Alleviating Attention Concentration In Transformers" (arXiv:2410.17897)
 
-### Zero Initialization of Projections
+> "While Transformer models have achieved remarkable success in various domains, the effectiveness of information propagation through deep networks remains a critical challenge. Standard hidden state residuals often fail to adequately preserve initial token-level information in deeper layers."
 
-Grad proposed **zero-initializing the output projection weights** in attention layers (`self.c_proj.weight.data.zero_()`), which ensures that residual connections dominate early in training, providing a stable starting point before the model learns complex transformations.
+Key contributions:
+- **ResFormer** architecture: adds value residual connections to standard hidden state residuals
+- Achieves equivalent validation loss with **16.11% fewer parameters** and **20.3% less training data**
+- **SVFormer** variant: shares first layer's value embedding across all layers, reducing KV cache by ~50%
+- Performance influenced by sequence length and cumulative learning rate
 
-## NanoGPT Speedrun
+This paper directly informed the speedrun's Record #9 improvements (value skip connections).
 
-The NanoGPT speedrun is a public, collaborative effort to minimize the time required to train a 124M-parameter GPT-2 model to a target validation loss on the FineWeb dataset. The progression shows Grad's outsized impact:
+## GoldFinch: RWKV/Transformer Hybrid
 
-| # | Time | Key Change | Contributors |
-|---|------|------------|-------------|
-| 1 | 45 min | llm.c baseline | @karpathy |
-| 2 | 31.4 min | Tuned learning rate & rotary embeddings | @kellerjordan0 |
-| 3 | 24.9 min | Muon optimizer | @kellerjordan0, @jxbz |
-| 4 | 22.3 min | Muon improvements | @kellerjordan0, @bozavlado |
-| 5 | **15.2 min** | Pad embeddings, ReLU², zero-init, QK norm | **@Grad62304977**, @kellerjordan0 |
-| 6 | 13.1 min | Distributed Muon overhead | @kellerjordan0 |
-| 7 | 12.0 min | PyTorch 2.5.0 upgrade | @kellerjordan0 |
-| 8 | **10.8 min** | Untied embed and lm_head | **@Grad62304977**, @kellerjordan0 |
-| 9 | **8.2 min** | Shortcuts & tweaks | **@Grad62304977**, @kellerjordan0 |
-| 10 | 7.8 min | Bfloat16 activations | @kellerjordan0 |
-| 11 | 7.2 min | U-net & 2x lr | @brendanh0gan |
-| 12 | 5.03 min | FlexAttention | @KoszarskyB |
-| 13 | **4.66 min** | Attention window warmup | @fernbear.bsky.social |
-| ... | ... | ... | ... |
-| 20+ | **~2.9 min** | Multiple optimizations | Grad and others |
+**Paper:** "GoldFinch: High Performance RWKV/Transformer Hybrid with Linear Pre-Fill and Extreme KV-Cache Compression" (arXiv:2407.12077)
 
-Grad was directly responsible for **records #5, #8, and #9**, which together accounted for a **~45% reduction** in training time (from 22.3 min to 8.2 min). His contributions are cited in every major fork of the speedrun, including [KellerJordan/modded-nanogpt](https://github.com/KellerJordan/modded-nanogpt), [alexjc/nanogpt-speedrun](https://github.com/alexjc/nanogpt-speedrun), and [4rtemi5/modded-nanogpt](https://github.com/4rtemi5/modded-nanogpt).
+> "We introduce GoldFinch, a hybrid Linear Attention/Transformer sequence model that uses a new technique to efficiently generate a highly compressed and reusable KV-Cache in linear time and space with respect to sequence length."
 
-## SmolLM2
+Fares contributed to research discussions and experiments during development. The paper combines:
+- **GOLD transformer** stacked on enhanced **Finch (RWKV-6)** architecture
+- KV cache **756-2550× smaller** than traditional transformer cache
+- Autoregressive generation at O(n) per token, but pre-fill at O(1) per token using RNN
+- Trained up to 1.5B parameters on 1.5 trillion tokens of minipile
 
-Grad is a co-author of the **SmolLM2 paper** (arXiv:2502.02737, Feb 2025), which documents the training of small but highly capable language models. The paper's author list includes:
+This work represents Fares's interest in **efficient architectures** that break the quadratic scaling of standard transformers.
 
-> Loubna Ben Allal, Anton Lozhkov, **Elie Bakouch**, Gabriel Martín Blázquez, Guilherme Penedo, Lewis Tunstall, Andrés Marafioti, Hynek Kydlíček, Agustín Piqueres Lajarín, Vaibhav Srivastav, Joshua Lochner, Caleb Fahlgren, Xuan-Son Nguyen, Clémentine Fourrier, Ben Burtenshaw, Hugo Larcher, Haojun Zhao, Cyril Zakka, Mathieu Morlon, Colin Raffel, Leandro von Werra, Thomas Wolf
+## INTELLECT-3 (Prime Intellect)
 
-SmolLM2-1.7B was trained on **11 trillion tokens** using a multi-stage approach that mixed web text with specialized math, code, and instruction-following data. The model outperforms other recent small LMs including Qwen2.5-1.5B and Llama3.2-1B.
+**Paper:** "INTELLECT-3: Technical Report" (arXiv:2512.16144)
 
-Key innovations in SmolLM2:
-- **Multi-stage training strategy** with progressive data mix adjustment
-- **New specialized datasets**: FineMath, Stack-Edu, SmolTalk
-- **Manual refinement process** based on ablation studies
-- **Full open release** of models, datasets, and training code
+Fares is a co-author on this major paper describing a **106B parameter Mixture-of-Experts model** (12B active) trained with large-scale reinforcement learning:
 
-## Core Ideas
+- Trained on **512×H200 GPUs** with high training efficiency
+- Outperforms existing open-source models in its size range across math, code, science, and reasoning benchmarks
+- Surpasses frontier open models **6× larger** on reasoning and agentic benchmarks
+- Based on **GLM-4.5-Air-Base** model
+- Achieves SOTA with only **12B active parameters** (vs 106B total)
+- Full infrastructure stack open-sourced: RL frameworks, complete recipe, environments
 
-### Architecture Over Scale
+This represents a significant step in Fares's career trajectory from independent researcher to major lab contributor.
 
-Grad's work consistently demonstrates that **architectural improvements can outperform raw scale increases**. While the industry trend has been toward ever-larger models, Grad has shown that careful design choices in attention mechanisms, residual connections, weight initialization, and normalization can dramatically improve training efficiency and final performance at fixed parameter counts.
+## Core Research Philosophy
 
-### Open, Collaborative Research
+### Efficiency Through Architecture
 
-The NanoGPT speedrun is a model for **open, competitive-collaborative research**. Each improvement is publicly documented with code, commit logs, and attribution. Grad thrives in this environment — rapidly iterating, sharing results, and building on others' contributions. This contrasts sharply with the closed-door research practices of major AI labs.
+Fares consistently focuses on **architectural efficiency** over brute-force scaling:
+- **NanoGPT speedrun**: reducing training time by 45% through architectural modifications (not more compute)
+- **Value Residual Learning**: achieving equivalent performance with 16% fewer parameters
+- **GoldFinch**: KV cache compression by 756-2550× through hybrid RNN/transformer design
+- **INTELLECT-3**: 106B total parameters but only 12B active through MoE
 
-### The Independent Researcher Paradigm
+### Collaborative Open Science
 
-Grad operates without institutional affiliation, yet produces work that is cited and used by researchers worldwide. This is enabled by:
-- **Accessible compute** (cloud GPUs via vast.ai, RunPod, etc.)
-- **Open-source frameworks** (PyTorch, Hugging Face Transformers)
-- **Public datasets** (FineWeb, The Pile, etc.)
-- **Open communication** (X/Twitter, GitHub, Discord)
+All of Fares's major contributions are in **open-source, collaborative projects**:
+- NanoGPT speedrun is a public, community-driven benchmark
+- Value Residual Learning published at ACL with open access
+- GoldFinch released under Apache 2.0 license
+- INTELLECT-3 fully open-sourced with infrastructure
 
-His success demonstrates that **meaningful contributions to ML research don't require a lab affiliation** — they require insight, rigor, and a willingness to share.
+### Attention is the Bottleneck
 
-## Community Recognition
+The thread connecting his work is the insight that **attention mechanisms are the bottleneck** in transformer efficiency:
+- Value residual learning addresses information flow through attention
+- GoldFinch compresses the KV cache to enable longer contexts
+- QK normalization in speedrun stabilizes attention computation
+- Linear attention hybrids replace quadratic attention entirely
 
-Grad's contributions are widely acknowledged in the ML community:
-- **Keller Jordan** (@kellerjordan0), the speedrun organizer, regularly credits Grad's innovations in commit messages and READMEs
-- The **modded-nanogpt** codebase contains explicit `# @Grad62304977` comments marking his contributions
-- His work on value residual learning and QK norm has been adopted by other researchers in the speedrun ecosystem
-- Co-authorship on the SmolLM2 paper with Hugging Face researchers validates his contributions to mainstream ML research
+## Timeline
 
-## Related
+| Date | Event |
+|------|-------|
+| 2024-2027 | MEng Computing (AI & ML) at Imperial College London |
+| Apr 2024 | Eagle and Finch (RWKV-5/6) paper co-author |
+| Jul 2024 | GoldFinch paper published (arXiv:2407.12077) |
+| Oct 2024 | NanoGPT speedrun Record #5 (15.2 min) |
+| Nov 2024 | Records #8 (10.8 min) and #9 (8.2 min) |
+| Nov 2024 | INTELLECT-3 paper (106B MoE) |
+| 2025 | Value Residual Learning accepted at ACL 2025 |
 
-- [[entities/keller-jordan]] — Speedrun organizer, Muon optimizer creator
-- [[entities/elie-bakouch]] — SmolLM2 co-author, Hugging Face researcher
-- [[entities/andrej-karpathy]] — Created llm.c baseline, inspired the speedrun
-- [[concepts/muon-optimizer]] — Second-order optimizer used in the speedrun
-- [[concepts/transformer-architecture]] — Grad's primary area of innovation
-- [[concepts/smol-lm]] — Small language model family Grad contributed to
-- [[concepts/efficient-training]] — Core theme of Grad's work
+## Key Quotes & Attributions
+
+From the NanoGPT speedrun README:
+> "@Grad62304977: https://x.com/Grad62304977/status/1849177879059161422"
+
+From the Value Residual Learning abstract:
+> "This paper introduces ResFormer, a novel architecture that enhances information flow by incorporating value residual connections in addition to hidden state residuals."
+
+From the GoldFinch abstract:
+> "Our cache size savings increase linearly with model layer count, ranging from 756-2550 times smaller than the traditional transformer cache for common sizes."
+
+## Related People
+
+- [[andrej-karpathy]] — Karpathy's llm.c was the baseline for the NanoGPT speedrun
+- [[keller-jordan]] — Speedrun organizer and frequent collaborator
+- [[zhanchao-zhou]] — Value Residual Learning co-author
+- [[jxbz]] — Jeremy Bernstein, speedrun contributor (Newton-Schulz iteration)
+- [[bozavlado]] — Speedrun contributor
+- [[brendanh0gan]] — Speedrun contributor (U-net, 2x lr record)
+- [[fernbear]] — Speedrun contributor
+- [[leloykun]] — Speedrun contributor (Muon improvements)
+- [[youjiacheng]] — Speedrun contributor (Muon improvements)
 
 ## Sources
 
-- [NanoGPT speedrun — KellerJordan/modded-nanogpt](https://github.com/KellerJordan/modded-nanogpt)
-- [SmolLM2 paper (arXiv:2502.02737)](https://arxiv.org/abs/2502.02737)
-- [SmolLM2: When Smol Goes Big — Hugging Face](https://huggingface.co/papers/2502.02737)
-- [Inside the family of Smol models — HF blog](https://huggingface.co/blog/Kseniase/insidesmol)
-- [Grad's X/Twitter (@Grad62304977)](https://x.com/Grad62304977)
-- [Grad's GitHub](https://github.com/Grad62304977)
+- [NanoGPT Speedrun (KellerJordan/modded-nanogpt)](https://github.com/KellerJordan/modded-nanogpt)
+- [alexjc/nanogpt-speedrun](https://github.com/alexjc/nanogpt-speedrun)
+- [Value Residual Learning (ACL 2025)](https://aclanthology.org/2025.acl-long.1375/)
+- [GoldFinch Paper (arXiv:2407.12077)](https://arxiv.org/abs/2407.12077)
+- [INTELLECT-3 Technical Report (arXiv:2512.16144)](https://arxiv.org/abs/2512.16144)
+- [PrimeIntellect-ai/prime-rl PR #614](https://github.com/PrimeIntellect-ai/prime-rl/pull/614)
+- [Fareso on HuggingFace](https://huggingface.co/Fareso)
+- [Fares Obied on csauthors.net](https://www.csauthors.net/fares-obied/)
+- [LinkedIn: Fares Obeid](https://linkedin.com/in/fares-obeid-5461a7253)

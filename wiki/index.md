@@ -2,9 +2,9 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-     5|Last updated: 2026-04-14 (Mitchell Hashimoto entity L3 enrichment confirmed)
+     5|Last updated: 2026-04-13 (AI leaders entity pages: Hinton, Altman, Schulman, Brockman, Sutskever, Sutton, Amodei, Huang)
      6|
-     7|## Entity Pages (55)
+     7|## Entity Pages (63)
      8|
      9|- [[entities/adam-rosenthal]] — Adam Rosenthal
     10|
@@ -291,6 +291,19 @@
    278|
    279|- [[entities/simon-willison|Simon Willison]] — AI educator, blogger. Coined "Agentic Engineering", advocates for humans-as-orchestrators
    280|- [[entities/andrej-karpathy|Andrej Karpathy]] — OpenAI co-founder, Eureka Labs. "Agentic Engineering is a magnitude 9 earthquake", "handwritten code is past"
+
+### Frontier AI Leaders (AGI Race)
+
+|- [[entities/geoffrey-hinton|Geoffrey Hinton]] — Godfather of Deep Learning. Backpropagation, Boltzmann Machines, AlexNet supervision. 2018 Turing Award, 2024 Nobel Prize in Physics. Resigned from Google (May 2023) to freely warn about AI existential risks (10-20% extinction probability within 30 years).
+|- [[entities/sam-altman|Sam Altman]] — OpenAI CEO. GPT series, ChatGPT (800M+ weekly users), $500B+ valuation. Worldcoin co-founder. Helion Energy investor. Aggressive compute scaling ($850B data center buildout).
+|- [[entities/dario-amodei|Dario Amodei]] — Anthropic CEO. Constitutional AI, Claude series, Interpretability research. "AI Safety in 12 Months" (2025). Former OpenAI VP of Research.
+|- [[entities/ilya-sutskever|Ilya Sutskever]] — OpenAI co-founder & former Chief Scientist. AlexNet, Seq2Seq, GPT series technical direction. 2023 board crisis catalyst. Founded Safe Superintelligence Inc. (SSI, June 2024, $3B raised) — "straight-shot" to safe superintelligence.
+|- [[entities/jensen-huang|Jensen Huang]] — NVIDIA CEO. GPU revolution, CUDA platform. AI factories thesis. $5T market cap (2025). Physical AI advocate (Cosmos, Isaac GR00T, DRIVE). "Compute is the new infrastructure."
+|- [[entities/greg-brockman|Greg Brockman]] — OpenAI co-founder & President. Stripe foundational backend. GPT series technical leadership. Codex (GitHub Copilot). $100M AI super PAC for deregulation. "From AI coworkers to AI managers."
+|- [[entities/john-schulman|John Schulman]] — OpenAI co-founder. TRPO, PPO, RLHF architect. "Architect of ChatGPT." Briefly joined Anthropic (Aug 2024), co-founded Thinking Machines Lab (Feb 2025).
+|- [[entities/mira-murati|Mira Murati]] — Former OpenAI CTO. Led ChatGPT, DALL·E, GPT-4 development. Left Sep 2024, founded Thinking Machines Lab. "Safety as guardrails, not brakes."
+|- [[entities/richard-sutton|Richard Sutton]] — Father of Reinforcement Learning. 2024 ACM Turing Award (with Barto). TD learning, PPO, policy gradients. "The Bitter Lesson" — computation > knowledge. Joined Keen Technologies (Carmack) for AGI research.
+
    281|- [[entities/vinci-rufus|Vinci Rufus]] — AI tech exec. "Orchestration > Automation", "Vibe coding 30-70%, Agentic engineering 300-700%"
    282|- [[entities/ryan-lopopolo|Ryan Lopopolo]] (@_lopopolo) — OpenAI Frontier. Harness Engineering, Symphony multi-agent orchestration
    283|- [[entities/boris-cherny|Boris Cherny]] (@bcherny) — Head of Claude Code at OpenAI. Creator of Claude Code. Opus 4.5 + thinking, 5 parallel sessions via git worktrees, Plan Mode → auto-accept. Shared CLAUDE.md as team infrastructure, @claude on PRs for compounding guidelines. MCP integration (BigQuery, Slack, Sentry). PostToolUse hooks, subagents for parallel compute. "Give Claude a way to verify its work." "If you do something more than once a day, turn it into a skill."
