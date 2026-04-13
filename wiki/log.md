@@ -4,6 +4,10 @@
 - **[New]** [[comparisons/llm-integration-patterns]] — 12KB comparative taxonomy of 5 LLM integration paradigms (Orchestration, Declarative, Recursive, Agentic, Genetic), paradigm evolution map, Khattab research lineage, practical selection guide
 - **[New]** [[entities/omar-khattab]] — 11KB comprehensive profile (RLM co-author, DSPy creator, GEPA, ColBERT, "LMs as modules" philosophy, research phases, relationships, impact metrics)
 - **[Updated]** [[entities/alex-zhang]] — Expanded with RLM deep analysis (OOLONG, BrowseComp-Plus, Qwen3-8B recipe), philosophical context-centric decomposition analysis, additional quotes
+- **[Updated]** [[entities/omar-khattab]] — 13KB → RLM section expanded: Khattab X quote on context-as-data, RLM benchmarks, Yao×Khattab convergence analysis, DSPy v3.1.2+ RLM integration, 3-phase research arc table
+- **[New]** [[entities/shunyu-yao]] — 15KB full profile (ReAct, ToT, Reflexion, SWE-bench, "The Second Half", Yao×Zhang convergence on environment-first design)
+- **[New]** [[concepts/rlm-recursive-language-models]] — 8KB RLM concept page (Inspect→Decompose→Recurse→Aggregate pattern, REPL integration, benchmarks, Harness Engineering relationship)
+- **[Updated]** [[wiki/index.md]] — Added shunyu-yao, updated Khattab entry to reflect RLM enrichment
 
      1|---
      2|title: "Wiki Change Log"

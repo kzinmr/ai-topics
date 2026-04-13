@@ -327,12 +327,9 @@
 ### Declarative LM Programming & Foundation Model Programming
 
 - [[entities/omar-khattab|Omar Khattab]] (@lateinteraction) — MIT EECS Assistant Professor. Creator of ColBERT (late interaction), DSPy (declarative LM programming), GEPA (genetic prompt optimization), co-author of RLMs. "LMs as modules in programs, not end products."
+- [[entities/alex-zhang|Alex L. Zhang]] (@a1zhang) — MIT CSAIL PhD (Khattab, Kraska). Recursive Language Models (RLMs). "Language models will be scaffolds." GPU MODE, KernelBench (ICML 2025 Best Paper). L3: RLM context-centric decomposition, Scaffold philosophy, Software 1.0→2.0→3.0 paradigm, Karpathy comparison (training vs inference optimization).
+- [[entities/shunyu-yao|Shunyu Yao]] (@shunyuyao12) — OpenAI Research Scientist (CUA). ReAct, Tree of Thoughts, Reflexion, SWE-bench/SWE-agent, tau-bench. "The Second Half: RL finally generalizes, evaluation > training, problem-defining > problem-solving." L3: Agent-Computer Interfaces, reasoning as action in RL space, trained scaffolds paradigm.
 
-### ML Systems & Inference Scaling
+### Coding Agents & Swarm Orchestration
 
-- [[entities/alex-zhang|Alex L. Zhang]] (@a1zhang) — MIT CSAIL PhD (Khattab, Kraska). Recursive Language Models (RLMs). "Language models will be scaffolds." GPU MODE, KernelBench (ICML 2025 Best Paper).
-   327|
-   328|### Coding Agents & Swarm Orchestration
-   329|
-   330|- [[entities/akira-realmcore|Akira]] (@realmcore_) — Random Labs AI engineer. Slate: swarm-native coding agent using Thread Weaving. RLM for coding, skill chaining, knowledge overhang.
-   331|
+- [[entities/akira-realmcore|Akira]] (@realmcore_) — Random Labs AI engineer. Slate: swarm-native coding agent using Thread Weaving. RLM for coding, skill chaining, knowledge overhang.

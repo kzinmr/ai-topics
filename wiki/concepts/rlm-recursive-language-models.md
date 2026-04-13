@@ -1,0 +1,165 @@
+---
+title: "RLM (Recursive Language Models)"
+created: 2026-04-13
+related_people:
+  - Alex Zhang (first author, MIT)
+  - Omar Khattab (co-author, advisor)
+  - Tim Kraska (co-author, MIT)
+  - Shunyu Yao (parallel work: "The Second Half", ReAct)
+related_concepts:
+  - Context Folding
+  - Agent-Computer Interfaces
+  - Inference-Time Scaling
+  - Scaffold vs RL Debate
+  - REPL Environment
+---
+
+# RLM (Recursive Language Models)
+
+## Overview
+
+Recursive Language Models (RLMs) are a task-agnostic inference paradigm proposed by **Alex Zhang, Tim Kraska, and Omar Khattab** (MIT CSAIL/OASYS Lab) that allows language models to handle **near-infinite length contexts** by programmatically examining, decomposing, and recursively calling themselves over input snippets.
+
+- **Paper:** arXiv:2512.24601 (Dec 2025, revised Jan 2026)
+- **Blog:** [alexzhang13.github.io/blog/2025/rlm](https://alexzhang13.github.io/blog/2025/rlm/)
+- **Code:** [github.com/alexzhang13/rlm](https://github.com/alexzhang13/rlm) (3,296 stars)
+- **Minimal:** [github.com/alexzhang13/rlm-minimal](https://github.com/alexzhang13/rlm-minimal) (749 stars)
+- **Docs:** [alexzhang13.github.io/rlm](https://alexzhang13.github.io/rlm/)
+- **PyPI:** `rlms` — 6,034 downloads/month
+
+## Core Architecture
+
+### The Fundamental Shift: Context as Environment
+
+RLMs replace the canonical `llm.completion(prompt, model)` call with `rlm.completion(prompt, model)`. The key innovation:
+
+> "RLMs offload the context as a variable in a REPL environment that the LM can interact with and launch sub-LM calls inside of."
+> — Alex Zhang, RLM blog post (Oct 2025)
+
+**How it works:**
+1. **Persistent REPL:** The full input is loaded into a Python REPL as a string variable. The root model never sees the full context at once.
+2. **Programmatic Decomposition:** The LLM writes Python code to peek into, slice, and transform the context variable.
+3. **Recursive Sub-calls:** The model spawns sub-LM calls (`llm_query`) on shorter, programmatically constructed prompts.
+4. **Final Synthesis:** The main model aggregates results and produces a final answer.
+
+### REPL Environment Design
+
+The RLM uses the REPL as a **control plane** for long context:
+- Environment is usually written in Python
+- Exposes functions like `llm_query(prompt, model)` for recursive calls
+- Main model output is capped (e.g., 8,192 characters per `print` call)
+- Heavy tool use (web search, file access) is delegated to sub-LLMs
+
+This design means the **main model's context window stays bounded** regardless of input size.
+
+## Key Results
+
+### Benchmark Performance
+
+| Benchmark | GPT-5 Baseline | RLM (GPT-5-mini) | Improvement |
+|-----------|----------------|-------------------|-------------|
+| CodeQA | 24% | 62% | +38pp |
+| OOLONG | collapses at 1M+ | maintains accuracy | catastrophic→stable |
+| OOLONG Pairs | fails | succeeds | — |
+| S-NIAH | — | strong | — |
+| BrowseComp-Plus | — | improved | — |
+
+### RLM-Qwen3-8B (First Post-Trained Native RLM)
+
+- Outperforms underlying Qwen3-8B by **28.3%** on average
+- Approaches vanilla GPT-5 quality on three long-context tasks
+- Demonstrates that RLM-native training yields significant gains
+
+### Scale & Cost
+
+- Handles inputs up to **100x beyond model context windows** (tested at 10M+ token regime)
+- **2-3x reduction** in main model token consumption
+- Cost comparable to or cheaper than vanilla single-pass inference
+- Sequential REPL operations add 40-80% latency vs single-pass
+
+## Comparison with Other Long-Context Approaches
+
+### RLM vs Context Folding (Sun et al., 2025)
+
+| Aspect | RLM (Zhang et al.) | Context Folding (Sun et al.) |
+|--------|---------------------|-------------------------------|
+| Approach | Context → REPL variable | Context → summarized branches |
+| Mechanism | Recursive sub-calls in code | Branch/return with folding |
+| Training | Can be RL-trained end-to-end | FoldGRPO (token-level rewards) |
+| Context Limit | Near-infinite (REPL-based) | 10x reduction (32K active) |
+| Information Loss | None (exact access) | Summarization-based loss |
+| BrowseComp-Plus | — | 62.0% (FoldGRPO) |
+| SWE-Bench Verified | — | 58.0% (FoldGRPO) |
+
+**Convergence:** Both treat context management as an **active, learnable behavior** rather than a passive data loading problem. Both can be trained with RL.
+
+### RLM vs Traditional Scaffolds
+
+| Scaffold | Context Handling | Info Loss | Trainability |
+|----------|------------------|-----------|--------------|
+| Direct prompt | All-at-once | None | N/A |
+| Summarization | Compressed | High | Hard |
+| Retrieval agents | Selected chunks | Medium | Medium |
+| Code agents | Programmatic | Low | Medium |
+| **RLM** | **REPL + recursion** | **None** | **High (end-to-end RL)** |
+
+## The "Trainable Scaffold" Thesis
+
+Prime Intellect (building on RLM) positions this as **"the paradigm of 2026"**:
+
+> "Teaching models to manage their own context end-to-end through reinforcement learning will be the next major breakthrough, enabling agents to solve long-horizon tasks spanning weeks to months."
+
+This connects directly to **Shunyu Yao's "The Second Half"** framework:
+- Yao: "RL finally generalizes... evaluation becomes more important than training"
+- Zhang: "RLMs trained explicitly to recursively reason are likely to represent the next milestone"
+
+Both converge on: **the scaffold itself becomes the environment for RL training**.
+
+## Adoption & Ecosystem
+
+- **Prime Intellect:** Implemented RLMEnv in their verifiers stack; ablation with GPT-5-mini and INTELLECT-3-MoE
+- **DSPy:** Omar Khattab (co-author) plans an `RLM` module that could subsume CoT/ReAct
+- **Open Source:** Full codebase released, 20+ contributors, v0.1.1a release (Feb 2026)
+- **Sandbox Support:** Modal, Daytona, Prime Sandboxes, local Python REPL
+
+## Limitations & Open Problems
+
+1. **Sequential execution:** RLM calls are synchronous; no parallel sub-call execution
+2. **Recursion depth:** Currently limited; not truly unbounded in practice
+3. **Cost distribution:** Heavy tails due to very long trajectories
+4. **Model underutilization:** Current models not trained for RLM scaffolding show "significant performance being left untapped"
+5. **Mathematical reasoning:** RLMs struggle on math-heavy tasks without specialized training
+6. **Latency:** 40-80% overhead from REPL operations vs single-pass
+
+## Future Directions
+
+- **RL-native training:** Cascade SFT+RL recipe for RLM trajectories
+- **Parallel sub-calls:** Fan-out many sub-LLM queries simultaneously
+- **Custom data types:** Beyond strings, support structured context (graphs, databases)
+- **Long-horizon agents:** Tasks spanning weeks to months with persistent state
+- **Hybrid folding + RLM:** Combine context folding's efficiency with RLM's precision
+
+## Quotes
+
+> "RLMs offload the context as a variable in a REPL environment that the LM can interact with and launch sub-LM calls inside of."
+> — Alex Zhang, RLM blog post (Oct 2025)
+
+> "We think that RLMs trained explicitly to recursively reason are likely to represent the next milestone in general-purpose LLM inference."
+> — Alex Zhang, RLM blog post (Oct 2025)
+
+> "Current models show significant performance being left untapped due to poor usage of the scaffolding. This suggests major gains from RLM-native training."
+> — Prime Intellect, "Recursive Language Models: the paradigm of 2026"
+
+> "RLMs reframe long context as an environment variable."
+> — MarkTechPost technical summary
+
+## Related Concepts
+
+- **[[Context Folding]]** — Parallel approach: branch/return with summarization
+- **[[Inference-Time Scaling]]** — RLM scales computation, not parameters
+- **[[Agent-Computer Interfaces]]** — RLM as a new ACI paradigm
+- **[[Scaffold vs RL Debate]]** — RLMs are trainable scaffolds
+- **[[Shunyu Yao]]** — "The Second Half" framework; RL generalization thesis
+- **[[Alex Zhang]]** — Primary author, RLM creator
+- **[[Omar Khattab]]** — Co-author, DSPy creator, ColBERT lineage
+- **[[Tim Kraska]]** — Co-author, MIT DSG, ML systems expert

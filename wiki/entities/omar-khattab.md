@@ -24,6 +24,7 @@ related:
   - rlms
   - alex-zhang
   - tim-kraska
+  - shunyu-yao
   - slate
 ---
 
@@ -130,20 +131,51 @@ This work sits at the intersection of Khattab's interests in **programmatic cont
 **Co-authors:** Alex L. Zhang, Tim Kraska, Omar Khattab
 **Paper:** arXiv:2512.24601 (Dec 2025, revised Jan 2026)
 **Code:** [github.com/alexzhang13/rlm](https://github.com/alexzhang13/rlm)
+**Ecosystem:** DSPy v3.1.2+ ships built-in RLM support; Google ADK has enterprise-ready implementation
 
 RLMs represent Khattab's latest contribution — an **inference-time scaling paradigm** that allows LMs to process arbitrarily long prompts by treating context as an external variable in a REPL environment.
 
 ### Khattab's Role
 As co-author and PhD advisor to Alex Zhang, Khattab provided the theoretical foundation for treating **context as an environment** rather than a fixed prompt. This connects directly to his broader thesis of **foundation model programming** — LMs should be programmable components, not monolithic text processors.
 
-### Connection to ColBERT & DSPy
-| Framework | Core Idea |
-|-----------|-----------|
-| **ColBERT** | Delay interaction until query time for efficiency + quality |
-| **DSPy** | Compose LMs as optimizable program modules |
-| **RLMs** | Decompose context programmatically at inference time |
+### The Deep Insight
+Khattab framed RLMs' core contribution on X:
 
-The through-line: **architectural flexibility over brute-force scaling.**
+> *"Most people misunderstand RLMs to be about LLMs invoking themselves. The deeper insight is LLMs interacting with their own prompts as objects."*
+> — Omar Khattab (@lateinteraction), 2026
+
+This reframes RLMs from mere recursive calling to **context-as-data** manipulation. The model doesn't just call itself — it writes code to examine, filter, chunk, and selectively expose parts of its input. This is an **out-of-core algorithm design** pattern applied to language models.
+
+### RLM as the Culmination of Khattab's Research Program
+
+| Phase | Framework | What it delays | Why it matters |
+|-------|-----------|---------------|----------------|
+| **Phase 1** | ColBERT | Interaction (token-level matching) | Quality without compute at index time |
+| **Phase 2** | DSPy | Prompt design (optimization) | Declarative programs over ad-hoc prompts |
+| **Phase 3** | RLMs | Context consumption (selective reading) | Models manage what they see and when |
+
+The through-line across all three: **architectural flexibility over brute-force scaling.** Don't make the model bigger — make the architecture smarter about when and how the model engages with information.
+
+### Benchmark Results (MIT OASYS Lab)
+- **RLM(GPT-5-mini)** outperforms GPT-5 by >34pts on OOLONG (132k context)
+- **RLM-Qwen3-8B** beats base Qwen3-8B by 28.3% average across 4 benchmarks
+- **BrowseComp-Plus:** perfect performance at 1000 documents (10M+ tokens)
+- **Cost:** RLM runs are comparable to or cheaper than base model calls (median)
+- **Scale:** effectively processes 10M+ token inputs — 100× beyond native context windows
+
+### Connection to Shunyu Yao's "The Second Half"
+Both Khattab/Zhang's RLM framework and Yao's RL generalization thesis converge on the same insight:
+
+> *"In RL, there are three key components: algorithm, environment, and priors. For a long time, RL researchers focused on the algorithm... but the algorithm is the trivial part."*
+> — Shunyu Yao, "The Second Half" (2025)
+
+Khattab's RLM makes the **environment** (the REPL, the context-as-data) the focus, not the model architecture. Yao's work makes the **environment design** (Agent-Computer Interfaces) the focus, not the RL algorithm. Both argue that **how we structure the interaction** matters more than the raw capability of the model.
+
+### Prime Intellect's Assessment
+> *"Teaching models to manage their own context end-to-end through reinforcement learning will be the next major breakthrough in AI inference."*
+> — Prime Intellect on RLMs (Jan 2026)
+
+This connects Khattab's inference-time scaffolding with Yao's RL-first worldview: the next step is training models natively to use RLM patterns rather than wrapping them in a scaffold.
 
 ---
 
