@@ -49,3 +49,5 @@ Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.
 - [[concepts/cognition-devin-philosophy]] — Main Cognition philosophy
 - [[concepts/multi-agent-autonomy-scale]] — 5 levels of multi-agent autonomy
 - [[concepts/closing-agent-loop]] — Full development loop
+- [[concepts/openai-symphony]] — Ryan Lopopolo's alternative: task-based orchestration without manager context
+- [[ryan-lopopolo]] — Symphony author, Harness Engineering pioneer

@@ -270,6 +270,15 @@ Ryan's work at OpenAI Frontier points to safe, observable, governable agent depl
 - **[[jason-liu]]** — Complementary perspectives: Jason on structured outputs, Ryan on agent orchestration
 - **[[boris-cherny]]** — Both work on agent workflow optimization at scale; Ryan's enterprise focus vs. Boris's CLI focus
 
+## Related Concepts
+
+- **[[harness-engineering]]** — Ryanが提唱したAIコーディングエージェントの体系的実行環境設計
+- **[[concepts/agent-team-swarm]]** — Symphonyはagent team/swarmの実装パターン（Level 4: The Engineering Team）
+- **[[concepts/agent-team-swarm/managed-devins]]** — Cognitionの条件付きサブエージェントspawnとSymphonyの比較
+- **[[concepts/openai-symphony]]** — OpenAI Symphonyの詳細（Elixir実装、SPEC.md）
+- **[[concepts/multi-agent-autonomy-scale]]** — 256エージェント規模の自律協調研究
+- **[[concepts/agentic-engineering]]** — AIエージェントを活用したソフトウェア開発手法全般
+
 ## Sources
 
 - [Latent Space: Extreme Harness Engineering for Token Billionaires](https://www.latent.space/p/harness-eng) — Comprehensive interview transcript
