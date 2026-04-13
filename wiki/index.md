@@ -2,9 +2,9 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-13 (4/11-12 inbox triage: neurosymbolic AI, open model consortium, AI coding agent criticism)
+Last updated: 2026-04-13 (Anthropic-OpenClaw conflict, illusion of thinking research, neurosymbolic robotics, Peter Steinberger entity)
 
-## Entity Pages (45)
+## Entity Pages (46)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 
@@ -229,6 +229,10 @@ Ideas, frameworks, and methodologies extracted from articles.
 ### Open Source AI & Ecosystem
 - [[concepts/open-model-consortium]] — Open Model Consortium (Nemotron, Marin, Arcee)
 
+- [[concepts/anthropic-openclaw-conflict]] — Anthropic-OpenClaw Conflict (subscription cutoff, third-party tools)
+
+- [[concepts/illusion-of-thinking]] — Apple's Illusion of Thinking & Neurosymbolic Robotics
+
 ### AI Safety & Alignment
 
 - [[concepts/compute-scaling-bottlenecks]] — Compute Scaling Bottlenecks (Dylan Patel)
@@ -308,3 +312,7 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 ### Open Source AI & Consortium
 
 - [[entities/nathan-lambert|Nathan Lambert]] — Interconnects AI blogger. Open model consortium dynamics, Nemotron Coalition analysis
+
+### AI Agent Platforms & Developer Tools
+
+- [[entities/peter-steinberger|Peter Steinberger]] (@steipete) — OpenClaw creator. Joined OpenAI Feb 2026. "Agent-first design" advocate.

@@ -109,4 +109,5 @@ The vindication came gradually: LeCun acknowledged LLM limitations by late 2022.
 - [Not on the Best Path — CACM Interview](https://cacm.acm.org/opinion/not-on-the-best-path/) (Feb 2025)
 - [On Employment, Don't Panic — Yet](https://garymarcus.substack.com/p/on-employment-dont-panic-yet) (Apr 2026)
 - [Sam Altman, Unconstrained by the Truth](https://garymarcus.substack.com/p/sam-altman-unconstrained-by-the-truth) (Apr 2026)
-- [The biggest advance in AI since the LLM](https://garymarcus.substack.com/p/the-biggest-advance-in-ai-since-the) (Apr 2026) — argues Claude Code is neurosymbolic AI, not pure scaling
+- https://garymarcus.substack.com/p/even-more-good-news-for-the-future (Apr 2026) — Apple + Tufts research: neurosymbolic models achieve 95% vs VLA 34% on 3-block Tower of Hanoi
+- https://garymarcus.substack.com/p/the-biggest-advance-in-ai-since-the (Apr 2026) — argues Claude Code is neurosymbolic AI, not pure scaling
