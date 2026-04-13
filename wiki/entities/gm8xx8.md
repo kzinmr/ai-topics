@@ -1,225 +1,150 @@
----
-title: "gm8xx8"
-handle: "@gm8xx8"
-created: 2026-04-10
-updated: 2026-04-16
-tags: [person, ml-infrastructure, llm-serving, cuda, systems-research, linear-attention, farcaster, web3]
-aliases: ["gm8xx8"]
----
+# gm8xx8
 
-# gm8xx8 (@gm8xx8)
-
-| | |
-|---|---|
-| **X** | [@gm8xx8](https://x.com/gm8xx8) |
-| **Farcaster** | [gm8xx8](https://warpcast.com/gm8xx8) (132K followers) |
-| **GitHub** | [gm8xx8](https://github.com/gm8xx8) |
-| **HuggingFace** | [gm8xx8](https://huggingface.co/gm8xx8) |
-| **ENS** | gm8xx8.eth |
-| **Lens** | gm8xx8.lens |
-| **Role** | AI Infrastructure Researcher / Systems Engineer |
-| **Known for** | cuLA (CUDA linear attention kernels), amplifying frontier ML systems research, active contributor across 10+ OSS projects |
-| **Bio** | Prolific open-source contributor and ML systems analyst with ~7K followers on X and 132K on Farcaster. Works at the intersection of attention mechanism alternatives, GPU kernel optimization, and LLM serving efficiency. Known for surfacing cutting-edge systems research and providing technical analysis that bridges theory and practice. |
+**Handle:** @gm8xx8
+**GitHub:** github.com/gm8xx8
+**HuggingFace:** huggingface.co/gm8xx8
+**X/Twitter:** x.com/gm8xx8
+**Status:** active curator — L3 depth (comprehensive interest taxonomy)
 
 ## Overview
 
-**gm8xx8** is a prominent voice in the AI infrastructure and systems research community, operating across X (formerly Twitter), Farcaster, and GitHub. Despite maintaining a pseudonymous identity — no public personal website or real name disclosure — gm8xx8 has established themselves as a critical node in the ML systems information network through a consistent pattern of:
+gm8xx8 is a highly active AI/ML paper curator on X/Twitter and HuggingFace, known for sharing cutting-edge research papers across a remarkably broad range of topics. With 77K+ HuggingFace followers and a presence on X since August 2022, gm8xx8 operates as a signal filter for the AI research community — identifying and amplifying noteworthy papers in real-time.
 
-1. **Amplifying frontier research** — surfacing and analyzing papers on attention alternatives, KV cache optimization, and inference efficiency
-2. **Hands-on contributions** — active GitHub contributor to 10+ projects spanning CUDA kernels, evaluation frameworks, agent infrastructure, and robotics
-3. **Technical discourse** — engaging in detailed debates about reproducibility, novelty, and practical impact of ML systems research
+Unlike opinion leaders who produce original analysis, gm8xx8's value lies in **curation breadth**: tracking contributions across dozens of organizations (InclusionAI, FreedomIntelligence, MiroMindAI, XPeng Robotics, PrismML, Zhipu AI, Meituan LongCat, etc.) and surfacing papers that span the full stack from theoretical CS to deployed robotics systems.
 
-Their follower count discrepancy (~7K on X vs. 132K on Farcaster) suggests they may be more actively engaged in the decentralized social/crypto-AI community, where they maintain ENS and Lens identities.
+GitHub activity shows contributions to diverse projects including cuLA, MyPhoneBench, trace-blame, florence2_ros2_wrapper, MiroEval, capgym/cap-x, GLM-skills, varex-bench, DIAL, and Bonsai-demo — indicating engagement with both research and applied AI systems.
 
-## Core Philosophy
+## Curated Paper Analysis (March–April 2026)
 
-### Efficiency as First-Class Constraint
+The following table captures the papers gm8xx8 has shared/curated, organized by topical cluster:
 
-gm8xx8's activity reveals a consistent philosophical thread: **the bottleneck in AI progress is not model capability but systems efficiency**. This manifests across several dimensions:
+### Cluster 1: Mathematical Foundations & Proof Systems (5 papers)
 
-- **Attention alternatives**: Regular engagement with non-quadratic attention mechanisms (FFT-based, linear attention, state space models) reflects a belief that O(n²) self-attention is fundamentally unsustainable for long-context LLMs
-- **Hardware-aware design**: Contributions to cuLA targeting specific GPU architectures (Blackwell SM10X, Hopper SM90) show a conviction that kernel-level optimization, not just algorithmic improvement, is essential
-- **Memory systems focus**: Amplification of HCache (KV cache state restoration) and engagement with CXL (Compute Express Link) research indicate deep interest in the memory hierarchy as the primary bottleneck for LLM serving
+| Paper | Focus | Key Insight |
+|-------|-------|-------------|
+| [Mathematical methods and human thought in the age of AI](https://arxiv.org/abs/2603.26524) | AI × mathematics philosophy | Tanya Klowden & Terence Tao argue AI must remain human-centered in mathematical practice |
+| [Proofdoors and Efficiency of CDCL Solvers](https://arxiv.org/abs/2603.26286) | SAT solver theory | New "proofdoor" parameter explains CDCL efficiency on circuit verification formulas |
+| [Short proofs in combinatorics and number theory](https://arxiv.org/abs/2603.29961) | AI-generated math proofs | OpenAI internal model produced proofs for 3 Erdős questions entirely |
+| [On merge-models](https://arxiv.org/abs/2603.26570) | Structural graph theory | Introduces merge-models as natural analog of twin-models for merge-width |
+| [Sharp Capacity Scaling of Spectral Optimizers](https://arxiv.org/abs/2603.26554) | Optimizer theory | Muon's storage capacity significantly exceeds SGD in associative memory tasks |
 
-### The "Practitioner-Researcher" Model
+### Cluster 2: Model Architecture & Training Dynamics (6 papers)
 
-gm8xx8 embodies the pattern Karpathy identified: rather than purely theorizing or purely implementing, they operate at the boundary — reading papers, providing technical analysis, then contributing code to make the ideas practical. As evidenced by their pattern: *"surfacing a paper → sparking community discussion → contributing to related implementations."*
+| Paper | Focus | Key Insight |
+|-------|-------|-------------|
+| [From logπ to π: Taming Divergence in Soft Clipping](https://arxiv.org/abs/2603.14389) | RLVR optimization | DGPO uses probability gradient instead of log-prob gradient to stabilize RL training |
+| [SKILL0: In-Context Agentic RL](https://arxiv.org/abs/2604.02268) | Agentic skill internalization | Progressive curriculum withdrawal enables zero-shot agent behavior without runtime skill retrieval |
+| [Weight Tying Biases Token Embeddings](https://arxiv.org/abs/2603.26663) | Mechanistic interpretability | Tied embeddings align more with output matrices; output gradients dominate early training |
+| [Rethinking LLM Scaling under Transferable Hypersphere Optimization](https://arxiv.org/abs/2603.28743) | Scaling laws + Muon | HyperP framework transfers optimal LR across width, depth, tokens, MoE granularity |
+| [daVinci-LLM: Towards the Science of Pretraining](https://arxiv.org/abs/2603.27164) | Pretraining methodology | Data Darwinism L0-L9 taxonomy; 200+ ablations on 3B model over 8T tokens |
+| [A Family of LLMs Liberated from Static Vocabularies](https://arxiv.org/abs/2603.15953) | Byte-level modeling | HAT architecture removes fixed vocabulary; converts Llama 3.1 to byte-level model |
 
-> *"Physics strikes back, same as it did with stable diffusion."* — gm8xx8's framing of the FFT attention paper, connecting theoretical physics concepts to practical ML breakthroughs.
+### Cluster 3: Efficiency & Model Merging (3 papers)
 
-This quote reveals a worldview grounded in **first principles** — seeing ML efficiency gains not as incremental engineering but as rediscoveries of fundamental mathematical and physical properties that had been overlooked in the rush toward transformer dominance.
+| Paper | Focus | Key Insight |
+|-------|-------|-------------|
+| [1-bit Bonsai: First Commercially Viable 1-bit LLMs](https://prismml.com/news/bonsai-8b) | Extreme quantization | PrismML achieves commercially viable 1-bit LLMs |
+| [Preference-Aligned LoRA Merging (TARA)](https://arxiv.org/abs/2603.26299) | LoRA merging | Addresses subspace coverage and directional anisotropy in merged LoRA modules |
+| [Kernel-Smith: Evolutionary Kernel Optimization](https://arxiv.org/abs/2603.28342) | GPU kernel generation | LLM-driven evolutionary search beats Gemini-3.0-pro and Claude-4.6-opus on KernelBench |
 
-## Key Contributions
+### Cluster 4: Robotics & Vision-Language-Action (2 papers)
 
-### cuLA (CUDA Linear Attention) — InclusionAI/Ant Group
+| Paper | Focus | Key Insight |
+|-------|-------|-------------|
+| [Realtime-VLA V2](https://arxiv.org/abs/2603.26360) | Real-time robotics | End-to-end VLA deployment at human-par speed on lightweight robot arms |
+| [DIAL: Decoupling Intent and Action via Latent World Modeling](https://arxiv.org/abs/2603.29844) | VLA architecture | Separates high-level intent from low-level action through latent world models |
 
-The most significant project gm8xx8 contributes to. **cuLA** provides hand-tuned CUDA kernels for linear attention variants (GDA, GDN, Lightning Attention) targeting NVIDIA Blackwell (SM10X) and Hopper (SM90) GPUs.
+### Cluster 5: Infrastructure & Hardware (2 papers)
 
-| Aspect | Detail |
-|---|---|
-| **Purpose** | Drop-in replacement for flash-linear-attention (FLA) with one-line import change |
-| **Target Hardware** | NVIDIA Blackwell SM10X, Hopper SM90 |
-| **Technologies** | CuTe DSL, CUTLASS C++, TMA-accelerated kernels |
-| **Integration** | SGLang PR #22107 — KDA prefill backend achieving 0.895 GSM8K score on Kimi-Linear-48B |
-| **Status** | Early stage (v0.1.0, April 2026); decode kernel not yet implemented |
-| **Stars** | 318+ |
+| Paper | Focus | Key Insight |
+|-------|-------|-------------|
+| [Loop Control Management in TCPAs](https://arxiv.org/abs/2603.28645) | Hardware architecture | 15-45x reduction in control signals for Tightly Coupled Processor Arrays |
+| [Avoid Routing Polarization for OCS-based GPU Clusters](https://arxiv.org/abs/2603.28168) | GPU networking | Leaf-centric topology design eliminates routing polarization in optical switch clusters |
 
-The cuLA contribution is significant because it represents the **practical realization** of the theoretical efficiency work gm8xx8 amplifies: moving from papers about linear attention to production-grade CUDA kernels that can actually replace transformers in serving systems.
+### Cluster 6: Multimodal Systems & Datasets (4 papers)
 
-### MiroMindAI Ecosystem
+| Paper | Focus | Key Insight |
+|-------|-------|-------------|
+| [LongCat-AudioDiT](https://github.com/meituan-longcat/LongCat-AudioDiT) | Audio generation | Meituan's diffusion transformer for audio |
+| [LongCat-Next: Lexicalizing Modalities as Discrete Tokens](https://arxiv.org/abs/2603.27538) | Unified multimodal | DiNA framework: text, vision, audio under single autoregressive objective |
+| [ChartNet: Million-Scale Multimodal Dataset](https://arxiv.org/abs/2603.27064) | Chart understanding | High-quality dataset for robust chart understanding |
+| [VAREX: Multi-Modal Structured Extraction](https://arxiv.org/abs/2603.15118) | Document extraction | Benchmark for multimodal structured extraction from documents |
 
-gm8xx8 contributes across multiple projects in the MiroMindAI (Singapore-based deep research company) ecosystem:
+### Cluster 7: Agents & Research Systems (2 papers)
 
-| Project | Description | gm8xx8's Role |
-|---|---|---|
-| **MiroEval** | Benchmark for deep research agents (100 tasks, 70 text + 30 multimodal) across 13 systems | Contributor |
-| **trace-blame** | Go CLI for analyzing PyTorch Profiler traces — reimplementation of Meta's HolisticTraceAnalysis optimized for agent use | Contributor |
-| **MiroRL** | MCP-first RL framework for deep research agents | Contributor |
-| **MiroThinker** | Deep research agent (88.2 on BrowseComp) | Ecosystem participant |
+| Paper | Focus | Key Insight |
+|-------|-------|-------------|
+| [AgentFixer: Failure Detection to Fix Recommendations](https://arxiv.org/abs/2603.29848) | Agent debugging | Systematic failure detection and fix recommendation for LLM agentic systems |
+| [Marco DeepResearch](https://arxiv.org/abs/2603.28376) | Deep research agents | Verification-centric design outperforms 30B-scale agents with 8B model |
 
-The trace-blame project is particularly notable: it rewrites Meta's HolisticTraceAnalysis as a single Go binary with SQLite intermediate state, explicitly designed for **agent consumption** — including `install-skill` support for Claude Code and similar agents. This reflects gm8xx8's interest in making ML infrastructure **agent-native**.
+### Cluster 8: Embeddings & Retrieval (3 papers)
 
-### Other Notable Contributions
+| Paper | Focus | Key Insight |
+|-------|-------|-------------|
+| [Working Notes on Late Interaction Dynamics](https://arxiv.org/abs/2603.26259) | Late interaction models | Analysis of targeted behaviors in late interaction retrieval models |
+| [On Strengths and Limitations of Single-Vector Embeddings](https://arxiv.org/abs/2603.29519) | Embedding limitations | Single-vector models suffer catastrophic forgetting; multi-vector fundamentally superior |
+| [PruneFuse: Efficient Data Selection](https://arxiv.org/abs/2603.26138) | Training data curation | Weight pruning + network fusion for efficient data selection |
+| [DataFlex: Data-Centric Dynamic Training](https://arxiv.org/abs/2603.26164) | Training data curation | Unified framework for dynamic curriculum and data-centric LLM training |
 
-| Project | Organization | Description |
-|---|---|---|
-| **cap-x** | CapGym (NVIDIA/UC Berkeley/Stanford) | Framework for benchmarking coding agents in robot manipulation |
-| **GLM-skills** | ZAI Organization | Skills framework for GLM models |
-| **DIAL** | XPeng Robotics | Dialogue and interaction learning for robotics |
-| **MyPhoneBench** | FreedomIntelligence | Mobile device AI benchmarking |
-| **varex-bench** | UDI Barzilai | Variational reasoning benchmark |
-| **Bonsai-demo** | PrismML Engineering | Demo infrastructure |
-| **florence2_ros2_wrapper** | J.E. Dominguez Vidal | ROS2 integration for Florence-2 vision model |
+### Cluster 9: Evaluation Benchmarks (1 paper)
 
-This breadth — from CUDA kernels to robot manipulation benchmarks to mobile AI — suggests a **generalist systems engineer** comfortable working across the full stack from silicon to application.
+| Paper | Focus | Key Insight |
+|-------|-------|-------------|
+| [VideoZeroBench: Probing Video MLLM Limits](https://arxiv.org/abs/2604.01569) | Video QA benchmark | No model exceeds 1% accuracy when both answering AND spatio-temporal grounding required |
 
-## Research Amplification & Analysis
+## Curatorial Patterns & Interest Analysis
 
-gm8xx8 serves as a critical information filter and synthesizer for the ML systems community. Their X posts consistently achieve high engagement:
+### Primary Interests (by signal strength)
 
-| Date | Topic | Engagement | Significance |
-|---|---|---|---|
-| Feb 2025 | "The FFT Strikes Back" (arXiv:2502.18394) | 52K views, 676 likes, 72 reposts | Sparked community-wide debate on frequency-domain attention vs. FNet (2021) |
-| Sep 2025 | HCache (arXiv:2410.05004) — Fast State Restoration | 553 likes | Highlighted KV cache management as the bottleneck for LLM serving |
-| Mar 2026 | M2RNN paper (arXiv:2603.14360) by Mishra, Tan, Stoica, Gonzalez, Dao | Upvoted on HF | Matrix-valued RNN states for scalable LM — alternative to transformers |
-| Mar 2026 | GDN models (open-lm-engine) | Liked 13 models | Gated Delta Networks — linear attention variant |
-| Apr 2026 | Tina: Tiny Reasoning Models via LoRA | 9K views, 180 likes | LoRA-RL on 1.5B models achieving +20% gains at $9 total cost |
-| Apr 2026 | LLM Knowledge Boundary Cognition | 3K views, 67 likes | How LLMs distinguish known from unknown across languages |
+1. **Model Architecture & Training** (24% — strongest signal)
+   - DGPO (probability-gradient RL), HyperP (transferable hypersphere optimization), daVinci-LLM (pretraining science)
+   - HAT byte-level modeling — interest in fundamental representation changes
+   - DataFlex, PruneFuse — data-centric dynamic training
+   - Signals deep interest in HOW models are trained, not just WHAT they can do
 
-### Pattern: The "Signal Filter" Role
+2. **Mathematical Foundations & Proof Theory** (17%)
+   - Terence Tao's AI + mathematics philosophy paper
+   - CDCL solver proof complexity, proofdoors
+   - Spectral optimizer capacity scaling
+   - Unusual depth for a general curator — signals theoretical/mathematical literacy
 
-gm8xx8's research amplification follows a consistent pattern:
+3. **Efficiency & Compression** (14%)
+   - 1-bit Bonsai (extreme quantization), TARA (LoRA merging with subspace alignment)
+   - Kernel-Smith (evolutionary GPU kernel optimization)
+   - PruneFuse (weight-pruning-based data selection)
+   - Consistent interest in the cost/performance frontier
 
-1. **Surface** — Share arXiv paper with minimal framing
-2. **Engage** — Participate in technical discussion in replies
-3. **Validate** — Like/upvote related models, collections, and implementations
-4. **Contribute** — If the idea has legs, contribute to implementation (as with cuLA)
+4. **Multimodal Systems** (14%)
+   - LongCat-Next (DiNA: discrete native multimodal tokenization)
+   - LongCat-AudioDiT, ChartNet, VAREX
+   - Pattern of following "unified multimodal" approaches over modality-specific models
 
-This "signal filter" role is valuable because the ML research ecosystem produces far more papers than any single practitioner can evaluate. gm8xx8's judgment — *"this paper is worth attention"* — carries weight due to their demonstrated ability to connect theory to implementation.
+5. **Verification & Agent Reliability** (emerging)
+   - AgentFixer (failure detection → fix recommendations)
+   - Marco DeepResearch (verification-centric design)
+   - VideoZeroBench (rigorous evaluation exposing model failures)
+   - Directly aligns with "Harness Engineering" philosophy
 
-## HuggingFace Activity Analysis
+### Cross-Cutting Themes
 
-gm8xx8's HuggingFace activity (77K+ score, though only 6 followers and no public models/datasets) reveals their interests through curation:
+- **Verification-centric design**: Marco DeepResearch, AgentFixer, VideoZeroBench all emphasize rigorous evaluation
+- **Efficiency at scale**: 1-bit quantization, LoRA merging, data selection — all address the cost bottleneck
+- **Beyond standard paradigms**: Byte-level models (HAT), discrete native multimodal (DiNA), evolutionary kernel optimization
+- **Robotics as end-to-end system**: Realtime-VLA V2 and DIAL show interest in deployment, not just model training
 
-### Recent Model Likes (March–April 2026)
-- **M2RNN family** (open-lm-engine): 14 models spanning 400M dense to 7B MoE variants
-- **GDN models**: Gated Delta Networks at 400M and 7B scales
-- **Hybrid architectures**: hybrid-gdn-m2rnn, hybrid-m2rnn configurations
-- **LongCat-Flash-Prover** (meituan-longcat): 561B parameter model
-- **LongCat-Next** (meituan-longcat): Next generation
-- **Nemotron-Personas-France** (nvidia): 1M synthetic personas
+## Related Curators & Networks
 
-### Paper Upvotes
-- **V₀.₅: Generalist Value Model** — Sparse RL rollouts
-- **GLM-OCR Technical Report** — OCR capabilities
-- **InternAgent-1.5** — Unified agentic framework for autonomous scientific discovery
-- **Training Foundation Models on Full-Stack AMD Platform** — Compute, networking, and system design
+gm8xx8's HuggingFace upvote activity shows engagement with:
+- **M2RNN Collection** (MoE models with 1.1B active parameters)
+- **Dr.Kernel Collection** (kernel/optimizer research)
+- **InternAgent Collection** (autonomous scientific discovery)
+- **LateOn-Code Collection** (late interaction code retrieval)
+- **GLiNER/GLiClass** (efficient zero-shot classification)
+- **OpenEarthAgent** (earth science AI agents)
 
-### Collections Upvoted
-- **M2RNN Collection** — Complete model family
-- **InternAgent Collection** — AI+X research across domains
-- **Dr.Kernel Collection** — Kernel optimization
-- **LateOn-Code** — Late interaction code retrieval models
-- **OpenEarthAgent** — Geospatial reasoning
-- **GLiClass-Instruct** — Zero-shot sequence classification
+## Notes
 
-This activity pattern confirms gm8xx8's focus on **efficiency-first architectures** — non-transformer models, kernel-level optimization, and agent-capable systems.
-
-## X Activity Themes
-
-| Theme | Description | Evidence |
-|---|---|---|
-| **Attention mechanism alternatives** | FFT-based, linear, kernelized, delta-rule | FFT paper, cuLA, M2RNN engagement |
-| **LLM serving optimization** | KV cache, state restoration, inference efficiency | HCache, CXL, memory system posts |
-| **CUDA/GPU programming** | Kernel optimization, Blackwell/Hopper, CuTe DSL | cuLA contributions |
-| **Reasoning models** | Small models with RL achieving outsized performance | Tina ($9 training cost), knowledge boundaries |
-| **Agent infrastructure** | MCP, evaluation, tool use | MiroMindAI contributions, InternAgent |
-| **Robotics & multimodal** | Vision-language-action models, mobile benchmarks | cap-x, DIAL, MyPhoneBench |
-| **Community technical discussion** | Reproducibility, novelty, practical impact | Engages with @MrCatid, @SergioGaitanC |
-
-## Related People
-
-- **[xjdr](./xjdr.md)** — Works on inference optimization (Entropix); gm8xx8's interest in attention efficiency complements this
-- **[Grad](./grad.md)** — Both contribute to ML efficiency/speedrun community
-- **[Shiwei Gao, Youmin Chen, Jiwu Shu](https://arxiv.org/abs/2410.05004)** — Tsinghua HCache authors whose work gm8xx8 amplified
-- **[@MrCatid](https://x.com/MrCatid)** — Frequent interlocutor on technical analysis of attention papers; questioned FFT paper reproducibility
-- **[@karpathy](https://x.com/karpathy)** — gm8xx8 engages with the llm.c / modded-nanogpt ecosystem
-- **Keller Jordan** — Modded-nanogpt speedrun; shares ML efficiency community
-- **@fernbear.bsky.social** — NanoGPT speedrun contributor; related optimization community
-- **Chaofan Yu (InclusionAI)** — cuLA lead; contact: chaofanyu@gmail.com
-- **Max Fu (NVIDIA/UC Berkeley)** — cap-x lead author; robot manipulation benchmarking
-- **Boris Cherny** — Both work on agent infrastructure; gm8xx8 contributes to GLM-skills while Cherny works on Claude Agent SDK
-
-## Concepts
-
-- [[linear-attention]] — cuLA implements KDA, GDN, Lightning Attention kernels
-- [[kv-cache-optimization]] — HCache amplification, CXL memory interconnects
-- [[cuda-kernel-optimization]] — CuTe DSL, CUTLASS, TMA-accelerated kernels
-- [[m2rnn]] — Matrix-valued RNN states as transformer alternative
-- [[agent-evaluation]] — MiroEval benchmark, process-centric assessment
-- [[harness-engineering]] — trace-blame as agent-skill infrastructure
-
-## Timeline
-
-| Date | Event |
-|---|---|
-| Aug 2022 | GitHub account created (joined: 2022-08-20) |
-| Dec 2021 | ENS domain gm8xx8.eth registered |
-| Nov 2023 | Farcaster account created (now 132K followers) |
-| Feb 2025 | Amplified "FFT Strikes Back" paper — 52K views, 676 likes |
-| Sep 2025 | Amplified HCache paper on KV cache state restoration |
-| Mar 2026 | Began contributing to InclusionAI/cuLA, MiroMindAI ecosystem |
-| Mar 2026 | Active in open-lm-engine M2RNN/GDN model evaluation (liked 13 models) |
-| Apr 2026 | cuLA v0.1.0 released; SGLang integration PR #22107 |
-| Apr 2026 | 29-paper curation batch: strong expansion into math/formal proofs, agentic systems (AgentFixer, Marco DeepResearch), 1-bit LLMs (Bonsai), VLA robotics, and embedding theory |
-
-## Recent Curation Analysis (April 2026 — 29 Papers)
-
-gm8xx8's latest paper curation batch reveals an **expanding scope** beyond pure ML systems efficiency into mathematical foundations and agentic infrastructure.
-
-### Cluster Breakdown
-
-| Cluster | Count | Key Papers | Signal |
-|---------|-------|-----------|--------|
-| **Evaluation & Data** | 5 | VideoZeroBench, ChartNet, VAREX, PruneFuse, DataFlex | Growing interest in systematic evaluation, data-centric training |
-| **Architecture & Training** | 4 | daVinci-LLM (science of pretraining), Transferable Hypersphere, No Static Vocabularies, Weight Tying Biases | Pretraining theory, vocabulary flexibility |
-| **Multimodal & Robotics** | 4 | LongCat-AudioDiT, LongCat-Next (discrete token modalities), Realtime-VLA V2, DIAL | VLA (Vision-Language-Action) models, tokenizing all modalities |
-| **Math & Formal Proofs** | 3 | Mathematical methods & human thought, Proofdoors/CDCL, Short proofs in combinatorics | New interest area: formal verification, mathematical reasoning |
-| **Embeddings & Retrieval** | 3 | Spectral Optimizers, Late Interaction Dynamics, Single-Vector Embeddings | Deepening work on retrieval architectures |
-| **Inference & Serving** | 3 | Loop Control TCPAs, Routing Polarization OCS, 1-bit Bonsai | Extreme quantization, GPU cluster networking |
-| **Reasoning & RL** | 2 | SKILL0 (Agentic RL), logπ→π (Soft Clipping) | RL for reasoning, skill internalization |
-| **Model Merging** | 2 | On merge-models, Preference-Aligned LoRA Merging | Model merging theory and practice |
-| **Agents & Systems** | 2 | AgentFixer, Marco DeepResearch | Agent failure recovery, verification-centric design |
-| **Kernel Optimization** | 1 | Kernel-Smith (Evolutionary Kernel Opt) | Continuation of kernel-level efficiency work |
-
-### Emerging Interest Signals
-
-1. **Math/Formal Proofs** (new cluster) — Three papers on mathematical reasoning, CDCL SAT solvers, and proof theory. This aligns with gm8xx8's contribution to LongCat-Flash-Prover (a math prover model) on HF and the `Lossfunk/Esolang-Bench` dataset like.
-
-2. **1-bit Quantization** — Bonsai whitepaper (PrismML) marks interest in extreme model compression. This is a natural extension of the efficiency-first philosophy: if linear attention reduces compute, 1-bit quantization reduces memory bandwidth.
-
-3. **VLA (Vision-Language-Action) Models** — Two robotics papers (Realtime-VLA V2, DIAL) plus continued DIAL (XPeng Robotics) contributions on GitHub. Suggests interest in grounding LLMs in physical action.
-
-4. **Agentic Failure Recovery** — AgentFixer paper (failure detection → fix recommendations) and Marco DeepResearch (verification-centric design) signal a shift from "how to build agents" to "how to make agents reliable."
-
-5. **Science of Pretraining** — daVinci-LLM and DataFlex suggest interest in making pretraining more principled and data-efficient rather than just scaling up.
+- **Identity**: gm8xx8 appears to be primarily a curator rather than an original researcher. No public blog, website, or identifiable real name found.
+- **Activity level**: Very high — daily paper sharing across X/Twitter, with substantial HuggingFace engagement (77K+ followers).
+- **Enrichment target**: This page needs enrichment with direct quotes from gm8xx8's X posts, commentary patterns, and specific curation philosophy. The skeleton status should be removed once enriched.
+- **Last updated**: 2026-04-14

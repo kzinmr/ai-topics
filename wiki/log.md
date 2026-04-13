@@ -1,3 +1,30 @@
+## 2026-04-13 — Auto-triage ingest (RSS scan)
+
+### Updated Entity Pages
+- **[[entities/claude-mythos]]** — Added UK AI Security Institute (AISI) evaluation results: first model to complete cyber range end-to-end, assessment that Mythos could compromise weakly defended systems, Gary Marcus analysis. Updated `updated:` date to 2026-04-13.
+- **[[entities/gemma-4]]** — Added MoE expert routing visualization section: Martin Alderson's interactive tool showing ~25% of experts never activate per prompt, varies by prompt. CPU MoE inference insights. Updated `updated:` date to 2026-04-13.
+
+### Updated Concept Pages
+- **[[concepts/cognitive-cost-of-agents]]** — Added Steve Yegge industry AI adoption data (20/20/60 split at Google and industry-wide), Bryan Cantrill's "LLMs lack laziness" thesis connecting to code bloat and abstraction quality.
+
+### Sources
+- https://garymarcus.substack.com/p/claude-mythos-evaluated (Gary Marcus evaluation)
+- https://simonwillison.net/2026/Apr/13/steve-yegge/ (Yegge on Google AI adoption)
+- https://simonwillison.net/2026/Apr/13/bryan-cantrill/ (Cantrill on laziness)
+- https://martinalderson.com/posts/moe-expert-routing-visualization/ (MoE routing visualization)
+
+---
+
+## 2026-04-16 — gm8xx8 Paper Curation Analysis (29 papers, March–April 2026)
+
+### Entity Page Updated
+- **[[entities/gm8xx8]]** — gm8xx8 (@gm8xx8): AI paper curator & infrastructure researcher. Updated with comprehensive 29-paper curation analysis from March–April 2026 batch.
+  - 9 interest clusters: Architecture/Training (24%), Theory/Math (17%), Efficiency (14%), Multimodal (14%), Agents/Verification (emerging), Robotics/VLA (7%), Hardware (7%), Embeddings (7%), Evaluation (3%)
+  - Key signals: Model training science (DGPO, HyperP, daVinci-LLM), mathematical foundations (Tao, CDCL proofs), efficiency frontier (1-bit Bonsai, TARA), verification-centric agents (AgentFixer, Marco DeepResearch)
+  - Cross-cutting pattern: Papers bridging "lab demo" → "production system" — efficiency, reliability, verification, real-time performance, mathematical rigor
+  - Curation style: High-volume, no-commentary signal detection. Cross-platform (HF upvotes, X tweets, GitHub contributions). Early trend detection.
+  - Status upgraded from skeleton to L3 depth (comprehensive interest taxonomy)
+
 ## 2026-04-15 — Dario Amodei, Mustafa Suleyman, Demis Hassabis Entity Pages Created (L3 depth)
 
 ### New Entity Pages

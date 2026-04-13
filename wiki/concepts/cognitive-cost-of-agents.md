@@ -1,6 +1,7 @@
 # Cognitive Cost of Agents
 
 **Date:** April 3, 2026
+**Updated:** April 13, 2026
 **Source:** Simon Willison's Weblog — "The cognitive impact of coding agents"
 **Author:** [[Simon Willison]] (simonw)
 **Related:** [[Agentic Engineering]], [[Vibe Coding]], [[Anthropic Managed Agents]], [[Agent Orchestration Frameworks]]
@@ -93,8 +94,33 @@ The most significant risk Willison identified: developers may become **passive r
 
 ---
 
+## Industry-Wide AI Adoption Data (Steve Yegge, April 2026)
+
+Steve Yegge reported that **Google's AI adoption curve matches the industry average**: roughly 20% agentic power users, 20% outright refusers, and 60% still using Cursor or equivalent chat tools. This was described as surprising given Google's engineering prestige.
+
+Key implications for cognitive cost:
+- **No informational advantage at the top**: Even Google engineers are not further along the adoption curve than the industry average
+- **Hiring freeze compounding effect**: 18+ months of hiring freeze means no "clued-in people coming in from the outside" to push adoption forward
+- **Mediocrity risk**: Yegge described Google's engineering organization as having become "utterly mediocre" in its AI adoption, suggesting the broader industry may face the same trajectory without active intervention
+
+This data reinforces Willison's thesis that cognitive cost is an industry-wide problem, not an individual one. The 60% "chat tool" majority may be the most at-risk group — using AI enough to lose deep coding practice but not enough to become power users who've adapted their workflows.
+
+## Bryan Cantrill's "LLMs Lack Laziness" (April 2026)
+
+Bryan Cantrill argued that LLMs are missing a critical human engineering virtue: **laziness**. Because computation is free to LLMs, they don't optimize for future maintainability. They "happily dump more and more onto a layercake of garbage" — appealing to vanity metrics while degrading system quality.
+
+Connection to cognitive debt:
+- Human laziness forces us to develop **crisp abstractions** because we don't want to waste our finite time on the consequences of clunky ones
+- LLM-generated code tends toward verbosity and redundancy because there's no internal cost to adding more
+- This compounds cognitive debt: reviewing bloated, poorly abstracted code is even harder than reviewing well-structured code
+- The "layercake of garbage" pattern is exactly what Willison warned about — superficially impressive output that masks deep comprehension failures
+
+> "LLMs do not feel a need to optimize for their own (or anyone's) future time, and will happily dump more and more onto a layercake of garbage. Left unchecked, LLMs will make systems larger, not better — appealing to perverse vanity metrics, perhaps, but at the cost of everything that matters." — Bryan Cantrill, *The peril of laziness lost*
+
 ## Sources
 
 - Simon Willison, "The cognitive impact of coding agents," simonwillison.net (April 3, 2026)
 - Simon Willison's Weblog — ongoing coverage of agentic engineering patterns
 - Lenny's Podcast appearance — "An AI state of the union" (2025)
+- Steve Yegge on Google AI adoption, via Simon Willison's Weblog (April 13, 2026)
+- Bryan Cantrill, "The peril of laziness lost," via Simon Willison's Weblog (April 13, 2026)

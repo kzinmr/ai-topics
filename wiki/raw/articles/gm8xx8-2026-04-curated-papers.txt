@@ -1,0 +1,35 @@
+# gm8xx8 Curated Papers — 2026-04-14
+
+Source: X/Twitter @gm8xx8 paper curation list
+
+## Papers
+
+1. Mathematical methods and human thought in the age of AI — arxiv.org/abs/2603.26524 (Tanya Klowden, Terence Tao)
+2. Proofdoors and Efficiency of CDCL Solvers — arxiv.org/abs/2603.26286 (Sunidhi Singh et al.)
+3. On merge-models — arxiv.org/abs/2603.26570 (Hector Buffière et al.)
+4. Short proofs in combinatorics and number theory — arxiv.org/abs/2603.29961 (Mehtaab Sawhney)
+5. From logπ to π: Taming Divergence in Soft Clipping via Bilateral Decoupled Decay of Probability Gradient Weight — arxiv.org/abs/2603.14389 (Xiaoliang Fu et al.)
+6. SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization — arxiv.org/abs/2604.02268
+7. Loop Control Management in Tightly Coupled Processor Arrays (TCPAs) — arxiv.org/abs/2603.28645 (Dominik Walter et al.)
+8. LongCat-AudioDiT — github.com/meituan-longcat
+9. LongCat-Next: Lexicalizing Modalities as Discrete Tokens — arxiv.org/abs/2603.27538
+10. Kernel-Smith: A Unified Recipe for Evolutionary Kernel Optimization — arxiv.org/abs/2603.28342
+11. Announcing 1-bit Bonsai: The First Commercially Viable 1-bit LLMs — prismml.com/news/bonsai-8b
+12. Preference-Aligned LoRA Merging: Preserving Subspace Coverage and Addressing Directional Anisotropy — arxiv.org/abs/2603.26299
+13. Realtime-VLA V2: Learning to Run VLAs Fast, Smooth, and Accurate — arxiv.org/abs/2603.26360
+14. DIAL: Decoupling Intent and Action via Latent World Modeling for End-to-End VLA — arxiv.org/abs/2603.29844
+15. Avoid Routing Polarization for OCS-based GPU Clusters — arxiv.org/abs/2603.28168
+16. Weight Tying Biases Token Embeddings Towards the Output Space — arxiv.org/abs/2603.26663 (Antonio Lopardo et al.)
+17. AgentFixer: From Failure Detection to Fix Recommendations in LLM Agentic Systems — arxiv.org/abs/2603.29848
+18. ChartNet: A Million-Scale, High-Quality Multimodal Dataset for Robust Chart Understanding — arxiv.org/abs/2603.27064
+19. VAREX: A Benchmark for Multi-Modal Structured Extraction from Documents — arxiv.org/abs/2603.15118
+20. PruneFuse: Efficient Data Selection via Weight Pruning and Network Fusion — arxiv.org/abs/2603.26138
+21. DataFlex: A Unified Framework for Data-Centric Dynamic Training of Large Language Models — arxiv.org/abs/2603.26164
+22. Rethinking Language Model Scaling under Transferable Hypersphere Optimization — arxiv.org/abs/2603.28743 (Liliang Ren et al.)
+23. A Family of LLMs Liberated from Static Vocabularies — arxiv.org/abs/2603.15953 (Fabien C. Y. Benureau et al.)
+24. VideoZeroBench: Probing the Limits of Video MLLMs with Spatio-Temporal Evidence Verification — arxiv.org/abs/2604.01569
+25. Marco DeepResearch: Unlocking Efficient Deep Research Agents via Verification-Centric Design — arxiv.org/abs/2603.28376
+26. daVinci-LLM: Towards the Science of Pretraining — arxiv.org/abs/2603.27164
+27. Sharp Capacity Scaling of Spectral Optimizers in Learning Associative Memory — arxiv.org/abs/2603.26554 (Juno Kim et al.)
+28. Working Notes on Late Interaction Dynamics: Analyzing Targeted Behaviors of Late Interaction Models — arxiv.org/abs/2603.26259
+29. On Strengths and Limitations of Single-Vector Embeddings — arxiv.org/abs/2603.29519

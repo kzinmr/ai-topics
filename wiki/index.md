@@ -345,7 +345,7 @@ Last updated: 2026-04-15 (Dario Amodei, Mustafa Suleyman, Demis Hassabis entity 
 ### AI Infrastructure & Open Source
 
 - [[entities/george-hotz|George Hotz]] (@geohot) — comma.ai founder, tinygrad creator. "All compute is equal", open-source GPU driver
-- [[entities/gm8xx8|gm8xx8]] (@gm8xx8) — AI infrastructure researcher. cuLA CUDA kernels, MiroMindAI contributor, linear attention & M2RNN analysis. 132K Farcaster followers.
+- [[entities/gm8xx8|gm8xx8]] (@gm8xx8) — AI paper curator & infrastructure researcher. 29-paper curation batches (proof theory, VLA, 1-bit LLMs, agentic systems). cuLA CUDA kernels, MiroMindAI contributor, linear attention & M2RNN analysis. 132K Farcaster followers, 77K+ HF upvotes. L3 depth.
 - [[entities/sero|Sero]] (@0xsero) — Sybil Solutions founder, ElizaOS contributor. 8x RTX 3090 homelab, Freedom Tech advocate, local AI infrastructure builder, Thrive Protocol. TurboQuant, pi-brain, Open Orchestra, Parchi, vLLM Studio, Azul. 200+ OSS repos. L3 depth.
    311|
    312|### AI Research & Computer Vision

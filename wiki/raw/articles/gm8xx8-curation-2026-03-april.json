@@ -1,0 +1,147 @@
+[
+  {
+    "title": "Mathematical methods and human thought in the age of AI",
+    "url": "https://arxiv.org/abs/2603.26524",
+    "cluster": "Theory/Proofs"
+  },
+  {
+    "title": "Proofdoors and Efficiency of CDCL Solvers",
+    "url": "https://arxiv.org/abs/2603.26286",
+    "cluster": "Theory/Proofs"
+  },
+  {
+    "title": "On merge-models",
+    "url": "https://arxiv.org/abs/2603.26570",
+    "cluster": "Model Architecture"
+  },
+  {
+    "title": "Short proofs in combinatorics and number theory",
+    "url": "https://arxiv.org/abs/2603.29961",
+    "cluster": "Theory/Proofs"
+  },
+  {
+    "title": "From logπ to π: Taming Divergence in Soft Clipping",
+    "url": "https://arxiv.org/abs/2603.14389",
+    "cluster": "Model Architecture"
+  },
+  {
+    "title": "SKILL0: In-Context Agentic RL for Skill Internalization",
+    "url": "https://arxiv.org/abs/2604.02268",
+    "cluster": "Reasoning/RL"
+  },
+  {
+    "title": "Loop Control Management in TCPAs",
+    "url": "https://arxiv.org/abs/2603.28645",
+    "cluster": "Hardware/Infrastructure"
+  },
+  {
+    "title": "LongCat-AudioDiT",
+    "url": "https://github.com/meituan-longcat",
+    "cluster": "Multimodal"
+  },
+  {
+    "title": "LongCat-Next: Lexicalizing Modalities as Discrete Tokens",
+    "url": "https://arxiv.org/abs/2603.27538",
+    "cluster": "Multimodal"
+  },
+  {
+    "title": "Kernel-Smith: Evolutionary Kernel Optimization",
+    "url": "https://arxiv.org/abs/2603.28342",
+    "cluster": "Efficiency"
+  },
+  {
+    "title": "1-bit Bonsai: First Commercially Viable 1-bit LLMs",
+    "url": "https://prismml.com/news/bonsai-8b",
+    "cluster": "Efficiency"
+  },
+  {
+    "title": "Preference-Aligned LoRA Merging",
+    "url": "https://arxiv.org/abs/2603.26299",
+    "cluster": "Efficiency"
+  },
+  {
+    "title": "Realtime-VLA V2",
+    "url": "https://arxiv.org/abs/2603.26360",
+    "cluster": "Robotics/VLA"
+  },
+  {
+    "title": "DIAL: Decoupling Intent and Action via Latent World Modeling",
+    "url": "https://arxiv.org/abs/2603.29844",
+    "cluster": "Robotics/VLA"
+  },
+  {
+    "title": "Avoid Routing Polarization for OCS-based GPU Clusters",
+    "url": "https://arxiv.org/abs/2603.28168",
+    "cluster": "Hardware/Infrastructure"
+  },
+  {
+    "title": "Weight Tying Biases Token Embeddings Towards Output Space",
+    "url": "https://arxiv.org/abs/2603.26663",
+    "cluster": "Model Architecture"
+  },
+  {
+    "title": "AgentFixer: Failure Detection to Fix Recommendations",
+    "url": "https://arxiv.org/abs/2603.29848",
+    "cluster": "Agents"
+  },
+  {
+    "title": "ChartNet: Multimodal Dataset for Chart Understanding",
+    "url": "https://arxiv.org/abs/2603.27064",
+    "cluster": "Multimodal"
+  },
+  {
+    "title": "VAREX: Multi-Modal Structured Extraction from Documents",
+    "url": "https://arxiv.org/abs/2603.15118",
+    "cluster": "Multimodal"
+  },
+  {
+    "title": "PruneFuse: Efficient Data Selection via Weight Pruning",
+    "url": "https://arxiv.org/abs/2603.26138",
+    "cluster": "Data/Training"
+  },
+  {
+    "title": "DataFlex: Data-Centric Dynamic Training for LLMs",
+    "url": "https://arxiv.org/abs/2603.26164",
+    "cluster": "Data/Training"
+  },
+  {
+    "title": "Rethinking Language Model Scaling under Transferable Hypersphere Optimization",
+    "url": "https://arxiv.org/abs/2603.28743",
+    "cluster": "Model Architecture"
+  },
+  {
+    "title": "A Family of LLMs Liberated from Static Vocabularies",
+    "url": "https://arxiv.org/abs/2603.15953",
+    "cluster": "Vocabulary/Tokenization"
+  },
+  {
+    "title": "VideoZeroBench: Probing Video MLLMs",
+    "url": "https://arxiv.org/abs/2604.01569",
+    "cluster": "Multimodal"
+  },
+  {
+    "title": "Marco DeepResearch: Verification-Centric Design",
+    "url": "https://arxiv.org/abs/2603.28376",
+    "cluster": "Agents"
+  },
+  {
+    "title": "daVinci-LLM: Towards the Science of Pretraining",
+    "url": "https://arxiv.org/abs/2603.27164",
+    "cluster": "Model Architecture"
+  },
+  {
+    "title": "Sharp Capacity Scaling of Spectral Optimizers in Associative Memory",
+    "url": "https://arxiv.org/abs/2603.26554",
+    "cluster": "Theory/Proofs"
+  },
+  {
+    "title": "Working Notes on Late Interaction Dynamics",
+    "url": "https://arxiv.org/abs/2603.26259",
+    "cluster": "Embeddings/Retrieval"
+  },
+  {
+    "title": "On Strengths and Limitations of Single-Vector Embeddings",
+    "url": "https://arxiv.org/abs/2603.29519",
+    "cluster": "Embeddings/Retrieval"
+  }
+]

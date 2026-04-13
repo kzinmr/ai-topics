@@ -1,7 +1,7 @@
 ---
 title: "Claude Mythos"
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-04-13
 tags: [model, llm, ai-safety, emerging]
 aliases: ["Mythos"]
 ---
@@ -39,6 +39,20 @@ Anthropic's decision to withhold Mythos reflects their AI safety-first approach.
 ## Related Commentary
 
 > "Mythos is to Opus what Opus is to Sonnet." — Theo (video analysis)
+
+## UK AI Security Institute (AISI) Evaluation
+
+On April 13, 2026, the UK's AI Security Institute published its evaluation of Claude Mythos Preview:
+
+- **First model to complete an AISI cyber range end-to-end** — previous models could barely complete beginner-level cyber tasks in 2023
+- **Assessment**: Mythos "could be directed to autonomously compromise small, weakly defended, and vulnerable systems if given network access"
+- **Key caveat**: The model is not as dangerous as some media narratives suggested (e.g., claims about schoolchildren taking down power grids). In its current form, Mythos alone is not catastrophic
+- **Recommendation**: Emphasizes cybersecurity fundamentals — regular updates, access controls, security configuration, and logging
+- **Significance**: Confirms that even a restricted preview model arms attackers to a greater degree than predecessors, reinforcing Anthropic's decision to withhold public release
+
+Gary Marcus evaluated the results as finding a middle ground: Mythos is "nowhere near as scary as some made it out to be" but "really does arm attackers to a greater degree than Mythos's predecessors."
+
+> [!NOTE] Concern for agentic code: Marcus notes that agent-written code may itself be "weakly defended and vulnerable," compounding the risk when Mythos-level models are used to generate production code.
 
 ## Sources
 - [[raw/articles/substack.com--app-link-post--40004939]] (Ben's Bites, 2026-04-09)
