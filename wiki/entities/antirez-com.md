@@ -33,6 +33,7 @@ His 2025 project voxtral.c — a bare-metal, pure-C implementation of a multimod
 | 2026 | Published "Implementing a clear room Z80 / ZX Spectrum emulator with Claude Code" — documenting AI pair programming in practice |
 | 2026 | Published "Redis patterns for coding" — documentation resource for LLMs and humans alike |
 | 2026 | Published "GNU and the AI reimplementations" — drawing parallels between GNU's clean-room UNIX rewrites and today's AI-generated code |
+| 2026 | Published "First Token Cutoff LLM sampling" — critiques nucleus sampling (top-p) and proposes a new algorithm to avoid selecting suboptimal tokens that push generation toward hallucination |
 
 ## Core Ideas
 
@@ -119,6 +120,7 @@ Sanfilippo crafts his own data structures (SDS for strings, Rax for radix trees)
 - **Open-source licensing pragmatism**: Not an absolutist — sees licensing as a spectrum and understands the economic realities of sustaining large projects
 - **Comment quality and code readability**: Systematic approach to documentation as an analysis tool
 - **Historical consciousness**: Drawing parallels between GNU's clean-room rewrites and AI-generated reimplementations
+- **LLM sampling research**: Investigating token probability distributions, critiquing nucleus sampling, and proposing first-token cutoff methods to reduce hallucination risk
 - **Joy-driven development**: Left and returned to Redis based on whether the work brought fulfillment
 
 ## Related Concepts
