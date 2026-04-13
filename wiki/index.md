@@ -197,7 +197,8 @@
    195||- [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo / OpenAI Symphony)
    196||- [[concepts/llm-evaluation-harness]] — LLM Evaluation Harness
    197||- [[concepts/local-llm]] — Local LLM Inference (llama.cpp, Ollama, GGUF)
-   198||- [[concepts/meta-harness]] — Meta-Harness
+   198|||- [[concepts/karpathy-loop]] — The Karpathy Loop (Autonomous Experiment Design, autoresearch)
+|- [[concepts/meta-harness]] — Meta-Harness
    199||- [[concepts/scaling-without-slop]] — Scaling without Slop
    200||- [[concepts/world-models-science]] — World Models for Scientific Discovery
    201|

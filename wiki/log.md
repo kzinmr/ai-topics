@@ -1,3 +1,30 @@
+## 2026-04-14 — Karpathy Loop (Autoresearch) Concept Page
+
+### New Concept Pages
+- **[[concepts/karpathy-loop]]** — The Karpathy Loop: Autonomous Experiment Design via `program.md` + agent iteration on `train.py` (5-min fixed budget, val_bpb metric, keep/discard loop). Covers: core architecture, four design constraints, community response, No Priors podcast key themes, Cerebras cheating experiments, real-world applications beyond ML training, relationship to Agentic Engineering & Harness Engineering, criticisms and open problems.
+
+### Key Insights
+- **Four constraints make it work:** Single mutable file, fixed time budget, unambiguous metric (val_bpb), cheap rollback (git reset)
+- **~12 experiments/hour, ~100 overnight** on a single GPU (H100 tested)
+- **Human's role shifted** from writing Python to writing `program.md` — the research protocol in natural language
+- **Agent drift is the main failure mode** — Cerebras found agents abandon tasks within hours if guardrails are loose
+- **The pattern generalizes** but only to domains with fast, unambiguous metrics and cheap rollback
+- **~71K GitHub stars in weeks** — one of the fastest-growing repos in GitHub history
+- **Notable forks:** MLX (Apple Silicon), Windows/RTX, AMD GPU, distributed SETI@home-style coordination
+
+### Sources
+- https://github.com/karpathy/autoresearch
+- https://www.youtube.com/watch?v=kwSVtQ7dziU (No Priors Ep. 154)
+- https://softmaxdata.com/blog/autoresearch/
+- https://www.cerebras.ai/blog/how-to-stop-your-autoresearch-loop-from-cheating
+- https://rywalker.com/research/autoresearch
+- https://mohammadkhan.dev/blog/karpathy-autoresearch-constraint-design
+- https://starkslab.com/notes/autoresearch-review-what-it-actually-does
+
+### Updated Files
+- **wiki/concepts/karpathy-loop.md** — 13.0KB concept page
+- **wiki/index.md** — Added Karpathy Loop to Harness Engineering & Meta section
+
 ## 2026-04-13 (4/4)
 - **Created [[concepts/decoder-only-gpt.md]]** (10.5KB): Complete intuitive explanation of decoder-only GPT architecture based on Karpathy's microgpt (200 lines pure Python). Covers: token embedding + positional encoding, RMSNorm vs LayerNorm, self-attention as "token communication", MLP as "where thinking happens", residual connections, autograd from scratch, Adam optimizer, cross-entropy loss, autoregressive sampling, temperature control, KV cache, scaling from microgpt (4K params) to production LLMs (1.8T params). Key thesis: "Everything else is just efficiency." Source: karpathy.github.io/2026/02/12/microgpt/
 - **Enriched [[andrej-karpathy]]** microgpt section (+1KB): Added detailed technical breakdown with 7 key insights, architecture details, training data specifics. Added decoder-only-gpt to Related.
