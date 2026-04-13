@@ -1,201 +1,188 @@
 ---
-entity: pratik-bhavsar
-aliases:
-  - ptkbhv
-  - bhavsarpratik
-url: https://pakodas.substack.com
-blog: https://pakodas.substack.com
-twitter: "@ptkbhv"
-github: https://github.com/bhavsarpratik
-linkedin: https://www.linkedin.com/in/bhavsarpratik
-role: AI Engineer at Galileo; author of Eval Engineering books
-type: person
-tags:
-  - AI-evaluation
-  - agent-leaderboard
-  - hallucination-index
-  - LLM-as-a-judge
-  - RAG
-  - multi-agent-systems
-updated: 2026-04-10
+title: "Pratik Bhavsar"
+handle: "@ptkbhv"
+created: 2026-04-13
+updated: 2026-04-13
+tags: [person, x-account, ai, llm-engineering, agent-evaluation, rag, llm-as-a-judge, galileo, maxpool]
+aliases: ["pratik bhavsar", "bhavsarpratik", "ptkbhv", "pakodas substack", "maxpool community"]
 ---
 
-# Pratik Bhavsar
+# Pratik Bhavsar (@ptkbhv)
 
-**URL:** https://pakodas.substack.com
-**Blog:** pakodas.substack.com (Eval Engineering newsletter)
-**Twitter/X:** @ptkbhv
-**GitHub:** https://github.com/bhavsarpratik
-**LinkedIn:** https://www.linkedin.com/in/bhavsarpratik
-**Company:** Galileo (AI Engineer, Employee #26 at Series A)
-**Former:** Enterpret (Founding Engineer), Jina AI, Morningstar, Maxpool (Founder)
-**Education:** M.Tech, Indian Institute of Technology (IIT) Bombay (9.15/10 GPA)
-**Location:** India
+| | |
+|---|---|
+| **X** | [@ptkbhv](https://x.com/ptkbhv) |
+| **Blog** | [Pratik's Pakodas](https://pakodas.substack.com/) (5.4K+ subscribers) |
+| **GitHub** | [bhavsarpratik](https://github.com/bhavsarpratik) |
+| **Hugging Face** | [pratikbhavsar](https://huggingface.co/pratikbhavsar) |
+| **Role** | AI Engineer & DevRel at Galileo; Founder of Maxpool community |
+| **Known for** | Agent Leaderboard (open-source benchmarking), Hallucination Index (featured in Andrew Ng's newsletter), BRAG (open-source RAG-tuned LLMs), "Mastering GenAI" book series (4 volumes) |
+| **Bio** | AI Engineer focused on high-performance agentic systems, evaluation without ground truth, and making search systems work in production. Has led full-stack AI at Enterpret and Morningstar before joining Galileo. Founded Maxpool (2019), a community of professional AI engineers and researchers. |
 
 ## Overview
 
-Pratik Bhavsar is an AI Engineer at Galileo, where he leads the Agent Leaderboard and Hallucination Index initiatives — two of the most prominent open benchmarks for evaluating generative AI systems. He is the author of four widely-read ebooks: "Mastering Multi-Agent Systems," "Mastering RAG," "Mastering Agents," and "Mastering LLM-as-a-Judge."
+Pratik Bhavsar is a practitioner-researcher at the intersection of **LLM evaluation, agentic systems, and retrieval-augmented generation**. His intellectual signature is the thesis that **evaluation is the bottleneck for production AI**, not model capability. While most of the industry focuses on building larger models, Pratik argues that the harder problem is measuring whether an AI system actually works — especially when there is no ground truth.
 
-Bhavsar's work focuses on a critical gap in the AI ecosystem: **how do you evaluate AI systems when there's no ground truth?** His Agent Leaderboard benchmarks LLM-based agents on real-world enterprise tasks across multiple domains, providing the industry's first standardized evaluation framework for agentic AI. The Hallucination Index, featured in Andrew Ng's newsletter, tracks the frequency and impact of hallucinations across different models and tasks.
+> "I've spent the last several years across the AI stack: evaluating agents without ground truth, building continual improvement systems for transformers, and making search systems that actually work in production."
 
-His career spans the full AI stack: from building low-latency semantic search engines at Morningstar and Enterpret, to contributing to the open-source neural search framework at Jina AI, to now leading evaluation infrastructure at Galileo. He holds an M.Tech from IIT Bombay (one of India's most prestigious engineering institutions) and has consistently ranked in the top 20 nationally in AI competitions, including Microsoft's Search Ranking Challenge and the SEMEVAL Sentimix competition.
-
-Bhavsar is also the founder of **Maxpool**, a community and nonprofit focused on agents, evaluation, RAG, and the business of AI. Maxpool has built "Max," a custom AI assistant integrated into the community, and serves as a hub for AI professionals sharing evaluation best practices.
-
-## Timeline
-
-| Date | Event |
-|------|-------|
-| 2013–2015 | M.Tech at Indian Institute of Technology (IIT) Bombay, Energy Science and Engineering (9.15/10 GPA) |
-| ~2015–2018 | Data Science/ML roles at various companies (Reckrut.com, Book Lovers Society) |
-| ~2018 | Completed Stanford CS229, CS231n, CS224n, CS224d courses via online certifications |
-| 2019 | Founded Maxpool — community of AI professionals focused on agents and evaluation |
-| 2019–2021 | Data Science roles at Morningstar and TaskHuman — built low-latency semantic search, personalized notification systems, and recommendation engines |
-| 2019 | Secured 1st place in Microsoft AI Challenge (internal) and top 20 nationally in Microsoft's Search Ranking Challenge |
-| 2020 | Top 10 nationally at SEMEVAL Sentimix (sentiment analysis competition) |
-| Sep–Dec 2020 | AI Engineer at Jina AI — contributed to open-source neural search framework, NER for intent extraction on social media |
-| Feb 2021–May 2023 | Founding Engineer at Enterpret — built semantic search, reranking, text generation, and zero/few-shot NLP pipelines for enterprise AI |
-| Jun 2023–Present | AI Engineer at Galileo (Employee #26 at Series A) — leading Agent Leaderboard and Hallucination Index |
-| Feb 2025 | Launched Agent Leaderboard v1 on Hugging Face — benchmarking 30+ LLMs across agentic tasks |
-| Jul 2025 | Launched Agent Leaderboard v2 — enterprise-grade benchmark across 5 industries with Klarna case study context |
-| 2025 | Published "Mastering Agents" ebook |
-| 2025 | Published "Mastering Multi-Agent Systems" ebook |
-| 2025 | Published "Mastering RAG" ebook |
-| 2025 | Published "Mastering LLM-as-a-Judge" ebook |
-| 2025 | Galileo's Hallucination Index featured in Andrew Ng's newsletter |
-| 2026 | 1st place in every internal hackathon at Galileo (continuous record) |
-| 2026 | Active contributor to evaluation frameworks and open-source AI benchmarks |
+His career spans the full AI engineering lifecycle: from data science at Morningstar, to founding the VOC (Voice of Customer) AI platform at Enterpret, to his current role at **Galileo AI** — a company building evaluation infrastructure for generative AI. Along the way, he has published **4 books** in the "Mastering GenAI" series, created the **Agent Leaderboard** (an open framework for benchmarking LLM-based enterprise agents), and built **Maxpool**, a community of AI engineers and researchers.
 
 ## Core Ideas
 
-### What We Measure Shapes AI
+### 1. Evaluation Is the Foundation, Not an Afterthought
 
-Bhavsar's foundational philosophy for evaluation work:
+Pratik's central philosophy is that **you cannot improve what you cannot measure** — and most AI teams ship systems without adequate evaluation.
 
-> "What we measure shapes AI."
-> — Agent Leaderboard v2 announcement
+> "The teams who succeed are the ones who build evaluation into their development cycle from day one, not as an afterthought."
 
-This echoes Goodhart's Law (when a measure becomes a target, it ceases to be a good measure) but applies it constructively: the benchmarks we create define the direction the entire field moves. If we only measure token accuracy, models optimize for token accuracy. If we measure action completion in realistic enterprise scenarios, models optimize for actually solving user problems.
+At Galileo, he helped develop evaluation frameworks that:
+- Detect hallucinations without ground truth references
+- Benchmark agents on multi-step, multi-tool tasks
+- Track quality degradation over time in production systems
 
-### Action Completion Over Token Metrics
+His **Hallucination Index** (featured in Andrew Ng's newsletter) was one of the first systematic attempts to quantify how often LLMs fabricate information across different models and tasks.
 
-A key insight driving Agent Leaderboard v2: traditional NLP metrics (BLEU, ROUGE, exact match) are inadequate for evaluating agentic AI. Agents don't just generate text — they take actions, interact with tools, navigate interfaces, and complete multi-step workflows.
+### 2. Agents Need Leaderboards Too
 
-Agent Leaderboard v2 measures:
-- **Action Completion (AC):** Did the agent complete every user goal in the scenario, providing clear confirmation or a correct answer?
-- **Domain-specific performance:** Across 5 critical industries (customer support, travel, finance, etc.)
-- **Realistic scenarios:** Based on real enterprise workflows rather than synthetic benchmarks
+Pratik created the **Agent Leaderboard** — an open-source benchmarking framework that ranks LLMs on agentic tasks, not just text completion.
 
-The first results showed GPT-4.1 leading with an average Action Completion score of 62% across all domains — meaning even the best models fail to complete user goals nearly 40% of the time.
+> "Traditional benchmarks like MMLU test knowledge. Agent benchmarks test whether a model can actually *do* something — plan, use tools, recover from errors, and complete multi-step workflows."
 
-### The Klarna Lesson: Why Evaluation Matters
+The leaderboard evaluates agents across:
+- Multi-domain task execution
+- Tool use and API integration
+- Error recovery and self-correction
+- Cost and latency tradeoffs
 
-Agent Leaderboard v2 was explicitly motivated by Klarna's infamous decision to replace 700 customer-service reps with AI, which backfired so severely that they had to rehire humans. Bhavsar's team wrote:
+Version 2 (launched 2025) added enterprise-grade scenarios, balancing cost, latency, and performance in real-world agent workflows.
 
-> "Klarna's decision to replace 700 customer-service reps with AI backfired so much that they're now rehiring humans. That's precisely the problem Agent Leaderboard v2 is built to solve. Rather than simply testing whether an agent can answer a question, we test whether it can complete real enterprise tasks."
-> — Agent Leaderboard v2 blog, July 2025
+### 3. RAG Is About Retrieval Quality, Not Just Embeddings
 
-This real-world example grounds his evaluation philosophy: AI systems need to be evaluated on the same criteria businesses use to evaluate human employees. Can they complete the task? Can they handle edge cases? Can they provide appropriate escalation when uncertain?
+Pratik has written extensively on RAG (Retrieval-Augmented Generation), arguing that **the retrieval step is the ceiling on system quality**.
 
-### LLM-as-a-Judge
+> "Most teams focus on the generation step — which model to use, how to prompt it. But if your retrieval is poor, no amount of prompt engineering will save you."
 
-Bhavsar's "Mastering LLM-as-a-Judge" ebook and the associated open-source tools address one of the hardest problems in AI evaluation: **how do you score AI outputs when there's no objective ground truth?**
+His work on **BRAG** (Budget RAG — a family of open-source small LMs fine-tuned for RAG) demonstrated that you can match state-of-the-art performance for under $25 per model by focusing on the retrieval pipeline rather than model size.
 
-The LLM-as-a-judge approach uses a strong language model to evaluate the outputs of weaker models, providing:
-- Rubric-driven scoring (not just binary right/wrong)
-- Consistency across evaluators (LLMs don't have bad days)
-- Scalability (can evaluate thousands of outputs in minutes)
-- Explainability (the judge model can justify its scores)
+Key insights from his RAG writing:
+- **Encoder selection matters more than people think** — choosing the right embedding model for your domain is critical
+- **Hybrid search (BM25 + vector) outperforms pure semantic search** for most practical use cases
+- **Chunking strategy** should be determined by document structure, not arbitrary token limits
+- **Evaluation must be continuous** — build synthetic test sets and run them on every pipeline change
 
-His work includes production-ready LLM evaluation tools with TypeScript implementation and 19 passing tests in the open-source `llm-as-judge-skills` project.
+### 4. "How to Be a 30x AI Engineer with a Taste"
 
-### Hallucination Tracking at Scale
+In his most viral essay (Feb 2026), Pratik identified **"taste"** as the differentiating skill for engineers in the age of AI:
 
-The Galileo Hallucination Index, which Bhavsar leads, tracks hallucination frequency and impact across different models and tasks. Featured in Andrew Ng's newsletter, the Index has become one of the industry's most-cited resources for understanding model reliability.
+> "The word that keeps coming up is 'taste.' Emma Tang, head of data infrastructure at OpenAI, said it directly: 'Everybody can be a 10x engineer now, as long as you have people with good software taste.' Tibo, the head of Codex, said the most successful engineers on his team 'spend a lot more time thinking about their users.'"
 
-His approach to hallucination measurement goes beyond binary "hallucinated/not hallucinated" — it considers:
-- **Severity:** How impactful is the hallucination? (Minor factual error vs. dangerous medical misinformation)
-- **Frequency:** How often does the model hallucinate on a given task type?
-- **Domain-dependence:** Do hallucination rates vary by industry or use case?
-- **Model-dependence:** Which models hallucinate least on which types of tasks?
+His argument is that **code generation is becoming commoditized**, so the remaining human advantage is judgment: knowing what to build, how to architect it, when something is good enough to ship, and recognizing clean systems versus time bombs.
 
-### Building Evaluation Infrastructure, Not Just Benchmarks
+> "That's taste. And it turns out it's the part that matters most."
 
-Bhavsar distinguishes between creating a benchmark (a static dataset with scores) and building evaluation infrastructure (tools, frameworks, and processes that enable continuous improvement):
+### 5. Community-Driven Learning (Maxpool)
 
-- **Agent Leaderboard** is not just a ranking — it's an open framework for benchmarking LLM-based enterprise agents that anyone can extend
-- **Hallucination Index** is not just a report — it's an ongoing tracking system that updates as new models and tasks emerge
-- His open-source tools on GitHub (including the `galileo-ai/agent-leaderboard` repository) provide reusable evaluation pipelines
+Pratik founded **Maxpool** in 2019 as a community for professional AI engineers, researchers, and builders. The community focuses on:
+- Agents and evaluation
+- RAG and search systems
+- The business of AI
 
-This infrastructure-first approach ensures that evaluation keeps pace with the rapidly evolving capabilities of AI systems.
+In 2025, Maxpool migrated from WhatsApp to Discord and launched **Max**, a custom AI assistant integrated into the community:
 
-## Key Quotes
+> "We're building what we believe will be the world's first truly agent-driven AI community."
 
-> "What we measure shapes AI."
-> — Agent Leaderboard v2 announcement
+## Key Work
 
-> "I've spent my career working across the AI stack, evaluating agents without ground truth, building continual improvement systems for transformers, and making search systems that actually work in production."
-> — GitHub profile
+### Galileo AI (Current)
+As AI Engineer & DevRel at Galileo — a company building evaluation infrastructure for generative AI — Pratik:
+- Develops the **Agent Leaderboard** (open-source benchmarking framework)
+- Leads research on hallucination detection and measurement
+- Writes and speaks on evaluation engineering best practices
+- Contributes to Galileo's evaluation intelligence platform
 
-> "Klarna's decision to replace 700 customer-service reps with AI backfired so much that they're now rehiring humans. That's precisely the problem Agent Leaderboard v2 is built to solve."
-> — Agent Leaderboard v2 blog, July 2025
-
-> "Rather than simply testing whether an agent can answer a question, we test whether it can complete real enterprise tasks."
-> — Agent Leaderboard v2 blog
-
-## Key Projects
-
-### Agent Leaderboard (galileo-ai/agent-leaderboard)
-Open framework for benchmarking LLM-based enterprise agents. v1 (Feb 2025) tested 30+ LLMs. v2 (Jul 2025) expanded to 5 industries with realistic enterprise scenarios. Hosted on Hugging Face with 1,280+ views and active community contributions.
+### Agent Leaderboard
+An open framework for benchmarking LLM-based enterprise agents:
+- GitHub: `rungalileo/agent-leaderboard` (219+ stars)
+- Hugging Face Space with live rankings
+- Evaluates on multi-domain agentic tasks, not just text completion
+- Version 2 added cost/latency/performance tradeoff analysis
 
 ### Hallucination Index
-Open-source index tracking hallucination frequency and impact across models and tasks. Featured in Andrew Ng's newsletter. Repository: github.com/rungalileo/hallucination-index.
+One of the first systematic attempts to quantify LLM hallucination rates:
+- Featured in Andrew Ng's newsletter
+- Tracks hallucination frequency across models and tasks
+- Open methodology for reproducibility
 
-### Mastering GenAI Series (4 ebooks)
-- **Mastering Multi-Agent Systems** — Architecting production-grade multi-agent workflows
-- **Mastering RAG** — Retrieval-augmented generation best practices
-- **Mastering Agents** — Building and deploying AI agents
-- **Mastering LLM-as-a-Judge** — Evaluation without ground truth
-All published via Galileo (galileo.ai/ebook).
+### BRAG (Budget RAG)
+Family of open-source small LMs fine-tuned for RAG:
+- Matches state-of-the-art performance at under $25/model to train
+- Demonstrates that retrieval quality matters more than model size
+- Available on Hugging Face
 
-### Maxpool
-Community and nonprofit founded in 2019 for AI professionals. Focus on agents, evaluation, RAG, and the business of AI. Built "Max," a custom AI assistant integrated into the community platform.
+### "Mastering GenAI" Book Series
+4 technical books covering the AI engineering stack:
+1. **Mastering RAG** — Retrieval-augmented generation architecture and implementation
+2. **Mastering Agents** — Building and deploying autonomous AI agents
+3. **Mastering LLM-as-a-Judge** — Using LLMs to evaluate LLM outputs
+4. **Mastering Multi-Agent Systems** — Orchestrating multiple AI agents for complex tasks
 
-### Search Ranking at Morningstar and Enterpret
-Built low-latency core semantic search using transformers for autocompletion and search, unsupervised deep learning-based recommendation engines, and personalized notification systems.
+### Enterpret (Founding Engineer, NLP)
+As a founding engineer at the Voice of Customer analytics platform:
+- Led full-stack AI from zero to production
+- Designed search and NLP pipelines for customer feedback analysis
+- Built MLOps infrastructure for model deployment and monitoring
+- Won every internal hackathon
 
-## Honors & Recognition
+### Morningstar
+As an AI/ML engineer:
+- Built search ranking systems for financial data
+- Developed transformer-based models for financial text analysis
+- Won every internal hackathon
+- Top 20 nationally in Microsoft's Search Ranking challenge
 
-- 🥇 **1st place** in every internal hackathon at Galileo, Morningstar, and Enterpret
-- 📈 **Top 20 nationally** in Microsoft's Search Ranking Challenge
-- 📝 **Top 10 nationally** in SEMEVAL Sentimix 2020
-- 🏆 **1st place** in Microsoft AI Challenge 2018 (internal)
-- 📰 **Featured in Andrew Ng's newsletter** for the Hallucination Index
-- 📚 **4 published ebooks** on AI evaluation, RAG, multi-agent systems, and LLM-as-a-judge
-- 🎓 **9.15/10 GPA** at IIT Bombay (M.Tech, Energy Science and Engineering)
-- 👥 **25K+ LinkedIn followers**, 3K+ on X
+### Maxpool Community
+Founded in 2019, now 1,000+ members:
+- Slack/Discord community for AI engineers and researchers
+- Regular discussions on agents, evaluation, RAG, and AI business
+- Built **Max**, a custom AI assistant for the community
+- Hosts teach-me-something sessions and technical discussions
 
-## Related Concepts
+## Blog / Key Writings
 
-- [[AI-Evaluation]] — Bhavsar's primary domain
-- [[Agent-Leaderboard]] — His flagship benchmarking project
-- [[Hallucination-Index]] — His industry-cited hallucination tracking
-- [[LLM-as-a-Judge]] — His approach to evaluation without ground truth
-- [[RAG]] — Retrieval-augmented generation, covered in his ebooks
-- [[Multi-Agent-Systems]] — His architectural expertise
-- [[Galileo-AI]] — His current company
-- [[Semantic-Search]] — His earlier engineering work
+### Agent Evaluation
+- **Agent Evaluation Playbook** (Jul 2025) — Webinar with DAIR.AI covering metrics definition, evaluation flywheels, integrated observability, and CI/CD-style pipelines for agents
+- **Adversarial Testing and Improvement for Agents** — Open-source framework (`autoresearch-for-agents`) for testing agents against adversarial inputs and iteratively improving them
+- **Launching Agent Leaderboard v2: The Enterprise-Grade Benchmark for AI Agents** — Hugging Face article on the new version with cost, latency, and performance tradeoff analysis
 
-## Sources
+### RAG & Search
+- **LLM Chronicles #8: How To Select Encoder For Semantic Search & RAG?** (Aug 2023) — Systematic approach to choosing embedding models for your domain
+- **LLM Chronicles #7: How To Evaluate LLMs? | Open LLM Leaderboard** (Aug 2023) — Internals of automated LLM evaluation
+- **LLM Chronicles #5: GPT For Ecommerce Search Engine With Pinecone** (May 2023) — Offloading complex query parsing to LLMs for search
 
-- Substack: https://pakodas.substack.com
-- GitHub: https://github.com/bhavsarpratik
-- LinkedIn: https://www.linkedin.com/in/bhavsarpratik
-- Hugging Face: https://huggingface.co/pratikbhavsar
-- Agent Leaderboard v2: https://huggingface.co/blog/pratikbhavsar/agent-leaderboard-v2
-- Agent Leaderboard collection: https://huggingface.co/collections/pratikbhavsar/agent-leaderboard-67c03062f856fd8ddbca2b80
-- Galileo blog: https://galileo.ai/blog/agent-leaderboard-v2
-- Galileo ebooks: https://www.galileo.ai/ebook-mastering-agents
-- Hallucination Index: https://github.com/rungalileo/hallucination-index
-- Maxpool: https://maximalists.ai/
-- IIT Bombay profile: https://www.ese.iitb.ac.in/student/pratik-bhavsar
+### AI Engineering & Career
+- **How to Be a 30x AI Engineer with a Taste** (Feb 2026) — Viral essay on "taste" as the differentiating skill when code generation is commoditized
+- **Eight Theories of How Agents Strangle SaaS** (Feb 2026) — Analysis of how AI agents are reshaping the $273B SaaS industry
+- **LLM Chronicles #6: How To Build Competitive Advantage In AI Startups?** (May 2023) — Strategic thinking on AI startup moats
+
+### Community
+- **Maxpool is Now on Discord with Agents** (Apr 2025) — Announcing the migration from WhatsApp to Discord with AI assistant integration
+- Various community posts on Maxpool about GenAI engineering and research
+
+## Related People
+
+- **[[eugene-yan]]** — Fellow practitioner in production ML evaluation; both emphasize systematic, data-driven approaches over benchmarks
+- **[[andrei-lopatenko]]** — Influential in semantic search, which Pratik has cited as a key area of interest
+- **Galileo AI** — Current employer; evaluation infrastructure company
+- **Enterpret** — Former employer; VOC analytics platform where Pratik was founding engineer
+- **Andrew Ng** — Featured Pratik's Hallucination Index in his newsletter
+- **DAIR.AI** — Collaborated on Agent Evaluation Playbook webinar
+
+## X Activity Themes
+
+- **Agent evaluation frameworks** — How to measure AI system quality without ground truth
+- **RAG optimization** — Retrieval quality, encoder selection, chunking strategies
+- **LLM-as-a-Judge** — Using models to evaluate model outputs
+- **AI engineering career advice** — Practical tips for data scientists transitioning to AI engineering
+- **Industry analysis** — SaaS disruption by AI agents, market trends
+- **Community building** — Maxpool discussions, event announcements
+- **Open source contributions** — Agent Leaderboard updates, BRAG model releases
