@@ -69,6 +69,32 @@ This incident reflects a structural tension:
 
 The pattern extends beyond Anthropic: Google has also taken action against Gemini usage in third-party agent frameworks.
 
+
+## April 2026: Steinberger Ban & Subscription Cut-off Escalation
+
+### Timeline
+- **Apr 4**: Anthropic blocks third-party harnesses (OpenClaw) from Claude subscriptions
+- **Apr 6**: Computerworld reports the "claw tax" — users must now pay API rates for agent usage
+- **Apr 10**: Peter Steinberger's account temporarily suspended for "suspicious activity"
+  - Ban lasted only a few hours, lifted after viral X post
+  - Anthropic engineer reached out to offer help
+  - Steinberger clarified he was using API, not subscription abuse
+- **Apr 10-12**: TechCrunch and Business Insider coverage
+  - Steinberger revealed he delayed the cutoff by one week through direct negotiation with Boris Cherny
+  - Accused Anthropic of copying OpenClaw features into their closed harness before locking out open source
+
+### The "Claw Tax" Economics
+- Single OpenClaw instance on Claude Opus model: **$109.55/day** (c't 3003 testing, Jan 2026)
+- Professional developer average: **$6/day** (90% below $12/day)
+- Token gap is **~9x** the subscription value
+- Anthropic offered: one-time credit = monthly subscription price + 30% discount on API bundles
+
+### Competitive Context
+- Steinberger joined OpenAI in Feb 2026 to lead personal agent development
+- OpenClaw moved to open-source foundation with OpenAI backing
+- Anthropic's own Claude Code remains included in subscription plans (not subject to restrictions)
+
+
 ## Related
 
 - [[concepts/open-claw-ecosystem]] — OpenClaw and the personal AI agent movement

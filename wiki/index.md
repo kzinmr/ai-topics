@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-13 (Anthropic-OpenClaw conflict, illusion of thinking research, neurosymbolic robotics, Peter Steinberger entity)
+Last updated: 2026-04-13 (Claude Mythos Preview, Meta Muse Spark, AI Digital NATO, Anthropic-OpenClaw, illusion of thinking, Peter Steinberger)
 
 ## Entity Pages (46)
 
