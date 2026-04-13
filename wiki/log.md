@@ -8,6 +8,30 @@ title: "Wiki Change Log"
 
 ### Entity Page Enrichments (skeleton → L2/L3)
 
+#### Scott Wu (skeleton → L3)
+- **Bio**: CEO & Co-Founder, Cognition AI. 3× IOI Gold Medalist. Harvard dropout. Forbes 30 Under 30 (2019, Lunchclub).
+- **Core Ideas**: "AI should augment human engineers, not replace them." Extreme performance culture. Closing the agent loop (Write→Catch→Fix→Merge autonomously). Single-threaded agent philosophy with context continuity.
+- **Contributions**: Devin 1.0 (13.86% SWE-bench unassisted, vs 1.96% previous SOTA). Cognition grown from 10-person team to $10B+ valuation. Enterprise adoption at Goldman Sachs, Citi (40K+ developers), NASA, Ramp, Stripe (1K+ PRs/week).
+- **Philosophy**: "Eventually, the future comes." — closing the agent loop, no human needed for PR reviews. Competitive programming background (10 IOI gold medals across founding team) gives unique edge in algorithmic AI development.
+- **Timeline**: Mathcounts champion → IOI Gold → Addepar → Harvard (dropout) → Lunchclub (2019) → Cognition AI (2023) → Devin 1.0 (Mar 2024) → $400M raise at $10B+ (2025) → Devin GA (2026)
+- **Sources**: cognition.ai/blog/introducing-devin, cognition.ai/blog/devin-2-2, SF Standard (Mar 2026), American Optimist Podcast
+
+#### Nader Dabit (skeleton → L3)
+- **Bio**: Growth Engineer at Cognition AI (Feb 2026–). AWS (2018–2021) → Aave Labs (2022–2024) → Eigen Labs (2024–2026). React Native Training founder (2016–2021).
+- **Core Ideas**: **Cloud Agent Thesis** — "Cloud agents are a different category from local agents, and the differences compound." **Agents That Never Sleep** — 70/30 human→agent trigger ratio inverting to 10/90. Prerequisites: unit tests, documentation, reproducible dev environments, rich system context.
+- **Key Publications**: "Engineering for Agents That Never Sleep" (Mar 2026), "How Cognition Uses Devin to Build Devin" (Feb 2026), "How to Run a Fleet of Cloud Agents" (Mar 2026), "The Cloud Agent Thesis" (Feb 2026). Substack: 1.7K+ subscribers.
+- **Philosophy**: "That scaffolding is the difference between an agent that opens a PR and an agent that closes an incident at 3am." "Local agents make developers faster. Cloud agents make engineering orgs more capable."
+- **Key Metrics**: Cognition internal: 154→659 Devin PRs/week. Industry: Stripe 1K+ agent-written PRs/week, 1.2M merged PRs across hundreds of orgs.
+- **Sources**: nader.substack.com, nader.codes, LinkedIn, X (@dabit3)
+
+#### Walden Yan (skeleton → L3)
+- **Bio**: Co-Founder & CPO, Cognition AI. IOI 2020 Gold Medalist (19/343, 505.38/600). MIT PRIMES researcher (cryptography, ML). Harvard CS & Economics (2020–2024).
+- **Core Ideas**: **Context Engineering** — "Share full agent traces, not just individual messages." "Actions carry implicit decisions, and conflicting decisions carry bad results." **Don't Build Multi-Agents** — current multi-agent frameworks are fragile; single-threaded agents with context continuity are more reliable.
+- **Background**: DeepReason (Co-Founder & CEO, 2022–2023, security systems) → Anysphere/Cursor (Early Engineer, Jun–Aug 2023) → Inverted Agency (Managing Partner, 2020–2021). Early exposure to AI-powered coding at Cursor directly informed Devin's architecture.
+- **Philosophy**: "We're still playing with raw HTML & CSS" — current agent development lacks standardization. Advocates for intellectual humility: "Our theories are likely not perfect, and we expect things to change."
+- **Key Publications**: "Don't Build Multi-Agents" (Jun 2025, Cognition Blog) — most cited article on context engineering. Maven Course: "Why Devin Does Not Use Multi-Agents."
+- **Sources**: cognition.ai/blog/dont-build-multi-agents, LinkedIn, Product Hunt, waldenyan.com, IOI 2020 Statistics
+
 #### Ali Farhadi (skeleton → L2)
 - **Bio**: YOLO co-creator, Xnor.ai founder (→Apple $200M), Ai2 CEO (2023-2026) → Microsoft (Mustafa Suleyman's AI team)
 - **Core Ideas**: Open-source AI as default ("Open source is how we drive progress"), financial reality of frontier AI, real-time object detection philosophy, multimodal AI grounding

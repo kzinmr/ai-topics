@@ -2,9 +2,9 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-13 (Claude Mythos Preview, Meta Muse Spark, AI Digital NATO, Anthropic-OpenClaw, illusion of thinking, Peter Steinberger enriched, Ali Farhadi enriched, Shlok Khemani enriched)
+Last updated: 2026-04-13 (Claude Mythos Preview, Meta Muse Spark, AI Digital NATO, Anthropic-OpenClaw, illusion of thinking, Peter Steinberger enriched, Ali Farhadi enriched, Shlok Khemani enriched, Scott Wu L3, Nader Dabit L3, Walden Yan L3)
 
-## Entity Pages (49)
+## Entity Pages (52)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 
@@ -282,9 +282,9 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 - [[entities/ryan-lopopolo|Ryan Lopopolo]] (@_lopopolo) — OpenAI Frontier. Harness Engineering, Symphony multi-agent orchestration
 - [[entities/boris-cherny|Boris Cherny]] (@bcherny) — Head of Claude Code at Anthropic. "Coding is solved", 100% AI-authored codebase
 |- [[entities/addy-osmani|Addy Osmani]] (@addyosmani) — Director, Google Cloud AI. Conductor→Orchestrator framework, Agent Teams/Swarms, AGENTS.md critique
-|- [[entities/scott-wu|Scott Wu]] (@ScottWu46) — Cognition CEO. Devin creator. "Build for the future, not tab-complete". 100x capability growth, context anxiety discovery
-|- [[entities/nader-dabit|Nader Dabit]] (@dabit3) — Cognition Growth Engineer. Cloud Agent Thesis, Agentic Slack, mobile-first agent orchestration
-|- [[entities/walden-yan|Walden Yan]] — Cognition engineer. "Don't Build Multi-Agents" — context continuity, single-threaded agent reliability
+||- [[entities/scott-wu|Scott Wu]] (@ScottWu46) — Cognition CEO & Co-Founder. IOI Gold Medalist. Devin creator. $10B+ valuation. "Eventually, the future comes" — closing the agent loop. 100x capability growth (154→659 PRs/week). Single-threaded agent philosophy.
+||- [[entities/nader-dabit|Nader Dabit]] (@dabit3) — Cognition Growth Engineer. Cloud Agent Thesis. "Engineering for Agents That Never Sleep" — 70/30 human→agent trigger ratio inverting to 10/90. AWS→Aave→Eigen→Cognition. Substack (1.7K+).
+||- [[entities/walden-yan|Walden Yan]] — Cognition Co-Founder & CPO. IOI 2020 Gold Medalist. "Don't Build Multi-Agents" — context continuity beats parallelism. Context Engineering principles. MIT PRIMES (cryptography, ML). Harvard CS.
 
 ### AI Memory & Context Systems
 
