@@ -1,123 +1,109 @@
 ---
 title: "Boris Cherny"
-created: 2026-04-10
-updated: 2026-04-10
-tags: [person, x-account, ai, coding-agents, developer-tools, typescript, anthropic]
-aliases: ["@bcherny", "bcherny", "Boris Cherny"]
-source: x-account
+created: 2026-04-13
+updated: 2026-04-13
+tags: [person, x-account, ai, coding-agents, claude-code, openai, typescript]
+aliases: ["bcherny", "boris cherny claude code", "@bcherny__"]
 ---
 
 # Boris Cherny
 
 | | |
 |---|---|
-| **X/Twitter** | [@bcherny](https://x.com/bcherny) |
+| **X/Twitter** | [@bcherny__](https://x.com/bcherny__) |
+| **GitHub** | [bcherny](https://github.com/bcherny) |
 | **Blog** | [borischerny.com](https://borischerny.com/) |
-| **RSS** | [feed](https://borischerny.com/feed) |
-| **Role** | Creator & Head of Claude Code, Anthropic |
-| **Previously** | Meta (7 years, code across Instagram/Facebook/WhatsApp/Messenger) |
-| **Books** | *Programming TypeScript* (O'Reilly, 2019) |
+| **Role** | Creator of Claude Code, OpenAI |
 
 ## Bio
 
-Boris Cherny is the creator and head of **Claude Code** at Anthropic. He previously spent seven years at Meta as a software engineer, where he was one of the most prolific code authors and reviewers across Instagram, Facebook, WhatsApp, and Messenger. He is the author of *Programming TypeScript* (O'Reilly, 2019). He lives in San Francisco.
+Boris Cherny is the creator of **Claude Code**, Anthropic's agentic coding CLI, now developed at OpenAI. He is one of the most influential voices in practical AI agent workflows, known for deep technical insights on parallel agent execution, terminal optimization, and the philosophy that **"there is no one right way to use Claude Code."**
+
+Previously, Boris was a core contributor to **Flow**, Facebook's static type checker for JavaScript, where he worked on type inference, gradual typing, and developer tooling.
 
 ## Core Ideas
 
-### "Coding Is Solved"
+### Parallel Agent Execution is the #1 Unlock
 
-Cherny is the most prominent voice declaring that **coding as a standalone skill is "largely solved."** In a widely-cited X post (March 7, 2026), he confirmed:
+Boris's most repeated and influential insight:
 
-> "Can confirm Claude Code is 100% written by Claude Code."
+> "Run 3–5 Claude sessions simultaneously using git worktrees or separate checkouts. Use shell aliases (za, zb, zc) for instant worktree hopping. Number terminal tabs 1–5 & enable system notifications to track when Claude needs input."
 
-This wasn't a one-off — it was the culmination of a public trajectory:
-- **May 2025**: ~80% of Claude Code's codebase was written by Claude Code itself
-- **Dec 2025**: Had not opened an IDE for an entire month; shipped 259 PRs, 497 commits, 40K lines added, 38K lines removed — all via Claude Code
-- **Jan 2026**: Confirmed Anthropic's Cowork product was written "pretty much all" by Claude Code
-- **Mar 2026**: 100% self-authored
+This reframes the developer experience from sequential, single-agent interaction to a **multi-agent orchestration** pattern where:
+- One agent reads logs and runs queries (analysis worktree)
+- Multiple agents implement features in parallel (feature worktrees)
+- The human acts as coordinator and approver
 
-### What Happens After Coding Is Solved
+### NO_FLICKER Terminal Renderer
 
-Cherny argues that the elimination of manual coding doesn't eliminate the need for engineers — it **elevates** them. Key insights from his Lenny's Podcast and Pragmatic Engineer appearances:
+Boris introduced the `CLAUDE_CODE_NO_FLICKER=1` experimental renderer that:
+- Eliminates screen flickering/jumping as conversations grow
+- Maintains constant memory/CPU regardless of conversation length
+- Adds mouse support (click-to-place cursor, clickable UI elements)
+- Improves text selection behavior (excludes line numbers & UI artifacts)
+- Is now the preferred renderer for most internal users
 
-1. **The role shifts from implementation to problem definition** — Engineers spend time understanding *what* to build rather than *how* to write it
-2. **Non-coding roles are next** — Product managers, designers, and even finance staff on his team all "code" now via Claude Code
-3. **The title "software engineer" may disappear** — Replaced by a more general "builder" role where everyone can create software
-4. **Underfunding + unlimited tokens = better products** — Small teams with generous compute outperform large teams with constrained budgets
-5. **Latent demand drives product** — Claude Code and Cowork emerged from observing what people were already trying to do, not from top-down roadmaps
+### Agent-Centric Product Philosophy
 
-### Claude Code at Scale
+> "There is no one right way to use Claude Code -- everyones' setup is different. You should experiment to see what works for you!"
 
-Under Cherny's leadership:
-- **$500M+ annualized revenue** within ~1 year of launch
-- **4% of all public GitHub commits** (projected 20% by end of 2026)
-- **200% productivity increase** at Anthropic
-- Cherny personally ships **10-30 PRs daily** while leading the team
+This philosophy rejects one-size-fits-all agent configurations. Boris advocates for:
+- Custom hooks for background alerts and workflow automation
+- Terminal-specific optimizations (iTerm2, Warp, Alacritty)
+- Vim mode and `Shift+Enter` for newlines (IDE-like behavior in terminal)
+- Skills like `/simplify` and `/batch` for automating PR shepherding and parallel code migrations
 
-### Principles for Building AI Products
+### Claude Code Origin Story
 
-Cherny has articulated several counterintuitive product principles:
+Launched late 2024 as "Claude CLI" for internal dogfooding at Anthropic. Early unexpected adoption patterns:
+- Engineers used it for git operations & code writing before agentic capabilities were mature
+- **Data scientists** rapidly adopted it for SQL queries, ASCII terminal plots, and `matplotlib` workflows
+- This demonstrated the tool's flexibility extends far beyond traditional software engineering
 
-| Principle | Detail |
-|-----------|--------|
-| **Always use the most capable model** | Don't optimize for token cost; a smarter model saves more time than it costs |
-| **Constraint drives creativity** | Underfunded teams with unlimited tokens innovate faster |
-| **Latent demand > roadmap** | Build what people are already trying to hack together |
-| **Everyone codes** | The boundary between "technical" and "non-technical" roles dissolves |
-| **Experimentation speed** | Rapid prototyping and iteration beats perfect planning |
+### Subscription Model & Capacity Management
 
-### The Printing Press Analogy
+In April 2026, OpenAI announced that Claude subscriptions would no longer cover usage on third-party tools like OpenClaw, reflecting the fundamental difference between interactive human usage and autonomous agent usage patterns:
 
-Cherny has compared the current moment to the invention of the printing press — a fundamental shift in how knowledge is produced and distributed. He argues that just as the printing press didn't eliminate writers (it multiplied them), AI coding tools won't eliminate engineers (they'll multiply builders).
+> "Capacity is a resource we manage thoughtfully and we're prioritizing our customers using our products and API."
+
+## Key Work
+
+### Claude Code (Creator)
+- Built and shipped the agentic coding CLI that became one of the most widely adopted developer tools
+- Pioneered git worktree isolation for parallel agent workflows
+- Introduced the NO_FLICKER renderer for stable terminal experiences
+- Developed skills system (`/simplify`, `/batch`) for automating repetitive agent tasks
+
+### Flow Type Checker (Core Contributor)
+- Worked on Facebook's static type checker for JavaScript
+- Focus areas: type inference, gradual typing, developer tooling
+- This background in type systems directly informed his approach to structured agent outputs
+
+## X Activity Themes
+
+- **Claude Code tips and tricks** — Terminal setup, renderer optimization, worktree workflows
+- **Parallel agent patterns** — Running 3-5 sessions simultaneously, shell aliases, coordination
+- **Product philosophy** — "There is no one right way to use Claude Code"
+- **Feature announcements** — New capabilities, experimental modes, subscription changes
+- **Developer experience** — Terminal behavior, mouse support, text selection, notifications
 
 ## Key Quotes
 
-> "Coding is now 'solved' for most use cases. I haven't written a single line of code by hand since November, with 100% of my work now authored by Claude Code."
+> "There is no one right way to use Claude Code -- everyones' setup is different. You should experiment to see what works for you!"
 
-> "I think by the end of the year the title 'software engineer' is going to start to go away and it's just going to be replaced by 'builder'."
+> "Run 3–5 Claude sessions simultaneously using git worktrees or separate checkouts."
 
-> "Back at Meta, with hundreds of engineers working on productivity, we'd see gains of a few percentage points in a year. Now we're seeing hundreds of percentage points."
-
-> "Software engineering is changing, and we're just getting started."
-
-## X/Twitter Activity Pattern
-
-Cherny uses X primarily to:
-- Share **first-hand data points** from building Claude Code at Anthropic
-- Articulate **provocative theses** about the future of software engineering
-- Respond to **community questions** with insider perspective (e.g., "why is Anthropic still hiring 100+ engineers if AI writes all the code?")
-- Post **practical tips** for using Claude Code effectively
-- Engage with the broader AI/developer community on trends like Codex, Cursor, and agent swarms
-
-His posting style is characterized by **brevity and directness** — often single-sentence confirmations or data-backed claims rather than long-form essays.
-
-## Publications & Appearances
-
-- **Lenny's Podcast** (Feb 2026) — "Head of Claude Code: What happens after coding is solved"
-- **Pragmatic Engineer Podcast** (2026) — "Building Claude Code with Boris Cherny" (254K+ views)
-- **Programming TypeScript** (O'Reilly, 2019)
-- [borischerny.com](https://borischerny.com/) — personal blog with technical writing on TypeScript, React, data management, and remote work
-
-## Open Source & Projects
-
-- **Claude Code** — Anthropic's terminal-based AI coding agent (creator & lead)
-- **Cowork** — Anthropic's desktop automation product
-- **Programming TypeScript** — O'Reilly book on TypeScript best practices
+> "Parallel Execution is the #1 Unlock."
 
 ## Related
 
+- [[harness-engineering]]
 - [[agentic-engineering]]
-- [[claude-code]]
 - [[ryan-lopopolo]]
-- [[karpathy]]
 - [[simon-willison]]
-- [[addy-osmani]]
+- [[karpathy]]
 
 ## Sources
 
-- [Lenny's Podcast: Boris Cherny](https://open.substack.com/pub/lenny/p/head-of-claude-code-what-happens) (Feb 2026)
-- [Pragmatic Engineer: Building Claude Code](https://www.youtube.com/watch?v=julbw1JuAz0) (2026)
-- [OfficeChai: Claude Code 100% written by itself](https://officechai.com/ai/claude-code-is-now-100-written-by-claude-code-creator-boris-cherny/) (Mar 2026)
-- [LinkedIn: Boris Cherny takeaways](https://www.linkedin.com/posts/lennyrachitsky_my-biggest-takeaways-from-boris-cherny-head-activity-7430373428601208832-YESP) (2026)
-- [Roger Wong: What happens after coding is solved](https://rogerwong.me/2026/02/what-happens-after-coding-is-solved-boris-cherny) (Feb 2026)
-- [Boris Cherny's blog](https://borischerny.com/)
+- [Thread Reader App: Boris Cherny's Threads](https://threadreaderapp.com/user/bcherny) — Comprehensive collection of Claude Code insights
+- [borischerny.com](https://borischerny.com/) — Personal blog

@@ -13,6 +13,7 @@ sources:
   - https://cognition.ai/blog/introducing-devin-2-2
   - https://cognition.ai/blog/devin-can-now-manage-devins
   - https://x.com/scottwu46/status/2026350958213787903
+  - https://x.com/cognition/status/2026343816521994339  # "Eventually, the Future comes" — Devin major update
   - https://x.com/dabit3/status/2026385925593510302
   - https://x.com/dabit3/status/2025936695661826481
   - https://nader.substack.com/p/engineering-for-agents-that-never
@@ -39,17 +40,39 @@ Cognition's fundamental position on multi-agent systems:
 
 Cognition believes that as context windows grow and models improve, a single Devin instance with persistent memory will handle tasks that currently require multi-agent orchestration.
 
-## 100x Capability Growth (Devin Review)
+## 100x Capability Growth
 
-Cognition published metrics showing exponential improvement in Devin's capabilities:
+### "Eventually, the Future comes" — Devin Major Update (Apr 2026)
 
-| Metric | Earlier | Current | Growth |
-|--------|---------|---------|--------|
-| PRs per week (self-reported) | ~154 | ~659 | 4.3x |
-| SWE-bench Verified | Baseline | 66.1% | — |
-| SWE-bench Verified (METR) | — | 71.7% | — |
-| METR time to complete task | Baseline | 50% faster | — |
-| Context window issues | Frequent | Managed | — |
+Scott Wu (@scottwu46) and Cognition announced one of the biggest updates to Devin since launch. Key metrics:
+
+| Metric | 2024 | 2026 (current) | Growth |
+|--------|------|----------------|--------|
+| METR: autonomous task complexity | <5 min human-equivalent tasks | 6+ hour human-equivalent tasks | ~100x capability |
+| Internal PRs/week (Cognition) | ~154 (best week 2025) | ~659 (Apr 2026) | 4.3x |
+| Enterprise customer sessions/week | Baseline | Doubling every ~6 weeks | ~65x in 13 months |
+
+> "Most folks in code were still focused on tab-complete, but we wanted to build for the future instead." — Scott Wu
+> "When you build for the future... eventually the future comes." — Scott Wu
+
+### The "Devin, but good" Philosophy
+
+Cognition explicitly doubled down on the original Devin form-factor rather than pivoting:
+
+- **Same core**: async workflow, cloud VM, browser use, Slack/Linear/GitHub integrations
+- **Not a pivot**: "The core form-factor is just good old Devin... Devin, but good"
+- **Key improvements shipped**:
+  1. Startup time improved 3x
+  2. Slack & Linear integrations smoothed
+  3. End-to-end testing with computer use
+  4. Devin Review → Autofix + GitHub comments (closing the loop)
+  5. Hundreds of UX/design/functionality fixes
+
+### SWE-bench Scores (from Devin Review blog)
+
+SWE-bench Verified scores are from the separate Devin Review blog post, not this update announcement:
+- SWE-bench Verified: 66.1%
+- SWE-bench Verified (METR-evaluated): 71.7%
 
 ### The "Closing the Agent Loop" Philosophy
 

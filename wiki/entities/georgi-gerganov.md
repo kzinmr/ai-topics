@@ -1,73 +1,166 @@
 ---
 title: "Georgi Gerganov"
-created: 2026-04-10
-updated: 2026-04-10
-tags: [person, local-llm, inference, open-source]
-aliases: ["ggerganov", "georgi"]
+handle: "@ggerganov"
+created: 2026-04-13
+updated: 2026-04-13
+tags: [person, x-account, ai, local-llm, llama.cpp, ggml, gguf, whisper.cpp, hugging-face, open-source]
+aliases: ["ggerganov", "georgi gerganov llama.cpp", "ggml", "gguf format"]
+depth: 10000
 ---
 
-# Georgi Gerganov (@ggerganov)
+# Georgi Gerganov
 
-Creator of llama.cpp, whisper.cpp, and the GGML/GGUF ecosystem that enabled local LLM inference on consumer hardware.
+| | |
+|---|---|
+| **X/Twitter** | [@ggerganov](https://x.com/ggerganov) |
+| **Blog** | [ggerganov.com](https://ggerganov.com/) |
+| **GitHub** | [ggerganov](https://github.com/ggerganov) |
+| **Role** | Creator of llama.cpp, GGML, GGUF; now at Hugging Face (Feb 2026) |
+| **Location** | Sofia, Bulgaria |
+| **Known for** | Making LLM inference accessible on consumer hardware; llama.cpp (95K+ stars); GGUF format |
+| **Bio** | C/C++ engineer who democratized local LLM inference. Creator of llama.cpp, whisper.cpp, GGML tensor library, and the GGUF file format. In Feb 2026, ggml.ai (Gerganov, Xuan-Son Nguyen, Aleksander Grygier) joined Hugging Face as full-time employees to ensure long-term progress of local AI. |
 
-## Summary
+## Overview
 
-Georgi Gerganov is a Bulgarian software engineer who created the foundational open-source tools that made local LLM inference practical on consumer hardware. His work on **llama.cpp** and the **GGML** library enabled running large language models on CPUs and Apple Silicon without requiring expensive GPUs.
+Georgi Gerganov is arguably **the most consequential individual in the open-source local AI movement**. His work has single-handedly made it possible to run state-of-the-art language models on consumer hardware — from a MacBook Air to a Raspberry Pi — without requiring expensive GPUs or cloud infrastructure.
 
-## Key Projects
+His key projects form the backbone of the entire local AI ecosystem:
 
-### llama.cpp (2023-present)
+- **llama.cpp** (95,400+ GitHub stars, 15,000+ forks, 4,585+ commits since March 2023) — C/C++ inference engine for LLMs, supporting 100+ model architectures
+- **GGML** — Tensor library for ML written in C/C++ with focus on transformer inference
+- **GGUF** — The file format that became the de facto standard for local model distribution
+- **whisper.cpp** — High-performance CPU inference for OpenAI's Whisper ASR model
+- **ImTui** — Immediate mode text-based UI library for C++
+
+In **February 2026**, Gerganov announced that **ggml.ai is joining Hugging Face**. The entire founding team (Gerganov, Xuan-Son Nguyen, Aleksander Grygier) moved to HF as full-time employees. Financial terms were not disclosed, but the significance was clear: Hugging Face acquired the foundational infrastructure layer of local AI inference.
+
+> "GGML and llama.cpp join HF to ensure the long-term progress of Local AI." — Hugging Face Blog, co-authored by Gerganov and Julien Chaumond (HF CTO)
+
+## Core Ideas
+
+### "Inference at the Edge" — Consumer Hardware First
+
+Gerganov's defining philosophy, articulated in the famous llama.cpp Discussion #205 (March 2023):
+
+> "The goal is to make it possible to run LLMs on consumer hardware, without requiring expensive GPUs or cloud infrastructure."
+
+This philosophy has several implications:
+1. **Pure C/C++ implementation** — No Python dependency, minimal runtime overhead
+2. **Quantization as first-class** — GGUF supports 2-bit through 32-bit quantization, enabling models to fit in limited RAM
+3. **Apple Silicon optimization** — Metal backend for M1/M2/M3 chips, making Macs competitive inference machines
+4. **No cloud dependency** — Fully local, private, offline-capable
+
+### GGUF — The Universal Model Format
+
+The GGUF format (introduced August 2023) replaced the older GGML binary format and became **the de facto standard for local model distribution**:
+
+- Flexible key-value metadata system allowing model-specific information
+- Support for F16, F32, and quantized data types (Q2_K through Q8_0)
+- Backwards compatibility layer for conversion from older formats
+- Native support in Hugging Face Hub, Ollama, LM Studio, GPT4All, Jan, and countless downstream projects
+
+The breaking change from GGML to GGUF was controversial but necessary:
+
+> "This is a breaking change, meaning that all existing ggml models will no longer be compatible after merging."
+
+Gerganov's willingness to break compatibility for long-term architectural health demonstrates his engineering pragmatism.
+
+### The Ecosystem Multiplier Effect
+
+llama.cpp is not just an inference engine — it's the **foundation layer** for an entire ecosystem:
+
+| Framework | Backend | Target Users | License |
+|-----------|---------|--------------|---------|
+| llama.cpp | GGML | Developers | MIT |
+| Ollama | llama.cpp | Developers/Prosumers | MIT |
+| LM Studio | llama.cpp | End Users | Proprietary |
+| GPT4All | llama.cpp | End Users | MIT |
+| Jan | llama.cpp | End Users | MIT |
+
+This "engine + ecosystem" pattern is Gerganov's most important contribution: by building a minimal, well-engineered core, he enabled an entire industry of downstream tools.
+
+### Minimalism and Pragmatism
+
+Gerganov's side projects reveal a consistent pattern:
+
+- **kbd-audio** — Acoustic keyboard eavesdropping via microphone (security research)
+- **ggwave** — Tiny data-over-sound library (7,500+ stars)
+- **wave-share** — Serverless, peer-to-peer file sharing through sound
+- **imtui** — Text-based UI library
+- **dot-to-ascii** — Graphviz to ASCII converter
+
+These projects share characteristics: C/C++ implementation, no dependencies, solving a specific problem elegantly, and often having a playful or experimental quality.
+
+## Key Work
+
+### llama.cpp (2023–Present)
+The project that made local LLM inference mainstream:
 - Pure C/C++ implementation of LLaMA inference
-- Supports GGUF quantization format (4-bit, 5-bit, 8-bit)
-- Runs on CPU, Apple Silicon, and consumer GPUs
-- Over 60K+ GitHub stars
-- **2025:** Joined Hugging Face to integrate llama.cpp into the broader open-source AI stack
-- Website: github.com/ggerganov/llama.cpp
+- Support for 100+ model architectures (LLaMA, Mistral, Mixtral, Qwen, DeepSeek, Phi, Gemma, and many more)
+- Metal, CUDA, Vulkan, and SYCL backends
+- GGUF file format with multiple quantization levels
+- 95,400+ GitHub stars, 15,000+ forks, 4,585+ commits
 
-### GGML / GGUF
-- Tensor library optimized for consumer hardware
-- GGUF format: quantized model serialization enabling CPU inference
-- Replaced older GGJT format with unified, extensible structure
+### GGML Tensor Library (2022–Present)
+The foundation library:
+- C/C++ tensor operations optimized for transformer inference
+- Automatic differentiation support
+- Quantization primitives (Q4_0, Q4_1, Q5_0, Q5_1, Q8_0, Q2_K, Q3_K, Q4_K, Q5_K, Q6_K)
+- Multi-backend support (CPU, Metal, CUDA, Vulkan, SYCL)
 
-### whisper.cpp
-- C/C++ port of OpenAI's Whisper speech recognition
-- Enables local speech-to-text without cloud APIs
-- Part of the same local-first AI philosophy
+### GGUF File Format (August 2023)
+The universal model distribution format:
+- Replaced GGML binary format
+- Key-value metadata system for model information
+- Flexible type system supporting F16, F32, and 10+ quantization types
+- Native Hugging Face Hub integration
 
-### Other Projects
-- **llama-bench** — Benchmarking tool for comparing model/hardware performance
-- **stable-diffusion.cpp** — Local image generation
-- **rwkv.cpp** — RWKV model inference
+### whisper.cpp (2022–Present)
+CPU-optimized speech recognition:
+- High-performance inference of OpenAI's Whisper ASR model
+- Pure C/C++ implementation
+- Real-time transcription on consumer hardware
+- Multiple language support
 
-## Impact on Local LLM Ecosystem
+### Hugging Face Acquisition (February 2026)
+ggml.ai joined Hugging Face as full-time employees:
+- Gerganov, Nguyen, and Grygier move to HF
+- llama.cpp and GGML remain open-source under MIT license
+- HF gains the local inference infrastructure layer
+- Pattern follows HF's previous acquisitions: Gradio (2021), Argilla (2024), XetHub (2024), Pollen Robotics (2025)
 
-Gerganov's work is the **foundation** of the local LLM movement:
-1. **Democratized Inference** — Made it possible to run 7B-70B models on laptops
-2. **Ollama Built on llama.cpp** — The popular local LLM runner uses llama.cpp as its inference backend
-3. **LM Studio Integration** — Desktop GUI for local models relies on GGUF format
-4. **Quantization Standard** — GGUF became the de facto format for community model sharing
+## Blog / Key Writings
 
-## Community Presence
+Gerganov maintains a project-focused blog at [ggerganov.com](https://ggerganov.com/) where he publishes technical notes, project updates, and occasional philosophical reflections on local AI.
 
-- **GitHub:** github.com/ggerganov (highly active, regular commits)
-- **X/Twitter:** @ggerganov (occasional updates on projects)
-- **r/LocalLLaMA:** Frequently discussed, benchmark results shared
-- **Hugging Face:** Models and datasets under ggml-org
+Key writings:
+- **"Introduction to GGML"** (Hugging Face Blog, 2025) — Technical introduction to the GGML tensor library
+- **"GGML and llama.cpp join HF to ensure the long-term progress of Local AI"** (Hugging Face Blog, Feb 20, 2026, co-authored with Julien Chaumond) — Acquisition announcement and vision statement
+- **"Inference at the edge"** (llama.cpp Discussion #205, March 16, 2023) — The philosophical statement that launched the local LLM movement
 
-## Related wikilinks
+## X Activity Themes
 
-- [[concepts/local-llm]] — Local LLM inference ecosystem
-- [[entities/llama-cpp]] — His flagship project
-- [[entities/gguf]] — Quantization format he created
-- [[concepts/harness-engineering]] — Local LLMs used in agent workflows
-- [[entities/nous-research]] — Hermes models quantized to GGUF
-- [[entities/qwen3-6-plus]] — Qwen models heavily used with llama.cpp
-- [[entities/mistral-voxtral-tts]] — Mistral models popular in local inference
-- [[entities/openai-spud]] — OpenAI's hardware strategy
+- **llama.cpp updates** — New model support, performance improvements, bug fixes
+- **GGML/GGUF development** — Format updates, quantization improvements
+- **Hugging Face integration** — Post-acquisition progress and roadmap
+- **Open source philosophy** — Local AI, privacy, consumer hardware
+- **Technical discussions** — Architecture decisions, performance benchmarks
+- **Community support** — Answering questions, reviewing PRs
+
+## Related People
+
+- **[[harness-engineering]]** — Gerganov's local inference infrastructure is the foundation that harness engineering runs on
+- **[[karpathy]]** — Shared interest in making AI accessible; Karpathy's nanoGPT influenced the C++ rewrite
+- **[[simon-willison]]** — Willison frequently covers llama.cpp and local AI developments
+- **[[mitchell-hashimoto]]** — Both advocate for open-source-first approaches to AI tooling
+- **Julien Chaumond** — Hugging Face CTO, co-authored the GGML acquisition blog post
+- **Nat Friedman** — Former GitHub CEO, provided early backing for GGML
+- **Daniel Gross** — Early backer of GGML
 
 ## Sources
 
-- llama.cpp GitHub repository: github.com/ggml-org/llama.cpp
-- Hugging Face announcement (2025)
-- r/LocalLLaMA community discussions
-- Various benchmark threads and model comparisons
+- [Hugging Face Blog: GGML joins HF](https://huggingface.co/blog/ggml-joins-hf) — Official announcement
+- [GitHub: ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp) — 95.4K stars, active development
+- [GitHub: ggerganov](https://github.com/ggerganov) — Personal profile, 71 public repos
+- [ggerganov.com](https://ggerganov.com/) — Personal blog and project pages
+- [Awesome Agents: llama.cpp joins Hugging Face](https://awesomeagents.ai/news/ggml-llama-cpp-joins-hugging-face/) — Coverage of the acquisition

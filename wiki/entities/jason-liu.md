@@ -93,25 +93,118 @@ Liu's vision of "Software 3.0" is that structured outputs allow developers to:
 
 ### RAG Philosophy — Data-First, Evaluation-Driven
 
-Through his consulting work with dozens of startups and his free 6-week email course on RAG, Liu has developed a distinctive philosophy on building and improving RAG systems. His approach can be summarized in three core theses:
+Through his consulting work with dozens of startups and his free 6-week email course on RAG (improvingrag.com), Liu has developed the most systematic practitioner's framework for building and improving RAG systems. His philosophy manifests in the **RAG Master Series** on jxnl.co — 12+ interconnected articles covering everything from fundamentals to enterprise implementation.
 
-**1. "RAG is the feature, not the benefit."**
+**Core Thesis: "RAG is the feature, not the benefit."**
 
 > "RAG systems suck because the value you derive is time saved from finding an answer. This is a one-dimensional value, and it's very hard to sell any value beyond that. Meanwhile, a report is a higher-value product because it is a decision-making tool that enables better resource allocation."
 
-Jason predicts RAG will shift from question-answering to **report generation** — from delivering answers to enabling decisions. This reframes the success metric from "did the user get an answer?" to "did the user make a better decision?"
+Jason predicts RAG will shift from question-answering to **report generation** — from delivering answers to enabling decisions.
 
-**2. "Look at your data at every step of the pipeline."**
+**The Twin Biases of RAG Development**
 
-His single most repeated principle. A typical RAG pipeline has six stages (Data Collection → Extraction/Enrichment → Indexing → Retrieval → Re-ranking → Generation), and problems can emerge at any of them. Teams that skip evaluation at intermediate stages are flying blind:
+Liu identifies two systematic failures that plague RAG teams:
 
-> "The mistake is increasing system complexity without proper evaluation. About 90% of the time, teams implement complex retrieval paths and re-ranking systems when the real problem was bad input data."
+1. **Absence Bias** — Ignoring the retrieval step because only the final LLM output is visible. Teams tweak prompts and swap models when the real problem is that the right chunks aren't being found.
+2. **Intervention Bias** — Chasing every new trick (re-rankers, prompt hacks, hybrid retrieval) without validation, creating brittle "Franken-systems" with high technical debt.
 
-**3. "Good search is the ceiling on your RAG quality."**
+> "The biggest mistake around improving the system is that most people are spending too much time on the actual synthesis without actually understanding whether or not the data is being retrieved correctly."
 
-> "If recall is poor, no prompt engineering or model upgrade will save you." Jason argues that teams obsess over the generation step (which LLM to use, prompt templates) while the retrieval step — fundamentally an information retrieval problem — is the actual bottleneck.
+> "About 90% of the time, teams implement complex retrieval paths and re-ranking systems when the real problem was bad input data."
 
-This philosophy manifests in his **RAG Master Series** on jxnl.co — 12+ interconnected articles covering everything from fundamentals to advanced optimization, anti-patterns, and enterprise implementation.
+**The RAG Playbook — 8-Step Continuous Improvement Flywheel**
+
+From [The RAG Playbook](https://jxnl.co/writing/2024/08/19/rag-flywheel/):
+
+1. **Start with Synthetic Data** — Generate Q&A pairs from every chunk. Baseline recall should hit ~97%. "If your recall is 50%, that means half the time you're missing the relevant chunk entirely. No advanced prompt can fix that."
+2. **Avoid the Twin Biases** — Absence Bias and Intervention Bias (see above)
+3. **Segmentation & Failure Diagnosis** — Overall averages hide critical failures. A 70% recall might mask 5% recall on high-value multi-hop queries. Segment by topic, complexity, user role.
+4. **Structured Extraction & Multimodality** — "Don't rely on the LLM alone to interpret an image on the fly." Tables should never be chunked as raw text — store as actual DBs. Pre-extract image metadata via captioning models.
+5. **Query Routing & Specialized Indices** — When multiple searchers exist (vector, SQL, image, lexical), treat each index as a "tool" and use LLM function calling to route.
+6. **Fine-Tune Embeddings & Re-Rankers** — Domain-specific fine-tuning yields 10–30% recall boosts. Standard pipeline: quick vector search (Top K) → re-rank (cross-encoder) → pass top results to LLM.
+7. **Hybrid Search** — Full-text search (BM25) + vector search. "I found in practice that when I was doing tests against essays, full text search and embeddings basically performed the same, except full text search was about 10 times faster."
+8. **Close the Loop** — Deploy user feedback, track implicit signals (frustration patterns) alongside explicit ones (thumbs up/down), and feed back into synthetic data generation.
+
+> "Remember, the goal isn't to have a perfect system on day one. It's to build a flywheel of continuous improvement that compounds over time."
+
+**The "Only 6 RAG Evals" Framework**
+
+From [There Are Only 6 RAG Evals](https://jxnl.co/writing/2025/05/19/there-are-only-6-rag-evals/):
+
+> "The power of focusing on Question (Q), Context (C), and Answer (A) is that these three components, and their conditional relationships, cover every possible aspect of RAG evaluation. There are no hidden variables."
+
+| Tier | Metric | Notation | What It Measures |
+|------|--------|----------|-------------------|
+| 🟢 Foundation | Retrieval Precision & Recall | — | Classic IR metrics. Fast, LLM-free. |
+| 🟡 Primary | Context Relevance | C\|Q | Do retrieved chunks address the question? |
+| 🟡 Primary | Faithfulness/Groundedness | A\|C | Is the answer supported by context? |
+| 🟡 Primary | Answer Relevance | A\|Q | Does the answer address the user's need? |
+| 🔴 Advanced | Context Support Coverage | C\|A | Does context support every claim in the answer? |
+| 🔴 Advanced | Question Answerability | Q\|C | Can you answer given the context? |
+| 🔴 Advanced | Self-Containment | Q\|A | Can the question be inferred from the answer? |
+
+> "When your RAG system fails, it fails along one of these dimensions. Every time. Answer seems wrong? Check faithfulness (A|C). Answer seems irrelevant? Check answer relevance (A|Q). Answer missing key info? Check context relevance (C|Q)."
+
+Implementation strategy:
+- **Start with Tier 1** — Use Precision, Recall, MAP@K, MRR@K for retriever tuning. No LLMs required. Daily development cadence.
+- **Focus on Tier 2** — Implement C|Q, A|C, A|Q via LLM-based evaluation. Continuous iteration.
+- **Extend to Tier 3** — Add C|A, Q|C, Q|A for deeper insights. Monthly/strategic releases.
+
+Domain-specific priorities:
+- 🏥 **Medical RAG:** Maximize A|C (Faithfulness) — hallucinations are dangerous
+- 🎧 **Customer Service:** Maximize A|Q (Answer Relevance) — user satisfaction
+- 📚 **Technical Docs:** Maximize Q|C (Question Answerability) — honest "I don't know" responses build trust
+
+**7-Step Quick-Win Runbook** (from [Low-Hanging Fruit for RAG Search](https://jxnl.co/writing/2024/05/11/low-hanging-fruit-for-rag-search/)):
+
+1. **Synthetic baseline data** — Establish recall metrics before any tuning
+2. **Date filters** — Handle temporal queries without complex retrieval
+3. **Improved user feedback copy** — "Did we answer correctly?" not just thumbs up/down
+4. **Track cosine distance/reranking scores** — Monitor retrieval quality drift
+5. **Full-text search as baseline** — BM25 often outperforms embeddings for exact-match queries
+6. **Make chunks look like questions at ingestion** — Transform documents into Q&A pairs
+7. **Include file/document metadata** — Ownership, dates, status for routing
+
+**RAG Levels of Complexity** (from [Levels of Complexity](https://jxnl.co/writing/2024/02/28/levels-of-complexity-rag-applications/)):
+
+| Level | Capability | Description |
+|-------|-----------|-------------|
+| 0 | Basic chunk + embed → search | Simple vector similarity |
+| 1 | Structured processing | Async, parallel queries |
+| 2 | Query enhancement | Rewriting, expansion, summarization |
+| 3 | Observability | Wide event tracking, logging |
+| 4 | Advanced search/ranking | Re-rankers, hybrid search |
+| 5 | Multi-modal content | Image/table processing |
+| 6 | Query routing | Specialized indices, metadata lookups |
+
+> "Most teams jump straight to Level 4 complexity and wonder why everything breaks."
+
+**RAG Anti-Patterns** (with Skylar Payne, ex-Google/ex-LinkedIn):
+- Increasing complexity without evaluation (~90% of failures)
+- Naive embedding usage (trained for semantic similarity, not Q&A)
+- Chunking too small (losing context boundaries)
+- Ignoring query routing (using full RAG for simple metadata lookups)
+- Not using metadata (dates, ownership, status as cheap filters)
+
+**Context Engineering — The Future of RAG**
+
+From [Beyond Chunks: Context Engineering is the Future of RAG](https://jxnl.co/writing/2025/08/27/facets-context-engineering/) (Aug 2025), Liu extends RAG to agentic systems:
+
+> "The breakthrough came when we realized chunks themselves were the limitation. When search results showed multiple documents, agents couldn't strategically decide which to load or how to explore further."
+
+**Four Levels of Context Engineering:**
+1. **Minimal Chunks** — Basic tool responses without metadata
+2. **Chunks with Source Metadata** — Enables citations and strategic document loading
+3. **Multi-Modal Content** — Optimizes tables, images, structured data for agents
+4. **Facets and Query Refinement** — Reveals the complete data landscape for strategic exploration
+
+> "Tool results become prompt engineering — Metadata teaches agents how to use tools in future calls"
+
+**Agent Peripheral Vision:** Providing agents with structured metadata about the broader information space beyond top-k results. This is the key insight: agents need to know what they *don't* know.
+
+From [Context Engineering Series Index](https://jxnl.co/writing/2025/08/28/context-engineering-index/):
+
+> "We've moved far beyond prompt engineering. Now we're designing portfolios of tools (directory listing, file editing, search) and the context engineering that makes them work together."
 
 ## Key Work
 
@@ -214,18 +307,40 @@ Jason maintains the most comprehensive practitioner's guide to RAG on his blog, 
 - **[Text Chunking Strategies](https://jxnl.co/writing/2025/09/11/text-chunking-strategies-for-rag-applications/)** — Guest session with Anton from ChromaDB. Two rules of thumb in tension: (1) fill the embedding model's context window, (2) don't group unrelated information. "There's no one-size-fits-all chunking strategy."
 - **[RAG Anti-Patterns with Skylar Payne](https://jxnl.co/writing/2025/06/11/rag-anti-patterns-with-skylar-payne/)** — Interview with Skylar (ex-Google, ex-LinkedIn). Top anti-patterns: increasing complexity without evaluation (~90% of mistakes), naive embedding usage (trained for semantic similarity, not Q&A), chunking too small, ignoring query routing (simple metadata lookups instead of full RAG for straightforward queries)
 - **[Beyond Chunks: Why Context Engineering is the Future of RAG](https://jxnl.co/writing/2025/08/27/facets-context-engineering/)** — First post in a Context Engineering series. Core thesis: "In agentic systems, how we structure tool responses is as important as the information they contain." Four levels of context engineering: minimal chunks → chunks with source metadata → multi-modal content → facets and query refinement. Predicts tool results become prompt engineering for agents.
+- **[There Are Only 6 RAG Evals](https://jxnl.co/writing/2025/05/19/there-are-only-6-rag-evals/)** — Every RAG system reduces to Q, C, A and exactly 6 conditional relationships. Tiered evaluation: Tier 1 (retrieval metrics, no LLM), Tier 2 (C|Q, A|C, A|Q via LLM-judge), Tier 3 (C|A, Q|C, Q|A for deep analysis). Domain-specific priorities: medical → A|C, customer service → A|Q, technical docs → Q|C.
+- **[Six Proven Strategies for Improving RAG](https://jxnl.co/writing/2025/09/11/rag-series-index/)** — Portfolio approach: flywheels, query segmentation, specialized indices, routing, feedback loops, response optimization.
+- **[Slash Commands vs Subagents](https://jxnl.co/writing/2025/08/29/context-engineering-slash-commands-subagents/)** — Context pollution kills agent performance. "Bad context is cheap but toxic: loading 100k lines of test logs costs almost nothing computationally, but easily pollutes valuable context." Subagent architecture solves this — burn tokens in specialized workers, preserve focus in the main thread.
+- **[Agent Frameworks and Form Factors](https://jxnl.co/writing/2025/09/04/context-engineering-agent-frameworks-and-form-factors/)** — Three form factors: chatbot (conversational), workflow (side-effect engines), research artifact (reports/tables). Autonomy spectrum: deterministic system → AI function → human-in-loop → full autonomy. "Ask your team for specific results, not just 'agents.'"
+- **[Rapid Agent Prototyping](https://jxnl.co/writing/2025/09/11/rag-series-index/)** — Use Claude Code's project runner as a testing harness. Write instructions in English, expose tools as simple CLI commands, create test folders with real inputs. "Get one passing test before you write any orchestration code."
+- **[AI Agent Compaction Experiments](https://jxnl.co/writing/2025/09/11/rag-series-index/)** — "If in-context learning is gradient descent, then compaction is momentum." Two experiments on using compaction for maintaining agent state and reasoning continuity across long sessions.
 
 **RAG 6-week email course:** Jason runs a free 6-week email course on RAG covering everything from his consulting work, available at improvingrag.com.
 
-### Context Engineering
+### Context Engineering — Beyond RAG for Agentic Systems
 
-Jason is developing Context Engineering as a natural evolution beyond RAG for agentic systems:
+Jason is developing Context Engineering as a natural evolution beyond RAG for agentic systems. The series started in August 2025 and has grown into a comprehensive framework covering tool response design, agent architecture, and prototyping methodology.
 
 > "The breakthrough came when we realized chunks themselves were the limitation. When search results showed multiple documents, agents couldn't strategically decide which to load or how to explore further."
 
-- Four levels: Minimal Chunks → Source Metadata → Multi-Modal → Facets & Query Refinement
-- Predicts: "Tool results become prompt engineering" — metadata teaches agents how to use tools in future calls
-- First post in series (Aug 2025) focuses on faceted search as the lowest-hanging fruit
+**Four Levels of Context Engineering:**
+1. **Minimal Chunks** — Basic tool responses without metadata
+2. **Chunks with Source Metadata** — Enables citations and strategic document loading
+3. **Multi-Modal Content** — Optimizes tables, images, structured data for agents
+4. **Facets and Query Refinement** — Reveals the complete data landscape for strategic exploration
+
+**Key Concepts:**
+- **Tool Response as Prompt Engineering** — Metadata teaches agents how to use tools in future calls
+- **Agent Peripheral Vision** — Structured hints about the broader information space beyond top-k results
+- **Context Pollution** — Noisy, low-signal outputs (logs, traces) that crowd out useful reasoning context
+- **Context Rot** — Performance degradation as input length increases
+- **Slash Commands vs Subagents** — "Bad context is cheap but toxic." Use subagents to isolate noisy operations
+
+**Form Factor Decision Framework:**
+- **Chatbots** — Conversational, audit trail as experience
+- **Workflows** — Side-effect engines, deterministic outcomes
+- **Research Artifacts** — Reports, summaries, data tables with consistent quality standards
+
+> "We've moved far beyond prompt engineering. Now we're designing portfolios of tools (directory listing, file editing, search) and the context engineering that makes them work together."
 
 ## Related People
 
