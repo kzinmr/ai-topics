@@ -1,6 +1,6 @@
-# AI Topics Knowledge Wiki
+# LLM & AI Agent Knowledge Wiki
 
-Knowledge base curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
+Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
 Last updated: 2026-04-13 (+8 browser agent entities + Death of Browser + Anthropic Cookbooks: 4 concept pages)
 

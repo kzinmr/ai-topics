@@ -99,7 +99,7 @@ aliases: ["handle", "alt-name"]
 
 ## Core Ideas
 
-Their key viewpoints, theories, and opinions on AI/ML topics. Use subsections for each major theme. Quote their actual posts/articles where possible.
+Their key viewpoints, theories, and opinions on LLM/AI Agent technologies. Use subsections for each major theme. Quote their actual posts/articles where possible.
 
 ## Key Work
 

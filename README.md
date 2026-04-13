@@ -1,6 +1,6 @@
 # AI Topics — Hermes Knowledge Base
 
-Hermes Agent が管理する AI/ML トピックの知識ベースリポジトリ。
+Hermes Agent が管理する LLM/AI Agent トピックの知識ベースリポジトリ。
 
 ## ディレクトリ構成
 

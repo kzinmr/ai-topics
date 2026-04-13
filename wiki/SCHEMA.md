@@ -1,8 +1,7 @@
 # Wiki Schema — AI Topics Knowledge Base
 
 ## Domain
-AI/ML technology trends, research papers, tools, frameworks, and industry developments.
-Focused on: AI agents, LLMs, training techniques, inference optimization, safety, and developer tooling.
+LLM and AI Agent technologies — including language models, AI agents, coding agents, developer tooling, inference/training infrastructure, prompt engineering, AI safety, open-source AI, and the ecosystem of tools and frameworks around them.
 
 ## Conventions
 
@@ -52,7 +51,7 @@ Hermes agent processes `raw/` into structured knowledge pages:
 - **`queries/`** — Research query results (reserved)
 
 ### Tag Taxonomy
-- **domain:** `ai-agents`, `llm`, `training`, `inference`, `safety`, `tooling`, `research`
+- **domain:** `llm`, `ai-agents`, `coding-agents`, `training`, `inference`, `safety`, `tooling`, `devtools`, `prompt-engineering`, `open-source-ai`
 - **type:** `framework`, `model`, `technique`, `paper`, `product`, `company`, `person`
 - **status:** `active`, `archived`, `emerging`, `deprecated`
 - **source:** `newsletter`, `auto-ingested`, `manual`, `arxiv`
