@@ -1,7 +1,7 @@
 ---
 title: "Simon Tatham"
 created: 2026-04-09
-updated: 2026-04-10
+updated: 2026-04-13
 tags: [person, blogger, hn-popular, developer-tools, free-software, unix-philosophy]
 aliases: ["chiark.greenend.org.uk/~sgtatham", "Simon Tatham PuTTY"]
 ---
@@ -10,12 +10,27 @@ aliases: ["chiark.greenend.org.uk/~sgtatham", "Simon Tatham PuTTY"]
 
 | | |
 |---|---|
+| **Born** | 3 May 1977, United Kingdom (via Grokipedia) |
+| **Education** | Mathematics, Trinity College, University of Cambridge (via Grokipedia) |
+| **Employer** | Arm Ltd., Development Solutions Group — compiler developer (via Grokipedia) |
 | **Blog** | [chiark.greenend.org.uk/~sgtatham](https://www.chiark.greenend.org.uk/~sgtatham/) |
 | **RSS** | https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/feed.xml |
 | **Mastodon** | [@simontatham@hachyderm.io](https://hachyderm.io/@simontatham) |
 | **Role** | Software engineer, free-software author |
-| **Known for** | PuTTY SSH client, PuTTY Games, spigot (exact real calculator), Halibut documentation system, agedu, xtruss |
+| **Known for** | PuTTY SSH client (1999), NASM co-developer, Simon Tatham's Portable Puzzle Collection, spigot (exact real calculator), Halibut documentation system, agedu, xtruss |
 | **Bio** | Software engineer based in Cambridge, UK. Maintains a diverse portfolio of free software projects spanning networking tools, mathematical puzzles, and utilities. Writes a "quasi-blog" of long-form technical essays. Notable for his deep dives into mathematical curiosities (aperiodic tilings, field extensions) alongside pragmatic Unix tooling. |
+
+## Biography
+
+Simon Tatham was born on 3 May 1977 in the United Kingdom (via Grokipedia). He attended primary school at Dolphin School and Hurst School — the latter twice, due to family relocations — and completed his secondary education at Leighton Park School in Reading (via Grokipedia). By age nine, Tatham had already begun writing complex programs on the ZX Spectrum, sparking an early and enduring fascination with computing (via Grokipedia).
+
+He earned a degree in mathematics from the University of Cambridge, where he studied at Trinity College (via Grokipedia). During his university years, Tatham prioritized intensive personal programming projects over traditional coursework, and it was during this time that he co-developed the Netwide Assembler (NASM) with Julian Hall in 1996 — a portable x86 assembler that continues to be maintained by a team at Intel (via Grokipedia).
+
+After graduation, Tatham joined Arm Ltd. in the early 2000s, where he works full-time in the company's Development Solutions Group as a compiler developer, focusing on tools like Arm Compiler for embedded systems and high-performance computing (via Grokipedia). His contributions have extended to formal verification techniques for numerical algorithms, such as verifying floating-point division routines using tools like Gappa to guarantee accuracy in compiler-generated code (via Grokipedia).
+
+Tatham is best known as the primary author and maintainer of **PuTTY**, a free and open-source SSH/Telnet client first released in 1999. PuTTY has become one of the most widely used SSH clients globally, particularly on Windows systems, due to its lightweight design, portability, and support for both graphical and command-line interfaces (via Grokipedia). Key features include its built-in xterm-style terminal emulation (via Grokipedia).
+
+Beyond PuTTY and NASM, Tatham created **Simon Tatham's Portable Puzzle Collection** — a suite of single-player logic puzzle games — and authored the widely-cited 1999 essay **"How to Report Bugs Effectively,"** a guide on submitting clear and actionable bug reports that remains a standard reference in the free-software community (via Grokipedia).
 
 ## Core Ideas
 
@@ -75,6 +90,7 @@ Tatham's series on aperiodic tilings (five parts and counting) and his essay on 
 
 ## Sources
 
+- [Grokipedia: Simon Tatham](https://grokipedia.com/page/Simon_Tatham)
 - [Code review antipatterns](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/code-review-antipatterns/) (Aug 2024)
 - [Stop helping!](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/stop-helping/) (Sep 2023)
 - [Git without a forge](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/git-without-a-forge/)
