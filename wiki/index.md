@@ -332,6 +332,7 @@
 ### AI Agent Platforms & Developer Tools
 
 |- [[entities/peter-steinberger|Peter Steinberger]] (@steipete) — OpenClaw creator, former PSPDFKit CEO. AI-native solo builder shipping 600+ commits/day via 5-10 parallel agents. Joined OpenAI Feb 2026. "Agent-first design" advocate, "Ship beats perfect" philosophy.
+|- [[entities/teknium|Ryan (Teknium)]] (@teknium1) — Nous Research Co-founder & Head of Post-Training. Hermes model family (3/4) and Hermes Agent (68K+ stars) architect. Post-training, synthetic data, RL environments, self-improving agents. "The agent that grows with you."
 
 ### Distributed Systems & Local-First
 

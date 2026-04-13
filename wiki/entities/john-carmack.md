@@ -1,104 +1,159 @@
-# John Carmack
+---
+title: "John Carmack"
+created: 2026-04-13
+updated: 2026-04-13
+tags: [person, game-engineer, vr, agi, keen-technologies, id-software]
+aliases: ["carmack"]
+depth_tracking:
+  L1_basic_profile: true
+  L2_timeline_works: true
+  L3_thought_analysis: true
+  L4_ongoing_monitoring: false
+---
 
-**Projects:** Keen Technologies (Founder/CTO), Oculus VR (Co-founder/CTO), id Software (Co-founder)  
-**Notable Works:** Doom, Quake, Wolfenstein 3D, Commander Keen  
-**Talks:** ["The Bitter Lesson" commentary](https://www.youtube.com/watch?v=r6FZbDfGqZs), Keen Technologies updates  
-**Website:** [id.io/~id](https://www.id.io/~id)  
-**GitHub:** [github.com/ID-Software](https://github.com/ID-Software)
+# John D. Carmack II
+
+| | |
+|---|---|
+| **Role** | Founder, Keen Technologies; Former CTO, Oculus/Meta; Co-founder, id Software |
+| **Born** | August 20, 1970 (Kansas, USA) |
+| **Known for** | Doom, Quake engines; Asynchronous Timewarp (VR); id Software co-founder; AGI research via Keen Technologies |
+| **Bio** | A legendary game programmer and VR pioneer turned AGI researcher. His career spans self-taught engine architecture (Doom/Quake), commercializing VR (Oculus), and now pursuing artificial general intelligence through Keen Technologies. |
 
 ## Overview
 
-John Carmack is one of the most influential programmers in the history of software engineering. As co-founder of id Software, he created the engines behind Doom, Quake, and Wolfenstein 3D — games that defined the first-person shooter genre and pioneered real-time 3D rendering. He later co-founded Oculus VR, bringing virtual reality to mainstream consciousness, and served as CTO until Meta's acquisition.
+John Carmack is one of the most influential programmers in computer science history. From self-taught assembly programming as a teenager to creating the **Doom** and **Quake** engines, to pioneering **Asynchronous Timewarp** for VR at Oculus, his career demonstrates a consistent pattern of solving hard engineering problems through elegant, low-level optimization.
 
-Since leaving Meta in 2022, Carmack has founded **Keen Technologies**, a small research lab focused on Artificial General Intelligence. His work at Keen represents a deliberate shift from engineering (where he had "line of sight" to solutions) to scientific research (where the path is unknown).
+Since 2022, he has pivoted to AGI research via **Keen Technologies**, advocating for RL-first approaches and proposing novel hardware architectures like **fiber-optic L2 cache** for massive model serving.
 
-## Core Ideas
+> *"I will never waste time making code more flexible just for the sake of making flexibility. It generally makes code more abstract and difficult to reason about, and it is a common source of bugs."*
 
-### The Bitter Lesson and Why LLMs Aren't Enough
+## Early Life and Self-Taught Foundations
 
-Carmack is a vocal proponent of Rich Sutton's ["Bitter Lesson"](https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.html) — the idea that the biggest gains in AI come from leveraging computation, not human-designed algorithms. But he argues we haven't yet applied this lesson to **real-time, embodied learning**:
+Born August 20, 1970, in Kansas. Developed a "normal, gifted-geek childhood" focused on chemistry, model rockets, and sci-fi. Influenced by Robert A. Heinlein's "competent libertarian vibe."
 
-> "The bitter lesson is that general methods that leverage computation are ultimately the most effective. But I think most people are not applying the bitter lesson aggressively enough."
+- **Autodidactic Path**: Bypassed formal education after two semesters at UMKC (1988), prioritizing hands-on assembly/BASIC programming.
+- **Early Hacks**: At ~14, used a homemade thermite charge to break into a school to recover confiscated Apple IIs. Created *Shadowforge*, an Apple II RPG, demonstrating early low-level optimization skills.
 
-He believes LLMs represent one application of the bitter lesson (scale up compute + data), but that the **next frontier** is applying it to agents that learn from continuous, interactive experience — the way humans and animals do.
+## id Software & Engine Architecture (1991–2009)
 
-### Embodied AI and Real-Time Learning
+### Softdisk Era (1990)
+Met John Romero. Developed *Hovertank 3D* using raycasting (10–20 FPS on 286s). Frustrated by corporate constraints, co-founded id Software (Feb 1991).
 
-At Keen Technologies, Carmack is building systems that learn through interaction with environments in real time. His focus:
+### Shareware Revolution
+Pioneered free-first distribution. *Commander Keen* & *Wolfenstein 3D* (1992) generated $30k–$60k/mo; *Wolf3D* sold 200k+ copies by 1993, proving viral PC gaming viability.
 
-- **Continuous learning** from streams of experience, not static pre-training
-- **Real-time inference** — decisions must be made within tight latency budgets
-- **Embodied agents** that interact with the world through sensors and actuators
-- **Generalization** across tasks without retraining from scratch
+### Doom (1993)
+Introduced **Binary Space Partitioning (BSP)** for efficient 3D rendering; achieved **35 FPS** on 33 MHz 486 CPUs. First commercial use of BSP for real-time rendering.
 
-> "I think the most interesting path forward is building systems that learn from a stream of interactive experience, as humans and animals do, which is quite different from the throw-everything-in-a-blender approach of pretraining an LLM."
+### Quake / id Tech 2 (1996)
+Shifted to true 3D polygonal geometry. Implemented **client-server TCP/IP architecture** with **client-side prediction** to mask modem latency.
 
-### AI as Tool, Not Agent
+### Quake III / id Tech 3 (1999)
+Added real-time stencil shadow volumes, curved surface tessellation, and NVIDIA register combiner shaders. Optimized for **60 FPS** multiplayer with 16-player netcode. Reverse algorithm for **stencil shadow volumes**.
 
-Carmack is skeptical of the push toward autonomous AI agents. He sees AI as a powerful tool that should augment human capability rather than replace human agency:
+### id Tech 5 / Rage (2011)
+Pioneered megatextures (virtual texturing). Streaming up to **22 TB** of uncompressed data. PC-optimized but struggled on Xbox 360/PS3 due to VRAM/bandwidth bottlenecks.
 
-> "I'm very much in the camp that AI is a tool. I want tools. I don't want agents that act on my behalf."
+### ZeniMax Acquisition (2009)
+Sold to ZeniMax Media for **$150 million**. The deal provided financial stability but introduced corporate bureaucracy, reducing id's rapid iteration agility.
 
-He argues that the most valuable AI systems will be those that give humans **more capability and more choice**, not those that make decisions for them. This reflects his engineering philosophy: build systems that extend human ability rather than substitute for it.
+> *"Story in a game is like a story in a porn movie. It's expected to be there, but it's not that important."*
 
-### VR/AR as the Next Computing Platform
+## Virtual Reality at Oculus & Meta (2013–2022)
 
-Even as he shifted focus to AGI, Carmack remains optimistic about VR/AR as a transformative computing platform. His view:
+### Entry & Demo
+Discovered Oculus Rift prototype on enthusiast forums, ported *Doom 3*, and demonstrated it at E3 2012, proving low-latency VR feasibility.
 
-- VR succeeded technically but failed commercially due to **friction** (headsets, isolation, cost)
-- AR (augmented reality) is the **endgame** — overlaying digital information on the real world
-- The key challenge is **form factor**: making devices lightweight, socially acceptable, and all-day wearable
-- Apple Vision Pro was a step forward but too heavy and expensive for mainstream adoption
+### CTO Role (Aug 2013)
+Focused on hardware-software synergy. Key innovation: **Asynchronous Timewarp**, which reprojects frames between render/display cycles to cut latency to **<20 ms**, preventing motion sickness.
 
-> "VR is going to be a thing. AR is going to be a bigger thing. But the form factor matters enormously."
+### Open Development
+Publicly released code samples, rendering optimizations, and dev logs, democratizing VR techniques and accelerating Quest 2 adoption (10M+ units by mid-2021).
 
-### Optimization as a Way of Thinking
+### Strategic Friction
+Critiqued Meta's metaverse timeline as premature. Advocated for hardware efficiency over ad-driven social features. Noted severe internal inefficiencies: *"5% GPU utilization in production workloads"* and organizational overhead cutting effectiveness by ~50%.
 
-Carmack's entire career has been defined by extreme optimization — squeezing performance out of limited hardware. His philosophy:
+### Departure
+Transitioned to consulting (2019), fully resigned Dec 2022 to pursue AGI independently.
 
-- **Measure, don't guess** — profile everything, optimize based on data
-- **Eliminate abstractions** when they get in the way of performance
-- **Understand the hardware** at a deep level
-- **Iterate fast** — ship, measure, improve
+## Aerospace: Armadillo Aerospace (2000–2013)
 
-This optimization mindset carries into his AGI work: he's focused on building systems that learn efficiently, not systems that are theoretically elegant.
+- **Mission**: Develop low-cost, reusable VTVL suborbital rockets via iterative, garage-style engineering.
+- **Tech & Milestones**: Ethanol/LOX bipropellant engines, pressurized tank feeding, gimballing control. Conducted **200+ test flights**. Won **$350,000** NASA Lunar Lander Challenge (Level 1, 2008).
+- **Challenges**: High failure rate (explosions, ballute/landing gear issues), FAA regulatory delays, and capital constraints.
+- **Investment**: >$8M personal investment before 2013 hibernation.
 
-> "The most important thing is to be able to iterate quickly. If you can't measure it, you can't improve it."
+## AGI Research: Keen Technologies (2022–present)
+
+Founded in 2022, Keen Technologies represents Carmack's full-time commitment to AGI research.
+
+### Seed and Partnerships
+- **$20M seed funding** (2022).
+- Partnership with **Richard Sutton**, a leading RL researcher.
+- Advocates for RL-first approaches to AGI, rather than LLM-based scaling.
+
+### Technical Proposals
+- **Fiber-Optic L2 Cache** (Feb 2026): Proposed leveraging **256 Tb/s** over 200 km loops to stream **32 GB** model weights at **32 TB/s** bandwidth.
+- Focus on hardware-software co-design for efficient model serving.
+
+### Philosophy
+Carmack has consistently argued that current LLMs lack true reasoning capabilities, and that AGI will require fundamentally different architectures than statistical pattern matching. His approach emphasizes reinforcement learning and causal reasoning.
+
+## Core Ideas & Philosophy
+
+### Engineering Pragmatism
+> *"Success comes less from the language choice and more from the skill and restraint of the programmer."*
+
+Carmack advocates for minimal, well-understood code over complex abstractions. He believes that simplicity and discipline are more important than language features or frameworks.
+
+### VR as a Platform
+He views VR as a fundamentally important computing platform, but argues that current implementations are premature and lack the hardware efficiency needed for mass adoption.
+
+### AGI via RL
+Carmack aligns with Richard Sutton's "Bitter Lesson" thesis: general methods that leverage computation (like RL) ultimately outperform hand-engineered solutions.
 
 ## Key Quotes
 
-> "The bitter lesson is that general methods that leverage computation are ultimately the most effective."
+> *"I will never waste time making code more flexible just for the sake of making flexibility."*
 
-> "I think the most interesting path forward is building systems that learn from a stream of interactive experience, as humans and animals do."
+> *"Story in a game is like a story in a porn movie. It's expected to be there, but it's not that important."*
 
-> "I'm very much in the camp that AI is a tool. I want tools. I don't want agents that act on my behalf."
+> *"Success comes less from the language choice and more from the skill and restraint of the programmer."*
 
-> "VR is going to be a thing. AR is going to be a bigger thing. But the form factor matters enormously."
+> *"5% GPU utilization in production workloads"* — On Meta's inefficiency
 
-> "The most important thing is to be able to iterate quickly. If you can't measure it, you can't improve it."
+## Timeline
 
-## Recent Themes (2022–2026)
-
-- **Keen Technologies AGI research** — Building systems for real-time, embodied learning
-- **Critique of LLM-only approaches** — Arguing for interactive, experiential learning paradigms
-- **The Bitter Lesson applied to agents** — Leveraging compute for continuous learning, not just pre-training
-- **VR/AR form factor challenges** — Why headsets haven't gone mainstream yet
-- **AI as augmentation** — Tools that extend human capability vs. agents that replace it
-- **Small-team research** — Keen Technologies as a lean, focused lab vs. big corporate AI research
+| Year | Event |
+|------|-------|
+| 1970 | Born in Kansas |
+| 1988 | Two semesters at UMKC; leaves college |
+| 1991 | Co-founds id Software with John Romero |
+| 1993 | Doom released; first commercial BSP usage |
+| 1996 | Quake released; true 3D polygonal geometry |
+| 1999 | Quake III Engine; 60 FPS competitive netcode |
+| 2000 | Armadillo Aerospace founded |
+| 2008 | Wins NASA Lunar Lander Challenge |
+| 2009 | id Software sold to ZeniMax for $150M |
+| 2011 | id Tech 5 / Rage released |
+| 2013 | Joins Oculus as CTO |
+| 2019 | Transitions to consulting |
+| 2022 | Keen Technologies founded; $20M seed |
+| 2022 | Fully resigns from Meta |
+| 2026 | Proposes fiber-optic L2 cache for AGI |
 
 ## Related
 
-- [[Rich Sutton]] — "The Bitter Lesson" essay that heavily influenced Carmack's AGI approach
-- [[George Hotz]] — Also skeptical of LLM-only AGI; focused on efficient, minimal approaches (tinygrad)
-- [[Grant Slatton]] — AI alignment and technocapital; contrasting views on AGI's economic impact
-- [[Artificial General Intelligence]] — The field Carmack is now working in
-- [[Virtual Reality]] — Carmack's work at Oculus that brought VR to mainstream attention
-- [[Keen Technologies]] — His current AGI research lab
+- [[John Romero]] — id Software co-founder
+- [[Richard Sutton]] — Keen Technologies partner; RL pioneer
+- [[concepts/reinforcement-learning]] — Carmack's preferred AGI approach
+- [[concepts/bitter-lesson]] — Sutton's thesis that Carmack advocates
+- [[entities/keen-technologies]] — Carmack's AGI company
 
 ## Sources
 
-- Keen Technologies website and updates
-- Carmack's public comments on AGI and LLMs (2023–2025)
-- "The Bitter Lesson" by Rich Sutton (influential essay Carmack frequently references)
-- Oculus Connect keynotes (2014–2019)
-- Various podcasts and interviews on AGI, VR, and optimization
+- Grokipedia: John Carmack
+- Keen Technologies announcements (2022–2026)
+- id Software history
+- Oculus VR technical documentation

@@ -2,10 +2,11 @@
 title: "Mitchell Hashimoto"
 handle: "@mitchellh"
 created: 2026-04-13
-updated: 2026-04-13
-tags: [person, x-account, ai, agentic-engineering, harness-engineering, ghostty, zig, hashicorp, terraform, terminal-emulator]
-aliases: ["mitchell hashimoto harness engineering", "mitchellh ghostty", "hashicorp founder AI agents", "always have an agent running"]
-depth: 14000
+updated: 2026-04-14
+tags: [person, x-account, ai, agentic-engineering, harness-engineering, ghostty, zig, hashicorp, terraform, terminal-emulator, building-block-economy, libghostty, vibe-coding]
+aliases: ["mitchell hashimoto harness engineering", "mitchellh ghostty", "hashicorp founder AI agents", "always have an agent running", "mitchell hashimoto vibe coding", "mitchell hashimoto building block economy", "ghostty non-profit"]
+depth: 22000
+status: L3
 ---
 
 # Mitchell Hashimoto

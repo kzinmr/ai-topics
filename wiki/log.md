@@ -1,3 +1,39 @@
+## 2026-04-14 — Teknium Entity Page Enriched to L3 Depth
+
+### Updated Entity Pages
+- **[[entities/teknium]]** → **L3 depth** (was skeleton). Major expansion:
+  - Hermes Agent architecture (self-improving loop, 4-layer memory, gateway design, 6 terminal backends, security model)
+  - Post-training philosophy and data engineering methodology
+  - Harness Engineering & agentic workflow connections
+  - Direct quotes from Delphi AMA and Nous documentation
+  - Hermes 3/4 model family details and technical contributions
+  - Open-source contributions (datasets, tools, RL environments)
+  - Timeline 2024-2026 including 68K+ GitHub stars milestone
+  - Related entities cross-references
+
+### Updated
+- **wiki/index.md** — Added Teknium to "AI Agent Platforms & Developer Tools" section
+
+### Key Insights
+- Hermes Agent's self-improving loop: Periodic Nudges → Skill Creation → Skill Self-Improvement → FTS5 Session Search
+- "Most agents recall what happened, but Hermes goes one step further: it extracts what worked, writes it as a reusable skill"
+- Teknium approaches Harness Engineering from the **model training side** (vs Ryan Lopopolo's orchestration side)
+- Platform Registry Refactor (Issue #3823) proposes eliminating 17+ file touchpoints per new platform adapter
+- Zero telemetry is "built-in architectural property, not a toggle"
+- Nous Research: $1B valuation (Series A 2025, Paradigm), decentralized training (DiStrO), Psyche Network (Solana)
+
+### Sources
+- https://nousresearch.com/hermes-agent
+- https://mranand.substack.com/p/inside-hermes-agent-how-a-self-improving
+- https://www.delphiintelligence.io/research/ama-1-transcript-with-nous-research-co-founder-and-post-training-lead-teknium1
+- https://arxiv.org/abs/2508.18255 (Hermes 4 Technical Report)
+- https://arxiv.org/abs/2408.11857 (Hermes 3 Technical Report)
+- https://github.com/NousResearch/hermes-agent/issues/3823
+- https://en.wikipedia.org/wiki/Nous_Research
+- https://github.com/teknium1/teknium1
+
+---
+
 ## 2026-04-14 — Karpathy Loop (Autoresearch) Concept Page
 
 ### New Concept Pages

@@ -2,10 +2,10 @@
 title: "Georgi Gerganov"
 handle: "@ggerganov"
 created: 2026-04-13
-updated: 2026-04-13
-tags: [person, x-account, ai, local-llm, llama.cpp, ggml, gguf, whisper.cpp, hugging-face, open-source]
+updated: 2026-04-14
+tags: [person, x-account, ai, local-llm, llama.cpp, ggml, gguf, whisper.cpp, hugging-face, open-source, fabrice-bellard-lineage]
 aliases: ["ggerganov", "georgi gerganov llama.cpp", "ggml", "gguf format"]
-depth: 10000
+status: L3
 ---
 
 # Georgi Gerganov
