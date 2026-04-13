@@ -1,24 +1,23 @@
 # Daily Inbox Update — 2026-04-13
 
 ## RSS Scan Summary
-- Blogs scanned: 86 (succeeded: 82, failed: 4)
-- New articles from today's scan: 1 (r/LocalLLM)
-- Total articles discovered today in DB: 8
+- Scanned: 86 blogs (83 succeeded, 3 failed)
+- New articles: 9
 
 ### Failures
 | Blog | Error |
 |------|-------|
-| fabiensanglard.net | failed to fetch feed: status 406 |
-| r/AI_Agents | failed to fetch feed: status 429 |
-| simone.org | failed to fetch feed: status 302 |
-| utcc.utoronto.ca/~cks | failed to fetch feed: status 302 |
+| fabiensanglard.net | status 406 |
+| simone.org | status 302 |
+| utcc.utoronto.ca/~cks | status 302 |
 
-### Notable Blog Articles (non-Reddit)
+### Blog Articles
 - [Gemma 4 audio with MLX](https://simonwillison.net/2026/Apr/12/mlx-audio/#atom-everything) — simonwillison.net
 - [Lunar period approximations](https://www.johndcook.com/blog/2026/04/12/lunations/) — johndcook.com
 
 ### Reddit Highlights
-#### r/LocalLLaMA (2 new)
+#### r/LocalLLaMA (3 new)
+- [AI MAX 395+ w/ 128 GB or dual 3090s?](https://www.reddit.com/r/LocalLLaMA/comments/1sjv3f0/ai_max_395_w_128_gb_or_dual_3090s/)
 - [Experiment: Olmo 3 7B Instruct Q1_0](https://www.reddit.com/r/LocalLLaMA/comments/1sjvg4u/experiment_olmo_3_7b_instruct_q1_0/)
 - [About TurboQuant](https://www.reddit.com/r/LocalLLaMA/comments/1sjrnlq/about_turboquant/)
 
@@ -31,6 +30,18 @@
 - [Which AI chat is better for daily chatting?](https://www.reddit.com/r/AI_Agents/comments/1sjunid/which_ai_chat_is_better_for_daily_chatting/)
 
 ## Newsletter Digest
-- **Subject:** Fwd: Anthropic's Mythos Lockdown, Meta's Muse Mission, and AI's Digital NATO
+- **Subject:** Anthropic's Mythos Lockdown, Meta's Muse Mission, and AI's Digital NATO
+- **Source:** The Signal (Alex Banks)
 - **Articles scraped:** 13
-- **Key topics:** Anthropic announced Claude Mythos Preview (locked-down proprietary model), Meta's Muse Mission initiative, and AI's Digital NATO concept. The newsletter covers the week's top AI developments including major model releases and industry strategy shifts.
+- **Key topics:** Anthropic Claude Mythos Preview (locked-down proprietary model), Meta Muse Mission, AI "Digital NATO" alliance concept
+
+## Triage
+
+| Source | Title | Action | Target |
+|--------|-------|--------|--------|
+| simonwillison.net | Gemma 4 audio with MLX | SKIP | Already tracked in entity page |
+| johndcook.com | Lunar period approximations | SKIP | Not AI/ML focused |
+| Newsletter | Anthropic's Mythos Lockdown... | SKIP | Already covered in concepts/claude-mythos-glasswing |
+| Reddit (7 articles) | Various | SKIP | Per policy — too noisy |
+
+No wiki changes made — all articles either already covered or not AI/ML focused.
