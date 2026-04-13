@@ -5,7 +5,7 @@ created: 2026-04-13
 updated: 2026-04-13
 tags: [person, x-account, ai, harness-engineering, openai, codex, ai-agents, agentic-engineering, elixir, symphony]
 aliases: ["ryan lopopolo harness engineering", "lopopolo", "openai frontier symphony", "harness engineering"]
-depth: 16000
+depth: 22000
 ---
 
 # Ryan Lopopolo
@@ -71,15 +71,61 @@ $land → push PR → wait for human/agent review → wait for CI → fix flakes
 - **Author Agents** can defer or push back on scope-creeping review comments
 - Agents attach compressed trajectory videos (FFmpeg screen recordings) to PRs, proving work completion without human shoulder-surfing
 
-### Agent Utilization Is the New Performance Ceiling
+### Agent Utilization Is the New Performance Ceiling (Mar 2026)
 
-From his March 2026 blog post:
+> "A billion tokens per engineer per day is a utilization target. It asks how much of the software lifecycle the agents are actually allowed to do."
 
-> "As implementation ceases to be the bottleneck, the limiting factor in software systems shifts to how effectively agents can be allowed to observe, act, and operate continuously across the entire lifecycle."
+> "Writing patches is a small slice of the job. Most of the software lifecycle is reading logs, checking traces, diffing behavior across releases, chasing down performance regressions, inspecting crash dumps, following analytics, tightening invariants, and proving that a fix actually worked."
 
-### Stop Treating Code as the Artifact
+Numbers from Ryan's own data:
+- **3-5 PRs/engineer/day** on GPT-5.2 *without* Symphony
+- **~75 PRs/engineer/week** *with* Symphony
 
-> "When agents write most of the code, review and authorship stop being the right control surfaces. Quality scales only through systems design, not individual code review."
+> "Utilization drops anywhere the agent cannot see or act. Datadog, Grafana, and Statsig matter. Slack and Google Drive matter when the context lives there. Deploy tooling, Linear, local dev environments, and web search matter too."
+
+### Stop Treating Code as the Artifact (Mar 2026)
+
+> "Once agents write most of the code, stop treating the source files as the artifact. The durable thing is everything upstream of them: the repo-owned spec, the guardrails, the typed boundaries, and the operator surface that determines what code is allowed to exist."
+
+> "Symphony is an issue-tracker-based agent orchestration system. It ships a spec, not source code. Symphony is a ghost library: the implementation is downstream of the spec."
+
+> "In an agentic system, the spec is the valuable part. It is the same reason agent-authored PRs should carry the prompt: the description of the work matters more than the particular source files that fell out of it."
+
+### Software Work Is No Longer Scheduled (Mar 2026)
+
+> "Backlogs, roadmaps, sprint planning, quarterly prioritization: all of that evolved in a world where the truly scarce resource was human time and attention."
+
+> "Full Japanese support in an alpha app for internal users in our Tokyo office should have been a project. In a normal engineering organization, that means roadmap time, prioritization, and somebody explaining why localization can wait until the product is more mature. In my day-to-day work, it was a background task."
+
+> "Planning systems are bad at background tasks. The work is too small to look strategic, too cross-cutting to have a clean owner, and too easy to postpone because nothing is fully on fire yet."
+
+> "The truly scarce resource is still human time and attention. Spend it on bets and ambiguity, not on scheduling the known-good engineering that agents can clear in the background."
+
+### The Production Function Changed (Mar 2026)
+
+> "For decades, software output scaled roughly with human engineering time. The scarce resource has always been human time and attention. More engineers meant more throughput, with coordination costs eating the margins. That mental model is deeply ingrained: planning, staffing, prioritization, and risk management all assume it. That model is now wrong."
+
+> "I haven't written code by hand in months. My laptop hums with its lid half closed at night, running `caffeinate -sdi` so a PR or three can get authored, pushed, reviewed and merged while I'm asleep."
+
+> "My job these days is to teach the machine how to do more and more of the work that I used to do. Guardrails which would have been toilsome to write by hand can be arbitrarily generated as bespoke ESLint rules."
+
+> "Any time I catch myself thinking 'I wish …', I instead say '@codex please …'. I am more than happy to throw away 80% of these! But those rejections are learnings."
+
+### What Does It Mean to Do a Good Job? (Apr 2026)
+
+Ryan's deepest philosophical post on verification as the central problem of AI-assisted development:
+
+> "Verification was always the problem. AI makes that obvious because every real task is downstream of a question we almost never write down. What does it mean to do a good job?"
+
+> "Producing an artifact and reviewing it both require hundreds of small decisions about non-functional requirements: tone, taste, risk tolerance, how much polish is enough, what shortcuts are acceptable, what counts as done. Historically, teams wrote almost none of that down. We encoded it in org design, social norms, hiring loops, onboarding, and repeated exposure to people who already knew the answer."
+
+> "You do not get to run your AI through a hiring pipeline. And because models have seen trillions of documents that embody every possible permutation of those choices for nonfunctional requirements, basically every task we hand them is under-specified."
+
+> "Without that guidance, the reviewers endlessly bully the implementer and nothing converges. Human reviewers usually know to unblock while still providing high-signal feedback. The models do not unless you say it."
+
+> "Post-training optimizes these tools to be helpful assistants, not task-specific experts. The models crave text and they are rewarded for how well they follow instructions, so there is an inherent tension in RL between instruction-following fidelity and 'creativity' in reasoning."
+
+> "If you want the models and agents to do a good job, write down what that means, then add nuance only when the coarse instruction starts to overfit."
 
 ### Context Engineering for Agent Legibility
 
@@ -193,13 +239,29 @@ Ryan's work at OpenAI Frontier points to safe, observable, governable agent depl
 
 > "Prompting is asking an LLM to write code. Harness engineering is building the systems, feedback loops, and constraints that let agents operate autonomously at scale."
 
-> "As implementation ceases to be the bottleneck, the limiting factor in software systems shifts to how effectively agents can be allowed to observe, act, and operate continuously across the entire lifecycle."
+> "A billion tokens per engineer per day is a utilization target. It asks how much of the software lifecycle the agents are actually allowed to do."
 
-> "When agents write most of the code, review and authorship stop being the right control surfaces. Quality scales only through systems design, not individual code review."
+> "Writing patches is a small slice of the job. Most of the software lifecycle is reading logs, checking traces, diffing behavior across releases, chasing down performance regressions, inspecting crash dumps, following analytics, tightening invariants, and proving that a fix actually worked."
 
-> "If we're deploying agents into enterprises, they should be able to do all the things I do."
+> "Once agents write most of the code, stop treating the source files as the artifact. The durable thing is everything upstream of them: the repo-owned spec, the guardrails, the typed boundaries, and the operator surface that determines what code is allowed to exist."
 
-> "I almost don't care that there are merge conflicts."
+> "Symphony is a ghost library: the implementation is downstream of the spec."
+
+> "Planning systems are bad at background tasks. The work is too small to look strategic, too cross-cutting to have a clean owner, and too easy to postpone because nothing is fully on fire yet."
+
+> "I haven't written code by hand in months. My laptop hums with its lid half closed at night, running `caffeinate -sdi` so a PR or three can get authored, pushed, reviewed and merged while I'm asleep."
+
+> "My job these days is to teach the machine how to do more and more of the work that I used to do."
+
+> "Verification was always the problem. AI makes that obvious because every real task is downstream of a question we almost never write down. What does it mean to do a good job?"
+
+> "You do not get to run your AI through a hiring pipeline."
+
+> "Without that guidance, the reviewers endlessly bully the implementer and nothing converges. Human reviewers usually know to unblock while still providing high-signal feedback. The models do not unless you say it."
+
+> "If you want the models and agents to do a good job, write down what that means, then add nuance only when the coarse instruction starts to overfit."
+
+> "Build things. Even weird things. Even things that might not last forever. The act of building changes you."
 
 ## Related People
 
