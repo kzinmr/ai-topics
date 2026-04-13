@@ -44,8 +44,9 @@
     44|- [[entities/filfre-net]] — Jimmy Maher
     45|- [[entities/gary-marcus]] — Gary Marcus
     46|- [[entities/geoffreylitt-com]] — Geoffrey Litt
-    47|- [[entities/geohot-github-io]] — George Hotz
-    48|- [[entities/gpjt]] — Giles Thomas
+- [[entities/geohot-github-io]] — George Hotz
+- [[entities/georgi-gerganov]] — Georgi Gerganov
+- [[entities/gpjt]] — Giles Thomas
     49|- [[entities/grantslatton-com]] — Grant Slatton
     50|- [[entities/gwern]] — Gwern Branwen
     51|- [[entities/herman-s-blog]] — Herman
