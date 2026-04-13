@@ -2,7 +2,7 @@
 title: "Boris Cherny"
 created: 2026-04-13
 updated: 2026-04-13
-tags: [person, x-account, ai, coding-agents, claude-code, openai, typescript]
+tags: [person, x-account, ai, coding-agents, claude-code, openai, typescript, anthropic, meta]
 aliases: ["bcherny", "boris cherny claude code", "@bcherny__"]
 ---
 
@@ -17,9 +17,59 @@ aliases: ["bcherny", "boris cherny claude code", "@bcherny__"]
 
 ## Bio
 
-Boris Cherny is the creator of **Claude Code**, Anthropic's agentic coding CLI, now developed at OpenAI. He is one of the most influential voices in practical AI agent workflows, known for deep technical insights on parallel agent execution, terminal optimization, and the philosophy that **"there is no one right way to use Claude Code."**
+Boris Cherny is the creator of **Claude Code**, Anthropic's agentic coding CLI. He is one of the most influential voices in practical AI agent workflows, known for deep technical insights on parallel agent execution, terminal optimization, and the philosophy that **"there is no one right way to use Claude Code."**
 
-Previously, Boris was a core contributor to **Flow**, Facebook's static type checker for JavaScript, where he worked on type inference, gradual typing, and developer tooling.
+A self-taught programmer who studied economics at UCSD (2009–2011) but dropped out to launch startups at age 18. His career spans frontend architecture at scale (Meta/Instagram IC8), open-source contributions (Flow, Undux, TypeScript book), and now AI-assisted development tools. He describes LLMs as **"alien life forms"** and joined Anthropic specifically to contribute to AI safety and alignment.
+
+## Career Timeline
+
+| Period | Role | Company | Key Contributions |
+|---|---|---|---|
+| ~2011–2017 | Software Engineer | Startups, hedge fund, nonprofit | Founded startup at 18; developed Undux (React state management); wrote TypeScript book; started SF TypeScript meetup |
+| Nov 2017–2021 | Engineer IC4→IC5 | Meta (Facebook) | "Chats in Groups" project — integrated Messenger into FB Groups |
+| 2021–2023 | Staff Engineer IC6 | Meta (Facebook) | Led Facebook Groups → Comet platform migration; managed 30+ engineers; relay mutations for UI state |
+| 2023–Aug 2024 | Senior Staff IC7→IC8 | Meta / Instagram | "Public Groups" initiative; scoped work for 100s of engineers; Instagram Python→Hack migration |
+| Sep 2024–Jul 2025 | Founding Engineer | Anthropic | Prototyped and built Claude Code; drove 67% PR throughput increase |
+| Jul 2025 | Brief departure | Anysphere (Cursor) | Senior role |
+| Jul 2025–present | Head of Claude Code | OpenAI (acquired from Anthropic) | Leading Claude Code development |
+
+## Early Career & Open Source
+
+### Undux
+Developed **Undux**, a simpler alternative to Redux for React state management. Became the most widely adopted state management framework internally at Meta before newer tools superseded it.
+
+### TypeScript Book & Community
+Authored a book on TypeScript at a time when resources were scarce (~2014–2015). Started a **TypeScript meetup in San Francisco**, helping build early community adoption.
+
+### Nonprofit Work
+Volunteered at a nonprofit organization where he developed Undux and contributed to open-source frontend tooling.
+
+### Flow
+Core contributor to **Flow**, Facebook's static type checker for JavaScript. Focus areas: type inference, gradual typing, developer tooling. This background in type systems directly informed his approach to structured agent outputs in Claude Code.
+
+## Claude Code Development Story
+
+### Origins (Sep 2024 – Nov 2024)
+Claude Code began when Boris joined Anthropic in September 2024 and started prototyping with the Claude 3.6 model. His first prototype was a **command-line tool to identify and change music via AppleScript** — this evolved into the core of Claude Code. The prototyping drew from an earlier Anthropic research project called **Clide**, which influenced Boris's approach despite its inefficiencies (slow startup times, heavy indexing requirements).
+
+By November 2024, an internal dogfooding-ready version was released:
+- **20% of Anthropic's engineering team** adopted it on day one
+- **50% adoption by day five**
+- Rapid iterative refinement through constant internal feedback
+
+The tool reached **general availability in May 2025**, after which the team expanded to around 10 engineers by July 2025.
+
+### Key Development Challenges
+- **Filesystem access**: Adding tools for reading, writing, and running batch commands while preventing unintended file deletions through a robust permissions system with static analysis
+- **Minimizing business logic**: Letting the AI model operate as "raw" as possible — deleting portions of the system prompt as models improved
+- **Local vs virtualized execution**: Opting for local execution for simplicity, balancing performance and safety
+- **High-velocity prototyping**: Boris built ~20 prototypes for features like todo lists over two days, testing 5-10 ideas daily with AI agents
+- **60-100 internal releases per day** — bottom-up feature building based on individual team needs
+
+### Team & Collaboration
+- **Sid Bidasaria** (joined Nov 2024) — rapid iterations and subagent development, completed key features in just three days through experimental approaches
+- **Cat Wu** (founding product manager) — researched AI agent usage, provided feedback that expanded the tool's scope
+- **Dogfooding culture**: 70-80% of technical staff used Claude Code daily, generating constant input via internal channels
 
 ## Core Ideas
 
@@ -27,7 +77,9 @@ Previously, Boris was a core contributor to **Flow**, Facebook's static type che
 
 > "Opus 4.5 with thinking mode. It's slower than Sonnet but smarter, requires less steering, and ends up faster in real use."
 
-Boris uses Opus 4.5 with thinking enabled for all his work. The trade-off is clear: higher per-token latency but fewer correction cycles. The thinking mode allows the model to reason through complex problems before responding, reducing the need for human steering and re-planning. This aligns with his philosophy of investing upfront in planning to achieve one-shot execution.
+Boris uses Opus 4.5 with thinking enabled for everything. The trade-off is clear: higher per-token latency but fewer correction cycles. The thinking mode allows the model to reason through complex problems before responding, reducing the need for human steering and re-planning. This aligns with his philosophy of investing upfront in planning to achieve one-shot execution.
+
+> "Even when it was used internally I used it for maybe like 10% of my code… and then at some point we released… Opus 4 and the product just worked." — Peterman Podcast, Dec 2025
 
 ### Parallel Agent Execution is the #1 Unlock
 
@@ -127,18 +179,35 @@ This pattern turns Claude from a code assistant into a **full-stack development 
 - Enable "Explanatory" output style in `/config` for learning
 - Have Claude generate ASCII diagrams of unfamiliar codebases or visual HTML presentations of complex code
 
-### Claude Code Origin Story
+### Advanced Team Patterns & Strategies
 
-Launched late 2024 as "Claude CLI" for internal dogfooding at Anthropic. Early unexpected adoption patterns:
-- Engineers used it for git operations & code writing before agentic capabilities were mature
-- **Data scientists** rapidly adopted it for SQL queries, ASCII terminal plots, and `matplotlib` workflows
-- This demonstrated the tool's flexibility extends far beyond traditional software engineering
+Insights from the broader Claude Code team (Feb 2026) that extend beyond Boris's personal workflow:
 
-### Subscription Model & Capacity Management
+#### Two-Stage Planning & Review
+> "One person has one Claude write the plan, then they spin up a second Claude to review it as a staff engineer."
 
-In April 2026, OpenAI announced that Claude subscriptions would no longer cover usage on third-party tools like OpenClaw, reflecting the fundamental difference between interactive human usage and autonomous agent usage patterns:
+This pattern separates **generation** from **evaluation**. By using one session for the initial plan and a second to critique it, the team catches architectural flaws before execution.
 
-> "Capacity is a resource we manage thoughtfully and we're prioritizing our customers using our products and API."
+#### High-Value Slash Commands
+The team recommends automating any task done more than once a day. Key examples:
+- `/techdebt` — Scans codebase at session end to identify duplicated/legacy code.
+- `/sync-context` — Aggregates 7 days of Slack, GDrive, Asana, and GitHub activity into a single context dump.
+- `/commit-push-pr` — Automates PR finalization (checked into git).
+
+#### Prompting for Rigor
+- **Challenge Mode**: *"Grill me on these changes and don't make a PR until I pass your test."* Forces the agent to act as a reviewer.
+- **Elegant Reset**: After a mediocre fix, *"Knowing everything you know now, scrap this and implement the elegant solution."*
+- **Verification First**: *"Prove to me this works"* — diff behavior between branches before declaring success.
+
+#### Long-Running & Background Tasks
+- **Background Agents**: Claude verifies its own work asynchronously.
+- **Stop Hooks**: Deterministically trigger verification steps upon completion.
+- **ralph-wiggum Plugin**: Manages long-running loops and resilience (originally by [@GeoffreyHuntley](https://twitter.com/GeoffreyHuntley)).
+- **Permission Sandboxing**: `--permission-mode=dontAsk` in a sandbox allows uninterrupted execution.
+
+#### Terminal Stack
+- **Ghostty**: Preferred by the team for synchronized rendering, 24-bit color, and Unicode support.
+- **tmux**: Used for color-coding/naming tabs per worktree.
 
 ## Key Work
 
@@ -158,11 +227,20 @@ This repo serves as a **reference implementation** for agentic engineering patte
 - Pioneered git worktree isolation for parallel agent workflows
 - Introduced the NO_FLICKER renderer for stable terminal experiences
 - Developed skills system (`/simplify`, `/batch`) for automating repetitive agent tasks
+- **SWE-bench Verified: 72.7% accuracy** — surpassing OpenAI's Codex at 69.1%
+- **300%+ active user base growth** and **5.5x run-rate revenue expansion** by mid-2025
+- **36% of overall Claude usage** is coding tasks; **79% of Claude Code interactions involve automation**
 
 ### Flow Type Checker (Core Contributor)
 - Worked on Facebook's static type checker for JavaScript
 - Focus areas: type inference, gradual typing, developer tooling
 - This background in type systems directly informed his approach to structured agent outputs
+
+### Impact on Industry
+- Set new benchmarks for AI-assisted programming, particularly in accuracy and developer control
+- Prompted shifts in how rivals like GitHub Copilot and Cursor approach agentic coding workflows
+- Sparked industry debates on productivity, as evidenced by reports of Google engineers replicating complex distributed systems work in hours using Claude Code
+- Elevated standards for AI coding agents, encouraging competitors to prioritize precision and integration over broad automation
 
 ## X Activity Themes
 
