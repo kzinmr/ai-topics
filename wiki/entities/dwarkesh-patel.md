@@ -1,21 +1,61 @@
 ---
 title: "Dwarkesh Patel"
 created: 2026-04-09
-updated: 2026-04-10
+updated: 2026-04-13
 tags: [person, podcaster, blogger, ai-researcher, hn-popular]
 aliases: ["dwarkesh.com", "dwarkesh-podcast"]
+sources:
+  - "https://grokipedia.com/page/dwarkesh-patel"
 ---
 
 # Dwarkesh Patel
 
 | | |
 |---|---|
+| **Born** | Early 2000s, United States (via Grokipedia) |
+| **Heritage** | Indian-American, family with immigrant roots from India (via Grokipedia) |
+| **Education** | B.A. in Computer Science, University of California, Berkeley, 2023 (via Grokipedia) |
 | **Blog** | [Dwarkesh Podcast](https://dwarkesh.com) |
+| **Substack** | [Dwarkesh Newsletter](https://www.dwarkeshpatel.com) (via Grokipedia) |
 | **RSS** | https://www.dwarkeshpatel.com/feed |
 | **X/Twitter** | [@dwarkesh_SP](https://x.com/dwarkesh_SP) |
 | **Role** | Podcast host, writer, researcher |
-| **Known for** | Long-form, deeply researched interviews with leading AI researchers, scientists, and economists; unique "short-term bearish, long-term explosively bullish" stance on AI |
+| **Known for** | Long-form, deeply researched interviews with leading AI researchers, scientists, and economists; unique "short-term bearish, long-term explosively bullish" stance on AI; TIME's 100 Most Influential People in AI (2024) (via Grokipedia) |
 | **Bio** | Host of the Dwarkesh Podcast, where he conducts extensively researched conversations with frontier AI researchers, mathematicians, economists, and historians. Writes analytical essays on AI progress, geopolitics, and technology economics. Based in the Bay Area, deeply embedded in the effective altruism and rationalist-adjacent community. |
+
+## Early Life and Education
+
+Dwarkesh Patel was born in the early 2000s in the United States to a family of Indian-American heritage with immigrant roots (via Grokipedia). His father worked in the tech industry, providing him with early access to computers and fostering an interest in science and innovation from a young age (via Grokipedia). In public interviews, Patel has recounted anecdotes about his childhood fascination with science fiction literature and early experiments with programming, which his family supported enthusiastically — laying the groundwork for his later pursuits in artificial intelligence and content creation (via Grokipedia). This family encouragement helped shape his technical curiosity during his formative years in the Bay Area (via Grokipedia).
+
+Patel earned a B.A. in Computer Science from the University of California, Berkeley in 2023 (via Grokipedia). During his college years, he developed a keen interest in AI alignment and futurism — influences that later shaped his interviewing style on the Dwarkesh Podcast by emphasizing technical depth and philosophical questions (via Grokipedia). His academic pursuits included self-directed learning that honed his ability to engage with complex ideas, sparking his passion for in-depth conversations with tech leaders (via Grokipedia).
+
+## Career Timeline
+
+- **Pre-2020** — Built technical background through studies in computer science and software engineering experience (via Grokipedia).
+- **2020** — Transitioned into podcasting, launching early episodes focused on blockchain and AI safety, motivated by a desire to explore complex topics in AI alignment and futurism through long-form interviews (via Grokipedia). Self-funded initial setup with basic recording equipment, distributing episodes on YouTube, Spotify, and Apple Podcasts (via Grokipedia).
+- **May 3, 2022** — Officially launched the Dwarkesh Podcast with its inaugural episode on technology and innovation (via Grokipedia).
+- **2022–2023** — Expanded interview roster to include leading AI researchers, economists, and tech founders. Notable episodes include Dario Amodei (Dec 2022), Eliezer Yudkowsky (Apr 2023), Connor Leahy (Jul 2023), Marc Andreessen (Sep 2023), Paul Graham (Oct 2023), and Yoshua Bengio (Nov 2023) (via Grokipedia).
+- **2023** — Graduated from UC Berkeley with a B.A. in Computer Science (via Grokipedia).
+- **2024** — Named to TIME's 100 Most Influential People in AI (via Grokipedia). The Yudkowsky interview alone amassed over one million views and sparked widespread debate on AI doomsday scenarios across tech platforms (via Grokipedia).
+- **2025–2026** — Continued producing high-profile interviews, including Ilya Sutskever (Nov 2025), Andrej Karpathy (Oct 2025), and follow-ups with Dario Amodei and Dylan Patel. Began publishing analytical essays on AI progress, geopolitics, and technology economics.
+
+## Key Projects
+
+### Dwarkesh Podcast
+
+The Dwarkesh Podcast follows a consistent format of long-form, solo-hosted interviews typically lasting between 1 to 3 hours, allowing for extensive exploration of ideas without time constraints (via Grokipedia). Patel prepares questions through rigorous research and direct outreach to guests, emphasizing thoughtful and probing inquiries that delve into technical and philosophical aspects (via Grokipedia). Central themes include AI safety, entrepreneurship, futurism, and technological innovation (via Grokipedia).
+
+Production features video recordings integrated with audio releases, distributed primarily on YouTube, Spotify, and Apple Podcasts (via Grokipedia). A unique feature is Patel's technical deep dives into subjects like AI alignment, where he incorporates detailed explanations and analogies to make complex concepts approachable yet rigorous (via Grokipedia).
+
+### Writing and Analysis
+
+Beyond podcasting, Patel writes analytical essays on AI progress, technology economics, and geopolitics — including notable pieces such as "Thoughts on AI Progress," "Why I Don't Think AGI Is Right Around the Corner," and "Notes on China." His writing reveals a sophisticated understanding of AI architecture, training methodologies, and economic dynamics that rivals the researchers he interviews.
+
+### Reception and Influence
+
+The podcast has been praised for its deep and thoughtful interviews with experts in AI and technology, distinguishing itself through Patel's preparation and focus on technical details (via Grokipedia). His episodes have sparked broader public discourse on platforms like Twitter, where clips and discussions often go viral, prompting debates among tech enthusiasts, researchers, and policymakers (via Grokipedia). The podcast's emphasis on unscripted, long-form dialogues has led to influential discussions that resonate strongly among researchers and ethicists (via Grokipedia).
+
+Collaborations stemming from the podcast include guest appearances and joint events with interviewees, such as discussions on AI ethics that have inspired spin-off content in academic and entrepreneurial circles — helping popularize AI alignment concepts and encouraging greater engagement from non-experts (via Grokipedia).
 
 ## Core Ideas
 
@@ -100,6 +140,7 @@ Dwarkesh's travel-based analysis (especially his China notes) reveals a comparat
 
 ## Sources
 
+- [Grokipedia: Dwarkesh Patel](https://grokipedia.com/page/dwarkesh-patel)
 - [Thoughts on AI Progress (Dec 2025)](https://www.dwarkeshpatel.com/p/thoughts-on-ai-progress-dec-2025)
 - [Why I Don't Think AGI Is Right Around the Corner](https://www.dwarkeshpatel.com/p/why-i-dont-think-agi-is-right-around) (Jun 2025)
 - [Notes on China](https://www.dwarkeshpatel.com/p/notes-on-china) (Dec 2024)
