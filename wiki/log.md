@@ -1,3 +1,35 @@
+## 2026-04-15 — Dax Raad Entity Page Created
+
+### New Entity Pages
+- **[[entities/dax-raad]]** — Dax Raad (@thdxr): Co-founder of Anomaly, creator of OpenCode and SST. Page covers:
+  - OpenCode: 135k+ GitHub stars, 1.5M+ MAUs, open-source AI coding agent (MIT License)
+  - SST (Serverless Stack): 25k+ stars, profitable by 2025
+  - "The Honest Take" on AI productivity (Feb 2026 viral tweet, 793k+ views): "Your org rarely has good ideas. Ideas being expensive to implement was actually helping."
+  - Core ideas: AI productivity skepticism, "slop" crisis warning, model agnosticism, local-first philosophy, DX over benchmarks
+  - Business model: OpenCode Zen for API access, but "bring your own keys" remains the primary model
+  - Other projects: Bumi (local-first sync), OpenAuth
+  - Related entities: Jay V, Frank Wang, Adam Elmore, Paul Copplestone
+
+### Updated
+- **wiki/index.md** — Added Dax Raad to "Coding Agents & Terminal Tools" section, entity count to 65
+
+### Key Insights
+- **Coding was never the bottleneck**: Raad argues the real constraints are good ideas, motivation, bureaucracy, and the "realities of shipping something real"
+- **"Slop" crisis**: AI-assisted PRs have 1.7x more bugs; high-performers get overwhelmed reviewing low-quality AI code and quit
+- **Model agnosticism as moat**: OpenCode's "bring your own keys" approach differentiates it from locked-in competitors
+- **Terminal-first development**: OpenTUI (Zig + SolidJS) reflects commitment to superior developer experience for power users
+- **Open source pragmatism**: "Just because something's open source doesn't mean it's going to be any better" — open is a means to iterate fast, not just an ethical stance
+
+### Sources
+- https://blog.codacy.com/the-creator-of-opencode-thinks-youre-fooling-yourself-about-ai-productivity
+- https://medium.com/@jpcaparas/how-opencode-went-from-zero-to-titan-in-eight-months-dcdcd8ff5572
+- https://embed.businessinsider.com/dax-raad-post-ai-coding-workplace-bottleneck-productivity-2026-2
+- https://reading.sh/dax-raad-just-dropped-the-most-honest-take-on-ai-productivity-fd8c552b4dd7
+- https://news.qq.com/rain/a/20260220A03OXQ00
+- https://github.com/anomalyco/opencode
+
+---
+
 ## 2026-04-15 — gm8xx8 Entity L3 enrichment, index.md updated
 
 ### New/Updated Entity Pages

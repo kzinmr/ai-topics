@@ -2,9 +2,9 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-     5|Last updated: 2026-04-14 (gm8xx8 L3 enrichment)
+     5|Last updated: 2026-04-15 (Dax Raad entity page created)
      6|
-     7|## Entity Pages (64)
+     7|## Entity Pages (65)
      8|
      9|- [[entities/adam-rosenthal]] — Adam Rosenthal
     10|
@@ -54,6 +54,7 @@
     53|- [[entities/jeff-geerling]] — Jeff Geerling
     54|- [[entities/jim-nielsen]] — Jim Nielsen
     55|- [[entities/andrej-karpathy]] — Andrej Karpathy
+- [[entities/dax-raad]] — Dax Raad
     56|- [[entities/john-d-cook-applied-mathematics-consulting]] — John D. Cook
     57|- [[entities/jyn]] — jyn
     58|- [[entities/k0nserv]] — Hugo Tunius
@@ -335,10 +336,11 @@
    305|
    306|- [[entities/gary-marcus|Gary Marcus]] — AI critic, NYU emeritus. Skeptical of pure scaling, advocates hybrid neuro-symbolic approaches
    307|
-   308|### AI Infrastructure & Open Source
-   309|
-   310|- [[entities/george-hotz|George Hotz]] (@geohot) — comma.ai founder, tinygrad creator. "All compute is equal", open-source GPU driver
+### AI Infrastructure & Open Source
+
+- [[entities/george-hotz|George Hotz]] (@geohot) — comma.ai founder, tinygrad creator. "All compute is equal", open-source GPU driver
 - [[entities/gm8xx8|gm8xx8]] (@gm8xx8) — AI infrastructure researcher. cuLA CUDA kernels, MiroMindAI contributor, linear attention & M2RNN analysis. 132K Farcaster followers.
+- [[entities/sero|Sero]] (@0xsero) — Sybil Solutions founder, ElizaOS contributor. 8x RTX 3090 homelab, Freedom Tech advocate, local AI infrastructure builder, Thrive Protocol. TurboQuant, pi-brain, Open Orchestra, Parchi, vLLM Studio, Azul. 200+ OSS repos. L3 depth.
    311|
    312|### AI Research & Computer Vision
    313|
@@ -358,6 +360,9 @@
 
 |- [[entities/peter-steinberger|Peter Steinberger]] (@steipete) — OpenClaw creator, former PSPDFKit CEO. AI-native solo builder shipping 600+ commits/day via 5-10 parallel agents. Joined OpenAI Feb 2026. "Agent-first design" advocate, "Ship beats perfect" philosophy.
 |- [[entities/teknium|Ryan (Teknium)]] (@teknium1) — Nous Research Co-founder & Head of Post-Training. Hermes model family (3/4) and Hermes Agent (68K+ stars) architect. Post-training, synthetic data, RL environments, self-improving agents. "The agent that grows with you."
+- [[entities/dax-raad|Dax Raad]] (@thdxr) — Anomaly co-founder. Creator of OpenCode (135k+ GitHub stars, 1.5M+ MAUs) and SST (25k+ stars). Blunt critic of AI productivity hype; advocates for local-first, model-agnostic, open-source developer tools.
+
+### Coding Agents & Terminal Tools
 
 ### Distributed Systems & Local-First
 
