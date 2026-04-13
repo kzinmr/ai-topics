@@ -2,9 +2,9 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-     5|Last updated: 2026-04-15 (Dax Raad entity page created)
-     6|
-     7|## Entity Pages (65)
+Last updated: 2026-04-15 (Sero entity page enriched to L3 depth)
+
+## Entity Pages (66)
      8|
      9|- [[entities/adam-rosenthal]] — Adam Rosenthal
     10|
@@ -83,9 +83,10 @@
     81|- [[entities/shkspr-mobi]] — Terence Eden
     82|- [[entities/simon-willison]] — Simon Willison
     83|- [[entities/simone-salis]] — Simone Salis
-    84|- [[entities/skyfall-dev]] — Skyfall
-    85|- [[entities/stefano-marinelli]] — Stefano Marinelli
-    86|- [[entities/steve-blank]] — Steve Blank
+- [[entities/sero]] — Sero (0xSero)
+- [[entities/skyfall-dev]] — Skyfall
+- [[entities/stefano-marinelli]] — Stefano Marinelli
+- [[entities/steve-blank]] — Steve Blank
     87|- [[entities/susam-net]] — Susam Pal
     88|- [[entities/tedium-the-dull-side-of-the-internet]] — Ernie Smith
     89|- [[entities/terrible-software]] — Terrible Software

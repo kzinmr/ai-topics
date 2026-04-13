@@ -30,6 +30,43 @@
 
 ---
 
+## 2026-04-15 — Sero (0xSero) Entity Enriched to L3 Depth
+
+### Updated Entity Pages
+- **[[entities/sero]]** → **L3 depth** (was L2). Major expansion:
+  - Homelab hardware build breakdown ($12,360 total: 8x RTX 3090, 192GB VRAM, 512GB RAM, EPYC 7443P)
+  - Performance benchmarks: 3,000-9,000 TPS prefill, 30-50 TPS generation, 180k-500k+ context window
+  - Cerebras REAP benchmark for GLM-4.5-Air-Reap-82b (8-bit)
+  - Model preference rankings (S-Tier: GLM-4.5-Air, GLM-4.5V, MiniMax-M2.1; A-Tier: Hermes-70B, Qwen-72B, GPT-OSS-120B)
+  - New projects: TurboQuant (976 stars, KV cache quantization), pi-brain (151 stars, privacy-first dataset extraction), factory-cursor-bridge (62 stars, BYOK proxy for Cursor), Thrive Protocol ($150M+ committed capital)
+  - Updated Open Orchestra details (269 stars, hub-and-spoke orchestration, Neo4j memory, 6 worker profiles)
+  - Updated project star counts (AI Data Extraction: 594, Parchi: 461, vLLM Studio: 366, Azul: 165, Mem-Layer: 78)
+  - 12+ direct quotes covering Freedom Tech, anti-inference resale, digital wellness, model comparisons, and AI philosophy
+  - AI/LLM stance section: Anthropic anthropomorphism criticism, Codex vs GPT-5.4 comparison, Pi caching praise
+  - 200+ public repositories count updated
+  - Private Home RAG details (1.2TB indexed, BGE-M3 embeddings, HNSW index)
+  - Cost analysis: ~$10,000/mo value → ~$2,012 actual cost → ~$50/mo electricity with homelab
+
+### Updated Files
+- **wiki/index.md** — Added Sero to "AI Infrastructure & Open Source" section, entity count 65→66
+- **wiki/log.md** — This entry
+
+### Key Insights
+- **"Freedom Tech" philosophy** — technology that empowers individuals rather than creating corporate lock-in
+- **Anti-inference resale stance** — "selling inference is not the right choice for any wrapper, ADE, etc."
+- **Digital wellness rules** — strict guidelines including no AI-written content, no LLM relationships, avoid short-form content
+- **Homelab economics** — demonstrates that competitive AI inference is achievable on consumer hardware at ~2% the cost of cloud subscriptions
+- **TurboQuant honesty** — publicly corrects his own "5.1x compression" claim to the honest ~4.6x figure, showing intellectual integrity
+- **Trajectory pattern** — Content protection → Web3/DAOs → AI Infrastructure, driven by "becoming a father" turning point
+
+### Sources
+- https://github.com/0xSero (200+ repositories)
+- https://x.com/0xsero (X/Twitter activity)
+- https://www.sybilsolutions.ai/ (Sybil Solutions)
+- https://blog.thriveprotocol.com/about (Thrive Protocol)
+
+---
+
 ## 2026-04-15 — gm8xx8 Entity L3 enrichment, index.md updated
 
 ### New/Updated Entity Pages
