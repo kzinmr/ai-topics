@@ -15,10 +15,21 @@ aliases: ["gwern.net"]
 | **About** | [https://gwern.net/about](https://gwern.net/about) |
 | **Role** | Independent researcher, essayist, and knowledge curator |
 | **Known for** | The Scaling Hypothesis, Lizardman Constant, spaced repetition advocacy, embryo selection research, self-experimentation, long-form hypertext essays |
+| **Wikipedia** | 90,000+ edits since 2004, former administrator (anti-vandalism, content moderation) (via Grokipedia) |
+| **Consulting** | MIRI, GiveWell, FBI (via Grokipedia) |
+| **Academia** | 2016 IJDP darknet drug trafficking critique (61 citations) (via Grokipedia) |
 
 ## Bio
 
 Gwern Branwen (born c. 1984) is a pseudonymous independent researcher and writer based in the USA, known for his prolific contributions to AI, psychology, statistics, and rationalist thought under the pseudonym "Gwern." He maintains gwern.net, a vast archive of over 1,000 essays blending rigorous analysis with original experiments. An active English Wikipedian since 2004 with over 90,000 edits, Gwern is a prominent figure in the rationalist and LessWrong communities. He describes his psychological profile as high Openness (87th percentile), medium Conscientiousness (64th-69th percentile), and low Agreeableness—fitting for someone who relentlessly questions conventional wisdom.
+
+### Early Life and Identity
+
+Branwen was born hearing impaired, requiring attendance at a special education school before kindergarten (via Grokipedia). Contemporary hearing aids provided inadequate support in rapid conversations, imposing a processing delay that impeded social cues and exacerbated isolation for an introverted child (via Grokipedia). This fostered enduring water-related anxieties, as protecting the costly devices from moisture instilled a fear of rain and apprehension around pools (via Grokipedia). These circumstances channeled his pursuits toward reading—unaffected by his impairment—establishing him as a dedicated bookworm (via Grokipedia). His speech bears a "deaf accent" commonly mistaken for Swedish or Norwegian, arising from textual rather than auditory word acquisition, which occasions mispronunciations and diminishes confidence in speaking relative to writing (via Grokipedia).
+
+### Name and Etymology
+
+The pseudonym "Gwern Branwen" is derived from Welsh mythology (via Grokipedia). Gwern is the name of a character in the Mabinogion—specifically the son of Branwen and Matholwch, king of Ireland—and derives from the Old Welsh word *gwern*, meaning "alder tree," rooted in the Proto-Celtic *werno-* (via Grokipedia). Branwen means "blessed raven" or "white raven," referring to his mother; combining the names evokes familial ties in the myth (via Grokipedia). This etymology ties the pseudonym to the alder (*Alnus* genus), a tree native to damp, riverine environments across Britain and Ireland (via Grokipedia). In the Mabinogion tale "Branwen ferch Llyr," Gwern is immolated by his uncle Efnisien during a peace feast between Britain and Ireland—an act that ignites war and underscores themes of betrayal and failed reconciliation (via Grokipedia). Branwen adopted this pseudonym to maintain anonymity while engaging in discussions on AI, psychology, and statistics (via Grokipedia).
 
 ## Core Ideas
 
@@ -66,11 +77,36 @@ Gwern defines the security/hacker mindset as **extreme reductionism**: ignoring 
 
 Gwern is a practitioner of **rigorous self-experimentation** (Quantified Self), using statistical analysis in R to evaluate nootropics, sleep interventions, and cognitive tools. Notable experiments include:
 - **Spaced Repetition**: Long-time advocate with 16,000+ active Anki/Mnemosyne cards. Argues SRS is dramatically underutilized as a learning tool.
-- **Nootropics**: Modafinil, caffeine, creatine, lithium in drinking water—tested with careful methodology and public documentation.
+- **Nootropics**: Modafinil, caffeine, creatine, lithium in drinking water—tested with careful methodology and public documentation. He has run blinded trials of modafinil on cognition, documenting results empirically (via Grokipedia).
 - **Dual n-Back**: Investigated working memory training with meta-analysis.
 - **LSD microdosing**: Ran a self-blinded n-of-1 experiment, finding no significant cognitive benefits.
 
 His approach: **document everything, run your own experiments, don't trust authority over data.**
+
+### Haskell & Open Source Contributions
+
+Since the mid-2000s, Gwern has been an active contributor to the Haskell programming language ecosystem (via Grokipedia). His work focuses on maintenance, optimizations, and packaging for established projects rather than novel inventions—reflecting his philosophy of collaborative enhancement and incremental improvement (via Grokipedia). Key contributions include:
+- **Darcs**: Distributed version control system—bug fixes, standards compliance, and user support
+- **XMonad**: Tiling window manager—maintenance and optimization work
+- **Gitit**: Wiki engine built on Haskell—ongoing development support
+
+These efforts are documented on platforms like GitHub and Hackage (via Grokipedia).
+
+### Funding Model & Lifestyle
+
+Gwern operates anonymously and supports himself through a decentralized funding model (via Grokipedia):
+- **Patreon donations**: Regular reader-supported income
+- **Bitcoin holdings**: Cryptocurrency-based financial independence
+- **Frugal living**: Minimizes expenses to maximize intellectual freedom
+
+This approach allows him to prioritize rigorous self-experimentation and long-form writing over formal institutional affiliations (via Grokipedia).
+
+### Academic Publications & Research Impact
+
+Beyond his blog essays, Gwern has published academic work with measurable citation impact (via Grokipedia):
+- **2016 methodological critique** in the *International Journal of Drug Policy*—examining darknet drug trafficking studies; has received 61 citations and is his most referenced academic work (via Grokipedia)
+- Research on AI-generated content ethics, exploring implications for fiction and poetry creation (via Grokipedia)
+- His publications have been cited in fields including international drug policy and deep learning research (via Grokipedia)
 
 ### The Long Now & Evergreen Content
 
@@ -114,3 +150,4 @@ Gwern challenges the Whiggish "expanding circle" narrative of moral progress, ar
 - [Lizardman Constant in Surveys](https://gwern.net/note/lizardman) (2013)
 - [Interview with Dwarkesh Patel](https://www.dwarkeshpatel.com/gwern-branwen) (2024)
 - [About This Website](https://gwern.net/About) — Gwern's writing methodology and philosophy
+- [Grokipedia: Gwern Branwen](https://grokipedia.com/page/gwern) — Biographical details, early life, Haskell contributions, funding model
