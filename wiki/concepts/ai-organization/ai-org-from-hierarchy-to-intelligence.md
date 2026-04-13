@@ -76,7 +76,7 @@ Blockが実践するAI時代の組織設計原則:
 
 ## 関連概念
 
-- [[ai-org-context-as-moat]] — Proprietary ContextとFission-Fusion
+- [[ai-org-context-as-moat]] — Proprietary Context（McKinsey）
 - [[ai-org-solo-founder-and-super-ic]] — Solo FounderとSuper IC
 - [[agentic-engineering]] — 開発者のAI活用ワークフロー
 - [[harness-engineering]] — エージェントの制御・構造化

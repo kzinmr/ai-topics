@@ -99,7 +99,22 @@ Through his consulting work with dozens of startups and his free 6-week email co
 
 > "RAG systems suck because the value you derive is time saved from finding an answer. This is a one-dimensional value, and it's very hard to sell any value beyond that. Meanwhile, a report is a higher-value product because it is a decision-making tool that enables better resource allocation."
 
+> "The real advantage is that it's measurable—and measurability kills guesswork. Instead of random hype or endless prompt tinkering, you systematically track your retrieval, refine your segmentation, handle specialized data, pick the best index, and incorporate user feedback."
+
 Jason predicts RAG will shift from question-answering to **report generation** — from delivering answers to enabling decisions.
+
+> "I don't care so much about being able to read a chat transcript of a meeting I had. I care if I can turn that transcript into a format and report that I know will drive my desired business outcomes rather than just save me time."
+
+**The Economic Argument for Report-Driven RAG:**
+
+| Metric | Traditional RAG (Q&A) | Report-Driven RAG |
+|:---|:---|:---|
+| **Primary Value** | Time savings (one-dimensional) | Strategic decision-making (high-leverage) |
+| **ROI Framing** | Percentage of hourly wages saved | Percentage of capital/budget impacted |
+| **Output Format** | Raw answers or chat transcripts | Structured templates with objectives, decision criteria, follow-ups |
+| **Scalability** | Limited to static queries | Enables standardized company processes (SOPs) |
+
+> "Ultimately, a report's value goes beyond a wage worker answering questions—it supports high-leverage outcomes like strategic decision-making."
 
 **The Twin Biases of RAG Development**
 

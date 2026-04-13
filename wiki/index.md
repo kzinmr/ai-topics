@@ -2,7 +2,7 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-     5|Last updated: 2026-04-13 (AI Organization concept hierarchy: Block hierarchy-to-intelligence, solo founder/Super IC, McKinsey Agentic Org + Fission-Fusion governance)
+     5|Last updated: 2026-04-13 (AI Organization concept hierarchy: Block hierarchy-to-intelligence, solo founder/Super IC, McKinsey Agentic Org / Proprietary Context)
      6|
      7|## Entity Pages (54)
      8|
@@ -269,7 +269,7 @@
 |- [[concepts/ai-organization/_index]] — AI Organization (階層からインテリジェンスへ、Solo Founder、Context as Moat)
 |- [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]] — Block: Hierarchy to Intelligence (Jack Dorsey)
 |- [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder & Super IC (Reddit/FourWeekMBA)
-|- [[concepts/ai-organization/ai-org-context-as-moat]] — Proprietary Context & Fission-Fusion (McKinsey/OrgPhysics)
+|- [[concepts/ai-organization/ai-org-context-as-moat]] — Proprietary Context (McKinsey)
 
 ## Comparison Pages (6)
 
@@ -290,7 +290,7 @@
    280|- [[entities/andrej-karpathy|Andrej Karpathy]] — OpenAI co-founder, Eureka Labs. "Agentic Engineering is a magnitude 9 earthquake", "handwritten code is past"
    281|- [[entities/vinci-rufus|Vinci Rufus]] — AI tech exec. "Orchestration > Automation", "Vibe coding 30-70%, Agentic engineering 300-700%"
    282|- [[entities/ryan-lopopolo|Ryan Lopopolo]] (@_lopopolo) — OpenAI Frontier. Harness Engineering, Symphony multi-agent orchestration
-   283|- [[entities/boris-cherny|Boris Cherny]] (@bcherny) — Head of Claude Code at Anthropic. "Coding is solved", 100% AI-authored codebase
+   283|- [[entities/boris-cherny|Boris Cherny]] (@bcherny) — Creator of Claude Code at OpenAI. Opus 4.5 + thinking, 5 parallel sessions, Plan Mode → auto-accept. Shared CLAUDE.md as team infrastructure. MCP integration (BigQuery, Slack, Sentry). "Give Claude a way to verify its work."
    284||- [[entities/addy-osmani|Addy Osmani]] (@addyosmani) — Director, Google Cloud AI. Conductor→Orchestrator framework, Agent Teams/Swarms, AGENTS.md critique
    285|||- [[entities/scott-wu|Scott Wu]] (@ScottWu46) — Cognition CEO & Co-Founder. IOI Gold Medalist. Devin creator. $10B+ valuation. "Eventually, the future comes" — closing the agent loop. 100x capability growth (154→659 PRs/week). Single-threaded agent philosophy.
    286|||- [[entities/nader-dabit|Nader Dabit]] (@dabit3) — Cognition Growth Engineer. Cloud Agent Thesis. "Engineering for Agents That Never Sleep" — 70/30 human→agent trigger ratio inverting to 10/90. AWS→Aave→Eigen→Cognition. Substack (1.7K+).
