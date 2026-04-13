@@ -1,7 +1,9 @@
 ## 2026-04-13
 
-- **[Updated]** [[entities/alex-zhang]] — Expanded to 18KB+ (RLM deep analysis, KernelBench details, GPU MODE, full publication list, research trajectory, key quotes). Target: antirez/simon-willison quality.
-- **[New]** [[entities/omar-khattab]] — 18.6KB comprehensive profile (RLM, DSPy, GEPA, ColBERT, "Program not Prompt" philosophy, research phases, relationships, impact metrics).
+- **[New]** [[concepts/dspy]] — 15KB comprehensive DSPy concept page: declarative LM programming philosophy, Signature/Module/Teleprompter architecture, Assertions, Fine-tuning integration, paradigm comparison vs LangChain/LlamaIndex/RLMs/GEPA
+- **[New]** [[comparisons/llm-integration-patterns]] — 12KB comparative taxonomy of 5 LLM integration paradigms (Orchestration, Declarative, Recursive, Agentic, Genetic), paradigm evolution map, Khattab research lineage, practical selection guide
+- **[New]** [[entities/omar-khattab]] — 11KB comprehensive profile (RLM co-author, DSPy creator, GEPA, ColBERT, "LMs as modules" philosophy, research phases, relationships, impact metrics)
+- **[Updated]** [[entities/alex-zhang]] — Expanded with RLM deep analysis (OOLONG, BrowseComp-Plus, Qwen3-8B recipe), philosophical context-centric decomposition analysis, additional quotes
 
      1|---
      2|title: "Wiki Change Log"

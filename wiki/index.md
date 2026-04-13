@@ -2,7 +2,7 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-     5|Last updated: 2026-04-13 (Jason Liu entity page — Instructor creator, structured outputs)
+     5|Last updated: 2026-04-13 (DSPy concept page, LLM Integration Patterns comparison, Omar Khattab entity)
      6|
      7|## Entity Pages (54)
      8|
@@ -189,8 +189,10 @@
    189||- [[concepts/exec-plans]] — Execution Plans (OpenAI Cookbook)
    190||- [[concepts/self-evolving-agents]] — Self-Evolving Agents (OpenAI Cookbook)
    191||- [[concepts/resilient-prompt-engineering]] — Resilient Prompt Engineering (OpenAI Cookbook)
-   192||- [[concepts/context-engineering]] — Context Engineering (OpenAI Cookbook)
-   193||- [[concepts/ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
+- [[concepts/context-engineering]] — Context Engineering (OpenAI Cookbook)
+- [[concepts/dspy]] — DSPy: Declarative Self-improving Language Systems (Omar Khattab, Stanford)
+- [[concepts/llm-integration-patterns]] — LLM Integration Patterns: Comparative Taxonomy
+- [[concepts/ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
    194||- [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
    195||- [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo / OpenAI Symphony)
    196||- [[concepts/llm-evaluation-harness]] — LLM Evaluation Harness
@@ -262,13 +264,14 @@
    262||- [[concepts/ai-agent-engineering/context-anxiety]] — Context Anxiety (Sonnet 4.5 integration lessons)
    263||- [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst (Devinをデータ分析エージェントにする設計)
    264|
-   265|## Comparison Pages (5)
-   266|
-   267|- [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks (LangGraph vs CrewAI vs AutoGen vs etc.)
-   268|- [[comparisons/agent-sandboxing]] — Agent Sandboxing (Containers vs gVisor vs MicroVMs vs WASM vs Zeroboot)
-   269|- [[comparisons/eval-tools-comparison]] — AI Eval Tools Comparison (LangSmith vs Braintrust vs Phoenix vs Inspect AI)
-   270|- [[comparisons/evals-skills]] — Evals Skills for Coding Agents
-   271|- [[comparisons/frontier-models-2026-04]] — Frontier Models Comparison — April 2026
+## Comparison Pages (6)
+
+- [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks (LangGraph vs CrewAI vs AutoGen vs etc.)
+- [[comparisons/agent-sandboxing]] — Agent Sandboxing (Containers vs gVisor vs MicroVMs vs WASM vs Zeroboot)
+- [[comparisons/eval-tools-comparison]] — AI Eval Tools Comparison (LangSmith vs Braintrust vs Phoenix vs Inspect AI)
+- [[comparisons/evals-skills]] — Evals Skills for Coding Agents
+- [[comparisons/frontier-models-2026-04]] — Frontier Models Comparison — April 2026
+- [[comparisons/llm-integration-patterns]] — LLM Integration Patterns: Comparative Taxonomy (Orchestration vs DSPy vs RLMs vs Agentic vs GEPA)
    272|
    273|## People
    274|
@@ -321,9 +324,13 @@
    321|
    322|- [[entities/peter-steinberger|Peter Steinberger]] (@steipete) — OpenClaw creator, former PSPDFKit CEO. AI-native solo builder shipping 600+ commits/day via 5-10 parallel agents. Joined OpenAI Feb 2026. "Agent-first design" advocate, "Ship beats perfect" philosophy.
    323|
-   324|### ML Systems & Inference Scaling
-   325|
-   326|- [[entities/alex-zhang|Alex L. Zhang]] (@a1zhang) — MIT CSAIL PhD (Khattab, Kraska). Recursive Language Models (RLMs). "Language models will be scaffolds." GPU MODE, KernelBench (ICML 2025 Best Paper).
+### Declarative LM Programming & Foundation Model Programming
+
+- [[entities/omar-khattab|Omar Khattab]] (@lateinteraction) — MIT EECS Assistant Professor. Creator of ColBERT (late interaction), DSPy (declarative LM programming), GEPA (genetic prompt optimization), co-author of RLMs. "LMs as modules in programs, not end products."
+
+### ML Systems & Inference Scaling
+
+- [[entities/alex-zhang|Alex L. Zhang]] (@a1zhang) — MIT CSAIL PhD (Khattab, Kraska). Recursive Language Models (RLMs). "Language models will be scaffolds." GPU MODE, KernelBench (ICML 2025 Best Paper).
    327|
    328|### Coding Agents & Swarm Orchestration
    329|
