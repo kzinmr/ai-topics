@@ -67,3 +67,31 @@
 ## Sources
 - Raw scan data from blogwatcher-cli database
 - 26 new articles discovered across 9 blogs and 3 Reddit communities
+
+## Triage
+
+| Source | Title | Action | Target |
+|--------|-------|--------|--------|
+| antirez.com | First Token Cutoff LLM sampling | UPDATE | entities/antirez-com (added LLM sampling research) |
+| nesbitt.io | An alternative take on AI coding | SKIP | URL returned 404 |
+| paulgraham.com | The Age of the Essay | SKIP | Not AI/ML focused |
+| martinalderson.com | The best kind of work is a non-zero-sum game | SKIP | Not AI/ML focused |
+| construction-physics.com | How do you actually build 1 million homes? | SKIP | Not AI/ML focused |
+| construction-physics.com | How do you actually build a grid scale battery facility? | SKIP | Not AI/ML focused |
+| bernsteinbear.com | A brief guide to C++ coroutines | SKIP | Not AI/ML focused |
+| eli.thegreenplace.net | A basic JSON-RPC server in C++ using Boost.Beast | SKIP | Not AI/ML focused |
+| experimental-history.com | How the British Raj actually worked | SKIP | Not AI/ML focused |
+
+## Summary
+
+- **Total scanned:** 83 blogs succeeded, 3 failed
+- **New articles:** 26 (10 blogs + 16 Reddit)
+- **Wiki-worthy:** 1 (antirez.com LLM sampling article - updated entity page)
+- **Skipped:** 9 (non-AI/ML topics or 404)
+- **Reddit:** 16 articles skipped per policy (too noisy)
+
+## Actions Taken
+
+1. Updated `entities/antirez-com.md` with LLM sampling research from "First Token Cutoff LLM sampling" article
+2. Created daily scan report: `inbox/rss-scans/daily-scan-2026-04-14.md`
+3. No new wiki pages created (no CREATE-worthy articles today)
