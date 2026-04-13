@@ -1,4 +1,40 @@
+## 2026-04-13 — Local-First Software Concept + Martin Kleppmann Entity
+
+### New Concept Pages
+- **[[concepts/local-first-software]]** — Local-First Software (Kleppmann, Ink & Switch, CRDTs, AT Protocol, 7 Ideals, ecosystem mapping, 5 concrete bridges to AI Agent development + honest gap analysis)
+
+### New Entity Pages
+- **[[entities/martin-kleppmann]]** — Martin Kleppmann (Cambridge professor, DDIA author, Automerge, Bluesky AT Protocol, Local-First Software movement)
+
+### Key Insights
+- **7 Ideals**: No Spinners, Multi-Device, Network Optional, Seamless Collaboration, The Long Now, Security & Privacy, Ultimate Ownership
+- **CRDTs as foundation**: Mathematical guarantee for conflict-free merging — still unsolved for AI agent "decision conflicts"
+- **Generic Sync Server** (2024): Kleppmann's proposal to abstract sync away from application logic — parallels MCP's standardization of tool connections
+- **5 concrete bridges to AI Agent**: Event sourcing → agent audit logs, Local authority → local agent execution, Generic sync → MCP, Edge inference → Network optional, CRDTs → CRDT for AI (research stage)
+- **Honest gaps**: Agent decision conflicts have no mathematical guarantee, context compaction is immature (parallel to CRDT history bloat), A2A protocols are as nascent as P2P NAT traversal was
+
+### Sources
+- https://martin.kleppmann.com/papers/local-first.pdf (Ink & Switch, 2019)
+- https://martin.kleppmann.com/2024/05/30/local-first-conference.html (Local-First Conference 2024)
+- https://arxiv.org/abs/2402.03239 (Bluesky AT Protocol paper)
+- https://localfirst.fm (Podcast series)
+- https://electric-sql.com/blog/2024/07/17/electric-next (ElectricSQL generic sync)
+
+### Updated Files
+- **wiki/concepts/local-first-software.md** — 13.4KB concept page
+- **wiki/entities/martin-kleppmann.md** — 7.3KB entity page
+- **wiki/index.md** — Added Local-First Software concept + Martin Kleppmann entity, new "Distributed Systems & Local-First" section
+- **wiki/log.md** — This entry
+
 ## 2026-04-13 — Boris Cherny Entity Enrichment (Claude Code Workflow)
+
+## 2026-04-13 (3/3)
+- **Enriched [[andrej-karpathy]] older blogs section** (28KB → 35KB): Added comprehensive analysis of 20+ blog posts from karpathy.github.io spanning 2012-2021. Key posts: "Software 2.0" (seminal paradigm shift essay), "A Recipe for Training Neural Networks" (essential ML practitioner guide), "The Unreasonable Effectiveness of Recurrent Neural Networks" (2015 viral post), "Short Story on AI: Forward Pass" (creative AI philosophy fiction), "Quantifying Hacker News with 50 days of data" (early data journalism), ConvNetJS interview, and 14 others. Each post analyzed for technical content, philosophical insights, and influence on the field. Source: karpathy.bearblog.dev/blog/ and karpathy.github.io/
+
+
+## 2026-04-13 (2/2)
+- **Enriched [[andrej-karpathy]] writings section** (22.6KB → 28KB): Added detailed blog analysis from karpathy.bearblog.dev. "I love calculator" (Sep 2024 - technology philosophy essay), "Chemical hygiene" (water/air/food/fabrics/cleaning systems), "Digital hygiene" (authentication/browsing/financial/device security), "Finding the Best Sleep Tracker" (Oura vs Whoop vs 8Sleep vs AutoSleep comparative analysis with correlation data), "The append-and-review note" (single-note knowledge management system). All bearblog posts now have detailed summaries with key excerpts, data points, and philosophical frameworks. Source: karpathy.bearblog.dev/blog/
+
 
 ## 2026-04-13
 - **Enriched [[andrej-karpathy]]** (16.7KB → 22.6KB): Added birthplace/education timeline, research contributions (Deep Visual-Semantic Alignments, Sports-1M, character-level RNNs), OpenAI Universe/World of Bits details, Tesla Vision rollout dates and data engine, llm.c and nanochat projects, Dobby the Elf Claw, AGI timeline philosophy ("march of nines"), RL critique, data-centric AI, vibe coding concrete examples (MenuGen with Cursor/Claude/Superwhisper), Eureka Labs founding date. Source: grokipedia.com/page/Andrej_Karpathy

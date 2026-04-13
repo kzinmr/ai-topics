@@ -2,9 +2,9 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-     5|Last updated: 2026-04-13 (AI Organization concept hierarchy: Block hierarchy-to-intelligence, solo founder/Super IC, McKinsey Agentic Org / Proprietary Context)
+     5|Last updated: 2026-04-13 (Local-First Software concept + Martin Kleppmann entity)
      6|
-     7|## Entity Pages (54)
+     7|## Entity Pages (55)
      8|
      9|- [[entities/adam-rosenthal]] — Adam Rosenthal
     10|
@@ -252,9 +252,10 @@
    250|
    251|- [[concepts/helium-crisis-2026]] — Helium Crisis 2026
    252|
-   253|### Web & Technology
-   254|
-   255||- [[concepts/death-of-browser]] — Death of the Browser
+### Web & Technology
+
+|- [[concepts/death-of-browser]] — Death of the Browser
+|- [[concepts/local-first-software]] — Local-First Software (Kleppmann, Ink & Switch, CRDTs, AT Protocol)
    256|
    257|### Cognition / Devin Philosophy
    258|
@@ -327,9 +328,13 @@
    317|
    318|- [[entities/nathan-lambert|Nathan Lambert]] — Interconnects AI blogger. Open model consortium dynamics, Nemotron Coalition analysis
    319|
-   320|### AI Agent Platforms & Developer Tools
-   321|
-   322|- [[entities/peter-steinberger|Peter Steinberger]] (@steipete) — OpenClaw creator, former PSPDFKit CEO. AI-native solo builder shipping 600+ commits/day via 5-10 parallel agents. Joined OpenAI Feb 2026. "Agent-first design" advocate, "Ship beats perfect" philosophy.
+### AI Agent Platforms & Developer Tools
+
+|- [[entities/peter-steinberger|Peter Steinberger]] (@steipete) — OpenClaw creator, former PSPDFKit CEO. AI-native solo builder shipping 600+ commits/day via 5-10 parallel agents. Joined OpenAI Feb 2026. "Agent-first design" advocate, "Ship beats perfect" philosophy.
+
+### Distributed Systems & Local-First
+
+|- [[entities/martin-kleppmann|Martin Kleppmann]] (@martinkl) — Cambridge Associate Professor. "Designing Data-Intensive Applications" author. Automerge CRDT library creator. Local-First Software movement originator (Ink & Switch, 2019). Bluesky AT Protocol core developer.
    323|
 ### Declarative LM Programming & Foundation Model Programming
 
