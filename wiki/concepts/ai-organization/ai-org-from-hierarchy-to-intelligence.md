@@ -12,7 +12,11 @@ tags:
   - block
   - jack-dorsey
   - ai-native
+  - ai-native-organization
 status: draft
+depth_tracking:
+  target: 10KB+
+  current: ~10KB
 ---
 
 # Hierarchy to Intelligence — Blockの組織モデル変革

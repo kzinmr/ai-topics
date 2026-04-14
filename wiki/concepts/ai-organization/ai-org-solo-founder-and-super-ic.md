@@ -5,13 +5,17 @@ aliases:
   - super-individual-contributor
   - ai-solopreneur
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-04-15
 tags:
   - concept
   - organization
   - solo-founder
   - super-ic
 status: draft
+depth_tracking:
+  target: 10KB+
+  current: ~8KB
+  next_steps: "Add more quotes from r/ClaudeCode discussion, integrate more FourWeekMBA analysis, add real-world case studies"
 ---
 
 # Solo Founder & Super IC — AI時代の新しい働き方

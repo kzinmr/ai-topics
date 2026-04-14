@@ -14,6 +14,9 @@ tags:
   - ai-native
   - mckinsey
 status: draft
+depth_tracking:
+  target: 12KB+
+  current: ~9KB
 ---
 
 # Proprietary Context — AI時代の組織ガバナンス
