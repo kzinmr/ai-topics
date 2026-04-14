@@ -1,3 +1,29 @@
+## 2026-04-14 — Agentic PBT Concept + DRMacIver Entity Page (L3) + X Account
+
+### New Concept Page
+- **[[concepts/agentic-pbt]]** — Agentic Property-Based Testing (Anthropic + Hypothesis). Claude Code agent autonomously infers code invariants from type annotations/docstrings and generates PBTs. NeurIPS 2025 DL4C Workshop paper. 984 bug reports generated, 56% valid, 32% reportable. Opus 4.1 + Sonnet 4.5. Notable bugs: NumPy random.wald catastrophic cancellation, AWS Lambda Powertools iterator bug.
+
+### New Entity Page
+- **[[entities/drmaciver]]** — David R. MacIver. Creator of Hypothesis (property-based testing, 2M+ downloads/month), Hegel (universal PBT protocol at Antithesis), Shrinkray (test-case reducer), minithesis, foundational-llm-evals. Senior Engineer at Antithesis. Ex-Google, ex-Anthropic (model evaluations).
+
+### Key Content
+- **Property-Based Testing Philosophy**: Invariants over examples, automated shrinking, test databases. Three bug categories: edge cases, cursed data types, structural invariants
+- **Hegel**: Language-agnostic PBT protocol backed by Hypothesis engine. Rust released, Go/C++/OCaml/TypeScript in development
+- **Claude Code Workflow**: ~90% AI-drafted code with 100% coverage mandate. "Constant battle and balancing act" between productivity and vigilance. Ratchet pattern to prevent coverage drift
+- **LLM Evaluation**: Property-based approach to evals — treat AIs like normal software, assert invariants over randomized inputs. "Very bad at arithmetic" → hybrid architectures, not scaling
+- **Particularity Philosophy**: "Creation is relational, and it is particular" — AI can produce interchangeable content but lacks genuine experience
+- **Probabilistic Programming**: Current work at Antithesis, connected to PBT through distributional sampling
+- **Agentic PBT Results**: 100+ PyPI packages tested, 86% validity rate with rubric ranking, automated patching as future direction
+
+### X/Twitter
+- Added @DRMacIver to ~/x-accounts.yaml
+- Skeleton entity page → enriched to L3 with philosophy, quotes, timeline, influence metrics
+
+### Raw Article Ingested
+- [Property-Based Testing with Claude: AI-Driven Bug Discovery](https://red.anthropic.com/2026/property-based-testing/) — Authors: Muhammad Maaz, Liam DeVoe, Zac Hatfield-Dodds, Nicholas Carlini (MATS, Anthropic, Northeastern Univ.)
+
+---
+
 ## 2026-04-14 — DRMacIver Entity Page (L3) + X Account
 
 ### New Entity Page

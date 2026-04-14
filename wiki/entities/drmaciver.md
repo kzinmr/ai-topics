@@ -163,6 +163,24 @@ MacIver's `foundational-llm-evals` repository applies property-based testing met
 - Use property-based testing (from Hypothesis experience) for randomized, comprehensive coverage
 - "Theoretically a good AI should pass 100% of the time. In practice, pass rates tend to fall well short"
 
+### Agentic PBT at Anthropic (Collaboration)
+
+Anthropic published research on **Agentic Property-Based Testing** with Claude Code (NeurIPS 2025 DL4C Workshop), co-authored by **Liam DeVoe** (another core Hypothesis maintainer who also joined Antithesis alongside MacIver):
+
+> "A custom Claude Code command autonomously infers code properties from type annotations, docstrings, function names, and comments, then generates/executes PBTs using the Hypothesis framework."
+
+**Key results:**
+- Tested 100+ popular PyPI packages (NumPy, SciPy, Pandas, etc.)
+- Opus 4.1 generated 984 bug reports; manual review of 50 showed 56% valid bugs, 32% valid & reportable
+- With rubric ranking: 86% validity rate, 81% reportable rate for top-ranked reports
+- Sonnet 4.5 ran on 10 critical packages with 3 expert human reviewers + automated evaluation agent
+- **Notable bugs found**: NumPy `random.wald` catastrophic cancellation (10 orders of magnitude error reduction), AWS Lambda Powertools iterator bug, CloudFormation plugin hash collision
+
+**Design insights aligned with MacIver's philosophy:**
+- Self-reflection loop drastically reduces false positives
+- "Deriving properties from code with subtle or complex semantics remains difficult. If the code makes an implicit assumption, only the library maintainers can decide what the correct property to test is."
+- This validates MacIver's thesis that PBT is uniquely suited for AI-assisted development: "Agents are actually pretty good at writing the tests!"
+
 ### Particularity and Creation
 
 In his Substack essay "Particularity," MacIver articulated a philosophy on AI-generated content vs. human creation:
