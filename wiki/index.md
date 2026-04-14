@@ -119,10 +119,16 @@ Last updated: 2026-04-15 (AI Organization concept hierarchy upgraded with Block 
    114|- [[entities/webmcp]] — WebMCP (W3C standard, Chrome 146 preview)
    115|- [[concepts/death-of-browser]] — Death of Browser (Agentic browsing paradigm shift)
    116|
-   117|### AI Models & Technologies
-   118|
-   119|- [[entities/agibot-10000-units]] — AGIBot Reaches 10,000 Units
-   120|- [[entities/amazon-rivr]] — Amazon Acquires Rivr
+### AI Infrastructure & Hardware
+
+|- [[entities/nvidia-dgx-spark]] — NVIDIA DGX Spark (Grace Blackwell, 128GB unified memory, local AI supercomputer)
+|- [[entities/nvidia-nemoclaw]] — NVIDIA NemoClaw (secure agent framework with OpenShell sandbox + OpenClaw)
+|- [[concepts/local-llm-server-dgx-spark]] — Local LLM Server Setup on DGX Spark (complete setup guide with NemoClaw integration)
+
+### AI Models & Technologies
+
+|- [[entities/agibot-10000-units]] — AGIBot Reaches 10,000 Units
+|- [[entities/amazon-rivr]] — Amazon Acquires Rivr
    121|- [[entities/claude-mythos]] — Claude Mythos
    122|- [[entities/cursor-3]] — Cursor 3
    123|- [[entities/gemma-4]] — Google Gemma 4

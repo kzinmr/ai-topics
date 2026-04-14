@@ -1,3 +1,33 @@
+## 2026-04-16 — NVIDIA DGX Spark & NemoClaw Setup Guide
+
+### New Entity Pages
+- **[[entities/nvidia-dgx-spark]]** — NVIDIA DGX Spark: Grace Blackwell personal AI supercomputer. 128GB unified memory, 1 PFLOP AI compute. Hardware specs, benchmarks, software ecosystem, NemoClaw integration overview.
+- **[[entities/nvidia-nemoclaw]]** — NVIDIA NemoClaw: Secure AI agent development framework. OpenShell sandbox + OpenClaw agent + Privacy Router + Network Policy Engine. Architecture, configuration, Telegram integration.
+
+### New Concept Pages
+- **[[concepts/local-llm-server-dgx-spark]]** — Complete setup guide for running local LLM server on DGX Spark with NemoClaw integration. Phase-by-phase instructions: Docker/NVIDIA runtime, Ollama setup, NemoClaw installation, Telegram bot, web dashboard access.
+
+### Key Insights
+- **DGX Spark = personal AI supercomputer**: 128GB coherent unified memory (CPU+GPU shared), eliminates VRAM bottleneck. Runs models up to 200B params locally.
+- **NemoClaw architecture**: OpenShell (k3s in Docker) → sandbox pods → OpenClaw agents. Landlock + seccomp + netns isolation.
+- **Local inference stack**: Ollama + Nemotron 3 Super 120B (~87GB GGUF). First response latency 30-90s on DGX Spark.
+- **Security model**: Deny-by-default network policy, PII redaction, immutable audit logs, operator approval workflows.
+- **cgroup v2 workaround**: `default-cgroupns-mode=host` required in Docker daemon.json for OpenShell/k3s.
+
+### Cross-References
+- Related to [[concepts/local-llm]]: Ollama, llama.cpp, GGUF inference on DGX Spark
+- Related to [[concepts/capabilities-based-security]]: NemoClaw's Landlock + seccomp sandbox model
+- Related to [[entities/peter-steinberger]]: OpenClaw creator, OpenAI
+
+### Sources
+- https://docs.nvidia.com/dgx/dgx-spark
+- https://build.nvidia.com/spark
+- https://github.com/NVIDIA/NemoClaw/blob/main/spark-install.md
+- https://nemoclawai.io/blog/getting-started-nemoclaw-dgx-spark/
+- https://build.nvidia.com/spark/nemoclaw/instructions
+
+---
+
 ## 2026-04-16 — AI Agent Memory Middleware横断分析 + S3 Files統合
 
 ### New Concept Pages
