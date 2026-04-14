@@ -11,13 +11,19 @@ status: complete
 
 When AI agents execute code, **isolation is the security boundary between useful automation and catastrophic failure**. This section covers all layers of sandboxing in the AI agent ecosystem.
 
-## Three Layers of Sandbox
+## Four Layers of Sandbox
 
-| Layer | Scope | Technologies | Latency | Best For |
-|-------|-------|-------------|---------|----------|
-| **[[infrastructure]]** | OS/Hypervisor-level | Docker, Firecracker, gVisor, Kata, WASM, Zeroboot | 0.8ms - 2s | Full application execution, GPU workloads, multi-tenant |
-| **[[in-process]]** | Language/VM-level | Monty (Rust Python VM), Pyodide | 0.004ms - 2.8s | Simple scripts, data transforms, zero-infra deployment |
-| **[[js-runtime]]** | Runtime/Engine-level | Bun (JavaScriptCore), Deno (V8), Node.js (V8) | 1ms - 100ms | AI agent tooling, single-binary distribution, TypeScript execution |
+Isolation exists on a spectrum from full OS-level separation to in-process VM embedding. Each layer trades security for performance and flexibility.
+
+| Layer | Scope | Technologies | Latency | Isolation Mechanism | Best For |
+|-------|-------|-------------|---------|-------------------|----------|
+| **[[infrastructure]]** | OS/Hypervisor | Docker, Firecracker, gVisor, Kata, Zeroboot | 0.8ms - 2s | Kernel namespaces, seccomp, VM boundaries | Full apps, GPU, multi-tenant |
+| **[[js-runtime]]** (Process mode) | OS Process | Bun CLI, Deno CLI, Node.js CLI | 1ms - 100ms | OS process boundary + runtime permissions | Agent CLI tools, TS execution, single-binary distribution |
+| **[[in-process]]** | VM/Memory space | Monty (Rust Python VM), Pyodide, QuickJS (embedded), V8 Isolates, WebContainer | 0.004ms - 2.8s | Memory isolation, bytecode VM, capabilities | Simple scripts, data transforms, zero-infra, code-mode |
+| **WASM** (emerging) | Browser/Sandbox | WASM + WASI | ~1ms | Capability-based sandbox, no OS access | Edge execution, portable code |
+
+> **Key distinction**: JS runtimes operate in **two modes**. When run as CLI (`bun script.ts`, `deno run app.ts`), they are **process-level isolation** — separate OS processes with their own memory space. When embedded (V8 Isolates in Cloudflare Workers, QuickJS in a C++ agent, WebContainer in a browser), they become **in-process isolation** — sharing the host process but separated by VM memory boundaries.
+
 
 ## The Isolation Spectrum (Infrastructure Layer)
 
@@ -65,8 +71,8 @@ The **Anthropic × Bun acquisition** is strategically significant: Claude Code s
 | Third-party package installation | **Infrastructure** (Docker/E2B) | Full environment support |
 | GPU-intensive ML inference | **Infrastructure** (Modal/gVisor) | Native GPU passthrough |
 | Multi-tenant SaaS agent platform | **Infrastructure** (Firecracker) | Hardware-level isolation |
-| AI agent CLI tool distribution | **JS Runtime** (Bun) | Single binary, fast cold start |
-| Edge AI agent execution | **JS Runtime** (Deno Deploy) | V8 isolates, global distribution |
+| AI agent CLI tool distribution | **Process** (Bun CLI) | Single binary, fast cold start |
+| Edge AI agent execution | **In-Process** (V8 Isolates / Deno Deploy) | V8 isolates, global distribution |
 | Browser automation agents | **Infrastructure** (Daytona desktop) | Full display environment |
 | Local-first AI development | **In-Process** (Monty) | No cloud dependency |
 

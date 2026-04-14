@@ -2,7 +2,7 @@
 title: "JavaScript Runtimes for AI Agents"
 created: 2026-04-16
 updated: 2026-04-16
-tags: [concept, ai-agents, sandboxing, javascript, bun, deno, nodejs, runtime, v8, javascriptcore]
+tags: [concept, ai-agents, sandboxing, javascript, bun, deno, nodejs, runtime, v8, javascriptcore, process-isolation]
 aliases: ["js-runtime", "javascript-runtime-comparison", "bun-deno-node", "agent-js-runtime"]
 related: [[sandbox/infrastructure]], [[sandbox/in-process]], [[harness-engineering]], [[entities/jarred-sumner]], [[entities/ryan-dahl]]
 depth: L2
@@ -11,7 +11,37 @@ status: complete
 
 # JavaScript Runtimes for AI Agents
 
-JavaScript/TypeScript runtimes form a critical but often overlooked layer of the AI agent stack. Unlike Python's single CPython implementation, the JS ecosystem offers **three competing runtimes** with fundamentally different architectures — each with distinct implications for AI agent execution: startup latency, sandbox security, distribution model, and third-party package support.
+JavaScript/TypeScript runtimes form a critical layer of the AI agent stack. Unlike Python's single CPython implementation, the JS ecosystem offers **three competing runtimes** with fundamentally different architectures — each with distinct implications for AI agent execution: startup latency, sandbox security, distribution model, and third-party package support.
+
+## Isolation Model: Process vs In-Process
+
+> **Critical distinction**: JS runtimes operate in **two modes** with different security properties.
+
+| Mode | Example | Isolation Level | Security Boundary |
+|------|---------|----------------|-------------------|
+| **Process mode** (CLI) | `bun script.ts`, `deno run app.ts`, `node app.js` | OS process isolation | Process boundary + runtime permissions |
+| **In-Process mode** (embedded) | V8 Isolates (Cloudflare Workers), QuickJS embedded, WebContainer | Memory/VM isolation | Host application's memory space |
+
+When run as CLI, JS runtimes provide **process-level isolation** — each invocation is a separate OS process. This is NOT in-process isolation like Monty (which embeds a VM directly into the agent's memory space). However, when JS engines are **embedded** (V8 Isolates, QuickJS as a library), they become true in-process sandboxes.
+
+### Deno's Capability-Based Permissions (Process Mode)
+Deno bridges the gap between process isolation and capabilities-based security:
+- `--allow-read`, `--allow-net`, `--allow-env` flags restrict what the process can access
+- Even though it runs as a separate OS process, **the runtime itself enforces capability boundaries**
+- This is the closest JS ecosystem equivalent to Monty's philosophy
+
+### V8 Isolates (In-Process Mode)
+Cloudflare Workers and Deno Deploy use V8 Isolates — multiple scripts running within a single V8 engine instance:
+- **Cold start**: ~1ms (no process fork needed)
+- **Memory isolation**: Each isolate gets its own heap, but shares the V8 instance
+- **Security**: If one isolate escapes, it compromises the entire V8 process
+- **Density**: Thousands of isolates per machine vs dozens of processes
+
+### WebContainer (Browser In-Process Mode)
+StackBlitz's WebContainer runs Node.js-compatible code entirely inside the browser:
+- **Isolation**: Browser's same-origin policy + WebAssembly sandbox
+- **No server needed**: Runs client-side with full npm compatibility
+- **Best for**: AI agents that need to execute code in the user's browser context
 
 > **"AI agents need to distribute tools to each other. They need to run code in sandboxed environments. They need to install dependencies fast, run tests fast, execute code fast — all without human intervention. Bun solves every single one of these problems."** — Jarred Sumner, Bun founder, on why Bun joined Anthropic
 
