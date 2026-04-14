@@ -142,7 +142,7 @@ Last updated: 2026-04-15 (Personal Superintelligence concept page, Meta entity u
    137||- [[concepts/code-mode]] — CodeMode: LLM writes code instead of sequential tool calls
 
 - [[concepts/monty-sandbox]] — Monty: minimal secure Python interpreter in Rust for AI agents
-
+- [[concepts/sandbox/js-runtime]] — JavaScript Runtimes for AI Agents (E2B, WebContainer, Bun, Deno, QuickJS)
 - [[concepts/pydantic-ai]] — Pydantic AI: type-safe Python agent framework
 
 - [[concepts/capabilities-based-security]] — Start from zero access, explicitly grant capabilities (Monty philosophy)

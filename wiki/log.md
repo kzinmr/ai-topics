@@ -1,7 +1,25 @@
-## 2026-04-15 — Personal Superintelligence concept page created, Meta entity updated
+## 2026-04-16 — Sandbox Infrastructure横断分析、JS Runtime概念ページ追加、sandboxディレクトリ体系構築
 
 ### New Concept Pages
-- **[[concepts/personal-superintelligence]]** — Personal Superintelligence: vendor-neutral synthesis of the philosophical split between central automation (OpenAI/Anthropic/Google) and personal empowerment (Meta/OpenClaw/Local AI). Covers 3 philosophical fault lines (data sovereignty, hardware, open vs closed), VisionClaw pattern, agentic commerce trend, infrastructure spend war, and data sovereignty movement.
+- **[[concepts/sandbox/_index]]** — Sandbox: AI Agent Code Execution Isolation (3-layer model)
+- **[[concepts/sandbox/infrastructure]]** — Infrastructure Layer: Containers, Micro-VMs, WASM, gVisor, Firecracker, E2B, Modal, Daytona
+- **[[concepts/sandbox/in-process]]** — In-Process Layer: Monty (Rust Python VM), Pyodide, capabilities-based security
+- **[[concepts/sandbox/js-runtime]]** — JS Runtime Layer: Bun, Deno, Node.js, E2B SDK, WebContainer
+- **[[comparisons/agent-sandboxing]]** — Agent Sandboxing: Containers vs gVisor vs MicroVMs vs WASM vs Zeroboot
+
+### Updated Entity Pages
+- **[[entities/samuel-colvin]]** — Monty sandbox, CodeMode relationship
+- **[[entities/jarred-sumner]]** — Anthropic acquisition, Claude Code Bun runtime
+- **[[entities/ryan-dahl]]** — Deno 2.0 sandbox security
+
+### Wiki Structure
+- sandbox/ ディレクトリ新設
+- `wiki/index.md` にsandbox関連エントリ追加
+
+     1|## 2026-04-15 — Personal Superintelligence concept page created, Meta entity updated
+     2|
+     3|### New Concept Pages
+     4|
 
 ### Updated Entity Pages
 - **[[entities/meta]]** — Added Personal Superintelligence vision section (Zuckerberg philosophy), Ray-Ban AI glasses collaboration details (700万+ sold 2025, 2000-3000万 target 2026), Agentic Commerce strategy, Superintelligence Labs (Alexandr Wang, $115B-$135B capex 2026), Muse Spark context, Key People section, cross-references to personal-ai ecosystem players.

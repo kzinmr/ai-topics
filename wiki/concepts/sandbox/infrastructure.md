@@ -1,17 +1,21 @@
 ---
-title: "Agent Sandboxing"
+title: "Infrastructure-Level Sandbox"
 created: 2026-04-10
-updated: 2026-04-10
-tags: [concept, ai-agents, security, sandboxing, isolation, coding-agents]
-aliases: ["agent-isolation", "ai-sandbox-technologies"]
-related: [[anthropic-managed-agents]], [[ai-coding-reliability]], [[agentic-engineering]]
+updated: 2026-04-16
+tags: [concept, ai-agents, security, sandboxing, isolation, coding-agents, infrastructure]
+aliases: ["agent-isolation", "ai-sandbox-technologies", "infrastructure-sandbox"]
+related: [[sandbox/in-process]], [[anthropic-managed-agents]], [[ai-coding-reliability]], [[agentic-engineering]]
+depth: L2
+status: complete
 ---
 
-# Agent Sandboxing
+# Infrastructure-Level Sandbox
 
-**Agent Sandboxing** refers to the isolation technologies and strategies used to safely execute AI agent code — particularly LLM-generated or user-supplied code — without compromising the host system, other agents, or sensitive data. As AI agents gain the ability to execute arbitrary commands, access filesystems, and make network requests, sandboxing has become the critical security boundary between useful automation and catastrophic failure.
+Infrastructure-level sandboxing refers to OS/hypervisor-level isolation technologies used to safely execute AI agent code — particularly LLM-generated or user-supplied code — without compromising the host system, other agents, or sensitive data. As AI agents gain the ability to execute arbitrary commands, access filesystems, and make network requests, sandboxing has become the critical security boundary between useful automation and catastrophic failure.
 
 A Reddit discussion in early 2026 — *"A fair comparison of sandboxing options"* — crystallized the community's understanding that **the "Containers vs. VMs" debate has evolved into a much richer landscape** of isolation strategies, each suited to different threat models and operational constraints.
+
+> **Note**: This page covers infrastructure-level isolation (containers, microVMs, gVisor). For in-process sandboxing, see [[in-process]].
 
 ## Why Sandboxing Matters for AI Agents
 
