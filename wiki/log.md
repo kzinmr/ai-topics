@@ -1,3 +1,27 @@
+## 2026-04-15 — Local LLM: Quantization & Distillation concept pages added
+
+### New Concept Pages
+- **[[concepts/local-llm/model-quantization]]** — Model quantization overview: GGUF (K-Quants, I-Quants), GPTQ, AWQ, EXL2, FP8. Hardware-matching guide, quality rules, pipeline.
+- **[[concepts/local-llm/model-distillation]]** — Knowledge distillation for LLMs: teacher→student transfer, output/logit/hidden state/attention distillation, geopolitics (Frontier Model Forum vs adversarial distillation), practical pipeline for local practitioners.
+
+### Updated Pages
+- **[[concepts/local-llm/_index]]** — Upgraded from `status: skeleton` to `status: active`. Added structured sub-page categories (Inference Engines, Model Formats & Compression, Tools & Runners). Cross-references updated.
+
+### Key Insights
+- **Bigger quantized > Smaller unquantized**: 70B at Q4_K_M typically outperforms 13B at FP16 for most NLP tasks
+- **Quantization + Distillation are complementary**: Distillation compresses knowledge, quantization compresses precision — together they enable frontier-capable models on consumer hardware
+- **Geopolitical dimension**: Distillation has become a flashpoint — OpenAI/Anthropic/Google alliance against "adversarial distillation" (attempt #7, all previous failed)
+- **I-Quants represent the state-of-the-art**: Importance-matrix-based quantization using activation statistics for 2-bit usable quality
+
+### Cross-References
+- Related to [[concepts/local-llm/gguf]] — GGUF deep-dive
+- Related to [[entities/georgi-gerganov]] — GGUF/K-Quants creator
+- Related to [[concepts/reasoning-models]] — Distillation for CoT transfer
+- Related to [[concepts/llm-inference]] — Inference optimization
+- Related to [[concepts/open-source-ai-destruction]] — Distillation restrictions impact
+
+---
+
 ## 2026-04-16 — NVIDIA DGX Spark & NemoClaw Setup Guide
 
 ### New Entity Pages
@@ -5,7 +29,7 @@
 - **[[entities/nvidia-nemoclaw]]** — NVIDIA NemoClaw: Secure AI agent development framework. OpenShell sandbox + OpenClaw agent + Privacy Router + Network Policy Engine. Architecture, configuration, Telegram integration.
 
 ### New Concept Pages
-- **[[concepts/local-llm-server-dgx-spark]]** — Complete setup guide for running local LLM server on DGX Spark with NemoClaw integration. Phase-by-phase instructions: Docker/NVIDIA runtime, Ollama setup, NemoClaw installation, Telegram bot, web dashboard access.
+- **[[concepts/local-llm/server-dgx-spark]]** — Complete setup guide for running local LLM server on DGX Spark with NemoClaw integration. Phase-by-phase instructions: Docker/NVIDIA runtime, Ollama setup, NemoClaw installation, Telegram bot, web dashboard access.
 
 ### Key Insights
 - **DGX Spark = personal AI supercomputer**: 128GB coherent unified memory (CPU+GPU shared), eliminates VRAM bottleneck. Runs models up to 200B params locally.
@@ -56,6 +80,26 @@
 - https://github.com/viditraj/llmfs
 
 ---
+---
+
+## 2026-04-14 — Local LLM hierarchy reorganization + hot-topics.yaml review
+
+### New Concept Pages
+- **[[concepts/local-llm/_index]]** — Local LLM Ecosystem Overview page
+- **[[concepts/local-llm/gguf]]** — GGUF quantization format (skeleton)
+- **[[concepts/local-llm/llama-cpp]]** — llama.cpp inference engine (skeleton)
+- **[[concepts/local-llm/vllm]]** — vLLM high-throughput serving (skeleton)
+- **[[concepts/reasoning-models]]** — Reasoning Models (o1-style, CoT, PRM)
+
+### Config Changes (hot-topics.yaml)
+- agent-team-swarm: priority medium → high
+- local-llm: wiki_pages expanded to local-llm/_index, gguf, llama-cpp, vllm
+- neurosymbolic-ai: wiki_pages fixed (illusion-of-thinking → reasoning-models), notes improved
+- ai-bubble-economics, ai-safety: search_hints added for monitor topics
+
+### Related wikilinks
+- Connected to [[concepts/local-llm]] — original consolidated page (to be migrated into hierarchy)
+
 
 ## 2026-04-16 — AI Organization Concept Hierarchy Upgrade (Block, Reddit, McKinsey, Reworked, Agile Leadership Day)
 

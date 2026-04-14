@@ -123,7 +123,7 @@ Last updated: 2026-04-15 (AI Organization concept hierarchy upgraded with Block 
 
 |- [[entities/nvidia-dgx-spark]] — NVIDIA DGX Spark (Grace Blackwell, 128GB unified memory, local AI supercomputer)
 |- [[entities/nvidia-nemoclaw]] — NVIDIA NemoClaw (secure agent framework with OpenShell sandbox + OpenClaw)
-|- [[concepts/local-llm-server-dgx-spark]] — Local LLM Server Setup on DGX Spark (complete setup guide with NemoClaw integration)
+|- [[concepts/local-llm/server-dgx-spark]] — Local LLM Server Setup on DGX Spark (complete setup guide with NemoClaw integration)
 
 ### AI Models & Technologies
 
