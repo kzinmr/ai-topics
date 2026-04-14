@@ -1,0 +1,13 @@
+[Unit]
+Description=Shelley Active Knowledge Crawl (daily)
+After=network.target
+
+[Service]
+Type=oneshot
+User=exedev
+WorkingDirectory=/home/exedev/ai-topics
+ExecStart=/usr/bin/shelley client chat -p 'Daily Active Knowledge Crawl. あなたの目的: config/hot-topics.yaml に登録されたホットトピックに関連する「まだ取り込まれていない重要概念」を能動的に調査し、知識ベースに取り込むこと。\n\n手順:\n1. `cat ~/ai-topics/config/hot-topics.yaml` を読み、crawl_policy が prerequisites/laterals/deepdive かつ last_crawled が3日以上前(またはnull)のトピックを抽出\n2. priority: high から last_crawled が最も古い順に最大2つ、priority: medium から最大1つ、合計最大3トピックを選択\n3. 各トピックについて crawl_policy に応じた動作を実行:\n   [prerequisites] wiki_pages を読む → そのトピックを理解するための前提概念を特定 → wikiに無いものをWeb検索 → 良質ソース発見 → 取り込み\n   [laterals] wiki_pages を読む → 横方向の関連概念を特定 → wikiに無いものをWeb検索 → 取り込み\n   [deepdive] search_hints でWeb検索 → 最新動向・事例を発見 → raw取り込みと既存ページ更新 or 新規サブトピック作成\n4. 各概念について:\n   a. Web検索で良質ソース(arxiv, 公式ドキュメント, 著名ブログ)を1-2本発見\n   b. ソースを ~/ai-topics/wiki/raw/articles/crawl-YYYY-MM-DD-<slug>.md に保存\n   c. ~/ai-topics/wiki/concepts/<slug>.md にページ作成(SCHEMA.md準拠、frontmatter必須)\n   d. wiki/index.md に追記、wiki/log.md に "Active Crawl [{policy}]: {parent} → {new_concept}" を記録\n5. hot-topics.yaml の該当トピックの last_crawled を今日の日付に更新\n6. `cd ~/ai-topics && git pull --rebase && git add wiki/ config/hot-topics.yaml && git commit -m "wiki: active-crawl YYYY-MM-DD" && git push`\n7. 結果を日本語で報告: 取り込んだ概念、理由、親トピックとの関係\n\nルール:\n- 1トピックあたり最大2概念。1日合計最大6概念\n- ソース必須: raw/articles/ にソースが無い概念はページ化しない\n- 深さ1のみ: 登録トピックの直接的な周辺のみ。孫概念は対象外\n- ドメイン厳守: SCHEMA.md のドメイン(LLM/AI Agent技術)に直接関係しないものは棄却\n- 既存ページ重複チェック: 生成前に `find ~/ai-topics/wiki -name "*.md" | xargs grep -li "<keyword>"` で確認\n- deepdive は原則既存ページ更新。新規は「明確に新しいサブトピック」のみ\n- hot-topics.yaml にトピックを勝手に追加しない\n- 取り込み候補が見つからない場合は「該当なし」と報告して正常終了\n\nOriginating conversation: cSFEO3U' -cwd '/home/exedev/ai-topics'
+TimeoutStartSec=300
+
+[Install]
+WantedBy=multi-user.target
