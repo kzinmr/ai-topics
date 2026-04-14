@@ -1,9 +1,16 @@
 ---
-title: "AGIBot Reaches 10,000 Units"
+title: AGIBot Reaches 10,000 Units
 created: 2026-04-10
 updated: 2026-04-10
-tags: [entity, robotics, humanoid, production]
-related: [humanoid-robots, manufacturing, real-world-deployment]
+tags:
+- entity
+- robotics
+- humanoid
+- production
+related:
+- humanoid-robots
+- manufacturing
+- real-world-deployment
 ---
 
 # AGIBot Reaches 10,000 Units

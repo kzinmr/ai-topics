@@ -1,10 +1,16 @@
 ---
-title: "Derek Thompson"
+title: Derek Thompson
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, journalist, economics, ai-analysis, hn-popular]
-aliases: ["derekthompson.org", "plain-english-podcast"]
+tags:
+  - person
+  - blogger
+  - journalist
+  - economics
+  - ai-analysis
+  - hn-popular
 ---
+
 
 # Derek Thompson
 

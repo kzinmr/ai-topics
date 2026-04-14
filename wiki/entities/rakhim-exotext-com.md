@@ -1,3 +1,10 @@
+---
+title: Rakhim (Rakhim Davletkaliyev)
+status: active
+tags: [person]
+---
+
+
 # Rakhim (Rakhim Davletkaliyev)
 
 ## Overview

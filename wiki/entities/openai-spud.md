@@ -1,9 +1,17 @@
 ---
-title: "OpenAI Spud"
+title: OpenAI Spud
 created: 2026-04-10
 updated: 2026-04-10
-tags: [entity, model, openai, gpt]
-related: [openai, gpt-5, gpt-6, soradiscontinuation]
+tags:
+- entity
+- model
+- openai
+- gpt
+related:
+- openai
+- gpt-5
+- gpt-6
+- soradiscontinuation
 ---
 
 # OpenAI Spud

@@ -1,16 +1,20 @@
 ---
-title: "Benjamin Clavié"
+title: Benjamin Clavié
 handle: "@bclavie"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, information-retrieval, nlp, rag, huggingface]
-aliases: ["bclavie", "Ben Clavie"]
-related:
-  - "[[rag]]"
-  - "[[information-retrieval]]"
-  - "[[answerdotai]]"
-  - "[[colbert]]"
+aliases: [bclavie, Ben Clavie]
+related: [[[rag]], [[information-retrieval]], [[answerdotai]], [[colbert]]]
+tags:
+  - person
+  - nlp-researcher
+  - information-retrieval
+  - colbert
+  - ragatouille
+  - modernbert
+  - open-source
 ---
+
 
 # Benjamin Clavié (@bclavie)
 

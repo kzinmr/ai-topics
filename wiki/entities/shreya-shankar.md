@@ -1,21 +1,22 @@
 ---
-title: "Shreya Shankar"
-type: entity
-tags: [person, ai-evals, ai-engineering, berkeley, research, docetl]
-aliases: ["@sh_reya", "Shreya Shankar Berkeley"]
+title: Shreya Shankar
 related:
-  - "concepts/ai-evals"
-  - "concepts/llm-as-judge"
-  - "concepts/error-analysis"
-  - "entities/hamel-husain"
-  - "entities/eugene-yan"
-sources:
-  - "https://www.sh-reya.com/"
-  - "https://sh-reya.com/papers/"
-  - "https://www.lennysnewsletter.com/p/why-ai-evals-are-the-hottest-new-skill"
-  - "https://x.com/sh_reya"
+  - concepts/ai-evals
+  - concepts/llm-as-judge
+  - concepts/error-analysis
+  - entities/hamel-husain
+  - entities/eugene-yan
+sources: [https://www.sh-reya.com/, https://sh-reya.com/papers/, https://www.lennysnewsletter.com/p/why-ai-evals-are-the-hottest-new-skill, https://x.com/sh_reya]
 updated: 2026-04-13
+tags:
+  - person
+  - ai-evals
+  - ai-engineering
+  - berkeley
+  - research
+  - docetl
 ---
+
 
 # Shreya Shankar — Berkeley AI Evals Researcher & DocETL Creator
 

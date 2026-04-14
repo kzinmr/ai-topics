@@ -1,10 +1,19 @@
 ---
-title: "Boris Cherny"
+title: Boris Cherny
 created: 2026-04-13
 updated: 2026-04-13
-tags: [person, x-account, ai, coding-agents, claude-code, openai, typescript, anthropic, meta]
-aliases: ["bcherny", "boris cherny claude code", "@bcherny__"]
+tags:
+  - person
+  - x-account
+  - ai
+  - coding-agents
+  - claude-code
+  - openai
+  - typescript
+  - anthropic
+  - meta
 ---
+
 
 # Boris Cherny
 

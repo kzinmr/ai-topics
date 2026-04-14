@@ -1,3 +1,8 @@
+---
+tags: [person]
+---
+
+
 # Eugene Yan (Ziyou Yan)
 
 **URL:** https://eugeneyan.com

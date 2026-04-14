@@ -1,11 +1,17 @@
 ---
-title: "Drew Breunig"
+title: Drew Breunig
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, context-engineering, geospatial, quantified-self, blog]
-aliases: ["@dbreunig", "Drew Breunig", "dbreunig"]
 source: blog
+tags:
+  - person
+  - ai
+  - context-engineering
+  - geospatial
+  - quantified-self
+  - blog
 ---
+
 
 # Drew Breunig
 

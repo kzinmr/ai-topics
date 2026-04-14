@@ -1,9 +1,17 @@
 ---
-title: "GLM-5 (Z.ai)"
+title: GLM-5 (Z.ai)
 created: 2026-04-10
 updated: 2026-04-10
-tags: [entity, model, chinese-ai, zai, glm]
-related: [chinese-ai, open-weights, llm-benchmarks]
+tags:
+- entity
+- model
+- chinese-ai
+- zai
+- glm
+related:
+- chinese-ai
+- open-weights
+- llm-benchmarks
 ---
 
 # GLM-5 (Z.ai)

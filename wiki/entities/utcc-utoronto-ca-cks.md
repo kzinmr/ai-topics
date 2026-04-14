@@ -1,9 +1,19 @@
 ---
-title: "Chris Siebenmann"
+title: Chris Siebenmann
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, sysadmin, unix, linux, free-software]
-aliases: ["utcc.utoronto.ca/~cks", "Chris Siebenmann Wandering Thoughts", "cks"]
+tags:
+- person
+- blogger
+- hn-popular
+- sysadmin
+- unix
+- linux
+- free-software
+aliases:
+- utcc.utoronto.ca/~cks
+- Chris Siebenmann Wandering Thoughts
+- cks
 ---
 
 # Chris Siebenmann

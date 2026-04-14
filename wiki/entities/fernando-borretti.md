@@ -1,3 +1,8 @@
+---
+tags: [person]
+---
+
+
 # Fernando Borretti
 
 **URL:** https://borretti.me

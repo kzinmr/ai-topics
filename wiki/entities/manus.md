@@ -1,23 +1,23 @@
 ---
-title: "Manus"
+title: Manus
 aliases:
-  - manus-ai
-  - manus-browser-operator
-  - monica-im
+- manus-ai
+- manus-browser-operator
+- monica-im
 created: 2026-04-13
 updated: 2026-04-13
 tags:
-  - entity
-  - technology
-  - browser-agent
-  - general-purpose-agent
-  - startup
+- entity
+- technology
+- browser-agent
+- general-purpose-agent
+- startup
 status: active
 sources:
-  - "https://manus.ai/features/manus-browser-operator"
-  - "https://chatgptguide.ai/manus-browser-operator-agentic-workflows/"
-  - "https://manus.im/blog/manus-browser-operator"
-  - "https://www.taskade.com/blog/manus-ai-review"
+- https://manus.ai/features/manus-browser-operator
+- https://chatgptguide.ai/manus-browser-operator-agentic-workflows/
+- https://manus.im/blog/manus-browser-operator
+- https://www.taskade.com/blog/manus-ai-review
 ---
 
 # Manus

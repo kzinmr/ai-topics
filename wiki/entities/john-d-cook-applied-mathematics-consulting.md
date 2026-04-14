@@ -1,9 +1,19 @@
 ---
-title: "John D. Cook"
+title: John D. Cook
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, applied-mathematics, statistics, ai-reliability, formal-methods, data-privacy]
-aliases: ["johndcook.com", "john-d-cook-applied-mathematics-consulting"]
+tags:
+- person
+- blogger
+- hn-popular
+- applied-mathematics
+- statistics
+- ai-reliability
+- formal-methods
+- data-privacy
+aliases:
+- johndcook.com
+- john-d-cook-applied-mathematics-consulting
 ---
 
 # John D. Cook

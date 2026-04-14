@@ -1,11 +1,21 @@
 ---
-title: "Thariq Shihipar"
+title: Thariq Shihipar
 handle: "@trq212"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, startups, tech, anthropic, claude-code, agents, mit-media-lab, yc, interpretability]
-aliases: ["@trq212", "trq212", "Thariq Shihipar Anthropic", "Thariq Shihipar MIT"]
+tags:
+  - person
+  - ai
+  - startups
+  - tech
+  - anthropic
+  - claude-code
+  - agents
+  - mit-media-lab
+  - yc
+  - interpretability
 ---
+
 
 # Thariq Shihipar (@trq212)
 

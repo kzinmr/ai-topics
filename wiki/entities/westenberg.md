@@ -1,10 +1,17 @@
 ---
-title: "JA Westenberg"
+title: JA Westenberg
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, culture, philosophy, technology, economics]
-aliases: ["joanwestenberg.com", "Westenberg."]
+tags:
+  - person
+  - blogger
+  - hn-popular
+  - culture
+  - philosophy
+  - technology
+  - economics
 ---
+
 
 # JA Westenberg
 

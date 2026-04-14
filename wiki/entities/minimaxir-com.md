@@ -1,3 +1,10 @@
+---
+title: Max Woolf
+status: active
+tags:
+- person
+---
+
 # Max Woolf
 
 ## Overview

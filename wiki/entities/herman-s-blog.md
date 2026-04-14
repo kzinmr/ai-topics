@@ -1,9 +1,18 @@
 ---
-title: "Herman Martinus"
+title: Herman Martinus
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, solo-founder, bear-blog, web-philosophy, indie-hacker]
-aliases: ["herman.bearblog.dev", "herman"]
+tags:
+- person
+- blogger
+- hn-popular
+- solo-founder
+- bear-blog
+- web-philosophy
+- indie-hacker
+aliases:
+- herman.bearblog.dev
+- herman
 ---
 
 # Herman Martinus

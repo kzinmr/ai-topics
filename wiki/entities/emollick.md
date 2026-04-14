@@ -1,11 +1,16 @@
 ---
-title: "Ethan Mollick"
+title: Ethan Mollick
 handle: "@emollick"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai-education, productivity, ai-adoption, human-ai-collaboration]
-aliases: ["emollick", "Ethan S. Mollick", "One Useful Thing"]
+tags:
+  - person
+  - ai-education
+  - productivity
+  - ai-adoption
+  - human-ai-collaboration
 ---
+
 
 # Ethan Mollick (@emollick)
 

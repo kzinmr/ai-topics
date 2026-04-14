@@ -1,10 +1,15 @@
 ---
-title: "gm8xx8 (@gm8xx8) — AI Paper Curator"
+title: gm8xx8 (@gm8xx8) — AI Paper Curator
 type: entity
 category: opinion-leader
 status: complete
 depth: L3
-tags: [paper-curation, arxiv, research-tracking, hf-community]
+tags:
+- person
+- -curation
+- arxiv
+- research-tracking
+- hf-community
 source: x:@gm8xx8
 updated: 2026-04-14
 ---

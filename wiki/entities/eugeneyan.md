@@ -1,11 +1,16 @@
 ---
-title: "Eugene Yan"
+title: Eugene Yan
 handle: "@eugeneyan"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ml-engineering, recsys, llm-systems, production-ai]
-aliases: ["eugeneyan", "Eugene Yan", "Ziyou Yan"]
+tags:
+  - person
+  - ml-engineering
+  - recsys
+  - llm-systems
+  - production-ai
 ---
+
 
 # Eugene Yan (@eugeneyan)
 

@@ -1,23 +1,24 @@
 ---
-title: "Nader Dabit"
-type: entity
-tags: [cognition, devin, developer-relations, cloud-agents, substack]
-aliases: ["nader-dabit-devrel", "dabit3"]
-related:
-  - "concepts/cognition-devin-philosophy"
-  - "concepts/cloud-agent-thesis"
-  - "entities/scott-wu"
-  - "entities/walden-yan"
+title: Nader Dabit
+related: [concepts/cognition-devin-philosophy, concepts/cloud-agent-thesis, entities/scott-wu, entities/walden-yan]
 sources:
-  - "https://nader.substack.com/p/engineering-for-agents-that-never"
-  - "https://nader.substack.com/p/how-cognition-uses-devin-to-build"
-  - "https://nader.substack.com/p/how-to-run-a-fleet-of-cloud-agents"
-  - "https://nader.substack.com/p/the-cloud-agent-thesis"
-  - "https://nader.codes/"
-  - "https://www.linkedin.com/in/naderdabit/"
-  - "https://x.com/dabit3"
+  - https://nader.substack.com/p/engineering-for-agents-that-never
+  - https://nader.substack.com/p/how-cognition-uses-devin-to-build
+  - https://nader.substack.com/p/how-to-run-a-fleet-of-cloud-agents
+  - https://nader.substack.com/p/the-cloud-agent-thesis
+  - https://nader.codes/
+  - https://www.linkedin.com/in/naderdabit/
+  - https://x.com/dabit3
 updated: 2026-04-13
+tags:
+  - person
+  - cognition
+  - devin
+  - developer-relations
+  - cloud-agents
+  - substack
 ---
+
 
 # Nader Dabit (@dabit3) — Growth Engineer at Cognition, Cloud Agent Advocate
 

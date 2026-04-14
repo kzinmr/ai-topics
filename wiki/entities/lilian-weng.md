@@ -1,3 +1,8 @@
+---
+tags:
+- person
+---
+
 # Lilian Weng (@lilianweng)
 
 **URL:** https://lilianweng.github.io

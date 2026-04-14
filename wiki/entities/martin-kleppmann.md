@@ -1,22 +1,19 @@
 ---
-title: "Martin Kleppmann"
+title: Martin Kleppmann
 created: 2026-04-13
 updated: 2026-04-13
 status: draft
+related: [local-first-software, automerge, bluesky-at-protocol]
+sources: [https://martin.kleppmann.com, https://martin.kleppmann.com/papers/local-first.pdf]
 tags:
+  - person
   - distributed-systems
   - CRDT
   - local-first
   - databases
   - open-source
-related:
-  - local-first-software
-  - automerge
-  - bluesky-at-protocol
-sources:
-  - "https://martin.kleppmann.com"
-  - "https://martin.kleppmann.com/papers/local-first.pdf"
 ---
+
 
 # Dr. Martin Kleppmann
 

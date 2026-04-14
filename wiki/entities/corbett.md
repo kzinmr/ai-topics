@@ -1,9 +1,19 @@
 ---
-title: "Corbett (Kyle Corbitt)"
+title: Corbett (Kyle Corbitt)
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, x-account, ai, startups, fine-tuning, rl, openpipe, coreweave]
-aliases: ["@corbtt", "kcorbitt", "Kyle Corbitt"]
+tags:
+- x-account
+- ai
+- startups
+- fine-tuning
+- rl
+- openpipe
+- coreweave
+aliases:
+- '@corbtt'
+- kcorbitt
+- Kyle Corbitt
 source: x-account
 ---
 

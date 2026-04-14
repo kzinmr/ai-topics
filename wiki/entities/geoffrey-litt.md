@@ -1,11 +1,19 @@
 ---
-title: "Geoffrey Litt"
+title: Geoffrey Litt
 handle: "@geoffreylitt"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, end-user-programming, malleable-software, dynamic-documents, local-first, crdt, notion]
-aliases: ["@geoffreylitt", "geoffreylitt", "Geoffrey Litt Ink & Switch"]
+tags:
+  - person
+  - ai
+  - end-user-programming
+  - malleable-software
+  - dynamic-documents
+  - local-first
+  - crdt
+  - notion
 ---
+
 
 # Geoffrey Litt (@geoffreylitt)
 

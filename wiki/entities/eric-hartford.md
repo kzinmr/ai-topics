@@ -1,11 +1,18 @@
 ---
-title: "Eric Hartford"
+title: Eric Hartford
 handle: "@QuixiAI"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, open-source-models, fine-tuning, uncensored-models, huggingface, cognitive-computations]
-aliases: ["QuixiAI", "ehartford"]
+tags:
+  - person
+  - ai
+  - open-source-models
+  - fine-tuning
+  - uncensored-models
+  - huggingface
+  - cognitive-computations
 ---
+
 
 # Eric Hartford (@QuixiAI)
 

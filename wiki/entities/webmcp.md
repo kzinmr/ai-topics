@@ -1,25 +1,25 @@
 ---
-title: "WebMCP"
+title: WebMCP
 aliases:
-  - web-model-context-protocol
-  - navigator-modelContext
-  - w3c-webmcp
+- web-model-context-protocol
+- navigator-modelContext
+- w3c-webmcp
 created: 2026-04-13
 updated: 2026-04-13
 tags:
-  - entity
-  - technology
-  - browser-agent
-  - standard
-  - w3c
-  - protocol
+- entity
+- technology
+- browser-agent
+- standard
+- w3c
+- protocol
 status: active
 sources:
-  - "https://webmcp.link/"
-  - "https://developer.chrome.com/blog/webmcp-epp"
-  - "https://developer.chrome.com/blog/webmcp-mcp-usage"
-  - "https://pub.towardsai.net/webmcp-making-your-web-app-agent-ready-d7d4d9cb790d"
-  - "https://docs.mcp-b.ai/explanation/design/spec-status-and-limitations"
+- https://webmcp.link/
+- https://developer.chrome.com/blog/webmcp-epp
+- https://developer.chrome.com/blog/webmcp-mcp-usage
+- https://pub.towardsai.net/webmcp-making-your-web-app-agent-ready-d7d4d9cb790d
+- https://docs.mcp-b.ai/explanation/design/spec-status-and-limitations
 ---
 
 # WebMCP (Web Model Context Protocol)

@@ -1,15 +1,19 @@
 ---
-title: "Noam Brown"
+title: Noam Brown
 created: 2026-04-14
 updated: 2026-04-14
-tags: [person, openai, meta-fair, cmu, poker-ai, reasoning, multi-agent, diplomacy]
-aliases: ["brown"]
-depth_tracking:
-  L1_basic_profile: true
-  L2_timeline_works: true
-  L3_thought_analysis: true
-  L4_ongoing_monitoring: false
+depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': False}
+tags:
+  - person
+  - openai
+  - meta-fair
+  - cmu
+  - poker-ai
+  - reasoning
+  - multi-agent
+  - diplomacy
 ---
+
 
 # Noam Brown
 

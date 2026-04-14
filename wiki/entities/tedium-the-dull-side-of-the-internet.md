@@ -1,3 +1,10 @@
+---
+title: Ernie Smith (Tedium)
+status: active
+tags:
+- person
+---
+
 # Ernie Smith (Tedium)
 
 **URL:** https://tedium.co

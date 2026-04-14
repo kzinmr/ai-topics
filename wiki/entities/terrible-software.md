@@ -1,3 +1,10 @@
+---
+title: Terrible Software
+status: active
+tags:
+- person
+---
+
 # Terrible Software
 
 **URL:** https://terriblesoftware.org

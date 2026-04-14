@@ -1,15 +1,16 @@
 ---
-title: "Richard Sutton"
+title: Richard Sutton
 created: 2026-04-13
 updated: 2026-04-13
-tags: [person, reinforcement-learning, agi, keen-technologies, bitter-lesson]
-aliases: ["sutton", "richie"]
-depth_tracking:
-  L1_basic_profile: true
-  L2_timeline_works: true
-  L3_thought_analysis: true
-  L4_ongoing_monitoring: true
+depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
+tags:
+  - person
+  - reinforcement-learning
+  - agi
+  - keen-technologies
+  - bitter-lesson
 ---
+
 
 # Richard S. Sutton
 

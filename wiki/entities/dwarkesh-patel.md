@@ -1,12 +1,16 @@
 ---
-title: "Dwarkesh Patel"
+title: Dwarkesh Patel
 created: 2026-04-09
 updated: 2026-04-13
-tags: [person, podcaster, blogger, ai-researcher, hn-popular]
-aliases: ["dwarkesh.com", "dwarkesh-podcast"]
-sources:
-  - "https://grokipedia.com/page/dwarkesh-patel"
+sources: [https://grokipedia.com/page/dwarkesh-patel]
+tags:
+  - person
+  - podcaster
+  - blogger
+  - ai-researcher
+  - hn-popular
 ---
+
 
 # Dwarkesh Patel
 

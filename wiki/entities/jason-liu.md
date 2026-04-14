@@ -1,11 +1,22 @@
 ---
-title: "Jason Liu"
+title: Jason Liu
 handle: "@jxnlco"
 created: 2026-04-13
 updated: 2026-04-13
-tags: [person, x-account, ai, structured-outputs, pydantic, instructor, llm-engineering, developer-tools, rag, context-engineering, evals]
-aliases: ["jxnlco", "jason liu instructor", "jason liu pydantic", "567 studios", "jason liu rag"]
+tags:
+  - person
+  - x-account
+  - ai
+  - structured-outputs
+  - pydantic
+  - instructor
+  - llm-engineering
+  - developer-tools
+  - rag
+  - context-engineering
+  - evals
 ---
+
 
 # Jason Liu (@jxnlco)
 

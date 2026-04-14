@@ -1,16 +1,18 @@
 ---
-title: "Andriy Burkov"
+title: Andriy Burkov
 handle: "@andriy-burkov"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, machine-learning, nlp, education, books]
-aliases: ["Andriy Burkov", "aburkov"]
-related:
-  - "[[hundred-page-ml-book]]"
-  - "[[hundred-page-nlp-book]]"
-  - "[[ml-education]]"
-  - "[[true-positive-weekly]]"
+related: [[[hundred-page-ml-book]], [[hundred-page-nlp-book]], [[ml-education]], [[true-positive-weekly]]]
+tags:
+  - person
+  - ai
+  - machine-learning
+  - nlp
+  - education
+  - books
 ---
+
 
 # Andriy Burkov (@andriy-burkov)
 

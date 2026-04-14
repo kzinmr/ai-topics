@@ -1,15 +1,17 @@
 ---
-title: "Dario Amodei"
+title: Dario Amodei
 created: 2026-04-14
 updated: 2026-04-14
-tags: [person, anthropic, openai, ai-safety, claude, interpretability]
-aliases: ["amodei"]
-depth_tracking:
-  L1_basic_profile: true
-  L2_timeline_works: true
-  L3_thought_analysis: true
-  L4_ongoing_monitoring: true
+depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
+tags:
+  - person
+  - anthropic
+  - openai
+  - ai-safety
+  - claude
+  - interpretability
 ---
+
 
 # Dario Amodei
 

@@ -1,3 +1,8 @@
+---
+tags: [person]
+---
+
+
 # Michał Zalewski (lcamtuf)
 
 **URL:** https://lcamtuf.coredump.cx

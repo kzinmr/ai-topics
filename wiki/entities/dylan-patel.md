@@ -1,4 +1,13 @@
 ---
+title: Dylan Patel
+status: active
+tags:
+- person
+---
+
+tags:
+  - person
+---
 title: "Dylan Patel"
 date: 2026-04-10
 sources:

@@ -1,12 +1,22 @@
 ---
-title: "Ryan Lopopolo"
+title: Ryan Lopopolo
 handle: "@_lopopolo"
 created: 2026-04-13
 updated: 2026-04-13
-tags: [person, x-account, ai, harness-engineering, openai, codex, ai-agents, agentic-engineering, elixir, symphony]
-aliases: ["ryan lopopolo harness engineering", "lopopolo", "openai frontier symphony", "harness engineering"]
 depth: 22000
+tags:
+  - person
+  - x-account
+  - ai
+  - harness-engineering
+  - openai
+  - codex
+  - ai-agents
+  - agentic-engineering
+  - elixir
+  - symphony
 ---
+
 
 # Ryan Lopopolo
 

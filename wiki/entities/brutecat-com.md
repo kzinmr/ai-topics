@@ -1,9 +1,16 @@
 ---
-title: "Brutecat"
+title: Brutecat
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, security-researcher, bug-bounty-hunter, reverse-engineering, google-ecosystem]
-aliases: ["brutecat.com", "brutecat", "dddaaa"]
+tags:
+- security-researcher
+- bug-bounty-hunter
+- reverse-engineering
+- google-ecosystem
+aliases:
+- brutecat.com
+- brutecat
+- dddaaa
 ---
 
 # Brutecat

@@ -1,10 +1,18 @@
 ---
-title: "Gwern Branwen"
+title: Gwern Branwen
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, ai-scaling, rationalist, epistemology, self-experimentation, forecasting]
-aliases: ["gwern.net"]
+tags:
+  - person
+  - blogger
+  - hn-popular
+  - ai-scaling
+  - rationalist
+  - epistemology
+  - self-experimentation
+  - forecasting
 ---
+
 
 # Gwern Branwen
 

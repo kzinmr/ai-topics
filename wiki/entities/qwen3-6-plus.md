@@ -1,9 +1,17 @@
 ---
-title: "Qwen3.6-Plus"
+title: Qwen3.6-Plus
 created: 2026-04-10
 updated: 2026-04-10
-tags: [entity, model, alibaba, qwen, agent]
-related: [alibaba, agent-models, chinese-ai]
+tags:
+- entity
+- model
+- alibaba
+- qwen
+- agent
+related:
+- alibaba
+- agent-models
+- chinese-ai
 ---
 
 # Qwen3.6-Plus

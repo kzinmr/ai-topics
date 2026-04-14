@@ -1,23 +1,23 @@
 ---
-title: "OpenAI CUA (Computer-Using Agent)"
+title: OpenAI CUA (Computer-Using Agent)
 aliases:
-  - openai-cua
-  - cua-model
-  - openai-operator
-  - computer-using-agent
+- openai-cua
+- cua-model
+- openai-operator
+- computer-using-agent
 created: 2026-04-13
 updated: 2026-04-13
 tags:
-  - entity
-  - technology
-  - computer-use
-  - browser-agent
-  - openai
+- entity
+- technology
+- computer-use
+- browser-agent
+- openai
 status: active
 sources:
-  - "https://openai.com/blog/introducing-operator"
-  - "https://openai.com/index/operator-system-card/"
-  - "https://www.libertify.com/interactive-library/openai-operator-system-card-cua-safety/"
+- https://openai.com/blog/introducing-operator
+- https://openai.com/index/operator-system-card/
+- https://www.libertify.com/interactive-library/openai-operator-system-card-cua-safety/
 ---
 
 # OpenAI CUA (Computer-Using Agent)

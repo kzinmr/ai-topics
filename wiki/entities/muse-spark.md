@@ -1,9 +1,13 @@
 ---
-title: "Muse Spark"
+title: Muse Spark
 created: 2026-04-09
 updated: 2026-04-09
-tags: [model, llm, emerging]
-aliases: ["Meta Muse Spark"]
+tags:
+- model
+- llm
+- emerging
+aliases:
+- Meta Muse Spark
 ---
 
 # Muse Spark

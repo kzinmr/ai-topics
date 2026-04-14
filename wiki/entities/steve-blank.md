@@ -1,10 +1,18 @@
 ---
-title: "Steve Blank"
+title: Steve Blank
 created: 2026-04-09
 updated: 2026-04-13
-tags: [person, blogger, hn-popular, entrepreneurship, lean-startup, customer-development, ai-agents, venture-capital]
-aliases: ["steveblank.com", "steve-blank"]
+tags:
+  - person
+  - blogger
+  - hn-popular
+  - entrepreneurship
+  - lean-startup
+  - customer-development
+  - ai-agents
+  - venture-capital
 ---
+
 
 # Steve Blank
 

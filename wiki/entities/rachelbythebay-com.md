@@ -1,9 +1,20 @@
 ---
-title: "Rachel by the Bay"
+title: Rachel by the Bay
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, sysadmin, infrastructure, unix, monitoring, operations, feed-readers]
-aliases: ["rachelbythebay.com", "rachelbythebay"]
+tags:
+- person
+- blogger
+- hn-popular
+- sysadmin
+- infrastructure
+- unix
+- monitoring
+- operations
+- feed-readers
+aliases:
+- rachelbythebay.com
+- rachelbythebay
 ---
 
 # Rachel by the Bay

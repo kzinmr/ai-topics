@@ -1,10 +1,16 @@
 ---
-title: "Daniel De Laney"
+title: Daniel De Laney
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, blogger, designer, product-management, macos, hn-popular]
-aliases: ["danieldelaney.net"]
+tags:
+  - person
+  - blogger
+  - designer
+  - product-management
+  - macos
+  - hn-popular
 ---
+
 
 # Daniel De Laney
 

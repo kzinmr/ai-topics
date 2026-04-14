@@ -1,12 +1,17 @@
 ---
-title: "Scott Wu"
+title: Scott Wu
 handle: "@ScottWu46"
 created: 2026-04-16
 updated: 2026-04-16
-tags: [person, ai, coding-agents, developer-tools, startups]
-aliases: ["scott_wu", "Scott Wu"]
 depth: L2
+tags:
+  - person
+  - ai
+  - coding-agents
+  - developer-tools
+  - startups
 ---
+
 
 # Scott Wu
 

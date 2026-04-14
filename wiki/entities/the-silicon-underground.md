@@ -1,3 +1,10 @@
+---
+title: Dave Farquhar (The Silicon Underground)
+status: active
+tags:
+- person
+---
+
 # Dave Farquhar (The Silicon Underground)
 
 **URL:** https://dfarq.homeip.net

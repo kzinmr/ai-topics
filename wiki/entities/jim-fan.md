@@ -1,18 +1,25 @@
 ---
-title: "Jim Fan"
+title: Jim Fan
 handle: "@jim-fan"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, robotics, embodied-ai, nvidia, simulation, world-models]
-aliases: ["Jim Fan", "Dr Jim Fan", "Jiajun Wu"]
 related:
-  - "[[nvidia]]"
-  - "[[embodied-ai]]"
-  - "[[robotics]]"
-  - "[[genie]]"
-  - "[[project-gr00t]]"
-  - "[[isaac-sim]]"
+  - [[nvidia]]
+  - [[embodied-ai]]
+  - [[robotics]]
+  - [[genie]]
+  - [[project-gr00t]]
+  - [[isaac-sim]]
+tags:
+  - person
+  - ai
+  - robotics
+  - embodied-ai
+  - nvidia
+  - simulation
+  - world-models
 ---
+
 
 # Jim Fan (@jim-fan)
 

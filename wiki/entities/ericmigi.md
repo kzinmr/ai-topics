@@ -1,3 +1,8 @@
+---
+tags: [person]
+---
+
+
 # Eric Migicovsky
 
 **URL:** https://ericmigi.com  

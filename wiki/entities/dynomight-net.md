@@ -1,3 +1,10 @@
+---
+title: Dynomight
+status: active
+tags:
+- person
+---
+
 # Dynomight
 
 **URL:** https://dynomight.net  

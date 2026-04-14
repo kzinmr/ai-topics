@@ -1,12 +1,18 @@
 ---
-title: "Chris Tate"
+title: Chris Tate
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, x-account, ai, developer-tools, generative-ui, vercel]
-aliases: ["@ctatedev", "Chris Tate Vercel"]
-source: x-account
+source: "x-account"
 related: [entities/simonw, entities/antirez-com, entities/geoffreylitt-com, entities/mitsuhiko]
+tags:
+  - person
+  - x-account
+  - ai
+  - developer-tools
+  - generative-ui
+  - vercel
 ---
+
 
 # Chris Tate
 

@@ -1,11 +1,19 @@
 ---
-title: "Florian Brand"
+title: Florian Brand
 handle: "@xeophon"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, reinforcement-learning, distributed-training, open-source, llm-evaluation, prime-intellect, interconnects]
-aliases: ["@xeophon", "xeophon", "Florian Brand Prime Intellect"]
+tags:
+  - person
+  - ai
+  - reinforcement-learning
+  - distributed-training
+  - open-source
+  - llm-evaluation
+  - prime-intellect
+  - interconnects
 ---
+
 
 # Florian Brand (@xeophon)
 

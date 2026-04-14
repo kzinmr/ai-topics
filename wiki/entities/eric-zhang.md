@@ -5,7 +5,9 @@ updated: 2026-04-10 10:00:00
 aliases: [ekzhang, Eric Zhang]
 status: active
 description: "Systems hacker and designer. Creator of bore, sshx, rustpad, and Percival. Former founding engineer at Modal, now at Thinking Machines Lab."
+tags: [person]
 ---
+
 
 # Eric Zhang
 

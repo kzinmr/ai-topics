@@ -1,15 +1,17 @@
 ---
-title: "Ilya Sutskever"
+title: Ilya Sutskever
 created: 2026-04-13
 updated: 2026-04-13
-tags: [person, deep-learning, ai-safety, openai, safe-superintelligence-inc, gpt]
-aliases: ["ilya", "sutskever"]
-depth_tracking:
-  L1_basic_profile: true
-  L2_timeline_works: true
-  L3_thought_analysis: true
-  L4_ongoing_monitoring: true
+depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
+tags:
+  - person
+  - deep-learning
+  - ai-safety
+  - openai
+  - safe-superintelligence-inc
+  - gpt
 ---
+
 
 # Ilya Sutskever
 

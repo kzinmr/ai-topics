@@ -1,3 +1,10 @@
+---
+title: OldVCR (Cameron Kaiser / ClassicHasClass)
+status: active
+tags:
+- person
+---
+
 # OldVCR (Cameron Kaiser / ClassicHasClass)
 
 ## Overview

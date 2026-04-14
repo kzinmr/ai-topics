@@ -1,22 +1,23 @@
 ---
-title: "Walden Yan"
-type: entity
-tags: [cognition, devin, co-founder, context-engineering, competitive-programming]
-aliases: ["walden-yan-cognition", "waldenyan"]
-related:
-  - "concepts/cognition-devin-philosophy"
-  - "concepts/context-engineering"
-  - "entities/scott-wu"
-  - "entities/nader-dabit"
+title: Walden Yan
+related: [concepts/cognition-devin-philosophy, concepts/context-engineering, entities/scott-wu, entities/nader-dabit]
 sources:
-  - "https://cognition.ai/blog/dont-build-multi-agents"
-  - "https://linkedin.com/in/waldenyan"
-  - "https://www.producthunt.com/@walden_yan1"
-  - "https://stats.ioinformatics.org/people/7322"
-  - "https://en.wikipedia.org/wiki/Cognition_AI"
-  - "https://x.com/walden_yan"
+  - https://cognition.ai/blog/dont-build-multi-agents
+  - https://linkedin.com/in/waldenyan
+  - https://www.producthunt.com/@walden_yan1
+  - https://stats.ioinformatics.org/people/7322
+  - https://en.wikipedia.org/wiki/Cognition_AI
+  - https://x.com/walden_yan
 updated: 2026-04-13
+tags:
+  - person
+  - cognition
+  - devin
+  - co-founder
+  - context-engineering
+  - competitive-programming
 ---
+
 
 # Walden Yan — Cognition Co-Founder & Chief Product Officer
 

@@ -1,9 +1,12 @@
 ---
-title: Hugo Bowne-Anderson
+title: "Hugo Bowne-Anderson"
 aliases: [hugobowne, Hugo Bowne Anderson]
-type: person
 status: complete
+created: 2026-04-14
+updated: 2026-04-14
+depth_tracking: {'current': 'L3', 'target': 'L3', 'last_reviewed': datetime.date(2026, 4, 14), 'notes': "Core philosophy documented with >30% quote rate from O'Reilly articles and Vanishing Gradients podcast"}
 tags:
+  - person
   - ai
   - data-science
   - mlops
@@ -11,14 +14,8 @@ tags:
   - agentic-workflows
   - human-centered-ai
   - ai-education
-created: 2026-04-14
-updated: 2026-04-14
-depth_tracking:
-  current: L3
-  target: L3
-  last_reviewed: 2026-04-14
-  notes: "Core philosophy documented with >30% quote rate from O'Reilly articles and Vanishing Gradients podcast"
 ---
+
 
 # Hugo Bowne-Anderson
 

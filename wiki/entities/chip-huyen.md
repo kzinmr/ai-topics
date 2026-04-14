@@ -1,3 +1,11 @@
+---
+title: "Chip Huyen (@chipro)"
+status: active
+handle: "@chipro"
+tags: [person]
+---
+
+
 # Chip Huyen (@chipro)
 
 **URL:** https://huyenchip.com/  

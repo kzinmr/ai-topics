@@ -1,10 +1,17 @@
 ---
-title: "Hugo Tunius"
+title: Hugo Tunius
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, devops, kubernetes, rust, web-development]
-aliases: ["hugotunius.se", "k0nserv", "Hugo Tunius"]
+tags:
+  - person
+  - blogger
+  - hn-popular
+  - devops
+  - kubernetes
+  - rust
+  - web-development
 ---
+
 
 # Hugo Tunius
 

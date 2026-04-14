@@ -1,10 +1,16 @@
 ---
-title: "Tom Renner"
+title: Tom Renner
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, blogger, software-engineering, leadership, ethics, team-culture]
-aliases: ["tomrenner.com"]
+tags:
+  - person
+  - blogger
+  - software-engineering
+  - leadership
+  - ethics
+  - team-culture
 ---
+
 
 # Tom Renner
 

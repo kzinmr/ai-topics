@@ -1,7 +1,8 @@
 ---
-name: alex-banks
+name: "alex-banks"
 updated: 2026-04-10
 tags:
+  - person
   - newsletter
   - ai-research
   - prompt-engineering
@@ -10,6 +11,7 @@ tags:
   - uk
   - entrepreneur
 ---
+
 
 # Alex Banks
 

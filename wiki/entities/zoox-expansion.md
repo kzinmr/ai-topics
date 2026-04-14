@@ -1,9 +1,16 @@
 ---
-title: "Zoox Robotaxi Expansion"
+title: Zoox Robotaxi Expansion
 created: 2026-04-10
 updated: 2026-04-10
-tags: [entity, autonomous-vehicles, amazon, robotaxi]
-related: [amazon, autonomous-driving, transportation]
+tags:
+- entity
+- autonomous-vehicles
+- amazon
+- robotaxi
+related:
+- amazon
+- autonomous-driving
+- transportation
 ---
 
 # Zoox Robotaxi Expansion

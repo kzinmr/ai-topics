@@ -1,10 +1,17 @@
 ---
-title: "Karri Saarinen"
+title: Karri Saarinen
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, product-design, startups, ai-agents, issue-tracking, linear, developer-tools]
-aliases: ["@karrisaarinen", "karrisaarinen", "Karri Saarinen"]
+tags:
+  - person
+  - product-design
+  - startups
+  - ai-agents
+  - issue-tracking
+  - linear
+  - developer-tools
 ---
+
 
 # Karri Saarinen (@karrisaarinen)
 

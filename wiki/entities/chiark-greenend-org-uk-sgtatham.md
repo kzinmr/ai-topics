@@ -1,10 +1,16 @@
 ---
-title: "Simon Tatham"
+title: Simon Tatham
 created: 2026-04-09
 updated: 2026-04-13
-tags: [person, blogger, hn-popular, developer-tools, free-software, unix-philosophy]
-aliases: ["chiark.greenend.org.uk/~sgtatham", "Simon Tatham PuTTY"]
+tags:
+  - person
+  - blogger
+  - hn-popular
+  - developer-tools
+  - free-software
+  - unix-philosophy
 ---
+
 
 # Simon Tatham
 

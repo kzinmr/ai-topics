@@ -1,33 +1,22 @@
 ---
-title: "Benjamin Clavié"
-aliases:
-  - bclavie
-  - Benjamin Clavié
+title: Benjamin Clavié
+aliases: [bclavie, Benjamin Clavié]
 created: 2026-04-10
 updated: 2026-04-15
-tags:
-  - person
-  - nlp-researcher
-  - information-retrieval
-  - colbert
-  - ragatouille
-  - modernbert
-  - open-source
-  - japan-based
 status: L3
 sources:
-  - "https://ben.clavie.eu/"
-  - "https://ben.clavie.eu/about/"
-  - "https://ben.clavie.eu/posts/answer/"
-  - "https://ben.clavie.eu/posts/sick/"
-  - "https://ben.clavie.eu/ragatouille/"
-  - "https://github.com/bclavie/RAGatouille"
-  - "https://github.com/AnswerDotAI/ModernBERT"
-  - "https://arxiv.org/abs/2412.13663"
-  - "https://arxiv.org/abs/2510.12327"
-  - "https://arxiv.org/abs/2510.14880"
-  - "https://www.mixedbread.com/blog/edge-v0"
-  - "https://parlance-labs.com/education/rag/ben.html"
+  - https://ben.clavie.eu/
+  - https://ben.clavie.eu/about/
+  - https://ben.clavie.eu/posts/answer/
+  - https://ben.clavie.eu/posts/sick/
+  - https://ben.clavie.eu/ragatouille/
+  - https://github.com/bclavie/RAGatouille
+  - https://github.com/AnswerDotAI/ModernBERT
+  - https://arxiv.org/abs/2412.13663
+  - https://arxiv.org/abs/2510.12327
+  - https://arxiv.org/abs/2510.14880
+  - https://www.mixedbread.com/blog/edge-v0
+  - https://parlance-labs.com/education/rag/ben.html
 related:
   - colbert
   - ragatouille
@@ -42,7 +31,17 @@ related:
   - entities/benjamin-warner
   - entities/makoto-kato
   - entities/griffin-adams
+tags:
+  - person
+  - nlp-researcher
+  - information-retrieval
+  - colbert
+  - ragatouille
+  - modernbert
+  - open-source
+  - japan-based
 ---
+
 
 # Benjamin Clavié (@bclavie)
 

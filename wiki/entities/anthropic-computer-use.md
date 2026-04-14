@@ -1,23 +1,23 @@
 ---
-title: "Anthropic Computer Use"
+title: Anthropic Computer Use
 aliases:
-  - claude-computer-use
-  - anthropic-cu
-  - claude-cowork
-  - vercept-acquisition
+- claude-computer-use
+- anthropic-cu
+- claude-cowork
+- vercept-acquisition
 created: 2026-04-13
 updated: 2026-04-13
 tags:
-  - entity
-  - technology
-  - computer-use
-  - browser-agent
-  - anthropic
+- entity
+- technology
+- computer-use
+- browser-agent
+- anthropic
 status: active
 sources:
-  - "https://www.anthropic.com/news/claude-sonnet-4-6"
-  - "https://www.anthropic.com/news/acquires-vercept"
-  - "https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/"
+- https://www.anthropic.com/news/claude-sonnet-4-6
+- https://www.anthropic.com/news/acquires-vercept
+- https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/
 ---
 
 # Anthropic Computer Use

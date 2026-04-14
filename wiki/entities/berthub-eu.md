@@ -1,10 +1,19 @@
 ---
-title: "Bert Hubert"
+title: Bert Hubert
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, powerdns, open-source, cybersecurity, digital-sovereignty, tech-policy, lean-software]
-aliases: ["berthub.eu", "berthub", "ds9a.nl"]
+tags:
+  - person
+  - blogger
+  - hn-popular
+  - powerdns
+  - open-source
+  - cybersecurity
+  - digital-sovereignty
+  - tech-policy
+  - lean-software
 ---
+
 
 # Bert Hubert
 

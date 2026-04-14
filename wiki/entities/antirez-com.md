@@ -1,3 +1,10 @@
+---
+title: Salvatore Sanfilippo (antirez)
+status: active
+tags:
+- person
+---
+
 # Salvatore Sanfilippo (antirez)
 
 **URL:** https://antirez.com

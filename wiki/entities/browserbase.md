@@ -1,22 +1,22 @@
 ---
-title: "Browserbase"
+title: Browserbase
 aliases:
-  - browserbase-hq
-  - stagehand
+- browserbase-hq
+- stagehand
 created: 2026-04-13
 updated: 2026-04-13
 tags:
-  - entity
-  - technology
-  - browser-agent
-  - infrastructure
-  - dom-based
+- entity
+- technology
+- browser-agent
+- infrastructure
+- dom-based
 status: active
 sources:
-  - "https://www.browserbase.com/"
-  - "https://www.browserbase.com/blog/stagehand-v3"
-  - "https://docs.browserbase.com/introduction/stagehand"
-  - "https://www.browserbase.com/blog/introducing-the-stagehand-api"
+- https://www.browserbase.com/
+- https://www.browserbase.com/blog/stagehand-v3
+- https://docs.browserbase.com/introduction/stagehand
+- https://www.browserbase.com/blog/introducing-the-stagehand-api
 ---
 
 # Browserbase

@@ -1,3 +1,10 @@
+---
+title: Andrew Nesbitt
+status: active
+tags: [person]
+---
+
+
 # Andrew Nesbitt
 
 **URL:** https://nesbitt.io

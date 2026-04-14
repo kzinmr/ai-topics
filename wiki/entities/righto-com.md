@@ -1,9 +1,18 @@
 ---
-title: "Ken Shirriff"
+title: Ken Shirriff
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, reverse-engineering, chip-design, computer-history, microcode]
-aliases: ["righto.com", "kenshirriff"]
+tags:
+- person
+- blogger
+- hn-popular
+- reverse-engineering
+- chip-design
+- computer-history
+- microcode
+aliases:
+- righto.com
+- kenshirriff
 ---
 
 # Ken Shirriff

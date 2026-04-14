@@ -1,11 +1,20 @@
 ---
-title: "Will McGugan"
+title: Will McGugan
 handle: "@willmcgugan"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, x-account, python, developer-tools, open-source, ai, terminal-ui, rich, textual]
-aliases: ["willmcgugan", "will mcgugan rich textual", "textualize"]
+tags:
+  - person
+  - x-account
+  - python
+  - developer-tools
+  - open-source
+  - ai
+  - terminal-ui
+  - rich
+  - textual
 ---
+
 
 # Will McGugan (@willmcgugan)
 

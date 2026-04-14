@@ -1,11 +1,19 @@
 ---
-title: "Varun Trivedy"
+title: Varun Trivedy
 handle: "@Vtrivedy10"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, ml-engineering, agents, langchain, harness-engineering, evals, open-source]
-aliases: ["@Vtrivedy10", "vtrivedy", "Vivek Trivedy", "Viv"]
+tags:
+  - person
+  - ai
+  - ml-engineering
+  - agents
+  - langchain
+  - harness-engineering
+  - evals
+  - open-source
 ---
+
 
 # Varun Trivedy (@Vtrivedy10)
 

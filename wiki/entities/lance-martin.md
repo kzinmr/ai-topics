@@ -1,11 +1,19 @@
 ---
-title: "Lance Martin"
+title: Lance Martin
 handle: "@RLanceMartin"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, langchain, langgraph, rag, agents, context-engineering, open-source]
-aliases: ["RLanceMartin", "rlancemartin"]
+tags:
+  - person
+  - ai
+  - langchain
+  - langgraph
+  - rag
+  - agents
+  - context-engineering
+  - open-source
 ---
+
 
 # Lance Martin (@RLanceMartin)
 

@@ -1,22 +1,22 @@
 ---
-entity: ian-nuttall
-aliases:
-  - iannuttall
-url: https://ian.is/
-blog: https://ian.is
+entity: "ian-nuttall"
+aliases: [iannuttall]
+url: "https://ian.is/"
+blog: "https://ian.is"
 twitter: "@iannuttall"
-github: https://github.com/iannuttall
-role: Indie hacker, developer-tools builder, AI-coding advocate
-type: person
+github: "https://github.com/iannuttall"
+role: "Indie hacker, developer-tools builder, AI-coding advocate"
+updated: 2026-04-10
 tags:
+  - person
   - indie-hacker
   - developer-tools
   - AI-assisted-development
   - programmatic-seo
   - MCP
   - Claude-Code
-updated: 2026-04-10
 ---
+
 
 # Ian Nuttall
 

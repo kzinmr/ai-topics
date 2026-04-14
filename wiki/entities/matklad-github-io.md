@@ -1,9 +1,20 @@
 ---
-title: "Aleksey Kladov"
+title: Aleksey Kladov
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, developer-tools, compiler-tools, language-server, rust, zig, systems-programming]
-aliases: ["matklad", "matklad.github.io"]
+tags:
+- person
+- blogger
+- hn-popular
+- developer-tools
+- compiler-tools
+- language-server
+- rust
+- zig
+- systems-programming
+aliases:
+- matklad
+- matklad.github.io
 ---
 
 # Aleksey Kladov

@@ -1,9 +1,20 @@
 ---
-title: "Chad Nauseam"
+title: Chad Nauseam
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, rust, functional-programming, game-dev, cryptocurrency, tech-commentary]
-aliases: ["chadnauseam.com", "chadnauseam", "chad nauseam"]
+tags:
+- person
+- blogger
+- hn-popular
+- rust
+- functional-programming
+- game-dev
+- cryptocurrency
+- tech-commentary
+aliases:
+- chadnauseam.com
+- chadnauseam
+- chad nauseam
 ---
 
 # Chad Nauseam

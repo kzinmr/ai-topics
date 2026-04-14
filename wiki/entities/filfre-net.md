@@ -1,9 +1,20 @@
 ---
-title: "Jimmy Maher — The Digital Antiquarian"
+title: Jimmy Maher — The Digital Antiquarian
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, game-history, interactive-fiction, preservation, retro-computing, digital-culture]
-aliases: ["filfre.net", "The Digital Antiquarian", "Jimmy Maher"]
+tags:
+- person
+- blogger
+- hn-popular
+- game-history
+- interactive-fiction
+- preservation
+- retro-computing
+- digital-culture
+aliases:
+- filfre.net
+- The Digital Antiquarian
+- Jimmy Maher
 ---
 
 # Jimmy Maher — The Digital Antiquarian

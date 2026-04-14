@@ -1,11 +1,20 @@
 ---
-title: "Pratik Bhavsar"
+title: Pratik Bhavsar
 handle: "@ptkbhv"
 created: 2026-04-13
 updated: 2026-04-13
-tags: [person, x-account, ai, llm-engineering, agent-evaluation, rag, llm-as-a-judge, galileo, maxpool]
-aliases: ["pratik bhavsar", "bhavsarpratik", "ptkbhv", "pakodas substack", "maxpool community"]
+tags:
+  - person
+  - x-account
+  - ai
+  - llm-engineering
+  - agent-evaluation
+  - rag
+  - llm-as-a-judge
+  - galileo
+  - maxpool
 ---
+
 
 # Pratik Bhavsar (@ptkbhv)
 

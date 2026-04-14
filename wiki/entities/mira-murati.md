@@ -1,10 +1,15 @@
 ---
-title: "Mira Murati"
+title: Mira Murati
 created: 2026-04-13
 updated: 2026-04-13
-tags: [person, ai-executive, openai, thinking-machines-lab, ai-safety]
-aliases: ["mira"]
+tags:
+  - person
+  - ai-executive
+  - openai
+  - thinking-machines-lab
+  - ai-safety
 ---
+
 
 # Mira Murati
 

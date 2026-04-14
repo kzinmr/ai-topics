@@ -1,3 +1,10 @@
+---
+title: Mat Duggan
+status: active
+tags:
+- person
+---
+
 # Mat Duggan
 
 **URL:** https://matduggan.com

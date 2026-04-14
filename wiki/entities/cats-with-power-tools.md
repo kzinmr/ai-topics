@@ -1,3 +1,10 @@
+---
+title: Pixelmelt (Cats with Power Tools)
+status: active
+tags:
+- person
+---
+
 # Pixelmelt (Cats with Power Tools)
 
 **URL:** https://blog.pixelmelt.dev (primary), https://blog.exploit.cat (secondary)  

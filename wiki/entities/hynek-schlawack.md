@@ -1,10 +1,19 @@
 ---
-title: "Hynek Schlawack"
+title: Hynek Schlawack
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, python, open-source, devops, software-engineering, attrs, structlog, testing, packaging]
-aliases: ["@hynek", "hynek", "Hynek Schlawack"]
+tags:
+  - person
+  - python
+  - open-source
+  - devops
+  - software-engineering
+  - attrs
+  - structlog
+  - testing
+  - packaging
 ---
+
 
 # Hynek Schlawack (@hynek)
 

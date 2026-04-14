@@ -5,7 +5,9 @@ updated: 2026-04-10 10:00:00
 aliases: [eliebak, eliebakouch]
 status: active
 description: "ML engineer and researcher at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training."
+tags: [person]
 ---
+
 
 # Elie Bakouch
 

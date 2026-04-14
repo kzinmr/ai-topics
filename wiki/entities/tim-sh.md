@@ -1,10 +1,19 @@
 ---
-title: "Tim Sherratt"
+title: Tim Sherratt
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, blogger, historian, hacker, GLAM, digital-humanities, web-archiving, Jupyter, open-data]
-aliases: ["timsh.org", "wragge", "timsherratt.org"]
+tags:
+  - person
+  - blogger
+  - historian
+  - hacker
+  - GLAM
+  - digital-humanities
+  - web-archiving
+  - Jupyter
+  - open-data
 ---
+
 
 # Tim Sherratt
 

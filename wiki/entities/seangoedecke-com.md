@@ -1,3 +1,10 @@
+---
+title: Sean Goedecke
+status: active
+tags:
+- person
+---
+
 # Sean Goedecke
 
 **URL:** https://www.seangoedecke.com

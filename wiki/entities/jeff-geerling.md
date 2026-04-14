@@ -1,3 +1,8 @@
+---
+tags: [person]
+---
+
+
 # Jeff Geerling
 
 **URL:** https://www.jeffgeerling.com

@@ -1,17 +1,13 @@
 ---
-title: "Simon Willison"
-aliases:
-  - simonw
+title: Simon Willison
+aliases: [simonw]
 created: 2025-01-01
 updated: 2026-04-12
-tags:
-  - person
-  - opinion-leader
 status: L3
-sources:
-  - "https://simonwillison.net/"
-  - "https://simonwillison.net/guides/agentic-engineering-patterns/"
+sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/]
+tags: [person, opinion-leader]
 ---
+
 
 # Simon Willison
 

@@ -1,9 +1,18 @@
 ---
-title: "Amazon Acquires Rivr"
+title: Amazon Acquires Rivr
 created: 2026-04-10
 updated: 2026-04-10
-tags: [entity, acquisition, amazon, robotics, rivr]
-related: [amazon, robotics, delivery, autonomous-vehicles]
+tags:
+- entity
+- acquisition
+- amazon
+- robotics
+- rivr
+related:
+- amazon
+- robotics
+- delivery
+- autonomous-vehicles
 ---
 
 # Amazon Acquires Rivr

@@ -1,22 +1,22 @@
 ---
-title: "Perplexity Comet"
+title: Perplexity Comet
 aliases:
-  - comet-browser
-  - perplexity-ai-browser
-  - perplexity-computer
+- comet-browser
+- perplexity-ai-browser
+- perplexity-computer
 created: 2026-04-13
 updated: 2026-04-13
 tags:
-  - entity
-  - product
-  - browser-agent
-  - ai-browser
-  - perplexity
+- entity
+- product
+- browser-agent
+- ai-browser
+- perplexity
 status: active
 sources:
-  - "https://en.wikipedia.org/wiki/Perplexity_Comet"
-  - "https://www.infoworld.com/article/4081396/when-will-browser-agents-do-real-work.html"
-  - "https://till-freitag.com/en/blog/perplexity-comet-ai-browser"
+- https://en.wikipedia.org/wiki/Perplexity_Comet
+- https://www.infoworld.com/article/4081396/when-will-browser-agents-do-real-work.html
+- https://till-freitag.com/en/blog/perplexity-comet-ai-browser
 ---
 
 # Perplexity Comet

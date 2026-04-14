@@ -1,3 +1,10 @@
+---
+title: Philip Laine
+status: active
+tags:
+- person
+---
+
 # Philip Laine
 
 **URL:** https://philiplaine.com

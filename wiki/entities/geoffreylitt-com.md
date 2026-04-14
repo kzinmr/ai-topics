@@ -1,3 +1,10 @@
+---
+title: Geoffrey Litt
+status: active
+tags:
+- person
+---
+
 # Geoffrey Litt
 
 **URL:** https://geoffreylitt.com

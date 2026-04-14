@@ -1,11 +1,18 @@
 ---
-title: "Addy Osmani"
+title: Addy Osmani
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, x-account, ai, coding-agents, web-development, developer-experience, google]
-aliases: ["@addyosmani", "addyosmani", "Addy Osmani"]
-source: x-account
+source: "x-account"
+tags:
+  - person
+  - x-account
+  - ai
+  - coding-agents
+  - web-development
+  - developer-experience
+  - google
 ---
+
 
 # Addy Osmani
 

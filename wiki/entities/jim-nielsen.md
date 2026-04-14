@@ -1,10 +1,17 @@
 ---
-title: "Jim Nielsen"
+title: Jim Nielsen
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, designer, developer, web-design, writing, hackernews, ui-ux]
-aliases: ["jim-nielsen.com", "blog.jim-nielsen.com"]
+tags:
+  - person
+  - designer
+  - developer
+  - web-design
+  - writing
+  - hackernews
+  - ui-ux
 ---
+
 
 # Jim Nielsen
 

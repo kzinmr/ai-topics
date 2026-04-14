@@ -1,14 +1,12 @@
 ---
-title: "Sero (0xSero)"
+title: Sero (0xSero)
 handle: "@0xsero"
 url: "https://www.sybilsolutions.ai/"
 twitter: "https://x.com/0xsero"
 status: active
-depth_tracking:
-  current: L3
-  last_updated: 2026-04-13
-  notes: "Complete L3 analysis with philosophy, quotes, homelab benchmarks, and recent projects"
+depth_tracking: {'current': 'L3', 'last_updated': datetime.date(2026, 4, 13), 'notes': 'Complete L3 analysis with philosophy, quotes, homelab benchmarks, and recent projects'}
 tags:
+  - person
   - ai-infrastructure
   - open-source
   - local-ai
@@ -18,6 +16,7 @@ tags:
   - blockchain
   - freedom-tech
 ---
+
 
 # Sero (@0xsero)
 

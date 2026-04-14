@@ -1,3 +1,10 @@
+---
+title: John Gruber
+status: active
+tags:
+- person
+---
+
 # John Gruber
 
 **URL:** https://daringfireball.net  

@@ -1,9 +1,16 @@
 ---
-title: "Cursor 3"
+title: Cursor 3
 created: 2026-04-10
 updated: 2026-04-10
-tags: [entity, ide, coding-agent, cursor]
-related: [coding-agents, ide-tools, agent-workflows]
+tags:
+- entity
+- ide
+- coding-agent
+- cursor
+related:
+- coding-agents
+- ide-tools
+- agent-workflows
 ---
 
 # Cursor 3

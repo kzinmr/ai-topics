@@ -1,3 +1,8 @@
+---
+tags: [person]
+---
+
+
 # Yacine Mahdid
 
 **URL:** https://yacine.ca/

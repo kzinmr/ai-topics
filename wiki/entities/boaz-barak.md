@@ -1,11 +1,20 @@
 ---
-title: "Boaz Barak"
+title: Boaz Barak
 handle: "@boazbaraktcs"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, theoretical-cs, ai-safety, computational-complexity, cryptography, education, harvard, openai]
-aliases: ["@boazbaraktcs", "boazbaraktcs", "Boaz Barak Harvard", "Boaz Barak OpenAI"]
+tags:
+  - person
+  - ai
+  - theoretical-cs
+  - ai-safety
+  - computational-complexity
+  - cryptography
+  - education
+  - harvard
+  - openai
 ---
+
 
 # Boaz Barak (@boazbaraktcs)
 

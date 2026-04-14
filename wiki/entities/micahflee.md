@@ -1,3 +1,10 @@
+---
+title: Micah Lee
+status: active
+tags: [person]
+---
+
+
 # Micah Lee
 
 ## Overview

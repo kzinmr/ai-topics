@@ -1,10 +1,17 @@
 ---
-title: "Adam Mastroianni"
+title: Adam Mastroianni
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, psychology, writing, experimental-history, science-communication]
-aliases: ["experimental-history.com", "experimental history"]
+tags:
+  - person
+  - blogger
+  - hn-popular
+  - psychology
+  - writing
+  - experimental-history
+  - science-communication
 ---
+
 
 # Adam Mastroianni
 

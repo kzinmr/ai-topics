@@ -1,7 +1,8 @@
 ---
-name: arlan-r
+name: "arlan-r"
 updated: 2026-04-10
 tags:
+  - person
   - founder
   - ml-engineer
   - yc
@@ -10,6 +11,7 @@ tags:
   - ai-coding
   - kazakhstan
 ---
+
 
 # Arlan Rakhmetzhanov
 

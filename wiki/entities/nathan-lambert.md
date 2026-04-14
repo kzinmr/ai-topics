@@ -1,10 +1,11 @@
 ---
-title: "Nathan Lambert"
+title: Nathan Lambert
 handle: "@natolambert"
 url: "https://www.natolambert.com/"
 twitter: "https://x.com/natolambert"
 status: active
 tags:
+  - person
   - ai-research
   - rlhf
   - open-models
@@ -13,6 +14,7 @@ tags:
   - huggingface
   - interconnects
 ---
+
 
 # Nathan Lambert (@natolambert)
 

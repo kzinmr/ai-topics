@@ -1,9 +1,19 @@
 ---
-title: "Doug Brown (Downtown Doug Brown)"
+title: Doug Brown (Downtown Doug Brown)
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, blogger, vintage-computing, hardware-repair, embedded-linux, reverse-engineering, macintosh]
-aliases: ["downtowndougbrown.com", "doug-brown", "downtown-doug-brown"]
+tags:
+- person
+- blogger
+- vintage-computing
+- hardware-repair
+- embedded-linux
+- reverse-engineering
+- macintosh
+aliases:
+- downtowndougbrown.com
+- doug-brown
+- downtown-doug-brown
 ---
 
 # Doug Brown (Downtown Doug Brown)

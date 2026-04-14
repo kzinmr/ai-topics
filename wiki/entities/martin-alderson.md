@@ -1,10 +1,18 @@
 ---
-title: "Martin Alderson"
+title: Martin Alderson
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, ai, saas, developer-tools, economics, startup]
-aliases: ["martinalderson.com", "martin-alderson"]
+tags:
+  - person
+  - blogger
+  - hn-popular
+  - ai
+  - saas
+  - developer-tools
+  - economics
+  - startup
 ---
+
 
 # Martin Alderson
 

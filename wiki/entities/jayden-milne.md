@@ -1,3 +1,8 @@
+---
+tags: [person]
+---
+
+
 # Jayden Milne
 
 **Blog:** [thejaymo.net](https://thejaymo.net)  

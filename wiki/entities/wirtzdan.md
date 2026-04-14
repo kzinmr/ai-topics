@@ -1,10 +1,18 @@
 ---
-title: "Daniel Wirtz"
+title: Daniel Wirtz
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, productivity, facilitation, cohort-based-courses, note-taking, effective-altruism]
-aliases: ["danielwirtz.com", "wirtzdan"]
+tags:
+  - person
+  - blogger
+  - hn-popular
+  - productivity
+  - facilitation
+  - cohort-based-courses
+  - note-taking
+  - effective-altruism
 ---
+
 
 # Daniel Wirtz
 

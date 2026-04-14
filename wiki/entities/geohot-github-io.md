@@ -1,3 +1,10 @@
+---
+title: George Hotz (geohot)
+status: active
+tags:
+- person
+---
+
 # George Hotz (geohot)
 
 **Projects:** comma.ai (Founder/CEO), tinygrad (Creator), tiny corp (Founder)  

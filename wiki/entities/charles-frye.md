@@ -1,13 +1,19 @@
 ---
-title: "Charles Frye"
+title: Charles Frye
 handle: "@charles_irl"
 created: 2026-04-10
 updated: 2026-04-13
-tags: [person, x-account, ai, ml-engineering, gpu, infrastructure, developer-advocacy]
-aliases: ["charles_irl", "charles frye modal"]
-sources:
-  - https://grokipedia.com/page/Charles_Frye
+sources: [https://grokipedia.com/page/Charles_Frye]
+tags:
+  - person
+  - x-account
+  - ai
+  - ml-engineering
+  - gpu
+  - infrastructure
+  - developer-advocacy
 ---
+
 
 # Charles Frye (@charles_irl)
 

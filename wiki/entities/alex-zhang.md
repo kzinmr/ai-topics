@@ -1,11 +1,9 @@
 ---
-title: "Alex L. Zhang"
-aliases: ["Alex Zhang", "alexzhang13", "a1zhang"]
+title: Alex L. Zhang
+aliases: [Alex Zhang, alexzhang13, a1zhang]
 status: full
 created: 2026-04-13
-depth_tracking:
-  target: 13KB+
-  last_updated: 2026-04-13
+depth_tracking: {'target': '13KB+', 'last_updated': datetime.date(2026, 4, 13)}
 related_people:
   - Omar Khattab (MIT, PhD advisor, ColBERT/DSPy/RLM co-author)
   - Tim Kraska (MIT, PhD co-advisor, DSG, ML systems)
@@ -35,7 +33,9 @@ related_papers:
   - Language-guided World Models (SpLU-RoboNLP @ ACL 2024)
   - Project Popcorn (2025)
   - Triton kernels for OSS AlphaFold3 (2024)
+tags: [person]
 ---
+
 
 # Alex L. Zhang
 

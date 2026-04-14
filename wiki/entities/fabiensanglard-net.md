@@ -1,9 +1,18 @@
 ---
-title: "Fabien Sanglard"
+title: Fabien Sanglard
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, game-engines, reverse-engineering, performance, computer-history]
-aliases: ["fabiensanglard.net", "fabien-sanglard"]
+tags:
+- person
+- blogger
+- hn-popular
+- game-engines
+- reverse-engineering
+- performance
+- computer-history
+aliases:
+- fabiensanglard.net
+- fabien-sanglard
 ---
 
 # Fabien Sanglard

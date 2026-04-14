@@ -1,9 +1,17 @@
 ---
-title: "Google Gemma 4"
+title: Google Gemma 4
 created: 2026-04-10
 updated: 2026-04-13
-tags: [entity, model, google, open-weight, gemma]
-related: [google-deepmind, open-models, on-device-ai]
+tags:
+- entity
+- model
+- google
+- open-weight
+- gemma
+related:
+- google-deepmind
+- open-models
+- on-device-ai
 ---
 
 # Google Gemma 4

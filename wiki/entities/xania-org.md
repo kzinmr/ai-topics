@@ -1,9 +1,21 @@
 ---
-title: "Matt Godbolt"
+title: Matt Godbolt
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, c++, compiler-explorer, assembly, open-source, systems-programming]
-aliases: ["xania.org", "compiler-explorer", "godbolt", "mattgodbolt"]
+tags:
+- person
+- blogger
+- hn-popular
+- c++
+- compiler-explorer
+- assembly
+- open-source
+- systems-programming
+aliases:
+- xania.org
+- compiler-explorer
+- godbolt
+- mattgodbolt
 ---
 
 # Matt Godbolt

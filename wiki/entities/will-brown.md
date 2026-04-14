@@ -1,11 +1,18 @@
 ---
-title: "Will Brown"
+title: Will Brown
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, x-account, ai, ml-research, rlhf, reinforcement-learning, open-source]
-aliases: ["@willccbb", "willccbb", "William Brown"]
-source: x-account
+source: "x-account"
+tags:
+  - person
+  - x-account
+  - ai
+  - ml-research
+  - rlhf
+  - reinforcement-learning
+  - open-source
 ---
+
 
 # Will Brown
 

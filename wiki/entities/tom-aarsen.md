@@ -1,11 +1,19 @@
 ---
-title: "Tom Aarsen"
+title: Tom Aarsen
 handle: "@tomaarsen"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, sentence-transformers, nlp, huggingface, semantic-search, embeddings, open-source]
-aliases: ["tomaarsen", "Tom Aarsen"]
+tags:
+  - person
+  - ai
+  - sentence-transformers
+  - nlp
+  - huggingface
+  - semantic-search
+  - embeddings
+  - open-source
 ---
+
 
 # Tom Aarsen (@tomaarsen)
 

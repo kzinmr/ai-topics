@@ -7,19 +7,30 @@ linkedin: https://www.linkedin.com/in/samuel-colvin-5383251b8
 company: Pydantic (Founder & CEO)
 location: London, United Kingdom
 type: person
-tags: [pydantic, pydantic-ai, monty, logfire, rust, python, ai-agents, observability, data-validation, type-safety]
-related:
-  - [[concepts/code-mode]]
-  - [[concepts/harness-engineering]]
-  - [[concepts/ai-observability]]
-  - [[concepts/structured-outputs]]
-  - [[entities/alex-hall]]
-  - [[entities/david-montague]]
-  - [[entities/douwe-maan]]
 depth: L3
 status: complete
 created: 2026-04-15
 last_updated: 2026-04-15
+tags:
+  - person
+  - pydantic
+  - pydantic-ai
+  - monty
+  - logfire
+  - rust
+  - python
+  - ai-agents
+  - observability
+  - data-validation
+  - type-safety
+related:
+  - "[[concepts/code-mode]]"
+  - "[[concepts/harness-engineering]]"
+  - "[[concepts/ai-observability]]"
+  - "[[concepts/structured-outputs]]"
+  - "[[entities/alex-hall]]"
+  - "[[entities/david-montague]]"
+  - "[[entities/douwe-maan]]"
 ---
 
 # Samuel Colvin — Creator of Pydantic, Pioneer of Type-Safe AI Agents
@@ -82,7 +93,8 @@ last_updated: 2026-04-15
 - **Feb 17, 2026**: Talked at Latent Space — "Monty: the ultrafast Python interpreter by Agents for Agents"
 - **Feb 27, 2026**: Monty blog post published
 - **Mar 23, 2026**: Pydantic AI Gateway moving into Logfire
-- **Mar 28, 2026**: pydantic-monty v0.0.9 released
+|- **Mar 28, 2026**: pydantic-monty v0.0.9 released
+|- **Apr 2026**: Serializable Agents (TOML-defined agents) in development
 
 ## Core Philosophy
 
@@ -113,6 +125,25 @@ This is a **capabilities-based security** approach — closer to formal methods 
 Unlike "open core" companies that withhold critical functionality, Pydantic keeps its core library truly open source (MIT) while building commercial offerings (Logfire platform) on top. This transparency is intentional:
 
 > *"Too many observability companies are abusing the open source label... These products are often missing critical functionality, forcing users onto closed source paid plans once they're locked in. We're different."*
+
+### 5. Graphs for Agent Orchestration
+Colvin recognized early that single-agent workflows are insufficient for complex applications:
+
+> *"We were compelled enough by graphs once we got them right, that we actually merged the PR this morning. That means our agent implementation without changing its API at all is now [backed by graphs]. Our agents are technically one of the many graphs you could go and build."* — Latent Space Podcast (Feb 2025)
+
+The Pydantic Graph API (PR #2982, merged Oct 2025 by Douwe Maan and David Montague) provides:
+- **Parallel execution**: `g.map()` for fan-out operations on iterables
+- **Conditional branching**: Decision nodes with dynamic routing
+- **Step-by-step execution**: `graph.iter()` for fine-grained control
+- **State persistence**: Serialize execution state for durable workflows
+
+### 6. Serializable Agents (Upcoming)
+Colvin announced work on serializing entire agent definitions to TOML files — model, system prompt, tools, dependencies, everything. This enables:
+- **Configuration-driven agents**: Define agents without code
+- **Portability**: Share agent definitions across environments
+- **Version control**: Track agent changes in git
+
+> *"We're about to introduce... serializable agents. So basically you can define an agent entirely in a TOML file. Everything from the model to the system prompt to all of the tools."* — Latent Space (Feb 2026)
 
 ## Key Projects
 

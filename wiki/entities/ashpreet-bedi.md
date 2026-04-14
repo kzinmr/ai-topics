@@ -1,7 +1,8 @@
 ---
-name: ashpreet-bedi
+name: "ashpreet-bedi"
 updated: 2026-04-10
 tags:
+  - person
   - founder
   - ceo
   - agno
@@ -12,6 +13,7 @@ tags:
   - airbnb
   - facebook
 ---
+
 
 # Ashpreet Bedi
 

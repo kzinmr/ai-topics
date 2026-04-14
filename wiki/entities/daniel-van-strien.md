@@ -1,11 +1,18 @@
 ---
-title: "Daniel van Strien"
+title: Daniel van Strien
 handle: "@vanstriendaniel"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, datasets, huggingface, digital-humanities, synthetic-data, open-source]
-aliases: ["@vanstriendaniel", "vanstriendaniel", "davanstrien"]
+tags:
+  - person
+  - ai
+  - datasets
+  - huggingface
+  - digital-humanities
+  - synthetic-data
+  - open-source
 ---
+
 
 # Daniel van Strien (@vanstriendaniel)
 

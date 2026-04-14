@@ -1,3 +1,10 @@
+---
+title: Chris of Entropic Thoughts
+status: active
+tags:
+- person
+---
+
 # Chris of Entropic Thoughts
 
 **URL:** https://entropicthoughts.com (formerly two-wrongs.com)

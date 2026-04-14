@@ -1,9 +1,20 @@
 ---
-title: "Xe Iaso"
+title: Xe Iaso
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, infrastructure-engineering, nix, web-security, free-software]
-aliases: ["xeiaso.net", "Cadey", "Xe", "Anubis"]
+tags:
+- person
+- blogger
+- hn-popular
+- infrastructure-engineering
+- nix
+- web-security
+- free-software
+aliases:
+- xeiaso.net
+- Cadey
+- Xe
+- Anubis
 ---
 
 # Xe Iaso

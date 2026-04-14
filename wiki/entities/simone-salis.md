@@ -1,3 +1,10 @@
+---
+title: Simone Salis
+status: active
+tags: [person]
+---
+
+
 # Simone Salis
 
 **URL:** https://simone.org

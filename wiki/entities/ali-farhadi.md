@@ -1,23 +1,32 @@
 ---
-title: "Ali Farhadi"
+title: Ali Farhadi
 entity_type: person
 status: L3
 created: 2026-04-13
 updated: 2026-04-14
-tags: [computer-vision, open-source-ai, large-language-models, ai-research-leader, object-detection, multimodal-ai, embodied-ai, ai-safety]
-aliases: ["Ali Farhadi", "farhadi"]
 sources:
-  - "https://homes.cs.washington.edu/~ali/"
-  - "https://www.fastcompany.com/91283517/ai2s-ali-farhadi-advocates-for-open-source-ai-models-heres-why"
-  - "https://www.fastcompany.com/91225845/ai2-ceo-ali-farhadi-believes-open-source-is-the-future"
-  - "https://www.geekwire.com/2026/allen-institute-for-ai-ceo-ali-farhadi-steps-down-as-nonprofit-navigates-shifting-ai-landscape/"
-  - "https://www.geekwire.com/2026/microsoft-hires-former-ai2-ceo-ali-farhadi-and-key-researchers-for-suleymans-ai-team/"
-  - "https://thelettertwo.com/2025/04/09/ai2s-olmotrace-tool-reveals-the-origins-of-ai-model-training-data/"
-  - "https://madrona.com/ia-summit-2023-keynote-open-source-models-ali-farhadi"
-  - "https://building.theatlantic.com/open-research-is-the-key-to-unlocking-safer-ai-15d1bac9085d"
-  - "https://allenai.org/blog/olmotrace"
-  - "https://raivn.cs.washington.edu/"
+  - https://homes.cs.washington.edu/~ali/
+  - https://www.fastcompany.com/91283517/ai2s-ali-farhadi-advocates-for-open-source-ai-models-heres-why
+  - https://www.fastcompany.com/91225845/ai2-ceo-ali-farhadi-believes-open-source-is-the-future
+  - https://www.geekwire.com/2026/allen-institute-for-ai-ceo-ali-farhadi-steps-down-as-nonprofit-navigates-shifting-ai-landscape/
+  - https://www.geekwire.com/2026/microsoft-hires-former-ai2-ceo-ali-farhadi-and-key-researchers-for-suleymans-ai-team/
+  - https://thelettertwo.com/2025/04/09/ai2s-olmotrace-tool-reveals-the-origins-of-ai-model-training-data/
+  - https://madrona.com/ia-summit-2023-keynote-open-source-models-ali-farhadi
+  - https://building.theatlantic.com/open-research-is-the-key-to-unlocking-safer-ai-15d1bac9085d
+  - https://allenai.org/blog/olmotrace
+  - https://raivn.cs.washington.edu/
+tags:
+  - person
+  - computer-vision
+  - open-source-ai
+  - large-language-models
+  - ai-research-leader
+  - object-detection
+  - multimodal-ai
+  - embodied-ai
+  - ai-safety
 ---
+
 
 # Ali Farhadi
 

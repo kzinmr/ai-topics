@@ -1,11 +1,16 @@
 ---
-title: "Jack Morris"
+title: Jack Morris
 handle: "@jxmnop"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ml-research, embeddings, information-theory, nlp]
-aliases: ["jxmo", "jxmnop", "Jack Morris"]
+tags:
+  - person
+  - ml-research
+  - embeddings
+  - information-theory
+  - nlp
 ---
+
 
 # Jack Morris (@jxmnop)
 

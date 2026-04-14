@@ -1,9 +1,16 @@
 ---
-title: "GLM-5V-Turbo"
+title: GLM-5V-Turbo
 created: 2026-04-10
 updated: 2026-04-10
-tags: [entity, model, multimodal, design-to-code]
-related: [zhipu-ai, chinese-ai, design-tools]
+tags:
+- entity
+- model
+- multimodal
+- design-to-code
+related:
+- zhipu-ai
+- chinese-ai
+- design-tools
 ---
 
 # GLM-5V-Turbo

@@ -1,11 +1,17 @@
 ---
-title: "Ryan Carson"
+title: Ryan Carson
 handle: "@ryancarson"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, x-account, education, tech-education, ai, entrepreneurship]
-aliases: ["ryancarson", "treehouse", "ryan carson"]
+tags:
+  - person
+  - x-account
+  - education
+  - tech-education
+  - ai
+  - entrepreneurship
 ---
+
 
 # Ryan Carson (@ryancarson)
 

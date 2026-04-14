@@ -1,10 +1,19 @@
 ---
-title: "Doug Turnbull"
+title: Doug Turnbull
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, developer, ai, search, information-retrieval, relevance, open-source, author, consultant]
-aliases: ["@softwaredoug", "softwaredoug", "doug-turnbull"]
+tags:
+  - person
+  - developer
+  - ai
+  - search
+  - information-retrieval
+  - relevance
+  - open-source
+  - author
+  - consultant
 ---
+
 
 # Doug Turnbull
 

@@ -1,9 +1,19 @@
 ---
-title: "Hillel Wayne (Buttondown Newsletter)"
+title: Hillel Wayne (Buttondown Newsletter)
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, blogger, newsletter, formal-methods, tla+, software-engineering, empirical-research]
-aliases: ["buttondown.com/hillelwayne", "hillel-wayne-buttondown", "computer-things"]
+tags:
+- person
+- blogger
+- newsletter
+- formal-methods
+- tla+
+- software-engineering
+- empirical-research
+aliases:
+- buttondown.com/hillelwayne
+- hillel-wayne-buttondown
+- computer-things
 ---
 
 # Hillel Wayne's Buttondown Newsletter

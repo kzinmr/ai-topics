@@ -2,12 +2,12 @@
 name: abacaj
 updated: 2026-04-10
 tags:
-  - ml-engineer
-  - open-source
-  - llm
-  - post-training
-  - ai2
-  - olmo
+- ml-engineer
+- open-source
+- llm
+- post-training
+- ai2
+- olmo
 ---
 
 # abacaj

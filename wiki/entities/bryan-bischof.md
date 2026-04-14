@@ -1,11 +1,18 @@
 ---
-title: "Bryan Bischof"
+title: Bryan Bischof
 handle: "@BEBischof"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, x-account, ai, data-science, ml-engineering, venture-capital, analytics]
-aliases: ["BEBischof", "bryan bischof", "brian bischof hex"]
+tags:
+  - person
+  - x-account
+  - ai
+  - data-science
+  - ml-engineering
+  - venture-capital
+  - analytics
 ---
+
 
 # Bryan Bischof (@BEBischof)
 

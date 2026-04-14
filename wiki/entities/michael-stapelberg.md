@@ -1,10 +1,18 @@
 ---
-title: "Michael Stapelberg"
+title: Michael Stapelberg
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, debian, nixos, linux, infrastructure, i3-wm]
-aliases: ["michael.stapelberg.ch", "Stapelberg", "i3 window manager"]
+tags:
+  - person
+  - blogger
+  - hn-popular
+  - debian
+  - nixos
+  - linux
+  - infrastructure
+  - i3-wm
 ---
+
 
 # Michael Stapelberg
 

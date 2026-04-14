@@ -1,3 +1,10 @@
+---
+title: Grant Slatton
+status: active
+tags:
+- person
+---
+
 # Grant Slatton
 
 **Blog:** [grantslatton.com](https://grantslatton.com)  

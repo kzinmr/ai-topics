@@ -1,9 +1,14 @@
 ---
-title: "Claude Mythos"
+title: Claude Mythos
 created: 2026-04-09
 updated: 2026-04-13
-tags: [model, llm, ai-safety, emerging]
-aliases: ["Mythos"]
+tags:
+- model
+- llm
+- ai-safety
+- emerging
+aliases:
+- Mythos
 ---
 
 # Claude Mythos

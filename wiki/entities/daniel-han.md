@@ -1,11 +1,18 @@
 ---
-title: "Daniel Han"
+title: Daniel Han
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai-fine-tuning, reinforcement-learning, open-source-models, ml-systems, cuda-kernels, unsloth]
-aliases: ["@danielhanchen", "danielhanchen", "Daniel Han"]
-source: x-account
+source: "x-account"
+tags:
+  - person
+  - ai-fine-tuning
+  - reinforcement-learning
+  - open-source-models
+  - ml-systems
+  - cuda-kernels
+  - unsloth
 ---
+
 
 # Daniel Han (@danielhanchen)
 

@@ -1,11 +1,19 @@
 ---
-title: "Mario Zechner"
+title: Mario Zechner
 handle: "@badlogicgames"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, x-account, game-development, ai, local-llm, open-source, systems-programming, kotlin]
-aliases: ["badlogicgames", "mario zechner libgdx", "badlogic", "pi-coding-agent"]
+tags:
+  - person
+  - x-account
+  - game-development
+  - ai
+  - local-llm
+  - open-source
+  - systems-programming
+  - kotlin
 ---
+
 
 # Mario Zechner (@badlogicgames)
 

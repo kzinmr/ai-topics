@@ -1,3 +1,10 @@
+---
+title: Raymond Chen
+status: active
+tags:
+- person
+---
+
 # Raymond Chen
 
 **URL:** https://devblogs.microsoft.com/oldnewthing/  

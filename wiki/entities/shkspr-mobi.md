@@ -1,3 +1,10 @@
+---
+title: Terence Eden
+status: active
+tags:
+- person
+---
+
 # Terence Eden
 
 ## Overview

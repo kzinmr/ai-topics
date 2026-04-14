@@ -1,9 +1,18 @@
 ---
-title: "Susam Pal"
+title: Susam Pal
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, blogger, mathematician, programmer, puzzles, common-lisp, free-software, indie-web]
-aliases: ["susam.net"]
+tags:
+- person
+- blogger
+- mathematician
+- programmer
+- puzzles
+- common-lisp
+- free-software
+- indie-web
+aliases:
+- susam.net
 ---
 
 # Susam Pal

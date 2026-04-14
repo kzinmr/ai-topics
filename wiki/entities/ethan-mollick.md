@@ -1,3 +1,8 @@
+---
+tags: [person]
+---
+
+
 # Ethan Mollick
 
 **URL:** https://www.oneusefulthing.org

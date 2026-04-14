@@ -1,3 +1,10 @@
+---
+title: Bogdan Ionescu (BogdanTheGeek)
+status: active
+tags:
+- person
+---
+
 # Bogdan Ionescu (BogdanTheGeek)
 
 **URL:** https://bogdanthegeek.github.io/blog/

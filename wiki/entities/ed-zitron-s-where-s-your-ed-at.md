@@ -1,9 +1,18 @@
 ---
-title: "Ed Zitron"
+title: Ed Zitron
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, tech-criticism, ai-skeptic, marketing, venture-capital]
-aliases: ["wheresyoured.at", "ed-zitron", "where's-your-ed-at"]
+tags:
+- person
+- blogger
+- tech-criticism
+- ai-skeptic
+- marketing
+- venture-capital
+aliases:
+- wheresyoured.at
+- ed-zitron
+- where's-your-ed-at
 ---
 
 # Ed Zitron

@@ -1,11 +1,16 @@
 ---
-title: "Chip Huyen"
+title: Chip Huyen
 handle: "@chipro"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ml-systems, ai-engineering, production-ml, education]
-aliases: ["chipro", "Chip Huyen", "huyenchip"]
+tags:
+  - person
+  - ml-systems
+  - ai-engineering
+  - production-ml
+  - education
 ---
+
 
 # Chip Huyen (@chipro)
 

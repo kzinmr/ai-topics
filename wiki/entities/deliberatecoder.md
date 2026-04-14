@@ -1,3 +1,8 @@
+---
+tags: [person]
+---
+
+
 # Steve Shogren (Deliberate Software)
 
 **URL:** https://deliberate-software.com  

@@ -1,3 +1,10 @@
+---
+title: Eli Bendersky
+status: active
+tags:
+- person
+---
+
 # Eli Bendersky
 
 **URL:** https://eli.thegreenplace.net

@@ -1,11 +1,18 @@
 ---
-title: "Jonathan Whitaker"
+title: Jonathan Whitaker
 handle: "@johnowhitaker"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, education, generative-models, fastai, diffusion, open-source]
-aliases: ["@johnowhitaker", "johnowhitaker", "Johno Whitaker", "Jonathan Whitaker Answer.AI"]
+tags:
+  - person
+  - ai
+  - education
+  - generative-models
+  - fastai
+  - diffusion
+  - open-source
 ---
+
 
 # Jonathan Whitaker (@johnowhitaker)
 

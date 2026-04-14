@@ -1,16 +1,21 @@
 ---
-title: "Peter Steinberger"
+title: Peter Steinberger
 entity_type: person
 status: L3
 created: 2026-04-13
 updated: 2026-04-13
-tags: [ai-agents, agentic-engineering, openclaw, developer-tools, ios, mcp, vibe-coding]
-aliases: ["steipete", "Peter Steinberger OpenClaw"]
-sources:
-  - "https://steipete.me/"
-  - "https://www.thewantrepreneurshow.com/blog/peter-steinberger-built-a-100m-dev-tool-burned-out-then-came-back-to-code-with-ai-agents-and-never-looked-back/"
-  - "https://github.com/steipete"
+sources: [https://steipete.me/, https://www.thewantrepreneurshow.com/blog/peter-steinberger-built-a-100m-dev-tool-burned-out-then-came-back-to-code-with-ai-agents-and-never-looked-back/, https://github.com/steipete]
+tags:
+  - person
+  - ai-agents
+  - agentic-engineering
+  - openclaw
+  - developer-tools
+  - ios
+  - mcp
+  - vibe-coding
 ---
+
 
 # Peter Steinberger
 

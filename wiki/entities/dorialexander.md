@@ -2,10 +2,19 @@
 title: "Pierre-Carl Langlais"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai-researcher, open-source, llm, digital-humanities, wikipedia, french-tech, pleias, small-language-models]
-aliases: ["Alexander Doria", "@dorialexander", "Dorialexander", "Pclanglais"]
 source: pleias.fr
+tags:
+  - person
+  - ai-researcher
+  - open-source
+  - llm
+  - digital-humanities
+  - wikipedia
+  - french-tech
+  - pleias
+  - small-language-models
 ---
+
 
 # Pierre-Carl Langlais (Alexander Doria)
 

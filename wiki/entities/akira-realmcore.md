@@ -1,13 +1,19 @@
 ---
 title: "Akira (@realmcore_) / Random Labs"
 handle: "@realmcore_"
-name: "Akira (Random Labs)"
+name: Akira (Random Labs)
 created: 2026-04-13
 updated: 2026-04-13
-tags: [person, coding-agents, swarm-orchestration, thread-weaving, rlm, slate]
-aliases: ["Random Labs", "Akira (RL)", "realmcore"]
 status: complete
+tags:
+  - person
+  - coding-agents
+  - swarm-orchestration
+  - thread-weaving
+  - rlm
+  - slate
 ---
+
 
 # Akira (@realmcore_) — Random Labs / Slate
 

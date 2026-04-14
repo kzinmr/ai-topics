@@ -1,3 +1,8 @@
+---
+tags: [person]
+---
+
+
 # Max Bernstein
 
 **URL:** https://bernsteinbear.com

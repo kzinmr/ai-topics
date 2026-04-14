@@ -1,3 +1,10 @@
+---
+title: Miguel Grinberg
+status: active
+tags: [person]
+---
+
+
 # Miguel Grinberg
 
 ## Overview

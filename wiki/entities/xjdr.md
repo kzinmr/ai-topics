@@ -1,3 +1,8 @@
+---
+tags: [person]
+---
+
+
 # xjdr (Jeff Rose)
 
 **URL:** https://xjdr.github.io/

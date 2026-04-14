@@ -1,9 +1,19 @@
 ---
-title: "Mistral Voxtral TTS"
+title: Mistral Voxtral TTS
 created: 2026-04-10
 updated: 2026-04-10
-tags: [entity, model, mistral, tts, audio, speech]
-related: [mistral, text-to-speech, audio-models, flow-matching]
+tags:
+- entity
+- model
+- mistral
+- tts
+- audio
+- speech
+related:
+- mistral
+- text-to-speech
+- audio-models
+- flow-matching
 ---
 
 # Mistral Voxtral TTS

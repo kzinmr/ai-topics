@@ -1,9 +1,18 @@
 ---
-title: "Cory Doctorow"
+title: Cory Doctorow
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, tech-policy, copyright, enshittification]
-aliases: ["pluralistic.net", "cory doctorow", "doctorow"]
+tags:
+- person
+- blogger
+- hn-popular
+- tech-policy
+- copyright
+- enshittification
+aliases:
+- pluralistic.net
+- cory doctorow
+- doctorow
 ---
 
 # Cory Doctorow

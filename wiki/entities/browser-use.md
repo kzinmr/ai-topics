@@ -1,21 +1,21 @@
 ---
-title: "browser-use"
+title: browser-use
 aliases:
-  - browseruse
-  - browser-use-oss
+- browseruse
+- browser-use-oss
 created: 2026-04-13
 updated: 2026-04-13
 tags:
-  - entity
-  - technology
-  - browser-agent
-  - open-source
-  - dom-based
+- entity
+- technology
+- browser-agent
+- open-source
+- dom-based
 status: active
 sources:
-  - "https://github.com/browser-use/browser-use"
-  - "https://browser-use.com"
-  - "https://www.fastaijobs.com/companies/browser-use"
+- https://github.com/browser-use/browser-use
+- https://browser-use.com
+- https://www.fastaijobs.com/companies/browser-use
 ---
 
 # browser-use

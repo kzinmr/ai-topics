@@ -1,5 +1,5 @@
 ---
-title: "Andrej Karpathy"
+title: Andrej Karpathy
 handle: "@karpathy"
 url: "https://karpathy.ai/"
 twitter: "https://x.com/karpathy"
@@ -8,6 +8,7 @@ huggingface: "https://huggingface.co/karpathy"
 blog: "https://karpathy.bearblog.dev/"
 status: active
 tags:
+  - person
   - ai
   - deep-learning
   - education
@@ -17,6 +18,7 @@ tags:
   - self-driving
   - llms
 ---
+
 
 # Andrej Karpathy (@karpathy)
 

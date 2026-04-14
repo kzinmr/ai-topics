@@ -1,9 +1,17 @@
 ---
-title: "Mitchell Hashimoto"
+title: Mitchell Hashimoto
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, developer-tools, ai-agents, harness-engineering]
-aliases: ["mitchellh", "mitchellh.com"]
+tags:
+- person
+- blogger
+- hn-popular
+- developer-tools
+- ai-agents
+- harness-engineering
+aliases:
+- mitchellh
+- mitchellh.com
 ---
 
 # Mitchell Hashimoto

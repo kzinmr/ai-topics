@@ -1,9 +1,14 @@
 ---
-title: "Anthropic"
+title: Anthropic
 created: 2026-04-09
 updated: 2026-04-09
-tags: [company, ai-safety, llm, active]
-aliases: ["Anthropic PBC"]
+tags:
+- company
+- ai-safety
+- llm
+- active
+aliases:
+- Anthropic PBC
 ---
 
 # Anthropic

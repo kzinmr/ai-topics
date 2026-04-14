@@ -1,3 +1,10 @@
+---
+title: Bradford Morgan White
+status: active
+tags: [person]
+---
+
+
 # Bradford Morgan White
 
 **URL:** https://abortretry.fail (Substack), https://bradford.la (technology blog)

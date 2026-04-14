@@ -1,11 +1,16 @@
 ---
-title: "Lilian Weng"
+title: Lilian Weng
 handle: "@lilianweng"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, llm-research, ai-safety, agents, openai]
-aliases: ["lilianweng", "Lilian Weng", "Lil'Log"]
+tags:
+  - person
+  - llm-research
+  - ai-safety
+  - agents
+  - openai
 ---
+
 
 # Lilian Weng (@lilianweng)
 

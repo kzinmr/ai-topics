@@ -1,9 +1,18 @@
 ---
-title: "Paul Graham"
+title: Paul Graham
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, startups, venture-capital, lisp, essayist]
-aliases: ["paulgraham.com", "pg"]
+tags:
+- person
+- blogger
+- hn-popular
+- startups
+- venture-capital
+- lisp
+- essayist
+aliases:
+- paulgraham.com
+- pg
 ---
 
 # Paul Graham

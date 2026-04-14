@@ -1,19 +1,7 @@
 ---
-entity: armin-ronacher
-type: person
+entity: "armin-ronacher"
 status: complete
-aliases:
-  - mitsuhiko
-  - Armin Ronacher
-  - Lucumr
-tags:
-  - software-engineer
-  - open-source-developer
-  - flask-creator
-  - python-developer
-  - rust-developer
-  - entrepreneur
-  - blogger
+aliases: [mitsuhiko, Armin Ronacher, Lucumr]
 related:
   - flask
   - jinja2
@@ -24,7 +12,17 @@ related:
   - rye
   - minijinja
   - insta
+tags:
+  - person
+  - software-engineer
+  - open-source-developer
+  - flask-creator
+  - python-developer
+  - rust-developer
+  - entrepreneur
+  - blogger
 ---
+
 
 # Armin Ronacher
 

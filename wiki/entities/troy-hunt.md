@@ -1,3 +1,8 @@
+---
+tags: [person]
+---
+
+
 # Troy Hunt
 
 **URL:** https://www.troyhunt.com

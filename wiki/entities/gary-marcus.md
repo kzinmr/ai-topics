@@ -1,15 +1,16 @@
 ---
-title: "Gary Marcus"
+title: Gary Marcus
 created: 2026-04-13
 updated: 2026-04-13
-tags: [person, cognitive-science, ai-skeptic, neuro-symbolic-ai, robust-ai]
-aliases: ["marcus"]
-depth_tracking:
-  L1_basic_profile: true
-  L2_timeline_works: true
-  L3_thought_analysis: true
-  L4_ongoing_monitoring: true
+depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
+tags:
+  - person
+  - cognitive-science
+  - ai-skeptic
+  - neuro-symbolic-ai
+  - robust-ai
 ---
+
 
 # Gary Marcus
 

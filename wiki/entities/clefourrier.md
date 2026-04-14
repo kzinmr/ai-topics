@@ -1,24 +1,33 @@
 ---
-title: "Clémentine Fourrier"
+title: Clémentine Fourrier
 handle: "@clefourrier"
 created: 2026-04-10
 updated: 2026-04-13
-tags: [person, ai, evaluation, llm, huggingface, benchmarks, lighteval, gaia]
-aliases: ["clefourrier", "Clementine Fourrier", "Clem Fourrier"]
 related:
-  - "[[open-llm-leaderboard]]"
-  - "[[huggingface]]"
-  - "[[gaia]]"
-  - "[[yourbench]]"
-  - "[[lighteval]]"
-  - "[[llm-evaluation]]"
-  - "[[bloom]]"
-  - "[[zephyr]]"
-  - "[[smollm2]]"
+  - [[open-llm-leaderboard]]
+  - [[huggingface]]
+  - [[gaia]]
+  - [[yourbench]]
+  - [[lighteval]]
+  - [[llm-evaluation]]
+  - [[bloom]]
+  - [[zephyr]]
+  - [[smollm2]]
 depth: L3
 quote_count: 11
 status: complete
+tags:
+  - person
+  - ai
+  - evaluation
+  - llm
+  - huggingface
+  - benchmarks
+  - lighteval
+  - gaia
 ---
+
+
 # Clémentine Fourrier (@clefourrier)
 
 **URL:** https://clefourrier.github.io/  

@@ -1,3 +1,10 @@
+---
+title: Brian Potter (Construction Physics)
+status: active
+tags:
+- person
+---
+
 # Brian Potter (Construction Physics)
 
 **URL:** https://constructionphysics.substack.com

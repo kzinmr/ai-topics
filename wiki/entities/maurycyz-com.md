@@ -1,9 +1,19 @@
 ---
-title: "Maurycy Cyz"
+title: Maurycy Cyz
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, c-programming, electronics, web-minimalism, gopher, physics-simulation]
-aliases: ["maurycyz", "maurycyz.com"]
+tags:
+- person
+- blogger
+- hn-popular
+- c-programming
+- electronics
+- web-minimalism
+- gopher
+- physics-simulation
+aliases:
+- maurycyz
+- maurycyz.com
 ---
 
 # Maurycy Cyz

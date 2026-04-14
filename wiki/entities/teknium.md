@@ -1,11 +1,12 @@
 ---
-title: "Ryan (Teknium)"
+title: Ryan (Teknium)
 handle: "@teknium1"
 url: "https://teknium.io/"
 twitter: "https://x.com/Teknium1"
 status: active
 depth: L3
 tags:
+  - person
   - nous-research
   - open-source
   - llm
@@ -19,6 +20,7 @@ tags:
   - harness-engineering
   - decentralized-ai
 ---
+
 
 # Ryan (Teknium)
 

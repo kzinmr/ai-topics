@@ -1,9 +1,19 @@
 ---
-title: "Evan Hahn"
+title: Evan Hahn
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, blogger, open-source-maintainer, web-security, node-js, javascript, helmet-js, ghost]
-aliases: ["evanhahn.com", "evan-hahn"]
+tags:
+- person
+- blogger
+- open-source-maintainer
+- web-security
+- node-js
+- javascript
+- helmet-js
+- ghost
+aliases:
+- evanhahn.com
+- evan-hahn
 ---
 
 # Evan Hahn

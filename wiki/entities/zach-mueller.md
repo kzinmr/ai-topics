@@ -1,11 +1,19 @@
 ---
-title: "Zach Mueller"
+title: Zach Mueller
 handle: "@TheZachMueller"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, huggingface, accelerate, distributed-training, pytorch, model-optimization, open-source]
-aliases: ["muellerzr", "Zachary Mueller", "Zach Mueller"]
+tags:
+  - person
+  - ai
+  - huggingface
+  - accelerate
+  - distributed-training
+  - pytorch
+  - model-optimization
+  - open-source
 ---
+
 
 # Zach Mueller (@TheZachMueller)
 

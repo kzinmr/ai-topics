@@ -1,11 +1,21 @@
 ---
-title: "Philipp Schmid"
+title: Philipp Schmid
 handle: "@_philschmid"
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, ai, huggingface, google-deepmind, deployment, llm-ops, fine-tuning, agent-harnesses, mcp, gemini]
-aliases: ["@_philschmid", "_philschmid", "philschmid", "Philipp Schmid Hugging Face", "Philipp Schmid DeepMind"]
+tags:
+  - person
+  - ai
+  - huggingface
+  - google-deepmind
+  - deployment
+  - llm-ops
+  - fine-tuning
+  - agent-harnesses
+  - mcp
+  - gemini
 ---
+
 
 # Philipp Schmid (@_philschmid)
 

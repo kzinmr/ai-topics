@@ -6,41 +6,40 @@ created: 2026-04-13
 depth_tracking:
   target: 13KB+
   last_updated: 2026-04-13
+tags:
+  - person
 related_people:
   - Karthik Narasimhan (PhD advisor, Princeton)
-  - Omar Khattab (Stanford/MIT, ColBERT, RLM co-author with Zhang & Kraska)
-  - Tim Kraska (MIT CSAIL, RLM co-author with Zhang & Khattab)
-  - Alex Zhang (RLM, overlapping scaffold/environment ideas)
-  - Noah Shinn (Reflexion co-author, now at Sierra)
-  - Theodore Sumers (CoALA co-author)
-  - John Yang (SWE-bench, SWE-agent co-author)
-  - Carlos E. Jimenez (SWE-bench co-author)
-  - Dian Yu (Tree of Thoughts co-author)
-  - Yuan Cao (ReAct co-author)
-  - Howard Chen (WebShop co-author)
+  - Omar Khattab (Stanford/MIT, ColBERT, RLM)
+  - Tim Kraska (MIT CSAIL, RLM)
+  - Alex Zhang (RLM)
+  - Noah Shinn (Reflexion, Sierra)
+  - Theodore Sumers (CoALA)
+  - John Yang (SWE-bench, SWE-agent)
+  - Carlos E. Jimenez (SWE-bench)
+  - Dian Yu (Tree of Thoughts)
+  - Yuan Cao (ReAct)
+  - Howard Chen (WebShop)
 related_concepts:
-  - ReAct (Reasoning + Acting)
-  - Tree of Thoughts (ToT)
-  - Reflexion (Verbal RL)
-  - CoALA (Cognitive Architectures for Language Agents)
-  - SWE-bench / SWE-agent
-  - tau-bench (Tool-Agent-User interaction)
+  - ReAct
+  - Tree of Thoughts
+  - Reflexion
+  - CoALA
+  - SWE-bench
+  - SWE-agent
+  - tau-bench
   - WebShop
-  - Computer-Using Agent (CUA)
-  - "The Second Half" (evaluation > training)
-  - Agent-Computer Interfaces (ACI)
-  - Scaffold vs RL debate
-  - RLM (Recursive Language Models)
+  - Computer-Using Agent
+  - Agent-Computer Interfaces
+  - RLM
 related_papers:
-  - ReAct: Synergizing Reasoning and Acting in Language Models (ICLR 2023, Oral, top 5%)
-  - Tree of Thoughts: Deliberate Problem Solving with LLMs (NeurIPS 2023, Oral)
-  - Reflexion: Language Agents with Verbal RL (NeurIPS 2023)
-  - CoALA: Cognitive Architectures for Language Agents (TMLR 2024)
-  - SWE-bench (ICLR 2024, Oral)
-  - SWE-agent (NeurIPS 2024)
-  - tau-bench (ICLR 2025)
-  - WebShop (NeurIPS 2022)
-  - PhD Thesis: Language Agents: From Next-Token Prediction to Digital Automation
+  - "ReAct: Synergizing Reasoning and Acting in Language Models (ICLR 2023, Oral)"
+  - "Tree of Thoughts: Deliberate Problem Solving with LLMs (NeurIPS 2023, Oral)"
+  - "Reflexion: Language Agents with Verbal RL (NeurIPS 2023)"
+  - "CoALA: Cognitive Architectures for Language Agents (TMLR 2024)"
+  - "SWE-bench: Can Language Models Resolve Real-World GitHub Issues? (ICLR 2024, Oral)"
+  - "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering (NeurIPS 2024, Oral)"
+  - "Recursive Language Models (RLM)"
 ---
 
 # Shunyu Yao (姚顺雨)

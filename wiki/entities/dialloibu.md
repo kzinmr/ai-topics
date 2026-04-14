@@ -1,10 +1,16 @@
 ---
-title: "Diallo Ibrahima"
+title: Diallo Ibrahima
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, programmer, writer, entrepreneur]
-aliases: ["idiallo.com", "ibrahimdiallo.com", "dialloibu"]
+tags:
+  - person
+  - blogger
+  - hn-popular
+  - programmer
+  - writer
+  - entrepreneur
 ---
+
 
 # Ibrahim Diallo
 

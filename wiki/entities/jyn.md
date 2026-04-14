@@ -1,10 +1,18 @@
 ---
-title: "Jynn Nelson (jyn)"
+title: Jynn Nelson (jyn)
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, rust, compiler, build-systems, developer-tools, documentation]
-aliases: ["jyn514", "jyn.dev"]
+tags:
+  - person
+  - blogger
+  - hn-popular
+  - rust
+  - compiler
+  - build-systems
+  - developer-tools
+  - documentation
 ---
+
 
 # Jynn Nelson (jyn)
 

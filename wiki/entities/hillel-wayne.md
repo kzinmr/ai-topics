@@ -1,10 +1,17 @@
 ---
-title: "Hillel Wayne"
+title: Hillel Wayne
 created: 2026-04-10
 updated: 2026-04-10
-tags: [person, blogger, formal-methods, tla+, software-engineering, empirical-research, testing]
-aliases: ["hillelwayne", "hillelwayne.com"]
+tags:
+  - person
+  - blogger
+  - formal-methods
+  - tla+
+  - software-engineering
+  - empirical-research
+  - testing
 ---
+
 
 # Hillel Wayne
 

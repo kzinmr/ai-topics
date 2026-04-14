@@ -1,9 +1,18 @@
 ---
-title: "Giles Thomas"
+title: Giles Thomas
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, hn-popular, ai, llm-training, python, systems, startup]
-aliases: ["gpjt", "gilesthomas.com"]
+tags:
+- blogger
+- hn-popular
+- ai
+- llm-training
+- python
+- systems
+- startup
+aliases:
+- gpjt
+- gilesthomas.com
 ---
 
 # Giles Thomas

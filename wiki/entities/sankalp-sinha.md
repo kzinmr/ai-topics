@@ -1,10 +1,11 @@
 ---
-title: "Sankalp Sinha (dejavucoder)"
+title: Sankalp Sinha (dejavucoder)
 handle: "@dejavucoder"
 url: "http://sankalp.bearblog.dev/"
 twitter: "https://x.com/dejavucoder"
 status: active
 tags:
+  - person
   - ai-engineering
   - coding-agents
   - llm-evals
@@ -12,6 +13,7 @@ tags:
   - claude-code
   - open-source
 ---
+
 
 # Sankalp Sinha (dejavucoder)
 

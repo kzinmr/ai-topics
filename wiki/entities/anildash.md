@@ -1,10 +1,16 @@
 ---
-title: "Anil Dash"
+title: Anil Dash
 created: 2026-04-09
 updated: 2026-04-10
-tags: [person, blogger, tech-commentary, ai-policy, web-culture, coding]
-aliases: ["anildash.com", "dashes.com"]
+tags:
+  - person
+  - blogger
+  - tech-commentary
+  - ai-policy
+  - web-culture
+  - coding
 ---
+
 
 # Anil Dash
 

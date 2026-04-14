@@ -1,3 +1,8 @@
+---
+tags: [person]
+---
+
+
 # Stefano Marinelli
 
 **Blog:** [it-notes.dragas.net](https://it-notes.dragas.net) — "Scattered IT Notes"  

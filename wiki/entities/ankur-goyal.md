@@ -1,7 +1,8 @@
 ---
-name: ankur-goyal
+name: "ankur-goyal"
 updated: 2026-04-10
 tags:
+  - person
   - ceo
   - braintrust
   - llm-evaluation
@@ -10,6 +11,7 @@ tags:
   - impira
   - ai-engineer
 ---
+
 
 # Ankur Goyal
 

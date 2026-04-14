@@ -1,3 +1,10 @@
+---
+title: Simon Willison (simonw)
+status: active
+tags: [person]
+---
+
+
 # Simon Willison (simonw)
 
 **URL:** https://simonwillison.net/

@@ -1,21 +1,29 @@
 ---
-title: "Shlok Khemani"
+title: Shlok Khemani
 entity_type: person
 status: L2
 created: 2026-04-13
 updated: 2026-04-13
-tags: [ai-agents, coding-agents, prompt-engineering, memory-systems, background-agents, multi-agent-orchestration, personal-ai]
-aliases: ["shloked", "shlok khemani"]
 sources:
-  - "https://www.shloked.com/"
-  - "https://www.shloked.com/writing/chatgpt-memory-bitter-lesson"
-  - "https://www.shloked.com/writing/claude-memory"
-  - "https://www.shloked.com/writing/claude-memory-tool"
-  - "https://www.shloked.com/writing/claude-code-source-patterns"
-  - "https://www.shloked.com/writing/openpoke"
-  - "https://www.shloked.com/writing/vajra"
-  - "https://github.com/shlokkhemani"
+  - https://www.shloked.com/
+  - https://www.shloked.com/writing/chatgpt-memory-bitter-lesson
+  - https://www.shloked.com/writing/claude-memory
+  - https://www.shloked.com/writing/claude-memory-tool
+  - https://www.shloked.com/writing/claude-code-source-patterns
+  - https://www.shloked.com/writing/openpoke
+  - https://www.shloked.com/writing/vajra
+  - https://github.com/shlokkhemani
+tags:
+  - person
+  - ai-agents
+  - coding-agents
+  - prompt-engineering
+  - memory-systems
+  - background-agents
+  - multi-agent-orchestration
+  - personal-ai
 ---
+
 
 # Shlok Khemani
 

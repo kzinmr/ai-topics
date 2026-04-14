@@ -1,201 +1,220 @@
 ---
-title: "Samuel Colvin"
+title: Samuel Colvin
 handle: "@samuelcolvin"
-created: 2026-04-10
-updated: 2026-04-10
-tags: [person, python, open-source, pydantic, type-safety, ai-agents]
-aliases: ["samuelcolvin", "Samuel Colvin", "Pydantic"]
+created: 2026-04-15
+updated: 2026-04-15
+aliases: [samuelcolvin, sam-colvin]
+tags:
+  - person
+  - python
+  - pydantic
+  - ai-agents
+  - type-safety
+  - observability
 ---
+
 
 # Samuel Colvin (@samuelcolvin)
 
 | | |
-|---|---|---|
+|---|---|
 | **X** | [@samuelcolvin](https://x.com/samuelcolvin) |
-| **Blog** | — |
+| **Blog** | [pydantic.dev/authors/samuel-colvin](https://pydantic.dev/authors/samuel-colvin) |
 | **GitHub** | [samuelcolvin](https://github.com/samuelcolvin) |
-| **Role** | Founder & CEO, Pydantic Inc. |
-| **Known for** | Creator of Pydantic (data validation), Pydantic AI (agent framework), type-safe AI tooling |
-| **Bio** | Samuel Colvin is a Python open-source developer best known as the creator of Pydantic, one of the most widely-used Python libraries for data validation and settings management. Pydantic has become the foundation of modern Python web frameworks (FastAPI, etc.). Colvin now leads Pydantic Inc., building Pydantic AI — a type-safe agent framework — and LogFire, an observability platform for AI applications. He brings rigorous engineering discipline to the chaotic AI agent landscape. |
+| **Role** | Founder & CEO at Pydantic |
+| **Known for** | Pydantic, Pydantic AI, Pydantic Logfire, Pydantic Monty |
+| **Bio** | Software developer, Cambridge MEng (Mechanics & Fluid Dynamics). Former Schlumberger engineer, TutorCruncher CTO. Founded Pydantic in 2022. 12K+ GitHub contributions. London/SF Bay Area. |
 
 ## Overview
 
-Samuel Colvin occupies a unique position in the AI engineering ecosystem. As the creator of Pydantic — a data validation library that has become foundational to the entire Python web stack — he understands deeply how developer tools gain adoption and sustain trust. Pydantic is used by tens of millions of developers and serves as the data validation backbone of FastAPI, one of Python's fastest-growing web frameworks. When Colvin decided to enter the AI agent space with Pydantic AI, the community took notice precisely because of this track record.
+Samuel ColvinはPythonエコシステムにおける重要な開発者であり、**Pydantic**（月間4600万ダウンロードのデータバリデーションライブラリ）の創設者です。2022年にPydantic社を設立し、Sequoia、Partech、Irregular Expressionsからの資金調達に成功しました。
 
-Colvin's approach to AI tooling is distinctly engineering-focused. While much of the AI agent landscape is characterized by rapid experimentation, hype, and shifting abstractions, Colvin brings the same principles that made Pydantic successful: type safety, clear APIs, minimal magic, and production reliability. His core thesis — that the biggest problem with AI agents isn't intelligence but *reliability* — reflects his background as a library author who has spent years ensuring that data flows correctly through complex systems.
+Colvinの哲学的な立場は「**AI: it's still Engineering.**」という言葉に集約されます。彼はLLMエージェントの開発においても、タイプセーフティ、明確なAPI設計、開発者体験を最優先するアプローチを取っています。
 
-In October 2025, Colvin appeared on the AI Engineering Podcast to explain Pydantic AI's design philosophy: bring "FastAPI-like ergonomics and production-grade engineering to agents, focusing on strong typing, minimal abstractions, and reliability, observability, and stability." This contrasts sharply with frameworks like LangChain, which Colvin has criticized for over-abstraction and lack of type safety.
+PydanticはFastAPI、OpenAI SDK、Google ADK、Anthropic SDK、LangChain、LlamaIndex、Transformersなど、主要なPythonフレームワークのバリデーション層として採用されています。Colvinはこの成功を「開発者体験を第一に考え、開発者が既に理解している技術（Pythonタイプヒント）を活用したため」と分析しています。
 
 ## Core Ideas
 
-### Type Safety as the Foundation of Reliable AI Agents
+### "AI is Still Engineering"
 
-Colvin's most consistent message is that type safety is not optional when building AI systems. In his interview with Latent Space and his Software Engineering Daily appearance, he emphasized:
+ColvinはAIエージェント開発においても従来のソフトウェアエンジニアリング原則を適用することを主張しています。
 
-> *"For LLM agents to be reliable, they need a clear understanding of the tools they can access and the data they can expect. This is where Pydantic's principles of type safety become crucial."*
+> "AI: it's still Engineering." — Samuel Colvin, LinkedIn Bio
 
-Pydantic AI leverages Python's type hints to:
-- Define clear interfaces and expected data structures for each tool
-- Ensure the LLM generates code that matches the expected schema
-- Enable static analysis with mypy, pyright, and other type checkers
-- Provide structured output validation through JSON Schema
+この哲学は以下の原則に基づいています：
+1. **タイプセーフティの重要性** — LLMの出力を構造化データに変換する際の信頼性
+2. **明確なAPI設計** — エージェントがアクセスできるツールとデータの明確な定義
+3. **開発者体験の最適化** — 使い始めやすく、強力なこともできる設計
+4. **観測性の確保** — エージェントの行動を追跡・デバッグできる仕組み
 
-This approach directly addresses one of the most common failure modes in agent systems: the LLM calling tools with incorrect arguments or returning data in unexpected formats.
+### Pydantic AI: FastAPIをGenAIに
 
-### FastAPI-Like Ergonomics for AI
+ColvinはPydantic AIを「FastAPIがWeb開発にもたらした革命的な体験を、GenAIアプリとエージェント開発にもたらすこと」を目指して設計しました。
 
-Colvin deliberately designed Pydantic AI to feel familiar to FastAPI developers:
+> "We built Pydantic AI with one simple aim: to bring that FastAPI feeling to GenAI app and agent development."
 
-> *"Pydantic AI aims to bring FastAPI-like ergonomics to the agent framework space, with a slim core, optional extras, and a strict quality bar for integrations."*
+Pydantic AIの特徴：
+- **モデル非依存** — OpenAI, Anthropic, Gemini, DeepSeek, Grok, Cohere, Mistral, Perplexityなどほぼ全てのモデルに対応
+- **タイプセーフ** — Pydanticのバリデーションシステムを継承
+- **観測性統合** — Pydantic Logfireとのシームレスな統合
+- **拡張性** — コンポーザブルなツール、フック、指示の組み合わせ
 
-Key design principles:
-- **Minimal abstractions** — Don't hide complexity; let developers see what's happening
-- **Slim core with optional extras** — Keep the base package lightweight; add functionality through optional modules
-- **Examples over bundled plugins** — Show developers how to integrate rather than forcing dependencies
-- **Strict quality bar** — Only include integrations that meet high standards for reliability
+### Durable AgentsとTemporal
 
-This philosophy stands in contrast to LangChain's approach of bundling many tools and abstractions, which Colvin has implicitly criticized as too heavy and prone to breakage as underlying APIs change.
+Colvinは「Durable Deep Research Agents」ワークショップで、長時間実行されるエージェントの信頼性について議論しました。
 
-### Structured Output and Validation Loops
+> "Simple LLM interactions work fine, but as you build more complex systems with longer-running workflows, failures become expensive."
 
-Colvin highlighted Pydantic AI's approach to structured outputs as a key differentiator:
+**Durable Execution（耐久性のある実行）**の概念：
+- ワークフローの状態を自動的に保存
+- 中断からの復旧が可能
+- Temporal、Deboss、Prefectなどのフレームワークをサポート
+- エージェントの失敗からの回復と観測性の確保
 
-- **Validation loops** — When an LLM returns data that doesn't match the expected schema, Pydantic AI can automatically retry with a validation error message
-- **JSON Schema integration** — Tool definitions are converted to JSON Schema for the LLM, ensuring consistent formatting
-- **Type-safe tool calling** — Tools are defined as Python functions with type annotations, making them self-documenting and verifiable
+### Deep Agents (Level 6)
 
-> *"By defining clear interfaces and expected data structures for each tool, developers can ensure that the LLM interacts with them correctly, reducing errors and improving the overall robustness of the agent."*
+Pydantic AIはエージェントの複雑さを6レベルで定義しており、**Deep Agents**が最高位です：
 
-### Code Generation vs. Tool Calling: The Security Trade-off
+1. Single agent workflows
+2. Agent delegation
+3. Programmatic agent hand-off
+4. Graph-based control flow
+5. **Deep Agents** — 自律性、計画、ファイル操作、委任、サンドボックス
 
-In his discussions about agent architecture, Colvin addressed the fundamental question of whether agents should generate and execute code (like OpenAI's Code Interpreter) or call predefined tools:
+### Monty: Minimal Secure Python Interpreter
 
-> *"Colvin emphasized that the choice of environment depends heavily on the specific use case, balancing factors like security, latency, language support, and ease of use."*
+Colvinは「you probably don't need a full sandbox」というタイトルで、LLMエージェント用の軽量セキュアPythonインタープリタである**Pydantic Monty**を発表しました。
 
-Pydantic AI's own solution, "Monty," aims to strike a balance between performance and security for running LLM-generated code without the overhead of heavier solutions like Docker. This reflects Colvin's pragmatic approach: use the right tool for the job, with clear trade-offs understood.
+Montyの特徴：
+- **0.004ms** という極めて高速な起動時間
+- 厳格なセキュリティコントロール（capabilities-based security）
+- ライブラリ制限付きのPython実行環境
+- Dockerなどの重いサンドボックスの代替
 
-### Open-Source Sustainability and Long-Term Maintenance
+> "Monty: the ultrafast Python interpreter by Agents for Agents" — Latent Space Podcast
 
-Colvin's experience building and maintaining Pydantic as an open-source project shapes his approach to AI tooling:
+### Open Source Fund
 
-> *"The key to progress in open source AI tooling is long-term maintainability, not short-term feature velocity."*
-
-Lessons he brings from Pydantic to Pydantic AI:
-- **Governance matters** — Clear decision-making processes prevent scope creep
-- **Scope control** — Don't try to solve every problem; focus on the core use cases
-- **Community feedback** — High responsiveness in GitHub issues builds trust
-- **Version discipline** — Avoid the "v1 pitfalls" of over-promising and under-delivering
-
-### Model Provider Agnosticism
-
-Colvin has emphasized the importance of avoiding vendor lock-in:
-
-> *"Avoiding third-party schemas and handling churn across model providers is critical for long-term viability."*
-
-Pydantic AI supports multiple model providers (OpenAI, Anthropic, Groq, Google, and others) through a unified interface, allowing developers to switch models without rewriting agent code. This addresses a common frustration in the current AI ecosystem where framework APIs change as model providers update their interfaces.
-
-### Observability and Production Reliability
-
-Colvin co-founded LogFire, an observability platform specifically designed for AI applications:
-
-> *"Observability and reliability — OpenTelemetry, LogFire, and production realities — are as important as model capability."*
-
-His view: you can't manage what you can't measure. AI agents running in production need the same observability standards as any other software system:
-- Structured logging
-- Distributed tracing
-- Performance monitoring
-- Error tracking
-- Cost tracking (token usage, API calls)
-
-### The Future of AI Coding Agents
-
-Colvin is optimistic about the potential of AI to transform software development but realistic about current limitations:
-
-> *"Colvin expressed optimism about the future of LLM agents, emphasizing the potential for these tools to revolutionize how we interact with software and automate complex tasks."*
-
-He sees the most immediate value in:
-- **Code review** — Automated analysis of pull requests for common issues
-- **Code generation** — Generating boilerplate, tests, and documentation
-- **Debugging** — Helping developers identify and fix issues faster
-- **Type checking** — Ensuring generated code meets type safety requirements
+2024年10月、ColvinはPydantic Open Source Fundを発表しました。これはオープンソースエコシステムへの投資とサポートを目的としています。
 
 ## Key Work
 
-### Pydantic
+### Pydantic (2017-現)
+Pythonのタイプヒントを使用したデータバリデーションライブラリ。月間4600万ダウンロード。FastAPI、OpenAI SDK、Anthropic SDK、LangChain、LlamaIndex、Transformersなど、主要なフレームワークのバリデーション層として採用。
 
-- **GitHub:** [pydantic/pydantic](https://github.com/pydantic/pydantic) — Over 20 million monthly downloads, used by FastAPI, LangChain, LlamaIndex, and thousands of other Python projects
-- **Purpose:** Data validation using Python type hints
-- **Impact:** Became the de facto standard for data validation in modern Python, transforming how developers handle API requests, configuration, and data models
-- **Version 2:** Complete Rust-based rewrite for dramatically improved performance
+### Pydantic AI (2024-現)
+Pythonエージェントフレームワーク。16,186+ GitHub Stars。モデル非依存、タイプセーフ、観測性統合。420人以上のコントリビューター。
 
-### Pydantic AI
+### Pydantic Logfire (2024-現)
+Python観測性プラットフォーム。ダッシュボード、MCP、Evals機能。2025年3月にEUリージョンで利用開始。
 
-- **GitHub:** [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai) — A type-safe agent framework for Python
-- **Purpose:** Building reliable, production-grade AI agents with strong typing, structured outputs, and tool calling
-- **Key features:**
-  - Type-safe tool definitions using Python type hints
-  - Structured output validation with automatic retry loops
-  - Support for multiple model providers
-  - Streaming responses and async tool calling
-  - Integration with LogFire for observability
-  - Comprehensive evals framework
+### Pydantic Monty (2026)
+LLMエージェント用の超高速セキュアPythonインタープリタ。0.004ms起動。capabilities-based security。
 
-### LogFire
+### Pydantic AI Evals (2025)
+AIモデルのオープンソース評価ツール。Pydantic Logfireでの可視化統合。
 
-- **Purpose:** Observability platform for AI applications
-- **Features:** Structured logging, distributed tracing, cost tracking, error monitoring
-- **Integration:** Works with Pydantic AI and any Python application via OpenTelemetry
+### Pydantic AI Gateway (2025)
+2026年3月にLogfireへ統合。エージェントのルーティングと管理。
 
-### Monty
+### TutorCruncher (2013-現)
+教育プラットフォーム。ColvinはCTO（2013-2017）、Director（2020-現）として在籍。
 
-- **Purpose:** Code execution environment for AI agents
-- **Goal:** Balance performance and security for running LLM-generated code
-- **Position:** Alternative to heavy solutions like Docker, designed for agent use cases
-
-### Open-Source Contributions
-
-Beyond Pydantic, Colvin has contributed to the broader Python ecosystem through:
-- **HTTPX** — Python HTTP client library
-- **aiocache** — Async caching library
-- Various other Python packages focused on developer tooling and infrastructure
-
-### Talks and Podcasts
-
-| Date | Appearance | Topic |
-|---|---|---|
-| Dec 2025 | Software Engineering Daily | Pydantic AI origins, type safety, model provider churn, open-source sustainability |
-| Oct 2025 | AI Engineering Podcast | Production-ready AI agents, framework philosophy, observability |
-| 2025 | Latent Space Podcast | LLM agent architecture, tooling ecosystem, type safety |
-| 2024 | Various | Pydantic 2.0, Rust rewrite, performance improvements |
+### 主要オープンソースプロジェクト
+- **dirty-equals** (983⭐) — Pythonのequals演算子拡張
+- **aioaws** (180⭐) — asyncio対応AWS SDK
+- **dnserver** (164⭐) — Python開発DNSサーバー
+- **aicli** (126⭐) — OpenAI CLIインターフェース
+- **buildpg** (86⭐) — PostgreSQLクエリビルダー
+- **arq** — asyncio + Redisジョブキュー
+- **watchfiles** — ファイル変更監視
 
 ## Blog / Recent Posts
 
-Samuel Colvin doesn't maintain a personal blog, but his work is extensively documented through:
-
-- **GitHub repositories** — Detailed documentation, examples, and changelogs for Pydantic and Pydantic AI
-- **Podcast appearances** — In-depth technical discussions on AI agent architecture, type safety, and open-source sustainability
-- **Conference talks** — Presentations on Python type systems, data validation, and AI engineering
-- **GitHub discussions** — Active community engagement on design decisions and feature requests
+| Date | Title | Summary |
+|------|-------|---------|
+| 2026-03-23 | Pydantic AI Gateway is Moving to Logfire | AI Gateway機能をLogfireプラットフォームへ統合 |
+| 2026-02-27 | Pydantic Monty: you probably don't need a full sandbox | 超高速セキュアPythonインタープリタの発表 |
+| 2025-12-08 | Pydantic Logfire Pricing is Changing | 観測性プラットフォームの価格改定 |
+| 2025-11-13 | Announcement: Launching Pydantic AI Gateway | AIエージェントゲートウェイのlaunch |
+| 2025-10-07 | Pydantic Open Source Fund | オープンソースエコシステムへの投資ファンド |
+| 2025-09-04 | Pydantic AI v1: A Predictable & Robust GenAI Framework | v1安定版リリース |
+| 2025-07-02 | Pydantic Logfire Updates: Dashboards, MCP, Evals & more | 観測性機能の拡充 |
+| 2025-04-02 | Pydantic Evals Launched: Open-source evals for AI models | AI評価ツールのリリース |
+| 2024-10-07 | The Pydantic Open Source Fund | OSS支援ファンド創設 |
+| 2024-10-01 | Why is Pydantic building an Observability Platform? | Logfireのビジョン説明 |
+| 2024-10-01 | Announcement: Pydantic Logfire launch & Series A Funding | Series A資金調達発表 |
+| 2023-06-30 | Announcement: Pydantic V2 Release | v2メジャーリリース |
+| 2023-02-16 | Company Announcement | Pydantic社設立、Sequoiaリードのシード調達 |
 
 ## Related People
 
-- **Ethan Mollick** — Both discuss AI agents and productivity; Mollick from user perspective, Colvin from developer infrastructure
-- **Chip Huyen** — Both emphasize production engineering; Huyen on ML systems, Colvin on type safety and developer tooling
-- **Eugene Yan** — Both focus on practical AI engineering; Yan on patterns and evaluation, Colvin on type safety and reliability
-- **Sebastián Ramírez** — Creator of FastAPI, which uses Pydantic as its data validation layer
-- **Lilian Weng** — Both address AI safety and reliability; Weng from research at OpenAI, Colvin from engineering tooling
-- **Andrej Karpathy** — Both value understanding underlying mechanisms; Karpathy through model internals, Colvin through type systems
-- **Simon Willison** — Both advocate for practical, hands-on AI tooling and developer education
+- [[entities/simon-willison]] — 同じく「AI is still Engineering」哲学を共有。Agentic Engineeringの提唱者
+- [[entities/ryan-lopopolo]] — Harness Engineering。ColvinのDeep Agentsと概念的に関連
+- [[entities/boris-cherny]] — Claude Code（OpenAI）。タイプセーフティと開発者体験の最適化を共有
+- [[entities/steipete]] — Agent-First Design。高速エージェント開発の哲学的類似性
+- [[entities/georgi-gerganov]] — llama.cpp。ローカル実行と効率化の共有関心
+- [[entities/omar-khattab]] — DSPy。宣言的AIプログラミング。Pydantic AIと類似の哲学
 
 ## X Activity Themes
 
-Samuel Colvin's X/Twitter activity focuses on:
+- Pydantic AIの新機能とリリースアナウンス
+- タイプセーフティと開発者体験の重要性
+- AIエージェントのエンジニアリング原則
+- Pythonエコシステムへの貢献
+- オープンソースとコミュニティビルディング
+- 観測性とデバッグのベストプラクティス
 
-- **Python Type Systems** — Discussions on type hints, static analysis, and their role in building reliable software
-- **Pydantic Updates** — Announcements of new releases, performance improvements, and breaking changes
-- **Pydantic AI Development** — Updates on the agent framework, design decisions, and roadmap
-- **Open-Source Philosophy** — Thoughts on sustainable open-source development, governance, and community building
-- **AI Engineering** — Practical advice on building production AI systems, type safety, and observability
-- **Developer Tooling** — Commentary on the Python ecosystem, developer experience, and best practices
-- **Type Safety Advocacy** — The importance of types in preventing bugs and improving code quality
-- **Agent Architecture** — Technical discussions on how to build reliable, maintainable AI agents
+## Philosophy: "AI is Still Engineering"
+
+Colvinの最も重要な哲学的立場は、AI開発においても従来のエンジニアリング原則が適用されるというものです。
+
+1. **タイプセーフティ** — LLMの出力を信頼できる形式に変換
+2. **明確なAPI** — エージェントがアクセスできるツールとデータを定義
+3. **開発者体験** — 使い始めやすく、強力なこともできる設計
+4. **観測性** — エージェントの行動を追跡・デバッグ可能にする
+5. **耐久性** — 長時間実行されるワークフローの信頼性確保
+
+> "We've always made developer experience the first priority. We've leveraged technologies which developers already understand — most notably, Python type annotations."
+
+この哲学は、PydanticがFastAPI、OpenAI SDK、Anthropic SDK、LangChainなど、主要なフレームワークのバリデーション層として採用された理由を説明しています。
+
+## Impact & Influence
+
+- **月間4600万ダウンロード** — PydanticはPythonエコシステムの基盤
+- **12K+ GitHub Contributions** — 活発なオープンソース開発者
+- **Sequoia, Partech, Irregular Expressions** — 主要VCからの資金調達
+- **420+ Contributors** — Pydantic AIの活発なコミュニティ
+- **16,186+ GitHub Stars** — Pydantic AIの高い人気
+- **AIエージェント開発のパラダイム** — タイプセーフで観測性のあるエージェント設計の提唱
+
+## Quotes
+
+> "AI: it's still Engineering." — Samuel Colvin
+
+> "We built Pydantic AI with one simple aim: to bring that FastAPI feeling to GenAI app and agent development."
+
+> "We've always made developer experience the first priority. We've leveraged technologies which developers already understand — most notably, Python type annotations."
+
+> "Simple LLM interactions work fine, but as you build more complex systems with longer-running workflows, failures become expensive."
+
+## Related Concepts
+
+- [[concepts/pydantic-ai]] — フレームワーク詳細
+- [[concepts/deep-agents]] — Colvinが提唱する最高レベルのエージェント
+- [[concepts/monty-sandbox]] — 超高速セキュアPythonインタープリタ
+- [[concepts/capabilities-based-security]] — Montyのセキュリティ哲学
+- [[concepts/serializability]] — Pydanticのコア機能
+- [[concepts/agentic-engineering/_index]] — エージェント開発パターン集
+- [[concepts/ai-agent-engineering/_index]] — システム構築パターン集
+
+## References
+
+- [Pydantic Official Site](https://pydantic.dev)
+- [Pydantic AI Documentation](https://ai.pydantic.dev)
+- [Pydantic Blog](https://pydantic.dev/authors/samuel-colvin)
+- [GitHub: samuelcolvin](https://github.com/samuelcolvin)
+- [Latent Space Podcast: Monty](https://www.youtube.com/watch?v=UdelhUvJoPk)
+- [FunctionalTV: Building Durable Deep Research Agents](https://www.youtube.com/watch?v=UdelhUvJoPk)
+- [LinkedIn: Samuel Colvin](https://linkedin.com/in/samuel-colvin-27531523)
+- [StartupHub.ai: Pydantic AI's Samuel Colvin on Building Better LLM Agents](https://www.startuphub.ai/ai-news/artificial-intelligence/2026/pydantic-ai-s-samuel-colvin-on-building-better-llm-agents)

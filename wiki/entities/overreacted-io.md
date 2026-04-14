@@ -1,3 +1,10 @@
+---
+title: Dan Abramov
+status: active
+tags:
+- person
+---
+
 # Dan Abramov
 
 **URL:** https://overreacted.io

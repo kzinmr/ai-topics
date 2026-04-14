@@ -1,15 +1,18 @@
 ---
-title: "Mark Chen"
+title: Mark Chen
 created: 2026-04-14
 updated: 2026-04-14
-tags: [person, openai, dall-e, codex, o1, multimodal, reasoning]
-aliases: ["mark-chen", "chen"]
-depth_tracking:
-  L1_basic_profile: true
-  L2_timeline_works: true
-  L3_thought_analysis: true
-  L4_ongoing_monitoring: false
+depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': False}
+tags:
+  - person
+  - openai
+  - dall-e
+  - codex
+  - o1
+  - multimodal
+  - reasoning
 ---
+
 
 # Mark Chen
 

@@ -1,9 +1,14 @@
 ---
-title: "Meta"
+title: Meta
 created: 2026-04-09
 updated: 2026-04-09
-tags: [company, llm, active]
-aliases: ["Meta Platforms Inc", "Facebook"]
+tags:
+- company
+- llm
+- active
+aliases:
+- Meta Platforms Inc
+- Facebook
 ---
 
 # Meta
