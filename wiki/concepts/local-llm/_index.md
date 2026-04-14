@@ -27,6 +27,9 @@ Local LLM inference on personal hardware. This page is the index for the local-l
 - [[concepts/local-llm/server-dgx-spark]] — DGX Spark + NemoClaw setup guide
 - [[concepts/local-llm/self-hosting-ai-development]] — Self-hosting economics and workflow
 
+## Model Comparisons
+- [[comparisons/local-llm-models-april-2026]] — Local LLM Models Comparison (gpt-oss, GLM-4.5, Qwen 3, specialized edge models)
+
 ## Summary
 
 The local LLM ecosystem encompasses the tools, formats, and hardware that enable running large language models on personal infrastructure rather than cloud APIs. Key drivers include privacy, cost efficiency, offline capability, and freedom from vendor lock-in.

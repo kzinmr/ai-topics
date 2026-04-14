@@ -308,7 +308,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder & Super IC (Reddit/FourWeekMBA: MVP commoditization, FrontPage parallel, $10M→$100M path)
 - [[concepts/ai-organization/ai-org-context-as-moat]] — Proprietary Context (McKinsey 5 Pillars, M-Shaped Supervisor, Diamond Org Chart, Agentic Governance)
 
-## Comparison Pages (6)
+## Comparison Pages (7)
 
 - [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks (LangGraph vs CrewAI vs AutoGen vs etc.)
 - [[comparisons/agent-sandboxing]] — Agent Sandboxing (Containers vs gVisor vs MicroVMs vs WASM vs Zeroboot)
@@ -316,6 +316,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[comparisons/evals-skills]] — Evals Skills for Coding Agents
 - [[comparisons/frontier-models-2026-04]] — Frontier Models Comparison — April 2026
 - [[comparisons/llm-integration-patterns]] — LLM Integration Patterns: Comparative Taxonomy (Orchestration vs DSPy vs RLMs vs Agentic vs GEPA)
+- [[comparisons/local-llm-models-april-2026]] — Local LLM Models Comparison — April 2026 (gpt-oss, GLM-4.5, Qwen 3, specialized edge models)
 
 ## People
 
