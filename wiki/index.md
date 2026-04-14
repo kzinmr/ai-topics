@@ -319,6 +319,7 @@ Last updated: 2026-04-15 (Personal Superintelligence concept page, Meta entity u
 
    281|- [[entities/vinci-rufus|Vinci Rufus]] — AI tech exec. "Orchestration > Automation", "Vibe coding 30-70%, Agentic engineering 300-700%"
    282|- [[entities/ryan-lopopolo|Ryan Lopopolo]] (@_lopopolo) — OpenAI Frontier. Harness Engineering, Symphony multi-agent orchestration
+   282|- [[entities/vtrivedy10|Vivek Trivedy]] (@vtrivedy10) — LangChain Product Lead. Deep Agents CLI architect. Harness Engineering (Agent = Model + Harness). Terminal Bench 2.0 Top 5. HaaS thesis.
    283|- [[entities/boris-cherny|Boris Cherny]] (@bcherny) — Head of Claude Code at OpenAI. Creator of Claude Code. Opus 4.5 + thinking, 5 parallel sessions via git worktrees, Plan Mode → auto-accept. Shared CLAUDE.md as team infrastructure, @claude on PRs for compounding guidelines. MCP integration (BigQuery, Slack, Sentry). PostToolUse hooks, subagents for parallel compute. "Give Claude a way to verify its work." "If you do something more than once a day, turn it into a skill."
    284||- [[entities/addy-osmani|Addy Osmani]] (@addyosmani) — Director, Google Cloud AI. Conductor→Orchestrator framework, Agent Teams/Swarms, AGENTS.md critique
    285|||- [[entities/scott-wu|Scott Wu]] (@ScottWu46) — Cognition CEO & Co-Founder. IOI Gold Medalist. Devin creator. $10B+ valuation. "Eventually, the future comes" — closing the agent loop. 100x capability growth (154→659 PRs/week). Single-threaded agent philosophy.

@@ -1,3 +1,8 @@
+## 2026-04-16 — Vivek Trivedy (@vtrivedy10) entity page created
+
+### New Entity Pages
+- **[[entities/vtrivedy10]]** — Vivek Trivedy (LangChain Product Lead). Deep Agents CLI architect. Harness Engineering (Agent = Model + Harness). Terminal Bench 2.0 Top 30 → Top 5 improvement. HaaS thesis, reasoning sandwich, self-verification loops.
+
 ## 2026-04-16 — Sandbox Infrastructure横断分析、JS Runtime概念ページ追加、sandboxディレクトリ体系構築
 
 ### New Concept Pages
