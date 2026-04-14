@@ -2,13 +2,29 @@
 status: active
 created: 2026-04-15
 updated: 2026-04-15
-tags: [local-llm, models, comparison, open-weights, MoE]
+tags: [local-llm, models, comparison, open-weights, MoE, hardware, VRAM]
 source_article: AINews - Top Local Models List - April 2026
 ---
 
 # Local LLM Models Comparison — April 2026
 
 Top open-weight and locally-runnable models as of April 2026. Focus on models that can run on consumer hardware (single GPU or CPU).
+
+## AINews Community Consensus Rankings (April 2026)
+
+Source: [Latent.Space AINews — Top Local Models List](https://open.substack.com/pub/swyx/p/ainews-top-local-models-list-april). Methodology: Survey of /r/localLlama, /r/localLLM community recommendations — "what people are actually running" rather than benchmark supremacy.
+
+| Rank | Model | Community Verdict | Best For |
+|------|-------|-------------------|----------|
+| **#1** | **Qwen 3.5** | Most broadly recommended family across all use cases | General purpose |
+| **#2** | **Gemma 4** | Strong buzz for local usability, especially small/mid deployments | Lightweight local |
+| **#3** | **GLM-5 / GLM-4.7** | Top of open-model rankings, "best overall" conversation | General / agentic |
+| **#4** | **MiniMax M2.5 / M2.7** | Repeatedly cited for agentic + tool-heavy workloads | Agentic workflows |
+| **#5** | **DeepSeek V3.2** | Top cluster for strongest open-weight general models | General reasoning |
+| **#6** | **GPT-oss 20B** | Practical local option, increasingly recommended for uncensored variants | Local / uncensored |
+| **Coding #1** | **Qwen3-Coder-Next** | Overwhelming consensus for local coding | Coding agents |
+
+> "Adjusted for 'what people are actually recommending' rather than just benchmark supremacy." — AINews, April 2026
 
 ## Frontier Open-Weight Models
 
@@ -29,6 +45,67 @@ Top open-weight and locally-runnable models as of April 2026. Focus on models th
 | **Falcon Perception** | 0.6B | Vision-Language (segmentation) | Outperforms SAM 3 | MacBook (MLX) | Specialized beats generic |
 | **SauerkrautLM-Doom** | 1.3M (ModernBERT-Hash) | VizDoom gameplay control | 31ms inference on CPU, beats larger API LLMs | CPU | Narrow but dominant on target task |
 | **Gemma 4 E2B** | — | On-device inference | ~40 tok/s | iPhone 17 Pro (MLX) | Mobile-first demo |
+
+## Hardware-Tier Recommendations (by @0xsero)
+
+Weekly curated model picks organized by available VRAM/RAM. Source: [X/Twitter thread](https://x.com/0xsero/status/2037837722094641610).
+
+### 8 GB — Entry-Level GPU
+| Use Case | Model | Format | HF Link |
+|----------|-------|--------|---------|
+| **Autocomplete** (Cursor-style) | Zeta-2 (4-bit) | GGUF | [NexVeridian](https://huggingface.co/NexVeridian/zeta-2-4bit) / [bartowski GGUF](https://huggingface.co/bartowski/zed-industries_zeta-2-GGUF) |
+| **Tool calling / Assistant** | NVIDIA Nemotron-3 Nano (4B) | GGUF | [NVIDIA](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF) |
+
+### 16 GB — Mid-Range GPU
+| Model | Type | Notes |
+|-------|------|-------|
+| [Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B) | Multimodal | Balanced quality/performance |
+| [OmniCoder-9B](https://huggingface.co/Tesslate/OmniCoder-9B) | Multimodal | Coding-focused |
+| [Qwen3.5-27B (GGUF)](https://huggingface.co/unsloth/Qwen3.5-27B-GGUF) | Multimodal | Unsloth quantized |
+
+### 24 GB — High-End Consumer GPU (RTX 4090 / 3090)
+| Model | Type | Notes |
+|-------|------|-------|
+| [Qwen3.5-27B](https://huggingface.co/Qwen/Qwen3.5-27B) | General | "The best model you can get" per 0xSero |
+| [Nemotron-Cascade-2-30B-A3B](https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B) | MoE | Strong agentic capabilities |
+| [Qwen-3.5-28B-A3B-REAP](https://huggingface.co/0xSero/Qwen-3.5-28B-A3B-REAP) | MoE | 0xSero's custom REAP quant |
+
+### 64 GB — Pro GPU / Dual-GPU
+| Model | Use Case | Source |
+|-------|----------|--------|
+| Qwen3-Coder-Next-80B (4-bit) | Coding, Claude Code, general agent | [unsloth GGUF](https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF) |
+| Qwen3.5-122B-REAP | Browser use, multimodal, tool calling | 0xSero community |
+
+### 96 GB — Workstation
+| Model | Use Case | Source |
+|-------|----------|--------|
+| GLM-4.6V | Multimodal + tool calls | [zai-org](https://huggingface.co/zai-org/GLM-4.6V) |
+| Hermes-70B (Jailbroken) | General agent, uncensored | [NousResearch](https://huggingface.co/NousResearch/Hermes-4-70B) |
+| Nemotron-120B-Super (NVFP4) | OpenClaw deployment | [NVIDIA](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4) |
+| Mistral-Small-4-119B | General agent | [Mistral AI](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603) |
+
+### 192 GB — Server / Multi-GPU
+Top-tier LLMs approaching Claude Sonnet in capabilities:
+- **Step-3.5-Flash**
+- **Qwen3.5-397B-REAP**
+- **MiniMax-M2.5** (M2.7 imminent)
+- **GLM-4.7-REAP**
+
+### 256 GB — High-End Server
+| Rank | Model | Quant | Notes |
+|------|-------|-------|-------|
+| #1 | MiniMax-M2.5 (M2.7) | 6-bit MLX | Best overall in tier |
+| #2 | Qwen3.5-262B-REAP | 4-6 bit | Strong general performance |
+| #3 | Nemotron-122B | 8-9 bit | Higher precision MoE |
+| #4 | GLM-5-358B | 4-bit | Large-scale dense/MoE |
+
+### 512 GB — Full Server Rack
+| Rank | Model | Quant | Notes |
+|------|-------|-------|-------|
+| #1 | MiniMax-M2.* | FP16 | Unquantized, full precision |
+| #2 | Qwen3.5-397B | 8-bit | Near-frontier quality |
+| #3 | Kimi-k2.5-530B-PRISM | 4-bit | Massive scale, Moonshot AI |
+| #4 | GLM-5 | 4-bit | Z.AI's flagship |
 
 ## Training & RL Efficiency
 

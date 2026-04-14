@@ -39,6 +39,21 @@ His trajectory: Content protection (DMCA takedowns, creator rights) → Web3/DAO
 
 > "This age is coming to a close, models are using 6x the tokens, we have hit the token price floor... What this means for us is 30-100$ a day in usage if you use this." — @seroxdesigns
 
+## Weekly Hardware-Tier Model Recommendations
+
+Starting April 2026, Sero publishes a weekly curated list of the best local models organized by available VRAM/RAM. The series covers 8 tiers: **8 GB → 512 GB**, with specific model recommendations for autocomplete, tool calling, multimodal, coding, agentic, and general use cases.
+
+**Methodology:** Each tier features the best available model for that memory budget, with direct HuggingFace links to GGUF/requantized variants. The series reflects his hands-on experience running an 8x RTX 3090 homelab and testing dozens of open-weight models in real workflows.
+
+**Notable picks from April 2026:**
+- **8 GB**: Zeta-2 (autocomplete), NVIDIA Nemotron-3 Nano 4B (tool calling)
+- **24 GB**: Qwen3.5-27B ("the best model you can get"), Nemotron-Cascade-2-30B-A3B (agentic)
+- **96 GB**: Hermes-70B jailbroken, Nemotron-120B-Super (OpenClaw deployment)
+- **256 GB**: MiniMax-M2.5 6-bit MLX (#1), Qwen3.5-262B-REAP (#2)
+- **512 GB**: MiniMax-M2.* FP16 (#1), Qwen3.5-397B 8-bit (#2)
+
+Source: [X thread](https://x.com/0xsero/status/2037837722094641610)
+
 ## Key Open-Source Projects
 
 ### AI Data Extraction Toolkit (594+ stars)
