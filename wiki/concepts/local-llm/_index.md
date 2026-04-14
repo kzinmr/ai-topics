@@ -13,17 +13,19 @@ Local LLM inference on personal hardware. This page is the index for the local-l
 
 ### Inference Engines
 - [[concepts/local-llm/llama-cpp]] — llama.cpp inference engine (CPU, Apple Silicon, CUDA)
-- [[concepts/local-llm/vllm]] — vLLM high-throughput serving (PagedAttention)
+- [[concepts/local-llm/ollama]] — Ollama local LLM runner (model library, REST API)
+- [[concepts/inference/vllm]] — vLLM high-throughput serving (PagedAttention)
+- [[concepts/inference/sglang]] — SGLang serving framework (RadixAttention, structured generation)
 
 ### Model Formats & Compression
 - [[concepts/local-llm/gguf]] — GGUF quantization format (K-Quants, I-Quants)
 - [[concepts/local-llm/model-quantization]] — Quantization overview (GPTQ, AWQ, EXL2, FP8)
 - [[concepts/local-llm/model-distillation]] — Knowledge distillation for local models
 
-### Tools & Runners
-- [[concepts/local-llm/ollama]] — Ollama local LLM runner
+### Tools & Hardware
 - [[concepts/local-llm/inference-hardware]] — Consumer GPU, Apple Silicon, edge devices
 - [[concepts/local-llm/server-dgx-spark]] — DGX Spark + NemoClaw setup guide
+- [[concepts/local-llm/self-hosting-ai-development]] — Self-hosting economics and workflow
 
 ## Summary
 
@@ -35,13 +37,23 @@ Two critical techniques enable local inference:
 
 Together, these techniques allow a distilled 3-8B model at Q4 quantization to run on consumer hardware with performance approaching much larger unquantized models.
 
+## Inference Engine Comparison
+
+| Engine | Best For | Hardware | Structured Output |
+|--------|----------|----------|-------------------|
+| **llama.cpp** | CPU/Apple Silicon local | CPU, Metal, CUDA, Vulkan | Basic (grammar sampling) |
+| **Ollama** | Zero-config local runner | CPU, Metal, CUDA | Via Modelfile |
+| **vLLM** | Production serving | NVIDIA, AMD GPU | Outlines integration |
+| **SGLang** | Agentic loops, RAG | NVIDIA, AMD, CPU | ✅ Native (xgrammar) |
+
 ## Related wikilinks
 
 - [[concepts/local-llm]] — Original consolidated page (reference)
 - [[concepts/harness-engineering]] — Local LLMs as harness components
 - [[concepts/agentic-engineering]] — Using local LLMs in agent workflows
 - [[concepts/reasoning-models]] — Distillation for CoT transfer
-- [[concepts/llm-inference]] — Inference optimization techniques
+- [[concepts/inference/_index]] — Inference optimization techniques
+- [[concepts/inference-speed-development]] — Development cadence at inference speed
 
 ## Sources
 
@@ -49,5 +61,6 @@ Together, these techniques allow a distilled 3-8B model at Q4 quantization to ru
 - llama.cpp GitHub (ggerganov/llama.cpp)
 - Ollama documentation
 - vLLM project (vllm-project/vllm)
+- SGLang documentation (sgl-project/sglang)
 - Hugging Face blog on distillation
 - Georgi Gerganov, PR #4856 and The Changelog #532

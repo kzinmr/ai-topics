@@ -1,3 +1,24 @@
+## 2026-04-15 — Local LLM Reorganization: ollama, inference-hardware, SGLang
+
+### New Skeleton Pages
+- **[[concepts/local-llm/ollama]]** — Ollama local LLM runner (model library, REST API, Modelfile)
+- **[[concepts/local-llm/inference-hardware]]** — Consumer GPU, Apple Silicon, edge devices for local LLM
+
+### Reorganized
+- **[[concepts/local-llm/self-hosting-ai-development]]** — Moved from `concepts/` to `concepts/local-llm/`
+- **[[concepts/inference/sglang]]** — Cross-referenced from `concepts/local-llm/_index.md` (already existed in `concepts/inference/`)
+
+### Updated Pages
+- **[[concepts/local-llm/_index]]** — Added SGLang inference engine comparison, ollama/inference-hardware references
+- **[[wiki/index.md]]** — Updated local-llm section with all sub-pages and SGLang cross-reference
+
+### Key Insights
+- **SGLang** uses RadixAttention (tree-based KV cache) for prefix sharing, beneficial for agentic loops and RAG
+- **Ollama** wraps llama.cpp, provides zero-config model management + REST API
+- **Inference hardware** choice depends on model size vs VRAM: consumer GPUs (RTX 4090/5090), Apple Silicon (unified memory), edge devices (Jetson)
+
+---
+
 ## 2026-04-15 — DGX Spark Local LLM Server & NemoClaw Concept Page
 
 ### New Concept Pages

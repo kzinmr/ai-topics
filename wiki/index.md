@@ -2,7 +2,7 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-Last updated: 2026-04-15 (AI Organization concept hierarchy upgraded with Block full content, Solo Founder debate, McKinsey Diamond org chart; DGX Spark Local LLM Server & NemoClaw concept page added)
+Last updated: 2026-04-15 (Local LLM reorganization: added ollama.md, inference-hardware.md skeleton pages; SGLang added to index; self-hosting-ai-development moved under local-llm/)
 
 ## Entity Pages (70)
      8|
@@ -219,7 +219,15 @@ Last updated: 2026-04-15 (AI Organization concept hierarchy upgraded with Block 
    |- [[concepts/local-llm/_index]] — Local LLM Ecosystem Overview
    |- [[concepts/local-llm/gguf]] — GGUF Quantization Format
    |- [[concepts/local-llm/llama-cpp]] — llama.cpp Inference Engine
+   |- [[concepts/local-llm/ollama]] — Ollama Local LLM Runner (model library, REST API)
    |- [[concepts/local-llm/vllm]] — vLLM High-Throughput Serving
+   |- [[concepts/local-llm/inference-hardware]] — Consumer GPU, Apple Silicon, Edge Devices
+   |- [[concepts/local-llm/server-dgx-spark]] — DGX Spark + NemoClaw Setup Guide
+   |- [[concepts/local-llm/model-quantization]] — Model Quantization (GPTQ, AWQ, EXL2, FP8)
+   |- [[concepts/local-llm/model-distillation]] — Knowledge Distillation
+   |- [[concepts/local-llm/self-hosting-ai-development]] — Self-Hosting AI for Development (economics)
+   |- [[concepts/inference/vllm]] — vLLM Production Serving (PagedAttention)
+   |- [[concepts/inference/sglang]] — SGLang Serving Framework (RadixAttention, xgrammar)
 |- [[concepts/reasoning-models]] — Reasoning Models (o1-style, CoT, PRM)
 |- [[concepts/karpathy-loop]] — The Karpathy Loop (Autonomous Experiment Design, autoresearch)
 |- [[concepts/personal-superintelligence]] — Personal Superintelligence (Meta vs OpenClaw vs Local AI philosophies)

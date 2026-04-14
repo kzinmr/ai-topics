@@ -115,12 +115,39 @@ Mueller's Accelerate work underpins training infrastructure used by thousands of
 - **Unsloth team** -- Collaborated on gradient accumulation reproducibility research
 - **Intel Corporation** -- Collaboration on mpirun support for multi-CPU training in Accelerate
 
-## X Activity Themes
+## Mueller Minute Substack (2025)
 
-- **Accelerate releases** -- Announcing new versions, deprecations, and feature additions
-- **Distributed training tips** -- Technical threads on PyTorch DDP, FSDP, and multi-GPU optimization
-- **Gradient accumulation** -- Deep dives into subtle bugs and their fixes in distributed training setups
-- **Hugging Face ecosystem** -- Integration updates with Transformers, Diffusers, and PEFT
-- **Performance benchmarking** -- GPU comparison posts, speed optimization results, and efficiency metrics
-- **Open-source collaboration** -- Acknowledging community contributions, Intel partnerships, and Unsloth collaboration
-- **Developer education** -- Tutorials and explanations of complex distributed training concepts
+Mueller launched **The Mueller Minute** (https://muellerminute.substack.com/) in early 2025 — a weekly newsletter focused on distributed training concepts, model optimization techniques, and practical deep learning tips. As of August 2025, ~250 subscribers.
+
+| Date | Title | Key Insight |
+|------|-------|-------------|
+| 2025-08-11 | [Quantization Aware Training](https://muellerminute.substack.com/p/quantization-aware-training) | QAT simulates quantization effects during training so models learn to be robust to precision loss. Results in models that quantize to INT8 with minimal accuracy degradation. Often used as final fine-tuning step after FP32 pre-training. |
+| 2025-08-09 | [ZeRO-Infinity](https://muellerminute.substack.com/p/zero-infinity) | Extends ZeRO-3 with NVMe offloading. Memory-centric tiling breaks large layers into small tiles processed sequentially. Just-in-time prefetching hides latency. Enables training models far exceeding aggregate GPU capacity. |
+| 2025-08-04 | [Reduce-Scattering](https://muellerminute.substack.com/p/reduce-scattering) | Collective communication combining reduce + scatter. Used in ZeRO2/ZeRO3 for efficient gradient aggregation. Each GPU gets a distinct shard of the reduced result rather than all-reduce then scatter. |
+| 2025-07-25 | [CPU Offloading](https://muellerminute.substack.com/p/cpu-offloading) | Swapping model parameters/gradients/activations from GPU VRAM to CPU RAM when GPU memory is insufficient. DeepSpeed ZeRO-Infinity extends this to NVMe storage. Efficiency depends on overlapping transfers with compute. |
+| 2025-07-13 | [Why We Shard Models](https://muellerminute.substack.com/p/why-we-shard-models-across-gpus-and) | 70B param model at half precision needs ~140GB for weights + ~280GB for optimizer states. ZeRO is DeepSpeed/FSDP's trick to make sharding automatic — just-in-time assembly of shards across GPUs. |
+
+> *"ZeRO's magic is 'just-in-time assembly.' During training, every GPU keeps a tiny fraction of the total data. When a layer's weights are required, ZeRO fetches only that shard from the other GPUs (or NVMe if you're really pushed for space), runs the math, then ships the results back."* — Mueller Minute, July 2025
+
+## Latest Blog Posts (muellerzr.github.io)
+
+| Date | Title | Summary |
+|------|-------|---------|
+| 2025-09-03 | [The Workhorse is dead. Long live the Workhorse](https://muellerzr.github.io/blog/workhorse) | Follow-up to his dual 4090 build post. Details hardware evolution and lessons learned from running personal deep learning infrastructure. |
+| 2025-08-13 | [Dummies Guide to Thunderbolt Clusters](https://muellerzr.github.io/blog/) | Practical guide to building multi-GPU clusters using Thunderbolt interconnects for researchers who can't afford InfiniBand. |
+| 2025-07-13 | [Fine-tuning in a world of APIs](https://muellerzr.github.io/blog/) | Discusses how fine-tuning workflows have evolved with API-first model providers. |
+| 2025-07-12 | [Announcing Scratch to Scale](https://muellerzr.github.io/blog/) | New course on large-scale training in the modern world. Covers everything from single-GPU experiments to multi-node distributed training. |
+| 2025-04-28 | [Running HuggingChat fully locally with Docker](https://muellerzr.github.io/blog/) | Guide to self-hosting HuggingChat with Docker, emphasizing reproducibility and local-first AI deployment. |
+| 2024-10-29 | [Gradient Accumulation: Reproducibility](https://muellerzr.github.io/blog/gradient_accumulation_part2.html) | Part 2 of gradient accumulation series. Addresses reproducibility bugs in distributed training. |
+| 2024-06-02 | [Building a Dual 4090 Rig Under $6,000](https://muellerzr.github.io/blog/workhorse) | Detailed parts list and build guide for a dual RTX 4090 deep learning workstation. Covers P2P driver requirements, RAM sizing (≥2x VRAM), and thermal management. |
+
+## Key Projects and Courses
+
+| Project | Description |
+|---------|-------------|
+| **Scratch to Scale** | Comprehensive course on large-scale training (announced July 2025). Covers single-GPU → multi-node distributed training. Preorder pricing ~$1000 with $1500+ in compute credits. |
+| **Mueller Minute** | Weekly Substack newsletter on distributed training, optimization, and deep learning infrastructure. Launched early 2025. |
+| **H100 Performance Tests** | Open-source repository benchmarking T-FLOPS on 8×H100 nodes (CoreWeave). Found 25% improvement with FP8 vs BF16 on H100s. |
+| **Hugging Face Docker Spaces** | Pioneered using HF Hub as Docker registry for reproducible research. Published tutorial Apr 2024. |
+
+

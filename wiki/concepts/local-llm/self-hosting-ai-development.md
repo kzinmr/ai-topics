@@ -4,7 +4,7 @@ created: 2026-04-13
 updated: 2026-04-13
 tags: [self-hosting, local-llm, qwen, opencode, cost-optimization, model-comparison]
 aliases: ["self-hosted-coding-agents", "local-ai-development", "qwen-coder-workflow", "ai-inference-economics"]
-related: [[claude-code-best-practices]], [[cli-over-mcp-pattern]], [[inference-speed-development]], [[openclaw]]
+related: [[concepts/claude-code-best-practices]], [[concepts/cli-over-mcp-pattern]], [[inference-speed-development]], [[openclaw]]
 sources:
   - url: "https://steipete.me/posts/2025/self-hosting-ai-models/"
     author: "Peter Steinberger (@steipete)"
@@ -177,7 +177,7 @@ The setup takes ~2-3 hours and involves:
 
 ## Connection to Other Patterns
 
-- [[cli-over-mcp-pattern]] — Self-hosted models still benefit from CLI-first interaction
+- [[concepts/cli-over-mcp-pattern]] — Self-hosted models still benefit from CLI-first interaction
 - [[inference-speed-development]] — Local inference adds latency; cloud APIs may be faster
 - [[openclaw]] — Steipete's OpenClaw project aims to make agent infrastructure more accessible
 
