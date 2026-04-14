@@ -2,9 +2,9 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-Last updated: 2026-04-15 (Local LLM reorganization: added ollama.md, inference-hardware.md skeleton pages; SGLang added to index; self-hosting-ai-development moved under local-llm/)
+Last updated: 2026-04-14 (Added DRMacIver entity page — Hypothesis creator, Antithesis Senior Engineer, Hegel PBT protocol, Claude Code workflow, LLM evals via property-based testing)
 
-## Entity Pages (70)
+## Entity Pages (71)
      8|
      9|- [[entities/adam-rosenthal]] — Adam Rosenthal
     10|
@@ -30,7 +30,8 @@ Last updated: 2026-04-15 (Local LLM reorganization: added ollama.md, inference-h
     30|- [[entities/daringfireball-net]] — John Gruber
     31|- [[entities/deliberatecoder]] — Deliberate Coder
     32|- [[entities/derek-thompson]] — Derek Thompson
-    33|- [[entities/dialloibu]] — Ibrahim Diallo
+    33|- [[entities/drmaciver]] — David R. MacIver
+    34|- [[entities/dialloibu]] — Ibrahim Diallo
     34|- [[entities/downtowndougbrown-com]] — Doug Brown
     35|- [[entities/dwarkesh-patel]] — Dwarkesh Patel
     36|- [[entities/dynomight-net]] — Dynomight
