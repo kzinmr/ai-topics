@@ -82,7 +82,7 @@ topics:
   - slug: agent-team-swarm
     title: "Agent Team / Swarm"
     crawl_policy: laterals
-    priority: medium
+    priority: high
     search_hints:
       - "multi-agent swarm orchestration 2026"
       - "agent team coordination patterns"
@@ -132,8 +132,11 @@ topics:
       - "local LLM inference 2026 llama.cpp"
       - "GGUF quantization local deployment"
     wiki_pages:
-      - concepts/local-llm
-    notes: "最新ベンチマーク、新モデル対応、量子化手法の進展"
+      - concepts/local-llm/_index
+      - concepts/local-llm/gguf
+      - concepts/local-llm/llama-cpp
+      - concepts/local-llm/vllm
+    notes: "階層化済み: GGUF, llama.cpp, vLLMの各サブページ。最新ベンチマーク、新モデル対応を追跡"
     added: 2026-04-14
     last_crawled: null
 
@@ -194,8 +197,8 @@ topics:
       - "neural symbolic integration"
     wiki_pages:
       - concepts/neurosymbolic-ai
-      - concepts/illusion-of-thinking
-    notes: "前提: symbolic reasoning, knowledge graphs, formal verification等"
+      - concepts/reasoning-models
+    notes: "neuromorphic + symbolic reasoningの統合アプローチ。関連: reasoning models (o1-style, CoT, PRM)はニューラル単体だが異なる系統。前提: knowledge graphs, formal verification, theorem proving等"
     added: 2026-04-14
     last_crawled: null
 
@@ -205,9 +208,13 @@ topics:
     title: "AI Bubble Economics"
     crawl_policy: monitor
     priority: low
+    search_hints:
+      - "AI bubble economics 2026"
+      - "AI infrastructure oversupply critique"
+      - "Ed Zitron AI bubble"
     wiki_pages:
       - concepts/ai-bubble-economics
-    notes: "Ed Zitron等の批判的視点。trendingで監視のみ"
+    notes: "Ed Zitron等の批判的視点。trending監視のみ"
     added: 2026-04-14
     last_crawled: null
 
@@ -215,6 +222,10 @@ topics:
     title: "AI Safety & Alignment"
     crawl_policy: monitor
     priority: low
+    search_hints:
+      - "AI safety alignment 2026"
+      - "LLM reward hacking deception"
+      - "AI agent risk assessment"
     wiki_pages:
       - concepts/ai-agent-traps
       - concepts/ai-autonomy-debate
