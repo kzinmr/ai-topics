@@ -215,8 +215,13 @@ Last updated: 2026-04-15 (AI Organization concept hierarchy upgraded with Block 
    194||- [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
    195||- [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo / OpenAI Symphony)
    196||- [[concepts/llm-evaluation-harness]] — LLM Evaluation Harness
-   197||- [[concepts/local-llm]] — Local LLM Inference (llama.cpp, Ollama, GGUF)
-   198|||- [[concepts/karpathy-loop]] — The Karpathy Loop (Autonomous Experiment Design, autoresearch)
+|- [[concepts/local-llm]] — Local LLM Inference (llama.cpp, Ollama, GGUF)
+   |- [[concepts/local-llm/_index]] — Local LLM Ecosystem Overview
+   |- [[concepts/local-llm/gguf]] — GGUF Quantization Format
+   |- [[concepts/local-llm/llama-cpp]] — llama.cpp Inference Engine
+   |- [[concepts/local-llm/vllm]] — vLLM High-Throughput Serving
+|- [[concepts/reasoning-models]] — Reasoning Models (o1-style, CoT, PRM)
+|- [[concepts/karpathy-loop]] — The Karpathy Loop (Autonomous Experiment Design, autoresearch)
 |- [[concepts/personal-superintelligence]] — Personal Superintelligence (Meta vs OpenClaw vs Local AI philosophies)
 |- [[concepts/meta-harness]] — Meta-Harness
    199||- [[concepts/scaling-without-slop]] — Scaling without Slop
