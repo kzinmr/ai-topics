@@ -1,205 +1,226 @@
 # Newsletter Digest - 2026-04-14
-**Subject:** [AINews] Top Local Models List - April 2026
-**Processed:** 2026-04-14T08:44:15.788387+00:00
-**Articles scraped:** 13
+**Subject:** What I’ve been building: ATOM Report, post-training course, finishing my book, and ongoing research
+**Processed:** 2026-04-14T20:42:50.735440+00:00
+**Articles scraped:** 15
 
 ---
 
-## 1. [AINews] Top Local Models List - April 2026
+## 1. ATOM Report, post-training course, finishing my book, and research
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194162215&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQxNjIyMTUsImlhdCI6MTc3NjE1NjIzOCwiZXhwIjoxNzc4NzQ4MjM4LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.vFn-4vFeiN3NjBsJVn-Kah1WIsKayIV4i9BsCtpPaeQ
-- **Length:** 1274 chars
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaW50ZXJjb25uZWN0cy5haS9wL3doYXQtaXZlLWJlZW4tYnVpbGRpbmctYXRvbS1yZXBvcnQ_dXRtX2NhbXBhaWduPWVtYWlsLWhhbGYtcG9zdCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3hPVFF5TWpRME1qZ3NJbWxoZENJNk1UYzNOakU1T1RNMU1pd2laWGh3SWpveE56YzROemt4TXpVeUxDSnBjM01pT2lKd2RXSXRORGd5TURZaUxDSnpkV0lpT2lKd2IzTjBMWEpsWVdOMGFXOXVJbjAuV2R4QlV1cy1GSjhlYmQ1OW9GQWhNaDhkYkJ2RldsX1RNNDl6dEJ5TGNnNCIsInAiOjE5NDIyNDQyOCwicyI6NDgyMDYsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3NjE5OTM1MiwiZXhwIjoyMDkxNzc1MzUyLCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.kxI4udyziIwnOgd-_YCxLo-sqmFOvPLquc_Hx4E5MY4?
+- **Length:** 4950 chars
 
-> As you know we read through /r/localLlama, /r/localLLM, and other local model subreddits on an almost daily basis, and every now and then it is good to step back and survey what the community consensus is landing on, with a sampling of models across different sizes. We started this work to power our local Claw.
-> The top names you should know as a baseline, adjusted for “what people are actually recommending” rather than just benchmark supremacy:
-> Qwen 3.5
-> — most broadly recommended family right no
+> This post is a roundup of my recent efforts that did not warrant a standalone Interconnects post, why I’m spending time on them, and what they accomplished.
+> The ATOM Report: Measuring the Open Language Model Ecosystem
+> RLHF Book is done & ready for pre-order!
+> A post-training course I’m making
+> Recent technical research
+> Share
+> https://arxiv.org/abs/2604.07190
+> To accompany The ATOM Project
+> memo
+> , arguably a manifesto, making the case for investment in open models in the U.S. – originally launched in 
 
-## 2. [AINews] Top Local Models List - April 2026
+## 2. ATOM Report, post-training course, finishing my book, and research
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194162215&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQxNjIyMTUsImlhdCI6MTc3NjE1NjIzOCwiZXhwIjoxNzc4NzQ4MjM4LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.vFn-4vFeiN3NjBsJVn-Kah1WIsKayIV4i9BsCtpPaeQ
-- **Length:** 1274 chars
+- **URL:** https://substack.com/app-link/post?publication_id=48206&post_id=194224428&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQyMjQ0MjgsImlhdCI6MTc3NjE5OTM1MiwiZXhwIjoxNzc4NzkxMzUyLCJpc3MiOiJwdWItNDgyMDYiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.WdxBUus-FJ8ebd59oFAhMh8dbBvFWl_TM49ztByLcg4
+- **Length:** 4950 chars
 
-> As you know we read through /r/localLlama, /r/localLLM, and other local model subreddits on an almost daily basis, and every now and then it is good to step back and survey what the community consensus is landing on, with a sampling of models across different sizes. We started this work to power our local Claw.
-> The top names you should know as a baseline, adjusted for “what people are actually recommending” rather than just benchmark supremacy:
-> Qwen 3.5
-> — most broadly recommended family right no
+> This post is a roundup of my recent efforts that did not warrant a standalone Interconnects post, why I’m spending time on them, and what they accomplished.
+> The ATOM Report: Measuring the Open Language Model Ecosystem
+> RLHF Book is done & ready for pre-order!
+> A post-training course I’m making
+> Recent technical research
+> Share
+> https://arxiv.org/abs/2604.07190
+> To accompany The ATOM Project
+> memo
+> , arguably a manifesto, making the case for investment in open models in the U.S. – originally launched in 
 
-## 3. [AINews] Top Local Models List - April 2026
+## 3. Nathan Lambert | Substack
 
-- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvc3d5eC9wL2FpbmV3cy10b3AtbG9jYWwtbW9kZWxzLWxpc3QtYXByaWw_dXRtX3NvdXJjZT1zdWJzdGFjayZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1yZXN0YWNrLWNvbW1lbnQmYWN0aW9uPXJlc3RhY2stY29tbWVudCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3hPVFF4TmpJeU1UVXNJbWxoZENJNk1UYzNOakUxTmpJek9Dd2laWGh3SWpveE56YzROelE0TWpNNExDSnBjM01pT2lKd2RXSXRNVEE0TkRBNE9TSXNJbk4xWWlJNkluQnZjM1F0Y21WaFkzUnBiMjRpZlEudkZuLTR2RmVpTjNOakJzSlZuLUthaDFXSXNLYXlJVjRpOUJzQ3RwUGFlUSIsInAiOjE5NDE2MjIxNSwicyI6MTA4NDA4OSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzc2MTU2MjM4LCJleHAiOjIwOTE3MzIyMzgsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.i-TPspzEdLrgqG823IqGjMdso26MKf8xbIn9wo3xXJU?&utm_source=substack&utm_medium=email
-- **Length:** 1274 chars
+- **URL:** https://substack.com/@natolambert
+- **Length:** 208 chars
 
-> As you know we read through /r/localLlama, /r/localLLM, and other local model subreddits on an almost daily basis, and every now and then it is good to step back and survey what the community consensus is landing on, with a sampling of models across different sizes. We started this work to power our local Claw.
-> The top names you should know as a baseline, adjusted for “what people are actually recommending” rather than just benchmark supremacy:
-> Qwen 3.5
-> — most broadly recommended family right no
+> ML researcher making sense of AI research, products, and the uncertain technological future. PhD from Berkeley AI. Experience at Meta, DeepMind, HuggingFace.
+> Interconnects AI
+> natolambert overflow
+> Retort AI
+> +6
 
-## 4. Introducing the Substack app
+## 4. ATOM Report, post-training course, finishing my book, and research
 
-- **URL:** https://open.substack.com/pub/swyx/p/ainews-top-local-models-list-april?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+- **URL:** https://substack.com/app-link/post?publication_id=48206&post_id=194224428&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQyMjQ0MjgsImlhdCI6MTc3NjE5OTM1MiwiZXhwIjoxNzc4NzkxMzUyLCJpc3MiOiJwdWItNDgyMDYiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.WdxBUus-FJ8ebd59oFAhMh8dbBvFWl_TM49ztByLcg4
+- **Length:** 4950 chars
+
+> This post is a roundup of my recent efforts that did not warrant a standalone Interconnects post, why I’m spending time on them, and what they accomplished.
+> The ATOM Report: Measuring the Open Language Model Ecosystem
+> RLHF Book is done & ready for pre-order!
+> A post-training course I’m making
+> Recent technical research
+> Share
+> https://arxiv.org/abs/2604.07190
+> To accompany The ATOM Project
+> memo
+> , arguably a manifesto, making the case for investment in open models in the U.S. – originally launched in 
+
+## 5. ATOM Report, post-training course, finishing my book, and research
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvcm9ib3RpYy9wL3doYXQtaXZlLWJlZW4tYnVpbGRpbmctYXRvbS1yZXBvcnQ_dXRtX3NvdXJjZT1zdWJzdGFjayZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1yZXN0YWNrLWNvbW1lbnQmYWN0aW9uPXJlc3RhY2stY29tbWVudCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3hPVFF5TWpRME1qZ3NJbWxoZENJNk1UYzNOakU1T1RNMU1pd2laWGh3SWpveE56YzROemt4TXpVeUxDSnBjM01pT2lKd2RXSXRORGd5TURZaUxDSnpkV0lpT2lKd2IzTjBMWEpsWVdOMGFXOXVJbjAuV2R4QlV1cy1GSjhlYmQ1OW9GQWhNaDhkYkJ2RldsX1RNNDl6dEJ5TGNnNCIsInAiOjE5NDIyNDQyOCwicyI6NDgyMDYsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3NjE5OTM1MiwiZXhwIjoyMDkxNzc1MzUyLCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.hQyHrUDvhuY4F02v0vp82Ktvw-3IX5cZO6F90dIna90?&utm_source=substack&utm_medium=email
+- **Length:** 4950 chars
+
+> This post is a roundup of my recent efforts that did not warrant a standalone Interconnects post, why I’m spending time on them, and what they accomplished.
+> The ATOM Report: Measuring the Open Language Model Ecosystem
+> RLHF Book is done & ready for pre-order!
+> A post-training course I’m making
+> Recent technical research
+> Share
+> https://arxiv.org/abs/2604.07190
+> To accompany The ATOM Project
+> memo
+> , arguably a manifesto, making the case for investment in open models in the U.S. – originally launched in 
+
+## 6. Introducing the Substack app
+
+- **URL:** https://open.substack.com/pub/robotic/p/what-ive-been-building-atom-report?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
 - **Length:** 115 chars
 
 > World-class video, podcasts, and writing
 > The best stories, ideas, and culture right at your fingertips.
 > Get the app
 
-## 5. [AINews] Qwen3.5-397B-A17B: the smallest Open-Opus class, very efficient model
+## 7. ATOM Report, post-training course, finishing my book, and research
 
-- **URL:** https://substack.com/redirect/067efc24-b537-4b41-a9aa-69c4f537101c?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 1226 chars
+- **URL:** https://substack.com/redirect/a224dfa2-ea00-43ba-a8ee-7e9dd29479d7?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 4950 chars
 
-> a good ship from Qwen.
-> AI News for 2/13/2026-2/16/2026. We checked 12 subreddits,
-> 544 Twitters
-> and 24 Discords (
-> 261
-> channels, and
-> 26057
-> messages) for you. Estimated reading time saved (at 200wpm):
-> 2606
-> minutes.
-> AINews’ website
-> lets you search all past issues. As a reminder,
-> AINews is now a section of Latent Space
-> . You can
-> opt in/out
-> of email frequencies!
-> Congrats to
-> Pete Steinberger on joining OpenAI
-> , as we
-> predicted
-> . Not much else to add there so we won’t.
-> Today’s headliner is Qwen 3.5, whi
+> This post is a roundup of my recent efforts that did not warrant a standalone Interconnects post, why I’m spending time on them, and what they accomplished.
+> The ATOM Report: Measuring the Open Language Model Ecosystem
+> RLHF Book is done & ready for pre-order!
+> A post-training course I’m making
+> Recent technical research
+> Share
+> https://arxiv.org/abs/2604.07190
+> To accompany The ATOM Project
+> memo
+> , arguably a manifesto, making the case for investment in open models in the U.S. – originally launched in 
 
-## 6. [AINews] Gemma 4 crosses 2 million downloads
+## 8. ATOM Report, post-training course, finishing my book, and research
 
-- **URL:** https://substack.com/redirect/7df899bc-0673-4c90-9de8-0acf7f4984d2?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 12641 chars
+- **URL:** https://substack.com/redirect/edd87bdd-1b0d-488d-b650-2ec6c6eaf293?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 4950 chars
 
-> We commented on this
-> last Thursday
-> , but Gemma 4’s continued deployment and positive reviews over the weekend has pushed it to
-> around 2 million downloads in its first week
-> !
-> (For contrast,
-> Gemma 3
-> totaled 6.7m downloads
-> in the past year,
-> Gemma 2
-> had 1.4m downloads since Jun 2024 launch, whereas
-> Qwen 3.5
-> has gained about
-> 27m
-> downloads inclusive of the 1.5 months
-> since their 397B-A17B flagship model drop
-> )
-> The
-> Gemma 4 keynote
-> will be live in 3 days from London, which you can bookmark now:
-> Separate
+> This post is a roundup of my recent efforts that did not warrant a standalone Interconnects post, why I’m spending time on them, and what they accomplished.
+> The ATOM Report: Measuring the Open Language Model Ecosystem
+> RLHF Book is done & ready for pre-order!
+> A post-training course I’m making
+> Recent technical research
+> Share
+> https://arxiv.org/abs/2604.07190
+> To accompany The ATOM Project
+> memo
+> , arguably a manifesto, making the case for investment in open models in the U.S. – originally launched in 
 
-## 7. [AINews] Z.ai GLM-5: New SOTA Open Weights LLM
+## 9. ATOM Report, post-training course, finishing my book, and research
 
-- **URL:** https://substack.com/redirect/cc7929ce-c077-4cbd-9cab-202c8e4e882c?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 58644 chars
+- **URL:** https://substack.com/redirect/b4b36378-94ac-423e-8267-1dac24f7d377?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 4950 chars
 
-> AI News for 2/10/2026-2/11/2026. We checked 12 subreddits,
-> 544 Twitters
-> and 24 Discords (
-> 256
-> channels, and
-> 7988
-> messages) for you. Estimated reading time saved (at 200wpm):
-> 655
-> minutes.
-> AINews’ website
-> lets you search all past issues. As a reminder,
-> AINews is now a section of Latent Space
-> . You can
-> opt in/out
-> of email frequencies!
-> As we mentioned
-> yesterday
-> , China open model week is in full swing. Today was Z.ai’s turn to launch their big update before the Big Whale. Per
-> the GLM-5 blogpost
-> :
-> Op
+> This post is a roundup of my recent efforts that did not warrant a standalone Interconnects post, why I’m spending time on them, and what they accomplished.
+> The ATOM Report: Measuring the Open Language Model Ecosystem
+> RLHF Book is done & ready for pre-order!
+> A post-training course I’m making
+> Recent technical research
+> Share
+> https://arxiv.org/abs/2604.07190
+> To accompany The ATOM Project
+> memo
+> , arguably a manifesto, making the case for investment in open models in the U.S. – originally launched in 
 
-## 8. [AINews] MiniMax 2.7: GLM-5 at 1/3 cost SOTA Open Model
+## 10. ATOM Report, post-training course, finishing my book, and research
 
-- **URL:** https://substack.com/redirect/c6778ca0-cd80-45f4-bfe9-b50515a15fa2?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 15467 chars
+- **URL:** https://substack.com/redirect/44181163-5174-4b03-b736-79b35ddac683?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 4950 chars
 
-> Not 2 months after
-> their IPO
-> and
-> first public quarter
-> , MiniMax is back in the news with
-> MiniMax 2.7
-> , a nice bright spot in Chinese Open Models after the
-> changeover in Qwen
-> . They match
-> Z.ai’s GLM-5 SOTA open model from last month
-> , but the story is efficiency here (see green quadrant in
-> Artificial Analysis’ chart
-> ):
-> The team calls out “
-> Early Echoes of Self-Evolution
-> ”, calling it “our first model deeply participating in its own evolution.”, recalling
-> Karpathy’s Autoresearch
-> , although they on
+> This post is a roundup of my recent efforts that did not warrant a standalone Interconnects post, why I’m spending time on them, and what they accomplished.
+> The ATOM Report: Measuring the Open Language Model Ecosystem
+> RLHF Book is done & ready for pre-order!
+> A post-training course I’m making
+> Recent technical research
+> Share
+> https://arxiv.org/abs/2604.07190
+> To accompany The ATOM Project
+> memo
+> , arguably a manifesto, making the case for investment in open models in the U.S. – originally launched in 
 
-## 9. DeepSeek V3.2 & 3.2-Speciale: GPT5-High Open Weights, Context Management, Plans for Compute Scaling
+## 11. The ATOM Project
 
-- **URL:** https://substack.com/redirect/cb58dc0e-fdea-477a-a6b4-b9d000c8f410?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 145999 chars
+- **URL:** https://substack.com/redirect/04d00bf6-21dc-49f4-a1b6-a94add0143ee?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 7245 chars
 
-> Whale is all you need.
-> AI News for 11/28/2025-12/1/2025. We checked 12 subreddits, 544 Twitters and 24 Discords (205 channels, and 17803 messages) for you. Estimated reading time saved (at 200wpm): 1329 minutes. Our new website is now up with full metadata search and beautiful vibe coded presentation of all past issues. See https://news.smol.ai/ for the full news breakdowns and give us feedback on @smol_ai!
-> Launching
-> the Monday of NeurIPS week, DeepSeek shows that they are still shipping mainlin
+> On countless
+> benchmarks
+> Benchmarks
+> Standardized tests that measure AI model performance across various tasks like reading comprehension, math, coding, or reasoning. Examples include MMLU, HumanEval, and GSM8K.
+> , the leading American models have fallen behind counterparts from Chinese companies. In July 2024, American models in the form of Llama 3 had leading performance over any openly available Chinese models. Since then, a growing number of Chinese open model providers have surpassed and widen
 
-## 10. OpenAI's gpt-oss 20B and 120B, Claude Opus 4.1, DeepMind Genie 3
+## 12. ATOM Report, post-training course, finishing my book, and research
 
-- **URL:** https://substack.com/redirect/ac2fa23e-f7ad-4d8d-a446-de1668967f28?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 185481 chars
+- **URL:** https://substack.com/redirect/7fbbf7be-8637-447b-a5a6-a7e7769d2084?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 4950 chars
 
-> They put the Open back in OpenAI!
-> AI News for 8/4/2025-8/5/2025. We checked 12 subreddits, 544 Twitters and 29 Discords (227 channels, and 8121 messages) for you. Estimated reading time saved (at 200wpm): 615 minutes. Our new website is now up with full metadata search and beautiful vibe coded presentation of all past issues. See https://news.smol.ai/ for the full news breakdowns and give us feedback on @smol_ai!
-> Day 2 in what is expected to be the most packed AI news week of the year, 3 of the 
+> This post is a roundup of my recent efforts that did not warrant a standalone Interconnects post, why I’m spending time on them, and what they accomplished.
+> The ATOM Report: Measuring the Open Language Model Ecosystem
+> RLHF Book is done & ready for pre-order!
+> A post-training course I’m making
+> Recent technical research
+> Share
+> https://arxiv.org/abs/2604.07190
+> To accompany The ATOM Project
+> memo
+> , arguably a manifesto, making the case for investment in open models in the U.S. – originally launched in 
 
-## 11. Qwen/Qwen3-Coder-Next · Hugging Face
+## 13. RAM: Relative Adoption Metric
 
-- **URL:** https://substack.com/redirect/cd131893-9a67-471b-9fb9-85e0c6d4315b?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 6252 chars
+- **URL:** https://substack.com/redirect/40d782e5-a5a1-4935-8e56-77bbc8e6bc97?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 1837 chars
 
-> Qwen3-Coder-Next
-> Highlights
-> Today, we're announcing
-> Qwen3-Coder-Next
-> , an open-weight language model designed specifically for coding agents and local development. It features the following key enhancements:
-> Super Efficient with Significant Performance
-> : With only 3B activated parameters (80B total parameters), it achieves performance comparable to models with 10–20x more active parameters, making it highly cost-effective for agent deployment.
-> Advanced Agentic Capabilities
-> : Through an elaborate
+> Download counts alone can hide which models are truly breaking out across different size classes.
+> While building
+> The ATOM Project
+> and other tools to measure the open ecosystem at
+> Interconnects.ai
+> , we are often frustrated with using downloads as a primary metric. We, and the community, know that small models are downloaded much more, so it makes some adoption metrics favor organizations releasing small models. Over the 1,100+ leading LLMs we track carefully, more than 1.4 billion of ~2 billion t
 
-## 12. State of AI 2025: 100T Token LLM Usage Study
+## 14. ATOM Report, post-training course, finishing my book, and research
 
-- **URL:** https://substack.com/redirect/447751e9-4590-4c7c-94fc-102958427656?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 6422 chars
+- **URL:** https://substack.com/redirect/3aee9ddb-74c2-42ef-b57a-12fba54a986a?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 4950 chars
 
-> This empirical study offers a data-driven perspective on how LLMs are actually being used, highlighting several themes that nuance the conventional wisdom about AI deployment:
-> 1. A Multi-Model Ecosystem.
-> Our analysis shows that no single model dominates all usage. Instead, we observe a rich
-> multi-model ecosystem
-> with both closed and open models capturing significant shares. For example, even though OpenAI and Anthropic models lead in many programming and knowledge tasks, open source models like 
+> This post is a roundup of my recent efforts that did not warrant a standalone Interconnects post, why I’m spending time on them, and what they accomplished.
+> The ATOM Report: Measuring the Open Language Model Ecosystem
+> RLHF Book is done & ready for pre-order!
+> A post-training course I’m making
+> Recent technical research
+> Share
+> https://arxiv.org/abs/2604.07190
+> To accompany The ATOM Project
+> memo
+> , arguably a manifesto, making the case for investment in open models in the U.S. – originally launched in 
 
-## 13. Substack | Signup
+## 15. Gemma 4 and what makes an open model succeed
 
-- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoxOTQxNjIyMTUsInMiOjEwODQwODksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3NjE1NjIzOCwiZXhwIjoyMDkxNzMyMjM4LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.HlPQrBCJjr767NogsSCXlmPJywJGY9cL5BPJ4rIs0IA?
-- **Length:** 156 chars
+- **URL:** https://substack.com/redirect/777d25ce-a363-40f5-b9a2-c71aa632e0e7?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 8917 chars
 
-> Create your account
-> Sign up now, and publishing is free forever. Once you start charging for subscriptions, you keep 90% after credit card transaction fees.
+> Having written a lot of model release blog posts, there’s something much harder about reviewing open models when they drop relative to closed models, especially in 2026. In recent years, there were so few open models, so when
+> Llama 3
+> was released most people were still doing research on Llama 2 and super happy to get an update. When
+> Qwen 3
+> was released, the
+> Llama 4 fiasco
+> had just gone down, and a whole research community was
+> emerging to study RL on Qwen 2.5
+> — it was a no brainer to upgrade.
+> Tod
 
