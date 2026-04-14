@@ -1,15 +1,18 @@
 ---
-title: "Proprietary Context — AI時代の組織ガバナンス"
+title: "Proprietary Context — AI時代の組織ガバナンスとDiamond型組織図"
 aliases:
   - ai-org-governance
   - proprietary-context-moat
+  - agentic-org-chart
+  - diamond-organization
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-04-15
 tags:
   - concept
   - organization
   - governance
   - ai-native
+  - mckinsey
 status: draft
 ---
 
@@ -17,7 +20,7 @@ status: draft
 
 ## 概要
 
-AIが実行レイヤーを代替する時代において、企業の競争優位は**「何をどのように判断するか」という独自の文脈(context)**に収斂する。McKinseyのAgentic Organizationフレームワークに基づき、AI時代の組織ガバナンス・コンテキスト資産化を整理する。
+AIが実行レイヤーを代替する時代において、企業の競争優位は**「何をどのように判断するか」という独自の文脈(context)**に収斂する。McKinseyのAgentic Organizationフレームワーク、ReworkedのDiamond Org Chart議論、そしてAgile Leadership Dayの実践的組織図モデルを統合する。
 
 ## Proprietary Context Layer: 最後のモート
 
@@ -97,6 +100,40 @@ McKinseyのデータ:
 
 この加速は、組織設計の再構築を待ってはくれない。
 
+## Reworked: Humans & AI Agents — The Org Chart of Tomorrow
+
+2026年2月、Reworkedが**Diamond（ダイアモンド）型の組織図**を提案した:
+
+### Diamond Org Chartの階層
+
+| レイヤー | 役割 | 説明 |
+|---------|------|------|
+| **トップ（尖点）** | エグゼクティブリーダー | 戦略的意思決定。AI出力の監視。倫理的判断。 |
+| **上部** | プロジェクトリーダー/スーパーIC | 複数エージェントチームを横断的に管理。 |
+| **中央（最大幅）** | AIエージェント + 人間エキスパート | 日常的な実行はエージェント。人間はエッジケース、品質保証、関係構築。 |
+| **下部** | ジュニアメンバー/新人 | 学習フェーズ。エージェントを監督しつつスキルを吸収。 |
+| **底辺（尖点）** | 顧客/エンドユーザー | 最終的な価値受容者。エージェントとの直接インタラクションも増加。 |
+
+### Diamond型の意味
+- 従来のピラミッド型（トップが小さくボトムが大きい）と**逆転**
+- 中央のAI+エキスパート層が最も厚く、組織の主力として機能
+- 意思決定は分散化され、エグゼクティブは**監視・方向性設定**に集中
+
+## Agile Leadership Day: Agentic AI Workforce Org Chart
+
+2026年のAgile Leadership Day Indiaでは、より具体的な実装モデルが提示された:
+
+### 新しい組織構造の要素
+1. **AI-Augmented Workforce**: AIエージェントと人間のハイブリッドチーム
+2. **Agent Orchestration Layer**: エージェントの割り当て、優先順位付け、監視を行う中間層
+3. **Human-in-the-Loop Control**: 重要判断には人間の承認が必要。完全自律ではない
+4. **Continuous Learning Loop**: エージェントの出力を定期的に評価・改善
+
+### 実装上の課題
+- エージェント間の依存関係管理
+- 責任の所在の明確化（誰が最終的にアカウンタブルか）
+- 人間の役割の再定義（監督者から**成果責任者**へ）
+
 ## 行動指針: CEO/リーダー向けチェックリスト
 
 | 優先度 | アクション |
@@ -108,10 +145,13 @@ McKinseyのデータ:
 ## 関連概念
 
 - [[ai-org-from-hierarchy-to-intelligence]] — Blockの階層からインテリジェンスへの移行
-- [[ai-org-solo-founder-and-super-ic]] — Solo FounderからSuper ICへのパス
+- [[ai-org-solo-founder-and-super-ic]] — Solo FounderとSuper IC
 - [[agentic-engineering]] — 開発者のAI活用ワークフロー
-- [[harness-engineering]] — エージェントの制御・構造化
+- [[harness-engineering]] — エージェントの制御・構焦化
+- [[multi-agent-autonomy-scale]] — 大規模マルチエージェントの自律とスケール
 
 ## ソース
 
 - [McKinsey: The Agentic Organization (Sep 2025)](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era)
+- [Reworked: Humans and AI Agents — Planning the Org Chart of Tomorrow (Feb 2026)](https://www.reworked.co/employee-experience/humans-and-ai-agents-planning-the-org-chart-of-tomorrow/)
+- [Agile Leadership Day India: Agentic AI Workforce Org Chart (2026)](https://agileleadershipdayindia.org/blogs/agentic-ai-leadership-management/agentic-ai-workforce-org-chart-structure.html)

@@ -1,3 +1,53 @@
+## 2026-04-16 — AI Organization Concept Hierarchy Upgrade (Block, Reddit, McKinsey, Reworked, Agile Leadership Day)
+
+### Concept Pages Upgraded (3 pages + front page)
+- **[[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]]** → Full upgrade from Block article:
+  - AI's true potential quote (coordination mechanism vs productivity tool)
+  - Historical hierarchy analysis (Roman army → Prussian General Staff → US Railroads → Taylorism → Post-war → Tech era)
+  - Company World Model + Customer World Model detailed breakdown
+  - 4 Building Blocks (Capabilities, World Model, Intelligence Layer, Interfaces)
+  - Failure-signal driven roadmap generation
+  - 3 new roles (ICs, DRIs, Player-Coaches) with hierarchy inversion
+  - Company identity revelation thesis
+- **[[concepts/ai-organization/ai-org-solo-founder-and-super-ic]]** → Full upgrade from Reddit/FourWeekMBA:
+  - Reddit r/ClaudeCode hot take analysis (1 person = 10-person team)
+  - Domain knowledge prerequisite thesis
+  - FrontPage era historical parallel (1990s web development democratization)
+  - MVP commoditization thesis (execution speed → product vision/monetization)
+  - FourWeekMBA Super IC framework (traditional IC vs Super IC comparison)
+  - $10M→$100M Solo Founder path (phases, success factors, scaling limits)
+  - GIGO principle and quality assurance challenges
+- **[[concepts/ai-organization/ai-org-context-as-moat]]** → Full upgrade from McKinsey/Reworked/Agile Leadership Day:
+  - McKinsey Agentic Organization 5 pillars (already present, confirmed)
+  - Reworked Diamond Org Chart (inverted pyramid: AI+experts at center)
+  - Agile Leadership Day practical implementation model
+  - Agent Orchestration Layer concept
+  - Human-in-the-loop control framework
+
+### Front Page Upgraded
+- **[[concepts/ai-organization/_index]]** → Added 3-model comparison table (Block vs McKinsey vs Solo Founder), cross-cutting themes matrix, updated source list with 7 entries
+
+### Updated Files
+- **wiki/index.md** — AI Organization section descriptions upgraded with key concepts
+- **wiki/log.md** — This entry
+
+### Key Insights
+- **Hierarchy as information routing protocol**: Jack Dorsey's most powerful insight — layers existed to overcome human cognitive limits (span of 3-8). AI removes this bottleneck.
+- **Failure-signal roadmap**: Block's innovation — roadmap emerges from capability gaps, not PM hypotheses. Reality-driven planning.
+- **Diamond vs Pyramid organization**: Traditional pyramids invert when AI executes. Humans become supervisors at top/bottom, AI+experts form the thick middle.
+- **MVP commoditization paradox**: AI makes building easy but building the RIGHT thing harder. Competitive advantage shifts to domain knowledge and monetization strategy.
+- **FrontPage warning**: 1990s democratized web creation but created unmaintainable spaghetti code. Same risk with AI coding — need architecture guardrails early.
+
+### Sources
+- https://block.xyz/inside/from-hierarchy-to-intelligence
+- https://www.reddit.com/r/ClaudeCode/comments/1ri5pnc/hot_take_solo_founders_with_ai_are_about_to_build/
+- https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era
+- https://www.reworked.co/employee-experience/humans-and-ai-agents-planning-the-org-chart-of-tomorrow/
+- https://agileleadershipdayindia.org/blogs/agentic-ai-leadership-management/agentic-ai-workforce-org-chart-structure.html
+- https://fourweekmba.com/solopreneurs/
+
+---
+
 ## 2026-04-16 — Vivek Trivedy (@vtrivedy10) entity page created
 
 ### New Entity Pages

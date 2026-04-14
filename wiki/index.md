@@ -2,7 +2,7 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-Last updated: 2026-04-15 (Personal Superintelligence concept page, Meta entity updated)
+Last updated: 2026-04-15 (AI Organization concept hierarchy upgraded with Block full content, Solo Founder debate, McKinsey Diamond org chart)
 
 ## Entity Pages (70)
      8|
@@ -282,10 +282,10 @@ Last updated: 2026-04-15 (Personal Superintelligence concept page, Meta entity u
 
 ### AI Organization (4)
 
-|- [[concepts/ai-organization/_index]] — AI Organization (階層からインテリジェンスへ、Solo Founder、Context as Moat)
-|- [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]] — Block: Hierarchy to Intelligence (Jack Dorsey)
-|- [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder & Super IC (Reddit/FourWeekMBA)
-|- [[concepts/ai-organization/ai-org-context-as-moat]] — Proprietary Context (McKinsey)
+|- [[concepts/ai-organization/_index]] — AI Organization (階層からインテリジェンスへ、Solo Founder、Context as Moat、Diamond Org Chart)
+|- [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]] — Block: Hierarchy to Intelligence (Jack Dorsey: World Model, 4 Building Blocks, 3 Roles, Failure-Driven Roadmap)
+|- [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder & Super IC (Reddit/FourWeekMBA: MVP commoditization, FrontPage parallel, $10M→$100M path)
+|- [[concepts/ai-organization/ai-org-context-as-moat]] — Proprietary Context (McKinsey 5 Pillars, M-Shaped Supervisor, Diamond Org Chart, Agentic Governance)
 
 ## Comparison Pages (6)
 

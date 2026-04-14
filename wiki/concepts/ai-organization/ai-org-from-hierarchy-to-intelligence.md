@@ -3,6 +3,7 @@ title: "Hierarchy to Intelligence — Blockの組織モデル変革"
 aliases:
   - block-hierarchy-to-intelligence
   - jack-dorsey-org-model
+  - ai-native-organization
 created: 2026-04-13
 updated: 2026-04-13
 tags:
@@ -10,6 +11,7 @@ tags:
   - organization
   - block
   - jack-dorsey
+  - ai-native
 status: draft
 ---
 
@@ -17,45 +19,76 @@ status: draft
 
 ## 概要
 
-Jack Dorseyが2024年に提唱した**Hierarchy to Intelligence**モデル。従来のヒエラルキー型意思決定を廃し、**「文脈駆動の自律実行 + 透明性ベースの監視」**への移行を宣言。Block（旧Square）の実践から得られたAgentic Design Principlesを整理する。
+Jack Dorseyが2024年にBlock（旧Square）で実践した**Hierarchy to Intelligence**モデル。従来のヒエラルキー型意思決定を廃し、**「文脈駆動の自律実行 + 透明性ベースの監視」**への移行を宣言。AIを単なる生産性向上ツールではなく、**「協調メカニズムそのものの再設計」**として捉える。
 
-## 核心原則
+## AIの真のポテンシャル
 
-### 1. Decision Rights Matrix
-- 誰が何を決定するかの明確化
-- **エスカレーションは例外**。デフォルトで現場が決定
-- AIエージェントには「自律実行権限」を付与。人間は「レビュー権限」のみ
+> *"Most companies are focused on AI as a productivity enhancer. Few are focused on the potential of AI to change how we work together."*
 
-### 2. Open-Book Telemetry
-- 組織の全メトリクスをリアルタイムで可視化
-- 意思決定の根拠を誰でも検証可能
-- **「透明性が信頼を生む」** — 隠蔽より開示
+Blockの主張: AIは既存ワークフローを効率化する「コパイロット」ではなく、**中間管理の情報をルーティングする機能を代替する協調メカニズム**として機能する。
 
-### 3. Context-Driven Execution
-- 上意下達ではなく、文脈を理解した上での自律実行
-- AIエージェントは「文脈ファイル」（CLAUDE.md等）から判断基準を摂取
-- 人間は「文脈の設計者」として機能
+## 階層の歴史 — なぜヒエラルキーが生まれたか
 
-## Agentic Design Principles
+組織の階層構造は技術的制約の産物だった:
 
-Blockが実践するAI時代の組織設計原則:
+| 時代 | イノベーション | 中核機能 |
+|------|--------------|---------|
+| **ローマ軍** | 階層型編成 (`contubernium` → `legion`) | 限られた通信手段での遠距離協調 |
+| **プロイセン (1806)** | 参謀本部 | 事前計算された決定、情報ルーティング、line vs staffの形式化 |
+| **米国鉄道 (1850s)** | 最初の組織図 (Daniel McCallum) | 軍事階層の商業化。大規模衝突防止 |
+| **テイラー主義** | 科学的管理法 | タスクの専門化・測定 → 機能別ピラミッド |
+| **戦後** | マトリクス組織 & 7Sフレームワーク | 中央基準と地方の俊敏性のバランス |
+| **テック時代** | スクワッド、ホラクラシー、フラット構造 | 大規模化で失敗。情報ルーティングの限界により階層に回帰 |
 
-| 原則 | 説明 | 実践例 |
-|------|------|--------|
-| **Autonomy by Default** | 可能な限り自律実行。エスカレーションは最小化 | AIエージェントがPRを自動マージ |
-| **Transparency First** | 判断根拠・メトリクス・意思決定を全員に公開 | Open-Book Telemetryダッシュボード |
-| **Context Over Control** | 管理ではなく文脈提供で方向付け | CLAUDE.md、プロジェクトコンテキストファイル |
-| **Rapid Feedback Loops** | 短いサイクルで検証・修正 | 継続的デプロイ、リアルタイムモニタリング |
-| **Outcome-Aligned Teams** | 機能別ではなく成果別でチーム編成 | クロスファンクショナルなAI/Humanハイブリッドチーム |
+> *"The structure (8 → 80 → 480 → 5,000) was an information routing protocol built around a simple human limitation: a leader can effectively manage somewhere between three and eight people."*
 
-## Hierarchy → Intelligence の移行パス
+> *"The question was never whether you needed layers. The question was whether humans were the only option for what those layers do. They aren't anymore."*
 
-### 段階的アプローチ
-1. **透明性の確保**: メトリクス・判断基準の可視化
-2. **権限の委譲**: 現場への意思決定権移譲
-3. **文脈の構造化**: AIエージェントが摂取可能な形式でのナレッジベース構築
-4. **自律実行の拡大**: エージェントによるタスク自動実行
-5. **監視の自動化**: リアルタイムアラート、ガードレール設定
+## Company World Model: AIによる情報ルーティングの代替
+
+Blockが構築した2つのワールドモデル:
+
+### 1. Company World Model (内部)
+- リモートファースト、マシンリーダブルなアーティファクト（コード、決定、計画、進捗）で構築
+- 何が構築され、何がブロックされ、何がリソースされているかを継続的に追跡
+- **管理職のコンテキスト収集機能を代替**
+
+### 2. Customer World Model (外部)
+- 独自のプロプライエタリな双方向トランザクションデータ（Cash App購入者 + Square加盟店）
+- 顧客/加盟店ごとの金融リアリティを作成。運用ごとに複利
+- > *"People lie on surveys. They ignore ads. They abandon carts. But when they spend, save, send, borrow, or repay, that's the truth."*
+
+## 4つのビルディングブロック
+
+従来のプロダクトチームが事前に決められたロードマップを構築するのではなく:
+
+| ブロック | 説明 | 例 |
+|---------|------|-----|
+| **1. Capabilities** | アトミックな金融プリミティブ（支払い、融資、銀行、給与、BNPL）。UIなし。規制・ネットワーク効果のモートで習得困難 | 決済処理エンジン、与信判断ロジック |
+| **2. World Model** | 双方向の運用・顧客インテリジェンス。生トランザクションデータ → 因果・予測モデルへ進化 | 季節的なキャッシュフロー予測 |
+| **3. Intelligence Layer** | Capabilitiesを文脈的なソリューションに**自律的に構成**。 failure signalが未来のロードマップ | 季節的落ち込みを検知 → 短期融資 + 返済_scheduleを自動提案 |
+| **4. Interfaces** | 配信面（Square、Cash App、Afterpay、TIDAL、bitkey）。配布には重要だが、**価値創造はモデル&インテリジェンス層**に存在 | ユーザー向けアプリ、加盟店ダッシュボード |
+
+> **ロードマップの根本的転換**: *"When the intelligence layer tries to compose a solution and can't because the capability doesn't exist, that failure signal is the future roadmap."* — 仮説駆動のPM計画から**現実駆動のバックログ生成**へ。
+
+## AIネイティブ企業の3つのロール
+
+階層を反転: インテリジェンスはシステムに存在。人間は**直観、倫理、新規問題解決が必要なエッジ**で動作。
+
+### 1. Individual Contributors (ICs)
+- システム層を構築・運用する専門技術者
+- ワールドモデルが文脈を提供。**承認チェーンは不要**
+- 深い専門性を活かしてCapabilityの実装・改善に集中
+
+### 2. Directly Responsible Individuals (DRIs)
+- 横断的な問題/成果を一時的に所有（例: 90日間の加盟店離脱防止イニシアチブ）
+- capability、model、interfaceチームから**リソースをプルする権限**を持つ
+- プロジェクト完了後は解散。次のDRIが別の課題を所有
+
+### 3. Player-Coaches
+- ハンズオンビルディングと人材育成を組み合わせ
+- 技術的クラフトと成長を担当
+- **アライメントと戦略はシステム&DRIsが自動化**
 
 ## 従来の階層モデルとの比較
 
@@ -66,20 +99,25 @@ Blockが実践するAI時代の組織設計原則:
 | **管理の役割** | 指示・監視 | 文脈設計・ガードレール設定 |
 | **AIの位置付け** | ツール・補助 | 自律実行エージェント |
 | **スケーラビリティ** | 人头比に依存 | コンテキスト品質に依存 |
+| **ロードマップ生成** | 仮説駆動PM | 現実駆動（failure signal） |
 
-## リスクと課題
+## AIと企業アイデンティティ
 
-- **透明性の滥用**: 情報過多によるノイズ増加
-- **自律性の暴走**: ガードレール不備による予期せぬ実行
-- **文脈の陳腐化**: 急速に変化する環境でのコンテキスト維持コスト
-- **人間の疎外**: AI依存度過ぎによるスキル劣化
+> *"If the answer is nothing, AI is just a cost optimization story... If the answer is deep, AI doesn't augment your company. It reveals what your company actually is."*
+
+ブロックのモート: **エコノミックグラフ** — 数百万の加盟店/消費者にわたるリアルタイムの双方向トランザクションデータ。この理解はシステムが運用されるたびに複利で蓄積。
+
+## 実行上の現実
+
+移行は容易ではない。**「壊れてから動く」**状態を経験する。成功にはドメインに対する深い独自理解が必要。それがなければ、AIは短期的なコスト最適化ストーリーに終わる。
 
 ## 関連概念
 
-- [[ai-org-context-as-moat]] — Proprietary Context（McKinsey）
+- [[ai-org-context-as-moat]] — Proprietary ContextとFission-Fusion
 - [[ai-org-solo-founder-and-super-ic]] — Solo FounderとSuper IC
 - [[agentic-engineering]] — 開発者のAI活用ワークフロー
 - [[harness-engineering]] — エージェントの制御・構造化
+- [[context-engineering]] — コンテキストエンジニアリング
 
 ## ソース
 
