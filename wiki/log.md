@@ -1,3 +1,19 @@
+## 2026-04-15 — Personal Superintelligence concept page created, Meta entity updated
+
+### New Concept Pages
+- **[[concepts/personal-superintelligence]]** — Personal Superintelligence: vendor-neutral synthesis of the philosophical split between central automation (OpenAI/Anthropic/Google) and personal empowerment (Meta/OpenClaw/Local AI). Covers 3 philosophical fault lines (data sovereignty, hardware, open vs closed), VisionClaw pattern, agentic commerce trend, infrastructure spend war, and data sovereignty movement.
+
+### Updated Entity Pages
+- **[[entities/meta]]** — Added Personal Superintelligence vision section (Zuckerberg philosophy), Ray-Ban AI glasses collaboration details (700万+ sold 2025, 2000-3000万 target 2026), Agentic Commerce strategy, Superintelligence Labs (Alexandr Wang, $115B-$135B capex 2026), Muse Spark context, Key People section, cross-references to personal-ai ecosystem players.
+
+### Cross-References
+- Related to [[concepts/anthropic-openclaw-conflict]]: Platform control vs open access tension
+- Related to [[concepts/death-of-browser]]: Wearable-first computing paradigm
+- Related to [[concepts/open-claw-ecosystem]]: Community-led personal agent movement
+- Connected to [[entities/peter-steinberger]]: OpenClaw "you own your agent" philosophy
+- Connected to [[entities/shlok-khemani]]: Filesystem-first personal AI memory
+- Connected to [[entities/sero]]: Freedom Tech / local AI infrastructure
+- Connected to [[entities/mario-zechner]]: Minimal agent on consumer hardware
 ## 2026-04-16 — Samuel Colvin Entity Page Created (L3 depth)
 
 ### New Entity Pages

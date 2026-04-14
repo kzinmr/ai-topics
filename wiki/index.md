@@ -2,7 +2,7 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-Last updated: 2026-04-15 (Dario Amodei, Mustafa Suleyman, Demis Hassabis entity pages created, L3 depth)
+Last updated: 2026-04-15 (Personal Superintelligence concept page, Meta entity updated)
 
 ## Entity Pages (70)
      8|
@@ -83,6 +83,7 @@ Last updated: 2026-04-15 (Dario Amodei, Mustafa Suleyman, Demis Hassabis entity 
     80|- [[entities/seangoedecke-com]] — Sean Goedecke
     81|- [[entities/shkspr-mobi]] — Terence Eden
     82|- [[entities/simon-willison]] — Simon Willison
+- [[entities/samuelcolvin|Samuel Colvin]] — Founder & CEO at Pydantic. Creator of Pydantic (46M+ monthly downloads), Pydantic AI, Monty sandbox. "AI: it's still Engineering" philosophy. Type-safe agent frameworks, developer experience optimization.
     83|- [[entities/simone-salis]] — Simone Salis
 - [[entities/sero]] — Sero (0xSero)
 - [[entities/skyfall-dev]] — Skyfall
@@ -210,6 +211,7 @@ Last updated: 2026-04-15 (Dario Amodei, Mustafa Suleyman, Demis Hassabis entity 
    196||- [[concepts/llm-evaluation-harness]] — LLM Evaluation Harness
    197||- [[concepts/local-llm]] — Local LLM Inference (llama.cpp, Ollama, GGUF)
    198|||- [[concepts/karpathy-loop]] — The Karpathy Loop (Autonomous Experiment Design, autoresearch)
+|- [[concepts/personal-superintelligence]] — Personal Superintelligence (Meta vs OpenClaw vs Local AI philosophies)
 |- [[concepts/meta-harness]] — Meta-Harness
    199||- [[concepts/scaling-without-slop]] — Scaling without Slop
    200||- [[concepts/world-models-science]] — World Models for Scientific Discovery
