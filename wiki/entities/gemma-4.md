@@ -49,6 +49,35 @@ Family of open-weight models (Apache 2.0) from Google DeepMind designed for on-d
 - Enables local agent deployments without cloud dependency
 - Competitive response to proprietary models
 - Part of Google's open model strategy
+- Apache 2.0 licensing removes barriers compared to Meta's restrictive Llama license
+
+## What Makes an Open Model Succeed
+
+Analysis by Nathan Lambert (Interconnects.ai, April 2026) identifies key success factors:
+
+### The Crowded Open Model Landscape (2026)
+Gemma 4 competes with: Qwen 3.5, Kimi K2.5, GLM 5, MiniMax M2.5, GPT-OSS, Arcee Large, Nemotron 3, OLMo 3, and more. The space is "populated but full of hidden opportunity."
+
+### Key Success Factors
+1. **Licensing simplicity** — Apache 2.0 (Gemma) removes barriers vs. restrictive licenses (Llama)
+2. **Ecosystem support** — Models need community, tooling, and documentation
+3. **Release cadence** — Regular updates maintain mindshare
+4. **Per-model impact** — GPT-OSS shows that 2 exceptional models can outsell 20 mediocre ones
+
+### The "Dark Matter" Potential
+> *"The potential of open models feels like a dark matter, a potential we know is huge, but few clear recipes and examples for how to unlock it are out there."*
+> — Nathan Lambert, April 2026
+
+Agentic AI, OpenClaw, and similar tools will "spur mass experimentation in open models to complement the likes of Claude and Codex, not replace them."
+
+### Benchmarks Are Incomplete
+For open models especially, benchmarks at release tell an incomplete story. New open models have "much higher variance and ability to surprise" — spending a few hours in agentic workflows reveals more than benchmark scores.
+
+### Gemma 4's Position
+- Apache 2.0 license positions it well against Llama's restrictions
+- MoE architecture (26B) enables efficient local deployment
+- Strong tool use and structured output support makes it agent-ready
+- Small enough for CPU inference with strategic expert loading
 
 ## MoE Expert Routing Visualization
 

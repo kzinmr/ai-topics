@@ -4,6 +4,7 @@ handle: "@natolambert"
 url: "https://www.natolambert.com/"
 twitter: "https://x.com/natolambert"
 status: active
+updated: 2026-04-14
 tags:
   - person
   - ai-research
@@ -13,6 +14,8 @@ tags:
   - allen-institute-ai
   - huggingface
   - interconnects
+  - atom-project
+  - ram-metric
 ---
 
 
@@ -72,6 +75,25 @@ His unconventional path — starting his Ph.D. in MEMS/physics, being rejected b
 - **Podcast**: "Interconnects Interviews" featuring conversations with leading AI researchers
 - **Top podcast appearances**: Lex Fridman (2x), Latent Space (2x), ChinaTalk (5x), The MAD Podcast, Lawfare's "Scaling Laws", AI Summer
 - **2025 highlights**: Covered DeepSeek V3/V4, OLMo 3 launch, RLVR revolution, sycophancy in LLMs
+- **2026 highlights**: ATOM Report release, RAM metric development, Gemma 4 analysis, RLHF Book publication
+
+### April 2026 Developments
+
+**ATOM Report & RAM Metric**: Released "The ATOM Report" with updated Relative Adoption Metric (RAM) showing:
+- GPT-OSS's exceptional per-model performance despite only 2 releases
+- Chinese models dominating top 10 LMArena positions
+- Meta's Llama derivative share dropping from 50% to 15%
+- RAM Score methodology: time+size normalized adoption trajectory prediction
+
+**Gemma 4 Analysis**: Published insights on open model success factors, noting:
+- 2026 open model landscape is crowded (Qwen 3.5, Kimi K2.5, GLM 5, MiniMax M2.5, GPT-OSS, Arcee Large, Nemotron 3, OLMo 3)
+- Open models feel like "dark matter" — huge potential but few clear recipes
+- Agentic AI and OpenClaw will spur mass experimentation with open models
+- Key success factors: licensing simplicity, ecosystem support, release cadence
+
+**RLHF Book Completed**: The RLHF Book is done and ready for pre-order via Manning (also available free at rlhfbook.com with 1,764+ GitHub stars).
+
+**Post-Training Course**: Announced development of a comprehensive post-training course covering SFT, DPO, RLVR, and synthetic data pipelines.
 
 ## Core Ideas
 

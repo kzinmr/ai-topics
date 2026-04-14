@@ -1,438 +1,643 @@
-# X/Twitter accounts for wiki entity generation
-# Fields:
-#   handle: X/Twitter handle (required)
-#   name: Display name (optional - will be scraped from blog/X if empty)
-#   blog: Blog URL (optional)
-#   rss: RSS feed URL (optional - auto-discovered from blog if empty)
-#   topics: Topic tags for categorization
-#   github: GitHub username (optional)
-#   notes: Any extra context for Hermes enrichment
-
 accounts:
-  - handle: "@willccbb"
-    name: "Will Brown"
-    topics: [ai, ml-research, rlhf]
-    notes: "RLHF/alignment researcher, active on ML Twitter"
-
-  - handle: "@natolambert"
-    name: "Nathan Lambert"
-    blog: "https://www.interconnects.ai"
-    rss: "https://www.interconnects.ai/feed"
-    topics: [ai, rlhf, open-source-models, ai-policy]
-    notes: "Interconnects newsletter, ex-HuggingFace, AI2 RLHF lead"
-
-  - handle: "@0xsero"
-    name: "Sero"
-    topics: [ai, ml-engineering, open-source]
-    notes: "ML engineering, open-source AI community"
-
-  - handle: "@teknium"
-    name: "Teknium"
-    topics: [ai, fine-tuning, open-source-models, datasets]
-    notes: "Creator of OpenHermes datasets, Nous Research co-founder"
-
-  - handle: "@dejavucoder"
-    name: "Sankalp Sinha"
-    blog: "https://sankalp.bearblog.dev"
-    topics: [ai, coding, ml-engineering]
-    notes: "ML engineer, bearblog author"
-
-  - handle: "@geoffreylitt"
-    name: "Geoffrey Litt"
-    blog: "https://www.geoffreylitt.com"
-    topics: [end-user-programming, local-first, ai-tools]
-    notes: "Ink & Switch researcher, end-user programming, Potluck, Riffle"
-
-  - handle: "@trq212"
-    name: "Thariq Shihipar"
-    blog: "https://www.thariq.io"
-    topics: [ai, startups, tech]
-    notes: ""
-
-  - handle: "@RLanceMartin"
-    name: "Lance Martin"
-    blog: "https://rlancemartin.github.io"
-    topics: [ai, langchain, rag, agents]
-    notes: "LangChain team, RAG and agent workflows"
-
-  - handle: "@gm8xx8"
-    name: "gm8xx8"
-    topics: [ai, ml-engineering]
-    notes: ""
-
-  - handle: "@Grad62304977"
-    name: "Grad"
-    topics: [ai, ml-research, training]
-    notes: "ML research, training experiments"
-
-  - handle: "@eliebakouch"
-    name: "Elie Bakouch"
-    topics: [ai, ml-engineering]
-    notes: ""
-
-  - handle: "@arlanr"
-    name: "Arlan R"
-    topics: [ai, ml-engineering]
-    notes: ""
-
-  - handle: "@corbtt"
-    name: "Corbett"
-    topics: [ai, startups]
-    notes: ""
-
-  - handle: "@lilianweng"
-    name: "Lilian Weng"
-    blog: "https://lilianweng.github.io"
-    topics: [ai, ml-research, deep-learning, safety]
-    notes: "OpenAI VP of Research, famous ML blog posts (Lil'Log)"
-
-  - handle: "@johnowhitaker"
-    name: "Jonathan Whitaker"
-    blog: "https://johnowhitaker.dev"
-    topics: [ai, generative-models, diffusion, education]
-    notes: "AI educator, generative models, Answer.AI"
-
-  - handle: "@bclavie"
-    name: "Benjamin Clavié"
-    blog: "https://ben.clavie.eu/posts"
-    topics: [ai, information-retrieval, nlp, rag]
-    notes: "IR/NLP researcher, RAGatouille creator, ColBERT expert"
-
-  - handle: "@vanstriendaniel"
-    name: "Daniel van Strien"
-    blog: "https://danielvanstrien.xyz"
-    topics: [ai, huggingface, datasets, digital-humanities]
-    notes: "Hugging Face, datasets, digital humanities background"
-
-  - handle: "@HamelHusain"
-    name: "Hamel Husain"
-    blog: "https://hamel.dev"
-    topics: [ai, ml-engineering, llm-ops, developer-tools]
-    notes: "ML engineer, nbdev/fastai contributor, LLM evaluation expert"
-
-  - handle: "@eugeneyan"
-    name: "Eugene Yan"
-    blog: "https://eugeneyan.com/writing"
-    topics: [ai, ml-systems, recommender-systems, applied-ml]
-    notes: "Amazon senior applied scientist, ML systems in production"
-
-  - handle: "@charles_irl"
-    name: "Charles Frye"
-    blog: "https://charlesfrye.github.io"
-    topics: [ai, ml-engineering, gpu, infrastructure]
-    notes: "Modal, ML infrastructure, GPU economics educator"
-
-  - handle: "@ankrgyl"
-    name: "Ankur Goyal"
-    blog: "https://www.braintrust.dev/blog"
-    topics: [ai, evaluation, llm-ops, developer-tools]
-    notes: "Braintrust CEO, LLM evaluation and observability"
-
-  - handle: "@TheZachMueller"
-    name: "Zach Mueller"
-    blog: "https://muellerzr.github.io/blog"
-    topics: [ai, huggingface, accelerate, training]
-    notes: "Hugging Face, Accelerate maintainer, training optimization"
-
-  - handle: "@jxmnop"
-    name: "Jxmo"
-    blog: "https://blog.jxmo.io"
-    topics: [ai, ml-engineering]
-    notes: ""
-
-  - handle: "@Dorialexander"
-    name: "Dorialexander"
-    blog: "https://vintagedata.org/blog"
-    topics: [ai, data, digital-humanities]
-    notes: "Vintage Data blog"
-
-  - handle: "@BEBischof"
-    name: "Bryan Bischof"
-    blog: "https://www.rip-grep.com"
-    topics: [ai, ml-engineering, data-science]
-    notes: "Hex Head of AI, rip-grep blog"
-
-  - handle: "@ptkbhv"
-    name: "Pratik Bhavsar"
-    blog: "https://galileo.ai/blog"
-    topics: [ai, evaluation, llm-ops]
-    notes: "Galileo AI, LLM evaluation and observability"
-
-  - handle: "@DrJimFan"
-    name: "Jim Fan"
-    blog: "https://jimfan.me"
-    topics: [ai, embodied-ai, robotics, foundation-models]
-    notes: "NVIDIA senior research scientist, embodied AI, foundation agents"
-
-  - handle: "@lateinteraction"
-    name: "Late Interaction"
-    topics: [ai, information-retrieval, nlp]
-    notes: "IR/NLP focused account"
-
-  - handle: "@ryancarson"
-    name: "Ryan Carson"
-    blog: "https://www.ryancarson.com/articles"
-    topics: [ai, startups, education]
-    notes: "Treehouse founder, tech education"
-
-  - handle: "@spikedoanz"
-    name: "Spike"
-    blog: "https://supaiku.com"
-    topics: [ai, ml-engineering]
-    notes: ""
-
-  - handle: "@_xjdr"
-    name: "xjdr"
-    topics: [ai, infrastructure, systems]
-    notes: ""
-
-  - handle: "@ctatedev"
-    name: "Chris Tate"
-    blog: "https://ctate.dev"
-    topics: [ai, developer-tools, web]
-    notes: ""
-
-  - handle: "@Vtrivedy10"
-    name: "Varun Trivedy"
-    blog: "https://www.vtrivedy.com/posts"
-    topics: [ai, ml-engineering]
-    notes: ""
-
-  - handle: "@dabit3"
-    name: "Nader Dabit"
-    blog: "https://nader.substack.com"
-    topics: [ai, web3, developer-tools, developer-relations]
-    notes: "Developer advocate, web3/AI builder, Aave/Lens/EigenLayer"
-
-  - handle: "@burkov"
-    name: "Andriy Burkov"
-    blog: "https://aiweekly.substack.com"
-    topics: [ai, ml-research, education]
-    notes: "Author of 'The Hundred-Page Machine Learning Book', AI Weekly newsletter"
-
-  - handle: "@_philschmid"
-    name: "Philipp Schmid"
-    blog: "https://www.philschmid.de"
-    topics: [ai, huggingface, deployment, llm-ops]
-    notes: "Hugging Face technical lead, deployment and optimization guides"
-
-  - handle: "@badlogicgames"
-    name: "Mario Zechner"
-    blog: "https://mariozechner.at"
-    topics: [ai, game-dev, open-source, java]
-    notes: "libGDX creator, game developer, systems programmer"
-
-  - handle: "@dbreunig"
-    name: "Drew Breunig"
-    blog: "https://www.dbreunig.com"
-    topics: [ai, data, product]
-    notes: ""
-
-  - handle: "@samuelcolvin"
-    name: "Samuel Colvin"
-    topics: [python, open-source, pydantic, ai-tools]
-    notes: "Pydantic creator, PydanticAI, Python open-source"
-
-  - handle: "@willmcgugan"
-    name: "Will McGugan"
-    blog: "https://willmcgugan.github.io"
-    topics: [python, open-source, tui, developer-tools]
-    notes: "Rich/Textual creator, Python TUI frameworks"
-
-  - handle: "@mitsuhiko"
-    name: "Armin Ronacher"
-    blog: "https://lucumr.pocoo.org"
-    topics: [python, rust, open-source, web]
-    notes: "Flask/Jinja2/Sentry creator, Rust advocate, Lucumr blog"
-
-  - handle: "@hynek"
-    name: "Hynek Schlawack"
-    blog: "https://hynek.me/articles"
-    topics: [python, open-source, devops, software-engineering]
-    notes: "attrs/structlog creator, Python packaging, DevOps"
-
-  - handle: "@karrisaarinen"
-    name: "Karri Saarinen"
-    topics: [design, developer-tools, startups]
-    notes: "Linear co-founder/CEO, design-driven product development"
-
-  - handle: "@ScottWu46"
-    name: "Scott Wu"
-    topics: [ai, coding-agents, developer-tools]
-    notes: "Cognition/Devin CEO, AI coding agents"
-
-  - handle: "@rahulgs"
-    name: "Rahul"
-    topics: [ai, startups]
-    notes: ""
-
-  - handle: "@koylanai"
-    name: "Koylan AI"
-    topics: [ai, ml-engineering]
-    notes: ""
-
-  - handle: "@steipete"
-    name: "Peter Steinberger"
-    blog: "https://steipete.me/posts"
-    topics: [ios, developer-tools, startups, ai]
-    notes: "PSPDFKit founder, iOS/macOS developer, AI tools explorer"
-
-  - handle: "@iannuttall"
-    name: "Ian Nuttall"
-    topics: [ai, indie-hacking, developer-tools]
-    notes: ""
-
-  - handle: "@boazbaraktcs"
-    name: "Boaz Barak"
-    blog: "https://windowsontheory.org"
-    topics: [ai, theoretical-cs, ai-safety, education]
-    notes: "Harvard CS professor, 'Windows on Theory' blog, AI and society"
-
-  - handle: "@ekzhang1"
-    name: "Eric Zhang"
-    blog: "https://www.ekzhang.com"
-    topics: [systems, rust, web, developer-tools]
-    notes: "Bore/Percival creator, competitive programmer, systems hacker"
-
-  - handle: "@jobergum"
-    name: "Jo Bergum"
-    blog: "https://hornet.dev/blog"
-    topics: [ai, search, vespa, information-retrieval]
-    notes: "Vespa search, IR expert"
-
-  - handle: "@softwaredoug"
-    name: "Doug Turnbull"
-    blog: "https://softwaredoug.com"
-    topics: [ai, search, information-retrieval, relevance]
-    notes: "Search relevance expert, 'Relevant Search' author, OpenSource Connections"
-
-  - handle: "@QuixiAI"
-    name: "Eric Hartford"
-    blog: "https://erichartford.com"
-    topics: [ai, open-source-models, fine-tuning, uncensored-models]
-    notes: "Creator of Dolphin models, uncensored/unaligned model advocate, cognitive computations"
-
-  - handle: "@emollick"
-    name: "Ethan Mollick"
-    blog: "https://www.oneusefulthing.org"
-    topics: [ai, education, productivity, ai-adoption]
-    notes: "Wharton professor, 'One Useful Thing' blog, AI adoption researcher, 'Co-Intelligence' author"
-
-  - handle: "@clefourrier"
-    name: "Clémentine Fourrier"
-    blog: "https://clefourrier.github.io"
-    topics: [ai, evaluation, huggingface, open-source]
-    notes: "Hugging Face, Open LLM Leaderboard maintainer, evaluation research"
-
-  - handle: "@ashpreetbedi"
-    name: "Ashpreet Bedi"
-    topics: [ai, agents, developer-tools]
-    notes: "Phidata creator, AI agent frameworks"
-
-  - handle: "@yacinemtb"
-    name: "Yacine Mahdid"
-    topics: [ai, local-models, developer-tools]
-    notes: "Butterflies AI, local LLM advocate"
-
-  - handle: "@abacaj"
-    name: "abacaj"
-    topics: [ai, ml-engineering, open-source]
-    notes: "ML engineering, open-source contributions"
-
-  - handle: "@tomaarsen"
-    name: "Tom Aarsen"
-    blog: "https://www.tomaarsen.com/home"
-    topics: [ai, sentence-transformers, nlp, huggingface]
-    notes: "Sentence Transformers maintainer, Hugging Face"
-
-  - handle: "@thealexbanks"
-    name: "Alex Banks"
-    blog: "https://thesignal.substack.com"
-    topics: [ai, ml-research, newsletter]
-    notes: "The Signal newsletter, AI research analysis"
-
-  - handle: "@chipro"
-    name: "Chip Huyen"
-    blog: "https://huyenchip.com/blog"
-    topics: [ai, ml-systems, ml-ops, education]
-    notes: "Author of 'Designing ML Systems' and 'AI Engineering', Stanford lecturer, ML systems expert"
-
-  - handle: "@karpathy"
-    name: "Andrej Karpathy"
-    blog: "https://karpathy.bearblog.dev/"
-    rss: "https://karpathy.bearblog.dev/feed/"
-    topics: [ai, deep-learning, education, coding-agents, open-source]
-    notes: "OpenAI co-founder, ex-Tesla AI Director, Eureka Labs founder. Coined 'vibe coding' and 'agentic engineering'. YouTube 'Zero to Hero' series."
-    github: "karpathy"
-
-  - handle: "@simonw"
-    name: "Simon Willison"
-    blog: "https://simonwillison.net/"
-    rss: "https://simonwillison.net/atom/everything/"
-    topics: [ai, llm, coding-agents, open-source, web-development]
-    notes: "Co-founder of Lanyrd, creator of Datasette. AI educator and blogger. Discussed 'agentic engineering' on Lenny's Podcast."
-    github: "simonw"
-
-  - handle: "@_lopopolo"
-    name: "Ryan Lopopolo"
-    blog: "https://hyperbo.la/"
-    topics: [ai, coding-agents, developer-tools]
-    notes: "OpenAI Frontier. Creator of 'Harness Engineering' concept. Built Symphony (Elixir-based multi-agent orchestration). Previously at Snowflake, Brick, Stripe, Citadel."
-    github: "lopopolo"
-
-  - handle: "@bcherny"
-    name: "Boris Cherny"
-    blog: "https://borischerny.com/"
-    topics: [ai, coding-agents, developer-tools, typescript]
-    notes: "Creator and head of Claude Code at Anthropic. Author of 'Programming TypeScript' (O'Reilly). Believes 'coding is solved'. Previously at Instagram."
-    github: "bcherny"
-
-  # Mike Krieger (@mikeyk) — REMOVED: Anthropic CPO role, mostly product/strategy promotion rather than independent technical opinions
-
-  - handle: "@addyosmani"
-    name: "Addy Osmani"
-    blog: "https://addyosmani.com/"
-    topics: [ai, coding-agents, web-development, developer-experience]
-    notes: "Engineering Lead at Google (Chrome & Web Platform). Wrote extensively on agentic coding, conductors vs orchestrators, self-improving coding agents, Claude Code swarms."
-    github: "addyosmani"
-
-  - handle: "@thdxr"
-    name: "Dax Raad"
-    blog: "https://thdxr.dev.opencode.ai/"
-    topics: [ai, coding-agents, developer-tools, open-source]
-    notes: "Creator of OpenCode (open source AI coding agent for terminal), SST founder. Focus on TUI-first developer experience, multi-agent parallel sessions."
-    github: "thdxr"
-
-  - handle: "@realmcore_"
-    name: "Akira (Random Labs)"
-    topics: [ai, coding-agents, swarm-intelligence, rlm]
-    notes: "Creator of Slate — first swarm-native coding agent using Thread Weaving architecture for persistent context in long-horizon engineering. Random Labs co-founder, YC S24. Advocate of RLM for coding."
-    github: "random-labs"
-
-  - handle: "@a1zhang"
-    name: "Alex Zhang"
-    blog: "https://alexzhang13.github.io/"
-    topics: [ai, rlm, reinforcement-learning, ml-systems, open-source]
-    notes: "MIT CSAIL PhD student (advised by Omar Khattab & Tim Kraska). Proposed Recursive Language Models (RLMs). GPU MODE community core. Runs GPU MODE leaderboard with NVIDIA. Works on KernelBench, VideoGameBench, SWE-bench Multimodal."
-    github: "alexzhang13"
-
-  - handle: "@danielhanchen"
-    name: "Daniel Han"
-    blog: "https://medium.com/@danielhanchen"
-    topics: [ai, fine-tuning, reinforcement-learning, open-source-models, ml-systems]
-    notes: "Creator of Unsloth — makes fine-tuning & RL (GRPO, LoRA, QLoRA) accessible with 2x speed and 70% less VRAM. Collaborates with HuggingFace & NVIDIA on RL courses. 100K+ models trained with Unsloth on HF."
-    github: "danielhanchen"
-
-  - handle: "@xeophon"
-    name: "Florian Brand"
-    blog: "https://florianbrand.com/"
-    topics: [ai, reinforcement-learning, distributed-training, open-source]
-    notes: "Prime Intellect engineer. Contributor to PRIME-RL, Verifiers, Environments Hub. Works on distributed RL training infrastructure and open superintelligence stack."
-    github: "xeophon"
-
-  - handle: "@shloked"
-    name: "Shlok Khemani"
-    blog: "https://www.shloked.com/"
-    topics: [ai, memory-systems, coding-agents, competitive-analysis]
-    notes: "Writer & programmer (Gurgaon, IN). Focuses on AI memory systems, coding agent competitive analysis, and agentic commerce. Authored key analyses on ChatGPT Memory vs Claude Memory, Anthropic's Memory Tool (6 file operations), and Cognition/Devin's strategy. Built claude-memory-tools (Python CLI + Next.js), OpenPoke, Centaur, Chatferry, Conjure. Previously at Decentralised.co (crypto). Looking for a cofounder."
-    github: "shlokkhemani"
+- handle: '@willccbb'
+  name: Will Brown
+  topics:
+  - ai
+  - ml-research
+  - rlhf
+  notes: RLHF/alignment researcher, active on ML Twitter
+- handle: '@natolambert'
+  name: Nathan Lambert
+  blog: https://www.interconnects.ai
+  rss: https://www.interconnects.ai/feed
+  topics:
+  - ai
+  - rlhf
+  - open-source-models
+  - ai-policy
+  notes: Interconnects newsletter, ex-HuggingFace, AI2 RLHF lead
+- handle: '@0xsero'
+  name: Sero
+  topics:
+  - ai
+  - ml-engineering
+  - open-source
+  notes: ML engineering, open-source AI community
+- handle: '@teknium'
+  name: Teknium
+  topics:
+  - ai
+  - fine-tuning
+  - open-source-models
+  - datasets
+  notes: Creator of OpenHermes datasets, Nous Research co-founder
+- handle: '@dejavucoder'
+  name: Sankalp Sinha
+  blog: https://sankalp.bearblog.dev
+  topics:
+  - ai
+  - coding
+  - ml-engineering
+  notes: ML engineer, bearblog author
+- handle: '@geoffreylitt'
+  name: Geoffrey Litt
+  blog: https://www.geoffreylitt.com
+  topics:
+  - end-user-programming
+  - local-first
+  - ai-tools
+  notes: Ink & Switch researcher, end-user programming, Potluck, Riffle
+- handle: '@trq212'
+  name: Thariq Shihipar
+  blog: https://www.thariq.io
+  topics:
+  - ai
+  - startups
+  - tech
+  notes: ''
+- handle: '@RLanceMartin'
+  name: Lance Martin
+  blog: https://rlancemartin.github.io
+  topics:
+  - ai
+  - langchain
+  - rag
+  - agents
+  notes: LangChain team, RAG and agent workflows
+- handle: '@gm8xx8'
+  name: gm8xx8
+  topics:
+  - ai
+  - ml-engineering
+  notes: ''
+- handle: '@Grad62304977'
+  name: Grad
+  topics:
+  - ai
+  - ml-research
+  - training
+  notes: ML research, training experiments
+- handle: '@eliebakouch'
+  name: Elie Bakouch
+  topics:
+  - ai
+  - ml-engineering
+  notes: ''
+- handle: '@arlanr'
+  name: Arlan R
+  topics:
+  - ai
+  - ml-engineering
+  notes: ''
+- handle: '@corbtt'
+  name: Corbett
+  topics:
+  - ai
+  - startups
+  notes: ''
+- handle: '@lilianweng'
+  name: Lilian Weng
+  blog: https://lilianweng.github.io
+  topics:
+  - ai
+  - ml-research
+  - deep-learning
+  - safety
+  notes: OpenAI VP of Research, famous ML blog posts (Lil'Log)
+- handle: '@johnowhitaker'
+  name: Jonathan Whitaker
+  blog: https://johnowhitaker.dev
+  topics:
+  - ai
+  - generative-models
+  - diffusion
+  - education
+  notes: AI educator, generative models, Answer.AI
+- handle: '@bclavie'
+  name: Benjamin Clavié
+  blog: https://ben.clavie.eu/posts
+  topics:
+  - ai
+  - information-retrieval
+  - nlp
+  - rag
+  notes: IR/NLP researcher, RAGatouille creator, ColBERT expert
+- handle: '@vanstriendaniel'
+  name: Daniel van Strien
+  blog: https://danielvanstrien.xyz
+  topics:
+  - ai
+  - huggingface
+  - datasets
+  - digital-humanities
+  notes: Hugging Face, datasets, digital humanities background
+- handle: '@HamelHusain'
+  name: Hamel Husain
+  blog: https://hamel.dev
+  topics:
+  - ai
+  - ml-engineering
+  - llm-ops
+  - developer-tools
+  notes: ML engineer, nbdev/fastai contributor, LLM evaluation expert
+- handle: '@eugeneyan'
+  name: Eugene Yan
+  blog: https://eugeneyan.com/writing
+  topics:
+  - ai
+  - ml-systems
+  - recommender-systems
+  - applied-ml
+  notes: Amazon senior applied scientist, ML systems in production
+- handle: '@charles_irl'
+  name: Charles Frye
+  blog: https://charlesfrye.github.io
+  topics:
+  - ai
+  - ml-engineering
+  - gpu
+  - infrastructure
+  notes: Modal, ML infrastructure, GPU economics educator
+- handle: '@ankrgyl'
+  name: Ankur Goyal
+  blog: https://www.braintrust.dev/blog
+  topics:
+  - ai
+  - evaluation
+  - llm-ops
+  - developer-tools
+  notes: Braintrust CEO, LLM evaluation and observability
+- handle: '@TheZachMueller'
+  name: Zach Mueller
+  blog: https://muellerzr.github.io/blog
+  topics:
+  - ai
+  - huggingface
+  - accelerate
+  - training
+  notes: Hugging Face, Accelerate maintainer, training optimization
+- handle: '@jxmnop'
+  name: Jxmo
+  blog: https://blog.jxmo.io
+  topics:
+  - ai
+  - ml-engineering
+  notes: ''
+- handle: '@Dorialexander'
+  name: Dorialexander
+  blog: https://vintagedata.org/blog
+  topics:
+  - ai
+  - data
+  - digital-humanities
+  notes: Vintage Data blog
+- handle: '@BEBischof'
+  name: Bryan Bischof
+  blog: https://www.rip-grep.com
+  topics:
+  - ai
+  - ml-engineering
+  - data-science
+  notes: Hex Head of AI, rip-grep blog
+- handle: '@ptkbhv'
+  name: Pratik Bhavsar
+  blog: https://galileo.ai/blog
+  topics:
+  - ai
+  - evaluation
+  - llm-ops
+  notes: Galileo AI, LLM evaluation and observability
+- handle: '@DrJimFan'
+  name: Jim Fan
+  blog: https://jimfan.me
+  topics:
+  - ai
+  - embodied-ai
+  - robotics
+  - foundation-models
+  notes: NVIDIA senior research scientist, embodied AI, foundation agents
+- handle: '@lateinteraction'
+  name: Late Interaction
+  topics:
+  - ai
+  - information-retrieval
+  - nlp
+  notes: IR/NLP focused account
+- handle: '@ryancarson'
+  name: Ryan Carson
+  blog: https://www.ryancarson.com/articles
+  topics:
+  - ai
+  - startups
+  - education
+  notes: Treehouse founder, tech education
+- handle: '@spikedoanz'
+  name: Spike
+  blog: https://supaiku.com
+  topics:
+  - ai
+  - ml-engineering
+  notes: ''
+- handle: '@_xjdr'
+  name: xjdr
+  topics:
+  - ai
+  - infrastructure
+  - systems
+  notes: ''
+- handle: '@ctatedev'
+  name: Chris Tate
+  blog: https://ctate.dev
+  topics:
+  - ai
+  - developer-tools
+  - web
+  notes: ''
+- handle: '@Vtrivedy10'
+  name: Varun Trivedy
+  blog: https://www.vtrivedy.com/posts
+  topics:
+  - ai
+  - ml-engineering
+  notes: ''
+- handle: '@dabit3'
+  name: Nader Dabit
+  blog: https://nader.substack.com
+  topics:
+  - ai
+  - web3
+  - developer-tools
+  - developer-relations
+  notes: Developer advocate, web3/AI builder, Aave/Lens/EigenLayer
+- handle: '@burkov'
+  name: Andriy Burkov
+  blog: https://aiweekly.substack.com
+  topics:
+  - ai
+  - ml-research
+  - education
+  notes: Author of 'The Hundred-Page Machine Learning Book', AI Weekly newsletter
+- handle: '@_philschmid'
+  name: Philipp Schmid
+  blog: https://www.philschmid.de
+  topics:
+  - ai
+  - huggingface
+  - deployment
+  - llm-ops
+  notes: Hugging Face technical lead, deployment and optimization guides
+- handle: '@badlogicgames'
+  name: Mario Zechner
+  blog: https://mariozechner.at
+  topics:
+  - ai
+  - game-dev
+  - open-source
+  - java
+  notes: libGDX creator, game developer, systems programmer
+- handle: '@dbreunig'
+  name: Drew Breunig
+  blog: https://www.dbreunig.com
+  topics:
+  - ai
+  - data
+  - product
+  notes: ''
+- handle: '@samuelcolvin'
+  name: Samuel Colvin
+  topics:
+  - python
+  - open-source
+  - pydantic
+  - ai-tools
+  notes: Pydantic creator, PydanticAI, Python open-source
+- handle: '@willmcgugan'
+  name: Will McGugan
+  blog: https://willmcgugan.github.io
+  topics:
+  - python
+  - open-source
+  - tui
+  - developer-tools
+  notes: Rich/Textual creator, Python TUI frameworks
+- handle: '@mitsuhiko'
+  name: Armin Ronacher
+  blog: https://lucumr.pocoo.org
+  topics:
+  - python
+  - rust
+  - open-source
+  - web
+  notes: Flask/Jinja2/Sentry creator, Rust advocate, Lucumr blog
+- handle: '@hynek'
+  name: Hynek Schlawack
+  blog: https://hynek.me/articles
+  topics:
+  - python
+  - open-source
+  - devops
+  - software-engineering
+  notes: attrs/structlog creator, Python packaging, DevOps
+- handle: '@karrisaarinen'
+  name: Karri Saarinen
+  topics:
+  - design
+  - developer-tools
+  - startups
+  notes: Linear co-founder/CEO, design-driven product development
+- handle: '@ScottWu46'
+  name: Scott Wu
+  topics:
+  - ai
+  - coding-agents
+  - developer-tools
+  notes: Cognition/Devin CEO, AI coding agents
+- handle: '@rahulgs'
+  name: Rahul
+  topics:
+  - ai
+  - startups
+  notes: ''
+- handle: '@koylanai'
+  name: Koylan AI
+  topics:
+  - ai
+  - ml-engineering
+  notes: ''
+- handle: '@steipete'
+  name: Peter Steinberger
+  blog: https://steipete.me/posts
+  topics:
+  - ios
+  - developer-tools
+  - startups
+  - ai
+  notes: PSPDFKit founder, iOS/macOS developer, AI tools explorer
+- handle: '@iannuttall'
+  name: Ian Nuttall
+  topics:
+  - ai
+  - indie-hacking
+  - developer-tools
+  notes: ''
+- handle: '@boazbaraktcs'
+  name: Boaz Barak
+  blog: https://windowsontheory.org
+  topics:
+  - ai
+  - theoretical-cs
+  - ai-safety
+  - education
+  notes: Harvard CS professor, 'Windows on Theory' blog, AI and society
+- handle: '@ekzhang1'
+  name: Eric Zhang
+  blog: https://www.ekzhang.com
+  topics:
+  - systems
+  - rust
+  - web
+  - developer-tools
+  notes: Bore/Percival creator, competitive programmer, systems hacker
+- handle: '@jobergum'
+  name: Jo Bergum
+  blog: https://hornet.dev/blog
+  topics:
+  - ai
+  - search
+  - vespa
+  - information-retrieval
+  notes: Vespa search, IR expert
+- handle: '@softwaredoug'
+  name: Doug Turnbull
+  blog: https://softwaredoug.com
+  topics:
+  - ai
+  - search
+  - information-retrieval
+  - relevance
+  notes: Search relevance expert, 'Relevant Search' author, OpenSource Connections
+- handle: '@QuixiAI'
+  name: Eric Hartford
+  blog: https://erichartford.com
+  topics:
+  - ai
+  - open-source-models
+  - fine-tuning
+  - uncensored-models
+  notes: Creator of Dolphin models, uncensored/unaligned model advocate, cognitive
+    computations
+- handle: '@emollick'
+  name: Ethan Mollick
+  blog: https://www.oneusefulthing.org
+  topics:
+  - ai
+  - education
+  - productivity
+  - ai-adoption
+  notes: Wharton professor, 'One Useful Thing' blog, AI adoption researcher, 'Co-Intelligence'
+    author
+- handle: '@clefourrier'
+  name: Clémentine Fourrier
+  blog: https://clefourrier.github.io
+  topics:
+  - ai
+  - evaluation
+  - huggingface
+  - open-source
+  notes: Hugging Face, Open LLM Leaderboard maintainer, evaluation research
+- handle: '@ashpreetbedi'
+  name: Ashpreet Bedi
+  topics:
+  - ai
+  - agents
+  - developer-tools
+  notes: Phidata creator, AI agent frameworks
+- handle: '@yacinemtb'
+  name: Yacine Mahdid
+  topics:
+  - ai
+  - local-models
+  - developer-tools
+  notes: Butterflies AI, local LLM advocate
+- handle: '@abacaj'
+  name: abacaj
+  topics:
+  - ai
+  - ml-engineering
+  - open-source
+  notes: ML engineering, open-source contributions
+- handle: '@tomaarsen'
+  name: Tom Aarsen
+  blog: https://www.tomaarsen.com/home
+  topics:
+  - ai
+  - sentence-transformers
+  - nlp
+  - huggingface
+  notes: Sentence Transformers maintainer, Hugging Face
+- handle: '@thealexbanks'
+  name: Alex Banks
+  blog: https://thesignal.substack.com
+  topics:
+  - ai
+  - ml-research
+  - newsletter
+  notes: The Signal newsletter, AI research analysis
+- handle: '@chipro'
+  name: Chip Huyen
+  blog: https://huyenchip.com/blog
+  topics:
+  - ai
+  - ml-systems
+  - ml-ops
+  - education
+  notes: Author of 'Designing ML Systems' and 'AI Engineering', Stanford lecturer,
+    ML systems expert
+- handle: '@karpathy'
+  name: Andrej Karpathy
+  blog: https://karpathy.bearblog.dev/
+  rss: https://karpathy.bearblog.dev/feed/
+  topics:
+  - ai
+  - deep-learning
+  - education
+  - coding-agents
+  - open-source
+  notes: OpenAI co-founder, ex-Tesla AI Director, Eureka Labs founder. Coined 'vibe
+    coding' and 'agentic engineering'. YouTube 'Zero to Hero' series.
+  github: karpathy
+- handle: '@simonw'
+  name: Simon Willison
+  blog: https://simonwillison.net/
+  rss: https://simonwillison.net/atom/everything/
+  topics:
+  - ai
+  - llm
+  - coding-agents
+  - open-source
+  - web-development
+  notes: Co-founder of Lanyrd, creator of Datasette. AI educator and blogger. Discussed
+    'agentic engineering' on Lenny's Podcast.
+  github: simonw
+- handle: '@_lopopolo'
+  name: Ryan Lopopolo
+  blog: https://hyperbo.la/
+  topics:
+  - ai
+  - coding-agents
+  - developer-tools
+  notes: OpenAI Frontier. Creator of 'Harness Engineering' concept. Built Symphony
+    (Elixir-based multi-agent orchestration). Previously at Snowflake, Brick, Stripe,
+    Citadel.
+  github: lopopolo
+- handle: '@bcherny'
+  name: Boris Cherny
+  blog: https://borischerny.com/
+  topics:
+  - ai
+  - coding-agents
+  - developer-tools
+  - typescript
+  notes: Creator and head of Claude Code at Anthropic. Author of 'Programming TypeScript'
+    (O'Reilly). Believes 'coding is solved'. Previously at Instagram.
+  github: bcherny
+- handle: '@addyosmani'
+  name: Addy Osmani
+  blog: https://addyosmani.com/
+  topics:
+  - ai
+  - coding-agents
+  - web-development
+  - developer-experience
+  notes: Engineering Lead at Google (Chrome & Web Platform). Wrote extensively on
+    agentic coding, conductors vs orchestrators, self-improving coding agents, Claude
+    Code swarms.
+  github: addyosmani
+- handle: '@thdxr'
+  name: Dax Raad
+  blog: https://thdxr.dev.opencode.ai/
+  topics:
+  - ai
+  - coding-agents
+  - developer-tools
+  - open-source
+  notes: Creator of OpenCode (open source AI coding agent for terminal), SST founder.
+    Focus on TUI-first developer experience, multi-agent parallel sessions.
+  github: thdxr
+- handle: '@realmcore_'
+  name: Akira (Random Labs)
+  topics:
+  - ai
+  - coding-agents
+  - swarm-intelligence
+  - rlm
+  notes: Creator of Slate — first swarm-native coding agent using Thread Weaving architecture
+    for persistent context in long-horizon engineering. Random Labs co-founder, YC
+    S24. Advocate of RLM for coding.
+  github: random-labs
+- handle: '@a1zhang'
+  name: Alex Zhang
+  blog: https://alexzhang13.github.io/
+  topics:
+  - ai
+  - rlm
+  - reinforcement-learning
+  - ml-systems
+  - open-source
+  notes: MIT CSAIL PhD student (advised by Omar Khattab & Tim Kraska). Proposed Recursive
+    Language Models (RLMs). GPU MODE community core. Runs GPU MODE leaderboard with
+    NVIDIA. Works on KernelBench, VideoGameBench, SWE-bench Multimodal.
+  github: alexzhang13
+- handle: '@danielhanchen'
+  name: Daniel Han
+  blog: https://medium.com/@danielhanchen
+  topics:
+  - ai
+  - fine-tuning
+  - reinforcement-learning
+  - open-source-models
+  - ml-systems
+  notes: Creator of Unsloth — makes fine-tuning & RL (GRPO, LoRA, QLoRA) accessible
+    with 2x speed and 70% less VRAM. Collaborates with HuggingFace & NVIDIA on RL
+    courses. 100K+ models trained with Unsloth on HF.
+  github: danielhanchen
+- handle: '@xeophon'
+  name: Florian Brand
+  blog: https://florianbrand.com/
+  topics:
+  - ai
+  - reinforcement-learning
+  - distributed-training
+  - open-source
+  notes: Prime Intellect engineer. Contributor to PRIME-RL, Verifiers, Environments
+    Hub. Works on distributed RL training infrastructure and open superintelligence
+    stack.
+  github: xeophon
+- handle: '@shloked'
+  name: Shlok Khemani
+  blog: https://www.shloked.com/
+  topics:
+  - ai
+  - memory-systems
+  - coding-agents
+  - competitive-analysis
+  notes: Writer & programmer (Gurgaon, IN). Focuses on AI memory systems, coding agent
+    competitive analysis, and agentic commerce. Authored key analyses on ChatGPT Memory
+    vs Claude Memory, Anthropic's Memory Tool (6 file operations), and Cognition/Devin's
+    strategy. Built claude-memory-tools (Python CLI + Next.js), OpenPoke, Centaur,
+    Chatferry, Conjure. Previously at Decentralised.co (crypto). Looking for a cofounder.
+  github: shlokkhemani
+- handle: '@DRMacIver'
+  name: David R. MacIver
+  blog: https://www.drmaciver.com/
+  topics:
+  - testing
+  - property-based-testing
+  - software-engineering
+  - ai-evals
+  - ai
+  notes: Creator of Hypothesis (Python property-based testing, 2M+ downloads/month).
+    Ex-Google, ex-Anthropic (model evaluations). Expert in test-case reduction (Shrinkray).
+    Currently at Antithesis on Hegel. ~90% of code AI-drafted (Claude Code) but carefully
+    reviewed. Writes on software correctness, LLM evals, probabilistic programming.
+  github: DRMacIver

@@ -39,6 +39,7 @@ This represents a rare instance of the three largest US AI labs cooperating dire
 | Apr 6, 2026 | Bloomberg reports OpenAI, Anthropic, Google sharing distillation detection data via Frontier Model Forum |
 | Apr 7, 2026 | Anthropic announces Claude Mythos Preview (restricted release) |
 | Apr 8, 2026 | Meta announces Muse Spark (closed-source, breaking Llama tradition) |
+| Apr 14, 2026 | OpenAI announces GPT-5.4-Cyber model and expands Trusted Access for Cyber program |
 
 ## Six Previous Failed Approaches
 
@@ -67,6 +68,18 @@ Before the current alliance, the US labs tried six separate approaches to stop a
 - China's Global Times has publicly criticized the alliance as protectionist
 
 ## Connection to Other Trends
+
+### GPT-5.4-Cyber and Trusted Access for Cyber
+
+On April 14, 2026, OpenAI expanded its cybersecurity posture with two announcements:
+
+1. **GPT-5.4-Cyber**: A model variant fine-tuned specifically for defensive cybersecurity use cases. This represents OpenAI's answer to Anthropic's Claude Mythos in the security domain.
+
+2. **Trusted Access for Cyber Program Expansion**: Building on a February 2026 launch, OpenAI now allows users to verify their identity (via government-issued ID processed by Persona) to gain "reduced friction" access to models for cybersecurity work. However, access to the best security tools still requires an additional Google Form application — paralleling Anthropic's Project Glasswing approach.
+
+OpenAI frames these initiatives as "democratizing access" to cybersecurity tools, though the practical effect is a verification gate that mirrors the restricted-access approach taken by other frontier labs.
+
+See [[concepts/cybersecurity-proof-of-work]] for analysis of the economic implications.
 
 ### Concurrent with Model Lockdowns
 

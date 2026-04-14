@@ -92,6 +92,20 @@ Keep interviewing until we've covered everything, then write a complete spec to 
 - **段階的アプローチ**: 大きなタスクを小さなステップに分解。各ステップで検証
 - **外部メモリ**: Claude Codeのメモリファイル（`memory.md`等）を活用
 
+## LSP Hooks for Code Navigation
+
+Community-developed hooks (April 2026) force Claude Code to use LSP (Language Server Protocol) instead of grep for code navigation, saving ~80% tokens:
+
+```bash
+# Example hook configuration
+# Forces semantic-aware navigation instead of text search
+```
+
+- **Token savings**: ~80% reduction in navigation-related token usage
+- **Accuracy improvement**: LSP understands symbol definitions, references, and types — grep only does text matching
+- **Setup**: Configure hooks in Claude Code to intercept file search commands and route through LSP
+- **Source**: Reddit r/LocalLLaMA community (April 14, 2026)
+
 ## 関連概念
 
 - [[agentic-engineering/_index]] — 上位インデックス

@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-14 (Added DRMacIver entity page — Hypothesis creator, Antithesis Senior Engineer, Hegel PBT protocol, Claude Code workflow, LLM evals via property-based testing)
+Last updated: 2026-04-14 (Added Cybersecurity Proof of Work concept, RAM metric, auto-triage ingest from 97 daily scan articles) — Hypothesis creator, Antithesis Senior Engineer, Hegel PBT protocol, Claude Code workflow, LLM evals via property-based testing)
 
 ## Entity Pages (71)
 
@@ -258,6 +258,8 @@ Ideas, frameworks, and methodologies extracted from articles.
 ### AI Safety & Ethics
 - [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
 
+- [[concepts/cybersecurity-proof-of-work]] — Cybersecurity Proof of Work (LLM vulnerability discovery as economic equation, more tokens = more exploits)
+
 - [[concepts/ai-agent-traps]] — AI Agent Traps
 
 - [[concepts/neurosymbolic-ai]] — Neurosymbolic AI (combining neural networks with symbolic reasoning)
@@ -282,6 +284,8 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[concepts/open-source-ai-destruction]] — Open Source AI Destruction (Jeff Geerling)
 - [[concepts/claude-code-leak]] — Claude Code Source Leak
 - [[concepts/project-glasswing]] — Project Glasswing
+- [[concepts/ram-relative-adoption-metric]] — Relative Adoption Metric (Nathan Lambert, time+size normalized model adoption trajectory prediction)
+
 - [[concepts/reasoning-model-cost-transparency]] — Reasoning Model Cost Transparency
 
 ### Infrastructure & Hardware
