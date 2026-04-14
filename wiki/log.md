@@ -1,3 +1,20 @@
+## 2026-04-16 — Samuel Colvin Entity Page Created (L3 depth)
+
+### New Entity Pages
+- **[[entities/samuel-colvin]]** — Samuel Colvin: Creator of Pydantic, Founder & CEO of Pydantic. PhD in Mathematics (Bristol), MSci from Imperial College London. Built Pydantic (27.3K stars, 46M+ monthly downloads), Pydantic AI (15.9K stars, type-safe agent framework), Monty (6.6K stars, minimal Rust Python sandbox for AI agents), and Logfire (4.1K stars, AI observability platform). Key philosophy: developer experience first, type safety for reliability, "start from nothing" security model.
+
+### New Concept Pages
+- **[[concepts/code-mode]]** — CodeMode: LLM writes Python code for parallel execution instead of sequential tool calls. Latency: 0.004ms (Monty) vs 195ms (Docker) vs 1000ms+ (sandbox services)
+- **[[concepts/monty-sandbox]]** — Monty: minimal, secure Python interpreter written in Rust for AI agents. Capabilities-based security, from-scratch bytecode VM using Ruff's parser
+- **[[concepts/pydantic-ai]]** — Pydantic AI: type-safe Python agent framework with 15+ model providers, structured outputs, MCP/A2A support, Logfire integration
+- **[[concepts/capabilities-based-security]]** — Start from zero access, explicitly grant capabilities. Contrast with traditional sandbox (full VM → restrict down)
+
+### Cross-References
+- Related to [[concepts/harness-engineering]]: Monty as harness environment for AI agents
+- Related to [[concepts/ai-agent-engineering/building-effective-agents]]: Type safety as agent reliability pattern
+- Related to [[concepts/ai-agent-engineering/code-execution-with-mcp]]: CodeMode vs MCP tool execution
+- Connected to [[entities/andrej-karpathy]]: Both advocate code-over-sequential-tool-calls paradigm
+- Connected to [[entities/sebastián-ramírez]]: FastAPI-Pydantic symbiosis
 ## 2026-04-13 — Auto-triage ingest (RSS scan)
 
 ### Updated Entity Pages

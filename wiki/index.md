@@ -138,7 +138,15 @@ Last updated: 2026-04-15 (Dario Amodei, Mustafa Suleyman, Demis Hassabis entity 
    134|Ideas, frameworks, and methodologies extracted from articles.
    135|
    136|### AI Development & Engineering
-   137||- [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents (Simon Willison)
+   137||- [[concepts/code-mode]] — CodeMode: LLM writes code instead of sequential tool calls
+
+- [[concepts/monty-sandbox]] — Monty: minimal secure Python interpreter in Rust for AI agents
+
+- [[concepts/pydantic-ai]] — Pydantic AI: type-safe Python agent framework
+
+- [[concepts/capabilities-based-security]] — Start from zero access, explicitly grant capabilities (Monty philosophy)
+
+- [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents (Simon Willison)
    138||- [[concepts/gnu-ai-reimplementations]] — GNU & AI Reimplementations (antirez)
    139|
    140||- [[concepts/agentic-engineering/_index]] — Agentic Engineering (Willison開発パターン集)
