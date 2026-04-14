@@ -1,0 +1,13 @@
+[Unit]
+Description=Shelley Trending Topics Detection (daily)
+After=network.target
+
+[Service]
+Type=oneshot
+User=exedev
+WorkingDirectory=/home/exedev/ai-topics
+ExecStart=/usr/bin/shelley client chat -p 'Daily Trending Topics notification.\n\nStep 1: Run `python3 ~/ai-topics/scripts/trending_topics.py --days 3` and present the report to the user IN JAPANESE. Focus on: (1) New Page Recommended — trending topics with no wiki page yet, (2) Hot Topics with 4+ sources, (3) Cross-Source Topics — highest signal items appearing across RSS, newsletters, and raw articles. Suggest which topics Hermes should prioritize for wiki page creation or updates.\n\nStep 2: Hot Topics クローリング候補提案。`cat ~/ai-topics/config/hot-topics.yaml` を読み、Step 1 の「New Page Recommended」のトピック群と照合する。以下の条件を満たすトピックがあれば、hot-topics.yaml への追加候補として提案する:\n- source_count が 3 以上で、hot-topics.yaml にまだ登録されていない\n- SCHEMA.md のドメイン(LLM/AI Agent技術)に合致する\n- 既存トピックのサブトピックではなく、独立したトピックとして管理する価値がある\n\n提案フォーマット(YAMLスニペットとしてそのまま貼れる形):\n```\n📝 hot-topics.yaml 追加候補:\n\n  - slug: <slug>\n    title: "<title>"\n    crawl_policy: <prerequisites|laterals|deepdive>  # 推奨ポリシーと理由\n    priority: <high|medium>\n    search_hints:\n      - "<hint>"\n    notes: "<提案理由: source_count=N, ソース種別, 既存トピックとの関係>"\n    added: YYYY-MM-DD\n```\n候補がない場合は「該当なし」と明記。提案はあくまで提案であり、ユーザーが承認するまで yaml を編集しないこと。\n\nOriginating conversation: cKY7DBH' -cwd '/home/exedev/ai-topics'
+TimeoutStartSec=180
+
+[Install]
+WantedBy=multi-user.target
