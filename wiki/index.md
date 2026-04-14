@@ -2,7 +2,7 @@
      2|
      3|Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
      4|
-Last updated: 2026-04-15 (AI Organization concept hierarchy upgraded with Block full content, Solo Founder debate, McKinsey Diamond org chart)
+Last updated: 2026-04-15 (AI Organization concept hierarchy upgraded with Block full content, Solo Founder debate, McKinsey Diamond org chart; DGX Spark Local LLM Server & NemoClaw concept page added)
 
 ## Entity Pages (70)
      8|
@@ -370,6 +370,7 @@ Last updated: 2026-04-15 (AI Organization concept hierarchy upgraded with Block 
 - [[entities/george-hotz|George Hotz]] (@geohot) — comma.ai founder, tinygrad creator. "All compute is equal", open-source GPU driver
 - [[entities/gm8xx8|gm8xx8]] (@gm8xx8) — AI paper curator & infrastructure researcher. 29-paper curation batches (proof theory, VLA, 1-bit LLMs, agentic systems). cuLA CUDA kernels, MiroMindAI contributor, linear attention & M2RNN analysis. 132K Farcaster followers, 77K+ HF upvotes. L3 depth.
 - [[entities/sero|Sero]] (@0xsero) — Sybil Solutions founder, ElizaOS contributor. 8x RTX 3090 homelab, Freedom Tech advocate, local AI infrastructure builder, Thrive Protocol. TurboQuant, pi-brain, Open Orchestra, Parchi, vLLM Studio, Azul. 200+ OSS repos. L3 depth.
+- [[concepts/dgx-spark-local-llm-server]] — DGX Spark: Local LLM Server & NemoClaw Setup (Grace Blackwell, NIM inference, distributed agent architecture)
    311|
    312|### AI Research & Computer Vision
    313|

@@ -1,3 +1,22 @@
+## 2026-04-15 — DGX Spark Local LLM Server & NemoClaw Concept Page
+
+### New Concept Pages
+- **[[concepts/dgx-spark-local-llm-server]]** — DGX Spark: Local LLM Server & NemoClaw Setup. Grace Blackwell hardware specs, NIM inference server setup, NemoClaw sandbox deployment, and distributed agent architecture (exe.dev orchestration + DGX Spark inference).
+
+### Key Insights
+- **DGX Spark specs**: 128GB unified LPDDR5x memory, 1 PFLOP (FP4 w/ sparsity), 273 GB/s bandwidth. Supports up to 200B parameter models (single), 405B (dual-Spark clustering via RoCE)
+- **NIM on Spark**: Container-based inference microservice with OpenAI-compatible API at `localhost:8000/v1/`. Supports Llama 3.1 8B, Qwen3-32, Nemotron-3-Nano-30B-A3B
+- **NemoClaw**: Open-source reference stack wrapping OpenClaw agents in OpenShell sandbox (Landlock + seccomp + netns). `curl ... nemoclaw.sh | bash` for one-command setup
+- **Distributed architecture**: Hermes Agent on exe.dev (orchestration, memory, gateway) + DGX Spark at home (inference engine, secure sandbox). SSH tunnel or Tailscale for connectivity
+- **Cost break-even**: ~$8,000 hardware vs $500-2,000/mo cloud API = 6-12 month payback
+
+### Cross-References
+- Related to [[concepts/self-hosting-ai-development]] — Self-hosting economics & tool comparison
+- Related to [[concepts/local-llm/_index]] — Local LLM ecosystem index
+- Related to [[entities/georgi-gerganov]] — llama.cpp for DGX Spark (Nemotron GGUF support)
+
+---
+
 ## 2026-04-15 — Local LLM: Quantization & Distillation concept pages added
 
 ### New Concept Pages
