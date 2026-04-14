@@ -348,6 +348,7 @@ Last updated: 2026-04-15 (AI Organization concept hierarchy upgraded with Block 
    300|- [[concepts/context-engineering]] — Context Engineering (Anthropic's dynamic token curation framework)
    301|- [[concepts/harness-design-long-running-apps]] — Harness Design for Long-Running Apps (Anthropic's multi-agent GAN loop)
    302|- [[concepts/memory-systems-design-patterns]] — Memory Systems Design Patterns (Anthropic vs OpenAI vs Cognition synthesis)
+|- [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware (S3 Files, Tigris, LLMFS — L3 cloud storage layer)
    303|
    304|### AI Safety & Alignment
    305|

@@ -1,3 +1,29 @@
+## 2026-04-16 — AI Agent Memory Middleware横断分析 + S3 Files統合
+
+### New Concept Pages
+- **[[concepts/ai-agent-memory-middleware]]** — AI Agent Memory Middleware: L1-L3メモリスタックモデル。S3 Files（AWS）、Tigris、LLMFS、CogneeをL3クラウドストレージ層として統合。
+
+### Key Insights
+- **3層メモリモデル**: L1 In-Context（揮発性）→ L2 Local File（セッション永続化）→ L3 Cloud Storage（マルチエージェント共有）
+- **S3 Filesの核心**: "Stage and Commit"モデル。EFSレイヤでバッチ → S3へ一括PUT。境界を明示的に設計に組み込む
+- **エージェントセッション状態消失問題**: コンテキストcompact時に「ダウンロード済み」の記録が失われる → S3 Filesで直接ファイルシステムアクセス可能に
+- **マルチエージェント共有**: 数千のコンピュートリソースが同一S3ファイルシステムに同時接続可能
+- **Bitter Lessonとの接続**: カスタムDB構築ではなく、既存S3+EFSインフラ組み合わせでスケーラビリティ実現
+
+### Cross-References
+- Related to [[concepts/memory-systems-design-patterns]]: L2ファイルベース設計パターンのL3補完
+- Related to [[concepts/claude-memory]]: CLAUDE.mdパターンのクラウドスケール版
+- Related to [[concepts/chatgpt-memory-bitter-lesson]]: ステートレスvsステートフル議論のインフラレイヤー延伸
+
+### Sources
+- https://www.allthingsdistributed.com/2026/04/s3-files-and-the-changing-face-of-s3.html
+- https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-s3-files/
+- https://venturebeat.com/data/amazon-s3-files-gives-ai-agents-a-native-file-system-workspace-ending-the
+- https://www.tigrisdata.com/docs/agents-use-cases/
+- https://github.com/viditraj/llmfs
+
+---
+
 ## 2026-04-16 — AI Organization Concept Hierarchy Upgrade (Block, Reddit, McKinsey, Reworked, Agile Leadership Day)
 
 ### Concept Pages Upgraded (3 pages + front page)
