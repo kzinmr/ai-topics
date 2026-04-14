@@ -12,7 +12,11 @@ tags: [person]
 **Title:** Ralph J. Roberts Distinguished Faculty Scholar, Rowan Fellow
 **Role:** Faculty Director & Co-Director, Generative AI Labs at Wharton
 **Education:** PhD & MBA (MIT Sloan), AB Harvard (Magna Cum Laude)
-**Book:** _Co-Intelligence: Living and Working with AI_ (Penguin Random House, 2024) — New York Times bestseller
+**Books:**
+- _Co-Intelligence: Living and Working with AI_ (Penguin Random House, 2024) — [Amazon](https://www.amazon.com/Co-Intelligence-Living-Working-Ethan-Mollick-ebook/dp/B0CM8TRWK3) · [Goodreads](https://www.goodreads.com/book/show/198347569) — New York Times bestseller
+- _The Unicorn's Shadow: Combating the Dangerous Myths That Hold Back Startups, Founders, and Investors_ (Wharton School Press, 2020) — [Penn Press](https://www.pennpress.org/9781613630969/the-unicorns-shadow/) · [Goodreads](https://www.goodreads.com/book/show/50495757)
+- _Changing the Game: How Video Games Are Transforming the Future of Business_ (with David Edery, FT Press, 2009) — [InformIT](https://www.informit.com/title/013235781X)
+- _Communities of Innovation_ (with David Edery, FT Press, 2009)
 **Subscribers:** 419K+ on Substack
 
 ## Overview
@@ -39,12 +43,12 @@ His academic pedigree includes a PhD and MBA from MIT's Sloan School of Manageme
 | 2014 | Published _The Startup Game_ — an entrepreneurship simulation used by over 20,000 students worldwide |
 | 2015 | Launch of "Looking Glass" Alternate Reality Teaching Engine with Wharton Learning Lab |
 | 2016 | Published most-cited article in management on crowdfunding |
-| 2017 | Published _The Unicorn's Shadow: Combating the Dangerous Myths That Hold Back Startups_ (Wharton School Press) |
+| 2017 | Published _The Unicorn's Shadow: Combating the Dangerous Myths That Hold Back Startups_ ([Penn Press](https://www.pennpress.org/9781613630969/the-unicorns-shadow/), Wharton School Press) |
 | 2022 | ChatGPT launched (November); Mollick immediately recognized it as a "general purpose AI" and began systematic experimentation |
 | 2023 | Published "Centaurs and Cyborgs on the Jagged Frontier" — the landmark BCG study (with 758 consultants) showing 12.2% productivity increase and 25.1% speed improvement with AI |
 | 2023 | Started the _One Useful Thing_ Substack newsletter, which rapidly grew to become one of the most-read AI publications |
 | 2024 | Named one of **TIME Magazine's Most Influential People in Artificial Intelligence** |
-| 2024 | Published _Co-Intelligence: Living and Working with AI_ (Penguin Random House) — New York Times bestseller |
+| 2024 | Published _Co-Intelligence: Living and Working with AI_ ([Amazon](https://www.amazon.com/Co-Intelligence-Living-Working-Ethan-Mollick-ebook/dp/B0CM8TRWK3), Penguin Random House) — New York Times bestseller |
 | 2024 | Co-Intelligence named best book of the year by _The Economist_ and _Financial Times_ |
 | 2024 | Awarded MBA Professor of the Year by Poets & Quants |
 | 2024 | Founded the Generative AI Labs at Wharton with Lilach Mollick |
@@ -173,7 +177,7 @@ Mollick consistently raises questions about the ethical implications of AI in wo
 - https://www.oneusefulthing.org/ — Primary blog and newsletter
 - https://substack.com/profile/846835-ethan-mollick — Substack profile
 - https://faculty.wharton.upenn.edu/wp-content/uploads/2016/08/Ethan-Reuben-Mollick-2016-CV-v9-public.pdf — Academic CV
-- https://www.amazon.com/Co-Intelligence-Living-Working-Ethan-Mollick/dp/059371671X — _Co-Intelligence_ book
+- https://www.amazon.com/Co-Intelligence-Living-Working-Ethan-Mollick-ebook/dp/B0CM8TRWK3 — _Co-Intelligence_ book (Penguin Random House, 2024)
 - https://thinkers50.com/biographies/ethan-mollick/ — Thinkers50 profile
 - https://ai-analytics.wharton.upenn.edu/generative-ai-labs/about-us/ — Wharton Generative AI Labs
 - https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4573321 — BCG Jagged Frontier study (Harvard Business School Working Paper No. 24-013)
