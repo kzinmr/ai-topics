@@ -1,0 +1,15 @@
+---
+title: "Introducing the Substack app"
+url: "https://email.mg-d1.substack.com/c/eJxskb_O3CAQxJ8GOluAObALikif7jUs_qx96Aw4sCS5PH3k-5or0mwzo9n5abxF2Et9meZLhcHZBmHoZ4PjoMFMi2OzVxQM11oJLZWYKSQbj3WHDNUihNXih8o4pw9zs0IsTiumJMyL95LPC7Oeb5sUymlFoxFMKCb5jetJMz1Oo1OMqYVbNm3iprka-0_xrP6xEMnSPgQ-tu4aWv8cfUk0tnWr8O5isHagh3kgno1MP4i4E3H_dBNxt-f5fYeGF2mFECt4JNO9Y1q9TaeNeybT1-VJtj4BY96JUG-5ZISMZPp6fxy2UhDq4DpiyfTsbvUlpZ4jvlbI1h0Qvlud3R3RW4wlrzEYzmbJ5oVW8_wbc6qcXXj7lfmmat2FkmzMpv1-_aH4v1l6g3plSTZrOQv6y4h_AQAA__-KBpaP"
+fetched_at: 2026-04-15T17:37:16.948962+00:00
+source_date: 2026-04-15
+tags: [newsletter, auto-ingested]
+---
+
+# Introducing the Substack app
+
+Source: https://email.mg-d1.substack.com/c/eJxskb_O3CAQxJ8GOluAObALikif7jUs_qx96Aw4sCS5PH3k-5or0mwzo9n5abxF2Et9meZLhcHZBmHoZ4PjoMFMi2OzVxQM11oJLZWYKSQbj3WHDNUihNXih8o4pw9zs0IsTiumJMyL95LPC7Oeb5sUymlFoxFMKCb5jetJMz1Oo1OMqYVbNm3iprka-0_xrP6xEMnSPgQ-tu4aWv8cfUk0tnWr8O5isHagh3kgno1MP4i4E3H_dBNxt-f5fYeGF2mFECt4JNO9Y1q9TaeNeybT1-VJtj4BY96JUG-5ZISMZPp6fxy2UhDq4DpiyfTsbvUlpZ4jvlbI1h0Qvlud3R3RW4wlrzEYzmbJ5oVW8_wbc6qcXXj7lfmmat2FkmzMpv1-_aH4v1l6g3plSTZrOQv6y4h_AQAA__-KBpaP
+
+World-class video, podcasts, and writing
+The best stories, ideas, and culture right at your fingertips.
+Get the app

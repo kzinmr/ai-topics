@@ -1,0 +1,25 @@
+---
+title: "Latent Space - YouTube"
+url: "https://email.mg-d1.substack.com/c/eJxskE1yhCAQhU8ju7EaVJAFi2zmGlYDrUONiuEniTl9yskmi2y7X33vq-ew0BLTabKLiW4WM_lbPTKtK_Om0xZGJxkZrpQUqpdiZLRhWKeFdkpYyE9Y_nyBc_YwXMlBDrNG7fXMPXg9KjV3wKUQOM_AghEgJPR84KpToNqutRJAao7QzWJQXLb1XTyTe-imh225ed7manNB92xd3FjI05zo5WJKqsRW8yjlyE331oh7I-5nrKVausLXoYcVC-0lH-joiJ4d1U4ublvdQzkn2tGu5H9RR7VrcFhC3KfgDYexh1GzZJ7fYd8Sh8tpuapfKrlaHzcMu8mf5xcr_21ZM6WL1cOo-lGwDyN-AgAA__8CT3ro"
+fetched_at: 2026-04-15T17:37:15.847999+00:00
+source_date: 2026-04-15
+tags: [newsletter, auto-ingested]
+---
+
+# Latent Space - YouTube
+
+Source: https://email.mg-d1.substack.com/c/eJxskE1yhCAQhU8ju7EaVJAFi2zmGlYDrUONiuEniTl9yskmi2y7X33vq-ew0BLTabKLiW4WM_lbPTKtK_Om0xZGJxkZrpQUqpdiZLRhWKeFdkpYyE9Y_nyBc_YwXMlBDrNG7fXMPXg9KjV3wKUQOM_AghEgJPR84KpToNqutRJAao7QzWJQXLb1XTyTe-imh225ed7manNB92xd3FjI05zo5WJKqsRW8yjlyE331oh7I-5nrKVausLXoYcVC-0lH-joiJ4d1U4ublvdQzkn2tGu5H9RR7VrcFhC3KfgDYexh1GzZJ7fYd8Sh8tpuapfKrlaHzcMu8mf5xcr_21ZM6WL1cOo-lGwDyN-AgAA__8CT3ro
+
+About
+Press
+Copyright
+Contact us
+Creators
+Advertise
+Developers
+Terms
+Privacy
+Policy & Safety
+How YouTube works
+Test new features
+NFL Sunday Ticket
