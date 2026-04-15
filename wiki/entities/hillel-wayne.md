@@ -1,7 +1,7 @@
 ---
 title: Hillel Wayne
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-04-15
 tags:
   - person
   - blogger

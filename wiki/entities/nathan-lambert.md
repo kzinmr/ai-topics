@@ -4,7 +4,7 @@ handle: "@natolambert"
 url: "https://www.natolambert.com/"
 twitter: "https://x.com/natolambert"
 status: active
-updated: 2026-04-14
+updated: 2026-04-15
 tags:
   - person
   - ai-research
@@ -94,6 +94,16 @@ His unconventional path — starting his Ph.D. in MEMS/physics, being rejected b
 **RLHF Book Completed**: The RLHF Book is done and ready for pre-order via Manning (also available free at rlhfbook.com with 1,764+ GitHub stars).
 
 **Post-Training Course**: Announced development of a comprehensive post-training course covering SFT, DPO, RLVR, and synthetic data pipelines.
+
+**"My bets on open models, mid-2026" Newsletter (Apr 15, 2026)**: Comprehensive analysis covering:
+- **Capability Gap Persists**: Open models will not fully catch up to closed models; the gap is sustained by compute advantages, research depth, and real-world usage data
+- **Chinese Open-Weight Labs**: Heavily benchmark-focused, effective distillation users, but expected to face funding constraints by late 2026
+- **RL & Real-World Data Advantage**: Shift to RL-dominated training makes user interaction data critical; closed labs can leverage online RL from direct user feedback (e.g., Claude Code, Codex) to accelerate beyond open models
+- **Open Model Market Fit**: Will dominate repetitive automation tasks (API market share), driving investment into domain-specific efficient open models
+- **U.S. Adoption Shift**: U.S. will regain open-model adoption leadership starting early 2027; key catalysts: Google Gemma 4, Nvidia Nemotron, Arcee AI
+- **Local Agents as "Dark Matter"**: "Local agents, OpenClaw, and other personal agents represent a large, to date, mostly ignored market for open model usage. It is a sort of dark matter, with pervasive, massive potential for influence on the balance of open-to-closed models"
+- **Regulatory Reality**: Bans on frontier models are unenforceable; another sovereign will always train and release them
+- **Funding Evolution**: New funding structures will emerge as enterprises and sovereigns recognize that dependencies on single, for-profit companies for AI access are unreliable
 
 ## Core Ideas
 

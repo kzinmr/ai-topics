@@ -104,6 +104,7 @@ Unlike many AI researchers, Hotz is **skeptical of AI safety concerns**:
 - **Closed Source AI = Neofeudalism (Mar 2026)** — Argued that API access without weight sharing is feudalism; "Science never credits the first guy who came up with an idea, it credits the guy who published"
 - **Every minute you aren't running 69 agents (Mar 2026)** — Walked back hype rhetoric: "AI is not a magical game changer, it's simply the continuation of exponential progress"
 - **Two Worlds (Mar 2026)** — Capability vs. value distinction: "AI can keep getting better super fast, but the value of anything it produces by itself is low"
+- **zappa: AI-powered mitmproxy (Apr 2026)** — Vibe-coded an AI proxy using GPT-5.4 that intercepts web traffic via mitmproxy, routes it through Qwen (Cerebras API), strips ads/popups/enshittification, and returns clean pages. Advocates for shipping as a browser extension with customizable prompts, and making it agentic with per-site state. "Don't fall for AI browser crap that's marketed to you, that's just them wanting to control your attention better. You need an AI you can trust to fight back!"
 
 ## Related
 

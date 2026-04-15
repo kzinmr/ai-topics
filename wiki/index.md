@@ -47,7 +47,7 @@ Last updated: 2026-04-14 (Added Cybersecurity Proof of Work concept, RAM metric,
 - [[entities/geoffreylitt-com]] — Geoffrey Litt
 - [[entities/geohot-github-io]] — George Hotz
 - [[entities/georgi-gerganov]] — Georgi Gerganov
-- [[entities/gpjt]] — Giles Thomas
+- [[entities/gpjt]] — Giles Thomas (gpjt) — LLM from scratch series, gradient accumulation, consumer GPU training
 - [[entities/hugo-bowne-anderson]] — Hugo Bowne-Anderson
 - [[entities/grantslatton-com]] — Grant Slatton
 - [[entities/gwern]] — Gwern Branwen

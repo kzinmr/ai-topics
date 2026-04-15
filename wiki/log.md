@@ -1,5 +1,16 @@
 ## 2026-04-14 — Agentic PBT Concept + DRMacIver Entity Page (L3) + X Account
 
+## 2026-04-15 — Daily RSS Scan, Nathan Lambert Newsletter, Jensen Huang, geohot updates
+
+### Created
+- `entities/jensen-huang.md` — Updated with Dwarkesh Patel interview (Apr 2026): TPU competition, China export policy, supply chain moat, five-layer AI ecosystem, CUDA vs ASIC
+- `inbox/rss-scans/daily-scan-2026-04-15.md` — Daily RSS scan: 86 blogs, 92 new articles, Nathan Lambert newsletter
+
+### Updated
+- `entities/nathan-lambert.md` — Added "My bets on open models, mid-2026" comprehensive newsletter analysis: capability gap, Chinese labs funding, RL & real-world data, OpenClaw as "dark matter", regulatory reality
+- `entities/geohot-github-io.md` — Added zappa: AI-powered mitmproxy (Apr 2026), GPT-5.4 vibe-coded web proxy
+
+
 ### New Concept Page
 - **[[concepts/agentic-pbt]]** — Agentic Property-Based Testing (Anthropic + Hypothesis). Claude Code agent autonomously infers code invariants from type annotations/docstrings and generates PBTs. NeurIPS 2025 DL4C Workshop paper. 984 bug reports generated, 56% valid, 32% reportable. Opus 4.1 + Sonnet 4.5. Notable bugs: NumPy random.wald catastrophic cancellation, AWS Lambda Powertools iterator bug.
 
