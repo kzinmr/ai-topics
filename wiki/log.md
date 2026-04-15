@@ -241,6 +241,31 @@
 ### New Entity Pages
 - **[[entities/vtrivedy10]]** — Vivek Trivedy (LangChain Product Lead). Deep Agents CLI architect. Harness Engineering (Agent = Model + Harness). Terminal Bench 2.0 Top 30 → Top 5 improvement. HaaS thesis, reasoning sandwich, self-verification loops.
 
+## 2026-04-16 — Vivek Trivedy Context Fragments & Experiential Memory concepts added
+
+### New Concept Pages
+- **[[concepts/context-fragments]]** — Context Fragments (Vivek Trivedy, Apr 2026). コンテキストウィンドウを「harnessが選択的にロードするオブジェクトの集合」として捉える。各フラグメントは明示的意思決定の産物。RLM (Alex Zhang) のexternalized objectsに由来。
+- **[[concepts/experiential-memory]]** — Experiential Memory (Vivek Trivedy, Apr 2026). エージェント間で共有・フォーク・蓄積可能な経験的記憶。Bitter Lesson (Sutton) をメモリ設計に適用。
+
+### Updated Entity Pages
+- **[[entities/vtrivedy10]]** — Context Fragments & Experiential Memory セクション追加。既存のHarness Engineeringフレームワークをメモリ・検索の次元に拡張。Open Questions (Traces→Memory Primitives, JIT Search vs Weight Integration, Self-Managing Context) 記録。
+
+### Key Insights
+- **Harnessの再定義** — Model + Tool routing → Model + Context Fragment routing + Memory retrieval
+- **エージェント記憶の優位性** — 人間と異なり、エージェントの記憶は完全にフォーク・コピー可能
+- **Bitter Lessonの適用** — compute leveraged search > human-curated knowledge
+- **3層メモリモデル** — L1: In-Context Fragments, L2: Local Memory Store, L3: Experiential Pool (cross-agent shared)
+
+### Raw Article Ingested
+- [Harness, Memory, Context Fragments, & the Bitter Lesson](https://x.com/vtrivedy10) — Vivek Trivedy (@vtrivedy10), Apr 2026
+
+### Related People
+- [[alex-zhang]] (RLM/Externalized Objects — Context Fragment ideaの源流)
+- [[richard-sutton]] (The Bitter Lesson — compute leveraged search)
+- [[dwarkesh-patel]] (Agent memoryのフォーク・蓄積可能性についての議論)
+
+---
+
 ## 2026-04-16 — Sandbox Infrastructure横断分析、JS Runtime概念ページ追加、sandboxディレクトリ体系構築
 
 ### New Concept Pages

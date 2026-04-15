@@ -375,6 +375,8 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 - [[concepts/harness-design-long-running-apps]] — Harness Design for Long-Running Apps (Anthropic's multi-agent GAN loop)
 - [[concepts/memory-systems-design-patterns]] — Memory Systems Design Patterns (Anthropic vs OpenAI vs Cognition synthesis)
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware (S3 Files, Tigris, LLMFS, ChromaFS — L3 cloud storage + virtual FS)
+- [[concepts/context-fragments]] — Context Fragments (Vivek Trivedy, Apr 2026) — harnessが選択的にロードするコンテキストオブジェクトの集合
+- [[concepts/experiential-memory]] — Experiential Memory (Vivek Trivedy, Apr 2026) — エージェント間で共有・フォーク・蓄積可能な経験的記憶
 
 ### AI Safety & Alignment
 

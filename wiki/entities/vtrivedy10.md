@@ -125,3 +125,62 @@ Trivedy predicts a future where builders create custom harnesses (like Bolt or C
 *   **Agent Reliability:** Posts about evaluation, benchmarking (Terminal Bench), and self-verification.
 *   **Open Source AI:** Advocating for open harnesses (Deep Agents) and model-agnosticism.
 *   **Developer Tools:** Commentary on the evolution of IDEs, CLIs, and agent workflows.
+
+## Harness, Memory, Context Fragments & the Bitter Lesson (Apr 2026)
+
+Vivの2026年4月の投稿では、Harness Engineeringを**メモリ・検索・コンテキスト管理**の文脈に拡張し、エージェントの長期的進化についてのメンタルモデルを提示している。これは「v30+」と称され、HTML図解を用いて反復的に洗練された思考のダンプである。
+
+### Context Fragments
+
+> *"the context window is a precious artifact. Harnesses make decisions on how to populate, manage, edit, and organize it so agents can do work. Each loaded object can be thought of as a Context Fragment and represents an explicit decision by the user and harness designer of what needs a model needs to do work at any given time."*
+
+Vivはコンテキストウィンドウを単なる「トークンの入れ物」ではなく、**harnessが選択的にロードする「Context Fragment」の集合**として捉える。各フラグメントは、ユーザーとharness設計者の明示的な意思決定を反映している。このアイデアは、@a1zhang（Alex L. Zhang）の[[rlm-recursive-language-models]]で提唱された「externalizing objects + loading into the context window」のパイオニア的仕事に由来する。
+
+### Experiential Memory
+
+> *"agent memory has a massive advantage as it can be accumulated across all agents which are easily forked and duplicated (unlike humans). @dwarkesh_sp does a good talking about this massive benefit of artificial systems"*
+
+エージェントは相互作用ごとに大量のデータ（Traces）を生成する。Vivはこれを**Experiential Memory（経験的記憶）**として扱い、人間とは異なりエージェント間で**共有・フォーク・蓄積**できる点を最大の利点と位置づける。メモリは外部化されたオブジェクトとして扱われ、harnessの役割は「適切なタイミングで適切なデータを蓄積メモリから検索し、コンテキストウィンドウにロードすること」である。
+
+### Search & The Bitter Lesson
+
+> *"As we deploy agents in our world over year timescales, there is going to be a hyper-exponential in the amount of data produced by those agents."*
+
+VivはRich Suttonの[[chatgpt-memory-bitter-lesson]]をエージェントメモリに適用する：
+
+1. **データを所有する** — オープンエコシステムが重要
+2. **データを使う** — 検索、蒸留、整理が必須
+
+人間の脳は「経験から文脈的に検索し、意図的な練習で重要なものをメモリに定着させる」ことに優れている。エージェントシステムも同様の能力を持つ必要があるが、現在のインフラ・アルゴリズムはこの新しいデータ・レジームで破綻する可能性がある。
+
+### Open Questions
+
+Vivが提起した未解決の問い：
+
+| 問い | 意味 |
+|------|------|
+| **Traces → Memory Primitives** | 経験（トレース）をどのように効率的に蒸留し、長期的なメモリプリミティブにするか？ |
+| **JIT Search vs Weight Integration** | 検索はjust-in-timeで実行すべきか、モデルの重みに統合すべきか？ |
+| **Self-Managing Context** | モデルが自身のコンテキストウィンドウを自己管理するにはどうすればよいか？外部オブジェクトを再帰的に操作する際のエラー率をどう下げるか？ |
+
+### 既存のHarness Engineeringとの接続
+
+この投稿は、Vivが以前に構築したHarness Engineeringフレームワークを**メモリと検索の次元**に拡張するものである：
+
+| 既存の概念 | 今回の拡張 |
+|-----------|-----------|
+| Harness = Model + システム | Harness = Model + Context Fragment routing + Memory retrieval |
+| Context Rot対策（compaction, offloading） | Context Fragments（各ロードオブジェクトは明示的意思決定） |
+| 自己検証ループ | 経験的メモリの蒸留・蓄積・共有 |
+| Terminal Bench最適化 | Bitter Lesson — compute leveraged search > human-curated knowledge |
+
+## Related People
+
+*   [[harrison-chase]]: CEO/Co-founder of LangChain; Deep Agents is a key strategic direction.
+*   [[eugene-yurtsev]]: Co-author on Deep Agents evaluation and Harness Engineering posts.
+*   [[ryan-lopopolo]]: Also discusses Harness Engineering; complementary perspectives on agent systems.
+*   [[simon-willison]]: Covers AI engineering and agent tools; often discusses similar themes.
+*   [[longin-jan-latecki]]: PhD Advisor at Temple University.
+*   [[alex-zhang]]: MIT CSAIL PhD, RLM (Recursive Language Models). Context Fragment ideaの源流。
+*   [[dwarkesh-patel]]: Agent memoryのフォーク・蓄積可能性についての議論。
+*   [[richard-sutton]]: The Bitter Lesson — computation leveraged search > curated knowledge.
