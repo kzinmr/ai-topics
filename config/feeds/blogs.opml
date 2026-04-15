@@ -19,7 +19,7 @@
       <outline type="rss" text="lcamtuf.substack.com" title="lcamtuf.substack.com" xmlUrl="https://lcamtuf.substack.com/feed" htmlUrl="https://lcamtuf.substack.com" />
       <outline type="rss" text="mitchellh.com" title="mitchellh.com" xmlUrl="https://mitchellh.com/feed.xml" htmlUrl="https://mitchellh.com" />
       <outline type="rss" text="dynomight.net" title="dynomight.net" xmlUrl="https://dynomight.net/feed.xml" htmlUrl="https://dynomight.net" />
-      <outline type="rss" text="utcc.utoronto.ca/~cks" title="utcc.utoronto.ca/~cks" xmlUrl="https://utcc.utoronto.ca/~cks/space/blog/?atom" htmlUrl="https://utcc.utoronto.ca/~cks" />
+
       <outline type="rss" text="xeiaso.net" title="xeiaso.net" xmlUrl="https://xeiaso.net/blog.rss" htmlUrl="https://xeiaso.net" />
       <outline type="rss" text="devblogs.microsoft.com/oldnewthing" title="devblogs.microsoft.com/oldnewthing" xmlUrl="https://devblogs.microsoft.com/oldnewthing/feed" htmlUrl="https://devblogs.microsoft.com/oldnewthing" />
       <outline type="rss" text="righto.com" title="righto.com" xmlUrl="https://www.righto.com/feeds/posts/default" htmlUrl="https://righto.com" />
@@ -61,14 +61,14 @@
       <outline type="rss" text="brutecat.com" title="brutecat.com" xmlUrl="https://brutecat.com/rss.xml" htmlUrl="https://brutecat.com" />
             <outline type="rss" text="eli.thegreenplace.net" title="eli.thegreenplace.net" xmlUrl="https://eli.thegreenplace.net/feeds/all.atom.xml" htmlUrl="https://eli.thegreenplace.net" />
       <outline type="rss" text="abortretry.fail" title="abortretry.fail" xmlUrl="https://www.abortretry.fail/feed" htmlUrl="https://abortretry.fail" />
-      <outline type="rss" text="fabiensanglard.net" title="fabiensanglard.net" xmlUrl="https://fabiensanglard.net/rss.xml" htmlUrl="https://fabiensanglard.net" />
+
       <outline type="rss" text="oldvcr.blogspot.com" title="oldvcr.blogspot.com" xmlUrl="https://oldvcr.blogspot.com/feeds/posts/default" htmlUrl="https://oldvcr.blogspot.com" />
       <outline type="rss" text="bogdanthegeek.github.io" title="bogdanthegeek.github.io" xmlUrl="https://bogdanthegeek.github.io/blog/index.xml" htmlUrl="https://bogdanthegeek.github.io/blog" />
       <outline type="rss" text="hugotunius.se" title="hugotunius.se" xmlUrl="https://hugotunius.se/feed.xml" htmlUrl="https://hugotunius.se" />
       <outline type="rss" text="gwern.net" title="gwern.net" xmlUrl="https://gwern.substack.com/feed" htmlUrl="https://gwern.net" />
             <outline type="rss" text="berthub.eu" title="berthub.eu" xmlUrl="https://berthub.eu/articles/index.xml" htmlUrl="https://berthub.eu" />
       <outline type="rss" text="chadnauseam.com" title="chadnauseam.com" xmlUrl="https://chadnauseam.com/rss.xml" htmlUrl="https://chadnauseam.com" />
-      <outline type="rss" text="simone.org" title="simone.org" xmlUrl="https://simone.org/feed/" htmlUrl="https://simone.org" />
+
       <outline type="rss" text="it-notes.dragas.net" title="it-notes.dragas.net" xmlUrl="https://it-notes.dragas.net/feed/" htmlUrl="https://it-notes.dragas.net" />
       <outline type="rss" text="beej.us" title="beej.us" xmlUrl="https://beej.us/blog/rss.xml" htmlUrl="https://beej.us" />&gt;
       <outline type="rss" text="danielwirtz.com" title="danielwirtz.com" xmlUrl="https://danielwirtz.com/rss.xml" htmlUrl="https://danielwirtz.com" />
