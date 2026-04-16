@@ -4,6 +4,14 @@
 - **[[concepts/ungrounded-meaning]]** — Ungrounded Meaning. Analysis of Merrill et al.'s arXiv:2104.10809 "Provable Limitations of Acquiring Meaning from Ungrounded Form" through Shunyu Yao's critique. Key findings: assertions alone cannot enable semantic emulation; the halting problem barrier applies universally; grounding through logical operators and environment interaction is non-negotiable for true understanding. Connects to CoALA, Harness Engineering, and Neurosymbolic AI.
 - **[[concepts/coala]]** — CoALA: Cognitive Architectures for Language Agents. Unified framework (Sumers, Yao, Narasimhan, Griffiths) mapping LLM agents to cognitive science lineage (Soar, ACT-R). Agent as tuple: A = (M_w, M_lt, A_i, A_e, D). Three dimensions: modular memory, structured action space (internal vs external), generalized decision-making loop. Provides architectural response to the Ungrounded Meaning limitation.
 
+## 2026-04-16 — Hermes Agent Architecture (Kazuki Inamura)
+
+### New Entity Page
+- **[[entities/hermes-agent]]** — Hermes Agent (NousResearch). Comprehensive architecture analysis based on official v0.9.0 docs. Covers: AIAgent core, prompt assembly (cached vs ephemeral layers), tool runtime (self-registering registry), persistent state (SQLite + FTS5, JSONL transcripts, bounded memory), subagent delegation vs execute_code primitives, gateway orchestration (14+ platforms), provider runtime resolution, plugin/hook extension model. Key design characteristics: AIAgent-centric, prompt-cache-aware state, three-tier memory, execution primitive separation. Author: Kazuki Inamura.
+
+### Updated
+- `wiki/index.md` — Added hermes-agent entity entry under People section
+
 ## 2026-04-15 — Daily RSS Scan, Nathan Lambert Newsletter, Jensen Huang, geohot updates
 
 ### Created
