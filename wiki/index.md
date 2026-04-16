@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-16 (Added APOSD vs Clean Code debate — Ousterhout vs Martin on method length, comments, TDD vs bundling)
+Last updated: 2026-04-16 (Added Anthropic official Claude Code 1M context + session management strategies)
 
 ## Entity Pages (73)
 

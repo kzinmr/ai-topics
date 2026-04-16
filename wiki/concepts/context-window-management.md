@@ -1,10 +1,12 @@
 ---
 title: "Context Window Management"
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-04-16
 tags: [context-window, token-management, prompt-engineering, claude-code, llm-optimization]
 aliases: ["context-window-optimization", "token-budget-management", "conversation-hygiene"]
 related: [[claude-code-best-practices]], [[claude-code-source-patterns]], [[inference-speed-development]], [[agentic-engineering]]
+sources:
+  - raw/articles/anthropic-claude-code-session-management-1m-context.md
 ---
 
 # Context Window Management
@@ -99,6 +101,61 @@ As conversations grow, models tend to **forget or dilute early instructions**. C
 
 **Fork criterion** (from Claude Code source):
 > "Fork yourself when the intermediate tool output isn't worth keeping in your context. The criterion is qualitative — 'will I need this output again?' — not task size."
+
+---
+
+## Anthropic's 1M Context Session Management Strategies
+
+*From [Anthropic's official Claude Code blog post (April 2026)](https://claude.com/blog/using-claude-code-session-management-and-1m-context) by Thariq Shihipar.*
+
+### The 1M Context Window
+
+Claude Code now operates with a **1,000,000 token context window**, containing the system prompt, full conversation history, every tool call/output, and all read files. While this provides massive runway, **context rot** remains the fundamental challenge:
+
+> "Context rot is the observation that model performance degrades as context grows because attention gets spread across more tokens, and older, irrelevant content starts to distract from the current task."
+> — Thariq Shihipar, Anthropic
+
+### Five Session Branching Strategies
+
+Every completed turn presents a branching point. The official Anthropic guidance:
+
+| Strategy | Command | When to Use |
+|:---|:---|:---|
+| **Continue** | Send next prompt | Context remains fully relevant; avoids rebuilding state |
+| **Rewind** | `/rewind` or `Esc Esc` | Claude took a wrong path; drops subsequent messages, preserves useful file reads |
+| **Compact** | `/compact` | Session bloated with stale debugging/exploration; can steer: `/compact focus on auth refactor, drop test debugging` |
+| **Clear** | `/clear` | Starting a genuinely new task; zero rot, you control what carries forward |
+| **Subagents** | Explicit prompt or auto-trigger | Next step generates heavy intermediate output where only the conclusion matters |
+
+### Decision Matrix for Session Management
+
+| Situation | Reach For | Why |
+|:---|:---|:---|
+| Same task, context still relevant | `Continue` | Everything in window is load-bearing; don't pay to rebuild |
+| Wrong path taken | `Rewind` (`Esc Esc`) | Keep useful file reads, drop failed attempt, re-prompt |
+| Mid-task, session bloated | `/compact` | Low effort; Claude decides what mattered |
+| New task entirely | `/clear` | Zero rot; you control what carries forward |
+| Heavy output, conclusion-only needed | `Subagent` | Tool noise stays in child's context; only result returns |
+
+### Proactive Compaction with 1M Context
+
+With the expanded window, **manual compaction becomes more practical than automatic**:
+
+> "Bad compacts can happen when the model can't predict the direction your work is going... With one million context, you have more time to `/compact` proactively with a description of what you want to do."
+> — Thariq Shihipar, Anthropic
+
+**Subagent triggering patterns** (from Anthropic):
+```text
+"Spin up a subagent to verify the result of this work based on the following spec file"
+"Spin off a subagent to read through this other codebase and summarize how it implemented the auth flow"
+"Spin off a subagent to write the docs on this feature based on my git changes"
+```
+
+### Cost/Speed Tradeoff
+
+Reusing context (`Continue`/`/compact`) avoids re-reading files, saving time and tokens compared to `/clear`. Only clear when the task fundamentally shifts.
+
+**New `/usage` command**: Anthropic released `/usage` to track session consumption metrics, helping developers monitor token usage and make informed context management decisions.
 
 ---
 

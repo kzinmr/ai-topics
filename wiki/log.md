@@ -1,3 +1,20 @@
+## 2026-04-16 — Anthropic Claude Code: 1M Context & Session Management Strategies
+
+### New Raw Article
+- `raw/articles/anthropic-claude-code-session-management-1m-context.md` — Anthropic公式ブログ: Claude Codeの1Mコンテキストウィンドウ、セッション管理戦略、/usageコマンド (2026-04-15, Thariq Shihipar)
+
+### Updated Concept Pages
+- **[[context-window-management]]** — Anthropic公式1Mコンテキストセクション追加: 5つのセッション分岐戦略(Continue/Rewind/Compact/Clear/Subagents)、意思決定マトリックス、/usageコマンド、プロアクティブコンパクションパターン
+- **index.md** — ヘッダー更新
+
+### Key Insights
+- **1MコンテキストでもContext Rotは依然として課題** — アテンションの拡散により、古い情報が現在のタスクを妨害
+- **5つのセッション分岐戦略は実用的フレームワーク** — Continue（継続）、Rewind（巻き戻し）、Compact（圧縮）、Clear（クリア）、Subagents（委譲）
+- **手動コンパクションが自動より優位** — 1Mの余裕があるため、`/compact focus on X`で次の作業方向を指示できる
+- **/usageコマンド新機能** — セッション消費量の可視化
+
+---
+
 ## 2026-04-16 — Rehan van der Merwe: SQS Lambda ESM Scaling + ECS Fargate Scaling + Distributed Monolith Refactoring
 
 ### New Concept Pages
