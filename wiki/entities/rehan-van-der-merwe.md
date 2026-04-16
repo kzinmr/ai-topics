@@ -8,6 +8,10 @@ aliases: ["rehanvdm", "Rehan van der Merwe"]
 sources:
   - raw/articles/rehanvdm-lambda-monolith-lambdalith-2023.md
   - raw/articles/rehanvdm-should-you-use-microservices-2021.md
+  - raw/articles/rehanvdm-sqs-lambda-esm-scaling.md
+  - raw/articles/rehanvdm-scaling-ecs-fargate-like-lambda.md
+  - raw/articles/rehanvdm-refactoring-a-distributed-monolith-to-microservices.md
+  - raw/articles/rehanvdm-from-monolith-to-resilient-microservices.md
 ---
 
 # Rehan van der Merwe (@rehanvdm)

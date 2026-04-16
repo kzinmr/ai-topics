@@ -1,3 +1,30 @@
+## 2026-04-16 — Rehan van der Merwe: SQS Lambda ESM Scaling + ECS Fargate Scaling + Distributed Monolith Refactoring
+
+### New Concept Pages
+- **[[concepts/sqs-lambda-esm-scaling]]** — SQS Lambda ESM Scaling Behaviours. Rehan van der Merweの実験ベース分析: 7つのスケーリングパターン、バッチサイズとコールドスタートの関係、エラー時のスループット低下、バックプレッシャー制御。AI Agentのタスクキュー設計への示唆。
+- **[[concepts/ecs-fargate-scaling]]** — ECS Fargate Scaling. Lambdaのバースト処理性能に迫るECS最適化実験。カスタムメトリクス、ステップスケーリング、2-3分の初期スケールラグの回避策。AI Agentのコンピュートプール設計へのマッピング。
+
+### Updated Entity Pages
+- **[[entities/rehan-van-der-merwe]]** — ソース追加（SQS Lambda ESM Scaling、ECS Fargate Scaling、Distributed Monolith Refactoring、From Monolith to Resilient Microservices）。既存のAI Agent MappingテーブルにSQS/ECSパターン追加済み。
+
+### Raw Articles Ingested
+- `raw/articles/rehanvdm-sqs-lambda-esm-scaling.md` — 7 SQS Lambda ESM Scaling Behaviours (2026-03-31)
+- `raw/articles/rehanvdm-scaling-ecs-fargate-like-lambda.md` — Scaling ECS Fargate like Lambda (2026-02-11)
+- `raw/articles/rehanvdm-refactoring-a-distributed-monolith-to-microservices.md` — Refactoring a distributed monolith to microservices
+- `raw/articles/rehanvdm-from-monolith-to-resilient-microservices.md` — From monolith to resilient microservices
+
+### Key Insights
+- **ESMはキュー深度でスケールしない** — AI Agentのタスクキュー設計では、明示的なバックプレッシャー制御が必要
+- **エラーはスループットに壊滅的影響** — 1%エラー率で20%低下。Agentは例外を投げるのではなくBatch Item Failureを使用すべき
+- **ECSの2-3分スケールラグは不可避** — カスタムメトリクスで1分短縮可能だが、Agentのウォームスタート戦略に影響
+- **EventBridge EDA** — 同期HTTPチェーンを非同期pub/subに置き換えることで、Agent間のカスケード障害を防止
+
+### Updated
+- **wiki/index.md** — SQS/ECS concept pages追加、Cloud Architecture & Distributed Systemsセクション新設
+- **wiki/log.md** — このエントリ
+
+---
+
 ## 2026-04-16 — APOSD vs Clean Code: Ousterhout-Martin Debate
 
 ### New Comparison Page

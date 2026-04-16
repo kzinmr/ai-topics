@@ -313,6 +313,8 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[concepts/agent-team-swarm/managed-devins]] — Managed Devins (Cognition's conditional multi-agent)
 - [[concepts/closing-agent-loop]] — Closing the Agent Loop (Write→Catch→Fix→Merge)
 - [[concepts/ai-agent-engineering/context-anxiety]] — Context Anxiety (Sonnet 4.5 integration lessons)
+- [[concepts/sqs-lambda-esm-scaling]] — SQS Lambda ESM Scaling Behaviours (Rehan van der Merwe: 7 scaling patterns, batch sizing, error handling, backpressure)
+- [[concepts/ecs-fargate-scaling]] — ECS Fargate Scaling (Rehan van der Merwe: matching Lambda burst performance, custom metrics, step scaling)
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst (Devinをデータ分析エージェントにする設計)
 
 ### AI Organization (4)
@@ -436,3 +438,7 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 ### Coding Agents & Swarm Orchestration
 
 - [[entities/akira-realmcore|Akira]] (@realmcore_) — Random Labs AI engineer. Slate: swarm-native coding agent using Thread Weaving. RLM for coding, skill chaining, knowledge overhang.
+
+### Cloud Architecture & Distributed Systems (AI Agent Infrastructure Mapping)
+
+- [[entities/rehan-van-der-merwe|Rehan van der Merwe]] (@rehanvdm) — Cloud-native architect. AWS serverless, microservices design, distributed systems, operational excellence. Lambda Monolith (Lambdalith), EventBridge EDA, SQS Lambda ESM scaling behaviors, ECS Fargate scaling. Practical AWS architecture patterns directly mappable to AI Agent system design.
