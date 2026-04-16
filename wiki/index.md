@@ -2,11 +2,16 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-16 (Added Jason Liu "in distribution" sandbox theory, OpenAI Agents SDK v0.14.0 documentation) — Hypothesis creator, Antithesis Senior Engineer, Hegel PBT protocol, Claude Code workflow, LLM evals via property-based testing)
+Last updated: 2026-04-16 (Added Jason Liu "in distribution" sandbox theory, OpenAI Agents SDK v0.14.0 GA, sandbox API documentation) — Hypothesis creator, Antithesis Senior Engineer, Hegel PBT protocol, Claude Code workflow, LLM evals via property-based testing)
 
-## Entity Pages (72)
+## Entity Pages (73)
 
+- [[entities/openai]] — OpenAI (GPT, ChatGPT, Codex, Agents SDK, Symphony)
 - [[entities/adam-rosenthal]] — Adam Rosenthal
+
+## Concept Pages (71)
+
+- [[concepts/openai-agents-sdk]] — OpenAI Agents SDK v0.14.0 (sandbox execution, harness/compute separation, manifests)
 
 ### Blog Authors (HN Popular Blogs — 84 feeds)
 

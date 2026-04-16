@@ -2,66 +2,63 @@
 title: "OpenAI Agents SDK"
 created: 2026-04-16
 updated: 2026-04-16
-tags: [llm, ai-agents, framework, product, tooling]
-aliases: ["Agents SDK", "OpenAI Agent Framework"]
+tags: [framework, ai-agents, openai, sandbox, harness, compute, tooling]
+aliases: ["OpenAI Agent SDK", "openai-agents"]
 ---
 
-# OpenAI Agents SDK
+# OpenAI Agents SDK (v0.14.0)
+
+| | |
+|---|---|
+| **Package** | `openai-agents>=0.14.0` |
+| **Release Date** | April 15, 2026 (GA) |
+| **Language** | Python (TypeScript planned) |
+| **Developer** | [[entities/openai]] |
+| **API** | [platform.openai.com](https://platform.openai.com) |
+| **Docs** | [Sandbox Agents Guide](https://developers.openai.com/api/docs/guides/agents/sandboxes) |
 
 ## Overview
 
-OpenAI Agents SDKは、プロダクション対応のエージェント構築のための公式Pythonフレームワーク。2026年4月v0.14.0で**サンドボックス実行機能**をGAリリースし、モデルネイティブなインフラストラクチャを提供。エージェントがファイル検査、コマンド実行、コード編集、長期マルチステップタスクを安全な分離環境で実行可能に。
+The OpenAI Agents SDK is a standardized, model-native framework for building production-ready AI agents. Version 0.14.0 introduced **native sandbox execution**, enabling agents to safely inspect files, run commands, edit code, and execute long-horizon tasks within controlled, isolated environments.
 
-**設計哲学:** 「Turnkey yet flexible — カスタムインフラのオーバーヘッドを最小化しつつ、ツール、メモリ、サンドボックス環境の完全な制御を維持」
+## Core Architecture
 
-## Key Capabilities
+### Harness vs Compute Separation
+
+The SDK introduces a fundamental architectural split:
+
+| Plane | Responsibility | Examples |
+|---|---|---|
+| **Harness (Control)** | Agent loop, model calls, tool routing, handoffs, approvals, tracing, recovery, auth, billing | OpenAI infrastructure |
+| **Compute (Execution)** | File I/O, commands, dependency installs, port exposure, provider-specific state | Sandbox environments |
+
+> *"The key split is the boundary between the harness and compute."*
+
+This separation mitigates prompt-injection/exfiltration risks and isolates credentials from model-generated code.
 
 ### Standardized Integrations
-- **MCP** — ツール使用の標準プロトコル
-- **Skills** — プログレッシブディスクロージャー（必要な時に必要なインストラクションをロード）
-- **AGENTS.md** — カスタムインストラクションバンドル
-- **Shell** — コード実行ツール
-- **Apply Patch** — ファイル編集ツール
+
+- **MCP** — Tool use via Model Context Protocol
+- **Skills** — Progressive disclosure via [[agent-skills]]
+- **AGENTS.md** — Custom instructions
+- **Shell** — Code execution
+- **Apply Patch** — File edits
 
 ### Sandbox Execution
-- ネイティブサンドボックス実行 — 安全なファイルI/O、依存関係インストール、ツール実行
-- ワークスペースポータビリティ (`Manifest`抽象化)
-- マルチクラウドストレージ: **AWS S3, GCS, Azure Blob Storage, Cloudflare R2**
 
-### Provider Ecosystem
-ビルトイン互換性: **Blaxel, Cloudflare, Daytona, E2B, Modal, Runloop, Vercel**（またはカスタムサンドボックス持込可能）
+- **Providers:** Blaxel, Cloudflare, Daytona, E2B, Modal, Runloop, Vercel (BYO-sandbox supported)
+- **Manifest Abstraction:** Workspace contract defining files, dirs, repos, mounts, env vars, users/groups
+- **Cloud Storage Integration:** AWS S3, Google Cloud Storage, Azure Blob Storage, Cloudflare R2
+- **Security:** Workspace-relative paths only; absolute paths and `..` traversal blocked
+- **Durability:** Externalized agent state enables snapshotting & rehydration
 
-## Architecture: Harness vs Compute Separation
-
-OpenAI Agents SDKの中心的な設計原則は、**オーケストレーション（Harness）と実行（Compute）の明確な分離**:
-
-> *"The key split is the boundary between the harness and compute. The harness is the control plane around the model... Compute is the sandbox execution plane where model-directed work reads and writes files, runs commands, installs dependencies, uses mounted storage, exposes ports, and snapshots state."*
-
-### Harness (コントロールプレーン)
-- モデルへの指示、メモリ管理、ツールルーティング
-- 資格情報の管理（モデル生成コードから分離）
-- サブエージェントのルーティングと並列実行オーケストレーション
-- 状態のスナップショットとリエハイドレーション
-
-### Compute (実行プレーン)
-- ファイル読み書き、コマンド実行
-- 依存関係インストール、ポート公開
-- サンドボックス内の状態保持
-- アーティファクト生成（CSV, JSONL, スクリーンショット等）
-
-### Benefits
-| 側面 | メリット |
-|------|----------|
-| **セキュリティ** | 資格情報とモデル生成コードを隔離。プロンプトインジェクション・データ漏洩リスクを軽減 |
-| **耐久性** | 外部化されたエージェント状態。サンドボックス障害からのシームレスなリカバリ |
-| **スケーラビリティ** | オンデマンド起動、サブエージェント分離、コンテナ間並列実行 |
-
-## Core Components
+## Key Components
 
 ### SandboxAgent
-エージェント定義とデフォルトのサンドボックス設定を組み合わせた単位。
-
 ```python
+from agents.sandbox import SandboxAgent, Manifest
+from agents.sandbox.entries import LocalDir
+
 agent = SandboxAgent(
     name="Dataroom Analyst",
     model="gpt-5.4",
@@ -70,113 +67,77 @@ agent = SandboxAgent(
 )
 ```
 
-### Manifest
-新規セッションのワークスペース契約。初期ファイル、ディレクトリ、リポジトリ、マウント、環境変数、ユーザー/グループを定義。
-
-- **パスルール:** ワークスペース相対のみ。絶対パスや`..`エスケープ禁止
-- **ベストプラクティス:** リポジトリ、入力アーティファクト、出力ディレクトリをマニフェストに配置
-- **セキュリティ:** シークレットはマニフェストに埋め込まず、プロバイダネイティブのシークレット管理を使用
-
 ### Capabilities
-サンドボックスネイティブの動作を定義:
-- **デフォルト:** `Filesystem()`, `Shell()`, `Compaction()`
-- **カスタム:** `Skills` (繰り返し可能インストラクション)、`Memory` (クロスランメモリ)
+| Capability | Purpose |
+|---|---|
+| `Shell()` | Command execution, interactive input |
+| `Filesystem()` | Edit files, inspect images |
+| `Skills()` | Repeatable instructions/scripts/assets |
+| `Memory()` | Persist lessons across runs |
+| `Compaction()` | Long-running context trimming |
 
 ### Session Resolution Order
-1. `run_config.sandbox.session` → ライブセッション直接再利用
-2. `RunState` からのレジューム → 保存済み状態を使用
-3. `run_config.sandbox.session_state` → シリアライズ済み状態からの明示的レジューム
-4. フォールバック → 新規セッション作成
+1. `run_config.sandbox.session` → Live session reuse
+2. `RunState` → Resume from saved state
+3. `run_config.sandbox.session_state` → Serialized state
+4. Fallback → New session
 
-## Memory System
+## Security Model
 
-クロスランメモリは会話メモリ(`Session`)とは独立し、過去の教訓・好み・修正を読みやすいファイルに要約:
+- **Default-Deny:** Sandboxes start with zero permissions
+- **Path Isolation:** Workspace-relative paths only
+- **Credential Handling:** Runtime configuration, never prompt content
+- **Provider-Native Secrets:** Use hosted sandbox secret systems
+- **Artifact Review:** Export only after reviewing generated content
 
-- `Memory()` → 読み取り + 生成（デフォルト）
-- `Memory(generate=None)` → 読み取り専用
-- `Memory(read=None)` → 生成専用
-- **プログレッシブディスクロージャー:** SDKが`memory_summary.md`をインジェクト → エージェントが`MEMORY.md`を検索 → 必要に応じてロールアウトサマリーを展開
+## Provider Ecosystem
 
-ストレージ構成:
-```
-workspace/
-  sessions/<rollout-id>.jsonl
-  memories/
-    memory_summary.md
-    MEMORY.md
-    raw_memories.md
-    raw_memories/<rollout-id>.md
-    rollout_summaries/<rollout-id>_<slug>.md
-    skills/
-```
-
-## When to Use
-
-### Use Sandbox Agents when:
-- ファイル操作やコマンド実行が必要
-- 永続ワークスペースが必要（データマウント、アーティファクト生成）
-- 人間レビュー/レジュームワークフロー
-- ポート公開サービス（ノートブック、プレビュー）
-
-### Skip Sandbox Agents when:
-- 短いレスポンスのみ（永続ワークスペース不要）→ Responses APIまたは基本Agents SDK
-- 稀なシェルアクセスのみ → ホステッドシェルツール
+| Provider | Type | Notes |
+|---|---|---|
+| **Blaxel** | Cloud sandbox | Multi-tenant |
+| **Cloudflare** | Edge compute | Workers integration |
+| **Daytona** | Dev environments | Secure sandboxes |
+| **E2B** | Cloud sandbox | Specialized for AI agents |
+| **Modal** | Serverless | GPU support |
+| **Runloop** | Cloud sandbox | Fast boot times |
+| **Vercel** | Edge/Serverless | Web deployment |
 
 ## Pricing & Availability
-- **GA** via API (Python SDK、TypeScriptは予定)
-- 標準API価格（トークン + ツール使用ベース）
-- 今後の機能: コードモード、サブエージェント、サンドボックスプロバイダ統合拡大
+
+- **Status:** Generally Available (GA)
+- **Access:** OpenAI API
+- **Pricing:** Standard API pricing (tokens + tool use)
 
 ## Customer Validation
-> *"The updated Agents SDK made it production-viable for us to automate a critical clinical records workflow that previous approaches couldn't handle reliably enough. For us, the difference was not just extracting the right metadata, but correctly understanding the boundaries of each encounter in long, complex records."*
+
+> *"The updated Agents SDK made it production-viable for us to automate a critical clinical records workflow that previous approaches couldn't handle reliably enough."*
 > — **Rachael Burns**, Staff Engineer & AI Tech Lead, Oscar Health
 
+## Roadmap
+
+- **TypeScript SDK** (planned)
+- **Code mode & subagents** (rolling out to Python & TS)
+- **Additional sandbox providers**
+- **Deeper third-party integrations**
+
 ## Related Concepts
-- [[harness-engineering]] — Ryan Lopopolo / OpenAI Symphonyのハーネスエンジニアリング哲学
-- [[sandbox/_index]] — AIエージェントのサンドボックス分離技術全般
-- [[sandbox/infrastructure]] — コンテナ、microVM、gVisorレベルの分離
-- [[sandbox/in-process]] — Monty、capabilities-basedセキュリティ
-- [[agent-skills]] — SKILL.mdバンドル
-- [[agentic-engineering/how-agents-work]] — コーディングエージェントの動作原理
-- [[entities/jason-liu]] — Jason Liuの「in distribution」理論とサンドボックス応用パターン
 
-## Sandbox Applications (Jason Liu)
-
-Jason Liu ([@jxnlco](https://x.com/jxnlco)) はAgents SDKのサンドボックス機能を**「in distribution（モデルの訓練分布内）」**という視点で解説：
-
-### "In Distribution" の意味
-- 組み込みツール（shell, compaction, memory）はモデルが訓練中に理解しているインターフェース
-- ツール名（`bash` vs `shell` vs `run_command`）がモデルのパフォーマンスに実際に影響する
-- Compactionはプロンプトの工夫ではなく、ハーネスの正式なパス — モデルの訓練分布に組み込まれている
-- プロンプトキャッシングは長尺タスクの価格/性能比を改善 — コンテキストに詰めるだけでなく、作業を安く・速く・安定させる
-
-> "By using an in-distribution harness, you can see where the puck is going with us, rather than having to chase it from behind."
-
-### Harness/Compute分離の重要性
-- **Brain（Harness）**: 推論、計画、状態管理 — サンドボックス不要
-- **Hands（Compute）**: ファイルI/O、コマンド実行、ブラウザ操作 — サンドボックス必要
-- 「ラップトップを起動せずに考えられる」— 適切な量のコンピューティングをタスクごとに割り当て可能
-- セキュリティ: モデル生成コードがサンドボックス内で実行され、オーケストレーションマシンの資格情報漏洩リスクを低減
-
-### 具体的な応用パターン
-1. **Code Generation**: リポジトリ内で作業、テスト実行、PR作成
-2. **Data Room Extraction**: S3/GCSマウント → 非構造化データからワークブック・リスク登録簿生成
-3. **Artifacts**: PDF、スプレッドシート、デッキ生成（Skills併用）
-4. **Browser Use**: ポート公開でアプリ構築→ブラウザで検証→スクリーンショットで修正
-5. **Autonomous Research**: GPU-backed実験、parameter search、実行ログの永続化
-
-### Jason Liuの推奨
-> "Use the Agents SDK because it helps you build toward where agents are going, not where they are today. Build something that might not 100% work today and in five or six months, not only might that agent work, it might work well, because the capabilities underneath it keep getting better."
+- [[harness-engineering]] — Ryan Lopopolo / OpenAI Symphony orchestration philosophy
+- [[sandbox/_index]] — AI agent sandbox isolation technologies
+- [[sandbox/infrastructure]] — Container, microVM, gVisor-level isolation
+- [[agent-skills]] — SKILL.md bundles
+- [[agentic-engineering/how-agents-work]] — Coding agent architecture
 
 ## Entity Connections
-- [[entities/openai]] — 開発元
-- [[entities/samuel-colvin]] — Monty（インプロセスサンドボックス）開発者
-- [[entities/anthropic]] — 競合（Managed Agents、Computer Use）
-- [[entities/cognition]] — 競合（Devin）
+
+- [[entities/openai]] — Developer
+- [[entities/samuel-colvin]] — Monty (in-process sandbox) developer
+- [[entities/anthropic]] — Competitor (Managed Agents, Computer Use)
+- [[entities/cognition]] — Competitor (Devin)
 
 ## Sources
+
 - [[raw/articles/openai-agents-sdk-next-evolution-2026-04]]
 - [[raw/articles/openai-sandbox-agents-api-guide-2026-04]]
-- [[raw/articles/jason-liu-sandboxes-agents-sdk-2026-04]]
 - [OpenAI Agents SDK Blog (2026-04-15)](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
 - [OpenAI API Sandbox Docs](https://developers.openai.com/api/docs/guides/agents/sandboxes)

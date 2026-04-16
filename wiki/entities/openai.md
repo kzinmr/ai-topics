@@ -2,61 +2,70 @@
 title: "OpenAI"
 created: 2026-04-16
 updated: 2026-04-16
-tags: [llm, ai-agents, company, product]
-aliases: ["OpenAI, Inc."]
+tags: [company, llm, ai-agents, product, openai, gpt, agents-sdk]
+aliases: ["OpenAI Inc."]
 ---
 
 # OpenAI
 
+| | |
+|---|---|
+| **Type** | AI Research & Product Company |
+| **Founded** | 2015 |
+| **Leadership** | Sam Altman (CEO), Greg Brockman (President/CTO), Ilya Sutskever (Chief Scientist, former) |
+| **Key Products** | GPT-4/5 series, ChatGPT, Codex, DALL-E, Whisper, o-series, Agents SDK, Symphony |
+| **Website** | [openai.com](https://openai.com) |
+| **API** | [platform.openai.com](https://platform.openai.com) |
+
 ## Overview
 
-OpenAIはAI研究・開発企業。GPTシリーズ、ChatGPT、Codex、DALL·Eなどの製品で知られる。2026年4月、**Agents SDK v0.14.0** をリリースし、サンドボックス実行機能、ハーネス/コンピューティング分離アーキテクチャ、マルチクラウドストレージ対応を発表。
+OpenAI is a leading AI research and product company known for developing the GPT series of large language models, ChatGPT, and a growing ecosystem of AI developer tools. The company has been at the forefront of the AI agent revolution, releasing the **Agents SDK** (v0.14.0, April 2026) which provides standardized infrastructure for building production-ready agents with sandbox execution capabilities.
 
-## Key People
-- [[entities/sam-altman|Sam Altman]] — CEO
-- [[entities/greg-brockman|Greg Brockman]] — Co-founder & President
-- [[entities/ilya-sutskever|Ilya Sutskever]] — Co-founder & former Chief Scientist (2023年離脱、SSI設立)
+## Key Products & Technologies
 
-## Products & Services
-- **GPT Series** — 大規模言語モデル (gpt-5.4等)
-- **ChatGPT** — 800M+ weekly users
-- **Codex** — コーディングエージェント
-- **Agents SDK** — Pythonベースのエージェント開発フレームワーク (2026年4月 v0.14.0 GA)
-- **Symphony** — マルチエージェントオーケストレーションプラットフォーム
+### Language Models
+- **GPT-4/5 series** — Frontier LLMs powering ChatGPT and API integrations
+- **o-series** — Reasoning-focused models with extended thinking
+- **GPT-4o / GPT-4o-mini** — Multimodal models with vision and audio capabilities
 
-## Agents SDK (v0.14.0) — 2026-04-15
+### Developer Tools
+- **Agents SDK** (v0.14.0, April 2026) — Python SDK for building agents with:
+  - Native sandbox execution (isolated workspaces)
+  - Harness/Compute architectural separation
+  - Manifest-based workspace portability
+  - Standardized integrations: MCP, Skills, AGENTS.md, Shell, Apply Patch
+  - Provider ecosystem: Blaxel, Cloudflare, Daytona, E2B, Modal, Runloop, Vercel
+  - Security: Default-deny, relative paths only, `..` traversal blocked
+  - Durability: Snapshotting & rehydration for long-horizon tasks
+- **Symphony** — Agent orchestration framework (see [[harness-engineering]])
+- **Codex** — AI coding agent
 
-### Core Features
-- **Sandbox Execution:** ネイティブサンドボックス実行 — 安全なファイルI/O、コマンド実行、依存関係インストール
-- **Harness vs Compute Separation:** オーケストレーションと実行を分離し、セキュリティ・耐久性・スケーラビリティを確保
-- **Manifest Abstraction:** ワークスペースポータビリティ — AWS S3、GCS、Azure Blob、Cloudflare R2対応
-- **Provider Ecosystem:** Blaxel、Cloudflare、Daytona、E2B、Modal、Runloop、Vercelとビルトイン互換性
-- **Standardized Integrations:** MCP、Skills、AGENTS.md、Shell、Apply Patchツール
+### Other Products
+- **ChatGPT** — Conversational AI interface
+- **DALL-E** — Text-to-image generation
+- **Whisper** — Speech recognition
+- **Sora** — Video generation
 
-### Architecture
-- `SandboxAgent` — エージェント定義＋サンドボックスデフォルト
-- `Manifest` — セッション初期ワークスペース契約（パスはワークスペース相対のみ、`..`エスケープ禁止）
-- `Capabilities` — Filesystem、Shell、Compaction（デフォルト）、Skills、Memory（カスタム）
-- `SandboxRunConfig` — 実行セッションのソース/オプション
-- **Session Resolution:** ライブセッション再利用 → RunStateレジューム → session_stateレジューム → 新規セッション
+## Security Architecture
 
-### Pricing & Availability
-- **GA** via API, Python SDK (TypeScript planned)
-- 標準API価格（トークン + ツール使用ベース）
-- 今後の機能: コードモード、サブエージェント、サンドボックス統合拡大
+OpenAI's Agents SDK introduces a clear **Harness/Compute separation**:
+- **Harness (Control Plane):** Agent loop, model calls, tool routing, handoffs, approvals, tracing, recovery, auth, billing
+- **Compute (Execution Plane):** File I/O, commands, dependency installs, port exposure, provider-specific state
 
-### Customer Validation
-- Oscar Healthが臨床記録ワークフロー自動化で採用 — 「従来アプローチでは信頼性が不十分だったが、Agents SDKによりプロダクションレベルで可能に」
+This separation mitigates prompt-injection/exfiltration risks and isolates credentials from model-generated code.
 
-## Connections
-- [[concepts/harness-engineering]] — OpenAI Symphonyのハーネスエンジニアリング哲学
-- [[concepts/agent-skills]] — SKILL.mdバンドル、プログレッシブディスクロージャー
-- [[entities/anthropic]] — 競合（Claude、Computer Use、Managed Agents）
-- [[entities/cognition]] — 競合（Devin、Cloud Agent）
-- [[concepts/sandbox-agents]] — OpenAIサンドボックス実行の詳細仕様
+## Customer Validation
+
+> *"The updated Agents SDK made it production-viable for us to automate a critical clinical records workflow that previous approaches couldn't handle reliably enough. For us, the difference was not just extracting the right metadata, but correctly understanding the boundaries of each encounter in long, complex records."*
+> — **Rachael Burns**, Staff Engineer & AI Tech Lead, Oscar Health
+
+## Related Concepts
+- [[openai-agents-sdk]] — OpenAI's agent development framework
+- [[harness-engineering]] — Ryan Lopopolo / Symphony orchestration philosophy
+- [[sandbox/_index]] — AI agent sandbox isolation technologies
 
 ## Sources
-- [[raw/articles/openai-agents-sdk-next-evolution-2026-04.md]]
-- [[raw/articles/openai-sandbox-agents-api-guide-2026-04.md]]
-- [OpenAI Agents SDK Blog](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
+- [[raw/articles/openai-agents-sdk-next-evolution-2026-04]]
+- [[raw/articles/openai-sandbox-agents-api-guide-2026-04]]
+- [OpenAI Agents SDK Blog (2026-04-15)](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
 - [OpenAI API Sandbox Docs](https://developers.openai.com/api/docs/guides/agents/sandboxes)
