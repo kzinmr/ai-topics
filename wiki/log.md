@@ -1,7 +1,8 @@
-## 2026-04-16 — Ungrounded Meaning Concept (Shunyu Yao on Merrill et al.)
+## 2026-04-16 — Ungrounded Meaning + CoALA Concepts (Shunyu Yao on Merrill et al.)
 
-### New Concept Page
+### New Concept Pages
 - **[[concepts/ungrounded-meaning]]** — Ungrounded Meaning. Analysis of Merrill et al.'s arXiv:2104.10809 "Provable Limitations of Acquiring Meaning from Ungrounded Form" through Shunyu Yao's critique. Key findings: assertions alone cannot enable semantic emulation; the halting problem barrier applies universally; grounding through logical operators and environment interaction is non-negotiable for true understanding. Connects to CoALA, Harness Engineering, and Neurosymbolic AI.
+- **[[concepts/coala]]** — CoALA: Cognitive Architectures for Language Agents. Unified framework (Sumers, Yao, Narasimhan, Griffiths) mapping LLM agents to cognitive science lineage (Soar, ACT-R). Agent as tuple: A = (M_w, M_lt, A_i, A_e, D). Three dimensions: modular memory, structured action space (internal vs external), generalized decision-making loop. Provides architectural response to the Ungrounded Meaning limitation.
 
 ## 2026-04-15 — Daily RSS Scan, Nathan Lambert Newsletter, Jensen Huang, geohot updates
 
