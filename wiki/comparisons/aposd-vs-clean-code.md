@@ -155,6 +155,59 @@ The debate centers on a prime-number generation algorithm from Knuth's *Literate
 
 ---
 
+## Cognitive Load Framework: The Unifying Lens
+
+Both APOSD and Clean Code ultimately aim to reduce cognitive load, but they measure it differently. Artem Zakirullin's [[cognitive-load-software-development]] provides a unifying framework.
+
+### Working Memory as the Common Metric
+
+> "The average person can hold roughly **4 chunks** of information in working memory. Once the cognitive load reaches this threshold, performance degrades rapidly." — Zakirullin
+
+| Framework | Cognitive Load Metric | Approach |
+|-----------|----------------------|----------|
+| **APOSD** | "Information that must be known to use/modify a module" | Reduce via **information hiding** and **deep interfaces** |
+| **Clean Code** | "Mental effort to read and understand code" | Reduce via **small functions**, **meaningful names**, **consistent abstraction levels** |
+| **Cognitive Load Theory** | "Chunks held in working memory" (🧠 → 🤯) | Reduce **extraneous load** (presentation, poor structure), accept **intrinsic load** (domain complexity) |
+
+### How Each Framework Maps to Cognitive Load
+
+#### APOSD: Reduce Load via Deep Interfaces
+- **Interface comments** → eliminate the need to read implementation to understand usage (saves 🧠++ → 🧠)
+- **Information hiding** → callers only need to know the interface, not internals (caps working memory at ~4 chunks)
+- **Strategic vs. tactical programming** → investing in design reduces long-term cognitive load for all future readers
+- **Bringing related code together** → reduces entanglement cost (no jumping between files = no context reload)
+
+#### Clean Code: Reduce Load via Decomposition
+- **Small functions** → each function fits within working memory limits (≤4 chunks)
+- **Meaningful names** → externalize mental models into the code itself (no need to hold "what does this do?" in memory)
+- **Single level of abstraction** → eliminates mental context-switching within a function
+- **SRP** → each module has one reason to change (reduces tracking of multiple concerns)
+
+#### Where They Diverge on Cognitive Load
+- **APOSD** argues that Clean Code's *over-decomposition* actually *increases* extraneous load — tracking 8 tiny methods is harder than reading 1 well-commented deep method
+- **Clean Code** argues that APOSD's *large methods* exceed working memory limits — a 100-line method is too many chunks to hold at once
+- **Resolution**: Both are correct at different scales. Small functions work when they're **deep** (meaningful name + single abstraction level). Large methods work when they're **well-commented** with clear structure. The real enemy is **shallow modules** — complex interface, minimal functionality.
+
+### Cognitive Load Anti-Patterns (Both Agrees)
+| Anti-Pattern | Cognitive Load Impact | APOSD Fix | Clean Code Fix |
+|-------------|----------------------|-----------|----------------|
+| **Deep nesting** | 🤯 (tracking preconditions) | Flatten with early returns | Extract nested logic to named functions |
+| **Complex conditionals** | 🤯 (mental boolean tracking) | Document in interface comments | Extract to boolean methods with meaningful names |
+| **Scattered related logic** | 🤯 (context switching between files) | Bring together (reduce entanglement) | Extract to cohesive module |
+| **No comments** | 🤯 (re-deriving intent from code) | Write interface + implementation comments | Make code self-documenting (names + structure) |
+| **Over-decomposition** | 🤯 (tracking 8 methods for simple task) | Combine into deep module | ... (this is where CC has no fix) |
+
+### The 40-Minute Rule Applied to the Debate
+
+> "If new developers are confused for more than ~40 minutes in a row — you've got things to improve in your code." — Zakirullin
+
+Applying this to the PrimeGenerator case study: **both authors struggled to explain the algorithm to each other for hours**. This is the ultimate evidence that neither approach alone is sufficient for complex logic. The cognitive load was 🤯 for both, despite being experts. This suggests:
+1. **Comments are necessary** — Ousterhout's annotated version was more understandable
+2. **Structure matters** — Martin's decomposition made the algorithm's phases visible
+3. **The ideal is both** — well-structured code + clear comments = minimum extraneous load
+
+---
+
 ## Relevance to AI Coding Agents
 
 This debate is directly applicable to how we build and prompt AI coding agents:

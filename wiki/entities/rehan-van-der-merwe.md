@@ -1,94 +1,49 @@
 ---
-title: Rehan van der Merwe
+title: "Rehan van der Merwe"
 created: 2026-04-16
 updated: 2026-04-16
-tags:
-  - person
-  - cloud-architecture
-  - aws
-  - serverless
-  - microservices
-aliases:
-  - rehanvdm
-  - "@der_rehan"
+type: entity
+tags: [person, ai-agents, devops, architecture]
+aliases: ["rehanvdm", "Rehan van der Merwe"]
 sources:
-  - https://rehanvdm.com/
-  - https://twitter.com/der_rehan
-  - https://github.com/rehanvdm
-  - https://rehanvdm.com/rss.xml
+  - raw/articles/rehanvdm-lambda-monolith-lambdalith-2023.md
+  - raw/articles/rehanvdm-should-you-use-microservices-2021.md
 ---
 
-# Rehan van der Merwe
+# Rehan van der Merwe (@rehanvdm)
 
-## Overview
+Cloud-native architect and blogger. Writes at [rehanvdm.com](https://rehanvdm.com/blog/).
 
-AWS Solutions Architect and blogger specializing in serverless architectures, event-driven design, and distributed systems. Known for practical, experiment-driven analysis of AWS services and architectural trade-offs. Maintains a comprehensive technical blog at rehanvdm.com with 49+ articles spanning 2019–2026.
+Focus areas: AWS architecture (Lambda, ECS, Fargate, EventBridge), microservices design, distributed systems, operational excellence.
+
+## Key Perspectives
+
+- **Lambdalith Pattern**: Advocates for Lambda Monolith (aka "Lambdalith") — deploy a single codebase to Lambda with internal routing, rather than splitting into many small Lambda functions. Start with monolith; split only when blast radius, team scaling, or technology heterogeneity demands it. ([source](https://rehanvdm.com/blog/should-you-use-a-lambda-monolith-lambdalith-for-the-api/))
+- **Microservices Decision Framework**: Microservices should be chosen only after evaluating team size, domain complexity, deployment frequency, and operational overhead. Monoliths are often the right starting point. ([source](https://www.rehanvdm.com/blog/should-you-use-microservices))
+- **Event-Driven Architecture**: Strong advocate for EventBridge-based EDA patterns — decouple services through events, enable eventual consistency, and design for failure isolation.
 
 ## Blog
 
-- **URL**: https://rehanvdm.com
-- **RSS**: https://rehanvdm.com/rss.xml (tracked via blogwatcher-cli)
-- **Focus**: AWS architecture, Lambda patterns, SQS/ECS scaling, microservices vs monoliths, event-driven design
-- **Tracked**: 49 articles in blogwatcher-cli (2019-01-05 to 2026-03-31)
+- **URL**: https://rehanvdm.com/blog/
+- **RSS**: https://rehanvdm.com/rss.xml (tracked in blogwatcher-cli, 49+ articles)
+- **Topics**: AWS architecture, Lambda patterns, microservices boundaries, distributed monolith refactoring, ECS/Fargate scaling, SQS Lambda ESM behaviors, chaos engineering
 
-## Key Contributions
+## Relevance to AI Agent Architecture
 
-### Architecture Decision Framework
-- Decision tree for choosing between Monolith, Distributed Monolith, Modular Monolith, and Microservice architectures
-- Advocates "Shoot for Microservice and fall on a Modular monolith if you have to"
-- Emphasizes Event Carried State Transfer pattern for loose coupling
-- Highlights Conway's Law: "Multiple teams will gravitate towards microservices and a large singular team will tend to build monolithic software"
+Rehan's practical experience with AWS serverless and microservice architecture maps directly to AI Agent system design:
 
-### Lambda Monolith ("Lambdalith") Pattern
-- Promotes single-Lambda-per-API-endpoint with internal routing
-- Prefers `JSON POST` over traditional REST
-- Detailed analysis of trade-offs: deployment simplicity vs. blast radius
-- Practical guidance on when Lambdalith is appropriate vs. when to use true microservices
+| Rehan's Pattern | AI Agent Mapping |
+|---|---|
+| Lambdalith (single Lambda with internal routing) | Single agent with multi-tool routing vs. multi-agent orchestration |
+| Microservice boundary evaluation | When to split a monolithic agent into specialized sub-agents |
+| Distributed monolith refactoring | Breaking tightly-coupled agent systems into independently deployable components |
+| EventBridge EDA | Event-driven agent communication patterns (pub/sub, async workflows) |
+| SQS Lambda ESM scaling | Agent task queue scaling, concurrency limits, backpressure handling |
+| Blast radius isolation | Failure containment in multi-agent systems |
+| Chaos engineering | Testing agent system resilience through failure injection |
 
-### SQS-Lambda Event Source Mapping (ESM) Research
-- 100+ experiments processing millions of SQS messages
-- Documented 7 distinct scaling behaviors of Lambda ESM
-- Discovered critical error impact: 1% error rate → 20% throughput drop, 10% error rate → 85% drop
-- Right-sizing formulas for ESM concurrency based on function duration:
-  - ESM Concurrency (50ms functions) ≈ 60-70% of unbound value
-  - ESM Concurrency (400ms functions) ≈ 20% of unbound value
-  - Lambda Max Concurrency = ESM Max Concurrency + 5
+## Related
 
-### ECS Fargate Scaling vs Lambda
-- Experimental comparison of scaling performance
-- Achieved 2-minute scale-up time with custom metrics (vs. Lambda's few seconds)
-- Practical ceiling analysis for container-based scaling
-- Demonstrated that custom metric publishing every 15s cuts scale-up time significantly
-
-### Event-Driven Architecture Advocacy
-- Strong proponent of Amazon EventBridge for asynchronous pub/sub
-- Implements Event Carried State Transfer for loose coupling
-- Promotes BASE consistency over strict ACID in distributed systems
-- Chaos engineering practices with environment variable toggles
-
-## Notable Articles (Indexed in Wiki)
-1. [Should you use a Lambda Monolith (Lambdalith) for the API?](https://rehanvdm.com/blog/should-you-use-a-lambda-monolith-lambdalith-for-the-api/) (2024-01)
-2. [Should you use microservices?](https://rehanvdm.com/blog/should-you-use-microservices/) (2020-07-28)
-3. [From monolith to resilient microservices](https://rehanvdm.com/blog/from-monolith-to-resilient-microservices/) (2021-11-17)
-4. [Refactoring a distributed monolith to microservices](https://rehanvdm.com/blog/refactoring-a-distributed-monolith-to-microservices/) (2020-07-30)
-5. [Scaling ECS Fargate like Lambda](https://rehanvdm.com/blog/scaling-ecs-fargate-like-lambda/) (2026-02-11)
-6. [7 SQS Lambda ESM Scaling Behaviours](https://rehanvdm.com/blog/sqs-lambda-esm-scaling-behaviour/) (2026-03-31)
-
-## Architectural Philosophy
-- **Pragmatism over dogma**: Choose architecture based on team size, complexity, and operational maturity
-- **Evidence-based**: Backs recommendations with hundreds of experiments and real metrics
-- **Resilience-first**: Designs for failure, not just success
-- **Cost-aware**: Always considers financial implications of architectural choices
-- **Developer experience**: Prioritizes simplicity in deployment and debugging
-
-## Related Concepts
-- [[lambda-monolith-lambdalith]]
-- [[microservices-vs-monolith]]
-- [[event-driven-architecture]]
-- [[base-consistency]]
-- [[chaos-engineering]]
-
-## See Also
-- [[amazon-eventbridge]] — Key technology in his EDA patterns
-- [[conways-law]] — "Multiple teams gravitate towards microservices"
-- [[blast-radius]] — Critical concept in his architecture evaluations
+- [[entities/simon-willison]] — also covers agentic engineering with practical developer perspective
+- [[concepts/ai-agent-engineering/_index]] — AI Agent system design patterns
+- [[concepts/agentic-engineering/_index]] — Agentic engineering workflows

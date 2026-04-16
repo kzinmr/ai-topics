@@ -286,6 +286,7 @@ HNコメントのTL;DR:
 
 ## 関連概念
 
+- [[comparisons/aposd-vs-clean-code]] — Ousterhout vs Martinの設計哲学対比。Deep/Small、コメント有無、TDD/Bundlingの議論をCognitive Load観点で統合
 - [[cognitive-cost-of-agents]] — Willisonの認知負債理論（エージェント時代の認知コスト）
 - [[harness-engineering]] — Lopopoloのエージェント環境設計
 - [[agentic-engineering/_index]] — 開発者ワークフローパターン

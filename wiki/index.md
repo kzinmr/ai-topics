@@ -162,6 +162,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 - [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents (Simon Willison)
 - [[concepts/cognitive-load-software-development]] — Cognitive Load Theory in Software Development (Artem Zakirullin, 12k+ stars)
+  - [[comparisons/aposd-vs-clean-code]] — APOSD vs Clean Code: Ousterhout vs Martin debate, unified through cognitive load lens
 - [[concepts/gnu-ai-reimplementations]] — GNU & AI Reimplementations (antirez)
 
 - [[concepts/agentic-engineering/_index]] — Agentic Engineering (Willison開発パターン集)
