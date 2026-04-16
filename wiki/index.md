@@ -407,6 +407,17 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 - [[entities/ali-farhadi|Ali Farhadi]] — YOLO co-creator, Xnor.ai→Apple, former Ai2 CEO → Microsoft. "Open source is how we drive progress." OLMo, Molmo, Dolma, OLMoTrace, Tülu 3. "Language Model of a Crow" — embodied understanding as Grand Challenge. Radical openness philosophy. L3 depth.
 
+
+### AI Safety & Alignment
+
+- [[concepts/behavioral-trait-transmission|Subliminal Learning in Language Models]] — 初期化を共有するモデル間で、無関係なデータを通じて行動特性が伝達される現象。蒸留安全性、フィルタリング不十分、来歴追跡必要性
+- [[concepts/halo-loss-attention-sinks|HALO Loss & Attention Sinks]] — トランスフォーマーのattention sink現象に対する調和的正則化。石鹸泡エネルギー最小化アナロジー、長期コンテキスト生成安定性
+- [[concepts/ai-index-report-2026|Stanford AI Index Report 2026]] — SWE-bench ~100%到達、米中能力収束、5,427米国データセンター、TSMC独占、Jagged Frontier、88%組織導入
+
+### Agent Evaluation
+
+- [[concepts/agent-survival-benchmark|Agent Survival Benchmark]] — LLMエージェントのPvP圧力下での生存能力測定。攻撃性≠勝利、適応性・リソース管理・戦略的忍耐の重要性
+
 ### Open Source AI & Consortium
 
 - [[entities/nathan-lambert|Nathan Lambert]] — Interconnects AI blogger. Open model consortium dynamics, Nemotron Coalition analysis

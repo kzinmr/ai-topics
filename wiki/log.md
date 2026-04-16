@@ -1,5 +1,35 @@
 ## 2026-04-16 — Anthropic Claude Code: 1M Context & Session Management Strategies
 
+## 2026-04-16 — Daily Scan Wiki Ingestion (11件)
+
+### New Concept Pages (6件)
+- **concepts/gold-diff-distillation.md** — Gold Diff Distillation: RLベース蒸留手法。ユーザーの最終受容状態をターゲット、中間出力をペナルティ。模倣トレーニングの限界突破
+- **concepts/halo-loss-attention-sinks.md** — HALO Loss: Attention Sink現象への対処。調和的正則化でトークン崩壊防止。石鹸泡エネルギー最小化アナロジー、長期コンテキスト生成安定性
+- **concepts/ai-index-report-2026.md** — Stanford HAI AI Index Report 2026: SWE-bench ~100%、米中能力収束、5,427米国データセンター、TSMC独占、Jagged Frontier、88%組織導入
+- **concepts/behavioral-trait-transmission.md** — Subliminal Learning: 初期化共有モデル間で無関係データを通じた行動特性伝達。蒸留安全性、フィルタリング不十分、来歴追跡の必要性
+- **concepts/agent-survival-benchmark.md** — Agent Survival/PvPベンチマーク: 攻撃性≠勝利。適応性・リソース管理・戦略的忍耐の重要性。エージェント評価パラダイムシフト
+- **concepts/flashattention-pytorch-educational.md** — FlashAttention (FA1-FA4)教育的PyTorch実装。アルゴリズム的明晰さ重視、アルゴリズムと実装の乖離可視化
+
+### Updated Entity Pages (5件)
+- **entities/qwen3-6-plus.md** — Qwen3.6-35B-A3B MoE仕様追記、20.9GB GGUF量子化、SVG pelicanベンチマーク（Opus 4.7上回る）、戦略的文脈追加
+- **entities/pluralistic-net.md** — 「AI Pascal's Wager & ドゥーマー議論」セクション追加: $1.4T支出、$2-3T Altman要求、Muskダイソン球、corporate monopolies as threat vectors
+- **entities/antirez-com.md** — タイムラインエントリ追加、「AI Cybersecurity: Not Proof of Work」核心アイデア: 戦略的知性/アーキテクチャ的簡素性が勝つ
+- **entities/dwarkesh-patel.md** — 今週の学習メモ更新: 並列事前トレーニング、蒸留停止可能性、サイバーセキュリティ平衡、パイプラインRL、失敗原因分析
+- **entities/lcamtuf.md** — 「Secret Life of Circuits」と「Infosec Punditry回避理由」セクション追加: 直感的理解 vs 形式的証明、複雑性とセキュリティの関係
+
+### Updated Files
+- **wiki/index.md** — AI Safety & Alignmentセクション追加、Agent Evaluationセクション追加
+- **wiki/log.md** — This entry
+
+### Sources
+- Simon Willison blog (llm-anthropic, Qwen3.6 benchmark, datasette previews)
+- True Positive Weekly #157 newsletter (AI Index, FlashAttention, HALO Loss, Subliminal Learning)
+- r/AI_Agents (Agent Survival Benchmark)
+- dwarkesh.com (What I learned this week)
+- pluralistic.net (AI Pascal's Wager)
+- antirez.com (AI cybersecurity)
+- lcamtuf.substack.com (Secret Life of Circuits, Infosec Punditry)
+
 ### New Raw Article
 - `raw/articles/anthropic-claude-code-session-management-1m-context.md` — Anthropic公式ブログ: Claude Codeの1Mコンテキストウィンドウ、セッション管理戦略、/usageコマンド (2026-04-15, Thariq Shihipar)
 

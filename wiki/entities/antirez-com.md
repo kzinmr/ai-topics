@@ -40,6 +40,7 @@ His 2025 project voxtral.c — a bare-metal, pure-C implementation of a multimod
 | 2026 | Published "Implementing a clear room Z80 / ZX Spectrum emulator with Claude Code" — documenting AI pair programming in practice |
 | 2026 | Published "Redis patterns for coding" — documentation resource for LLMs and humans alike |
 | 2026 | Published "GNU and the AI reimplementations" — drawing parallels between GNU's clean-room UNIX rewrites and today's AI-generated code |
+| 2026 | Published "AI cybersecurity is not proof of work" — argues model intelligence, not GPU scale, wins in cybersecurity
 | 2026 | Published "First Token Cutoff LLM sampling" — critiques nucleus sampling (top-p) and proposes a new algorithm to avoid selecting suboptimal tokens that push generation toward hallucination |
 
 ## Core Ideas
@@ -150,3 +151,26 @@ Sanfilippo crafts his own data structures (SDS for strings, Rax for radix trees)
 - His blog is consistently cited as one of the most thoughtful technical blogs in the industry
 - The Redis Manifesto remains one of the most referenced design documents in open-source software
 - "Don't fall into the anti-AI hype" sparked widespread discussion about the future of programming
+
+
+### AI Cybersecurity: Not Proof of Work
+
+2026年4月、antirezはAIとサイバーセキュリティの関係について新しい洞察を発表。
+
+#### Proof of Workとの違い
+- **PoW**: ハッシュ衝突探索は指数関数的に困難だが、十分な作業で必ず発見可能
+- **バグ発見**: コードの状態空間が飽和すると、発見率は「M（試行回数）」ではなく「I（モデルの知性レベル）」で制限される
+
+#### OpenBSD SACKバグの事例
+- 弱いモデルを無限に実行しても、真のバグ（開始ウィンドウ検証欠如 + 整数オーバーフロー + NULL分岐）を発見できない
+- 弱いモデルは幻覚（hallucination）で「たまたま」正しいバグを指摘することはあるが、真の理解ではない
+- **強いモデルほど幻覚が少ない**ため、中間レベルのモデルが最も「バグを発見したフリ」をしにくい
+
+#### 明日のサイバーセキュリティ
+> 「より多くのGPUが勝つ」のではなく、「より良いモデル、より早いアクセス」が勝つ
+
+#### 意義
+- AIセキュリティ競争は計算量の競争ではなく知性の競争
+- Mythos（Anthropicのセキュリティ特化モデル）のような高知性モデルが既存のバランスを崩す可能性
+- セキュリティ監査におけるAIの役割再定義が必要
+

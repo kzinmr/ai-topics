@@ -1,7 +1,7 @@
 ---
 title: Cory Doctorow
 created: 2026-04-09
-updated: 2026-04-10
+updated: 2026-04-16
 tags:
 - person
 - blogger
@@ -90,6 +90,39 @@ Doctorow views current AI deployments not as technological progress but as **ens
 - *"We did this with AI"* has become synonymous with *"We don't care if this is done well"*
 - The AI bubble is fueled by a fantasy of bypassing workers, ignoring that technical breakthroughs don't guarantee functional products
 
+
+### AI Pascal's Wager & ドゥーマー議論
+
+2026年4月、DoctorowはAIドゥーマー（AI存在論的リスク論者）に対する批判的立場を明確化した。
+
+#### Pascal's WagerとしてのAI安全性支出
+- **$1.4T**が既に「AI超知能」追求に費やされた
+- Sam Altmanはさらに**$2-3T**を要求（米国連邦予算の約6ヶ月分）
+- Elon Muskはダイソン球構築（太陽系解体）を提案
+- **「どうやって敗北を知るのか？」** — AI神が出現しない場合、支出に終わりがなく自己永続化する
+
+#### Lawzeroとの部分的共通点
+Yoshua Bengio（チューリング賞受賞者）が設立した**Lawzero**イニシアチブ：
+- 透明で監査可能な「デジタル公共財」としてのAI開発
+- Doctorowは目標は尊重するが脅威ベクトルに同意しない
+- 将来のAIリスクではなく、**現在の企業独占**が実存的脅威
+
+#### 真の脅威：企業という「人工生命体」
+> *「私を心配させる人工生命体は仮説的なものではない — すでに我々の中に存在する。それらは有限責任株式会社と呼ばれる」*
+
+- 7社がS&P 500の時価総額の**35%**を支配
+- AIバブル崩壊→財政緊縮→政治的ファシズムの連鎖リスク
+- 地理的キルスイッチ：米国プラットフォーム（Office365, iOS, Android）の停止で他国を機能停止可能
+- **「AIは文明の壁に塗り込むアスベスト。子孫が何世代もかけて除去することになる」**
+
+#### ポスト・アメリカン・インターネット
+Doctorowが提案する解決策：
+1. 現在の企業テック独占を解体するオープン・監査可能・透明なプラットフォーム構築
+2. 「エンシッティフィケーション耐性」のあるファームウェアとデバイス開発
+3. 米国中心の「エンシッティネット」からの体系的移行
+4. ドゥーマーへの「サイドベット」提案：現在の脅威に対処するインフラが将来のAIリスクにも使える
+
+
 ### The Memex Method & Open Licensing
 
 Doctorow publishes **all content under CC BY 4.0**, encouraging republication by anyone, including commercial outlets. Wired republished his enshittification essay. This is intentional: spread ideas widely, retain message integrity, refuse platform dependency.
@@ -121,6 +154,9 @@ His **Memex Method** — maintaining 50,000+ public notes in a searchable databa
 - [[concepts/posse-pattern]] — Publish on Own Site, Syndicate Everywhere
 - [[concepts/memex-method]] — Public note-taking as knowledge creation
 - [[entities/ed-zitron-s-where-s-your-ed-at]] — Another critical tech-policy voice
+- [[concepts/ai-pascals-wager]] — AIドゥーマー議論のパスカルの賭え framing
+- [[concepts/ai-bubble-economics]] — AI投資バブルと経済リスク
+- [[concepts/post-american-internet]] — 脱・米国中心インターネット構想
 - [[entities/eff]] — Electronic Frontier Foundation, where Doctorow is a special advisor
 
 ## Sources
@@ -131,6 +167,7 @@ His **Memex Method** — maintaining 50,000+ public notes in a searchable databa
 - [The Internet Con: How to Seize the Means of Computation](https://www.versobooks.com/books/4328-the-internet-con) (Verso, Sep 2023)
 - [Chokepoint Capitalism](https://chokepointcapitalism.com/) (with Rebecca Giblin, Beacon/Scribe, 2022)
 - [(Digital) Elbows Up](https://pluralistic.net/2025/11/28/disenshittification-nation/) — Pluralistic, Nov 2025
+- [A Pascal's Wager for AI Doomers](https://pluralistic.net/2026/04/16/pascals-wager/) — Pluralistic, Apr 2026
 - [Understaffing as a form of enshittification](https://pluralistic.net/2026/03/23/nobodys-home/) — Pluralistic, Mar 2026
 - [Pluralistic is four](https://pluralistic.net/2024/02/20/fore/) — Pluralistic, Feb 2024
 - [Deplatform yourself](https://medium.com/@doctorow/https-pluralistic-net-2026-02-23-goodharts-lawbreaker-no-metrics-no-targets-521fba21e4a8) — Pluralistic/Medium, Feb 2026
