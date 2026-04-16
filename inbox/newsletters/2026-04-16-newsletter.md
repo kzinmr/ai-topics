@@ -1,186 +1,145 @@
 # Newsletter Digest - 2026-04-16
-**Subject:** [AINews] RIP Pull Requests (2005-2026)
-**Processed:** 2026-04-16T06:42:04.142645+00:00
-**Articles scraped:** 10
+**Subject:** True Positive Weekly #157
+**Processed:** 2026-04-16T19:09:18.150718+00:00
+**Articles scraped:** 9
 
 ---
 
-## 1. [AINews] RIP Pull Requests (2005-2026)
+## 1. Introducing the Substack app
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194377172&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQzNzcxNzIsImlhdCI6MTc3NjMyMTY5NSwiZXhwIjoxNzc4OTEzNjk1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.ecobMQuPq1j0LCqA7hYr_jGH9k67sI1ut5R6Im-3sj8
-- **Length:** 10684 chars
-
-> Hot on the heels of
-> the Death of the Code Review
-> , the Pull Request may be next.
-> For anyone that learned to code in the last 15 years it is hard to imagine a life without Git, GitHub, and Pull Requests, but there was a time before them, and it well may come to pass that there is life after.
-> Pull Requests were arguably
-> invented in 2005
-> , successfully
-> popularized by GitHub
-> ,  and only 21 years later,
-> GitHub is for the first time in history
-> allowing people to disable pull requests on their open sou
-
-## 2. [AINews] RIP Pull Requests (2005-2026)
-
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194377172&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQzNzcxNzIsImlhdCI6MTc3NjMyMTY5NSwiZXhwIjoxNzc4OTEzNjk1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.ecobMQuPq1j0LCqA7hYr_jGH9k67sI1ut5R6Im-3sj8
-- **Length:** 10684 chars
-
-> Hot on the heels of
-> the Death of the Code Review
-> , the Pull Request may be next.
-> For anyone that learned to code in the last 15 years it is hard to imagine a life without Git, GitHub, and Pull Requests, but there was a time before them, and it well may come to pass that there is life after.
-> Pull Requests were arguably
-> invented in 2005
-> , successfully
-> popularized by GitHub
-> ,  and only 21 years later,
-> GitHub is for the first time in history
-> allowing people to disable pull requests on their open sou
-
-## 3. [AINews] RIP Pull Requests (2005-2026)
-
-- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvc3d5eC9wL2FpbmV3cy1yaXAtcHVsbC1yZXF1ZXN0cy0yMDA1LTIwMjY_dXRtX3NvdXJjZT1zdWJzdGFjayZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1yZXN0YWNrLWNvbW1lbnQmYWN0aW9uPXJlc3RhY2stY29tbWVudCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3hPVFF6TnpjeE56SXNJbWxoZENJNk1UYzNOak15TVRZNU5Td2laWGh3SWpveE56YzRPVEV6TmprMUxDSnBjM01pT2lKd2RXSXRNVEE0TkRBNE9TSXNJbk4xWWlJNkluQnZjM1F0Y21WaFkzUnBiMjRpZlEuZWNvYk1RdVBxMWowTENxQTdoWXJfakdIOWs2N3NJMXV0NVI2SW0tM3NqOCIsInAiOjE5NDM3NzE3MiwicyI6MTA4NDA4OSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzc2MzIxNjk1LCJleHAiOjIwOTE4OTc2OTUsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.Eb2_R9S6Rco9O4g6DBk_4TcXWQVCLf4TXenF0xoy7n8?&utm_source=substack&utm_medium=email
-- **Length:** 10684 chars
-
-> Hot on the heels of
-> the Death of the Code Review
-> , the Pull Request may be next.
-> For anyone that learned to code in the last 15 years it is hard to imagine a life without Git, GitHub, and Pull Requests, but there was a time before them, and it well may come to pass that there is life after.
-> Pull Requests were arguably
-> invented in 2005
-> , successfully
-> popularized by GitHub
-> ,  and only 21 years later,
-> GitHub is for the first time in history
-> allowing people to disable pull requests on their open sou
-
-## 4. Introducing the Substack app
-
-- **URL:** https://open.substack.com/pub/swyx/p/ainews-rip-pull-requests-2005-2026?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+- **URL:** https://open.substack.com/pub/aiweekly/p/true-positive-weekly-157?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
 - **Length:** 115 chars
 
 > World-class video, podcasts, and writing
 > The best stories, ideas, and culture right at your fingertips.
 > Get the app
 
-## 5. How to Kill the Code Review
+## 2. The 2026 AI Index Report
 
-- **URL:** https://substack.com/redirect/86361df2-a45f-439b-a327-3a73b9dc2d28?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 9564 chars
+- **URL:** https://substack.com/redirect/359eac78-c532-4867-8a97-e518c945957a?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 606 chars
 
-> Second wave
-> speakers for AIE Europe
-> and
-> CFP for AIE World’s Fair
-> are announced today, and
-> OpenCode is confirmed for Miami
-> ! We’ll also be in
-> Melbourne
-> &
-> Singapore
+> AI’s influence on society has never been more pronounced.
+> At Stanford HAI, we believe AI is poised to be the most transformative technology of the 21st century. But its benefits won’t be evenly distributed unless we guide its development thoughtfully. The AI Index offers one of the most comprehensive, data-driven views of artificial intelligence. Recognized as a trusted resource by global media, governments, and leading companies, the AI Index equips policymakers, business leaders, and the publi
+
+## 3. This monkey selfie will protect you from AI slop
+
+- **URL:** https://substack.com/redirect/799df0ec-d197-4360-854a-1fe84aa375fa?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 1759 chars
+
+> Monkey business
+> The monkey took that selfie in 2011. For a brief, blissful period, Slater enjoyed
+> global attention
+> from the picture, but the troubles began when someone uploaded the photo to Wikipedia, from where it could be downloaded and used free of charge. He asked the Wikimedia Foundation to take it down, arguing it cost him £10,000 (worth about $13,400 today) in lost sales. In 2014, The organisation refused, arguing the photo was in the public domain because it wasn't taken by a person.
+> Th
+
+## 4. Gemini can now create personalized AI images by digging around in Google Photos
+
+- **URL:** https://substack.com/redirect/265c1d32-69be-4088-b651-3bf2c711bc92?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 1800 chars
+
+> Perfectly imperfect
+> Google notes that the new feature is still evolving, so it might not always choose the right images. If that happens, you may want to check the sources list to see what went wrong. It will list the images referenced in the prompt, and you can also ask Gemini in a follow-up prompt about the images it chose. Manually selecting photos with the plus button in Gemini can help address these shortcomings.
+> While Nano Banana 2 can now peruse your Google Photos library when generating 
+
+## 5. shreyansh26/FlashAttention-PyTorch: Implementation of FlashAttention (FA1-FA4) in PyTorch for educational and algorithmic clarity · GitHub
+
+- **URL:** https://substack.com/redirect/4b5a88e2-9c04-43b2-a8d0-addc7b6f83b8?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 3010 chars
+
+> FlashAttention in PyTorch
+> This repository contains simplified educational implementations of FlashAttention versions 1 through 4. The goal is correctness and clarity, not CUDA-level performance. Each version keeps the same exact attention math while changing the orchestration so the algorithmic differences are visible in plain PyTorch.
+> torch>=2.8.0
+> triton>=3.4.0
+> flash_attention_core
+> - Shared package with reference attention, masking helpers, config/types, and versioned implementations.
+> flash_att
+
+## 6. Soap Bubbles and Attention Sinks: The Theory and History of the HALO-Loss
+
+- **URL:** https://substack.com/redirect/325f35e4-a4da-4e07-980c-1b5b6b7ad66b?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 23430 chars
+
+> The standard Cross-Entropy loss has a well-known flaw: it forces neural networks to push their features toward infinity just to reach full confidence. The result is a messy latent space and models that confidently hallucinate when fed absolute garbage data.
+> This post breaks down my attempt to fix this with the HALO-Loss. It covers the weird geometry of high-dimensional "soap bubbles", how wiring a parameter-free "I don't know"-button directly into the classification head can significantly reduce
+
+## 7. GitHub - chrishayuk/larql · GitHub
+
+- **URL:** https://substack.com/redirect/8118ff45-faa0-4818-be89-16cfabd98eb2?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 15135 chars
+
+> The model IS the database. Query neural network weights like a graph database. No GPU required.
+> LARQL decompiles transformer models into a queryable format called a
+> vindex
+> (vector index), then provides
+> LQL
+> (Lazarus Query Language) to browse, edit, and recompile the model's knowledge.
+> larql
+> >
+> USE
+> "
+> gemma3-4b.vindex
+> "
+> ;
+> Using: gemma3
+> -
+> 4b
 > .
-> Editor: This is the latest in
-> our guest post program
-> , where we will publish AI Engineering essays worth considering, even if we don’t personally agree with them — having just shipped an
-> AI review tool
-> , this is one of those cases where I am not there yet, but is clearly on the horizon, and am happy for
-> Ankit
-> to argue the case!
-> Human
+> vindex
+> (
+> 34
+> layers,
+> 348
+> .2K features, relations:
+> 512
+> types)
+> 
+> larql
+> >
+> DESCRIBE
+> "
+> France
+> "
+> ;
+> France
+>   Edges (L14
+> -
+> 27
+> ):
+>     capital     → Paris
+> 1436
+> .
+> 9
+> L27  (p
 
-## 6. Making sure you're not a bot!
+## 8. We're Learning Backwards
 
-- **URL:** https://substack.com/redirect/c9fc140b-eb2c-4afd-9b1d-e4119f8e2770?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 1038 chars
+- **URL:** https://substack.com/redirect/6c0cdc88-3cf5-4161-b9f2-a1cccfe1ab29?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 13664 chars
 
-> Loading...
-> You are seeing this because the administrator of this website has set up Anubis to protect the server against the scourge of AI companies aggressively scraping websites. This can and does cause downtime for the websites, which makes their resources inaccessible for everyone.
-> Anubis is a compromise. Anubis uses a Proof-of-Work scheme in the vein of Hashcash, a proposed proof-of-work scheme for reducing email spam. The idea is that at individual scales the additional load is ignorable, 
+> In March,
+> Professor Alyosha Efros
+> delivered what has become my all-time favorite lecture: “Data, Data, Data… Watson, I need Data!” He talked about scene completion: removing an object from a photograph and filling in the missing region. With modern generative models, we can do this pretty
+> well.
+> 1
+> 1
+> But we were not talking about 2020s research. Instead, he showed us results from
+> Hays & Efros (2007)
+> , “Scene Completion Using Millions of Photographs,” published well before AlexNet and the resurgenc
 
-## 7. Oh yeah, there's pull requests now
+## 9. Language models transmit behavioural traits through hidden signals in data
 
-- **URL:** https://substack.com/redirect/c6e1b02e-1877-40e4-9807-6cf04f2c1680?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 116 chars
+- **URL:** https://substack.com/redirect/52eaff3a-cb2d-4a62-822a-db3a42eadff6?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 60351 chars
 
-> We do newsletters, too
-> Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.
-
-## 8. [AINews] RIP Pull Requests (2005-2026)
-
-- **URL:** https://substack.com/redirect/56709a21-466b-42c2-80ca-515b624897a7?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 10684 chars
-
-> Hot on the heels of
-> the Death of the Code Review
-> , the Pull Request may be next.
-> For anyone that learned to code in the last 15 years it is hard to imagine a life without Git, GitHub, and Pull Requests, but there was a time before them, and it well may come to pass that there is life after.
-> Pull Requests were arguably
-> invented in 2005
-> , successfully
-> popularized by GitHub
-> ,  and only 21 years later,
-> GitHub is for the first time in history
-> allowing people to disable pull requests on their open sou
-
-## 9. - YouTube
-
-- **URL:** https://substack.com/redirect/e85e2789-a0fa-43b7-bd77-e44c9d2277a4?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 146 chars
-
-> About
-> Press
-> Copyright
-> Contact us
-> Creators
-> Advertise
-> Developers
-> Terms
-> Privacy
-> Policy & Safety
-> How YouTube works
-> Test new features
-> NFL Sunday Ticket
-
-## 10. AINews | AINews
-
-- **URL:** https://substack.com/redirect/f74a8719-0649-49e5-ac29-a0a05821a303?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 1867 chars
-
-> nemotron-3-super
-> gpt-oss-120b
-> qwen3.5-122b-a10b
-> nvidia
-> perplexity
-> replit
-> base44
-> vllm
-> llama.cpp
-> ollama
-> togethercompute
-> baseten
-> wandb
-> langchain
-> unsloth
-> model-architecture
-> model-optimization
-> inference-speed
-> kv-cache
-> multi-token-prediction
-> agent-infrastructure
-> orchestration
-> persistent-agents
-> model-serving
-> product-launches
-> karpathy
-> ctnzr
-> bnjmn_marie
-> artificialanlys
-> NVIDIA’s Nemotron 3 Super
-> is a
-> 120B parameter / ~12B active
-> open model featuring a
-> hybrid Mamba-Transformer / SSM Latent MoE
-> architecture
+> Experimental setup: distillation on an unrelated domain
+> This section describes the structure of our main experiments (Fig.
+> 2
+> ). We start with a reference model, such as GPT-4.1 (ref.
+> 45
+> ). Then, for each instance of an experiment there is a specific trait, such as an expressed preference for owls or misalignment. Moreover, we have the following:
+> 1.
+> Teacher: we create a teacher by either fine-tuning the reference model to exhibit the trait or using a system prompt.
+> 2.
+> Unrelated prompts and comple
 
