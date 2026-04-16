@@ -1,3 +1,21 @@
+## 2026-04-16 — OpenAI Agents SDK v0.14.0 GA (Sandbox Execution)
+
+### Raw Articles Ingested
+- `wiki/raw/articles/openai-agents-sdk-next-evolution-2026-04.md` — OpenAI blog post announcing Agents SDK v0.14.0 GA with sandbox execution, Harness/Compute architecture split, and provider ecosystem (Blaxel, Cloudflare, Daytona, E2B, Modal, Runloop, Vercel). Customer validation: Oscar Health clinical workflow automation.
+- `wiki/raw/articles/openai-sandbox-agents-api-guide-2026-04.md` — Official API documentation for OpenAI Sandbox Agents. Covers: SandboxAgent lifecycle, Manifest abstraction, Capabilities (file I/O, shell commands, dependency installation, port exposure), SandboxRunConfig, session state persistence/resume, and security boundaries (default-deny, relative paths only, `..` traversal blocked).
+
+### New Entity Page
+- **[[entities/openai]]** — OpenAI corporate entity. Covers leadership (Altman, Brockman, Sutskever), product suite (GPT-5.4, ChatGPT, Codex, Symphony, Agents SDK v0.14.0 GA), security architecture, pricing model, and customer validation (Oscar Health).
+
+### New Concept Page
+- **[[concepts/openai-agents-sdk]]** — OpenAI Agents SDK v0.14.0. Details: Harness vs Compute separation (control plane vs execution plane), standardized integrations (MCP, Skills, AGENTS.md, Shell, Apply Patch), Manifest-based workspace portability with multi-cloud storage (AWS S3, GCS, Azure Blob, CF R2), provider ecosystem compatibility, session lifecycle (Live → RunState resume → session_state resume → New), security model (default-deny, relative paths enforced, `..` blocked).
+
+### Updated Taxonomy
+- **[[concepts/sandbox/_index]]** — Added OpenAI Agents SDK Sandboxes to Infrastructure layer in sandbox taxonomy table. Explicitly positioned as externalized, infrastructure-level isolation (Docker/Firecracker equivalents via cloud providers) with Harness/Compute separation. Contrast: SDK sandbox boot latency ~100ms-2s vs Monty in-process 0.004ms.
+- **[[wiki/index.md]]** — Updated Entity Pages count to 72, Concept Pages count to 70. Added entries for openai entity and openai-agents-sdk concept.
+
+---
+
 ## 2026-04-16 — Ungrounded Meaning + CoALA Concepts (Shunyu Yao on Merrill et al.)
 
 ### New Concept Pages

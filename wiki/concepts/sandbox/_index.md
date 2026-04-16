@@ -17,7 +17,7 @@ Isolation exists on a spectrum from full OS-level separation to in-process VM em
 
 | Layer | Scope | Technologies | Latency | Isolation Mechanism | Best For |
 |-------|-------|-------------|---------|-------------------|----------|
-| **[[infrastructure]]** | OS/Hypervisor | Docker, Firecracker, gVisor, Kata, Zeroboot | 0.8ms - 2s | Kernel namespaces, seccomp, VM boundaries | Full apps, GPU, multi-tenant |
+| **[[infrastructure]]** | OS/Hypervisor | Docker, Firecracker, gVisor, Kata, Zeroboot, OpenAI Agents SDK Sandboxes | 0.8ms - 2s | Kernel namespaces, seccomp, VM boundaries, Harness/Compute separation | Full apps, GPU, multi-tenant |
 | **[[js-runtime]]** (Process mode) | OS Process | Bun CLI, Deno CLI, Node.js CLI | 1ms - 100ms | OS process boundary + runtime permissions | Agent CLI tools, TS execution, single-binary distribution |
 | **[[in-process]]** | VM/Memory space | Monty (Rust Python VM), Pyodide, QuickJS (embedded), V8 Isolates, WebContainer | 0.004ms - 2.8s | Memory isolation, bytecode VM, capabilities | Simple scripts, data transforms, zero-infra, code-mode |
 | **WASM** (emerging) | Browser/Sandbox | WASM + WASI | ~1ms | Capability-based sandbox, no OS access | Edge execution, portable code |

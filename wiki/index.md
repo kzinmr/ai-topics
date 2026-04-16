@@ -4,7 +4,7 @@ Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (
 
 Last updated: 2026-04-14 (Added Cybersecurity Proof of Work concept, RAM metric, auto-triage ingest from 97 daily scan articles) — Hypothesis creator, Antithesis Senior Engineer, Hegel PBT protocol, Claude Code workflow, LLM evals via property-based testing)
 
-## Entity Pages (71)
+## Entity Pages (72)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 
@@ -108,6 +108,7 @@ Last updated: 2026-04-14 (Added Cybersecurity Proof of Work concept, RAM metric,
 
 - [[entities/anthropic]] — Anthropic
 - [[entities/meta]] — Meta
+- [[entities/openai]] — OpenAI (GPT, ChatGPT, Agents SDK v0.14.0, Symphony, Codex)
 
 ### Browser Agents & Computer Use
 
@@ -141,13 +142,13 @@ Last updated: 2026-04-14 (Added Cybersecurity Proof of Work concept, RAM metric,
 - [[entities/qwen3-6-plus]] — Qwen3.6-Plus
 - [[entities/zoox-expansion]] — Zoox Robotaxi Expansion
 
-## Concept Pages (40)
+## Concept Pages (70)
 
 Ideas, frameworks, and methodologies extracted from articles.
 
 ### AI Development & Engineering
 - [[concepts/code-mode]] — CodeMode: LLM writes code instead of sequential tool calls
-
+- [[concepts/openai-agents-sdk]] — OpenAI Agents SDK v0.14.0: Harness/Compute separation, sandbox execution, multi-provider support
 - [[concepts/monty-sandbox]] — Monty: minimal secure Python interpreter in Rust for AI agents
 - [[concepts/sandbox/js-runtime]] — JavaScript Runtimes for AI Agents (E2B, WebContainer, Bun, Deno, QuickJS)
 - [[concepts/pydantic-ai]] — Pydantic AI: type-safe Python agent framework
