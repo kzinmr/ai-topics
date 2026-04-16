@@ -1,3 +1,24 @@
+## 2026-04-16 — APOSD vs Clean Code: Ousterhout-Martin Debate
+
+### New Comparison Page
+- **[[comparisons/aposd-vs-clean-code]]** — Structured debate between John Ousterhout (APOSD) and Robert C. Martin (Clean Code), Sept 2024–Feb 2025. Covers method length (deep vs shallow), comments as documentation, PrimeGenerator case study, TDD vs Bundling.
+
+### Raw Articles Ingested
+- `wiki/raw/articles/aposd-vs-clean-code-debate-2026-04.md` — Original GitHub repo README with full debate transcript.
+
+### Key Insights
+- **Deep modules vs small functions**: Ousterhout argues for deep interfaces (high functionality, simple API); Martin advocates small, single-purpose functions.
+- **Comments**: Martin sees comments as "failures" — code should be self-documenting. Ousterhout argues missing comments cause far more productivity loss than stale ones.
+- **TDD vs Bundling**: Martin advocates test-first in tiny cycles; Ousterhout prefers design-first with bundled testing.
+- **PrimeGenerator case study**: Both struggled to explain a complex algorithm to each other, highlighting the curse of knowledge.
+- **AI Agent relevance**: This debate directly shapes how coding agents (Claude Code, Codex) should structure code, write tests, and document their work.
+
+### Updated
+- **wiki/index.md** — Added comparison page entry, updated count from 7 to 8.
+- **wiki/log.md** — This entry.
+
+---
+
 ## 2026-04-16 — OpenAI Agents SDK v0.14.0 GA (Sandbox Execution) + Jason Liu "In Distribution" Theory
 
 ### Raw Articles Ingested
