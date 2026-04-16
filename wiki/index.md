@@ -304,6 +304,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[concepts/closing-agent-loop]] — Closing the Agent Loop (Write→Catch→Fix→Merge)
 - [[concepts/ai-agent-engineering/context-anxiety]] — Context Anxiety (Sonnet 4.5 integration lessons)
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst (Devinをデータ分析エージェントにする設計)
+- [[concepts/ungrounded-meaning]] — Ungrounded Meaning (Shunyu Yao on Merrill et al.: can language meaning be learned from form alone?)
 
 ### AI Organization (4)
 

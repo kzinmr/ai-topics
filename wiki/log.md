@@ -1,4 +1,7 @@
-## 2026-04-14 — Agentic PBT Concept + DRMacIver Entity Page (L3) + X Account
+## 2026-04-16 — Ungrounded Meaning Concept (Shunyu Yao on Merrill et al.)
+
+### New Concept Page
+- **[[concepts/ungrounded-meaning]]** — Ungrounded Meaning. Analysis of Merrill et al.'s arXiv:2104.10809 "Provable Limitations of Acquiring Meaning from Ungrounded Form" through Shunyu Yao's critique. Key findings: assertions alone cannot enable semantic emulation; the halting problem barrier applies universally; grounding through logical operators and environment interaction is non-negotiable for true understanding. Connects to CoALA, Harness Engineering, and Neurosymbolic AI.
 
 ## 2026-04-15 — Daily RSS Scan, Nathan Lambert Newsletter, Jensen Huang, geohot updates
 
