@@ -5,16 +5,16 @@
 - `wiki/raw/articles/openai-sandbox-agents-api-guide-2026-04.md` — Official API documentation for OpenAI Sandbox Agents. Covers: SandboxAgent lifecycle, Manifest abstraction, Capabilities (file I/O, shell commands, dependency installation, port exposure), SandboxRunConfig, session state persistence/resume, and security boundaries (default-deny, relative paths only, `..` traversal blocked).
 - `wiki/raw/articles/jason-liu-sandboxes-agents-sdk-2026-04.md` — Jason Liu (@jxnlco) X thread on sandbox engineering and "in distribution" theory. Key thesis: built-in tools (shell, compaction, memory) work better because they're in the model's training distribution. Brain/Hands separation: lightweight tasks need no sandbox, heavy tasks need isolated compute. Five sandbox application patterns: code generation, data room extraction, artifacts, browser use, autonomous research.
 
-### New Entity Page
+### Entity Pages
 - **[[entities/openai]]** — OpenAI corporate entity. Covers leadership (Altman, Brockman, Sutskever), product suite (GPT-5.4, ChatGPT, Codex, Symphony, Agents SDK v0.14.0 GA), security architecture, pricing model, and customer validation (Oscar Health).
 
-### New Concept Page
+### Concept Pages
 - **[[concepts/openai-agents-sdk]]** — OpenAI Agents SDK v0.14.0. Details: Harness vs Compute separation (control plane vs execution plane), standardized integrations (MCP, Skills, AGENTS.md, Shell, Apply Patch), Manifest-based workspace portability with multi-cloud storage (AWS S3, GCS, Azure Blob, CF R2), provider ecosystem compatibility, session lifecycle (Live → RunState resume → session_state resume → New), security model (default-deny, relative paths enforced, `..` blocked), Jason Liu's "in distribution" framework.
 
 ### Updated
 - **[[entities/jason-liu]]** — Added "In Distribution" Theory & Sandbox Engineering section. Key concepts: tool naming impact (bash vs shell vs run_command affects model performance), Brain/Hands separation, security by isolation, pragmatic sandbox provisioning.
 - **[[concepts/sandbox/_index]]** — Added OpenAI Agents SDK Sandboxes to Infrastructure layer in sandbox taxonomy table. Explicitly positioned as externalized, infrastructure-level isolation (Docker/Firecracker equivalents via cloud providers) with Harness/Compute separation. Contrast: SDK sandbox boot latency ~100ms-2s vs Monty in-process 0.004ms.
-- **[[wiki/index.md]]** — Updated Entity Pages count to 72, Concept Pages count to 70. Added entries for openai entity and openai-agents-sdk concept. Updated last-modified date.
+- **[[wiki/index.md]]** — Updated Entity Pages count to 73, Concept Pages count to 71. Added entries for openai entity and openai-agents-sdk concept. Updated last-modified date.
 
 ---
 

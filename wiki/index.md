@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-16 (Added Jason Liu "in distribution" sandbox theory, OpenAI Agents SDK v0.14.0 GA, sandbox API documentation) — Hypothesis creator, Antithesis Senior Engineer, Hegel PBT protocol, Claude Code workflow, LLM evals via property-based testing)
+Last updated: 2026-04-16 (Added APOSD vs Clean Code debate — Ousterhout vs Martin on method length, comments, TDD vs bundling)
 
 ## Entity Pages (73)
 
@@ -161,6 +161,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[concepts/capabilities-based-security]] — Start from zero access, explicitly grant capabilities (Monty philosophy)
 
 - [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents (Simon Willison)
+- [[concepts/cognitive-load-software-development]] — Cognitive Load Theory in Software Development (Artem Zakirullin, 12k+ stars)
 - [[concepts/gnu-ai-reimplementations]] — GNU & AI Reimplementations (antirez)
 
 - [[concepts/agentic-engineering/_index]] — Agentic Engineering (Willison開発パターン集)
@@ -320,11 +321,12 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder & Super IC (Reddit/FourWeekMBA: MVP commoditization, FrontPage parallel, $10M→$100M path)
 - [[concepts/ai-organization/ai-org-context-as-moat]] — Proprietary Context (McKinsey 5 Pillars, M-Shaped Supervisor, Diamond Org Chart, Agentic Governance)
 
-## Comparison Pages (7)
+## Comparison Pages (8)
 
 - [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks (LangGraph vs CrewAI vs AutoGen vs etc.)
 - [[comparisons/agent-sandboxing]] — Agent Sandboxing (Containers vs gVisor vs MicroVMs vs WASM vs Zeroboot)
-- [[comparisons/eval-tools-comparison]] — AI Eval Tools Comparison (LangSmith vs Braintrust vs Phoenix vs Inspect AI)
+- [[comparisons/aposd-vs-clean-code]] — APOSD vs Clean Code (Ousterhout vs Martin: method length, comments, TDD vs bundling)
+- [[comparisons/eval-tools-comparison]] — AI Eval Tool Comparison (LangSmith vs Braintrust vs Phoenix vs Inspect AI)
 - [[comparisons/evals-skills]] — Evals Skills for Coding Agents
 - [[comparisons/frontier-models-2026-04]] — Frontier Models Comparison — April 2026
 - [[comparisons/llm-integration-patterns]] — LLM Integration Patterns: Comparative Taxonomy (Orchestration vs DSPy vs RLMs vs Agentic vs GEPA)
