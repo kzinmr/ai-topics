@@ -1,120 +1,104 @@
 ---
-title: "Microservices vs Monolith Architecture"
+title: Microservices vs Monolith
 created: 2026-04-16
 updated: 2026-04-16
-tags: [architecture, microservices, monolith, distributed-systems, devops]
-aliases: ["microservices-monolith", "monolith-vs-microservices"]
-sources: [raw/articles/should-you-use-microservices.md, raw/articles/should-you-use-a-lambda-monolith-lambdalith.md]
+tags:
+  - architecture
+  - microservices
+  - monolith
+  - distributed-systems
+aliases:
+  - monolith-vs-microservices
+  - monolith
+  - microservices
+  - distributed monolith
+  - modular monolith
+sources:
+  - https://rehanvdm.com/blog/should-you-use-microservices/
+  - https://rehanvdm.com/blog/from-monolith-to-resilient-microservices/
+  - wiki/raw/articles/should-you-use-microservices.md
 ---
 
 # Microservices vs Monolith Architecture
 
-## Overview
+## Decision Framework
 
-This page covers the architecture decision framework for choosing between monolithic and microservices approaches, with specific relevance to AI Agent design. Based on [Rehan van der Merwe's analysis](https://www.rehanvdm.com/blog/should-you-use-microservices), the key insight is that **organizational structure should drive architectural decisions** (Conway's Law).
+Rehan van der Merwe's architecture decision tree provides a pragmatic approach:
 
-**Sources:** 
-- [Should you use microservices?](https://www.rehanvdm.com/blog/should-you-use-microservices)
-- [Should you use a Lambda Monolith (Lambdalith)?](https://rehanvdm.com/blog/should-you-use-a-lambda-monolith-lambdalith-for-the-api)
+```
+Team Size & Complexity Assessment
+├── Small team (< 10 people) + Simple domain
+│   └── → Traditional Monolith
+├── Small team + Complex domain
+│   └── → Modular Monolith (shoot for this minimum)
+├── Multiple teams + Simple domain
+│   └── → Modular Monolith
+└── Multiple teams + Complex domain
+    └── → Microservices
+```
 
-## Architecture Decision Framework
+## Architecture Types
 
-### Key Principles
+### 1. Traditional Monolith
+- **Definition**: Single application with all functionality in one codebase
+- **Pros**: Simple deployment, easy debugging, shared state
+- **Cons**: Tight coupling, single point of failure, hard to scale independently
+- **Team Fit**: Small teams, simple domains
 
-1. **Team Size & Communication is Critical**
-   - Multiple teams naturally gravitate toward microservices
-   - Single large team tends toward monolithic architectures
-   - **Single-Team Warning:** Implementing microservices with one team demands extreme engineering discipline, high cognitive overhead, and typically results in **reduced development velocity & increased costs**
+### 2. Distributed Monolith
+- **Definition**: Multiple services but tightly coupled through shared business logic or synchronous calls
+- **Anti-Pattern**: Services depend on each other's internal state or APIs
+- **Pros**: Appears to be microservices but with shared complexity
+- **Cons**: Cascading failures, complex deployment, difficult debugging
+- **Team Fit**: Multiple teams transitioning from monolith
 
-2. **Business Alignment First**
-   - Architecture must match organizational structure, team skill levels, and business impact before technical considerations
+### 3. Modular Monolith
+- **Definition**: Single application with clear module boundaries, independent deployment possible
+- **Pros**: Clear separation of concerns, easier scaling than traditional monolith
+- **Cons**: Still shared deployment, some coupling remains
+- **Team Fit**: Growing teams, medium complexity
 
-3. **Start with a Monolith**
-   - There is nothing wrong with monolithic architecture
-   - Implement best practices, meet business targets, validate product first
-   - Scale intentionally only when team size grows or usage patterns fundamentally change
+### 4. Microservices
+- **Definition**: Independent services with their own data stores, deployed separately
+- **Pros**: Independent scaling, fault isolation, team autonomy
+- **Cons**: Complex deployment, distributed debugging, eventual consistency
+- **Team Fit**: Large teams, complex domains, mature DevOps
 
-## Architecture Spectrum
+## Conway's Law Application
 
-| Architecture Type | Physical Boundaries | Deployment Model | Logic Boundaries | Ideal Use Case |
-|:---|:---:|:---|:---|:---|
-| **Traditional Monolith** | ❌ No | Single application | ❌ None (tightly coupled) | Simple, early-stage projects |
-| **Modular Monolith** | ⚠️ Optional | Deployed together | ✅ Strict (shares utilities, not business logic) | Small/medium projects, single teams |
-| **Distributed Monolith** | ✅ Yes | Independent | ❌ Loose (shares business logic across services) | ⚠️ **Worst category** (anti-pattern) |
-| **Microservice** | ✅ Yes | Independent | ✅ Strict (fully isolated business logic) | Large orgs, multiple autonomous teams |
+> "Multiple teams will gravitate towards microservices and a large singular team will tend to build monolithic software."
 
-### 🚩 Signs You've Built a Distributed Monolith
+- Team structure should drive architecture choice, not vice versa
+- Align service boundaries with team boundaries
+- Use organizational structure as a constraint when designing systems
 
-- Long deployment times due to independent service outputs
-- Shared business logic (services directly querying another service's database)
+## Migration Path
 
-## Challenges of Microservices
+1. **Traditional Monolith** → **Modular Monolith**
+   - Extract clear module boundaries
+   - Implement internal APIs between modules
+   - Add comprehensive tests
 
-| Challenge | Description |
-|-----------|-------------|
-| **CI/CD & Environments** | Each service requires independent pipelines, testing suites, deployment environments |
-| **Data Aggregation** | Reporting complex as data scattered across services |
-| **E2E Testing** | Requires synchronized environments with clean, consistent data |
-| **Observability** | End-to-end monitoring demands distributed logging & tracing infrastructure |
-| **Async Communication** | Introduces eventual consistency; systems must handle failures gracefully and be idempotent |
-| **Sync Communication** | Adds latency; high risk of chatty, tightly coupled service call chains |
-| **Data Duplication** | Bulk updates/fixes difficult; requires event emission to sync other services |
-| **Distributed Transactions** | Must implement Saga patterns, event choreography, or orchestration |
-| **Schema Management** | Requires strict backward & forward compatibility versioning |
+2. **Modular Monolith** → **Distributed Monolith**
+   - Deploy modules as separate services
+   - Maintain shared state/data stores
+   - Add service discovery
 
-## Required Research & Core Concepts
+3. **Distributed Monolith** → **Microservices**
+   - Give each service its own data store
+   - Implement event-driven communication
+   - Add proper failure handling and retries
 
-Teams must understand these patterns to implement microservices correctly:
+## Key Principles
 
-- `CQRS` — Command Query Responsibility Segregation
-- `DDD` — Domain-Driven Design & Bounded Contexts
-- Event Carried State Transfer
-- Eventual Consistency & CAP Theorem
-- Saga & Circuit Breaker Patterns
-- Event Choreography vs. Event Orchestration
-- Event Sourcing & Event Storming
+- **Start Simple**: Begin with monolith unless you have a clear need for microservices
+- **Extract When Necessary**: Only split services when team size or complexity demands it
+- **Use Event-Driven Patterns**: Amazon EventBridge + Event Carried State Transfer for loose coupling
+- **Design for Failure**: Implement retries, DLQs, and circuit breakers
+- **Monitor Everything**: Observability is critical for distributed systems
 
-## Actionable Takeaways
-
-1. **Default to Modular Monoliths** for small-to-medium projects with a single team
-2. **Evaluate Non-Technical Factors First:** Does the architecture fit company structure? Team skills? Business impact?
-3. **Aim High, Land Practical:** Target microservices if justified, but don't force them
-4. **A well-structured monolith outperforms a poorly implemented microservice architecture every time**
-5. **Serverless != Microservices** — Having hundreds of Lambdas for an API does not equal microservices. If it's a singular deployment with shared business logic, it remains a Monolith.
-
-## Application to AI Agent Architecture
-
-### Key Analogies
-
-| Traditional System | AI Agent Equivalent |
-|-------------------|---------------------|
-| Monolith | Single-agent system with comprehensive tool access |
-| Microservices | Multi-agent system with specialized roles |
-| Distributed Monolith | Multiple agents sharing state/context without clear boundaries |
-| Modular Monolith | Single agent with well-defined skill/tool modules |
-
-### Decision Criteria for AI Agents
-
-1. **Start Simple:** Begin with a single well-structured agent (analogous to modular monolith)
-2. **Scale When Needed:** Transition to multi-agent only when:
-   - Task complexity exceeds single agent's context window
-   - Team size grows to multiple developers working on different agent components
-   - Different agents require different models/tools/permissions
-3. **Avoid Distributed Monolith Anti-Pattern:** Don't split agents just because you can — ensure clear boundaries and independent deployment
-4. **Blast Radius at Service Level:** Security boundaries should be at the agent/harness level, not per-tool (consistent with Lambdalith pattern)
-
-### Conway's Law in AI Agent Design
-
-> *"Any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure."* — Melvin E. Conway (1967)
-
-For AI Agent teams:
-- Single developer → Single agent with modular skills
-- Multiple specialized teams → Multi-agent system with clear boundaries
-- Poor communication structure → Distributed monolith anti-pattern
-
-## Related Pages
-- [[concepts/lambda-monolith-lambdalith]] — Lambda Monolith (Lambdalith) Pattern
-- [[concepts/harness-engineering]] — Harness Engineering pattern
-- [[concepts/ai-agent-engineering/_index]] — AI Agent Engineering patterns
-- [[concepts/agentic-engineering/_index]] — Agentic Engineering patterns
-- [[concepts/multi-agent-autonomy-scale]] — Multi-Agent Autonomy Scale
+## Related Concepts
+- [[lambda-monolith-lambdalith]]
+- [[event-driven-architecture]]
+- [[conways-law]]
+- [[blast-radius]]
