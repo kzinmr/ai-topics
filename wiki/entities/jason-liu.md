@@ -431,6 +431,16 @@ Jason maintains the most comprehensive practitioner's guide to RAG on his blog, 
 - **[Rapid Agent Prototyping](https://jxnl.co/writing/2025/09/11/rag-series-index/)** — Use Claude Code's project runner as a testing harness. Write instructions in English, expose tools as simple CLI commands, create test folders with real inputs. "Get one passing test before you write any orchestration code."
 - **[AI Agent Compaction Experiments](https://jxnl.co/writing/2025/09/11/rag-series-index/)** — "If in-context learning is gradient descent, then compaction is momentum." Two experiments on using compaction for maintaining agent state and reasoning continuity across long sessions.
 
+### "In Distribution" Theory & Sandbox Engineering (2026-04)
+
+Jason Liuの最新の貢献は、OpenAI Agents SDKのsandbox機能と"in distribution"理論：
+
+- **"In Distribution"**: 組み込みツール（shell, compaction, memory）がモデルの訓練分布内にあるため、prompt tricksではなくネイティブなインターフェースとして機能する
+- **Harness/Compute分離**: Brain（Harness: 推論・計画）とHands（Compute: ファイルI/O・コマンド実行）の明確な分離
+- **Tool Naming Impact**: `bash` vs `shell` vs `run_command`のような命名がモデルのパフォーマンスに実際に影響する
+- **Security by Isolation**: モデル生成コードをサンドボックス内で実行し、オーケストレーションマシンの資格情報漏洩リスクを低減
+- **Pragmatic Sandbox Use**: 軽量タスクにはsandbox不要、重いタスクには適切なsandboxをプロビジョニング — "think without turning the laptop on"
+
 **RAG 6-week email course:** Jason runs a free 6-week email course on RAG covering everything from his consulting work, available at improvingrag.com.
 
 ### Context Engineering — Beyond RAG for Agentic Systems

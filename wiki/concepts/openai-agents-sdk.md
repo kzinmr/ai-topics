@@ -138,6 +138,35 @@ workspace/
 - [[sandbox/in-process]] — Monty、capabilities-basedセキュリティ
 - [[agent-skills]] — SKILL.mdバンドル
 - [[agentic-engineering/how-agents-work]] — コーディングエージェントの動作原理
+- [[entities/jason-liu]] — Jason Liuの「in distribution」理論とサンドボックス応用パターン
+
+## Sandbox Applications (Jason Liu)
+
+Jason Liu ([@jxnlco](https://x.com/jxnlco)) はAgents SDKのサンドボックス機能を**「in distribution（モデルの訓練分布内）」**という視点で解説：
+
+### "In Distribution" の意味
+- 組み込みツール（shell, compaction, memory）はモデルが訓練中に理解しているインターフェース
+- ツール名（`bash` vs `shell` vs `run_command`）がモデルのパフォーマンスに実際に影響する
+- Compactionはプロンプトの工夫ではなく、ハーネスの正式なパス — モデルの訓練分布に組み込まれている
+- プロンプトキャッシングは長尺タスクの価格/性能比を改善 — コンテキストに詰めるだけでなく、作業を安く・速く・安定させる
+
+> "By using an in-distribution harness, you can see where the puck is going with us, rather than having to chase it from behind."
+
+### Harness/Compute分離の重要性
+- **Brain（Harness）**: 推論、計画、状態管理 — サンドボックス不要
+- **Hands（Compute）**: ファイルI/O、コマンド実行、ブラウザ操作 — サンドボックス必要
+- 「ラップトップを起動せずに考えられる」— 適切な量のコンピューティングをタスクごとに割り当て可能
+- セキュリティ: モデル生成コードがサンドボックス内で実行され、オーケストレーションマシンの資格情報漏洩リスクを低減
+
+### 具体的な応用パターン
+1. **Code Generation**: リポジトリ内で作業、テスト実行、PR作成
+2. **Data Room Extraction**: S3/GCSマウント → 非構造化データからワークブック・リスク登録簿生成
+3. **Artifacts**: PDF、スプレッドシート、デッキ生成（Skills併用）
+4. **Browser Use**: ポート公開でアプリ構築→ブラウザで検証→スクリーンショットで修正
+5. **Autonomous Research**: GPU-backed実験、parameter search、実行ログの永続化
+
+### Jason Liuの推奨
+> "Use the Agents SDK because it helps you build toward where agents are going, not where they are today. Build something that might not 100% work today and in five or six months, not only might that agent work, it might work well, because the capabilities underneath it keep getting better."
 
 ## Entity Connections
 - [[entities/openai]] — 開発元
@@ -148,5 +177,6 @@ workspace/
 ## Sources
 - [[raw/articles/openai-agents-sdk-next-evolution-2026-04]]
 - [[raw/articles/openai-sandbox-agents-api-guide-2026-04]]
+- [[raw/articles/jason-liu-sandboxes-agents-sdk-2026-04]]
 - [OpenAI Agents SDK Blog (2026-04-15)](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
 - [OpenAI API Sandbox Docs](https://developers.openai.com/api/docs/guides/agents/sandboxes)
