@@ -2,14 +2,15 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-16 (Added Anthropic official Claude Code 1M context + session management strategies)
+Last updated: 2026-04-18 (Added Back of House multi-agent patterns, Single-Agent Ceiling concept, @MilksandMatcha entity)
 
-## Entity Pages (73)
+## Entity Pages (74)
 
 - [[entities/openai]] — OpenAI (GPT, ChatGPT, Codex, Agents SDK, Symphony)
 - [[entities/adam-rosenthal]] — Adam Rosenthal
+- [[entities/milksandmatcha]] — Sarah Chieng (@MilksandMatcha), AI agent educator, co-author of Back of House multi-agent patterns
 
-## Concept Pages (71)
+## Concept Pages (73)
 
 - [[concepts/openai-agents-sdk]] — OpenAI Agents SDK v0.14.0 (sandbox execution, harness/compute separation, manifests)
 
@@ -253,9 +254,11 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 ### Agent Systems & Orchestration
 |- [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
-- [[concepts/caid-coordination]] — CAID (Centralized Asynchronous Isolated Delegation)
-- [[concepts/long-context-coding-agents]] — Long-Context via Coding Agents
-- [[concepts/multi-agent-autonomy-scale]] — Multi-Agent Autonomy Scale
+|- [[concepts/caid-coordination]] — CAID (Centralized Asynchronous Isolated Delegation)
+|- [[concepts/long-context-coding-agents]] — Long-Context via Coding Agents
+|- [[concepts/multi-agent-autonomy-scale]] — Multi-Agent Autonomy Scale
+|- [[concepts/back-of-house-patterns]] — Back of House multi-agent orchestration (kitchen metaphor: Head Chef/Line Cooks). By @MilksandMatcha + @0xSero
+|- [[concepts/single-agent-ceiling]] — Single-Agent Ceiling: limitations of solo-agent coding, "sloperator" anti-pattern
 
 ### Agent Team / Swarm
 - [[concepts/agent-team-swarm/_index]] — Agent Team / Swarm（複数Agent協調・Dark Factoryまでの5レベルモデル）

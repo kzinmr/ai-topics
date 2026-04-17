@@ -32,6 +32,7 @@ He runs an **8x RTX 3090 homelab** (192GB VRAM, 512GB RAM) for local model infer
 - **Current**: Building **Thrive Protocol** — AI systems that automate treasury allocations from crypto ecosystems to builders ($150M+ committed capital, 1,800+ funded builders)
 - **Previous**: Ethereum Foundation, ZKSync governance infrastructure, MakerDAO, Gnosis, Superfluid, Lens Protocol
 - **Contributor**, ElizaOS — agentic framework (17k+ stars)
+- **Co-author**, "Single-agent AI coding is a nightmare for engineers" (with @MilksandMatcha, April 2026) — Back of House multi-agent patterns, kitchen metaphor (Head Chef/Line Cook), 5 workflow patterns
 - **Podcast Host**, Ethers Club — 57 episodes with builders on technology, business, and spirituality
 - **Location**: United States
 

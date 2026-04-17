@@ -1,17 +1,15 @@
-## 2026-04-17 — Search×Agent Entity Expansion: Lester Solbakken & Sheshansh Agrawal
+## 2026-04-18 — Back of House Multi-Agent Patterns (MilksandMatcha + 0xSero)
 
-### New Entity Pages (2件)
-- **entities/lester-solbakken.md** — Hornet Founding Engineer, Vespa.ai Principal Engineer, 13yr Yahoo/Verizon Media。PhD AI/ML (NTNU)。Mutually Assured Distraction thesis。Context engineering = relevance engineering。Synthetic query generation。Verifiable feedback loops (coding agent success)。Schema-first APIs。
-- **entities/sheshansh-agrawal.md** — Contextual AI Director of Research, 元Microsoft Research (Bing Ads embeddings, 100M+ users, trillions tokens)。IIT Bombay。CER-C metric (trajectory-level efficiency)、On-policy distillation + RL for search planners、Agentic alternative to GraphRAG、BlitzRank reranker。XPERT (SIGIR 2023)、DECAF、ECLARE。
+### Raw Articles
+- [[raw/articles/milksandmatcha-0xsero-single-agent-nightmare-2026]] — "Single-agent AI coding is a nightmare for engineers" by Sarah Chieng (@MilksandMatcha) and @0xSero. Comprehensive analysis of single-agent ceiling and multi-agent back-of-house patterns.
 
-### Updated Files
-- **wiki/index.md** — Information Retrieval & RAGセクションにSolbakkenとAgrawalを追加
-- **wiki/log.md** — This entry
+### Concepts
+- [[back-of-house-patterns]] — Multi-agent orchestration framework using kitchen metaphor (Head Chef/Line Cooks). Co-authored by [[milksandmatcha|Sarah Chieng]] and [[sero|0xSero]].
+- [[single-agent-ceiling]] — The inherent limitations of single-agent coding workflows. The "sloperator" anti-pattern and why multi-agent architecture is necessary for complex tasks.
 
-### Key Insights
-- **3軸の convergent thesis**: Turnbull (ユーザー視点: simple BM25 > thick API), Solbakken (インフラ視点: schema-first + throughput), Agrawal (アルゴリズム視点: joint tool+planner optimization + CER-C metric)。すべて「エージェントには新しい検索が必要」という結論に合流
-- **Mutually Assured Distraction** (Solbakken): better retriever + better reasoner = less reliable。信頼性-awareな統合が必要
-- **CER-C metric** (Agrawal): エージェントが1トークンあたりにどれだけ速く証拠を集めるかを測定する独自指標。single-call IR metricsでは捉えきれないtrajectory-level efficiencyを計測
+### Entities
+- [[milksandmatcha]] — Sarah Chieng, AI agent educator. Co-author of Back of House framework. Added to x-accounts.yaml monitoring list.
+- [[sero]] — Updated to include Back of House co-authorship contribution.
 
 ---
 
