@@ -1,160 +1,151 @@
 # Newsletter Digest - 2026-04-17
-**Subject:** [AINews] Anthropic Claude Opus 4.7 - literally one step better than 4.6 in every dimension
-**Processed:** 2026-04-17T01:37:06.550439+00:00
-**Articles scraped:** 9
+**Subject:** The illusion of thinking
+**Processed:** 2026-04-17T13:10:26.043046+00:00
+**Articles scraped:** 15
 
 ---
 
-## 1. [AINews] Anthropic Claude Opus 4.7 - literally one step better than 4.6 in every dimension
+## 1. The illusion of thinking
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194468374&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ0NjgzNzQsImlhdCI6MTc3NjM4OTc5NiwiZXhwIjoxNzc4OTgxNzk2LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.KYZfEcYaaKskpGwSgUCBeGo-BUmcGxAa5RnbfYTPitU
-- **Length:** 11022 chars
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3AvdGhlLWlsbHVzaW9uLW9mLXRoaW5raW5nP3V0bV9jYW1wYWlnbj1lbWFpbC1oYWxmLXBvc3Qmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam94T1RRek9EVTVOalFzSW1saGRDSTZNVGMzTmpRek1UUXdOU3dpWlhod0lqb3hOemM1TURJek5EQTFMQ0pwYzNNaU9pSndkV0l0TWprek1UVTBJaXdpYzNWaUlqb2ljRzl6ZEMxeVpXRmpkR2x2YmlKOS5NRnFKNEVsRmRRS2Y1eTRCY21aTnBmZkJLakpkcmctbjBUV1lIdE45QkRvIiwicCI6MTk0Mzg1OTY0LCJzIjoyOTMxNTQsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3NjQzMTQwNSwiZXhwIjoyMDkyMDA3NDA1LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.FiBeIsoyb7cAWZ3VOhzvFCy4DCsU4dOa8y_QAnjPyKU?
+- **Length:** 11508 chars
 
-> Thursday mornings are for prestige AI launches, and while OpenAI put in a valiant effort with
-> GPT-Rosalind
-> and
-> The New New Codex
-> (with
-> awesome computer use
-> ), there was no question who would win title story today. If you scan past AINews issues closely you would have seen the rumors of this for at least the past week, but today’s
-> Claude Opus 4.7 launch
-> mildly surpassed even those expectations.
-> The key chart is this one:
-> Basically 4.7-low is strictly better than 4.6-medium, 4.7-medium is strictly
+> Earlier this month, OpenAI’s GPT-5.4 scored 95.2% on the 2026 USA Math Olympiad. Claude Opus 4.6 hit 91.3% on GPQA Diamond, a benchmark where the questions are designed to stump PhD holders. These are problems that professional mathematicians spend hours, sometimes days, solving.
+> Then give these same models a test called ARC-AGI-3. It’s a set of simple visual puzzles that most humans solve in under two minutes. Look at a few input-output examples, infer the underlying rule, apply it to a new cas
 
-## 2. [AINews] Anthropic Claude Opus 4.7 - literally one step better than 4.6 in every dimension
+## 2. The illusion of thinking
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194468374&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ0NjgzNzQsImlhdCI6MTc3NjM4OTc5NiwiZXhwIjoxNzc4OTgxNzk2LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.KYZfEcYaaKskpGwSgUCBeGo-BUmcGxAa5RnbfYTPitU
-- **Length:** 11022 chars
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=194385964&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQzODU5NjQsImlhdCI6MTc3NjQzMTQwNSwiZXhwIjoxNzc5MDIzNDA1LCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.MFqJ4ElFdQKf5y4BcmZNpffBKjJdrg-n0TWYHtN9BDo
+- **Length:** 11508 chars
 
-> Thursday mornings are for prestige AI launches, and while OpenAI put in a valiant effort with
-> GPT-Rosalind
-> and
-> The New New Codex
-> (with
-> awesome computer use
-> ), there was no question who would win title story today. If you scan past AINews issues closely you would have seen the rumors of this for at least the past week, but today’s
-> Claude Opus 4.7 launch
-> mildly surpassed even those expectations.
-> The key chart is this one:
-> Basically 4.7-low is strictly better than 4.6-medium, 4.7-medium is strictly
+> Earlier this month, OpenAI’s GPT-5.4 scored 95.2% on the 2026 USA Math Olympiad. Claude Opus 4.6 hit 91.3% on GPQA Diamond, a benchmark where the questions are designed to stump PhD holders. These are problems that professional mathematicians spend hours, sometimes days, solving.
+> Then give these same models a test called ARC-AGI-3. It’s a set of simple visual puzzles that most humans solve in under two minutes. Look at a few input-output examples, infer the underlying rule, apply it to a new cas
 
-## 3. [AINews] Anthropic Claude Opus 4.7 - literally one step better than 4.6 in every dimension
+## 3. Alex Banks | Substack
 
-- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvc3d5eC9wL2FpbmV3cy1hbnRocm9waWMtY2xhdWRlLW9wdXMtNDctbGl0ZXJhbGx5P3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtcmVzdGFjay1jb21tZW50JmFjdGlvbj1yZXN0YWNrLWNvbW1lbnQmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam94T1RRME5qZ3pOelFzSW1saGRDSTZNVGMzTmpNNE9UYzVOaXdpWlhod0lqb3hOemM0T1RneE56azJMQ0pwYzNNaU9pSndkV0l0TVRBNE5EQTRPU0lzSW5OMVlpSTZJbkJ2YzNRdGNtVmhZM1JwYjI0aWZRLktZWmZFY1lhYUtza3BHd1NnVUNCZUdvLUJVbWNHeEFhNVJuYmZZVFBpdFUiLCJwIjoxOTQ0NjgzNzQsInMiOjEwODQwODksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3NjM4OTc5NiwiZXhwIjoyMDkxOTY1Nzk2LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.pJo75AK4wefGMymIXCsl57Vj7mEPiH_iQ0iFvhp219o?&utm_source=substack&utm_medium=email
-- **Length:** 11022 chars
+- **URL:** https://substack.com/@alexbanks
+- **Length:** 124 chars
 
-> Thursday mornings are for prestige AI launches, and while OpenAI put in a valiant effort with
-> GPT-Rosalind
-> and
-> The New New Codex
-> (with
-> awesome computer use
-> ), there was no question who would win title story today. If you scan past AINews issues closely you would have seen the rumors of this for at least the past week, but today’s
-> Claude Opus 4.7 launch
-> mildly surpassed even those expectations.
-> The key chart is this one:
-> Basically 4.7-low is strictly better than 4.6-medium, 4.7-medium is strictly
+> Practical AI workflows and tutorials for busy professionals. Plus weekly news analysis, without the noise.
+> Subscribe
+> Message
 
-## 4. Introducing the Substack app
+## 4. The illusion of thinking
 
-- **URL:** https://open.substack.com/pub/swyx/p/ainews-anthropic-claude-opus-47-literally?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+- **URL:** https://substack.com/app-link/post?publication_id=293154&post_id=194385964&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQzODU5NjQsImlhdCI6MTc3NjQzMTQwNSwiZXhwIjoxNzc5MDIzNDA1LCJpc3MiOiJwdWItMjkzMTU0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.MFqJ4ElFdQKf5y4BcmZNpffBKjJdrg-n0TWYHtN9BDo
+- **Length:** 11508 chars
+
+> Earlier this month, OpenAI’s GPT-5.4 scored 95.2% on the 2026 USA Math Olympiad. Claude Opus 4.6 hit 91.3% on GPQA Diamond, a benchmark where the questions are designed to stump PhD holders. These are problems that professional mathematicians spend hours, sometimes days, solving.
+> Then give these same models a test called ARC-AGI-3. It’s a set of simple visual puzzles that most humans solve in under two minutes. Look at a few input-output examples, infer the underlying rule, apply it to a new cas
+
+## 5. The illusion of thinking
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvdGhlc2lnbmFsL3AvdGhlLWlsbHVzaW9uLW9mLXRoaW5raW5nP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtcmVzdGFjay1jb21tZW50JmFjdGlvbj1yZXN0YWNrLWNvbW1lbnQmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam94T1RRek9EVTVOalFzSW1saGRDSTZNVGMzTmpRek1UUXdOU3dpWlhod0lqb3hOemM1TURJek5EQTFMQ0pwYzNNaU9pSndkV0l0TWprek1UVTBJaXdpYzNWaUlqb2ljRzl6ZEMxeVpXRmpkR2x2YmlKOS5NRnFKNEVsRmRRS2Y1eTRCY21aTnBmZkJLakpkcmctbjBUV1lIdE45QkRvIiwicCI6MTk0Mzg1OTY0LCJzIjoyOTMxNTQsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3NjQzMTQwNSwiZXhwIjoyMDkyMDA3NDA1LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.0vDDIlyVVkRxCzyR_WkfWYqcFWxKXQSGJtvqlw5p53w?&utm_source=substack&utm_medium=email
+- **Length:** 11508 chars
+
+> Earlier this month, OpenAI’s GPT-5.4 scored 95.2% on the 2026 USA Math Olympiad. Claude Opus 4.6 hit 91.3% on GPQA Diamond, a benchmark where the questions are designed to stump PhD holders. These are problems that professional mathematicians spend hours, sometimes days, solving.
+> Then give these same models a test called ARC-AGI-3. It’s a set of simple visual puzzles that most humans solve in under two minutes. Look at a few input-output examples, infer the underlying rule, apply it to a new cas
+
+## 6. Introducing the Substack app
+
+- **URL:** https://open.substack.com/pub/thesignal/p/the-illusion-of-thinking?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
 - **Length:** 115 chars
 
 > World-class video, podcasts, and writing
 > The best stories, ideas, and culture right at your fingertips.
 > Get the app
 
-## 5. Codex for almost everything
+## 7. The illusion of thinking
 
-- **URL:** https://substack.com/redirect/5e21d08f-40c1-4dde-8b8c-73f73ae7be3d?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 5084 chars
+- **URL:** https://substack.com/redirect/69e675c1-38a3-4fe3-933d-c75cc30ce825?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 11508 chars
 
-> My point was ~~two~~(edit: three)-fold (which, I guess, reading again is just the same thing said three times slightly differently...sorry!), more along the lines of:
-> - I don't think they need the extra you would offer them. I'm pretty sure they didn't add anything related to accounting. I also have to admit I'm a bit shocked that you would do all of what I described for "a tad more" than 900€, especially taking "a tad" longer than 3 weeks. To me, that's
-> barely
-> anything. But I guess I'll take yo
+> Earlier this month, OpenAI’s GPT-5.4 scored 95.2% on the 2026 USA Math Olympiad. Claude Opus 4.6 hit 91.3% on GPQA Diamond, a benchmark where the questions are designed to stump PhD holders. These are problems that professional mathematicians spend hours, sometimes days, solving.
+> Then give these same models a test called ARC-AGI-3. It’s a set of simple visual puzzles that most humans solve in under two minutes. Look at a few input-output examples, infer the underlying rule, apply it to a new cas
 
-## 6. Introducing Claude Opus 4.7
+## 8. The real danger of AI hallucination
 
-- **URL:** https://substack.com/redirect/c168e03e-826b-48cc-bcad-80ec169f6136?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 17354 chars
+- **URL:** https://substack.com/redirect/2cdb41e8-5c89-4af8-a20b-301f827b20b3?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 24402 chars
 
-> Our latest model, Claude Opus 4.7, is now generally available.
-> Opus 4.7 is a notable improvement on Opus 4.6 in advanced software engineering, with particular gains on the most difficult tasks. Users report being able to hand off their hardest coding work—the kind that previously needed close supervision—to Opus 4.7 with confidence. Opus 4.7 handles complex, long-running tasks with rigor and consistency, pays precise attention to instructions, and devises ways to verify its own outputs before re
+> Last week, I ran a simple experiment.
+> I wrote a completely made-up story about Steve Jobs. It involved a fictional craftsman, a fabricated quote, a visit that never happened, and I asked five of the most popular AI models whether it was true.
+> Every single one said yes.
+> This demonstrates something that recent OpenAI research confirms. Hallucination is a feature that’s baked into the very foundation of how language models work today, rather than a bug that will be patched in the next update.
+> In th
 
-## 7. [AINews] Anthropic Claude Opus 4.7 - literally one step better than 4.6 in every dimension
+## 9. Your AI is lying to your face
 
-- **URL:** https://substack.com/redirect/88c1459e-6132-49da-9389-18a2b81370e0?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 11022 chars
+- **URL:** https://substack.com/redirect/04e7d3a1-c3a2-4ee5-96af-954e830bc579?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 4576 chars
 
-> Thursday mornings are for prestige AI launches, and while OpenAI put in a valiant effort with
-> GPT-Rosalind
-> and
-> The New New Codex
-> (with
-> awesome computer use
-> ), there was no question who would win title story today. If you scan past AINews issues closely you would have seen the rumors of this for at least the past week, but today’s
-> Claude Opus 4.7 launch
-> mildly surpassed even those expectations.
-> The key chart is this one:
-> Basically 4.7-low is strictly better than 4.6-medium, 4.7-medium is strictly
+> Sycophancy in AI refers to the tendency of large language models (LLMs) like ChatGPT, Claude, Grok, or Gemini to agree with users, flatter them excessively, or tailor responses to what they think the user wants to hear. It does this even if it’s wrong, biased, or harmful.
+> But this is no accident. It’s baked in from reinforcement learning from human feedback (RLHF), where models are trained to maximise user satisfaction. Humans prefer agreeable responses, so models learn to prioritise being “help
 
-## 8. AINews | AINews
+## 10. Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity
 
-- **URL:** https://substack.com/redirect/da60739b-799a-4ff8-bef5-2f80312ca3a0?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 1280 chars
+- **URL:** https://substack.com/redirect/99be2d73-6efd-4741-88b9-e9e358b50e74?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 2555 chars
 
-> claude-opus-4.7
-> codex
-> gpt-rosalind
-> anthropic
-> openai
-> cursor
-> replit
-> perplexity-ai
-> microsoft
-> coding
-> agentic-ai
-> tokenization
-> long-context
-> benchmarking
-> image-processing
-> software-engineering
-> computer-use
-> plugin-integration
-> multi-terminal-support
-> ssh-access
-> model-expansion
-> bcherny
-> kimmonismus
-> scaling01
-> valsai
-> artificialanlys
-> natolambert
-> nrehiew_
-> Anthropic
-> launched
-> Claude Opus 4.7
-> , its most capable Opus model yet, featuring stronger coding and agentic performance, a new tokenizer, and improved long-con
+> [Submitted on 7 Jun 2025 (
+> v1
+> ), last revised 20 Nov 2025 (this version, v3)]
+> Title:
+> The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity
+> View a PDF of the paper titled The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity, by Parshin Shojaee and 5 other authors
+> View PDF
+> HTML (experimental)
+> Abstract:
+> Recent generations of language models have introduced L
 
-## 9. Scaling without Slop
+## 11. The illusion of thinking
 
-- **URL:** https://substack.com/redirect/dd96a4a5-7c7e-4a9c-8b15-7b1e601211e0?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 8131 chars
+- **URL:** https://substack.com/redirect/f4770eab-2edb-497d-9821-0befded63f76?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 11508 chars
 
-> First off, a few major announcements
-> :
-> Yi Tay returns
-> to the podcast today! If you enjoyed his insights on being
-> a 10,000x Yolo Researcher
-> , then you’ll love
-> our catchup on Gemini’s IMO Gold
-> and more.
-> Welcome to
-> the 80,000 AINews subscribers
-> ! We are doubling down on Substack, making Latent Space the one email subscription to keep up on a daily (AINews), weekly (LS Pod), and broader (LS Essays) basis. You can
-> opt-in/out
-> as needed.
-> Latent Space is also turning into a podcast network! Our first ne
+> Earlier this month, OpenAI’s GPT-5.4 scored 95.2% on the 2026 USA Math Olympiad. Claude Opus 4.6 hit 91.3% on GPQA Diamond, a benchmark where the questions are designed to stump PhD holders. These are problems that professional mathematicians spend hours, sometimes days, solving.
+> Then give these same models a test called ARC-AGI-3. It’s a set of simple visual puzzles that most humans solve in under two minutes. Look at a few input-output examples, infer the underlying rule, apply it to a new cas
+
+## 12. The illusion of thinking
+
+- **URL:** https://substack.com/redirect/e1da9b9b-6df4-4083-ae72-4c2dbf165422?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 11508 chars
+
+> Earlier this month, OpenAI’s GPT-5.4 scored 95.2% on the 2026 USA Math Olympiad. Claude Opus 4.6 hit 91.3% on GPQA Diamond, a benchmark where the questions are designed to stump PhD holders. These are problems that professional mathematicians spend hours, sometimes days, solving.
+> Then give these same models a test called ARC-AGI-3. It’s a set of simple visual puzzles that most humans solve in under two minutes. Look at a few input-output examples, infer the underlying rule, apply it to a new cas
+
+## 13. - YouTube
+
+- **URL:** https://substack.com/redirect/2dce3347-b266-4b73-bfb7-04537a7e3d5b?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 146 chars
+
+> About
+> Press
+> Copyright
+> Contact us
+> Creators
+> Advertise
+> Developers
+> Terms
+> Privacy
+> Policy & Safety
+> How YouTube works
+> Test new features
+> NFL Sunday Ticket
+
+## 14. The illusion of thinking
+
+- **URL:** https://substack.com/redirect/c80bb424-3167-4db4-ba35-a3ef0c5cbf7d?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 11508 chars
+
+> Earlier this month, OpenAI’s GPT-5.4 scored 95.2% on the 2026 USA Math Olympiad. Claude Opus 4.6 hit 91.3% on GPQA Diamond, a benchmark where the questions are designed to stump PhD holders. These are problems that professional mathematicians spend hours, sometimes days, solving.
+> Then give these same models a test called ARC-AGI-3. It’s a set of simple visual puzzles that most humans solve in under two minutes. Look at a few input-output examples, infer the underlying rule, apply it to a new cas
+
+## 15. The illusion of thinking
+
+- **URL:** https://substack.com/redirect/1f669c52-1728-4c10-b96a-64324d6a0a66?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 11508 chars
+
+> Earlier this month, OpenAI’s GPT-5.4 scored 95.2% on the 2026 USA Math Olympiad. Claude Opus 4.6 hit 91.3% on GPQA Diamond, a benchmark where the questions are designed to stump PhD holders. These are problems that professional mathematicians spend hours, sometimes days, solving.
+> Then give these same models a test called ARC-AGI-3. It’s a set of simple visual puzzles that most humans solve in under two minutes. Look at a few input-output examples, infer the underlying rule, apply it to a new cas
 

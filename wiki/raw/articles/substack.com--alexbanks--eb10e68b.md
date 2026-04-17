@@ -1,8 +1,8 @@
 ---
 title: "Alex Banks | Substack"
 url: "https://substack.com/@alexbanks"
-fetched_at: 2026-04-12T18:01:54.124084+00:00
-source_date: 2026-04-13
+fetched_at: 2026-04-17T13:10:17.082995+00:00
+source_date: 2026-04-17
 tags: [newsletter, auto-ingested]
 ---
 
