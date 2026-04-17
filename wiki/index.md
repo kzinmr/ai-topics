@@ -371,8 +371,10 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 ### Information Retrieval & RAG
 
-- [[entities/jo-bergum|Jo Kristian Bergum]] (@jobergum) — Hornet CEO & Co-founder, former Vespa.ai Chief Scientist. "Agents are the new user of search." ColBERT production pioneer, late-interaction advocate, schema-first verifiable APIs for agents. Mutually Assured Distraction thesis.
-- [[entities/doug-turnbull|Doug Turnbull]] (@softwaredoug) — Search relevance engineer, author of "Relevant Search" (2016) & "AI-Powered Search" (2025). Former Principal Engineer at Reddit, Shopify, Spotify. Quepid & SearchArray creator. "Thick search APIs are counterproductive for agents."
+|- [[entities/jo-bergum|Jo Kristian Bergum]] (@jobergum) — Hornet CEO & Co-founder, former Vespa.ai Chief Scientist. "Agents are the new user of search." ColBERT production pioneer, late-interaction advocate, schema-first verifiable APIs for agents. Mutually Assured Distraction thesis.
+|- [[entities/lester-solbakken|Lester Solbakken]] — Hornet Founding Engineer, former Vespa.ai Principal Engineer, 13yr Yahoo/Verizon Media. PhD AI/ML (NTNU). "RAG didn't really change much in search. Agents change everything." Mutually Assured Distraction co-author. Schema-first API advocate. Context engineering = relevance engineering. Synthetic query generation for enterprise search.
+|- [[entities/doug-turnbull|Doug Turnbull]] (@softwaredoug) — Search relevance engineer, author of "Relevant Search" (2016) & "AI-Powered Search" (2025). Former Principal Engineer at Reddit, Shopify, Spotify. Quepid & SearchArray creator. "Thick search APIs are counterproductive for agents."
+|- [[entities/sheshansh-agrawal|Sheshansh Agrawal]] — Director of Research at Contextual AI, former Microsoft Research (Bing Ads embeddings serving 100M+ users, trillions of tokens). IIT Bombay. XPERT (SIGIR 2023), DECAF, ECLARE. CER-C metric for trajectory-level efficiency. On-policy distillation + RL for search planners. Agentic alternative to GraphRAG. BlitzRank reranker (25-40% token reduction).
 - [[entities/benjamin-clavi|Benjamin Clavié]] (@bclavie) — Mixedbread ML R&D / NII Tokyo PhD. RAGatouille creator (3.9k★), ModernBERT co-lead (5.5k★). "ColBERT is a semantic keyword matcher." JaColBERT, mxbai-edge-colbert-v0, Wholembed v3. Late Interaction Workshop @ ECIR 2026 organizer.
 
 ### AI Memory & Context Systems
