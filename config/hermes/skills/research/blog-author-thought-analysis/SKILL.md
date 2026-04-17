@@ -214,7 +214,7 @@ After creating thought analysis page:
 
 ```python
 # 1. Fetch RSS
-rss_urls = extract_from_opml("hn-popular-blogs-2025.opml")
+rss_urls = extract_from_opml("blogs.opml")
 
 # 2. Select substantive articles
 priority_urls = [u for u in rss_urls if is_essay(u)]

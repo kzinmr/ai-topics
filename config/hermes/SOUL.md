@@ -29,7 +29,7 @@ After modifying wiki files, commit and push: `cd ~/ai-topics && git add wiki/ &&
 - Summaries are pushed to `github.com/kzinmr/ai-topics` (inbox/newsletters/ folder)
 
 ## Blog/RSS Management
-OPML file at `~/ai-topics/config/feeds/blogs.opml` (symlinked as `~/hn-popular-blogs-2025.opml`) contains 84 HN popular blogs.
+OPML file at `~/ai-topics/config/feeds/blogs.opml` contains 84 HN popular blogs.
 Pre-built scripts exist — use them, do NOT write new ones:
 - `~/scripts/build_blog_wiki.py` — parses OPML, scrapes each blog's about page + RSS feed, generates wiki entity pages under `~/wiki/entities/`, updates `wiki/index.md` and `wiki/log.md`.
   - Options: `--dry-run`, `--limit N`, `--workers N`

@@ -102,7 +102,6 @@ Hermes Agent (Discord) が inbox/ + wiki/raw/ から知識を抽出・構造化:
 旧パスとの互換性のため以下のシンボリックリンクが存在:
 - `~/wiki` → `~/ai-topics/wiki/`
 - `~/scripts/*` → `~/ai-topics/scripts/*` (各スクリプト個別)
-- `~/hn-popular-blogs-2025.opml` → `~/ai-topics/config/feeds/blogs.opml`
 - `~/x-accounts.yaml` → `~/ai-topics/config/feeds/x-accounts.yaml`
 - `~/SETUP.md` → `~/ai-topics/docs/SETUP.md`
 - `~/.hermes/SOUL.md` → `~/ai-topics/config/hermes/SOUL.md`

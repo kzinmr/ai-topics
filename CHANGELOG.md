@@ -39,7 +39,6 @@ wiki コンテンツの変更は `wiki/log.md` で管理。
 ## 2026-04-12 — 購読設定の移動・リネーム
 
 - `feeds/` → `config/feeds/`
-- `hn-popular-blogs-2025.opml` → `config/feeds/blogs.opml`
 - スクリプト・symlink 追従
 
 ## 2026-04-12 — Shelley 作業領域
