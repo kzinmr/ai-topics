@@ -240,7 +240,6 @@ for script in build_blog_wiki.py build_x_wiki.py check_mail.sh check_new_skills.
 done
 
 # Config feeds
-ln -sf ~/ai-topics/config/feeds/blogs.opml ~/hn-popular-blogs-2025.opml
 ln -sf ~/ai-topics/config/feeds/x-accounts.yaml ~/x-accounts.yaml
 
 # Docs
@@ -672,7 +671,6 @@ skills:
 - [ ] `ls -la ~/wiki` → `~/ai-topics/wiki`
 - [ ] `ls -la ~/scripts/process_email.py` → `~/ai-topics/scripts/process_email.py`
 - [ ] `ls -la ~/.hermes/SOUL.md` → `~/ai-topics/config/hermes/SOUL.md`
-- [ ] `ls -la ~/hn-popular-blogs-2025.opml` → `~/ai-topics/config/feeds/blogs.opml`
 - [ ] `ls -la ~/x-accounts.yaml` → `~/ai-topics/config/feeds/x-accounts.yaml`
 
 ### Hermes Agent

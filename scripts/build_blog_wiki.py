@@ -322,7 +322,7 @@ def main():
 
         # Append to log
         today = datetime.now().strftime("%Y-%m-%d")
-        log_entry = f"\n## {today}\n- Ingested {len(written)} blog author entities from hn-popular-blogs-2025.opml\n"
+        log_entry = f"\n## {today}\n- Ingested {len(written)} blog author entities from blogs.opml\n"
         with open(WIKI_LOG, "a", encoding="utf-8") as f:
             f.write(log_entry)
 
