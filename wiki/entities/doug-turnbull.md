@@ -125,6 +125,65 @@ Turnbull consistently argues that **query understanding matters more than rankin
 - At Shopify, the user segment with the highest conversions was the one with manually controlled results — proving that domain expertise beats generic ranking models
 - "The dirty secret of Google and Amazon search is all the manual annotation, rules, etc they manage"
 
+### Agents Turn Simple Keyword Search into Compelling Experiences
+
+In September 2025, Turnbull published a landmark blog post arguing that **traditional "thick" search APIs are counterproductive for AI agents**. His central insight:
+
+> "Because of this, I'd argue the traditional, thick search APIs are counterproductive to being used by agents. They may be too complex for agents to reason about effectively."
+
+He demonstrated that agents perform best with **simple, predictable keyword search** (e.g., bare-bones BM25) because:
+
+1. **Transparent reasoning:** Agents can understand exactly how results are produced, enabling them to iteratively refine queries
+2. **Predictable behavior:** Simple APIs don't hide query understanding, synonym expansion, or reranking — the agent itself provides these capabilities
+3. **Iterative adaptation:** Agents can test multiple queries, evaluate results, and learn from failures in real-time
+
+His experiments showed agents successfully handling abstract queries like `"couch fit for a vampire"` or `"ugliest chair in the catalog"` by iteratively testing keyword variations and reasoning about results.
+
+#### LLM-as-a-Judge and Semantic Caching
+
+Turnbull introduced a pattern where agents **self-evaluate** their search results and log interactions:
+
+```
+Saved interaction: user_query='ugliest chair in the catalog'
+search_tool_query='cow print chair'
+quality='good'
+reasoning="Returned an adult 'cow print task chair' that clearly fits a loud/novelty aesthetic..."
+```
+
+These logged interactions become a **semantic cache** — new queries are matched to past ones via vector similarity, surfacing what worked or failed before. The agent's interaction history evolves into a **knowledge graph of user intent**, connecting similar queries with performance notes.
+
+#### The Clickstream Blindspot
+
+Turnbull identified a critical risk in agentic search: **agents lack access to implicit human behavior signals**. Traditional search relies on decades of noisy but valuable clickstream data. An agent may rate highly engaging results as "meh" because they don't align with logical deduction — creating a mismatch between reasoning quality and actual user satisfaction.
+
+### Semantic Search Without Embeddings
+
+In January 2026, Turnbull published a provocative argument: **semantic search does not require embeddings**. He decomposed semantic search into three pillars:
+
+1. **Representation** — A shared space mapping queries and content
+2. **Similarity Function** — Measures proximity in that space
+3. **Match Criteria** — Explicit inclusion/exclusion logic ("It is the thing, or it's not the thing")
+
+Embeddings excel at the first two pillars but fail catastrophically at the third. Users reject "semantically close but wrong" results (e.g., baseballs appearing for fruit queries).
+
+#### Hierarchical Taxonomies as the Alternative
+
+Turnbull proposed using **managed hierarchical taxonomies** instead:
+
+```
+Baby & Kids / Toddler & Kids Playroom / Indoor Play / Rocking Horses / Novelty Rocking Horses
+```
+
+By tokenizing category paths hierarchically and feeding them into BM25, you get natural specificity scoring: root nodes have high document frequency (lower BM25 score), while leaf nodes have low document frequency (higher BM25 score). This provides **precise match criteria** — "it is the thing or it's not" — which embeddings fundamentally cannot do.
+
+#### LLM-Augmented Taxonomy Building
+
+Turnbull demonstrated a clever trick: prompt small LLMs to **creatively generate plausible taxonomy paths** for queries before mapping them to real ones:
+
+> "Be creative and hallucinate a set of classifications for the query below that look like the real classifications... If you feel inspired, return many unique values in a list."
+
+The hallucinated paths (e.g., `'Baby & Kids / Toys / Pretend Play & Dress Up / Hobby Horses'`) use natural language closer to the actual taxonomy, improving mapping accuracy. Small models suffice since creativity matters more than precision at this stage.
+
 ### Bayesian BM25 and Score Calibration
 
 In 2026, Turnbull published work on **Bayesian BM25** — a method for calibrating BM25 scores into probabilities:
@@ -232,10 +291,19 @@ He maintains an active blog at softwaredoug.com with regular "daily search tips"
 
 > "RAG isn't a vector search problem. Through market forces, embeddings became the singular framework we understood RAG. It's the wrong lens."
 
-## Related
+> "Agents turn simple keyword search into compelling search experiences. Thick APIs hide the reasoning from the agent."
 
-- [[Relevant Search]] — His foundational book on search relevance engineering
-- [[AI-Powered Search]] — His 2025 book on LLM integration in search
+> "Semantic search needs three pillars: representation, similarity, AND match criteria. Embeddings fail at the third."
+
+## Blog / Recent Posts
+
+### Key Articles on softwaredoug.com
+
+- **[Reasoning Agents Need Bad Search](https://softwaredoug.com/blog/2025/09/22/reasoning-agents-need-bad-search)** (Sep 2025) — Argues that traditional "thick" search APIs are counterproductive for AI agents. Agents perform better with simple, predictable BM25 keyword search because they can iteratively refine queries and reason transparently about results. Introduces patterns for LLM self-evaluation, semantic caching, and building a "knowledge graph of user intent" from agent interaction logs. Identifies the "clickstream blindspot" — agents lack access to implicit human behavior signals that traditional search relies on.
+
+- **[Semantic Search Without Embeddings](https://softwaredoug.com/blog/2026/01/08/semantic-search-without-embeddings)** (Jan 2026) — Decomposes semantic search into three pillars: representation, similarity, and match criteria. Argues embeddings fail at the third pillar (explicit inclusion/exclusion). Proposes hierarchical taxonomies as the alternative — tokenizing category paths and feeding them into BM25 for natural specificity scoring. Demonstrates LLM-augmented taxonomy building: prompting small models to "creatively generate" plausible taxonomy paths before mapping to real ones.
+
+## Related
 - [[Elasticsearch]] — Primary search engine in his early work
 - [[Apache Solr]] — Search platform he worked with extensively
 - [[Learning to Rank]] — ML approach to combining ranking signals
@@ -247,6 +315,7 @@ He maintains an active blog at softwaredoug.com with regular "daily search tips"
 - [[Trey Grainger]] — Co-author of AI-Powered Search
 - [[John Berryman]] — Co-author of Relevant Search
 - [[Max Irwin]] — Co-author of AI-Powered Search
+- [[Jo Kristian Bergum]] — Hornet CEO, former Vespa Chief Scientist, fellow search infrastructure veteran
 - [[OpenSource Connections]] — Search relevance consultancy where he served as CTO
 - [[Reddit]] — Platform where he achieved 2% DAU increase with LTR
 - [[Shopify]] — Where he improved merchant search revenue 10% YoY

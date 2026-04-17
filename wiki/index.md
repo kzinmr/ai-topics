@@ -371,6 +371,8 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 ### Information Retrieval & RAG
 
+- [[entities/jo-bergum|Jo Kristian Bergum]] (@jobergum) — Hornet CEO & Co-founder, former Vespa.ai Chief Scientist. "Agents are the new user of search." ColBERT production pioneer, late-interaction advocate, schema-first verifiable APIs for agents. Mutually Assured Distraction thesis.
+- [[entities/doug-turnbull|Doug Turnbull]] (@softwaredoug) — Search relevance engineer, author of "Relevant Search" (2016) & "AI-Powered Search" (2025). Former Principal Engineer at Reddit, Shopify, Spotify. Quepid & SearchArray creator. "Thick search APIs are counterproductive for agents."
 - [[entities/benjamin-clavi|Benjamin Clavié]] (@bclavie) — Mixedbread ML R&D / NII Tokyo PhD. RAGatouille creator (3.9k★), ModernBERT co-lead (5.5k★). "ColBERT is a semantic keyword matcher." JaColBERT, mxbai-edge-colbert-v0, Wholembed v3. Late Interaction Workshop @ ECIR 2026 organizer.
 
 ### AI Memory & Context Systems

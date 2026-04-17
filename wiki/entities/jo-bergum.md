@@ -152,6 +152,7 @@ Native ColBERT support in Vespa, enabling explainable semantic search using deep
 - [[Mutually-Assured-Distraction]] — His key insight about retrieval-reasoning compounding errors
 - [[Hybrid-Search]] — BM25 + vector search, a Vespa specialty
 - [[Explainable-Semantic-Search]] — ColBERT's key advantage over single-vector embeddings
+- [[Doug Turnbull]] — Fellow search relevance engineer, co-author of "AI-Powered Search"
 
 ## Sources
 

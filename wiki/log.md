@@ -1,3 +1,20 @@
+## 2026-04-17 — Search Engineer Entity Enrichment: Jo Kristian Bergum & Doug Turnbull
+
+### Updated Entity Pages (2件)
+- **entities/jo-bergum.md** — Hornet CEO, former Vespa Chief Scientist。相互参照追加: [[Doug Turnbull]]とのリンク
+- **entities/doug-turnbull.md** — 2つの重要ブログ記事の詳細分析追加: 「Reasoning Agents Need Bad Search」（エージェントには薄い検索APIが最適）、「Semantic Search Without Embeddings」（階層的タクソノミー+BM25で意味検索可能）。相互参照追加: [[Jo Kristian Bergum]]
+
+### Updated Files
+- **wiki/index.md** — Information Retrieval & RAGセクションにjobergumとsoftwaredougを追加
+- **wiki/log.md** — This entry
+
+### Key Insights
+- **「Agents are the new user of search」** — BergumのHornet設立 thesis。エージェントは長い構造化クエリを反復的に発行し、全文を読む。スニペット不要。
+- **「Thick search APIs are counterproductive for agents」** — Turnbullの実証。単純なBM25 + 明示的なドキュメントの方が、エージェントの反復的推論には有効。
+- **「Semantic search without embeddings」** — 階層的タクソノミーをBM25で検索。specificityが自然にスコアに反映される。
+
+---
+
 ## 2026-04-16 — Anthropic Claude Code: 1M Context & Session Management Strategies
 
 ## 2026-04-16 — Daily Scan Wiki Ingestion (11件)
