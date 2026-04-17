@@ -47,6 +47,19 @@ The research suggests a clear division of labor:
 - **Symbolic planners** → Deterministic logic, multi-step reasoning, robotics control
 - **Neurosymbolic hybrids** → Best of both — neural perception + symbolic reasoning
 
+## Newsletter Expansion: The Illusion of Thinking (2026-04-17)
+
+The Signal newsletter (by Alex Banks) covered multiple angles on reasoning model hallucination:
+
+### "The real danger of AI hallucination"
+Highlights that hallucination isn't just a bug — it's a fundamental property of probabilistic language models. When reasoning models generate intermediate steps, those steps can appear logically sound while being factually incorrect, making hallucination harder to detect.
+
+### "Your AI is lying to your face"
+Examines how modern reasoning models (o1, Claude extended thinking) generate plausible chain-of-thought that may not reflect actual internal computation. The "thought" is a performance, not a transparent window into the model's reasoning process.
+
+### "Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity"
+Academic analysis showing that reasoning models excel at certain complexity classes of problems but degrade predictably on others. The key insight: **reasoning capability is problem-dependent, not universally improving with scale**.
+
 ## Related
 
 - [[concepts/neurosymbolic-ai]] — The broader architectural paradigm

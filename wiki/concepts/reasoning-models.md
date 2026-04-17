@@ -1,7 +1,8 @@
 ---
-status: skeleton
+status: active
 created: 2026-04-14
-tags: reasoning, models, thinking
+updated: 2026-04-17
+tags: reasoning, models, thinking, coherence, hallucination
 ---
 
 # Reasoning Models
@@ -15,6 +16,22 @@ LLM architectures designed for explicit step-by-step reasoning, including chain-
 - **Test-time compute scaling**: Trading more inference compute for better accuracy
 - **Chain-of-thought (CoT)**: Explicit reasoning trace generation
 - **Self-correction**: Models that can revise their own reasoning
+
+## The Coherence Problem (2026-04)
+
+Giles Thomas demonstrated that LLMs achieve syntactic coherence surprisingly early in training (~1/3 through), but **coherence ≠ correctness**. Full training is essential for factual grounding. This has direct implications for reasoning models: they can produce plausible-sounding reasoning traces that are factually wrong.
+
+See: [[concepts/llm-training-coherence-evolution]]
+
+## The Illusion Problem (2026-04)
+
+The Signal newsletter covered three key angles on reasoning model hallucination:
+
+1. **"The real danger of AI hallucination"** — Hallucination is a fundamental property of probabilistic models, not a bug
+2. **"Your AI is lying to your face"** — Chain-of-thought is a performance, not transparent internal computation
+3. **"Understanding Reasoning Models via Problem Complexity"** — Reasoning capability is problem-dependent, not universally improving with scale
+
+See: [[concepts/illusion-of-thinking]]
 
 ## Distinction from Neurosymbolic AI
 

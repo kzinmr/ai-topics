@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-18 (Added Back of House multi-agent patterns, Single-Agent Ceiling concept, @MilksandMatcha entity)
+Last updated: 2026-04-17 (Added LLM Training Coherence Evolution concept, updated Troy Hunt MCP integration, updated Reasoning Models with coherence/illusion analysis, updated Qwen3.6-Plus with A3B K_P quants)
 
 ## Entity Pages (74)
 
@@ -103,7 +103,7 @@ Last updated: 2026-04-18 (Added Back of House multi-agent patterns, Single-Agent
 - [[entities/the-silicon-underground]] — Dave Farquhar
 - [[entities/tim-sh]] — Tim Sherratt
 - [[entities/tom-renner]] — Tom Renner
-- [[entities/troy-hunt]] — Troy Hunt
+- [[entities/troy-hunt]] — Troy Hunt (Have I Been Pwned, cybersecurity education, MCP breach integration)
 - [[entities/utcc-utoronto-ca-cks]] — Chris Siebenmann
 - [[entities/westenberg]] — JA Westenberg
 - [[entities/wirtzdan]] — Daniel Wirtz
@@ -226,6 +226,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
 - [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo / OpenAI Symphony)
 - [[concepts/llm-evaluation-harness]] — LLM Evaluation Harness
+- [[concepts/llm-training-coherence-evolution]] — LLM Training Coherence Evolution (Giles Thomas / gpjt, Karpathy RNN comparison)
 - [[concepts/local-llm]] — Local LLM Inference (llama.cpp, Ollama, GGUF)
    |- [[concepts/local-llm/_index]] — Local LLM Ecosystem Overview
    |- [[concepts/local-llm/gguf]] — GGUF Quantization Format

@@ -1,3 +1,21 @@
+## 2026-04-17 — Daily Wiki Ingestion: LLM Training Coherence, Agentic AI + MCP, Reasoning Models Illusion, Qwen3.6-35B-A3B Quants
+
+### New Concept Page (1件)
+- **concepts/llm-training-coherence-evolution.md** — Giles Thomas (gpjt)の163MパラメータGPT-2モデルをFineWebでトレーニングし、57チェックポイントにわたるコヒーレンス進化を可視化。Karpathyの2015年RNN実験との比較分析。構文学習→意味学習→現実グラウンディングの3段階。
+
+### Updated Pages (3件)
+- **entities/troy-hunt.md** — HIBP MCP Server統合（AIエージェントがブリーチデータを自然言語で照会可能）、OpenClaw+Telegramアジェンティックワークフローのデモ記事を追加。タイムライン2026-04にMCPエントリ追加。
+- **concepts/illusion-of-thinking.md** — The Signal newsletter「The illusion of thinking」の関連記事3本を統合。AIハルシネーションの根本的性質、CoTの演出性、問題複雑性による推論能力の限界。
+- **concepts/reasoning-models.md** — ステータスをskeleton→activeに更新。コヒーレンス問題（Giles Thomas実験）とイリュージョン問題（The Signal newsletter）のセクションを追加。
+- **entities/qwen3-6-plus.md** — Qwen3.6-35B-A3BのK_P quantsおよびUncensored Aggressiveバージョンリリース情報を追加。
+
+### Key Insights
+- **Coherence ≠ Correctness**: LLMはトレーニングの1/3で構文的に流暢になるが、事実グラウンディングには完全なトレーニングが必要。これはreasoningモデルの「もっともらしいが誤った推論」問題と直接関連
+- **MCP as Infrastructure Standard**: HIBPのMCP実装は「セキュリティデータへのAIエージェントアクセス」の具体例。自然言語インターフェースが業界標準になりつつある
+- **Qwen Community Ecosystem**: A3Bの量子化・アンセンスード版が即日に公開されるコミュニティの活発さは、オープンモデルエコシステムの成熟を示す
+
+---
+
 ## 2026-04-18 — Back of House Multi-Agent Patterns (MilksandMatcha + 0xSero)
 
 ### Raw Articles

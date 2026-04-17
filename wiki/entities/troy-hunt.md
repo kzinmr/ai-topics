@@ -40,6 +40,8 @@ In November 2024, Hunt hired HIBP's first employee — marking the transition fr
 | 2025 | Published "Why Does Have I Been Pwned Contain 'Fake' Email Addresses?" — defending data integrity |
 | 2025 | Credential stuffing threat data — 1.95B unique emails, 1.3B unique passwords indexed |
 | 2026 | Ongoing weekly blog posts on breach disclosure, AI agents, and operational transparency |
+| 2026-04 | HIBP MCP Server launched — enables AI agents to query breach data via Model Context Protocol |
+| 2026-04 | Published agentic AI workflow demos with OpenClaw + Telegram for HIBP API integration |
 
 ## Core Ideas
 
