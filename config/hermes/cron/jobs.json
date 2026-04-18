@@ -1,0 +1,292 @@
+{
+  "jobs": [
+    {
+      "id": "6d6f29a2c6bf",
+      "name": "Daily Inbox Update",
+      "prompt": "Daily Inbox Update \u2014 RSS scan + Newsletter + Wiki triage & ingest.\n\n**\u91cd\u8981\uff1a\u3059\u3079\u3066\u306e\u51fa\u529b\uff08\u30ec\u30dd\u30fc\u30c8\u3001\u30c8\u30ea\u30a2\u30fc\u30b8\u8868\u3001\u63a8\u5968\u4e8b\u9805\uff09\u306f\u65e5\u672c\u8a9e\u3067\u8a18\u8ff0\u3059\u308b\u3053\u3068\u3002**\n\nThe pre-run script has already executed blogwatcher-cli scan, queried the DB,\nread the newsletter, and listed existing wiki topics. Its JSON output is above.\n\nYour job has 3 phases. **If any phase fails, still output everything you completed so far as your final response.** Do NOT respond with [SILENT] if you have partial results.\n\n---\n\n## Phase 1: Report (ALWAYS do this first)\n\nFrom the script JSON, produce a summary in Japanese:\n\n```\n# \u30c7\u30a4\u30ea\u30fc\u30a4\u30f3\u30dc\u30c3\u30af\u30b9\u30a2\u30c3\u30d7\u30c7\u30fc\u30c8 \u2014 {date}\n\n## RSS \u30b9\u30ad\u30e3\u30f3\u7d50\u679c\n- \u30b9\u30ad\u30e3\u30f3\u6570: {total} \uff08\u6210\u529f: {succeeded}, \u5931\u6557: {failed}\uff09\n- \u65b0\u898f\u8a18\u4e8b: {article_total}\n\n### \u5931\u6557\u3057\u305f\u30d6\u30ed\u30b0\n| \u30d6\u30ed\u30b0\u540d | \u30a8\u30e9\u30fc\u5185\u5bb9 |\n|----------|------------|\n(scan.failures \u304b\u3089)\n\n### \u30d6\u30ed\u30b0\u8a18\u4e8b\u4e00\u89a7\n- [\u30bf\u30a4\u30c8\u30eb](URL) \u2014 \u30d6\u30ed\u30b0\u540d\n(articles.blog_articles \u304b\u3089 \u3059\u3079\u3066\u8a18\u8f09)\n\n### Reddit \u30cf\u30a4\u30e9\u30a4\u30c8\n#### r/LocalLLaMA\uff08N\u4ef6\u306e\u65b0\u7740\uff09\n- [\u30bf\u30a4\u30c8\u30eb](URL)\n(articles.reddit_articles \u304b\u3089 5\u4ef6\u307e\u3067)\n\n## \u30cb\u30e5\u30fc\u30b9\u30ec\u30bf\u30fc\n- \u4ef6\u540d: ...\n- \u8a18\u4e8b\u6570: N\n(newsletter \u304b\u3089 \u2014 \u307e\u305f\u306f\u300c\u672c\u65e5\u30cb\u30e5\u30fc\u30b9\u30ec\u30bf\u30fc\u306a\u3057\u300d)\n```\n\nSave this to `~/ai-topics/inbox/rss-scans/daily-scan-{date}.md`.\nRun: `cd ~/ai-topics && git add inbox/rss-scans/ && git commit -m \"inbox: daily scan {date}\" && git push`\n\n**If article_total == 0 AND newsletter.exists == false \u2192 respond [SILENT] and stop.**\n\n---\n\n## Phase 2: Triage (select articles worth adding to wiki)\n\nReview the blog articles and newsletter articles from the script output.\nFor each article, decide if it's wiki-worthy by checking:\n1. Is the topic already covered? (check `existing_wiki_topics` list in the JSON)\n2. Is it substantive (not a link dump, not Reddit noise)?\n3. Does it relate to: LLMs, AI agents, coding agents, developer tooling, inference/training infrastructure, prompt engineering, AI safety, or open-source AI?\n\nOutput a triage table in Japanese:\n\n```\n## \u30c8\u30ea\u30a2\u30fc\u30b8\n\n| \u30bd\u30fc\u30b9 | \u30bf\u30a4\u30c8\u30eb | \u30a2\u30af\u30b7\u30e7\u30f3 | \u5bfe\u8c61 |\n|--------|----------|------------|------|\n| simonwillison.net | \u30bf\u30a4\u30c8\u30eb | wiki\u30a8\u30f3\u30c8\u30ea\u4f5c\u6210 | entities/simon-willison.md |\n| blog.example.com | \u30bf\u30a4\u30c8\u30eb | \u30b9\u30ad\u30c3\u30d7\uff08\u65e2\u5b58\uff09 | \u2014 |\n| newsletter | \u30bf\u30a4\u30c8\u30eb | wiki\u30a8\u30f3\u30c8\u30ea\u4f5c\u6210 | concepts/new-topic.md |\n```\n\n---\n\n## Phase 3: Wiki Ingestion\n\nFor each article marked \"wiki\u30a8\u30f3\u30c8\u30ea\u4f5c\u6210\" in the triage table:\n1. Scrape the article content using `web_extract`\n2. Determine which wiki category it belongs to (entities/, concepts/, comparisons/, queries/)\n3. Create or update the wiki page in Japanese, following the existing frontmatter format\n4. Update `wiki/index.md` and `wiki/log.md` with the new entry\n5. Run: `cd ~/ai-topics && git add wiki/ && git commit -m \"wiki: {topic}\" && git push`\n\n---\n\n**\u6700\u7d42\u30ec\u30dd\u30fc\u30c8\u306f\u65e5\u672c\u8a9e\u3067\u51fa\u529b\u3059\u308b\u3053\u3068\u3002**",
+      "skills": [
+        "blogwatcher-db",
+        "semantic-article-grouping"
+      ],
+      "skill": "blogwatcher-db",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "daily_inbox_collect.py",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 23 * * *",
+        "display": "0 23 * * *"
+      },
+      "schedule_display": "0 23 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 10
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-10T05:36:45.450263+00:00",
+      "next_run_at": "2026-04-18T23:00:00+00:00",
+      "last_run_at": "2026-04-17T23:07:35.920015+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "deliver": "slack:C077ACXR5UY",
+      "origin": {
+        "platform": "slack",
+        "chat_id": "C077ACXR5UY",
+        "chat_name": "C077ACXR5UY",
+        "thread_id": "1775796104.859699"
+      },
+      "last_delivery_error": null
+    },
+    {
+      "id": "25c95a207f28",
+      "name": "Skill Inventory Check",
+      "prompt": "Review the skill inventory report below. If there are new unmanaged skills, briefly assess whether each one looks project-specific (worth promoting to config/hermes/skills/) or one-off (can be ignored or deleted). Report your recommendation.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "check_new_skills.py",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * 1",
+        "display": "0 8 * * 1"
+      },
+      "schedule_display": "0 8 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 2
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-12T14:30:36.503091+00:00",
+      "next_run_at": "2026-04-20T08:00:00+00:00",
+      "last_run_at": "2026-04-15T01:47:21.758382+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "deliver": "slack:C077ACXR5UY",
+      "origin": null,
+      "last_delivery_error": null
+    },
+    {
+      "id": "176f75b41f88",
+      "name": "Weekly AI digest",
+      "prompt": "Generate a weekly AI news digest covering the past 7 days:\n\n1. Search the web for major AI announcements, model releases, and research breakthroughs\n2. Search for trending ML repositories on GitHub\n3. Check arXiv for highly-cited papers on language models and agents\n\nStructure:\n## Headlines (3-5 major stories)\n## Notable Papers (2-3 papers with one-sentence summaries)\n## Open Source (interesting new repos or major releases)\n## Industry Moves (funding, acquisitions, launches)\n\nKeep each item to 1-2 sentences. Include links. Total under 600 words. Respond in Japanese.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "display": "0 9 * * 1"
+      },
+      "schedule_display": "0 9 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-16T13:13:37.027879+00:00",
+      "next_run_at": "2026-04-20T09:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": null
+    },
+    {
+      "id": "3ef4e0f23597",
+      "name": "Weekly Dreaming",
+      "prompt": "# Weekly Dreaming \u2014 Knowledge Consolidation Cycle\n\nYou are performing the weekly \"dreaming\" process to consolidate knowledge from the past week into the wiki.\n\n## Data Collection\n\nBelow is the JSON output from the weekly_dreaming.py pre-run script. It contains:\n- All RSS scan articles from the past week\n- All newsletter articles from the past week  \n- List of existing wiki pages\n- Source counts and date counts\n\n## Your Task: Execute the Dream Cycle\n\n### Phase 1: Light Sleep \u2014 Screen & Group\n1. Analyze all articles in the JSON data\n2. Group by semantic themes (shared entities, related concepts, events)\n3. Identify recurring patterns across multiple sources\n4. Flag articles appearing in multiple sources (higher significance)\n\n### Phase 2: REM \u2014 Score & Promote\nScore each theme using these weights:\n- relevance (0.30): Direct AI/LLM/agent relevance\n- frequency (0.24): Number of mentions across sources\n- query_diversity (0.15): Different sources discussing similar concepts\n- recency (0.15): How recent the discussion is\n- consolidation (0.10): How well it fits existing knowledge\n- conceptual_richness (0.06): Depth and novelty of insights\n\nPromotion thresholds:\n- Score \u2265 0.7: Create or update wiki page\n- Score 0.5-0.7: Add to existing page or log for review\n- Score < 0.5: Skip (minor mention)\n\n### Phase 3: Deep Sleep \u2014 Integrate\nFor each promoted theme:\n1. Check existing wiki pages (search existing_wiki_pages list)\n2. Create new pages if significant enough (follow wiki conventions):\n   - Frontmatter: title, created, updated, type, tags, sources\n   - Content with cross-references ([[wikilinks]] to 2+ pages)\n   - Proper categorization (entities/, concepts/, comparisons/, queries/)\n3. Update existing pages with new information:\n   - Append new findings with dates\n   - Note contradictions if present\n   - Bump `updated` date\n4. Update wiki/index.md (add new pages, update counts)\n5. Append to wiki/log.md: \"## [YYYY-MM-DD] dreaming | Weekly consolidation \u2014 N pages created, N updated\"\n\n## Rules\n- Follow llm-wiki skill conventions\n- NEVER create pages for passing mentions\n- ALWAYS cross-reference (2+ wikilinks per new page)\n- Handle contradictions explicitly (don't overwrite)\n- Keep pages scannable (split if over 200 lines)\n\n## After Processing\n1. Commit: cd ~/ai-topics && git add wiki/ && git status && git commit -m \"dreaming: weekly consolidation YYYY-MM-DD \u2014 N pages created, N updated\" && git push\n2. Report what you created/updated in your final response using this format:\n\n```\n# Weekly Dreaming Report \u2014 YYYY-MM-DD\n\n## Summary\n- Articles processed: N\n- Themes identified: N  \n- Pages created: N\n- Pages updated: N\n\n## New Wiki Pages\n- [[concepts/page-name]]: Brief description\n\n## Updated Pages\n- [[entities/existing-page]]: What changed\n\n## Notable Patterns\n- Recurring theme: Details\n\n## Contradictions/Questions (if any)\n- Any conflicting information\n- Open questions for manual review\n```\n\n## Collected Data\n[Script output will be injected here as JSON]",
+      "skills": [
+        "weekly-dreaming",
+        "llm-wiki",
+        "semantic-article-grouping",
+        "daily-rss-triage",
+        "blogwatcher-db"
+      ],
+      "skill": "weekly-dreaming",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "weekly_dreaming.py",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 2 * * 0",
+        "display": "0 2 * * 0"
+      },
+      "schedule_display": "0 2 * * 0",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-16T13:58:42.777945+00:00",
+      "next_run_at": "2026-04-19T02:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": null
+    },
+    {
+      "id": "bf79f8857d55",
+      "name": "Daily Active Knowledge Crawl",
+      "prompt": "Daily Active Knowledge Crawl. \u3042\u306a\u305f\u306e\u76ee\u7684: config/hot-topics.yaml \u306b\u767b\u9332\u3055\u308c\u305f\u30db\u30c3\u30c8\u30c8\u30d4\u30c3\u30af\u306b\u95a2\u9023\u3059\u308b\u300c\u307e\u3060\u53d6\u308a\u8fbc\u307e\u308c\u3066\u3044\u306a\u3044\u91cd\u8981\u6982\u5ff5\u300d\u3092\u80fd\u52d5\u7684\u306b\u8abf\u67fb\u3057\u3001\u77e5\u8b58\u30d9\u30fc\u30b9\u306b\u53d6\u308a\u8fbc\u3080\u3053\u3068\u3002\n\n\u624b\u9806:\n1. `cat ~/ai-topics/config/hot-topics.yaml` \u3092\u8aad\u307f\u3001crawl_policy \u304c prerequisites/laterals/deepdive \u304b\u3064 last_crawled \u304c3\u65e5\u4ee5\u4e0a\u524d(\u307e\u305f\u306fnull)\u306e\u30c8\u30d4\u30c3\u30af\u3092\u62bd\u51fa\n2. priority: high \u304b\u3089 last_crawled \u304c\u6700\u3082\u53e4\u3044\u9806\u306b\u6700\u59272\u3064\u3001priority: medium \u304b\u3089\u6700\u59271\u3064\u3001\u5408\u8a08\u6700\u59273\u30c8\u30d4\u30c3\u30af\u3092\u9078\u629e\n3. \u5404\u30c8\u30d4\u30c3\u30af\u306b\u3064\u3044\u3066 crawl_policy \u306b\u5fdc\u3058\u305f\u52d5\u4f5c\u3092\u5b9f\u884c:\n   [prerequisites] wiki_pages \u3092\u8aad\u3080 \u2192 \u305d\u306e\u30c8\u30d4\u30c3\u30af\u3092\u7406\u89e3\u3059\u308b\u305f\u3081\u306e\u524d\u63d0\u6982\u5ff5\u3092\u7279\u5b9a \u2192 wiki\u306b\u7121\u3044\u3082\u306e\u3092Web\u691c\u7d22 \u2192 \u826f\u8cea\u30bd\u30fc\u30b9\u767a\u898b \u2192 \u53d6\u308a\u8fbc\u307f\n   [laterals] wiki_pages \u3092\u8aad\u3080 \u2192 \u6a2a\u65b9\u5411\u306e\u95a2\u9023\u6982\u5ff5\u3092\u7279\u5b9a \u2192 wiki\u306b\u7121\u3044\u3082\u306e\u3092Web\u691c\u7d22 \u2192 \u53d6\u308a\u8fbc\u307f\n   [deepdive] search_hints \u3067Web\u691c\u7d22 \u2192 \u6700\u65b0\u52d5\u5411\u30fb\u4e8b\u4f8b\u3092\u767a\u898b \u2192 raw\u53d6\u308a\u8fbc\u307f\u3068\u65e2\u5b58\u30da\u30fc\u30b8\u66f4\u65b0 or \u65b0\u898f\u30b5\u30d6\u30c8\u30d4\u30c3\u30af\u4f5c\u6210\n4. \u5404\u6982\u5ff5\u306b\u3064\u3044\u3066:\n   a. Web\u691c\u7d22\u3067\u826f\u8cea\u30bd\u30fc\u30b9(arxiv, \u516c\u5f0f\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8, \u8457\u540d\u30d6\u30ed\u30b0)\u30921-2\u672c\u767a\u898b\n   b. \u30bd\u30fc\u30b9\u3092 ~/ai-topics/wiki/raw/articles/crawl-YYYY-MM-DD-<slug>.md \u306b\u4fdd\u5b58\n   c. ~/ai-topics/wiki/concepts/<slug>.md \u306b\u30da\u30fc\u30b8\u4f5c\u6210(SCHEMA.md\u6e96\u62e0\u3001frontmatter\u5fc5\u9808)\n   d. wiki/index.md \u306b\u8ffd\u8a18\u3001wiki/log.md \u306b \"Active Crawl [{policy}]: {parent} \u2192 {new_concept}\" \u3092\u8a18\u9332\n5. hot-topics.yaml \u306e\u8a72\u5f53\u30c8\u30d4\u30c3\u30af\u306e last_crawled \u3092\u4eca\u65e5\u306e\u65e5\u4ed8\u306b\u66f4\u65b0\n6. `cd ~/ai-topics && git pull --rebase && git add wiki/ config/hot-topics.yaml && git commit -m \"wiki: active-crawl YYYY-MM-DD\" && git push`\n7. \u7d50\u679c\u3092\u65e5\u672c\u8a9e\u3067\u5831\u544a: \u53d6\u308a\u8fbc\u3093\u3060\u6982\u5ff5\u3001\u7406\u7531\u3001\u89aa\u30c8\u30d4\u30c3\u30af\u3068\u306e\u95a2\u4fc2\n\n\u30eb\u30fc\u30eb:\n- 1\u30c8\u30d4\u30c3\u30af\u3042\u305f\u308a\u6700\u59272\u6982\u5ff5\u30021\u65e5\u5408\u8a08\u6700\u59276\u6982\u5ff5\n- \u30bd\u30fc\u30b9\u5fc5\u9808: raw/articles/ \u306b\u30bd\u30fc\u30b9\u304c\u7121\u3044\u6982\u5ff5\u306f\u30da\u30fc\u30b8\u5316\u3057\u306a\u3044\n- \u6df1\u30551\u306e\u307f: \u767b\u9332\u30c8\u30d4\u30c3\u30af\u306e\u76f4\u63a5\u7684\u306a\u5468\u8fba\u306e\u307f\u3002\u5b6b\u6982\u5ff5\u306f\u5bfe\u8c61\u5916\n- \u30c9\u30e1\u30a4\u30f3\u53b3\u5b88: SCHEMA.md \u306e\u30c9\u30e1\u30a4\u30f3(LLM/AI Agent\u6280\u8853)\u306b\u76f4\u63a5\u95a2\u4fc2\u3057\u306a\u3044\u3082\u306e\u306f\u68c4\u5374\n- \u65e2\u5b58\u30da\u30fc\u30b8\u91cd\u8907\u30c1\u30a7\u30c3\u30af: \u751f\u6210\u524d\u306b `find ~/ai-topics/wiki -name \"*.md\" | xargs grep -li \"<keyword>\"` \u3067\u78ba\u8a8d\n- deepdive \u306f\u539f\u5247\u65e2\u5b58\u30da\u30fc\u30b8\u66f4\u65b0\u3002\u65b0\u898f\u306f\u300c\u660e\u78ba\u306b\u65b0\u3057\u3044\u30b5\u30d6\u30c8\u30d4\u30c3\u30af\u300d\u306e\u307f\n- hot-topics.yaml \u306b\u30c8\u30d4\u30c3\u30af\u3092\u52dd\u624b\u306b\u8ffd\u52a0\u3057\u306a\u3044\n- \u53d6\u308a\u8fbc\u307f\u5019\u88dc\u304c\u898b\u3064\u304b\u3089\u306a\u3044\u5834\u5408\u306f\u300c\u8a72\u5f53\u306a\u3057\u300d\u3068\u5831\u544a\u3057\u3066\u6b63\u5e38\u7d42\u4e86",
+      "skills": [
+        "llm-wiki"
+      ],
+      "skill": "llm-wiki",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 11 * * *",
+        "display": "0 11 * * *"
+      },
+      "schedule_display": "0 11 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-18T04:49:42.951941+00:00",
+      "next_run_at": "2026-04-18T11:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "slack:C077ACXR5UY",
+      "origin": null
+    },
+    {
+      "id": "158a461eb520",
+      "name": "Daily Trending Topics",
+      "prompt": "Daily Trending Topics notification.\n\nStep 1: Run `python3 ~/ai-topics/scripts/trending_topics.py --days 3` and present the report to the user IN JAPANESE. Focus on: (1) New Page Recommended \u2014 trending topics with no wiki page yet, (2) Hot Topics with 4+ sources, (3) Cross-Source Topics \u2014 highest signal items appearing across RSS, newsletters, and raw articles. Suggest which topics Hermes should prioritize for wiki page creation or updates.\n\nStep 2: Hot Topics \u30af\u30ed\u30fc\u30ea\u30f3\u30b0\u5019\u88dc\u63d0\u6848\u3002`cat ~/ai-topics/config/hot-topics.yaml` \u3092\u8aad\u307f\u3001Step 1 \u306e\u300cNew Page Recommended\u300d\u306e\u30c8\u30d4\u30c3\u30af\u7fa4\u3068\u7167\u5408\u3059\u308b\u3002\u4ee5\u4e0b\u306e\u6761\u4ef6\u3092\u6e80\u305f\u3059\u30c8\u30d4\u30c3\u30af\u304c\u3042\u308c\u3070\u3001hot-topics.yaml \u3078\u306e\u8ffd\u52a0\u5019\u88dc\u3068\u3057\u3066\u63d0\u6848\u3059\u308b:\n- source_count \u304c 3 \u4ee5\u4e0a\u3067\u3001hot-topics.yaml \u306b\u307e\u3060\u767b\u9332\u3055\u308c\u3066\u3044\u306a\u3044\n- SCHEMA.md \u306e\u30c9\u30e1\u30a4\u30f3(LLM/AI Agent\u6280\u8853)\u306b\u5408\u81f4\u3059\u308b\n- \u65e2\u5b58\u30c8\u30d4\u30c3\u30af\u306e\u30b5\u30d6\u30c8\u30d4\u30c3\u30af\u3067\u306f\u306a\u304f\u3001\u72ec\u7acb\u3057\u305f\u30c8\u30d4\u30c3\u30af\u3068\u3057\u3066\u7ba1\u7406\u3059\u308b\u4fa1\u5024\u304c\u3042\u308b\n\n\u63d0\u6848\u30d5\u30a9\u30fc\u30de\u30c3\u30c8(YAML\u30b9\u30cb\u30da\u30c3\u30c8\u3068\u3057\u3066\u305d\u306e\u307e\u307e\u8cbc\u308c\u308b\u5f62):\n```\n\ud83d\udcdd hot-topics.yaml \u8ffd\u52a0\u5019\u88dc:\n\n  - slug: <slug>\n    title: \"<title>\"\n    crawl_policy: <prerequisites|laterals|deepdive>  # \u63a8\u5968\u30dd\u30ea\u30b7\u30fc\u3068\u7406\u7531\n    priority: <high|medium>\n    search_hints:\n      - \"<hint>\"\n    notes: \"<\u63d0\u6848\u7406\u7531: source_count=N, \u30bd\u30fc\u30b9\u7a2e\u5225, \u65e2\u5b58\u30c8\u30d4\u30c3\u30af\u3068\u306e\u95a2\u4fc2>\"\n    added: YYYY-MM-DD\n```\n\u5019\u88dc\u304c\u306a\u3044\u5834\u5408\u306f\u300c\u8a72\u5f53\u306a\u3057\u300d\u3068\u660e\u8a18\u3002\u63d0\u6848\u306f\u3042\u304f\u307e\u3067\u63d0\u6848\u3067\u3042\u308a\u3001\u30e6\u30fc\u30b6\u30fc\u304c\u627f\u8a8d\u3059\u308b\u307e\u3067 yaml \u3092\u7de8\u96c6\u3057\u306a\u3044\u3053\u3068\u3002",
+      "skills": [
+        "llm-wiki",
+        "daily-rss-triage"
+      ],
+      "skill": "llm-wiki",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "display": "0 10 * * *"
+      },
+      "schedule_display": "0 10 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-18T04:50:39.783611+00:00",
+      "next_run_at": "2026-04-18T10:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "slack:C077ACXR5UY",
+      "origin": null
+    },
+    {
+      "id": "ed6f00d28955",
+      "name": "Weekly Wiki Graph Analysis",
+      "prompt": "Weekly Wiki Graph Analysis. Run `python3 ~/ai-topics/scripts/wiki_graph.py` and present the report to the user IN JAPANESE. Focus on: (1) Intellectual clusters \u2014 top 10 person pairs with high similarity but no wiki link, (2) Cross-reference gap recommendations \u2014 top 10 links Hermes should add during entity enrichment, (3) Bridge concepts connecting many opinion leaders. Keep the summary concise.",
+      "skills": [
+        "llm-wiki"
+      ],
+      "skill": "llm-wiki",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 4",
+        "display": "0 9 * * 4"
+      },
+      "schedule_display": "0 9 * * 4",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-18T04:50:47.032476+00:00",
+      "next_run_at": "2026-04-23T09:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "slack:C077ACXR5UY",
+      "origin": null
+    },
+    {
+      "id": "07d1ccf7541a",
+      "name": "Weekly Wiki Health Digest",
+      "prompt": "Weekly Wiki Health Digest. Run `python3 ~/ai-topics/scripts/wiki_health.py` and present the full report to the user IN JAPANESE. Highlight notable findings: skeleton entities needing enrichment, stale pages (>30d), orphan pages not in index.md, and unprocessed raw articles. Suggest 2-3 concrete next actions.",
+      "skills": [
+        "llm-wiki"
+      ],
+      "skill": "llm-wiki",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "display": "0 9 * * 1"
+      },
+      "schedule_display": "0 9 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-18T04:50:47.341340+00:00",
+      "next_run_at": "2026-04-20T09:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "slack:C077ACXR5UY",
+      "origin": null
+    }
+  ],
+  "updated_at": "2026-04-18T04:50:47.342404+00:00"
+}

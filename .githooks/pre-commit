@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Auto-pull Hermes cron state into repo before every commit.
+set -euo pipefail
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+"$REPO_ROOT/scripts/sync_cron.sh" pull
+git add "$REPO_ROOT/config/hermes/cron/jobs.json"
