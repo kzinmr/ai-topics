@@ -1,234 +1,188 @@
-# Hot Topics — Active Knowledge Crawling targets
-#
-# ユーザーが管理する能動的クローリング対象のトピック定義。
-# shelley-active-crawl ジョブがこのファイルを読み、crawl_policy に従ってwikiを拡張する。
-#
-# フィールド:
-#   slug:           wiki concepts/ スラッグ (必須)
-#   title:          表示名 (必須)
-#   crawl_policy:   クローリングポリシー (必須)
-#     - prerequisites: 前提概念を探して取り込む
-#     - laterals:     横方向の関連概念を探して取り込む
-#     - deepdive:     トピック自体の最新動向・事例を深掘り
-#     - monitor:      クローリングなし。trending監視のみ
-#     - paused:       全く動作しない
-#   priority:       high / medium / low (デフォルト: medium)
-#   search_hints:   検索クエリのヒント (任意)
-#   wiki_pages:     関連する既存wikiページ (任意、自動検出もする)
-#   notes:          メモ (任意)
-#   added:          追加日 (YYYY-MM-DD)
-#   last_crawled:   最終クロール日 (ジョブが自動更新)
-
 topics:
-
-  # === エージェント構築・設計 ===
-
-  - slug: context-engineering
-    title: "Context Engineering"
-    crawl_policy: prerequisites
-    priority: high
-    search_hints:
-      - "context engineering LLM techniques"
-      - "context window optimization strategies"
-    wiki_pages:
-      - concepts/context-engineering
-      - concepts/ai-agent-engineering/context-engineering
-      - concepts/ai-agent-engineering/context-compaction
-    notes: "Karpathy提唱。前提としてtoken economics, attention mechanism等が必要か"
-    added: 2026-04-14
-    last_crawled: null
-
-  - slug: agentic-engineering
-    title: "Agentic Engineering"
-    crawl_policy: laterals
-    priority: high
-    search_hints:
-      - "agentic engineering patterns 2026"
-      - "AI coding agent workflows"
-    wiki_pages:
-      - concepts/agentic-engineering/_index
-    notes: "22ページの大クラスタ。横方向の関連パラダイムを探索"
-    added: 2026-04-14
-    last_crawled: null
-
-  - slug: ai-agent-engineering
-    title: "AI Agent Engineering (Anthropic/OpenAI)"
-    crawl_policy: deepdive
-    priority: high
-    search_hints:
-      - "building AI agents 2026 best practices"
-      - "agent engineering patterns Anthropic OpenAI"
-    wiki_pages:
-      - concepts/ai-agent-engineering/_index
-    notes: "19ページ。最新事例・ベストプラクティスの深掘り"
-    added: 2026-04-14
-    last_crawled: null
-
-  - slug: harness-engineering
-    title: "Harness Engineering"
-    crawl_policy: prerequisites
-    priority: high
-    search_hints:
-      - "harness engineering agents runtime"
-      - "agent harness design patterns"
-    wiki_pages:
-      - concepts/harness-engineering
-      - concepts/ai-agent-engineering/harness-design-long-running-apps
-      - concepts/ai-agent-engineering/effective-harnesses-for-long-running-agents
-    notes: "Ryan Lopopolo提唱。前提としてruntime isolation, process supervision等"
-    added: 2026-04-14
-    last_crawled: null
-
-  - slug: agent-team-swarm
-    title: "Agent Team / Swarm"
-    crawl_policy: laterals
-    priority: high
-    search_hints:
-      - "multi-agent swarm orchestration 2026"
-      - "agent team coordination patterns"
-    wiki_pages:
-      - concepts/agent-team-swarm/_index
-      - concepts/anthropic-managed-agents
-      - concepts/openai-symphony
-    notes: "横方向: 分散システム理論との接点、consensus protocol等"
-    added: 2026-04-14
-    last_crawled: null
-
-  - slug: ai-evals
-    title: "AI Evaluations"
-    crawl_policy: laterals
-    priority: high
-    search_hints:
-      - "AI evaluation frameworks 2026"
-      - "LLM evals best practices"
-    wiki_pages:
-      - concepts/ai-evals
-      - concepts/evaluation-flywheel
-      - comparisons/eval-tools-comparison
-    notes: "横方向: LLM-as-judge, offline evaluation, regression testing等"
-    added: 2026-04-14
-    last_crawled: null
-
-  - slug: dspy
-    title: "DSPy / Declarative LM Programming"
-    crawl_policy: deepdive
-    priority: high
-    search_hints:
-      - "DSPy declarative language model programming 2026"
-      - "Omar Khattab DSPy GEPA RLM"
-    wiki_pages:
-      - concepts/dspy
-    notes: "急速に進化中。GEPA, RLM等の最新動向を追跡"
-    added: 2026-04-14
-    last_crawled: null
-
-  # === モデル・推論 ===
-
-  - slug: local-llm
-    title: "Local LLM Inference"
-    crawl_policy: deepdive
-    priority: medium
-    search_hints:
-      - "local LLM inference 2026 llama.cpp"
-      - "GGUF quantization local deployment"
-    wiki_pages:
-      - concepts/local-llm/_index
-      - concepts/local-llm/gguf
-      - concepts/local-llm/llama-cpp
-      - concepts/local-llm/vllm
-    notes: "階層化済み: GGUF, llama.cpp, vLLMの各サブページ。最新ベンチマーク、新モデル対応を追跡"
-    added: 2026-04-14
-    last_crawled: null
-
-  # === メモリ・コンテキスト ===
-
-  - slug: ai-memory-systems
-    title: "AI Memory Systems"
-    crawl_policy: prerequisites
-    priority: medium
-    search_hints:
-      - "AI agent memory architecture design"
-      - "LLM memory management patterns"
-    wiki_pages:
-      - concepts/ai-memory-systems
-      - concepts/memory-systems-design-patterns
-      - concepts/claude-memory
-    notes: "前提: episodic vs semantic memory, vector DB architectures等"
-    added: 2026-04-14
-    last_crawled: null
-
-  # === ブラウザ・サンドボックス ===
-
-  - slug: death-of-browser
-    title: "Death of Browser"
-    crawl_policy: deepdive
-    priority: medium
-    search_hints:
-      - "agentic browsing paradigm shift 2026"
-      - "browser automation AI agents WebMCP"
-    wiki_pages:
-      - concepts/death-of-browser
-    notes: "WebMCP, agentic browsing の最新動向"
-    added: 2026-04-14
-    last_crawled: null
-
-  - slug: sandbox
-    title: "Agent Sandboxing"
-    crawl_policy: laterals
-    priority: medium
-    search_hints:
-      - "AI agent sandboxing isolation 2026"
-      - "code execution sandbox gVisor MicroVM WASM"
-    wiki_pages:
-      - concepts/sandbox
-      - comparisons/agent-sandboxing
-    notes: "横方向: capability-based security, seccomp, Firecracker等"
-    added: 2026-04-14
-    last_crawled: null
-
-  # === パラダイム・思想 ===
-
-  - slug: neurosymbolic-ai
-    title: "Neurosymbolic AI"
-    crawl_policy: prerequisites
-    priority: medium
-    search_hints:
-      - "neurosymbolic AI hybrid reasoning 2026"
-      - "neural symbolic integration"
-    wiki_pages:
-      - concepts/neurosymbolic-ai
-      - concepts/reasoning-models
-    notes: "neuromorphic + symbolic reasoningの統合アプローチ。関連: reasoning models (o1-style, CoT, PRM)はニューラル単体だが異なる系統。前提: knowledge graphs, formal verification, theorem proving等"
-    added: 2026-04-14
-    last_crawled: null
-
-  # === 監視のみ ===
-
-  - slug: ai-bubble-economics
-    title: "AI Bubble Economics"
-    crawl_policy: monitor
-    priority: low
-    search_hints:
-      - "AI bubble economics 2026"
-      - "AI infrastructure oversupply critique"
-      - "Ed Zitron AI bubble"
-    wiki_pages:
-      - concepts/ai-bubble-economics
-    notes: "Ed Zitron等の批判的視点。trending監視のみ"
-    added: 2026-04-14
-    last_crawled: null
-
-  - slug: ai-safety
-    title: "AI Safety & Alignment"
-    crawl_policy: monitor
-    priority: low
-    search_hints:
-      - "AI safety alignment 2026"
-      - "LLM reward hacking deception"
-      - "AI agent risk assessment"
-    wiki_pages:
-      - concepts/ai-agent-traps
-      - concepts/ai-autonomy-debate
-    notes: "関心はあるが積極的に取り込むほどではない"
-    added: 2026-04-14
-    last_crawled: null
+- slug: context-engineering
+  title: Context Engineering
+  crawl_policy: prerequisites
+  priority: high
+  search_hints:
+  - context engineering LLM techniques
+  - context window optimization strategies
+  wiki_pages:
+  - concepts/context-engineering
+  - concepts/ai-agent-engineering/context-engineering
+  - concepts/ai-agent-engineering/context-compaction
+  notes: Karpathy提唱。前提としてtoken economics, attention mechanism等が必要か
+  added: 2026-04-14
+  last_crawled: '2026-04-18'
+- slug: agentic-engineering
+  title: Agentic Engineering
+  crawl_policy: laterals
+  priority: high
+  search_hints:
+  - agentic engineering patterns 2026
+  - AI coding agent workflows
+  wiki_pages:
+  - concepts/agentic-engineering/_index
+  notes: 22ページの大クラスタ。横方向の関連パラダイムを探索
+  added: 2026-04-14
+  last_crawled: '2026-04-18'
+- slug: ai-agent-engineering
+  title: AI Agent Engineering (Anthropic/OpenAI)
+  crawl_policy: deepdive
+  priority: high
+  search_hints:
+  - building AI agents 2026 best practices
+  - agent engineering patterns Anthropic OpenAI
+  wiki_pages:
+  - concepts/ai-agent-engineering/_index
+  notes: 19ページ。最新事例・ベストプラクティスの深掘り
+  added: 2026-04-14
+  last_crawled: null
+- slug: harness-engineering
+  title: Harness Engineering
+  crawl_policy: prerequisites
+  priority: high
+  search_hints:
+  - harness engineering agents runtime
+  - agent harness design patterns
+  wiki_pages:
+  - concepts/harness-engineering
+  - concepts/ai-agent-engineering/harness-design-long-running-apps
+  - concepts/ai-agent-engineering/effective-harnesses-for-long-running-agents
+  notes: Ryan Lopopolo提唱。前提としてruntime isolation, process supervision等
+  added: 2026-04-14
+  last_crawled: null
+- slug: agent-team-swarm
+  title: Agent Team / Swarm
+  crawl_policy: laterals
+  priority: high
+  search_hints:
+  - multi-agent swarm orchestration 2026
+  - agent team coordination patterns
+  wiki_pages:
+  - concepts/agent-team-swarm/_index
+  - concepts/anthropic-managed-agents
+  - concepts/openai-symphony
+  notes: '横方向: 分散システム理論との接点、consensus protocol等'
+  added: 2026-04-14
+  last_crawled: null
+- slug: ai-evals
+  title: AI Evaluations
+  crawl_policy: laterals
+  priority: high
+  search_hints:
+  - AI evaluation frameworks 2026
+  - LLM evals best practices
+  wiki_pages:
+  - concepts/ai-evals
+  - concepts/evaluation-flywheel
+  - comparisons/eval-tools-comparison
+  notes: '横方向: LLM-as-judge, offline evaluation, regression testing等'
+  added: 2026-04-14
+  last_crawled: null
+- slug: dspy
+  title: DSPy / Declarative LM Programming
+  crawl_policy: deepdive
+  priority: high
+  search_hints:
+  - DSPy declarative language model programming 2026
+  - Omar Khattab DSPy GEPA RLM
+  wiki_pages:
+  - concepts/dspy
+  notes: 急速に進化中。GEPA, RLM等の最新動向を追跡
+  added: 2026-04-14
+  last_crawled: null
+- slug: local-llm
+  title: Local LLM Inference
+  crawl_policy: deepdive
+  priority: medium
+  search_hints:
+  - local LLM inference 2026 llama.cpp
+  - GGUF quantization local deployment
+  wiki_pages:
+  - concepts/local-llm/_index
+  - concepts/local-llm/gguf
+  - concepts/local-llm/llama-cpp
+  - concepts/local-llm/vllm
+  notes: '階層化済み: GGUF, llama.cpp, vLLMの各サブページ。最新ベンチマーク、新モデル対応を追跡'
+  added: 2026-04-14
+  last_crawled: '2026-04-18'
+- slug: ai-memory-systems
+  title: AI Memory Systems
+  crawl_policy: prerequisites
+  priority: medium
+  search_hints:
+  - AI agent memory architecture design
+  - LLM memory management patterns
+  wiki_pages:
+  - concepts/ai-memory-systems
+  - concepts/memory-systems-design-patterns
+  - concepts/claude-memory
+  notes: '前提: episodic vs semantic memory, vector DB architectures等'
+  added: 2026-04-14
+  last_crawled: null
+- slug: death-of-browser
+  title: Death of Browser
+  crawl_policy: deepdive
+  priority: medium
+  search_hints:
+  - agentic browsing paradigm shift 2026
+  - browser automation AI agents WebMCP
+  wiki_pages:
+  - concepts/death-of-browser
+  notes: WebMCP, agentic browsing の最新動向
+  added: 2026-04-14
+  last_crawled: null
+- slug: sandbox
+  title: Agent Sandboxing
+  crawl_policy: laterals
+  priority: medium
+  search_hints:
+  - AI agent sandboxing isolation 2026
+  - code execution sandbox gVisor MicroVM WASM
+  wiki_pages:
+  - concepts/sandbox
+  - comparisons/agent-sandboxing
+  notes: '横方向: capability-based security, seccomp, Firecracker等'
+  added: 2026-04-14
+  last_crawled: null
+- slug: neurosymbolic-ai
+  title: Neurosymbolic AI
+  crawl_policy: prerequisites
+  priority: medium
+  search_hints:
+  - neurosymbolic AI hybrid reasoning 2026
+  - neural symbolic integration
+  wiki_pages:
+  - concepts/neurosymbolic-ai
+  - concepts/reasoning-models
+  notes: 'neuromorphic + symbolic reasoningの統合アプローチ。関連: reasoning models (o1-style,
+    CoT, PRM)はニューラル単体だが異なる系統。前提: knowledge graphs, formal verification, theorem proving等'
+  added: 2026-04-14
+  last_crawled: null
+- slug: ai-bubble-economics
+  title: AI Bubble Economics
+  crawl_policy: monitor
+  priority: low
+  search_hints:
+  - AI bubble economics 2026
+  - AI infrastructure oversupply critique
+  - Ed Zitron AI bubble
+  wiki_pages:
+  - concepts/ai-bubble-economics
+  notes: Ed Zitron等の批判的視点。trending監視のみ
+  added: 2026-04-14
+  last_crawled: null
+- slug: ai-safety
+  title: AI Safety & Alignment
+  crawl_policy: monitor
+  priority: low
+  search_hints:
+  - AI safety alignment 2026
+  - LLM reward hacking deception
+  - AI agent risk assessment
+  wiki_pages:
+  - concepts/ai-agent-traps
+  - concepts/ai-autonomy-debate
+  notes: 関心はあるが積極的に取り込むほどではない
+  added: 2026-04-14
+  last_crawled: null

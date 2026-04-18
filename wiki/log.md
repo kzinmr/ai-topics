@@ -1,3 +1,24 @@
+## 2026-04-18 — Active Crawl: Context Engineering & Local LLM
+
+### Prerequisites Crawl: context-engineering → token-economics, attention-mechanism-variants, context-compression
+- **concepts/token-economics.md** — LLM inference cost analysis, 4 optimization layers, API vs self-host economics, real-world case study ($39K → $16K/month)
+- **concepts/attention-mechanism-variants.md** — MHA, GQA, MLA, SWA, DSA, Gated Attention, Hybrid architectures. Architecture selection matrix.
+- **concepts/context-compression.md** — Summarization, retrieval, structural compression techniques. Compression ratio vs quality trade-offs.
+
+### Laterals Crawl: agentic-engineering → speculative-decoding
+- **concepts/speculative-decoding.md** — Draft-and-verify inference acceleration, EAGLE-3, self-speculative decoding. 2-4x speedup with zero quality loss.
+
+### Updated Existing Pages
+- **concepts/context-engineering.md** — Added Prerequisites & Supporting Concepts section with cross-references to new pages
+
+### Raw Sources Added
+- raw/articles/crawl-2026-04-18-token-economics.md (Introl inference economics)
+- raw/articles/crawl-2026-04-18-nvidia-speculative-decoding.md (NVIDIA blog)
+- raw/articles/crawl-2026-04-18-self-speculative-decoding-zhang.md (arXiv paper)
+- raw/articles/crawl-2026-04-18-context-compression.md (LangChain patterns)
+
+---
+
 ## 2026-04-18 — Elvis Sun Entity Page Added
 
 - **entities/elvis-sun.md** — 4x founder, ex-Google/Firebase. Medialyst.ai, PressPulse.ai ($100k+ rev), Solar Flare PR. Context Lake system, vibe-launching, AI-powered growth hacking.

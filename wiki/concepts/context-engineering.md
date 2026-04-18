@@ -99,7 +99,22 @@ def build_context(query, documents, max_tokens):
 - **Static Context**: 会話の進行に伴うコンテキスト更新を怠る
 - **Prompt-only Focus**: プロンプトのみを最適化し、コンテキスト全体を軽視する
 
-## Related
+
+## Prerequisites & Supporting Concepts
+
+Effective context engineering requires understanding several foundational concepts:
+
+- **[[token-economics]]** — Cost per million tokens optimization determines how much context you can afford
+- **[[attention-mechanism-variants]]** — Different attention mechanisms affect context window efficiency (KV cache, compute scaling)
+- **[[context-compression]]** — Techniques for reducing context size while preserving information
+- **[[context-window-management]]** — Organizing context for maximum effectiveness
+
+
+- [[token-economics]] — Inference cost analysis
+- [[attention-mechanism-variants]] — KV cache and attention efficiency
+- [[context-compression]] — Reducing context window size
+- [[concepts/ai-agent-engineering/context-compaction]] — Agent-specific compaction techniques
+- [[dspy]] — Declarative LM programming for automated context optimization
 - [[concepts/context-window-management]] — Context Window Management
 - [[concepts/context-compaction]] — Context Compaction
 - [[concepts/long-context-coding-agents]] — Long-Context via Coding Agents
