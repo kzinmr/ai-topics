@@ -23,6 +23,15 @@ accounts:
   - ml-engineering
   - open-source
   notes: ML engineering, open-source AI community
+- handle: '@MilksandMatcha'
+  name: Sarah Chieng
+  topics:
+  - ai
+  - coding-agents
+  - multi-agent
+  - education
+  - back-of-house
+  notes: 'AI agent educator. Co-authored Back of House multi-agent patterns with @0xSero. Critiqued single-agent ceiling and sloperator anti-pattern.'
 - handle: '@teknium'
   name: Teknium
   topics:
@@ -641,3 +650,12 @@ accounts:
     Currently at Antithesis on Hegel. ~90% of code AI-drafted (Claude Code) but carefully
     reviewed. Writes on software correctness, LLM evals, probabilistic programming.
   github: DRMacIver
+- handle: '@teortaxesTex'
+  name: TeortaxesTex
+  topics:
+  - ai
+  - china-ai-ecosystem
+  - ai-geopolitics
+  - ai-bubble-economics
+  - open-source-models
+  notes: DeepSeek advocate ('#1 stan, 2023–Deep Time'). Prolific X commentator bridging Chinese and Western AI discourse. Produces 'Teortaxes Rant Collection' on geopolitics, AI infrastructure economics, and the epistemic gap between agency-driven builders (Jensen Huang) and information-driven analysts (Dwarkesh Patel). ~59K followers, ~107K tweets since Sep 2010.
