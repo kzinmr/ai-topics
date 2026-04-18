@@ -127,6 +127,18 @@ In "Notes on Space GPUs" (Feb 2026), Patel explored orbital datacenter economics
 - Starship launches at 150 metric tons to LEO: ~10 MW per launch, ~100 launches for 1 GW of compute.
 - *"Even if orbital data centers don't make sense yet, in the long run the singularity is clearly moving into space."*
 
+## TeortaxesTex's Analysis of Dwarkesh (April 2026)
+
+Following the Jensen Huang interview, writer [[entities/teortaxestex]] published an extensive analysis of Dwarkesh's methodology and worldview:
+
+**Praise**: "A great podcaster, unnaturally so. Clearly he has studied his predecessors – chiefly Friedman – and engineered a methodology doing away with their frustrating defects." Teortaxes acknowledges that Dwarkesh "has goaded powerful men to spell out beliefs I could only conjecture they held" and provides "real value."
+
+**Critique**: Dwarkesh "sometimes overdoes it" with "exaggerated naivete in insisting on dumb first-principles solutions." Teortaxes argues that "Rationalism is a great ragebaiting tactic" — Dwarkesh's persistent requests for guests to explain basics serves as both genuine inquiry and a rhetorical device to expose unstated assumptions.
+
+**The Epistemic Gap**: Teortaxes frames Dwarkesh as an **information-driven system** — optimized for structured debate, logical consistency, and "coffee salon intelligence" — contrasted with Jensen as an **agency-driven system** (per [[concepts/causal-backbone-conjecture]]). Dwarkesh's approach "works" for extracting alpha from powerful guests, but creates friction when interviewing builders who operate from fundamentally different epistemic frameworks.
+
+**Milieu Bias**: Teortaxes notes that Dwarkesh is "somewhat biased towards shared assumptions and prejudices of his milieu – China Bad, AGI wunderwaffe etc." — reflecting the rationalist/EA community's framing rather than independent assessment.
+
 ## Key Quotes
 
 > *"I choose guests not based on whether I want to spend two hours chatting with them, but whether I would learn a lot by spending two weeks preparing."*
@@ -158,7 +170,8 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [[concepts/multi-agent-autonomy-scale]] — His vision of future AI architecture
 - [[entities/gary-marcus]] — Both critique current AI approaches from different angles
 - [[entities/anthropic]] — Frequent interview subject (Dario Amodei episodes)
-- [[entities/jensen-huang]] — Interviewed April 2026: "TPU competition, China, supply chain moat"
+- [[entities/jensen-huang]] — Interviewed April 2026: "TPU competition, China, supply chain moat"; subject of TeortaxesTex epistemic gap analysis
+- [[entities/teortaxestex]] — Published methodology analysis of Dwarkesh's interviewing approach
 - [[entities/andrej-karpathy]] — Interviewed Oct 2025: "AGI is still a decade away"
 - [[entities/ilya-sutskever]] — Interviewed Nov 2025: "Age of scaling to age of research"
 - [[entities/dario-amodei]] — Interviewed Feb 2026: "Near the end of the exponential"

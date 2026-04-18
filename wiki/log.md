@@ -986,3 +986,9 @@
 - **entities/jensen-huang.md** — Major expansion: GTC 2026 keynote details (Vera Rubin, Groq LPU, AI Layer Cake, Token Factory economics, NemoClaw/OpenClaw, Kyber/Feynman roadmap, Space One)
 - **entities/dwarkesh-patel.md** — Major expansion: "The Scaling Era" book (Stripe Press), corrected bio (born 2000, UT Austin), recent interviews (Jensen Huang, Elon Musk, Dario Amodei 2nd), "Notes on Space GPUs" analysis, podcast methodology, GMO citation
 - Updated index.md entries for both entities with comprehensive summaries
+
+### 2026-04-18 — Entity Addition: TeortaxesTex; Jensen/Dwarkesh Epistemic Analysis
+- **entities/teortaxestex.md** — NEW entity page: X/Twitter writer (@teortaxesTex), DeepSeek advocate, China/US tech analyst. "Teortaxes Rant Collection V0.1." Bridging Chinese and Western AI discourse.
+- **entities/jensen-huang.md** — Added TeortaxesTex's epistemic analysis section: "Jensen is the driver, not the car" framing, Causal Backbone lens applied to Jensen's agency-driven worldview vs. Dwarkesh's information-driven approach, "Not Being a Loser" survival epistemology
+- **entities/dwarkesh-patel.md** — Added TeortaxesTex's methodology critique: "unnaturally great podcaster" praise, rationalism-as-ragebaiting observation, milieu bias (China Bad, AGI wunderwaffe), information-driven vs agency-driven epistemic gap
+- Updated index.md with teortaxestex entry and cross-links
