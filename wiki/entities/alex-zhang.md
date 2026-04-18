@@ -24,6 +24,7 @@ related_concepts:
   - Inference-Time Scaling
   - Software 1.0→2.0→3.0
   - Karpathy Comparison (training vs inference optimization)
+  - Mismanaged Geniuses Hypothesis (MGH)
 related_papers:
   - Recursive Language Models (arXiv:2512.24601, 2025)
   - KernelBench (ICML 2025 Best Paper)
@@ -104,6 +105,22 @@ Zhang draws a parallel to Karpathy's insight about training-time vs. inference-t
 
 Both recognize that the **structure of computation** matters more than raw parameters. RLMs externalize context management into an environment that can be optimized, just as Karpathy argued for optimizing training rather than inference.
 
+### 5. The Mismanaged Geniuses Hypothesis (MGH) — April 2026
+
+Co-authored with Zhening (Zed) Li and Omar Khattab, MGH posits that **frontier language models are severely underutilized due to sub-optimal scaffolding**, not inherent model limitations.
+
+> *"AI models are already good enough for the next leap in capabilities. The bottleneck is no longer scaling model size or training data. It is how we manage, decompose, and compose existing frontier LMs."*
+
+**Key claims:**
+- Current agent scaffolds (ReAct, tool-use APIs) are brittle and force narrow reasoning patterns
+- Models can already decompose tasks correctly but lack the environment to execute decompositions
+- Learning the **composition operator** (chaining in-distribution LM calls into OOD solutions) is more efficient than scaling parameters
+- **Proof:** Qwen3-4B-Instruct + RL bootstrapping on simple tasks → 100% success on 1M context/8 needles (was ~0%)
+
+MGH extends the RLM framework into a broader industry thesis: **stop building bigger models, start building better scaffolds.**
+
+See: [[concepts/mismanaged-geniuses-hypothesis]]
+
 ## GPU MODE & Benchmarking
 
 Zhang is part of the core team running the **GPU MODE leaderboard**, which has hosted:
@@ -125,6 +142,8 @@ Evaluates LLMs on video game understanding and interaction — part of Zhang's b
 |------|-------|-------|-------|
 | 2025 | Recursive Language Models (RLMs) | arXiv:2512.24601 | Task-agnostic inference paradigm, 10M+ token context |
 | 2025 | KernelBench | ICML 2025 | Best Paper — GPU kernel generation benchmark |
+| 2026 | The Mismanaged Geniuses Hypothesis | Blog | Frontier models are underutilized; composition > scaling |
+| 2026 | Language Models will be Scaffolds | Blog | Scaffold-first philosophy for next-gen AI |
 | 2025 | VideoGameBench | — | LLM evaluation on video game tasks |
 | 2025 | Neo-1 Model | — | New model architecture |
 | 2025 | Project Popcorn | — | ML systems efficiency |

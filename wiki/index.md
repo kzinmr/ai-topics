@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-18 (Added token-economics, attention-mechanism-variants, speculative-decoding, context-compression) (Added Elvis Sun entity page, @elvissun to x-accounts, elvis.so to blogwatcher)
+Last updated: 2026-04-19 (Added Mismanaged Geniuses Hypothesis concept page, updated Alex Zhang entity) (Added token-economics, attention-mechanism-variants, speculative-decoding, context-compression)
 
 ## Entity Pages (76)
 
@@ -10,13 +10,14 @@ Last updated: 2026-04-18 (Added token-economics, attention-mechanism-variants, s
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/milksandmatcha]] — Sarah Chieng (@MilksandMatcha), AI agent educator, co-author of Back of House multi-agent patterns
 
-## Concept Pages (78)
+## Concept Pages (79)
 
 - [[concepts/openai-agents-sdk]] — OpenAI Agents SDK v0.14.0 (sandbox execution, harness/compute separation, manifests)
 - [[concepts/token-economics]] — LLM inference cost analysis, optimization layers, token economics (2026-04-18)
 - [[concepts/attention-mechanism-variants]] — Modern attention mechanisms (MHA, GQA, MLA, SWA, DSA, Hybrid) (2026-04-18)
 - [[concepts/speculative-decoding]] — Draft-and-verify inference acceleration, EAGLE-3, self-speculative decoding (2026-04-18)
 - [[concepts/context-compression]] — Context compression techniques, summarization, retrieval, structural compression (2026-04-18)
+- [[concepts/mismanaged-geniuses-hypothesis]] — Frontier LMs are underutilized due to sub-optimal scaffolding; composition > scaling (2026-04-19)
 
 ### Blog Authors (HN Popular Blogs — 84 feeds)
 

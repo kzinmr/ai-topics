@@ -1,3 +1,19 @@
+## 2026-04-19 — Mismanaged Geniuses Hypothesis (MGH) Concept Page Created
+
+### New Concept Page (1件)
+- **concepts/mismanaged-genius-hypothesis.md** — Frontier LMs are severely underutilized due to sub-optimal scaffolding. Composition > scaling. Qwen3-4B + RL bootstrapping proof. Authors: Alex Zhang, Zed Li, Omar Khattab.
+
+### Updated Existing Pages
+- **entities/alex-zhang.md** — Added MGH section (Core Ideas #5), updated publications table, added MGH to related_concepts
+- **wiki/index.md** — Added MGH to concept pages list (78 → 79), updated last_updated date
+
+### Raw Sources
+- alexzhang13.github.io/blog/2026/mgh/ — The Mismanaged Geniuses Hypothesis (April 2026)
+- alexzhang13.github.io/blog/2026/scaffold/ — Language Models will be Scaffolds (Feb 2026)
+- arXiv:2512.24601 — Recursive Language Models (Oct 2025, foundational work)
+
+---
+
 ## 2026-04-18 — Active Crawl: Context Engineering & Local LLM
 
 ### Prerequisites Crawl: context-engineering → token-economics, attention-mechanism-variants, context-compression
