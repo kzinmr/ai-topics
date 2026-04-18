@@ -1,3 +1,20 @@
+## 2026-04-17 — Search×Agent Entity Expansion: Lester Solbakken & Sheshansh Agrawal
+
+### New Entity Pages (2件)
+- **entities/lester-solbakken.md** — Hornet Founding Engineer, Vespa.ai Principal Engineer, 13yr Yahoo/Verizon Media。PhD AI/ML (NTNU)。Mutually Assured Distraction thesis。Context engineering = relevance engineering。Synthetic query generation。Verifiable feedback loops (coding agent success)。Schema-first APIs。
+- **entities/sheshansh-agrawal.md** — Contextual AI Director of Research, 元Microsoft Research (Bing Ads embeddings, 100M+ users, trillions tokens)。IIT Bombay。CER-C metric (trajectory-level efficiency)、On-policy distillation + RL for search planners、Agentic alternative to GraphRAG、BlitzRank reranker。XPERT (SIGIR 2023)、DECAF、ECLARE。
+
+### Updated Files
+- **wiki/index.md** — Information Retrieval & RAGセクションにSolbakkenとAgrawalを追加
+- **wiki/log.md** — This entry
+
+### Key Insights
+- **3軸の convergent thesis**: Turnbull (ユーザー視点: simple BM25 > thick API), Solbakken (インフラ視点: schema-first + throughput), Agrawal (アルゴリズム視点: joint tool+planner optimization + CER-C metric)。すべて「エージェントには新しい検索が必要」という結論に合流
+- **Mutually Assured Distraction** (Solbakken): better retriever + better reasoner = less reliable。信頼性-awareな統合が必要
+- **CER-C metric** (Agrawal): エージェントが1トークンあたりにどれだけ速く証拠を集めるかを測定する独自指標。single-call IR metricsでは捉えきれないtrajectory-level efficiencyを計測
+
+---
+
 ## 2026-04-17 — Daily Wiki Ingestion: LLM Training Coherence, Agentic AI + MCP, Reasoning Models Illusion, Qwen3.6-35B-A3B Quants
 
 ### New Concept Page (1件)
@@ -472,10 +489,9 @@
 - sandbox/ ディレクトリ新設
 - `wiki/index.md` にsandbox関連エントリ追加
 
-     1|## 2026-04-15 — Personal Superintelligence concept page created, Meta entity updated
-     2|
-     3|### New Concept Pages
-     4|
+---
+
+## 2026-04-15 — Personal Superintelligence concept page created, Meta entity updated
 
 ### Updated Entity Pages
 - **[[entities/meta]]** — Added Personal Superintelligence vision section (Zuckerberg philosophy), Ray-Ban AI glasses collaboration details (700万+ sold 2025, 2000-3000万 target 2026), Agentic Commerce strategy, Superintelligence Labs (Alexandr Wang, $115B-$135B capex 2026), Muse Spark context, Key People section, cross-references to personal-ai ecosystem players.
@@ -488,6 +504,9 @@
 - Connected to [[entities/shlok-khemani]]: Filesystem-first personal AI memory
 - Connected to [[entities/sero]]: Freedom Tech / local AI infrastructure
 - Connected to [[entities/mario-zechner]]: Minimal agent on consumer hardware
+
+---
+
 ## 2026-04-16 — Samuel Colvin Entity Page Created (L3 depth)
 
 ### New Entity Pages
