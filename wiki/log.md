@@ -981,3 +981,8 @@
 - https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era
 - https://organizationalphysics.com/2026/02/15/your-ai-strategy-isnt-failing-your-org-design-is/
 - https://fourweekmba.com/solopreneurs/
+
+### 2026-04-18 — Entity Enrichment: Jensen Huang & Dwarkesh Patel
+- **entities/jensen-huang.md** — Major expansion: GTC 2026 keynote details (Vera Rubin, Groq LPU, AI Layer Cake, Token Factory economics, NemoClaw/OpenClaw, Kyber/Feynman roadmap, Space One)
+- **entities/dwarkesh-patel.md** — Major expansion: "The Scaling Era" book (Stripe Press), corrected bio (born 2000, UT Austin), recent interviews (Jensen Huang, Elon Musk, Dario Amodei 2nd), "Notes on Space GPUs" analysis, podcast methodology, GMO citation
+- Updated index.md entries for both entities with comprehensive summaries
