@@ -2,15 +2,15 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-18 (Added Causal Backbone Conjecture concept, updated Multi-Agent Coding Patterns concept, Session Hierarchy Management concept, added @MilksandMatcha to X account tracking)
+Last updated: 2026-04-18 (Added Elvis Sun entity page, @elvissun to x-accounts, elvis.so to blogwatcher)
 
-## Entity Pages (74)
+## Entity Pages (76)
 
 - [[entities/openai]] — OpenAI (GPT, ChatGPT, Codex, Agents SDK, Symphony)
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/milksandmatcha]] — Sarah Chieng (@MilksandMatcha), AI agent educator, co-author of Back of House multi-agent patterns
 
-## Concept Pages (73)
+## Concept Pages (74)
 
 - [[concepts/openai-agents-sdk]] — OpenAI Agents SDK v0.14.0 (sandbox execution, harness/compute separation, manifests)
 
@@ -304,6 +304,8 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 - [[concepts/helium-crisis-2026]] — Helium Crisis 2026
 
+- [[concepts/skill-architecture-patterns]] — Skill self-improvement vs governed approaches (Hermes vs OpenClaw)
+
 ### Web & Technology
 
 - [[concepts/death-of-browser]] — Death of the Browser
@@ -328,7 +330,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder & Super IC (Reddit/FourWeekMBA: MVP commoditization, FrontPage parallel, $10M→$100M path)
 - [[concepts/ai-organization/ai-org-context-as-moat]] — Proprietary Context (McKinsey 5 Pillars, M-Shaped Supervisor, Diamond Org Chart, Agentic Governance)
 
-## Comparison Pages (8)
+## Comparison Pages (9)
 
 - [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks (LangGraph vs CrewAI vs AutoGen vs etc.)
 - [[comparisons/agent-sandboxing]] — Agent Sandboxing (Containers vs gVisor vs MicroVMs vs WASM vs Zeroboot)
@@ -336,6 +338,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[comparisons/eval-tools-comparison]] — AI Eval Tool Comparison (LangSmith vs Braintrust vs Phoenix vs Inspect AI)
 - [[comparisons/evals-skills]] — Evals Skills for Coding Agents
 - [[comparisons/frontier-models-2026-04]] — Frontier Models Comparison — April 2026
+- [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture (skill management, product positioning, governance)
 - [[comparisons/llm-integration-patterns]] — LLM Integration Patterns: Comparative Taxonomy (Orchestration vs DSPy vs RLMs vs Agentic vs GEPA)
 - [[comparisons/local-llm-models-april-2026]] — Local LLM Models Comparison — April 2026 (gpt-oss, GLM-4.5, Qwen 3, specialized edge models)
 
@@ -443,7 +446,8 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 - [[entities/peter-steinberger|Peter Steinberger]] (@steipete) — OpenClaw creator, former PSPDFKit CEO. AI-native solo builder shipping 600+ commits/day via 5-10 parallel agents. Joined OpenAI Feb 2026. "Agent-first design" advocate, "Ship beats perfect" philosophy.
 - [[entities/tailcalled]] — Creator of the Causal Backbone Conjecture
-- [[entities/teortaxestex]] — Writer, China/US tech analyst. Steelmanned Jensen vs. Dwarkesh epistemic gap using Causal Backbone framework — LessWrong researcher. Causal Backbone Conjecture author. Selection theorems for agent-like structures under resource constraints. 8,099 karma, 11yr tenure.
+- [[entities/teortaxestex]] — Writer, China/US tech analyst. Steelmanned Jensen vs. Dwarkesh epistemic gap using Causal Backbone framework — LessWrong researcher. Causal Backbone Conjecture author. Selection theorems for agent-like structures under resource constraints. 8,099 karma, 11yr tenure. L3 depth.
+- [[entities/elvis]] — AI agent architecture analyst. 9-hour Hermes vs OpenClaw source code comparison. Skill Explosion Problem identification. Rails vs Linux/Kubernetes product positioning framework.
 - [[entities/teknium|Ryan (Teknium)]] (@teknium1) — Nous Research Co-founder & Head of Post-Training. Hermes model family (3/4) and Hermes Agent (68K+ stars) architect. Post-training, synthetic data, RL environments, self-improving agents. "The agent that grows with you."
 - [[entities/hermes-agent]] — Hermes Agent (NousResearch) — Integrated agent execution platform with AIAgent core, prompt assembly, tool registry, gateway, plugin/memory provider system. 68K+ GitHub stars.
 - [[entities/dax-raad|Dax Raad]] (@thdxr) — Anomaly co-founder. Creator of OpenCode (135k+ GitHub stars, 1.5M+ MAUs) and SST (25k+ stars). Blunt critic of AI productivity hype; advocates for local-first, model-agnostic, open-source developer tools.
@@ -458,6 +462,7 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 - [[entities/omar-khattab|Omar Khattab]] (@lateinteraction) — MIT EECS Assistant Professor. Creator of ColBERT (late interaction), DSPy (declarative LM programming), GEPA (genetic prompt optimization), co-author of RLMs. "LMs as modules in programs, not end products."
 - [[entities/alex-zhang|Alex L. Zhang]] (@a1zhang) — MIT CSAIL PhD (Khattab, Kraska). Recursive Language Models (RLMs). "Language models will be scaffolds." GPU MODE, KernelBench (ICML 2025 Best Paper). L3: RLM context-centric decomposition, Scaffold philosophy, Software 1.0→2.0→3.0 paradigm, Karpathy comparison (training vs inference optimization).
+- [[entities/elvis-sun]] — 4x founder, ex-Google/Firebase. Medialyst.ai, PressPulse.ai ($100k+ rev), Solar Flare PR. AI-powered growth hacking, Context Lake system, vibe-launching.
 - [[entities/shunyu-yao|Shunyu Yao]] (@shunyuyao12) — OpenAI Research Scientist (CUA). ReAct, Tree of Thoughts, Reflexion, SWE-bench/SWE-agent, tau-bench. "The Second Half: RL finally generalizes, evaluation > training, problem-defining > problem-solving." L3: Agent-Computer Interfaces, reasoning as action in RL space, trained scaffolds paradigm.
 
 ### Coding Agents & Swarm Orchestration

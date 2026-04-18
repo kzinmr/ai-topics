@@ -77,6 +77,28 @@ Current projects demonstrate a systematic approach to building **MCP-first devel
 | **tokentally** | Tiny lib for LLM token + cost math | — |
 | **Terminator MCP** | "I'll be back... with your terminal output!" | — |
 
+## OpenClaw Architecture & Skill Governance
+
+### Five-Tier Skill Precedence Model
+OpenClaw implements a strict hierarchical skill loading system:
+1. **Workspace skills** (highest priority)
+2. **User global skills**
+3. **Managed skills**
+4. **Bundled skills** (baseline only)
+5. **Extra skills** (lowest priority)
+
+This ensures deterministic behavior: "When something breaks at 3am, you can trace it in one grep instead of guessing which skill the agent triggered."
+
+### Anti-Bloat Policy
+From OpenClaw VISION.md: "Bundled skills are baseline only. New skills go to ClawHub first. Core additions should be rare and require a strong product or security reason."
+
+**Discovery bounds:** byte caps, candidate caps, symlink rejection, verified file opens only. Eligibility checks are separate from discovery — different agents can see different subsets of skills.
+
+### Product Philosophy: Primitives Over Defaults
+> "You're not getting defaults, you're getting guarantees. OpenClaw does exactly what you told it to do, nothing more, nothing less. Boring in the best way." — elvis analysis
+
+Steinberger's approach prioritizes **legibility and scope control** over autonomous self-improvement. The governance model means the skill corpus doesn't rot over time because nothing gets added without user intention.
+
 ## The Anthropic-OpenClaw Conflict (April 2026)
 
 Steinberger became the public face of the **open-source vs. platform risk** debate when Anthropic blocked third-party tools (including OpenClaw) from Claude subscriptions:
@@ -121,6 +143,7 @@ Steinberger maintains a live blurb at **whatmodelispeterusing.com** — tracking
 - [[concepts/anthropic-openclaw-conflict]] — The April 2026 policy dispute
 - [[concepts/agentic-engineering]] — AI-assisted software development patterns
 - [[concepts/mcp-model-context-protocol]] — The protocol his tooling ecosystem is built on
+- [[concepts/skill-architecture-patterns]] — Skill governance model (OpenClaw's primitives-first approach)
 - [[entities/boris-cherny]] — Anthropic's Head of Claude Code
 - [[entities/simon-willison]] — Fellow opinion leader on agentic engineering
 - [[concepts/vibe-coding]] — The coding approach Steinberger evolved into "AI-native development"

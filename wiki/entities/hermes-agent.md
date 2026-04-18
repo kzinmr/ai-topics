@@ -337,6 +337,26 @@ Independent provider/model/base_url for:
 6. `gateway/run.py` — Gateway orchestration
 7. `gateway/session.py` — Session management
 
+## Skill Self-Improvement Architecture
+
+Hermes Agent employs an **autonomous skill creation loop** that distinguishes it from other agent frameworks:
+
+### Mechanism
+- **Prompt Nudge:** System prompt instructs the agent to consider saving a skill every N tool calls
+- **Background Review:** After task completion, automated scan identifies skill-worthy patterns
+- **Pre-Compression Flush:** Durable knowledge saved to disk before context compression triggers
+- **Blunt Dedup Rule:** If an existing skill covers the pattern, patch it in place. Only create new skills if nothing matches.
+
+### Empirical Results
+- Ships with **123 bundled SKILL.md files** covering GitHub PR workflows, Obsidian, Google Workspace, Linear, Notion, Typefully, Perplexity, deep research, and more
+- Agent creates novel skills autonomously (e.g., `extract-social-testimonial` skill created without developer prompting)
+- Tool Gateway integration: One subscription unlocks 300+ models, web scraping, browser automation, image generation, cloud terminal, TTS
+
+### Known Challenge: Skill Explosion Problem
+Analysis by elvis (9-hour source code study, April 2026) identified a long-tail failure mode: the agent creates adjacent redundant skills faster than it consolidates them. Example: three separate skills for "image + local filesystem + model can see it" emerged independently. This is tracked as a product prioritization issue — expected resolution involves invocation metrics-based consolidation and stronger creation-time deduplication.
+
+See [[concepts/skill-architecture-patterns]] for detailed comparison with OpenClaw's governance model.
+
 ## Related Pages
 
 - [[teknium]] — Hermes Agent creator, Nous Research co-founder
@@ -344,6 +364,7 @@ Independent provider/model/base_url for:
 - [[concepts/claude-memory]] — File-based memory architecture (comparable design)
 - [[concepts/harness-engineering]] — Harness Engineering framework (related orchestration concepts)
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware (complementary memory layer concepts)
+- [[concepts/skill-architecture-patterns]] — Skill self-improvement vs governed approaches (Hermes vs OpenClaw)
 
 ## Sources
 
