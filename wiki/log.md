@@ -1,3 +1,32 @@
+## 2026-04-19 — OpenClaw Concept Hierarchy Consolidation
+
+### New Concept Pages (concepts/openclaw/ 階層)
+- **concepts/openclaw/_index.md** — OpenClawコンセプト集約ナビゲーションハブ（status: draft → active）
+- **concepts/openclaw/philosophy.md** — Primitives First哲学（既存ページを階層内へ移動）
+- **concepts/openclaw/five-tier-precedence.md** — Five-Tier Skill Precedence Model（既存ページを階層内へ移動）
+- **concepts/openclaw/ecosystem-tools.md** — OpenClaw Ecosystem Tools（既存ページを階層内へ移動）
+- **concepts/openclaw/architecture-comparison.md** — OpenClaw vs Hermes Architecture Comparison（新規作成。Skill Explosion Problem, Product Positioning Framework）
+- **concepts/openclaw/anthropic-conflict.md** — Anthropic-OpenClaw Conflict（既存ページを階層内へ移動）
+
+### Updated Existing Pages
+- **wiki/index.md** — Added "OpenClaw Ecosystem" section with full subpage hierarchy tree
+- **wiki/log.md** — This entry
+
+### Key Concepts Consolidated
+- **Product Positioning Framework:** カテゴリ定義者のボードで戦うな（nanoclaw等が失敗）、新しいゲームを作れ（Hermesの勝ち手）
+- **Skill Explosion Problem:** Hermesのself-authoringが抱える重複スキル問題
+- **Five-Tier Precedence:** 決定論的スキル優先度（grep一発で追跡可能）
+- **Claw Tax Economics:** OpenClaw $109.55/日 vs 一般開発者 $6/日（18xギャップ）
+- **AGENTS.md Pattern:** Explicit > Implicit（ツール起動精度の最適化）
+
+### Sources
+- elvis analysis thread (April 2026) — 9-hour side-by-side source code study
+- OpenClaw VISION.md
+- Anthropic subscription policy changes (April 2026)
+- Computerworld, TechCrunch, Business Insider coverage
+
+---
+
 ## 2026-04-19 — Elvis Sun Entity Enrichment (elvis.so full crawl)
 
 ### Updated Entity Page

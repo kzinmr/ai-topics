@@ -252,6 +252,18 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[concepts/scaling-without-slop]] — Scaling without Slop
 - [[concepts/world-models-science]] — World Models for Scientific Discovery
 
+### OpenClaw Ecosystem
+
+- [[concepts/openclaw/_index]] — OpenClawコンセプト集約（哲学、設計パターン、エコシステム、比較分析）
+  - [[concepts/openclaw/philosophy]] — Primitives First哲学（Explicit > Implicit, Guarantees > Defaults, Legibility > Autonomy）
+  - [[concepts/openclaw/five-tier-precedence]] — Five-Tier Skill Precedence Model（決定論的スキル優先度）
+  - [[concepts/openclaw/architecture-comparison]] — OpenClaw vs Hermes Architecture Comparison（Skill Explosion Problem, Product Positioning Framework）
+  - [[concepts/openclaw/anthropic-conflict]] — Anthropic-OpenClaw Conflict（2026年4月サブスクリプション排除、「Claw Tax」経済学）
+  - [[concepts/openclaw/ecosystem-tools]] — OpenClaw Ecosystem Tools（ClawHub, mcporter, Peekaboo, gogcli, CodexBar）
+- [[comparisons/hermes-vs-openclaw-architecture]] — 詳細なHermes vs OpenClaw比較
+- [[concepts/skill-architecture-patterns]] — Self-Authored vs Governedスキル管理パターン
+- [[concepts/anthropic-openclaw-conflict]] — Anthropic-OpenClaw Conflict（元ページ、サブページへ統合済み）
+
 ### Claude Agent SDK & Managed Agents
 - [[concepts/claude-agent-sdk-sre-patterns]] — Claude Agent SDK SRE Agent Pattern (MCP, safety guardrails, subprocess)
 - [[concepts/managed-agents-sre-incident-response]] — Managed Agents SRE Incident Response (Webhook, HITL, Skills)
