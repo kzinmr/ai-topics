@@ -1,3 +1,23 @@
+## 2026-04-18 — Causal Backbone Conjecture (tailcalled)
+
+### New Concept Page (1件)
+- **concepts/causal-backbone-conjecture.md** — The Causal Backbone Conjecture by tailcalled (LessWrong, 2024-08-17). Resource-constrained selection theorem for agent-like structures. Argues against exhaustive world modeling in favor of sparse, high-leverage node tracking. Proposes that causal influence follows long-tailed distribution — few entities dominate pathways that matter.
+
+### Raw Article Saved
+- **raw/articles/tailcalled-causal-backbone-conjecture-2024.md** — Original LessWrong post archived
+
+### Updated Files
+- **wiki/index.md** — Added Causal Backbone Conjecture to AI Safety & Alignment section
+- **wiki/log.md** — This entry
+
+### Key Insights
+- **Resource constraints drive agent emergence**: Unlike task-richness theories, the conjecture shows agent-like structures emerge from finite resource competition
+- **Sparse modeling > exhaustive simulation**: Only backbone segments (high-resource flows) need accurate modeling; rest is noise
+- **Distribution shifts are existential**: Entities anchored to outdated resource distributions face extinction without adaptive capacity
+- **AI architecture implications**: Suggests modular, backbone-segment specialist designs over monolithic world models
+
+---
+
 ## 2026-04-17 — Search×Agent Entity Expansion: Lester Solbakken & Sheshansh Agrawal
 
 ### New Entity Pages (2件)

@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-18 (Added Multi-Agent Coding Patterns concept, Session Hierarchy Management concept, added @MilksandMatcha to X account tracking)
+Last updated: 2026-04-18 (Added Causal Backbone Conjecture concept, updated Multi-Agent Coding Patterns concept, Session Hierarchy Management concept, added @MilksandMatcha to X account tracking)
 
 ## Entity Pages (74)
 
@@ -403,6 +403,8 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 ### AI Safety & Alignment
 
+- [[concepts/causal-backbone-conjecture]] — Causal Backbone Conjecture (tailcalled, 2024): resource-constrained selection theorem for agent-like structures, sparse high-leverage modeling
+
 - [[entities/gary-marcus|Gary Marcus]] — AI critic, NYU emeritus. Skeptical of pure scaling, advocates hybrid neuro-symbolic approaches
 
 ### AI Infrastructure & Open Source
@@ -440,6 +442,7 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 ### AI Agent Platforms & Developer Tools
 
 - [[entities/peter-steinberger|Peter Steinberger]] (@steipete) — OpenClaw creator, former PSPDFKit CEO. AI-native solo builder shipping 600+ commits/day via 5-10 parallel agents. Joined OpenAI Feb 2026. "Agent-first design" advocate, "Ship beats perfect" philosophy.
+- [[entities/tailcalled]] — LessWrong researcher. Causal Backbone Conjecture author. Selection theorems for agent-like structures under resource constraints. 8,099 karma, 11yr tenure.
 - [[entities/teknium|Ryan (Teknium)]] (@teknium1) — Nous Research Co-founder & Head of Post-Training. Hermes model family (3/4) and Hermes Agent (68K+ stars) architect. Post-training, synthetic data, RL environments, self-improving agents. "The agent that grows with you."
 - [[entities/hermes-agent]] — Hermes Agent (NousResearch) — Integrated agent execution platform with AIAgent core, prompt assembly, tool registry, gateway, plugin/memory provider system. 68K+ GitHub stars.
 - [[entities/dax-raad|Dax Raad]] (@thdxr) — Anomaly co-founder. Creator of OpenCode (135k+ GitHub stars, 1.5M+ MAUs) and SST (25k+ stars). Blunt critic of AI productivity hype; advocates for local-first, model-agnostic, open-source developer tools.
