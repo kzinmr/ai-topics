@@ -467,7 +467,7 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 - [[entities/omar-khattab|Omar Khattab]] (@lateinteraction) — MIT EECS Assistant Professor. Creator of ColBERT (late interaction), DSPy (declarative LM programming), GEPA (genetic prompt optimization), co-author of RLMs. "LMs as modules in programs, not end products."
 - [[entities/alex-zhang|Alex L. Zhang]] (@a1zhang) — MIT CSAIL PhD (Khattab, Kraska). Recursive Language Models (RLMs). "Language models will be scaffolds." GPU MODE, KernelBench (ICML 2025 Best Paper). L3: RLM context-centric decomposition, Scaffold philosophy, Software 1.0→2.0→3.0 paradigm, Karpathy comparison (training vs inference optimization).
-- [[entities/elvis-sun]] — 4x founder, ex-Google/Firebase. Medialyst.ai, PressPulse.ai ($100k+ rev), Solar Flare PR. AI-powered growth hacking, Context Lake system, vibe-launching.
+- [[entities/elvis-sun]] — 4x founder, ex-Google/Firebase (8yr). Medialyst.ai, PressPulse.ai, Solar Flare PR. Context Lake (Obsidian+Claude Code), Vibe-Launching, Attention Flywheel, Newsjacking, AI cold email systems. Enriched from 13+ blog posts.
 - [[entities/shunyu-yao|Shunyu Yao]] (@shunyuyao12) — OpenAI Research Scientist (CUA). ReAct, Tree of Thoughts, Reflexion, SWE-bench/SWE-agent, tau-bench. "The Second Half: RL finally generalizes, evaluation > training, problem-defining > problem-solving." L3: Agent-Computer Interfaces, reasoning as action in RL space, trained scaffolds paradigm.
 
 ### Coding Agents & Swarm Orchestration

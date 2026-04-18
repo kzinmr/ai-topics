@@ -1,3 +1,23 @@
+## 2026-04-19 — Elvis Sun Entity Enrichment (elvis.so full crawl)
+
+### Updated Entity Page
+- **entities/elvis-sun.md** — Enriched from skeleton → full. Added 13+ blog posts from elvis.so: Vibe-Launching framework, Attention Flywheel, Newsjacking psychology, AI cold email systems, Context Lake architecture, Bootstrapping lessons, Platform risk warnings. Updated status: skeleton → enriched.
+
+### Key Frameworks Extracted
+- **Vibe-Launching:** Real-time iteration during viral moments (opposite of code freeze). ismypitchshit.com case study: VC > 1.0 through engineered shareability
+- **Attention Flywheel:** Cross-channel amplification (X → Reddit → PR → Warm DMs)
+- **Newsjacking:** 5 psychological triggers for viral content (Polarizing Promise, Contrarian Insight, Pattern Interrupt, Social Proof Baking, Self-Deprecation)
+- **AI Cold Email System:** Clay + PhantomBuster + Apify stack, 15% reply rate at scale
+- **Context Lake:** 3-tier PKM (Raw Input → Generated Derivatives → Output Layer)
+- **Platform Risk:** "Never build your castle on someone else's land" — PressPulse lost 10% MRR when HARO shut down
+
+### Sources
+- www.elvis.so/archive (13+ articles scraped)
+- x.com/elvissun (X/Twitter profile)
+- medialyst.ai, presspulse.ai, solarflarepr.com
+
+---
+
 ## 2026-04-19 — Mismanaged Geniuses Hypothesis (MGH) Concept Page Created
 
 ### New Concept Page (1件)
