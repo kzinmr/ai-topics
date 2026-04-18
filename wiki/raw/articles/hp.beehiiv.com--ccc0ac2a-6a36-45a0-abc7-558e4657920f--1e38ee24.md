@@ -1,8 +1,8 @@
 ---
 title: "Terms of Use - beehiiv"
 url: "https://hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f"
-fetched_at: 2026-04-09T16:26:30.386735+00:00
-source_date: 2026-04-10
+fetched_at: 2026-04-18T15:52:54.209681+00:00
+source_date: 2026-04-18
 tags: [newsletter, auto-ingested]
 ---
 
