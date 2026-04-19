@@ -172,6 +172,42 @@ Ryanは同意：依存関係を内部化（1K-10K LOCでも）は実行可能。
 - 各モデルリリース（5.0 → 5.4）が能力の上限を大幅に拡大
 - "Don't bet against the model" — 急速な能力向上に堅牢なシステムを構築
 
+## 人間の役割の再定義
+
+| 従来のエンジニア | Harness Engineeringのエンジニア |
+|-----------------|-------------------------------|
+| コードを書く | 環境を設計、意図を指定、フィードバックループを構築 |
+| PRをレビュー | 成果物を検証、受け入れ基準を定義 |
+| テストを書く | テスト戦略を設計、エージェントが実装 |
+| 問題を解決 | 問題の優先順位をつけ、エージェントに委任 |
+
+> 「エージェントが苦戦する場合、それは何か足りないものがあるというシグナル：ツール、ガードレール、ドキュメントを特定し、エージェント自身に修正を書かせる」
+
+## 派生設計パターン
+
+### CLI Design for Agents
+- エージェントはGUIよりCLIを好む
+- トークン効率的なCLIは冗長な出力を抑制（失敗のみ表示）
+- エージェントフレンドリーにツールをパッチ（例：`--silent`モード、構造化出力）
+
+### Agent Self-Improvement Loop
+- 全エージェントの軌道を取り込み → 毎日エージェントループ実行 → チーム全体の学習を抽出 → リポジトリに反映
+- 「Everybody benefits from everybody else's behavior for free」
+
+### Dependency Vendoring（Brett Taylor）
+- 「ソフトウェア依存関係は消え去る — ベンダー化できる」
+- 依存関係を内部化（1K-10K LOCでも）は実行可能
+- エージェントは内部化したコードをアップストリームパッチングより低い摩擦でレビュー・変更可能
+
+## 他のAIエンジニアリングリーダーとの比較
+
+| 次元 | Harness Eng (Lopopolo) | Agentic Eng (Willison) | Loopy Era (Karpathy) |
+|------|----------------------|----------------------|---------------------|
+| 重点 | 環境設計・構造 | テスト・品質 | 自律的ループ・実験 |
+| 人間のコード | 0行 | 混合 | ほぼ0行 |
+| メトリクス | スループット | コード品質 | 実験回数 |
+| 代表プロジェクト | Symphony | Datasette, LLM | AutoResearch |
+
 ## 関連概念
 
 ### Harness配下のサブ概念
@@ -182,8 +218,8 @@ Ryanは同意：依存関係を内部化（1K-10K LOCでも）は実行可能。
 ### 横断参照
 - [[karpathy-loop]] — Karpathyの自律的実験設計ループ
 - [[skill-architecture-patterns]] — スキル自己改善 vs 管理パターン
-- [[context-compaction]] — コンテキスト圧縮メカニズム
-- [[context-anxiety]] — Claude Sonnet 4.5のコンテキスト不安現象
+- [[system-architecture/context-compaction]] — コンテキスト圧縮メカニズム
+- [[system-architecture/context-anxiety]] — Claude Sonnet 4.5のコンテキスト不安現象
 - [[mismanaged-geniuses-hypothesis]] — フロンティアLMはサブ最適なスキャフォールディングで未活用
 
 ## Sources

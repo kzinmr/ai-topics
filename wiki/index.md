@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-19 (Added Mismanaged Geniuses Hypothesis concept page, updated Alex Zhang entity) (Added token-economics, attention-mechanism-variants, speculative-decoding, context-compression)
+Last updated: 2026-04-19 (Harness Engineeringを最上位概念に再編成: agentic-workflows, system-architectureをサブセクション化)
 
 ## Entity Pages (76)
 
