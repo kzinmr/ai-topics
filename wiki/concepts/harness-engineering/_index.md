@@ -83,7 +83,6 @@ Harness Engineering（最上位: Agent = Model + Harness）
 │   └── writing-tools-for-agents.md
 │
 ├── context-engineering.md — コンテキスト最適化（Karpathy + DSPy + Anthropic統合版）
-└── _legacy-harness-engineering.md — 旧トップレベルファイル（参照用、内容は統合済み）
 ```
 
 ## Harness Engineeringの核心哲学
