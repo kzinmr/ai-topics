@@ -1,6 +1,6 @@
 ---
 name: Samuel Colvin
-aliases: [samuelcolvin, Sam Colvin]
+aliases: [samuelcolvin, sam-colvin, Sam Colvin]
 github: https://github.com/samuelcolvin
 twitter: "@samuelcolvin"
 linkedin: https://www.linkedin.com/in/samuel-colvin-5383251b8

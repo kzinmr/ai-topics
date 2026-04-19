@@ -1,6 +1,6 @@
 ---
 title: Benjamin Clavié
-aliases: [bclavie, Benjamin Clavié]
+aliases: [bclavie, Ben Clavie]
 created: 2026-04-10
 updated: 2026-04-15
 status: L3

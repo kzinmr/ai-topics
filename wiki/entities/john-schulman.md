@@ -177,8 +177,8 @@ A recurring theme in Schulman's recent work is **scalable oversight**: how can h
 ## Related
 
 - [[Pieter Abbeel]] — PhD advisor at UC Berkeley; robotics and RL
-- [[Greg Brockman]] — OpenAI co-founder; PPO collaborator on OpenAI Gym
-- [[Ilya Sutskever]] — OpenAI co-founder; co-authored "Let's Verify Step by Step"
+- [[entities/greg-brockman]] — OpenAI co-founder; co-authored OpenAI Gym (2016); collaborated on early RL work
+- [[entities/ilya-sutskever]] — OpenAI co-founder; co-authored "Let's Verify Step by Step"
 - [[Dario Amodei]] — Anthropic colleague; co-authored "Concrete Problems in AI Safety"
 - [[concepts/reinforcement-learning]] — Schulman's primary technical domain
 - [[concepts/rlhf]] — Schulman's most influential contribution to AI

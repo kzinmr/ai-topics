@@ -1,7 +1,8 @@
 ---
 title: Hillel Wayne
+aliases: [buttondown-com-hillelwayne, computer-things-newsletter]
 created: 2026-04-10
-updated: 2026-04-15
+updated: 2026-04-19
 tags:
   - person
   - blogger

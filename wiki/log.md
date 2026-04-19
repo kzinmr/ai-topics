@@ -1,3 +1,37 @@
+## 2026-04-19 — Entity Deduplication: Merged Duplicate Person Pages
+
+### Merged Duplicates
+- **simonw.md → simon-willison.md**: Deleted skeleton duplicate (simon-willison.md already L3 with `aliases: [simonw]`)
+- **buttondown-com-hillelwayne.md → hillel-wayne.md**: Deleted newsletter-domain duplicate (hillel-wayne.md is canonical person page, added `aliases: [buttondown-com-hillelwayne, computer-things-newsletter]`, updated index.md reference)
+
+### New Skill Created
+- **wiki-entity-dedup**: Systematic procedure for detecting (wiki_graph.py score ≥ 9.0), merging, and cleaning up duplicate entity pages. Integrates with wiki-graph-health cron job.
+
+## 2026-04-19 — Speech Models Separation: Whisper Moved from Multimodal
+
+### New Concept Pages
+- **concepts/speech/_index.md** — Speech Models overview (Whisper, TTS, AudioCraft — audio-language specific models)
+- **concepts/speech/whisper.md** — Whisper: OpenAI's Speech Recognition Model (680k hours, 99 languages, ASR)
+
+### Updated Existing Pages
+- **concepts/multimodal/_index.md** — Removed Whisper from core models table. Added cross-reference note: "Whisper moved to [[concepts/speech/whisper]]"
+- **wiki/index.md** — Added Speech Models category with `_index` and `whisper` entries under AI Agent Engineering section
+- **wiki/log.md** — This entry
+
+### Key Rationale
+- **Multimodal** = vision-language cross-modal systems (CLIP, LLaVA) — spatial + semantic alignment
+- **Speech** = audio-language specific models (Whisper, TTS, AudioCraft) — temporal signal processing
+- These are conceptually distinct: different architectures, different use cases, different deployment patterns
+- Speech models operate on temporal audio signals, not spatial visual features
+- This separation enables cleaner taxonomy for audio-specific quantization, local deployment, and agent integration patterns
+
+### Sources
+- OpenAI Whisper paper (2022) — "Robust Speech Recognition via Large-Scale Weak Supervision"
+- Meta AI AudioCraft documentation
+- llama.cpp GGUF quantization docs
+
+---
+
 ## 2026-04-19 — OpenClaw Concept Hierarchy Consolidation
 
 ### New Concept Pages (concepts/openclaw/ 階層)

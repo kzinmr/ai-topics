@@ -153,9 +153,9 @@ Musk sued OpenAI, Altman, and Brockman (March 2024, refiled August 2024) allegin
 
 ## Related
 
-- [[Sam Altman]] — OpenAI CEO; co-founder
-- [[Ilya Sutskever]] — OpenAI co-founder; former Chief Scientist
-- [[John Schulman]] — OpenAI co-founder; RL researcher
+- [[entities/john-schulman]] — OpenAI co-founder; co-authored OpenAI Gym (2016); RLHF/PPO collaboration
+- [[entities/sam-altman]] — OpenAI CEO; co-founder
+- [[entities/ilya-sutskever]] — OpenAI co-founder; former Chief Scientist
 - [[entities/openai]] — Company Brockman co-founded and leads technically
 - [[concepts/rlhf]] — Core alignment technique Brockman champions
 - [[concepts/ai-safety]] — Engineering-focused safety approach

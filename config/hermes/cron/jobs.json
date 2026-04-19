@@ -59,15 +59,15 @@
       "schedule_display": "0 16 * * *",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 3
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-12T14:30:36.503091+00:00",
-      "next_run_at": "2026-04-18T16:00:00+00:00",
-      "last_run_at": "2026-04-15T01:47:21.758382+00:00",
+      "next_run_at": "2026-04-19T16:00:00+00:00",
+      "last_run_at": "2026-04-18T16:00:59.529526+00:00",
       "last_status": "ok",
       "last_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
@@ -131,17 +131,17 @@
       "schedule_display": "0 18 * * *",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-16T13:58:42.777945+00:00",
-      "next_run_at": "2026-04-18T18:00:00+00:00",
-      "last_run_at": null,
-      "last_status": null,
-      "last_error": null,
+      "next_run_at": "2026-04-19T18:00:00+00:00",
+      "last_run_at": "2026-04-18T18:06:05.075333+00:00",
+      "last_status": "error",
+      "last_error": "Agent completed but produced empty response (model error, timeout, or misconfiguration)",
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
       "origin": null
@@ -272,16 +272,16 @@
       "schedule_display": "0 17 * * *",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-18T04:50:47.341340+00:00",
-      "next_run_at": "2026-04-18T17:00:00+00:00",
-      "last_run_at": null,
-      "last_status": null,
+      "next_run_at": "2026-04-19T17:00:00+00:00",
+      "last_run_at": "2026-04-18T17:03:30.383240+00:00",
+      "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
@@ -326,5 +326,5 @@
       }
     }
   ],
-  "updated_at": "2026-04-18T15:01:13.575539+00:00"
+  "updated_at": "2026-04-18T18:06:05.076256+00:00"
 }

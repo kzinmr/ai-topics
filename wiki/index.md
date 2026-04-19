@@ -32,7 +32,7 @@ Last updated: 2026-04-19 (Added Mismanaged Geniuses Hypothesis concept page, upd
 - [[entities/bogdanthegeek-s-blog]] — BogdanTheGeek's Blog
 - [[entities/bradford-morgan-white]] — Bradford Morgan White
 - [[entities/brutecat-com]] — Brute Cat
-- [[entities/buttondown-com-hillelwayne]] — Hillel Wayne
+- [[entities/hillel-wayne]] — Hillel Wayne (see merged entry, includes newsletter)
 - [[entities/cats-with-power-tools]] — PixelMelt
 - [[entities/chad-nauseam-home]] — Chad Nauseam Home
 - [[entities/chiark-greenend-org-uk-sgtatham]] — Simon Tatham
@@ -244,9 +244,20 @@ Ideas, frameworks, and methodologies extracted from articles.
    |- [[concepts/local-llm/model-distillation]] — Knowledge Distillation
    |- [[concepts/local-llm/self-hosting-ai-development]] — Self-Hosting AI for Development (economics)
    |- [[concepts/inference/vllm]] — vLLM Production Serving (PagedAttention)
-   |- [[concepts/inference/sglang]] — SGLang Serving Framework (RadixAttention, xgrammar)
-- [[concepts/reasoning-models]] — Reasoning Models (o1-style, CoT, PRM)
-- [[concepts/karpathy-loop]] — The Karpathy Loop (Autonomous Experiment Design, autoresearch)
+|- [[concepts/inference/sglang]] — SGLang Serving Framework (RadixAttention, xgrammar)
+|- [[concepts/reasoning-models]] — Reasoning Models (o1-style, CoT, PRM)
+|- [[concepts/speech/_index]] — Speech Models (Whisper, TTS, AudioCraft — audio-language specific models)
+|- [[concepts/speech/whisper]] — Whisper: OpenAI's Speech Recognition Model (680k hours, 99 languages, ASR)
+|- [[concepts/fine-tuning/_index]] — Fine-Tuning Overview (SFT, PEFT, RLHF, DPO, GRPO pipeline)
+|- [[concepts/fine-tuning/peft-lora-qlora]] — Parameter-Efficient Fine-Tuning (LoRA, QLoRA, adapters)
+|- [[concepts/fine-tuning/grpo-rl-training]] — Group Relative Policy Optimization for reasoning
+|- [[concepts/fine-tuning/rlhf-dpo-preference]] — RLHF, DPO, ORPO, KTO preference optimization
+|- [[concepts/fine-tuning/axolotl]] — YAML-config fine-tuning framework
+|- [[concepts/fine-tuning/unsloth]] — 2-5x faster fine-tuning with 50-80% less memory
+|- [[concepts/fine-tuning/trl]] — Transformer Reinforcement Learning library (HuggingFace)
+|- [[concepts/fine-tuning/pytorch-fsdp]] — Fully Sharded Data Parallel distributed training
+|- [[concepts/fine-tuning/quantization-overview]] — Model quantization for efficient inference
+|- [[concepts/karpathy-loop]] — The Karpathy Loop (Autonomous Experiment Design, autoresearch)
 - [[concepts/personal-superintelligence]] — Personal Superintelligence (Meta vs OpenClaw vs Local AI philosophies)
 - [[concepts/meta-harness]] — Meta-Harness
 - [[concepts/scaling-without-slop]] — Scaling without Slop
