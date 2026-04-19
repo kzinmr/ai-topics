@@ -10,7 +10,7 @@ Last updated: 2026-04-19 (Harness Engineeringを最上位概念に再編成: age
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/milksandmatcha]] — Sarah Chieng (@MilksandMatcha), AI agent educator, co-author of Back of House multi-agent patterns
 
-## Concept Pages (79)
+## Concept Pages (81)
 
 - [[concepts/openai-agents-sdk]] — OpenAI Agents SDK v0.14.0 (sandbox execution, harness/compute separation, manifests)
 - [[concepts/token-economics]] — LLM inference cost analysis, optimization layers, token economics (2026-04-18)
@@ -18,6 +18,8 @@ Last updated: 2026-04-19 (Harness Engineeringを最上位概念に再編成: age
 - [[concepts/speculative-decoding]] — Draft-and-verify inference acceleration, EAGLE-3, self-speculative decoding (2026-04-18)
 - [[concepts/context-compression]] — Context compression techniques, summarization, retrieval, structural compression (2026-04-18)
 - [[concepts/mismanaged-geniuses-hypothesis]] — Frontier LMs are underutilized due to sub-optimal scaffolding; composition > scaling (2026-04-19)
+- [[concepts/multi-agent-consensus-patterns]] — Multi-agent consensus patterns: Supervisor, Hierarchical, P2P, Swarm; SWARM+ three-phase protocol (2026-04-19)
+- [[concepts/elixir-beam-agent-orchestration]] — Elixir/BEAM for agent orchestration: process supervision, GenServer, OpenAI Symphony architecture (2026-04-19)
 
 ### Blog Authors (HN Popular Blogs — 84 feeds)
 

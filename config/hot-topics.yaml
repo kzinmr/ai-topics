@@ -36,7 +36,7 @@ topics:
   - concepts/ai-agent-engineering/_index
   notes: 19ページ。最新事例・ベストプラクティスの深掘り
   added: 2026-04-14
-  last_crawled: null
+  last_crawled: '2026-04-19'
 - slug: harness-engineering
   title: Harness Engineering
   crawl_policy: prerequisites
@@ -50,7 +50,7 @@ topics:
   - concepts/ai-agent-engineering/effective-harnesses-for-long-running-agents
   notes: Ryan Lopopolo提唱。前提としてruntime isolation, process supervision等
   added: 2026-04-14
-  last_crawled: null
+  last_crawled: '2026-04-19'
 - slug: agent-team-swarm
   title: Agent Team / Swarm
   crawl_policy: laterals
@@ -64,7 +64,7 @@ topics:
   - concepts/openai-symphony
   notes: '横方向: 分散システム理論との接点、consensus protocol等'
   added: 2026-04-14
-  last_crawled: null
+  last_crawled: '2026-04-19'
 - slug: ai-evals
   title: AI Evaluations
   crawl_policy: laterals

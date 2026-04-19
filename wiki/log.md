@@ -1,3 +1,28 @@
+## 2026-04-19 — Active Crawl + RSS Scan
+
+### Active Crawl (2026-04-19)
+Selected 3 topics: ai-agent-engineering (deepdive), harness-engineering (prerequisites), agent-team-swarm (laterals)
+
+#### deepdive: ai-agent-engineering → 1 concept
+- **[[concepts/multi-agent-consensus-patterns]]** — Multi-agent consensus patterns (Supervisor, Hierarchical, P2P, Swarm) + SWARM+ three-phase protocol (arXiv:2603.19431)
+  - Source: [[raw/articles/swarm-plus-consensus-2026.md]], [[raw/articles/openlayer-multi-agent-architecture-2026.md]]
+
+#### prerequisites: harness-engineering → 1 concept
+- **[[concepts/elixir-beam-agent-orchestration]]** — Elixir/BEAM for agent orchestration: process supervision, GenServer, OpenAI Symphony architecture
+  - Source: [[raw/articles/elixir-beam-agent-orchestration-2026.md]]
+
+#### laterals: agent-team-swarm → 1 concept
+- (shared with deepdive: multi-agent-consensus-patterns covers the lateral connection to distributed systems theory)
+
+### New Raw Sources
+- `wiki/raw/articles/swarm-plus-consensus-2026.md` — SWARM+ arXiv paper
+- `wiki/raw/articles/openlayer-multi-agent-architecture-2026.md` — Openlayer architecture guide
+- `wiki/raw/articles/elixir-beam-agent-orchestration-2026.md` — Elixir/BEAM for orchestration
+
+### Updated Files
+- `config/hot-topics.yaml` — Updated last_crawled for ai-agent-engineering, harness-engineering, agent-team-swarm
+- `wiki/index.md` — Added multi-agent-consensus-patterns, elixir-beam-agent-orchestration
+
 ## 2026-04-19 — RSS Scan + Wiki Updates
 
 ### Phase 1: Daily Scan
