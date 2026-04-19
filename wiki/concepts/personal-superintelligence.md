@@ -145,7 +145,7 @@ Personal Superintelligence
 - [[concepts/open-claw-ecosystem]] — OpenClawとパーソナルAIエージェント運動
 - [[concepts/meta-muse-spark]] — Muse Sparkモデル詳細
 - [[concepts/local-llm]] — ローカルLLM推論
-- [[concepts/agentic-engineering/_index]] — エージェント活用開発パターン
+- [[concepts/harness-engineering/agentic-workflows/_index]] — エージェント活用開発パターン
 - [[concepts/cache-first-engineering]] — プロンプトキャッシュ最適化
 - [[concepts/ai-privacy-tools]] — AIエージェントのプライバシー課題
 

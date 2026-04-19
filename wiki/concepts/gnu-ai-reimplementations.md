@@ -8,7 +8,7 @@ sources:
   - "http://antirez.com/news/160"
 tags: [concept, ai-reimplementations, gnu, clean-room, automatic-programming, open-source]
 aliases: ["clean-room-ai-reimplementations", "ai-driven-reimplementations"]
-related: [[agentic-engineering]], [[harness-engineering]], [[automatic-programming]], [[vibe-coding]], [[open-source-ai-destruction]]
+related: [[harness-engineering/agentic-engineering]], [[harness-engineering]], [[automatic-programming]], [[vibe-coding]], [[open-source-ai-destruction]]
 ---
 
 # GNU AI Reimplementations
@@ -125,7 +125,7 @@ The nature of software has changed. Reimplementations under different licenses a
 
 ## Related Concepts
 
-- [[agentic-engineering]] — Using AI agents as collaborative development partners
+- [[harness-engineering/agentic-engineering]] — Using AI agents as collaborative development partners
 - [[harness-engineering]] — Building systems and constraints around agents for autonomous productivity
 - [[automatic-programming]] — Human-guided AI development with active steering
 - [[vibe-coding]] — Passive AI code generation without deep involvement

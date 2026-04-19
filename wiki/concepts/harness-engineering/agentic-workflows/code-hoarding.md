@@ -55,5 +55,5 @@ Utility C (API client)
 
 ## 関連概念
 - [[compound-engineering-loop]] — 反復的改善サイクル（ホードはこのサイクルの「Save」段階で成長）
-- [[agentic-engineering]] — Agentic Engineering全体像
+- [[../agentic-engineering]] — Agentic Engineering全体像
 - [[context-window-management]] — コンテキストウィンドウ管理（ホードはコンテキストとして機能）

@@ -360,7 +360,7 @@ See [[concepts/skill-architecture-patterns]] for detailed comparison with OpenCl
 ## Related Pages
 
 - [[teknium]] — Hermes Agent creator, Nous Research co-founder
-- [[concepts/agentic-engineering/_index]] — Agentic Engineering patterns (related design philosophy)
+- [[concepts/harness-engineering/agentic-workflows/_index]] — Agentic Engineering patterns (related design philosophy)
 - [[concepts/claude-memory]] — File-based memory architecture (comparable design)
 - [[concepts/harness-engineering]] — Harness Engineering framework (related orchestration concepts)
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware (complementary memory layer concepts)

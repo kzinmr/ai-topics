@@ -163,7 +163,7 @@ Codex Sparkのような高速コーディングモデルが利用可能になっ
 - [[context-window-management]] — Level 1: 単一セッション内のコンテキスト衛生
 - [[agent-team-swarm/_index]] — マルチエージェントチームの階層的オーケストレーション
 - [[subagents]] — サブエージェントの委任パターン
-- [[agentic-engineering/_index]] — エンジニアのエージェント活用方法论
+- [[harness-engineering/_index]] — エンジニアのエージェント活用方法论
 - [[context-engineering]] — コンテキストエンジニアリング
 
 ## ソース

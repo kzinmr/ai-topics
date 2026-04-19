@@ -80,7 +80,7 @@ Prompt-Driven Developmentでは、エージェントが生成したコードを*
 - [[cognitive-debt]] — 理解せずにマージしたコードが蓄積する負債
 - [[red-green-tdd]] — テスト駆動開発との組み合わせ
 - [[context-window-management]] — プロンプトの長さ管理
-- [[agentic-engineering]] — 上位概念
+- [[../agentic-engineering]] — 上位概念
 
 ## 参照
 

@@ -8,7 +8,8 @@ created: 2026-04-12
 updated: 2026-04-12
 tags:
   - concept
-  - ai-agent-engineering
+  - system-architecture
+  - harness-engineering
   - anthropic
   - mcp
 status: draft
@@ -175,6 +176,6 @@ print(json.dumps(exceeded))
 
 ## 関連概念
 
-- [[agentic-engineering/_index]] — 上位インデックス
+- [[../_index]] — 上位インデックス
 - [[writing-tools-for-agents]] — エージェント用ツール設計の5原則
 - [[context-engineering]] — コンテキストエンジニアリング

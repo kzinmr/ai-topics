@@ -328,5 +328,5 @@ class Debate(dspy.Module):
 - [[omar-khattab]] — DSPyの創作者
 - [[gepa]] — 遺伝的プロンプト最適化（DSPy optimizerの進化系）
 - [[rlms]] — 再帰的言語モデル（DSPyとは異なる最適化アプローチ）
-- [[agentic-engineering]] — DSPyのエージェントパターン
+- [[harness-engineering/agentic-engineering]] — DSPyのエージェントパターン
 - [[colbert]] — DSPy以前のKhattabの検索フレームワーク

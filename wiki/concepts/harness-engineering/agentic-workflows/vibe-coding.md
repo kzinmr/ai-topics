@@ -51,7 +51,7 @@ Simon自身もVibe Codingを否定しているわけではない。むしろ、*
 
 ## 関連概念
 
-- [[agentic-engineering]] — 対照的な開発スタイル
+- [[../agentic-engineering]] — 対照的な開発スタイル
 - [[cognitive-debt]] — Vibe Codingの主要リスク
 - [[linear-walkthroughs]] — 認知負債を返済する手法
 

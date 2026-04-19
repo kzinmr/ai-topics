@@ -175,5 +175,5 @@ Codex Sparkのような高速コーディングモデルが利用可能になっ
 - [[single-agent-ceiling]] — 単一エージェントの限界と「Sloperator」アンチパターン
 - [[agent-team-swarm]] — マルチエージェントチームの階層的オーケストレーション
 - [[subagents]] — サブエージェントの委任パターン
-- [[agentic-engineering]] — エンジニアのエージェント活用方法论
+- [[harness-engineering/agentic-engineering]] — エンジニアのエージェント活用方法论
 - [[raw/articles/milksandmatcha-0xsero-single-agent-nightmare-2026|元記事]] — Xスレッド (@MilksandMatcha)

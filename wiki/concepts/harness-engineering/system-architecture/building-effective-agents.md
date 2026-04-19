@@ -7,7 +7,8 @@ created: 2026-04-12
 updated: 2026-04-12
 tags:
   - concept
-  - ai-agent-engineering
+  - system-architecture
+  - harness-engineering
   - anthropic
 status: draft
 sources:
@@ -87,6 +88,6 @@ command → plan → tool call → environment feedback → iterate → result
 
 ## 関連概念
 
-- [[agentic-engineering/_index]] — 上位インデックス
+- [[../_index]] — 上位インデックス
 - [[context-engineering]] — コンテキスト管理
 - [[evals-for-ai-agents]] — エージェント評価

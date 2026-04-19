@@ -4,7 +4,7 @@ created: 2026-04-13
 updated: 2026-04-13
 tags: [git, main-branch, branching-strategy, agentic-engineering, atomic-commits]
 aliases: ["main-branch-ai-development", "worktree-anti-pattern", "atomic-commits-with-agents", "steipete-git-patterns"]
-related: [[agentic-engineering]], [[inference-speed-development]], [[direct-prompting-philosophy]], [[claude-code-best-practices]]
+related: [[harness-engineering/agentic-engineering]], [[inference-speed-development]], [[direct-prompting-philosophy]], [[claude-code-best-practices]]
 sources:
   - url: "https://steipete.me/posts/2025/live-coding-session-building-arena"
     author: "Peter Steinberger (@steipete)"
@@ -182,7 +182,7 @@ Complements Claude Code patterns:
 - [[inference-speed-development]] — Why fast iteration requires simple branching
 - [[direct-prompting-philosophy]] — Anti-complexity mindset applied to Git
 - [[claude-code-best-practices]] — Atomic commits enable sub-agent delegation
-- [[agentic-engineering]] — How AI changes traditional development workflows
+- [[harness-engineering/agentic-engineering]] — How AI changes traditional development workflows
 
 ## Sources
 

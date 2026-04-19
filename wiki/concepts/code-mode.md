@@ -59,4 +59,4 @@ CodeMode is the paradigm where LLMs write code (typically Python) for batch exec
 
 - [[concepts/harness-engineering]] — Monty as a harness environment
 - [[concepts/structured-outputs]] — Type safety constrains LLM output
-- [[concepts/ai-agent-engineering/code-execution-with-mcp]] — Alternative to MCP tool execution
+- [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — Alternative to MCP tool execution

@@ -9,7 +9,8 @@ created: 2026-04-12
 updated: 2026-04-12
 tags:
   - concept
-  - ai-agent-engineering
+  - system-architecture
+  - harness-engineering
   - anthropic
   - harness
 status: draft
@@ -176,7 +177,7 @@ Generator: 実装を提案
 
 ## 関連概念
 
-- [[agentic-engineering/_index]] — 上位インデックス
+- [[../_index]] — 上位インデックス
 - [[building-effective-agents]] — エージェント構築の基本原理
 - [[multi-agent-research-system]] — マルチエージェントシステム
 - [[context-engineering]] — コンテキストエンジニアリング

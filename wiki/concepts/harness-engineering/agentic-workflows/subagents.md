@@ -140,7 +140,7 @@ delegate_task:
 
 ## 関連概念
 
-- [[agentic-engineering]] — 上位概念
+- [[../agentic-engineering]] — 上位概念
 - [[context-window-management]] — サブエージェントはコンテキスト問題を回避する手段
 - [[cognitive-debt]] — サブエージェントの自己完結性は認知負債を減らす
 - [[multi-agent-autonomy-scale]] — サブエージェントは自律性の中間レベル
@@ -149,4 +149,4 @@ delegate_task:
 
 - [[simon-willison]] — 概念提唱者、Hermesでの実装者
 - [Subagents guide](https://simonwillison.net/guides/agentic-engineering-patterns/subagents/)
-- [Hermes delegate_task documentation](~/wiki/concepts/agentic-engineering/)
+- [Hermes delegate_task documentation](~/wiki/concepts/harness-engineering/)

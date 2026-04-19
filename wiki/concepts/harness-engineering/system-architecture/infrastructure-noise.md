@@ -8,7 +8,8 @@ created: 2026-04-12
 updated: 2026-04-12
 tags:
   - concept
-  - ai-agent-engineering
+  - system-architecture
+  - harness-engineering
   - anthropic
   - evals
 status: draft
@@ -81,7 +82,7 @@ sources:
 
 ## 関連概念
 
-- [[agentic-engineering/_index]] — 上位インデックス
+- [[../_index]] — 上位インデックス
 - [[evals-skills]] — 評価スキル
 - [[harness-design-long-running-apps]] — ハーネス設計
 - [[ai-evals]] — AI評価の概念

@@ -70,7 +70,7 @@ Run `uvx showboat --help` and then create a `notes/api-demo.md` showboat documen
 
 - [[agentic-manual-testing]] — Showboatの主要ユースケース
 - [[linear-walkthroughs]] — コード解説生成パターン
-- [[agentic-engineering]] — 上位概念
+- [[../agentic-engineering]] — 上位概念
 
 ## 参照
 - [[simon-willison]] — 開発者

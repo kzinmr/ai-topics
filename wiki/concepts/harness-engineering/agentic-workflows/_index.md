@@ -1,35 +1,40 @@
 ---
-title: "Agentic Engineering — Developer Workflows & Patterns"
+title: "Agentic Workflows — Harness Engineering配下の開発者ワークフロー"
 aliases:
-  - agentic-engineering
-  - agentic-engineering-index
+  - agentic-workflows
   - agentic-coding-patterns
   - developer-agentic-workflows
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-19
 tags:
   - concept
   - methodology
   - index
-  - agentic-engineering
-status: draft
+  - harness-engineering
+  - agentic-workflows
+status: active
+parent: harness-engineering
 ---
 
-# Agentic Engineering — 開発者ワークフロー
+# Agentic Workflows — 開発者ワークフロー
 
-AI Agentを「活用してソフトウェアを開発する」実践的ワークフローとパターンを整理したインデックス。
+AI Agentを「活用してソフトウェアを開発する」実践的ワークフローとパターン。**Harness Engineeringのサブセクション**として位置づけられる。
 
-## 関連概念
+## Harness Engineering内での位置づけ
 
-[[ai-agent-engineering]] — エージェントを「構築する」システム設計・アーキテクチャ（Anthropic Engineering）
-[[harness-engineering]] — エージェントを「制御・構造化する」環境設計（横断概念→タグ管理）
+| レイヤー | 概念 | 焦点 |
+|---------|------|------|
+| **最上位** | [[../_index\|Harness Engineering]] | Agent = Model + Harness（環境設計哲学） |
+| **横断技術** | [[../context-engineering\|Context Engineering]] | コンテキストの選択・圧縮・配置（有限リソース管理） |
+| **応用（人間側）** | **Agentic Workflows**（本ページ） | 開発者がエージェントを「活用する」パターン |
+| **応用（システム側）** | [[../system-architecture/_index\|System Architecture]] | エージェントを「構築する」パターン |
 
 ## リーダー別主要コンセプト
 
 | リーダー | コアコンセプト | 関連ページ |
 |---------|--------------|-----------|
 | [[simon-willison]] | Agentic Engineering Patterns, Red/Green TDD, Cognitive Debt | 以下のWillisonパターン群 |
-| [[andrew-karpathy]] | Software 2.0, RLによるエージェント学習, データ中心AI | [[karpathy-rl-agents]] |
+| [[andrej-karpathy]] | Software 2.0, RLによるエージェント学習, データ中心AI | [[karpathy-rl-agents]] |
 | [[sankalp]] | Claude Code 2.0実用ガイド、サブエージェントのlossiness、Throw-Away Draft、コンテキスト60%ルール | 以下のSankalpパターン群 |
 | [[steipete]] | Agent-First Design, CLI-First Development, Plan Mode不要論, inference-speed bottleneck | 以下のSteipeteパターン群 |
 
@@ -64,7 +69,8 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 | ページ | 概要 |
 |-------|------|
 | [[cognitive-debt]] | エージェント生成コードを理解せずにマージすると蓄積する「認知負債」 |
-| [[harness-engineering]] | OpenAI Symphony、エージェント協調制御（[[ryan-lopopolo]]） |
+| [[compound-engineering-loop]] | 反復的品質向上ループ |
+| [[code-hoarding]] | 重要な知識をエージェントのコンテキスト外に保持するパターン |
 
 ### 🏗️ Sankalpの実用パターン
 
@@ -80,11 +86,11 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 |-------|------|
 | [[agent-first-design]] | 「人間向け」ではなく「エージェント向け」コード設計 |
 | [[cli-first-development]] | CLIから始めてフィードバックループを高速化 |
-| [[how-agents-work]] | Plan Mode不要論、会話的計画、Task Toolアーキテクチャ |
+| [[prompt-driven-development]] | プロンプト駆動開発パターン |
 
-## Agentic Engineering vs AI Agent Engineering
+## Agentic Workflows vs System Architecture
 
-| 次元 | Agentic Engineering | AI Agent Engineering |
+| 次元 | Agentic Workflows | System Architecture |
 |------|-------------------|---------------------|
 | 焦点 | 開発者のワークフロー | システムのアーキテクチャ |
 | 主語 | 「人間がエージェントをどう使うか」 | 「エージェントをどう作るか」 |
@@ -94,7 +100,7 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 ## 関連概念マップ
 
 ```
-Agentic Engineering
+Agentic Workflows (Harness Engineering)
 ├── 🧪 Willisonのテストパターン
 │   ├── First Run the Tests
 │   ├── Red/Green TDD
@@ -109,7 +115,8 @@ Agentic Engineering
 │   └── Vibe Coding
 ├── 🧠 認知と品質
 │   ├── Cognitive Debt
-│   └── Harness Engineering (Lopopolo)
+│   ├── Compound Engineering Loop
+│   └── Code Hoarding
 └── 🤖 KarpathyのRLエージェント
     └── Software 2.0 / Autoresearch Loop
 ```
@@ -118,5 +125,5 @@ Agentic Engineering
 
 | 日付 | 変更内容 |
 |------|---------|
-| 2026-04-12 | Anthropic系概念をai-agent-engineering/へ分離 |
-| 2026-04-12 | Willison開発パターン中心に再構築 |
+| 2026-04-12 | 初期作成 — Willison開発パターン中心に構築 |
+| 2026-04-19 | Harness umbrella再編成: タイトル更新、System Architectureとの位置づけ表追加、重複エントリ整理 |

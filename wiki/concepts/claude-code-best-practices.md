@@ -4,7 +4,7 @@ created: 2026-04-13
 updated: 2026-04-13
 tags: [claude-code, prompt-engineering, mcp, subagents, workflow-patterns, agentic-engineering]
 aliases: ["claude-code-tips", "claude-code-usage-patterns", "coding-agent-best-practices"]
-related: [[agentic-engineering]], [[inference-speed-development]], [[claude-code-source-patterns]], [[context-window-management]]
+related: [[harness-engineering/agentic-engineering]], [[inference-speed-development]], [[claude-code-source-patterns]], [[context-window-management]]
 sources:
   - url: "https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/"
     author: "Sankalp (@sankalp)"
@@ -210,7 +210,7 @@ See [[context-window-management]] for detailed patterns.
 
 ---
 
-## Connection to [[agentic-engineering]]
+## Connection to [[harness-engineering/agentic-engineering]]
 
 These best practices embody the agentic engineering philosophy:
 
@@ -226,7 +226,7 @@ These best practices embody the agentic engineering philosophy:
 
 ## Related Concepts
 
-- [[agentic-engineering]] — The broader methodology these practices serve
+- [[harness-engineering/agentic-engineering]] — The broader methodology these practices serve
 - [[inference-speed-development]] — How these practices enable faster iteration
 - [[claude-code-source-patterns]] — Internal patterns that inform user practices
 - [[context-window-management]] — Techniques for managing conversation context

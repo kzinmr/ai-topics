@@ -187,7 +187,7 @@ Stage 1 (2024)     Stage 2 (2025)         Stage 3 (2026)
 ## 関連コンセプト
 
 - [[harness-engineering]] — エージェント環境設計
-- [[agentic-engineering]] — エージェントを活用したソフトウェア開発
+- [[harness-engineering/agentic-engineering]] — エージェントを活用したソフトウェア開発
 - [[managed-agents-architecture]] — マネージドエージェントアーキテクチャ
 - [[mcp]] — Model Context Protocol
 

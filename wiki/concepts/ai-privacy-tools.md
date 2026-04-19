@@ -149,7 +149,7 @@ This vulnerability pattern affects many local AI development tools that listen o
 - [[ai-agent-traps]] — Common pitfalls in agent deployment and design
 - [[agent-sandboxing]] — Isolation technologies for safe agent execution
 - [[anthropic-managed-agents]] — Managed agent services and their security approaches
-- [[agentic-engineering]] — The practice of directing AI agents in software development
+- [[harness-engineering/agentic-engineering]] — The practice of directing AI agents in software development
 
 ## Sources
 

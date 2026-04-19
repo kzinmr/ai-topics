@@ -9,7 +9,8 @@ created: 2026-04-12
 updated: 2026-04-12
 tags:
   - concept
-  - ai-agent-engineering
+  - system-architecture
+  - harness-engineering
   - anthropic
   - mcp
   - tool-design
@@ -141,7 +142,7 @@ enum ResponseFormat {
 
 ## 関連概念
 
-- [[agentic-engineering/_index]] — 上位インデックス
+- [[../_index]] — 上位インデックス
 - [[advanced-tool-use]] — 高度なツール使用
 - [[building-effective-agents]] — エージェント構築の基本原理
 - [[code-execution-with-mcp]] — MCPとのコード実行

@@ -282,7 +282,7 @@ This repo serves as a **reference implementation** for agentic engineering patte
 ## Related
 
 - [[harness-engineering]]
-- [[agentic-engineering]]
+- [[harness-engineering/agentic-engineering]]
 - [[ryan-lopopolo]]
 - [[simon-willison]]
 - [[karpathy]]

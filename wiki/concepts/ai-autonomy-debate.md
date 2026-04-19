@@ -4,7 +4,7 @@ created: 2026-04-10
 updated: 2026-04-10
 tags: [concept, ai-agents, autonomy, human-in-the-loop, safety]
 aliases: ["autonomy-obsession", "hitl-vs-autonomous"]
-related: [[agentic-engineering]], [[anthropic-managed-agents]], [[ai-agent-traps]]
+related: [[harness-engineering/agentic-engineering]], [[anthropic-managed-agents]], [[ai-agent-traps]]
 ---
 
 # AI Autonomy Debate
@@ -143,7 +143,7 @@ The phrase earning traction: **"Trust comes before autonomy. You don't earn the 
 
 ## Related Concepts
 
-- [[agentic-engineering]] — The practice of directing AI agents rather than writing code
+- [[harness-engineering/agentic-engineering]] — The practice of directing AI agents rather than writing code
 - [[anthropic-managed-agents]] — Hosted agent services and the debate around them
 - [[ai-agent-traps]] — Common pitfalls in agent deployment and design
 - [[compute-scaling-bottlenecks]] — Infrastructure constraints affecting agent capabilities

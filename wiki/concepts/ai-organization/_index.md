@@ -104,7 +104,7 @@ Reddit r/ClaudeCodeとFourWeekMBAの議論から浮上。
 
 ## 関連概念
 
-- [[agentic-engineering]] — 開発者のAI活用ワークフロー
+- [[harness-engineering/agentic-engineering]] — 開発者のAI活用ワークフロー
 - [[harness-engineering]] — エージェントの制御・構造化
 - [[multi-agent-autonomy-scale]] — 大規模マルチエージェントの自律とスケール
 - [[context-engineering]] — コンテキストエンジニアリング

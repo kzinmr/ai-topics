@@ -139,7 +139,7 @@ His posting style is **educational and systematic** — he builds frameworks, cr
 
 ## Related
 
-- [[agentic-engineering]]
+- [[harness-engineering/agentic-engineering]]
 - [[harness-engineering]]
 - [[multi-agent-autonomy-scale]]
 - [[context-engineering]]

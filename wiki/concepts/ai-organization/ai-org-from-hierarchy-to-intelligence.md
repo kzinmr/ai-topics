@@ -119,7 +119,7 @@ Blockが構築した2つのワールドモデル:
 
 - [[ai-org-context-as-moat]] — Proprietary ContextとFission-Fusion
 - [[ai-org-solo-founder-and-super-ic]] — Solo FounderとSuper IC
-- [[agentic-engineering]] — 開発者のAI活用ワークフロー
+- [[harness-engineering/agentic-engineering]] — 開発者のAI活用ワークフロー
 - [[harness-engineering]] — エージェントの制御・構造化
 - [[context-engineering]] — コンテキストエンジニアリング
 

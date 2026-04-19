@@ -8,7 +8,8 @@ created: 2026-04-12
 updated: 2026-04-12
 tags:
   - concept
-  - ai-agent-engineering
+  - system-architecture
+  - harness-engineering
   - anthropic
   - claude-code
 status: draft
@@ -108,7 +109,7 @@ Community-developed hooks (April 2026) force Claude Code to use LSP (Language Se
 
 ## 関連概念
 
-- [[agentic-engineering/_index]] — 上位インデックス
+- [[../_index]] — 上位インデックス
 - [[context-engineering]] — コンテキストエンジニアリング
 - [[building-effective-agents]] — エージェント構築の基本原理
 - [[using-git-with-agents]] — エージェントとのGit使用

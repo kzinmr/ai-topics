@@ -126,7 +126,7 @@ agent = SandboxAgent(
 - [[sandbox/_index]] — AI agent sandbox isolation technologies
 - [[sandbox/infrastructure]] — Container, microVM, gVisor-level isolation
 - [[agent-skills]] — SKILL.md bundles
-- [[agentic-engineering/how-agents-work]] — Coding agent architecture
+- [[concepts/harness-engineering/agentic-workflows/how-agents-work]] — Coding agent architecture
 
 ## Entity Connections
 

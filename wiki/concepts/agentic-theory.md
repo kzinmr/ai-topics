@@ -6,7 +6,7 @@ sources:
   - "https://www.seangoedecke.com/llm-driven-agents/"
 tags: [software-engineering, ai-coding, theory, peter-naur]
 related:
-  - "[[agentic-engineering]]"
+  - "[[harness-engineering/agentic-engineering]]"
   - "[[cognitive-cost-of-agents]]"
   - "[[harness-engineering]]"
 ---
@@ -51,5 +51,5 @@ Sean Goedecke's analysis applying Peter Naur's 1985 "theory building" concept to
 ## Related Concepts
 
 - [[cognitive-cost-of-agents]]: Developers losing deep understanding of their codebase
-- [[agentic-engineering]]: Humans as orchestrators of AI agents
+- [[harness-engineering/agentic-engineering]]: Humans as orchestrators of AI agents
 - [[harness-engineering]]: Designing environments for agents

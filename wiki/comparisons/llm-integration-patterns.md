@@ -281,7 +281,7 @@ DSPy、RLMs、GEPAの共通点は、**特定のプロンプト文本体に依存
 - [[dspy]] — 宣言的LMプログラミング
 - [[rlms]] — 再帰的言語モデル
 - [[gepa]] — 遺伝的プロンプト最適化
-- [[agentic-engineering]] — エージェントワークフローパターン
+- [[harness-engineering/agentic-engineering]] — エージェントワークフローパターン
 - [[omar-khattab]] — DSPy/GEPA/RLMsの創作者
 - [[alex-zhang]] — RLMsの第一著者
 - [[colbert]] — 検索のlate interactionパラダイム
