@@ -1,7 +1,7 @@
 ---
 title: John D. Cook
 created: 2026-04-09
-updated: 2026-04-10
+updated: 2026-04-19
 tags:
 - person
 - blogger
@@ -111,3 +111,4 @@ The common thread is **curiosity-driven mathematical exploration**. He finds som
 - [How Much Certainty Is Worthwhile?](https://www.johndcook.com/blog/2026/03/08/how-much-certainty-is-worthwhile/) (Mar 2026)
 - [GPT-5 for AI-Assisted Discovery](https://www.johndcook.com/blog/2025/10/10/gpt-5-for-ai-assisted-discovery/) (Oct 2025)
 - [johndcook.com/about](https://www.johndcook.com/blog/about/)
+- [Gaussian distributed weights for LLMs: NF4 and QLoRA](https://www.johndcook.com/blog/2026/04/18/qlora/) (Apr 2026) — NF4量子化形式はなぜFP4よりLLMの重み分布に適しているかを数学的に分析。QLoRAの非対称量子化がなぜ正確に0を表現できないか、bitsandbytesのα=929/960という設定の由来等问题を追究。

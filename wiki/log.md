@@ -1,3 +1,22 @@
+## 2026-04-19 — RSS Scan + Wiki Updates
+
+### Phase 1: Daily Scan
+- RSSスキャン: 84ブログ中78件新規記事
+- Reddit: r/LocalLLM(23), r/AI_Agents(22), r/LocalLLaMA(21)の大量新着
+- ブログ記事: Simon Willison(2), Daring Fireball(2)など12件
+
+### Phase 2: Triage
+- Simon Willison 2件: システムプロンプト分析（Opus 4.6→4.7 diff）、Gitタイムライン化ツール
+- John D. Cook 1件: NF4量子化の数学的解析
+- その他10件: スキップ（報道・ハードウェア質問・歴史的トピック）
+
+### Phase 3: Wiki Updates
+- **entities/simon-willison.md** — updated=2026-04-19、Sourcesに2件追加
+  - Changes in system prompt between Claude Opus 4.6 and 4.7 (Apr 2026)
+  - Claude system prompts as a git timeline (Apr 2026)
+- **entities/john-d-cook-applied-mathematics-consulting.md** — updated=2026-04-19、Sourcesに1件追加
+  - Gaussian distributed weights for LLMs: NF4 and QLoRA (Apr 2026)
+
 ## 2026-04-19 — Cross-Reference Network: Entity ↔ Concept Linking
 
 ### Group 1: OpenAI系エンティティ (greg-brockman ↔ john-schulman)
