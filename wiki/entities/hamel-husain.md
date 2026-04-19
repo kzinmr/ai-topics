@@ -145,6 +145,8 @@ Co-authored with **Eugene Yan, Shreya Shankar, Jason Liu, Bryan Bischof, Charles
 -   [[eugene-yan]] — Co-author on Applied LLMs guide, shared evals philosophy.
 -   [[jeremy-howard]] — Mentor/collaborator at fast.ai and AnswerAI.
 -   [[concepts/ai-evals]] — The evaluation framework he teaches.
+-   [[entities/drmaciver]] — Property-based testing applied to LLM evaluation (`foundational-llm-evals`); PBT methodology for eval design.
+-   [[entities/shreya-shankar]] — Co-creator of AI evals course, collaborator on Applied LLMs guide.
 -   [[concepts/harness-engineering]] — His core engineering philosophy.
 -   [[concepts/critique-shadowing]] — His signature methodology.
 -   [[concepts/llm-as-judge]] — Core evaluation technique he critiques and teaches.

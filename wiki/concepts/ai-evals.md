@@ -158,6 +158,13 @@ A **trace** is the complete record of all actions, messages, tool calls, and dat
 - [[harness-engineering]] — OpenAI's approach to AI-assisted development
 - [[eval-tools-comparison]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI
 - [[evals-skills]] — Evals skills for coding agents
+- [[property-based-testing]] — PBT methodology applied to LLM evaluation (MacIver)
+
+## Related People
+
+- [[entities/drmaciver]] — Created `foundational-llm-evals` applying property-based testing to LLM evaluation
+- [[entities/shreya-shankar]] — Co-creator of AI evals course, DocETL/EvalGen/SPADE researcher
+- [[entities/hamel-husain]] — Co-creator of AI evals course, Critique Shadowing methodology pioneer
 
 ## Sources
 

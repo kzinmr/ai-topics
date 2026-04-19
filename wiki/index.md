@@ -227,6 +227,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[concepts/dspy]] — DSPy: Declarative Self-improving Language Systems (Omar Khattab, Stanford)
 - [[concepts/llm-integration-patterns]] — LLM Integration Patterns: Comparative Taxonomy
 - [[concepts/ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
+- [[concepts/ai-safety]] — AI Safety: Alignment, Oversight, and Interpretability
 - [[concepts/agentic-pbt]] — Agentic Property-Based Testing (Anthropic + Hypothesis, Claude Code PBT agent)
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
 - [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo / OpenAI Symphony)

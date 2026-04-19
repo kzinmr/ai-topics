@@ -1,3 +1,34 @@
+## 2026-04-19 — Cross-Reference Network: Entity ↔ Concept Linking
+
+### Group 1: OpenAI系エンティティ (greg-brockman ↔ john-schulman)
+- **greg-brockman.md** → `john-schulman` (既に存在 ✅)
+- **john-schulman.md** → `greg-brockman` (既に存在 ✅), `mira-murati` (追加 ✅), `concepts/ai-safety` (追加 ✅)
+- **ai-safety.md** (新規作成 ✅) — RLHF, Scalable Oversight, 2023-2024 Safety Exodus, Brockman vs Schulman philosophy
+
+### Group 2: AI Evals系 (drmaciver ↔ shreya-shankar ↔ hamel-husain)
+- **ai-evals.md** → `drmaciver`, `shreya-shankar`, `hamel-husain` (追加 ✅), `property-based-testing` (追加 ✅)
+- **drmaciver.md** → `ai-evals-people` (追加 ✅)
+- **shreya-shankar.md** → `drmaciver` (追加 ✅)
+- **hamel-husain.md** → `drmaciver` (追加 ✅), `shreya-shankar` (追加 ✅)
+
+### Group 3: Pydantic/Structured Outputs (jason-liu ↔ samuel-colvin)
+- **jason-liu.md** → `samuel-colvin` (追加 ✅), `concepts/structured-outputs` (追加 ✅)
+- **samuel-colvin.md** → `concepts/structured-outputs` (既に存在 ✅)
+- **pydantic.md** → `jason-liu` (追加 ✅)
+- **structured-outputs.md** → `jason-liu` (既に存在 ✅), `samuel-colvin` (既に存在 ✅)
+
+### Group 4: AI Safety (john-schulman ↔ mira-murati)
+- **john-schulman.md** → `mira-murati` (追加 ✅)
+- **mira-murati.md** → `john-schulman` (追加 ✅), `entities/sam-altman` (format fix), `entities/ilya-sutskever` (format fix), `entities/thinking-machines-lab` (format fix)
+- **ai-safety.md** (新規作成 ✅)
+
+### New Concept Pages
+- **concepts/ai-safety.md** — AI Safety: Alignment, Oversight, and Interpretability (L2, complete)
+
+### Updated
+- **wiki/index.md** — Added ai-safety entry
+- **wiki/log.md** — This entry
+
 ## 2026-04-19 — Entity Deduplication: Merged Duplicate Person Pages
 
 ### Merged Duplicates
