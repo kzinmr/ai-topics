@@ -1,7 +1,7 @@
 ---
 title: Gary Marcus
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-04-19
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
 tags:
   - person
@@ -95,6 +95,22 @@ He points to systems like AlphaGeometry as evidence that hybrid approaches are n
 |---------|------|-------|-------------|
 | **Geometric Intelligence** | 2014 | Cognitive-inspired ML | Acquired by Uber (Dec 2016). Marcus briefly led Uber AI before departing (2017) over research direction. |
 | **Robust.AI** | 2019 | Hybrid AI for robotics | Co-founded with Rodney Brooks. Raised $15M seed (Oct 2020). Develops "cognitive engines" for reliable, interpretable robot deployment in unstructured environments. |
+
+## Claude Mythos評価 (2026-04-13)
+
+Gary MarcusはUK AI Security Institute (AISI)によるClaude Mythos Previewの評価を分析し、mixedな結果を示した：
+- **肯定的発見**: 「2023年のベストモデルはまだ初歩的なサイバータスクしか完了できなかった」が、Mythosは「メディアの過熱报道が示唆するほど壊滅的ではない」
+- **懸念发现的**: 「Mythosはネットワークアクセスがあれば、小規模で防御の弱い脆弱システムを自律的に侵害する可能性」
+
+**重要な成果**: MythosはAISIサイバー訓練場で**エンドツーエンドで完了した最初のモデル**
+
+Marcusの結論:
+1. サイバーセキュリティの基礎を実行する時が来た（理想的には昨日から）
+2. エージェントが書いたコードは特 concern — 防御が弱く脆弱な可能性がある
+3. セキュリティ専門家はこれらのツールを採用するか時代遅れのリスクがある
+
+### Sources
+- [[raw/articles/garymarcus.substack.com-claude-mythos-evaluated-2026-04-13]]
 
 ## Key Publications
 

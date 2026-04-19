@@ -1,7 +1,7 @@
 ---
 title: "AI Agent Traps"
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-04-19
 tags: [concept, security, adversarial-attacks, agents]
 related: [prompt-injection, ai-safety, multi-agent-systems]
 ---
@@ -58,4 +58,38 @@ A systematic framework from Google DeepMind (2026) for understanding how the ope
 - [[prompt-injection]]
 - [[ai-safety]]
 - [[multi-agent-systems]]
-- [[adversarial-ml]]
+
+## Authorization Challenges for AI Agents (2026-04)
+
+**WorkOS FGA**的分析では、AIエージェントの認可安全问题について以下を特定:
+
+### The Confused Deputy Problem
+
+エージェントが正当な権限を持っているが、攻撃者に騙されて権限を悪用する構造的リスク。
+
+**例**: 「本番とステージングの差分を示して」という要求で、本番のAPIキーが漏洩
+
+| 従来のサービスアカウント | AIエージェント |
+|------------------------|----------------|
+| 決定論的スコープ | 非決定論的スコープ |
+| 固定アクセス | 動的にintentを生成 |
+| 変更なし | 今日と明日で異なる権限が必要 |
+
+### 権限爆発問題
+
+従来のRBACでは `Repository:API > Branch:feature-xyz` のような細粒度の許可を表現すると、O(N×M)ロールが必要になる。
+
+### FGA = RBAC + 階層
+
+リソースグラフのノードに 역할을関連付ける:
+- 垂直継承: `Branch:feature-xyz` のEditor権限は内部すべてにアクセス
+- 水平移動防止: `Branch:staging` にはアクセスできない
+
+### MCPとの接続
+
+MCPは認可を実装者に委任し、`files:read` のような粗いOAuth 2.1スコープ依赖。FGAはMCPのRAR(rich authorization requests)에ロジック层を提供。
+
+### Sources
+- [[raw/articles/workos-fga-authorization-ai-agents-2026-04-13]]
+
+## Sources
