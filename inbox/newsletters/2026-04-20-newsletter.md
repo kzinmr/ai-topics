@@ -1,165 +1,120 @@
 # Newsletter Digest - 2026-04-20
-**Subject:** Import AI 454: Automating alignment research; safety study of a Chinese model; HiFloat4
-**Processed:** 2026-04-20T12:32:34.141158+00:00
-**Articles scraped:** 11
+**Subject:** Fwd: Martin Alderson: Figma's woes compound, Mythos and more
+**Processed:** 2026-04-20T14:23:36.599748+00:00
+**Articles scraped:** 10
 
 ---
 
-## 1. Import AI 454: Automating alignment research; safety study of a Chinese model; HiFloat4
+## 1. Figma's woes compound with Claude Design
 
-- **URL:** https://substack.com/app-link/post?publication_id=1317673&post_id=194734453&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ3MzQ0NTMsImlhdCI6MTc3NjY4ODMyOCwiZXhwIjoxNzc5MjgwMzI4LCJpc3MiOiJwdWItMTMxNzY3MyIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.8HhHbrhAxnGbpE8ERPgkxD6KUcFny-yQkdv9a12r8mk
-- **Length:** 19746 chars
+- **URL:** https://1wwzn.mjt.lu/lnk/AUYAAJZ_u8sAAc7fQ14AA-_j058AAYKJInQAoTMkADFx-wBp5jXkibhiNlxtRNuEx5QBNOwcYAAtKWs/1/9mSJc43-7nDqZV5furqtXw/aHR0cHM6Ly9tYXJ0aW5hbGRlcnNvbi5jb20vcG9zdHMvZmlnbWFzLXdvZXMtY29tcG91bmQtd2l0aC1jbGF1ZGUtZGVzaWduLz91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bW9udGhseQ
+- **Length:** 7937 chars
 
-> Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv and feedback from readers. If you’d like to support this, please subscribe.
-> Huawei’s HiFloat4 training format beats Western-developed MXFP4 in Ascend chip bakeoff:
-> …Could this also be a symptom of the impact of export controls in driving Chinese interest towards maximizing training and inference efficiency? Perhaps…
-> Huawei researchers have tested out HiFloat4, a 4-bit precision format for AI training and inference, aga
+> I think Figma is increasingly becoming a go-to case study in the victims of the so-called "SaaSpocalypse". And Claude Design's recent launch last week just adds a whole new dimension of pain.
+> What happened to Figma?
+> Firstly, I should say that I love(d?) the Figma product. It's hard to understand now what a big deal Figma's initial product was when it launched in the mid 2010s.
+> The initial product ushered in a whole new category of SaaS - using the nascent WebGL and asm.js technologies to allow d
 
-## 2. Jack Clark | Substack
+## 2. Has Mythos just broken the deal that kept the internet safe?
 
-- **URL:** https://substack.com/@importai
-- **Length:** 126 chars
+- **URL:** https://1wwzn.mjt.lu/lnk/AUYAAJZ_u8sAAc7fQ14AA-_j058AAYKJInQAoTMkADFx-wBp5jXkibhiNlxtRNuEx5QBNOwcYAAtKWs/2/S7r8Mdm-EAwLV2uHRGiWrQ/aHR0cHM6Ly9tYXJ0aW5hbGRlcnNvbi5jb20vcG9zdHMvaGFzLW15dGhvcy1qdXN0LWJyb2tlbi10aGUtZGVhbC10aGF0LWtlcHQtdGhlLWludGVybmV0LXNhZmUvP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1tb250aGx5
+- **Length:** 8650 chars
 
-> Co-founder of Anthropic. Longtime newsletter writer. I am obsessed with AI and its implications for society.
-> Subscribe
-> Message
+> For nearly 20 years the deal has been simple: you click a link, arbitrary code runs on your device, and a stack of sandboxes keeps that code from doing anything nasty. Browser sandboxes for untrusted JavaScript, VM sandboxes for multi-tenant cloud, ad iframes so banner creatives can't take over your phone or laptop - the modern internet is built on the assumption that those sandboxes hold. Anthropic just shipped a research preview that generates working exploits for one of them 72.4% of the time
 
-## 3. Import AI 454: Automating alignment research; safety study of a Chinese model; HiFloat4
+## 3. What next for the compute crunch?
 
-- **URL:** https://substack.com/app-link/post?publication_id=1317673&post_id=194734453&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ3MzQ0NTMsImlhdCI6MTc3NjY4ODMyOCwiZXhwIjoxNzc5MjgwMzI4LCJpc3MiOiJwdWItMTMxNzY3MyIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.8HhHbrhAxnGbpE8ERPgkxD6KUcFny-yQkdv9a12r8mk
-- **Length:** 19746 chars
+- **URL:** https://1wwzn.mjt.lu/lnk/AUYAAJZ_u8sAAc7fQ14AA-_j058AAYKJInQAoTMkADFx-wBp5jXkibhiNlxtRNuEx5QBNOwcYAAtKWs/3/Rv6-FRutZ48jvoKOGv063A/aHR0cHM6Ly9tYXJ0aW5hbGRlcnNvbi5jb20vcG9zdHMvd2hhdC1uZXh0LWZvci10aGUtY29tcHV0ZS1jcnVuY2gvP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1tb250aGx5
+- **Length:** 7161 chars
 
-> Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv and feedback from readers. If you’d like to support this, please subscribe.
-> Huawei’s HiFloat4 training format beats Western-developed MXFP4 in Ascend chip bakeoff:
-> …Could this also be a symptom of the impact of export controls in driving Chinese interest towards maximizing training and inference efficiency? Perhaps…
-> Huawei researchers have tested out HiFloat4, a 4-bit precision format for AI training and inference, aga
+> I thought it'd be a good time to continue on the same theme as my previous two articles
+> The Coming AI Compute Crunch
+> and
+> Is the AI Compute Crunch Here?
+> given that both OpenAI and Anthropic are now publicly agreeing they are (very?) compute starved.
+> Usage is absolutely exploding
+> I came across this really interesting
+> tweet
+> from the COO of GitHub which really underlines the scale of change that the world is seeing now:
+> This shows that GitHub
+> in the last 3 months
+> (!) has seen a ~14x annualised incre
 
-## 4. Import AI 454: Automating alignment research; safety study of a Chinese model; HiFloat4
+## 4. Telnyx, LiteLLM and Axios: the supply chain crisis
 
-- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvaW1wb3J0YWkvcC9pbXBvcnQtYWktNDU0LWF1dG9tYXRpbmctYWxpZ25tZW50P3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtcmVzdGFjay1jb21tZW50JmFjdGlvbj1yZXN0YWNrLWNvbW1lbnQmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam94T1RRM016UTBOVE1zSW1saGRDSTZNVGMzTmpZNE9ETXlPQ3dpWlhod0lqb3hOemM1TWpnd016STRMQ0pwYzNNaU9pSndkV0l0TVRNeE56WTNNeUlzSW5OMVlpSTZJbkJ2YzNRdGNtVmhZM1JwYjI0aWZRLjhIaEhicmhBeG5HYnBFOEVSUGdreEQ2S1VjRm55LXlRa2R2OWExMnI4bWsiLCJwIjoxOTQ3MzQ0NTMsInMiOjEzMTc2NzMsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3NjY4ODMyOCwiZXhwIjoyMDkyMjY0MzI4LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.n84XJj9aQnJUv6a_UR9y2kiAOVznM81PBShsB-9aPuw?&utm_source=substack&utm_medium=email
-- **Length:** 19746 chars
+- **URL:** https://1wwzn.mjt.lu/lnk/AUYAAJZ_u8sAAc7fQ14AA-_j058AAYKJInQAoTMkADFx-wBp5jXkibhiNlxtRNuEx5QBNOwcYAAtKWs/4/sF0M6shKF_qHz_7uoyph7Q/aHR0cHM6Ly9tYXJ0aW5hbGRlcnNvbi5jb20vcG9zdHMvdGVsbnl4LWxpdGVsbG0tYXhpb3Mtc3VwcGx5LWNoYWluLWNyaXNpcy8_dXRtX3NvdXJjZT1uZXdzbGV0dGVyJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW1vbnRobHk
+- **Length:** 7847 chars
 
-> Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv and feedback from readers. If you’d like to support this, please subscribe.
-> Huawei’s HiFloat4 training format beats Western-developed MXFP4 in Ascend chip bakeoff:
-> …Could this also be a symptom of the impact of export controls in driving Chinese interest towards maximizing training and inference efficiency? Perhaps…
-> Huawei researchers have tested out HiFloat4, a 4-bit precision format for AI training and inference, aga
+> While the world's been watching physical supply chains, a different kind of supply chain attack has been escalating in the open source ecosystem.
+> The issue
+> Over the past week a group of bad actors have been compromising various open source projects, pushing malicious versions of libraries which inject a trojan that collects sensitive data from systems that install the malicious version.
+> Ironically, the first attack started with
+> Trivy
+> , an open source package for
+> finding
+> security vulnerabilities.
 
-## 5. Introducing the Substack app
+## 5. A little tool to visualise MoE expert routing
 
-- **URL:** https://open.substack.com/pub/importai/p/import-ai-454-automating-alignment?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
-- **Length:** 115 chars
+- **URL:** https://1wwzn.mjt.lu/lnk/AUYAAJZ_u8sAAc7fQ14AA-_j058AAYKJInQAoTMkADFx-wBp5jXkibhiNlxtRNuEx5QBNOwcYAAtKWs/5/YnySeskPxdGG6s05QdPVnA/aHR0cHM6Ly9tYXJ0aW5hbGRlcnNvbi5jb20vcG9zdHMvbW9lLWV4cGVydC1yb3V0aW5nLXZpc3VhbGl6YXRpb24vP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1tb250aGx5
+- **Length:** 1669 chars
 
-> World-class video, podcasts, and writing
-> The best stories, ideas, and culture right at your fingertips.
-> Get the app
+> I've been curious for a while about what's actually happening inside Mixture of Experts models when they generate tokens. Nearly every frontier model these days (Qwen 3.5, DeepSeek, Kimi, and almost certainly Opus and GPT-5.x) is a MoE - but it's hard to get an intuition for what "expert routing" actually looks like in practice.
+> So I built a small tool to visualise it:
+> moe-viz.martinalderson.com
+> You can pick between a few different prompts, watch the generation animate out, and see exactly which
 
-## 6. Subscribe to Import AI
+## 6. Using agents and Wine to move off Windows
 
-- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9pbXBvcnRhaS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9cG9zdCZ1dG1fY2FtcGFpZ249ZW1haWwtY2hlY2tvdXQmbmV4dD1odHRwcyUzQSUyRiUyRmltcG9ydGFpLnN1YnN0YWNrLmNvbSUyRnAlMkZpbXBvcnQtYWktNDU0LWF1dG9tYXRpbmctYWxpZ25tZW50JnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKcFlYUWlPakUzTnpZMk9EZ3pNamdzSW1WNGNDSTZNVGMzT1RJNE1ETXlPQ3dpYVhOeklqb2ljSFZpTFRFek1UYzJOek1pTENKemRXSWlPaUpqYUdWamEyOTFkQ0o5LklmSDh0TVlHUUlkWkxkUXBlM3V1UHVJdWk2anhHQWJTdGU3WlQyTnZzZmsiLCJwIjoxOTQ3MzQ0NTMsInMiOjEzMTc2NzMsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3NjY4ODMyOCwiZXhwIjoyMDkyMjY0MzI4LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.H_lhLT6hQsoRmIwDWsS7BScqnO2tATQB2JU3qAOk4v0?&utm_medium=email&utm_source=subscribe-widget&utm_content=194734453
-- **Length:** 112 chars
+- **URL:** https://1wwzn.mjt.lu/lnk/AUYAAJZ_u8sAAc7fQ14AA-_j058AAYKJInQAoTMkADFx-wBp5jXkibhiNlxtRNuEx5QBNOwcYAAtKWs/6/oOAhGpG22Re0NnP12rwSqQ/aHR0cHM6Ly9tYXJ0aW5hbGRlcnNvbi5jb20vcG9zdHMvdXNpbmctYWdlbnRzLWFuZC13aW5lLXRvLW1vdmUtb2ZmLXdpbmRvd3MvP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1tb250aGx5
+- **Length:** 6692 chars
 
-> My gratitude for your help in supporting the newsletter! Contribute to zany special projects! Pay what you like.
+> I don't think people have fully internalised how good agents are at reverse engineering code. I had one take a Windows app rated "garbage" for Wine compatibility and get it working on Linux: decompiling DLLs, writing code caves, patching assembly. Equally, they're superb at the kind of sysadmin tasks that make desktop Linux painful.
+> I've been increasingly unhappy running Windows on my main workstation (I still love Apple hardware for laptops, though). While Windows Subsystem for Linux is pretty 
 
-## 7. Import AI 386: Google’s chip-designing AI keeps getting better; China does the simplest thing with Emu3; Huawei’s 8-bit data format
+## 7. Our most capable open models to date
 
-- **URL:** https://substack.com/redirect/b8f41fa5-d440-4318-85ea-7b607f998e3d?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 14902 chars
+- **URL:** https://1wwzn.mjt.lu/lnk/AUYAAJZ_u8sAAc7fQ14AA-_j058AAYKJInQAoTMkADFx-wBp5jXkibhiNlxtRNuEx5QBNOwcYAAtKWs/7/jPUDqOx4xLkLwU7JoPK8Ug/aHR0cHM6Ly9ibG9nLmdvb2dsZS9pbm5vdmF0aW9uLWFuZC1haS90ZWNobm9sb2d5L2RldmVsb3BlcnMtdG9vbHMvZ2VtbWEtNC8
+- **Length:** 2971 chars
 
-> Welcome to Import AI, a newsletter about AI research. Import AI runs on lattes, ramen, and feedback from readers. If you’d like to support this, please
-> subscribe
+> At the edge, our E2B and E4B models redefine on-device utility, prioritizing multimodal capabilities, low-latency processing and seamless ecosystem integration over raw parameter count.
+> Powerful, accessible, open
+> To power the next generation of pioneering research and products, we've sized the Gemma 4 models specifically to run and fine-tune efficiently on hardware — from billions of Android devices worldwide, to laptop GPUs, all the way up to developer workstations and accelerators.
+> By using th
+
+## 8. Martin Alderson
+
+- **URL:** https://1wwzn.mjt.lu/lnk/AUYAAJZ_u8sAAc7fQ14AA-_j058AAYKJInQAoTMkADFx-wBp5jXkibhiNlxtRNuEx5QBNOwcYAAtKWs/9/RAXEJOI-ijd_a6kxnxKPTg/aHR0cHM6Ly9tYXJ0aW5hbGRlcnNvbi5jb20vP3V0bV9zb3VyY2U9bmV3c2xldHRlciZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1tb250aGx5
+- **Length:** 409 chars
+
+> Martin Alderson
+> Cofounder at
+> catchmetrics.io
 > .
-> Get a visceral feel for how powerful modern AI video tools are:
-> …Pika 1.5 has a very fun and kind of dumb demo you should all try…
-> AI startup Pika has released Pika 1.5, its latest video generation model. They’ve accompanied the release with an extremely fun demo where you can upload any image you like and apply effects to it, ranging
+> I write about the intersection of software engineering and economics, with a focus on the AI transformation. I've worked on dozens of enterprise software projects and enjoy the balance between commercial success and pragmatic technical excellence.
+> "A lot of great/interesting reading, thank you!"
+> Andrej Karpathy
+> ,
+> OpenAI co-founder
+> Top 100 Hacker News Blog 2025
 
-## 8. [2604.08826] HiFloat4 Format for Language Model Pre-training on Ascend NPUs
+## 9. Figma's woes compound with Claude Design
 
-- **URL:** https://substack.com/redirect/83c80ff1-f353-464d-b53e-d2ff5aa2347f?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 2217 chars
+- **URL:** https://1wwzn.mjt.lu/lnk/AUYAAJZ_u8sAAc7fQ14AA-_j058AAYKJInQAoTMkADFx-wBp5jXkibhiNlxtRNuEx5QBNOwcYAAtKWs/0/_I2trtHLn8IlV9aIAfDycQ/aHR0cHM6Ly9tYXJ0aW5hbGRlcnNvbi5jb20vcG9zdHMvZmlnbWFzLXdvZXMtY29tcG91bmQtd2l0aC1jbGF1ZGUtZGVzaWduLz91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bW9udGhseQ?b=1
+- **Length:** 7937 chars
 
-> [Submitted on 9 Apr 2026]
-> Title:
-> HiFloat4 Format for Language Model Pre-training on Ascend NPUs
-> Authors:
-> Mehran Taghian
-> ,
-> Yunke Peng
-> ,
-> Xing Huang
-> ,
-> Yao Wang
-> ,
-> Yaoyuan Wang
-> ,
-> Wei Guo
-> ,
-> Yuanyong Luo
-> ,
-> Tianchi Hu
-> ,
-> Junsong Wang
-> ,
-> Xin Wang
-> ,
-> Hu Liu
-> ,
-> Yu Cheng
-> ,
-> Ziwei Yu
-> ,
-> Hongliang Li
-> ,
-> Mehdi Rahimifar
-> ,
-> Lei Yan
-> ,
-> Xuefei Wang
-> ,
-> Zhuang Ma
-> ,
-> Lei Liu
-> ,
-> Hui Yu
-> ,
-> Anandharaju Durai Raju
-> ,
-> Hoang Le
-> ,
-> Hei Yi Mak
-> ,
-> Tanzila Rahman
-> ,
-> Shadan Golestan
-> View a PDF of the paper titled HiFloat4 Format for Language M
+> I think Figma is increasingly becoming a go-to case study in the victims of the so-called "SaaSpocalypse". And Claude Design's recent launch last week just adds a whole new dimension of pain.
+> What happened to Figma?
+> Firstly, I should say that I love(d?) the Figma product. It's hard to understand now what a big deal Figma's initial product was when it launched in the mid 2010s.
+> The initial product ushered in a whole new category of SaaS - using the nascent WebGL and asm.js technologies to allow d
 
-## 9. Automated Alignment Researchers: Using large language models to scale scalable oversight
+## 10. Figma's woes compound with Claude Design
 
-- **URL:** https://substack.com/redirect/8148a328-514f-4b3e-9206-25accf3588c3?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 12153 chars
+- **URL:** https://1wwzn.mjt.lu/lnk/AUYAAJZ_u8sAAc7fQ14AA-_j058AAYKJInQAoTMkADFx-wBp5jXkibhiNlxtRNuEx5QBNOwcYAAtKWs/0/_I2trtHLn8IlV9aIAfDycQ/aHR0cHM6Ly9tYXJ0aW5hbGRlcnNvbi5jb20vcG9zdHMvZmlnbWFzLXdvZXMtY29tcG91bmQtd2l0aC1jbGF1ZGUtZGVzaWduLz91dG1fc291cmNlPW5ld3NsZXR0ZXImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bW9udGhseQ?b=3
+- **Length:** 7937 chars
 
-> Large language models’ ever-accelerating rate of improvement raises two particularly important questions for alignment research.
-> One is how alignment can keep up. Frontier AI models are now contributing to the development of their successors. But can they provide the same kind of uplift for
-> alignment
-> researchers? Could our language models be used to help align themselves?
-> A second question is what we’ll do once models become smarter than us. Aligning smarter-than-human AI models is a research ar
-
-## 10. Automated Weak-to-Strong Researcher
-
-- **URL:** https://substack.com/redirect/23306969-bf8b-4153-8790-7db16ef49b99?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 32536 chars
-
-> Jiaxin Wen*, Liang Qiu*, Joe Benton, Jan Hendrik Kirchner, Jan Leike
-> TL;DR:
-> We built autonomous AI agents that propose ideas, run experiments, and iterate on an open research problem: how to train a strong model using only a weaker model's supervision. These agents outperform human researchers, suggesting that automating this kind of research is already practical.
-> Research partially done as part of the Anthropic Fellows Program.
-> Code available here:
-> https://github.com/safety-research/automated-w
-
-## 11. Substack | Signup
-
-- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoxOTQ3MzQ0NTMsInMiOjEzMTc2NzMsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3NjY4ODMyOCwiZXhwIjoyMDkyMjY0MzI4LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.nw2vTwGQ5fA4GnckhtUMlsvh8lgRsmplBRW-48KG0d4?
-- **Length:** 156 chars
-
-> Create your account
-> Sign up now, and publishing is free forever. Once you start charging for subscriptions, you keep 90% after credit card transaction fees.
+> I think Figma is increasingly becoming a go-to case study in the victims of the so-called "SaaSpocalypse". And Claude Design's recent launch last week just adds a whole new dimension of pain.
+> What happened to Figma?
+> Firstly, I should say that I love(d?) the Figma product. It's hard to understand now what a big deal Figma's initial product was when it launched in the mid 2010s.
+> The initial product ushered in a whole new category of SaaS - using the nascent WebGL and asm.js technologies to allow d
 
