@@ -31,8 +31,7 @@ accounts:
   - multi-agent
   - education
   - back-of-house
-  notes: AI agent educator. Co-authored Back of House multi-agent patterns with @0xSero.
-    Critiqued single-agent ceiling and sloperator anti-pattern.
+  notes: AI agent educator. Co-authored Back of House multi-agent patterns with @0xSero. Critiqued single-agent ceiling and sloperator anti-pattern.
 - handle: '@teknium'
   name: Teknium
   topics:
@@ -434,8 +433,7 @@ accounts:
   - open-source-models
   - fine-tuning
   - uncensored-models
-  notes: Creator of Dolphin models, uncensored/unaligned model advocate, cognitive
-    computations
+  notes: Creator of Dolphin models, uncensored/unaligned model advocate, cognitive computations
 - handle: '@emollick'
   name: Ethan Mollick
   blog: https://www.oneusefulthing.org
@@ -444,8 +442,7 @@ accounts:
   - education
   - productivity
   - ai-adoption
-  notes: Wharton professor, 'One Useful Thing' blog, AI adoption researcher, 'Co-Intelligence'
-    author
+  notes: Wharton professor, 'One Useful Thing' blog, AI adoption researcher, 'Co-Intelligence' author
 - handle: '@clefourrier'
   name: Clémentine Fourrier
   blog: https://clefourrier.github.io
@@ -501,8 +498,7 @@ accounts:
   - ml-systems
   - ml-ops
   - education
-  notes: Author of 'Designing ML Systems' and 'AI Engineering', Stanford lecturer,
-    ML systems expert
+  notes: Author of 'Designing ML Systems' and 'AI Engineering', Stanford lecturer, ML systems expert
 - handle: '@karpathy'
   name: Andrej Karpathy
   blog: https://karpathy.bearblog.dev/
@@ -513,8 +509,7 @@ accounts:
   - education
   - coding-agents
   - open-source
-  notes: OpenAI co-founder, ex-Tesla AI Director, Eureka Labs founder. Coined 'vibe
-    coding' and 'agentic engineering'. YouTube 'Zero to Hero' series.
+  notes: OpenAI co-founder, ex-Tesla AI Director, Eureka Labs founder. Coined 'vibe coding' and 'agentic engineering'. YouTube 'Zero to Hero' series.
   github: karpathy
 - handle: '@simonw'
   name: Simon Willison
@@ -526,8 +521,7 @@ accounts:
   - coding-agents
   - open-source
   - web-development
-  notes: Co-founder of Lanyrd, creator of Datasette. AI educator and blogger. Discussed
-    'agentic engineering' on Lenny's Podcast.
+  notes: Co-founder of Lanyrd, creator of Datasette. AI educator and blogger. Discussed 'agentic engineering' on Lenny's Podcast.
   github: simonw
 - handle: '@_lopopolo'
   name: Ryan Lopopolo
@@ -536,9 +530,7 @@ accounts:
   - ai
   - coding-agents
   - developer-tools
-  notes: OpenAI Frontier. Creator of 'Harness Engineering' concept. Built Symphony
-    (Elixir-based multi-agent orchestration). Previously at Snowflake, Brick, Stripe,
-    Citadel.
+  notes: OpenAI Frontier. Creator of 'Harness Engineering' concept. Built Symphony (Elixir-based multi-agent orchestration). Previously at Snowflake, Brick, Stripe, Citadel.
   github: lopopolo
 - handle: '@bcherny'
   name: Boris Cherny
@@ -548,8 +540,7 @@ accounts:
   - coding-agents
   - developer-tools
   - typescript
-  notes: Creator and head of Claude Code at Anthropic. Author of 'Programming TypeScript'
-    (O'Reilly). Believes 'coding is solved'. Previously at Instagram.
+  notes: Creator and head of Claude Code at Anthropic. Author of 'Programming TypeScript' (O'Reilly). Believes 'coding is solved'. Previously at Instagram.
   github: bcherny
 - handle: '@addyosmani'
   name: Addy Osmani
@@ -559,9 +550,7 @@ accounts:
   - coding-agents
   - web-development
   - developer-experience
-  notes: Engineering Lead at Google (Chrome & Web Platform). Wrote extensively on
-    agentic coding, conductors vs orchestrators, self-improving coding agents, Claude
-    Code swarms.
+  notes: Engineering Lead at Google (Chrome & Web Platform). Wrote extensively on agentic coding, conductors vs orchestrators, self-improving coding agents, Claude Code swarms.
   github: addyosmani
 - handle: '@thdxr'
   name: Dax Raad
@@ -571,8 +560,7 @@ accounts:
   - coding-agents
   - developer-tools
   - open-source
-  notes: Creator of OpenCode (open source AI coding agent for terminal), SST founder.
-    Focus on TUI-first developer experience, multi-agent parallel sessions.
+  notes: Creator of OpenCode (open source AI coding agent for terminal), SST founder. Focus on TUI-first developer experience, multi-agent parallel sessions.
   github: thdxr
 - handle: '@realmcore_'
   name: Akira (Random Labs)
@@ -581,9 +569,7 @@ accounts:
   - coding-agents
   - swarm-intelligence
   - rlm
-  notes: Creator of Slate — first swarm-native coding agent using Thread Weaving architecture
-    for persistent context in long-horizon engineering. Random Labs co-founder, YC
-    S24. Advocate of RLM for coding.
+  notes: Creator of Slate — first swarm-native coding agent using Thread Weaving architecture for persistent context in long-horizon engineering. Random Labs co-founder, YC S24. Advocate of RLM for coding.
   github: random-labs
 - handle: '@a1zhang'
   name: Alex Zhang
@@ -594,9 +580,7 @@ accounts:
   - reinforcement-learning
   - ml-systems
   - open-source
-  notes: MIT CSAIL PhD student (advised by Omar Khattab & Tim Kraska). Proposed Recursive
-    Language Models (RLMs). GPU MODE community core. Runs GPU MODE leaderboard with
-    NVIDIA. Works on KernelBench, VideoGameBench, SWE-bench Multimodal.
+  notes: MIT CSAIL PhD student (advised by Omar Khattab & Tim Kraska). Proposed Recursive Language Models (RLMs). GPU MODE community core. Runs GPU MODE leaderboard with NVIDIA. Works on KernelBench, VideoGameBench, SWE-bench Multimodal.
   github: alexzhang13
 - handle: '@danielhanchen'
   name: Daniel Han
@@ -607,9 +591,7 @@ accounts:
   - reinforcement-learning
   - open-source-models
   - ml-systems
-  notes: Creator of Unsloth — makes fine-tuning & RL (GRPO, LoRA, QLoRA) accessible
-    with 2x speed and 70% less VRAM. Collaborates with HuggingFace & NVIDIA on RL
-    courses. 100K+ models trained with Unsloth on HF.
+  notes: Creator of Unsloth — makes fine-tuning & RL (GRPO, LoRA, QLoRA) accessible with 2x speed and 70% less VRAM. Collaborates with HuggingFace & NVIDIA on RL courses. 100K+ models trained with Unsloth on HF.
   github: danielhanchen
 - handle: '@xeophon'
   name: Florian Brand
@@ -619,9 +601,7 @@ accounts:
   - reinforcement-learning
   - distributed-training
   - open-source
-  notes: Prime Intellect engineer. Contributor to PRIME-RL, Verifiers, Environments
-    Hub. Works on distributed RL training infrastructure and open superintelligence
-    stack.
+  notes: Prime Intellect engineer. Contributor to PRIME-RL, Verifiers, Environments Hub. Works on distributed RL training infrastructure and open superintelligence stack.
   github: xeophon
 - handle: '@shloked'
   name: Shlok Khemani
@@ -631,11 +611,7 @@ accounts:
   - memory-systems
   - coding-agents
   - competitive-analysis
-  notes: Writer & programmer (Gurgaon, IN). Focuses on AI memory systems, coding agent
-    competitive analysis, and agentic commerce. Authored key analyses on ChatGPT Memory
-    vs Claude Memory, Anthropic's Memory Tool (6 file operations), and Cognition/Devin's
-    strategy. Built claude-memory-tools (Python CLI + Next.js), OpenPoke, Centaur,
-    Chatferry, Conjure. Previously at Decentralised.co (crypto). Looking for a cofounder.
+  notes: Writer & programmer (Gurgaon, IN). Focuses on AI memory systems, coding agent competitive analysis, and agentic commerce. Authored key analyses on ChatGPT Memory vs Claude Memory, Anthropic's Memory Tool (6 file operations), and Cognition/Devin's strategy. Built claude-memory-tools (Python CLI + Next.js), OpenPoke, Centaur, Chatferry, Conjure. Previously at Decentralised.co (crypto). Looking for a cofounder.
   github: shlokkhemani
 - handle: '@DRMacIver'
   name: David R. MacIver
@@ -646,10 +622,7 @@ accounts:
   - software-engineering
   - ai-evals
   - ai
-  notes: Creator of Hypothesis (Python property-based testing, 2M+ downloads/month).
-    Ex-Google, ex-Anthropic (model evaluations). Expert in test-case reduction (Shrinkray).
-    Currently at Antithesis on Hegel. ~90% of code AI-drafted (Claude Code) but carefully
-    reviewed. Writes on software correctness, LLM evals, probabilistic programming.
+  notes: Creator of Hypothesis (Python property-based testing, 2M+ downloads/month). Ex-Google, ex-Anthropic (model evaluations). Expert in test-case reduction (Shrinkray). Currently at Antithesis on Hegel. ~90% of code AI-drafted (Claude Code) but carefully reviewed. Writes on software correctness, LLM evals, probabilistic programming.
   github: DRMacIver
 - handle: '@teortaxesTex'
   name: TeortaxesTex
@@ -659,11 +632,16 @@ accounts:
   - ai-geopolitics
   - ai-bubble-economics
   - open-source-models
-  notes: DeepSeek advocate ('#1 stan, 2023–Deep Time'). Prolific X commentator bridging
-    Chinese and Western AI discourse. Produces 'Teortaxes Rant Collection' on geopolitics,
-    AI infrastructure economics, and the epistemic gap between agency-driven builders
-    (Jensen Huang) and information-driven analysts (Dwarkesh Patel). ~59K followers,
-    ~107K tweets since Sep 2010.
+  notes: DeepSeek advocate ('#1 stan, 2023–Deep Time'). Prolific X commentator bridging Chinese and Western AI discourse. Produces 'Teortaxes Rant Collection' on geopolitics, AI infrastructure economics, and the epistemic gap between agency-driven builders (Jensen Huang) and information-driven analysts (Dwarkesh Patel). ~59K followers, ~107K tweets since Sep 2010.
+- handle: '@JayaGup10'
+  name: Jaya Gupta
+  topics:
+  - ai
+  - agent-infrastructure
+  - vc
+  - context-graphs
+  - enterprise-ai
+  notes: 'Foundation Capital Partner. Co-authored ''AI''s Trillion-Dollar Opportunity: Context Graphs'' (Dec 2025) — thesis that next trillion-dollar platforms = systems capturing decision traces, not just state. Key concepts: two clocks problem, execution path advantage, five-plane architecture, three startup paths.'
 - handle: '@elvissun'
   name: Elvis Sun
   topics:
@@ -672,6 +650,4 @@ accounts:
   - growth
   - pr
   - bootstrapping
-  notes: '4x founder, ex-Google/Firebase. Building Medialyst.ai, PressPulse.ai ($100k+
-    rev), Solar Flare PR. Newsletter: elvis.so. AI-powered growth hacking, vibe-launching,
-    Context Lake system with Claude Code.'
+  notes: '4x founder, ex-Google/Firebase. Building Medialyst.ai, PressPulse.ai ($100k+ rev), Solar Flare PR. Newsletter: elvis.so. AI-powered growth hacking, vibe-launching, Context Lake system with Claude Code.'
