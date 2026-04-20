@@ -115,7 +115,7 @@ await salesforce.updateRecord({
 
 ## 関連概念
 
-- [[../_index]] — 上位インデックス
+- [[_index]] — 上位インデックス
 - [[advanced-tool-use]] — 高度なツール使用（PTCと関連）
 - [[writing-tools-for-agents]] — エージェント用ツール設計
 - [[building-effective-agents]] — エージェント構築の基本原理

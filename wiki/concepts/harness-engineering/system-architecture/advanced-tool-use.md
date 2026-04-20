@@ -176,6 +176,6 @@ print(json.dumps(exceeded))
 
 ## 関連概念
 
-- [[../_index]] — 上位インデックス
+- [[_index]] — 上位インデックス
 - [[writing-tools-for-agents]] — エージェント用ツール設計の5原則
 - [[context-engineering]] — コンテキストエンジニアリング

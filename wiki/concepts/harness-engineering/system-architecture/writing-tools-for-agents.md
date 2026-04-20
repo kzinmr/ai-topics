@@ -142,7 +142,7 @@ enum ResponseFormat {
 
 ## 関連概念
 
-- [[../_index]] — 上位インデックス
+- [[_index]] — 上位インデックス
 - [[advanced-tool-use]] — 高度なツール使用
 - [[building-effective-agents]] — エージェント構築の基本原理
 - [[code-execution-with-mcp]] — MCPとのコード実行

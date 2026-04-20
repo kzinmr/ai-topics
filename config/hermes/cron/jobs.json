@@ -59,7 +59,7 @@
       "schedule_display": "0 16 * * *",
       "repeat": {
         "times": null,
-        "completed": 4
+        "completed": 5
       },
       "enabled": true,
       "state": "scheduled",
@@ -67,7 +67,7 @@
       "paused_reason": null,
       "created_at": "2026-04-12T14:30:36.503091+00:00",
       "next_run_at": "2026-04-21T16:00:00+00:00",
-      "last_run_at": "2026-04-19T16:01:43.492748+00:00",
+      "last_run_at": "2026-04-20T16:10:27.184796+00:00",
       "last_status": "ok",
       "last_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
@@ -326,5 +326,5 @@
       }
     }
   ],
-  "updated_at": "2026-04-20T16:00:20.189992+00:00"
+  "updated_at": "2026-04-20T16:10:27.185812+00:00"
 }

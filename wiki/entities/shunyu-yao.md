@@ -222,7 +222,7 @@ Prime Intellect (building on both researchers' work) captures the synthesis:
 - **[[ReAct]]** — Yao's foundational reasoning+acting paradigm
 - **[[Tree of Thoughts]]** — Search-based deliberation for LLMs
 - **[[Reflexion]]** — Verbal reinforcement learning
-- **[[CoALA]]** — Cognitive architectures for language agents
+- **[[coala]]** — Cognitive architectures for language agents
 - **[[SWE-bench]]** / **[[SWE-agent]]** — Real-world code evaluation
 - **[[tau-bench]]** — Tool-Agent-User interaction benchmark
 - **[[Computer-Using Agent]]** — Yao's current work at OpenAI

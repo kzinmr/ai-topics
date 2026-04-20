@@ -1,3 +1,11 @@
+## 2026-04-20 — GPT Models Concept Page
+
+### New Concept Page
+- `concepts/gpt-models.md` — GPT Model Series (GPT-1 to GPT-5.4, RLHF, o-series reasoning)
+
+### Update
+- `index.md` — Added gpt-models to AI Development & Engineering section
+
 ## 2026-04-20 — Active Crawl + GEPA / LLM-as-Judge / Agent Sandboxing
 
 ### Source

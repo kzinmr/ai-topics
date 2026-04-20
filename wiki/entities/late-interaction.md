@@ -152,7 +152,7 @@ Several presentations focused on deploying late interaction in production:
 ## Related Concepts
 
 - [[ColBERT]] — The foundational late interaction retrieval model
-- [[Jo-Bergum]] — Vespa/Hornet researcher and ColBERT advocate
+- [[jo-bergum]] — Vespa/Hornet researcher and ColBERT advocate
 - [[Information-Retrieval]] — The broader field LIR contributes to
 - [[RAG]] — Retrieval-augmented generation, a primary application area
 - [[Vector-Search]] — The broader embedding search paradigm

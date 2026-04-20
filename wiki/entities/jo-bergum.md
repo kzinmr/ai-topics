@@ -145,7 +145,7 @@ Native ColBERT support in Vespa, enabling explainable semantic search using deep
 ## Related Concepts
 
 - [[ColBERT]] — The late-interaction retrieval model Bergum championed
-- [[Late-Interaction]] — His primary research and engineering focus
+- [[late-interaction]] — His primary research and engineering focus
 - [[Vespa]] — The search engine where he spent 15 years
 - [[Hornet]] — His new company, a retrieval engine for agents
 - [[Agentic-Retrieval]] — The paradigm shift he's building for

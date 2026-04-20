@@ -249,6 +249,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[harness-engineering]] — Harness Engineering (Ryan Lopopolo / OpenAI Symphony)
 - [[llm-evaluation-harness]] — LLM Evaluation Harness
 - [[llm-training-coherence-evolution]] — LLM Training Coherence Evolution (Giles Thomas / gpjt, Karpathy RNN comparison)
+- [[gpt-models]] — GPT Model Series (GPT-1 to GPT-5.4, RLHF, o-series reasoning)
 - [[local-llm]] — Local LLM Inference (llama.cpp, Ollama, GGUF)
    |- [[local-llm/_index]] — Local LLM Ecosystem Overview
    |- [[local-llm/gguf]] — GGUF Quantization Format

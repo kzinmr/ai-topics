@@ -161,8 +161,8 @@ Claudeのメモリが「The Bitter Lesson」に沿った設計であることは
 
 ## 関連エンティティ
 
-- [[OpenAI]] — ChatGPT memory、Codexの開発
-- [[Anthropic]] — Claude Memory、Claude Code
+- [[openai]] — ChatGPT memory、Codexの開発
+- [[anthropic]] — Claude Memory、Claude Code
 - [[Cognition]] — Devin、エージェント特化型メモリ
 - [[Rich Sutton]] — 「The Bitter Lesson」の提唱者
 

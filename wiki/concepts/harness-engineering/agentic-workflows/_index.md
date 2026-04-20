@@ -24,10 +24,10 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 
 | レイヤー | 概念 | 焦点 |
 |---------|------|------|
-| **最上位** | [[../_index\|Harness Engineering]] | Agent = Model + Harness（環境設計哲学） |
-| **横断技術** | [[../context-engineering\|Context Engineering]] | コンテキストの選択・圧縮・配置（有限リソース管理） |
+| **最上位** | [[_index\|Harness Engineering]] | Agent = Model + Harness（環境設計哲学） |
+| **横断技術** | [[context-engineering\|Context Engineering]] | コンテキストの選択・圧縮・配置（有限リソース管理） |
 | **応用（人間側）** | **Agentic Workflows**（本ページ） | 開発者がエージェントを「活用する」パターン |
-| **応用（システム側）** | [[../system-architecture/_index\|System Architecture]] | エージェントを「構築する」パターン |
+| **応用（システム側）** | [[system-architecture/_index\|System Architecture]] | エージェントを「構築する」パターン |
 
 ## リーダー別主要コンセプト
 

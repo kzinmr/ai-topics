@@ -14,7 +14,7 @@ sources:
 
 **Source:** Anthropic Claude Blog + Engineering Blog + Platform Docs (April 2026)
 **Status:** Public Beta on Claude Platform
-**Related:** [[Agent Team / Swarm]], [[Harness Engineering]], [[Meta-Harness]]
+**Related:** [[Agent Team / Swarm]], [[Harness Engineering]], [[meta-harness]]
 
 ---
 
@@ -53,7 +53,7 @@ Context Query:      getEvents() → fetch positional slices
 
 > "We're opinionated about the shape of these interfaces, not about what runs behind them."
 
-Managed Agentsは**メタ・ハーネス**（[[Meta-Harness]]参照）として設計されている。特定の実装には意見を持たず、インターフェース境界だけを厳格に定義する。
+Managed Agentsは**メタ・ハーネス**（[[meta-harness]]参照）として設計されている。特定の実装には意見を持たず、インターフェース境界だけを厳格に定義する。
 
 ---
 
@@ -154,7 +154,7 @@ with client.beta.sessions.events.stream(session.id) as stream:
 
 - [[Agent Team / Swarm]] — 複数Agent協調の上位概念
 - [[Harness Engineering]] — 単一Agentの実行環境設計
-- [[Meta-Harness]] — インターフェース中心の設計哲学
+- [[meta-harness]] — インターフェース中心の設計哲学
 - [[OpenAI Symphony]] — 競合のAgent Teamオーケストレーター
 - [[Dark Factory Software Factory]] — 完全自律開発の最先端事例
 
