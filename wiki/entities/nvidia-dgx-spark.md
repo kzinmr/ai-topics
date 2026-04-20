@@ -105,7 +105,7 @@ DGX Spark is the **reference platform** for NemoClaw — NVIDIA's secure agent d
 - Telegram bot integration for always-on agent access
 - Web dashboard at `http://127.0.0.1:18789`
 
-See [[concepts/local-llm/server-dgx-spark]] for the complete setup guide.
+See [[local-llm/server-dgx-spark]] for the complete setup guide.
 
 ## Market Positioning
 
@@ -132,6 +132,6 @@ See [[concepts/local-llm/server-dgx-spark]] for the complete setup guide.
 ## Related
 
 - [[nvidia-nemoclaw]] — NemoClaw secure agent framework
-- [[concepts/local-llm/server-dgx-spark]] — Setup guide for local LLM server
-- [[concepts/local-llm]] — Local LLM inference overview
+- [[local-llm/server-dgx-spark]] — Setup guide for local LLM server
+- [[local-llm]] — Local LLM inference overview
 - [[jensen-huang]] — NVIDIA CEO, physical AI advocate

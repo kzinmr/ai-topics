@@ -63,7 +63,7 @@ Data Collection → Evaluation → Analysis → Improvement → Data Collection 
 
 ## Related
 
-- [[concepts/ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
-- [[concepts/llm-evaluation-harness]] — LLM Evaluation Harness
+- [[ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
+- [[llm-evaluation-harness]] — LLM Evaluation Harness
 - [[comparisons/eval-tools-comparison]] — AI Eval Tools Comparison
-- [[concepts/infrastructure-noise]] — Infrastructure Noise in Agentic Evals
+- [[infrastructure-noise]] — Infrastructure Noise in Agentic Evals

@@ -69,9 +69,9 @@ Mitchell made Ghostty a non-profit organization, believing that terminal emulato
 
 ## Related
 
-- [[concepts/harness-engineering]] — Mitchell's methodology for preventing recurring agent mistakes
+- [[harness-engineering]] — Mitchell's methodology for preventing recurring agent mistakes
 - [[ghostty]] — Terminal emulator project, now non-profit
-- [[concepts/agentic-engineering]] — Agent-first development workflows
+- [[agentic-engineering]] — Agent-first development workflows
 - [[hashicorp]] — Infrastructure-as-code company Mitchell co-founded
 
 ## Sources

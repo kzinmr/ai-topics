@@ -31,7 +31,7 @@ Zuckerberg's vision positions AI not as a central automator of work, but as a **
 
 This contrasts with OpenAI/Anthropic's **central automation** model ("AI does everything for you") — Meta wants AI to do everything **you want**, using your data, on your behalf.
 
-See also: [[concepts/personal-superintelligence]]
+See also: [[personal-superintelligence]]
 
 ### Muse Spark
 
@@ -71,7 +71,7 @@ Meta pioneered open-source frontier models with the LLaMA series, creating the e
 - "rip LLaMA" — departure from open-source tradition
 - Possible two-track strategy: open models for community goodwill, closed models for competitive advantage
 
-See also: [[concepts/open-source-vs-closed]]
+See also: [[open-source-vs-closed]]
 
 ## Key People
 
@@ -82,10 +82,10 @@ See also: [[concepts/open-source-vs-closed]]
 
 ## Related
 
-- [[concepts/personal-superintelligence]] — Meta's core AI philosophy
-- [[concepts/meta-muse-spark]] — Muse Spark model details
-- [[concepts/open-claw-ecosystem]] — Community personal agent framework
-- [[concepts/anthropic-openclaw-conflict]] — Platform control vs open access
+- [[personal-superintelligence]] — Meta's core AI philosophy
+- [[meta-muse-spark]] — Muse Spark model details
+- [[open-claw-ecosystem]] — Community personal agent framework
+- [[anthropic-openclaw-conflict]] — Platform control vs open access
 - [[llama]]
 - [[anthropic]]
 - [[openai]]

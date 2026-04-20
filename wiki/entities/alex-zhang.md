@@ -119,7 +119,7 @@ Co-authored with Zhening (Zed) Li and Omar Khattab, MGH posits that **frontier l
 
 MGH extends the RLM framework into a broader industry thesis: **stop building bigger models, start building better scaffolds.**
 
-See: [[concepts/mismanaged-geniuses-hypothesis]]
+See: [[mismanaged-geniuses-hypothesis]]
 
 ## GPU MODE & Benchmarking
 

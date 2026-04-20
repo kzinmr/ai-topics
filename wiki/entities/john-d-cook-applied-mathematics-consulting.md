@@ -98,9 +98,9 @@ The common thread is **curiosity-driven mathematical exploration**. He finds som
 
 ## Related
 
-- [[concepts/formal-methods]] — Proving correctness properties for critical systems
-- [[concepts/ai-reliability]] — The correctness conundrum in AI systems
-- [[concepts/data-privacy]] — HIPAA expert determination and differential privacy
+- [[formal-methods]] — Proving correctness properties for critical systems
+- [[ai-reliability]] — The correctness conundrum in AI systems
+- [[data-privacy]] — HIPAA expert determination and differential privacy
 - [[terence-tao]] — Mathematician whose work intersects with Cook's analysis of AI-assisted discovery
 
 ## Sources

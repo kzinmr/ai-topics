@@ -78,7 +78,7 @@ User Request → Agent generates Plan → Human reviews (optional) → Agent exe
 
 ## Related
 
-- [[concepts/agent-loop-orchestration]] — Agent Loop Orchestration
-- [[concepts/openai-symphony]] — OpenAI Symphony (WORKFLOW.md駆動)
-- [[concepts/compound-engineering-loop]] — Compound Engineering Loop
-- [[concepts/closing-agent-loop]] — Closing the Agent Loop
+- [[agent-loop-orchestration]] — Agent Loop Orchestration
+- [[openai-symphony]] — OpenAI Symphony (WORKFLOW.md駆動)
+- [[compound-engineering-loop]] — Compound Engineering Loop
+- [[closing-agent-loop]] — Closing the Agent Loop

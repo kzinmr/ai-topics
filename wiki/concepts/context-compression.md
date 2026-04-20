@@ -97,7 +97,7 @@ Related: [[context-window-management]] discusses how to organize compressed cont
 - [[context-engineering]] — Parent concept, compression is a core technique
 - [[context-window-management]] — How to organize compressed context
 - [[token-economics]] — Compression reduces token costs
-- [[concepts/harness-engineering/system-architecture/context-compaction]] — Context compaction in agent systems
+- [[harness-engineering/system-architecture/context-compaction]] — Context compaction in agent systems
 
 ## Sources
 

@@ -206,9 +206,9 @@ Brown's work on reasoning models directly extends his game AI research:
 - [[hunter-lightman]] — OpenAI colleague; Project Strawberry
 - [[ilya-sutskever]] — OpenAI co-founder; Q* project (related to reasoning)
 - [[sam-altman]] — OpenAI CEO
-- [[concepts/game-theory]] — Brown's theoretical foundation
-- [[concepts/ai-reasoning]] — o1/o3 models represent this paradigm
-- [[concepts/multi-agent-systems]] — CICERO and Pluribus
+- [[game-theory]] — Brown's theoretical foundation
+- [[ai-reasoning]] — o1/o3 models represent this paradigm
+- [[multi-agent-systems]] — CICERO and Pluribus
 
 ## Sources
 

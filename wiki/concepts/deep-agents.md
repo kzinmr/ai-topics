@@ -3,11 +3,11 @@ name: Deep Agents
 type: concept
 tags: [ai-agents, autonomy, planning, file-operations, delegation, sandbox]
 related:
-  - [[concepts/pydantic-ai]]
-  - [[concepts/harness-engineering]]
-  - [[concepts/sandbox/in-process]]
-  - [[concepts/sandbox/infrastructure]]
-  - [[concepts/sandbox/js-runtime]]
+  - [[pydantic-ai]]
+  - [[harness-engineering]]
+  - [[sandbox/in-process]]
+  - [[sandbox/infrastructure]]
+  - [[sandbox/js-runtime]]
   - [[samuel-colvin]]
 depth: L2
 status: complete
@@ -63,8 +63,8 @@ Deep agents require secure code execution environments. Options include:
 
 ## Related
 
-- [[concepts/pydantic-ai]] — Framework supporting deep agents
-- [[concepts/harness-engineering]] — Environment design for autonomous agents
-- [[concepts/code-mode]] — Code execution for deep agents
-- [[concepts/monty-sandbox]] — Secure execution environment
+- [[pydantic-ai]] — Framework supporting deep agents
+- [[harness-engineering]] — Environment design for autonomous agents
+- [[code-mode]] — Code execution for deep agents
+- [[monty-sandbox]] — Secure execution environment
 - [[samuel-colvin]] — Pydantic AI creator

@@ -90,9 +90,9 @@ OpenClawのスキル拡張は**ClawHub**を通じて配布される：
 
 ## 関連
 
-- [[concepts/openclaw/_index]] — OpenClawコンセプト集約
-- [[concepts/openclaw/five-tier-precedence]] — スキル優先度モデル
+- [[openclaw/_index]] — OpenClawコンセプト集約
+- [[openclaw/five-tier-precedence]] — スキル優先度モデル
 - [[peter-steinberger]] — 開発者
-- [[concepts/mcp-model-context-protocol]] — Model Context Protocol
+- [[mcp-model-context-protocol]] — Model Context Protocol
 - [[nvidia-nemoclaw]] — NVIDIAエンタープライズ版
-- [[concepts/local-first-software]] — ローカルファーストソフトウェア運動
+- [[local-first-software]] — ローカルファーストソフトウェア運動

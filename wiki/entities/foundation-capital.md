@@ -4,7 +4,7 @@ description: "Venture capital firm that published 'AI's Trillion-Dollar Opportun
 tags: [company, vc, foundation-capital, context-graph, investor]
 status: complete
 related:
-  - "[[concepts/context-graph]]"  # Their core thesis
+  - "[[context-graph]]"  # Their core thesis
   - "[[jaya-gupta]]"     # Partner who co-authored the article
   - "[[playerzero]]"     # Path 3 startup in their portfolio
 status: complete
@@ -67,7 +67,7 @@ Key criticisms:
 
 ## Related
 
-- [[concepts/context-graph]] — The main concept page
+- [[context-graph]] — The main concept page
 - [[jaya-gupta]] — Partner who co-authored the article
 - [[playerzero]] — Path 3 startup (context graph as engineering world model)
 - [[arize]] — Observability layer mentioned in the article

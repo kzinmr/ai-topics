@@ -107,8 +107,8 @@ Beyond writing, Diallo is a working lead software engineer:
 
 ## Related
 
-- [[concepts/ai-workplace-impact]] — AI's effect on developers and hiring
-- [[concepts/automation-failure-modes]] — Lessons from "The Machine Fired Me"
+- [[ai-workplace-impact]] — AI's effect on developers and hiring
+- [[automation-failure-modes]] — Lessons from "The Machine Fired Me"
 - [[berthub-eu]] — Shared interest in systems-level thinking about technology policy
 
 ## Sources

@@ -190,10 +190,10 @@ Maurycy writes in a **direct, tutorial-oriented style** — code-heavy, theory-l
 
 ## Related
 
-- [[concepts/web-minimalism]] — The small web movement
-- [[concepts/c-programming]] — C as a systems language
-- [[concepts/gopher-protocol]] — Pre-web information retrieval
-- [[concepts/physics-simulation]] — Verlet integration and spatial hashing
+- [[web-minimalism]] — The small web movement
+- [[c-programming]] — C as a systems language
+- [[gopher-protocol]] — Pre-web information retrieval
+- [[physics-simulation]] — Verlet integration and spatial hashing
 - [[small-web]] — Independent, framework-free websites
 
 ## Sources

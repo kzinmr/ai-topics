@@ -4,9 +4,9 @@ description: "AI agent startup building context graphs as 'engineering world mod
 tags: [company, startup, playerzero, context-graph, sre, support-automation]
 status: skeleton
 related:
-  - "[[concepts/context-graph]]"  # Core technology: context graphs
+  - "[[context-graph]]"  # Core technology: context graphs
   - "[[arize]]"          # Both in the agent observability/infrastructure space
-  - "[[concepts/harness-engineering]]"  # PlayerZero as orchestration layer
+  - "[[harness-engineering]]"  # PlayerZero as orchestration layer
 status: skeleton
 created: 2026-04-20
 ---

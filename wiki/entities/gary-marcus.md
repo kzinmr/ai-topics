@@ -148,8 +148,8 @@ Marcusの結論:
 - [[Steven Pinker]] — PhD advisor at MIT; cognitive science
 - [[Rodney Brooks]] — Co-founder of Robust.AI; robotics
 - [[Yann LeCun]] — Frequent debate partner on deep learning vs. symbolic AI
-- [[concepts/neuro-symbolic-ai]] — Marcus's primary research direction
-- [[concepts/ai-safety]] — Advocacy for regulation and transparent validation
+- [[neuro-symbolic-ai]] — Marcus's primary research direction
+- [[ai-safety]] — Advocacy for regulation and transparent validation
 - [[geometric-intelligence]] — His first AI startup (acquired by Uber)
 
 ## Sources

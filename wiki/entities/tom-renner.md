@@ -168,8 +168,8 @@ This is not Luddism — it's **technological skepticism grounded in engineering 
 - [[terrible-software.md]] — Human-centered approach to software engineering
 - [[seangoedecke-com.md]] — Software engineering writing and team dynamics
 - [[bradford-morgan-white.md]] — Systems thinking and ethical technology
-- [[concepts/ai-agent-traps.md]] — Critical analysis of AI limitations
-- [[concepts/scaling-without-slop.md]] — Quality-focused engineering culture
+- [[ai-agent-traps.md]] — Critical analysis of AI limitations
+- [[scaling-without-slop.md]] — Quality-focused engineering culture
 
 ## Sources
 

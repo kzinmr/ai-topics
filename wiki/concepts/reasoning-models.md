@@ -21,7 +21,7 @@ LLM architectures designed for explicit step-by-step reasoning, including chain-
 
 Giles Thomas demonstrated that LLMs achieve syntactic coherence surprisingly early in training (~1/3 through), but **coherence ≠ correctness**. Full training is essential for factual grounding. This has direct implications for reasoning models: they can produce plausible-sounding reasoning traces that are factually wrong.
 
-See: [[concepts/llm-training-coherence-evolution]]
+See: [[llm-training-coherence-evolution]]
 
 ## The Illusion Problem (2026-04)
 
@@ -31,7 +31,7 @@ The Signal newsletter covered three key angles on reasoning model hallucination:
 2. **"Your AI is lying to your face"** — Chain-of-thought is a performance, not transparent internal computation
 3. **"Understanding Reasoning Models via Problem Complexity"** — Reasoning capability is problem-dependent, not universally improving with scale
 
-See: [[concepts/illusion-of-thinking]]
+See: [[illusion-of-thinking]]
 
 ## Distinction from Neurosymbolic AI
 
@@ -46,9 +46,9 @@ Reasoning models use neural architectures with emergent or trained reasoning cap
 
 ## Related wikilinks
 
-- [[concepts/neurosymbolic-ai]] — Alternative reasoning approach (symbolic + neural)
-- [[concepts/ai-evals]] — How to evaluate reasoning quality
-- [[concepts/illusion-of-thinking]] — Karpathy's critique (if page exists)
+- [[neurosymbolic-ai]] — Alternative reasoning approach (symbolic + neural)
+- [[ai-evals]] — How to evaluate reasoning quality
+- [[illusion-of-thinking]] — Karpathy's critique (if page exists)
 
 ## Sources
 

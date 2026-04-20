@@ -102,10 +102,10 @@ tokenizer.save_pretrained("production_model")
 ```
 
 ## Related Concepts
-- [[concepts/fine-tuning/unsloth]] — 2-5x faster fine-tuning with LoRA optimization
-- [[concepts/fine-tuning/axolotl]] — YAML-config fine-tuning with LoRA/QLoRA support
-- [[concepts/fine-tuning/grpo-rl-training]] — GRPO training with PEFT integration
-- [[concepts/fine-tuning/quantization-overview]] — GGUF/GPTQ/FP8 quantization formats
+- [[fine-tuning/unsloth]] — 2-5x faster fine-tuning with LoRA optimization
+- [[fine-tuning/axolotl]] — YAML-config fine-tuning with LoRA/QLoRA support
+- [[fine-tuning/grpo-rl-training]] — GRPO training with PEFT integration
+- [[fine-tuning/quantization-overview]] — GGUF/GPTQ/FP8 quantization formats
 
 ## Sources
 - HuggingFace PEFT documentation (huggingface.co/docs/peft)

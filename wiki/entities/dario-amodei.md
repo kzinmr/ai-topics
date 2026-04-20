@@ -159,9 +159,9 @@ At the **India AI Impact Summit** (February 2026):
 - [[sam-altman]] — Former OpenAI colleague; now competitor as OpenAI CEO
 - [[mustafa-suleyman]] — Counterpart at Microsoft AI; different approach to AI safety
 - [[demis-hassabis]] — DeepMind/Google counterpart
-- [[concepts/ai-safety]] — Amodei's core research area
-- [[concepts/constitutional-ai]] — Anthropic's alignment framework
-- [[concepts/mechanistic-interpretability]] — Amodei's "MRI for AI"
+- [[ai-safety]] — Amodei's core research area
+- [[constitutional-ai]] — Anthropic's alignment framework
+- [[mechanistic-interpretability]] — Amodei's "MRI for AI"
 
 ## Sources
 

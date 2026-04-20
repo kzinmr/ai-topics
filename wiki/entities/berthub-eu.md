@@ -95,10 +95,10 @@ His **"Modern C++ for C Programmers"** series (6 parts) is a widely-referenced r
 ## Related
 
 - [[powerdns]] — Open-source DNS software Bert founded in 1999
-- [[concepts/lean-software]] — Software minimalism as security strategy
-- [[concepts/digital-sovereignty]] — European infrastructure autonomy
+- [[lean-software]] — Software minimalism as security strategy
+- [[digital-sovereignty]] — European infrastructure autonomy
 - [[rfc-5452]] — DNS resilience standard Bert co-authored
-- [[concepts/chatcontrol]] — EU client-side scanning legislation Bert critiques
+- [[chatcontrol]] — EU client-side scanning legislation Bert critiques
 
 ## Sources
 

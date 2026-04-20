@@ -40,5 +40,5 @@ This eliminates the "human in the loop" bottleneck of code review.
 
 ## See Also
 
-- [[concepts/cognition-devin-philosophy]] — Main Cognition philosophy
-- [[concepts/agent-team-swarm/managed-devins]] — Conditional multi-agent architecture
+- [[cognition-devin-philosophy]] — Main Cognition philosophy
+- [[agent-team-swarm/managed-devins]] — Conditional multi-agent architecture

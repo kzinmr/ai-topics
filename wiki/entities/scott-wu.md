@@ -152,5 +152,5 @@ The team is characterized by:
 
 - [[devin]] — Devin AI software engineer product page
 - [[cognition-ai]] — Cognition AI company page
-- [[concepts/agentic-engineering]] — Simon Willison's framework that describes tools like Devin
-- [[concepts/harness-engineering]] — Ryan Lopopolo's structured automation approach (contrasts with Devin's autonomous model)
+- [[agentic-engineering]] — Simon Willison's framework that describes tools like Devin
+- [[harness-engineering]] — Ryan Lopopolo's structured automation approach (contrasts with Devin's autonomous model)

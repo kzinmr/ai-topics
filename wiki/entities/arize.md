@@ -4,8 +4,8 @@ description: "AI observability platform positioned as 'Datadog for agents' — m
 tags: [company, startup, arize, ai-observability, agent-monitoring, evals]
 status: skeleton
 related:
-  - "[[concepts/context-graph]]"  # Observability is the top plane in the 5-plane architecture
-  - "[[concepts/ai-evals]]"      # Core technology: evaluating agent decisions
+  - "[[context-graph]]"  # Observability is the top plane in the 5-plane architecture
+  - "[[ai-evals]]"      # Core technology: evaluating agent decisions
   - "[[playerzero]]"    # Both in agent infrastructure space
 status: skeleton
 created: 2026-04-20

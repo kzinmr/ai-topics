@@ -135,7 +135,7 @@ Following the Jensen Huang interview, writer [[teortaxestex]] published an exten
 
 **Critique**: Dwarkesh "sometimes overdoes it" with "exaggerated naivete in insisting on dumb first-principles solutions." Teortaxes argues that "Rationalism is a great ragebaiting tactic" — Dwarkesh's persistent requests for guests to explain basics serves as both genuine inquiry and a rhetorical device to expose unstated assumptions.
 
-**The Epistemic Gap**: Teortaxes frames Dwarkesh as an **information-driven system** — optimized for structured debate, logical consistency, and "coffee salon intelligence" — contrasted with Jensen as an **agency-driven system** (per [[concepts/causal-backbone-conjecture]]). Dwarkesh's approach "works" for extracting alpha from powerful guests, but creates friction when interviewing builders who operate from fundamentally different epistemic frameworks.
+**The Epistemic Gap**: Teortaxes frames Dwarkesh as an **information-driven system** — optimized for structured debate, logical consistency, and "coffee salon intelligence" — contrasted with Jensen as an **agency-driven system** (per [[causal-backbone-conjecture]]). Dwarkesh's approach "works" for extracting alpha from powerful guests, but creates friction when interviewing builders who operate from fundamentally different epistemic frameworks.
 
 **Milieu Bias**: Teortaxes notes that Dwarkesh is "somewhat biased towards shared assumptions and prejudices of his milieu – China Bad, AGI wunderwaffe etc." — reflecting the rationalist/EA community's framing rather than independent assessment.
 
@@ -165,9 +165,9 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 
 ## Related
 
-- [[concepts/scaling-without-slop]] — Related analysis of AI capability limits
-- [[concepts/world-models-science]] — Dwarkesh frequently explores world models and reasoning with guests
-- [[concepts/multi-agent-autonomy-scale]] — His vision of future AI architecture
+- [[scaling-without-slop]] — Related analysis of AI capability limits
+- [[world-models-science]] — Dwarkesh frequently explores world models and reasoning with guests
+- [[multi-agent-autonomy-scale]] — His vision of future AI architecture
 - [[gary-marcus]] — Both critique current AI approaches from different angles
 - [[anthropic]] — Frequent interview subject (Dario Amodei episodes)
 - [[jensen-huang]] — Interviewed April 2026: "TPU competition, China, supply chain moat"; subject of TeortaxesTex epistemic gap analysis
@@ -176,7 +176,7 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [[ilya-sutskever]] — Interviewed Nov 2025: "Age of scaling to age of research"
 - [[dario-amodei]] — Interviewed Feb 2026: "Near the end of the exponential"
 - [[elon-musk]] — Interviewed Feb 2026: "Cheapest AI will be in space"
-- [[concepts/space-compute-economics]] — Orbital datacenter analysis
+- [[space-compute-economics]] — Orbital datacenter analysis
 
 ## Sources
 

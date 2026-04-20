@@ -140,12 +140,12 @@ Gwern challenges the Whiggish "expanding circle" narrative of moral progress, ar
 
 ## Related
 
-- [[concepts/scaling-hypothesis]] — Gwern's formalization of the theory that scale alone drives AI capability emergence
+- [[scaling-hypothesis]] — Gwern's formalization of the theory that scale alone drives AI capability emergence
 - [[dwarkesh-patel]] — Interviewed Gwern on his AI predictions and research methodology
-- [[concepts/ordinary-incompetence]] — Gwern's analysis of why most people fail to improve despite experience
-- [[concepts/lizardman-constant]] — The irreducible noise floor in human survey responses
-- [[concepts/hacker-mindset]] — Gwern's theory of "seeing through" abstractions to underlying reality
-- [[concepts/spaced-repetition]] — Cognitive tool Gwern has extensively advocated and practiced
+- [[ordinary-incompetence]] — Gwern's analysis of why most people fail to improve despite experience
+- [[lizardman-constant]] — The irreducible noise floor in human survey responses
+- [[hacker-mindset]] — Gwern's theory of "seeing through" abstractions to underlying reality
+- [[spaced-repetition]] — Cognitive tool Gwern has extensively advocated and practiced
 
 ## Sources
 

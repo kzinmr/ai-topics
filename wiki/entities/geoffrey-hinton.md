@@ -187,9 +187,9 @@ Hinton has mentored many of the leading figures in modern AI:
 - [[Yann LeCun]] — Turing Award co-recipient; CNN pioneer
 - [[google]] — Former employer (2013–2023)
 - [[vector-institute]] — Current affiliation
-- [[concepts/deep-learning]] — Hinton's foundational field
-- [[concepts/backpropagation]] — Hinton's most influential algorithm
-- [[concepts/ai-safety]] — Hinton's current advocacy focus
+- [[deep-learning]] — Hinton's foundational field
+- [[backpropagation]] — Hinton's most influential algorithm
+- [[ai-safety]] — Hinton's current advocacy focus
 
 ## Sources
 

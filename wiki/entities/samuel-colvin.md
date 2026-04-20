@@ -24,10 +24,10 @@ tags:
   - data-validation
   - type-safety
 related:
-  - "[[concepts/code-mode]]"
-  - "[[concepts/harness-engineering]]"
-  - "[[concepts/ai-observability]]"
-  - "[[concepts/structured-outputs]]"
+  - "[[code-mode]]"
+  - "[[harness-engineering]]"
+  - "[[ai-observability]]"
+  - "[[structured-outputs]]"
   - "[[alex-hall]]"
   - "[[david-montague]]"
   - "[[douwe-maan]]"
@@ -215,9 +215,9 @@ Angel investor in Pydantic's seed round. Cramer's experience building developer 
 
 ## Related Wiki Pages
 
-- **Concepts**: [[concepts/code-mode]], [[concepts/harness-engineering]], [[concepts/structured-outputs]], [[concepts/ai-observability]], [[concepts/capabilities-based-security]]
+- **Concepts**: [[code-mode]], [[harness-engineering]], [[structured-outputs]], [[ai-observability]], [[capabilities-based-security]]
 - **Entities**: [[alex-hall]] (Python Dev at Pydantic, Logfire), [[david-montague]] (CTO, Pydantic), [[douwe-maan]] (Pydantic AI Lead), [[sebastián-ramírez]] (FastAPI), [[bryan-helmig]] (Zapier, angel investor)
-- **Technologies**: [[concepts/pydantic]], [[concepts/monty-sandbox]], [[concepts/logfire]], [[concepts/pydantic-ai]]
+- **Technologies**: [[pydantic]], [[monty-sandbox]], [[logfire]], [[pydantic-ai]]
 
 ## Sources
 

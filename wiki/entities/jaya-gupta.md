@@ -5,7 +5,7 @@ tags: [person, foundation-capital, investor, context-graph]
 handle: "@JayaGup10"
 related:
   - "[[foundation-capital]]"  # Her firm
-  - "[[concepts/context-graph]]"       # Core thesis she authored
+  - "[[context-graph]]"       # Core thesis she authored
   - "[[playerzero]]"          # Context graph startup
   - "[[arize]]"               # Agent observability startup mentioned
 status: skeleton

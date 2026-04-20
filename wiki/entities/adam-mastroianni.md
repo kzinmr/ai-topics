@@ -110,9 +110,9 @@ His academic research reveals systematic misperceptions in social interaction:
 
 ## Related
 
-- [[concepts/experimental-history]] — Adam's framework for understanding psychology as storytelling
-- [[concepts/strong-link-science]] — Progress through best ideas winning, not gatekeeping bad ones
-- [[concepts/the-liking-gap]] — Systematic underestimation of how much others like you
+- [[experimental-history]] — Adam's framework for understanding psychology as storytelling
+- [[strong-link-science]] — Progress through best ideas winning, not gatekeeping bad ones
+- [[the-liking-gap]] — Systematic underestimation of how much others like you
 - [[dwarkesh-patel]] — Fellow science communicator with overlapping audience
 - [[paulgraham-com]] — Similar essayistic approach to understanding human behavior
 

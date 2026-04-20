@@ -125,12 +125,12 @@ In his "[Programming Beliefs as of July 2024](https://evanhahn.com/programming-b
 
 ## Related
 
-- [[concepts/web-security]] — HTTP security headers, middleware, defense-in-depth
-- [[concepts/error-handling]] — Expected vs. unexpected errors, language design
-- [[concepts/software-craftsmanship]] — Code quality, pragmatism, reading code
-- [[concepts/open-source-maintenance]] — Maintaining widely-depended-upon packages
+- [[web-security]] — HTTP security headers, middleware, defense-in-depth
+- [[error-handling]] — Expected vs. unexpected errors, language design
+- [[software-craftsmanship]] — Code quality, pragmatism, reading code
+- [[open-source-maintenance]] — Maintaining widely-depended-upon packages
 - [[ghost]] — Nonprofit publisher software where Evan works
-- [[concepts/decentralized-identity]] — human.json and web-native identity systems
+- [[decentralized-identity]] — human.json and web-native identity systems
 
 ## Sources
 

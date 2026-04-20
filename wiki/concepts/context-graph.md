@@ -3,12 +3,12 @@ title: "Context Graph"
 description: "Living record of decision traces stitched across entities and time — the foundational architecture for AI agent decision-making in enterprise workflows"
 tags: [concept, context-graph, decision-trace, system-of-record, foundation-capital]
 related:
-  - "[[concepts/harness-engineering]]"  # Harness Engineering is the execution layer that captures decision traces
-  - "[[concepts/ai-evals]]"            # Evals are part of the observability plane
-  - "[[concepts/multi-agent-consensus-patterns]]"  # Multi-agent systems benefit from shared context graphs
+  - "[[harness-engineering]]"  # Harness Engineering is the execution layer that captures decision traces
+  - "[[ai-evals]]"            # Evals are part of the observability plane
+  - "[[multi-agent-consensus-patterns]]"  # Multi-agent systems benefit from shared context graphs
   - "[[openai]]"              # OpenAI Agents SDK as orchestration layer
   - "[[simon-willison]]"      # Simon Willison on AI agent architecture
-  - "[[concepts/model-context-protocol-mcp]]"  # MCP as cross-system context protocol
+  - "[[model-context-protocol-mcp]]"  # MCP as cross-system context protocol
 status: complete
 created: 2026-04-20
 source: "[[raw/articles/foundation-capital-context-graphs-2025-12-22]]"
@@ -183,10 +183,10 @@ As decision traces accumulate, enterprises need to monitor, debug, and evaluate 
 
 ## Related Concepts
 
-- [[concepts/harness-engineering]] — Context graphs are the *data layer* of the harness; the orchestration layer that captures traces is the harness itself
-- [[concepts/ai-evals]] — Evals measure decision quality; context graphs provide the training data for better future decisions
-- [[concepts/model-context-protocol-mcp]] — MCP enables cross-system context retrieval, a technical prerequisite for context graphs
-- [[concepts/multi-agent-consensus-patterns]] — Multi-agent systems need shared context graphs to maintain decision consistency
+- [[harness-engineering]] — Context graphs are the *data layer* of the harness; the orchestration layer that captures traces is the harness itself
+- [[ai-evals]] — Evals measure decision quality; context graphs provide the training data for better future decisions
+- [[model-context-protocol-mcp]] — MCP enables cross-system context retrieval, a technical prerequisite for context graphs
+- [[multi-agent-consensus-patterns]] — Multi-agent systems need shared context graphs to maintain decision consistency
 - [[simon-willison]] — Simon Willison has written extensively on AI agent architecture and tools-for-thinking
 
 ## Source

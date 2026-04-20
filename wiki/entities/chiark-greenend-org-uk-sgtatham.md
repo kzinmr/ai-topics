@@ -87,11 +87,11 @@ Tatham's series on aperiodic tilings (five parts and counting) and his essay on 
 
 ## Related
 
-- [[concepts/unix-philosophy]] — Small tools, clear interfaces, composability
-- [[concepts/code-review]] — Social dynamics of reviewing code
-- [[concepts/forge-independence]] — Using Git without GitHub/GitLab
+- [[unix-philosophy]] — Small tools, clear interfaces, composability
+- [[code-review]] — Social dynamics of reviewing code
+- [[forge-independence]] — Using Git without GitHub/GitLab
 - [[git]] — Distributed version control system
-- [[concepts/developer-tooling]] — Building tools for developers
+- [[developer-tooling]] — Building tools for developers
 - [[mitsuhiko]] — Another free-software author with similar philosophy
 
 ## Sources

@@ -130,9 +130,9 @@ Jim built [Can I Still Use?](https://canistilluse.com) — a site documenting wh
 
 ## Related
 
-- [[concepts/sanding-ui]] — Jim's framework for iterative UI refinement
-- [[concepts/personal-websites]] — Independent web publishing as digital sovereignty
-- [[concepts/code-as-process]] — Coding as a thinking tool, not just production
+- [[sanding-ui]] — Jim's framework for iterative UI refinement
+- [[personal-websites]] — Independent web publishing as digital sovereignty
+- [[code-as-process]] — Coding as a thinking tool, not just production
 - [[jeffhuang-com]] — Fellow blogger on web culture and personal sites
 - [[kottke-org]] — Curator and blogger with similar web philosophy
 - [[bryanlrobinson-com]] — Design engineer writing about web craft

@@ -3,8 +3,8 @@ name: AI Observability
 type: concept
 tags: [observability, monitoring, tracing, opentelemetry, llm, agents, debugging]
 related:
-  - [[concepts/logfire]]
-  - [[concepts/pydantic-ai]]
+  - [[logfire]]
+  - [[pydantic-ai]]
   - [[samuel-colvin]]
   - [[david-cramer]]
 depth: L2
@@ -79,8 +79,8 @@ Logfire's tracing shows the full delegation chain, essential for debugging compl
 
 ## Related Concepts
 
-- [[concepts/logfire]] — Pydantic's observability platform
-- [[concepts/pydantic-ai]] — Framework with built-in observability
-- [[concepts/harness-engineering]] — Observability as feedback loop
+- [[logfire]] — Pydantic's observability platform
+- [[pydantic-ai]] — Framework with built-in observability
+- [[harness-engineering]] — Observability as feedback loop
 - [[samuel-colvin]] — Logfire creator
 - [[david-cramer]] — Sentry founder, angel investor in Pydantic

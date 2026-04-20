@@ -200,12 +200,12 @@ Her research has been adopted by **OpenAI and Anthropic teams** for their evalua
 
 - [[hamel-husain]] — Co-creator of AI evals course, collaborator on Applied LLMs guide
 - [[eugene-yan]] — Co-author on Applied LLMs guide, shared evals philosophy
-- [[concepts/ai-evals]] — The evaluation framework they teach
-- [[concepts/llm-as-judge]] — Core evaluation technique
-- [[concepts/error-analysis]] — Foundational practice
-- [[concepts/harness-engineering]] — Connected philosophy
-- [[concepts/eval-tools-comparison]] — Tool selection framework
-- [[concepts/critique-shadowing]] — Husain's methodology (complementary)
+- [[ai-evals]] — The evaluation framework they teach
+- [[llm-as-judge]] — Core evaluation technique
+- [[error-analysis]] — Foundational practice
+- [[harness-engineering]] — Connected philosophy
+- [[eval-tools-comparison]] — Tool selection framework
+- [[critique-shadowing]] — Husain's methodology (complementary)
 - [[drmaciver]] — Property-based testing applied to LLM evaluation (`foundational-llm-evals`); PBT methodology for eval design
 
 ## Sources

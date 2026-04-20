@@ -158,7 +158,7 @@ This connects to his broader view of computation: **the computer is a medium for
 
 - [[richard-stallman]] — Free software philosophy
 - [[donald-knuth]] — Literate programming, mathematical writing
-- [[concepts/indie-web]] — Personal websites, self-hosted infrastructure
+- [[indie-web]] — Personal websites, self-hosted infrastructure
 - [[bogdanthegeek-s-blog]] — Self-hosted, no-tracking personal sites
 - [[shkspr-mobi]] — Web standards advocacy, personal site philosophy
 

@@ -71,7 +71,7 @@ Step 1 (Plan) → Review → Step 2 (Execute) → Verify → Step 3 (Report)
 
 ## Related
 
-- [[concepts/agent-security-patterns]] — Agent Security Patterns
-- [[concepts/agent-loop-orchestration]] — Agent Loop Orchestration
-- [[concepts/building-effective-agents]] — Building Effective Agents (Anthropic)
+- [[agent-security-patterns]] — Agent Security Patterns
+- [[agent-loop-orchestration]] — Agent Loop Orchestration
+- [[building-effective-agents]] — Building Effective Agents (Anthropic)
 - [[comparisons/agent-sandboxing]] — Agent Sandboxing

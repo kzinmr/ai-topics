@@ -132,19 +132,19 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 
 ## Related Concepts
 
-- [[concepts/ai-safety-and-alignment]] — Her primary research focus at OpenAI
-- [[concepts/agent-orchestration-frameworks]] — Frameworks she analyzed in "LLM Powered Autonomous Agents"
-- [[concepts/test-time-compute]] — The "thinking time" paradigm she surveyed in "Why We Think"
-- [[concepts/reward-hacking]] — Her November 2024 deep-dive topic
-- [[concepts/chain-of-thought-reasoning]] — Central to her analysis of test-time compute
-- [[concepts/rlhf]] — Reinforcement Learning from Human Feedback, the alignment method she worked on
-- [[concepts/diffusion-models]] — Her April 2024 analysis of video generation
-- [[concepts/llm-hallucination]] — Her July 2024 survey on extrinsic hallucinations
-- [[concepts/prompt-engineering]] — Her March 2023 definitive guide
+- [[ai-safety-and-alignment]] — Her primary research focus at OpenAI
+- [[agent-orchestration-frameworks]] — Frameworks she analyzed in "LLM Powered Autonomous Agents"
+- [[test-time-compute]] — The "thinking time" paradigm she surveyed in "Why We Think"
+- [[reward-hacking]] — Her November 2024 deep-dive topic
+- [[chain-of-thought-reasoning]] — Central to her analysis of test-time compute
+- [[rlhf]] — Reinforcement Learning from Human Feedback, the alignment method she worked on
+- [[diffusion-models]] — Her April 2024 analysis of video generation
+- [[llm-hallucination]] — Her July 2024 survey on extrinsic hallucinations
+- [[prompt-engineering]] — Her March 2023 definitive guide
 - [[mira-murati]] — Thinking Machines Lab co-founder and CEO
 - [[john-schulman]] — Thinking Machines Lab co-founder and Chief Scientist
 - [[sam-altman]] — OpenAI CEO during her tenure
-- [[concepts/sim-to-real-robotics]] — The approach used for the Rubik's Cube robot
+- [[sim-to-real-robotics]] — The approach used for the Rubik's Cube robot
 
 ## Influence Metrics
 

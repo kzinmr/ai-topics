@@ -49,5 +49,5 @@ Rehan's practical experience with AWS serverless and microservice architecture m
 ## Related
 
 - [[simon-willison]] — also covers agentic engineering with practical developer perspective
-- [[concepts/harness-engineering/system-architecture/_index]] — AI Agent system design patterns
-- [[concepts/harness-engineering/agentic-workflows/_index]] — Agentic engineering workflows
+- [[harness-engineering/system-architecture/_index]] — AI Agent system design patterns
+- [[harness-engineering/agentic-workflows/_index]] — Agentic engineering workflows

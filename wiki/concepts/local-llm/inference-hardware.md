@@ -5,7 +5,7 @@ updated: 2026-04-15
 status: skeleton
 tags: [local-llm, hardware, gpu, consumer, edge]
 aliases: [inference-hardware, consumer-gpu-llm]
-related: [[concepts/local-llm/_index]], [[concepts/compute-scaling-bottlenecks]], [[concepts/local-llm/server-dgx-spark]]
+related: [[local-llm/_index]], [[compute-scaling-bottlenecks]], [[local-llm/server-dgx-spark]]
 sources:
   - url: "https://github.com/ggerganov/llama.cpp"
     title: "llama.cpp — GPU Support"
@@ -27,5 +27,5 @@ Hardware options for running LLMs locally, from consumer GPUs to edge devices.
 
 ## Related wikilinks
 
-- [[concepts/local-llm/server-dgx-spark]] — DGX Spark: compact enterprise-grade local AI server
-- [[concepts/compute-scaling-bottlenecks]] — Compute scaling and hardware constraints
+- [[local-llm/server-dgx-spark]] — DGX Spark: compact enterprise-grade local AI server
+- [[compute-scaling-bottlenecks]] — Compute scaling and hardware constraints

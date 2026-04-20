@@ -154,8 +154,8 @@ His public statements emphasize OpenAI's commitment to advancing **reasoning and
 - [[ilya-sutskever]] — OpenAI co-founder; former senior colleague
 - [[alec-radford]] — Fellow OpenAI researcher; collaborated on GPT series
 - [[greg-brockman]] — OpenAI co-founder; engineering leadership
-- [[concepts/multimodal-ai]] — Chen's primary research area
-- [[concepts/ai-reasoning]] — o1 model represents this paradigm
+- [[multimodal-ai]] — Chen's primary research area
+- [[ai-reasoning]] — o1 model represents this paradigm
 
 ## Sources
 

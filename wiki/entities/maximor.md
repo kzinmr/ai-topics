@@ -4,8 +4,8 @@ description: "AI agent startup automating finance workflows — cash management,
 tags: [company, startup, maximor, finance, accounting, agent-automation]
 status: skeleton
 related:
-  - "[[concepts/context-graph]]"  # Maximor builds decision traces for finance
-  - "[[concepts/harness-engineering]]"  # Agent orchestration for finance workflows
+  - "[[context-graph]]"  # Maximor builds decision traces for finance
+  - "[[harness-engineering]]"  # Agent orchestration for finance workflows
 status: skeleton
 created: 2026-04-20
 ---

@@ -5,7 +5,7 @@ updated: 2026-04-15
 status: skeleton
 tags: [local-llm, runner, model-management, cli, api]
 aliases: [ollama-runner]
-related: [[concepts/local-llm/llama-cpp]], [[concepts/local-llm/_index]]
+related: [[local-llm/llama-cpp]], [[local-llm/_index]]
 sources:
   - url: "https://ollama.com/"
     title: "Ollama — Official Site"
@@ -27,5 +27,5 @@ sources:
 
 ## Related wikilinks
 
-- [[concepts/local-llm/llama-cpp]] — llama.cpp inference engine (underlying runtime)
-- [[concepts/local-llm/_index]] — Local LLM Ecosystem Overview
+- [[local-llm/llama-cpp]] — llama.cpp inference engine (underlying runtime)
+- [[local-llm/_index]] — Local LLM Ecosystem Overview

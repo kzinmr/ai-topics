@@ -166,12 +166,12 @@ But this transparency strengthens rather than weakens his historical work. By ac
 - [[roberta-williams]] — Sierra co-founder, creator of King's Quest, central figure in Maher's Sierra chronicles
 - [[ken-williams]] — Sierra co-founder, whose business decisions shaped the company's rise and fall
 - [[jane-jensen]] — Creator of Gabriel Knight series, subject of Maher's Sierra-era analysis
-- [[concepts/interactive-fiction]] — The medium Maher has spent two decades documenting and preserving
-- [[concepts/infocom]] — The company whose legacy Maher has extensively chronicled
-- [[concepts/sierra-online]] — The company Maher has written about in unprecedented depth
-- [[concepts/z-machine]] — Infocom's virtual machine, foundational technology for IF
-- [[concepts/if-comp]] — The annual competition that organizes the modern IF community
-- [[concepts/game-preservation]] — Maher's broader project of documenting and archiving gaming history
+- [[interactive-fiction]] — The medium Maher has spent two decades documenting and preserving
+- [[infocom]] — The company whose legacy Maher has extensively chronicled
+- [[sierra-online]] — The company Maher has written about in unprecedented depth
+- [[z-machine]] — Infocom's virtual machine, foundational technology for IF
+- [[if-comp]] — The annual competition that organizes the modern IF community
+- [[game-preservation]] — Maher's broader project of documenting and archiving gaming history
 
 ## Sources
 

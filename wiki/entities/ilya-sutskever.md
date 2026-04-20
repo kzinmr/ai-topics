@@ -176,8 +176,8 @@ This contrasts sharply with OpenAI's product-driven approach and Anthropic's dua
 - [[Jan Leike]] — Co-founded superalignment team with Sutskever; resigned citing safety deprioritization
 - [[openai]] — Company Sutskever co-founded and led technically (2015–2024)
 - [[safe-superintelligence-inc]] — SSI, Sutskever's current venture
-- [[concepts/ai-safety]] — Sutskever's primary research focus at SSI
-- [[concepts/superalignment]] — Team Sutskever co-founded at OpenAI
+- [[ai-safety]] — Sutskever's primary research focus at SSI
+- [[superalignment]] — Team Sutskever co-founded at OpenAI
 
 ## Sources
 

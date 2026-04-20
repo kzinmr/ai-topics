@@ -29,7 +29,7 @@ vLLM is a high-throughput LLM serving engine with PagedAttention optimization.
 
 ## Related wikilinks
 
-- [[concepts/local-llm]] — Local LLM overview
+- [[local-llm]] — Local LLM overview
 - [[vllm]] — Project entity (if exists)
 
 ## Sources

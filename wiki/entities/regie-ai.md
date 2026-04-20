@@ -4,8 +4,8 @@ description: "AI-native sales engagement platform replacing Outreach/Salesloft â
 tags: [company, startup, regie-ai, sales, sales-engagement, agent-automation]
 status: skeleton
 related:
-  - "[[concepts/context-graph]]"  # Regie builds decision traces for sales workflows
-  - "[[concepts/harness-engineering]]"  # Agent orchestration for sales engagement
+  - "[[context-graph]]"  # Regie builds decision traces for sales workflows
+  - "[[harness-engineering]]"  # Agent orchestration for sales engagement
 status: skeleton
 created: 2026-04-20
 ---

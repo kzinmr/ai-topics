@@ -59,10 +59,10 @@ Anthropic **did not release Claude Mythos publicly**. The preview is restricted 
 
 ## Related
 
-- [[concepts/anthropic-openclaw-conflict]] — Anthropic's concurrent restrictions on third-party tool access
+- [[anthropic-openclaw-conflict]] — Anthropic's concurrent restrictions on third-party tool access
 - [[dario-amodei]] — Anthropic CEO, announced Mythos Preview
-- [[concepts/ai-safety-and-alignment]] — Dual-use risk management framework
-- [[concepts/agent-autonomous-systems]] — Project Vend, Project Fetch
+- [[ai-safety-and-alignment]] — Dual-use risk management framework
+- [[agent-autonomous-systems]] — Project Vend, Project Fetch
 
 ## Sources
 

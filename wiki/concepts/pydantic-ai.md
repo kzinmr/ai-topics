@@ -3,9 +3,9 @@ name: Pydantic AI
 type: concept
 tags: [ai-agents, framework, python, type-safety, structured-outputs, pydantic]
 related:
-  - [[concepts/code-mode]]
-  - [[concepts/structured-outputs]]
-  - [[concepts/ai-observability]]
+  - [[code-mode]]
+  - [[structured-outputs]]
+  - [[ai-observability]]
   - [[samuel-colvin]]
 depth: L2
 status: complete
@@ -79,8 +79,8 @@ print(result.data)  # Type-safe CityInfo object
 
 ## Related
 
-- [[concepts/code-mode]] — Upcoming Monty integration
-- [[concepts/structured-outputs]] — Core validation approach
-- [[concepts/ai-observability]] — Logfire integration
-- [[concepts/harness-engineering]] — Type safety as harness constraint
+- [[code-mode]] — Upcoming Monty integration
+- [[structured-outputs]] — Core validation approach
+- [[ai-observability]] — Logfire integration
+- [[harness-engineering]] — Type safety as harness constraint
 - [[samuel-colvin]] — Creator/CEO

@@ -153,10 +153,10 @@ This validated his thesis that **file-based memory is the natural architecture f
 ## Related
 
 - [[peter-steinberger]] — Also builds personal AI agents (OpenClaw/Claudbot)
-- [[concepts/claude-memory]] — File-based memory architecture
-- [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT's memory system analysis
-- [[concepts/multi-agent-orchestration]] — Patterns for coordinating multiple agents
-- [[concepts/background-agents]] — Async agent workflows
-- [[concepts/cache-first-engineering]] — Optimizing for prompt cache preservation
-- [[concepts/vibe-coding]] — The approach Khemani's work supports and critiques
+- [[claude-memory]] — File-based memory architecture
+- [[chatgpt-memory-bitter-lesson]] — ChatGPT's memory system analysis
+- [[multi-agent-orchestration]] — Patterns for coordinating multiple agents
+- [[background-agents]] — Async agent workflows
+- [[cache-first-engineering]] — Optimizing for prompt cache preservation
+- [[vibe-coding]] — The approach Khemani's work supports and critiques
 - [[anthropic]] — Creator of Claude, Claude Code, and the memory philosophy Khemani analyzes

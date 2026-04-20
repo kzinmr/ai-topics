@@ -3,10 +3,10 @@ name: Structured Outputs
 type: concept
 tags: [llm, output-formatting, json, pydantic, reliability, type-safety, function-calling]
 related:
-  - [[concepts/pydantic]]
-  - [[concepts/pydantic-ai]]
-  - [[concepts/guidance]]
-  - [[concepts/outlines]]
+  - [[pydantic]]
+  - [[pydantic-ai]]
+  - [[guidance]]
+  - [[outlines]]
   - [[samuel-colvin]]
   - [[jason-liu]]
   - [[rahul]]
@@ -81,10 +81,10 @@ OpenAI now offers native structured output via `response_format` parameter, guar
 
 ## Related
 
-- [[concepts/pydantic]] — Foundation library
-- [[concepts/pydantic-ai]] — Agent-level structured outputs
-- [[concepts/guidance]] — Constrained decoding with regex/grammars
-- [[concepts/outlines]] — Grammar-constrained generation
+- [[pydantic]] — Foundation library
+- [[pydantic-ai]] — Agent-level structured outputs
+- [[guidance]] — Constrained decoding with regex/grammars
+- [[outlines]] — Grammar-constrained generation
 - [[jason-liu]] — Instructor creator
 - [[rahul]] — Guardrails AI / Jsonformer creator
 - [[samuel-colvin]] — Pydantic creator

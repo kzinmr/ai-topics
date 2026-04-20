@@ -127,9 +127,9 @@ Sutton emphasizes mathematical foundations and empirical validation over theoret
 
 - [[John Carmack]] — Keen Technologies partner; advocate of Sutton's "Bitter Lesson"
 - [[Andrew G. Barto]] — PhD advisor; co-author of RL textbook; Turing Award co-recipient
-- [[concepts/reinforcement-learning]] — Sutton's foundational field
-- [[concepts/bitter-lesson]] — Sutton's most influential essay
-- [[concepts/agi]] — Sutton's long-term research goal
+- [[reinforcement-learning]] — Sutton's foundational field
+- [[bitter-lesson]] — Sutton's most influential essay
+- [[agi]] — Sutton's long-term research goal
 - [[keen-technologies]] — Sutton's current industry affiliation
 
 ## Sources

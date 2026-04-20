@@ -59,11 +59,11 @@ Proposed a **selection theorem for agent-like structures** based on resource con
 
 ## Related Entities
 
-- [[concepts/causal-backbone-conjecture]] — Primary theoretical contribution
+- [[causal-backbone-conjecture]] — Primary theoretical contribution
 - [[selection-theorems]] — Research program context
 - [[johnswentworth]] — Selection Theorems program originator
 - [[gary-marcus]] — Shared skepticism of pure scaling approaches
-- [[concepts/information-bottleneck]] — Related filtering concepts
+- [[information-bottleneck]] — Related filtering concepts
 
 ## Sources
 

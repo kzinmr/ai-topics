@@ -96,7 +96,7 @@ cache_key = hash(
 
 ## Related
 
-- [[concepts/evaluation-flywheel]] — Evaluation Flywheel
-- [[concepts/context-window-management]] — Context Window Management
-- [[concepts/inference-speed-development]] — Inference Speed Development
-- [[concepts/agentic-scaffolding]] — Agentic Scaffolding
+- [[evaluation-flywheel]] — Evaluation Flywheel
+- [[context-window-management]] — Context Window Management
+- [[inference-speed-development]] — Inference Speed Development
+- [[agentic-scaffolding]] — Agentic Scaffolding

@@ -75,7 +75,7 @@ Execute → Observe → Analyze → Adapt → Execute...
 
 ## Related
 
-- [[concepts/memory-systems-design-patterns]] — Memory Systems Design Patterns
-- [[concepts/agent-team-swarm]] — Agent Team / Swarm
-- [[concepts/harness-engineering]] — Harness Engineering
-- [[concepts/evaluation-flywheel]] — Evaluation Flywheel
+- [[memory-systems-design-patterns]] — Memory Systems Design Patterns
+- [[agent-team-swarm]] — Agent Team / Swarm
+- [[harness-engineering]] — Harness Engineering
+- [[evaluation-flywheel]] — Evaluation Flywheel

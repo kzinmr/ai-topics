@@ -46,5 +46,5 @@ print(result.data)  # UserProfile(name='Alex', age=30, interests=['coding', 'rea
 ## Related
 
 - [[samuel-colvin]] — Creator
-- [[concepts/pydantic-ai]] — Framework
-- [[concepts/structured-output]] — Pattern
+- [[pydantic-ai]] — Framework
+- [[structured-output]] — Pattern

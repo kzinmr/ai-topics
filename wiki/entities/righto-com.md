@@ -80,14 +80,14 @@ Ken's posts consistently translate abstract computer science concepts into concr
 
 ## Related
 
-- [[concepts/microcode]] — The layer between machine instructions and hardware execution
-- [[concepts/reverse-engineering]] — Ken's core methodology across chips, protocols, and systems
+- [[microcode]] — The layer between machine instructions and hardware execution
+- [[reverse-engineering]] — Ken's core methodology across chips, protocols, and systems
 - [[opcode-collective]] — Distributed group Ken collaborates with on microcode analysis
-- [[concepts/computer-architecture]] — How processors are designed and how they evolved
+- [[computer-architecture]] — How processors are designed and how they evolved
 - [[intel-8086]] — The chip that launched x86, extensively analyzed by Ken
 - [[intel-8087]] — Floating-point coprocessor, subject of Ken's recent deep-dive series
 - [[apollo-program]] — Aerospace hardware Ken has reverse-engineered
-- [[concepts/silicon-die-analysis]] — The practice of photographing and tracing chip layouts
+- [[silicon-die-analysis]] — The practice of photographing and tracing chip layouts
 
 ## Sources
 

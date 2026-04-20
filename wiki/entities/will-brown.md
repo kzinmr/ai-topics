@@ -155,10 +155,10 @@ A comprehensive learning roadmap for generative AI, covering everything from bas
 
 ## Related
 
-- [[concepts/grpo]] — Group Relative Policy Optimization, the technique Brown popularized for open-source reasoning model training
-- [[concepts/rlhf]] — Reinforcement Learning from Human Feedback, the broader alignment paradigm
-- [[concepts/reasoning-models]] — Models with extended reasoning capabilities, Brown's primary research focus
-- [[concepts/agent-harness]] — Agent execution frameworks that verifiers supports
+- [[grpo]] — Group Relative Policy Optimization, the technique Brown popularized for open-source reasoning model training
+- [[rlhf]] — Reinforcement Learning from Human Feedback, the broader alignment paradigm
+- [[reasoning-models]] — Models with extended reasoning capabilities, Brown's primary research focus
+- [[agent-harness]] — Agent execution frameworks that verifiers supports
 - [[nathan-lambert]] — Interconnects newsletter author, fellow open-source RL researcher
 - [[teknium]] — Nous Research co-founder, open-source AI community leader
 - [[prime-intellect]] — Brown's current organization

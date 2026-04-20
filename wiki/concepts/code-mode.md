@@ -3,10 +3,10 @@ name: CodeMode
 type: concept
 tags: [code-execution, agents, latency, monty, pydantic-ai, tool-calling, sandbox]
 related:
-  - [[concepts/sandbox/in-process]]
-  - [[concepts/sandbox/_index]]
-  - [[concepts/pydantic-ai]]
-  - [[concepts/harness-engineering]]
+  - [[sandbox/in-process]]
+  - [[sandbox/_index]]
+  - [[pydantic-ai]]
+  - [[harness-engineering]]
   - [[samuel-colvin]]
   - [[andrej-karpathy]]
 depth: L2
@@ -57,6 +57,6 @@ CodeMode is the paradigm where LLMs write code (typically Python) for batch exec
 
 ## Related Patterns
 
-- [[concepts/harness-engineering]] — Monty as a harness environment
-- [[concepts/structured-outputs]] — Type safety constrains LLM output
-- [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — Alternative to MCP tool execution
+- [[harness-engineering]] — Monty as a harness environment
+- [[structured-outputs]] — Type safety constrains LLM output
+- [[harness-engineering/system-architecture/code-execution-with-mcp]] — Alternative to MCP tool execution

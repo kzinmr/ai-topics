@@ -20,7 +20,7 @@ AI models specifically for speech/audio processing and generation. These are con
 
 ## Sub-pages
 
-- [[concepts/speech/whisper]] — Whisper: OpenAI's Speech Recognition Model
+- [[speech/whisper]] — Whisper: OpenAI's Speech Recognition Model
 
 ## Key Concepts
 
@@ -42,9 +42,9 @@ Speech models are categorized separately from multimodal AI because:
 This distinction reflects the fundamentally different architectures and use cases.
 
 ## Related Concepts
-- [[concepts/multimodal/_index]] — Vision-language multimodal systems
-- [[concepts/inference/_index]] — Inference optimization for audio models
-- [[concepts/local-llm/_index]] — Running speech models locally
+- [[multimodal/_index]] — Vision-language multimodal systems
+- [[inference/_index]] — Inference optimization for audio models
+- [[local-llm/_index]] — Running speech models locally
 
 ## Sources
 - OpenAI Whisper paper (2022) — "Robust Speech Recognition via Large-Scale Weak Supervision"

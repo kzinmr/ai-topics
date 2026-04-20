@@ -80,6 +80,6 @@ Step 4: Execute and verify
 
 ## Related
 
-- [[concepts/direct-prompting-philosophy]] — Direct Prompting Philosophy
-- [[concepts/evaluation-flywheel]] — Evaluation Flywheel
-- [[concepts/agentic-scaffolding]] — Agentic Scaffolding
+- [[direct-prompting-philosophy]] — Direct Prompting Philosophy
+- [[evaluation-flywheel]] — Evaluation Flywheel
+- [[agentic-scaffolding]] — Agentic Scaffolding

@@ -94,8 +94,8 @@ An earlier piece demonstrating his design rigor: professional designers are mixi
 ## Related
 
 - [[berthub-eu]] — Bert Hubert's lean software philosophy complements Daniel's UI minimalism
-- [[concepts/harness-engineering]] — Structured AI workflows vs. conversational AI
-- [[concepts/agentic-engineering]] — Daniel's approach to AI-assisted development
+- [[harness-engineering]] — Structured AI workflows vs. conversational AI
+- [[agentic-engineering]] — Daniel's approach to AI-assisted development
 
 ## Sources
 

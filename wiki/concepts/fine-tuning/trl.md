@@ -78,9 +78,9 @@ peft_config = LoraConfig(
 
 ## Related
 
-- [[concepts/fine-tuning/grpo-rl-training]] — GRPO implementation details
-- [[concepts/fine-tuning/rlhf-dpo-preference]] — Preference optimization methods
-- [[concepts/fine-tuning/peft-lora-qlora]] — Parameter-efficient fine-tuning
+- [[fine-tuning/grpo-rl-training]] — GRPO implementation details
+- [[fine-tuning/rlhf-dpo-preference]] — Preference optimization methods
+- [[fine-tuning/peft-lora-qlora]] — Parameter-efficient fine-tuning
 
 ## Sources
 

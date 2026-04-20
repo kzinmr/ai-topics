@@ -196,9 +196,9 @@ Co-founded with **Shane Legg** (ML researcher) and **Mustafa Suleyman** (entrepr
 - [[shane-legg]] — DeepMind co-founder; Chief AGI Scientist
 - [[dario-amodei]] — Anthropic CEO; former DeepMind colleague; different safety philosophy
 - [[john-jumper]] — AlphaFold co-lead; Nobel co-recipient
-- [[concepts/agi]] — Hassabis's central research goal
-- [[concepts/reinforcement-learning]] — Core technique in AlphaGo/AlphaZero
-- [[concepts/protein-folding]] — AlphaFold's scientific breakthrough
+- [[agi]] — Hassabis's central research goal
+- [[reinforcement-learning]] — Core technique in AlphaGo/AlphaZero
+- [[protein-folding]] — AlphaFold's scientific breakthrough
 
 ## Sources
 

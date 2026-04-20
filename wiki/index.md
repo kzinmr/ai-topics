@@ -19,17 +19,17 @@ Last updated: 2026-04-20 (Claude 4.7 tokenizer change, Headless AI Services, Fig
 
 ## Concept Pages (84)
 
-- [[concepts/context-graph]] — Decision traces as living records; five-plane enterprise AI architecture; three startup paths (2026-04-20)
-- [[concepts/openai-agents-sdk]] — OpenAI Agents SDK v0.14.0 (sandbox execution, harness/compute separation, manifests)
-- [[concepts/token-economics]] — LLM inference cost analysis, optimization layers, token economics (2026-04-18)
-- [[concepts/attention-mechanism-variants]] — Modern attention mechanisms (MHA, GQA, MLA, SWA, DSA, Hybrid) (2026-04-18)
-- [[concepts/speculative-decoding]] — Draft-and-verify inference acceleration, EAGLE-3, self-speculative decoding (2026-04-18)
-- [[concepts/context-compression]] — Context compression techniques, summarization, retrieval, structural compression (2026-04-18)
-- [[concepts/mismanaged-geniuses-hypothesis]] — Frontier LMs are underutilized due to sub-optimal scaffolding; composition > scaling (2026-04-19)
-- [[concepts/multi-agent-consensus-patterns]] — Multi-agent consensus patterns: Supervisor, Hierarchical, P2P, Swarm; SWARM+ three-phase protocol (2026-04-19)
-- [[concepts/elixir-beam-agent-orchestration]] — Elixir/BEAM for agent orchestration: process supervision, GenServer, OpenAI Symphony architecture (2026-04-19)
-- [[concepts/claude-47-tokenizer]] — Claude Opus 4.7 tokenizer change: 1.46x text, 3x high-res images, ~40% cost increase (2026-04-20)
-- [[concepts/headless-ai-services]] — Headless AI services: personal AI via API instead of GUI, Matt Webb/Brandur Leach API-first wave (2026-04-20)
+- [[context-graph]] — Decision traces as living records; five-plane enterprise AI architecture; three startup paths (2026-04-20)
+- [[openai-agents-sdk]] — OpenAI Agents SDK v0.14.0 (sandbox execution, harness/compute separation, manifests)
+- [[token-economics]] — LLM inference cost analysis, optimization layers, token economics (2026-04-18)
+- [[attention-mechanism-variants]] — Modern attention mechanisms (MHA, GQA, MLA, SWA, DSA, Hybrid) (2026-04-18)
+- [[speculative-decoding]] — Draft-and-verify inference acceleration, EAGLE-3, self-speculative decoding (2026-04-18)
+- [[context-compression]] — Context compression techniques, summarization, retrieval, structural compression (2026-04-18)
+- [[mismanaged-geniuses-hypothesis]] — Frontier LMs are underutilized due to sub-optimal scaffolding; composition > scaling (2026-04-19)
+- [[multi-agent-consensus-patterns]] — Multi-agent consensus patterns: Supervisor, Hierarchical, P2P, Swarm; SWARM+ three-phase protocol (2026-04-19)
+- [[elixir-beam-agent-orchestration]] — Elixir/BEAM for agent orchestration: process supervision, GenServer, OpenAI Symphony architecture (2026-04-19)
+- [[claude-47-tokenizer]] — Claude Opus 4.7 tokenizer change: 1.46x text, 3x high-res images, ~40% cost increase (2026-04-20)
+- [[headless-ai-services]] — Headless AI services: personal AI via API instead of GUI, Matt Webb/Brandur Leach API-first wave (2026-04-20)
 
 ### Blog Authors (HN Popular Blogs — 84 feeds)
 
@@ -142,13 +142,13 @@ Last updated: 2026-04-20 (Claude 4.7 tokenizer change, Headless AI Services, Fig
 - [[manus]] — Manus / Browser Operator (Local browser agent, Meta acquired)
 - [[perplexity-comet]] — Perplexity Comet (AI-native browser, search-first)
 - [[webmcp]] — WebMCP (W3C standard, Chrome 146 preview)
-- [[concepts/death-of-browser]] — Death of Browser (Agentic browsing paradigm shift)
+- [[death-of-browser]] — Death of Browser (Agentic browsing paradigm shift)
 
 ### AI Infrastructure & Hardware
 
 - [[nvidia-dgx-spark]] — NVIDIA DGX Spark (Grace Blackwell, 128GB unified memory, local AI supercomputer)
 - [[nvidia-nemoclaw]] — NVIDIA NemoClaw (secure agent framework with OpenShell sandbox + OpenClaw)
-- [[concepts/local-llm/server-dgx-spark]] — Local LLM Server Setup on DGX Spark (complete setup guide with NemoClaw integration)
+- [[local-llm/server-dgx-spark]] — Local LLM Server Setup on DGX Spark (complete setup guide with NemoClaw integration)
 
 ### AI Models & Technologies
 
@@ -170,211 +170,211 @@ Last updated: 2026-04-20 (Claude 4.7 tokenizer change, Headless AI Services, Fig
 Ideas, frameworks, and methodologies extracted from articles.
 
 ### AI Development & Engineering
-- [[concepts/code-mode]] — CodeMode: LLM writes code instead of sequential tool calls
-- [[concepts/openai-agents-sdk]] — OpenAI Agents SDK v0.14.0: Harness/Compute separation, sandbox execution, multi-provider support
-- [[concepts/monty-sandbox]] — Monty: minimal secure Python interpreter in Rust for AI agents
-- [[concepts/sandbox/js-runtime]] — JavaScript Runtimes for AI Agents (E2B, WebContainer, Bun, Deno, QuickJS)
-- [[concepts/pydantic-ai]] — Pydantic AI: type-safe Python agent framework
+- [[code-mode]] — CodeMode: LLM writes code instead of sequential tool calls
+- [[openai-agents-sdk]] — OpenAI Agents SDK v0.14.0: Harness/Compute separation, sandbox execution, multi-provider support
+- [[monty-sandbox]] — Monty: minimal secure Python interpreter in Rust for AI agents
+- [[sandbox/js-runtime]] — JavaScript Runtimes for AI Agents (E2B, WebContainer, Bun, Deno, QuickJS)
+- [[pydantic-ai]] — Pydantic AI: type-safe Python agent framework
 
-- [[concepts/capabilities-based-security]] — Start from zero access, explicitly grant capabilities (Monty philosophy)
+- [[capabilities-based-security]] — Start from zero access, explicitly grant capabilities (Monty philosophy)
 
-- [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents (Simon Willison)
-- [[concepts/cognitive-load-software-development]] — Cognitive Load Theory in Software Development (Artem Zakirullin, 12k+ stars)
+- [[cognitive-cost-of-agents]] — Cognitive Cost of Agents (Simon Willison)
+- [[cognitive-load-software-development]] — Cognitive Load Theory in Software Development (Artem Zakirullin, 12k+ stars)
   - [[comparisons/aposd-vs-clean-code]] — APOSD vs Clean Code: Ousterhout vs Martin debate, unified through cognitive load lens
-- [[concepts/gnu-ai-reimplementations]] — GNU & AI Reimplementations (antirez)
+- [[gnu-ai-reimplementations]] — GNU & AI Reimplementations (antirez)
 
-- [[concepts/harness-engineering/agentic-workflows/_index]] — Agentic Engineering (Willison開発パターン集)
-- [[concepts/harness-engineering/agentic-workflows/red-green-tdd]] — Red/Green TDD (Simon Willison)
-- [[concepts/harness-engineering/agentic-workflows/first-run-the-tests]] — First Run the Tests (Simon Willison)
-- [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] — Agentic Manual Testing (Simon Willison)
-- [[concepts/harness-engineering/agentic-workflows/showboat]] — Showboat Documentation Tool (Simon Willison)
-- [[concepts/harness-engineering/agentic-workflows/vibe-coding]] — Vibe Coding vs Agentic Engineering (Simon Willison)
-- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — Linear Walkthroughs (Simon Willison)
-- [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] — Interactive Explanations (Simon Willison)
-- [[concepts/harness-engineering/agentic-workflows/cognitive-debt]] — Cognitive Debt (Simon Willison)
-- [[concepts/harness-engineering/agentic-workflows/context-window-management]] — Context Window Management (Simon Willison)
-- [[concepts/harness-engineering/agentic-workflows/rodney]] — Rodney (Browser Automation CLI)
-- [[concepts/harness-engineering/agentic-workflows/subagents]] — Subagents (Parallel Agent Delegation)
-- [[concepts/harness-engineering/agentic-workflows/how-agents-work]] — How Coding Agents Work
-- [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] — Using Git with Agents
-- [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]] — Compound Engineering Loop (Simon Willison)
-- [[concepts/harness-engineering/agentic-workflows/code-hoarding]] — Code Hoarding / Knowledge Accumulation (Simon Willison)
-- [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — Agent-First Codebase Design (Steipete)
-- [[concepts/harness-engineering/agentic-workflows/cli-first-development]] — CLI-First Development (Steipete, Sankalp)
-- [[concepts/harness-engineering/agentic-workflows/throw-away-draft-pattern]] — Throw-Away First Draft (Sankalp)
+- [[harness-engineering/agentic-workflows/_index]] — Agentic Engineering (Willison開発パターン集)
+- [[harness-engineering/agentic-workflows/red-green-tdd]] — Red/Green TDD (Simon Willison)
+- [[harness-engineering/agentic-workflows/first-run-the-tests]] — First Run the Tests (Simon Willison)
+- [[harness-engineering/agentic-workflows/agentic-manual-testing]] — Agentic Manual Testing (Simon Willison)
+- [[harness-engineering/agentic-workflows/showboat]] — Showboat Documentation Tool (Simon Willison)
+- [[harness-engineering/agentic-workflows/vibe-coding]] — Vibe Coding vs Agentic Engineering (Simon Willison)
+- [[harness-engineering/agentic-workflows/linear-walkthroughs]] — Linear Walkthroughs (Simon Willison)
+- [[harness-engineering/agentic-workflows/interactive-explanations]] — Interactive Explanations (Simon Willison)
+- [[harness-engineering/agentic-workflows/cognitive-debt]] — Cognitive Debt (Simon Willison)
+- [[harness-engineering/agentic-workflows/context-window-management]] — Context Window Management (Simon Willison)
+- [[harness-engineering/agentic-workflows/rodney]] — Rodney (Browser Automation CLI)
+- [[harness-engineering/agentic-workflows/subagents]] — Subagents (Parallel Agent Delegation)
+- [[harness-engineering/agentic-workflows/how-agents-work]] — How Coding Agents Work
+- [[harness-engineering/agentic-workflows/using-git-with-agents]] — Using Git with Agents
+- [[harness-engineering/agentic-workflows/compound-engineering-loop]] — Compound Engineering Loop (Simon Willison)
+- [[harness-engineering/agentic-workflows/code-hoarding]] — Code Hoarding / Knowledge Accumulation (Simon Willison)
+- [[harness-engineering/agentic-workflows/agent-first-design]] — Agent-First Codebase Design (Steipete)
+- [[harness-engineering/agentic-workflows/cli-first-development]] — CLI-First Development (Steipete, Sankalp)
+- [[harness-engineering/agentic-workflows/throw-away-draft-pattern]] — Throw-Away First Draft (Sankalp)
 
-- [[concepts/inference-speed-development]] — Inference Speed Development (Steipete)
-- [[concepts/claude-code-best-practices]] — Claude Code Best Practices (Sankalp)
-- [[concepts/context-window-management]] — Context Window Management (general patterns)
-- [[concepts/direct-prompting-philosophy]] — Direct Prompting Philosophy / "Just Talk To It" (Steipete)
-- [[concepts/cli-over-mcp-pattern]] — CLI Over MCP Pattern (Steipete)
-- [[concepts/ai-addiction-burnout]] — AI Addiction & Burnout Patterns (Steipete)
-- [[concepts/self-hosting-ai-development]] — Self-Hosting AI for Development (Steipete)
-- [[concepts/main-branch-development]] — Main-Branch Development (Steipete)
+- [[inference-speed-development]] — Inference Speed Development (Steipete)
+- [[claude-code-best-practices]] — Claude Code Best Practices (Sankalp)
+- [[context-window-management]] — Context Window Management (general patterns)
+- [[direct-prompting-philosophy]] — Direct Prompting Philosophy / "Just Talk To It" (Steipete)
+- [[cli-over-mcp-pattern]] — CLI Over MCP Pattern (Steipete)
+- [[ai-addiction-burnout]] — AI Addiction & Burnout Patterns (Steipete)
+- [[self-hosting-ai-development]] — Self-Hosting AI for Development (Steipete)
+- [[main-branch-development]] — Main-Branch Development (Steipete)
 
 ### AI Agent Engineering (Anthropic + OpenAI)
-- [[concepts/harness-engineering/system-architecture/_index]] — AI Agent Engineering (システム構築パターン集)
-- [[concepts/harness-engineering/system-architecture/building-effective-agents]] — Building Effective Agents (Anthropic)
-- [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — Advanced Tool Use (Anthropic)
-- [[concepts/harness-engineering/system-architecture/multi-agent-research-system]] — Multi-Agent Research System (Anthropic)
-- [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — Writing Effective Tools for AI Agents (Anthropic)
-- [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — Code Execution with MCP (Anthropic)
-- [[concepts/harness-engineering/system-architecture/harness-design-long-running-apps]] — Harness Design for Long-Running Apps (Anthropic)
-- [[concepts/harness-engineering/system-architecture/evals-for-ai-agents]] — Evals for AI Agents (Anthropic)
-- [[concepts/harness-engineering/system-architecture/infrastructure-noise]] — Infrastructure Noise in Agentic Evals (Anthropic)
-- [[concepts/harness-engineering/system-architecture/context-engineering]] — Context Engineering (Anthropic)
-- [[concepts/harness-engineering/system-architecture/claude-code-best-practices]] — Claude Code Best Practices (Anthropic)
-- [[concepts/harness-engineering/system-architecture/effective-harnesses-for-long-running-agents]] — Effective Harnesses for Long-Running Agents (Anthropic)
-- [[concepts/harness-engineering/system-architecture/agent-loop-orchestration]] — Agent Loop Orchestration (OpenAI Responses API)
-- [[concepts/harness-engineering/system-architecture/context-compaction]] — Context Compaction (OpenAI Responses API)
-- [[concepts/harness-engineering/system-architecture/container-context]] — Container Context (OpenAI Hosted Container)
-- [[concepts/harness-engineering/system-architecture/agent-skills]] — Agent Skills / SKILL.md bundles (OpenAI)
-- [[concepts/harness-engineering/system-architecture/agent-security-patterns]] — Agent Security Patterns (OpenAI Egress Proxy)
-- [[concepts/evaluation-flywheel]] — Evaluation Flywheel (OpenAI Cookbook)
-- [[concepts/agentic-scaffolding]] — Agentic Scaffolding (OpenAI Cookbook)
-- [[concepts/exec-plans]] — Execution Plans (OpenAI Cookbook)
-- [[concepts/self-evolving-agents]] — Self-Evolving Agents (OpenAI Cookbook)
-- [[concepts/resilient-prompt-engineering]] — Resilient Prompt Engineering (OpenAI Cookbook)
-- [[concepts/context-engineering]] — Context Engineering (OpenAI Cookbook)
-- [[concepts/dspy]] — DSPy: Declarative Self-improving Language Systems (Omar Khattab, Stanford)
-- [[concepts/llm-integration-patterns]] — LLM Integration Patterns: Comparative Taxonomy
-- [[concepts/gepa]] — GEPA: Genetic-Pareto Prompt Evolution (ICLR 2026 Oral)
-- [[concepts/rlms]] — RLMs: Recursive Language Models (inference-time self-optimization)
-- [[concepts/ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
-- [[concepts/llm-as-judge]] — LLM-as-Judge: 3 evaluation frameworks, 7 best practices, 4 bias types
-- [[concepts/offline-evaluation]] — Offline Evaluation: pre-production eval pipelines, regression testing
-- [[concepts/ai-safety]] — AI Safety: Alignment, Oversight, and Interpretability
-- [[concepts/agentic-pbt]] — Agentic Property-Based Testing (Anthropic + Hypothesis, Claude Code PBT agent)
-- [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
-- [[concepts/harness-engineering]] — Harness Engineering (Ryan Lopopolo / OpenAI Symphony)
-- [[concepts/llm-evaluation-harness]] — LLM Evaluation Harness
-- [[concepts/llm-training-coherence-evolution]] — LLM Training Coherence Evolution (Giles Thomas / gpjt, Karpathy RNN comparison)
-- [[concepts/local-llm]] — Local LLM Inference (llama.cpp, Ollama, GGUF)
-   |- [[concepts/local-llm/_index]] — Local LLM Ecosystem Overview
-   |- [[concepts/local-llm/gguf]] — GGUF Quantization Format
-   |- [[concepts/local-llm/llama-cpp]] — llama.cpp Inference Engine
-   |- [[concepts/local-llm/ollama]] — Ollama Local LLM Runner (model library, REST API)
-   |- [[concepts/local-llm/vllm]] — vLLM High-Throughput Serving
-   |- [[concepts/local-llm/inference-hardware]] — Consumer GPU, Apple Silicon, Edge Devices
-   |- [[concepts/local-llm/server-dgx-spark]] — DGX Spark + NemoClaw Setup Guide
-   |- [[concepts/local-llm/model-quantization]] — Model Quantization (GPTQ, AWQ, EXL2, FP8)
-   |- [[concepts/local-llm/model-distillation]] — Knowledge Distillation
-   |- [[concepts/local-llm/self-hosting-ai-development]] — Self-Hosting AI for Development (economics)
-   |- [[concepts/inference/vllm]] — vLLM Production Serving (PagedAttention)
-|- [[concepts/inference/sglang]] — SGLang Serving Framework (RadixAttention, xgrammar)
-|- [[concepts/reasoning-models]] — Reasoning Models (o1-style, CoT, PRM)
-|- [[concepts/speech/_index]] — Speech Models (Whisper, TTS, AudioCraft — audio-language specific models)
-|- [[concepts/speech/whisper]] — Whisper: OpenAI's Speech Recognition Model (680k hours, 99 languages, ASR)
-|- [[concepts/fine-tuning/_index]] — Fine-Tuning Overview (SFT, PEFT, RLHF, DPO, GRPO pipeline)
-|- [[concepts/fine-tuning/peft-lora-qlora]] — Parameter-Efficient Fine-Tuning (LoRA, QLoRA, adapters)
-|- [[concepts/fine-tuning/grpo-rl-training]] — Group Relative Policy Optimization for reasoning
-|- [[concepts/fine-tuning/rlhf-dpo-preference]] — RLHF, DPO, ORPO, KTO preference optimization
-|- [[concepts/fine-tuning/axolotl]] — YAML-config fine-tuning framework
-|- [[concepts/fine-tuning/unsloth]] — 2-5x faster fine-tuning with 50-80% less memory
-|- [[concepts/fine-tuning/trl]] — Transformer Reinforcement Learning library (HuggingFace)
-|- [[concepts/fine-tuning/pytorch-fsdp]] — Fully Sharded Data Parallel distributed training
-|- [[concepts/fine-tuning/quantization-overview]] — Model quantization for efficient inference
-|- [[concepts/karpathy-loop]] — The Karpathy Loop (Autonomous Experiment Design, autoresearch)
-- [[concepts/personal-superintelligence]] — Personal Superintelligence (Meta vs OpenClaw vs Local AI philosophies)
-- [[concepts/meta-harness]] — Meta-Harness
-- [[concepts/scaling-without-slop]] — Scaling without Slop
-- [[concepts/world-models-science]] — World Models for Scientific Discovery
+- [[harness-engineering/system-architecture/_index]] — AI Agent Engineering (システム構築パターン集)
+- [[harness-engineering/system-architecture/building-effective-agents]] — Building Effective Agents (Anthropic)
+- [[harness-engineering/system-architecture/advanced-tool-use]] — Advanced Tool Use (Anthropic)
+- [[harness-engineering/system-architecture/multi-agent-research-system]] — Multi-Agent Research System (Anthropic)
+- [[harness-engineering/system-architecture/writing-tools-for-agents]] — Writing Effective Tools for AI Agents (Anthropic)
+- [[harness-engineering/system-architecture/code-execution-with-mcp]] — Code Execution with MCP (Anthropic)
+- [[harness-engineering/system-architecture/harness-design-long-running-apps]] — Harness Design for Long-Running Apps (Anthropic)
+- [[harness-engineering/system-architecture/evals-for-ai-agents]] — Evals for AI Agents (Anthropic)
+- [[harness-engineering/system-architecture/infrastructure-noise]] — Infrastructure Noise in Agentic Evals (Anthropic)
+- [[harness-engineering/system-architecture/context-engineering]] — Context Engineering (Anthropic)
+- [[harness-engineering/system-architecture/claude-code-best-practices]] — Claude Code Best Practices (Anthropic)
+- [[harness-engineering/system-architecture/effective-harnesses-for-long-running-agents]] — Effective Harnesses for Long-Running Agents (Anthropic)
+- [[harness-engineering/system-architecture/agent-loop-orchestration]] — Agent Loop Orchestration (OpenAI Responses API)
+- [[harness-engineering/system-architecture/context-compaction]] — Context Compaction (OpenAI Responses API)
+- [[harness-engineering/system-architecture/container-context]] — Container Context (OpenAI Hosted Container)
+- [[harness-engineering/system-architecture/agent-skills]] — Agent Skills / SKILL.md bundles (OpenAI)
+- [[harness-engineering/system-architecture/agent-security-patterns]] — Agent Security Patterns (OpenAI Egress Proxy)
+- [[evaluation-flywheel]] — Evaluation Flywheel (OpenAI Cookbook)
+- [[agentic-scaffolding]] — Agentic Scaffolding (OpenAI Cookbook)
+- [[exec-plans]] — Execution Plans (OpenAI Cookbook)
+- [[self-evolving-agents]] — Self-Evolving Agents (OpenAI Cookbook)
+- [[resilient-prompt-engineering]] — Resilient Prompt Engineering (OpenAI Cookbook)
+- [[context-engineering]] — Context Engineering (OpenAI Cookbook)
+- [[dspy]] — DSPy: Declarative Self-improving Language Systems (Omar Khattab, Stanford)
+- [[llm-integration-patterns]] — LLM Integration Patterns: Comparative Taxonomy
+- [[gepa]] — GEPA: Genetic-Pareto Prompt Evolution (ICLR 2026 Oral)
+- [[rlms]] — RLMs: Recursive Language Models (inference-time self-optimization)
+- [[ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
+- [[llm-as-judge]] — LLM-as-Judge: 3 evaluation frameworks, 7 best practices, 4 bias types
+- [[offline-evaluation]] — Offline Evaluation: pre-production eval pipelines, regression testing
+- [[ai-safety]] — AI Safety: Alignment, Oversight, and Interpretability
+- [[agentic-pbt]] — Agentic Property-Based Testing (Anthropic + Hypothesis, Claude Code PBT agent)
+- [[functional-emotions-llms]] — Functional Emotions in LLMs
+- [[harness-engineering]] — Harness Engineering (Ryan Lopopolo / OpenAI Symphony)
+- [[llm-evaluation-harness]] — LLM Evaluation Harness
+- [[llm-training-coherence-evolution]] — LLM Training Coherence Evolution (Giles Thomas / gpjt, Karpathy RNN comparison)
+- [[local-llm]] — Local LLM Inference (llama.cpp, Ollama, GGUF)
+   |- [[local-llm/_index]] — Local LLM Ecosystem Overview
+   |- [[local-llm/gguf]] — GGUF Quantization Format
+   |- [[local-llm/llama-cpp]] — llama.cpp Inference Engine
+   |- [[local-llm/ollama]] — Ollama Local LLM Runner (model library, REST API)
+   |- [[local-llm/vllm]] — vLLM High-Throughput Serving
+   |- [[local-llm/inference-hardware]] — Consumer GPU, Apple Silicon, Edge Devices
+   |- [[local-llm/server-dgx-spark]] — DGX Spark + NemoClaw Setup Guide
+   |- [[local-llm/model-quantization]] — Model Quantization (GPTQ, AWQ, EXL2, FP8)
+   |- [[local-llm/model-distillation]] — Knowledge Distillation
+   |- [[local-llm/self-hosting-ai-development]] — Self-Hosting AI for Development (economics)
+   |- [[inference/vllm]] — vLLM Production Serving (PagedAttention)
+|- [[inference/sglang]] — SGLang Serving Framework (RadixAttention, xgrammar)
+|- [[reasoning-models]] — Reasoning Models (o1-style, CoT, PRM)
+|- [[speech/_index]] — Speech Models (Whisper, TTS, AudioCraft — audio-language specific models)
+|- [[speech/whisper]] — Whisper: OpenAI's Speech Recognition Model (680k hours, 99 languages, ASR)
+|- [[fine-tuning/_index]] — Fine-Tuning Overview (SFT, PEFT, RLHF, DPO, GRPO pipeline)
+|- [[fine-tuning/peft-lora-qlora]] — Parameter-Efficient Fine-Tuning (LoRA, QLoRA, adapters)
+|- [[fine-tuning/grpo-rl-training]] — Group Relative Policy Optimization for reasoning
+|- [[fine-tuning/rlhf-dpo-preference]] — RLHF, DPO, ORPO, KTO preference optimization
+|- [[fine-tuning/axolotl]] — YAML-config fine-tuning framework
+|- [[fine-tuning/unsloth]] — 2-5x faster fine-tuning with 50-80% less memory
+|- [[fine-tuning/trl]] — Transformer Reinforcement Learning library (HuggingFace)
+|- [[fine-tuning/pytorch-fsdp]] — Fully Sharded Data Parallel distributed training
+|- [[fine-tuning/quantization-overview]] — Model quantization for efficient inference
+|- [[karpathy-loop]] — The Karpathy Loop (Autonomous Experiment Design, autoresearch)
+- [[personal-superintelligence]] — Personal Superintelligence (Meta vs OpenClaw vs Local AI philosophies)
+- [[meta-harness]] — Meta-Harness
+- [[scaling-without-slop]] — Scaling without Slop
+- [[world-models-science]] — World Models for Scientific Discovery
 
 ### OpenClaw Ecosystem
 
-- [[concepts/openclaw/_index]] — OpenClawコンセプト集約（哲学、設計パターン、エコシステム、比較分析）
-  - [[concepts/openclaw/philosophy]] — Primitives First哲学（Explicit > Implicit, Guarantees > Defaults, Legibility > Autonomy）
-  - [[concepts/openclaw/five-tier-precedence]] — Five-Tier Skill Precedence Model（決定論的スキル優先度）
-  - [[concepts/openclaw/architecture-comparison]] — OpenClaw vs Hermes Architecture Comparison（Skill Explosion Problem, Product Positioning Framework）
-  - [[concepts/openclaw/anthropic-conflict]] — Anthropic-OpenClaw Conflict（2026年4月サブスクリプション排除、「Claw Tax」経済学）
-  - [[concepts/openclaw/ecosystem-tools]] — OpenClaw Ecosystem Tools（ClawHub, mcporter, Peekaboo, gogcli, CodexBar）
+- [[openclaw/_index]] — OpenClawコンセプト集約（哲学、設計パターン、エコシステム、比較分析）
+  - [[openclaw/philosophy]] — Primitives First哲学（Explicit > Implicit, Guarantees > Defaults, Legibility > Autonomy）
+  - [[openclaw/five-tier-precedence]] — Five-Tier Skill Precedence Model（決定論的スキル優先度）
+  - [[openclaw/architecture-comparison]] — OpenClaw vs Hermes Architecture Comparison（Skill Explosion Problem, Product Positioning Framework）
+  - [[openclaw/anthropic-conflict]] — Anthropic-OpenClaw Conflict（2026年4月サブスクリプション排除、「Claw Tax」経済学）
+  - [[openclaw/ecosystem-tools]] — OpenClaw Ecosystem Tools（ClawHub, mcporter, Peekaboo, gogcli, CodexBar）
 - [[comparisons/hermes-vs-openclaw-architecture]] — 詳細なHermes vs OpenClaw比較
-- [[concepts/skill-architecture-patterns]] — Self-Authored vs Governedスキル管理パターン
-- [[concepts/anthropic-openclaw-conflict]] — Anthropic-OpenClaw Conflict（元ページ、サブページへ統合済み）
+- [[skill-architecture-patterns]] — Self-Authored vs Governedスキル管理パターン
+- [[anthropic-openclaw-conflict]] — Anthropic-OpenClaw Conflict（元ページ、サブページへ統合済み）
 
 ### Claude Agent SDK & Managed Agents
-- [[concepts/claude-agent-sdk-sre-patterns]] — Claude Agent SDK SRE Agent Pattern (MCP, safety guardrails, subprocess)
-- [[concepts/managed-agents-sre-incident-response]] — Managed Agents SRE Incident Response (Webhook, HITL, Skills)
-- [[concepts/chief-of-staff-agent-patterns]] — Chief of Staff Agent Patterns (CLAUDE.md, Hooks, Plan Mode, Subagents)
-- [[concepts/research-agent-fundamentals]] — Research Agent Fundamentals (Stateless vs Stateful, buffer management)
+- [[claude-agent-sdk-sre-patterns]] — Claude Agent SDK SRE Agent Pattern (MCP, safety guardrails, subprocess)
+- [[managed-agents-sre-incident-response]] — Managed Agents SRE Incident Response (Webhook, HITL, Skills)
+- [[chief-of-staff-agent-patterns]] — Chief of Staff Agent Patterns (CLAUDE.md, Hooks, Plan Mode, Subagents)
+- [[research-agent-fundamentals]] — Research Agent Fundamentals (Stateless vs Stateful, buffer management)
 
 ### Agent Systems & Orchestration
 |- [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
-|- [[concepts/caid-coordination]] — CAID (Centralized Asynchronous Isolated Delegation)
-|- [[concepts/long-context-coding-agents]] — Long-Context via Coding Agents
-|- [[concepts/multi-agent-autonomy-scale]] — Multi-Agent Autonomy Scale
-|- [[concepts/back-of-house-patterns]] — Back of House multi-agent orchestration (kitchen metaphor: Head Chef/Line Cooks). By @MilksandMatcha + @0xSero
-|- [[concepts/single-agent-ceiling]] — Single-Agent Ceiling: limitations of solo-agent coding, "sloperator" anti-pattern
+|- [[caid-coordination]] — CAID (Centralized Asynchronous Isolated Delegation)
+|- [[long-context-coding-agents]] — Long-Context via Coding Agents
+|- [[multi-agent-autonomy-scale]] — Multi-Agent Autonomy Scale
+|- [[back-of-house-patterns]] — Back of House multi-agent orchestration (kitchen metaphor: Head Chef/Line Cooks). By @MilksandMatcha + @0xSero
+|- [[single-agent-ceiling]] — Single-Agent Ceiling: limitations of solo-agent coding, "sloperator" anti-pattern
 
 ### Agent Team / Swarm
-- [[concepts/agent-team-swarm/_index]] — Agent Team / Swarm（複数Agent協調・Dark Factoryまでの5レベルモデル）
-- [[concepts/anthropic-managed-agents]] — Anthropic Managed Agents（Brain/Hands/Session分離アーキテクチャ）
-- [[concepts/openai-symphony]] — OpenAI Symphony（WORKFLOW.md駆動のタスクオーケストレーター）
-- [[concepts/dark-factory-software-factory]] — Dark Factory Software Factory（StrongDM実践事例）
+- [[agent-team-swarm/_index]] — Agent Team / Swarm（複数Agent協調・Dark Factoryまでの5レベルモデル）
+- [[anthropic-managed-agents]] — Anthropic Managed Agents（Brain/Hands/Session分離アーキテクチャ）
+- [[openai-symphony]] — OpenAI Symphony（WORKFLOW.md駆動のタスクオーケストレーター）
+- [[dark-factory-software-factory]] — Dark Factory Software Factory（StrongDM実践事例）
 
 ### AI Safety & Ethics
-- [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
+- [[claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
 
-- [[concepts/cybersecurity-proof-of-work]] — Cybersecurity Proof of Work (LLM vulnerability discovery as economic equation, more tokens = more exploits)
+- [[cybersecurity-proof-of-work]] — Cybersecurity Proof of Work (LLM vulnerability discovery as economic equation, more tokens = more exploits)
 
-- [[concepts/ai-agent-traps]] — AI Agent Traps
+- [[ai-agent-traps]] — AI Agent Traps
 
-- [[concepts/neurosymbolic-ai]] — Neurosymbolic AI (combining neural networks with symbolic reasoning)
+- [[neurosymbolic-ai]] — Neurosymbolic AI (combining neural networks with symbolic reasoning)
 
-- [[concepts/ai-coding-agent-criticism]] — AI Coding Agent Criticism (Center Has a Bias thesis)
-- [[concepts/agent-sandboxing]] — Agent Sandboxing: gVisor, Firecracker, MicroVMs for secure code execution
+- [[ai-coding-agent-criticism]] — AI Coding Agent Criticism (Center Has a Bias thesis)
+- [[agent-sandboxing]] — Agent Sandboxing: gVisor, Firecracker, MicroVMs for secure code execution
 
 ### Open Source AI & Ecosystem
-- [[concepts/open-model-consortium]] — Open Model Consortium (Nemotron, Marin, Arcee)
+- [[open-model-consortium]] — Open Model Consortium (Nemotron, Marin, Arcee)
 
-- [[concepts/anthropic-openclaw-conflict]] — Anthropic-OpenClaw Conflict (subscription cutoff, third-party tools)
+- [[anthropic-openclaw-conflict]] — Anthropic-OpenClaw Conflict (subscription cutoff, third-party tools)
 
-- [[concepts/illusion-of-thinking]] — Apple's Illusion of Thinking & Neurosymbolic Robotics
+- [[illusion-of-thinking]] — Apple's Illusion of Thinking & Neurosymbolic Robotics
 
 ### AI Safety & Alignment
 
-- [[concepts/compute-scaling-bottlenecks]] — Compute Scaling Bottlenecks (Dylan Patel)
+- [[compute-scaling-bottlenecks]] — Compute Scaling Bottlenecks (Dylan Patel)
 
 ### AI Economics & Industry
 
-- [[concepts/ai-bubble-economics]] — AI Bubble Economics (Ed Zitron)
-- [[concepts/ai-coding-reliability]] — AI Coding Reliability (Gary Marcus)
-- [[concepts/open-source-ai-destruction]] — Open Source AI Destruction (Jeff Geerling)
-- [[concepts/claude-code-leak]] — Claude Code Source Leak
-- [[concepts/project-glasswing]] — Project Glasswing
-- [[concepts/ram-relative-adoption-metric]] — Relative Adoption Metric (Nathan Lambert, time+size normalized model adoption trajectory prediction)
+- [[ai-bubble-economics]] — AI Bubble Economics (Ed Zitron)
+- [[ai-coding-reliability]] — AI Coding Reliability (Gary Marcus)
+- [[open-source-ai-destruction]] — Open Source AI Destruction (Jeff Geerling)
+- [[claude-code-leak]] — Claude Code Source Leak
+- [[project-glasswing]] — Project Glasswing
+- [[ram-relative-adoption-metric]] — Relative Adoption Metric (Nathan Lambert, time+size normalized model adoption trajectory prediction)
 
-- [[concepts/reasoning-model-cost-transparency]] — Reasoning Model Cost Transparency
+- [[reasoning-model-cost-transparency]] — Reasoning Model Cost Transparency
 
 ### Infrastructure & Hardware
 
-- [[concepts/helium-crisis-2026]] — Helium Crisis 2026
+- [[helium-crisis-2026]] — Helium Crisis 2026
 
-- [[concepts/skill-architecture-patterns]] — Skill self-improvement vs governed approaches (Hermes vs OpenClaw)
+- [[skill-architecture-patterns]] — Skill self-improvement vs governed approaches (Hermes vs OpenClaw)
 
 ### Web & Technology
 
-- [[concepts/death-of-browser]] — Death of the Browser
-- [[concepts/local-first-software]] — Local-First Software (Kleppmann, Ink & Switch, CRDTs, AT Protocol)
+- [[death-of-browser]] — Death of the Browser
+- [[local-first-software]] — Local-First Software (Kleppmann, Ink & Switch, CRDTs, AT Protocol)
 
 ### Cognition / Devin Philosophy
 
-- [[concepts/cognition-devin-philosophy]] — Cognition/Devin Philosophy (Agentic Coding at Scale)
-- [[concepts/ungrounded-meaning]] — Ungrounded Meaning (Shunyu Yao on Merrill et al.: can language meaning be learned from form alone?)
-- [[concepts/coala]] — CoALA: Cognitive Architectures for Language Agents (Sumers, Yao, Narasimhan, Griffiths)
-- [[concepts/agent-team-swarm/managed-devins]] — Managed Devins (Cognition's conditional multi-agent)
-- [[concepts/closing-agent-loop]] — Closing the Agent Loop (Write→Catch→Fix→Merge)
-- [[concepts/harness-engineering/system-architecture/context-anxiety]] — Context Anxiety (Sonnet 4.5 integration lessons)
-- [[concepts/sqs-lambda-esm-scaling]] — SQS Lambda ESM Scaling Behaviours (Rehan van der Merwe: 7 scaling patterns, batch sizing, error handling, backpressure)
-- [[concepts/ecs-fargate-scaling]] — ECS Fargate Scaling (Rehan van der Merwe: matching Lambda burst performance, custom metrics, step scaling)
-- [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst (Devinをデータ分析エージェントにする設計)
+- [[cognition-devin-philosophy]] — Cognition/Devin Philosophy (Agentic Coding at Scale)
+- [[ungrounded-meaning]] — Ungrounded Meaning (Shunyu Yao on Merrill et al.: can language meaning be learned from form alone?)
+- [[coala]] — CoALA: Cognitive Architectures for Language Agents (Sumers, Yao, Narasimhan, Griffiths)
+- [[agent-team-swarm/managed-devins]] — Managed Devins (Cognition's conditional multi-agent)
+- [[closing-agent-loop]] — Closing the Agent Loop (Write→Catch→Fix→Merge)
+- [[harness-engineering/system-architecture/context-anxiety]] — Context Anxiety (Sonnet 4.5 integration lessons)
+- [[sqs-lambda-esm-scaling]] — SQS Lambda ESM Scaling Behaviours (Rehan van der Merwe: 7 scaling patterns, batch sizing, error handling, backpressure)
+- [[ecs-fargate-scaling]] — ECS Fargate Scaling (Rehan van der Merwe: matching Lambda burst performance, custom metrics, step scaling)
+- [[cognition-ai-data-analyst]] — Cognition AI Data Analyst (Devinをデータ分析エージェントにする設計)
 
 ### AI Organization (4)
 
-- [[concepts/ai-organization/_index]] — AI Organization (階層からインテリジェンスへ、Solo Founder、Context as Moat、Diamond Org Chart)
-- [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]] — Block: Hierarchy to Intelligence (Jack Dorsey: World Model, 4 Building Blocks, 3 Roles, Failure-Driven Roadmap)
-- [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder & Super IC (Reddit/FourWeekMBA: MVP commoditization, FrontPage parallel, $10M→$100M path)
-- [[concepts/ai-organization/ai-org-context-as-moat]] — Proprietary Context (McKinsey 5 Pillars, M-Shaped Supervisor, Diamond Org Chart, Agentic Governance)
+- [[ai-organization/_index]] — AI Organization (階層からインテリジェンスへ、Solo Founder、Context as Moat、Diamond Org Chart)
+- [[ai-organization/ai-org-from-hierarchy-to-intelligence]] — Block: Hierarchy to Intelligence (Jack Dorsey: World Model, 4 Building Blocks, 3 Roles, Failure-Driven Roadmap)
+- [[ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder & Super IC (Reddit/FourWeekMBA: MVP commoditization, FrontPage parallel, $10M→$100M path)
+- [[ai-organization/ai-org-context-as-moat]] — Proprietary Context (McKinsey 5 Pillars, M-Shaped Supervisor, Diamond Org Chart, Agentic Governance)
 
 ## Comparison Pages (9)
 
@@ -437,22 +437,22 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 ### Memory & Context Systems
 
-- [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson (stateless vs stateful agents)
-- [[concepts/claude-memory]] — Claude's File-Based Memory Architecture (CLAUDE.md, .agent/ directories)
-- [[concepts/claude-memory-tool]] — Cognition's Memory Tool (copying Claude's approach)
-- [[concepts/claude-code-source-patterns]] — Claude Code Source Patterns (leaked source analysis)
-- [[concepts/vajra-background-agent]] — Vajra Open-Source Background Coding Agent
-- [[concepts/context-engineering]] — Context Engineering (Anthropic's dynamic token curation framework)
-- [[concepts/harness-design-long-running-apps]] — Harness Design for Long-Running Apps (Anthropic's multi-agent GAN loop)
-- [[concepts/memory-systems-design-patterns]] — Memory Systems Design Patterns (Anthropic vs OpenAI vs Cognition synthesis)
-- [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware (S3 Files, Tigris, LLMFS, ChromaFS — L3 cloud storage + virtual FS)
-- [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy (Memory Backends vs Context Substrates)
-- [[concepts/context-fragments]] — Context Fragments (Vivek Trivedy, Apr 2026) — harnessが選択的にロードするコンテキストオブジェクトの集合
-- [[concepts/experiential-memory]] — Experiential Memory (Vivek Trivedy, Apr 2026) — エージェント間で共有・フォーク・蓄積可能な経験的記憶
+- [[chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson (stateless vs stateful agents)
+- [[claude-memory]] — Claude's File-Based Memory Architecture (CLAUDE.md, .agent/ directories)
+- [[claude-memory-tool]] — Cognition's Memory Tool (copying Claude's approach)
+- [[claude-code-source-patterns]] — Claude Code Source Patterns (leaked source analysis)
+- [[vajra-background-agent]] — Vajra Open-Source Background Coding Agent
+- [[context-engineering]] — Context Engineering (Anthropic's dynamic token curation framework)
+- [[harness-design-long-running-apps]] — Harness Design for Long-Running Apps (Anthropic's multi-agent GAN loop)
+- [[memory-systems-design-patterns]] — Memory Systems Design Patterns (Anthropic vs OpenAI vs Cognition synthesis)
+- [[ai-agent-memory-middleware]] — AI Agent Memory Middleware (S3 Files, Tigris, LLMFS, ChromaFS — L3 cloud storage + virtual FS)
+- [[ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy (Memory Backends vs Context Substrates)
+- [[context-fragments]] — Context Fragments (Vivek Trivedy, Apr 2026) — harnessが選択的にロードするコンテキストオブジェクトの集合
+- [[experiential-memory]] — Experiential Memory (Vivek Trivedy, Apr 2026) — エージェント間で共有・フォーク・蓄積可能な経験的記憶
 
 ### AI Safety & Alignment
 
-- [[concepts/causal-backbone-conjecture]] — Causal Backbone Conjecture (tailcalled, 2024): resource-constrained selection theorem for agent-like structures, sparse high-leverage modeling
+- [[causal-backbone-conjecture]] — Causal Backbone Conjecture (tailcalled, 2024): resource-constrained selection theorem for agent-like structures, sparse high-leverage modeling
 
 - [[gary-marcus|Gary Marcus]] — AI critic, NYU emeritus. Skeptical of pure scaling, advocates hybrid neuro-symbolic approaches
 
@@ -461,7 +461,7 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 - [[george-hotz|George Hotz]] (@geohot) — comma.ai founder, tinygrad creator. "All compute is equal", open-source GPU driver
 - [[gm8xx8|gm8xx8]] (@gm8xx8) — AI paper curator & infrastructure researcher. 29-paper curation batches (proof theory, VLA, 1-bit LLMs, agentic systems). cuLA CUDA kernels, MiroMindAI contributor, linear attention & M2RNN analysis. 132K Farcaster followers, 77K+ HF upvotes. L3 depth.
 - [[sero|Sero]] (@0xsero) — Sybil Solutions founder, ElizaOS contributor. 8x RTX 3090 homelab, Freedom Tech advocate, local AI infrastructure builder, Thrive Protocol. TurboQuant, pi-brain, Open Orchestra, Parchi, vLLM Studio, Azul. 200+ OSS repos. L3 depth.
-- [[concepts/dgx-spark-local-llm-server]] — DGX Spark: Local LLM Server & NemoClaw Setup (Grace Blackwell, NIM inference, distributed agent architecture)
+- [[dgx-spark-local-llm-server]] — DGX Spark: Local LLM Server & NemoClaw Setup (Grace Blackwell, NIM inference, distributed agent architecture)
 
 ### AI Research & Computer Vision
 
@@ -470,13 +470,13 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 ### AI Safety & Alignment
 
-- [[concepts/behavioral-trait-transmission|Subliminal Learning in Language Models]] — 初期化を共有するモデル間で、無関係なデータを通じて行動特性が伝達される現象。蒸留安全性、フィルタリング不十分、来歴追跡必要性
-- [[concepts/halo-loss-attention-sinks|HALO Loss & Attention Sinks]] — トランスフォーマーのattention sink現象に対する調和的正則化。石鹸泡エネルギー最小化アナロジー、長期コンテキスト生成安定性
-- [[concepts/ai-index-report-2026|Stanford AI Index Report 2026]] — SWE-bench ~100%到達、米中能力収束、5,427米国データセンター、TSMC独占、Jagged Frontier、88%組織導入
+- [[behavioral-trait-transmission|Subliminal Learning in Language Models]] — 初期化を共有するモデル間で、無関係なデータを通じて行動特性が伝達される現象。蒸留安全性、フィルタリング不十分、来歴追跡必要性
+- [[halo-loss-attention-sinks|HALO Loss & Attention Sinks]] — トランスフォーマーのattention sink現象に対する調和的正則化。石鹸泡エネルギー最小化アナロジー、長期コンテキスト生成安定性
+- [[ai-index-report-2026|Stanford AI Index Report 2026]] — SWE-bench ~100%到達、米中能力収束、5,427米国データセンター、TSMC独占、Jagged Frontier、88%組織導入
 
 ### Agent Evaluation
 
-- [[concepts/agent-survival-benchmark|Agent Survival Benchmark]] — LLMエージェントのPvP圧力下での生存能力測定。攻撃性≠勝利、適応性・リソース管理・戦略的忍耐の重要性
+- [[agent-survival-benchmark|Agent Survival Benchmark]] — LLMエージェントのPvP圧力下での生存能力測定。攻撃性≠勝利、適応性・リソース管理・戦略的忍耐の重要性
 
 ### Open Source AI & Consortium
 

@@ -95,10 +95,10 @@ Stapelberg has been running a blog since 2005 — over 20 years of documented te
 
 ## Related
 
-- [[concepts/nixos]] — Declarative, reproducible Linux distribution
-- [[concepts/coding-agents]] — AI-assisted development workflows
-- [[concepts/i3-wm]] — Tiling window manager created by Stapelberg
-- [[concepts/wayland]] — X11 successor, now mature enough for Stapelberg's adoption
+- [[nixos]] — Declarative, reproducible Linux distribution
+- [[coding-agents]] — AI-assisted development workflows
+- [[i3-wm]] — Tiling window manager created by Stapelberg
+- [[wayland]] — X11 successor, now mature enough for Stapelberg's adoption
 - [[simon-tatham]] — Another long-running free-software author and blogger
 - [[xeiaso-net]] — Shared interest in Nix/NixOS and practical infrastructure
 
