@@ -152,6 +152,7 @@ Last updated: 2026-04-20 (Claude 4.7 tokenizer change, Headless AI Services, Fig
 
 ### AI Models & Technologies
 
+|- [[multimodal/_index]] — Multimodal AI (CLIP, LLaVA, Stable Diffusion, Segment Anything, AudioCraft)
 - [[agibot-10000-units]] — AGIBot Reaches 10,000 Units
 - [[amazon-rivr]] — Amazon Acquires Rivr
 - [[claude-mythos]] — Claude Mythos
@@ -173,6 +174,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[code-mode]] — CodeMode: LLM writes code instead of sequential tool calls
 - [[openai-agents-sdk]] — OpenAI Agents SDK v0.14.0: Harness/Compute separation, sandbox execution, multi-provider support
 - [[monty-sandbox]] — Monty: minimal secure Python interpreter in Rust for AI agents
+- [[sandbox/_index]] — Sandbox: AI Agent Code Execution Isolation (gVisor, Firecracker, MicroVMs, Monty, WASM)
 - [[sandbox/js-runtime]] — JavaScript Runtimes for AI Agents (E2B, WebContainer, Bun, Deno, QuickJS)
 - [[pydantic-ai]] — Pydantic AI: type-safe Python agent framework
 
@@ -183,7 +185,7 @@ Ideas, frameworks, and methodologies extracted from articles.
   - [[comparisons/aposd-vs-clean-code]] — APOSD vs Clean Code: Ousterhout vs Martin debate, unified through cognitive load lens
 - [[gnu-ai-reimplementations]] — GNU & AI Reimplementations (antirez)
 
-- [[harness-engineering/agentic-workflows/_index]] — Agentic Engineering (Willison開発パターン集)
+- [[harness-engineering/agentic-workflows/_index]] — Agentic Workflows: AI Agentを「活用して開発する」実践的ワークフロー（Willison, Sankalp, Steipete）
 - [[harness-engineering/agentic-workflows/red-green-tdd]] — Red/Green TDD (Simon Willison)
 - [[harness-engineering/agentic-workflows/first-run-the-tests]] — First Run the Tests (Simon Willison)
 - [[harness-engineering/agentic-workflows/agentic-manual-testing]] — Agentic Manual Testing (Simon Willison)
@@ -213,7 +215,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[main-branch-development]] — Main-Branch Development (Steipete)
 
 ### AI Agent Engineering (Anthropic + OpenAI)
-- [[harness-engineering/system-architecture/_index]] — AI Agent Engineering (システム構築パターン集)
+- [[harness-engineering/system-architecture/_index]] — System Architecture: AI Agentを「構築する」システム設計パターン集（Anthropic + OpenAI Responses API）
 - [[harness-engineering/system-architecture/building-effective-agents]] — Building Effective Agents (Anthropic)
 - [[harness-engineering/system-architecture/advanced-tool-use]] — Advanced Tool Use (Anthropic)
 - [[harness-engineering/system-architecture/multi-agent-research-system]] — Multi-Agent Research System (Anthropic)
@@ -246,6 +248,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[ai-safety]] — AI Safety: Alignment, Oversight, and Interpretability
 - [[agentic-pbt]] — Agentic Property-Based Testing (Anthropic + Hypothesis, Claude Code PBT agent)
 - [[functional-emotions-llms]] — Functional Emotions in LLMs
+- [[harness-engineering/_index]] — Harness Engineering: Agent = Model + Harness（OpenAI Symphony, Ryan Lopopolo）
 - [[harness-engineering]] — Harness Engineering (Ryan Lopopolo / OpenAI Symphony)
 - [[llm-evaluation-harness]] — LLM Evaluation Harness
 - [[llm-training-coherence-evolution]] — LLM Training Coherence Evolution (Giles Thomas / gpjt, Karpathy RNN comparison)
@@ -261,8 +264,9 @@ Ideas, frameworks, and methodologies extracted from articles.
    |- [[local-llm/model-quantization]] — Model Quantization (GPTQ, AWQ, EXL2, FP8)
    |- [[local-llm/model-distillation]] — Knowledge Distillation
    |- [[local-llm/self-hosting-ai-development]] — Self-Hosting AI for Development (economics)
-   |- [[inference/vllm]] — vLLM Production Serving (PagedAttention)
-|- [[inference/sglang]] — SGLang Serving Framework (RadixAttention, xgrammar)
+| |- [[inference/vllm]] — vLLM Production Serving (PagedAttention)
+||- [[inference/_index]] — LLM Inference Optimization (SGLang, vLLM, llama.cpp, speculative decoding, KV cache)
+||- [[inference/sglang]] — SGLang Serving Framework (RadixAttention, xgrammar)
 |- [[reasoning-models]] — Reasoning Models (o1-style, CoT, PRM)
 |- [[speech/_index]] — Speech Models (Whisper, TTS, AudioCraft — audio-language specific models)
 |- [[speech/whisper]] — Whisper: OpenAI's Speech Recognition Model (680k hours, 99 languages, ASR)
