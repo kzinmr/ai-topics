@@ -1,3 +1,43 @@
+## 2026-04-20 — Active Crawl + GEPA / LLM-as-Judge / Agent Sandboxing
+
+### Source
+- Active Knowledge Crawl: 3 hot-topics crawled (dspy deepdive, ai-evals laterals, sandbox laterals)
+- Priority selection: 3 topics (2 high, 1 medium) — GEPA, LLM-as-Judge, Agent Sandboxing
+- Web searches: arXiv GEPA ICLR 2026, RLM arXiv 2512.24601, LLM-as-Judge scoring bias (arXiv 2506.22316), Northflank agent sandboxing guide
+
+### New Raw Sources (4)
+- `raw/articles/gepa-iclr2026-2026-04-20.md` — GEPA paper (arXiv 2507.19457, ICLR 2026 Oral)
+- `raw/articles/rlms-recursive-language-models-2026-04-20.md` — RLM paper (arXiv 2512.24601)
+- `raw/articles/llm-as-judge-scoring-bias-2026-04-20.md` — LLM-as-Judge scoring bias (arXiv 2506.22316v4, Ant Group)
+- `raw/articles/agent-sandboxing-2026-northflank.md` — Agent sandboxing isolation spectrum (Northflank, Feb 2026)
+
+### New Concept Pages (5)
+- **`[[concepts/gepa]]`** — GEPA (Genetic-Pareto Prompt Evolution): ICLR 2026 Oral, 35x fewer rollouts than GRPO, Pareto quality+cost optimization, dspy.GEPA API
+- **`[[concepts/rlms]]`** — RLMs (Recursive Language Models): inference-time self-optimization via recursive context access, DSPy vs RLM comparison, 10M+ token context scaling
+- **`[[concepts/llm-as-judge]]`** — LLM-as-Judge: 3 bias types (rubric order/score ID/reference answer), 7 best practices, model robustness comparison, mitigation strategies
+- **`[[concepts/offline-evaluation]]`** — Offline Evaluation: 3-layer eval stack (offline/human/production), golden dataset construction, regression testing, CI/CD integration
+- **`[[concepts/agent-sandboxing]]`** — Agent Sandboxing: isolation technology spectrum (gVisor/Firecracker/Kata/MicroVMs), capability-based security, PTC pattern for code agents
+
+### Active Crawl Results by Topic
+| Topic | Policy | New Concept(s) | Source |
+|-------|--------|----------------|--------|
+| **dspy** | deepdive | GEPA + RLMs (2) | arXiv GEPA ICLR 2026, Omar Khattab's site |
+| **ai-evals** | laterals | LLM-as-Judge + Offline Evaluation (2) | arXiv scoring bias, Medium evaluation guide |
+| **sandbox** | laterals | Agent Sandboxing (1) | Northflank + AWS Builder articles |
+
+### Updated Concept Pages (1)
+- **`[[concepts/dspy]]`** — Added GEPA as DSPy optimizer (ICLR 2026 Oral), DSPy vs GEPA table, Phase 4 evolution
+
+### Index Updates
+- Added: gepa, rlms (under DSPy ecosystem section)
+- Added: llm-as-judge, offline-evaluation (under AI Evals section)
+- Added: agent-sandboxing (under AI Coding Agent Criticism section)
+
+### Hot-Topics Update
+- dspy: last_crawled → 2026-04-20
+- ai-evals: last_crawled → 2026-04-20
+- sandbox: last_crawled → 2026-04-20
+
 ## 2026-04-20 — RSS Scan + Claude 4.7 Tokenizer / Headless AI / Figma
 
 ### Source

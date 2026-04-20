@@ -78,7 +78,7 @@ topics:
   - comparisons/eval-tools-comparison
   notes: '横方向: LLM-as-judge, offline evaluation, regression testing等'
   added: 2026-04-14
-  last_crawled: null
+  last_crawled: '2026-04-20'
 - slug: dspy
   title: DSPy / Declarative LM Programming
   crawl_policy: deepdive
@@ -90,7 +90,7 @@ topics:
   - concepts/dspy
   notes: 急速に進化中。GEPA, RLM等の最新動向を追跡
   added: 2026-04-14
-  last_crawled: null
+  last_crawled: '2026-04-20'
 - slug: local-llm
   title: Local LLM Inference
   crawl_policy: deepdive
@@ -144,7 +144,7 @@ topics:
   - comparisons/agent-sandboxing
   notes: '横方向: capability-based security, seccomp, Firecracker等'
   added: 2026-04-14
-  last_crawled: null
+  last_crawled: '2026-04-20'
 - slug: neurosymbolic-ai
   title: Neurosymbolic AI
   crawl_policy: prerequisites

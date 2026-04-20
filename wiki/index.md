@@ -238,7 +238,11 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[concepts/context-engineering]] — Context Engineering (OpenAI Cookbook)
 - [[concepts/dspy]] — DSPy: Declarative Self-improving Language Systems (Omar Khattab, Stanford)
 - [[concepts/llm-integration-patterns]] — LLM Integration Patterns: Comparative Taxonomy
+- [[concepts/gepa]] — GEPA: Genetic-Pareto Prompt Evolution (ICLR 2026 Oral)
+- [[concepts/rlms]] — RLMs: Recursive Language Models (inference-time self-optimization)
 - [[concepts/ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
+- [[concepts/llm-as-judge]] — LLM-as-Judge: 3 evaluation frameworks, 7 best practices, 4 bias types
+- [[concepts/offline-evaluation]] — Offline Evaluation: pre-production eval pipelines, regression testing
 - [[concepts/ai-safety]] — AI Safety: Alignment, Oversight, and Interpretability
 - [[concepts/agentic-pbt]] — Agentic Property-Based Testing (Anthropic + Hypothesis, Claude Code PBT agent)
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
@@ -318,6 +322,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[concepts/neurosymbolic-ai]] — Neurosymbolic AI (combining neural networks with symbolic reasoning)
 
 - [[concepts/ai-coding-agent-criticism]] — AI Coding Agent Criticism (Center Has a Bias thesis)
+- [[concepts/agent-sandboxing]] — Agent Sandboxing: gVisor, Firecracker, MicroVMs for secure code execution
 
 ### Open Source AI & Ecosystem
 - [[concepts/open-model-consortium]] — Open Model Consortium (Nemotron, Marin, Arcee)
