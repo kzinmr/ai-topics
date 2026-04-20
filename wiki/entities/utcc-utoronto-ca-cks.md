@@ -101,7 +101,7 @@ A recurring theme across Siebenmann's writing is **empiricism over dogma**. Whet
 - [[concepts/unix-philosophy]] — Siebenmann's work is grounded in Unix operational principles
 - [[concepts/systemd]] — Frequent topic of analysis and critique
 - [[concepts/supply-chain-security]] — Dependency cooldowns discussion
-- [[entities/simon-tatham]] — Another Unix-oriented blogger with similar pragmatism
+- [[simon-tatham]] — Another Unix-oriented blogger with similar pragmatism
 - [[concepts/observability]] — Logs vs metrics debate
 
 ## Sources

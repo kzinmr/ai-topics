@@ -194,7 +194,7 @@ Maurycy writes in a **direct, tutorial-oriented style** — code-heavy, theory-l
 - [[concepts/c-programming]] — C as a systems language
 - [[concepts/gopher-protocol]] — Pre-web information retrieval
 - [[concepts/physics-simulation]] — Verlet integration and spatial hashing
-- [[entities/small-web]] — Independent, framework-free websites
+- [[small-web]] — Independent, framework-free websites
 
 ## Sources
 

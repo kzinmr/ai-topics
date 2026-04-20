@@ -155,10 +155,10 @@ At the **India AI Impact Summit** (February 2026):
 
 ## Related
 
-- [[entities/daniela-amodei]] — Sister; Anthropic co-founder
-- [[entities/sam-altman]] — Former OpenAI colleague; now competitor as OpenAI CEO
-- [[entities/mustafa-suleyman]] — Counterpart at Microsoft AI; different approach to AI safety
-- [[entities/demis-hassabis]] — DeepMind/Google counterpart
+- [[daniela-amodei]] — Sister; Anthropic co-founder
+- [[sam-altman]] — Former OpenAI colleague; now competitor as OpenAI CEO
+- [[mustafa-suleyman]] — Counterpart at Microsoft AI; different approach to AI safety
+- [[demis-hassabis]] — DeepMind/Google counterpart
 - [[concepts/ai-safety]] — Amodei's core research area
 - [[concepts/constitutional-ai]] — Anthropic's alignment framework
 - [[concepts/mechanistic-interpretability]] — Amodei's "MRI for AI"

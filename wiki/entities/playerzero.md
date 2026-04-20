@@ -5,7 +5,7 @@ tags: [company, startup, playerzero, context-graph, sre, support-automation]
 status: skeleton
 related:
   - "[[concepts/context-graph]]"  # Core technology: context graphs
-  - "[[entities/arize]]"          # Both in the agent observability/infrastructure space
+  - "[[arize]]"          # Both in the agent observability/infrastructure space
   - "[[concepts/harness-engineering]]"  # PlayerZero as orchestration layer
 status: skeleton
 created: 2026-04-20

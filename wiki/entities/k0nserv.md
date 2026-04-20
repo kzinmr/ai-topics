@@ -106,8 +106,8 @@ His policy: force push freely on feature branches to clean up history before mer
 - [[concepts/async-rust]] — Tokio, sans-IO pattern, crate coloring
 - [[concepts/source-of-truth]] — Git as the canonical location for project metadata
 - [[concepts/frugal-infrastructure]] — Running services at minimal cost
-- [[entities/xeiaso-net]] — Shared interest in practical, small-scale infrastructure
-- [[entities/michael-stapelberg]] — Shared interest in declarative infrastructure and Nix
+- [[xeiaso-net]] — Shared interest in practical, small-scale infrastructure
+- [[michael-stapelberg]] — Shared interest in declarative infrastructure and Nix
 
 ## Sources
 

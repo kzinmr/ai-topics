@@ -179,8 +179,8 @@ As CPO, Yan oversees product architecture. Key design decisions he has champione
 
 - [[concepts/cognition-devin-philosophy]] — Cognition's approach to building AI agents
 - [[concepts/context-engineering]] — Yan's framework for managing agent context
-- [[entities/scott-wu]] — Cognition CEO and co-founder
-- [[entities/nader-dabit]] — Cognition Growth Engineer, cloud agent advocate
+- [[scott-wu]] — Cognition CEO and co-founder
+- [[nader-dabit]] — Cognition Growth Engineer, cloud agent advocate
 
 ## Sources
 

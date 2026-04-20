@@ -144,6 +144,6 @@ Steinberger maintains a live blurb at **whatmodelispeterusing.com** — tracking
 - [[concepts/agentic-engineering]] — AI-assisted software development patterns
 - [[concepts/mcp-model-context-protocol]] — The protocol his tooling ecosystem is built on
 - [[concepts/skill-architecture-patterns]] — Skill governance model (OpenClaw's primitives-first approach)
-- [[entities/boris-cherny]] — Anthropic's Head of Claude Code
-- [[entities/simon-willison]] — Fellow opinion leader on agentic engineering
+- [[boris-cherny]] — Anthropic's Head of Claude Code
+- [[simon-willison]] — Fellow opinion leader on agentic engineering
 - [[concepts/vibe-coding]] — The coding approach Steinberger evolved into "AI-native development"

@@ -139,9 +139,9 @@ Westenberg's essays are distinguished by:
 - [[concepts/guaranteed-minimum-income]] — Westenberg's 5-pillar policy framework
 - [[concepts/casino-economy]] — Financialization of housing, labor, and identity
 - [[concepts/blogging-as-infrastructure]] — The blog as intellectual commons
-- [[entities/jeff-atwood]] — Collaborated with Westenberg on "Stay Gold, America" GMI initiative
-- [[entities/david-graeber]] — Cited for "Bullshit Jobs" and critique of meaningless work
-- [[entities/rutger-bregman]] — Cited for "Utopia for Realists" and UBI advocacy
+- [[jeff-atwood]] — Collaborated with Westenberg on "Stay Gold, America" GMI initiative
+- [[david-graeber]] — Cited for "Bullshit Jobs" and critique of meaningless work
+- [[rutger-bregman]] — Cited for "Utopia for Realists" and UBI advocacy
 
 ## Sources
 

@@ -155,8 +155,8 @@ Wirtz's writing is characterized by:
 - [[concepts/effective-altruism]] — Current professional focus at Giving What We Can
 - [[concepts/facilitation]] — Core expertise from Crisp Studio and Facilitator School
 - [[concepts/learning-in-public]] — Wirtz's approach to building and sharing work
-- [[entities/tiago-forte]] — Inspiration for Facilitator School course model
-- [[entities/david-perell]] — Inspiration for email marketing and landing page approach
+- [[tiago-forte]] — Inspiration for Facilitator School course model
+- [[david-perell]] — Inspiration for email marketing and landing page approach
 
 ## Sources
 

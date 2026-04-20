@@ -207,8 +207,8 @@ The 2023 board crisis revealed deep tensions between safety-focused board member
 - [[Ilya Sutskever]] — OpenAI co-founder; former Chief Scientist
 - [[John Schulman]] — OpenAI co-founder; RL researcher
 - [[Dario Amodei]] — Anthropic CEO; competitor
-- [[entities/openai]] — Company Altman leads
-- [[entities/worldcoin]] — Altman's proof-of-personhood project
+- [[openai]] — Company Altman leads
+- [[worldcoin]] — Altman's proof-of-personhood project
 - [[concepts/agi]] — Altman's stated long-term goal
 
 ## Sources

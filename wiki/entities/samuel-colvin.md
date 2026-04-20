@@ -28,9 +28,9 @@ related:
   - "[[concepts/harness-engineering]]"
   - "[[concepts/ai-observability]]"
   - "[[concepts/structured-outputs]]"
-  - "[[entities/alex-hall]]"
-  - "[[entities/david-montague]]"
-  - "[[entities/douwe-maan]]"
+  - "[[alex-hall]]"
+  - "[[david-montague]]"
+  - "[[douwe-maan]]"
 ---
 
 # Samuel Colvin — Creator of Pydantic, Pioneer of Type-Safe AI Agents
@@ -216,7 +216,7 @@ Angel investor in Pydantic's seed round. Cramer's experience building developer 
 ## Related Wiki Pages
 
 - **Concepts**: [[concepts/code-mode]], [[concepts/harness-engineering]], [[concepts/structured-outputs]], [[concepts/ai-observability]], [[concepts/capabilities-based-security]]
-- **Entities**: [[entities/alex-hall]] (Python Dev at Pydantic, Logfire), [[entities/david-montague]] (CTO, Pydantic), [[entities/douwe-maan]] (Pydantic AI Lead), [[entities/sebastián-ramírez]] (FastAPI), [[entities/bryan-helmig]] (Zapier, angel investor)
+- **Entities**: [[alex-hall]] (Python Dev at Pydantic, Logfire), [[david-montague]] (CTO, Pydantic), [[douwe-maan]] (Pydantic AI Lead), [[sebastián-ramírez]] (FastAPI), [[bryan-helmig]] (Zapier, angel investor)
 - **Technologies**: [[concepts/pydantic]], [[concepts/monty-sandbox]], [[concepts/logfire]], [[concepts/pydantic-ai]]
 
 ## Sources

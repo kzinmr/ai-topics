@@ -165,7 +165,7 @@ Top-tier LLMs approaching Claude Sonnet in capabilities:
 - [[concepts/local-llm/llama-cpp]] — llama.cpp inference engine
 - [[concepts/local-llm/model-quantization]] — Quantization techniques
 - [[concepts/local-llm/model-distillation]] — Knowledge distillation
-- [[entities/openai]] — OpenAI (gpt-oss creator)
+- [[openai]] — OpenAI (gpt-oss creator)
 - [[comparisons/frontier-models-2026-04]] — Frontier Models Comparison
 
 ## Sources

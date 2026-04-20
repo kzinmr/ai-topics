@@ -42,9 +42,9 @@ elvis provided a framework for understanding why competing directly with a categ
 
 ## Related
 
-- [[entities/hermes-agent]] — Hermes Agent platform (subject of analysis)
-- [[entities/peter-steinberger]] — OpenClaw creator (subject of analysis)
-- [[entities/teknium]] — Hermes Agent architect
+- [[hermes-agent]] — Hermes Agent platform (subject of analysis)
+- [[peter-steinberger]] — OpenClaw creator (subject of analysis)
+- [[teknium]] — Hermes Agent architect
 - [[concepts/skill-architecture-patterns]] — Detailed comparison of skill management approaches
 - [[comparisons/hermes-vs-openclaw-architecture]] — Full architecture comparison
 

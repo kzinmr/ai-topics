@@ -102,7 +102,7 @@ Martin wrote about Anthropic's red team finding **500+ critical vulnerabilities*
 - [[concepts/saas-disruption]] — The "$285 billion markdown files" thesis
 - [[concepts/agent-bifurcation]] — Two kinds of AI users
 - [[concepts/supply-chain-security]] — Open source vulnerability cascades
-- [[entities/anthropic]] — Claude Code, Cowork, and the knowledge-work-plugin
+- [[anthropic]] — Claude Code, Cowork, and the knowledge-work-plugin
 
 ## Sources
 

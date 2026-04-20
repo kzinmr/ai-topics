@@ -162,9 +162,9 @@ His work consistently argues that **digitization is not neutral** — the choice
 
 - [[concepts/open-data]] — Open cultural data movement
 - [[concepts/digital-humanities]] — Jupyter for humanities research
-- [[entities/susam-net.md]] — Self-hosted, self-documented digital practice
-- [[entities/terrible-software.md]] — Human-centered approach to technology
-- [[entities/shkspr-mobi.md]] — Web accessibility and standards advocacy
+- [[susam-net.md]] — Self-hosted, self-documented digital practice
+- [[terrible-software.md]] — Human-centered approach to technology
+- [[shkspr-mobi.md]] — Web accessibility and standards advocacy
 
 ## Sources
 

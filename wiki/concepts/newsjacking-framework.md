@@ -9,7 +9,7 @@ sources:
   - "https://www.elvis.so/p/5-viral-tweets-in-one-day"
   - "https://www.elvis.so/p/the-game-of-attention"
 related:
-  - [[entities/elvis-sun]]
+  - [[elvis-sun]]
   - [[concepts/attention-flywheel]]
   - [[concepts/vibe-launching]]
 ---
@@ -113,7 +113,7 @@ The flywheel's ultimate state is **product-driven virality** — when the produc
 
 - [[concepts/vibe-launching]] — Real-time iteration during viral moments (launch strategy)
 - [[concepts/attention-flywheel]] — Cross-channel amplification system
-- [[entities/elvis-sun]] — Originator of this framework
+- [[elvis-sun]] — Originator of this framework
 
 ## Sources
 

@@ -77,7 +77,7 @@ What remains unresolved is whether this hybrid approach scales to AGI, or whethe
 
 ## Related
 
-- [[entities/gary-marcus]] — Primary advocate and critic
+- [[gary-marcus]] — Primary advocate and critic
 - [[concepts/scaling-without-slop]] — Complementary critique of pure scaling
 - [[concepts/world-models-science]] — Marcus's proposed next step beyond neurosymbolic
 - [[concepts/claude-code-source-patterns]] — Technical analysis of Claude Code's architecture

@@ -84,9 +84,9 @@ OpenClawのTOOLS.md + VercelのAGENTS.mdパターンを組み合わせ:
 
 | エンティティ | 説明 |
 |-------------|------|
-| [[entities/peter-steinberger]] | OpenClaw作者。元PSPDFKit CEO。OpenAIでパーソナルエージェント開発 |
-| [[entities/openclaw]] | OpenClawフレームワーク詳細 |
-| [[entities/nvidia-nemoclaw]] | NVIDIAのエンタープライズ版OpenClawラッパー |
+| [[peter-steinberger]] | OpenClaw作者。元PSPDFKit CEO。OpenAIでパーソナルエージェント開発 |
+| [[openclaw]] | OpenClawフレームワーク詳細 |
+| [[nvidia-nemoclaw]] | NVIDIAのエンタープライズ版OpenClawラッパー |
 
 ## 製品ポジショニングフレーム
 

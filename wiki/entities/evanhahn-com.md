@@ -129,7 +129,7 @@ In his "[Programming Beliefs as of July 2024](https://evanhahn.com/programming-b
 - [[concepts/error-handling]] — Expected vs. unexpected errors, language design
 - [[concepts/software-craftsmanship]] — Code quality, pragmatism, reading code
 - [[concepts/open-source-maintenance]] — Maintaining widely-depended-upon packages
-- [[entities/ghost]] — Nonprofit publisher software where Evan works
+- [[ghost]] — Nonprofit publisher software where Evan works
 - [[concepts/decentralized-identity]] — human.json and web-native identity systems
 
 ## Sources

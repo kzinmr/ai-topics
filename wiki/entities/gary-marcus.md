@@ -150,7 +150,7 @@ Marcusの結論:
 - [[Yann LeCun]] — Frequent debate partner on deep learning vs. symbolic AI
 - [[concepts/neuro-symbolic-ai]] — Marcus's primary research direction
 - [[concepts/ai-safety]] — Advocacy for regulation and transparent validation
-- [[entities/geometric-intelligence]] — His first AI startup (acquired by Uber)
+- [[geometric-intelligence]] — His first AI startup (acquired by Uber)
 
 ## Sources
 

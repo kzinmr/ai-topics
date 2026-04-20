@@ -7,8 +7,8 @@ related:
   - [[concepts/sandbox/_index]]
   - [[concepts/pydantic-ai]]
   - [[concepts/harness-engineering]]
-  - [[entities/samuel-colvin]]
-  - [[entities/andrej-karpathy]]
+  - [[samuel-colvin]]
+  - [[andrej-karpathy]]
 depth: L2
 status: complete
 created: 2026-04-16

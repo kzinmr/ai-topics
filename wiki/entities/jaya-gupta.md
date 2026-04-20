@@ -4,10 +4,10 @@ description: "Partner at Foundation Capital, co-author of 'AI's Trillion-Dollar 
 tags: [person, foundation-capital, investor, context-graph]
 handle: "@JayaGup10"
 related:
-  - "[[entities/foundation-capital]]"  # Her firm
+  - "[[foundation-capital]]"  # Her firm
   - "[[concepts/context-graph]]"       # Core thesis she authored
-  - "[[entities/playerzero]]"          # Context graph startup
-  - "[[entities/arize]]"               # Agent observability startup mentioned
+  - "[[playerzero]]"          # Context graph startup
+  - "[[arize]]"               # Agent observability startup mentioned
 status: skeleton
 created: 2026-04-20
 ---

@@ -39,12 +39,12 @@ Personal Empowerment (Meta/OpenClaw/Local AI)
 
 | プレイヤー | 実現方法 | データ主権 | 哲学 |
 |---|---|---|---|
-| [[entities/meta]] | Muse Spark + Ray-Ban AI Glasses | Metaクラウド | 「Personal superintelligence for everyone」 |
-| [[entities/peter-steinberger]] | OpenClaw/Claudbot | ユーザーローカル | 「You own your agent」 |
-| [[entities/shlok-khemani]] | OpenPoke/Vajra | Filesystem-first | 「Personality ≠ Execution」 |
-| [[entities/george-hotz]] | tinygrad + local inference | フリー | 「All compute is equal」 |
-| [[entities/mario-zechner]] | pi coding agent | ローカル | 「Strip away the bloat」 |
-| [[entities/sero]] | Open Orchestra/Thrive | ローカル+分散 | 「Freedom Tech」 |
+| [[meta]] | Muse Spark + Ray-Ban AI Glasses | Metaクラウド | 「Personal superintelligence for everyone」 |
+| [[peter-steinberger]] | OpenClaw/Claudbot | ユーザーローカル | 「You own your agent」 |
+| [[shlok-khemani]] | OpenPoke/Vajra | Filesystem-first | 「Personality ≠ Execution」 |
+| [[george-hotz]] | tinygrad + local inference | フリー | 「All compute is equal」 |
+| [[mario-zechner]] | pi coding agent | ローカル | 「Strip away the bloat」 |
+| [[sero]] | Open Orchestra/Thrive | ローカル+分散 | 「Freedom Tech」 |
 
 ## 3つの哲学的分岐点
 
@@ -53,7 +53,7 @@ Personal Empowerment (Meta/OpenClaw/Local AI)
 > *"Personal superintelligence that knows us deeply, understands our goals, and can help us achieve them will be by far the most useful."*
 > — Mark Zuckerberg, July 2025
 
-Zuckerbergの言う「knows us deeply」は、Metaのプラットフォーム上にユーザーデータを集約するモデル。対照的に、[[entities/shlok-khemani]]はファイルベースのメモリ（CLAUDE.md、`.agent/`ディレクトリ）を提唱し、**ユーザーが自分のデータを直接管理・可視化できること**を重視する。
+Zuckerbergの言う「knows us deeply」は、Metaのプラットフォーム上にユーザーデータを集約するモデル。対照的に、[[shlok-khemani]]はファイルベースのメモリ（CLAUDE.md、`.agent/`ディレクトリ）を提唱し、**ユーザーが自分のデータを直接管理・可視化できること**を重視する。
 
 | アプローチ | 長所 | 懸念 |
 |---|---|---|
@@ -65,7 +65,7 @@ Zuckerbergの言う「knows us deeply」は、Metaのプラットフォーム上
 
 Metaは **Ray-Ban AI Glasses** を「primary computing device」と位置づける。2025年に700万台以上を販売、2026年には年間2000-3000万台の製造能力を目標とする。VisionClaw（Xiaoan Sean Liu）はRay-Ban Meta + Gemini Live API + OpenClawを組み合わせ、「what you see/hear」を理解するエージェントの実現を実証した。
 
-対照的に、ローカルAIコミュニティは **既存のハードウェア**（consumer GPU、Apple Silicon）上での実行を志向する。[[entities/georgi-gerganov]] の llama.cpp、[[entities/mario-zechner]] の pi エージェントはいずれも「特別なデバイス」を必要としない。
+対照的に、ローカルAIコミュニティは **既存のハードウェア**（consumer GPU、Apple Silicon）上での実行を志向する。[[georgi-gerganov]] の llama.cpp、[[mario-zechner]] の pi エージェントはいずれも「特別なデバイス」を必要としない。
 
 ### ③ オープン vs クローズド — 「who controls the model?」
 
@@ -131,12 +131,12 @@ Personal Superintelligence
 5. **業界対立** — Anthropic vs OpenClawの解決、Googleのサードパーティポリシー
 
 ### 要監視プレイヤー
-- **[[entities/meta]]** — Personal Superintelligenceビジョンの実行
-- **[[entities/peter-steinberger]]** — OpenAIでのpersonal agent開発
-- **[[entities/shlok-khemani]]** — ファーストパーソンAIのアーキテクチャ
-- **[[entities/sero]]** — Freedom Tech / ローカルインフラ
-- **[[entities/mario-zechner]]** — Minimal agent on consumer hardware
-- **[[entities/george-hotz]]** — Open source GPU driver / tinygrad
+- **[[meta]]** — Personal Superintelligenceビジョンの実行
+- **[[peter-steinberger]]** — OpenAIでのpersonal agent開発
+- **[[shlok-khemani]]** — ファーストパーソンAIのアーキテクチャ
+- **[[sero]]** — Freedom Tech / ローカルインフラ
+- **[[mario-zechner]]** — Minimal agent on consumer hardware
+- **[[george-hotz]]** — Open source GPU driver / tinygrad
 
 ## 関連コンセプト
 
@@ -151,14 +151,14 @@ Personal Superintelligence
 
 ## 関連エンティティ
 
-- [[entities/meta]] — Personal Superintelligence提唱
-- [[entities/mark-zuckerberg]] — Meta CEO、ビジョン策定
-- [[entities/alexandr-wang]] — Meta Superintelligence Labs責任者
-- [[entities/peter-steinberger]] — OpenClaw創設者
-- [[entities/shlok-khemani]] — パーソナルAIメモリの研究者
-- [[entities/sero]] — Freedom Tech / ローカルAIインフラ
-- [[entities/mario-zechner]] — ローカルLLMエンジニアリング
-- [[entities/george-hotz]] — オープンソースAIハードウェア
+- [[meta]] — Personal Superintelligence提唱
+- [[mark-zuckerberg]] — Meta CEO、ビジョン策定
+- [[alexandr-wang]] — Meta Superintelligence Labs責任者
+- [[peter-steinberger]] — OpenClaw創設者
+- [[shlok-khemani]] — パーソナルAIメモリの研究者
+- [[sero]] — Freedom Tech / ローカルAIインフラ
+- [[mario-zechner]] — ローカルLLMエンジニアリング
+- [[george-hotz]] — オープンソースAIハードウェア
 
 ## Sources
 

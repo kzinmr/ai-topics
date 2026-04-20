@@ -131,7 +131,7 @@ See [[concepts/local-llm/server-dgx-spark]] for the complete setup guide.
 
 ## Related
 
-- [[entities/nvidia-nemoclaw]] — NemoClaw secure agent framework
+- [[nvidia-nemoclaw]] — NemoClaw secure agent framework
 - [[concepts/local-llm/server-dgx-spark]] — Setup guide for local LLM server
 - [[concepts/local-llm]] — Local LLM inference overview
-- [[entities/jensen-huang]] — NVIDIA CEO, physical AI advocate
+- [[jensen-huang]] — NVIDIA CEO, physical AI advocate

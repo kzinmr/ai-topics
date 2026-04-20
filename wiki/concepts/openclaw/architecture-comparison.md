@@ -141,5 +141,5 @@ elvisがOpenClawのTOOLS.md + VercelのAGENTS.mdを組み合わせ：
 - [[concepts/openclaw/philosophy]] — Primitives First哲学
 - [[concepts/skill-architecture-patterns]] — スキルアーキテクチャの比較分析
 - [[comparisons/hermes-vs-openclaw-architecture]] — 詳細なアーキテクチャ比較
-- [[entities/peter-steinberger]] — OpenClaw創設者
-- [[entities/hermes-agent]] — Hermes Agent
+- [[peter-steinberger]] — OpenClaw創設者
+- [[hermes-agent]] — Hermes Agent

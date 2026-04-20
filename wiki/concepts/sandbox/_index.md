@@ -82,5 +82,5 @@ The **Anthropic × Bun acquisition** is strategically significant: Claude Code s
 - [[concepts/harness-engineering/system-architecture/agent-security-patterns]] — OpenAI's Egress Proxy approach
 - [[deep-agents]] — Deep agents consume all sandbox layers
 - [[anthropic-managed-agents]] — Brain/Hands/Session separation architecture
-- [[entities/jarred-sumner]] — Bun creator, joined Anthropic (Dec 2025)
-- [[entities/ryan-dahl]] — Node.js and Deno creator
+- [[jarred-sumner]] — Bun creator, joined Anthropic (Dec 2025)
+- [[ryan-dahl]] — Node.js and Deno creator

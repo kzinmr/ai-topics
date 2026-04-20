@@ -152,7 +152,7 @@ On labor issues, Zitron argues that tech industry leaders view workers' rights a
 - [[concepts/ai-skepticism]] — Critical perspectives on AI capabilities and hype
 - [[concepts/venture-capital]] — Analysis of VC dynamics and economics
 - [[concepts/marketing-evolution]] — The changing landscape of tech marketing and PR
-- [[entities/steve-blank]] — Contrasting entrepreneurial philosophies (optimistic methodology vs. empirical skepticism)
+- [[steve-blank]] — Contrasting entrepreneurial philosophies (optimistic methodology vs. empirical skepticism)
 
 ## Sources
 

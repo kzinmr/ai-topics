@@ -214,9 +214,9 @@ Suleyman co-authored **"The Coming Wave: Technology, Power, and the Twenty-first
 
 ## Related
 
-- [[entities/demis-hassabis]] — DeepMind co-founder
-- [[entities/dario-amodei]] — Anthropic CEO; different approach to AI safety
-- [[entities/reid-hoffman]] — Inflection AI co-founder
+- [[demis-hassabis]] — DeepMind co-founder
+- [[dario-amodei]] — Anthropic CEO; different approach to AI safety
+- [[reid-hoffman]] — Inflection AI co-founder
 - [[concepts/ai-containment]] — Suleyman's governance framework
 - [[concepts/ai-ethics]] — Applied ethics approach
 

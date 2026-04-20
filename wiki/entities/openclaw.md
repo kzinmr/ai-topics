@@ -134,8 +134,8 @@ http://127.0.0.1:18789/#token=<your-gateway-token>
 
 ## Related
 
-- [[entities/nvidia-nemoclaw]] — NemoClaw secure wrapper for OpenClaw
-- [[entities/peter-steinberger]] — OpenClaw creator
-- [[entities/nvidia-dgx-spark]] — DGX Spark hardware platform
+- [[nvidia-nemoclaw]] — NemoClaw secure wrapper for OpenClaw
+- [[peter-steinberger]] — OpenClaw creator
+- [[nvidia-dgx-spark]] — DGX Spark hardware platform
 - [[concepts/local-llm/server-dgx-spark]] — Setup guide
 - [[concepts/harness-engineering/system-architecture/agent-security-patterns]] — Security patterns

@@ -6,7 +6,7 @@ related:
   - [[concepts/pydantic-serializability]]
   - [[concepts/structured-output]]
   - [[concepts/pydantic-ai]]
-  - [[entities/samuel-colvin]]
+  - [[samuel-colvin]]
 depth: L2
 status: complete
 created: 2026-04-15
@@ -45,5 +45,5 @@ Pydantic provides:
 
 - [[concepts/pydantic-serializability]] — Pydantic's implementation
 - [[concepts/structured-output]] — General pattern
-- [[entities/samuel-colvin]] — Serializability pioneer
+- [[samuel-colvin]] — Serializability pioneer
 - [[concepts/pydantic-ai]] — Framework integration

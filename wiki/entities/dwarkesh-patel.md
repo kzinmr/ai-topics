@@ -129,7 +129,7 @@ In "Notes on Space GPUs" (Feb 2026), Patel explored orbital datacenter economics
 
 ## TeortaxesTex's Analysis of Dwarkesh (April 2026)
 
-Following the Jensen Huang interview, writer [[entities/teortaxestex]] published an extensive analysis of Dwarkesh's methodology and worldview:
+Following the Jensen Huang interview, writer [[teortaxestex]] published an extensive analysis of Dwarkesh's methodology and worldview:
 
 **Praise**: "A great podcaster, unnaturally so. Clearly he has studied his predecessors – chiefly Friedman – and engineered a methodology doing away with their frustrating defects." Teortaxes acknowledges that Dwarkesh "has goaded powerful men to spell out beliefs I could only conjecture they held" and provides "real value."
 
@@ -168,14 +168,14 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [[concepts/scaling-without-slop]] — Related analysis of AI capability limits
 - [[concepts/world-models-science]] — Dwarkesh frequently explores world models and reasoning with guests
 - [[concepts/multi-agent-autonomy-scale]] — His vision of future AI architecture
-- [[entities/gary-marcus]] — Both critique current AI approaches from different angles
-- [[entities/anthropic]] — Frequent interview subject (Dario Amodei episodes)
-- [[entities/jensen-huang]] — Interviewed April 2026: "TPU competition, China, supply chain moat"; subject of TeortaxesTex epistemic gap analysis
-- [[entities/teortaxestex]] — Published methodology analysis of Dwarkesh's interviewing approach
-- [[entities/andrej-karpathy]] — Interviewed Oct 2025: "AGI is still a decade away"
-- [[entities/ilya-sutskever]] — Interviewed Nov 2025: "Age of scaling to age of research"
-- [[entities/dario-amodei]] — Interviewed Feb 2026: "Near the end of the exponential"
-- [[entities/elon-musk]] — Interviewed Feb 2026: "Cheapest AI will be in space"
+- [[gary-marcus]] — Both critique current AI approaches from different angles
+- [[anthropic]] — Frequent interview subject (Dario Amodei episodes)
+- [[jensen-huang]] — Interviewed April 2026: "TPU competition, China, supply chain moat"; subject of TeortaxesTex epistemic gap analysis
+- [[teortaxestex]] — Published methodology analysis of Dwarkesh's interviewing approach
+- [[andrej-karpathy]] — Interviewed Oct 2025: "AGI is still a decade away"
+- [[ilya-sutskever]] — Interviewed Nov 2025: "Age of scaling to age of research"
+- [[dario-amodei]] — Interviewed Feb 2026: "Near the end of the exponential"
+- [[elon-musk]] — Interviewed Feb 2026: "Cheapest AI will be in space"
 - [[concepts/space-compute-economics]] — Orbital datacenter analysis
 
 ## Sources

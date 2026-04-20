@@ -97,7 +97,7 @@ MacIverのClaude Code実践レポート（2026-04）：
 - [[ai-evals]] — 984バグレポート生成、86%妥当性率
 - [[harness-engineering/agentic-engineering]] — AIエージェントによる自律的コード品質保証
 - [[software-correctness]] — 不変条件によるバグ発見
-- [[entities/drmaciver]] — Hypothesis作者、Antithesis Senior Engineer
+- [[drmaciver]] — Hypothesis作者、Antithesis Senior Engineer
 - [[hypothesis]] — Python PBTライブラリ
 - [[hegel]] — 言語横断PBTプロトコル
 

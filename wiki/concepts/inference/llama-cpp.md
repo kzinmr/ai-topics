@@ -23,7 +23,7 @@ llama.cpp is the foundational inference engine for the local LLM ecosystem. Most
 ## Related wikilinks
 
 - [[concepts/local-llm/gguf]] — Quantization format used by llama.cpp
-- [[entities/georgi-gerganov]] — Creator
+- [[georgi-gerganov]] — Creator
 - [[concepts/local-llm]] — Local LLM overview
 
 ## Sources

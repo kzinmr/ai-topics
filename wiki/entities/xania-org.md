@@ -196,7 +196,7 @@ Godbolt's writing is characterized by:
 - [[concepts/open-source-stewardship]] — Project governance and community decision-making
 - [[concepts/compiler-optimizations]] — How modern compilers transform and optimize code
 - [[concepts/link-permanence]] — Fighting link rot as a civilizational responsibility
-- [[entities/compiler-explorer-llc]] — Formal entity for Compiler Explorer governance
+- [[compiler-explorer-llc]] — Formal entity for Compiler Explorer governance
 - [[concepts/harness-engineering]] — Related to Mitchell Hashimoto's AGENTS.md approach
 
 ## Sources

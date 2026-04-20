@@ -6,7 +6,7 @@ related:
   - [[concepts/code-mode]]
   - [[concepts/structured-outputs]]
   - [[concepts/ai-observability]]
-  - [[entities/samuel-colvin]]
+  - [[samuel-colvin]]
 depth: L2
 status: complete
 created: 2026-04-16
@@ -83,4 +83,4 @@ print(result.data)  # Type-safe CityInfo object
 - [[concepts/structured-outputs]] — Core validation approach
 - [[concepts/ai-observability]] — Logfire integration
 - [[concepts/harness-engineering]] — Type safety as harness constraint
-- [[entities/samuel-colvin]] — Creator/CEO
+- [[samuel-colvin]] — Creator/CEO

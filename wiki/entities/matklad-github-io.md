@@ -151,8 +151,8 @@ His "Missing IDE Feature" essay — advocating for "fold method bodies by defaul
 
 ## Related
 
-- [[entities/rust]] — Programming language Kladov built IDE tooling for
-- [[entities/zig]] — Programming language Kladov frequently analyzes for architectural comparison
+- [[rust]] — Programming language Kladov built IDE tooling for
+- [[zig]] — Programming language Kladov frequently analyzes for architectural comparison
 - [[concepts/language-server-protocol]] — Protocol Kladov has extensively critiqued and contributed to
 - [[concepts/tree-sitter]] — Parsing library Kladov advocates for in IDE contexts
 - [[concepts/incremental-computation]] — Architecture Kladov critiques as "hurdle racing" for profiling

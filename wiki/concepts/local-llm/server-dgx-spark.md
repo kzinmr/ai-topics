@@ -286,7 +286,7 @@ cd ~/.nemoclaw/source
 
 ## Related
 
-- [[entities/nvidia-dgx-spark]] — DGX Spark hardware specifications
-- [[entities/nvidia-nemoclaw]] — NemoClaw secure agent framework
+- [[nvidia-dgx-spark]] — DGX Spark hardware specifications
+- [[nvidia-nemoclaw]] — NemoClaw secure agent framework
 - [[concepts/local-llm/_index]] — Local LLM Ecosystem Overview
 - [[../../capabilities-based-security]] — Security philosophy matching NemoClaw's approach

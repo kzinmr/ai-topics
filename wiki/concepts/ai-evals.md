@@ -162,9 +162,9 @@ A **trace** is the complete record of all actions, messages, tool calls, and dat
 
 ## Related People
 
-- [[entities/drmaciver]] — Created `foundational-llm-evals` applying property-based testing to LLM evaluation
-- [[entities/shreya-shankar]] — Co-creator of AI evals course, DocETL/EvalGen/SPADE researcher
-- [[entities/hamel-husain]] — Co-creator of AI evals course, Critique Shadowing methodology pioneer
+- [[drmaciver]] — Created `foundational-llm-evals` applying property-based testing to LLM evaluation
+- [[shreya-shankar]] — Co-creator of AI evals course, DocETL/EvalGen/SPADE researcher
+- [[hamel-husain]] — Co-creator of AI evals course, Critique Shadowing methodology pioneer
 
 ## Sources
 

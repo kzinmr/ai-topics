@@ -13,7 +13,7 @@ aliases: ["OpenAI Agent SDK", "openai-agents"]
 | **Package** | `openai-agents>=0.14.0` |
 | **Release Date** | April 15, 2026 (GA) |
 | **Language** | Python (TypeScript planned) |
-| **Developer** | [[entities/openai]] |
+| **Developer** | [[openai]] |
 | **API** | [platform.openai.com](https://platform.openai.com) |
 | **Docs** | [Sandbox Agents Guide](https://developers.openai.com/api/docs/guides/agents/sandboxes) |
 
@@ -130,10 +130,10 @@ agent = SandboxAgent(
 
 ## Entity Connections
 
-- [[entities/openai]] — Developer
-- [[entities/samuel-colvin]] — Monty (in-process sandbox) developer
-- [[entities/anthropic]] — Competitor (Managed Agents, Computer Use)
-- [[entities/cognition]] — Competitor (Devin)
+- [[openai]] — Developer
+- [[samuel-colvin]] — Monty (in-process sandbox) developer
+- [[anthropic]] — Competitor (Managed Agents, Computer Use)
+- [[cognition]] — Competitor (Devin)
 
 ## Sources
 

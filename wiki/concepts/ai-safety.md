@@ -113,12 +113,12 @@ The exodus created two camps:
 
 ## Related People
 
-- [[entities/greg-brockman]] — Engineering-focused safety, empirical testing
-- [[entities/john-schulman]] — RLHF pioneer, scalable oversight research, Thinking Machines Lab
-- [[entities/mira-murati]] — Safety-first advocate, former OpenAI CTO, Thinking Machines Lab co-founder
-- [[entities/ilya-sutskever]] — Former OpenAI Chief Scientist, resigned over safety concerns
-- [[entities/dario-amodei]] — Anthropic CEO, co-authored "Concrete Problems in AI Safety"
-- [[entities/jan-leike]] — Former Superalignment co-head, resigned citing safety deprioritization
+- [[greg-brockman]] — Engineering-focused safety, empirical testing
+- [[john-schulman]] — RLHF pioneer, scalable oversight research, Thinking Machines Lab
+- [[mira-murati]] — Safety-first advocate, former OpenAI CTO, Thinking Machines Lab co-founder
+- [[ilya-sutskever]] — Former OpenAI Chief Scientist, resigned over safety concerns
+- [[dario-amodei]] — Anthropic CEO, co-authored "Concrete Problems in AI Safety"
+- [[jan-leike]] — Former Superalignment co-head, resigned citing safety deprioritization
 
 ## Related Concepts
 

@@ -6,16 +6,16 @@ Last updated: 2026-04-20 (Claude 4.7 tokenizer change, Headless AI Services, Fig
 
 ## Entity Pages (83)
 
-- [[entities/openai]] — OpenAI (GPT, ChatGPT, Codex, Agents SDK, Symphony)
-- [[entities/adam-rosenthal]] — Adam Rosenthal
-- [[entities/milksandmatcha]] — Sarah Chieng (@MilksandMatcha), AI agent educator, co-author of Back of House multi-agent patterns
-- [[entities/foundation-capital]] — VC firm, "AI's Trillion-Dollar Opportunity: Context Graphs" (Dec 2025)
-- [[entities/jaya-gupta]] — Foundation Capital Partner, co-author of Context Graphs thesis
-- [[entities/playerzero]] — SRE automation startup; context graph as "engineering world model"
-- [[entities/arize]] — AI observability platform; "Datadog for agents"
-- [[entities/maximor]] — Finance automation; ERP-agnostic audit-ready agents
-- [[entities/regie-ai]] — AI-native sales engagement platform replacing Outreach/Salesloft
-- [[entities/figma]] — Figma AI challenge: Claude Design competition, SaaS moat失效, per-head pricing collapse risk (2026-04-20)
+- [[openai]] — OpenAI (GPT, ChatGPT, Codex, Agents SDK, Symphony)
+- [[adam-rosenthal]] — Adam Rosenthal
+- [[milksandmatcha]] — Sarah Chieng (@MilksandMatcha), AI agent educator, co-author of Back of House multi-agent patterns
+- [[foundation-capital]] — VC firm, "AI's Trillion-Dollar Opportunity: Context Graphs" (Dec 2025)
+- [[jaya-gupta]] — Foundation Capital Partner, co-author of Context Graphs thesis
+- [[playerzero]] — SRE automation startup; context graph as "engineering world model"
+- [[arize]] — AI observability platform; "Datadog for agents"
+- [[maximor]] — Finance automation; ERP-agnostic audit-ready agents
+- [[regie-ai]] — AI-native sales engagement platform replacing Outreach/Salesloft
+- [[figma]] — Figma AI challenge: Claude Design competition, SaaS moat失效, per-head pricing collapse risk (2026-04-20)
 
 ## Concept Pages (84)
 
@@ -35,135 +35,135 @@ Last updated: 2026-04-20 (Claude 4.7 tokenizer change, Headless AI Services, Fig
 
 84 bloggers from the HN popular blogs OPML, scraped from about pages and RSS feeds.
 
-- [[entities/adam-mastroianni]] — Adam Mastroianni
-- [[entities/andrew-nesbitt]] — Andrew Nesbitt
-- [[entities/anildash]] — Anil Dash
-- [[entities/antirez-com]] — Salvatore Sanfilippo
-- [[entities/beej-us]] — Brian "Beej Jorgensen" Hall
-- [[entities/berthub-eu]] — Hubert Florin
-- [[entities/bogdanthegeek-s-blog]] — BogdanTheGeek's Blog
-- [[entities/bradford-morgan-white]] — Bradford Morgan White
-- [[entities/brutecat-com]] — Brute Cat
-- [[entities/hillel-wayne]] — Hillel Wayne (see merged entry, includes newsletter)
-- [[entities/cats-with-power-tools]] — PixelMelt
-- [[entities/chad-nauseam-home]] — Chad Nauseam Home
-- [[entities/chiark-greenend-org-uk-sgtatham]] — Simon Tatham
-- [[entities/construction-physics-com]] — Brian Potter
-- [[entities/daniel-de-laney]] — Daniel De Laney
-- [[entities/daringfireball-net]] — John Gruber
-- [[entities/deliberatecoder]] — Deliberate Coder
-- [[entities/derek-thompson]] — Derek Thompson
-- [[entities/drmaciver]] — David R. MacIver
-- [[entities/dialloibu]] — Ibrahim Diallo
-- [[entities/downtowndougbrown-com]] — Doug Brown
-- [[entities/dwarkesh-patel]] — Dwarkesh Patel
-- [[entities/dynomight-net]] — Dynomight
-- [[entities/ed-zitron-s-where-s-your-ed-at]] — Ed Zitron
-- [[entities/eli-thegreenplace-net]] — Eli Bendersky
-- [[entities/entropicthoughts-com]] — Chris
-- [[entities/ericmigi]] — Eric Migicovsky
-- [[entities/evanhahn-com]] — Evan Hahn
-- [[entities/fabiensanglard-net]] — Fabien Sanglard
-- [[entities/fernando-borretti]] — Fernando Borretti
-- [[entities/filfre-net]] — Jimmy Maher
-- [[entities/gary-marcus]] — Gary Marcus
-- [[entities/geoffreylitt-com]] — Geoffrey Litt
-- [[entities/geohot-github-io]] — George Hotz
-- [[entities/georgi-gerganov]] — Georgi Gerganov
-- [[entities/gpjt]] — Giles Thomas (gpjt) — LLM from scratch series, gradient accumulation, consumer GPU training
-- [[entities/hugo-bowne-anderson]] — Hugo Bowne-Anderson
-- [[entities/grantslatton-com]] — Grant Slatton
-- [[entities/gwern]] — Gwern Branwen
-- [[entities/herman-s-blog]] — Herman
-- [[entities/jayden-milne]] — Jayden Milne
-- [[entities/jeff-geerling]] — Jeff Geerling
-- [[entities/jim-nielsen]] — Jim Nielsen
-- [[entities/andrej-karpathy]] — Andrej Karpathy
-- [[entities/dax-raad]] — Dax Raad
-- [[entities/john-d-cook-applied-mathematics-consulting]] — John D. Cook
-- [[entities/jyn]] — jyn
-- [[entities/k0nserv]] — Hugo Tunius
-- [[entities/krebsonsecurity-com]] — Brian Krebs
-- [[entities/lcamtuf]] — Michał Zalewski
-- [[entities/martin-alderson]] — Martin Alderson
-- [[entities/matduggan-com]] — Mat Duggan
-- [[entities/matklad-github-io]] — Aleksey Kladov
-- [[entities/maurycyz-com]] — Maurycy Cyz
-- [[entities/max-bernstein]] — Max Bernstein
-- [[entities/micahflee]] — micahflee
-- [[entities/michael-stapelberg]] — Michael Stapelberg
-- [[entities/miguel-grinberg]] — Miguel Grinberg
-- [[entities/minimaxir-com]] — Max Woolf
-- [[entities/mitchellh-com]] — Mitchell Hashimoto
-- [[entities/mitsuhiko]] — Armin Ronacher
-- [[entities/oldvcr-blogspot-com]] — OldVCR
-- [[entities/overreacted-io]] — Dan Abramov
-- [[entities/paulgraham-com]] — Paul Graham
-- [[entities/philiplaine-com]] — Philip Laine
-- [[entities/pluralistic-net]] — Cory Doctorow
-- [[entities/rachelbythebay-com]] — Rachel by the Bay
-- [[entities/rakhim-exotext-com]] — Rakhim
-- [[entities/righto-com]] — Ken Shirriff
-- [[entities/seangoedecke-com]] — Sean Goedecke
-- [[entities/shkspr-mobi]] — Terence Eden
-- [[entities/simon-willison]] — Simon Willison
-- [[entities/samuelcolvin|Samuel Colvin]] — Founder & CEO at Pydantic. Creator of Pydantic (46M+ monthly downloads), Pydantic AI, Monty sandbox. "AI: it's still Engineering" philosophy. Type-safe agent frameworks, developer experience optimization.
-- [[entities/simone-salis]] — Simone Salis
-- [[entities/sero]] — Sero (0xSero)
-- [[entities/skyfall-dev]] — Skyfall
-- [[entities/stefano-marinelli]] — Stefano Marinelli
-- [[entities/steve-blank]] — Steve Blank
-- [[entities/susam-net]] — Susam Pal
-- [[entities/tedium-the-dull-side-of-the-internet]] — Ernie Smith
-- [[entities/terrible-software]] — Terrible Software
-- [[entities/the-old-new-thing]] — Raymond Chen
-- [[entities/the-silicon-underground]] — Dave Farquhar
-- [[entities/tim-sh]] — Tim Sherratt
-- [[entities/tom-renner]] — Tom Renner
-- [[entities/troy-hunt]] — Troy Hunt (Have I Been Pwned, cybersecurity education, MCP breach integration)
-- [[entities/utcc-utoronto-ca-cks]] — Chris Siebenmann
-- [[entities/westenberg]] — JA Westenberg
-- [[entities/wirtzdan]] — Daniel Wirtz
-- [[entities/xania-org]] — Chris Xania
-- [[entities/xeiaso-net]] — Xe Iaso
+- [[adam-mastroianni]] — Adam Mastroianni
+- [[andrew-nesbitt]] — Andrew Nesbitt
+- [[anildash]] — Anil Dash
+- [[antirez-com]] — Salvatore Sanfilippo
+- [[beej-us]] — Brian "Beej Jorgensen" Hall
+- [[berthub-eu]] — Hubert Florin
+- [[bogdanthegeek-s-blog]] — BogdanTheGeek's Blog
+- [[bradford-morgan-white]] — Bradford Morgan White
+- [[brutecat-com]] — Brute Cat
+- [[hillel-wayne]] — Hillel Wayne (see merged entry, includes newsletter)
+- [[cats-with-power-tools]] — PixelMelt
+- [[chad-nauseam-home]] — Chad Nauseam Home
+- [[chiark-greenend-org-uk-sgtatham]] — Simon Tatham
+- [[construction-physics-com]] — Brian Potter
+- [[daniel-de-laney]] — Daniel De Laney
+- [[daringfireball-net]] — John Gruber
+- [[deliberatecoder]] — Deliberate Coder
+- [[derek-thompson]] — Derek Thompson
+- [[drmaciver]] — David R. MacIver
+- [[dialloibu]] — Ibrahim Diallo
+- [[downtowndougbrown-com]] — Doug Brown
+- [[dwarkesh-patel]] — Dwarkesh Patel
+- [[dynomight-net]] — Dynomight
+- [[ed-zitron-s-where-s-your-ed-at]] — Ed Zitron
+- [[eli-thegreenplace-net]] — Eli Bendersky
+- [[entropicthoughts-com]] — Chris
+- [[ericmigi]] — Eric Migicovsky
+- [[evanhahn-com]] — Evan Hahn
+- [[fabiensanglard-net]] — Fabien Sanglard
+- [[fernando-borretti]] — Fernando Borretti
+- [[filfre-net]] — Jimmy Maher
+- [[gary-marcus]] — Gary Marcus
+- [[geoffreylitt-com]] — Geoffrey Litt
+- [[geohot-github-io]] — George Hotz
+- [[georgi-gerganov]] — Georgi Gerganov
+- [[gpjt]] — Giles Thomas (gpjt) — LLM from scratch series, gradient accumulation, consumer GPU training
+- [[hugo-bowne-anderson]] — Hugo Bowne-Anderson
+- [[grantslatton-com]] — Grant Slatton
+- [[gwern]] — Gwern Branwen
+- [[herman-s-blog]] — Herman
+- [[jayden-milne]] — Jayden Milne
+- [[jeff-geerling]] — Jeff Geerling
+- [[jim-nielsen]] — Jim Nielsen
+- [[andrej-karpathy]] — Andrej Karpathy
+- [[dax-raad]] — Dax Raad
+- [[john-d-cook-applied-mathematics-consulting]] — John D. Cook
+- [[jyn]] — jyn
+- [[k0nserv]] — Hugo Tunius
+- [[krebsonsecurity-com]] — Brian Krebs
+- [[lcamtuf]] — Michał Zalewski
+- [[martin-alderson]] — Martin Alderson
+- [[matduggan-com]] — Mat Duggan
+- [[matklad-github-io]] — Aleksey Kladov
+- [[maurycyz-com]] — Maurycy Cyz
+- [[max-bernstein]] — Max Bernstein
+- [[micahflee]] — micahflee
+- [[michael-stapelberg]] — Michael Stapelberg
+- [[miguel-grinberg]] — Miguel Grinberg
+- [[minimaxir-com]] — Max Woolf
+- [[mitchellh-com]] — Mitchell Hashimoto
+- [[mitsuhiko]] — Armin Ronacher
+- [[oldvcr-blogspot-com]] — OldVCR
+- [[overreacted-io]] — Dan Abramov
+- [[paulgraham-com]] — Paul Graham
+- [[philiplaine-com]] — Philip Laine
+- [[pluralistic-net]] — Cory Doctorow
+- [[rachelbythebay-com]] — Rachel by the Bay
+- [[rakhim-exotext-com]] — Rakhim
+- [[righto-com]] — Ken Shirriff
+- [[seangoedecke-com]] — Sean Goedecke
+- [[shkspr-mobi]] — Terence Eden
+- [[simon-willison]] — Simon Willison
+- [[samuelcolvin|Samuel Colvin]] — Founder & CEO at Pydantic. Creator of Pydantic (46M+ monthly downloads), Pydantic AI, Monty sandbox. "AI: it's still Engineering" philosophy. Type-safe agent frameworks, developer experience optimization.
+- [[simone-salis]] — Simone Salis
+- [[sero]] — Sero (0xSero)
+- [[skyfall-dev]] — Skyfall
+- [[stefano-marinelli]] — Stefano Marinelli
+- [[steve-blank]] — Steve Blank
+- [[susam-net]] — Susam Pal
+- [[tedium-the-dull-side-of-the-internet]] — Ernie Smith
+- [[terrible-software]] — Terrible Software
+- [[the-old-new-thing]] — Raymond Chen
+- [[the-silicon-underground]] — Dave Farquhar
+- [[tim-sh]] — Tim Sherratt
+- [[tom-renner]] — Tom Renner
+- [[troy-hunt]] — Troy Hunt (Have I Been Pwned, cybersecurity education, MCP breach integration)
+- [[utcc-utoronto-ca-cks]] — Chris Siebenmann
+- [[westenberg]] — JA Westenberg
+- [[wirtzdan]] — Daniel Wirtz
+- [[xania-org]] — Chris Xania
+- [[xeiaso-net]] — Xe Iaso
 
 ### AI Companies & Organizations
 
-- [[entities/anthropic]] — Anthropic
-- [[entities/meta]] — Meta
-- [[entities/openai]] — OpenAI (GPT, ChatGPT, Agents SDK v0.14.0, Symphony, Codex)
+- [[anthropic]] — Anthropic
+- [[meta]] — Meta
+- [[openai]] — OpenAI (GPT, ChatGPT, Agents SDK v0.14.0, Symphony, Codex)
 
 ### Browser Agents & Computer Use
 
-- [[entities/anthropic-computer-use]] — Anthropic Computer Use (Claude Sonnet 4.6, OSWorld 72.5%)
-- [[entities/openai-cua]] — OpenAI CUA / Operator (GPT-4o + RL, OSWorld 38.1%)
-- [[entities/browser-use]] — browser-use (Open source, 87k+ stars, DOM-based)
-- [[entities/browserbase]] — Browserbase / Stagehand (Cloud browser infra, $300M)
-- [[entities/manus]] — Manus / Browser Operator (Local browser agent, Meta acquired)
-- [[entities/perplexity-comet]] — Perplexity Comet (AI-native browser, search-first)
-- [[entities/webmcp]] — WebMCP (W3C standard, Chrome 146 preview)
+- [[anthropic-computer-use]] — Anthropic Computer Use (Claude Sonnet 4.6, OSWorld 72.5%)
+- [[openai-cua]] — OpenAI CUA / Operator (GPT-4o + RL, OSWorld 38.1%)
+- [[browser-use]] — browser-use (Open source, 87k+ stars, DOM-based)
+- [[browserbase]] — Browserbase / Stagehand (Cloud browser infra, $300M)
+- [[manus]] — Manus / Browser Operator (Local browser agent, Meta acquired)
+- [[perplexity-comet]] — Perplexity Comet (AI-native browser, search-first)
+- [[webmcp]] — WebMCP (W3C standard, Chrome 146 preview)
 - [[concepts/death-of-browser]] — Death of Browser (Agentic browsing paradigm shift)
 
 ### AI Infrastructure & Hardware
 
-- [[entities/nvidia-dgx-spark]] — NVIDIA DGX Spark (Grace Blackwell, 128GB unified memory, local AI supercomputer)
-- [[entities/nvidia-nemoclaw]] — NVIDIA NemoClaw (secure agent framework with OpenShell sandbox + OpenClaw)
+- [[nvidia-dgx-spark]] — NVIDIA DGX Spark (Grace Blackwell, 128GB unified memory, local AI supercomputer)
+- [[nvidia-nemoclaw]] — NVIDIA NemoClaw (secure agent framework with OpenShell sandbox + OpenClaw)
 - [[concepts/local-llm/server-dgx-spark]] — Local LLM Server Setup on DGX Spark (complete setup guide with NemoClaw integration)
 
 ### AI Models & Technologies
 
-- [[entities/agibot-10000-units]] — AGIBot Reaches 10,000 Units
-- [[entities/amazon-rivr]] — Amazon Acquires Rivr
-- [[entities/claude-mythos]] — Claude Mythos
-- [[entities/cursor-3]] — Cursor 3
-- [[entities/gemma-4]] — Google Gemma 4
-- [[entities/glm-5-zai]] — GLM-5 (Z.ai)
-- [[entities/glm-5v-turbo]] — GLM-5V-Turbo
-- [[entities/mistral-voxtral-tts]] — Mistral Voxtral TTS
-- [[entities/muse-spark]] — Muse Spark
-- [[entities/openai-spud]] — OpenAI Spud
-- [[entities/qwen3-6-plus]] — Qwen3.6-Plus
-- [[entities/zoox-expansion]] — Zoox Robotaxi Expansion
+- [[agibot-10000-units]] — AGIBot Reaches 10,000 Units
+- [[amazon-rivr]] — Amazon Acquires Rivr
+- [[claude-mythos]] — Claude Mythos
+- [[cursor-3]] — Cursor 3
+- [[gemma-4]] — Google Gemma 4
+- [[glm-5-zai]] — GLM-5 (Z.ai)
+- [[glm-5v-turbo]] — GLM-5V-Turbo
+- [[mistral-voxtral-tts]] — Mistral Voxtral TTS
+- [[muse-spark]] — Muse Spark
+- [[openai-spud]] — OpenAI Spud
+- [[qwen3-6-plus]] — Qwen3.6-Plus
+- [[zoox-expansion]] — Zoox Robotaxi Expansion
 
 ## Concept Pages (70)
 
@@ -394,46 +394,46 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 ### Agentic Engineering / AI Coding
 
-- [[entities/simon-willison|Simon Willison]] — AI educator, blogger. Coined "Agentic Engineering", advocates for humans-as-orchestrators
-- [[entities/andrej-karpathy|Andrej Karpathy]] — OpenAI co-founder, Eureka Labs. "Agentic Engineering is a magnitude 9 earthquake", "handwritten code is past"
+- [[simon-willison|Simon Willison]] — AI educator, blogger. Coined "Agentic Engineering", advocates for humans-as-orchestrators
+- [[andrej-karpathy|Andrej Karpathy]] — OpenAI co-founder, Eureka Labs. "Agentic Engineering is a magnitude 9 earthquake", "handwritten code is past"
 
 ### Frontier AI Leaders (AGI Race)
 
-- [[entities/geoffrey-hinton|Geoffrey Hinton]] — Godfather of Deep Learning. Backpropagation, Boltzmann Machines, AlexNet supervision. 2018 Turing Award, 2024 Nobel Prize in Physics. Resigned from Google (May 2023) to freely warn about AI existential risks (10-20% extinction probability within 30 years).
-- [[entities/sam-altman|Sam Altman]] — OpenAI CEO. GPT series, ChatGPT (800M+ weekly users), $500B+ valuation. Worldcoin co-founder. Helion Energy investor. Aggressive compute scaling ($850B data center buildout).
-- [[entities/dario-amodei|Dario Amodei]] — Anthropic CEO. Constitutional AI, Claude series, Interpretability research. "AI Safety in 12 Months" (2025). Former OpenAI VP of Research.
-- [[entities/ilya-sutskever|Ilya Sutskever]] — OpenAI co-founder & former Chief Scientist. AlexNet, Seq2Seq, GPT series technical direction. 2023 board crisis catalyst. Founded Safe Superintelligence Inc. (SSI, June 2024, $3B raised) — "straight-shot" to safe superintelligence.
-- [[entities/jensen-huang|Jensen Huang]] — NVIDIA CEO. GPU revolution, CUDA platform. AI factories thesis. $5T market cap (2025). Physical AI advocate (Cosmos, Isaac GR00T, DRIVE). "Compute is the new infrastructure."
-- [[entities/greg-brockman|Greg Brockman]] — OpenAI co-founder & President. Stripe foundational backend. GPT series technical leadership. Codex (GitHub Copilot). $100M AI super PAC for deregulation. "From AI coworkers to AI managers."
-- [[entities/john-schulman|John Schulman]] — OpenAI co-founder. TRPO, PPO, RLHF architect. "Architect of ChatGPT." Briefly joined Anthropic (Aug 2024), co-founded Thinking Machines Lab (Feb 2025).
-- [[entities/mira-murati|Mira Murati]] — Former OpenAI CTO. Led ChatGPT, DALL·E, GPT-4 development. Left Sep 2024, founded Thinking Machines Lab. "Safety as guardrails, not brakes."
-- [[entities/richard-sutton|Richard Sutton]] — Father of Reinforcement Learning. 2024 ACM Turing Award (with Barto). TD learning, PPO, policy gradients. "The Bitter Lesson" — computation > knowledge. Joined Keen Technologies (Carmack) for AGI research.
+- [[geoffrey-hinton|Geoffrey Hinton]] — Godfather of Deep Learning. Backpropagation, Boltzmann Machines, AlexNet supervision. 2018 Turing Award, 2024 Nobel Prize in Physics. Resigned from Google (May 2023) to freely warn about AI existential risks (10-20% extinction probability within 30 years).
+- [[sam-altman|Sam Altman]] — OpenAI CEO. GPT series, ChatGPT (800M+ weekly users), $500B+ valuation. Worldcoin co-founder. Helion Energy investor. Aggressive compute scaling ($850B data center buildout).
+- [[dario-amodei|Dario Amodei]] — Anthropic CEO. Constitutional AI, Claude series, Interpretability research. "AI Safety in 12 Months" (2025). Former OpenAI VP of Research.
+- [[ilya-sutskever|Ilya Sutskever]] — OpenAI co-founder & former Chief Scientist. AlexNet, Seq2Seq, GPT series technical direction. 2023 board crisis catalyst. Founded Safe Superintelligence Inc. (SSI, June 2024, $3B raised) — "straight-shot" to safe superintelligence.
+- [[jensen-huang|Jensen Huang]] — NVIDIA CEO. GPU revolution, CUDA platform. AI factories thesis. $5T market cap (2025). Physical AI advocate (Cosmos, Isaac GR00T, DRIVE). "Compute is the new infrastructure."
+- [[greg-brockman|Greg Brockman]] — OpenAI co-founder & President. Stripe foundational backend. GPT series technical leadership. Codex (GitHub Copilot). $100M AI super PAC for deregulation. "From AI coworkers to AI managers."
+- [[john-schulman|John Schulman]] — OpenAI co-founder. TRPO, PPO, RLHF architect. "Architect of ChatGPT." Briefly joined Anthropic (Aug 2024), co-founded Thinking Machines Lab (Feb 2025).
+- [[mira-murati|Mira Murati]] — Former OpenAI CTO. Led ChatGPT, DALL·E, GPT-4 development. Left Sep 2024, founded Thinking Machines Lab. "Safety as guardrails, not brakes."
+- [[richard-sutton|Richard Sutton]] — Father of Reinforcement Learning. 2024 ACM Turing Award (with Barto). TD learning, PPO, policy gradients. "The Bitter Lesson" — computation > knowledge. Joined Keen Technologies (Carmack) for AGI research.
 
-- [[entities/vinci-rufus|Vinci Rufus]] — AI tech exec. "Orchestration > Automation", "Vibe coding 30-70%, Agentic engineering 300-700%"
-- [[entities/ryan-lopopolo|Ryan Lopopolo]] (@_lopopolo) — OpenAI Frontier. Harness Engineering, Symphony multi-agent orchestration
-- [[entities/vtrivedy10|Vivek Trivedy]] (@vtrivedy10) — LangChain Product Lead. Deep Agents CLI architect. Harness Engineering (Agent = Model + Harness). Terminal Bench 2.0 Top 5. HaaS thesis.
-- [[entities/boris-cherny|Boris Cherny]] (@bcherny) — Head of Claude Code at OpenAI. Creator of Claude Code. Opus 4.5 + thinking, 5 parallel sessions via git worktrees, Plan Mode → auto-accept. Shared CLAUDE.md as team infrastructure, @claude on PRs for compounding guidelines. MCP integration (BigQuery, Slack, Sentry). PostToolUse hooks, subagents for parallel compute. "Give Claude a way to verify its work." "If you do something more than once a day, turn it into a skill."
-- [[entities/addy-osmani|Addy Osmani]] (@addyosmani) — Director, Google Cloud AI. Conductor→Orchestrator framework, Agent Teams/Swarms, AGENTS.md critique
-- [[entities/sarah-chieng|Sarah Chieng]] (@MilksandMatcha) — AI agent educator, co-author of Back of House multi-agent patterns with @0xSero. "Single-agent ceiling" critique, sloperator anti-pattern identification.
-|- [[entities/scott-wu|Scott Wu]] (@ScottWu46) — Cognition CEO & Co-Founder. IOI Gold Medalist. Devin creator. $10B+ valuation. "Eventually, the future comes" — closing the agent loop. 100x capability growth (154→659 PRs/week). Single-threaded agent philosophy.
-|- [[entities/nader-dabit|Nader Dabit]] (@dabit3) — Cognition Growth Engineer. Cloud Agent Thesis. "Engineering for Agents That Never Sleep" — 70/30 human→agent trigger ratio inverting to 10/90. AWS→Aave→Eigen→Cognition. Substack (1.7K+).
-|- [[entities/walden-yan|Walden Yan]] — Cognition Co-Founder & CPO. IOI 2020 Gold Medalist. "Don't Build Multi-Agents" — context continuity beats parallelism. Context Engineering principles. MIT PRIMES (cryptography, ML). Harvard CS.
+- [[vinci-rufus|Vinci Rufus]] — AI tech exec. "Orchestration > Automation", "Vibe coding 30-70%, Agentic engineering 300-700%"
+- [[ryan-lopopolo|Ryan Lopopolo]] (@_lopopolo) — OpenAI Frontier. Harness Engineering, Symphony multi-agent orchestration
+- [[vtrivedy10|Vivek Trivedy]] (@vtrivedy10) — LangChain Product Lead. Deep Agents CLI architect. Harness Engineering (Agent = Model + Harness). Terminal Bench 2.0 Top 5. HaaS thesis.
+- [[boris-cherny|Boris Cherny]] (@bcherny) — Head of Claude Code at OpenAI. Creator of Claude Code. Opus 4.5 + thinking, 5 parallel sessions via git worktrees, Plan Mode → auto-accept. Shared CLAUDE.md as team infrastructure, @claude on PRs for compounding guidelines. MCP integration (BigQuery, Slack, Sentry). PostToolUse hooks, subagents for parallel compute. "Give Claude a way to verify its work." "If you do something more than once a day, turn it into a skill."
+- [[addy-osmani|Addy Osmani]] (@addyosmani) — Director, Google Cloud AI. Conductor→Orchestrator framework, Agent Teams/Swarms, AGENTS.md critique
+- [[sarah-chieng|Sarah Chieng]] (@MilksandMatcha) — AI agent educator, co-author of Back of House multi-agent patterns with @0xSero. "Single-agent ceiling" critique, sloperator anti-pattern identification.
+|- [[scott-wu|Scott Wu]] (@ScottWu46) — Cognition CEO & Co-Founder. IOI Gold Medalist. Devin creator. $10B+ valuation. "Eventually, the future comes" — closing the agent loop. 100x capability growth (154→659 PRs/week). Single-threaded agent philosophy.
+|- [[nader-dabit|Nader Dabit]] (@dabit3) — Cognition Growth Engineer. Cloud Agent Thesis. "Engineering for Agents That Never Sleep" — 70/30 human→agent trigger ratio inverting to 10/90. AWS→Aave→Eigen→Cognition. Substack (1.7K+).
+|- [[walden-yan|Walden Yan]] — Cognition Co-Founder & CPO. IOI 2020 Gold Medalist. "Don't Build Multi-Agents" — context continuity beats parallelism. Context Engineering principles. MIT PRIMES (cryptography, ML). Harvard CS.
 
 ### AI Education & Evaluation
 
-- [[entities/hugo-bowne-anderson|Hugo Bowne-Anderson]] (@hugobowne) — Independent AI educator & podcaster. Vanishing Gradients host. "Evaluation is the engine, not the afterthought." O'Reilly author: "Escaping POC Purgatory," "Beyond Prompt-and-Pray." Former Head of DevRel at Outerbounds (Metaflow) and Coiled. 6M+ learners via DataCamp. Evaluation-Driven Development, Structured Automation advocate.
+- [[hugo-bowne-anderson|Hugo Bowne-Anderson]] (@hugobowne) — Independent AI educator & podcaster. Vanishing Gradients host. "Evaluation is the engine, not the afterthought." O'Reilly author: "Escaping POC Purgatory," "Beyond Prompt-and-Pray." Former Head of DevRel at Outerbounds (Metaflow) and Coiled. 6M+ learners via DataCamp. Evaluation-Driven Development, Structured Automation advocate.
 
 ### Information Retrieval & RAG
 
-|- [[entities/jo-bergum|Jo Kristian Bergum]] (@jobergum) — Hornet CEO & Co-founder, former Vespa.ai Chief Scientist. "Agents are the new user of search." ColBERT production pioneer, late-interaction advocate, schema-first verifiable APIs for agents. Mutually Assured Distraction thesis.
-|- [[entities/lester-solbakken|Lester Solbakken]] — Hornet Founding Engineer, former Vespa.ai Principal Engineer, 13yr Yahoo/Verizon Media. PhD AI/ML (NTNU). "RAG didn't really change much in search. Agents change everything." Mutually Assured Distraction co-author. Schema-first API advocate. Context engineering = relevance engineering. Synthetic query generation for enterprise search.
-|- [[entities/doug-turnbull|Doug Turnbull]] (@softwaredoug) — Search relevance engineer, author of "Relevant Search" (2016) & "AI-Powered Search" (2025). Former Principal Engineer at Reddit, Shopify, Spotify. Quepid & SearchArray creator. "Thick search APIs are counterproductive for agents."
-|- [[entities/sheshansh-agrawal|Sheshansh Agrawal]] — Director of Research at Contextual AI, former Microsoft Research (Bing Ads embeddings serving 100M+ users, trillions of tokens). IIT Bombay. XPERT (SIGIR 2023), DECAF, ECLARE. CER-C metric for trajectory-level efficiency. On-policy distillation + RL for search planners. Agentic alternative to GraphRAG. BlitzRank reranker (25-40% token reduction).
-- [[entities/benjamin-clavi|Benjamin Clavié]] (@bclavie) — Mixedbread ML R&D / NII Tokyo PhD. RAGatouille creator (3.9k★), ModernBERT co-lead (5.5k★). "ColBERT is a semantic keyword matcher." JaColBERT, mxbai-edge-colbert-v0, Wholembed v3. Late Interaction Workshop @ ECIR 2026 organizer.
+|- [[jo-bergum|Jo Kristian Bergum]] (@jobergum) — Hornet CEO & Co-founder, former Vespa.ai Chief Scientist. "Agents are the new user of search." ColBERT production pioneer, late-interaction advocate, schema-first verifiable APIs for agents. Mutually Assured Distraction thesis.
+|- [[lester-solbakken|Lester Solbakken]] — Hornet Founding Engineer, former Vespa.ai Principal Engineer, 13yr Yahoo/Verizon Media. PhD AI/ML (NTNU). "RAG didn't really change much in search. Agents change everything." Mutually Assured Distraction co-author. Schema-first API advocate. Context engineering = relevance engineering. Synthetic query generation for enterprise search.
+|- [[doug-turnbull|Doug Turnbull]] (@softwaredoug) — Search relevance engineer, author of "Relevant Search" (2016) & "AI-Powered Search" (2025). Former Principal Engineer at Reddit, Shopify, Spotify. Quepid & SearchArray creator. "Thick search APIs are counterproductive for agents."
+|- [[sheshansh-agrawal|Sheshansh Agrawal]] — Director of Research at Contextual AI, former Microsoft Research (Bing Ads embeddings serving 100M+ users, trillions of tokens). IIT Bombay. XPERT (SIGIR 2023), DECAF, ECLARE. CER-C metric for trajectory-level efficiency. On-policy distillation + RL for search planners. Agentic alternative to GraphRAG. BlitzRank reranker (25-40% token reduction).
+- [[benjamin-clavi|Benjamin Clavié]] (@bclavie) — Mixedbread ML R&D / NII Tokyo PhD. RAGatouille creator (3.9k★), ModernBERT co-lead (5.5k★). "ColBERT is a semantic keyword matcher." JaColBERT, mxbai-edge-colbert-v0, Wholembed v3. Late Interaction Workshop @ ECIR 2026 organizer.
 
 ### AI Memory & Context Systems
 
-- [[entities/shlok-khemani|Shlok Khemani]] (@shloked) — Writer & programmer. AI memory systems, multi-agent orchestration (OpenPoke), background coding agents (Vajra), cache-first engineering philosophy. "Personality ≠ Execution" pattern for AI assistants.
+- [[shlok-khemani|Shlok Khemani]] (@shloked) — Writer & programmer. AI memory systems, multi-agent orchestration (OpenPoke), background coding agents (Vajra), cache-first engineering philosophy. "Personality ≠ Execution" pattern for AI assistants.
 
 ### Memory & Context Systems
 
@@ -454,18 +454,18 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 - [[concepts/causal-backbone-conjecture]] — Causal Backbone Conjecture (tailcalled, 2024): resource-constrained selection theorem for agent-like structures, sparse high-leverage modeling
 
-- [[entities/gary-marcus|Gary Marcus]] — AI critic, NYU emeritus. Skeptical of pure scaling, advocates hybrid neuro-symbolic approaches
+- [[gary-marcus|Gary Marcus]] — AI critic, NYU emeritus. Skeptical of pure scaling, advocates hybrid neuro-symbolic approaches
 
 ### AI Infrastructure & Open Source
 
-- [[entities/george-hotz|George Hotz]] (@geohot) — comma.ai founder, tinygrad creator. "All compute is equal", open-source GPU driver
-- [[entities/gm8xx8|gm8xx8]] (@gm8xx8) — AI paper curator & infrastructure researcher. 29-paper curation batches (proof theory, VLA, 1-bit LLMs, agentic systems). cuLA CUDA kernels, MiroMindAI contributor, linear attention & M2RNN analysis. 132K Farcaster followers, 77K+ HF upvotes. L3 depth.
-- [[entities/sero|Sero]] (@0xsero) — Sybil Solutions founder, ElizaOS contributor. 8x RTX 3090 homelab, Freedom Tech advocate, local AI infrastructure builder, Thrive Protocol. TurboQuant, pi-brain, Open Orchestra, Parchi, vLLM Studio, Azul. 200+ OSS repos. L3 depth.
+- [[george-hotz|George Hotz]] (@geohot) — comma.ai founder, tinygrad creator. "All compute is equal", open-source GPU driver
+- [[gm8xx8|gm8xx8]] (@gm8xx8) — AI paper curator & infrastructure researcher. 29-paper curation batches (proof theory, VLA, 1-bit LLMs, agentic systems). cuLA CUDA kernels, MiroMindAI contributor, linear attention & M2RNN analysis. 132K Farcaster followers, 77K+ HF upvotes. L3 depth.
+- [[sero|Sero]] (@0xsero) — Sybil Solutions founder, ElizaOS contributor. 8x RTX 3090 homelab, Freedom Tech advocate, local AI infrastructure builder, Thrive Protocol. TurboQuant, pi-brain, Open Orchestra, Parchi, vLLM Studio, Azul. 200+ OSS repos. L3 depth.
 - [[concepts/dgx-spark-local-llm-server]] — DGX Spark: Local LLM Server & NemoClaw Setup (Grace Blackwell, NIM inference, distributed agent architecture)
 
 ### AI Research & Computer Vision
 
-- [[entities/ali-farhadi|Ali Farhadi]] — YOLO co-creator, Xnor.ai→Apple, former Ai2 CEO → Microsoft. "Open source is how we drive progress." OLMo, Molmo, Dolma, OLMoTrace, Tülu 3. "Language Model of a Crow" — embodied understanding as Grand Challenge. Radical openness philosophy. L3 depth.
+- [[ali-farhadi|Ali Farhadi]] — YOLO co-creator, Xnor.ai→Apple, former Ai2 CEO → Microsoft. "Open source is how we drive progress." OLMo, Molmo, Dolma, OLMoTrace, Tülu 3. "Language Model of a Crow" — embodied understanding as Grand Challenge. Radical openness philosophy. L3 depth.
 
 
 ### AI Safety & Alignment
@@ -480,41 +480,41 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 ### Open Source AI & Consortium
 
-- [[entities/nathan-lambert|Nathan Lambert]] — Interconnects AI blogger. Open model consortium dynamics, Nemotron Coalition analysis
+- [[nathan-lambert|Nathan Lambert]] — Interconnects AI blogger. Open model consortium dynamics, Nemotron Coalition analysis
 
 ### AI Research Pioneers
 
-- [[entities/yann-lecun|Yann LeCun]] — Meta Chief AI Scientist. CNN inventor, 2018 Turing Award, JEPA/World Models, AMI Labs (2025)
-- [[entities/fei-fei-li|Fei-Fei Li]] — Stanford Professor, ImageNet creator, World Labs CEO. Human-Centered AI pioneer, Spatial Intelligence
-- [[entities/ian-goodfellow|Ian Goodfellow]] — GANs inventor, adversarial ML pioneer. Deep Learning co-author, Google Brain → Apple → DeepMind
+- [[yann-lecun|Yann LeCun]] — Meta Chief AI Scientist. CNN inventor, 2018 Turing Award, JEPA/World Models, AMI Labs (2025)
+- [[fei-fei-li|Fei-Fei Li]] — Stanford Professor, ImageNet creator, World Labs CEO. Human-Centered AI pioneer, Spatial Intelligence
+- [[ian-goodfellow|Ian Goodfellow]] — GANs inventor, adversarial ML pioneer. Deep Learning co-author, Google Brain → Apple → DeepMind
 
 ### AI Agent Platforms & Developer Tools
 
-- [[entities/peter-steinberger|Peter Steinberger]] (@steipete) — OpenClaw creator, former PSPDFKit CEO. AI-native solo builder shipping 600+ commits/day via 5-10 parallel agents. Joined OpenAI Feb 2026. "Agent-first design" advocate, "Ship beats perfect" philosophy.
-- [[entities/tailcalled]] — Creator of the Causal Backbone Conjecture
-- [[entities/teortaxestex]] — Writer, China/US tech analyst. Steelmanned Jensen vs. Dwarkesh epistemic gap using Causal Backbone framework — LessWrong researcher. Causal Backbone Conjecture author. Selection theorems for agent-like structures under resource constraints. 8,099 karma, 11yr tenure. L3 depth.
-- [[entities/elvis]] — AI agent architecture analyst. 9-hour Hermes vs OpenClaw source code comparison. Skill Explosion Problem identification. Rails vs Linux/Kubernetes product positioning framework.
-- [[entities/teknium|Ryan (Teknium)]] (@teknium1) — Nous Research Co-founder & Head of Post-Training. Hermes model family (3/4) and Hermes Agent (68K+ stars) architect. Post-training, synthetic data, RL environments, self-improving agents. "The agent that grows with you."
-- [[entities/hermes-agent]] — Hermes Agent (NousResearch) — Integrated agent execution platform with AIAgent core, prompt assembly, tool registry, gateway, plugin/memory provider system. 68K+ GitHub stars.
-- [[entities/dax-raad|Dax Raad]] (@thdxr) — Anomaly co-founder. Creator of OpenCode (135k+ GitHub stars, 1.5M+ MAUs) and SST (25k+ stars). Blunt critic of AI productivity hype; advocates for local-first, model-agnostic, open-source developer tools.
+- [[peter-steinberger|Peter Steinberger]] (@steipete) — OpenClaw creator, former PSPDFKit CEO. AI-native solo builder shipping 600+ commits/day via 5-10 parallel agents. Joined OpenAI Feb 2026. "Agent-first design" advocate, "Ship beats perfect" philosophy.
+- [[tailcalled]] — Creator of the Causal Backbone Conjecture
+- [[teortaxestex]] — Writer, China/US tech analyst. Steelmanned Jensen vs. Dwarkesh epistemic gap using Causal Backbone framework — LessWrong researcher. Causal Backbone Conjecture author. Selection theorems for agent-like structures under resource constraints. 8,099 karma, 11yr tenure. L3 depth.
+- [[elvis]] — AI agent architecture analyst. 9-hour Hermes vs OpenClaw source code comparison. Skill Explosion Problem identification. Rails vs Linux/Kubernetes product positioning framework.
+- [[teknium|Ryan (Teknium)]] (@teknium1) — Nous Research Co-founder & Head of Post-Training. Hermes model family (3/4) and Hermes Agent (68K+ stars) architect. Post-training, synthetic data, RL environments, self-improving agents. "The agent that grows with you."
+- [[hermes-agent]] — Hermes Agent (NousResearch) — Integrated agent execution platform with AIAgent core, prompt assembly, tool registry, gateway, plugin/memory provider system. 68K+ GitHub stars.
+- [[dax-raad|Dax Raad]] (@thdxr) — Anomaly co-founder. Creator of OpenCode (135k+ GitHub stars, 1.5M+ MAUs) and SST (25k+ stars). Blunt critic of AI productivity hype; advocates for local-first, model-agnostic, open-source developer tools.
 
 ### Coding Agents & Terminal Tools
 
 ### Distributed Systems & Local-First
 
-- [[entities/martin-kleppmann|Martin Kleppmann]] (@martinkl) — Cambridge Associate Professor. "Designing Data-Intensive Applications" author. Automerge CRDT library creator. Local-First Software movement originator (Ink & Switch, 2019). Bluesky AT Protocol core developer.
+- [[martin-kleppmann|Martin Kleppmann]] (@martinkl) — Cambridge Associate Professor. "Designing Data-Intensive Applications" author. Automerge CRDT library creator. Local-First Software movement originator (Ink & Switch, 2019). Bluesky AT Protocol core developer.
 
 ### Declarative LM Programming & Foundation Model Programming
 
-- [[entities/omar-khattab|Omar Khattab]] (@lateinteraction) — MIT EECS Assistant Professor. Creator of ColBERT (late interaction), DSPy (declarative LM programming), GEPA (genetic prompt optimization), co-author of RLMs. "LMs as modules in programs, not end products."
-- [[entities/alex-zhang|Alex L. Zhang]] (@a1zhang) — MIT CSAIL PhD (Khattab, Kraska). Recursive Language Models (RLMs). "Language models will be scaffolds." GPU MODE, KernelBench (ICML 2025 Best Paper). L3: RLM context-centric decomposition, Scaffold philosophy, Software 1.0→2.0→3.0 paradigm, Karpathy comparison (training vs inference optimization).
-- [[entities/elvis-sun]] — 4x founder, ex-Google/Firebase (8yr). Medialyst.ai, PressPulse.ai, Solar Flare PR. Context Lake (Obsidian+Claude Code), Vibe-Launching, Attention Flywheel, Newsjacking, AI cold email systems. Enriched from 13+ blog posts.
-- [[entities/shunyu-yao|Shunyu Yao]] (@shunyuyao12) — OpenAI Research Scientist (CUA). ReAct, Tree of Thoughts, Reflexion, SWE-bench/SWE-agent, tau-bench. "The Second Half: RL finally generalizes, evaluation > training, problem-defining > problem-solving." L3: Agent-Computer Interfaces, reasoning as action in RL space, trained scaffolds paradigm.
+- [[omar-khattab|Omar Khattab]] (@lateinteraction) — MIT EECS Assistant Professor. Creator of ColBERT (late interaction), DSPy (declarative LM programming), GEPA (genetic prompt optimization), co-author of RLMs. "LMs as modules in programs, not end products."
+- [[alex-zhang|Alex L. Zhang]] (@a1zhang) — MIT CSAIL PhD (Khattab, Kraska). Recursive Language Models (RLMs). "Language models will be scaffolds." GPU MODE, KernelBench (ICML 2025 Best Paper). L3: RLM context-centric decomposition, Scaffold philosophy, Software 1.0→2.0→3.0 paradigm, Karpathy comparison (training vs inference optimization).
+- [[elvis-sun]] — 4x founder, ex-Google/Firebase (8yr). Medialyst.ai, PressPulse.ai, Solar Flare PR. Context Lake (Obsidian+Claude Code), Vibe-Launching, Attention Flywheel, Newsjacking, AI cold email systems. Enriched from 13+ blog posts.
+- [[shunyu-yao|Shunyu Yao]] (@shunyuyao12) — OpenAI Research Scientist (CUA). ReAct, Tree of Thoughts, Reflexion, SWE-bench/SWE-agent, tau-bench. "The Second Half: RL finally generalizes, evaluation > training, problem-defining > problem-solving." L3: Agent-Computer Interfaces, reasoning as action in RL space, trained scaffolds paradigm.
 
 ### Coding Agents & Swarm Orchestration
 
-- [[entities/akira-realmcore|Akira]] (@realmcore_) — Random Labs AI engineer. Slate: swarm-native coding agent using Thread Weaving. RLM for coding, skill chaining, knowledge overhang.
+- [[akira-realmcore|Akira]] (@realmcore_) — Random Labs AI engineer. Slate: swarm-native coding agent using Thread Weaving. RLM for coding, skill chaining, knowledge overhang.
 
 ### Cloud Architecture & Distributed Systems (AI Agent Infrastructure Mapping)
 
-- [[entities/rehan-van-der-merwe|Rehan van der Merwe]] (@rehanvdm) — Cloud-native architect. AWS serverless, microservices design, distributed systems, operational excellence. Lambda Monolith (Lambdalith), EventBridge EDA, SQS Lambda ESM scaling behaviors, ECS Fargate scaling. Practical AWS architecture patterns directly mappable to AI Agent system design.
+- [[rehan-van-der-merwe|Rehan van der Merwe]] (@rehanvdm) — Cloud-native architect. AWS serverless, microservices design, distributed systems, operational excellence. Lambda Monolith (Lambdalith), EventBridge EDA, SQS Lambda ESM scaling behaviors, ECS Fargate scaling. Practical AWS architecture patterns directly mappable to AI Agent system design.

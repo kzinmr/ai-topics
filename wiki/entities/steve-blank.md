@@ -156,7 +156,7 @@ Notable recent publications include his 2024 essay "A Lasting Model for Change: 
 - [[concepts/lean-startup]] — Blank and Ries's methodology for building startups under uncertainty
 - [[concepts/customer-development]] — The four-step process for discovering and validating markets
 - [[concepts/harness-engineering]] — Parallels in AI agent configuration as learned failure modes
-- [[entities/eric-ries]] — Co-creator of the Lean Startup movement
+- [[eric-ries]] — Co-creator of the Lean Startup movement
 - [[concepts/agentic-engineering]] — Agent-first development workflows changing startup dynamics
 
 ## Sources

@@ -177,16 +177,16 @@ A recurring theme in Schulman's recent work is **scalable oversight**: how can h
 ## Related
 
 - [[Pieter Abbeel]] — PhD advisor at UC Berkeley; robotics and RL
-- [[entities/greg-brockman]] — OpenAI co-founder; co-authored OpenAI Gym (2016); collaborated on early RL work
-- [[entities/ilya-sutskever]] — OpenAI co-founder; co-authored "Let's Verify Step by Step"
+- [[greg-brockman]] — OpenAI co-founder; co-authored OpenAI Gym (2016); collaborated on early RL work
+- [[ilya-sutskever]] — OpenAI co-founder; co-authored "Let's Verify Step by Step"
 - [[Dario Amodei]] — Anthropic colleague; co-authored "Concrete Problems in AI Safety"
 - [[concepts/reinforcement-learning]] — Schulman's primary technical domain
 - [[concepts/rlhf]] — Schulman's most influential contribution to AI
-- [[entities/mira-murati]] — Thinking Machines Lab co-founder; shared safety-first philosophy; former OpenAI CTO
+- [[mira-murati]] — Thinking Machines Lab co-founder; shared safety-first philosophy; former OpenAI CTO
 - [[concepts/ai-safety]] — Scalable oversight, alignment research, safety exodus
-- [[entities/openai]] — Company Schulman co-founded (2015–2024)
-- [[entities/anthropic-computer-use]] — Company Schulman briefly joined (2024–2025)
-- [[entities/thinking-machines-lab]] — Schulman's current venture (2025–present)
+- [[openai]] — Company Schulman co-founded (2015–2024)
+- [[anthropic-computer-use]] — Company Schulman briefly joined (2024–2025)
+- [[thinking-machines-lab]] — Schulman's current venture (2025–present)
 
 ## Sources
 

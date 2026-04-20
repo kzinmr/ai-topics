@@ -117,13 +117,13 @@ He occasionally shares **technical threads** explaining the reasoning behind his
 
 ## Related
 
-- [[entities/simonw]] — Simon Willison, similar focus on developer tools and AI
-- [[entities/antirez-com]] — Salvatore Sanfilippo, shared philosophy of building for developers
-- [[entities/geoffreylitt-com]] — Geoffrey Litt, small tools and local-first philosophy
-- [[entities/mitsuhiko]] — Armin Ronacher (Flask), developer tooling focus
+- [[simonw]] — Simon Willison, similar focus on developer tools and AI
+- [[antirez-com]] — Salvatore Sanfilippo, shared philosophy of building for developers
+- [[geoffreylitt-com]] — Geoffrey Litt, small tools and local-first philosophy
+- [[mitsuhiko]] — Armin Ronacher (Flask), developer tooling focus
 - [[concepts/generative-ui]] — The paradigm Tate pioneered with json-render
 - [[concepts/ai-agent-browser-automation]] — agent-browser's domain
-- [[entities/vercel]] — Tate's employer and ecosystem
+- [[vercel]] — Tate's employer and ecosystem
 
 ## Sources
 

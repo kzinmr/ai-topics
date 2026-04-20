@@ -7,9 +7,9 @@ related:
   - [[concepts/pydantic-ai]]
   - [[concepts/guidance]]
   - [[concepts/outlines]]
-  - [[entities/samuel-colvin]]
-  - [[entities/jason-liu]]
-  - [[entities/rahul]]
+  - [[samuel-colvin]]
+  - [[jason-liu]]
+  - [[rahul]]
 depth: L2
 status: complete
 created: 2026-04-15
@@ -85,6 +85,6 @@ OpenAI now offers native structured output via `response_format` parameter, guar
 - [[concepts/pydantic-ai]] — Agent-level structured outputs
 - [[concepts/guidance]] — Constrained decoding with regex/grammars
 - [[concepts/outlines]] — Grammar-constrained generation
-- [[entities/jason-liu]] — Instructor creator
-- [[entities/rahul]] — Guardrails AI / Jsonformer creator
-- [[entities/samuel-colvin]] — Pydantic creator
+- [[jason-liu]] — Instructor creator
+- [[rahul]] — Guardrails AI / Jsonformer creator
+- [[samuel-colvin]] — Pydantic creator

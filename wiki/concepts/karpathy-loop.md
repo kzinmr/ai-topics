@@ -213,7 +213,7 @@ Karpathy's approach is essentially a harness for a *research agent* rather than 
 - [Autoresearch Complete 2026 Guide](https://o-mega.ai/articles/karpathy-autoresearch-complete-2026-guide) — Technical guide
 - [[harness-engineering/agentic-engineering]] — Simon Willison's agentic engineering framework
 - [[harness-engineering]] — Ryan Lopopolo's harness engineering concept
-- [[entities/andrej-karpathy]] — Andrej Karpathy entity page
+- [[andrej-karpathy]] — Andrej Karpathy entity page
 
 ---
 

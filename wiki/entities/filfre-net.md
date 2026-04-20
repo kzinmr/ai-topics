@@ -162,10 +162,10 @@ But this transparency strengthens rather than weakens his historical work. By ac
 
 ## Related
 
-- [[entities/andrew-plotkin]] — Central figure in post-Infocom IF, creator of Glk library and numerous acclaimed games
-- [[entities/roberta-williams]] — Sierra co-founder, creator of King's Quest, central figure in Maher's Sierra chronicles
-- [[entities/ken-williams]] — Sierra co-founder, whose business decisions shaped the company's rise and fall
-- [[entities/jane-jensen]] — Creator of Gabriel Knight series, subject of Maher's Sierra-era analysis
+- [[andrew-plotkin]] — Central figure in post-Infocom IF, creator of Glk library and numerous acclaimed games
+- [[roberta-williams]] — Sierra co-founder, creator of King's Quest, central figure in Maher's Sierra chronicles
+- [[ken-williams]] — Sierra co-founder, whose business decisions shaped the company's rise and fall
+- [[jane-jensen]] — Creator of Gabriel Knight series, subject of Maher's Sierra-era analysis
 - [[concepts/interactive-fiction]] — The medium Maher has spent two decades documenting and preserving
 - [[concepts/infocom]] — The company whose legacy Maher has extensively chronicled
 - [[concepts/sierra-online]] — The company Maher has written about in unprecedented depth

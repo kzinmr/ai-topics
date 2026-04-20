@@ -151,7 +151,7 @@ Carmack aligns with Richard Sutton's "Bitter Lesson" thesis: general methods tha
 - [[Richard Sutton]] — Keen Technologies partner; RL pioneer
 - [[concepts/reinforcement-learning]] — Carmack's preferred AGI approach
 - [[concepts/bitter-lesson]] — Sutton's thesis that Carmack advocates
-- [[entities/keen-technologies]] — Carmack's AGI company
+- [[keen-technologies]] — Carmack's AGI company
 
 ## Sources
 

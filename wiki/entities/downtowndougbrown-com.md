@@ -93,7 +93,7 @@ His work in this area is notable for combining **materials science understanding
 - [[concepts/reverse-engineering]] — Binary and protocol analysis of undocumented systems
 - [[concepts/hardware-repair]] — Physical diagnostics and component-level repair
 - [[concepts/data-preservation]] — Long-term storage media archival and recovery
-- [[entities/apple]] — Target platform for much of Doug's repair work
+- [[apple]] — Target platform for much of Doug's repair work
 
 ## Sources
 

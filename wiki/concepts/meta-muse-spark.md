@@ -81,8 +81,8 @@ Meta's vision extends beyond chatbot responses. Muse Spark is designed as the co
 
 - [[concepts/open-model-consortium]] — Contrast with Meta's traditional open-source Llama strategy
 - [[concepts/claude-mythos-preview]] — Concurrent frontier model release (Anthropic, closed)
-- [[entities/alexandr-wang]] — MSL leader, Scale AI founder
-- [[entities/mark-zuckerberg]] — Meta CEO, strategic direction
+- [[alexandr-wang]] — MSL leader, Scale AI founder
+- [[mark-zuckerberg]] — Meta CEO, strategic direction
 
 ## Sources
 

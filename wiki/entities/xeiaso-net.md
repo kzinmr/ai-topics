@@ -88,7 +88,7 @@ A recurring theme in Xe's writing is the **human impact of automated systems**. 
 - [[concepts/nixos]] — Declarative, reproducible infrastructure
 - [[concepts/open-source-maintenance]] — The social dynamics of maintaining popular projects
 - [[concepts/threat-modeling]] — Security-first thinking for open-source developers
-- [[entities/techaro]] — Xe's organization
+- [[techaro]] — Xe's organization
 
 ## Sources
 

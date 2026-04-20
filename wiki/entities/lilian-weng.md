@@ -141,9 +141,9 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 - [[concepts/diffusion-models]] — Her April 2024 analysis of video generation
 - [[concepts/llm-hallucination]] — Her July 2024 survey on extrinsic hallucinations
 - [[concepts/prompt-engineering]] — Her March 2023 definitive guide
-- [[entities/mira-murati]] — Thinking Machines Lab co-founder and CEO
-- [[entities/john-schulman]] — Thinking Machines Lab co-founder and Chief Scientist
-- [[entities/sam-altman]] — OpenAI CEO during her tenure
+- [[mira-murati]] — Thinking Machines Lab co-founder and CEO
+- [[john-schulman]] — Thinking Machines Lab co-founder and Chief Scientist
+- [[sam-altman]] — OpenAI CEO during her tenure
 - [[concepts/sim-to-real-robotics]] — The approach used for the Rubik's Cube robot
 
 ## Influence Metrics

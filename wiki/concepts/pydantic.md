@@ -5,8 +5,8 @@ tags: [data-validation, python, type-hints, rust, web-frameworks, fastapi]
 related:
   - [[concepts/structured-outputs]]
   - [[concepts/pydantic-ai]]
-  - [[entities/samuel-colvin]]
-  - [[entities/sebastián-ramírez]]
+  - [[samuel-colvin]]
+  - [[sebastián-ramírez]]
 depth: L2
 status: complete
 created: 2026-04-16
@@ -73,5 +73,5 @@ Based on StackOverflow 2022 survey (FastAPI at 6.01%) and PyPI download ratios (
 - [[concepts/structured-outputs]] — Pydantic validates structured data
 - **[[jason-liu]]** — Instructor library creator; "Pydantic is all you need" advocate; Applied LLMs Guide co-author
 - [[concepts/pydantic-ai]] — Next evolution of Pydantic for AI agents
-- [[entities/samuel-colvin]] — Creator
-- [[entities/sebastián-ramírez]] — FastAPI creator, close collaborator
+- [[samuel-colvin]] — Creator
+- [[sebastián-ramírez]] — FastAPI creator, close collaborator

@@ -150,10 +150,10 @@ His public statements emphasize OpenAI's commitment to advancing **reasoning and
 
 ## Related
 
-- [[entities/sam-altman]] — OpenAI CEO; Chen reports to him
-- [[entities/ilya-sutskever]] — OpenAI co-founder; former senior colleague
-- [[entities/alec-radford]] — Fellow OpenAI researcher; collaborated on GPT series
-- [[entities/greg-brockman]] — OpenAI co-founder; engineering leadership
+- [[sam-altman]] — OpenAI CEO; Chen reports to him
+- [[ilya-sutskever]] — OpenAI co-founder; former senior colleague
+- [[alec-radford]] — Fellow OpenAI researcher; collaborated on GPT series
+- [[greg-brockman]] — OpenAI co-founder; engineering leadership
 - [[concepts/multimodal-ai]] — Chen's primary research area
 - [[concepts/ai-reasoning]] — o1 model represents this paradigm
 

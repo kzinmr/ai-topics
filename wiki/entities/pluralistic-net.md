@@ -153,11 +153,11 @@ His **Memex Method** — maintaining 50,000+ public notes in a searchable databa
 - [[concepts/right-to-repair]] — Anti-circumvention law's impact on device ownership
 - [[concepts/posse-pattern]] — Publish on Own Site, Syndicate Everywhere
 - [[concepts/memex-method]] — Public note-taking as knowledge creation
-- [[entities/ed-zitron-s-where-s-your-ed-at]] — Another critical tech-policy voice
+- [[ed-zitron-s-where-s-your-ed-at]] — Another critical tech-policy voice
 - [[concepts/ai-pascals-wager]] — AIドゥーマー議論のパスカルの賭え framing
 - [[concepts/ai-bubble-economics]] — AI投資バブルと経済リスク
 - [[concepts/post-american-internet]] — 脱・米国中心インターネット構想
-- [[entities/eff]] — Electronic Frontier Foundation, where Doctorow is a special advisor
+- [[eff]] — Electronic Frontier Foundation, where Doctorow is a special advisor
 
 ## Sources
 

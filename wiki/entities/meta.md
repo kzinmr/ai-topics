@@ -51,7 +51,7 @@ Meta's strategy to enable AI agents to handle product discovery and purchasing o
 
 ### Superintelligence Labs
 
-Led by [[entities/alexandr-wang]] (former Scale AI CEO, hired 2025). Focus on building AGI infrastructure. Reported $115B-$135B capital expenditure for 2026, primarily for AI compute. VR/Reality Labs investment reportedly being redirected toward AI glasses and superintelligence infrastructure.
+Led by [[alexandr-wang]] (former Scale AI CEO, hired 2025). Focus on building AGI infrastructure. Reported $115B-$135B capital expenditure for 2026, primarily for AI compute. VR/Reality Labs investment reportedly being redirected toward AI glasses and superintelligence infrastructure.
 
 ### Instagram AI Search
 
@@ -75,8 +75,8 @@ See also: [[concepts/open-source-vs-closed]]
 
 ## Key People
 
-- **[[entities/mark-zuckerberg]]** — CEO, Personal Superintelligence vision
-- **[[entities/alexandr-wang]]** — Superintelligence Labs head
+- **[[mark-zuckerberg]]** — CEO, Personal Superintelligence vision
+- **[[alexandr-wang]]** — Superintelligence Labs head
 - **Andrew Bosworth** — CTO, Reality Labs/AR/VR
 - **Yann LeCun** — Chief AI Scientist, open-source advocate (increasingly sidelined per community reports)
 

@@ -130,7 +130,7 @@ Sutton emphasizes mathematical foundations and empirical validation over theoret
 - [[concepts/reinforcement-learning]] — Sutton's foundational field
 - [[concepts/bitter-lesson]] — Sutton's most influential essay
 - [[concepts/agi]] — Sutton's long-term research goal
-- [[entities/keen-technologies]] — Sutton's current industry affiliation
+- [[keen-technologies]] — Sutton's current industry affiliation
 
 ## Sources
 

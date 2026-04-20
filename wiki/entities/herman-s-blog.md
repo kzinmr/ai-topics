@@ -115,7 +115,7 @@ This post positioned Herman as an early observer of the intersection between AI 
 - [[concepts/solo-founder-philosophy]] — Herman's approach to building and growing products
 - [[concepts/garden-vs-stream]] — The "my product is my garden" philosophy
 - [[concepts/frustration-loop]] — Herman's anti-spam technique
-- [[entities/bear-blog]] — Bear Blog platform
+- [[bear-blog]] — Bear Blog platform
 
 ## Sources
 

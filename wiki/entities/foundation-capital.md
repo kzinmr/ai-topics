@@ -5,8 +5,8 @@ tags: [company, vc, foundation-capital, context-graph, investor]
 status: complete
 related:
   - "[[concepts/context-graph]]"  # Their core thesis
-  - "[[entities/jaya-gupta]]"     # Partner who co-authored the article
-  - "[[entities/playerzero]]"     # Path 3 startup in their portfolio
+  - "[[jaya-gupta]]"     # Partner who co-authored the article
+  - "[[playerzero]]"     # Path 3 startup in their portfolio
 status: complete
 created: 2026-04-20
 ---
@@ -68,6 +68,6 @@ Key criticisms:
 ## Related
 
 - [[concepts/context-graph]] — The main concept page
-- [[entities/jaya-gupta]] — Partner who co-authored the article
-- [[entities/playerzero]] — Path 3 startup (context graph as engineering world model)
-- [[entities/arize]] — Observability layer mentioned in the article
+- [[jaya-gupta]] — Partner who co-authored the article
+- [[playerzero]] — Path 3 startup (context graph as engineering world model)
+- [[arize]] — Observability layer mentioned in the article

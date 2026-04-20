@@ -117,7 +117,7 @@ end
 - [[openai-symphony]] — Symphonyの詳細（Ryan Lopopolo作）
 - [[agent-team-swarm]] — マルチエージェントチームパターン
 - [[harness-engineering]] — エージェント実行環境設計
-- [[entities/ryan-lopopolo]] — Symphonyの作者、Harness Engineering提唱者
+- [[ryan-lopopolo]] — Symphonyの作者、Harness Engineering提唱者
 
 ## 主要引用
 

@@ -99,8 +99,8 @@ Stapelberg has been running a blog since 2005 — over 20 years of documented te
 - [[concepts/coding-agents]] — AI-assisted development workflows
 - [[concepts/i3-wm]] — Tiling window manager created by Stapelberg
 - [[concepts/wayland]] — X11 successor, now mature enough for Stapelberg's adoption
-- [[entities/simon-tatham]] — Another long-running free-software author and blogger
-- [[entities/xeiaso-net]] — Shared interest in Nix/NixOS and practical infrastructure
+- [[simon-tatham]] — Another long-running free-software author and blogger
+- [[xeiaso-net]] — Shared interest in Nix/NixOS and practical infrastructure
 
 ## Sources
 

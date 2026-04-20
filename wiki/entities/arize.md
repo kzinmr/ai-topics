@@ -6,7 +6,7 @@ status: skeleton
 related:
   - "[[concepts/context-graph]]"  # Observability is the top plane in the 5-plane architecture
   - "[[concepts/ai-evals]]"      # Core technology: evaluating agent decisions
-  - "[[entities/playerzero]]"    # Both in agent infrastructure space
+  - "[[playerzero]]"    # Both in agent infrastructure space
 status: skeleton
 created: 2026-04-20
 ---

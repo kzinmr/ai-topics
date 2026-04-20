@@ -4,7 +4,7 @@ created: 2026-04-16
 updated: 2026-04-16
 tags: [concept, ai-agents, sandboxing, javascript, bun, deno, nodejs, runtime, v8, javascriptcore, process-isolation]
 aliases: ["js-runtime", "javascript-runtime-comparison", "bun-deno-node", "agent-js-runtime"]
-related: [[sandbox/infrastructure]], [[sandbox/in-process]], [[harness-engineering]], [[entities/jarred-sumner]], [[entities/ryan-dahl]]
+related: [[sandbox/infrastructure]], [[sandbox/in-process]], [[harness-engineering]], [[jarred-sumner]], [[ryan-dahl]]
 depth: L2
 status: complete
 ---
@@ -198,8 +198,8 @@ Deno's philosophy — *"secure by default, TypeScript-first, single executable"*
 - [[sandbox/infrastructure]] — Container, microVM, and edge-level isolation
 - [[sandbox/in-process]] — Monty, capabilities-based security (Python)
 - [[harness-engineering]] — Runtime as a harness environment
-- [[entities/ryan-dahl]] — Creator of Node.js and Deno
-- [[entities/jarred-sumner]] — Creator of Bun, joined Anthropic
+- [[ryan-dahl]] — Creator of Node.js and Deno
+- [[jarred-sumner]] — Creator of Bun, joined Anthropic
 
 ## Sources
 

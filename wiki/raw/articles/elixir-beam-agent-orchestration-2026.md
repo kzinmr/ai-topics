@@ -140,7 +140,7 @@ Harness Engineering ([[harness-engineering]]) builds agent execution environment
 
 ## See Also
 
-- [[entities/ryan-lopopolo]] — Symphony author, Harness Engineering proponent
+- [[ryan-lopopolo]] — Symphony author, Harness Engineering proponent
 - [[concepts/openai-symphony]] — Symphony project details
 - [[concepts/harness-engineering]] — Agent execution environment design
 - [[concepts/agent-team-swarm]] — Multi-agent team patterns

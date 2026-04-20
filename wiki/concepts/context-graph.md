@@ -6,8 +6,8 @@ related:
   - "[[concepts/harness-engineering]]"  # Harness Engineering is the execution layer that captures decision traces
   - "[[concepts/ai-evals]]"            # Evals are part of the observability plane
   - "[[concepts/multi-agent-consensus-patterns]]"  # Multi-agent systems benefit from shared context graphs
-  - "[[entities/openai]]"              # OpenAI Agents SDK as orchestration layer
-  - "[[entities/simon-willison]]"      # Simon Willison on AI agent architecture
+  - "[[openai]]"              # OpenAI Agents SDK as orchestration layer
+  - "[[simon-willison]]"      # Simon Willison on AI agent architecture
   - "[[concepts/model-context-protocol-mcp]]"  # MCP as cross-system context protocol
 status: complete
 created: 2026-04-20
@@ -187,7 +187,7 @@ As decision traces accumulate, enterprises need to monitor, debug, and evaluate 
 - [[concepts/ai-evals]] — Evals measure decision quality; context graphs provide the training data for better future decisions
 - [[concepts/model-context-protocol-mcp]] — MCP enables cross-system context retrieval, a technical prerequisite for context graphs
 - [[concepts/multi-agent-consensus-patterns]] — Multi-agent systems need shared context graphs to maintain decision consistency
-- [[entities/simon-willison]] — Simon Willison has written extensively on AI agent architecture and tools-for-thinking
+- [[simon-willison]] — Simon Willison has written extensively on AI agent architecture and tools-for-thinking
 
 ## Source
 
