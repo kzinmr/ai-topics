@@ -110,7 +110,7 @@ Exploreエージェントは**読取専用**で設計されており、ファイ
 
 ## 関連概念
 
-- [[../agentic-engineering]] — 上位概念
+- [[agentic-engineering]] — 上位概念
 - [[subagents]] — エージェントの階層化
 - [[using-git-with-agents]] — バージョン管理統合
 - [[context-window-management]] — Task Toolはコンテキストを分割する

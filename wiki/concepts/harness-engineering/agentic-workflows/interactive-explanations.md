@@ -73,7 +73,7 @@ Inspired by that, build animated-word-cloud.html - a page that accepts pasted te
 - [[linear-walkthroughs]] — 構造化コード解説（静的）
 - [[cognitive-debt]] — 解消対象
 - [[showboat]] — Walkthrough生成ツール
-- [[../agentic-engineering]] — 上位概念
+- [[agentic-engineering]] — 上位概念
 
 ## 参照
 - [[simon-willison]] — パターン創始者

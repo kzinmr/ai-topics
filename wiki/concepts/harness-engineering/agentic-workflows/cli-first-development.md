@@ -122,7 +122,7 @@ CLI-firstのアプローチでは、UIは以下の理由で最後に触る：
 
 - [[agent-first-design]] — エージェント向けコード設計
 - [[context-window-management]] — CLIはコンテキスト消費が少ない
-- [[../agentic-engineering]] — 上位概念
+- [[agentic-engineering]] — 上位概念
 
 ## 参照
 
