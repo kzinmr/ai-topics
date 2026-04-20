@@ -12,7 +12,7 @@ Local LLM inference on personal hardware. This page is the index for the local-l
 ## Sub-pages
 
 ### Inference Engines
-- [[local-llm/llama-cpp]] — llama.cpp inference engine (CPU, Apple Silicon, CUDA)
+- [[local-llm]] — llama.cpp inference engine (CPU, Apple Silicon, CUDA)
 - [[local-llm/ollama]] — Ollama local LLM runner (model library, REST API)
 - [[inference/vllm]] — vLLM high-throughput serving (PagedAttention)
 - [[inference/sglang]] — SGLang serving framework (RadixAttention, structured generation)

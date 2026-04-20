@@ -123,7 +123,7 @@ agent = SandboxAgent(
 ## Related Concepts
 
 - [[harness-engineering]] — Ryan Lopopolo / OpenAI Symphony orchestration philosophy
-- [[sandbox/_index]] — AI agent sandbox isolation technologies
+- [[sandbox]] — AI agent sandbox isolation technologies
 - [[sandbox/infrastructure]] — Container, microVM, gVisor-level isolation
 - [[agent-skills]] — SKILL.md bundles
 - [[harness-engineering/agentic-workflows/how-agents-work]] — Coding agent architecture

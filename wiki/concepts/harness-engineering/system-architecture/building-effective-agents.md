@@ -88,6 +88,6 @@ command → plan → tool call → environment feedback → iterate → result
 
 ## 関連概念
 
-- [[_index]] — 上位インデックス
+- [[harness-engineering]] — 上位インデックス
 - [[context-engineering]] — コンテキスト管理
 - [[evals-for-ai-agents]] — エージェント評価

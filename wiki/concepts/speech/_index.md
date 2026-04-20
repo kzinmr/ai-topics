@@ -44,7 +44,7 @@ This distinction reflects the fundamentally different architectures and use case
 ## Related Concepts
 - [[multimodal/_index]] — Vision-language multimodal systems
 - [[inference/_index]] — Inference optimization for audio models
-- [[local-llm/_index]] — Running speech models locally
+- [[local-llm]] — Running speech models locally
 
 ## Sources
 - OpenAI Whisper paper (2022) — "Robust Speech Recognition via Large-Scale Weak Supervision"

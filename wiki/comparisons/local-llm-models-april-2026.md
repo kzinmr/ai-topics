@@ -162,7 +162,7 @@ Top-tier LLMs approaching Claude Sonnet in capabilities:
 ## Related wikilinks
 
 - [[local-llm/gguf]] — GGUF quantization format
-- [[local-llm/llama-cpp]] — llama.cpp inference engine
+- [[inference/llama-cpp]] — llama.cpp inference engine
 - [[local-llm/model-quantization]] — Quantization techniques
 - [[local-llm/model-distillation]] — Knowledge distillation
 - [[openai]] — OpenAI (gpt-oss creator)

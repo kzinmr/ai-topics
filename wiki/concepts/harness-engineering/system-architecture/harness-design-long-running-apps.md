@@ -177,7 +177,7 @@ Generator: 実装を提案
 
 ## 関連概念
 
-- [[_index]] — 上位インデックス
+- [[harness-engineering]] — 上位インデックス
 - [[building-effective-agents]] — エージェント構築の基本原理
 - [[multi-agent-research-system]] — マルチエージェントシステム
 - [[context-engineering]] — コンテキストエンジニアリング

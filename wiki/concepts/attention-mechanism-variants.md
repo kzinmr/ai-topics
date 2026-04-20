@@ -106,7 +106,7 @@ These attention variants directly impact [[context-engineering]] because:
 - [[token-economics]] — Cost per million tokens optimization
 - [[context-engineering]] — Managing context windows efficiently
 - [[context-window-management]] — Context window management patterns
-- [[local-llm/_index]] — Local LLM inference considerations
+- [[local-llm]] — Local LLM inference considerations
 - [[reasoning-models]] — Reasoning models require long context windows
 
 ## Sources

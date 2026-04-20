@@ -174,7 +174,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[code-mode]] — CodeMode: LLM writes code instead of sequential tool calls
 - [[openai-agents-sdk]] — OpenAI Agents SDK v0.14.0: Harness/Compute separation, sandbox execution, multi-provider support
 - [[monty-sandbox]] — Monty: minimal secure Python interpreter in Rust for AI agents
-- [[sandbox/_index]] — Sandbox: AI Agent Code Execution Isolation (gVisor, Firecracker, MicroVMs, Monty, WASM)
+- [[sandbox]] — Sandbox: AI Agent Code Execution Isolation (gVisor, Firecracker, MicroVMs, Monty, WASM)
 - [[sandbox/js-runtime]] — JavaScript Runtimes for AI Agents (E2B, WebContainer, Bun, Deno, QuickJS)
 - [[pydantic-ai]] — Pydantic AI: type-safe Python agent framework
 
@@ -254,11 +254,11 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[llm-training-coherence-evolution]] — LLM Training Coherence Evolution (Giles Thomas / gpjt, Karpathy RNN comparison)
 - [[gpt-models]] — GPT Model Series (GPT-1 to GPT-5.4, RLHF, o-series reasoning)
 - [[local-llm]] — Local LLM Inference (llama.cpp, Ollama, GGUF)
-   |- [[local-llm/_index]] — Local LLM Ecosystem Overview
+|- [[local-llm]] — Local LLM Ecosystem Overview
    |- [[local-llm/gguf]] — GGUF Quantization Format
-   |- [[local-llm/llama-cpp]] — llama.cpp Inference Engine
+   |- [[inference/llama-cpp]] — llama.cpp Inference Engine
    |- [[local-llm/ollama]] — Ollama Local LLM Runner (model library, REST API)
-   |- [[local-llm/vllm]] — vLLM High-Throughput Serving
+   |- [[inference/vllm]] — vLLM High-Throughput Serving
    |- [[local-llm/inference-hardware]] — Consumer GPU, Apple Silicon, Edge Devices
    |- [[local-llm/server-dgx-spark]] — DGX Spark + NemoClaw Setup Guide
    |- [[local-llm/model-quantization]] — Model Quantization (GPTQ, AWQ, EXL2, FP8)

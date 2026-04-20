@@ -30,12 +30,12 @@ The concept is strongly associated with Monty (minimal secure Python interpreter
 
 ## Relationship to Agent Security
 
-- [[sandbox/_index]] — Sandboxing for AI agents
+- [[sandbox]] — Sandboxing for AI agents
 - [[agent-security-patterns]] — Agent security patterns
 - [[agent-sandboxing]] — Agent isolation techniques
 
 ## See Also
 
 - [[monty-sandbox]] — Monty secure Python interpreter
-- [[sandbox/_index]] — Sandbox concepts
+- [[sandbox]] — Sandbox concepts
 - [[agent-security-patterns]] — Security patterns

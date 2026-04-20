@@ -40,7 +40,7 @@ Contrastive learning aligns representations across modalities in shared embeddin
 ## Related Concepts
 - [[fine-tuning/_index]] — Fine-tuning multimodal models
 - [[inference/_index]] — Inference optimization for multimodal
-- [[local-llm/_index]] — Running multimodal models locally
+- [[local-llm]] — Running multimodal models locally
 
 ## Sources
 - OpenAI CLIP paper (2021)

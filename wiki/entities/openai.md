@@ -62,7 +62,7 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 ## Related Concepts
 - [[openai-agents-sdk]] — OpenAI's agent development framework
 - [[harness-engineering]] — Ryan Lopopolo / Symphony orchestration philosophy
-- [[sandbox/_index]] — AI agent sandbox isolation technologies
+- [[sandbox]] — AI agent sandbox isolation technologies
 
 ## Sources
 - [[raw/articles/openai-agents-sdk-next-evolution-2026-04]]

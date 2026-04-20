@@ -4,7 +4,7 @@ type: concept
 tags: [code-execution, agents, latency, monty, pydantic-ai, tool-calling, sandbox]
 related:
   - [[sandbox/in-process]]
-  - [[sandbox/_index]]
+  - [[sandbox]]
   - [[pydantic-ai]]
   - [[harness-engineering]]
   - [[samuel-colvin]]

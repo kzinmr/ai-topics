@@ -5,7 +5,7 @@ updated: 2026-04-15
 status: skeleton
 tags: [local-llm, hardware, gpu, consumer, edge]
 aliases: [inference-hardware, consumer-gpu-llm]
-related: [[local-llm/_index]], [[compute-scaling-bottlenecks]], [[local-llm/server-dgx-spark]]
+related: [[local-llm]], [[compute-scaling-bottlenecks]], [[local-llm/server-dgx-spark]]
 sources:
   - url: "https://github.com/ggerganov/llama.cpp"
     title: "llama.cpp — GPU Support"

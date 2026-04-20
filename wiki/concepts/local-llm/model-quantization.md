@@ -12,10 +12,10 @@ tags:
   - gptq
   - inference-optimization
 related:
-  - "[[local-llm/gguf]]"
-  - "[[local-llm/llama-cpp]]"
-  - "[[local-llm/vllm]]"
-  - "[[georgi-gerganov]]"
+- "[[local-llm/gguf]]"
+- "[[inference/llama-cpp]]"
+- "[[inference/vllm]]"
+- "[[georgi-gerganov]]"
   - "[[nvidia-dgx-spark]]"
   - "[[llm-inference]]"
 ---
@@ -145,8 +145,8 @@ The **Unsloth** and **llama.cpp** ecosystems have made step 3 nearly automated �
 
 ## Related wikilinks
 
-- [[local-llm/gguf]] — GGUF format deep-dive
-- [[local-llm/llama-cpp]] — llama.cpp inference engine
+- [[local-llm]] — GGUF format deep-dive
+- [[local-llm]] — llama.cpp inference engine
 - [[georgi-gerganov]] — GGUF/K-Quants creator
 - [[nvidia-dgx-spark]] — Hardware supporting NVFP4/FP4
 - [[llm-inference]] — Inference optimization techniques
