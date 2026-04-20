@@ -1,136 +1,195 @@
 # Newsletter Digest - 2026-04-20
-**Subject:** 🎙️ This week on How I AI: How Intercom 2x’d their engineering velocity with Claude Code
-**Processed:** 2026-04-20T15:47:38.904353+00:00
-**Articles scraped:** 11
+**Subject:** 🔬 Training Transformers to solve 95% failure rate of Cancer Trials — Ron Alfa & Daniel Bear, Noetik
+**Processed:** 2026-04-20T16:18:39.725845+00:00
+**Articles scraped:** 14
 
 ---
 
-## 1. 🎙️ This week on How I AI: How Intercom 2x’d their engineering velocity with Claude Code
+## 1. 🔬 Training Transformers to solve 95% failure rate of Cancer Trials - Ron Alfa & Daniel Bear, Noetik
 
-- **URL:** https://substack.com/app-link/post?publication_id=10845&post_id=194253396&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQyNTMzOTYsImlhdCI6MTc3NjcwMDAzNiwiZXhwIjoxNzc5MjkyMDM2LCJpc3MiOiJwdWItMTA4NDUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0._kdYoIzMtGRMAROy6hvfK0zVumv82HsJM1J55bVO5OU
-- **Length:** 3896 chars
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194810752&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4MTA3NTIsImlhdCI6MTc3NjcwMTg5MiwiZXhwIjoxNzc5MjkzODkyLCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.pjkOgpmYWYtkRyGRchgT2a8paSBlYJ4cjdn1u455rw8&utm_source=substack&utm_medium=email&utm_content=play_card#play
+- **Length:** 6012 chars
 
-> Brought to you by:
-> Brian Scanlan
-> , Senior Principal Engineer at Intercom, breaks down how the company doubled engineering throughput in just nine months by going all-in on Claude Code. He shares how custom skills, deep telemetry, and a culture of permission turned AI into a true force multiplier.
-> Treat your engineering org like a product, and instrument everything.
-> Intercom tracks skill invocations in Honeycomb, stores anonymized Claude Code sessions in S3, and built custom dashboards that show 
+> Today, we explain this piece of “clickbait” from our guest!
+> true, but not how you think!
+> TL;DR: 95% of cancer treatments fail to
+> pass clinical trials
+> , but it may be a matching problem — if we better understood what patients have which tumors which will respond to which treatments, success rates improve dramatically and millions of lives can be saved — with the treatments we ALREADY have.
+> See
+> our full episode
+> dropping today:
+> Tolstoy famously wrote, ‘All healthy cells are alike; each cancer cell 
 
-## 2. 🎙️ This week on How I AI: How Intercom 2x’d their engineering velocity with Claude Code
+## 2. 🔬 Training Transformers to solve 95% failure rate of Cancer Trials - Ron Alfa & Daniel Bear, Noetik
 
-- **URL:** https://substack.com/app-link/post?publication_id=10845&post_id=194253396&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQyNTMzOTYsImlhdCI6MTc3NjcwMDAzNiwiZXhwIjoxNzc5MjkyMDM2LCJpc3MiOiJwdWItMTA4NDUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0._kdYoIzMtGRMAROy6hvfK0zVumv82HsJM1J55bVO5OU
-- **Length:** 3896 chars
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194810752&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4MTA3NTIsImlhdCI6MTc3NjcwMTg5MiwiZXhwIjoxNzc5MjkzODkyLCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.pjkOgpmYWYtkRyGRchgT2a8paSBlYJ4cjdn1u455rw8&utm_source=substack&utm_medium=email&utm_content=play_card_show_logo#play
+- **Length:** 6012 chars
 
-> Brought to you by:
-> Brian Scanlan
-> , Senior Principal Engineer at Intercom, breaks down how the company doubled engineering throughput in just nine months by going all-in on Claude Code. He shares how custom skills, deep telemetry, and a culture of permission turned AI into a true force multiplier.
-> Treat your engineering org like a product, and instrument everything.
-> Intercom tracks skill invocations in Honeycomb, stores anonymized Claude Code sessions in S3, and built custom dashboards that show 
+> Today, we explain this piece of “clickbait” from our guest!
+> true, but not how you think!
+> TL;DR: 95% of cancer treatments fail to
+> pass clinical trials
+> , but it may be a matching problem — if we better understood what patients have which tumors which will respond to which treatments, success rates improve dramatically and millions of lives can be saved — with the treatments we ALREADY have.
+> See
+> our full episode
+> dropping today:
+> Tolstoy famously wrote, ‘All healthy cells are alike; each cancer cell 
 
-## 3. 🎙️ This week on How I AI: How Intercom 2x’d their engineering velocity with Claude Code
+## 3. 🔬 Training Transformers to solve 95% failure rate of Cancer Trials - Ron Alfa & Daniel Bear, Noetik
 
-- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvbGVubnkvcC90aGlzLXdlZWstb24taG93LWktYWktaG93LWludGVyY29tP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtcmVzdGFjay1jb21tZW50JmFjdGlvbj1yZXN0YWNrLWNvbW1lbnQmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam94T1RReU5UTXpPVFlzSW1saGRDSTZNVGMzTmpjd01EQXpOaXdpWlhod0lqb3hOemM1TWpreU1ETTJMQ0pwYzNNaU9pSndkV0l0TVRBNE5EVWlMQ0p6ZFdJaU9pSndiM04wTFhKbFlXTjBhVzl1SW4wLl9rZFlvSXpNdEdSTUFST3k2aHZmSzB6VnVtdjgySHNKTTFKNTViVk81T1UiLCJwIjoxOTQyNTMzOTYsInMiOjEwODQ1LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3NzY3MDAwMzYsImV4cCI6MjA5MjI3NjAzNiwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.ODYg2R5I1FLDnzN036sgczDZmGg27mRZA2D8YcZmNSk?&utm_source=substack&utm_medium=email
-- **Length:** 3896 chars
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194810752&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4MTA3NTIsImlhdCI6MTc3NjcwMTg5MiwiZXhwIjoxNzc5MjkzODkyLCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.pjkOgpmYWYtkRyGRchgT2a8paSBlYJ4cjdn1u455rw8&utm_source=substack&utm_medium=email&utm_content=play_card_show_title#play
+- **Length:** 6012 chars
 
-> Brought to you by:
-> Brian Scanlan
-> , Senior Principal Engineer at Intercom, breaks down how the company doubled engineering throughput in just nine months by going all-in on Claude Code. He shares how custom skills, deep telemetry, and a culture of permission turned AI into a true force multiplier.
-> Treat your engineering org like a product, and instrument everything.
-> Intercom tracks skill invocations in Honeycomb, stores anonymized Claude Code sessions in S3, and built custom dashboards that show 
+> Today, we explain this piece of “clickbait” from our guest!
+> true, but not how you think!
+> TL;DR: 95% of cancer treatments fail to
+> pass clinical trials
+> , but it may be a matching problem — if we better understood what patients have which tumors which will respond to which treatments, success rates improve dramatically and millions of lives can be saved — with the treatments we ALREADY have.
+> See
+> our full episode
+> dropping today:
+> Tolstoy famously wrote, ‘All healthy cells are alike; each cancer cell 
 
-## 4. Introducing the Substack app
+## 4. 🔬 Training Transformers to solve 95% failure rate of Cancer Trials - Ron Alfa & Daniel Bear, Noetik
 
-- **URL:** https://open.substack.com/pub/lenny/p/this-week-on-how-i-ai-how-intercom?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194810752&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4MTA3NTIsImlhdCI6MTc3NjcwMTg5MiwiZXhwIjoxNzc5MjkzODkyLCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.pjkOgpmYWYtkRyGRchgT2a8paSBlYJ4cjdn1u455rw8&utm_source=substack&utm_medium=email&utm_content=play_card_post_title#play
+- **Length:** 6012 chars
+
+> Today, we explain this piece of “clickbait” from our guest!
+> true, but not how you think!
+> TL;DR: 95% of cancer treatments fail to
+> pass clinical trials
+> , but it may be a matching problem — if we better understood what patients have which tumors which will respond to which treatments, success rates improve dramatically and millions of lives can be saved — with the treatments we ALREADY have.
+> See
+> our full episode
+> dropping today:
+> Tolstoy famously wrote, ‘All healthy cells are alike; each cancer cell 
+
+## 5. 🔬 Training Transformers to solve 95% failure rate of Cancer Trials - Ron Alfa & Daniel Bear, Noetik
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194810752&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4MTA3NTIsImlhdCI6MTc3NjcwMTg5MiwiZXhwIjoxNzc5MjkzODkyLCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.pjkOgpmYWYtkRyGRchgT2a8paSBlYJ4cjdn1u455rw8&utm_source=substack&utm_medium=email&utm_content=play_card_duration#play
+- **Length:** 6012 chars
+
+> Today, we explain this piece of “clickbait” from our guest!
+> true, but not how you think!
+> TL;DR: 95% of cancer treatments fail to
+> pass clinical trials
+> , but it may be a matching problem — if we better understood what patients have which tumors which will respond to which treatments, success rates improve dramatically and millions of lives can be saved — with the treatments we ALREADY have.
+> See
+> our full episode
+> dropping today:
+> Tolstoy famously wrote, ‘All healthy cells are alike; each cancer cell 
+
+## 6. 🔬 Training Transformers to solve 95% failure rate of Cancer Trials - Ron Alfa & Daniel Bear, Noetik
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194810752&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4MTA3NTIsImlhdCI6MTc3NjcwMTg5MiwiZXhwIjoxNzc5MjkzODkyLCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.pjkOgpmYWYtkRyGRchgT2a8paSBlYJ4cjdn1u455rw8&utm_source=substack&utm_medium=email&utm_content=play_card_progress_bar#play
+- **Length:** 6012 chars
+
+> Today, we explain this piece of “clickbait” from our guest!
+> true, but not how you think!
+> TL;DR: 95% of cancer treatments fail to
+> pass clinical trials
+> , but it may be a matching problem — if we better understood what patients have which tumors which will respond to which treatments, success rates improve dramatically and millions of lives can be saved — with the treatments we ALREADY have.
+> See
+> our full episode
+> dropping today:
+> Tolstoy famously wrote, ‘All healthy cells are alike; each cancer cell 
+
+## 7. 🔬 Training Transformers to solve 95% failure rate of Cancer Trials - Ron Alfa & Daniel Bear, Noetik
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194810752&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4MTA3NTIsImlhdCI6MTc3NjcwMTg5MiwiZXhwIjoxNzc5MjkzODkyLCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.pjkOgpmYWYtkRyGRchgT2a8paSBlYJ4cjdn1u455rw8&utm_source=substack&utm_medium=email&utm_content=play_card_play_button#play
+- **Length:** 6012 chars
+
+> Today, we explain this piece of “clickbait” from our guest!
+> true, but not how you think!
+> TL;DR: 95% of cancer treatments fail to
+> pass clinical trials
+> , but it may be a matching problem — if we better understood what patients have which tumors which will respond to which treatments, success rates improve dramatically and millions of lives can be saved — with the treatments we ALREADY have.
+> See
+> our full episode
+> dropping today:
+> Tolstoy famously wrote, ‘All healthy cells are alike; each cancer cell 
+
+## 8. 🔬 Training Transformers to solve 95% failure rate of Cancer Trials - Ron Alfa & Daniel Bear, Noetik
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194810752&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4MTA3NTIsImlhdCI6MTc3NjcwMTg5MiwiZXhwIjoxNzc5MjkzODkyLCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.pjkOgpmYWYtkRyGRchgT2a8paSBlYJ4cjdn1u455rw8&utm_content=listen_now_button
+- **Length:** 6012 chars
+
+> Today, we explain this piece of “clickbait” from our guest!
+> true, but not how you think!
+> TL;DR: 95% of cancer treatments fail to
+> pass clinical trials
+> , but it may be a matching problem — if we better understood what patients have which tumors which will respond to which treatments, success rates improve dramatically and millions of lives can be saved — with the treatments we ALREADY have.
+> See
+> our full episode
+> dropping today:
+> Tolstoy famously wrote, ‘All healthy cells are alike; each cancer cell 
+
+## 9. 🔬 Training Transformers to solve 95% failure rate of Cancer Trials - Ron Alfa & Daniel Bear, Noetik
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194810752&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4MTA3NTIsImlhdCI6MTc3NjcwMTg5MiwiZXhwIjoxNzc5MjkzODkyLCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.pjkOgpmYWYtkRyGRchgT2a8paSBlYJ4cjdn1u455rw8
+- **Length:** 6012 chars
+
+> Today, we explain this piece of “clickbait” from our guest!
+> true, but not how you think!
+> TL;DR: 95% of cancer treatments fail to
+> pass clinical trials
+> , but it may be a matching problem — if we better understood what patients have which tumors which will respond to which treatments, success rates improve dramatically and millions of lives can be saved — with the treatments we ALREADY have.
+> See
+> our full episode
+> dropping today:
+> Tolstoy famously wrote, ‘All healthy cells are alike; each cancer cell 
+
+## 10. Ron Alfa & Daniel Bear, Noetik
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194810752&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4MTA3NTIsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzc2NzAxODkyLCJleHAiOjE3NzkyOTM4OTIsImlzcyI6InB1Yi0xMDg0MDg5Iiwic3ViIjoicmVhY3Rpb24ifQ.6GcmA275MDoFbQIVr3lwgoqsAulsTuR8qVErD7H3EXY&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+- **Length:** 159 chars
+
+> 95% of cancer treatments fail to pass clinical trials, but it may be a matching problem — that Noetik is solving with autoregressive transformers like TARIO-2!
+
+## 11. Ron Alfa & Daniel Bear, Noetik
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194810752&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4MTA3NTIsImlhdCI6MTc3NjcwMTg5MiwiZXhwIjoxNzc5MjkzODkyLCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.pjkOgpmYWYtkRyGRchgT2a8paSBlYJ4cjdn1u455rw8&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+- **Length:** 159 chars
+
+> 95% of cancer treatments fail to pass clinical trials, but it may be a matching problem — that Noetik is solving with autoregressive transformers like TARIO-2!
+
+## 12. 🔬 Training Transformers to solve 95% failure rate of Cancer Trials - Ron Alfa & Daniel Bear, Noetik
+
+- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194810752&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4MTA3NTIsImlhdCI6MTc3NjcwMTg5MiwiZXhwIjoxNzc5MjkzODkyLCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.pjkOgpmYWYtkRyGRchgT2a8paSBlYJ4cjdn1u455rw8
+- **Length:** 6012 chars
+
+> Today, we explain this piece of “clickbait” from our guest!
+> true, but not how you think!
+> TL;DR: 95% of cancer treatments fail to
+> pass clinical trials
+> , but it may be a matching problem — if we better understood what patients have which tumors which will respond to which treatments, success rates improve dramatically and millions of lives can be saved — with the treatments we ALREADY have.
+> See
+> our full episode
+> dropping today:
+> Tolstoy famously wrote, ‘All healthy cells are alike; each cancer cell 
+
+## 13. 🔬 Training Transformers to solve 95% failure rate of Cancer Trials - Ron Alfa & Daniel Bear, Noetik
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvc3d5eC9wL25vZXRpaz91dG1fc291cmNlPXN1YnN0YWNrJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXJlc3RhY2stY29tbWVudCZhY3Rpb249cmVzdGFjay1jb21tZW50JnI9MmZseDYmdG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveE9UUTRNVEEzTlRJc0ltbGhkQ0k2TVRjM05qY3dNVGc1TWl3aVpYaHdJam94TnpjNU1qa3pPRGt5TENKcGMzTWlPaUp3ZFdJdE1UQTROREE0T1NJc0luTjFZaUk2SW5CdmMzUXRjbVZoWTNScGIyNGlmUS5wamtPZ3BtWVdZdGtSeUdSY2hnVDJhOHBhU0JsWUo0Y2pkbjF1NDU1cnc4IiwicCI6MTk0ODEwNzUyLCJzIjoxMDg0MDg5LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3NzY3MDE4OTIsImV4cCI6MjA5MjI3Nzg5MiwiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.f8m1mgCvvPyVcVW-a3IPNYPVNjqIo6U3oWicIaLfxrc?&utm_source=substack&utm_medium=email
+- **Length:** 6012 chars
+
+> Today, we explain this piece of “clickbait” from our guest!
+> true, but not how you think!
+> TL;DR: 95% of cancer treatments fail to
+> pass clinical trials
+> , but it may be a matching problem — if we better understood what patients have which tumors which will respond to which treatments, success rates improve dramatically and millions of lives can be saved — with the treatments we ALREADY have.
+> See
+> our full episode
+> dropping today:
+> Tolstoy famously wrote, ‘All healthy cells are alike; each cancer cell 
+
+## 14. Introducing the Substack app
+
+- **URL:** https://open.substack.com/pub/swyx/p/noetik?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
 - **Length:** 115 chars
 
 > World-class video, podcasts, and writing
 > The best stories, ideas, and culture right at your fingertips.
 > Get the app
-
-## 5. - YouTube
-
-- **URL:** https://substack.com/redirect/2233e087-94d2-489c-a728-f7cc6339e4a2?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 146 chars
-
-> About
-> Press
-> Copyright
-> Contact us
-> Creators
-> Advertise
-> Developers
-> Terms
-> Privacy
-> Policy & Safety
-> How YouTube works
-> Test new features
-> NFL Sunday Ticket
-
-## 6. - YouTube
-
-- **URL:** https://substack.com/redirect/a856e030-631e-4fdb-8d3a-25951416f3e2?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 146 chars
-
-> About
-> Press
-> Copyright
-> Contact us
-> Creators
-> Advertise
-> Developers
-> Terms
-> Privacy
-> Policy & Safety
-> How YouTube works
-> Test new features
-> NFL Sunday Ticket
-
-## 7. How Intercom 2x’d their engine…
-
-- **URL:** https://substack.com/redirect/83a3be53-7948-4c95-a83b-000f2865fe54?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 3847 chars
-
-> Brian Scanlan
-> is a senior principal engineer at Intercom, where he’s led the company’s transformation to AI-first engineering. In just nine months, Intercom doubled their R&D throughput while maintaining code quality, with 100% of engineers—plus designers, PMs, and TPMs—now shipping code via Claude Code.
-> What you’ll learn:
-> How Intercom doubled their merged PRs per R&D employee in just nine months using Claude Code
-> The telemetry infrastructure they built to measure AI adoption and quality across 
-
-## 8. 🎙️ This week on How I AI: How Intercom 2x’d their engineering velocity with Claude Code
-
-- **URL:** https://substack.com/redirect/99c4045b-efc3-4dd8-a1b0-5654ac648bfb?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 3896 chars
-
-> Brought to you by:
-> Brian Scanlan
-> , Senior Principal Engineer at Intercom, breaks down how the company doubled engineering throughput in just nine months by going all-in on Claude Code. He shares how custom skills, deep telemetry, and a culture of permission turned AI into a true force multiplier.
-> Treat your engineering org like a product, and instrument everything.
-> Intercom tracks skill invocations in Honeycomb, stores anonymized Claude Code sessions in S3, and built custom dashboards that show 
-
-## 9. Enterprise Integration Platform & Automation Software
-
-- **URL:** https://substack.com/redirect/255b19ae-47bd-4b8d-975c-8f908dfa2375?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 242 chars
-
-> Run workflows, event-triggered automations, and autonomous agents without switching tools or rebuilding connections. With 1,000+ prebuilt connectors and Model Context Protocol (MCP) Server, every external agent plugs straight into your stack.
-
-## 10. ChatPRD - AI Workflows & Productivity Tips
-
-- **URL:** https://substack.com/redirect/55f480bc-0a1d-46a3-a692-ef1b228f61bb?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 213 chars
-
-> Start shipping
-> better products.
-> Join 100,000+ product managers who use ChatPRD to write better docs, align teams faster, and build products users love.
-> Free to start
-> No credit card
-> SOC 2 certified
-> Enterprise ready
-
-## 11. Brian Scanlan - Intercom
-
-- **URL:** https://substack.com/redirect/3199af7c-51c7-44e8-9453-7329b4d474a8?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 1410 chars
-
-> In order to protect against various load balancing failures, the host selection algorithm on the load balancer can be modified to take into account data available about the state of the entire service and each host server in the cluster. The state can include a number of metrics, including the sampled response time taken by the selected host service. The load balancer can use the state information in order to detect anomalies among the host services. For example, the load balancer can determine…
 
