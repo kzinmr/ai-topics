@@ -1,3 +1,28 @@
+## 2026-04-20 — Context Graph Ingestion
+
+### Source
+- Foundation Capital: ["AI's Trillion-Dollar Opportunity: Context Graphs"](https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity) (December 22, 2025)
+- User's Japanese analysis with 6-point future predictions and 5-plane architecture
+
+### New Concept Page
+- **[[concepts/context-graph]]** — Decision traces vs. rules distinction, "two clocks problem," five-plane enterprise AI architecture (State → Orchestration → Decision → Control → Observability), three startup paths (replace all/modules/new SoR), why incumbents are structurally disadvantaged
+
+### New Entity Pages (6)
+- **[[entities/foundation-capital]]** — VC firm, canonical source for context graph thesis
+- **[[entities/jaya-gupta]]** — Foundation Capital Partner, co-author of Context Graphs article
+- **[[entities/playerzero]]** — Path 3 startup: SRE automation with "engineering world model" context graph
+- **[[entities/arize]]** — Observability layer: "Datadog for agents"
+- **[[entities/maximor]]** — Path 2 startup: finance automation, ERP-agnostic audit-ready agents
+- **[[entities/regie-ai]]** — Path 1 startup: AI-native sales engagement replacing Outreach/Salesloft
+
+### New Raw Source
+- `wiki/raw/articles/foundation-capital-context-graphs-2025-12-22.md`
+
+### Updated Files
+- `wiki/index.md` — Added context-graph concept, 6 entity entries, updated counts (76→82 entities, 81→82 concepts)
+
+---
+
 ## 2026-04-19 — Active Crawl + RSS Scan
 
 ### Active Crawl (2026-04-19)

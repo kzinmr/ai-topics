@@ -92,16 +92,16 @@
       "schedule_display": "0 0 * * 1",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-16T13:13:37.027879+00:00",
-      "next_run_at": "2026-04-20T00:00:00+00:00",
-      "last_run_at": null,
-      "last_status": null,
+      "next_run_at": "2026-04-27T00:00:00+00:00",
+      "last_run_at": "2026-04-20T00:10:46.338883+00:00",
+      "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "telegram",
@@ -131,7 +131,7 @@
       "schedule_display": "0 18 * * *",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "enabled": true,
       "state": "scheduled",
@@ -139,9 +139,9 @@
       "paused_reason": null,
       "created_at": "2026-04-16T13:58:42.777945+00:00",
       "next_run_at": "2026-04-20T18:00:00+00:00",
-      "last_run_at": "2026-04-18T18:06:05.075333+00:00",
-      "last_status": "error",
-      "last_error": "Agent completed but produced empty response (model error, timeout, or misconfiguration)",
+      "last_run_at": "2026-04-19T18:33:12.416892+00:00",
+      "last_status": "ok",
+      "last_error": null,
       "last_delivery_error": null,
       "deliver": "discord:1233771389367095377:1491801814222504169",
       "origin": null
@@ -326,5 +326,5 @@
       }
     }
   ],
-  "updated_at": "2026-04-19T18:00:45.967790+00:00"
+  "updated_at": "2026-04-20T00:10:46.340454+00:00"
 }

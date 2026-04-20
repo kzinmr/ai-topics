@@ -2,16 +2,23 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-19 (Harness Engineeringを最上位概念に再編成: agentic-workflows, system-architectureをサブセクション化)
+Last updated: 2026-04-20 (Context Graph concept: decision traces, five-plane architecture, three startup paths; Foundation Capital, Jaya Gupta, PlayerZero, Arize, Maximor, Regie.ai entities)
 
-## Entity Pages (76)
+## Entity Pages (82)
 
 - [[entities/openai]] — OpenAI (GPT, ChatGPT, Codex, Agents SDK, Symphony)
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/milksandmatcha]] — Sarah Chieng (@MilksandMatcha), AI agent educator, co-author of Back of House multi-agent patterns
+- [[entities/foundation-capital]] — VC firm, "AI's Trillion-Dollar Opportunity: Context Graphs" (Dec 2025)
+- [[entities/jaya-gupta]] — Foundation Capital Partner, co-author of Context Graphs thesis
+- [[entities/playerzero]] — SRE automation startup; context graph as "engineering world model"
+- [[entities/arize]] — AI observability platform; "Datadog for agents"
+- [[entities/maximor]] — Finance automation; ERP-agnostic audit-ready agents
+- [[entities/regie-ai]] — AI-native sales engagement platform replacing Outreach/Salesloft
 
-## Concept Pages (81)
+## Concept Pages (82)
 
+- [[concepts/context-graph]] — Decision traces as living records; five-plane enterprise AI architecture; three startup paths (2026-04-20)
 - [[concepts/openai-agents-sdk]] — OpenAI Agents SDK v0.14.0 (sandbox execution, harness/compute separation, manifests)
 - [[concepts/token-economics]] — LLM inference cost analysis, optimization layers, token economics (2026-04-18)
 - [[concepts/attention-mechanism-variants]] — Modern attention mechanisms (MHA, GQA, MLA, SWA, DSA, Hybrid) (2026-04-18)
