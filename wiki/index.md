@@ -2,9 +2,9 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-20 (Context Graph concept: decision traces, five-plane architecture, three startup paths; Foundation Capital, Jaya Gupta, PlayerZero, Arize, Maximor, Regie.ai entities)
+Last updated: 2026-04-20 (Claude 4.7 tokenizer change, Headless AI Services, Figma AI Challenge; Simon Willison tool updates)
 
-## Entity Pages (82)
+## Entity Pages (83)
 
 - [[entities/openai]] — OpenAI (GPT, ChatGPT, Codex, Agents SDK, Symphony)
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -15,8 +15,9 @@ Last updated: 2026-04-20 (Context Graph concept: decision traces, five-plane arc
 - [[entities/arize]] — AI observability platform; "Datadog for agents"
 - [[entities/maximor]] — Finance automation; ERP-agnostic audit-ready agents
 - [[entities/regie-ai]] — AI-native sales engagement platform replacing Outreach/Salesloft
+- [[entities/figma]] — Figma AI challenge: Claude Design competition, SaaS moat失效, per-head pricing collapse risk (2026-04-20)
 
-## Concept Pages (82)
+## Concept Pages (84)
 
 - [[concepts/context-graph]] — Decision traces as living records; five-plane enterprise AI architecture; three startup paths (2026-04-20)
 - [[concepts/openai-agents-sdk]] — OpenAI Agents SDK v0.14.0 (sandbox execution, harness/compute separation, manifests)
@@ -27,6 +28,8 @@ Last updated: 2026-04-20 (Context Graph concept: decision traces, five-plane arc
 - [[concepts/mismanaged-geniuses-hypothesis]] — Frontier LMs are underutilized due to sub-optimal scaffolding; composition > scaling (2026-04-19)
 - [[concepts/multi-agent-consensus-patterns]] — Multi-agent consensus patterns: Supervisor, Hierarchical, P2P, Swarm; SWARM+ three-phase protocol (2026-04-19)
 - [[concepts/elixir-beam-agent-orchestration]] — Elixir/BEAM for agent orchestration: process supervision, GenServer, OpenAI Symphony architecture (2026-04-19)
+- [[concepts/claude-47-tokenizer]] — Claude Opus 4.7 tokenizer change: 1.46x text, 3x high-res images, ~40% cost increase (2026-04-20)
+- [[concepts/headless-ai-services]] — Headless AI services: personal AI via API instead of GUI, Matt Webb/Brandur Leach API-first wave (2026-04-20)
 
 ### Blog Authors (HN Popular Blogs — 84 feeds)
 

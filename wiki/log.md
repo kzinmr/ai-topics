@@ -1,3 +1,22 @@
+## 2026-04-20 — RSS Scan + Claude 4.7 Tokenizer / Headless AI / Figma
+
+### Source
+- RSS scan: 84 blogs, 82 new articles
+- simonwillison.net (3 new), martinalderson.com (1 new), other blogs (9 new)
+- Reddit: r/LocalLLM (24), r/AI_Agents (23), r/LocalLLaMA (22)
+
+### New Concept Pages (2)
+- **[[concepts/claude-47-tokenizer]]** — Claude Opus 4.7 tokenizer change: 1.46x system prompts, 3.01x high-res images, ~40% cost increase for typical text
+- **[[concepts/headless-ai-services]]** — Matt Webb's headless AI concept, Salesforce Headless 360, API-first wave (Brandur Leach)
+
+### New Entity Page (1)
+- **[[entities/figma]]** — Figma vs Claude Design competitive analysis: SaaS moat失效, per-head pricing collapse, employee efficiency gap (2,000 vs <10)
+
+### Updated Files
+- `wiki/index.md` — Added 2 concepts + 1 entity, updated counts (82→83 entities, 82→84 concepts)
+
+---
+
 ## 2026-04-20 — Context Graph Ingestion
 
 ### Source
