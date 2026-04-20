@@ -166,7 +166,7 @@
       "schedule_display": "0 13 * * *",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 3
       },
       "enabled": true,
       "state": "scheduled",
@@ -174,7 +174,7 @@
       "paused_reason": null,
       "created_at": "2026-04-18T04:49:42.951941+00:00",
       "next_run_at": "2026-04-21T13:00:00+00:00",
-      "last_run_at": "2026-04-19T13:28:09.736848+00:00",
+      "last_run_at": "2026-04-20T14:40:03.692403+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -202,15 +202,15 @@
       "schedule_display": "0 14 * * *",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 3
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-18T04:50:39.783611+00:00",
-      "next_run_at": "2026-04-20T14:00:00+00:00",
-      "last_run_at": "2026-04-19T14:01:35.085094+00:00",
+      "next_run_at": "2026-04-21T14:00:00+00:00",
+      "last_run_at": "2026-04-20T14:47:12.705484+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -231,21 +231,21 @@
       "script": null,
       "schedule": {
         "kind": "cron",
-        "expr": "0 15 * * *",
-        "display": "0 15 * * *"
+        "expr": "0 15 * * 5",
+        "display": "0 15 * * 5"
       },
-      "schedule_display": "0 15 * * *",
+      "schedule_display": "0 15 * * 5",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 3
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-04-18T04:50:47.032476+00:00",
-      "next_run_at": "2026-04-20T15:00:00+00:00",
-      "last_run_at": "2026-04-19T15:02:59.453227+00:00",
+      "next_run_at": "2026-04-24T15:00:00+00:00",
+      "last_run_at": "2026-04-20T15:02:19.678512+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -326,5 +326,5 @@
       }
     }
   ],
-  "updated_at": "2026-04-20T13:00:23.078361+00:00"
+  "updated_at": "2026-04-20T15:07:40.738813+00:00"
 }
