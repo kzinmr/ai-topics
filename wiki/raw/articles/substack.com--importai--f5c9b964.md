@@ -1,8 +1,8 @@
 ---
 title: "Jack Clark | Substack"
 url: "https://substack.com/@importai"
-fetched_at: 2026-04-18T03:24:15.394944+00:00
-source_date: 2026-04-18
+fetched_at: 2026-04-20T12:32:22.244534+00:00
+source_date: 2026-04-20
 tags: [newsletter, auto-ingested]
 ---
 
