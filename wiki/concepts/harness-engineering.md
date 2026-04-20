@@ -14,7 +14,7 @@ redirect: harness-engineering/_index.md
 
 # Harness Engineering
 
-> **Note:** This page is a stub. See [[harness-engineering/_index]] for the full concept.
+> **Note:** This page is a stub. See [[harness-engineering]] for the full concept.
 
 ## Summary
 
@@ -24,6 +24,6 @@ Key figures: Ryan Lopopolo (OpenAI), Simon Willison (Agentic Engineering), Anthr
 
 ## See Also
 
-- [[harness-engineering/_index]] — Full concept page
-- [[agentic-workflows/_index]] — Developer workflows
-- [[system-architecture/_index]] — System architecture patterns
+- [[harness-engineering]] — Full concept page
+- [[agentic-workflows]] — Developer workflows
+- [[system-architecture]] — System architecture patterns

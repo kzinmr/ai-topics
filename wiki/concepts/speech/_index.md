@@ -42,8 +42,8 @@ Speech models are categorized separately from multimodal AI because:
 This distinction reflects the fundamentally different architectures and use cases.
 
 ## Related Concepts
-- [[multimodal/_index]] — Vision-language multimodal systems
-- [[inference/_index]] — Inference optimization for audio models
+- [[multimodal]] — Vision-language multimodal systems
+- [[inference]] — Inference optimization for audio models
 - [[local-llm]] — Running speech models locally
 
 ## Sources

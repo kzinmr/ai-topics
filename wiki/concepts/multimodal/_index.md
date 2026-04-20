@@ -38,8 +38,8 @@ Using one modality to search another (text→image, image→text). Critical for 
 Contrastive learning aligns representations across modalities in shared embedding space.
 
 ## Related Concepts
-- [[fine-tuning/_index]] — Fine-tuning multimodal models
-- [[inference/_index]] — Inference optimization for multimodal
+- [[fine-tuning]] — Fine-tuning multimodal models
+- [[inference]] — Inference optimization for multimodal
 - [[local-llm]] — Running multimodal models locally
 
 ## Sources

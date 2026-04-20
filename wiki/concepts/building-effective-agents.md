@@ -34,5 +34,5 @@ From Anthropic's documentation:
 ## See Also
 
 - [[harness-engineering/system-architecture/building-effective-agents]] — Full content
-- [[system-architecture/_index]] — System architecture patterns
+- [[system-architecture]] — System architecture patterns
 - [[agent-loop-orchestration]] — Agent loop orchestration

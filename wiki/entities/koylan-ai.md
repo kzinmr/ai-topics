@@ -161,7 +161,7 @@ Autonomous research pipeline using Firecrawl and Claude for enterprise AI case s
 
 ## Related Concepts
 
-- [[Context-Engineering]] — Koylan's primary discipline and focus area
+- [[context-engineering]] — Koylan's primary discipline and focus area
 - [[Multi-Agent-Systems]] — His core architectural expertise
 - [[Agent-Skills]] — His open-source skill collection
 - [[File-System-As-Database]] — His persistence philosophy

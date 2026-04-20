@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Best Practices"
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-04-20
 tags: [claude-code, prompt-engineering, mcp, subagents, workflow-patterns, agentic-engineering]
 aliases: ["claude-code-tips", "claude-code-usage-patterns", "coding-agent-best-practices"]
 related: [[harness-engineering/agentic-engineering]], [[inference-speed-development]], [[claude-code-source-patterns]], [[context-window-management]]
@@ -135,6 +135,102 @@ A shared `CLAUDE.md` in the project root serves as a "configuration file" for th
 | Clear tool output | Remove noise | After successful operations |
 
 See [[context-window-management]] for detailed patterns.
+
+---
+
+## Claude Code Routines (April 2026)
+
+On April 19, 2026, Anthropic introduced **Routines** — a feature that lets users create reusable, parameterized prompt sequences for Claude Code. Routines build on the `CLAUDE.md` pattern but for discrete, repeatable workflows.
+
+### What Are Routines?
+
+Routines are named, parameterized task templates stored in `~/.claude/routines/`:
+
+```yaml
+# ~/.claude/routines/review-pr.yaml
+name: review-pr
+description: Review a pull request and leave structured comments
+parameters:
+  - name: pr_number
+    type: number
+    required: true
+  - name: focus_area
+    type: string
+    required: false
+    default: "all"
+steps:
+  - run: "Fetch PR details and diff"
+    tool: bash
+    command: "gh pr view {pr_number} --json title,body,state"
+  - run: "Review code changes"
+    tool: claude
+    prompt: "Review the changes in PR #{pr_number}. Focus on: {focus_area}. Check for bugs, style issues, and test coverage."
+  - run: "Post review comment"
+    tool: github
+    action: "comment"
+```
+
+### Why Routines Matter
+
+| Aspect | Before Routines | After Routines |
+|--------|-----------------|----------------|
+| Reusability | Copy-paste prompts | Named, versioned templates |
+| Parameterization | Manual variable substitution | Formal parameter schema |
+| Sharing | Share via docs/wiki | Distribute `.yaml` files |
+| Consistency | Varies by user | Standardized workflow |
+
+### Routine Patterns
+
+#### 1. Code Review Routine
+```yaml
+name: code-review
+parameters:
+  - name: pr_url
+    type: string
+steps:
+  - fetch: pr_url → diff
+  - analyze: Security, performance, style
+  - comment: Structured findings
+```
+
+#### 2. Test Generation Routine
+```yaml
+name: generate-tests
+parameters:
+  - name: file_path
+    type: string
+steps:
+  - analyze: Source file for public API
+  - generate: Unit tests for each function
+  - validate: Run tests, fix failures
+```
+
+#### 3. Documentation Update Routine
+```yaml
+name: update-docs
+parameters:
+  - name: component
+    type: string
+steps:
+  - read: Existing documentation
+  - compare: With current implementation
+  - update: Fill in gaps, fix outdated parts
+  - validate: Links, examples work
+```
+
+### Best Practices for Routines
+
+1. **One responsibility** — Each routine should do one thing well
+2. **Explicit parameters** — Define all inputs, even optional ones
+3. **Idempotent steps** — Can be re-run without side effects
+4. **Error handling** — Include validation at each step
+5. **Documentation** — Comment non-obvious decisions
+
+### Related Patterns
+
+- [[claude-code-source-patterns]] — Internal Claude Code implementation details
+- [[harness-engineering/agentic-workflows]] — Reusable workflow patterns
+- [[context-window-management]] — Managing context across routine invocations
 
 ---
 

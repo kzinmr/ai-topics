@@ -2,9 +2,9 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-20 (Claude 4.7 tokenizer change, Headless AI Services, Figma AI Challenge; Simon Willison tool updates)
+Last updated: 2026-04-20 (Claude Code Routines, Noetik biotech AI; Claude 4.7 tokenizer; Context Graphs; GEPA/RLMs)
 
-## Entity Pages (83)
+## Entity Pages (84)
 
 - [[openai]] — OpenAI (GPT, ChatGPT, Codex, Agents SDK, Symphony)
 - [[adam-rosenthal]] — Adam Rosenthal
@@ -17,7 +17,7 @@ Last updated: 2026-04-20 (Claude 4.7 tokenizer change, Headless AI Services, Fig
 - [[regie-ai]] — AI-native sales engagement platform replacing Outreach/Salesloft
 - [[figma]] — Figma AI challenge: Claude Design competition, SaaS moat失效, per-head pricing collapse risk (2026-04-20)
 
-## Concept Pages (84)
+## Concept Pages (85)
 
 - [[context-graph]] — Decision traces as living records; five-plane enterprise AI architecture; three startup paths (2026-04-20)
 - [[openai-agents-sdk]] — OpenAI Agents SDK v0.14.0 (sandbox execution, harness/compute separation, manifests)
@@ -148,11 +148,12 @@ Last updated: 2026-04-20 (Claude 4.7 tokenizer change, Headless AI Services, Fig
 
 - [[nvidia-dgx-spark]] — NVIDIA DGX Spark (Grace Blackwell, 128GB unified memory, local AI supercomputer)
 - [[nvidia-nemoclaw]] — NVIDIA NemoClaw (secure agent framework with OpenShell sandbox + OpenClaw)
+- [[noetik]] — Biotech AI: transformer models for cancer trial matching, GSK $50M deal (Apr 2026)
 - [[local-llm/server-dgx-spark]] — Local LLM Server Setup on DGX Spark (complete setup guide with NemoClaw integration)
 
 ### AI Models & Technologies
 
-|- [[multimodal/_index]] — Multimodal AI (CLIP, LLaVA, Stable Diffusion, Segment Anything, AudioCraft)
+|- [[multimodal]] — Multimodal AI (CLIP, LLaVA, Stable Diffusion, Segment Anything, AudioCraft)
 - [[agibot-10000-units]] — AGIBot Reaches 10,000 Units
 - [[amazon-rivr]] — Amazon Acquires Rivr
 - [[claude-mythos]] — Claude Mythos
@@ -185,7 +186,7 @@ Ideas, frameworks, and methodologies extracted from articles.
   - [[comparisons/aposd-vs-clean-code]] — APOSD vs Clean Code: Ousterhout vs Martin debate, unified through cognitive load lens
 - [[gnu-ai-reimplementations]] — GNU & AI Reimplementations (antirez)
 
-- [[harness-engineering/agentic-workflows/_index]] — Agentic Workflows: AI Agentを「活用して開発する」実践的ワークフロー（Willison, Sankalp, Steipete）
+- [[harness-engineering/agentic-workflows]] — Agentic Workflows: AI Agentを「活用して開発する」実践的ワークフロー（Willison, Sankalp, Steipete）
 - [[harness-engineering/agentic-workflows/red-green-tdd]] — Red/Green TDD (Simon Willison)
 - [[harness-engineering/agentic-workflows/first-run-the-tests]] — First Run the Tests (Simon Willison)
 - [[harness-engineering/agentic-workflows/agentic-manual-testing]] — Agentic Manual Testing (Simon Willison)
@@ -215,7 +216,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[main-branch-development]] — Main-Branch Development (Steipete)
 
 ### AI Agent Engineering (Anthropic + OpenAI)
-- [[harness-engineering/system-architecture/_index]] — System Architecture: AI Agentを「構築する」システム設計パターン集（Anthropic + OpenAI Responses API）
+- [[harness-engineering/system-architecture]] — System Architecture: AI Agentを「構築する」システム設計パターン集（Anthropic + OpenAI Responses API）
 - [[harness-engineering/system-architecture/building-effective-agents]] — Building Effective Agents (Anthropic)
 - [[harness-engineering/system-architecture/advanced-tool-use]] — Advanced Tool Use (Anthropic)
 - [[harness-engineering/system-architecture/multi-agent-research-system]] — Multi-Agent Research System (Anthropic)
@@ -248,7 +249,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[ai-safety]] — AI Safety: Alignment, Oversight, and Interpretability
 - [[agentic-pbt]] — Agentic Property-Based Testing (Anthropic + Hypothesis, Claude Code PBT agent)
 - [[functional-emotions-llms]] — Functional Emotions in LLMs
-- [[harness-engineering/_index]] — Harness Engineering: Agent = Model + Harness（OpenAI Symphony, Ryan Lopopolo）
+- [[harness-engineering]] — Harness Engineering: Agent = Model + Harness（OpenAI Symphony, Ryan Lopopolo）
 - [[harness-engineering]] — Harness Engineering (Ryan Lopopolo / OpenAI Symphony)
 - [[llm-evaluation-harness]] — LLM Evaluation Harness
 - [[llm-training-coherence-evolution]] — LLM Training Coherence Evolution (Giles Thomas / gpjt, Karpathy RNN comparison)
@@ -265,12 +266,12 @@ Ideas, frameworks, and methodologies extracted from articles.
    |- [[local-llm/model-distillation]] — Knowledge Distillation
    |- [[local-llm/self-hosting-ai-development]] — Self-Hosting AI for Development (economics)
 | |- [[inference/vllm]] — vLLM Production Serving (PagedAttention)
-||- [[inference/_index]] — LLM Inference Optimization (SGLang, vLLM, llama.cpp, speculative decoding, KV cache)
+||- [[inference]] — LLM Inference Optimization (SGLang, vLLM, llama.cpp, speculative decoding, KV cache)
 ||- [[inference/sglang]] — SGLang Serving Framework (RadixAttention, xgrammar)
 |- [[reasoning-models]] — Reasoning Models (o1-style, CoT, PRM)
-|- [[speech/_index]] — Speech Models (Whisper, TTS, AudioCraft — audio-language specific models)
+|- [[speech]] — Speech Models (Whisper, TTS, AudioCraft — audio-language specific models)
 |- [[speech/whisper]] — Whisper: OpenAI's Speech Recognition Model (680k hours, 99 languages, ASR)
-|- [[fine-tuning/_index]] — Fine-Tuning Overview (SFT, PEFT, RLHF, DPO, GRPO pipeline)
+|- [[fine-tuning]] — Fine-Tuning Overview (SFT, PEFT, RLHF, DPO, GRPO pipeline)
 |- [[fine-tuning/peft-lora-qlora]] — Parameter-Efficient Fine-Tuning (LoRA, QLoRA, adapters)
 |- [[fine-tuning/grpo-rl-training]] — Group Relative Policy Optimization for reasoning
 |- [[fine-tuning/rlhf-dpo-preference]] — RLHF, DPO, ORPO, KTO preference optimization
@@ -287,7 +288,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 ### OpenClaw Ecosystem
 
-- [[openclaw/_index]] — OpenClawコンセプト集約（哲学、設計パターン、エコシステム、比較分析）
+- [[openclaw]] — OpenClawコンセプト集約（哲学、設計パターン、エコシステム、比較分析）
   - [[openclaw/philosophy]] — Primitives First哲学（Explicit > Implicit, Guarantees > Defaults, Legibility > Autonomy）
   - [[openclaw/five-tier-precedence]] — Five-Tier Skill Precedence Model（決定論的スキル優先度）
   - [[openclaw/architecture-comparison]] — OpenClaw vs Hermes Architecture Comparison（Skill Explosion Problem, Product Positioning Framework）
@@ -312,7 +313,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[single-agent-ceiling]] — Single-Agent Ceiling: limitations of solo-agent coding, "sloperator" anti-pattern
 
 ### Agent Team / Swarm
-- [[agent-team-swarm/_index]] — Agent Team / Swarm（複数Agent協調・Dark Factoryまでの5レベルモデル）
+- [[agent-team-swarm]] — Agent Team / Swarm（複数Agent協調・Dark Factoryまでの5レベルモデル）
 - [[anthropic-managed-agents]] — Anthropic Managed Agents（Brain/Hands/Session分離アーキテクチャ）
 - [[openai-symphony]] — OpenAI Symphony（WORKFLOW.md駆動のタスクオーケストレーター）
 - [[dark-factory-software-factory]] — Dark Factory Software Factory（StrongDM実践事例）
@@ -376,7 +377,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 ### AI Organization (4)
 
-- [[ai-organization/_index]] — AI Organization (階層からインテリジェンスへ、Solo Founder、Context as Moat、Diamond Org Chart)
+- [[ai-organization]] — AI Organization (階層からインテリジェンスへ、Solo Founder、Context as Moat、Diamond Org Chart)
 - [[ai-organization/ai-org-from-hierarchy-to-intelligence]] — Block: Hierarchy to Intelligence (Jack Dorsey: World Model, 4 Building Blocks, 3 Roles, Failure-Driven Roadmap)
 - [[ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder & Super IC (Reddit/FourWeekMBA: MVP commoditization, FrontPage parallel, $10M→$100M path)
 - [[ai-organization/ai-org-context-as-moat]] — Proprietary Context (McKinsey 5 Pillars, M-Shaped Supervisor, Diamond Org Chart, Agentic Governance)

@@ -136,7 +136,7 @@ elvisがOpenClawのTOOLS.md + VercelのAGENTS.mdを組み合わせ：
 
 ## 関連
 
-- [[openclaw/_index]] — OpenClawコンセプト集約
+- [[openclaw]] — OpenClawコンセプト集約
 - [[openclaw/five-tier-precedence]] — 5階層スキル優先度モデル
 - [[openclaw/philosophy]] — Primitives First哲学
 - [[skill-architecture-patterns]] — スキルアーキテクチャの比較分析

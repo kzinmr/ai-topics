@@ -108,7 +108,7 @@ OpenClawの哲学は[[local-first-software]]運動と深く関連：
 
 ## 関連
 
-- [[openclaw/_index]] — OpenClawコンセプト集約
+- [[openclaw]] — OpenClawコンセプト集約
 - [[openclaw/five-tier-precedence]] — Five-Tier Skill Precedence
 - [[skill-architecture-patterns]] — Hermesとの比較
 - [[local-first-software]] — ローカルファーストソフトウェア

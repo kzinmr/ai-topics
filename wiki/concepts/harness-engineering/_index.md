@@ -210,8 +210,8 @@ Ryanは同意：依存関係を内部化（1K-10K LOCでも）は実行可能。
 ## 関連概念
 
 ### Harness配下のサブ概念
-- [[agentic-workflows/_index]] — 開発者ワークフロー詳細（Willison, Sankalp, Steipeteパターン）
-- [[system-architecture/_index]] — システム構築パターン（Anthropic, OpenAI Responses API）
+- [[agentic-workflows]] — 開発者ワークフロー詳細（Willison, Sankalp, Steipeteパターン）
+- [[system-architecture]] — システム構築パターン（Anthropic, OpenAI Responses API）
 - [[context-engineering]] — コンテキスト最適化技術（Karpathy + DSPy + Anthropic）
 
 ### 横断参照
@@ -224,8 +224,8 @@ Ryanは同意：依存関係を内部化（1K-10K LOCでも）は実行可能。
 ## Sources
 - [[agentic-engineering]] — Simon WillisonのAgentic Engineering哲学
 - [[agentic-engineering-patterns]] — Simon Willisonの実践パターンガイド
-- [[agentic-workflows/_index]] — 開発者ワークフロー詳細（Willison, Sankalp, Steipeteパターン）
-- [[system-architecture/_index]] — システム構築パターン（Anthropic, OpenAI Responses API）
+- [[agentic-workflows]] — 開発者ワークフロー詳細（Willison, Sankalp, Steipeteパターン）
+- [[system-architecture]] — システム構築パターン（Anthropic, OpenAI Responses API）
 - Ryan Lopopolo, OpenAI Harness Engineering
 - Anthropic: Building Effective Agents, Context Engineering
 - OpenAI Cookbook: Context Engineering Patterns

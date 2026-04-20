@@ -61,7 +61,7 @@ Pre-trained Model → SFT → Preference Optimization (DPO/GRPO/RLHF) → Quanti
 ## Related Concepts
 - [[harness-engineering]] — Fine-tuning as part of the model + harness paradigm
 - [[local-llm]] — Running fine-tuned models locally
-- [[inference/_index]] — Inference optimization post-fine-tuning
+- [[inference]] — Inference optimization post-fine-tuning
 - [[evaluation/llm-evals]] — Evaluating fine-tuned models
 
 ## Sources

@@ -31,4 +31,4 @@ Subagents refers to the pattern of delegating tasks to parallel agent instances 
 
 - [[harness-engineering/agentic-workflows/subagents]] — Full content
 - [[multi-agent-consensus-patterns]] — Consensus patterns
-- [[agent-team-swarm/_index]] — Agent team patterns
+- [[agent-team-swarm]] — Agent team patterns

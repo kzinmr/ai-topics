@@ -55,7 +55,7 @@ Together, these techniques allow a distilled 3-8B model at Q4 quantization to ru
 - [[harness-engineering]] — Local LLMs as harness components
 - [[agentic-engineering]] — Using local LLMs in agent workflows
 - [[reasoning-models]] — Distillation for CoT transfer
-- [[inference/_index]] — Inference optimization techniques
+- [[inference]] — Inference optimization techniques
 - [[inference-speed-development]] — Development cadence at inference speed
 
 ## Sources

@@ -1,8 +1,8 @@
 ---
 title: "Nathan Lambert | Substack"
 url: "https://substack.com/@natolambert"
-fetched_at: 2026-04-15T18:21:38.089626+00:00
-source_date: 2026-04-15
+fetched_at: 2026-04-20T18:27:24.817354+00:00
+source_date: 2026-04-20
 tags: [newsletter, auto-ingested]
 ---
 

@@ -28,4 +28,4 @@ Vinci Rufus: "Vibe coding 30-70%, Agentic engineering 300-700%"
 ## See Also
 
 - [[harness-engineering/agentic-workflows/vibe-coding]] — Full content
-- [[agentic-workflows/_index]] — Developer workflows
+- [[agentic-workflows]] — Developer workflows

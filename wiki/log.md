@@ -1,3 +1,37 @@
+## 2026-04-20 — dreaming: daily consolidation
+
+### Duplicate Check Summary
+- Items skipped (already processed by other jobs): 15+
+  - Jensen Huang interview → already enriched (Daily Active Crawl 04-18)
+  - Claude Mythos evaluation → already covered (Daily Active Crawl 04-19)
+  - WorkOS FGA authorization → already processed (Daily Inbox 04-13)
+  - geohot zappa mitmproxy → already added (Daily RSS 04-15)
+  - AI Digital NATO → already detailed (Daily Inbox 04-19)
+- Gaps filled: 2
+  - Noetik (Ron Alfa & Daniel Bear) — missing entity
+  - Claude Code Routines — missing feature update
+
+### Consolidation Summary
+- Articles reviewed: 194 (94 RSS + 100 newsletter)
+- Themes identified: 8
+- Pages created: 1 (Noetik)
+- Pages updated: 1 (Claude Code Routines → claude-code-best-practices.md)
+
+### New Wiki Pages
+- [[noetik]] — Biotech AI company, transformer models for cancer trial matching (95% failure rate → matching problem), GSK $50M deal, Ron Alfa & Daniel Bear founders
+
+### Updated Pages
+- [[claude-code-best-practices]] — Added "Claude Code Routines (April 2026)" section: reusable parameterized workflows in YAML, routine patterns (code-review, test-gen, docs), comparison table vs copy-paste approach
+
+### NJ Delivery Filter
+| Theme | NJ Score | Delivery |
+|-------|----------|----------|
+| Noetik cancer AI | 3/5 | Secondary — biotech AI breakthrough |
+| Claude Code Routines | 2/5 | Brief — feature update |
+| geohot zappa mitmproxy | 1/5 | Omit (already covered) |
+
+---
+
 ## 2026-04-20 — GPT Models Concept Page
 
 ### New Concept Page
@@ -758,7 +792,7 @@ Selected 3 topics: ai-agent-engineering (deepdive), harness-engineering (prerequ
   - Human-in-the-loop control framework
 
 ### Front Page Upgraded
-- **[[ai-organization/_index]]** → Added 3-model comparison table (Block vs McKinsey vs Solo Founder), cross-cutting themes matrix, updated source list with 7 entries
+- **[[ai-organization]]** → Added 3-model comparison table (Block vs McKinsey vs Solo Founder), cross-cutting themes matrix, updated source list with 7 entries
 
 ### Updated Files
 - **wiki/index.md** — AI Organization section descriptions upgraded with key concepts

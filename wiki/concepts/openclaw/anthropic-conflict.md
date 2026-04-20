@@ -115,7 +115,7 @@ Anthropicが提供した措置：
 
 ## 関連
 
-- [[openclaw/_index]] — OpenClawコンセプト集約
+- [[openclaw]] — OpenClawコンセプト集約
 - [[openclaw/philosophy]] — Primitives First哲学
 - [[personal-superintelligence]] — データ主権運動
 - [[open-source-ai-destruction]] — オープンソースAI破壊
