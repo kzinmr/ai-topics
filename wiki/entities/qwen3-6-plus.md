@@ -1,7 +1,7 @@
 ---
 title: Qwen3.6-Plus
 created: 2026-04-10
-updated: 2026-04-16
+updated: 2026-04-21
 tags:
 - entity
 - model
@@ -53,6 +53,22 @@ Simon Willisonの「ペリカンが自転車に乗るSVG生成」ベンチマー
 - Competes with OpenAI, Anthropic agent offerings
 - Focus on practical enterprise applications
 - Part of Alibaba Cloud AI ecosystem
+
+## Community Deployment Reports (April 2026)
+
+### 8GB VRAM Achievement
+Qwen3.6-35B-A3B MoE running on consumer hardware with only 8GB VRAM using llama-server configuration. Users report `max_tokens` and `thinking` mode require specific configuration to avoid truncation issues.
+
+### Real-World Coding Work
+Users reporting success using Qwen3.6-35B-A3B-UD-Q4_K_M on 32GB MacBook Pro M5 Max (128GB RAM) with 64K context through OpenCode — described as "as good as Claude" for actual coding tasks. Multiple users confirming the model solved coding problems that Qwen3.5-27B couldn't.
+
+### Gemma4 vs Qwen3.5/3.6 Debate
+Community discussion on r/LocalLLM suggesting Gemma4 may outperform Qwen3.5/3.6 on certain localhost use cases, indicating the open model landscape remains competitive.
+
+### llama.cpp Ecosystem
+- llama.cpp described as "the linux of llm" — foundational infrastructure layer
+- Criticism that OSS tools don't treat llama.cpp as first-class citizen
+- llama-server RAM usage during runtime being optimized
 
 ## Sources
 - [[raw/articles/substack.com--redirect-2-eyjlijoiaHR0cHM6Ly9ubHAuZWx2aXNzYXJhdmlhLmNvbS9wdWJsaWMtc...]]

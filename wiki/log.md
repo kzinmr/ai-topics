@@ -1,3 +1,23 @@
+## 2026-04-21 — dreaming: daily consolidation
+
+### Duplicate Check Summary
+- Items skipped (already processed by other jobs): 15+
+  - Kimi K2.6 already in wiki → enriched with r/LocalLLaMA community reports
+  - Qwen3.6-Plus already in wiki → enriched with deployment discussions
+  - GitHub Copilot billing already processed (Daily Inbox 04-21)
+  - Headless AI services already processed (Daily Inbox 04-21)
+- Gaps filled: 2 (community deployment section on both pages)
+
+### Consolidation Summary
+- Articles reviewed: ~120 (RSS scan + Reddit highlights)
+- Themes identified: 4 (local model deployment, AI pricing, headless services, test case minimization)
+- Pages updated: 2
+- Pages created: 0
+
+### Updated Pages
+- [[entities/qwen3-6-plus]] — Added "Community Deployment Reports" section: 8GB VRAM achievement, real-world coding work, Gemma4 vs Qwen3 debate, llama.cpp ecosystem notes
+- [[concepts/kimi-k2-6]] — Added "Community Discussion" subsection: Opus 4.7 replacement confirmation, 8GB VRAM configs, Qwen3.6 comparison
+
 ## 2026-04-21 — Active Knowledge Crawl: ai-memory-systems + neurosymbolic-ai
 
 ### Raw Articles Added (5 sources)
