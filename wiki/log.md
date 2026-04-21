@@ -1,3 +1,32 @@
+## 2026-04-21 — Active Knowledge Crawl: ai-memory-systems + neurosymbolic-ai
+
+### Raw Articles Added (5 sources)
+- `raw/articles/crawl-2026-04-21-vector-db-agent-memory.md` — 5 types of AI agent memory (Sreeni Ramadorai)
+- `raw/articles/crawl-2026-04-21-knowledge-graph-memory-agents.md` — Vector vs Graph vs Episodic memory architectures (Digital Applied)
+- `raw/articles/crawl-2026-04-21-agentic-alternative-graphrag.md` — Contextual AI: agentic metadata search tool (Nov 2025)
+- `raw/articles/crawl-2026-04-21-kleppmann-formal-verification-ai.md` — Kleppmann: AI will make formal verification mainstream (Dec 2025)
+- `raw/articles/crawl-2026-04-21-shuvendu-intent-formalization.md` — Microsoft Research: intent formalization as grand challenge (Mar 2026)
+
+### Pages Created (6 concept pages)
+**From ai-memory-systems (prerequisites, medium):**
+- [[vector-db-agent-memory]] — Vector DB for agent LTM/semantic memory: Mem0, Zep, pgvector, write-heavy/mutable/temporal properties
+- [[knowledge-graph-memory-agents]] — Graph memory for multi-hop reasoning; hybrid vector+graph+episodic pattern; reference stacks (Neo4j, TypeDB, Zep)
+
+**From neurosymbolic-ai (prerequisites, medium):**
+- [[intent-formalization]] — Translating vague intent into formal specs; spec spectrum (tests→contracts→logical→DSL); key for vibe coding reliability
+- [[formal-verification-llm-agents]] — AI bringing formal verification (Lean, Rocq, F*) mainstream; seL4 cost problem; vericoding movement
+
+**New cross-topic connections:**
+- [[agentic-alternative-to-graphrag]] — Contextual AI: metadata search tool as lightweight alternative to GraphRAG; 75.43% accuracy
+- [[agentic-rag]] — Agentic RAG taxonomy: reflection, planning, tool-use, multi-agent patterns; 6 architecture types
+
+### Index Updated
+- `index.md` — Added "AI Memory & Retrieval Infrastructure" section (6 pages), updated Last updated
+
+### Topics Crawled
+- [[ai-memory-systems]] — last_crawled → 2026-04-21 (prerequisites: episodic/semantic memory, vector DB architectures)
+- [[neurosymbolic-ai]] — last_crawled → 2026-04-21 (prerequisites: formal verification, intent formalization)
+
 ## 2026-04-21 — Inbox: RLM articles + @raw_works monitoring
 
 ### Raw Articles Added

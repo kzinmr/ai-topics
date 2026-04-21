@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-21 (Kimi K2.6; GitHub Copilot token billing; Anthropic distillation accusations)
+Last updated: 2026-04-21 (+6 Memory/Retrieval/Verification pages; Kimi K2.6; GitHub Copilot token billing)
 
 ## Entity Pages (84)
 
@@ -289,6 +289,14 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[meta-harness]] — Meta-Harness
 - [[scaling-without-slop]] — Scaling without Slop
 - [[world-models-science]] — World Models for Scientific Discovery
+
+### AI Memory & Retrieval Infrastructure
+- [[vector-db-agent-memory]] — Vector databases for AI agent long-term and semantic memory (Mem0, Zep, pgvector)
+- [[knowledge-graph-memory-agents]] — Graph memory for multi-hop entity reasoning; hybrid vector+graph+episodic pattern
+- [[agentic-alternative-to-graphrag]] — Contextual AI: metadata search tool as lightweight GraphRAG alternative (Nov 2025)
+- [[agentic-rag]] — Agentic RAG: dynamic retrieval, iterative refinement, multi-agent orchestration in RAG pipelines
+- [[intent-formalization]] — Translating vague human intent into precise checkable program specs; bridging vibe coding and verified software
+- [[formal-verification-llm-agents]] — AI bringing formal verification (Lean, Rocq, F*) into mainstream; vericoding vs vibecoding
 
 ### OpenClaw Ecosystem
 

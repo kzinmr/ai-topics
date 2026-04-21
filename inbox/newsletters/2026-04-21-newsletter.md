@@ -1,262 +1,162 @@
 # Newsletter Digest - 2026-04-21
-**Subject:** [AINews] Moonshot Kimi K2.6: the world's leading Open Model refreshes to catch up to Opus 4.6 (ahead of DeepSeek v…
-**Processed:** 2026-04-21T00:20:13.316057+00:00
-**Articles scraped:** 12
+**Subject:** That's my designer - Claude
+**Processed:** 2026-04-21T13:37:20.063553+00:00
+**Articles scraped:** 10
 
 ---
 
-## 1. [AINews] Moonshot Kimi K2.6: the world's leading Open Model refreshes to catch up to Opus 4.6 (ahead of DeepSeek v4?)
+## 1. That's my designer - Claude
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194854641&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4NTQ2NDEsImlhdCI6MTc3NjczMDc4OCwiZXhwIjoxNzc5MzIyNzg4LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.yT3X9ITcLYsNTobtybWBkyh09Dez8edRWOu1UVmywuY
-- **Length:** 11131 chars
+- **URL:** https://substack.com/app-link/post?publication_id=4379299&post_id=194895048&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4OTUwNDgsImlhdCI6MTc3Njc3ODYwOCwiZXhwIjoxNzc5MzcwNjA4LCJpc3MiOiJwdWItNDM3OTI5OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.eCoJx-tVtddZJkUWEThMBrEu5DYTayRMe_QDNrEm7jo
+- **Length:** 380 chars
 
-> Two days left before Early Bird ends for
-> AI Engineer World’s Fair
-> this Summer in SF. This is will be THE BIG ONE of the year - lock in discounts up to $500 (refundable).
-> DeepSeek V4 rumors
-> are back, and we learned our lesson not to get too excited, but in their deafening silence
-> since v3.2
-> , Moonshot has owned the crown of
-> leading Chinese open model lab for all of 2026 to date
-> , and K2.6 refreshes the lead that
-> K2.5 established in January
-> , with (presumably) more continued pre/posttraining (this
+> Justus Mattern
+> @MatternJustus
+> Introducing FrontierSWE, an ultra-long horizon coding benchmark.
+> 
+> We test agents on some of the hardest technical tasks like optimizing a video rendering library or training a model to predict the quantum properties of molecules.
+> 
+> Despite having 20 hours, they rarely succeed
+> 8:30 PM · Apr 16, 2026
+> ·
+> 200K Views
+> 77 Replies
+> ·
+> 133 Reposts
+> ·
+> 1.29K Likes
 
-## 2. [AINews] Moonshot Kimi K2.6: the world's leading Open Model refreshes to catch up to Opus 4.6 (ahead of DeepSeek v4?)
+## 2. That's my designer - Claude
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=194854641&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4NTQ2NDEsImlhdCI6MTc3NjczMDc4OCwiZXhwIjoxNzc5MzIyNzg4LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.yT3X9ITcLYsNTobtybWBkyh09Dez8edRWOu1UVmywuY
-- **Length:** 11131 chars
+- **URL:** https://substack.com/app-link/post?publication_id=4379299&post_id=194895048&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTQ4OTUwNDgsImlhdCI6MTc3Njc3ODYwOCwiZXhwIjoxNzc5MzcwNjA4LCJpc3MiOiJwdWItNDM3OTI5OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.eCoJx-tVtddZJkUWEThMBrEu5DYTayRMe_QDNrEm7jo
+- **Length:** 380 chars
 
-> Two days left before Early Bird ends for
-> AI Engineer World’s Fair
-> this Summer in SF. This is will be THE BIG ONE of the year - lock in discounts up to $500 (refundable).
-> DeepSeek V4 rumors
-> are back, and we learned our lesson not to get too excited, but in their deafening silence
-> since v3.2
-> , Moonshot has owned the crown of
-> leading Chinese open model lab for all of 2026 to date
-> , and K2.6 refreshes the lead that
-> K2.5 established in January
-> , with (presumably) more continued pre/posttraining (this
+> Justus Mattern
+> @MatternJustus
+> Introducing FrontierSWE, an ultra-long horizon coding benchmark.
+> 
+> We test agents on some of the hardest technical tasks like optimizing a video rendering library or training a model to predict the quantum properties of molecules.
+> 
+> Despite having 20 hours, they rarely succeed
+> 8:30 PM · Apr 16, 2026
+> ·
+> 200K Views
+> 77 Replies
+> ·
+> 133 Reposts
+> ·
+> 1.29K Likes
 
-## 3. [AINews] Moonshot Kimi K2.6: the world's leading Open Model refreshes to catch up to Opus 4.6 (ahead of DeepSeek v4?)
+## 3. That's my designer - Claude
 
-- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvc3d5eC9wL2FpbmV3cy1tb29uc2hvdC1raW1pLWsyNi10aGUtd29ybGRzP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtcmVzdGFjay1jb21tZW50JmFjdGlvbj1yZXN0YWNrLWNvbW1lbnQmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam94T1RRNE5UUTJOREVzSW1saGRDSTZNVGMzTmpjek1EYzRPQ3dpWlhod0lqb3hOemM1TXpJeU56ZzRMQ0pwYzNNaU9pSndkV0l0TVRBNE5EQTRPU0lzSW5OMVlpSTZJbkJ2YzNRdGNtVmhZM1JwYjI0aWZRLnlUM1g5SVRjTFlzTlRvYnR5YldCa3loMDlEZXo4ZWRSV091MVVWbXl3dVkiLCJwIjoxOTQ4NTQ2NDEsInMiOjEwODQwODksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3NjczMDc4OCwiZXhwIjoyMDkyMzA2Nzg4LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.B8mCMe54h-Q1k10l-PA4c8jrQU5tDH5pRI8DygqsPpM?&utm_source=substack&utm_medium=email
-- **Length:** 11131 chars
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvYmVuc2JpdGVzL3AvdGhhdHMtbXktZGVzaWduZXItY2xhdWRlP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1haWwtcmVzdGFjay1jb21tZW50JmFjdGlvbj1yZXN0YWNrLWNvbW1lbnQmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0p3YjNOMFgybGtJam94T1RRNE9UVXdORGdzSW1saGRDSTZNVGMzTmpjM09EWXdPQ3dpWlhod0lqb3hOemM1TXpjd05qQTRMQ0pwYzNNaU9pSndkV0l0TkRNM09USTVPU0lzSW5OMVlpSTZJbkJ2YzNRdGNtVmhZM1JwYjI0aWZRLmVDb0p4LXRWdGRkWkprVVdFVGhNQnJFdTVEWVRheVJNZV9RRE5yRW03am8iLCJwIjoxOTQ4OTUwNDgsInMiOjQzNzkyOTksImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc3Njc3ODYwOCwiZXhwIjoyMDkyMzU0NjA4LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.3UA8fELB75ADDndb7quAgRv-IGTuxZOpCRrZurJPdh0?&utm_source=substack&utm_medium=email
+- **Length:** 380 chars
 
-> Two days left before Early Bird ends for
-> AI Engineer World’s Fair
-> this Summer in SF. This is will be THE BIG ONE of the year - lock in discounts up to $500 (refundable).
-> DeepSeek V4 rumors
-> are back, and we learned our lesson not to get too excited, but in their deafening silence
-> since v3.2
-> , Moonshot has owned the crown of
-> leading Chinese open model lab for all of 2026 to date
-> , and K2.6 refreshes the lead that
-> K2.5 established in January
-> , with (presumably) more continued pre/posttraining (this
+> Justus Mattern
+> @MatternJustus
+> Introducing FrontierSWE, an ultra-long horizon coding benchmark.
+> 
+> We test agents on some of the hardest technical tasks like optimizing a video rendering library or training a model to predict the quantum properties of molecules.
+> 
+> Despite having 20 hours, they rarely succeed
+> 8:30 PM · Apr 16, 2026
+> ·
+> 200K Views
+> 77 Replies
+> ·
+> 133 Reposts
+> ·
+> 1.29K Likes
 
 ## 4. Introducing the Substack app
 
-- **URL:** https://open.substack.com/pub/swyx/p/ainews-moonshot-kimi-k26-the-worlds?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
+- **URL:** https://open.substack.com/pub/bensbites/p/thats-my-designer-claude?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
 - **Length:** 115 chars
 
 > World-class video, podcasts, and writing
 > The best stories, ideas, and culture right at your fingertips.
 > Get the app
 
-## 5. AI Engineer World's Fair 2026: June 29
+## 5. We're Back. The Cerebral Valley AI Summit Returns to London on June 24.
 
-- **URL:** https://substack.com/redirect/b1974b8b-6cad-427e-8282-259cffdedf0c?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 1069 chars
+- **URL:** https://substack.com/redirect/6e2b46d1-8698-4264-853c-796327432496?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 1764 chars
 
-> Choose from 10 parallel engineering tracks and 400+ sessions, alongside dedicated Leadership Track programming for executives. Team attendance makes sense and group discounts help.
-> 01
-> RL + Reasoning
-> 02
-> Evals & Observability
-> 03
-> Robotics
-> 04
-> World Models
-> 05
-> Memory & Continual Learning
-> 06
-> Voice
-> 07
-> Security
-> 08
-> Search & Retrieval (RAG, Deep Research, Web search)
-> 09
-> Graphs (Knowledge/Context Graphs, GNNs, GraphRAG)
-> 10
-> Generative Media / Creative AI
-> 11
-> Sandboxes
-> 12
-> LLM Production Infra
-> 13
-> Vision (OCR, S
+> Big news. We’re heading back across the pond.
+> Last year, we brought the
+> Cerebral Valley AI Summit
+> to Europe for the first time.
+> London was too good to do just once. We’re returning with another world-class lineup of AI leaders, founders, and investors for what’s shaping up to be one of our best summits.
+> Apply to Attend
+> Over the years,
+> CVAI
+> has earned a reputation as the summit where real things happen — new partnerships, fresh funding rounds, and deals you’ll read about later.
+> Databricks’ acquis
 
-## 6. [AINews] Moonshot Kimi K2.5 - Beats Sonnet 4.5 at half the cost, SOTA Open Model, first Native Image+Video, 100 parallel Agent Swarm manager
+## 6. Apply to Gauntlet AI
 
-- **URL:** https://substack.com/redirect/022d246f-0fc1-4488-842a-2a86edda6ab8?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 52316 chars
+- **URL:** https://substack.com/redirect/5cd4bc4c-5bf2-4054-8e0b-776cc52cc95c?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 501 chars
 
-> AI News for 1/26/2026-1/27/2026. We checked 12 subreddits,
-> 544
-> Twitters
-> and
-> 24
-> Discords (
-> 206
-> channels, and
-> 7476
-> messages) for you. Estimated reading time saved (at 200wpm):
-> 602 minutes
-> .
-> AINews’ website
-> lets you search all past issues. As a reminder,
-> AINews is now a section of Latent Space
-> . You can
-> opt in/out
-> of email frequencies!
-> Kimi has been on an
-> absolute tear in the past year
-> , and we last heard from them in November with
-> Kimi K2 Thinking
-> . Like K2, today’s K2.5 is still a 32B active-1T p
+> The Problem
+> Your job won't make you AI-first.
+> Nothing will
+> — unless you force it.
+> You're already reading the papers, experimenting between meetings, pushing yourself to stay ahead.
+>             That energy is real — but scattered effort won't close the gap.
+> You need a forcing function to go from curious to dangerous.
+> Gauntlet exists because the gap between "experimenting with AI" and
+> building with it as a core primitive
+> doesn't close gradually. It closes in a compressed burst of focused execution
 
-## 7. [AINews] Moonshot Kimi K2.6: the world's leading Open Model refreshes to catch up to Opus 4.6 (ahead of DeepSeek v4?)
+## 7. Introducing Claude Opus 4.7
 
-- **URL:** https://substack.com/redirect/e3baa7fb-b92a-4906-b8e5-f78ca7431b13?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 11131 chars
+- **URL:** https://substack.com/redirect/4b1e78e4-bebb-4f5d-81ed-125e3dddc5cc?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 17354 chars
 
-> Two days left before Early Bird ends for
-> AI Engineer World’s Fair
-> this Summer in SF. This is will be THE BIG ONE of the year - lock in discounts up to $500 (refundable).
-> DeepSeek V4 rumors
-> are back, and we learned our lesson not to get too excited, but in their deafening silence
-> since v3.2
-> , Moonshot has owned the crown of
-> leading Chinese open model lab for all of 2026 to date
-> , and K2.6 refreshes the lead that
-> K2.5 established in January
-> , with (presumably) more continued pre/posttraining (this
+> Our latest model, Claude Opus 4.7, is now generally available.
+> Opus 4.7 is a notable improvement on Opus 4.6 in advanced software engineering, with particular gains on the most difficult tasks. Users report being able to hand off their hardest coding work—the kind that previously needed close supervision—to Opus 4.7 with confidence. Opus 4.7 handles complex, long-running tasks with rigor and consistency, pays precise attention to instructions, and devises ways to verify its own outputs before re
 
-## 8. [AINews] Anthropic accuses DeepSeek, Moonshot, and MiniMax of >16 million "industrial-scale distillation attacks"
+## 8. Introducing Claude Design by Anthropic Labs
 
-- **URL:** https://substack.com/redirect/8ed440cb-d9e9-45b5-9ce3-dceed6014bef?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 27559 chars
+- **URL:** https://substack.com/redirect/35d121a7-6b1e-452f-9778-96bd630fc179?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 5313 chars
 
-> A big day of small news:
-> SWE-Bench Verified is dead
-> , and
-> SaaS/DoorDash stocks notably dropped
-> with a lot of back and forth today on
-> the Citrini 2028 essay
-> , but we will dismiss doomer scifi as we did
-> AI 2027
-> , not because it may not come true, but because it is unverifiable.
-> What is reasonably believable today is Anthropic’s
-> -VERY- widely viewed
-> and criticized accusations of 3 of the leading Chinese labs of distillation:
-> The sizes of the distillation vary a lot - Minimax is an order of magnitud
+> Today, we’re launching Claude Design, a new
+> Anthropic Labs
+> product that lets you collaborate with Claude to create polished visual work like designs, prototypes, slides, one-pagers, and more.
+> Claude Design is powered by our most capable vision model,
+> Claude Opus 4.7
+> , and is available in research preview for Claude Pro, Max, Team, and Enterprise subscribers. We’re rolling out to users gradually throughout the day.
+> Design with Claude
+> Even experienced designers have to ration exploration—there's r
 
-## 9. [AINews] Gemini 3.1 Pro: 2x 3.0 on ARC-AGI 2
+## 9. Codex | OpenAI Developers
 
-- **URL:** https://substack.com/redirect/941ac8eb-bbed-45ec-ae35-5b2ef0e1654c?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 1838 chars
+- **URL:** https://substack.com/redirect/6e6f5863-ae3c-4a4b-8caf-fd8e7715425b?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 6339 chars
 
-> AI News for 2/18/2026-2/19/2026. We checked 12 subreddits,
-> 544 Twitters
-> and 24 Discords (
-> 262
-> channels, and
-> 14980
-> messages) for you. Estimated reading time saved (at 200wpm):
-> 1467
-> minutes.
-> AINews’ website
-> lets you search all past issues. As a reminder,
-> AINews is now a section of Latent Space
-> . You can
-> opt in/out
-> of email frequencies!
-> It’s getting a little hard to say interesting things with all the round robin minor version updates of frontier models every week, but Gemini 3.1 Pro seems like a d
+> Chronicle is in an
+> opt-in research preview
+> . It is only available for
+> ChatGPT Pro subscribers on macOS, and is not yet available in the EU, UK and
+> Switzerland. Please review the
+> Privacy and Security
+> section for details and to understand the current risks before enabling.
+> Chronicle augments Codex memories with context from your screen. When you prompt
+> Codex, those memories can help it understand what you’ve been working on with
+> less need for you to restate context.
+> Chronicle is available as an op
 
-## 10. [AINews] Moonshot Kimi K2.6: the world's leading Open Model refreshes to catch up to Opus 4.6 (ahead of DeepSeek v4?)
+## 10. Autonomous AI Agents on Your Desktop
 
-- **URL:** https://substack.com/redirect/91bf24b9-793c-4a99-a132-d67ead82899c?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 11131 chars
+- **URL:** https://substack.com/redirect/10251168-b3d9-4759-9452-e4458a481161?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+- **Length:** 633 chars
 
-> Two days left before Early Bird ends for
-> AI Engineer World’s Fair
-> this Summer in SF. This is will be THE BIG ONE of the year - lock in discounts up to $500 (refundable).
-> DeepSeek V4 rumors
-> are back, and we learned our lesson not to get too excited, but in their deafening silence
-> since v3.2
-> , Moonshot has owned the crown of
-> leading Chinese open model lab for all of 2026 to date
-> , and K2.6 refreshes the lead that
-> K2.5 established in January
-> , with (presumably) more continued pre/posttraining (this
-
-## 11. [AINews] Moonshot Kimi K2.6: the world's leading Open Model refreshes to catch up to Opus 4.6 (ahead of DeepSeek v4?)
-
-- **URL:** https://substack.com/redirect/e0e524b8-810e-4c48-a2d7-8fe2c74d7640?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 11131 chars
-
-> Two days left before Early Bird ends for
-> AI Engineer World’s Fair
-> this Summer in SF. This is will be THE BIG ONE of the year - lock in discounts up to $500 (refundable).
-> DeepSeek V4 rumors
-> are back, and we learned our lesson not to get too excited, but in their deafening silence
-> since v3.2
-> , Moonshot has owned the crown of
-> leading Chinese open model lab for all of 2026 to date
-> , and K2.6 refreshes the lead that
-> K2.5 established in January
-> , with (presumably) more continued pre/posttraining (this
-
-## 12. AINews | AINews
-
-- **URL:** https://substack.com/redirect/2dd9aa48-bc13-41c4-b8d3-1176bb4482dd?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 1481 chars
-
-> kimi-k2.6
-> qwen-3.6-max-preview
-> moonshot
-> alibaba
-> vllm
-> openrouter
-> cloudflare
-> baseten
-> mlx
-> nous-research
-> opencode
-> ollama
-> mixture-of-experts
-> multimodality
-> int4-quantization
-> long-context
-> agentic-coding
-> multi-agent-systems
-> model-orchestration
-> memory-consolidation
-> llm-driven-replanning
-> dynamic-context-injection
-> Moonshot's Kimi K2.6
-> is a major open-weight
-> 1T-parameter MoE
-> model featuring
-> 32B active parameters
-> ,
-> 384 experts
-> ,
-> MLA attention
-> ,
-> 256K context window
-> , native multimodality, and
-> INT4 quantizatio
+> Computer use
+> Droids control desktop applications, browsers, terminals, and more. Open your staging environment, click through a user flow, switch to VS Code, run commands, pull data from a spreadsheet, or draft a sales deck.
+> Droid Computers
+> Every Droid gets a persistent machine. Not an ephemeral sandbox that rebuilds each session. Cloud Computers provision instantly. BYO Machine registers your own hardware. Local model support runs entirely on your GPU.
+> Multi-agent sessions
+> Run Droids across mul
 
