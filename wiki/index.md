@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-20 (Claude Code Routines, Noetik biotech AI; Claude 4.7 tokenizer; Context Graphs; GEPA/RLMs)
+Last updated: 2026-04-21 (RLM + DSPy.LongCoT breakthrough; @raw_works added to monitoring)
 
 ## Entity Pages (84)
 
@@ -28,7 +28,7 @@ Last updated: 2026-04-20 (Claude Code Routines, Noetik biotech AI; Claude 4.7 to
 - [[mismanaged-geniuses-hypothesis]] — Frontier LMs are underutilized due to sub-optimal scaffolding; composition > scaling (2026-04-19)
 - [[multi-agent-consensus-patterns]] — Multi-agent consensus patterns: Supervisor, Hierarchical, P2P, Swarm; SWARM+ three-phase protocol (2026-04-19)
 - [[elixir-beam-agent-orchestration]] — Elixir/BEAM for agent orchestration: process supervision, GenServer, OpenAI Symphony architecture (2026-04-19)
-- [[claude-47-tokenizer]] — Claude Opus 4.7 tokenizer change: 1.46x text, 3x high-res images, ~40% cost increase (2026-04-20)
+- [[rlm-recursive-language-models]] — RLM paradigm, REPL-as-environment, DSPy.RLM achieving SOTA on LongCoT (Apr 2026)
 - [[headless-ai-services]] — Headless AI services: personal AI via API instead of GUI, Matt Webb/Brandur Leach API-first wave (2026-04-20)
 
 ### Blog Authors (HN Popular Blogs — 84 feeds)
@@ -516,6 +516,8 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 - [[alex-zhang|Alex L. Zhang]] (@a1zhang) — MIT CSAIL PhD (Khattab, Kraska). Recursive Language Models (RLMs). "Language models will be scaffolds." GPU MODE, KernelBench (ICML 2025 Best Paper). L3: RLM context-centric decomposition, Scaffold philosophy, Software 1.0→2.0→3.0 paradigm, Karpathy comparison (training vs inference optimization).
 - [[elvis-sun]] — 4x founder, ex-Google/Firebase (8yr). Medialyst.ai, PressPulse.ai, Solar Flare PR. Context Lake (Obsidian+Claude Code), Vibe-Launching, Attention Flywheel, Newsjacking, AI cold email systems. Enriched from 13+ blog posts.
 - [[shunyu-yao|Shunyu Yao]] (@shunyuyao12) — OpenAI Research Scientist (CUA). ReAct, Tree of Thoughts, Reflexion, SWE-bench/SWE-agent, tau-bench. "The Second Half: RL finally generalizes, evaluation > training, problem-defining > problem-solving." L3: Agent-Computer Interfaces, reasoning as action in RL space, trained scaffolds paradigm.
+
+- [[raw-works|Raymond Weitekamp]] (@raw_works) — RLM researcher. DSPy.RLM achieving SOTA on LongCoT with Qwen3.5-27B (22.18%, >2× GPT-5.2). raw.works blog author.
 
 ### Coding Agents & Swarm Orchestration
 

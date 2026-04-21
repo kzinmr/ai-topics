@@ -1,4 +1,14 @@
 accounts:
+- handle: '@raw_works'
+  name: Raymond Weitekamp
+  blog: https://raw.works
+  topics:
+  - ai
+  - ml-research
+  - rlms
+  - dspy
+  - reasoning-models
+  notes: RLM researcher; demonstrated DSPy.RLM achieving SOTA on LongCoT with Qwen3.5-27B. Active in RLM/DSPy community.
 - handle: '@willccbb'
   name: Will Brown
   topics:

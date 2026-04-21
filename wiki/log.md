@@ -1,3 +1,17 @@
+## 2026-04-21 — Inbox: RLM articles + @raw_works monitoring
+
+### Raw Articles Added
+- `raw/articles/raw-works-rlms-new-reasoning-models-2026-04-20.md` — RLM history, reasoning+tool-use timeline, three failure modes
+- `raw/articles/raw-works-rlms-sota-on-longcot-2026-04-19.md` — DSPy.RLM + Qwen3 achieving SOTA on LongCoT
+
+### Pages Updated
+- `concepts/rlm-recursive-language-models.md` — Merged April 2026 RLM+DSPy breakthrough results (LongCoT benchmarks)
+- `entities/raw-works.md` — NEW skeleton page for Raymond Weitekamp (@raw_works)
+- `index.md` — Added raw-works entity + updated last_updated timestamp
+
+### X Account Added
+- `@raw_works` (Raymond Weitekamp) → `config/feeds/x-accounts.yaml` — RLM researcher, DSPy.RLM experiments
+
 ## 2026-04-20 — dreaming: daily consolidation
 
 ### Duplicate Check Summary

@@ -52,7 +52,25 @@ The RLM uses the REPL as a **control plane** for long context:
 
 This design means the **main model's context window stays bounded** regardless of input size.
 
-## Key Results
+### RLM + DSPy Breakthrough (April 2026)
+
+Raymond Weitekamp ([@raw_works](https://twitter.com/raw_works)) demonstrated that DSPy.RLM enables small open models to achieve SOTA on LongCoT:
+
+| Model + Setup | LongCoT-Mini | LongCoT-Full |
+|---------------|-------------|--------------|
+| Qwen3-8B (vanilla) | 0% | — |
+| Qwen3-8B + dspy.RLM | 6.5% (#7 on leaderboard) | — |
+| Qwen3.5-9B + dspy.RLM | 17.2% | 15.69% (SOTA) |
+| Qwen3.5-27B + dspy.RLM | — | **22.18%** (new king) |
+| GPT-5.2 | — | 9.83% |
+
+> "Same model. Same weights. No fine-tuning. The scaffold is doing 100% of the lifting." — [@raw_works](https://twitter.com/raw_works/status/2045208764509470742)
+
+**Key insight:** Small open models + RLM scaffold can more than double the performance of closed frontier models. Full benchmark (2500 questions) validates these results.
+
+Sources:
+- [RLMs are SOTA on LongCoT](https://raw.works/rlms-are-sota-on-longcot/) (Apr 2026)
+- [RLMs are the New Reasoning Models](https://raw.works/rlms-are-the-new-reasoning-models/) (Apr 2026)
 
 ### Benchmark Performance
 
