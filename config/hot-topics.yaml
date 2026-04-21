@@ -119,7 +119,7 @@ topics:
   - concepts/claude-memory
   notes: '前提: episodic vs semantic memory, vector DB architectures等'
   added: 2026-04-14
-  last_crawled: null
+  last_crawled: '2026-04-21'
 - slug: death-of-browser
   title: Death of Browser
   crawl_policy: deepdive
@@ -158,7 +158,7 @@ topics:
   notes: 'neuromorphic + symbolic reasoningの統合アプローチ。関連: reasoning models (o1-style,
     CoT, PRM)はニューラル単体だが異なる系統。前提: knowledge graphs, formal verification, theorem proving等'
   added: 2026-04-14
-  last_crawled: null
+  last_crawled: '2026-04-21'
 - slug: ai-bubble-economics
   title: AI Bubble Economics
   crawl_policy: monitor
