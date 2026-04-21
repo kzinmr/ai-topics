@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-21 (RLM + DSPy.LongCoT breakthrough; @raw_works added to monitoring)
+Last updated: 2026-04-21 (Kimi K2.6; GitHub Copilot token billing; Anthropic distillation accusations)
 
 ## Entity Pages (84)
 
@@ -31,6 +31,9 @@ Last updated: 2026-04-21 (RLM + DSPy.LongCoT breakthrough; @raw_works added to m
 - [[rlm-recursive-language-models]] — RLM paradigm, REPL-as-environment, DSPy.RLM achieving SOTA on LongCoT (Apr 2026)
 - [[dspy-rlm]] — DSPy.RLM API reference: module interface, REPL loop, built-in tools, Deno/Pyodide sandbox
 - [[headless-ai-services]] — Headless AI services: personal AI via API instead of GUI, Matt Webb/Brandur Leach API-first wave (2026-04-20)
+- [[kimi-k2-6]] — Moonshot Kimi K2.6: 1T MoE, 32B active, 384 experts, 256K context, open-weight (2026-04-21)
+- [[github-copilot-billing]] — GitHub Copilot shifts to token-based billing, tightens rate limits, ends subsidized AI era (2026-04-20)
+- [[test-case-minimization]] — Binary search on entropy for automatic test case reduction in property-based testing (2026-04-20)
 
 ### Blog Authors (HN Popular Blogs — 84 feeds)
 
