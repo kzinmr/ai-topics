@@ -171,8 +171,66 @@ Both converge on: **the scaffold itself becomes the environment for RL training*
 > "RLMs reframe long context as an environment variable."
 > — MarkTechPost technical summary
 
+## DSPy.RLM API Reference
+
+DSPy v3.1.3+ ships built-in `dspy.RLM` module. The API provides a high-level interface for RLM execution:
+
+### Constructor Parameters
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `signature` | `str \| Signature` | required | Input/output definition (e.g., `"context, query -> answer"`) |
+| `max_iterations` | `int` | 20 | Maximum REPL interaction loops |
+| `max_llm_calls` | `int` | 50 | Maximum `llm_query` calls per execution |
+| `max_output_chars` | `int` | 10,000 | Maximum characters from REPL output |
+| `verbose` | `bool` | `False` | Enable detailed logging |
+| `tools` | `list[Callable]` | `None` | Additional tools callable from interpreter |
+| `sub_lm` | `dspy.LM` | `None` | Sub-LM for queries (defaults to `dspy.settings.lm`). Use cheaper model. |
+| `interpreter` | `CodeInterpreter` | `None` | Custom interpreter (default: Deno/Pyodide WASM) |
+
+### Built-in Tools
+
+| Tool | Description |
+|------|-------------|
+| `llm_query(prompt)` | Query sub-LM for semantic analysis (~500K char capacity) |
+| `llm_query_batched(prompts)` | Batch multiple prompts concurrently |
+| `print()` | Print output (required to see results) |
+| `SUBMIT(...)` | Submit final output and end execution |
+| Standard library | `re, json, collections, math`, etc. |
+
+### Basic Usage Example
+
+```python
+import dspy
+
+dspy.configure(lm=dspy.LM("openai/gpt-5"))
+rlm = dspy.RLM("context, query -> answer")
+
+result = rlm(
+    context="...very long document...",
+    query="What is the total revenue mentioned?"
+)
+print(result.answer)
+```
+
+### Deno Requirement
+
+RLM uses Deno + Pyodide for WASM sandbox. Install:
+```bash
+curl -fsSL https://deno.land/install.sh | sh
+```
+
+### Output Structure
+
+Returns `Prediction` with:
+- Output fields from signature (e.g., `result.answer`)
+- `trajectory`: List of dicts with `reasoning`, `code`, `output` per step
+- `final_reasoning`: LLM reasoning on final step
+
 ## Related Concepts
 
+- **[[DSPy]]** — Declarative LM programming framework; ships RLM module
+- **[[DSPy.RLM]]** — This page covers the DSPy.RLM implementation
 - **[[Context Folding]]** — Parallel approach: branch/return with summarization
 - **[[Inference-Time Scaling]]** — RLM scales computation, not parameters
 - **[[Agent-Computer Interfaces]]** — RLM as a new ACI paradigm

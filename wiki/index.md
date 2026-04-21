@@ -29,6 +29,7 @@ Last updated: 2026-04-21 (RLM + DSPy.LongCoT breakthrough; @raw_works added to m
 - [[multi-agent-consensus-patterns]] — Multi-agent consensus patterns: Supervisor, Hierarchical, P2P, Swarm; SWARM+ three-phase protocol (2026-04-19)
 - [[elixir-beam-agent-orchestration]] — Elixir/BEAM for agent orchestration: process supervision, GenServer, OpenAI Symphony architecture (2026-04-19)
 - [[rlm-recursive-language-models]] — RLM paradigm, REPL-as-environment, DSPy.RLM achieving SOTA on LongCoT (Apr 2026)
+- [[dspy-rlm]] — DSPy.RLM API reference: module interface, REPL loop, built-in tools, Deno/Pyodide sandbox
 - [[headless-ai-services]] — Headless AI services: personal AI via API instead of GUI, Matt Webb/Brandur Leach API-first wave (2026-04-20)
 
 ### Blog Authors (HN Popular Blogs — 84 feeds)
