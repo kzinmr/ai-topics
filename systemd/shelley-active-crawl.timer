@@ -1,9 +1,0 @@
-[Unit]
-Description=Daily Active Knowledge Crawl
-
-[Timer]
-OnCalendar=*-*-* 11:00 UTC
-Persistent=true
-
-[Install]
-WantedBy=timers.target
