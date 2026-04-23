@@ -119,7 +119,7 @@ This approach has benefits: it invites collaboration, demonstrates genuine resea
 
 ## Related Wikilinks
 
-- [[Entropix]] — Rose's entropy-based sampling system for language models
+- [[raw/articles/thariq-shihipar-entropix.md]] — Rose's entropy-based sampling system for language models
 - [[Sampling Strategies]] — The collection of specialized sampling techniques in Entropix
 - [[Chain-of-Thought]] — Parallel CoT decoding approach in Entropix
 - [[Inference-Time Compute]] — Rose's thesis on smarter inference over bigger models

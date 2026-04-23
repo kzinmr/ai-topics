@@ -141,3 +141,11 @@ This tweet generated significant discussion, with replies from Eduardo Bergel (@
 ## Key Insight: The Curator as Sensor
 
 gm8xx8 represents a new type of signal source in the AI ecosystem — not a researcher, builder, or commentator, but a **high-taste curator** whose upvote/share patterns serve as an early-warning system for emerging research trends. Their interest in formal methods (proofs, CDCL solvers) combined with practical engineering (quantization, VLA, hardware) is unusually broad and suggests someone with both theoretical and applied backgrounds.
+
+## See Also
+
+- [[entities/_index.md]]
+- [[entities/geoffreylitt-com.md]]
+- [[entities/oldvcr-blogspot-com.md]]
+- [[entities/brutecat-com.md]]
+- [[entities/krebsonsecurity-com.md]]

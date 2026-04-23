@@ -47,4 +47,4 @@ print(result.data)  # UserProfile(name='Alex', age=30, interests=['coding', 'rea
 
 - [[samuel-colvin]] — Creator
 - [[pydantic-ai]] — Framework
-- [[structured-output]] — Pattern
+- [[concepts/structured-outputs.md]] — Pattern

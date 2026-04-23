@@ -1,3 +1,9 @@
+---
+title: Gary Marcus: The biggest advance in AI since the LLM
+category: other
+status: active
+---
+
 # Gary Marcus: The biggest advance in AI since the LLM
 **Source:** https://garymarcus.substack.com/p/the-biggest-advance-in-ai-since-the
 **Date:** 2026-04-11

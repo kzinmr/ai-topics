@@ -1,3 +1,9 @@
+---
+title: Unlocking the Codex Harness: How We Built the App Server
+category: other
+status: active
+---
+
 # Unlocking the Codex Harness: How We Built the App Server
 **Source:** OpenAI Engineering Blog | **Date:** February 4, 2026 | **Author:** Celia Chen (Technical Staff)
 **URL:** https://openai.com/ja-JP/index/unlocking-the-codex-harness/

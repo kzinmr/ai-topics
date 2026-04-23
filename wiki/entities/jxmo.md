@@ -117,3 +117,7 @@ Older blog posts at [jxmo.io/blog](https://jxmo.io/blog) include essays on AGI d
 - **Podcast appearances** — Promotes Latent Space episodes and other media featuring his work
 - **Dataset-centric AI thesis** — Consistent messaging that data, not algorithms, drives progress
 - **RL for reasoning models** — Recent focus on reinforcement learning as the next scaling paradigm
+
+## See Also
+
+- [[entities/_index.md]]

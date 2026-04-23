@@ -66,3 +66,11 @@ For Claude Code specifically:
 ## Sources
 
 - [Claude's Memory](https://www.shloked.com/writing/claude-memory) — Shlok Khemani, April 12, 2026
+
+## See Also
+
+- [[concepts/_index.md]]
+- [[concepts/claude-memory-tool.md]]
+- [[concepts/ai-agent-memory-middleware.md]]
+- [[concepts/memory-systems-design-patterns.md]]
+- [[concepts/knowledge-graph-memory-agents.md]]

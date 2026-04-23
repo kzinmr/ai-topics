@@ -135,7 +135,7 @@ His **ch32v003-daplink** project — porting the CMSIS-DAP debugger protocol to 
 
 - [[The Silicon Underground]] — Dave Farquhar's blog; shares Ionescu's deep interest in hardware history and technical archaeology
 - [[Construction Physics]] — Brian Potter's newsletter; both Ionescu and Potter examine the material foundations of technology
-- [[Tedium]] — Ernie Smith's newsletter; both find fascination in overlooked and discarded technology
+- [[entities/tedium-the-dull-side-of-the-internet.md]] — Ernie Smith's newsletter; both find fascination in overlooked and discarded technology
 - [[Philip Laine]] — another engineer who publishes practical, project-based technical writing
 - [[Semihost-IP]] — Ionescu's TCP/IP over SWD project (945+ GitHub stars)
 - [[MicroPPPID]] — MicroPython PID kiln controller for pottery

@@ -1,3 +1,9 @@
+---
+title: Intent Formalization: A Grand Challenge for Reliable Coding in the Age of AI Agents
+category: other
+status: active
+---
+
 # Intent Formalization: A Grand Challenge for Reliable Coding in the Age of AI Agents
 
 **Source:** RiSE MSR Blog (Microsoft Research)

@@ -98,11 +98,11 @@ Unlike many AI startups that keep their technology proprietary, OpenPipe has con
 
 ## Related
 
-- [[fine-tuning]] — Model customization via supervised fine-tuning
+- [[concepts/fine-tuning/unsloth.md]] — Model customization via supervised fine-tuning
 - [[reinforcement-learning]] — RL training for AI agents
 - [[coreweave]] — Acquired OpenPipe in 2025
 - [[y-combinator]] — Corbitt's former employer (Startup School Director)
-- [[bitter-lesson]] — Philosophy underlying OpenPipe's approach
+- [[concepts/chatgpt-memory-bitter-lesson.md]] — Philosophy underlying OpenPipe's approach
 
 ## Sources
 

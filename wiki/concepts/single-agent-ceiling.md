@@ -71,4 +71,4 @@ AIコーディングエージェントを使用する全ての開発者が直面
 
 ## ソース
 
-- [[raw/articles/milksandmatcha-0xsero-single-agent-nightmare-2026|Single-agent AI coding is a nightmare for engineers]] — Sarah Chieng (@MilksandMatcha) + @0xSero (April 2026)
+- [[raw/articles/milksandmatcha-0xsero-single-agent-nightmare-2026.md]] — Sarah Chieng (@MilksandMatcha) + @0xSero (April 2026)

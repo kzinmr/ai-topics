@@ -65,7 +65,7 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 - [[sandbox]] — AI agent sandbox isolation technologies
 
 ## Sources
-- [[raw/articles/openai-agents-sdk-next-evolution-2026-04]]
-- [[raw/articles/openai-sandbox-agents-api-guide-2026-04]]
+- [[raw/articles/openai-agents-sdk-next-evolution-2026-04.md]]
+- [[raw/articles/openai-sandbox-agents-api-guide-2026-04.md]]
 - [OpenAI Agents SDK Blog (2026-04-15)](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
 - [OpenAI API Sandbox Docs](https://developers.openai.com/api/docs/guides/agents/sandboxes)

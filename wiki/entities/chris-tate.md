@@ -117,7 +117,7 @@ He occasionally shares **technical threads** explaining the reasoning behind his
 
 ## Related
 
-- [[simonw]] — Simon Willison, similar focus on developer tools and AI
+- [[raw/articles/open.substack.com--pub-simonw-p-metas-new-model-is-muse-spark-and--57c95054.md]] — Simon Willison, similar focus on developer tools and AI
 - [[antirez-com]] — Salvatore Sanfilippo, shared philosophy of building for developers
 - [[geoffreylitt-com]] — Geoffrey Litt, small tools and local-first philosophy
 - [[mitsuhiko]] — Armin Ronacher (Flask), developer tooling focus

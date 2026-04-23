@@ -92,10 +92,10 @@ Bernstein's commitment to education extends beyond his blog. At Dartmouth, he te
 - [[ZJIT]] — Ruby's new method-level JIT compiler; Bernstein's primary current project
 - [[YJIT]] — Ruby's existing basic-block JIT compiler; predecessor to ZJIT
 - [[Maxime Chevalier-Boisvert]] — Co-author on type propagation work; compiler researcher
-- [[Shopify]] — Employer; sponsors Ruby and Rails development
+- [[raw/articles/open.substack.com--pub-swyx-p-shopify--d7096697.md]] — Employer; sponsors Ruby and Rails development
 - [[Recurse Center]] — Self-directed learning community; Bernstein attended Fall 2 2024
 - [[Scrapscript]] — Small language Bernstein is implementing as a learning vehicle
-- [[SSA]] — Static Single Assignment form; central to ZJIT's IR design
+- [[entities/demis-hassabis.md]] — Static Single Assignment form; central to ZJIT's IR design
 - [[Cinder]] — Instagram's performance-oriented CPython fork; one of five Python runtimes Bernstein has contributed to
 - [[Dartmouth College]] — Where Bernstein is Hacker in Residence and teaches compilers
 - [[Geoffrey Litt]] — Fellow programmer-researcher; complementary focus on end-user programming vs. systems-level compilation

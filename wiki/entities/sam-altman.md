@@ -209,7 +209,7 @@ The 2023 board crisis revealed deep tensions between safety-focused board member
 - [[Dario Amodei]] — Anthropic CEO; competitor
 - [[openai]] — Company Altman leads
 - [[worldcoin]] — Altman's proof-of-personhood project
-- [[agi]] — Altman's stated long-term goal
+- [[raw/articles/prnewswire.com--news-releases-agibot-reaches-10-000-units-as-real-world-dema--1e894058.md]] — Altman's stated long-term goal
 
 ## Sources
 

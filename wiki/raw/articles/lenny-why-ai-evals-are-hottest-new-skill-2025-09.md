@@ -1,3 +1,9 @@
+---
+title: Why AI Evals Are the Hottest New Skill
+category: other
+status: active
+---
+
 # Why AI Evals Are the Hottest New Skill
 
 Source: Lenny's Newsletter | Sept 25, 2025

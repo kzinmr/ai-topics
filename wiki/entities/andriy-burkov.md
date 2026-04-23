@@ -3,7 +3,7 @@ title: Andriy Burkov
 handle: "@andriy-burkov"
 created: 2026-04-10
 updated: 2026-04-10
-related: [[[hundred-page-ml-book]], [[hundred-page-nlp-book]], [[ml-education]], [[true-positive-weekly]]]
+related: [[[hundred-page-ml-book]], [[hundred-page-nlp-book]], [[ml-education]], [[raw/articles/open.substack.com--pub-aiweekly-p-true-positive-weekly-157--5e171cd5.md]]]
 tags:
   - person
   - ai

@@ -1,3 +1,9 @@
+---
+title: Unrolling the Codex Agent Loop
+category: other
+status: active
+---
+
 # Unrolling the Codex Agent Loop
 **Source:** OpenAI Engineering Blog | **Date:** January 23, 2026 | **Author:** Michael Bolin (Member of Technical Staff)
 **URL:** https://openai.com/index/unrolling-the-codex-agent-loop/

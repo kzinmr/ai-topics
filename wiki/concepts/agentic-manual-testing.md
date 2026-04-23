@@ -11,7 +11,7 @@ description: "Manual testing enhanced with AI agent assistance. See harness-engi
 
 # Agentic Manual Testing
 
-> **Note:** This page is a stub and needs expansion. See [[harness-engineering/agentic-workflows/agentic-manual-testing]] for the full content.
+> **Note:** This page is a stub and needs expansion. See [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md]] for the full content.
 
 ## Summary
 
@@ -31,6 +31,6 @@ From Simon Willison's approach:
 
 ## See Also
 
-- [[harness-engineering/agentic-workflows/agentic-manual-testing]] — Full content
+- [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md]] — Full content
 - [[red-green-tdd]] — Red/Green TDD pattern
 - [[first-run-the-tests]] — First run the tests pattern

@@ -1,3 +1,9 @@
+---
+title: ChernyCode - Boris Cherny's Claude Code Config Files
+category: other
+status: active
+---
+
 # ChernyCode - Boris Cherny's Claude Code Config Files
 
 - **Date**: 2026-02-11

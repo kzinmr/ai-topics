@@ -125,7 +125,7 @@ Despite working in AI, Banks consistently returns to the human element:
 - [[datacamp]] — Platform where Banks teaches prompt engineering
 - [[harley]] — AI analytics startup founded by Banks
 - [[anthropic]] — Frequent coverage subject; Banks is an early adopter of Claude Skills
-- [[prompt-engineering]] — Banks's core expertise area
+- [[concepts/resilient-prompt-engineering.md]] — Banks's core expertise area
 
 ## Sources
 

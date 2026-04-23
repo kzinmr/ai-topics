@@ -137,7 +137,7 @@ The real value is in **pattern extraction**: understanding why Hermes's self-imp
 - [[agent-skills]] — Agent Skills / SKILL.md bundles
 - [[anthropic-openclaw-conflict]] — Open-source vs platform risk debate
 - [[harness-engineering]] — Harness Engineering framework
-- [[harness-engineering/agentic-workflows/agent-first-design]] — Agent-first codebase design
+- [[concepts/harness-engineering/agentic-workflows/agent-first-design.md]] — Agent-first codebase design
 - [[comparisons/hermes-vs-openclaw-architecture]] — Detailed architecture comparison
 
 ## Sources

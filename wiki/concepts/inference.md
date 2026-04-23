@@ -13,11 +13,11 @@ status: skeleton
 LLM推論最適化のための概念ページ。
 
 Subpages:
-- [[inference/llama-cpp]] — llama.cpp推論
-- [[inference/vllm]] — vLLM推論
-- [[inference/sglang]] — SGLang推論
+- [[concepts/inference/llama-cpp.md]] — llama.cpp推論
+- [[concepts/inference/vllm.md]] — vLLM推論
+- [[concepts/inference/sglang.md]] — SGLang推論
 
-> **Note:** This stub redirects to [[inference/_index]]. Expand with inference optimization techniques.
+> **Note:** This stub redirects to [[concepts/harness-engineering/system-architecture/_index.md]]. Expand with inference optimization techniques.
 
 ## See Also
 

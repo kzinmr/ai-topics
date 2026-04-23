@@ -64,3 +64,8 @@ Dwarkesh Patelの分析によれば：
 
 - [Dwarkesh Patel: What I learned this week](https://www.dwarkesh.com/p/what-i-learned-april-15)
 - AI Index Report 2026（コーディングエージェント採用データ）
+
+## See Also
+
+- [[concepts/_index.md]]
+- [[concepts/local-llm/model-distillation.md]]

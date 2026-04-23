@@ -178,3 +178,7 @@ Pixelmelt's writing has several distinctive characteristics:
 ## Contact
 
 - **Email:** `pixelmelt + at + protonmail.com` (noted humorously as "for Amazon affiliates")
+
+## See Also
+
+- [[entities/_index.md]]

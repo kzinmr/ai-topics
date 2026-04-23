@@ -82,3 +82,11 @@ This concept represents a fundamental shift in how we think about AI and securit
 - UK AISI, "Our evaluation of Claude Mythos Preview's cyber capabilities"
 - OpenAI, "Trusted access for the next era of cyber defense" (April 2026)
 - Simon Willison, "Trusted access for the next era of cyber defense," simonwillison.net (April 14, 2026)
+
+## See Also
+
+- [[concepts/_index.md]]
+- [[concepts/illusion-of-thinking.md]]
+- [[concepts/cognitive-cost-of-agents.md]]
+- [[concepts/back-of-house-multi-agent-patterns.md]]
+- [[concepts/back-of-house-patterns.md]]

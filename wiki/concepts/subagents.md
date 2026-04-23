@@ -11,7 +11,7 @@ description: "Parallel agent delegation patterns. See harness-engineering/agenti
 
 # Subagents
 
-> **Note:** This page is a stub and needs expansion. See [[harness-engineering/agentic-workflows/subagents]] for the full content.
+> **Note:** This page is a stub and needs expansion. See [[concepts/subagents.md]] for the full content.
 
 ## Summary
 
@@ -29,6 +29,6 @@ Subagents refers to the pattern of delegating tasks to parallel agent instances 
 
 ## See Also
 
-- [[harness-engineering/agentic-workflows/subagents]] — Full content
+- [[concepts/subagents.md]] — Full content
 - [[multi-agent-consensus-patterns]] — Consensus patterns
 - [[agent-team-swarm]] — Agent team patterns

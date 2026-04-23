@@ -60,8 +60,8 @@ Gary Marcus evaluated the results as finding a middle ground: Mythos is "nowhere
 > [!NOTE] Concern for agentic code: Marcus notes that agent-written code may itself be "weakly defended and vulnerable," compounding the risk when Mythos-level models are used to generate production code.
 
 ## Sources
-- [[raw/articles/substack.com--app-link-post--40004939]] (Ben's Bites, 2026-04-09)
-- [[raw/articles/substack.com--redirect-c9daf5ee-93ac-4141-9988-ef7dabf7f211--f39676e7]] (scraped article)
+- [[raw/articles/substack.com--app-link-post--40004939.md]] (Ben's Bites, 2026-04-09)
+- [[raw/articles/substack.com--redirect-c9daf5ee-93ac-4141-9988-ef7dabf7f211--f39676e7.md]] (scraped article)
 
 ## Related
 - [[anthropic]]

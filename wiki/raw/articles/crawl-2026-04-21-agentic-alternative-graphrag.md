@@ -1,3 +1,9 @@
+---
+title: An Agentic Alternative to GraphRAG
+category: other
+status: active
+---
+
 # An Agentic Alternative to GraphRAG
 
 **Source:** Contextual AI

@@ -83,3 +83,7 @@ RAM is one of the core analytical tools behind The ATOM Project's thesis that:
 - Nathan Lambert & Florian, "The ATOM Report" (April 2026)
 - Interconnects.ai newsletter, "Gemma 4 and what makes an open model succeed"
 - Substack article: "ATOM Report, post-training course, finishing my book, and research"
+
+## See Also
+
+- [[concepts/_index.md]]

@@ -1,3 +1,9 @@
+---
+title: A Philosophy of Software Design vs Clean Code
+category: comparison
+status: active
+---
+
 # A Philosophy of Software Design vs Clean Code
 
 **Date:** April 16, 2026

@@ -544,7 +544,7 @@ Future coding will resemble resource management games — setting up systems, de
 - [[eureka-labs]] — AI-native education company he founded
 - [[software-2.0]] — His seminal essay on neural networks as programs
 - [[vibe-coding]] — Term he coined for AI-assisted software development
-- [[harness-engineering/agentic-engineering]] — Term he coined for managing multiple AI agents in parallel
+- [[concepts/agentic-engineering.md]] — Term he coined for managing multiple AI agents in parallel
 - [[micrograd]] — His educational autograd engine
 - [[nanoGPT]] — Minimal GPT implementation for education
 - [[cs231n]] — His Stanford computer vision course

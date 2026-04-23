@@ -54,6 +54,6 @@ Primary coordination failures:
 
 ## Related
 - [[multi-agent-systems]]
-- [[coding-agents]]
+- [[concepts/long-context-coding-agents.md]]
 - [[harness-engineering]]
 - [[symphony-orchestration]]

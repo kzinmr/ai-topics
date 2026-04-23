@@ -1,3 +1,9 @@
+---
+title: RAW.works - RLMs are SOTA on LongCoT
+category: other
+status: active
+---
+
 # RAW.works - RLMs are SOTA on LongCoT
 
 **Source:** [raw.works](https://raw.works/rlms-are-sota-on-longcot/) | April 19, 2026
@@ -71,9 +77,9 @@ Result: **15.69% on LongCoT-full** — comfortably SOTA, ~1.6× GPT-5.2's 9.83%.
 ## Related Concepts
 
 - [[recursive-language-model]] — RLM
-- [[longcot]] — Long Chain-of-Thought benchmark
+- [[raw/articles/raw-works-rlms-sota-on-longcot-2026-04-19.md]] — Long Chain-of-Thought benchmark
 - [[dspy]] — DSPy framework
-- [[qwen]] — Qwen model family
+- [[entities/qwen3-6-plus.md]] — Qwen model family
 - [[reasoning-models]] — Reasoning models
 
 ---

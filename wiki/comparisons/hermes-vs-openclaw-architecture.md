@@ -134,7 +134,7 @@ OpenClaw's influence extends beyond direct usage. The governance patterns, prece
 - [[skill-architecture-patterns]] — Skill management comparison
 - [[harness-engineering]] — Harness Engineering framework
 - [[anthropic-openclaw-conflict]] — Open-source vs platform risk
-- [[harness-engineering/agentic-workflows/agent-first-design]] — Agent-first codebase design
+- [[concepts/harness-engineering/agentic-workflows/agent-first-design.md]] — Agent-first codebase design
 
 ## Sources
 

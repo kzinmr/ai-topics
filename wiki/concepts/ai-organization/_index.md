@@ -104,11 +104,11 @@ Reddit r/ClaudeCodeとFourWeekMBAの議論から浮上。
 
 ## 関連概念
 
-- [[harness-engineering/agentic-engineering]] — 開発者のAI活用ワークフロー
+- [[concepts/agentic-engineering.md]] — 開発者のAI活用ワークフロー
 - [[harness-engineering]] — エージェントの制御・構造化
 - [[multi-agent-autonomy-scale]] — 大規模マルチエージェントの自律とスケール
 - [[context-engineering]] — コンテキストエンジニアリング
-- [[mcp]] — Model Context Protocol (エージェント間連携基盤)
+- [[concepts/model-context-protocol-mcp.md]] — Model Context Protocol (エージェント間連携基盤)
 - [[ai-agent-traps]] — AIエージェントの罠と失敗パターン
 
 ## ソース一覧

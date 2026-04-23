@@ -135,13 +135,13 @@ Lambert writes with a distinctive mix of technical rigor and personal candor. He
 ## Related
 
 - [[allen-institute-ai]] — Current employer, OLMo project
-- [[huggingface]] — Previous employer, Zephyr and TRL work
+- [[raw/articles/huggingface.co--google-gemma-4-e4b--b37a0ece.md]] — Previous employer, Zephyr and TRL work
 - [[rlhf]] — Core research area, book author
-- [[dpo]] — Direct Preference Optimization, Zephyr
+- [[concepts/fine-tuning/rlhf-dpo-preference.md]] — Direct Preference Optimization, Zephyr
 - [[post-training]] — His primary research focus
 - [[rewardbench]] — Co-created reward model evaluation benchmark
-- [[open-models]] — Advocate for fully open AI development
-- [[grpo]] — Discussed extensively as part of the RLVR trend
+- [[raw/articles/open.substack.com--pub-robotic-p-my-bets-on-open-models-mid-2026--092e5750.md]] — Advocate for fully open AI development
+- [[concepts/fine-tuning/grpo-rl-training.md]] — Discussed extensively as part of the RLVR trend
 - [[simon-willison]] — Fellow open-source AI advocate
 - [[interconnects]] — His newsletter and podcast
 - [[tulu-3]] — Open post-training model family he leads

@@ -1,3 +1,9 @@
+---
+title: TPU 8t & TPU 8i Technical Deep Dive Summary
+category: other
+status: active
+---
+
 # TPU 8t & TPU 8i Technical Deep Dive Summary
 
 ## 🎯 Core Philosophy & Architectural Shift

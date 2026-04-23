@@ -61,3 +61,7 @@ Figma MakeはSonnet 4.5を使用——Same company now competing directly with t
 - [SaaS Apocalpse](../concepts/saas-apocalypse.md)
 - [Claude Design](../entities/claude-design.md)
 - [Anthropic](../entities/anthropic.md)
+
+## See Also
+
+- [[entities/_index.md]]

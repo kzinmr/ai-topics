@@ -1,3 +1,9 @@
+---
+title: AI Memory Systems: Two Camps Taxonomy
+category: concept
+status: active
+---
+
 # AI Memory Systems: Two Camps Taxonomy
 
 Classification of AI memory/context tools into two fundamentally different paradigms: Memory Backends vs Context Substrates.

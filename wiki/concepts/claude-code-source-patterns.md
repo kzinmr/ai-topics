@@ -79,3 +79,11 @@ Analysis of tactical engineering patterns found in Claude Code's leaked source c
 ## Sources
 
 - [What I Found Interesting in Claude Code's Source](https://www.shloked.com/writing/claude-code-source-patterns) — Shlok Khemani, March 31, 2026
+
+## See Also
+
+- [[concepts/_index.md]]
+- [[concepts/claude-memory-tool.md]]
+- [[concepts/memory-systems-design-patterns.md]]
+- [[concepts/claude-mythos-preview.md]]
+- [[concepts/claude-code-leak.md]]

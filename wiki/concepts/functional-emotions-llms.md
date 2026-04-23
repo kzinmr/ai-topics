@@ -64,12 +64,12 @@ The research suggests tracking internal emotion activations as a safety mechanis
 - May inform training techniques to reduce misalignment risks
 
 ## Sources
-- [[raw/articles/substack.com--redirect-49e1a4a9-80db-45f7-9d51-641102116435--4464220c]] (Anthropic research, 2026)
+- [[raw/articles/substack.com--redirect-49e1a4a9-80db-45f7-9d51-641102116435--4464220c.md]] (Anthropic research, 2026)
 - NLP News coverage (April 2026)
 
 ## Related
 - [[mechanistic-interpretability]]
-- [[alignment]]
+- [[raw/articles/open.substack.com--pub-importai-p-import-ai-454-automating-alignment--cf346657.md]]
 - [[claude-sonnet]]
 - [[emotion-concepts]]
 - [[safety-monitoring]]

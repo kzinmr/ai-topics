@@ -66,4 +66,4 @@ Key connection: Tasteful tokenmaxxing achieves the **FinOps layer** of [[token-e
 
 ## Sources
 
-- [[raw/articles/ainews-tasteful-tokenmaxxing-2026-04-23]] — AINews #21, Latent.Space (April 2026)
+- [[raw/articles/ainews-tasteful-tokenmaxxing-2026-04-23.md]] — AINews #21, Latent.Space (April 2026)

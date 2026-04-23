@@ -1,3 +1,9 @@
+---
+title: Boris Cherny - My Claude Code Setup (Jan 2026)
+category: other
+status: active
+---
+
 # Boris Cherny - My Claude Code Setup (Jan 2026)
 
 - **Date**: 2026-01-02

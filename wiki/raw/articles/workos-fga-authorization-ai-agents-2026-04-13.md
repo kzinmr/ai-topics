@@ -1,3 +1,9 @@
+---
+title: WorkOS FGA: The Authorization Layer for AI Agents
+category: other
+status: active
+---
+
 # WorkOS FGA: The Authorization Layer for AI Agents
 
 **Source:** WorkOS Blog

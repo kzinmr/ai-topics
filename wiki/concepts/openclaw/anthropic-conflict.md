@@ -116,7 +116,7 @@ Anthropicが提供した措置：
 ## 関連
 
 - [[openclaw]] — OpenClawコンセプト集約
-- [[openclaw/philosophy]] — Primitives First哲学
+- [[concepts/openclaw/philosophy.md]] — Primitives First哲学
 - [[personal-superintelligence]] — データ主権運動
 - [[open-source-ai-destruction]] — オープンソースAI破壊
 - [[peter-steinberger]] — OpenClaw創設者

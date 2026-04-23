@@ -110,7 +110,7 @@ This frustration led him to build tooling and share practical solutions for cros
 - [[Kubernetes]] — the platform Laine writes about and builds for
 - [[Microsoft Peerd]] — the corporate fork that sparked Laine's most widely-read post
 - [[Entropic Thoughts]] — shares Laine's commitment to publishing practical, rigorously-tested technical work
-- [[BogdanTheGeek]] — another engineer who publishes project-based technical writing
+- [[entities/bogdanthegeek-s-blog.md]] — another engineer who publishes project-based technical writing
 - [[Construction Physics]] — Brian Potter's newsletter; both Laine and Potter write about the gap between theory and operational reality
 
 ## Sources

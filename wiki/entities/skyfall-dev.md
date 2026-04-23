@@ -1,3 +1,9 @@
+---
+title: Skyfall Developer (Mahad Kalam)
+category: entity
+status: active
+---
+
 # Skyfall Developer (Mahad Kalam)
 
 **URL:** https://skyfall.dev

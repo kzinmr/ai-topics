@@ -128,3 +128,7 @@ This intellectual breadth informs his writing, which consistently draws connecti
 - **Blog:** https://deliberate-software.com
 - **Identity:** Steve Shogren
 - **Roles:** Software developer, manager, author, speaker
+
+## See Also
+
+- [[entities/_index.md]]

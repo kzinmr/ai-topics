@@ -1,3 +1,9 @@
+---
+title: Why AI Evals Are the Hottest New Skill for Product Builders
+category: other
+status: active
+---
+
 # Why AI Evals Are the Hottest New Skill for Product Builders
 
 **Source:** Lenny's Podcast (Lenny Rachitsky) — Sept 25, 2025

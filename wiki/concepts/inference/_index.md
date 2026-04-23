@@ -17,9 +17,9 @@ Techniques and engines for fast LLM inference, from consumer hardware to product
 
 | Engine | Best For | Key Tech |
 |--------|----------|----------|
-| [[inference/sglang]] | **Agentic loops, RAG, structured output** | RadixAttention, xgrammar, prefill-decode disaggregation |
-| [[inference/vllm]] | **General production serving** | PagedAttention, continuous batching, multi-LoRA |
-| [[inference/llama-cpp]] | **CPU / Apple Silicon / consumer GPU** | GGUF format, local-first, zero cloud dependency |
+| [[concepts/inference/sglang.md]] | **Agentic loops, RAG, structured output** | RadixAttention, xgrammar, prefill-decode disaggregation |
+| [[concepts/inference/vllm.md]] | **General production serving** | PagedAttention, continuous batching, multi-LoRA |
+| [[concepts/inference/llama-cpp.md]] | **CPU / Apple Silicon / consumer GPU** | GGUF format, local-first, zero cloud dependency |
 | Ollama | **Local LLM runner (CLI + API)** | Wraps llama.cpp, model library, one-line setup |
 
 ## Optimization Techniques

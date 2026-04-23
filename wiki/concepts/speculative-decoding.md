@@ -68,7 +68,7 @@ Speculative decoding directly impacts [[token-economics]]:
 
 - [[token-economics]] — Throughput optimization and cost reduction
 - [[attention-mechanism-variants]] — Different attention mechanisms affect speculative decoding performance
-- [[local-llm/model-quantization]] — Quantization can be combined with speculative decoding
+- [[concepts/local-llm/model-quantization.md]] — Quantization can be combined with speculative decoding
 - [[local-llm]] — Inference optimization techniques
 
 ## Sources

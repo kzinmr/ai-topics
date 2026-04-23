@@ -302,11 +302,11 @@ This reflects his own career arc: at Amazon, he transitioned from hands-on IC wo
 
 - [[machine-learning-in-production]] — His primary domain: shipping ML systems that work at scale
 - [[recommendation-systems]] — His deep expertise from Lazada and Amazon
-- [[llm-evaluation]] — His work on eval-driven development and LLM-as-judge
+- [[concepts/llm-evaluation-harness.md]] — His work on eval-driven development and LLM-as-judge
 - [[retrieval-augmented-generation]] — One of his seven core LLM integration patterns
 - [[applied-ml]] — His most-starred GitHub repository (28.7K stars)
 - [[open-llms]] — His curated list of commercially usable open LLMs (12.7K stars)
-- [[ai-agents]] — His work on AI-powered products and prototypes
+- [[raw/articles/open.substack.com--pub-nlpnews-p-ai-agents-weekly-claude-managed-agents--883aac03.md]] — His work on AI-powered products and prototypes
 - [[georgia-tech-omscs]] — His master's program and the FAQ he wrote for it
 - [[eval-driven-development]] — His methodology for building AI products
 - [[singapore-management-university]] — His undergraduate alma mater

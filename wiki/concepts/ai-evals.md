@@ -158,7 +158,7 @@ A **trace** is the complete record of all actions, messages, tool calls, and dat
 - [[harness-engineering]] — OpenAI's approach to AI-assisted development
 - [[eval-tools-comparison]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI
 - [[evals-skills]] — Evals skills for coding agents
-- [[property-based-testing]] — PBT methodology applied to LLM evaluation (MacIver)
+- [[raw/articles/2026-04-15-property-based-testing-anthropic.md]] — PBT methodology applied to LLM evaluation (MacIver)
 
 ## Related People
 

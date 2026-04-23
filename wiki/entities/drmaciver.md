@@ -247,11 +247,11 @@ His Substack "Overthinking Everything" is unified by a theme of **empirical curi
 
 ## Related Concepts
 
-- [[property-based-testing]] — His primary domain of expertise
+- [[raw/articles/2026-04-15-property-based-testing-anthropic.md]] — His primary domain of expertise
 - [[ai-evals]] — Foundational LLM evaluations using PBT methodology
 - [[ai-evals-people]] — drmaciver, shreya-shankar, hamel-husain collaborate on eval frameworks
 - [[harness-engineering]] — Hegel as a test harness for multi-language PBT
-- [[harness-engineering/agentic-engineering]] — AI-assisted coding with rigorous review practices
+- [[concepts/agentic-engineering.md]] — AI-assisted coding with rigorous review practices
 - [[software-correctness]] — 100% coverage mandate, invariant testing
 - [[test-case-reduction]] — Shrinkray and minimizing failing examples
 - [[probabilistic-programming]] — Current work at Antithesis

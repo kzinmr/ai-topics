@@ -148,3 +148,9 @@ CRDTs の未解決問題（全キーストローク保存 → メモリ劣化）
 - GitHub: https://github.com/automerge/automerge
 - Papers: https://martin.kleppmann.com/papers/
 - Email: firstname at lastname dot com
+
+## See Also
+
+- [[entities/_index.md]]
+- [[entities/lance-martin.md]]
+- [[entities/martin-alderson.md]]

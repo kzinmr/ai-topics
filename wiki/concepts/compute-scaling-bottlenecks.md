@@ -1,3 +1,9 @@
+---
+title: Compute Scaling Bottlenecks
+category: concept
+status: active
+---
+
 # Compute Scaling Bottlenecks
 
 **Date:** April 10, 2026

@@ -134,7 +134,7 @@ KIM-1 — MOS Technology single-board computer emulated via Incredible KIMplemen
 Chaosnet — Early MIT networking technology documented in Kaiser's Lisp machine analysis
 [[Apple Network Server]] — Obscure Apple server platform; Kaiser analyzed prototype ROMs
 Scriptovision — Canadian video titler company; Kaiser reverse-engineered their hardware
-[[6502]] — MOS microprocessor; central to Kaiser's virtualization and emulation work
+[[raw/articles/substack.com--geraldwong116502--5f407893.md]] — MOS microprocessor; central to Kaiser's virtualization and emulation work
 [[PowerPC]] — Processor architecture; Kaiser maintained TenFourFox for PowerPC Macs
 
 ---

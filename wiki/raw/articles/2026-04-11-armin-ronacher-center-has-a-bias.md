@@ -1,3 +1,9 @@
+---
+title: Armin Ronacher: The Center Has a Bias
+category: other
+status: active
+---
+
 # Armin Ronacher: The Center Has a Bias
 **Source:** https://lucumr.pocoo.org/2026/4/11/the-center-has-a-bias/
 **Date:** 2026-04-11

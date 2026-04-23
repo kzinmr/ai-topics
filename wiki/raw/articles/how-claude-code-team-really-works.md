@@ -1,3 +1,9 @@
+---
+title: How the Claude Code team really works
+category: other
+status: active
+---
+
 # How the Claude Code team really works
 
 **Source:** https://www.claudecodecamp.com/p/how-the-claude-code-team-really-works

@@ -14,7 +14,7 @@ Comparison of leading AI models as of April 2026, based on analysis from Ethan M
 
 | Tier | Companies/Models | Notes |
 |------|------------------|-------|
-| **Tier 1 — Leading** | [[google]], [[openai]], [[anthropic]] | Clear frontier leaders |
+| **Tier 1 — Leading** | [[entities/google-tpu.md]], [[openai]], [[anthropic]] | Clear frontier leaders |
 | **Tier 2 — Catching Up** | [[meta]] (Muse Spark) | New entry, between Sonnet and Opus |
 | **Tier 3 — Falling Behind** | [[xai]] | Lost ground relative to leaders |
 | **Tier 4 — 7-9 Months Behind** | Chinese models | Best Chinese models still lagging |
@@ -54,7 +54,7 @@ Claude Sonnet 4.6
 > Meta has historically been known for open-sourcing models (LLaMA series). Community commentary suggests Muse Spark may not follow this pattern, but official open-source commitments have been made. Status TBD.
 
 ## Sources
-- [[raw/articles/substack.com--app-link-post--40004939]] (Ben's Bites, 2026-04-09)
+- [[raw/articles/substack.com--app-link-post--40004939.md]] (Ben's Bites, 2026-04-09)
 - Ethan Mollick's frontier model state analysis (referenced in Ben's Bites)
 
 ## Related
@@ -64,5 +64,5 @@ Claude Sonnet 4.6
 - [[muse-spark]]
 - [[project-glasswing]]
 - [[openai]]
-- [[google]]
+- [[entities/google-tpu.md]]
 - [[xai]]

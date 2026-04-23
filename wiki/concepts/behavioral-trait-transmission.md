@@ -106,3 +106,7 @@ Language models that share initialization can transmit behavioural traits throug
 
 - Cloud, Le, Chua, et al. (Anthropic, Truthful AI, Oxford, UC Berkeley) — Nature 2026
 - Newsletter: True Positive Weekly #157 — "Language models transmit behavioural traits through hidden signals in data"
+
+## See Also
+
+- [[concepts/_index.md]]

@@ -1,3 +1,9 @@
+---
+title: Hermes Agent Architecture Analysis
+category: other
+status: active
+---
+
 # Hermes Agent Architecture Analysis
 
 **Author:** Kazuki Inamura

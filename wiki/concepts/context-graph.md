@@ -11,7 +11,7 @@ related:
   - "[[model-context-protocol-mcp]]"  # MCP as cross-system context protocol
 status: complete
 created: 2026-04-20
-source: "[[raw/articles/foundation-capital-context-graphs-2025-12-22]]"
+source: "[[raw/articles/foundation-capital-context-graphs-2025-12-22.md]]"
 ---
 
 # Context Graph

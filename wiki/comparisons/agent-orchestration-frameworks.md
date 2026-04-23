@@ -1,3 +1,9 @@
+---
+title: Agent Orchestration Frameworks
+category: comparison
+status: active
+---
+
 # Agent Orchestration Frameworks
 
 **Date:** April 10, 2026

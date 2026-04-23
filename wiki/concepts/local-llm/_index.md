@@ -13,19 +13,19 @@ Local LLM inference on personal hardware. This page is the index for the local-l
 
 ### Inference Engines
 - [[local-llm]] — llama.cpp inference engine (CPU, Apple Silicon, CUDA)
-- [[local-llm/ollama]] — Ollama local LLM runner (model library, REST API)
-- [[inference/vllm]] — vLLM high-throughput serving (PagedAttention)
-- [[inference/sglang]] — SGLang serving framework (RadixAttention, structured generation)
+- [[concepts/local-llm/ollama.md]] — Ollama local LLM runner (model library, REST API)
+- [[concepts/inference/vllm.md]] — vLLM high-throughput serving (PagedAttention)
+- [[concepts/inference/sglang.md]] — SGLang serving framework (RadixAttention, structured generation)
 
 ### Model Formats & Compression
-- [[local-llm/gguf]] — GGUF quantization format (K-Quants, I-Quants)
-- [[local-llm/model-quantization]] — Quantization overview (GPTQ, AWQ, EXL2, FP8)
-- [[local-llm/model-distillation]] — Knowledge distillation for local models
+- [[concepts/local-llm/gguf.md]] — GGUF quantization format (K-Quants, I-Quants)
+- [[concepts/local-llm/model-quantization.md]] — Quantization overview (GPTQ, AWQ, EXL2, FP8)
+- [[concepts/local-llm/model-distillation.md]] — Knowledge distillation for local models
 
 ### Tools & Hardware
-- [[local-llm/inference-hardware]] — Consumer GPU, Apple Silicon, edge devices
-- [[local-llm/server-dgx-spark]] — DGX Spark + NemoClaw setup guide
-- [[local-llm/self-hosting-ai-development]] — Self-hosting economics and workflow
+- [[concepts/local-llm/inference-hardware.md]] — Consumer GPU, Apple Silicon, edge devices
+- [[concepts/local-llm/server-dgx-spark.md]] — DGX Spark + NemoClaw setup guide
+- [[concepts/local-llm/self-hosting-ai-development.md]] — Self-hosting economics and workflow
 
 ## Model Comparisons
 - [[comparisons/local-llm-models-april-2026]] — Local LLM Models Comparison (gpt-oss, GLM-4.5, Qwen 3, specialized edge models)

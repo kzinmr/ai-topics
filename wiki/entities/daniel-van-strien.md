@@ -134,3 +134,10 @@ Daniel's X activity (@vanstriendaniel) centers on:
 5. **Reasoning Models & Synthetic Data** — Discussing the latest developments in reasoning models (DeepSeek, QwQ) and their applications for synthetic data generation.
 6. **Hugging Face Ecosystem** — Regular updates on new HF features, datasets, models, and community initiatives; active participation in HF community discussions.
 7. **Cost-Efficient ML** — Sharing techniques for running ML workloads on free/cheap infrastructure (Colab, Kaggle, HF Jobs) to democratize access to AI capabilities.
+
+## See Also
+
+- [[entities/_index.md]]
+- [[entities/daniel-de-laney.md]]
+- [[entities/rehan-van-der-merwe.md]]
+- [[entities/daniel-han.md]]

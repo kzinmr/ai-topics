@@ -1,3 +1,9 @@
+---
+title: ChernyCode - Boris Cherny's Development Environment
+category: other
+status: active
+---
+
 # ChernyCode - Boris Cherny's Development Environment
 
 **Source:** https://github.com/meleantonio/ChernyCode

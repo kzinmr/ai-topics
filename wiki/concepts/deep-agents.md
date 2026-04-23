@@ -5,9 +5,9 @@ tags: [ai-agents, autonomy, planning, file-operations, delegation, sandbox]
 related:
   - [[pydantic-ai]]
   - [[harness-engineering]]
-  - [[sandbox/in-process]]
-  - [[sandbox/infrastructure]]
-  - [[sandbox/js-runtime]]
+  - [[concepts/sandbox/in-process.md]]
+  - [[concepts/harness-engineering/system-architecture/infrastructure-noise.md]]
+  - [[concepts/sandbox/js-runtime.md]]
   - [[samuel-colvin]]
 depth: L2
 status: complete

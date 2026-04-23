@@ -1,3 +1,9 @@
+---
+title: Cognitive Cost of Agents
+category: concept
+status: active
+---
+
 # Cognitive Cost of Agents
 
 **Date:** April 3, 2026

@@ -105,10 +105,10 @@ ML engineering (quantization, sharding, containers), infrastructure management, 
 
 - [[context-engineering]] — Token economics is a prerequisite for understanding context window optimization trade-offs
 - [[local-llm]] — Self-hosting economics and optimization techniques
-- [[local-llm/model-quantization]] — Quantization methods (GPTQ, AWQ, EXL2, FP8)
-- [[inference/vllm]] — Continuous batching and PagedAttention
+- [[concepts/local-llm/model-quantization.md]] — Quantization methods (GPTQ, AWQ, EXL2, FP8)
+- [[concepts/inference/vllm.md]] — Continuous batching and PagedAttention
 
 ## Sources
 
-- [[raw/articles/crawl-2026-04-18-token-economics]] — Spheron & Introl inference economics analysis
+- [[raw/articles/crawl-2026-04-18-token-economics.md]] — Spheron & Introl inference economics analysis
 - Sebastian Raschka, "A Visual Guide to Attention Variants in Modern LLMs" (Ahead of AI)

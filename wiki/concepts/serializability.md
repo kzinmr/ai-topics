@@ -4,7 +4,7 @@ type: concept
 tags: [serialization, llm, structured-output, ai-engineering]
 related:
   - [[pydantic-serializability]]
-  - [[structured-output]]
+  - [[concepts/structured-outputs.md]]
   - [[pydantic-ai]]
   - [[samuel-colvin]]
 depth: L2
@@ -44,6 +44,6 @@ Pydantic provides:
 ## Related
 
 - [[pydantic-serializability]] — Pydantic's implementation
-- [[structured-output]] — General pattern
+- [[concepts/structured-outputs.md]] — General pattern
 - [[samuel-colvin]] — Serializability pioneer
 - [[pydantic-ai]] — Framework integration

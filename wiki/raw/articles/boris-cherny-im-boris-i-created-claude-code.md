@@ -1,3 +1,9 @@
+---
+title: I'm Boris and I created Claude Code
+category: other
+status: active
+---
+
 # I'm Boris and I created Claude Code
 
 **Author:** Boris Cherny

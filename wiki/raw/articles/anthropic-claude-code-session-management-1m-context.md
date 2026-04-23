@@ -1,3 +1,9 @@
+---
+title: Using Claude Code: Session Management & 1M Context
+category: other
+status: active
+---
+
 # Using Claude Code: Session Management & 1M Context
 
 **Source:** Anthropic (claude.com/blog)

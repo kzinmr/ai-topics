@@ -86,9 +86,9 @@ trainer.train()
 
 ## Related
 
-- [[fine-tuning/axolotl]] — Alternative framework with YAML configuration
-- [[fine-tuning/trl]] — TRL library integration
-- [[fine-tuning/peft-lora-qlora]] — LoRA/QLoRA fundamentals
+- [[concepts/fine-tuning/axolotl.md]] — Alternative framework with YAML configuration
+- [[concepts/fine-tuning/trl.md]] — TRL library integration
+- [[concepts/fine-tuning/peft-lora-qlora.md]] — LoRA/QLoRA fundamentals
 
 ## Sources
 

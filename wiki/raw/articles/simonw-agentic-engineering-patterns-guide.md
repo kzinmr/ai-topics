@@ -1,3 +1,9 @@
+---
+title: Agentic Engineering Patterns
+category: other
+status: active
+---
+
 # Agentic Engineering Patterns
 **Source:** Simon Willison's Weblog | **Guide URL:** https://simonwillison.net/guides/agentic-engineering-patterns/
 

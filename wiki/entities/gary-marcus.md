@@ -110,7 +110,7 @@ Marcusの結論:
 3. セキュリティ専門家はこれらのツールを採用するか時代遅れのリスクがある
 
 ### Sources
-- [[raw/articles/garymarcus.substack.com-claude-mythos-evaluated-2026-04-13]]
+- [[raw/articles/garymarcus.substack.com-claude-mythos-evaluated-2026-04-13.md]]
 
 ## Key Publications
 

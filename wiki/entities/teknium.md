@@ -187,8 +187,8 @@ Nous Research's decentralized training infrastructure (DiStrO) and Psyche Networ
 - [[rl-fine-tuning]] — Atropos RL environments
 - [[harness-engineering]] — CLI/terminal-use harnessing philosophy
 - [[decentralized-ai]] — Nous Research ethos, DiStrO, Psyche Network
-- [[open-source-ai]] — Advocate for open-weight models and transparent development
-- [[dpo]] — Direct Preference Optimization for Hermes 3 alignment
+- [[concepts/open-source-ai-destruction.md]] — Advocate for open-weight models and transparent development
+- [[concepts/fine-tuning/rlhf-dpo-preference.md]] — Direct Preference Optimization for Hermes 3 alignment
 - [[sero]] — Fellow open-source AI developer and ElizaOS contributor
 
 ## Key Links

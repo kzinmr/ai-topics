@@ -138,7 +138,7 @@ In his most recent writing, Armin has been defending the irreplaceable value of 
 - [[Jinja2]] — Dominant Python template engine
 - [[Werkzeug]] — WSGI toolkit underlying most Python web frameworks
 - [[Pallets]] — The ecosystem of projects he maintains
-- [[UV]] — Fast Python package installer, his latest systems tool
+- [[raw/articles/crawl-2026-04-21-shuvendu-intent-formalization.md]] — Fast Python package installer, his latest systems tool
 - [[Polecats]] — AI agent orchestration framework with human oversight
 - [[AI Code Quality]] — His critique of AI-generated code
 - [[Python Packaging]] — His work on fixing Python's toolchain

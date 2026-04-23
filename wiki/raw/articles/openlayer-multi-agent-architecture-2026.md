@@ -1,3 +1,9 @@
+---
+title: Multi-Agent System Architecture: A Comparison Guide
+category: other
+status: active
+---
+
 # Multi-Agent System Architecture: A Comparison Guide
 
 **Source:** Openlayer Blog

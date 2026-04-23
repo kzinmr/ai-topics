@@ -15,3 +15,8 @@ Interactive explanations provide step-by-step, participatory learning experience
 - Move content from harness-engineering/agentic-workflows/interactive-explanations.md here, or
 - Update all wikilinks to point directly to harness-engineering/agentic-workflows/interactive-explanations.md
 - Link to related concepts: linear-walkthroughs, interactive-explanations
+
+## See Also
+
+- [[concepts/_index.md]]
+- [[concepts/harness-engineering/agentic-workflows/interactive-explanations.md]]

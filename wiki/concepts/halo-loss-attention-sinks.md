@@ -84,3 +84,8 @@ HALO（Harmonic Attention Localization Objective）損失は、Attention Sinkの
 - Newsletter: True Positive Weekly #157 — "Soap Bubbles and Attention Sinks: The Theory and History of the HALO-Loss"
 - Xiao et al. (2023) — Efficient Streaming LLMs
 - StreamingLLM approach to sink token preservation
+
+## See Also
+
+- [[concepts/_index.md]]
+- [[concepts/attention-mechanism-variants.md]]

@@ -1,3 +1,9 @@
+---
+title: From monolith to resilient microservices
+category: other
+status: active
+---
+
 # From monolith to resilient microservices
 
 **Source:** https://rehanvdm.com/blog/from-monolith-to-resilient-microservices/

@@ -67,8 +67,8 @@ Because all agents track the backbone, its components become tightly coupled. Th
 ## Relationship to Other Concepts
 
 - **[[selection-theorems]]**: Proposes resource constraints as the driving force for agent-like structure emergence, contrasting with task-richness theories
-- **[[world-models]]**: Argues against exhaustive world modeling in favor of sparse, strategically-relevant modeling
-- **[[agent-architecture]]**: Suggests designs should prioritize identifying and tracking high-resource, high-influence nodes
+- **[[concepts/world-models-science.md]]**: Argues against exhaustive world modeling in favor of sparse, strategically-relevant modeling
+- **[[raw/articles/openlayer-multi-agent-architecture-2026.md]]**: Suggests designs should prioritize identifying and tracking high-resource, high-influence nodes
 - **[[information-bottleneck]]**: Natural filtering mechanism — only backbone-relevant information passes through
 - **[[karpathy-loop]]**: The loop implicitly operates on causal backbones — which experiments to run is determined by resource-weighted hypotheses
 

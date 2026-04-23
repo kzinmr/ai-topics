@@ -29,3 +29,8 @@ In AI-assisted development, TDD patterns inform how agents should approach code 
 - Move content from harness-engineering/agentic-workflows/red-green-tdd.md here, or
 - Update all wikilinks to point directly to harness-engineering/agentic-workflows/red-green-tdd.md
 - Document agent-specific TDD patterns
+
+## See Also
+
+- [[concepts/_index.md]]
+- [[concepts/harness-engineering/agentic-workflows/red-green-tdd.md]]

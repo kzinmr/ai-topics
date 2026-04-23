@@ -47,7 +47,7 @@ Instead of scaling context windows, let coding agents:
 - Research paper (2026)
 
 ## Related
-- [[coding-agents]]
+- [[concepts/long-context-coding-agents.md]]
 - [[context-windows]]
 - [[retrieval-augmented-generation]]
 - [[file-system-organization]]

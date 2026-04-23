@@ -1,3 +1,9 @@
+---
+title: Prediction: AI Will Make Formal Verification Go Mainstream
+category: other
+status: active
+---
+
 # Prediction: AI Will Make Formal Verification Go Mainstream
 
 **Source:** Martin Kleppmann's Blog

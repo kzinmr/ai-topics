@@ -185,7 +185,7 @@ Hinton has mentored many of the leading figures in modern AI:
 - [[John Hopfield]] — Nobel Prize co-recipient; Hopfield networks
 - [[Yoshua Bengio]] — Turing Award co-recipient; deep learning pioneer
 - [[Yann LeCun]] — Turing Award co-recipient; CNN pioneer
-- [[google]] — Former employer (2013–2023)
+- [[entities/google-tpu.md]] — Former employer (2013–2023)
 - [[vector-institute]] — Current affiliation
 - [[deep-learning]] — Hinton's foundational field
 - [[backpropagation]] — Hinton's most influential algorithm

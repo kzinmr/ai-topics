@@ -140,7 +140,7 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 - [[rlhf]] — Reinforcement Learning from Human Feedback, the alignment method she worked on
 - [[diffusion-models]] — Her April 2024 analysis of video generation
 - [[llm-hallucination]] — Her July 2024 survey on extrinsic hallucinations
-- [[prompt-engineering]] — Her March 2023 definitive guide
+- [[concepts/resilient-prompt-engineering.md]] — Her March 2023 definitive guide
 - [[mira-murati]] — Thinking Machines Lab co-founder and CEO
 - [[john-schulman]] — Thinking Machines Lab co-founder and Chief Scientist
 - [[sam-altman]] — OpenAI CEO during her tenure

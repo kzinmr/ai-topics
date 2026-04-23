@@ -11,7 +11,7 @@ description: "The accumulated mental overhead of understanding and maintaining c
 
 # Cognitive Debt
 
-> **Note:** This page is a stub and needs expansion. See [[harness-engineering/agentic-workflows/cognitive-debt]] for the full content.
+> **Note:** This page is a stub and needs expansion. See [[concepts/harness-engineering/agentic-workflows/cognitive-debt.md]] for the full content.
 
 ## Summary
 
@@ -35,6 +35,6 @@ Cognitive Debt is the AI-specific manifestation of cognitive load theory in soft
 
 ## See Also
 
-- [[harness-engineering/agentic-workflows/cognitive-debt]] — Full content
+- [[concepts/harness-engineering/agentic-workflows/cognitive-debt.md]] — Full content
 - [[cognitive-load-software-development]] — General cognitive load theory
 - [[cognitive-cost-of-agents]] — Simon Willison's cognitive cost concept

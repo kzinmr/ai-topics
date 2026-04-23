@@ -1,3 +1,9 @@
+---
+title: Agent Memory Architectures: Vector vs Graph vs Episodic
+category: other
+status: active
+---
+
 # Agent Memory Architectures: Vector vs Graph vs Episodic
 
 **Source:** Digital Applied

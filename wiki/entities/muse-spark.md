@@ -33,10 +33,10 @@ Meta has promised open-source availability, but community reaction ("rip LLaMA")
 Announced following a year of silence from Meta on model development, and after multiple acquisitions without public product showings. Reception has been mixed — some criticizing the modest capability gains relative to investment, while others viewing it as a positive step forward.
 
 ## Sources
-- [[raw/articles/substack.com--app-link-post--40004939]] (Ben's Bites, 2026-04-09)
+- [[raw/articles/substack.com--app-link-post--40004939.md]] (Ben's Bites, 2026-04-09)
 
 ## Related
 - [[meta]]
-- [[llama]]
+- [[concepts/inference/llama-cpp.md]]
 - [[claude-sonnet-4.6]]
 - [[claude-opus-4.6]]

@@ -126,12 +126,12 @@ Sankalp's approach to AI engineering can be summarized as:
 ## Related
 
 - [[claude-code]] — Primary coding agent he uses and writes about
-- [[coding-agents]] — Focus area of his research and writing
+- [[concepts/long-context-coding-agents.md]] — Focus area of his research and writing
 - [[agent-os]] — Open-source agent operating system he contributes to
-- [[llm-evaluation]] — Interest in measuring and improving AI system quality
+- [[concepts/llm-evaluation-harness.md]] — Interest in measuring and improving AI system quality
 - [[ai-engineering]] — His professional focus
 - [[windsurf]] — AI coding tool he evaluates and discusses
-- [[cursor]] — IDE he compares in his writing
+- [[entities/cursor-3.md]] — IDE he compares in his writing
 - [[teknium]] — Fellow open-source AI developer
 
 ## Key Links

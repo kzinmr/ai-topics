@@ -98,3 +98,11 @@ Evaluatorがレビュー
 ## Sources
 
 - [Harness Design for Long-Running Application Development](https://www.anthropic.com/engineering/harness-design-long-running-apps) — Prithvi Rajasekaran, Anthropic Labs, Mar 24, 2026
+
+## See Also
+
+- [[concepts/_index.md]]
+- [[concepts/memory-systems-design-patterns.md]]
+- [[concepts/meta-harness.md]]
+- [[concepts/long-context-coding-agents.md]]
+- [[concepts/llm-evaluation-harness.md]]

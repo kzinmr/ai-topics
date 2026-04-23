@@ -1,3 +1,9 @@
+---
+title: Rahul Sengottuvelu
+category: entity
+status: active
+---
+
 # Rahul Sengottuvelu
 
 **URL:** https://rahul.gs/

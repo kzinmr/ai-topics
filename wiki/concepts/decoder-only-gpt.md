@@ -271,7 +271,7 @@ Karpathy's progression of educational implementations:
 
 - [[software-2.0]] — Neural networks as programs
 - [[vibe-coding]] — Natural language programming
-- [[harness-engineering/agentic-engineering]] — Managing AI agents in parallel
+- [[concepts/agentic-engineering.md]] — Managing AI agents in parallel
 - [[local-llm]] — Running LLMs locally (nanochat, llm.c)
 - [[llm-education]] — Teaching LLMs from first principles
 

@@ -117,7 +117,7 @@ His body of work reflects a pragmatic approach to ML: building tools that solve 
 - [[olmo]] — Open language model with transparent training pipeline
 - [[mistral-ai]] — Fine-tuning target for his most popular repository
 - [[anthropic]] — Preferred model provider (Opus 4.1)
-- [[qwen]] — High-quality open model for fine-tuning
+- [[entities/qwen3-6-plus.md]] — High-quality open model for fine-tuning
 
 ## Sources
 

@@ -1,3 +1,9 @@
+---
+title: The Agentic Web: How AI Systems Will Change Websites
+category: other
+status: active
+---
+
 # The Agentic Web: How AI Systems Will Change Websites
 
 **Source:** https://ricmac.org/2026/04/07/the-agentic-web/

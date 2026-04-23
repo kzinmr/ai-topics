@@ -119,7 +119,7 @@ Perhaps Dan's most influential meta-contribution is his willingness to change hi
 
 ## Related Concepts
 
-- [[React]] — His primary area of technical contribution
+- [[entities/overreacted-io.md]] — His primary area of technical contribution
 - [[Redux]] — Co-created this state management library
 - [[AT Protocol]] — Subject of his "Social Filesystem" analysis
 - [[Developer Tooling Philosophy]] — Interactive debugging over abstraction

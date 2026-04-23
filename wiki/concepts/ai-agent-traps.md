@@ -90,6 +90,6 @@ A systematic framework from Google DeepMind (2026) for understanding how the ope
 MCPは認可を実装者に委任し、`files:read` のような粗いOAuth 2.1スコープ依赖。FGAはMCPのRAR(rich authorization requests)에ロジック层を提供。
 
 ### Sources
-- [[raw/articles/workos-fga-authorization-ai-agents-2026-04-13]]
+- [[raw/articles/workos-fga-authorization-ai-agents-2026-04-13.md]]
 
 ## Sources

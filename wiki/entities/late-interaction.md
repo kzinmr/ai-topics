@@ -154,7 +154,7 @@ Several presentations focused on deploying late interaction in production:
 - [[ColBERT]] — The foundational late interaction retrieval model
 - [[jo-bergum]] — Vespa/Hornet researcher and ColBERT advocate
 - [[Information-Retrieval]] — The broader field LIR contributes to
-- [[RAG]] — Retrieval-augmented generation, a primary application area
+- [[raw/articles/crawl-2026-04-21-agentic-alternative-graphrag.md]] — Retrieval-augmented generation, a primary application area
 - [[Vector-Search]] — The broader embedding search paradigm
 - [[MaxSim]] — The late interaction scoring function
 - [[ColPali]] — Multimodal extension of late interaction to visual documents

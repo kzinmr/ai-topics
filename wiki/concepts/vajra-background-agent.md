@@ -88,3 +88,11 @@ Vajra demonstrates that **background agents are production-ready** for well-scop
 ## Sources
 
 - [Open-Sourcing Vajra: A Background Coding Agent](https://www.shloked.com/writing/vajra) — Shlok Khemani, April 6, 2026
+
+## See Also
+
+- [[concepts/_index.md]]
+- [[concepts/ai-agent-memory-middleware.md]]
+- [[concepts/single-agent-ceiling.md]]
+- [[concepts/ai-agent-memory-two-camps.md]]
+- [[concepts/agent-sandboxing.md]]

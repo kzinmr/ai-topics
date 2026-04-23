@@ -1,3 +1,9 @@
+---
+title: Scaling ECS Fargate like Lambda
+category: other
+status: active
+---
+
 # Scaling ECS Fargate like Lambda
 
 **Source:** https://rehanvdm.com/blog/scaling-ecs-fargate-like-lambda/

@@ -92,13 +92,13 @@ MacIverのClaude Code実践レポート（2026-04）：
 
 ## Related Concepts
 
-- [[property-based-testing]] — テストパラダイムの基礎
+- [[raw/articles/2026-04-15-property-based-testing-anthropic.md]] — テストパラダイムの基礎
 - [[harness-engineering]] — Claude CodeコマンドとしてのAgentic PBT
 - [[ai-evals]] — 984バグレポート生成、86%妥当性率
-- [[harness-engineering/agentic-engineering]] — AIエージェントによる自律的コード品質保証
+- [[concepts/agentic-engineering.md]] — AIエージェントによる自律的コード品質保証
 - [[software-correctness]] — 不変条件によるバグ発見
 - [[drmaciver]] — Hypothesis作者、Antithesis Senior Engineer
-- [[hypothesis]] — Python PBTライブラリ
+- [[concepts/mismanaged-geniuses-hypothesis.md]] — Python PBTライブラリ
 - [[hegel]] — 言語横断PBTプロトコル
 
 ## Sources

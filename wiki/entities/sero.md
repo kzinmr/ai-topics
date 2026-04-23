@@ -212,7 +212,7 @@ Before AI, Sero built significant infrastructure in the Web3 space:
 - [[developer-tools]] — Azul, Parchi, vLLM Studio, pi-brain
 - [[blockchain]] — ZKSync, Ethereum governance infrastructure, Thrive Protocol
 - [[vllm]] — Local inference infrastructure
-- [[mcp]] — Mem-Layer and tool integration
+- [[concepts/model-context-protocol-mcp.md]] — Mem-Layer and tool integration
 - [[freedom-tech]] — Core philosophy
 - [[teknium]] — Fellow ElizaOS contributor and AI agent builder
 - [[turboquant]] — KV cache quantization research

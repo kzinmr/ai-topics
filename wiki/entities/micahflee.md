@@ -22,7 +22,7 @@ Previously: Director of Information Security at [[The Intercept]] (where he hand
 | Period | Key Events |
 |--------|-----------|
 | 2013 | Provides OPSEC for journalists covering the [[Edward Snowden]] NSA leaks |
-| 2014 | Develops **OnionShare** — open-source file sharing over [[Tor]] |
+| 2014 | Develops **OnionShare** — open-source file sharing over [[concepts/dark-factory-software-factory.md]] |
 | 2014–2024 | Director of Information Security at [[The Intercept]]; leads the SIDtoday Files project |
 | 2016–2019 | Leads comprehensive reporting on NSA Signals Intelligence Directorate documents |
 | 2018 | Reports on leaked WikiLeaks DMs with Cora Currier |
@@ -109,7 +109,7 @@ He advocates for **web-based alternatives** to native apps precisely because the
 [[OnionShare]] — Lee's flagship tool for secure, anonymous file sharing over Tor
 [[Dangerzone]] — Document sanitization tool for journalists handling untrusted files
 [[Cyd]] — Local-first data backup app developed through Lockdown Systems Collective
-[[Tor]] — Anonymity network central to Lee's tooling philosophy
+[[concepts/dark-factory-software-factory.md]] — Anonymity network central to Lee's tooling philosophy
 [[Signal]] — Encrypted messaging platform Lee advocates and analyzes
 [[The Intercept]] — Former employer; Lee directed information security for a decade
 [[Electronic Frontier Foundation]] — Former employer as staff technologist

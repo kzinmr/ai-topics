@@ -11,7 +11,7 @@ description: "OpenAI Responses API patterns for orchestrating agent loops. See h
 
 # Agent Loop Orchestration
 
-> **Note:** This page is a stub and needs expansion. See [[harness-engineering/system-architecture/agent-loop-orchestration]] for the full content.
+> **Note:** This page is a stub and needs expansion. See [[concepts/harness-engineering/system-architecture/agent-loop-orchestration.md]] for the full content.
 
 ## Summary
 
@@ -32,6 +32,6 @@ From OpenAI Responses API documentation:
 
 ## See Also
 
-- [[harness-engineering/system-architecture/agent-loop-orchestration]] — Full content
+- [[concepts/harness-engineering/system-architecture/agent-loop-orchestration.md]] — Full content
 - [[harness-design-long-running-apps]] — Harness design patterns
 - [[responses-api-patterns]] — Responses API patterns

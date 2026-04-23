@@ -11,7 +11,7 @@ description: "A documentation tool concept for AI agents. See harness-engineerin
 
 # Showboat
 
-> **Note:** This page is a stub and needs expansion. See [[harness-engineering/agentic-workflows/showboat]] for the full content.
+> **Note:** This page is a stub and needs expansion. See [[concepts/showboat.md]] for the full content.
 
 ## Summary
 
@@ -31,6 +31,6 @@ Showboat is a documentation tool concept (from Simon Willison's Agentic Engineer
 
 ## See Also
 
-- [[harness-engineering/agentic-workflows/showboat]] — Full content
+- [[concepts/showboat.md]] — Full content
 - [[interactive-explanations]] — Interactive explanation patterns
 - [[linear-walkthroughs]] — Linear walkthrough patterns

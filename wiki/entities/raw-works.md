@@ -58,7 +58,7 @@ Published two foundational articles on RLMs:
 - [[alex-zhang]] — Original RLM paper author
 - [[dspy]] — DSPy framework (RLM reference implementation)
 - [[recursive-language-model]] — RLM concept page
-- [[longcot]] — LongCoT benchmark
+- [[raw/articles/raw-works-rlms-sota-on-longcot-2026-04-19.md]] — LongCoT benchmark
 - [[stanford-nlp]] — Omar Khattab's group, DSPy creators
 
 ## Sources

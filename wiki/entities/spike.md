@@ -1,3 +1,9 @@
+---
+title: Spike (Mike Doan)
+category: entity
+status: active
+---
+
 # Spike (Mike Doan)
 
 **URL:** https://supaiku.com

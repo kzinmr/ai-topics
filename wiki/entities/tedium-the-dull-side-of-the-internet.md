@@ -122,7 +122,7 @@ Smith writes thoughtfully about the business of running Tedium as an independent
 - [[The Silicon Underground]] — Dave Farquhar's blog; similar focus on technology history and forgotten stories
 - [[Entropic Thoughts]] — Chris's blog; shares the philosophy of publishing to learn and be corrected
 - [[Philip Laine]] — independent developer who also builds and shares technical projects publicly
-- [[BogdanTheGeek]] — shares Smith's appreciation for the creative potential in discarded technology
+- [[entities/bogdanthegeek-s-blog.md]] — shares Smith's appreciation for the creative potential in discarded technology
 
 ## Sources
 

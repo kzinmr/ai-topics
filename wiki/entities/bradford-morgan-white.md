@@ -176,7 +176,7 @@ His technical writing (brd.la) is:
 - [[Computing History]] — Comprehensive coverage of the computing industry from mechanical to modern
 - [[Microprocessor Architecture]] — Intel, ARM, PowerPC, and the evolution of processing
 - [[Operating Systems]] — QNX, Windows, Unix, DOS, and the battle for the desktop
-- [[Self-Hosting]] — Home infrastructure, cloud free-tier optimization, defense in depth
+- [[concepts/local-llm/self-hosting-ai-development.md]] — Home infrastructure, cloud free-tier optimization, defense in depth
 - [[Software History]] — Xerox PARC, SRI/ARC, and the origins of personal computing
 - [[Sysadmin]] — Practical systems administration, security hardening, infrastructure automation
 - [[Xerox PARC]] — Alan Kay, the graphical user interface, and the future that was dismissed

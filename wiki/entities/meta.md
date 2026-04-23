@@ -86,10 +86,10 @@ See also: [[open-source-vs-closed]]
 - [[meta-muse-spark]] — Muse Spark model details
 - [[open-claw-ecosystem]] — Community personal agent framework
 - [[anthropic-openclaw-conflict]] — Platform control vs open access
-- [[llama]]
+- [[concepts/inference/llama-cpp.md]]
 - [[anthropic]]
 - [[openai]]
-- [[google]]
+- [[entities/google-tpu.md]]
 - [[xai]]
 - [[mario-zechner]] — local AI engineering (contrasting approach)
 - [[shlok-khemani]] — filesystem-first personal AI (contrasting approach)
@@ -100,4 +100,4 @@ See also: [[open-source-vs-closed]]
 - [Meta's Ray-Ban Display turns AI agents into a hands-free OS (The Relay, 2025)](https://therelaymag.com/metas-ray-ban-display-turns-ai-agents-into-a-hands-free-os/)
 - [Meta Positions AI Glasses and Personal Agents at Center of Growth (AI Insider, Jan 2026)](https://theaiinsider.tech/2026/01/29/meta-positions-ai-glasses-and-personal-agents-at-the-center-of-its-next-growth-phase/)
 - [VisionClaw: Turning Ray-Ban Meta Glasses into an Autonomous Super-Agent (Elluminate Me, Feb 2026)](https://elluminateme.com/artificial-intelligence/visionclaw/)
-- [[raw/articles/substack.com--app-link-post--40004939]] (Ben's Bites, 2026-04-09)
+- [[raw/articles/substack.com--app-link-post--40004939.md]] (Ben's Bites, 2026-04-09)

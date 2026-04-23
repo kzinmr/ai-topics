@@ -11,7 +11,7 @@ description: "A loose, prompt-driven development approach where you describe wha
 
 # Vibe Coding
 
-> **Note:** This page is a stub and needs expansion. See [[harness-engineering/agentic-workflows/vibe-coding]] for the full content.
+> **Note:** This page is a stub and needs expansion. See [[concepts/harness-engineering/agentic-workflows/vibe-coding.md]] for the full content.
 
 ## Summary
 
@@ -27,5 +27,5 @@ Vinci Rufus: "Vibe coding 30-70%, Agentic engineering 300-700%"
 
 ## See Also
 
-- [[harness-engineering/agentic-workflows/vibe-coding]] — Full content
-- [[agentic-workflows]] — Developer workflows
+- [[concepts/harness-engineering/agentic-workflows/vibe-coding.md]] — Full content
+- [[concepts/harness-engineering/agentic-workflows/interactive-explanations.md]] — Developer workflows

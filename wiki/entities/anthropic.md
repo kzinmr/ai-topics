@@ -42,7 +42,7 @@ Anthropic chose not to release [[claude-mythos]] publicly after discovering its 
 Mythos also discovered decades-old bugs in critical software: OpenBSD (27-year-old bug), FFmpeg (16-year-old bug).
 
 ## Sources
-- [[raw/articles/substack.com--app-link-post--40004939]] (Ben's Bites, 2026-04-09)
+- [[raw/articles/substack.com--app-link-post--40004939.md]] (Ben's Bites, 2026-04-09)
 
 ## Related
 - [[claude-mythos]]

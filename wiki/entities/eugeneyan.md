@@ -201,3 +201,7 @@ Eugene Yan's X/Twitter activity focuses on:
 - **Technical Writing** — Reflections on the craft of writing about ML and AI
 - **Conference Takeaways** — Summarizing key lessons from ML conferences
 - **Prototype Updates** — Sharing experimental work on LLM-RecSys hybrids and agentic workflows
+
+## See Also
+
+- [[entities/_index.md]]

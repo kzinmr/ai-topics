@@ -11,7 +11,7 @@ description: "Anthropic's guide to building effective AI agents. See harness-eng
 
 # Building Effective Agents
 
-> **Note:** This page is a stub and needs expansion. See [[harness-engineering/system-architecture/building-effective-agents]] for the full content.
+> **Note:** This page is a stub and needs expansion. See [[concepts/building-effective-agents.md]] for the full content.
 
 ## Summary
 
@@ -33,6 +33,6 @@ From Anthropic's documentation:
 
 ## See Also
 
-- [[harness-engineering/system-architecture/building-effective-agents]] — Full content
-- [[system-architecture]] — System architecture patterns
+- [[concepts/building-effective-agents.md]] — Full content
+- [[concepts/harness-engineering/system-architecture/container-context.md]] — System architecture patterns
 - [[agent-loop-orchestration]] — Agent loop orchestration

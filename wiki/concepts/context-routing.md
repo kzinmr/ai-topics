@@ -56,5 +56,5 @@ aliases:
 
 - [[context-engineering]] — コンテキスト最適化の統合フレームワーク
 - [[context-compression]] — コンテキスト圧縮技術
-- [[system-architecture/advanced-tool-use]] — 高度なツール使用
+- [[concepts/harness-engineering/system-architecture/advanced-tool-use.md]] — 高度なツール使用
 - [[agentic-rag]] — エージェント制御の検索ループ

@@ -25,5 +25,5 @@ Key figures: Ryan Lopopolo (OpenAI), Simon Willison (Agentic Engineering), Anthr
 ## See Also
 
 - [[harness-engineering]] — Full concept page
-- [[agentic-workflows]] — Developer workflows
-- [[system-architecture]] — System architecture patterns
+- [[concepts/harness-engineering/agentic-workflows/interactive-explanations.md]] — Developer workflows
+- [[concepts/harness-engineering/system-architecture/container-context.md]] — System architecture patterns

@@ -1,3 +1,9 @@
+---
+title: Refactoring a Distributed Monolith to Microservices
+category: other
+status: active
+---
+
 # Refactoring a Distributed Monolith to Microservices
 
 **Source:** https://rehanvdm.com/blog/refactoring-a-distributed-monolith-to-microservices/

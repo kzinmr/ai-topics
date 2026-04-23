@@ -153,3 +153,8 @@ gm8xx8's HuggingFace upvote activity shows engagement with:
 - **Activity level**: Very high — daily paper sharing across X/Twitter, with substantial HuggingFace engagement (77K+ followers).
 - **Enrichment target**: This page needs enrichment with direct quotes from gm8xx8's X posts, commentary patterns, and specific curation philosophy. The skeleton status should be removed once enriched.
 - **Last updated**: 2026-04-14
+
+## See Also
+
+- [[entities/_index.md]]
+- [[entities/gm8xx8-com.md]]

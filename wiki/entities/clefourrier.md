@@ -5,11 +5,11 @@ created: 2026-04-10
 updated: 2026-04-13
 related:
   - [[open-llm-leaderboard]]
-  - [[huggingface]]
+  - [[raw/articles/huggingface.co--google-gemma-4-e4b--b37a0ece.md]]
   - [[gaia]]
   - [[yourbench]]
   - [[lighteval]]
-  - [[llm-evaluation]]
+  - [[concepts/llm-evaluation-harness.md]]
   - [[bloom]]
   - [[zephyr]]
   - [[smollm2]]

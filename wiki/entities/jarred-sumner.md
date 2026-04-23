@@ -4,7 +4,7 @@ created: 2026-04-16
 updated: 2026-04-16
 tags: [person, developer-tools, javascript, bun, anthropic, ai-agents, infrastructure]
 aliases: ["jarred-sumner", "oven-sh"]
-related: [[sandbox/js-runtime]], [[ryan-dahl]]
+related: [[concepts/sandbox/js-runtime.md]], [[ryan-dahl]]
 depth: L2
 status: complete
 ---
@@ -96,7 +96,7 @@ Anthropic's acquisition of Bun/Oven is strategically significant:
 
 ## Related
 
-- [[sandbox/js-runtime]] — JS runtime comparison (Bun vs Deno vs Node.js)
+- [[concepts/sandbox/js-runtime.md]] — JS runtime comparison (Bun vs Deno vs Node.js)
 - [[ryan-dahl]] — Creator of Node.js and Deno; another JS runtime innovator
 
 ## Sources

@@ -219,7 +219,7 @@ Prime Intellect (building on both researchers' work) captures the synthesis:
 
 ## Related Concepts
 
-- **[[ReAct]]** — Yao's foundational reasoning+acting paradigm
+- **[[entities/overreacted-io.md]]** — Yao's foundational reasoning+acting paradigm
 - **[[Tree of Thoughts]]** — Search-based deliberation for LLMs
 - **[[Reflexion]]** — Verbal reinforcement learning
 - **[[coala]]** — Cognitive architectures for language agents

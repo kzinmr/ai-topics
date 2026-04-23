@@ -143,3 +143,7 @@ Ethan Mollick's X/Twitter activity focuses on:
 - **Entrepreneurship** — How AI changes the economics of starting and running businesses
 - **Co-Intelligence Philosophy** — The idea that AI-human partnership, not replacement, is the future
 - **AI Safety & Ethics** — Balanced takes on AI risk, avoiding both hype and panic
+
+## See Also
+
+- [[entities/_index.md]]

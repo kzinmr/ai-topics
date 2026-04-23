@@ -4,7 +4,7 @@ created: 2026-04-13
 updated: 2026-04-13
 tags: [burnout, productivity, ai-addiction, developer-wellness, work-culture]
 aliases: ["ai-burnout", "developer-addiction-patterns", "black-eye-club", "slot-machine-development"]
-related: [[inference-speed-development]], [[direct-prompting-philosophy]], [[harness-engineering/agentic-engineering]]
+related: [[inference-speed-development]], [[direct-prompting-philosophy]], [[concepts/agentic-engineering.md]]
 sources:
   - url: "https://steipete.me/posts/2025/just-one-more-prompt"
     author: "Peter Steinberger (@steipete)"
@@ -157,7 +157,7 @@ This creates a **perfect storm** for compulsive development behavior.
 
 - [[inference-speed-development]] — Why faster iteration amplifies addiction risk
 - [[direct-prompting-philosophy]] — How low-friction interaction enables compulsive behavior
-- [[harness-engineering/agentic-engineering]] — The broader context of AI-assisted development culture
+- [[concepts/agentic-engineering.md]] — The broader context of AI-assisted development culture
 - [[claude-code-anonymous]] — Community response to the phenomenon
 
 ## Sources

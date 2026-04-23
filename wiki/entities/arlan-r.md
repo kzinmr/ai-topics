@@ -135,11 +135,11 @@ Rakhmetzhanov's approach to building in public — launching on Product Hunt, co
 ## Related
 
 - [[nozomio]] — Rakhmetzhanov's AI coding product lab
-- [[nia]] — Context tool for AI coding agents
+- [[entities/xania-org.md]] — Context tool for AI coding agents
 - [[yc-s25]] — Y Combinator Summer 2025 batch
 - [[crv]] — Lead seed investor
-- [[cursor]] — AI coding agent; target user of Nia
-- [[github-copilot]] — AI coding tool; target user of Nia
+- [[entities/cursor-3.md]] — AI coding agent; target user of Nia
+- [[concepts/github-copilot-billing.md]] — AI coding tool; target user of Nia
 
 ## Sources
 

@@ -88,7 +88,7 @@ aliases:
 
 - [[agentic-engineering]] — Simon WillisonのAgentic Engineering哲学
 - [[harness-engineering]] — Agent = Model + Harness
-- [[system-architecture]] — システム構築パターン
+- [[concepts/harness-engineering/system-architecture/container-context.md]] — システム構築パターン
 - [[agent-loop-orchestration]] — Agent Loop Orchestration
 - [[building-effective-agents]] — Building Effective Agents (Anthropic)
 - [[context-engineering]] — コンテキスト最適化の統合フレームワーク

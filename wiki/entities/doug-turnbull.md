@@ -307,7 +307,7 @@ He maintains an active blog at softwaredoug.com with regular "daily search tips"
 - [[Elasticsearch]] — Primary search engine in his early work
 - [[Apache Solr]] — Search platform he worked with extensively
 - [[Learning to Rank]] — ML approach to combining ranking signals
-- [[RAG]] — Retrieval-Augmented Generation
+- [[raw/articles/crawl-2026-04-21-agentic-alternative-graphrag.md]] — Retrieval-Augmented Generation
 - [[BM25]] — Probabilistic ranking function
 - [[NDCG]] — Normalized Discounted Cumulative Gain
 - [[Quepid]] — Open-source search relevance testing workbench
@@ -318,7 +318,7 @@ He maintains an active blog at softwaredoug.com with regular "daily search tips"
 - [[Jo Kristian Bergum]] — Hornet CEO, former Vespa Chief Scientist, fellow search infrastructure veteran
 - [[OpenSource Connections]] — Search relevance consultancy where he served as CTO
 - [[Reddit]] — Platform where he achieved 2% DAU increase with LTR
-- [[Shopify]] — Where he improved merchant search revenue 10% YoY
+- [[raw/articles/open.substack.com--pub-swyx-p-shopify--d7096697.md]] — Where he improved merchant search revenue 10% YoY
 - [[Spotify]] — Where he worked as Staff Relevance Engineer
 - [[Daydream]] — AI fashion styling company where he doubled conversions
 

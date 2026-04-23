@@ -149,8 +149,8 @@ Cognition Growth Engineer Nader Dabit (@dabit3) extends the philosophy:
 ## See Also
 
 - [[closing-agent-loop]] — Full development loop (Write→Catch→Fix→Merge)
-- [[agent-team-swarm/managed-devins]] — Conditional multi-agent architecture
-- [[harness-engineering/system-architecture/context-anxiety]] — Context window limits
+- [[concepts/agent-team-swarm/managed-devins.md]] — Conditional multi-agent architecture
+- [[concepts/harness-engineering/system-architecture/context-anxiety.md]] — Context window limits
 - [[multi-agent-autonomy-scale]] — 5 levels of multi-agent autonomy
 - [[scott-wu]] — Cognition CEO
 - [[nader-dabit]] — Cognition Growth Engineer

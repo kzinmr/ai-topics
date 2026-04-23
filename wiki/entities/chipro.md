@@ -170,3 +170,7 @@ Chip Huyen's X/Twitter activity focuses on:
 - **Agent Architecture** — Technical deep-dives into how to build reliable agents
 - **Education** — Sharing course materials and learning resources for ML practitioners
 - **Startup Reflections** — Honest takes on the difficulty of founding AI companies
+
+## See Also
+
+- [[entities/_index.md]]

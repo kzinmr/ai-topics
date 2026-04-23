@@ -196,7 +196,7 @@ Graham's recent work reflects the transition from a **software-eats-the-world** 
 - [[independent-mindedness]] — The cognitive trait that enables breakthrough work
 - [[curiosity-driven-research]] — Following interest over strategic calculation
 - [[harness-engineering]] — Systems thinking approach to preventing recurring failures (Aaron Swartz connection)
-- [[harness-engineering/agentic-engineering]] — Agent-first development workflows
+- [[concepts/agentic-engineering.md]] — Agent-first development workflows
 
 ### Influences and Connections
 

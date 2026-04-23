@@ -1,3 +1,9 @@
+---
+title: Elixir/BEAM for AI Agent Orchestration
+category: other
+status: active
+---
+
 # Elixir/BEAM for AI Agent Orchestration
 
 **Source:** OpenAI Symphony / Ryan Lopopolo presentation materials

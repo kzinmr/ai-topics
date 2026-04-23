@@ -112,3 +112,7 @@ Gemini's distinctive advantages:
 - [Gemini 3 Model Card](http://deepmind.google/models/model-cards/gemini-3-pro)
 - Simon Willison newsletters (llm-gemini plugin coverage)
 - Reddit Google employee comment: "Over 40K SWEs use agentic coding weekly here" with internal Gemini CLI and MCP tools
+
+## See Also
+
+- [[concepts/_index.md]]

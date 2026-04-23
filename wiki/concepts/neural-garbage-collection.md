@@ -47,4 +47,4 @@ Where tasteful tokenmaxxing achieves efficiency through behavioral changes (dept
 
 ## Sources
 
-- [[raw/articles/ainews-tasteful-tokenmaxxing-2026-04-23]] — AINews #21, Latent.Space (April 2026) — "Neural Garbage Collection" mention in Post-Training, RL & Inference Optimization section
+- [[raw/articles/ainews-tasteful-tokenmaxxing-2026-04-23.md]] — AINews #21, Latent.Space (April 2026) — "Neural Garbage Collection" mention in Post-Training, RL & Inference Optimization section

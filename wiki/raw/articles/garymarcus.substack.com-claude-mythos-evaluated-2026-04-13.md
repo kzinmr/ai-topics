@@ -1,3 +1,9 @@
+---
+title: Claude Mythos, Evaluated - Gary Marcus
+category: other
+status: active
+---
+
 # Claude Mythos, Evaluated - Gary Marcus
 
 **Source:** Marcus on AI Substack

@@ -119,7 +119,7 @@ Exploreエージェントは**読取専用**で設計されており、ファイ
 ## 参照
 
 - [[simon-willison]] — How Coding Agents Work概念提唱者
-- [[sankalp]] — Claude Code 2.0 Task Tool分析
+- [[entities/sankalp-sinha.md]] — Claude Code 2.0 Task Tool分析
 - [[steipete]] — Plan Mode不要論
 - [Agentic Engineering Patterns — How Agents Work](https://simonwillison.net/guides/agentic-engineering-patterns/how-agents-work/)
 - [A Guide to Claude Code 2.0](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/)

@@ -157,7 +157,7 @@ His **Memex Method** — maintaining 50,000+ public notes in a searchable databa
 - [[ai-pascals-wager]] — AIドゥーマー議論のパスカルの賭え framing
 - [[ai-bubble-economics]] — AI投資バブルと経済リスク
 - [[post-american-internet]] — 脱・米国中心インターネット構想
-- [[eff]] — Electronic Frontier Foundation, where Doctorow is a special advisor
+- [[raw/articles/crawl-2026-04-23-building-effective-ai-agents.md]] — Electronic Frontier Foundation, where Doctorow is a special advisor
 
 ## Sources
 

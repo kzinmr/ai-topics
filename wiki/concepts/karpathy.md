@@ -22,3 +22,9 @@ Andrej Karpathy is a prominent AI researcher, educator, and entrepreneur known f
 - Move content from entities/andrej-karpathy.md here, or
 - Update all wikilinks to point directly to entities/andrej-karpathy.md
 - Link to karpathy-loop.md for his conceptual contributions
+
+## See Also
+
+- [[concepts/_index.md]]
+- [[concepts/karpathy-loop.md]]
+- [[concepts/harness-engineering/agentic-workflows/karpathy-rl-agents.md]]

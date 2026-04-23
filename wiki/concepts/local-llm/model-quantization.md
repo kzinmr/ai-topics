@@ -12,9 +12,9 @@ tags:
   - gptq
   - inference-optimization
 related:
-- "[[local-llm/gguf]]"
-- "[[inference/llama-cpp]]"
-- "[[inference/vllm]]"
+- "[[concepts/local-llm/gguf.md]]"
+- "[[concepts/inference/llama-cpp.md]]"
+- "[[concepts/inference/vllm.md]]"
 - "[[georgi-gerganov]]"
   - "[[nvidia-dgx-spark]]"
   - "[[llm-inference]]"

@@ -80,7 +80,7 @@ Brutecat builds tools that are **purpose-built for a specific attack surface** r
 - [[reverse-engineering]] — Binary and protocol analysis of undocumented systems
 - [[bug-bounty]] — Coordinated vulnerability disclosure and responsible exploitation
 - [[osint]] — Open-source intelligence gathering techniques
-- [[google]] — Platform under research
+- [[entities/google-tpu.md]] — Platform under research
 - [[protocol-buffers]] — Google's internal data serialization format
 - [[defense-in-depth]] — Layered security architecture and its failure modes
 

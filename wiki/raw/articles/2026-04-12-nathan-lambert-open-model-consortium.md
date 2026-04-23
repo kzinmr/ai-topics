@@ -1,3 +1,9 @@
+---
+title: Nathan Lambert: The inevitable need for an open model consortium
+category: other
+status: active
+---
+
 # Nathan Lambert: The inevitable need for an open model consortium
 **Source:** https://www.interconnects.ai/p/the-inevitable-need-for-an-open-model
 **Date:** 2026-04-12

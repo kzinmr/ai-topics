@@ -139,5 +139,5 @@ Sankalpは以下のようにツールを使い分けている：
 
 ## 参照
 
-- [[sankalp]] — Throw-Away First Draftパターンの提唱者
+- [[entities/sankalp-sinha.md]] — Throw-Away First Draftパターンの提唱者
 - [A Guide to Claude Code 2.0](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/)

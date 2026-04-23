@@ -131,7 +131,7 @@ He explicitly states: *"Don't feel like you have to trade me something if you on
 
 - [[formal-methods]] — Mathematical techniques for verifying software correctness
 - [[tla-plus]] — Temporal Logic of Actions, formal specification language by Leslie Lamport
-- [[property-based-testing]] — Testing general properties rather than specific examples
+- [[raw/articles/2026-04-15-property-based-testing-anthropic.md]] — Testing general properties rather than specific examples
 - [[software-friction]] — Cognitive and operational costs in software development
 - [[hierarchy-of-controls]] — Framework for preventing production incidents
 

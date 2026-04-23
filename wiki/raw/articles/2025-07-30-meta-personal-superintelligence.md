@@ -1,3 +1,9 @@
+---
+title: Personal Superintelligence
+category: other
+status: active
+---
+
 Source: https://www.meta.com/superintelligence/
 Author: Mark Zuckerberg
 Date: July 30, 2025

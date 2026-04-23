@@ -178,7 +178,7 @@ Photorealistic path tracer for rendering 3D scenes. Won top project out of 100 s
 
 ## Related Wikilinks
 
-- [[Modal]] — Serverless compute platform he helped build
+- [[concepts/multimodal/_index.md]] — Serverless compute platform he helped build
 - [[Thinking Machines Lab]] — His current employer
 - [[Rust Programming]] — His primary systems language
 - [[Firecracker]] — Lightweight hypervisor used in ssh-hypervisor

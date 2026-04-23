@@ -4,7 +4,7 @@ created: 2026-04-10
 updated: 2026-04-16
 tags: [concept, ai-agents, security, sandboxing, isolation, coding-agents, infrastructure]
 aliases: ["agent-isolation", "ai-sandbox-technologies", "infrastructure-sandbox"]
-related: [[sandbox/in-process]], [[anthropic-managed-agents]], [[ai-coding-reliability]], [[harness-engineering/agentic-engineering]]
+related: [[concepts/sandbox/in-process.md]], [[anthropic-managed-agents]], [[ai-coding-reliability]], [[concepts/agentic-engineering.md]]
 depth: L2
 status: complete
 ---
@@ -228,7 +228,7 @@ As Blake Crosley's analysis notes: *"The minimum viable defense is a URL allowli
 
 - [[anthropic-managed-agents]] — Managed agent services and their sandboxing approaches
 - [[ai-coding-reliability]] — Ensuring AI-generated code is correct and safe
-- [[harness-engineering/agentic-engineering]] — The practice of directing AI agents in software development
+- [[concepts/agentic-engineering.md]] — The practice of directing AI agents in software development
 - [[claude-mythos-glasswing]] — Anthropic's internal agent architecture
 - [[ai-agent-traps]] — Common pitfalls in agent deployment
 

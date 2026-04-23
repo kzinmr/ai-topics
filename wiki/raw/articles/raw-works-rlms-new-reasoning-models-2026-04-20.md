@@ -1,3 +1,9 @@
+---
+title: RAW.works - RLMs are the New Reasoning Models
+category: other
+status: active
+---
+
 # RAW.works - RLMs are the New Reasoning Models
 
 **Source:** [raw.works](https://raw.works/rlms-are-the-new-reasoning-models/) | April 20, 2026
@@ -155,11 +161,11 @@ Root LM
 ## Related Concepts
 
 - [[recursive-language-model]] — RLM
-- [[longcot]] — Long Chain-of-Thought benchmark
+- [[raw/articles/raw-works-rlms-sota-on-longcot-2026-04-19.md]] — Long Chain-of-Thought benchmark
 - [[dspy]] — DSPy framework
 - [[reasoning-models]] — Reasoning models product category
 - [[chain-of-thought]] — CoT prompting
-- [[tool-use]] — Tool use in LLMs
+- [[concepts/harness-engineering/system-architecture/advanced-tool-use.md]] — Tool use in LLMs
 
 ---
 

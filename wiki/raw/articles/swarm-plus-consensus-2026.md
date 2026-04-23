@@ -1,3 +1,9 @@
+---
+title: SWARM+: Scalable and Resilient Multi-Agent Consensus for Fully-Decentralized Data-Aware Workload Management
+category: other
+status: active
+---
+
 # SWARM+: Scalable and Resilient Multi-Agent Consensus for Fully-Decentralized Data-Aware Workload Management
 
 **Source:** arXiv:2603.19431v1 (cs.DC)

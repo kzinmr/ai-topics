@@ -119,3 +119,7 @@ Beyond the deliberate coding methodology, Ilegbodu's work encompasses:
 - **Blog:** https://www.benmvp.com
 - **GitHub:** https://github.com/benmvp
 - **Twitter/X:** @benmvp
+
+## See Also
+
+- [[entities/_index.md]]

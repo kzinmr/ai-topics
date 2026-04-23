@@ -210,22 +210,22 @@ Ryanは同意：依存関係を内部化（1K-10K LOCでも）は実行可能。
 ## 関連概念
 
 ### Harness配下のサブ概念
-- [[agentic-workflows]] — 開発者ワークフロー詳細（Willison, Sankalp, Steipeteパターン）
-- [[system-architecture]] — システム構築パターン（Anthropic, OpenAI Responses API）
+- [[concepts/harness-engineering/agentic-workflows/interactive-explanations.md]] — 開発者ワークフロー詳細（Willison, Sankalp, Steipeteパターン）
+- [[concepts/harness-engineering/system-architecture/container-context.md]] — システム構築パターン（Anthropic, OpenAI Responses API）
 - [[context-engineering]] — コンテキスト最適化技術（Karpathy + DSPy + Anthropic）
 
 ### 横断参照
 - [[karpathy-loop]] — Karpathyの自律的実験設計ループ
 - [[skill-architecture-patterns]] — スキル自己改善 vs 管理パターン
-- [[system-architecture/context-compaction]] — コンテキスト圧縮メカニズム
-- [[system-architecture/context-anxiety]] — Claude Sonnet 4.5のコンテキスト不安現象
+- [[concepts/harness-engineering/system-architecture/context-compaction.md]] — コンテキスト圧縮メカニズム
+- [[concepts/harness-engineering/system-architecture/context-anxiety.md]] — Claude Sonnet 4.5のコンテキスト不安現象
 - [[mismanaged-geniuses-hypothesis]] — フロンティアLMはサブ最適なスキャフォールディングで未活用
 
 ## Sources
 - [[agentic-engineering]] — Simon WillisonのAgentic Engineering哲学
 - [[agentic-engineering-patterns]] — Simon Willisonの実践パターンガイド
-- [[agentic-workflows]] — 開発者ワークフロー詳細（Willison, Sankalp, Steipeteパターン）
-- [[system-architecture]] — システム構築パターン（Anthropic, OpenAI Responses API）
+- [[concepts/harness-engineering/agentic-workflows/interactive-explanations.md]] — 開発者ワークフロー詳細（Willison, Sankalp, Steipeteパターン）
+- [[concepts/harness-engineering/system-architecture/container-context.md]] — システム構築パターン（Anthropic, OpenAI Responses API）
 - Ryan Lopopolo, OpenAI Harness Engineering
 - Anthropic: Building Effective Agents, Context Engineering
 - OpenAI Cookbook: Context Engineering Patterns

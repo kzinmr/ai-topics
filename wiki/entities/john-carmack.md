@@ -150,7 +150,7 @@ Carmack aligns with Richard Sutton's "Bitter Lesson" thesis: general methods tha
 - [[John Romero]] — id Software co-founder
 - [[Richard Sutton]] — Keen Technologies partner; RL pioneer
 - [[reinforcement-learning]] — Carmack's preferred AGI approach
-- [[bitter-lesson]] — Sutton's thesis that Carmack advocates
+- [[concepts/chatgpt-memory-bitter-lesson.md]] — Sutton's thesis that Carmack advocates
 - [[keen-technologies]] — Carmack's AGI company
 
 ## Sources

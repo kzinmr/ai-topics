@@ -1,3 +1,9 @@
+---
+title: A Philosophy of Software Design vs Clean Code
+category: other
+status: active
+---
+
 # A Philosophy of Software Design vs Clean Code
 
 *(This document is the result of a series of discussions, some online and

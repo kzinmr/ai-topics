@@ -1,3 +1,9 @@
+---
+title: Vellum AI: Agentic Workflows in 2026 — 3 Levels, 4 Components
+category: other
+status: active
+---
+
 # Vellum AI: Agentic Workflows in 2026 — 3 Levels, 4 Components
 
 **Source:** https://www.vellum.ai/blog/agentic-workflows-emerging-architectures-and-design-patterns
