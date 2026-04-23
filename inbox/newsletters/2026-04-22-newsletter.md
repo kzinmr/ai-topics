@@ -1,227 +1,92 @@
 # Newsletter Digest - 2026-04-22
-**Subject:** Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym — wi…
-**Processed:** 2026-04-23T05:08:30.445270+00:00
-**Articles scraped:** 18
+**Subject:** ChatGPT Images Now Reasons Before Drawing
+**Processed:** 2026-04-23T06:37:53.966133+00:00
+**Articles scraped:** 8
 
 ---
 
-## 1. Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym - with Mikhail Parakhin, Shopify CTO
+## 1. ChatGPT Images Now Reasons Before Drawing
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTUwNjc4NTUsImlhdCI6MTc3Njg4NjQ5NSwiZXhwIjoxNzc5NDc4NDk1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.RmFfx40qQnsPe18qeOnIIhcvpnZ97IxWVI8aCtykLjE&utm_source=substack&utm_medium=email&utm_content=play_card#play
-- **Length:** 81047 chars
+- **URL:** https://link.mail.beehiiv.com/v1/c/RZu84jJUQTLob2xNOXDmevcOVPgSrvMtyPN%2FaksB3VONPP3iiT9Qm8DbXh6b%0AT3sYYC44AjQ2XtkNiGeuzEDajP%2Bj6oIYbfim%2FiauxvZ6YneZDghTEULY4A81%0AEXPyHjTdcSalanUq3i0bO0mDVjGQObgtJ7zQNOj%2BwKXlcb1Bt4P3e5DZgg2b%0AwZLHcTXeffq5GKY%2BkKpILeRjV%2FARbAbvzw%3D%3D%0A/f4c1ae8f994da4be
+- **Length:** 799 chars
 
-> Early bird discounts for
-> the San Francisco World’s Fair
-> , the biggest AIE gathering of the year, end today - prices will go up by ~$500 tonight so do please lock in ASAP!
-> From near-universal AI tool adoption inside Shopify to internal systems for ML experimentation, auto-research, customer simulation, and ultra-low-latency search, Mikhail Parakhin joins us for a deep dive into what it actually looks like when
-> a 20-year-old, $200B software company goes all-in on AI
-> . We cover why Shopify has beco
+> ❝
+> 👉 OpenAI released ChatGPT Images 2.0, its first image model with built-in reasoning capabilities, allowing the system to plan layout and structure before generating visuals, rather than producing one-shot outputs.
+> 👉 The model can now generate up to eight coherent images per prompt with character and object consistency, enabling workflows like storyboarding, multi-format ad campaigns, and sequential comic panels in a single conversation.
+> 👉 Text rendering, long the weakest point of AI image gene
 
-## 2. Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym - with Mikhail Parakhin, Shopify CTO
+## 2. ChatGPT Images Now Reasons Before Drawing
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTUwNjc4NTUsImlhdCI6MTc3Njg4NjQ5NSwiZXhwIjoxNzc5NDc4NDk1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.RmFfx40qQnsPe18qeOnIIhcvpnZ97IxWVI8aCtykLjE&utm_source=substack&utm_medium=email&utm_content=play_card_show_logo#play
-- **Length:** 81047 chars
+- **URL:** https://link.mail.beehiiv.com/v1/c/TUElqUqBlB9B8x5NfVjl0YXLDXQSdi38e0McGuI9O4rOGQJs8uDBu823VuwO%0Al5XB4mxjFBNV7a6tV%2FS8EiorxbBpwQMoqJn1IQuDpAATFnEiJ3ZHrZEkwrVJ%0AOhXKZAwpqF3euXkrRE3VoPe%2BVNaZjewQz2bABBiePcqM0eLN5J0xlqWy9eBo%0A8PU8OLJ6QDFkuSD8fj4E%2FxjpyP1iBybJOA%3D%3D%0A/d20bcf6fb34e7f89
+- **Length:** 799 chars
 
-> Early bird discounts for
-> the San Francisco World’s Fair
-> , the biggest AIE gathering of the year, end today - prices will go up by ~$500 tonight so do please lock in ASAP!
-> From near-universal AI tool adoption inside Shopify to internal systems for ML experimentation, auto-research, customer simulation, and ultra-low-latency search, Mikhail Parakhin joins us for a deep dive into what it actually looks like when
-> a 20-year-old, $200B software company goes all-in on AI
-> . We cover why Shopify has beco
+> ❝
+> 👉 OpenAI released ChatGPT Images 2.0, its first image model with built-in reasoning capabilities, allowing the system to plan layout and structure before generating visuals, rather than producing one-shot outputs.
+> 👉 The model can now generate up to eight coherent images per prompt with character and object consistency, enabling workflows like storyboarding, multi-format ad campaigns, and sequential comic panels in a single conversation.
+> 👉 Text rendering, long the weakest point of AI image gene
 
-## 3. Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym - with Mikhail Parakhin, Shopify CTO
+## 3. First HR Software Implementation: A Go-To Guide
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTUwNjc4NTUsImlhdCI6MTc3Njg4NjQ5NSwiZXhwIjoxNzc5NDc4NDk1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.RmFfx40qQnsPe18qeOnIIhcvpnZ97IxWVI8aCtykLjE&utm_source=substack&utm_medium=email&utm_content=play_card_show_title#play
-- **Length:** 81047 chars
+- **URL:** https://link.mail.beehiiv.com/v1/c/ZSmNSBS4Av5L3tCaBurTHamKHku5gujLTkeNmG0Htyh0G3APHR1kf3t8oeDj%0AAHebp9iozUEu68UTgz98jIPFzBDe2cWQGHQ4aQMnW3eDVTIn4ySw2faE4t1P%0AFP4BVhsX3%2BJTfczTnNvH5Jjs72HU2j6893RJloiqMt0FhZkaB3Be5zFE56mv%0A4x6GuEpvGvpX2IkLtHlCexyykYNSTZMamUPyp7bo8W0P%2F0G2w8mlCOzGOIlL%0AUomhh6k3ReD3GND4HeO5XKKl4oqFvj3wh8uQ7pp1U%2FCfPqwbOY34sCKaWRrh%0A5QhOVaNIMfOUCU2ofHem4ZCoJ7K1NecnG%2BTRJ4Hdyg%3D%3D%0A/e38d16723acabd5d
+- **Length:** 3285 chars
 
-> Early bird discounts for
-> the San Francisco World’s Fair
-> , the biggest AIE gathering of the year, end today - prices will go up by ~$500 tonight so do please lock in ASAP!
-> From near-universal AI tool adoption inside Shopify to internal systems for ML experimentation, auto-research, customer simulation, and ultra-low-latency search, Mikhail Parakhin joins us for a deep dive into what it actually looks like when
-> a 20-year-old, $200B software company goes all-in on AI
-> . We cover why Shopify has beco
+> Implementing your first
+> HR tool
+> is a milestone, but also a high-stakes project. The data you migrate, the workflows you define, and the habits you set in this rollout will become the backbone of how your company hires, pays, develops, and supports people for years to come.
+> The problem? Most early-stage teams have to figure this out with limited time, limited resources, and zero margin for error.
+> This guide to HR software implementation was designed to remove the guesswork. Whether you’re a found
 
-## 4. Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym - with Mikhail Parakhin, Shopify CTO
+## 4. Business Insider Email Newsletters: Subscribe Now
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTUwNjc4NTUsImlhdCI6MTc3Njg4NjQ5NSwiZXhwIjoxNzc5NDc4NDk1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.RmFfx40qQnsPe18qeOnIIhcvpnZ97IxWVI8aCtykLjE&utm_source=substack&utm_medium=email&utm_content=play_card_post_title#play
-- **Length:** 81047 chars
+- **URL:** https://link.mail.beehiiv.com/v1/c/egncq%2F2JvG3z1SRwrF0XP8BPezQ9BLFjerV54xwhPQyA03y3HxxhODtzfafS%0AXlS5KRtFVL0zz7qQZNyHajfrQN69eIKwJfMC04m83%2BGr1NDbyN33dodIkrbS%0AOdJXWumJmZSLUkz%2F3kptGXcOZmETlp3alO0ATwF3V0gRKPQWX1YF6ZW%2BloEY%0AgUNBKZYBkBtWgTNbsRjjFG%2BzE9qOnfvkHQ%3D%3D%0A/98ab2f1c97b809f9
+- **Length:** 2105 chars
 
-> Early bird discounts for
-> the San Francisco World’s Fair
-> , the biggest AIE gathering of the year, end today - prices will go up by ~$500 tonight so do please lock in ASAP!
-> From near-universal AI tool adoption inside Shopify to internal systems for ML experimentation, auto-research, customer simulation, and ultra-low-latency search, Mikhail Parakhin joins us for a deep dive into what it actually looks like when
-> a 20-year-old, $200B software company goes all-in on AI
-> . We cover why Shopify has beco
+> Project Prometheus, the secretive AI startup cofounded by Jeff Bezos, is raising around $10 billion in fresh funding at a post-money valuation of around $38 billion, according to multiple sources.
+> Loading audio narration...
+> The round is still in progress, and details could change. If completed, it would be the company's first funding since the $6.2 billion it raised at launch last year.
+> A spokeswoman for the startup declined to comment.
+> Bezos cofounded Project Prometheus in November. Little is k
 
-## 5. Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym - with Mikhail Parakhin, Shopify CTO
+## 5. Google Starts Scanning All Your Photos As New Update Goes Live
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTUwNjc4NTUsImlhdCI6MTc3Njg4NjQ5NSwiZXhwIjoxNzc5NDc4NDk1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.RmFfx40qQnsPe18qeOnIIhcvpnZ97IxWVI8aCtykLjE&utm_source=substack&utm_medium=email&utm_content=play_card_duration#play
-- **Length:** 81047 chars
+- **URL:** https://link.mail.beehiiv.com/v1/c/YHaYtM4tOL%2FDENtWekzMSfVk2R8xs3nf7yM%2FPKDC%2F9NfoJs0l9%2BaUyiWLw%2FG%0AVA7FRga8LVRsWkMNL6nbmxtIHM0qVLnS0tur%2F48reEh2L4nAVrSvK7ZYFrO5%0AOc1Lt94pWjE1OD5iqwCchB0UGjzL5WM7ZXrvaGgyp3F%2FVlg3X3HJQz5ZkT9d%0AUH16%2FcT%2B%2BrFr8udY7vb6EzdJJ055u4dnZw%3D%3D%0A/ff2673283347f1f7
+- **Length:** 4627 chars
 
-> Early bird discounts for
-> the San Francisco World’s Fair
-> , the biggest AIE gathering of the year, end today - prices will go up by ~$500 tonight so do please lock in ASAP!
-> From near-universal AI tool adoption inside Shopify to internal systems for ML experimentation, auto-research, customer simulation, and ultra-low-latency search, Mikhail Parakhin joins us for a deep dive into what it actually looks like when
-> a 20-year-old, $200B software company goes all-in on AI
-> . We cover why Shopify has beco
+> All your photos are now in play.
+> getty
+> Updated on Apr. 20 with additional analysis on Google’s new update and the deciding factors as users consider the new privacy implications.
+> Take a moment to think before you dive in. That’s the best advice for Google Photos  users, as the company confirms its latest update can scan all your photos to “use actual images of you and your loved ones” in AI image generation. That means Gemini seeing who you know and what you do. You likely have tens or hundreds 
 
-## 6. Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym - with Mikhail Parakhin, Shopify CTO
+## 6. First HR Software Implementation: A Go-To Guide
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTUwNjc4NTUsImlhdCI6MTc3Njg4NjQ5NSwiZXhwIjoxNzc5NDc4NDk1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.RmFfx40qQnsPe18qeOnIIhcvpnZ97IxWVI8aCtykLjE&utm_source=substack&utm_medium=email&utm_content=play_card_progress_bar#play
-- **Length:** 81047 chars
+- **URL:** https://link.mail.beehiiv.com/v1/c/fLMNdFoQqDaGyP02Knd%2BtoYdtna7DyUp8x9oJh9yDyafDW%2FacowE9DSSnFxA%0Ak4MK1Vu7%2FWPJO6EQGyoGpuFFZLEbpAiRcZe%2Fu081ArVll%2ByFK1%2FtdjlmU0Q5%0AOAku6cCfhhrbeMuZriqnlsXHn2XsQMBZHij9qSg5j2wV2%2BO9l95hOUsizavn%0AMaeRIQO3migmKNiGrX8BUN%2BNZiM1p2Oc55A301Gm%2BKHHanMWwj%2BabB2DXLxx%0AMmLe2Arji4rB7Wg7H8q3bB3tclr5Nk9u0%2B%2FPrpDjmn968voaobGjPAwAiTM5%0AqdbBdNsTygZa8bLG%2BbQ3uxcf1OfEvLHyLycRd7ysHw%3D%3D%0A/a1f19ad870fb875d
+- **Length:** 3285 chars
 
-> Early bird discounts for
-> the San Francisco World’s Fair
-> , the biggest AIE gathering of the year, end today - prices will go up by ~$500 tonight so do please lock in ASAP!
-> From near-universal AI tool adoption inside Shopify to internal systems for ML experimentation, auto-research, customer simulation, and ultra-low-latency search, Mikhail Parakhin joins us for a deep dive into what it actually looks like when
-> a 20-year-old, $200B software company goes all-in on AI
-> . We cover why Shopify has beco
+> Implementing your first
+> HR tool
+> is a milestone, but also a high-stakes project. The data you migrate, the workflows you define, and the habits you set in this rollout will become the backbone of how your company hires, pays, develops, and supports people for years to come.
+> The problem? Most early-stage teams have to figure this out with limited time, limited resources, and zero margin for error.
+> This guide to HR software implementation was designed to remove the guesswork. Whether you’re a found
 
-## 7. Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym - with Mikhail Parakhin, Shopify CTO
+## 7. First HR Software Implementation: A Go-To Guide
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTUwNjc4NTUsImlhdCI6MTc3Njg4NjQ5NSwiZXhwIjoxNzc5NDc4NDk1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.RmFfx40qQnsPe18qeOnIIhcvpnZ97IxWVI8aCtykLjE&utm_source=substack&utm_medium=email&utm_content=play_card_play_button#play
-- **Length:** 81047 chars
+- **URL:** https://link.mail.beehiiv.com/v1/c/FDWIL4UKU86WqGvus3EgBVWiJWnr0QrId1t52CDd3YCpxsgzKDgUdCnT6V5o%0A1cZz69yjBvD1Ry6Wc2ldgDw%2FMXrh9Q%2Fw4pTcFU%2Be0TkQVCbo2MXctN5uqqWH%0AiEiN4uwlMDA9wPdFJuojXXbUiX9QWHUtVwt7fq1uEUCJ2s%2B8mbMk5M2lfbtu%0ALFRuF9pmRxeeHePeifvVOxJeeVrha%2BCopr9s3A6QSYulDcRClzsWxRLSkOBa%0AjF6KSE%2BgsZHEYfy2NNvfIQTQm8rYMjDjzYUrt24vML4AABwQ28m8Il3DeKrC%0AuucmoYy7g06tKyMgkP2OTGARxfd%2FtWHcft8U2bF8ag%3D%3D%0A/82cee36c0157852d
+- **Length:** 3285 chars
 
-> Early bird discounts for
-> the San Francisco World’s Fair
-> , the biggest AIE gathering of the year, end today - prices will go up by ~$500 tonight so do please lock in ASAP!
-> From near-universal AI tool adoption inside Shopify to internal systems for ML experimentation, auto-research, customer simulation, and ultra-low-latency search, Mikhail Parakhin joins us for a deep dive into what it actually looks like when
-> a 20-year-old, $200B software company goes all-in on AI
-> . We cover why Shopify has beco
+> Implementing your first
+> HR tool
+> is a milestone, but also a high-stakes project. The data you migrate, the workflows you define, and the habits you set in this rollout will become the backbone of how your company hires, pays, develops, and supports people for years to come.
+> The problem? Most early-stage teams have to figure this out with limited time, limited resources, and zero margin for error.
+> This guide to HR software implementation was designed to remove the guesswork. Whether you’re a found
 
-## 8. Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym - with Mikhail Parakhin, Shopify CTO
+## 8. First HR Software Implementation: A Go-To Guide
 
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTUwNjc4NTUsImlhdCI6MTc3Njg4NjQ5NSwiZXhwIjoxNzc5NDc4NDk1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.RmFfx40qQnsPe18qeOnIIhcvpnZ97IxWVI8aCtykLjE&utm_content=listen_now_button
-- **Length:** 81047 chars
+- **URL:** https://link.mail.beehiiv.com/v1/c/wkk9di7EDeeJysjELesL%2BUKu9CMUOhlf9jSh1zgX6mAQhnqOwaa46eCRKzWy%0A6QFWPOtsHGYncD4O7ncFBrcNQMj3uUwhaHLA7ymuicYHOK4t%2Basi7MLSG34T%0AJ9leUbl15JtY6COF2ikf6gsqIWOZy1rkYRGagsCnQ78kQ3A8hSBu389C358s%0A9tOXqr%2FGMi%2Bw%2FchnSdrogkK1JOl8bddE58IpvxZ1ZBcx2w8NX87C9KG2ELoT%0AuILpS6fleRdt2TuBmzDJjW9kMEUvmjp4iPM4%2Bic2P53pQay1tm3XraMxhYP8%0A0YgEDzjUNtntq30lgIqz%2FUoyBByCInS7NrV2TI0X0w%3D%3D%0A/e2e0ac80fd4384ed
+- **Length:** 3285 chars
 
-> Early bird discounts for
-> the San Francisco World’s Fair
-> , the biggest AIE gathering of the year, end today - prices will go up by ~$500 tonight so do please lock in ASAP!
-> From near-universal AI tool adoption inside Shopify to internal systems for ML experimentation, auto-research, customer simulation, and ultra-low-latency search, Mikhail Parakhin joins us for a deep dive into what it actually looks like when
-> a 20-year-old, $200B software company goes all-in on AI
-> . We cover why Shopify has beco
-
-## 9. Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym - with Mikhail Parakhin, Shopify CTO
-
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTUwNjc4NTUsImlhdCI6MTc3Njg4NjQ5NSwiZXhwIjoxNzc5NDc4NDk1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.RmFfx40qQnsPe18qeOnIIhcvpnZ97IxWVI8aCtykLjE
-- **Length:** 81047 chars
-
-> Early bird discounts for
-> the San Francisco World’s Fair
-> , the biggest AIE gathering of the year, end today - prices will go up by ~$500 tonight so do please lock in ASAP!
-> From near-universal AI tool adoption inside Shopify to internal systems for ML experimentation, auto-research, customer simulation, and ultra-low-latency search, Mikhail Parakhin joins us for a deep dive into what it actually looks like when
-> a 20-year-old, $200B software company goes all-in on AI
-> . We cover why Shopify has beco
-
-## 10. with Mikhail Parakhin, Shopify CTO
-
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTUwNjc4NTUsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzc2ODg2NDk1LCJleHAiOjE3Nzk0Nzg0OTUsImlzcyI6InB1Yi0xMDg0MDg5Iiwic3ViIjoicmVhY3Rpb24ifQ.Ml-JppFm2gK2J0KPE-NWGlDIPXcyBNWVFQNqpyJf8HY&utm_medium=email&utm_campaign=email-reaction&r=2flx6
-- **Length:** 155 chars
-
-> A rare interview with Shopify's CTO on -everything- that Shopify is doing to maximize AI for their customers, with exclusive data on their own AI adoption.
-
-## 11. with Mikhail Parakhin, Shopify CTO
-
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTUwNjc4NTUsImlhdCI6MTc3Njg4NjQ5NSwiZXhwIjoxNzc5NDc4NDk1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.RmFfx40qQnsPe18qeOnIIhcvpnZ97IxWVI8aCtykLjE&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
-- **Length:** 155 chars
-
-> A rare interview with Shopify's CTO on -everything- that Shopify is doing to maximize AI for their customers, with exclusive data on their own AI adoption.
-
-## 12. Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym - with Mikhail Parakhin, Shopify CTO
-
-- **URL:** https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoxOTUwNjc4NTUsImlhdCI6MTc3Njg4NjQ5NSwiZXhwIjoxNzc5NDc4NDk1LCJpc3MiOiJwdWItMTA4NDA4OSIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.RmFfx40qQnsPe18qeOnIIhcvpnZ97IxWVI8aCtykLjE
-- **Length:** 81047 chars
-
-> Early bird discounts for
-> the San Francisco World’s Fair
-> , the biggest AIE gathering of the year, end today - prices will go up by ~$500 tonight so do please lock in ASAP!
-> From near-universal AI tool adoption inside Shopify to internal systems for ML experimentation, auto-research, customer simulation, and ultra-low-latency search, Mikhail Parakhin joins us for a deep dive into what it actually looks like when
-> a 20-year-old, $200B software company goes all-in on AI
-> . We cover why Shopify has beco
-
-## 13. Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym - with Mikhail Parakhin, Shopify CTO
-
-- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS9wdWIvc3d5eC9wL3Nob3BpZnk_dXRtX3NvdXJjZT1zdWJzdGFjayZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1yZXN0YWNrLWNvbW1lbnQmYWN0aW9uPXJlc3RhY2stY29tbWVudCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3hPVFV3TmpjNE5UVXNJbWxoZENJNk1UYzNOamc0TmpRNU5Td2laWGh3SWpveE56YzVORGM0TkRrMUxDSnBjM01pT2lKd2RXSXRNVEE0TkRBNE9TSXNJbk4xWWlJNkluQnZjM1F0Y21WaFkzUnBiMjRpZlEuUm1GZng0MHFRbnNQZTE4cWVPbklJaGN2cG5aOTdJeFdWSThhQ3R5a0xqRSIsInAiOjE5NTA2Nzg1NSwicyI6MTA4NDA4OSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzc2ODg2NDk1LCJleHAiOjIwOTI0NjI0OTUsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.2Al7F2T5HoxRXCKc4H65Kj7ZXbrV-_81sRDHgFpFNHY?&utm_source=substack&utm_medium=email
-- **Length:** 81047 chars
-
-> Early bird discounts for
-> the San Francisco World’s Fair
-> , the biggest AIE gathering of the year, end today - prices will go up by ~$500 tonight so do please lock in ASAP!
-> From near-universal AI tool adoption inside Shopify to internal systems for ML experimentation, auto-research, customer simulation, and ultra-low-latency search, Mikhail Parakhin joins us for a deep dive into what it actually looks like when
-> a 20-year-old, $200B software company goes all-in on AI
-> . We cover why Shopify has beco
-
-## 14. Introducing the Substack app
-
-- **URL:** https://open.substack.com/pub/swyx/p/shopify?utm_source=email&redirect=app-store&utm_campaign=email-read-in-app
-- **Length:** 115 chars
-
-> World-class video, podcasts, and writing
-> The best stories, ideas, and culture right at your fingertips.
-> Get the app
-
-## 15. AI Engineer World's Fair 2026: June 29
-
-- **URL:** https://substack.com/redirect/0e9da460-e606-4110-9eb7-072c02961327?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 1069 chars
-
-> Choose from 10 parallel engineering tracks and 400+ sessions, alongside dedicated Leadership Track programming for executives. Team attendance makes sense and group discounts help.
-> 01
-> RL + Reasoning
-> 02
-> Evals & Observability
-> 03
-> Robotics
-> 04
-> World Models
-> 05
-> Memory & Continual Learning
-> 06
-> Voice
-> 07
-> Security
-> 08
-> Search & Retrieval (RAG, Deep Research, Web search)
-> 09
-> Graphs (Knowledge/Context Graphs, GNNs, GraphRAG)
-> 10
-> Generative Media / Creative AI
-> 11
-> Sandboxes
-> 12
-> LLM Production Infra
-> 13
-> Vision (OCR, S
-
-## 16. WTF Happened in December 2025?
-
-- **URL:** https://substack.com/redirect/e2498201-7734-4273-94d7-c729fcdf83d7?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 11692 chars
-
-> The problem with wanting to cover AI without giving in to hype is, sometimes, there
-> REALLY IS
-> something warranting the hype every few weeks. It is hard to tell when many influencers make their living telling you {MODEL THAT JUST RELEASED} is AGI and {MODEL THEY PREVIOUSLY ENDORSED} is now absolute trash. The simple solution is to try to form your own opinions… and rely on credible voices that won’t sell out to the attention game.
-> There’s been an increasing number of the latter
-> (and also the nois
-
-## 17. Tangle: An open-source ML experimentation platform built for scale (2025)
-
-- **URL:** https://substack.com/redirect/2afd5c29-762b-4e90-9bee-75351d8890a3?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 16253 chars
-
-> By Alexey Volkov, Staff Engineer, Search Product & Tooling
-> Jump to getting started
-> Your experiment finally finished. Six hours later, your teammate asks you to reproduce it. You can't remember which notebook version you used, whether you pulled fresh data, or what parameters you changed at 2 a.m. Now you're looking at another eight-hour run, just to
-> maybe
-> reproduce what you already did.
-> Machine learning development shouldn't work this way, but it does.
-> 80% of development time is spent on data en
-
-## 18. Skin Quiz and Hair Quiz
-
-- **URL:** https://substack.com/redirect/578fe0f2-6dee-4238-bc88-0969d2692be2?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
-- **Length:** 314 chars
-
-> Working with Tangent has been an incredible experience. Their team is highly professional, responsive, and truly on top of every detail. They built and delivered the exact quiz we envisioned, making the shade-matching and buying experience for our foundation feel seamless and frictionless for customers.
-> Show more
+> Implementing your first
+> HR tool
+> is a milestone, but also a high-stakes project. The data you migrate, the workflows you define, and the habits you set in this rollout will become the backbone of how your company hires, pays, develops, and supports people for years to come.
+> The problem? Most early-stage teams have to figure this out with limited time, limited resources, and zero margin for error.
+> This guide to HR software implementation was designed to remove the guesswork. Whether you’re a found
 
