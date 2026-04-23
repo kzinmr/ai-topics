@@ -1,34 +1,38 @@
 # デイリーインボックスアップデート — 2026-04-23
 
 ## RSS スキャン結果
-- スキャン数: 0 （成功: 0, 失敗: 0）
+- スキャン数: 0 （成功: 0, 失敗: 1）
 - 新規記事: 0
-- RSSスキャンエラー: blogwatcher-cli バイナリが見つからない（`/opt/data/bin/blogwatcher-cli`）
+
+### 失敗したブログ
+| ブログ名 | エラー内容 |
+|----------|------------|
+| blogwatcher-cli | [Errno 2] No such file or directory: '/opt/data/bin/blogwatcher-cli' |
+
+### ブログ記事一覧
+- 本日のRSSスキャンはありませんでした（blogwatcher-cliバイナリが存在しません）
+
+### Reddit ハイライト
+- 本日のRedditハイライトはありません
 
 ## ニュースレター
 - 件名: [AINews] Tasteful Tokenmaxxing
-- 記事数: 9（重複・リダイレクトを含む実質3記事）
-- 処理時刻: 2026-04-23T05:08:50.163550+00:00
+- 記事数: 9（メイン記事1件 + アプリ宣伝・イベント情報等のサブリンク）
+- 処理済み: `raw/articles/ainews-tasteful-tokenmaxxing-2026-04-23.md`
 
-### ニュースレター記事一覧
-- **[AINews] Tasteful Tokenmaxxing** (14874 chars) — Tokenmaxxing概念、Google TPUv8 Cloud Next発表、AIE Miami/Singaporeイベント
-- **TPU 8t and TPU 8i technical deep dive** (3794 chars) — Google TPU設計哲学、MoE対応、Agentic AI基盤
-- **AI Engineer Singapore** (460 chars) — シンガポールAIエンジニアリングイベント告知
-
----
+### メイン記事
+- [[AINews] Tasteful Tokenmaxxing](https://substack.com/app-link/post?publication_id=1084089&post_id=195193203) — swyx（Latent.Space）によるAITopicsニュースレター。AIE Miami終了後、AIリーダーシップが「Tasteful Tokenmaxxing」（質の高いAI導入の最大化）にシフトしたことを報告。TPU v8発表、Qwen3.6-27B、OpenAI Privacy Filter、Neural Garbage Collection等の重要なトピックを含む。
 
 ## トリアージ結果
+| ソース | タイトル | アクション |
+|--------|----------|------------|
+| newsletter | Tasteful Tokenmaxxing (AINews #21) | wikiエントリ更新 | tokenmaxxing.md（既存ページにエンリッチ） |
+| newsletter | Tasteful Tokenmaxxing (AINews #21) | wikiページ新規作成 | neural-garbage-collection.md（RL最適化KVキャッシュ） |
+| newsletter | Tasteful Tokenmaxxing (AINews #21) | wikiエントリ追加 | google-tpu.md（Infrastructure & Hardwareセクション） |
 
-| ソース | タイトル | アクション | 対象 |
-|--------|----------|------------|------|
-| newsletter | Tasteful Tokenmaxxing | wikiエントリ作成 | concepts/tokenmaxxing.md |
-| newsletter | TPU 8t and TPU 8i technical deep dive | wikiエントリ作成 | entities/google-tpu.md |
-| newsletter | AI Engineer Singapore | スキップ（イベント告知） | — |
-| newsletter | Introducing the Substack app | スキップ（アプリ宣伝） | — |
-| newsletter | Gergely Orosz | スキップ（人物プロフィール） | — |
-| newsletter | Alex Volkov | スキップ（人物プロフィール） | — |
-
-### トリアージ理由
-1. **Tasteful Tokenmaxxing**: 新概念「トークンmaxxing」(トークン利用の最適化・節約戦略) を記述。既存wikiに `token-economics` はあるが、この特定概念は未カバー。★★★★☆
-2. **TPU 8t/8i deep dive**: Google TPU設計哲学、MoE対応、Agentic AI基盤。既存wikiに `nvidia-dgx-spark` はあるが、TPU固有のページはなし。★★★★☆
-3. 他はイベント告知・アプリ宣伝・人物プロフィールのためスキップ。
+## Wikiインジェクション完了
+- ✅ `wiki/concepts/tokenmaxxing.md` — 既存ページ更新（新業界採用信号追加）
+- ✅ `wiki/concepts/neural-garbage-collection.md` — 新規概念ページ作成
+- ✅ `wiki/index.md` — 3エントリ追加（tokenmaxxing, google-tpu, neural-garbage-collection）
+- ✅ `wiki/log.md` — 2026-04-23エントリ追加
+- ✅ git commit: `3494f49` — wiki: 2026-04-23 daily ingestion
