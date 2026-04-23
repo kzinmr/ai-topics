@@ -544,3 +544,8 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 ### Cloud Architecture & Distributed Systems (AI Agent Infrastructure Mapping)
 
 - [[rehan-van-der-merwe|Rehan van der Merwe]] (@rehanvdm) — Cloud-native architect. AWS serverless, microservices design, distributed systems, operational excellence. Lambda Monolith (Lambdalith), EventBridge EDA, SQS Lambda ESM scaling behaviors, ECS Fargate scaling. Practical AWS architecture patterns directly mappable to AI Agent system design.
+
+## Complete Category Index
+
+- [concepts/_index.md](./concepts/_index.md) — All concept pages organized by sub-category (harness-engineering, fine-tuning, local-llm, openclaw, inference, sandbox, agent-loop-orchestration, etc.)
+- [entities/_index.md](./entities/_index.md) — All entity pages (people, companies, organizations, projects)
