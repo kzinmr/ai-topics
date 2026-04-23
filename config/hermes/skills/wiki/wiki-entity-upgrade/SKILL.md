@@ -10,7 +10,7 @@ Upgrade bio-only entity pages to comprehensive thought analysis format following
 
 ## Workflow
 
-1. Read existing bio-only entity page in ~/wiki/entities/
+1. Read existing bio-only entity page in `~/wiki/entities/`
 2. Scrape author's blog (homepage + 3-5 recent articles)
 3. Extract core ideas, philosophy, key quotes, recent themes
 4. Write upgraded page following the format below

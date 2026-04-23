@@ -102,7 +102,7 @@ A recurring theme across Siebenmann's writing is **empiricism over dogma**. Whet
 - [[systemd]] — Frequent topic of analysis and critique
 - [[supply-chain-security]] — Dependency cooldowns discussion
 - [[simon-tatham]] — Another Unix-oriented blogger with similar pragmatism
-- [[observability]] — Logs vs metrics debate
+- [[concepts/ai-observability.md]] — Logs vs metrics debate
 
 ## Sources
 

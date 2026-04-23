@@ -189,7 +189,7 @@ def search_grokipedia(name):
     return None
 
 # Scan entity pages missing Grokipedia source
-entity_dir = os.path.expanduser('~/ai-topics/wiki/entities')
+entity_dir = os.path.expanduser('~/wiki/entities')
 for f in sorted(os.listdir(entity_dir)):
     if not f.endswith('.md'):
         continue

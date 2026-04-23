@@ -660,4 +660,17 @@ accounts:
   - growth
   - pr
   - bootstrapping
-  notes: '4x founder, ex-Google/Firebase. Building Medialyst.ai, PressPulse.ai ($100k+ rev), Solar Flare PR. Newsletter: elvis.so. AI-powered growth hacking, vibe-launching, Context Lake system with Claude Code.'
+  notes: '4x founder, ex-Google/Firebase. Building Medialyst.ai, PressPulse.ai ($100k+ rev), Solar Flare PR. Newsletter: elvis.so. AI-powered PR hacking, vibe-launching, Context Lake system with Claude Code.'
+- handle: '@pupposandro'
+  name: Sandro Puppo
+  blog: https://www.lucebox.com
+  topics:
+  - ai
+  - local-llm
+  - gpu-inference
+  - cuda
+  - megakernel
+  - speculative-decoding
+  - egpu
+  - startup
+  notes: 'Co-founder of Cua (YC X25, trycua/cua) — open-source computer-use agent framework. Co-founder of Lucebox — building personal computers for local AI agents with custom CUDA kernels. Collaborates with @davideciffa on speculative decoding (DFlash), megakernel optimization, and eGPU benchmarking. Focus: making consumer GPUs competitive for local LLM inference through software-level optimization.'

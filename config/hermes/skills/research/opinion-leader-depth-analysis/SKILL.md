@@ -73,7 +73,7 @@ research_depth:
 ## Workflow
 
 ### For New Opinion Leaders
-1. Check `~/scripts/blog_authors.json` or `~/x-accounts.yaml` for pre-scraped data
+1. Check `~/.hermes/scripts/blog_authors.json` or `~/x-accounts.yaml` for pre-scraped data
 2. Run L1: Create basic entity page
 3. Run L2: Add timeline and works
 4. Run L3: Extract thoughts, quotes, frameworks (use blog-author-thought-analysis skill)

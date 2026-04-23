@@ -21,7 +21,7 @@ This VM uses exe.dev's Maildir-based email system. There is NO IMAP/SMTP server.
 - Fully processed emails moved to `~/Maildir/processed/`
 - `email-watcher` service auto-processes newsletters on arrival
 - Processed email IDs tracked in `~/.hermes/processed_emails.json`
-- Pre-built scripts: `~/scripts/check_mail.sh`, `~/scripts/process_email.py`
+- Pre-built scripts: `~/.hermes/scripts/check_mail.sh`, `~/.hermes/scripts/process_email.py`
 
 ## Email Flow
 ```
@@ -32,7 +32,7 @@ Gmail → Maildir/new/ → email-watcher runs → scrape links → save to wiki/
 
 ### 1. Quick status check
 ```bash
-~/scripts/check_mail.sh list
+~/.hermes/scripts/check_mail.sh list
 ```
 Shows: New count, Unprocessed (cur/) count, Processed count
 
@@ -46,13 +46,13 @@ ls -lt ~/Maildir/new/ ~/Maildir/cur/ ~/Maildir/processed/ 2>&1
 
 ### 3. Read email content (manual)
 ```bash
-~/scripts/check_mail.sh read <filename>
+~/.hermes/scripts/check_mail.sh read <filename>
 ```
 Works for files in all directories
 
 ### 4. Process unprocessed emails
 ```bash
-~/scripts/check_mail.sh process
+~/.hermes/scripts/check_mail.sh process
 ```
 This runs `process_email.py` which checks `new/`, `cur/`, AND `processed/` directories.
 
@@ -124,12 +124,12 @@ Look for 403 errors, connection timeouts, or network resets.
 ### "No new emails" but files exist in directories
 Run script directly:
 ```bash
-cd ~/scripts && source venv/bin/activate && python3 process_email.py
+cd ~/.hermes/scripts && source venv/bin/activate && python3 process_email.py
 ```
 
 ### Dependencies missing
 ```bash
-cd ~/scripts && python3 -m venv venv && source venv/bin/activate && pip install httpx beautifulsoup4 readability-lxml
+cd ~/.hermes/scripts && python3 -m venv venv && source venv/bin/activate && pip install httpx beautifulsoup4 readability-lxml
 ```
 
 ### Processed database corruption

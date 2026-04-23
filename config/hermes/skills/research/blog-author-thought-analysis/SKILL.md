@@ -29,7 +29,7 @@ OPML/Blog List → Check blog_authors.json → RSS Fetch → Article Scraping �
 
 ## Step 0: Check Pre-Scraped Data First
 
-**Always check `~/scripts/blog_authors.json` before re-scraping.**
+**Always check `~/.hermes/scripts/blog_authors.json` before re-scraping.**
 The `build_blog_wiki.py` script already scraped all OPML blogs and cached:
 - Author name, bio, blog URL, RSS URL
 - About page content
@@ -37,7 +37,7 @@ The `build_blog_wiki.py` script already scraped all OPML blogs and cached:
 
 ```python
 import json
-with open('~/scripts/blog_authors.json') as f:
+with open('~/.hermes/scripts/blog_authors.json') as f:
     authors = json.load(f)
 # Search by blog URL or author name
 ```
