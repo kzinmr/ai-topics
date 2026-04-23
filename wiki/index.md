@@ -154,6 +154,7 @@ Last updated: 2026-04-22 (Active Crawl: context-routing, agentic-web, agentic-wo
 - [[nvidia-nemoclaw]] — NVIDIA NemoClaw (secure agent framework with OpenShell sandbox + OpenClaw)
 - [[noetik]] — Biotech AI: transformer models for cancer trial matching, GSK $50M deal (Apr 2026)
 - [[local-llm/server-dgx-spark]] — Local LLM Server Setup on DGX Spark (complete setup guide with NemoClaw integration)
+- [[google-tpu]] — Google TPU v8 (TPU 8t training + TPU 8i inference, 1M-TPU single cluster, agentic AI infrastructure)
 
 ### AI Models & Technologies
 
@@ -171,7 +172,7 @@ Last updated: 2026-04-22 (Active Crawl: context-routing, agentic-web, agentic-wo
 - [[qwen3-6-plus]] — Qwen3.6-Plus
 - [[zoox-expansion]] — Zoox Robotaxi Expansion
 
-## Concept Pages (70)
+## Concept Pages (71)
 
 Ideas, frameworks, and methodologies extracted from articles.
 
@@ -365,6 +366,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[ram-relative-adoption-metric]] — Relative Adoption Metric (Nathan Lambert, time+size normalized model adoption trajectory prediction)
 
 - [[reasoning-model-cost-transparency]] — Reasoning Model Cost Transparency
+- [[tokenmaxxing]] — Tasteful Tokenmaxxing (quality-over-quantity AI adoption, depth-first workflows, trace-driven optimization)
 
 ### Infrastructure & Hardware
 
@@ -470,6 +472,7 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 - [[ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy (Memory Backends vs Context Substrates)
 - [[context-fragments]] — Context Fragments (Vivek Trivedy, Apr 2026) — harnessが選択的にロードするコンテキストオブジェクトの集合
 - [[experiential-memory]] — Experiential Memory (Vivek Trivedy, Apr 2026) — エージェント間で共有・フォーク・蓄積可能な経験的記憶
+- [[neural-garbage-collection]] — Neural Garbage Collection (RL-optimized KV-cache retention/eviction, joint reasoning+cache optimization)
 
 ### AI Safety & Alignment
 

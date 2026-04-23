@@ -1449,3 +1449,29 @@ Priority selection: 2 high-priority (4+ days stale) + 1 medium-priority (never c
 - agentic-engineering: last_crawled → 2026-04-22
 - death-of-browser: last_crawled → 2026-04-22 (was null)
 
+## 2026-04-23 — Daily Inbox Update: AINews Tokenmaxxing
+
+### Source: Newsletter Digest
+- `raw/articles/ainews-tasteful-tokenmaxxing-2026-04-23.md` — AINews #21: Tasteful Tokenmaxxing (swyx, Latent.Space)
+
+### Pages Created (1 concept page)
+- **neural-garbage-collection** — Neural Garbage Collection (RL-optimized KV-cache retention/eviction, joint reasoning+cache optimization)
+  - From AINews "Post-Training, RL & Inference Optimization" section
+  - RL jointly learns reasoning and KV-cache retention/eviction without proxy objectives
+  - Complements [[tokenmaxxing]] at the model-level inference optimization layer
+
+### Pages Updated (2 existing pages enriched)
+- [[concepts/tokenmaxxing]] — Already existed from earlier crawl; enriched with raw article summary and new industry adoption signals (OpenAI Privacy Filter, Xiaomi MiMo, Perplexity SFT+RL, Google TPU v8)
+- [[entities/google-tpu]] — Already existed; full TPU v8 specs (TPU 8t/8i, 1M-TPU cluster) documented in raw article
+
+### Index Updates
+- `index.md` — Added 3 entries:
+  - `concepts/neural-garbage-collection` (new concept)
+  - `entities/google-tpu` (new index entry for infrastructure section)
+  - `concepts/tokenmaxxing` (new index entry for AI Economics & Industry)
+- Concept Pages count updated: 70 → 71
+
+### Hot-Topics Update
+- tokenmaxxing: first crawl → 2026-04-23
+- neural-garbage-collection: first crawl → 2026-04-23
+- google-tpu: last_crawled → 2026-04-23 (raw article enrichment)
