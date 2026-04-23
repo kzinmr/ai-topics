@@ -1409,3 +1409,43 @@ Selected 3 topics: ai-agent-engineering (deepdive), harness-engineering (prerequ
 - **entities/jensen-huang.md** — Added TeortaxesTex's epistemic analysis section: "Jensen is the driver, not the car" framing, Causal Backbone lens applied to Jensen's agency-driven worldview vs. Dwarkesh's information-driven approach, "Not Being a Loser" survival epistemology
 - **entities/dwarkesh-patel.md** — Added TeortaxesTex's methodology critique: "unnaturally great podcaster" praise, rationalism-as-ragebaiting observation, milieu bias (China Bad, AGI wunderwaffe), information-driven vs agency-driven epistemic gap
 - Updated index.md with teortaxestex entry and cross-links
+
+## 2026-04-22 — Active Knowledge Crawl (3 topics)
+
+### Selected Topics
+Priority selection: 2 high-priority (4+ days stale) + 1 medium-priority (never crawled)
+- **context-engineering** (prerequisites, high, last_crawled=2026-04-18 → 4 days stale)
+- **agentic-engineering** (laterals, high, last_crawled=2026-04-18 → 4 days stale)
+- **death-of-browser** (deepdive, medium, last_crawled=None → never crawled)
+
+### prerequisites: context-engineering → context-routing
+- **concepts/context-routing.md** — Context Routing: query-based context dispatch to avoid loading irrelevant knowledge/tools for every query
+  - From Vellum AI agentic workflows taxonomy (4 approaches: rule-based, LLM-powered, hierarchical, hybrid)
+  - Source: [[raw/articles/crawl-2026-04-22-vellum-agentic-workflows.md]]
+  - Token savings: eliminates 30-50% waste from loading all domain knowledge per query
+
+### laterals: agentic-engineering → agentic-workflow-patterns, agentic-web
+- **concepts/agentic-workflow-patterns.md** — 3 Levels of Agentic Architectures (AI/Router/Autonomous), 4 Core Components (Planning/Execution/Refinement/Interface), 2026 Agent Stack taxonomy
+  - From Vellum AI guide with insights from Yohei Nakajima (BabyAGI), AWS, IBM experts
+  - Source: [[raw/articles/crawl-2026-04-22-vellum-agentic-workflows.md]]
+- **concepts/agentic-web.md** — Agentic Web paradigm: websites expose capabilities, WebMCP, AX (Agent Experience), machine-legible design
+  - Richard MacManus taxonomy of 4 driving forces (capabilities exposure, UI change, browser→AI runtime, dev platform adaptation)
+  - Source: [[raw/articles/crawl-2026-04-22-agentic-web-ricmac.md]]
+
+### New Raw Sources (2)
+- `raw/articles/crawl-2026-04-22-vellum-agentic-workflows.md` — Vellum AI agentic workflows taxonomy
+- `raw/articles/crawl-2026-04-22-agentic-web-ricmac.md` — Agentic Web paradigm shift
+
+### New Concept Pages (3)
+- **context-routing** — Context Routing: query-based context dispatch
+- **agentic-workflow-patterns** — 3 Levels, 4 Components, Design Patterns
+- **agentic-web** — Websites-as-capabilities, WebMCP, AX paradigm
+
+### Index Updates
+- `index.md` — Added 3 new concept entries, updated last_updated date
+
+### Hot-Topics Update
+- context-engineering: last_crawled → 2026-04-22
+- agentic-engineering: last_crawled → 2026-04-22
+- death-of-browser: last_crawled → 2026-04-22 (was null)
+

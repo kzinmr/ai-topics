@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-21 (+6 Memory/Retrieval/Verification pages; Kimi K2.6; GitHub Copilot token billing)
+Last updated: 2026-04-22 (Active Crawl: context-routing, agentic-web, agentic-workflow-patterns)
 
 ## Entity Pages (84)
 
@@ -185,9 +185,10 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 - [[capabilities-based-security]] — Start from zero access, explicitly grant capabilities (Monty philosophy)
 
-- [[cognitive-cost-of-agents]] — Cognitive Cost of Agents (Simon Willison)
-- [[cognitive-load-software-development]] — Cognitive Load Theory in Software Development (Artem Zakirullin, 12k+ stars)
+|- [[cognitive-cost-of-agents]] — Cognitive Cost of Agents (Simon Willison)
+|- [[cognitive-load-software-development]] — Cognitive Load Theory in Software Development (Artem Zakirullin, 12k+ stars)
   - [[comparisons/aposd-vs-clean-code]] — APOSD vs Clean Code: Ousterhout vs Martin debate, unified through cognitive load lens
+- [[context-routing]] — Query-based context dispatch to avoid loading irrelevant knowledge/tools for every query (Vellum AI)
 - [[gnu-ai-reimplementations]] — GNU & AI Reimplementations (antirez)
 
 - [[harness-engineering/agentic-workflows]] — Agentic Workflows: AI Agentを「活用して開発する」実践的ワークフロー（Willison, Sankalp, Steipete）
@@ -220,6 +221,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[main-branch-development]] — Main-Branch Development (Steipete)
 
 ### AI Agent Engineering (Anthropic + OpenAI)
+- [[agentic-workflow-patterns]] — 3 Levels of agentic architectures, 4 Core Components, design patterns (Vellum AI)
 - [[harness-engineering/system-architecture]] — System Architecture: AI Agentを「構築する」システム設計パターン集（Anthropic + OpenAI Responses API）
 - [[harness-engineering/system-architecture/building-effective-agents]] — Building Effective Agents (Anthropic)
 - [[harness-engineering/system-architecture/advanced-tool-use]] — Advanced Tool Use (Anthropic)
@@ -372,7 +374,8 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 ### Web & Technology
 
-- [[death-of-browser]] — Death of the Browser
+- [[agentic-web]] — Agentic Web: websites expose capabilities, WebMCP, AX (Agent Experience), machine-legible design
+- [[death-of-browser]] — Death of the Browser (agentic browsing paradigm shift)
 - [[local-first-software]] — Local-First Software (Kleppmann, Ink & Switch, CRDTs, AT Protocol)
 
 ### Cognition / Devin Philosophy
