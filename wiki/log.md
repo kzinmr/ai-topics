@@ -1,3 +1,32 @@
+## 2026-04-23 — @pupposandro Xアカウント追加 + luceboxブログ取り込み
+
+### Xアカウント追加
+- **@pupposandro** (Sandro Puppo) — すでに`config/feeds/x-accounts.yaml`に存在確認済み。変更不要。
+  - トピック: ai, local-llm, cuda, speculative-decoding, startup
+  - 製品: lucebox (https://www.lucebox.com)
+
+### Wikiエンティティページ作成（3件）
+- [[entities/sandro-puppo]] — Sandro Puppo (lucebox創設者) のバイオグラフィー、技術的貢献、Xアカウント情報
+- [[entities/lucebox]] — lucebox社概要、技術スタック（ggml, CUDA, speculative decoding）、製品ポートフォリオ
+- [[entities/trycua-cua]] — TryCua/Cua（コンピュータ使用エージェント）、Sandro Puppoとの関係
+
+### Wikiコンセプトページ作成（3件）
+- [[concepts/dflash-ggml]] — DFlash speculative decoder: C++/ggml実装、Qwen3.5-27B Q4_K_M、207 tok/s on RTX 3090、3.43x AR
+- [[concepts/megakernel-inference]] — Megakernel: hybrid DeltaNet/Attention LLMの全24レイヤーをsingle CUDA dispatchに融合、1.87 tok/J
+- [[concepts/nvidia-egpu-macos]] — NVIDIA eGPU over USB4 on Mac: ベンチマーク、tinygrad NVIDIA driver、$300 dockの現実的性能
+
+### ブログ記事スクレイピング（3件）
+- `raw/articles/2026-04-23-dflash-ggml.md` — DFlash on ggml（SPEC DECODE）
+- `raw/articles/2026-04-23-egpu-myth.md` — The eGPU Myth（BENCHMARK）
+- `raw/articles/2026-04-23-megakernel.md` — Megakernel（CUDA）
+
+### RSSフィード状況
+- lucebox.com/blog: **RSSなし**（/feed, /feed.xml, /rss.xml, /atom.xml, /blog/feed 全て404）
+- OPMLへの追加は見送り。lucebox blogは手動モニタリングまたはX(@pupposandro)投稿経由で追跡。
+
+### index.md更新
+- `trycua-cua`エントリ追加（行141付近）
+
 ## 2026-04-21 — dreaming: daily consolidation
 
 ### Duplicate Check Summary

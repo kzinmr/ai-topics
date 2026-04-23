@@ -141,6 +141,7 @@ Last updated: 2026-04-22 (Active Crawl: context-routing, agentic-web, agentic-wo
 
 - [[anthropic-computer-use]] — Anthropic Computer Use (Claude Sonnet 4.6, OSWorld 72.5%)
 - [[openai-cua]] — OpenAI CUA / Operator (GPT-4o + RL, OSWorld 38.1%)
+- [[trycua-cua]] — TryCua (Cua): YC X25 computer-use agent framework, open-source, 13.3k+ GitHub stars (Sandro Puppo, Davide Ciffa)
 - [[browser-use]] — browser-use (Open source, 87k+ stars, DOM-based)
 - [[browserbase]] — Browserbase / Stagehand (Cloud browser infra, $300M)
 - [[manus]] — Manus / Browser Operator (Local browser agent, Meta acquired)
