@@ -12,7 +12,7 @@ topics:
   - concepts/ai-agent-engineering/context-compaction
   notes: Karpathy提唱。前提としてtoken economics, attention mechanism等が必要か
   added: 2026-04-14
-  last_crawled: '2026-04-18'
+  last_crawled: '2026-04-22'
 - slug: agentic-engineering
   title: Agentic Engineering
   crawl_policy: laterals
@@ -24,7 +24,7 @@ topics:
   - concepts/agentic-engineering/_index
   notes: 22ページの大クラスタ。横方向の関連パラダイムを探索
   added: 2026-04-14
-  last_crawled: '2026-04-18'
+  last_crawled: '2026-04-22'
 - slug: ai-agent-engineering
   title: AI Agent Engineering (Anthropic/OpenAI)
   crawl_policy: deepdive
@@ -36,7 +36,7 @@ topics:
   - concepts/ai-agent-engineering/_index
   notes: 19ページ。最新事例・ベストプラクティスの深掘り
   added: 2026-04-14
-  last_crawled: '2026-04-19'
+  last_crawled: '2026-04-23'
 - slug: harness-engineering
   title: Harness Engineering
   crawl_policy: prerequisites
@@ -50,7 +50,7 @@ topics:
   - concepts/ai-agent-engineering/effective-harnesses-for-long-running-agents
   notes: Ryan Lopopolo提唱。前提としてruntime isolation, process supervision等
   added: 2026-04-14
-  last_crawled: '2026-04-19'
+  last_crawled: '2026-04-23'
 - slug: agent-team-swarm
   title: Agent Team / Swarm
   crawl_policy: laterals
@@ -105,7 +105,7 @@ topics:
   - concepts/local-llm/vllm
   notes: '階層化済み: GGUF, llama.cpp, vLLMの各サブページ。最新ベンチマーク、新モデル対応を追跡'
   added: 2026-04-14
-  last_crawled: '2026-04-18'
+  last_crawled: '2026-04-23'
 - slug: ai-memory-systems
   title: AI Memory Systems
   crawl_policy: prerequisites
@@ -131,7 +131,7 @@ topics:
   - concepts/death-of-browser
   notes: WebMCP, agentic browsing の最新動向
   added: 2026-04-14
-  last_crawled: null
+  last_crawled: '2026-04-22'
 - slug: sandbox
   title: Agent Sandboxing
   crawl_policy: laterals
