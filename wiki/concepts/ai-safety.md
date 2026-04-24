@@ -1,15 +1,8 @@
 ---
 title: "AI Safety"
-type: concept
-tags: [ai-safety, alignment, rlhf, scalable-oversight, interpretability]
-related:
-  - [[concepts/rlhf.md]]
-  - [[reasoning-models]]
-  - 
-depth: L2
-status: complete
+tags: [[ai-safety, alignment, rlhf, scalable-oversight, interpretability]]
 created: 2026-04-19
-sources: []
+updated: 2026-04-24
 ---
 
 # AI Safety — Alignment, Oversight, and Interpretability

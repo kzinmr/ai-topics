@@ -1,18 +1,8 @@
 ---
-title: Jensen Huang
-type: entity
-url: "https://www.nvidia.com/"
-twitter: "https://x.com/JensenHuangNVIDIA"
-status: active
+title: "Jensen Huang"
+tags: [- person]
+created: 2026-04-24
 updated: 2026-04-18
-tags:
-  - person
-  - nvidia
-  - gpu
-  - inference-hardware
-  - ai-infrastructure
-  - ai-bubble-economics
-sources: []
 ---
 
 # Jensen Huang

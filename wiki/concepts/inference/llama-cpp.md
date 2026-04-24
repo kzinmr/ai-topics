@@ -1,9 +1,8 @@
 ---
-status: complete
-type: concept
+title: "llama.cpp"
+tags: [local-llm, inference, engine]
 created: 2026-04-14
-tags: local-llm, inference, engine
-sources: []
+updated: 2026-04-24
 ---
 
 # llama.cpp

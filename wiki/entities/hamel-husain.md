@@ -1,20 +1,8 @@
 ---
-title: Hamel Husain
-type: entity
-related:
-  - concepts/ai-evals
-  - concepts/harness-engineering
-  - concepts/critique-shadowing
-  - entities/shreya-shankar
-  - entities/eugene-yan
-sources: [https://hamel.dev, https://www.oreilly.com/people/hamel-husain/, https://www.linkedin.com/in/hamelhusain, https://github.com/hamelsmu]
+title: "Hamel Husain"
+tags: [- person]
+created: 2026-04-24
 updated: 2026-04-13
-tags:
-  - person
-  - ai-evals
-  - ai-engineering
-  - harness-engineering
-  - open-source
 ---
 
 

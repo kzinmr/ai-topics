@@ -1,9 +1,8 @@
 ---
-title: Spike (Mike Doan)
-type: entity
-category: entity
-status: active
-sources: []
+title: "Spike (Mike Doan)"
+tags: [training, ai-agents, llm, entity, rAG, inference]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Spike (Mike Doan)

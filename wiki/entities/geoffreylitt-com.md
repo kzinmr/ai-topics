@@ -1,10 +1,8 @@
 ---
-title: Geoffrey Litt
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "Geoffrey Litt"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Geoffrey Litt

@@ -1,19 +1,8 @@
 ---
-entity: late-interaction
-aliases:
-  - LIR
-  - lateinteraction.com
-url: https://www.lateinteraction.com/
-type: event
-tags:
-  - late-interaction
-  - colbert
-  - multi-vector-retrieval
-  - information-retrieval
-  - ECIR-2026
-  - NLP
+title: "Late Interaction Workshop (LIR) @ ECIR 2026"
+tags: [- late-interaction]
+created: 2026-04-24
 updated: 2026-04-10
-sources: []
 ---
 
 # Late Interaction Workshop (LIR) @ ECIR 2026

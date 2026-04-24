@@ -1,19 +1,8 @@
 ---
-name: CodeMode
-type: concept
-tags: [code-execution, agents, latency, monty, pydantic-ai, tool-calling, sandbox]
-related:
-  - [[concepts/sandbox/in-process.md]]
-  - [[sandbox]]
-  - [[pydantic-ai]]
-  - [[harness-engineering]]
-  - [[samuel-colvin]]
-  - [[andrej-karpathy]]
-depth: L2
-status: complete
+title: "CodeMode — LLM Code Execution Over Sequential Tool Calling"
+tags: [[code-execution, agents, latency, monty, pydantic-ai, tool-calling, sandbox]]
 created: 2026-04-16
 updated: 2026-04-16
-sources: []
 ---
 
 # CodeMode — LLM Code Execution Over Sequential Tool Calling

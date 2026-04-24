@@ -1,28 +1,8 @@
 ---
-entity: "armin-ronacher"
-type: entity
-status: complete
-aliases: [mitsuhiko, Armin Ronacher, Lucumr]
-related:
-  - flask
-  - jinja2
-  - werkzeug
-  - sentry
-  - rust
-  - python
-  - rye
-  - minijinja
-  - insta
-tags:
-  - person
-  - software-engineer
-  - open-source-developer
-  - flask-creator
-  - python-developer
-  - rust-developer
-  - entrepreneur
-  - blogger
-sources: []
+title: "Armin Ronacher"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 

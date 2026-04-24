@@ -1,9 +1,8 @@
 ---
-title: Compute Scaling Bottlenecks
-type: concept
-category: concept
-status: active
-sources: []
+title: "Compute Scaling Bottlenecks"
+tags: [ai-agents, rAG, concept]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Compute Scaling Bottlenecks

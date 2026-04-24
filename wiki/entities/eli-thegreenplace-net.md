@@ -1,10 +1,8 @@
 ---
-title: Eli Bendersky
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "Eli Bendersky"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Eli Bendersky

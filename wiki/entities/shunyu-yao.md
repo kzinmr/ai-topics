@@ -1,47 +1,8 @@
 ---
 title: "Shunyu Yao (姚顺雨)"
-type: entity
-aliases: ["Shunyu Yao", "姚顺雨", "ysymyth", "Yao Shunyu"]
-status: full
+tags: [- person]
 created: 2026-04-13
-depth_tracking:
-  target: 13KB+
-  last_updated: 2026-04-13
-tags:
-  - person
-related_people:
-  - Karthik Narasimhan (PhD advisor, Princeton)
-  - Omar Khattab (Stanford/MIT, ColBERT, RLM)
-  - Tim Kraska (MIT CSAIL, RLM)
-  - Alex Zhang (RLM)
-  - Noah Shinn (Reflexion, Sierra)
-  - Theodore Sumers (CoALA)
-  - John Yang (SWE-bench, SWE-agent)
-  - Carlos E. Jimenez (SWE-bench)
-  - Dian Yu (Tree of Thoughts)
-  - Yuan Cao (ReAct)
-  - Howard Chen (WebShop)
-related_concepts:
-  - ReAct
-  - Tree of Thoughts
-  - Reflexion
-  - CoALA
-  - SWE-bench
-  - SWE-agent
-  - tau-bench
-  - WebShop
-  - Computer-Using Agent
-  - Agent-Computer Interfaces
-  - RLM
-related_papers:
-  - "ReAct: Synergizing Reasoning and Acting in Language Models (ICLR 2023, Oral)"
-  - "Tree of Thoughts: Deliberate Problem Solving with LLMs (NeurIPS 2023, Oral)"
-  - "Reflexion: Language Agents with Verbal RL (NeurIPS 2023)"
-  - "CoALA: Cognitive Architectures for Language Agents (TMLR 2024)"
-  - "SWE-bench: Can Language Models Resolve Real-World GitHub Issues? (ICLR 2024, Oral)"
-  - "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering (NeurIPS 2024, Oral)"
-  - "Recursive Language Models (RLM)"
-sources: []
+updated: 2026-04-24
 ---
 
 # Shunyu Yao (姚顺雨)

@@ -1,16 +1,8 @@
 ---
 title: "Arize AI"
-type: entity
-description: "AI observability platform positioned as 'Datadog for agents' — monitoring agent decision quality, reasoning paths, and evaluation metrics at scale"
-tags: [company, startup, arize, ai-observability, agent-monitoring, evals]
-status: complete
-related:
-  - "[[context-graph]]"  # Observability is the top plane in the 5-plane architecture
-  - "[[ai-evals]]"      # Core technology: evaluating agent decisions
-  - "[[playerzero]]"    # Both in agent infrastructure space
-status: skeleton
+tags: [[company, startup, arize, ai-observability, agent-monitoring, evals]]
 created: 2026-04-20
-sources: []
+updated: 2026-04-24
 ---
 
 # Arize AI

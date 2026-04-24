@@ -1,11 +1,8 @@
 ---
 title: "AI Eval Tools Comparison"
-type: comparison
+tags: [[evaluation, tools, langsmith, braintrust, arize-phoenix, inspect-ai]]
 created: 2026-04-12
-tags: [evaluation, tools, langsmith, braintrust, arize-phoenix, inspect-ai]
-sources:
-  - "https://hamel.dev/blog/posts/eval-tools/"
-  - "https://hamel.dev/notes/llm/evals/inspect.html"
+updated: 2026-04-24
 ---
 
 # AI Eval Tools Comparison

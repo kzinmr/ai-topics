@@ -1,10 +1,8 @@
 ---
-status: active
-type: concept
+title: "Multimodal AI — Overview"
+tags: [[multimodal, vision, audio, cross-modal]]
 created: 2026-04-19
 updated: 2026-04-19
-tags: [multimodal, vision, audio, cross-modal]
-sources: []
 ---
 
 # Multimodal AI — Overview

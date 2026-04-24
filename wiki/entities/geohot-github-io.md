@@ -1,10 +1,8 @@
 ---
-title: George Hotz (geohot)
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "George Hotz (geohot)"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # George Hotz (geohot)

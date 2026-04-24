@@ -1,10 +1,8 @@
 ---
-title: Terence Eden
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "Terence Eden"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Terence Eden

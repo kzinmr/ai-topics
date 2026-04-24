@@ -1,19 +1,8 @@
 ---
-title: Giles Thomas (gpjt)
-type: entity
-handle: "@gpjt"
-url: "https://www.gilesthomas.com/"
-status: active
+title: "Giles Thomas (gpjt)"
+tags: [- person]
+created: 2026-04-24
 updated: 2026-04-15
-tags:
-  - person
-  - blogger
-  - llm-training
-  - gradient-accumulation
-  - distributed-training
-  - local-llm-training
-  - deep-learning-from-scratch
-sources: []
 ---
 
 # Giles Thomas

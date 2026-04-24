@@ -1,10 +1,8 @@
 ---
-title: John Gruber
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "John Gruber"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # John Gruber

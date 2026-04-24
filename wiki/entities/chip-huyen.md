@@ -1,10 +1,8 @@
 ---
 title: "Chip Huyen (@chipro)"
-type: entity
-status: active
-handle: "@chipro"
-tags: [person]
-sources: []
+tags: [[person]]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 

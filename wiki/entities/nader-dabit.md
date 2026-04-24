@@ -1,23 +1,8 @@
 ---
-title: Nader Dabit
-type: entity
-related: [concepts/cognition-devin-philosophy, concepts/cloud-agent-thesis, entities/scott-wu, entities/walden-yan]
-sources:
-  - https://nader.substack.com/p/engineering-for-agents-that-never
-  - https://nader.substack.com/p/how-cognition-uses-devin-to-build
-  - https://nader.substack.com/p/how-to-run-a-fleet-of-cloud-agents
-  - https://nader.substack.com/p/the-cloud-agent-thesis
-  - https://nader.codes/
-  - https://www.linkedin.com/in/naderdabit/
-  - https://x.com/dabit3
+title: "Nader Dabit"
+tags: [- person]
+created: 2026-04-24
 updated: 2026-04-13
-tags:
-  - person
-  - cognition
-  - devin
-  - developer-relations
-  - cloud-agents
-  - substack
 ---
 
 

@@ -1,10 +1,8 @@
 ---
-title: Dynomight
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "Dynomight"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Dynomight

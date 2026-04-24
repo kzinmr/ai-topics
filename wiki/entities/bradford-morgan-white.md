@@ -1,9 +1,8 @@
 ---
-title: Bradford Morgan White
-type: entity
-status: active
-tags: [person]
-sources: []
+title: "Bradford Morgan White"
+tags: [[person]]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 

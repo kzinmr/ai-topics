@@ -1,9 +1,8 @@
 ---
-status: complete
-type: concept
+title: "vLLM"
+tags: [local-llm, inference, serving]
 created: 2026-04-14
-tags: local-llm, inference, serving
-sources: []
+updated: 2026-04-24
 ---
 
 # vLLM

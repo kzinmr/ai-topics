@@ -1,17 +1,8 @@
 ---
-name: "alex-banks"
-type: entity
+title: "Alex Banks"
+tags: [- person]
+created: 2026-04-24
 updated: 2026-04-10
-tags:
-  - person
-  - newsletter
-  - ai-research
-  - prompt-engineering
-  - datacamp
-  - the-signal
-  - uk
-  - entrepreneur
-sources: []
 ---
 
 

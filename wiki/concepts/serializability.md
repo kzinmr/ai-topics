@@ -1,16 +1,8 @@
 ---
-name: Serializability
-type: concept
-tags: [serialization, llm, structured-output, ai-engineering]
-related:
-  - [[pydantic-serializability]]
-  - [[concepts/structured-outputs.md]]
-  - [[pydantic-ai]]
-  - [[entities/samuel-colvin.md]]
-depth: L2
-status: complete
+title: "Serializability — Structured Output for AI Systems"
+tags: [[serialization, llm, structured-output, ai-engineering]]
 created: 2026-04-15
-sources: []
+updated: 2026-04-24
 ---
 
 # Serializability — Structured Output for AI Systems

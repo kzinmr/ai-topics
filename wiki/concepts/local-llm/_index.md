@@ -1,10 +1,8 @@
 ---
-status: active
-type: concept
+title: "Local LLM Ecosystem — Overview"
+tags: [local-llm, inference, overview]
 created: 2026-04-14
 updated: 2026-04-15
-tags: local-llm, inference, overview
-sources: []
 ---
 
 # Local LLM Ecosystem — Overview

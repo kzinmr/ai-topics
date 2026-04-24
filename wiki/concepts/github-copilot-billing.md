@@ -1,15 +1,8 @@
 ---
 title: "GitHub Copilot Token-Based Billing"
-type: concept
-status: active
-date: 2026-04-20
-tags:
- - github-copilot
- - pricing
- - token-economics
- - microsoft
- - ai-services
-sources: []
+tags: [- github-copilot]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # GitHub Copilot Token-Based Billing Transition

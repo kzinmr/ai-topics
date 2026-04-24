@@ -1,10 +1,8 @@
 ---
-status: active
-type: concept
+title: "Whisper — OpenAI's Speech Recognition Model"
+tags: [[speech, asr, openai, whisper, audio]]
 created: 2026-04-19
 updated: 2026-04-19
-tags: [speech, asr, openai, whisper, audio]
-sources: []
 ---
 
 # Whisper — OpenAI's Speech Recognition Model

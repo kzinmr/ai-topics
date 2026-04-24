@@ -1,15 +1,8 @@
 ---
-name: Pydantic Logfire
-type: concept
-tags: [observability, monitoring, ai, opentelemetry, python, production]
-related:
-  - [[ai-observability]]
-  - [[pydantic-ai]]
-  - [[entities/samuel-colvin.md]]
-depth: L2
-status: complete
+title: "Pydantic Logfire — AI Observability Platform"
+tags: [[observability, monitoring, ai, opentelemetry, python, production]]
 created: 2026-04-16
-sources: []
+updated: 2026-04-24
 ---
 
 # Pydantic Logfire — AI Observability Platform

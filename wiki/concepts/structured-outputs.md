@@ -1,19 +1,8 @@
 ---
-name: Structured Outputs
-type: concept
-tags: [llm, output-formatting, json, pydantic, reliability, type-safety, function-calling]
-related:
-  - [[pydantic]]
-  - [[pydantic-ai]]
-  - 
-  - 
-  - [[entities/samuel-colvin.md]]
-  - [[jason-liu]]
-  - [[rahul]]
-depth: L2
-status: complete
+title: "Structured Outputs — Reliable LLM Output via Schema Validation"
+tags: [[llm, output-formatting, json, pydantic, reliability, type-safety, function-calling]]
 created: 2026-04-15
-sources: []
+updated: 2026-04-24
 ---
 
 # Structured Outputs — Reliable LLM Output via Schema Validation

@@ -1,17 +1,8 @@
 ---
 title: "Industrial-Scale Distillation Attacks Accusation"
-type: event
-status: active
-date: 2026-04-21
-tags:
- - anthropic
- - deepseek
- - moonshot
- - minimax
- - distillation
- - model-rights
- - open-source-ai
-sources: []
+tags: [- anthropic]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Anthropic Accuses Chinese Labs of Industrial-Scale Distillation Attacks

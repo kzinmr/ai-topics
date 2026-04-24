@@ -1,13 +1,8 @@
 ---
 title: "LLM Inference Optimization"
-type: concept
-date: 2026-04-10
-sources:
-  - "https://seangoedecke.com/2026/02/15/fast-llm-inference/"
-tags: [llm, inference, optimization, performance]
-related:
-  - "[[local-llm]]"
-  - "[[compute-scaling-bottlenecks]]"
+tags: [[llm, inference, optimization, performance]]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # LLM Inference — Index

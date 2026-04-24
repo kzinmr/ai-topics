@@ -1,11 +1,8 @@
 ---
 title: "Closing the Agent Loop"
-status: draft
-type: concept
-tags: [agentic-engineering, cognition, devin, workflow]
-related: [cognition-devin-philosophy, agent-team-swarm/managed-devins]
-sources:
-  - https://cognition.ai/blog/closing-the-agent-loop-devin-autofixes-review-comments
+tags: [[agentic-engineering, cognition, devin, workflow]]
+created: 2026-04-23
+updated: 2026-04-24
 ---
 
 # Closing the Agent Loop — Write → Catch → Fix → Merge

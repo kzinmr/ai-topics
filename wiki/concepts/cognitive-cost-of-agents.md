@@ -1,9 +1,8 @@
 ---
-title: Cognitive Cost of Agents
-type: concept
-category: concept
-status: active
-sources: []
+title: "Cognitive Cost of Agents"
+tags: [concept, ai-agents, llm, prompting, rAG, inference]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Cognitive Cost of Agents

@@ -1,11 +1,8 @@
 ---
 title: "Execution Plans"
-type: concept
+tags: [[agents, planning, orchestration]]
 created: 2026-04-13
-source: "OpenAI Cookbook — Execution planning patterns"
-tags: [agents, planning, orchestration]
-status: draft
-sources: []
+updated: 2026-04-24
 ---
 
 # Execution Plans

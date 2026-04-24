@@ -1,11 +1,8 @@
 ---
 title: "Context Anxiety"
-status: draft
-type: concept
-tags: [context-management, cognition, claude, models]
-related: [cognition-devin-philosophy, context-window-management]
-sources:
-  - https://cognition.ai/blog/devin-sonnet-4-5-lessons-and-challenges
+tags: [[context-management, cognition, claude, models]]
+created: 2026-04-23
+updated: 2026-04-24
 ---
 
 # Context Anxiety — Model-Specific Context Limits

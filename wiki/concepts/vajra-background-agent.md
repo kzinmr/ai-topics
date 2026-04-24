@@ -1,13 +1,8 @@
 ---
 title: "Vajra — Open-Source Background Coding Agent"
-type: concept
-status: draft
+tags: [[background-agent, orchestration, linear, github, workflow-automation, graph-based]]
 created: 2026-04-13
-source: "https://www.shloked.com/writing/vajra"
-author: "Shlok Khemani"
-tags: [background-agent, orchestration, linear, github, workflow-automation, graph-based]
-related: [agent-team-swarm, openai-symphony, attractor-pattern, agentic-engineering]
-sources: []
+updated: 2026-04-24
 ---
 
 # Vajra — Open-Source Background Coding Agent

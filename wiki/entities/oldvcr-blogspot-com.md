@@ -1,10 +1,8 @@
 ---
-title: OldVCR (Cameron Kaiser / ClassicHasClass)
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "OldVCR (Cameron Kaiser / ClassicHasClass)"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # OldVCR (Cameron Kaiser / ClassicHasClass)

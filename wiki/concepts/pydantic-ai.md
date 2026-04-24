@@ -1,16 +1,8 @@
 ---
-name: Pydantic AI
-type: concept
-tags: [ai-agents, framework, python, type-safety, structured-outputs, pydantic]
-related:
-  - [[code-mode]]
-  - [[structured-outputs]]
-  - [[ai-observability]]
-  - [[entities/samuel-colvin.md]]
-depth: L2
-status: complete
+title: "Pydantic AI — Type-Safe Python Agent Framework"
+tags: [[ai-agents, framework, python, type-safety, structured-outputs, pydantic]]
 created: 2026-04-16
-sources: []
+updated: 2026-04-24
 ---
 
 # Pydantic AI — Type-Safe Python Agent Framework

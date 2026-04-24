@@ -1,14 +1,8 @@
 ---
 title: "Test Case Minimization"
-type: concept
-status: active
-date: 2026-04-20
-tags:
- - testing
- - property-based-testing
- - debugging
- - zig
-sources: []
+tags: [- testing]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Test Case Minimization

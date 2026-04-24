@@ -1,30 +1,8 @@
 ---
 title: "Fei-Fei Li"
-description: "中国系アメリカ人コンピュータサイエンティスト。ImageNetの作成者、Stanford HAI共同創設者。コンピュータビジョン、空間知能、ヒューマンセンタードAIのパイオニア。"
-type: "person"
-status: "draft"
-depth: "L2"
-related:
-  - "[[yann-lecun]]"
-  - "[[andrew-ng]]"
-  - "[[geoffrey-hinton]]"
-  - ""
-  - ""
-  - ""
-sources:
-  - "https://grokipedia.com/page/Fei-Fei_Li"
-  - "https://profiles.stanford.edu/fei-fei-li"
-  - "https://hai.stanford.edu/"
-  - "https://www.worldlabs.ai/"
-tags:
-  - person
-  - AI Researcher
-  - Computer Vision
-  - ImageNet
-  - Stanford
-  - Google Cloud
-  - World Labs
-  - Human-Centered AI
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Fei-Fei Li

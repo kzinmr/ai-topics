@@ -1,11 +1,8 @@
 ---
 title: "Evaluation Flywheel"
-type: concept
+tags: [[evaluation, development-process, quality]]
 created: 2026-04-13
-source: "OpenAI Cookbook — Evaluation patterns"
-tags: [evaluation, development-process, quality]
-status: draft
-sources: []
+updated: 2026-04-24
 ---
 
 # Evaluation Flywheel

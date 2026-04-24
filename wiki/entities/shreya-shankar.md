@@ -1,21 +1,8 @@
 ---
-title: Shreya Shankar
-type: entity
-related:
-  - concepts/ai-evals
-  - concepts/llm-as-judge
-  - concepts/error-analysis
-  - entities/hamel-husain
-  - entities/eugene-yan
-sources: [https://www.sh-reya.com/, https://sh-reya.com/papers/, https://www.lennysnewsletter.com/p/why-ai-evals-are-the-hottest-new-skill, https://x.com/sh_reya]
+title: "Shreya Shankar"
+tags: [- person]
+created: 2026-04-24
 updated: 2026-04-13
-tags:
-  - person
-  - ai-evals
-  - ai-engineering
-  - berkeley
-  - research
-  - docetl
 ---
 
 

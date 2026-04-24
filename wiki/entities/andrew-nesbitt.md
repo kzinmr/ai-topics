@@ -1,9 +1,8 @@
 ---
-title: Andrew Nesbitt
-type: entity
-status: active
-tags: [person]
-sources: []
+title: "Andrew Nesbitt"
+tags: [[person]]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 

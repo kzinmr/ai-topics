@@ -1,10 +1,8 @@
 ---
-status: active
-type: concept
+title: "Fine-Tuning — Overview"
+tags: [[fine-tuning, post-training, overview]]
 created: 2026-04-19
 updated: 2026-04-19
-tags: [fine-tuning, post-training, overview]
-sources: []
 ---
 
 # Fine-Tuning — Overview

@@ -1,16 +1,8 @@
 ---
 title: "AI in Military Wargames"
-type: concept
-date: 2026-04-10
-sources:
-  - "https://garymarcus.substack.com/p/claude-defeats-us-military-team-in"
-  - "https://www.washingtonpost.com/technology/2026/03/04/anthropic-ai-iran-campaign/"
-  - "https://apnews.com/article/ai-pentagon-anthropic-claude-hegseth-trump-b24b0197f87658d0e8a60790a4c969a2"
-tags: [ai-safety, military, governance, claude]
-related:
-  - "[[claude-mythos-glasswing]]"
-  - "[[ai-agent-traps]]"
-  - "[[ai-coding-reliability]]"
+tags: [[ai-safety, military, governance, claude]]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # AI in Military Wargames

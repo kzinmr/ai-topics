@@ -1,15 +1,8 @@
 ---
 title: "AI Programming as Theory Building"
-type: concept
-date: 2026-04-10
-sources:
-  - "https://www.seangoedecke.com/programming-with-ai-agents-as-theory-building/"
-  - "https://www.seangoedecke.com/llm-driven-agents/"
-tags: [software-engineering, ai-coding, theory, peter-naur]
-related:
-  - ""
-  - "[[cognitive-cost-of-agents]]"
-  - "[[harness-engineering]]"
+tags: [[software-engineering, ai-coding, theory, peter-naur]]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # AI Programming as Theory Building

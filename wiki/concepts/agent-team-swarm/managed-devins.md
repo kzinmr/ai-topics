@@ -1,11 +1,8 @@
 ---
 title: "Managed Devins"
-status: draft
-type: concept
-tags: [multi-agents, cognition, devin, orchestration]
-related: [cognition-devin-philosophy, agent-team-swarm]
-sources:
-  - https://cognition.ai/blog/devin-can-now-manage-devins
+tags: [[multi-agents, cognition, devin, orchestration]]
+created: 2026-04-22
+updated: 2026-04-24
 ---
 
 # Managed Devins — Conditional Multi-Agent Architecture

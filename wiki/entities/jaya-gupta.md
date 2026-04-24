@@ -1,17 +1,8 @@
 ---
 title: "Jaya Gupta"
-type: entity
-description: "Partner at Foundation Capital, co-author of 'AI's Trillion-Dollar Opportunity: Context Graphs'"
-tags: [person, foundation-capital, investor, context-graph]
-handle: "@JayaGup10"
-related:
-  - "[[foundation-capital]]"  # Her firm
-  - "[[context-graph]]"       # Core thesis she authored
-  - "[[playerzero]]"          # Context graph startup
-  - "[[arize]]"               # Agent observability startup mentioned
-status: complete
+tags: [[person, foundation-capital, investor, context-graph]]
 created: 2026-04-20
-sources: []
+updated: 2026-04-24
 ---
 
 # Jaya Gupta

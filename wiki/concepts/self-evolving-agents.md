@@ -1,11 +1,8 @@
 ---
 title: "Self-Evolving Agents"
-type: concept
+tags: [[agents, self-improvement, learning]]
 created: 2026-04-13
-source: "OpenAI Cookbook — Self-evolving agent patterns"
-tags: [agents, self-improvement, learning]
-status: draft
-sources: []
+updated: 2026-04-24
 ---
 
 # Self-Evolving Agents

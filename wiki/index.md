@@ -1,3 +1,10 @@
+---
+title: "LLM & AI Agent Knowledge Wiki"
+tags: [training, ai-agents, llm, local-llm, prompting, rAG, evaluations, inference]
+created: 2026-04-24
+updated: 2026-04-24
+---
+
 # LLM & AI Agent Knowledge Wiki
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.

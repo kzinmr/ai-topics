@@ -1,34 +1,8 @@
 ---
-title: DSPy — Declarative Self-improving Python for LMs
-type: concept
-description: DSPyはOmar Khattab率いるStanford NLPが開発した、LLMを「プロンプト」ではなく「最適化可能なモジュール」として宣言的にプログラミングするフレームワーク。Signature/Module/Teleprompterの抽象化により、手動プロンプトエンジニアリングをコンパイル時の自動最適化に変換する。
-aliases:
-  - declarative-lm-programming
-  - dsp-declarative-self-improving-language-systems
-  - dspy-framework
-status: complete
-depth_tracking:
-  created: 2026-04-13
-  last_updated: 2026-04-13
-  target_depth: concept-level deep dive
-  key_papers:
-    - "DSPy: Compiling Declarative Language Model Calls into State-of-the-Art Pipelines (ICLR 2024 Spotlight)"
-    - "Fine-Tuning and Prompt Optimization: Two Great Steps that Work Better Together (Jul 2024)"
-    - "Prompts as Auto-Optimized Training Hyperparameters (Jun 2024)"
-    - "DSPy Assertions: Computational Constraints for Self-Refining Language Model Pipelines (Dec 2023)"
-  quote_sources:
-    - "It's actually better to think of language models as modules in programs, not end products." (Khattab, Cohere 2024)
-    - "DSPy takes a different approach: we say it's actually better to think of language models as procedures — as functions — and build a programming model around that."
-related:
-  - omar-khattab
-  - gepe
-  - colbert
-  - rlms
-  - langchain
-  - langgraph
-  - llamaindex
-  - agentic-engineering
-sources: []
+title: "DSPy — Declarative Self-improving Python for LMs"
+tags: [training, concept, ai-agents, llm, prompting, rAG, evaluations]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # DSPy: Declarative Self-improving Language Systems

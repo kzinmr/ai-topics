@@ -1,10 +1,8 @@
 ---
-title: Dave Farquhar (The Silicon Underground)
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "Dave Farquhar (The Silicon Underground)"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Dave Farquhar (The Silicon Underground)

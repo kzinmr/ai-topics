@@ -1,17 +1,8 @@
 ---
 title: "Decoder-Only GPT Architecture"
-type: concept
-tags:
-  - llm
-  - transformer
-  - gpt
-  - architecture
-  - education
-  - microgpt
-  - karpathy
-status: active
+tags: [- llm]
 created: 2026-04-13
-sources: []
+updated: 2026-04-24
 ---
 
 # Decoder-Only GPT Architecture

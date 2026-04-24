@@ -1,10 +1,8 @@
 ---
-title: Chris of Entropic Thoughts
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "Chris of Entropic Thoughts"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Chris of Entropic Thoughts

@@ -1,11 +1,8 @@
 ---
 title: "Critique Shadowing"
-type: concept
+tags: [[llm-as-judge, evaluation, methodology, human-in-the-loop]]
 created: 2026-04-12
-tags: [llm-as-judge, evaluation, methodology, human-in-the-loop]
-sources:
-  - "https://hamel.dev/blog/posts/llm-judge/"
-  - "https://hamel.dev/blog/posts/evals-faq/"
+updated: 2026-04-24
 ---
 
 # Critique Shadowing

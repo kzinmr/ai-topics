@@ -1,15 +1,8 @@
 ---
-name: abacaj
-type: entity
+title: "abacaj"
+tags: [- ml-engineer]
+created: 2026-04-24
 updated: 2026-04-10
-tags:
-- ml-engineer
-- open-source
-- llm
-- post-training
-- ai2
-- olmo
-sources: []
 ---
 
 # abacaj

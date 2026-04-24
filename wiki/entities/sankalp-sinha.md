@@ -1,19 +1,8 @@
 ---
-title: Sankalp Sinha (dejavucoder)
-type: entity
-handle: "@dejavucoder"
-url: "http://sankalp.bearblog.dev/"
-twitter: "https://x.com/dejavucoder"
-status: active
-tags:
-  - person
-  - ai-engineering
-  - coding-agents
-  - llm-evals
-  - agent-os
-  - claude-code
-  - open-source
-sources: []
+title: "Sankalp Sinha (dejavucoder)"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 

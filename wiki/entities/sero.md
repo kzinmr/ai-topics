@@ -1,22 +1,8 @@
 ---
-title: Sero (0xSero)
-type: entity
-handle: "@0xsero"
-url: "https://www.sybilsolutions.ai/"
-twitter: "https://x.com/0xsero"
-status: active
-depth_tracking: {'current': 'L3', 'last_updated': datetime.date(2026, 4, 13), 'notes': 'Complete L3 analysis with philosophy, quotes, homelab benchmarks, and recent projects'}
-tags:
-  - person
-  - ai-infrastructure
-  - open-source
-  - local-ai
-  - multi-agent
-  - developer-tools
-  - elizaOS
-  - blockchain
-  - freedom-tech
-sources: []
+title: "Sero (0xSero)"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 

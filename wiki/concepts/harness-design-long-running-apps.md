@@ -1,13 +1,8 @@
 ---
 title: "Harness Design for Long-Running Apps — Anthropic's Multi-Agent Architecture"
-type: concept
-status: draft
+tags: [[harness-design, multi-agent, gan-loop, context-reset, sprint-contracts, evaluator-pattern]]
 created: 2026-04-13
-source: "https://www.anthropic.com/engineering/harness-design-long-running-apps"
-author: "Prithvi Rajasekaran (Anthropic Labs)"
-tags: [harness-design, multi-agent, gan-loop, context-reset, sprint-contracts, evaluator-pattern]
-related: [harness-engineering, context-engineering, agent-team-swarm, claude-memory]
-sources: []
+updated: 2026-04-24
 ---
 
 # Harness Design for Long-Running Apps — Anthropic's Multi-Agent Architecture

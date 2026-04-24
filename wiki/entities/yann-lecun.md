@@ -1,30 +1,8 @@
 ---
 title: "Yann LeCun"
-description: "フランス系アメリカ人コンピュータサイエンティスト。CNNの発明者、2018年チューリング賞受賞者。Meta元チーフAIサイエンティスト、NYU教授。"
-type: "person"
-status: "draft"
-depth: "L2"
-related:
-  - "[[geoffrey-hinton]]"
-  - "[[yoshua-bengio]]"
-  - "[[juergen-schmidhuber]]"
-  - ""
-  - "[[fei-fei-li]]"
-  - "[[meta]]"
-  - ""
-  - ""
-sources:
-  - "https://grokipedia.com/page/Yann_LeCun"
-  - "https://yann.lecun.com/"
-  - "https://ai.meta.com/blog/yann-lecun-plans-exit-launch-startup-ft-reports-2025-11-11/"
-tags:
-  - person
-  - AI Researcher
-  - Deep Learning
-  - Computer Vision
-  - Meta
-  - NYU
-  - Turing Award
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Yann LeCun

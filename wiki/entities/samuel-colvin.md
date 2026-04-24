@@ -1,37 +1,8 @@
 ---
-name: Samuel Colvin
-aliases: [samuelcolvin, sam-colvin, Sam Colvin]
-github: https://github.com/samuelcolvin
-twitter: "@samuelcolvin"
-linkedin: https://www.linkedin.com/in/samuel-colvin-5383251b8
-company: Pydantic (Founder & CEO)
-location: London, United Kingdom
-type: person
-depth: L3
-status: complete
+title: "Samuel Colvin — Creator of Pydantic, Pioneer of Type-Safe AI Agents"
+tags: [- person]
 created: 2026-04-15
-last_updated: 2026-04-15
-tags:
-  - person
-  - pydantic
-  - pydantic-ai
-  - monty
-  - logfire
-  - rust
-  - python
-  - ai-agents
-  - observability
-  - data-validation
-  - type-safety
-related:
-  - "[[code-mode]]"
-  - "[[harness-engineering]]"
-  - "[[ai-observability]]"
-  - "[[structured-outputs]]"
-  - "[[alex-hall]]"
-  - "[[david-montague]]"
-  - "[[douwe-maan]]"
-sources: []
+updated: 2026-04-24
 ---
 
 # Samuel Colvin — Creator of Pydantic, Pioneer of Type-Safe AI Agents

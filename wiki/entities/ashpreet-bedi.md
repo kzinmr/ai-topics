@@ -1,19 +1,8 @@
 ---
-name: "ashpreet-bedi"
-type: entity
+title: "Ashpreet Bedi"
+tags: [- person]
+created: 2026-04-24
 updated: 2026-04-10
-tags:
-  - person
-  - founder
-  - ceo
-  - agno
-  - phidata
-  - ai-agents
-  - agent-frameworks
-  - data-infrastructure
-  - airbnb
-  - facebook
-sources: []
 ---
 
 

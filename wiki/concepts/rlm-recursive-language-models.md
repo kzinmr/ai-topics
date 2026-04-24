@@ -1,19 +1,8 @@
 ---
 title: "RLM (Recursive Language Models)"
-type: concept
+tags: [training, concept, ai-agents, llm, prompting, rAG, evaluations, inference]
 created: 2026-04-13
-related_people:
-  - Alex Zhang (first author, MIT)
-  - Omar Khattab (co-author, advisor)
-  - Tim Kraska (co-author, MIT)
-  - Shunyu Yao (parallel work: "The Second Half", ReAct)
-related_concepts:
-  - Context Folding
-  - Agent-Computer Interfaces
-  - Inference-Time Scaling
-  - Scaffold vs RL Debate
-  - REPL Environment
-sources: []
+updated: 2026-04-24
 ---
 
 # RLM (Recursive Language Models)

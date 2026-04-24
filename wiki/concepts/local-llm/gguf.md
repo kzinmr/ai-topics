@@ -1,9 +1,8 @@
 ---
-status: skeleton
-type: concept
+title: "GGUF (GPT-Generated Unified Format)"
+tags: [local-llm, quantization, format]
 created: 2026-04-14
-tags: local-llm, quantization, format
-sources: []
+updated: 2026-04-24
 ---
 
 # GGUF (GPT-Generated Unified Format)

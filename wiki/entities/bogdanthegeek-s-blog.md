@@ -1,10 +1,8 @@
 ---
-title: Bogdan Ionescu (BogdanTheGeek)
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "Bogdan Ionescu (BogdanTheGeek)"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Bogdan Ionescu (BogdanTheGeek)

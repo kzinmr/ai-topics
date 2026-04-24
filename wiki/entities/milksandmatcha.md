@@ -1,18 +1,8 @@
 ---
-title: Sarah Chieng (MilksandMatcha)
-type: entity
-handle: "@MilksandMatcha"
-url: "https://milksandmatcha.com"
-twitter: "https://x.com/MilksandMatcha"
-status: active
-depth_tracking: {current: 'L2', last_updated: 2026-04-18, notes: 'Co-authored Back of House multi-agent patterns with @0xSero. AI agent educator.'}
-tags:
-  - person
-  - ai-agents
-  - coding-agents
-  - multi-agent
-  - developer-education
-sources: []
+title: "Sarah Chieng (MilksandMatcha)"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 

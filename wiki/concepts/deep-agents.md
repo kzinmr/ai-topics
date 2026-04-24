@@ -1,19 +1,8 @@
 ---
-name: Deep Agents
-type: concept
-tags: [ai-agents, autonomy, planning, file-operations, delegation, sandbox]
-related:
-  - [[pydantic-ai]]
-  - [[harness-engineering]]
-  - [[concepts/sandbox/in-process.md]]
-  - [[concepts/harness-engineering/system-architecture/infrastructure-noise.md]]
-  - [[concepts/sandbox/js-runtime.md]]
-  - [[entities/samuel-colvin.md]]
-depth: L2
-status: complete
+title: "Deep Agents — Autonomous Multi-Step AI Agents"
+tags: [[ai-agents, autonomy, planning, file-operations, delegation, sandbox]]
 created: 2026-04-15
 updated: 2026-04-16
-sources: []
 ---
 
 # Deep Agents — Autonomous Multi-Step AI Agents

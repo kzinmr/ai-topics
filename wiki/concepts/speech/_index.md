@@ -1,10 +1,8 @@
 ---
-status: active
-type: concept
+title: "Speech Models — Overview"
+tags: [[speech, audio, asr, tts, voice]]
 created: 2026-04-19
 updated: 2026-04-19
-tags: [speech, audio, asr, tts, voice]
-sources: []
 ---
 
 # Speech Models — Overview

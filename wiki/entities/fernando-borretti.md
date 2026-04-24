@@ -1,7 +1,8 @@
 ---
-tags: [person]
-type: entity
-sources: []
+title: "Fernando Borretti"
+tags: [[person]]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 

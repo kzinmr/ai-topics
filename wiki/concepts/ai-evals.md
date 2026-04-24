@@ -1,17 +1,8 @@
 ---
 title: "AI Evals (AI Evaluation Systems)"
-type: concept
+tags: [[evaluation, llm-as-judge, error-analysis, ai-engineering, ai-systems]]
 created: 2026-04-12
-tags: [evaluation, llm-as-judge, error-analysis, ai-engineering, ai-systems]
-sources:
-  - "https://open.substack.com/pub/lenny/p/why-ai-evals-are-the-hottest-new-skill"
-  - "https://hamel.dev/blog/posts/evals/"
-  - "https://hamel.dev/blog/posts/llm-judge/"
-  - "https://hamel.dev/blog/posts/evals-faq/"
-  - "https://hamel.dev/blog/posts/eval-tools/"
-  - "https://hamel.dev/blog/posts/evals-skills/"
-  - "https://hamel.dev/blog/posts/field-guide/"
-  - "https://hamel.dev/notes/llm/evals/inspect.html"
+updated: 2026-04-24
 ---
 
 # AI Evals (AI Evaluation Systems)

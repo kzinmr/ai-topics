@@ -1,10 +1,8 @@
 ---
-title: Dylan Patel
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "Dylan Patel"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 tags:

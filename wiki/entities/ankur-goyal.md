@@ -1,17 +1,8 @@
 ---
-name: "ankur-goyal"
-type: entity
+title: "Ankur Goyal"
+tags: [- person]
+created: 2026-04-24
 updated: 2026-04-10
-tags:
-  - person
-  - ceo
-  - braintrust
-  - llm-evaluation
-  - entrepreneur
-  - figma
-  - impira
-  - ai-engineer
-sources: []
 ---
 
 

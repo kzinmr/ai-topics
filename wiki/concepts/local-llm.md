@@ -1,9 +1,8 @@
 ---
-title: Local LLM
-type: concept
-category: concept
-status: active
-sources: []
+title: "Local LLM"
+tags: [llm, local-llm, concept, inference]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Local LLM

@@ -1,31 +1,8 @@
 ---
-title: LLM Integration Patterns — A Comparative Taxonomy
-type: comparison
-description: LLMをシステムに統合する主要なアプローチの分類と比較。Orchestration, Declarative Programming, Recursive Execution, Agentic Workflows, Genetic Optimizationの5つのパラダイムを、制御構造、最適化タイミング、コンテキスト管理、適用シナリオの観点から相対化する。
-aliases:
-  - llm-system-integration-patterns
-  - llm-programming-paradigms
-status: complete
-depth_tracking:
-  created: 2026-04-13
-  last_updated: 2026-04-13
-  target_depth: concept-level comparative analysis
-  key_sources:
-    - "DSPy: Compiling Declarative Language Model Calls (Khattab et al., ICLR 2024)"
-    - "Recursive Language Models (Zhang, Kraska, Khattab, arXiv 2025)"
-    - "GEPA: Reflective Prompt Evolution (Khattab et al., 2025)"
-    - "Anthropic Building Effective Agents (2025)"
-    - "LangChain/LangGraph Architecture (2024-2025)"
-    - "LlamaIndex RAG Patterns (2024-2025)"
-related:
-  - dspy
-  - rlms
-  - gepa
-  - agentic-engineering
-  - langchain
-  - langgraph
-  - llamaindex
-sources: []
+title: "LLM Integration Patterns — A Comparative Taxonomy"
+tags: [training, ai-agents, llm, prompting, rAG, comparison]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # LLM Integration Patterns: A Comparative Taxonomy

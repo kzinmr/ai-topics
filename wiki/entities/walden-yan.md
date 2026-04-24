@@ -1,22 +1,8 @@
 ---
-title: Walden Yan
-type: entity
-related: [concepts/cognition-devin-philosophy, concepts/context-engineering, entities/scott-wu, entities/nader-dabit]
-sources:
-  - https://cognition.ai/blog/dont-build-multi-agents
-  - https://linkedin.com/in/waldenyan
-  - https://www.producthunt.com/@walden_yan1
-  - https://stats.ioinformatics.org/people/7322
-  - https://en.wikipedia.org/wiki/Cognition_AI
-  - https://x.com/walden_yan
+title: "Walden Yan"
+tags: [- person]
+created: 2026-04-24
 updated: 2026-04-13
-tags:
-  - person
-  - cognition
-  - devin
-  - co-founder
-  - context-engineering
-  - competitive-programming
 ---
 
 

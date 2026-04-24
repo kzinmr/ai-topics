@@ -1,8 +1,8 @@
 ---
-tags:
-type: entity
-- person
-sources: []
+title: "Lilian Weng (@lilianweng)"
+tags: [type: entity]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Lilian Weng (@lilianweng)

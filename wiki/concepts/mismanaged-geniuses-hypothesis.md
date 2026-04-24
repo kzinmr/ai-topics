@@ -1,24 +1,8 @@
 ---
 title: "The Mismanaged Geniuses Hypothesis (MGH)"
-type: concept
+tags: [[agents, scaffolding, composition, inference-scaling, hypothesis]]
 created: 2026-04-19
-source: "Alex Zhang, Zhening (Zed) Li, Omar Khattab — blog post (April 2026)"
-tags: [agents, scaffolding, composition, inference-scaling, hypothesis]
-status: full
-related_people:
-  - Alex Zhang (MIT CSAIL, primary author)
-  - Zhening (Zed) Li (co-author)
-  - Omar Khattab (MIT, co-author, advisor)
-related_concepts:
-  - RLM (Recursive Language Models)
-  - Agentic Scaffolding
-  - Harness Engineering
-  - Inference-Time Scaling
-  - Scaffold vs RL Debate
-  - Software 3.0
-  - Context-Centric Decomposition
-  - Agent-Computer Interfaces
-sources: []
+updated: 2026-04-24
 ---
 
 # The Mismanaged Geniuses Hypothesis (MGH)

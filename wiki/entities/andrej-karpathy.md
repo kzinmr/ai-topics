@@ -1,24 +1,8 @@
 ---
-title: Andrej Karpathy
-type: entity
-handle: "@karpathy"
-url: "https://karpathy.ai/"
-twitter: "https://x.com/karpathy"
-github: "https://github.com/karpathy"
-huggingface: "https://huggingface.co/karpathy"
-blog: "https://karpathy.bearblog.dev/"
-status: active
-tags:
-  - person
-  - ai
-  - deep-learning
-  - education
-  - coding-agents
-  - open-source
-  - computer-vision
-  - self-driving
-  - llms
-sources: []
+title: "Andrej Karpathy"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 

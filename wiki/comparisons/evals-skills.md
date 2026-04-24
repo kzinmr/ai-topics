@@ -1,11 +1,8 @@
 ---
 title: "Evals Skills for Coding Agents"
-type: comparison
+tags: [[evaluation, coding-agents, mcp, automation, harness-engineering]]
 created: 2026-04-12
-tags: [evaluation, coding-agents, mcp, automation, harness-engineering]
-sources:
-  - "https://hamel.dev/blog/posts/evals-skills/"
-  - "https://hamel.dev/blog/posts/field-guide/"
+updated: 2026-04-24
 ---
 
 # Evals Skills for Coding Agents

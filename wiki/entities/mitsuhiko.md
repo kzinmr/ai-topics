@@ -1,19 +1,8 @@
 ---
-title: Armin Ronacher (mitsuhiko)
-type: entity
-handle: "@mitsuhiko"
-url: "https://lucumr.pocoo.org"
-twitter: "https://x.com/mitsuhiko"
-github: "https://github.com/mitsuhiko"
-blog: "https://lucumr.pocoo.org"
-status: active
-tags:
-  - person
-  - python
-  - open-source
-  - ai-criticism
-  - agent-orchestration
-sources: []
+title: "Armin Ronacher (mitsuhiko)"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 

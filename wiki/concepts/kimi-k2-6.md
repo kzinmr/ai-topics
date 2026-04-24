@@ -1,17 +1,8 @@
 ---
 title: "Moonshot Kimi K2.6"
-model: "Kimi K2.6"
-organization: "Moonshot AI (月之暗面)"
-type: concept
-status: active
-date: 2026-04-21
-tags:
- - open-model
- - mixture-of-experts
- - multimodal
- - long-context
- - chinese-ai
-sources: []
+tags: [- open-model]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Moonshot Kimi K2.6

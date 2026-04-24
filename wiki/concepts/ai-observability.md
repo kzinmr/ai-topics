@@ -1,16 +1,8 @@
 ---
-name: AI Observability
-type: concept
-tags: [observability, monitoring, tracing, opentelemetry, llm, agents, debugging]
-related:
-  - [[logfire]]
-  - [[pydantic-ai]]
-  - [[samuel-colvin]]
-  - 
-depth: L2
-status: complete
+title: "AI Observability — Monitoring and Debugging LLM Applications"
+tags: [[observability, monitoring, tracing, opentelemetry, llm, agents, debugging]]
 created: 2026-04-15
-sources: []
+updated: 2026-04-24
 ---
 
 # AI Observability — Monitoring and Debugging LLM Applications

@@ -1,10 +1,8 @@
 ---
-title: Ernie Smith (Tedium)
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "Ernie Smith (Tedium)"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Ernie Smith (Tedium)

@@ -1,35 +1,8 @@
 ---
-tags:
-  - person
-type: entity
-title: Omar Khattab
-description: "MIT EECS Assistant Professor. Creator of ColBERT (late interaction retrieval), DSPy (declarative LM programming), GEPA (genetic prompt optimization), and co-author of RLMs (Recursive Language Models). X: @lateinteraction"
-aliases:
-  - omar-khattab
-  - lateinteraction
-  - okhattab
-twitter: https://x.com/lateinteraction
-github: https://github.com/okhat
-website: https://omarkhattab.com/
-status: complete
-depth_tracking:
-  created: 2026-04-13
-  last_updated: 2026-04-13
-  target_depth: antirez/simon-willison quality
-  key_works: [ColBERT, DSPy, GEPA, RLM, PLAID, Baleen]
-  quote_sources:
-    - "\"Language models as modules in programs, not end products\" (Cohere talk, 2024)"
-    - "\"PhD dissertation: Building More Reliable and Scalable AI Systems with Foundation Model Programming\" (Stanford, 2024)"
-related:
-  - colbert
-  - dspy
-  - gepa
-  - rlms
-  - alex-zhang
-  - tim-kraska
-  - shunyu-yao
-  - slate
-sources: []
+title: "Omar Khattab"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Omar Khattab (@lateinteraction)

@@ -1,10 +1,8 @@
 ---
-title: Terrible Software
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "Terrible Software"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Terrible Software

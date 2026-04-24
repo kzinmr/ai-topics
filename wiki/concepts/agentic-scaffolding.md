@@ -1,11 +1,8 @@
 ---
 title: "Agentic Scaffolding"
-type: concept
+tags: [[agents, architecture, scaffolding]]
 created: 2026-04-13
-source: "OpenAI Cookbook — Agentic scaffolding patterns"
-tags: [agents, architecture, scaffolding]
-status: draft
-sources: []
+updated: 2026-04-24
 ---
 
 # Agentic Scaffolding

@@ -1,16 +1,8 @@
 ---
-name: Pydantic
-type: concept
-tags: [data-validation, python, type-hints, rust, web-frameworks, fastapi]
-related:
-  - [[structured-outputs]]
-  - [[pydantic-ai]]
-  - [[samuel-colvin]]
-  - 
-depth: L2
-status: complete
+title: "Pydantic — Data Validation Using Python Type Hints"
+tags: [[data-validation, python, type-hints, rust, web-frameworks, fastapi]]
 created: 2026-04-16
-sources: []
+updated: 2026-04-24
 ---
 
 # Pydantic — Data Validation Using Python Type Hints

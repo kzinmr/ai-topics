@@ -1,7 +1,8 @@
 ---
 title: "Agent Team / Swarm"
-type: concept
-sources: []
+tags: [concept, ai-agents, llm, evaluations, rAG]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Agent Team / Swarm

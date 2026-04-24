@@ -1,23 +1,8 @@
 ---
-title: Nathan Lambert
-type: entity
-handle: "@natolambert"
-url: "https://www.natolambert.com/"
-twitter: "https://x.com/natolambert"
-status: active
+title: "Nathan Lambert"
+tags: [- person]
+created: 2026-04-24
 updated: 2026-04-15
-tags:
-  - person
-  - ai-research
-  - rlhf
-  - open-models
-  - post-training
-  - allen-institute-ai
-  - huggingface
-  - interconnects
-  - atom-project
-  - ram-metric
-sources: []
 ---
 
 

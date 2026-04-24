@@ -1,19 +1,8 @@
 ---
 title: "Context Graph"
-type: concept
-description: "Living record of decision traces stitched across entities and time — the foundational architecture for AI agent decision-making in enterprise workflows"
-tags: [concept, context-graph, decision-trace, system-of-record, foundation-capital]
-related:
-  - "[[harness-engineering]]"  # Harness Engineering is the execution layer that captures decision traces
-  - "[[ai-evals]]"            # Evals are part of the observability plane
-  - "[[multi-agent-consensus-patterns]]"  # Multi-agent systems benefit from shared context graphs
-  - "[[openai]]"              # OpenAI Agents SDK as orchestration layer
-  - "[[simon-willison]]"      # Simon Willison on AI agent architecture
-  - "[[concepts/model-context-protocol-mcp.md]]"  # MCP as cross-system context protocol
-status: complete
+tags: [[concept, context-graph, decision-trace, system-of-record, foundation-capital]]
 created: 2026-04-20
-source: ""
-sources: []
+updated: 2026-04-24
 ---
 
 # Context Graph

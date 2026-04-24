@@ -1,15 +1,8 @@
 ---
 title: "AI Subprime Crisis"
-type: concept
-date: 2026-04-10
-sources:
-  - "https://www.wheresyoured.at/the-subprime-ai-crisis-is-here/"
-  - "https://www.wheresyoured.at/premium-how-much-of-the-ai-bubble-is-real/"
-  - "https://www.wheresyoured.at/premium-ai-isnt-too-big-to-fail/"
-tags: [ai-economics, bubble, venture-capital, subprime]
-related:
-  - "[[ai-bubble-economics]]"
-  - "[[compute-scaling-bottlenecks]]"
+tags: [[ai-economics, bubble, venture-capital, subprime]]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # AI Subprime Crisis

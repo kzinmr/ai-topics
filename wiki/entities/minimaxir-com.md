@@ -1,10 +1,8 @@
 ---
-title: Max Woolf
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "Max Woolf"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Max Woolf

@@ -1,10 +1,8 @@
 ---
-title: Mat Duggan
-type: entity
-status: active
-tags:
-- person
-sources: []
+title: "Mat Duggan"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Mat Duggan

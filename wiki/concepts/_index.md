@@ -1,7 +1,8 @@
 ---
 title: "Concepts"
-type: concept
-sources: []
+tags: [training, concept, ai-agents, llm, local-llm, prompting, rAG, evaluations, inference]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Concepts

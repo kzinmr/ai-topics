@@ -1,15 +1,8 @@
 ---
 title: "Regie.ai"
-type: entity
-description: "AI-native sales engagement platform replacing Outreach/Salesloft — designed for mixed teams where the agent is a first-class actor with prospecting, outreach, follow-ups, routing, and human escalation capabilities"
-tags: [company, startup, regie-ai, sales, sales-engagement, agent-automation]
-status: complete
-related:
-  - "[[context-graph]]"  # Regie builds decision traces for sales workflows
-  - "[[harness-engineering]]"  # Agent orchestration for sales engagement
-status: skeleton
+tags: [[company, startup, regie-ai, sales, sales-engagement, agent-automation]]
 created: 2026-04-20
-sources: []
+updated: 2026-04-24
 ---
 
 # Regie.ai

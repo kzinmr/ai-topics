@@ -1,13 +1,8 @@
 ---
 title: "ChatGPT Memory & The Bitter Lesson"
-type: concept
-status: draft
+tags: [[memory-systems, bitter-lesson, stateless-agents, chatgpt, context-management]]
 created: 2026-04-13
-source: "https://www.shloked.com/writing/chatgpt-memory-bitter-lesson"
-author: "Shlok Khemani"
-tags: [memory-systems, bitter-lesson, stateless-agents, chatgpt, context-management]
-related: [claude-memory, claude-code-source-patterns, agentic-engineering]
-sources: []
+updated: 2026-04-24
 ---
 
 # ChatGPT Memory & The Bitter Lesson

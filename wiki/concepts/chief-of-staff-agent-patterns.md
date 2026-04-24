@@ -1,12 +1,8 @@
 ---
 title: "Chief of Staff Agent Patterns"
-type: concept
-source: "https://platform.claude.com/cookbook/claude-agent-sdk-01-the-chief-of-staff-agent"
-status: active
-date: 2026-04-12
-tags: [claude-agent-sdk, orchestration, hooks, subagents, plan-mode, output-styles]
-related: [claude-agent-sdk-sre-patterns, managed-agents-sre-incident-response, context-engineering-primitives]
-sources: []
+tags: [[claude-agent-sdk, orchestration, hooks, subagents, plan-mode, output-styles]]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Chief of Staff Agent Patterns

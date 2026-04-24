@@ -1,22 +1,8 @@
 ---
 title: "Cognition/Devin Philosophy"
-status: draft
-type: concept
-tags: [agentic-engineering, cognition, devin, multi-agents, orchestration]
-related: [agent-team-swarm/managed-devins, closing-agent-loop, context-anxiety, multi-agent-autonomy-scale]
-sources:
-  - https://cognition.ai/blog/dont-build-multi-agents
-  - https://devin.ai/agents101
-  - https://cognition.ai/blog/devin-sonnet-4-5-lessons-and-challenges
-  - https://cognition.ai/blog/devin-review
-  - https://cognition.ai/blog/closing-the-agent-loop-devin-autofixes-review-comments
-  - https://cognition.ai/blog/introducing-devin-2-2
-  - https://cognition.ai/blog/devin-can-now-manage-devins
-  - https://x.com/scottwu46/status/2026350958213787903
-  - https://x.com/cognition/status/2026343816521994339  # "Eventually, the Future comes" — Devin major update
-  - https://x.com/dabit3/status/2026385925593510302
-  - https://x.com/dabit3/status/2025936695661826481
-  - https://nader.substack.com/p/engineering-for-agents-that-never
+tags: [[agentic-engineering, cognition, devin, multi-agents, orchestration]]
+created: 2026-04-23
+updated: 2026-04-24
 ---
 
 # Cognition/Devin Philosophy — Agentic Coding at Scale

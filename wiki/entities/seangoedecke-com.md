@@ -1,13 +1,8 @@
 ---
-title: Sean Goedecke
-type: entity
-status: active
-tags:
-- person
-- ai-criticism
-- politics
-- ai-autonomy-debate
-sources: []
+title: "Sean Goedecke"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Sean Goedecke

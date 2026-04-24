@@ -1,10 +1,8 @@
 ---
 title: "Beej (Brian 'Beej Jorgensen' Hall)"
-type: entity
-status: active
-handle: "@beejjorgensen"
-tags: [person]
-sources: []
+tags: [[person]]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 

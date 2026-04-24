@@ -1,26 +1,8 @@
 ---
-title: Ryan (Teknium)
-type: entity
-handle: "@teknium1"
-url: "https://teknium.io/"
-twitter: "https://x.com/Teknium1"
-status: active
-depth: L3
-tags:
-  - person
-  - nous-research
-  - open-source
-  - llm
-  - post-training
-  - rl
-  - hermes-models
-  - synthetic-data
-  - data-engineering
-  - ai-agents
-  - hermes-agent
-  - harness-engineering
-  - decentralized-ai
-sources: []
+title: "Ryan (Teknium)"
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 

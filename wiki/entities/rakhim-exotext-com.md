@@ -1,9 +1,8 @@
 ---
-title: Rakhim (Rakhim Davletkaliyev)
-type: entity
-status: active
-tags: [person]
-sources: []
+title: "Rakhim (Rakhim Davletkaliyev)"
+tags: [[person]]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 

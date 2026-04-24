@@ -1,7 +1,8 @@
 ---
-tags: [person]
-type: entity
-sources: []
+title: "xjdr (Jeff Rose)"
+tags: [[person]]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 

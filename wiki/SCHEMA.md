@@ -1,3 +1,10 @@
+---
+title: "Wiki Schema — AI Topics Knowledge Base"
+tags: [training, ai-agents, llm, prompting, rAG, evaluations, inference]
+created: 2026-04-22
+updated: 2026-04-24
+---
+
 # Wiki Schema — AI Topics Knowledge Base
 
 ## Domain

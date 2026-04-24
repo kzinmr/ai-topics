@@ -1,9 +1,8 @@
 ---
-title: Rahul Sengottuvelu
-type: entity
-category: entity
-status: active
-sources: []
+title: "Rahul Sengottuvelu"
+tags: [ai-agents, llm, prompting, entity, rAG, evaluations, inference]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Rahul Sengottuvelu

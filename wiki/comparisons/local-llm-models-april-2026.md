@@ -1,11 +1,8 @@
 ---
-status: active
-type: comparison
+title: "Local LLM Models Comparison — April 2026"
+tags: [[local-llm, models, comparison, open-weights, MoE, hardware, VRAM]]
 created: 2026-04-15
 updated: 2026-04-15
-tags: [local-llm, models, comparison, open-weights, MoE, hardware, VRAM]
-source_article: AINews - Top Local Models List - April 2026
-sources: []
 ---
 
 # Local LLM Models Comparison — April 2026

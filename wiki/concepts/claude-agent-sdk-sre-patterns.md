@@ -1,12 +1,8 @@
 ---
 title: "Claude Agent SDK — SRE Agent Pattern"
-type: concept
-source: "https://platform.claude.com/cookbook/claude-agent-sdk-03-the-site-reliability-agent"
-status: active
-date: 2026-04-12
-tags: [claude-agent-sdk, mcp, sre, automation, safety-guardrails]
-related: [managed-agents-sre-incident-response, chief-of-staff-agent-patterns, context-engineering-primitives]
-sources: []
+tags: [[claude-agent-sdk, mcp, sre, automation, safety-guardrails]]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Claude Agent SDK — SRE Agent Pattern

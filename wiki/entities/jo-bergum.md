@@ -1,23 +1,8 @@
 ---
-entity: "jo-bergum"
-type: entity
-aliases: [jobergum, Jo Kristian Bergum]
-url: "https://www.linkedin.com/in/jo-bergum/"
-blog: "https://hornet.dev/blog"
-twitter: "@jobergum"
-github: jobergum
-role: "CEO & Co-founder of Hornet; former Chief Scientist at Vespa.ai"
+title: "Jo Kristian Bergum"
+tags: [- person]
+created: 2026-04-24
 updated: 2026-04-10
-tags:
-  - person
-  - information-retrieval
-  - search-engine
-  - vespa
-  - colbert
-  - late-interaction
-  - agentic-retrieval
-  - hornet
-sources: []
 ---
 
 

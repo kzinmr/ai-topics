@@ -1,17 +1,8 @@
 ---
-name: "arlan-r"
-type: entity
+title: "Arlan Rakhmetzhanov"
+tags: [- person]
+created: 2026-04-24
 updated: 2026-04-10
-tags:
-  - person
-  - founder
-  - ml-engineer
-  - yc
-  - nozomio
-  - nia
-  - ai-coding
-  - kazakhstan
-sources: []
 ---
 
 

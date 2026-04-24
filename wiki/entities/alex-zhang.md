@@ -1,42 +1,8 @@
 ---
-title: Alex L. Zhang
-type: entity
-aliases: [Alex Zhang, alexzhang13, a1zhang]
-status: full
+title: "Alex L. Zhang"
+tags: [[person]]
 created: 2026-04-13
-depth_tracking: {'target': '13KB+', 'last_updated': datetime.date(2026, 4, 13)}
-related_people:
-  - Omar Khattab (MIT, PhD advisor, ColBERT/DSPy/RLM co-author)
-  - Tim Kraska (MIT, PhD co-advisor, DSG, ML systems)
-  - Shunyu Yao (parallel "Second Half" framework, ReAct)
-  - Karthik Narasimhan (Princeton advisor)
-  - Khanh Nguyen (Princeton mentor)
-  - Ofir Press (Princeton mentor)
-  - Kai Li (Princeton mentor)
-  - Sanjeev Arora (Princeton deep learning theory)
-related_concepts:
-  - RLM (Recursive Language Models)
-  - Context Folding
-  - GPU MODE
-  - KernelBench
-  - SWE-bench
-  - Agent-Computer Interfaces
-  - Scaffold vs RL Debate
-  - Inference-Time Scaling
-  - Software 1.0→2.0→3.0
-  - Karpathy Comparison (training vs inference optimization)
-  - Mismanaged Geniuses Hypothesis (MGH)
-related_papers:
-  - Recursive Language Models (arXiv:2512.24601, 2025)
-  - KernelBench (ICML 2025 Best Paper)
-  - VideoGameBench (2025)
-  - Neo-1 Model (2025)
-  - KernelLLM-8B (2025)
-  - Language-guided World Models (SpLU-RoboNLP @ ACL 2024)
-  - Project Popcorn (2025)
-  - Triton kernels for OSS AlphaFold3 (2024)
-tags: [person]
-sources: []
+updated: 2026-04-24
 ---
 
 

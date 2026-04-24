@@ -1,15 +1,8 @@
 ---
 title: "Maximor"
-type: entity
-description: "AI agent startup automating finance workflows — cash management, close management, and core accounting — becoming the system of record for reconciliation logic while keeping the ERP as the ledger"
-tags: [company, startup, maximor, finance, accounting, agent-automation]
-status: complete
-related:
-  - "[[context-graph]]"  # Maximor builds decision traces for finance
-  - "[[harness-engineering]]"  # Agent orchestration for finance workflows
-status: skeleton
+tags: [[company, startup, maximor, finance, accounting, agent-automation]]
 created: 2026-04-20
-sources: []
+updated: 2026-04-24
 ---
 
 # Maximor

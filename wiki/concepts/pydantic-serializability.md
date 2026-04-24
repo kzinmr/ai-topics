@@ -1,14 +1,8 @@
 ---
-name: Pydantic Serializability
-type: concept
-tags: [serialization, structured-output, schema-generation, python, pydantic]
-related:
-  - [[entities/samuel-colvin.md]]
-  - [[pydantic-ai]]
-depth: L2
-status: complete
+title: "Pydantic Serializability"
+tags: [[serialization, structured-output, schema-generation, python, pydantic]]
 created: 2026-04-15
-sources: []
+updated: 2026-04-24
 ---
 
 # Pydantic Serializability

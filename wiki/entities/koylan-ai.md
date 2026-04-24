@@ -1,23 +1,8 @@
 ---
-entity: koylan-ai
-aliases:
-- muratcan-koylan
-- Muratcan Koylan
-url: https://muratcankoylan.com/
-blog: https://muratcankoylan.com/
-twitter: '@koylanai'
-github: https://github.com/muratcankoylan
-role: Context Engineer at Sully.ai (healthcare AI); open-source contributor
-type: person
-tags:
-- context-engineering
-- multi-agent-systems
-- AI-agents
-- langgraph
-- agent-skills
-- healthcare-AI
+title: "Muratcan Koylan (Koylan AI)"
+tags: [- context-engineering]
+created: 2026-04-24
 updated: 2026-04-10
-sources: []
 ---
 
 # Muratcan Koylan (Koylan AI)

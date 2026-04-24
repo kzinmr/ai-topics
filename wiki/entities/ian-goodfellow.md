@@ -1,28 +1,8 @@
 ---
 title: "Ian Goodfellow"
-description: "アメリカのコンピュータサイエンティスト。Generative Adversarial Networks (GANs) の発明者、敵対的機械学習のパイオニア。Google DeepMind研究員。"
-type: "person"
-status: "draft"
-depth: "L2"
-related:
-  - "[[yoshua-bengio]]"
-  - "[[andrew-ng]]"
-  - ""
-  - ""
-  - ""
-sources:
-  - "https://grokipedia.com/page/Ian_Goodfellow"
-  - "https://www.iansgoodfellow.com/"
-  - "https://arxiv.org/abs/1406.2661"
-tags:
-  - person
-  - AI Researcher
-  - GANs
-  - Adversarial ML
-  - Google DeepMind
-  - Apple
-  - OpenAI
-  - Deep Learning
+tags: [- person]
+created: 2026-04-24
+updated: 2026-04-24
 ---
 
 # Ian Goodfellow
