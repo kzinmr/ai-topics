@@ -4,7 +4,7 @@ Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (
 
 Last updated: 2026-04-24 (Dreaming: geo-strategy, model releases, agentic patterns, LLM training, AI reliability)
 
-## Entity Pages (84)
+## Entity Pages (85)
 
 - [[openai]] — OpenAI (GPT, ChatGPT, Codex, Agents SDK, Symphony)
 - [[adam-rosenthal]] — Adam Rosenthal
@@ -170,7 +170,8 @@ Last updated: 2026-04-24 (Dreaming: geo-strategy, model releases, agentic patter
 - [[mistral-voxtral-tts]] — Mistral Voxtral TTS
 - [[muse-spark]] — Muse Spark
 - [[openai-spud]] — OpenAI Spud
-- [[qwen3-6-plus]] — Qwen3.6-Plus
+- [[qwen3-6-plus]] — Qwen3.6-Plus (35B-A3B MoE)
+- [[qwen3-6-27b]] — Qwen3.6-27B (dense model beating 397B MoE on coding benchmarks)
 - [[zoox-expansion]] — Zoox Robotaxi Expansion
 
 ## Concept Pages (71)
@@ -179,8 +180,9 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 ### AI Development & Engineering
 - [[code-mode]] — CodeMode: LLM writes code instead of sequential tool calls
-- [[openai-agents-sdk]] — OpenAI Agents SDK v0.14.0: Harness/Compute separation, sandbox execution, multi-provider support
-- [[monty-sandbox]] — Monty: minimal secure Python interpreter in Rust for AI agents
+|- [[openai-agents-sdk]] — OpenAI Agents SDK v0.14.0: Harness/Compute separation, sandbox execution, multi-provider support
+|- [[openai-codex-superapp]] — OpenAI Codex Superapp (Codex as primary ChatGPT interface, GPT-5.5 pricing)
+|- [[monty-sandbox]] — Monty: minimal secure Python interpreter in Rust for AI agents
 - [[sandbox]] — Sandbox: AI Agent Code Execution Isolation (gVisor, Firecracker, MicroVMs, Monty, WASM)
 - [[sandbox/js-runtime]] — JavaScript Runtimes for AI Agents (E2B, WebContainer, Bun, Deno, QuickJS)
 - [[pydantic-ai]] — Pydantic AI: type-safe Python agent framework
@@ -288,7 +290,8 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[fine-tuning/trl]] — Transformer Reinforcement Learning library (HuggingFace)
 |- [[fine-tuning/pytorch-fsdp]] — Fully Sharded Data Parallel distributed training
 |- [[fine-tuning/quantization-overview]] — Model quantization for efficient inference
-|- [[karpathy-loop]] — The Karpathy Loop (Autonomous Experiment Design, autoresearch)
+|  - [[karpathy-loop]] — The Karpathy Loop (Autonomous Experiment Design, autoresearch)
+- [[chatgpt-images-2.0]] — ChatGPT Images 2.0 (April 2026, improved image quality and prompt understanding)
 - [[personal-superintelligence]] — Personal Superintelligence (Meta vs OpenClaw vs Local AI philosophies)
 - [[meta-harness]] — Meta-Harness
 - [[scaling-without-slop]] — Scaling without Slop
@@ -435,8 +438,9 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 
 - [[vinci-rufus|Vinci Rufus]] — AI tech exec. "Orchestration > Automation", "Vibe coding 30-70%, Agentic engineering 300-700%"
 - [[ryan-lopopolo|Ryan Lopopolo]] (@_lopopolo) — OpenAI Frontier. Harness Engineering, Symphony multi-agent orchestration
-- [[vtrivedy10|Vivek Trivedy]] (@vtrivedy10) — LangChain Product Lead. Deep Agents CLI architect. Harness Engineering (Agent = Model + Harness). Terminal Bench 2.0 Top 5. HaaS thesis.
-- [[boris-cherny|Boris Cherny]] (@bcherny) — Head of Claude Code at OpenAI. Creator of Claude Code. Opus 4.5 + thinking, 5 parallel sessions via git worktrees, Plan Mode → auto-accept. Shared CLAUDE.md as team infrastructure, @claude on PRs for compounding guidelines. MCP integration (BigQuery, Slack, Sentry). PostToolUse hooks, subagents for parallel compute. "Give Claude a way to verify its work." "If you do something more than once a day, turn it into a skill."
+|- [[vtrivedy10|Vivek Trivedy]] (@vtrivedy10) — LangChain Product Lead. Deep Agents CLI architect. Harness Engineering (Agent = Model + Harness). Terminal Bench 2.0 Top 5. HaaS thesis.
+|- [[cat-wu|Cat Wu]] — Head of Product at Anthropic, responsible for Claude Code and Anthropic's product strategy. Featured in Lenny's Newsletter (April 2026) for development velocity philosophy.
+|- [[boris-cherny|Boris Cherny]] (@bcherny) — Head of Claude Code at OpenAI. Creator of Claude Code.
 - [[addy-osmani|Addy Osmani]] (@addyosmani) — Director, Google Cloud AI. Conductor→Orchestrator framework, Agent Teams/Swarms, AGENTS.md critique
 - [[sarah-chieng|Sarah Chieng]] (@MilksandMatcha) — AI agent educator, co-author of Back of House multi-agent patterns with @0xSero. "Single-agent ceiling" critique, sloperator anti-pattern identification.
 |- [[scott-wu|Scott Wu]] (@ScottWu46) — Cognition CEO & Co-Founder. IOI Gold Medalist. Devin creator. $10B+ valuation. "Eventually, the future comes" — closing the agent loop. 100x capability growth (154→659 PRs/week). Single-threaded agent philosophy.

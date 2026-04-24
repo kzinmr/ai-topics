@@ -1,7 +1,7 @@
 ---
 title: Anthropic
 created: 2026-04-09
-updated: 2026-04-09
+updated: 2026-04-24
 tags:
 - company
 - ai-safety
@@ -64,6 +64,20 @@ Anthropic chose not to release [[claude-mythos]] publicly after discovering its 
 - Mythos: **181 working exploits**
 
 Mythos also discovered decades-old bugs in critical software: OpenBSD (27-year-old bug), FFmpeg (16-year-old bug).
+
+## Product Team
+
+### Cat Wu — Head of Product
+Cat Wu (entity: [[cat-wu]]) leads product development at Anthropic, responsible for Claude Code and Anthropic's product strategy. Featured in Lenny's Newsletter (April 23, 2026) discussing:
+- Anthropic's exceptional product development velocity
+- Developer-first design philosophy for Claude Code
+- Fast iteration cycles and minimal bureaucracy
+- Bias toward shipping over perfection
+
+### Claude Code
+Claude Code is Anthropic's AI coding agent, designed under Cat Wu's product leadership. It is a key competitive product against OpenAI's Codex. See [[claude-code]] for details.
+
+See also: [[openai-codex-superapp]] (OpenAI's competing Codex superapp positioning).
 
 ## Sources
 - [[raw/articles/substack.com--app-link-post--40004939.md]] (Ben's Bites, 2026-04-09)

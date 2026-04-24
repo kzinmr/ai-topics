@@ -3,7 +3,7 @@ title: "GPT Models"
 tags: [llm, openai, gpt, transformer, chatgpt, frontier-models]
 status: active
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-04-24
 ---
 
 # GPT Models
@@ -86,7 +86,25 @@ See [[decoder-only-gpt]] for the complete architectural breakdown.
 - **gpt-5.4** (March 2026): Complex reasoning and coding
 - **gpt-5.4-mini**: Lower latency and cost
 - **gpt-5.4-nano**: Edge deployment, minimal latency
+- **gpt-5.5** (April 2026): Latest model, available in Codex and rolling out to paid ChatGPT subscribers
+- **gpt-5.5 Pro**: Higher-tier variant
 - **Note:** GPT-4o and GPT-4.1 retired (February 13, 2026)
+
+### GPT-5.5 (April 24, 2026)
+
+GPT-5.5 is the newest model in the GPT series, released April 24, 2026. Key details:
+
+| Model | Input ($/1M) | Output ($/1M) | Notes |
+|-------|-------------|---------------|-------|
+| **GPT-5.5** | $5 | $30 | Main model |
+| **GPT-5.5 Pro** | $30 | $180 | Higher-tier variant |
+| **GPT-5.4** | $2.5 | $15 | Remains at half price |
+
+GPT-5.5 is available in OpenAI Codex and rolling out to paid ChatGPT subscribers. The Codex interface has become the primary ChatGPT experience. See [[openai-codex-superapp]] for details.
+
+GPT-5.5 pricing positions it above GPT-5.4 (half the previous price), reflecting OpenAI's strategy to offer tiered performance levels. The model is optimized for complex reasoning and coding tasks, continuing the trajectory from GPT-5.4.
+
+Related: [[chatgpt-images-2.0]] (launched alongside GPT-5.5), [[openai-codex-superapp]] (Codex as primary interface)
 
 ## Reinforcement Learning from Human Feedback (RLHF)
 

@@ -1539,3 +1539,45 @@ Priority selection: 2 high-priority (4+ days stale) + 1 medium-priority (never c
 ### Skipped Themes (below promotion threshold or review-only)
 - [[AI批判の政治的バイアス分析]] (Sean Goedecke) — score 0.48, NJ 3 → review only, not promoted
 - [[AIベンチマークとコミュニティ]] (ARC-AGI-2, WeirdML) — score 0.42, NJ 2 → below threshold, existing coverage sufficient
+
+## 2026-04-24 — newsletter ingest: GPT-5.5, Codex Superapp, Cat Wu, Qwen3.6-27B
+
+### Newsletter Sources (3 take decisions)
+- [[raw/newsletters/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b.md]] — Simon Willison Newsletter: GPT-5.5, ChatGPT Images 2.0, Qwen3.6-27B
+- [[raw/newsletters/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp.md]] — AINews: GPT 5.5 + OpenAI Codex Superapp (swyx)
+- [[raw/newsletters/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc.md]] — Lenny's Newsletter: Cat Wu (Anthropic Head of Product, Claude Code)
+
+### Wiki Pages Updated/Created
+
+#### [[concepts/gpt-models]] — GPT Models
+- Updated GPT-5 series section with GPT-5.5 release details (April 24, 2026)
+- Added pricing table: GPT-5.5 ($5/$30), GPT-5.5 Pro ($30/$180), GPT-5.4 ($2.5/$15)
+- Added cross-reference to [[openai-codex-superapp]] and [[chatgpt-images-2.0]]
+
+#### [[concepts/chatgpt-images-2.0]] — ChatGPT Images 2.0 (NEW)
+- Created concept page: second-gen image generation in ChatGPT (April 2026)
+- Features: improved quality, better prompt understanding, faster generation
+- Comparison table vs DALL·E 3, Midjourney
+- References "Nano Banana" meme from Ben's Bites
+
+#### [[concepts/openai-codex-superapp]] — OpenAI Codex Superapp (NEW)
+- Created concept page: Codex as primary ChatGPT interface (April 2026)
+- Details on Codex backdoor API and third-party integration (OpenClaw, Claude Code, etc.)
+- Cross-references: [[gpt-models]], [[openai-agents-sdk]], [[harness-engineering]], [[anthropic]]
+
+#### [[entities/cat-wu]] — Cat Wu (NEW)
+- Created entity page: Head of Product at Anthropic
+- Lenny's Newsletter interview details: development velocity philosophy, Claude Code design
+- Cross-references: [[anthropic]], [[claude-code]], [[claude-opus-4-7]], [[dario-amodei]]
+
+#### [[entities/anthropic]] — Anthropic
+- Updated with new "Product Team" section covering Cat Wu
+- Added Claude Code competitive positioning note
+- Updated `updated` frontmatter: 2026-04-09 → 2026-04-24
+
+#### [[concepts/qwen3-6-27b]] — Qwen3.6-27B (NEW)
+- Created concept page: dense 27B model outperforming 397B MoE predecessor
+- Benchmark table: SWE-bench 77.2 vs 76.2, Terminal-Bench 59.3 vs 52.5, SkillsBench 48.2 vs 30.0
+- Architecture: hybrid Gated DeltaNet + attention, dense, 262K context, ~18GB VRAM
+- "Thinking preservation" feature for multi-step agent workflows
+- Cross-references: [[qwen]], [[open-source-llms]], [[coding-agents]], [[gpt-models]], [[claude-opus-4.7]]
