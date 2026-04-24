@@ -47,9 +47,36 @@ StrongDMはこのLevel 5を実践し、Anthropic Managed AgentsとOpenAI Symphon
 - Digital Twin Universe: 依存サービスをAgentでクローン
 - 詳細: [[dark-factory-software-factory]]
 
+## 2026 Production Architecture Patterns
+
+### The Four Proven Patterns
+1. **Hierarchical (Orchestrator-Worker)** — Central manager decomposes tasks, delegates to specialized workers
+2. **Peer-to-Peer (Collaborative)** — Agents communicate directly, negotiating without a central manager
+3. **Pipeline (Sequential)** — Linear sequence where one agent's output is the next's input
+4. **Event-Driven (Reactive)** — Agents subscribe to event bus and activate on triggers
+
+### Communication Protocols
+Three protocols competing to become the standard:
+- **MCP** — Agent-to-tool communication (mature, widely adopted)
+- **A2A** — Dynamic discovery between autonomous agents (Google)
+- **ACP** — Enterprise-focused, regulated industries (IBM/I Am Bee, alpha)
+
+Decision: MCP for tools, A2A for cross-org, ACP for governance.
+
+### Critical Failure Modes
+- **Infinite Delegation:** Agent A → B → A loop. Solution: depth limit (3-5)
+- **Context Poisoning:** One agent's error amplified downstream. Solution: validation agents at junctions
+- **Cost Explosion:** p99 costs 10-20x average. Solution: hard token/dollar limits per task
+
+### The Shared Memory Problem
+Centralized state store with **optimistic concurrency control** (e.g., Redis Lua scripts for atomic check-and-set).
+
 ## 関連概念
 
 - [[harness-engineering]] — 単一Agentの実行環境設計（基礎）
 - [[multi-agent-autonomy-scale]] — 256Agentスケールの自律協調研究
 - [[concepts/harness-engineering/agentic-engineering-patterns.md]] — Agentic Engineeringのパターン集
 - [[ryan-lopopolo]] — Symphonyの作者、Harness Engineering提唱者
+- [[agent-communication-protocols]] — MCP/A2A/ACP プロトコル比較
+- [[agentic-conflict-resolution]] — 複数Agent間の競合検出・解決
+- [[zero-trust-agentic-ai]] — Agentのセキュリティ基盤

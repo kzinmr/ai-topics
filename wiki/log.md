@@ -1581,3 +1581,33 @@ Priority selection: 2 high-priority (4+ days stale) + 1 medium-priority (never c
 - Architecture: hybrid Gated DeltaNet + attention, dense, 262K context, ~18GB VRAM
 - "Thinking preservation" feature for multi-step agent workflows
 - Cross-references: [[qwen]], [[open-source-llms]], [[coding-agents]], [[gpt-models]], [[claude-opus-4.7]]
+
+---
+
+## 2026-04-24 — Active Knowledge Crawl (Laterals & Deep Dive)
+
+### Crawl Targets
+- agent-team-swarm (laterals)
+- ai-evals (laterals)  
+- sandbox (laterals)
+
+### New Concept Pages Created
+- [[multi-agent-orchestration-patterns]] — 5 core orchestration patterns from Microsoft Azure Architecture Center
+- [[agent-communication-protocols]] — MCP vs A2A vs ACP protocol comparison
+- [[agentic-conflict-resolution]] — Escalation Ladder for multi-agent disputes
+- [[zero-trust-agentic-ai]] — Zero Trust framework for AI agents (Auth0 + Cisco)
+- [[excessive-agency]] — OWASP LLM Top 10 vulnerability definition
+- [[red-teaming-adversarial-eval]] — ASR, Crescendo Attacks, XPIA testing
+
+### New Source Articles
+- raw/articles/crawl-2026-04-24-multi-agent-production-architecture-2026.md
+- raw/articles/crawl-2026-04-24-agentic-conflict-resolution-playbook.md
+- raw/articles/crawl-2026-04-24-microsoft-red-teaming-agents.md
+- raw/articles/crawl-2026-04-24-debugging-ai-agents-production-2026.md
+- raw/articles/crawl-2026-04-24-zero-trust-agent-security-auth0.md
+- raw/articles/crawl-2026-04-24-cisco-zero-trust-agentic-ai.md
+
+### Updated Existing Pages
+- concepts/agent-team-swarm/_index.md — Added 2026 production architecture patterns, communication protocols, failure modes
+- concepts/ai-evals.md — (referenced by red-teaming page)
+- index.md — Added 6 new concept entries, updated Total pages count

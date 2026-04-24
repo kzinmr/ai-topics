@@ -333,6 +333,13 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 ### Agent Team / Swarm
 - [[agent-team-swarm]] — Agent Team / Swarm（複数Agent協調・Dark Factoryまでの5レベルモデル）
+
+- [[multi-agent-orchestration-patterns]] — Multi-Agent Orchestration Patterns (5 core patterns: Sequential, Concurrent, Group Chat, Handoff, Magentic)
+- [[agent-communication-protocols]] — Agent Communication Protocols (MCP vs A2A vs ACP)
+- [[agentic-conflict-resolution]] — Agentic Conflict Resolution (Escalation Ladder: Rules → Voting → ML → Human)
+- [[zero-trust-agentic-ai]] — Zero Trust for Agentic AI (Identity, Access, Behavior controls for AI agents)
+- [[excessive-agency]] — Excessive Agency in AI Agents (OWASP LLM Top 10 vulnerability)
+- [[red-teaming-adversarial-eval]] — Red Teaming & Adversarial Evaluation (ASR, Crescendo Attacks, XPIA)
 - [[anthropic-managed-agents]] — Anthropic Managed Agents（Brain/Hands/Session分離アーキテクチャ）
 - [[openai-symphony]] — OpenAI Symphony（WORKFLOW.md駆動のタスクオーケストレーター）
 - [[dark-factory-software-factory]] — Dark Factory Software Factory（StrongDM実践事例）
