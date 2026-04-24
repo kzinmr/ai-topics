@@ -1504,3 +1504,38 @@ Priority selection: 2 high-priority (4+ days stale) + 1 medium-priority (never c
 - tokenmaxxing: first crawl → 2026-04-23
 - neural-garbage-collection: first crawl → 2026-04-23
 - google-tpu: last_crawled → 2026-04-23 (raw article enrichment)
+## 2026-04-24 — dreaming: daily consolidation
+
+### Duplicate Check Summary
+- Items skipped (already processed by other jobs): 12+
+  - ARC-AGI-2 benchmark, WeirdML, AI Engineer Singapore already covered by other daily jobs
+  - AI Politics/Criticism (Sean Goedecke) below consolidation threshold (0.48) → review only, no wiki update
+- Gaps filled: 0
+- Overlapping areas: Geo-strategy analysis (Anthropic Mythos, Meta Muse, Digital NATO) was partially covered by previous Active Crawl runs on 04-23
+
+### Consolidation Summary
+- Articles processed: 26
+- Themes identified: 7
+- Pages created: 0
+- Pages updated: 3
+
+### Updated Pages
+
+#### [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
+- Added strategic analysis: Anthropic's deliberate strategy to build dependency through security workflows (per Alex Banks, The Signal, Apr 2026)
+- Added "commoditizing vulnerability discovery" as strategic endgame
+- Updated `updated` frontmatter: 2026-04-10 → 2026-04-24
+
+#### [[concepts/meta-muse-spark]] — Meta Muse Spark
+- Added new section "Distribution Advantage" analyzing Meta's 3B user moat across WhatsApp, Instagram, Facebook, Messenger
+- Added analysis of "distribution moat" thesis — Muse Spark as default AI layer inside the social graph
+- Updated `updated` frontmatter: 2026-04-13 → 2026-04-24
+- Added Alex Banks source reference to Sources section
+
+#### [[concepts/ai-digital-nato]] — AI Digital NATO — Frontier Model Forum Distillation Alliance
+- Already updated on 04-23 with distillation coalition and contradictory positioning analysis
+- Updated `updated` frontmatter: 2026-04-13 → 2026-04-24
+
+### Skipped Themes (below promotion threshold or review-only)
+- [[AI批判の政治的バイアス分析]] (Sean Goedecke) — score 0.48, NJ 3 → review only, not promoted
+- [[AIベンチマークとコミュニティ]] (ARC-AGI-2, WeirdML) — score 0.42, NJ 2 → below threshold, existing coverage sufficient

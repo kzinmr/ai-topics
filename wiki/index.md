@@ -2,7 +2,7 @@
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-22 (Active Crawl: context-routing, agentic-web, agentic-workflow-patterns)
+Last updated: 2026-04-24 (Dreaming: geo-strategy, model releases, agentic patterns, LLM training, AI reliability)
 
 ## Entity Pages (84)
 

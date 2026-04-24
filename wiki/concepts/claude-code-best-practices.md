@@ -140,94 +140,64 @@ See [[context-window-management]] for detailed patterns.
 
 ## Claude Code Routines (April 2026)
 
-On April 19, 2026, Anthropic introduced **Routines** — a feature that lets users create reusable, parameterized prompt sequences for Claude Code. Routines build on the `CLAUDE.md` pattern but for discrete, repeatable workflows.
+On April 14, 2026, Anthropic introduced **Routines** — a major evolution in Claude Code automation. Unlike local parameterized templates, Routines are server-side automations that run on Claude Code's web infrastructure, independent of the developer's laptop.
 
 ### What Are Routines?
 
-Routines are named, parameterized task templates stored in `~/.claude/routines/`:
+A Routine is a Claude Code automation you configure once — including a prompt, repo, and connectors — then run on a schedule, from an API call, or in response to an event. Routines run on [Claude Code's web infrastructure](https://code.claude.com/docs/en/claude-code-on-the-web), so nothing depends on your laptop being open.
 
-```yaml
-# ~/.claude/routines/review-pr.yaml
-name: review-pr
-description: Review a pull request and leave structured comments
-parameters:
-  - name: pr_number
-    type: number
-    required: true
-  - name: focus_area
-    type: string
-    required: false
-    default: "all"
-steps:
-  - run: "Fetch PR details and diff"
-    tool: bash
-    command: "gh pr view {pr_number} --json title,body,state"
-  - run: "Review code changes"
-    tool: claude
-    prompt: "Review the changes in PR #{pr_number}. Focus on: {focus_area}. Check for bugs, style issues, and test coverage."
-  - run: "Post review comment"
-    tool: github
-    action: "comment"
+Before Routines, developers managed cron jobs, infrastructure, and MCP servers themselves. Routines ship with access to repos and connectors, packaging automations into set-and-forget workflows.
+
+### Three Routine Types
+
+#### 1. Scheduled Routines
+Give Claude Code a prompt and a cadence (hourly, nightly, weekly) — it runs on schedule:
 ```
+Every night at 2am: pull the top bug from Linear, attempt a fix, and open a draft PR.
+```
+Existing `/schedule` CLI tasks are now scheduled routines.
+
+#### 2. API Routines
+Configure routines triggered by API calls. Every routine gets its own endpoint and auth token:
+```
+POST a message → get back a session URL. Wire Claude Code into alerting, deploy hooks, internal tools.
+```
+Example: Read an alert payload, find the owning service, post a triage summary to #oncall.
+
+#### 3. Webhook Routines (GitHub)
+Subscribe a routine to automatically kick off in response to GitHub events:
+```
+Flag PRs that touch the /auth-provider module. Summarize changes and post to #auth-changes.
+```
+Claude opens one session per PR and continues feeding updates (comments, CI failures).
+
+### Common Routine Patterns
+
+- **Backlog management:** Triage new issues nightly, label, assign, post summary to Slack
+- **Docs drift:** Scan merged PRs weekly, flag docs referencing changed APIs, open update PRs
+- **Deploy verification:** CD pipeline posts after deploy, Claude runs smoke checks, scans error logs for regressions, posts go/no-go
+- **Security scanning:** Weekly dependency audit, flag vulnerabilities, create fix PRs
+- **PR triage:** Auto-flag PRs touching sensitive modules, summarize changes for review channels
 
 ### Why Routines Matter
 
 | Aspect | Before Routines | After Routines |
 |--------|-----------------|----------------|
-| Reusability | Copy-paste prompts | Named, versioned templates |
-| Parameterization | Manual variable substitution | Formal parameter schema |
-| Sharing | Share via docs/wiki | Distribute `.yaml` files |
-| Consistency | Varies by user | Standardized workflow |
-
-### Routine Patterns
-
-#### 1. Code Review Routine
-```yaml
-name: code-review
-parameters:
-  - name: pr_url
-    type: string
-steps:
-  - fetch: pr_url → diff
-  - analyze: Security, performance, style
-  - comment: Structured findings
-```
-
-#### 2. Test Generation Routine
-```yaml
-name: generate-tests
-parameters:
-  - name: file_path
-    type: string
-steps:
-  - analyze: Source file for public API
-  - generate: Unit tests for each function
-  - validate: Run tests, fix failures
-```
-
-#### 3. Documentation Update Routine
-```yaml
-name: update-docs
-parameters:
-  - name: component
-    type: string
-steps:
-  - read: Existing documentation
-  - compare: With current implementation
-  - update: Fill in gaps, fix outdated parts
-  - validate: Links, examples work
-```
+| Runtime | Local laptop required | Web infrastructure (always-on) |
+| Triggers | Manual or cron setup | Scheduled, API, webhooks |
+| Session management | Developer-managed | One session per event (per PR) |
+| Connector access | Manual MCP setup | Built-in with repo/connector access |
+| Scalability | Limited by local resources | Cloud-scaled |
 
 ### Best Practices for Routines
 
-1. **One responsibility** — Each routine should do one thing well
-2. **Explicit parameters** — Define all inputs, even optional ones
-3. **Idempotent steps** — Can be re-run without side effects
-4. **Error handling** — Include validation at each step
-5. **Documentation** — Comment non-obvious decisions
+1. **Define clear boundaries** — Each routine should have a focused scope
+2. **Use connectors wisely** — Leverage built-in connectors (Linear, GitHub, Slack) to avoid custom infrastructure
+3. **Monitor routine output** — Review routine sessions regularly; they run autonomously
+4. **Start with schedules** — Nightly triage and weekly scans are low-risk entry points
+5. **Leverage per-PR sessions** — Webhook routines maintain per-PR context for ongoing discussions
 
 ### Related Patterns
-
 - [[claude-code-source-patterns]] — Internal Claude Code implementation details
 - [[concepts/harness-engineering/agentic-workflows/interactive-explanations.md]] — Reusable workflow patterns
 - [[context-window-management]] — Managing context across routine invocations

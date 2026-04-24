@@ -1,7 +1,7 @@
 ---
 title: "Claude Mythos & Project Glasswing"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-04-24
 tags: [claude-mythos, project-glasswing, anthropic, cybersecurity, frontier-ai, ai-safety]
 aliases: ["project-glasswing", "mythos-preview"]
 related: [[ai-safety-alignment]], [[concepts/agentic-engineering.md]], [[cognitive-cost-of-agents]], [[zero-day-discovery]]
@@ -75,6 +75,8 @@ Maintainers can apply via the *Claude for Open Source* program. Open-source main
 Anthropic's stated rationale: *"AI capabilities have crossed a threshold that fundamentally changes the urgency required to protect critical infrastructure. The old ways of hardening systems are no longer sufficient."*
 
 **Core concern:** Frontier AI has crossed a threshold where it can autonomously discover and exploit software vulnerabilities at a scale surpassing human experts. Rather than waiting for malicious proliferation, Glasswing channels these capabilities exclusively toward defensive security.
+
+**Strategic analysis:** Beyond the stated safety rationale, there is a deliberate strategy to get every major tech company running their security workflows on Anthropic's infrastructure, building deep dependency before competitors can replicate these capabilities ([Alex Banks, Apr 2026](https://thesignal.substack.com/p/anthropics-mythos-lockdown-metas)). The eventual goal of commoditizing vulnerability discovery means every unpatched organization will be exposed.
 
 Anthropic's warning: The model *"presages an upcoming wave of models that can exploit vulnerabilities in ways that far outpace the efforts of defenders."* Analysts have characterized Mythos as potentially *"the ultimate hacking tool, one that can elevate any ordinary hacker into a nation-state adversary."*
 

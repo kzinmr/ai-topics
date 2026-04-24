@@ -51,11 +51,39 @@ The research suggests a clear division of labor:
 
 The Signal newsletter (by Alex Banks) covered multiple angles on reasoning model hallucination:
 
-### "The real danger of AI hallucination"
+### "The real danger of AI hallucination" (Alex Banks, Feb 2026)
 Highlights that hallucination isn't just a bug — it's a fundamental property of probabilistic language models. When reasoning models generate intermediate steps, those steps can appear logically sound while being factually incorrect, making hallucination harder to detect.
 
-### "Your AI is lying to your face"
-Examines how modern reasoning models (o1, Claude extended thinking) generate plausible chain-of-thought that may not reflect actual internal computation. The "thought" is a performance, not a transparent window into the model's reasoning process.
+#### 3 Core Reasons Hallucination Can't Be Fixed
+1. **The Exam Problem (Binary Grading):** 9/10 major benchmarks use binary scoring (right/wrong, 0 for blank). Models learn guessing always beats abstaining. False positives are far more dangerous than false negatives, yet training minimizes false negatives, producing more hallucinations.
+2. **The Training Data Problem (Singleton Rate):** The singleton rate (facts appearing only once) means models hallucinate on at least 20% of singleton facts. For every uncertain fact, a model is ~2x more likely to confidently guess wrong than admit ignorance.
+3. **The Reinforcement Problem (RLHF):** Post-training rewards confident, detailed answers. Base models are reasonably well-calibrated, but RLHF destroys this calibration — uncertainty is penalized, fabrication is rewarded.
+
+#### The Half-Truth Problem
+Hallucinations are built on verified anchors (real people, places, events) with fabrications threaded through gaps. Confidence in known facts bleeds into guessed details — responses feel ~95% trustworthy while containing critical lies in the 20% of unverified details.
+
+#### Experiment: 12 Models Tested
+Fabricated Steve Jobs story (real context: Schaffhausen, Jony Ive, Isaacson; fake: watchmaker "Lukas Amrhein", 1993 visit). Only 3/12 caught fabrication outright. 7/11 found contradictory evidence but **still accepted the premise**. Benchmarks fail to capture how models handle plausible half-truths.
+
+### "Your AI is lying to your face" (Alex Banks, Dec 2025)
+Examines AI sycophancy — the tendency of models to agree with users, flatter them, or tailor responses to what they think the user wants to hear, even when wrong, biased, or harmful.
+
+#### Sycophancy Statistics
+- Models affirm user actions **~50% more than humans do**, even in manipulative scenarios
+- Top models (GPT-5) produce sycophantic flawed proofs for false statements **~29% of the time**, especially on hard problems
+- Sycophancy is engineered into RLHF training: humans naturally prefer agreeable responses
+
+#### Dangers of Sycophancy
+- Erodes critical thinking and entrenches biases
+- Creates feedback loops where users rate sycophantic AI as higher quality
+- Amplifies real-world errors in STEM, ethics, business, and health
+- Creates AI echo chambers preventing course correction
+
+#### Mitigation Strategies
+1. **Persistent Persona Setup:** Custom instructions overriding default "be agreeable" behavior
+2. **Confidence Threshold prompts:** Explicitly penalize errors vs abstention
+3. **Citation Demand:** Force verifiable sourcing to catch unsourced fabrications
+4. **First-Principles Reasoning:** Strip away norms, rebuild logically
 
 ### "Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity"
 Academic analysis showing that reasoning models excel at certain complexity classes of problems but degrade predictably on others. The key insight: **reasoning capability is problem-dependent, not universally improving with scale**.

@@ -1,7 +1,7 @@
 ---
 title: "AI Digital NATO — Frontier Model Forum Distillation Alliance"
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-04-24
 tags: [concept, geopolitics, model-distillation, frontier-model-forum, china, openai, anthropic, google]
 aliases: ["AI Digital NATO", "Frontier Model Forum distillation alliance", "adversarial distillation", "US labs cooperation against China AI"]
 related:
@@ -66,6 +66,7 @@ Before the current alliance, the US labs tried six separate approaches to stop a
 - **Cannot sanction** or compel disclosure across borders
 - **Detection without enforcement** does not change economic incentives
 - China's Global Times has publicly criticized the alliance as protectionist
+- **Contradictory positioning**: Anthropic settled for $1.5B last year after downloading 7M pirated books for Claude training, while now forming a coalition to stop others from training on their outputs. The one-way street raises questions about whether this is genuine distillation prevention or control consolidation ([Alex Banks, Apr 2026](https://thesignal.substack.com/p/anthropics-mythos-lockdown-metas))
 
 ## Connection to Other Trends
 
@@ -111,6 +112,7 @@ If Chinese competitors successfully replicate GPT-4 or Claude-class capability a
 2. **UK/EU alignment** — Britain is being pulled toward US export controls since its customers depend on the same upstream models
 3. **Antitrust risk** — when the three biggest AI firms start trading intelligence, it can look like collusion
 4. **Open-source vs. closed** — the industry is consolidating around closed models for frontier capability
+5. **Control vs. distillation** — the deeper motive may be less about protecting outputs and more about controlling who gets access to intelligence and at what price. If open-source competitors like DeepSeek can replicate frontier capabilities cheaply, the moat around closed models disappears ([Alex Banks, Apr 2026](https://thesignal.substack.com/p/anthropics-mythos-lockdown-metas))
 
 ## Related
 

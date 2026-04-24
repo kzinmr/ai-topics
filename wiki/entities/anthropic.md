@@ -25,9 +25,33 @@ AI safety research company, developer of the Claude model family.
 
 | Model | Status | Notes |
 |-------|--------|-------|
-| [[claude-sonnet-4]] | Released | Previous generation |
-| [[claude-opus-4.6]] | Released | Previous flagship |
 | [[claude-mythos]] | **Withheld** | Too risky for public release; limited access via [[project-glasswing]] |
+| [[claude-opus-4.7]] | Released (GA, Apr 16) | Latest flagship — improved coding, cyber safeguards, better vision |
+| [[claude-opus-4.6]] | Released | Previous generation |
+| [[claude-sonnet-4]] | Released | Mid-tier |
+
+## Claude Opus 4.7 (Apr 2026)
+
+Released GA Apr 16, 2026. Notable improvements in advanced software engineering:
+- 13% lift on 93-task coding benchmark (Replit eval), 4 tasks neither Opus 4.6 nor Sonnet 4.6 could solve
+- Catches own logical faults during planning phase
+- Substantially better vision (higher resolution image understanding)
+- First Claude model with cyber safeguards (auto-detects and blocks prohibited cybersecurity use)
+- Low-effort Opus 4.7 ≈ medium-effort Opus 4.6
+- Pricing: $5/M input, $25/M output tokens (same as Opus 4.6)
+- Available on all Claude products, API, Amazon Bedrock, Google Cloud Vertex AI, Microsoft Foundry
+- Cyber Verification Program for legitimate security research
+
+## Claude Design by Anthropic Labs (Apr 17, 2026)
+
+New product powered by Claude Opus 4.7 vision model. Allows collaborative design creation:
+- Describe what you need, Claude builds first version
+- Refine through conversation, inline comments, direct edits, custom sliders
+- Can apply team's design system automatically
+- Export to Canva, PDF, PPTX, or standalone HTML
+- Handoff to Claude Code for implementation
+- Research preview for Pro, Max, Team, Enterprise subscribers
+- Integration with Canva (Melanie Perkins co-founder endorsement)
 
 ## AI Safety Initiatives
 

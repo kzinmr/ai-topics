@@ -1,7 +1,7 @@
 ---
 title: "Meta Muse Spark"
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-04-24
 tags: [concept, meta, frontier-models, closed-source, muse, alexandr-wang]
 aliases: ["muse spark", "meta superintelligence labs", "meta avocado"]
 related:
@@ -71,11 +71,16 @@ Meta's vision extends beyond chatbot responses. Muse Spark is designed as the co
 3. Pulls in relevant creator/community context from Instagram, Facebook, Threads
 4. Eventually takes action across Meta's products
 
-### Product Rollout
-
+### Distribution & Strategy
 - **Now**: Meta AI app, meta.ai (US)
 - **Coming weeks**: WhatsApp, Instagram, Facebook, Messenger, smart glasses
 - **Developers**: Private API preview (no public pricing/docs yet)
+
+### Distribution Advantage
+
+Muse Spark has a unique distribution advantage over ChatGPT or Claude: **3 billion people already inside Meta's apps** (WhatsApp, Instagram, Facebook, Messenger). If this model meaningfully improves the AI inside these applications, users will no longer need external applications for AI interactions. The convenience of calling your AI in WhatsApp or exchanging voice notes "feels" more intuitive in the space where you message friends and family, especially as we move to voice-first modalities ([Alex Banks, Apr 2026](https://thesignal.substack.com/p/anthropics-mythos-lockdown-metas)).
+
+This positions Muse Spark not just as a model, but as a **distribution moat** — the value isn't just in capability but in being the default AI layer inside the social graph.
 
 ## Related
 
