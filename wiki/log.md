@@ -1634,3 +1634,42 @@ Priority selection: 2 high-priority (4+ days stale) + 1 medium-priority (never c
 - **Incomplete action spaces**: Frameworks fail because available tools are insufficient, not because models are weak
 - **Inversion Strategy**: Start maximal, restrict later based on evals — opposite of traditional guardrails-first approach
 - **Context bloat**: Ephemeral tools (keep last N outputs) prevent 500KB+ context explosions
+
+
+## 2026-04-24 Dreaming Consolidation (18:00 JST)
+
+### New Pages Created
+- `concepts/sycophancy.md`: Sycophancy in LLMs — tendency to please over truth-seeking, alignment artifacts, mitigation strategies
+- `concepts/claude-code-routines.md`: Scheduled/event-driven Claude Code automation (Anthropic research preview, Apr 19)
+- `concepts/arc-agi-2.md`: ARC-AGI-2 benchmark — abstract reasoning test (Gemini 3 Deep Think: 45.1% with code)
+- `concepts/ai-criticism-politics.md`: Political coding of anti-AI arguments as conservative despite progressive framing
+
+### Pages Updated
+- `concepts/gemini.md`: Added Gemini 3.1 Flash TTS section (Apr 2026)
+
+### Sources Processed
+- [Ben's Bites: Your AI is lying to your face](https://substack.com/redirect/04e7d3a1-c3a2-4ee5-96af-954e830bc579) — sycophancy (15/15 relevance)
+- [Giles Thomas: LLM from scratch 32l](https://www.gilesthomas.com/2026/04/llm-from-scratch-32l-interventions-instruction-fine-tuning-tests) — intervention FT results (12/15)
+- [Ben's Bites: TPU 8t/8i technical deep dive](https://substack.com/redirect/394ee21a-c362-4fb3-adf3-c39eb79ee333) — TPU hardware specs (11/15)
+- [Ben's Bites: Anthropic's Big Swing](https://substack.com/redirect/2/eyJlIj...yYfU?) — Gemini Everywhere + OpenAI Shape-Shift (9/15)
+- [OpenAI Engineering: ChatGPT Images 2.0](https://link.mail.beehiiv.com/v1/c/RZu84jJUQTLob2xNOXDmevcOVPgSrvMtyPN...) — reasoning before drawing (9/15)
+- [Troy Hunt: Agentic AI + HIBP APIs](https://www.troyhunt.com/heres-what-agentic-ai-can-do-with-have-i-been-pwneds-apis/) — agentic MCP use cases (7/15)
+- [Ben's Bites: Claude Opus 4.7](https://substack.com/redirect/2bfd4077-5fe2-4954-9ef5-fd19f858ca20) — GA release (7/15)
+- [Ben's Bites: Claude Design](https://substack.com/redirect/5d9340fa-c538-42b3-8d76-f7a6c3d006f5) — design collaboration (7/15)
+- [Sean Goedecke: Anti-AI arguments are conservative](https://seangoedecke.com/many-anti-ai-arguments-are-conservative/) — political coding (6/15)
+- [Ben's Bites: Claude Code Routines](https://substack.com/redirect/36a5d462-fad9-43b3-afff-c1d7c95077fe) — scheduled automation (6/15)
+- [Ben's Bites: Gemini 3.1 Flash TTS](https://substack.com/redirect/417cdc81-3b4b-4bc6-af06-907920a73e36) — new TTS model (6/15)
+- [Epoch AI: ARC-AGI-2](https://substack.com/redirect/034037b3-c281-49ed-8de1-9ea5821ed9ef) — benchmark (5/15)
+
+### Skipped (low signal / already covered)
+- Google AI Plans with Cloud Storage (7/15) — feature update, not concept-worthy
+- AI Engineer Singapore event (7/15) — event listing
+- Gumloop AI Automation Framework (7/15) — tool listing, not enough detail
+- Gergely Orosz Substack (5/15) — author page reference
+- Alex Banks Substack (4/15) — author page reference
+- Free year of Cursor, Google AI Pro, Notion, etc. (4/15) — promotional
+- The best way to code with AI (4/15) — blog intro, no substantive content
+- The real danger of AI hallucination (3/15) — low detail
+- The illusion of thinking (3/15) — low detail
+- The Gemini App now available on Mac OS (5/15) — platform availability, already covered
+- Claude for Word (5/15) — integration detail, low novelty

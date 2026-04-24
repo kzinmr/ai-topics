@@ -17,7 +17,11 @@ Last updated: 2026-04-24 (Dreaming: geo-strategy, model releases, agentic patter
 - [[regie-ai]] — AI-native sales engagement platform replacing Outreach/Salesloft
 - [[figma]] — Figma AI challenge: Claude Design competition, SaaS moat失效, per-head pricing collapse risk (2026-04-20)
 
-## Concept Pages (85)
+## Concept Pages (89)
+- [[concepts/sycophancy]] — Sycophancy in LLMs, truth-over-pleasing alignment artifacts, mitigation strategies
+- [[concepts/claude-code-routines]] — Scheduled and event-driven Claude Code automation (Anthropic research preview)
+- [[concepts/arc-agi-2]] — ARC-AGI-2 abstract reasoning benchmark (Gemini 3 Deep Think: 45.1%)
+- [[concepts/ai-criticism-politics]] — Political coding of anti-AI arguments as conservative despite progressive framing
 
 - [[context-graph]] — Decision traces as living records; five-plane enterprise AI architecture; three startup paths (2026-04-20)
 - [[openai-agents-sdk]] — OpenAI Agents SDK v0.14.0 (sandbox execution, harness/compute separation, manifests)

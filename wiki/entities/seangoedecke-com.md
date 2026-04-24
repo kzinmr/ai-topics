@@ -3,6 +3,9 @@ title: Sean Goedecke
 status: active
 tags:
 - person
+- ai-criticism
+- politics
+- ai-autonomy-debate
 ---
 
 # Sean Goedecke
@@ -155,6 +158,11 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 - **230,000+ unique visitors** in first year of blogging (per his retrospective post)
 - Self-published book distributed at cost, demonstrating commitment to idea-sharing over monetization
 - Regular podcast guest on engineering and AI topics
+
+## Recent Articles
+
+- **Many anti-AI arguments are conservative arguments** (2026-04-18): Argues that the substance of most anti-AI rhetoric aligns with conservative/right-wing worldviews despite being framed in progressive language. Political coding inversion analysis with implications for AI policy coalitions.
+
 
 ## Sources
 

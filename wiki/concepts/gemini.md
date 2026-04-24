@@ -1,7 +1,7 @@
 ---
 title: "Google Gemini"
 created: 2026-04-19
-updated: 2026-04-19
+updated: 2026-04-24
 tags: [concept, gemini, google, model, multimodal]
 aliases: ["gemini", "google gemini", "gemini 3", "gemini pro"]
 related:
@@ -62,6 +62,28 @@ Availability: Rolling out to Google AI Ultra subscribers after extended safety e
 - Increased prompt injection resistance
 - Enhanced protection against cyberattack misuse
 - Evaluated via Google's Frontier Safety Framework + independent assessments (UK AISI, Apollo, Vaultis, Dreadnode)
+
+## Gemini 3.1 Flash TTS (Apr 2026)
+
+Google's latest text-to-speech model, delivering improved controllability, expressivity, and quality for AI-speech applications.
+
+### Features
+
+- **Improved controllability**: More granular control over speech generation parameters
+- **Enhanced expressivity**: Better emotional range and natural prosody
+- **Higher quality**: Improved audio fidelity over previous TTS models
+- **Developer-friendly**: Designed for integration into next-generation AI speech applications
+
+### Availability
+
+Starting April 2026, 3.1 Flash TTS is available for developers, enterprises, and everyday users to build AI-speech applications. Part of Google's broader Gemini 3.1 family release.
+
+### Related Models
+
+- **Gemini 3.1 Flash**: Base multimodal model
+- **Lyria 3**: Google's music/song generation model
+- **Gemini 3.1 Pro**: Higher-capability variant
+
 
 ## Google Antigravity
 
