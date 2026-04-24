@@ -69,4 +69,4 @@ Gartner predicts that "By 2028, standardized agent communication protocols will 
 - [[agent-team-swarm]] — Multi-agent coordination patterns
 - [[multi-agent-orchestration-patterns]] — How protocols enable different orchestration styles
 - [[agentic-conflict-resolution]] — Protocol-level conflict detection and resolution
-- [[mcp]] — Model Context Protocol (detailed)
+-  — Model Context Protocol (detailed)

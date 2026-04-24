@@ -1,11 +1,13 @@
 ---
 title: "Cognition's Memory Tool — Copying Claude's Approach"
+type: concept
 status: draft
 created: 2026-04-13
 source: "https://www.shloked.com/writing/claude-memory-tool"
 author: "Shlok Khemani"
 tags: [cognition, devin, memory-tool, claude-code, competitive-analysis, context-management]
 related: [claude-memory, claude-code-source-patterns, agentic-engineering]
+sources: []
 ---
 
 # Why Cognition is Copying Claude's Memory Tool

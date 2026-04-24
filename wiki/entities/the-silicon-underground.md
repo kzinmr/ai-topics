@@ -1,8 +1,10 @@
 ---
 title: Dave Farquhar (The Silicon Underground)
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Dave Farquhar (The Silicon Underground)
@@ -118,11 +120,11 @@ Farquhar treats these companies with the same seriousness as Intel and Microsoft
 ## Related
 
 - [[The Silicon Underground Archives]] — Farquhar's 2,000+ post archive at dfarq.homeip.net
-- [[Homebrew Computer Club]] — the legendary Menlo Park hobbyist group Farquhar has extensively documented
-- [[Construction Physics]] — Brian Potter's newsletter; shares Farquhar's deep-dive approach to industrial history
+-  — the legendary Menlo Park hobbyist group Farquhar has extensively documented
+-  — Brian Potter's newsletter; shares Farquhar's deep-dive approach to industrial history
 - [[entities/tedium-the-dull-side-of-the-internet.md]] — Ernie Smith's newsletter; both cover forgotten technology stories with scholarly rigor
 - [[entities/bogdanthegeek-s-blog.md]] — Bogdan Ionescu's blog; shares Farquhar's hands-on approach to retro/embedded hardware
-- [[Retro Computing]] — the broader community Farquhar contributes to
+-  — the broader community Farquhar contributes to
 
 ## Sources
 

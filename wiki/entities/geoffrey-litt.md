@@ -1,5 +1,6 @@
 ---
 title: Geoffrey Litt
+type: entity
 handle: "@geoffreylitt"
 created: 2026-04-10
 updated: 2026-04-10
@@ -12,6 +13,7 @@ tags:
   - local-first
   - crdt
   - notion
+sources: []
 ---
 
 
@@ -150,7 +152,7 @@ In "Bring Your Own Client," Geoffrey explores how local-first software and malle
 - **Josh Horowitz** — Ink & Switch collaborator; co-author on the Malleable Software essay.
 - **Todd Matthews** — Ink & Switch collaborator; co-author on the Malleable Software essay.
 - **Daniel Jackson** — PhD advisor at MIT; known for work on software design and formal methods.
-- **[[Mark Saroufim]]** — Both interested in making AI tools more accessible and hackable for developers.
+- **** — Both interested in making AI tools more accessible and hackable for developers.
 - **Bret Victor / Dynamicland** — Geoffrey conducted experiments in Dynamicland's research environment exploring dynamic media.
 
 ## X Activity Themes

@@ -1,5 +1,6 @@
 ---
 title: "Building Effective Agents"
+type: concept
 aliases:
   - building-effective-agents
   - agent-design-patterns
@@ -90,4 +91,4 @@ command → plan → tool call → environment feedback → iterate → result
 
 - [[harness-engineering]] — 上位インデックス
 - [[context-engineering]] — コンテキスト管理
-- [[evals-for-ai-agents]] — エージェント評価
+- [[concepts/harness-engineering/system-architecture/evals-for-ai-agents.md]] — エージェント評価

@@ -1,8 +1,10 @@
 ---
 title: Terence Eden
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Terence Eden
@@ -194,10 +196,10 @@ Eden's response is typically pragmatic: file the FOI, get the data, publish the 
 [[FOAF]] — Friend of a Friend trust model Eden has analyzed
 [[Mastodon]] — Fediverse platform; Eden's bots interact with it via ActivityPub
 [[Web Accessibility]] — Eden treats as core technical requirement, not afterthought
-[[Open Source Licensing]] — Eden's 2014 critique of license proliferation
-[[Ofgem]] — UK energy regulator; Eden's FOI experience with historic data
+ — Eden's 2014 critique of license proliferation
+ — UK energy regulator; Eden's FOI experience with historic data
 Freedom of Information — Process Eden uses to access government data
-[[PHP]] — Language Eden uses for minimalist ActivityPub implementation
+ — Language Eden uses for minimalist ActivityPub implementation
 
 ---
 

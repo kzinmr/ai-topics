@@ -9,6 +9,7 @@ tags:
  - token-economics
  - microsoft
  - ai-services
+sources: []
 ---
 
 # GitHub Copilot Token-Based Billing Transition

@@ -1,9 +1,11 @@
 ---
 title: "Frontier Models Comparison — April 2026"
+type: comparison
 created: 2026-04-09
 updated: 2026-04-24
 tags: [comparison, llm, research]
 aliases: ["frontier-models-april-2026", "LLM landscape 2026-04"]
+sources: []
 ---
 
 # Frontier Models Comparison — April 2026
@@ -16,7 +18,7 @@ Comparison of leading AI models as of April 2026, based on analysis from Ethan M
 |------|------------------|-------|
 | **Tier 1 — Leading** | [[entities/google-tpu.md]], [[openai]], [[anthropic]] | Clear frontier leaders |
 | **Tier 2 — Catching Up** | [[meta]] (Muse Spark) | New entry, between Sonnet and Opus |
-| **Tier 3 — Falling Behind** | [[xai]] | Lost ground relative to leaders |
+| **Tier 3 — Falling Behind** |  | Lost ground relative to leaders |
 | **Tier 4 — 7-9 Months Behind** | Chinese models | Best Chinese models still lagging |
 
 ## Model Hierarchy (Apr 2026)
@@ -100,7 +102,7 @@ Available in Google AI Studio, Vertex AI, and Google Vids.
 > Meta has historically been known for open-sourcing models (LLaMA series). Community commentary suggests Muse Spark may not follow this pattern, but official open-source commitments have been made. Status TBD.
 
 ## Sources
-- [[raw/articles/substack.com--app-link-post--40004939.md]] (Ben's Bites, 2026-04-09)
+-  (Ben's Bites, 2026-04-09)
 - Ethan Mollick's frontier model state analysis (referenced in Ben's Bites)
 
 ## Related
@@ -111,4 +113,4 @@ Available in Google AI Studio, Vertex AI, and Google Vids.
 - [[project-glasswing]]
 - [[openai]]
 - [[entities/google-tpu.md]]
-- [[xai]]
+- 

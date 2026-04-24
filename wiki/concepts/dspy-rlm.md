@@ -1,5 +1,6 @@
 ---
 title: "DSPy.RLM"
+type: concept
 description: "Recursive Language Model — 大規模コンテキストをsandobx Python REPLでプログラム的に探索するDSPyモジュール"
 category: concepts
 sub_category: AI Agent Architectures

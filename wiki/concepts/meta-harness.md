@@ -1,9 +1,11 @@
 ---
 title: "Meta-Harness"
+type: concept
 created: 2026-04-09
 updated: 2026-04-09
 tags: [concept, harness-engineering, optimization, stanford, mit]
 related: [harness-engineering, automated-optimization, llm-systems]
+sources: []
 ---
 
 # Meta-Harness
@@ -58,11 +60,11 @@ Makes advanced harness techniques accessible without:
 - Model-specific tuning knowledge
 
 ## Sources
-- [[raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcGVulnn1ynn0ywnrlmnvbs9wdwivb--2fcf2557]] (NLP News coverage)
+-  (NLP News coverage)
 - Stanford/MIT research paper (2026)
 
 ## Related
 - [[harness-engineering]]
-- [[automated-optimization]]
-- [[llm-systems]]
-- [[context-management]]
+- 
+- 
+- 

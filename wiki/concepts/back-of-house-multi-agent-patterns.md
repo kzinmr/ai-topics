@@ -1,9 +1,11 @@
 ---
 title: Back of House Multi-Agent Patterns
+type: concept
 created: 2026-04-18
 updated: 2026-04-18
 tags: [multi-agent, coding-agents, orchestration, agentic-engineering]
 aliases: ["back-of-house", "kitchen metaphor", "head chef pattern"]
+sources: []
 ---
 
 # Back of House Multi-Agent Patterns
@@ -174,6 +176,6 @@ Codex Sparkのような高速コーディングモデルが利用可能になっ
 
 - [[single-agent-ceiling]] — 単一エージェントの限界と「Sloperator」アンチパターン
 - [[agent-team-swarm]] — マルチエージェントチームの階層的オーケストレーション
-- [[subagents]] — サブエージェントの委任パターン
-- [[concepts/agentic-engineering.md]] — エンジニアのエージェント活用方法论
-- [[raw/articles/milksandmatcha-0xsero-single-agent-nightmare-2026.md]] — Xスレッド (@MilksandMatcha)
+- [[concepts/harness-engineering/agentic-workflows/subagents.md]] — サブエージェントの委任パターン
+-  — エンジニアのエージェント活用方法论
+-  — Xスレッド (@MilksandMatcha)

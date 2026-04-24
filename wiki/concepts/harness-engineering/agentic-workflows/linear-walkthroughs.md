@@ -1,5 +1,6 @@
 ---
 title: "Linear Walkthroughs"
+type: concept
 aliases:
   - linear-walkthroughs
   - code-walkthrough
@@ -58,7 +59,7 @@ Vibe Coding → Linear Walkthrough で**学習機会に変換**できる。
 - [[showboat]] — Walkthrough生成に使用するドキュメンテーションツール
 - [[interactive-explanations]] — より直感的な理解手法（アニメーション）
 - [[vibe-coding]] — Walkthroughが必要になる主要シナリオ
-- [[agentic-engineering]] — 上位概念
+- [[concepts/harness-engineering/agentic-engineering.md]] — 上位概念
 
 ## 参照
 - [[simon-willison]] — パターン創始者

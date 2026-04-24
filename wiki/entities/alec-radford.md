@@ -1,5 +1,6 @@
 ---
 title: Alec Radford
+type: entity
 created: 2026-04-14
 updated: 2026-04-14
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': False}
@@ -10,6 +11,7 @@ tags:
   - whisper
   - clip
   - multimodal
+sources: []
 ---
 
 
@@ -167,8 +169,8 @@ His **non-traditional path** (no PhD, press-shy, experimentation-first) challeng
 - [[sam-altman]] — OpenAI CEO during Radford's tenure
 - [[greg-brockman]] — OpenAI co-founder; engineering leadership
 - [[karpathy]] — Fellow OpenAI researcher (overlapping tenure)
-- [[scaling-laws]] — Radford's work empirically validated these
-- [[multimodal-ai]] — CLIP and DALL-E were foundational
+-  — Radford's work empirically validated these
+-  — CLIP and DALL-E were foundational
 
 ## Sources
 

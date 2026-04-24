@@ -1,5 +1,6 @@
 ---
 title: Sankalp Sinha (dejavucoder)
+type: entity
 handle: "@dejavucoder"
 url: "http://sankalp.bearblog.dev/"
 twitter: "https://x.com/dejavucoder"
@@ -12,6 +13,7 @@ tags:
   - agent-os
   - claude-code
   - open-source
+sources: []
 ---
 
 
@@ -127,10 +129,10 @@ Sankalp's approach to AI engineering can be summarized as:
 
 - [[claude-code]] — Primary coding agent he uses and writes about
 - [[concepts/long-context-coding-agents.md]] — Focus area of his research and writing
-- [[agent-os]] — Open-source agent operating system he contributes to
+-  — Open-source agent operating system he contributes to
 - [[concepts/llm-evaluation-harness.md]] — Interest in measuring and improving AI system quality
-- [[ai-engineering]] — His professional focus
-- [[windsurf]] — AI coding tool he evaluates and discusses
+-  — His professional focus
+-  — AI coding tool he evaluates and discusses
 - [[entities/cursor-3.md]] — IDE he compares in his writing
 - [[teknium]] — Fellow open-source AI developer
 

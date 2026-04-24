@@ -1,5 +1,6 @@
 ---
 title: OpenClaw
+type: entity
 aliases: [openclaw, open-claw, peter-steinberger-openclaw]
 created: 2026-04-15
 updated: 2026-04-15

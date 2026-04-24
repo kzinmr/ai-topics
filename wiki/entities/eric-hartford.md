@@ -1,5 +1,6 @@
 ---
 title: Eric Hartford
+type: entity
 handle: "@QuixiAI"
 created: 2026-04-10
 updated: 2026-04-10
@@ -11,6 +12,7 @@ tags:
   - uncensored-models
   - huggingface
   - cognitive-computations
+sources: []
 ---
 
 
@@ -115,7 +117,7 @@ His work was **sponsored by a16z**, which provided compute resources for Dolphin
 - [[teknium]] — Fellow open-source AI researcher; collaborated on Dolphin datasets and models
 - [[georgi-gerganov]] — Creator of llama.cpp; Hartford's models are commonly used with Ggerganov's quantization ecosystem
 - [[peter-steinberger]] — Community figure in open-source AI tools; intersecting interests in local AI
-- [[hamel-husain]] — Open-source AI tooling advocate; shared community spaces
+- [[entities/hamel-husain.md]] — Open-source AI tooling advocate; shared community spaces
 - **Pankaj Mathur** — Microsoft researcher on the Orca paper that inspired Dolphin
 - **Wing "Caseus" Lian** — OpenAccess AI Collective; Dolphin collaborator
 - **Tom "TheBloke" Jobbins** — Quantized Dolphin models for community use

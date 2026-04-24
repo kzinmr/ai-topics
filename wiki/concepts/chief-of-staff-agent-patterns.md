@@ -1,10 +1,12 @@
 ---
 title: "Chief of Staff Agent Patterns"
+type: concept
 source: "https://platform.claude.com/cookbook/claude-agent-sdk-01-the-chief-of-staff-agent"
 status: active
 date: 2026-04-12
 tags: [claude-agent-sdk, orchestration, hooks, subagents, plan-mode, output-styles]
 related: [claude-agent-sdk-sre-patterns, managed-agents-sre-incident-response, context-engineering-primitives]
+sources: []
 ---
 
 # Chief of Staff Agent Patterns
@@ -195,5 +197,5 @@ Chief of Staff Agent (claude-opus-4-6)
 
 - [[claude-agent-sdk-sre-patterns]] — MCP integration and safety guardrails
 - [[managed-agents-sre-incident-response]] — Human-in-the-loop approval patterns
-- [[context-engineering-primitives]] — Managing long-running agent context
+-  — Managing long-running agent context
 - [[research-agent-fundamentals]] — Stateless vs stateful agent patterns

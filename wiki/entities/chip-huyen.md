@@ -1,8 +1,10 @@
 ---
 title: "Chip Huyen (@chipro)"
+type: entity
 status: active
 handle: "@chipro"
 tags: [person]
+sources: []
 ---
 
 
@@ -185,9 +187,9 @@ In a widely-discussed LinkedIn post (referenced in Lenny's Podcast), Huyen ident
 - [[Prompt Engineering]] — Treating prompts as an engineering discipline
 - [[Data Engineering for ML]] — Pipelines, labeling, weak supervision, and dataset curation
 - [[Stanford CS329S]] — Machine Learning Systems Design course
-- [[Snorkel AI]] — Weak supervision and data labeling platform
-- [[NVIDIA NeMo]] — ML framework for training and deploying AI models
-- [[Claypot AI]] — Real-time ML production pipeline startup
+-  — Weak supervision and data labeling platform
+-  — ML framework for training and deploying AI models
+-  — Real-time ML production pipeline startup
 
 ---
 

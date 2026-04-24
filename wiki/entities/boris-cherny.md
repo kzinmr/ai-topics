@@ -1,5 +1,6 @@
 ---
 title: Boris Cherny
+type: entity
 created: 2026-04-13
 updated: 2026-04-13
 tags:
@@ -12,6 +13,7 @@ tags:
   - typescript
   - anthropic
   - meta
+sources: []
 ---
 
 
@@ -282,10 +284,10 @@ This repo serves as a **reference implementation** for agentic engineering patte
 ## Related
 
 - [[harness-engineering]]
-- [[concepts/agentic-engineering.md]]
+- 
 - [[ryan-lopopolo]]
 - [[simon-willison]]
-- [[karpathy]]
+- [[concepts/karpathy.md]]
 
 ## Sources
 

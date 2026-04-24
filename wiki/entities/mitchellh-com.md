@@ -1,5 +1,6 @@
 ---
 title: Mitchell Hashimoto
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -12,6 +13,7 @@ tags:
 aliases:
 - mitchellh
 - mitchellh.com
+sources: []
 ---
 
 # Mitchell Hashimoto
@@ -70,9 +72,9 @@ Mitchell made Ghostty a non-profit organization, believing that terminal emulato
 ## Related
 
 - [[harness-engineering]] — Mitchell's methodology for preventing recurring agent mistakes
-- [[ghostty]] — Terminal emulator project, now non-profit
+-  — Terminal emulator project, now non-profit
 - [[agentic-engineering]] — Agent-first development workflows
-- [[hashicorp]] — Infrastructure-as-code company Mitchell co-founded
+-  — Infrastructure-as-code company Mitchell co-founded
 
 ## Sources
 

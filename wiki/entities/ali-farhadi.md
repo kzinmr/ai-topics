@@ -1,5 +1,6 @@
 ---
 title: Ali Farhadi
+type: entity
 entity_type: person
 status: L3
 created: 2026-04-13
@@ -164,6 +165,6 @@ His RAIVN Lab (Reasoning, AI, and VisioN) at UW, co-directed with Ranjay Krishna
 - [[olmo-open-language-model]] — Farhadi's flagship open LLM project at Ai2
 - [[open-model-consortium]] — Collaborative open-source AI model development
 - [[object-detection]] — YOLO and the real-time detection paradigm
-- [[embodied-ai]] — Agents that understand and interact with physical environments
-- [[ai-safety-through-transparency]] — Farhadi's distinctive safety approach
-- [[visual-commonsense-reasoning]] — Beyond recognition to understanding "why" and "what next"
+-  — Agents that understand and interact with physical environments
+-  — Farhadi's distinctive safety approach
+-  — Beyond recognition to understanding "why" and "what next"

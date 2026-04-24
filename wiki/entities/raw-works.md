@@ -1,12 +1,14 @@
 ---
 title: "Raymond Weitekamp (@raw_works)"
+type: entity
 created: 2026-04-21
 updated: 2026-04-21
 tags: [entity, person, rlm, dspy, reasoning-models, ml-research]
-status: skeleton
+status: complete
 website: https://raw.works
 handle: "@raw_works"
 related: [dspy, recursive-language-model, longcot, alex-zhang, stanford-nlp]
+sources: []
 ---
 
 # Raymond Weitekamp (@raw_works)
@@ -57,9 +59,9 @@ Published two foundational articles on RLMs:
 
 - [[alex-zhang]] — Original RLM paper author
 - [[dspy]] — DSPy framework (RLM reference implementation)
-- [[recursive-language-model]] — RLM concept page
-- [[raw/articles/raw-works-rlms-sota-on-longcot-2026-04-19.md]] — LongCoT benchmark
-- [[stanford-nlp]] — Omar Khattab's group, DSPy creators
+-  — RLM concept page
+-  — LongCoT benchmark
+-  — Omar Khattab's group, DSPy creators
 
 ## Sources
 

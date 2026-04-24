@@ -1,10 +1,12 @@
 ---
 title: "AI Privacy Tools"
+type: concept
 created: 2026-04-10
 updated: 2026-04-10
 tags: [concept, privacy, cors, browser-security, ai-agents, web-scraping]
 aliases: ["ai-privacy-techniques", "cors-bypass", "agent-browser-security"]
 related: [[claude-mythos-glasswing]], [[ai-agent-traps]], [[agent-sandboxing]], [[anthropic-managed-agents]]
+sources: []
 ---
 
 # AI Privacy Tools
@@ -149,7 +151,7 @@ This vulnerability pattern affects many local AI development tools that listen o
 - [[ai-agent-traps]] — Common pitfalls in agent deployment and design
 - [[agent-sandboxing]] — Isolation technologies for safe agent execution
 - [[anthropic-managed-agents]] — Managed agent services and their security approaches
-- [[concepts/agentic-engineering.md]] — The practice of directing AI agents in software development
+-  — The practice of directing AI agents in software development
 
 ## Sources
 

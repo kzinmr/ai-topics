@@ -1,5 +1,7 @@
 ---
 tags: [person]
+type: entity
+sources: []
 ---
 
 
@@ -166,9 +168,9 @@ Geerling's product reviews are distinguished by their willingness to deliver neg
 - [[Open Source Sustainability]] — His advocacy for addressing maintainer burnout
 - [[AI Code Quality]] — His critique of AI-generated code and its impact on open-source ecosystems
 - [[Local-First Computing]] — Running services on your own hardware, not in the cloud
-- [[Corporate Open Source]] — His analysis of the death of corporate-sponsored open-source licensing
-- [[Edge AI]] — Running AI inference on constrained hardware like Raspberry Pi and RISC-V
-- [[Project Mini Rack]] — His open-source compact homelab rack design
+-  — His analysis of the death of corporate-sponsored open-source licensing
+-  — Running AI inference on constrained hardware like Raspberry Pi and RISC-V
+-  — His open-source compact homelab rack design
 
 ## Influence Metrics
 

@@ -1,9 +1,11 @@
 ---
 title: "Prompt Caching Strategies"
+type: concept
 created: 2026-04-13
 source: "OpenAI Cookbook — Prompt caching patterns"
 tags: [caching, performance, cost-optimization]
 status: draft
+sources: []
 ---
 
 # Prompt Caching Strategies

@@ -1,5 +1,6 @@
 ---
 title: "Code Execution with MCP"
+type: concept
 aliases:
   - code-execution-mcp
   - code-mode
@@ -118,4 +119,4 @@ await salesforce.updateRecord({
 - [[harness-engineering]] — 上位インデックス
 - [[advanced-tool-use]] — 高度なツール使用（PTCと関連）
 - [[writing-tools-for-agents]] — エージェント用ツール設計
-- [[building-effective-agents]] — エージェント構築の基本原理
+- [[concepts/harness-engineering/system-architecture/building-effective-agents.md]] — エージェント構築の基本原理

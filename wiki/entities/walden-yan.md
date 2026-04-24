@@ -1,5 +1,6 @@
 ---
 title: Walden Yan
+type: entity
 related: [concepts/cognition-devin-philosophy, concepts/context-engineering, entities/scott-wu, entities/nader-dabit]
 sources:
   - https://cognition.ai/blog/dont-build-multi-agents

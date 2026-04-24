@@ -7,9 +7,9 @@ depth: "L2"
 related:
   - "[[yoshua-bengio]]"
   - "[[andrew-ng]]"
-  - "[[generative-adversarial-networks]]"
-  - "[[adversarial-machine-learning]]"
-  - "[[deep-learning-textbook]]"
+  - ""
+  - ""
+  - ""
 sources:
   - "https://grokipedia.com/page/Ian_Goodfellow"
   - "https://www.iansgoodfellow.com/"

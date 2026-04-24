@@ -1,5 +1,6 @@
 ---
 title: Mario Zechner
+type: entity
 handle: "@badlogicgames"
 created: 2026-04-10
 updated: 2026-04-10
@@ -12,6 +13,7 @@ tags:
   - open-source
   - systems-programming
   - kotlin
+sources: []
 ---
 
 
@@ -160,7 +162,7 @@ A ~400-line RAG chatbot that replicated the Austrian government's job informatio
 ## Related People
 
 - **[[will-mcgugan]]** — Both build terminal-based tools for developer productivity; McGugan's Rich/Textual/Toad and Zechner's pi-tui represent different approaches to the same problem space
-- **[[bryan-bischof]]** — Both skeptical of AI hype; Bischof's R.I.P. grep and Zechner's AMS replica critique represent complementary approaches to cutting through marketing claims
+- **[[entities/bryan-bischof.md]]** — Both skeptical of AI hype; Bischof's R.I.P. grep and Zechner's AMS replica critique represent complementary approaches to cutting through marketing claims
 - **Antirez (Salvatore Sanfilippo)** — Shared philosophy of minimalism and simplicity in systems design; both advocate for readable, understandable code over complex abstractions
 - **Georgi Gerganov** — Creator of llama.cpp; Zechner frequently references and builds on llama.cpp for local LLM inference
 - **André Staltz** — Fellow skeptic of protocol hype; Zechner's "What if you don't need MCP at all?" echoes Staltz's critique of over-engineered solutions

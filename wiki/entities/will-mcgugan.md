@@ -1,5 +1,6 @@
 ---
 title: Will McGugan
+type: entity
 handle: "@willmcgugan"
 created: 2026-04-10
 updated: 2026-04-10
@@ -13,6 +14,7 @@ tags:
   - terminal-ui
   - rich
   - textual
+sources: []
 ---
 
 
@@ -145,7 +147,7 @@ The business entity supporting McGugan's open-source work:
 
 ## Related People
 
-- **[[mario-zechner]]** — Both build terminal-based tools for developer productivity; Zechner's pi-tui and McGugan's Textual/Toad represent complementary approaches to terminal computing
+- **[[entities/mario-zechner.md]]** — Both build terminal-based tools for developer productivity; Zechner's pi-tui and McGugan's Textual/Toad represent complementary approaches to terminal computing
 - **[[simon-willison]]** — Fellow open-source developer and Python community figure; both build practical tools for developer workflows
 - **Textualize team** — Contributors and maintainers of Rich and Textual; community of developers building the Python TUI ecosystem
 - **Python community** — Rich and Textual are deeply embedded in Python's open-source ecosystem, with integration into popular tools like Jupyter, pytest, and pip

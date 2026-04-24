@@ -1,8 +1,10 @@
 ---
 title: John Gruber
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # John Gruber
@@ -145,9 +147,9 @@ Daring Fireball has operated as an independent publication for over two decades.
 - [[Apple]] — Primary subject of Gruber's commentary and criticism
 - [[Dan Abramov]] — Fellow influential tech blogger with a similar commitment to deep technical explanation
 - [[Ben Thompson]] — Author of Stratechery; often linked and discussed by Gruber on Apple strategy
-- [[Jason Snell]] — Publisher at Six Colors; collaborates with Gruber on annual Apple report cards
-- [[The Talk Show]] — Gruber's podcast with Dan Benjamin
-- [[Digital Markets Act]] — EU regulation affecting Apple's App Store policies, extensively covered by Gruber
+-  — Publisher at Six Colors; collaborates with Gruber on annual Apple report cards
+-  — Gruber's podcast with Dan Benjamin
+-  — EU regulation affecting Apple's App Store policies, extensively covered by Gruber
 
 ## Sources
 

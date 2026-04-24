@@ -1,5 +1,7 @@
 ---
 tags: [person]
+type: entity
+sources: []
 ---
 
 
@@ -140,9 +142,9 @@ The Watchdog Timer safety mechanism in his Game of Life build — forcing a rebo
 - [[Browser Security]] — Subject of *The Tangled Web* and years of research
 - [[Passive Reconnaissance]] — Subject of *Silence on the Wire*
 - [[AI Vulnerability Discovery]] — Big Sleep project and LLM-based bug finding
-- [[Practical Doomsday]] — His book on rational emergency preparedness
-- [[Mathematical Thinking]] — His approach to understanding systems from first principles
-- [[Human Authorship]] — His stance on AI-generated content and creative authenticity
+-  — His book on rational emergency preparedness
+-  — His approach to understanding systems from first principles
+-  — His stance on AI-generated content and creative authenticity
 
 ## Influence Metrics
 

@@ -1,5 +1,6 @@
 ---
 title: Scott Wu
+type: entity
 handle: "@ScottWu46"
 created: 2026-04-16
 updated: 2026-04-16
@@ -10,6 +11,7 @@ tags:
   - coding-agents
   - developer-tools
   - startups
+sources: []
 ---
 
 
@@ -150,7 +152,7 @@ The team is characterized by:
 
 ## See Also
 
-- [[devin]] — Devin AI software engineer product page
+-  — Devin AI software engineer product page
 - [[concepts/cognition-ai-data-analyst.md]] — Cognition AI company page
-- [[agentic-engineering]] — Simon Willison's framework that describes tools like Devin
+- [[concepts/harness-engineering/agentic-engineering.md]] — Simon Willison's framework that describes tools like Devin
 - [[harness-engineering]] — Ryan Lopopolo's structured automation approach (contrasts with Devin's autonomous model)

@@ -1,7 +1,7 @@
 ---
 title: "Sandro Puppo"
 type: person
-status: skeleton
+status: complete
 created: 2026-04-23
 updated: 2026-04-23
 tags:

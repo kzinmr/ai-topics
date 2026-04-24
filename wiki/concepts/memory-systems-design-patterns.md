@@ -1,5 +1,6 @@
 ---
 title: "Memory Systems Design Patterns — Anthropic vs OpenAI vs Cognition"
+type: concept
 status: draft
 created: 2026-04-13
 updated: 2026-04-13

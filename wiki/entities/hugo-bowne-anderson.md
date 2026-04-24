@@ -1,5 +1,6 @@
 ---
 title: "Hugo Bowne-Anderson"
+type: entity
 aliases: [hugobowne, Hugo Bowne Anderson]
 status: complete
 created: 2026-04-14
@@ -14,6 +15,7 @@ tags:
   - agentic-workflows
   - human-centered-ai
   - ai-education
+sources: []
 ---
 
 

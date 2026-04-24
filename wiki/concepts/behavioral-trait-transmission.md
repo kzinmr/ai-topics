@@ -1,5 +1,6 @@
 ---
 title: Subliminal Learning in Language Models
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags:
@@ -13,6 +14,7 @@ related:
 - trl-fine-tuning
 - ai-evals
 - gold-diff-distillation
+sources: []
 ---
 
 # Subliminal Learning in Language Models

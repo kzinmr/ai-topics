@@ -1,5 +1,6 @@
 ---
 title: Greg Brockman
+type: entity
 created: 2026-04-13
 updated: 2026-04-13
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
@@ -9,6 +10,7 @@ tags:
   - gpt
   - coding-agents
   - ai-infrastructure
+sources: []
 ---
 
 
@@ -157,7 +159,7 @@ Musk sued OpenAI, Altman, and Brockman (March 2024, refiled August 2024) allegin
 - [[sam-altman]] — OpenAI CEO; co-founder
 - [[ilya-sutskever]] — OpenAI co-founder; former Chief Scientist
 - [[openai]] — Company Brockman co-founded and leads technically
-- [[rlhf]] — Core alignment technique Brockman champions
+- [[concepts/rlhf.md]] — Core alignment technique Brockman champions
 - [[ai-safety]] — Engineering-focused safety approach
 
 ## Sources

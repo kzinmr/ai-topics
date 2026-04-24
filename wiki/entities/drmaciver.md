@@ -1,5 +1,6 @@
 ---
 title: David R. MacIver (DRMacIver)
+type: entity
 aliases: [drmaciver, david-maciver]
 created: 2026-04-14
 updated: 2026-04-14
@@ -247,15 +248,15 @@ His Substack "Overthinking Everything" is unified by a theme of **empirical curi
 
 ## Related Concepts
 
-- [[raw/articles/2026-04-15-property-based-testing-anthropic.md]] — His primary domain of expertise
+-  — His primary domain of expertise
 - [[ai-evals]] — Foundational LLM evaluations using PBT methodology
 - [[ai-evals-people]] — drmaciver, shreya-shankar, hamel-husain collaborate on eval frameworks
 - [[harness-engineering]] — Hegel as a test harness for multi-language PBT
 - [[concepts/agentic-engineering.md]] — AI-assisted coding with rigorous review practices
 - [[software-correctness]] — 100% coverage mandate, invariant testing
-- [[test-case-reduction]] — Shrinkray and minimizing failing examples
-- [[probabilistic-programming]] — Current work at Antithesis
-- [[llm-as-a-judge]] — Critiques of benchmark-based evaluation
+-  — Shrinkray and minimizing failing examples
+-  — Current work at Antithesis
+-  — Critiques of benchmark-based evaluation
 
 ## Influence Metrics
 

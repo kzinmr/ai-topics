@@ -1,12 +1,14 @@
 ---
 title: "Jarred Sumner"
+type: entity
 created: 2026-04-16
 updated: 2026-04-16
 tags: [person, developer-tools, javascript, bun, anthropic, ai-agents, infrastructure]
 aliases: ["jarred-sumner", "oven-sh"]
-related: [[concepts/sandbox/js-runtime.md]], [[ryan-dahl]]
+related: [[concepts/sandbox/js-runtime.md]], [[entities/ryan-dahl.md]]
 depth: L2
 status: complete
+sources: []
 ---
 
 # Jarred Sumner
@@ -97,7 +99,7 @@ Anthropic's acquisition of Bun/Oven is strategically significant:
 ## Related
 
 - [[concepts/sandbox/js-runtime.md]] — JS runtime comparison (Bun vs Deno vs Node.js)
-- [[ryan-dahl]] — Creator of Node.js and Deno; another JS runtime innovator
+- [[entities/ryan-dahl.md]] — Creator of Node.js and Deno; another JS runtime innovator
 
 ## Sources
 

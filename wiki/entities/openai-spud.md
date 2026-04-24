@@ -1,5 +1,6 @@
 ---
 title: OpenAI Spud
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -12,6 +13,7 @@ related:
 - gpt-5
 - gpt-6
 - soradiscontinuation
+sources: []
 ---
 
 # OpenAI Spud
@@ -48,5 +50,5 @@ Internal codename for OpenAI's next major language model (potentially GPT-6 or G
 - Competitive pressure from Anthropic Claude and Google Gemini driving urgency
 
 ## Sources
-- [[raw/articles/trendingtopics.eu--is-this-gpt-6-openai-bets-everything-on-new-model-spud--f17ba49f.md]]
+- 
 - The Information report (March 2026)

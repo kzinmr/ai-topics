@@ -12,6 +12,7 @@ tags:
 - hf-community
 source: x:@gm8xx8
 updated: 2026-04-14
+sources: []
 ---
 
 # gm8xx8 (@gm8xx8) — AI Paper Curator

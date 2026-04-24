@@ -1,9 +1,11 @@
 ---
 title: "Claude Code Source Leak"
+type: concept
 created: 2026-04-10
 updated: 2026-04-10
 tags: [concept, security, leak, anthropic, claude]
 related: [ai-security, open-source, anthropic]
+sources: []
 ---
 
 # Claude Code Source Leak
@@ -39,5 +41,5 @@ March 2026 incident where Anthropic's Claude Code source code was leaked via npm
 - Raises questions about proprietary vs open AI development
 
 ## Sources
-- [[raw/articles/theregister.com--2026-03-31-anthropic-claude-code-source-code--ba8c2ae1.md]]
-- [[raw/articles/kuber.studio--blog-ai-claude-code-s-entire-source-code-got-leaked-via-a-so--871ffae3.md]]
+- 
+- 

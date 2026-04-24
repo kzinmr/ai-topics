@@ -1,5 +1,6 @@
 ---
 title: 2026 AI Index Report
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags:
@@ -14,6 +15,7 @@ related:
 - compute-scaling-bottlenecks
 - ai-evals
 - chinese-ai
+sources: []
 ---
 
 # 2026 AI Index Report

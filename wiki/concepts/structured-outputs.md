@@ -5,14 +5,15 @@ tags: [llm, output-formatting, json, pydantic, reliability, type-safety, functio
 related:
   - [[pydantic]]
   - [[pydantic-ai]]
-  - [[guidance]]
-  - [[outlines]]
-  - [[samuel-colvin]]
+  - 
+  - 
+  - [[entities/samuel-colvin.md]]
   - [[jason-liu]]
   - [[rahul]]
 depth: L2
 status: complete
 created: 2026-04-15
+sources: []
 ---
 
 # Structured Outputs — Reliable LLM Output via Schema Validation
@@ -83,8 +84,8 @@ OpenAI now offers native structured output via `response_format` parameter, guar
 
 - [[pydantic]] — Foundation library
 - [[pydantic-ai]] — Agent-level structured outputs
-- [[guidance]] — Constrained decoding with regex/grammars
-- [[outlines]] — Grammar-constrained generation
+-  — Constrained decoding with regex/grammars
+-  — Grammar-constrained generation
 - [[jason-liu]] — Instructor creator
 - [[rahul]] — Guardrails AI / Jsonformer creator
-- [[samuel-colvin]] — Pydantic creator
+- [[entities/samuel-colvin.md]] — Pydantic creator

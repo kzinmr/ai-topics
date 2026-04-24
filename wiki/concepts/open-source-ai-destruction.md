@@ -1,5 +1,6 @@
 ---
 title: "Open Source AI Destruction"
+type: concept
 created: 2026-04-10
 updated: 2026-04-10
 sources:
@@ -8,7 +9,7 @@ sources:
   - "https://machineherald.io/article/2026-02/22-ai-generated-slop-is-overwhelming-open-source-projects-forcing-emergency-countermeasures"
 tags: [concept, open-source, ai-slop, maintainer-burnout, code-review-crisis, github]
 aliases: ["ai-slop-crisis", "open-source-maintainer-burnout", "ai-pr-flood"]
-related: [[gnu-ai-reimplementations]], [[ai-bubble-economics]], [[concepts/agentic-engineering.md]], [[automatic-programming]]
+related: [[gnu-ai-reimplementations]], [[ai-bubble-economics]], , 
 ---
 
 # Open Source AI Destruction
@@ -127,8 +128,8 @@ antirez sees AI reimplementations as democratizing and potentially rejuvenating 
 
 - [[gnu-ai-reimplementations]] — AI enabling clean-room reimplementations of existing software
 - [[ai-bubble-economics]] — The broader economic dynamics of the AI investment boom
-- [[concepts/agentic-engineering.md]] — Using AI agents as collaborative development partners
-- [[automatic-programming]] — Human-guided AI development (contrasted with passive vibe coding)
+-  — Using AI agents as collaborative development partners
+-  — Human-guided AI development (contrasted with passive vibe coding)
 
 ## Sources
 

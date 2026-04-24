@@ -1,5 +1,6 @@
 ---
 title: "Writing Effective Tools for AI Agents"
+type: concept
 aliases:
   - writing-tools-for-agents
   - tool-design-principles
@@ -146,4 +147,4 @@ enum ResponseFormat {
 - [[advanced-tool-use]] — 高度なツール使用
 - [[building-effective-agents]] — エージェント構築の基本原理
 - [[code-execution-with-mcp]] — MCPとのコード実行
-- [[evals-skills]] — 評価スキル
+- [[comparisons/evals-skills.md]] — 評価スキル

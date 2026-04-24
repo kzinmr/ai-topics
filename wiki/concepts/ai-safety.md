@@ -3,12 +3,13 @@ title: "AI Safety"
 type: concept
 tags: [ai-safety, alignment, rlhf, scalable-oversight, interpretability]
 related:
-  - [[rlhf]]
+  - [[concepts/rlhf.md]]
   - [[reasoning-models]]
-  - [[alignment-research]]
+  - 
 depth: L2
 status: complete
 created: 2026-04-19
+sources: []
 ---
 
 # AI Safety — Alignment, Oversight, and Interpretability
@@ -118,11 +119,11 @@ The exodus created two camps:
 - [[mira-murati]] — Safety-first advocate, former OpenAI CTO, Thinking Machines Lab co-founder
 - [[ilya-sutskever]] — Former OpenAI Chief Scientist, resigned over safety concerns
 - [[dario-amodei]] — Anthropic CEO, co-authored "Concrete Problems in AI Safety"
-- [[jan-leike]] — Former Superalignment co-head, resigned citing safety deprioritization
+-  — Former Superalignment co-head, resigned citing safety deprioritization
 
 ## Related Concepts
 
-- [[rlhf]] — Primary alignment technique
+- [[concepts/rlhf.md]] — Primary alignment technique
 - [[reasoning-models]] — Process supervision and step-by-step verification
 - [[ai-evals]] — Evaluation as a safety mechanism
 - [[harness-engineering]] — Constraining AI behavior through system design

@@ -1,3 +1,9 @@
+---
+title: "Entity Pages"
+type: entity
+sources: []
+---
+
 # Entity Pages
 
 People, companies, organizations, and projects in the AI ecosystem.
@@ -169,7 +175,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[entities/noetik]] — Noetik is a biotech AI company applying transformer models to oncology, specifically addressing the 95% clinical trial failure rate in cancer drug development. The company's core thesis: many "failed"
 - [[entities/nvidia-dgx-spark]] — Personal AI supercomputer powered by the NVIDIA GB10 Grace Blackwell Superchip. Designed for developers, data scientists, and researchers to prototype, fine-tune, and deploy AI models locally. Officia
 - [[entities/nvidia-nemoclaw]] — NVIDIA NemoClaw is a secure AI agent development framework designed for running AI agents with enterprise-grade isolation. It bundles OpenShell (sandbox runtime), OpenClaw (agent framework), a Privacy
-- [[entities/oldvcr-blogspot-com]] — Kaiser is the creator and maintainer of [[TenFourFox]] — the PowerPC-native Firefox fork that extended the usable life of aging Mac hardware long after Mozilla abandoned the platform. He has also cont
+- [[entities/oldvcr-blogspot-com]] — Kaiser is the creator and maintainer of  — the PowerPC-native Firefox fork that extended the usable life of aging Mac hardware long after Mozilla abandoned the platform. He has also cont
 - [[entities/omar-khattab]] — MIT EECS Assistant Professor. Creator of ColBERT (late interaction retrieval), DSPy (declarative LM programming), GEPA (genetic prompt optimization), and co-author of RLMs (Recursive Language Models). X: @lateinteraction
 - [[entities/openai-cua]] — OpenAIのCUA（Computer-Using Agent）モデルは、GPT-4oのビジョン機能と強化学習を組み合わせて、スクリーンショットを見てGUIを操作するエージェント。2025年1月に「Operator」として公開され、2025年7月にChatGPTエージェントに完全統合された。
 - [[entities/openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
@@ -203,7 +209,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[entities/seangoedecke-com]] — Sean Goedecke is an Australian software engineer who writes about AI's practical impact on software engineering, large tech company dynamics, and the structural forces shaping engineers' careers. He i
 - [[entities/sero]] — Sero (known online as 0xSero) is an open-source developer, AI infrastructure builder, and founder of Sybil Solutions. He operates at the intersection of AI agents, blockchain infrastructure, and devel
 - [[entities/sheshansh-agrawal]] — Sheshansh Agrawal is a search and retrieval researcher at the intersection of academic IR research and applied agentic AI. He currently serves as Director of Research at Contextual AI (Jun 2024–), whe
-- [[entities/shkspr-mobi]] — Eden blogs at [[shkspr.mobi]] — a minimalist, self-hosted site he has maintained for years — where he writes about technology policy, open-source sustainability, web accessibility, and the practical c
+- [[entities/shkspr-mobi]] — Eden blogs at  — a minimalist, self-hosted site he has maintained for years — where he writes about technology policy, open-source sustainability, web accessibility, and the practical c
 - [[entities/shlok-khemani]] — Writer and programmer based in Gurgaon, India. Currently researching personal AI and memory systems for AI agents. Previously at Decentralised.co, building products for the crypto space. Author of Ope
 - [[entities/shreya-shankar]] — Shreya Shankar is a PhD candidate at UC Berkeley EECS (advised by Aditya G. Parameswaran) and one of the most influential voices in AI evaluation methodology. Alongside Hamel Husain, she co-created th
 - [[entities/shunyu-yao]] — Shunyu Yao is one of the most influential researchers in the language agent space. His work spans from the foundational ReAct paradigm (2022) through Tree of Thoughts (2023), Reflexion (2023), CoALA (
@@ -241,4 +247,4 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[entities/yacine-mahdid]] — Yacine Mahdid is a software engineer and computational neuroscience researcher based in Ottawa, Canada. He works at a Canadian startup and has previously been affiliated with McGill University (Comput
 - [[entities/yann-lecun]] — フランス系アメリカ人コンピュータサイエンティスト。CNNの発明者、2018年チューリング賞受賞者。Meta元チーフAIサイエンティスト、NYU教授。
 - [[entities/zach-mueller]] — Zach Mueller is one of the most authoritative voices in distributed deep learning training within the open-source AI community. As the Technical Lead for Hugging Face Accelerate, he maintains the libr
-- [[entities/zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.
+- [[entities/zoox-expansion.md]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.

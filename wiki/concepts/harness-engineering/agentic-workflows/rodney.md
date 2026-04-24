@@ -1,5 +1,6 @@
 ---
 title: "Rodney — Browser Automation CLI for Agents"
+type: concept
 aliases:
   - rodney
   - rodney-cli
@@ -126,7 +127,7 @@ Rodneyのコマンドは**コンテキストウィンドウに優しい**:
 
 - [[showboat]] — テスト成果物の記録ツール（Rodneyと併用）
 - [[agentic-manual-testing]] — Rodneyの主要ユースケース
-- [[agentic-engineering]] — 上位概念
+- [[concepts/harness-engineering/agentic-engineering.md]] — 上位概念
 
 ## 参照
 

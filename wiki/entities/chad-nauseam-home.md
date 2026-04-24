@@ -1,5 +1,6 @@
 ---
 title: Chad Nauseam
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -15,6 +16,7 @@ aliases:
 - chadnauseam.com
 - chadnauseam
 - chad nauseam
+sources: []
 ---
 
 # Chad Nauseam
@@ -116,9 +118,9 @@ Chad's take on the open source sustainability crisis. He argues for organized, c
 ## Related
 
 - [[cats-with-power-tools]] — Both write about LLM experimentation and technical deep-dives
-- [[functional-programming]] — Side effects, monads, algebraic effects
-- [[rust-programming]] — Keep Rust Simple, trait system critique
-- [[open-source-sustainability]] — Programmer's association proposal
+-  — Side effects, monads, algebraic effects
+-  — Keep Rust Simple, trait system critique
+-  — Programmer's association proposal
 
 ## Sources
 

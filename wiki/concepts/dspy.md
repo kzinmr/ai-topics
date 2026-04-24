@@ -1,5 +1,6 @@
 ---
 title: DSPy — Declarative Self-improving Python for LMs
+type: concept
 description: DSPyはOmar Khattab率いるStanford NLPが開発した、LLMを「プロンプト」ではなく「最適化可能なモジュール」として宣言的にプログラミングするフレームワーク。Signature/Module/Teleprompterの抽象化により、手動プロンプトエンジニアリングをコンパイル時の自動最適化に変換する。
 aliases:
   - declarative-lm-programming
@@ -27,6 +28,7 @@ related:
   - langgraph
   - llamaindex
   - agentic-engineering
+sources: []
 ---
 
 # DSPy: Declarative Self-improving Language Systems
@@ -328,5 +330,5 @@ class Debate(dspy.Module):
 - [[omar-khattab]] — DSPyの創作者
 - [[gepa]] — 遺伝的プロンプト最適化（DSPy optimizerの進化系）
 - [[rlms]] — 再帰的言語モデル（DSPyとは異なる最適化アプローチ）
-- [[concepts/agentic-engineering.md]] — DSPyのエージェントパターン
-- [[colbert]] — DSPy以前のKhattabの検索フレームワーク
+-  — DSPyのエージェントパターン
+-  — DSPy以前のKhattabの検索フレームワーク

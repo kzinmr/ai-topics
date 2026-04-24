@@ -1,5 +1,6 @@
 ---
 name: "alex-banks"
+type: entity
 updated: 2026-04-10
 tags:
   - person
@@ -10,6 +11,7 @@ tags:
   - the-signal
   - uk
   - entrepreneur
+sources: []
 ---
 
 
@@ -121,9 +123,9 @@ Despite working in AI, Banks consistently returns to the human element:
 
 ## Related
 
-- [[the-signal]] — Alex Banks's weekly AI newsletter
-- [[datacamp]] — Platform where Banks teaches prompt engineering
-- [[harley]] — AI analytics startup founded by Banks
+-  — Alex Banks's weekly AI newsletter
+-  — Platform where Banks teaches prompt engineering
+-  — AI analytics startup founded by Banks
 - [[anthropic]] — Frequent coverage subject; Banks is an early adopter of Claude Skills
 - [[concepts/resilient-prompt-engineering.md]] — Banks's core expertise area
 

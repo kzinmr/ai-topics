@@ -1,5 +1,6 @@
 ---
 title: "Multi-Agent Consensus Patterns"
+type: concept
 created: 2026-04-19
 updated: 2026-04-19
 tags: [multi-agent, consensus, distributed-systems, orchestration, ai-agents]
@@ -163,7 +164,7 @@ q(t) = ⌈(n_live(t) + 1) / 2⌉
 - [[agent-team-swarm]] — マルチエージェントチームのオーケストレーション
 - [[harness-engineering]] — 単一エージェントの実行環境設計
 - [[openai-symphony]] — Ryan Lopopolo によるSymphonyプロジェクト
-- [[back-of-house-multi-agent-patterns]] — 厨房メタファーのマルチエージェントパターン
+- [[concepts/back-of-house-multi-agent-patterns.md]] — 厨房メタファーのマルチエージェントパターン
 
 ## ソース
 

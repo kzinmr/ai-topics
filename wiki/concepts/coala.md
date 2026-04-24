@@ -1,5 +1,6 @@
 ---
 title: "CoALA — Cognitive Architectures for Language Agents"
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags: [framework, cognitive-architecture, language-agents, memory, decision-making]
@@ -154,7 +155,7 @@ The **harness** is the engineering realization of CoALA's **decision procedure**
 
 - [[ungrounded-meaning]] — Why grounding requires external actions (theoretical justification for $\mathcal{A}_e$)
 - [[harness-engineering]] — Engineering practice for building agent controllers
-- [[agentic-engineering]] — Software development techniques using AI agents
+- [[concepts/harness-engineering/agentic-engineering.md]] — Software development techniques using AI agents
 - [[shunyu-yao]] — CoALA co-author (ReAct, Reflexion, SWE-bench)
 
 ## Sources

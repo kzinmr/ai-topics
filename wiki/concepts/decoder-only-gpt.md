@@ -1,5 +1,6 @@
 ---
 title: "Decoder-Only GPT Architecture"
+type: concept
 tags:
   - llm
   - transformer
@@ -10,6 +11,7 @@ tags:
   - karpathy
 status: active
 created: 2026-04-13
+sources: []
 ---
 
 # Decoder-Only GPT Architecture
@@ -269,11 +271,11 @@ Karpathy's progression of educational implementations:
 
 ## Related Concepts
 
-- [[software-2.0]] — Neural networks as programs
+-  — Neural networks as programs
 - [[vibe-coding]] — Natural language programming
-- [[concepts/agentic-engineering.md]] — Managing AI agents in parallel
+-  — Managing AI agents in parallel
 - [[local-llm]] — Running LLMs locally (nanochat, llm.c)
-- [[llm-education]] — Teaching LLMs from first principles
+-  — Teaching LLMs from first principles
 
 ## References
 

@@ -1,5 +1,6 @@
 ---
 title: Anthropic Computer Use
+type: entity
 aliases:
 - claude-computer-use
 - anthropic-cu

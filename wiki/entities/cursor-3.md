@@ -1,5 +1,6 @@
 ---
 title: Cursor 3
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -11,6 +12,7 @@ related:
 - coding-agents
 - ide-tools
 - agent-workflows
+sources: []
 ---
 
 # Cursor 3
@@ -51,5 +53,5 @@ Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified 
 - Enables continuous agent-assisted development
 
 ## Sources
-- [[raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9ubHAuZWx2aXNzYXJhdmlhLmNvbS9wdWJsaWMtc--...]]
+- 
 - Cursor blog announcement

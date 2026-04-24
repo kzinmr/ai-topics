@@ -1,5 +1,6 @@
 ---
 title: "Model Quantization for Local LLMs"
+type: concept
 aliases: [quantization, llm-quantization, k-quants, i-quants, gptq, awq, exl2, fp8]
 created: 2026-04-15
 updated: 2026-04-15
@@ -17,7 +18,8 @@ related:
 - "[[concepts/inference/vllm.md]]"
 - "[[georgi-gerganov]]"
   - "[[nvidia-dgx-spark]]"
-  - "[[llm-inference]]"
+  - ""
+sources: []
 ---
 
 # Model Quantization for Local LLMs
@@ -149,7 +151,7 @@ The **Unsloth** and **llama.cpp** ecosystems have made step 3 nearly automated �
 - [[local-llm]] — llama.cpp inference engine
 - [[georgi-gerganov]] — GGUF/K-Quants creator
 - [[nvidia-dgx-spark]] — Hardware supporting NVFP4/FP4
-- [[llm-inference]] — Inference optimization techniques
+-  — Inference optimization techniques
 
 ## Sources
 

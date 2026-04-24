@@ -1,9 +1,11 @@
 ---
 title: "Long-Context via Coding Agents"
+type: concept
 created: 2026-04-09
 updated: 2026-04-09
 tags: [concept, long-context, coding-agents, file-system]
 related: [coding-agents, context-windows, retrieval-augmented-generation]
+sources: []
 ---
 
 # Long-Context via Coding Agents
@@ -43,11 +45,11 @@ Instead of scaling context windows, let coding agents:
 - Retrieval-augmented generation with massive corpora
 
 ## Sources
-- [[raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcGVulnn1ynn0ywnrlmnvbs9wdwivb--2fcf2557]] (NLP News coverage)
+-  (NLP News coverage)
 - Research paper (2026)
 
 ## Related
 - [[concepts/long-context-coding-agents.md]]
-- [[context-windows]]
-- [[retrieval-augmented-generation]]
-- [[file-system-organization]]
+- 
+- 
+- 

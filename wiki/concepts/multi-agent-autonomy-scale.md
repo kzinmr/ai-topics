@@ -1,9 +1,11 @@
 ---
 title: "Multi-Agent Autonomy Scale"
+type: concept
 created: 2026-04-09
 updated: 2026-04-09
 tags: [concept, multi-agent, autonomy, coordination]
 related: [multi-agent-systems, emergent-behavior, agent-coordination]
+sources: []
 ---
 
 # Multi-Agent Autonomy Scale
@@ -55,11 +57,11 @@ Research testing how much autonomy multi-agent LLM systems can sustain at unprec
 - 24x cost reduction possible without quality loss
 
 ## Sources
-- [[raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcGVulnn1ynn0ywnrlmnvbs9wdwivb--2fcf2557]] (NLP News coverage)
+-  (NLP News coverage)
 - Research paper (2026)
 
 ## Related
-- [[multi-agent-systems]]
-- [[emergent-behavior]]
-- [[agent-coordination]]
+- 
+- 
+- 
 - [[caid-coordination]]

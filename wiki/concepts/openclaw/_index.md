@@ -1,5 +1,6 @@
 ---
 title: "OpenClaw — Concepts Index"
+type: concept
 aliases:
   - openclaw-concepts
   - openclaw-index
@@ -14,6 +15,7 @@ tags:
   - personal-agents
   - peter-steinberger
 status: active
+sources: []
 ---
 
 # OpenClaw — コンセプト集約

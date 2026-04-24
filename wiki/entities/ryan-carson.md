@@ -1,5 +1,6 @@
 ---
 title: Ryan Carson
+type: entity
 handle: "@ryancarson"
 created: 2026-04-10
 updated: 2026-04-10
@@ -10,6 +11,7 @@ tags:
   - tech-education
   - ai
   - entrepreneurship
+sources: []
 ---
 
 
@@ -105,7 +107,7 @@ Carson has contributed to and advocated for numerous open-source projects throug
 
 ## Related People
 
-- **[[charles-frye]]** — Fellow educator in the tech/AI space; both advocate for accessible, practical learning over theoretical abstraction
+- **[[entities/charles-frye.md]]** — Fellow educator in the tech/AI space; both advocate for accessible, practical learning over theoretical abstraction
 - **[[simon-willison]]** — Open-source developer and educator; shares Carson's belief in democratizing technical knowledge
 - **Zed Shaw** — Creator of Learn Python the Hard Way; another pioneer in affordable, accessible tech education
 - **Udemy/Pluralsight founders** — Competitors in the online education space, though Carson's approach emphasized affordability and accessibility over premium pricing

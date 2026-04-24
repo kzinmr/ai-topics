@@ -1,8 +1,10 @@
 ---
 title: Salvatore Sanfilippo (antirez)
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Salvatore Sanfilippo (antirez)
@@ -138,9 +140,9 @@ Sanfilippo crafts his own data structures (SDS for strings, Rax for radix trees)
 - [[Software Simplicity]] — His core design philosophy
 - [[AI-Assisted Development]] — His nuanced position on LLMs as programming partners
 - [[Open Source Licensing]] — His pragmatic view of sustainability and community
-- [[Data Structure Design]] — SDS, Rax, and the philosophy of building from first principles
-- [[Comment-Driven Development]] — Using documentation as an analytical tool
-- [[Vibe Coding vs. Automatic Programming]] — His distinction between passive and active AI-assisted coding
+-  — SDS, Rax, and the philosophy of building from first principles
+-  — Using documentation as an analytical tool
+-  — His distinction between passive and active AI-assisted coding
 
 ## Influence Metrics
 

@@ -1,5 +1,6 @@
 ---
 title: Varun Trivedy
+type: entity
 handle: "@Vtrivedy10"
 created: 2026-04-10
 updated: 2026-04-10
@@ -12,6 +13,7 @@ tags:
   - harness-engineering
   - evals
   - open-source
+sources: []
 ---
 
 
@@ -155,9 +157,9 @@ In "How we build evals for Deep Agents" (Mar 2026, co-authored with Sydney Runkl
 ## Related People
 
 - **[[philipp-schmid]]** — Both write about agent harnesses and evaluation; Schmid's "2026 will be around Agent Harnesses" post echoes Trivedy's framing
-- **[[harrison-chase]]** — Co-author on Deep Agents evals post; CEO of LangChain
-- **[[sydney-runkle]]** — Co-author on multi-agent applications and Deep Agents blog posts at LangChain
-- **[[florian-brand]]** — Complementary work on RL training infrastructure and benchmark evaluation
+- **** — Co-author on Deep Agents evals post; CEO of LangChain
+- **** — Co-author on multi-agent applications and Deep Agents blog posts at LangChain
+- **[[entities/florian-brand.md]]** — Complementary work on RL training infrastructure and benchmark evaluation
 
 ## X Activity Themes
 

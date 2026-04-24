@@ -1,5 +1,7 @@
 ---
 tags: [person]
+type: entity
+sources: []
 ---
 
 
@@ -107,9 +109,9 @@ Mahdid's recent contributions to tscircuit/tscircuit-autorouter (open-source PCB
 - [[scribepod]] — Automated AI podcast generation (174 stars)
 - [[llm.nvim]] — No-frills LLM-assisted programming (24 stars)
 - [[AI-Assisted Development]] — The broader category of tools Mahdid contributes to
-- [[Open Source Hardware]] — tscircuit and dingcad projects
-- [[Computational Neuroscience]] — Mahdid's research background at McGill
-- [[Code as Medium]] — The philosophy underlying talk and dingcad
+-  — tscircuit and dingcad projects
+-  — Mahdid's research background at McGill
+-  — The philosophy underlying talk and dingcad
 
 ## Influence Metrics
 

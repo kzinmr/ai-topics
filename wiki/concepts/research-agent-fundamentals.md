@@ -1,10 +1,12 @@
 ---
 title: "Research Agent Fundamentals"
+type: concept
 source: "https://platform.claude.com/cookbook/claude-agent-sdk-00-the-one-liner-research-agent"
 status: active
 date: 2026-04-12
 tags: [claude-agent-sdk, research, stateless, stateful, web-search]
 related: [claude-agent-sdk-sre-patterns, chief-of-staff-agent-patterns, managed-agents-sre-incident-response]
+sources: []
 ---
 
 # Research Agent Fundamentals

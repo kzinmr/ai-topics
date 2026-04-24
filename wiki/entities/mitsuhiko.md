@@ -1,5 +1,6 @@
 ---
 title: Armin Ronacher (mitsuhiko)
+type: entity
 handle: "@mitsuhiko"
 url: "https://lucumr.pocoo.org"
 twitter: "https://x.com/mitsuhiko"
@@ -12,6 +13,7 @@ tags:
   - open-source
   - ai-criticism
   - agent-orchestration
+sources: []
 ---
 
 
@@ -138,11 +140,11 @@ In his most recent writing, Armin has been defending the irreplaceable value of 
 - [[Jinja2]] — Dominant Python template engine
 - [[Werkzeug]] — WSGI toolkit underlying most Python web frameworks
 - [[Pallets]] — The ecosystem of projects he maintains
-- [[raw/articles/crawl-2026-04-21-shuvendu-intent-formalization.md]] — Fast Python package installer, his latest systems tool
+-  — Fast Python package installer, his latest systems tool
 - [[Polecats]] — AI agent orchestration framework with human oversight
-- [[AI Code Quality]] — His critique of AI-generated code
-- [[Python Packaging]] — His work on fixing Python's toolchain
-- [[Open Source Maintenance]] — His perspective on maintainer burden
+-  — His critique of AI-generated code
+-  — His work on fixing Python's toolchain
+-  — His perspective on maintainer burden
 
 ## Influence Metrics
 

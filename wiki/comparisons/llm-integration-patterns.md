@@ -1,5 +1,6 @@
 ---
 title: LLM Integration Patterns — A Comparative Taxonomy
+type: comparison
 description: LLMをシステムに統合する主要なアプローチの分類と比較。Orchestration, Declarative Programming, Recursive Execution, Agentic Workflows, Genetic Optimizationの5つのパラダイムを、制御構造、最適化タイミング、コンテキスト管理、適用シナリオの観点から相対化する。
 aliases:
   - llm-system-integration-patterns
@@ -24,6 +25,7 @@ related:
   - langchain
   - langgraph
   - llamaindex
+sources: []
 ---
 
 # LLM Integration Patterns: A Comparative Taxonomy
@@ -281,7 +283,7 @@ DSPy、RLMs、GEPAの共通点は、**特定のプロンプト文本体に依存
 - [[dspy]] — 宣言的LMプログラミング
 - [[rlms]] — 再帰的言語モデル
 - [[gepa]] — 遺伝的プロンプト最適化
-- [[concepts/agentic-engineering.md]] — エージェントワークフローパターン
+-  — エージェントワークフローパターン
 - [[omar-khattab]] — DSPy/GEPA/RLMsの創作者
 - [[alex-zhang]] — RLMsの第一著者
-- [[colbert]] — 検索のlate interactionパラダイム
+-  — 検索のlate interactionパラダイム

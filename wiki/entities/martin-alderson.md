@@ -1,5 +1,6 @@
 ---
 title: Martin Alderson
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -11,6 +12,7 @@ tags:
   - developer-tools
   - economics
   - startup
+sources: []
 ---
 
 
@@ -99,9 +101,9 @@ Martin wrote about Anthropic's red team finding **500+ critical vulnerabilities*
 ## Related
 
 - [[ai-economics]] — Martin's analysis of AI cost structures and compute constraints
-- [[saas-disruption]] — The "$285 billion markdown files" thesis
-- [[agent-bifurcation]] — Two kinds of AI users
-- [[supply-chain-security]] — Open source vulnerability cascades
+-  — The "$285 billion markdown files" thesis
+-  — Two kinds of AI users
+-  — Open source vulnerability cascades
 - [[anthropic]] — Claude Code, Cowork, and the knowledge-work-plugin
 
 ## Sources

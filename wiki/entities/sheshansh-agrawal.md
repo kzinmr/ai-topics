@@ -1,5 +1,6 @@
 ---
 title: Sheshansh Agrawal
+type: entity
 created: 2026-04-17
 updated: 2026-04-17
 tags:
@@ -21,6 +22,7 @@ related:
   - contextual-ai
   - microsoft-research
   - iit-bombay
+sources: []
 ---
 
 
@@ -203,11 +205,11 @@ As Director of Research, leads work on:
 
 - [[agentic-retrieval]] — Agentic search and retrieval patterns
 - [[agentic-alternative-to-graphrag]] — GraphRAG alternative via metadata search
-- [[cer-c-metric]] — Cumulative Evidence Recall metric
-- [[rerankers]] — Reranking in retrieval pipelines
+-  — Cumulative Evidence Recall metric
+-  — Reranking in retrieval pipelines
 - [[doug-turnbull]] — Search relevance engineering perspective
 - [[lester-solbakken]] — Search infrastructure perspective
-- [[contextual-ai]] — Contextual AI company
+-  — Contextual AI company
 
 ## Sources
 

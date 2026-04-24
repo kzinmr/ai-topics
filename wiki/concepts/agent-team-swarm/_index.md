@@ -1,3 +1,9 @@
+---
+title: "Agent Team / Swarm"
+type: concept
+sources: []
+---
+
 # Agent Team / Swarm
 
 **Agent Team (Swarm)** は、単一のAI Agentがタスクを遂行するのではなく、複数のAgentが協調・分担して複雑なワークフローを自律的に実行するアーキテクチャパターン。

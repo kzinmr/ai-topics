@@ -1,5 +1,6 @@
 ---
 title: "Five-Tier Skill Precedence"
+type: concept
 aliases:
   - skill-precedence
   - openclaw-skill-governance

@@ -6,10 +6,11 @@ related:
   - [[logfire]]
   - [[pydantic-ai]]
   - [[samuel-colvin]]
-  - [[david-cramer]]
+  - 
 depth: L2
 status: complete
 created: 2026-04-15
+sources: []
 ---
 
 # AI Observability — Monitoring and Debugging LLM Applications
@@ -83,4 +84,4 @@ Logfire's tracing shows the full delegation chain, essential for debugging compl
 - [[pydantic-ai]] — Framework with built-in observability
 - [[harness-engineering]] — Observability as feedback loop
 - [[samuel-colvin]] — Logfire creator
-- [[david-cramer]] — Sentry founder, angel investor in Pydantic
+-  — Sentry founder, angel investor in Pydantic

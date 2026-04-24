@@ -1,5 +1,6 @@
 ---
 title: TeortaxesTex
+type: entity
 url: "https://aguea.net/teortaxesTex"
 twitter: "https://x.com/teortaxesTex"
 created: 2026-04-18
@@ -10,6 +11,7 @@ tags:
   - x-account
   - ai-observer
   - china-watch
+sources: []
 ---
 
 # TeortaxesTex
@@ -81,7 +83,7 @@ Known for dense, analytical tweets combining geopolitical observation, tech indu
 - [[jensen-huang]] — Subject of Teortaxes' steelmanning analysis
 - [[dwarkesh-patel]] — Compared against Jensen as contrasting epistemic archetype
 - [[tailcalled]] — Creator of the Causal Backbone Conjecture
-- [[china-ai-ecosystem]] — Teortaxes provides unique China-side analysis
+-  — Teortaxes provides unique China-side analysis
 - [[ai-bubble-economics]] — Commentary on compute demand, energy, and geopolitics
 
 ## Sources

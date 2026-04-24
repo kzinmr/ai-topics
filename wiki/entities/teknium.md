@@ -1,5 +1,6 @@
 ---
 title: Ryan (Teknium)
+type: entity
 handle: "@teknium1"
 url: "https://teknium.io/"
 twitter: "https://x.com/Teknium1"
@@ -19,6 +20,7 @@ tags:
   - hermes-agent
   - harness-engineering
   - decentralized-ai
+sources: []
 ---
 
 
@@ -183,10 +185,10 @@ Nous Research's decentralized training infrastructure (DiStrO) and Psyche Networ
 - [[hermes-models]] — Lead architect of Hermes 2/3/4
 - [[hermes-agent]] — Creator and lead maintainer (68K+ stars)
 - [[post-training]] — His primary area of expertise
-- [[synthetic-data]] — DataForge, GPTeacher, custom pipelines
-- [[rl-fine-tuning]] — Atropos RL environments
+-  — DataForge, GPTeacher, custom pipelines
+-  — Atropos RL environments
 - [[harness-engineering]] — CLI/terminal-use harnessing philosophy
-- [[decentralized-ai]] — Nous Research ethos, DiStrO, Psyche Network
+-  — Nous Research ethos, DiStrO, Psyche Network
 - [[concepts/open-source-ai-destruction.md]] — Advocate for open-weight models and transparent development
 - [[concepts/fine-tuning/rlhf-dpo-preference.md]] — Direct Preference Optimization for Hermes 3 alignment
 - [[sero]] — Fellow open-source AI developer and ElizaOS contributor

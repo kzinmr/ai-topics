@@ -1,9 +1,11 @@
 ---
 title: "CAID (Centralized Asynchronous Isolated Delegation)"
+type: concept
 created: 2026-04-09
 updated: 2026-04-09
 tags: [concept, multi-agent, coding, cmu, coordination]
 related: [multi-agent-systems, coding-agents, parallelism]
+sources: []
 ---
 
 # CAID (Centralized Asynchronous Isolated Delegation)
@@ -49,11 +51,11 @@ Primary coordination failures:
 - Beyond 4 agents without improved coordination strategy
 
 ## Sources
-- [[raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcGVulnn1ynn0ywnrlmnvbs9wdwivb--2fcf2557]] (NLP News coverage)
+-  (NLP News coverage)
 - CMU research paper (2026)
 
 ## Related
-- [[multi-agent-systems]]
+- 
 - [[concepts/long-context-coding-agents.md]]
 - [[harness-engineering]]
-- [[symphony-orchestration]]
+- 

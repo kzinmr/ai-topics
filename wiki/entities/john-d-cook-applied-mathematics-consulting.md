@@ -1,5 +1,6 @@
 ---
 title: John D. Cook
+type: entity
 created: 2026-04-09
 updated: 2026-04-19
 tags:
@@ -14,6 +15,7 @@ tags:
 aliases:
 - johndcook.com
 - john-d-cook-applied-mathematics-consulting
+sources: []
 ---
 
 # John D. Cook
@@ -99,9 +101,9 @@ The common thread is **curiosity-driven mathematical exploration**. He finds som
 ## Related
 
 - [[formal-methods]] — Proving correctness properties for critical systems
-- [[ai-reliability]] — The correctness conundrum in AI systems
-- [[data-privacy]] — HIPAA expert determination and differential privacy
-- [[terence-tao]] — Mathematician whose work intersects with Cook's analysis of AI-assisted discovery
+-  — The correctness conundrum in AI systems
+-  — HIPAA expert determination and differential privacy
+-  — Mathematician whose work intersects with Cook's analysis of AI-assisted discovery
 
 ## Sources
 

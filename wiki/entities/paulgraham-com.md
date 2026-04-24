@@ -1,5 +1,6 @@
 ---
 title: Paul Graham
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -13,6 +14,7 @@ tags:
 aliases:
 - paulgraham.com
 - pg
+sources: []
 ---
 
 # Paul Graham
@@ -193,10 +195,10 @@ Graham's recent work reflects the transition from a **software-eats-the-world** 
 - [[superlinear-returns]] — Graham's framework for understanding outsized outcomes
 - [[founder-mode]] — Anti-managerial thesis for startup leadership
 - [[the-brand-age]] — Identity as competitive moat in commoditized markets
-- [[independent-mindedness]] — The cognitive trait that enables breakthrough work
-- [[curiosity-driven-research]] — Following interest over strategic calculation
+-  — The cognitive trait that enables breakthrough work
+-  — Following interest over strategic calculation
 - [[harness-engineering]] — Systems thinking approach to preventing recurring failures (Aaron Swartz connection)
-- [[concepts/agentic-engineering.md]] — Agent-first development workflows
+-  — Agent-first development workflows
 
 ### Influences and Connections
 

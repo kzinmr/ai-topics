@@ -1,5 +1,6 @@
 ---
 title: "Hierarchy to Intelligence — Blockの組織モデル変革"
+type: concept
 aliases:
   - block-hierarchy-to-intelligence
   - jack-dorsey-org-model
@@ -17,6 +18,7 @@ status: draft
 depth_tracking:
   target: 10KB+
   current: ~10KB
+sources: []
 ---
 
 # Hierarchy to Intelligence — Blockの組織モデル変革
@@ -118,8 +120,8 @@ Blockが構築した2つのワールドモデル:
 ## 関連概念
 
 - [[ai-org-context-as-moat]] — Proprietary ContextとFission-Fusion
-- [[ai-org-solo-founder-and-super-ic]] — Solo FounderとSuper IC
-- [[concepts/agentic-engineering.md]] — 開発者のAI活用ワークフロー
+- [[concepts/ai-organization/ai-org-solo-founder-and-super-ic.md]] — Solo FounderとSuper IC
+-  — 開発者のAI活用ワークフロー
 - [[harness-engineering]] — エージェントの制御・構造化
 - [[context-engineering]] — コンテキストエンジニアリング
 

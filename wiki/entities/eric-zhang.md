@@ -1,11 +1,13 @@
 ---
 title: Eric Zhang
+type: entity
 created: 2025-11-17 16:10:46
 updated: 2026-04-10 10:00:00
 aliases: [ekzhang, Eric Zhang]
 status: active
 description: "Systems hacker and designer. Creator of bore, sshx, rustpad, and Percival. Former founding engineer at Modal, now at Thinking Machines Lab."
 tags: [person]
+sources: []
 ---
 
 
@@ -183,9 +185,9 @@ Photorealistic path tracer for rendering 3D scenes. Won top project out of 100 s
 - [[Rust Programming]] — His primary systems language
 - [[Firecracker]] — Lightweight hypervisor used in ssh-hypervisor
 - [[Datalog]] — Logic programming language used in Percival
-- [[Computer Graphics]] — Domain of graphics-workshop and rpt
-- [[Collaborative Editing]] — rustpad, sshx, Percival
-- [[Harvard University]] — His alma mater
+-  — Domain of graphics-workshop and rpt
+-  — rustpad, sshx, Percival
+-  — His alma mater
 
 ## Sources
 

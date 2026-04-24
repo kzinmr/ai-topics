@@ -1,5 +1,6 @@
 ---
 title: Anil Dash
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -9,6 +10,7 @@ tags:
   - ai-policy
   - web-culture
   - coding
+sources: []
 ---
 
 
@@ -115,9 +117,9 @@ Building on his coding agents thesis, Anil envisions:
 - [[agentic-engineering]] — The practice of orchestrating AI systems to produce software
 - [[vibe-coding]] — AI-assisted coding using natural language prompts
 - [[codeless-software]] — Software created without direct code writing
-- [[simonwillison-net]] — Fellow AI commentator; coined "agentic engineering"
-- [[mike-masnick]] — Tech policy writer; discussed AI as potential enabler of open web resurgence
-- [[enshittification]] — Cory Doctorow's theory of platform decay; relevant to Anil's tech industry critique
+-  — Fellow AI commentator; coined "agentic engineering"
+-  — Tech policy writer; discussed AI as potential enabler of open web resurgence
+-  — Cory Doctorow's theory of platform decay; relevant to Anil's tech industry critique
 
 ## Sources
 

@@ -1,5 +1,6 @@
 ---
 title: Tom Renner
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -9,6 +10,7 @@ tags:
   - leadership
   - ethics
   - team-culture
+sources: []
 ---
 
 
@@ -167,9 +169,9 @@ This is not Luddism — it's **technological skepticism grounded in engineering 
 
 - [[terrible-software.md]] — Human-centered approach to software engineering
 - [[seangoedecke-com.md]] — Software engineering writing and team dynamics
-- [[bradford-morgan-white.md]] — Systems thinking and ethical technology
-- [[ai-agent-traps.md]] — Critical analysis of AI limitations
-- [[scaling-without-slop.md]] — Quality-focused engineering culture
+-  — Systems thinking and ethical technology
+-  — Critical analysis of AI limitations
+-  — Quality-focused engineering culture
 
 ## Sources
 

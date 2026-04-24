@@ -1,5 +1,6 @@
 ---
 title: Mistral Voxtral TTS
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -14,6 +15,7 @@ related:
 - text-to-speech
 - audio-models
 - flow-matching
+sources: []
 ---
 
 # Mistral Voxtral TTS
@@ -89,5 +91,5 @@ Mistral AI's open-weights text-to-speech model, announced April 2026. Combines a
 - Part of Mistral's open AI mission
 
 ## Sources
-- [[raw/articles/substack.com--app-link-post--7e552b79.md]]
+- 
 - Latent Space Podcast with Guillaume Lample & Pavan Kumar Reddy

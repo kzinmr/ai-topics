@@ -1,5 +1,6 @@
 ---
 title: Jensen Huang
+type: entity
 url: "https://www.nvidia.com/"
 twitter: "https://x.com/JensenHuangNVIDIA"
 status: active
@@ -11,6 +12,7 @@ tags:
   - inference-hardware
   - ai-infrastructure
   - ai-bubble-economics
+sources: []
 ---
 
 # Jensen Huang
@@ -200,7 +202,7 @@ Comprehensive 1:43 interview covering:
 - [[dwarkesh-patel]] — Interviewed Jensen for 1:43 episode (April 2026); subject of TeortaxesTex epistemic gap analysis
 - [[teortaxestex]] — Published steelmanning analysis of Jensen vs. Dwarkesh using Causal Backbone framework
 - [[peter-steinberger]] — OpenClaw creator, highlighted by Huang at GTC 2026
-- [[ai-agent-architecture]] — Agentic AI workloads driving Nvidia's architecture decisions
+-  — Agentic AI workloads driving Nvidia's architecture decisions
 
 ## Sources
 

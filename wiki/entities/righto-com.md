@@ -1,5 +1,6 @@
 ---
 title: Ken Shirriff
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -13,6 +14,7 @@ tags:
 aliases:
 - righto.com
 - kenshirriff
+sources: []
 ---
 
 # Ken Shirriff
@@ -85,9 +87,9 @@ Ken's posts consistently translate abstract computer science concepts into concr
 - [[opcode-collective]] — Distributed group Ken collaborates with on microcode analysis
 - [[computer-architecture]] — How processors are designed and how they evolved
 - [[intel-8086]] — The chip that launched x86, extensively analyzed by Ken
-- [[intel-8087]] — Floating-point coprocessor, subject of Ken's recent deep-dive series
-- [[apollo-program]] — Aerospace hardware Ken has reverse-engineered
-- [[silicon-die-analysis]] — The practice of photographing and tracing chip layouts
+-  — Floating-point coprocessor, subject of Ken's recent deep-dive series
+-  — Aerospace hardware Ken has reverse-engineered
+-  — The practice of photographing and tracing chip layouts
 
 ## Sources
 

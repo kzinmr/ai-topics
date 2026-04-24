@@ -1,3 +1,9 @@
+---
+title: "Concepts"
+type: concept
+sources: []
+---
+
 # Concepts
 
 AI and LLM concept pages organized by topic.
@@ -288,11 +294,7 @@ AI and LLM concept pages organized by topic.
 
 ## Claude-Code-Best-Practices.Md
 
-- [[concepts/claude-code-best-practices]] — Practical patterns and techniques for effective Claude Code usage, synthesized from experienced users' real-world workflows. These complement the internal patterns found in [[claude-code-source-patter
-
-## Claude-Code-Leak.Md
-
-- [[concepts/claude-code-leak]] — March 2026 incident where Anthropic's Claude Code source code was leaked via npm package.
+- [[concepts/claude-code-best-practices]] — Practical patterns and techniques for effective Claude Code usage, synthesized from experienced users' real-world workflows. These complement the internal patterns found in  — March 2026 incident where Anthropic's Claude Code source code was leaked via npm package.
 
 ## Claude-Code-Source-Patterns.Md
 
@@ -536,7 +538,7 @@ AI and LLM concept pages organized by topic.
 
 ## Linear-Walkthroughs.Md
 
-- [[concepts/linear-walkthroughs]] — Linear walkthroughs are structured, step-by-step guides that walk users through processes in a sequential, predictable manner. In agentic contexts, they inform how agents should structure task complet
+-  — Linear walkthroughs are structured, step-by-step guides that walk users through processes in a sequential, predictable manner. In agentic contexts, they inform how agents should structure task complet
 
 ## Llm-As-Judge.Md
 
@@ -796,4 +798,4 @@ AI and LLM concept pages organized by topic.
 
 ## World-Models-Science.Md
 
-- [[concepts/world-models-science]] — Using world models and agent loops to automate scientific research and discovery.
+- [[concepts/world-models-science.md]] — Using world models and agent loops to automate scientific research and discovery.

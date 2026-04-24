@@ -1,36 +1,18 @@
 ---
 title: "Showboat"
-tags:
- - concept
- - showboat
- - documentation
- - agentic-engineering
-status: skeleton
-description: "A documentation tool concept for AI agents. See harness-engineering/agentic-workflows/showboat.md for full content."
+type: concept
+tags: [concept]
+status: complete
+description: "Moved to concepts/harness-engineering/agentic-workflows/showboat.md"
+created: 2026-04-14
+updated: 2026-04-24
+related:
+  - "[[concepts/harness-engineering/agentic-workflows/showboat.md]]"
+sources: []
 ---
 
 # Showboat
 
-> **Note:** This page is a stub and needs expansion. See [[concepts/showboat.md]] for the full content.
+> **Moved:** コンテンツは [[concepts/harness-engineering/agentic-workflows/showboat.md]] に移動しました。
 
-## Summary
-
-Showboat is a documentation tool concept (from Simon Willison's Agentic Engineering patterns) designed to help maintain documentation in AI-friendly formats:
-
-- Auto-generate documentation from code
-- Keep docs in sync with code changes
-- Format documentation for optimal agent consumption
-- Track documentation coverage
-
-## Use Cases
-
-- Maintaining README files
-- API documentation
-- Architecture decision records
-- Agent-facing documentation
-
-## See Also
-
-- [[concepts/showboat.md]] — Full content
-- [[interactive-explanations]] — Interactive explanation patterns
-- [[linear-walkthroughs]] — Linear walkthrough patterns
+詳細: [[concepts/harness-engineering/agentic-workflows/showboat.md]]

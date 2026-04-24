@@ -1,5 +1,7 @@
 ---
 tags: [person]
+type: entity
+sources: []
 ---
 
 
@@ -206,9 +208,9 @@ His blog is structured around **projects, articles, and fiction** — reflecting
 - [[Programming Languages]] — Type systems, compilers, parsers, semantic analysis
 - [[AI Agents]] — Cognitive architectures, LLM scaffolding, agent evaluation
 - [[Compiler Construction]] — OCaml, Menhir, bootstrapping, middle-end design
-- [[Spaced Repetition]] — SM-2 algorithm, learning science, productivity
-- [[Data Modeling]] — Ontologies, logic, information management
-- [[Systems Programming]] — Memory safety, resource management, capability-based security
+-  — SM-2 algorithm, learning science, productivity
+-  — Ontologies, logic, information management
+-  — Memory safety, resource management, capability-based security
 
 ## Podcasts & Media
 

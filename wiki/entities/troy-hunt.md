@@ -1,5 +1,7 @@
 ---
 tags: [person]
+type: entity
+sources: []
 ---
 
 
@@ -169,9 +171,9 @@ His teaching philosophy is **offensive-first**: understand how attacks work befo
 - [[Breach Disclosure]] — His framework for how organizations should respond to breaches
 - [[Developer Security]] — His educational mission through Pluralsight courses
 - [[GDPR]] — The legal framework informing his sensitive breach classification
-- [[Pwned Passwords]] — HIBP's password breach search service
-- [[AI Agents]] — His pragmatic approach to integrating autonomous tools
-- [[Transparency in Security]] — His operational philosophy of public accountability
+-  — HIBP's password breach search service
+-  — His pragmatic approach to integrating autonomous tools
+-  — His operational philosophy of public accountability
 
 ## Influence Metrics
 

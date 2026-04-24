@@ -1,10 +1,12 @@
 ---
 title: "Claude Mythos & Project Glasswing"
+type: concept
 created: 2026-04-10
 updated: 2026-04-24
 tags: [claude-mythos, project-glasswing, anthropic, cybersecurity, frontier-ai, ai-safety]
 aliases: ["project-glasswing", "mythos-preview"]
-related: [[ai-safety-alignment]], [[concepts/agentic-engineering.md]], [[cognitive-cost-of-agents]], [[zero-day-discovery]]
+related: , , [[cognitive-cost-of-agents]], 
+sources: []
 ---
 
 # Claude Mythos & Project Glasswing
@@ -193,10 +195,10 @@ Project Glasswing has ignited a wider debate about how to handle increasingly ca
 
 ## Related Concepts
 
-- [[ai-safety-alignment]] — Alignment research and the paradox of capable-but-aligned models
-- [[concepts/agentic-engineering.md]] — AI agents as development partners, including autonomous vulnerability discovery
+-  — Alignment research and the paradox of capable-but-aligned models
+-  — AI agents as development partners, including autonomous vulnerability discovery
 - [[cognitive-cost-of-agents]] — The hidden cost of delegating understanding to AI systems
-- [[zero-day-discovery]] — The economics and implications of AI-powered vulnerability research
+-  — The economics and implications of AI-powered vulnerability research
 - [[ai-bubble-economics]] — The financial structures supporting frontier AI development
 
 ## Sources

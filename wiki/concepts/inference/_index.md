@@ -1,5 +1,6 @@
 ---
 title: "LLM Inference Optimization"
+type: concept
 date: 2026-04-10
 sources:
   - "https://seangoedecke.com/2026/02/15/fast-llm-inference/"
@@ -47,6 +48,6 @@ Techniques and engines for fast LLM inference, from consumer hardware to product
 ## Related
 
 - [[local-llm]] — Local LLM ecosystem (quantization, distillation, hardware)
-- [[structured-outputs]] — Structured generation patterns
+- [[concepts/structured-outputs.md]] — Structured generation patterns
 - [[inference-speed-development]] — Inference speed economics (Steipete)
 - [[compute-scaling-bottlenecks]] — Hardware constraints on AI scaling

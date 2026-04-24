@@ -1,5 +1,6 @@
 ---
 title: Dwarkesh Patel
+type: entity
 created: 2026-04-09
 updated: 2026-04-18
 sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/]
@@ -175,8 +176,8 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [[andrej-karpathy]] — Interviewed Oct 2025: "AGI is still a decade away"
 - [[ilya-sutskever]] — Interviewed Nov 2025: "Age of scaling to age of research"
 - [[dario-amodei]] — Interviewed Feb 2026: "Near the end of the exponential"
-- [[elon-musk]] — Interviewed Feb 2026: "Cheapest AI will be in space"
-- [[space-compute-economics]] — Orbital datacenter analysis
+-  — Interviewed Feb 2026: "Cheapest AI will be in space"
+-  — Orbital datacenter analysis
 
 ## Sources
 

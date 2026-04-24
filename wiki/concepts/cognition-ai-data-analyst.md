@@ -1,5 +1,6 @@
 ---
 title: "Cognition AI Data Analyst — Devinをデータ分析エージェントにする設計"
+type: concept
 aliases:
   - cognition-data-analyst
   - devin-data-analyst
@@ -137,7 +138,7 @@ Devinのデータ分析精度を決定する最も重要な要素。チーム全
 - [[closing-agent-loop]] — Write→Catch→Fix→Mergeのループ。データ分析版: Query→Validate→Visualize→Report
 - [[code-execution-with-mcp]] — MCPをコードAPIとして公開するパターン。データ分析ではSQL実行環境として機能
 - [[cognition-devin-philosophy]] — 単一エージェントの文脈継続性。データ分析でも同じ原理（探索→分析→可視化を同一コンテキストで）
-- [[ai-memory-systems]] — Knowledge設定がエージェントの「ファイルベースメモリ」として機能
+- [[concepts/harness-engineering/system-architecture/ai-memory-systems.md]] — Knowledge設定がエージェントの「ファイルベースメモリ」として機能
 
 ## ビジネスインパクト
 

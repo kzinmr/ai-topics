@@ -1,8 +1,10 @@
 ---
 title: Philip Laine
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Philip Laine
@@ -108,10 +110,10 @@ This frustration led him to build tooling and share practical solutions for cros
 
 - [[Spegel]] — Laine's P2P container image distribution project (1,700+ stars, 14.4M+ pulls)
 - [[Kubernetes]] — the platform Laine writes about and builds for
-- [[Microsoft Peerd]] — the corporate fork that sparked Laine's most widely-read post
-- [[Entropic Thoughts]] — shares Laine's commitment to publishing practical, rigorously-tested technical work
+-  — the corporate fork that sparked Laine's most widely-read post
+-  — shares Laine's commitment to publishing practical, rigorously-tested technical work
 - [[entities/bogdanthegeek-s-blog.md]] — another engineer who publishes project-based technical writing
-- [[Construction Physics]] — Brian Potter's newsletter; both Laine and Potter write about the gap between theory and operational reality
+-  — Brian Potter's newsletter; both Laine and Potter write about the gap between theory and operational reality
 
 ## Sources
 

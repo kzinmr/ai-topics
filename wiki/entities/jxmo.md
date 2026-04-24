@@ -1,5 +1,6 @@
 ---
 title: Jack Morris
+type: entity
 handle: "@jxmnop"
 created: 2026-04-10
 updated: 2026-04-10
@@ -9,6 +10,7 @@ tags:
   - embeddings
   - information-theory
   - nlp
+sources: []
 ---
 
 

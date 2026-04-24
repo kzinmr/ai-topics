@@ -6,10 +6,11 @@ related:
   - [[structured-outputs]]
   - [[pydantic-ai]]
   - [[samuel-colvin]]
-  - [[sebastián-ramírez]]
+  - 
 depth: L2
 status: complete
 created: 2026-04-16
+sources: []
 ---
 
 # Pydantic — Data Validation Using Python Type Hints
@@ -74,4 +75,4 @@ Based on StackOverflow 2022 survey (FastAPI at 6.01%) and PyPI download ratios (
 - **[[jason-liu]]** — Instructor library creator; "Pydantic is all you need" advocate; Applied LLMs Guide co-author
 - [[pydantic-ai]] — Next evolution of Pydantic for AI agents
 - [[samuel-colvin]] — Creator
-- [[sebastián-ramírez]] — FastAPI creator, close collaborator
+-  — FastAPI creator, close collaborator

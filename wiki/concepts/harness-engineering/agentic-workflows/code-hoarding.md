@@ -1,5 +1,6 @@
 ---
 title: "Code Hoarding / Knowledge Accumulation"
+type: concept
 aliases:
   - hoarding
   - knowledge-hoarding
@@ -55,5 +56,5 @@ Utility C (API client)
 
 ## 関連概念
 - [[compound-engineering-loop]] — 反復的改善サイクル（ホードはこのサイクルの「Save」段階で成長）
-- [[agentic-engineering]] — Agentic Engineering全体像
+- [[concepts/harness-engineering/agentic-engineering.md]] — Agentic Engineering全体像
 - [[context-window-management]] — コンテキストウィンドウ管理（ホードはコンテキストとして機能）

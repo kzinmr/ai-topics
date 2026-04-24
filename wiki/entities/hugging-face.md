@@ -1,5 +1,6 @@
 ---
 title: Hugging Face
+type: entity
 aliases: [HuggingFace, HF]
 created: 2026-04-24
 updated: 2026-04-24
@@ -137,10 +138,10 @@ In early 2026, hackers compromised the Hugging Face platform, distributing Andro
 - [[transformers-library]]
 - [[anthropic]]
 - [[openai]]
-- [[meta-ai]]
+- 
 - [[andrej-karpathy]] (Hugging Face contributor)
 - [[simon-willison]] (Hugging Face ecosystem user)
 - [[unsloth]] (fine-tuning on Transformers)
 - [[vllm]] (complementary inference engine)
-- [[pollen-robotics]] (acquired 2025)
-- [[gradio]] (acquired 2022)
+-  (acquired 2025)
+-  (acquired 2022)

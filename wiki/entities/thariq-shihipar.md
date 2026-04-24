@@ -1,5 +1,6 @@
 ---
 title: Thariq Shihipar
+type: entity
 handle: "@trq212"
 created: 2026-04-10
 updated: 2026-04-10
@@ -14,6 +15,7 @@ tags:
   - mit-media-lab
   - yc
   - interpretability
+sources: []
 ---
 
 
@@ -177,7 +179,7 @@ An accessible explanation of XJDR's uncertainty detection technique:
 
 - **[[varun-trivedy]]** — Both work on agent harness engineering; Trivedy's "Agent = Model + Harness" framework parallels Shihipar's SDK architecture
 - **[[philipp-schmid]]** — Both write about agent infrastructure; Schmid's "2026 will be around Agent Harnesses" aligns with Shihipar's Claude Agent SDK work
-- **[[florian-brand]]** — Both interested in interpretability and understanding how AI systems work under the hood
+- **[[entities/florian-brand.md]]** — Both interested in interpretability and understanding how AI systems work under the hood
 
 ## X Activity Themes
 

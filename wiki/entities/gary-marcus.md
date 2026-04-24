@@ -1,5 +1,6 @@
 ---
 title: Gary Marcus
+type: entity
 created: 2026-04-13
 updated: 2026-04-19
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
@@ -9,6 +10,7 @@ tags:
   - ai-skeptic
   - neuro-symbolic-ai
   - robust-ai
+sources: []
 ---
 
 
@@ -110,7 +112,7 @@ Marcusの結論:
 3. セキュリティ専門家はこれらのツールを採用するか時代遅れのリスクがある
 
 ### Sources
-- [[raw/articles/garymarcus.substack.com-claude-mythos-evaluated-2026-04-13.md]]
+- 
 
 ## Key Publications
 
@@ -146,11 +148,11 @@ Marcusの結論:
 ## Related
 
 - [[Steven Pinker]] — PhD advisor at MIT; cognitive science
-- [[Rodney Brooks]] — Co-founder of Robust.AI; robotics
+-  — Co-founder of Robust.AI; robotics
 - [[Yann LeCun]] — Frequent debate partner on deep learning vs. symbolic AI
-- [[neuro-symbolic-ai]] — Marcus's primary research direction
+-  — Marcus's primary research direction
 - [[ai-safety]] — Advocacy for regulation and transparent validation
-- [[geometric-intelligence]] — His first AI startup (acquired by Uber)
+-  — His first AI startup (acquired by Uber)
 
 ## Sources
 

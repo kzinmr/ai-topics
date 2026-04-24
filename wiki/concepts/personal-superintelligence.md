@@ -1,5 +1,6 @@
 ---
 title: "Personal Superintelligence — パーソナルAIの進化と哲学的対立"
+type: concept
 aliases:
   - personal-ai-agents
   - personal-superintelligence
@@ -15,6 +16,7 @@ tags:
   - ambient-computing
   - data-sovereignty
 status: active
+sources: []
 ---
 
 # Personal Superintelligence — パーソナルAIの進化と哲学的対立
@@ -43,7 +45,7 @@ Personal Empowerment (Meta/OpenClaw/Local AI)
 | [[peter-steinberger]] | OpenClaw/Claudbot | ユーザーローカル | 「You own your agent」 |
 | [[shlok-khemani]] | OpenPoke/Vajra | Filesystem-first | 「Personality ≠ Execution」 |
 | [[george-hotz]] | tinygrad + local inference | フリー | 「All compute is equal」 |
-| [[mario-zechner]] | pi coding agent | ローカル | 「Strip away the bloat」 |
+| [[entities/mario-zechner.md]] | pi coding agent | ローカル | 「Strip away the bloat」 |
 | [[sero]] | Open Orchestra/Thrive | ローカル+分散 | 「Freedom Tech」 |
 
 ## 3つの哲学的分岐点
@@ -65,7 +67,7 @@ Zuckerbergの言う「knows us deeply」は、Metaのプラットフォーム上
 
 Metaは **Ray-Ban AI Glasses** を「primary computing device」と位置づける。2025年に700万台以上を販売、2026年には年間2000-3000万台の製造能力を目標とする。VisionClaw（Xiaoan Sean Liu）はRay-Ban Meta + Gemini Live API + OpenClawを組み合わせ、「what you see/hear」を理解するエージェントの実現を実証した。
 
-対照的に、ローカルAIコミュニティは **既存のハードウェア**（consumer GPU、Apple Silicon）上での実行を志向する。[[georgi-gerganov]] の llama.cpp、[[mario-zechner]] の pi エージェントはいずれも「特別なデバイス」を必要としない。
+対照的に、ローカルAIコミュニティは **既存のハードウェア**（consumer GPU、Apple Silicon）上での実行を志向する。[[georgi-gerganov]] の llama.cpp、[[entities/mario-zechner.md]] の pi エージェントはいずれも「特別なデバイス」を必要としない。
 
 ### ③ オープン vs クローズド — 「who controls the model?」
 
@@ -135,7 +137,7 @@ Personal Superintelligence
 - **[[peter-steinberger]]** — OpenAIでのpersonal agent開発
 - **[[shlok-khemani]]** — ファーストパーソンAIのアーキテクチャ
 - **[[sero]]** — Freedom Tech / ローカルインフラ
-- **[[mario-zechner]]** — Minimal agent on consumer hardware
+- **[[entities/mario-zechner.md]]** — Minimal agent on consumer hardware
 - **[[george-hotz]]** — Open source GPU driver / tinygrad
 
 ## 関連コンセプト
@@ -152,12 +154,12 @@ Personal Superintelligence
 ## 関連エンティティ
 
 - [[meta]] — Personal Superintelligence提唱
-- [[mark-zuckerberg]] — Meta CEO、ビジョン策定
-- [[alexandr-wang]] — Meta Superintelligence Labs責任者
+-  — Meta CEO、ビジョン策定
+-  — Meta Superintelligence Labs責任者
 - [[peter-steinberger]] — OpenClaw創設者
 - [[shlok-khemani]] — パーソナルAIメモリの研究者
 - [[sero]] — Freedom Tech / ローカルAIインフラ
-- [[mario-zechner]] — ローカルLLMエンジニアリング
+- [[entities/mario-zechner.md]] — ローカルLLMエンジニアリング
 - [[george-hotz]] — オープンソースAIハードウェア
 
 ## Sources

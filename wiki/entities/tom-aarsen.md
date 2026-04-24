@@ -1,5 +1,6 @@
 ---
 title: Tom Aarsen
+type: entity
 handle: "@tomaarsen"
 created: 2026-04-10
 updated: 2026-04-10
@@ -12,6 +13,7 @@ tags:
   - semantic-search
   - embeddings
   - open-source
+sources: []
 ---
 
 
@@ -106,8 +108,8 @@ Aarsen is a **Hugging Face Fellow** since July 2023 and full-time **Machine Lear
 
 ## Related People
 
-- [[simonwillison]] -- Shared interest in open-source AI tooling; Simon frequently references Sentence Transformers in his embeddings work
-- [[erichartford]] -- Both active in the Hugging Face open-source model community
+-  -- Shared interest in open-source AI tooling; Simon frequently references Sentence Transformers in his embeddings work
+-  -- Both active in the Hugging Face open-source model community
 - **Iryna Gurevych** -- Original creator of Sentence Transformers at UKP Lab, TU Darmstadt; Aarsen succeeded her as maintainer
 - **Nils Reimers** -- Co-creator of the original Sentence Transformers paper and library
 - **Marc Sun and Yoach Lacombe** -- Hugging Face Transformers team colleagues; collaborated on gradient accumulation reproducibility research

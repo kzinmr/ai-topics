@@ -42,5 +42,5 @@ While traditional eval harnesses focus on model capabilities, modern [[ai-evals]
 
 ## Sources
 
-- [[raw/articles/lenny-podcast-ai-evals-hottest-skill-hamel-shreya-2025-09.md]]
+- 
 - Lenny's Podcast episode: "Why AI evals are the hottest new skill for product builders" (Sept 25, 2025)

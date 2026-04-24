@@ -1,7 +1,7 @@
 ---
 title: "Lucebox"
 type: project
-status: skeleton
+status: complete
 created: 2026-04-23
 updated: 2026-04-23
 tags:

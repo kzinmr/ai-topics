@@ -1,5 +1,6 @@
 ---
 title: "CLI-First Development"
+type: concept
 aliases:
   - cli-first-development
   - cli-first-agents
@@ -126,7 +127,7 @@ CLI-firstのアプローチでは、UIは以下の理由で最後に触る：
 
 ## 参照
 
-- [[steipete]] — CLI-first開発の提唱者
+-  — CLI-first開発の提唱者
 - [[entities/sankalp-sinha.md]] — CC → Codex → Cursorのパイプライン実践者
 - [Shipping at Inference-Speed](https://steipete.me/posts/2025/shipping-at-inference-speed)
 - [A Guide to Claude Code 2.0](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/)

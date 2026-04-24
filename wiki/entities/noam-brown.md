@@ -1,5 +1,6 @@
 ---
 title: Noam Brown
+type: entity
 created: 2026-04-14
 updated: 2026-04-14
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': False}
@@ -12,6 +13,7 @@ tags:
   - reasoning
   - multi-agent
   - diplomacy
+sources: []
 ---
 
 
@@ -206,9 +208,9 @@ Brown's work on reasoning models directly extends his game AI research:
 - [[hunter-lightman]] — OpenAI colleague; Project Strawberry
 - [[ilya-sutskever]] — OpenAI co-founder; Q* project (related to reasoning)
 - [[sam-altman]] — OpenAI CEO
-- [[game-theory]] — Brown's theoretical foundation
-- [[ai-reasoning]] — o1/o3 models represent this paradigm
-- [[multi-agent-systems]] — CICERO and Pluribus
+-  — Brown's theoretical foundation
+-  — o1/o3 models represent this paradigm
+-  — CICERO and Pluribus
 
 ## Sources
 

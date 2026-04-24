@@ -1,5 +1,6 @@
 ---
 title: Eugene Yan
+type: entity
 handle: "@eugeneyan"
 created: 2026-04-10
 updated: 2026-04-10
@@ -9,6 +10,7 @@ tags:
   - recsys
   - llm-systems
   - production-ai
+sources: []
 ---
 
 

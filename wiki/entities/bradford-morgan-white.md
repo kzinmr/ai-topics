@@ -1,7 +1,9 @@
 ---
 title: Bradford Morgan White
+type: entity
 status: active
 tags: [person]
+sources: []
 ---
 
 
@@ -178,9 +180,9 @@ His technical writing (brd.la) is:
 - [[Operating Systems]] — QNX, Windows, Unix, DOS, and the battle for the desktop
 - [[concepts/local-llm/self-hosting-ai-development.md]] — Home infrastructure, cloud free-tier optimization, defense in depth
 - [[Software History]] — Xerox PARC, SRI/ARC, and the origins of personal computing
-- [[Sysadmin]] — Practical systems administration, security hardening, infrastructure automation
-- [[Xerox PARC]] — Alan Kay, the graphical user interface, and the future that was dismissed
-- [[QNX]] — Microkernel architecture, real-time operating systems, embedded computing
+-  — Practical systems administration, security hardening, infrastructure automation
+-  — Alan Kay, the graphical user interface, and the future that was dismissed
+-  — Microkernel architecture, real-time operating systems, embedded computing
 
 ---
 

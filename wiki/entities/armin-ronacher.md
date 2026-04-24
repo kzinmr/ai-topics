@@ -1,5 +1,6 @@
 ---
 entity: "armin-ronacher"
+type: entity
 status: complete
 aliases: [mitsuhiko, Armin Ronacher, Lucumr]
 related:
@@ -21,6 +22,7 @@ tags:
   - rust-developer
   - entrepreneur
   - blogger
+sources: []
 ---
 
 
@@ -166,7 +168,7 @@ Ronacher's technical philosophy — simplicity, developer-first design, and prag
 ## Related Concepts
 
 - [[ai-coding-agent-criticism]] — "The Center Has a Bias" thesis on engagement vs. abstract criticism
-- [[mario-zechner]] (Pi/libGDX), [[colin]] (Earendil co-founder), [[flask]], [[jinja2]], [[werkzeug]], [[sentry]], [[rust]], [[python-packaging]], [[raw/articles/open.substack.com--pub-nlpnews-p-ai-agents-weekly-claude-managed-agents--883aac03.md]], [[agentic-coding]], [[minijinja]], [[snapshot-testing]], [[entities/charles-frye.md]], [[earendil]], [[pi-coding-agent]], [[lefos]], [[pygments]]
+- [[mario-zechner]] (Pi/libGDX), [[colin]] (Earendil co-founder), [[flask]], [[jinja2]], [[werkzeug]], [[sentry]], [[rust]], [[python-packaging]], , [[agentic-coding]], [[minijinja]], [[snapshot-testing]], [[entities/charles-frye.md]], [[earendil]], , , 
 
 ## Sources
 

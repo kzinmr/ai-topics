@@ -1,5 +1,6 @@
 ---
 title: Jim Nielsen
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -10,6 +11,7 @@ tags:
   - writing
   - hackernews
   - ui-ux
+sources: []
 ---
 
 
@@ -133,9 +135,9 @@ Jim built [Can I Still Use?](https://canistilluse.com) — a site documenting wh
 - [[sanding-ui]] — Jim's framework for iterative UI refinement
 - [[personal-websites]] — Independent web publishing as digital sovereignty
 - [[code-as-process]] — Coding as a thinking tool, not just production
-- [[jeffhuang-com]] — Fellow blogger on web culture and personal sites
-- [[kottke-org]] — Curator and blogger with similar web philosophy
-- [[bryanlrobinson-com]] — Design engineer writing about web craft
+-  — Fellow blogger on web culture and personal sites
+-  — Curator and blogger with similar web philosophy
+-  — Design engineer writing about web craft
 
 ## Sources
 

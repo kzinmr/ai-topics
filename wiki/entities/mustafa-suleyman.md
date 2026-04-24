@@ -1,5 +1,6 @@
 ---
 title: Mustafa Suleyman
+type: entity
 created: 2026-04-14
 updated: 2026-04-14
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': False}
@@ -12,6 +13,7 @@ tags:
   - anthropic
   - ai-safety
   - ai-ethics
+sources: []
 ---
 
 
@@ -216,9 +218,9 @@ Suleyman co-authored **"The Coming Wave: Technology, Power, and the Twenty-first
 
 - [[demis-hassabis]] — DeepMind co-founder
 - [[dario-amodei]] — Anthropic CEO; different approach to AI safety
-- [[reid-hoffman]] — Inflection AI co-founder
-- [[ai-containment]] — Suleyman's governance framework
-- [[ai-ethics]] — Applied ethics approach
+-  — Inflection AI co-founder
+-  — Suleyman's governance framework
+-  — Applied ethics approach
 
 ## Sources
 

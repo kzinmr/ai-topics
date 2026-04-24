@@ -1,5 +1,6 @@
 ---
 title: "AI Agent Memory Middleware — Storage Infrastructure for Agentic AI"
+type: concept
 status: complete
 created: 2026-04-15
 updated: 2026-04-15

@@ -1,8 +1,10 @@
 ---
 status: active
+type: concept
 created: 2026-04-19
 updated: 2026-04-19
 tags: [multimodal, vision, audio, cross-modal]
+sources: []
 ---
 
 # Multimodal AI — Overview
@@ -22,7 +24,7 @@ AI models that process and connect multiple modalities (vision, language, audio)
 
 ## Sub-pages
 
-- [[multimodal/clip]] — CLIP: Contrastive Language-Image Pre-Training
+-  — CLIP: Contrastive Language-Image Pre-Training
 
 > **Note:** Whisper moved to [[concepts/speech/whisper.md]] — speech models are conceptually distinct from vision-language multimodal systems.
 

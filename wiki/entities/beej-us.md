@@ -1,8 +1,10 @@
 ---
 title: "Beej (Brian 'Beej Jorgensen' Hall)"
+type: entity
 status: active
 handle: "@beejjorgensen"
 tags: [person]
+sources: []
 ---
 
 
@@ -172,9 +174,9 @@ His blog covers an eclectic range: technical tutorials, motorcycle brake rotor r
 - [[Technical Writing]] — Pedagogical philosophy, progressive complexity, conversational tone
 - [[Free Software]] — Creative Commons licensing, public domain code, open education
 - [[Computer Science Education]] — Teaching problem-solving, mental models, meta-skills
-- [[Git]] — Version control mental models, not just commands
-- [[Unix Systems]] — IPC, signals, shared memory, pipes
-- [[Learning Through Play]] — Game-based learning, Wizard's Castle projects
+-  — Version control mental models, not just commands
+-  — IPC, signals, shared memory, pipes
+-  — Game-based learning, Wizard's Castle projects
 
 ---
 

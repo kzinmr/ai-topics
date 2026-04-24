@@ -1,10 +1,12 @@
 ---
 title: "Vivek 'Varun' Trivedy (@vtrivedy10)"
+type: entity
 handle: "@vtrivedy10"
 created: 2026-04-14
 updated: 2026-04-14
 tags: [person, langchain, harness-engineering, ai-agents, deep-agents]
 aliases: ["vtrivedy10", "Vivek Trivedy", "Varun Trivedy"]
+sources: []
 ---
 
 # Vivek 'Varun' Trivedy (@vtrivedy10)
@@ -113,11 +115,11 @@ Trivedy predicts a future where builders create custom harnesses (like Bolt or C
 
 ## Related People
 
-*   [[harrison-chase]]: CEO/Co-founder of LangChain; Deep Agents is a key strategic direction.
-*   [[eugene-yurtsev]]: Co-author on Deep Agents evaluation and Harness Engineering posts.
+*   : CEO/Co-founder of LangChain; Deep Agents is a key strategic direction.
+*   : Co-author on Deep Agents evaluation and Harness Engineering posts.
 *   [[ryan-lopopolo]]: Also discusses Harness Engineering; complementary perspectives on agent systems.
 *   [[simon-willison]]: Covers AI engineering and agent tools; often discusses similar themes.
-*   [[longin-jan-latecki]]: PhD Advisor at Temple University.
+*   : PhD Advisor at Temple University.
 
 ## X Activity Themes
 
@@ -176,11 +178,11 @@ Vivが提起した未解決の問い：
 
 ## Related People
 
-*   [[harrison-chase]]: CEO/Co-founder of LangChain; Deep Agents is a key strategic direction.
-*   [[eugene-yurtsev]]: Co-author on Deep Agents evaluation and Harness Engineering posts.
+*   : CEO/Co-founder of LangChain; Deep Agents is a key strategic direction.
+*   : Co-author on Deep Agents evaluation and Harness Engineering posts.
 *   [[ryan-lopopolo]]: Also discusses Harness Engineering; complementary perspectives on agent systems.
 *   [[simon-willison]]: Covers AI engineering and agent tools; often discusses similar themes.
-*   [[longin-jan-latecki]]: PhD Advisor at Temple University.
+*   : PhD Advisor at Temple University.
 *   [[alex-zhang]]: MIT CSAIL PhD, RLM (Recursive Language Models). Context Fragment ideaの源流。
 *   [[dwarkesh-patel]]: Agent memoryのフォーク・蓄積可能性についての議論。
 *   [[richard-sutton]]: The Bitter Lesson — computation leveraged search > curated knowledge.

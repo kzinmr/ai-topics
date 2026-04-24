@@ -1,7 +1,9 @@
 ---
 title: AI Memory Systems: Two Camps Taxonomy
+type: concept
 category: concept
 status: active
+sources: []
 ---
 
 # AI Memory Systems: Two Camps Taxonomy

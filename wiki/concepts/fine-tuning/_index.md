@@ -1,8 +1,10 @@
 ---
 status: active
+type: concept
 created: 2026-04-19
 updated: 2026-04-19
 tags: [fine-tuning, post-training, overview]
+sources: []
 ---
 
 # Fine-Tuning — Overview
@@ -38,7 +40,7 @@ Post-training techniques for adapting pre-trained language models to specific ta
 - [[concepts/fine-tuning/quantization-overview.md]] — Model quantization for efficient inference
 - [[concepts/inference/llama-cpp.md]] — CPU/Apple Silicon inference engine
 - [[concepts/inference/vllm.md]] — High-throughput GPU serving
-- [[deployment/serving-llms]] — Production model serving patterns
+-  — Production model serving patterns
 
 ## The Fine-Tuning Pipeline
 
@@ -62,7 +64,7 @@ Pre-trained Model → SFT → Preference Optimization (DPO/GRPO/RLHF) → Quanti
 - [[harness-engineering]] — Fine-tuning as part of the model + harness paradigm
 - [[local-llm]] — Running fine-tuned models locally
 - [[inference]] — Inference optimization post-fine-tuning
-- [[evaluation/llm-evals]] — Evaluating fine-tuned models
+-  — Evaluating fine-tuned models
 
 ## Sources
 - HuggingFace TRL documentation

@@ -1,5 +1,6 @@
 ---
 title: Fares Obeid (@Grad62304977)
+type: entity
 created: 2026-04-10
 updated: 2026-04-14
 tags:
@@ -19,6 +20,7 @@ aliases:
 source: x-account
 status: enriched
 depth: L3
+sources: []
 ---
 
 # Fares Obeid (@Grad62304977)
@@ -175,9 +177,9 @@ From the GoldFinch abstract:
 - [[jxbz]] — Jeremy Bernstein, speedrun contributor (Newton-Schulz iteration)
 - [[bozavlado]] — Speedrun contributor
 - [[brendanh0gan]] — Speedrun contributor (U-net, 2x lr record)
-- [[fernbear]] — Speedrun contributor
-- [[leloykun]] — Speedrun contributor (Muon improvements)
-- [[youjiacheng]] — Speedrun contributor (Muon improvements)
+-  — Speedrun contributor
+-  — Speedrun contributor (Muon improvements)
+-  — Speedrun contributor (Muon improvements)
 
 ## Sources
 

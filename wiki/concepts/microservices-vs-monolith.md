@@ -1,5 +1,6 @@
 ---
 title: Microservices vs Monolith
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags:
@@ -100,5 +101,5 @@ Team Size & Complexity Assessment
 ## Related Concepts
 - [[lambda-monolith-lambdalith]]
 - [[event-driven-architecture]]
-- [[conways-law]]
-- [[blast-radius]]
+- 
+- 

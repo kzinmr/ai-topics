@@ -1,5 +1,6 @@
 ---
 title: "First Run the Tests"
+type: concept
 aliases:
   - first-run-the-tests
   - run-the-tests
@@ -66,7 +67,7 @@ Run "uv run pytest"
 
 - [[red-green-tdd]] — Red/Greenサイクルの次のステップ
 - [[agentic-manual-testing]] — 自動テスト後の手動探索テスト
-- [[agentic-engineering]] — 上位概念
+- [[concepts/harness-engineering/agentic-engineering.md]] — 上位概念
 
 ## 参照
 - [[simon-willison]] — このパターンの創始者

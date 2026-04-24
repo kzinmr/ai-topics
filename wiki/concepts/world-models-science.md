@@ -1,9 +1,11 @@
 ---
 title: "World Models for Scientific Discovery"
+type: concept
 created: 2026-04-10
 updated: 2026-04-10
 tags: [concept, world-models, scientific-ai, agent-loops, research]
 related: [causal-reasoning, scientific-method, ai-researchers, agent-workflows]
+sources: []
 ---
 
 # World Models for Scientific Discovery
@@ -43,4 +45,4 @@ Using world models and agent loops to automate scientific research and discovery
 - Challenges in validation and peer review
 
 ## Sources
-- [[raw/articles/substack.com--redirect-a7fd4d79-f115-42d9-a5f7-15a56b89baac--4fb5f401.md]]
+- 

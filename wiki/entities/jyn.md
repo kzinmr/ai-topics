@@ -1,5 +1,6 @@
 ---
 title: Jynn Nelson (jyn)
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -11,6 +12,7 @@ tags:
   - build-systems
   - developer-tools
   - documentation
+sources: []
 ---
 
 
@@ -137,9 +139,9 @@ Jyn's blog alternates between **deep technical walkthroughs** (build systems, ru
 
 - [[build-systems]] — Deep analysis of build architecture
 - [[rust-ecosystem]] — Rust compiler, tooling, and language design
-- [[developer-experience]] — Making complex systems approachable
-- [[rust-lang]] — The Rust programming language project
-- [[ferrous-systems]] — Rust consulting company
+-  — Making complex systems approachable
+-  — The Rust programming language project
+-  — Rust consulting company
 
 ## Sources
 

@@ -1,9 +1,11 @@
 ---
 title: "Attention Mechanism Variants in Modern LLMs"
+type: concept
 created: 2026-04-18
 updated: 2026-04-18
 tags: [architecture, technique, inference, optimization]
 aliases: ["attention-mechanisms", "transformer-attention", "GQA", "MLA", "SWA"]
+sources: []
 ---
 
 # Attention Mechanism Variants
@@ -112,6 +114,6 @@ These attention variants directly impact [[context-engineering]] because:
 ## Sources
 
 - Sebastian Raschka, "A Visual Guide to Attention Variants in Modern LLMs" (Ahead of AI, 2026)
-- [[raw/articles/crawl-2026-04-18-token-economics.md]] — Attention mechanisms analysis
+-  — Attention mechanisms analysis
 - Anthropic Engineering Blog, "Effective context engineering for AI agents"
 - Karpathy, "Software 2.0" and context engineering definition (X/Twitter, June 2025)

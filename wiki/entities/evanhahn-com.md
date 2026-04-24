@@ -1,5 +1,6 @@
 ---
 title: Evan Hahn
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -14,6 +15,7 @@ tags:
 aliases:
 - evanhahn.com
 - evan-hahn
+sources: []
 ---
 
 # Evan Hahn
@@ -128,9 +130,9 @@ In his "[Programming Beliefs as of July 2024](https://evanhahn.com/programming-b
 - [[web-security]] — HTTP security headers, middleware, defense-in-depth
 - [[error-handling]] — Expected vs. unexpected errors, language design
 - [[software-craftsmanship]] — Code quality, pragmatism, reading code
-- [[open-source-maintenance]] — Maintaining widely-depended-upon packages
-- [[ghost]] — Nonprofit publisher software where Evan works
-- [[decentralized-identity]] — human.json and web-native identity systems
+-  — Maintaining widely-depended-upon packages
+-  — Nonprofit publisher software where Evan works
+-  — human.json and web-native identity systems
 
 ## Sources
 

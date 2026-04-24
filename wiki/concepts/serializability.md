@@ -6,10 +6,11 @@ related:
   - [[pydantic-serializability]]
   - [[concepts/structured-outputs.md]]
   - [[pydantic-ai]]
-  - [[samuel-colvin]]
+  - [[entities/samuel-colvin.md]]
 depth: L2
 status: complete
 created: 2026-04-15
+sources: []
 ---
 
 # Serializability — Structured Output for AI Systems
@@ -45,5 +46,5 @@ Pydantic provides:
 
 - [[pydantic-serializability]] — Pydantic's implementation
 - [[concepts/structured-outputs.md]] — General pattern
-- [[samuel-colvin]] — Serializability pioneer
+- [[entities/samuel-colvin.md]] — Serializability pioneer
 - [[pydantic-ai]] — Framework integration

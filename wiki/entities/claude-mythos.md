@@ -1,5 +1,6 @@
 ---
 title: Claude Mythos
+type: entity
 created: 2026-04-09
 updated: 2026-04-13
 tags:
@@ -9,11 +10,12 @@ tags:
 - emerging
 aliases:
 - Mythos
+sources: []
 ---
 
 # Claude Mythos
 
-Anthropic's next-generation model, developed after [[claude-opus-4.6]]. Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
+Anthropic's next-generation model, developed after . Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
 
 ## Overview
 
@@ -60,11 +62,11 @@ Gary Marcus evaluated the results as finding a middle ground: Mythos is "nowhere
 > [!NOTE] Concern for agentic code: Marcus notes that agent-written code may itself be "weakly defended and vulnerable," compounding the risk when Mythos-level models are used to generate production code.
 
 ## Sources
-- [[raw/articles/substack.com--app-link-post--40004939.md]] (Ben's Bites, 2026-04-09)
-- [[raw/articles/substack.com--redirect-c9daf5ee-93ac-4141-9988-ef7dabf7f211--f39676e7.md]] (scraped article)
+-  (Ben's Bites, 2026-04-09)
+-  (scraped article)
 
 ## Related
 - [[anthropic]]
-- [[claude-opus-4.6]]
+- 
 - [[project-glasswing]]
 - [[ai-safety]]

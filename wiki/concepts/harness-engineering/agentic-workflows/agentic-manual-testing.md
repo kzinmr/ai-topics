@@ -1,5 +1,6 @@
 ---
 title: "Agentic Manual Testing"
+type: concept
 aliases:
   - agentic-manual-testing
   - exploratory-testing-with-agents
@@ -98,4 +99,4 @@ Start a dev server and then use `uvx rodney --help` to test the new homepage, lo
 
 ## 参照
 - [[simon-willison]] — Agentic Engineering Patterns創始者
-- [[rodney]] — ブラウザ自動化CLI
+- [[concepts/harness-engineering/agentic-workflows/rodney.md]] — ブラウザ自動化CLI

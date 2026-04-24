@@ -1,5 +1,6 @@
 ---
 title: "SQS Lambda ESM Scaling"
+type: concept
 created: "2026-04-16"
 updated: "2026-04-16"
 tags: ["aws", "sqs", "lambda", "esm", "scaling", "backpressure", "task-queue"]

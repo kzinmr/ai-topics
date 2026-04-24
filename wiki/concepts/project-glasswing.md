@@ -1,9 +1,11 @@
 ---
 title: "Project Glasswing"
+type: concept
 created: 2026-04-09
 updated: 2026-04-09
 tags: [concept, ai-safety, security, emerging]
 aliases: ["Anthropic Project Glasswing"]
+sources: []
 ---
 
 # Project Glasswing
@@ -40,7 +42,7 @@ Project Glasswing represents a novel approach to AI safety — rather than withh
 > This is a case study in responsible AI deployment: a model too dangerous for general release being used productively for security research.
 
 ## Sources
-- [[raw/articles/substack.com--app-link-post--40004939.md]] (Ben's Bites, 2026-04-09)
+-  (Ben's Bites, 2026-04-09)
 
 ## Related
 - [[claude-mythos]]

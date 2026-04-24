@@ -1,5 +1,6 @@
 ---
 title: "Harness Design for Long-Running Application Development"
+type: concept
 aliases:
   - harness-design-long-running-apps
   - generator-evaluator-pattern
@@ -181,4 +182,4 @@ Generator: 実装を提案
 - [[building-effective-agents]] — エージェント構築の基本原理
 - [[multi-agent-research-system]] — マルチエージェントシステム
 - [[context-engineering]] — コンテキストエンジニアリング
-- [[evals-skills]] — 評価スキル
+- [[comparisons/evals-skills.md]] — 評価スキル

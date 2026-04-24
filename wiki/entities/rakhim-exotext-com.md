@@ -1,7 +1,9 @@
 ---
 title: Rakhim (Rakhim Davletkaliyev)
+type: entity
 status: active
 tags: [person]
+sources: []
 ---
 
 
@@ -13,7 +15,7 @@ tags: [person]
 
 Rakhim is notable for his willingness to **shut down projects** when they no longer serve their purpose — a philosophy that runs counter to the "growth at all costs" mentality of modern tech. He has built and abandoned podcasts, courses, YouTube channels, and apps, documenting each decision with candor. His writing style is contemplative and self-reflective, often questioning the fundamental assumptions of software development culture.
 
-He is the author of **Quantum Computing For Software Engineers** and **Foundations of Clojure** (published on Leanpub), and has spoken at [[PyCon]] Tallinn, [[flatMap]] Oslo, and [[Clojure Days]] Amsterdam. His side-projects have included **Castlemacs** (minimalist Emacs for macOS), **Underblog** (extremely simple static blog generator in Go), and **Geostreaks** (iOS app for remote workers who forget to go outside).
+He is the author of **Quantum Computing For Software Engineers** and **Foundations of Clojure** (published on Leanpub), and has spoken at [[PyCon]] Tallinn, [[flatMap]] Oslo, and  Amsterdam. His side-projects have included **Castlemacs** (minimalist Emacs for macOS), **Underblog** (extremely simple static blog generator in Go), and **Geostreaks** (iOS app for remote workers who forget to go outside).
 
 ---
 
@@ -183,10 +185,10 @@ Genetic Programming — Rakhim's flatMap 2019 talk topic
 [[Lisp]] — Language family central to Rakhim's evolutionary computing research
 [[Go (Golang)]] — Language used for Underblog static site generator
 [[Python]] — Primary language for quantum computing work and PyCon talks
-[[Rust]] — Emerging systems language; Rakhim has written about it
+ — Emerging systems language; Rakhim has written about it
 Chaos Theory — Subject of Rakhim's Codexpanse Podcast exploration
-[[flatMap Conference]] — Oslo conference where Rakhim spoke on genetic programming
-[[Clojure Days]] — Amsterdam conference where Rakhim spoke on decentralized evolutionary computation
+ — Oslo conference where Rakhim spoke on genetic programming
+ — Amsterdam conference where Rakhim spoke on decentralized evolutionary computation
 
 ---
 

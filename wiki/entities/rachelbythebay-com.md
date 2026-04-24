@@ -1,5 +1,6 @@
 ---
 title: Rachel by the Bay
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -15,6 +16,7 @@ tags:
 aliases:
 - rachelbythebay.com
 - rachelbythebay
+sources: []
 ---
 
 # Rachel by the Bay
@@ -154,9 +156,9 @@ Her "Thoughts on working inside a data center suite" essay captures the physical
 - [[drewdevault-com]] — Shares Rachel's protocol-respect philosophy and critique of wasteful software
 - [[feed-reader-behavior]] — Rachel's scoring methodology and findings
 - [[http-conditional-requests]] — If-Modified-Since, If-None-Match, ETag best practices
-- [[infrastructure-monitoring]] — Passive monitoring, fleet scanning, alert design
-- [[outage-postmortems]] — Culture of incident documentation and learning
-- [[unix-systems-administration]] — Practical operational wisdom
+-  — Passive monitoring, fleet scanning, alert design
+-  — Culture of incident documentation and learning
+-  — Practical operational wisdom
 
 ## Sources
 

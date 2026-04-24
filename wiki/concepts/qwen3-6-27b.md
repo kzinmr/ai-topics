@@ -1,9 +1,11 @@
 ---
 title: "Qwen3.6-27B"
+type: concept
 created: 2026-04-24
 updated: 2026-04-24
 tags: [model, qwen, openai, open-source, coding-agents, efficient-llm]
 aliases: ["Qwen 3.6 27B", "Qwen3.6"]
+sources: []
 ---
 
 # Qwen3.6-27B
@@ -49,11 +51,11 @@ The Qwen3.6-27B release coincides with a broader industry shift where AI agents 
 
 - [[qwen]] — Qwen/OpenQwen model family
 - [[open-source-llms]] — Open-weight and open-source model landscape
-- [[coding-agents]] — AI coding agent ecosystem
+-  — AI coding agent ecosystem
 - [[gpt-models]] — Competing GPT model series (GPT-5.5, etc.)
-- [[claude-opus-4.7]] — Anthropic's flagship coding model
+-  — Anthropic's flagship coding model
 
 ## Sources
 
-- [[raw/newsletters/2026-04-23-qwen3-6-27b-beats-giants.md]] (GetSuperIntel Newsletter, 2026-04-23)
+-  (GetSuperIntel Newsletter, 2026-04-23)
 - [Qwen3.6-27B Beats Giants — GetSuperIntel Newsletter](https://link.mail.beehiiv.com/v1/c/6kwNXQ8M3PwZ5qcaZQB6cBBjOKjk%2BxeQZR%2FxLXw1fjkVnDMmXV8ZDs4jlqrp%0Aneg2DNGytfUwj7Sll9WVuYd3l0%2Bt9R%2BC7F8ol0a7uFAJguCalm1wsx%2Bc2%2Brl%0Apvxlab7rU%2F9KRc4ad%2Bke5ICZd0%2B8AEGbJT4WzE1XMllfLsSeIOORRnmlPYap%0AJGMuFpCmfl7%2F859VGMYVkjk6GulT%2FrkugQ%3D%3D%0A/8e535c9eaade9c43)

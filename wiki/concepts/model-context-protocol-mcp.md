@@ -1,5 +1,6 @@
 ---
 title: "Model Context Protocol (MCP)"
+type: concept
 created: 2026-04-19
 updated: 2026-04-19
 tags: [concept, mcp, agent-tooling, protocol, anthropic]
@@ -9,6 +10,7 @@ related:
   - concepts/structured-outputs
   - concepts/code-mode
   - concepts/harness-engineering/system-architecture/code-execution-with-mcp
+sources: []
 ---
 
 # Model Context Protocol (MCP)
@@ -110,7 +112,7 @@ MCP excels for structured data access and real-time integrations, while CLIs are
 
 - [[cli-over-mcp-pattern]] — CLI Over MCP design principle
 - [[code-mode]] — Code Mode: LLM writes code instead of sequential tool calls
-- [[structured-outputs]] — Guaranteed JSON/XML/code structure during generation
+- [[concepts/structured-outputs.md]] — Guaranteed JSON/XML/code structure during generation
 - [[concepts/harness-engineering/system-architecture/code-execution-with-mcp.md]] — Anthropic's Code Execution with MCP
 - [[concepts/harness-engineering/agentic-workflows/agent-first-design.md]] — Agent-First Codebase Design
 

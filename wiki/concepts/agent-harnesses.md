@@ -1,9 +1,11 @@
 ---
 title: "Agent Harnesses"
+type: concept
 created: 2026-04-24
 updated: 2026-04-24
 tags: [ai-agents, agent-frameworks, rl, minimalism, browser-agents]
 aliases: ["The Bitter Lesson of Agent Harnesses", "Agent Frameworks Philosophy"]
+sources: []
 ---
 
 # Agent Harnesses
@@ -97,7 +99,7 @@ Rather than building guardrails and constraints first, give the LLM near-human f
 ## Related Concepts
 
 - [[agent-loop-orchestration]] — Patterns for managing the agent loop
-- [[agentic-engineering]] — Broader agent engineering practices
+- [[concepts/harness-engineering/agentic-engineering.md]] — Broader agent engineering practices
 - [[ai-agent-traps]] — Common pitfalls in agent development
 - [[chatgpt-memory-bitter-lesson]] — Bitter Lesson applied to memory systems
 - [[ai-coding-agent-criticism]] — Criticisms of current agent approaches
@@ -107,4 +109,4 @@ Rather than building guardrails and constraints first, give the LLM near-human f
 - [The Bitter Lesson of Agent Frameworks](https://browser-use.com/posts/bitter-lesson-agent-frameworks) — Gregor Zunic, Browser Use Blog, 2026-01-16
 - [agent-sdk](https://github.com/browser-use/agent-sdk) — Browser Use's minimal agent architecture SDK
 - [browser-harness](https://github.com/browser-use/browser-harness) — Self-healing browser harness
-- [[raw/articles/the-bitter-lesson-of-agent-harnesses-2026-04-24--d9ffedba.md]] — Scraped article digest
+-  — Scraped article digest

@@ -65,6 +65,6 @@ The Lambdalith pattern directly informs **Single Agent vs. Multi-Agent** design 
 
 ## Related
 
-- [[microservices-vs-monolith]] — Decision framework for when to split
+- [[concepts/microservices-vs-monolith.md]] — Decision framework for when to split
 - [[rehan-van-der-merwe]] — Originator of the Lambdalith pattern advocacy
 - [[concepts/harness-engineering/system-architecture/container-context.md]] — AI Agent system design patterns

@@ -1,5 +1,6 @@
 ---
 title: "Harness Engineering — AI Agent環境設計の統合フレームワーク"
+type: concept
 aliases:
   - harness-engineering
   - agent-harness
@@ -223,7 +224,7 @@ Ryanは同意：依存関係を内部化（1K-10K LOCでも）は実行可能。
 
 ## Sources
 - [[agentic-engineering]] — Simon WillisonのAgentic Engineering哲学
-- [[agentic-engineering-patterns]] — Simon Willisonの実践パターンガイド
+- [[concepts/harness-engineering/agentic-engineering-patterns.md]] — Simon Willisonの実践パターンガイド
 - [[concepts/harness-engineering/agentic-workflows/interactive-explanations.md]] — 開発者ワークフロー詳細（Willison, Sankalp, Steipeteパターン）
 - [[concepts/harness-engineering/system-architecture/container-context.md]] — システム構築パターン（Anthropic, OpenAI Responses API）
 - Ryan Lopopolo, OpenAI Harness Engineering

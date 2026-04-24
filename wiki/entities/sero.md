@@ -1,5 +1,6 @@
 ---
 title: Sero (0xSero)
+type: entity
 handle: "@0xsero"
 url: "https://www.sybilsolutions.ai/"
 twitter: "https://x.com/0xsero"
@@ -15,6 +16,7 @@ tags:
   - elizaOS
   - blockchain
   - freedom-tech
+sources: []
 ---
 
 
@@ -210,12 +212,12 @@ Before AI, Sero built significant infrastructure in the Web3 space:
 - [[local-ai]] — Advocate for running models on consumer hardware
 - [[multi-agent]] — Open Orchestra, agent coordination
 - [[developer-tools]] — Azul, Parchi, vLLM Studio, pi-brain
-- [[blockchain]] — ZKSync, Ethereum governance infrastructure, Thrive Protocol
+-  — ZKSync, Ethereum governance infrastructure, Thrive Protocol
 - [[vllm]] — Local inference infrastructure
 - [[concepts/model-context-protocol-mcp.md]] — Mem-Layer and tool integration
-- [[freedom-tech]] — Core philosophy
+-  — Core philosophy
 - [[teknium]] — Fellow ElizaOS contributor and AI agent builder
-- [[turboquant]] — KV cache quantization research
+-  — KV cache quantization research
 
 ## Key Links
 

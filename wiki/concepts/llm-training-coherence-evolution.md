@@ -1,10 +1,11 @@
 ---
 title: "LLM Training Coherence Evolution"
+type: concept
 created: 2026-04-24
 updated: 2026-04-24
 tags: [training, coherence, fine-tuning, instruction-tuning, Giles-Thomas]
 aliases: ["ift-training-evolution", "llm-training-coherence"]
-related: [[concepts/llm-training-methods.md]], [[concepts/instruction-fine-tuning.md]], [[entities/gpjt]]
+related: , , [[entities/gpjt]]
 sources:
   - url: "https://www.gilesthomas.com/2026/04/how-an-llm-becomes-more-coherent-over-training"
     author: "Giles Thomas"
@@ -94,7 +95,7 @@ These findings have direct implications for [[ai-coding-reliability]]:
 ## Related Concepts
 - [[concepts/ai-coding-reliability]] — Why review and verification remain essential
 - [[concepts/ai-agent-traps]] — How coherence illusions create agent failures
-- [[concepts/instruction-fine-tuning]] — Broader IFT patterns and techniques
+-  — Broader IFT patterns and techniques
 
 ## Sources
 - [Giles Thomas: How an LLM becomes more coherent as we train it](https://www.gilesthomas.com/2026/04/how-an-llm-becomes-more-coherent-over-training) — Empirical coherence analysis

@@ -1,5 +1,7 @@
 ---
 tags: [person]
+type: entity
+sources: []
 ---
 
 
@@ -78,9 +80,9 @@ In 2025 alone, Milne published 123,382 words across 104 posts. He values blogs a
 - [[Grant Slatton]] — Technocapital thesis, capital ownership in AI era
 - [[Stefano Marinelli]] — Critical AI infrastructure perspectives, "EnshittifAIcation"
 - [[John Carmack]] — Pragmatic AI tool use, optimization focus
-- [[Digital Sovereignty]] — Personal websites, addressable archives, anti-platform dependency
-- [[AI Companions]] — Character.AI, Replika, "Little Guys"
-- [[World Running]] — Automation shaping internet culture
+-  — Personal websites, addressable archives, anti-platform dependency
+-  — Character.AI, Replika, "Little Guys"
+-  — Automation shaping internet culture
 
 ## Sources
 

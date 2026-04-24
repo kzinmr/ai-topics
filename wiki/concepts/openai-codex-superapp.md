@@ -1,9 +1,11 @@
 ---
 title: "OpenAI Codex Superapp"
+type: concept
 created: 2026-04-24
 updated: 2026-04-24
 tags: [product, openai, coding-agents, devtools, chatgpt]
 aliases: ["Codex Superapp"]
+sources: []
 ---
 
 # OpenAI Codex Superapp
@@ -63,7 +65,7 @@ See [[gpt-models]] for GPT model details, [[openai]] for company context, [[open
 
 ## Sources
 
-- [[raw/newsletters/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp.md]] (AINews, 2026-04-24)
-- [[raw/newsletters/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b.md]] (Simon Willison Newsletter, 2026-04-24)
+-  (AINews, 2026-04-24)
+-  (Simon Willison Newsletter, 2026-04-24)
 - [Simon Willison: GPT-5.5 via Codex backdoor API](https://simonwillison.net/2026/Apr/23/gpt-5-5/)
 - [OpenAI Index: Introducing GPT-5.5](https://openai.com/index/introducing-gpt-5-5/)

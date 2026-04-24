@@ -1,5 +1,6 @@
 ---
 title: Dax Raad
+type: entity
 handle: "@thdxr"
 created: 2026-04-13
 updated: 2026-04-13
@@ -161,9 +162,9 @@ Central to his approach is the conviction that retention depends primarily on sa
 ## Related People
 
 - [[Jay V]]: Co-founder of Anomaly (SST/OpenCode).
-- [[Frank Wang]]: Co-founder/CTO of Anomaly.
-- [[Adam Elmore]]: Co-founder of Anomaly, AWS Hero.
-- [[Paul Copplestone]]: Co-founder of Supabase; marveled at OpenCode's growth compared to Supabase.
+- : Co-founder/CTO of Anomaly.
+- : Co-founder of Anomaly, AWS Hero.
+- : Co-founder of Supabase; marveled at OpenCode's growth compared to Supabase.
 
 ## X Activity Themes
 

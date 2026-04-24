@@ -1,5 +1,6 @@
 ---
 name: abacaj
+type: entity
 updated: 2026-04-10
 tags:
 - ml-engineer
@@ -8,6 +9,7 @@ tags:
 - post-training
 - ai2
 - olmo
+sources: []
 ---
 
 # abacaj
@@ -113,9 +115,9 @@ His body of work reflects a pragmatic approach to ML: building tools that solve 
 
 ## Related
 
-- [[ai2]] — Creator of OLMo, where Bacaj contributes post-training expertise
-- [[olmo]] — Open language model with transparent training pipeline
-- [[mistral-ai]] — Fine-tuning target for his most popular repository
+-  — Creator of OLMo, where Bacaj contributes post-training expertise
+-  — Open language model with transparent training pipeline
+-  — Fine-tuning target for his most popular repository
 - [[anthropic]] — Preferred model provider (Opus 4.1)
 - [[entities/qwen3-6-plus.md]] — High-quality open model for fine-tuning
 

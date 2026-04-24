@@ -1,5 +1,6 @@
 ---
 title: Boaz Barak
+type: entity
 handle: "@boazbaraktcs"
 created: 2026-04-10
 updated: 2026-04-10
@@ -13,6 +14,7 @@ tags:
   - education
   - harvard
   - openai
+sources: []
 ---
 
 
@@ -150,9 +152,9 @@ Barak is the primary maintainer of the blog and has written extensively on:
 
 - **[[sanjeev-arora]]** — Co-author of "Computational Complexity: A Modern Approach"; Princeton colleague
 - **[[david-steurer]]** — Collaborator on sum-of-squares algorithm lecture notes
-- **[[robert-goldston]]**, **[[alexander-glaser]]** — Co-developers of the zero-knowledge nuclear warhead verification system
-- **[[nicholas-carlini]]** — Guest lecturer in Barak's AI safety course; expert on adversarial robustness
-- **[[lucca-trevisan]]** — Honored with the Trevisan Prize; Barak has written about his expository contributions
+- **[[robert-goldston]]**, **** — Co-developers of the zero-knowledge nuclear warhead verification system
+- **** — Guest lecturer in Barak's AI safety course; expert on adversarial robustness
+- **** — Honored with the Trevisan Prize; Barak has written about his expository contributions
 
 ## X Activity Themes
 

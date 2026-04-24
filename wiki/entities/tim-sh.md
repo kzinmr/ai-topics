@@ -1,5 +1,6 @@
 ---
 title: Tim Sherratt
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -12,6 +13,7 @@ tags:
   - web-archiving
   - Jupyter
   - open-data
+sources: []
 ---
 
 
@@ -162,9 +164,9 @@ His work consistently argues that **digitization is not neutral** — the choice
 
 - [[open-data]] — Open cultural data movement
 - [[digital-humanities]] — Jupyter for humanities research
-- [[susam-net.md]] — Self-hosted, self-documented digital practice
-- [[terrible-software.md]] — Human-centered approach to technology
-- [[shkspr-mobi.md]] — Web accessibility and standards advocacy
+-  — Self-hosted, self-documented digital practice
+-  — Human-centered approach to technology
+-  — Web accessibility and standards advocacy
 
 ## Sources
 

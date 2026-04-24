@@ -1,10 +1,12 @@
 ---
 title: "Managed Agents — SRE Incident Response Pattern"
+type: concept
 source: "https://platform.claude.com/cookbook/managed-agents-sre-incident-responder"
 status: active
 date: 2026-04-12
 tags: [managed-agents, sre, human-in-the-loop, webhook, automation]
 related: [claude-agent-sdk-sre-patterns, chief-of-staff-agent-patterns, context-engineering-primitives]
+sources: []
 ---
 
 # Managed Agents — SRE Incident Response Pattern
@@ -191,4 +193,4 @@ session = client.beta.sessions.create(..., vault_ids=[github_vault.id])
 
 - [[claude-agent-sdk-sre-patterns]] — The same pattern on Claude Agent SDK
 - [[chief-of-staff-agent-patterns]] — Hooks, subagents, and plan mode
-- [[context-engineering-primitives]] — Managing long-running agent context
+-  — Managing long-running agent context

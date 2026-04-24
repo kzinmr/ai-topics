@@ -161,7 +161,7 @@ With Claude Code, Codex, and Gemini agents, solo founders can now build products
 - [[ai-agent-memory-middleware]] — Context Lake as personal knowledge architecture
 - [[simon-willison]] — Another ex-tech-company founder writing about AI tools
 - [[karpathy]] — AI educator and generalist approach to building
-- [[vibe-coding]] — Vibe-Launching is the launch-day equivalent of vibe-coding
+- [[concepts/harness-engineering/agentic-workflows/vibe-coding.md]] — Vibe-Launching is the launch-day equivalent of vibe-coding
 
 ## Sources
 

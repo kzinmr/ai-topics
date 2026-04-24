@@ -1,5 +1,6 @@
 ---
 title: Georgi Gerganov
+type: entity
 handle: "@ggerganov"
 created: 2026-04-13
 updated: 2026-04-14
@@ -16,6 +17,7 @@ tags:
   - hugging-face
   - open-source
   - fabrice-bellard-lineage
+sources: []
 ---
 
 
@@ -98,7 +100,7 @@ In February 2026, ggml.ai (Gerganov, Xuan-Son Nguyen, Aleksander Grygier) joined
 
 ## Related People
 
-- **[[fabrice-bellard]]** — Spiritual predecessor; GGML was inspired by Bellard's `gpt2tc` and `libnc`.
+- **** — Spiritual predecessor; GGML was inspired by Bellard's `gpt2tc` and `libnc`.
 - **[[simon-willison]]** — Willison has extensively covered llama.cpp and praised the "death of the browser" potential via local agents.
 - **[[andrej-karpathy]]** — Shared philosophy of minimalism; Karpathy's `nanoGPT` influenced the C++ rewrite culture.
 - **Xuan-Son Nguyen** — Co-founder of ggml.ai, core contributor to llama.cpp.

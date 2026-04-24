@@ -1,5 +1,6 @@
 ---
 title: Andrej Karpathy
+type: entity
 handle: "@karpathy"
 url: "https://karpathy.ai/"
 twitter: "https://x.com/karpathy"
@@ -17,6 +18,7 @@ tags:
   - computer-vision
   - self-driving
   - llms
+sources: []
 ---
 
 
@@ -551,7 +553,7 @@ Future coding will resemble resource management games — setting up systems, de
 - [[openai]] — Co-founded in 2015
 - [[tesla-autopilot]] — Led AI team from 2017-2022
 - [[deep-learning]] — Core research area
-- [[computer-vision]] — PhD research area
+-  — PhD research area
 - [[simon-willison]] — Fellow AI educator and blogger
-- [[llm-education]] — Teaching LLMs from first principles
-- [[decoder-only-gpt]] — Complete GPT architecture explanation from microgpt
+-  — Teaching LLMs from first principles
+- [[concepts/decoder-only-gpt.md]] — Complete GPT architecture explanation from microgpt

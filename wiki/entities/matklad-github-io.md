@@ -1,5 +1,6 @@
 ---
 title: Aleksey Kladov
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -15,6 +16,7 @@ tags:
 aliases:
 - matklad
 - matklad.github.io
+sources: []
 ---
 
 # Aleksey Kladov
@@ -154,9 +156,9 @@ His "Missing IDE Feature" essay — advocating for "fold method bodies by defaul
 - [[rust]] — Programming language Kladov built IDE tooling for
 - [[zig]] — Programming language Kladov frequently analyzes for architectural comparison
 - [[language-server-protocol]] — Protocol Kladov has extensively critiqued and contributed to
-- [[tree-sitter]] — Parsing library Kladov advocates for in IDE contexts
-- [[incremental-computation]] — Architecture Kladov critiques as "hurdle racing" for profiling
-- [[resilient-parsing]] — Kladov's approach to handling incomplete code in language servers
+-  — Parsing library Kladov advocates for in IDE contexts
+-  — Architecture Kladov critiques as "hurdle racing" for profiling
+-  — Kladov's approach to handling incomplete code in language servers
 
 ## Sources
 

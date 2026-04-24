@@ -1,5 +1,6 @@
 ---
 title: "Shunyu Yao (姚顺雨)"
+type: entity
 aliases: ["Shunyu Yao", "姚顺雨", "ysymyth", "Yao Shunyu"]
 status: full
 created: 2026-04-13
@@ -40,6 +41,7 @@ related_papers:
   - "SWE-bench: Can Language Models Resolve Real-World GitHub Issues? (ICLR 2024, Oral)"
   - "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering (NeurIPS 2024, Oral)"
   - "Recursive Language Models (RLM)"
+sources: []
 ---
 
 # Shunyu Yao (姚顺雨)
@@ -226,10 +228,10 @@ Prime Intellect (building on both researchers' work) captures the synthesis:
 - **[[SWE-bench]]** / **[[SWE-agent]]** — Real-world code evaluation
 - **[[tau-bench]]** — Tool-Agent-User interaction benchmark
 - **[[Computer-Using Agent]]** — Yao's current work at OpenAI
-- **[[Agent-Computer Interfaces]]** — Designing environments for agents
-- **[[Scaffold vs RL Debate]]** — Yao argues for environment-first RL design
+- **** — Designing environments for agents
+- **** — Yao argues for environment-first RL design
 - **[[RLM (Recursive Language Models)]]** — Zhang/Khattab/Kraska's parallel work on environment-first context management
-- **[[The Second Half]]** — Yao's philosophical framework for AI's future
+- **** — Yao's philosophical framework for AI's future
 
 ## Status
 

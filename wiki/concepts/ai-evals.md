@@ -1,5 +1,6 @@
 ---
 title: "AI Evals (AI Evaluation Systems)"
+type: concept
 created: 2026-04-12
 tags: [evaluation, llm-as-judge, error-analysis, ai-engineering, ai-systems]
 sources:
@@ -154,17 +155,17 @@ A **trace** is the complete record of all actions, messages, tool calls, and dat
 
 - [[llm-as-judge]] — Using LLMs to evaluate AI outputs
 - [[critique-shadowing]] — 7-step process for building aligned LLM judges
-- [[error-analysis]] — Systematic categorization of failure modes
+-  — Systematic categorization of failure modes
 - [[harness-engineering]] — OpenAI's approach to AI-assisted development
 - [[eval-tools-comparison]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI
 - [[evals-skills]] — Evals skills for coding agents
-- [[raw/articles/2026-04-15-property-based-testing-anthropic.md]] — PBT methodology applied to LLM evaluation (MacIver)
+-  — PBT methodology applied to LLM evaluation (MacIver)
 
 ## Related People
 
 - [[drmaciver]] — Created `foundational-llm-evals` applying property-based testing to LLM evaluation
 - [[shreya-shankar]] — Co-creator of AI evals course, DocETL/EvalGen/SPADE researcher
-- [[hamel-husain]] — Co-creator of AI evals course, Critique Shadowing methodology pioneer
+- [[entities/hamel-husain.md]] — Co-creator of AI evals course, Critique Shadowing methodology pioneer
 
 ## Sources
 

@@ -1,8 +1,10 @@
 ---
 title: Grant Slatton
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Grant Slatton
@@ -108,8 +110,8 @@ Slatton treats design documents like mathematical proofs — their purpose is to
 - [[George Hotz]] — AI infrastructure, open-source ethos
 - [[Jayden Milne]] — AI culture and companionship
 - [[Stefano Marinelli]] — Critical AI infrastructure perspectives
-- [[Nick Land]] — Accelerationism and capital dynamics (Slatton's technocapital has conceptual parallels)
-- [[Rich Sutton]] — "The Bitter Lesson" and computation-focused AI development
+-  — Accelerationism and capital dynamics (Slatton's technocapital has conceptual parallels)
+-  — "The Bitter Lesson" and computation-focused AI development
 
 ## Sources
 

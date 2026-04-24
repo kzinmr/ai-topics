@@ -1,9 +1,11 @@
 ---
 title: "Token Economics — LLM Inference Cost & Optimization"
+type: concept
 created: 2026-04-18
 updated: 2026-04-18
 tags: [inference, optimization, cost, technique]
 aliases: ["cost-per-token", "inference-unit-economics"]
+sources: []
 ---
 
 # Token Economics
@@ -110,5 +112,5 @@ ML engineering (quantization, sharding, containers), infrastructure management, 
 
 ## Sources
 
-- [[raw/articles/crawl-2026-04-18-token-economics.md]] — Spheron & Introl inference economics analysis
+-  — Spheron & Introl inference economics analysis
 - Sebastian Raschka, "A Visual Guide to Attention Variants in Modern LLMs" (Ahead of AI)

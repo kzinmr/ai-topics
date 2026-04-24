@@ -1,7 +1,9 @@
 ---
 title: Skyfall Developer (Mahad Kalam)
+type: entity
 category: entity
 status: active
+sources: []
 ---
 
 # Skyfall Developer (Mahad Kalam)
@@ -127,9 +129,9 @@ His projects share a common philosophy: **build tools that solve actual problems
 - [[Hack Club]] — Teenager-run coding community and organization
 - [[Digital Minimalism]] — Conscious technology use, lightweight websites
 - [[SaaS Dependency]] — Risks of entrusting data to proprietary platforms
-- [[Open Source Infrastructure]] — Mattermost, self-hosted alternatives
-- [[AI Ethics]] — Parasocial AI relationships, user safety, deprecation
-- [[Government IT]] — Procurement failures, consultancy costs, taxpayer value
+-  — Mattermost, self-hosted alternatives
+-  — Parasocial AI relationships, user safety, deprecation
+-  — Procurement failures, consultancy costs, taxpayer value
 
 ---
 

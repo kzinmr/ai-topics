@@ -10,8 +10,8 @@ sources:
   - "https://www.elvis.so/p/the-game-of-attention"
 related:
   - [[elvis-sun]]
-  - [[attention-flywheel]]
-  - [[vibe-launching]]
+  - 
+  - 
 ---
 
 # Newsjacking Framework
@@ -111,8 +111,8 @@ The flywheel's ultimate state is **product-driven virality** — when the produc
 
 ## Related Frameworks
 
-- [[vibe-launching]] — Real-time iteration during viral moments (launch strategy)
-- [[attention-flywheel]] — Cross-channel amplification system
+-  — Real-time iteration during viral moments (launch strategy)
+-  — Cross-channel amplification system
 - [[elvis-sun]] — Originator of this framework
 
 ## Sources

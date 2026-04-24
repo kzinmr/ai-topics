@@ -1,5 +1,6 @@
 ---
 title: Michael Stapelberg
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -11,6 +12,7 @@ tags:
   - linux
   - infrastructure
   - i3-wm
+sources: []
 ---
 
 
@@ -97,9 +99,9 @@ Stapelberg has been running a blog since 2005 — over 20 years of documented te
 
 - [[nixos]] — Declarative, reproducible Linux distribution
 - [[concepts/long-context-coding-agents.md]] — AI-assisted development workflows
-- [[i3-wm]] — Tiling window manager created by Stapelberg
-- [[wayland]] — X11 successor, now mature enough for Stapelberg's adoption
-- [[simon-tatham]] — Another long-running free-software author and blogger
+-  — Tiling window manager created by Stapelberg
+-  — X11 successor, now mature enough for Stapelberg's adoption
+-  — Another long-running free-software author and blogger
 - [[xeiaso-net]] — Shared interest in Nix/NixOS and practical infrastructure
 
 ## Sources

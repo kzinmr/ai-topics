@@ -1,5 +1,6 @@
 ---
 title: Hugo Tunius
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -10,6 +11,7 @@ tags:
   - kubernetes
   - rust
   - web-development
+sources: []
 ---
 
 
@@ -103,9 +105,9 @@ His policy: force push freely on feature branches to clean up history before mer
 ## Related
 
 - [[great-pendulum]] — Cyclical nature of technology trends
-- [[async-rust]] — Tokio, sans-IO pattern, crate coloring
-- [[source-of-truth]] — Git as the canonical location for project metadata
-- [[frugal-infrastructure]] — Running services at minimal cost
+-  — Tokio, sans-IO pattern, crate coloring
+-  — Git as the canonical location for project metadata
+-  — Running services at minimal cost
 - [[xeiaso-net]] — Shared interest in practical, small-scale infrastructure
 - [[michael-stapelberg]] — Shared interest in declarative infrastructure and Nix
 

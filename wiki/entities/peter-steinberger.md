@@ -1,5 +1,6 @@
 ---
 title: Peter Steinberger
+type: entity
 entity_type: person
 status: L3
 created: 2026-04-13
@@ -142,8 +143,8 @@ Steinberger maintains a live blurb at **whatmodelispeterusing.com** — tracking
 - [[open-claw-ecosystem]] — The framework he created
 - [[anthropic-openclaw-conflict]] — The April 2026 policy dispute
 - [[agentic-engineering]] — AI-assisted software development patterns
-- [[mcp-model-context-protocol]] — The protocol his tooling ecosystem is built on
+-  — The protocol his tooling ecosystem is built on
 - [[skill-architecture-patterns]] — Skill governance model (OpenClaw's primitives-first approach)
 - [[boris-cherny]] — Anthropic's Head of Claude Code
 - [[simon-willison]] — Fellow opinion leader on agentic engineering
-- [[vibe-coding]] — The coding approach Steinberger evolved into "AI-native development"
+- [[concepts/harness-engineering/agentic-workflows/vibe-coding.md]] — The coding approach Steinberger evolved into "AI-native development"

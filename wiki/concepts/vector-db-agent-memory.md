@@ -1,5 +1,6 @@
 ---
 title: "Vector Database for AI Agent Memory"
+type: concept
 created: 2026-04-21
 updated: 2026-04-21
 tags: [concept, memory-systems, infrastructure, llm]
@@ -80,4 +81,4 @@ Agent memory retrieves from a corpus the **agent itself wrote**, mid-conversatio
 - [[ai-agent-memory-middleware]] — LLMFS, ChromaFS, memory middleware storage infrastructure
 - [[ai-agent-memory-two-camps]] — Memory backends vs context substrates taxonomy
 - [[context-engineering]] — Dynamic token curation; what to include in context
-- [[rag-retrieval-augmented-generation]] — Traditional RAG (precursor pattern; agents self-retrieve from their own output)
+-  — Traditional RAG (precursor pattern; agents self-retrieve from their own output)

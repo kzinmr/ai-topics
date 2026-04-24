@@ -1,5 +1,6 @@
 ---
 title: Susam Pal
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -13,6 +14,7 @@ tags:
 - indie-web
 aliases:
 - susam.net
+sources: []
 ---
 
 # Susam Pal
@@ -156,9 +158,9 @@ This connects to his broader view of computation: **the computer is a medium for
 
 ## Related
 
-- [[richard-stallman]] — Free software philosophy
-- [[donald-knuth]] — Literate programming, mathematical writing
-- [[indie-web]] — Personal websites, self-hosted infrastructure
+-  — Free software philosophy
+-  — Literate programming, mathematical writing
+-  — Personal websites, self-hosted infrastructure
 - [[bogdanthegeek-s-blog]] — Self-hosted, no-tracking personal sites
 - [[shkspr-mobi]] — Web standards advocacy, personal site philosophy
 

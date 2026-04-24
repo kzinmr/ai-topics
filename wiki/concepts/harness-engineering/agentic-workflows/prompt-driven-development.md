@@ -1,5 +1,6 @@
 ---
 title: "Prompt-Driven Development"
+type: concept
 aliases:
   - prompt-driven-development
   - prompt-driven-design
@@ -80,7 +81,7 @@ Prompt-Driven Developmentでは、エージェントが生成したコードを*
 - [[cognitive-debt]] — 理解せずにマージしたコードが蓄積する負債
 - [[red-green-tdd]] — テスト駆動開発との組み合わせ
 - [[context-window-management]] — プロンプトの長さ管理
-- [[agentic-engineering]] — 上位概念
+- [[concepts/harness-engineering/agentic-engineering.md]] — 上位概念
 
 ## 参照
 

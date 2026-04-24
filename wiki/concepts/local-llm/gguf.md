@@ -1,7 +1,9 @@
 ---
 status: skeleton
+type: concept
 created: 2026-04-14
 tags: local-llm, quantization, format
+sources: []
 ---
 
 # GGUF (GPT-Generated Unified Format)

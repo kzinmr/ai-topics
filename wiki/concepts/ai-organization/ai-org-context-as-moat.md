@@ -1,5 +1,6 @@
 ---
 title: "Proprietary Context — AI時代の組織ガバナンスとDiamond型組織図"
+type: concept
 aliases:
   - ai-org-governance
   - proprietary-context-moat
@@ -17,6 +18,7 @@ status: draft
 depth_tracking:
   target: 12KB+
   current: ~9KB
+sources: []
 ---
 
 # Proprietary Context — AI時代の組織ガバナンス
@@ -148,8 +150,8 @@ McKinseyのデータ:
 ## 関連概念
 
 - [[ai-org-from-hierarchy-to-intelligence]] — Blockの階層からインテリジェンスへの移行
-- [[ai-org-solo-founder-and-super-ic]] — Solo FounderとSuper IC
-- [[concepts/agentic-engineering.md]] — 開発者のAI活用ワークフロー
+- [[concepts/ai-organization/ai-org-solo-founder-and-super-ic.md]] — Solo FounderとSuper IC
+-  — 開発者のAI活用ワークフロー
 - [[harness-engineering]] — エージェントの制御・構焦化
 - [[multi-agent-autonomy-scale]] — 大規模マルチエージェントの自律とスケール
 

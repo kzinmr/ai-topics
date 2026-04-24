@@ -1,9 +1,11 @@
 ---
 title: Single-Agent Ceiling
+type: concept
 created: 2026-04-18
 updated: 2026-04-18
 tags: [coding-agents, anti-patterns, single-agent, agent-limitations, sloperator]
 aliases: ["single-agent-limitations", "sloperator-anti-pattern"]
+sources: []
 ---
 
 # Single-Agent Ceiling（単一エージェントの限界）
@@ -67,8 +69,8 @@ AIコーディングエージェントを使用する全ての開発者が直面
 - [[back-of-house-patterns]] — マルチエージェント・オーケストレーションの厨房メタファー
 - [[context-engineering]] — コンテキストエンジニアリング
 - [[harness-engineering]] — エンジニアのエージェント活用方法论
-- [[subagents]] — サブエージェントの委任パターン
+- [[concepts/harness-engineering/agentic-workflows/subagents.md]] — サブエージェントの委任パターン
 
 ## ソース
 
-- [[raw/articles/milksandmatcha-0xsero-single-agent-nightmare-2026.md]] — Sarah Chieng (@MilksandMatcha) + @0xSero (April 2026)
+-  — Sarah Chieng (@MilksandMatcha) + @0xSero (April 2026)

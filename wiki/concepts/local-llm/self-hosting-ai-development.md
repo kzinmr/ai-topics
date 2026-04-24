@@ -1,5 +1,6 @@
 ---
 title: "Self-Hosting AI for Development"
+type: concept
 created: 2026-04-13
 updated: 2026-04-13
 tags: [self-hosting, local-llm, qwen, opencode, cost-optimization, model-comparison]

@@ -1,5 +1,6 @@
 ---
 title: Pratik Bhavsar
+type: entity
 handle: "@ptkbhv"
 created: 2026-04-13
 updated: 2026-04-13
@@ -13,6 +14,7 @@ tags:
   - llm-as-a-judge
   - galileo
   - maxpool
+sources: []
 ---
 
 
@@ -180,7 +182,7 @@ Founded in 2019, now 1,000+ members:
 ## Related People
 
 - **[[eugene-yan]]** — Fellow practitioner in production ML evaluation; both emphasize systematic, data-driven approaches over benchmarks
-- **[[andrei-lopatenko]]** — Influential in semantic search, which Pratik has cited as a key area of interest
+- **** — Influential in semantic search, which Pratik has cited as a key area of interest
 - **Galileo AI** — Current employer; evaluation infrastructure company
 - **Enterpret** — Former employer; VOC analytics platform where Pratik was founding engineer
 - **Andrew Ng** — Featured Pratik's Hallucination Index in his newsletter

@@ -1,5 +1,6 @@
 ---
 title: Mira Murati
+type: entity
 created: 2026-04-13
 updated: 2026-04-13
 tags:
@@ -8,6 +9,7 @@ tags:
   - openai
   - thinking-machines-lab
   - ai-safety
+sources: []
 ---
 
 
@@ -85,7 +87,7 @@ Her new venture, Thinking Machines Lab, focuses on tools that incorporate human 
 - [[john-schulman]] — Thinking Machines Lab co-founder; RLHF/ scalable oversight research partner
 - [[sam-altman]] — OpenAI CEO; Murati's ally during the 2023 crisis
 - [[ilya-sutskever]] — Former OpenAI Chief Scientist; shared safety concerns
-- [[thinking-machines-lab]] — Murati's current venture
+-  — Murati's current venture
 - [[ai-safety]] — Central to Murati's leadership philosophy
 - [[openai]] — Where she served as CTO
 

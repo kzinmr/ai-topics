@@ -1,8 +1,10 @@
 ---
 title: OldVCR (Cameron Kaiser / ClassicHasClass)
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # OldVCR (Cameron Kaiser / ClassicHasClass)
@@ -130,12 +132,12 @@ These are not just technical curiosities — they are **alternate histories** of
 [[Commodore 64]] — Platform for Kaiser's 6o6 and Incredible KIMplement projects
 [[Apple-1]] — Historical computer emulated within Kaiser's 6o6 virtualization framework
 KIM-1 — MOS Technology single-board computer emulated via Incredible KIMplement
-[[Symbolics]] — Lisp machine manufacturer; Kaiser restored a MacIvory system
+ — Lisp machine manufacturer; Kaiser restored a MacIvory system
 Chaosnet — Early MIT networking technology documented in Kaiser's Lisp machine analysis
-[[Apple Network Server]] — Obscure Apple server platform; Kaiser analyzed prototype ROMs
+ — Obscure Apple server platform; Kaiser analyzed prototype ROMs
 Scriptovision — Canadian video titler company; Kaiser reverse-engineered their hardware
-[[raw/articles/substack.com--geraldwong116502--5f407893.md]] — MOS microprocessor; central to Kaiser's virtualization and emulation work
-[[PowerPC]] — Processor architecture; Kaiser maintained TenFourFox for PowerPC Macs
+ — MOS microprocessor; central to Kaiser's virtualization and emulation work
+ — Processor architecture; Kaiser maintained TenFourFox for PowerPC Macs
 
 ---
 

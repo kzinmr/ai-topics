@@ -1,5 +1,6 @@
 ---
 name: "arlan-r"
+type: entity
 updated: 2026-04-10
 tags:
   - person
@@ -10,6 +11,7 @@ tags:
   - nia
   - ai-coding
   - kazakhstan
+sources: []
 ---
 
 
@@ -134,10 +136,10 @@ Rakhmetzhanov's approach to building in public — launching on Product Hunt, co
 
 ## Related
 
-- [[nozomio]] — Rakhmetzhanov's AI coding product lab
+-  — Rakhmetzhanov's AI coding product lab
 - [[entities/xania-org.md]] — Context tool for AI coding agents
-- [[yc-s25]] — Y Combinator Summer 2025 batch
-- [[crv]] — Lead seed investor
+-  — Y Combinator Summer 2025 batch
+-  — Lead seed investor
 - [[entities/cursor-3.md]] — AI coding agent; target user of Nia
 - [[concepts/github-copilot-billing.md]] — AI coding tool; target user of Nia
 

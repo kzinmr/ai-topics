@@ -1,5 +1,6 @@
 ---
 title: Matt Godbolt
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -16,6 +17,7 @@ aliases:
 - compiler-explorer
 - godbolt
 - mattgodbolt
+sources: []
 ---
 
 # Matt Godbolt
@@ -194,9 +196,9 @@ Godbolt's writing is characterized by:
 - [[compiler-explorer]] — Interactive assembly visualization tool (godbolt.org)
 - [[ai-as-abstraction-layer]] — Godbolt's semiconductor design analogy for AI coding
 - [[open-source-stewardship]] — Project governance and community decision-making
-- [[compiler-optimizations]] — How modern compilers transform and optimize code
-- [[link-permanence]] — Fighting link rot as a civilizational responsibility
-- [[compiler-explorer-llc]] — Formal entity for Compiler Explorer governance
+-  — How modern compilers transform and optimize code
+-  — Fighting link rot as a civilizational responsibility
+-  — Formal entity for Compiler Explorer governance
 - [[harness-engineering]] — Related to Mitchell Hashimoto's AGENTS.md approach
 
 ## Sources

@@ -1,5 +1,6 @@
 ---
 title: Context Fragments
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 status: active
@@ -14,6 +15,7 @@ related:
   - memory-systems-design-patterns
   - rlm-recursive-language-models
   - experiential-memory
+sources: []
 ---
 
 # Context Fragments

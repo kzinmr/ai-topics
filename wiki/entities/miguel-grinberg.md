@@ -1,7 +1,9 @@
 ---
 title: Miguel Grinberg
+type: entity
 status: active
 tags: [person]
+sources: []
 ---
 
 
@@ -120,14 +122,14 @@ This philosophy — **make the simple things simple** — is the defining charac
 
 [[Flask]] — Python web framework; Grinberg is one of its most prominent educators
 [[FastAPI]] — Rising Python web framework; now roughly equal to Flask in downloads
-[[Microdot]] — Ultra-lightweight web framework for microcontrollers, created by Grinberg
-[[CPython]] — Python implementation; Grinberg has critiqued AI commits to its codebase
+ — Ultra-lightweight web framework for microcontrollers, created by Grinberg
+ — Python implementation; Grinberg has critiqued AI commits to its codebase
 Django — Traditional Python web framework; Grinberg's reviews include it in comparisons
 uv — Package manager Grinberg adopted for Flask/Werkzeug CI/CD
 Werkzeug — WSGI toolkit underlying Flask; Grinberg monitors its development
 Quart — Async Flask alternative; Grinberg documents its near-dormant status
 pallets-eco — Volunteer group maintaining Flask ecosystem extensions
-[[Rust]] — Language Grinberg has been learning; subject of his "AGENTS.md" exploration
+ — Language Grinberg has been learning; subject of his "AGENTS.md" exploration
 TypeScript — Language Grinberg has adopted for full-stack projects
 Go — Language Grinberg has explored for systems programming
 

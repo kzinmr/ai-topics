@@ -1,8 +1,10 @@
 ---
 title: Dynomight
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Dynomight
@@ -172,9 +174,9 @@ The willingness to be wrong publicly is a core part of Dynomight's intellectual 
 - [[Prediction Markets]] — Critique of futarchy and causal inference from market data
 - [[Eliezer Yudkowsky]] — Referenced on coordination problems and "sponge coordination"
 - [[Nick Bostrom]] — Referenced on the Vulnerable World Hypothesis
-- [[Paul Christiano]] — Referenced as endorsing the "wanting is hard" view
-- [[Richard Ngo]] — Referenced on AI motivation and understanding without caring
-- [[Tamsin Leake]] — Referenced alongside Yudkowsky on coordination problems
+-  — Referenced as endorsing the "wanting is hard" view
+-  — Referenced on AI motivation and understanding without caring
+-  — Referenced alongside Yudkowsky on coordination problems
 
 ## Sources
 

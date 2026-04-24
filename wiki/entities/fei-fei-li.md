@@ -8,9 +8,9 @@ related:
   - "[[yann-lecun]]"
   - "[[andrew-ng]]"
   - "[[geoffrey-hinton]]"
-  - "[[stanford-hai]]"
-  - "[[imagenet]]"
-  - "[[world-labs]]"
+  - ""
+  - ""
+  - ""
 sources:
   - "https://grokipedia.com/page/Fei-Fei_Li"
   - "https://profiles.stanford.edu/fei-fei-li"

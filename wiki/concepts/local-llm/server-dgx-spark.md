@@ -1,5 +1,6 @@
 ---
 title: Local LLM Server Setup on DGX Spark
+type: concept
 aliases: [dgx-spark-setup, local-llm-server, nemoclaw-setup-guide]
 created: 2026-04-15
 updated: 2026-04-15

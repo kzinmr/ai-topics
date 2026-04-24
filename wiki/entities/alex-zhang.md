@@ -1,5 +1,6 @@
 ---
 title: Alex L. Zhang
+type: entity
 aliases: [Alex Zhang, alexzhang13, a1zhang]
 status: full
 created: 2026-04-13
@@ -35,6 +36,7 @@ related_papers:
   - Project Popcorn (2025)
   - Triton kernels for OSS AlphaFold3 (2024)
 tags: [person]
+sources: []
 ---
 
 
@@ -221,9 +223,9 @@ Prime Intellect synthesizes both:
 - **[[GPU MODE]]** — Benchmarking leadership
 - **[[KernelBench]]** — ICML 2025 Best Paper
 - **[[Scaffold vs RL Debate]]** — Both Zhang and Yao argue for trained scaffolds
-- **[[Agent-Computer Interfaces]]** — RLM as a new ACI paradigm
-- **[[Inference-Time Scaling]]** — RLM scales computation, not parameters
-- **[[Software 3.0]]** — Trained scaffolds + LLMs
+- **** — RLM as a new ACI paradigm
+- **** — RLM scales computation, not parameters
+- **** — Trained scaffolds + LLMs
 
 ## Status
 

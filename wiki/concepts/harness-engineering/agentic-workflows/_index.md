@@ -1,5 +1,6 @@
 ---
 title: "Agentic Workflows — Harness Engineering配下の開発者ワークフロー"
+type: concept
 aliases:
   - agentic-workflows
   - agentic-coding-patterns
@@ -14,6 +15,7 @@ tags:
   - agentic-workflows
 status: active
 parent: harness-engineering
+sources: []
 ---
 
 # Agentic Workflows — 開発者ワークフロー
@@ -36,7 +38,7 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 | [[simon-willison]] | Agentic Engineering Patterns, Red/Green TDD, Cognitive Debt | 以下のWillisonパターン群 |
 | [[andrej-karpathy]] | Software 2.0, RLによるエージェント学習, データ中心AI | [[karpathy-rl-agents]] |
 | [[entities/sankalp-sinha.md]] | Claude Code 2.0実用ガイド、サブエージェントのlossiness、Throw-Away Draft、コンテキスト60%ルール | 以下のSankalpパターン群 |
-| [[steipete]] | Agent-First Design, CLI-First Development, Plan Mode不要論, inference-speed bottleneck | 以下のSteipeteパターン群 |
+|  | Agent-First Design, CLI-First Development, Plan Mode不要論, inference-speed bottleneck | 以下のSteipeteパターン群 |
 
 ## Simon Willisonの開発パターン
 
@@ -86,7 +88,7 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 |-------|------|
 | [[agent-first-design]] | 「人間向け」ではなく「エージェント向け」コード設計 |
 | [[cli-first-development]] | CLIから始めてフィードバックループを高速化 |
-| [[prompt-driven-development]] | プロンプト駆動開発パターン |
+| [[concepts/harness-engineering/agentic-workflows/prompt-driven-development.md]] | プロンプト駆動開発パターン |
 
 ## Agentic Workflows vs System Architecture
 

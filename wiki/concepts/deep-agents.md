@@ -8,11 +8,12 @@ related:
   - [[concepts/sandbox/in-process.md]]
   - [[concepts/harness-engineering/system-architecture/infrastructure-noise.md]]
   - [[concepts/sandbox/js-runtime.md]]
-  - [[samuel-colvin]]
+  - [[entities/samuel-colvin.md]]
 depth: L2
 status: complete
 created: 2026-04-15
 updated: 2026-04-16
+sources: []
 ---
 
 # Deep Agents — Autonomous Multi-Step AI Agents
@@ -67,4 +68,4 @@ Deep agents require secure code execution environments. Options include:
 - [[harness-engineering]] — Environment design for autonomous agents
 - [[code-mode]] — Code execution for deep agents
 - [[monty-sandbox]] — Secure execution environment
-- [[samuel-colvin]] — Pydantic AI creator
+- [[entities/samuel-colvin.md]] — Pydantic AI creator

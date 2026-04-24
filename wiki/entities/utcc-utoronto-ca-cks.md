@@ -1,5 +1,6 @@
 ---
 title: Chris Siebenmann
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -14,6 +15,7 @@ aliases:
 - utcc.utoronto.ca/~cks
 - Chris Siebenmann Wandering Thoughts
 - cks
+sources: []
 ---
 
 # Chris Siebenmann
@@ -99,9 +101,9 @@ A recurring theme across Siebenmann's writing is **empiricism over dogma**. Whet
 ## Related
 
 - [[unix-philosophy]] — Siebenmann's work is grounded in Unix operational principles
-- [[systemd]] — Frequent topic of analysis and critique
-- [[supply-chain-security]] — Dependency cooldowns discussion
-- [[simon-tatham]] — Another Unix-oriented blogger with similar pragmatism
+-  — Frequent topic of analysis and critique
+-  — Dependency cooldowns discussion
+-  — Another Unix-oriented blogger with similar pragmatism
 - [[concepts/ai-observability.md]] — Logs vs metrics debate
 
 ## Sources

@@ -1,5 +1,6 @@
 ---
 title: "Knowledge Graph Memory for AI Agents"
+type: concept
 created: 2026-04-21
 updated: 2026-04-21
 tags: [concept, memory-systems, knowledge-graph, agentic-rag, llm]
@@ -80,6 +81,6 @@ Each component covers what the others can't.
 
 - [[agentic-alternative-to-graphrag]] — Contextual AI's metadata search approach
 - [[vector-db-agent-memory]] — Semantic memory via embeddings; complementary to graph
-- [[ai-memory-systems]] — Design philosophy comparison across AI platforms
+- [[concepts/harness-engineering/system-architecture/ai-memory-systems.md]] — Design philosophy comparison across AI platforms
 - [[ai-agent-memory-two-camps]] — Two camps taxonomy: memory backends vs context substrates
 - [[sheshansh-agrawal]] — Contextual AI researcher, agentic retrieval, BlitzRank reranker

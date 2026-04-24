@@ -1,5 +1,6 @@
 ---
 title: "TRL — Transformer Reinforcement Learning"
+type: concept
 created: 2026-04-19
 updated: 2026-04-19
 tags: [fine-tuning, trl, reinforcement-learning, huggingface, library]
@@ -7,6 +8,7 @@ related:
   - concepts/fine-tuning/_index
   - concepts/fine-tuning/grpo-rl-training
   - concepts/fine-tuning/rlhf-dpo-preference
+sources: []
 ---
 
 # TRL (Transformer Reinforcement Learning)

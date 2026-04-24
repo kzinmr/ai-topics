@@ -1,5 +1,6 @@
 ---
 title: OpenAI CUA (Computer-Using Agent)
+type: entity
 aliases:
 - openai-cua
 - cua-model

@@ -1,8 +1,10 @@
 ---
 title: Chris of Entropic Thoughts
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Chris of Entropic Thoughts
@@ -180,9 +182,9 @@ Chris's interests span an unusually wide range:
 - [[Bayesian Reasoning]] — Odds-form Bayes' rule, forecasting
 - [[Software Delivery]] — Tindall framework, handoff waste, toil
 - [[Haskell]] — Functional programming, Esqueleto, performance
-- [[Emacs]] — Org mode publishing, Magit, personal workflow
-- [[LLM Evaluation]] — Statistical analysis of code generation benchmarks
-- [[Heavy-Tailed Distributions]] — CLT limitations, Cantelli bounds
+-  — Org mode publishing, Magit, personal workflow
+-  — Statistical analysis of code generation benchmarks
+-  — CLT limitations, Cantelli bounds
 
 ## Influence
 

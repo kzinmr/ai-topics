@@ -1,5 +1,6 @@
 ---
 title: "Death of Browser — ブラウザの脱人間化"
+type: concept
 aliases:
   - post-browser-era
   - agentic-browser
@@ -13,6 +14,7 @@ tags:
   - browser-agent
   - synthesis
 status: active
+sources: []
 ---
 
 # Death of Browser — ブラウザの脱人間化
@@ -187,8 +189,8 @@ Stage 1 (2024)     Stage 2 (2025)         Stage 3 (2026)
 ## 関連コンセプト
 
 - [[harness-engineering]] — エージェント環境設計
-- [[concepts/agentic-engineering.md]] — エージェントを活用したソフトウェア開発
-- [[managed-agents-architecture]] — マネージドエージェントアーキテクチャ
+-  — エージェントを活用したソフトウェア開発
+-  — マネージドエージェントアーキテクチャ
 - [[concepts/model-context-protocol-mcp.md]] — Model Context Protocol
 
 ## 関連エンティティ

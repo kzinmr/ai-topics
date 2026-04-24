@@ -1,5 +1,6 @@
 ---
 title: Ilya Sutskever
+type: entity
 created: 2026-04-13
 updated: 2026-04-13
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
@@ -10,6 +11,7 @@ tags:
   - openai
   - safe-superintelligence-inc
   - gpt
+sources: []
 ---
 
 
@@ -173,11 +175,11 @@ This contrasts sharply with OpenAI's product-driven approach and Anthropic's dua
 - [[Sam Altman]] — OpenAI CEO; former colleague; board crisis adversary
 - [[Greg Brockman]] — OpenAI co-founder and President
 - [[John Schulman]] — OpenAI co-founder; RL researcher
-- [[Jan Leike]] — Co-founded superalignment team with Sutskever; resigned citing safety deprioritization
+-  — Co-founded superalignment team with Sutskever; resigned citing safety deprioritization
 - [[openai]] — Company Sutskever co-founded and led technically (2015–2024)
-- [[safe-superintelligence-inc]] — SSI, Sutskever's current venture
+-  — SSI, Sutskever's current venture
 - [[ai-safety]] — Sutskever's primary research focus at SSI
-- [[superalignment]] — Team Sutskever co-founded at OpenAI
+-  — Team Sutskever co-founded at OpenAI
 
 ## Sources
 

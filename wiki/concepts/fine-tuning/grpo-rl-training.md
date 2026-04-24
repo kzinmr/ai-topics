@@ -1,5 +1,6 @@
 ---
 title: "GRPO RL Training"
+type: concept
 created: 2026-04-19
 updated: 2026-04-19
 tags: [fine-tuning, reinforcement-learning, grpo, trl, post-training]
@@ -7,6 +8,7 @@ related:
   - concepts/fine-tuning/_index
   - concepts/fine-tuning/trl
   - concepts/fine-tuning/peft-lora-qlora
+sources: []
 ---
 
 # GRPO (Group Relative Policy Optimization)

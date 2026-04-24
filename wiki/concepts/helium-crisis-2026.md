@@ -1,9 +1,11 @@
 ---
 title: "Helium Crisis 2026"
+type: concept
 created: 2026-04-10
 updated: 2026-04-10
 tags: [concept, semiconductor, supply-chain, helium, chip-manufacturing]
 related: [semiconductor, chip-shortage, geopolitical-risk, iran-conflict]
+sources: []
 ---
 
 # Helium Crisis 2026
@@ -42,6 +44,6 @@ Semiconductor supply chain disruption caused by helium shortage, impacting chip 
 - Alternative cooling technologies research
 
 ## Sources
-- [[raw/articles/carraglobe.com--semiconductor-supply-chain-disruption-2026--93988faf.md]]
-- [[raw/articles/taiwannews.com.tw--news-6332336--8809b6ca.md]]
-- [[raw/articles/theconversation.com--why-iran-targeted-amazon-data-centers-and-what-that-does-and--f30f95b8.md]]
+- 
+- 
+- 

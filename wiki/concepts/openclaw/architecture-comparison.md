@@ -1,5 +1,6 @@
 ---
 title: "OpenClaw vs Hermes — Architecture Comparison"
+type: concept
 aliases:
   - openclaw-hermes-architecture
   - hermes-openclaw-comparison

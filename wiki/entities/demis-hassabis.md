@@ -1,5 +1,6 @@
 ---
 title: Demis Hassabis
+type: entity
 created: 2026-04-14
 updated: 2026-04-14
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
@@ -11,6 +12,7 @@ tags:
   - alphago
   - agi
   - nobel-prize
+sources: []
 ---
 
 
@@ -193,12 +195,12 @@ Co-founded with **Shane Legg** (ML researcher) and **Mustafa Suleyman** (entrepr
 ## Related
 
 - [[mustafa-suleyman]] — DeepMind co-founder; different approach (consumer AI focus)
-- [[shane-legg]] — DeepMind co-founder; Chief AGI Scientist
+-  — DeepMind co-founder; Chief AGI Scientist
 - [[dario-amodei]] — Anthropic CEO; former DeepMind colleague; different safety philosophy
-- [[john-jumper]] — AlphaFold co-lead; Nobel co-recipient
-- [[raw/articles/prnewswire.com--news-releases-agibot-reaches-10-000-units-as-real-world-dema--1e894058.md]] — Hassabis's central research goal
+-  — AlphaFold co-lead; Nobel co-recipient
+-  — Hassabis's central research goal
 - [[reinforcement-learning]] — Core technique in AlphaGo/AlphaZero
-- [[protein-folding]] — AlphaFold's scientific breakthrough
+-  — AlphaFold's scientific breakthrough
 
 ## Sources
 

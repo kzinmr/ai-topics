@@ -1,5 +1,6 @@
 ---
 title: "Multi-Agent Research System"
+type: concept
 aliases:
   - multi-agent-research
   - orchestrator-worker-research
@@ -94,5 +95,5 @@ User Query → LeadResearcher (計画、200kトークン超でMemoryに保存)
 
 - [[harness-engineering]] — 上位インデックス
 - [[building-effective-agents]] — エージェント構築の基本原理
-- [[orchestrator-workers]] — オーケストレーター-ワーカーパターン
+-  — オーケストレーター-ワーカーパターン
 - [[context-engineering]] — コンテキストエンジニアリング

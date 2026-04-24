@@ -1,5 +1,6 @@
 ---
 title: "Tasteful Tokenmaxxing — Quality-Over-Quantity AI Adoption"
+type: concept
 created: 2026-04-23
 updated: 2026-04-23
 tags: [ai-agents, optimization, technique, enterprise, emerging]
@@ -45,7 +46,7 @@ Tokenmaxxing exists on a spectrum from "tasteful" to "untasteful":
 
 [[token-economics]] provides the cost framework; tasteful tokenmaxxing is the **workflow strategy** that operationalizes those cost savings. Where token economics answers *"how much do tokens cost?"*, tasteful tokenmaxxing answers *"how should we use tokens?"*
 
-Key connection: Tasteful tokenmaxxing achieves the **FinOps layer** of [[token-economics#Four Optimization Layers]] through behavioral and workflow changes rather than technical optimizations alone.
+Key connection: Tasteful tokenmaxxing achieves the **FinOps layer** of  through behavioral and workflow changes rather than technical optimizations alone.
 
 ## Industry Adoption Signals (April 2026)
 
@@ -62,8 +63,8 @@ Key connection: Tasteful tokenmaxxing achieves the **FinOps layer** of [[token-e
 - [[agentic-engineering]] — Developer workflows for agent-assisted development
 - [[agent-loop-orchestration]] — Execution patterns that affect token usage
 - [[cognitive-debt]] — Accumulated technical debt from poor-quality agent output
-- [[context-anxiety]] — The anxiety of wasting context windows on low-value content
+- [[concepts/harness-engineering/system-architecture/context-anxiety.md]] — The anxiety of wasting context windows on low-value content
 
 ## Sources
 
-- [[raw/articles/ainews-tasteful-tokenmaxxing-2026-04-23.md]] — AINews #21, Latent.Space (April 2026)
+-  — AINews #21, Latent.Space (April 2026)

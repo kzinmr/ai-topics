@@ -1,5 +1,6 @@
 ---
 title: "OpenAI Symphony"
+type: concept
 created: 2026-04-13
 updated: 2026-04-13
 tags: [concept, agent-team-swarm, openai, orchestration]
@@ -147,7 +148,7 @@ You are working on a Linear ticket {{ issue.identifier }}
 - [[Dark Factory Software Factory]] — 完全自律開発への次のステップ
 - [[Anthropic Managed Agents]] — 競合のマネージドAgentプラットフォーム
 - [[Multi-Agent Autonomy Scale]] — 大規模Agent協調の研究
-- [[Ryan Lopopolo]] — Symphonyの作者、Harness Engineering提唱者。OpenAI Frontierで1M LOCのagent-only実験を主導
+- [[ryan-lopopolo]] — Symphonyの作者、Harness Engineering提唱者。OpenAI Frontierで1M LOCのagent-only実験を主導
 
 ---
 

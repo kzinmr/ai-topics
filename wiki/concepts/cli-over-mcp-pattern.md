@@ -1,10 +1,11 @@
 ---
 title: "CLI Over MCP Pattern"
+type: concept
 created: 2026-04-13
 updated: 2026-04-13
 tags: [cli, mcp, tool-design, context-efficiency, agentic-engineering]
 aliases: ["cli-first-development", "mcp-skepticism", "tool-agnostic-agents", "minimal-tooling-pattern"]
-related: [[direct-prompting-philosophy]], [[claude-code-best-practices]], [[context-window-management]], [[concepts/agentic-engineering.md]]
+related: [[direct-prompting-philosophy]], [[claude-code-best-practices]], [[context-window-management]], 
 sources:
   - url: "https://steipete.me/posts/2025/optimal-ai-development-workflow/"
     author: "Peter Steinberger (@steipete)"
@@ -147,7 +148,7 @@ Both patterns share the core principle: **reduce overhead, increase direct engag
 - [[direct-prompting-philosophy]] — The anti-overengineering mindset this serves
 - [[claude-code-best-practices]] — Practical implementation patterns
 - [[context-window-management]] — How CLIs preserve precious context
-- [[concepts/agentic-engineering.md]] — The broader methodology
+-  — The broader methodology
 
 ## Sources
 

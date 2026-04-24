@@ -6,10 +6,11 @@ related:
   - [[code-mode]]
   - [[structured-outputs]]
   - [[ai-observability]]
-  - [[samuel-colvin]]
+  - [[entities/samuel-colvin.md]]
 depth: L2
 status: complete
 created: 2026-04-16
+sources: []
 ---
 
 # Pydantic AI — Type-Safe Python Agent Framework
@@ -83,4 +84,4 @@ print(result.data)  # Type-safe CityInfo object
 - [[structured-outputs]] — Core validation approach
 - [[ai-observability]] — Logfire integration
 - [[harness-engineering]] — Type safety as harness constraint
-- [[samuel-colvin]] — Creator/CEO
+- [[entities/samuel-colvin.md]] — Creator/CEO

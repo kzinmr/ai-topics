@@ -1,5 +1,6 @@
 ---
 title: "Solo Founder & Super IC — AI時代の新しい働き方"
+type: concept
 aliases:
   - solo-founder-ai
   - super-individual-contributor
@@ -16,6 +17,7 @@ depth_tracking:
   target: 10KB+
   current: ~8KB
   next_steps: "Add more quotes from r/ClaudeCode discussion, integrate more FourWeekMBA analysis, add real-world case studies"
+sources: []
 ---
 
 # Solo Founder & Super IC — AI時代の新しい働き方
@@ -127,8 +129,8 @@ AIは基礎的なスキルを代替しない。ドメインの専門知識がな
 ## 関連概念
 
 - [[ai-org-from-hierarchy-to-intelligence]] — Blockの階層からインテリジェンスへの移行
-- [[ai-org-context-as-moat]] — Proprietary ContextとFission-Fusion
-- [[concepts/agentic-engineering.md]] — 開発者のAI活用ワークフロー
+- [[concepts/ai-organization/ai-org-context-as-moat.md]] — Proprietary ContextとFission-Fusion
+-  — 開発者のAI活用ワークフロー
 - [[harness-engineering]] — エージェントの制御・構造化
 
 ## ソース

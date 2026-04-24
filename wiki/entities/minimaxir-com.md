@@ -1,8 +1,10 @@
 ---
 title: Max Woolf
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Max Woolf
@@ -13,7 +15,7 @@ tags:
 
 Woolf's blog at minimaxir.com is characterized by **data-driven skepticism, empirical benchmarking, and a willingness to challenge industry narratives with hard numbers**. He approaches every claim — whether about AI capabilities, library performance, or platform policies — with the same methodology: build a test, measure the results, publish the data, and let the numbers speak. His tone is often described as "snarky" (his own characterization), but this masks a rigorous commitment to evidence-based technical analysis.
 
-His projects are funded through [[Patreon]], and he is notable for being one of the few independent technical bloggers who has built a sustainable, audience-supported model for data journalism.
+His projects are funded through , and he is notable for being one of the few independent technical bloggers who has built a sustainable, audience-supported model for data journalism.
 
 ---
 
@@ -140,11 +142,11 @@ Woolf identifies a persistent gap in technical education: **there are few resour
 [[textgenrnn]] — Neural text generation library (Keras/TensorFlow), ~5,000 GitHub stars
 [[BuzzFeed]] — Woolf's employer; Senior Data Scientist working on AI initiatives
 [[polars]] — Python data processing library Woolf advocates over pandas
-[[Rust]] — Language Woolf has been exploring with AI-assisted development
+ — Language Woolf has been exploring with AI-assisted development
 [[Miguel Grinberg]] — Fellow blogger with contrasting views on AI coding tools
-[[CPython]] — Python implementation; Woolf's benchmarks compare against C/C++ implementations
+ — Python implementation; Woolf's benchmarks compare against C/C++ implementations
 CUDA — NVIDIA GPU computing platform; Woolf explores agent-driven algorithm porting
-[[Patreon]] — Funding platform supporting Woolf's independent research
+ — Funding platform supporting Woolf's independent research
 big-list-of-naughty-strings — Woolf's widely-used edge-case testing data repository
 
 ---

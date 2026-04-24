@@ -1,10 +1,12 @@
 ---
 title: "AI Bubble Economics"
+type: concept
 created: 2026-04-10
 updated: 2026-04-10
 tags: [ai-bubble, economics, subprime-ai, venture-capital, hype-cycle, market-analysis]
 aliases: ["subprime-ai-crisis", "ai-economics-2026", "ai-bubble-burst"]
-related: [[claude-mythos-glasswing]], [[concepts/agentic-engineering.md]], [[cognitive-cost-of-agents]], [[ai-coding-reliability]]
+related: [[claude-mythos-glasswing]], , [[cognitive-cost-of-agents]], [[ai-coding-reliability]]
+sources: []
 ---
 
 # AI Bubble Economics
@@ -232,7 +234,7 @@ Gary Marcus has been one of the most consistent critics of AI economics, arguing
 - [[claude-mythos-glasswing]] — Frontier model release and the cost of safety-gated access
 - [[ai-coding-reliability]] — Whether AI-generated code delivers real productivity or creates technical debt
 - [[cognitive-cost-of-agents]] — The hidden organizational costs of delegating work to AI
-- [[concepts/agentic-engineering.md]] — The promise vs. reality of AI-powered software development
+-  — The promise vs. reality of AI-powered software development
 
 ## Sources
 

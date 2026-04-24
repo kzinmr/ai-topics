@@ -1,5 +1,6 @@
 ---
 title: Shlok Khemani
+type: entity
 entity_type: person
 status: L2
 created: 2026-04-13
@@ -156,7 +157,7 @@ This validated his thesis that **file-based memory is the natural architecture f
 - [[claude-memory]] — File-based memory architecture
 - [[chatgpt-memory-bitter-lesson]] — ChatGPT's memory system analysis
 - [[multi-agent-orchestration]] — Patterns for coordinating multiple agents
-- [[background-agents]] — Async agent workflows
-- [[cache-first-engineering]] — Optimizing for prompt cache preservation
-- [[vibe-coding]] — The approach Khemani's work supports and critiques
+-  — Async agent workflows
+-  — Optimizing for prompt cache preservation
+- [[concepts/harness-engineering/agentic-workflows/vibe-coding.md]] — The approach Khemani's work supports and critiques
 - [[anthropic]] — Creator of Claude, Claude Code, and the memory philosophy Khemani analyzes

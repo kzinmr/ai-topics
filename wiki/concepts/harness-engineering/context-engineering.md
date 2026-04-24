@@ -1,5 +1,6 @@
 ---
 title: "Context Engineering — コンテキスト最適化の統合フレームワーク"
+type: concept
 aliases:
   - context-engineering
   - コンテキストエンジニアリング

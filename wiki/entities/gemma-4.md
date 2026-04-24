@@ -1,5 +1,6 @@
 ---
 title: Google Gemma 4
+type: entity
 created: 2026-04-10
 updated: 2026-04-13
 tags:
@@ -12,6 +13,7 @@ related:
 - google-deepmind
 - open-models
 - on-device-ai
+sources: []
 ---
 
 # Google Gemma 4
@@ -92,7 +94,7 @@ Key findings:
 Inference insight: Gemma 4 26B's small parameter count makes it practical for "CPU MoE" inference — loading certain experts on CPU while keeping KV cache on GPU. This suggests a path toward more efficient local MoE deployments where expert caching strategies could optimize the ~25% dormancy rate.
 
 ## Sources
-- [[raw/articles/blog.google--innovation-and-ai-technology-developers-tools-gemma-4--9648c97b.md]]
-- [[raw/articles/huggingface.co--google-gemma-4-e4b--b37a0ece.md]]
+- 
+- 
 - Google DeepMind announcement
 - Martin Alderson, "A little tool to visualise MoE expert routing," martinalderson.com (April 13, 2026)

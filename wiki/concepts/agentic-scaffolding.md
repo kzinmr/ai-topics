@@ -1,9 +1,11 @@
 ---
 title: "Agentic Scaffolding"
+type: concept
 created: 2026-04-13
 source: "OpenAI Cookbook — Agentic scaffolding patterns"
 tags: [agents, architecture, scaffolding]
 status: draft
+sources: []
 ---
 
 # Agentic Scaffolding
@@ -73,5 +75,5 @@ Step 1 (Plan) → Review → Step 2 (Execute) → Verify → Step 3 (Report)
 
 - [[agent-security-patterns]] — Agent Security Patterns
 - [[agent-loop-orchestration]] — Agent Loop Orchestration
-- [[building-effective-agents]] — Building Effective Agents (Anthropic)
+- [[concepts/harness-engineering/system-architecture/building-effective-agents.md]] — Building Effective Agents (Anthropic)
 - [[concepts/agent-sandboxing.md]] — Agent Sandboxing

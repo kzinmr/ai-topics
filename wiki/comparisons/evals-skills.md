@@ -1,5 +1,6 @@
 ---
 title: "Evals Skills for Coding Agents"
+type: comparison
 created: 2026-04-12
 tags: [evaluation, coding-agents, mcp, automation, harness-engineering]
 sources:
@@ -61,7 +62,7 @@ These skills are a **starting point** and only encode common mistakes that gener
 - [[ai-evals]] — Main evaluation framework
 - [[harness-engineering]] — OpenAI's approach to AI-assisted development
 - [[llm-as-judge]] — Using LLMs to evaluate AI outputs
-- [[error-analysis]] — Systematic categorization of failure modes
+-  — Systematic categorization of failure modes
 
 ## Sources
 

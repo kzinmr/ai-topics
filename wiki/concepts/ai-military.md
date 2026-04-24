@@ -1,5 +1,6 @@
 ---
 title: "AI in Military Wargames"
+type: concept
 date: 2026-04-10
 sources:
   - "https://garymarcus.substack.com/p/claude-defeats-us-military-team-in"

@@ -1,8 +1,10 @@
 ---
 title: George Hotz (geohot)
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # George Hotz (geohot)
@@ -111,9 +113,9 @@ Unlike many AI researchers, Hotz is **skeptical of AI safety concerns**:
 - [[John Carmack]] — Also skeptical of mainstream AI approaches; focused on efficiency and practical results
 - [[Grant Slatton]] — AI alignment and technocapital; contrasting views on AI governance and open-source
 - [[Jayden Milne]] — AI culture and society; Hotz is more infrastructure-focused, Milne more culture-focused
-- [[comma.ai]] — Open-source ADAS company competing with Tesla's FSD
-- [[tinygrad]] — Minimalist deep learning framework
-- [[The Bitter Lesson]] — Rich Sutton's essay that heavily influences Hotz's philosophy
+-  — Open-source ADAS company competing with Tesla's FSD
+-  — Minimalist deep learning framework
+-  — Rich Sutton's essay that heavily influences Hotz's philosophy
 
 ## Sources
 

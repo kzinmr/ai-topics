@@ -1,5 +1,6 @@
 ---
 entity: "jo-bergum"
+type: entity
 aliases: [jobergum, Jo Kristian Bergum]
 url: "https://www.linkedin.com/in/jo-bergum/"
 blog: "https://hornet.dev/blog"
@@ -16,6 +17,7 @@ tags:
   - late-interaction
   - agentic-retrieval
   - hornet
+sources: []
 ---
 
 
@@ -150,9 +152,9 @@ Native ColBERT support in Vespa, enabling explainable semantic search using deep
 - [[Hornet]] — His new company, a retrieval engine for agents
 - [[Agentic-Retrieval]] — The paradigm shift he's building for
 - [[Mutually-Assured-Distraction]] — His key insight about retrieval-reasoning compounding errors
-- [[Hybrid-Search]] — BM25 + vector search, a Vespa specialty
-- [[Explainable-Semantic-Search]] — ColBERT's key advantage over single-vector embeddings
-- [[Doug Turnbull]] — Fellow search relevance engineer, co-author of "AI-Powered Search"
+-  — BM25 + vector search, a Vespa specialty
+-  — ColBERT's key advantage over single-vector embeddings
+- [[doug-turnbull]] — Fellow search relevance engineer, co-author of "AI-Powered Search"
 
 ## Sources
 

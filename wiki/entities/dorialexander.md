@@ -1,5 +1,6 @@
 ---
 title: "Pierre-Carl Langlais"
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 source: pleias.fr
@@ -13,6 +14,7 @@ tags:
   - french-tech
   - pleias
   - small-language-models
+sources: []
 ---
 
 
@@ -186,9 +188,9 @@ Long-time Wikipedia contributor since ~2006, elected administrator in 2012 with 
 - [[Sciences Po]] — Where Langlais teaches data science
 - [[Open Science]] — Core philosophy underlying Pleias's work
 - [[Small Language Models]] — Pleias's model design philosophy
-- [[Retrieval-Augmented Generation]] — Domain of Pleias-RAG models
-- [[Opsci]] — Langlais's former company
-- [[Nemotron-Personas-France]] — Collaboration with Nvidia
+-  — Domain of Pleias-RAG models
+-  — Langlais's former company
+-  — Collaboration with Nvidia
 
 ## Sources
 

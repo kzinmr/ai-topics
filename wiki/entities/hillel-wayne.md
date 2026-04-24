@@ -1,5 +1,6 @@
 ---
 title: Hillel Wayne
+type: entity
 aliases: [buttondown-com-hillelwayne, computer-things-newsletter]
 created: 2026-04-10
 updated: 2026-04-19
@@ -11,6 +12,7 @@ tags:
   - software-engineering
   - empirical-research
   - testing
+sources: []
 ---
 
 
@@ -130,10 +132,10 @@ He explicitly states: *"Don't feel like you have to trade me something if you on
 ## Related
 
 - [[formal-methods]] — Mathematical techniques for verifying software correctness
-- [[tla-plus]] — Temporal Logic of Actions, formal specification language by Leslie Lamport
-- [[raw/articles/2026-04-15-property-based-testing-anthropic.md]] — Testing general properties rather than specific examples
-- [[software-friction]] — Cognitive and operational costs in software development
-- [[hierarchy-of-controls]] — Framework for preventing production incidents
+-  — Temporal Logic of Actions, formal specification language by Leslie Lamport
+-  — Testing general properties rather than specific examples
+-  — Cognitive and operational costs in software development
+-  — Framework for preventing production incidents
 
 ## Sources
 

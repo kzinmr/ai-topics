@@ -1,22 +1,18 @@
 ---
-title: Interactive Explanations
-tags: [concept]
-status: skeleton
+title: "Interactive Explanations"
+type: concept
+tags: ['concept']
+status: complete
+description: "Moved to concepts/harness-engineering/agentic-workflows/interactive-explanations.md"
+created: 2026-04-14
+updated: 2026-04-24
+related:
+  - "[[concepts/harness-engineering/agentic-workflows/interactive-explanations.md]]"
+sources: []
 ---
 
 # Interactive Explanations
 
-> See: [harness-engineering/agentic-workflows/interactive-explanations.md](./harness-engineering/agentic-workflows/interactive-explanations.md)
+> **Moved:** コンテンツは [[concepts/harness-engineering/agentic-workflows/interactive-explanations.md]] に移動しました。
 
-Interactive explanations provide step-by-step, participatory learning experiences where users engage with content through active exploration rather than passive reading.
-
-## Expansion Needed
-
-- Move content from harness-engineering/agentic-workflows/interactive-explanations.md here, or
-- Update all wikilinks to point directly to harness-engineering/agentic-workflows/interactive-explanations.md
-- Link to related concepts: linear-walkthroughs, interactive-explanations
-
-## See Also
-
-- [[concepts/_index.md]]
-- [[concepts/harness-engineering/agentic-workflows/interactive-explanations.md]]
+詳細: [[concepts/harness-engineering/agentic-workflows/interactive-explanations.md]]

@@ -1,5 +1,6 @@
 ---
 title: John Schulman
+type: entity
 created: 2026-04-13
 updated: 2026-04-13
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
@@ -11,6 +12,7 @@ tags:
   - anthropic
   - thinking-machines-lab
   - ai-safety
+sources: []
 ---
 
 
@@ -176,7 +178,7 @@ A recurring theme in Schulman's recent work is **scalable oversight**: how can h
 
 ## Related
 
-- [[Pieter Abbeel]] — PhD advisor at UC Berkeley; robotics and RL
+-  — PhD advisor at UC Berkeley; robotics and RL
 - [[greg-brockman]] — OpenAI co-founder; co-authored OpenAI Gym (2016); collaborated on early RL work
 - [[ilya-sutskever]] — OpenAI co-founder; co-authored "Let's Verify Step by Step"
 - [[Dario Amodei]] — Anthropic colleague; co-authored "Concrete Problems in AI Safety"
@@ -186,7 +188,7 @@ A recurring theme in Schulman's recent work is **scalable oversight**: how can h
 - [[ai-safety]] — Scalable oversight, alignment research, safety exodus
 - [[openai]] — Company Schulman co-founded (2015–2024)
 - [[anthropic-computer-use]] — Company Schulman briefly joined (2024–2025)
-- [[thinking-machines-lab]] — Schulman's current venture (2025–present)
+-  — Schulman's current venture (2025–present)
 
 ## Sources
 

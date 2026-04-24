@@ -1,5 +1,6 @@
 ---
 title: BASE Consistency Model
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags:
@@ -76,5 +77,5 @@ BASE systems align with **AP (Availability + Partition Tolerance)** in the CAP t
 
 ## Related Concepts
 - [[event-driven-architecture]]
-- [[cap-theorem]]
-- [[microservices-vs-monolith]]
+- 
+- [[concepts/microservices-vs-monolith.md]]

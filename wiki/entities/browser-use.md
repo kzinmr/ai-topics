@@ -1,5 +1,6 @@
 ---
 title: browser-use
+type: entity
 aliases:
 - browseruse
 - browser-use-oss
@@ -96,7 +97,7 @@ await agent.run()
 - 明示的な`done()`ツールによる終了判定
 - コアエージェントループは単純なfor-loop。リトライ、レート制限、接続回復は「ops」でありエージェントではない
 
-→ [[concepts/agent-harnesses]] 参照
+→ [[concepts/agent-harnesses.md]] 参照
 
 ## DOMベースアプローチの意義
 

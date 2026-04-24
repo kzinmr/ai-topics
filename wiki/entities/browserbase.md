@@ -1,5 +1,6 @@
 ---
 title: Browserbase
+type: entity
 aliases:
 - browserbase-hq
 - stagehand

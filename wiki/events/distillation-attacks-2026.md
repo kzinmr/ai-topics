@@ -11,6 +11,7 @@ tags:
  - distillation
  - model-rights
  - open-source-ai
+sources: []
 ---
 
 # Anthropic Accuses Chinese Labs of Industrial-Scale Distillation Attacks
@@ -55,8 +56,8 @@ The accusations were described as:
 ## Related Context
 
 - [[kimi-k2-6]] — Moonshot's latest release (April 2026)
-- [[deepseek-v3]] — DeepSeek's leading open model
-- [[model-distillation]] — Technical background on distillation
+-  — DeepSeek's leading open model
+- [[concepts/local-llm/model-distillation.md]] — Technical background on distillation
 - [[open-model-consortium]] — Open model governance discussions
 
 ## References

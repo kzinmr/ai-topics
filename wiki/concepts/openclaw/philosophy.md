@@ -1,5 +1,6 @@
 ---
 title: "OpenClaw Philosophy — Primitives Over Defaults"
+type: concept
 aliases:
   - openclaw-philosophy
   - primitives-over-defaults

@@ -1,7 +1,9 @@
 ---
 title: Local LLM
+type: concept
 category: concept
 status: active
+sources: []
 ---
 
 # Local LLM

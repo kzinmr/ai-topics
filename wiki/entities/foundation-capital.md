@@ -1,5 +1,6 @@
 ---
 title: "Foundation Capital"
+type: entity
 description: "Venture capital firm that published 'AI's Trillion-Dollar Opportunity: Context Graphs' — arguing that the next trillion-dollar platforms will be built by capturing decision traces, not adding AI to existing data"
 tags: [company, vc, foundation-capital, context-graph, investor]
 status: complete
@@ -9,6 +10,7 @@ related:
   - "[[playerzero]]"     # Path 3 startup in their portfolio
 status: complete
 created: 2026-04-20
+sources: []
 ---
 
 # Foundation Capital

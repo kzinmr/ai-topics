@@ -1,8 +1,10 @@
 ---
 title: Brian Krebs
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Brian Krebs
@@ -118,9 +120,9 @@ His coverage of the Kimwolf story revealed how botnet operators were tunneling t
 - [[AI Agent Security]] — OpenClaw, prompt injection, and the lethal trifecta
 - [[Phishing]] — Evolution from static pages to real-time proxy attacks (Starkiller)
 - [[Cybercrime Economics]] — Follow-the-money journalism approach
-- [[Supply Chain Attack]] — AI coding assistant compromises and dependency chains
-- [[DDoS]] — Krebs's own experience being targeted and the broader botnet threat
-- [[State-Sponsored Hacking]] — APT28/Forest Blizzard, Iran-linked operations
+-  — AI coding assistant compromises and dependency chains
+-  — Krebs's own experience being targeted and the broader botnet threat
+-  — APT28/Forest Blizzard, Iran-linked operations
 
 ## Influence Metrics
 

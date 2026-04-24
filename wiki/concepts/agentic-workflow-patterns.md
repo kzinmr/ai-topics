@@ -1,5 +1,6 @@
 ---
 title: "Agentic Workflow Patterns — 3 Levels, 4 Components, Architecture Taxonomy"
+type: concept
 created: 2026-04-22
 updated: 2026-04-22
 tags: [concept, ai-agents, orchestration, framework]
@@ -90,5 +91,5 @@ aliases:
 - [[harness-engineering]] — Agent = Model + Harness
 - [[concepts/harness-engineering/system-architecture/container-context.md]] — システム構築パターン
 - [[agent-loop-orchestration]] — Agent Loop Orchestration
-- [[building-effective-agents]] — Building Effective Agents (Anthropic)
+- [[concepts/harness-engineering/system-architecture/building-effective-agents.md]] — Building Effective Agents (Anthropic)
 - [[context-engineering]] — コンテキスト最適化の統合フレームワーク

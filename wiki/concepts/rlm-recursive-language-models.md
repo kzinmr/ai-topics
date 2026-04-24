@@ -1,5 +1,6 @@
 ---
 title: "RLM (Recursive Language Models)"
+type: concept
 created: 2026-04-13
 related_people:
   - Alex Zhang (first author, MIT)
@@ -12,6 +13,7 @@ related_concepts:
   - Inference-Time Scaling
   - Scaffold vs RL Debate
   - REPL Environment
+sources: []
 ---
 
 # RLM (Recursive Language Models)
@@ -233,9 +235,9 @@ Returns `Prediction` with:
 - **[[DSPy.RLM]]** — This page covers the DSPy.RLM implementation
 - **[[Context Folding]]** — Parallel approach: branch/return with summarization
 - **[[Inference-Time Scaling]]** — RLM scales computation, not parameters
-- **[[Agent-Computer Interfaces]]** — RLM as a new ACI paradigm
-- **[[Scaffold vs RL Debate]]** — RLMs are trainable scaffolds
+- **** — RLM as a new ACI paradigm
+- **** — RLMs are trainable scaffolds
 - **[[Shunyu Yao]]** — "The Second Half" framework; RL generalization thesis
 - **[[Alex Zhang]]** — Primary author, RLM creator
 - **[[Omar Khattab]]** — Co-author, DSPy creator, ColBERT lineage
-- **[[Tim Kraska]]** — Co-author, MIT DSG, ML systems expert
+- **** — Co-author, MIT DSG, ML systems expert

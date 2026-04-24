@@ -1,5 +1,6 @@
 ---
 title: "Noetik"
+type: entity
 created: 2026-04-20
 updated: 2026-04-20
 tags: [company, biotech-ai, cancer-ai, multimodal, transformer, gsk]
@@ -8,6 +9,7 @@ related:
  - entities/gary-marcus
  - concepts/reasoning-models
  - concepts/multimodal-models
+sources: []
 ---
 
 # Noetik

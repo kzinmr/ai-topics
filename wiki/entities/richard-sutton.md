@@ -1,5 +1,6 @@
 ---
 title: Richard Sutton
+type: entity
 created: 2026-04-13
 updated: 2026-04-13
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
@@ -9,6 +10,7 @@ tags:
   - agi
   - keen-technologies
   - bitter-lesson
+sources: []
 ---
 
 
@@ -126,11 +128,11 @@ Sutton emphasizes mathematical foundations and empirical validation over theoret
 ## Related
 
 - [[John Carmack]] — Keen Technologies partner; advocate of Sutton's "Bitter Lesson"
-- [[Andrew G. Barto]] — PhD advisor; co-author of RL textbook; Turing Award co-recipient
+-  — PhD advisor; co-author of RL textbook; Turing Award co-recipient
 - [[reinforcement-learning]] — Sutton's foundational field
 - [[concepts/chatgpt-memory-bitter-lesson.md]] — Sutton's most influential essay
-- [[raw/articles/prnewswire.com--news-releases-agibot-reaches-10-000-units-as-real-world-dema--1e894058.md]] — Sutton's long-term research goal
-- [[keen-technologies]] — Sutton's current industry affiliation
+-  — Sutton's long-term research goal
+-  — Sutton's current industry affiliation
 
 ## Sources
 

@@ -1,5 +1,6 @@
 ---
 title: Dario Amodei
+type: entity
 created: 2026-04-14
 updated: 2026-04-14
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
@@ -10,6 +11,7 @@ tags:
   - ai-safety
   - claude
   - interpretability
+sources: []
 ---
 
 
@@ -155,13 +157,13 @@ At the **India AI Impact Summit** (February 2026):
 
 ## Related
 
-- [[daniela-amodei]] — Sister; Anthropic co-founder
+-  — Sister; Anthropic co-founder
 - [[sam-altman]] — Former OpenAI colleague; now competitor as OpenAI CEO
 - [[mustafa-suleyman]] — Counterpart at Microsoft AI; different approach to AI safety
 - [[demis-hassabis]] — DeepMind/Google counterpart
 - [[ai-safety]] — Amodei's core research area
-- [[constitutional-ai]] — Anthropic's alignment framework
-- [[mechanistic-interpretability]] — Amodei's "MRI for AI"
+-  — Anthropic's alignment framework
+-  — Amodei's "MRI for AI"
 
 ## Sources
 

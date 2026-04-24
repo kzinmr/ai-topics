@@ -1,10 +1,12 @@
 ---
 title: "Claude Agent SDK — SRE Agent Pattern"
+type: concept
 source: "https://platform.claude.com/cookbook/claude-agent-sdk-03-the-site-reliability-agent"
 status: active
 date: 2026-04-12
 tags: [claude-agent-sdk, mcp, sre, automation, safety-guardrails]
 related: [managed-agents-sre-incident-response, chief-of-staff-agent-patterns, context-engineering-primitives]
+sources: []
 ---
 
 # Claude Agent SDK — SRE Agent Pattern
@@ -159,10 +161,10 @@ Tools auto-register when API keys are present (PagerDuty, Datadog, GitHub, etc.)
 1. **Agentic Loop Power**: `Observe → Reason → Act → Repeat` enables multi-step reasoning impossible in single LLM calls
 2. **Tool Descriptions > Prompts**: Well-structured tool schemas drive autonomous behavior better than elaborate system prompts
 3. **Human-in-the-Loop**: Write operations always gated behind approval mechanisms
-4. **Context Engineering**: Long investigations benefit from tool clearing and compaction primitives (see [[context-engineering-primitives]])
+4. **Context Engineering**: Long investigations benefit from tool clearing and compaction primitives (see )
 
 ## Related
 
 - [[managed-agents-sre-incident-response]] — The same pattern on Managed Agents API
 - [[chief-of-staff-agent-patterns]] — Hooks, subagents, and plan mode
-- [[context-engineering-primitives]] — Managing long-running agent context
+-  — Managing long-running agent context

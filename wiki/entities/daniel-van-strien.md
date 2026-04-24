@@ -1,5 +1,6 @@
 ---
 title: Daniel van Strien
+type: entity
 handle: "@vanstriendaniel"
 created: 2026-04-10
 updated: 2026-04-10
@@ -11,6 +12,7 @@ tags:
   - digital-humanities
   - synthetic-data
   - open-source
+sources: []
 ---
 
 

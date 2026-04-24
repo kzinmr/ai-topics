@@ -1,5 +1,6 @@
 ---
 title: Google TPU — Tensor Processing Units
+type: entity
 aliases: [tpu, google-tpu, tpu-v8, tpu-8t, tpu-8i, tpu-ironwood]
 created: 2026-04-23
 updated: 2026-04-23
@@ -106,11 +107,11 @@ TPU 8t/8i are core components of Google's **AI Hypercomputer** architecture — 
 - [[nvidia-dgx-spark]] — NVIDIA's competitor in local AI compute
 - [[inference-hardware]] — GPU and accelerator landscape
 - [[entities/google-tpu.md]] — Google's broader AI infrastructure
-- [[gemini]] — Google's Gemini model family
+- [[concepts/gemini.md]] — Google's Gemini model family
 - [[openai]] — OpenAI's competing infrastructure approaches
 - [[claude-memory]] — Anthropic's approach (competitor context)
 
 ## Sources
 
-- [[raw/articles/tpu-8t-8i-technical-deep-dive.md]] — Google Cloud Blog, Cloud Next 2026
-- [[raw/articles/ainews-tasteful-tokenmaxxing-2026-04-23.md]] — AINews #21, Latent.Space
+-  — Google Cloud Blog, Cloud Next 2026
+-  — AINews #21, Latent.Space

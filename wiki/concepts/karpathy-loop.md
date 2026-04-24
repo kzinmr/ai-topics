@@ -1,5 +1,6 @@
 ---
 title: "The Karpathy Loop — Autonomous Experiment Design"
+type: concept
 slug: karpathy-loop
 status: complete
 tags:
@@ -16,6 +17,7 @@ source:
   - https://www.youtube.com/watch?v=kwSVtQ7dziU
   - https://softmaxdata.com/blog/autoresearch/
   - https://rywalker.com/research/autoresearch
+sources: []
 ---
 
 # The Karpathy Loop — Autonomous Experiment Design
@@ -211,7 +213,7 @@ Karpathy's approach is essentially a harness for a *research agent* rather than 
 - [Karpathy's 630 Lines Won't Replace Researchers](https://mohammadkhan.dev/blog/karpathy-autoresearch-constraint-design) — Constraint design analysis
 - [What Karpathy's autoresearch Actually Does](https://starkslab.com/notes/autoresearch-review-what-it-actually-does) — Hype vs reality review
 - [Autoresearch Complete 2026 Guide](https://o-mega.ai/articles/karpathy-autoresearch-complete-2026-guide) — Technical guide
-- [[concepts/agentic-engineering.md]] — Simon Willison's agentic engineering framework
+-  — Simon Willison's agentic engineering framework
 - [[harness-engineering]] — Ryan Lopopolo's harness engineering concept
 - [[andrej-karpathy]] — Andrej Karpathy entity page
 

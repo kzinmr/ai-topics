@@ -1,11 +1,13 @@
 ---
 title: "Claude Memory — File-Based Memory Architecture"
+type: concept
 status: draft
 created: 2026-04-13
 source: "https://www.shloked.com/writing/claude-memory"
 author: "Shlok Khemani"
 tags: [memory-systems, claude, filesystem, cluade-md, context-management, git-integration]
 related: [chatgpt-memory-bitter-lesson, claude-code-source-patterns, agentic-engineering]
+sources: []
 ---
 
 # Claude Memory — File-Based Memory Architecture

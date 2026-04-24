@@ -1,5 +1,6 @@
 ---
 title: "Neurosymbolic AI"
+type: concept
 created: 2026-04-13
 updated: 2026-04-13
 tags: [concept, ai-architecture, neurosymbolic, reasoning, gary-marcus]
@@ -8,6 +9,7 @@ related:
   - entities/gary-marcus
   - concepts/scaling-without-slop
   - concepts/world-models-science
+sources: []
 ---
 
 # Neurosymbolic AI

@@ -1,5 +1,6 @@
 ---
 title: Muse Spark
+type: entity
 created: 2026-04-09
 updated: 2026-04-09
 tags:
@@ -8,6 +9,7 @@ tags:
 - emerging
 aliases:
 - Meta Muse Spark
+sources: []
 ---
 
 # Muse Spark
@@ -16,7 +18,7 @@ Meta's latest language model, announced April 2026.
 
 ## Overview
 
-Muse Spark positions between [[claude-sonnet-4.6]] and [[claude-opus-4.6]] in capability. Not yet publicly available — API access is coming.
+Muse Spark positions between  and  in capability. Not yet publicly available — API access is coming.
 
 ## Capability Positioning
 
@@ -33,10 +35,10 @@ Meta has promised open-source availability, but community reaction ("rip LLaMA")
 Announced following a year of silence from Meta on model development, and after multiple acquisitions without public product showings. Reception has been mixed — some criticizing the modest capability gains relative to investment, while others viewing it as a positive step forward.
 
 ## Sources
-- [[raw/articles/substack.com--app-link-post--40004939.md]] (Ben's Bites, 2026-04-09)
+-  (Ben's Bites, 2026-04-09)
 
 ## Related
 - [[meta]]
 - [[concepts/inference/llama-cpp.md]]
-- [[claude-sonnet-4.6]]
-- [[claude-opus-4.6]]
+- 
+- 

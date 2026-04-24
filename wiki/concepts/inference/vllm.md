@@ -1,7 +1,9 @@
 ---
-status: skeleton
+status: complete
+type: concept
 created: 2026-04-14
 tags: local-llm, inference, serving
+sources: []
 ---
 
 # vLLM
@@ -30,7 +32,7 @@ vLLM is a high-throughput LLM serving engine with PagedAttention optimization.
 ## Related wikilinks
 
 - [[local-llm]] — Local LLM overview
-- [[vllm]] — Project entity (if exists)
+- [[concepts/inference/vllm.md]] — Project entity (if exists)
 
 ## Sources
 

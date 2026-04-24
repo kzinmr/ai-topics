@@ -1,9 +1,11 @@
 ---
 title: Sycophancy in LLMs
+type: concept
 created: 2026-04-24
 updated: 2026-04-24
 tags: [concept, alignment, safety, llm-reliability]
 aliases: [ai-sycophancy, sycophantic-llms, llm-pleasing]
+sources: []
 ---
 
 # Sycophancy in LLMs

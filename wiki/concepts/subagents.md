@@ -1,34 +1,68 @@
 ---
-title: "Subagents"
+title: "Subagents — Parallel AI Agent Delegation"
+type: concept
+aliases:
+  - subagents
+  - sub-agent
+  - multi-agent-delegation
 tags:
- - concept
- - subagents
- - multi-agent
- - orchestration
-status: skeleton
-description: "Parallel agent delegation patterns. See harness-engineering/agentic-workflows/subagents.md for full content."
+  - concept
+  - agentic-engineering
+  - multi-agent
+  - orchestration
+status: complete
+description: "メインエージェントが独立したサブエージェントを並列に起動し、タスクを委譲するパターン。"
+created: 2026-04-12
+updated: 2026-04-24
+sources:
+  - "https://simonwillison.net/guides/agentic-engineering-patterns/subagents/"
+related:
+  - "[[concepts/harness-engineering/agentic-workflows/subagents.md]]"
+  - "[[agentic-engineering]]"
+  - "[[cognitive-debt]]"
+  - "[[multi-agent-consensus-patterns]]"
+  - "[[harness-engineering]]"
 ---
 
 # Subagents
 
-> **Note:** This page is a stub and needs expansion. See [[concepts/subagents.md]] for the full content.
+メインのAIエージェントが**独立したサブエージェントを並列に起動**し、それぞれが隔離されたコンテキストとターミナルセッションでタスクを実行するパターン。
 
-## Summary
+## 3つの設計原則
 
-Subagents refers to the pattern of delegating tasks to parallel agent instances for concurrent processing. Key patterns include:
+1. **独立性** — サブエージェントはメインの会話コンテキストを共有しない。指示は完全に自己完結である必要がある。
+2. **並列性** — 複数の独立タスクを同時実行（バッチモード）。待ち時間を大幅に短縮。
+3. **自己完結性** — 必要なファイルパス、エラーメッセージ、制約条件を`context`フィールドで明示的に渡す。
 
-- **Parallel Execution**: Multiple agents working simultaneously on different subtasks
-- **Task Decomposition**: Breaking complex tasks into agent-dispatchable units
-- **Result Aggregation**: Collecting and synthesizing outputs from multiple agents
+## 使い分け
 
-## Use Cases
+| ✅ 向いている | ❌ 向いていない |
+|-------------|---------------|
+| 推論重視のサブタスク（デバッグ、コードレビュー、リサーチ） | 推論不要の単純作業（`execute_code`で十分） |
+| コンテキストが溢れる大規模データ処理 | 単一のツール呼び出し |
+| 並列独立ワークストリーム | ユーザーとの対話が必要なタスク |
 
-- Research tasks that can be parallelized
-- Multiple feature development in isolation
-- Independent file modifications
+## 重要な制約
 
-## See Also
+- **Lossy Summary Problem**: サブエージェントの戻り値（要約）には詳細情報が欠落する。精度が求められる判断はメインエージェントに直接ファイルを読ませる。
+- **イテレーション制限**: サブエージェントは最大イテレーション数（~50）を持つ。複雑なタスクでは制限に達する可能性がある。
+- **コンテキスト非共有**: メインエージェントのメモリは自動的に共有されない。
 
-- [[concepts/subagents.md]] — Full content
-- [[multi-agent-consensus-patterns]] — Consensus patterns
-- [[agent-team-swarm]] — Agent team patterns
+## 実装パターン (Hermes)
+
+```yaml
+delegate_task:
+  goal: "Research the latest developments in agentic engineering"
+  context: "Focus on Simon Willison's blog posts from 2025-2026"
+  toolsets: ["terminal", "web"]
+  max_iterations: 50
+```
+
+詳細: [[concepts/harness-engineering/agentic-workflows/subagents.md]]
+
+## 関連概念
+
+- [[concepts/harness-engineering/agentic-workflows/subagents.md]] — 詳細実装ガイド
+- [[agentic-engineering]] — 上位概念
+- [[cognitive-debt]] — サブエージェントの自己完結性は認知負債を減らす
+- [[harness-engineering]] — 環境設計哲学としての位置付け

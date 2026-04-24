@@ -1,5 +1,6 @@
 ---
 title: Experiential Memory
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 status: active
@@ -13,6 +14,7 @@ related:
   - ai-agent-memory-middleware
   - memory-systems-design-patterns
   - chatgpt-memory-bitter-lesson
+sources: []
 ---
 
 # Experiential Memory

@@ -1,8 +1,10 @@
 ---
 title: Ernie Smith (Tedium)
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Ernie Smith (Tedium)
@@ -118,10 +120,10 @@ Smith writes thoughtfully about the business of running Tedium as an independent
 ## Related
 
 - [[ShortFormBlog]] — Smith's earlier blog project
-- [[Construction Physics]] — Brian Potter's newsletter; shares Smith's love of deep-dive, historically-grounded analysis
+-  — Brian Potter's newsletter; shares Smith's love of deep-dive, historically-grounded analysis
 - [[The Silicon Underground]] — Dave Farquhar's blog; similar focus on technology history and forgotten stories
-- [[Entropic Thoughts]] — Chris's blog; shares the philosophy of publishing to learn and be corrected
-- [[Philip Laine]] — independent developer who also builds and shares technical projects publicly
+-  — Chris's blog; shares the philosophy of publishing to learn and be corrected
+-  — independent developer who also builds and shares technical projects publicly
 - [[entities/bogdanthegeek-s-blog.md]] — shares Smith's appreciation for the creative potential in discarded technology
 
 ## Sources

@@ -1,5 +1,7 @@
 ---
 tags: [person]
+type: entity
+sources: []
 ---
 
 
@@ -306,10 +308,10 @@ This reflects his own career arc: at Amazon, he transitioned from hands-on IC wo
 - [[retrieval-augmented-generation]] — One of his seven core LLM integration patterns
 - [[applied-ml]] — His most-starred GitHub repository (28.7K stars)
 - [[open-llms]] — His curated list of commercially usable open LLMs (12.7K stars)
-- [[raw/articles/open.substack.com--pub-nlpnews-p-ai-agents-weekly-claude-managed-agents--883aac03.md]] — His work on AI-powered products and prototypes
-- [[georgia-tech-omscs]] — His master's program and the FAQ he wrote for it
-- [[eval-driven-development]] — His methodology for building AI products
-- [[singapore-management-university]] — His undergraduate alma mater
+-  — His work on AI-powered products and prototypes
+-  — His master's program and the FAQ he wrote for it
+-  — His methodology for building AI products
+-  — His undergraduate alma mater
 
 ## Influence Metrics
 

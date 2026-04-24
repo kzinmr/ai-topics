@@ -136,4 +136,4 @@ DSPy (宣言的プログラミング)
 - [[dspy]] — RLMsと比較される宣言的LMプログラミングフレームワーク
 - [[gepa]] — Khattabの別研究方向（コンパイル時最適化）
 - [[context-engineering]] — コンテキスト管理全般
-- [[inference-time-scaling]] — 推論時スケーリングの別の視点
+-  — 推論時スケーリングの別の視点

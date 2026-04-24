@@ -1,9 +1,11 @@
 ---
 title: Back of House Multi-Agent Patterns
+type: concept
 created: 2026-04-18
 updated: 2026-04-18
 tags: [multi-agent, orchestration, coding-agents, agent-patterns, kitchen-metaphor]
 aliases: ["kitchen-metaphor", "head-chef-pattern", "line-cook-pattern", "multi-agent-kitchen"]
+sources: []
 ---
 
 # Back of House Multi-Agent Patterns
@@ -162,10 +164,10 @@ Codex Sparkのような高速コーディングモデルが利用可能になっ
 - [[session-hierarchy-management]] — 本パターンとtrq212のセッション管理を統合した3階層フレームワーク
 - [[context-window-management]] — Level 1: 単一セッション内のコンテキスト衛生
 - [[agent-team-swarm]] — マルチエージェントチームの階層的オーケストレーション
-- [[subagents]] — サブエージェントの委任パターン
+- [[concepts/harness-engineering/agentic-workflows/subagents.md]] — サブエージェントの委任パターン
 - [[harness-engineering]] — エンジニアのエージェント活用方法论
 - [[context-engineering]] — コンテキストエンジニアリング
 
 ## ソース
 
-- [[raw/articles/milksandmatcha-0xsero-single-agent-nightmare-2026.md]] — Sarah Chieng (@MilksandMatcha) + @0xSero (April 2026)
+-  — Sarah Chieng (@MilksandMatcha) + @0xSero (April 2026)

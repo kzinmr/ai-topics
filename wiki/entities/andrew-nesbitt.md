@@ -1,7 +1,9 @@
 ---
 title: Andrew Nesbitt
+type: entity
 status: active
 tags: [person]
+sources: []
 ---
 
 
@@ -173,9 +175,9 @@ His blogging cadence accelerated dramatically in 2025–2026, with 25 posts in J
 - [[Dependency Graphs]] — Mapping the 22 billion dependency links in open source
 - [[Open Source Metadata]] — Ecosyste.ms as the definitive catalog
 - [[LLM Security]] — AI as a novel attack vector in dependency management
-- [[OSS Funding]] — Sustainable models for open source infrastructure
-- [[Git Internals]] — Remote helpers, diff drivers, file-level ignore directives
-- [[Resilience Engineering]] — Package Chaos Monkey and dependency failure testing
+-  — Sustainable models for open source infrastructure
+-  — Remote helpers, diff drivers, file-level ignore directives
+-  — Package Chaos Monkey and dependency failure testing
 
 ---
 

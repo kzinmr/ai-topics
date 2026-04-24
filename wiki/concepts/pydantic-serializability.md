@@ -3,11 +3,12 @@ name: Pydantic Serializability
 type: concept
 tags: [serialization, structured-output, schema-generation, python, pydantic]
 related:
-  - [[samuel-colvin]]
+  - [[entities/samuel-colvin.md]]
   - [[pydantic-ai]]
 depth: L2
 status: complete
 created: 2026-04-15
+sources: []
 ---
 
 # Pydantic Serializability
@@ -45,6 +46,6 @@ print(result.data)  # UserProfile(name='Alex', age=30, interests=['coding', 'rea
 
 ## Related
 
-- [[samuel-colvin]] — Creator
+- [[entities/samuel-colvin.md]] — Creator
 - [[pydantic-ai]] — Framework
 - [[concepts/structured-outputs.md]] — Pattern

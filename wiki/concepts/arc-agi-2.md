@@ -1,9 +1,11 @@
 ---
 title: ARC-AGI-2 Benchmark
+type: concept
 created: 2026-04-24
 updated: 2026-04-24
 tags: [concept, benchmark, agi-research, abstraction]
 aliases: [arc-agii-2, arc-prize-2]
+sources: []
 ---
 
 # ARC-AGI-2 Benchmark

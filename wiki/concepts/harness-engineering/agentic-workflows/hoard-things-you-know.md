@@ -1,5 +1,6 @@
 ---
 title: "Hoard Things You Know How to Do"
+type: concept
 aliases:
   - hoard-things-you-know
   - knowledge-hoarding
@@ -85,7 +86,7 @@ Willison自身が多様なプロジェクト（Datasette、sqlite-utils、llmな
 - [[cognitive-debt]] — 知識がない状態でコードをマージすると負債になる
 - [[anti-patterns]] — 知識不足がアンチパターンを生む
 - [[compound-engineering-loop]] — 知識が複利的に成長するサイクル
-- [[prompt-driven-development]] — 知識がプロンプトの質を決定する
+- [[concepts/harness-engineering/agentic-workflows/prompt-driven-development.md]] — 知識がプロンプトの質を決定する
 
 ## 参照
 

@@ -1,5 +1,6 @@
 ---
 title: GLM-5 (Z.ai)
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -12,6 +13,7 @@ related:
 - chinese-ai
 - open-weights
 - llm-benchmarks
+sources: []
 ---
 
 # GLM-5 (Z.ai)
@@ -37,4 +39,4 @@ New state-of-the-art open weights LLM from Z.ai (智谱AI).
 - Part of broader Chinese AI ecosystem growth
 
 ## Sources
-- [[raw/articles/substack.com--redirect-b2523a4d-fc56-489b-9a40-1c3e0ad0c2c7--f8328a0a.md]]
+- 

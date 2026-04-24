@@ -1,5 +1,6 @@
 ---
 title: Charles Frye
+type: entity
 handle: "@charles_irl"
 created: 2026-04-10
 updated: 2026-04-13
@@ -138,10 +139,10 @@ A hands-on walkthrough demonstrating fine-tuning a diffusion model and deploying
 
 ## Related People
 
-- **[[sergey-karayev]]** — Co-author of the Cloud GPU Pricing Guide; co-instructor of Full Stack Deep Learning
+- **** — Co-author of the Cloud GPU Pricing Guide; co-instructor of Full Stack Deep Learning
 - **[[hamel-husain]]** — Full Stack Deep Learning co-instructor; co-author of the "What We Learned from a Year of Building with LLMs" series
 - **[[eugene-yan]]** — Co-author of the LLMs-in-Production series; Full Stack Deep Learning collaborator
-- **[[bryan-bischof]]** — Co-author of "What We Learned from a Year of Building with LLMs" series; fellow Weights & Biases alum
+- **[[entities/bryan-bischof.md]]** — Co-author of "What We Learned from a Year of Building with LLMs" series; fellow Weights & Biases alum
 - **Modal Labs** — The cloud infrastructure platform where Frye now works, providing serverless GPU computing for ML workloads
 - **Weights & Biases** — Frye's previous employer, the ML experiment tracking platform
 

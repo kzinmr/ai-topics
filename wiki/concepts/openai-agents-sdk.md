@@ -1,9 +1,11 @@
 ---
 title: "OpenAI Agents SDK"
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags: [framework, ai-agents, openai, sandbox, harness, compute, tooling]
 aliases: ["OpenAI Agent SDK", "openai-agents"]
+sources: []
 ---
 
 # OpenAI Agents SDK (v0.14.0)
@@ -131,13 +133,13 @@ agent = SandboxAgent(
 ## Entity Connections
 
 - [[openai]] — Developer
-- [[samuel-colvin]] — Monty (in-process sandbox) developer
+- [[entities/samuel-colvin.md]] — Monty (in-process sandbox) developer
 - [[anthropic]] — Competitor (Managed Agents, Computer Use)
 - [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition.md]] — Competitor (Devin)
 
 ## Sources
 
-- [[raw/articles/openai-agents-sdk-next-evolution-2026-04.md]]
-- [[raw/articles/openai-sandbox-agents-api-guide-2026-04.md]]
+- 
+- 
 - [OpenAI Agents SDK Blog (2026-04-15)](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
 - [OpenAI API Sandbox Docs](https://developers.openai.com/api/docs/guides/agents/sandboxes)

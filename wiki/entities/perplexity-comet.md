@@ -1,5 +1,6 @@
 ---
 title: Perplexity Comet
+type: entity
 aliases:
 - comet-browser
 - perplexity-ai-browser

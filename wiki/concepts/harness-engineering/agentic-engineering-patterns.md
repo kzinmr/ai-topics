@@ -1,5 +1,6 @@
 ---
 title: Agentic Engineering Patterns
+type: concept
 status: active
 created: 2026-02-23
 updated: 2026-04-12
@@ -11,6 +12,7 @@ related:
   - entities/andrej-karpathy
 tags: [agentic-engineering, coding-agents, claude-code, codex, testing, git, patterns, simon-willison]
 source: https://simonwillison.net/guides/agentic-engineering-patterns/
+sources: []
 ---
 
 # Agentic Engineering Patterns

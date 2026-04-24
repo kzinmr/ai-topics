@@ -1,8 +1,10 @@
 ---
 title: Pixelmelt (Cats with Power Tools)
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Pixelmelt (Cats with Power Tools)

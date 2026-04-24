@@ -1,5 +1,6 @@
 ---
 title: JA Westenberg
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -10,6 +11,7 @@ tags:
   - philosophy
   - technology
   - economics
+sources: []
 ---
 
 
@@ -139,9 +141,9 @@ Westenberg's essays are distinguished by:
 - [[guaranteed-minimum-income]] — Westenberg's 5-pillar policy framework
 - [[casino-economy]] — Financialization of housing, labor, and identity
 - [[blogging-as-infrastructure]] — The blog as intellectual commons
-- [[jeff-atwood]] — Collaborated with Westenberg on "Stay Gold, America" GMI initiative
-- [[david-graeber]] — Cited for "Bullshit Jobs" and critique of meaningless work
-- [[rutger-bregman]] — Cited for "Utopia for Realists" and UBI advocacy
+-  — Collaborated with Westenberg on "Stay Gold, America" GMI initiative
+-  — Cited for "Bullshit Jobs" and critique of meaningless work
+-  — Cited for "Utopia for Realists" and UBI advocacy
 
 ## Sources
 

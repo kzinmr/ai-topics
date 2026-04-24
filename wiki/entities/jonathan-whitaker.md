@@ -1,5 +1,6 @@
 ---
 title: Jonathan Whitaker
+type: entity
 handle: "@johnowhitaker"
 created: 2026-04-10
 updated: 2026-04-10
@@ -11,6 +12,7 @@ tags:
   - fastai
   - diffusion
   - open-source
+sources: []
 ---
 
 
@@ -27,7 +29,7 @@ tags:
 
 ## Overview
 
-Jonathan Whitaker (known online as Johno) is a polymath researcher and educator whose work sits at the intersection of generative AI, practical ML education, and creative experimentation. Currently doing R&D at Answer.AI alongside [[Jeremy Howard]] and the Answer.AI team, Jonathan has established himself as one of the most effective communicators of complex generative AI concepts to practitioners at all levels.
+Jonathan Whitaker (known online as Johno) is a polymath researcher and educator whose work sits at the intersection of generative AI, practical ML education, and creative experimentation. Currently doing R&D at Answer.AI alongside  and the Answer.AI team, Jonathan has established himself as one of the most effective communicators of complex generative AI concepts to practitioners at all levels.
 
 His educational contributions are extensive and impactful. He co-created the **Hugging Face Diffusion Models course** — one of the most popular and comprehensive open educational resources on diffusion-based generative models — and is currently co-authoring a book building on that work. He teaches **Part 2 of the fastai course**, which covers advanced deep learning topics including diffusion models, transformers, and generative techniques. His **Data Science Castnet** YouTube channel documents his projects and experiments, making cutting-edge research accessible to a broad audience. Before joining Answer.AI full-time, he worked as a data scientist at Zindi (Africa's data science competition platform), did consulting in generative AI, and was builder-in-residence at PlaygroundAI, where he helped train their first in-house Stable Diffusion variant.
 
@@ -153,11 +155,11 @@ This work challenges the traditional separation between discriminative and gener
 
 ## Related People
 
-- **[[Jeremy Howard]]** — fastai founder; Answer.AI co-founder; Jonathan's close collaborator and teaching partner.
-- **[[Lewis Tunstall]]** — Co-author of the Hugging Face Diffusion Models Course; ML engineer at Hugging Face.
+- **** — fastai founder; Answer.AI co-founder; Jonathan's close collaborator and teaching partner.
+- **** — Co-author of the Hugging Face Diffusion Models Course; ML engineer at Hugging Face.
 - **[[Hamel Husain]]** — Both work at Answer.AI; both write practical guides on ML tooling and evaluation.
 - **[[Daniel van Strien]]** — Both contribute to Hugging Face educational resources and write practical ML tutorials.
-- **[[Simon Willison]]** — Fellow advocate for accessible, practical AI tooling and education.
+- **[[simon-willison]]** — Fellow advocate for accessible, practical AI tooling and education.
 
 ## X Activity Themes
 

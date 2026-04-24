@@ -1,5 +1,6 @@
 ---
 title: "AI Organization — AI時代の組織論・ガバナンス・ワークデザイン"
+type: concept
 aliases:
   - ai-org-index
   - organization-theory-ai
@@ -10,6 +11,7 @@ tags:
   - organization
   - governance
 status: draft
+sources: []
 ---
 
 # AI Organization — AI時代の組織論・ガバナンス・ワークデザイン
@@ -27,7 +29,7 @@ AIの自律実行が進む世界で、「人間の組織はどう変わるか」
 ### Level 2: Models (組織モデル)
 - **[[ai-org-from-hierarchy-to-intelligence]]** — Block: 階層からインテリジェンスへの移行
 - **[[ai-org-context-as-moat]]** — McKinsey/Reworked: Diamond型組織図とProprietary Context
-- **[[ai-org-solo-founder-and-super-ic]]** — Reddit/FourWeekMBA: ソロ創業者とSuper ICの台頭
+- **[[concepts/ai-organization/ai-org-solo-founder-and-super-ic.md]]** — Reddit/FourWeekMBA: ソロ創業者とSuper ICの台頭
 
 ### Level 3: Synthesis (横断的テーマ)
 - Hierarchy → Intelligence (報告ラインの削除、自律実行)
@@ -104,7 +106,7 @@ Reddit r/ClaudeCodeとFourWeekMBAの議論から浮上。
 
 ## 関連概念
 
-- [[concepts/agentic-engineering.md]] — 開発者のAI活用ワークフロー
+-  — 開発者のAI活用ワークフロー
 - [[harness-engineering]] — エージェントの制御・構造化
 - [[multi-agent-autonomy-scale]] — 大規模マルチエージェントの自律とスケール
 - [[context-engineering]] — コンテキストエンジニアリング

@@ -1,5 +1,6 @@
 ---
 title: Mitchell Hashimoto
+type: entity
 handle: "@mitchellh"
 created: 2026-04-13
 updated: 2026-04-14
@@ -19,6 +20,7 @@ tags:
   - building-block-economy
   - libghostty
   - vibe-coding
+sources: []
 ---
 
 
@@ -381,7 +383,7 @@ He notes that the biggest gains now come from **workflow design** rather than mo
 
 - **[[ryan-lopopolo]]** — Both independently arrived at "Harness Engineering"; Ryan from OpenAI enterprise scale, Mitchell from individual developer experience
 - **[[boris-cherny]]** — Both work on AI-assisted developer workflows; Boris's parallel agent patterns complement Mitchell's background agent approach
-- **[[karpathy]]** — Shared interest in making AI accessible to individual developers; Mitchell's harness philosophy aligns with Software 2.0/3.0 thinking
+- **[[concepts/karpathy.md]]** — Shared interest in making AI accessible to individual developers; Mitchell's harness philosophy aligns with Software 2.0/3.0 thinking
 - **[[simon-willison]]** — Willison covers agentic engineering patterns; Mitchell's practical approach resonates with Simon's philosophy
 - **Richard Feldman** — Zed engineer who hosted Mitchell's agentic engineering session
 - **Gergely Orosz** — Pragmatic Engineer podcast host who interviewed Mitchell on AI workflows

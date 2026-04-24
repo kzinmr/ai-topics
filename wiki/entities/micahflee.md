@@ -1,7 +1,9 @@
 ---
 title: Micah Lee
+type: entity
 status: active
 tags: [person]
+sources: []
 ---
 
 
@@ -13,7 +15,7 @@ tags: [person]
 
 His work spans the full stack of information security — from developing widely used tools like **OnionShare** (secure file sharing over Tor) and **Dangerzone** (malware-safe document sanitization), to founding the **Lockdown Systems Collective**, which builds local-first alternatives to Big Tech data extraction (notably the [[Cyd]] app). He is the author of *Hacks, Leaks, and Revelations: The Art of Analyzing Hacked and Leaded Data* (No Starch Press, 2024), a practical guide for journalists and activists working with leaked datasets.
 
-Previously: Director of Information Security at [[The Intercept]] (where he handled OPSEC during the Edward Snowden leaks), Staff Technologist at the [[Electronic Frontier Foundation]], and co-founder of [[Freedom of the Press Foundation]]. His journalism has appeared in *The Intercept*, *404 Media*, *WIRED*, and *Zeteo*.
+Previously: Director of Information Security at [[The Intercept]] (where he handled OPSEC during the Edward Snowden leaks), Staff Technologist at the [[Electronic Frontier Foundation]], and co-founder of . His journalism has appeared in *The Intercept*, *404 Media*, *WIRED*, and *Zeteo*.
 
 ---
 
@@ -21,7 +23,7 @@ Previously: Director of Information Security at [[The Intercept]] (where he hand
 
 | Period | Key Events |
 |--------|-----------|
-| 2013 | Provides OPSEC for journalists covering the [[Edward Snowden]] NSA leaks |
+| 2013 | Provides OPSEC for journalists covering the  NSA leaks |
 | 2014 | Develops **OnionShare** — open-source file sharing over [[concepts/dark-factory-software-factory.md]] |
 | 2014–2024 | Director of Information Security at [[The Intercept]]; leads the SIDtoday Files project |
 | 2016–2019 | Leads comprehensive reporting on NSA Signals Intelligence Directorate documents |
@@ -30,7 +32,7 @@ Previously: Director of Information Security at [[The Intercept]] (where he hand
 | 2022 | Co-publishes investigation on TeleMessage spyware used by Trump officials |
 | 2024 | Publishes *Hacks, Leaks, and Revelations* (No Starch Press) |
 | 2025 | Founds **Lockdown Systems Collective**; develops [[Cyd]] app; reports on [[ICEBlock]] app security failures; delivers BSidesPDX keynote on "Technofascism" |
-| 2026 | Publishes Epstein files analysis on [[Zeteo]]; builds DHS Contracts Explorer from hacked data; writes extensively on Signal group nicknames, mercenary spyware, and app censorship |
+| 2026 | Publishes Epstein files analysis on ; builds DHS Contracts Explorer from hacked data; writes extensively on Signal group nicknames, mercenary spyware, and app censorship |
 
 ---
 
@@ -98,7 +100,7 @@ He advocates for **web-based alternatives** to native apps precisely because the
 
 **2024:** Published *Hacks, Leaks, and Revelations* — systematizing his methodology for working with leaked datasets as a form of democratic journalism.
 
-**2025:** Founded the [[Lockdown Systems Collective]] and began developing [[Cyd]], an open-source app for local-first personal data backup. Delivered his BSidesPDX keynote on technofascism. Published critical analysis of the ICEBlock app as "activism theater." Co-reported on TeleMessage spyware. Published Epstein files analysis for [[Zeteo]].
+**2025:** Founded the [[Lockdown Systems Collective]] and began developing [[Cyd]], an open-source app for local-first personal data backup. Delivered his BSidesPDX keynote on technofascism. Published critical analysis of the ICEBlock app as "activism theater." Co-reported on TeleMessage spyware. Published Epstein files analysis for .
 
 **2026:** Built the DHS Contracts Explorer from hacked immigration enforcement data. Published practical guides on Signal group security (nicknames as identity verification). Continued analysis of mercenary spyware threats (Paragon/Graphite, NSO/Pegasus) and platform complicity. Active on the kill switch podcast discussing app censorship.
 
@@ -113,9 +115,9 @@ He advocates for **web-based alternatives** to native apps precisely because the
 [[Signal]] — Encrypted messaging platform Lee advocates and analyzes
 [[The Intercept]] — Former employer; Lee directed information security for a decade
 [[Electronic Frontier Foundation]] — Former employer as staff technologist
-[[Freedom of the Press Foundation]] — Co-founded by Lee
-[[Edward Snowden]] — Lee provided OPSEC during the NSA document leaks
-[[Zeteo]] — Current publication outlet for investigative journalism
+ — Co-founded by Lee
+ — Lee provided OPSEC during the NSA document leaks
+ — Current publication outlet for investigative journalism
 BSidesPDX — Venue for Lee's "Technofascism" keynote
 TeleMessage — Israeli spyware company investigated by Lee
 Cellebrite — Device extraction company analyzed in Lee's technofascism framework

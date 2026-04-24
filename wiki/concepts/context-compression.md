@@ -101,6 +101,6 @@ Related: [[context-window-management]] discusses how to organize compressed cont
 
 ## Sources
 
-- [[raw/articles/crawl-2026-04-18-context-compression.md]] — Context compression techniques analysis
+-  — Context compression techniques analysis
 - OpenAI Cookbook, "Context engineering patterns" (2025)
 - Anthropic, "Effective context engineering for AI agents" (2025)

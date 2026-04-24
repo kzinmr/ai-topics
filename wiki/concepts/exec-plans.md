@@ -1,9 +1,11 @@
 ---
 title: "Execution Plans"
+type: concept
 created: 2026-04-13
 source: "OpenAI Cookbook — Execution planning patterns"
 tags: [agents, planning, orchestration]
 status: draft
+sources: []
 ---
 
 # Execution Plans
@@ -80,5 +82,5 @@ User Request → Agent generates Plan → Human reviews (optional) → Agent exe
 
 - [[agent-loop-orchestration]] — Agent Loop Orchestration
 - [[openai-symphony]] — OpenAI Symphony (WORKFLOW.md駆動)
-- [[compound-engineering-loop]] — Compound Engineering Loop
+- [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop.md]] — Compound Engineering Loop
 - [[closing-agent-loop]] — Closing the Agent Loop

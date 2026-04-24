@@ -1,5 +1,6 @@
 ---
 title: Drew Breunig
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 source: blog
@@ -10,6 +11,7 @@ tags:
   - geospatial
   - quantified-self
   - blog
+sources: []
 ---
 
 
@@ -320,9 +322,9 @@ Breunig's technical work is characterized by:
 - [[Context Engineering]] — Discipline Breunig helped name and define
 - [[Spec-Driven Development]] — Development paradigm Breunig pioneered with `whenwords`
 - [[Recursive Language Models]] — Pattern Breunig implemented in DSPy and advocates
-- [[PlaceIQ]] → [[Precisely]] — Location intelligence companies where Breunig worked
-- [[Useful Sensors]] — Company Breunig advises on positioning and strategy
-- [[cmpnd-ai]] — Company Breunig is associated with
+- [[PlaceIQ]] →  — Location intelligence companies where Breunig worked
+-  — Company Breunig advises on positioning and strategy
+-  — Company Breunig is associated with
 
 ## Sources
 

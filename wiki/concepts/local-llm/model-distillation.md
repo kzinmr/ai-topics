@@ -1,5 +1,6 @@
 ---
 title: "Model Distillation"
+type: concept
 aliases: [knowledge-distillation, teacher-student, llm-distillation, model-compression]
 created: 2026-04-15
 updated: 2026-04-15

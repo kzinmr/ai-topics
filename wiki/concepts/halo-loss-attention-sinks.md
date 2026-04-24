@@ -1,5 +1,6 @@
 ---
 title: HALO-Loss and Attention Sinks
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags:
@@ -12,6 +13,7 @@ related:
 - decoder-only-gpt
 - context-window-management
 - compute-scaling-bottlenecks
+sources: []
 ---
 
 # HALO-Loss and Attention Sinks

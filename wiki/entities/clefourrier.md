@@ -1,11 +1,12 @@
 ---
 title: Clémentine Fourrier
+type: entity
 handle: "@clefourrier"
 created: 2026-04-10
 updated: 2026-04-13
 related:
   - [[open-llm-leaderboard]]
-  - [[raw/articles/huggingface.co--google-gemma-4-e4b--b37a0ece.md]]
+  - 
   - [[gaia]]
   - [[yourbench]]
   - [[lighteval]]
@@ -25,6 +26,7 @@ tags:
   - benchmarks
   - lighteval
   - gaia
+sources: []
 ---
 
 
@@ -246,10 +248,10 @@ Fourrier's work consistently emphasizes **openness, transparency, and reproducib
 - [[BLOOM]] — 176B-parameter open-access multilingual language model (BigScience)
 - [[Zephyr]] — 7B chat model via direct distillation of LM alignment
 - [[SmolLM2]] — State-of-the-art small language model (1.7B parameters)
-- [[AI Evaluation Reproducibility]] — Standards for reliable, repeatable model evaluation
-- [[CO₂ and AI]] — Environmental impact of model training and inference
+-  — Standards for reliable, repeatable model evaluation
+-  — Environmental impact of model training and inference
 - [[Hugging Face]] — Open-source AI platform and community
-- [[LLM-as-a-Judge]] — Using language models to evaluate other language models
+-  — Using language models to evaluate other language models
 
 ---
 

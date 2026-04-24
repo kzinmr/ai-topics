@@ -1,5 +1,6 @@
 ---
 title: "Agentic Web — 人間向けからエージェント向けへWebのパラダイムシフト"
+type: concept
 created: 2026-04-22
 updated: 2026-04-22
 tags: [concept, web-infrastructure, ai-agents, cross-cutting]

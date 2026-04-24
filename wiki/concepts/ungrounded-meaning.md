@@ -1,5 +1,6 @@
 ---
 title: "Ungrounded Meaning"
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags: [concept, grounding, semantics, computational-linguistics]
@@ -93,4 +94,4 @@ The gap between theoretical impossibility and practical utility mirrors other ar
 - [[coala]] — Framework requiring grounding through external actions
 - [[neurosymbolic-ai]] — Hybrid approach addressing the grounding problem
 - [[harness-engineering]] — Practical grounding through tool use
-- [[the-second-half]] — Yao's broader thesis on evaluation vs training
+-  — Yao's broader thesis on evaluation vs training

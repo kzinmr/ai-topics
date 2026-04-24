@@ -1,10 +1,12 @@
 ---
 title: "AI Coding Reliability"
+type: concept
 created: 2026-04-10
 updated: 2026-04-10
 tags: [ai-coding, reliability, production-failures, software-engineering, agentic-coding, code-quality]
 aliases: ["ai-code-outages", "ai-generated-code-bugs", "ai-coding-reliability-crisis"]
-related: [[concepts/agentic-engineering.md]], [[cognitive-cost-of-agents]], [[claude-mythos-glasswing]], [[ai-bubble-economics]]
+related: , [[cognitive-cost-of-agents]], [[claude-mythos-glasswing]], [[ai-bubble-economics]]
+sources: []
 ---
 
 # AI Coding Reliability
@@ -245,7 +247,7 @@ This creates a **vulnerability compounding effect**: more code → more review b
 
 ## Related Concepts
 
-- [[concepts/agentic-engineering.md]] — The shift from writing code to directing AI agents, and the reliability implications
+-  — The shift from writing code to directing AI agents, and the reliability implications
 - [[cognitive-cost-of-agents]] — The hidden cost of developers losing deep understanding of AI-generated code
 - [[claude-mythos-glasswing]] — When AI capabilities exceed human review capacity, restricted access becomes necessary
 - [[ai-bubble-economics]] — The economic incentives driving AI adoption despite reliability concerns

@@ -1,7 +1,9 @@
 ---
 title: Simone Salis
+type: entity
 status: active
 tags: [person]
+sources: []
 ---
 
 
@@ -148,9 +150,9 @@ Between middle-class stability and creative resistance, Salis argues there's a *
 - [[Consumerism and Technology]] — Brand worship, secular religion of products, advertising critique
 - [[AI and Authenticity]] — Synthography, simulacra, embodied vs. generated experience
 - [[Privacy Engineering]] — Open firmware, Valetudo, data ownership, smart device hacking
-- [[Creative Engineering]] — AI-powered production, automating the boring to liberate the creative
-- [[Fediverse]] — Decentralized social web, ActivityPub, algorithm-free engagement
-- [[Philosophy of Technology]] — Borgmann's focal practices, Baudrillard's simulacra, Diogenes' asceticism
+-  — AI-powered production, automating the boring to liberate the creative
+-  — Decentralized social web, ActivityPub, algorithm-free engagement
+-  — Borgmann's focal practices, Baudrillard's simulacra, Diogenes' asceticism
 
 ---
 

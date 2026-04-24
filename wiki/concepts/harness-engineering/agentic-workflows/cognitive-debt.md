@@ -1,5 +1,6 @@
 ---
 title: "Cognitive Debt"
+type: concept
 aliases:
   - cognitive-debt
 created: 2026-04-12
@@ -72,7 +73,7 @@ $ llm --plugin llm-linear-walkthrough explain --file src/app.py
 ### 2. [[interactive-explanations]] — 対話的アニメーション
 ブラウザ上でコードの動作をステップ実行し、変数の変化をリアルタイムで可視化する。
 
-### 3. [[agentic-manual-testing]] — 実行による動作確認
+### 3. [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md]] — 実行による動作確認
 [[rodney]]等のCLIブラウザツールで実際にUIをテストし、エージェントが生成した機能が本当に動くかを検証。
 
 ### 4. [[showboat]] — テストの記録と共有
@@ -93,4 +94,4 @@ $ llm --plugin llm-linear-walkthrough explain --file src/app.py
 - [[vibe-coding]] — 認知負債の主要発生源
 - [[linear-walkthroughs]] — 主要な返済ツール
 - [[interactive-explanations]] — 対話的理解ツール
-- [[agentic-manual-testing]] — 検証ツール
+- [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md]] — 検証ツール

@@ -1,5 +1,7 @@
 ---
 tags: [person]
+type: entity
+sources: []
 ---
 
 
@@ -154,12 +156,12 @@ Mollick consistently raises questions about the ethical implications of AI in wo
 - [[co-intelligence]] — His framework for human-AI collaboration
 - [[jagged-frontier]] — His concept of uneven AI capabilities across tasks
 - [[centaurs-and-cyborgs]] — Two models of human-AI integration he identified
-- [[raw/articles/open.substack.com--pub-nlpnews-p-ai-agents-weekly-claude-managed-agents--883aac03.md]] — The new paradigm of autonomous AI systems he analyzes
+-  — The new paradigm of autonomous AI systems he analyzes
 - [[ai-education]] — His work on AI-augmented teaching and learning
 - [[concepts/resilient-prompt-engineering.md]] — The skill of effectively directing AI systems
-- [[wharton-interactive]] — His educational simulation platform
-- [[time-100-ai]] — Named one of TIME's Most Influential People in AI
-- [[thinkers50]] — Shortlisted for Digital Thinking Award
+-  — His educational simulation platform
+-  — Named one of TIME's Most Influential People in AI
+-  — Shortlisted for Digital Thinking Award
 
 ## Influence Metrics
 

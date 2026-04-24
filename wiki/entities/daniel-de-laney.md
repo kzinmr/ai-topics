@@ -1,5 +1,6 @@
 ---
 title: Daniel De Laney
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -9,6 +10,7 @@ tags:
   - product-management
   - macos
   - hn-popular
+sources: []
 ---
 
 
@@ -95,7 +97,7 @@ An earlier piece demonstrating his design rigor: professional designers are mixi
 
 - [[berthub-eu]] — Bert Hubert's lean software philosophy complements Daniel's UI minimalism
 - [[harness-engineering]] — Structured AI workflows vs. conversational AI
-- [[agentic-engineering]] — Daniel's approach to AI-assisted development
+- [[concepts/harness-engineering/agentic-engineering.md]] — Daniel's approach to AI-assisted development
 
 ## Sources
 

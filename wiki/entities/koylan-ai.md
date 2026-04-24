@@ -17,6 +17,7 @@ tags:
 - agent-skills
 - healthcare-AI
 updated: 2026-04-10
+sources: []
 ---
 
 # Muratcan Koylan (Koylan AI)
@@ -166,9 +167,9 @@ Autonomous research pipeline using Firecrawl and Claude for enterprise AI case s
 - [[concepts/harness-engineering/system-architecture/agent-skills.md]] — His open-source skill collection
 - [[File-System-As-Database]] — His persistence philosophy
 - [[AI-Persona-Embodiment]] — His work on consistent agent personalities
-- [[Prompt-Security]] — His defense-in-depth approach to agent safety
-- [[LangGraph]] — His preferred orchestration framework
-- [[Healthcare-AI]] — His current domain at Sully.ai
+-  — His defense-in-depth approach to agent safety
+-  — His preferred orchestration framework
+-  — His current domain at Sully.ai
 
 ## Sources
 

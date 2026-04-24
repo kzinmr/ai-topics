@@ -1,5 +1,7 @@
 ---
 tags: [person]
+type: entity
+sources: []
 ---
 
 
@@ -119,16 +121,16 @@ This approach has benefits: it invites collaboration, demonstrates genuine resea
 
 ## Related Wikilinks
 
-- [[raw/articles/thariq-shihipar-entropix.md]] — Rose's entropy-based sampling system for language models
+-  — Rose's entropy-based sampling system for language models
 - [[Sampling Strategies]] — The collection of specialized sampling techniques in Entropix
 - [[Chain-of-Thought]] — Parallel CoT decoding approach in Entropix
 - [[Inference-Time Compute]] — Rose's thesis on smarter inference over bigger models
 - [[ProdNG]] — His custom Linux distribution for production environments at PayPal
 - [[Chicago]] — High-performance distributed key-value store
-- [[ML Infrastructure]] — His career focus: building systems that work reliably at scale
-- [[Attention Mechanisms]] — The attention-aware sampling that distinguishes Entropix
+-  — His career focus: building systems that work reliably at scale
+-  — The attention-aware sampling that distinguishes Entropix
 - [[Reinforcement Learning]] — His advocacy for GRPO and RL research
-- [[CUDA/PTX]] — His recommendation for parallel computation study
+-  — His recommendation for parallel computation study
 
 ## Influence Metrics
 

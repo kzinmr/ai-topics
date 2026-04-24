@@ -1,8 +1,10 @@
 ---
 title: Brian Potter (Construction Physics)
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Brian Potter (Construction Physics)
@@ -127,9 +129,9 @@ This post exemplifies Potter's method: take a seemingly narrow technical problem
 - [[Toyota Production System]] — Potter's frequent reference point for understanding process improvement
 - [[Ford Manufacturing]] — historical case study in achieving economies of scale
 - [[Katerra]] — the construction startup whose failure catalyzed Potter's writing
-- [[Institute for Progress]] — where Potter serves as Senior Infrastructure Fellow
-- [[Entropic Thoughts]] — shares Potter's systematic, analytical approach to engineering questions
-- [[Austin Vernon's Substack]] — recommended alongside Construction Physics for industrial analysis
+-  — where Potter serves as Senior Infrastructure Fellow
+-  — shares Potter's systematic, analytical approach to engineering questions
+-  — recommended alongside Construction Physics for industrial analysis
 
 ## Sources
 

@@ -1,9 +1,11 @@
 ---
 title: "Reasoning Model Cost Transparency"
+type: concept
 created: 2026-04-09
 updated: 2026-04-09
 tags: [concept, llm-costs, reasoning-models, transparency]
 related: [thinking-tokens, api-pricing, model-economics]
+sources: []
 ---
 
 # Reasoning Model Cost Transparency
@@ -44,11 +46,11 @@ A 2026 study revealing that listed API prices for reasoning language models are 
 - Budget for thinking token variability
 
 ## Sources
-- [[raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcGVulnn1ynn0ywnrlmnvbs9wdwivb--2fcf2557]] (NLP News coverage)
+-  (NLP News coverage)
 - Research paper (2026)
 
 ## Related
 - [[thinking-tokens]]
-- [[api-pricing]]
-- [[model-economics]]
-- [[cost-optimization]]
+- 
+- 
+- 

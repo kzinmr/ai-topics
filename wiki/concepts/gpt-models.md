@@ -1,9 +1,11 @@
 ---
 title: "GPT Models"
+type: concept
 tags: [llm, openai, gpt, transformer, chatgpt, frontier-models]
 status: active
 created: 2026-04-20
 updated: 2026-04-24
+sources: []
 ---
 
 # GPT Models
@@ -119,7 +121,7 @@ Pretraining → SFT (Supervised Fine-Tuning) → Reward Model → RLHF (PPO)
 3. **Reward Model:** Train a model to predict human preference
 4. **PPO:** Optimize the policy to maximize reward (per [[john-schulman]] TRPO/PPO work)
 
-See [[rlhf-dpo-preference]] for detailed RLHF vs DPO comparison.
+See [[concepts/fine-tuning/rlhf-dpo-preference.md]] for detailed RLHF vs DPO comparison.
 
 ## Reasoning Models vs Standard GPT
 
@@ -161,7 +163,7 @@ See [[openai-agents-sdk]] for the Agents SDK v0.14.0 architecture.
 
 - [[decoder-only-gpt]] — Complete architectural breakdown
 - [[openai]] — OpenAI company and product ecosystem
-- [[rlhf-dpo-preference]] — Preference optimization methods
+- [[concepts/fine-tuning/rlhf-dpo-preference.md]] — Preference optimization methods
 - [[reasoning-models]] — o-series extended thinking models
 - [[local-llm]] — Running open-weight alternatives locally
 - [[chatgpt-memory-bitter-lesson]] — ChatGPT's memory architecture analysis

@@ -1,5 +1,6 @@
 ---
 title: "Death of the Browser"
+type: concept
 aliases:
   - death-of-browser
   - agentic-browser

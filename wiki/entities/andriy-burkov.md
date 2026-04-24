@@ -1,9 +1,10 @@
 ---
 title: Andriy Burkov
+type: entity
 handle: "@andriy-burkov"
 created: 2026-04-10
 updated: 2026-04-10
-related: [[[hundred-page-ml-book]], [[hundred-page-nlp-book]], [[ml-education]], [[raw/articles/open.substack.com--pub-aiweekly-p-true-positive-weekly-157--5e171cd5.md]]]
+related: [[[hundred-page-ml-book]], [[hundred-page-nlp-book]], , ]
 tags:
   - person
   - ai
@@ -11,6 +12,7 @@ tags:
   - nlp
   - education
   - books
+sources: []
 ---
 
 
@@ -123,8 +125,8 @@ Burkov's Substack archives contain 140+ weekly issues covering ML education, AI 
 ## Related People
 
 - **Scott Wu** ([[scott-wu]]) — Both working to democratize AI; Burkov through education and accessible writing, Wu through autonomous coding agents.
-- **Benjamin Clavié** ([[bclavie]]) — Fellow ML practitioner focused on making advanced techniques accessible; Clavié in retrieval/IR, Burkov in education.
-- **Clémentine Fourrier** ([[clefourrier]]) — Both advocate for rigorous evaluation methodology and transparency in ML; Burkov through educational writing, Fourrier through benchmark research.
+- **Benjamin Clavié** () — Fellow ML practitioner focused on making advanced techniques accessible; Clavié in retrieval/IR, Burkov in education.
+- **Clémentine Fourrier** ([[entities/clefourrier.md]]) — Both advocate for rigorous evaluation methodology and transparency in ML; Burkov through educational writing, Fourrier through benchmark research.
 - **Yann LeCun** — Influential figure whose work Burkov frequently references and analyzes in his newsletter.
 - **Andrej Karpathy** — Fellow ML educator whose clear, practical teaching style aligns with Burkov's educational philosophy.
 

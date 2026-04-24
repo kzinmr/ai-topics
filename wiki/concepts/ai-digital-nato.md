@@ -1,5 +1,6 @@
 ---
 title: "AI Digital NATO — Frontier Model Forum Distillation Alliance"
+type: concept
 created: 2026-04-13
 updated: 2026-04-24
 tags: [concept, geopolitics, model-distillation, frontier-model-forum, china, openai, anthropic, google]
@@ -9,6 +10,7 @@ related:
   - concepts/open-model-consortium
   - concepts/meta-muse-spark
   - concepts/claude-mythos-preview
+sources: []
 ---
 
 # AI Digital NATO — Frontier Model Forum Distillation Alliance
@@ -119,7 +121,7 @@ If Chinese competitors successfully replicate GPT-4 or Claude-class capability a
 - [[anthropic-openclaw-conflict]] — Anthropic's concurrent restrictions on third-party tool access
 - [[open-model-consortium]] — Contrast: open model coalition vs. closed model alliance
 - [[meta-muse-spark]] — Meta's strategic shift to closed-source
-- [[claude-mythos-preview]] — Anthropic's cautious release approach
+- [[concepts/claude-mythos-preview.md]] — Anthropic's cautious release approach
 
 ## Sources
 

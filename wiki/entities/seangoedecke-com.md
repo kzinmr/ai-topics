@@ -1,11 +1,13 @@
 ---
 title: Sean Goedecke
+type: entity
 status: active
 tags:
 - person
 - ai-criticism
 - politics
 - ai-autonomy-debate
+sources: []
 ---
 
 # Sean Goedecke
@@ -147,9 +149,9 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 - [[AI Coding Tools]] — Code review as the meta-skill for AI-assisted development
 - [[Software Engineering]] — Career progression, system design, tech industry dynamics
 - [[AI Sycophancy]] — AI models agreeing with users even when wrong
-- [[Tech Industry Economics]] — Impact of interest rates on engineering hiring
-- [[System Design]] — Practical architecture, not interview prep
-- [[Engineering Management]] — Code review, team dynamics, leadership
+-  — Impact of interest rates on engineering hiring
+-  — Practical architecture, not interview prep
+-  — Code review, team dynamics, leadership
 
 ## Influence
 

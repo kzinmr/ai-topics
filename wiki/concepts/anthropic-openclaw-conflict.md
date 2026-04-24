@@ -1,5 +1,6 @@
 ---
 title: "Anthropic-OpenClaw Conflict"
+type: concept
 created: 2026-04-13
 updated: 2026-04-13
 tags: [concept, anthropic, openclaw, third-party-tools, subscription-policy, peter-steinberger]
@@ -9,6 +10,7 @@ related:
   - concepts/agentic-engineering
   - concepts/claude-code-source-patterns
   - entities/peter-steinberger
+sources: []
 ---
 
 # Anthropic-OpenClaw Conflict
@@ -98,6 +100,6 @@ The pattern extends beyond Anthropic: Google has also taken action against Gemin
 ## Related
 
 - [[open-claw-ecosystem]] — OpenClaw and the personal AI agent movement
-- [[agentic-engineering]] — The practice being constrained
+- [[concepts/harness-engineering/agentic-engineering.md]] — The practice being constrained
 - [[claude-code-source-patterns]] — Technical analysis of Claude Code internals
 - [[peter-steinberger]] — OpenClaw creator, now at OpenAI

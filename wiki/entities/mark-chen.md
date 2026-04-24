@@ -1,5 +1,6 @@
 ---
 title: Mark Chen
+type: entity
 created: 2026-04-14
 updated: 2026-04-14
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': False}
@@ -11,6 +12,7 @@ tags:
   - o1
   - multimodal
   - reasoning
+sources: []
 ---
 
 
@@ -154,8 +156,8 @@ His public statements emphasize OpenAI's commitment to advancing **reasoning and
 - [[ilya-sutskever]] — OpenAI co-founder; former senior colleague
 - [[alec-radford]] — Fellow OpenAI researcher; collaborated on GPT series
 - [[greg-brockman]] — OpenAI co-founder; engineering leadership
-- [[multimodal-ai]] — Chen's primary research area
-- [[ai-reasoning]] — o1 model represents this paradigm
+-  — Chen's primary research area
+-  — o1 model represents this paradigm
 
 ## Sources
 

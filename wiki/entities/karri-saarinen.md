@@ -1,5 +1,6 @@
 ---
 title: Karri Saarinen
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -10,6 +11,7 @@ tags:
   - issue-tracking
   - linear
   - developer-tools
+sources: []
 ---
 
 
@@ -168,7 +170,7 @@ Co-founded the initiative to help women learn programming:
 - [[mitsuhiko]] — Creator of Flask/Sentry; shared philosophy of opinionated, well-designed developer tools
 - [[andrej-karpathy]] — Both advocate for AI-native development workflows, but from different angles (design vs. engineering)
 - [[simon-willison]] — Fellow builder who thinks deeply about how AI should be integrated into tools
-- [[sebastien-ramirez]] — Python developer who shares the "opinionated software" philosophy
+-  — Python developer who shares the "opinionated software" philosophy
 
 ## X Activity Themes
 

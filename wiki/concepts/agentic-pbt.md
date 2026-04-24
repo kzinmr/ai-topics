@@ -1,5 +1,6 @@
 ---
 title: Agentic Property-Based Testing (Anthropic + Hypothesis)
+type: concept
 aliases: [agentic-pbt, anthropic-property-based-testing]
 created: 2026-04-14
 updated: 2026-04-14
@@ -92,14 +93,14 @@ MacIverのClaude Code実践レポート（2026-04）：
 
 ## Related Concepts
 
-- [[raw/articles/2026-04-15-property-based-testing-anthropic.md]] — テストパラダイムの基礎
+-  — テストパラダイムの基礎
 - [[harness-engineering]] — Claude CodeコマンドとしてのAgentic PBT
 - [[ai-evals]] — 984バグレポート生成、86%妥当性率
-- [[concepts/agentic-engineering.md]] — AIエージェントによる自律的コード品質保証
-- [[software-correctness]] — 不変条件によるバグ発見
+-  — AIエージェントによる自律的コード品質保証
+-  — 不変条件によるバグ発見
 - [[drmaciver]] — Hypothesis作者、Antithesis Senior Engineer
 - [[concepts/mismanaged-geniuses-hypothesis.md]] — Python PBTライブラリ
-- [[hegel]] — 言語横断PBTプロトコル
+-  — 言語横断PBTプロトコル
 
 ## Sources
 

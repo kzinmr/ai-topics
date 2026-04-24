@@ -1,5 +1,6 @@
 ---
 title: Geoffrey Hinton
+type: entity
 created: 2026-04-13
 updated: 2026-04-13
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
@@ -11,6 +12,7 @@ tags:
   - google
   - backpropagation
   - boltzmann-machine
+sources: []
 ---
 
 
@@ -186,9 +188,9 @@ Hinton has mentored many of the leading figures in modern AI:
 - [[Yoshua Bengio]] — Turing Award co-recipient; deep learning pioneer
 - [[Yann LeCun]] — Turing Award co-recipient; CNN pioneer
 - [[entities/google-tpu.md]] — Former employer (2013–2023)
-- [[vector-institute]] — Current affiliation
-- [[deep-learning]] — Hinton's foundational field
-- [[backpropagation]] — Hinton's most influential algorithm
+-  — Current affiliation
+-  — Hinton's foundational field
+-  — Hinton's most influential algorithm
 - [[ai-safety]] — Hinton's current advocacy focus
 
 ## Sources

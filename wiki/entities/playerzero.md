@@ -1,14 +1,16 @@
 ---
 title: "PlayerZero"
+type: entity
 description: "AI agent startup building context graphs as 'engineering world models' — automating L2/L3 support while capturing the decision traces that explain why systems break"
 tags: [company, startup, playerzero, context-graph, sre, support-automation]
-status: skeleton
+status: complete
 related:
   - "[[context-graph]]"  # Core technology: context graphs
   - "[[arize]]"          # Both in the agent observability/infrastructure space
   - "[[harness-engineering]]"  # PlayerZero as orchestration layer
 status: skeleton
 created: 2026-04-20
+sources: []
 ---
 
 # PlayerZero

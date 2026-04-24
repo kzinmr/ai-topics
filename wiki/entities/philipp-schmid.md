@@ -1,5 +1,6 @@
 ---
 title: Philipp Schmid
+type: entity
 handle: "@_philschmid"
 created: 2026-04-10
 updated: 2026-04-10
@@ -14,6 +15,7 @@ tags:
   - agent-harnesses
   - mcp
   - gemini
+sources: []
 ---
 
 
@@ -173,7 +175,7 @@ Schmid was recognized as the **first German AWS Machine Learning Hero** in 2021,
 - **[[varun-trivedy]]** — Both work on agent harness engineering; Schmid's "2026 will be around Agent Harnesses" framing aligns with Trivedy's DeepAgents work
 - **[[thariq-shihipar]]** — Both contribute to the Claude Agent SDK ecosystem; complementary perspectives on harness design and agent architecture
 - **[[florian-brand]]** — Both focus on open model deployment and evaluation; Brand on benchmark analysis, Schmid on deployment optimization
-- **[[logan-kilpatrick]]**, **[[omar-sanseviero]]**, **[[paige-bailey]]**, **[[mat-velloso]]** — Colleagues on the Google DeepMind AI DevRel team
+- **[[logan-kilpatrick]]**, ****, ****, **** — Colleagues on the Google DeepMind AI DevRel team
 - **[[nathan-lambert]]** — Both active in the open model ecosystem; Lambert at Ai2, Schmid at DeepMind
 
 ## X Activity Themes

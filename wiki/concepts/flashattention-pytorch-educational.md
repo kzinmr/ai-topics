@@ -1,5 +1,6 @@
 ---
 title: FlashAttention PyTorch Educational Implementation
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags:
@@ -13,6 +14,7 @@ related:
 - compute-scaling-bottlenecks
 - vllm
 - llama-cpp
+sources: []
 ---
 
 # FlashAttention (FA1-FA4) PyTorch Educational Implementation

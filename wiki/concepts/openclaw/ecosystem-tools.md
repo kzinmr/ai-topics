@@ -1,5 +1,6 @@
 ---
 title: "OpenClaw Ecosystem Tools"
+type: concept
 aliases:
   - openclaw-ecosystem
   - openclaw-mcp-tools
@@ -93,6 +94,6 @@ OpenClawのスキル拡張は**ClawHub**を通じて配布される：
 - [[openclaw]] — OpenClawコンセプト集約
 - [[concepts/openclaw/five-tier-precedence.md]] — スキル優先度モデル
 - [[peter-steinberger]] — 開発者
-- [[mcp-model-context-protocol]] — Model Context Protocol
+-  — Model Context Protocol
 - [[nvidia-nemoclaw]] — NVIDIAエンタープライズ版
 - [[local-first-software]] — ローカルファーストソフトウェア運動

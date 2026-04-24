@@ -1,5 +1,6 @@
 ---
 title: "AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較"
+type: concept
 created: 2026-04-12
 updated: 2026-04-12
 tags: [memory-systems, agentic-engineering, chatgpt, claude, cognition, devin, openai, anthropic]
@@ -164,7 +165,7 @@ Claudeのメモリが「The Bitter Lesson」に沿った設計であることは
 - [[openai]] — ChatGPT memory、Codexの開発
 - [[anthropic]] — Claude Memory、Claude Code
 - [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition.md]] — Devin、エージェント特化型メモリ
-- [[Rich Sutton]] — 「The Bitter Lesson」の提唱者
+-  — 「The Bitter Lesson」の提唱者
 
 ## 出典
 

@@ -1,8 +1,10 @@
 ---
 title: Raymond Chen
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Raymond Chen
@@ -127,9 +129,9 @@ Chen understands that **every "fix" has a cost**, and that cost includes not jus
 - [[Windows NT]] — The codebase that absorbed Windows 95's UI; Chen's writing traces this convergence in detail
 - [[Application Compatibility]] — Chen's primary area of expertise; the practice of preserving working behavior across OS updates
 - [[The Old New Thing (book)]] — Chen's 2007 book adapting blog content
-- [[Backward Compatibility]] — The central philosophical theme of Chen's entire body of writing
-- [[ABI Design]] — Chen's recent posts on processor-level ABI decisions and their implications
-- [[Microsoft]] — Chen's employer for 30+ years
+-  — The central philosophical theme of Chen's entire body of writing
+-  — Chen's recent posts on processor-level ABI decisions and their implications
+-  — Chen's employer for 30+ years
 
 ## Sources
 

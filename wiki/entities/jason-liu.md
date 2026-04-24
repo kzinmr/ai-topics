@@ -1,5 +1,6 @@
 ---
 title: Jason Liu
+type: entity
 handle: "@jxnlco"
 created: 2026-04-13
 updated: 2026-04-13
@@ -15,6 +16,7 @@ tags:
   - rag
   - context-engineering
   - evals
+sources: []
 ---
 
 
@@ -476,7 +478,7 @@ Jason is developing Context Engineering as a natural evolution beyond RAG for ag
 - **[[structured-outputs]]** — Liu's primary technical domain; cited by OpenAI as inspiration for their feature
 - **[[eugene-yan]]** — Fellow practitioner in production ML evaluation; both emphasize systematic validation over benchmarking
 - **[[shreya-shankar]]** — Overlapping focus on evaluation and validation rigor in LLM systems
-- **[[bryan-bischof]]** — Shared philosophy of production-first ML engineering over demo-centric approaches
+- **[[entities/bryan-bischof.md]]** — Shared philosophy of production-first ML engineering over demo-centric approaches
 - **Weights & Biases** — Consulting client; shared community around ML engineering best practices
 - **Modal Labs** — Consulting client; serverless GPU infrastructure for running structured output pipelines
 - **Zapier, HubSpot, Limitless, Timescale** — Consulting clients across the AI application stack

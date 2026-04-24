@@ -1,5 +1,6 @@
 ---
 title: Addy Osmani
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 source: "x-account"
@@ -11,6 +12,7 @@ tags:
   - web-development
   - developer-experience
   - google
+sources: []
 ---
 
 
@@ -139,13 +141,13 @@ His posting style is **educational and systematic** — he builds frameworks, cr
 
 ## Related
 
-- [[concepts/agentic-engineering.md]]
+- 
 - [[harness-engineering]]
 - [[multi-agent-autonomy-scale]]
 - [[context-engineering]]
 - [[boris-cherny]]
 - [[ryan-lopopolo]]
-- [[karpathy]]
+- [[concepts/karpathy.md]]
 - [[simon-willison]]
 
 ## Sources

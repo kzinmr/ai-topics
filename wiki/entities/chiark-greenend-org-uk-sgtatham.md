@@ -1,5 +1,6 @@
 ---
 title: Simon Tatham
+type: entity
 created: 2026-04-09
 updated: 2026-04-13
 tags:
@@ -9,6 +10,7 @@ tags:
   - developer-tools
   - free-software
   - unix-philosophy
+sources: []
 ---
 
 
@@ -89,9 +91,9 @@ Tatham's series on aperiodic tilings (five parts and counting) and his essay on 
 
 - [[unix-philosophy]] — Small tools, clear interfaces, composability
 - [[code-review]] — Social dynamics of reviewing code
-- [[forge-independence]] — Using Git without GitHub/GitLab
-- [[git]] — Distributed version control system
-- [[developer-tooling]] — Building tools for developers
+-  — Using Git without GitHub/GitLab
+-  — Distributed version control system
+-  — Building tools for developers
 - [[mitsuhiko]] — Another free-software author with similar philosophy
 
 ## Sources

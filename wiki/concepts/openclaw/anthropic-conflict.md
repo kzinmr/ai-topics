@@ -1,5 +1,6 @@
 ---
 title: "Anthropic-OpenClaw Conflict"
+type: concept
 aliases:
   - anthropic-openclaw-conflict
   - openclaw-ban

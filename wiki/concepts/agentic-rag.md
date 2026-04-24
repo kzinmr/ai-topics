@@ -1,5 +1,6 @@
 ---
 title: "Agentic RAG (Retrieval-Augmented Generation)"
+type: concept
 created: 2026-04-21
 updated: 2026-04-21
 tags: [concept, agentic-rag, retrieval, llm, inference]
@@ -85,4 +86,4 @@ Five specialized agents for iterative correction:
 - [[knowledge-graph-memory-agents]] — Graph memory infrastructure for agents
 - [[vector-db-agent-memory]] — Vector database memory for agents
 - [[context-engineering]] — Dynamic token curation for optimal context
-- [[rag-retrieval-augmented-generation]] — Traditional RAG (precursor)
+-  — Traditional RAG (precursor)

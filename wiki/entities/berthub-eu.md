@@ -1,5 +1,6 @@
 ---
 title: Bert Hubert
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -12,6 +13,7 @@ tags:
   - digital-sovereignty
   - tech-policy
   - lean-software
+sources: []
 ---
 
 
@@ -96,9 +98,9 @@ His **"Modern C++ for C Programmers"** series (6 parts) is a widely-referenced r
 
 - [[powerdns]] — Open-source DNS software Bert founded in 1999
 - [[lean-software]] — Software minimalism as security strategy
-- [[digital-sovereignty]] — European infrastructure autonomy
-- [[rfc-5452]] — DNS resilience standard Bert co-authored
-- [[chatcontrol]] — EU client-side scanning legislation Bert critiques
+-  — European infrastructure autonomy
+-  — DNS resilience standard Bert co-authored
+-  — EU client-side scanning legislation Bert critiques
 
 ## Sources
 

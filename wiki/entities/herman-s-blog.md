@@ -1,5 +1,6 @@
 ---
 title: Herman Martinus
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -13,6 +14,7 @@ tags:
 aliases:
 - herman.bearblog.dev
 - herman
+sources: []
 ---
 
 # Herman Martinus
@@ -113,9 +115,9 @@ This post positioned Herman as an early observer of the intersection between AI 
 ## Related
 
 - [[solo-founder-philosophy]] — Herman's approach to building and growing products
-- [[garden-vs-stream]] — The "my product is my garden" philosophy
-- [[frustration-loop]] — Herman's anti-spam technique
-- [[bear-blog]] — Bear Blog platform
+-  — The "my product is my garden" philosophy
+-  — Herman's anti-spam technique
+-  — Bear Blog platform
 
 ## Sources
 

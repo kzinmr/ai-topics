@@ -1,5 +1,6 @@
 ---
 title: Chris Tate
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 source: "x-account"
@@ -11,6 +12,7 @@ tags:
   - developer-tools
   - generative-ui
   - vercel
+sources: []
 ---
 
 
@@ -117,13 +119,13 @@ He occasionally shares **technical threads** explaining the reasoning behind his
 
 ## Related
 
-- [[raw/articles/open.substack.com--pub-simonw-p-metas-new-model-is-muse-spark-and--57c95054.md]] — Simon Willison, similar focus on developer tools and AI
+-  — Simon Willison, similar focus on developer tools and AI
 - [[antirez-com]] — Salvatore Sanfilippo, shared philosophy of building for developers
 - [[geoffreylitt-com]] — Geoffrey Litt, small tools and local-first philosophy
 - [[mitsuhiko]] — Armin Ronacher (Flask), developer tooling focus
-- [[generative-ui]] — The paradigm Tate pioneered with json-render
-- [[ai-agent-browser-automation]] — agent-browser's domain
-- [[vercel]] — Tate's employer and ecosystem
+-  — The paradigm Tate pioneered with json-render
+-  — agent-browser's domain
+-  — Tate's employer and ecosystem
 
 ## Sources
 

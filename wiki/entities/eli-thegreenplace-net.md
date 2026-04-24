@@ -1,8 +1,10 @@
 ---
 title: Eli Bendersky
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Eli Bendersky
@@ -181,9 +183,9 @@ This reflects his broader philosophy: claims without evidence are just opinions.
 - [[Go Tooling]] — go generate, AST rewriting, astutil, stringer
 - [[LLM-Assisted Development]] — Practical experience with Codex and other AI coding agents
 - [[Boring Technology]] — His thesis on proven tools + LLMs vs. shiny new alternatives
-- [[Scheme Programming]] — The Bob project: interpreter, compiler, VM, WASM target
-- [[Conformance Testing]] — Using test suites as safety nets for AI-assisted refactoring
-- [[Resilient Parsing]] — Error recovery in lexers and parsers
+-  — The Bob project: interpreter, compiler, VM, WASM target
+-  — Using test suites as safety nets for AI-assisted refactoring
+-  — Error recovery in lexers and parsers
 
 ## Influence Metrics
 

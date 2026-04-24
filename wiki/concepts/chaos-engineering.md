@@ -1,5 +1,6 @@
 ---
 title: Chaos Engineering for Microservices
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags:
@@ -103,5 +104,5 @@ lambdaFunction.addPermission('deny-all', {
 ## Related Concepts
 - [[event-driven-architecture]]
 - [[microservices-vs-monolith]]
-- [[circuit-breaker-pattern]]
-- [[dead-letter-queue]]
+- 
+- 

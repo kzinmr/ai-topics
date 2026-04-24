@@ -1,5 +1,6 @@
 ---
 title: Corbett (Kyle Corbitt)
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -15,6 +16,7 @@ aliases:
 - kcorbitt
 - Kyle Corbitt
 source: x-account
+sources: []
 ---
 
 # Corbett (Kyle Corbitt)
@@ -100,8 +102,8 @@ Unlike many AI startups that keep their technology proprietary, OpenPipe has con
 
 - [[concepts/fine-tuning/unsloth.md]] — Model customization via supervised fine-tuning
 - [[reinforcement-learning]] — RL training for AI agents
-- [[coreweave]] — Acquired OpenPipe in 2025
-- [[y-combinator]] — Corbitt's former employer (Startup School Director)
+-  — Acquired OpenPipe in 2025
+-  — Corbitt's former employer (Startup School Director)
 - [[concepts/chatgpt-memory-bitter-lesson.md]] — Philosophy underlying OpenPipe's approach
 
 ## Sources

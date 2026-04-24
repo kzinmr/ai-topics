@@ -1,5 +1,6 @@
 ---
 title: "Anthropic's Memory Tool — Cognitionの戦略的追随"
+type: concept
 created: 2026-04-12
 updated: 2026-04-12
 tags: [anthropic, cognition, claude, devin, memory-tool, competitive-analysis, agentic-engineering]
@@ -143,7 +144,7 @@ AnthropicのMemory Toolは、メモリ設計における**明確な bet** だっ
 - [[anthropic]] — Claude Memory Toolの開発元
 - [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition.md]] — Devinの開発元、Anthropicの動向を注視
 - [[Claude Code]] — Anthropicのコーディングエージェント
-- [[Devin]] — Cognitionのコーディングエージェント
+-  — Cognitionのコーディングエージェント
 
 ## 出典
 

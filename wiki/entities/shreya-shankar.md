@@ -1,5 +1,6 @@
 ---
 title: Shreya Shankar
+type: entity
 related:
   - concepts/ai-evals
   - concepts/llm-as-judge
@@ -202,10 +203,10 @@ Her research has been adopted by **OpenAI and Anthropic teams** for their evalua
 - [[eugene-yan]] — Co-author on Applied LLMs guide, shared evals philosophy
 - [[ai-evals]] — The evaluation framework they teach
 - [[llm-as-judge]] — Core evaluation technique
-- [[error-analysis]] — Foundational practice
+-  — Foundational practice
 - [[harness-engineering]] — Connected philosophy
 - [[eval-tools-comparison]] — Tool selection framework
-- [[critique-shadowing]] — Husain's methodology (complementary)
+- [[concepts/critique-shadowing.md]] — Husain's methodology (complementary)
 - [[drmaciver]] — Property-based testing applied to LLM evaluation (`foundational-llm-evals`); PBT methodology for eval design
 
 ## Sources

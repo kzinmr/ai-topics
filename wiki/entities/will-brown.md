@@ -1,5 +1,6 @@
 ---
 title: Will Brown
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 source: "x-account"
@@ -11,6 +12,7 @@ tags:
   - rlhf
   - reinforcement-learning
   - open-source
+sources: []
 ---
 
 
@@ -158,11 +160,11 @@ A comprehensive learning roadmap for generative AI, covering everything from bas
 - [[concepts/fine-tuning/grpo-rl-training.md]] — Group Relative Policy Optimization, the technique Brown popularized for open-source reasoning model training
 - [[rlhf]] — Reinforcement Learning from Human Feedback, the broader alignment paradigm
 - [[reasoning-models]] — Models with extended reasoning capabilities, Brown's primary research focus
-- [[agent-harness]] — Agent execution frameworks that verifiers supports
+-  — Agent execution frameworks that verifiers supports
 - [[nathan-lambert]] — Interconnects newsletter author, fellow open-source RL researcher
 - [[teknium]] — Nous Research co-founder, open-source AI community leader
-- [[prime-intellect]] — Brown's current organization
-- [[morgan-stanley]] — Brown's previous employer
+-  — Brown's current organization
+-  — Brown's previous employer
 
 ## Sources
 

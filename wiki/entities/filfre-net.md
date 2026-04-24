@@ -1,5 +1,6 @@
 ---
 title: Jimmy Maher — The Digital Antiquarian
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -15,6 +16,7 @@ aliases:
 - filfre.net
 - The Digital Antiquarian
 - Jimmy Maher
+sources: []
 ---
 
 # Jimmy Maher — The Digital Antiquarian
@@ -169,9 +171,9 @@ But this transparency strengthens rather than weakens his historical work. By ac
 - [[interactive-fiction]] — The medium Maher has spent two decades documenting and preserving
 - [[infocom]] — The company whose legacy Maher has extensively chronicled
 - [[sierra-online]] — The company Maher has written about in unprecedented depth
-- [[z-machine]] — Infocom's virtual machine, foundational technology for IF
-- [[if-comp]] — The annual competition that organizes the modern IF community
-- [[game-preservation]] — Maher's broader project of documenting and archiving gaming history
+-  — Infocom's virtual machine, foundational technology for IF
+-  — The annual competition that organizes the modern IF community
+-  — Maher's broader project of documenting and archiving gaming history
 
 ## Sources
 

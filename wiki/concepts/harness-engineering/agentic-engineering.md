@@ -1,5 +1,6 @@
 ---
 title: Agentic Engineering
+type: concept
 slug: agentic-engineering
 status: complete
 tags:
@@ -13,6 +14,7 @@ aliases:
 created: 2026-04-12
 updated: 2026-04-12
 source: https://simonwillison.net/2025/Apr/11/agentic-engineering/
+sources: []
 ---
 
 # Agentic Engineering
@@ -133,7 +135,7 @@ This mirrors how good engineering teams work with human developers.
 - [Agentic Engineering](https://simonwillison.net/2025/Apr/11/agentic-engineering/) — Simon Willison
 - [My Experience with Claude Code 2.0](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/) — Sankalp
 - [Shipping at Inference Speed](https://steipete.me/posts/2025/shipping-at-inference-speed) — Peter Steinberger (@steipete)
-- Related concepts: [[test-driven-development]], [[ai-pair-programming]], [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop.md]], [[inference-speed-development]], [[claude-code-best-practices]], [[context-window-management]], [[claude-code-source-patterns]], [[ai-coding-reliability]]
+- Related concepts: , , [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop.md]], [[inference-speed-development]], [[claude-code-best-practices]], [[context-window-management]], [[claude-code-source-patterns]], [[ai-coding-reliability]]
 
 ---
 

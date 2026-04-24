@@ -1,5 +1,6 @@
 ---
 title: Sam Altman
+type: entity
 created: 2026-04-13
 updated: 2026-04-13
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
@@ -11,6 +12,7 @@ tags:
   - worldcoin
   - ai-infrastructure
   - agi
+sources: []
 ---
 
 
@@ -208,8 +210,8 @@ The 2023 board crisis revealed deep tensions between safety-focused board member
 - [[John Schulman]] — OpenAI co-founder; RL researcher
 - [[Dario Amodei]] — Anthropic CEO; competitor
 - [[openai]] — Company Altman leads
-- [[worldcoin]] — Altman's proof-of-personhood project
-- [[raw/articles/prnewswire.com--news-releases-agibot-reaches-10-000-units-as-real-world-dema--1e894058.md]] — Altman's stated long-term goal
+-  — Altman's proof-of-personhood project
+-  — Altman's stated long-term goal
 
 ## Sources
 

@@ -1,5 +1,6 @@
 ---
 title: Amazon Acquires Rivr
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -13,6 +14,7 @@ related:
 - robotics
 - delivery
 - autonomous-vehicles
+sources: []
 ---
 
 # Amazon Acquires Rivr
@@ -57,6 +59,6 @@ March 2026 acquisition of Zurich-based autonomous robotics startup Rivr by Amazo
 - Signals Amazon's commitment to last-mile automation
 
 ## Sources
-- [[raw/articles/techcrunch.com--2026-03-19-amazon-acquires-rivr-maker-of-a-stair-climbing-delivery-robot--...]]
+- 
 - The Information report
 - LinkedIn announcement by Marko Bjelonic

@@ -1,8 +1,10 @@
 ---
 title: Terrible Software
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Terrible Software
@@ -189,9 +191,9 @@ The blog uses WordPress with email subscription functionality and is distributed
 - [[Engineering Management]] — Leading teams, hands-on management, coding as a manager
 - [[Career Development]] — Senior skills, promotion strategies, communication
 - [[AI and Software Engineering]] — Practical impact of AI on the profession
-- [[Team Dynamics]] — Communication patterns, complexity bias
-- [[Technical Leadership]] — Setting standards, building trust, leading by example
-- [[Simplicity]] — The undervalued skill of keeping things simple
+-  — Communication patterns, complexity bias
+-  — Setting standards, building trust, leading by example
+-  — The undervalued skill of keeping things simple
 
 ## Influence
 

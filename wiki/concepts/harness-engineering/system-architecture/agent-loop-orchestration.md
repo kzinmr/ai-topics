@@ -1,5 +1,6 @@
 ---
 title: "Agent Loop Orchestration"
+type: concept
 aliases:
   - agent-loop
   - orchestration-loop
@@ -111,7 +112,7 @@ text at the beginning ... 1000 chars truncated ... text at the end
 ## 関連概念
 
 - [[context-compaction]] — コンテキストが満杯になった際の圧縮メカニズム
-- [[container-context]] — 実行環境の永続化
+- [[concepts/harness-engineering/system-architecture/container-context.md]] — 実行環境の永続化
 - [[context-window-management]] — コンテキスト予算の戦略的管理
 - [[harness-engineering]] — エージェント実行環境の設計（上位概念）
 
@@ -119,4 +120,4 @@ text at the beginning ... 1000 chars truncated ... text at the end
 
 - [OpenAI: From model to agent](https://openai.com/index/equip-responses-api-computer-environment/)
 - [[openai]] — OpenAI
-- [[raw/articles/openai-equip-responses-api-computer-environment-2026-03-11.md]] — Responses API（実装基盤）
+-  — Responses API（実装基盤）

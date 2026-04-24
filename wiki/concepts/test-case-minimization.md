@@ -8,6 +8,7 @@ tags:
  - property-based-testing
  - debugging
  - zig
+sources: []
 ---
 
 # Test Case Minimization
@@ -102,8 +103,8 @@ Phase 2 (refine): Halve step to find minimum
 ## Related Concepts
 
 - [[agentic-pbt]] — Agentic property-based testing
-- [[evaluating-llms-harness]] — Test harnesses for LLM evaluation
-- [[first-run-the-tests]] — Test-first development patterns
+-  — Test harnesses for LLM evaluation
+- [[concepts/harness-engineering/agentic-workflows/first-run-the-tests.md]] — Test-first development patterns
 
 ## References
 

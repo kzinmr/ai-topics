@@ -1,5 +1,6 @@
 ---
 title: Cory Doctorow
+type: entity
 created: 2026-04-09
 updated: 2026-04-16
 tags:
@@ -13,6 +14,7 @@ aliases:
 - pluralistic.net
 - cory doctorow
 - doctorow
+sources: []
 ---
 
 # Cory Doctorow
@@ -152,12 +154,12 @@ His **Memex Method** — maintaining 50,000+ public notes in a searchable databa
 - [[chokepoint-capitalism]] — Intermediaries as unavoidable bottlenecks
 - [[right-to-repair]] — Anti-circumvention law's impact on device ownership
 - [[posse-pattern]] — Publish on Own Site, Syndicate Everywhere
-- [[memex-method]] — Public note-taking as knowledge creation
+-  — Public note-taking as knowledge creation
 - [[ed-zitron-s-where-s-your-ed-at]] — Another critical tech-policy voice
-- [[ai-pascals-wager]] — AIドゥーマー議論のパスカルの賭え framing
+-  — AIドゥーマー議論のパスカルの賭え framing
 - [[ai-bubble-economics]] — AI投資バブルと経済リスク
-- [[post-american-internet]] — 脱・米国中心インターネット構想
-- [[raw/articles/crawl-2026-04-23-building-effective-ai-agents.md]] — Electronic Frontier Foundation, where Doctorow is a special advisor
+-  — 脱・米国中心インターネット構想
+-  — Electronic Frontier Foundation, where Doctorow is a special advisor
 
 ## Sources
 

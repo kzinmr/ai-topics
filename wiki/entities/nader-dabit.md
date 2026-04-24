@@ -1,5 +1,6 @@
 ---
 title: Nader Dabit
+type: entity
 related: [concepts/cognition-devin-philosophy, concepts/cloud-agent-thesis, entities/scott-wu, entities/walden-yan]
 sources:
   - https://nader.substack.com/p/engineering-for-agents-that-never
@@ -153,7 +154,7 @@ Per nader.codes: React Native AI, Eliza (ai16z), CDK, fal.ai, Layer (layer.xyz),
 ## Related
 
 - [[cognition-devin-philosophy]] — Cognition's approach to building AI agents
-- [[cloud-agent-thesis]] — Dabit's framework for cloud-first agents
+-  — Dabit's framework for cloud-first agents
 - [[scott-wu]] — Cognition CEO
 - [[walden-yan]] — Cognition co-founder, context engineering advocate
 

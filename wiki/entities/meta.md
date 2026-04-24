@@ -1,5 +1,6 @@
 ---
 title: Meta
+type: entity
 created: 2026-04-09
 updated: 2026-04-15
 tags:
@@ -10,6 +11,7 @@ tags:
 aliases:
   - Meta Platforms Inc
   - Facebook
+sources: []
 ---
 
 # Meta
@@ -51,7 +53,7 @@ Meta's strategy to enable AI agents to handle product discovery and purchasing o
 
 ### Superintelligence Labs
 
-Led by [[alexandr-wang]] (former Scale AI CEO, hired 2025). Focus on building AGI infrastructure. Reported $115B-$135B capital expenditure for 2026, primarily for AI compute. VR/Reality Labs investment reportedly being redirected toward AI glasses and superintelligence infrastructure.
+Led by  (former Scale AI CEO, hired 2025). Focus on building AGI infrastructure. Reported $115B-$135B capital expenditure for 2026, primarily for AI compute. VR/Reality Labs investment reportedly being redirected toward AI glasses and superintelligence infrastructure.
 
 ### Instagram AI Search
 
@@ -76,7 +78,7 @@ See also: [[open-source-vs-closed]]
 ## Key People
 
 - **[[mark-zuckerberg]]** — CEO, Personal Superintelligence vision
-- **[[alexandr-wang]]** — Superintelligence Labs head
+- **** — Superintelligence Labs head
 - **Andrew Bosworth** — CTO, Reality Labs/AR/VR
 - **Yann LeCun** — Chief AI Scientist, open-source advocate (increasingly sidelined per community reports)
 
@@ -90,8 +92,8 @@ See also: [[open-source-vs-closed]]
 - [[anthropic]]
 - [[openai]]
 - [[entities/google-tpu.md]]
-- [[xai]]
-- [[mario-zechner]] — local AI engineering (contrasting approach)
+- 
+- [[entities/mario-zechner.md]] — local AI engineering (contrasting approach)
 - [[shlok-khemani]] — filesystem-first personal AI (contrasting approach)
 
 ## Sources
@@ -100,4 +102,4 @@ See also: [[open-source-vs-closed]]
 - [Meta's Ray-Ban Display turns AI agents into a hands-free OS (The Relay, 2025)](https://therelaymag.com/metas-ray-ban-display-turns-ai-agents-into-a-hands-free-os/)
 - [Meta Positions AI Glasses and Personal Agents at Center of Growth (AI Insider, Jan 2026)](https://theaiinsider.tech/2026/01/29/meta-positions-ai-glasses-and-personal-agents-at-the-center-of-its-next-growth-phase/)
 - [VisionClaw: Turning Ray-Ban Meta Glasses into an Autonomous Super-Agent (Elluminate Me, Feb 2026)](https://elluminateme.com/artificial-intelligence/visionclaw/)
-- [[raw/articles/substack.com--app-link-post--40004939.md]] (Ben's Bites, 2026-04-09)
+-  (Ben's Bites, 2026-04-09)

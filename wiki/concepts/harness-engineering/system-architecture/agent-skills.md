@@ -1,5 +1,6 @@
 ---
 title: "Agent Skills (SKILL.md)"
+type: concept
 aliases:
   - agent-skill
   - skill-bundle
@@ -16,7 +17,7 @@ sources:
   - "https://openai.com/index/harness-engineering-leveraging-codex/"
   - "https://github.com/openai/skills"
 related:
-  - "[[ai-skills]] — AIスキル（汎用概念）"
+  - " — AIスキル（汎用概念）"
   - "[[harness-engineering]] — ハーネスエンジニアリング"
   - "[[container-context]] — コンテナコンテキスト"
 ---
@@ -105,7 +106,7 @@ skilled_container = client.containers.create(
 - [[harness-engineering]] — OpenAIのツール拡張アプローチ
 - [[container-context]] — スキルが展開される実行環境
 - [[agent-loop-orchestration]] — スキル探索と実行のループ
-- [[ai-skills]] — AIスキルの汎用概念
+-  — AIスキルの汎用概念
 
 ## 参照
 

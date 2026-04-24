@@ -1,11 +1,13 @@
 ---
 title: Elie Bakouch
+type: entity
 created: 2025-11-17 16:10:46
 updated: 2026-04-10 10:00:00
 aliases: [eliebak, eliebakouch]
 status: active
 description: "ML engineer and researcher at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training."
 tags: [person]
+sources: []
 ---
 
 
@@ -122,9 +124,9 @@ Active engagement with the local/open-source LLM community through AMAs, discuss
 - [[Mixture-of-Experts]] — His research focus area
 - [[Scaling Laws]] — Compute-optimal training research
 - [[FineWeb]] — Training dataset he helped curate
-- [[Data-Centric AI]] — His training philosophy
-- [[Open Source ML]] — Community he actively participates in
-- [[Synthetic Data]] — Emerging training methodology he follows
+-  — His training philosophy
+-  — Community he actively participates in
+-  — Emerging training methodology he follows
 
 ## Sources
 

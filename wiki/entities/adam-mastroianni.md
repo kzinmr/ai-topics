@@ -1,5 +1,6 @@
 ---
 title: Adam Mastroianni
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -10,6 +11,7 @@ tags:
   - writing
   - experimental-history
   - science-communication
+sources: []
 ---
 
 
@@ -110,9 +112,9 @@ His academic research reveals systematic misperceptions in social interaction:
 
 ## Related
 
-- [[experimental-history]] — Adam's framework for understanding psychology as storytelling
-- [[strong-link-science]] — Progress through best ideas winning, not gatekeeping bad ones
-- [[the-liking-gap]] — Systematic underestimation of how much others like you
+-  — Adam's framework for understanding psychology as storytelling
+-  — Progress through best ideas winning, not gatekeeping bad ones
+-  — Systematic underestimation of how much others like you
 - [[dwarkesh-patel]] — Fellow science communicator with overlapping audience
 - [[paulgraham-com]] — Similar essayistic approach to understanding human behavior
 

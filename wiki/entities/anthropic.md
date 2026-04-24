@@ -1,5 +1,6 @@
 ---
 title: Anthropic
+type: entity
 created: 2026-04-09
 updated: 2026-04-24
 tags:
@@ -9,6 +10,7 @@ tags:
 - active
 aliases:
 - Anthropic PBC
+sources: []
 ---
 
 # Anthropic
@@ -26,9 +28,9 @@ AI safety research company, developer of the Claude model family.
 | Model | Status | Notes |
 |-------|--------|-------|
 | [[claude-mythos]] | **Withheld** | Too risky for public release; limited access via [[project-glasswing]] |
-| [[claude-opus-4.7]] | Released (GA, Apr 16) | Latest flagship — improved coding, cyber safeguards, better vision |
-| [[claude-opus-4.6]] | Released | Previous generation |
-| [[claude-sonnet-4]] | Released | Mid-tier |
+|  | Released (GA, Apr 16) | Latest flagship — improved coding, cyber safeguards, better vision |
+|  | Released | Previous generation |
+|  | Released | Mid-tier |
 
 ## Claude Opus 4.7 (Apr 2026)
 
@@ -94,11 +96,11 @@ Claude Code is Anthropic's AI coding agent, designed under Cat Wu's product lead
 See also: [[openai-codex-superapp]] (OpenAI's competing Codex superapp positioning).
 
 ## Sources
-- [[raw/articles/substack.com--app-link-post--40004939.md]] (Ben's Bites, 2026-04-09)
+-  (Ben's Bites, 2026-04-09)
 
 ## Related
 - [[claude-mythos]]
 - [[project-glasswing]]
-- [[claude-opus-4.6]]
+- 
 - [[openai]]
 - [[meta]]

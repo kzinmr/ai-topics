@@ -1,5 +1,6 @@
 ---
 title: "AI Subprime Crisis"
+type: concept
 date: 2026-04-10
 sources:
   - "https://www.wheresyoured.at/the-subprime-ai-crisis-is-here/"

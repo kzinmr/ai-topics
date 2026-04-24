@@ -1,5 +1,6 @@
 ---
 title: Ryan Lopopolo
+type: entity
 handle: "@_lopopolo"
 created: 2026-04-13
 updated: 2026-04-13
@@ -15,6 +16,7 @@ tags:
   - agentic-engineering
   - elixir
   - symphony
+sources: []
 ---
 
 
@@ -287,7 +289,7 @@ Ryan's work at OpenAI Frontier points to safe, observable, governable agent depl
 - **[[concepts/agent-team-swarm/managed-devins.md]]** — Cognitionの条件付きサブエージェントspawnとSymphonyの比較
 - **[[openai-symphony]]** — OpenAI Symphonyの詳細（Elixir実装、SPEC.md）
 - **[[multi-agent-autonomy-scale]]** — 256エージェント規模の自律協調研究
-- **[[agentic-engineering]]** — AIエージェントを活用したソフトウェア開発手法全般
+- **[[concepts/harness-engineering/agentic-engineering.md]]** — AIエージェントを活用したソフトウェア開発手法全般
 
 ## Sources
 

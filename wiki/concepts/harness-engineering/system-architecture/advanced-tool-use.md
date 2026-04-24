@@ -1,5 +1,6 @@
 ---
 title: "Advanced Tool Use"
+type: concept
 aliases:
   - advanced-tool-use
   - tool-search-tool
@@ -177,5 +178,5 @@ print(json.dumps(exceeded))
 ## 関連概念
 
 - [[harness-engineering]] — 上位インデックス
-- [[writing-tools-for-agents]] — エージェント用ツール設計の5原則
+- [[concepts/harness-engineering/system-architecture/writing-tools-for-agents.md]] — エージェント用ツール設計の5原則
 - [[context-engineering]] — コンテキストエンジニアリング

@@ -1,5 +1,6 @@
 ---
 title: NVIDIA DGX Spark
+type: entity
 aliases: [dgx-spark, project-digits, gb10-spark, nvidia-dgx-spark]
 created: 2026-04-15
 updated: 2026-04-15

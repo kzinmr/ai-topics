@@ -1,30 +1,29 @@
 ---
-title: Karpathy
-tags: [concept]
-status: skeleton
+title: "Andrej Karpathy"
+type: concept
+aliases:
+  - karpathy
+  - andrej-karpathy
+tags:
+  - concept
+  - person
+  - ai-researcher
+status: complete
+description: "Karpathy (Andrej Karpathy) — AI researcher, educator, and OpenAI/DirectX co-founder. Entity: entities/andrej-karpathy.md"
+created: 2026-04-09
+updated: 2026-04-24
+related:
+  - "[[entities/andrej-karpathy.md]]"
+sources:
+  - "https://karpathy.github.io/"
+  - "https://x.com/karpathy"
 ---
 
-# Karpathy
+# Karpathy (Andrej Karpathy)
 
-> See: [entities/andrej-karpathy.md](../../entities/andrej-karpathy.md)
+> **Moved:** エンティティページは [[entities/andrej-karpathy.md]] にあります。
 
-Andrej Karpathy is a prominent AI researcher, educator, and entrepreneur known for his contributions to deep learning, computer vision, and AI education.
+Andrej KarpathyはAI研究者、教育家。OpenAIの創設メンバーの一人。
+Context Engineering、Loopy Era、RL Agentsなどの概念で知られる。
 
-## Key Contributions
-
-- **Deep Learning Education**: Createdstanford-cs-231n and comprehensive online courses
-- **Karpathy Loop**: His conceptual framework for understanding LLM behavior (see karpathy-loop.md)
-- **karpathy/llm.c**: Exploring minimal LLM implementations in pure C
-- **纳米 GPT**: Educational minimal GPT implementation
-
-## Expansion Needed
-
-- Move content from entities/andrej-karpathy.md here, or
-- Update all wikilinks to point directly to entities/andrej-karpathy.md
-- Link to karpathy-loop.md for his conceptual contributions
-
-## See Also
-
-- [[concepts/_index.md]]
-- [[concepts/karpathy-loop.md]]
-- [[concepts/harness-engineering/agentic-workflows/karpathy-rl-agents.md]]
+詳細: [[entities/andrej-karpathy.md]]

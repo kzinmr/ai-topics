@@ -1,5 +1,6 @@
 ---
 title: Gwern Branwen
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -11,6 +12,7 @@ tags:
   - epistemology
   - self-experimentation
   - forecasting
+sources: []
 ---
 
 
@@ -143,9 +145,9 @@ Gwern challenges the Whiggish "expanding circle" narrative of moral progress, ar
 - [[scaling-hypothesis]] — Gwern's formalization of the theory that scale alone drives AI capability emergence
 - [[dwarkesh-patel]] — Interviewed Gwern on his AI predictions and research methodology
 - [[ordinary-incompetence]] — Gwern's analysis of why most people fail to improve despite experience
-- [[lizardman-constant]] — The irreducible noise floor in human survey responses
-- [[hacker-mindset]] — Gwern's theory of "seeing through" abstractions to underlying reality
-- [[spaced-repetition]] — Cognitive tool Gwern has extensively advocated and practiced
+-  — The irreducible noise floor in human survey responses
+-  — Gwern's theory of "seeing through" abstractions to underlying reality
+-  — Cognitive tool Gwern has extensively advocated and practiced
 
 ## Sources
 

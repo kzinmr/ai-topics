@@ -1,10 +1,12 @@
 ---
 title: "Space GPUs"
+type: concept
 created: 2026-04-10
 updated: 2026-04-10
 tags: [concept, space-compute, ai-infrastructure, satellites, orbital-data-centers]
 aliases: ["orbital-compute", "space-data-centers"]
-related: [[compute-scaling-bottlenecks]], [[dylan-patel]], [[ai-infrastructure]]
+related: [[compute-scaling-bottlenecks]], [[dylan-patel]], 
+sources: []
 ---
 
 # Space GPUs
@@ -152,7 +154,7 @@ Most experts consider this **optimistic**. Brandon Lucia (Carnegie Mellon) calls
 
 - [[compute-scaling-bottlenecks]] — The Earth-side constraints driving the search for alternative compute locations
 - [[dylan-patel]] — SemiAnalysis coverage of the semiconductor supply chain and compute economics
-- [[ai-infrastructure]] — The broader landscape of AI compute infrastructure
+-  — The broader landscape of AI compute infrastructure
 
 ## Sources
 

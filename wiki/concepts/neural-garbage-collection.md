@@ -1,5 +1,6 @@
 ---
 title: "Neural Garbage Collection"
+type: concept
 created: 2026-04-23
 updated: 2026-04-23
 tags: [inference, reinforcement-learning, kv-cache, optimization, context-management]
@@ -27,7 +28,7 @@ Previous approaches optimize proxies (attention scores, token entropy, positiona
 Reasoning and context management are not independent problems. A token's value for cache eviction depends on what reasoning task is being performed. Joint training captures this interdependence.
 
 ### 3. Context Window Efficiency
-Directly applicable to [[context-engineering]], [[context-compaction]], and [[context-window-management]]. Reduces token waste without quality degradation.
+Directly applicable to [[context-engineering]], [[concepts/harness-engineering/system-architecture/context-compaction.md]], and [[context-window-management]]. Reduces token waste without quality degradation.
 
 ## Relation to Tokenmaxxing
 
@@ -41,10 +42,10 @@ Where tasteful tokenmaxxing achieves efficiency through behavioral changes (dept
 
 - [[token-economics]] — Cost framework that Neural GC helps optimize at inference time
 - [[context-engineering]] — Dynamic token curation; Neural GC as a learned approach
-- [[context-compaction]] — Reducing context window waste; Neural GC as RL-based compaction
+- [[concepts/harness-engineering/system-architecture/context-compaction.md]] — Reducing context window waste; Neural GC as RL-based compaction
 - [[speculative-decoding]] — Inference acceleration; Neural GC complements by reducing context size
 - [[inference]] — LLM Inference Optimization overview
 
 ## Sources
 
-- [[raw/articles/ainews-tasteful-tokenmaxxing-2026-04-23.md]] — AINews #21, Latent.Space (April 2026) — "Neural Garbage Collection" mention in Post-Training, RL & Inference Optimization section
+-  — AINews #21, Latent.Space (April 2026) — "Neural Garbage Collection" mention in Post-Training, RL & Inference Optimization section

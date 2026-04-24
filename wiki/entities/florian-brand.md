@@ -1,5 +1,6 @@
 ---
 title: Florian Brand
+type: entity
 handle: "@xeophon"
 created: 2026-04-10
 updated: 2026-04-10
@@ -12,6 +13,7 @@ tags:
   - llm-evaluation
   - prime-intellect
   - interconnects
+sources: []
 ---
 
 
@@ -141,7 +143,7 @@ Co-authored monthly roundups tracking open model releases with Nathan Lambert. N
 - **[[nathan-lambert]]** — Co-editor at Interconnects AI, collaborator on the Artifacts series
 - **[[varun-trivedy]]** — Both work on agent harness engineering; complementary perspectives on the harness-as-infrastructure concept
 - **[[philipp-schmid]]** — Both write about LLM deployment and evaluation; Brand focuses on benchmark analysis while Schmid focuses on deployment guides
-- **[[samsja]]**, **[[mikasenghaas]]**, **[[jackmin801]]** — Top contributors to PRIME-RL, colleagues at Prime Intellect
+- ****, ****, **** — Top contributors to PRIME-RL, colleagues at Prime Intellect
 
 ## X Activity Themes
 

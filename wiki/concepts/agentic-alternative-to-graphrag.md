@@ -1,5 +1,6 @@
 ---
 title: "Agentic Alternative to GraphRAG"
+type: concept
 created: 2026-04-21
 updated: 2026-04-21
 tags: [concept, agentic-rag, retrieval, knowledge-graph, llm]
@@ -92,4 +93,4 @@ Instead of building a static graph, the system:
 - [[knowledge-graph-memory-agents]] — Graph memory approaches; this is the agentic alternative
 - [[agentic-rag]] — Broader taxonomy of agentic retrieval-augmented generation patterns
 - [[sheshansh-agrawal]] — Author, Contextual AI Director of Research
-- [[rag-retrieval-augmented-generation]] — Traditional RAG precursor pattern
+-  — Traditional RAG precursor pattern

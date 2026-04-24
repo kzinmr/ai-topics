@@ -1,5 +1,6 @@
 ---
 title: "AI Coding Agent Criticism"
+type: concept
 created: 2026-04-13
 updated: 2026-04-13
 tags: [concept, ai-coding, criticism, debate, engagement-bias]
@@ -8,6 +9,7 @@ related:
   - entities/armin-ronacher
   - entities/gary-marcus
   - concepts/agentic-engineering
+sources: []
 ---
 
 # AI Coding Agent Criticism
@@ -59,5 +61,5 @@ Criticism from non-use tends to be more abstract:
 
 - [[armin-ronacher]] — Primary analyst of center bias
 - [[mario-zechner]] — Creator of Pi, exemplifies grounded criticism
-- [[agentic-engineering]] — The practice being debated
+- [[concepts/harness-engineering/agentic-engineering.md]] — The practice being debated
 - [[claude-code-source-patterns]] — Technical analysis of agent internals

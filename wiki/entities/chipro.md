@@ -1,5 +1,6 @@
 ---
 title: Chip Huyen
+type: entity
 handle: "@chipro"
 created: 2026-04-10
 updated: 2026-04-10
@@ -9,6 +10,7 @@ tags:
   - ai-engineering
   - production-ml
   - education
+sources: []
 ---
 
 

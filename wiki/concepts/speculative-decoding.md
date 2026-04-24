@@ -73,5 +73,5 @@ Speculative decoding directly impacts [[token-economics]]:
 
 ## Sources
 
-- [[raw/articles/crawl-2026-04-18-speculative-decoding.md]] — vLLM and speculative decoding analysis
+-  — vLLM and speculative decoding analysis
 - Sebastian Raschka, "A Visual Guide to Attention Mechanisms" (Ahead of AI, 2026)

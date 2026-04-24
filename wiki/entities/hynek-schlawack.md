@@ -1,5 +1,6 @@
 ---
 title: Hynek Schlawack
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -12,6 +13,7 @@ tags:
   - structlog
   - testing
   - packaging
+sources: []
 ---
 
 
@@ -155,9 +157,9 @@ Hynek's blog at [hynek.me/articles](https://hynek.me/articles) covers Python dev
 - [[samuelcolvin]] — Fellow Python ecosystem maintainer (Pydantic, Pydantic AI, Monty)
 - [[mitsuhiko]] — Python/Rust developer (Flask, Sentry, Jinja2) with complementary focus on web frameworks
 - [[sebastien-ramirez]] — FastAPI creator, fellow OSS maintainer dealing with AI-generated PR challenges
-- [[guido-van-rossum]] — Python's creator; Hynek's attrs work directly influenced PEP 557 (dataclasses)
-- [[glyph]] — attrs co-conspirator from the original IRC session; Twisted project leader
-- [[eugeneyan]] — ML practitioner who shares Hynek's focus on production-first practices
+-  — Python's creator; Hynek's attrs work directly influenced PEP 557 (dataclasses)
+-  — attrs co-conspirator from the original IRC session; Twisted project leader
+- [[entities/eugeneyan.md]] — ML practitioner who shares Hynek's focus on production-first practices
 - [[andrew-nesbitt]] — Ruby developer with similar open-source maintenance philosophy
 
 ## X Activity Themes

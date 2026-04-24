@@ -1,7 +1,9 @@
 ---
 title: Spike (Mike Doan)
+type: entity
 category: entity
 status: active
+sources: []
 ---
 
 # Spike (Mike Doan)
@@ -125,9 +127,9 @@ Spike's "spikisms" are aphoristic technical insights that blend computational th
 - [[BrainChop]] — His portable brain segmentation tool
 - [[Work-Depth Analysis]] — The computational complexity model Spike advocates for parallel systems
 - [[Software Minimalism]] — The philosophical commitment to small, readable code
-- [[AI-Assisted Development]] — His llm.nvim project and views on AI in programming
-- [[RISC-V]] — The instruction set architecture used in the 100K line ML stack proposal
-- [[Co-Recursion]] — The concept of systems that can build themselves
+-  — His llm.nvim project and views on AI in programming
+-  — The instruction set architecture used in the 100K line ML stack proposal
+-  — The concept of systems that can build themselves
 
 ## Influence Metrics
 

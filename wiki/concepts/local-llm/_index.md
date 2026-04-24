@@ -1,8 +1,10 @@
 ---
 status: active
+type: concept
 created: 2026-04-14
 updated: 2026-04-15
 tags: local-llm, inference, overview
+sources: []
 ---
 
 # Local LLM Ecosystem — Overview
@@ -53,7 +55,7 @@ Together, these techniques allow a distilled 3-8B model at Q4 quantization to ru
 
 - [[local-llm]] — Original consolidated page (reference)
 - [[harness-engineering]] — Local LLMs as harness components
-- [[agentic-engineering]] — Using local LLMs in agent workflows
+- [[concepts/harness-engineering/agentic-engineering.md]] — Using local LLMs in agent workflows
 - [[reasoning-models]] — Distillation for CoT transfer
 - [[inference]] — Inference optimization techniques
 - [[inference-speed-development]] — Development cadence at inference speed

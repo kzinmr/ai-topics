@@ -1,10 +1,11 @@
 ---
 title: "Context Window Management"
+type: concept
 created: 2026-04-13
 updated: 2026-04-16
 tags: [context-window, token-management, prompt-engineering, claude-code, llm-optimization]
 aliases: ["context-window-optimization", "token-budget-management", "conversation-hygiene"]
-related: [[claude-code-best-practices]], [[claude-code-source-patterns]], [[inference-speed-development]], [[concepts/agentic-engineering.md]]
+related: [[claude-code-best-practices]], [[claude-code-source-patterns]], [[inference-speed-development]], 
 sources:
   - raw/articles/anthropic-claude-code-session-management-1m-context.md
 ---
@@ -256,7 +257,7 @@ Before ending a session:
 - [[claude-code-best-practices]] — User-facing patterns that depend on context management
 - [[claude-code-source-patterns]] — Internal Anthropic patterns for context handling
 - [[inference-speed-development]] — Why fast iteration requires clean contexts
-- [[concepts/agentic-engineering.md]] — The methodology this supports
+-  — The methodology this supports
 - [[ai-coding-reliability]] — How context drift leads to bugs
 
 ## Sources

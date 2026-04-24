@@ -1,9 +1,11 @@
 ---
 title: "Evaluation Flywheel"
+type: concept
 created: 2026-04-13
 source: "OpenAI Cookbook — Evaluation patterns"
 tags: [evaluation, development-process, quality]
 status: draft
+sources: []
 ---
 
 # Evaluation Flywheel
@@ -66,4 +68,4 @@ Data Collection → Evaluation → Analysis → Improvement → Data Collection 
 - [[ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
 - [[llm-evaluation-harness]] — LLM Evaluation Harness
 - [[comparisons/eval-tools-comparison]] — AI Eval Tools Comparison
-- [[infrastructure-noise]] — Infrastructure Noise in Agentic Evals
+- [[concepts/harness-engineering/system-architecture/infrastructure-noise.md]] — Infrastructure Noise in Agentic Evals

@@ -1,7 +1,9 @@
 ---
 title: Compute Scaling Bottlenecks
+type: concept
 category: concept
 status: active
+sources: []
 ---
 
 # Compute Scaling Bottlenecks
@@ -9,7 +11,7 @@ status: active
 **Date:** April 10, 2026
 **Source:** SemiAnalysis — Dylan Patel's AI compute bottleneck analysis
 **Primary Analyst:** [[Dylan Patel]] (SemiAnalysis)
-**Related:** [[AI Infrastructure]], [[Space GPUs]], [[AI Bubble Economics]], [[Cognitive Cost of Agents]]
+**Related:** , [[Space GPUs]], [[AI Bubble Economics]], [[Cognitive Cost of Agents]]
 
 ---
 
@@ -101,9 +103,9 @@ The compute bottleneck has profound economic consequences:
 
 - [[AI Bubble Economics]] — Whether AI revenue can justify infrastructure spending at constrained supply levels
 - [[Space GPUs]] — Orbital compute as a theoretical bottleneck workaround
-- [[AI Infrastructure]] — The broader physical layer of AI: data centers, networking, power
+-  — The broader physical layer of AI: data centers, networking, power
 - [[Cognitive Cost of Agents]] — If compute is scarce, inefficient agent usage becomes even more costly
-- [[Agentic Engineering]] — Efficient use of limited compute through better agent practices
+- [[concepts/harness-engineering/agentic-engineering.md]] — Efficient use of limited compute through better agent practices
 
 ---
 

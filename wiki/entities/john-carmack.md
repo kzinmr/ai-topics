@@ -1,5 +1,6 @@
 ---
 title: John Carmack
+type: entity
 created: 2026-04-13
 updated: 2026-04-13
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': False}
@@ -10,6 +11,7 @@ tags:
   - agi
   - keen-technologies
   - id-software
+sources: []
 ---
 
 
@@ -147,11 +149,11 @@ Carmack aligns with Richard Sutton's "Bitter Lesson" thesis: general methods tha
 
 ## Related
 
-- [[John Romero]] — id Software co-founder
+-  — id Software co-founder
 - [[Richard Sutton]] — Keen Technologies partner; RL pioneer
 - [[reinforcement-learning]] — Carmack's preferred AGI approach
 - [[concepts/chatgpt-memory-bitter-lesson.md]] — Sutton's thesis that Carmack advocates
-- [[keen-technologies]] — Carmack's AGI company
+-  — Carmack's AGI company
 
 ## Sources
 

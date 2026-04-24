@@ -1,5 +1,6 @@
 ---
 title: Daniel Han
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 source: "x-account"
@@ -11,6 +12,7 @@ tags:
   - ml-systems
   - cuda-kernels
   - unsloth
+sources: []
 ---
 
 
@@ -155,12 +157,12 @@ Investment analysis scored Unsloth at **8.10/10** (highest in the OSS index):
 
 ## Related People
 
-- [[michael-han]] — Co-founder brother (Design/Product/Engineer at Unsloth)
+-  — Co-founder brother (Design/Product/Engineer at Unsloth)
 - [[andrej-karpathy]] — nanochat/auto-research; both focus on democratizing ML access
 - [[entities/hynek-schlawack.md]] — Open-source maintenance and sustainability philosophy
-- [[sebastien-ramirez]] — OSS project dealing with rapid growth and community demands
+-  — OSS project dealing with rapid growth and community demands
 - [[eugeneyan]] — Applied ML practitioner sharing production ML lessons
-- [[daniel-van-strien]] — Hugging Face community builder
+- [[entities/daniel-van-strien.md]] — Hugging Face community builder
 
 ## X/Twitter Activity
 

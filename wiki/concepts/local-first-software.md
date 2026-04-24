@@ -1,5 +1,6 @@
 ---
 title: "Local-First Software"
+type: concept
 created: 2026-04-13
 updated: 2026-04-13
 status: draft

@@ -1,6 +1,8 @@
 ---
 tags:
+type: entity
 - person
+sources: []
 ---
 
 # Lilian Weng (@lilianweng)
@@ -138,13 +140,13 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 - [[reward-hacking]] — Her November 2024 deep-dive topic
 - [[chain-of-thought-reasoning]] — Central to her analysis of test-time compute
 - [[rlhf]] — Reinforcement Learning from Human Feedback, the alignment method she worked on
-- [[diffusion-models]] — Her April 2024 analysis of video generation
-- [[llm-hallucination]] — Her July 2024 survey on extrinsic hallucinations
+-  — Her April 2024 analysis of video generation
+-  — Her July 2024 survey on extrinsic hallucinations
 - [[concepts/resilient-prompt-engineering.md]] — Her March 2023 definitive guide
 - [[mira-murati]] — Thinking Machines Lab co-founder and CEO
 - [[john-schulman]] — Thinking Machines Lab co-founder and Chief Scientist
 - [[sam-altman]] — OpenAI CEO during her tenure
-- [[sim-to-real-robotics]] — The approach used for the Rubik's Cube robot
+-  — The approach used for the Rubik's Cube robot
 
 ## Influence Metrics
 

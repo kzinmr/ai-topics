@@ -13,6 +13,7 @@ depth: L2
 status: complete
 created: 2026-04-16
 updated: 2026-04-16
+sources: []
 ---
 
 # CodeMode — LLM Code Execution Over Sequential Tool Calling
@@ -58,5 +59,5 @@ CodeMode is the paradigm where LLMs write code (typically Python) for batch exec
 ## Related Patterns
 
 - [[harness-engineering]] — Monty as a harness environment
-- [[structured-outputs]] — Type safety constrains LLM output
+- [[concepts/structured-outputs.md]] — Type safety constrains LLM output
 - [[concepts/harness-engineering/system-architecture/code-execution-with-mcp.md]] — Alternative to MCP tool execution

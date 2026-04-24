@@ -1,9 +1,11 @@
 ---
 title: "Cat Wu"
+type: entity
 created: 2026-04-24
 updated: 2026-04-24
 tags: [person, anthropic, product-management, claude-code]
 aliases: ["Cat Wu (Anthropic)"]
+sources: []
 ---
 
 # Cat Wu
@@ -50,7 +52,7 @@ Cat Wu's appointment as Head of Product signals Anthropic's commitment to:
 
 - [[anthropic]] — Anthropic company
 - [[claude-code]] — Claude Code AI coding agent (entity page)
-- [[claude-opus-4-7]] — Claude Opus 4.7 model
+-  — Claude Opus 4.7 model
 - [[dario-amodei]] — Dario Amodei (Anthropic CEO)
 
 ## Sources

@@ -1,10 +1,11 @@
 ---
 title: "Inference Speed Development"
+type: concept
 created: 2026-04-13
 updated: 2026-04-13
 tags: [ai-coding, development-cadence, shipping-speed, test-driven-ai, ui-development, agentic-engineering]
 aliases: ["shipping-at-inference-speed", "inference-speed-shipping", "ai-development-cadence"]
-related: [[concepts/agentic-engineering.md]], [[claude-code-best-practices]], [[cognitive-cost-of-agents]], [[ai-coding-reliability]]
+related: , [[claude-code-best-practices]], [[cognitive-cost-of-agents]], [[ai-coding-reliability]]
 sources:
   - url: "https://steipete.me/posts/2025/shipping-at-inference-speed"
     author: "Peter Steinberger (@steipete)"
@@ -168,7 +169,7 @@ The key insight: **AI doesn't need to be right on the first attempt — it needs
 
 ## Related Concepts
 
-- [[concepts/agentic-engineering.md]] — The broader methodology shift this enables
+-  — The broader methodology shift this enables
 - [[claude-code-best-practices]] — Practical patterns for Claude Code users
 - [[cognitive-cost-of-agents]] — The hidden cost of reviewing vs. writing
 - [[ai-coding-reliability]] — Why speed without reliability gates causes outages

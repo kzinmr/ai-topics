@@ -1,5 +1,6 @@
 ---
 title: Giles Thomas (gpjt)
+type: entity
 handle: "@gpjt"
 url: "https://www.gilesthomas.com/"
 status: active
@@ -12,6 +13,7 @@ tags:
   - distributed-training
   - local-llm-training
   - deep-learning-from-scratch
+sources: []
 ---
 
 # Giles Thomas
@@ -98,9 +100,9 @@ This approach makes his series valuable for both learning deep learning fundamen
 ## Related
 
 - [[llm-training-fundamentals]] — Core concepts of training language models
-- [[gradient-accumulation]] — Technique for simulating large batch sizes
-- [[distributed-training]] — DDP and multi-GPU training patterns
-- [[local-llm-training]] — Running LLM training on consumer hardware
+-  — Technique for simulating large batch sizes
+-  — DDP and multi-GPU training patterns
+-  — Running LLM training on consumer hardware
 - [[geohot-github-io]] — Another advocate for accessible, minimal deep learning (tinygrad)
 
 ## Sources

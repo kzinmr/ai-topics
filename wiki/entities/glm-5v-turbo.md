@@ -1,5 +1,6 @@
 ---
 title: GLM-5V-Turbo
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -11,6 +12,7 @@ related:
 - zhipu-ai
 - chinese-ai
 - design-tools
+sources: []
 ---
 
 # GLM-5V-Turbo
@@ -29,4 +31,4 @@ Model that turns designs into code, part of the multimodal AI wave from Chinese 
 - Focus on practical developer applications
 
 ## Sources
-- [[raw/articles/substack.com--redirect-2-eyjlijoiaHR0cHM6Ly9ubHAuZWx2aXNzYXJhdmlhLmNvbS9wdWJsaWMtc...]]
+- 

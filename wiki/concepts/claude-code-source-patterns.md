@@ -1,11 +1,13 @@
 ---
 title: "Claude Code Source Patterns — Leaked Source Analysis"
+type: concept
 status: draft
 created: 2026-04-13
 source: "https://www.shloked.com/writing/claude-code-source-patterns"
 author: "Shlok Khemani"
 tags: [claude-code, prompt-engineering, context-management, caching, agent-architecture]
 related: [agentic-engineering, claude-memory, vajra-background-agent]
+sources: []
 ---
 
 # Claude Code Source Patterns

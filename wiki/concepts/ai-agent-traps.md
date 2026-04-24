@@ -1,9 +1,11 @@
 ---
 title: "AI Agent Traps"
+type: concept
 created: 2026-04-09
 updated: 2026-04-19
 tags: [concept, security, adversarial-attacks, agents]
 related: [prompt-injection, ai-safety, multi-agent-systems]
+sources: []
 ---
 
 # AI Agent Traps
@@ -51,13 +53,13 @@ A systematic framework from Google DeepMind (2026) for understanding how the ope
 - Distinction between accidental and malicious exploitation needed
 
 ## Sources
-- [[raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcGVulnn1ynn0ywnrlmnvbs9wdwivb--2fcf2557]] (NLP News coverage)
+-  (NLP News coverage)
 - Google DeepMind research paper (2026)
 
 ## Related
-- [[prompt-injection]]
+- 
 - [[ai-safety]]
-- [[multi-agent-systems]]
+- 
 
 ## Authorization Challenges for AI Agents (2026-04)
 
@@ -90,6 +92,6 @@ A systematic framework from Google DeepMind (2026) for understanding how the ope
 MCPは認可を実装者に委任し、`files:read` のような粗いOAuth 2.1スコープ依赖。FGAはMCPのRAR(rich authorization requests)에ロジック层を提供。
 
 ### Sources
-- [[raw/articles/workos-fga-authorization-ai-agents-2026-04-13.md]]
+- 
 
 ## Sources

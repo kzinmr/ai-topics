@@ -1,5 +1,6 @@
 ---
 title: "Context Compaction"
+type: concept
 aliases:
   - compaction
   - context-compression
@@ -58,8 +59,8 @@ sources:
 ## 関連概念
 
 - [[context-window-management]] — 圧縮の上位概念（Simon Willisonの戦略的管理）
-- [[agent-loop-orchestration]] — 圧縮が必要になるコンテキスト累積の発生源
-- [[raw/articles/openai-equip-responses-api-computer-environment-2026-03-11.md]] — 圧縮を実装する基盤API
+- [[concepts/harness-engineering/system-architecture/agent-loop-orchestration.md]] — 圧縮が必要になるコンテキスト累積の発生源
+-  — 圧縮を実装する基盤API
 
 ## 参照
 

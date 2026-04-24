@@ -1,5 +1,6 @@
 ---
 title: Gold Diff Distillation
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags:
@@ -13,6 +14,7 @@ related:
 - trl-fine-tuning
 - ai-coding-reliability
 - evaluation-flywheel
+sources: []
 ---
 
 # Gold Diff Distillation

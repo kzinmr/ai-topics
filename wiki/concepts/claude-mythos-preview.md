@@ -1,5 +1,6 @@
 ---
 title: "Claude Mythos Preview"
+type: concept
 created: 2026-04-13
 updated: 2026-04-13
 tags: [concept, anthropic, frontier-models, cybersecurity, red-team, dual-use]
@@ -8,6 +9,7 @@ related:
   - concepts/anthropic-openclaw-conflict
   - entities/dario-amodei
   - concepts/ai-agent-engineering
+sources: []
 ---
 
 # Claude Mythos Preview
@@ -61,8 +63,8 @@ Anthropic **did not release Claude Mythos publicly**. The preview is restricted 
 
 - [[anthropic-openclaw-conflict]] — Anthropic's concurrent restrictions on third-party tool access
 - [[dario-amodei]] — Anthropic CEO, announced Mythos Preview
-- [[ai-safety-and-alignment]] — Dual-use risk management framework
-- [[agent-autonomous-systems]] — Project Vend, Project Fetch
+-  — Dual-use risk management framework
+-  — Project Vend, Project Fetch
 
 ## Sources
 

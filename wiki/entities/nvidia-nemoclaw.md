@@ -1,5 +1,6 @@
 ---
 title: NVIDIA NemoClaw
+type: entity
 aliases: [nemoclaw, nemo-claw]
 created: 2026-04-15
 updated: 2026-04-15

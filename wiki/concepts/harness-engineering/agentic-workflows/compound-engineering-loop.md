@@ -1,5 +1,6 @@
 ---
 title: "Compound Engineering Loop"
+type: concept
 aliases:
   - compound-loop
   - iterative-improvement-loop
@@ -52,4 +53,4 @@ Cycle 3: (Prompt + X + Y) → AI generates even better code → ...
 ## 関連概念
 - [[code-hoarding]] — 知識の蓄積パターン
 - [[agentic-engineering]] — Agentic Engineering全体像
-- [[cognitive-debt]] — 認知負債（Compound Loopで返済）
+- [[concepts/harness-engineering/agentic-workflows/cognitive-debt.md]] — 認知負債（Compound Loopで返済）

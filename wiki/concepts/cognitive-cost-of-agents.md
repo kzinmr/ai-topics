@@ -1,7 +1,9 @@
 ---
 title: Cognitive Cost of Agents
+type: concept
 category: concept
 status: active
+sources: []
 ---
 
 # Cognitive Cost of Agents
@@ -96,7 +98,7 @@ The most significant risk Willison identified: developers may become **passive r
 - [[Vibe Coding]] — The practice of building software through natural language prompts; cognitive cost is a counterpoint
 - [[Anthropic Managed Agents]] — Managed agent services raise the same cognitive ownership questions
 - [[Agent Orchestration Frameworks]] — Multi-agent systems amplify the cognitive debt problem
-- [[Claude Mythos / Project Glasswing]] — More powerful agents increase both productivity gains and cognitive risks
+-  — More powerful agents increase both productivity gains and cognitive risks
 
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "ECS Fargate Scaling"
+type: concept
 created: "2026-04-16"
 updated: "2026-04-16"
 tags: ["aws", "ecs", "fargate", "lambda", "scaling", "container-orchestration"]

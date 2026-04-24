@@ -1,10 +1,11 @@
 ---
 title: "Direct Prompting Philosophy"
+type: concept
 created: 2026-04-13
 updated: 2026-04-13
 tags: [prompting, intuition, agentic-engineering, workflow-design, anti-overengineering]
 aliases: ["just-talk-to-it", "intuition-driven-development", "direct-prompting", "no-bs-agentic"]
-related: [[concepts/agentic-engineering.md]], [[claude-code-best-practices]], [[cli-over-mcp-pattern]], [[inference-speed-development]]
+related: , [[claude-code-best-practices]], [[cli-over-mcp-pattern]], [[inference-speed-development]]
 sources:
   - url: "https://steipete.me/posts/2025/just-talk-to-it"
     author: "Peter Steinberger (@steipete)"
@@ -119,7 +120,7 @@ The combination creates a development rhythm measured in **minutes, not hours**.
 
 ## Related Concepts
 
-- [[concepts/agentic-engineering.md]] — The broader methodology this serves
+-  — The broader methodology this serves
 - [[claude-code-best-practices]] — Practical implementation patterns
 - [[cli-over-mcp-pattern]] — Why minimal tooling pairs with direct prompting
 - [[inference-speed-development]] — How this enables rapid iteration

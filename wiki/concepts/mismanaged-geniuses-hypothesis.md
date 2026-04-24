@@ -1,5 +1,6 @@
 ---
 title: "The Mismanaged Geniuses Hypothesis (MGH)"
+type: concept
 created: 2026-04-19
 source: "Alex Zhang, Zhening (Zed) Li, Omar Khattab — blog post (April 2026)"
 tags: [agents, scaffolding, composition, inference-scaling, hypothesis]
@@ -17,6 +18,7 @@ related_concepts:
   - Software 3.0
   - Context-Centric Decomposition
   - Agent-Computer Interfaces
+sources: []
 ---
 
 # The Mismanaged Geniuses Hypothesis (MGH)
@@ -177,9 +179,9 @@ Anthropic recognized that the harness interface needs to be stable while the und
 - **[[Agentic Scaffolding]]** — The broader category of scaffold design
 - **[[Harness Engineering]]** — Infrastructure for autonomous agent work
 - **[[Scaffold vs RL Debate]]** — Whether scaffolds or training is the path forward (MGH says: both, but scaffold-first)
-- **[[Inference-Time Scaling]]** — Scaling compute at inference rather than training
-- **[[Context-Centric Decomposition]]** — Decomposing the context, not the problem
-- **[[Software 3.0]]** — Trained scaffolds + LLMs as the next paradigm
+- **** — Scaling compute at inference rather than training
+- **** — Decomposing the context, not the problem
+- **** — Trained scaffolds + LLMs as the next paradigm
 
 ## Status
 

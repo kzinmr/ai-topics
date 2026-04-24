@@ -1,5 +1,6 @@
 ---
 title: Diallo Ibrahima
+type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
@@ -9,6 +10,7 @@ tags:
   - programmer
   - writer
   - entrepreneur
+sources: []
 ---
 
 
@@ -107,8 +109,8 @@ Beyond writing, Diallo is a working lead software engineer:
 
 ## Related
 
-- [[ai-workplace-impact]] — AI's effect on developers and hiring
-- [[automation-failure-modes]] — Lessons from "The Machine Fired Me"
+-  — AI's effect on developers and hiring
+-  — Lessons from "The Machine Fired Me"
 - [[berthub-eu]] — Shared interest in systems-level thinking about technology policy
 
 ## Sources

@@ -1,5 +1,6 @@
 ---
 title: Manus
+type: entity
 aliases:
 - manus-ai
 - manus-browser-operator

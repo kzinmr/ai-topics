@@ -1,5 +1,6 @@
 ---
 title: Steve Blank
+type: entity
 created: 2026-04-09
 updated: 2026-04-13
 tags:
@@ -11,6 +12,7 @@ tags:
   - customer-development
   - ai-agents
   - venture-capital
+sources: []
 ---
 
 
@@ -154,10 +156,10 @@ Notable recent publications include his 2024 essay "A Lasting Model for Change: 
 ## Related
 
 - [[lean-startup]] — Blank and Ries's methodology for building startups under uncertainty
-- [[customer-development]] — The four-step process for discovering and validating markets
+-  — The four-step process for discovering and validating markets
 - [[harness-engineering]] — Parallels in AI agent configuration as learned failure modes
-- [[eric-ries]] — Co-creator of the Lean Startup movement
-- [[agentic-engineering]] — Agent-first development workflows changing startup dynamics
+-  — Co-creator of the Lean Startup movement
+- [[concepts/harness-engineering/agentic-engineering.md]] — Agent-first development workflows changing startup dynamics
 
 ## Sources
 

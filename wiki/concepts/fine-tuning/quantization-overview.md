@@ -1,5 +1,6 @@
 ---
 title: "Model Quantization"
+type: concept
 created: 2026-04-19
 updated: 2026-04-19
 tags: [fine-tuning, quantization, inference, gguf, gptq, fp8]
@@ -7,6 +8,7 @@ related:
   - concepts/fine-tuning/_index
   - concepts/fine-tuning/peft-lora-qlora
   - concepts/inference/llama-cpp
+sources: []
 ---
 
 # Model Quantization

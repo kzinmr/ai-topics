@@ -1,9 +1,11 @@
 ---
 title: "ChatGPT Images 2.0"
+type: concept
 created: 2026-04-24
 updated: 2026-04-24
 tags: [product, openai, multimodal, image-generation, chatgpt]
 aliases: ["ChatGPT Images v2"]
+sources: []
 ---
 
 # ChatGPT Images 2.0
@@ -42,6 +44,6 @@ See also: [[gpt-models]] for the underlying model series, [[openai]] for company
 
 ## Sources
 
-- [[raw/newsletters/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b.md]] (Simon Willison Newsletter, 2026-04-24)
-- [[raw/newsletters/2026-04-23-chatgpt-s-nano-banana.md]] (Ben's Bites, 2026-04-23)
+-  (Simon Willison Newsletter, 2026-04-24)
+-  (Ben's Bites, 2026-04-23)
 - [OpenAI GPT-5.5 Release](https://openai.com/index/introducing-gpt-5-5/)

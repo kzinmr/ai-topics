@@ -1,5 +1,6 @@
 ---
 title: "Akira (@realmcore_) / Random Labs"
+type: entity
 handle: "@realmcore_"
 name: Akira (Random Labs)
 created: 2026-04-13
@@ -12,6 +13,7 @@ tags:
   - thread-weaving
   - rlm
   - slate
+sources: []
 ---
 
 
@@ -154,11 +156,11 @@ Slateは[[Agentic Engineering]]における「swarm orchestration」パラダイ
 | Person | Relationship | Wiki Link |
 |---|---|---|
 | [[Kiran (Random Labs)]] | Random Labs co-founder | — |
-| [[Mihir Chintawar]] | Random Labs co-founder, CTO | — |
-| [[Alex L. Zhang]](@a1zhang) | RLM開発者。SlateはRLMを改良して適用 | [[alex-zhang]] |
+|  | Random Labs co-founder, CTO | — |
+| (@a1zhang) | RLM開発者。SlateはRLMを改良して適用 | [[alex-zhang]] |
 | [[Andrej Karpathy]] | LLM OS concept — SlateのOSアナロジーの源流 | [[andrej-karpathy]] |
 | [[Peter Steinberger]](@steipete) | OpenClaw開発者。並列エージェントアプローチで関連 | [[peter-steinberger]] |
-| [[Nader Dabit]](@dabit3) | Cloud agents / agent fleet — 長時間実行エージェントの文脈で関連 | — |
+| [[nader-dabit]](@dabit3) | Cloud agents / agent fleet — 長時間実行エージェントの文脈で関連 | — |
 
 ## X Activity Themes
 

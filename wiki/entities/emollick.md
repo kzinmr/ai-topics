@@ -1,5 +1,6 @@
 ---
 title: Ethan Mollick
+type: entity
 handle: "@emollick"
 created: 2026-04-10
 updated: 2026-04-10
@@ -9,6 +10,7 @@ tags:
   - productivity
   - ai-adoption
   - human-ai-collaboration
+sources: []
 ---
 
 

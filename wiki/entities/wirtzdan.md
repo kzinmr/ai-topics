@@ -1,5 +1,6 @@
 ---
 title: Daniel Wirtz
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -11,6 +12,7 @@ tags:
   - cohort-based-courses
   - note-taking
   - effective-altruism
+sources: []
 ---
 
 
@@ -154,9 +156,9 @@ Wirtz's writing is characterized by:
 - [[bottom-up-note-taking]] — Emergent knowledge management philosophy
 - [[effective-altruism]] — Current professional focus at Giving What We Can
 - [[facilitation]] — Core expertise from Crisp Studio and Facilitator School
-- [[learning-in-public]] — Wirtz's approach to building and sharing work
-- [[tiago-forte]] — Inspiration for Facilitator School course model
-- [[david-perell]] — Inspiration for email marketing and landing page approach
+-  — Wirtz's approach to building and sharing work
+-  — Inspiration for Facilitator School course model
+-  — Inspiration for email marketing and landing page approach
 
 ## Sources
 

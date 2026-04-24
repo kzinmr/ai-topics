@@ -1,10 +1,12 @@
 ---
 title: "Sandbox — AI Agent Code Execution Isolation"
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags: [concept, ai-agents, security, sandbox, index]
 depth: L2
 status: complete
+sources: []
 ---
 
 # Sandbox: AI Agent Code Execution Isolation
@@ -83,4 +85,4 @@ The **Anthropic × Bun acquisition** is strategically significant: Claude Code s
 - [[deep-agents]] — Deep agents consume all sandbox layers
 - [[anthropic-managed-agents]] — Brain/Hands/Session separation architecture
 - [[jarred-sumner]] — Bun creator, joined Anthropic (Dec 2025)
-- [[ryan-dahl]] — Node.js and Deno creator
+- [[entities/ryan-dahl.md]] — Node.js and Deno creator

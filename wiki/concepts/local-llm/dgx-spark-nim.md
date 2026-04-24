@@ -1,10 +1,11 @@
 ---
 title: "DGX Spark (Local LLM Server)"
+type: concept
 created: 2026-04-15
 updated: 2026-04-15
 tags: [local-llm, dgx-spark, nvidia, inference, nemo-claw, openshell, hardware, self-hosting]
 aliases: ["nvidia-dgx-spark", "local-llm-server", "gb10-superchip", "nim-on-spark"]
-related: [[self-hosting-ai-development]], [[ollama]], [[llama-cpp]], [[vllm]], [[openclaw]]
+related: [[self-hosting-ai-development]], [[ollama]], [[llama-cpp]], [[concepts/inference/vllm.md]], [[openclaw]]
 sources:
   - url: "https://docs.nvidia.com/dgx/dgx-spark/dgx-spark.pdf"
     author: "NVIDIA"

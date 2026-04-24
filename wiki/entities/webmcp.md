@@ -1,5 +1,6 @@
 ---
 title: WebMCP
+type: entity
 aliases:
 - web-model-context-protocol
 - navigator-modelContext

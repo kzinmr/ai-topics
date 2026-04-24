@@ -1,9 +1,11 @@
 ---
 title: "Resilient Prompt Engineering"
+type: concept
 created: 2026-04-13
 source: "OpenAI Cookbook — Prompt engineering patterns"
 tags: [prompt-engineering, resilience, design-patterns]
 status: draft
+sources: []
 ---
 
 # Resilient Prompt Engineering

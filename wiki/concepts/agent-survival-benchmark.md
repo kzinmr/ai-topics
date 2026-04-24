@@ -1,5 +1,6 @@
 ---
 title: Agent Survival Benchmark
+type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags:
@@ -12,6 +13,7 @@ related:
 - evals-for-ai-agents
 - multi-agent-autonomy-scale
 - ai-agent-traps
+sources: []
 ---
 
 # Agent Survival Benchmark

@@ -1,5 +1,6 @@
 ---
 title: "Anthropic Managed Agents"
+type: concept
 created: 2026-04-09
 updated: 2026-04-13
 tags: [concept, agent-team-swarm, anthropic, platform, managed-agents]
@@ -156,7 +157,7 @@ with client.beta.sessions.events.stream(session.id) as stream:
 - [[Harness Engineering]] — 単一Agentの実行環境設計
 - [[meta-harness]] — インターフェース中心の設計哲学
 - [[OpenAI Symphony]] — 競合のAgent Teamオーケストレーター
-- [[Dark Factory Software Factory]] — 完全自律開発の最先端事例
+- [[dark-factory-software-factory]] — 完全自律開発の最先端事例
 
 ---
 

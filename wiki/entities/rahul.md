@@ -1,7 +1,9 @@
 ---
 title: Rahul Sengottuvelu
+type: entity
 category: entity
 status: active
+sources: []
 ---
 
 # Rahul Sengottuvelu
@@ -98,9 +100,9 @@ At Ramp, Sengottuvelu's team uses constrained decoding to extract structured inf
 - [[Ramp]] — The fintech company where Sengottuvelu currently leads Applied AI
 - [[Cohere.io]] — His co-founded startup, acquired by Ramp in 2023
 - [[Rich Sutton's Bitter Lesson]] — The foundational essay that informs Sengottuvelu's approach to AI agent design
-- [[The Agent Economy]] — Sengottuvelu's concept of a future where AI agents interact with products programmatically
-- [[AI-Assisted Development]] — His position on LLMs as engineering partners, not replacements
-- [[Structured Data Extraction]] — The application of constrained decoding to financial document processing
+-  — Sengottuvelu's concept of a future where AI agents interact with products programmatically
+-  — His position on LLMs as engineering partners, not replacements
+-  — The application of constrained decoding to financial document processing
 
 ## Influence Metrics
 

@@ -1,8 +1,10 @@
 ---
 title: Dan Abramov
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Dan Abramov
@@ -122,9 +124,9 @@ Perhaps Dan's most influential meta-contribution is his willingness to change hi
 - [[entities/overreacted-io.md]] — His primary area of technical contribution
 - [[Redux]] — Co-created this state management library
 - [[AT Protocol]] — Subject of his "Social Filesystem" analysis
-- [[Developer Tooling Philosophy]] — Interactive debugging over abstraction
-- [[Mental Models in Programming]] — His central teaching methodology
-- [[Clean Code Critique]] — His argument against rigid naming conventions
+-  — Interactive debugging over abstraction
+-  — His central teaching methodology
+-  — His argument against rigid naming conventions
 
 ## Influence Metrics
 

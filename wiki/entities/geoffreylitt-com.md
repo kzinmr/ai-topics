@@ -1,8 +1,10 @@
 ---
 title: Geoffrey Litt
+type: entity
 status: active
 tags:
 - person
+sources: []
 ---
 
 # Geoffrey Litt
@@ -115,10 +117,10 @@ The underlying theme: data should be portable, locally accessible, and resilient
 - [[Malleable Software]] — Litt's central research area
 - [[End-User Programming]] — The broader field Litt works within
 - [[Local-First Software]] — Software that prioritizes user data control and offline capability
-- [[CRDTs]] — Conflict-free replicated data types; central to Peritext
-- [[Mark Weiser]] — Ubiquitous computing pioneer; source of the HUD metaphor
+-  — Conflict-free replicated data types; central to Peritext
+-  — Ubiquitous computing pioneer; source of the HUD metaphor
 - [[Simon Willison]] — Fellow AI tooling enthusiast; Litt references his "yak-shaving intern" framing
-- [[Max Bernstein]] — Compiler engineer with complementary focus on systems-level tooling
+- [[max-bernstein]] — Compiler engineer with complementary focus on systems-level tooling
 
 ## Sources
 

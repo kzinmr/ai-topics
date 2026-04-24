@@ -1,5 +1,6 @@
 ---
 title: Xe Iaso
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -15,6 +16,7 @@ aliases:
 - Cadey
 - Xe
 - Anubis
+sources: []
 ---
 
 # Xe Iaso
@@ -86,9 +88,9 @@ A recurring theme in Xe's writing is the **human impact of automated systems**. 
 - [[small-internet]] — Protecting independent web infrastructure
 - [[web-security]] — Proof-of-work challenges, bot filtering
 - [[nixos]] — Declarative, reproducible infrastructure
-- [[open-source-maintenance]] — The social dynamics of maintaining popular projects
-- [[threat-modeling]] — Security-first thinking for open-source developers
-- [[techaro]] — Xe's organization
+-  — The social dynamics of maintaining popular projects
+-  — Security-first thinking for open-source developers
+-  — Xe's organization
 
 ## Sources
 

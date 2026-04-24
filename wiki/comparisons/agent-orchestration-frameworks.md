@@ -1,7 +1,9 @@
 ---
 title: Agent Orchestration Frameworks
+type: comparison
 category: comparison
 status: active
+sources: []
 ---
 
 # Agent Orchestration Frameworks
@@ -180,8 +182,8 @@ These amplify the concerns raised in [[Cognitive Cost of Agents]] — as we add 
 - [[Agentic Engineering]] — The practice framework that orchestration tools enable
 - [[Cognitive Cost of Agents]] — Orchestration adds coordination overhead to cognitive load
 - [[Anthropic Managed Agents]] — Managed services may include orchestration capabilities
-- [[Claude Mythos / Project Glasswing]] — More powerful models improve individual agent capabilities, reducing need for orchestration in some cases
-- [[GNU and the AI Reimplementations]] — AI-generated reimplementations may themselves require orchestration
+-  — More powerful models improve individual agent capabilities, reducing need for orchestration in some cases
+-  — AI-generated reimplementations may themselves require orchestration
 
 ---
 

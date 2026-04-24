@@ -1,5 +1,6 @@
 ---
 title: Fabien Sanglard
+type: entity
 created: 2026-04-09
 updated: 2026-04-10
 tags:
@@ -13,6 +14,7 @@ tags:
 aliases:
 - fabiensanglard.net
 - fabien-sanglard
+sources: []
 ---
 
 # Fabien Sanglard
@@ -88,9 +90,9 @@ This reflects a core belief: **you can't truly understand historical software wi
 - [[id-software]] — Creator of DOOM, Quake, Wolfenstein 3D — Fabien's primary subject matter
 - [[john-carmack]] — Engine architect whose designs Fabien analyzes in depth
 - [[michael-abrash]] — Graphics programmer who wrote Quake's ASM optimizations
-- [[hardware-constraints]] — How limited resources drive creative engineering
-- [[minimalism-in-software]] — Fabien's anti-bloat philosophy
-- [[visual-documentation]] — Using diagrams and drawings to explain complex systems
+-  — How limited resources drive creative engineering
+-  — Fabien's anti-bloat philosophy
+-  — Using diagrams and drawings to explain complex systems
 
 ## Sources
 

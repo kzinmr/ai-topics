@@ -1,5 +1,6 @@
 ---
 title: "Meta Muse Spark"
+type: concept
 created: 2026-04-13
 updated: 2026-04-24
 tags: [concept, meta, frontier-models, closed-source, muse, alexandr-wang]
@@ -8,6 +9,7 @@ related:
   - concepts/anthropic-openclaw-conflict
   - concepts/open-model-consortium
   - concepts/claude-mythos-preview
+sources: []
 ---
 
 # Meta Muse Spark
@@ -86,8 +88,8 @@ This positions Muse Spark not just as a model, but as a **distribution moat** �
 
 - [[open-model-consortium]] — Contrast with Meta's traditional open-source Llama strategy
 - [[claude-mythos-preview]] — Concurrent frontier model release (Anthropic, closed)
-- [[alexandr-wang]] — MSL leader, Scale AI founder
-- [[mark-zuckerberg]] — Meta CEO, strategic direction
+-  — MSL leader, Scale AI founder
+-  — Meta CEO, strategic direction
 
 ## Sources
 
