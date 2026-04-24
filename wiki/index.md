@@ -4,7 +4,7 @@ Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (
 
 Last updated: 2026-04-24 (Dreaming: geo-strategy, model releases, agentic patterns, LLM training, AI reliability)
 
-## Entity Pages (85)
+## Entity Pages (86)
 
 - [[openai]] — OpenAI (GPT, ChatGPT, Codex, Agents SDK, Symphony)
 - [[adam-rosenthal]] — Adam Rosenthal
@@ -138,6 +138,7 @@ Last updated: 2026-04-24 (Dreaming: geo-strategy, model releases, agentic patter
 ### AI Companies & Organizations
 
 - [[anthropic]] — Anthropic
+- [[hugging-face]] — Hugging Face (🤗 The GitHub of AI: Hub for 900K+ models, 200K+ datasets, Transformers library, PEFT, TRL. $4.5B valuation, 13M users, 1,500+ enterprise customers)
 - [[meta]] — Meta
 - [[openai]] — OpenAI (GPT, ChatGPT, Agents SDK v0.14.0, Symphony, Codex)
 

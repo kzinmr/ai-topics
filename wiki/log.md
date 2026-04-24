@@ -1,3 +1,20 @@
+## 2026-04-24 — Hugging Faceエンティティページ作成 + エンリッチメント
+
+### Wikiエンティティページ作成（1件）
+- [[entities/hugging-face]] — Hugging Face社概要（🤗 The GitHub of AI）
+  - 創設者: Clément Delangue (CEO), Julien Chaumond (CTO), Thomas Wolf (CSO)
+  - プラットフォーム: 900K+ models, 200K+ datasets, 350K+ Spaces, 13M users, 1,500+ enterprise customers
+  - 評価: $4.5B (Series D, $235M, Aug 2023). 2年以上VC調達なし、$500M Nvidia投資オファー拒否
+  - プロダクト: Hub, Transformers v5 (2025-12), PEFT, TRL, Diffusers, Datasets, Accelerate, Tokenizers, Gradio (2022買収), TGI, LeRobot, Optimum
+  - アカイション: Gradio (2022), Pollen Robotics (2025-04, 人型ロボット)
+  - ビジネスモデル: Freemium (3-5%変換), 2026年2月時点でnet profitability or strategic investment levels
+  - 戦略: "LLM bubble" vs broader AI (CEO Delangue, Nov 2025), robotica/Open Sourceへの展開
+  - セキュリティインシデント: 2026年初頭、Androidマルウェア配布
+
+### index.md更新
+- エンティティ数 85→86
+- AI Companies & Organizationsセクションに追加
+
 ## 2026-04-23 — @pupposandro Xアカウント追加 + luceboxブログ取り込み
 
 ### Xアカウント追加
