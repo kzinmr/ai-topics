@@ -1611,3 +1611,26 @@ Priority selection: 2 high-priority (4+ days stale) + 1 medium-priority (never c
 - concepts/agent-team-swarm/_index.md — Added 2026 production architecture patterns, communication protocols, failure modes
 - concepts/ai-evals.md — (referenced by red-teaming page)
 - index.md — Added 6 new concept entries, updated Total pages count
+
+---
+
+## 2026-04-24 — X Bookmarks: The Bitter Lesson of Agent Harnesses
+
+### Source
+- X Bookmark: [x.com/gregpr07/status/2047358189327520166](https://x.com/gregpr07/status/2047358189327520166) — Gregor Zunic (@gregpr07), 2026-04-23
+- Article: [browser-use.com/posts/bitter-lesson-agent-frameworks](https://browser-use.com/posts/bitter-lesson-agent-frameworks) — The Bitter Lesson of Agent Frameworks (2026-01-16)
+
+### Raw Article Saved
+- `raw/articles/the-bitter-lesson-of-agent-harnesses-2026-04-24--d9ffedba.md` — Full scraped article digest
+
+### New Concept Pages (1件)
+- **[[concepts/agent-harnesses]]** — Agent Harnesses Philosophy: minimal agent architecture, complete action spaces, ephemeral tools pattern, explicit termination, inversion strategy. Core thesis: all value is in RL'd models, not abstractions.
+
+### Updated Entity Pages (1件)
+- **[[entities/browser-use]]** — Added ecosystem repos (agent-sdk, browser-harness, video-use), added 「哲学: エージェントハーネスの苦い教訓」 section with key concepts and cross-reference to [[concepts/agent-harnesses]]
+
+### Key Insights
+- **Bitter Lesson applied to agents**: General computation-leveraging methods beat hand-crafted abstractions
+- **Incomplete action spaces**: Frameworks fail because available tools are insufficient, not because models are weak
+- **Inversion Strategy**: Start maximal, restrict later based on evals — opposite of traditional guardrails-first approach
+- **Context bloat**: Ephemeral tools (keep last N outputs) prevent 500KB+ context explosions

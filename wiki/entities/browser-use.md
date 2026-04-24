@@ -70,7 +70,7 @@ await agent.run()
 
 ## エコシステム
 
-| リポジトリ | 説明 | Stars |
+|| リポジトリ | 説明 | Stars |
 |---|---|---|
 | browser-use | コアPythonライブラリ | 86,454 |
 | web-ui | ブラウザ内でAIエージェント実行 | 15,818 |
@@ -78,6 +78,25 @@ await agent.run()
 | macOS-use | Macアプリ操作 | 1,884 |
 | awesome-prompts | プロンプト集 | 904 |
 | vibetest-use | 自動QAテスト | 785 |
+| agent-sdk | ミニマルエージェントアーキテクチャSDK | 661 |
+| browser-harness | 自己修復型ブラウザハーネス | 4,200 |
+| video-use | ビデオ操作エージェント | 2,200 |
+
+## 哲学: 「エージェントハーネスの苦い教訓」
+
+2026年1月、創設者Gregor ZunicがBlogで**「The Bitter Lesson of Agent Frameworks」**を公開。
+
+> *"エージェントハーネスの苦い教訓。すべての価値はRL学習済みモデルにあり、10,000行の抽象化にはない。"*
+
+核心主張:
+- 伝統的なフレームワークは「不完全なアクション空間」ゆえに失敗する
+- **逆転戦略**: 最大の能力から始めて、評価データに基づいて制限する
+- CDP + Browser Extension APIsでほぼ完全なアクション空間を実現
+- コンテキスト管理には「ephemeralツール」パターン（最近N件の出力のみ保持）
+- 明示的な`done()`ツールによる終了判定
+- コアエージェントループは単純なfor-loop。リトライ、レート制限、接続回復は「ops」でありエージェントではない
+
+→ [[concepts/agent-harnesses]] 参照
 
 ## DOMベースアプローチの意義
 
