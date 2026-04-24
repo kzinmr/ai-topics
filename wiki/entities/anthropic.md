@@ -65,6 +65,20 @@ Anthropic chose not to release [[claude-mythos]] publicly after discovering its 
 
 Mythos also discovered decades-old bugs in critical software: OpenBSD (27-year-old bug), FFmpeg (16-year-old bug).
 
+### Capybara (Mythos Alternate Name)
+Fortuneの調査によると、Mythosは内部で「Capybara」というコードネームでも呼ばれていた。CapybaraはOpusより大きく高インテリジェンスな新ティアのモデルとして位置付けられていた。データリーク後、Anthropicはコンテンツ管理システムの設定ミスを認め、公開データストアからドキュメントを削除した。
+
+### Corporate Strategy & CEO Summit
+AnthropicはMythosの早期アクセス顧客向けに、ヨーロッパで招待制CEOサミットを企画。大企業顧客へのモデル販売を推進する戦略の一環。
+
+### Property-Based Testing Results (NeurIPS 2025)
+Anthropic Red TeamはPythonパッケージ（NumPy, Pandas等）に対してプロパティベーステストを実施し、複数のゼロデイバグを発見。NeurIPS 2025で発表。AIセキュリティ研究における重要な成果。
+
+### Financials
+- **$30B ARR** (2026年4月時点) — Anthropicは年率300億ドルの収益を達成
+- Claude Codeのアクティブユーザー数は300%以上成長
+- Run-rate revenue expansion: 5.5x
+
 ## Product Team
 
 ### Cat Wu — Head of Product

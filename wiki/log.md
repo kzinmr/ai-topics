@@ -1,3 +1,32 @@
+## 2026-04-24 — Claude/Anthropic 過去3日間記事のwiki反映
+
+### New Entity Page (1件)
+- **entities/claude-code.md** — Claude Code (Anthropic→OpenAI移管) の詳細ページ
+  - Boris Chernyによる開発経緯、arXiv:2604.14228v1設計分析
+  - ソースコード漏洩事件 (Mar 31, 2026)
+  - コアワークフロー: Plan Mode→Auto-Accept, 並行エージェント実行
+  - 主要機能: NO_FLICKER, サブエージェント, MCP統合, スラッシュコマンド
+  - KPI: SWE-bench 72.7%, PR throughput 67%改善
+
+### Updated Entity Pages (1件)
+- **entities/anthropic.md** — 過去3日間の主要記事を反映
+  - Capybara/Mythosコードネーム情報追加（Fortune調査）
+  - CEOサミット開催情報追加
+  - Property-Based Testing結果追加（NeurIPS 2025）
+  - 財務情報追加: $30B ARR, Claude Code 300%+成長
+
+### Updated Index
+- **index.md** — claude-code, property-based-testing, session-management, capybara 追加
+- Entity counts updated
+
+### Processed Articles (17件)
+- Claude Code設計分析 (arXiv)
+- ソースコード漏洩分析 (The Register, Kuber Studio)
+- Session Management & 1M Context (Anthropic blog)
+- Property-Based Testing (Anthropic Red Team)
+- Mythos評価 (Fortune, Gary Marcus, Ben's Bites)
+- その他ニュースレター記事
+
 ## 2026-04-24 — Hugging Faceエンティティページ作成 + エンリッチメント
 
 ### Wikiエンティティページ作成（1件）

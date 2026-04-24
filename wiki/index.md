@@ -167,7 +167,11 @@ Last updated: 2026-04-24 (Dreaming: geo-strategy, model releases, agentic patter
 |- [[multimodal]] — Multimodal AI (CLIP, LLaVA, Stable Diffusion, Segment Anything, AudioCraft)
 - [[agibot-10000-units]] — AGIBot Reaches 10,000 Units
 - [[amazon-rivr]] — Amazon Acquires Rivr
-- [[claude-mythos]] — Claude Mythos
+|- [[property-based-testing]] — Property-Based Testing for AI Security (Anthropic Red Team, NeurIPS 2025): NumPy/Pandasゼロデイバグ発見、自動テスト生成
+|- [[session-management]] — Session Management & Context Window Control (Claude Code: /compact, /rewind, /clear, subagents)
+|- [[capybara]] — Capybara (Anthropic内部コードネーム): Opusより大型の新ティアモデル、Mythosと同じ基盤モデル
+|- [[claude-code]] — Claude Code (Anthropic→OpenAI移管, AI coding agent, SWE-bench 72.7%)
+|- [[claude-mythos]] — Claude Mythos
 - [[cursor-3]] — Cursor 3
 - [[gemma-4]] — Google Gemma 4
 - [[glm-5-zai]] — GLM-5 (Z.ai)
