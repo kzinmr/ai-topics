@@ -9,9 +9,9 @@ updated: 2026-04-24
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-24 (Dreaming: geo-strategy, model releases, agentic patterns, LLM training, AI reliability)
+Last updated: 2026-04-25 (Newsletter ingest: ChatGPT Images 2.0, Nano Banana 2)
 
-## Entity Pages (86)
+## Entity Pages (88)
 
 - [[openai]] — OpenAI (GPT, ChatGPT, Codex, Agents SDK, Symphony)
 - [[adam-rosenthal]] — Adam Rosenthal
@@ -24,7 +24,7 @@ Last updated: 2026-04-24 (Dreaming: geo-strategy, model releases, agentic patter
 - [[regie-ai]] — AI-native sales engagement platform replacing Outreach/Salesloft
 - [[figma]] — Figma AI challenge: Claude Design competition, SaaS moat失效, per-head pricing collapse risk (2026-04-20)
 
-## Concept Pages (89)
+## Concept Pages (91)
 - [[concepts/sycophancy]] — Sycophancy in LLMs, truth-over-pleasing alignment artifacts, mitigation strategies
 - [[concepts/claude-code-routines]] — Scheduled and event-driven Claude Code automation (Anthropic research preview)
 - [[concepts/arc-agi-2]] — ARC-AGI-2 abstract reasoning benchmark (Gemini 3 Deep Think: 45.1%)
@@ -190,7 +190,7 @@ Last updated: 2026-04-24 (Dreaming: geo-strategy, model releases, agentic patter
 - [[qwen3-6-27b]] — Qwen3.6-27B (dense model beating 397B MoE on coding benchmarks)
 - [[zoox-expansion]] — Zoox Robotaxi Expansion
 
-## Concept Pages (71)
+## Concept Pages (73)
 
 Ideas, frameworks, and methodologies extracted from articles.
 
@@ -426,7 +426,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder & Super IC (Reddit/FourWeekMBA: MVP commoditization, FrontPage parallel, $10M→$100M path)
 - [[ai-organization/ai-org-context-as-moat]] — Proprietary Context (McKinsey 5 Pillars, M-Shaped Supervisor, Diamond Org Chart, Agentic Governance)
 
-## Comparison Pages (9)
+## Comparison Pages (10)
 
 - [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks (LangGraph vs CrewAI vs AutoGen vs etc.)
 - [[comparisons/agent-sandboxing]] — Agent Sandboxing (Containers vs gVisor vs MicroVMs vs WASM vs Zeroboot)
@@ -585,6 +585,7 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 - [[Frontier Models Comparison — April 2026]]
 - [[Hermes Agent vs OpenClaw Architecture Comparison]]
 - [[Local Llm Models April 2026]]
+- [[gpt-image-2-vs-nano-banana-2]]
 
 ## Concepts
 - [[Advanced Tool Use]]
@@ -621,6 +622,7 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 - [[Claude Code Routines]]
 - [[Claude Mythos Preview]]
 - [[CLI-First Development]]
+- [[chatgpt-images-2.0]]
 - [[Code Execution with MCP]]
 - [[Code Hoarding / Knowledge Accumulation]]
 - [[Cognitive Debt]]
@@ -671,6 +673,7 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 - [[Multi-Agents: What's Actually Working]]
 - [[Newsjacking Framework]]
 - [[NVIDIA eGPU on macOS]]
+- [[nano-banana-2]]
 - [[Ollama — Local LLM Runner]]
 - [[Open Claw Ecosystem]]
 - [[OpenClaw Ecosystem Tools]]
@@ -785,6 +788,8 @@ Key figures in AI/ML, from thought leaders to engineers shaping the field.
 - [[Xjdr]]
 - [[Yacine Mahdid]]
 - [[Zach Mueller]]
+- [[google]]
+- [[gemini]]
 
 ## Events
 - [[Industrial-Scale Distillation Attacks Accusation]]

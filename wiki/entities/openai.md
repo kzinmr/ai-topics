@@ -2,10 +2,10 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-04-16
+updated: 2026-04-25
 tags: [company, llm, ai-agents, product, openai, gpt, agents-sdk]
 aliases: ["OpenAI Inc."]
-sources: []
+sources: [raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md]
 ---
 
 # OpenAI
@@ -44,6 +44,7 @@ OpenAI is a leading AI research and product company known for developing the GPT
 
 ### Other Products
 - **ChatGPT** — Conversational AI interface
+- **GPT Image 2 (ChatGPT Images 2.0)** — Second-generation image generation integrated into ChatGPT. Superior prompt adherence, professional output quality, significantly lower hallucinations vs. competitors. Features Select lasso tool and aspect ratio control for post-generation iteration. 40–60s generation time (~2x slower than Google's NB2 but widely preferred for quality).
 - **DALL-E** — Text-to-image generation
 - **Whisper** — Speech recognition
 - **Sora** — Video generation
@@ -65,6 +66,8 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 - [[openai-agents-sdk]] — OpenAI's agent development framework
 - [[harness-engineering]] — Ryan Lopopolo / Symphony orchestration philosophy
 - [[sandbox]] — AI agent sandbox isolation technologies
+- [[chatgpt-images-2.0]] — GPT Image 2 image generation
+- [[nano-banana-2]] — Google's NB2 image generation competitor
 
 ## Sources
 - 
