@@ -33,6 +33,19 @@ ChatGPT Images 2.0 is a significant upgrade from the original ChatGPT image gene
 - Reviewers find the ~30-second delay negligible given quality gains
 - Only a 20+ minute delay would justify reconsidering the trade-off
 
+
+### Reasoning Capabilities — First Image Model with Built-in Reasoning
+
+ChatGPT Images 2.0 is **OpenAI's first image generation model with reasoning capabilities**. Unlike previous one-shot generators, Images 2.0 plans layouts and structures before rendering pixels — a fundamental shift from direct pixel synthesis to multi-step reasoning.
+
+Key reasoning features:
+- **Layout planning**: Models spatial relationships and visual hierarchy before generation
+- **Multi-image coherence**: Generates up to 8 consistent images per prompt, maintaining character/object continuity across frames. Ideal for storyboarding, manga, and sequential marketing assets.
+- **Advanced text rendering**: Dramatically improved accuracy for non-Latin scripts (Japanese, Korean, Chinese, Hindi, Bengali). Text is integrated into design layouts rather than appearing as garbled overlays.
+- **Resolution & flexibility**: Outputs up to 2K resolution across flexible aspect ratios (ultrawide banners to vertical mobile screens).
+
+Market position: Claims the top spot across all Image Arena leaderboards with unprecedented margins, shifting image generation from a creative novelty to a production-grade visual system.
+
 ## Comparison with Nano Banana 2 (NB2)
 
 Google's Nano Banana 2 is the primary competitor. Key differences:
@@ -72,4 +85,5 @@ Alex Banks (primary LLM user for knowledge work uses Claude) has pivoted to Open
 
 - [Alex Banks, The Signal: "ChatGPT Images 2.0 is genuinely fantastic"](https://thesignal.substack.com/p/chatgpt-images-20-is-genuinely-fantastic) (2026-04-24) — detailed comparative review
 - [OpenAI Engineering: ChatGPT Images 2.0](https://openai.com/index/) — official announcement
-- [Ben's Bites: ChatGPT's Nano Banana](https://substack.com/p/chatgpts-nano-banana) (2026-04-23) — NB2 coverage
+- [Ben's Bites: ChatGPT's Nano Banana]
+- [Ben's Bites: AI Industry Briefing — ChatGPT Images 2.0 reasoning capabilities (2026-04-22)](https://substack.com/p/chatgpts-nano-banana) (2026-04-23) — NB2 coverage

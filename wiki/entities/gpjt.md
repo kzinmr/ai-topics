@@ -86,6 +86,8 @@ Giles writes in a highly technical, experiment-driven style. Each post is struct
 
 This approach makes his series valuable for both learning deep learning fundamentals and understanding practical training optimization.
 
+- [LLM from Scratch Part 32l — Interventions: Updated Instruction Fine-Tuning Results](https://www.gilesthomas.com/2026/04/llm-from-scratch-32l-interventions-instruction-fine-tuning-tests) (2026-04-22) — Technical deep-dive on interventions (updating instruction fine-tuning results). Key insight: test set loss doesn't necessarily reflect real-world utility.
+
 ## Related
 
 - [[llm-training-fundamentals]] — Core concepts of training language models

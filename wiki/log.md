@@ -16,3 +16,25 @@ updated: 2026-04-24
   - 12 design patterns mapped to 5 subsystems (RWM, PG, AE, IAC, LA)
   - Added raw/articles/2026-04-25-agentic-design-patterns-arxiv.md
 
+## [2026-04-25] dreaming | consolidation — 2 new pages, 8 updates
+
+### New Entity Pages
+- [[entities/claude-design]] — Claude Design (Anthropic Labs product, visual design tool powered by Opus 4.7, design-to-code handoff to Claude Code)
+- [[entities/anthropic-labs]] — Anthropic Labs (experimental product division, first product: Claude Design)
+
+### Updated Entity Pages
+- [[entities/anthropic]] — Added Claude Opus 4.7 highlights and "Big Swing" April 2026 strategy analysis
+- [[entities/claude-code]] — Added Claude Design handoff pipeline integration (design-to-code workflow)
+- [[entities/google]] — Added Gemini macOS App, Gemini 3.1 Flash TTS, Google AI Plans with Cloud Storage
+- [[entities/gpjt]] — Added LLM from Scratch Part 32l (Interventions: instruction fine-tuning results)
+
+### Updated Concept Pages
+- [[concepts/chatgpt-images-2.0]] — Added reasoning capabilities section (first image model with reasoning, layout planning, multi-image coherence, advanced text rendering)
+- [[concepts/claude-code-routines]] — Added Opus 4.7 integration (xhigh effort, self-verification, task budgets) and Claude Design handoff
+- [[concepts/gemini]] — Added Gemini macOS App, Gemini 3.1 Flash TTS, Google AI Plans with Cloud Storage
+- [[concepts/arc-agi-2]] — Added Epoch AI Benchmarking Hub and WeirdML v2 updates
+- [[concepts/ai-criticism-politics]] — Added Sean Goedecke conservative alignment analysis
+
+### Navigation
+- index.md: entity count 88 → 90, updated last-updated line
+

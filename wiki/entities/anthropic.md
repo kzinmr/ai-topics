@@ -98,6 +98,31 @@ See also: [[openai-codex-superapp]] (OpenAI's competing Codex superapp positioni
 ## Sources
 -  (Ben's Bites, 2026-04-09)
 
+
+## Claude Opus 4.7 + Big Swing Strategy (April 2026)
+
+### Opus 4.7 Highlights
+- Released April 16, 2026 (GA) — significant upgrade over Opus 4.6
+- **Software engineering**: Handles complex, long-running tasks with rigor; devises methods to verify outputs
+- **Vision**: Up to 2,576px long edge (~3.75 MP) — 3× prior models. Excels at chemical structures, technical diagrams
+- **Instruction following**: Interprets prompts literally; legacy prompts may produce unexpected results
+- **New `xhigh` effort level**: Between `high` and `max` for finer reasoning/latency tradeoffs; Claude Code default raised to `xhigh`
+- **API Task Budgets**: Public beta — guide token spend across longer runs
+- **Tokenizer change**: Updated tokenizer may increase input tokens by 1.0–1.35×
+- **Pricing unchanged**: $5/M input, $25/M output tokens
+- **Cyber safeguards**: Intentionally limited vs Claude Mythos Preview; Cyber Verification Program available
+
+### Big Swing Strategy
+
+The April 2026 release of Claude Opus 4.7, Claude Design, and Claude Code Routines was coordinated as a single "Big Swing" — Anthropic releasing multiple major products simultaneously rather than sequentially. This strategy signals:
+
+1. **Confidence in production readiness**: All products launched together, suggesting coordinated QA and infrastructure readiness
+2. **Platform lock-in**: Claude Design → Claude Code handoff creates a design-to-code ecosystem
+3. **Automation narrative**: Claude Code Routines (scheduled, API, webhook-triggered) positions Claude Code as enterprise automation infrastructure, not just a developer tool
+4. **Competitive positioning**: Simultaneous release with OpenAI's ChatGPT Images 2.0 and Google's Gemini ecosystem expansion suggests Anthropic is competing on breadth of AI product ecosystem, not just model quality
+
+This mirrors how platforms like Google and OpenAI expand beyond their core products — but Anthropic is doing it as a coordinated launch rather than incremental releases.
+
 ## Related
 - [[claude-mythos]]
 - [[project-glasswing]]

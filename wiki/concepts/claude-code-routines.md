@@ -45,6 +45,24 @@ Claude Code Routines represent Anthropic's move toward persistent, scheduled age
 | Persistence | Full session state | Session management | Config-driven |
 | Connector model | Built-in | API integrations | MCP-based |
 
+
+## Opus 4.7 Integration (April 2026)
+
+Claude Opus 4.7's improvements directly enhance routines effectiveness:
+- **Long-running task handling**: Opus 4.7's ability to work coherently for hours enables multi-hour scheduled routines without degradation
+- **Self-verification**: Routines can now verify their own outputs before reporting results, improving reliability of automated tasks
+- **xhigh effort level**: The new `xhigh` setting (between `high` and `max`) provides better reasoning/latency tradeoffs for routine execution
+- **API Task Budgets**: Guide token spend across longer routine runs, enabling cost management for scheduled automation
+
+## Claude Design Handoff
+
+Claude Design (April 2026) creates a pipeline integration: designs can be handed off to Claude Code with a single instruction. This enables workflows where:
+1. A designer creates a prototype in Claude Design
+2. The handoff bundle is automatically processed by Claude Code
+3. Implementation begins without manual intervention
+
+This represents a new class of "design-to-code" routines where the design review loop is replaced by AI-mediated handoff.
+
 ## Related
 
 - [[concepts/claude-code-best-practices]] — Claude Code best practices and patterns

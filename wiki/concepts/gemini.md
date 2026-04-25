@@ -80,7 +80,32 @@ Google's latest text-to-speech model, delivering improved controllability, expre
 
 Starting April 2026, 3.1 Flash TTS is available for developers, enterprises, and everyday users to build AI-speech applications. Part of Google's broader Gemini 3.1 family release.
 
-### Related Models
+#
+### Gemini App — macOS (May 2026)
+
+Google expanded the Gemini App beyond mobile to **native macOS** (macOS 15+), available at gemini.google/mac. Key features:
+- **Option + Space shortcut**: Access Gemini without switching windows
+- **Screen sharing**: Share anything on screen with Gemini for context-specific help
+- **Local file access**: Gemini can analyze local files directly
+- **Image and video generation**: Generate visuals without losing workflow focus
+- **Free for macOS 15+ users**
+
+This positions Gemini as a desktop AI assistant, competing with Claude's desktop presence and ChatGPT's macOS app.
+
+### Gemini 3.1 Flash TTS
+
+Google released a new text-to-speech model as part of the Gemini ecosystem. The TTS model adds voice capabilities to Gemini-powered applications, enabling natural-sounding speech synthesis for content creation, accessibility, and conversational AI interfaces.
+
+### Google AI Plans with Cloud Storage
+
+Google introduced tiered AI plans with cloud storage integration, allowing users to store and access their AI-generated content across Google's infrastructure. This creates a more cohesive ecosystem where AI outputs are directly linked to persistent storage.
+
+### TPU Infrastructure
+
+- **TPU 8t and TPU 8i**: New TPU generations supporting Gemini model training and inference
+- Technical deep dive on TPU architecture improvements for multimodal workloads
+
+## Related Models
 
 - **Gemini 3.1 Flash**: Base multimodal model
 - **Lyria 3**: Google's music/song generation model

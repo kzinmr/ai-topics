@@ -35,6 +35,13 @@ This misalignment has significant implications for AI policy debates:
 
 This analysis adds depth to the [[ai-autonomy-debate]] by providing a political science lens on AI criticism patterns. It suggests that the AI debate may cut across traditional political lines in ways that haven't been fully explored.
 
+
+## Conservative Alignment Analysis (2026-04)
+
+Sean Goedecke published an analysis arguing that anti-AI rhetoric, while often framed in progressive language,实质上 aligns with conservative worldview patterns. The analysis identifies a contradiction: progressive framing masks underlying conservative motivations (preservation of existing structures, skepticism of rapid technological change, status quo defense).
+
+This adds a layer to the political dimensions of AI criticism — the framing and the underlying worldview may not align, complicating efforts to map AI attitudes onto traditional political spectrums.
+
 ## Related
 
 - [[concepts/ai-autonomy-debate]] — Broader debate about AI autonomy levels

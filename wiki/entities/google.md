@@ -51,6 +51,20 @@ Google's approach to AI image generation:
 - **Gemini App**: Mobile convenience with reduced controls
 - Competes with OpenAI's GPT Image 2, which reviewers report produces superior professional output despite slower generation
 
+### Gemini App (macOS)
+- Native desktop application for macOS 15+
+- Option + Space shortcut for instant AI access
+- Screen sharing for context-specific help
+- Local file analysis capabilities
+
+### Gemini 3.1 Flash TTS
+- Text-to-speech model integrated into Gemini ecosystem
+
+### Google AI Plans
+- Tiered AI subscription plans with cloud storage integration
+- Enables persistent storage of AI-generated content
+
+
 ## Relationships
 - [[gemini]] — Google's multimodal model family (detailed entity)
 - [[nano-banana-2]] — Google's NB2 image generation model
@@ -58,4 +72,7 @@ Google's approach to AI image generation:
 - [[chatgpt-images-2.0]] — OpenAI's GPT Image 2
 
 ## Sources
+- [Google: The Gemini app is now on Mac](https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-mac-os/) (2026-04-22) — macOS desktop app announcement
+- [Google: New text-to-speech AI model](https://blog.google/technology/ai/google-gemini-text-to-speech-ai-model-2026/) — TTS model release
+- [Google AI Plans with Cloud Storage](https://substack.com/redirect/07e1d369-9cdd-4737-821a-62accd29792c?j=eyJ1Ij...tf6E) — AI subscription plans
 - [Alex Banks, The Signal: "ChatGPT Images 2.0 is genuinely fantastic"](https://thesignal.substack.com/p/chatgpt-images-20-is-genuinely-fantastic) (2026-04-24) — comparative analysis with GPT Image 2

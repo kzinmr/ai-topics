@@ -9,9 +9,9 @@ updated: 2026-04-24
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-25 (Newsletter ingest: ChatGPT Images 2.0, Nano Banana 2)
+Last updated: 2026-04-25 (Dreaming: Claude Design, Claude Code Routines, Big Swing, Gemini Mac App, GPT Image 2 Reasoning)
 
-## Entity Pages (88)
+## Entity Pages (90)
 
 - [[openai]] — OpenAI (GPT, ChatGPT, Codex, Agents SDK, Symphony)
 - [[adam-rosenthal]] — Adam Rosenthal
@@ -178,6 +178,8 @@ Last updated: 2026-04-25 (Newsletter ingest: ChatGPT Images 2.0, Nano Banana 2)
 |- [[session-management]] — Session Management & Context Window Control (Claude Code: /compact, /rewind, /clear, subagents)
 |- [[capybara]] — Capybara (Anthropic内部コードネーム): Opusより大型の新ティアモデル、Mythosと同じ基盤モデル
 |- [[claude-code]] — Claude Code (Anthropic→OpenAI移管, AI coding agent, SWE-bench 72.7%)
+- [[claude-design]] — Claude Design (Anthropic Labs, visual design tool powered by Opus 4.7, design-to-code handoff)
+- [[anthropic-labs]] — Anthropic Labs (experimental product division, first product: Claude Design)
 |- [[claude-mythos]] — Claude Mythos
 - [[cursor-3]] — Cursor 3
 - [[gemma-4]] — Google Gemma 4
@@ -309,7 +311,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 |- [[fine-tuning/pytorch-fsdp]] — Fully Sharded Data Parallel distributed training
 |- [[fine-tuning/quantization-overview]] — Model quantization for efficient inference
 |  - [[karpathy-loop]] — The Karpathy Loop (Autonomous Experiment Design, autoresearch)
-- [[chatgpt-images-2.0]] — ChatGPT Images 2.0 (April 2026, improved image quality and prompt understanding)
+- [[chatgpt-images-2.0]] — ChatGPT Images 2.0 (April 2026, first image model with built-in reasoning, multi-image coherence, advanced text rendering)
 - [[personal-superintelligence]] — Personal Superintelligence (Meta vs OpenClaw vs Local AI philosophies)
 - [[meta-harness]] — Meta-Harness
 - [[scaling-without-slop]] — Scaling without Slop

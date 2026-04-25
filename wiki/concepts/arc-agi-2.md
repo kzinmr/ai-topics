@@ -46,6 +46,15 @@ ARC-AGI-2 was designed as a proxy for measuring progress toward artificial gener
 - [ARC Prize Foundation](https://arcprize.org/) — Official ARC benchmark
 - [Epoch AI](https://epoch.ai/) — Benchmarking and tracking AGI progress
 
+
+## Benchmarking Ecosystem Updates (2026-04)
+
+### Epoch AI Benchmarking Hub
+ARC-AGI-2 is now featured on Epoch AI's Benchmarking Hub, providing centralized tracking of abstract reasoning benchmarks across the AI research landscape. This increases visibility and enables cross-benchmark comparisons.
+
+### WeirdML v2
+Håvard Tveit Ihle's WeirdML benchmark received a v2 update, adding a new dimension to abstract reasoning evaluation. METR is providing API cost support for participants, reducing the economic barrier to experimentation.
+
 ## Related
 
 - [[concepts/gemini]] — Gemini 3 Deep Think performance
