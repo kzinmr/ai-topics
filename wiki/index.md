@@ -24,7 +24,7 @@ Last updated: 2026-04-25 (Newsletter ingest: ChatGPT Images 2.0, Nano Banana 2)
 - [[regie-ai]] — AI-native sales engagement platform replacing Outreach/Salesloft
 - [[figma]] — Figma AI challenge: Claude Design competition, SaaS moat失效, per-head pricing collapse risk (2026-04-20)
 
-## Concept Pages (91)
+## Concept Pages (93)
 - [[concepts/sycophancy]] — Sycophancy in LLMs, truth-over-pleasing alignment artifacts, mitigation strategies
 - [[concepts/claude-code-routines]] — Scheduled and event-driven Claude Code automation (Anthropic research preview)
 - [[concepts/arc-agi-2]] — ARC-AGI-2 abstract reasoning benchmark (Gemini 3 Deep Think: 45.1%)
@@ -202,6 +202,8 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[sandbox]] — Sandbox: AI Agent Code Execution Isolation (gVisor, Firecracker, MicroVMs, Monty, WASM)
 - [[sandbox/js-runtime]] — JavaScript Runtimes for AI Agents (E2B, WebContainer, Bun, Deno, QuickJS)
 - [[pydantic-ai]] — Pydantic AI: type-safe Python agent framework
+- [[agent-harness-primitives]] — Agent = Model + Harness; 6 core primitives (filesystem, code execution, tools, orchestration, feedback, recovery)
+- [[agentic-design-patterns]] — 12 Agentic Design Patterns (arXiv:2601.19752) mapped to 5 subsystems; system-theoretic framework for robust agent design
 
 - [[capabilities-based-security]] — Start from zero access, explicitly grant capabilities (Monty philosophy)
 

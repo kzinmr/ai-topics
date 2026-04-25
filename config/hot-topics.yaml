@@ -12,7 +12,7 @@ topics:
   - concepts/ai-agent-engineering/context-compaction
   notes: Karpathy提唱。前提としてtoken economics, attention mechanism等が必要か
   added: 2026-04-14
-  last_crawled: '2026-04-22'
+  last_crawled: '2026-04-25'
 - slug: agentic-engineering
   title: Agentic Engineering
   crawl_policy: laterals
@@ -36,7 +36,7 @@ topics:
   - concepts/ai-agent-engineering/_index
   notes: 19ページ。最新事例・ベストプラクティスの深掘り
   added: 2026-04-14
-  last_crawled: '2026-04-23'
+  last_crawled: '2026-04-25'
 - slug: harness-engineering
   title: Harness Engineering
   crawl_policy: prerequisites
@@ -50,7 +50,7 @@ topics:
   - concepts/ai-agent-engineering/effective-harnesses-for-long-running-agents
   notes: Ryan Lopopolo提唱。前提としてruntime isolation, process supervision等
   added: 2026-04-14
-  last_crawled: '2026-04-23'
+  last_crawled: '2026-04-25'
 - slug: agent-team-swarm
   title: Agent Team / Swarm
   crawl_policy: laterals
@@ -90,7 +90,7 @@ topics:
   - concepts/dspy
   notes: 急速に進化中。GEPA, RLM等の最新動向を追跡
   added: 2026-04-14
-  last_crawled: '2026-04-20'
+  last_crawled: '2026-04-25'
 - slug: local-llm
   title: Local LLM Inference
   crawl_policy: deepdive
@@ -119,7 +119,7 @@ topics:
   - concepts/claude-memory
   notes: '前提: episodic vs semantic memory, vector DB architectures等'
   added: 2026-04-14
-  last_crawled: '2026-04-21'
+  last_crawled: '2026-04-25'
 - slug: death-of-browser
   title: Death of Browser
   crawl_policy: deepdive
