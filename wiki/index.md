@@ -24,7 +24,7 @@ Last updated: 2026-04-26 (Active Crawl: Agent Governance, Multi-Agent Orchestrat
 - [[regie-ai]] — AI-native sales engagement platform replacing Outreach/Salesloft
 - [[figma]] — Figma AI challenge: Claude Design competition, SaaS moat失效, per-head pricing collapse risk (2026-04-20)
 
-## Concept Pages (94)
+## Concept Pages (95)
 - [[sycophancy]] — Sycophancy in LLMs, truth-over-pleasing alignment artifacts, mitigation strategies
 - [[claude-code-routines]] — Scheduled and event-driven Claude Code automation (Anthropic research preview)
 - [[arc-agi-2]] — ARC-AGI-2 abstract reasoning benchmark (Gemini 3 Deep Think: 45.1%)
@@ -416,6 +416,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 - [[agentic-web]] — Agentic Web: websites expose capabilities, WebMCP, AX (Agent Experience), machine-legible design
 - [[death-of-browser]] — Death of the Browser (agentic browsing paradigm shift; 2026: Browser Use BU-2.0, Perplexity Comet, ChatGPT Atlas)
 - [[local-first-software]] — Local-First Software (Kleppmann, Ink & Switch, CRDTs, AT Protocol)
+- [[mcp]] — Model Context Protocol (Anthropic, industry-standard tool integration protocol)
 
 ### Cognition / Devin Philosophy
 

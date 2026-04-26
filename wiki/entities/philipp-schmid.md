@@ -36,7 +36,7 @@ Philipp Schmid is one of the most prolific and influential technical educators i
 
 At **Hugging Face**, Schmid served as Technical Lead for strategic cloud and hardware partnerships, working with AWS, Google Cloud, Azure, Cloudflare, DigitalOcean, and Dell. He was instrumental in creating **Hugging Face Inference Endpoints** — a user-friendly, production-ready solution for deploying machine learning models as APIs. His work helped bridge the gap between cutting-edge research and practical deployment, making models like Falcon, LLaMA, StarCoder, and BLOOM accessible to developers worldwide. He frequently shared optimization techniques like Q-LoRA, speculative decoding with Medusa, and AWQ quantization that dramatically reduced inference costs.
 
-In early 2025, Schmid joined **Google DeepMind** as a Senior AI Developer Experience Engineer, where he is building the first AI DevRel team. His mission: "Enable every developer to build with AI in a responsible, ethical and successful way." He works alongside notable colleagues including Mat Velloso, Paige Bailey, Logan Kilpatrick, and Omar Sanseviero. At DeepMind, he has been deeply involved in **Gemini** developer documentation, the **Gemma** open model family guides, and the emerging agent ecosystem including the Gemini Interactions API and MCP (Model Context Protocol) servers.
+In early 2025, Schmid joined **Google DeepMind** as a Senior AI Developer Experience Engineer, where he is building the first AI DevRel team. His mission: "Enable every developer to build with AI in a responsible, ethical and successful way." He works alongside notable colleagues including Mat Velloso, Paige Bailey, Logan Kilpatrick, and Omar Sanseviero. At DeepMind, he has been deeply involved in **Gemini** developer documentation, the **Gemma** open model family guides, and the emerging agent ecosystem including the Gemini Interactions API and [[mcp|Model Context Protocol]] servers.
 
 Schmid's GitHub presence is equally impressive — with 3,700+ followers and 247 public repositories, his projects include:
 - **deep-learning-pytorch-huggingface** (1.4k stars) — Comprehensive deep learning tutorials
@@ -186,6 +186,6 @@ Schmid's X activity (@_philschmid) typically covers:
 2. **Deployment optimization** — Practical guides on reducing costs, improving latency, and scaling LLM inference
 3. **Fine-tuning techniques** — Q-LoRA, distillation, Spectrum methods, and when fine-tuning beats prompting
 4. **Gemini and Google AI ecosystem** — Updates on Gemini API, Interactions API, Gemma models, and developer tools
-5. **MCP server design** — Best practices for building reliable, production-grade Model Context Protocol servers
+5. **[[mcp|MCP]] server design** — Best practices for building reliable, production-grade Model Context Protocol servers
 6. **Developer education** — Tutorials, guides, and workshop materials for the broader AI development community
 7. **Industry commentary** — Thoughts on the shift from model-centric to infrastructure-centric AI development, the economics of AI deployment

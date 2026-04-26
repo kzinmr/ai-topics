@@ -800,3 +800,7 @@ AI and LLM concept pages organized by topic.
 ## World-Models-Science.Md
 
 - [[world-models-science]] — Using world models and agent loops to automate scientific research and discovery.
+
+## MCP (Model Context Protocol)
+
+- [[mcp]] — Industry-standard protocol for connecting AI models to external tools and resources. Created by Anthropic, widely adopted in 2025-2026.

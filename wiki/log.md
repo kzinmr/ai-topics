@@ -7,6 +7,13 @@ updated: 2026-04-24
 
 # Wiki Activity Log
 
+## [2026-04-26] trending-topics | MCP wiki update + wikilink remediation
+- **New page**: [[mcp]] (concepts/mcp.md) — Model Context Protocol: origin, architecture, 2026 adoption, security concerns, SDK ecosystem
+- **Schema update**: Added `protocol` tag to Products taxonomy in SCHEMA.md
+- **Wikilink remediation**: Added [[mcp]] wikilinks to 6 entity pages (claude-code, andriy-burkov, mario-zechner, philipp-schmid, etc.) and concept pages (_index.md, cli-over-mcp-pattern, code-execution-with-mcp)
+- **Index update**: Added MCP to index.md under Networking & Protocols section, Concept Pages count 94→95
+- **Sources**: langchain-anatomy-agent-harness, Troy Hunt MCP security analysis, WebMCP vs MCP Chrome blog
+
 ## [2026-04-26] agent-swarms | New concept page created
 - [laterals] agent-team-swarm → [[agent-swarms]]
   - **Key distinction**: agent-team-swarmは分散システム管理視点（階層的オーケストレーション）、agent-swarmsは自律的創発振る舞い視点（生物学的スワームからインスパイア）
