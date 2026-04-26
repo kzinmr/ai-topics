@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-26 | Total pages: 22
+> Last updated: 2026-04-26 | Total pages: 23
 
 ## Entities
 
@@ -24,6 +24,7 @@
 ## Concepts
 
 - [[agent-swarms]] — Multi-agent coordination patterns for parallel task execution
+- [[claude-design]] — Anthropic Labs product for collaborative visual design via conversational AI; design-to-code handoff to Claude Code
 - [[dflash]] — Block diffusion model for speculative decoding; replaces sequential drafting with parallel diffusion, achieving >6x lossless speedup
 - [[gapa]] — Reflective prompt evolution that outperforms RL via natural language reflection
 - [[memory-architecture]] — Three-layer memory model (episodic, semantic, state) for production agents
