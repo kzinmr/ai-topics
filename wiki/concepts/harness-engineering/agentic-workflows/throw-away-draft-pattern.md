@@ -135,10 +135,10 @@ Sankalpは以下のようにツールを使い分けている：
 ## 関連概念
 
 - [[context-window-management]] — 捨て台本はコンテキストを消費する
-- [[cli-first-development]] — CLIで捨て台本を書くと検証が高速
-- [[concepts/harness-engineering/agentic-engineering.md]] — 上位概念
+- [[harness-engineering/agentic-workflows/cli-first-development]] — CLIで捨て台本を書くと検証が高速
+- [[harness-engineering/agentic-engineering]] — 上位概念
 
 ## 参照
 
-- [[entities/sankalp-sinha.md]] — Throw-Away First Draftパターンの提唱者
+- [[sankalp-sinha]] — Throw-Away First Draftパターンの提唱者
 - [A Guide to Claude Code 2.0](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/)

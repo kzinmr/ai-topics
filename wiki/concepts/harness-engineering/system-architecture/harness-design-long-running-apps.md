@@ -182,4 +182,4 @@ Generator: 実装を提案
 - [[building-effective-agents]] — エージェント構築の基本原理
 - [[multi-agent-research-system]] — マルチエージェントシステム
 - [[context-engineering]] — コンテキストエンジニアリング
-- [[comparisons/evals-skills.md]] — 評価スキル
+- [[comparisons/evals-skills]] — 評価スキル

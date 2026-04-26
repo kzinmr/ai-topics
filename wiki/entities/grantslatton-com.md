@@ -104,10 +104,10 @@ Slatton treats design documents like mathematical proofs — their purpose is to
 
 ## Related
 
-- [[John Carmack]] — Pragmatic AI as tool, optimization focus
-- [[George Hotz]] — AI infrastructure, open-source ethos
-- [[Jayden Milne]] — AI culture and companionship
-- [[Stefano Marinelli]] — Critical AI infrastructure perspectives
+- [[john-carmack]] — Pragmatic AI as tool, optimization focus
+- [[george-hotz]] — AI infrastructure, open-source ethos
+- [[jayden-milne]] — AI culture and companionship
+- [[stefano-marlinelli]] — Critical AI infrastructure perspectives
 -  — Accelerationism and capital dynamics (Slatton's technocapital has conceptual parallels)
 -  — "The Bitter Lesson" and computation-focused AI development
 

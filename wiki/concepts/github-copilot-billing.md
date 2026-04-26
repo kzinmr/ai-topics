@@ -81,7 +81,7 @@ This move follows similar actions by other AI companies:
 
 - [[token-economics]] — LLM inference cost analysis
 - [[ai-bubble-economics]] — AI service economics
-- [[concepts/github-copilot-billing.md]] — Related GitHub Copilot coverage
+- [[github-copilot-billing]] — Related GitHub Copilot coverage
 
 ## References
 

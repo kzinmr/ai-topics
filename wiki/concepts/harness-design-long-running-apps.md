@@ -1,6 +1,6 @@
 ---
 title: "Harness Design for Long-Running Apps — Anthropic's Multi-Agent Architecture"
-tags: [[harness-design, multi-agent, gan-loop, context-reset, sprint-contracts, evaluator-pattern]]
+tags: [[harness-design-multi-agent-gan-loop-context-reset-sprint-contracts-evaluator-pattern]]
 created: 2026-04-13
 updated: 2026-04-24
 ---
@@ -98,8 +98,8 @@ Evaluatorがレビュー
 
 ## See Also
 
-- [[concepts/_index.md]]
-- [[concepts/memory-systems-design-patterns.md]]
-- [[concepts/meta-harness.md]]
-- [[concepts/long-context-coding-agents.md]]
-- [[concepts/llm-evaluation-harness.md]]
+- [[concepts/_index]]
+- [[memory-systems-design-patterns]]
+- [[meta-harness]]
+- [[long-context-coding-agents]]
+- [[llm-evaluation-harness]]

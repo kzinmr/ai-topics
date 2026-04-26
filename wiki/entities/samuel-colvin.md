@@ -189,7 +189,7 @@ Angel investor in Pydantic's seed round. Cramer's experience building developer 
 
 - **Concepts**: [[code-mode]], [[harness-engineering]], [[structured-outputs]], [[ai-observability]], [[capabilities-based-security]]
 - **Entities**: [[alex-hall]] (Python Dev at Pydantic, Logfire), [[david-montague]] (CTO, Pydantic), [[douwe-maan]] (Pydantic AI Lead),  (FastAPI),  (Zapier, angel investor)
-- **Technologies**: [[pydantic]], [[monty-sandbox]], [[concepts/logfire.md]], [[pydantic-ai]]
+- **Technologies**: [[pydantic]], [[monty-sandbox]], [[logfire]], [[pydantic-ai]]
 
 ## Sources
 

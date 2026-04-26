@@ -125,4 +125,4 @@ Beyond the deliberate coding methodology, Ilegbodu's work encompasses:
 
 ## See Also
 
-- [[entities/_index.md]]
+- [[entities/_index]]

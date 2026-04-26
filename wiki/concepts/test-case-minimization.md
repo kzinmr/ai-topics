@@ -98,7 +98,7 @@ Phase 2 (refine): Halve step to find minimum
 
 - [[agentic-pbt]] — Agentic property-based testing
 -  — Test harnesses for LLM evaluation
-- [[concepts/harness-engineering/agentic-workflows/first-run-the-tests.md]] — Test-first development patterns
+- [[harness-engineering/agentic-workflows/first-run-the-tests]] — Test-first development patterns
 
 ## References
 

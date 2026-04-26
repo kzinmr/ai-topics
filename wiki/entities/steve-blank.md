@@ -159,7 +159,7 @@ Notable recent publications include his 2024 essay "A Lasting Model for Change: 
 -  — The four-step process for discovering and validating markets
 - [[harness-engineering]] — Parallels in AI agent configuration as learned failure modes
 -  — Co-creator of the Lean Startup movement
-- [[concepts/harness-engineering/agentic-engineering.md]] — Agent-first development workflows changing startup dynamics
+- [[harness-engineering/agentic-engineering]] — Agent-first development workflows changing startup dynamics
 
 ## Sources
 

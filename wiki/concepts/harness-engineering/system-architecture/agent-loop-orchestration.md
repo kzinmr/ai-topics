@@ -111,8 +111,8 @@ text at the beginning ... 1000 chars truncated ... text at the end
 
 ## 関連概念
 
-- [[context-compaction]] — コンテキストが満杯になった際の圧縮メカニズム
-- [[concepts/harness-engineering/system-architecture/container-context.md]] — 実行環境の永続化
+- [[harness-engineering/system-architecture/context-compaction]] — コンテキストが満杯になった際の圧縮メカニズム
+- [[harness-engineering/system-architecture/container-context]] — 実行環境の永続化
 - [[context-window-management]] — コンテキスト予算の戦略的管理
 - [[harness-engineering]] — エージェント実行環境の設計（上位概念）
 

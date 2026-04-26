@@ -125,9 +125,9 @@ His projects share a common philosophy: **build tools that solve actual problems
 
 ## Related
 
-- [[Hack Club]] — Teenager-run coding community and organization
-- [[Digital Minimalism]] — Conscious technology use, lightweight websites
-- [[SaaS Dependency]] — Risks of entrusting data to proprietary platforms
+- [[hack-club]] — Teenager-run coding community and organization
+- [[digital-minimalism]] — Conscious technology use, lightweight websites
+- [[saas-dependency]] — Risks of entrusting data to proprietary platforms
 -  — Mattermost, self-hosted alternatives
 -  — Parasocial AI relationships, user safety, deprecation
 -  — Procurement failures, consultancy costs, taxpayer value

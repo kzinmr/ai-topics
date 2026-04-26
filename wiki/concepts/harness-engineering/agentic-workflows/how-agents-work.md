@@ -113,14 +113,14 @@ Exploreエージェントは**読取専用**で設計されており、ファイ
 
 - [[agentic-engineering]] — 上位概念
 - [[subagents]] — エージェントの階層化
-- [[using-git-with-agents]] — バージョン管理統合
+- [[harness-engineering/agentic-workflows/using-git-with-agents]] — バージョン管理統合
 - [[context-window-management]] — Task Toolはコンテキストを分割する
-- [[cli-first-development]] — エージェントのツール呼び出しパターン
+- [[harness-engineering/agentic-workflows/cli-first-development]] — エージェントのツール呼び出しパターン
 
 ## 参照
 
 - [[simon-willison]] — How Coding Agents Work概念提唱者
-- [[entities/sankalp-sinha.md]] — Claude Code 2.0 Task Tool分析
+- [[sankalp-sinha]] — Claude Code 2.0 Task Tool分析
 -  — Plan Mode不要論
 - [Agentic Engineering Patterns — How Agents Work](https://simonwillison.net/guides/agentic-engineering-patterns/how-agents-work/)
 - [A Guide to Claude Code 2.0](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/)

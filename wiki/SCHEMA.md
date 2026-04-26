@@ -24,7 +24,7 @@ aliases: ["alternative name"]
 ```
 
 ### Wikilinks
-Use `[[page-name]]` for internal links. Use `[[page-name|display text]]` for custom display.
+Use `<wikilink>` for internal links. Use `<wikilink|display>` for custom display.
 
 ### File Naming
 - Lowercase, hyphen-separated: `transformer-architecture.md`
@@ -64,7 +64,7 @@ Hermes agent processes `raw/` into structured knowledge pages:
 - **source:** `newsletter`, `auto-ingested`, `manual`, `arxiv`
 
 ### Source Attribution
-All claims should link to their source in `raw/` via `[[raw/articles/filename]]`.
+All claims should link to their source in `raw/` via `<raw-article-link>`.
 
 ### Contradiction Handling
 When sources disagree, note both positions with dates and sources.

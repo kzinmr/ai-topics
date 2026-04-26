@@ -175,12 +175,12 @@ This reflects his broader philosophy: claims without evidence are just opinions.
 ## Related Concepts
 
 - [[pycparser]] — His most widely used project (~20M daily downloads), pure-Python C parser
-- [[WebAssembly]] — Recent focus as both compilation target and runtime
-- [[Compiler Design]] — Recursive-descent parsing, syntax-directed translation, code generation
-- [[LLVM]] — Library usage, API stability challenges, Clang tooling
-- [[Go Tooling]] — go generate, AST rewriting, astutil, stringer
-- [[LLM-Assisted Development]] — Practical experience with Codex and other AI coding agents
-- [[Boring Technology]] — His thesis on proven tools + LLMs vs. shiny new alternatives
+- [[webassembly]] — Recent focus as both compilation target and runtime
+- [[compiler-design]] — Recursive-descent parsing, syntax-directed translation, code generation
+- [[llvm]] — Library usage, API stability challenges, Clang tooling
+- [[go-tooling]] — go generate, AST rewriting, astutil, stringer
+- [[llm-assisted-development]] — Practical experience with Codex and other AI coding agents
+- [[boring-technology]] — His thesis on proven tools + LLMs vs. shiny new alternatives
 -  — The Bob project: interpreter, compiler, VM, WASM target
 -  — Using test suites as safety nets for AI-assisted refactoring
 -  — Error recovery in lexers and parsers

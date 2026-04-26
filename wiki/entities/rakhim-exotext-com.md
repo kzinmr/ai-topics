@@ -10,11 +10,11 @@ updated: 2026-04-24
 
 ## Overview
 
-**Rakhim Davletkaliyev** is a staff engineer at [[IQM Quantum Computers]], a programming educator, author, and philosophical tech writer. He blogs at [[rakhim.exotext.com]] (with a web log at blog.rakhim.org), where he writes about the intersection of programming, computing theory, and the human experience of building software.
+**Rakhim Davletkaliyev** is a staff engineer at [[iqm-quantum-computers]], a programming educator, author, and philosophical tech writer. He blogs at [[rakhim.exotext.com]] (with a web log at blog.rakhim.org), where he writes about the intersection of programming, computing theory, and the human experience of building software.
 
 Rakhim is notable for his willingness to **shut down projects** when they no longer serve their purpose — a philosophy that runs counter to the "growth at all costs" mentality of modern tech. He has built and abandoned podcasts, courses, YouTube channels, and apps, documenting each decision with candor. His writing style is contemplative and self-reflective, often questioning the fundamental assumptions of software development culture.
 
-He is the author of **Quantum Computing For Software Engineers** and **Foundations of Clojure** (published on Leanpub), and has spoken at [[PyCon]] Tallinn, [[flatMap]] Oslo, and  Amsterdam. His side-projects have included **Castlemacs** (minimalist Emacs for macOS), **Underblog** (extremely simple static blog generator in Go), and **Geostreaks** (iOS app for remote workers who forget to go outside).
+He is the author of **Quantum Computing For Software Engineers** and **Foundations of Clojure** (published on Leanpub), and has spoken at [[pycon]] Tallinn, [[flatmap]] Oslo, and  Amsterdam. His side-projects have included **Castlemacs** (minimalist Emacs for macOS), **Underblog** (extremely simple static blog generator in Go), and **Geostreaks** (iOS app for remote workers who forget to go outside).
 
 ---
 
@@ -31,7 +31,7 @@ He is the author of **Quantum Computing For Software Engineers** and **Foundatio
 | 2020 | Writes "Bring back the ease of 80s and 90s personal computing" — critique of modern OS complexity |
 | 2021–2023 | Shifts focus to quantum computing research; begins preparing for PyCon talk |
 | 2024 | Speaks at PyCon Tallinn on "Full-stack Quantum Computing" — debunks myths about quantum advantage |
-| 2024–2025 | Publishes *Quantum Computing For Software Engineers* (Leanpub); joins [[IQM Quantum Computers]] as staff engineer |
+| 2024–2025 | Publishes *Quantum Computing For Software Engineers* (Leanpub); joins [[iqm-quantum-computers]] as staff engineer |
 | 2025–2026 | Continues writing on exotext.com; reflects on programming philosophy and the human experience of computing |
 
 ---
@@ -133,7 +133,7 @@ His related essay "Be Wary of Self Described Benefits" warns against accepting v
 
 Rakhim's essay "Process of Learning" (2019) is notable for its **meta-cognitive** approach. Rather than just sharing what he learned, he documents *how* he learned — the false starts, the dead ends, the moments of insight. This is programming education as autobiography: the learner's journey is the content.
 
-His bookshelf entries reveal his intellectual influences: [[SICP]] (Structure and Interpretation of Computer Programs), [[How to Design Programs]], [[Clojure for the Brave and True]], Sean Carroll's physics books, and Victor Papanek's design theory. He reads widely across programming, physics, psychology, and philosophy — and integrates these perspectives into his technical writing.
+His bookshelf entries reveal his intellectual influences: [[sicp]] (Structure and Interpretation of Computer Programs), [[how-to-design-programs]], [[clojure-for-the-brave-and-true]], Sean Carroll's physics books, and Victor Papanek's design theory. He reads widely across programming, physics, psychology, and philosophy — and integrates these perspectives into his technical writing.
 
 ### Standardization is Impossible
 
@@ -177,13 +177,13 @@ Rakhim's embrace of this impossibility is liberating. If standardization is impo
 
 ## Related
 
-[[IQM Quantum Computers]] — Rakhim's employer; Finnish quantum computing company
-[[Clojure]] — Functional programming language; Rakhim published *Foundations of Clojure*
-[[Emacs]] — Rakhim built Castlemacs (minimalist Emacs for macOS)
+[[iqm-quantum-computers]] — Rakhim's employer; Finnish quantum computing company
+[[clojure]] — Functional programming language; Rakhim published *Foundations of Clojure*
+[[emacs]] — Rakhim built Castlemacs (minimalist Emacs for macOS)
 Genetic Programming — Rakhim's flatMap 2019 talk topic
-[[Lisp]] — Language family central to Rakhim's evolutionary computing research
-[[Go (Golang)]] — Language used for Underblog static site generator
-[[Python]] — Primary language for quantum computing work and PyCon talks
+[[lisp]] — Language family central to Rakhim's evolutionary computing research
+[[go-golang]] — Language used for Underblog static site generator
+[[python]] — Primary language for quantum computing work and PyCon talks
  — Emerging systems language; Rakhim has written about it
 Chaos Theory — Subject of Rakhim's Codexpanse Podcast exploration
  — Oslo conference where Rakhim spoke on genetic programming

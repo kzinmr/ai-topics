@@ -77,9 +77,9 @@ Reduces disk space by ~40% while maintaining vLLM and llmcompressor compatibilit
 
 ## Related
 
-- [[concepts/fine-tuning/peft-lora-qlora.md]] — QLoRA fine-tuning
-- [[concepts/inference/llama-cpp.md]] — GGUF inference engine
-- [[concepts/inference/vllm.md]] — vLLM serving with quantized models
+- [[fine-tuning/peft-lora-qlora]] — QLoRA fine-tuning
+- [[inference/llama-cpp]] — GGUF inference engine
+- [[inference/vllm]] — vLLM serving with quantized models
 
 ## Sources
 

@@ -1,6 +1,6 @@
 ---
 title: "Foundation Capital"
-tags: [[company, vc, foundation-capital, context-graph, investor]]
+tags: [[company-vc-foundation-capital-context-graph-investor]]
 created: 2026-04-20
 updated: 2026-04-24
 ---

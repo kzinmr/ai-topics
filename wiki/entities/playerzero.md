@@ -1,6 +1,6 @@
 ---
 title: "PlayerZero"
-tags: [[company, startup, playerzero, context-graph, sre, support-automation]]
+tags: [[company-startup-playerzero-context-graph-sre-support-automation]]
 created: 2026-04-20
 updated: 2026-04-24
 ---

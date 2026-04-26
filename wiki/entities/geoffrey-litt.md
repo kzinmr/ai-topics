@@ -146,8 +146,8 @@ In "Bring Your Own Client," Geoffrey explores how local-first software and malle
 
 ## Related People
 
-- **[[Simon Willison]]** — Fellow thinker on AI tooling and practical applications; both explore how LLMs can augment existing workflows rather than replace them.
-- **[[Hamel Husain]]** — Both advocate for transparent, hackable AI tools over black-box platforms; share interest in practical developer tooling.
+- **[[simon-willison]]** — Fellow thinker on AI tooling and practical applications; both explore how LLMs can augment existing workflows rather than replace them.
+- **[[hamel-husain]]** — Both advocate for transparent, hackable AI tools over black-box platforms; share interest in practical developer tooling.
 - **Peter van Hardenberg** — Ink & Switch collaborator; co-author on the Malleable Software essay.
 - **Josh Horowitz** — Ink & Switch collaborator; co-author on the Malleable Software essay.
 - **Todd Matthews** — Ink & Switch collaborator; co-author on the Malleable Software essay.

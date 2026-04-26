@@ -186,9 +186,9 @@ The blog uses WordPress with email subscription functionality and is distributed
 
 ## Related
 
-- [[Engineering Management]] — Leading teams, hands-on management, coding as a manager
-- [[Career Development]] — Senior skills, promotion strategies, communication
-- [[AI and Software Engineering]] — Practical impact of AI on the profession
+- [[engineering-management]] — Leading teams, hands-on management, coding as a manager
+- [[career-development]] — Senior skills, promotion strategies, communication
+- [[ai-and-software-engineering]] — Practical impact of AI on the profession
 -  — Communication patterns, complexity bias
 -  — Setting standards, building trust, leading by example
 -  — The undervalued skill of keeping things simple

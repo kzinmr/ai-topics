@@ -159,10 +159,10 @@ Investment analysis scored Unsloth at **8.10/10** (highest in the OSS index):
 
 -  — Co-founder brother (Design/Product/Engineer at Unsloth)
 - [[andrej-karpathy]] — nanochat/auto-research; both focus on democratizing ML access
-- [[entities/hynek-schlawack.md]] — Open-source maintenance and sustainability philosophy
+- [[hynek-schlawack]] — Open-source maintenance and sustainability philosophy
 -  — OSS project dealing with rapid growth and community demands
 - [[eugeneyan]] — Applied ML practitioner sharing production ML lessons
-- [[entities/daniel-van-strien.md]] — Hugging Face community builder
+- [[daniel-van-strien]] — Hugging Face community builder
 
 ## X/Twitter Activity
 

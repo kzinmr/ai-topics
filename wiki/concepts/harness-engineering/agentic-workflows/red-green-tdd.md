@@ -59,9 +59,9 @@ Build a Python function to extract headers from a markdown string. Use red/green
 
 ## 関連パターン
 
-- [[first-run-the-tests]] — TDDの前段階としてテストスイートをまず実行させる4単語プロンプト
+- [[harness-engineering/agentic-workflows/first-run-the-tests]] — TDDの前段階としてテストスイートをまず実行させる4単語プロンプト
 - [[agentic-manual-testing]] — 自動テスト後の手動探索テスト
-- [[concepts/harness-engineering/agentic-engineering.md]] — 上位概念
+- [[harness-engineering/agentic-engineering]] — 上位概念
 
 ## 参照
 - [[simon-willison]] — Agentic Engineering Patterns創始者

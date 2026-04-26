@@ -112,12 +112,12 @@ His coverage of the Kimwolf story revealed how botnet operators were tunneling t
 
 ## Related Concepts
 
-- [[Data Breach]] — Central topic of Krebs's investigative reporting
-- [[Ransomware]] — Extensive coverage of GandCrab, REvil, and the RaaS economy
-- [[Botnet]] — Kimwolf, Aisuru, and the IoT device exploitation landscape
-- [[AI Agent Security]] — OpenClaw, prompt injection, and the lethal trifecta
-- [[Phishing]] — Evolution from static pages to real-time proxy attacks (Starkiller)
-- [[Cybercrime Economics]] — Follow-the-money journalism approach
+- [[data-breach]] — Central topic of Krebs's investigative reporting
+- [[ransomware]] — Extensive coverage of GandCrab, REvil, and the RaaS economy
+- [[botnet]] — Kimwolf, Aisuru, and the IoT device exploitation landscape
+- [[ai-agent-security]] — OpenClaw, prompt injection, and the lethal trifecta
+- [[phishing]] — Evolution from static pages to real-time proxy attacks (Starkiller)
+- [[cybercrime-economics]] — Follow-the-money journalism approach
 -  — AI coding assistant compromises and dependency chains
 -  — Krebs's own experience being targeted and the broader botnet threat
 -  — APT28/Forest Blizzard, Iran-linked operations

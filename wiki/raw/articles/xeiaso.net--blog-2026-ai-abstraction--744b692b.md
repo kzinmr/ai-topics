@@ -1,0 +1,50 @@
+---
+title: "I don't know if I like working at higher levels of abstraction"
+url: "https://xeiaso.net/blog/2026/ai-abstraction/"
+fetched_at: 2026-04-25T12:08:13.493471+00:00
+source: "xeiaso.net"
+tags: [blog, raw]
+---
+
+# I don't know if I like working at higher levels of abstraction
+
+Source: https://xeiaso.net/blog/2026/ai-abstraction/
+
+I don't know if I like working at higher levels of abstraction
+Published on
+2026-03-11
+, 570 words, 3 minutes to read
+AI tools push us to higher abstraction. I'm not sure I like what that costs us.
+Whenever I have Claude do something for me, I feel nothing about the results. It feels like something happens around me, not through me. That's the new level of abstraction: you stop writing code and start describing intent. You stop crafting and start delegating. I've been doing this professionally long enough to have an opinion, and I don't like what it's doing to me.
+All of it focuses on getting things
+done
+rather than on quality or craft. I'm more productive than I've ever been. I ship more. I finish more. Each thing lands with the emotional weight of a form letter.
+Cadey
+"The emotional weight of a form letter." Yeah, that tracks.
+When I write, I try to make people
+feel
+something. My goal is to provoke emotion when you read me. Generative AI sands down the hard things. Everything becomes homogenous, converging toward the average. The average makes nobody feel anything.
+Sure, you can still make people feel things using this flow. I've done it recently. But we're trading away the texture. The rough edges, the weird phrasing, the choices too specific and too
+human
+for a statistical model to generate.
+I'm going to keep talking to you as an equal. It's the most effective part of my style: I write like I'm sitting across from you, not lecturing down at you. Generative AI defaults to the authoritative explainer voice — the one that sounds like every other. Resisting that pull now takes conscious effort.
+Aoi
+So the tools are making it
+harder
+to sound like yourself?
+Cadey
+Not harder exactly. More like... the path of least resistance leads to sounding like everyone else. You have to actively choose to be yourself now.
+People I know are trying to break into this industry as juniors, and I honestly have no idea how to help them. This industry has historically valued quality and craft, yet somebody can yolo something out with Cursor and get hired by Facebook for it. The signal for "this person knows what they're doing" grows noisier every day.
+This part of the industry runs on doublethink. Nuance and opinions that don't fit into tweets. Senior engineers say "AI is just a tool" while their companies lay off the juniors who would've learned to use that tool responsibly. Leadership says "we value craft" while setting deadlines that make craft impossible without the machine. Nobody lies exactly, but nobody tells the whole truth either.
+Using these tools at this level of abstraction costs us something essential. I use them every day and I'm telling you: the default output has no soul. It's correct. It's competent. It's
+fine
+. And "fine" is the enemy of everything I care about as a writer and an engineer.
+Numa
+"Fine" is the ceiling that gets installed when you stop paying attention to the floor.
+I'm using these tools deliberately to find where the bar actually is. I want to see what's possible at this level of abstraction. Seeing what's possible requires expensive tools and uncomfortable honesty about what they can't do.
+The voice is non-negotiable. The weird, specific, occasionally self-indulgent voice that makes my writing
+mine
+. If higher abstraction means sounding like everyone else, I'll take the lower abstraction and the extra hours. Every time.
+Share
+Facts and circumstances may have changed since publication. Please contact me before jumping to conclusions if something seems wrong or unclear.
+Tags:

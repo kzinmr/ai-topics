@@ -164,7 +164,7 @@ q(t) = ⌈(n_live(t) + 1) / 2⌉
 - [[agent-team-swarm]] — マルチエージェントチームのオーケストレーション
 - [[harness-engineering]] — 単一エージェントの実行環境設計
 - [[openai-symphony]] — Ryan Lopopolo によるSymphonyプロジェクト
-- [[concepts/back-of-house-multi-agent-patterns.md]] — 厨房メタファーのマルチエージェントパターン
+- [[back-of-house-multi-agent-patterns]] — 厨房メタファーのマルチエージェントパターン
 
 ## ソース
 

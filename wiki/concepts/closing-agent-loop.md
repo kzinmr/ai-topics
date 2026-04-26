@@ -1,6 +1,6 @@
 ---
 title: "Closing the Agent Loop"
-tags: [[agentic-engineering, cognition, devin, workflow]]
+tags: [[agentic-engineering-cognition-devin-workflow]]
 created: 2026-04-23
 updated: 2026-04-24
 ---
@@ -38,4 +38,4 @@ This eliminates the "human in the loop" bottleneck of code review.
 ## See Also
 
 - [[cognition-devin-philosophy]] — Main Cognition philosophy
-- [[concepts/agent-team-swarm/managed-devins.md]] — Conditional multi-agent architecture
+- [[agent-team-swarm/managed-devins]] — Conditional multi-agent architecture

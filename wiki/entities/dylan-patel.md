@@ -131,7 +131,7 @@ This puts Patel at odds with the "power is the bottleneck" consensus of 2024–2
 - [[compute-scaling-bottlenecks]] — Patel's three-bottleneck framework
 - [[dwarkesh-patel]] — Host of the podcast where Patel delivered his landmark analysis
 -  — The broader domain Patel operates in
-- [[concepts/space-gpus.md]] — Orbital compute as a potential workaround to terrestrial constraints
+- [[space-gpus]] — Orbital compute as a potential workaround to terrestrial constraints
 
 ## Sources
 

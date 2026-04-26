@@ -122,4 +122,4 @@ Older blog posts at [jxmo.io/blog](https://jxmo.io/blog) include essays on AGI d
 
 ## See Also
 
-- [[entities/_index.md]]
+- [[entities/_index]]

@@ -78,4 +78,4 @@ BASE systems align with **AP (Availability + Partition Tolerance)** in the CAP t
 ## Related Concepts
 - [[event-driven-architecture]]
 - 
-- [[concepts/microservices-vs-monolith.md]]
+- [[microservices-vs-monolith]]

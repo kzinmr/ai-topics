@@ -121,7 +121,7 @@ If Chinese competitors successfully replicate GPT-4 or Claude-class capability a
 - [[anthropic-openclaw-conflict]] — Anthropic's concurrent restrictions on third-party tool access
 - [[open-model-consortium]] — Contrast: open model coalition vs. closed model alliance
 - [[meta-muse-spark]] — Meta's strategic shift to closed-source
-- [[concepts/claude-mythos-preview.md]] — Anthropic's cautious release approach
+- [[claude-mythos-preview]] — Anthropic's cautious release approach
 
 ## Sources
 

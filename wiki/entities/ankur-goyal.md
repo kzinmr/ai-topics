@@ -121,7 +121,7 @@ A key lesson from his Impira experience was recognizing that go-to-market succes
 -  — Goyal's LLM evaluation platform
 - [[figma]] — Acquired Impira; Goyal led AI team post-acquisition
 -  — Goyal's first startup, acquired by Figma
-- [[concepts/llm-evaluation-harness.md]] — Braintrust's core product category
+- [[llm-evaluation-harness]] — Braintrust's core product category
 -  — Key investor and advisor to Braintrust
 -  — Model breakthrough that enabled Loop (Claude 4)
 

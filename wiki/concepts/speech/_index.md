@@ -1,6 +1,6 @@
 ---
 title: "Speech Models — Overview"
-tags: [[speech, audio, asr, tts, voice]]
+tags: [[speech-audio-asr-tts-voice]]
 created: 2026-04-19
 updated: 2026-04-19
 ---
@@ -20,7 +20,7 @@ AI models specifically for speech/audio processing and generation. These are con
 
 ## Sub-pages
 
-- [[concepts/speech/whisper.md]] — Whisper: OpenAI's Speech Recognition Model
+- [[speech/whisper]] — Whisper: OpenAI's Speech Recognition Model
 
 ## Key Concepts
 
@@ -42,7 +42,7 @@ Speech models are categorized separately from multimodal AI because:
 This distinction reflects the fundamentally different architectures and use cases.
 
 ## Related Concepts
-- [[concepts/multimodal/_index.md]] — Vision-language multimodal systems
+- [[multimodal]] — Vision-language multimodal systems
 - [[inference]] — Inference optimization for audio models
 - [[local-llm]] — Running speech models locally
 

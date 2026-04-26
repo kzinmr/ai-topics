@@ -1,6 +1,6 @@
 ---
 title: "Claude Code Source Patterns — Leaked Source Analysis"
-tags: [[claude-code, prompt-engineering, context-management, caching, agent-architecture]]
+tags: [[claude-code-prompt-engineering-context-management-caching-agent-architecture]]
 created: 2026-04-13
 updated: 2026-04-24
 ---
@@ -79,8 +79,8 @@ Analysis of tactical engineering patterns found in Claude Code's leaked source c
 
 ## See Also
 
-- [[concepts/_index.md]]
-- [[concepts/claude-memory-tool.md]]
-- [[concepts/memory-systems-design-patterns.md]]
-- [[concepts/claude-mythos-preview.md]]
-- [[concepts/claude-code-leak.md]]
+- [[concepts/_index]]
+- [[claude-memory-tool]]
+- [[memory-systems-design-patterns]]
+- [[claude-mythos-preview]]
+- [[claude-code-leak]]

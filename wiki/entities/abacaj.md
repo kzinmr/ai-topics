@@ -112,7 +112,7 @@ His body of work reflects a pragmatic approach to ML: building tools that solve 
 -  — Open language model with transparent training pipeline
 -  — Fine-tuning target for his most popular repository
 - [[anthropic]] — Preferred model provider (Opus 4.1)
-- [[entities/qwen3-6-plus.md]] — High-quality open model for fine-tuning
+- [[qwen3-6-plus]] — High-quality open model for fine-tuning
 
 ## Sources
 

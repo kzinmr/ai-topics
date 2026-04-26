@@ -206,4 +206,4 @@ Eugene Yan's X/Twitter activity focuses on:
 
 ## See Also
 
-- [[entities/_index.md]]
+- [[entities/_index]]

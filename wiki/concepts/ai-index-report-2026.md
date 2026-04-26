@@ -100,8 +100,8 @@ sources: []
 
 ## See Also
 
-- [[concepts/_index.md]]
-- [[concepts/neurosymbolic-ai.md]]
-- [[concepts/headless-ai-services.md]]
-- [[concepts/ai-coding-reliability.md]]
-- [[concepts/ai-agent-memory-middleware.md]]
+- [[concepts/_index]]
+- [[neurosymbolic-ai]]
+- [[headless-ai-services]]
+- [[ai-coding-reliability]]
+- [[ai-agent-memory-middleware]]

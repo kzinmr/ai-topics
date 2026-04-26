@@ -137,7 +137,7 @@ A talk presenting his framework for systematic AI agent evaluation. The talk cov
 ## Related People
 
 - **[[charles-frye]]** — Former Weights & Biases colleague; both advocate for practical ML engineering education over hype
-- **[[entities/will-mcgugan.md]]** — Fellow Weights & Biases community figure; both interested in developer experience and tooling
+- **[[will-mcgugan]]** — Fellow Weights & Biases community figure; both interested in developer experience and tooling
 - **Weights & Biases** — Where Bischof built the data teams; central to modern ML experiment tracking
 - **Hex** — Where Bischof led AI engineering for analytics; pioneer in combining BI with AI
 - **Theory Ventures** — Current employer; early-stage VC fund focused on thesis-driven investments in emerging technologies

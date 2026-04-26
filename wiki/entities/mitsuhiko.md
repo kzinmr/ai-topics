@@ -125,12 +125,12 @@ In his most recent writing, Armin has been defending the irreplaceable value of 
 
 ## Related Concepts
 
-- [[Flask]] — His most famous creation, the Python microframework
-- [[Jinja2]] — Dominant Python template engine
-- [[Werkzeug]] — WSGI toolkit underlying most Python web frameworks
-- [[Pallets]] — The ecosystem of projects he maintains
+- [[flask]] — His most famous creation, the Python microframework
+- [[jinja2]] — Dominant Python template engine
+- [[werkzeug]] — WSGI toolkit underlying most Python web frameworks
+- [[pallets]] — The ecosystem of projects he maintains
 -  — Fast Python package installer, his latest systems tool
-- [[Polecats]] — AI agent orchestration framework with human oversight
+- [[polecats]] — AI agent orchestration framework with human oversight
 -  — His critique of AI-generated code
 -  — His work on fixing Python's toolchain
 -  — His perspective on maintainer burden

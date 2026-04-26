@@ -99,7 +99,7 @@ MacIverのClaude Code実践レポート（2026-04）：
 -  — AIエージェントによる自律的コード品質保証
 -  — 不変条件によるバグ発見
 - [[drmaciver]] — Hypothesis作者、Antithesis Senior Engineer
-- [[concepts/mismanaged-geniuses-hypothesis.md]] — Python PBTライブラリ
+- [[mismanaged-geniuses-hypothesis]] — Python PBTライブラリ
 -  — 言語横断PBTプロトコル
 
 ## Sources

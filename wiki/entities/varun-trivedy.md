@@ -159,7 +159,7 @@ In "How we build evals for Deep Agents" (Mar 2026, co-authored with Sydney Runkl
 - **[[philipp-schmid]]** — Both write about agent harnesses and evaluation; Schmid's "2026 will be around Agent Harnesses" post echoes Trivedy's framing
 - **** — Co-author on Deep Agents evals post; CEO of LangChain
 - **** — Co-author on multi-agent applications and Deep Agents blog posts at LangChain
-- **[[entities/florian-brand.md]]** — Complementary work on RL training infrastructure and benchmark evaluation
+- **[[florian-brand]]** — Complementary work on RL training infrastructure and benchmark evaluation
 
 ## X Activity Themes
 

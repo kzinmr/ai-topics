@@ -147,9 +147,9 @@ Marcusの結論:
 
 ## Related
 
-- [[Steven Pinker]] — PhD advisor at MIT; cognitive science
+- [[steven-pinker]] — PhD advisor at MIT; cognitive science
 -  — Co-founder of Robust.AI; robotics
-- [[Yann LeCun]] — Frequent debate partner on deep learning vs. symbolic AI
+- [[yann-lecun]] — Frequent debate partner on deep learning vs. symbolic AI
 -  — Marcus's primary research direction
 - [[ai-safety]] — Advocacy for regulation and transparent validation
 -  — His first AI startup (acquired by Uber)

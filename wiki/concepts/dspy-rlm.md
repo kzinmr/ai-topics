@@ -223,6 +223,6 @@ RLMの「外部化されたオブジェクト」は[Context Fragments](context-f
 
 ## See Also
 
-- [[concepts/_index.md]]
-- [[concepts/rlm-recursive-language-models.md]]
-- [[concepts/dspy.md]]
+- [[concepts/_index]]
+- [[rlm-recursive-language-models]]
+- [[dspy]]

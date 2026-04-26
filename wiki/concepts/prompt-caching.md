@@ -1,6 +1,6 @@
 ---
 title: "Prompt Caching Strategies"
-tags: [[caching, performance, cost-optimization]]
+tags: [[caching-performance-cost-optimization]]
 created: 2026-04-13
 updated: 2026-04-24
 ---

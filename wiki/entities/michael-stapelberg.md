@@ -98,7 +98,7 @@ Stapelberg has been running a blog since 2005 — over 20 years of documented te
 ## Related
 
 - [[nixos]] — Declarative, reproducible Linux distribution
-- [[concepts/long-context-coding-agents.md]] — AI-assisted development workflows
+- [[long-context-coding-agents]] — AI-assisted development workflows
 -  — Tiling window manager created by Stapelberg
 -  — X11 successor, now mature enough for Stapelberg's adoption
 -  — Another long-running free-software author and blogger

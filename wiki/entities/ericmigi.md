@@ -170,4 +170,4 @@ Migicovsky hosts **Tick Talk**, a podcast about smartwatch development and the P
 
 ## See Also
 
-- [[entities/_index.md]]
+- [[entities/_index]]

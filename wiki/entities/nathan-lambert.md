@@ -124,11 +124,11 @@ Lambert writes with a distinctive mix of technical rigor and personal candor. He
 - [[allen-institute-ai]] — Current employer, OLMo project
 -  — Previous employer, Zephyr and TRL work
 - [[rlhf]] — Core research area, book author
-- [[concepts/fine-tuning/rlhf-dpo-preference.md]] — Direct Preference Optimization, Zephyr
+- [[fine-tuning/rlhf-dpo-preference]] — Direct Preference Optimization, Zephyr
 - [[post-training]] — His primary research focus
 -  — Co-created reward model evaluation benchmark
 -  — Advocate for fully open AI development
-- [[concepts/fine-tuning/grpo-rl-training.md]] — Discussed extensively as part of the RLVR trend
+- [[fine-tuning/grpo-rl-training]] — Discussed extensively as part of the RLVR trend
 - [[simon-willison]] — Fellow open-source AI advocate
 -  — His newsletter and podcast
 -  — Open post-training model family he leads

@@ -92,7 +92,7 @@ OpenClawのスキル拡張は**ClawHub**を通じて配布される：
 ## 関連
 
 - [[openclaw]] — OpenClawコンセプト集約
-- [[concepts/openclaw/five-tier-precedence.md]] — スキル優先度モデル
+- [[openclaw/five-tier-precedence]] — スキル優先度モデル
 - [[peter-steinberger]] — 開発者
 -  — Model Context Protocol
 - [[nvidia-nemoclaw]] — NVIDIAエンタープライズ版

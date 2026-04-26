@@ -159,5 +159,5 @@ gm8xx8's HuggingFace upvote activity shows engagement with:
 
 ## See Also
 
-- [[entities/_index.md]]
-- [[entities/gm8xx8-com.md]]
+- [[entities/_index]]
+- [[gm8xx8-com]]

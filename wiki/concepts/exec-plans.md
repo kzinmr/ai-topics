@@ -1,6 +1,6 @@
 ---
 title: "Execution Plans"
-tags: [[agents, planning, orchestration]]
+tags: [[agents-planning-orchestration]]
 created: 2026-04-13
 updated: 2026-04-24
 ---
@@ -79,5 +79,5 @@ User Request → Agent generates Plan → Human reviews (optional) → Agent exe
 
 - [[agent-loop-orchestration]] — Agent Loop Orchestration
 - [[openai-symphony]] — OpenAI Symphony (WORKFLOW.md駆動)
-- [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop.md]] — Compound Engineering Loop
+- [[harness-engineering/agentic-workflows/compound-engineering-loop]] — Compound Engineering Loop
 - [[closing-agent-loop]] — Closing the Agent Loop

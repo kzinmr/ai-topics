@@ -31,13 +31,13 @@ related:
   - "[[harness-engineering]]"
   - "[[context-engineering]]"
   - "[[building-effective-agents]]"
-  - "[[concepts/harness-engineering/agentic-engineering.md]]"
+  - "[[harness-engineering/agentic-engineering]]"
   - "[[inference-speed-development]]"
   - "[[claude-code-source-patterns]]"
   - "[[context-window-management]]"
   - "[[ai-coding-reliability]]"
-  - "[[concepts/harness-engineering/agentic-workflows/using-git-with-agents.md]]"
-  - "[[concepts/harness-engineering/agentic-workflows/interactive-explanations.md]]"
+  - "[[harness-engineering/agentic-workflows/using-git-with-agents]]"
+  - "[[harness-engineering/agentic-workflows/interactive-explanations]]"
 ---
 
 # Claude Code Best Practices
@@ -354,7 +354,7 @@ Claude opens one session per PR and continues feeding updates (comments, CI fail
 4. **Run tests** — Verify nothing broke
 5. **Commit** — With descriptive message
 
-## Connection to [[concepts/harness-engineering/agentic-engineering.md]]
+## Connection to [[harness-engineering/agentic-engineering]]
 
 These best practices embody the agentic engineering philosophy:
 
@@ -371,7 +371,7 @@ These best practices embody the agentic engineering philosophy:
 - [[harness-engineering]] — 上位インデックス
 - [[context-engineering]] — コンテキストエンジニアリング
 - [[building-effective-agents]] — エージェント構築の基本原理
-- [[concepts/harness-engineering/agentic-workflows/using-git-with-agents.md]] — エージェントとのGit使用
+- [[harness-engineering/agentic-workflows/using-git-with-agents]] — エージェントとのGit使用
 - [[inference-speed-development]] — 高速イテレーション開発
 - [[claude-code-source-patterns]] — Claude Code内部パターン
 - [[context-window-management]] — コンテキスト管理

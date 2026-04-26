@@ -69,7 +69,7 @@ AIコーディングエージェントを使用する全ての開発者が直面
 - [[back-of-house-patterns]] — マルチエージェント・オーケストレーションの厨房メタファー
 - [[context-engineering]] — コンテキストエンジニアリング
 - [[harness-engineering]] — エンジニアのエージェント活用方法论
-- [[concepts/harness-engineering/agentic-workflows/subagents.md]] — サブエージェントの委任パターン
+- [[harness-engineering/agentic-workflows/subagents]] — サブエージェントの委任パターン
 
 ## ソース
 

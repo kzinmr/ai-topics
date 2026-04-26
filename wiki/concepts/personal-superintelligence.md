@@ -45,7 +45,7 @@ Personal Empowerment (Meta/OpenClaw/Local AI)
 | [[peter-steinberger]] | OpenClaw/Claudbot | ユーザーローカル | 「You own your agent」 |
 | [[shlok-khemani]] | OpenPoke/Vajra | Filesystem-first | 「Personality ≠ Execution」 |
 | [[george-hotz]] | tinygrad + local inference | フリー | 「All compute is equal」 |
-| [[entities/mario-zechner.md]] | pi coding agent | ローカル | 「Strip away the bloat」 |
+| [[mario-zechner]] | pi coding agent | ローカル | 「Strip away the bloat」 |
 | [[sero]] | Open Orchestra/Thrive | ローカル+分散 | 「Freedom Tech」 |
 
 ## 3つの哲学的分岐点
@@ -67,7 +67,7 @@ Zuckerbergの言う「knows us deeply」は、Metaのプラットフォーム上
 
 Metaは **Ray-Ban AI Glasses** を「primary computing device」と位置づける。2025年に700万台以上を販売、2026年には年間2000-3000万台の製造能力を目標とする。VisionClaw（Xiaoan Sean Liu）はRay-Ban Meta + Gemini Live API + OpenClawを組み合わせ、「what you see/hear」を理解するエージェントの実現を実証した。
 
-対照的に、ローカルAIコミュニティは **既存のハードウェア**（consumer GPU、Apple Silicon）上での実行を志向する。[[georgi-gerganov]] の llama.cpp、[[entities/mario-zechner.md]] の pi エージェントはいずれも「特別なデバイス」を必要としない。
+対照的に、ローカルAIコミュニティは **既存のハードウェア**（consumer GPU、Apple Silicon）上での実行を志向する。[[georgi-gerganov]] の llama.cpp、[[mario-zechner]] の pi エージェントはいずれも「特別なデバイス」を必要としない。
 
 ### ③ オープン vs クローズド — 「who controls the model?」
 
@@ -137,17 +137,17 @@ Personal Superintelligence
 - **[[peter-steinberger]]** — OpenAIでのpersonal agent開発
 - **[[shlok-khemani]]** — ファーストパーソンAIのアーキテクチャ
 - **[[sero]]** — Freedom Tech / ローカルインフラ
-- **[[entities/mario-zechner.md]]** — Minimal agent on consumer hardware
+- **[[mario-zechner]]** — Minimal agent on consumer hardware
 - **[[george-hotz]]** — Open source GPU driver / tinygrad
 
 ## 関連コンセプト
 
 - [[death-of-browser]] — ブラウザの脱人間化（エージェントがUIを操作）
 - [[anthropic-openclaw-conflict]] — プラットフォーム制御 vs オープンアクセス
-- [[open-claw-ecosystem]] — OpenClawとパーソナルAIエージェント運動
+- [[openclaw-ecosystem]] — OpenClawとパーソナルAIエージェント運動
 - [[meta-muse-spark]] — Muse Sparkモデル詳細
 - [[local-llm]] — ローカルLLM推論
-- [[concepts/harness-engineering/agentic-workflows/interactive-explanations.md]] — エージェント活用開発パターン
+- [[harness-engineering/agentic-workflows/interactive-explanations]] — エージェント活用開発パターン
 - [[cache-first-engineering]] — プロンプトキャッシュ最適化
 - [[ai-privacy-tools]] — AIエージェントのプライバシー課題
 
@@ -159,7 +159,7 @@ Personal Superintelligence
 - [[peter-steinberger]] — OpenClaw創設者
 - [[shlok-khemani]] — パーソナルAIメモリの研究者
 - [[sero]] — Freedom Tech / ローカルAIインフラ
-- [[entities/mario-zechner.md]] — ローカルLLMエンジニアリング
+- [[mario-zechner]] — ローカルLLMエンジニアリング
 - [[george-hotz]] — オープンソースAIハードウェア
 
 ## Sources

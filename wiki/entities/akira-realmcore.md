@@ -140,7 +140,7 @@ Random Labsが特定した現代のエージェントの3つの根本問題:
 
 ## Connection to Harness Engineering & Agentic Engineering
 
-AkiraのSlateは[[Harness Engineering]]の文脈で重要な位置を占める:
+AkiraのSlateは[[harness-engineering]]の文脈で重要な位置を占める:
 
 1. **Slate as a Meta-Harness**: Slate自体が大規模なharness — モデル間のルーティング、コンテキスト管理、権限制御を統合
 2. **Thread Weaving as Harness Pattern**: 各スレッドが独立したharnessインスタンスとして機能し、エピソードで結果を合成
@@ -149,17 +149,17 @@ AkiraのSlateは[[Harness Engineering]]の文脈で重要な位置を占める:
 
 > "Slate is not merely a wrapper or a chatbot with file access; it is an implementation of a 'hive mind' philosophy designed to scale agentic work with the complexity of a human organization."
 
-Slateは[[Agentic Engineering]]における「swarm orchestration」パラダイムの先駆的実装。DevinやCodexのような単一エージェントモデルから、複数モデルの並列協調への移行を体現している。
+Slateは[[agentic-engineering]]における「swarm orchestration」パラダイムの先駆的実装。DevinやCodexのような単一エージェントモデルから、複数モデルの並列協調への移行を体現している。
 
 ## Related People
 
 | Person | Relationship | Wiki Link |
 |---|---|---|
-| [[Kiran (Random Labs)]] | Random Labs co-founder | — |
+| [[kiran-random-labs]] | Random Labs co-founder | — |
 |  | Random Labs co-founder, CTO | — |
 | (@a1zhang) | RLM開発者。SlateはRLMを改良して適用 | [[alex-zhang]] |
-| [[Andrej Karpathy]] | LLM OS concept — SlateのOSアナロジーの源流 | [[andrej-karpathy]] |
-| [[Peter Steinberger]](@steipete) | OpenClaw開発者。並列エージェントアプローチで関連 | [[peter-steinberger]] |
+| [[andrej-karpathy]] | LLM OS concept — SlateのOSアナロジーの源流 | [[andrej-karpathy]] |
+| [[peter-steinberger]](@steipete) | OpenClaw開発者。並列エージェントアプローチで関連 | [[peter-steinberger]] |
 | [[nader-dabit]](@dabit3) | Cloud agents / agent fleet — 長時間実行エージェントの文脈で関連 | — |
 
 ## X Activity Themes

@@ -1,6 +1,6 @@
 ---
 title: "Self-Evolving Agents"
-tags: [[agents, self-improvement, learning]]
+tags: [[agents-self-improvement-learning]]
 created: 2026-04-13
 updated: 2026-04-24
 ---

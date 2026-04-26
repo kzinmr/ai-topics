@@ -1,6 +1,6 @@
 ---
 title: "Arize AI"
-tags: [[company, startup, arize, ai-observability, agent-monitoring, evals]]
+tags: [[company-startup-arize-ai-observability-agent-monitoring-evals]]
 created: 2026-04-20
 updated: 2026-04-24
 ---

@@ -10,14 +10,14 @@ updated: 2026-04-24
 **Date:** April 3, 2026
 **Updated:** April 13, 2026
 **Source:** Simon Willison's Weblog — "The cognitive impact of coding agents"
-**Author:** [[Simon Willison]] (simonw)
-**Related:** [[Agentic Engineering]], [[Vibe Coding]], [[Anthropic Managed Agents]], [[Agent Orchestration Frameworks]]
+**Author:** [[simon-willison]] (simonw)
+**Related:** [[agentic-engineering]], [[vibe-coding]], [[anthropic-managed-agents]], [[agent-orchestration-frameworks]]
 
 ---
 
 ## Overview
 
-In April 2026, [[Simon Willison]] published a deeply personal reflection after using Claude Code intensively for a full month. The post, "The cognitive impact of coding agents," challenged the prevailing narrative that AI coding agents **reduce developer workload**. Instead, Willison argued that agents fundamentally **shift** the cognitive load — from writing code to reviewing, directing, and debugging agent output — and that this shift carries hidden costs that the industry has not yet reckoned with.
+In April 2026, [[simon-willison]] published a deeply personal reflection after using Claude Code intensively for a full month. The post, "The cognitive impact of coding agents," challenged the prevailing narrative that AI coding agents **reduce developer workload**. Instead, Willison argued that agents fundamentally **shift** the cognitive load — from writing code to reviewing, directing, and debugging agent output — and that this shift carries hidden costs that the industry has not yet reckoned with.
 
 The central thesis: **AI doesn't reduce work; it intensifies it.** The nature of the work changes, but the mental energy required may actually increase.
 
@@ -93,10 +93,10 @@ The most significant risk Willison identified: developers may become **passive r
 
 ## Related Concepts
 
-- [[Agentic Engineering]] — Willison's broader framework for working with AI coding agents
-- [[Vibe Coding]] — The practice of building software through natural language prompts; cognitive cost is a counterpoint
-- [[Anthropic Managed Agents]] — Managed agent services raise the same cognitive ownership questions
-- [[Agent Orchestration Frameworks]] — Multi-agent systems amplify the cognitive debt problem
+- [[agentic-engineering]] — Willison's broader framework for working with AI coding agents
+- [[vibe-coding]] — The practice of building software through natural language prompts; cognitive cost is a counterpoint
+- [[anthropic-managed-agents]] — Managed agent services raise the same cognitive ownership questions
+- [[agent-orchestration-frameworks]] — Multi-agent systems amplify the cognitive debt problem
 -  — More powerful agents increase both productivity gains and cognitive risks
 
 ---

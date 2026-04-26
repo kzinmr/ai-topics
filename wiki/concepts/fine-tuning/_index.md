@@ -1,6 +1,6 @@
 ---
 title: "Fine-Tuning — Overview"
-tags: [[fine-tuning, post-training, overview]]
+tags: [[fine-tuning-post-training-overview]]
 created: 2026-04-19
 updated: 2026-04-19
 ---
@@ -24,20 +24,20 @@ Post-training techniques for adapting pre-trained language models to specific ta
 ## Sub-pages
 
 ### Training Methods
-- [[concepts/fine-tuning/peft-lora-qlora.md]] — Parameter-efficient fine-tuning (LoRA, QLoRA, adapters)
-- [[concepts/fine-tuning/grpo-rl-training.md]] — Group Relative Policy Optimization for reasoning and structured output
-- [[concepts/fine-tuning/rlhf-dpo-preference.md]] — RLHF, DPO, ORPO, KTO preference optimization methods
+- [[fine-tuning/peft-lora-qlora]] — Parameter-efficient fine-tuning (LoRA, QLoRA, adapters)
+- [[fine-tuning/grpo-rl-training]] — Group Relative Policy Optimization for reasoning and structured output
+- [[fine-tuning/rlhf-dpo-preference]] — RLHF, DPO, ORPO, KTO preference optimization methods
 
 ### Training Frameworks
-- [[concepts/fine-tuning/axolotl.md]] — YAML-config fine-tuning framework supporting 100+ models
-- [[concepts/fine-tuning/unsloth.md]] — 2-5x faster fine-tuning with 50-80% less memory
-- [[concepts/fine-tuning/trl.md]] — Transformer Reinforcement Learning library (HuggingFace)
-- [[concepts/fine-tuning/pytorch-fsdp.md]] — Fully Sharded Data Parallel for distributed training
+- [[fine-tuning/axolotl]] — YAML-config fine-tuning framework supporting 100+ models
+- [[fine-tuning/unsloth]] — 2-5x faster fine-tuning with 50-80% less memory
+- [[fine-tuning/trl]] — Transformer Reinforcement Learning library (HuggingFace)
+- [[fine-tuning/pytorch-fsdp]] — Fully Sharded Data Parallel for distributed training
 
 ### Infrastructure
-- [[concepts/fine-tuning/quantization-overview.md]] — Model quantization for efficient inference
-- [[concepts/inference/llama-cpp.md]] — CPU/Apple Silicon inference engine
-- [[concepts/inference/vllm.md]] — High-throughput GPU serving
+- [[fine-tuning/quantization-overview]] — Model quantization for efficient inference
+- [[inference/llama-cpp]] — CPU/Apple Silicon inference engine
+- [[inference/vllm]] — High-throughput GPU serving
 -  — Production model serving patterns
 
 ## The Fine-Tuning Pipeline

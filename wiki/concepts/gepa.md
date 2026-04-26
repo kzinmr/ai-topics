@@ -131,4 +131,4 @@ GEPAはOmar Khattabの研究スタックの中の1コンポーネント：
 - [[dspy]] — GEPAが統合された宣言的LMプログラミングフレームワーク
 - [[rlms]] — Khattabの別研究方向（推論時自己最適化）
 - [[llm-integration-patterns]] — GEPAを含むLLM統合パターンの分類表
-- [[concepts/harness-engineering/agentic-engineering.md]] — GEPA可用于 エージェントパイプラインの最適化
+- [[harness-engineering/agentic-engineering]] — GEPA可用于 エージェントパイプラインの最適化

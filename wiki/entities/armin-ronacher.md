@@ -148,7 +148,7 @@ Ronacher's technical philosophy — simplicity, developer-first design, and prag
 ## Related Concepts
 
 - [[ai-coding-agent-criticism]] — "The Center Has a Bias" thesis on engagement vs. abstract criticism
-- [[mario-zechner]] (Pi/libGDX), [[colin]] (Earendil co-founder), [[flask]], [[jinja2]], [[werkzeug]], [[sentry]], [[rust]], [[python-packaging]], , [[agentic-coding]], [[minijinja]], [[snapshot-testing]], [[entities/charles-frye.md]], [[earendil]], , , 
+- [[mario-zechner]] (Pi/libGDX), [[colin]] (Earendil co-founder), [[flask]], [[jinja2]], [[werkzeug]], [[sentry]], [[rust]], [[python-packaging]], , [[agentic-coding]], [[minijinja]], [[snapshot-testing]], [[charles-frye]], [[earendil]], , , 
 
 ## Sources
 

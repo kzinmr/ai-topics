@@ -166,12 +166,12 @@ The willingness to be wrong publicly is a core part of Dynomight's intellectual 
 
 ## Related
 
-- [[AI Safety]] — Dynomight's primary area of philosophical contribution
-- [[AI Alignment]] — The "wanting" problem as the central challenge
-- [[Consciousness]] — The "meta problem" and the limits of empirical investigation
-- [[Prediction Markets]] — Critique of futarchy and causal inference from market data
-- [[Eliezer Yudkowsky]] — Referenced on coordination problems and "sponge coordination"
-- [[Nick Bostrom]] — Referenced on the Vulnerable World Hypothesis
+- [[ai-safety]] — Dynomight's primary area of philosophical contribution
+- [[ai-alignment]] — The "wanting" problem as the central challenge
+- [[consciousness]] — The "meta problem" and the limits of empirical investigation
+- [[prediction-markets]] — Critique of futarchy and causal inference from market data
+- [[eliezer-yudkowsky]] — Referenced on coordination problems and "sponge coordination"
+- [[nick-bostrom]] — Referenced on the Vulnerable World Hypothesis
 -  — Referenced as endorsing the "wanting is hard" view
 -  — Referenced on AI motivation and understanding without caring
 -  — Referenced alongside Yudkowsky on coordination problems

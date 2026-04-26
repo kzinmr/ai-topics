@@ -69,5 +69,5 @@ sources: []
 
 ## See Also
 
-- [[concepts/_index.md]]
-- [[concepts/fine-tuning/pytorch-fsdp.md]]
+- [[concepts/_index]]
+- [[fine-tuning/pytorch-fsdp]]

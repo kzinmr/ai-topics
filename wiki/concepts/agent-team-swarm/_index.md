@@ -82,7 +82,7 @@ Centralized state store with **optimistic concurrency control** (e.g., Redis Lua
 
 - [[harness-engineering]] — 単一Agentの実行環境設計（基礎）
 - [[multi-agent-autonomy-scale]] — 256Agentスケールの自律協調研究
-- [[concepts/harness-engineering/agentic-engineering-patterns.md]] — Agentic Engineeringのパターン集
+- [[harness-engineering/agentic-engineering-patterns]] — Agentic Engineeringのパターン集
 - [[ryan-lopopolo]] — Symphonyの作者、Harness Engineering提唱者
 - [[agent-communication-protocols]] — MCP/A2A/ACP プロトコル比較
 - [[agentic-conflict-resolution]] — 複数Agent間の競合検出・解決

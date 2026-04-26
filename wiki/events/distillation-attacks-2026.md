@@ -48,7 +48,7 @@ The accusations were described as:
 
 - [[kimi-k2-6]] — Moonshot's latest release (April 2026)
 -  — DeepSeek's leading open model
-- [[concepts/local-llm/model-distillation.md]] — Technical background on distillation
+- [[local-llm/model-distillation]] — Technical background on distillation
 - [[open-model-consortium]] — Open model governance discussions
 
 ## References

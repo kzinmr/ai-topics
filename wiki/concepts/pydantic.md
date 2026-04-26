@@ -1,6 +1,6 @@
 ---
 title: "Pydantic — Data Validation Using Python Type Hints"
-tags: [[data-validation, python, type-hints, rust, web-frameworks, fastapi]]
+tags: [[data-validation-python-type-hints-rust-web-frameworks-fastapi]]
 created: 2026-04-16
 updated: 2026-04-24
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Structured Outputs — Reliable LLM Output via Schema Validation"
-tags: [[llm, output-formatting, json, pydantic, reliability, type-safety, function-calling]]
+tags: [[llm-output-formatting-json-pydantic-reliability-type-safety-function-calling]]
 created: 2026-04-15
 updated: 2026-04-24
 ---
@@ -77,4 +77,4 @@ OpenAI now offers native structured output via `response_format` parameter, guar
 -  — Grammar-constrained generation
 - [[jason-liu]] — Instructor creator
 - [[rahul]] — Guardrails AI / Jsonformer creator
-- [[entities/samuel-colvin.md]] — Pydantic creator
+- [[samuel-colvin]] — Pydantic creator

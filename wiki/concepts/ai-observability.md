@@ -1,6 +1,6 @@
 ---
 title: "AI Observability — Monitoring and Debugging LLM Applications"
-tags: [[observability, monitoring, tracing, opentelemetry, llm, agents, debugging]]
+tags: [[observability-monitoring-tracing-opentelemetry-llm-agents-debugging]]
 created: 2026-04-15
 updated: 2026-04-24
 ---

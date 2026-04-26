@@ -10,7 +10,7 @@ related:
   - [[gaia]]
   - [[yourbench]]
   - [[lighteval]]
-  - [[concepts/llm-evaluation-harness.md]]
+  - [[llm-evaluation-harness]]
   - [[bloom]]
   - [[zephyr]]
   - [[smollm2]]
@@ -241,16 +241,16 @@ Fourrier's work consistently emphasizes **openness, transparency, and reproducib
 
 ## Related
 
-- [[LightEval]] — Open-source LLM evaluation toolkit from Hugging Face
-- [[Open LLM Leaderboard]] — Community-standard ranking of open language models
-- [[GAIA Benchmark]] — Benchmark for General AI Assistants (Meta × Hugging Face × AutoGPT)
-- [[LLM Evaluation]] — Methodology for assessing language model capabilities
-- [[BLOOM]] — 176B-parameter open-access multilingual language model (BigScience)
-- [[Zephyr]] — 7B chat model via direct distillation of LM alignment
-- [[SmolLM2]] — State-of-the-art small language model (1.7B parameters)
+- [[lighteval]] — Open-source LLM evaluation toolkit from Hugging Face
+- [[open-llm-leaderboard]] — Community-standard ranking of open language models
+- [[gaia-benchmark]] — Benchmark for General AI Assistants (Meta × Hugging Face × AutoGPT)
+- [[llm-evaluation]] — Methodology for assessing language model capabilities
+- [[bloom]] — 176B-parameter open-access multilingual language model (BigScience)
+- [[zephyr]] — 7B chat model via direct distillation of LM alignment
+- [[smollm2]] — State-of-the-art small language model (1.7B parameters)
 -  — Standards for reliable, repeatable model evaluation
 -  — Environmental impact of model training and inference
-- [[Hugging Face]] — Open-source AI platform and community
+- [[hugging-face]] — Open-source AI platform and community
 -  — Using language models to evaluate other language models
 
 ---

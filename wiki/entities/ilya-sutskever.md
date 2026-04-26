@@ -170,11 +170,11 @@ This contrasts sharply with OpenAI's product-driven approach and Anthropic's dua
 
 ## Related
 
-- [[Geoffrey Hinton]] — PhD advisor; "Godfather of Deep Learning"
-- [[Alex Krizhevsky]] — AlexNet co-author
-- [[Sam Altman]] — OpenAI CEO; former colleague; board crisis adversary
-- [[Greg Brockman]] — OpenAI co-founder and President
-- [[John Schulman]] — OpenAI co-founder; RL researcher
+- [[geoffrey-hinton]] — PhD advisor; "Godfather of Deep Learning"
+- [[alex-krizhevsky]] — AlexNet co-author
+- [[sam-altman]] — OpenAI CEO; former colleague; board crisis adversary
+- [[greg-brockman]] — OpenAI co-founder and President
+- [[john-schulman]] — OpenAI co-founder; RL researcher
 -  — Co-founded superalignment team with Sutskever; resigned citing safety deprioritization
 - [[openai]] — Company Sutskever co-founded and led technically (2015–2024)
 -  — SSI, Sutskever's current venture

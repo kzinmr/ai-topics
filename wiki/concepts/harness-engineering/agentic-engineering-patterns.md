@@ -169,8 +169,8 @@ Simonはこのプロジェクトのために新しいコンテンツタイプ「
 
 ## See Also
 
-- [[concepts/_index.md]]
-- [[concepts/agentic-rag.md]]
-- [[concepts/chaos-engineering.md]]
-- [[concepts/memory-systems-design-patterns.md]]
-- [[concepts/meta-harness.md]]
+- [[harness-engineering]]
+- [[agentic-rag]]
+- [[chaos-engineering]]
+- [[memory-systems-design-patterns]]
+- [[meta-harness]]

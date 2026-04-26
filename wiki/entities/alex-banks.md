@@ -118,7 +118,7 @@ Despite working in AI, Banks consistently returns to the human element:
 -  — Platform where Banks teaches prompt engineering
 -  — AI analytics startup founded by Banks
 - [[anthropic]] — Frequent coverage subject; Banks is an early adopter of Claude Skills
-- [[concepts/resilient-prompt-engineering.md]] — Banks's core expertise area
+- [[resilient-prompt-engineering]] — Banks's core expertise area
 
 ## Sources
 

@@ -112,9 +112,9 @@ MCP excels for structured data access and real-time integrations, while CLIs are
 
 - [[cli-over-mcp-pattern]] — CLI Over MCP design principle
 - [[code-mode]] — Code Mode: LLM writes code instead of sequential tool calls
-- [[concepts/structured-outputs.md]] — Guaranteed JSON/XML/code structure during generation
-- [[concepts/harness-engineering/system-architecture/code-execution-with-mcp.md]] — Anthropic's Code Execution with MCP
-- [[concepts/harness-engineering/agentic-workflows/agent-first-design.md]] — Agent-First Codebase Design
+- [[structured-outputs]] — Guaranteed JSON/XML/code structure during generation
+- [[harness-engineering/system-architecture/code-execution-with-mcp]] — Anthropic's Code Execution with MCP
+- [[harness-engineering/agentic-workflows/agent-first-design]] — Agent-First Codebase Design
 
 ## Sources
 

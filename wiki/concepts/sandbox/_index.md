@@ -81,8 +81,8 @@ The **Anthropic × Bun acquisition** is strategically significant: Claude Code s
 ## Related Concepts
 
 - [[harness-engineering]] — Monty as a harness environment (Ryan Lopopolo)
-- [[concepts/harness-engineering/system-architecture/agent-security-patterns.md]] — OpenAI's Egress Proxy approach
+- [[harness-engineering/system-architecture/agent-security-patterns]] — OpenAI's Egress Proxy approach
 - [[deep-agents]] — Deep agents consume all sandbox layers
 - [[anthropic-managed-agents]] — Brain/Hands/Session separation architecture
 - [[jarred-sumner]] — Bun creator, joined Anthropic (Dec 2025)
-- [[entities/ryan-dahl.md]] — Node.js and Deno creator
+- [[ryan-dahl]] — Node.js and Deno creator

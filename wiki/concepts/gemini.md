@@ -164,4 +164,4 @@ Gemini's distinctive advantages:
 
 ## See Also
 
-- [[concepts/_index.md]]
+- [[concepts/_index]]

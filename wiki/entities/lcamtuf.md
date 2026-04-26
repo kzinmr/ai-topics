@@ -136,13 +136,13 @@ The Watchdog Timer safety mechanism in his Game of Life build — forcing a rebo
 
 ## Related Concepts
 
-- [[American Fuzzy Lop]] — His revolutionary coverage-guided fuzzing tool
-- [[Fuzzing]] — The broader field he transformed through AFL and ongoing research
-- [[Project Zero]] — Google's elite vulnerability research team where he worked
-- [[Threat Modeling]] — His approach to security as rational risk assessment
-- [[Browser Security]] — Subject of *The Tangled Web* and years of research
-- [[Passive Reconnaissance]] — Subject of *Silence on the Wire*
-- [[AI Vulnerability Discovery]] — Big Sleep project and LLM-based bug finding
+- [[american-fuzzy-lop]] — His revolutionary coverage-guided fuzzing tool
+- [[fuzzing]] — The broader field he transformed through AFL and ongoing research
+- [[project-zero]] — Google's elite vulnerability research team where he worked
+- [[threat-modeling]] — His approach to security as rational risk assessment
+- [[browser-security]] — Subject of *The Tangled Web* and years of research
+- [[passive-reconnaissance]] — Subject of *Silence on the Wire*
+- [[ai-vulnerability-discovery]] — Big Sleep project and LLM-based bug finding
 -  — His book on rational emergency preparedness
 -  — His approach to understanding systems from first principles
 -  — His stance on AI-generated content and creative authenticity

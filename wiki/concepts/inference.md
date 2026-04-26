@@ -19,9 +19,9 @@ sources:
   - "https://github.com/vllm-project/vllm"
   - "https://github.com/sgl-project/sglang"
 related:
-  - "[[concepts/inference/llama-cpp.md]]"
-  - "[[concepts/inference/vllm.md]]"
-  - "[[concepts/inference/sglang.md]]"
+  - "[[inference/llama-cpp]]"
+  - "[[inference/vllm]]"
+  - "[[inference/sglang]]"
   - "[[local-llm]]"
   - "[[inference-speed-development]]"
   - "[[gguf-quantization]]"
@@ -99,9 +99,9 @@ Georgi Gerganov:
 
 ## 関連概念
 
-- [[concepts/inference/llama-cpp.md]] — llama.cpp詳細
-- [[concepts/inference/vllm.md]] — vLLM詳細
-- [[concepts/inference/sglang.md]] — SGLang詳細
+- [[inference/llama-cpp]] — llama.cpp詳細
+- [[inference/vllm]] — vLLM詳細
+- [[inference/sglang]] — SGLang詳細
 - [[gguf-quantization]] — 量子化フォーマット
 - [[local-llm]] — ローカルLLMエコシステム
 - [[inference-speed-development]] — 推論速度最適化

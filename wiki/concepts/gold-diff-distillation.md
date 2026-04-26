@@ -69,5 +69,5 @@ Dwarkesh Patelの分析によれば：
 
 ## See Also
 
-- [[concepts/_index.md]]
-- [[concepts/local-llm/model-distillation.md]]
+- [[concepts/_index]]
+- [[local-llm/model-distillation]]

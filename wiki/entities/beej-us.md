@@ -167,11 +167,11 @@ His blog covers an eclectic range: technical tutorials, motorcycle brake rotor r
 
 ## Related
 
-- [[Network Programming]] — Socket APIs, TCP/IP, client/server architecture
-- [[C Programming]] — Low-level systems programming, pointers, memory management
-- [[Technical Writing]] — Pedagogical philosophy, progressive complexity, conversational tone
-- [[Free Software]] — Creative Commons licensing, public domain code, open education
-- [[Computer Science Education]] — Teaching problem-solving, mental models, meta-skills
+- [[network-programming]] — Socket APIs, TCP/IP, client/server architecture
+- [[c-programming]] — Low-level systems programming, pointers, memory management
+- [[technical-writing]] — Pedagogical philosophy, progressive complexity, conversational tone
+- [[free-software]] — Creative Commons licensing, public domain code, open education
+- [[computer-science-education]] — Teaching problem-solving, mental models, meta-skills
 -  — Version control mental models, not just commands
 -  — IPC, signals, shared memory, pipes
 -  — Game-based learning, Wizard's Castle projects

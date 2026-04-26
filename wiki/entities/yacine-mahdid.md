@@ -109,7 +109,7 @@ Mahdid's recent contributions to tscircuit/tscircuit-autorouter (open-source PCB
 - [[just-large-models]] — Minimal LLM implementations (44 stars)
 - [[scribepod]] — Automated AI podcast generation (174 stars)
 - [[llm.nvim]] — No-frills LLM-assisted programming (24 stars)
-- [[AI-Assisted Development]] — The broader category of tools Mahdid contributes to
+- [[ai-assisted-development]] — The broader category of tools Mahdid contributes to
 -  — tscircuit and dingcad projects
 -  — Mahdid's research background at McGill
 -  — The philosophy underlying talk and dingcad

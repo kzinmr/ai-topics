@@ -37,7 +37,7 @@ See also: [[personal-superintelligence]]
 
 ### Muse Spark
 
-Meta's April 2026 model announcement. Position: between [[claude-sonnet-4.6]] and [[claude-opus-4.6]] in capability. **Closed-source** API access, marking a departure from the LLaMA open-source tradition. Community commentary noted "rip LLaMA" — questioning Meta's commitment to open models.
+Meta's April 2026 model announcement. Position: between [[claude-sonnet-4.6]] and [[claude-opus-4-6]] in capability. **Closed-source** API access, marking a departure from the LLaMA open-source tradition. Community commentary noted "rip LLaMA" — questioning Meta's commitment to open models.
 
 The Muse Spark model powers Meta's personal agent features, including the Ray-Ban glasses AI and agentic commerce on Instagram/WhatsApp.
 
@@ -86,14 +86,14 @@ See also: [[open-source-vs-closed]]
 
 - [[personal-superintelligence]] — Meta's core AI philosophy
 - [[meta-muse-spark]] — Muse Spark model details
-- [[open-claw-ecosystem]] — Community personal agent framework
+- [[openclaw-ecosystem]] — Community personal agent framework
 - [[anthropic-openclaw-conflict]] — Platform control vs open access
-- [[concepts/inference/llama-cpp.md]]
+- [[inference/llama-cpp]]
 - [[anthropic]]
 - [[openai]]
-- [[entities/google-tpu.md]]
+- [[google-tpu]]
 - 
-- [[entities/mario-zechner.md]] — local AI engineering (contrasting approach)
+- [[mario-zechner]] — local AI engineering (contrasting approach)
 - [[shlok-khemani]] — filesystem-first personal AI (contrasting approach)
 
 ## Sources

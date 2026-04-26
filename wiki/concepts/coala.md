@@ -155,7 +155,7 @@ The **harness** is the engineering realization of CoALA's **decision procedure**
 
 - [[ungrounded-meaning]] — Why grounding requires external actions (theoretical justification for $\mathcal{A}_e$)
 - [[harness-engineering]] — Engineering practice for building agent controllers
-- [[concepts/harness-engineering/agentic-engineering.md]] — Software development techniques using AI agents
+- [[harness-engineering/agentic-engineering]] — Software development techniques using AI agents
 - [[shunyu-yao]] — CoALA co-author (ReAct, Reflexion, SWE-bench)
 
 ## Sources

@@ -175,11 +175,11 @@ Chris's interests span an unusually wide range:
 
 ## Related
 
-- [[Statistical Process Control]] — XmR charts, natural process limits, signal vs. noise
-- [[Queueing Theory]] — Response time as utilisation diagnostic
-- [[Bayesian Reasoning]] — Odds-form Bayes' rule, forecasting
-- [[Software Delivery]] — Tindall framework, handoff waste, toil
-- [[Haskell]] — Functional programming, Esqueleto, performance
+- [[statistical-process-control]] — XmR charts, natural process limits, signal vs. noise
+- [[queueing-theory]] — Response time as utilisation diagnostic
+- [[bayesian-reasoning]] — Odds-form Bayes' rule, forecasting
+- [[software-delivery]] — Tindall framework, handoff waste, toil
+- [[haskell]] — Functional programming, Esqueleto, performance
 -  — Org mode publishing, Magit, personal workflow
 -  — Statistical analysis of code generation benchmarks
 -  — CLT limitations, Cantelli bounds

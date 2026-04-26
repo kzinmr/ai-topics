@@ -119,9 +119,9 @@ Perhaps Dan's most influential meta-contribution is his willingness to change hi
 
 ## Related Concepts
 
-- [[entities/overreacted-io.md]] — His primary area of technical contribution
-- [[Redux]] — Co-created this state management library
-- [[AT Protocol]] — Subject of his "Social Filesystem" analysis
+- [[overreacted-io]] — His primary area of technical contribution
+- [[redux]] — Co-created this state management library
+- [[at-protocol]] — Subject of his "Social Filesystem" analysis
 -  — Interactive debugging over abstraction
 -  — His central teaching methodology
 -  — His argument against rigid naming conventions

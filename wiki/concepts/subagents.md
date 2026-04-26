@@ -17,7 +17,7 @@ updated: 2026-04-24
 sources:
   - "https://simonwillison.net/guides/agentic-engineering-patterns/subagents/"
 related:
-  - "[[concepts/harness-engineering/agentic-workflows/subagents.md]]"
+  - "[[harness-engineering/agentic-workflows/subagents]]"
   - "[[agentic-engineering]]"
   - "[[cognitive-debt]]"
   - "[[multi-agent-consensus-patterns]]"
@@ -58,11 +58,11 @@ delegate_task:
   max_iterations: 50
 ```
 
-詳細: [[concepts/harness-engineering/agentic-workflows/subagents.md]]
+詳細: [[harness-engineering/agentic-workflows/subagents]]
 
 ## 関連概念
 
-- [[concepts/harness-engineering/agentic-workflows/subagents.md]] — 詳細実装ガイド
+- [[harness-engineering/agentic-workflows/subagents]] — 詳細実装ガイド
 - [[agentic-engineering]] — 上位概念
 - [[cognitive-debt]] — サブエージェントの自己完結性は認知負債を減らす
 - [[harness-engineering]] — 環境設計哲学としての位置付け

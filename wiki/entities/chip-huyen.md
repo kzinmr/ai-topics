@@ -176,15 +176,15 @@ In a widely-discussed LinkedIn post (referenced in Lenny's Podcast), Huyen ident
 
 ## Related
 
-- [[MLOps]] — Machine Learning Operations, model deployment, monitoring, and lifecycle management
-- [[AI Engineering]] — The discipline of building applications with foundation models
-- [[Designing ML Systems]] — Framework for production-ready ML architecture
-- [[RAG Systems]] — Retrieval-Augmented Generation for knowledge-grounded AI
-- [[AI Agents]] — Autonomous systems with tools, planning, and reflection capabilities
-- [[AI Evaluation]] — Benchmarks, AI-as-a-judge, and systematic testing methodologies
-- [[Prompt Engineering]] — Treating prompts as an engineering discipline
-- [[Data Engineering for ML]] — Pipelines, labeling, weak supervision, and dataset curation
-- [[Stanford CS329S]] — Machine Learning Systems Design course
+- [[mlops]] — Machine Learning Operations, model deployment, monitoring, and lifecycle management
+- [[ai-engineering]] — The discipline of building applications with foundation models
+- [[designing-ml-systems]] — Framework for production-ready ML architecture
+- [[rag-systems]] — Retrieval-Augmented Generation for knowledge-grounded AI
+- [[ai-agents]] — Autonomous systems with tools, planning, and reflection capabilities
+- [[ai-evaluation]] — Benchmarks, AI-as-a-judge, and systematic testing methodologies
+- [[prompt-engineering]] — Treating prompts as an engineering discipline
+- [[data-engineering-for-ml]] — Pipelines, labeling, weak supervision, and dataset curation
+- [[stanford-cs329s]] — Machine Learning Systems Design course
 -  — Weak supervision and data labeling platform
 -  — ML framework for training and deploying AI models
 -  — Real-time ML production pipeline startup

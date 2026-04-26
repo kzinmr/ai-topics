@@ -66,4 +66,4 @@ Figma MakeはSonnet 4.5を使用——Same company now competing directly with t
 
 ## See Also
 
-- [[entities/_index.md]]
+- [[entities/_index]]

@@ -165,13 +165,13 @@ His teaching philosophy is **offensive-first**: understand how attacks work befo
 
 ## Related Concepts
 
-- [[Have I Been Pwned]] — His flagship service for breach notification
-- [[Data Breach]] — The central domain of his research and reporting
-- [[Privacy Ethics]] — His principled stance on universal privacy rights
-- [[Credential Stuffing]] — The threat vector behind massive breach data collections
-- [[Breach Disclosure]] — His framework for how organizations should respond to breaches
-- [[Developer Security]] — His educational mission through Pluralsight courses
-- [[GDPR]] — The legal framework informing his sensitive breach classification
+- [[have-i-been-pwned]] — His flagship service for breach notification
+- [[data-breach]] — The central domain of his research and reporting
+- [[privacy-ethics]] — His principled stance on universal privacy rights
+- [[credential-stuffing]] — The threat vector behind massive breach data collections
+- [[breach-disclosure]] — His framework for how organizations should respond to breaches
+- [[developer-security]] — His educational mission through Pluralsight courses
+- [[gdpr]] — The legal framework informing his sensitive breach classification
 -  — HIBP's password breach search service
 -  — His pragmatic approach to integrating autonomous tools
 -  — His operational philosophy of public accountability

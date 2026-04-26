@@ -1,6 +1,6 @@
 ---
 title: "Vajra — Open-Source Background Coding Agent"
-tags: [[background-agent, orchestration, linear, github, workflow-automation, graph-based]]
+tags: [[background-agent-orchestration-linear-github-workflow-automation-graph-based]]
 created: 2026-04-13
 updated: 2026-04-24
 ---
@@ -88,8 +88,8 @@ Vajra demonstrates that **background agents are production-ready** for well-scop
 
 ## See Also
 
-- [[concepts/_index.md]]
-- [[concepts/ai-agent-memory-middleware.md]]
-- [[concepts/single-agent-ceiling.md]]
-- [[concepts/ai-agent-memory-two-camps.md]]
-- [[concepts/agent-sandboxing.md]]
+- [[concepts/_index]]
+- [[ai-agent-memory-middleware]]
+- [[single-agent-ceiling]]
+- [[ai-agent-memory-two-camps]]
+- [[agent-sandboxing]]

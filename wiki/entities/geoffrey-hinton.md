@@ -183,11 +183,11 @@ Hinton has mentored many of the leading figures in modern AI:
 
 ## Related
 
-- [[Ilya Sutskever]] — PhD student; AlexNet co-author; OpenAI co-founder
-- [[John Hopfield]] — Nobel Prize co-recipient; Hopfield networks
-- [[Yoshua Bengio]] — Turing Award co-recipient; deep learning pioneer
-- [[Yann LeCun]] — Turing Award co-recipient; CNN pioneer
-- [[entities/google-tpu.md]] — Former employer (2013–2023)
+- [[ilya-sutskever]] — PhD student; AlexNet co-author; OpenAI co-founder
+- [[john-hopfield]] — Nobel Prize co-recipient; Hopfield networks
+- [[yoshua-bengio]] — Turing Award co-recipient; deep learning pioneer
+- [[yann-lecun]] — Turing Award co-recipient; CNN pioneer
+- [[google-tpu]] — Former employer (2013–2023)
 -  — Current affiliation
 -  — Hinton's foundational field
 -  — Hinton's most influential algorithm

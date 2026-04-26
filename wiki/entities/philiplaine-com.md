@@ -106,11 +106,11 @@ This frustration led him to build tooling and share practical solutions for cros
 
 ## Related
 
-- [[Spegel]] — Laine's P2P container image distribution project (1,700+ stars, 14.4M+ pulls)
-- [[Kubernetes]] — the platform Laine writes about and builds for
+- [[spegel]] — Laine's P2P container image distribution project (1,700+ stars, 14.4M+ pulls)
+- [[kubernetes]] — the platform Laine writes about and builds for
 -  — the corporate fork that sparked Laine's most widely-read post
 -  — shares Laine's commitment to publishing practical, rigorously-tested technical work
-- [[entities/bogdanthegeek-s-blog.md]] — another engineer who publishes project-based technical writing
+- [[bogdanthegeek-s-blog]] — another engineer who publishes project-based technical writing
 -  — Brian Potter's newsletter; both Laine and Potter write about the gap between theory and operational reality
 
 ## Sources

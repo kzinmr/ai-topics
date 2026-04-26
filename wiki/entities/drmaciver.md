@@ -252,7 +252,7 @@ His Substack "Overthinking Everything" is unified by a theme of **empirical curi
 - [[ai-evals]] — Foundational LLM evaluations using PBT methodology
 - [[ai-evals-people]] — drmaciver, shreya-shankar, hamel-husain collaborate on eval frameworks
 - [[harness-engineering]] — Hegel as a test harness for multi-language PBT
-- [[concepts/agentic-engineering.md]] — AI-assisted coding with rigorous review practices
+- [[agentic-engineering]] — AI-assisted coding with rigorous review practices
 - [[software-correctness]] — 100% coverage mandate, invariant testing
 -  — Shrinkray and minimizing failing examples
 -  — Current work at Antithesis

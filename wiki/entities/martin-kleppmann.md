@@ -152,6 +152,6 @@ CRDTs の未解決問題（全キーストローク保存 → メモリ劣化）
 
 ## See Also
 
-- [[entities/_index.md]]
-- [[entities/lance-martin.md]]
-- [[entities/martin-alderson.md]]
+- [[entities/_index]]
+- [[lance-martin]]
+- [[martin-alderson]]

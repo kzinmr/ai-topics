@@ -205,10 +205,10 @@ The 2023 board crisis revealed deep tensions between safety-focused board member
 
 ## Related
 
-- [[Greg Brockman]] — OpenAI co-founder and President
-- [[Ilya Sutskever]] — OpenAI co-founder; former Chief Scientist
-- [[John Schulman]] — OpenAI co-founder; RL researcher
-- [[Dario Amodei]] — Anthropic CEO; competitor
+- [[greg-brockman]] — OpenAI co-founder and President
+- [[ilya-sutskever]] — OpenAI co-founder; former Chief Scientist
+- [[john-schulman]] — OpenAI co-founder; RL researcher
+- [[dario-amodei]] — Anthropic CEO; competitor
 - [[openai]] — Company Altman leads
 -  — Altman's proof-of-personhood project
 -  — Altman's stated long-term goal

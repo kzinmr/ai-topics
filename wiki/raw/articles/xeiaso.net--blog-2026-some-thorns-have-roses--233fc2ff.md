@@ -1,0 +1,77 @@
+---
+title: "Some Thorns Have Roses"
+url: "https://xeiaso.net/blog/2026/some-thorns-have-roses/"
+fetched_at: 2026-04-25T12:08:15.026707+00:00
+source: "xeiaso.net"
+tags: [blog, raw]
+---
+
+# Some Thorns Have Roses
+
+Source: https://xeiaso.net/blog/2026/some-thorns-have-roses/
+
+Some Thorns Have Roses
+Published on
+2026-03-08
+, 1051 words, 4 minutes to read
+Recovery gave me things I didn't ask for and I'm not ready to give them back.
+Nobody warns you about the part where you don't want recovery to end.
+I've been turning this over for days, not sure I'm allowed to say it out loud. You spend weeks dreading surgery, you
+survive it
+, and then somewhere between the catheter bag and the third box of hospital tissues you catch yourself thinking:
+oh. I'm going to miss this.
+Not the pain or the catheter. The thing underneath, the thing you only found because everything else got stripped away.
+Cadey
+Before anyone says it: yes, I know how this sounds. "Privileged tech worker
+romanticizes her hospital stay." Stay with me.
+Writing this down before the rawness fades feels urgent. Like if I wait too long I'll forget what it felt like to be this open.
+Kainé at zero defenses
+Emi Evans sings the
+Kainé
+theme from NieR in a language that doesn't exist, mourning something you can't name. I've always loved that track. The kind of ache that sits between your ribs for a minute after the song ends.
+Recovery broke that wide open. With my hormones bottomed out and nothing between me and the world, Kainé didn't hit me. It went
+through
+me. I cried for twenty minutes, full ugly cry, in the hospital bed at like 2 PM on a Tuesday, and I didn't try to stop because stopping wasn't a concept anymore.
+And I didn't hate it? It felt
+alive
+. Notes had texture I'd never noticed before, and the silences between them felt heavy, physical. I don't think I'll hear music like that again because the filters will come back. They have to. But for those weeks, the NieR OST became something I don't have vocabulary for, and the whole room was the song.
+I will miss hearing music like that. I already do.
+The catheter gave me permission to rest
+Aoi
+That is an
+extremely
+cursed sentence.
+Look, I know. But hear me out.
+Having a catheter bag means your body is in a state where nobody expects anything from you. Not your open source projects, not the invisible productivity ledger that follows you everywhere. You can't do anything, so you don't have to do anything, so you can actually
+rest
+.
+Most people never get that. Even on vacation there's ambient guilt about productivity, some undercurrent of "I should be making the most of this." Recovery obliterated that entirely. I sat and watched the light change in my hospital room for an entire afternoon and felt
+nothing
+about it except the light.
+It says something pretty damning about how I normally live that it took major surgery to give myself permission to sit still.
+Slowness as connection
+You can't rush someone who can't walk to the bathroom alone. So the people around you slow down too, and in that enforced pace something opens up.
+One afternoon my husband and I sat in the hospital room for maybe two hours without saying much. He was reading something on his phone. I was watching the IV drip. Normally that silence would've made me anxious, like I should be filling it or at least being interesting. Instead I just noticed the weight of his hand on mine, not reaching for anything, just resting there. That was enough. More than enough.
+A lot of those days were terrible. But the connection that grew inside the constraint felt different from anything we'd have found if we'd both been busy and performing togetherness on a schedule.
+What I'm actually afraid of
+Underneath all of this: I don't know who I'll be in six months.
+The version of me who cried to Kainé for twenty minutes might not survive the return to normal. The hormones will restabilize. My emotional filters will slide back into place. The world will become manageable again, comfortable, and I'll stop noticing silence the way I notice it now.
+Hormones are emotional armor. I get that now. They're protective, and I'll probably be grateful when they come back. But they decide what gets through and you don't get to choose. When the armor was gone, everything got through. Devastating and the most alive I've ever felt, at the same time, in the same body. I refuse to pick one.
+Attention
+Early recovery was survival. Counting hours and counting doses, shuffling to the bathroom, your body a problem to be managed. The goal is getting to tomorrow.
+At some point the posture changed. I can't tell you when. I ran out of resistance before recovery ran out of days, and what was left once I stopped fighting was attention.
+When you run out of fight, you start noticing things. How light looks different when you've been in the same room for a week. What the first real food tastes like after days of clear liquids. Walking twenty feet when last week you couldn't stand. These are the actual texture of being alive. I'd been moving too fast to feel any of them.
+Cadey
+A lot of recovery was awful. This is the part that wasn't. Both things
+happened at the same time and I'm done trying to resolve them into a
+single narrative.
+What you keep
+The rawness will fade. The hormones will come back. Music will become something I enjoy rather than something that unmakes me.
+But the practice transfers. Looking for what's actually here inside what's hard. You don't need surgical recovery to ask yourself where you're enduring instead of living.
+I used to think strength meant pushing through. Getting to the other side. In that hospital bed, falling apart to NieR at 2 PM, not trying to hold myself together, I found something else. I don't have a clean word for it. Willingness, maybe. To be present for my own life when it hurts.
+How much of that survives the return to normal, I don't know. I wanted to write it down while I still could.
+I went into recovery dreading it. I'm coming out of it slow, and grateful, and a little heartbroken that it's ending. A month ago I would've thought that was insane. I don't anymore.
+Some thorns have roses.
+Share
+Facts and circumstances may have changed since publication. Please contact me before jumping to conclusions if something seems wrong or unclear.
+Tags:

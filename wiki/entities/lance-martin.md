@@ -115,7 +115,7 @@ Martin has deep expertise in **Retrieval-Augmented Generation**, having authored
 - [[andrej-karpathy]] — Frequently cited by Martin for framing LLMs as operating systems and emphasizing context engineering
 - [[nader-dabit]] — Overlapping interests in cloud agent architecture and developer tooling evolution
 -  — Martin references Simon's analysis of memory failures in LLM applications
-- [[entities/drew-breunig.md]] — Cited for work on context failure modes and how they degrade agent performance
+- [[drew-breunig]] — Cited for work on context failure modes and how they degrade agent performance
 - **Hyung Won Chung** — Referenced by Martin for the original "Bitter Lesson" thinking applied to AI engineering
 - **Sylvain Gugger (sgugger)** — LangChain colleague; collaborated on documentation and framework development
 - **Jacob Lee (jacoblee93)** — LangChain colleague; merged Martin's RAG conceptual guide PR

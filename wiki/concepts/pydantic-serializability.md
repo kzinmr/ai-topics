@@ -1,6 +1,6 @@
 ---
 title: "Pydantic Serializability"
-tags: [[serialization, structured-output, schema-generation, python, pydantic]]
+tags: [[serialization-structured-output-schema-generation-python-pydantic]]
 created: 2026-04-15
 updated: 2026-04-24
 ---
@@ -40,6 +40,6 @@ print(result.data)  # UserProfile(name='Alex', age=30, interests=['coding', 'rea
 
 ## Related
 
-- [[entities/samuel-colvin.md]] — Creator
+- [[samuel-colvin]] — Creator
 - [[pydantic-ai]] — Framework
-- [[concepts/structured-outputs.md]] — Pattern
+- [[structured-outputs]] — Pattern

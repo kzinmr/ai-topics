@@ -1,6 +1,6 @@
 ---
 title: "Evals Skills for Coding Agents"
-tags: [[evaluation, coding-agents, mcp, automation, harness-engineering]]
+tags: [[evaluation-coding-agents-mcp-automation-harness-engineering]]
 created: 2026-04-12
 updated: 2026-04-24
 ---

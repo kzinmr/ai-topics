@@ -126,16 +126,16 @@ agent = SandboxAgent(
 
 - [[harness-engineering]] — Ryan Lopopolo / OpenAI Symphony orchestration philosophy
 - [[sandbox]] — AI agent sandbox isolation technologies
-- [[concepts/harness-engineering/system-architecture/infrastructure-noise.md]] — Container, microVM, gVisor-level isolation
+- [[harness-engineering/system-architecture/infrastructure-noise]] — Container, microVM, gVisor-level isolation
 - [[agent-skills]] — SKILL.md bundles
-- [[concepts/harness-engineering/agentic-workflows/how-agents-work.md]] — Coding agent architecture
+- [[harness-engineering/agentic-workflows/how-agents-work]] — Coding agent architecture
 
 ## Entity Connections
 
 - [[openai]] — Developer
-- [[entities/samuel-colvin.md]] — Monty (in-process sandbox) developer
+- [[samuel-colvin]] — Monty (in-process sandbox) developer
 - [[anthropic]] — Competitor (Managed Agents, Computer Use)
-- [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition.md]] — Competitor (Devin)
+- [[harness-engineering/system-architecture/anthropic-memory-tool-cognition]] — Competitor (Devin)
 
 ## Sources
 

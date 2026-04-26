@@ -1,6 +1,6 @@
 ---
 title: "Serializability — Structured Output for AI Systems"
-tags: [[serialization, llm, structured-output, ai-engineering]]
+tags: [[serialization-llm-structured-output-ai-engineering]]
 created: 2026-04-15
 updated: 2026-04-24
 ---
@@ -37,6 +37,6 @@ Pydantic provides:
 ## Related
 
 - [[pydantic-serializability]] — Pydantic's implementation
-- [[concepts/structured-outputs.md]] — General pattern
-- [[entities/samuel-colvin.md]] — Serializability pioneer
+- [[structured-outputs]] — General pattern
+- [[samuel-colvin]] — Serializability pioneer
 - [[pydantic-ai]] — Framework integration

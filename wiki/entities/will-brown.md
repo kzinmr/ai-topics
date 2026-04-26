@@ -157,7 +157,7 @@ A comprehensive learning roadmap for generative AI, covering everything from bas
 
 ## Related
 
-- [[concepts/fine-tuning/grpo-rl-training.md]] — Group Relative Policy Optimization, the technique Brown popularized for open-source reasoning model training
+- [[fine-tuning/grpo-rl-training]] — Group Relative Policy Optimization, the technique Brown popularized for open-source reasoning model training
 - [[rlhf]] — Reinforcement Learning from Human Feedback, the broader alignment paradigm
 - [[reasoning-models]] — Models with extended reasoning capabilities, Brown's primary research focus
 -  — Agent execution frameworks that verifiers supports

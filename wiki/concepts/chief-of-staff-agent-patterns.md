@@ -1,6 +1,6 @@
 ---
 title: "Chief of Staff Agent Patterns"
-tags: [[claude-agent-sdk, orchestration, hooks, subagents, plan-mode, output-styles]]
+tags: [[claude-agent-sdk-orchestration-hooks-subagents-plan-mode-output-styles]]
 created: 2026-04-24
 updated: 2026-04-24
 ---

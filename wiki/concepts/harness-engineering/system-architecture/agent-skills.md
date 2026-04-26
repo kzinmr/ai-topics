@@ -19,7 +19,7 @@ sources:
 related:
   - " — AIスキル（汎用概念）"
   - "[[harness-engineering]] — ハーネスエンジニアリング"
-  - "[[container-context]] — コンテナコンテキスト"
+  - "[[harness-engineering/system-architecture/container-context]] — コンテナコンテキスト"
 ---
 
 # Agent Skills (SKILL.md bundles)
@@ -104,7 +104,7 @@ skilled_container = client.containers.create(
 ## 関連概念
 
 - [[harness-engineering]] — OpenAIのツール拡張アプローチ
-- [[container-context]] — スキルが展開される実行環境
+- [[harness-engineering/system-architecture/container-context]] — スキルが展開される実行環境
 - [[agent-loop-orchestration]] — スキル探索と実行のループ
 -  — AIスキルの汎用概念
 

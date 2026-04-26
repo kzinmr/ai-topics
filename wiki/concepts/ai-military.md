@@ -1,6 +1,6 @@
 ---
 title: "AI in Military Wargames"
-tags: [[ai-safety, military, governance, claude]]
+tags: [[ai-safety-military-governance-claude]]
 created: 2026-04-24
 updated: 2026-04-24
 ---

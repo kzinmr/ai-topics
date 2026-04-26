@@ -120,12 +120,12 @@ Spike's "spikisms" are aphoristic technical insights that blend computational th
 
 ## Related Wikilinks
 
-- [[ML Systems]] — Spike's domain of expertise: building minimal, interpretable ML stacks
-- [[Transformer Architecture]] — The "attention is logarithmic" analysis of attention complexity
-- [[Tinygrad]] — The ML inference engine used in BrainChop
-- [[BrainChop]] — His portable brain segmentation tool
-- [[Work-Depth Analysis]] — The computational complexity model Spike advocates for parallel systems
-- [[Software Minimalism]] — The philosophical commitment to small, readable code
+- [[ml-systems]] — Spike's domain of expertise: building minimal, interpretable ML stacks
+- [[transformer-architecture]] — The "attention is logarithmic" analysis of attention complexity
+- [[tinygrad]] — The ML inference engine used in BrainChop
+- [[brainchop]] — His portable brain segmentation tool
+- [[work-depth-analysis]] — The computational complexity model Spike advocates for parallel systems
+- [[software-minimalism]] — The philosophical commitment to small, readable code
 -  — His llm.nvim project and views on AI in programming
 -  — The instruction set architecture used in the 100K line ML stack proposal
 -  — The concept of systems that can build themselves

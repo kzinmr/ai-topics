@@ -287,7 +287,7 @@ This repo serves as a **reference implementation** for agentic engineering patte
 - 
 - [[ryan-lopopolo]]
 - [[simon-willison]]
-- [[concepts/karpathy.md]]
+- [[karpathy]]
 
 ## Sources
 

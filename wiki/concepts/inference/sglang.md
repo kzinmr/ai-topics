@@ -6,7 +6,7 @@ updated: 2026-04-15
 status: skeleton
 tags: [inference, serving, structured-generation, sglang, lmsys, pytorch]
 aliases: ["sglang-serving", "radix-attention", "xgrammar"]
-related: [[concepts/inference/vllm.md]], [[concepts/inference/llama-cpp.md]], [[concepts/structured-outputs.md]], [[inference-speed-development]]
+related: [[inference/vllm]], [[inference/llama-cpp]], [[structured-outputs]], [[inference-speed-development]]
 sources:
   - url: "https://github.com/sgl-project/sglang"
     author: "LMSYS Org"
@@ -108,8 +108,8 @@ docker run --gpus all -p 30000:30000 lmsysorg/sglang:latest \
 
 ## Related wikilinks
 
-- [[concepts/inference/vllm.md]] — vLLM high-throughput serving (PagedAttention)
-- [[concepts/inference/llama-cpp.md]] — llama.cpp CPU/Apple Silicon inference
-- [[concepts/structured-outputs.md]] — Structured output patterns
+- [[inference/vllm]] — vLLM high-throughput serving (PagedAttention)
+- [[inference/llama-cpp]] — llama.cpp CPU/Apple Silicon inference
+- [[structured-outputs]] — Structured output patterns
 - [[inference-speed-development]] — Inference speed optimization
 - [[local-llm]] — Local LLM ecosystem overview

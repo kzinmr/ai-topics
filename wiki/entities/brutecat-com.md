@@ -82,7 +82,7 @@ Brutecat builds tools that are **purpose-built for a specific attack surface** r
 - [[reverse-engineering]] — Binary and protocol analysis of undocumented systems
 - [[bug-bounty]] — Coordinated vulnerability disclosure and responsible exploitation
 -  — Open-source intelligence gathering techniques
-- [[entities/google-tpu.md]] — Platform under research
+- [[google-tpu]] — Platform under research
 -  — Google's internal data serialization format
 -  — Layered security architecture and its failure modes
 

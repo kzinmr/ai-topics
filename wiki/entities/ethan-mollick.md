@@ -159,7 +159,7 @@ Mollick consistently raises questions about the ethical implications of AI in wo
 - [[centaurs-and-cyborgs]] — Two models of human-AI integration he identified
 -  — The new paradigm of autonomous AI systems he analyzes
 - [[ai-education]] — His work on AI-augmented teaching and learning
-- [[concepts/resilient-prompt-engineering.md]] — The skill of effectively directing AI systems
+- [[resilient-prompt-engineering]] — The skill of effectively directing AI systems
 -  — His educational simulation platform
 -  — Named one of TIME's Most Influential People in AI
 -  — Shortlisted for Digital Thinking Award

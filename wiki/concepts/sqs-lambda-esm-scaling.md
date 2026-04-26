@@ -65,8 +65,8 @@ ESMは設定された最大並列数を超えて呼び出すことがある。La
 
 ## See Also
 
-- [[concepts/_index.md]]
-- [[concepts/ecs-fargate-scaling.md]]
-- [[concepts/scaling-without-slop.md]]
-- [[concepts/lambda-monolith-lambdalith.md]]
-- [[concepts/compute-scaling-bottlenecks.md]]
+- [[concepts/_index]]
+- [[ecs-fargate-scaling]]
+- [[scaling-without-slop]]
+- [[lambda-monolith-lambdalith]]
+- [[compute-scaling-bottlenecks]]

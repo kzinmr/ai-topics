@@ -530,9 +530,9 @@ Future coding will resemble resource management games — setting up systems, de
 - [[eureka-labs]] — AI-native education company he founded
 - [[software-2.0]] — His seminal essay on neural networks as programs
 - [[vibe-coding]] — Term he coined for AI-assisted software development
-- [[concepts/agentic-engineering.md]] — Term he coined for managing multiple AI agents in parallel
+- [[agentic-engineering]] — Term he coined for managing multiple AI agents in parallel
 - [[micrograd]] — His educational autograd engine
-- [[nanoGPT]] — Minimal GPT implementation for education
+- [[nanogpt]] — Minimal GPT implementation for education
 - [[cs231n]] — His Stanford computer vision course
 - [[openai]] — Co-founded in 2015
 - [[tesla-autopilot]] — Led AI team from 2017-2022
@@ -540,4 +540,4 @@ Future coding will resemble resource management games — setting up systems, de
 -  — PhD research area
 - [[simon-willison]] — Fellow AI educator and blogger
 -  — Teaching LLMs from first principles
-- [[concepts/decoder-only-gpt.md]] — Complete GPT architecture explanation from microgpt
+- [[decoder-only-gpt]] — Complete GPT architecture explanation from microgpt

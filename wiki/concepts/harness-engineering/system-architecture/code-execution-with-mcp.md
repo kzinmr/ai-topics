@@ -117,6 +117,6 @@ await salesforce.updateRecord({
 ## 関連概念
 
 - [[harness-engineering]] — 上位インデックス
-- [[advanced-tool-use]] — 高度なツール使用（PTCと関連）
-- [[writing-tools-for-agents]] — エージェント用ツール設計
-- [[concepts/harness-engineering/system-architecture/building-effective-agents.md]] — エージェント構築の基本原理
+- [[harness-engineering/system-architecture/advanced-tool-use]] — 高度なツール使用（PTCと関連）
+- [[harness-engineering/system-architecture/writing-tools-for-agents]] — エージェント用ツール設計
+- [[harness-engineering/system-architecture/building-effective-agents]] — エージェント構築の基本原理

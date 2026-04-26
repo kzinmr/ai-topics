@@ -13,7 +13,7 @@ description: "Karpathy (Andrej Karpathy) — AI researcher, educator, and OpenAI
 created: 2026-04-09
 updated: 2026-04-24
 related:
-  - "[[entities/andrej-karpathy.md]]"
+  - "[[andrej-karpathy]]"
 sources:
   - "https://karpathy.github.io/"
   - "https://x.com/karpathy"
@@ -21,9 +21,9 @@ sources:
 
 # Karpathy (Andrej Karpathy)
 
-> **Moved:** エンティティページは [[entities/andrej-karpathy.md]] にあります。
+> **Moved:** エンティティページは [[andrej-karpathy]] にあります。
 
 Andrej KarpathyはAI研究者、教育家。OpenAIの創設メンバーの一人。
 Context Engineering、Loopy Era、RL Agentsなどの概念で知られる。
 
-詳細: [[entities/andrej-karpathy.md]]
+詳細: [[andrej-karpathy]]

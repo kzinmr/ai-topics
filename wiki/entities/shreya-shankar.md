@@ -193,7 +193,7 @@ Her research has been adopted by **OpenAI and Anthropic teams** for their evalua
 -  — Foundational practice
 - [[harness-engineering]] — Connected philosophy
 - [[eval-tools-comparison]] — Tool selection framework
-- [[concepts/critique-shadowing.md]] — Husain's methodology (complementary)
+- [[critique-shadowing]] — Husain's methodology (complementary)
 - [[drmaciver]] — Property-based testing applied to LLM evaluation (`foundational-llm-evals`); PBT methodology for eval design
 
 ## Sources

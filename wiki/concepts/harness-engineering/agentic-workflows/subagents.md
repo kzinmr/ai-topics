@@ -143,7 +143,7 @@ delegate_task:
 
 - [[agentic-engineering]] — 上位概念
 - [[context-window-management]] — サブエージェントはコンテキスト問題を回避する手段
-- [[concepts/harness-engineering/agentic-workflows/cognitive-debt.md]] — サブエージェントの自己完結性は認知負債を減らす
+- [[harness-engineering/agentic-workflows/cognitive-debt]] — サブエージェントの自己完結性は認知負債を減らす
 - [[multi-agent-autonomy-scale]] — サブエージェントは自律性の中間レベル
 
 ## 参照

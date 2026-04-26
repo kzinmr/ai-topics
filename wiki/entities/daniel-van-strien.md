@@ -139,7 +139,7 @@ Daniel's X activity (@vanstriendaniel) centers on:
 
 ## See Also
 
-- [[entities/_index.md]]
-- [[entities/daniel-de-laney.md]]
-- [[entities/rehan-van-der-merwe.md]]
-- [[entities/daniel-han.md]]
+- [[entities/_index]]
+- [[daniel-de-laney]]
+- [[rehan-van-der-merwe]]
+- [[daniel-han]]

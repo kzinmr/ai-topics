@@ -84,6 +84,6 @@ sources:
 ## 関連概念
 
 - [[harness-engineering]] — 上位インデックス
-- [[comparisons/evals-skills.md]] — 評価スキル
+- [[comparisons/evals-skills]] — 評価スキル
 - [[harness-design-long-running-apps]] — ハーネス設計
 - [[ai-evals]] — AI評価の概念

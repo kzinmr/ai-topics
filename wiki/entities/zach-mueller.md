@@ -110,7 +110,7 @@ Mueller's Accelerate work underpins training infrastructure used by thousands of
 ## Related People
 
 - [[tom-aarsen]] -- Both Hugging Face engineers working on core ML infrastructure; Tom focuses on embeddings while Zach focuses on training
-- [[entities/hamel-husain.md]] -- Open-source ML tooling advocate; shared community in Hugging Face ecosystem
+- [[hamel-husain]] -- Open-source ML tooling advocate; shared community in Hugging Face ecosystem
 - **Marc Sun** -- Hugging Face Transformers team; collaborated on gradient accumulation reproducibility fixes
 - **Yoach Lacombe** -- Hugging Face Transformers team; collaborated on gradient accumulation reproducibility fixes
 - **Sylvain Gugger (sgugger)** -- Co-creator of Accelerate; Mueller works closely with him on the library

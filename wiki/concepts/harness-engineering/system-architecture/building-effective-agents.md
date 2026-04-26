@@ -91,4 +91,4 @@ command → plan → tool call → environment feedback → iterate → result
 
 - [[harness-engineering]] — 上位インデックス
 - [[context-engineering]] — コンテキスト管理
-- [[concepts/harness-engineering/system-architecture/evals-for-ai-agents.md]] — エージェント評価
+- [[harness-engineering/system-architecture/evals-for-ai-agents]] — エージェント評価

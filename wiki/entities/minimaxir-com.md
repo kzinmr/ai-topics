@@ -9,7 +9,7 @@ updated: 2026-04-24
 
 ## Overview
 
-**Max Woolf** (@minimaxir) is a data scientist, open-source developer, and technical blogger based in San Francisco. He is a Senior Data Scientist at [[BuzzFeed]], where he has applied machine learning to creative projects including StyleGAN-generated "fake boyfriends" and AI-powered art quizzes. He is also a prolific open-source contributor and the author of several widely-used Python and R libraries, most notably **textgenrnn** (neural text generation) and **big-list-of-naughty-strings** (edge-case testing data).
+**Max Woolf** (@minimaxir) is a data scientist, open-source developer, and technical blogger based in San Francisco. He is a Senior Data Scientist at [[buzzfeed]], where he has applied machine learning to creative projects including StyleGAN-generated "fake boyfriends" and AI-powered art quizzes. He is also a prolific open-source contributor and the author of several widely-used Python and R libraries, most notably **textgenrnn** (neural text generation) and **big-list-of-naughty-strings** (edge-case testing data).
 
 Woolf's blog at minimaxir.com is characterized by **data-driven skepticism, empirical benchmarking, and a willingness to challenge industry narratives with hard numbers**. He approaches every claim — whether about AI capabilities, library performance, or platform policies — with the same methodology: build a test, measure the results, publish the data, and let the numbers speak. His tone is often described as "snarky" (his own characterization), but this masks a rigorous commitment to evidence-based technical analysis.
 
@@ -83,7 +83,7 @@ Woolf popularized the use of **`AGENTS.md`** as a persistent, project-level conf
 **NEVER** include API keys or secrets in code or logs.
 ```
 
-This is a significant methodological contribution to the agentic coding discourse. Rather than relying on in-context prompting for every interaction, Woolf externalizes project standards into version-controlled files that persist across sessions. This addresses the "anterograde amnesia" problem that others (like [[Miguel Grinberg]]) have identified with AI tools.
+This is a significant methodological contribution to the agentic coding discourse. Rather than relying on in-context prompting for every interaction, Woolf externalizes project standards into version-controlled files that persist across sessions. This addresses the "anterograde amnesia" problem that others (like [[miguel-grinberg]]) have identified with AI tools.
 
 ### The "Literal Genie" Problem
 
@@ -138,10 +138,10 @@ Woolf identifies a persistent gap in technical education: **there are few resour
 ## Related
 
 [[textgenrnn]] — Neural text generation library (Keras/TensorFlow), ~5,000 GitHub stars
-[[BuzzFeed]] — Woolf's employer; Senior Data Scientist working on AI initiatives
+[[buzzfeed]] — Woolf's employer; Senior Data Scientist working on AI initiatives
 [[polars]] — Python data processing library Woolf advocates over pandas
  — Language Woolf has been exploring with AI-assisted development
-[[Miguel Grinberg]] — Fellow blogger with contrasting views on AI coding tools
+[[miguel-grinberg]] — Fellow blogger with contrasting views on AI coding tools
  — Python implementation; Woolf's benchmarks compare against C/C++ implementations
 CUDA — NVIDIA GPU computing platform; Woolf explores agent-driven algorithm porting
  — Funding platform supporting Woolf's independent research

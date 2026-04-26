@@ -1,6 +1,6 @@
 ---
 title: "Jaya Gupta"
-tags: [[person, foundation-capital, investor, context-graph]]
+tags: [[person-foundation-capital-investor-context-graph]]
 created: 2026-04-20
 updated: 2026-04-24
 ---

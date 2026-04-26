@@ -5,7 +5,7 @@ created: 2026-04-16
 updated: 2026-04-16
 tags: [concept, ai-agents, security, sandboxing, capabilities, monty, in-process]
 aliases: ["monty-sandbox", "capabilities-based-security", "monty", "capability-sandbox"]
-related: [[concepts/harness-engineering/system-architecture/infrastructure-noise.md]], [[harness-engineering]], [[entities/samuel-colvin.md]]
+related: [[harness-engineering/system-architecture/infrastructure-noise]], [[harness-engineering]], [[samuel-colvin]]
 depth: L2
 status: complete
 sources: []
@@ -104,9 +104,9 @@ Monty can serialize execution state mid-flight to bytes (single-digit KBs), then
 
 ## Related
 
-- [[concepts/harness-engineering/system-architecture/infrastructure-noise.md]] — Container, microVM, and gVisor-level isolation
+- [[harness-engineering/system-architecture/infrastructure-noise]] — Container, microVM, and gVisor-level isolation
 - [[harness-engineering]] — Monty as a harness environment
-- [[entities/samuel-colvin.md]] — Creator
+- [[samuel-colvin]] — Creator
 
 ## Sources
 

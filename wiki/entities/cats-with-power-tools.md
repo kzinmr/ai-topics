@@ -181,4 +181,4 @@ Pixelmelt's writing has several distinctive characteristics:
 
 ## See Also
 
-- [[entities/_index.md]]
+- [[entities/_index]]

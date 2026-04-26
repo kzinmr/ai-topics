@@ -147,7 +147,7 @@ His posting style is **educational and systematic** — he builds frameworks, cr
 - [[context-engineering]]
 - [[boris-cherny]]
 - [[ryan-lopopolo]]
-- [[concepts/karpathy.md]]
+- [[karpathy]]
 - [[simon-willison]]
 
 ## Sources

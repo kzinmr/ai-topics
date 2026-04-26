@@ -131,12 +131,12 @@ Native ColBERT support in Vespa, enabling explainable semantic search using deep
 
 ## Related Concepts
 
-- [[ColBERT]] — The late-interaction retrieval model Bergum championed
+- [[colbert]] — The late-interaction retrieval model Bergum championed
 - [[late-interaction]] — His primary research and engineering focus
-- [[Vespa]] — The search engine where he spent 15 years
-- [[Hornet]] — His new company, a retrieval engine for agents
-- [[Agentic-Retrieval]] — The paradigm shift he's building for
-- [[Mutually-Assured-Distraction]] — His key insight about retrieval-reasoning compounding errors
+- [[vespa]] — The search engine where he spent 15 years
+- [[hornet]] — His new company, a retrieval engine for agents
+- [[agentic-retrieval]] — The paradigm shift he's building for
+- [[mutually-assured-distraction]] — His key insight about retrieval-reasoning compounding errors
 -  — BM25 + vector search, a Vespa specialty
 -  — ColBERT's key advantage over single-vector embeddings
 - [[doug-turnbull]] — Fellow search relevance engineer, co-author of "AI-Powered Search"

@@ -181,14 +181,14 @@ Prime Intellect synthesizes both:
 
 ## Related Concepts
 
-- **[[RLM (Recursive Language Models)]]** — Zhang's primary contribution
-- **[[Context Folding]]** — Parallel approach (Sun et al., 2025)
-- **[[Shunyu Yao]]** — "The Second Half" framework; RL generalization thesis
-- **[[Omar Khattab]]** — PhD advisor, ColBERT/DSPy creator
-- **[[Tim Kraska]]** — PhD co-advisor, MIT DSG, ML systems
-- **[[GPU MODE]]** — Benchmarking leadership
-- **[[KernelBench]]** — ICML 2025 Best Paper
-- **[[Scaffold vs RL Debate]]** — Both Zhang and Yao argue for trained scaffolds
+- **[[rlm-recursive-language-models]]** — Zhang's primary contribution
+- **[[context-folding]]** — Parallel approach (Sun et al., 2025)
+- **[[shunyu-yao]]** — "The Second Half" framework; RL generalization thesis
+- **[[omar-khattab]]** — PhD advisor, ColBERT/DSPy creator
+- **[[tim-kraska]]** — PhD co-advisor, MIT DSG, ML systems
+- **[[gpu-mode]]** — Benchmarking leadership
+- **[[kernelbench]]** — ICML 2025 Best Paper
+- **[[scaffold-vs-rl-debate]]** — Both Zhang and Yao argue for trained scaffolds
 - **** — RLM as a new ACI paradigm
 - **** — RLM scales computation, not parameters
 - **** — Trained scaffolds + LLMs

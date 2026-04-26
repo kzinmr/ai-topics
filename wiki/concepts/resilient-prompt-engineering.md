@@ -1,6 +1,6 @@
 ---
 title: "Resilient Prompt Engineering"
-tags: [[prompt-engineering, resilience, design-patterns]]
+tags: [[prompt-engineering-resilience-design-patterns]]
 created: 2026-04-13
 updated: 2026-04-24
 ---

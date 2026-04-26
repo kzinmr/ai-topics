@@ -5,7 +5,7 @@ created: 2026-04-24
 updated: 2026-04-24
 tags: [training, coherence, fine-tuning, instruction-tuning, Giles-Thomas]
 aliases: ["ift-training-evolution", "llm-training-coherence"]
-related: , , [[entities/gpjt]]
+related: , , [[gpjt]]
 sources:
   - url: "https://www.gilesthomas.com/2026/04/how-an-llm-becomes-more-coherent-over-training"
     author: "Giles Thomas"
@@ -93,8 +93,8 @@ These findings have direct implications for [[ai-coding-reliability]]:
 - **Training data quality matters** — Code-specific fine-tuning on quality repositories should improve coding reliability
 
 ## Related Concepts
-- [[concepts/ai-coding-reliability]] — Why review and verification remain essential
-- [[concepts/ai-agent-traps]] — How coherence illusions create agent failures
+- [[ai-coding-reliability]] — Why review and verification remain essential
+- [[ai-agent-traps]] — How coherence illusions create agent failures
 -  — Broader IFT patterns and techniques
 
 ## Sources

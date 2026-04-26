@@ -104,7 +104,7 @@ A recurring theme across Siebenmann's writing is **empiricism over dogma**. Whet
 -  — Frequent topic of analysis and critique
 -  — Dependency cooldowns discussion
 -  — Another Unix-oriented blogger with similar pragmatism
-- [[concepts/ai-observability.md]] — Logs vs metrics debate
+- [[ai-observability]] — Logs vs metrics debate
 
 ## Sources
 

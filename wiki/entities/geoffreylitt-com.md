@@ -110,14 +110,14 @@ The underlying theme: data should be portable, locally accessible, and resilient
 
 ## Related
 
-- [[Ink & Switch]] — Independent research lab where Litt led Malleable Software track
-- [[Daniel Jackson]] — PhD advisor at MIT; author of "The Day the World Went Quiet"
-- [[Malleable Software]] — Litt's central research area
-- [[End-User Programming]] — The broader field Litt works within
-- [[Local-First Software]] — Software that prioritizes user data control and offline capability
+- [[ink-switch]] — Independent research lab where Litt led Malleable Software track
+- [[daniel-jackson]] — PhD advisor at MIT; author of "The Day the World Went Quiet"
+- [[malleable-software]] — Litt's central research area
+- [[end-user-programming]] — The broader field Litt works within
+- [[local-first-software]] — Software that prioritizes user data control and offline capability
 -  — Conflict-free replicated data types; central to Peritext
 -  — Ubiquitous computing pioneer; source of the HUD metaphor
-- [[Simon Willison]] — Fellow AI tooling enthusiast; Litt references his "yak-shaving intern" framing
+- [[simon-willison]] — Fellow AI tooling enthusiast; Litt references his "yak-shaving intern" framing
 - [[max-bernstein]] — Compiler engineer with complementary focus on systems-level tooling
 
 ## Sources

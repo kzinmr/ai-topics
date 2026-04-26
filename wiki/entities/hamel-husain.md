@@ -137,7 +137,7 @@ Co-authored with **Eugene Yan, Shreya Shankar, Jason Liu, Bryan Bischof, Charles
 -   [[drmaciver]] — Property-based testing applied to LLM evaluation (`foundational-llm-evals`); PBT methodology for eval design.
 -   [[shreya-shankar]] — Co-creator of AI evals course, collaborator on Applied LLMs guide.
 -   [[harness-engineering]] — His core engineering philosophy.
--   [[concepts/critique-shadowing.md]] — His signature methodology.
+-   [[critique-shadowing]] — His signature methodology.
 -   [[llm-as-judge]] — Core evaluation technique he critiques and teaches.
 
 ## Sources

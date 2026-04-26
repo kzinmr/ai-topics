@@ -133,11 +133,11 @@ Sanfilippo crafts his own data structures (SDS for strings, Rax for radix trees)
 
 ## Related Concepts
 
-- [[Redis]] — His defining creation, the in-memory data store
-- [[Systems Programming]] — His domain of expertise: C, memory management, performance
-- [[Software Simplicity]] — His core design philosophy
-- [[AI-Assisted Development]] — His nuanced position on LLMs as programming partners
-- [[Open Source Licensing]] — His pragmatic view of sustainability and community
+- [[redis]] — His defining creation, the in-memory data store
+- [[systems-programming]] — His domain of expertise: C, memory management, performance
+- [[software-simplicity]] — His core design philosophy
+- [[ai-assisted-development]] — His nuanced position on LLMs as programming partners
+- [[open-source-licensing]] — His pragmatic view of sustainability and community
 -  — SDS, Rax, and the philosophy of building from first principles
 -  — Using documentation as an analytical tool
 -  — His distinction between passive and active AI-assisted coding

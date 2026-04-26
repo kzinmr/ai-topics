@@ -94,9 +94,9 @@ Start a dev server and then use `uvx rodney --help` to test the new homepage, lo
 
 - [[showboat]] — テスト成果物の記録ツール
 - [[red-green-tdd]] — バグ発見後の自動化テスト追加
-- [[first-run-the-tests]] — 初期テスト実行
+- [[harness-engineering/agentic-workflows/first-run-the-tests]] — 初期テスト実行
 - [[agentic-engineering]] — 上位概念
 
 ## 参照
 - [[simon-willison]] — Agentic Engineering Patterns創始者
-- [[concepts/harness-engineering/agentic-workflows/rodney.md]] — ブラウザ自動化CLI
+- [[harness-engineering/agentic-workflows/rodney]] — ブラウザ自動化CLI

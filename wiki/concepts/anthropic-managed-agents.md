@@ -15,7 +15,7 @@ sources:
 
 **Source:** Anthropic Claude Blog + Engineering Blog + Platform Docs (April 2026)
 **Status:** Public Beta on Claude Platform
-**Related:** [[Agent Team / Swarm]], [[Harness Engineering]], [[meta-harness]]
+**Related:** [[agent-team-swarm]], [[harness-engineering]], [[meta-harness]]
 
 ---
 
@@ -153,10 +153,10 @@ with client.beta.sessions.events.stream(session.id) as stream:
 
 ## Related
 
-- [[Agent Team / Swarm]] — 複数Agent協調の上位概念
-- [[Harness Engineering]] — 単一Agentの実行環境設計
+- [[agent-team-swarm]] — 複数Agent協調の上位概念
+- [[harness-engineering]] — 単一Agentの実行環境設計
 - [[meta-harness]] — インターフェース中心の設計哲学
-- [[OpenAI Symphony]] — 競合のAgent Teamオーケストレーター
+- [[openai-symphony]] — 競合のAgent Teamオーケストレーター
 - [[dark-factory-software-factory]] — 完全自律開発の最先端事例
 
 ---

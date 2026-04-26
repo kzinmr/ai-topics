@@ -155,7 +155,7 @@ tools = [
 
 ## See Also
 
-- [[concepts/agent-sandboxing.md]] — 隔离技術の比較表
-- [[code-execution-with-mcp]] — MCPによるコード実行パターン
+- [[agent-sandboxing]] — 隔离技術の比較表
+- [[harness-engineering/system-architecture/code-execution-with-mcp]] — MCPによるコード実行パターン
 - [[agentic-engineering]] — エージェント工学全般
 -  — Anthropic/OpenAIのエージェント設計

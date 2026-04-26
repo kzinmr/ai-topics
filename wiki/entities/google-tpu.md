@@ -106,8 +106,8 @@ TPU 8t/8i are core components of Google's **AI Hypercomputer** architecture — 
 
 - [[nvidia-dgx-spark]] — NVIDIA's competitor in local AI compute
 - [[inference-hardware]] — GPU and accelerator landscape
-- [[entities/google-tpu.md]] — Google's broader AI infrastructure
-- [[concepts/gemini.md]] — Google's Gemini model family
+- [[google-tpu]] — Google's broader AI infrastructure
+- [[gemini]] — Google's Gemini model family
 - [[openai]] — OpenAI's competing infrastructure approaches
 - [[claude-memory]] — Anthropic's approach (competitor context)
 

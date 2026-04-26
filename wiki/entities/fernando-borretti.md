@@ -205,10 +205,10 @@ His blog is structured around **projects, articles, and fiction** — reflecting
 
 ## Related
 
-- [[Austral]] — Systems programming language with linear types and capabilities
-- [[Programming Languages]] — Type systems, compilers, parsers, semantic analysis
-- [[AI Agents]] — Cognitive architectures, LLM scaffolding, agent evaluation
-- [[Compiler Construction]] — OCaml, Menhir, bootstrapping, middle-end design
+- [[austral]] — Systems programming language with linear types and capabilities
+- [[programming-languages]] — Type systems, compilers, parsers, semantic analysis
+- [[ai-agents]] — Cognitive architectures, LLM scaffolding, agent evaluation
+- [[compiler-construction]] — OCaml, Menhir, bootstrapping, middle-end design
 -  — SM-2 algorithm, learning science, productivity
 -  — Ontologies, logic, information management
 -  — Memory safety, resource management, capability-based security

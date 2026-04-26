@@ -220,13 +220,13 @@ Returns `Prediction` with:
 
 ## Related Concepts
 
-- **[[DSPy]]** — Declarative LM programming framework; ships RLM module
-- **[[DSPy.RLM]]** — This page covers the DSPy.RLM implementation
-- **[[Context Folding]]** — Parallel approach: branch/return with summarization
-- **[[Inference-Time Scaling]]** — RLM scales computation, not parameters
+- **[[dspy]]** — Declarative LM programming framework; ships RLM module
+- **[[dspyrlm]]** — This page covers the DSPy.RLM implementation
+- **[[context-folding]]** — Parallel approach: branch/return with summarization
+- **[[inference-time-scaling]]** — RLM scales computation, not parameters
 - **** — RLM as a new ACI paradigm
 - **** — RLMs are trainable scaffolds
-- **[[Shunyu Yao]]** — "The Second Half" framework; RL generalization thesis
-- **[[Alex Zhang]]** — Primary author, RLM creator
-- **[[Omar Khattab]]** — Co-author, DSPy creator, ColBERT lineage
+- **[[shunyu-yao]]** — "The Second Half" framework; RL generalization thesis
+- **[[alex-zhang]]** — Primary author, RLM creator
+- **[[omar-khattab]]** — Co-author, DSPy creator, ColBERT lineage
 - **** — Co-author, MIT DSG, ML systems expert

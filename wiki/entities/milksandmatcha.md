@@ -59,7 +59,7 @@ Sarah advocates for:
 ## Related Concepts
 
 - [[back-of-house-patterns]] — The kitchen metaphor framework for multi-agent coding
-- [[concepts/harness-engineering/agentic-workflows/subagents.md]] — Technical implementation of delegated agent tasks
+- [[harness-engineering/agentic-workflows/subagents]] — Technical implementation of delegated agent tasks
 -  — Professional use of coding agents (Simon Willison)
 - [[agent-team-swarm]] — Multi-agent orchestration taxonomy
 - [[single-agent-ceiling]] — Limitations of single-agent workflows

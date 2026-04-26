@@ -182,16 +182,16 @@ Prime Intellect (building on both researchers' work) captures the synthesis:
 
 ## Related Concepts
 
-- **[[entities/overreacted-io.md]]** — Yao's foundational reasoning+acting paradigm
-- **[[Tree of Thoughts]]** — Search-based deliberation for LLMs
-- **[[Reflexion]]** — Verbal reinforcement learning
+- **[[overreacted-io]]** — Yao's foundational reasoning+acting paradigm
+- **[[tree-of-thoughts]]** — Search-based deliberation for LLMs
+- **[[reflexion]]** — Verbal reinforcement learning
 - **[[coala]]** — Cognitive architectures for language agents
-- **[[SWE-bench]]** / **[[SWE-agent]]** — Real-world code evaluation
+- **[[swe-bench]]** / **[[swe-agent]]** — Real-world code evaluation
 - **[[tau-bench]]** — Tool-Agent-User interaction benchmark
-- **[[Computer-Using Agent]]** — Yao's current work at OpenAI
+- **[[computer-using-agent]]** — Yao's current work at OpenAI
 - **** — Designing environments for agents
 - **** — Yao argues for environment-first RL design
-- **[[RLM (Recursive Language Models)]]** — Zhang/Khattab/Kraska's parallel work on environment-first context management
+- **[[rlm-recursive-language-models]]** — Zhang/Khattab/Kraska's parallel work on environment-first context management
 - **** — Yao's philosophical framework for AI's future
 
 ## Status

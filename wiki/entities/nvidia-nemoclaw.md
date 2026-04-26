@@ -184,6 +184,6 @@ cd ~/.nemoclaw/source
 
 - [[nvidia-dgx-spark]] — DGX Spark hardware platform
 - [[peter-steinberger]] — OpenClaw creator, OpenAI
-- [[concepts/local-llm/server-dgx-spark.md]] — Complete DGX Spark setup guide
+- [[local-llm/server-dgx-spark]] — Complete DGX Spark setup guide
 - [[local-llm]] — Local LLM inference overview
 - [[capabilities-based-security]] — Security philosophy matching NemoClaw's approach

@@ -16,7 +16,7 @@ Comparison of leading AI models as of April 2026, based on analysis from Ethan M
 
 | Tier | Companies/Models | Notes |
 |------|------------------|-------|
-| **Tier 1 — Leading** | [[entities/google-tpu.md]], [[openai]], [[anthropic]] | Clear frontier leaders |
+| **Tier 1 — Leading** | [[google-tpu]], [[openai]], [[anthropic]] | Clear frontier leaders |
 | **Tier 2 — Catching Up** | [[meta]] (Muse Spark) | New entry, between Sonnet and Opus |
 | **Tier 3 — Falling Behind** |  | Lost ground relative to leaders |
 | **Tier 4 — 7-9 Months Behind** | Chinese models | Best Chinese models still lagging |
@@ -112,5 +112,5 @@ Available in Google AI Studio, Vertex AI, and Google Vids.
 - [[muse-spark]]
 - [[project-glasswing]]
 - [[openai]]
-- [[entities/google-tpu.md]]
+- [[google-tpu]]
 - 

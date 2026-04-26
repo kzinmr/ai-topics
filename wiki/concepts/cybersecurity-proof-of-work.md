@@ -87,8 +87,8 @@ This concept represents a fundamental shift in how we think about AI and securit
 
 ## See Also
 
-- [[concepts/_index.md]]
-- [[concepts/illusion-of-thinking.md]]
-- [[concepts/cognitive-cost-of-agents.md]]
-- [[concepts/back-of-house-multi-agent-patterns.md]]
-- [[concepts/back-of-house-patterns.md]]
+- [[concepts/_index]]
+- [[illusion-of-thinking]]
+- [[cognitive-cost-of-agents]]
+- [[back-of-house-multi-agent-patterns]]
+- [[back-of-house-patterns]]

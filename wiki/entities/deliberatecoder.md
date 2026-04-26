@@ -134,4 +134,4 @@ This intellectual breadth informs his writing, which consistently draws connecti
 
 ## See Also
 
-- [[entities/_index.md]]
+- [[entities/_index]]

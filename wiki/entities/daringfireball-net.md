@@ -140,11 +140,11 @@ Daring Fireball has operated as an independent publication for over two decades.
 
 ## Related
 
-- [[Aaron Swartz]] — Co-creator of Markdown; activist and programmer
-- [[Markdown]] — Lightweight markup language created by Gruber and Swartz in 2004
-- [[Apple]] — Primary subject of Gruber's commentary and criticism
-- [[Dan Abramov]] — Fellow influential tech blogger with a similar commitment to deep technical explanation
-- [[Ben Thompson]] — Author of Stratechery; often linked and discussed by Gruber on Apple strategy
+- [[aaron-swartz]] — Co-creator of Markdown; activist and programmer
+- [[markdown]] — Lightweight markup language created by Gruber and Swartz in 2004
+- [[apple]] — Primary subject of Gruber's commentary and criticism
+- [[dan-abramov]] — Fellow influential tech blogger with a similar commitment to deep technical explanation
+- [[ben-thompson]] — Author of Stratechery; often linked and discussed by Gruber on Apple strategy
 -  — Publisher at Six Colors; collaborates with Gruber on annual Apple report cards
 -  — Gruber's podcast with Dan Benjamin
 -  — EU regulation affecting Apple's App Store policies, extensively covered by Gruber

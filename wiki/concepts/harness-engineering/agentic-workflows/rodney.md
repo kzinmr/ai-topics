@@ -127,7 +127,7 @@ Rodneyのコマンドは**コンテキストウィンドウに優しい**:
 
 - [[showboat]] — テスト成果物の記録ツール（Rodneyと併用）
 - [[agentic-manual-testing]] — Rodneyの主要ユースケース
-- [[concepts/harness-engineering/agentic-engineering.md]] — 上位概念
+- [[harness-engineering/agentic-engineering]] — 上位概念
 
 ## 参照
 

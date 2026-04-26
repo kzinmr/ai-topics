@@ -63,7 +63,7 @@ Willisonは認知負債を**Vibe Codingの最大の問題**と位置付けてい
 
 ## 返済方法
 
-### 1. [[linear-walkthroughs]] — 構造化コード解説
+### 1. [[harness-engineering/agentic-workflows/linear-walkthroughs]] — 構造化コード解説
 Willisonが自作したCLIツールで、コードの処理フローをツリー表示し、どの関数がどのパスで呼ばれるかを**視覚的に理解可能**にする。
 
 ```
@@ -73,8 +73,8 @@ $ llm --plugin llm-linear-walkthrough explain --file src/app.py
 ### 2. [[interactive-explanations]] — 対話的アニメーション
 ブラウザ上でコードの動作をステップ実行し、変数の変化をリアルタイムで可視化する。
 
-### 3. [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md]] — 実行による動作確認
-[[rodney]]等のCLIブラウザツールで実際にUIをテストし、エージェントが生成した機能が本当に動くかを検証。
+### 3. [[harness-engineering/agentic-workflows/agentic-manual-testing]] — 実行による動作確認
+[[harness-engineering/agentic-workflows/rodney]]等のCLIブラウザツールで実際にUIをテストし、エージェントが生成した機能が本当に動くかを検証。
 
 ### 4. [[showboat]] — テストの記録と共有
 検証結果をMarkdownドキュメントとして保存し、チーム全員が確認できるようにする。
@@ -92,6 +92,6 @@ $ llm --plugin llm-linear-walkthrough explain --file src/app.py
 ## 参照
 - [[simon-willison]] — 概念提唱者
 - [[vibe-coding]] — 認知負債の主要発生源
-- [[linear-walkthroughs]] — 主要な返済ツール
+- [[harness-engineering/agentic-workflows/linear-walkthroughs]] — 主要な返済ツール
 - [[interactive-explanations]] — 対話的理解ツール
-- [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md]] — 検証ツール
+- [[harness-engineering/agentic-workflows/agentic-manual-testing]] — 検証ツール

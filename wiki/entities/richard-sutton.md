@@ -127,10 +127,10 @@ Sutton emphasizes mathematical foundations and empirical validation over theoret
 
 ## Related
 
-- [[John Carmack]] — Keen Technologies partner; advocate of Sutton's "Bitter Lesson"
+- [[john-carmack]] — Keen Technologies partner; advocate of Sutton's "Bitter Lesson"
 -  — PhD advisor; co-author of RL textbook; Turing Award co-recipient
 - [[reinforcement-learning]] — Sutton's foundational field
-- [[concepts/chatgpt-memory-bitter-lesson.md]] — Sutton's most influential essay
+- [[chatgpt-memory-bitter-lesson]] — Sutton's most influential essay
 -  — Sutton's long-term research goal
 -  — Sutton's current industry affiliation
 

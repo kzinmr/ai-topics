@@ -134,10 +134,10 @@ The real value is in **pattern extraction**: understanding why Hermes's self-imp
 - [[hermes-agent]] — Hermes Agent platform (self-authoring skills)
 - [[peter-steinberger]] — OpenClaw creator
 - [[teknium]] — Hermes Agent architect
-- [[concepts/harness-engineering/system-architecture/agent-skills.md]] — Agent Skills / SKILL.md bundles
+- [[harness-engineering/system-architecture/agent-skills]] — Agent Skills / SKILL.md bundles
 - [[anthropic-openclaw-conflict]] — Open-source vs platform risk debate
 - [[harness-engineering]] — Harness Engineering framework
-- [[concepts/harness-engineering/agentic-workflows/agent-first-design.md]] — Agent-first codebase design
+- [[harness-engineering/agentic-workflows/agent-first-design]] — Agent-first codebase design
 - [[comparisons/hermes-vs-openclaw-architecture]] — Detailed architecture comparison
 
 ## Sources

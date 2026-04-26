@@ -57,7 +57,7 @@ In his "More=Better?" post for Answer.AI, Jonathan demonstrated through experime
 
 > *"There's a point of view that spending this time to get more out of existing models like this is futile in the face of the next big one (TM) which will do even better without any tricks. I don't buy it! As we get faster, cheaper, better models, I believe that finding ways to boost them even further will continue to be worth it."*
 
-This connects to the broader theme of **inference-time compute scaling** that many researchers (including [[Alex Zhang]] with RLMs) have been exploring — spending more compute at inference time to extract better results from existing models.
+This connects to the broader theme of **inference-time compute scaling** that many researchers (including [[alex-zhang]] with RLMs) have been exploring — spending more compute at inference time to extract better results from existing models.
 
 ### Making Generative AI Accessible Through Education
 
@@ -157,8 +157,8 @@ This work challenges the traditional separation between discriminative and gener
 
 - **** — fastai founder; Answer.AI co-founder; Jonathan's close collaborator and teaching partner.
 - **** — Co-author of the Hugging Face Diffusion Models Course; ML engineer at Hugging Face.
-- **[[Hamel Husain]]** — Both work at Answer.AI; both write practical guides on ML tooling and evaluation.
-- **[[Daniel van Strien]]** — Both contribute to Hugging Face educational resources and write practical ML tutorials.
+- **[[hamel-husain]]** — Both work at Answer.AI; both write practical guides on ML tooling and evaluation.
+- **[[daniel-van-strien]]** — Both contribute to Hugging Face educational resources and write practical ML tutorials.
 - **[[simon-willison]]** — Fellow advocate for accessible, practical AI tooling and education.
 
 ## X Activity Themes

@@ -63,7 +63,7 @@ Key connection: Tasteful tokenmaxxing achieves the **FinOps layer** of  through 
 - [[agentic-engineering]] — Developer workflows for agent-assisted development
 - [[agent-loop-orchestration]] — Execution patterns that affect token usage
 - [[cognitive-debt]] — Accumulated technical debt from poor-quality agent output
-- [[concepts/harness-engineering/system-architecture/context-anxiety.md]] — The anxiety of wasting context windows on low-value content
+- [[harness-engineering/system-architecture/context-anxiety]] — The anxiety of wasting context windows on low-value content
 
 ## Sources
 

@@ -99,7 +99,7 @@ Rather than building guardrails and constraints first, give the LLM near-human f
 ## Related Concepts
 
 - [[agent-loop-orchestration]] — Patterns for managing the agent loop
-- [[concepts/harness-engineering/agentic-engineering.md]] — Broader agent engineering practices
+- [[harness-engineering/agentic-engineering]] — Broader agent engineering practices
 - [[ai-agent-traps]] — Common pitfalls in agent development
 - [[chatgpt-memory-bitter-lesson]] — Bitter Lesson applied to memory systems
 - [[ai-coding-agent-criticism]] — Criticisms of current agent approaches

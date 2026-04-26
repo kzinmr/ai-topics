@@ -9,8 +9,8 @@ updated: 2026-04-24
 
 **Date:** April 10, 2026
 **Source:** SemiAnalysis — Dylan Patel's AI compute bottleneck analysis
-**Primary Analyst:** [[Dylan Patel]] (SemiAnalysis)
-**Related:** , [[Space GPUs]], [[AI Bubble Economics]], [[Cognitive Cost of Agents]]
+**Primary Analyst:** [[dylan-patel]] (SemiAnalysis)
+**Related:** , [[space-gpus]], [[ai-bubble-economics]], [[cognitive-cost-of-agents]]
 
 ---
 
@@ -94,17 +94,17 @@ The compute bottleneck has profound economic consequences:
 2. **Allocation battles:** Companies compete for limited EUV-enabled chip production
 3. **Geopolitical leverage:** Nations controlling semiconductor supply chains gain strategic power
 4. **Investment distortion:** Capital flows into bottlenecks (ASML, TSMC) rather than applications
-5. **Bubble risk:** [[AI Bubble Economics]] — if revenue from AI applications cannot justify infrastructure costs at bottleneck-limited supply levels
+5. **Bubble risk:** [[ai-bubble-economics]] — if revenue from AI applications cannot justify infrastructure costs at bottleneck-limited supply levels
 
 ---
 
 ## Related Concepts
 
-- [[AI Bubble Economics]] — Whether AI revenue can justify infrastructure spending at constrained supply levels
-- [[Space GPUs]] — Orbital compute as a theoretical bottleneck workaround
+- [[ai-bubble-economics]] — Whether AI revenue can justify infrastructure spending at constrained supply levels
+- [[space-gpus]] — Orbital compute as a theoretical bottleneck workaround
 -  — The broader physical layer of AI: data centers, networking, power
-- [[Cognitive Cost of Agents]] — If compute is scarce, inefficient agent usage becomes even more costly
-- [[concepts/harness-engineering/agentic-engineering.md]] — Efficient use of limited compute through better agent practices
+- [[cognitive-cost-of-agents]] — If compute is scarce, inefficient agent usage becomes even more costly
+- [[harness-engineering/agentic-engineering]] — Efficient use of limited compute through better agent practices
 
 ---
 

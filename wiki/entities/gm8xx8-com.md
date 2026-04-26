@@ -135,8 +135,8 @@ gm8xx8 represents a new type of signal source in the AI ecosystem — not a rese
 
 ## See Also
 
-- [[entities/_index.md]]
-- [[entities/geoffreylitt-com.md]]
-- [[entities/oldvcr-blogspot-com.md]]
-- [[entities/brutecat-com.md]]
-- [[entities/krebsonsecurity-com.md]]
+- [[entities/_index]]
+- [[geoffreylitt-com]]
+- [[oldvcr-blogspot-com]]
+- [[brutecat-com]]
+- [[krebsonsecurity-com]]

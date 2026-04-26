@@ -292,7 +292,7 @@ HNコメントのTL;DR:
 - [[harness-engineering]] — Lopopoloのエージェント環境設計
 - [[harness-engineering]] — 開発者ワークフローパターン
 - [[context-window-management]] — コンテキスト制約の管理
-- [[concepts/harness-engineering/agentic-workflows/agent-first-design.md]] — エージェント向けコード設計
+- [[harness-engineering/agentic-workflows/agent-first-design]] — エージェント向けコード設計
 
 ## Sources
 

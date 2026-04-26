@@ -13,11 +13,11 @@ tags:
   - training
   - open-source
 related:
-  - "[[concepts/local-llm/model-quantization.md]]"
+  - "[[local-llm/model-quantization]]"
   - "[[local-llm]]"
   - "[[reasoning-models]]"
   - "[[open-source-ai-destruction]]"
-  - "[[concepts/local-llm/server-dgx-spark.md]]"
+  - "[[local-llm/server-dgx-spark]]"
 sources:
   - "https://www.bloomberg.com/news/articles/2026-04-06-openai-anthropic-google-cooperate-to-fend-off-chinese-bids-to-clone-models"
   - "https://arxiv.org/abs/1503.02531"
@@ -171,11 +171,11 @@ Sutton's "Bitter Lesson" argues that general methods leveraging computation outp
 
 ## Related wikilinks
 
-- [[concepts/local-llm/model-quantization.md]] — Quantization complements distillation
+- [[local-llm/model-quantization]] — Quantization complements distillation
 - [[reasoning-models]] — Reasoning models use distillation for CoT transfer
 - [[open-source-ai-destruction]] — Open-source models affected by distillation restrictions
 - [[local-llm]] — Overview of local LLM ecosystem
-- [[concepts/local-llm/server-dgx-spark.md]] — Hardware for running distilled models
+- [[local-llm/server-dgx-spark]] — Hardware for running distilled models
 
 ## Sources
 

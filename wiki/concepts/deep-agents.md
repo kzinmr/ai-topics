@@ -1,6 +1,6 @@
 ---
 title: "Deep Agents — Autonomous Multi-Step AI Agents"
-tags: [[ai-agents, autonomy, planning, file-operations, delegation, sandbox]]
+tags: [[ai-agents-autonomy-planning-file-operations-delegation-sandbox]]
 created: 2026-04-15
 updated: 2026-04-16
 ---
@@ -57,4 +57,4 @@ Deep agents require secure code execution environments. Options include:
 - [[harness-engineering]] — Environment design for autonomous agents
 - [[code-mode]] — Code execution for deep agents
 - [[monty-sandbox]] — Secure execution environment
-- [[entities/samuel-colvin.md]] — Pydantic AI creator
+- [[samuel-colvin]] — Pydantic AI creator

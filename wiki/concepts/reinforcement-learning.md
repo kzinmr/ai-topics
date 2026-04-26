@@ -7,12 +7,12 @@ description: "RLの基本概念。詳細はrlhf.mdを参照。"
 created: 2026-04-14
 updated: 2026-04-24
 related:
-  - "[[concepts/rlhf.md]]"
+  - "[[rlhf]]"
 sources: []
 ---
 
 # Reinforcement Learning
 
-> **Moved:** コンテンツは [[concepts/rlhf.md]] に移動しました。
+> **Moved:** コンテンツは [[rlhf]] に移動しました。
 
-詳細: [[concepts/rlhf.md]]
+詳細: [[rlhf]]

@@ -111,4 +111,4 @@ Language models that share initialization can transmit behavioural traits throug
 
 ## See Also
 
-- [[concepts/_index.md]]
+- [[concepts/_index]]

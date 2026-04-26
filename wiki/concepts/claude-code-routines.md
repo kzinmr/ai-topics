@@ -65,10 +65,10 @@ This represents a new class of "design-to-code" routines where the design review
 
 ## Related
 
-- [[concepts/claude-code-best-practices]] — Claude Code best practices and patterns
-- [[concepts/openai-codex-superapp]] — OpenAI's competing platform
-- [[concepts/harness-engineering]] — Agent execution environment design
-- [[entities/anthropic]] — Anthropic company context
+- [[claude-code-best-practices]] — Claude Code best practices and patterns
+- [[openai-codex-superapp]] — OpenAI's competing platform
+- [[harness-engineering]] — Agent execution environment design
+- [[anthropic]] — Anthropic company context
 
 ## Sources
 
@@ -76,4 +76,4 @@ This represents a new class of "design-to-code" routines where the design review
 
 ## See Also
 
-- [[concepts/_index.md]]
+- [[concepts/_index]]

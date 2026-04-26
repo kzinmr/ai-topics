@@ -1,6 +1,6 @@
 ---
 title: "Research Agent Fundamentals"
-tags: [[claude-agent-sdk, research, stateless, stateful, web-search]]
+tags: [[claude-agent-sdk-research-stateless-stateful-web-search]]
 created: 2026-04-24
 updated: 2026-04-24
 ---

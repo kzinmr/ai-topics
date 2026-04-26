@@ -1,6 +1,6 @@
 ---
 title: "Pydantic Logfire — AI Observability Platform"
-tags: [[observability, monitoring, ai, opentelemetry, python, production]]
+tags: [[observability-monitoring-ai-opentelemetry-python-production]]
 created: 2026-04-16
 updated: 2026-04-24
 ---
@@ -77,5 +77,5 @@ Logfire is the recommended observability backend for Pydantic AI agents:
 
 - [[ai-observability]] — Broader observability landscape
 - [[pydantic-ai]] — Primary integration target
-- [[entities/samuel-colvin.md]] — Creator
+- [[samuel-colvin]] — Creator
 - [[capabilities-based-security]] — Transparency philosophy

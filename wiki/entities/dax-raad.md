@@ -161,7 +161,7 @@ Central to his approach is the conviction that retention depends primarily on sa
 
 ## Related People
 
-- [[Jay V]]: Co-founder of Anomaly (SST/OpenCode).
+- [[jay-v]]: Co-founder of Anomaly (SST/OpenCode).
 - : Co-founder/CTO of Anomaly.
 - : Co-founder of Anomaly, AWS Hero.
 - : Co-founder of Supabase; marveled at OpenCode's growth compared to Supabase.

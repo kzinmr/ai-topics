@@ -194,13 +194,13 @@ Before AI, Sero built significant infrastructure in the Web3 space:
 
 ## Related
 
-- [[elizaOS]] — Major contributor to the agentic framework
+- [[elizaos]] — Major contributor to the agentic framework
 - [[local-ai]] — Advocate for running models on consumer hardware
 - [[multi-agent]] — Open Orchestra, agent coordination
 - [[developer-tools]] — Azul, Parchi, vLLM Studio, pi-brain
 -  — ZKSync, Ethereum governance infrastructure, Thrive Protocol
 - [[vllm]] — Local inference infrastructure
-- [[concepts/model-context-protocol-mcp.md]] — Mem-Layer and tool integration
+- [[model-context-protocol-mcp]] — Mem-Layer and tool integration
 -  — Core philosophy
 - [[teknium]] — Fellow ElizaOS contributor and AI agent builder
 -  — KV cache quantization research

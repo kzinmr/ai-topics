@@ -5,7 +5,7 @@ created: 2026-04-10
 updated: 2026-04-16
 tags: [concept, ai-agents, security, sandboxing, isolation, coding-agents, infrastructure]
 aliases: ["agent-isolation", "ai-sandbox-technologies", "infrastructure-sandbox"]
-related: [[concepts/sandbox/in-process.md]], [[anthropic-managed-agents]], [[ai-coding-reliability]], 
+related: [[sandbox/in-process]], [[anthropic-managed-agents]], [[ai-coding-reliability]], 
 depth: L2
 status: complete
 sources: []
@@ -17,7 +17,7 @@ Infrastructure-level sandboxing refers to OS/hypervisor-level isolation technolo
 
 A Reddit discussion in early 2026 — *"A fair comparison of sandboxing options"* — crystallized the community's understanding that **the "Containers vs. VMs" debate has evolved into a much richer landscape** of isolation strategies, each suited to different threat models and operational constraints.
 
-> **Note**: This page covers infrastructure-level isolation (containers, microVMs, gVisor). For in-process sandboxing, see [[concepts/sandbox/in-process.md]].
+> **Note**: This page covers infrastructure-level isolation (containers, microVMs, gVisor). For in-process sandboxing, see [[sandbox/in-process]].
 
 ## Why Sandboxing Matters for AI Agents
 

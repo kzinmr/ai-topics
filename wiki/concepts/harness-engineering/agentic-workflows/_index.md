@@ -26,10 +26,10 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 
 | レイヤー | 概念 | 焦点 |
 |---------|------|------|
-| **最上位** | [[_index\|Harness Engineering]] | Agent = Model + Harness（環境設計哲学） |
-| **横断技術** | [[context-engineering\|Context Engineering]] | コンテキストの選択・圧縮・配置（有限リソース管理） |
+| **最上位** | [[concepts/_index|Harness Engineering]] | Agent = Model + Harness（環境設計哲学） |
+| **横断技術** | [[context-engineering|Context Engineering]] | コンテキストの選択・圧縮・配置（有限リソース管理） |
 | **応用（人間側）** | **Agentic Workflows**（本ページ） | 開発者がエージェントを「活用する」パターン |
-| **応用（システム側）** | [[system-architecture/_index\|System Architecture]] | エージェントを「構築する」パターン |
+| **応用（システム側）** | [[harness-engineering/system-architecture/_index|System Architecture]] | エージェントを「構築する」パターン |
 
 ## リーダー別主要コンセプト
 
@@ -37,7 +37,7 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 |---------|--------------|-----------|
 | [[simon-willison]] | Agentic Engineering Patterns, Red/Green TDD, Cognitive Debt | 以下のWillisonパターン群 |
 | [[andrej-karpathy]] | Software 2.0, RLによるエージェント学習, データ中心AI | [[karpathy-rl-agents]] |
-| [[entities/sankalp-sinha.md]] | Claude Code 2.0実用ガイド、サブエージェントのlossiness、Throw-Away Draft、コンテキスト60%ルール | 以下のSankalpパターン群 |
+| [[sankalp-sinha]] | Claude Code 2.0実用ガイド、サブエージェントのlossiness、Throw-Away Draft、コンテキスト60%ルール | 以下のSankalpパターン群 |
 |  | Agent-First Design, CLI-First Development, Plan Mode不要論, inference-speed bottleneck | 以下のSteipeteパターン群 |
 
 ## Simon Willisonの開発パターン
@@ -46,7 +46,7 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 
 | ページ | 概要 |
 |-------|------|
-| [[first-run-the-tests]] | エージェントにコードを変更させる前に、まずテストを実行させる |
+| [[harness-engineering/agentic-workflows/first-run-the-tests]] | エージェントにコードを変更させる前に、まずテストを実行させる |
 | [[red-green-tdd]] | エージェントがテストを書いてから実装するRed/Green TDDサイクル |
 | [[agentic-manual-testing]] | エージェントによる手動テストの自動化 |
 
@@ -54,7 +54,7 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 
 | ページ | 概要 |
 |-------|------|
-| [[linear-walkthroughs]] | Linearチケットの解説生成 |
+| [[harness-engineering/agentic-workflows/linear-walkthroughs]] | Linearチケットの解説生成 |
 | [[showboat]] | エージェントの作業内容を可視化するドキュメンテーションツール |
 | [[interactive-explanations]] | 対話的アニメーションでアルゴリズムを説明させる |
 | [[vibe-coding]] | テスト不要の「感覚で書く」アプローチとその限界 |
@@ -63,16 +63,16 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 
 | ページ | 概要 |
 |-------|------|
-| [[using-git-with-agents]] | Gitワークフローへのエージェント統合 |
-| [[how-agents-work]] | コーディングエージェントの内部仕組みの概念モデル |
+| [[harness-engineering/agentic-workflows/using-git-with-agents]] | Gitワークフローへのエージェント統合 |
+| [[harness-engineering/agentic-workflows/how-agents-work]] | コーディングエージェントの内部仕組みの概念モデル |
 
 ### 🧠 認知と品質
 
 | ページ | 概要 |
 |-------|------|
 | [[cognitive-debt]] | エージェント生成コードを理解せずにマージすると蓄積する「認知負債」 |
-| [[compound-engineering-loop]] | 反復的品質向上ループ |
-| [[code-hoarding]] | 重要な知識をエージェントのコンテキスト外に保持するパターン |
+| [[harness-engineering/agentic-workflows/compound-engineering-loop]] | 反復的品質向上ループ |
+| [[harness-engineering/agentic-workflows/code-hoarding]] | 重要な知識をエージェントのコンテキスト外に保持するパターン |
 
 ### 🏗️ Sankalpの実用パターン
 
@@ -87,8 +87,8 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 | ページ | 概要 |
 |-------|------|
 | [[agent-first-design]] | 「人間向け」ではなく「エージェント向け」コード設計 |
-| [[cli-first-development]] | CLIから始めてフィードバックループを高速化 |
-| [[concepts/harness-engineering/agentic-workflows/prompt-driven-development.md]] | プロンプト駆動開発パターン |
+| [[harness-engineering/agentic-workflows/cli-first-development]] | CLIから始めてフィードバックループを高速化 |
+| [[harness-engineering/agentic-workflows/prompt-driven-development]] | プロンプト駆動開発パターン |
 
 ## Agentic Workflows vs System Architecture
 

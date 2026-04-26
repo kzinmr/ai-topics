@@ -5,7 +5,7 @@ created: 2026-04-16
 updated: 2026-04-16
 tags: [person, developer-tools, javascript, nodejs, deno, jsr, ai-agents, infrastructure]
 aliases: ["ryan-dahl", "node-js-creator", "deno-creator"]
-related: [[concepts/sandbox/js-runtime.md]], [[concepts/harness-engineering/system-architecture/infrastructure-noise.md]], [[entities/jarred-sumner.md]]
+related: [[sandbox/js-runtime]], [[harness-engineering/system-architecture/infrastructure-noise]], [[jarred-sumner]]
 depth: L2
 status: complete
 sources: []
@@ -115,9 +115,9 @@ Deno Deploy provides an edge computing platform where AI agents can run globally
 
 ## Related
 
-- [[concepts/sandbox/js-runtime.md]] — JS runtime comparison (Bun vs Deno vs Node.js)
-- [[concepts/harness-engineering/system-architecture/infrastructure-noise.md]] — Container, microVM, and edge-level isolation
-- [[entities/jarred-sumner.md]] — Bun creator; competing JS runtime vision
+- [[sandbox/js-runtime]] — JS runtime comparison (Bun vs Deno vs Node.js)
+- [[harness-engineering/system-architecture/infrastructure-noise]] — Container, microVM, and edge-level isolation
+- [[jarred-sumner]] — Bun creator; competing JS runtime vision
 
 ## Sources
 

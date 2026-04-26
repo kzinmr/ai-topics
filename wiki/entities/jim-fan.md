@@ -5,7 +5,7 @@ handle: "@jim-fan"
 created: 2026-04-10
 updated: 2026-04-10
 related:
-  - [[entities/nvidia-dgx-spark.md]]
+  - [[nvidia-dgx-spark]]
   - [[embodied-ai]]
   - [[robotics]]
   - [[genie]]

@@ -1,6 +1,6 @@
 ---
 title: "AI Eval Tools Comparison"
-tags: [[evaluation, tools, langsmith, braintrust, arize-phoenix, inspect-ai]]
+tags: [[evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]]
 created: 2026-04-12
 updated: 2026-04-24
 ---
@@ -110,7 +110,7 @@ eval(my_eval_task(), model="openai/gpt-4")
 
 - [[ai-evals]] — Main evaluation framework
 - [[llm-as-judge]] — Using LLMs to evaluate AI outputs
-- [[concepts/critique-shadowing.md]] — 7-step process for building aligned LLM judges
+- [[critique-shadowing]] — 7-step process for building aligned LLM judges
 
 ## Sources
 

@@ -15,7 +15,7 @@ sources:
 
 **Source:** OpenAI GitHub (2026-02-26)
 **Status:** Low-key engineering preview
-**Related:** [[Agent Team / Swarm]], [[Harness Engineering]], [[Dark Factory Software Factory]]
+**Related:** [[agent-team-swarm]], [[harness-engineering]], [[dark-factory-software-factory]]
 
 ---
 
@@ -143,11 +143,11 @@ You are working on a Linear ticket {{ issue.identifier }}
 
 ## Related
 
-- [[Agent Team / Swarm]] — 複数Agent協調の上位概念
-- [[Harness Engineering]] — Symphonyが前提とする開発プラクティス
-- [[Dark Factory Software Factory]] — 完全自律開発への次のステップ
-- [[Anthropic Managed Agents]] — 競合のマネージドAgentプラットフォーム
-- [[Multi-Agent Autonomy Scale]] — 大規模Agent協調の研究
+- [[agent-team-swarm]] — 複数Agent協調の上位概念
+- [[harness-engineering]] — Symphonyが前提とする開発プラクティス
+- [[dark-factory-software-factory]] — 完全自律開発への次のステップ
+- [[anthropic-managed-agents]] — 競合のマネージドAgentプラットフォーム
+- [[multi-agent-autonomy-scale]] — 大規模Agent協調の研究
 - [[ryan-lopopolo]] — Symphonyの作者、Harness Engineering提唱者。OpenAI Frontierで1M LOCのagent-only実験を主導
 
 ---

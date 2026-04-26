@@ -1,6 +1,6 @@
 ---
 title: "AI Evals (AI Evaluation Systems)"
-tags: [[evaluation, llm-as-judge, error-analysis, ai-engineering, ai-systems]]
+tags: [[evaluation-llm-as-judge-error-analysis-ai-engineering-ai-systems]]
 created: 2026-04-12
 updated: 2026-04-24
 ---
@@ -156,7 +156,7 @@ A **trace** is the complete record of all actions, messages, tool calls, and dat
 
 - [[drmaciver]] — Created `foundational-llm-evals` applying property-based testing to LLM evaluation
 - [[shreya-shankar]] — Co-creator of AI evals course, DocETL/EvalGen/SPADE researcher
-- [[entities/hamel-husain.md]] — Co-creator of AI evals course, Critique Shadowing methodology pioneer
+- [[hamel-husain]] — Co-creator of AI evals course, Critique Shadowing methodology pioneer
 
 ## Sources
 

@@ -44,16 +44,16 @@ This adds a layer to the political dimensions of AI criticism — the framing an
 
 ## Related
 
-- [[concepts/ai-autonomy-debate]] — Broader debate about AI autonomy levels
-- [[concepts/ai-coding-agent-criticism]] — Specific critiques of AI coding agents
-- [[concepts/excessive-agency]] — AI agents taking too much control
-- [[concepts/ai-safety]] — AI safety concerns
+- [[ai-autonomy-debate]] — Broader debate about AI autonomy levels
+- [[ai-coding-agent-criticism]] — Specific critiques of AI coding agents
+- [[excessive-agency]] — AI agents taking too much control
+- [[ai-safety]] — AI safety concerns
 
 ## Sources
 
 - [Sean Goedecke: Many anti-AI arguments are conservative arguments](https://seangoedecke.com/many-anti-ai-arguments-are-conservative/) (2026-04-18)
-- [[entities/seangoedecke-com]] — Sean Goedecke entity page
+- [[seangoedecke-com]] — Sean Goedecke entity page
 
 ## See Also
 
-- [[concepts/_index.md]]
+- [[concepts/_index]]

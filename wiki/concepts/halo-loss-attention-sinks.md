@@ -89,5 +89,5 @@ HALO（Harmonic Attention Localization Objective）損失は、Attention Sinkの
 
 ## See Also
 
-- [[concepts/_index.md]]
-- [[concepts/attention-mechanism-variants.md]]
+- [[concepts/_index]]
+- [[attention-mechanism-variants]]
