@@ -1,8 +1,9 @@
 ---
 title: "Whisper — OpenAI's Speech Recognition Model"
-tags: [[speech-asr-openai-whisper-audio]]
+tags: [[concepts/speech-asr-openai-whisper-audio]]
 created: 2026-04-19
 updated: 2026-04-19
+type: concept
 ---
 
 # Whisper — OpenAI's Speech Recognition Model
@@ -56,4 +57,4 @@ Whisper is commonly deployed locally using:
 
 ## See Also
 
-- [[speech]]
+- [[concepts/speech]]

@@ -5,7 +5,7 @@ created: 2026-04-18
 updated: 2026-04-18
 tags: [session-management, multi-agent, context-engineering, orchestration, claude-code]
 aliases: ["session-hierarchy", "context-hierarchy", "multi-level-session-management"]
-related: [[context-window-management]], [[back-of-house-patterns]], [[single-agent-ceiling]], [[subagents]]
+related: [[concepts/context-window-management]], [[concepts/back-of-house-patterns]], [[concepts/single-agent-ceiling]], [[concepts/subagents]]
 sources:
   - raw/articles/anthropic-claude-code-session-management-1m-context.md
   - raw/articles/milksandmatcha-0xsero-single-agent-nightmare-2026.md
@@ -66,7 +66,7 @@ With 1M tokens, **manual compaction beats automatic**:
 
 ## Level 2: Multi-Agent Context Separation
 
-*Source: [[back-of-house-patterns]] — @MilksandMatcha + @0xSero (April 2026)*
+*Source: [[concepts/back-of-house-patterns]] — @MilksandMatcha + @0xSero (April 2026)*
 
 When a task generates heavy intermediate output (codebase exploration, verification passes, doc generation), **Level 1 primitives are insufficient**. The session accumulates tool-call noise that degrades the model's attention, even within 1M tokens.
 
@@ -208,11 +208,11 @@ This makes the filesystem the **coordination layer** between Head Chef and Line 
 
 ## Related Concepts
 
-- [[context-window-management]] — Level 1: single-session context hygiene
-- [[back-of-house-patterns]] — Level 2: multi-agent architecture
-- [[single-agent-ceiling]] — The problem this framework solves
-- [[subagents]] — The primitive that bridges Level 1 and Level 2
-- [[context-engineering]] — Filesystem-as-context methodology
+- [[concepts/context-window-management]] — Level 1: single-session context hygiene
+- [[concepts/back-of-house-patterns]] — Level 2: multi-agent architecture
+- [[concepts/single-agent-ceiling]] — The problem this framework solves
+- [[concepts/subagents]] — The primitive that bridges Level 1 and Level 2
+- [[concepts/context-engineering]] — Filesystem-as-context methodology
 - [[thariq-shihipar]] — Architect of Claude Code session management
 - [[milksandmatcha]] — Co-author of Back of House patterns
 

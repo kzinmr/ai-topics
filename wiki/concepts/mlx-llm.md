@@ -69,8 +69,8 @@ The community has developed custom forks for advanced features:
 
 ## Related Concepts
 
-- [[mac-studio-local-ai]] — Mac Studio hardware setup for local inference
+- [[concepts/mac-studio-local-ai]] — Mac Studio hardware setup for local inference
 - [[quantization]] — 4-bit and dynamic quantization techniques
 - [[moe-architecture]] — Mixture-of-Experts model design
-- [[llama-cpp]] — Cross-platform inference engine alternative
+- [[concepts/llama-cpp]] — Cross-platform inference engine alternative
 - [[claude-code]] — Local Claude Code deployment using MLX

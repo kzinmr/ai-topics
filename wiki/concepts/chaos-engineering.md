@@ -102,7 +102,7 @@ lambdaFunction.addPermission('deny-all', {
 5. **Iterate**: Continuously improve based on findings
 
 ## Related Concepts
-- [[event-driven-architecture]]
-- [[microservices-vs-monolith]]
+- [[concepts/event-driven-architecture]]
+- [[concepts/microservices-vs-monolith]]
 - 
 - 

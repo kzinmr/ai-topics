@@ -1,8 +1,9 @@
 ---
 title: "Managed Devins"
-tags: [[multi-agents-cognition-devin-orchestration]]
+tags: [[concepts/multi-agents-cognition-devin-orchestration]]
 created: 2026-04-22
 updated: 2026-04-24
+type: concept
 ---
 
 # Managed Devins — Conditional Multi-Agent Architecture
@@ -43,8 +44,8 @@ Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.
 
 ## See Also
 
-- [[cognition-devin-philosophy]] — Main Cognition philosophy
-- [[multi-agent-autonomy-scale]] — 5 levels of multi-agent autonomy
-- [[closing-agent-loop]] — Full development loop
-- [[openai-symphony]] — Ryan Lopopolo's alternative: task-based orchestration without manager context
+- [[concepts/cognition-devin-philosophy]] — Main Cognition philosophy
+- [[concepts/multi-agent-autonomy-scale]] — 5 levels of multi-agent autonomy
+- [[concepts/closing-agent-loop]] — Full development loop
+- [[concepts/openai-symphony]] — Ryan Lopopolo's alternative: task-based orchestration without manager context
 - [[ryan-lopopolo]] — Symphony author, Harness Engineering pioneer

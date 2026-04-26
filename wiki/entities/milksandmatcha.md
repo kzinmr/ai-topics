@@ -3,6 +3,7 @@ title: "Sarah Chieng (MilksandMatcha)"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -58,11 +59,11 @@ Sarah advocates for:
 
 ## Related Concepts
 
-- [[back-of-house-patterns]] — The kitchen metaphor framework for multi-agent coding
-- [[harness-engineering/agentic-workflows/subagents]] — Technical implementation of delegated agent tasks
+- [[concepts/back-of-house-patterns]] — The kitchen metaphor framework for multi-agent coding
+- [[concepts/harness-engineering/agentic-workflows/subagents]] — Technical implementation of delegated agent tasks
 -  — Professional use of coding agents (Simon Willison)
-- [[agent-team-swarm]] — Multi-agent orchestration taxonomy
-- [[single-agent-ceiling]] — Limitations of single-agent workflows
+- [[concepts/agent-team-swarm]] — Multi-agent orchestration taxonomy
+- [[concepts/single-agent-ceiling]] — Limitations of single-agent workflows
 - [[sero|0xSero]] — Co-author and collaborator
 
 ## Key Links

@@ -1,8 +1,9 @@
 ---
 title: "AI Programming as Theory Building"
-tags: [[software-engineering-ai-coding-theory-peter-naur]]
+tags: [[concepts/software-engineering-ai-coding-theory-peter-naur]]
 created: 2026-04-24
 updated: 2026-04-24
+type: concept
 ---
 
 # AI Programming as Theory Building
@@ -44,6 +45,6 @@ Sean Goedecke's analysis applying Peter Naur's 1985 "theory building" concept to
 
 ## Related Concepts
 
-- [[cognitive-cost-of-agents]]: Developers losing deep understanding of their codebase
+- [[concepts/cognitive-cost-of-agents]]: Developers losing deep understanding of their codebase
 - : Humans as orchestrators of AI agents
-- [[harness-engineering]]: Designing environments for agents
+- [[concepts/harness-engineering]]: Designing environments for agents

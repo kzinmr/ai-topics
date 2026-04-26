@@ -33,11 +33,11 @@ This mapping provides a cognitive science foundation for hybrid approaches.
 
 ### Differential Symbolic Modules
 
-A key technique in hybrid NeSy: symbolic operations made differentiable, enabling end-to-end training via backpropagation. Fuzzy logic operators (t-norms, s-norms) replace boolean operators with continuous approximations. See [[differential-symbolic-modules]] for details.
+A key technique in hybrid NeSy: symbolic operations made differentiable, enabling end-to-end training via backpropagation. Fuzzy logic operators (t-norms, s-norms) replace boolean operators with continuous approximations. See [[concepts/differential-symbolic-modules]] for details.
 
 ### Formal Logic Foundation
 
-Neurosymbolic AI rests on formal logic systems: propositional logic, first-order logic, fuzzy logic. The three reasoning modes (deductive, inductive, abductive) each serve different roles in hybrid architectures. See [[formal-logic-foundation]] for details.
+Neurosymbolic AI rests on formal logic systems: propositional logic, first-order logic, fuzzy logic. The three reasoning modes (deductive, inductive, abductive) each serve different roles in hybrid architectures. See [[concepts/formal-logic-foundation]] for details.
 
 ## Historical Context
 
@@ -101,9 +101,9 @@ What remains unresolved is whether this hybrid approach scales to AGI, or whethe
 ## Related
 
 - [[gary-marcus]] — Primary advocate and critic
-- [[scaling-without-slop]] — Complementary critique of pure scaling
-- [[world-models-science]] — Marcus's proposed next step beyond neurosymbolic
-- [[claude-code-source-patterns]] — Technical analysis of Claude Code's architecture
-- [[differential-symbolic-modules]] — Differentiable symbolic modules (Hybrid NeSy technique)
-- [[formal-logic-foundation]] — Symbolic reasoning foundation
-- [[agent-governance]] — Governance layer for agent systems using NeSy principles
+- [[concepts/scaling-without-slop]] — Complementary critique of pure scaling
+- [[concepts/world-models-science]] — Marcus's proposed next step beyond neurosymbolic
+- [[concepts/claude-code-source-patterns]] — Technical analysis of Claude Code's architecture
+- [[concepts/differential-symbolic-modules]] — Differentiable symbolic modules (Hybrid NeSy technique)
+- [[concepts/formal-logic-foundation]] — Symbolic reasoning foundation
+- [[concepts/agent-governance]] — Governance layer for agent systems using NeSy principles

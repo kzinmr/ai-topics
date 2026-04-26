@@ -128,10 +128,10 @@ AIは基礎的なスキルを代替しない。ドメインの専門知識がな
 
 ## 関連概念
 
-- [[ai-organization/ai-org-from-hierarchy-to-intelligence]] — Blockの階層からインテリジェンスへの移行
-- [[ai-organization/ai-org-context-as-moat]] — Proprietary ContextとFission-Fusion
+- [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]] — Blockの階層からインテリジェンスへの移行
+- [[concepts/ai-organization/ai-org-context-as-moat]] — Proprietary ContextとFission-Fusion
 -  — 開発者のAI活用ワークフロー
-- [[harness-engineering]] — エージェントの制御・構造化
+- [[concepts/harness-engineering]] — エージェントの制御・構造化
 
 ## ソース
 

@@ -3,6 +3,7 @@ title: "Eli Bendersky"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Eli Bendersky
@@ -174,13 +175,13 @@ This reflects his broader philosophy: claims without evidence are just opinions.
 
 ## Related Concepts
 
-- [[pycparser]] — His most widely used project (~20M daily downloads), pure-Python C parser
-- [[webassembly]] — Recent focus as both compilation target and runtime
-- [[compiler-design]] — Recursive-descent parsing, syntax-directed translation, code generation
-- [[llvm]] — Library usage, API stability challenges, Clang tooling
-- [[go-tooling]] — go generate, AST rewriting, astutil, stringer
-- [[llm-assisted-development]] — Practical experience with Codex and other AI coding agents
-- [[boring-technology]] — His thesis on proven tools + LLMs vs. shiny new alternatives
+- [[concepts/pycparser]] — His most widely used project (~20M daily downloads), pure-Python C parser
+- [[concepts/webassembly]] — Recent focus as both compilation target and runtime
+- [[concepts/compiler-design]] — Recursive-descent parsing, syntax-directed translation, code generation
+- [[concepts/llvm]] — Library usage, API stability challenges, Clang tooling
+- [[concepts/go-tooling]] — go generate, AST rewriting, astutil, stringer
+- [[concepts/llm-assisted-development]] — Practical experience with Codex and other AI coding agents
+- [[concepts/boring-technology]] — His thesis on proven tools + LLMs vs. shiny new alternatives
 -  — The Bob project: interpreter, compiler, VM, WASM target
 -  — Using test suites as safety nets for AI-assisted refactoring
 -  — Error recovery in lexers and parsers

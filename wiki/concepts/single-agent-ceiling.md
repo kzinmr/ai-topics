@@ -56,7 +56,7 @@ AIコーディングエージェントを使用する全ての開発者が直面
 
 ## 解決策: Back of Houseパターン
 
-詳細は [[back-of-house-patterns]] を参照。
+詳細は [[concepts/back-of-house-patterns]] を参照。
 
 **要約:**
 - Head Chef（Orchestrator）が注文をチケットに分解
@@ -66,10 +66,10 @@ AIコーディングエージェントを使用する全ての開発者が直面
 
 ## 関連概念
 
-- [[back-of-house-patterns]] — マルチエージェント・オーケストレーションの厨房メタファー
-- [[context-engineering]] — コンテキストエンジニアリング
-- [[harness-engineering]] — エンジニアのエージェント活用方法论
-- [[harness-engineering/agentic-workflows/subagents]] — サブエージェントの委任パターン
+- [[concepts/back-of-house-patterns]] — マルチエージェント・オーケストレーションの厨房メタファー
+- [[concepts/context-engineering]] — コンテキストエンジニアリング
+- [[concepts/harness-engineering]] — エンジニアのエージェント活用方法论
+- [[concepts/harness-engineering/agentic-workflows/subagents]] — サブエージェントの委任パターン
 
 ## ソース
 

@@ -143,8 +143,8 @@ enum ResponseFormat {
 
 ## 関連概念
 
-- [[harness-engineering]] — 上位インデックス
-- [[harness-engineering/system-architecture/advanced-tool-use]] — 高度なツール使用
-- [[building-effective-agents]] — エージェント構築の基本原理
-- [[harness-engineering/system-architecture/code-execution-with-mcp]] — MCPとのコード実行
+- [[concepts/harness-engineering]] — 上位インデックス
+- [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — 高度なツール使用
+- [[concepts/building-effective-agents]] — エージェント構築の基本原理
+- [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — MCPとのコード実行
 - [[comparisons/evals-skills]] — 評価スキル

@@ -3,6 +3,7 @@ title: "AI Memory Systems: Two Camps Taxonomy"
 tags: [concept, ai-agents, llm, prompting, rAG, evaluations, inference]
 created: 2026-04-24
 updated: 2026-04-24
+type: concept
 ---
 
 # AI Memory Systems: Two Camps Taxonomy
@@ -10,7 +11,7 @@ updated: 2026-04-24
 Classification of AI memory/context tools into two fundamentally different paradigms: Memory Backends vs Context Substrates.
 
 **Source:** @witcheer analysis of 450+ "agent-memory" repos and 460+ "context-management" repos (2026-04-16)
-**Related:** [[memory-systems-design-patterns]], [[context-engineering]], [[claude-memory]]
+**Related:** [[concepts/memory-systems-design-patterns]], [[concepts/context-engineering]], [[concepts/claude-memory]]
 
 ## The Two Camps
 

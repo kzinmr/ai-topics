@@ -3,6 +3,7 @@ title: "Nathan Lambert"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-15
+type: entity
 ---
 
 
@@ -121,14 +122,14 @@ Lambert writes with a distinctive mix of technical rigor and personal candor. He
 
 ## Related
 
-- [[allen-institute-ai]] — Current employer, OLMo project
+- [[concepts/allen-institute-ai]] — Current employer, OLMo project
 -  — Previous employer, Zephyr and TRL work
-- [[rlhf]] — Core research area, book author
-- [[fine-tuning/rlhf-dpo-preference]] — Direct Preference Optimization, Zephyr
-- [[post-training]] — His primary research focus
+- [[concepts/rlhf]] — Core research area, book author
+- [[concepts/fine-tuning/rlhf-dpo-preference]] — Direct Preference Optimization, Zephyr
+- [[concepts/post-training]] — His primary research focus
 -  — Co-created reward model evaluation benchmark
 -  — Advocate for fully open AI development
-- [[fine-tuning/grpo-rl-training]] — Discussed extensively as part of the RLVR trend
+- [[concepts/fine-tuning/grpo-rl-training]] — Discussed extensively as part of the RLVR trend
 - [[simon-willison]] — Fellow open-source AI advocate
 -  — His newsletter and podcast
 -  — Open post-training model family he leads

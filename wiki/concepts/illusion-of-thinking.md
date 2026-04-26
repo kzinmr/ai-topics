@@ -92,6 +92,6 @@ Academic analysis showing that reasoning models excel at certain complexity clas
 
 ## Related
 
-- [[neurosymbolic-ai]] — The broader architectural paradigm
+- [[concepts/neurosymbolic-ai]] — The broader architectural paradigm
 - [[gary-marcus]] — Primary advocate and analyst
-- [[scaling-without-slop]] — Complementary critique of pure scaling
+- [[concepts/scaling-without-slop]] — Complementary critique of pure scaling

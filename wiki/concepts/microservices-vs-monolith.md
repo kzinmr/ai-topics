@@ -99,7 +99,7 @@ Team Size & Complexity Assessment
 - **Monitor Everything**: Observability is critical for distributed systems
 
 ## Related Concepts
-- [[lambda-monolith-lambdalith]]
-- [[event-driven-architecture]]
+- [[concepts/lambda-monolith-lambdalith]]
+- [[concepts/event-driven-architecture]]
 - 
 - 

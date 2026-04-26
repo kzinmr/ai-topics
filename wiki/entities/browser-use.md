@@ -97,7 +97,7 @@ await agent.run()
 - 明示的な`done()`ツールによる終了判定
 - コアエージェントループは単純なfor-loop。リトライ、レート制限、接続回復は「ops」でありエージェントではない
 
-→ [[agent-harnesses]] 参照
+→ [[concepts/agent-harnesses]] 参照
 
 ## DOMベースアプローチの意義
 
@@ -114,7 +114,7 @@ Anthropic/OpenAIのスクリーンショットベースとは対照的に、**DO
 - [[anthropic-computer-use]] — スクリーンショットベースアプローチ
 - [[openai-cua]] — OpenAIのComputer-Using Agent
 - [[browserbase]] — 信頼性の高いブラウザ自動化インフラ
-- [[death-of-browser]] — ブラウザの脱人間化潮流
+- [[concepts/death-of-browser]] — ブラウザの脱人間化潮流
 - [[webmcp]] — 標準化されたエージェント-ブラウザ対話
 
 ## Sources

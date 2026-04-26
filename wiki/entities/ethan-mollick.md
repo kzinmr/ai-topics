@@ -1,8 +1,9 @@
 ---
 title: "Ethan Mollick"
-tags: [[person]]
+tags: [[concepts/person]]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -153,13 +154,13 @@ Mollick consistently raises questions about the ethical implications of AI in wo
 
 ## Related Concepts
 
-- [[generative-ai]] — The technology Mollick studies and writes about
-- [[co-intelligence]] — His framework for human-AI collaboration
-- [[jagged-frontier]] — His concept of uneven AI capabilities across tasks
-- [[centaurs-and-cyborgs]] — Two models of human-AI integration he identified
+- [[concepts/generative-ai]] — The technology Mollick studies and writes about
+- [[concepts/co-intelligence]] — His framework for human-AI collaboration
+- [[concepts/jagged-frontier]] — His concept of uneven AI capabilities across tasks
+- [[concepts/centaurs-and-cyborgs]] — Two models of human-AI integration he identified
 -  — The new paradigm of autonomous AI systems he analyzes
-- [[ai-education]] — His work on AI-augmented teaching and learning
-- [[resilient-prompt-engineering]] — The skill of effectively directing AI systems
+- [[concepts/ai-education]] — His work on AI-augmented teaching and learning
+- [[concepts/resilient-prompt-engineering]] — The skill of effectively directing AI systems
 -  — His educational simulation platform
 -  — Named one of TIME's Most Influential People in AI
 -  — Shortlisted for Digital Thinking Award

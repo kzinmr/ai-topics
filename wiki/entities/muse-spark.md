@@ -39,6 +39,6 @@ Announced following a year of silence from Meta on model development, and after 
 
 ## Related
 - [[meta]]
-- [[inference/llama-cpp]]
+- [[concepts/inference/llama-cpp]]
 - 
 - 

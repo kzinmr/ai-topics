@@ -1,8 +1,9 @@
 ---
 title: "Alex L. Zhang"
-tags: [[person]]
+tags: [[concepts/person]]
 created: 2026-04-13
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -87,7 +88,7 @@ Co-authored with Zhening (Zed) Li and Omar Khattab, MGH posits that **frontier l
 
 MGH extends the RLM framework into a broader industry thesis: **stop building bigger models, start building better scaffolds.**
 
-See: [[mismanaged-geniuses-hypothesis]]
+See: [[concepts/mismanaged-geniuses-hypothesis]]
 
 ## GPU MODE & Benchmarking
 
@@ -181,14 +182,14 @@ Prime Intellect synthesizes both:
 
 ## Related Concepts
 
-- **[[rlm-recursive-language-models]]** — Zhang's primary contribution
-- **[[context-folding]]** — Parallel approach (Sun et al., 2025)
+- **[[concepts/rlm-recursive-language-models]]** — Zhang's primary contribution
+- **[[concepts/context-folding]]** — Parallel approach (Sun et al., 2025)
 - **[[shunyu-yao]]** — "The Second Half" framework; RL generalization thesis
 - **[[omar-khattab]]** — PhD advisor, ColBERT/DSPy creator
-- **[[tim-kraska]]** — PhD co-advisor, MIT DSG, ML systems
-- **[[gpu-mode]]** — Benchmarking leadership
-- **[[kernelbench]]** — ICML 2025 Best Paper
-- **[[scaffold-vs-rl-debate]]** — Both Zhang and Yao argue for trained scaffolds
+- **[[concepts/tim-kraska]]** — PhD co-advisor, MIT DSG, ML systems
+- **[[concepts/gpu-mode]]** — Benchmarking leadership
+- **[[concepts/kernelbench]]** — ICML 2025 Best Paper
+- **[[concepts/scaffold-vs-rl-debate]]** — Both Zhang and Yao argue for trained scaffolds
 - **** — RLM as a new ACI paradigm
 - **** — RLM scales computation, not parameters
 - **** — Trained scaffolds + LLMs

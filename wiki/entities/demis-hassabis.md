@@ -199,7 +199,7 @@ Co-founded with **Shane Legg** (ML researcher) and **Mustafa Suleyman** (entrepr
 - [[dario-amodei]] — Anthropic CEO; former DeepMind colleague; different safety philosophy
 -  — AlphaFold co-lead; Nobel co-recipient
 -  — Hassabis's central research goal
-- [[reinforcement-learning]] — Core technique in AlphaGo/AlphaZero
+- [[concepts/reinforcement-learning]] — Core technique in AlphaGo/AlphaZero
 -  — AlphaFold's scientific breakthrough
 
 ## Sources

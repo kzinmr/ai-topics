@@ -3,6 +3,7 @@ title: "Dan Abramov"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Dan Abramov
@@ -120,8 +121,8 @@ Perhaps Dan's most influential meta-contribution is his willingness to change hi
 ## Related Concepts
 
 - [[overreacted-io]] — His primary area of technical contribution
-- [[redux]] — Co-created this state management library
-- [[at-protocol]] — Subject of his "Social Filesystem" analysis
+- [[concepts/redux]] — Co-created this state management library
+- [[concepts/at-protocol]] — Subject of his "Social Filesystem" analysis
 -  — Interactive debugging over abstraction
 -  — His central teaching methodology
 -  — His argument against rigid naming conventions

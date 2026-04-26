@@ -70,4 +70,4 @@ sources: []
 ## See Also
 
 - [[concepts/_index]]
-- [[fine-tuning/pytorch-fsdp]]
+- [[concepts/fine-tuning/pytorch-fsdp]]

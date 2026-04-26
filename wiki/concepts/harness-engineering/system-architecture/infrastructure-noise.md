@@ -83,7 +83,7 @@ sources:
 
 ## 関連概念
 
-- [[harness-engineering]] — 上位インデックス
+- [[concepts/harness-engineering]] — 上位インデックス
 - [[comparisons/evals-skills]] — 評価スキル
-- [[harness-design-long-running-apps]] — ハーネス設計
-- [[ai-evals]] — AI評価の概念
+- [[concepts/harness-design-long-running-apps]] — ハーネス設計
+- [[concepts/ai-evals]] — AI評価の概念

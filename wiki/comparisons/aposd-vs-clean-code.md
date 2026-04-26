@@ -3,13 +3,14 @@ title: "A Philosophy of Software Design vs Clean Code"
 tags: [ai-agents, llm, prompting, rAG, comparison, evaluations]
 created: 2026-04-24
 updated: 2026-04-24
+type: comparison
 ---
 
 # A Philosophy of Software Design vs Clean Code
 
 **Date:** April 16, 2026
 **Source:** [johnousterhout/aposd-vs-clean-code (GitHub)](https://github.com/johnousterhout/aposd-vs-clean-code) — structured debate between John Ousterhout (APOSD) and Robert "Uncle Bob" Martin (CC), Sept 2024 – Feb 2025
-**Related:** [[agentic-engineering]], , , [[context-engineering]], 
+**Related:** [[concepts/agentic-engineering]], , , [[concepts/context-engineering]], 
 
 ---
 
@@ -164,7 +165,7 @@ The debate centers on a prime-number generation algorithm from Knuth's *Literate
 
 ## Cognitive Load Framework: The Unifying Lens
 
-Both APOSD and Clean Code ultimately aim to reduce cognitive load, but they measure it differently. Artem Zakirullin's [[cognitive-load-software-development]] provides a unifying framework.
+Both APOSD and Clean Code ultimately aim to reduce cognitive load, but they measure it differently. Artem Zakirullin's [[concepts/cognitive-load-software-development]] provides a unifying framework.
 
 ### Working Memory as the Common Metric
 

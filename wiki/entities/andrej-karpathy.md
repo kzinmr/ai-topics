@@ -3,6 +3,7 @@ title: "Andrej Karpathy"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -527,17 +528,17 @@ Future coding will resemble resource management games — setting up systems, de
 
 ## Related
 
-- [[eureka-labs]] — AI-native education company he founded
-- [[software-2.0]] — His seminal essay on neural networks as programs
-- [[vibe-coding]] — Term he coined for AI-assisted software development
-- [[agentic-engineering]] — Term he coined for managing multiple AI agents in parallel
-- [[micrograd]] — His educational autograd engine
-- [[nanogpt]] — Minimal GPT implementation for education
-- [[cs231n]] — His Stanford computer vision course
+- [[concepts/eureka-labs]] — AI-native education company he founded
+- [[concepts/software-2.0]] — His seminal essay on neural networks as programs
+- [[concepts/vibe-coding]] — Term he coined for AI-assisted software development
+- [[concepts/agentic-engineering]] — Term he coined for managing multiple AI agents in parallel
+- [[concepts/micrograd]] — His educational autograd engine
+- [[concepts/nanogpt]] — Minimal GPT implementation for education
+- [[concepts/cs231n]] — His Stanford computer vision course
 - [[openai]] — Co-founded in 2015
-- [[tesla-autopilot]] — Led AI team from 2017-2022
-- [[deep-learning]] — Core research area
+- [[concepts/tesla-autopilot]] — Led AI team from 2017-2022
+- [[concepts/deep-learning]] — Core research area
 -  — PhD research area
 - [[simon-willison]] — Fellow AI educator and blogger
 -  — Teaching LLMs from first principles
-- [[decoder-only-gpt]] — Complete GPT architecture explanation from microgpt
+- [[concepts/decoder-only-gpt]] — Complete GPT architecture explanation from microgpt

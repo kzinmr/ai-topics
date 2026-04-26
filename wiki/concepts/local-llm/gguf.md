@@ -3,6 +3,7 @@ title: "GGUF (GPT-Generated Unified Format)"
 tags: [local-llm, quantization, format]
 created: 2026-04-14
 updated: 2026-04-24
+type: concept
 ---
 
 # GGUF (GPT-Generated Unified Format)
@@ -29,8 +30,8 @@ GGUF is the quantization format used by llama.cpp for efficient CPU/Apple Silico
 
 ## Related wikilinks
 
-- [[local-llm]] — Primary consumer of GGUF files
-- [[local-llm]] — Local LLM overview
+- [[concepts/local-llm]] — Primary consumer of GGUF files
+- [[concepts/local-llm]] — Local LLM overview
 - [[georgi-gerganov]] — Format creator
 
 ## Sources

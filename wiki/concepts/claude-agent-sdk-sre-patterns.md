@@ -1,8 +1,9 @@
 ---
 title: "Claude Agent SDK — SRE Agent Pattern"
-tags: [[claude-agent-sdk-mcp-sre-automation-safety-guardrails]]
+tags: [[concepts/claude-agent-sdk-mcp-sre-automation-safety-guardrails]]
 created: 2026-04-24
 updated: 2026-04-24
+type: concept
 ---
 
 # Claude Agent SDK — SRE Agent Pattern
@@ -161,6 +162,6 @@ Tools auto-register when API keys are present (PagerDuty, Datadog, GitHub, etc.)
 
 ## Related
 
-- [[managed-agents-sre-incident-response]] — The same pattern on Managed Agents API
-- [[chief-of-staff-agent-patterns]] — Hooks, subagents, and plan mode
+- [[concepts/managed-agents-sre-incident-response]] — The same pattern on Managed Agents API
+- [[concepts/chief-of-staff-agent-patterns]] — Hooks, subagents, and plan mode
 -  — Managing long-running agent context

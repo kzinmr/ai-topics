@@ -71,10 +71,10 @@ Inspired by that, build animated-word-cloud.html - a page that accepts pasted te
 
 ## 関連概念
 
-- [[harness-engineering/agentic-workflows/linear-walkthroughs]] — 構造化コード解説（静的）
-- [[cognitive-debt]] — 解消対象
-- [[showboat]] — Walkthrough生成ツール
-- [[harness-engineering/agentic-engineering]] — 上位概念
+- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — 構造化コード解説（静的）
+- [[concepts/cognitive-debt]] — 解消対象
+- [[concepts/showboat]] — Walkthrough生成ツール
+- [[concepts/harness-engineering/agentic-engineering]] — 上位概念
 
 ## 参照
 - [[simon-willison]] — パターン創始者

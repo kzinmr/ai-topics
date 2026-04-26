@@ -58,8 +58,8 @@ sources:
 
 ## 関連概念
 
-- [[context-window-management]] — 圧縮の上位概念（Simon Willisonの戦略的管理）
-- [[harness-engineering/system-architecture/agent-loop-orchestration]] — 圧縮が必要になるコンテキスト累積の発生源
+- [[concepts/context-window-management]] — 圧縮の上位概念（Simon Willisonの戦略的管理）
+- [[concepts/harness-engineering/system-architecture/agent-loop-orchestration]] — 圧縮が必要になるコンテキスト累積の発生源
 -  — 圧縮を実装する基盤API
 
 ## 参照

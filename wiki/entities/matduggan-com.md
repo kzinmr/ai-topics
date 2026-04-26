@@ -3,6 +3,7 @@ title: "Mat Duggan"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Mat Duggan
@@ -180,9 +181,9 @@ His blog is built on **Ghost CMS** with a custom minimal Handlebars theme. He ch
 
 ## Related
 
-- [[devops]] — Kubernetes, container orchestration, cloud infrastructure
-- [[open-source]] — Sustainability, maintenance burden, community dynamics
-- [[search-engines]] — Google's AI overview, knowledge monopolization
+- [[concepts/devops]] — Kubernetes, container orchestration, cloud infrastructure
+- [[concepts/open-source]] — Sustainability, maintenance burden, community dynamics
+- [[concepts/search-engines]] — Google's AI overview, knowledge monopolization
 -  — AWS, EKS, VPC networking
 -  — Non-traditional paths to senior engineering
 -  — Macroeconomic forces, monopolization, AI disruption

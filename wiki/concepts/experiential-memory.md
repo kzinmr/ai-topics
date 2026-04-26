@@ -89,17 +89,17 @@ Context Fragment Loading (just-in-time retrieval)
 
 ## 関連する実装
 
-- **Claude Memory** ([[claude-memory]]) — ファイルベースのL2メモリ
-- **Claude Memory Tool** ([[claude-memory-tool]]) — Cognitionのメモリ実装
-- **AI Agent Memory Middleware** ([[ai-agent-memory-middleware]]) — L3クラウドストレージ層
-- **Memory Systems Design Patterns** ([[memory-systems-design-patterns]]) — 横断的な設計パターン
+- **Claude Memory** ([[concepts/claude-memory]]) — ファイルベースのL2メモリ
+- **Claude Memory Tool** ([[concepts/claude-memory-tool]]) — Cognitionのメモリ実装
+- **AI Agent Memory Middleware** ([[concepts/ai-agent-memory-middleware]]) — L3クラウドストレージ層
+- **Memory Systems Design Patterns** ([[concepts/memory-systems-design-patterns]]) — 横断的な設計パターン
 
 ## Related Concepts
 
-- [[context-fragments]] — コンテキストウィンドウのフラグメント化
-- [[harness-engineering]] — Harness Designの拡張版
-- [[chatgpt-memory-bitter-lesson]] — Bitter Lessonとメモリ
-- [[claude-memory]] — ファイルベースのメモリ（L2実装）
-- [[ai-agent-memory-middleware]] — クラウドスケールのメモリ（L3実装）
-- [[memory-systems-design-patterns]] — メモリ設計パターン横断分析
-- [[rlm-recursive-language-models]] — Externalized Objectsの源流
+- [[concepts/context-fragments]] — コンテキストウィンドウのフラグメント化
+- [[concepts/harness-engineering]] — Harness Designの拡張版
+- [[concepts/chatgpt-memory-bitter-lesson]] — Bitter Lessonとメモリ
+- [[concepts/claude-memory]] — ファイルベースのメモリ（L2実装）
+- [[concepts/ai-agent-memory-middleware]] — クラウドスケールのメモリ（L3実装）
+- [[concepts/memory-systems-design-patterns]] — メモリ設計パターン横断分析
+- [[concepts/rlm-recursive-language-models]] — Externalized Objectsの源流

@@ -59,7 +59,7 @@ Proposed a **selection theorem for agent-like structures** based on resource con
 
 ## Related Entities
 
-- [[causal-backbone-conjecture]] — Primary theoretical contribution
+- [[concepts/causal-backbone-conjecture]] — Primary theoretical contribution
 -  — Research program context
 -  — Selection Theorems program originator
 - [[gary-marcus]] — Shared skepticism of pure scaling approaches

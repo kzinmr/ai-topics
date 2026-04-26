@@ -94,12 +94,12 @@ MacIverのClaude Code実践レポート（2026-04）：
 ## Related Concepts
 
 -  — テストパラダイムの基礎
-- [[harness-engineering]] — Claude CodeコマンドとしてのAgentic PBT
-- [[ai-evals]] — 984バグレポート生成、86%妥当性率
+- [[concepts/harness-engineering]] — Claude CodeコマンドとしてのAgentic PBT
+- [[concepts/ai-evals]] — 984バグレポート生成、86%妥当性率
 -  — AIエージェントによる自律的コード品質保証
 -  — 不変条件によるバグ発見
 - [[drmaciver]] — Hypothesis作者、Antithesis Senior Engineer
-- [[mismanaged-geniuses-hypothesis]] — Python PBTライブラリ
+- [[concepts/mismanaged-geniuses-hypothesis]] — Python PBTライブラリ
 -  — 言語横断PBTプロトコル
 
 ## Sources

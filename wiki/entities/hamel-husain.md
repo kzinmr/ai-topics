@@ -3,6 +3,7 @@ title: "Hamel Husain"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-13
+type: entity
 ---
 
 
@@ -133,12 +134,12 @@ Co-authored with **Eugene Yan, Shreya Shankar, Jason Liu, Bryan Bischof, Charles
 -   [[shreya-shankar]] — Co-creator of AI evals course, collaborator on Applied LLMs guide.
 -   [[eugene-yan]] — Co-author on Applied LLMs guide, shared evals philosophy.
 -    — Mentor/collaborator at fast.ai and AnswerAI.
--   [[ai-evals]] — The evaluation framework he teaches.
+-   [[concepts/ai-evals]] — The evaluation framework he teaches.
 -   [[drmaciver]] — Property-based testing applied to LLM evaluation (`foundational-llm-evals`); PBT methodology for eval design.
 -   [[shreya-shankar]] — Co-creator of AI evals course, collaborator on Applied LLMs guide.
--   [[harness-engineering]] — His core engineering philosophy.
--   [[critique-shadowing]] — His signature methodology.
--   [[llm-as-judge]] — Core evaluation technique he critiques and teaches.
+-   [[concepts/harness-engineering]] — His core engineering philosophy.
+-   [[concepts/critique-shadowing]] — His signature methodology.
+-   [[concepts/llm-as-judge]] — Core evaluation technique he critiques and teaches.
 
 ## Sources
 

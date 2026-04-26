@@ -53,14 +53,14 @@ The Codex CLI's open-source nature allows:
 3. Bypass of the delayed public API for GPT-5.5
 4. Creates a "backdoor" to access frontier models at subscription prices
 
-See [[gpt-models]] for GPT model details, [[openai]] for company context, [[openai-agents-sdk]] for the official SDK approach.
+See [[concepts/gpt-models]] for GPT model details, [[openai]] for company context, [[concepts/openai-agents-sdk]] for the official SDK approach.
 
 ## Related Concepts
 
-- [[gpt-models]] — GPT-5.5 and the GPT model series
+- [[concepts/gpt-models]] — GPT-5.5 and the GPT model series
 - [[openai]] — OpenAI company and products
-- [[openai-agents-sdk]] — Official Agents SDK (alternative to subscription hooking)
-- [[harness-engineering]] — Harness engineering philosophy
+- [[concepts/openai-agents-sdk]] — Official Agents SDK (alternative to subscription hooking)
+- [[concepts/harness-engineering]] — Harness engineering philosophy
 - [[anthropic]] — Anthropic (competitor who blocked OpenClaw)
 
 ## Sources

@@ -56,6 +56,6 @@ Primary coordination failures:
 
 ## Related
 - 
-- [[long-context-coding-agents]]
-- [[harness-engineering]]
+- [[concepts/long-context-coding-agents]]
+- [[concepts/harness-engineering]]
 - 

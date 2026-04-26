@@ -3,6 +3,7 @@ title: "Grant Slatton"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Grant Slatton

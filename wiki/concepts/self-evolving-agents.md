@@ -1,8 +1,9 @@
 ---
 title: "Self-Evolving Agents"
-tags: [[agents-self-improvement-learning]]
+tags: [[concepts/agents-self-improvement-learning]]
 created: 2026-04-13
 updated: 2026-04-24
+type: concept
 ---
 
 # Self-Evolving Agents
@@ -74,7 +75,7 @@ Execute → Observe → Analyze → Adapt → Execute...
 
 ## Related
 
-- [[memory-systems-design-patterns]] — Memory Systems Design Patterns
-- [[agent-team-swarm]] — Agent Team / Swarm
-- [[harness-engineering]] — Harness Engineering
-- [[evaluation-flywheel]] — Evaluation Flywheel
+- [[concepts/memory-systems-design-patterns]] — Memory Systems Design Patterns
+- [[concepts/agent-team-swarm]] — Agent Team / Swarm
+- [[concepts/harness-engineering]] — Harness Engineering
+- [[concepts/evaluation-flywheel]] — Evaluation Flywheel

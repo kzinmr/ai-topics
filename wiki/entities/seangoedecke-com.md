@@ -3,6 +3,7 @@ title: "Sean Goedecke"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Sean Goedecke
@@ -141,9 +142,9 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 
 ## Related
 
-- [[ai-coding-tools]] — Code review as the meta-skill for AI-assisted development
-- [[software-engineering]] — Career progression, system design, tech industry dynamics
-- [[ai-sycophancy]] — AI models agreeing with users even when wrong
+- [[concepts/ai-coding-tools]] — Code review as the meta-skill for AI-assisted development
+- [[concepts/software-engineering]] — Career progression, system design, tech industry dynamics
+- [[concepts/ai-sycophancy]] — AI models agreeing with users even when wrong
 -  — Impact of interest rates on engineering hiring
 -  — Practical architecture, not interview prep
 -  — Code review, team dynamics, leadership

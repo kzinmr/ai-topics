@@ -64,7 +64,7 @@ Makes advanced harness techniques accessible without:
 - Stanford/MIT research paper (2026)
 
 ## Related
-- [[harness-engineering]]
+- [[concepts/harness-engineering]]
 - 
 - 
 - 

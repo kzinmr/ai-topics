@@ -3,6 +3,7 @@ title: "Muratcan Koylan (Koylan AI)"
 tags: [- context-engineering]
 created: 2026-04-24
 updated: 2026-04-10
+type: entity
 ---
 
 # Muratcan Koylan (Koylan AI)
@@ -147,11 +148,11 @@ Autonomous research pipeline using Firecrawl and Claude for enterprise AI case s
 
 ## Related Concepts
 
-- [[context-engineering]] — Koylan's primary discipline and focus area
-- [[multi-agent-systems]] — His core architectural expertise
-- [[harness-engineering/system-architecture/agent-skills]] — His open-source skill collection
-- [[file-system-as-database]] — His persistence philosophy
-- [[ai-persona-embodiment]] — His work on consistent agent personalities
+- [[concepts/context-engineering]] — Koylan's primary discipline and focus area
+- [[concepts/multi-agent-systems]] — His core architectural expertise
+- [[concepts/harness-engineering/system-architecture/agent-skills]] — His open-source skill collection
+- [[concepts/file-system-as-database]] — His persistence philosophy
+- [[concepts/ai-persona-embodiment]] — His work on consistent agent personalities
 -  — His defense-in-depth approach to agent safety
 -  — His preferred orchestration framework
 -  — His current domain at Sully.ai

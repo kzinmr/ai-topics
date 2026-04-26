@@ -1,8 +1,9 @@
 ---
 title: "Jeff Geerling"
-tags: [[person]]
+tags: [[concepts/person]]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -163,12 +164,12 @@ Geerling's product reviews are distinguished by their willingness to deliver neg
 
 ## Related Concepts
 
-- [[ansible]] — His primary automation tool and the subject of his best-selling book
-- [[raspberry-pi]] — His main platform for hardware experimentation and community projects
-- [[homelab]] — His philosophy of self-hosted, local-first computing infrastructure
-- [[open-source-sustainability]] — His advocacy for addressing maintainer burnout
-- [[ai-code-quality]] — His critique of AI-generated code and its impact on open-source ecosystems
-- [[local-first-computing]] — Running services on your own hardware, not in the cloud
+- [[concepts/ansible]] — His primary automation tool and the subject of his best-selling book
+- [[concepts/raspberry-pi]] — His main platform for hardware experimentation and community projects
+- [[concepts/homelab]] — His philosophy of self-hosted, local-first computing infrastructure
+- [[concepts/open-source-sustainability]] — His advocacy for addressing maintainer burnout
+- [[concepts/ai-code-quality]] — His critique of AI-generated code and its impact on open-source ecosystems
+- [[concepts/local-first-computing]] — Running services on your own hardware, not in the cloud
 -  — His analysis of the death of corporate-sponsored open-source licensing
 -  — Running AI inference on constrained hardware like Raspberry Pi and RISC-V
 -  — His open-source compact homelab rack design

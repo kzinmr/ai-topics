@@ -3,6 +3,7 @@ title: "Alex Banks"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-10
+type: entity
 ---
 
 
@@ -118,7 +119,7 @@ Despite working in AI, Banks consistently returns to the human element:
 -  — Platform where Banks teaches prompt engineering
 -  — AI analytics startup founded by Banks
 - [[anthropic]] — Frequent coverage subject; Banks is an early adopter of Claude Skills
-- [[resilient-prompt-engineering]] — Banks's core expertise area
+- [[concepts/resilient-prompt-engineering]] — Banks's core expertise area
 
 ## Sources
 

@@ -82,8 +82,8 @@ Five specialized agents for iterative correction:
 
 ## Related Concepts
 
-- [[agentic-alternative-to-graphrag]] — Contextual AI's specific approach: metadata search tool as traversal
-- [[knowledge-graph-memory-agents]] — Graph memory infrastructure for agents
-- [[vector-db-agent-memory]] — Vector database memory for agents
-- [[context-engineering]] — Dynamic token curation for optimal context
+- [[concepts/agentic-alternative-to-graphrag]] — Contextual AI's specific approach: metadata search tool as traversal
+- [[concepts/knowledge-graph-memory-agents]] — Graph memory infrastructure for agents
+- [[concepts/vector-db-agent-memory]] — Vector database memory for agents
+- [[concepts/context-engineering]] — Dynamic token curation for optimal context
 -  — Traditional RAG (precursor)

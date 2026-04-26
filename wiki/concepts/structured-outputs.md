@@ -1,8 +1,9 @@
 ---
 title: "Structured Outputs — Reliable LLM Output via Schema Validation"
-tags: [[llm-output-formatting-json-pydantic-reliability-type-safety-function-calling]]
+tags: [[concepts/llm-output-formatting-json-pydantic-reliability-type-safety-function-calling]]
 created: 2026-04-15
 updated: 2026-04-24
+type: concept
 ---
 
 # Structured Outputs — Reliable LLM Output via Schema Validation
@@ -71,8 +72,8 @@ OpenAI now offers native structured output via `response_format` parameter, guar
 
 ## Related
 
-- [[pydantic]] — Foundation library
-- [[pydantic-ai]] — Agent-level structured outputs
+- [[concepts/pydantic]] — Foundation library
+- [[concepts/pydantic-ai]] — Agent-level structured outputs
 -  — Constrained decoding with regex/grammars
 -  — Grammar-constrained generation
 - [[jason-liu]] — Instructor creator

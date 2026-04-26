@@ -19,9 +19,9 @@ Isolation exists on a spectrum from full OS-level separation to in-process VM em
 
 | Layer | Scope | Technologies | Latency | Isolation Mechanism | Best For |
 |-------|-------|-------------|---------|-------------------|----------|
-| **[[infrastructure]]** | OS/Hypervisor | Docker, Firecracker, gVisor, Kata, Zeroboot, OpenAI Agents SDK Sandboxes (Blaxel, Cloudflare, Daytona, E2B, Modal, Runloop, Vercel) | 0.8ms - 2s | Kernel namespaces, seccomp, VM boundaries, Harness/Compute separation | Full apps, GPU, multi-tenant |
-| **[[js-runtime]]** (Process mode) | OS Process | Bun CLI, Deno CLI, Node.js CLI | 1ms - 100ms | OS process boundary + runtime permissions | Agent CLI tools, TS execution, single-binary distribution |
-| **[[in-process]]** | VM/Memory space | Monty (Rust Python VM), Pyodide, QuickJS (embedded), V8 Isolates, WebContainer | 0.004ms - 2.8s | Memory isolation, bytecode VM, capabilities | Simple scripts, data transforms, zero-infra, code-mode |
+| **[[concepts/infrastructure]]** | OS/Hypervisor | Docker, Firecracker, gVisor, Kata, Zeroboot, OpenAI Agents SDK Sandboxes (Blaxel, Cloudflare, Daytona, E2B, Modal, Runloop, Vercel) | 0.8ms - 2s | Kernel namespaces, seccomp, VM boundaries, Harness/Compute separation | Full apps, GPU, multi-tenant |
+| **[[concepts/js-runtime]]** (Process mode) | OS Process | Bun CLI, Deno CLI, Node.js CLI | 1ms - 100ms | OS process boundary + runtime permissions | Agent CLI tools, TS execution, single-binary distribution |
+| **[[concepts/in-process]]** | VM/Memory space | Monty (Rust Python VM), Pyodide, QuickJS (embedded), V8 Isolates, WebContainer | 0.004ms - 2.8s | Memory isolation, bytecode VM, capabilities | Simple scripts, data transforms, zero-infra, code-mode |
 | **WASM** (emerging) | Browser/Sandbox | WASM + WASI | ~1ms | Capability-based sandbox, no OS access | Edge execution, portable code |
 
 > **Key distinction**: JS runtimes operate in **two modes**. When run as CLI (`bun script.ts`, `deno run app.ts`), they are **process-level isolation** — separate OS processes with their own memory space. When embedded (V8 Isolates in Cloudflare Workers, QuickJS in a C++ agent, WebContainer in a browser), they become **in-process isolation** — sharing the host process but separated by VM memory boundaries.
@@ -37,7 +37,7 @@ Infrastructure sandboxing spans five isolation levels, each trading performance 
 4. **WebAssembly** — Near-native performance, emerging GPU support
 5. **CoW Micro-VMs** (Zeroboot) — 0.79ms spawn, 480x density vs E2B
 
-For detailed platform comparison, see [[infrastructure]].
+For detailed platform comparison, see [[concepts/infrastructure]].
 
 ## Capabilities-Based Security (In-Process Layer)
 
@@ -51,7 +51,7 @@ Monty demonstrates a different philosophy: instead of starting with a full VM an
 | Escape vectors | Kernel exploits, container escapes | None (no kernel access) |
 | Best for | Full applications, third-party packages | Scripts, data transforms, code-mode |
 
-For detailed implementation, see [[in-process]].
+For detailed implementation, see [[concepts/in-process]].
 
 ## JS Runtime Layer (Bun, Deno, Node.js)
 
@@ -63,7 +63,7 @@ JavaScript runtimes form a critical but often overlooked layer of the AI agent s
 | **Deno** | V8 | Built-in security, TypeScript-native | Deno Deploy for edge AI agent execution |
 | **Node.js** | V8 | Largest npm ecosystem | Foundation of most existing JS-based agents |
 
-The **Anthropic × Bun acquisition** is strategically significant: Claude Code ships as a single Bun executable, and Anthropic now controls the runtime that AI agents depend on. For detailed runtime comparison, see [[js-runtime]].
+The **Anthropic × Bun acquisition** is strategically significant: Claude Code ships as a single Bun executable, and Anthropic now controls the runtime that AI agents depend on. For detailed runtime comparison, see [[concepts/js-runtime]].
 
 ## Decision Matrix: Which Sandbox for Your Agent?
 
@@ -80,9 +80,9 @@ The **Anthropic × Bun acquisition** is strategically significant: Claude Code s
 
 ## Related Concepts
 
-- [[harness-engineering]] — Monty as a harness environment (Ryan Lopopolo)
-- [[harness-engineering/system-architecture/agent-security-patterns]] — OpenAI's Egress Proxy approach
-- [[deep-agents]] — Deep agents consume all sandbox layers
-- [[anthropic-managed-agents]] — Brain/Hands/Session separation architecture
+- [[concepts/harness-engineering]] — Monty as a harness environment (Ryan Lopopolo)
+- [[concepts/harness-engineering/system-architecture/agent-security-patterns]] — OpenAI's Egress Proxy approach
+- [[concepts/deep-agents]] — Deep agents consume all sandbox layers
+- [[concepts/anthropic-managed-agents]] — Brain/Hands/Session separation architecture
 - [[jarred-sumner]] — Bun creator, joined Anthropic (Dec 2025)
 - [[ryan-dahl]] — Node.js and Deno creator

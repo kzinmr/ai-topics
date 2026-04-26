@@ -180,11 +180,11 @@ Photorealistic path tracer for rendering 3D scenes. Won top project out of 100 s
 
 ## Related Wikilinks
 
-- [[multimodal]] — Serverless compute platform he helped build
-- [[thinking-machines-lab]] — His current employer
-- [[rust-programming]] — His primary systems language
-- [[firecracker]] — Lightweight hypervisor used in ssh-hypervisor
-- [[datalog]] — Logic programming language used in Percival
+- [[concepts/multimodal]] — Serverless compute platform he helped build
+- [[concepts/thinking-machines-lab]] — His current employer
+- [[concepts/rust-programming]] — His primary systems language
+- [[concepts/firecracker]] — Lightweight hypervisor used in ssh-hypervisor
+- [[concepts/datalog]] — Logic programming language used in Percival
 -  — Domain of graphics-workshop and rpt
 -  — rustpad, sshx, Percival
 -  — His alma mater

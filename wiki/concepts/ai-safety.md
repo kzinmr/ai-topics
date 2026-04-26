@@ -1,8 +1,9 @@
 ---
 title: "AI Safety"
-tags: [[ai-safety-alignment-rlhf-scalable-oversight-interpretability]]
+tags: [[concepts/ai-safety-alignment-rlhf-scalable-oversight-interpretability]]
 created: 2026-04-19
 updated: 2026-04-24
+type: concept
 ---
 
 # AI Safety — Alignment, Oversight, and Interpretability
@@ -116,10 +117,10 @@ The exodus created two camps:
 
 ## Related Concepts
 
-- [[rlhf]] — Primary alignment technique
-- [[reasoning-models]] — Process supervision and step-by-step verification
-- [[ai-evals]] — Evaluation as a safety mechanism
-- [[harness-engineering]] — Constraining AI behavior through system design
+- [[concepts/rlhf]] — Primary alignment technique
+- [[concepts/reasoning-models]] — Process supervision and step-by-step verification
+- [[concepts/ai-evals]] — Evaluation as a safety mechanism
+- [[concepts/harness-engineering]] — Constraining AI behavior through system design
 
 ## Sources
 

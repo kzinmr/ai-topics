@@ -77,7 +77,7 @@ As organizations scale from a few AI agents to hundreds, they create a "digital 
 
 ## Related Concepts
 
-- [[agent-team-swarm]] — Multi-agent coordination framework
-- [[agent-communication-protocols]] — Protocols enabling conflict detection
-- [[multi-agent-orchestration-patterns]] — Orchestration styles affecting conflict patterns
-- [[evaluation-flywheel]] — Using evals to detect agent conflicts
+- [[concepts/agent-team-swarm]] — Multi-agent coordination framework
+- [[concepts/agent-communication-protocols]] — Protocols enabling conflict detection
+- [[concepts/multi-agent-orchestration-patterns]] — Orchestration styles affecting conflict patterns
+- [[concepts/evaluation-flywheel]] — Using evals to detect agent conflicts

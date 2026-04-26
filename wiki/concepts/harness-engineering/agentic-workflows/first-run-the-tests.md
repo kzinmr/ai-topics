@@ -65,9 +65,9 @@ Run "uv run pytest"
 
 ## 関連パターン
 
-- [[red-green-tdd]] — Red/Greenサイクルの次のステップ
-- [[agentic-manual-testing]] — 自動テスト後の手動探索テスト
-- [[harness-engineering/agentic-engineering]] — 上位概念
+- [[concepts/red-green-tdd]] — Red/Greenサイクルの次のステップ
+- [[concepts/agentic-manual-testing]] — 自動テスト後の手動探索テスト
+- [[concepts/harness-engineering/agentic-engineering]] — 上位概念
 
 ## 参照
 - [[simon-willison]] — このパターンの創始者

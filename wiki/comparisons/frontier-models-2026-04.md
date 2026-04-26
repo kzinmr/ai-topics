@@ -84,7 +84,7 @@ Available in Google AI Studio, Vertex AI, and Google Vids.
 ### Claude Mythos: The Model Too Risky to Release
 - Massive benchmark improvements over Opus 4.6
 - Exceptional vulnerability exploitation: 181 working Firefox exploits vs Opus's 2
-- Only available to 12 companies via [[project-glasswing]]
+- Only available to 12 companies via [[concepts/project-glasswing]]
 - Anthropic committed $100M in credits + $4M in security donations
 
 ### Meta's Muse Spark
@@ -110,7 +110,7 @@ Available in Google AI Studio, Vertex AI, and Google Vids.
 - [[claude-mythos]]
 - [[meta]]
 - [[muse-spark]]
-- [[project-glasswing]]
+- [[concepts/project-glasswing]]
 - [[openai]]
 - [[google-tpu]]
 - 

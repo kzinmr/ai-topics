@@ -85,9 +85,9 @@ A recurring theme in Xe's writing is the **human impact of automated systems**. 
 
 ## Related
 
-- [[small-internet]] — Protecting independent web infrastructure
-- [[web-security]] — Proof-of-work challenges, bot filtering
-- [[nixos]] — Declarative, reproducible infrastructure
+- [[concepts/small-internet]] — Protecting independent web infrastructure
+- [[concepts/web-security]] — Proof-of-work challenges, bot filtering
+- [[concepts/nixos]] — Declarative, reproducible infrastructure
 -  — The social dynamics of maintaining popular projects
 -  — Security-first thinking for open-source developers
 -  — Xe's organization

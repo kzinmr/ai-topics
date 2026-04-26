@@ -83,13 +83,13 @@ This reflects a core belief: **you can't truly understand historical software wi
 
 ## Related
 
-- [[game-engine-architecture]] — How classic engines were structured and evolved
-- [[software-rendering]] — Rasterization, span drawing, BSP trees, portal rendering
-- [[performance-optimization]] — Commit-level benchmarking, code deletion as optimization
-- [[assembly-optimization]] — Pipeline overlap, self-modifying code, FPU register management
-- [[id-software]] — Creator of DOOM, Quake, Wolfenstein 3D — Fabien's primary subject matter
+- [[concepts/game-engine-architecture]] — How classic engines were structured and evolved
+- [[concepts/software-rendering]] — Rasterization, span drawing, BSP trees, portal rendering
+- [[concepts/performance-optimization]] — Commit-level benchmarking, code deletion as optimization
+- [[concepts/assembly-optimization]] — Pipeline overlap, self-modifying code, FPU register management
+- [[concepts/id-software]] — Creator of DOOM, Quake, Wolfenstein 3D — Fabien's primary subject matter
 - [[john-carmack]] — Engine architect whose designs Fabien analyzes in depth
-- [[michael-abrash]] — Graphics programmer who wrote Quake's ASM optimizations
+- [[concepts/michael-abrash]] — Graphics programmer who wrote Quake's ASM optimizations
 -  — How limited resources drive creative engineering
 -  — Fabien's anti-bloat philosophy
 -  — Using diagrams and drawings to explain complex systems

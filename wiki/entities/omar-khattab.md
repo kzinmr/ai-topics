@@ -3,6 +3,7 @@ title: "Omar Khattab"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Omar Khattab (@lateinteraction)
@@ -285,9 +286,9 @@ Khattab's decomposition philosophy aligns with Anthropic's Harness Engineering p
 
 ## See Also
 
-- [[rlms]] — Recursive Language Models (co-author)
+- [[concepts/rlms]] — Recursive Language Models (co-author)
 - [[alex-zhang]] — PhD student, RLM first author
 -  — Late interaction retrieval (creator)
-- [[dspy]] — Declarative LM programming (creator)
-- [[gepa]] — Genetic-Pareto prompt optimization (creator)
+- [[concepts/dspy]] — Declarative LM programming (creator)
+- [[concepts/gepa]] — Genetic-Pareto prompt optimization (creator)
 -  — RLM co-author, MIT CSAIL databases/ML systems

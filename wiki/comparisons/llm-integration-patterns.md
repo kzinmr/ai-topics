@@ -3,6 +3,7 @@ title: "LLM Integration Patterns — A Comparative Taxonomy"
 tags: [training, ai-agents, llm, prompting, rAG, comparison]
 created: 2026-04-24
 updated: 2026-04-24
+type: comparison
 ---
 
 # LLM Integration Patterns: A Comparative Taxonomy
@@ -257,9 +258,9 @@ DSPy、RLMs、GEPAの共通点は、**特定のプロンプト文本体に依存
 
 ## See Also
 
-- [[dspy]] — 宣言的LMプログラミング
-- [[rlms]] — 再帰的言語モデル
-- [[gepa]] — 遺伝的プロンプト最適化
+- [[concepts/dspy]] — 宣言的LMプログラミング
+- [[concepts/rlms]] — 再帰的言語モデル
+- [[concepts/gepa]] — 遺伝的プロンプト最適化
 -  — エージェントワークフローパターン
 - [[omar-khattab]] — DSPy/GEPA/RLMsの創作者
 - [[alex-zhang]] — RLMsの第一著者

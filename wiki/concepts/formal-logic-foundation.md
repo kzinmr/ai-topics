@@ -87,7 +87,7 @@ Formal logic serves multiple roles in the NeSy architecture:
 
 ## See Also
 
-- [[neurosymbolic-ai]] — The parent concept
-- [[differential-symbolic-modules]] — How logic is made differentiable
+- [[concepts/neurosymbolic-ai]] — The parent concept
+- [[concepts/differential-symbolic-modules]] — How logic is made differentiable
 - [[dual-process-theory]] — Cognitive framework for System 1/System 2 reasoning
-- [[agentic-engineering]] — Where NeSy reasoning is applied in agent systems
+- [[concepts/agentic-engineering]] — Where NeSy reasoning is applied in agent systems

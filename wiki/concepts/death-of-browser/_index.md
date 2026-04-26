@@ -188,10 +188,10 @@ Stage 1 (2024)     Stage 2 (2025)         Stage 3 (2026)
 
 ## 関連コンセプト
 
-- [[harness-engineering]] — エージェント環境設計
+- [[concepts/harness-engineering]] — エージェント環境設計
 -  — エージェントを活用したソフトウェア開発
 -  — マネージドエージェントアーキテクチャ
-- [[model-context-protocol-mcp]] — Model Context Protocol
+- [[concepts/model-context-protocol-mcp]] — Model Context Protocol
 
 ## 関連エンティティ
 

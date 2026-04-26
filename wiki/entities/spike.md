@@ -3,6 +3,7 @@ title: "Spike (Mike Doan)"
 tags: [training, ai-agents, llm, entity, rAG, inference]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Spike (Mike Doan)
@@ -120,12 +121,12 @@ Spike's "spikisms" are aphoristic technical insights that blend computational th
 
 ## Related Wikilinks
 
-- [[ml-systems]] — Spike's domain of expertise: building minimal, interpretable ML stacks
-- [[transformer-architecture]] — The "attention is logarithmic" analysis of attention complexity
-- [[tinygrad]] — The ML inference engine used in BrainChop
-- [[brainchop]] — His portable brain segmentation tool
-- [[work-depth-analysis]] — The computational complexity model Spike advocates for parallel systems
-- [[software-minimalism]] — The philosophical commitment to small, readable code
+- [[concepts/ml-systems]] — Spike's domain of expertise: building minimal, interpretable ML stacks
+- [[concepts/transformer-architecture]] — The "attention is logarithmic" analysis of attention complexity
+- [[concepts/tinygrad]] — The ML inference engine used in BrainChop
+- [[concepts/brainchop]] — His portable brain segmentation tool
+- [[concepts/work-depth-analysis]] — The computational complexity model Spike advocates for parallel systems
+- [[concepts/software-minimalism]] — The philosophical commitment to small, readable code
 -  — His llm.nvim project and views on AI in programming
 -  — The instruction set architecture used in the 100K line ML stack proposal
 -  — The concept of systems that can build themselves

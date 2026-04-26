@@ -82,7 +82,7 @@ On April 14, 2026, OpenAI expanded its cybersecurity posture with two announceme
 
 OpenAI frames these initiatives as "democratizing access" to cybersecurity tools, though the practical effect is a verification gate that mirrors the restricted-access approach taken by other frontier labs.
 
-See [[cybersecurity-proof-of-work]] for analysis of the economic implications.
+See [[concepts/cybersecurity-proof-of-work]] for analysis of the economic implications.
 
 ### Concurrent with Model Lockdowns
 
@@ -118,10 +118,10 @@ If Chinese competitors successfully replicate GPT-4 or Claude-class capability a
 
 ## Related
 
-- [[anthropic-openclaw-conflict]] — Anthropic's concurrent restrictions on third-party tool access
-- [[open-model-consortium]] — Contrast: open model coalition vs. closed model alliance
-- [[meta-muse-spark]] — Meta's strategic shift to closed-source
-- [[claude-mythos-preview]] — Anthropic's cautious release approach
+- [[concepts/anthropic-openclaw-conflict]] — Anthropic's concurrent restrictions on third-party tool access
+- [[concepts/open-model-consortium]] — Contrast: open model coalition vs. closed model alliance
+- [[concepts/meta-muse-spark]] — Meta's strategic shift to closed-source
+- [[concepts/claude-mythos-preview]] — Anthropic's cautious release approach
 
 ## Sources
 

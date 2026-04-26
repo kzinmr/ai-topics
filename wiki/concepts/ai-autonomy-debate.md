@@ -5,7 +5,7 @@ created: 2026-04-10
 updated: 2026-04-10
 tags: [concept, ai-agents, autonomy, human-in-the-loop, safety]
 aliases: ["autonomy-obsession", "hitl-vs-autonomous"]
-related: , [[anthropic-managed-agents]], [[ai-agent-traps]]
+related: , [[concepts/anthropic-managed-agents]], [[concepts/ai-agent-traps]]
 sources: []
 ---
 
@@ -146,10 +146,10 @@ The phrase earning traction: **"Trust comes before autonomy. You don't earn the 
 ## Related Concepts
 
 -  — The practice of directing AI agents rather than writing code
-- [[anthropic-managed-agents]] — Hosted agent services and the debate around them
-- [[ai-agent-traps]] — Common pitfalls in agent deployment and design
-- [[compute-scaling-bottlenecks]] — Infrastructure constraints affecting agent capabilities
-- [[cognitive-cost-of-agents]] — The human cognitive burden of managing AI agents
+- [[concepts/anthropic-managed-agents]] — Hosted agent services and the debate around them
+- [[concepts/ai-agent-traps]] — Common pitfalls in agent deployment and design
+- [[concepts/compute-scaling-bottlenecks]] — Infrastructure constraints affecting agent capabilities
+- [[concepts/cognitive-cost-of-agents]] — The human cognitive burden of managing AI agents
 
 ## Sources
 

@@ -39,20 +39,20 @@ StrongDMはこのLevel 5を実践し、Anthropic Managed AgentsとOpenAI Symphon
 - **Brain（Claude + harness） / Hands（sandbox） / Session（event log）**を完全分離
 - Multi-Agent Coordination（リサーチプレビュー）: Agentが他のAgentをspawn可能
 - Self-Evaluation（リサーチプレビュー）: 成功基準を定義し自律的に評価・改善
-- 詳細: [[anthropic-managed-agents]]
+- 詳細: [[concepts/anthropic-managed-agents]]
 
 ### OpenAI Symphony
 - Linear等のタスクボードを監視し、Agentチームをspawnして実行
 - SPEC.mdを提供 → 任意の言語で実装可能（参照実装はElixir）
 - Coding Agentを「管理」するのではなく「仕事を管理」するパラダイム
 - Ryan LopopoloがOpenAI Frontierで開発。3-5 PR/日 → 75 PR/週の実績
-- 詳細: [[openai-symphony]], [[ryan-lopopolo]]
+- 詳細: [[concepts/openai-symphony]], [[ryan-lopopolo]]
 
 ### StrongDM Attractor / Dark Factory
 - 非インタラクティブ開発: 仕様 + シナリオ → Agentがコード作成 → テスト → 収束
 - 人間はコードを一切見ない・レビューしない
 - Digital Twin Universe: 依存サービスをAgentでクローン
-- 詳細: [[dark-factory-software-factory]]
+- 詳細: [[concepts/dark-factory-software-factory]]
 
 ## 2026 Production Architecture Patterns
 
@@ -80,10 +80,10 @@ Centralized state store with **optimistic concurrency control** (e.g., Redis Lua
 
 ## 関連概念
 
-- [[harness-engineering]] — 単一Agentの実行環境設計（基礎）
-- [[multi-agent-autonomy-scale]] — 256Agentスケールの自律協調研究
-- [[harness-engineering/agentic-engineering-patterns]] — Agentic Engineeringのパターン集
+- [[concepts/harness-engineering]] — 単一Agentの実行環境設計（基礎）
+- [[concepts/multi-agent-autonomy-scale]] — 256Agentスケールの自律協調研究
+- [[concepts/harness-engineering/agentic-engineering-patterns]] — Agentic Engineeringのパターン集
 - [[ryan-lopopolo]] — Symphonyの作者、Harness Engineering提唱者
-- [[agent-communication-protocols]] — MCP/A2A/ACP プロトコル比較
-- [[agentic-conflict-resolution]] — 複数Agent間の競合検出・解決
-- [[zero-trust-agentic-ai]] — Agentのセキュリティ基盤
+- [[concepts/agent-communication-protocols]] — MCP/A2A/ACP プロトコル比較
+- [[concepts/agentic-conflict-resolution]] — 複数Agent間の競合検出・解決
+- [[concepts/zero-trust-agentic-ai]] — Agentのセキュリティ基盤

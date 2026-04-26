@@ -5,7 +5,7 @@ created: 2026-04-10
 updated: 2026-04-10
 tags: [concept, privacy, cors, browser-security, ai-agents, web-scraping]
 aliases: ["ai-privacy-techniques", "cors-bypass", "agent-browser-security"]
-related: [[claude-mythos-glasswing]], [[ai-agent-traps]], [[agent-sandboxing]], [[anthropic-managed-agents]]
+related: [[concepts/claude-mythos-glasswing]], [[concepts/ai-agent-traps]], [[concepts/agent-sandboxing]], [[concepts/anthropic-managed-agents]]
 sources: []
 ---
 
@@ -147,10 +147,10 @@ This vulnerability pattern affects many local AI development tools that listen o
 
 ## Related Concepts
 
-- [[claude-mythos-glasswing]] — Anthropic's approach to agent security and data handling
-- [[ai-agent-traps]] — Common pitfalls in agent deployment and design
-- [[agent-sandboxing]] — Isolation technologies for safe agent execution
-- [[anthropic-managed-agents]] — Managed agent services and their security approaches
+- [[concepts/claude-mythos-glasswing]] — Anthropic's approach to agent security and data handling
+- [[concepts/ai-agent-traps]] — Common pitfalls in agent deployment and design
+- [[concepts/agent-sandboxing]] — Isolation technologies for safe agent execution
+- [[concepts/anthropic-managed-agents]] — Managed agent services and their security approaches
 -  — The practice of directing AI agents in software development
 
 ## Sources

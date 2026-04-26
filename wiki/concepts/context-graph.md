@@ -1,8 +1,9 @@
 ---
 title: "Context Graph"
-tags: [[concept-context-graph-decision-trace-system-of-record-foundation-capital]]
+tags: [[concepts/concept-context-graph-decision-trace-system-of-record-foundation-capital]]
 created: 2026-04-20
 updated: 2026-04-24
+type: concept
 ---
 
 # Context Graph
@@ -174,10 +175,10 @@ As decision traces accumulate, enterprises need to monitor, debug, and evaluate 
 
 ## Related Concepts
 
-- [[harness-engineering]] — Context graphs are the *data layer* of the harness; the orchestration layer that captures traces is the harness itself
-- [[ai-evals]] — Evals measure decision quality; context graphs provide the training data for better future decisions
-- [[model-context-protocol-mcp]] — MCP enables cross-system context retrieval, a technical prerequisite for context graphs
-- [[multi-agent-consensus-patterns]] — Multi-agent systems need shared context graphs to maintain decision consistency
+- [[concepts/harness-engineering]] — Context graphs are the *data layer* of the harness; the orchestration layer that captures traces is the harness itself
+- [[concepts/ai-evals]] — Evals measure decision quality; context graphs provide the training data for better future decisions
+- [[concepts/model-context-protocol-mcp]] — MCP enables cross-system context retrieval, a technical prerequisite for context graphs
+- [[concepts/multi-agent-consensus-patterns]] — Multi-agent systems need shared context graphs to maintain decision consistency
 - [[simon-willison]] — Simon Willison has written extensively on AI agent architecture and tools-for-thinking
 
 ## Source

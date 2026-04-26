@@ -76,6 +76,6 @@ BASE systems align with **AP (Availability + Partition Tolerance)** in the CAP t
 - Monitor event processing delays
 
 ## Related Concepts
-- [[event-driven-architecture]]
+- [[concepts/event-driven-architecture]]
 - 
-- [[microservices-vs-monolith]]
+- [[concepts/microservices-vs-monolith]]

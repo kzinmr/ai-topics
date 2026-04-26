@@ -16,11 +16,11 @@ status: skeleton
 
 **Agent Swarms（自律分散型エージェントの創発的振る舞い）** は、中央調整者なしで複数のエージェントが局所的な相互作用から集団的な知能や秩序を生み出すパターン。
 
-既存の [[agent-team-swarm]]（階層的オーケストレーション、管理されたチーム協調）とは異なり、生物学的スワーム（鳥の群れ、アリの集団行動）からインスピレーションを得た**自律分散型**アプローチに焦点を当てる。
+既存の [[concepts/agent-team-swarm]]（階層的オーケストレーション、管理されたチーム協調）とは異なり、生物学的スワーム（鳥の群れ、アリの集団行動）からインスピレーションを得た**自律分散型**アプローチに焦点を当てる。
 
 ## agent-team-swarm との比較
 
-| 側面 | Agent Team / Swarm ([[agent-team-swarm]]) | Agent Swarms (創発的振る舞い) |
+| 側面 | Agent Team / Swarm ([[concepts/agent-team-swarm]]) | Agent Swarms (創発的振る舞い) |
 |---|---|---|
 | アーキテクチャ | 階層的・オーケストレーター駆動 | 分散型・ピアツーピア |
 | 制御 | 中央管理者がタスク分解・割り当て | 局所ルールからの創発 |
@@ -103,11 +103,11 @@ MAEBEフレームワーク ([arXiv:2506.03053](https://arxiv.org/abs/2506.03053)
 
 ## 関連概念
 
-- [[multi-agent-consensus-patterns]] — 分散合意形成プロトコル
-- [[agent-team-swarm]] — 階層的・管理されたマルチエージェント協調
-- [[agentic-engineering]] — エージェント駆動開発の上位概念
-- [[self-evolving-agents]] — 自己改善型エージェント
-- [[multi-agent-orchestration-patterns]] — マルチエージェントオーケストレーション
+- [[concepts/multi-agent-consensus-patterns]] — 分散合意形成プロトコル
+- [[concepts/agent-team-swarm]] — 階層的・管理されたマルチエージェント協調
+- [[concepts/agentic-engineering]] — エージェント駆動開発の上位概念
+- [[concepts/self-evolving-agents]] — 自己改善型エージェント
+- [[concepts/multi-agent-orchestration-patterns]] — マルチエージェントオーケストレーション
 
 ## TODO: 調査項目
 

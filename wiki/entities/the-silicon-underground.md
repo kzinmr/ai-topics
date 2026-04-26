@@ -3,6 +3,7 @@ title: "Dave Farquhar (The Silicon Underground)"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Dave Farquhar (The Silicon Underground)
@@ -117,7 +118,7 @@ Farquhar treats these companies with the same seriousness as Intel and Microsoft
 
 ## Related
 
-- [[the-silicon-underground-archives]] — Farquhar's 2,000+ post archive at dfarq.homeip.net
+- [[concepts/the-silicon-underground-archives]] — Farquhar's 2,000+ post archive at dfarq.homeip.net
 -  — the legendary Menlo Park hobbyist group Farquhar has extensively documented
 -  — Brian Potter's newsletter; shares Farquhar's deep-dive approach to industrial history
 - [[tedium-the-dull-side-of-the-internet]] — Ernie Smith's newsletter; both cover forgotten technology stories with scholarly rigor

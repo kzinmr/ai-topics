@@ -90,7 +90,7 @@ Daniel has been a vocal advocate for **community evals** over black-box leaderbo
 
 ### Tools & Infrastructure
 
-- **hub-semantic-search-mcp** — An [[mcp|Model Context Protocol]] server for semantic search across the Hugging Face Hub, enabling natural language queries like "Find around 10 reasoning Hugging Face datasets published in 2025 focusing on topics other than maths and science."
+- **hub-semantic-search-mcp** — An [[concepts/mcp]] server for semantic search across the Hugging Face Hub, enabling natural language queries like "Find around 10 reasoning Hugging Face datasets published in 2025 focusing on topics other than maths and science."
 - **Genstruct 7B** — Contributed to an instruction-generation model designed to create valid instructions given raw text, part of the synthetic data generation ecosystem.
 - **ColPali + Qdrant pipelines** — Built multivector indexing and search systems for specialized document datasets (e.g., UFO document collections).
 

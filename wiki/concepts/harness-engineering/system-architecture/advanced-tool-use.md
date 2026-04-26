@@ -177,6 +177,6 @@ print(json.dumps(exceeded))
 
 ## 関連概念
 
-- [[harness-engineering]] — 上位インデックス
-- [[harness-engineering/system-architecture/writing-tools-for-agents]] — エージェント用ツール設計の5原則
-- [[context-engineering]] — コンテキストエンジニアリング
+- [[concepts/harness-engineering]] — 上位インデックス
+- [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — エージェント用ツール設計の5原則
+- [[concepts/context-engineering]] — コンテキストエンジニアリング

@@ -13,7 +13,7 @@ sources: []
 > 共著: [[milksandmatcha|Sarah Chieng]] (@MilksandMatcha) + [[sero|Sero]] (@0xSero)
 > 初出: Xスレッド「Single-agent AI coding is a nightmare for engineers」(2026年4月)
 
-プロの厨房（Back of House）のメタファーを用いたマルチエージェント・ワークフローパターン。単一エージェントの限界（[[single-agent-ceiling]]）を解決するための実践的フレームワーク。
+プロの厨房（Back of House）のメタファーを用いたマルチエージェント・ワークフローパターン。単一エージェントの限界（[[concepts/single-agent-ceiling]]）を解決するための実践的フレームワーク。
 
 ## 背景：Single-Agent Ceiling
 
@@ -160,13 +160,13 @@ Codex Sparkのような高速コーディングモデルが利用可能になっ
 
 ## 関連概念
 
-- [[single-agent-ceiling]] — 単一エージェントの限界と「Sloperator」アンチパターン
-- [[session-hierarchy-management]] — 本パターンとtrq212のセッション管理を統合した3階層フレームワーク
-- [[context-window-management]] — Level 1: 単一セッション内のコンテキスト衛生
-- [[agent-team-swarm]] — マルチエージェントチームの階層的オーケストレーション
-- [[harness-engineering/agentic-workflows/subagents]] — サブエージェントの委任パターン
-- [[harness-engineering]] — エンジニアのエージェント活用方法论
-- [[context-engineering]] — コンテキストエンジニアリング
+- [[concepts/single-agent-ceiling]] — 単一エージェントの限界と「Sloperator」アンチパターン
+- [[concepts/session-hierarchy-management]] — 本パターンとtrq212のセッション管理を統合した3階層フレームワーク
+- [[concepts/context-window-management]] — Level 1: 単一セッション内のコンテキスト衛生
+- [[concepts/agent-team-swarm]] — マルチエージェントチームの階層的オーケストレーション
+- [[concepts/harness-engineering/agentic-workflows/subagents]] — サブエージェントの委任パターン
+- [[concepts/harness-engineering]] — エンジニアのエージェント活用方法论
+- [[concepts/context-engineering]] — コンテキストエンジニアリング
 
 ## ソース
 

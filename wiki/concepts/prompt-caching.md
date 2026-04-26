@@ -1,8 +1,9 @@
 ---
 title: "Prompt Caching Strategies"
-tags: [[caching-performance-cost-optimization]]
+tags: [[concepts/caching-performance-cost-optimization]]
 created: 2026-04-13
 updated: 2026-04-24
+type: concept
 ---
 
 # Prompt Caching Strategies
@@ -95,7 +96,7 @@ cache_key = hash(
 
 ## Related
 
-- [[evaluation-flywheel]] — Evaluation Flywheel
-- [[context-window-management]] — Context Window Management
-- [[inference-speed-development]] — Inference Speed Development
-- [[agentic-scaffolding]] — Agentic Scaffolding
+- [[concepts/evaluation-flywheel]] — Evaluation Flywheel
+- [[concepts/context-window-management]] — Context Window Management
+- [[concepts/inference-speed-development]] — Inference Speed Development
+- [[concepts/agentic-scaffolding]] — Agentic Scaffolding

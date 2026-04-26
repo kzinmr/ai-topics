@@ -89,6 +89,6 @@ command → plan → tool call → environment feedback → iterate → result
 
 ## 関連概念
 
-- [[harness-engineering]] — 上位インデックス
-- [[context-engineering]] — コンテキスト管理
-- [[harness-engineering/system-architecture/evals-for-ai-agents]] — エージェント評価
+- [[concepts/harness-engineering]] — 上位インデックス
+- [[concepts/context-engineering]] — コンテキスト管理
+- [[concepts/harness-engineering/system-architecture/evals-for-ai-agents]] — エージェント評価

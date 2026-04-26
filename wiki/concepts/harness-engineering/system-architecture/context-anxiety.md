@@ -1,8 +1,9 @@
 ---
 title: "Context Anxiety"
-tags: [[context-management-cognition-claude-models]]
+tags: [[concepts/context-management-cognition-claude-models]]
 created: 2026-04-23
 updated: 2026-04-24
+type: concept
 ---
 
 # Context Anxiety — Model-Specific Context Limits
@@ -42,6 +43,6 @@ Agents become unreliable when context windows exceed **model-specific thresholds
 
 ## See Also
 
-- [[cognition-devin-philosophy]] — Main Cognition philosophy
-- [[context-window-management]] — General context management patterns
-- [[harness-engineering/agentic-workflows/context-window-management]] — Simon Willison's context patterns
+- [[concepts/cognition-devin-philosophy]] — Main Cognition philosophy
+- [[concepts/context-window-management]] — General context management patterns
+- [[concepts/harness-engineering/agentic-workflows/context-window-management]] — Simon Willison's context patterns

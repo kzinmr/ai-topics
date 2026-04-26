@@ -159,12 +159,12 @@ His RAIVN Lab (Reasoning, AI, and VisioN) at UW, co-directed with Ranjay Krishna
 ## Related
 
 - [[mustafa-suleyman]] — Microsoft AI CEO who hired Farhadi's team
-- [[hanna-hajishirzi]] — OLMo project lead, UW NLP professor, Farhadi's spouse, joined Microsoft alongside him
-- [[ranjay-krishna]] — Molmo lead, RAIVN Lab co-director, joined Microsoft alongside Farhadi
-- [[joseph-redmon]] — YOLO co-author; stopped CV research citing military/privacy concerns
-- [[olmo-open-language-model]] — Farhadi's flagship open LLM project at Ai2
-- [[open-model-consortium]] — Collaborative open-source AI model development
-- [[object-detection]] — YOLO and the real-time detection paradigm
+- [[concepts/hanna-hajishirzi]] — OLMo project lead, UW NLP professor, Farhadi's spouse, joined Microsoft alongside him
+- [[concepts/ranjay-krishna]] — Molmo lead, RAIVN Lab co-director, joined Microsoft alongside Farhadi
+- [[concepts/joseph-redmon]] — YOLO co-author; stopped CV research citing military/privacy concerns
+- [[concepts/olmo-open-language-model]] — Farhadi's flagship open LLM project at Ai2
+- [[concepts/open-model-consortium]] — Collaborative open-source AI model development
+- [[concepts/object-detection]] — YOLO and the real-time detection paradigm
 -  — Agents that understand and interact with physical environments
 -  — Farhadi's distinctive safety approach
 -  — Beyond recognition to understanding "why" and "what next"

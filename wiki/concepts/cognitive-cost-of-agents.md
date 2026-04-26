@@ -3,6 +3,7 @@ title: "Cognitive Cost of Agents"
 tags: [concept, ai-agents, llm, prompting, rAG, inference]
 created: 2026-04-24
 updated: 2026-04-24
+type: concept
 ---
 
 # Cognitive Cost of Agents
@@ -11,7 +12,7 @@ updated: 2026-04-24
 **Updated:** April 13, 2026
 **Source:** Simon Willison's Weblog — "The cognitive impact of coding agents"
 **Author:** [[simon-willison]] (simonw)
-**Related:** [[agentic-engineering]], [[vibe-coding]], [[anthropic-managed-agents]], [[agent-orchestration-frameworks]]
+**Related:** [[concepts/agentic-engineering]], [[concepts/vibe-coding]], [[concepts/anthropic-managed-agents]], [[concepts/agent-orchestration-frameworks]]
 
 ---
 
@@ -93,10 +94,10 @@ The most significant risk Willison identified: developers may become **passive r
 
 ## Related Concepts
 
-- [[agentic-engineering]] — Willison's broader framework for working with AI coding agents
-- [[vibe-coding]] — The practice of building software through natural language prompts; cognitive cost is a counterpoint
-- [[anthropic-managed-agents]] — Managed agent services raise the same cognitive ownership questions
-- [[agent-orchestration-frameworks]] — Multi-agent systems amplify the cognitive debt problem
+- [[concepts/agentic-engineering]] — Willison's broader framework for working with AI coding agents
+- [[concepts/vibe-coding]] — The practice of building software through natural language prompts; cognitive cost is a counterpoint
+- [[concepts/anthropic-managed-agents]] — Managed agent services raise the same cognitive ownership questions
+- [[concepts/agent-orchestration-frameworks]] — Multi-agent systems amplify the cognitive debt problem
 -  — More powerful agents increase both productivity gains and cognitive risks
 
 ---

@@ -3,6 +3,7 @@ title: "Rahul Sengottuvelu"
 tags: [ai-agents, llm, prompting, entity, rAG, evaluations, inference]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Rahul Sengottuvelu
@@ -94,11 +95,11 @@ At Ramp, Sengottuvelu's team uses constrained decoding to extract structured inf
 
 ## Related Wikilinks
 
-- [[ai-agent-architecture]] — Sengottuvelu's work on agent scaffolding and the "bitter lesson" applied to AI agents
-- [[constrained-decoding]] — The technique pioneered in Jsonformer for reliable structured output
-- [[ramp]] — The fintech company where Sengottuvelu currently leads Applied AI
-- [[cohereio]] — His co-founded startup, acquired by Ramp in 2023
-- [[rich-suttons-bitter-lesson]] — The foundational essay that informs Sengottuvelu's approach to AI agent design
+- [[concepts/ai-agent-architecture]] — Sengottuvelu's work on agent scaffolding and the "bitter lesson" applied to AI agents
+- [[concepts/constrained-decoding]] — The technique pioneered in Jsonformer for reliable structured output
+- [[concepts/ramp]] — The fintech company where Sengottuvelu currently leads Applied AI
+- [[concepts/cohereio]] — His co-founded startup, acquired by Ramp in 2023
+- [[concepts/rich-suttons-bitter-lesson]] — The foundational essay that informs Sengottuvelu's approach to AI agent design
 -  — Sengottuvelu's concept of a future where AI agents interact with products programmatically
 -  — His position on LLMs as engineering partners, not replacements
 -  — The application of constrained decoding to financial document processing

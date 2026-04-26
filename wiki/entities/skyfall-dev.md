@@ -3,6 +3,7 @@ title: "Skyfall Developer (Mahad Kalam)"
 tags: [ai-agents, llm, entity, rAG, inference]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Skyfall Developer (Mahad Kalam)
@@ -125,9 +126,9 @@ His projects share a common philosophy: **build tools that solve actual problems
 
 ## Related
 
-- [[hack-club]] — Teenager-run coding community and organization
-- [[digital-minimalism]] — Conscious technology use, lightweight websites
-- [[saas-dependency]] — Risks of entrusting data to proprietary platforms
+- [[concepts/hack-club]] — Teenager-run coding community and organization
+- [[concepts/digital-minimalism]] — Conscious technology use, lightweight websites
+- [[concepts/saas-dependency]] — Risks of entrusting data to proprietary platforms
 -  — Mattermost, self-hosted alternatives
 -  — Parasocial AI relationships, user safety, deprecation
 -  — Procurement failures, consultancy costs, taxpayer value

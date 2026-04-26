@@ -28,16 +28,16 @@ sources:
   - "https://code.claude.com/docs/en/claude-code-on-the-web"
   - "https://www.reddit.com/r/ChatGPTCoding/"
 related:
-  - "[[harness-engineering]]"
-  - "[[context-engineering]]"
-  - "[[building-effective-agents]]"
-  - "[[harness-engineering/agentic-engineering]]"
-  - "[[inference-speed-development]]"
-  - "[[claude-code-source-patterns]]"
-  - "[[context-window-management]]"
-  - "[[ai-coding-reliability]]"
-  - "[[harness-engineering/agentic-workflows/using-git-with-agents]]"
-  - "[[harness-engineering/agentic-workflows/interactive-explanations]]"
+  - "[[concepts/harness-engineering]]"
+  - "[[concepts/context-engineering]]"
+  - "[[concepts/building-effective-agents]]"
+  - "[[concepts/harness-engineering/agentic-engineering]]"
+  - "[[concepts/inference-speed-development]]"
+  - "[[concepts/claude-code-source-patterns]]"
+  - "[[concepts/context-window-management]]"
+  - "[[concepts/ai-coding-reliability]]"
+  - "[[concepts/harness-engineering/agentic-workflows/using-git-with-agents]]"
+  - "[[concepts/harness-engineering/agentic-workflows/interactive-explanations]]"
 ---
 
 # Claude Code Best Practices
@@ -354,7 +354,7 @@ Claude opens one session per PR and continues feeding updates (comments, CI fail
 4. **Run tests** — Verify nothing broke
 5. **Commit** — With descriptive message
 
-## Connection to [[harness-engineering/agentic-engineering]]
+## Connection to [[concepts/harness-engineering/agentic-engineering]]
 
 These best practices embody the agentic engineering philosophy:
 
@@ -368,14 +368,14 @@ These best practices embody the agentic engineering philosophy:
 
 ## 関連概念
 
-- [[harness-engineering]] — 上位インデックス
-- [[context-engineering]] — コンテキストエンジニアリング
-- [[building-effective-agents]] — エージェント構築の基本原理
-- [[harness-engineering/agentic-workflows/using-git-with-agents]] — エージェントとのGit使用
-- [[inference-speed-development]] — 高速イテレーション開発
-- [[claude-code-source-patterns]] — Claude Code内部パターン
-- [[context-window-management]] — コンテキスト管理
-- [[ai-coding-reliability]] — AIコーディングの信頼性
+- [[concepts/harness-engineering]] — 上位インデックス
+- [[concepts/context-engineering]] — コンテキストエンジニアリング
+- [[concepts/building-effective-agents]] — エージェント構築の基本原理
+- [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] — エージェントとのGit使用
+- [[concepts/inference-speed-development]] — 高速イテレーション開発
+- [[concepts/claude-code-source-patterns]] — Claude Code内部パターン
+- [[concepts/context-window-management]] — コンテキスト管理
+- [[concepts/ai-coding-reliability]] — AIコーディングの信頼性
 
 ## Sources
 

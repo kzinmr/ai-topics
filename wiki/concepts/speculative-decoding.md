@@ -45,7 +45,7 @@ The target model can verify multiple draft tokens in a single forward pass (same
 
 ## Token Economics Connection
 
-Speculative decoding directly impacts [[token-economics]]:
+Speculative decoding directly impacts [[concepts/token-economics]]:
 - **Cost reduction:** 2-4x throughput = 50-75% fewer GPU hours per output
 - **Latency improvement:** Critical for interactive applications (chat, coding assistants)
 - **Memory efficiency:** No additional GPU memory needed beyond draft model
@@ -66,10 +66,10 @@ Speculative decoding directly impacts [[token-economics]]:
 
 ## Related
 
-- [[token-economics]] — Throughput optimization and cost reduction
-- [[attention-mechanism-variants]] — Different attention mechanisms affect speculative decoding performance
-- [[local-llm/model-quantization]] — Quantization can be combined with speculative decoding
-- [[local-llm]] — Inference optimization techniques
+- [[concepts/token-economics]] — Throughput optimization and cost reduction
+- [[concepts/attention-mechanism-variants]] — Different attention mechanisms affect speculative decoding performance
+- [[concepts/local-llm/model-quantization]] — Quantization can be combined with speculative decoding
+- [[concepts/local-llm]] — Inference optimization techniques
 
 ## Sources
 

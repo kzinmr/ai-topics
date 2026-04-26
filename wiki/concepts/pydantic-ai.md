@@ -1,8 +1,9 @@
 ---
 title: "Pydantic AI — Type-Safe Python Agent Framework"
-tags: [[ai-agents-framework-python-type-safety-structured-outputs-pydantic]]
+tags: [[concepts/ai-agents-framework-python-type-safety-structured-outputs-pydantic]]
 created: 2026-04-16
 updated: 2026-04-24
+type: concept
 ---
 
 # Pydantic AI — Type-Safe Python Agent Framework
@@ -72,8 +73,8 @@ print(result.data)  # Type-safe CityInfo object
 
 ## Related
 
-- [[code-mode]] — Upcoming Monty integration
-- [[structured-outputs]] — Core validation approach
-- [[ai-observability]] — Logfire integration
-- [[harness-engineering]] — Type safety as harness constraint
+- [[concepts/code-mode]] — Upcoming Monty integration
+- [[concepts/structured-outputs]] — Core validation approach
+- [[concepts/ai-observability]] — Logfire integration
+- [[concepts/harness-engineering]] — Type safety as harness constraint
 - [[samuel-colvin]] — Creator/CEO

@@ -1,8 +1,9 @@
 ---
 title: "Resilient Prompt Engineering"
-tags: [[prompt-engineering-resilience-design-patterns]]
+tags: [[concepts/prompt-engineering-resilience-design-patterns]]
 created: 2026-04-13
 updated: 2026-04-24
+type: concept
 ---
 
 # Resilient Prompt Engineering
@@ -79,6 +80,6 @@ Step 4: Execute and verify
 
 ## Related
 
-- [[direct-prompting-philosophy]] — Direct Prompting Philosophy
-- [[evaluation-flywheel]] — Evaluation Flywheel
-- [[agentic-scaffolding]] — Agentic Scaffolding
+- [[concepts/direct-prompting-philosophy]] — Direct Prompting Philosophy
+- [[concepts/evaluation-flywheel]] — Evaluation Flywheel
+- [[concepts/agentic-scaffolding]] — Agentic Scaffolding

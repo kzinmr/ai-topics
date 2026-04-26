@@ -3,13 +3,14 @@ title: "Max Woolf"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Max Woolf
 
 ## Overview
 
-**Max Woolf** (@minimaxir) is a data scientist, open-source developer, and technical blogger based in San Francisco. He is a Senior Data Scientist at [[buzzfeed]], where he has applied machine learning to creative projects including StyleGAN-generated "fake boyfriends" and AI-powered art quizzes. He is also a prolific open-source contributor and the author of several widely-used Python and R libraries, most notably **textgenrnn** (neural text generation) and **big-list-of-naughty-strings** (edge-case testing data).
+**Max Woolf** (@minimaxir) is a data scientist, open-source developer, and technical blogger based in San Francisco. He is a Senior Data Scientist at [[concepts/buzzfeed]], where he has applied machine learning to creative projects including StyleGAN-generated "fake boyfriends" and AI-powered art quizzes. He is also a prolific open-source contributor and the author of several widely-used Python and R libraries, most notably **textgenrnn** (neural text generation) and **big-list-of-naughty-strings** (edge-case testing data).
 
 Woolf's blog at minimaxir.com is characterized by **data-driven skepticism, empirical benchmarking, and a willingness to challenge industry narratives with hard numbers**. He approaches every claim — whether about AI capabilities, library performance, or platform policies — with the same methodology: build a test, measure the results, publish the data, and let the numbers speak. His tone is often described as "snarky" (his own characterization), but this masks a rigorous commitment to evidence-based technical analysis.
 
@@ -137,9 +138,9 @@ Woolf identifies a persistent gap in technical education: **there are few resour
 
 ## Related
 
-[[textgenrnn]] — Neural text generation library (Keras/TensorFlow), ~5,000 GitHub stars
-[[buzzfeed]] — Woolf's employer; Senior Data Scientist working on AI initiatives
-[[polars]] — Python data processing library Woolf advocates over pandas
+[[concepts/textgenrnn]] — Neural text generation library (Keras/TensorFlow), ~5,000 GitHub stars
+[[concepts/buzzfeed]] — Woolf's employer; Senior Data Scientist working on AI initiatives
+[[concepts/polars]] — Python data processing library Woolf advocates over pandas
  — Language Woolf has been exploring with AI-assisted development
 [[miguel-grinberg]] — Fellow blogger with contrasting views on AI coding tools
  — Python implementation; Woolf's benchmarks compare against C/C++ implementations

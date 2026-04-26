@@ -82,7 +82,7 @@ Start a dev server and then use `uvx rodney --help` to test the new homepage, lo
 
 ## Showboatとの連携
 
-[[showboat]] ツールを使用して、エージェントのテスト作業を**検証可能・監査可能な成果物**として記録。
+[[concepts/showboat]] ツールを使用して、エージェントのテスト作業を**検証可能・監査可能な成果物**として記録。
 
 > "Forces agents to 'show their work' by creating verifiable, auditable testing artifacts."
 
@@ -92,11 +92,11 @@ Start a dev server and then use `uvx rodney --help` to test the new homepage, lo
 
 ## 関連パターン
 
-- [[showboat]] — テスト成果物の記録ツール
-- [[red-green-tdd]] — バグ発見後の自動化テスト追加
-- [[harness-engineering/agentic-workflows/first-run-the-tests]] — 初期テスト実行
-- [[agentic-engineering]] — 上位概念
+- [[concepts/showboat]] — テスト成果物の記録ツール
+- [[concepts/red-green-tdd]] — バグ発見後の自動化テスト追加
+- [[concepts/harness-engineering/agentic-workflows/first-run-the-tests]] — 初期テスト実行
+- [[concepts/agentic-engineering]] — 上位概念
 
 ## 参照
 - [[simon-willison]] — Agentic Engineering Patterns創始者
-- [[harness-engineering/agentic-workflows/rodney]] — ブラウザ自動化CLI
+- [[concepts/harness-engineering/agentic-workflows/rodney]] — ブラウザ自動化CLI

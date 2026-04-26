@@ -127,9 +127,9 @@ In his "[Programming Beliefs as of July 2024](https://evanhahn.com/programming-b
 
 ## Related
 
-- [[web-security]] — HTTP security headers, middleware, defense-in-depth
-- [[error-handling]] — Expected vs. unexpected errors, language design
-- [[software-craftsmanship]] — Code quality, pragmatism, reading code
+- [[concepts/web-security]] — HTTP security headers, middleware, defense-in-depth
+- [[concepts/error-handling]] — Expected vs. unexpected errors, language design
+- [[concepts/software-craftsmanship]] — Code quality, pragmatism, reading code
 -  — Maintaining widely-depended-upon packages
 -  — Nonprofit publisher software where Evan works
 -  — human.json and web-native identity systems

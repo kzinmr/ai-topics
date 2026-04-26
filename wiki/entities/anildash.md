@@ -114,9 +114,9 @@ Building on his coding agents thesis, Anil envisions:
 
 ## Related
 
-- [[agentic-engineering]] — The practice of orchestrating AI systems to produce software
-- [[vibe-coding]] — AI-assisted coding using natural language prompts
-- [[codeless-software]] — Software created without direct code writing
+- [[concepts/agentic-engineering]] — The practice of orchestrating AI systems to produce software
+- [[concepts/vibe-coding]] — AI-assisted coding using natural language prompts
+- [[concepts/codeless-software]] — Software created without direct code writing
 -  — Fellow AI commentator; coined "agentic engineering"
 -  — Tech policy writer; discussed AI as potential enabler of open web resurgence
 -  — Cory Doctorow's theory of platform decay; relevant to Anil's tech industry critique

@@ -26,9 +26,9 @@ DSPy (Declare + Optimize) is an open-source framework developed by Stanford's NL
 
 ## Relationship to Wiki Topics
 
-- [[gepa]] — GEPA (ICLR 2026 Oral) builds on DSPy's optimization philosophy, using reflective prompt evolution to surpass even RL-based methods
-- [[recursive-language-models]] — RLM approach can complement DSPy by handling unbounded context in DSPy programs
-- [[memory-architecture]] — Memory layers are often needed within DSPy programs for stateful agent workflows
+- [[concepts/gepa]] — GEPA (ICLR 2026 Oral) builds on DSPy's optimization philosophy, using reflective prompt evolution to surpass even RL-based methods
+- [[concepts/recursive-language-models]] — RLM approach can complement DSPy by handling unbounded context in DSPy programs
+- [[concepts/memory-architecture]] — Memory layers are often needed within DSPy programs for stateful agent workflows
 
 ## External Resources
 

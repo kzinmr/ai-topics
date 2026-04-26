@@ -32,7 +32,7 @@ RLMs directly address "context rot" — the phenomenon where models degrade as c
 
 ## Relationship to Other Concepts
 
-RLM connects to [[context-engineering]] (managing context window constraints), [[dspy]] (optimizing compound AI system pipelines), and [[gepa]] (the same authors contribute to DSPy's ecosystem). RLM is a specific inference-time optimization technique that complements declarative programming approaches.
+RLM connects to [[concepts/context-engineering]] (managing context window constraints), [[concepts/dspy]] (optimizing compound AI system pipelines), and [[concepts/gepa]] (the same authors contribute to DSPy's ecosystem). RLM is a specific inference-time optimization technique that complements declarative programming approaches.
 
 ## Future Directions
 

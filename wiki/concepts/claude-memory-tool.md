@@ -1,8 +1,9 @@
 ---
 title: "Cognition's Memory Tool — Copying Claude's Approach"
-tags: [[cognition-devin-memory-tool-claude-code-competitive-analysis-context-management]]
+tags: [[concepts/cognition-devin-memory-tool-claude-code-competitive-analysis-context-management]]
 created: 2026-04-13
 updated: 2026-04-24
+type: concept
 ---
 
 # Why Cognition is Copying Claude's Memory Tool
@@ -60,7 +61,7 @@ The fact that Cognition is copying suggests:
 ## See Also
 
 - [[concepts/_index]]
-- [[ai-agent-memory-middleware]]
-- [[memory-systems-design-patterns]]
-- [[knowledge-graph-memory-agents]]
-- [[ai-agent-memory-two-camps]]
+- [[concepts/ai-agent-memory-middleware]]
+- [[concepts/memory-systems-design-patterns]]
+- [[concepts/knowledge-graph-memory-agents]]
+- [[concepts/ai-agent-memory-two-camps]]

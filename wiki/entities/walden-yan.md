@@ -3,6 +3,7 @@ title: "Walden Yan"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-13
+type: entity
 ---
 
 
@@ -164,8 +165,8 @@ As CPO, Yan oversees product architecture. Key design decisions he has champione
 
 ## Related
 
-- [[cognition-devin-philosophy]] — Cognition's approach to building AI agents
-- [[context-engineering]] — Yan's framework for managing agent context
+- [[concepts/cognition-devin-philosophy]] — Cognition's approach to building AI agents
+- [[concepts/context-engineering]] — Yan's framework for managing agent context
 - [[scott-wu]] — Cognition CEO and co-founder
 - [[nader-dabit]] — Cognition Growth Engineer, cloud agent advocate
 

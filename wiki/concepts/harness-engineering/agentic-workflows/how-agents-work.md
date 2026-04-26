@@ -111,11 +111,11 @@ Exploreエージェントは**読取専用**で設計されており、ファイ
 
 ## 関連概念
 
-- [[agentic-engineering]] — 上位概念
-- [[subagents]] — エージェントの階層化
-- [[harness-engineering/agentic-workflows/using-git-with-agents]] — バージョン管理統合
-- [[context-window-management]] — Task Toolはコンテキストを分割する
-- [[harness-engineering/agentic-workflows/cli-first-development]] — エージェントのツール呼び出しパターン
+- [[concepts/agentic-engineering]] — 上位概念
+- [[concepts/subagents]] — エージェントの階層化
+- [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] — バージョン管理統合
+- [[concepts/context-window-management]] — Task Toolはコンテキストを分割する
+- [[concepts/harness-engineering/agentic-workflows/cli-first-development]] — エージェントのツール呼び出しパターン
 
 ## 参照
 

@@ -19,13 +19,13 @@ sources:
   - "https://github.com/vllm-project/vllm"
   - "https://github.com/sgl-project/sglang"
 related:
-  - "[[inference/llama-cpp]]"
-  - "[[inference/vllm]]"
-  - "[[inference/sglang]]"
-  - "[[local-llm]]"
-  - "[[inference-speed-development]]"
-  - "[[gguf-quantization]]"
-  - "[[serving-llms-vllm]]"
+  - "[[concepts/inference/llama-cpp]]"
+  - "[[concepts/inference/vllm]]"
+  - "[[concepts/inference/sglang]]"
+  - "[[concepts/local-llm]]"
+  - "[[concepts/inference-speed-development]]"
+  - "[[concepts/gguf-quantization]]"
+  - "[[concepts/serving-llms-vllm]]"
 ---
 
 # Inference — LLM推論エンジン
@@ -99,9 +99,9 @@ Georgi Gerganov:
 
 ## 関連概念
 
-- [[inference/llama-cpp]] — llama.cpp詳細
-- [[inference/vllm]] — vLLM詳細
-- [[inference/sglang]] — SGLang詳細
-- [[gguf-quantization]] — 量子化フォーマット
-- [[local-llm]] — ローカルLLMエコシステム
-- [[inference-speed-development]] — 推論速度最適化
+- [[concepts/inference/llama-cpp]] — llama.cpp詳細
+- [[concepts/inference/vllm]] — vLLM詳細
+- [[concepts/inference/sglang]] — SGLang詳細
+- [[concepts/gguf-quantization]] — 量子化フォーマット
+- [[concepts/local-llm]] — ローカルLLMエコシステム
+- [[concepts/inference-speed-development]] — 推論速度最適化

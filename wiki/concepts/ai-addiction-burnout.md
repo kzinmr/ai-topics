@@ -5,7 +5,7 @@ created: 2026-04-13
 updated: 2026-04-13
 tags: [burnout, productivity, ai-addiction, developer-wellness, work-culture]
 aliases: ["ai-burnout", "developer-addiction-patterns", "black-eye-club", "slot-machine-development"]
-related: [[inference-speed-development]], [[direct-prompting-philosophy]], 
+related: [[concepts/inference-speed-development]], [[concepts/direct-prompting-philosophy]], 
 sources:
   - url: "https://steipete.me/posts/2025/just-one-more-prompt"
     author: "Peter Steinberger (@steipete)"
@@ -108,7 +108,7 @@ Steipete coins the term **"Black Eye Club"** for developers who:
 
 ---
 
-## Connection to [[inference-speed-development]]
+## Connection to [[concepts/inference-speed-development]]
 
 The inference-speed paradigm **amplifies** addiction risk:
 
@@ -156,8 +156,8 @@ This creates a **perfect storm** for compulsive development behavior.
 
 ## Related Concepts
 
-- [[inference-speed-development]] — Why faster iteration amplifies addiction risk
-- [[direct-prompting-philosophy]] — How low-friction interaction enables compulsive behavior
+- [[concepts/inference-speed-development]] — Why faster iteration amplifies addiction risk
+- [[concepts/direct-prompting-philosophy]] — How low-friction interaction enables compulsive behavior
 -  — The broader context of AI-assisted development culture
 -  — Community response to the phenomenon
 

@@ -473,9 +473,9 @@ Jason is developing Context Engineering as a natural evolution beyond RAG for ag
 
 ## Related People
 
-- **[[pydantic]]** — Samuel Colvin's data validation library; the foundation of Instructor's approach
+- **[[concepts/pydantic]]** — Samuel Colvin's data validation library; the foundation of Instructor's approach
 - **[[samuel-colvin]]** — Pydantic creator; collaborated on structured outputs patterns and Pydantic AI
-- **[[structured-outputs]]** — Liu's primary technical domain; cited by OpenAI as inspiration for their feature
+- **[[concepts/structured-outputs]]** — Liu's primary technical domain; cited by OpenAI as inspiration for their feature
 - **[[eugene-yan]]** — Fellow practitioner in production ML evaluation; both emphasize systematic validation over benchmarking
 - **[[shreya-shankar]]** — Overlapping focus on evaluation and validation rigor in LLM systems
 - **[[bryan-bischof]]** — Shared philosophy of production-first ML engineering over demo-centric approaches

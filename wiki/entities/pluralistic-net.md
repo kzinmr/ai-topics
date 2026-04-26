@@ -149,15 +149,15 @@ His **Memex Method** — maintaining 50,000+ public notes in a searchable databa
 
 ## Related
 
-- [[enshittification]] — Doctorow's theory of platform decay
-- [[adversarial-interoperability]] — Building compatible products without permission
-- [[chokepoint-capitalism]] — Intermediaries as unavoidable bottlenecks
-- [[right-to-repair]] — Anti-circumvention law's impact on device ownership
-- [[posse-pattern]] — Publish on Own Site, Syndicate Everywhere
+- [[concepts/enshittification]] — Doctorow's theory of platform decay
+- [[concepts/adversarial-interoperability]] — Building compatible products without permission
+- [[concepts/chokepoint-capitalism]] — Intermediaries as unavoidable bottlenecks
+- [[concepts/right-to-repair]] — Anti-circumvention law's impact on device ownership
+- [[concepts/posse-pattern]] — Publish on Own Site, Syndicate Everywhere
 -  — Public note-taking as knowledge creation
 - [[ed-zitron-s-where-s-your-ed-at]] — Another critical tech-policy voice
 -  — AIドゥーマー議論のパスカルの賭え framing
-- [[ai-bubble-economics]] — AI投資バブルと経済リスク
+- [[concepts/ai-bubble-economics]] — AI投資バブルと経済リスク
 -  — 脱・米国中心インターネット構想
 -  — Electronic Frontier Foundation, where Doctorow is a special advisor
 

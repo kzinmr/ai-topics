@@ -1,8 +1,9 @@
 ---
 title: "AI Evals (AI Evaluation Systems)"
-tags: [[evaluation-llm-as-judge-error-analysis-ai-engineering-ai-systems]]
+tags: [[concepts/evaluation-llm-as-judge-error-analysis-ai-engineering-ai-systems]]
 created: 2026-04-12
 updated: 2026-04-24
+type: concept
 ---
 
 # AI Evals (AI Evaluation Systems)
@@ -144,12 +145,12 @@ A **trace** is the complete record of all actions, messages, tool calls, and dat
 
 ## Related Concepts
 
-- [[llm-as-judge]] — Using LLMs to evaluate AI outputs
-- [[critique-shadowing]] — 7-step process for building aligned LLM judges
+- [[concepts/llm-as-judge]] — Using LLMs to evaluate AI outputs
+- [[concepts/critique-shadowing]] — 7-step process for building aligned LLM judges
 -  — Systematic categorization of failure modes
-- [[harness-engineering]] — OpenAI's approach to AI-assisted development
-- [[eval-tools-comparison]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI
-- [[evals-skills]] — Evals skills for coding agents
+- [[concepts/harness-engineering]] — OpenAI's approach to AI-assisted development
+- [[concepts/eval-tools-comparison]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI
+- [[concepts/evals-skills]] — Evals skills for coding agents
 -  — PBT methodology applied to LLM evaluation (MacIver)
 
 ## Related People

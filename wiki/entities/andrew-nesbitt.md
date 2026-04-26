@@ -1,8 +1,9 @@
 ---
 title: "Andrew Nesbitt"
-tags: [[person]]
+tags: [[concepts/person]]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -169,11 +170,11 @@ His blogging cadence accelerated dramatically in 2025–2026, with 25 posts in J
 
 ## Related
 
-- [[package-management]] — Resolution algorithms, lockfiles, manifests, supply chain security
-- [[software-supply-chain-security]] — PURL, VERS, SBOM, SWHID, SARIF specifications
-- [[dependency-graphs]] — Mapping the 22 billion dependency links in open source
-- [[open-source-metadata]] — Ecosyste.ms as the definitive catalog
-- [[llm-security]] — AI as a novel attack vector in dependency management
+- [[concepts/package-management]] — Resolution algorithms, lockfiles, manifests, supply chain security
+- [[concepts/software-supply-chain-security]] — PURL, VERS, SBOM, SWHID, SARIF specifications
+- [[concepts/dependency-graphs]] — Mapping the 22 billion dependency links in open source
+- [[concepts/open-source-metadata]] — Ecosyste.ms as the definitive catalog
+- [[concepts/llm-security]] — AI as a novel attack vector in dependency management
 -  — Sustainable models for open source infrastructure
 -  — Remote helpers, diff drivers, file-level ignore directives
 -  — Package Chaos Monkey and dependency failure testing

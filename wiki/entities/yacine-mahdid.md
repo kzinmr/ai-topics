@@ -1,8 +1,9 @@
 ---
 title: "Yacine Mahdid"
-tags: [[person]]
+tags: [[concepts/person]]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -103,13 +104,13 @@ Mahdid's recent contributions to tscircuit/tscircuit-autorouter (open-source PCB
 
 ## Related Wikilinks
 
-- [[dingllm.nvim]] — Mahdid's lightweight Neovim LLM integration (865+ stars)
-- [[talk]] — Code-to-sand art project (588 stars)
-- [[dingcad]] — Live reload CAD scripting (473 stars)
-- [[just-large-models]] — Minimal LLM implementations (44 stars)
-- [[scribepod]] — Automated AI podcast generation (174 stars)
-- [[llm.nvim]] — No-frills LLM-assisted programming (24 stars)
-- [[ai-assisted-development]] — The broader category of tools Mahdid contributes to
+- [[concepts/dingllm.nvim]] — Mahdid's lightweight Neovim LLM integration (865+ stars)
+- [[concepts/talk]] — Code-to-sand art project (588 stars)
+- [[concepts/dingcad]] — Live reload CAD scripting (473 stars)
+- [[concepts/just-large-models]] — Minimal LLM implementations (44 stars)
+- [[concepts/scribepod]] — Automated AI podcast generation (174 stars)
+- [[concepts/llm.nvim]] — No-frills LLM-assisted programming (24 stars)
+- [[concepts/ai-assisted-development]] — The broader category of tools Mahdid contributes to
 -  — tscircuit and dingcad projects
 -  — Mahdid's research background at McGill
 -  — The philosophy underlying talk and dingcad

@@ -131,7 +131,7 @@ He explicitly states: *"Don't feel like you have to trade me something if you on
 
 ## Related
 
-- [[formal-methods]] — Mathematical techniques for verifying software correctness
+- [[concepts/formal-methods]] — Mathematical techniques for verifying software correctness
 -  — Temporal Logic of Actions, formal specification language by Leslie Lamport
 -  — Testing general properties rather than specific examples
 -  — Cognitive and operational costs in software development

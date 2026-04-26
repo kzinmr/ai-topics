@@ -104,7 +104,7 @@ His policy: force push freely on feature branches to clean up history before mer
 
 ## Related
 
-- [[great-pendulum]] — Cyclical nature of technology trends
+- [[concepts/great-pendulum]] — Cyclical nature of technology trends
 -  — Tokio, sans-IO pattern, crate coloring
 -  — Git as the canonical location for project metadata
 -  — Running services at minimal cost

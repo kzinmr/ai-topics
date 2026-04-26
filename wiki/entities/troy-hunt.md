@@ -1,8 +1,9 @@
 ---
 title: "Troy Hunt"
-tags: [[person]]
+tags: [[concepts/person]]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -165,13 +166,13 @@ His teaching philosophy is **offensive-first**: understand how attacks work befo
 
 ## Related Concepts
 
-- [[have-i-been-pwned]] — His flagship service for breach notification
-- [[data-breach]] — The central domain of his research and reporting
-- [[privacy-ethics]] — His principled stance on universal privacy rights
-- [[credential-stuffing]] — The threat vector behind massive breach data collections
-- [[breach-disclosure]] — His framework for how organizations should respond to breaches
-- [[developer-security]] — His educational mission through Pluralsight courses
-- [[gdpr]] — The legal framework informing his sensitive breach classification
+- [[concepts/have-i-been-pwned]] — His flagship service for breach notification
+- [[concepts/data-breach]] — The central domain of his research and reporting
+- [[concepts/privacy-ethics]] — His principled stance on universal privacy rights
+- [[concepts/credential-stuffing]] — The threat vector behind massive breach data collections
+- [[concepts/breach-disclosure]] — His framework for how organizations should respond to breaches
+- [[concepts/developer-security]] — His educational mission through Pluralsight courses
+- [[concepts/gdpr]] — The legal framework informing his sensitive breach classification
 -  — HIBP's password breach search service
 -  — His pragmatic approach to integrating autonomous tools
 -  — His operational philosophy of public accountability

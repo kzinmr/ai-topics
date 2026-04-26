@@ -19,10 +19,10 @@ sources:
   - "http://latent.space/p/harness-eng"
   - "https://github.com/openai/symphony"
 related:
-  - "[[harness-engineering]]"
-  - "[[agentic-engineering]]"
-  - "[[context-engineering]]"
-  - "[[symphony]]"
+  - "[[concepts/harness-engineering]]"
+  - "[[concepts/agentic-engineering]]"
+  - "[[concepts/context-engineering]]"
+  - "[[concepts/symphony]]"
 ---
 
 # Harness Engineering
@@ -61,11 +61,11 @@ Harness Engineeringの4つの柱:
 
 > "Treat your AGENTS.md as a table of contents (~100 lines) rather than a comprehensive encyclopedia."
 
-詳細とサブ概念は [[harness-engineering]] を参照。
+詳細とサブ概念は [[concepts/harness-engineering]] を参照。
 
 ## See Also
 
-- [[harness-engineering]] — 詳細フレームワーク
-- [[agentic-engineering]] — Willisonのサブセット概念
-- [[context-engineering]] — 横断技術コンポーネント
-- [[symphony]] — OpenAIの実装
+- [[concepts/harness-engineering]] — 詳細フレームワーク
+- [[concepts/agentic-engineering]] — Willisonのサブセット概念
+- [[concepts/context-engineering]] — 横断技術コンポーネント
+- [[concepts/symphony]] — OpenAIの実装

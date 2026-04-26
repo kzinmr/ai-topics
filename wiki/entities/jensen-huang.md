@@ -3,6 +3,7 @@ title: "Jensen Huang"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-18
+type: entity
 ---
 
 # Jensen Huang
@@ -151,7 +152,7 @@ Huang warns against AI automation narratives that discourage engineering career 
 
 ## TeortaxesTex's Epistemic Analysis (April 2026)
 
-Writer and commentator [[teortaxestex]] published a detailed analysis following the Jensen × Dwarkesh podcast, invoking tailcalled's [[causal-backbone-conjecture]] to frame the contrast:
+Writer and commentator [[teortaxestex]] published a detailed analysis following the Jensen × Dwarkesh podcast, invoking tailcalled's [[concepts/causal-backbone-conjecture]] to frame the contrast:
 
 **"Jensen is the driver, not the car"** — Teortaxes argues that Jensen's worldview is fundamentally different from Dwarkesh's rationalist discourse, not inferior. Where Dwarkesh is optimized for "Reasonably Conversing, insuring middle class stake," Jensen is optimized for "Not Being a Loser" — a survival-driven epistemology forged by going from "a toilet-scrubbing immigrant runt to a demigod, from a random NPC to a Singularity Kingmaker."
 
@@ -185,10 +186,10 @@ Comprehensive 1:43 interview covering:
 ## Related
 
 - [[nvidia-dgx-spark]] — Nvidia's consumer/local AI compute device
-- [[inference-hardware]] — GPU and accelerator infrastructure
-- [[compute-scaling-bottlenecks]] — Energy and supply chain constraints
-- [[ai-bubble-economics]] — AI market dynamics and valuations
-- [[open-model-consortium]] — Huang's views on open models and ecosystem
+- [[concepts/inference-hardware]] — GPU and accelerator infrastructure
+- [[concepts/compute-scaling-bottlenecks]] — Energy and supply chain constraints
+- [[concepts/ai-bubble-economics]] — AI market dynamics and valuations
+- [[concepts/open-model-consortium]] — Huang's views on open models and ecosystem
 - [[dwarkesh-patel]] — Interviewed Jensen for 1:43 episode (April 2026); subject of TeortaxesTex epistemic gap analysis
 - [[teortaxestex]] — Published steelmanning analysis of Jensen vs. Dwarkesh using Causal Backbone framework
 - [[peter-steinberger]] — OpenClaw creator, highlighted by Huang at GTC 2026

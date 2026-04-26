@@ -3,6 +3,7 @@ title: "Ashpreet Bedi"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-10
+type: entity
 ---
 
 
@@ -151,10 +152,10 @@ Many agentic applications take 30 minutes to 3 hours to complete, spawning thous
 
 ## Related
 
-- [[agno]] — Bedi's AI agent framework (formerly Phidata)
-- [[phidata]] — Original name of Agno
+- [[concepts/agno]] — Bedi's AI agent framework (formerly Phidata)
+- [[concepts/phidata]] — Original name of Agno
 -  — Core domain of Bedi's work
-- [[ai-agent-memory-middleware]] — Learning Machine and agentic memory systems
+- [[concepts/ai-agent-memory-middleware]] — Learning Machine and agentic memory systems
 -  — 5-year tenure building production data systems
 -  — Community safety and virality algorithms
 -  — Competing framework; Bedi's philosophy is anti-complexity vs LangChain's abstraction-heavy approach

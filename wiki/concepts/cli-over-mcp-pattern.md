@@ -5,7 +5,7 @@ created: 2026-04-13
 updated: 2026-04-13
 tags: [cli, mcp, tool-design, context-efficiency, agentic-engineering]
 aliases: ["cli-first-development", "mcp-skepticism", "tool-agnostic-agents", "minimal-tooling-pattern"]
-related: [[direct-prompting-philosophy]], [[claude-code-best-practices]], [[context-window-management]], 
+related: [[concepts/direct-prompting-philosophy]], [[concepts/claude-code-best-practices]], [[concepts/context-window-management]], 
 sources:
   - url: "https://steipete.me/posts/2025/optimal-ai-development-workflow/"
     author: "Peter Steinberger (@steipete)"
@@ -113,7 +113,7 @@ MCPs are not universally bad — they excel in specific scenarios:
 
 ## Connection to Direct Prompting Philosophy
 
-The CLI-first pattern complements [[direct-prompting-philosophy]]:
+The CLI-first pattern complements [[concepts/direct-prompting-philosophy]]:
 
 - **Less setup** → more time for direct interaction
 - **Fewer abstraction layers** → cleaner mental model
@@ -145,9 +145,9 @@ Both patterns share the core principle: **reduce overhead, increase direct engag
 
 ## Related Concepts
 
-- [[direct-prompting-philosophy]] — The anti-overengineering mindset this serves
-- [[claude-code-best-practices]] — Practical implementation patterns
-- [[context-window-management]] — How CLIs preserve precious context
+- [[concepts/direct-prompting-philosophy]] — The anti-overengineering mindset this serves
+- [[concepts/claude-code-best-practices]] — Practical implementation patterns
+- [[concepts/context-window-management]] — How CLIs preserve precious context
 -  — The broader methodology
 
 ## Sources

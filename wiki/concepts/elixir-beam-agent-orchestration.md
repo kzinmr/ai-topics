@@ -11,7 +11,7 @@ sources:
 
 # Elixir/BEAM for Agent Orchestration
 
-Elixir/BEAM（Erlang仮想マシン）をAIエージェントオーケストレーションに活用するパターン。[[openai-symphony]] のRyan Lopopoloが採用したアプローチ。
+Elixir/BEAM（Erlang仮想マシン）をAIエージェントオーケストレーションに活用するパターン。[[concepts/openai-symphony]] のRyan Lopopoloが採用したアプローチ。
 
 ## なぜElixir/BEAMか
 
@@ -103,7 +103,7 @@ end
 
 ## Harness Engineeringとの関係
 
-[[harness-engineering]] はエージェント実行環境を構築。Elixir/BEAMは以下の調整層を提供：
+[[concepts/harness-engineering]] はエージェント実行環境を構築。Elixir/BEAMは以下の調整層を提供：
 
 |  concern | Harness Engineering | Elixir/BEAM 解決策 |
 |----------|---------------------|-------------------|
@@ -115,9 +115,9 @@ end
 
 ## 既存概念との接続
 
-- [[openai-symphony]] — Symphonyの詳細（Ryan Lopopolo作）
-- [[agent-team-swarm]] — マルチエージェントチームパターン
-- [[harness-engineering]] — エージェント実行環境設計
+- [[concepts/openai-symphony]] — Symphonyの詳細（Ryan Lopopolo作）
+- [[concepts/agent-team-swarm]] — マルチエージェントチームパターン
+- [[concepts/harness-engineering]] — エージェント実行環境設計
 - [[ryan-lopopolo]] — Symphonyの作者、Harness Engineering提唱者
 
 ## 主要引用

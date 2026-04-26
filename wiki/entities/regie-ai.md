@@ -1,8 +1,9 @@
 ---
 title: "Regie.ai"
-tags: [[company-startup-regie-ai-sales-sales-engagement-agent-automation]]
+tags: [[concepts/company-startup-regie-ai-sales-sales-engagement-agent-automation]]
 created: 2026-04-20
 updated: 2026-04-24
+type: entity
 ---
 
 # Regie.ai

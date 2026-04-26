@@ -134,9 +134,9 @@ Sankalpは以下のようにツールを使い分けている：
 
 ## 関連概念
 
-- [[context-window-management]] — 捨て台本はコンテキストを消費する
-- [[harness-engineering/agentic-workflows/cli-first-development]] — CLIで捨て台本を書くと検証が高速
-- [[harness-engineering/agentic-engineering]] — 上位概念
+- [[concepts/context-window-management]] — 捨て台本はコンテキストを消費する
+- [[concepts/harness-engineering/agentic-workflows/cli-first-development]] — CLIで捨て台本を書くと検証が高速
+- [[concepts/harness-engineering/agentic-engineering]] — 上位概念
 
 ## 参照
 

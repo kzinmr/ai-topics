@@ -134,7 +134,7 @@ On the topic of coding agent success:
 
 > *"Coding agents was the winning move. The secret behind the success of coding agents? Verifiable feedback loops."*
 
-This is a crucial insight for your [[harness-engineering]] perspective. The reason coding agents (Claude Code, Codex, etc.) outperform general-purpose agents is not because code is "easier" — it's because the **compiler/test suite provides objective, deterministic feedback** on every action. This creates a **verifiable loop** that eliminates the ambiguity that plagues other agent domains.
+This is a crucial insight for your [[concepts/harness-engineering]] perspective. The reason coding agents (Claude Code, Codex, etc.) outperform general-purpose agents is not because code is "easier" — it's because the **compiler/test suite provides objective, deterministic feedback** on every action. This creates a **verifiable loop** that eliminates the ambiguity that plagues other agent domains.
 
 ### Personal AI Operating Systems
 
@@ -148,7 +148,7 @@ Solbakken sees the next frontier as **personal AI OS** — persistent state, sec
 
 > *"We tried to develop formal agent protocols (MCP, A2A, etc). Then LLM progress outpaced the protocol spec cycles and we converged to curl + markdown."*
 
-This aligns with your [[cli-over-mcp-pattern]] philosophy. Solbakken's experience building at scale (Yahoo, Vespa) gives weight to the observation that **protocol complexity outpaces capability improvements** — simple, predictable interfaces beat formal standards in practice.
+This aligns with your [[concepts/cli-over-mcp-pattern]] philosophy. Solbakken's experience building at scale (Yahoo, Vespa) gives weight to the observation that **protocol complexity outpaces capability improvements** — simple, predictable interfaces beat formal standards in practice.
 
 ### On Benchmarking Integrity
 
@@ -206,7 +206,7 @@ PhD at NTNU in Artificial Intelligence and Machine Learning. Research topics: ne
 - [[jo-bergum]] — Co-founder/CEO, Hornet; complementary business+vision perspective
 -  — HORNET.dev, the retrieval engine for agents
 -  — Agentic search and retrieval patterns
-- [[context-engineering]] — Context management for agents
+- [[concepts/context-engineering]] — Context management for agents
 -  — The IR discipline behind retrieval quality
 
 ## Sources

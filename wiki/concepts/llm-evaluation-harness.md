@@ -23,7 +23,7 @@ LLM evaluation harnesses provide automated testing infrastructure for measuring 
 
 ## Connection to AI Evals
 
-While traditional eval harnesses focus on model capabilities, modern [[ai-evals]] extend to application-level testing:
+While traditional eval harnesses focus on model capabilities, modern [[concepts/ai-evals]] extend to application-level testing:
 - **Model-level:** Standardized benchmarks, academic metrics
 - **Application-level:** Real user traces, product-specific failure modes
 - **Continuous:** Ongoing monitoring vs. one-time evaluation
@@ -36,9 +36,9 @@ While traditional eval harnesses focus on model capabilities, modern [[ai-evals]
 
 ## Related Concepts
 
-- [[ai-evals]] — Broader evaluation methodology including human-led error analysis
-- [[ai-agent-traps]] — Common failure modes that evals should detect
-- [[harness-engineering]] — Systematic approaches to AI system development
+- [[concepts/ai-evals]] — Broader evaluation methodology including human-led error analysis
+- [[concepts/ai-agent-traps]] — Common failure modes that evals should detect
+- [[concepts/harness-engineering]] — Systematic approaches to AI system development
 
 ## Sources
 

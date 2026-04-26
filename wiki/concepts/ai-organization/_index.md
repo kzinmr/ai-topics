@@ -27,9 +27,9 @@ AIの自律実行が進む世界で、「人間の組織はどう変わるか」
 - **スパン・オブ・コントロール**: 人間が直接管理できる人数の限界 (3-8人)
 
 ### Level 2: Models (組織モデル)
-- **[[ai-organization/ai-org-from-hierarchy-to-intelligence]]** — Block: 階層からインテリジェンスへの移行
-- **[[ai-organization/ai-org-context-as-moat]]** — McKinsey/Reworked: Diamond型組織図とProprietary Context
-- **[[ai-organization/ai-org-solo-founder-and-super-ic]]** — Reddit/FourWeekMBA: ソロ創業者とSuper ICの台頭
+- **[[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]]** — Block: 階層からインテリジェンスへの移行
+- **[[concepts/ai-organization/ai-org-context-as-moat]]** — McKinsey/Reworked: Diamond型組織図とProprietary Context
+- **[[concepts/ai-organization/ai-org-solo-founder-and-super-ic]]** — Reddit/FourWeekMBA: ソロ創業者とSuper ICの台頭
 
 ### Level 3: Synthesis (横断的テーマ)
 - Hierarchy → Intelligence (報告ラインの削除、自律実行)
@@ -107,11 +107,11 @@ Reddit r/ClaudeCodeとFourWeekMBAの議論から浮上。
 ## 関連概念
 
 -  — 開発者のAI活用ワークフロー
-- [[harness-engineering]] — エージェントの制御・構造化
-- [[multi-agent-autonomy-scale]] — 大規模マルチエージェントの自律とスケール
-- [[context-engineering]] — コンテキストエンジニアリング
-- [[model-context-protocol-mcp]] — Model Context Protocol (エージェント間連携基盤)
-- [[ai-agent-traps]] — AIエージェントの罠と失敗パターン
+- [[concepts/harness-engineering]] — エージェントの制御・構造化
+- [[concepts/multi-agent-autonomy-scale]] — 大規模マルチエージェントの自律とスケール
+- [[concepts/context-engineering]] — コンテキストエンジニアリング
+- [[concepts/model-context-protocol-mcp]] — Model Context Protocol (エージェント間連携基盤)
+- [[concepts/ai-agent-traps]] — AIエージェントの罠と失敗パターン
 
 ## ソース一覧
 

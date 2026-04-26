@@ -39,7 +39,7 @@ OpenAI is a leading AI research and product company known for developing the GPT
   - Provider ecosystem: Blaxel, Cloudflare, Daytona, E2B, Modal, Runloop, Vercel
   - Security: Default-deny, relative paths only, `..` traversal blocked
   - Durability: Snapshotting & rehydration for long-horizon tasks
-- **Symphony** — Agent orchestration framework (see [[harness-engineering]])
+- **Symphony** — Agent orchestration framework (see [[concepts/harness-engineering]])
 - **Codex** — AI coding agent
 
 ### Other Products
@@ -63,11 +63,11 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 > — **Rachael Burns**, Staff Engineer & AI Tech Lead, Oscar Health
 
 ## Related Concepts
-- [[openai-agents-sdk]] — OpenAI's agent development framework
-- [[harness-engineering]] — Ryan Lopopolo / Symphony orchestration philosophy
-- [[sandbox]] — AI agent sandbox isolation technologies
-- [[chatgpt-images-2.0]] — GPT Image 2 image generation
-- [[nano-banana-2]] — Google's NB2 image generation competitor
+- [[concepts/openai-agents-sdk]] — OpenAI's agent development framework
+- [[concepts/harness-engineering]] — Ryan Lopopolo / Symphony orchestration philosophy
+- [[concepts/sandbox]] — AI agent sandbox isolation technologies
+- [[concepts/chatgpt-images-2.0]] — GPT Image 2 image generation
+- [[concepts/nano-banana-2]] — Google's NB2 image generation competitor
 
 ## Sources
 - 

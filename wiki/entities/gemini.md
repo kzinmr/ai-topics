@@ -56,9 +56,9 @@ Gemini-powered image generation (NB2) competes directly with OpenAI's GPT Image 
 
 ## Relationships
 - [[google]] — Parent company (AI/ML division)
-- [[nano-banana-2]] — NB2 image generation model
-- [[chatgpt-images-2.0]] — OpenAI's competitor
-- [[ai-image-generation]] — AI image generation overview
+- [[concepts/nano-banana-2]] — NB2 image generation model
+- [[concepts/chatgpt-images-2.0]] — OpenAI's competitor
+- [[concepts/ai-image-generation]] — AI image generation overview
 
 ## Sources
 - [Alex Banks, The Signal: "ChatGPT Images 2.0 is genuinely fantastic"](https://thesignal.substack.com/p/chatgpt-images-20-is-genuinely-fantastic) (2026-04-24) — comparative analysis

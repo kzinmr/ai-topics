@@ -142,7 +142,7 @@ AnthropicのMemory Toolは、メモリ設計における**明確な bet** だっ
 ## 関連エンティティ
 
 - [[anthropic]] — Claude Memory Toolの開発元
-- [[harness-engineering/system-architecture/anthropic-memory-tool-cognition]] — Devinの開発元、Anthropicの動向を注視
+- [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition]] — Devinの開発元、Anthropicの動向を注視
 - [[claude-code]] — Anthropicのコーディングエージェント
 -  — Cognitionのコーディングエージェント
 

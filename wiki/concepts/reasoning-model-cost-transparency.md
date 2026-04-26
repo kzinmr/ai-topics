@@ -50,7 +50,7 @@ A 2026 study revealing that listed API prices for reasoning language models are 
 - Research paper (2026)
 
 ## Related
-- [[thinking-tokens]]
+- [[concepts/thinking-tokens]]
 - 
 - 
 - 

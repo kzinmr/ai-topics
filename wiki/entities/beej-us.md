@@ -1,8 +1,9 @@
 ---
 title: "Beej (Brian 'Beej Jorgensen' Hall)"
-tags: [[person]]
+tags: [[concepts/person]]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -167,11 +168,11 @@ His blog covers an eclectic range: technical tutorials, motorcycle brake rotor r
 
 ## Related
 
-- [[network-programming]] — Socket APIs, TCP/IP, client/server architecture
-- [[c-programming]] — Low-level systems programming, pointers, memory management
-- [[technical-writing]] — Pedagogical philosophy, progressive complexity, conversational tone
-- [[free-software]] — Creative Commons licensing, public domain code, open education
-- [[computer-science-education]] — Teaching problem-solving, mental models, meta-skills
+- [[concepts/network-programming]] — Socket APIs, TCP/IP, client/server architecture
+- [[concepts/c-programming]] — Low-level systems programming, pointers, memory management
+- [[concepts/technical-writing]] — Pedagogical philosophy, progressive complexity, conversational tone
+- [[concepts/free-software]] — Creative Commons licensing, public domain code, open education
+- [[concepts/computer-science-education]] — Teaching problem-solving, mental models, meta-skills
 -  — Version control mental models, not just commands
 -  — IPC, signals, shared memory, pipes
 -  — Game-based learning, Wizard's Castle projects

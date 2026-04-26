@@ -192,8 +192,8 @@ Maurycy writes in a **direct, tutorial-oriented style** — code-heavy, theory-l
 
 ## Related
 
-- [[web-minimalism]] — The small web movement
-- [[c-programming]] — C as a systems language
+- [[concepts/web-minimalism]] — The small web movement
+- [[concepts/c-programming]] — C as a systems language
 -  — Pre-web information retrieval
 -  — Verlet integration and spatial hashing
 -  — Independent, framework-free websites

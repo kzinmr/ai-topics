@@ -1,8 +1,9 @@
 ---
 title: "Miguel Grinberg"
-tags: [[person]]
+tags: [[concepts/person]]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -119,8 +120,8 @@ This philosophy — **make the simple things simple** — is the defining charac
 
 ## Related
 
-[[flask]] — Python web framework; Grinberg is one of its most prominent educators
-[[fastapi]] — Rising Python web framework; now roughly equal to Flask in downloads
+[[concepts/flask]] — Python web framework; Grinberg is one of its most prominent educators
+[[concepts/fastapi]] — Rising Python web framework; now roughly equal to Flask in downloads
  — Ultra-lightweight web framework for microcontrollers, created by Grinberg
  — Python implementation; Grinberg has critiqued AI commits to its codebase
 Django — Traditional Python web framework; Grinberg's reviews include it in comparisons

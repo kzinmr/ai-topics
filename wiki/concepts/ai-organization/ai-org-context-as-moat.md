@@ -149,11 +149,11 @@ McKinseyのデータ:
 
 ## 関連概念
 
-- [[ai-organization/ai-org-from-hierarchy-to-intelligence]] — Blockの階層からインテリジェンスへの移行
-- [[ai-organization/ai-org-solo-founder-and-super-ic]] — Solo FounderとSuper IC
+- [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]] — Blockの階層からインテリジェンスへの移行
+- [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo FounderとSuper IC
 -  — 開発者のAI活用ワークフロー
-- [[harness-engineering]] — エージェントの制御・構焦化
-- [[multi-agent-autonomy-scale]] — 大規模マルチエージェントの自律とスケール
+- [[concepts/harness-engineering]] — エージェントの制御・構焦化
+- [[concepts/multi-agent-autonomy-scale]] — 大規模マルチエージェントの自律とスケール
 
 ## ソース
 

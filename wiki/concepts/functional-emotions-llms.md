@@ -70,7 +70,7 @@ The research suggests tracking internal emotion activations as a safety mechanis
 - NLP News coverage (April 2026)
 
 ## Related
-- [[mechanistic-interpretability]]
+- [[concepts/mechanistic-interpretability]]
 - 
 - 
 - 

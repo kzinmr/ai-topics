@@ -5,7 +5,7 @@ created: 2026-04-13
 updated: 2026-04-13
 tags: [ai-coding, development-cadence, shipping-speed, test-driven-ai, ui-development, agentic-engineering]
 aliases: ["shipping-at-inference-speed", "inference-speed-shipping", "ai-development-cadence"]
-related: , [[claude-code-best-practices]], [[cognitive-cost-of-agents]], [[ai-coding-reliability]]
+related: , [[concepts/claude-code-best-practices]], [[concepts/cognitive-cost-of-agents]], [[concepts/ai-coding-reliability]]
 sources:
   - url: "https://steipete.me/posts/2025/shipping-at-inference-speed"
     author: "Peter Steinberger (@steipete)"
@@ -147,7 +147,7 @@ Inference Speed Development amplifies both productivity and risk:
 - **Less human typing** doesn't mean less human responsibility
 - **More iterations** doesn't guarantee correctness — only faster convergence
 
-This connects directly to [[ai-coding-reliability]]: the Amazon outages demonstrate what happens when inference-speed shipping bypasses reliability gates.
+This connects directly to [[concepts/ai-coding-reliability]]: the Amazon outages demonstrate what happens when inference-speed shipping bypasses reliability gates.
 
 ---
 
@@ -170,10 +170,10 @@ The key insight: **AI doesn't need to be right on the first attempt — it needs
 ## Related Concepts
 
 -  — The broader methodology shift this enables
-- [[claude-code-best-practices]] — Practical patterns for Claude Code users
-- [[cognitive-cost-of-agents]] — The hidden cost of reviewing vs. writing
-- [[ai-coding-reliability]] — Why speed without reliability gates causes outages
-- [[claude-code-source-patterns]] — How Anthropic engineers inference-speed patterns into Claude Code itself
+- [[concepts/claude-code-best-practices]] — Practical patterns for Claude Code users
+- [[concepts/cognitive-cost-of-agents]] — The hidden cost of reviewing vs. writing
+- [[concepts/ai-coding-reliability]] — Why speed without reliability gates causes outages
+- [[concepts/claude-code-source-patterns]] — How Anthropic engineers inference-speed patterns into Claude Code itself
 
 ## Sources
 

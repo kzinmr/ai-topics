@@ -87,14 +87,14 @@ The shift toward usefulness-focused IFT suggests:
 
 ## Connection to AI Coding Reliability
 
-These findings have direct implications for [[ai-coding-reliability]]:
+These findings have direct implications for [[concepts/ai-coding-reliability]]:
 - **Coherence ≠ correctness** — A model can be coherent while being wrong
 - **IFT helps but doesn't solve** — Fine-tuning for coding tasks still requires human verification
 - **Training data quality matters** — Code-specific fine-tuning on quality repositories should improve coding reliability
 
 ## Related Concepts
-- [[ai-coding-reliability]] — Why review and verification remain essential
-- [[ai-agent-traps]] — How coherence illusions create agent failures
+- [[concepts/ai-coding-reliability]] — Why review and verification remain essential
+- [[concepts/ai-agent-traps]] — How coherence illusions create agent failures
 -  — Broader IFT patterns and techniques
 
 ## Sources

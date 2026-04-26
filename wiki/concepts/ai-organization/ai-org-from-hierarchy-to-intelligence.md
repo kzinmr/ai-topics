@@ -119,11 +119,11 @@ Blockが構築した2つのワールドモデル:
 
 ## 関連概念
 
-- [[ai-organization/ai-org-context-as-moat]] — Proprietary ContextとFission-Fusion
-- [[ai-organization/ai-org-solo-founder-and-super-ic]] — Solo FounderとSuper IC
+- [[concepts/ai-organization/ai-org-context-as-moat]] — Proprietary ContextとFission-Fusion
+- [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo FounderとSuper IC
 -  — 開発者のAI活用ワークフロー
-- [[harness-engineering]] — エージェントの制御・構造化
-- [[context-engineering]] — コンテキストエンジニアリング
+- [[concepts/harness-engineering]] — エージェントの制御・構造化
+- [[concepts/context-engineering]] — コンテキストエンジニアリング
 
 ## ソース
 

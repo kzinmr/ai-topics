@@ -75,7 +75,7 @@ An effective architecture requires both — orchestration without governance is 
 
 ## See Also
 
-- [[agentic-engineering]] — The broader engineering discipline
-- [[agent-governance]] — Governance layer for agent systems
+- [[concepts/agentic-engineering]] — The broader engineering discipline
+- [[concepts/agent-governance]] — Governance layer for agent systems
 - [[agentic-browsing]] — Agent patterns applied to browser automation
 - [[agentic-security]] — Security challenges in agent systems

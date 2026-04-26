@@ -178,8 +178,8 @@ Generator: 実装を提案
 
 ## 関連概念
 
-- [[harness-engineering]] — 上位インデックス
-- [[building-effective-agents]] — エージェント構築の基本原理
-- [[multi-agent-research-system]] — マルチエージェントシステム
-- [[context-engineering]] — コンテキストエンジニアリング
+- [[concepts/harness-engineering]] — 上位インデックス
+- [[concepts/building-effective-agents]] — エージェント構築の基本原理
+- [[concepts/multi-agent-research-system]] — マルチエージェントシステム
+- [[concepts/context-engineering]] — コンテキストエンジニアリング
 - [[comparisons/evals-skills]] — 評価スキル

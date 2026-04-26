@@ -3,6 +3,7 @@ title: "Nader Dabit"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-13
+type: entity
 ---
 
 
@@ -138,7 +139,7 @@ Per nader.codes: React Native AI, Eliza (ai16z), CDK, fal.ai, Layer (layer.xyz),
 
 ## Related
 
-- [[cognition-devin-philosophy]] — Cognition's approach to building AI agents
+- [[concepts/cognition-devin-philosophy]] — Cognition's approach to building AI agents
 -  — Dabit's framework for cloud-first agents
 - [[scott-wu]] — Cognition CEO
 - [[walden-yan]] — Cognition co-founder, context engineering advocate

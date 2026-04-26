@@ -1,8 +1,9 @@
 ---
 title: "ChatGPT Memory & The Bitter Lesson"
-tags: [[memory-systems-bitter-lesson-stateless-agents-chatgpt-context-management]]
+tags: [[concepts/memory-systems-bitter-lesson-stateless-agents-chatgpt-context-management]]
 created: 2026-04-13
 updated: 2026-04-24
+type: concept
 ---
 
 # ChatGPT Memory & The Bitter Lesson
@@ -71,7 +72,7 @@ For coding agents like Claude Code and Codex:
 ## See Also
 
 - [[concepts/_index]]
-- [[claude-memory-tool]]
-- [[ai-agent-memory-middleware]]
-- [[memory-systems-design-patterns]]
-- [[knowledge-graph-memory-agents]]
+- [[concepts/claude-memory-tool]]
+- [[concepts/ai-agent-memory-middleware]]
+- [[concepts/memory-systems-design-patterns]]
+- [[concepts/knowledge-graph-memory-agents]]

@@ -3,6 +3,7 @@ title: "Raymond Chen"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Raymond Chen
@@ -122,11 +123,11 @@ Chen understands that **every "fix" has a cost**, and that cost includes not jus
 
 ## Related
 
-- [[windows]] — The operating system Chen has worked on for 30+ years
-- [[windows-95]] — Frequent subject of Chen's historical analysis; the OS that defined modern Windows compatibility expectations
-- [[windows-nt]] — The codebase that absorbed Windows 95's UI; Chen's writing traces this convergence in detail
-- [[application-compatibility]] — Chen's primary area of expertise; the practice of preserving working behavior across OS updates
-- [[the-old-new-thing-book]] — Chen's 2007 book adapting blog content
+- [[concepts/windows]] — The operating system Chen has worked on for 30+ years
+- [[concepts/windows-95]] — Frequent subject of Chen's historical analysis; the OS that defined modern Windows compatibility expectations
+- [[concepts/windows-nt]] — The codebase that absorbed Windows 95's UI; Chen's writing traces this convergence in detail
+- [[concepts/application-compatibility]] — Chen's primary area of expertise; the practice of preserving working behavior across OS updates
+- [[concepts/the-old-new-thing-book]] — Chen's 2007 book adapting blog content
 -  — The central philosophical theme of Chen's entire body of writing
 -  — Chen's recent posts on processor-level ABI decisions and their implications
 -  — Chen's employer for 30+ years

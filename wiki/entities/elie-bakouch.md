@@ -119,11 +119,11 @@ Active engagement with the local/open-source LLM community through AMAs, discuss
 
 ## Related Wikilinks
 
-- [[smollm]] — Small language model family he contributed to
+- [[concepts/smollm]] — Small language model family he contributed to
 - [[hugging-face]] — His employer and primary platform
-- [[mixture-of-experts]] — His research focus area
-- [[scaling-laws]] — Compute-optimal training research
-- [[fineweb]] — Training dataset he helped curate
+- [[concepts/mixture-of-experts]] — His research focus area
+- [[concepts/scaling-laws]] — Compute-optimal training research
+- [[concepts/fineweb]] — Training dataset he helped curate
 -  — His training philosophy
 -  — Community he actively participates in
 -  — Emerging training methodology he follows

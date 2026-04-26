@@ -108,8 +108,8 @@ MCP creator David Soria Parra outlined the 2026 roadmap at a keynote:
 
 ## Related Concepts
 
-- [[harness-engineering]] — Agent harness architecture where MCP serves as the tool integration layer
+- [[concepts/harness-engineering]] — Agent harness architecture where MCP serves as the tool integration layer
 - [[claude-code]] — Anthropic's agentic coding system with native MCP support
 - [[ai-agent-platforms]] — Platform comparison including MCP as a tool integration standard
-- [[multi-agent-orchestration-architecture]] — MCP as part of the tooling layer in multi-agent systems
-- [[agent-governance]] — Runtime guardrails that apply to MCP tool invocations
+- [[concepts/multi-agent-orchestration-architecture]] — MCP as part of the tooling layer in multi-agent systems
+- [[concepts/agent-governance]] — Runtime guardrails that apply to MCP tool invocations

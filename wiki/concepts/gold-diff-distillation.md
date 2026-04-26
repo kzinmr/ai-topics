@@ -70,4 +70,4 @@ Dwarkesh Patelの分析によれば：
 ## See Also
 
 - [[concepts/_index]]
-- [[local-llm/model-distillation]]
+- [[concepts/local-llm/model-distillation]]

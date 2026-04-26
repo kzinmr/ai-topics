@@ -58,7 +58,7 @@ A systematic framework from Google DeepMind (2026) for understanding how the ope
 
 ## Related
 - 
-- [[ai-safety]]
+- [[concepts/ai-safety]]
 - 
 
 ## Authorization Challenges for AI Agents (2026-04)

@@ -64,14 +64,14 @@ Run `uvx showboat --help` and then create a `notes/api-demo.md` showboat documen
 
 ## 関連ツール
 
-- [[harness-engineering/agentic-workflows/rodney]] — ブラウザ自動化CLI（Showboatと連携してスクリーンショット撮影）
+- [[concepts/harness-engineering/agentic-workflows/rodney]] — ブラウザ自動化CLI（Showboatと連携してスクリーンショット撮影）
 -  — SwiftUIスライドアプリ（Showboatでコード解説を生成）
 
 ## 関連概念
 
-- [[agentic-manual-testing]] — Showboatの主要ユースケース
-- [[harness-engineering/agentic-workflows/linear-walkthroughs]] — コード解説生成パターン
-- [[harness-engineering/agentic-engineering]] — 上位概念
+- [[concepts/agentic-manual-testing]] — Showboatの主要ユースケース
+- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — コード解説生成パターン
+- [[concepts/harness-engineering/agentic-engineering]] — 上位概念
 
 ## 参照
 - [[simon-willison]] — 開発者

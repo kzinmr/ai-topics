@@ -355,16 +355,16 @@ Hermes Agent employs an **autonomous skill creation loop** that distinguishes it
 ### Known Challenge: Skill Explosion Problem
 Analysis by elvis (9-hour source code study, April 2026) identified a long-tail failure mode: the agent creates adjacent redundant skills faster than it consolidates them. Example: three separate skills for "image + local filesystem + model can see it" emerged independently. This is tracked as a product prioritization issue — expected resolution involves invocation metrics-based consolidation and stronger creation-time deduplication.
 
-See [[skill-architecture-patterns]] for detailed comparison with OpenClaw's governance model.
+See [[concepts/skill-architecture-patterns]] for detailed comparison with OpenClaw's governance model.
 
 ## Related Pages
 
 - [[teknium]] — Hermes Agent creator, Nous Research co-founder
-- [[harness-engineering/agentic-workflows/interactive-explanations]] — Agentic Engineering patterns (related design philosophy)
-- [[claude-memory]] — File-based memory architecture (comparable design)
-- [[harness-engineering]] — Harness Engineering framework (related orchestration concepts)
-- [[ai-agent-memory-middleware]] — AI Agent Memory Middleware (complementary memory layer concepts)
-- [[skill-architecture-patterns]] — Skill self-improvement vs governed approaches (Hermes vs OpenClaw)
+- [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] — Agentic Engineering patterns (related design philosophy)
+- [[concepts/claude-memory]] — File-based memory architecture (comparable design)
+- [[concepts/harness-engineering]] — Harness Engineering framework (related orchestration concepts)
+- [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware (complementary memory layer concepts)
+- [[concepts/skill-architecture-patterns]] — Skill self-improvement vs governed approaches (Hermes vs OpenClaw)
 
 ## Sources
 

@@ -5,7 +5,7 @@ created: 2026-04-10
 updated: 2026-04-24
 tags: [claude-mythos, project-glasswing, anthropic, cybersecurity, frontier-ai, ai-safety]
 aliases: ["project-glasswing", "mythos-preview"]
-related: , , [[cognitive-cost-of-agents]], 
+related: , , [[concepts/cognitive-cost-of-agents]], 
 sources: []
 ---
 
@@ -197,9 +197,9 @@ Project Glasswing has ignited a wider debate about how to handle increasingly ca
 
 -  — Alignment research and the paradox of capable-but-aligned models
 -  — AI agents as development partners, including autonomous vulnerability discovery
-- [[cognitive-cost-of-agents]] — The hidden cost of delegating understanding to AI systems
+- [[concepts/cognitive-cost-of-agents]] — The hidden cost of delegating understanding to AI systems
 -  — The economics and implications of AI-powered vulnerability research
-- [[ai-bubble-economics]] — The financial structures supporting frontier AI development
+- [[concepts/ai-bubble-economics]] — The financial structures supporting frontier AI development
 
 ## Sources
 

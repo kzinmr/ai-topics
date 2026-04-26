@@ -1,8 +1,9 @@
 ---
 title: "Bradford Morgan White"
-tags: [[person]]
+tags: [[concepts/person]]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -174,11 +175,11 @@ His technical writing (brd.la) is:
 
 ## Related
 
-- [[computing-history]] — Comprehensive coverage of the computing industry from mechanical to modern
-- [[microprocessor-architecture]] — Intel, ARM, PowerPC, and the evolution of processing
-- [[operating-systems]] — QNX, Windows, Unix, DOS, and the battle for the desktop
-- [[local-llm/self-hosting-ai-development]] — Home infrastructure, cloud free-tier optimization, defense in depth
-- [[software-history]] — Xerox PARC, SRI/ARC, and the origins of personal computing
+- [[concepts/computing-history]] — Comprehensive coverage of the computing industry from mechanical to modern
+- [[concepts/microprocessor-architecture]] — Intel, ARM, PowerPC, and the evolution of processing
+- [[concepts/operating-systems]] — QNX, Windows, Unix, DOS, and the battle for the desktop
+- [[concepts/local-llm/self-hosting-ai-development]] — Home infrastructure, cloud free-tier optimization, defense in depth
+- [[concepts/software-history]] — Xerox PARC, SRI/ARC, and the origins of personal computing
 -  — Practical systems administration, security hardening, infrastructure automation
 -  — Alan Kay, the graphical user interface, and the future that was dismissed
 -  — Microkernel architecture, real-time operating systems, embedded computing

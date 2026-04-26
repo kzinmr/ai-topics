@@ -10,7 +10,7 @@ sources: []
 
 # Attention Mechanism Variants
 
-Modern transformer architectures use different attention mechanisms to optimize the trade-off between modeling capacity, compute efficiency, and context length. A prerequisite concept for [[context-engineering]].
+Modern transformer architectures use different attention mechanisms to optimize the trade-off between modeling capacity, compute efficiency, and context length. A prerequisite concept for [[concepts/context-engineering]].
 
 ## Attention Spectrum
 
@@ -97,19 +97,19 @@ Replace most expensive full-attention layers with linear-time/state-space module
 
 ## Context Engineering Connection
 
-These attention variants directly impact [[context-engineering]] because:
+These attention variants directly impact [[concepts/context-engineering]] because:
 - **KV cache size** determines how much context fits in memory (SWA, GQA, MLA all reduce cache)
 - **Compute scaling** affects context window feasibility (n² for standard attention vs linear for hybrid)
-- **Token economics** (see [[token-economics]]) — different attention mechanisms have different CPM profiles
+- **Token economics** (see [[concepts/token-economics]]) — different attention mechanisms have different CPM profiles
 - **Sub-agent architectures** in context engineering rely on efficient attention to keep context windows manageable
 
 ## Related
 
-- [[token-economics]] — Cost per million tokens optimization
-- [[context-engineering]] — Managing context windows efficiently
-- [[context-window-management]] — Context window management patterns
-- [[local-llm]] — Local LLM inference considerations
-- [[reasoning-models]] — Reasoning models require long context windows
+- [[concepts/token-economics]] — Cost per million tokens optimization
+- [[concepts/context-engineering]] — Managing context windows efficiently
+- [[concepts/context-window-management]] — Context window management patterns
+- [[concepts/local-llm]] — Local LLM inference considerations
+- [[concepts/reasoning-models]] — Reasoning models require long context windows
 
 ## Sources
 

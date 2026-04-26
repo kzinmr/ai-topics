@@ -3,6 +3,7 @@ title: "Giles Thomas (gpjt)"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-15
+type: entity
 ---
 
 # Giles Thomas
@@ -90,7 +91,7 @@ This approach makes his series valuable for both learning deep learning fundamen
 
 ## Related
 
-- [[llm-training-fundamentals]] — Core concepts of training language models
+- [[concepts/llm-training-fundamentals]] — Core concepts of training language models
 -  — Technique for simulating large batch sizes
 -  — DDP and multi-GPU training patterns
 -  — Running LLM training on consumer hardware

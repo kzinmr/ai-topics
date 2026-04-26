@@ -51,6 +51,6 @@ Cycle 3: (Prompt + X + Y) → AI generates even better code → ...
 | 長期効果 | 認知負債が累積 | 知識が複利的に成長 |
 
 ## 関連概念
-- [[harness-engineering/agentic-workflows/code-hoarding]] — 知識の蓄積パターン
-- [[agentic-engineering]] — Agentic Engineering全体像
-- [[harness-engineering/agentic-workflows/cognitive-debt]] — 認知負債（Compound Loopで返済）
+- [[concepts/harness-engineering/agentic-workflows/code-hoarding]] — 知識の蓄積パターン
+- [[concepts/agentic-engineering]] — Agentic Engineering全体像
+- [[concepts/harness-engineering/agentic-workflows/cognitive-debt]] — 認知負債（Compound Loopで返済）

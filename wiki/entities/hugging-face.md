@@ -135,13 +135,13 @@ Delangue's Nov 2025 statement is notable: he distinguishes between an "LLM bubbl
 In early 2026, hackers compromised the Hugging Face platform, distributing Android-targeted malware capable of full system takeover. This is a significant security event for a platform hosting 900K+ models and used by 13M users.
 
 ## Related Entities
-- [[transformers-library]]
+- [[concepts/transformers-library]]
 - [[anthropic]]
 - [[openai]]
 - 
 - [[andrej-karpathy]] (Hugging Face contributor)
 - [[simon-willison]] (Hugging Face ecosystem user)
-- [[unsloth]] (fine-tuning on Transformers)
-- [[vllm]] (complementary inference engine)
+- [[concepts/unsloth]] (fine-tuning on Transformers)
+- [[concepts/vllm]] (complementary inference engine)
 -  (acquired 2025)
 -  (acquired 2022)

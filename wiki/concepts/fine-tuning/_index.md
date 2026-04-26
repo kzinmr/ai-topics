@@ -1,6 +1,6 @@
 ---
 title: "Fine-Tuning — Overview"
-tags: [[fine-tuning-post-training-overview]]
+tags: [[concepts/fine-tuning-post-training-overview]]
 created: 2026-04-19
 updated: 2026-04-19
 ---
@@ -24,20 +24,20 @@ Post-training techniques for adapting pre-trained language models to specific ta
 ## Sub-pages
 
 ### Training Methods
-- [[fine-tuning/peft-lora-qlora]] — Parameter-efficient fine-tuning (LoRA, QLoRA, adapters)
-- [[fine-tuning/grpo-rl-training]] — Group Relative Policy Optimization for reasoning and structured output
-- [[fine-tuning/rlhf-dpo-preference]] — RLHF, DPO, ORPO, KTO preference optimization methods
+- [[concepts/fine-tuning/peft-lora-qlora]] — Parameter-efficient fine-tuning (LoRA, QLoRA, adapters)
+- [[concepts/fine-tuning/grpo-rl-training]] — Group Relative Policy Optimization for reasoning and structured output
+- [[concepts/fine-tuning/rlhf-dpo-preference]] — RLHF, DPO, ORPO, KTO preference optimization methods
 
 ### Training Frameworks
-- [[fine-tuning/axolotl]] — YAML-config fine-tuning framework supporting 100+ models
-- [[fine-tuning/unsloth]] — 2-5x faster fine-tuning with 50-80% less memory
-- [[fine-tuning/trl]] — Transformer Reinforcement Learning library (HuggingFace)
-- [[fine-tuning/pytorch-fsdp]] — Fully Sharded Data Parallel for distributed training
+- [[concepts/fine-tuning/axolotl]] — YAML-config fine-tuning framework supporting 100+ models
+- [[concepts/fine-tuning/unsloth]] — 2-5x faster fine-tuning with 50-80% less memory
+- [[concepts/fine-tuning/trl]] — Transformer Reinforcement Learning library (HuggingFace)
+- [[concepts/fine-tuning/pytorch-fsdp]] — Fully Sharded Data Parallel for distributed training
 
 ### Infrastructure
-- [[fine-tuning/quantization-overview]] — Model quantization for efficient inference
-- [[inference/llama-cpp]] — CPU/Apple Silicon inference engine
-- [[inference/vllm]] — High-throughput GPU serving
+- [[concepts/fine-tuning/quantization-overview]] — Model quantization for efficient inference
+- [[concepts/inference/llama-cpp]] — CPU/Apple Silicon inference engine
+- [[concepts/inference/vllm]] — High-throughput GPU serving
 -  — Production model serving patterns
 
 ## The Fine-Tuning Pipeline
@@ -59,9 +59,9 @@ Pre-trained Model → SFT → Preference Optimization (DPO/GRPO/RLHF) → Quanti
 | **Full fine-tuning** | Maximum performance, new capabilities | High | Low |
 
 ## Related Concepts
-- [[harness-engineering]] — Fine-tuning as part of the model + harness paradigm
-- [[local-llm]] — Running fine-tuned models locally
-- [[inference]] — Inference optimization post-fine-tuning
+- [[concepts/harness-engineering]] — Fine-tuning as part of the model + harness paradigm
+- [[concepts/local-llm]] — Running fine-tuned models locally
+- [[concepts/inference]] — Inference optimization post-fine-tuning
 -  — Evaluating fine-tuned models
 
 ## Sources

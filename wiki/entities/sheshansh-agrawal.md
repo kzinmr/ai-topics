@@ -133,7 +133,7 @@ Results: **75.43% accuracy** (content + metadata) vs **67.81%** (content only) i
 
 > *"By treating metadata extraction as prompt-engineering and traversal as an agentic tool-use problem, we achieve the flexibility of GraphRAG without the complexity."*
 
-This is philosophically adjacent to your [[cli-over-mcp-pattern]] — **let the agent decide the path rather than hard-coding the topology**.
+This is philosophically adjacent to your [[concepts/cli-over-mcp-pattern]] — **let the agent decide the path rather than hard-coding the topology**.
 
 ### Instruction-Following Rerankers
 
@@ -143,7 +143,7 @@ Agrawal also developed **BlitzRank**, the world's first instruction-following re
 
 ### On Small Model Fine-Tuning
 
-Agrawal's research consistently demonstrates that **domain-specific fine-tuning of smaller models** outperforms relying on larger generalist models. This aligns with your [[reasoning-models]] research and the local-first AI trend — the alpha is in specialization, not scale.
+Agrawal's research consistently demonstrates that **domain-specific fine-tuning of smaller models** outperforms relying on larger generalist models. This aligns with your [[concepts/reasoning-models]] research and the local-first AI trend — the alpha is in specialization, not scale.
 
 ### On Code Quality Standards
 
@@ -203,8 +203,8 @@ As Director of Research, leads work on:
 
 ## Related
 
-- [[agentic-retrieval]] — Agentic search and retrieval patterns
-- [[agentic-alternative-to-graphrag]] — GraphRAG alternative via metadata search
+- [[concepts/agentic-retrieval]] — Agentic search and retrieval patterns
+- [[concepts/agentic-alternative-to-graphrag]] — GraphRAG alternative via metadata search
 -  — Cumulative Evidence Recall metric
 -  — Reranking in retrieval pipelines
 - [[doug-turnbull]] — Search relevance engineering perspective

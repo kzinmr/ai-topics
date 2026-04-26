@@ -49,7 +49,7 @@ Instead of scaling context windows, let coding agents:
 - Research paper (2026)
 
 ## Related
-- [[long-context-coding-agents]]
+- [[concepts/long-context-coding-agents]]
 - 
 - 
 - 

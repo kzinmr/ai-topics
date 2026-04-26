@@ -57,4 +57,4 @@ George Hotz (geohot) argues from a different angle:
 
 - [[nathan-lambert]] — Primary analyst of consortium dynamics
 - [[geohot-github-io]] — Open-source AI philosophy
-- [[open-source-ai-destruction]] — Risks of concentrated AI power
+- [[concepts/open-source-ai-destruction]] — Risks of concentrated AI power

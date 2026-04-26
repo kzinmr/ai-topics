@@ -44,7 +44,7 @@ Tokenmaxxing exists on a spectrum from "tasteful" to "untasteful":
 
 ## Relation to Token Economics
 
-[[token-economics]] provides the cost framework; tasteful tokenmaxxing is the **workflow strategy** that operationalizes those cost savings. Where token economics answers *"how much do tokens cost?"*, tasteful tokenmaxxing answers *"how should we use tokens?"*
+[[concepts/token-economics]] provides the cost framework; tasteful tokenmaxxing is the **workflow strategy** that operationalizes those cost savings. Where token economics answers *"how much do tokens cost?"*, tasteful tokenmaxxing answers *"how should we use tokens?"*
 
 Key connection: Tasteful tokenmaxxing achieves the **FinOps layer** of  through behavioral and workflow changes rather than technical optimizations alone.
 
@@ -57,13 +57,13 @@ Key connection: Tasteful tokenmaxxing achieves the **FinOps layer** of  through 
 
 ## Related Concepts
 
-- [[token-economics]] — Cost framework underlying tokenmaxxing decisions
-- [[context-engineering]] — Token-efficient context management techniques
-- [[context-compression]] — Reducing context window waste
-- [[agentic-engineering]] — Developer workflows for agent-assisted development
-- [[agent-loop-orchestration]] — Execution patterns that affect token usage
-- [[cognitive-debt]] — Accumulated technical debt from poor-quality agent output
-- [[harness-engineering/system-architecture/context-anxiety]] — The anxiety of wasting context windows on low-value content
+- [[concepts/token-economics]] — Cost framework underlying tokenmaxxing decisions
+- [[concepts/context-engineering]] — Token-efficient context management techniques
+- [[concepts/context-compression]] — Reducing context window waste
+- [[concepts/agentic-engineering]] — Developer workflows for agent-assisted development
+- [[concepts/agent-loop-orchestration]] — Execution patterns that affect token usage
+- [[concepts/cognitive-debt]] — Accumulated technical debt from poor-quality agent output
+- [[concepts/harness-engineering/system-architecture/context-anxiety]] — The anxiety of wasting context windows on low-value content
 
 ## Sources
 

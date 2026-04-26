@@ -1,8 +1,9 @@
 ---
 title: "Maximor"
-tags: [[company-startup-maximor-finance-accounting-agent-automation]]
+tags: [[concepts/company-startup-maximor-finance-accounting-agent-automation]]
 created: 2026-04-20
 updated: 2026-04-24
+type: entity
 ---
 
 # Maximor

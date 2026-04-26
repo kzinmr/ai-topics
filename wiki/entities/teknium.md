@@ -3,6 +3,7 @@ title: "Ryan (Teknium)"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -163,16 +164,16 @@ Nous Research's decentralized training infrastructure (DiStrO) and Psyche Networ
 
 ## Related
 
-- [[nous-research]] — Co-founder and Head of Post-Training
-- [[hermes-models]] — Lead architect of Hermes 2/3/4
+- [[concepts/nous-research]] — Co-founder and Head of Post-Training
+- [[concepts/hermes-models]] — Lead architect of Hermes 2/3/4
 - [[hermes-agent]] — Creator and lead maintainer (68K+ stars)
-- [[post-training]] — His primary area of expertise
+- [[concepts/post-training]] — His primary area of expertise
 -  — DataForge, GPTeacher, custom pipelines
 -  — Atropos RL environments
-- [[harness-engineering]] — CLI/terminal-use harnessing philosophy
+- [[concepts/harness-engineering]] — CLI/terminal-use harnessing philosophy
 -  — Nous Research ethos, DiStrO, Psyche Network
-- [[open-source-ai-destruction]] — Advocate for open-weight models and transparent development
-- [[fine-tuning/rlhf-dpo-preference]] — Direct Preference Optimization for Hermes 3 alignment
+- [[concepts/open-source-ai-destruction]] — Advocate for open-weight models and transparent development
+- [[concepts/fine-tuning/rlhf-dpo-preference]] — Direct Preference Optimization for Hermes 3 alignment
 - [[sero]] — Fellow open-source AI developer and ElizaOS contributor
 
 ## Key Links

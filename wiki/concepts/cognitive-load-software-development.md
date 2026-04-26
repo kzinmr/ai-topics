@@ -151,11 +151,11 @@ stuff
 Zakirullinの認知負荷フレームワークは、AIコーディングエージェントの時代において**新しい次元**を獲得する：
 
 ### 1. エージェントは認知負荷を「転嫁」する
-- [[cognitive-cost-of-agents]]（Simon Willison）が指摘するように、エージェントは作業を**減らす**のではなく**再分配**する
+- [[concepts/cognitive-cost-of-agents]]（Simon Willison）が指摘するように、エージェントは作業を**減らす**のではなく**再分配**する
 - Zakirullinの定理：extraneous loadは削減可能 → エージェントの出力を読む際のextraneous loadを最小化するharness設計が重要
 
 ### 2. AGENTS.md は Deep Module であるべき
-- [[harness-engineering]] のAGENTS.mdパターン（~100行の目次 + docs/配下の詳細）はZakirullinのdeep module原則に適合
+- [[concepts/harness-engineering]] のAGENTS.mdパターン（~100行の目次 + docs/配下の詳細）はZakirullinのdeep module原則に適合
 - 浅いAGENTS.mdの乱立 = shallow modulesのアンチパターンをエージェントコンテキストで再現
 
 ### 3. Symphonyのthroughputと認知オーバーロード
@@ -288,11 +288,11 @@ HNコメントのTL;DR:
 ## 関連概念
 
 - [[comparisons/aposd-vs-clean-code]] — Ousterhout vs Martinの設計哲学対比。Deep/Small、コメント有無、TDD/Bundlingの議論をCognitive Load観点で統合
-- [[cognitive-cost-of-agents]] — Willisonの認知負債理論（エージェント時代の認知コスト）
-- [[harness-engineering]] — Lopopoloのエージェント環境設計
-- [[harness-engineering]] — 開発者ワークフローパターン
-- [[context-window-management]] — コンテキスト制約の管理
-- [[harness-engineering/agentic-workflows/agent-first-design]] — エージェント向けコード設計
+- [[concepts/cognitive-cost-of-agents]] — Willisonの認知負債理論（エージェント時代の認知コスト）
+- [[concepts/harness-engineering]] — Lopopoloのエージェント環境設計
+- [[concepts/harness-engineering]] — 開発者ワークフローパターン
+- [[concepts/context-window-management]] — コンテキスト制約の管理
+- [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — エージェント向けコード設計
 
 ## Sources
 

@@ -1,8 +1,9 @@
 ---
 title: "Chief of Staff Agent Patterns"
-tags: [[claude-agent-sdk-orchestration-hooks-subagents-plan-mode-output-styles]]
+tags: [[concepts/claude-agent-sdk-orchestration-hooks-subagents-plan-mode-output-styles]]
 created: 2026-04-24
 updated: 2026-04-24
+type: concept
 ---
 
 # Chief of Staff Agent Patterns
@@ -191,7 +192,7 @@ Chief of Staff Agent (claude-opus-4-6)
 
 ## Related
 
-- [[claude-agent-sdk-sre-patterns]] — MCP integration and safety guardrails
-- [[managed-agents-sre-incident-response]] — Human-in-the-loop approval patterns
+- [[concepts/claude-agent-sdk-sre-patterns]] — MCP integration and safety guardrails
+- [[concepts/managed-agents-sre-incident-response]] — Human-in-the-loop approval patterns
 -  — Managing long-running agent context
-- [[research-agent-fundamentals]] — Stateless vs stateful agent patterns
+- [[concepts/research-agent-fundamentals]] — Stateless vs stateful agent patterns

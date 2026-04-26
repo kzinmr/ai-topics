@@ -5,7 +5,7 @@ created: 2026-04-16
 updated: 2026-04-16
 tags: [concept, ai-agents, security, sandboxing, capabilities, monty, in-process]
 aliases: ["monty-sandbox", "capabilities-based-security", "monty", "capability-sandbox"]
-related: [[harness-engineering/system-architecture/infrastructure-noise]], [[harness-engineering]], [[samuel-colvin]]
+related: [[concepts/harness-engineering/system-architecture/infrastructure-noise]], [[concepts/harness-engineering]], [[samuel-colvin]]
 depth: L2
 status: complete
 sources: []
@@ -15,7 +15,7 @@ sources: []
 
 In-process sandboxing isolates LLM-generated code execution **within the host process** using language-level security boundaries — without requiring Docker, cloud accounts, or external infrastructure. This contrasts with infrastructure-level sandboxing (containers, microVMs) which isolates at the OS/hypervisor level.
 
-> **Note**: This page covers in-process isolation (Monty, capabilities-based security). For infrastructure-level sandboxing, see [[infrastructure]].
+> **Note**: This page covers in-process isolation (Monty, capabilities-based security). For infrastructure-level sandboxing, see [[concepts/infrastructure]].
 
 ## Two Approaches to Sandbox Security
 
@@ -104,8 +104,8 @@ Monty can serialize execution state mid-flight to bytes (single-digit KBs), then
 
 ## Related
 
-- [[harness-engineering/system-architecture/infrastructure-noise]] — Container, microVM, and gVisor-level isolation
-- [[harness-engineering]] — Monty as a harness environment
+- [[concepts/harness-engineering/system-architecture/infrastructure-noise]] — Container, microVM, and gVisor-level isolation
+- [[concepts/harness-engineering]] — Monty as a harness environment
 - [[samuel-colvin]] — Creator
 
 ## Sources

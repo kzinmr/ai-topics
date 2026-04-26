@@ -3,6 +3,7 @@ title: "Compute Scaling Bottlenecks"
 tags: [ai-agents, rAG, concept]
 created: 2026-04-24
 updated: 2026-04-24
+type: concept
 ---
 
 # Compute Scaling Bottlenecks
@@ -10,7 +11,7 @@ updated: 2026-04-24
 **Date:** April 10, 2026
 **Source:** SemiAnalysis — Dylan Patel's AI compute bottleneck analysis
 **Primary Analyst:** [[dylan-patel]] (SemiAnalysis)
-**Related:** , [[space-gpus]], [[ai-bubble-economics]], [[cognitive-cost-of-agents]]
+**Related:** , [[concepts/space-gpus]], [[concepts/ai-bubble-economics]], [[concepts/cognitive-cost-of-agents]]
 
 ---
 
@@ -94,17 +95,17 @@ The compute bottleneck has profound economic consequences:
 2. **Allocation battles:** Companies compete for limited EUV-enabled chip production
 3. **Geopolitical leverage:** Nations controlling semiconductor supply chains gain strategic power
 4. **Investment distortion:** Capital flows into bottlenecks (ASML, TSMC) rather than applications
-5. **Bubble risk:** [[ai-bubble-economics]] — if revenue from AI applications cannot justify infrastructure costs at bottleneck-limited supply levels
+5. **Bubble risk:** [[concepts/ai-bubble-economics]] — if revenue from AI applications cannot justify infrastructure costs at bottleneck-limited supply levels
 
 ---
 
 ## Related Concepts
 
-- [[ai-bubble-economics]] — Whether AI revenue can justify infrastructure spending at constrained supply levels
-- [[space-gpus]] — Orbital compute as a theoretical bottleneck workaround
+- [[concepts/ai-bubble-economics]] — Whether AI revenue can justify infrastructure spending at constrained supply levels
+- [[concepts/space-gpus]] — Orbital compute as a theoretical bottleneck workaround
 -  — The broader physical layer of AI: data centers, networking, power
-- [[cognitive-cost-of-agents]] — If compute is scarce, inefficient agent usage becomes even more costly
-- [[harness-engineering/agentic-engineering]] — Efficient use of limited compute through better agent practices
+- [[concepts/cognitive-cost-of-agents]] — If compute is scarce, inefficient agent usage becomes even more costly
+- [[concepts/harness-engineering/agentic-engineering]] — Efficient use of limited compute through better agent practices
 
 ---
 

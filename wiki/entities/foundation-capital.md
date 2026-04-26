@@ -1,8 +1,9 @@
 ---
 title: "Foundation Capital"
-tags: [[company-vc-foundation-capital-context-graph-investor]]
+tags: [[concepts/company-vc-foundation-capital-context-graph-investor]]
 created: 2026-04-20
 updated: 2026-04-24
+type: entity
 ---
 
 # Foundation Capital
@@ -61,7 +62,7 @@ Key criticisms:
 
 ## Related
 
-- [[context-graph]] — The main concept page
+- [[concepts/context-graph]] — The main concept page
 - [[jaya-gupta]] — Partner who co-authored the article
 - [[playerzero]] — Path 3 startup (context graph as engineering world model)
 - [[arize]] — Observability layer mentioned in the article

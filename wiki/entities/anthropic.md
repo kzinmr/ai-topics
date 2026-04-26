@@ -27,7 +27,7 @@ AI safety research company, developer of the Claude model family.
 
 | Model | Status | Notes |
 |-------|--------|-------|
-| [[claude-mythos]] | **Withheld** | Too risky for public release; limited access via [[project-glasswing]] |
+| [[claude-mythos]] | **Withheld** | Too risky for public release; limited access via [[concepts/project-glasswing]] |
 |  | Released (GA, Apr 16) | Latest flagship — improved coding, cyber safeguards, better vision |
 |  | Released | Previous generation |
 |  | Released | Mid-tier |
@@ -58,7 +58,7 @@ New product powered by Claude Opus 4.7 vision model. Allows collaborative design
 ## AI Safety Initiatives
 
 ### Project Glasswing (2026-04)
-Anthropic committed $100M in model usage credits + $4M in donations to open-source security organizations. See [[project-glasswing]] for details.
+Anthropic committed $100M in model usage credits + $4M in donations to open-source security organizations. See [[concepts/project-glasswing]] for details.
 
 ### Model Withholding Decision
 Anthropic chose not to release [[claude-mythos]] publicly after discovering its vulnerability exploitation capabilities far exceeded safety thresholds. On Firefox exploit generation:
@@ -93,7 +93,7 @@ Cat Wu (entity: [[cat-wu]]) leads product development at Anthropic, responsible 
 ### Claude Code
 Claude Code is Anthropic's AI coding agent, designed under Cat Wu's product leadership. It is a key competitive product against OpenAI's Codex. See [[claude-code]] for details.
 
-See also: [[openai-codex-superapp]] (OpenAI's competing Codex superapp positioning).
+See also: [[concepts/openai-codex-superapp]] (OpenAI's competing Codex superapp positioning).
 
 ## Sources
 -  (Ben's Bites, 2026-04-09)
@@ -125,7 +125,7 @@ This mirrors how platforms like Google and OpenAI expand beyond their core produ
 
 ## Related
 - [[claude-mythos]]
-- [[project-glasswing]]
+- [[concepts/project-glasswing]]
 - 
 - [[openai]]
 - [[meta]]

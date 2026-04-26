@@ -177,8 +177,8 @@ This integration blurs the boundary between design and engineering workflows, en
 - [[openai]] — Current owner (since Jul 2025)
 -  — Latest model used
 - [[claude-mythos]] — Withheld model
-- [[project-glasswing]] — Safety initiative
-- [[harness-engineering]]
+- [[concepts/project-glasswing]] — Safety initiative
+- [[concepts/harness-engineering]]
 - 
 
 ## Sources

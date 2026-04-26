@@ -92,9 +92,9 @@ Cognition's patterns map to the existing 5-level model:
 
 ### Open Problems
 The communication challenges identified by Cognition align with:
-- [[context-window-management]] — how to distill context without loss
-- [[agent-team-swarm]] — coordination patterns for multi-agent systems
-- [[multi-agent-consensus-patterns]] — how agents reach agreement
+- [[concepts/context-window-management]] — how to distill context without loss
+- [[concepts/agent-team-swarm]] — coordination patterns for multi-agent systems
+- [[concepts/multi-agent-consensus-patterns]] — how agents reach agreement
 
 ## Sources
 - [Multi-Agents: What's Actually Working](https://cognition.ai/blog/multi-agents-whats-actually-working) — Cognition Blog, 2026-04-22

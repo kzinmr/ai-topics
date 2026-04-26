@@ -3,6 +3,7 @@ title: "Armin Ronacher (mitsuhiko)"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -125,12 +126,12 @@ In his most recent writing, Armin has been defending the irreplaceable value of 
 
 ## Related Concepts
 
-- [[flask]] — His most famous creation, the Python microframework
-- [[jinja2]] — Dominant Python template engine
-- [[werkzeug]] — WSGI toolkit underlying most Python web frameworks
-- [[pallets]] — The ecosystem of projects he maintains
+- [[concepts/flask]] — His most famous creation, the Python microframework
+- [[concepts/jinja2]] — Dominant Python template engine
+- [[concepts/werkzeug]] — WSGI toolkit underlying most Python web frameworks
+- [[concepts/pallets]] — The ecosystem of projects he maintains
 -  — Fast Python package installer, his latest systems tool
-- [[polecats]] — AI agent orchestration framework with human oversight
+- [[concepts/polecats]] — AI agent orchestration framework with human oversight
 -  — His critique of AI-generated code
 -  — His work on fixing Python's toolchain
 -  — His perspective on maintainer burden

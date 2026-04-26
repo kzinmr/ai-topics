@@ -131,10 +131,10 @@ OpenClaw's influence extends beyond direct usage. The governance patterns, prece
 - [[hermes-agent]] — Hermes Agent platform
 - [[peter-steinberger]] — OpenClaw creator
 - [[teknium]] — Hermes Agent architect
-- [[skill-architecture-patterns]] — Skill management comparison
-- [[harness-engineering]] — Harness Engineering framework
-- [[anthropic-openclaw-conflict]] — Open-source vs platform risk
-- [[harness-engineering/agentic-workflows/agent-first-design]] — Agent-first codebase design
+- [[concepts/skill-architecture-patterns]] — Skill management comparison
+- [[concepts/harness-engineering]] — Harness Engineering framework
+- [[concepts/anthropic-openclaw-conflict]] — Open-source vs platform risk
+- [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — Agent-first codebase design
 
 ## Sources
 

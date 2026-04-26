@@ -109,6 +109,6 @@ Event-Driven Architecture (EDA) is a software design pattern where services comm
 - Single team maintaining all code
 
 ## Related Concepts
-- [[lambda-monolith-lambdalith]]
-- [[microservices-vs-monolith]]
-- [[base-consistency]]
+- [[concepts/lambda-monolith-lambdalith]]
+- [[concepts/microservices-vs-monolith]]
+- [[concepts/base-consistency]]

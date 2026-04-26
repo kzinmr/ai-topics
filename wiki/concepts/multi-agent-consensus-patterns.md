@@ -138,7 +138,7 @@ q(t) = ⌈(n_live(t) + 1) / 2⌉
 
 | 分散システム概念 | AI Agentエンジニアリングでの対応 |
 |----------------|--------------------------------|
-| 階層的コンセンサス | [[agent-team-swarm]] の Supervisor/Worker アーキテクチャ |
+| 階層的コンセンサス | [[concepts/agent-team-swarm]] の Supervisor/Worker アーキテクチャ |
 | 適応的法定人数 | 動的チームメンバーシップ（参加/離脱するエージェント） |
 | 故障検出+再選択 | 自己修復エージェントシステム |
 | データ認識配置 | エージェントタスクの分散配置最適化 |
@@ -161,10 +161,10 @@ q(t) = ⌈(n_live(t) + 1) / 2⌉
 
 ## 関連概念
 
-- [[agent-team-swarm]] — マルチエージェントチームのオーケストレーション
-- [[harness-engineering]] — 単一エージェントの実行環境設計
-- [[openai-symphony]] — Ryan Lopopolo によるSymphonyプロジェクト
-- [[back-of-house-multi-agent-patterns]] — 厨房メタファーのマルチエージェントパターン
+- [[concepts/agent-team-swarm]] — マルチエージェントチームのオーケストレーション
+- [[concepts/harness-engineering]] — 単一エージェントの実行環境設計
+- [[concepts/openai-symphony]] — Ryan Lopopolo によるSymphonyプロジェクト
+- [[concepts/back-of-house-multi-agent-patterns]] — 厨房メタファーのマルチエージェントパターン
 
 ## ソース
 

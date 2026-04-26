@@ -3,6 +3,7 @@ title: "Test Case Minimization"
 tags: [- testing]
 created: 2026-04-24
 updated: 2026-04-24
+type: concept
 ---
 
 # Test Case Minimization
@@ -96,9 +97,9 @@ Phase 2 (refine): Halve step to find minimum
 
 ## Related Concepts
 
-- [[agentic-pbt]] — Agentic property-based testing
+- [[concepts/agentic-pbt]] — Agentic property-based testing
 -  — Test harnesses for LLM evaluation
-- [[harness-engineering/agentic-workflows/first-run-the-tests]] — Test-first development patterns
+- [[concepts/harness-engineering/agentic-workflows/first-run-the-tests]] — Test-first development patterns
 
 ## References
 

@@ -3,6 +3,7 @@ title: "Arlan Rakhmetzhanov"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-10
+type: entity
 ---
 
 
@@ -132,7 +133,7 @@ Rakhmetzhanov's approach to building in public — launching on Product Hunt, co
 -  — Y Combinator Summer 2025 batch
 -  — Lead seed investor
 - [[cursor-3]] — AI coding agent; target user of Nia
-- [[github-copilot-billing]] — AI coding tool; target user of Nia
+- [[concepts/github-copilot-billing]] — AI coding tool; target user of Nia
 
 ## Sources
 

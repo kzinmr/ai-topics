@@ -99,7 +99,7 @@ The pattern extends beyond Anthropic: Google has also taken action against Gemin
 
 ## Related
 
-- [[openclaw-ecosystem]] — OpenClaw and the personal AI agent movement
-- [[harness-engineering/agentic-engineering]] — The practice being constrained
-- [[claude-code-source-patterns]] — Technical analysis of Claude Code internals
+- [[concepts/openclaw-ecosystem]] — OpenClaw and the personal AI agent movement
+- [[concepts/harness-engineering/agentic-engineering]] — The practice being constrained
+- [[concepts/claude-code-source-patterns]] — Technical analysis of Claude Code internals
 - [[peter-steinberger]] — OpenClaw creator, now at OpenAI

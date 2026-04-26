@@ -1,8 +1,9 @@
 ---
 title: "Cognition/Devin Philosophy"
-tags: [[agentic-engineering-cognition-devin-multi-agents-orchestration]]
+tags: [[concepts/agentic-engineering-cognition-devin-multi-agents-orchestration]]
 created: 2026-04-23
 updated: 2026-04-24
+type: concept
 ---
 
 # Cognition/Devin Philosophy — Agentic Coding at Scale
@@ -134,10 +135,10 @@ Cognition Growth Engineer Nader Dabit (@dabit3) extends the philosophy:
 
 ## See Also
 
-- [[closing-agent-loop]] — Full development loop (Write→Catch→Fix→Merge)
-- [[agent-team-swarm/managed-devins]] — Conditional multi-agent architecture
-- [[harness-engineering/system-architecture/context-anxiety]] — Context window limits
-- [[multi-agent-autonomy-scale]] — 5 levels of multi-agent autonomy
+- [[concepts/closing-agent-loop]] — Full development loop (Write→Catch→Fix→Merge)
+- [[concepts/agent-team-swarm/managed-devins]] — Conditional multi-agent architecture
+- [[concepts/harness-engineering/system-architecture/context-anxiety]] — Context window limits
+- [[concepts/multi-agent-autonomy-scale]] — 5 levels of multi-agent autonomy
 - [[scott-wu]] — Cognition CEO
 - [[nader-dabit]] — Cognition Growth Engineer
 - [[walden-yan]] — Cognition engineer ("Don't Build Multi-Agents")

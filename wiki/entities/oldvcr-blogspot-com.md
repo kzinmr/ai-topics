@@ -3,15 +3,16 @@ title: "OldVCR (Cameron Kaiser / ClassicHasClass)"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # OldVCR (Cameron Kaiser / ClassicHasClass)
 
 ## Overview
 
-**Cameron Kaiser** (blogging as **ClassicHasClass**) is a vintage computing researcher, software engineer, and open-source developer based at [[floodgap-systems]]. He runs the blog **Old Vintage Computing Research** (oldvcr.blogspot.com), where he documents deep-dive technical explorations of retro computing platforms — particularly 6502-based systems, PowerPC workstations, PalmOS devices, Unix workstations, and the forgotten hardware of the 1970s–1990s.
+**Cameron Kaiser** (blogging as **ClassicHasClass**) is a vintage computing researcher, software engineer, and open-source developer based at [[concepts/floodgap-systems]]. He runs the blog **Old Vintage Computing Research** (oldvcr.blogspot.com), where he documents deep-dive technical explorations of retro computing platforms — particularly 6502-based systems, PowerPC workstations, PalmOS devices, Unix workstations, and the forgotten hardware of the 1970s–1990s.
 
-Kaiser is the creator and maintainer of [[tenfourfox]] — the PowerPC-native Firefox fork that extended the usable life of aging Mac hardware long after Mozilla abandoned the platform. He has also contributed to [[crypto-ancienne]], a TLS 1.2/1.3 library for pre-C99 compilers and vintage architectures. His work spans hardware teardowns, ROM analysis, emulator development, reverse engineering of obscure protocols, and the preservation of computing history through functional, not static, means.
+Kaiser is the creator and maintainer of [[concepts/tenfourfox]] — the PowerPC-native Firefox fork that extended the usable life of aging Mac hardware long after Mozilla abandoned the platform. He has also contributed to [[concepts/crypto-ancienne]], a TLS 1.2/1.3 library for pre-C99 compilers and vintage architectures. His work spans hardware teardowns, ROM analysis, emulator development, reverse engineering of obscure protocols, and the preservation of computing history through functional, not static, means.
 
 He has written for *COMPUTE!*, *TidBITS*, and *Ars Technica*, and his guiding philosophy is captured in his blog motto: **"Be kind, REWIND and PLAY."**
 
@@ -124,11 +125,11 @@ These are not just technical curiosities — they are **alternate histories** of
 
 ## Related
 
-[[tenfourfox]] — PowerPC-native Firefox fork maintained by Kaiser for over a decade
-[[crypto-ancienne]] — TLS 1.2/1.3 library for vintage architectures and pre-C99 compilers
-[[floodgap-systems]] — Kaiser's home base for vintage computing research
-[[commodore-64]] — Platform for Kaiser's 6o6 and Incredible KIMplement projects
-[[apple-1]] — Historical computer emulated within Kaiser's 6o6 virtualization framework
+[[concepts/tenfourfox]] — PowerPC-native Firefox fork maintained by Kaiser for over a decade
+[[concepts/crypto-ancienne]] — TLS 1.2/1.3 library for vintage architectures and pre-C99 compilers
+[[concepts/floodgap-systems]] — Kaiser's home base for vintage computing research
+[[concepts/commodore-64]] — Platform for Kaiser's 6o6 and Incredible KIMplement projects
+[[concepts/apple-1]] — Historical computer emulated within Kaiser's 6o6 virtualization framework
 KIM-1 — MOS Technology single-board computer emulated via Incredible KIMplement
  — Lisp machine manufacturer; Kaiser restored a MacIvory system
 Chaosnet — Early MIT networking technology documented in Kaiser's Lisp machine analysis

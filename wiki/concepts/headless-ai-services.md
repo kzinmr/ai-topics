@@ -43,7 +43,7 @@ API-firstモデルが主流になると、**per-head SaaS pricing schemes**が�
 ## See Also
 
 - [[concepts/_index]]
-- [[neurosymbolic-ai]]
-- [[ai-coding-reliability]]
-- [[ai-agent-memory-middleware]]
-- [[ai-digital-nato]]
+- [[concepts/neurosymbolic-ai]]
+- [[concepts/ai-coding-reliability]]
+- [[concepts/ai-agent-memory-middleware]]
+- [[concepts/ai-digital-nato]]

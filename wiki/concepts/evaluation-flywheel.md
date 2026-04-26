@@ -1,8 +1,9 @@
 ---
 title: "Evaluation Flywheel"
-tags: [[evaluation-development-process-quality]]
+tags: [[concepts/evaluation-development-process-quality]]
 created: 2026-04-13
 updated: 2026-04-24
+type: concept
 ---
 
 # Evaluation Flywheel
@@ -62,7 +63,7 @@ Data Collection → Evaluation → Analysis → Improvement → Data Collection 
 
 ## Related
 
-- [[ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
-- [[llm-evaluation-harness]] — LLM Evaluation Harness
+- [[concepts/ai-evals]] — AI Evals (Hamel Husain & Shreya Shankar)
+- [[concepts/llm-evaluation-harness]] — LLM Evaluation Harness
 - [[comparisons/eval-tools-comparison]] — AI Eval Tools Comparison
-- [[harness-engineering/system-architecture/infrastructure-noise]] — Infrastructure Noise in Agentic Evals
+- [[concepts/harness-engineering/system-architecture/infrastructure-noise]] — Infrastructure Noise in Agentic Evals

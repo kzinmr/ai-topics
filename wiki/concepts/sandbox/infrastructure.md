@@ -5,7 +5,7 @@ created: 2026-04-10
 updated: 2026-04-16
 tags: [concept, ai-agents, security, sandboxing, isolation, coding-agents, infrastructure]
 aliases: ["agent-isolation", "ai-sandbox-technologies", "infrastructure-sandbox"]
-related: [[sandbox/in-process]], [[anthropic-managed-agents]], [[ai-coding-reliability]], 
+related: [[concepts/sandbox/in-process]], [[concepts/anthropic-managed-agents]], [[concepts/ai-coding-reliability]], 
 depth: L2
 status: complete
 sources: []
@@ -17,7 +17,7 @@ Infrastructure-level sandboxing refers to OS/hypervisor-level isolation technolo
 
 A Reddit discussion in early 2026 — *"A fair comparison of sandboxing options"* — crystallized the community's understanding that **the "Containers vs. VMs" debate has evolved into a much richer landscape** of isolation strategies, each suited to different threat models and operational constraints.
 
-> **Note**: This page covers infrastructure-level isolation (containers, microVMs, gVisor). For in-process sandboxing, see [[sandbox/in-process]].
+> **Note**: This page covers infrastructure-level isolation (containers, microVMs, gVisor). For in-process sandboxing, see [[concepts/sandbox/in-process]].
 
 ## Why Sandboxing Matters for AI Agents
 
@@ -228,11 +228,11 @@ As Blake Crosley's analysis notes: *"The minimum viable defense is a URL allowli
 
 ## Related Concepts
 
-- [[anthropic-managed-agents]] — Managed agent services and their sandboxing approaches
-- [[ai-coding-reliability]] — Ensuring AI-generated code is correct and safe
+- [[concepts/anthropic-managed-agents]] — Managed agent services and their sandboxing approaches
+- [[concepts/ai-coding-reliability]] — Ensuring AI-generated code is correct and safe
 -  — The practice of directing AI agents in software development
-- [[claude-mythos-glasswing]] — Anthropic's internal agent architecture
-- [[ai-agent-traps]] — Common pitfalls in agent deployment
+- [[concepts/claude-mythos-glasswing]] — Anthropic's internal agent architecture
+- [[concepts/ai-agent-traps]] — Common pitfalls in agent deployment
 
 ## Sources
 

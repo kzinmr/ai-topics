@@ -66,7 +66,7 @@ aliases:
 
 ## Related Concepts
 
-- [[death-of-browser]] — ブラウザのパラダイムシフト
+- [[concepts/death-of-browser]] — ブラウザのパラダイムシフト
 - [[webmcp]] — ブラウザネイティブのMCP標準
 - [[anthropic-computer-use]] — Anthropic Computer Use
 - [[openai-cua]] — OpenAI CUA

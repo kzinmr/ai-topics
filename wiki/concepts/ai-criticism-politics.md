@@ -33,7 +33,7 @@ This misalignment has significant implications for AI policy debates:
 
 ## Context
 
-This analysis adds depth to the [[ai-autonomy-debate]] by providing a political science lens on AI criticism patterns. It suggests that the AI debate may cut across traditional political lines in ways that haven't been fully explored.
+This analysis adds depth to the [[concepts/ai-autonomy-debate]] by providing a political science lens on AI criticism patterns. It suggests that the AI debate may cut across traditional political lines in ways that haven't been fully explored.
 
 
 ## Conservative Alignment Analysis (2026-04)
@@ -44,10 +44,10 @@ This adds a layer to the political dimensions of AI criticism — the framing an
 
 ## Related
 
-- [[ai-autonomy-debate]] — Broader debate about AI autonomy levels
-- [[ai-coding-agent-criticism]] — Specific critiques of AI coding agents
-- [[excessive-agency]] — AI agents taking too much control
-- [[ai-safety]] — AI safety concerns
+- [[concepts/ai-autonomy-debate]] — Broader debate about AI autonomy levels
+- [[concepts/ai-coding-agent-criticism]] — Specific critiques of AI coding agents
+- [[concepts/excessive-agency]] — AI agents taking too much control
+- [[concepts/ai-safety]] — AI safety concerns
 
 ## Sources
 

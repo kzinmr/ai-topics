@@ -47,4 +47,4 @@ Project Glasswing represents a novel approach to AI safety — rather than withh
 ## Related
 - [[claude-mythos]]
 - [[anthropic]]
-- [[ai-safety]]
+- [[concepts/ai-safety]]

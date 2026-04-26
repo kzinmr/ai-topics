@@ -1,8 +1,9 @@
 ---
 title: "Max Bernstein"
-tags: [[person]]
+tags: [[concepts/person]]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -92,12 +93,12 @@ Bernstein's commitment to education extends beyond his blog. At Dartmouth, he te
 
 ## Related
 
-- [[zjit]] — Ruby's new method-level JIT compiler; Bernstein's primary current project
-- [[yjit]] — Ruby's existing basic-block JIT compiler; predecessor to ZJIT
-- [[maxime-chevalier-boisvert]] — Co-author on type propagation work; compiler researcher
+- [[concepts/zjit]] — Ruby's new method-level JIT compiler; Bernstein's primary current project
+- [[concepts/yjit]] — Ruby's existing basic-block JIT compiler; predecessor to ZJIT
+- [[concepts/maxime-chevalier-boisvert]] — Co-author on type propagation work; compiler researcher
 -  — Employer; sponsors Ruby and Rails development
-- [[recurse-center]] — Self-directed learning community; Bernstein attended Fall 2 2024
-- [[scrapscript]] — Small language Bernstein is implementing as a learning vehicle
+- [[concepts/recurse-center]] — Self-directed learning community; Bernstein attended Fall 2 2024
+- [[concepts/scrapscript]] — Small language Bernstein is implementing as a learning vehicle
 - [[demis-hassabis]] — Static Single Assignment form; central to ZJIT's IR design
 -  — Instagram's performance-oriented CPython fork; one of five Python runtimes Bernstein has contributed to
 -  — Where Bernstein is Hacker in Residence and teaches compilers

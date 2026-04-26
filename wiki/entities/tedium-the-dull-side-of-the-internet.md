@@ -3,6 +3,7 @@ title: "Ernie Smith (Tedium)"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Ernie Smith (Tedium)
@@ -117,9 +118,9 @@ Smith writes thoughtfully about the business of running Tedium as an independent
 
 ## Related
 
-- [[shortformblog]] — Smith's earlier blog project
+- [[concepts/shortformblog]] — Smith's earlier blog project
 -  — Brian Potter's newsletter; shares Smith's love of deep-dive, historically-grounded analysis
-- [[the-silicon-underground]] — Dave Farquhar's blog; similar focus on technology history and forgotten stories
+- [[concepts/the-silicon-underground]] — Dave Farquhar's blog; similar focus on technology history and forgotten stories
 -  — Chris's blog; shares the philosophy of publishing to learn and be corrected
 -  — independent developer who also builds and shares technical projects publicly
 - [[bogdanthegeek-s-blog]] — shares Smith's appreciation for the creative potential in discarded technology

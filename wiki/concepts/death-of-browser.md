@@ -131,7 +131,7 @@ sources: [raw/articles/crawl-2026-04-26-browser-landscape-2026.md]
 
 ## Related Concepts
 
-- [[harness-engineering]] — エージェント環境設計
+- [[concepts/harness-engineering]] — エージェント環境設計
 - [[webmcp]] — ブラウザネイティブのMCP標準
 - [[anthropic-computer-use]] — AnthropicのComputer Use API
 - [[openai-cua]] — OpenAIのComputer-Using Agent

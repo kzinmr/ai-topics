@@ -150,9 +150,9 @@ Barak is the primary maintainer of the blog and has written extensively on:
 
 ## Related People
 
-- **[[sanjeev-arora]]** — Co-author of "Computational Complexity: A Modern Approach"; Princeton colleague
-- **[[david-steurer]]** — Collaborator on sum-of-squares algorithm lecture notes
-- **[[robert-goldston]]**, **** — Co-developers of the zero-knowledge nuclear warhead verification system
+- **[[concepts/sanjeev-arora]]** — Co-author of "Computational Complexity: A Modern Approach"; Princeton colleague
+- **[[concepts/david-steurer]]** — Collaborator on sum-of-squares algorithm lecture notes
+- **[[concepts/robert-goldston]]**, **** — Co-developers of the zero-knowledge nuclear warhead verification system
 - **** — Guest lecturer in Barak's AI safety course; expert on adversarial robustness
 - **** — Honored with the Trevisan Prize; Barak has written about his expository contributions
 

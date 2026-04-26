@@ -3,6 +3,7 @@ title: "DSPy — Declarative Self-improving Python for LMs"
 tags: [training, concept, ai-agents, llm, prompting, rAG, evaluations]
 created: 2026-04-24
 updated: 2026-04-24
+type: concept
 ---
 
 # DSPy: Declarative Self-improving Language Systems
@@ -302,7 +303,7 @@ class Debate(dspy.Module):
 ## See Also
 
 - [[omar-khattab]] — DSPyの創作者
-- [[gepa]] — 遺伝的プロンプト最適化（DSPy optimizerの進化系）
-- [[rlms]] — 再帰的言語モデル（DSPyとは異なる最適化アプローチ）
+- [[concepts/gepa]] — 遺伝的プロンプト最適化（DSPy optimizerの進化系）
+- [[concepts/rlms]] — 再帰的言語モデル（DSPyとは異なる最適化アプローチ）
 -  — DSPyのエージェントパターン
 -  — DSPy以前のKhattabの検索フレームワーク

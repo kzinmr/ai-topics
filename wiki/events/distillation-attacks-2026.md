@@ -3,6 +3,7 @@ title: "Industrial-Scale Distillation Attacks Accusation"
 tags: [- anthropic]
 created: 2026-04-24
 updated: 2026-04-24
+type: event
 ---
 
 # Anthropic Accuses Chinese Labs of Industrial-Scale Distillation Attacks
@@ -46,10 +47,10 @@ The accusations were described as:
 
 ## Related Context
 
-- [[kimi-k2-6]] — Moonshot's latest release (April 2026)
+- [[concepts/kimi-k2-6]] — Moonshot's latest release (April 2026)
 -  — DeepSeek's leading open model
-- [[local-llm/model-distillation]] — Technical background on distillation
-- [[open-model-consortium]] — Open model governance discussions
+- [[concepts/local-llm/model-distillation]] — Technical background on distillation
+- [[concepts/open-model-consortium]] — Open model governance discussions
 
 ## References
 

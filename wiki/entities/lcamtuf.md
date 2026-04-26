@@ -1,8 +1,9 @@
 ---
 title: "Michał Zalewski (lcamtuf)"
-tags: [[person]]
+tags: [[concepts/person]]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -136,13 +137,13 @@ The Watchdog Timer safety mechanism in his Game of Life build — forcing a rebo
 
 ## Related Concepts
 
-- [[american-fuzzy-lop]] — His revolutionary coverage-guided fuzzing tool
-- [[fuzzing]] — The broader field he transformed through AFL and ongoing research
-- [[project-zero]] — Google's elite vulnerability research team where he worked
-- [[threat-modeling]] — His approach to security as rational risk assessment
-- [[browser-security]] — Subject of *The Tangled Web* and years of research
-- [[passive-reconnaissance]] — Subject of *Silence on the Wire*
-- [[ai-vulnerability-discovery]] — Big Sleep project and LLM-based bug finding
+- [[concepts/american-fuzzy-lop]] — His revolutionary coverage-guided fuzzing tool
+- [[concepts/fuzzing]] — The broader field he transformed through AFL and ongoing research
+- [[concepts/project-zero]] — Google's elite vulnerability research team where he worked
+- [[concepts/threat-modeling]] — His approach to security as rational risk assessment
+- [[concepts/browser-security]] — Subject of *The Tangled Web* and years of research
+- [[concepts/passive-reconnaissance]] — Subject of *Silence on the Wire*
+- [[concepts/ai-vulnerability-discovery]] — Big Sleep project and LLM-based bug finding
 -  — His book on rational emergency preparedness
 -  — His approach to understanding systems from first principles
 -  — His stance on AI-generated content and creative authenticity

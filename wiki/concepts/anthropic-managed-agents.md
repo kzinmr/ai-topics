@@ -15,7 +15,7 @@ sources:
 
 **Source:** Anthropic Claude Blog + Engineering Blog + Platform Docs (April 2026)
 **Status:** Public Beta on Claude Platform
-**Related:** [[agent-team-swarm]], [[harness-engineering]], [[meta-harness]]
+**Related:** [[concepts/agent-team-swarm]], [[concepts/harness-engineering]], [[concepts/meta-harness]]
 
 ---
 
@@ -54,7 +54,7 @@ Context Query:      getEvents() → fetch positional slices
 
 > "We're opinionated about the shape of these interfaces, not about what runs behind them."
 
-Managed Agentsは**メタ・ハーネス**（[[meta-harness]]参照）として設計されている。特定の実装には意見を持たず、インターフェース境界だけを厳格に定義する。
+Managed Agentsは**メタ・ハーネス**（[[concepts/meta-harness]]参照）として設計されている。特定の実装には意見を持たず、インターフェース境界だけを厳格に定義する。
 
 ---
 
@@ -153,11 +153,11 @@ with client.beta.sessions.events.stream(session.id) as stream:
 
 ## Related
 
-- [[agent-team-swarm]] — 複数Agent協調の上位概念
-- [[harness-engineering]] — 単一Agentの実行環境設計
-- [[meta-harness]] — インターフェース中心の設計哲学
-- [[openai-symphony]] — 競合のAgent Teamオーケストレーター
-- [[dark-factory-software-factory]] — 完全自律開発の最先端事例
+- [[concepts/agent-team-swarm]] — 複数Agent協調の上位概念
+- [[concepts/harness-engineering]] — 単一Agentの実行環境設計
+- [[concepts/meta-harness]] — インターフェース中心の設計哲学
+- [[concepts/openai-symphony]] — 競合のAgent Teamオーケストレーター
+- [[concepts/dark-factory-software-factory]] — 完全自律開発の最先端事例
 
 ---
 

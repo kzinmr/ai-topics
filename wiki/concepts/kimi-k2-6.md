@@ -3,6 +3,7 @@ title: "Moonshot Kimi K2.6"
 tags: [- open-model]
 created: 2026-04-24
 updated: 2026-04-24
+type: concept
 ---
 
 # Moonshot Kimi K2.6
@@ -65,13 +66,13 @@ Active discussions on local deployment viability:
 
 ## Related Models
 
-- [[kimi-k2-5|Kimi K2.5]] — Previous generation (January 2026)
-- [[kimi-k2-thinking|Kimi K2 Thinking]] — November 2025 variant
+- [[concepts/kimi-k2-5]] — Previous generation (January 2026)
+- [[concepts/kimi-k2-thinking]] — November 2025 variant
 - [[qwen3-6-plus|Qwen3.6 35B MoE]] — Competing open MoE model
-- [[deepseek-v3|DeepSeek V3]] — Competitor from DeepSeek
+- [[concepts/deepseek-v3]] — Competitor from DeepSeek
 
 ## See Also
 
 - [r/LocalLLaMA Discussion: Kimi K2.6](https://www.reddit.com/r/LocalLLaMA/comments/1srd9pc/anyone_deployed_kimi_k26_on_their_local_hardware/)
 - [GGUF Quantization](https://github.com/ggml-org/gguf-quantization)
-- [[open-model-consortium|Open Model Consortium]]
+- [[concepts/open-model-consortium]]

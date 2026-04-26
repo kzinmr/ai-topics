@@ -7,12 +7,12 @@ description: "Moved to concepts/harness-engineering/agentic-workflows/agentic-ma
 created: 2026-04-14
 updated: 2026-04-24
 related:
-  - "[[harness-engineering/agentic-workflows/agentic-manual-testing]]"
+  - "[[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]]"
 sources: []
 ---
 
 # Agentic Manual Testing
 
-> **Moved:** コンテンツは [[harness-engineering/agentic-workflows/agentic-manual-testing]] に移動しました。
+> **Moved:** コンテンツは [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] に移動しました。
 
-詳細: [[harness-engineering/agentic-workflows/agentic-manual-testing]]
+詳細: [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]]

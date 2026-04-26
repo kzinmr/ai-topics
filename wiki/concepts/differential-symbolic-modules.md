@@ -83,7 +83,7 @@ The differentiable bridge allows System 2 to learn from experience, not just exe
 
 ## See Also
 
-- [[neurosymbolic-ai]] — The parent concept
-- [[formal-logic-foundation]] — The symbolic reasoning foundation
+- [[concepts/neurosymbolic-ai]] — The parent concept
+- [[concepts/formal-logic-foundation]] — The symbolic reasoning foundation
 - [[dual-process-theory]] — Cognitive framework mapping to System 1/System 2
 - [[logic-tensor-networks]] — Specific differentiable symbolic framework

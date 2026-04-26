@@ -10,7 +10,7 @@ sources: []
 
 # Back of House Multi-Agent Patterns
 
-厨房のメタファーを用いたマルチエージェント・ワークフローパターン。Sarah Chieng ([[@milksandmatcha]]) と [@0xSero] によって2026年4月に提唱。
+厨房のメタファーを用いたマルチエージェント・ワークフローパターン。Sarah Chieng ([[concepts/@milksandmatcha]]) と [@0xSero] によって2026年4月に提唱。
 
 ## Single-Agent Ceiling（単一エージェントの限界）
 
@@ -174,8 +174,8 @@ Codex Sparkのような高速コーディングモデルが利用可能になっ
 
 ## 関連概念
 
-- [[single-agent-ceiling]] — 単一エージェントの限界と「Sloperator」アンチパターン
-- [[agent-team-swarm]] — マルチエージェントチームの階層的オーケストレーション
-- [[harness-engineering/agentic-workflows/subagents]] — サブエージェントの委任パターン
+- [[concepts/single-agent-ceiling]] — 単一エージェントの限界と「Sloperator」アンチパターン
+- [[concepts/agent-team-swarm]] — マルチエージェントチームの階層的オーケストレーション
+- [[concepts/harness-engineering/agentic-workflows/subagents]] — サブエージェントの委任パターン
 -  — エンジニアのエージェント活用方法论
 -  — Xスレッド (@MilksandMatcha)

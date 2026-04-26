@@ -1,8 +1,9 @@
 ---
 title: "Research Agent Fundamentals"
-tags: [[claude-agent-sdk-research-stateless-stateful-web-search]]
+tags: [[concepts/claude-agent-sdk-research-stateless-stateful-web-search]]
 created: 2026-04-24
 updated: 2026-04-24
+type: concept
 ---
 
 # Research Agent Fundamentals
@@ -143,6 +144,6 @@ async with ClaudeSDKClient(options=...) as agent:
 
 ## Related
 
-- [[claude-agent-sdk-sre-patterns]] — MCP integration and safety guardrails
-- [[chief-of-staff-agent-patterns]] — Subagent orchestration and plan mode
-- [[managed-agents-sre-incident-response]] — Human-in-the-loop approval patterns
+- [[concepts/claude-agent-sdk-sre-patterns]] — MCP integration and safety guardrails
+- [[concepts/chief-of-staff-agent-patterns]] — Subagent orchestration and plan mode
+- [[concepts/managed-agents-sre-incident-response]] — Human-in-the-loop approval patterns

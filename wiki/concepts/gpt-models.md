@@ -37,7 +37,7 @@ Input tokens → Token Embedding + Positional Embedding
             → LM Head → Logits → Next Token
 ```
 
-See [[decoder-only-gpt]] for the complete architectural breakdown.
+See [[concepts/decoder-only-gpt]] for the complete architectural breakdown.
 
 ## Key Milestones
 
@@ -102,11 +102,11 @@ GPT-5.5 is the newest model in the GPT series, released April 24, 2026. Key deta
 | **GPT-5.5 Pro** | $30 | $180 | Higher-tier variant |
 | **GPT-5.4** | $2.5 | $15 | Remains at half price |
 
-GPT-5.5 is available in OpenAI Codex and rolling out to paid ChatGPT subscribers. The Codex interface has become the primary ChatGPT experience. See [[openai-codex-superapp]] for details.
+GPT-5.5 is available in OpenAI Codex and rolling out to paid ChatGPT subscribers. The Codex interface has become the primary ChatGPT experience. See [[concepts/openai-codex-superapp]] for details.
 
 GPT-5.5 pricing positions it above GPT-5.4 (half the previous price), reflecting OpenAI's strategy to offer tiered performance levels. The model is optimized for complex reasoning and coding tasks, continuing the trajectory from GPT-5.4.
 
-Related: [[chatgpt-images-2.0]] (launched alongside GPT-5.5), [[openai-codex-superapp]] (Codex as primary interface)
+Related: [[concepts/chatgpt-images-2.0]] (launched alongside GPT-5.5), [[concepts/openai-codex-superapp]] (Codex as primary interface)
 
 ## Reinforcement Learning from Human Feedback (RLHF)
 
@@ -121,7 +121,7 @@ Pretraining → SFT (Supervised Fine-Tuning) → Reward Model → RLHF (PPO)
 3. **Reward Model:** Train a model to predict human preference
 4. **PPO:** Optimize the policy to maximize reward (per [[john-schulman]] TRPO/PPO work)
 
-See [[fine-tuning/rlhf-dpo-preference]] for detailed RLHF vs DPO comparison.
+See [[concepts/fine-tuning/rlhf-dpo-preference]] for detailed RLHF vs DPO comparison.
 
 ## Reasoning Models vs Standard GPT
 
@@ -134,7 +134,7 @@ See [[fine-tuning/rlhf-dpo-preference]] for detailed RLHF vs DPO comparison.
 
 > "The o-series models think before they respond — they use reasoning tokens to work through problems step by step." — OpenAI
 
-See [[reasoning-models]] for detailed comparison.
+See [[concepts/reasoning-models]] for detailed comparison.
 
 ## Context Window Evolution
 
@@ -157,16 +157,16 @@ GPT models are foundational to the AI agent ecosystem:
 - **Agents SDK:** Python SDK for building GPT-powered agents
 - **Symphony:** Multi-agent orchestration using OpenAI models
 
-See [[openai-agents-sdk]] for the Agents SDK v0.14.0 architecture.
+See [[concepts/openai-agents-sdk]] for the Agents SDK v0.14.0 architecture.
 
 ## Related Concepts
 
-- [[decoder-only-gpt]] — Complete architectural breakdown
+- [[concepts/decoder-only-gpt]] — Complete architectural breakdown
 - [[openai]] — OpenAI company and product ecosystem
-- [[fine-tuning/rlhf-dpo-preference]] — Preference optimization methods
-- [[reasoning-models]] — o-series extended thinking models
-- [[local-llm]] — Running open-weight alternatives locally
-- [[chatgpt-memory-bitter-lesson]] — ChatGPT's memory architecture analysis
+- [[concepts/fine-tuning/rlhf-dpo-preference]] — Preference optimization methods
+- [[concepts/reasoning-models]] — o-series extended thinking models
+- [[concepts/local-llm]] — Running open-weight alternatives locally
+- [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT's memory architecture analysis
 
 ## References
 

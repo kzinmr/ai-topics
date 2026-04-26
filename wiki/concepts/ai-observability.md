@@ -1,8 +1,9 @@
 ---
 title: "AI Observability — Monitoring and Debugging LLM Applications"
-tags: [[observability-monitoring-tracing-opentelemetry-llm-agents-debugging]]
+tags: [[concepts/observability-monitoring-tracing-opentelemetry-llm-agents-debugging]]
 created: 2026-04-15
 updated: 2026-04-24
+type: concept
 ---
 
 # AI Observability — Monitoring and Debugging LLM Applications
@@ -72,8 +73,8 @@ Logfire's tracing shows the full delegation chain, essential for debugging compl
 
 ## Related Concepts
 
-- [[logfire]] — Pydantic's observability platform
-- [[pydantic-ai]] — Framework with built-in observability
-- [[harness-engineering]] — Observability as feedback loop
+- [[concepts/logfire]] — Pydantic's observability platform
+- [[concepts/pydantic-ai]] — Framework with built-in observability
+- [[concepts/harness-engineering]] — Observability as feedback loop
 - [[samuel-colvin]] — Logfire creator
 -  — Sentry founder, angel investor in Pydantic

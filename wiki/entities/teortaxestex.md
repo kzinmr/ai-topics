@@ -51,7 +51,7 @@ Following the Dwarkesh × Jensen Huang podcast (April 2026), TeortaxesTex publis
 
 ### Causal Backbone Lens Applied to Tech Leaders
 
-TeortaxesTex invoked tailcalled's **[[causal-backbone-conjecture]]** to analyze Jensen vs. Dwarkesh:
+TeortaxesTex invoked tailcalled's **[[concepts/causal-backbone-conjecture]]** to analyze Jensen vs. Dwarkesh:
 
 > "The core difference between agency-driven and information-driven systems — such as humans and base LLMs, or entrepreneurs and rationalists — is that the former are oriented towards the latent substructure of reality that Makes Shit Happen."
 
@@ -79,12 +79,12 @@ Known for dense, analytical tweets combining geopolitical observation, tech indu
 
 ## Related
 
-- [[causal-backbone-conjecture]] — Tailcalled's theory of agency-driven vs. information-driven systems, applied by Teortaxes to Jensen Huang
+- [[concepts/causal-backbone-conjecture]] — Tailcalled's theory of agency-driven vs. information-driven systems, applied by Teortaxes to Jensen Huang
 - [[jensen-huang]] — Subject of Teortaxes' steelmanning analysis
 - [[dwarkesh-patel]] — Compared against Jensen as contrasting epistemic archetype
 - [[tailcalled]] — Creator of the Causal Backbone Conjecture
 -  — Teortaxes provides unique China-side analysis
-- [[ai-bubble-economics]] — Commentary on compute demand, energy, and geopolitics
+- [[concepts/ai-bubble-economics]] — Commentary on compute demand, energy, and geopolitics
 
 ## Sources
 

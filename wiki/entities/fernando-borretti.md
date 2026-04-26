@@ -1,8 +1,9 @@
 ---
 title: "Fernando Borretti"
-tags: [[person]]
+tags: [[concepts/person]]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -205,10 +206,10 @@ His blog is structured around **projects, articles, and fiction** — reflecting
 
 ## Related
 
-- [[austral]] — Systems programming language with linear types and capabilities
-- [[programming-languages]] — Type systems, compilers, parsers, semantic analysis
-- [[ai-agents]] — Cognitive architectures, LLM scaffolding, agent evaluation
-- [[compiler-construction]] — OCaml, Menhir, bootstrapping, middle-end design
+- [[concepts/austral]] — Systems programming language with linear types and capabilities
+- [[concepts/programming-languages]] — Type systems, compilers, parsers, semantic analysis
+- [[concepts/ai-agents]] — Cognitive architectures, LLM scaffolding, agent evaluation
+- [[concepts/compiler-construction]] — OCaml, Menhir, bootstrapping, middle-end design
 -  — SM-2 algorithm, learning science, productivity
 -  — Ontologies, logic, information management
 -  — Memory safety, resource management, capability-based security

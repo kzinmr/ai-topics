@@ -79,8 +79,8 @@ Each component covers what the others can't.
 
 ## Related Concepts
 
-- [[agentic-alternative-to-graphrag]] — Contextual AI's metadata search approach
-- [[vector-db-agent-memory]] — Semantic memory via embeddings; complementary to graph
-- [[harness-engineering/system-architecture/ai-memory-systems]] — Design philosophy comparison across AI platforms
-- [[ai-agent-memory-two-camps]] — Two camps taxonomy: memory backends vs context substrates
+- [[concepts/agentic-alternative-to-graphrag]] — Contextual AI's metadata search approach
+- [[concepts/vector-db-agent-memory]] — Semantic memory via embeddings; complementary to graph
+- [[concepts/harness-engineering/system-architecture/ai-memory-systems]] — Design philosophy comparison across AI platforms
+- [[concepts/ai-agent-memory-two-camps]] — Two camps taxonomy: memory backends vs context substrates
 - [[sheshansh-agrawal]] — Contextual AI researcher, agentic retrieval, BlitzRank reranker

@@ -203,9 +203,9 @@ Brown's work on reasoning models directly extends his game AI research:
 
 ## Related
 
-- [[tuomas-sandholm]] — PhD advisor; co-developer of Libratus and Pluribus
+- [[concepts/tuomas-sandholm]] — PhD advisor; co-developer of Libratus and Pluribus
 - [[mark-chen]] — OpenAI colleague; o1 reasoning model
-- [[hunter-lightman]] — OpenAI colleague; Project Strawberry
+- [[concepts/hunter-lightman]] — OpenAI colleague; Project Strawberry
 - [[ilya-sutskever]] — OpenAI co-founder; Q* project (related to reasoning)
 - [[sam-altman]] — OpenAI CEO
 -  — Brown's theoretical foundation

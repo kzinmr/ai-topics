@@ -12,20 +12,20 @@ Local LLM inference on personal hardware. This page is the index for the local-l
 ## Sub-pages
 
 ### Inference Engines
-- [[local-llm]] — llama.cpp inference engine (CPU, Apple Silicon, CUDA)
-- [[local-llm/ollama]] — Ollama local LLM runner (model library, REST API)
-- [[inference/vllm]] — vLLM high-throughput serving (PagedAttention)
-- [[inference/sglang]] — SGLang serving framework (RadixAttention, structured generation)
+- [[concepts/local-llm]] — llama.cpp inference engine (CPU, Apple Silicon, CUDA)
+- [[concepts/local-llm/ollama]] — Ollama local LLM runner (model library, REST API)
+- [[concepts/inference/vllm]] — vLLM high-throughput serving (PagedAttention)
+- [[concepts/inference/sglang]] — SGLang serving framework (RadixAttention, structured generation)
 
 ### Model Formats & Compression
-- [[local-llm/gguf]] — GGUF quantization format (K-Quants, I-Quants)
-- [[local-llm/model-quantization]] — Quantization overview (GPTQ, AWQ, EXL2, FP8)
-- [[local-llm/model-distillation]] — Knowledge distillation for local models
+- [[concepts/local-llm/gguf]] — GGUF quantization format (K-Quants, I-Quants)
+- [[concepts/local-llm/model-quantization]] — Quantization overview (GPTQ, AWQ, EXL2, FP8)
+- [[concepts/local-llm/model-distillation]] — Knowledge distillation for local models
 
 ### Tools & Hardware
-- [[local-llm/inference-hardware]] — Consumer GPU, Apple Silicon, edge devices
-- [[local-llm/server-dgx-spark]] — DGX Spark + NemoClaw setup guide
-- [[local-llm/self-hosting-ai-development]] — Self-hosting economics and workflow
+- [[concepts/local-llm/inference-hardware]] — Consumer GPU, Apple Silicon, edge devices
+- [[concepts/local-llm/server-dgx-spark]] — DGX Spark + NemoClaw setup guide
+- [[concepts/local-llm/self-hosting-ai-development]] — Self-hosting economics and workflow
 
 ## Model Comparisons
 - [[comparisons/local-llm-models-april-2026]] — Local LLM Models Comparison (gpt-oss, GLM-4.5, Qwen 3, specialized edge models)
@@ -51,12 +51,12 @@ Together, these techniques allow a distilled 3-8B model at Q4 quantization to ru
 
 ## Related wikilinks
 
-- [[local-llm]] — Original consolidated page (reference)
-- [[harness-engineering]] — Local LLMs as harness components
-- [[harness-engineering/agentic-engineering]] — Using local LLMs in agent workflows
-- [[reasoning-models]] — Distillation for CoT transfer
-- [[inference]] — Inference optimization techniques
-- [[inference-speed-development]] — Development cadence at inference speed
+- [[concepts/local-llm]] — Original consolidated page (reference)
+- [[concepts/harness-engineering]] — Local LLMs as harness components
+- [[concepts/harness-engineering/agentic-engineering]] — Using local LLMs in agent workflows
+- [[concepts/reasoning-models]] — Distillation for CoT transfer
+- [[concepts/inference]] — Inference optimization techniques
+- [[concepts/inference-speed-development]] — Development cadence at inference speed
 
 ## Sources
 

@@ -3,6 +3,7 @@ title: "Geoffrey Litt"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Geoffrey Litt
@@ -110,11 +111,11 @@ The underlying theme: data should be portable, locally accessible, and resilient
 
 ## Related
 
-- [[ink-switch]] — Independent research lab where Litt led Malleable Software track
-- [[daniel-jackson]] — PhD advisor at MIT; author of "The Day the World Went Quiet"
-- [[malleable-software]] — Litt's central research area
-- [[end-user-programming]] — The broader field Litt works within
-- [[local-first-software]] — Software that prioritizes user data control and offline capability
+- [[concepts/ink-switch]] — Independent research lab where Litt led Malleable Software track
+- [[concepts/daniel-jackson]] — PhD advisor at MIT; author of "The Day the World Went Quiet"
+- [[concepts/malleable-software]] — Litt's central research area
+- [[concepts/end-user-programming]] — The broader field Litt works within
+- [[concepts/local-first-software]] — Software that prioritizes user data control and offline capability
 -  — Conflict-free replicated data types; central to Peritext
 -  — Ubiquitous computing pioneer; source of the HUD metaphor
 - [[simon-willison]] — Fellow AI tooling enthusiast; Litt references his "yak-shaving intern" framing

@@ -3,6 +3,7 @@ title: "Dylan Patel"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 tags:
@@ -17,7 +18,7 @@ sources:
 tags: [person, analyst, semiconductors, ai-infrastructure, semi-analysis]
 aliases: ["dylan-patel-semianalysis"]
 related:
-  - "[[compute-scaling-bottlenecks]]"
+  - "[[concepts/compute-scaling-bottlenecks]]"
   - "[[dwarkesh-patel]]"
   - ""
 ---
@@ -128,10 +129,10 @@ This puts Patel at odds with the "power is the bottleneck" consensus of 2024–2
 
 ## Related
 
-- [[compute-scaling-bottlenecks]] — Patel's three-bottleneck framework
+- [[concepts/compute-scaling-bottlenecks]] — Patel's three-bottleneck framework
 - [[dwarkesh-patel]] — Host of the podcast where Patel delivered his landmark analysis
 -  — The broader domain Patel operates in
-- [[space-gpus]] — Orbital compute as a potential workaround to terrestrial constraints
+- [[concepts/space-gpus]] — Orbital compute as a potential workaround to terrestrial constraints
 
 ## Sources
 

@@ -3,6 +3,7 @@ title: "Armin Ronacher"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -147,8 +148,8 @@ Ronacher's technical philosophy — simplicity, developer-first design, and prag
 
 ## Related Concepts
 
-- [[ai-coding-agent-criticism]] — "The Center Has a Bias" thesis on engagement vs. abstract criticism
-- [[mario-zechner]] (Pi/libGDX), [[colin]] (Earendil co-founder), [[flask]], [[jinja2]], [[werkzeug]], [[sentry]], [[rust]], [[python-packaging]], , [[agentic-coding]], [[minijinja]], [[snapshot-testing]], [[charles-frye]], [[earendil]], , , 
+- [[concepts/ai-coding-agent-criticism]] — "The Center Has a Bias" thesis on engagement vs. abstract criticism
+- [[mario-zechner]] (Pi/libGDX), [[concepts/colin]] (Earendil co-founder), [[concepts/flask]], [[concepts/jinja2]], [[concepts/werkzeug]], [[concepts/sentry]], [[concepts/rust]], [[concepts/python-packaging]], , [[concepts/agentic-coding]], [[concepts/minijinja]], [[concepts/snapshot-testing]], [[charles-frye]], [[concepts/earendil]], , , 
 
 ## Sources
 

@@ -1,8 +1,9 @@
 ---
 title: "AI Subprime Crisis"
-tags: [[ai-economics-bubble-venture-capital-subprime]]
+tags: [[concepts/ai-economics-bubble-venture-capital-subprime]]
 created: 2026-04-24
 updated: 2026-04-24
+type: concept
 ---
 
 # AI Subprime Crisis

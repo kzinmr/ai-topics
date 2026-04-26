@@ -3,6 +3,7 @@ title: "Sankalp Sinha (dejavucoder)"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -117,9 +118,9 @@ Sankalp's approach to AI engineering can be summarized as:
 ## Related
 
 - [[claude-code]] — Primary coding agent he uses and writes about
-- [[long-context-coding-agents]] — Focus area of his research and writing
+- [[concepts/long-context-coding-agents]] — Focus area of his research and writing
 -  — Open-source agent operating system he contributes to
-- [[llm-evaluation-harness]] — Interest in measuring and improving AI system quality
+- [[concepts/llm-evaluation-harness]] — Interest in measuring and improving AI system quality
 -  — His professional focus
 -  — AI coding tool he evaluates and discusses
 - [[cursor-3]] — IDE he compares in his writing

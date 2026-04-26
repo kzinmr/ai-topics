@@ -71,9 +71,9 @@ True understanding requires:
 
 This analysis connects to several key concepts in AI agent development:
 
-- **[[coala]]:** Yao's framework specifies that agents need both external actions (grounding) and internal actions (reasoning). The ungrounded meaning theorem proves why external grounding is non-negotiable.
-- **[[harness-engineering]]:** The harness provides the grounding layer — tools, environment access, and feedback mechanisms that anchor the LLM's output to reality.
-- **[[neurosymbolic-ai]]:** The need for symbolic grounding alongside neural pattern matching aligns with the neurosymbolic thesis.
+- **[[concepts/coala]]:** Yao's framework specifies that agents need both external actions (grounding) and internal actions (reasoning). The ungrounded meaning theorem proves why external grounding is non-negotiable.
+- **[[concepts/harness-engineering]]:** The harness provides the grounding layer — tools, environment access, and feedback mechanisms that anchor the LLM's output to reality.
+- **[[concepts/neurosymbolic-ai]]:** The need for symbolic grounding alongside neural pattern matching aligns with the neurosymbolic thesis.
 
 ## Practical vs. Theoretical
 
@@ -91,7 +91,7 @@ The gap between theoretical impossibility and practical utility mirrors other ar
 ## Related
 
 - [[shunyu-yao]] — Analyst who provided the critique
-- [[coala]] — Framework requiring grounding through external actions
-- [[neurosymbolic-ai]] — Hybrid approach addressing the grounding problem
-- [[harness-engineering]] — Practical grounding through tool use
+- [[concepts/coala]] — Framework requiring grounding through external actions
+- [[concepts/neurosymbolic-ai]] — Hybrid approach addressing the grounding problem
+- [[concepts/harness-engineering]] — Practical grounding through tool use
 -  — Yao's broader thesis on evaluation vs training

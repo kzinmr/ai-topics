@@ -58,11 +58,11 @@ Only delays of 20+ minutes would justify reconsidering the trade-off.
 - **NB2** is accessible via Google AI Studio and the Gemini App (with reduced controls on mobile)
 
 ## Related
-- [[chatgpt-images-2.0]] — GPT Image 2 details
-- [[nano-banana-2]] — NB2 details
+- [[concepts/chatgpt-images-2.0]] — GPT Image 2 details
+- [[concepts/nano-banana-2]] — NB2 details
 - [[openai]] — OpenAI company page
 - [[google]] — Google AI/ML company page
-- [[ai-image-generation]] — AI image generation overview
+- [[concepts/ai-image-generation]] — AI image generation overview
 
 ## Sources
 - [Alex Banks, The Signal: "ChatGPT Images 2.0 is genuinely fantastic"](https://thesignal.substack.com/p/chatgpt-images-20-is-genuinely-fantastic) (2026-04-24) — detailed comparative review with side-by-side examples

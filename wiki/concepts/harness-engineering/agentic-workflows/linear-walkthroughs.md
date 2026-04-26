@@ -56,10 +56,10 @@ Vibe Coding → Linear Walkthrough で**学習機会に変換**できる。
 
 ## 関連概念
 
-- [[showboat]] — Walkthrough生成に使用するドキュメンテーションツール
-- [[interactive-explanations]] — より直感的な理解手法（アニメーション）
-- [[vibe-coding]] — Walkthroughが必要になる主要シナリオ
-- [[harness-engineering/agentic-engineering]] — 上位概念
+- [[concepts/showboat]] — Walkthrough生成に使用するドキュメンテーションツール
+- [[concepts/interactive-explanations]] — より直感的な理解手法（アニメーション）
+- [[concepts/vibe-coding]] — Walkthroughが必要になる主要シナリオ
+- [[concepts/harness-engineering/agentic-engineering]] — 上位概念
 
 ## 参照
 - [[simon-willison]] — パターン創始者

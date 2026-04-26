@@ -83,6 +83,6 @@ Gartner, Forrester, NIST, MITRE, OWASP, McKinsey, and the EU AI Office all ident
 
 ## See Also
 
-- [[agentic-engineering]] — The parent domain for agent engineering practices
-- [[multi-agent-orchestration-architecture]] — How orchestration layers interact with governance
+- [[concepts/agentic-engineering]] — The parent domain for agent engineering practices
+- [[concepts/multi-agent-orchestration-architecture]] — How orchestration layers interact with governance
 - [[agentic-security]] — Security-specific challenges in agent systems

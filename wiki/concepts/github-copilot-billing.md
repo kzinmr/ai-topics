@@ -3,6 +3,7 @@ title: "GitHub Copilot Token-Based Billing"
 tags: [- github-copilot]
 created: 2026-04-24
 updated: 2026-04-24
+type: concept
 ---
 
 # GitHub Copilot Token-Based Billing Transition
@@ -79,9 +80,9 @@ This move follows similar actions by other AI companies:
 
 ## Related Concepts
 
-- [[token-economics]] — LLM inference cost analysis
-- [[ai-bubble-economics]] — AI service economics
-- [[github-copilot-billing]] — Related GitHub Copilot coverage
+- [[concepts/token-economics]] — LLM inference cost analysis
+- [[concepts/ai-bubble-economics]] — AI service economics
+- [[concepts/github-copilot-billing]] — Related GitHub Copilot coverage
 
 ## References
 

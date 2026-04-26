@@ -3,6 +3,7 @@ title: "Shunyu Yao (姚顺雨)"
 tags: [- person]
 created: 2026-04-13
 updated: 2026-04-24
+type: entity
 ---
 
 # Shunyu Yao (姚顺雨)
@@ -183,15 +184,15 @@ Prime Intellect (building on both researchers' work) captures the synthesis:
 ## Related Concepts
 
 - **[[overreacted-io]]** — Yao's foundational reasoning+acting paradigm
-- **[[tree-of-thoughts]]** — Search-based deliberation for LLMs
-- **[[reflexion]]** — Verbal reinforcement learning
-- **[[coala]]** — Cognitive architectures for language agents
-- **[[swe-bench]]** / **[[swe-agent]]** — Real-world code evaluation
-- **[[tau-bench]]** — Tool-Agent-User interaction benchmark
-- **[[computer-using-agent]]** — Yao's current work at OpenAI
+- **[[concepts/tree-of-thoughts]]** — Search-based deliberation for LLMs
+- **[[concepts/reflexion]]** — Verbal reinforcement learning
+- **[[concepts/coala]]** — Cognitive architectures for language agents
+- **[[concepts/swe-bench]]** / **[[concepts/swe-agent]]** — Real-world code evaluation
+- **[[concepts/tau-bench]]** — Tool-Agent-User interaction benchmark
+- **[[concepts/computer-using-agent]]** — Yao's current work at OpenAI
 - **** — Designing environments for agents
 - **** — Yao argues for environment-first RL design
-- **[[rlm-recursive-language-models]]** — Zhang/Khattab/Kraska's parallel work on environment-first context management
+- **[[concepts/rlm-recursive-language-models]]** — Zhang/Khattab/Kraska's parallel work on environment-first context management
 - **** — Yao's philosophical framework for AI's future
 
 ## Status

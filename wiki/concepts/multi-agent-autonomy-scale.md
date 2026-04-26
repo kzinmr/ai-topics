@@ -64,4 +64,4 @@ Research testing how much autonomy multi-agent LLM systems can sustain at unprec
 - 
 - 
 - 
-- [[caid-coordination]]
+- [[concepts/caid-coordination]]

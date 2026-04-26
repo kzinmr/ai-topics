@@ -10,7 +10,7 @@ sources: []
 
 # Token Economics
 
-LLM inference cost analysis, optimization layers, and the economics of running language models at scale. A prerequisite concept for [[context-engineering]].
+LLM inference cost analysis, optimization layers, and the economics of running language models at scale. A prerequisite concept for [[concepts/context-engineering]].
 
 ## The Great Inversion
 
@@ -105,10 +105,10 @@ ML engineering (quantization, sharding, containers), infrastructure management, 
 
 ## Related
 
-- [[context-engineering]] — Token economics is a prerequisite for understanding context window optimization trade-offs
-- [[local-llm]] — Self-hosting economics and optimization techniques
-- [[local-llm/model-quantization]] — Quantization methods (GPTQ, AWQ, EXL2, FP8)
-- [[inference/vllm]] — Continuous batching and PagedAttention
+- [[concepts/context-engineering]] — Token economics is a prerequisite for understanding context window optimization trade-offs
+- [[concepts/local-llm]] — Self-hosting economics and optimization techniques
+- [[concepts/local-llm/model-quantization]] — Quantization methods (GPTQ, AWQ, EXL2, FP8)
+- [[concepts/inference/vllm]] — Continuous batching and PagedAttention
 
 ## Sources
 

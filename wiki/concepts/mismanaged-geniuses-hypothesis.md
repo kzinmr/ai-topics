@@ -1,8 +1,9 @@
 ---
 title: "The Mismanaged Geniuses Hypothesis (MGH)"
-tags: [[agents-scaffolding-composition-inference-scaling-hypothesis]]
+tags: [[concepts/agents-scaffolding-composition-inference-scaling-hypothesis]]
 created: 2026-04-19
 updated: 2026-04-24
+type: concept
 ---
 
 # The Mismanaged Geniuses Hypothesis (MGH)
@@ -159,10 +160,10 @@ Anthropic recognized that the harness interface needs to be stable while the und
 
 ## Related Concepts
 
-- **[[rlm-recursive-language-models]]** — Proof-of-concept implementation
-- **[[agentic-scaffolding]]** — The broader category of scaffold design
-- **[[harness-engineering]]** — Infrastructure for autonomous agent work
-- **[[scaffold-vs-rl-debate]]** — Whether scaffolds or training is the path forward (MGH says: both, but scaffold-first)
+- **[[concepts/rlm-recursive-language-models]]** — Proof-of-concept implementation
+- **[[concepts/agentic-scaffolding]]** — The broader category of scaffold design
+- **[[concepts/harness-engineering]]** — Infrastructure for autonomous agent work
+- **[[concepts/scaffold-vs-rl-debate]]** — Whether scaffolds or training is the path forward (MGH says: both, but scaffold-first)
 - **** — Scaling compute at inference rather than training
 - **** — Decomposing the context, not the problem
 - **** — Trained scaffolds + LLMs as the next paradigm

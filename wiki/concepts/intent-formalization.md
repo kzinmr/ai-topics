@@ -90,9 +90,9 @@ The bottleneck shifts from "proving" to "defining what to prove." The arc of dif
 
 ## Related Concepts
 
-- [[neurosymbolic-ai]] — Symbolic reasoning (formal methods) combined with neural approaches
-- [[ai-safety]] — Alignment, oversight, and interpretability for AI agents
-- [[agent-sandboxing]] — Isolation for untrusted AI-generated code
-- [[test-case-minimization]] — Binary search on entropy for automatic test case reduction
+- [[concepts/neurosymbolic-ai]] — Symbolic reasoning (formal methods) combined with neural approaches
+- [[concepts/ai-safety]] — Alignment, oversight, and interpretability for AI agents
+- [[concepts/agent-sandboxing]] — Isolation for untrusted AI-generated code
+- [[concepts/test-case-minimization]] — Binary search on entropy for automatic test case reduction
 - [[hillel-wayne]] — Formal methods practitioner bridging academic verification and real-world software engineering
 - [[john-d-cook-applied-mathematics-consulting]] — Formal verification in high-stakes engineering contexts

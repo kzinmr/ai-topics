@@ -51,11 +51,11 @@ Think of it as **giving an intern the admin keys to your entire production envir
 
 ## Relationship to Zero Trust
 
-Excessive agency is the problem; [[zero-trust-agentic-ai]] is the solution framework. Zero Trust assumes no request is safe by default and enforces continuous verification across the agent lifecycle.
+Excessive agency is the problem; [[concepts/zero-trust-agentic-ai]] is the solution framework. Zero Trust assumes no request is safe by default and enforces continuous verification across the agent lifecycle.
 
 ## Related Concepts
 
-- [[zero-trust-agentic-ai]] — Comprehensive security framework
-- [[agent-sandboxing]] — Isolation as complementary defense
-- [[red-teaming-adversarial-eval]] — Testing for excessive agency vulnerabilities
-- [[agentic-conflict-resolution]] — Governance patterns that prevent agency conflicts
+- [[concepts/zero-trust-agentic-ai]] — Comprehensive security framework
+- [[concepts/agent-sandboxing]] — Isolation as complementary defense
+- [[concepts/red-teaming-adversarial-eval]] — Testing for excessive agency vulnerabilities
+- [[concepts/agentic-conflict-resolution]] — Governance patterns that prevent agency conflicts

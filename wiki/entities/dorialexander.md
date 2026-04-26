@@ -177,17 +177,17 @@ Long-time Wikipedia contributor since ~2006, elected administrator in 2012 with 
 
 ## Related
 
-- [[pleias]] — French AI lab co-founded by Langlais
-- [[common-corpus]] — Largest open multilingual pretraining dataset
-- [[synth]] — First fully synthetic generalist pretraining dataset
-- [[ivan-yamshchikov]] — Co-founder, CPO at Pleias
-- [[anastasia-stasenko]] — Co-founder, CEO at Pleias
-- [[ai-alliance]] — Open Trusted Data Initiative partner
-- [[currentai]] — Global partnership for public-interest AI
-- [[wikimedia-enterprise]] — Strategic partner for structured Wikipedia data
-- [[sciences-po]] — Where Langlais teaches data science
-- [[open-science]] — Core philosophy underlying Pleias's work
-- [[small-language-models]] — Pleias's model design philosophy
+- [[concepts/pleias]] — French AI lab co-founded by Langlais
+- [[concepts/common-corpus]] — Largest open multilingual pretraining dataset
+- [[concepts/synth]] — First fully synthetic generalist pretraining dataset
+- [[concepts/ivan-yamshchikov]] — Co-founder, CPO at Pleias
+- [[concepts/anastasia-stasenko]] — Co-founder, CEO at Pleias
+- [[concepts/ai-alliance]] — Open Trusted Data Initiative partner
+- [[concepts/currentai]] — Global partnership for public-interest AI
+- [[concepts/wikimedia-enterprise]] — Strategic partner for structured Wikipedia data
+- [[concepts/sciences-po]] — Where Langlais teaches data science
+- [[concepts/open-science]] — Core philosophy underlying Pleias's work
+- [[concepts/small-language-models]] — Pleias's model design philosophy
 -  — Domain of Pleias-RAG models
 -  — Langlais's former company
 -  — Collaboration with Nvidia

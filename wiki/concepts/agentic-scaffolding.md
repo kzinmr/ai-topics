@@ -1,8 +1,9 @@
 ---
 title: "Agentic Scaffolding"
-tags: [[agents-architecture-scaffolding]]
+tags: [[concepts/agents-architecture-scaffolding]]
 created: 2026-04-13
 updated: 2026-04-24
+type: concept
 ---
 
 # Agentic Scaffolding
@@ -70,7 +71,7 @@ Step 1 (Plan) → Review → Step 2 (Execute) → Verify → Step 3 (Report)
 
 ## Related
 
-- [[harness-engineering/system-architecture/agent-security-patterns]] — Agent Security Patterns
-- [[agent-loop-orchestration]] — Agent Loop Orchestration
-- [[harness-engineering/system-architecture/building-effective-agents]] — Building Effective Agents (Anthropic)
-- [[agent-sandboxing]] — Agent Sandboxing
+- [[concepts/harness-engineering/system-architecture/agent-security-patterns]] — Agent Security Patterns
+- [[concepts/agent-loop-orchestration]] — Agent Loop Orchestration
+- [[concepts/harness-engineering/system-architecture/building-effective-agents]] — Building Effective Agents (Anthropic)
+- [[concepts/agent-sandboxing]] — Agent Sandboxing

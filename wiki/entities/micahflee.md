@@ -1,8 +1,9 @@
 ---
 title: "Micah Lee"
-tags: [[person]]
+tags: [[concepts/person]]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 
@@ -12,9 +13,9 @@ updated: 2026-04-24
 
 **Micah Lee** (he/him, pronounced "my-kah") is a security researcher, investigative data journalist, software engineer, and author. He is best known for building practical open-source privacy tools, analyzing leaked datasets, and advocating for tech activism that empowers journalists and ordinary citizens against state and corporate surveillance.
 
-His work spans the full stack of information security — from developing widely used tools like **OnionShare** (secure file sharing over Tor) and **Dangerzone** (malware-safe document sanitization), to founding the **Lockdown Systems Collective**, which builds local-first alternatives to Big Tech data extraction (notably the [[cyd]] app). He is the author of *Hacks, Leaks, and Revelations: The Art of Analyzing Hacked and Leaded Data* (No Starch Press, 2024), a practical guide for journalists and activists working with leaked datasets.
+His work spans the full stack of information security — from developing widely used tools like **OnionShare** (secure file sharing over Tor) and **Dangerzone** (malware-safe document sanitization), to founding the **Lockdown Systems Collective**, which builds local-first alternatives to Big Tech data extraction (notably the [[concepts/cyd]] app). He is the author of *Hacks, Leaks, and Revelations: The Art of Analyzing Hacked and Leaded Data* (No Starch Press, 2024), a practical guide for journalists and activists working with leaked datasets.
 
-Previously: Director of Information Security at [[the-intercept]] (where he handled OPSEC during the Edward Snowden leaks), Staff Technologist at the [[electronic-frontier-foundation]], and co-founder of . His journalism has appeared in *The Intercept*, *404 Media*, *WIRED*, and *Zeteo*.
+Previously: Director of Information Security at [[concepts/the-intercept]] (where he handled OPSEC during the Edward Snowden leaks), Staff Technologist at the [[concepts/electronic-frontier-foundation]], and co-founder of . His journalism has appeared in *The Intercept*, *404 Media*, *WIRED*, and *Zeteo*.
 
 ---
 
@@ -23,14 +24,14 @@ Previously: Director of Information Security at [[the-intercept]] (where he hand
 | Period | Key Events |
 |--------|-----------|
 | 2013 | Provides OPSEC for journalists covering the  NSA leaks |
-| 2014 | Develops **OnionShare** — open-source file sharing over [[dark-factory-software-factory]] |
-| 2014–2024 | Director of Information Security at [[the-intercept]]; leads the SIDtoday Files project |
+| 2014 | Develops **OnionShare** — open-source file sharing over [[concepts/dark-factory-software-factory]] |
+| 2014–2024 | Director of Information Security at [[concepts/the-intercept]]; leads the SIDtoday Files project |
 | 2016–2019 | Leads comprehensive reporting on NSA Signals Intelligence Directorate documents |
 | 2018 | Reports on leaked WikiLeaks DMs with Cora Currier |
 | 2020 | Develops **Dangerzone** — converts potentially malicious documents to safe PDFs |
 | 2022 | Co-publishes investigation on TeleMessage spyware used by Trump officials |
 | 2024 | Publishes *Hacks, Leaks, and Revelations* (No Starch Press) |
-| 2025 | Founds **Lockdown Systems Collective**; develops [[cyd]] app; reports on [[iceblock]] app security failures; delivers BSidesPDX keynote on "Technofascism" |
+| 2025 | Founds **Lockdown Systems Collective**; develops [[concepts/cyd]] app; reports on [[concepts/iceblock]] app security failures; delivers BSidesPDX keynote on "Technofascism" |
 | 2026 | Publishes Epstein files analysis on ; builds DHS Contracts Explorer from hacked data; writes extensively on Signal group nicknames, mercenary spyware, and app censorship |
 
 ---
@@ -99,7 +100,7 @@ He advocates for **web-based alternatives** to native apps precisely because the
 
 **2024:** Published *Hacks, Leaks, and Revelations* — systematizing his methodology for working with leaked datasets as a form of democratic journalism.
 
-**2025:** Founded the [[lockdown-systems-collective]] and began developing [[cyd]], an open-source app for local-first personal data backup. Delivered his BSidesPDX keynote on technofascism. Published critical analysis of the ICEBlock app as "activism theater." Co-reported on TeleMessage spyware. Published Epstein files analysis for .
+**2025:** Founded the [[concepts/lockdown-systems-collective]] and began developing [[concepts/cyd]], an open-source app for local-first personal data backup. Delivered his BSidesPDX keynote on technofascism. Published critical analysis of the ICEBlock app as "activism theater." Co-reported on TeleMessage spyware. Published Epstein files analysis for .
 
 **2026:** Built the DHS Contracts Explorer from hacked immigration enforcement data. Published practical guides on Signal group security (nicknames as identity verification). Continued analysis of mercenary spyware threats (Paragon/Graphite, NSO/Pegasus) and platform complicity. Active on the kill switch podcast discussing app censorship.
 
@@ -107,13 +108,13 @@ He advocates for **web-based alternatives** to native apps precisely because the
 
 ## Related
 
-[[onionshare]] — Lee's flagship tool for secure, anonymous file sharing over Tor
-[[dangerzone]] — Document sanitization tool for journalists handling untrusted files
-[[cyd]] — Local-first data backup app developed through Lockdown Systems Collective
-[[dark-factory-software-factory]] — Anonymity network central to Lee's tooling philosophy
-[[signal]] — Encrypted messaging platform Lee advocates and analyzes
-[[the-intercept]] — Former employer; Lee directed information security for a decade
-[[electronic-frontier-foundation]] — Former employer as staff technologist
+[[concepts/onionshare]] — Lee's flagship tool for secure, anonymous file sharing over Tor
+[[concepts/dangerzone]] — Document sanitization tool for journalists handling untrusted files
+[[concepts/cyd]] — Local-first data backup app developed through Lockdown Systems Collective
+[[concepts/dark-factory-software-factory]] — Anonymity network central to Lee's tooling philosophy
+[[concepts/signal]] — Encrypted messaging platform Lee advocates and analyzes
+[[concepts/the-intercept]] — Former employer; Lee directed information security for a decade
+[[concepts/electronic-frontier-foundation]] — Former employer as staff technologist
  — Co-founded by Lee
  — Lee provided OPSEC during the NSA document leaks
  — Current publication outlet for investigative journalism

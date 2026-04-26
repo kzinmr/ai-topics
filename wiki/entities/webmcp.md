@@ -130,7 +130,7 @@ navigator.modelContext.registerTool({
 - [[anthropic-computer-use]] — スクリーンショットベースアプローチ
 - [[openai-cua]] — OpenAIのComputer-Using Agent
 - [[browser-use]] — DOMベース自動化
-- [[death-of-browser]] — ブラウザの脱人間化潮流
+- [[concepts/death-of-browser]] — ブラウザの脱人間化潮流
 - [[browserbase]] — ブラウザインフラ
 
 ## Sources

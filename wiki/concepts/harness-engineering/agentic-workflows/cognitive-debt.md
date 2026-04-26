@@ -17,7 +17,7 @@ sources:
 
 # Cognitive Debt
 
-AIエージェントが生成したコードの動作理解を失うことで蓄積する**認知的負債**。技術的負債の認知版。[[vibe-coding]]によって加速度的に増加する。
+AIエージェントが生成したコードの動作理解を失うことで蓄積する**認知的負債**。技術的負債の認知版。[[concepts/vibe-coding]]によって加速度的に増加する。
 
 ## 定義
 
@@ -63,20 +63,20 @@ Willisonは認知負債を**Vibe Codingの最大の問題**と位置付けてい
 
 ## 返済方法
 
-### 1. [[harness-engineering/agentic-workflows/linear-walkthroughs]] — 構造化コード解説
+### 1. [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — 構造化コード解説
 Willisonが自作したCLIツールで、コードの処理フローをツリー表示し、どの関数がどのパスで呼ばれるかを**視覚的に理解可能**にする。
 
 ```
 $ llm --plugin llm-linear-walkthrough explain --file src/app.py
 ```
 
-### 2. [[interactive-explanations]] — 対話的アニメーション
+### 2. [[concepts/interactive-explanations]] — 対話的アニメーション
 ブラウザ上でコードの動作をステップ実行し、変数の変化をリアルタイムで可視化する。
 
-### 3. [[harness-engineering/agentic-workflows/agentic-manual-testing]] — 実行による動作確認
-[[harness-engineering/agentic-workflows/rodney]]等のCLIブラウザツールで実際にUIをテストし、エージェントが生成した機能が本当に動くかを検証。
+### 3. [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] — 実行による動作確認
+[[concepts/harness-engineering/agentic-workflows/rodney]]等のCLIブラウザツールで実際にUIをテストし、エージェントが生成した機能が本当に動くかを検証。
 
-### 4. [[showboat]] — テストの記録と共有
+### 4. [[concepts/showboat]] — テストの記録と共有
 検証結果をMarkdownドキュメントとして保存し、チーム全員が確認できるようにする。
 
 ## 返済サイクル
@@ -91,7 +91,7 @@ $ llm --plugin llm-linear-walkthrough explain --file src/app.py
 
 ## 参照
 - [[simon-willison]] — 概念提唱者
-- [[vibe-coding]] — 認知負債の主要発生源
-- [[harness-engineering/agentic-workflows/linear-walkthroughs]] — 主要な返済ツール
-- [[interactive-explanations]] — 対話的理解ツール
-- [[harness-engineering/agentic-workflows/agentic-manual-testing]] — 検証ツール
+- [[concepts/vibe-coding]] — 認知負債の主要発生源
+- [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — 主要な返済ツール
+- [[concepts/interactive-explanations]] — 対話的理解ツール
+- [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] — 検証ツール

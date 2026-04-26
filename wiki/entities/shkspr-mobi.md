@@ -3,15 +3,16 @@ title: "Terence Eden"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Terence Eden
 
 ## Overview
 
-**Terence Eden** (pronounced "ed-en") is a technology policy expert, open-source advocate, web standards contributor, and blogger. Based in the UK, he has worked at the intersection of government technology, open data, accessibility, and digital rights for over two decades. He served as a technical advisor to the [[uk-government-digital-service]] (GDS), where he helped shape the government's approach to open standards and digital accessibility.
+**Terence Eden** (pronounced "ed-en") is a technology policy expert, open-source advocate, web standards contributor, and blogger. Based in the UK, he has worked at the intersection of government technology, open data, accessibility, and digital rights for over two decades. He served as a technical advisor to the [[concepts/uk-government-digital-service]] (GDS), where he helped shape the government's approach to open standards and digital accessibility.
 
-Eden blogs at [[shkspr.mobi]] — a minimalist, self-hosted site he has maintained for years — where he writes about technology policy, open-source sustainability, web accessibility, and the practical consequences of digital design decisions. His work is characterized by **pragmatic idealism**: he believes in open systems and transparent governance, but grounds his advocacy in concrete technical experience and real-world deployment.
+Eden blogs at [[concepts/shkspr.mobi]] — a minimalist, self-hosted site he has maintained for years — where he writes about technology policy, open-source sustainability, web accessibility, and the practical consequences of digital design decisions. His work is characterized by **pragmatic idealism**: he believes in open systems and transparent governance, but grounds his advocacy in concrete technical experience and real-world deployment.
 
 He is the creator of several open-source projects including **ActivityBot** (a single-file PHP ActivityPub server under 80KB), **OpenBenches** (a crowdsourced database of 40,000+ memorial benches worldwide), and various bot implementations for decentralized social networks. He is also a prolific speaker on open-source governance, accessibility, and the future of the open web.
 
@@ -22,7 +23,7 @@ He is the creator of several open-source projects including **ActivityBot** (a s
 | Period | Key Events |
 |--------|-----------|
 | ~2000s | Begins blogging at shkspr.mobi; develops expertise in web standards and accessibility |
-| 2010s | Works with [[uk-government-digital-service]] (GDS); contributes to government digital policy |
+| 2010s | Works with [[concepts/uk-government-digital-service]] (GDS); contributes to government digital policy |
 | 2014 | Publishes *"Please Stop Inventing New Software Licences"* — widely-cited critique of non-standard open-source licensing |
 | 2015 | Publishes plea for *"Easy APIs Without Authentication"* — advocating for open data access |
 | 2017 | Follow-up on API accessibility — documenting the decline of open APIs |
@@ -59,7 +60,7 @@ This demonstrates Eden's humility about his own frameworks — he recognizes tha
 
 ### Government Open-Source Funding
 
-Eden's experience within the [[uk-government]] gives him unique insight into the structural barriers preventing public-sector support for open-source software. His 2026 post *"How Can Governments Pay Open Source Maintainers?"* is a masterclass in pragmatic policy analysis:
+Eden's experience within the [[concepts/uk-government]] gives him unique insight into the structural barriers preventing public-sector support for open-source software. His 2026 post *"How Can Governments Pay Open Source Maintainers?"* is a masterclass in pragmatic policy analysis:
 
 **Problem 1: Ownership ambiguity.** "Lots of OSS doesn't have a well defined owner; so who gets the money?" Governments need to know who they're funding and where the money is going. The risk of accidentally funding sanctioned entities is real.
 
@@ -187,13 +188,13 @@ Eden's response is typically pragmatic: file the FOI, get the data, publish the 
 
 ## Related
 
-[[uk-government-digital-service]] — Eden's former employer; shaped UK government digital policy
-[[activitypub]] — Decentralized social networking protocol; Eden built ActivityBot
-[[openbenches]] — Eden's crowdsourced memorial bench database (40,000+ benches)
-[[open-data]] — Eden's advocacy area; published personal solar and energy consumption data
-[[foaf]] — Friend of a Friend trust model Eden has analyzed
-[[mastodon]] — Fediverse platform; Eden's bots interact with it via ActivityPub
-[[web-accessibility]] — Eden treats as core technical requirement, not afterthought
+[[concepts/uk-government-digital-service]] — Eden's former employer; shaped UK government digital policy
+[[concepts/activitypub]] — Decentralized social networking protocol; Eden built ActivityBot
+[[concepts/openbenches]] — Eden's crowdsourced memorial bench database (40,000+ benches)
+[[concepts/open-data]] — Eden's advocacy area; published personal solar and energy consumption data
+[[concepts/foaf]] — Friend of a Friend trust model Eden has analyzed
+[[concepts/mastodon]] — Fediverse platform; Eden's bots interact with it via ActivityPub
+[[concepts/web-accessibility]] — Eden treats as core technical requirement, not afterthought
  — Eden's 2014 critique of license proliferation
  — UK energy regulator; Eden's FOI experience with historic data
 Freedom of Information — Process Eden uses to access government data

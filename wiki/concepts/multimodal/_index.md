@@ -1,6 +1,6 @@
 ---
 title: "Multimodal AI — Overview"
-tags: [[multimodal-vision-audio-cross-modal]]
+tags: [[concepts/multimodal-vision-audio-cross-modal]]
 created: 2026-04-19
 updated: 2026-04-19
 ---
@@ -14,7 +14,7 @@ AI models that process and connect multiple modalities (vision, language, audio)
 | Model | Modality | Description | Key Use Case |
 |-------|----------|-------------|--------------|
 | **CLIP** | Vision-Language | OpenAI's contrastive image-text model (400M pairs) | Zero-shot classification, semantic search |
-| ~~**Whisper**~~ | ~~Audio-Text~~ | *Moved to [[speech/whisper]]* | — |
+| ~~**Whisper**~~ | ~~Audio-Text~~ | *Moved to [[concepts/speech/whisper]]* | — |
 | **LLaVA** | Vision-Language | Large Language-and-Vision Assistant | Visual question answering, image chat |
 | **Stable Diffusion** | Text-Image | Latent diffusion model for image generation | Text-to-image, image editing |
 | **Segment Anything** | Vision | Meta's foundation model for image segmentation | Object detection, mask generation |
@@ -24,7 +24,7 @@ AI models that process and connect multiple modalities (vision, language, audio)
 
 -  — CLIP: Contrastive Language-Image Pre-Training
 
-> **Note:** Whisper moved to [[speech/whisper]] — speech models are conceptually distinct from vision-language multimodal systems.
+> **Note:** Whisper moved to [[concepts/speech/whisper]] — speech models are conceptually distinct from vision-language multimodal systems.
 
 ## Key Concepts
 
@@ -38,9 +38,9 @@ Using one modality to search another (text→image, image→text). Critical for 
 Contrastive learning aligns representations across modalities in shared embedding space.
 
 ## Related Concepts
-- [[fine-tuning/unsloth]] — Fine-tuning multimodal models
-- [[inference]] — Inference optimization for multimodal
-- [[local-llm]] — Running multimodal models locally
+- [[concepts/fine-tuning/unsloth]] — Fine-tuning multimodal models
+- [[concepts/inference]] — Inference optimization for multimodal
+- [[concepts/local-llm]] — Running multimodal models locally
 
 ## Sources
 - OpenAI CLIP paper (2021)

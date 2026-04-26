@@ -5,7 +5,7 @@ created: 2026-04-13
 updated: 2026-04-13
 tags: [git, main-branch, branching-strategy, agentic-engineering, atomic-commits]
 aliases: ["main-branch-ai-development", "worktree-anti-pattern", "atomic-commits-with-agents", "steipete-git-patterns"]
-related: , [[inference-speed-development]], [[direct-prompting-philosophy]], [[claude-code-best-practices]]
+related: , [[concepts/inference-speed-development]], [[concepts/direct-prompting-philosophy]], [[concepts/claude-code-best-practices]]
 sources:
   - url: "https://steipete.me/posts/2025/live-coding-session-building-arena"
     author: "Peter Steinberger (@steipete)"
@@ -139,19 +139,19 @@ Each step was completed, committed, and moved to the next — no branching, no P
 
 ## Connection to Other Patterns
 
-### [[inference-speed-development]]
+### [[concepts/inference-speed-development]]
 Main-branch development enables the fast iteration cycle:
 - **No branch switching** → faster task transitions
 - **Atomic commits** → clear iteration boundaries
 - **Git safety** → confidence to move fast
 
-### [[direct-prompting-philosophy]]
+### [[concepts/direct-prompting-philosophy]]
 Both patterns reject unnecessary complexity:
 - Skip the orchestration → direct prompting
 - Skip the branching → main commits
 - Trust the agent + git to keep things safe
 
-### [[claude-code-best-practices]]
+### [[concepts/claude-code-best-practices]]
 Complements Claude Code patterns:
 - Sub-agents work on isolated tasks → atomic commits
 - Human reviews output → post-commit validation
@@ -180,9 +180,9 @@ Complements Claude Code patterns:
 
 ## Related Concepts
 
-- [[inference-speed-development]] — Why fast iteration requires simple branching
-- [[direct-prompting-philosophy]] — Anti-complexity mindset applied to Git
-- [[claude-code-best-practices]] — Atomic commits enable sub-agent delegation
+- [[concepts/inference-speed-development]] — Why fast iteration requires simple branching
+- [[concepts/direct-prompting-philosophy]] — Anti-complexity mindset applied to Git
+- [[concepts/claude-code-best-practices]] — Atomic commits enable sub-agent delegation
 -  — How AI changes traditional development workflows
 
 ## Sources

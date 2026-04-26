@@ -100,7 +100,7 @@ The common thread is **curiosity-driven mathematical exploration**. He finds som
 
 ## Related
 
-- [[formal-methods]] — Proving correctness properties for critical systems
+- [[concepts/formal-methods]] — Proving correctness properties for critical systems
 -  — The correctness conundrum in AI systems
 -  — HIPAA expert determination and differential privacy
 -  — Mathematician whose work intersects with Cook's analysis of AI-assisted discovery

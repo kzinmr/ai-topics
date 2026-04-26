@@ -51,11 +51,11 @@ aliases:
 
 ## Harness Engineeringとの関係
 
-[[context-engineering]] の横断技術として、Context Routingは「エージェントに何を見せるか」の設計判断を自動化するパターン。
+[[concepts/context-engineering]] の横断技術として、Context Routingは「エージェントに何を見せるか」の設計判断を自動化するパターン。
 
 ## Related Concepts
 
-- [[context-engineering]] — コンテキスト最適化の統合フレームワーク
-- [[context-compression]] — コンテキスト圧縮技術
-- [[harness-engineering/system-architecture/advanced-tool-use]] — 高度なツール使用
-- [[agentic-rag]] — エージェント制御の検索ループ
+- [[concepts/context-engineering]] — コンテキスト最適化の統合フレームワーク
+- [[concepts/context-compression]] — コンテキスト圧縮技術
+- [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — 高度なツール使用
+- [[concepts/agentic-rag]] — エージェント制御の検索ループ

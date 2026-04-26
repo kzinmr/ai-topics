@@ -152,10 +152,10 @@ Wirtz's writing is characterized by:
 
 ## Related
 
-- [[cohort-based-learning]] — Wirtz's approach to online education
-- [[bottom-up-note-taking]] — Emergent knowledge management philosophy
-- [[effective-altruism]] — Current professional focus at Giving What We Can
-- [[facilitation]] — Core expertise from Crisp Studio and Facilitator School
+- [[concepts/cohort-based-learning]] — Wirtz's approach to online education
+- [[concepts/bottom-up-note-taking]] — Emergent knowledge management philosophy
+- [[concepts/effective-altruism]] — Current professional focus at Giving What We Can
+- [[concepts/facilitation]] — Core expertise from Crisp Studio and Facilitator School
 -  — Wirtz's approach to building and sharing work
 -  — Inspiration for Facilitator School course model
 -  — Inspiration for email marketing and landing page approach

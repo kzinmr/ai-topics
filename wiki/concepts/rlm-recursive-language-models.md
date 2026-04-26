@@ -3,6 +3,7 @@ title: "RLM (Recursive Language Models)"
 tags: [training, concept, ai-agents, llm, prompting, rAG, evaluations, inference]
 created: 2026-04-13
 updated: 2026-04-24
+type: concept
 ---
 
 # RLM (Recursive Language Models)
@@ -220,10 +221,10 @@ Returns `Prediction` with:
 
 ## Related Concepts
 
-- **[[dspy]]** — Declarative LM programming framework; ships RLM module
-- **[[dspyrlm]]** — This page covers the DSPy.RLM implementation
-- **[[context-folding]]** — Parallel approach: branch/return with summarization
-- **[[inference-time-scaling]]** — RLM scales computation, not parameters
+- **[[concepts/dspy]]** — Declarative LM programming framework; ships RLM module
+- **[[concepts/dspyrlm]]** — This page covers the DSPy.RLM implementation
+- **[[concepts/context-folding]]** — Parallel approach: branch/return with summarization
+- **[[concepts/inference-time-scaling]]** — RLM scales computation, not parameters
 - **** — RLM as a new ACI paradigm
 - **** — RLMs are trainable scaffolds
 - **[[shunyu-yao]]** — "The Second Half" framework; RL generalization thesis

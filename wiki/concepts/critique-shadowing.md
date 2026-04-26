@@ -1,8 +1,9 @@
 ---
 title: "Critique Shadowing"
-tags: [[llm-as-judge-evaluation-methodology-human-in-the-loop]]
+tags: [[concepts/llm-as-judge-evaluation-methodology-human-in-the-loop]]
 created: 2026-04-12
 updated: 2026-04-24
+type: concept
 ---
 
 # Critique Shadowing
@@ -80,8 +81,8 @@ For independent developers who are also domain experts, working with test data t
 
 ## Related Concepts
 
-- [[ai-evals]] — Main evaluation framework
-- [[llm-as-judge]] — Using LLMs to evaluate AI outputs
+- [[concepts/ai-evals]] — Main evaluation framework
+- [[concepts/llm-as-judge]] — Using LLMs to evaluate AI outputs
 -  — Systematic categorization of failure modes
 
 ## Sources

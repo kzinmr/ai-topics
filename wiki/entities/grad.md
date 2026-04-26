@@ -172,11 +172,11 @@ From the GoldFinch abstract:
 ## Related People
 
 - [[andrej-karpathy]] — Karpathy's llm.c was the baseline for the NanoGPT speedrun
-- [[keller-jordan]] — Speedrun organizer and frequent collaborator
-- [[zhanchao-zhou]] — Value Residual Learning co-author
-- [[jxbz]] — Jeremy Bernstein, speedrun contributor (Newton-Schulz iteration)
-- [[bozavlado]] — Speedrun contributor
-- [[brendanh0gan]] — Speedrun contributor (U-net, 2x lr record)
+- [[concepts/keller-jordan]] — Speedrun organizer and frequent collaborator
+- [[concepts/zhanchao-zhou]] — Value Residual Learning co-author
+- [[concepts/jxbz]] — Jeremy Bernstein, speedrun contributor (Newton-Schulz iteration)
+- [[concepts/bozavlado]] — Speedrun contributor
+- [[concepts/brendanh0gan]] — Speedrun contributor (U-net, 2x lr record)
 -  — Speedrun contributor
 -  — Speedrun contributor (Muon improvements)
 -  — Speedrun contributor (Muon improvements)

@@ -306,19 +306,19 @@ He maintains an active blog at softwaredoug.com with regular "daily search tips"
 - **[Semantic Search Without Embeddings](https://softwaredoug.com/blog/2026/01/08/semantic-search-without-embeddings)** (Jan 2026) — Decomposes semantic search into three pillars: representation, similarity, and match criteria. Argues embeddings fail at the third pillar (explicit inclusion/exclusion). Proposes hierarchical taxonomies as the alternative — tokenizing category paths and feeding them into BM25 for natural specificity scoring. Demonstrates LLM-augmented taxonomy building: prompting small models to "creatively generate" plausible taxonomy paths before mapping to real ones.
 
 ## Related
-- [[elasticsearch]] — Primary search engine in his early work
-- [[apache-solr]] — Search platform he worked with extensively
-- [[learning-to-rank]] — ML approach to combining ranking signals
+- [[concepts/elasticsearch]] — Primary search engine in his early work
+- [[concepts/apache-solr]] — Search platform he worked with extensively
+- [[concepts/learning-to-rank]] — ML approach to combining ranking signals
 -  — Retrieval-Augmented Generation
-- [[bm25]] — Probabilistic ranking function
-- [[ndcg]] — Normalized Discounted Cumulative Gain
-- [[quepid]] — Open-source search relevance testing workbench
-- [[searcharray]] — Pandas-based BM25 search library
-- [[trey-grainger]] — Co-author of AI-Powered Search
-- [[john-berryman]] — Co-author of Relevant Search
-- [[max-irwin]] — Co-author of AI-Powered Search
+- [[concepts/bm25]] — Probabilistic ranking function
+- [[concepts/ndcg]] — Normalized Discounted Cumulative Gain
+- [[concepts/quepid]] — Open-source search relevance testing workbench
+- [[concepts/searcharray]] — Pandas-based BM25 search library
+- [[concepts/trey-grainger]] — Co-author of AI-Powered Search
+- [[concepts/john-berryman]] — Co-author of Relevant Search
+- [[concepts/max-irwin]] — Co-author of AI-Powered Search
 - [[jo-kristian-bergum]] — Hornet CEO, former Vespa Chief Scientist, fellow search infrastructure veteran
-- [[opensource-connections]] — Search relevance consultancy where he served as CTO
+- [[concepts/opensource-connections]] — Search relevance consultancy where he served as CTO
 -  — Platform where he achieved 2% DAU increase with LTR
 -  — Where he improved merchant search revenue 10% YoY
 -  — Where he worked as Staff Relevance Engineer

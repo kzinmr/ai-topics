@@ -83,8 +83,8 @@ Mixture-of-Experts models keep all weights in memory but activate only a subset 
 
 ## Related Concepts
 
-- [[mlx-llm]] — MLX framework for language model inference
+- [[concepts/mlx-llm]] — MLX framework for language model inference
 - [[quantization]] — 4-bit and dynamic quantization techniques
 - [[claude-code]] — Local Claude Code deployment patterns
-- [[llama-cpp]] — Alternative inference engine (llama.cpp vs MLX)
+- [[concepts/llama-cpp]] — Alternative inference engine (llama.cpp vs MLX)
 - [[moe-architecture]] — Mixture-of-Experts model design

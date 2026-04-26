@@ -1,6 +1,6 @@
 ---
 title: "LLM Inference Optimization"
-tags: [[llm-inference-optimization-performance]]
+tags: [[concepts/llm-inference-optimization-performance]]
 created: 2026-04-24
 updated: 2026-04-24
 ---
@@ -13,9 +13,9 @@ Techniques and engines for fast LLM inference, from consumer hardware to product
 
 | Engine | Best For | Key Tech |
 |--------|----------|----------|
-| [[inference/sglang]] | **Agentic loops, RAG, structured output** | RadixAttention, xgrammar, prefill-decode disaggregation |
-| [[inference/vllm]] | **General production serving** | PagedAttention, continuous batching, multi-LoRA |
-| [[inference/llama-cpp]] | **CPU / Apple Silicon / consumer GPU** | GGUF format, local-first, zero cloud dependency |
+| [[concepts/inference/sglang]] | **Agentic loops, RAG, structured output** | RadixAttention, xgrammar, prefill-decode disaggregation |
+| [[concepts/inference/vllm]] | **General production serving** | PagedAttention, continuous batching, multi-LoRA |
+| [[concepts/inference/llama-cpp]] | **CPU / Apple Silicon / consumer GPU** | GGUF format, local-first, zero cloud dependency |
 | Ollama | **Local LLM runner (CLI + API)** | Wraps llama.cpp, model library, one-line setup |
 
 ## Optimization Techniques
@@ -42,7 +42,7 @@ Techniques and engines for fast LLM inference, from consumer hardware to product
 
 ## Related
 
-- [[local-llm]] — Local LLM ecosystem (quantization, distillation, hardware)
-- [[structured-outputs]] — Structured generation patterns
-- [[inference-speed-development]] — Inference speed economics (Steipete)
-- [[compute-scaling-bottlenecks]] — Hardware constraints on AI scaling
+- [[concepts/local-llm]] — Local LLM ecosystem (quantization, distillation, hardware)
+- [[concepts/structured-outputs]] — Structured generation patterns
+- [[concepts/inference-speed-development]] — Inference speed economics (Steipete)
+- [[concepts/compute-scaling-bottlenecks]] — Hardware constraints on AI scaling

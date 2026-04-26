@@ -3,6 +3,7 @@ title: "Late Interaction Workshop (LIR) @ ECIR 2026"
 tags: [- late-interaction]
 created: 2026-04-24
 updated: 2026-04-10
+type: entity
 ---
 
 # Late Interaction Workshop (LIR) @ ECIR 2026
@@ -141,11 +142,11 @@ Several presentations focused on deploying late interaction in production:
 
 ## Related Concepts
 
-- [[colbert]] — The foundational late interaction retrieval model
+- [[concepts/colbert]] — The foundational late interaction retrieval model
 - [[jo-bergum]] — Vespa/Hornet researcher and ColBERT advocate
-- [[information-retrieval]] — The broader field LIR contributes to
+- [[concepts/information-retrieval]] — The broader field LIR contributes to
 -  — Retrieval-augmented generation, a primary application area
-- [[vector-search]] — The broader embedding search paradigm
+- [[concepts/vector-search]] — The broader embedding search paradigm
 -  — The late interaction scoring function
 -  — Multimodal extension of late interaction to visual documents
 -  — European Conference on Information Retrieval

@@ -109,9 +109,9 @@ AnthropicはSeattleのAIスタートアップ**Vercept**を買収:
 ## 関連エンティティ
 
 - [[openai-cua]] — OpenAIのComputer-Using Agent
-- [[death-of-browser]] — ブラウザの脱人間化潮流
+- [[concepts/death-of-browser]] — ブラウザの脱人間化潮流
 - [[browser-use]] — オープンソースDOMベース自動化
-- [[harness-engineering]] — エージェント環境設計
+- [[concepts/harness-engineering]] — エージェント環境設計
 - [[webmcp]] — 標準化プロトコル
 
 ## Sources

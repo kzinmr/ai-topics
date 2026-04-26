@@ -51,7 +51,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[chip-huyen]] — Chip Huyen is one of the most influential voices in ML/AI systems engineering, bridging the gap between academic research and production deployment. She is a writer, computer scientist, and educator w
 - [[chipro]] — Chip Huyen is one of the most respected voices in production machine learning and AI engineering. Unlike researchers who focus on model accuracy in isolation, Huyen's work centers on the full lifecycl
 - [[chris-tate]] — Chris Tate is a software engineer at Vercel and a prolific open-source creator focused on developer tools and AI-assisted workflows. He is the creator of three notable open-source projects:
-- [[claude-mythos]] — Anthropic's next-generation model, developed after [[claude-opus-4-6]]. Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
+- [[claude-mythos]] — Anthropic's next-generation model, developed after [[concepts/claude-opus-4-6]]. Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
 - [[clefourrier]] — Clémentine Fourrier is a research scientist who, between 2023 and 2025, led Hugging Face's evaluation efforts and collaborations on LLMs and AI agents. She is one of the most influential figures in th
 - [[construction-physics-com]] — Brian Potter is the author of Construction Physics, a Substack newsletter that examines the technology and economics of building construction with a focus on understanding why construction productivit
 - [[corbett]] — Kyle Corbitt (known as "Corbett" on X/Twitter, handle @corbtt) is a serial entrepreneur and engineer focused on making AI model fine-tuning and reinforcement learning accessible to developers. He is c
@@ -181,7 +181,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[openai-cua]] — OpenAIのCUA（Computer-Using Agent）モデルは、GPT-4oのビジョン機能と強化学習を組み合わせて、スクリーンショットを見てGUIを操作するエージェント。2025年1月に「Operator」として公開され、2025年7月にChatGPTエージェントに完全統合された。
 - [[openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
 - [[openai]] — OpenAI is a leading AI research and product company known for developing the GPT series of large language models, ChatGPT, and a growing ecosystem of AI developer tools. The company has been at the fo
-- [[openclaw]] — Open-source always-on AI assistant framework created by Peter Steinberger (former PSPDFKit CEO). Deploys autonomous agents that run continuously, self-evolve through interaction, and integrate with me
+- [[concepts/openclaw]] — Open-source always-on AI assistant framework created by Peter Steinberger (former PSPDFKit CEO). Deploys autonomous agents that run continuously, self-evolve through interaction, and integrate with me
 - [[overreacted-io]] — Dan Abramov is a core contributor to React and a prominent voice in the frontend development community. He co-created Redux and Create React App, and has worked at Meta on the React team. His blog ove
 - [[paulgraham-com]] — Paul Graham is a programmer, essayist, and venture capitalist. Co-founder of Y Combinator (2005), the startup accelerator that has funded over 4,000 companies including Airbnb, Stripe, Dropbox, and Re
 - [[perplexity-comet]] — Cometの核心は検索ファーストアーキテクチャ。従来のブラウザが「URLを入力 → ページをレンダリング → ユーザーが読む」というフローだったのに対し、Cometはユーザーの意図を直接理解し、エージェントがウェブ上でタスクを代行する。
@@ -228,7 +228,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[terrible-software]] — The blog gained remarkable traction quickly — 230,000+ unique visitors in its first year (December 2025 retrospective) — by focusing on topics that resonate deeply with working software engineers:
 - [[thariq-shihipar]] — Thariq Shihipar occupies a unique position in the AI engineering world — he is simultaneously a core builder of production AI systems (Claude Code at Anthropic) and a reflective practitioner who write
 - [[the-old-new-thing]] — Raymond Chen is a Principal Software Engineer at Microsoft who has been involved in the evolution of Windows for more than 30 years. Since 2003, he has written The Old New Thing, one of the most respe
-- [[the-silicon-underground]] — Dave Farquhar is the author of The Silicon Underground, one of the most prolific and detailed blogs devoted to the history of personal computing, semiconductor technology, and the business dynamics of
+- [[concepts/the-silicon-underground]] — Dave Farquhar is the author of The Silicon Underground, one of the most prolific and detailed blogs devoted to the history of personal computing, semiconductor technology, and the business dynamics of
 - [[tim-sh]] — Sherratt is the creator of the GLAM Workbench, a comprehensive platform of Jupyter notebooks that teaches researchers how to work with cultural collection data. He served as Creative Technologist-in-R
 - [[tom-aarsen]] — Tom Aarsen is one of the most active and influential maintainers in the open-source NLP and embeddings ecosystem. Since late 2023, he has been the lead maintainer of Sentence Transformers, the most wi
 - [[tom-renner]] — Renner's writing is distinctive for its willingness to question technology — even (especially) when it comes from within the tech industry. He has published essays arguing that LLMs are a "400-year-lo

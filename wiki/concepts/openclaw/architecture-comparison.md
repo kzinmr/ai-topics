@@ -137,10 +137,10 @@ elvisがOpenClawのTOOLS.md + VercelのAGENTS.mdを組み合わせ：
 
 ## 関連
 
-- [[openclaw]] — OpenClawコンセプト集約
-- [[openclaw/five-tier-precedence]] — 5階層スキル優先度モデル
-- [[openclaw/philosophy]] — Primitives First哲学
-- [[skill-architecture-patterns]] — スキルアーキテクチャの比較分析
+- [[concepts/openclaw]] — OpenClawコンセプト集約
+- [[concepts/openclaw/five-tier-precedence]] — 5階層スキル優先度モデル
+- [[concepts/openclaw/philosophy]] — Primitives First哲学
+- [[concepts/skill-architecture-patterns]] — スキルアーキテクチャの比較分析
 - [[comparisons/hermes-vs-openclaw-architecture]] — 詳細なアーキテクチャ比較
 - [[peter-steinberger]] — OpenClaw創設者
 - [[hermes-agent]] — Hermes Agent

@@ -3,6 +3,7 @@ title: "Ian Nuttall"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-10
+type: entity
 ---
 
 
@@ -89,7 +90,7 @@ This generosity is strategic — it builds audience, authority, and a flywheel o
 
 ### MCP Servers Are the New Micro-SaaS
 
-In early 2025, Nuttall began championing [[mcp|Model Context Protocol]] servers as a new category of micro-SaaS products. His viral post "10 MCP BIZ IDEAS TO MAKE $10K+ MRR" argued that everyone was covering *how* to build MCP servers but not *what* to build. His `mcp-boilerplate` project provides a complete Cloudflare-based template with user authentication and Stripe integration for paid tools — effectively lowering the barrier to entry for anyone wanting to monetize MCP servers.
+In early 2025, Nuttall began championing [[concepts/mcp]] servers as a new category of micro-SaaS products. His viral post "10 MCP BIZ IDEAS TO MAKE $10K+ MRR" argued that everyone was covering *how* to build MCP servers but not *what* to build. His `mcp-boilerplate` project provides a complete Cloudflare-based template with user authentication and Stripe integration for paid tools — effectively lowering the barrier to entry for anyone wanting to monetize MCP servers.
 
 He also released `dotagents` as a centralized location for all hooks, commands, skills, and AGENT/CLAUDE.md files — recognizing that the developer tooling ecosystem around AI coding agents was fragmenting and needed consolidation.
 
@@ -145,12 +146,12 @@ Nuttall's content platform and course business teaching programmatic SEO strateg
 
 ## Related Concepts
 
-- [[programmatic-seo]] — Nuttall's core business methodology
+- [[concepts/programmatic-seo]] — Nuttall's core business methodology
 -  — Community he actively participates in
 -  — His 2025–2026 focus area
-- [[model-context-protocol-mcp]] — Model Context Protocol servers as a new product category
+- [[concepts/model-context-protocol-mcp]] — Model Context Protocol servers as a new product category
 - [[claude-code]] — His primary AI coding tool
-- [[harness-engineering/system-architecture/agent-skills]] — Playbooks.com is a skill directory for AI agents
+- [[concepts/harness-engineering/system-architecture/agent-skills]] — Playbooks.com is a skill directory for AI agents
 -  — His approach to agent state management
 
 ## Sources

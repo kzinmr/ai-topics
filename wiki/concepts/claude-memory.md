@@ -1,8 +1,9 @@
 ---
 title: "Claude Memory — File-Based Memory Architecture"
-tags: [[memory-systems-claude-filesystem-cluade-md-context-management-git-integration]]
+tags: [[concepts/memory-systems-claude-filesystem-cluade-md-context-management-git-integration]]
 created: 2026-04-13
 updated: 2026-04-24
+type: concept
 ---
 
 # Claude Memory — File-Based Memory Architecture
@@ -67,7 +68,7 @@ For Claude Code specifically:
 ## See Also
 
 - [[concepts/_index]]
-- [[claude-memory-tool]]
-- [[ai-agent-memory-middleware]]
-- [[memory-systems-design-patterns]]
-- [[knowledge-graph-memory-agents]]
+- [[concepts/claude-memory-tool]]
+- [[concepts/ai-agent-memory-middleware]]
+- [[concepts/memory-systems-design-patterns]]
+- [[concepts/knowledge-graph-memory-agents]]

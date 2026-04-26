@@ -100,11 +100,11 @@ A recurring theme across Siebenmann's writing is **empiricism over dogma**. Whet
 
 ## Related
 
-- [[unix-philosophy]] — Siebenmann's work is grounded in Unix operational principles
+- [[concepts/unix-philosophy]] — Siebenmann's work is grounded in Unix operational principles
 -  — Frequent topic of analysis and critique
 -  — Dependency cooldowns discussion
 -  — Another Unix-oriented blogger with similar pragmatism
-- [[ai-observability]] — Logs vs metrics debate
+- [[concepts/ai-observability]] — Logs vs metrics debate
 
 ## Sources
 

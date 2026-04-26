@@ -20,11 +20,11 @@ sources:
   - "https://arxiv.org/abs/2305.18290"
   - "https://arxiv.org/abs/2401.12948"
 related:
-  - "[[fine-tuning/rlhf-dpo-preference]]"
-  - "[[fine-tuning/grpo-rl-training]]"
-  - "[[training/trl]]"
-  - "[[reasoning-models]]"
-  - "[[harness-engineering]]"
+  - "[[concepts/fine-tuning/rlhf-dpo-preference]]"
+  - "[[concepts/fine-tuning/grpo-rl-training]]"
+  - "[[concepts/training/trl]]"
+  - "[[concepts/reasoning-models]]"
+  - "[[concepts/harness-engineering]]"
 ---
 
 # RLHFとPreference Optimization
@@ -89,11 +89,11 @@ Low data requirements                     High data requirements
 
 ## 関連トピック
 
-- [[fine-tuning/rlhf-dpo-preference]] — 各手法の詳細比較
-- [[fine-tuning/grpo-rl-training]] — GRPO/RL推論学習
-- [[reasoning-models]] — 推論モデル（DeepSeek R1, o1など）
-- [[harness-engineering]] — Preference OptimizationのHarness Engineering文脈での位置付け
-- [[local-llm]] — ローカルLLMでのアライメント適用
+- [[concepts/fine-tuning/rlhf-dpo-preference]] — 各手法の詳細比較
+- [[concepts/fine-tuning/grpo-rl-training]] — GRPO/RL推論学習
+- [[concepts/reasoning-models]] — 推論モデル（DeepSeek R1, o1など）
+- [[concepts/harness-engineering]] — Preference OptimizationのHarness Engineering文脈での位置付け
+- [[concepts/local-llm]] — ローカルLLMでのアライメント適用
 
 ## Sources
 

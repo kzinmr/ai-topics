@@ -3,6 +3,7 @@ title: "Jo Kristian Bergum"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-10
+type: entity
 ---
 
 
@@ -131,12 +132,12 @@ Native ColBERT support in Vespa, enabling explainable semantic search using deep
 
 ## Related Concepts
 
-- [[colbert]] — The late-interaction retrieval model Bergum championed
+- [[concepts/colbert]] — The late-interaction retrieval model Bergum championed
 - [[late-interaction]] — His primary research and engineering focus
-- [[vespa]] — The search engine where he spent 15 years
-- [[hornet]] — His new company, a retrieval engine for agents
-- [[agentic-retrieval]] — The paradigm shift he's building for
-- [[mutually-assured-distraction]] — His key insight about retrieval-reasoning compounding errors
+- [[concepts/vespa]] — The search engine where he spent 15 years
+- [[concepts/hornet]] — His new company, a retrieval engine for agents
+- [[concepts/agentic-retrieval]] — The paradigm shift he's building for
+- [[concepts/mutually-assured-distraction]] — His key insight about retrieval-reasoning compounding errors
 -  — BM25 + vector search, a Vespa specialty
 -  — ColBERT's key advantage over single-vector embeddings
 - [[doug-turnbull]] — Fellow search relevance engineer, co-author of "AI-Powered Search"

@@ -192,12 +192,12 @@ Graham's recent work reflects the transition from a **software-eats-the-world** 
 
 ## Related Concepts
 
-- [[superlinear-returns]] — Graham's framework for understanding outsized outcomes
-- [[founder-mode]] — Anti-managerial thesis for startup leadership
-- [[the-brand-age]] — Identity as competitive moat in commoditized markets
+- [[concepts/superlinear-returns]] — Graham's framework for understanding outsized outcomes
+- [[concepts/founder-mode]] — Anti-managerial thesis for startup leadership
+- [[concepts/the-brand-age]] — Identity as competitive moat in commoditized markets
 -  — The cognitive trait that enables breakthrough work
 -  — Following interest over strategic calculation
-- [[harness-engineering]] — Systems thinking approach to preventing recurring failures (Aaron Swartz connection)
+- [[concepts/harness-engineering]] — Systems thinking approach to preventing recurring failures (Aaron Swartz connection)
 -  — Agent-first development workflows
 
 ### Influences and Connections

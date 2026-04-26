@@ -3,6 +3,7 @@ title: "Ankur Goyal"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-10
+type: entity
 ---
 
 
@@ -121,7 +122,7 @@ A key lesson from his Impira experience was recognizing that go-to-market succes
 -  — Goyal's LLM evaluation platform
 - [[figma]] — Acquired Impira; Goyal led AI team post-acquisition
 -  — Goyal's first startup, acquired by Figma
-- [[llm-evaluation-harness]] — Braintrust's core product category
+- [[concepts/llm-evaluation-harness]] — Braintrust's core product category
 -  — Key investor and advisor to Braintrust
 -  — Model breakthrough that enabled Loop (Claude 4)
 

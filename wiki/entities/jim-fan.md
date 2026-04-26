@@ -6,9 +6,9 @@ created: 2026-04-10
 updated: 2026-04-10
 related:
   - [[nvidia-dgx-spark]]
-  - [[embodied-ai]]
-  - [[robotics]]
-  - [[genie]]
+  - [[concepts/embodied-ai]]
+  - [[concepts/robotics]]
+  - [[concepts/genie]]
   - 
   - 
 tags:

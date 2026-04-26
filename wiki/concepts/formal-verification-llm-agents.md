@@ -76,7 +76,7 @@ Even with AI writing proofs, **writing correct specifications** is still hard. T
 - After AI: Writing specs is the bottleneck (requires translating human intent to formal logic)
 - This is the **intent formalization** problem
 
-See [[intent-formalization]] for details on this complementary challenge.
+See [[concepts/intent-formalization]] for details on this complementary challenge.
 
 ## Relevance to AI Agents
 
@@ -87,9 +87,9 @@ For AI coding agents, formal verification is particularly relevant because:
 
 ## Related Concepts
 
-- [[intent-formalization]] — The complementary challenge of translating human intent into formal specs
-- [[neurosymbolic-ai]] — Symbolic reasoning (formal logic) combined with neural networks
-- [[ai-safety]] — Alignment and oversight for AI agents
-- [[agent-sandboxing]] — Isolation for untrusted code (complementary safety approach)
+- [[concepts/intent-formalization]] — The complementary challenge of translating human intent into formal specs
+- [[concepts/neurosymbolic-ai]] — Symbolic reasoning (formal logic) combined with neural networks
+- [[concepts/ai-safety]] — Alignment and oversight for AI agents
+- [[concepts/agent-sandboxing]] — Isolation for untrusted code (complementary safety approach)
 - [[hillel-wayne]] — Formal methods practitioner bridging academic and industry
 - [[john-d-cook-applied-mathematics-consulting]] — Formal verification in high-stakes engineering

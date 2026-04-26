@@ -158,8 +158,8 @@ def quality_metric(example, pred, trace=None):
 
 ## See Also
 
-- [[ai-evals]] — 評価全般の概念ページ
-- [[evaluation-flywheel]] — 評価の反復的改善サイクル
-- [[offline-evaluation]] — プロダクション前評価パイプライン
-- [[dspy]] — DSPyでの評価統合
+- [[concepts/ai-evals]] — 評価全般の概念ページ
+- [[concepts/evaluation-flywheel]] — 評価の反復的改善サイクル
+- [[concepts/offline-evaluation]] — プロダクション前評価パイプライン
+- [[concepts/dspy]] — DSPyでの評価統合
 - [[comparisons/eval-tools-comparison]] — 評価ツール比較

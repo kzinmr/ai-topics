@@ -5,7 +5,7 @@ created: 2026-04-13
 updated: 2026-04-13
 tags: [prompting, intuition, agentic-engineering, workflow-design, anti-overengineering]
 aliases: ["just-talk-to-it", "intuition-driven-development", "direct-prompting", "no-bs-agentic"]
-related: , [[claude-code-best-practices]], [[cli-over-mcp-pattern]], [[inference-speed-development]]
+related: , [[concepts/claude-code-best-practices]], [[concepts/cli-over-mcp-pattern]], [[concepts/inference-speed-development]]
 sources:
   - url: "https://steipete.me/posts/2025/just-talk-to-it"
     author: "Peter Steinberger (@steipete)"
@@ -106,7 +106,7 @@ The irony: **AI makes senior skills more valuable, not less.** Junior devs strug
 
 ---
 
-## Connection to [[inference-speed-development]]
+## Connection to [[concepts/inference-speed-development]]
 
 Direct prompting enables the inference-speed cycle:
 - **No orchestration overhead** → faster iteration
@@ -121,10 +121,10 @@ The combination creates a development rhythm measured in **minutes, not hours**.
 ## Related Concepts
 
 -  — The broader methodology this serves
-- [[claude-code-best-practices]] — Practical implementation patterns
-- [[cli-over-mcp-pattern]] — Why minimal tooling pairs with direct prompting
-- [[inference-speed-development]] — How this enables rapid iteration
-- [[context-window-management]] — Why short prompts preserve context
+- [[concepts/claude-code-best-practices]] — Practical implementation patterns
+- [[concepts/cli-over-mcp-pattern]] — Why minimal tooling pairs with direct prompting
+- [[concepts/inference-speed-development]] — How this enables rapid iteration
+- [[concepts/context-window-management]] — Why short prompts preserve context
 
 ## Sources
 

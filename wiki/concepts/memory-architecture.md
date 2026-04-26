@@ -59,7 +59,7 @@ Joe Logan (arXiv:2601.09913) formalizes CMA as systems that maintain internal st
 
 ## Relationship to Other Concepts
 
-Memory architecture is central to [[context-engineering]] — designing what information an agent sees, when, and in what format. It also connects to [[recursive-language-models]] (RLMs mitigate context rot through recursive processing) and [[gepa]] (prompt optimization benefits from good memory architecture).
+Memory architecture is central to [[concepts/context-engineering]] — designing what information an agent sees, when, and in what format. It also connects to [[concepts/recursive-language-models]] (RLMs mitigate context rot through recursive processing) and [[concepts/gepa]] (prompt optimization benefits from good memory architecture).
 
 ## Open Questions
 

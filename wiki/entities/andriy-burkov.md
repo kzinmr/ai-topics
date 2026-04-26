@@ -4,7 +4,7 @@ type: entity
 handle: "@andriy-burkov"
 created: 2026-04-10
 updated: 2026-04-10
-related: [[hundred-page-ml-book]], [[hundred-page-nlp-book]], , ]
+related: [[concepts/hundred-page-ml-book]], [[concepts/hundred-page-nlp-book]], , ]
 tags:
   - person
   - ai
@@ -45,7 +45,7 @@ Burkov's "Hundred-Page" series reflects his belief that ML education should be a
 This philosophy extends to his newsletter, where each issue is carefully curated to highlight only the most important developments rather than overwhelming readers with noise.
 
 ### On MCP and Agents (April 2025)
-Burkov has been a critical voice regarding the hype around [[mcp|Model Context Protocol]]:
+Burkov has been a critical voice regarding the hype around [[concepts/mcp]]:
 
 > "Too many people say that MCP is a game changer, and now, with MCP, LMs are real agents, hallucinations are no longer an issue, and more nonsense like that."
 

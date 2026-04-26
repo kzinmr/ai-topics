@@ -9,7 +9,7 @@ sources:
   - "https://machineherald.io/article/2026-02/22-ai-generated-slop-is-overwhelming-open-source-projects-forcing-emergency-countermeasures"
 tags: [concept, open-source, ai-slop, maintainer-burnout, code-review-crisis, github]
 aliases: ["ai-slop-crisis", "open-source-maintainer-burnout", "ai-pr-flood"]
-related: [[gnu-ai-reimplementations]], [[ai-bubble-economics]], , 
+related: [[concepts/gnu-ai-reimplementations]], [[concepts/ai-bubble-economics]], , 
 ---
 
 # Open Source AI Destruction
@@ -120,14 +120,14 @@ There is a fundamental asymmetry at play:
 
 ## Connection to GNU AI Reimplementations
 
-These two concepts are linked by a shared thread: **AI is fundamentally changing the economics and ethics of software creation**. Where [[gnu-ai-reimplementations]] argues that AI-driven reimplementation is a continuation of a legal and historical tradition (just accelerated), [[open-source-ai-destruction]] documents the externalities of that acceleration on the human maintainers who keep the ecosystem running.
+These two concepts are linked by a shared thread: **AI is fundamentally changing the economics and ethics of software creation**. Where [[concepts/gnu-ai-reimplementations]] argues that AI-driven reimplementation is a continuation of a legal and historical tradition (just accelerated), [[concepts/open-source-ai-destruction]] documents the externalities of that acceleration on the human maintainers who keep the ecosystem running.
 
 antirez sees AI reimplementations as democratizing and potentially rejuvenating open source. Geerling sees AI agents as parasitic on the open source infrastructure. Both perspectives are valid and represent different vantage points on the same transformation.
 
 ## Related Concepts
 
-- [[gnu-ai-reimplementations]] — AI enabling clean-room reimplementations of existing software
-- [[ai-bubble-economics]] — The broader economic dynamics of the AI investment boom
+- [[concepts/gnu-ai-reimplementations]] — AI enabling clean-room reimplementations of existing software
+- [[concepts/ai-bubble-economics]] — The broader economic dynamics of the AI investment boom
 -  — Using AI agents as collaborative development partners
 -  — Human-guided AI development (contrasted with passive vibe coding)
 

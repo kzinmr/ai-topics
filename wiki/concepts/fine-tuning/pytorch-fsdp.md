@@ -84,9 +84,9 @@ Validate network performance before distributed training:
 
 ## Related
 
-- [[fine-tuning/axolotl]] — Axolotl FSDP integration
-- [[fine-tuning/unsloth]] — Alternative memory optimization
-- [[inference/vllm]] — Production serving post-training
+- [[concepts/fine-tuning/axolotl]] — Axolotl FSDP integration
+- [[concepts/fine-tuning/unsloth]] — Alternative memory optimization
+- [[concepts/inference/vllm]] — Production serving post-training
 
 ## Sources
 

@@ -20,10 +20,10 @@
 - New concept page: `concepts/mlx-llm.md` — Apple MLX framework, mlx-lm vs mlx-vlm, comparison with llama.cpp
 - Total pages created: 3 (1 entity + 2 concepts)
 
-## [2026-04-26] create | [[mcp]] — Model Context Protocol concept page
+## [2026-04-26] create | [[concepts/mcp]] — Model Context Protocol concept page
 
 ### New Concept Pages
-- [[mcp]] — Model Context Protocol: open standard for connecting AI agents to tools and data sources
+- [[concepts/mcp]] — Model Context Protocol: open standard for connecting AI agents to tools and data sources
   - Created by Anthropic; adopted by OpenAI, Google, Red Hat
   - 150M+ SDK downloads; outpacing React's first 3 years in 16 months
   - Core primitives: resources, tools, prompts over stdio/HTTP transport
@@ -47,8 +47,8 @@
 
 ## [2026-04-25] active-crawl | 3 concepts from 3 hot-topic crawls
 - **dspy** (deepdive, high) → [[gapa]] — ICLR 2026 Oral paper on reflective prompt evolution outperforming RL
-- **dspy** (deepdive, high) → [[recursive-language-models]] — RLM: inference paradigm for unbounded context via recursive LM calls
-- **context-engineering** (prerequisites, high) → [[memory-architecture]] — Three-layer memory model (episodic, semantic, state) for production agents
+- **dspy** (deepdive, high) → [[concepts/recursive-language-models]] — RLM: inference paradigm for unbounded context via recursive LM calls
+- **context-engineering** (prerequisites, high) → [[concepts/memory-architecture]] — Three-layer memory model (episodic, semantic, state) for production agents
 - Raw articles saved: 3 in raw/articles/
 - Total new pages: 3 (concepts)
 
@@ -97,7 +97,7 @@
   - >6x lossless speedup, 2.5x higher than SOTA EAGLE-3
   - Supports Qwen3.5-122B-A10B, Qwen3.6-35B-A3B, Kimi-K2.5, gpt-oss-120b, LLaMA-3.1
   - GitHub: 2.3k stars, MIT license, vLLM/SGLang/Transformers/MLX integration
-- [[agent-swarms]] — Added to index (multi-agent coordination patterns)
+- [[concepts/agent-swarms]] — Added to index (multi-agent coordination patterns)
 - [[ai-competition]] — Added to Comparisons section in index
 
 ### Index Updates

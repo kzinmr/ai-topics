@@ -3,6 +3,7 @@ title: "Chris of Entropic Thoughts"
 tags: [- person]
 created: 2026-04-24
 updated: 2026-04-24
+type: entity
 ---
 
 # Chris of Entropic Thoughts
@@ -175,11 +176,11 @@ Chris's interests span an unusually wide range:
 
 ## Related
 
-- [[statistical-process-control]] — XmR charts, natural process limits, signal vs. noise
-- [[queueing-theory]] — Response time as utilisation diagnostic
-- [[bayesian-reasoning]] — Odds-form Bayes' rule, forecasting
-- [[software-delivery]] — Tindall framework, handoff waste, toil
-- [[haskell]] — Functional programming, Esqueleto, performance
+- [[concepts/statistical-process-control]] — XmR charts, natural process limits, signal vs. noise
+- [[concepts/queueing-theory]] — Response time as utilisation diagnostic
+- [[concepts/bayesian-reasoning]] — Odds-form Bayes' rule, forecasting
+- [[concepts/software-delivery]] — Tindall framework, handoff waste, toil
+- [[concepts/haskell]] — Functional programming, Esqueleto, performance
 -  — Org mode publishing, Magit, personal workflow
 -  — Statistical analysis of code generation benchmarks
 -  — CLT limitations, Cantelli bounds

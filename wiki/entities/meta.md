@@ -33,11 +33,11 @@ Zuckerberg's vision positions AI not as a central automator of work, but as a **
 
 This contrasts with OpenAI/Anthropic's **central automation** model ("AI does everything for you") — Meta wants AI to do everything **you want**, using your data, on your behalf.
 
-See also: [[personal-superintelligence]]
+See also: [[concepts/personal-superintelligence]]
 
 ### Muse Spark
 
-Meta's April 2026 model announcement. Position: between [[claude-sonnet-4.6]] and [[claude-opus-4-6]] in capability. **Closed-source** API access, marking a departure from the LLaMA open-source tradition. Community commentary noted "rip LLaMA" — questioning Meta's commitment to open models.
+Meta's April 2026 model announcement. Position: between [[concepts/claude-sonnet-4.6]] and [[concepts/claude-opus-4-6]] in capability. **Closed-source** API access, marking a departure from the LLaMA open-source tradition. Community commentary noted "rip LLaMA" — questioning Meta's commitment to open models.
 
 The Muse Spark model powers Meta's personal agent features, including the Ray-Ban glasses AI and agentic commerce on Instagram/WhatsApp.
 
@@ -73,22 +73,22 @@ Meta pioneered open-source frontier models with the LLaMA series, creating the e
 - "rip LLaMA" — departure from open-source tradition
 - Possible two-track strategy: open models for community goodwill, closed models for competitive advantage
 
-See also: [[open-source-vs-closed]]
+See also: [[concepts/open-source-vs-closed]]
 
 ## Key People
 
-- **[[mark-zuckerberg]]** — CEO, Personal Superintelligence vision
+- **[[concepts/mark-zuckerberg]]** — CEO, Personal Superintelligence vision
 - **** — Superintelligence Labs head
 - **Andrew Bosworth** — CTO, Reality Labs/AR/VR
 - **Yann LeCun** — Chief AI Scientist, open-source advocate (increasingly sidelined per community reports)
 
 ## Related
 
-- [[personal-superintelligence]] — Meta's core AI philosophy
-- [[meta-muse-spark]] — Muse Spark model details
-- [[openclaw-ecosystem]] — Community personal agent framework
-- [[anthropic-openclaw-conflict]] — Platform control vs open access
-- [[inference/llama-cpp]]
+- [[concepts/personal-superintelligence]] — Meta's core AI philosophy
+- [[concepts/meta-muse-spark]] — Muse Spark model details
+- [[concepts/openclaw-ecosystem]] — Community personal agent framework
+- [[concepts/anthropic-openclaw-conflict]] — Platform control vs open access
+- [[concepts/inference/llama-cpp]]
 - [[anthropic]]
 - [[openai]]
 - [[google-tpu]]

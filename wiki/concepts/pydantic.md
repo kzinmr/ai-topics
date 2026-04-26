@@ -1,8 +1,9 @@
 ---
 title: "Pydantic — Data Validation Using Python Type Hints"
-tags: [[data-validation-python-type-hints-rust-web-frameworks-fastapi]]
+tags: [[concepts/data-validation-python-type-hints-rust-web-frameworks-fastapi]]
 created: 2026-04-16
 updated: 2026-04-24
+type: concept
 ---
 
 # Pydantic — Data Validation Using Python Type Hints
@@ -63,8 +64,8 @@ Based on StackOverflow 2022 survey (FastAPI at 6.01%) and PyPI download ratios (
 
 ## Related
 
-- [[structured-outputs]] — Pydantic validates structured data
+- [[concepts/structured-outputs]] — Pydantic validates structured data
 - **[[jason-liu]]** — Instructor library creator; "Pydantic is all you need" advocate; Applied LLMs Guide co-author
-- [[pydantic-ai]] — Next evolution of Pydantic for AI agents
+- [[concepts/pydantic-ai]] — Next evolution of Pydantic for AI agents
 - [[samuel-colvin]] — Creator
 -  — FastAPI creator, close collaborator

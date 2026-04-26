@@ -73,7 +73,7 @@ Opus 4.7はOpus 4.6と同様の料金を維持：
 ## See Also
 
 - [[concepts/_index]]
-- [[claude-memory-tool]]
-- [[claude-code-source-patterns]]
-- [[claude-mythos-preview]]
-- [[claude-code-leak]]
+- [[concepts/claude-memory-tool]]
+- [[concepts/claude-code-source-patterns]]
+- [[concepts/claude-mythos-preview]]
+- [[concepts/claude-code-leak]]

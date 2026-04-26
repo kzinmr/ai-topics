@@ -41,7 +41,7 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 ### Standardized Integrations
 
 - **MCP** — Tool use via Model Context Protocol
-- **Skills** — Progressive disclosure via [[agent-skills]]
+- **Skills** — Progressive disclosure via [[concepts/agent-skills]]
 - **AGENTS.md** — Custom instructions
 - **Shell** — Code execution
 - **Apply Patch** — File edits
@@ -124,18 +124,18 @@ agent = SandboxAgent(
 
 ## Related Concepts
 
-- [[harness-engineering]] — Ryan Lopopolo / OpenAI Symphony orchestration philosophy
-- [[sandbox]] — AI agent sandbox isolation technologies
-- [[harness-engineering/system-architecture/infrastructure-noise]] — Container, microVM, gVisor-level isolation
-- [[agent-skills]] — SKILL.md bundles
-- [[harness-engineering/agentic-workflows/how-agents-work]] — Coding agent architecture
+- [[concepts/harness-engineering]] — Ryan Lopopolo / OpenAI Symphony orchestration philosophy
+- [[concepts/sandbox]] — AI agent sandbox isolation technologies
+- [[concepts/harness-engineering/system-architecture/infrastructure-noise]] — Container, microVM, gVisor-level isolation
+- [[concepts/agent-skills]] — SKILL.md bundles
+- [[concepts/harness-engineering/agentic-workflows/how-agents-work]] — Coding agent architecture
 
 ## Entity Connections
 
 - [[openai]] — Developer
 - [[samuel-colvin]] — Monty (in-process sandbox) developer
 - [[anthropic]] — Competitor (Managed Agents, Computer Use)
-- [[harness-engineering/system-architecture/anthropic-memory-tool-cognition]] — Competitor (Devin)
+- [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition]] — Competitor (Devin)
 
 ## Sources
 

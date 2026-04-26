@@ -37,7 +37,7 @@ Mythos identified long-standing security bugs in critical software projects:
 
 ## Availability
 
-Not publicly released. Limited preview access granted to 12 companies under [[project-glasswing]] for defensive security research.
+Not publicly released. Limited preview access granted to 12 companies under [[concepts/project-glasswing]] for defensive security research.
 
 ## Safety Decision
 
@@ -68,5 +68,5 @@ Gary Marcus evaluated the results as finding a middle ground: Mythos is "nowhere
 ## Related
 - [[anthropic]]
 - 
-- [[project-glasswing]]
-- [[ai-safety]]
+- [[concepts/project-glasswing]]
+- [[concepts/ai-safety]]

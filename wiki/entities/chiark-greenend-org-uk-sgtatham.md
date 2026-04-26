@@ -89,8 +89,8 @@ Tatham's series on aperiodic tilings (five parts and counting) and his essay on 
 
 ## Related
 
-- [[unix-philosophy]] — Small tools, clear interfaces, composability
-- [[code-review]] — Social dynamics of reviewing code
+- [[concepts/unix-philosophy]] — Small tools, clear interfaces, composability
+- [[concepts/code-review]] — Social dynamics of reviewing code
 -  — Using Git without GitHub/GitLab
 -  — Distributed version control system
 -  — Building tools for developers
