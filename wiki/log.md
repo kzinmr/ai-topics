@@ -6,6 +6,18 @@ updated: 2026-04-24
 ---
 
 # Wiki Activity Log
+
+## [2026-04-26] agent-swarms | New concept page created
+- [laterals] agent-team-swarm → [[agent-swarms]]
+  - **Key distinction**: agent-team-swarmは分散システム管理視点（階層的オーケストレーション）、agent-swarmsは自律的創発振る舞い視点（生物学的スワームからインスパイア）
+  - Biology-inspired swarm intelligence: Boid algorithms, ant colony optimization, stigmergy
+  - Emergent behavior measurement: MAEBE framework, temporal synergy, goal-directed complementarity
+  - LLM swarm experiments: OpenAI Swarm (educational), Emergent Coordination paper (GPT-4.1 + Llama)
+  - Implementation patterns: Stigmergic communication, market-based allocation, gradient following
+  - New page: concepts/agent-swarms.md (status: skeleton)
+  - Updated: wiki/index.md (Concept Pages 93→94)
+  - Added hot-topics.yaml entry: agent-swarms (priority: medium, crawl_policy: laterals)
+
 ## [2026-04-25] active-crawl | 2 new concepts ingested (harness-engineering deepdive + agentic-engineering prerequisites)
 - [prerequisites] harness-engineering → [[agent-harness-primitives]]
   - Source: LangChain blog (Vivek Trivedy), Medium article (Steven Cen)

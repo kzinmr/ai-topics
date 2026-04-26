@@ -24,7 +24,7 @@ Last updated: 2026-04-26 (Active Crawl: Agent Governance, Multi-Agent Orchestrat
 - [[regie-ai]] — AI-native sales engagement platform replacing Outreach/Salesloft
 - [[figma]] — Figma AI challenge: Claude Design competition, SaaS moat失效, per-head pricing collapse risk (2026-04-20)
 
-## Concept Pages (93)
+## Concept Pages (94)
 - [[sycophancy]] — Sycophancy in LLMs, truth-over-pleasing alignment artifacts, mitigation strategies
 - [[claude-code-routines]] — Scheduled and event-driven Claude Code automation (Anthropic research preview)
 - [[arc-agi-2]] — ARC-AGI-2 abstract reasoning benchmark (Gemini 3 Deep Think: 45.1%)
