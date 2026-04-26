@@ -1,26 +1,10 @@
 ---
 title: "Death of the Browser"
-type: concept
-aliases:
-  - death-of-browser
-  - agentic-browser
-  - agent-ready-web
-  - post-browser-web
 created: 2026-04-13
-updated: 2026-04-13
-tags:
-  - concept
-  - cross-cutting
-  - ai-agents
-  - browser-automation
-  - web-infrastructure
-status: active
-sources:
-  - "https://tigertracks.ai/insights/the-rise-of-personal-ai-agents-and-the-death-of-the-browser-a-performance-marketing-shift/"
-  - "https://www.promethean-ai.com/post/the-browser-is-dead-long-live-the-ai-agent"
-  - "https://nohacks.co/blog/agentic-browser-landscape-2026"
-  - "https://www.infoworld.com/article/4081396/when-will-browser-agents-do-real-work.html"
-  - "https://www.agentvsai.com/zero-api-key-browser-agents/"
+updated: 2026-04-26
+type: concept
+tags: [browser-automation, agent, web-infrastructure, cross-cutting]
+sources: [raw/articles/crawl-2026-04-26-browser-landscape-2026.md]
 ---
 
 # Death of the Browser
@@ -68,6 +52,27 @@ sources:
 | Feb 2026 | WebMCP early preview in Chrome 146 | Google + Microsoft (W3C) |
 | Mar 2026 | Claude Computer Use Agent (research preview) | Anthropic |
 | Feb 2026 | Zero-API-Key Browser Agents (WebGPU + WebLLM) | Open-source community |
+| Jan 2026 | Browser Use BU-2.0 (bu-2-0 model) | Browser Use |
+| Mar 2026 | Perplexity Comet AI browser | Perplexity |
+| Apr 2026 | ChatGPT Atlas (autonomous browsing) | OpenAI |
+
+## 2026年重点ツール
+
+### Browser Use BU-2.0 (Jan 2026)
+- **モデル**: `bu-2-0`（`ChatBrowserUse`）
+- **特徴**: 構造化出力に特化したエージェント向けブラウザ操作フレームワーク
+- **APIキー**: `cloud.browser-use.com` から取得
+- **用途**: Webスクレイピング、フォーム操作、ナビゲーション自動化
+
+### Perplexity Comet (Mar 2026)
+- **概要**: AI駆動の検索統合ブラウザ。検索結果を直接解釈し、要約を生成
+- **特徴**: 従来の検索結果リストを介さず、エージェントが直接コンテンツを処理
+- **競合**: ChatGPT Atlas、Google AI Overviews
+
+### ChatGPT Atlas (Apr 2026)
+- **概要**: OpenAIの自律型ブラウザエージェント。自然言語で指示 → 直接Web操作
+- **特徴**: ChatGPTの会話インターフェースに統合、エージェントが複数ページを横断して情報収集
+- **技術**: 複数のAIモデルを協調させてタスクを実行
 
 ## 主要プレイヤーと技術スタック
 

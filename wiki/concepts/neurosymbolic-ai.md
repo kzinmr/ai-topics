@@ -1,15 +1,10 @@
 ---
 title: "Neurosymbolic AI"
-type: concept
 created: 2026-04-13
-updated: 2026-04-13
-tags: [concept, ai-architecture, neurosymbolic, reasoning, gary-marcus]
-aliases: ["neuro-symbolic AI", "hybrid AI"]
-related:
-  - entities/gary-marcus
-  - concepts/scaling-without-slop
-  - concepts/world-models-science
-sources: []
+updated: 2026-04-26
+type: concept
+tags: [neurosymbolic, ai-architecture, reasoning]
+sources: [raw/articles/crawl-2026-04-26-neurosymbolic-taxonomy.md]
 ---
 
 # Neurosymbolic AI
@@ -17,6 +12,32 @@ sources: []
 ## Overview
 
 Neurosymbolic AI is an architecture that combines **neural networks** (pattern recognition, learning from examples) with **symbolic reasoning** (rule-based logic, abstraction, causal chains). The thesis is that neither approach alone is sufficient for reliable, intelligent systems — neural networks hallucinate because they lack truth-grounding, while symbolic systems are brittle without learned intuition.
+
+## NeSy Taxonomy (2025-2026)
+
+Recent formal taxonomy work (Brinzeu et al., 2025) categorizes neurosymbolic approaches into three families:
+
+| Family | Direction | Description |
+|--------|-----------|-------------|
+| **Symbolic → LLM** | Symbolic enhances LLMs | Logical reasoning constrains or guides neural outputs |
+| **LLM → Symbolic** | LLMs generate symbols | Neural networks produce formal symbolic representations |
+| **Hybrid NeSy** | Bidirectional | Joint training of neural and symbolic components |
+
+### Dual Process Theory Mapping
+
+The taxonomy explicitly connects to cognitive Dual Process Theory:
+- **System 1** (Neural): Fast, intuitive, pattern-based → neural networks
+- **System 2** (Symbolic): Slow, deliberate, logical → symbolic systems
+
+This mapping provides a cognitive science foundation for hybrid approaches.
+
+### Differential Symbolic Modules
+
+A key technique in hybrid NeSy: symbolic operations made differentiable, enabling end-to-end training via backpropagation. Fuzzy logic operators (t-norms, s-norms) replace boolean operators with continuous approximations. See [[differential-symbolic-modules]] for details.
+
+### Formal Logic Foundation
+
+Neurosymbolic AI rests on formal logic systems: propositional logic, first-order logic, fuzzy logic. The three reasoning modes (deductive, inductive, abductive) each serve different roles in hybrid architectures. See [[formal-logic-foundation]] for details.
 
 ## Historical Context
 
@@ -83,3 +104,6 @@ What remains unresolved is whether this hybrid approach scales to AGI, or whethe
 - [[scaling-without-slop]] — Complementary critique of pure scaling
 - [[world-models-science]] — Marcus's proposed next step beyond neurosymbolic
 - [[claude-code-source-patterns]] — Technical analysis of Claude Code's architecture
+- [[differential-symbolic-modules]] — Differentiable symbolic modules (Hybrid NeSy technique)
+- [[formal-logic-foundation]] — Symbolic reasoning foundation
+- [[agent-governance]] — Governance layer for agent systems using NeSy principles

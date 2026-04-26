@@ -38,3 +38,32 @@ updated: 2026-04-24
 ### Navigation
 - index.md: entity count 88 → 90, updated last-updated line
 
+## [2026-04-26] active-crawl | 3 new concepts, 1 updated page (agent-governance, multi-agent-orchestration-architecture, differential-symbolic-modules, formal-logic-foundation, death-of-browser update)
+- [laterals] agentic-engineering → [[agent-governance]]
+  - Source: CIO (Viral Gandhi, Mar 26 2026) + Zenity (Cinthia Portugal, Mar 12 2026)
+  - Platform-independent governance: identity/access, runtime guardrails, policy enforcement at runtime
+  - Added raw/articles/crawl-2026-04-26-agent-governance.md
+- [laterals] agentic-engineering → [[multi-agent-orchestration-architecture]]
+  - Source: CIO (Viral Gandhi, Mar 26 2026) — multi-agent orchestration as Phase 2 of AI development
+  - Specialized agent roles (Architect, Coder, Test, Security, DevOps, Documentation)
+  - Parallelized cognition, Stripe metric: 1,000+ PRs/week from AI agents
+  - Added raw/articles/crawl-2026-04-26-agent-governance.md (shared source)
+- [deepdive] death-of-browser → updated [[death-of-browser]] page
+  - Source: TechLatest.Net (Apr 2026) — Complete AI Browser Selection Guide 2026
+  - Added 2026 tool sections: Browser Use BU-2.0, Perplexity Comet, ChatGPT Atlas
+  - Added timeline entries for Jan–Apr 2026 tools
+  - Fixed frontmatter to SCHEMA.md compliance
+- [prerequisites] neurosymbolic-ai → [[differential-symbolic-modules]]
+  - Source: arXiv:2508.13678 (Brinzeu et al., Sep 2025) — NeSy Taxonomy paper
+  - Differentiable symbolic operations (t-norms, s-norms, fuzzy implication)
+  - Logic Tensor Networks, differentiable unification
+  - Added raw/articles/crawl-2026-04-26-neurosymbolic-taxonomy.md
+- [prerequisites] neurosymbolic-ai → [[formal-logic-foundation]]
+  - Source: arXiv:2508.13678 — formal logic systems underlying NeSy reasoning
+  - Three reasoning modes: deductive, inductive, abductive
+  - Propositional, first-order, fuzzy logic systems
+  - Added raw/articles/crawl-2026-04-26-neurosymbolic-taxonomy.md (shared source)
+- Updated [[neurosymbolic-ai]] — added NeSy taxonomy section, Dual Process Theory mapping, links to new prerequisite pages
+- Updated [[death-of-browser]] — 2026 tools section, fixed frontmatter
+- index.md: updated last-updated line, added 4 new entries, updated death-of-browser summary
+

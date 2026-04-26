@@ -9,7 +9,7 @@ updated: 2026-04-24
 
 Knowledge base on LLM and AI Agent technologies, curated from HN popular blogs (84 OPML feeds), newsletters (Simon Willison, NLP News, Latent Space, Ben's Bites), and arXiv papers.
 
-Last updated: 2026-04-25 (Dreaming: Claude Design, Claude Code Routines, Big Swing, Gemini Mac App, GPT Image 2 Reasoning)
+Last updated: 2026-04-26 (Active Crawl: Agent Governance, Multi-Agent Orchestration Architecture, Differential Symbolic Modules, Formal Logic Foundation, Browser Landscape 2026)
 
 ## Entity Pages (90)
 
@@ -353,8 +353,9 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 ### Agent Team / Swarm
 - [[agent-team-swarm]] — Agent Team / Swarm（複数Agent協調・Dark Factoryまでの5レベルモデル）
-
 - [[multi-agent-orchestration-patterns]] — Multi-Agent Orchestration Patterns (5 core patterns: Sequential, Concurrent, Group Chat, Handoff, Magentic)
+- [[multi-agent-orchestration-architecture]] — Multi-Agent Orchestration Architecture: orchestration layer, specialized agent roles, parallelized cognition
+
 - [[agent-communication-protocols]] — Agent Communication Protocols (MCP vs A2A vs ACP)
 - [[agentic-conflict-resolution]] — Agentic Conflict Resolution (Escalation Ladder: Rules → Voting → ML → Human)
 - [[zero-trust-agentic-ai]] — Zero Trust for Agentic AI (Identity, Access, Behavior controls for AI agents)
@@ -371,7 +372,11 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 - [[ai-agent-traps]] — AI Agent Traps
 
+- [[agent-governance]] — Agent Governance: platform-independent governance, runtime controls, identity/access, policy enforcement
+
 - [[neurosymbolic-ai]] — Neurosymbolic AI (combining neural networks with symbolic reasoning)
+- [[differential-symbolic-modules]] — Differentiable Symbolic Modules: making symbolic operations differentiable for gradient-based training
+- [[formal-logic-foundation]] — Formal Logic Foundation: propositional/first-order logic, deductive/inductive/abductive reasoning
 
 - [[ai-coding-agent-criticism]] — AI Coding Agent Criticism (Center Has a Bias thesis)
 - [[agent-sandboxing]] — Agent Sandboxing: gVisor, Firecracker, MicroVMs for secure code execution
@@ -408,7 +413,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 ### Web & Technology
 
 - [[agentic-web]] — Agentic Web: websites expose capabilities, WebMCP, AX (Agent Experience), machine-legible design
-- [[death-of-browser]] — Death of the Browser (agentic browsing paradigm shift)
+- [[death-of-browser]] — Death of the Browser (agentic browsing paradigm shift; 2026: Browser Use BU-2.0, Perplexity Comet, ChatGPT Atlas)
 - [[local-first-software]] — Local-First Software (Kleppmann, Ink & Switch, CRDTs, AT Protocol)
 
 ### Cognition / Devin Philosophy

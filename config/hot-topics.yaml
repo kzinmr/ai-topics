@@ -24,7 +24,7 @@ topics:
   - concepts/agentic-engineering/_index
   notes: 22ページの大クラスタ。横方向の関連パラダイムを探索
   added: 2026-04-14
-  last_crawled: '2026-04-22'
+  last_crawled: '2026-04-26'
 - slug: ai-agent-engineering
   title: AI Agent Engineering (Anthropic/OpenAI)
   crawl_policy: deepdive
@@ -131,7 +131,7 @@ topics:
   - concepts/death-of-browser
   notes: WebMCP, agentic browsing の最新動向
   added: 2026-04-14
-  last_crawled: '2026-04-22'
+  last_crawled: '2026-04-26'
 - slug: sandbox
   title: Agent Sandboxing
   crawl_policy: laterals
@@ -158,7 +158,7 @@ topics:
   notes: 'neuromorphic + symbolic reasoningの統合アプローチ。関連: reasoning models (o1-style,
     CoT, PRM)はニューラル単体だが異なる系統。前提: knowledge graphs, formal verification, theorem proving等'
   added: 2026-04-14
-  last_crawled: '2026-04-21'
+  last_crawled: '2026-04-26'
 - slug: ai-bubble-economics
   title: AI Bubble Economics
   crawl_policy: monitor
