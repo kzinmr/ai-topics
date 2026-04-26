@@ -353,6 +353,7 @@ Ideas, frameworks, and methodologies extracted from articles.
 
 ### Agent Team / Swarm
 - [[agent-team-swarm]] — Agent Team / Swarm（複数Agent協調・Dark Factoryまでの5レベルモデル）
+- [[agent-swarms]] — Agent Swarms: 自律分散型エージェントの創発的振る舞い（生物学的スワームにインスパイア、decentralized control + emergent behavior）
 - [[multi-agent-orchestration-patterns]] — Multi-Agent Orchestration Patterns (5 core patterns: Sequential, Concurrent, Group Chat, Handoff, Magentic)
 - [[multi-agent-orchestration-architecture]] — Multi-Agent Orchestration Architecture: orchestration layer, specialized agent roles, parallelized cognition
 

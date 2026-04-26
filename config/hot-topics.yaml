@@ -65,6 +65,17 @@ topics:
   notes: '横方向: 分散システム理論との接点、consensus protocol等'
   added: 2026-04-14
   last_crawled: '2026-04-24'
+- slug: agent-swarms
+  title: Agent Swarms (Emergent Behavior)
+  crawl_policy: laterals
+  priority: medium
+  search_hints:
+  - agent swarms emergent behavior multi-agent
+  - autonomous agent coordination 2026
+  wiki_pages:
+  - concepts/agent-swarms
+  notes: "source_count=4。既存のagent-team-swarm（managed/organized多エージェント）とは異なり、自律分散型エージェントの創発的振る舞いに焦点。独立トピックとして価値あり"
+  added: 2026-04-26
 - slug: ai-evals
   title: AI Evaluations
   crawl_policy: laterals

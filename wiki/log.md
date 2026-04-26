@@ -67,3 +67,10 @@ updated: 2026-04-24
 - Updated [[death-of-browser]] — 2026 tools section, fixed frontmatter
 - index.md: updated last-updated line, added 4 new entries, updated death-of-browser summary
 
+## [2026-04-26] create | Agent Swarms concept page + hot-topics entry
+- Created concept page: `concepts/agent-swarms.md` — Decentralized multi-agent systems with emergent collective behavior
+- Added to hot-topics.yaml: `agent-swarms` topic (medium priority, laterals crawl policy)
+- Updated index.md: Added [[agent-swarms]] under Agent Team/Swarm section
+- Sources: 4 articles (Riedl arXiv:2510.05174, OpenAI Swarm framework, Metal Toad, Medium)
+- Key distinction from [[agent-team-swarm]]: focuses on emergent behavior and decentralized control vs. hierarchical orchestration
+
