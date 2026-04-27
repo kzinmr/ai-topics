@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-27 | Total pages: 542
+> Last updated: 2026-04-27 | Total pages: 575
 
 ## Entities
 
@@ -392,7 +392,8 @@
 - [[concepts/github-copilot-billing]] — In April 2026, Microsoft announced a major shift in GitHub Copilot's pricing model from **requests-based billing** to **token-based billing**, alongsi
 - [[concepts/gnu-ai-reimplementations]] — **GNU AI Reimplementations** refers to the concept — articulated primarily by Salvatore Sanfilippo (antirez), creator of Redis — that AI coding agents
 - [[concepts/gold-diff-distillation]] — コーディング製品企業が開発した新しいRLトレーニング手法。ユーザーの最終的な「望ましい状態」をRLターゲットとして利用する。
-- [[concepts/gpt-models]] — The **GPT** (Generative Pre-trained Transformer) series, developed by OpenAI, represents the evolution of decoder-only transformer language models fro
+|- [[concepts/gpt-models]] — The **GPT** (Generative Pre-trained Transformer) series, developed by OpenAI, represents the evolution of decoder-only transformer language models fro
+|- [[concepts/gpt-5.5]] — First fully retrained base model since GPT-4.5. 82.7% Terminal-Bench 2.0. Designed for multi-step agent work.
 - [[concepts/halo-loss-attention-sinks]] — Transformerモデルにおける「Attention Sinks」（注意の沈み込み）現象と、これに対処するHALO損失関数の理論と歴史。
 - [[concepts/harness-design-long-running-apps]] — Anthropic Labs（Prithvi Rajasekaran）による長期自律エージェントの実践設計。**GAN-inspiredループ**（Generator ↔ Evaluator）をフルスタック開発にスケールさせたアーキテクチャ。
 - [[concepts/harness-engineering]] — Agent = Model + Harness. Environment design philosophy for agent-driven development.
@@ -496,7 +497,8 @@
 - [[concepts/open-source-ai-destruction]] — **Open Source AI Destruction** describes the emerging crisis where AI coding agents overwhelm open source maintainers with low-quality pull requests, 
 - [[concepts/openai-agents-sdk]] — | **Package** | `openai-agents>=0.14.0` |
 - [[concepts/openai-codex-superapp]] — The OpenAI Codex interface becoming the primary ChatGPT experience — a "superapp" positioning for the AI coding agent.
-- [[concepts/openai-symphony]] — **Source:** OpenAI GitHub (2026-02-26)
+|- [[concepts/openai-symphony]] — **Source:** OpenAI GitHub (2026-02-26)
+|- [[concepts/openai-workspace-agents]] — Codex-powered shared agents for Business/Enterprise. Integrates Slack, Salesforce, Notion, Google Drive with persistent memory and role-based governance.
 - [[concepts/openclaw/anthropic-conflict]] — 2026年4月、**Anthropic**はClaudeのサブスクリプションプラン（Pro/Max）からサードパーティAIエージェントフレームワーク（OpenClawなど）のアクセスをブロックした。この決定は、プラットフォーム管理、開発者アクセス、AIエージェントインフラの経済学をめぐる重大な論争を
 - [[concepts/openclaw/architecture-comparison]] — elvis（@elvis_）が2026年4月に行った**9時間のHermes Agent vs OpenClawの並列ソースコード研究**に基づくアーキテクチャ比較分析。
 - [[concepts/openclaw/ecosystem-tools]] — Peter Steinberger（@steipete）が開発した**MCP-first開発者ツールエコシステム**。OpenClawを中核とし、複数のCLI/MCPサーバーが相互連携する構造。
@@ -548,7 +550,8 @@
 - [[concepts/vajra-background-agent]] — Vajra is an open-source **background coding agent** that autonomously handles issue planning, implementation, review, and PR creation. Inspired by rea
 - [[concepts/vector-db-agent-memory]] — Vector databases are the dominant infrastructure for AI agent **long-term memory (LTM)** and **semantic memory**, enabling agents to persist and retri
 - [[concepts/vibe-coding]] — Moved to concepts/harness-engineering/agentic-workflows/vibe-coding.md
-- [[concepts/world-models-science]] — Using world models and agent loops to automate scientific research and discovery.
+|- [[concepts/world-models-science]] — Using world models and agent loops to automate scientific research and discovery.
+|- [[concepts/world-id-4-agentkit]] — World ID 4.0 iris-scanning proof-of-human infrastructure + AgentKit for AI agents to carry cryptographic human attestation.
 - [[concepts/zero-trust-agentic-ai]] — Zero Trust security model applied to AI agents: assume no request is safe by default, verify every action, and enforce least privilege. **The LLM shou
 
 ## Comparisons

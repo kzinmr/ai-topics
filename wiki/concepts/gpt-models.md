@@ -24,7 +24,8 @@ The **GPT** (Generative Pre-trained Transformer) series, developed by OpenAI, re
 | **GPT-4o** | May 2024 | — | Native audio/vision, reduced latency |
 | **o-series (o1/o3)** | Sep–Dec 2024 | — | Extended thinking, reasoning-first |
 | **GPT-4.1** | 2025 | — | Retired Feb 2026 |
-| **GPT-5 series** | 2026 | — | Current frontier: gpt-5.4, gpt-5.4-mini, gpt-5.4-nano |
+|| **GPT-5 series** | 2026 | — | Current frontier: gpt-5.4, gpt-5.4-mini, gpt-5.4-nano |
+|| **GPT-5.5** | Apr 2026 | — | First fully retrained base model since GPT-4.5; 82.7% Terminal-Bench 2.0 |
 
 ## Model Architecture
 

@@ -31,8 +31,25 @@ Eric Zakariasson (2026-04-27) による実践的ガイド:
 
 参考: [Optimizing your dev environment for coding agents](../raw/articles/2041897427431563613_optimizing-your-dev-environment-for-coding-agents.md)
 
+## 業界動向
+
+### SpaceX × Cursor: $60B 買収オプション (2026-04)
+
+SpaceXは2026年後半にCursorを**$600億で買収する権利**を取得。またはCursorに**$100億**を支払って協業する選択肢も保持。
+
+**背景:**
+- Cursorの独自モデルComposer 2はMoonshotのKimiベースでコミュニティの反応は冷ややか
+- SpaceXのColossusクラスター（100万H100相当）へのアクセス獲得が真の目的
+- Kevin Kwok分析: 「トップコーディングラボはモデルとプロダクトの両方を所有する必要がある。流通だけを持ちモデルを持たないのは賃貸契約。全てのデブツール企業はモデル企業になるか、モデルの機能になるか」
+
+### OpenAI Workspace Agents (2026-04)
+
+Codex搭載の共有エージェント。Business/Enterpriseプラン向け。Slack、Salesforce、Notion、Google Driveと統合。永続メモリとロールベースガバナンス搭載。
+
 ## 関連ページ
 - [[concepts/harness-engineering]] — エージェント駆動開発の環境設計哲学
 - [[concepts/agentic-engineering]] — 上位概念
 - [[concepts/subagents]] — 並列エージェント委譲パターン
 - [[concepts/cognitive-debt]] — コンテキスト管理の重要性
+- [[entities/openai]] — OpenAI (Workspace Agents, Codex)
+- [[entities/anthropic]] — Anthropic (Claude Code)

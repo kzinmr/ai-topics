@@ -1,7 +1,7 @@
 ---
 title: "Code review antipatterns"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/code-review-antipatterns/"
-fetched_at: 2026-04-25T12:04:15.496160+00:00
+fetched_at: 2026-04-27T07:00:54.101999+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

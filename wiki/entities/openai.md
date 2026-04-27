@@ -2,10 +2,12 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-04-25
+updated: 2026-04-27
 tags: [company, llm, ai-agents, product, openai, gpt, agents-sdk]
 aliases: ["OpenAI Inc."]
-sources: [raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md]
+sources:
+  - raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md
+  - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md
 ---
 
 # OpenAI
@@ -27,10 +29,12 @@ OpenAI is a leading AI research and product company known for developing the GPT
 
 ### Language Models
 - **GPT-4/5 series** — Frontier LLMs powering ChatGPT and API integrations
+- **GPT-5.5** (Apr 2026) — First fully retrained base model since GPT-4.5. Designed for multi-step work (planning, tool use, self-checking). Scored 82.7% on Terminal-Bench 2.0. Key unlock for production agent deployment.
 - **o-series** — Reasoning-focused models with extended thinking
 - **GPT-4o / GPT-4o-mini** — Multimodal models with vision and audio capabilities
 
 ### Developer Tools
+- **Workspace Agents** (Apr 2026) — Codex-powered shared agents for Business/Enterprise plans. Integrates Slack, Salesforce, Notion, Google Drive with persistent memory and role-based governance. Designed for organizational workflows, not individual use.
 - **Agents SDK** (v0.14.0, April 2026) — Python SDK for building agents with:
   - Native sandbox execution (isolated workspaces)
   - Harness/Compute architectural separation
@@ -44,7 +48,8 @@ OpenAI is a leading AI research and product company known for developing the GPT
 
 ### Other Products
 - **ChatGPT** — Conversational AI interface
-- **GPT Image 2 (ChatGPT Images 2.0)** — Second-generation image generation integrated into ChatGPT. Superior prompt adherence, professional output quality, significantly lower hallucinations vs. competitors. Features Select lasso tool and aspect ratio control for post-generation iteration. 40–60s generation time (~2x slower than Google's NB2 but widely preferred for quality).
+- **GPT Image 2 (ChatGPT Images 2.0)** — Second-generation image generation integrated into ChatGPT. Includes **Thinking mode** with web search mid-generation. 2K resolution with legible non-Latin scripts. Hit #1 on all Image Arena leaderboards; beat Google's Nano Banana models by +242 points (largest gap ever) in Text-to-Image. See [[concepts/chatgpt-images-2.0]] for full details.
+- **ChatGPT for Clinicians** (Apr 2026) — Free tool for verified US physicians, NPs, PAs, pharmacists. Includes cited medical sources and HIPAA-compliant options.
 - **DALL-E** — Text-to-image generation
 - **Whisper** — Speech recognition
 - **Sora** — Video generation
@@ -64,6 +69,8 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 
 ## Related Concepts
 - [[concepts/openai-agents-sdk]] — OpenAI's agent development framework
+- [[concepts/openai-workspace-agents]] — Codex-powered enterprise shared agents
+- [[concepts/gpt-5.5]] — First fully retrained base model since GPT-4.5
 - [[concepts/harness-engineering]] — Ryan Lopopolo / Symphony orchestration philosophy
 - [[concepts/sandbox]] — AI agent sandbox isolation technologies
 - [[concepts/chatgpt-images-2.0]] — GPT Image 2 image generation

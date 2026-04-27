@@ -1,7 +1,7 @@
 ---
 title: "People Pay to Sharpen Them"
 url: "https://feed.tedium.co/link/15204/17324561/tweezer-weird-facts-history"
-fetched_at: 2026-04-25T12:08:29.549490+00:00
+fetched_at: 2026-04-27T07:01:27.799733+00:00
 source: "tedium.co"
 tags: [blog, raw]
 ---

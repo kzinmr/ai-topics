@@ -1,7 +1,7 @@
 ---
 title: "Scam Telegram: Uncovering a network of groups spreading crypto drainers"
 url: "https://timsh.org/scam-telegram-investigation/"
-fetched_at: 2026-04-25T12:08:18.648430+00:00
+fetched_at: 2026-04-27T07:01:19.149491+00:00
 source: "timsh.org"
 tags: [blog, raw]
 ---

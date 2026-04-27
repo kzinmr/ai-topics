@@ -1,7 +1,7 @@
 ---
 title: "Implementing OpenSSH certificate support in PuTTY"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/putty-certificates/"
-fetched_at: 2026-04-25T12:06:49.285262+00:00
+fetched_at: 2026-04-27T07:01:07.841575+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

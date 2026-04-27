@@ -1,7 +1,7 @@
 ---
 title: "HN Skins 0.1.0 - Susam Pal"
 url: "https://susam.net/code/news/hnskins/0.1.0.html"
-fetched_at: 2026-04-25T12:09:03.237421+00:00
+fetched_at: 2026-04-27T07:02:00.819865+00:00
 source: "susam.net"
 tags: [blog, raw]
 ---

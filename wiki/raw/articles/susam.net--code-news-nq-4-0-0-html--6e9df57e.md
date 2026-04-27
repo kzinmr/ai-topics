@@ -1,7 +1,7 @@
 ---
 title: "Nerd Quiz #4 - Susam Pal"
 url: "https://susam.net/code/news/nq/4.0.0.html"
-fetched_at: 2026-04-25T12:09:04.699898+00:00
+fetched_at: 2026-04-27T07:02:02.367751+00:00
 source: "susam.net"
 tags: [blog, raw]
 ---

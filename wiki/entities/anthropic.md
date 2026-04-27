@@ -8,7 +8,8 @@ description: "AI safety-focused company behind Claude. Launched Claude Managed A
 created: 2026-04-27
 updated: 2026-04-27
 sources: [
-  "https://x.com/RLanceMartin/status/2041927992986009773"
+  "https://x.com/RLanceMartin/status/2041927992986009773",
+  "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md"
 ]
 related: [
   "[[claude]]",
@@ -37,7 +38,7 @@ Anthropic launched Claude Managed Agents — a platform for deploying autonomous
 ### Memory Stores
 
 Claude Managed Agents now supports persistent **memory stores** (April 2026):
-- Memory stored as files, accessible across sessions
+- Memory stored as files (editable, exportable, auditable, versionable, rollback via API) — not a black-box vector store
 - Mounted at `/mnt/memory/<store-name>/` in agent containers
 - Multiple agents can access the same memory store with real-time sync
 - Concurrency handling prevents agents from overwriting each other's updates
@@ -48,7 +49,19 @@ The filesystem-as-memory approach was validated through [DavidSHershey's Claude 
 
 See [[concepts/claude-managed-agents]] for full details.
 
-## Claude Code
+### Live Artifacts in Cowork
+
+Anthropic introduced **live artifacts** in Cowork mode (Apr 2026):
+- Dashboards and trackers stay connected to apps/files
+- Pulls fresh data on reopen — persistent live views
+
+### Consumer Connectors
+
+Claude now integrates with 15 new everyday consumer apps:
+Booking.com, Resy, Spotify, Audible, Instacart, AllTrails, Thumbtack, TurboTax, Uber, and more.
+Directory now exceeds **200 connectors** total.
+
+### Claude Code
 
 Anthropic's CLI coding agent (see [[concepts/claude-code]]). A terminal-based agent that can:
 - Read, write, and edit code
@@ -62,6 +75,15 @@ Claude is Anthropic's flagship language model series. Key versions referenced in
 - **Claude Opus** — Most capable
 - **Claude Sonnet** — Balanced capability and speed
 - **Claude Haiku** — Fast, efficient
+
+## Mythos Breach (Apr 2026)
+
+Anthropic's internal "too dangerous to release" model **Mythos** was accessed on launch day by four individuals in a private Discord. The group:
+- Guessed the endpoint URL from naming conventions + a Mercor breach leak
+- Used a contractor's legitimate evaluation credentials
+- Used the model to build simple websites (not malicious purposes, but the access was unauthorized)
+
+The incident highlights risks of: inference endpoint discoverability, credential sharing among contractors, and naming convention predictability.
 
 ## Research Focus
 

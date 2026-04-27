@@ -2,8 +2,8 @@
 title: "AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較"
 type: concept
 created: 2026-04-12
-updated: 2026-04-26
-tags: [memory-systems, agentic-engineering, chatgpt, claude, cognition, devin, openai, anthropic]
+updated: 2026-04-27
+tags: [memory-systems, agentic-engineering, chatgpt, claude, cognition, devin, openai, anthropic, managed-agents]
 sources:
   - url: "https://www.shloked.com/writing/chatgpt-memory-bitter-lesson"
     author: "Shlok Khemani"
@@ -17,6 +17,10 @@ sources:
     author: "Shlok Khemani"
     date: 2026-04-12
     note: "CognitionがClaude Codeのmemoryツールを盗もうとしている"
+  - url: "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md"
+    author: "Alex Banks"
+    date: 2026-04-26
+    note: "Anthropic Managed Agentsのフファイルベースメモリ"
 status: draft
 ---
 
@@ -131,6 +135,31 @@ Cognitionは以下の要素を組み合わせている:
 Shlok Khemaniの分析:
 
 > "Cognition is essentially trying to steal the best parts of both companies' approaches — Anthropic's deep technical understanding and OpenAI's product vision — and combine them into something new."
+
+## Anthropic Managed Agents: ファイルベースメモリ (2026-04)
+
+Anthropic Managed Agentsが採用したメモリアプローチは、従来のベクトルストアとは一線を画す:
+
+- **ファイルベース**: 編集可能、エクスポート可能、監査可能、バージョン管理可能、API経由でロールバック可能 — ブラックボックスベクトルストアではない
+- **マウントパス**: `/mnt/memory/<store-name>/` — エージェントコンテナ内に直接マウント
+- **リアルタイム同期**: 複数エージェントが同一メモリストアに同時アクセス可能
+- **解釈可能性**: ファイルは人間が読める形式で、共有・監査が容易
+
+このアプローチは「The Bitter Lesson」の精神に完全に沿っている:
+- 特殊なベクトルDBではなく、汎用ファイルシステムを活用
+- 人間とエージェントの両方が読み書き可能な形式
+- 計算資源（モデル自身）を使って必要な情報を抽出・整理
+
+### 設計哲学の比較（拡張）
+
+| 側面 | ChatGPT Memory | Claude Memory (開発中) | Managed Agents Memory | Devin Memory |
+|------|---------------|----------------------|---------------------|-------------|
+| ストレージ形式 | ブラックボックス | 不明 | **編集可能ファイル** | データベース |
+| 監査性 | 低 | 低 | **高（ファイル監査）** | 中 |
+| エクスポート | 不可 | 不明 | **API経由で可能** | 制限付き |
+| バージョン管理 | なし | なし | **Git互換** | 内部管理 |
+| ロールバック | 不可 | 不明 | **API経由で可能** | 制限付き |
+| 複数エージェント共有 | 不可 | 不可 | **リアルタイム同期** | 制限付き |
 
 ## Coding Agent への影響
 

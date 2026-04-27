@@ -1,7 +1,7 @@
 ---
 title: "Claude Code won April Fools Day this year"
 url: "https://xeiaso.net/notes/2026/claude-code-wins-april-fools/"
-fetched_at: 2026-04-25T12:08:10.481221+00:00
+fetched_at: 2026-04-27T07:01:11.730483+00:00
 source: "xeiaso.net"
 tags: [blog, raw]
 ---

@@ -300,5 +300,30 @@
 - **UPDATED:** `concepts/subagents.md` — Skills/Subagents相互関係セクション追加
 - **UPDATED:** `concepts/coding-agents.md` — stub→complete（Eric Zakariasson記事をベースに更新）
 - **UPDATED:** `concepts/ai-observability.md` — Brainstoreセクション追加
-- **UPDATED:** `index.md` — continual-learningエントリ追加
+|- **UPDATED:** `index.md` — continual-learningエントリ追加
+
+---
+
+## 2026-04-27 — Newsletter Ingest (The Signal: OpenAI Is Cooking)
+
+### New Concept Pages
+- **concepts/gpt-5.5.md** — First fully retrained base model since GPT-4.5; 82.7% Terminal-Bench 2.0
+- **concepts/openai-workspace-agents.md** — Codex-powered shared agents for Business/Enterprise plans
+- **concepts/world-id-4-agentkit.md** — World ID 4.0 iris-scanning + AgentKit cryptographic human attestation
+
+### Updated Entity Pages
+- **entities/openai.md** — GPT-5.5, Workspace Agents, ChatGPT Images 2.0 Thinking mode/Image Arena #1, ChatGPT for Clinicians
+- **entities/anthropic.md** — Mythos breach, Live Artifacts, Consumer connectors (200+), Managed Agents file-based memory
+
+### Updated Concept Pages
+- **concepts/gpt-models.md** — GPT-5.5 added to model lineage table
+- **concepts/coding-agents.md** — SpaceX×Cursor $60B acquisition option, OpenAI Workspace Agents section
+- **concepts/ai-memory-systems.md** — Anthropic Managed Agents file-based memory approach
+- **concepts/chatgpt-images-2.0.md** — Thinking mode with web search, Image Arena #1 (+242 over NB2), 2K resolution
+
+### Updated Navigation
+- **index.md** — 3 new concept entries (gpt-5.5, openai-workspace-agents, world-id-4-agentkit); total pages 575
+
+### Raw Source
+- `raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md` — newsletter saved as source
 

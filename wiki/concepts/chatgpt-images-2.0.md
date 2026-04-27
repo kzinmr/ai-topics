@@ -2,10 +2,12 @@
 title: "ChatGPT Images 2.0"
 type: concept
 created: 2026-04-24
-updated: 2026-04-25
+updated: 2026-04-27
 tags: [product, openai, multimodal, image-generation, chatgpt]
 aliases: ["ChatGPT Images v2", "GPT Image 2"]
-sources: [raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md]
+sources:
+  - raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md
+  - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md
 ---
 # ChatGPT Images 2.0
 
@@ -37,6 +39,20 @@ ChatGPT Images 2.0 is a significant upgrade from the original ChatGPT image gene
 ### Reasoning Capabilities — First Image Model with Built-in Reasoning
 
 ChatGPT Images 2.0 is **OpenAI's first image generation model with reasoning capabilities**. Unlike previous one-shot generators, Images 2.0 plans layouts and structures before rendering pixels — a fundamental shift from direct pixel synthesis to multi-step reasoning.
+
+### Thinking Mode with Web Search
+
+ChatGPT Images 2.0 introduces a revolutionary **Thinking mode** that performs web search mid-generation:
+- Model can search the web for reference images, current data, and design patterns during generation
+- Enables accurate renderings of real-world objects and events based on live information
+- Surpasses competitors in accuracy by combining generation with real-time fact-checking
+
+### Image Arena Performance
+
+April 2026 benchmarks:
+- **#1 on all Image Arena leaderboards** with unprecedented margins
+- Beat Google's Nano Banana models by **+242 points** (largest gap ever recorded) in Text-to-Image
+- Market position: shifts image generation from creative novelty to production-grade visual system
 
 Key reasoning features:
 - **Layout planning**: Models spatial relationships and visual hierarchy before generation

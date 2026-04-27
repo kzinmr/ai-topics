@@ -1,7 +1,7 @@
 ---
 title: "I made a Chrome extension to help avoid playing cheaters in chess"
 url: "https://timsh.org/i-made-a-chrome-extension-to-help-avoid-playing-cheaters-in-chess/"
-fetched_at: 2026-04-25T12:08:24.946310+00:00
+fetched_at: 2026-04-27T07:01:24.059740+00:00
 source: "timsh.org"
 tags: [blog, raw]
 ---

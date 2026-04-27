@@ -1,7 +1,7 @@
 ---
 title: "Using Clankers to Help Me Process Surgery"
 url: "https://xeiaso.net/blog/2026/surgery-recovery-clankers/"
-fetched_at: 2026-04-25T12:08:15.843189+00:00
+fetched_at: 2026-04-27T07:01:16.962638+00:00
 source: "xeiaso.net"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "I don't know if I like working at higher levels of abstraction"
 url: "https://xeiaso.net/blog/2026/ai-abstraction/"
-fetched_at: 2026-04-25T12:08:13.493471+00:00
+fetched_at: 2026-04-27T07:01:14.717268+00:00
 source: "xeiaso.net"
 tags: [blog, raw]
 ---

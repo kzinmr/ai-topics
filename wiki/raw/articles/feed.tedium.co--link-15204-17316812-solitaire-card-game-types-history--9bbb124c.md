@@ -1,7 +1,7 @@
 ---
 title: "I Suck At Them. But That’s OK."
 url: "https://feed.tedium.co/link/15204/17316812/solitaire-card-game-types-history"
-fetched_at: 2026-04-25T12:08:40.301123+00:00
+fetched_at: 2026-04-27T07:01:38.195110+00:00
 source: "tedium.co"
 tags: [blog, raw]
 ---

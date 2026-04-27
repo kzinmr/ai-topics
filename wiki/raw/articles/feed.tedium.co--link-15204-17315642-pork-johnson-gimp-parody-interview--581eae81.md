@@ -1,7 +1,7 @@
 ---
 title: "The Puppeteer Behind The Fake GIMP Movie Trailer"
 url: "https://feed.tedium.co/link/15204/17315642/pork-johnson-gimp-parody-interview"
-fetched_at: 2026-04-25T12:08:42.895188+00:00
+fetched_at: 2026-04-27T07:01:40.431630+00:00
 source: "tedium.co"
 tags: [blog, raw]
 ---
