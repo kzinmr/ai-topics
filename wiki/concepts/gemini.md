@@ -155,12 +155,37 @@ Gemini's distinctive advantages:
 - Deep integration with Google ecosystem (Search, Workspace, Vertex AI)
 - Antigravity agentic IDE
 
+## Gemini Embedding API as Multimodal Encoder
+
+Research by [krafton-ai](https://github.com/krafton-ai/Can-Gemini-Embeddings-Be-a-Multimodal-Encoder-for-LLMs-) (2026-03) demonstrates repurposing `gemini-embedding-2-preview` as a universal multimodal encoder for frozen LLMs:
+
+### Architecture
+
+```
+Input (image/audio) → Gemini Embedding API (3072-d vector) → MLP Adaptor (17M params) → Qwen3-4B → Output
+```
+
+- **Frozen** Gemini Embedding API (one API call)
+- **Learned** MLP adaptor (17M params) projects into k virtual tokens
+- **Frozen** Qwen3-4B takes virtual tokens + text prompt
+
+Only the MLP adaptor is trained — no LLM fine-tuning needed. Training takes under 1 minute on a single GPU.
+
+### Tasks
+
+- Image classification: (image, label) pairs as supervision
+- Speech-to-text: (audio, transcript) as supervision
+- Cross-modal search, classification, clustering across 100+ languages
+
+See: [kangwooklee.com](https://kangwooklee.com/blogs/gemini_embedding_as_universal_multimodal_encoder_for_LLMs.html)
+
 ## Sources
 
 - [Google Blog: Gemini 3 Announcement](https://blog.google/products-and-platforms/products/gemini/gemini-3/)
 - [Gemini 3 Model Card](http://deepmind.google/models/model-cards/gemini-3-pro)
 - Simon Willison newsletters (llm-gemini plugin coverage)
 - Reddit Google employee comment: "Over 40K SWEs use agentic coding weekly here" with internal Gemini CLI and MCP tools
+- [Gemini Embeddings as Universal Multimodal Encoder for LLMs](https://kangwooklee.com/blogs/gemini_embedding_as_universal_multimodal_encoder_for_LLMs.html) (2026-03, krafton-ai) — Using gemini-embedding-2-preview with frozen Qwen3-4B
 
 ## See Also
 

@@ -6,6 +6,9 @@
 
 ## Entities
 
+- [Letta AI](entities/letta.md) — Model-agnostic agent harness with persistent memory
+
+
 <!-- Alphabetical within section -->
 
 - [[entities/abacaj]] — | **Name** | Anton Bacaj |
@@ -259,6 +262,9 @@
 - [[entities/trycua-cua]] — Open-source framework enabling AI agents to control full operating systems within high-performance, lightweight virtual containers. Backed by Y Combin
 
 ## Concepts
+
+- [Thin BI](concepts/thin-bi.md) — Modern BI tools becoming thin interfaces
+
 
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building 
 - [[concepts/agent-governance]] — Agent governance is the structured approach enterprises use to define how autonomous AI systems operate, what they can access, and how their actions a

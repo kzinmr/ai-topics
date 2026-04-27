@@ -1,3 +1,26 @@
+## 2026-04-27 — X Bookmark Ingest (X native articles)
+
+### New Entity Pages
+- **entities/letta.md** — Letta AI / Letta Code (model-agnostic agent harness)
+  - Source: X article from @letta_ai (214 bookmarks)
+
+### Updated Concept Pages
+- **concepts/harness-engineering.md** — Added "Open Source Agent Harnesses" comparison table
+- **concepts/gemini.md** — Added "Gemini Embedding API as Multimodal Encoder" section
+
+### New Concept Pages
+- **concepts/thin-bi.md** — Thin BI evolution (comprehensive platform → thin interface)
+
+### Raw Articles Saved
+- raw/articles/2033670953956479223_lettas-next-phase.md
+- raw/articles/2033543094373859488_turning-geminis-embedding-api-into-a-universal-mul.md
+- raw/articles/2033336956961308721_薄くなるbiツール.md
+
+### Processed
+- 125 total bookmarks processed
+- 3 X native articles extracted via Bearer token API and wiki-edited
+- 2 non-article bookmarks skipped (no article content)
+
 ## [2026-04-27] x-bookmarks-ingest | 4 new concept pages + 1 entity page + 1 concept update
 
 - [deepdive] The Definitive Guide to Harness Engineering → Updated `concepts/harness-engineering.md`
