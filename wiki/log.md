@@ -49,6 +49,21 @@
 - raw/articles/2033543094373859488_turning-geminis-embedding-api-into-a-universal-mul.md
 - raw/articles/2033336956961308721_薄くなるbiツール.md
 
+## 2026-04-27 — Pi Coding Agent Articles Ingest
+
+### Raw Articles Saved
+- raw/articles/mariozechner.at--posts-2025-11-30-pi-coding-agent.md — Mario Zechner blog: "What I learned building an opinionated and minimal coding agent" — design philosophy, 4-package architecture, core principles
+- raw/articles/docs.openclaw.ai--pi-integration-architecture.md — OpenClaw embedding pi SDK directly (not subprocess/RPC) — custom tool injection, session lifecycle, provider-agnostic model switching
+- raw/articles/syntax.fm--976-pi-coding-agent.md — Syntax.fm #976 podcast: Armin Ronacher & Mario Zechner discuss pi, OpenClaw, bash minimalism, agent security risks
+- raw/articles/github.com--disler-pi-vs-claude-code-comparison.md — Feature comparison: Claude Code vs Pi Agent (v0.52.10) — MIT license, multi-provider support, context handoff, in-process hooks vs MCP, JSONL session tree with branching
+
+### Updated Entity Pages
+- **entities/mario-zechner.md** — Already has pi-coding-agent mention; these articles provide deep technical source material for future enrichment
+- **entities/peter-steinberger.md** — OpenClaw creator; pi integration is core to architecture
+
+### Raw Articles NOT ingested (already covered)
+- https://www.npmjs.com/package/@mariozechner/pi-coding-agent — npm registry page (not a technical article)
+
 ### Processed
 - 125 total bookmarks processed
 - 3 X native articles extracted via Bearer token API and wiki-edited
