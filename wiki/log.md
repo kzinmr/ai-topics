@@ -232,3 +232,25 @@
 - Claude Design was the only theme requiring new page creation
 - 7/8 themes had complete coverage from previous runs — no gaps identified
 
+## 2026-04-27 — X Bookmarks Ingest (6 articles)
+
+### X Native Article API 成功
+
+`GET /2/tweets/:id?tweet.fields=article,entities` で `plain_text` フィールドが取得可能を確認。Bearer tokenのアクセスレベルは `read-write-directmessages`（Elevated相当）。
+
+### Raw Articles (6件)
+1. `2041206959848735107` @ankrgyl — AI observability is a database problem: how Brainstore works (13,358 chars)
+2. `2040467997022884194` @hwchase17 — Continual learning for AI agents (5,376 chars)
+3. `2041185537172607014` @dani_avila7 — Skills can use subagents, Subagents can use skills (3,309 chars)
+4. `2041146899319971922` @akshay_pachaar — The Anatomy of an Agent Harness (18,056 chars)
+5. `2041897427431563613` @ericzakariasson — Optimizing your dev environment for coding agents (3,547 chars)
+6. `2041479655035679163` @carnot_cyclist — Defining Continual Learning (12,005 chars)
+
+### Wiki Updates
+- **NEW:** `concepts/continual-learning.md` — 新規作成（3層学習 + 古典ML定義）
+- **UPDATED:** `concepts/harness-engineering.md` — 3層学習フレームワーク + Agent Harness Anatomyセクション追加
+- **UPDATED:** `concepts/subagents.md` — Skills/Subagents相互関係セクション追加
+- **UPDATED:** `concepts/coding-agents.md` — stub→complete（Eric Zakariasson記事をベースに更新）
+- **UPDATED:** `concepts/ai-observability.md` — Brainstoreセクション追加
+- **UPDATED:** `index.md` — continual-learningエントリ追加
+

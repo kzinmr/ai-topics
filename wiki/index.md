@@ -263,6 +263,8 @@
 
 ## Concepts
 
+- [[concepts/continual-learning]] — AI継続的学習 — モデル/ハーネス/コンテキスト3層の学習フレームワーク
+
 - [Thin BI](concepts/thin-bi.md) — Modern BI tools becoming thin interfaces
 
 

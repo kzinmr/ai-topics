@@ -66,3 +66,19 @@ delegate_task:
 - [[concepts/agentic-engineering]] — 上位概念
 - [[concepts/cognitive-debt]] — サブエージェントの自己完結性は認知負債を減らす
 - [[concepts/harness-engineering]] — 環境設計哲学としての位置付け
+
+## Skills と Subagents の相互関係
+
+@ankrgyl (2026-04-27) の実践的な知見:
+
+Claude Codeでsubagentを起動してメインセッションのコンテキストを隔離していた。複雑なタスクが会話ウィンドウを汚染し、トークンを消費し、推論能力を低下させていた。subagentに重い処理をさせて要約を返すだけで解決した。
+
+その後Skillsが登場し、コンテキスト・規約・パターン・ドメイン知識のライブラリを構築し、要請に応じてClaudeのタスクに注入し始めた。
+
+> "Now both exist at the same time, and they can compose in both directions. A skill can spawn a subagent, and a subagent can use skills."
+
+これはSkillsとSubagentsが双方向に合成可能であることを意味する:
+- **Skill → Subagent**: スキル内からサブエージェントを起動してタスクを委譲
+- **Subagent → Skill**: サブエージェントがスキルを利用してドメイン知識にアクセス
+
+参考: [Skills can use subagents, Subagents can use skills](../raw/articles/2041185537172607014_skills-can-use-subagents_-subagents-can-use-skills.md)

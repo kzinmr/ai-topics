@@ -78,3 +78,18 @@ Logfire's tracing shows the full delegation chain, essential for debugging compl
 - [[concepts/harness-engineering]] — Observability as feedback loop
 - [[samuel-colvin]] — Logfire creator
 -  — Sentry founder, angel investor in Pydantic
+
+## Brainstore: AI Observability is a Database Problem
+
+@ankrgyl (2026-04-27) の指摘:
+
+> "AI observability is actually a database problem. The novel workloads that AI products generate and the exciting ways you can use that data mean it's in the database itself that the real problems lie."
+
+Braintrustは2年前にこれを痛感し、これらの理由でカスタムデータベースBrainstoreを構築した。オープンソースの観測ツールで十分に見えているように思えるが、AIプロダクトが生成する新しいワークロードとデータを有効活用する方法を考えると、データベース自体に真の問題がある。
+
+### Brainstoreのアプローチ
+- AI製品が生成する新しいワークロードに対応
+- 観測データの新しい活用方法を実現
+- オープンソースツールではカバーできないギャップを埋める
+
+参考: [AI observability is a database problem: how Brainstore works](../raw/articles/2041206959848735107_ai-observability-is-a-database-problem_-how-brains.md)
