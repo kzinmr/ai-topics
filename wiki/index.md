@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-27 | Total pages: 576
+> Last updated: 2026-04-27 | Total pages: 577
 
 ## Entities
 
@@ -531,6 +531,7 @@
 - [[concepts/sandbox/js-runtime]] — JavaScript/TypeScript runtimes form a critical layer of the AI agent stack. Unlike Python's single CPython implementation, the JS ecosystem offers **t
 - [[concepts/scaling-without-slop]] — Approach to scaling AI models while maintaining quality, avoiding the "slop" problem of low-quality outputs.
 - [[concepts/self-evolving-agents]] — エージェントが自身の振る舞いや能力を時間とともに改善していくパターン。固定されたロジックではなく、フィードバックと学習による継続的な進化を可能にする。
+- [[concepts/self-hosting-ai-development]] — Self-hosting patterns for AI-generated applications using Coolify + Hetzner: cost-effective alternative to Vercel/Railway with full control over infrastructure.
 - [[concepts/serializability]] — Serializability in AI systems refers to the ability to reliably convert LLM outputs into structured, typed data formats (JSON, Pydantic models, etc.) 
 - [[concepts/session-hierarchy-management]] — **Session Hierarchy Management** is a three-level framework for organizing AI coding work across session boundaries. It unifies **single-session conte
 - [[concepts/showboat]] — Moved to concepts/harness-engineering/agentic-workflows/showboat.md

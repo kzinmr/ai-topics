@@ -2,6 +2,8 @@
 title: Agentic Engineering
 type: concept
 slug: agentic-engineering
+created: 2026-04-12
+updated: 2026-04-27
 status: complete
 tags:
   - ai
@@ -11,8 +13,6 @@ tags:
 aliases:
   - ai-coding-agents
   - agentic-workflow
-created: 2026-04-12
-updated: 2026-04-12
 source: https://simonwillison.net/2025/Apr/11/agentic-engineering/
 sources: []
 ---

@@ -4,7 +4,7 @@ type: concept
 aliases:
   - vibe-coding
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-27
 tags:
   - concept
   - agentic-engineering

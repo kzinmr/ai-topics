@@ -371,3 +371,24 @@
 #### Updated Navigation
 - **index.md** — cursor-3 entry updated with SpaceX partnership summary
 
+
+## [2026-04-27] ingest | Blog batch (Apr 27, 2026) — 6 articles processed
+
+### New Concept Pages
+- [[concepts/self-hosting-ai-development]] — Self-hosting patterns for AI-generated applications: Coolify + Hetzner stack, cost comparison vs Vercel/Railway, downsides and mitigations
+  - Source: timsh.org "Why you should self-host your (vibecoded) app"
+
+### Updated Concept Pages
+- [[concepts/harness-engineering/agentic-workflows/vibe-coding]] — Added Xe Iaso's practical sponsor panel creation experience: skills-as-context pattern, mock-data-first iteration, "ugly but shipped" ethos
+  - Source: xeiaso.net "Vibe Coding Trip Report"
+- [[concepts/harness-engineering/agentic-engineering]] — Added Xe Iaso's abstraction costs perspective: "fine is the enemy of good", emotional weight of form letter, voice as non-negotiable
+  - Source: xeiaso.net "I don't know if I like working at higher levels of abstraction"
+- [[concepts/gpt-5.5]] — Added Codex Unification detail: since GPT-5.4, Codex and main model unified into single system; no separate coding line model
+  - Source: Romain Huet via simonwillison.net
+
+### Updated Entity Pages
+- [[entities/openai]] — Added GPT-5.5 Codex unification: no GPT-5.5-Codex model; single unified system
+- [[entities/xeiaso-net]] — Added recent blog activity (Apr 2026): vibe coding trip report, abstraction costs essay, Claude Code April Fools note
+
+### Updated Navigation
+- [[index.md]] — Added concepts/self-hosting-ai-development under Concepts section
