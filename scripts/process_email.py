@@ -43,10 +43,12 @@ from readability import Document
 # Config
 # ---------------------------------------------------------------------------
 HERMES_HOME = Path(os.environ.get("HERMES_HOME", Path.home() / ".hermes"))
-AI_TOPICS_REPO = Path(os.environ.get("AI_TOPICS_REPO", Path.home() / "ai-topics"))
-WIKI_RAW = Path.home() / "wiki" / "raw" / "articles"
+PROFILE_ROOT = HERMES_HOME.parent
+AI_TOPICS_REPO = Path(os.environ.get("AI_TOPICS_REPO", str(PROFILE_ROOT / "ai-topics")))
+WIKI_ROOT = Path(os.environ.get("WIKI_ROOT", str(AI_TOPICS_REPO / "wiki")))
+WIKI_RAW = WIKI_ROOT / "raw" / "articles"
 INBOX_DIR = AI_TOPICS_REPO / "inbox" / "newsletters"
-LOG_FILE = Path.home() / "logs" / "email_processor.log"
+LOG_FILE = PROFILE_ROOT / "logs" / "email_processor.log"
 PROCESSED_DB = HERMES_HOME / "processed_emails.json"
 
 IMAP_HOST = os.environ.get("EMAIL_IMAP_HOST")

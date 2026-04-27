@@ -1,108 +1,121 @@
-# AI Topics — Hermes Knowledge Base
+# AI Topics
 
-Hermes Agent が管理する LLM/AI Agent トピックの知識ベースリポジトリ。
+AI Topics is the knowledge base repository maintained by Hermes Agent for LLM and AI Agent technologies.
 
-## ディレクトリ構成
+This README describes the repository layout and stable responsibilities only. Operationally volatile details, such as subscription counts, cron schedules, current job state, and recent topic lists, should be read from the relevant config files or generated reports instead.
 
-```
+## Path Policy
+
+- Treat `~/ai-topics` as the repository root.
+- The canonical wiki path is `~/wiki`. Use this path in Hermes prompts and skills.
+- The wiki content lives in this repository under `wiki/`, but prompts and skills should refer to destinations as `~/wiki/...`.
+- Use `~/.hermes/scripts/...` in examples for Hermes-managed scripts. Cron script paths are interpreted relative to `~/.hermes/scripts`.
+- Do not add environment-specific absolute paths or new alternate compatibility paths.
+
+## Repository Layout
+
+```text
 ai-topics/
-├── README.md               # このファイル
-├── .gitignore
-│
-├── inbox/                  # 受信データ (パイプライン出力、トリアージ待ち)
-│   ├── newsletters/        # emailパイプラインの日次ダイジェスト
-│   └── rss-scans/          # blogwatcher-cliの日次スキャンレポート
-│
-├── wiki/                   # llm-wiki スキル準拠の知識ベース
-│   ├── SCHEMA.md           # [Layer 3] 構造ポリシー・更新ルール
-│   ├── index.md            # 全ページの索引
-│   ├── log.md              # 更新履歴
-│   │
-│   ├── raw/                # [Layer 1] 不変のソース素材 (Hermesは読み取り専用)
-│   │   ├── articles/       # スクレイプ済み記事
-│   │   ├── papers/         # arXiv論文
-│   │   ├── transcripts/    # ポッドキャスト文字起こし
-│   │   └── assets/         # 画像・図表
-│   │
-│   ├── concepts/           # [Layer 2] 概念・手法・技術 (how/why)
-│   ├── entities/           # [Layer 2] 人物・企業・プロダクト (who/what)
-│   ├── comparisons/        # [Layer 2] ツール/モデル比較 (vs)
-│   └── queries/            # [Layer 2] 調査クエリ結果
-│
-├── config/
-│   ├── feeds/              # 購読ソース定義
-│   │   ├── blogs.opml      # HN人気ブログ 84件
-│   │   └── x-accounts.yaml # X/Twitter追跡アカウント定義
-│   └── hermes/             # Hermes Agent 設定 (skills.external_dirs 経由で読み込み)
-│       ├── SOUL.md         # エージェントの人格・責務定義
-│       └── skills/         # プロジェクト固有のlocalスキル
-│           ├── wiki/       # wikiエンティティ強化・アカウントエンリッチ
-│           └── research/   # ブログ分析・記事グルーピング
-│
-├── scripts/                # 自動化スクリプト
-│   ├── process_email.py    # メール→raw/articles 変換パイプライン
-│   ├── email_watcher.sh    # Maildir監視 (systemd経由)
-│   ├── check_mail.sh       # メール手動確認CLI
-│   ├── build_blog_wiki.py  # OPML→entities ページ生成
-│   ├── build_x_wiki.py     # x-accounts→entities ページ生成
-│   ├── wiki_server.py      # Wikiブラウザサーバー (port 8000)
-│   └── cache/              # スクレイプキャッシュ (.gitignore、再生成可能)
-│
-├── systemd/                # systemd ユニットファイル
-│   ├── email-watcher.service
-│   ├── hermes-gateway.service
-│   └── wiki-server.service
-│
-└── docs/                   # プロジェクトドキュメント
-│   ├── SETUP.md            # セットアップガイド
-│   └── email-receiving-docs.md  # exe.dev メール受信設定
-│
-├── shelley/                # Shelley (exe.dev コーディングエージェント) 作業領域
-│   ├── README.md           # この領域の説明
-│   ├── hermes-o11y-strategy.md           # LLM o11y 戦略
-│   ├── braintrust-logging-api-reference.md # Braintrust API リファレンス
-│   └── phoenix_research.md               # Arize Phoenix 調査
+|-- README.md
+|-- CHANGELOG.md
+|-- blogwatcher.db
+|-- .githooks/
+|   `-- pre-commit
+|
+|-- inbox/
+|   |-- newsletters/
+|   `-- rss-scans/
+|
+|-- wiki/
+|   |-- SCHEMA.md
+|   |-- index.md
+|   |-- log.md
+|   |-- log-*.md
+|   |-- raw/
+|   |   |-- articles/
+|   |   |-- assets/
+|   |   |-- newsletters/
+|   |   |-- papers/
+|   |   `-- transcripts/
+|   |-- concepts/
+|   |-- entities/
+|   |-- events/
+|   |-- comparisons/
+|   `-- queries/
+|
+|-- config/
+|   |-- feeds/
+|   |-- hermes/
+|   |   |-- SOUL.md
+|   |   |-- cron/
+|   |   `-- skills/
+|   `-- hot-topics.yaml
+|
+|-- scripts/
+|-- systemd/
+`-- docs/
 ```
 
-## サービス構成
+## Main Areas
 
-| サービス | systemd unit | ポート | 役割 |
-|----------|-------------|--------|------|
-| Email Watcher | `email-watcher` | — | Maildir監視→newsletter自動処理 |
-| Hermes Gateway | `hermes-gateway` | — | Discord bot (Hermes Agent) |
-| Wiki Server | `wiki-server` | 8000 | Wikiブラウザ |
+`inbox/` stores automatically collected inputs before wiki curation, including newsletter digests and RSS scan reports.
 
-## データフロー
+`wiki/` is the knowledge base itself. Follow `SCHEMA.md` for raw sources, concepts, entities, events, comparisons, and queries. When creating or updating pages, update `index.md` and `log.md` as well.
 
+`wiki/raw/` stores source material such as articles, newsletters, papers, transcripts, images, and diagrams so later wiki pages can cite them.
+
+`config/` stores source definitions, Hermes configuration, cron definitions, and active crawl targets. Project-specific local skills live under `config/hermes/skills/`.
+
+`scripts/` stores automation for collection, triage, checkpoints, wiki maintenance, cron sync, and git hook installation. When describing these scripts in Hermes runtime contexts, use `~/.hermes/scripts/...`.
+
+`systemd/` stores unit files for host integration. The actual enabled service state belongs to the runtime environment.
+
+`docs/` stores setup, migration, and external integration documentation.
+
+## Data Flow
+
+```text
+Configuration
+  config/feeds/
+  config/hot-topics.yaml
+        |
+        v
+Collection and preprocessing
+  cron jobs
+  ~/.hermes/scripts/...
+        |
+        |-- inbox/newsletters/
+        |-- inbox/rss-scans/
+        `-- ~/wiki/raw/...
+                |
+                v
+Curation
+  Hermes Agent
+        |
+        |-- ~/wiki/concepts/
+        |-- ~/wiki/entities/
+        |-- ~/wiki/events/
+        |-- ~/wiki/comparisons/
+        `-- ~/wiki/queries/
+                |
+                v
+Index and history
+  ~/wiki/index.md
+  ~/wiki/log.md
 ```
-═══ 購読 & 受信 ═══
 
-config/feeds/                  購読先の定義 (設定)
-  │
-  ├─ Newsletter Email → Maildir → process_email.py
-  │    ├→ inbox/newsletters/*.md     日次ダイジェスト
-  │    └→ wiki/raw/articles/*.md     リンク先記事スクレイプ
-  │
-  └─ RSS feeds → blogwatcher-cli (cron)
-       └→ inbox/rss-scans/*.md       日次スキャンレポート
+## Cron And Config Sync
 
-═══ llm-wiki Layer 1 → Layer 2 (キュレーション) ═══
+The versioned copy of Hermes cron state lives at `config/hermes/cron/jobs.json`. Use `scripts/sync_cron.sh` to sync it with the runtime cron state.
 
-Hermes Agent (Discord) が inbox/ + wiki/raw/ から知識を抽出・構造化:
-  inbox/*          トリアージ (重要記事を特定し raw/ に取り込み)
-  wiki/raw/*   →  wiki/concepts/      技術概念
-                   wiki/entities/      人物・企業
-                   wiki/comparisons/   ツール比較
-                   wiki/queries/       調査結果
-                   index.md, log.md 更新 → git push
-```
+`.githooks/pre-commit` pulls the Hermes cron state into the repository before each commit. Run `scripts/install_hooks.sh` once in a new clone to install the hook.
 
-## シンボリックリンク
+When running Hermes cron commands from outside Docker, use the wrapper under the Hermes root. For Lucy, use `bin/hermes-lucy`; do not run `docker exec ... hermes ...` directly.
 
-旧パスとの互換性のため以下のシンボリックリンクが存在:
-- `~/wiki` → `~/ai-topics/wiki/`
-- `~/scripts/*` → `~/ai-topics/scripts/*` (各スクリプト個別)
-- `~/x-accounts.yaml` → `~/ai-topics/config/feeds/x-accounts.yaml`
-- `~/SETUP.md` → `~/ai-topics/docs/SETUP.md`
-- `~/.hermes/SOUL.md` → `~/ai-topics/config/hermes/SOUL.md`
-- `~/.hermes/config.yaml` の `skills.external_dirs` → `~/ai-topics/config/hermes/skills/`
+## Wiki Update Rules
+
+- Follow `wiki/SCHEMA.md` frontmatter and classification rules for new pages and substantial updates.
+- If raw source material exists, keep references under `~/wiki/raw/...`.
+- Add new pages to `~/wiki/index.md`.
+- Record changes in `~/wiki/log.md`.
+- Use `~/wiki/...` as the wiki destination path in prompts, skills, SOUL files, and runbooks.
