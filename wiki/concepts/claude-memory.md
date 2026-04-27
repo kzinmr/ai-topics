@@ -2,7 +2,7 @@
 title: "Claude Memory — File-Based Memory Architecture"
 tags: [[concepts/memory-systems-claude-filesystem-cluade-md-context-management-git-integration]]
 created: 2026-04-13
-updated: 2026-04-24
+updated: 2026-04-26
 type: concept
 ---
 

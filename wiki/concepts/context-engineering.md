@@ -10,7 +10,7 @@ tags:
 status: complete
 description: "Context EngineeringはHarness Engineeringの横断技術コンポーネント。harness-engineering配下に移動。"
 created: 2026-04-09
-updated: 2026-04-24
+updated: 2026-04-26
 related:
   - "[[concepts/harness-engineering/context-engineering]]"
   - "[[concepts/harness-engineering]]"

@@ -2,13 +2,14 @@
 title: "Anthropic Managed Agents"
 type: concept
 created: 2026-04-09
-updated: 2026-04-13
+updated: 2026-04-26
 tags: [concept, agent-team-swarm, anthropic, platform, managed-agents]
-related: [agent-team-swarm, harness-engineering, ai-agent-engineering]
+related: [agent-team-swarm, harness-engineering, ai-agent-engineering, managed-agents, telegram]
 sources:
   - https://claude.com/blog/claude-managed-agents
   - https://www.anthropic.com/engineering/managed-agents
   - https://platform.claude.com/docs/en/managed-agents/quickstart
+  - raw/articles/2026-04-09-claude-managed-agents-guide.md
 ---
 
 # Anthropic Managed Agents

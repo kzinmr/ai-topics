@@ -1,10 +1,10 @@
 ---
 title: Recursive Language Models (RLM)
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-04-26
 type: concept
 tags: [inference, optimization]
-sources: [raw/articles/crawl-2026-04-25-recursive-language-models-rlm.md]
+sources: [raw/articles/crawl-2026-04-25-recursive-language-models-rlm.md, raw/articles/2026-04-25-rlm-gepa-prompt-evolution.md]
 ---
 
 # Recursive Language Models (RLM)

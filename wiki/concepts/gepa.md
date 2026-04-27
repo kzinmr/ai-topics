@@ -2,7 +2,7 @@
 title: "GEPA: Genetic-Pareto Prompt Evolution"
 description: "GEPAはDSPyに統合された遺伝的アルゴリズムベースのプロンプト最適化手法。Pareto最適化により品質とコストを同時に最適化し、GRPOより35倍少ないサンプルで6%高い性能を達成。ICLR 2026 Oral。"
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-04-26
 type: concept
 status: complete
 depth_tracking:
@@ -11,10 +11,13 @@ depth_tracking:
 tags: [llm-optimization, prompt-engineering, dspy, genetic-algorithms, irl-2026]
 sources:
  - raw/articles/gepa-iclr2026-2026-04-20.md
+ - raw/articles/2026-04-25-rlm-gepa-prompt-evolution.md
 related:
  - dspy
  - rlms
  - agentic-engineering
+ - mismanaged-geniuses-hypothesis
+ - recursive-language-models
 ---
 
 # GEPA: Genetic-Pareto Prompt Evolution
@@ -130,5 +133,10 @@ GEPAはOmar Khattabの研究スタックの中の1コンポーネント：
 
 - [[concepts/dspy]] — GEPAが統合された宣言的LMプログラミングフレームワーク
 - [[concepts/rlms]] — Khattabの別研究方向（推論時自己最適化）
-- [[concepts/llm-integration-patterns]] — GEPAを含むLLM統合パターンの分類表
+- [[concepts/recursive-language-models]] — RLMとの統合（2026-04-25: RLM×GEPAでLongCoT-mini 38.7%→65.6%）
+- [[concepts/mismanaged-geniuses-hypothesis]] — RLM性能向上の解釈仮説
 - [[concepts/harness-engineering/agentic-engineering]] — GEPA可用于 エージェントパイプラインの最適化
+
+## RLM × GEPA Integration (April 2025)
+
+Alex Zhangらによる最新のミニ実験で、GEPAをRLM（Recursive Language Models）に適用し、**訓練なしで** LongCoT-mini の性能を38.7%から65.6%に倍増させた。これは「Mismanaged Geniuses Hypothesis」（MGH）の実証例であり、RLMが持つ潜在能力をGEPAのPareto最適化によって引き出すことに成功した。

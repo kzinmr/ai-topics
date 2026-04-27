@@ -2,7 +2,7 @@
 title: "AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較"
 type: concept
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-26
 tags: [memory-systems, agentic-engineering, chatgpt, claude, cognition, devin, openai, anthropic]
 sources:
   - url: "https://www.shloked.com/writing/chatgpt-memory-bitter-lesson"
