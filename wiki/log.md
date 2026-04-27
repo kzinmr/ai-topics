@@ -159,6 +159,12 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-04-27] update | entities/openai.md — GPT-5.5 Codex unification (Romain Huet quote)
+- Updated GPT-5.5 entry with Codex unification info: since GPT-5.4, no separate coding model — unified into single system
+- Updated Codex entry to reflect that no GPT-5.5-Codex will be released
+- Added raw source: Simon Willison quoting Romain Huet (OpenAI DevRel lead)
+- Source: `raw/articles/simonwillison.net--2026-apr-25-romain-huet--fea00393.md`
+
 ## [2026-04-26] ingest | Mac Studio for Local AI — 6 Months Later (spicyneuron / Elvis Sun)
 - Raw article: `raw/articles/spicyneuron-mac-studio-local-ai-6months.md`
 - Source: https://spicyneuron.substack.com/p/a-mac-studio-for-local-ai-6-months

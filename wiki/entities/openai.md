@@ -30,6 +30,7 @@ OpenAI is a leading AI research and product company known for developing the GPT
 ### Language Models
 - **GPT-4/5 series** — Frontier LLMs powering ChatGPT and API integrations
 - **GPT-5.5** (Apr 2026) — First fully retrained base model since GPT-4.5. Designed for multi-step work (planning, tool use, self-checking). Scored 82.7% on Terminal-Bench 2.0. Key unlock for production agent deployment.
+  - **Codex unification**: Since GPT-5.4, OpenAI unified Codex and the main model into a single system — no separate coding model line. GPT-5.5 takes this further with strong gains in agentic coding, computer use, and any task on a computer. OpenAI confirmed it will not release a GPT-5.5-Codex model ([Romain Huet, Apr 2026](https://simonwillison.net/2026/Apr/25/romain-huet/)).
 - **o-series** — Reasoning-focused models with extended thinking
 - **GPT-4o / GPT-4o-mini** — Multimodal models with vision and audio capabilities
 
@@ -44,7 +45,7 @@ OpenAI is a leading AI research and product company known for developing the GPT
   - Security: Default-deny, relative paths only, `..` traversal blocked
   - Durability: Snapshotting & rehydration for long-horizon tasks
 - **Symphony** — Agent orchestration framework (see [[concepts/harness-engineering]])
-- **Codex** — AI coding agent
+- **Codex** — AI coding agent. Since GPT-5.4, Codex has been unified into the main model — there is no separate coding model line. No GPT-5.5-Codex will be released ([Romain Huet, Apr 2026](https://simonwillison.net/2026/Apr/25/romain-huet/)).
 
 ### Other Products
 - **ChatGPT** — Conversational AI interface
@@ -77,7 +78,6 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 - [[concepts/nano-banana-2]] — Google's NB2 image generation competitor
 
 ## Sources
-- 
-- 
+- [Simon Willison: A quote from Romain Huet (2026-04-25)](https://simonwillison.net/2026/Apr/25/romain-huet/) — Codex unified into main model since GPT-5.4, no GPT-5.5-Codex
 - [OpenAI Agents SDK Blog (2026-04-15)](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
 - [OpenAI API Sandbox Docs](https://developers.openai.com/api/docs/guides/agents/sandboxes)

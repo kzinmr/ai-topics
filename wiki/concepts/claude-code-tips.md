@@ -1,126 +1,62 @@
 ---
-title: "Claude Code Tips — Running Inside Docker with VSCode Dev Containers"
+title: Claude Code Tips
 type: concept
 created: 2026-04-27
 updated: 2026-04-27
-tags: [concept, claude-code, docker, dev-containers, security, agent-sandboxing]
-aliases: [claude-in-docker, claude-code-docker-setup]
+tags: [concept, agentic-engineering, claude-code, dev-tooling, docker, security]
+aliases: ["claude-code-best-practices", "claude-code-docker"]
 sources:
-  - "https://timsh.org/claude-inside-docker/"
-  - "https://github.com/tim-sha256/claude-in-docker"
-related:
-  - concepts/claude-code-leak
-  - concepts/agent-sandboxing
-  - concepts/container-context
-  - entities/claude-code
+  - raw/articles/timsh.org--claude-inside-docker--6842418e.md
+  - raw/articles/timsh.org--why-you-should-self-host--bff25172.md
 ---
 
-# Claude Code Tips — Running Inside Docker with VSCode Dev Containers
+# Claude Code Tips
 
-Running **Claude Code** inside a **Docker container** via VSCode's **Dev Containers** feature provides a practical balance between the power of Anthropic's CLI agent and security isolation. This approach gives Claude Code access to your project files while preventing it from accessing your broader filesystem, local secrets, or SSH keys.
+> Practical setup guides and configuration advice for Claude Code, with a focus on security isolation, Docker integration, and efficient workflows.
 
-## Why Run Claude Code in Docker?
+## Docker-Based Claude Code Setup
 
-### Security Isolation
+For users who want to run Claude Code securely without granting it full filesystem and terminal access to their host machine, running Claude Code **inside a Docker container** via VSCode's Dev Containers feature is a lightweight and effective approach.
 
-Giving an AI agent terminal and filesystem access is inherently risky. Running Claude Code inside a container constrains what it can do:
+### Why Docker-Isolate Claude Code
 
-- **Filesystem sandboxing** — Claude can only access files inside the container or mounted volumes. It cannot read your home directory, SSH keys, or system configuration.
-- **No local credential exposure** — The container has no access to your local SSH keys, GPG keys, or credential stores. A separate GitHub fine-grained access token is used for git operations.
-- **Contained blast radius** — The worst case is the container breaks or stops. Your host system remains unaffected.
-- **Network access control** — External integrations (APIs, MCP servers, databases) require explicit setup inside the container rather than automatic access to the host's network.
+1. **Filesystem isolation** — Claude can only access files inside the container or explicitly mounted volumes
+2. **Credential protection** — Host SSH keys, secrets, and personal data remain inaccessible
+3. **Terminal sandboxing** — Worst-case scenario is the container breaks and stops, not data loss
+4. **No external access** — External integrations require explicit opt-in
 
-### Performance and Cost
+This addresses a real concern: AI agents with full terminal access present a security risk comparable to giving a unknown freelancer unfettered access to your machine.
 
-- **Claude Code's $20 Pro subscription** replaces more expensive setups (e.g., Cursor Pro at $40 total) while providing reasonable rate limits and clear token spending visibility.
-- **No queue delays** — Unlike Cursor's post-update rate limits (2-5 minute waits for standard prompts), Claude Code provides fast response times.
+### Setup (5 Minutes)
 
-### Practical Benefits
+Based on [timsh.org's guide](https://timsh.org/claude-inside-docker/):
 
-- **Works with any Claude subscription plan** — Pro or Max, the container setup is identical.
-- **Quick setup** — 5 minutes if Docker and VSCode are already installed.
-- **Familiar IDE experience** — VSCode with Dev Containers provides the same editor experience as working locally.
+1. **Prerequisites**: Docker + VSCode installed, Claude subscription active
+2. **Clone the template**: `git clone https://github.com/tim-sha256/claude-in-docker.git`
+3. **Open in VSCode** — the `devcontainer.json` is pre-configured
+4. **"Reopen in Container"** — VSCode builds and enters the dev container
+5. **Verify**: Run `claude` in the integrated terminal
 
-## Setup Guide
+### Fine-Grained GitHub Token
 
-### Prerequisites
+Inside the container, use a **fine-grained GitHub personal access token** instead of SSH keys:
 
-1. **Docker** installed and running
-2. **VSCode** with the **Dev Containers** extension
-3. **Claude subscription** (any paid plan)
-4. **GitHub account** (for repository operations)
+- Create at `https://github.com/settings/personal-access-tokens/new`
+- Grant access to specific repositories only
+- Set Repository Permissions → Contents → "Read and write"
+- This single permission is sufficient for basic git operations
 
-### Step 1: Create the Dev Container
+Unlike a container-specific SSH key (which can't have granular permissions), a fine-grained token limits Claude to only the repositories and operations you explicitly authorize.
 
-Create a project folder with a `.devcontainer/devcontainer.json` file. You can either:
+### Who This Is For
 
-- **Clone the [reference repo](https://github.com/tim-sha256/claude-in-docker):**
-  ```bash
-  git clone https://github.com/tim-sha256/claude-in-docker.git
-  ```
+- Casual users who want Claude Code without the $40/month Cursor Pro subscription
+- Developers concerned about AI agent security
+- Anyone who values a clear cost/benefit: $20 Claude subscription + Docker isolation
 
-- **Create it manually** by placing a `devcontainer.json` inside a `.devcontainer/` folder. The reference implementation includes:
-  - Node.js runtime (required by Claude Code CLI)
-  - Git for version control
-  - Claude Code CLI pre-installed
-  - Any project-specific dependencies
+## Related Pages
 
-### Step 2: Open in VSCode
-
-Open the root folder in VSCode. A modal will appear: **"Reopen in Container"** — click it. VSCode builds the container image and opens the project inside the isolated environment. This takes a minute on first run.
-
-### Step 3: Verify Claude Code
-
-In the VSCode terminal inside the container, run:
-```bash
-claude
-```
-
-Claude Code starts in the container, with access only to the project files inside it.
-
-### Step 4: Configure Git Access (Fine-Grained Token)
-
-Inside the container, there are no SSH keys. Use a **GitHub fine-grained personal access token** instead:
-
-1. Go to [GitHub Settings > Personal Access Tokens > Fine-grained tokens](https://github.com/settings/personal-access-tokens/new)
-2. Select the repositories Claude Code needs access to
-3. Under **Repository permissions**, set **Contents** to **Read and write**
-4. This single permission is sufficient for basic git operations (clone, pull, push)
-
-Use the token in git operations:
-```bash
-git clone https://<USERNAME>:<TOKEN>@github.com/<USERNAME>/<REPO>.git
-cd <REPO>
-git remote set-url origin https://<USERNAME>:<TOKEN>@github.com/<USERNAME>/<REPO>.git
-```
-
-This token approach is preferred over generating an SSH key inside the container, because:
-- SSH keys can't be scoped to specific permissions — adding one for the container gives Claude unintended access to your account settings
-- Fine-grained tokens can be limited to `Contents: Read and write` — the bare minimum for code operations
-
-## Security Considerations
-
-| Concern | Mitigation |
-|---------|-----------|
-| File system access | Container isolation — Claude can't access host files outside mounted volumes |
-| SSH keys | Not present in container; fine-grained token replaces them |
-| Secrets exposure | External integrations require explicit setup inside container |
-| Malicious code execution | Container is disposable; rebuild to reset |
-| GitHub account access | Token scoped to specific repos with read/write contents only |
-
-## Comparison with Alternatives
-
-| Approach | Security | Setup Complexity | Cost |
-|----------|----------|-----------------|------|
-| **Docker + Dev Container** (this guide) | High — container isolation | 5 minutes | $20/mo (Claude Pro) |
-| **Claude Code locally** | Low — full filesystem access | 2 minutes | $20/mo (Claude Pro) |
-| **Cursor Pro** | Medium — some built-in guards | 1 minute | $40/mo |
-| **OpenAI Codex** | Low — runs locally | 2 minutes | $20/mo (ChatGPT Plus) |
-
-## References
-
-- [GitHub: claude-in-docker](https://github.com/tim-sha256/claude-in-docker) — Reference implementation
-- [Original article: timsh.org](https://timsh.org/claude-inside-docker/) — "Switching to Claude Code + VSCode inside Docker"
-- [[concepts/agent-sandboxing]] — Broader discussion of agent isolation techniques
-- [[concepts/container-context]] — Container-based execution environments for agents
-- [[entities/claude-code]] — Claude Code entity page
+- [[concepts/harness-engineering/agentic-engineering]] — Agentic engineering practices
+- [[concepts/vibe-coding]] — Contrasting development style
+- [[concepts/self-hosting-ai-development]] — Self-hosting AI applications
+- [[entities/xeiaso-net]] — Xe Iaso's perspective on AI abstraction costs
