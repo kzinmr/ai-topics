@@ -36,6 +36,19 @@ for t in new:
 
 print(json.dumps({"new_bookmarks": new}, indent=2))
 
+# Unbookmark each new bookmark from X (removes from X's list so next run sees only fresh bookmarks)
+unbookmark_failures = 0
+for t in new:
+    try:
+        run("unbookmark", t["id"])
+    except subprocess.CalledProcessError as e:
+        unbookmark_failures += 1
+        print(f"warn: unbookmark failed for {t['id']}: {e.stderr}", file=sys.stderr, flush=True)
+
+# Update dedup DB (safety net — if unbookmark fails, this prevents re-processing)
 processed.update(t["id"] for t in new)
 DB.parent.mkdir(parents=True, exist_ok=True)
-DB.write_text(json.dumps({"tweet_ids": sorted(processed)}, indent=2))
+DB.write_text(json.dumps({
+    "tweet_ids": sorted(processed),
+    "unbookmark_failures": unbookmark_failures
+}, indent=2))
