@@ -1,3 +1,12 @@
+---
+title: "LMSYS Org"
+type: entity
+tags: [organization, research, uc-berkeley, sglang, llm-evaluation]
+status: active
+created: 2026-04-27
+updated: 2026-04-27
+---
+
 # LMSYS Org
 
 | Field | Value |

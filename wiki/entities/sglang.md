@@ -1,3 +1,12 @@
+---
+title: "SGLang"
+type: entity
+tags: [inference-engine, open-source, llm-serving, framework, sgl-project]
+status: active
+created: 2026-04-27
+updated: 2026-04-27
+---
+
 # SGLang
 
 | Field | Value |

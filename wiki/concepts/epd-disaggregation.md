@@ -1,3 +1,12 @@
+---
+title: "EPD Disaggregation"
+type: concept
+tags: [inference-architecture, vlm, disaggregation, sglang, vision-language]
+status: active
+created: 2026-04-27
+updated: 2026-04-27
+---
+
 # EPD Disaggregation
 
 | Field | Value |
