@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-27 | Total pages: 579
+> Last updated: 2026-04-27 | Total pages: 582
 
 ## Entities
 
@@ -275,6 +275,7 @@
 - [[concepts/agent-harness]] — The **agent harness** is the wrapper around a raw model that turns it into a work engine: context management, toolset, guardrails, and feedback loops. Key frameworks: R.E.S.T, PPAF.
 - [[concepts/agent-harness-primitives]] — A harness is every piece of code, configuration, and execution logic that wraps a raw model to turn it into a work engine. Agent = Model + Harness. Th
 - [[concepts/agent-harnesses]] — The concept of **agent harnesses** represents a philosophical shift in how AI agents should be architected. Rather than building complex orchestration
+- [[concepts/agent-identity-verification]] — **Agent Identity & Verification (A2A Signed Agent Cards):** multi-agent systems need cryptographically verifiable identities across organizational boundaries. A2A v1.0 introduced Signed Agent Cards via Sigstore integration
 - [[concepts/agent-sandboxing]] — Agent Sandboxingは、AIエージェントの動的コード実行を安全に隔离する技術譜。gVisor、FirecrackermicroVM、WASM等の隔离技術を整理。標準コンテナは共有カーネルのため不十分。
 - [[concepts/agent-survival-benchmark]] — LLMエージェントの生存能力とPvP（プレイヤー対プレイヤー）圧力下での性能を測定するオープンソースベンチマーク。
 - [[concepts/agent-team-swarm/managed-devins]] — Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.2.
@@ -391,6 +392,7 @@
 - [[concepts/formal-verification-llm-agents]] — Formal verification is the practice of mathematically proving that code *always* satisfies its specifications—including all edge cases. AI is poised t
 - [[concepts/functional-emotions-llms]] — The discovery that Large Language Models develop internal representations of emotion concepts that causally influence model behavior, including alignm
 - [[concepts/gemini]] — **Gemini** is Google DeepMind's family of multimodal AI models, spanning text, images, video, audio, and code. Originally announced in December 2023, 
+- [[concepts/generic-agent-self-evolving]] — **GenericAgent:** a token-efficient self-evolving LLM agent framework (arXiv:2604.17091). Uses skill-tree growth algorithms to dynamically expand capabilities via memory-augmented pattern learning
 - [[concepts/gepa]] — GEPAはDSPyに統合された遺伝的アルゴリズムベースのプロンプト最適化手法。Pareto最適化により品質とコストを同時に最適化し、GRPOより35倍少ないサンプルで6%高い性能を達成。ICLR 2026 Oral。
 - [[concepts/github-copilot-billing]] — In April 2026, Microsoft announced a major shift in GitHub Copilot's pricing model from **requests-based billing** to **token-based billing**, alongsi
 - [[concepts/gnu-ai-reimplementations]] — **GNU AI Reimplementations** refers to the concept — articulated primarily by Salvatore Sanfilippo (antirez), creator of Redis — that AI coding agents
@@ -509,6 +511,7 @@
 - [[concepts/openclaw/philosophy]] — OpenClawの設計哲学の中核は**「Primitives over Defaults」**（デフォルトではなくプリミティブを提供する）。これはLinuxカーネルやKubernetesの設計思想に近い。
 - [[concepts/personal-superintelligence]] — **「AIは中央で全てを自動化するべきか、それとも個人それぞれが自分の目標に向かう道具となるべきか。」**
 - [[concepts/personal-os-for-ai-agents]] — Koylan AI's vision of a Personal OS that coordinates AI agents, memory systems, and web access — turning your phone into a "personal brain."
+- [[concepts/process-reward-models-agent-eval]] — **Process Reward Models (PRMs)** for agent evaluation: step-level reward signals to verify reasoning quality in agent trajectories. Foundation for reliable multi-turn agent assessment
 - [[concepts/project-glasswing]] — Anthropic's initiative to use [[claude-mythos]] for defensive security research — finding and patching vulnerabilities in critical software.
 - [[concepts/prompt-caching]] — LLM API呼び出しにおけるキャッシングの設計パターン。コスト削減とレイテンシ改善のために、どの部分をキャッシュし、いつ無効化するかを体系的に扱う。
 - [[concepts/pydantic]] — Pydantic is a Python data validation library that uses type hints to validate, serialize, and document data. It has become the de facto standard for d

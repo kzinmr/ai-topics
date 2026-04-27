@@ -1,3 +1,22 @@
+## [2026-04-27] crawl | Active Knowledge Crawl — Agent Team/Swarm, AI Evals, Agent Swarms
+
+### Policy: laterals — Agent Identity (from agent-team-swarm)
+- **agent-identity-verification** — A2A v1.0 Signed Agent Cards via Sigstore integration for cryptographically verifiable agent identities across organizational boundaries
+  - Source: raw/articles/crawl-2026-04-27-sigstore-a2a-keyless-signing.md
+
+### Policy: laterals — Process Reward Models (from ai-evals)
+- **process-reward-models-agent-eval** — Step-level reward signals (PRMs) for verifying reasoning quality in agent trajectories. Foundation for reliable multi-turn agent assessment
+  - Source: raw/articles/crawl-2026-04-27-agentprm-process-reward-models.md
+
+### Policy: laterals — GenericAgent Self-Evolving (from agent-swarms)
+- **generic-agent-self-evolving** — Token-efficient self-evolving LLM agent framework (arXiv:2604.17091). Skill-tree growth algorithms for dynamic capability expansion via memory-augmented pattern learning
+  - Source: raw/articles/crawl-2026-04-27-genericagent-self-evolving.md
+
+### index.md updated
+- Added 3 entries under Concepts, total pages 579→582
+
+---
+
 ## [2026-04-27] create | [[concepts/claude-code-tips]] — Claude Code in Docker with VSCode Dev Containers
 
 ### New Concept Pages
