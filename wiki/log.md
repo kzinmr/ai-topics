@@ -171,6 +171,16 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-04-27] create | [[concepts/cryptography-patterns]] — Bitwarden encryption architecture
+
+### New Concept Pages
+- [[concepts/cryptography-patterns]] — Bitwarden/Vaultwarden encryption and decryption architecture. Documents: two-layer encryption design (passphrase→master key→secrets), master key generation (64 random bytes → enc_key + mac_key), key derivation via PBKDF2-HMAC-SHA256 (600K iterations) with HKDF-Expand stretching (or Argon2id alternative), AES-256-CBC with PKCS7 padding, HMAC-SHA256 integrity verification, cipherstring format (version.iv|ciphertext|mac), and the full decryption process.
+  - Source: Miguel Grinberg article "How Bitwarden Encrypts and Decrypts Secrets"
+  - Related: [[concepts/self-hosting-ai-development]], [[entities/miguel-grinberg]]
+- [[index.md]] — Added entry under Concepts section (alphabetically after critique-shadowing, before cybersecurity-proof-of-work); total pages updated 578→579
+
+---
+
 ## [2026-04-27] update | [[concepts/harness-engineering/agentic-workflows/vibe-coding]] + [[entities/xeiaso-net]] — enrich with Apr 27 articles
 
 ### Updated: Vibe Coding

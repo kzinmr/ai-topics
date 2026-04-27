@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-27 | Total pages: 578
+> Last updated: 2026-04-27 | Total pages: 579
 
 ## Entities
 
@@ -359,6 +359,7 @@
 - [[concepts/context-routing]] — **概要:** 多ドメインエージェントが不要な知識ベース、ツールセット、指示を毎回読み込むのを防ぎ、トークン効率と精度を向上させる。
 - [[concepts/context-window-management]] — **Context Window Management** encompasses the strategies, patterns, and techniques for effectively working within the finite context limits of LLM-pow
 - [[concepts/critique-shadowing]] — A 7-step iterative methodology for building aligned LLM-as-Judge evaluators, coined by **Hamel Husain**. The core insight: the process of building an 
+- [[concepts/cryptography-patterns]] — Bitwarden/Vaultwarden encryption architecture: two-layer design, master key derivation via PBKDF2/Argon2id + HKDF-Expand, AES-256-CBC with HMAC-SHA256 integrity, cipherstring format
 - [[concepts/cybersecurity-proof-of-work]] — A concept coined by Drew Breunig in April 2026, observing that as LLMs like **Claude Mythos** become increasingly effective at finding security vulner
 - [[concepts/dark-factory-software-factory]] — **Source:** Simon Willison's Weblog (2026-01-28, 2026-02-07)
 - [[concepts/death-of-browser]] — **概念概要**: ブラウザが人間の視覚的インターフェースから、AIエージェントのアクション実行プラットフォームへと変遷する潮流。Webサイトは「人間に読まれる」ものから「エージェントに操作される」ものへシフトしている。
