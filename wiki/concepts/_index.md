@@ -99,6 +99,10 @@ AI and LLM concept pages organized by topic.
 - [[concepts/inference/sglang]] — SGLang's signature optimization. Builds a tree-structured KV cache across requests sharing common prefixes:
 - [[concepts/inference/vllm]] — vLLM is a high-throughput LLM serving engine with PagedAttention optimization.
 
+## Web-Filesystem.Md
+
+- [[concepts/web-as-filesystem]] — Webの全ドキュメントをUnixファイルシステムとしてマウントする抽象化。エージェントに`tree`、`grep`、`cat`、`find`を自然に使い、コード幻覚を解消。Nia (Nozomio Labs) による実装。
+
 ## Sandbox
 
 - [[concepts/sandbox/in-process]] — In-process sandboxing isolates LLM-generated code execution within the host process using language-level security boundaries — without requiring Docker, cloud accounts, or external infrastructure. Thi
@@ -804,3 +808,11 @@ AI and LLM concept pages organized by topic.
 ## MCP (Model Context Protocol)
 
 - [[concepts/mcp]] — Industry-standard protocol for connecting AI models to external tools and resources. Created by Anthropic, widely adopted in 2025-2026.
+
+## Deep-Agents-Md
+
+- [[concepts/deep-agents-runtime]] — Deep AgentsはLangChain/Anthropicが構築したプロダクション対応エージェントランタイム。durable execution、memory、multi-tenancy、guardrails、HITL、observability、sandboxed code execution、scheduled cronをパッケージ化。
+
+## Polymarket-Trading-Agents
+
+- [[concepts/polymarket-trading-agents]] — Polymarket予測マーケットで自律的にトレードを行うAIエージェント。天気、暗号通貨、スポーツ市場で24/7稼働。Hermes Agentで構築可能。

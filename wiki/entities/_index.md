@@ -115,7 +115,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[gwern]] — Gwern Branwen (born c. 1984) is a pseudonymous independent researcher and writer based in the USA, known for his prolific contributions to AI, psychology, statistics, and rationalist thought under the
 - [[hamel-husain]] — Hamel Husain is a veteran AI Engineer and Consultant with over 20 years of experience, currently operating as an independent consultant through Parlance Labs, an R&D member at AnswerAI (Jeremy Howard'
 - [[herman-s-blog]] — Herman created Bear Blog as an antidote to everything wrong with modern web platforms. The manifesto (implicit in his writing, explicit in the product) holds that:
-- [[hermes-agent]] — Input Surface (CLI / Gateway / ACP / Cron / Batch)
+- [[hermes-agent]] — Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawから移行中のユーザーが増加。
 - [[hillel-wayne]] — Hillel is a formal methods practitioner who bridges the gap between academic formal verification and practical software engineering. Unlike most formal methods advocates who focus purely on theory, Hi
 - [[hugo-bowne-anderson]] — Hugo's central thesis across all his work is that AI systems require a fundamentally different development paradigm than traditional software. His philosophy can be summarized in three pillars:
 - [[hynek-schlawack]] — Born from a late-night IRC session in January 2015, attrs has since surpassed 1 billion downloads and directly inspired Python 3.7's `dataclasses` module. structlog, launched in 2013, is the productio

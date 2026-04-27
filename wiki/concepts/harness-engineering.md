@@ -63,9 +63,61 @@ Harness Engineeringの4つの柱:
 
 詳細とサブ概念は [[concepts/harness-engineering]] を参照。
 
-## See Also
+## PPAF Cycle と Harness アーキテクチャ
 
-- [[concepts/harness-engineering]] — 詳細フレームワーク
-- [[concepts/agentic-engineering]] — Willisonのサブセット概念
-- [[concepts/context-engineering]] — 横断技術コンポーネント
-- [[concepts/symphony]] — OpenAIの実装
+[[concepts/harness-engineering]] の著者（2026-04-23投稿）による詳細フレームワーク:
+
+### R.E.S.T Framework — 信頼性の4軸
+1. **Reliability** — Fault Recovery, Operation Idempotency, Behavioral Consistency
+2. **Efficiency** — Resource Control (token/budget management), Low-Latency Response, High Throughput
+3. **Security** — Least Privilege, Sandboxed Execution, I/O Filtering (prompt injection防御)
+4. **Traceability** — End-to-End Tracing, Explainable Decisions, Auditable State
+
+### REPL Harness — 核心アーキテクチャパターン
+Harnessを「決定論的シェル」としてLLMの非決定論的出力を制御:
+- **Read** — Context Managerが外部世界（API状態、ユーザー入力）を構造化プロンプトに変換
+- **Eval** — Call InterceptorがFunction Callをツールexecutorにルーティング、タイムアウト/リソース/エラーを監視
+- **Print** — Feedback Assemblerがツール出力を構造化「observation」として再注入
+- **Loop** — Read-Eval-PrintサイクルがPPAF（Perception→Planning→Action→Feedback）を駆動
+
+### Infinite State → Finite Tokens 変換
+Transformerは有限のtoken列しか扱えないが、エージェントの知能は膨大なstate情報に依存:
+- **Reduction Rules** — token budgetが逼迫した際に優先/剪断する情報のルール
+- **Injection Boundary** — RAG結果などの外部データをプロンプト内のどこに挿入するか（"Lost in the Middle"回避）
+- **State Separation Principle** — LLMを無状態のcompute unit（CPU）として扱い、セッション/進行状態は外部のContext State Managerにオフロード
+
+### Function Calling の完全ライフサイクル
+1. Schema Serialization（JSON Schemaをプロンプト注入）
+2. Trigger Generation（LLMがtool name + argumentsを生成）
+3. Deterministic Deserialization（LLM出力の構造化—最も脆い段階）
+4. Observation Injection（実行結果をobservationとして再注入）
+
+**フォールバック**: Deserialization失敗→LLMにエラー提示→再生成 / Execution失敗→ユーザーにインタラクティブなパラメータ要求→エラーログをcontextに注入してre-planning
+
+### 6つの設計原則
+1. Design for Failure — 失敗を前提にフォールトトレランス/リトライ/graceful degradation
+2. Contract-First — 明示的なmachine-readable contract（Schemas/APIs/Events）
+3. Secure by Default — 最小権限/zero trust/defense-in-depth
+4. Separation of Concerns — Planning（決定）とExecution（実行）を論理的/物理的に分離
+5. Everything is Measurable — 行動/決定/リソースすべてを定量可能に
+6. Data-Driven Evolution — 全エージェント実行を学習機会としてclosed loopで回す
+
+### Token Transformation Pipeline
+1. Collection → 2. Ranking → 3. Compression → 4. Budgeting → 5. Assembly
+
+### 4段階サンドボックス
+- Level 1: Process-level（chroot/namespace/seccomp-bpf）— 高速だがカーネル共有
+- Level 2: Container（Docker/containerd）— **デフォルト推奨** + hardened kernel + read-only rootfs
+- Level 3: MicroVM（Firecracker）— 独立virtual kernel、multi-tenant/信頼できないコード向け
+- Level 4: Full VM（KVM/QEMU）— 最高セキュリティ、最高コスト
+
+### Control Plane / Data Plane
+- **Control Plane** — task scheduling, resource quotas, behavioral planning, policy enforcement
+- **Data Plane** — agent runtime instances, state/memory storage, sandboxed execution
+
+### 2次元マトリックス — Agent成熟度評価
+- 横軸: AI Cognitive Loop（React → Proactive Plan & Reflect）
+- 縦軸: Context Efficiency（Inefficient/Manual → Efficient/Sandboxed）
+
+## Sources (追加)
+- [The Definitive Guide to Harness Engineering](https://x.com/i/article/2046553574201843712) (2026-04-23, X article) — PPAF, REPL Harness, R.E.S.T, 6 design principles, 4-level sandbox

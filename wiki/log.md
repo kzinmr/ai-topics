@@ -1,29 +1,47 @@
-## [2026-04-27] x-bookmarks-ingest | 5 new concept pages created
+## [2026-04-27] x-bookmarks-ingest | 4 new concept pages + 1 entity page + 1 concept update
 
-- [monitor] Telegram Bot API 9.6 → [[telegram-managed-bots]]
-  - **Key idea**: No-code bot creation system where manager bots provision and control subordinate bots
-  - Bot API 9.6 adds can_manage_bots, ManagedBotCreated, getManagedBotToken primitives
-  - New page: concepts/telegram-managed-bots.md
+- [deepdive] The Definitive Guide to Harness Engineering → Updated `concepts/harness-engineering.md`
+  - **Key idea**: R.E.S.T framework (Reliability, Efficiency, Security, Transparency), Horse and Reins metaphor
+  - PPAF cycle, Context Management, Function Calling design principles
+  - Updated harness-engineering.md with R.E.S.T framework, PPAF cycle, and 3 new cross-references
 
-- [deepdive] Karpathy AutoResearch → [[autoreason]]
-  - **Key idea**: Self-refinement framework extending karpathy-loop into subjective reasoning via blind Borda count voting
-  - Fixes three structural failures: prompt bias, scope creep, lack of restraint
-  - New page: concepts/autoreason.md
+- [deepdive] The Runtime Behind Production Deep Agents → `concepts/deep-agents-runtime.md` (NEW)
+  - **Key idea**: Deep Agents runtime packages durable execution, memory, multi-tenancy, guardrails, HITL, observability, sandboxed code execution, scheduled cron
+  - Built on LangGraph/LangSmith, supports multi-tenancy with Stripe-like pricing isolation
+  - Guardrails: prompt injection prevention, PII redaction, jailbreak detection, rate limiting
 
-- [monitor] Khe Hy framework → [[company-ai-pilled]]
-  - **Key idea**: Organizational AI maturity model distinguishing surface AI usage from deep cultural transformation
-  - Levels: AI User → AI Adopter → AI-Pilled → AI-Native
-  - New page: concepts/company-ai-pilled.md
+- [monitor] Hermes Agent Polymarket Self-Learning Weather Trading Bot → `concepts/polymarket-trading-agents.md` (NEW)
+  - **Key idea**: AI agent autonomously trading Polymarket prediction markets 24/7
+  - Weather, crypto, sports markets — autonomous position sizing via Kelly Criterion
+  - Self-learning with reinforcement learning, multi-agent coordination
 
-- [deepdive] Claude Code Memory → [[claude-perfect-memory]]
-  - **Key idea**: Filesystem-based persistent memory architecture with lifecycle layer (session commands, rotation crons, drift detection)
-  - Extends CLAUDE.md primitives with persistent memory management
-  - New page: concepts/claude-perfect-memory.md
+- [deepdive] Turning the Entire Web Into a Filesystem → `concepts/web-as-filesystem.md` (NEW)
+  - **Key idea**: Mount the entire web as a Unix filesystem — `tree`, `grep`, `cat`, `find` for documentation
+  - Agent can search entire docs, build dependency graphs, cross-reference
+  - Implementation: Nia (Nozomio Labs)
 
-- [monitor] Content automation → [[content-engine]]
-  - **Key idea**: AI-powered content creation, curation, and distribution pipeline applying agentic engineering
-  - Components: Research → Drafting → Editing → Distribution → Analytics
-  - New page: concepts/content-engine.md
+- [entity] What People Are Actually Using Hermes Agent For → `entities/hermes-agent.md` (ENRICHED)
+  - **Key idea**: Community-driven use cases from Reddit, X, YouTube
+  - Popular uses: DevOps automation (28%), code generation (23%), data analysis (18%)
+  - Migration from OpenClaw, self-hosted advantages, privacy concerns
+
+### Raw Articles Saved
+- `raw/articles/2026-04-27_2047145274200768969_The-Definitive-Guide-to-Harness-Engineering.md`
+- `raw/articles/2026-04-27_2046277232537256002_The-Runtime-Behind-Production-Deep-Agents.md`
+- `raw/articles/2026-04-27_2045080054917476451_Hermes-Agent-Polymarket-Self-Learning-Weather-Trading-Bot.md`
+- `raw/articles/2026-04-27_2045935785661349956_Hermes-Agent-What-People-Are-Actually-Using-It-For.md`
+- `raw/articles/2026-04-27_2041215978957389908_Turning-the-Entire-Web-Into-a-Filesystem.md`
+
+### Wiki Pages Created/Updated
+- NEW: `concepts/deep-agents-runtime.md` — Deep Agents runtime (LangChain/Anthropic production agent framework)
+- NEW: `concepts/polymarket-trading-agents.md` — Polymarket prediction market trading agents
+- NEW: `concepts/web-as-filesystem.md` — Web-as-filesystem concept (Nia/Nozomio Labs)
+- UPDATED: `concepts/harness-engineering.md` — Added R.E.S.T framework, PPAF cycle, context management
+- NEW: `entities/hermes-agent.md` — Enriched Hermes Agent entity page with community use cases
+
+### Index Updates
+- `concepts/_index.md` — Added Web-Filesystem.Md, Deep-Agents-Md, Polymarket-Trading-Agents sections
+- `entities/_index.md` — Updated hermes-agent entry
 
 ---
 
