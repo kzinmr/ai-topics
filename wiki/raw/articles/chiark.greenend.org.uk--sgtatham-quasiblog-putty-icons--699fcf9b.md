@@ -1,7 +1,7 @@
 ---
 title: "Iconography of the PuTTY tools"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/putty-icons/"
-fetched_at: 2026-04-27T07:00:48.285201+00:00
+fetched_at: 2026-04-27T07:56:54.305205+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

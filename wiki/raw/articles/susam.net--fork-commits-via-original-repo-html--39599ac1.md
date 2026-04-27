@@ -1,7 +1,7 @@
 ---
 title: "Accessing Fork Commits via Original Repository"
 url: "https://susam.net/fork-commits-via-original-repo.html"
-fetched_at: 2026-04-27T07:01:53.571827+00:00
+fetched_at: 2026-04-27T07:58:00.600207+00:00
 source: "susam.net"
 tags: [blog, raw]
 ---

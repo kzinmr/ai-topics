@@ -1,7 +1,7 @@
 ---
 title: "Reading List 04/25/26"
 url: "https://www.construction-physics.com/p/reading-list-042526"
-fetched_at: 2026-04-27T07:00:43.276356+00:00
+fetched_at: 2026-04-27T07:56:49.035005+00:00
 source: "construction-physics.com"
 tags: [blog, raw]
 ---

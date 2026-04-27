@@ -1,7 +1,7 @@
 ---
 title: "Philosophy of coroutines"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/coroutines-philosophy/"
-fetched_at: 2026-04-27T07:01:01.451831+00:00
+fetched_at: 2026-04-27T07:57:07.029456+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

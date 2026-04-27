@@ -9,7 +9,8 @@ created: 2026-04-27
 updated: 2026-04-27
 sources: [
   "https://x.com/RLanceMartin/status/2041927992986009773",
-  "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md"
+  "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
+  "raw/newsletters/2026-04-26-openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md"
 ]
 related: [
   "[[claude]]",

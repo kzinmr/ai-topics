@@ -327,3 +327,13 @@
 ### Raw Source
 - `raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md` — newsletter saved as source
 
+### Follow-up Batch (Triage Processing)
+
+#### Updated Entity Pages
+- **entities/cursor-3.md** — SpaceX partnership details: $60B acquisition option / $10B collaborative work alternative, Composer 2 on Moonshot's Kimi, Kevin Kwok analysis
+- **entities/claude-code.md** — Pricing test incident (Apr 2026): quietly removed from $20 Pro plan, fake door probe, inference cost economics, Rohan Varma mockery
+- **entities/anthropic.md** — Added newsletter as additional source reference
+
+#### Updated Navigation
+- **index.md** — cursor-3 entry updated with SpaceX partnership summary
+

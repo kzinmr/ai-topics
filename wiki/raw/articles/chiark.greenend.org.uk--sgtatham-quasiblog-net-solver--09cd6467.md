@@ -1,7 +1,7 @@
 ---
 title: "Writing a solver for Net"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/net-solver/"
-fetched_at: 2026-04-27T07:01:09.976009+00:00
+fetched_at: 2026-04-27T07:57:15.461518+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

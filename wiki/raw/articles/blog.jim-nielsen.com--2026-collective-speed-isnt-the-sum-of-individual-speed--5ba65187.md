@@ -1,7 +1,7 @@
 ---
 title: "Collective Speed Is Not the Summation of Individual Speed"
 url: "https://blog.jim-nielsen.com/2026/collective-speed-isnt-the-sum-of individual-speed/"
-fetched_at: 2026-04-27T07:00:43.518746+00:00
+fetched_at: 2026-04-27T07:56:49.634336+00:00
 source: "blog.jim-nielsen.com"
 tags: [blog, raw]
 ---

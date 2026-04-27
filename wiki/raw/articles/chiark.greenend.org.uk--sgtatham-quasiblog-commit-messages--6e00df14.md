@@ -1,7 +1,7 @@
 ---
 title: "Writing commit messages"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/commit-messages/"
-fetched_at: 2026-04-27T07:00:58.326988+00:00
+fetched_at: 2026-04-27T07:57:04.342078+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

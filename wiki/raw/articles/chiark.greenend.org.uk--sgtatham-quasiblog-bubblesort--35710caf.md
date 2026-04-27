@@ -1,7 +1,7 @@
 ---
 title: "I hate bubblesort"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/bubblesort/"
-fetched_at: 2026-04-27T07:00:59.364029+00:00
+fetched_at: 2026-04-27T07:57:05.051390+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

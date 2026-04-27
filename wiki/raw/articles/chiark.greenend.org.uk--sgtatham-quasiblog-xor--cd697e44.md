@@ -1,7 +1,7 @@
 ---
 title: "XOR"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/xor/"
-fetched_at: 2026-04-27T07:00:50.266554+00:00
+fetched_at: 2026-04-27T07:56:56.259286+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

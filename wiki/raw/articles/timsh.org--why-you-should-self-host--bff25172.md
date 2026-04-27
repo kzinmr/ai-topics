@@ -1,7 +1,7 @@
 ---
 title: "Why you should self-host your (vibecoded) app"
 url: "https://timsh.org/why-you-should-self-host/"
-fetched_at: 2026-04-27T07:01:19.472359+00:00
+fetched_at: 2026-04-27T07:57:25.651023+00:00
 source: "timsh.org"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "nth derivative of a quotient"
 url: "https://www.johndcook.com/blog/2026/04/25/nth-derivative-of-a-quotient/"
-fetched_at: 2026-04-27T07:00:41.881331+00:00
+fetched_at: 2026-04-27T07:56:47.688504+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

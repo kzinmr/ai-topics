@@ -2,17 +2,21 @@
 title: Cursor 3
 type: entity
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-04-27
 tags:
 - entity
 - ide
 - coding-agent
 - cursor
+- spacex
+- partnership
 related:
 - coding-agents
 - ide-tools
 - agent-workflows
-sources: []
+- spacex
+sources:
+  - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md
 ---
 
 # Cursor 3
@@ -55,3 +59,24 @@ Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified 
 ## Sources
 - 
 - Cursor blog announcement
+
+## SpaceX Partnership (Apr 2026)
+
+Cursor announced a deep partnership with SpaceX in April 2026:
+
+### The Deal Structure
+- **Option structure**: SpaceX can acquire Cursor later in 2026 for **$60 billion**, or pay Cursor **$10 billion** for collaborative work (likely compute credits rather than cash — a subsidy with an exit option attached).
+- Provides Cursor access to **a million H100 equivalents via Colossus**, giving Cursor a realistic shot at training frontier models.
+
+### Strategic Context
+- Cursor's own model **Composer 2** was built on Moonshot's Kimi; community response was lukewarm.
+- The deal slots into SpaceX's broader push toward **orbital data centres** via Starlink V3 (per [DataCenterDynamics](https://www.datacenterdynamics.com/en/news/elon-musk-says-spacex-will-be-doing-data-centers-in-space/)).
+
+### Kevin Kwok's Analysis
+Per [Kevin Kwok](https://kwokchain.com/2026/04/23/cursor-and-spacex-in-search-of-a-complete-loop/):
+- Top coding labs must own **both model and product** to survive.
+- Distribution without model = rental. Every dev tool becomes either a model company or a feature.
+- The "middle ground" for AI products has evaporated.
+
+### Significance
+This deal gives Cursor the infrastructure to train world-class models competing directly with Anthropic and OpenAI. Whichever direction the option resolves, Cursor lands in a stronger position.

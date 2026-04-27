@@ -1,7 +1,7 @@
 ---
 title: "How Bitwarden Encrypts and Decrypts Secrets"
 url: "https://blog.miguelgrinberg.com/post/how-bitwarden-encrypts-and-decrypts-secrets"
-fetched_at: 2026-04-27T07:00:40.648945+00:00
+fetched_at: 2026-04-27T07:56:45.994609+00:00
 source: "miguelgrinberg.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Two algorithms for randomly generating aperiodic tilings"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-tilings/"
-fetched_at: 2026-04-27T07:01:06.891997+00:00
+fetched_at: 2026-04-27T07:57:12.354632+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

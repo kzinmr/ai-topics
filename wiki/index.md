@@ -59,7 +59,7 @@
 - [[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
 - [[entities/construction-physics-com]] — **URL:** https://constructionphysics.substack.com
 - [[entities/corbett]] — | **X/Twitter** | [@corbtt](https://x.com/corbtt) |
-- [[entities/cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
+|- [[entities/cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development. SpaceX partnership (Apr 2026): $60B acquisition option.
 - [[entities/daniel-de-laney]] — | **Blog** | [danieldelaney.net](https://danieldelaney.net) |
 - [[entities/daniel-han]] — | **X/Twitter** | [@danielhanchen](https://x.com/danielhanchen) |
 - [[entities/daniel-van-strien]] — | **X** | [@vanstriendaniel](https://x.com/vanstriendaniel) |

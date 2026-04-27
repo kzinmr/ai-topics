@@ -1,7 +1,7 @@
 ---
 title: "Vibe Coding Trip Report: Making a sponsor panel"
 url: "https://xeiaso.net/blog/2026/vibe-coding-sponsor-panel/"
-fetched_at: 2026-04-27T07:01:15.468509+00:00
+fetched_at: 2026-04-27T07:57:20.759929+00:00
 source: "xeiaso.net"
 tags: [blog, raw]
 ---

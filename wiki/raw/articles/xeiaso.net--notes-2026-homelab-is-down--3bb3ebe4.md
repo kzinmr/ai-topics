@@ -1,7 +1,7 @@
 ---
 title: "My homelab will be down for at least 20 days"
 url: "https://xeiaso.net/notes/2026/homelab-is-down/"
-fetched_at: 2026-04-27T07:01:13.948447+00:00
+fetched_at: 2026-04-27T07:57:19.236386+00:00
 source: "xeiaso.net"
 tags: [blog, raw]
 ---

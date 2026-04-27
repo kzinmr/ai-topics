@@ -1,7 +1,7 @@
 ---
 title: "Writing custom C++20 coroutine systems"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/coroutines-c++20/"
-fetched_at: 2026-04-27T07:01:02.815273+00:00
+fetched_at: 2026-04-27T07:57:08.407383+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---
