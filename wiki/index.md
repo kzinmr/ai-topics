@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-26 | Total pages: 524
+> Last updated: 2026-04-26 | Total pages: 529
 
 ## Entities
 
@@ -268,6 +268,7 @@
 - [[concepts/agent-survival-benchmark]] — LLMエージェントの生存能力とPvP（プレイヤー対プレイヤー）圧力下での性能を測定するオープンソースベンチマーク。
 - [[concepts/agent-team-swarm/managed-devins]] — Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.2.
 - [[concepts/agentic-alternative-to-graphrag]] — A November 2025 paper by Contextual AI (George Halal, Jackie Zhang, Sheshansh Agrawal) proposing that the reference traversal problem in RAG pipelines
+- [[concepts/autoreason]] — A self-refinement framework extending the [[karpathy-loop]] into subjective reasoning domain. Fixes prompt bias, scope creep, and lack of restraint via blind Borda count voting.
 - [[concepts/agentic-conflict-resolution]] — As organizations scale from a few AI agents to hundreds, they create a "digital workforce" with competing priorities. **Conflict is an inherent featur
 - [[concepts/agentic-design-patterns]] — A system-theoretic framework for engineering robust AI agents, deconstructing them into 5 functional subsystems and mapping them to a catalogue of 12 
 - [[concepts/agentic-manual-testing]] — Moved to concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md
@@ -314,6 +315,7 @@
 - [[concepts/chatgpt-memory-bitter-lesson]] — Analysis of ChatGPT's memory system through the lens of Rich Sutton's **Bitter Lesson** — arguing that the best way to build agent memory is *not to b
 - [[concepts/chief-of-staff-agent-patterns]] — Anthropic cookbook: [The Chief of Staff Agent](https://platform.claude.com/cookbook/claude-agent-sdk-01-the-chief-of-staff-agent)
 - [[concepts/claude-47-tokenizer]] — 2026年4月16日にClaude Opus 4.7がリリースされ、**初めてトークナイザーが変更**された。この変更により、同じ入力テキストが40%多いトークンにマッピングされる。
+- [[concepts/claude-perfect-memory]] — Filesystem-based persistent memory architecture for Claude Code and Managed Agents. Lifecycle layer on top of CLAUDE.md primitives.
 - [[concepts/claude-agent-sdk-sre-patterns]] — Anthropic cookbook: [The Site Reliability Agent](https://platform.claude.com/cookbook/claude-agent-sdk-03-the-site-reliability-agent)
 - [[concepts/claude-code-leak]] — March 2026 incident where Anthropic's Claude Code source code was leaked via npm package.
 - [[concepts/claude-code-routines]] — **Claude Code Routines** are scheduled and event-driven automation configurations introduced by Anthropic in April 2026. They allow users to configure
@@ -332,7 +334,9 @@
 - [[concepts/cognitive-cost-of-agents]] — **Date:** April 3, 2026
 - [[concepts/cognitive-load-software-development]] — Artem Zakirullinの **"Cognitive load is what matters"** — GitHubで12,000+スターを獲得したソフトウェア設計における認知負荷の体系的フレームワーク。
 - [[concepts/compute-scaling-bottlenecks]] — **Date:** April 10, 2026
+- [[concepts/company-ai-pilled]] — Framework for deep organizational AI transformation beyond superficial usage. By Khe Hy, distinguishing AI-pilled from mere AI users.
 - [[concepts/context-compression]] — Methods for reducing the size of context windows while preserving task-relevant information. Critical prerequisite for [[concepts/context-engineering]] — addre
+- [[concepts/content-engine]] — AI-powered content creation, curation, and distribution pipeline. Applies agentic engineering to content production.
 - [[concepts/context-engineering]] — Context EngineeringはHarness Engineeringの横断技術コンポーネント。harness-engineering配下に移動。
 - [[concepts/context-fragments]] — Vivek Trivedy (@vtrivedy10) が2026年4月に提唱した概念。コンテキストウィンドウを「harnessが選択的にロードするオブジェクトの集合」として捉えるフレームワーク。
 - [[concepts/context-graph]] — — [Foundation Capital, "AI's Trillion-Dollar Opportunity: Context Graphs"](https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-oppo
@@ -395,6 +399,7 @@
 - [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — コーディングエージェントに**コードベースの構造化された解説を生成させる**パターン。既存コードの理解、忘れかけた自分のコードの復習、Vibe Codingしたコードの仕組み理解に有効。
 - [[concepts/harness-engineering/agentic-workflows/prompt-driven-development]] — Simon Willisonが提唱する**プロンプトを中心としたソフトウェア開発手法**。AIコーディングエージェントに対して、詳細な仕様をプロンプトとして記述し、それを実装させるワークフロー。
 - [[concepts/harness-engineering/agentic-workflows/red-green-tdd]] — コーディングエージェントとの開発において、テストファースト開発を適用するパターン。Simon Willisonの[Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/r
+- [[concepts/telegram-managed-bots]] — No-code bot creation system from Telegram Bot API 9.6 where manager bots provision and control subordinate bots.
 - [[concepts/harness-engineering/agentic-workflows/rodney]] — Simon Willisonが開発した**Chrome DevTools ProtocolベースのCLIブラウザ自動化ツール**。コーディングエージェントがWeb UIをテスト・検証するために設計。
 - [[concepts/harness-engineering/agentic-workflows/showboat]] — Simon Willisonが開発した、**コーディングエージェントに「自分の作業を示させる」ためのドキュメンテーション/成果物生成ツール**。
 - [[concepts/harness-engineering/agentic-workflows/subagents]] — メインのAIエージェントが**独立したサブエージェントを並列に起動**し、それぞれが隔離されたコンテキストとターミナルセッションでタスクを実行するパターン。

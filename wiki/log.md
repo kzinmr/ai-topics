@@ -1,3 +1,32 @@
+## [2026-04-27] x-bookmarks-ingest | 5 new concept pages created
+
+- [monitor] Telegram Bot API 9.6 → [[telegram-managed-bots]]
+  - **Key idea**: No-code bot creation system where manager bots provision and control subordinate bots
+  - Bot API 9.6 adds can_manage_bots, ManagedBotCreated, getManagedBotToken primitives
+  - New page: concepts/telegram-managed-bots.md
+
+- [deepdive] Karpathy AutoResearch → [[autoreason]]
+  - **Key idea**: Self-refinement framework extending karpathy-loop into subjective reasoning via blind Borda count voting
+  - Fixes three structural failures: prompt bias, scope creep, lack of restraint
+  - New page: concepts/autoreason.md
+
+- [monitor] Khe Hy framework → [[company-ai-pilled]]
+  - **Key idea**: Organizational AI maturity model distinguishing surface AI usage from deep cultural transformation
+  - Levels: AI User → AI Adopter → AI-Pilled → AI-Native
+  - New page: concepts/company-ai-pilled.md
+
+- [deepdive] Claude Code Memory → [[claude-perfect-memory]]
+  - **Key idea**: Filesystem-based persistent memory architecture with lifecycle layer (session commands, rotation crons, drift detection)
+  - Extends CLAUDE.md primitives with persistent memory management
+  - New page: concepts/claude-perfect-memory.md
+
+- [monitor] Content automation → [[content-engine]]
+  - **Key idea**: AI-powered content creation, curation, and distribution pipeline applying agentic engineering
+  - Components: Research → Drafting → Editing → Distribution → Analytics
+  - New page: concepts/content-engine.md
+
+---
+
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
