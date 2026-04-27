@@ -465,3 +465,19 @@
 - raw/articles/timsh.org--switching-to-claude-code-vscode-inside-docker--*.md
 - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md
 - raw/articles/blog.miguelgrinberg.com--post-how-bitwarden-encrypts-and-decrypts-secrets--146d9a70.md
+
+---
+
+## [2026-04-27] trending-topics | GPT-5.5 + Codex + RAG + Claude Code
+
+### Rebuilt
+- **concepts/gpt-models.md** — Complete rebuild with: GPT-5.5 "Spud" (Apr 23, 2026, 82.7% Terminal-Bench), GPT Image 2.0 (Apr 21, gpt-image-2 API), Codex super-app evolution, background computer use, 14 benchmarks vs Claude Opus 4.7/Gemini 3.1 Pro, pricing, safety classification
+  - Sources: openai.com, TechCrunch, Ars Technica, VentureBeat, Wikipedia
+
+### Expanded (stub → full page)
+- **concepts/rag-systems.md** — From stub to comprehensive page covering: core pipeline (chunking/embedding/retrieval/reranking/generation), query expansion, routing, hybrid retrieval, evolution (naïve→agentic), 2026 trends (active/corrective RAG, multimodal), production checklist, vector DB comparison, enterprise considerations
+  - Sources: DEV.to, Techment, Pinecone, PremAI, Contextual AI
+
+### Updated
+- **entities/claude-code.md** — Added: Ultraplan (cloud planning, Week 15), Monitor tool (live log tailing), Auto mode (Mar 24), Routines (Apr 14), CLI Computer Use (research preview), Fast mode (2.5x on Opus 4.6), Desktop redesign, Agent Teams GA, /autofix-pr / /team-onboarding slash commands, Opus 4.7 pricing, 7.6x deployment increase metric
+  - Sources: code.claude.com, GetAI Perks, claude.com blog
