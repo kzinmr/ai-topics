@@ -27,6 +27,31 @@
 
 ---
 
+## [2026-04-27] x-accounts-scan | 6 new concept pages created from X posts
+
+- [deepdive] Shopify Reflexive AI → [[reflexive-ai]]
+  - **Key idea**: Reflexive AI framework — agents that reflect on their own behavior to improve
+  - Continuous improvement loop: act → reflect → adapt
+  - New page: concepts/reflexive-ai.md
+
+- [monitor] Solo Founder Stack 2026 → [[solo-founder-stack]]
+  - **Key idea**: One-person unicorn toolkit — AI-powered stack enabling solo founders to build billion-dollar companies
+  - Dario Amodei: 70-80% chance of one-person billion-dollar company by 2026
+  - New page: concepts/solo-founder-stack.md
+
+- [deepdive] Agreement is a Bug (NYK Builderz) → [[agreement-bug]]
+  - **Key idea**: Forcing 11 Claude Code agents to disagree before agreeing uncovers blind spots
+  - 40+ architecture decisions tested with structured disagreement
+  - New page: concepts/agreement-bug.md
+
+- [monitor] Mac Studio for Local AI → [[mac-studio-local-ai]]
+  - **Key idea**: Mac Studio (M3/M4 Ultra, 512GB unified memory) as local LLM inference platform
+  - 600B-1T parameter models feasible with 4-bit quantization
+  - MLX 10-25% faster than llama.cpp on Apple Silicon
+  - New page: concepts/mac-studio-local-ai.md
+
+---
+
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.

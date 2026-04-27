@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-26 | Total pages: 529
+> Last updated: 2026-04-27 | Total pages: 532
 
 ## Entities
 
@@ -271,6 +271,7 @@
 - [[concepts/autoreason]] — A self-refinement framework extending the [[karpathy-loop]] into subjective reasoning domain. Fixes prompt bias, scope creep, and lack of restraint via blind Borda count voting.
 - [[concepts/agentic-conflict-resolution]] — As organizations scale from a few AI agents to hundreds, they create a "digital workforce" with competing priorities. **Conflict is an inherent featur
 - [[concepts/agentic-design-patterns]] — A system-theoretic framework for engineering robust AI agents, deconstructing them into 5 functional subsystems and mapping them to a catalogue of 12 
+- [[concepts/agreement-bug]] — 40+のアーキテクチャ判断を11のClaude Codeサブエージェントで評価。単一視点の盲点を検出するための「構造化された不一致」フレームワーク。
 - [[concepts/agentic-manual-testing]] — Moved to concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md
 - [[concepts/agentic-pbt]] — Anthropic + Hypothesis共同研究（NeurIPS 2025 DL4C Workshop）。Claude Codeエージェントが型注釈、docstring、関数名、コメントからコードの不変条件（properties）を自律的に推論し、HypothesisフレームワークでPBTを生成
 - [[concepts/agentic-rag]] — Agentic RAG integrates autonomous AI agents into the RAG pipeline, enabling dynamic retrieval, iterative context refinement, and adaptive workflow orc
@@ -493,6 +494,7 @@
 - [[concepts/pydantic-serializability]] — Pydantic's serializability system provides structured output for AI models. Key innovations include:
 - [[concepts/qwen3-6-27b]] — A dense 27B parameter model from the Qwen (OpenQwen) series that outperforms the predecessor 397B MoE model on agentic coding benchmarks.
 - [[concepts/ram-relative-adoption-metric]] — The **Relative Adoption Metric (RAM)** is a time-varying, size-normalized metric developed by Nathan Lambert and Florian to evaluate whether a new lan
+- [[concepts/reflexive-ai]] — Shopifyが提唱するReflexive AIフレームワーク。エージェントの行動を「意図と結果」の反射ループで設計し、計画駆動型アプローチの限界を克服する。
 - [[concepts/reasoning-model-cost-transparency]] — A 2026 study revealing that listed API prices for reasoning language models are systematically misleading, with actual costs differing dramatically fr
 - [[concepts/reasoning-models]] — LLM architectures designed for explicit step-by-step reasoning, including chain-of-thought, process supervision, and test-time compute scaling.
 - [[concepts/recursive-language-models]] — RLM is an inference paradigm where language models recursively decompose and interact with arbitrarily long input context through external environment
@@ -521,6 +523,7 @@
 - [[concepts/structured-outputs]] — Structured outputs is the paradigm of constraining LLM generation to produce valid, machine-readable data (JSON, XML, Pydantic models) rather than fre
 - [[concepts/subagents]] — メインエージェントが独立したサブエージェントを並列に起動し、タスクを委譲するパターン。
 - [[concepts/sycophancy]] — **Sycophancy** refers to the tendency of large language models to agree with users, flatter them, or tailor responses to what they think the user want
+- [[concepts/solo-founder-stack]] — 2026年のソロfounderがAIを活用して一人で大企業並みの生産性を実現するためのツールスタック。「One-Person Unicorn」の具体実装。Vibe CEO、Context Engineering、最小限のAIガバナンス。
 - [[concepts/test-case-minimization]] — **Test case minimization** is the process of finding the smallest possible test case that still reproduces a bug. This technique is essential for effi
 - [[concepts/token-economics]] — LLM inference cost analysis, optimization layers, and the economics of running language models at scale. A prerequisite concept for [[context-engineer
 - [[concepts/tokenmaxxing]] — Post-AIE Miami (April 2026), AI leadership has shifted toward **"Tasteful Tokenmaxxing"** — maximizing AI adoption and ROI while avoiding wasteful, lo
