@@ -1,3 +1,32 @@
+## 2026-04-27 — X Bookmark Ingest (X native articles) — Part 2
+
+### New Entity Pages
+- **entities/ramp-labs.md** — AI research company focused on KV cache compaction for multi-agent systems; created Latent Briefing
+- **entities/intuit-machine.md** — AI agent framework company; published 10 Design Principles of Agentic AI Skills
+- **entities/anthropic.md** — Updated with Claude Managed Agents platform info
+- **entities/jaya-gupta.md** — Foundation Capital partner, co-author of Context Graphs and Trillion-Dollar Loop
+- **entities/foundation-capital.md** — Updated with Trillion-Dollar Loop and Claude Managed Agents articles
+
+### Updated Entity Pages
+- **entities/koylan-ai.md** — Added "Personal OS for AI Agents" (April 27, 2026) section — vision of phone as personal brain, first-class OS agents, memory systems, coordination layer
+
+### New Concept Pages
+- **concepts/agent-harness.md** — Definition of agent harness (context + toolset + guardrails); R.E.S.T framework, PPAF cycle
+- **concepts/kv-cache-compaction.md** — KV cache optimization techniques (comprehensive, hybrid, dynamic, compaction)
+- **concepts/latent-briefing.md** — Ramp Labs' method for sharing memory between agents via KV cache compaction
+- **concepts/agentic-ai-skills.md** — Intuit Machine's 10 design principles for AI agent skills
+- **concepts/personal-os-for-ai-agents.md** — Koylan AI's vision of phone as "personal brain" with AI agents, memory, web access, coordination
+
+### Raw Articles Saved
+- raw/articles/2039441705586602134_The-Trillion-Dollar-Loop-B2B-Never-Had.md
+- raw/articles/2039737982576636294_Googles-20-Year-Secret-Is-Now-Available.md
+- raw/articles/2041927992986009773_Launching-Claude-Managed-Agents.md
+- raw/articles/2042539396638085339_Harness-Engineering.md
+- raw/articles/2042660310851449223_Latent-Briefing-Efficient-Memory-Sharing.md
+- raw/articles/2043071219667480853_Ten-Design-Principles-of-Agentic-AI-Skills.md
+- raw/articles/2043609541477044439_Google-Engineer-Automated-80-of-Work-with-Claude-Code.md
+- raw/articles/2025286163641118915_The-File-System-Is-the-New-Database-Personal-OS-for-AI-Agents.md
+
 ## 2026-04-27 — X Bookmark Ingest (X native articles)
 
 ### New Entity Pages

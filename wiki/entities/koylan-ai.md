@@ -66,6 +66,19 @@ In his viral post "The File System Is the New Database: How I Built a Personal O
 
 This philosophy underpins his Agent Skills architecture, where each skill is a self-contained directory with a SKILL.md file, configuration, and example implementations. The filesystem becomes both the storage mechanism and the organizational metaphor for agent capabilities.
 
+### Personal OS for AI Agents (April 2026)
+
+In a widely-discussed X thread on April 27, 2026, Koylan shared his vision of a "Personal OS" that coordinates AI agents, memory systems, and web access — turning your phone into a "personal brain." This concept extends his "File System Is the New Database" philosophy into a complete personal computing paradigm where AI agents are first-class citizens of the operating system, not just applications.
+
+Key ideas:
+- Your phone as a **personal brain** — not just a communication device but an extension of your cognitive capacity
+- AI agents as **first-class OS citizens** — deeply integrated with the operating system rather than bolted-on apps
+- **Memory systems** — persistent, structured memory that persists across sessions and agents
+- **Web access** — agents that can browse, research, and interact with the web on your behalf
+- **Coordination layer** — an orchestrator that manages multiple agents working on different aspects of your life
+
+This thread connects to his broader Agent Skills philosophy and his work at Sully.ai on context engineering for clinical AI.
+
 ### Multi-Agent Orchestration Patterns
 
 Koylan's work identifies and codifies three dominant multi-agent coordination patterns:
@@ -153,9 +166,10 @@ Autonomous research pipeline using Firecrawl and Claude for enterprise AI case s
 - [[concepts/harness-engineering/system-architecture/agent-skills]] — His open-source skill collection
 - [[concepts/file-system-as-database]] — His persistence philosophy
 - [[concepts/ai-persona-embodiment]] — His work on consistent agent personalities
--  — His defense-in-depth approach to agent safety
--  — His preferred orchestration framework
--  — His current domain at Sully.ai
+- [[concepts/personal-os-for-ai-agents]] — His Personal OS vision for AI agents
+- [[concepts/defense-in-depth]] — His defense-in-depth approach to agent safety
+- [[concepts/langgraph]] — His preferred orchestration framework
+- [[concepts/clinical-ai]] — His current domain at Sully.ai
 
 ## Sources
 

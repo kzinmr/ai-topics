@@ -1,68 +1,50 @@
 ---
 title: "Foundation Capital"
-tags: [[concepts/company-vc-foundation-capital-context-graph-investor]]
-created: 2026-04-20
-updated: 2026-04-24
 type: entity
+aliases: [foundation-capital]
+tags: [entity, ai-research, venture-capital, context-graphs, agent-infrastructure]
+status: complete
+description: "AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents."
 ---
 
 # Foundation Capital
 
-## Overview
+**Foundation Capital** is an AI-focused venture capital firm.
 
-**Type:** Venture Capital Firm  
-**Focus:** Enterprise AI, Agent Infrastructure, Context Graphs  
-**Key Publication:** ["AI's Trillion-Dollar Opportunity: Context Graphs"](https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity) (December 22, 2025)
+## Thesis
 
-## Core Thesis
+### Context Graphs (April 2026)
 
-Foundation Capital's central argument in the Context Graphs article:
+Jaya Gupta, Partner at Foundation Capital, published ["AI's Trillion-Dollar Opportunity: Context Graphs"](https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity) — a thesis arguing that as AI agents scale, the ability to capture, structure, and reason over organizational context becomes the most valuable moat.
 
-1. **Decision traces > rules** — Agents need access to how rules were applied in specific cases, not just what the rules say
-2. **Execution path advantage** — Systems of agents startups sit in the orchestration layer at decision time and can capture context that incumbents (Salesforce, Snowflake) cannot
-3. **Context graph as moat** — The accumulated structure of decision traces becomes the real source of truth for autonomy
-4. **Three startup paths** — Replace entire systems (Regie), replace modules (Maximor), or create new systems of record (PlayerZero)
+Key ideas:
+- **Context is the new data**: Traditional data infrastructure (databases, APIs) captures structured data, but AI agents need *context* — relationships, history, tacit knowledge, organizational norms
+- **Context graphs** are structured representations of organizational knowledge that enable agents to understand and navigate complex business environments
+- **Trillion-dollar opportunity**: The market for context management infrastructure will dwarf traditional data infrastructure as agents become the primary interface to enterprise systems
+
+### Managed Agents (April 2026)
+
+Jaya Gupta also analyzed Anthropic's [Managed Agents](https://www.anthropic.com/managed-agents) — enterprise-grade AI agents that run continuously with guardrails, observability, and governance.
+
+Key observations:
+- Managed agents represent the shift from "chat with AI" to "AI that works for you"
+- Enterprise adoption depends on governance, not just capability
+- The market opportunity spans from individual productivity to full organizational automation
 
 ## Key People
 
-- **Jaya Gupta** — Partner, co-author of Context Graphs article
-- **Ashu Garg** — Co-author of Context Graphs article
+### Jaya Gupta
 
-## Featured Portfolio Companies
+[Jaya Gupta](/wiki/entities/jaya-gupta.md) — Partner at Foundation Capital, active thought leader on context graphs, AI agents, and enterprise AI adoption.
 
-The article features three startups as exemplars of different paths:
+## Related Entities
 
-| Company | Path | Description |
-|---------|------|-------------|
-| [Regie.ai](https://www.regie.ai/) | Path 1 | AI-native sales engagement replacing Outreach/Salesloft |
-| [Maximor](https://www.maximor.ai/) | Path 2 | Finance automation; ERP-agnostic audit-ready agents |
-| [PlayerZero](https://playerzero.ai/) | Path 3 | SRE automation with context graph as engineering world model |
+- [[entities/jaya-gupta]] — Partner
+- [[entities/anthropic]] — Analyzed in "Managed Agents" post
+- [[concepts/context-graph]] — Core thesis concept
+- [[concepts/anthropic-managed-agents]] — Enterprise AI agent architecture
 
-## Relationship to the Context Graph Concept
+## See Also
 
-Foundation Capital's article is the canonical source for the "context graph" thesis in AI agent infrastructure. Key contributions:
-
-- **Articulates the "two clocks problem"** — State clock vs. decision clock divergence
-- **Identifies the execution path advantage** — Being in the orchestration layer at commit time vs. bolting on governance post-hoc
-- **Maps the five-plane architecture** — State → Orchestration → Decision → Control → Observability
-- **Provides the three-path framework** — Replace all, replace modules, create new
-
-## Critical Reception
-
-The article was described as "super provocative" and "went very viral" but with noted disagreements:
-
-> "I thought it was super provocative. I agreed with many parts of it. I disagree with a few parts around. You know, it's not gonna be as easy as just if we just had the agent traces, then we can finally do that work because there's just so much more other stuff that we haven't been able to capture and digitize."
-
-— Referenced reaction in [Latent Space podcast](https://latent.space/) (episode discussing the article)
-
-Key criticisms:
-- **Incumbent response underweighted** — Salesforce Agentforce, ServiceNow Now Assist, Snowflake Cortex Agents, Databricks Agent Bricks are all actively moving into the space
-- **Connection is harder than capture** — The "two clocks" linking problem across heterogeneous systems is non-trivial
-- **Trillion-dollar winner unproven** — Multiple vertical winners may be more likely than a single platform
-
-## Related
-
-- [[concepts/context-graph]] — The main concept page
-- [[jaya-gupta]] — Partner who co-authored the article
-- [[playerzero]] — Path 3 startup (context graph as engineering world model)
-- [[arize]] — Observability layer mentioned in the article
+- [AI's Trillion-Dollar Opportunity: Context Graphs](https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity) — Jaya Gupta, April 2026
+- [Anthropic Managed Agents](https://www.anthropic.com/managed-agents) — Analysis by Jaya Gupta

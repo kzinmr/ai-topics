@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-27 | Total pages: 532
+> Last updated: 2026-04-27 | Total pages: 540
 
 ## Entities
 
@@ -26,7 +26,7 @@
 - [[entities/andriy-burkov]] — | **X** | [@aburkov](https://x.com/aburkov) |
 - [[entities/anildash]] — | **Blog** | [Anil Dash](https://anildash.com) (since 2000) |
 - [[entities/ankur-goyal]] — | **Name** | Ankur Goyal |
-- [[entities/anthropic]] — AI safety research company, developer of the Claude model family.
+- [[entities/anthropic]] — AI safety-focused company behind Claude, Claude Code, and Claude Managed Agents for enterprise deployment.
 - [[entities/anthropic-computer-use]] — **Anthropic Computer Use**は、Claudeモデルがスクリーンショットを見てGUIを直接操作する機能。2024年10月に研究プレビューとして公開され、スクリーン座標へのクリック、キー入力、スクロールなど、人間と同じ方法でコンピュータを操作できる。2026年2月のVercept
 - [[entities/anthropic-labs]] — Anthropic's experimental product division, responsible for launching products outside the core Claude AI assistant.
 - [[entities/antirez-com]] — **URL:** https://antirez.com
@@ -129,7 +129,8 @@
 - [[entities/hynek-schlawack]] — | **X** | [@hynek](https://x.com/hynek) |
 - [[entities/ian-goodfellow]] — | **フルネーム** | Ian Joseph Goodfellow |
 - [[entities/ian-nuttall]] — **URL:** https://ian.is
-- [[entities/ilya-sutskever]] — | **Full Name** | Ilya Sutskever (איליה סوتскеבר) |
+- [[entities/ilya-sutskever]] — | **Full Name** | Ilya Sutskever (איליה סوتスケבר) |
+- [[entities/intuit-machine]] — AI agent framework company; published 10 Design Principles of Agentic AI Skills and the Skills/Harness/Tools architecture.
 - [[entities/jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of **Bun** — an all-in-one JavaScript and TypeScript runtime, bundler, pac
 - [[entities/jason-liu]] — | **X** | [@jxnlco](https://x.com/jxnlco) |
 - [[entities/jaya-gupta]] — - **Role:** Partner at Foundation Capital
@@ -203,6 +204,7 @@
 - [[entities/rachelbythebay-com]] — | **Blog** | [rachelbythebay.com/w](https://rachelbythebay.com/w/) |
 - [[entities/rahul]] — **URL:** https://rahul.gs/
 - [[entities/rakhim-exotext-com]] — **Rakhim Davletkaliyev** is a staff engineer at [[concepts/iqm-quantum-computers]], a programming educator, author, and philosophical tech writer. He blogs at 
+- [[entities/ramp-labs]] — AI research company focused on KV cache compaction for multi-agent systems; created Latent Briefing technique.
 - [[entities/raw-works]] — **Role:** ML researcher, RLM (Recursive Language Model) practitioner
 - [[entities/regie-ai]] — - **Type:** AI Agent Startup (Sales Engagement)
 - [[entities/rehan-van-der-merwe]] — Cloud-native architect and blogger. Writes at [rehanvdm.com](https://rehanvdm.com/blog/).
@@ -270,12 +272,14 @@
 
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building 
 - [[concepts/agent-governance]] — Agent governance is the structured approach enterprises use to define how autonomous AI systems operate, what they can access, and how their actions a
+- [[concepts/agent-harness]] — The **agent harness** is the wrapper around a raw model that turns it into a work engine: context management, toolset, guardrails, and feedback loops. Key frameworks: R.E.S.T, PPAF.
 - [[concepts/agent-harness-primitives]] — A harness is every piece of code, configuration, and execution logic that wraps a raw model to turn it into a work engine. Agent = Model + Harness. Th
 - [[concepts/agent-harnesses]] — The concept of **agent harnesses** represents a philosophical shift in how AI agents should be architected. Rather than building complex orchestration
 - [[concepts/agent-sandboxing]] — Agent Sandboxingは、AIエージェントの動的コード実行を安全に隔离する技術譜。gVisor、FirecrackermicroVM、WASM等の隔离技術を整理。標準コンテナは共有カーネルのため不十分。
 - [[concepts/agent-survival-benchmark]] — LLMエージェントの生存能力とPvP（プレイヤー対プレイヤー）圧力下での性能を測定するオープンソースベンチマーク。
 - [[concepts/agent-team-swarm/managed-devins]] — Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.2.
 - [[concepts/agentic-alternative-to-graphrag]] — A November 2025 paper by Contextual AI (George Halal, Jackie Zhang, Sheshansh Agrawal) proposing that the reference traversal problem in RAG pipelines
+- [[concepts/agentic-ai-skills]] — Intuit Machine's 10 Design Principles for creating AI agent skills — reusable documents that teach AI how to approach entire categories of tasks.
 - [[concepts/autoreason]] — A self-refinement framework extending the [[karpathy-loop]] into subjective reasoning domain. Fixes prompt bias, scope creep, and lack of restraint via blind Borda count voting.
 - [[concepts/agentic-conflict-resolution]] — As organizations scale from a few AI agents to hundreds, they create a "digital workforce" with competing priorities. **Conflict is an inherent featur
 - [[concepts/agentic-design-patterns]] — A system-theoretic framework for engineering robust AI agents, deconstructing them into 5 functional subsystems and mapping them to a catalogue of 12 
@@ -446,8 +450,10 @@
 - [[concepts/karpathy]] — Karpathy (Andrej Karpathy) — AI researcher, educator, and OpenAI/DirectX co-founder. Entity: entities/andrej-karpathy.md
 - [[concepts/karpathy-loop]] — Named after Andrej Karpathy's **[autoresearch](https://github.com/karpathy/autoresearch)** project (released March 6, 2026), which accumulated ~71,000
 - [[concepts/kimi-k2-6]] — **Moonshot Kimi K2.6** is a major open-weight refresh of Moonshot's leading Chinese open model, released in April 2026. It is a **1T-parameter Mixture
+- [[concepts/kv-cache-compaction]] — KV cache optimization techniques: comprehensive, hybrid, dynamic, and compaction methods for reducing token usage in LLM inference.
 - [[concepts/knowledge-graph-memory-agents]] — Knowledge graph memory stores facts as a structured graph of **entities** and **typed relationships**, enabling multi-hop reasoning and entity-centric
 - [[concepts/lambda-monolith-lambdalith]] — A serverless architecture pattern where a single AWS Lambda function handles all API routes, rather than splitting into many small, route-specific Lam
+- [[concepts/latent-briefing]] — Ramp Labs' method for sharing memory between AI agents by operating on the KV cache directly — achieving up to 49% median token savings.
 - [[concepts/llm-as-judge]] — LLM-as-JudgeはLLMを使用してLLM出力を評価するパラダイム。3つのバイアス类型（ルーブリック順序、スコアID、参照解答）と7つのベストプラクティスを整理。高リスク評価にはGPT-4oクラスが必要。
 - [[concepts/llm-evaluation-harness]] — Frameworks and tools for systematically evaluating Large Language Models across standardized benchmarks and custom test suites.
 - [[concepts/llm-training-coherence-evolution]] — How an LLM's coherence and usefulness improve as training progresses, with empirical analysis from Giles Thomas's "Writing an LLM from Scratch" series
@@ -495,6 +501,7 @@
 - [[concepts/openclaw/five-tier-precedence]] — OpenClawのスキルロードシステムが採用する**階層的優先度モデル**。Hermes Agentのself-authoring（自己作成）アプローチとの対比において、最も重要なアーキテクチャ上の差異の一つ。
 - [[concepts/openclaw/philosophy]] — OpenClawの設計哲学の中核は**「Primitives over Defaults」**（デフォルトではなくプリミティブを提供する）。これはLinuxカーネルやKubernetesの設計思想に近い。
 - [[concepts/personal-superintelligence]] — **「AIは中央で全てを自動化するべきか、それとも個人それぞれが自分の目標に向かう道具となるべきか。」**
+- [[concepts/personal-os-for-ai-agents]] — Koylan AI's vision of a Personal OS that coordinates AI agents, memory systems, and web access — turning your phone into a "personal brain."
 - [[concepts/project-glasswing]] — Anthropic's initiative to use [[claude-mythos]] for defensive security research — finding and patching vulnerabilities in critical software.
 - [[concepts/prompt-caching]] — LLM API呼び出しにおけるキャッシングの設計パターン。コスト削減とレイテンシ改善のために、どの部分をキャッシュし、いつ無効化するかを体系的に扱う。
 - [[concepts/pydantic]] — Pydantic is a Python data validation library that uses type hints to validate, serialize, and document data. It has become the de facto standard for d

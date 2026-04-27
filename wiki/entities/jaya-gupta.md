@@ -1,32 +1,35 @@
 ---
 title: "Jaya Gupta"
-tags: [[concepts/person-foundation-capital-investor-context-graph]]
-created: 2026-04-20
-updated: 2026-04-24
 type: entity
+aliases: [jaya-gupta, foundation-capital-partner]
+tags: [entity, vc, partner, foundation-capital, context-graphs, managed-agents]
+status: complete
+description: "Partner at Foundation Capital, thought leader on context graphs and enterprise AI. Published influential thesis on Context Graphs as AI's trillion-dollar opportunity."
 ---
 
 # Jaya Gupta
 
-> TODO: Research her X activity, blog posts, and contributions to build L3 depth.
+**Jaya Gupta** is a Partner at [[entities/foundation-capital]] and a thought leader on enterprise AI adoption, context graphs, and managed agents.
 
-## Profile
+## Key Publications
 
-- **Role:** Partner at Foundation Capital
-- **X:** [@JayaGup10](https://x.com/JayaGup10)
-- **Key Work:** Co-authored ["AI's Trillion-Dollar Opportunity: Context Graphs"](https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity) (December 22, 2025) with Ashu Garg
+### Context Graphs — AI's Trillion-Dollar Opportunity (April 2026)
 
-## Core Thesis (from Context Graphs article)
+Published the influential thesis ["AI's Trillion-Dollar Opportunity: Context Graphs"](https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity) arguing that:
+- Context (relationships, history, tacit knowledge, organizational norms) is the new strategic data layer
+- Context graphs will become critical infrastructure for enterprise AI agents
+- This represents a trillion-dollar market opportunity
 
-- The next trillion-dollar platforms are built by capturing **decision traces** — the exceptions, overrides, precedents, and cross-system context that currently live in Slack threads, deal desk conversations, escalation calls, and people's heads
-- Existing systems of record capture state but not decision lineage
-- Systems of agents startups have a structural advantage: they sit in the execution path and can capture context at decision time
-- The accumulated structure of decision traces forms a **context graph** — a living record that makes precedent searchable
+### Anthropic Managed Agents Analysis
 
-## TODO
+Analyzed Anthropic's [[concepts/anthropic-managed-agents]] — enterprise-grade AI agents running continuously with governance, observability, and guardrails.
 
-- [ ] Research her X/Twitter activity for more thesis details
-- [ ] Find any podcast appearances or interviews
-- [ ] Identify other Foundation Capital investments related to AI agents
-- [ ] Check for speaking engagements or conference talks
-- [ ] Remove skeleton status after enrichment
+## Platform
+
+- [[concepts/foundation-capital]] — Foundation Capital's AI investment thesis
+
+## See Also
+
+- [[entities/foundation-capital]]
+- [[concepts/context-graph]]
+- [[concepts/anthropic-managed-agents]]
