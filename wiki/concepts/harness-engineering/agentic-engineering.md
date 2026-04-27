@@ -130,6 +130,31 @@ This mirrors how good engineering teams work with human developers.
 
 ---
 
+## 抽象化コストの考察（Xe Iasoの視点）
+
+[Xe Iaso](https://xeiaso.net/blog/2026/ai-abstraction/)はAIによる抽象化レベルの上昇について、開発者視点での重要な批判的考察を提供している。
+
+### 「Fine is the Enemy of Good」
+
+AIが出力するコードや文章は常に「まあまあ良い（fine）」レベルで安定している。問題は、この「fine」が人間の基準を静かに低下させること。「fine」が当たり前になると、本当に「良い（good）」ものを見分ける能力が萎える。
+
+> AIに慣れすぎると、平均的な出力に免疫ができ、本当に優れたものを見極める目が曇る。
+
+### 声の喪失（Voice as Non-Negotiable）
+
+AIによるコミュニケーションが一般化すると、**人間らしい「声」**が非対称に貴重になる。大量のAI生成メッセージの中で、本物の人間の文章は持つ独特のテクスチャー、不完全さ、個性がむしろ価値を増す。
+
+### 抽象化と責任のトレードオフ
+
+高い抽象化レベルで開発することの代償：
+- **理解の希薄化** — 生成されたコードの内部動作を理解しないまま進む
+- **デバッグ困難** — 問題が起きた時、何層もの抽象化を剥がす必要がある
+- **スキルの空洞化** — 抽象化に依存しすぎると、低レベルの問題を自力で解決できなくなる
+
+Agentic Engineeringの文脈では、このトレードオフを意識し、抽象化と理解のバランスを取ることが持続可能なエンジニアリングの鍵となる。[[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]]（コード解説の生成）は、この問題への一つの対処法である。
+
+---
+
 ## Further Reading
 
 - [Agentic Engineering](https://simonwillison.net/2025/Apr/11/agentic-engineering/) — Simon Willison

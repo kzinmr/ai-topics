@@ -30,7 +30,7 @@ OpenAI is a leading AI research and product company known for developing the GPT
 ### Language Models
 - **GPT-4/5 series** — Frontier LLMs powering ChatGPT and API integrations
 - **GPT-5.5** (Apr 2026) — First fully retrained base model since GPT-4.5. Designed for multi-step work (planning, tool use, self-checking). Scored 82.7% on Terminal-Bench 2.0. Key unlock for production agent deployment.
-  - **Codex unification**: Since GPT-5.4, OpenAI unified Codex and the main model into a single system — no separate coding model line. GPT-5.5 takes this further with strong gains in agentic coding, computer use, and any task on a computer. OpenAI confirmed it will not release a GPT-5.5-Codex model ([Romain Huet, Apr 2026](https://simonwillison.net/2026/Apr/25/romain-huet/)).
+  - **Key change:** Since GPT-5.4, OpenAI unified Codex and the main model into a single system. There is no separate coding line anymore. GPT-5.5 extends this further with strong gains in agentic coding, computer use, and any task on a computer (per Romain Huet).
 - **o-series** — Reasoning-focused models with extended thinking
 - **GPT-4o / GPT-4o-mini** — Multimodal models with vision and audio capabilities
 

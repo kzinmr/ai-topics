@@ -159,7 +159,24 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
-## [2026-04-27] update | entities/openai.md — GPT-5.5 Codex unification (Romain Huet quote)
+## [2026-04-27] update | [[concepts/harness-engineering/agentic-workflows/vibe-coding]] + [[entities/xeiaso-net]] — enrich with Apr 27 articles
+
+### Updated: Vibe Coding
+- Expanded "実践事例" section with two comprehensive subsections:
+  - **Xe Iaso: Sponsor PanelをVibe Codingで構築** — enriched with GraphQL swamp background, Skills details (4 templ skills), parallel ops/code-generation workflow, full tech stack table, limitations (org sponsorships broken, code quality), and the "ugly but shipped" philosophy
+  - **Tim Sh: セルフホスティングでVibe Codingアプリを運用** — new section: Coolify + Hetzner VPS setup, cloud PaaS pricing critique, levels of abstraction framework, 15-minute local-to-production pipeline for vibecoded apps
+- Sources:
+  - `raw/articles/xeiaso.net--blog-2026-vibe-coding-sponsor-panel--10523b6c.md`
+  - `raw/articles/timsh.org--why-you-should-self-host--bff25172.md`
+
+### Updated: Xe Iaso (xeiaso-net)
+- Added **"Claude Code /buddy: The Perfect April Fools Prank (2026)"** section — Xe's 10/10 review of Claude Code's `/buddy` tamagochi feature, the Xentwine robot companion, and analysis of why opt-in harmless pranks succeed where disruptive April Fools jokes fail
+- Added both new articles to Sources section
+- Source: `raw/articles/xeiaso.net--notes-2026-claude-code-wins-april-fools--f3f49e16.md`
+
+---
+
+
 - Updated GPT-5.5 entry with Codex unification info: since GPT-5.4, no separate coding model — unified into single system
 - Updated Codex entry to reflect that no GPT-5.5-Codex will be released
 - Added raw source: Simon Willison quoting Romain Huet (OpenAI DevRel lead)

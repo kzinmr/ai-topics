@@ -16,7 +16,10 @@ aliases:
 - Cadey
 - Xe
 - Anubis
-sources: []
+sources:
+  - raw/articles/xeiaso.net--blog-2026-vibe-coding-sponsor-panel--10523b6c.md
+  - raw/articles/xeiaso.net--blog-2026-ai-abstraction--744b692b.md
+  - raw/articles/xeiaso.net--notes-2026-claude-code-wins-april-fools--f3f49e16.md
 ---
 
 # Xe Iaso
@@ -69,6 +72,23 @@ This philosophy extends to Xe's broader advocacy for self-hosting, open-source t
 
 Xe is a prominent voice in the Nix/NixOS community, advocating for **declarative, reproducible infrastructure** as the foundation for reliable systems. Their writing on Nix covers everything from development shells to production deployments, always with an eye toward practical, working solutions rather than theoretical purity.
 
+### Claude Code /buddy: The Perfect April Fools Prank (2026)
+
+Xe Iaso wrote a [short note](https://xeiaso.net/notes/2026/claude-code-wins-april-fools/) celebrating the Claude Code team's April Fools 2026 `/buddy` feature — a tamagochi-style coding companion that hatches when you run `/buddy` in Claude Code. Xe's robot companion, **Xentwine**, was described as:
+
+> *"A methodical circuit-whisperer obsessed with untangling logical snarls; speaks in patient, patronizing riddles and will absolutely let you sit in your own bug for three minutes before offering the blindingly obvious fix."*
+
+Xe's key observations on why this prank succeeded where others failed:
+
+- **Opt-in by design**: You must manually create your buddy — off by default, no disruption
+- **Non-intrusive**: Mostly stays out of the way during normal work
+- **Tamagochi-like random interjections**: Adds personality without breaking flow
+- **Interactive**: `/buddy pet` lets you pet your dragon, dog, or robot companion
+
+Xe rated it **10/10** — calling it "the kind of harmless prank that all nerds should aspire for."
+
+This note reflects Xe's broader appreciation for **well-designed developer tooling** and the human side of engineering culture — themes that run through their infrastructure and open-source work.
+
 ### The Human Cost of Automation
 
 A recurring theme in Xe's writing is the **human impact of automated systems**. Whether it's AI scrapers overwhelming personal servers, or the social dynamics of open-source maintenance at scale, Xe consistently centers the human experience in infrastructure discussions. Their Patreon-funded development model is itself a statement: **important infrastructure work should be directly supported by the community that benefits from it**, not by venture capital or corporate sponsorship.
@@ -82,6 +102,14 @@ A recurring theme in Xe's writing is the **human impact of automated systems**. 
 > *"Security software usually needs to be held to a higher standard than most other types of software."*
 
 > *"If this goes wrong, I'm going to get personally mega-cancelled."* — on the personal stakes of maintaining widely-trusted open-source security software
+
+## Recent Blog Posts (2026)
+
+Xe's recent writing in early-mid 2026 covers AI-assisted development and abstraction costs from an infrastructure engineer's perspective:
+
+- **Vibe Coding Trip Report: Making a Sponsor Panel** (Apr 2026) — A practical experience report using Claude Code to build a conference sponsor panel. Key patterns: skills-as-context (writing instructions for the agent), mock-data-first iteration, and the "ugly but shipped" ethos. See [[concepts/harness-engineering/agentic-workflows/vibe-coding]] for analysis.
+- **I Don't Know If I Like Working at Higher Levels of Abstraction** (Apr 2026) — A critical reflection on AI's impact on developer cognition and the cost of abstraction. Introduces the idea that "fine is the enemy of good" — AI's consistent mediocrity risks dulling human judgment. See [[concepts/harness-engineering/agentic-engineering]] for analysis.
+- **Claude Code Won April Fools Day** (Apr 2026) — A lighthearted post about Claude Code's `/buddy` tamagochi feature during April Fools, praising it as a well-designed, opt-in prank that doesn't harm user productivity.
 
 ## Related
 
@@ -100,3 +128,5 @@ A recurring theme in Xe's writing is the **human impact of automated systems**. 
 - [Weaponizing Hyperfocus](https://xeiaso.net/blog/weaponizing-hyperfocus/)
 - [Anubis (software) — Wikipedia](https://en.wikipedia.org/wiki/Anubis_(software))
 - [Xeiaso.net/about](https://xeiaso.net/about)
+- [Claude Code won April Fools Day this year](https://xeiaso.net/notes/2026/claude-code-wins-april-fools/) (Apr 2026)
+- [Vibe Coding Trip Report: Making a sponsor panel](https://xeiaso.net/blog/2026/vibe-coding-sponsor-panel/) (Mar 2026)

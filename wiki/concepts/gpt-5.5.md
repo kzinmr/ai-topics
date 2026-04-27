@@ -36,6 +36,12 @@ GPT-5.5 represents a strategic shift for OpenAI toward **agent-optimized base mo
 
 Its 82.7% score on Terminal-Bench 2.0 positions it as one of the top-performing models for agentic coding and terminal-based workflows.
 
+### Codex Unification
+
+A critical architectural change: **since GPT-5.4, Codex and the main model have been unified into a single system.** There is no separate coding line model anymore. GPT-5.5 extends this further with strong gains in agentic coding, computer use, and any task on a computer. OpenAI confirmed it will not release a GPT-5.5-Codex model ([Romain Huet, Apr 2026](https://simonwillison.net/2026/Apr/25/romain-huet/)).
+
+This marks a strategic shift: rather than maintaining a separate coding-optimized model, OpenAI chose to make the general-purpose model sufficiently capable at coding tasks through unified training.
+
 ## Relation to SPUD
 
 GPT-5.5 is likely the same model previously discussed under the internal codename **[[entities/openai-spud]]** (OpenAI SPUD), whose pre-training was completed in March 2026.
