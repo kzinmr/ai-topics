@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-27 | Total pages: 575
+> Last updated: 2026-04-27 | Total pages: 576
 
 ## Entities
 
@@ -333,6 +333,7 @@
 - [[concepts/claude-code-leak]] — March 2026 incident where Anthropic's Claude Code source code was leaked via npm package.
 - [[concepts/claude-code-routines]] — **Claude Code Routines** are scheduled and event-driven automation configurations introduced by Anthropic in April 2026. They allow users to configure
 - [[concepts/claude-code-source-patterns]] — Analysis of tactical engineering patterns found in Claude Code's leaked source code (March 2026). Reveals how Anthropic builds production-grade coding
+- [[concepts/claude-code-tips]] — Running Claude Code in Docker with VSCode Dev Containers for security isolation and cost efficiency. Uses fine-grained GitHub tokens instead of SSH keys.
 - [[concepts/claude-design]] — **Claude Design** is a visual design product by Anthropic Labs, released in April 2026. It enables collaborative design creation powered by Claude Opu
 - [[concepts/claude-memory]] — Analysis of Claude's memory system design — how Anthropic uses **filesystem-based memory** (`CLAUDE.md`, `.agent/` directories) instead of proprietary
 - [[concepts/claude-memory-tool]] — Analysis of how Cognition (makers of Devin) is adopting Claude's memory approach — and what this reveals about competitive dynamics in the coding agen

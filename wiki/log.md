@@ -1,3 +1,14 @@
+## [2026-04-27] create | [[concepts/claude-code-tips]] — Claude Code in Docker with VSCode Dev Containers
+
+### New Concept Pages
+- [[concepts/claude-code-tips]] — Running Claude Code in Docker with VSCode Dev Containers for security isolation and cost efficiency. Covers motivation (security, performance, cost), step-by-step setup guide, fine-grained GitHub token configuration, and comparison with alternatives.
+  - Source: timsh.org article "Switching to Claude Code + VSCode inside Docker"
+  - GitHub reference implementation: tim-sha256/claude-in-docker
+  - Related: agent-sandboxing, container-context, claude-code-leak
+- [[index.md]] — Added entry under Concepts section (alphabetically after claude-code-source-patterns); total pages updated 575→576
+
+---
+
 ## 2026-04-27 — X Bookmark Ingest (X native articles) — Part 2
 
 ### New Entity Pages
