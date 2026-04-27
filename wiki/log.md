@@ -414,3 +414,21 @@
 
 ### Updated Navigation
 - [[index.md]] — Added concepts/self-hosting-ai-development under Concepts section
+
+## [2026-04-27] blog-ingest | Batch 2 — Theseus AI funding, Harness Engineering principles
+
+### New Concepts
+- [[concepts/ai-industry-news]] — AI industry roundup from The Signal by Alex Banks (Apr 26). Covers OpenAI's 4-product week, Anthropic sweep (Cowork artifacts, Managed Agent file-based memory, 200+ connectors), SpaceX-Cursor partnership.
+  - Source: raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md
+- [[concepts/cryptography-patterns]] — Miguel Grinberg's deep-dive into Bitwarden/Vaultwarden encryption architecture: two-layer design, PBKDF2/Argon2id derivation, AES-256-CBC + HMAC-SHA256, cipherstring format. Python code examples.
+  - Source: raw/articles/blog.miguelgrinberg.com--post-how-bitwarden-encrypts-and-decrypts-secrets--146d9a70.md
+- [[concepts/claude-code-tips]] — Running Claude Code inside Docker with VSCode Dev Containers. Security isolation, cost efficiency vs Cursor Pro, fine-grained GitHub token setup.
+  - Source: raw/articles/timsh.org--claude-inside-docker--6842418e.md
+
+### Updated
+- [[concepts/agentic-engineering]] → [[concepts/harness-engineering/agentic-engineering]] — Made redirect to canonical location
+
+### Raw Articles Saved
+- raw/articles/timsh.org--switching-to-claude-code-vscode-inside-docker--*.md
+- raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md
+- raw/articles/blog.miguelgrinberg.com--post-how-bitwarden-encrypts-and-decrypts-secrets--146d9a70.md
