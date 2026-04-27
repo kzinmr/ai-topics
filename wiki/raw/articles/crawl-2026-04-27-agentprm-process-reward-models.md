@@ -4,6 +4,7 @@
 **Retrieved:** 2026-04-27
 **Author:** Sanjiban Choudhury
 **Published:** 14 Feb 2025
+**Peer Review:** ❌ arXiv-only (not peer-reviewed)
 
 ## Abstract
 

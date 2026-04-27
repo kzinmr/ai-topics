@@ -6,6 +6,7 @@ type: concept
 tags: [evaluation, model, agent-evals, training, inference]
 sources:
   - raw/articles/crawl-2026-04-27-agentprm-process-reward-models.md
+notes: "⚠️ 主ソース (arXiv:2502.10325) はarXiv-only、未査読。査読付き論文が出た場合に更新推奨"
 ---
 
 # Process Reward Models for Agent Evaluation

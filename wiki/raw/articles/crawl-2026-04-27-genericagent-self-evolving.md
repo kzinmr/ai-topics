@@ -4,6 +4,7 @@
 **Retrieved:** 2026-04-27
 **Authors:** Jiaqing Liang et al. (17 authors, Fudan University)
 **Published:** 18 Apr 2026
+**Peer Review:** ❌ arXiv-only (not peer-reviewed)
 
 ## Core Thesis
 
