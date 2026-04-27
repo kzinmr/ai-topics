@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-27 | Total pages: 540
+> Last updated: 2026-04-27 | Total pages: 542
 
 ## Entities
 
@@ -336,6 +336,7 @@
 - [[concepts/claude-design]] — **Claude Design** is a visual design product by Anthropic Labs, released in April 2026. It enables collaborative design creation powered by Claude Opu
 - [[concepts/claude-memory]] — Analysis of Claude's memory system design — how Anthropic uses **filesystem-based memory** (`CLAUDE.md`, `.agent/` directories) instead of proprietary
 - [[concepts/claude-memory-tool]] — Analysis of how Cognition (makers of Devin) is adopting Claude's memory approach — and what this reveals about competitive dynamics in the coding agen
+- [[concepts/claude-managed-agents]] — Anthropic's Claude Managed Agents platform with persistent **memory stores** (workspace-scoped text documents, multi-agent sync, concurrency handling, API export). Memory mounted at /mnt/memory/.
 - [[concepts/claude-mythos-glasswing]] — **Claude Mythos** is Anthropic's most powerful AI model to date — described internally as "by far the most powerful AI model we've ever developed." **
 - [[concepts/claude-mythos-preview]] — **Claude Mythos** is Anthropic's next-generation frontier model series. The first preview was announced on **April 7, 2026**, accompanied by a detaile
 - [[concepts/cli-over-mcp-pattern]] — **CLI Over MCP** is a design principle for AI-assisted development workflows that prioritizes standard Command Line Interface (CLI) tools over Model C
@@ -381,6 +382,7 @@
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — After Supervised Fine-Tuning (SFT), preference optimization methods align models with human values and desired behaviors. These methods differ in data
 - [[concepts/fine-tuning/trl]] — TRL is HuggingFace's library for fine-tuning language models with reinforcement learning and preference optimization methods.
 - [[concepts/fine-tuning/unsloth]] — Unsloth is a fine-tuning optimization library providing 2-5x faster training with 50-80% less memory usage through custom Triton kernels and LoRA/QLoR
+- [[concepts/filesystem-memory]] — The filesystem-as-agent-memory pattern: using standard file I/O for persistent agent memory rather than specialized databases. Validated by Claude Plays Pokémon experiment showing models learn to organize memory files as intelligence scales.
 - [[concepts/flashattention-pytorch-educational]] — [shreyansh26/FlashAttention-PyTorch](https://github.com/shreyansh26/FlashAttention-PyTorch) は、FlashAttentionアルゴリズム（FA1からFA4まで）をPyTorchで教育的・アルゴリズム的明晰さの
 - [[concepts/formal-logic-foundation]] — Formal logic is the symbolic reasoning layer that underpins neurosymbolic AI systems. In the NeSy paradigm, formal logic provides the deterministic, v
 - [[concepts/formal-verification-llm-agents]] — Formal verification is the practice of mathematically proving that code *always* satisfies its specifications—including all edge cases. AI is poised t

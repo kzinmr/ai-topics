@@ -34,6 +34,20 @@ Anthropic launched Claude Managed Agents — a platform for deploying autonomous
 - Integration with existing enterprise systems
 - Foundation Capital partnership for go-to-market
 
+### Memory Stores
+
+Claude Managed Agents now supports persistent **memory stores** (April 2026):
+- Memory stored as files, accessible across sessions
+- Mounted at `/mnt/memory/<store-name>/` in agent containers
+- Multiple agents can access the same memory store with real-time sync
+- Concurrency handling prevents agents from overwriting each other's updates
+- Memories can be exported via the API
+- Files are interpretable and sharable
+
+The filesystem-as-memory approach was validated through [DavidSHershey's Claude Plays Pokémon experiment](https://x.com/DavidSHershey), showing that later models (Opus 4.6) learn to organize memory files much more effectively than earlier ones (Sonnet 3.5).
+
+See [[concepts/claude-managed-agents]] for full details.
+
 ## Claude Code
 
 Anthropic's CLI coding agent (see [[concepts/claude-code]]). A terminal-based agent that can:

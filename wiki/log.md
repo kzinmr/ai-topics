@@ -9,6 +9,7 @@
 
 ### Updated Entity Pages
 - **entities/koylan-ai.md** — Added "Personal OS for AI Agents" (April 27, 2026) section — vision of phone as personal brain, first-class OS agents, memory systems, coordination layer
+- **entities/anthropic.md** — Added Memory Stores section (April 27, 2026) — workspace-scoped memory, /mnt/memory/ mount, multi-agent sync, concurrency handling, API export
 
 ### New Concept Pages
 - **concepts/agent-harness.md** — Definition of agent harness (context + toolset + guardrails); R.E.S.T framework, PPAF cycle
@@ -16,6 +17,8 @@
 - **concepts/latent-briefing.md** — Ramp Labs' method for sharing memory between agents via KV cache compaction
 - **concepts/agentic-ai-skills.md** — Intuit Machine's 10 design principles for AI agent skills
 - **concepts/personal-os-for-ai-agents.md** — Koylan AI's vision of phone as "personal brain" with AI agents, memory, web access, coordination
+- **concepts/claude-managed-agents.md** — Claude Managed Agents platform with memory stores — workspace-scoped text documents, real-time multi-agent sync, concurrency handling, API export
+- **concepts/filesystem-memory.md** — Filesystem-as-agent-memory pattern: using standard file I/O for persistent memory. Validated by Claude Plays Pokémon experiment showing models learn to organize memory files as intelligence scales.
 
 ### Raw Articles Saved
 - raw/articles/2039441705586602134_The-Trillion-Dollar-Loop-B2B-Never-Had.md
@@ -26,8 +29,9 @@
 - raw/articles/2043071219667480853_Ten-Design-Principles-of-Agentic-AI-Skills.md
 - raw/articles/2043609541477044439_Google-Engineer-Automated-80-of-Work-with-Claude-Code.md
 - raw/articles/2025286163641118915_The-File-System-Is-the-New-Database-Personal-OS-for-AI-Agents.md
+- raw/articles/2047720067107033525_Memory-in-Claude-Managed-Agents.md
 
-## 2026-04-27 — X Bookmark Ingest (X native articles)
+## 2026-04-27 — X Bookmark Ingest (X native articles) — Part 3
 
 ### New Entity Pages
 - **entities/letta.md** — Letta AI / Letta Code (model-agnostic agent harness)
