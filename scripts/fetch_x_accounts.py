@@ -17,10 +17,10 @@ except ImportError:
 
 XURL = os.environ.get("XURL_PATH", "/opt/data/bin/xurl")
 
-AI_TOPICS = Path(os.environ.get("AI_TOPICS_HOME", Path.home() / "ai-topics"))
-YAML_PATH = AI_TOPICS / "config" / "feeds" / "x-accounts.yaml"
-
 HERMES_HOME = Path(os.environ.get("HERMES_HOME", Path.home() / ".hermes"))
+PROFILE_ROOT = HERMES_HOME.parent
+AI_TOPICS = Path(os.environ.get("AI_TOPICS_HOME", str(PROFILE_ROOT / "ai-topics")))
+YAML_PATH = AI_TOPICS / "config" / "feeds" / "x-accounts.yaml"
 DB = HERMES_HOME / "processed_x_accounts.json"
 DETAIL_DIR = HERMES_HOME / "cron" / "data"
 DETAIL_FILE = DETAIL_DIR / "x_accounts_latest_full.json"

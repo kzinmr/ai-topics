@@ -135,7 +135,7 @@ What they tweet about most frequently.
 
 2. **Budget exhaustion**: 50-iteration budget per subagent. When processing 5 entities, subagent may hit limit and skip writing some files. Check `exit_reason: max_iterations` in results.
 
-3. **Path confusion**: delegate_task subagents write to `~/.hermes/hermes-agent/wiki/entities/` (agent home) instead of `~/wiki/entities/`. ALWAYS provide `~/wiki/entities/` in subagent prompts, and verify files were written there after completion. If subagents wrote to the wrong location, copy enriched files from the agent home path to the correct path.
+3. **Path discipline**: delegate_task subagents must always target `~/wiki/entities/`. If a delegated context shows `~/.hermes/home/...`, treat it as a runtime artifact and keep writing to the canonical wiki path only.
 
 4. **Status cleanup needed**: Even when subagents write content successfully, `status: skeleton` in frontmatter is often NOT removed. Always verify and manually replace with `status: complete` if needed.
 

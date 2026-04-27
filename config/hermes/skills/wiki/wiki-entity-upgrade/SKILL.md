@@ -100,10 +100,7 @@ for b in bio_only: print(f"  - {b}")
 
 ## Critical Pitfalls
 
-- **Subagent write_file path bug**: delegate_task subagents write files to `~/.hermes/hermes-agent/wiki/entities/` instead of the correct `~/wiki/entities/`. After subagent completion, ALWAYS check the wrong directory and copy upgraded files:
-  ```bash
-  cp ~/.hermes/hermes-agent/wiki/entities/*.md ~/wiki/entities/
-  ```
+- **Canonical write target**: delegate_task subagents must write directly to `~/wiki/entities/`. If a delegated context exposes an isolated HOME or shows `~/.hermes/home/...`, treat that as a runtime artifact and continue to target the canonical wiki path only.
 - **Subagent filename aliasing**: Even when given exact filenames, subagents create files with DIFFERENT names (e.g., `benjamin-clavi.md` instead of `bclavie.md`, `ethan-mollick.md` instead of `emollick.md`, `hynek-schlawack.md` instead of `hynek.md`). After each batch:
   1. Check all new files: `ls -la ~/wiki/entities/*.md` (sort by time)
   2. Look for skeleton duplicates: files with `status: skeleton` in frontmatter
