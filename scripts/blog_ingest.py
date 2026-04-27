@@ -6,6 +6,7 @@ import json
 import os
 import re
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
@@ -41,7 +42,7 @@ def url_to_filename(url: str) -> str:
 
 def scrape_url(url: str) -> dict | None:
     try:
-        with httpx.Client(timeout=30, follow_redirects=True, headers=HTTP_HEADERS) as client:
+        with httpx.Client(timeout=15, follow_redirects=True, headers=HTTP_HEADERS) as client:
             resp = client.get(url)
             resp.raise_for_status()
     except Exception:
@@ -70,6 +71,14 @@ def scrape_url(url: str) -> dict | None:
     }
 
 
+def _scrape_item(item: dict) -> tuple:
+    """Scrape a single blog article item. Returns (item, raw|None)."""
+    url = item.get("url", "").strip()
+    if not url:
+        return (item, None)
+    return (item, scrape_url(url))
+
+
 def save_article(raw: dict, source_name: str) -> str:
     RAW_ARTICLES_DIR.mkdir(parents=True, exist_ok=True)
     path = RAW_ARTICLES_DIR / url_to_filename(raw["url"])
@@ -88,25 +97,32 @@ def save_article(raw: dict, source_name: str) -> str:
 
 
 def persist_blog_articles(articles: dict) -> tuple[list[dict], list[dict]]:
+    items = articles.get("blog_articles", [])
+    if not items:
+        return [], []
+
     saved = []
     unsaved = []
-    for item in articles.get("blog_articles", []):
-        url = item.get("url", "").strip()
-        title = item.get("title", "").strip()
-        blog = item.get("blog", "").strip()
-        if not url:
-            continue
-        raw = scrape_url(url)
-        if raw is None:
-            unsaved.append({"blog": blog, "title": title, "url": url})
-            continue
-        raw_path = save_article(raw, blog)
-        saved.append({
-            "blog": blog,
-            "title": raw["title"] or title,
-            "url": url,
-            "raw_path": raw_path,
-        })
+    max_workers = min(8, len(items))  # cap at 8 concurrent workers
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(_scrape_item, item): item for item in items}
+        for future in as_completed(futures):
+            item, raw = future.result()
+            blog = item.get("blog", "").strip()
+            title = item.get("title", "").strip()
+            url = item.get("url", "").strip()
+            if raw is None:
+                unsaved.append({"blog": blog, "title": title, "url": url})
+                continue
+            raw_path = save_article(raw, blog)
+            saved.append({
+                "blog": blog,
+                "title": raw["title"] or title,
+                "url": url,
+                "raw_path": raw_path,
+            })
+
     return saved, unsaved
 
 
