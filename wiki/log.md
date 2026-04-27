@@ -152,6 +152,18 @@
 
 ---
 
+## [2026-04-27] create | [[concepts/ai-industry-news]] — AI industry roundup from The Signal (Apr 26)
+
+### New Concept Pages
+- [[concepts/ai-industry-news]] — Summary of The Signal newsletter by Alex Banks (Apr 26, 2026). Covers OpenAI's four-product launch week (ChatGPT Images 2, GPT-5.5, Workspace Agents, ChatGPT for Clinicians), Anthropic's expansion (Cowork live artifacts, Managed Agent memory via text files, 15 new consumer connectors), and SpaceX-Cursor strategic partnership ($60B acquisition option).
+  - Source: `raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md`
+  - Cross-references: [[entities/openai]], [[entities/anthropic]], [[concepts/chatgpt-images-2.0]], [[concepts/gpt-5.5]], [[concepts/openai-workspace-agents]], [[concepts/cursor-ide]]
+
+### Index Updates
+- Added entry under Concepts (alphabetically after ai-index-report-2026); total pages 577→578
+
+---
+
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-27 | Total pages: 577
+> Last updated: 2026-04-27 | Total pages: 578
 
 ## Entities
 
@@ -303,6 +303,7 @@
 - [[concepts/ai-digital-nato]] — In April 2026, **OpenAI, Anthropic, and Google** began sharing threat intelligence through the **Frontier Model Forum** (founded with Microsoft in 202
 - [[concepts/ai-evals]] — Product-specific evaluation systems for measuring whether an AI application works correctly on real tasks with real data. **Not** foundation model ben
 - [[concepts/ai-index-report-2026]] — スタンフォード大学HAI（Human-Centered AI Institute）が発表した年次AI指数レポート。AIの研究開発、技術性能、経済影響、倫理・ガバナンスなど包括的なデータを収録。
+- [[concepts/ai-industry-news]] — AI industry roundup from The Signal newsletter (Apr 26): OpenAI's 4 launches, Anthropic sweep, SpaceX-Cursor partnership.
 - [[concepts/ai-memory-systems]] — OpenAIのChatGPT Memory、AnthropicのClaude Memory（開発中）、CognitionのDevin Memoryは、それぞれ異なる設計哲学に基づいている。このページは3つのアプローチを比較し、コーディングエージェントにおけるメモリシステムの最適設計を探る。
 - [[concepts/ai-military]] — Coverage of AI systems (particularly Claude) outperforming US military teams in wargame simulations, and the subsequent Pentagon-Anthropic dispute ove
 - [[concepts/ai-observability]] — AI observability extends traditional software observability (metrics, logs, traces) to cover the unique challenges of LLM-powered applications: non-de
