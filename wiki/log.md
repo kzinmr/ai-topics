@@ -1,3 +1,17 @@
+## [2026-04-27] crawl | Active Knowledge Crawl — Local LLM (deepdive)
+
+### Policy: deepdive — llama.cpp Anthropic API & Speculative Decoding
+- **concepts/inference/llama-cpp** — Enriched with: Anthropic Messages API compatibility, reranking endpoint, 6 speculative decoding variants (draft model, ngram-simple, ngram-mod, ngram-cache, ngram-map-k, ngram-map-k4v), speculative checkpointing (PR #19493), continuous batching, multimodel Docker images
+  - Source: raw/articles/crawl-2026-04-27-llamacpp-features.md
+  - Related: speculative-decoding, local-llm/gguf
+
+### Policy: deepdive — vLLM v0.19 Gemma 4 & Performance Mode
+- **concepts/inference/vllm** — Enriched with: Gemma 4 full support, zero-bubble async scheduling, Model Runner V2, performance-mode flag, Anthropic API compatibility, Qwen3.5 GDN support, CPU KV cache offloading, DBO generalization, NVIDIA B300/GB300 support, Q2 2026 roadmap
+  - Source: raw/articles/crawl-2026-04-27-vllm-features.md
+  - Related: speculative-decoding, local-llm
+
+---
+
 ## [2026-04-27] crawl | Active Knowledge Crawl — Agent Team/Swarm, AI Evals, Agent Swarms
 
 ### Policy: laterals — Agent Identity (from agent-team-swarm)

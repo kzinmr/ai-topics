@@ -451,8 +451,8 @@
 - [[concepts/illusion-of-thinking]] — A series of research papers in 2025-2026 demonstrated that **pure LLMs fail at logical planning tasks** they appear to solve, and that **neurosymbolic
 - [[concepts/inference]] — LLM推論の3大エンジン: llama.cpp (ローカルCPU/GPU), vLLM (サーバー高スループット), SGLang (エージェント最適化)
 - [[concepts/inference-speed-development]] — **Inference Speed Development** describes a paradigm shift in software development cadence enabled by AI coding agents. Instead of the traditional "wr
-- [[concepts/inference/llama-cpp]] — llama.cpp is a C/C++ inference engine for running LLMs efficiently on consumer hardware, created by Georgi Gerganov.
-- [[concepts/inference/vllm]] — vLLM is a high-throughput LLM serving engine with PagedAttention optimization.
+- [[concepts/inference/llama-cpp]] — C/C++ inference engine for local LLMs. Now with Anthropic API, 6 speculative decoding variants, reranking endpoint, continuous batching (2026).
+- [[concepts/inference/vllm]] — High-throughput LLM serving engine. v0.19: Gemma 4, zero-bubble scheduling, Anthropic API, performance mode, Q2 roadmap (2026).
 - [[concepts/intent-formalization]] — **Intent formalization** is the challenge of automatically translating vague human intent into precise, checkable program specifications. It is the ce
 - [[concepts/interactive-explanations]] — Moved to concepts/harness-engineering/agentic-workflows/interactive-explanations.md
 - [[concepts/karpathy]] — Karpathy (Andrej Karpathy) — AI researcher, educator, and OpenAI/DirectX co-founder. Entity: entities/andrej-karpathy.md

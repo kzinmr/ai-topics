@@ -117,7 +117,7 @@ topics:
   - concepts/local-llm/vllm
   notes: '階層化済み: GGUF, llama.cpp, vLLMの各サブページ。最新ベンチマーク、新モデル対応を追跡'
   added: 2026-04-14
-  last_crawled: '2026-04-23'
+  last_crawled: '2026-04-27'
 - slug: ai-memory-systems
   title: AI Memory Systems
   crawl_policy: prerequisites
