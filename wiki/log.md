@@ -481,3 +481,30 @@
 ### Updated
 - **entities/claude-code.md** — Added: Ultraplan (cloud planning, Week 15), Monitor tool (live log tailing), Auto mode (Mar 24), Routines (Apr 14), CLI Computer Use (research preview), Fast mode (2.5x on Opus 4.6), Desktop redesign, Agent Teams GA, /autofix-pr / /team-onboarding slash commands, Opus 4.7 pricing, 7.6x deployment increase metric
   - Sources: code.claude.com, GetAI Perks, claude.com blog
+
+---
+
+## [2026-04-27] RSS | LMSYS Org Blog — 記事取り込み
+
+### New Entities
+- **entities/lmsys-org** — LMSYS Org (Large Model Systems Organization), UC Berkeleyによるオープンリサーチ組織。Chatbot Arena、SGLang、FastChat、Miles RLなどを開発。
+  - Source: lmsys.org/blog
+
+### New Entities
+- **entities/sglang** — 高性能LLM推論エンジン。RadixAttention、HiSparse、Elastic EP、EPD Disaggregation、chunked pipeline parallelism。
+  - Source: lmsys.org/blog
+
+### New Concepts
+- **concepts/hisparse** — SGLangの階層型メモリシステム。スパースアテンションでKVオフローディングにより最大5倍スループット向上。
+  - Source: lmsys.org/blog (2026-04-10)
+- **concepts/elastic-ep** — MoEモデル向けフォールトトレラントexpert parallelism。Mooncake経由でダウンタイム90%削減。
+  - Source: lmsys.org/blog (2026-03-25)
+- **concepts/epd-disaggregation** — VLMサービング向け3層分離アーキテクチャ（Encoder/Prefill/Decode）。SGLangにより弾力的スケーリングを実現。
+  - Source: lmsys.org/blog (2026-03-17)
+- **concepts/miles-rl** — LMSYSによるオープンソースRLポストトレーニングフレームワーク。GRPO/PPO + SGLang + Slime、マルチノードRayオーケストレーション。
+  - Source: lmsys.org/blog (2026-03-17)
+- **concepts/sglang-pipeline-parallelism** — SGLangのchunked pipeline parallelism。100万トークンコンテキストで3.31倍prefillスループット。
+  - Source: lmsys.org/blog (2026-02-24)
+
+### index.md updated
+- Added 2 entities and 5 concepts, total pages 582→589

@@ -261,7 +261,9 @@
 - [[entities/zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.
 - [[entities/sandro-puppo]] — Co-founder of Cua (YC X25) and Lucebox. Focus on local LLM inference optimization and computer-use agent infrastructure.
 - [[entities/lucebox]] — A personal computer built for local AI agents. Open-source project focused on maximizing inference throughput on consumer hardware through custom CUDA
-- [[entities/trycua-cua]] — Open-source framework enabling AI agents to control full operating systems within high-performance, lightweight virtual containers. Backed by Y Combin
+|- [[entities/trycua-cua]] — Open-source framework enabling AI agents to control full operating systems within high-performance, lightweight virtual containers. Backed by Y Combin
+|- [[entities/lmsys-org]] — Open research org at UC Berkeley behind SGLang, Chatbot Arena, Miles RL, and FastChat.
+|- [[entities/sglang]] — High-performance LLM inference engine with RadixAttention, built by LMSYS Org at UC Berkeley.
 
 ## Concepts
 
@@ -372,7 +374,9 @@
 - [[concepts/dspy]] — **DSPy** (Declarative Self-improving Python for LMs, "dee-spai")は、Stanford NLP Group（Omar Khattab, Arnav Singhviら）が開発した**宣言的LMプログラミングフレームワーク**。
 - [[concepts/dspy-rlm]] — Recursive Language Model — 大規模コンテキストをsandobx Python REPLでプログラム的に探索するDSPyモジュール
 - [[concepts/ecs-fargate-scaling]] — AWS ECS FargateをLambdaのようにスケーリングさせる実験的検証。SQSワークロードでのバーストハンドリング性能を最適化する。
+- [[concepts/elastic-ep]] — Fault-tolerant expert parallelism for MoE models in SGLang; 90% reduction in downtime via Mooncake.
 - [[concepts/elixir-beam-agent-orchestration]] — Elixir/BEAM（Erlang仮想マシン）をAIエージェントオーケストレーションに活用するパターン。[[concepts/openai-symphony]] のRyan Lopopoloが採用したアプローチ。
+- [[concepts/epd-disaggregation]] — Three-tier VLM serving architecture separating Encoder, Prefill, Decode for elastic scaling in SGLang.
 - [[concepts/evaluation-flywheel]] — OpenAIのcookbookで示される、評価と改善を循環させる開発パターン。
 - [[concepts/event-driven-architecture]] — Event-Driven Architecture (EDA) is a software design pattern where services communicate asynchronously through events rather than synchronous API call
 - [[concepts/excessive-agency]] — **Excessive Agency** is listed on the [OWASP Top 10 for LLMs](https://genai.owasp.org/llm-top-10/) as a critical security vulnerability. It occurs whe
@@ -448,6 +452,7 @@
 - [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — Anthropicが実践した、AIエージェント向けのツール設計方法论。「エージェントのためにツールを書き、エージェントを使ってツールを最適化する」アプローチ。
 - [[concepts/headless-ai-services]] — Matt Webbが提唱した概念で、**personal AIが直接API経由でSaaSサービスを操作**し、GUIベースの操作（bot-controlled mouse）を排除するアプローチ。
 - [[concepts/helium-crisis-2026]] — Semiconductor supply chain disruption caused by helium shortage, impacting chip manufacturing globally.
+- [[concepts/hisparse]] — Hierarchical memory system for sparse attention in SGLang; up to 5× throughput via KV offloading.
 - [[concepts/illusion-of-thinking]] — A series of research papers in 2025-2026 demonstrated that **pure LLMs fail at logical planning tasks** they appear to solve, and that **neurosymbolic
 - [[concepts/inference]] — LLM推論の3大エンジン: llama.cpp (ローカルCPU/GPU), vLLM (サーバー高スループット), SGLang (エージェント最適化)
 - [[concepts/inference-speed-development]] — **Inference Speed Development** describes a paradigm shift in software development cadence enabled by AI coding agents. Instead of the traditional "wr
@@ -485,6 +490,7 @@
 - [[concepts/meta-harness]] — An outer-loop system from Stanford and MIT (2026) that automatically searches over harness code for LLM applications. Discovers optimal context manage
 - [[concepts/meta-muse-spark]] — **Muse Spark** is Meta's first model from **Meta Superintelligence Labs (MSL)**, announced on **April 8, 2026**. Internally codenamed "Avocado", it wa
 - [[concepts/microservices-vs-monolith]] — Rehan van der Merwe's architecture decision tree provides a pragmatic approach:
+- [[concepts/miles-rl]] — Open-source RL post-training framework from LMSYS; GRPO/PPO with SGLang + Slime, multi-node Ray orchestration.
 - [[concepts/mismanaged-geniuses-hypothesis]] — **— Authors:** Alex Zhang, Zhening (Zed) Li, Omar Khattab
 - [[concepts/mlx-llm]] — [[mlx-lm]] and [[mlx-vlm]] are Apple's MLX framework packages for running large language models and multimodal models on Apple Silicon. As of 2026, ML
 - [[concepts/model-context-protocol-mcp]] — **Model Context Protocol (MCP)** is an open standard created by **Anthropic** (November 2024) for connecting AI assistants and agents to external data
@@ -535,6 +541,7 @@
 - [[concepts/sandbox/infrastructure]] — Infrastructure-level sandboxing refers to OS/hypervisor-level isolation technologies used to safely execute AI agent code — particularly LLM-generated
 - [[concepts/sandbox/js-runtime]] — JavaScript/TypeScript runtimes form a critical layer of the AI agent stack. Unlike Python's single CPython implementation, the JS ecosystem offers **t
 - [[concepts/scaling-without-slop]] — Approach to scaling AI models while maintaining quality, avoiding the "slop" problem of low-quality outputs.
+- [[concepts/sglang-pipeline-parallelism]] — Chunked pipeline parallelism in SGLang for million-token contexts; 3.31× prefill throughput with dynamic chunking.
 - [[concepts/self-evolving-agents]] — エージェントが自身の振る舞いや能力を時間とともに改善していくパターン。固定されたロジックではなく、フィードバックと学習による継続的な進化を可能にする。
 - [[concepts/self-hosting-ai-development]] — Self-hosting patterns for AI-generated applications using Coolify + Hetzner: cost-effective alternative to Vercel/Railway with full control over infrastructure.
 - [[concepts/serializability]] — Serializability in AI systems refers to the ability to reliably convert LLM outputs into structured, typed data formats (JSON, Pydantic models, etc.) 
