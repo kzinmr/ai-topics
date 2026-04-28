@@ -1,7 +1,7 @@
 ---
 title: "Nobody Gets Promoted for Simplicity"
 url: "https://terriblesoftware.org/2026/03/03/nobody-gets-promoted-for-simplicity/"
-fetched_at: 2026-04-25T12:10:55.390284+00:00
+fetched_at: 2026-04-28T07:01:48.020356+00:00
 source: "terriblesoftware.org"
 tags: [blog, raw]
 ---

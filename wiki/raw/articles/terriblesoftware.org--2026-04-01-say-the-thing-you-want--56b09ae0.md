@@ -1,7 +1,7 @@
 ---
 title: "Say the Thing You Want"
 url: "https://terriblesoftware.org/2026/04/01/say-the-thing-you-want/"
-fetched_at: 2026-04-25T12:10:55.272240+00:00
+fetched_at: 2026-04-28T07:01:47.898404+00:00
 source: "terriblesoftware.org"
 tags: [blog, raw]
 ---

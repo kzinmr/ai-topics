@@ -1,7 +1,7 @@
 ---
 title: "SIMD City: Auto-vectorisation"
 url: "http://xania.org/202512/20-simd-city?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-25T12:09:13.505399+00:00
+fetched_at: 2026-04-28T07:01:44.009370+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

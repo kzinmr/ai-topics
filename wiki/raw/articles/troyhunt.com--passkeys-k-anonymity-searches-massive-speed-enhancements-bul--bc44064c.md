@@ -1,7 +1,7 @@
 ---
 title: "HIBP Mega Update: Passkeys, k-Anonymity Searches, Massive Speed Enhancements and a Bulk Domain Verification API"
 url: "https://www.troyhunt.com/passkeys-k-anonymity-searches-massive-speed-enhancements-bulk-domain-verification-api/"
-fetched_at: 2026-04-25T12:09:20.532886+00:00
+fetched_at: 2026-04-28T07:01:44.653791+00:00
 source: "troyhunt.com"
 tags: [blog, raw]
 ---

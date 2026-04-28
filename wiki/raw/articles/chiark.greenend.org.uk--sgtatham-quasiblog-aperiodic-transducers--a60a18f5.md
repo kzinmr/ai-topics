@@ -1,7 +1,7 @@
 ---
 title: "Beyond the wall: working with aperiodic tilings using finite-state transducers"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-transducers/"
-fetched_at: 2026-04-27T07:57:03.374618+00:00
+fetched_at: 2026-04-28T07:01:34.225103+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

@@ -57,11 +57,28 @@ Build a Python function to extract headers from a markdown string. Use red/green
 
 主要LLMはこのショートハンドを理解しており、詳細な指示不要で適切なTDDワークフローを適用できる。
 
+## Martin Alderson: Agentic TDD Re-evaluation
+
+Martin Alderson ([martinalderson.com](https://martinalderson.com/posts/turns-out-i-was-wrong-about-tdd/)) reversed his TDD skepticism after adopting coding agents. His experience validates the TDD pattern but adapts it for agent workflows:
+
+### Key shifts with agents
+- **E2E tests are too slow for agent loops** — browser-based tests and full infrastructure spins cause agents to waste cycles waiting and misinterpret screenshots
+- **Prefer unit + integration tests (mocked infrastructure)** — agents can write these in seconds, and they provide tighter feedback loops
+- **Testing plan before implementation** — Alderson asks agents to produce a testing plan *before* writing code, debating the approach upfront rather than strict TDD
+- **Bug-driven test augmentation** — when encountering bugs, the agent explains *why* the test suite missed it, then adds specific test cases for that edge case
+- **Review tests first** — when reviewing agent PRs, start with test files to verify the agent didn't "cheat" by removing/simplifying tests that block its desired implementation
+
+> "Turns out the TDD folks were right all along. They just needed a mass-produced army of robotic junior devs to make it practical."
+
+This confirms [[concepts/cognitive-cost-of-agents]] — agents shift the economic calculus of testing by making test creation near-free.
+
 ## 関連パターン
 
 - [[concepts/harness-engineering/agentic-workflows/first-run-the-tests]] — TDDの前段階としてテストスイートをまず実行させる4単語プロンプト
 - [[concepts/agentic-manual-testing]] — 自動テスト後の手動探索テスト
 - [[concepts/harness-engineering/agentic-engineering]] — 上位概念
+- [[concepts/cognitive-cost-of-agents]] — エージェントがテストの経済性を変える
 
 ## 参照
 - [[simon-willison]] — Agentic Engineering Patterns創始者
+- [[martin-alderson]] — Agentic TDD re-evaluation, sysadmin with Claude Code

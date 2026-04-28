@@ -1,0 +1,219 @@
+---
+title: "Against Query Based Compilers"
+url: "https://matklad.github.io/2026/02/25/against-query-based-compilers.html"
+fetched_at: 2026-04-28T07:02:44.968737+00:00
+source: "matklad.github.io"
+tags: [blog, raw]
+---
+
+# Against Query Based Compilers
+
+Source: https://matklad.github.io/2026/02/25/against-query-based-compilers.html
+
+Against Query Based Compilers
+Feb 25, 2026
+Query based compilers are all the rage
+these days, so it feels only appropriate to chart some treacherous
+          shoals in those waters.
+A query-based compiler is a straightforward application of the idea of
+          incremental computations to, you guessed it, compiling. A compiler is
+          just a simple text transformation program, implemented as a lot of
+          functions. You could visualize a
+run
+of a compiler on a
+          particular input source code as a graph of function calls:
+Here, schematically, squares are inputs like file text or compiler’s
+          command line arguments,
+g
+is an intermediate function
+          (e.g, type checking), which is called twice, with different arguments,
+          and
+f
+and
+h
+are top-level functions (compile
+          executable, or compute completions for LSP).
+Looking at this picture, it’s obvious how to make our compiler
+          “incremental” — if an input changes, it’s enough to re-compute only
+          the results on path from the changed input to the root “query”:
+A little more thinking, and you can derive “early cutoff”
+          optimization:
+If an input to the function changes, but its result doesn’t (e.g,
+          function type is not affected by whitespace change), you can stop
+          change propagation early.
+And that’s … basically it. The beauty of the scheme is its
+          silvery-bullety hue — it can be applied without thinking to any
+          computation, and, with a touch of meta programming, you won’t even
+          have to change code of the compiler significantly.
+Build Systems à la Carte
+is the canonical paper to read
+          here. In a build system, a query is an opaque process whose inputs and
+          outputs are file. In a query-based compiler, queries are just
+          functions.
+The reason why we want this in the first place is incremental
+          compilation — in IDE context specifically, the compiler needs to react
+          to a stream of tiny edits, and its time budget is about 100ms. Big-O
+          thinking is useful here: the time to react to the change should be
+          proportional to the size of the change, and not the overall size of
+          the codebase. O(1) change leads to O(1) update of the O(N) codebase.
+Similar big-O thinking also demonstrates the principal limitation of
+          the scheme — the update work can’t be smaller than the change in the
+          result.
+An example. Suppose our “compiler” makes a phrase upper-case:
+compile("hello world") == "HELLO WORLD"
+This is easy to incrementalize, as changing a few letters in the input
+          changes only a few letters in the output:
+compile("hallo world") == "HALLO WORLD"
+But suppose now our “compiler” is a hashing or encryption function:
+compile("hello world") == "a948904f2f0"
+compile("hallo world") == "a7336983eca"
+This is provably impossible to make usefully incremental. The
+          encryption
+can
+be implemented as a graph of function calls,
+          and you
+can
+apply the general incremental recipe to it. It
+          just won’t be very fast.
+The reason for that is the avalanche property — for good encryption, a
+          change in any bit of input should flip roughly half of the bits of the
+          output. So just the work of changing the output (completely ignoring
+          the work to compute what needs to be changed) is O(N), not O(1).
+The effectiveness of query-based compiler is limited by the
+              dependency structure of the source language.
+A particularly nasty effect here is that even if you have only
+potential
+avalanche, where a certain kind of change
+could
+affect large fraction of the output, even if it usually
+          doesn’t, your incremental engine likely will spend some CPU time or
+          memory to confirm the absence of dependency.
+In my
+Three Architectures For Responsive IDE
+,
+query-based compilation is presented as a third, fall-back option. I
+          still think that that’s basically true: as a language designer, I
+          think it’s worth listening to your inner
+Grug
+and push the need for queries
+          as far down the compilation pipeline as possible, sticking to more
+          direct approaches.
+Not
+doing queries is simpler, faster, and
+          simpler to make faster (profiling a query-based compiler is a special
+          genre of hurdle racing).
+Zig and Rust provide for a nice comparison. In Zig, every file can be
+          parsed completely in isolation, so compilation starts by parsing all
+          files independently and in parallel. Because in Zig every name needs
+          to be explicitly declared (there’s no
+use *
+), name
+          resolution also can run on a per-file basis, without queries. Zig goes
+          even further, and directly converts untyped AST into IR, emitting a
+          whole bunch of errors in the process (e.g, “
+var
+doesn’t
+          need to be mutable”). See
+Zig AstGen: AST => ZIR
+for details. By the time compiler gets to tracked queries, the data it
+          has to work with is already pretty far from the raw source code, but
+          only because Zig
+language
+is carefully designed to allow
+          this.
+In contrast, you can’t really parse a file in Rust. Rust macros
+          generate new source code, so parsing can’t be finished until all the
+          macros are expanded. Expanding macros requires name resolution, which,
+          in Rust, is a crate-wide, rather than a file-wide operation. Its a
+          fundamental property of the language that typing something in
+a.rs
+can change parsing results for
+b.rs
+, and
+          that forces fine-grained dependency tracking and invalidation to the
+          very beginning of the front-end.
+Similarly, the nature of the trait system is such that
+impl
+blocks relevant to a particular method call can be found
+          almost anywhere. For every trait method call, you get a dependency on
+          the
+impl
+block that supplies the implementation, but you
+also
+get a
+          dependency on non-existence of conflicting
+impl
+s in every
+          other file!
+Again, refer to the
+Three Architectures
+for positive ideas, but the general trick is to leverage language
+          semantics to manually cut the compilation tasks into somewhat
+          coarse-grained chunks which are independent by definition (of the
+          source language). Grug builds an incremental map-reduce compiler for
+          his language:
+Recursive directory walk finds all files to be compiled.
+In parallel, independently, each file is parsed, name-resolved,
+              and lowered. As much as possible, language features (and errors)
+              are syntax driven and not type driven, and can be processed at
+              this stage.
+In parallel, a “summary” is extracted from each file, which is
+              essentially just a list of types and signatures, with function
+              bodies empty.
+Sequentially, a “signature evaluation” phase is run on this set of
+              summaries, which turns type references in signatures into actual
+              types, dealing with mutual dependencies between files. This phase
+              is re-run whenever a summary of a file changes. Conversely,
+              changes to the body of any function do not invalidate resolved
+              signatures.
+In parallel, every function’s body is type-checked, and lowered to
+              type-and-layout resolved IR, applying function-local
+              optimizations.
+Sequentially, a thin-lto style set of analyses are run on compiled
+              functions, making inlining decisions and computing call-graph
+              dependent attributes like function purity.
+In parallel, each function is codegened to machine code with
+              unresolved references to other functions (relocations).
+Sequentially, functions are concatenated into an executable file,
+              receiving an address.
+In parallel, all relocations are resolved to now known addresses.
+The above scheme works only if the language has a property that
+          changing the body of function
+foo
+(not touching its signature) can’t introduce type errors into an
+          unrelated function
+bar
+.
+Another trick that becomes less available if you blindly apply queries
+          are in-place updates. Consider a language with package declarations
+          and fully qualified names, like Kotlin:
+package
+org.example
+fun
+printMessage
+()
+{  }
+class
+Message
+{  }
+A compiler for this language probably wants to maintain a map of all
+          public declarations, where the keys are fully qualified names, and
+          values are declarations themselves. If you approach the problem of
+          computing this map with query eyes, you might have a base per-file
+          query that returns a map of file’s declarations, and then a recursive
+          per-directory query. And you’ll probably have some kind of structural
+          sharing of the maps, such that changing a single file updates only the
+          “spine”, without actually copying most of the other entries.
+But there’s a more direct way to make this sort of structure
+          responsive to changes. You need only two “queries” — per file, and
+          global. When a file changes, you look at the
+previous
+version
+          of the map for this file, compute a diff of added or removed
+          declarations, and then apply this diff to the global map.
+Zig is planning to use a similar approach to incrementalize linking —
+          rather than producing a new binary gluing mostly unchanged chunks of
+          machine code, the idea is to in-place patch the previous binary.
+If you like this article, you might be interested in some other
+          adjacent stuff I’ve written over the years, roughly in the order of
+          importance:

@@ -1,7 +1,7 @@
 ---
 title: "Optimising for trust"
 url: "https://tomrenner.com/posts/optimising-for-trust/"
-fetched_at: 2026-04-25T12:09:22.555660+00:00
+fetched_at: 2026-04-28T07:01:45.499458+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Stop helping!"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/stop-helping/"
-fetched_at: 2026-04-27T07:57:05.797406+00:00
+fetched_at: 2026-04-28T07:01:34.373992+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

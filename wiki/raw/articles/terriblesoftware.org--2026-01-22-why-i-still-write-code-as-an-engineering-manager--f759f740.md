@@ -1,7 +1,7 @@
 ---
 title: "Why I Still Write Code as an Engineering Manager"
 url: "https://terriblesoftware.org/2026/01/22/why-i-still-write-code-as-an-engineering-manager/"
-fetched_at: 2026-04-25T12:10:55.499972+00:00
+fetched_at: 2026-04-28T07:01:48.085076+00:00
 source: "terriblesoftware.org"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "You Only Think They Work For You"
 url: "https://steveblank.com/2026/02/18/you-only-think-they-work-for-you/"
-fetched_at: 2026-04-25T12:11:12.616282+00:00
+fetched_at: 2026-04-28T07:01:50.020590+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

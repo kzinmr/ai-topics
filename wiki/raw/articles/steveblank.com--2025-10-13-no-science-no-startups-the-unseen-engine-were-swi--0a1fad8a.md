@@ -1,7 +1,7 @@
 ---
 title: "No Science, No Startups: The Innovation Engine We’re Switching Off"
 url: "https://steveblank.com/2025/10/13/no-science-no-startups-the-unseen-engine-were-switching-off/"
-fetched_at: 2026-04-25T12:11:13.162269+00:00
+fetched_at: 2026-04-28T07:01:50.285083+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

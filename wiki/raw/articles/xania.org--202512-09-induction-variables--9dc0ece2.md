@@ -1,7 +1,7 @@
 ---
 title: "Induction variables and loops"
 url: "http://xania.org/202512/09-induction-variables?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-25T12:09:19.055085+00:00
+fetched_at: 2026-04-28T07:01:44.831760+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

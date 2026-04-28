@@ -1,7 +1,7 @@
 ---
 title: "Pluralistic: Comrade Trump (20 Apr 2026)"
 url: "https://pluralistic.net/2026/04/20/praxis/"
-fetched_at: 2026-04-25T12:11:05.324144+00:00
+fetched_at: 2026-04-28T07:01:49.714315+00:00
 source: "pluralistic.net"
 tags: [blog, raw]
 ---

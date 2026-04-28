@@ -1,7 +1,7 @@
 ---
 title: "A breakthrough in C/C++ dependency management"
 url: "https://lcamtuf.substack.com/p/a-breakthrough-in-cc-dependency-management"
-fetched_at: 2026-04-27T07:56:46.584111+00:00
+fetched_at: 2026-04-28T07:01:31.229826+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

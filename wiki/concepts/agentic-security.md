@@ -38,6 +38,24 @@ related: [[concepts/model-context-protocol-mcp]], [[entities/salt-security]], [[
 - Tool-use enforcement and credential scoping
 - Capabilities-based security model (zero-initial, grant-granted)
 
+### 5. Package Security for AI Agents (Nesbitt.io, April 2026)
+
+[[bradford-morgan-white]] (Nesbitt.io) identified a critical gap: **AI agents install packages without understanding security implications**. Key findings:
+
+- Agents will blindly `pip install` or `npm install` packages that may be malicious
+- Package registries lack AI-specific security signals (agents can't evaluate "is this package safe?")
+- **Supply chain attacks on agents** are emerging: typosquatting, dependency confusion, and malicious code injection in widely-used packages
+- Agents have **wider blast radius** than humans — they install across more packages, faster, with less scrutiny
+- Pagination and discovery mechanisms in registries make it hard for agents to verify package authenticity
+- **Stages of package installation** (discovery → verification → install → runtime) each have distinct vulnerabilities when performed by agents
+
+Recommended mitigations:
+- **Allow-listing** — agents should only install from vetted package sources
+- **Sandboxed installs** — run package installation in isolated environments ([[concepts/agent-sandboxing]])
+- **Static analysis** — scan packages before installation, not after
+- **Human-in-the-loop** — require approval for new package installations
+- **Package signature verification** — verify publisher identity before install
+
 ## Industry Response
 
 | Organization | Contribution |

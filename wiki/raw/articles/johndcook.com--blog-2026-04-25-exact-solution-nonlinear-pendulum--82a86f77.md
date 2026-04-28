@@ -1,7 +1,7 @@
 ---
 title: "Closed-form solution nonlinear pendulum w/ Jacobi functions"
 url: "https://www.johndcook.com/blog/2026/04/25/exact-solution-nonlinear-pendulum/"
-fetched_at: 2026-04-27T07:56:47.336385+00:00
+fetched_at: 2026-04-28T07:01:31.620567+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

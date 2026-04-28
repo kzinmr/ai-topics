@@ -1,7 +1,7 @@
 ---
 title: "Creating Your Own Opportunities"
 url: "https://terriblesoftware.org/2026/01/05/creating-your-own-opportunities/"
-fetched_at: 2026-04-25T12:10:55.612245+00:00
+fetched_at: 2026-04-28T07:01:48.090954+00:00
 source: "terriblesoftware.org"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "A Year of Writing for Myself (That 230,000+ People Read)"
 url: "https://terriblesoftware.org/2025/12/29/a-year-of-writing-for-myself-that-230000-people-read/"
-fetched_at: 2026-04-25T12:10:55.671116+00:00
+fetched_at: 2026-04-28T07:01:48.166530+00:00
 source: "terriblesoftware.org"
 tags: [blog, raw]
 ---

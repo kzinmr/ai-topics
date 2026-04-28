@@ -1,7 +1,7 @@
 ---
 title: "Pluralistic: A free, open visual identity for enshittification (24 Apr 2026)"
 url: "https://pluralistic.net/2026/04/24/poop-emoji-plus-plus/"
-fetched_at: 2026-04-25T12:10:59.107984+00:00
+fetched_at: 2026-04-28T07:01:49.091518+00:00
 source: "pluralistic.net"
 tags: [blog, raw]
 ---

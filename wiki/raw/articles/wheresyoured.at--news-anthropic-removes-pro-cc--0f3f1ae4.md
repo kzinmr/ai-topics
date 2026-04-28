@@ -1,7 +1,7 @@
 ---
 title: "[UPDATED] News: Anthropic (Briefly) Removes Claude Code From $20-A-Month \"Pro\" Subscription Plan For New Users"
 url: "https://www.wheresyoured.at/news-anthropic-removes-pro-cc/"
-fetched_at: 2026-04-25T12:09:08.726706+00:00
+fetched_at: 2026-04-28T07:01:43.187353+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
 ---

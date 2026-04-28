@@ -1,7 +1,7 @@
 ---
 title: "Android now stops you sharing your location in photos"
 url: "https://shkspr.mobi/blog/2026/04/android-now-stops-you-sharing-your-location-in-photos/"
-fetched_at: 2026-04-25T12:10:46.478340+00:00
+fetched_at: 2026-04-28T07:01:47.786904+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
 ---

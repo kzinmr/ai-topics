@@ -1,7 +1,7 @@
 ---
 title: "When Sh!t Hits the Fan - Founders in a Crisis"
 url: "https://steveblank.com/2025/09/17/when-sht-hits-the-fan-founders-in-a-crisis/"
-fetched_at: 2026-04-25T12:11:13.231302+00:00
+fetched_at: 2026-04-28T07:01:50.287557+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

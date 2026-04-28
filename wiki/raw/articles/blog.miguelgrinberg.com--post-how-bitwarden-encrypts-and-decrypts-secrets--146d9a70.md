@@ -1,7 +1,7 @@
 ---
 title: "How Bitwarden Encrypts and Decrypts Secrets"
 url: "https://blog.miguelgrinberg.com/post/how-bitwarden-encrypts-and-decrypts-secrets"
-fetched_at: 2026-04-27T07:56:45.994609+00:00
+fetched_at: 2026-04-28T07:01:32.491246+00:00
 source: "miguelgrinberg.com"
 tags: [blog, raw]
 ---
@@ -209,13 +209,13 @@ function, which also happens to be common enough that it is included in the Pyth
 temp_key = hashlib.pbkdf2_hmac('sha256', passphrase.encode(), email.encode(), 600000, 32)
 You may have noticed that most of the cryptographic functions that we are using are operations that are built on top of the
 SHA-256
-hashing function. The key derivation is not exception, but for this function the name of the hashing function has to be given as a string.
+hashing function. The key derivation is no exception, but for this function the name of the hashing function has to be given as a string.
 The key derivation function takes the passphrase and a
 salt
 as arguments. In cryptography, a salt is an additional input that is added to the main payload, with the purpose to make brute force attacks more costly for the attacker. In this instance Bitwarden uses the email address as salt. The function needs the passphrase and the email in binary form, so I'm using the
 encode()
 method to convert them to bytes.
-Key derivation functions repeat a basic operation for a number of iterations. This is done first to separate the derived key as much as possible from the original passphrase, but also to make the computation expensive, because if someone were to attempt to figure out a key with brute force methods, you'd want this to be an unbearably slow process for the attacker. Current Bitwarden accounts use 600,000 iterations for this step. The Bitwarden client receives this correct number of iterations associated with an account from the server, so this number isn't guaranteed to be 600,000. The number of iterations is increased from time to time, to keep up with performance improvements in hardware.
+Key derivation functions repeat a basic operation for a number of iterations. This is done first to separate the derived key as much as possible from the original passphrase, but also to make the computation expensive, because if someone were to attempt to figure out a key with brute force methods, you'd want this to be an unbearably slow process. Current Bitwarden accounts use 600,000 iterations for this step. The Bitwarden client receives the actual number of iterations associated with an account from the server, so this number isn't guaranteed to be 600,000 for every account. The number of iterations is increased from time to time, to keep up with performance improvements in hardware.
 The last argument to the key derivation function is the derived key length, in bytes. Bitwarden uses keys that are 32 bytes long.
 I should note that Bitwarden gives users the option to change the key derivation function to another one called
 Argon2id

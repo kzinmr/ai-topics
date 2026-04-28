@@ -1,7 +1,7 @@
 ---
 title: "2025 in Review - Matt Godbolt’s blog"
 url: "http://xania.org/202512/2025-in-review?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-25T12:09:10.445804+00:00
+fetched_at: 2026-04-28T07:01:43.851072+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

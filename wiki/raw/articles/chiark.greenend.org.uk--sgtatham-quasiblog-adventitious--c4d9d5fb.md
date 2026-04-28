@@ -1,7 +1,7 @@
 ---
 title: "Brute-forcing Langley’s geometry problem with field extensions"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/adventitious/"
-fetched_at: 2026-04-27T07:56:51.622699+00:00
+fetched_at: 2026-04-28T07:01:32.697373+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

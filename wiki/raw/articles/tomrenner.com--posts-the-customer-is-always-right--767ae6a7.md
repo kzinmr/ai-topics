@@ -1,7 +1,7 @@
 ---
 title: "The customer is always right"
 url: "https://tomrenner.com/posts/the-customer-is-always-right/"
-fetched_at: 2026-04-25T12:09:26.094532+00:00
+fetched_at: 2026-04-28T07:01:45.833675+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

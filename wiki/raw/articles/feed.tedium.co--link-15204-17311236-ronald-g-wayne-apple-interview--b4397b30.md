@@ -1,7 +1,7 @@
 ---
 title: "Ronald G. Wayne Is More Than Two Weeks At Apple"
 url: "https://feed.tedium.co/link/15204/17311236/ronald-g-wayne-apple-interview"
-fetched_at: 2026-04-27T07:57:52.455808+00:00
+fetched_at: 2026-04-28T07:01:40.279121+00:00
 source: "tedium.co"
 tags: [blog, raw]
 ---

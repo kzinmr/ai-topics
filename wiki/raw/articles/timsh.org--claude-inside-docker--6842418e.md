@@ -1,7 +1,7 @@
 ---
 title: "Switching to Claude Code + VSCode inside Docker"
 url: "https://timsh.org/claude-inside-docker/"
-fetched_at: 2026-04-27T07:57:26.823152+00:00
+fetched_at: 2026-04-28T07:01:36.953821+00:00
 source: "timsh.org"
 tags: [blog, raw]
 ---

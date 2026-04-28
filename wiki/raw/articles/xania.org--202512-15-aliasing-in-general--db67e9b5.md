@@ -1,7 +1,7 @@
 ---
 title: "Aliasing - Matt Godbolt’s blog"
 url: "http://xania.org/202512/15-aliasing-in-general?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-25T12:09:16.072749+00:00
+fetched_at: 2026-04-28T07:01:44.453707+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

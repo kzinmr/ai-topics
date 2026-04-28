@@ -1,7 +1,7 @@
 ---
 title: "News: OpenAI CFO Doesn't Believe Company Ready For IPO, Unsure Revenue Will Support Commitments"
 url: "https://www.wheresyoured.at/openai-cfo-news/"
-fetched_at: 2026-04-25T12:09:09.311108+00:00
+fetched_at: 2026-04-28T07:01:43.312874+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
 ---

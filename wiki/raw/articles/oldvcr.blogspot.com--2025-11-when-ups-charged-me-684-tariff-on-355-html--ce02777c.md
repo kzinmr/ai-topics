@@ -1,0 +1,62 @@
+---
+title: "When UPS charged me a $684 tariff on $355 of vintage computer parts"
+url: "https://oldvcr.blogspot.com/2025/11/when-ups-charged-me-684-tariff-on-355.html"
+fetched_at: 2026-04-28T07:02:04.706022+00:00
+source: "oldvcr.blogspot.com"
+tags: [blog, raw]
+---
+
+# When UPS charged me a $684 tariff on $355 of vintage computer parts
+
+Source: https://oldvcr.blogspot.com/2025/11/when-ups-charged-me-684-tariff-on-355.html
+
+I try not to write anything even vaguely political on this blog because we have a variety of views on a variety of subjects and no one is here for that. We can all enjoy our geriatric little silicon artifacts together regardless of your electoral persuasion. But I was hopping mad this week, and the reason is actually on-topic, because I got hit with US Customs tariffs close to double the cost of the vintage items I was ordering and more than the items were worth. This eventually got straightened out, but it wouldn't have happened without my complaint and some time on the phone.
+Although we make regular trips down under, your humble author is based in California and so is the Floodgap computer lab. For newly manufactured items and parts it has generally been my policy to buy parts from United States sellers even prior to the tariffs, mostly because that gets around various irregularities and it arrives more quickly. If they're going to drop-ship then it's their problem, not mine, because they advertised it was already here. Since such items are typically newly produced, the current tariffs would logically apply and this policy thus has the additional benefit of me not having to deal with that directly: any tariff should already have been paid to get them States-side.
+But for NOS and used parts, especially if you are a collector like I am for certain systems, you buy where you can find them. Coincidentally I wanted to buy a second Apple Network Server logic board since my ANS 700 is acting a little weird (don't say caps) and I still want a good spare for the ANS 500. These don't exactly grow on trees but, as it turns out, the seller I bought my current spare logic board from (pre-tariffs) had another in stock. The logic board doesn't come with the regular ANS AIX ROM SIMM nor cache, so we'll want one each of those just in case, and he also had an Apple BTO Twin Turbo video card (I believe originally for the Power Macintosh 9500) which might also be nice for one of the other beige PCI Macs. These are all new old stock items in their Apple Service packaging because obviously Apple hasn't made nor sold any of these parts in decades. Per the seller, they came from the teardown of new machines which Apple was unable to sell and got turned into official surplus new stock. The seller is in an European Union country, so we're not talking some shady Shenzhen shop operating off an alley liftgate. (I'm not naming the seller because none of this is his fault and I'm sure he'd not like to be contacted about this.)
+The items came to €296.00, about US$355 at the spot exchange rate, plus €48.10 for UPS shipping. This would have been well-under the prior
+de minimis
+exemption even with the shipping rolled in. We had to do UPS because his particular country's postal service limits shipment value to the United States to US$100 due to the tariffs, causing him to spend a substantial amount of time at the UPS drop-off depot and on the paperwork, which was way more than he was required to do and I very much appreciate. For any import you need to come up with a Harmonized System code for what you're shipping, which then maps to a Harmonized Tariff Schedule code specific to the United States. These parts are all populated PCBs and most populated boards are, by prior rulings, classified with
+an HTS code of 8473.30
+, which is what the seller tagged all four items with. This code is for "Parts and accessories of the machines of heading 8471 [Automatic data processing machines and units thereof]." If you look under the Harmonized Tariff Schedule search engine for this code, you
+find a duty rate
+for certain subheadings that at
+most
+would be 35 percent, or even if these were products of the People's Republic of China (they're old enough that I don't know their exact provenance, but I have no evidence to believe these were originally), then maybe, maybe,
+maybe
+an additional 25 percent
+. The declared value was the purchase price in euros and he even picked up the insurance. The package left the depot uneventfully and worked its way across the continent.
+The first sign of trouble was over the weekend when I got an unexpected message.
+The UPS shipping agent had indicated the parcel was subject to
+Section 232 tariffs
+on steel and aluminum, which required me to fill out a UPS-specific form attesting to the steel and aluminum content of the package. (This is an important distinction because Section 232 is not currently part of
+the present matter before the U.S. Supreme Court
+(PDF), only
+reciprocal tariffs under the IEEPA
+.) There should be little or no aluminum in these because the board and traces would be copper. However, a PCI card is probably going to have a steel bracket, so I looked at the typical mass for those and picked a sufficiently high number of 149g, almost certainly an overestimate but that's always safest with this stuff, then looked at the spot price of stainless steel and based on that weight computed a steel content value of $0.48. I marked "not applicable" for everything else and sent it back. They accepted that.
+In the background, all this goes into a U.S. Customs and Border Protection Form 7501, also known as an Entry Summary. It is important to realize that in this circumstance, with UPS as the broker, you are
+not
+actually the importer of record — they are. You are the "ultimate consignee." Based on the information provided and the judgement of the broker's agent, then a tariff is assigned and added to the paperwork, which is "assessed" by CBP but in practice is being assessed by the broker based on what they expect CBP would charge under current regulation. Ordinarily you don't see this form. CBP does spot-check these but the majority just go through. Since UPS is the importer in this situation, they also pay the tariff they computed "in advance" to clear customs, and then they charge you for that plus their broker fee.
+It took several more days for the actual tariff bill to arrive, which was early Monday morning. Now, the initial E-mail said this:
+Yes, the initial bill was for US$711. When I logged in, however, it gave me a total of $698 because it hadn't yet been delivered, which included a $14 brokerage fee.
+Time was of the essence, however, because it was arriving
+that day
+. I was absolutely incandescent to have to do it, but I paid the entire charge in full on the spot, and this is
+the correct thing to do.
+The last thing you want is for your package to get redirected to a warehouse pending your payment, because any shipper will start tacking on storage fees and they have no incentive to get it out of storage quickly. For UPS, a direct quote from their own agents, "Warehouse charges will be added on shipments that are held in our warehouse over two business days at a rate of $20.00 per day and $0.04 per pound. ... On the 15th day, all shipments will be eligible for General Order warehousing by U.S. Customs. Any shipment moved to a G.O. warehouse will be assigned additional warehouse fees over and above any UPS warehouse fees. If imposed, these fees must be paid in full before the shipment can be removed." Obviously I wanted no part of that.
+After I had been advised by the system the package would be delivered as scheduled, I then relentlessly abused the AI chatbot on UPS' home page until it asked for my phone number and I got a callback into their phone support line. The first person on the line advised me they didn't handle tariffs and transferred me to another department, after which I spent (not an exaggeration) 45 minutes on hold until it was answered. This new agent said that this was dealt with through a specific subgroup on the UPS post entry team that didn't do anything by phone. (These brokerage teams generally operate out of the Kentucky UPS Worldport hub at Louisville Muhammad Ali International Airport, formerly Standiford Field, hence its IATA code of SDF that also turns up in UPS documentation.) He gave me an E-mail address that looked like line noise but I confirmed it twice with him and also that I had to put the tracking number into the subject line with the magic words "Disputing Duties and Custom Charges." I indicated in the message the fees were paid but that I believed they were unreasonable and incorrect, and also pointed out I submitted the Section 232 paperwork when requested.
+It took a day to get a reply, then came the United States Veterans' Day holiday, and finally I heard back yesterday from a second agent that they had "corrected this shipment." What they had done was file an amended Form 7501 and this 7501 they actually sent me so I could see the results. The declared value was changed to US$342 (I presume a difference in the spot exchange rate at the time of filing) and now it had two HTSUS numbers. The entire $342 was attributed to
+8473.30.2000
+, a slightly different code for "Parts and accessories, including face plates and lock latches, of printed circuit assemblies" which might be referring to the bracket I declared in the Section 232 form. There was no tariff on this ("FREE"). However, a second code
+9903.02.20
+was added, a long-winded way of saying a tariff (in this case 15%) on "articles the product of the European Union." This was $51.30 and the final tariff.
+Everything arrived safely, by the way, and in excellent condition (though I cracked open the antistatic bag on the ANS board to take off the Maxell battery which Apple always shipped logic boards with back then). However, I would like to point out for the sake of accuracy that the ANS logic board, ROM SIMM and cache DIMM have no country of origin printed on them. Only the Twin Turbo card does, and it says ...
+.. but since it wasn't the major part of the order it seemed like I'd be wasting even more time over ten or fifteen bucks to appeal this too. Your mileage and motivation may vary.
+Now that UPS was into me for $632.70, the revising agent said, "Any difference between the amount paid and the amount now reflected will be auto-refunded to you. Most of the time, this is done by check sent to the billing address, you can expect this between 2-6 weeks." They didn't say when they don't use a check (I paid with a credit card), but they did give me a phone number for accounting, which I'll call if UPS fails to pay back this particular interest-free loan.
+So that's the sordid tale. Even though UPS (mostly) made this right, I'm still unhappy with them for screwing up so badly in the first place because I'm out the money until they get around to reimbursing me. You'd think someone would have noticed that a thumping big duty like that seemed a little weird for a transaction of this size and maybe called a supervisor or something. The fact it could be so promptly appealed — and reversed in a few days, something that hardly ever happens with the federal government — pretty much demonstrates it was their call to ding it for that much in duty in the first place. I'm also unhappy with them for only alerting me to the final cost of the tariff when the shipment was inbound and due for delivery instead of earlier when it was assessed, because they have you over a barrel at that point unless you want to take your chances with their brokerage warehouse. This obviously nets them more money with the people who won't pay up immediately, but it's undeniably pretty bad customer service. Unfortunately, my unscientific survey of reports in the UPS Reddit indicate I am far from the only person to get a disproportionate assessment of this type.
+Regardless, if this happens to you — whether it's FedEx or DHL or UPS or whatever —
+pay it
+and
+then
+appeal it. Don't let your shipment go to a warehouse and don't bounce it back to the sender; since odds are the shipper (because they are likely the importer of record) has already paid the duty, they're going to want their money back and you'll be out the money
+and
+the items. But, by golly, appeal it: just because you might agree with it politically doesn't mean they did it right.

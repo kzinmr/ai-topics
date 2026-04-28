@@ -1,7 +1,7 @@
 ---
 title: "Things that made me think: Digital gardening, web degradation, and digital ghosts"
 url: "https://tomrenner.com/posts/ttmmt-2/"
-fetched_at: 2026-04-25T12:09:22.358977+00:00
+fetched_at: 2026-04-28T07:01:45.170141+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

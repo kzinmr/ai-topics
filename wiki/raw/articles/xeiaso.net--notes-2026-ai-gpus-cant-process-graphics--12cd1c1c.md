@@ -1,7 +1,7 @@
 ---
 title: "Small note about AI 'GPUs'"
 url: "https://xeiaso.net/notes/2026/ai-gpus-cant-process-graphics/"
-fetched_at: 2026-04-27T07:57:17.798861+00:00
+fetched_at: 2026-04-28T07:01:35.900842+00:00
 source: "xeiaso.net"
 tags: [blog, raw]
 ---

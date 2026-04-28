@@ -1,0 +1,109 @@
+---
+title: "Luddites and burning down AI datacenters"
+url: "https://seangoedecke.com/luddites-and-ai-datacenters/"
+fetched_at: 2026-04-28T07:01:57.042067+00:00
+source: "seangoedecke.com"
+tags: [blog, raw]
+---
+
+# Luddites and burning down AI datacenters
+
+Source: https://seangoedecke.com/luddites-and-ai-datacenters/
+
+Is it time to start burning down datacenters?
+Some people think so. An Indianapolis city council member had his house recently
+shot up
+for supporting datacenters, and Sam Altman’s home was
+firebombed
+(and then
+shot
+) shortly afterwards. People from all sides of the argument are
+sounding
+the
+alarm
+about imminent violence.
+The obvious historical comparison is
+Luddism
+, the 19th-century phenomenon where English weavers and knitters destroyed the machines that were automating their work, and (in some cases) killed the machines’ owners. Anti-AI people are
+reclaiming
+the term to describe themselves, and many of the leading lights of the anti-AI movement (like
+Brian Merchant
+or
+Gavin Mueller
+) have written books arguing more or less that the Luddites were right, and we ought to follow their example in order to resist AI automation
+.
+Like many people, I have heard a lot about Luddism and Luddites, but only in the context of it being a general term for someone who is anti-technology. I was interested in learning more about the actual historical movement: what kind of people participated, what it was, and what it accomplished. I read Merchant’s and Mueller’s books, plus others
+, to try and figure all of this out. Who were the actual, historical Luddites? What can we learn from them about burning down datacenters?
+Who were the Luddites?
+The Luddites were a decentralized movement of artisans in the 1810s who engaged in violent protest - smashing machines, threatening violence, and ultimately killing people - over the fact that their jobs were being automated away. They were not rich, but they were certainly not unskilled labor: these were people who had apprenticed for
+seven years
+. They were mostly working from home, producing cloth from raw material given to them by their employer, often with tools rented from that same employer. They were working short weeks (three days, per William Gardiner) at their own discretion.
+In the early 1800s, their skilled labor was becoming unnecessary. With the help of expensive machines, unskilled labor could now produce lower-quality cloth, so employers were beginning to pass over these artisans in favor of cheaper employees:
+children, unapprenticed workers, and women
+. Combined with the bad economic position of England at the time (at war with France, and thus deliberately cutting off much European trade), times were beginning to be very tough indeed. Starvation was a real threat.
+What did they do?
+Cloth artisans were groups of capable men who were used to getting their own way, knew each other very well, and were broadly respected in their communities. It was thus a natural response for them to organize into what was effectively a militant union. The Luddites would send anonymous threatening letters to their old (or current) bosses, warning them to stop using their machines. If they didn’t comply, they would raid the workshop or factory, smashing the machines up.
+They typically did not harm people, though they certainly delivered threats of bodily harm or even murder, and the raids were violent enough (e.g. shooting through windows) to have risked accidental deaths. In at least two instances where a factory owner was seen as unusually cruel, the Luddites did attempt assassinations: one unsuccessful, and one successful one that eventually prompted a crackdown that ended the movement for good.
+Luddism was fully decentralized. Different communities could and did decide to engage in machine-raiding independently, particularly when news spread of the tactic succeeding. Although each community had its own influential men, there was never a single “leader of Luddism”. King Ludd himself was a folk-tale figure. This made it an absolute nightmare for the British government to try and suppress them: putting down one Luddist group did nothing to prevent other groups from continuing to operate.
+All the king’s spies
+I was surprised by how
+difficult
+it was for the government to get a hold of any of the local Luddist ringleaders. The government was willing to offer huge rewards to informers: at one point up to 40x the yearly wage. However, there were no takers for several years. Armies of spies were recruited and tasked with infiltrating Luddist groups, with absolutely no success.
+Why was it so hard? Firstly, because the working class was so overwhelmingly pro-Luddist. People universally blamed the economic situation on the government and the factory owners (rightfully so, since the government had chosen to go to war and the factory owners had chosen to embrace automation). Secondly, the communities in question were so insular and tightly-knit that informers would have to rat on their friends and relatives. The handful of people who did eventually inform lived out the rest of their lives as pariahs.
+Because each group was so insular, any spies trying to infiltrate the movement would have been complete strangers to the community, and would thus have a very hard time gaining the trust of a group of men who had known each other for their whole lives. The spies that did exist were restricted to the occasional inter-group Luddist meetings, where people didn’t all know each other so closely. But it’s unclear how important those meetings were, since Luddist groups didn’t need to coordinate to achieve their goals. According to Merchant, the spies spent much of their time embellishing tales of an imminent revolution to encourage their employers to keep the money flowing.
+The crackdown
+In the absence of reliable information, the British government was forced to use force. And they did, sending 12,000 troops
+into the northern counties. This served mainly as an intimidation tactic, since there was no standing Luddite army to fight, and the soldiers spent most of their time marching back and forth or being abused by the townspeople.
+More successful was the imposition of a full police state in Yorkshire, under the magistrate Joseph Radcliffe, who was empowered to randomly grab people off the street and interrogate them for days. That pressure eventually convinced a handful of people to give up their local Luddist organizers, who were tried and inevitably hanged. Their deaths (and the ensuing climate of fear) ended the high-water mark of Luddist activity. Even then, Luddist raids continued on and off for
+six more years
+before petering out.
+Did the Luddites succeed?
+This is a tricky question. In one sense the answer is obviously no: the movement was crushed, many of their leaders were executed, the textile industry continued to be automated, and today there are no longer thousands of jobs for skilled British weavers, knitters, spinners and dyers. The pro-automation side won.
+However, they did achieve a number of short-lived victories. Their early threats often succeeded in preventing the building of a factory in a particular location, or in delaying the adoption of industrial machinery in a particular shop by years. In one case, hosiers that had been spooked by Luddite activity gave out pre-emptive bonuses to their workers to discourage them from smashing up their machines (which were indeed not smashed).
+The Luddites also scared the hell out of the British government, who (encouraged by their over-eager spies) thought they might have a genuine revolution on their hands. While they didn’t get many legal concessions at the time, the specter of Luddism must have loomed over the labor reform movement of the 1800s, which saw the first anti-child-labor laws and the beginnings of independent inspection of factories.
+Finally, every book I read argued that the Luddism movement may have created the first idea of a “working class”, by unifying many previously-independent groups of workers against a common enemy. Seen this way, the “political arm”
+of Luddism can arguably claim partial credit for every labor victory since the 1800s (though the ringleaders were still hanged and the weavers did still lose their jobs).
+The Luddist approach in a nutshell
+We can now describe the “Luddist approach” to fighting technological change:
+Find a few conspirators in your existing community who agree with your political project (but don’t join a broader organization, since that leaves you vulnerable)
+Make public anonymous demands in support of your specific goals, backed up by threats of violence, signed by a fictional character that’s easy for other groups to appropriate
+If your threats are ignored, attack the physical machines in the dead of night, destroying them and threatening (but not killing) any guards
+Hope your example inspires many more people to independently do (1)-(3) themselves
+Keep raiding, optionally escalating to assassination of some of the bosses, until you bait a totalitarian crackdown from the government
+Eventually get arrested and executed, to great public dismay
+Twenty years later, your example inspires the first national trade unions
+Note that starting or joining a national movement is
+not
+the Luddist approach. Staying almost entirely isolated in small cells helped the Luddists avoid government spies and made them impossible to root out without enforcing a police state. Note also that you need a
+lot
+of public support for this to work: so that you get a lot of copycat groups without having to explicitly organize them, and so that your property destruction and murder is taken sympathetically instead of getting you immediately reported and arrested.
+Why Luddism is not a good model for the anti-AI movement
+There are many reasons why this doesn’t map onto the current anti-AI movement. First, Luddism grew from a homogeneous group of high-status workers whose jobs almost vanished overnight, not a broad group of people whose jobs are getting slightly worse because of AI (like the gig-economy workers Merchant endlessly references). That meant that Luddites had
+really specific
+asks: higher wages for piecework, a phased introduction of specific textiles machinery, and so on. They were not generally demanding that the machines all be immediately destroyed
+.
+Second, Luddism was very local. A pre-existing group of artisans in a particular town would gather in that town - either at work or an inn, say - and decide to petition or raid the businesses in that town that were harming their livelihoods. AI concerns are not like this. It isn’t businesses in Chicago or Tokyo that are making decisions that imperil Chicago’s or Tokyo’s jobs, it’s businesses in San Francisco. Unlike the Luddists, anti-AI activists can’t naturally organize with people they already know to take direct action where they already live.
+Third, Luddist
+victory
+could also be local. If you successfully lobby your local cloth business to not use a weaving machine, you have secured your job at that business for a while. But if you successfully lobby your town (or even your country!) to not build a datacenter, it doesn’t meaningfully improve your local position, since your job can be as easily replaced by a datacenter on the other side of the planet.
+A total failure of leadership
+Reading through the history of the Luddites from a modern perspective, I was struck by the near-total absence of
+good government
+. The artisans were left to work out their grievances with their bosses more or less by themselves, with no formal channels for complaint or any attempt at mediation. When the government did intervene - in response to near-universal unrest in
+half of the country
+- they did this:
+Make machine-breaking and oath-taking capital crimes
+Dump thousands of soldiers more or less at random into the area, with no plan to guard factories or do anything beyond just hang around in case a revolution broke out
+Empower a single magistrate to arrest and interrogate whoever he wanted in order to root out the conspiracy
+I suppose it worked, in the sense that it eventually succeeded in stopping the Luddist raids. But I can’t help but think that even a token gesture of compromise (say, requiring employers to make their wages public, or restricting the most cheap-and-nasty factory-made textile products) would have gone a long way towards calming things down. This almost actually happened! The 1812 Framework Knitters’ Bill, which had these provisions in it, passed the House of Commons but was shot down in the House of Lords.
+Why did the government fail to even make a token attempt at compromise? Before the industrial revolution, I wonder if the workers and bosses of the English textiles industry were genuinely able to often just work out their problems together, so the government never really needed to do large-scale mediation. When that changed - when automation first made it possible for the bosses to durably “win” - government took a long time to realize, so there were some unpleasant decades of disempowered workers trying to bully factory-owners (via riots and death threats), and factory-owners trying to brutalize workers (via direct violence and automation).
+Final thoughts
+I can see why modern “Luddites” like Merchant and Mueller - who are genuinely anti-technology - talk so much about the legacy of original Luddites. Luddism was a grassroots organization which notched up some real short-term wins, enjoyed near-total support among the public, and didn’t seem to be troubled by infighting at all
+. If you’re an anti-AI campaigner, I bet all of that sounds great
+. But I’m not convinced that the neo-Luddites really are the inheritors of Luddism. A load-bearing feature of Luddism is that it was
+local
+: it didn’t have manifestos, or leaders, or factions, or even much explicit ideology beyond the artisans’ immediate practical concerns. These were local men striking back against the local factories harming their local jobs. That simply isn’t the case with AI, where a datacenter in China can take my job in Australia.
+edit: A reader pointed me at
+Against the Luddites
+, which argues that (a) the Luddites were an elite (ish) movement, (b) they explicitly and deliberately excluded women, and (c) their leftist theory bonafides are questionable. I don’t really care about (c), agree with (b), and mostly agree with (a), with the caveat that they really did have a broad base of non-elite support.
+Here's a preview of a related post that shares tags with this one.

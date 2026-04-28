@@ -1,7 +1,7 @@
 ---
 title: "Some Thorns Have Roses"
 url: "https://xeiaso.net/blog/2026/some-thorns-have-roses/"
-fetched_at: 2026-04-27T07:57:21.551287+00:00
+fetched_at: 2026-04-28T07:01:36.298430+00:00
 source: "xeiaso.net"
 tags: [blog, raw]
 ---

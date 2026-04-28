@@ -1,7 +1,7 @@
 ---
 title: "Hacking for Defense @ Stanford 2025 - Lessons Learned Presentations"
 url: "https://steveblank.com/2025/06/17/hacking-for-defense-stanford-2025-lessons-learned-presentations/"
-fetched_at: 2026-04-25T12:11:13.603465+00:00
+fetched_at: 2026-04-28T07:01:50.430182+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

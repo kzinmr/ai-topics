@@ -1,7 +1,7 @@
 ---
 title: "The Strange Case of Engineers Who Dismiss AI"
 url: "https://terriblesoftware.org/2025/12/19/the-strange-case-of-engineers-who-dismiss-ai/"
-fetched_at: 2026-04-25T12:10:55.728710+00:00
+fetched_at: 2026-04-28T07:01:48.152314+00:00
 source: "terriblesoftware.org"
 tags: [blog, raw]
 ---

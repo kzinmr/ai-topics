@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-28 | Total pages: 1245 | Full entries: 600 | Stubs: 645
+> Last updated: 2026-04-28 | Total pages: 1246 | Full entries: 601 | Stubs: 645
 
 ## Entities (266 pages)
 
@@ -283,7 +283,7 @@
 - [[concepts/agent-harness]] — An agent harness is the infrastructure layer that sits between an LLM API and the agent's execution environment. It manages tool routing, context management, session lifecycle, and error recovery. ...
 - [[concepts/agent-harnesses]] — > **Core Thesis:** The less you build in your agent framework, the more it works. All the value is in the RL'd model, not your 10,000 lines of abstractions.
 - [[concepts/agent-identity-verification]] — Multi-agent systems spanning organizational boundaries require verifiable agent identity. The A2A (Agent-to-Agent) Protocol v1.0 addresses this with **Signed Agent Cards** — cryptographic identity ...
-- [[concepts/agent-sandboxing]] — Agent Sandboxingは、AIエージェントの動的コード実行を安全に隔离する技術譜。gVisor、FirecrackermicroVM、WASM等の隔离技術を整理。標準コンテナは共有カーネルのため不十分。
+- [[concepts/agent-sandboxing]] — Agent Sandboxingは、AIエージェントの動的コード実行を安全に隔离する技術譜。gVisor、FirecrackermicroVM、WASM、Docker isolation pattern (timsh.org) を含む。
 - [[concepts/agent-survival-benchmark]] — LLMエージェントの生存能力とPvP（プレイヤー対プレイヤー）圧力下での性能を測定するオープンソースベンチマーク。
 - [[concepts/agent-team-swarm/managed-devins]] — Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.2.
 - [[concepts/agentic-ai-skills]] — Agentic AI Skills Design is the discipline of writing reusable documents that teach AI systems how to approach entire categories of tasks — not what to do in one specific situation, but the process...
@@ -296,8 +296,9 @@
 - [[concepts/agentic-pbt]] — Anthropic + Hypothesis共同研究（NeurIPS 2025 DL4C Workshop）。Claude Codeエージェントが型注釈、docstring、関数名、コメントからコードの不変条件（properties）を自律的に推論し、HypothesisフレームワークでPBTを生成・実行する。
 - [[concepts/agentic-rag]] — Agentic RAG integrates autonomous AI agents into the RAG pipeline, enabling dynamic retrieval, iterative context refinement, and adaptive workflow orchestration. It addresses limitations of traditi...
 |- [[concepts/agentic-scaffolding]] — エージェントを本番環境で安全に動作させるための「足場」パターン。エージェントの力を最大化しつつ、リスクを管理するインフラストラクチャ設計。
-|- [[concepts/agentic-security]] — Agentic Security encompasses the security patterns, protocols, and tools for protecting AI agents, MCP servers, and the broader agent ecosystem. Covers authentication, authorization, data exfiltration prevention, MCP server security, prompt injection defense, and sandboxing strategies for agentic systems.
-|- [[concepts/agentic-theory]] — Sean Goedecke's analysis applying Peter Naur's 1985 "theory building" concept to AI-assisted programming.
+||- [[concepts/agentic-security]] — Agentic Security encompasses the security patterns, protocols, and tools for protecting AI agents, MCP servers, and the broader agent ecosystem. Covers package security (Nesbitt.io), authentication, authorization, data exfiltration prevention, MCP server security, prompt injection defense, and sandboxing strategies.
+||- [[concepts/agentic-sysadmin]] — Pattern for using Claude Code as a sysadmin assistant — infrastructure as markdown, CLAUDE.md as project memory, security-first workflow for bare-metal and cloud servers.
+||- [[concepts/agentic-theory]] — Sean Goedecke's analysis applying Peter Naur's 1985 "theory building" concept to AI-assisted programming.
 - [[concepts/agentic-web]] — > "The web is transitioning from a human-centric read/write platform to an Agentic Web, where AI systems interact with websites on behalf of users."
 - [[concepts/agentic-workflow-patterns]] — > "The most successful AI systems in 2026 are built around agentic workflow patterns that manage uncertainty, memory, tools, and feedback deliberately. These patterns aren't flashy. They are struct...
 - [[concepts/agreement-is-a-bug]] — The thesis that consensus among AI agents can be a failure mode in multi-agent systems. When all agents converge on the same answer, the diversity benefit of multi-agent architecture is lost — agre...
@@ -434,7 +435,7 @@
 - [[concepts/harness-engineering/agentic-workflows/karpathy-rl-agents]] — Andrej Karpathyが提唱する**自律的研究ループ（Autonomous Research Loop）**のパターン。2026年3月のAutoResearchプロジェクトとNo Priors podcastでの発言で詳細化。
 - [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — コーディングエージェントに**コードベースの構造化された解説を生成させる**パターン。既存コードの理解、忘れかけた自分のコードの復習、Vibe Codingしたコードの仕組み理解に有効。
 - [[concepts/harness-engineering/agentic-workflows/prompt-driven-development]] — Simon Willisonが提唱する**プロンプトを中心としたソフトウェア開発手法**。AIコーディングエージェントに対して、詳細な仕様をプロンプトとして記述し、それを実装させるワークフロー。
-- [[concepts/harness-engineering/agentic-workflows/red-green-tdd]] — コーディングエージェントとの開発において、テストファースト開発を適用するパターン。Simon WillisonのAgentic Engineering Patternsの中核概念。
+- [[concepts/harness-engineering/agentic-workflows/red-green-tdd]] — コーディングエージェントとの開発において、テストファースト開発を適用するパターン。Simon Willison発 + Martin Aldersonによる実証: エージェントがTDDの経済性を逆転させた。
 - [[concepts/harness-engineering/agentic-workflows/rodney]] — Simon Willisonが開発した**Chrome DevTools ProtocolベースのCLIブラウザ自動化ツール**。コーディングエージェントがWeb UIをテスト・検証するために設計。
 - [[concepts/harness-engineering/agentic-workflows/showboat]] — Simon Willisonが開発した、**コーディングエージェントに「自分の作業を示させる」ためのドキュメンテーション/成果物生成ツール**。
 - [[concepts/harness-engineering/agentic-workflows/subagents]] — メインのAIエージェントが**独立したサブエージェントを並列に起動**し、それぞれが隔離されたコンテキストとターミナルセッションでタスクを実行するパターン。
@@ -771,7 +772,7 @@
 - [[concepts/code-review]] — > **TODO**: Enrich this page.
 - [[concepts/codeless-software]] — > **TODO**: Enrich this page.
 - [[concepts/cognition-devin-memory-tool-claude-code-competitive-analysis-context-management]] — > **TODO**: Enrich this page.
-- [[concepts/cognitive-debt]] — > **TODO**: Enrich this page with research on this topic.
+- [[concepts/cognitive-debt]] — The hidden cost of working at higher levels of abstraction with AI. When you don't understand the layers beneath, debugging, estimation, and maintenance become harder. Xe Iaso's framing + relation to agentic workflows.
 - [[concepts/cohereio]] — > **TODO**: Enrich this page.
 - [[concepts/cohort-based-learning]] — > **TODO**: Enrich this page.
 - [[concepts/colbert]] — > **TODO**: Enrich this page.

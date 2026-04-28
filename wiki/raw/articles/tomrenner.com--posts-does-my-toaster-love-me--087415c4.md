@@ -1,7 +1,7 @@
 ---
 title: "Does my toaster love me?"
 url: "https://tomrenner.com/posts/does-my-toaster-love-me/"
-fetched_at: 2026-04-25T12:09:22.156552+00:00
+fetched_at: 2026-04-28T07:01:45.122935+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

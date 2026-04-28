@@ -1,7 +1,7 @@
 ---
 title: "The Temple of Fail"
 url: "https://tomrenner.com/posts/temple-of-fail/"
-fetched_at: 2026-04-25T12:09:24.916190+00:00
+fetched_at: 2026-04-28T07:01:45.664179+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

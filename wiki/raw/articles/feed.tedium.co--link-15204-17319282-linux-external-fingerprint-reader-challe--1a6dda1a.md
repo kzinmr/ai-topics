@@ -1,7 +1,7 @@
 ---
 title: "A Tough Combination"
 url: "https://feed.tedium.co/link/15204/17319282/linux-external-fingerprint-reader-challenges"
-fetched_at: 2026-04-27T07:57:42.782475+00:00
+fetched_at: 2026-04-28T07:01:40.306292+00:00
 source: "tedium.co"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Make yourself a happy place in your inbox - a mindfulness tip for your working day"
 url: "https://tomrenner.com/posts/make-yourself-a-happy-place/"
-fetched_at: 2026-04-25T12:09:24.322913+00:00
+fetched_at: 2026-04-28T07:01:45.461475+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

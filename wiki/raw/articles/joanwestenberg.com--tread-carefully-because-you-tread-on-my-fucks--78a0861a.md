@@ -1,0 +1,35 @@
+---
+title: "Tread carefully, because you tread on my fucks."
+url: "https://www.joanwestenberg.com/tread-carefully-because-you-tread-on-my-fucks/"
+fetched_at: 2026-04-28T07:02:43.395093+00:00
+source: "joanwestenberg.com"
+tags: [blog, raw]
+---
+
+# Tread carefully, because you tread on my fucks.
+
+Source: https://www.joanwestenberg.com/tread-carefully-because-you-tread-on-my-fucks/
+
+This newsletter is free to read, and it’ll stay that way. But if you want more - extra posts each month, access to the community, and a direct line to ask me things - paid subscriptions are $2.50/month. A lot of people have told me it’s worth it.
+Upgrade
+On any given day, I have roughly 5 or so fucks to give.
+Before anyone takes that as a confession of total selfishness…
+I wake up each morning with a finite quantity of moral and emotional attention. That quantity isn’t replenishable on demand by any external urgency, by any movement, by any poster on any social media platform. By the time I’ve spent ~however many fucks on my own anxieties, my own work, my own relationships, my own family, my own half-articulated and variously grasping fears about the future - there is precious little left over for the existential dread and the exhortations for me to “not look away” that keep arriving in my feed with all their attached moral instruction.
+When I scroll past your doom posting, your thread about how everything is bad and the world is full of horrors, your viral images, your statistics, I’m not making a statement about how important the things you give a fuck about actually are in the real world.
+I’m living on the edge of a nervous system that’s already fully deployed, and no amount of public shaming or insistence has ever - or will ever - expand my capacity by a single unit.
+Various online activists will insist that this makes me complicit // part of the problem. A bystander, by which I mean a Bad Person™️ in the modern sense of someone who has access to information and does not perform the “correct” response. That accusation assumes that moral concern, panic, fear, depression, hopelessness, outrage, disgust etc are a matter of will, and that people who aren’t experiencing any // all of those emotions simply need more social pressure.
+This is not a reasonable position.
+Herbert Simon described this in 1971; and it was already a structural problem long before the internet turned it into the moral emergency of our time. “A wealth of information,” Simon wrote, "creates a poverty of attention." And he was right - attention is a finite resource, becoming increasingly scarce. Any system that actively increases the supply of information while failing to increase the supply of attention is doing nothing more than performing an act of brutal. Social media floods every channel with call after call for moral attention. Each cause is real, each crisis is urgent, and each demand comes with the implicit claim that id deserves priority over anything and everything else occupying your heart // mind // time.
+Well I have news for you.
+When everything is urgent, urgency ceases to function as a signal of any worth.
+Adam Smith worked through this in 1759, in “The Theory of Moral Sentiments.” In a passage that still makes good folks uncomfortable (and of course, you and I are good folks) he describes a man in Europe who, upon hearing that a hundred thousand people have died in an earthquake in China, expresses his sympathy and then sleeps just fine.
+The point: sympathy is a psychological mechanism with operational limits. It works best at close range, and it diminishes with distance, whether that distance is geographical, relational or a function of how much shit one has on one’s plate at any given time.
+Robin Dunbar’s research on social cognition puts a sort of a rough number on it: we are neurologically equipped to maintain meaningful relationships with max 150 people. The internet’s scale and convenience does not dissolve or expand this limit. Viral, trending, excessively hashtagged suffering produces a numbness that can only be called compassion fatigue. You’re not connected to everyone, but you’re exposed to them, and you’re exposed to their pain, and you’re exposed to their pain about each others’ pain, and your nervous system is handling that the best it can - by rationing.
+All of which is to say: my limited, five give-able fucks are not a moral failing. They are a strict and damn-near non-negotiable biological budget. I can do my best to expand that budget. I will do my best. But I will always find a limit. And however much you posture or pose or insist otherwise, so will you.
+David Foster Wallace described attention as the primary moral capacity; the thing that lets you choose what to notice and how to interpret it instead of running on the default settings installed by circumstance and habit. Genuine attention is exhausting to sustain and has to be chosen, actively, against the pull of everything designed to capture it without your consent. He died in 2008, before the decade that would build platforms specifically engineered to interrupt and redirect attention hundreds of times daily, making chosen and sustained attention harder to achieve exactly as more people were demanding it be directed at more things at once. I think about his framing a lot when I'm deciding where my five fucks go. I try to spend them on things where my attention actually does something. I don’t always succeed.
+Tocqueville called it individualism in the democratic sense: the tendency of people in free societies to withdraw into their small circles, absorbed in private concerns, disengaged from the larger civic life that democracy depends on. He thought civic institutions were the corrective, that the way to pull people out of private absorption was to give them something to join and do together. What he identified as a structural vulnerability, the contemporary internet has industrialized. The feeds maximize private absorption in content that generates engagement, and then the people running causes that need public support are left competing for attention in an environment built entirely around incentives that have nothing to do with their goals, and wondering why no one shows up.
+My five fucks are mine. Biology gave them to me and circumstance has depleted them, and I spend them according to priorities I've developed over a life nobody else has lived. The snarking sniper on Threads cataloguing my failure as a moral agent hasn’t audited what all else my fucks paid for today. They have no idea what’s sitting in the background of my nervous system at 11pm when I finally have time to scroll the feed, and they don’t know what weight I’m carrying. Their contempt, and their demands, however confident, have never once manufactured capacity to give a damn in someone who had already reached their limit.
+I get the urgency.
+I get your cause.
+I get why you care.
+But my limits are real, and they are fundamentally not a moral position. They’re a fact of my human limitations. I can accept that. You must, too.

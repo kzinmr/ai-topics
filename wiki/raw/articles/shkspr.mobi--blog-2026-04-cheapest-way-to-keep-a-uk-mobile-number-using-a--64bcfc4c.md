@@ -1,7 +1,7 @@
 ---
 title: "Cheapest way to keep a UK mobile number using an eSIM"
 url: "https://shkspr.mobi/blog/2026/04/cheapest-way-to-keep-a-uk-mobile-number-using-an-esim/"
-fetched_at: 2026-04-25T12:10:47.483782+00:00
+fetched_at: 2026-04-28T07:01:47.828682+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
 ---

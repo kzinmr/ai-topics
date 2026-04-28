@@ -1,7 +1,7 @@
 ---
 title: "Premium: The Hater's Guide To Adobe"
 url: "https://www.wheresyoured.at/hatersguide-adobe/"
-fetched_at: 2026-04-25T12:09:09.791288+00:00
+fetched_at: 2026-04-28T07:01:43.425862+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
 ---

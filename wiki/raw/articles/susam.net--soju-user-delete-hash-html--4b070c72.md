@@ -1,7 +1,7 @@
 ---
 title: "Soju User Delete Hash"
 url: "https://susam.net/soju-user-delete-hash.html"
-fetched_at: 2026-04-25T12:09:06.176978+00:00
+fetched_at: 2026-04-28T07:01:42.772132+00:00
 source: "susam.net"
 tags: [blog, raw]
 ---

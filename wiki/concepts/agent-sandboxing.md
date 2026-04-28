@@ -120,6 +120,30 @@ PTCは従来の逐次的なLLM-agentループを反転：LLMが**実行可能Pyt
 - 长寿命実行（複数の逐次ツール呼び出しを伴うコードブロック全体）
 - 媒介されたツール呼び出し（orchestratorが全てintercept、sandboxに直接凭证やネットワークアクセスなし）
 
+## Docker + Coding Agent Isolation Pattern
+
+[[tim-sh]] described a pattern of running Claude Code inside Docker for enhanced security isolation when working with untrusted repositories:
+
+- **Docker container** runs Claude Code as a non-root user with no host filesystem access
+- **Volume mount** provides the target repository read-only, with a writable scratch directory
+- **Network restrictions** limit what the agent can access externally
+- **Ephemeral containers** ensure clean state between sessions
+
+This approach is less strict than gVisor/Firecracker but more practical for individual developer workflows. It addresses the key risk of coding agents: **they execute code you haven't reviewed**, so isolating their execution environment is critical.
+
+> "Running Claude Code inside Docker means the agent can't access my host filesystem, can't install system packages, and gets a clean environment every time."
+
+### Comparison with other isolation approaches
+
+| Approach | Isolation level | Startup cost | Developer friction |
+|----------|----------------|--------------|-------------------|
+| No sandbox | None | Instant | Lowest |
+| Docker container | Process-level | Seconds | Low |
+| gVisor | User-space kernel | Seconds | Medium |
+| Firecracker | Hardware-level | ~125ms | High |
+
+Docker strikes the best balance for solo developers and small teams using Claude Code daily.
+
 ## Common Vulnerabilities & Mitigations
 
 | 攻撃 | 缓解策 |

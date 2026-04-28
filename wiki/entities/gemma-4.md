@@ -83,7 +83,7 @@ For open models especially, benchmarks at release tell an incomplete story. New 
 
 ## MoE Expert Routing Visualization
 
-Martin Alderson (martinalderson.com) built an interactive visualization tool for MoE expert routing patterns using Gemma 4 26B: [moe-viz.martinalderson.com](https://moe-viz.martinalderson.com)
+Martin Alderson (martinalderson.com) built an interactive visualization tool for MoE expert routing patterns using Gemma 4 26B A4B: [moe-viz.martinalderson.com](https://moe-viz.martinalderson.com)
 
 Key findings:
 - **~25% of experts never activate** for any given short prompt
@@ -93,8 +93,33 @@ Key findings:
 
 Inference insight: Gemma 4 26B's small parameter count makes it practical for "CPU MoE" inference — loading certain experts on CPU while keeping KV cache on GPU. This suggests a path toward more efficient local MoE deployments where expert caching strategies could optimize the ~25% dormancy rate.
 
+## Local Coding Agent Integration (pi, 2026-04)
+
+The article at patloeber.com documents a practical setup for running **pi** (Mario Zechner's minimal coding agent) with Gemma 4 26B A4B via LM Studio:
+
+- **Model:** Gemma 4 26B A4B (MoE) — 26B total params, only 4B activate per token
+- **Provider:** LM Studio at `http://localhost:1234/v1`
+- **VRAM:** ~18GB for Q4_K_M (all 26B must be loaded despite MoE routing)
+- **Context:** Up to 256K tokens; recommended 128K if VRAM allows
+- **Install:** `npm install -g @mariozechner/pi-coding-agent`
+- **Config:** Point `~/.pi/agent/models.json` to LM Studio's base URL
+
+**Key architectural note:** *"Even though the model only activates 4B parameters per token, all 26B parameters must be loaded into memory for fast routing. That's why VRAM requirements are closer to a dense 26B model."*
+
+## Context vs. VRAM Tradeoff
+
+| Use Case | Context | Additional VRAM |
+|----------|---------|-----------------|
+| Small edits | 16K | ~1 GB |
+| Standard coding | 64K | ~4 GB |
+| Multi-file refactors | 128K | ~8 GB |
+| Full repo context | 256K | ~16 GB |
+
+The article emphasizes the tradeoff between context size and VRAM overhead. Coding agents accumulate heavy session context, making larger contexts highly beneficial for multi-file refactors and full repo understanding.
+
 ## Sources
 - 
 - 
 - Google DeepMind announcement
 - Martin Alderson, "A little tool to visualise MoE expert routing," martinalderson.com (April 13, 2026)
+- Patrick Loeber, "How to run a local coding agent with Gemma 4 and Pi," patloeber.com (Apr 2026)

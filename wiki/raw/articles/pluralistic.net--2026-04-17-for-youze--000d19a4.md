@@ -1,7 +1,7 @@
 ---
 title: "Pluralistic: Tiktokification shall set us free (17 Apr 2026)"
 url: "https://pluralistic.net/2026/04/17/for-youze/"
-fetched_at: 2026-04-25T12:11:08.686381+00:00
+fetched_at: 2026-04-28T07:01:50.659206+00:00
 source: "pluralistic.net"
 tags: [blog, raw]
 ---

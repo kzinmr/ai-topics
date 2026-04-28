@@ -1,7 +1,7 @@
 ---
 title: "Things that made me think: Cycle time, learning theory, and build chain security"
 url: "https://tomrenner.com/posts/ttmmt-3/"
-fetched_at: 2026-04-25T12:09:21.959335+00:00
+fetched_at: 2026-04-28T07:01:45.045714+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

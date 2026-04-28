@@ -1,7 +1,7 @@
 ---
 title: "Workarounds for C11 _Generic"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/c11-generic/"
-fetched_at: 2026-04-27T07:57:09.370443+00:00
+fetched_at: 2026-04-28T07:01:34.703777+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

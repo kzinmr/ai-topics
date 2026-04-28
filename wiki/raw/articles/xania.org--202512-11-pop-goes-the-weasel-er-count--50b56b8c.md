@@ -1,7 +1,7 @@
 ---
 title: "Pop goes the...population count?"
 url: "http://xania.org/202512/11-pop-goes-the-weasel-er-count?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-25T12:09:18.100788+00:00
+fetched_at: 2026-04-28T07:01:44.513600+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

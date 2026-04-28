@@ -1,7 +1,7 @@
 ---
 title: "Why Am I Doing the Thinking for You?"
 url: "https://terriblesoftware.org/2026/02/02/why-am-i-doing-the-thinking-for-you/"
-fetched_at: 2026-04-25T12:10:55.446224+00:00
+fetched_at: 2026-04-28T07:01:48.015875+00:00
 source: "terriblesoftware.org"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Here's What Agentic AI Can Do With Have I Been Pwned's APIs"
 url: "https://www.troyhunt.com/heres-what-agentic-ai-can-do-with-have-i-been-pwneds-apis/"
-fetched_at: 2026-04-25T12:09:20.186035+00:00
+fetched_at: 2026-04-28T07:01:44.559582+00:00
 source: "troyhunt.com"
 tags: [blog, raw]
 ---

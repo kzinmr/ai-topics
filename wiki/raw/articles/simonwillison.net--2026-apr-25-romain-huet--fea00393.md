@@ -1,7 +1,7 @@
 ---
 title: "A quote from Romain Huet"
 url: "https://simonwillison.net/2026/Apr/25/romain-huet/#atom-everything"
-fetched_at: 2026-04-27T07:56:44.648279+00:00
+fetched_at: 2026-04-28T07:01:31.162553+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---
