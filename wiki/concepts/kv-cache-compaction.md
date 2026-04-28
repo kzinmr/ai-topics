@@ -4,7 +4,7 @@ created: 2026-04-27
 updated: 2026-04-27
 tags: [multi-agent, kv-cache, token-efficiency, attention]
 aliases: [kv-cache-compaction, attention-matching-compaction]
-related: [[concepts/latent-briefing]], [[concepts/multi-agent-systems]], [[concepts/context-management]], [[entities/ramp-labs]]
+related: [[concepts/latent-briefing]], [[concepts/multi-agent-systems]], [[context-management]], [[entities/ramp-labs]]
 sources: [
   "https://x.com/RampLabs/status/2042660310851449223"
 ]
@@ -68,5 +68,5 @@ Evaluated on LongBench v2 (126 questions, 0-100k token documents):
 ## Related Concepts
 - [[concepts/latent-briefing]] — Ramp Labs' implementation
 - [[concepts/multi-agent-systems]] — Multi-agent architectures where this is most relevant
-- [[concepts/context-management]] — Managing context across agents
+- [[context-management]] — Managing context across agents
 - [[entities/ramp-labs]] — Company that developed Latent Briefing

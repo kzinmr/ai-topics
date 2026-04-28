@@ -1,6 +1,6 @@
 ---
 title: "AI Evals (AI Evaluation Systems)"
-tags: [[concepts/evaluation-llm-as-judge-error-analysis-ai-engineering-ai-systems]]
+tags: [evaluation]
 created: 2026-04-12
 updated: 2026-04-24
 type: concept

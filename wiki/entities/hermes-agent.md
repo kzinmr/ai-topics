@@ -21,7 +21,7 @@ related:
   - "[[concepts/harness-engineering]]"
   - "[[concepts/polymarket-trading-agents]]"
   - "[[entities/openclaw]]"
-  - "[[entities/nous-research]]"
+  - "[[nous-research]]"
 ---
 
 # Hermes Agent

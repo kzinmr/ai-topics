@@ -12,13 +12,13 @@ updated: 2026-04-27
 | Field | Value |
 |-------|-------|
 | **Type** | Memory Management / Inference Optimization |
-| **Related To** | [[SGLang]], [[lmsys-org]] |
+| **Related To** | [[sglang]], [[lmsys-org]] |
 | **Introduced** | April 2026 |
 | **Paper/Post** | LMSYS Blog "HiSparse: Turbocharging Sparse Attention with Hierarchical Memory" |
 
 ## Overview
 
-**HiSparse** is a hierarchical memory system for sparse attention in LLM inference, developed by the [[SGLang]] team at [[LMSYS Org]]. It addresses the memory capacity bottleneck in sparse attention by offloading inactive KV cache entries to CPU host memory (RAM) while keeping hot data accessible in GPU HBM.
+**HiSparse** is a hierarchical memory system for sparse attention in LLM inference, developed by the [[sglang]] team at [[lmsys-org]]. It addresses the memory capacity bottleneck in sparse attention by offloading inactive KV cache entries to CPU host memory (RAM) while keeping hot data accessible in GPU HBM.
 
 Sparse attention (e.g., top-k selection) reduces compute and I/O costs but traditionally doesn't solve the memory capacity bottleneck — the full KV cache must remain in GPU HBM. HiSparse enables significantly larger decoding batch sizes and higher throughput.
 

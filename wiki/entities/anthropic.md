@@ -2,7 +2,7 @@
 title: "Anthropic"
 type: entity
 aliases: [anthropic]
-tags: [entity, llm-company, claude, managed-agents, safety-research]
+tags: [entity, llm, claude, managed-agents, safety-research]
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
@@ -13,8 +13,8 @@ sources: [
   "raw/newsletters/2026-04-26-openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md"
 ]
 related: [
-  "[[claude]]",
-  "[[concepts/claude-code]]",
+  "[[anthropic]]",
+  "[[claude-code]]",
   "[[foundation-capital]]"
 ]
 ---
@@ -64,7 +64,7 @@ Directory now exceeds **200 connectors** total.
 
 ### Claude Code
 
-Anthropic's CLI coding agent (see [[concepts/claude-code]]). A terminal-based agent that can:
+Anthropic's CLI coding agent (see [[claude-code]]). A terminal-based agent that can:
 - Read, write, and edit code
 - Run commands
 - Understand codebases at scale
@@ -95,6 +95,6 @@ Anthropic's research priorities:
 - Interpretability
 
 ## Related
-- [[claude]] — The model family
-- [[concepts/claude-code]] — Claude Code CLI agent
+- [[anthropic]] — The model family
+- [[claude-code]] — Claude Code CLI agent
 - [[foundation-capital]] — Partner in Claude Managed Agents

@@ -19,7 +19,7 @@ updated: 2026-04-27
 sources:
   - "https://x.com/i/article/2041215978957389908"
 related:
-  - "[[concepts/rags]]"
+  - "[[rags]]"
   - "[[concepts/agent-harnesses]]"
   - "[[concepts/mcp]]"
 ---

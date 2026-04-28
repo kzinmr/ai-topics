@@ -1,6 +1,6 @@
 ---
 title: "Agent Orchestration Frameworks"
-tags: [ai-agents, llm, prompting, rAG, comparison]
+tags: [ai-agents, llm, prompting, rag, comparison]
 created: 2026-04-24
 updated: 2026-04-24
 type: comparison

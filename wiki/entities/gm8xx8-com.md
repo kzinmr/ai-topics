@@ -1,6 +1,6 @@
 ---
 title: "gm8xx8 (@gm8xx8) — AI Paper Curator"
-tags: [- person]
+tags: [person]
 created: 2026-04-24
 updated: 2026-04-14
 type: entity

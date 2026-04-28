@@ -1,6 +1,6 @@
 ---
 title: "Rahul Sengottuvelu"
-tags: [ai-agents, llm, prompting, entity, rAG, evaluations, inference]
+tags: [ai-agents, llm, prompting, entity, rag, evaluations, inference]
 created: 2026-04-24
 updated: 2026-04-24
 type: entity

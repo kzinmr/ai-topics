@@ -1,6 +1,6 @@
 ---
 title: "Cognition/Devin Philosophy"
-tags: [[concepts/agentic-engineering-cognition-devin-multi-agents-orchestration]]
+tags: [agentic-engineering-cognition-devin-multi-agents-orchestration]
 created: 2026-04-23
 updated: 2026-04-24
 type: concept

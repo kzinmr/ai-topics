@@ -21,7 +21,7 @@ updated: 2026-04-27
 
 ## Overview
 
-**SGLang** is a high-performance inference engine for large language models (LLMs) and vision-language models (VLMs), developed by [[LMSYS Org]]. It was introduced in January 2024 with the novel **RadixAttention** mechanism for efficient prefix caching across multiple generation calls.
+**SGLang** is a high-performance inference engine for large language models (LLMs) and vision-language models (VLMs), developed by [[lmsys-org]]. It was introduced in January 2024 with the novel **RadixAttention** mechanism for efficient prefix caching across multiple generation calls.
 
 SGLang has become one of the most widely deployed open-source LLM inference engines, alongside vLLM and TensorRT-LLM. It provides Day-0 support for major model releases and has deep hardware partnerships with NVIDIA, AMD, and Intel.
 
@@ -85,12 +85,12 @@ Chunked Pipeline Parallelism for ultra-long context inference. Achieves 3.31× p
 | Huawei NPU | Experimental support |
 
 ## Key Integration Partners
-- [[NVIDIA]]: Dynamo, NIXL, TensorRT-LLM kernels
-- [[AMD]]: ROCm for both inference and RL training
-- [[Alibaba Cloud]]: EPD Disaggregation, Mooncake
-- [[Ant Group]]: Production MoE serving, Elastic EP
-- [[Intel]]: Xeon optimization
-- [[Meituan]]: LongCat-Flash deployment
+|- **NVIDIA**: Dynamo, NIXL, TensorRT-LLM kernels
+|- **AMD**: ROCm for both inference and RL training
+|- **Alibaba Cloud**: EPD Disaggregation, Mooncake
+|- **Ant Group**: Production MoE serving, Elastic EP
+|- **Intel**: Xeon optimization
+|- **Meituan**: LongCat-Flash deployment
 
 ## Recent Model Support Timeline
 - **Apr 2026**: DeepSeek-V4 (Pro 1.6T, Flash 284B)

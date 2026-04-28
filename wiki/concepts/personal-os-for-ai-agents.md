@@ -4,7 +4,7 @@ created: 2026-04-27
 updated: 2026-04-27
 tags: [personal-os, context-engineering, file-system, git-based]
 aliases: [personal-brain-os, file-based-ai-os]
-related: [[concepts/context-engineering]], [[concepts/agentic-ai-skills]], [[concepts/context-management]], [[concepts/harness-engineering]]
+related: [[concepts/context-engineering]], [[concepts/agentic-ai-skills]], [[context-management]], [[concepts/harness-engineering]]
 sources: [
   "https://x.com/koylanai/status/2025286163641118915"
 ]
@@ -70,5 +70,5 @@ Three append-only logs storing judgment, not just facts:
 ## Related Concepts
 - [[concepts/context-engineering]] — The broader discipline this falls under
 - [[concepts/agentic-ai-skills]] — Skill design principles used in this system
-- [[concepts/context-management]] — Managing context windows and attention
-- [[entities/koylanai]] — Creator: Muratcan Koylan, Context Engineer at Sully.ai
+- [[context-management]] — Managing context windows and attention
+- [[koylan-ai]] — Creator: Muratcan Koylan, Context Engineer at Sully.ai

@@ -5,7 +5,7 @@ created: 2026-04-27
 updated: 2026-04-27
 status: L2
 sources: [https://x.com/i/article/2044531930671288320, https://code.claude.com/docs/en/memory, https://milvus.io/blog/claude-code-memory-memsearch.md]
-tags: [claude-code, memory-system, CLAUDE.md, auto-memory, context-engineering, agent-architecture]
+tags: [claude-code, memory-systems, claude-md, auto-memory, context-engineering, agent-architecture]
 aliases: [claude-memory, claude-code-memory]
 ---
 

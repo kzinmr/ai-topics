@@ -1,6 +1,6 @@
 ---
 title: "AI Safety"
-tags: [[concepts/ai-safety-alignment-rlhf-scalable-oversight-interpretability]]
+tags: [ai-safety-alignment-rlhf-scalable-oversight-interpretability]
 created: 2026-04-19
 updated: 2026-04-24
 type: concept

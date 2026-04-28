@@ -1,6 +1,6 @@
 ---
 title: "Shunyu Yao (姚顺雨)"
-tags: [- person]
+tags: [person]
 created: 2026-04-13
 updated: 2026-04-24
 type: entity

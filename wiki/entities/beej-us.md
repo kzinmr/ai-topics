@@ -1,6 +1,6 @@
 ---
 title: "Beej (Brian 'Beej Jorgensen' Hall)"
-tags: [[concepts/person]]
+tags: [person]
 created: 2026-04-24
 updated: 2026-04-24
 type: entity

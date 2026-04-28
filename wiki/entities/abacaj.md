@@ -1,6 +1,6 @@
 ---
 title: "abacaj"
-tags: [- ml-engineer]
+tags: [ml-engineer]
 created: 2026-04-24
 updated: 2026-04-10
 type: entity

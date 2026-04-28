@@ -12,13 +12,13 @@ updated: 2026-04-27
 | Field | Value |
 |-------|-------|
 | **Type** | Inference Infrastructure / Fault Tolerance |
-| **Related To** | [[SGLang]], [[lmsys-org]], [[Mooncake]] |
+| **Related To** | [[sglang]], [[lmsys-org]], [[Mooncake]] |
 | **Introduced** | March 2026 |
 | **Source** | LMSYS Blog "Elastic EP in SGLang: Achieving Partial Failure Tolerance" |
 
 ## Overview
 
-**Elastic EP** is a fault-tolerant expert parallelism mechanism for Mixture-of-Experts (MoE) model deployments, built into [[SGLang]]. Developed by the Mooncake Team at Volcano Engine, it addresses the reliability challenge of "wide" EP deployments (32+ GPUs) for models like DeepSeek V3/V4.
+**Elastic EP** is a fault-tolerant expert parallelism mechanism for Mixture-of-Experts (MoE) model deployments, built into [[sglang]]. Developed by the Mooncake Team at Volcano Engine, it addresses the reliability challenge of "wide" EP deployments (32+ GPUs) for models like DeepSeek V3/V4.
 
 ## The Problem
 

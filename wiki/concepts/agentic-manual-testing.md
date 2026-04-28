@@ -1,7 +1,7 @@
 ---
 title: "Agentic Manual Testing"
 type: concept
-tags: ['concept']
+tags: [concept]
 status: complete
 description: "Moved to concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md"
 created: 2026-04-14

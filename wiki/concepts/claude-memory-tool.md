@@ -1,6 +1,6 @@
 ---
 title: "Cognition's Memory Tool — Copying Claude's Approach"
-tags: [[concepts/cognition-devin-memory-tool-claude-code-competitive-analysis-context-management]]
+tags: [cognition-devin-memory-tool-claude-code-competitive-analysis-context-management]
 created: 2026-04-13
 updated: 2026-04-24
 type: concept

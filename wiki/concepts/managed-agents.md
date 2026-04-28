@@ -17,7 +17,7 @@ Managed agents are AI agents that can be deployed, configured, and operated with
 
 ### Telegram Managed Bots (April 2026)
 - Anyone can utilize AI bots to develop, launch and manage their own bot with no coding required
-- Supports [[bot-to-bot-communication]] for inter-agent interoperability
+- Supports [[agent-communication-protocols]] for inter-agent interoperability
 - Bots for Business use cases
 - Links to [[telegram]] as a platform
 

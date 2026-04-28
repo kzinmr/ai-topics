@@ -1,6 +1,6 @@
 ---
 title: "Lilian Weng (@lilianweng)"
-tags: [type: entity]
+tags: [type:, entity]
 created: 2026-04-24
 updated: 2026-04-24
 type: entity

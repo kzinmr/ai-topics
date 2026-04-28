@@ -1,6 +1,6 @@
 ---
 title: "Pydantic Logfire — AI Observability Platform"
-tags: [[concepts/observability-monitoring-ai-opentelemetry-python-production]]
+tags: [observability-monitoring-ai-opentelemetry-python-production]
 created: 2026-04-16
 updated: 2026-04-24
 type: concept

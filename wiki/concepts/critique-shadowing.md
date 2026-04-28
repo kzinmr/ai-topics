@@ -1,6 +1,6 @@
 ---
 title: "Critique Shadowing"
-tags: [[concepts/llm-as-judge-evaluation-methodology-human-in-the-loop]]
+tags: [llm-as-judge-evaluation-methodology-human-in-the-loop]
 created: 2026-04-12
 updated: 2026-04-24
 type: concept

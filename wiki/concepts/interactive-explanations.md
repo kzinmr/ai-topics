@@ -1,7 +1,7 @@
 ---
 title: "Interactive Explanations"
 type: concept
-tags: ['concept']
+tags: [concept]
 status: complete
 description: "Moved to concepts/harness-engineering/agentic-workflows/interactive-explanations.md"
 created: 2026-04-14

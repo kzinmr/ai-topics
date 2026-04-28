@@ -1,6 +1,6 @@
 ---
 title: "Moonshot Kimi K2.6"
-tags: [- open-model]
+tags: [open-model]
 created: 2026-04-24
 updated: 2026-04-24
 type: concept

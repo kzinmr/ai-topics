@@ -1,6 +1,6 @@
 ---
 title: "Whisper — OpenAI's Speech Recognition Model"
-tags: [[concepts/speech-asr-openai-whisper-audio]]
+tags: [speech-asr-openai-whisper-audio]
 created: 2026-04-19
 updated: 2026-04-19
 type: concept

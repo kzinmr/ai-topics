@@ -5,7 +5,7 @@ handle: "@thdxr"
 created: 2026-04-13
 updated: 2026-04-13
 sources: [https://grokipedia.com/page/Dax_Raad]
-tags: [person, open-source, ai-coding-agent, serverless]
+tags: [person, open-source, coding-agents, serverless]
 ---
 
 

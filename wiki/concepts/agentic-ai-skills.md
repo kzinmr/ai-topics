@@ -4,7 +4,7 @@ created: 2026-04-27
 updated: 2026-04-27
 tags: [skills, agentic-ai, prompt-engineering, harness-engineering]
 aliases: [ai-skills, agent-skills]
-related: [[concepts/agent-harness]], [[concepts/harness-engineering]], [[concepts/personal-os-for-ai-agents]], [[concepts/tool-orchestration]]
+related: [[concepts/agent-harness]], [[concepts/harness-engineering]], [[concepts/personal-os-for-ai-agents]], [[tool-orchestration]]
 sources: [
   "https://x.com/IntuitMachine/status/2043071219667480853"
 ]
@@ -75,4 +75,4 @@ A skill encodes a process that works across domains. The same investigative skil
 - [[concepts/agent-harness]] — The harness layer that skills sit above
 - [[concepts/harness-engineering]] — Principles of agent harness design
 - [[concepts/personal-os-for-ai-agents]] — File-based personal OS using skills
-- [[concepts/context-management]] — Managing context windows and attention
+- [[context-management]] — Managing context windows and attention

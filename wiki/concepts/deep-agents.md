@@ -1,6 +1,6 @@
 ---
 title: "Deep Agents — Autonomous Multi-Step AI Agents"
-tags: [[concepts/ai-agents-autonomy-planning-file-operations-delegation-sandbox]]
+tags: [ai-agents-autonomy-planning-file-operations-delegation-sandbox]
 created: 2026-04-15
 updated: 2026-04-16
 type: concept

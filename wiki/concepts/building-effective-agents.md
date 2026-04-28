@@ -1,7 +1,7 @@
 ---
 title: "Building Effective Agents"
 type: concept
-tags: ['concept']
+tags: [concept]
 status: complete
 description: "Moved to concepts/harness-engineering/system-architecture/building-effective-agents.md"
 created: 2026-04-14

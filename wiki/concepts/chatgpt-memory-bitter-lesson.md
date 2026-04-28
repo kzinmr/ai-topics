@@ -1,6 +1,6 @@
 ---
 title: "ChatGPT Memory & The Bitter Lesson"
-tags: [[concepts/memory-systems-bitter-lesson-stateless-agents-chatgpt-context-management]]
+tags: [memory-systems-bitter-lesson-stateless-agents-chatgpt-context-management]
 created: 2026-04-13
 updated: 2026-04-24
 type: concept

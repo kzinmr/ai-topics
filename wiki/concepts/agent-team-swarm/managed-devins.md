@@ -1,6 +1,6 @@
 ---
 title: "Managed Devins"
-tags: [[concepts/multi-agents-cognition-devin-orchestration]]
+tags: [multi-agents-cognition-devin-orchestration]
 created: 2026-04-22
 updated: 2026-04-24
 type: concept

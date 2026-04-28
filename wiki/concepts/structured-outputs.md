@@ -1,6 +1,6 @@
 ---
 title: "Structured Outputs — Reliable LLM Output via Schema Validation"
-tags: [[concepts/llm-output-formatting-json-pydantic-reliability-type-safety-function-calling]]
+tags: [llm-output-formatting-json-pydantic-reliability-type-safety-function-calling]
 created: 2026-04-15
 updated: 2026-04-24
 type: concept

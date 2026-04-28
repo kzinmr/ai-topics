@@ -1,6 +1,6 @@
 ---
 title: "Agent Team / Swarm"
-tags: [concept, ai-agents, llm, evaluations, rAG]
+tags: [concept, ai-agents, llm, evaluations, rag]
 created: 2026-04-24
 updated: 2026-04-24
 ---

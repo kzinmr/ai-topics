@@ -1,6 +1,6 @@
 ---
 title: "LLM Inference Optimization"
-tags: [[concepts/llm-inference-optimization-performance]]
+tags: [llm-inference-optimization-performance]
 created: 2026-04-24
 updated: 2026-04-24
 ---

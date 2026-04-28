@@ -5,7 +5,7 @@ created: 2026-04-27
 updated: 2026-04-27
 tags: [agent-memory, file-system-memory, context-engineering, persistency]
 aliases: [filesystem-memory, agent-filesystem-memory]
-related: [[concepts/claude-managed-agents]], [[concepts/agent-memory]], [[concepts/context-engineering]]
+related: [[concepts/claude-managed-agents]], [[agent-memory]], [[concepts/context-engineering]]
 ---
 
 # Filesystem as Agent Memory
@@ -72,7 +72,7 @@ The filesystem-as-memory pattern is closely related to [Koylan AI's](/wiki/entit
 
 ## Related Concepts
 
-- [[concepts/agent-memory]] — General agent memory patterns
+- [[agent-memory]] — General agent memory patterns
 - [[concepts/context-engineering]] — Koylan AI's context management discipline
 - [[concepts/claude-managed-agents]] — Anthropic's implementation
 - [[concepts/personal-os-for-ai-agents]] — Personal Brain OS concept

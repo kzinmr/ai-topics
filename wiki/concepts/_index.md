@@ -1,6 +1,6 @@
 ---
 title: "Concepts"
-tags: [training, concept, ai-agents, llm, local-llm, prompting, rAG, evaluations, inference]
+tags: [training, concept, ai-agents, llm, local-llm, prompting, rag, evaluations, inference]
 created: 2026-04-24
 updated: 2026-04-24
 ---
@@ -243,11 +243,11 @@ AI and LLM concept pages organized by topic.
 
 ## Attention-Mechanism-Variants.Md
 
-- [[concepts/attention-mechanism-variants]] — Modern transformer architectures use different attention mechanisms to optimize the trade-off between modeling capacity, compute efficiency, and context length. A prerequisite concept for [[context-en
+- [[concepts/attention-mechanism-variants]] — Modern transformer architectures use different attention mechanisms to optimize the trade-off between modeling capacity, compute efficiency, and context length. A prerequisite concept for [[context-engineering]]
 
--back-of-house-multi-agent-patternsmd
+## Back-Of-House-Multi-Agent-Patterns.Md
 
--back-of-house-multi-agent-patterns]] — 厨房のメタファーを用いたマルチエージェント・ワークフローパターン。Sarah Chieng ([[concepts/@milksandmatcha]]) と [@0xSero] によって2026年4月に提唱。
+- [[concepts/back-of-house-multi-agent-patterns]] — 厨房のメタファーを用いたマルチエージェント・ワークフローパターン。Sarah Chieng ([[concepts/@milksandmatcha]]) と [@0xSero] によって2026年4月に提唱。
 
 ## Back-Of-House-Patterns.Md
 

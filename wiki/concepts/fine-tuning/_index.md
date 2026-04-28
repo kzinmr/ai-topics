@@ -1,6 +1,6 @@
 ---
 title: "Fine-Tuning — Overview"
-tags: [[concepts/fine-tuning-post-training-overview]]
+tags: [fine-tuning-post-training-overview]
 created: 2026-04-19
 updated: 2026-04-19
 ---

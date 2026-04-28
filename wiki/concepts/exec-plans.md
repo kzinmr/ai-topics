@@ -1,6 +1,6 @@
 ---
 title: "Execution Plans"
-tags: [[concepts/agents-planning-orchestration]]
+tags: [agents-planning-orchestration]
 created: 2026-04-13
 updated: 2026-04-24
 type: concept

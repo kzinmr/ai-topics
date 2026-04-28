@@ -1,6 +1,6 @@
 ---
 title: "Pydantic Serializability"
-tags: [[concepts/serialization-structured-output-schema-generation-python-pydantic]]
+tags: [serialization-structured-output-schema-generation-python-pydantic]
 created: 2026-04-15
 updated: 2026-04-24
 type: concept

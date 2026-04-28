@@ -1,6 +1,6 @@
 ---
 title: "Jensen Huang"
-tags: [- person]
+tags: [person]
 created: 2026-04-24
 updated: 2026-04-18
 type: entity

@@ -5,7 +5,7 @@ created: 2026-04-27
 updated: 2026-04-27
 tags: [anthropic, managed-agents, memory-stores, file-system-memory, multi-agent-sync]
 aliases: [claude-managed-agents, claude-platform-agents]
-related: [[entities/anthropic]], [[concepts/agent-memory]], [[concepts/filesystem-memory]]
+related: [[entities/anthropic]], [[agent-memory]], [[concepts/filesystem-memory]]
 ---
 
 # Claude Managed Agents

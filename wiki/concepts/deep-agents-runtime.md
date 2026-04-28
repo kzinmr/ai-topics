@@ -21,8 +21,8 @@ sources:
 related:
   - "[[concepts/harness-engineering]]"
   - "[[concepts/agent-loop-orchestration]]"
-  - "[[concepts/durable-execution]]"
-  - "[[concepts/human-in-the-loop]]"
+  - "[[durable-execution]]"
+  - "[[human-in-the-loop]]"
 ---
 
 # Deep Agents Runtime

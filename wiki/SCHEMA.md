@@ -18,18 +18,31 @@ title: Page Title
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: entity | concept | comparison | query | summary
-tags: [from taxonomy below]
+tags: [from, taxonomy, below]
 sources: [raw/articles/source-name.md]
 ---
 ```
 
-## Tag Taxonomy
-- Models: model, image-generation, text-generation, multimodal
-- People/Orgs: person, company, lab, open-source
-- Products: product, platform, tool, service, protocol
-- Techniques: fine-tuning, inference, alignment, benchmark, optimization, quantization, speculative-decoding, diffusion
-- Engineering: agentic-engineering, harness-engineering, ai-agent-engineering
-- Meta: comparison, timeline, controversy, prediction, review
+## Tag Taxonomy (Canonical)
+
+### Core Types (auto-set by type field)
+- `concept`, `entity`, `comparison`, `query`, `summary`
+
+### Primary Categories
+- **Models**: model, multimodal, text-generation, image-generation, local-llm, sglang
+- **People/Orgs**: person, company, lab, open-source, anthropic, openai, google
+- **Products**: product, platform, tool, service, protocol, framework, claude-code
+- **Techniques**: inference, fine-tuning, training, optimization, quantization, alignment, benchmark, evaluation, speculative-decoding, diffusion, prompting, rag, kv-cache
+- **Engineering**: agentic-engineering, harness-engineering, ai-agent-engineering, context-engineering, context-management
+- **AI Agents**: ai-agents, multi-agent, orchestration, agents, coding-agents, memory-systems, agent-safety
+- **Infrastructure**: platform, protocol, security, architecture
+- **Meta**: comparison, timeline, controversy, prediction, review, safety
+
+### Guidelines
+- Every tag must be a useful category — avoid one-off tags that just restate the page title
+- Prefer plural forms: `memory-systems` not `memory-system`, `coding-agents` not `coding-agent`
+- Tags are lowercase kebab-case only — no wikilinks, no leading dashes, no spaces
+- Add commonly used new tags here first, then use them across pages
 
 Rule: every tag on a page must appear in this taxonomy. If a new tag is needed,
 add it here first, then use it. This prevents tag sprawl.

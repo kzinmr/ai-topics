@@ -1,6 +1,6 @@
 ---
 title: "Managed Agents — SRE Incident Response Pattern"
-tags: [[concepts/managed-agents-sre-human-in-the-loop-webhook-automation]]
+tags: [managed-agents-sre-human-in-the-loop-webhook-automation]
 created: 2026-04-24
 updated: 2026-04-24
 type: concept

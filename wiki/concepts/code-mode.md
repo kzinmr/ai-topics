@@ -1,6 +1,6 @@
 ---
 title: "CodeMode — LLM Code Execution Over Sequential Tool Calling"
-tags: [[concepts/code-execution-agents-latency-monty-pydantic-ai-tool-calling-sandbox]]
+tags: [code-execution-agents-latency-monty-pydantic-ai-tool-calling-sandbox]
 created: 2026-04-16
 updated: 2026-04-16
 type: concept

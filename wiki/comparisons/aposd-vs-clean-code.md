@@ -1,6 +1,6 @@
 ---
 title: "A Philosophy of Software Design vs Clean Code"
-tags: [ai-agents, llm, prompting, rAG, comparison, evaluations]
+tags: [ai-agents, llm, prompting, rag, comparison, evaluations]
 created: 2026-04-24
 updated: 2026-04-24
 type: comparison

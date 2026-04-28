@@ -1,6 +1,6 @@
 ---
 title: "AI Eval Tools Comparison"
-tags: [[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]]
+tags: [evaluation]
 created: 2026-04-12
 updated: 2026-04-24
 type: comparison

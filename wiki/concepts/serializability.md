@@ -1,6 +1,6 @@
 ---
 title: "Serializability — Structured Output for AI Systems"
-tags: [[concepts/serialization-llm-structured-output-ai-engineering]]
+tags: [serialization-llm-structured-output-ai-engineering]
 created: 2026-04-15
 updated: 2026-04-24
 type: concept

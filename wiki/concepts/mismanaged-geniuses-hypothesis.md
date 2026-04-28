@@ -1,6 +1,6 @@
 ---
 title: "The Mismanaged Geniuses Hypothesis (MGH)"
-tags: [[concepts/agents-scaffolding-composition-inference-scaling-hypothesis]]
+tags: [agents-scaffolding-composition-inference-scaling-hypothesis]
 created: 2026-04-19
 updated: 2026-04-26
 type: concept

@@ -1,6 +1,6 @@
 ---
 title: "Muratcan Koylan (Koylan AI)"
-tags: [- context-engineering]
+tags: [context-engineering]
 created: 2026-04-24
 updated: 2026-04-10
 type: entity
@@ -167,9 +167,9 @@ Autonomous research pipeline using Firecrawl and Claude for enterprise AI case s
 - [[concepts/file-system-as-database]] — His persistence philosophy
 - [[concepts/ai-persona-embodiment]] — His work on consistent agent personalities
 - [[concepts/personal-os-for-ai-agents]] — His Personal OS vision for AI agents
-- [[concepts/defense-in-depth]] — His defense-in-depth approach to agent safety
-- [[concepts/langgraph]] — His preferred orchestration framework
-- [[concepts/clinical-ai]] — His current domain at Sully.ai
+- [[defense-in-depth]] — His defense-in-depth approach to agent safety
+- [[langgraph]] — His preferred orchestration framework
+- [[clinical-ai]] — His current domain at Sully.ai
 
 ## Sources
 

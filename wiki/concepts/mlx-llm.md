@@ -11,7 +11,7 @@ sources: [raw/articles/spicyneuron-mac-studio-local-ai-6months.md]
 
 ## Overview
 
-[[mlx-lm]] and [[mlx-vlm]] are Apple's MLX framework packages for running large language models and multimodal models on Apple Silicon. As of 2026, MLX provides **10–25% faster inference** than llama.cpp on Apple Silicon hardware.
+[[mlx]] and [[mlx]] are Apple's MLX framework packages for running large language models and multimodal models on Apple Silicon. As of 2026, MLX provides **10–25% faster inference** than llama.cpp on Apple Silicon hardware.
 
 ## Key Packages
 
@@ -70,7 +70,7 @@ The community has developed custom forks for advanced features:
 ## Related Concepts
 
 - [[concepts/mac-studio-local-ai]] — Mac Studio hardware setup for local inference
-- [[quantization]] — 4-bit and dynamic quantization techniques
-- [[moe-architecture]] — Mixture-of-Experts model design
+- [[gguf]] — 4-bit and dynamic quantization techniques
+- [[mixture-of-experts]] — Mixture-of-Experts model design
 - [[concepts/llama-cpp]] — Cross-platform inference engine alternative
 - [[claude-code]] — Local Claude Code deployment using MLX

@@ -1,6 +1,6 @@
 ---
 title: "GitHub Copilot Token-Based Billing"
-tags: [- github-copilot]
+tags: [github-copilot]
 created: 2026-04-24
 updated: 2026-04-24
 type: concept

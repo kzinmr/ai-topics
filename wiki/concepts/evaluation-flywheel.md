@@ -1,6 +1,6 @@
 ---
 title: "Evaluation Flywheel"
-tags: [[concepts/evaluation-development-process-quality]]
+tags: [evaluation]
 created: 2026-04-13
 updated: 2026-04-24
 type: concept

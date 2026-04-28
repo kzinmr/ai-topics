@@ -1,6 +1,6 @@
 ---
 title: "Local LLM Models Comparison — April 2026"
-tags: [[concepts/local-llm-models-comparison-open-weights-moe-hardware-vram]]
+tags: [local-llm]
 created: 2026-04-15
 updated: 2026-04-15
 type: comparison

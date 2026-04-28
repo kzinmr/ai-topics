@@ -5,7 +5,7 @@ created: 2026-04-27
 updated: 2026-04-27
 status: L2
 sources: [https://khemaridh.substack.com/p/how-to-get-your-company-ai-pilled, https://x.com/elvis_](status: pending)
-tags: [ai-adoption, enterprise-ai, company-culture, token-economics, claude-ecosystem]
+tags: [ai-adoption, enterprise-ai, company-culture, token-economics, claude]
 ---
 
 # Company AI Pilled

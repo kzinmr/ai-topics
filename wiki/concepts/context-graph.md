@@ -1,6 +1,6 @@
 ---
 title: "Context Graph"
-tags: [[concepts/concept-context-graph-decision-trace-system-of-record-foundation-capital]]
+tags: [concept-context-graph-decision-trace-system-of-record-foundation-capital]
 created: 2026-04-20
 updated: 2026-04-24
 type: concept

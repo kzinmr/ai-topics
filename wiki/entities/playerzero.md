@@ -1,6 +1,6 @@
 ---
 title: "PlayerZero"
-tags: [[concepts/company-startup-playerzero-context-graph-sre-support-automation]]
+tags: [company]
 created: 2026-04-20
 updated: 2026-04-24
 type: entity

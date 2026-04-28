@@ -46,7 +46,7 @@ There's a difference between "using AI" and being AI-pilled. One uses a chatbot 
 ## Connection to Other Frameworks
 
 - [[reflexive-ai]] — Shopify's Tobi Lütke memo is the canonical example of "AI-pilled" in practice
-- [[company-ai-transformation]] — broader organizational change theory
+- [[company-ai-pilled]] — broader organizational change theory
 - [[solo-founder-stack]] — AI-pilled companies adopt solo-founder efficiency internally
 
 ## Key Signals of Being AI-Pilled

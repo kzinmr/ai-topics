@@ -1,6 +1,6 @@
 ---
 title: "Compute Scaling Bottlenecks"
-tags: [ai-agents, rAG, concept]
+tags: [ai-agents, rag, concept]
 created: 2026-04-24
 updated: 2026-04-24
 type: concept

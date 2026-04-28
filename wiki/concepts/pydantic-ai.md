@@ -1,6 +1,6 @@
 ---
 title: "Pydantic AI — Type-Safe Python Agent Framework"
-tags: [[concepts/ai-agents-framework-python-type-safety-structured-outputs-pydantic]]
+tags: [ai-agents-framework-python-type-safety-structured-outputs-pydantic]
 created: 2026-04-16
 updated: 2026-04-24
 type: concept

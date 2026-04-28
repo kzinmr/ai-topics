@@ -1,6 +1,6 @@
 ---
 title: "AI Memory Systems: Two Camps Taxonomy"
-tags: [concept, ai-agents, llm, prompting, rAG, evaluations, inference]
+tags: [concept, ai-agents, llm, prompting, rag, evaluations, inference]
 created: 2026-04-24
 updated: 2026-04-24
 type: concept

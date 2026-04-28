@@ -1,6 +1,6 @@
 ---
 title: "Late Interaction Workshop (LIR) @ ECIR 2026"
-tags: [- late-interaction]
+tags: [late-interaction]
 created: 2026-04-24
 updated: 2026-04-10
 type: entity

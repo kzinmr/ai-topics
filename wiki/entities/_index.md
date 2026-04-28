@@ -1,6 +1,6 @@
 ---
 title: "Entity Pages"
-tags: [training, ai-agents, llm, entity, prompting, rAG, evaluations, inference]
+tags: [training, ai-agents, llm, entity, prompting, rag, evaluations, inference]
 created: 2026-04-24
 updated: 2026-04-24
 ---

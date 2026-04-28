@@ -1251,7 +1251,7 @@
 - [[concepts/zig]] — > **TODO**: Enrich this page.
 - [[concepts/zjit]] — > **TODO**: Enrich this page.
 - [[entities/adam-rosenthal]] — > **TODO**: Enrich this page.
-- [[entities/george-hotz]] — > **TODO**: Enrich this page with research on this person.
+- [[entities/george-hotz]] — Security hacker, entrepreneur, engineer. First to iPhone-unlock (2007), PS3 jailbreak (2010). Founder of comma.ai/openpilot, tinygrad, and tiny corp.
 - [[entities/grant-slatton]] — > **TODO**: Enrich this page with research on this person.
 - [[entities/jo-kristian-bergum]] — > **TODO**: Enrich this page with research on this person.
 - [[entities/samuelcolvin]] — > **TODO**: Enrich this page.

@@ -23,7 +23,7 @@ updated: 2026-04-27
 
 **LMSYS Org** (Large Model Systems Organization) is an open research organization based at UC Berkeley SkyLab focused on developing large language model systems that are open, accessible, and scalable. They are best known for creating:
 
-- **[[SGLang]]** — A fast and expressive LLM serving framework with RadixAttention
+- **[[sglang]]** — A fast and expressive LLM serving framework with RadixAttention
 - **Chatbot Arena** (lmarena.ai) — The industry-standard crowdsourced LLM evaluation platform
 - **Miles** — An open-source RL post-training framework
 - **FastChat** — An open-source platform for training, serving, and evaluating LLMs

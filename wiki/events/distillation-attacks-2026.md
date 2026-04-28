@@ -1,6 +1,6 @@
 ---
 title: "Industrial-Scale Distillation Attacks Accusation"
-tags: [- anthropic]
+tags: [anthropic]
 created: 2026-04-24
 updated: 2026-04-24
 type: event

@@ -26,7 +26,7 @@ Analyzed Anthropic's [[concepts/anthropic-managed-agents]] — enterprise-grade 
 
 ## Platform
 
-- [[concepts/foundation-capital]] — Foundation Capital's AI investment thesis
+- [[foundation-capital]] — Foundation Capital's AI investment thesis
 
 ## See Also
 

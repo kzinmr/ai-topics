@@ -19,8 +19,8 @@ sources:
   - "https://x.com/i/article/2045080054917476451"
 related:
   - "[[concepts/harness-engineering]]"
-  - "[[concepts/hermes-agent]]"
-  - "[[concepts/self-learning-agents]]"
+  - "[[hermes-agent]]"
+  - "[[self-learning-agents]]"
 ---
 
 # Polymarket Trading Agents

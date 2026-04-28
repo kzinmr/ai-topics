@@ -1,7 +1,7 @@
 ---
 title: "Reinforcement Learning"
 type: concept
-tags: ['concept']
+tags: [concept]
 status: complete
 description: "RLの基本概念。詳細はrlhf.mdを参照。"
 created: 2026-04-14

@@ -10,7 +10,7 @@ sources:
   - https://build.nvidia.com/spark
   - https://nemoclawai.io/blog/getting-started-nemoclaw-dgx-spark/
   - https://docs.nvidia.com/nemoclaw/latest/get-started/quickstart.html
-tags: [entity, agent-framework, local-llm, open-source, telegram]
+tags: [entity, framework, local-llm, open-source, telegram]
 ---
 
 # OpenClaw

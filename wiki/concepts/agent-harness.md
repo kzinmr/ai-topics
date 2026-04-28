@@ -4,7 +4,7 @@ created: 2026-04-27
 updated: 2026-04-27
 tags: [agent-infrastructure, harness, agent-orchestration]
 aliases: [agent-harness, agent-runtime]
-related: [[concepts/claude-managed-agents]], [[concepts/harness-engineering]], [[concepts/tool-orchestration]], [[entities/anthropic]]
+related: [[concepts/claude-managed-agents]], [[concepts/harness-engineering]], [[tool-orchestration]], [[entities/anthropic]]
 sources: [
   "https://x.com/RLanceMartin/status/2041927992986009773",
   "https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity"
@@ -60,5 +60,5 @@ Build-your-own approach using Claude API messages API or OpenAI functions. Requi
 ## Related Concepts
 - [[concepts/claude-managed-agents]] — Anthropic's managed agent infrastructure
 - [[concepts/harness-engineering]] — Principles of building agent harnesses
-- [[concepts/tool-orchestration]] — How agents route tool calls to handlers
+- [[tool-orchestration]] — How agents route tool calls to handlers
 - [[entities/anthropic]] — Provider of Claude Managed Agents
