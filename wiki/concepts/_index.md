@@ -131,7 +131,11 @@ AI and LLM concept pages organized by topic.
 
 ## Agentic-Alternative-To-Graphrag.Md
 
-- [[concepts/agentic-alternative-to-graphrag]] — A November 2025 paper by Contextual AI (George Halal, Jackie Zhang, Sheshansh Agrawal) proposing that the reference traversal problem in RAG pipelines should be solved via agentic tool-use rather than
+|- [[concepts/agentic-alternative-to-graphrag]] — A November 2025 paper by Contextual AI (George Halal, Jackie Zhang, Sheshansh Agrawal) proposing that the reference traversal problem in RAG pipelines should be solved via agentic tool-use rather than
+
+## Agentic-Browsing.Md
+
+|- [[concepts/agentic-browsing]] — Agentic Browsing refers to AI agents that autonomously navigate websites, click buttons, fill forms, and execute multi-step web tasks without human intervention. Tools like Browser Use, Playwright MCP, and Puppeteer enable agents to interact with web UIs as humans do — clicking, scrolling, typing, and reading structured and unstructured content.
 
 ## Agentic-Engineering.Md
 
@@ -147,7 +151,11 @@ AI and LLM concept pages organized by topic.
 
 ## Agentic-Rag.Md
 
-- [[concepts/agentic-rag]] — Agentic RAG integrates autonomous AI agents into the RAG pipeline, enabling dynamic retrieval, iterative context refinement, and adaptive workflow orchestration. It addresses limitations of traditiona
+|- [[concepts/agentic-rag]] — Agentic RAG integrates autonomous AI agents into the RAG pipeline, enabling dynamic retrieval, iterative context refinement, and adaptive workflow orchestration. It addresses limitations of traditiona
+
+## Agentic-Security.Md
+
+|- [[concepts/agentic-security]] — Agentic Security encompasses the security patterns, protocols, and tools for protecting AI agents, MCP servers, and the broader agent ecosystem. Covers authentication, authorization, data exfiltration prevention, MCP server security, prompt injection defense, and sandboxing strategies for agentic systems.
 
 ## Agentic-Scaffolding.Md
 
@@ -259,7 +267,11 @@ AI and LLM concept pages organized by topic.
 
 ## Behavioral-Trait-Transmission.Md
 
-- [[concepts/behavioral-trait-transmission]] — Language models that share initialization can transmit behavioural traits through training data that is semantically unrelated to those traits — a phenomenon discovered by Anthropic and academic resea
+|- [[concepts/behavioral-trait-transmission]] — Language models that share initialization can transmit behavioural traits through training data that is semantically unrelated to those traits — a phenomenon discovered by Anthropic and academic resea
+
+## Blogwatcher.Md
+
+|- [[concepts/blogwatcher]] — Blogwatcher is a CLI-based blog and RSS feed monitoring tool (written in Go) for tracking technical blogs and newsletters. It periodically scans configured RSS/Atom feeds, detects new posts, and can be integrated into automated workflows for content discovery and curation.
 
 ## Building-Effective-Agents.Md
 
@@ -571,7 +583,11 @@ AI and LLM concept pages organized by topic.
 
 ## Long-Context-Coding-Agents.Md
 
-- [[concepts/long-context-coding-agents]] — A 2026 approach that externalizes long-context processing from latent attention into explicit, executable interactions. Coding agents organize text in file systems and manipulate it using native tools
+|- [[concepts/long-context-coding-agents]] — A 2026 approach that externalizes long-context processing from latent attention into explicit, executable interactions. Coding agents organize text in file systems and manipulate it using native tools
+
+## Logic-Tensor-Networks.Md
+
+|- [[concepts/logic-tensor-networks]] — Logic Tensor Networks (LTN) is a neurosymbolic framework that combines neural networks with first-order logic reasoning using differentiable logic operators. Developed by Serafini and Garcez, LTN enables end-to-end learning from data while enforcing logical constraints, supporting tasks like knowledge graph completion, relational learning, and constraint-satisfaction problems.
 
 ## Main-Branch-Development.Md
 

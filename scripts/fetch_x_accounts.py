@@ -58,7 +58,7 @@ LOW_SIGNAL_DOMAINS = (
 )
 
 def run(*args):
-    r = subprocess.run([XURL, "--auth", "app", *args], capture_output=True, text=True)
+    r = subprocess.run([XURL, "--auth", "oauth2", *args], capture_output=True, text=True)
     if r.returncode != 0:
         print(f"xurl error: {r.stderr}", file=sys.stderr)
         return None
