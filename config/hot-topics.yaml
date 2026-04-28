@@ -10,9 +10,10 @@ topics:
   - concepts/context-engineering
   - concepts/ai-agent-engineering/context-engineering
   - concepts/ai-agent-engineering/context-compaction
+  - concepts/kv-cache
   notes: Karpathy提唱。前提としてtoken economics, attention mechanism等が必要か
   added: 2026-04-14
-  last_crawled: '2026-04-25'
+  last_crawled: '2026-04-28'
 - slug: agentic-engineering
   title: Agentic Engineering
   crawl_policy: laterals
@@ -48,9 +49,10 @@ topics:
   - concepts/harness-engineering
   - concepts/ai-agent-engineering/harness-design-long-running-apps
   - concepts/ai-agent-engineering/effective-harnesses-for-long-running-agents
+  - concepts/process-supervision
   notes: Ryan Lopopolo提唱。前提としてruntime isolation, process supervision等
   added: 2026-04-14
-  last_crawled: '2026-04-25'
+  last_crawled: '2026-04-28'
 - slug: agent-team-swarm
   title: Agent Team / Swarm
   crawl_policy: laterals
@@ -154,9 +156,10 @@ topics:
   wiki_pages:
   - concepts/sandbox
   - comparisons/agent-sandboxing
+  - concepts/capability-based-security
   notes: '横方向: capability-based security, seccomp, Firecracker等'
   added: 2026-04-14
-  last_crawled: '2026-04-24'
+  last_crawled: '2026-04-28'
 - slug: neurosymbolic-ai
   title: Neurosymbolic AI
   crawl_policy: prerequisites

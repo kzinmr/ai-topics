@@ -46,3 +46,33 @@ Previous triage agent had JSON parse error — recovered and processed directly.
 - Created: concepts/agent-economics.md (1000x token multiplier, cost structure by autonomy level, value drivers)
 - Updated: index.md (+2 new pages, counts updated)
 - Sources: "How I AI" newsletter (GPT 5.5, Claude Design), AINews (ImageGen/AGI), Applied Intuition (Physical AI), Google (AI chip independence)
+
+## [2026-04-28] Active Crawl [prerequisites + laterals] | context-engineering → kv-cache / harness-engineering → process-supervision / sandbox → capability-based-security
+
+**Scope:** Daily active knowledge crawl based on hot-topics.yaml. Selected topics with last_crawled ≥ 3 days: context-engineering (prerequisites), harness-engineering (prerequisites), sandbox (laterals).
+
+### Created: concepts/kv-cache.md
+- **Parent topic:** context-engineering (prerequisites policy)
+- **What:** KV Cache is the foundational optimization technique in transformer inference that stores intermediate attention computations, avoiding redundant recomputation. Understanding KV cache mechanics — size scaling (batch × layers × heads × d_k × sequence_length × precision), memory bandwidth bottleneck, and cache-aware scheduling — is a prerequisite for context engineering, prompt caching, and inference optimization.
+- **Sources:** Sebastian Raschka (coding the KV cache from scratch), vLLM blog (KV cache crunching)
+
+### Created: concepts/process-supervision.md
+- **Parent topic:** harness-engineering (prerequisites policy)
+- **What:** Process supervision is the infrastructure discipline of managing long-running AI agent processes — automatic restart on failure, health monitoring, supervised process trees, and cgroup-based resource control. A prerequisite for building reliable agent harnesses that must supervise subprocesses (tool execution, sandboxed code).
+- **Sources:** Brightlume AI (long-running agents), OmniDaemon (PyPI), s6/skarnet documentation
+
+### Enriched: concepts/capability-based-security.md (skeleton → full)
+- **Parent topic:** sandbox (laterals policy)
+- **What:** Capability-based security is an alternative security paradigm to ACLs/RBAC where authority is transmitted via unforgeable capabilities rather than identity-based checks. Applied to agent sandboxing, it enables fine-grained permissions without ambient authority. Merged from old skeleton (capabilities-based-security.md) into complete page.
+- **Sources:** Wikipedia (capability-based security), Cowork Security Architecture (Medium)
+
+### Files affected:
+- Created: concepts/kv-cache.md
+- Created: concepts/process-supervision.md
+- Enriched: concepts/capability-based-security.md
+- Deleted: concepts/capabilities-based-security.md (merged)
+- Updated: index.md (+3 factual entries, -1 stub)
+- Updated: hot-topics.yaml (last_crawled for context-engineering, harness-engineering, sandbox)
+- Added: raw/articles/crawl-2026-04-28-kv-cache.md
+- Added: raw/articles/crawl-2026-04-28-process-supervision.md
+- Added: raw/articles/crawl-2026-04-28-capability-based-security.md

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-28 | Total pages: 1246 | Full entries: 601 | Stubs: 645
+> Last updated: 2026-04-28 | Total pages: 1248 | Full entries: 604 | Stubs: 644
 
 ## Entities (266 pages)
 
@@ -475,7 +475,8 @@
 - [[concepts/karpathy]] — Karpathy (Andrej Karpathy) — AI researcher, educator, and OpenAI/DirectX co-founder. Entity: entities/andrej-karpathy.md
 - [[concepts/kimi-k2-6]] — **Moonshot Kimi K2.6** is a major open-weight refresh of Moonshot's leading Chinese open model, released in April 2026. It is a **1T-parameter Mixture of Experts (MoE)** model featuring **32B activ...
 - [[concepts/knowledge-graph-memory-agents]] — Knowledge graph memory stores facts as a structured graph of **entities** and **typed relationships**, enabling multi-hop reasoning and entity-centric queries that flat vector stores cannot express...
-- [[concepts/kv-aware-routing]] — KV-aware routing is an inference optimization technique where the request router selects workers not just based on current load, but also on KV cache overlap — i.e., whether a worker already has th...
+- [[concepts/kv-aware-routing]] — KV-aware routing is an inference optimization technique where the request router selects workers not just based on current load, but also on KV cache overlap — i.e., whether a worker already has the KV cache for a prefix pre-computed.
+- [[concepts/kv-cache]] — The KV (Key-Value) Cache is an optimization technique in transformer inference that stores intermediate attention computations across generation steps, avoiding redundant recomputation. Understanding KV cache mechanics — size scaling (batch × layers × heads × d_k × sequence_length × precision), memory bandwidth bottleneck, and cache-aware scheduling — is a prerequisite for context engineering, prompt caching, and inference optimization.
 - [[concepts/kv-cache-compaction]] — KV Cache Compaction is a technique for reducing token usage in multi-agent systems by operating directly on the model's internal representations. Instead of LLM-based summarization or RAG-based ret...
 - [[concepts/lambda-monolith-lambdalith]] — A serverless architecture pattern where a single AWS Lambda function handles all API routes, rather than splitting into many small, route-specific Lambda functions.
 - [[concepts/latent-briefing]] — Latent Briefing is Ramp Labs' implementation of task-guided KV cache compaction for efficient memory sharing between agents in hierarchical multi-agent systems. Instead of passing full context as t...
@@ -536,6 +537,7 @@
 - [[concepts/personal-os-for-ai-agents]] — A file-based personal operating system that lives inside a Git repository. Instead of databases, vector stores, or API keys, it uses 80+ files in markdown, YAML, and JSONL — formats that both human...
 - [[concepts/personal-superintelligence]] — **「AIは中央で全てを自動化するべきか、それとも個人それぞれが自分の目標に向かう道具となるべきか。」**
 - [[concepts/polymarket-trading-agents]] — AI agents used for automated trading on Polymarket prediction markets — weather, crypto, sports. Self-learning bots that operate 24/7 with no emotions.
+- [[concepts/process-supervision]] — The infrastructure discipline of managing long-running AI agent processes: automatic restart on failure, health monitoring, supervised process trees, and cgroup-based resource control. A prerequisite for [[harness-engineering]] — agent harnesses must supervise subprocesses (tool execution, sandboxed code) to ensure reliability at production scale.
 - [[concepts/process-reward-models-agent-eval]] — **Process Reward Models (PRMs)** evaluate individual reasoning steps or agent actions rather than just final outcomes. This is a fundamentally different evaluation paradigm from outcome-based evalu...
 - [[concepts/project-glasswing]] — Anthropic's initiative to use claude-mythos for defensive security research — finding and patching vulnerabilities in critical software.
 - [[concepts/prompt-caching]] — LLM API呼び出しにおけるキャッシングの設計パターン。コスト削減とレイテンシ改善のために、どの部分をキャッシュし、いつ無効化するかを体系的に扱う。
@@ -738,7 +740,7 @@
 - [[concepts/cache-first-engineering]] — > **TODO**: Enrich this page.
 - [[concepts/caching-performance-cost-optimization]] — > **TODO**: Enrich this page.
 - [[concepts/canva]] — > **TODO**: Enrich this page.
-- [[concepts/capabilities-based-security]] — > **TODO**: Enrich this page with research on this topic.
+- [[concepts/capability-based-security]] — An alternative security model to access-control lists (ACLs) and role-based access control (RBAC), where authority is transmitted via unforgeable capabilities/tokens rather than identity-based checks. Applied to AI agent sandboxing, capability-based security enables fine-grained permissions without ambient authority.
 - [[concepts/capybara]] — > **TODO**: Enrich this page.
 - [[concepts/career-development]] — > **TODO**: Enrich this page.
 - [[concepts/casino-economy]] — > **TODO**: Enrich this page.
