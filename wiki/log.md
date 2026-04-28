@@ -5,6 +5,36 @@
 
 ## Log
 
+## [2026-04-28] blog-triage recovery | Batch from 2026-04-28_07-34-28 checkpoint
+
+Previous triage agent had JSON parse error — recovered and processed directly.
+
+**Take decisions:**
+- Updated: concepts/harness-engineering/agentic-workflows/red-green-tdd.md (Martin Alderson's agentic TDD re-evaluation)
+- Updated: concepts/cognitive-debt.md (Xe Iaso's AI abstraction cost essay — full enrichment)
+- Created: concepts/agentic-sysadmin.md (Claude Code as sysadmin assistant pattern)
+- Updated: concepts/agent-sandboxing.md (Docker isolation pattern from timsh.org)
+- Updated: concepts/agentic-security.md (Nesbitt.io package security for AI agents)
+- Updated: index.md (+1 new page entry, updated 3 existing entries)
+
+**Reference decisions:**
+- blog-34 (Telegram scam investigation) — interesting security methodology, skip
+- blog-39 (Xe vibe coding sponsor panel) — already captured in vibe-coding.md
+- blog-44 (Xe Claude Code April Fools) — already captured in xeiaso-net.md
+- Various personal posts, non-AI tech content — skipped
+
+**Skip decisions:**
+- Joan Westenberg essays (general tech commentary, no specific AI relevance)
+- Hugo Tunius privacy posts (pre-2026, historical only)
+- Filfre.net gaming history (off-topic)
+- John D. Cook math posts (peripheral AI interest only)
+- Paul Graham essay archive dumps (already ingested via other means)
+- Rakhim.exotext.com general software essays (no direct AI agent relevance)
+- Miguel Grinberg SQLAlchemy series (off-topic)
+- Giles Thomas LLM from scratch (interesting but peripheral)
+
+- Sources: timsh.org (Docker isolation), martinalderson.com (agentic TDD, sysadmin pattern), xeiaso.net (abstraction costs), nesbitt.io (package security)
+
 ## [2026-04-28] newsletter ingest | Batch 2026-04-27/28
 
 - Updated: concepts/gpt-5.5.md (agentic patterns: "I trust you" prompt, zero follow-up runs, Codex personality issues)
