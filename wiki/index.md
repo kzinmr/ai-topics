@@ -1187,7 +1187,7 @@
 - [[concepts/solo-founder-super-ic-ai時代の新しい働き方]] — > **TODO**: Enrich this page.
 - [[concepts/spec-driven-development]] — > **TODO**: Enrich this page.
 - [[concepts/speech-asr-openai-whisper-audio]] — > **TODO**: Enrich this page.
-- [[concepts/speech-audio-asr-tts-voice]] — > **TODO**: Enrich this page.
+- [[concepts/speech-audio-asr-tts-voice]] — Speech/audio AI landscape: ASR, TTS, voice agents, real-time conversational pipelines, Mistral Voxtral, OpenAI TTS, xAI Grok
 - [[concepts/spegel]] — > **TODO**: Enrich this page.
 - [[concepts/spike-mike-doan]] — > **TODO**: Enrich this page.
 - [[concepts/stanford-cs329s]] — > **TODO**: Enrich this page.
