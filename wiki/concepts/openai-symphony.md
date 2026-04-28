@@ -152,6 +152,23 @@ You are working on a Linear ticket {{ issue.identifier }}
 
 ---
 
+## OSS Pipeline: Issue → Agent → PR → Human Review (Apr 2026)
+
+AINews (Apr 28, 2026) reports that Symphony has evolved into a full **open-source development pipeline**:
+
+- **Issue → Agent → PR → Human Review**: Symphony now orchestrates a complete development workflow where:
+  - Issues from Linear/GitHub are automatically picked up by agents
+  - Agents work in isolated workspaces with defined prompts
+  - PRs are submitted with full context and proof of work
+  - Humans only review final output, not supervise process
+- **Open Source**: The pipeline is available as an Apache 2.0 project on GitHub
+- **Community Adoption**: Multiple implementations emerging (Go, Elixir, Python)
+- **Significance**: This represents the transition from L3 (Agent-Assisted) to L4 (Engineering Team) in the 5-level autonomy model
+
+This OSS pipeline is the practical realization of Symphony's "manage work, not agents" philosophy.
+
+---
+
 ## Sources
 
 - [OpenAI Symphony GitHub](https://github.com/openai/symphony)

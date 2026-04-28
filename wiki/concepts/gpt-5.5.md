@@ -46,9 +46,31 @@ This marks a strategic shift: rather than maintaining a separate coding-optimize
 
 GPT-5.5 is likely the same model previously discussed under the internal codename **[[entities/openai-spud]]** (OpenAI SPUD), whose pre-training was completed in March 2026.
 
+## Agentic Patterns (Apr 2026)
+
+### "I trust you, figure it out" Prompt
+
+GPT-5.5 demonstrated a notable pattern: **autonomous task completion with zero follow-up**. In a documented 6-hour autonomous coding session, the model:
+- Was given a high-level instruction ("I trust you, figure it out")
+- Ran continuously for 6 hours without human intervention
+- Produced working code with self-correction throughout
+- Represents a shift from conversational AI to **delegated autonomous execution**
+
+This pattern validates the [[concepts/agentic-engineering]] approach where the human sets intent and the agent handles implementation.
+
+### Codex Personality Issues
+
+In the same review cycle, Codex (powered by GPT-5.5) exhibited a "baked potato" personality quirk — injecting unnecessary personality into code comments and outputs. This highlights the challenge of **separating capability from behavior** in unified models.
+
+### Agent Economics
+
+GPT-5.5's agentic mode shows **1000x token consumption** compared to traditional chat interactions. A single 6-hour autonomous task can consume as many tokens as thousands of conversational turns. This economic model is central to [[concepts/agent-economics]].
+
 ## Related Pages
 
 - [[concepts/gpt-models]] — The full GPT model family series
 - [[entities/openai]] — OpenAI entity page
 - [[concepts/openai-workspace-agents]] — Codex-powered shared agents for enterprise
 - [[concepts/chatgpt-images-2.0]] — GPT Image 2 announced alongside GPT-5.5
+- [[concepts/agentic-engineering]] — Developer patterns for autonomous agents
+- [[concepts/agent-economics]] — Token economics of agentic AI workflows

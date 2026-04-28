@@ -62,6 +62,17 @@ Claude now integrates with 15 new everyday consumer apps:
 Booking.com, Resy, Spotify, Audible, Instacart, AllTrails, Thumbtack, TurboTax, Uber, and more.
 Directory now exceeds **200 connectors** total.
 
+### Claude Design (Apr 2026)
+
+Anthropic launched **Claude Design**, an AI-driven design tool focused on marketing assets and brand creation:
+- Requires importing design systems first (fonts, colors, components) — aligns with Google's proposed **Design MD** standard
+- **Strengths**: Marketing assets, landing pages, brand kits, content-to-slides workflows
+- **Weaknesses**: Complex product UX and app components (struggles with reasoning under rigid constraints)
+- **Signature style tell**: Overuses italicized serif fonts on landing pages
+- **Iteration speed**: 5–10 minute generation cycles per tweak vs. Figma's instant feedback
+- Represents Anthropic's expansion beyond language models into creative tooling
+- GPT Image 2.0 + Codex integration makes standalone design tools like Claude Design potentially redundant
+
 ### Claude Code
 
 Anthropic's CLI coding agent (see [[claude-code]]). A terminal-based agent that can:

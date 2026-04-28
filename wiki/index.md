@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-28 | Total pages: 1242 | Full entries: 597 | Stubs: 645
+> Last updated: 2026-04-28 | Total pages: 1245 | Full entries: 600 | Stubs: 645
 
 ## Entities (266 pages)
 
@@ -197,7 +197,8 @@
 - [[entities/openai]] — **Type** | AI Research & Product Company |
 - [[entities/openclaw]] — Open-source always-on AI assistant framework created by **Peter Steinberger** (former PSPDFKit CEO). Deploys autonomous agents that run continuously, self-evolve through interaction, and integrate ...
 - [[entities/overreacted-io]] — **URL:** https://overreacted.io
-- [[entities/paulgraham-com]] — **Blog** | paulgraham.com |
+|- [[entities/paulgraham-com]] — **Blog** | paulgraham.com |
+|- [[entities/pi-coding-agent]] — Mario Zechner's minimal coding agent — 4-package monorepo, 4 default tools, YOLO execution, context-control philosophy. 40k+ GitHub stars. |
 - [[entities/perplexity-comet]] — **Perplexity Comet**は、Perplexity AIが開発したAIネイティブブラウザ。2025年7月にWindows/macOSでリリースされ、同年11月にAndroid、2026年3月にiOSに対応。「ブラウザをAIエージェントにする」戦略の最前線に位置する製品。
 - [[entities/peter-steinberger]] — Austrian software developer, creator of **OpenClaw** (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as **@steipete** on GitHub/Twitter. A pioneer of **AI-native dev...
 - [[entities/philiplaine-com]] — **URL:** https://philiplaine.com
@@ -273,9 +274,10 @@
 - [[entities/zach-mueller]] — **X** | @TheZachMueller |
 - [[entities/zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.
 
-## Concepts (324 pages)
+## Concepts (328 pages)
 
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
+- [[concepts/agent-economics]] — The cost structures, token consumption patterns (1000x multiplier), and economic implications of deploying autonomous AI agents at scale across L1-L5 autonomy levels.
 - [[concepts/agent-governance]] — Agent governance is the structured approach enterprises use to define how autonomous AI systems operate, what they can access, and how their actions are monitored. It encompasses policy, identity, ...
 - [[concepts/agent-harness-primitives]] — A harness is every piece of code, configuration, and execution logic that wraps a raw model to turn it into a work engine. Agent = Model + Harness. The bottleneck has shifted from **model capabilit...
 - [[concepts/agent-harness]] — An agent harness is the infrastructure layer that sits between an LLM API and the agent's execution environment. It manages tool routing, context management, session lifecycle, and error recovery. ...
@@ -1076,6 +1078,7 @@
 - [[concepts/personal-websites]] — > **TODO**: Enrich this page.
 - [[concepts/phidata]] — > **TODO**: Enrich this page.
 - [[concepts/phishing]] — > **TODO**: Enrich this page.
+- [[concepts/physical-ai]] — AI systems interacting with the physical world (robots, autonomous vehicles). Contrasts with Screen AI. Onboard vs offboard AI, simulation-to-reality gap, Applied Intuition platform.
 - [[concepts/pierre-carl-langlais]] — > **TODO**: Enrich this page.
 - [[concepts/placeiq]] — > **TODO**: Enrich this page.
 - [[concepts/pleias]] — > **TODO**: Enrich this page.

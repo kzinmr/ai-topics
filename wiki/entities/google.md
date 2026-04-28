@@ -64,6 +64,18 @@ Google's approach to AI image generation:
 - Tiered AI subscription plans with cloud storage integration
 - Enables persistent storage of AI-generated content
 
+### TPU v8 "Ironwood" — AI Chip Independence (Apr 2026)
+
+Google announced its 8th-generation TPU, codenamed **Ironwood**, marking a strategic shift toward AI hardware independence from NVIDIA:
+
+- **Ironwood TPU v8**: 456 TOPS peak compute for AI inference, significantly outperforms v7
+- **Split architecture**: Google is separating inference-focused chips (8i) from training-focused chips (8t)
+- **8i (Inference)**: Optimized for low-latency serving, edge deployment, and on-device AI
+- **8t (Training)**: Optimized for large-scale model training with higher memory bandwidth
+- **Goal**: Reduce reliance on NVIDIA GPUs for both training and inference workloads
+- **Impact**: Enables Google to vertically integrate its AI stack — from models (Gemini) to hardware (TPUs) to deployment (Google Cloud)
+
+This aligns with Google's broader strategy of "100% local browser agent" using Gemma 4 + WebGPU for edge inference, demonstrating a full-stack approach from silicon to application.
 
 ## Relationships
 - [[concepts/gemini]] — Google's multimodal model family (detailed entity)
