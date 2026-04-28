@@ -5,6 +5,14 @@
 
 ## Log
 
+## [2026-04-28] skeleton enrichment | 21 concept pages: skeleton→full (L3)
+- **Batch:** Enriched 21 concept pages with substantive content via web research
+- **Fixed broken frontmatter:** fine-tuning, multimodal, openclaw, sandbox, speech
+- **Enriched 17-line skeletons:** mlx, langgraph, rags, cursor-ide, context-management, defense-in-depth, durable-execution, human-in-the-loop, self-learning-agents, tool-orchestration, dual-process-theory, clinical-ai, cloud-data-warehouses, data-engineering
+- **Consolidated:** agent-memory.md → [[ai-agent-memory]] (redirect). Created comprehensive ai-agent-memory.md with two-camps framework
+- **Sources:** Apple MLX docs, LangChain docs, Cursor docs, Anthropic engineering blog, Temporal docs, Kahneman dual process, FDA AI medical devices, Snowflake/BigQuery docs, Letta/Anthropic memory docs
+- **Index:** Updated counts (stubs: 644→623, full entries: 604→625)
+
 ## [2026-04-28] blog-triage recovery | Batch from 2026-04-28_07-34-28 checkpoint
 
 Previous triage agent had JSON parse error — recovered and processed directly.

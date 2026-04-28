@@ -3,7 +3,7 @@ title: Google TPU — Tensor Processing Units
 type: entity
 aliases: [tpu, google-tpu, tpu-v8, tpu-8t, tpu-8i, tpu-ironwood]
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-28
 tags: [entity, hardware, google, training, inference]
 sources:
   - https://cloud.google.com/blog/products/compute/tpu-v8-tensor-processing-unit-cloud-next-2026
@@ -110,6 +110,25 @@ TPU 8t/8i are core components of Google's **AI Hypercomputer** architecture — 
 - [[concepts/gemini]] — Google's Gemini model family
 - [[openai]] — OpenAI's competing infrastructure approaches
 - [[concepts/claude-memory]] — Anthropic's approach (competitor context)
+
+
+## April 2028 Deep Dive Updates
+
+### Architecture Philosophy Evolution
+The eighth generation's dual-system specialization (8t for training, 8i for inference) represents a fundamental departure from previous monolithic TPU designs. Key insights from the technical deep dive:
+
+1. **Workload Separation Rationale**: Training workloads benefit from massive parallelism and regular compute patterns, while inference/sampling requires handling long context windows, MoE routing, and low-latency responses.
+
+2. **Network Topology Choice**: TPU 8t uses Virgo (flat 2-layer non-blocking) for scale-out training efficiency, while TPU 8i uses Boardfly (hierarchical high-radix) for inference latency optimization.
+
+3. **CAE Impact**: The Collectives Acceleration Engine reduces on-chip collective latency by 5x, which is critical for autoregressive decoding in reasoning models.
+
+4. **SparseCore Purpose**: Designed specifically for embedding lookup operations common in recommendation systems and MoE architectures.
+
+### Performance Benchmarks
+- Training: 2.7x price-performance improvement over 7th gen Ironwood
+- Inference: 80% improvement for MoE models at low-latency targets
+- Energy: 2x better performance-per-watt across both chips
 
 ## Sources
 

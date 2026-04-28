@@ -2,7 +2,7 @@
 title: "ChatGPT Images 2.0"
 type: concept
 created: 2026-04-24
-updated: 2026-04-27
+updated: 2026-04-28
 tags: [product, openai, multimodal, image-generation, chatgpt]
 aliases: ["ChatGPT Images v2", "GPT Image 2"]
 sources:
@@ -97,9 +97,24 @@ Alex Banks (primary LLM user for knowledge work uses Claude) has pivoted to Open
 - [[concepts/ai-image-generation]] — AI image generation overview
 - [[concepts/gemini]] — Google's model family
 
+
+## API & Developer Integration
+
+### Developer Access (April 2026)
+- **API Pricing**: $30 per 1,000 output tokens
+- **Availability**: All ChatGPT users can generate; "thinking" features reserved for Plus, Pro, and Business tiers
+- **Partner Integrations**: Already integrated into workflows for **Canva, Figma, and Adobe**
+
+### Reasoning Before Drawing
+When activated, the system searches the web and plans the image structure first, representing a shift from pure generation to multi-step reasoning. This allows for:
+- More accurate text rendering in complex layouts
+- Better prompt interpretation for production-grade visual systems
+- Competitive positioning against design workflow tools, not just other AI image generators
+
 ## Sources
 
 - [Alex Banks, The Signal: "ChatGPT Images 2.0 is genuinely fantastic"](https://thesignal.substack.com/p/chatgpt-images-20-is-genuinely-fantastic) (2026-04-24) — detailed comparative review
 - [OpenAI Engineering: ChatGPT Images 2.0](https://openai.com/index/) — official announcement
 - [Ben's Bites: ChatGPT's Nano Banana]
 - [Ben's Bites: AI Industry Briefing — ChatGPT Images 2.0 reasoning capabilities (2026-04-22)](https://substack.com/p/chatgpts-nano-banana) (2026-04-23) — NB2 coverage
+- [OpenAI Engineering: ChatGPT Images 2.0 reasoning update](https://openai.com/index/) — reasoning before drawing, 2K resolution, API pricing ($30/1K output tokens), Canva/Figma/Adobe integration (2026-04-28)
