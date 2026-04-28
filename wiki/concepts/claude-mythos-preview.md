@@ -52,6 +52,15 @@ Anthropic **did not release Claude Mythos publicly**. The preview is restricted 
 > *"The idea of an AI running a business doesn't seem as far-fetched as it once did. But the gap between 'capable' and 'completely robust' remains wide."*
 > — Anthropic Frontier Red Team
 
+### Mythos Breach (April 2026)
+
+Despite the lockdown, Anthropic's internal "too dangerous to release" model **Mythos** was accessed on day one by four individuals in a private Discord. The group:
+- Guessed the endpoint URL from naming conventions + a Mercor breach leak
+- Used a contractor's legitimate evaluation credentials
+- Used the model to build simple websites (not malicious purposes, but the access was unauthorized)
+
+The incident highlights risks of: inference endpoint discoverability, credential sharing among contractors, and naming convention predictability.
+
 ## Implications
 
 1. **Capability acceleration**: Sonnet 4.5 matching Opus 4.1 in cyber skills demonstrates rapid model improvement within a single tier

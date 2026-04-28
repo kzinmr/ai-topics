@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-04-27
+updated: 2026-04-28
 tags: [company, llm, ai-agents, product, openai, gpt, agents-sdk]
 aliases: ["OpenAI Inc."]
 sources:
@@ -25,12 +25,14 @@ sources:
 
 OpenAI is a leading AI research and product company known for developing the GPT series of large language models, ChatGPT, and a growing ecosystem of AI developer tools. The company has been at the forefront of the AI agent revolution, releasing the **Agents SDK** (v0.14.0, April 2026) which provides standardized infrastructure for building production-ready agents with sandbox execution capabilities.
 
-## Key Products & Technologies
+### Key Products & Technologies
 
-### Language Models
+#### Language Models
 - **GPT-4/5 series** — Frontier LLMs powering ChatGPT and API integrations
 - **GPT-5.5** (Apr 2026) — First fully retrained base model since GPT-4.5. Designed for multi-step work (planning, tool use, self-checking). Scored 82.7% on Terminal-Bench 2.0. Key unlock for production agent deployment.
   - **Key change:** Since GPT-5.4, OpenAI unified Codex and the main model into a single system. There is no separate coding line anymore. GPT-5.5 extends this further with strong gains in agentic coding, computer use, and any task on a computer (per Romain Huet).
+  - **Prompting guidance:** OpenAI recommends treating GPT-5.5 as a **new model family to tune for**, not a drop-in replacement for GPT-5.2 or GPT-5.4. Start with the smallest prompt that preserves the product contract, then tune reasoning effort, verbosity, tool descriptions, and output format ([Simon Willison, Apr 2026](https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/)).
+  - **Codex migration:** OpenAI recommends running `$openai-docs migrate this project to gpt-5.5` to follow the embedded upgrade guide in their openai-docs skill.
 - **o-series** — Reasoning-focused models with extended thinking
 - **GPT-4o / GPT-4o-mini** — Multimodal models with vision and audio capabilities
 
@@ -55,6 +57,10 @@ OpenAI is a leading AI research and product company known for developing the GPT
 - **Whisper** — Speech recognition
 - **Sora** — Video generation
 
+### Strategic Initiatives (OpenAI Ecosystem)
+- **World ID 4.0 / AgentKit** — Sam Altman's Worldcoin project reached 18M verified users across 160 countries. AgentKit enables AI agents to carry cryptographic proof they act for verified humans. Vercel has "human in the loop" authentication live; Okta planning "Human Principal" for API policies. New integrations include Tinder (verified-human badges), Zoom ("Deep Face" iris+live selfie cross-checks), and DocuSign (proof-of-human signatures).
+- **SpaceX-Cursor Deal** — SpaceX has right to acquire Cursor for $60B or pay $10B for collaborative compute credits (likely Colossus H100 equivalents). Signals industry trend: top coding labs need to own both model and product.
+
 ## Security Architecture
 
 OpenAI's Agents SDK introduces a clear **Harness/Compute separation**:
@@ -78,6 +84,7 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 - [[concepts/nano-banana-2]] — Google's NB2 image generation competitor
 
 ## Sources
-- [Simon Willison: A quote from Romain Huet (2026-04-25)](https://simonwillison.net/2026/Apr/25/romain-huet/) — Codex unified into main model since GPT-5.4, no GPT-5.5-Codex
-- [OpenAI Agents SDK Blog (2026-04-15)](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
-- [OpenAI API Sandbox Docs](https://developers.openai.com/api/docs/guides/agents/sandboxes)
+- **OpenAI Agents SDK Blog (2026-04-15)** — [openai.com](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
+- **OpenAI API Sandbox Docs** — [developers.openai.com](https://developers.openai.com/api/docs/guides/agents/sandboxes)
+- **Simon Willison: GPT-5.5 prompting guide (2026-04-25)** — [simonwillison.net](https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/)
+- **Alex Banks, The Signal: "OpenAI Is Cooking, The Anthropic Sweep, and SpaceX Courts Cursor" (2026-04-26)** — [substack.com](https://open.substack.com/pub/thesignal/p/openai-is-cooking-the-anthropic-sweep)

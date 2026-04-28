@@ -6,7 +6,7 @@ tags: [entity, llm, claude, managed-agents, safety-research]
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-04-28
 sources: [
   "https://x.com/RLanceMartin/status/2041927992986009773",
   "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",

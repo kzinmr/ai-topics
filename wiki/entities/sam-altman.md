@@ -2,7 +2,7 @@
 title: Sam Altman
 type: entity
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-04-28
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
 tags:
   - person
@@ -139,12 +139,15 @@ Co-founded OpenAI with **Elon Musk**, **Greg Brockman**, **Ilya Sutskever**, **W
 
 ## Strategic Ventures
 
+- **AgentKit** (Apr 2026): lets AI agents carry cryptographic proof they act for a verified human. Vercel has "human in the loop" live; Okta planning "Human Principal" for API policies. 18M people across 160 countries already scanned irises at an Orb.
+
 ### Worldcoin (Tools for Humanity)
 - **Concept**: Blockchain-based "proof-of-personhood" using iris scans (Orbs) to prevent Sybil attacks and enable Universal Basic Income (UBI) distribution
 - **Status**: 17M+ verified individuals, 37M+ app users across 160+ countries
+- **World ID 4.0** (Apr 2026): "full-stack proof of human" infrastructure. New integrations include Tinder (verified-human badges in US), Zoom ("Deep Face" cross-checks iris-scanned image, live selfie, video frame), DocuSign (proof-of-human to signatures), Shopify, Okta, Vercel, Visa building on top.
 - **WLD Token**: Highly volatile
 - **Regulatory Pushback**: Banned/halted in Spain, Indonesia, Kenya, Thailand, Philippines, Germany over biometric privacy, consent coercion, and data sovereignty violations
-- **Philosophy**: Altman believes that as AI displaces labor, society will need new mechanisms for income distribution and identity verification
+- **Philosophy**: Altman believes that as AI displaces labor, society will need new mechanisms for identity verification and distribution
 
 ### Energy and Fusion
 - **Helion Energy**: Led $500M Series E (2021) and $425M Series F (2025). Target: 50MW commercial fusion plant by 2028 (Microsoft Power Purchase Agreement)

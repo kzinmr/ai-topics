@@ -201,7 +201,8 @@
 |- [[entities/pi-coding-agent]] — Mario Zechner's minimal coding agent — 4-package monorepo, 4 default tools, YOLO execution, context-control philosophy. 40k+ GitHub stars. |
 - [[entities/perplexity-comet]] — **Perplexity Comet**は、Perplexity AIが開発したAIネイティブブラウザ。2025年7月にWindows/macOSでリリースされ、同年11月にAndroid、2026年3月にiOSに対応。「ブラウザをAIエージェントにする」戦略の最前線に位置する製品。
 - [[entities/peter-steinberger]] — Austrian software developer, creator of **OpenClaw** (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as **@steipete** on GitHub/Twitter. A pioneer of **AI-native dev...
-- [[entities/philiplaine-com]] — **URL:** https://philiplaine.com
+|- [[entities/cory-doctorow]] — Canadian-British sci-fi author and digital rights activist. Coined "enshittification." Blogs at pluralistic.net. Critical voice on AI policy and corporate personhood.
+|- [[entities/philiplaine-com]] — **URL:** https://philiplaine.com
 - [[entities/philipp-schmid]] — **X** | @_philschmid |
 - [[entities/playerzero]] — > TODO: Research company blog, funding history, and technical depth to build L3 page.
 - [[entities/pluralistic-net]] — **Blog** | pluralistic.net |
