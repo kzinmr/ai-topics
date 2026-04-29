@@ -667,7 +667,7 @@ AI and LLM concept pages organized by topic.
 
 ## Openai-Symphony.Md
 
-- [[concepts/openai-symphony]] — OpenAI Symphonyは、プロジェクトの作業を独立した自律的な実行ランに変換し、チームがコーディングAgentを「監視」するのではなく「作業を管理」できるようにするサービス。
+- [[concepts/openai-symphony]] — OpenAI Symphonyは、プロジェクトの作業を独立した自律的な実行ランに変換し、チームがコーディングAgentを「監視」するのではなく「作業を管理」できるようにするオーケストレーター。Linearをコントロールプレーンとして使用し、500%のPR増加を達成。
 
 ## Personal-Superintelligence.Md
 

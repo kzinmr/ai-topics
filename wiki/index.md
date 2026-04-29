@@ -528,7 +528,7 @@
 - [[concepts/open-source-ai]] — The strategic use of open-source AI models and frameworks to achieve rapid iteration, widespread adoption, and industrial dominance through community-driven feedback loops.
 - [[concepts/openai-agents-sdk]] — **Package** | `openai-agents>=0.14.0` |
 - [[concepts/openai-codex-superapp]] — The OpenAI Codex interface becoming the primary ChatGPT experience — a "superapp" positioning for the AI coding agent.
-- [[concepts/openai-symphony]] — **Source:** OpenAI GitHub (2026-02-26)
+- [[concepts/openai-symphony]] — OpenAI Symphonyは、プロジェクトの作業を独立した自律的な実行ランに変換し、チームがコーディングAgentを「監視」するのではなく「作業を管理」できるようにするオーケストレーター。Linearをコントロールプレーンとして使用し、500%のPR増加を達成。
 - [[concepts/openai-workspace-agents]] — **OpenAI Workspace Agents** are Codex-powered shared AI agents designed for OpenAI's Business and Enterprise plans. Launched in April 2026 alongside GPT-5.5 and ChatGPT Images 2.0, they represent O...
 - [[concepts/openclaw/anthropic-conflict]] — 2026年4月、**Anthropic**はClaudeのサブスクリプションプラン（Pro/Max）からサードパーティAIエージェントフレームワーク（OpenClawなど）のアクセスをブロックした。この決定は、プラットフォーム管理、開発者アクセス、AIエージェントインフラの経済学をめぐる重大な論争を引き起こした。
 - [[concepts/openclaw/architecture-comparison]] — elvis（@elvis_）が2026年4月に行った**9時間のHermes Agent vs OpenClawの並列ソースコード研究**に基づくアーキテクチャ比較分析。

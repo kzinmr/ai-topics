@@ -3,7 +3,13 @@
 > Chronological record of wiki changes, updates, and additions.
 > See [[log-2026]] for entries before the rotation.
 
-## Log
+## [2026-04-29] Symphony blog article ingestion
+
+- **Source:** [OpenAI Engineering Blog: Open-Source Codex Orchestration — Symphony](https://openai.com/index/open-source-codex-orchestration-symphony/)
+- **Updated:** concepts/openai-symphony.md (added 500% PR increase data, Codex App Server mode, economic shift analysis, lessons learned, updated status/frontmatter)
+- **Saved:** wiki/raw/articles/openai-codex-orchestration-symphony.md (structured raw article)
+- **Index:** Updated concepts/openai-symphony entry with Linear control plane and 500% PR increase summary
+- **Created skill:** openai-blog-article-ingestion (standardized workflow for OpenAI blog ingestion)
 
 ## [2026-04-28] skeleton enrichment | 21 concept pages: skeleton→full (L3)
 - **Batch:** Enriched 21 concept pages with substantive content via web research
