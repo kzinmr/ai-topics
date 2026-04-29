@@ -1,10 +1,14 @@
-## 2026-04-29 — Dreaming Cycle Consolidation
+## [2026-04-29] dreaming | Consolidation cycle — updated gpjt.md with Part 32l IFT results and Landscape Hypothesis, added project-prometheus to index
+- Updated [[entities/gpjt]]: Added Part 32l Instruction Fine-Tuning results, GPT-5.4 judge transition, and Landscape Hypothesis
+- Added [[entities/project-prometheus]] to index.md (page created by Daily Active Knowledge Crawl but not yet indexed)
+- Themes below threshold skipped (gumloop 0.48, ai-coding-best-practices 0.46, google-photo-scanning 0.42, bezos-project-prometheus 0.40)
 
 ### Created
 - [[entities/alex-volkov]]: AI Evangelist at Weights & Biases, ThursdAI host
 - [[entities/gergely-orosz]]: The Pragmatic Engineer newsletter author, Big Tech insights
 
 ### Updated
+- [[entities/gpjt]]: Added Part 32l IFT results, GPT-5.4 judge transition, and Landscape Hypothesis (from dreaming cycle 2026-04-29T18:17)
 - [[concepts/chatgpt-images-2.0]]: Updated with reasoning-before-generation feature
 - [[concepts/google-photo-scanning-ai]]: Verified existing coverage of Personal Intelligence update
 - [[entities/google-tpu]]: Already has TPU 8t/8i deep dive coverage

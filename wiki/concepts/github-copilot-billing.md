@@ -56,6 +56,26 @@ Microsoft is tightening rate limits across all tiers:
 - Token-based billing has been a "top priority" for Microsoft
 - Reflects actual compute costs that AI companies have been absorbing
 
+### June 2026 Transition Details
+
+Starting **June 1, 2026**, GitHub is moving **all Copilot customers** from request-based billing to **usage-based (token) billing**:
+
+| Plan | Monthly Price | Promotional Tokens (Jun-Aug 2026) | Post-Promo Tokens |
+|------|---------------|------------------------------------|--------------------|
+| Copilot Business | $19/user/mo | $30 pooled credits | $19 pooled credits |
+| Copilot Enterprise | $39/user/mo | $70 pooled credits | $39 pooled credits |
+| Copilot Pro | $10/mo | TBD (individual handling unclear) | TBD |
+| Copilot Pro+ | $39/mo | TBD | TBD |
+
+- **Pooled credits**: Organizations share tokens across all users
+- **Post-promotional pricing**: Credits drop to match subscription price ($19→$19, $39→$39)
+- **Individual plan signups paused** since April 20, 2026 for Copilot Pro, Pro+, and Student plans
+- **Additional premium requests** available at $0.04/request during transition period
+
+### Token Cost Reality
+
+Moving to token-based billing exposes the actual compute costs. For example, Claude Opus 4.7 costs $5/million input tokens and $25/million output tokens. Premium model multipliers mean heavy users of frontier models will see dramatically higher effective costs under the new system.
+
 ### Industry Trend
 This move follows similar actions by other AI companies:
 - **Anthropic** shifted enterprise users to token-based billing

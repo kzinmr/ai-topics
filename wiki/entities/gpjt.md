@@ -2,7 +2,7 @@
 title: "Giles Thomas (gpjt)"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-15
+updated: 2026-04-29
 type: entity
 ---
 
@@ -19,6 +19,28 @@ A multi-part blog series documenting the end-to-end process of building and trai
 - **Reproducibility**: Every experiment is documented with exact configurations, hyperparameters, and results
 - **Local Training**: Demonstrates that competitive model quality can be achieved on consumer GPUs (RTX 3090) through careful optimization
 - **Iterative Improvement**: Each post introduces a specific intervention and measures its impact on model loss
+
+### Part 32l: Instruction Fine-Tuning Results (April 2026)
+
+After achieving strong results with stacked interventions (pre-training), Giles tested **Instruction Fine-Tuning (IFT)** to evaluate real-world utility — not just test set loss.
+
+**Key Insight:** Test loss metrics alone don't capture whether a model is actually useful. IFT evaluation on instruction-following tasks reveals capabilities that loss curves miss.
+
+**IFT Setup:**
+- Fine-tuned the best pre-trained model on instruction datasets
+- Evaluated against GPT-5.1 and GPT-5.4 as judges
+- Compared model performance on practical instruction-following tasks
+
+**The Landscape Hypothesis:** As training progresses, model capabilities undergo qualitative shifts — not just quantitative improvements. The "landscape" of what a model can do changes at certain training thresholds, even when loss curves appear smooth.
+
+#### Results Summary (IFT Evaluation)
+
+| Run | Instruction Score | Judge |
+|-----|-------------------|-------|
+| Pre-trained (best stacked) | Baseline | GPT-5.1 |
+| After IFT (small dataset) | +significant improvement | GPT-5.4 |
+
+The IFT results confirmed that even small amounts of instruction tuning dramatically improve practical utility beyond what test loss alone would predict.
 
 ### Part 32k: Gradient Accumulation (April 2026)
 

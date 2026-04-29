@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-29 | Total pages: 662 | Full entries: 629 | Stubs: 623
+> Last updated: 2026-04-29 | Total pages: 663 | Full entries: 630 | Stubs: 623
 
 ## Entities (331 pages)
 
@@ -208,6 +208,7 @@
 - [[entities/philipp-schmid]] — **X** | @_philschmid |
 - [[entities/playerzero]] — > TODO: Research company blog, funding history, and technical depth to build L3 page.
 - [[entities/poolside]] — AI code generation startup. Released **Laguna XS.2** (33B/3B MoE, Apache 2.0, single-GPU inference) in April 2026.
+- [[entities/project-prometheus]] — Jeff Bezos co-founded AI startup. $10B raised, $38B valuation. Focus on "Physical AI" for manufacturing/aerospace.
 - [[entities/pluralistic-net]] — **Blog** | pluralistic.net |
 - [[entities/pratik-bhavsar]] — **X** | @ptkbhv |
 - [[entities/qwen3-6-plus]] — Alibabaのエージェント指向言語モデル。実世界の自律的ワークフローを対象としている。
