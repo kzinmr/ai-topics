@@ -1,7 +1,7 @@
 ---
 title: "Book Review: How To Kill A Witch - A Guide For The Patriarchy by Claire Mitchell and Zoe Venditozzi"
 url: "https://shkspr.mobi/blog/2026/04/book-review-how-to-kill-a-witch-a-guide-for-the-patriarchy-by-claire-mitchell-and-zoe-venditozzi/"
-fetched_at: 2026-04-28T07:01:46.835162+00:00
+fetched_at: 2026-04-29T07:01:07.874780+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
 ---

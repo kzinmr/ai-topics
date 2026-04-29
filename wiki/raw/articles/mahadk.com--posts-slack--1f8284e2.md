@@ -1,7 +1,7 @@
 ---
 title: "Slack is extorting us with a $195k/yr bill increase"
 url: "https://mahadk.com/posts/slack/"
-fetched_at: 2026-04-28T07:01:55.519578+00:00
+fetched_at: 2026-04-29T07:01:16.235938+00:00
 source: "skyfall.dev"
 tags: [blog, raw]
 ---

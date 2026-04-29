@@ -1,7 +1,7 @@
 ---
 title: "The mandatory smartphone"
 url: "https://rakhim.exotext.com/the-mandatory-smartphone"
-fetched_at: 2026-04-28T07:02:01.095555+00:00
+fetched_at: 2026-04-29T07:01:21.622906+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

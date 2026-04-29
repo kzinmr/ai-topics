@@ -1,7 +1,7 @@
 ---
 title: "How to Be an Angel Investor"
 url: "http://www.paulgraham.com/angelinvesting.html"
-fetched_at: 2026-04-28T07:02:21.644202+00:00
+fetched_at: 2026-04-29T07:01:41.315585+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

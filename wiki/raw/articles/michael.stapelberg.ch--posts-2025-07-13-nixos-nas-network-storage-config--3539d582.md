@@ -1,7 +1,7 @@
 ---
 title: "Migrating my NAS from CoreOS/Flatcar Linux to NixOS (2025)"
 url: "https://michael.stapelberg.ch/posts/2025-07-13-nixos-nas-network-storage-config/"
-fetched_at: 2026-04-28T07:01:53.485669+00:00
+fetched_at: 2026-04-29T07:01:14.281067+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
 ---

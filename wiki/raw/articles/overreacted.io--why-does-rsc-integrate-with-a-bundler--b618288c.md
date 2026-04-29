@@ -1,7 +1,7 @@
 ---
 title: "Why Does RSC Integrate with a Bundler?"
 url: "https://overreacted.io/why-does-rsc-integrate-with-a-bundler/"
-fetched_at: 2026-04-28T07:02:37.146830+00:00
+fetched_at: 2026-04-29T07:01:56.137829+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

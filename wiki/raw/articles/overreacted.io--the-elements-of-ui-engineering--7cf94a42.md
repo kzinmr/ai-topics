@@ -1,7 +1,7 @@
 ---
 title: "The Elements of UI Engineering"
 url: "https://overreacted.io/the-elements-of-ui-engineering/"
-fetched_at: 2026-04-28T07:02:39.835401+00:00
+fetched_at: 2026-04-29T07:01:58.860496+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

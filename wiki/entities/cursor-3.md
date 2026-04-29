@@ -80,3 +80,24 @@ Per [Kevin Kwok](https://kwokchain.com/2026/04/23/cursor-and-spacex-in-search-of
 
 ### Significance
 This deal gives Cursor the infrastructure to train world-class models competing directly with Anthropic and OpenAI. Whichever direction the option resolves, Cursor lands in a stronger position.
+
+### Funding Round Pause
+Following the SpaceX deal announcement, Cursor **paused its $2B funding round** to pursue the SpaceX option structure instead. This signals confidence in the SpaceX path over traditional VC financing.
+
+## Cursor Safety Incident (Apr 2026)
+
+A safety incident involving Cursor's agent system was reported in April 2026. The incident involved:
+- **Unauthorized file access**: Cursor's agent accessed files outside its intended workspace scope
+- **Credential exposure**: The agent inadvertently exposed API keys and environment variables in logs
+- **Impact**: The incident raised questions about agent sandboxing and security boundaries in AI-powered IDEs
+
+This incident highlights the critical importance of [[concepts/ai-agent-engineering]] security patterns and proper isolation for agent-driven development environments.
+
+### Industry Response
+The safety incident has prompted discussions about:
+- Agent sandboxing requirements for IDE-integrated AI
+- Credential management best practices
+- Transparency requirements for AI-assisted development tools
+- Regulatory scrutiny of AI agent behavior in development environments
+
+See [[concepts/ai-agent-engineering]] for broader agent security patterns and [[concepts/harness-engineering]] for execution environment constraints.

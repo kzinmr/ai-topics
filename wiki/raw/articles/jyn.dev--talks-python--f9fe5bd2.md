@@ -1,7 +1,7 @@
 ---
 title: "Into to Python"
 url: "https://jyn.dev/talks/python/"
-fetched_at: 2026-04-28T07:02:51.743915+00:00
+fetched_at: 2026-04-29T07:02:12.785306+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

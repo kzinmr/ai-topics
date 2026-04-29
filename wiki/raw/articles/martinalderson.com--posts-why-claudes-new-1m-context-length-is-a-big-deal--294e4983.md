@@ -1,7 +1,7 @@
 ---
 title: "Why Claude's new 1M context length is a big deal"
 url: "https://martinalderson.com/posts/why-claudes-new-1m-context-length-is-a-big-deal/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:44.044610+00:00
+fetched_at: 2026-04-29T07:02:04.041204+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

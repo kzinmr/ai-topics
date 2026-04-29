@@ -1,7 +1,7 @@
 ---
 title: "Some Things Just Take Time"
 url: "https://lucumr.pocoo.org/2026/3/20/some-things-just-take-time/"
-fetched_at: 2026-04-28T07:02:44.706151+00:00
+fetched_at: 2026-04-29T07:02:04.627830+00:00
 source: "lucumr.pocoo.org"
 tags: [blog, raw]
 ---

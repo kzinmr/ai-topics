@@ -1,7 +1,7 @@
 ---
 title: "Where It's at://"
 url: "https://overreacted.io/where-its-at/"
-fetched_at: 2026-04-28T07:02:36.537539+00:00
+fetched_at: 2026-04-29T07:01:55.447994+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

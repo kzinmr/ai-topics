@@ -1,7 +1,7 @@
 ---
 title: "How to Delete All your Tweets"
 url: "https://hugotunius.se/2021/04/05/how-to-delete-all-your-tweets.html"
-fetched_at: 2026-04-28T07:02:52.588569+00:00
+fetched_at: 2026-04-29T07:02:13.451839+00:00
 source: "hugotunius.se"
 tags: [blog, raw]
 ---

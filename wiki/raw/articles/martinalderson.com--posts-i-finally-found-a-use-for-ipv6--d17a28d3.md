@@ -1,7 +1,7 @@
 ---
 title: "I Finally Found a Use for IPv6"
 url: "https://martinalderson.com/posts/i-finally-found-a-use-for-ipv6/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:44.335006+00:00
+fetched_at: 2026-04-29T07:02:04.301028+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

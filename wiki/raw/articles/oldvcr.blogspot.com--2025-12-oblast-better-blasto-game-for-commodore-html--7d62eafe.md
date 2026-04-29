@@ -1,7 +1,7 @@
 ---
 title: "Oblast: a better Blasto game for the Commodore 64"
 url: "https://oldvcr.blogspot.com/2025/12/oblast-better-blasto-game-for-commodore.html"
-fetched_at: 2026-04-28T07:02:03.814522+00:00
+fetched_at: 2026-04-29T07:01:23.993744+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

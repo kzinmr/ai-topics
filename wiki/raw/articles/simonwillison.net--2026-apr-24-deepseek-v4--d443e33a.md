@@ -1,7 +1,7 @@
 ---
 title: "DeepSeek V4-almost on the frontier, a fraction of the price"
 url: "https://simonwillison.net/2026/Apr/24/deepseek-v4/#atom-everything"
-fetched_at: 2026-04-28T07:01:58.833114+00:00
+fetched_at: 2026-04-29T07:01:19.455593+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

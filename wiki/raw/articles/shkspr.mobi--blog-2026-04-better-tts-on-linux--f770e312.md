@@ -1,7 +1,7 @@
 ---
 title: "Better TTS on Linux"
 url: "https://shkspr.mobi/blog/2026/04/better-tts-on-linux/"
-fetched_at: 2026-04-28T07:01:46.771382+00:00
+fetched_at: 2026-04-29T07:01:07.788736+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Scheduling Do-Not-Disturb in GNOME"
 url: "https://jyn.dev/do-not-disturb-in-gnome/"
-fetched_at: 2026-04-28T07:02:51.060043+00:00
+fetched_at: 2026-04-29T07:02:12.061100+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

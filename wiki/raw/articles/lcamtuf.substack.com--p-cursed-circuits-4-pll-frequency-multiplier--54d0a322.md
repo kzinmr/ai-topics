@@ -1,7 +1,7 @@
 ---
 title: "Cursed circuits #4: PLL frequency multiplier"
 url: "https://lcamtuf.substack.com/p/cursed-circuits-4-pll-frequency-multiplier"
-fetched_at: 2026-04-28T07:02:48.651173+00:00
+fetched_at: 2026-04-29T07:02:08.704978+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

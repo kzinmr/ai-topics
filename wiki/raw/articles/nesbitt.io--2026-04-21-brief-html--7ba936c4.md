@@ -1,7 +1,7 @@
 ---
 title: "brief | Andrew Nesbitt"
 url: "https://nesbitt.io/2026/04/21/brief.html"
-fetched_at: 2026-04-28T07:02:41.522642+00:00
+fetched_at: 2026-04-29T07:02:01.565593+00:00
 source: "nesbitt.io"
 tags: [blog, raw]
 ---

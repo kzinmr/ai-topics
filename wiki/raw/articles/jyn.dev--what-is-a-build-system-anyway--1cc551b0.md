@@ -1,7 +1,7 @@
 ---
 title: "what is a build system, anyway?"
 url: "https://jyn.dev/what-is-a-build-system-anyway/"
-fetched_at: 2026-04-28T07:02:50.246009+00:00
+fetched_at: 2026-04-29T07:02:11.290937+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

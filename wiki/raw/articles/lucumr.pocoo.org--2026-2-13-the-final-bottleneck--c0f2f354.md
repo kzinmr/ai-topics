@@ -1,7 +1,7 @@
 ---
 title: "The Final Bottleneck"
 url: "https://lucumr.pocoo.org/2026/2/13/the-final-bottleneck/"
-fetched_at: 2026-04-28T07:02:44.738905+00:00
+fetched_at: 2026-04-29T07:02:04.669444+00:00
 source: "lucumr.pocoo.org"
 tags: [blog, raw]
 ---

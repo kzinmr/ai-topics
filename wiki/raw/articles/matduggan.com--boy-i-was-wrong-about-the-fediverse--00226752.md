@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/boy-i-was-wrong-about-the-fediverse/"
-fetched_at: 2026-04-28T07:02:35.492153+00:00
+fetched_at: 2026-04-29T07:01:54.364573+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---

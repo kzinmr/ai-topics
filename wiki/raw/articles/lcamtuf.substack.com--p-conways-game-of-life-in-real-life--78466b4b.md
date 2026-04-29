@@ -1,7 +1,7 @@
 ---
 title: "Conway's Game of Life, in real life"
 url: "https://lcamtuf.substack.com/p/conways-game-of-life-in-real-life"
-fetched_at: 2026-04-28T07:02:48.144847+00:00
+fetched_at: 2026-04-29T07:02:08.204380+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

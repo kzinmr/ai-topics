@@ -1,7 +1,7 @@
 ---
 title: "How to build and publish multi-platform Rust binaries via Github actions"
 url: "https://rakhim.exotext.com/how-to-build-and-publish-multi-platform-rust-binaries"
-fetched_at: 2026-04-28T07:02:00.783677+00:00
+fetched_at: 2026-04-29T07:01:21.321618+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

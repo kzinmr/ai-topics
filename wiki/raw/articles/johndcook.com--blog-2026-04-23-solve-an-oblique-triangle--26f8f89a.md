@@ -1,7 +1,7 @@
 ---
 title: "Approximation to solve an oblique triangle"
 url: "https://www.johndcook.com/blog/2026/04/23/solve-an-oblique-triangle/"
-fetched_at: 2026-04-28T07:02:46.935089+00:00
+fetched_at: 2026-04-29T07:02:07.094808+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

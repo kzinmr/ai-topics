@@ -1,7 +1,7 @@
 ---
 title: "Introducing RSC Explorer"
 url: "https://overreacted.io/introducing-rsc-explorer/"
-fetched_at: 2026-04-28T07:02:36.345108+00:00
+fetched_at: 2026-04-29T07:01:55.274917+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

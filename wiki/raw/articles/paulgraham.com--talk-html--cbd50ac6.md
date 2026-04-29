@@ -1,7 +1,7 @@
 ---
 title: "Write Like You Talk"
 url: "http://www.paulgraham.com/talk.html"
-fetched_at: 2026-04-28T07:02:14.249486+00:00
+fetched_at: 2026-04-29T07:01:33.959502+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

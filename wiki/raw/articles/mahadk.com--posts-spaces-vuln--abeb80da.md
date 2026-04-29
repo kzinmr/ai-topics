@@ -1,7 +1,7 @@
 ---
 title: "Here’s how I got full admin rights in a Replit clone"
 url: "https://mahadk.com/posts/spaces-vuln/"
-fetched_at: 2026-04-28T07:01:55.622619+00:00
+fetched_at: 2026-04-29T07:01:16.359750+00:00
 source: "skyfall.dev"
 tags: [blog, raw]
 ---

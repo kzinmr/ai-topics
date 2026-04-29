@@ -1,7 +1,7 @@
 ---
 title: "Getting the right scale"
 url: "https://tomrenner.com/posts/getting-the-right-scale/"
-fetched_at: 2026-04-28T07:01:45.750806+00:00
+fetched_at: 2026-04-29T07:01:06.764984+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

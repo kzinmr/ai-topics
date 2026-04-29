@@ -1,7 +1,7 @@
 ---
 title: "The Great Pyramid of Giza and the Speed of Light"
 url: "https://www.johndcook.com/blog/2026/04/09/pyramid-speed-of-light/"
-fetched_at: 2026-04-28T07:02:47.107642+00:00
+fetched_at: 2026-04-29T07:02:07.496803+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

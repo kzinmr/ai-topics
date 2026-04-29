@@ -1,7 +1,7 @@
 ---
 title: "A Word to the Resourceful"
 url: "http://www.paulgraham.com/word.html"
-fetched_at: 2026-04-28T07:02:17.421870+00:00
+fetched_at: 2026-04-29T07:01:37.283771+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

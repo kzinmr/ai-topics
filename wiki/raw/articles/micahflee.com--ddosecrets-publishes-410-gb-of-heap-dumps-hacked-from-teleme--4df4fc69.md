@@ -1,7 +1,7 @@
 ---
 title: "DDoSecrets publishes 410 GB of heap dumps, hacked from TeleMessage's archive server"
 url: "https://micahflee.com/ddosecrets-publishes-410-gb-of-heap-dumps-hacked-from-telemessages-archive-server/"
-fetched_at: 2026-04-28T07:02:44.024009+00:00
+fetched_at: 2026-04-29T07:02:03.893821+00:00
 source: "micahflee.com"
 tags: [blog, raw]
 ---

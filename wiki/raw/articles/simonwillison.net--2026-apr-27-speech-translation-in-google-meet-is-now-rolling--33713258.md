@@ -1,7 +1,7 @@
 ---
 title: "Speech translation in Google Meet is now rolling out to mobile devices"
 url: "https://simonwillison.net/2026/Apr/27/speech-translation-in-google-meet-is-now-rolling-out-to-mobile-d/#atom-everything"
-fetched_at: 2026-04-28T07:01:30.569274+00:00
+fetched_at: 2026-04-29T07:00:52.173378+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

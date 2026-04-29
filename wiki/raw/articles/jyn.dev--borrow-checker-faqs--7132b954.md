@@ -1,7 +1,7 @@
 ---
 title: "borrow-checker FAQs"
 url: "https://jyn.dev/borrow-checker-faqs/"
-fetched_at: 2026-04-28T07:02:51.867072+00:00
+fetched_at: 2026-04-29T07:02:12.571777+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Grok is enabling mass sexual harassment on Twitter"
 url: "https://seangoedecke.com/grok-deepfakes/"
-fetched_at: 2026-04-28T07:01:59.099135+00:00
+fetched_at: 2026-04-29T07:01:19.328515+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

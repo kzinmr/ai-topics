@@ -1,7 +1,7 @@
 ---
 title: "Secret Management on NixOS with sops-nix (2025)"
 url: "https://michael.stapelberg.ch/posts/2025-08-24-secret-management-with-sops-nix/"
-fetched_at: 2026-04-28T07:01:52.163803+00:00
+fetched_at: 2026-04-29T07:01:13.398586+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "How Not to Die"
 url: "http://www.paulgraham.com/die.html"
-fetched_at: 2026-04-28T07:02:24.752408+00:00
+fetched_at: 2026-04-29T07:01:44.499857+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

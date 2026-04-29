@@ -1,7 +1,7 @@
 ---
 title: "Setting up Jekyll for GitHub Pages"
 url: "https://jyn.dev/setting-up-jekyll/"
-fetched_at: 2026-04-28T07:02:52.327232+00:00
+fetched_at: 2026-04-29T07:02:13.250544+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

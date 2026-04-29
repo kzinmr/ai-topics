@@ -1,7 +1,7 @@
 ---
 title: "I want a better build executor"
 url: "https://jyn.dev/i-want-a-better-build-executor/"
-fetched_at: 2026-04-28T07:02:50.345178+00:00
+fetched_at: 2026-04-29T07:02:11.399230+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

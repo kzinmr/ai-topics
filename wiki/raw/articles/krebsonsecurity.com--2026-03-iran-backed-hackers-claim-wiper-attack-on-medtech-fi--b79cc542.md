@@ -1,7 +1,7 @@
 ---
 title: "Iran-Backed Hackers Claim Wiper Attack on Medtech Firm Stryker"
 url: "https://krebsonsecurity.com/2026/03/iran-backed-hackers-claim-wiper-attack-on-medtech-firm-stryker/"
-fetched_at: 2026-04-28T07:02:46.160467+00:00
+fetched_at: 2026-04-29T07:02:06.312410+00:00
 source: "krebsonsecurity.com"
 tags: [blog, raw]
 ---

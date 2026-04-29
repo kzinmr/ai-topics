@@ -1,7 +1,7 @@
 ---
 title: "An Arm Mainboard for the Framework Laptop"
 url: "https://www.jeffgeerling.com/blog/2026/arm-mainboard-for-framework-laptop/"
-fetched_at: 2026-04-28T07:02:52.814355+00:00
+fetched_at: 2026-04-29T07:02:13.674045+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
 ---

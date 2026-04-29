@@ -1,7 +1,7 @@
 ---
 title: "See it with your lying ears"
 url: "https://lcamtuf.substack.com/p/see-it-with-your-lying-ears"
-fetched_at: 2026-04-28T07:02:48.593614+00:00
+fetched_at: 2026-04-29T07:02:08.619419+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

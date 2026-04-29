@@ -1,7 +1,7 @@
 ---
 title: "Cities and Ambition"
 url: "http://www.paulgraham.com/cities.html"
-fetched_at: 2026-04-28T07:02:23.045454+00:00
+fetched_at: 2026-04-29T07:01:42.723766+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

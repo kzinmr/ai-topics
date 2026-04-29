@@ -1,7 +1,7 @@
 ---
 title: "Modern UI is clean and invisible? Ha, I wish!"
 url: "https://rakhim.exotext.com/modern-ui-is-not-invisible"
-fetched_at: 2026-04-28T07:02:00.027614+00:00
+fetched_at: 2026-04-29T07:01:20.527874+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

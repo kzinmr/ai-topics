@@ -1,7 +1,7 @@
 ---
 title: "Java's Cover"
 url: "http://www.paulgraham.com/javacover.html"
-fetched_at: 2026-04-28T07:02:34.091370+00:00
+fetched_at: 2026-04-29T07:01:53.689457+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

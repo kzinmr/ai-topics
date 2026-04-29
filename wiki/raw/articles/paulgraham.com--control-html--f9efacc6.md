@@ -1,7 +1,7 @@
 ---
 title: "Founder Control"
 url: "http://www.paulgraham.com/control.html"
-fetched_at: 2026-04-28T07:02:18.185779+00:00
+fetched_at: 2026-04-29T07:01:37.943369+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

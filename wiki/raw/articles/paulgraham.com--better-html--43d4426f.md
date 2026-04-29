@@ -1,7 +1,7 @@
 ---
 title: "Better Bayesian Filtering"
 url: "http://www.paulgraham.com/better.html"
-fetched_at: 2026-04-28T07:02:32.662099+00:00
+fetched_at: 2026-04-29T07:01:52.365175+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

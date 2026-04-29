@@ -1,7 +1,7 @@
 ---
 title: "Who Built This? | Andrew Nesbitt"
 url: "https://nesbitt.io/2026/04/07/who-built-this.html"
-fetched_at: 2026-04-28T07:02:41.780876+00:00
+fetched_at: 2026-04-29T07:02:01.871145+00:00
 source: "nesbitt.io"
 tags: [blog, raw]
 ---

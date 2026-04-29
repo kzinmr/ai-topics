@@ -1,7 +1,7 @@
 ---
 title: "Why I created Ethereum Proof of Stake demo"
 url: "https://timsh.org/why-i-created-ethereum-proof-of-stake-demo/"
-fetched_at: 2026-04-28T07:01:38.073809+00:00
+fetched_at: 2026-04-29T07:00:59.562277+00:00
 source: "timsh.org"
 tags: [blog, raw]
 ---

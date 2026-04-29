@@ -1,7 +1,7 @@
 ---
 title: "What the Bubble Got Right"
 url: "http://www.paulgraham.com/bubble.html"
-fetched_at: 2026-04-28T07:02:30.813821+00:00
+fetched_at: 2026-04-29T07:01:50.449122+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Startup = Growth"
 url: "http://www.paulgraham.com/growth.html"
-fetched_at: 2026-04-28T07:02:16.921906+00:00
+fetched_at: 2026-04-29T07:01:36.721614+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

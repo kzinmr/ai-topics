@@ -1,7 +1,7 @@
 ---
 title: "letterboxd2jellyfin sync script"
 url: "https://jayd.ml/2026/02/14/letterboxd2jellyfin.html"
-fetched_at: 2026-04-28T07:02:52.417220+00:00
+fetched_at: 2026-04-29T07:02:13.309888+00:00
 source: "jayd.ml"
 tags: [blog, raw]
 ---

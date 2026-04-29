@@ -1,7 +1,7 @@
 ---
 title: "There's not much point in buying Commodore"
 url: "https://oldvcr.blogspot.com/2025/06/theres-not-much-point-in-buying.html"
-fetched_at: 2026-04-28T07:02:05.148249+00:00
+fetched_at: 2026-04-29T07:01:25.486539+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

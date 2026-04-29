@@ -1,7 +1,7 @@
 ---
 title: "Making human languages irrelevant"
 url: "https://rakhim.exotext.com/making-human-languages-irrelevant"
-fetched_at: 2026-04-28T07:01:59.670056+00:00
+fetched_at: 2026-04-29T07:01:20.115937+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

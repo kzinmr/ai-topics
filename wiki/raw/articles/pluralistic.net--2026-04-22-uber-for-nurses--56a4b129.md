@@ -1,7 +1,7 @@
 ---
 title: "Pluralistic: It’s not a crime if we do it (to nurses) with an app (22 Apr 2026)"
 url: "https://pluralistic.net/2026/04/22/uber-for-nurses/"
-fetched_at: 2026-04-28T07:01:49.995886+00:00
+fetched_at: 2026-04-29T07:01:10.974867+00:00
 source: "pluralistic.net"
 tags: [blog, raw]
 ---

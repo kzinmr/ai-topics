@@ -1,7 +1,7 @@
 ---
 title: "Using Nix with Dockerfiles"
 url: "https://mitchellh.com/writing/nix-with-dockerfiles"
-fetched_at: 2026-04-28T07:02:40.964598+00:00
+fetched_at: 2026-04-29T07:02:00.671478+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

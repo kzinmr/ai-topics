@@ -1,7 +1,7 @@
 ---
 title: "GopherTree (Maurycy's blog)"
 url: "https://maurycyz.com/projects/gopher/"
-fetched_at: 2026-04-28T07:02:36.908913+00:00
+fetched_at: 2026-04-29T07:01:55.893910+00:00
 source: "maurycyz.com"
 tags: [blog, raw]
 ---

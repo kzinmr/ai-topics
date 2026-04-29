@@ -1,7 +1,7 @@
 ---
 title: "The Server That Wasn't Meant to Exist"
 url: "https://it-notes.dragas.net/2025/05/13/the_server_that_wasnt_meant_to_exist/"
-fetched_at: 2026-04-28T07:02:50.147688+00:00
+fetched_at: 2026-04-29T07:02:11.236196+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

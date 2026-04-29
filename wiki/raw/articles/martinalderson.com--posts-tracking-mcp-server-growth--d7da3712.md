@@ -1,7 +1,7 @@
 ---
 title: "Tracking MCP Server Growth"
 url: "https://martinalderson.com/posts/tracking-mcp-server-growth/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:44.393438+00:00
+fetched_at: 2026-04-29T07:02:04.352150+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Unusual circuits in the Intel 386's standard cell logic"
 url: "http://www.righto.com/2025/11/unusual-386-standard-cell-circuits.html"
-fetched_at: 2026-04-28T07:01:54.016522+00:00
+fetched_at: 2026-04-29T07:01:14.856088+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

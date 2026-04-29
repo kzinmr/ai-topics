@@ -1,7 +1,7 @@
 ---
 title: "Things I Don’t Know as of 2018"
 url: "https://overreacted.io/things-i-dont-know-as-of-2018/"
-fetched_at: 2026-04-28T07:02:39.911792+00:00
+fetched_at: 2026-04-29T07:01:58.876340+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

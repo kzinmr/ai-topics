@@ -1,7 +1,7 @@
 ---
 title: "A Complete Guide to useEffect"
 url: "https://overreacted.io/a-complete-guide-to-useeffect/"
-fetched_at: 2026-04-28T07:02:40.100267+00:00
+fetched_at: 2026-04-29T07:01:59.042782+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Sometimes powerful people just do dumb shit"
 url: "https://www.joanwestenberg.com/sometimes-powerful-people-just-do-dumb-shit/"
-fetched_at: 2026-04-28T07:02:43.007970+00:00
+fetched_at: 2026-04-29T07:02:03.261568+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

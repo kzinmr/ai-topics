@@ -1,7 +1,7 @@
 ---
 title: "Using FireWire on a Raspberry Pi"
 url: "https://www.jeffgeerling.com/blog/2026/firewire-on-a-raspberry-pi/"
-fetched_at: 2026-04-28T07:02:52.881563+00:00
+fetched_at: 2026-04-29T07:02:13.786586+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
 ---

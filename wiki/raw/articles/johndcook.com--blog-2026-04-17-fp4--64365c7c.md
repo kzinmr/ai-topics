@@ -1,7 +1,7 @@
 ---
 title: "4-bit floating point FP4"
 url: "https://www.johndcook.com/blog/2026/04/17/fp4/"
-fetched_at: 2026-04-28T07:02:46.543130+00:00
+fetched_at: 2026-04-29T07:02:06.559620+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

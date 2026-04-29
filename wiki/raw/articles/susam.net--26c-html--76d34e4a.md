@@ -1,7 +1,7 @@
 ---
 title: "Mar '26 Notes - Susam Pal"
 url: "https://susam.net/26c.html"
-fetched_at: 2026-04-28T07:01:41.265296+00:00
+fetched_at: 2026-04-29T07:01:03.059005+00:00
 source: "susam.net"
 tags: [blog, raw]
 ---

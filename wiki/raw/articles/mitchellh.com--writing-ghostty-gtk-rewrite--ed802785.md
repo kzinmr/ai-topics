@@ -1,7 +1,7 @@
 ---
 title: "We Rewrote the Ghostty GTK Application"
 url: "https://mitchellh.com/writing/ghostty-gtk-rewrite"
-fetched_at: 2026-04-28T07:02:40.620586+00:00
+fetched_at: 2026-04-29T07:01:59.385445+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

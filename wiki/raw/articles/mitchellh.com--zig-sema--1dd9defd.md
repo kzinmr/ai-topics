@@ -1,7 +1,7 @@
 ---
 title: "Zig Sema: ZIR => AIR"
 url: "https://mitchellh.com/zig/sema"
-fetched_at: 2026-04-28T07:02:41.120587+00:00
+fetched_at: 2026-04-29T07:02:01.048145+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

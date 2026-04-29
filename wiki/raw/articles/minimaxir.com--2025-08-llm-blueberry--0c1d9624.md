@@ -1,7 +1,7 @@
 ---
 title: "Can modern LLMs actually count the number of b's in \"blueberry\"?"
 url: "https://minimaxir.com/2025/08/llm-blueberry/"
-fetched_at: 2026-04-28T07:02:41.949534+00:00
+fetched_at: 2026-04-29T07:02:02.026598+00:00
 source: "minimaxir.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Frighteningly Ambitious Startup Ideas"
 url: "http://www.paulgraham.com/ambitious.html"
-fetched_at: 2026-04-28T07:02:17.516022+00:00
+fetched_at: 2026-04-29T07:01:37.302592+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

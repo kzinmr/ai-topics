@@ -1,7 +1,7 @@
 ---
 title: "It's okay to walk uphill"
 url: "https://rakhim.exotext.com/its-okay-to-walk-uphill"
-fetched_at: 2026-04-28T07:02:01.163300+00:00
+fetched_at: 2026-04-29T07:01:21.684258+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

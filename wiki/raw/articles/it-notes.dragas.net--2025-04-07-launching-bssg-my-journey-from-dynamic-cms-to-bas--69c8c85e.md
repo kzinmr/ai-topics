@@ -1,7 +1,7 @@
 ---
 title: "Launching BSSG - My Journey from Dynamic CMS to Bash Static Site Generator"
 url: "https://it-notes.dragas.net/2025/04/07/launching-bssg-my-journey-from-dynamic-cms-to-bash-static-site-generator/"
-fetched_at: 2026-04-28T07:02:50.176492+00:00
+fetched_at: 2026-04-29T07:02:11.275510+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

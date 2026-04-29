@@ -1,7 +1,7 @@
 ---
 title: "Preparing for a Tech Talk, Part 1: Motivation"
 url: "https://overreacted.io/preparing-for-tech-talk-part-1-motivation/"
-fetched_at: 2026-04-28T07:02:39.903199+00:00
+fetched_at: 2026-04-29T07:01:58.863482+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

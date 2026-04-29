@@ -1,7 +1,7 @@
 ---
 title: "Functional HTML - overreacted"
 url: "https://overreacted.io/functional-html/"
-fetched_at: 2026-04-28T07:02:38.344076+00:00
+fetched_at: 2026-04-29T07:01:57.819144+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

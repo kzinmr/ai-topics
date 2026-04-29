@@ -1,7 +1,7 @@
 ---
 title: "Advice for staying in the hospital for a week"
 url: "https://xeiaso.net/blog/2026/hospital-advice/"
-fetched_at: 2026-04-28T07:01:36.711640+00:00
+fetched_at: 2026-04-29T07:00:58.876755+00:00
 source: "xeiaso.net"
 tags: [blog, raw]
 ---

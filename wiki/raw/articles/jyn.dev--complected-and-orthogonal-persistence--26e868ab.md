@@ -1,7 +1,7 @@
 ---
 title: "complected and orthogonal persistence"
 url: "https://jyn.dev/complected-and-orthogonal-persistence/"
-fetched_at: 2026-04-28T07:02:50.790297+00:00
+fetched_at: 2026-04-29T07:02:11.819007+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

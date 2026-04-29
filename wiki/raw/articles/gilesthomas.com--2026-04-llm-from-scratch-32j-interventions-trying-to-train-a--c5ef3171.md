@@ -1,7 +1,7 @@
 ---
 title: "Writing an LLM from scratch, part 32j -- Interventions: trying to train a better model in the cloud"
 url: "https://www.gilesthomas.com/2026/04/llm-from-scratch-32j-interventions-trying-to-train-a-better-model-in-the-cloud"
-fetched_at: 2026-04-28T07:02:42.941746+00:00
+fetched_at: 2026-04-29T07:02:02.931610+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
 ---

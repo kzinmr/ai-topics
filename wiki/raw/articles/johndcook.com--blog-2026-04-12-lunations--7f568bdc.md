@@ -1,7 +1,7 @@
 ---
 title: "Lunar period approximations"
 url: "https://www.johndcook.com/blog/2026/04/12/lunations/"
-fetched_at: 2026-04-28T07:02:47.364111+00:00
+fetched_at: 2026-04-29T07:02:07.032412+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

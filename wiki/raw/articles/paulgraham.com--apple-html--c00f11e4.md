@@ -1,7 +1,7 @@
 ---
 title: "Apple's Mistake"
 url: "http://www.paulgraham.com/apple.html"
-fetched_at: 2026-04-28T07:02:19.794475+00:00
+fetched_at: 2026-04-29T07:01:39.548972+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

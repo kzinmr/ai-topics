@@ -1,7 +1,7 @@
 ---
 title: "On Async Rust"
 url: "https://hugotunius.se/2024/03/08/on-async-rust.html"
-fetched_at: 2026-04-28T07:02:52.517895+00:00
+fetched_at: 2026-04-29T07:02:13.392996+00:00
 source: "hugotunius.se"
 tags: [blog, raw]
 ---

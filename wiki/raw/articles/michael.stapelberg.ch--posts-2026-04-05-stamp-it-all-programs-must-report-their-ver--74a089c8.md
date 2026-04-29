@@ -1,7 +1,7 @@
 ---
 title: "Stamp It! All Programs Must Report Their Version"
 url: "https://michael.stapelberg.ch/posts/2026-04-05-stamp-it-all-programs-must-report-their-version/"
-fetched_at: 2026-04-28T07:01:52.113163+00:00
+fetched_at: 2026-04-29T07:01:12.926489+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
 ---

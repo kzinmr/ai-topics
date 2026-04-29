@@ -1,7 +1,7 @@
 ---
 title: "Crypto grifters are recruiting open-source AI developers"
 url: "https://seangoedecke.com/gas-and-ralph/"
-fetched_at: 2026-04-28T07:01:58.401704+00:00
+fetched_at: 2026-04-29T07:01:19.172418+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

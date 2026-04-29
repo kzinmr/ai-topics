@@ -1,7 +1,7 @@
 ---
 title: "THERE IS A CAR IN SPACE"
 url: "https://jyn.dev/there-is-a-car-in-space/"
-fetched_at: 2026-04-28T07:02:52.203018+00:00
+fetched_at: 2026-04-29T07:02:13.077879+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

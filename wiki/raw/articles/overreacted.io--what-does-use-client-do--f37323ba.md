@@ -1,7 +1,7 @@
 ---
 title: "What Does \"use client\" Do?"
 url: "https://overreacted.io/what-does-use-client-do/"
-fetched_at: 2026-04-28T07:02:38.165230+00:00
+fetched_at: 2026-04-29T07:01:57.020166+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Someone At YouTube Needs Glasses: The Prophecy Has Been Fulfilled"
 url: "https://jayd.ml/2025/11/10/someone-at-youtube-needs-glasses-prophecy-fulfilled.html"
-fetched_at: 2026-04-28T07:02:52.505561+00:00
+fetched_at: 2026-04-29T07:02:13.346087+00:00
 source: "jayd.ml"
 tags: [blog, raw]
 ---

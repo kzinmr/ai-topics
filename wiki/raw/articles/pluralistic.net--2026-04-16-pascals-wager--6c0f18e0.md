@@ -1,7 +1,7 @@
 ---
 title: "Pluralistic: A Pascal’s Wager for AI Doomers (16 Apr 2026)"
 url: "https://pluralistic.net/2026/04/16/pascals-wager/"
-fetched_at: 2026-04-28T07:01:50.804549+00:00
+fetched_at: 2026-04-29T07:01:11.738100+00:00
 source: "pluralistic.net"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Two different tricks for fast LLM inference"
 url: "https://seangoedecke.com/fast-llm-inference/"
-fetched_at: 2026-04-28T07:01:57.729015+00:00
+fetched_at: 2026-04-29T07:01:18.687579+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

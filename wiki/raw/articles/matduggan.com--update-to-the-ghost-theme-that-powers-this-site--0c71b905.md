@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/update-to-the-ghost-theme-that-powers-this-site/"
-fetched_at: 2026-04-28T07:02:35.294217+00:00
+fetched_at: 2026-04-29T07:01:54.827999+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "The Center Has a Bias"
 url: "https://lucumr.pocoo.org/2026/4/11/the-center-has-a-bias/"
-fetched_at: 2026-04-28T07:02:44.702373+00:00
+fetched_at: 2026-04-29T07:02:04.619693+00:00
 source: "lucumr.pocoo.org"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "The toil of (blog) art"
 url: "https://lcamtuf.substack.com/p/the-toil-of-blog-art"
-fetched_at: 2026-04-28T07:02:48.559976+00:00
+fetched_at: 2026-04-29T07:02:08.674896+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

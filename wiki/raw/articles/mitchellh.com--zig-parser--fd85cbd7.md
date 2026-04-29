@@ -1,7 +1,7 @@
 ---
 title: "Mitchell Hashimoto"
 url: "https://mitchellh.com/zig/parser"
-fetched_at: 2026-04-28T07:02:41.287687+00:00
+fetched_at: 2026-04-29T07:02:01.692562+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

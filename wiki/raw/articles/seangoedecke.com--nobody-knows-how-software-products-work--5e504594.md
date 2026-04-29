@@ -1,7 +1,7 @@
 ---
 title: "Nobody knows how large software products work"
 url: "https://seangoedecke.com/nobody-knows-how-software-products-work/"
-fetched_at: 2026-04-28T07:01:58.838001+00:00
+fetched_at: 2026-04-29T07:01:19.458007+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

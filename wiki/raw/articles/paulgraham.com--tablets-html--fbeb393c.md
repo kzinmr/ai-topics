@@ -1,7 +1,7 @@
 ---
 title: "Tablets"
 url: "http://www.paulgraham.com/tablets.html"
-fetched_at: 2026-04-28T07:02:18.351734+00:00
+fetched_at: 2026-04-29T07:01:38.210986+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Talk: Introducing Ghostty and Some Useful Zig Patterns"
 url: "https://mitchellh.com/writing/ghostty-and-useful-zig-patterns"
-fetched_at: 2026-04-28T07:02:40.757984+00:00
+fetched_at: 2026-04-29T07:02:00.386823+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

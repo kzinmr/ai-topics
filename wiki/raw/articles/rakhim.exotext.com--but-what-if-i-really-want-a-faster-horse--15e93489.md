@@ -1,7 +1,7 @@
 ---
 title: "But what if I really want a faster horse?"
 url: "https://rakhim.exotext.com/but-what-if-i-really-want-a-faster-horse"
-fetched_at: 2026-04-28T07:02:00.418135+00:00
+fetched_at: 2026-04-29T07:01:20.898581+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

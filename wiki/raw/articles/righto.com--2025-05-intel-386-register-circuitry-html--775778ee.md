@@ -1,7 +1,7 @@
 ---
 title: "The absurdly complicated circuitry for the 386 processor's registers"
 url: "http://www.righto.com/2025/05/intel-386-register-circuitry.html"
-fetched_at: 2026-04-28T07:01:55.243212+00:00
+fetched_at: 2026-04-29T07:01:15.883247+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

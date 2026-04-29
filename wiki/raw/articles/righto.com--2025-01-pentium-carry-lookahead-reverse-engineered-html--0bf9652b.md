@@ -1,7 +1,7 @@
 ---
 title: "Reverse-engineering a carry-lookahead adder in the Pentium"
 url: "http://www.righto.com/2025/01/pentium-carry-lookahead-reverse-engineered.html"
-fetched_at: 2026-04-28T07:01:56.818702+00:00
+fetched_at: 2026-04-29T07:01:16.448493+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

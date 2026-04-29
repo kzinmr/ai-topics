@@ -1,7 +1,7 @@
 ---
 title: "Loop-Invariant Code Motion"
 url: "http://xania.org/202512/13-licking-licm?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-28T07:01:44.475139+00:00
+fetched_at: 2026-04-29T07:01:05.814008+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

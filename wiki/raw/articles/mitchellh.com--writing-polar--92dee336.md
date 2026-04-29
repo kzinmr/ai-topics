@@ -1,7 +1,7 @@
 ---
 title: "Joining Polar as an Advisor"
 url: "https://mitchellh.com/writing/polar"
-fetched_at: 2026-04-28T07:02:40.749506+00:00
+fetched_at: 2026-04-29T07:02:00.118953+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

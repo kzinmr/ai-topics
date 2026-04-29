@@ -1,7 +1,7 @@
 ---
 title: "The Equity Equation"
 url: "http://www.paulgraham.com/equity.html"
-fetched_at: 2026-04-28T07:02:25.045620+00:00
+fetched_at: 2026-04-29T07:01:44.916038+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

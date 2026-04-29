@@ -1,7 +1,7 @@
 ---
 title: "Could VC be a Casualty of the Recession?"
 url: "http://www.paulgraham.com/divergence.html"
-fetched_at: 2026-04-28T07:02:22.096468+00:00
+fetched_at: 2026-04-29T07:01:41.934244+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

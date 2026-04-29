@@ -1,7 +1,7 @@
 ---
 title: "$2m laundered: the YouTube crypto tutorials’ huge scam (investigation)"
 url: "https://timsh.org/2m-laundered-the-youtube-crypto-tutorials-huge-scam-investigation/"
-fetched_at: 2026-04-28T07:01:37.319173+00:00
+fetched_at: 2026-04-29T07:00:59.396797+00:00
 source: "timsh.org"
 tags: [blog, raw]
 ---

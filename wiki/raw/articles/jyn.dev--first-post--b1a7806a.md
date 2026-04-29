@@ -1,7 +1,7 @@
 ---
 title: "Hello, World!"
 url: "https://jyn.dev/first-post/"
-fetched_at: 2026-04-28T07:02:52.423949+00:00
+fetched_at: 2026-04-29T07:02:13.326735+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

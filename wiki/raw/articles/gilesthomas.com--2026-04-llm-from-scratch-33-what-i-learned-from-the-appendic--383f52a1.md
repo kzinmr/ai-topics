@@ -1,7 +1,7 @@
 ---
 title: "Writing an LLM from scratch, part 33 -- what I learned from finally getting round to the appendices"
 url: "https://www.gilesthomas.com/2026/04/llm-from-scratch-33-what-i-learned-from-the-appendices"
-fetched_at: 2026-04-28T07:02:43.235125+00:00
+fetched_at: 2026-04-29T07:02:03.304434+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
 ---

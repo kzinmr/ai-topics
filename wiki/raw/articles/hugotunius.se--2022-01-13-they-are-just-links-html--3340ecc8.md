@@ -1,7 +1,7 @@
 ---
 title: "They Are Just Links"
 url: "https://hugotunius.se/2022/01/13/they-are-just-links.html"
-fetched_at: 2026-04-28T07:02:52.562325+00:00
+fetched_at: 2026-04-29T07:02:13.445005+00:00
 source: "hugotunius.se"
 tags: [blog, raw]
 ---

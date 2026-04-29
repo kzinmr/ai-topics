@@ -1,7 +1,7 @@
 ---
 title: "Lebesgue constants"
 url: "https://www.johndcook.com/blog/2026/03/26/lebesgue-constants/"
-fetched_at: 2026-04-28T07:02:48.311734+00:00
+fetched_at: 2026-04-29T07:02:08.413371+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

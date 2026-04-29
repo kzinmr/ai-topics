@@ -1,7 +1,7 @@
 ---
 title: "The World's First Bullshit"
 url: "https://www.joanwestenberg.com/the-worlds-first-bullshit/"
-fetched_at: 2026-04-28T07:02:43.121123+00:00
+fetched_at: 2026-04-29T07:02:03.557255+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

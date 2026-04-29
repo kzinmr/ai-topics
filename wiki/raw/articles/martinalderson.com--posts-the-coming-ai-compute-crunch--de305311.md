@@ -1,7 +1,7 @@
 ---
 title: "The Coming AI Compute Crunch"
 url: "https://martinalderson.com/posts/the-coming-ai-compute-crunch/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:44.225178+00:00
+fetched_at: 2026-04-29T07:02:04.220622+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "How to Do Great Work"
 url: "http://www.paulgraham.com/greatwork.html"
-fetched_at: 2026-04-28T07:02:08.952698+00:00
+fetched_at: 2026-04-29T07:01:28.784087+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

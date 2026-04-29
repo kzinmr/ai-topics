@@ -1,7 +1,7 @@
 ---
 title: "Lisp for Web-Based Applications"
 url: "http://www.paulgraham.com/lwba.html"
-fetched_at: 2026-04-28T07:02:34.457925+00:00
+fetched_at: 2026-04-29T07:01:54.199953+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

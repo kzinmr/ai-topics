@@ -1,7 +1,7 @@
 ---
 title: "My 2025 high-end Linux PC 🐧 (2025)"
 url: "https://michael.stapelberg.ch/posts/2025-05-15-my-2025-high-end-linux-pc/"
-fetched_at: 2026-04-28T07:01:53.383963+00:00
+fetched_at: 2026-04-29T07:01:14.358413+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
 ---

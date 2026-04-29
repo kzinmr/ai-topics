@@ -1,7 +1,7 @@
 ---
 title: "Early Work"
 url: "http://www.paulgraham.com/early.html"
-fetched_at: 2026-04-28T07:02:11.628915+00:00
+fetched_at: 2026-04-29T07:01:31.311893+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

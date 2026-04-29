@@ -1,7 +1,7 @@
 ---
 title: "How to Lose Time and Money"
 url: "http://www.paulgraham.com/selfindulgence.html"
-fetched_at: 2026-04-28T07:02:19.342269+00:00
+fetched_at: 2026-04-29T07:01:39.162207+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

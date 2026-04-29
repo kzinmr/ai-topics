@@ -1,7 +1,7 @@
 ---
 title: "Has Mythos just broken the deal that kept the internet safe?"
 url: "https://martinalderson.com/posts/has-mythos-just-broken-the-deal-that-kept-the-internet-safe/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:43.896114+00:00
+fetched_at: 2026-04-29T07:02:03.984858+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

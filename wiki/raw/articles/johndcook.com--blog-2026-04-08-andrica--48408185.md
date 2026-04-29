@@ -1,7 +1,7 @@
 ---
 title: "Andrica's conjecture on the gap between root primes"
 url: "https://www.johndcook.com/blog/2026/04/08/andrica/"
-fetched_at: 2026-04-28T07:02:47.607113+00:00
+fetched_at: 2026-04-29T07:02:07.451553+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

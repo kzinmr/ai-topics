@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/i-broke-and-fixed-my-ghost-blog/"
-fetched_at: 2026-04-28T07:02:35.596351+00:00
+fetched_at: 2026-04-29T07:01:54.890713+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---

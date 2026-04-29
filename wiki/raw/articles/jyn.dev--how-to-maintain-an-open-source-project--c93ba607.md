@@ -1,7 +1,7 @@
 ---
 title: "How to maintain an Open Source project"
 url: "https://jyn.dev/how-to-maintain-an-open-source-project/"
-fetched_at: 2026-04-28T07:02:51.222438+00:00
+fetched_at: 2026-04-29T07:02:12.143171+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

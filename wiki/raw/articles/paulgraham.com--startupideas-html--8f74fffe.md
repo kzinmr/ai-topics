@@ -1,7 +1,7 @@
 ---
 title: "How to Get Startup Ideas"
 url: "http://www.paulgraham.com/startupideas.html"
-fetched_at: 2026-04-28T07:02:16.455205+00:00
+fetched_at: 2026-04-29T07:01:36.259202+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

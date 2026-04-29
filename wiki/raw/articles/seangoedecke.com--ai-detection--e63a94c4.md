@@ -1,7 +1,7 @@
 ---
 title: "AI detection tools cannot prove that text is AI-generated"
 url: "https://seangoedecke.com/ai-detection/"
-fetched_at: 2026-04-28T07:01:59.361915+00:00
+fetched_at: 2026-04-29T07:01:19.766836+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

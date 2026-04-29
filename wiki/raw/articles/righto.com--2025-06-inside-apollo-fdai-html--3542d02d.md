@@ -1,7 +1,7 @@
 ---
 title: "Inside the Apollo \"8-Ball\" FDAI (Flight Director / Attitude Indicator)"
 url: "http://www.righto.com/2025/06/inside-apollo-fdai.html"
-fetched_at: 2026-04-28T07:01:54.599165+00:00
+fetched_at: 2026-04-29T07:01:15.276755+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "What I Did this Summer"
 url: "http://www.paulgraham.com/sfp.html"
-fetched_at: 2026-04-28T07:02:28.714055+00:00
+fetched_at: 2026-04-29T07:01:48.442353+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

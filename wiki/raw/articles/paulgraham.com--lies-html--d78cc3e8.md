@@ -1,7 +1,7 @@
 ---
 title: "Lies We Tell Kids"
 url: "http://www.paulgraham.com/lies.html"
-fetched_at: 2026-04-28T07:02:23.229414+00:00
+fetched_at: 2026-04-29T07:01:43.034171+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

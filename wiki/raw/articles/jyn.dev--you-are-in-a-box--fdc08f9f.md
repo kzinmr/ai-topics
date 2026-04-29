@@ -1,7 +1,7 @@
 ---
 title: "you are in a box"
 url: "https://jyn.dev/you-are-in-a-box/"
-fetched_at: 2026-04-28T07:02:50.731303+00:00
+fetched_at: 2026-04-29T07:02:11.695734+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

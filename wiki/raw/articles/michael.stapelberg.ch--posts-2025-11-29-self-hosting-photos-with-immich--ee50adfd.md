@@ -1,7 +1,7 @@
 ---
 title: "Self-hosting my photos with Immich (2025)"
 url: "https://michael.stapelberg.ch/posts/2025-11-29-self-hosting-photos-with-immich/"
-fetched_at: 2026-04-28T07:01:51.622422+00:00
+fetched_at: 2026-04-29T07:01:12.462396+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
 ---

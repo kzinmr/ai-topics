@@ -1,7 +1,7 @@
 ---
 title: "Vibe Coding Will Rob Us of Our Freedom"
 url: "https://it-notes.dragas.net/2025/06/05/vibe-coding-will-rob-us-of-our-freedom/"
-fetched_at: 2026-04-28T07:02:49.963808+00:00
+fetched_at: 2026-04-29T07:02:10.921490+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

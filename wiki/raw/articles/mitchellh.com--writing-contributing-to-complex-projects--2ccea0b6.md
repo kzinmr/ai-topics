@@ -1,7 +1,7 @@
 ---
 title: "Contributing to Complex Projects"
 url: "https://mitchellh.com/writing/contributing-to-complex-projects"
-fetched_at: 2026-04-28T07:02:41.229326+00:00
+fetched_at: 2026-04-29T07:02:00.809724+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "The Hardware Renaissance"
 url: "http://www.paulgraham.com/hw.html"
-fetched_at: 2026-04-28T07:02:16.512784+00:00
+fetched_at: 2026-04-29T07:01:36.355334+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

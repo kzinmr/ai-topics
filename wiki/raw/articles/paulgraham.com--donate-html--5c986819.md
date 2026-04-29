@@ -1,7 +1,7 @@
 ---
 title: "Donate Unrestricted"
 url: "http://www.paulgraham.com/donate.html"
-fetched_at: 2026-04-28T07:02:10.598432+00:00
+fetched_at: 2026-04-29T07:01:30.436868+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

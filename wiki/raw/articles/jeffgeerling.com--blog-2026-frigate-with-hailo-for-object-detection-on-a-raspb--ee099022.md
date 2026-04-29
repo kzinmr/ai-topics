@@ -1,7 +1,7 @@
 ---
 title: "Frigate with Hailo for object detection on a Raspberry Pi"
 url: "https://www.jeffgeerling.com/blog/2026/frigate-with-hailo-for-object-detection-on-a-raspberry-pi/"
-fetched_at: 2026-04-28T07:02:53.119448+00:00
+fetched_at: 2026-04-29T07:02:14.017952+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
 ---

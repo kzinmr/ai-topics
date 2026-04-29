@@ -1,7 +1,7 @@
 ---
 title: "How to use the command line"
 url: "https://jyn.dev/talks/linux/"
-fetched_at: 2026-04-28T07:02:51.676174+00:00
+fetched_at: 2026-04-29T07:02:12.767906+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

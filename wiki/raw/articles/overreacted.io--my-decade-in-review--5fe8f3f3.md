@@ -1,7 +1,7 @@
 ---
 title: "My Decade in Review"
 url: "https://overreacted.io/my-decade-in-review/"
-fetched_at: 2026-04-28T07:02:38.863189+00:00
+fetched_at: 2026-04-29T07:01:57.878803+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "This Week on The Analog Antiquarian"
 url: "https://www.filfre.net/2026/04/this-week-on-the-analog-antiquarian/"
-fetched_at: 2026-04-28T07:02:45.603366+00:00
+fetched_at: 2026-04-29T07:02:05.771140+00:00
 source: "filfre.net"
 tags: [blog, raw]
 ---

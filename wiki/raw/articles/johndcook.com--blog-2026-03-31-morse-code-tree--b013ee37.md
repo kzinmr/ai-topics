@@ -1,7 +1,7 @@
 ---
 title: "Morse code tree"
 url: "https://www.johndcook.com/blog/2026/03/31/morse-code-tree/"
-fetched_at: 2026-04-28T07:02:48.094522+00:00
+fetched_at: 2026-04-29T07:02:08.217834+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

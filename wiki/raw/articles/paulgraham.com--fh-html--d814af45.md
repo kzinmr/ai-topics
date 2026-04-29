@@ -1,7 +1,7 @@
 ---
 title: "Haters"
 url: "http://www.paulgraham.com/fh.html"
-fetched_at: 2026-04-28T07:02:12.394877+00:00
+fetched_at: 2026-04-29T07:01:32.197691+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

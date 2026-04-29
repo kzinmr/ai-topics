@@ -1,7 +1,7 @@
 ---
 title: "the terminal of the future"
 url: "https://jyn.dev/the-terminal-of-the-future/"
-fetched_at: 2026-04-28T07:02:50.553985+00:00
+fetched_at: 2026-04-29T07:02:11.511006+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

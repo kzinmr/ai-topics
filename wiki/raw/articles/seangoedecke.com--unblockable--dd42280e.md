@@ -1,7 +1,7 @@
 ---
 title: "Becoming unblockable"
 url: "https://seangoedecke.com/unblockable/"
-fetched_at: 2026-04-28T07:01:59.528140+00:00
+fetched_at: 2026-04-29T07:01:19.919769+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

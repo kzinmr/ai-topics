@@ -1,7 +1,7 @@
 ---
 title: "Knight Ride: a game about rogue (chess) knight"
 url: "https://rakhim.exotext.com/knight-ride-a-game-about-rogue-chess-knight"
-fetched_at: 2026-04-28T07:02:00.658901+00:00
+fetched_at: 2026-04-29T07:01:21.087194+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

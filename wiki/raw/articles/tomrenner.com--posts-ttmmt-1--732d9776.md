@@ -1,7 +1,7 @@
 ---
 title: "Things that made me think: Enshittification, apathy, and discrimination"
 url: "https://tomrenner.com/posts/ttmmt-1/"
-fetched_at: 2026-04-28T07:01:45.226247+00:00
+fetched_at: 2026-04-29T07:01:06.349282+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "What I've Learned from Users"
 url: "http://www.paulgraham.com/users.html"
-fetched_at: 2026-04-28T07:02:08.757513+00:00
+fetched_at: 2026-04-29T07:01:28.577829+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Zombies - lcamtuf’s thing"
 url: "https://lcamtuf.substack.com/p/zombies"
-fetched_at: 2026-04-28T07:02:49.269274+00:00
+fetched_at: 2026-04-29T07:02:09.239669+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

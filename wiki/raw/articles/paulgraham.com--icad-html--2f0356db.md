@@ -1,7 +1,7 @@
 ---
 title: "Revenge of the Nerds"
 url: "http://www.paulgraham.com/icad.html"
-fetched_at: 2026-04-28T07:02:32.908623+00:00
+fetched_at: 2026-04-29T07:01:52.601701+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

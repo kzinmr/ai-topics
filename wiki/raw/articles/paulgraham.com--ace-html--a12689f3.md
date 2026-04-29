@@ -1,7 +1,7 @@
 ---
 title: "Billionaires Build"
 url: "http://www.paulgraham.com/ace.html"
-fetched_at: 2026-04-28T07:02:10.895701+00:00
+fetched_at: 2026-04-29T07:01:30.814664+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

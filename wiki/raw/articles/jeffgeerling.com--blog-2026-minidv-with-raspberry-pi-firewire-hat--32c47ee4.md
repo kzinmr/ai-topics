@@ -1,7 +1,7 @@
 ---
 title: "Bring back MiniDV with this Raspberry Pi FireWire HAT"
 url: "https://www.jeffgeerling.com/blog/2026/minidv-with-raspberry-pi-firewire-hat/"
-fetched_at: 2026-04-28T07:02:52.853581+00:00
+fetched_at: 2026-04-29T07:02:13.762559+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
 ---

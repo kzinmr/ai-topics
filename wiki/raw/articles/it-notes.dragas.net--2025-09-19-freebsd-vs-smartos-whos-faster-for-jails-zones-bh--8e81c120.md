@@ -1,7 +1,7 @@
 ---
 title: "FreeBSD vs. SmartOS: Who's Faster for Jails, Zones, and bhyve VMs?"
 url: "https://it-notes.dragas.net/2025/09/19/freebsd-vs-smartos-whos-faster-for-jails-zones-bhyve/"
-fetched_at: 2026-04-28T07:02:49.783432+00:00
+fetched_at: 2026-04-29T07:02:10.864179+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

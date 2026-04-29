@@ -1,7 +1,7 @@
 ---
 title: "Finding a parabola through two points with given slopes"
 url: "https://www.johndcook.com/blog/2026/04/14/artz-parabola/"
-fetched_at: 2026-04-28T07:02:47.178984+00:00
+fetched_at: 2026-04-29T07:02:06.879218+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

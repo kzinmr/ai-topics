@@ -1,7 +1,7 @@
 ---
 title: "The UK paid £4.1 million for a bookmarks site"
 url: "https://mahadk.com/posts/ai-skills-hub/"
-fetched_at: 2026-04-28T07:01:55.428558+00:00
+fetched_at: 2026-04-29T07:01:16.170693+00:00
 source: "skyfall.dev"
 tags: [blog, raw]
 ---

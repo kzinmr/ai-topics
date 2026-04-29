@@ -1,7 +1,7 @@
 ---
 title: "When it comes to writing, LLMs have won"
 url: "https://lcamtuf.substack.com/p/when-it-comes-to-writing-llms-have"
-fetched_at: 2026-04-28T07:02:48.905971+00:00
+fetched_at: 2026-04-29T07:02:09.058613+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

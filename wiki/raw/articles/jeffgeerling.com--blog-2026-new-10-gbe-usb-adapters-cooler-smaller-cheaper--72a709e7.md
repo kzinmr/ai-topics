@@ -1,7 +1,7 @@
 ---
 title: "New 10 GbE USB adapters are cooler, smaller, cheaper"
 url: "https://www.jeffgeerling.com/blog/2026/new-10-gbe-usb-adapters-cooler-smaller-cheaper/"
-fetched_at: 2026-04-28T07:02:52.797981+00:00
+fetched_at: 2026-04-29T07:02:13.702365+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
 ---

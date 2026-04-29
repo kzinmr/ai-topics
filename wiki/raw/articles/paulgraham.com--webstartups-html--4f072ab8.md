@@ -1,7 +1,7 @@
 ---
 title: "The Future of Web Startups"
 url: "http://www.paulgraham.com/webstartups.html"
-fetched_at: 2026-04-28T07:02:24.660737+00:00
+fetched_at: 2026-04-29T07:01:44.322555+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

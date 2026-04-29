@@ -1,7 +1,7 @@
 ---
 title: "Here be dragons: Preventing static damage, latchup, and metastability in the 386"
 url: "http://www.righto.com/2025/08/static-latchup-metastability-386.html"
-fetched_at: 2026-04-28T07:01:55.292535+00:00
+fetched_at: 2026-04-29T07:01:15.262658+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

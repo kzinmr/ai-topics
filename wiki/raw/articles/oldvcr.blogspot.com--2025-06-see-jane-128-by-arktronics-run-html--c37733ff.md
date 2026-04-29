@@ -1,7 +1,7 @@
 ---
 title: "See Jane 128 by Arktronics run (featuring Magic Desk, 3-Plus-1 and the Thomson MO5)"
 url: "https://oldvcr.blogspot.com/2025/06/see-jane-128-by-arktronics-run.html"
-fetched_at: 2026-04-28T07:02:05.673445+00:00
+fetched_at: 2026-04-29T07:01:25.180776+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

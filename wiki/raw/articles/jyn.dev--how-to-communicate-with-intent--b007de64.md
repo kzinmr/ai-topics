@@ -1,7 +1,7 @@
 ---
 title: "how to communicate with intent"
 url: "https://jyn.dev/how-to-communicate-with-intent/"
-fetched_at: 2026-04-28T07:02:50.516559+00:00
+fetched_at: 2026-04-29T07:02:11.573605+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

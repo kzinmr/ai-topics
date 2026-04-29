@@ -1,7 +1,7 @@
 ---
 title: "\"Full-stack\" and why I don't like it"
 url: "https://tomrenner.com/posts/fullstack/"
-fetched_at: 2026-04-28T07:01:45.865802+00:00
+fetched_at: 2026-04-29T07:01:06.908748+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

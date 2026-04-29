@@ -1,7 +1,7 @@
 ---
 title: "How AI Assistants are Moving the Security Goalposts"
 url: "https://krebsonsecurity.com/2026/03/how-ai-assistants-are-moving-the-security-goalposts/"
-fetched_at: 2026-04-28T07:02:46.211751+00:00
+fetched_at: 2026-04-29T07:02:06.372785+00:00
 source: "krebsonsecurity.com"
 tags: [blog, raw]
 ---

@@ -59,6 +59,16 @@ Several research projects have explored specialized memory tools for agents:
 
 The trend shows that general tools (filesystem) with scaling intelligence can match or exceed specialized memory tooling.
 
+## Public Beta Launch (Apr 2026)
+
+Anthropic launched Managed Agents in **public beta** in April 2026, marking the transition from private/preview to generally available platform feature:
+- **Platform-level agent orchestration**: Complete execution environment with built-in monitoring, audit trails, and security controls
+- **Brain/Hands/Session separation**: Architectural pattern where planning (Brain), execution (Hands), and context management (Session) are independently managed components
+- **Enterprise-ready**: Designed for production workloads with governance and compliance features
+- **MCP Integration**: Full Model Context Protocol support for external tool integration
+
+This represents a significant shift toward **platform-provided agent infrastructure** rather than developers building custom harnesses. Compare with OpenAI's Symphony approach.
+
 ## Getting Started
 
 - [Claude Managed Agents docs](https://docs.anthropic.com)

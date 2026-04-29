@@ -1,7 +1,7 @@
 ---
 title: "EnshittifAIcation - IT Notes"
 url: "https://it-notes.dragas.net/2026/03/20/enshittifaication/"
-fetched_at: 2026-04-28T07:02:49.408246+00:00
+fetched_at: 2026-04-29T07:02:10.485140+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

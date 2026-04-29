@@ -1,7 +1,7 @@
 ---
 title: "Passive Voice Considered Harmful"
 url: "https://refactoringenglish.com/chapters/passive-voice-considered-harmful/"
-fetched_at: 2026-04-28T07:02:02.916428+00:00
+fetched_at: 2026-04-29T07:01:23.527379+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
 ---

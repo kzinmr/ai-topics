@@ -1,7 +1,7 @@
 ---
 title: "Expert Beginners and Lone Wolves will dominate this early LLM era"
 url: "https://www.jeffgeerling.com/blog/2026/expert-beginners-and-lone-wolves-dominate-llm-era/"
-fetched_at: 2026-04-28T07:02:53.049220+00:00
+fetched_at: 2026-04-29T07:02:13.951916+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
 ---

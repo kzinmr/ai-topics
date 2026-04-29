@@ -1,7 +1,7 @@
 ---
 title: "Can LLMs write better code if you keep asking them to “write better code”?"
 url: "https://minimaxir.com/2025/01/write-better-code/"
-fetched_at: 2026-04-28T07:02:42.291953+00:00
+fetched_at: 2026-04-29T07:02:02.330419+00:00
 source: "minimaxir.com"
 tags: [blog, raw]
 ---

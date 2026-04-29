@@ -1,7 +1,7 @@
 ---
 title: "Orthodox Privilege"
 url: "http://www.paulgraham.com/orth.html"
-fetched_at: 2026-04-28T07:02:11.701175+00:00
+fetched_at: 2026-04-29T07:01:31.457972+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

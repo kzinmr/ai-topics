@@ -1,7 +1,7 @@
 ---
 title: "Weird Languages"
 url: "http://www.paulgraham.com/weird.html"
-fetched_at: 2026-04-28T07:02:09.648754+00:00
+fetched_at: 2026-04-29T07:01:29.492894+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

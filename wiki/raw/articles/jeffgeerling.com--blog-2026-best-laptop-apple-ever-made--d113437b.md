@@ -1,7 +1,7 @@
 ---
 title: "The best laptop Apple ever made"
 url: "https://www.jeffgeerling.com/blog/2026/best-laptop-apple-ever-made/"
-fetched_at: 2026-04-28T07:02:52.913005+00:00
+fetched_at: 2026-04-29T07:02:13.775807+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
 ---

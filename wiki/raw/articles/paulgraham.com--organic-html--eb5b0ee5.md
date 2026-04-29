@@ -1,7 +1,7 @@
 ---
 title: "Organic Startup Ideas"
 url: "http://www.paulgraham.com/organic.html"
-fetched_at: 2026-04-28T07:02:19.648425+00:00
+fetched_at: 2026-04-29T07:01:39.381047+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Standing on the shoulders of Homebrew"
 url: "https://nesbitt.io/2026/04/14/standing-on-the-shoulders-of-homebrew.html"
-fetched_at: 2026-04-28T07:02:41.608668+00:00
+fetched_at: 2026-04-29T07:02:01.640756+00:00
 source: "nesbitt.io"
 tags: [blog, raw]
 ---

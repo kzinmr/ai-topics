@@ -1,7 +1,7 @@
 ---
 title: "Can You Buy a Silicon Valley? Maybe."
 url: "http://www.paulgraham.com/maybe.html"
-fetched_at: 2026-04-28T07:02:21.697024+00:00
+fetched_at: 2026-04-29T07:01:41.433958+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

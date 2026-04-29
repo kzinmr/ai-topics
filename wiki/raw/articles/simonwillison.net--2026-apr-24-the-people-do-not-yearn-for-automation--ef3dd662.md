@@ -1,7 +1,7 @@
 ---
 title: "The people do not yearn for automation"
 url: "https://simonwillison.net/2026/Apr/24/the-people-do-not-yearn-for-automation/#atom-everything"
-fetched_at: 2026-04-28T07:01:59.707728+00:00
+fetched_at: 2026-04-29T07:01:19.420154+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

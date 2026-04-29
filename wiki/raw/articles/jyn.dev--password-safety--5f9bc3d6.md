@@ -1,7 +1,7 @@
 ---
 title: "Password Safety"
 url: "https://jyn.dev/password-safety/"
-fetched_at: 2026-04-28T07:02:52.111868+00:00
+fetched_at: 2026-04-29T07:02:13.042913+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

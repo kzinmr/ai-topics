@@ -1,7 +1,7 @@
 ---
 title: "Copying Generic Arrays in Java"
 url: "https://jyn.dev/copying-generic-arrays-in-java/"
-fetched_at: 2026-04-28T07:02:52.095149+00:00
+fetched_at: 2026-04-29T07:02:13.020499+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

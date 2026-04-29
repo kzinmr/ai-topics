@@ -1,7 +1,7 @@
 ---
 title: "How You Know"
 url: "http://www.paulgraham.com/know.html"
-fetched_at: 2026-04-28T07:02:15.320358+00:00
+fetched_at: 2026-04-29T07:01:35.034842+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

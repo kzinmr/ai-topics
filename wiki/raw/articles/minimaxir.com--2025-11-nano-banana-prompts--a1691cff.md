@@ -1,7 +1,7 @@
 ---
 title: "Nano Banana can be prompt engineered for extremely nuanced AI image generation"
 url: "https://minimaxir.com/2025/11/nano-banana-prompts/"
-fetched_at: 2026-04-28T07:02:41.921855+00:00
+fetched_at: 2026-04-29T07:02:02.021270+00:00
 source: "minimaxir.com"
 tags: [blog, raw]
 ---

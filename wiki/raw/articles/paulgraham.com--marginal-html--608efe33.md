@@ -1,7 +1,7 @@
 ---
 title: "The Power of the Marginal"
 url: "http://www.paulgraham.com/marginal.html"
-fetched_at: 2026-04-28T07:02:26.937301+00:00
+fetched_at: 2026-04-29T07:01:46.633069+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

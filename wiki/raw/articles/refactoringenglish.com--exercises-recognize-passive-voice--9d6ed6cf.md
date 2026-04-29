@@ -1,7 +1,7 @@
 ---
 title: "Can You Spot the Passive Voice?"
 url: "https://refactoringenglish.com/exercises/recognize-passive-voice/"
-fetched_at: 2026-04-28T07:02:02.660922+00:00
+fetched_at: 2026-04-29T07:01:23.047459+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
 ---

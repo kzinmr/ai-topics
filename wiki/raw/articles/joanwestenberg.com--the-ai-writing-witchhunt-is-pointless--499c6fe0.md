@@ -1,7 +1,7 @@
 ---
 title: "The AI writing witchhunt is pointless."
 url: "https://www.joanwestenberg.com/the-ai-writing-witchhunt-is-pointless/"
-fetched_at: 2026-04-28T07:02:43.111334+00:00
+fetched_at: 2026-04-29T07:02:03.412616+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Giving LLMs a personality is just good engineering"
 url: "https://seangoedecke.com/giving-llms-a-personality/"
-fetched_at: 2026-04-28T07:01:57.589470+00:00
+fetched_at: 2026-04-29T07:01:17.580887+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

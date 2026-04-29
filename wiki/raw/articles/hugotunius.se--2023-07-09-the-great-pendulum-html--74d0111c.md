@@ -1,7 +1,7 @@
 ---
 title: "The Great Pendulum"
 url: "https://hugotunius.se/2023/07/09/the-great-pendulum.html"
-fetched_at: 2026-04-28T07:02:52.540081+00:00
+fetched_at: 2026-04-29T07:02:13.409573+00:00
 source: "hugotunius.se"
 tags: [blog, raw]
 ---

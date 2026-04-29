@@ -1,7 +1,7 @@
 ---
 title: "Who fixes the zero-days AI finds in abandoned software?"
 url: "https://martinalderson.com/posts/anthropic-found-500-zero-days/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:44.130856+00:00
+fetched_at: 2026-04-29T07:02:04.125573+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

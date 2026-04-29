@@ -3,6 +3,16 @@
 > Chronological record of wiki changes, updates, and additions.
 > See [[log-2026]] for entries before the rotation.
 
+## [2026-04-29] blog-triage ingest | Batch from 20260427T081429Z checkpoint
+
+- **Source:** [The Signal: OpenAI Is Cooking, The Anthropic Sweep, and SpaceX Courts Cursor](https://open.substack.com/pub/thesignal/p/openai-is-cooking-the-anthropic-sweep) — Updated [[openai-workspace-agents]] (GPT-5.5/Codex unification, World ID integration), updated [[openai]] entity (World ID, Codex merge)
+- **Source:** [Xe Iaso: I don't know if I like working at higher levels of abstraction](https://xeiaso.net/blog/2026/ai-abstraction/) — Already covered in [[cognitive-debt]] (enriched with Xe Iaso source)
+- **Source:** [Xe Iaso: Vibe Coding Trip Report](https://xeiaso.net/blog/2026/vibe-coding-sponsor-panel/) — Already covered in [[vibe-coding]]
+- **Source:** [timsh.org: Switching to Claude Code + VSCode inside Docker](https://timsh.org/claude-inside-docker/) — Created [[ai-coding-workflows]] (Docker dev container patterns, security, credential management, Claude Code vs Cursor cost comparison)
+- **Source:** [Simon Willison: Romain Huet quote](https://simonwillison.net/2026/Apr/25/romain-huet/) — Updated [[openai]] entity
+- **Source:** [timsh.org: Why you should self-host your vibecoded app](https://timsh.org/why-you-should-self-host/) — Already covered in [[vibe-coding]]
+- **Index:** Updated total pages (658 → 659)
+
 ## [2026-04-29] Symphony blog article ingestion
 
 - **Source:** [OpenAI Engineering Blog: Open-Source Codex Orchestration — Symphony](https://openai.com/index/open-source-codex-orchestration-symphony/)
@@ -90,3 +100,34 @@ Previous triage agent had JSON parse error — recovered and processed directly.
 - Added: raw/articles/crawl-2026-04-28-kv-cache.md
 - Added: raw/articles/crawl-2026-04-28-process-supervision.md
 - Added: raw/articles/crawl-2026-04-28-capability-based-security.md
+
+## [2026-04-29] newsletter ingest | Batch 2026-04-28/29
+
+Processed triage checkpoint from newsletters dated 2026-04-28 and 2026-04-29.
+
+### New Pages Created:
+- **entities/gpt-5.5.md** — GPT-5.5 model entity (benchmarks, token efficiency, agentic patterns)
+- **entities/poolside.md** — Poolside company entity with Laguna XS.2 and M.1 models (MoE architecture, open-weight release)
+- **concepts/ai-agent-engineering.md** — Platform architecture for agent execution (Anthropic Managed Agents vs OpenAI Symphony)
+
+### Pages Updated:
+- **entities/openai.md** — Microsoft deal "breakup" details, new sources
+- **entities/microsoft.md** — New entity page created (previously didn't exist)
+- **entities/cursor-3.md** — SpaceX/xAI $60B option deal, funding round pause
+- **entities/nvidia.md** — Nemotron 3 Nano Omni release details
+- **concepts/gpt-5.5.md** — Benchmarks (Epoch Capabilities Index: 159, FrontierMath Tier 4), VibeBench, ParseBench
+- **concepts/claude-managed-agents.md** — Public beta launch (April 2026), platform-level orchestration
+- **concepts/harness-engineering.md** — Mistral Workflows public preview, Agentic Literacy section
+- **concepts/serving-llms-vllm.md** — vLLM v0.20.0 TurboQuant 2-bit KV cache, DeepGEMM MoE kernels
+- **index.md** — Added new entries, updated total page counts
+- **log.md** — Appended this entry
+
+### Sources Processed:
+- [OpenAI Breaks Free From Microsoft](https://link.mail.beehiiv.com/v1/c/...) (2026-04-28)
+- [Ben's Bites - Builders](https://substack.com/home/post/p-195538456) (2026-04-28)
+- [AINews - Not Much Happened Today](raw/newsletters/2026-04-29-ainews-not-much-happened-today.md) (2026-04-29)
+
+### Skipped:
+- Couch-to-5K for AI (behavioral/habit content, not technical AI)
+- Substack UI noise (like buttons, comment links, share links)
+

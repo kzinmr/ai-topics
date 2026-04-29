@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-28 | Total pages: 1248 | Full entries: 625 | Stubs: 623
+> Last updated: 2026-04-29 | Total pages: 659 | Full entries: 627 | Stubs: 623
 
-## Entities (266 pages)
+## Entities (329 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -115,6 +115,7 @@
 - [[entities/gm8xx8-com]] — **Handle:** @gm8xx8 (X/Twitter, HuggingFace, GitHub)
 - [[entities/gm8xx8]] — **GitHub:** github.com/gm8xx8
 - [[entities/google-tpu]] — Google's custom ASIC for ML workloads, now split into specialized **TPU 8t** (training) and **TPU 8i** (inference) chips at the 8th generation. Designed for agentic AI, world models, Mixture-of-Exp...
+- [[entities/gpt-5.5]] — OpenAI's April 2026 model release; outperforms Opus 4.7, 40% more token efficient than GPT-5.4
 - [[entities/google]] — **Type** | AI Research & Product Company |
 - [[entities/gpjt]] — Giles Thomas is a software engineer and blogger known for his detailed, hands-on series **"Writing an LLM from scratch"** — a comprehensive, iterative exploration of building and training large lan...
 - [[entities/grad]] — **X/Twitter** | @Grad62304977 |
@@ -190,6 +191,7 @@
 - [[entities/nvidia-dgx-spark]] — Personal AI supercomputer powered by the NVIDIA GB10 Grace Blackwell Superchip. Designed for developers, data scientists, and researchers to prototype, fine-tune, and deploy AI models locally. Offi...
 - [[entities/nvidia-nemoclaw]] — NVIDIA NemoClaw is a secure AI agent development framework designed for running AI agents with enterprise-grade isolation. It bundles **OpenShell** (sandbox runtime), **OpenClaw** (agent framework)...
 - [[entities/nvidia]] — NVIDIA is a semiconductor and AI infrastructure company. In the context of this wiki, NVIDIA is significant for:
+- [[entities/microsoft]] — **Type** | AI Research & Product Company | Cloud infrastructure leader with Azure, GitHub Copilot, and OpenAI partnership renegotiated April 2026.
 - [[entities/oldvcr-blogspot-com]] — **Cameron Kaiser** (blogging as **ClassicHasClass**) is a vintage computing researcher, software engineer, and open-source developer based at concepts/floodgap-systems. He runs the blog **Old Vinta...
 - [[entities/omar-khattab]] — **Position:** Assistant Professor, MIT EECS (TIBCO Founders' Career Development Professor)
 - [[entities/openai-cua]] — OpenAIの**CUA（Computer-Using Agent）**モデルは、GPT-4oのビジョン機能と強化学習を組み合わせて、スクリーンショットを見てGUIを操作するエージェント。2025年1月に「Operator」として公開され、2025年7月にChatGPTエージェントに完全統合された。
@@ -205,6 +207,7 @@
 |- [[entities/philiplaine-com]] — **URL:** https://philiplaine.com
 - [[entities/philipp-schmid]] — **X** | @_philschmid |
 - [[entities/playerzero]] — > TODO: Research company blog, funding history, and technical depth to build L3 page.
+- [[entities/poolside]] — AI code generation startup. Released **Laguna XS.2** (33B/3B MoE, Apache 2.0, single-GPU inference) in April 2026.
 - [[entities/pluralistic-net]] — **Blog** | pluralistic.net |
 - [[entities/pratik-bhavsar]] — **X** | @ptkbhv |
 - [[entities/qwen3-6-plus]] — Alibabaのエージェント指向言語モデル。実世界の自律的ワークフローを対象としている。
@@ -275,7 +278,7 @@
 - [[entities/zach-mueller]] — **X** | @TheZachMueller |
 - [[entities/zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.
 
-## Concepts (328 pages)
+## Concepts (329 pages)
 
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
 - [[concepts/agent-economics]] — The cost structures, token consumption patterns (1000x multiplier), and economic implications of deploying autonomous AI agents at scale across L1-L5 autonomy levels.
@@ -293,6 +296,8 @@
 |- [[concepts/agentic-conflict-resolution]] — As organizations scale from a few AI agents to hundreds, they create a "digital workforce" with competing priorities. **Conflict is an inherent feature of multi-agent systems**, and must be designe...
 - [[concepts/agentic-design-patterns]] — A system-theoretic framework for engineering robust AI agents, deconstructing them into 5 functional subsystems and mapping them to a catalogue of 12 reusable Agentic Design Patterns (ADPs).
 - [[concepts/agentic-engineering]] — Moved to concepts/harness-engineering/agentic-engineering.
+- [[concepts/ai-agent-engineering]] — Platform architecture for agent execution; Anthropic Managed Agents, OpenAI Symphony, agentic literacy
+- [[concepts/ai-coding-workflows]] — Secure AI coding patterns: Docker container isolation, credential management, cost comparison (Claude Code vs Cursor), agent security
 - [[concepts/agentic-manual-testing]] — Moved to concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md
 - [[concepts/agentic-pbt]] — Anthropic + Hypothesis共同研究（NeurIPS 2025 DL4C Workshop）。Claude Codeエージェントが型注釈、docstring、関数名、コメントからコードの不変条件（properties）を自律的に推論し、HypothesisフレームワークでPBTを生成・実行する。
 - [[concepts/agentic-rag]] — Agentic RAG integrates autonomous AI agents into the RAG pipeline, enabling dynamic retrieval, iterative context refinement, and adaptive workflow orchestration. It addresses limitations of traditi...

@@ -1,7 +1,7 @@
 ---
 title: "AI Is Really Weird"
 url: "https://www.wheresyoured.at/ai-is-really-weird/"
-fetched_at: 2026-04-28T07:01:43.361211+00:00
+fetched_at: 2026-04-29T07:01:04.419626+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
 ---

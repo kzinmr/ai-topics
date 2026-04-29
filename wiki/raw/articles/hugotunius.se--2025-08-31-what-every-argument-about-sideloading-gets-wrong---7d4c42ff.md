@@ -1,7 +1,7 @@
 ---
 title: "What Every Argument About Sideloading Gets Wrong"
 url: "https://hugotunius.se/2025/08/31/what-every-argument-about-sideloading-gets-wrong.html"
-fetched_at: 2026-04-28T07:02:52.466642+00:00
+fetched_at: 2026-04-29T07:02:13.372114+00:00
 source: "hugotunius.se"
 tags: [blog, raw]
 ---

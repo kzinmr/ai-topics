@@ -1,7 +1,7 @@
 ---
 title: "Being Popular"
 url: "http://www.paulgraham.com/popular.html"
-fetched_at: 2026-04-28T07:02:34.161314+00:00
+fetched_at: 2026-04-29T07:01:53.720873+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

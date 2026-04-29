@@ -1,7 +1,7 @@
 ---
 title: "A Project of One's Own"
 url: "http://www.paulgraham.com/own.html"
-fetched_at: 2026-04-28T07:02:09.690735+00:00
+fetched_at: 2026-04-29T07:01:29.558309+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

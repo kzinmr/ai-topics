@@ -1,7 +1,7 @@
 ---
 title: "Startups in 13 Sentences"
 url: "http://www.paulgraham.com/13sentences.html"
-fetched_at: 2026-04-28T07:02:21.834147+00:00
+fetched_at: 2026-04-29T07:01:41.576456+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

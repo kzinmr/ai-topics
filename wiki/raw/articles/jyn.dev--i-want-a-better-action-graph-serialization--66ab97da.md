@@ -1,7 +1,7 @@
 ---
 title: "I want a better action graph serialization"
 url: "https://jyn.dev/i-want-a-better-action-graph-serialization/"
-fetched_at: 2026-04-28T07:02:50.467843+00:00
+fetched_at: 2026-04-29T07:02:11.448694+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

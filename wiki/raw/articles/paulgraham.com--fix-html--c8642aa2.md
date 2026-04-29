@@ -1,7 +1,7 @@
 ---
 title: "What Languages Fix"
 url: "http://www.paulgraham.com/fix.html"
-fetched_at: 2026-04-28T07:02:33.041565+00:00
+fetched_at: 2026-04-29T07:01:52.629504+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

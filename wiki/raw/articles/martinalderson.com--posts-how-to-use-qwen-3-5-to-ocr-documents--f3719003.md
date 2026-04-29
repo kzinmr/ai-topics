@@ -1,7 +1,7 @@
 ---
 title: "How to use the Qwen 3.5 LLMs to OCR documents"
 url: "https://martinalderson.com/posts/how-to-use-qwen-3-5-to-ocr-documents/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:44.084974+00:00
+fetched_at: 2026-04-29T07:02:04.034073+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

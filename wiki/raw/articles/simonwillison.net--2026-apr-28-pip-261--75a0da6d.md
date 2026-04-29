@@ -1,7 +1,7 @@
 ---
 title: "What's new in pip 26.1"
 url: "https://simonwillison.net/2026/Apr/28/pip-261/#atom-everything"
-fetched_at: 2026-04-28T07:01:30.522199+00:00
+fetched_at: 2026-04-29T07:00:52.080243+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

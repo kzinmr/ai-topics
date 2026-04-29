@@ -1,7 +1,7 @@
 ---
 title: "Why on-device agentic AI can't keep up"
 url: "https://martinalderson.com/posts/why-on-device-agentic-ai-cant-keep-up/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:44.137451+00:00
+fetched_at: 2026-04-29T07:02:04.109756+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

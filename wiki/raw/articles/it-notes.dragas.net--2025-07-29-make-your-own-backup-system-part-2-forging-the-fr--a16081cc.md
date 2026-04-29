@@ -1,7 +1,7 @@
 ---
 title: "Make Your Own Backup System - Part 2: Forging the FreeBSD Backup Stronghold"
 url: "https://it-notes.dragas.net/2025/07/29/make-your-own-backup-system-part-2-forging-the-freebsd-backup-stronghold/"
-fetched_at: 2026-04-28T07:02:49.920026+00:00
+fetched_at: 2026-04-29T07:02:11.000260+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

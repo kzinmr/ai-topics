@@ -1,7 +1,7 @@
 ---
 title: "Having Kids"
 url: "http://www.paulgraham.com/kids.html"
-fetched_at: 2026-04-28T07:02:12.567101+00:00
+fetched_at: 2026-04-29T07:01:32.306959+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

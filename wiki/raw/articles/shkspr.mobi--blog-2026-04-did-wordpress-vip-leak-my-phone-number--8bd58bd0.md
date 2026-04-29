@@ -1,7 +1,7 @@
 ---
 title: "Did WordPress VIP leak my phone number?"
 url: "https://shkspr.mobi/blog/2026/04/did-wordpress-vip-leak-my-phone-number/"
-fetched_at: 2026-04-28T07:01:48.277504+00:00
+fetched_at: 2026-04-29T07:01:08.850095+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
 ---

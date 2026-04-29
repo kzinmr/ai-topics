@@ -1,7 +1,7 @@
 ---
 title: "Mathematical minimalism"
 url: "https://www.johndcook.com/blog/2026/04/13/the-smallest-math-library/"
-fetched_at: 2026-04-28T07:02:46.925271+00:00
+fetched_at: 2026-04-29T07:02:07.437432+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

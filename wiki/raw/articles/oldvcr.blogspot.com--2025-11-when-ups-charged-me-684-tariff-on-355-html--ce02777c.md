@@ -1,7 +1,7 @@
 ---
 title: "When UPS charged me a $684 tariff on $355 of vintage computer parts"
 url: "https://oldvcr.blogspot.com/2025/11/when-ups-charged-me-684-tariff-on-355.html"
-fetched_at: 2026-04-28T07:02:04.706022+00:00
+fetched_at: 2026-04-29T07:01:24.544948+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

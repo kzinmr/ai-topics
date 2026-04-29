@@ -1,7 +1,7 @@
 ---
 title: "Comparing Filesystem Performance in Virtual Machines"
 url: "https://mitchellh.com/writing/comparing-filesystem-performance-in-virtual-machines"
-fetched_at: 2026-04-28T07:02:41.333630+00:00
+fetched_at: 2026-04-29T07:02:01.437026+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

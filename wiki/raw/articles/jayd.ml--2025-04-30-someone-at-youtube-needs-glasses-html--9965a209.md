@@ -1,7 +1,7 @@
 ---
 title: "Someone At YouTube Needs Glasses"
 url: "https://jayd.ml/2025/04/30/someone-at-youtube-needs-glasses.html"
-fetched_at: 2026-04-28T07:02:52.632563+00:00
+fetched_at: 2026-04-29T07:02:13.533759+00:00
 source: "jayd.ml"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "i'm just having fun"
 url: "https://jyn.dev/i-m-just-having-fun/"
-fetched_at: 2026-04-28T07:02:50.210448+00:00
+fetched_at: 2026-04-29T07:02:11.156800+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

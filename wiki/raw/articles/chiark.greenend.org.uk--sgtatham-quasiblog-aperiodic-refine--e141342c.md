@@ -1,7 +1,7 @@
 ---
 title: "Aperiodic Tilings V: the Refinable Frontier"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-refine/"
-fetched_at: 2026-04-28T07:01:32.963316+00:00
+fetched_at: 2026-04-29T07:00:54.965642+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

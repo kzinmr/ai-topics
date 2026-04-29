@@ -1,7 +1,7 @@
 ---
 title: "Why to Not Not Start a Startup"
 url: "http://www.paulgraham.com/notnot.html"
-fetched_at: 2026-04-28T07:02:25.836892+00:00
+fetched_at: 2026-04-29T07:01:45.580515+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

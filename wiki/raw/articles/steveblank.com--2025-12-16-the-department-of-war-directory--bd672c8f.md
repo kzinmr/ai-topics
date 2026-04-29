@@ -1,7 +1,7 @@
 ---
 title: "The Department of War Directory"
 url: "https://steveblank.com/2025/12/16/the-department-of-war-directory/"
-fetched_at: 2026-04-28T07:01:50.134482+00:00
+fetched_at: 2026-04-29T07:01:10.962788+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

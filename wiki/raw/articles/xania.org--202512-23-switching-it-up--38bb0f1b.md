@@ -1,7 +1,7 @@
 ---
 title: "Switching it up a bit"
 url: "http://xania.org/202512/23-switching-it-up?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-28T07:01:43.951958+00:00
+fetched_at: 2026-04-29T07:01:05.042550+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

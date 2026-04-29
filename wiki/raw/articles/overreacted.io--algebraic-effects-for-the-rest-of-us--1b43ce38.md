@@ -1,7 +1,7 @@
 ---
 title: "Algebraic Effects for the Rest of Us"
 url: "https://overreacted.io/algebraic-effects-for-the-rest-of-us/"
-fetched_at: 2026-04-28T07:02:39.175578+00:00
+fetched_at: 2026-04-29T07:01:58.639348+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Mind the Gap"
 url: "http://www.paulgraham.com/gap.html"
-fetched_at: 2026-04-28T07:02:31.543874+00:00
+fetched_at: 2026-04-29T07:01:51.267306+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Insider amnesia"
 url: "https://seangoedecke.com/insider-amnesia/"
-fetched_at: 2026-04-28T07:01:57.691069+00:00
+fetched_at: 2026-04-29T07:01:18.063209+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

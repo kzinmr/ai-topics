@@ -1,7 +1,7 @@
 ---
 title: "Build your own Dial-up ISP with a Raspberry Pi"
 url: "https://www.jeffgeerling.com/blog/2026/build-your-own-dial-up-isp-with-a-raspberry-pi/"
-fetched_at: 2026-04-28T07:02:52.832483+00:00
+fetched_at: 2026-04-29T07:02:13.700389+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "I truly hate mostpeopleslop"
 url: "https://www.joanwestenberg.com/i-truly-hate-mostpeopleslop/"
-fetched_at: 2026-04-28T07:02:42.892410+00:00
+fetched_at: 2026-04-29T07:02:03.172177+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

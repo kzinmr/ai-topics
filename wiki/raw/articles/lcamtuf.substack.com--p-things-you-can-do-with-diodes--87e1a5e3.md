@@ -1,7 +1,7 @@
 ---
 title: "Things you can do with diodes"
 url: "https://lcamtuf.substack.com/p/things-you-can-do-with-diodes"
-fetched_at: 2026-04-28T07:02:49.096194+00:00
+fetched_at: 2026-04-29T07:02:09.189829+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

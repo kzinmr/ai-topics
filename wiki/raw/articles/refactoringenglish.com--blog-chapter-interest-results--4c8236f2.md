@@ -1,7 +1,7 @@
 ---
 title: "Reader Feedback about my Chapter List"
 url: "https://refactoringenglish.com/blog/chapter-interest-results/"
-fetched_at: 2026-04-28T07:02:02.119011+00:00
+fetched_at: 2026-04-29T07:01:22.277228+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
 ---

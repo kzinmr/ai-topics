@@ -1,7 +1,7 @@
 ---
 title: "Solving the NYTimes Pips puzzle with a constraint solver"
 url: "http://www.righto.com/2025/10/solve-nyt-pips-with-constraints.html"
-fetched_at: 2026-04-28T07:01:53.970713+00:00
+fetched_at: 2026-04-29T07:01:14.884639+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

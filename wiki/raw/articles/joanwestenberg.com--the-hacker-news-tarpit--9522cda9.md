@@ -1,7 +1,7 @@
 ---
 title: "The Hacker News tarpit"
 url: "https://www.joanwestenberg.com/the-hacker-news-tarpit/"
-fetched_at: 2026-04-28T07:02:43.026405+00:00
+fetched_at: 2026-04-29T07:02:03.379275+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

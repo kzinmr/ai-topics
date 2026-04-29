@@ -1,7 +1,7 @@
 ---
 title: "sorry for the rss screwup"
 url: "https://jyn.dev/sorry-for-the-rss-screwup/"
-fetched_at: 2026-04-28T07:02:50.735036+00:00
+fetched_at: 2026-04-29T07:02:11.701657+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

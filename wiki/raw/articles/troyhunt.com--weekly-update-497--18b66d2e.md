@@ -1,7 +1,7 @@
 ---
 title: "Weekly Update 497"
 url: "https://www.troyhunt.com/weekly-update-497/"
-fetched_at: 2026-04-28T07:01:44.667586+00:00
+fetched_at: 2026-04-29T07:01:05.968838+00:00
 source: "troyhunt.com"
 tags: [blog, raw]
 ---

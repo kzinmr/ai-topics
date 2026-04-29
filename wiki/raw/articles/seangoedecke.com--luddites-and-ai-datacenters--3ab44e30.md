@@ -1,7 +1,7 @@
 ---
 title: "Luddites and burning down AI datacenters"
 url: "https://seangoedecke.com/luddites-and-ai-datacenters/"
-fetched_at: 2026-04-28T07:01:57.042067+00:00
+fetched_at: 2026-04-29T07:01:16.826910+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

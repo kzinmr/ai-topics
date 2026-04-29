@@ -1,7 +1,7 @@
 ---
 title: "A Way to Detect Bias"
 url: "http://www.paulgraham.com/bias.html"
-fetched_at: 2026-04-28T07:02:14.219468+00:00
+fetched_at: 2026-04-29T07:01:33.928923+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

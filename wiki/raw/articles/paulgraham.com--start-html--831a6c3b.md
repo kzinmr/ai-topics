@@ -1,7 +1,7 @@
 ---
 title: "How to Start a Startup"
 url: "http://www.paulgraham.com/start.html"
-fetched_at: 2026-04-28T07:02:30.254326+00:00
+fetched_at: 2026-04-29T07:01:49.861801+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

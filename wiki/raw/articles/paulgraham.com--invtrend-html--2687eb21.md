@@ -1,7 +1,7 @@
 ---
 title: "Startup Investing Trends"
 url: "http://www.paulgraham.com/invtrend.html"
-fetched_at: 2026-04-28T07:02:16.363360+00:00
+fetched_at: 2026-04-29T07:01:36.115358+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,12 +1,12 @@
 ---
-title: "Omikron: The Nomad Soul"
+title: "The Digital Antiquarian"
 url: "https://www.filfre.net/2026/01/omikron-the-nomad-soul/"
-fetched_at: 2026-04-28T07:02:46.323202+00:00
+fetched_at: 2026-04-29T07:02:06.490639+00:00
 source: "filfre.net"
 tags: [blog, raw]
 ---
 
-# Omikron: The Nomad Soul
+# The Digital Antiquarian
 
 Source: https://www.filfre.net/2026/01/omikron-the-nomad-soul/
 

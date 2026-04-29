@@ -1,7 +1,7 @@
 ---
 title: "Why It's Safe for Founders to Be Nice"
 url: "http://www.paulgraham.com/safe.html"
-fetched_at: 2026-04-28T07:02:14.397804+00:00
+fetched_at: 2026-04-29T07:01:34.137509+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

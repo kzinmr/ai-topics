@@ -1,7 +1,7 @@
 ---
 title: "Toffoli gates are all you need"
 url: "https://www.johndcook.com/blog/2026/04/06/tofolli-gates/"
-fetched_at: 2026-04-28T07:02:47.439082+00:00
+fetched_at: 2026-04-29T07:02:07.222892+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

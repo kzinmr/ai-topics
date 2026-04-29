@@ -1,7 +1,7 @@
 ---
 title: "Possibly all the ways to get loop-finding in graphs wrong"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/findloop/"
-fetched_at: 2026-04-28T07:01:33.718430+00:00
+fetched_at: 2026-04-29T07:00:55.921420+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

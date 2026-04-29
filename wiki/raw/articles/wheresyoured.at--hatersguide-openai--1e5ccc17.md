@@ -1,7 +1,7 @@
 ---
 title: "Premium: The Hater's Guide to OpenAI"
 url: "https://www.wheresyoured.at/hatersguide-openai/"
-fetched_at: 2026-04-28T07:01:43.502776+00:00
+fetched_at: 2026-04-29T07:01:04.592138+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
 ---

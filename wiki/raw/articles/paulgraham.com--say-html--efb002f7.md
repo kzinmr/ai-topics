@@ -1,7 +1,7 @@
 ---
 title: "What You Can't Say"
 url: "http://www.paulgraham.com/say.html"
-fetched_at: 2026-04-28T07:02:31.802561+00:00
+fetched_at: 2026-04-29T07:01:51.520508+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

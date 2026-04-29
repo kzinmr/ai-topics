@@ -1,7 +1,7 @@
 ---
 title: "Ideas for Startups"
 url: "http://www.paulgraham.com/ideas.html"
-fetched_at: 2026-04-28T07:02:28.699694+00:00
+fetched_at: 2026-04-29T07:01:48.473175+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

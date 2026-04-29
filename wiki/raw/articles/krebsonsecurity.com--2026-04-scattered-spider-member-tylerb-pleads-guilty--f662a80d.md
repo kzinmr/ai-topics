@@ -1,7 +1,7 @@
 ---
 title: "‘Scattered Spider’ Member ‘Tylerb’ Pleads Guilty"
 url: "https://krebsonsecurity.com/2026/04/scattered-spider-member-tylerb-pleads-guilty/"
-fetched_at: 2026-04-28T07:02:45.892707+00:00
+fetched_at: 2026-04-29T07:02:06.048180+00:00
 source: "krebsonsecurity.com"
 tags: [blog, raw]
 ---

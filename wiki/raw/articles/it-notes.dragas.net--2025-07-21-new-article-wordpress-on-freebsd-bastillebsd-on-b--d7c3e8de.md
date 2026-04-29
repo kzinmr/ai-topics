@@ -1,7 +1,7 @@
 ---
 title: "New Article on BSD Cafe Journal: WordPress on FreeBSD with BastilleBSD"
 url: "https://it-notes.dragas.net/2025/07/21/new-article-wordpress-on-freebsd-bastillebsd-on-bsd-cafe-journal/"
-fetched_at: 2026-04-28T07:02:49.817985+00:00
+fetched_at: 2026-04-29T07:02:10.885017+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

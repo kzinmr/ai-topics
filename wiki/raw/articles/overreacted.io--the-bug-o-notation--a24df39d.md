@@ -1,7 +1,7 @@
 ---
 title: "The “Bug-O” Notation"
 url: "https://overreacted.io/the-bug-o-notation/"
-fetched_at: 2026-04-28T07:02:39.819625+00:00
+fetched_at: 2026-04-29T07:01:58.693582+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

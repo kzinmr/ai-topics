@@ -1,7 +1,7 @@
 ---
 title: "The 18 Mistakes That Kill Startups"
 url: "http://www.paulgraham.com/startupmistakes.html"
-fetched_at: 2026-04-28T07:02:26.373750+00:00
+fetched_at: 2026-04-29T07:01:46.014121+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

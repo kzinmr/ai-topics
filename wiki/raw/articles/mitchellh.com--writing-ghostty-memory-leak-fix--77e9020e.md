@@ -1,7 +1,7 @@
 ---
 title: "Finding and Fixing Ghostty's Largest Memory Leak"
 url: "https://mitchellh.com/writing/ghostty-memory-leak-fix"
-fetched_at: 2026-04-28T07:02:40.420976+00:00
+fetched_at: 2026-04-29T07:01:59.341840+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

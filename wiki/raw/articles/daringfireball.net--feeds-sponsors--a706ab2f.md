@@ -1,7 +1,7 @@
 ---
 title: "Weekly Sponsorships"
 url: "https://daringfireball.net/feeds/sponsors/"
-fetched_at: 2026-04-28T07:01:31.098501+00:00
+fetched_at: 2026-04-29T07:00:53.409176+00:00
 source: "daringfireball.net"
 tags: [blog, raw]
 ---

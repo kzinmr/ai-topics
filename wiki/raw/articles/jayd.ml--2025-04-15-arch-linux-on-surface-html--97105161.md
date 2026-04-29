@@ -1,7 +1,7 @@
 ---
 title: "Arch Linux on Surface Book 1"
 url: "https://jayd.ml/2025/04/15/arch-linux-on-surface.html"
-fetched_at: 2026-04-28T07:02:52.662866+00:00
+fetched_at: 2026-04-29T07:02:13.542593+00:00
 source: "jayd.ml"
 tags: [blog, raw]
 ---

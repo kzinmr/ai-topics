@@ -1,7 +1,7 @@
 ---
 title: "My impressions of the MacBook Pro M4 (2025)"
 url: "https://michael.stapelberg.ch/posts/2025-10-31-macbook-pro-m4-impressions/"
-fetched_at: 2026-04-28T07:01:51.465674+00:00
+fetched_at: 2026-04-29T07:01:12.370200+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
 ---

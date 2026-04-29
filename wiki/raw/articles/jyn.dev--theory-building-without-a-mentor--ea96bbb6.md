@@ -1,7 +1,7 @@
 ---
 title: "theory building without a mentor"
 url: "https://jyn.dev/theory-building-without-a-mentor/"
-fetched_at: 2026-04-28T07:02:50.876712+00:00
+fetched_at: 2026-04-29T07:02:11.910705+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "How Art Can Be Good"
 url: "http://www.paulgraham.com/goodart.html"
-fetched_at: 2026-04-28T07:02:26.108221+00:00
+fetched_at: 2026-04-29T07:01:45.981353+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

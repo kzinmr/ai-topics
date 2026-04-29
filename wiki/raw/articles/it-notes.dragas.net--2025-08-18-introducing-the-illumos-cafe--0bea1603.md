@@ -1,7 +1,7 @@
 ---
 title: "Introducing the illumos Cafe: Another Cozy Corner for OS Diversity"
 url: "https://it-notes.dragas.net/2025/08/18/introducing-the-illumos-cafe/"
-fetched_at: 2026-04-28T07:02:49.792887+00:00
+fetched_at: 2026-04-29T07:02:10.872590+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

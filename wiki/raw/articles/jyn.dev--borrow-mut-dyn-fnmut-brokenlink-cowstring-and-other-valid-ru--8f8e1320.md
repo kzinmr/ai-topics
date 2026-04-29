@@ -1,7 +1,7 @@
 ---
 title: "&amp;'borrow mut dyn FnMut(BrokenLink&lt;'input&gt;) -> CowStr&lt;'input&gt; and other valid rust programs"
 url: "https://jyn.dev/borrow-mut-dyn-fnmut-brokenlink-cowstring-and-other-valid-rust-programs/"
-fetched_at: 2026-04-28T07:02:51.770114+00:00
+fetched_at: 2026-04-29T07:02:12.541896+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

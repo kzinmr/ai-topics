@@ -1,7 +1,7 @@
 ---
 title: "Fun with gaming on Linux"
 url: "https://jyn.dev/fun-with-gaming-on-linux/"
-fetched_at: 2026-04-28T07:02:51.774212+00:00
+fetched_at: 2026-04-29T07:02:12.801125+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

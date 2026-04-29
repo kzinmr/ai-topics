@@ -1,7 +1,7 @@
 ---
 title: "A PTP Wall Clock is impractical and a little too precise"
 url: "https://www.jeffgeerling.com/blog/2026/ptp-wall-clock-impractical-too-precise/"
-fetched_at: 2026-04-28T07:02:53.037924+00:00
+fetched_at: 2026-04-29T07:02:13.919165+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
 ---

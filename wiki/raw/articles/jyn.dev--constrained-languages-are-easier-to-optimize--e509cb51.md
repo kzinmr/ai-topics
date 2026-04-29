@@ -1,7 +1,7 @@
 ---
 title: "constrained languages are easier to optimize"
 url: "https://jyn.dev/constrained-languages-are-easier-to-optimize/"
-fetched_at: 2026-04-28T07:02:50.736154+00:00
+fetched_at: 2026-04-29T07:02:11.676629+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

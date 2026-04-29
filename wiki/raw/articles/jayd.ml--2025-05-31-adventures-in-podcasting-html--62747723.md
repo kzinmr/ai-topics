@@ -1,7 +1,7 @@
 ---
 title: "Adventures in Podcasting"
 url: "https://jayd.ml/2025/05/31/adventures-in-podcasting.html"
-fetched_at: 2026-04-28T07:02:52.647793+00:00
+fetched_at: 2026-04-29T07:02:13.572635+00:00
 source: "jayd.ml"
 tags: [blog, raw]
 ---

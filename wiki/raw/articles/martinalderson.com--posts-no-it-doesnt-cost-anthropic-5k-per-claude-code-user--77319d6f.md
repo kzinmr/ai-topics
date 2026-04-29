@@ -1,7 +1,7 @@
 ---
 title: "No, it doesn't cost Anthropic $5k per Claude Code user"
 url: "https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:44.071130+00:00
+fetched_at: 2026-04-29T07:02:04.038712+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

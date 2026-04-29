@@ -1,7 +1,7 @@
 ---
 title: "Jessica Livingston"
 url: "http://www.paulgraham.com/jessica.html"
-fetched_at: 2026-04-28T07:02:13.840292+00:00
+fetched_at: 2026-04-29T07:01:33.706751+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

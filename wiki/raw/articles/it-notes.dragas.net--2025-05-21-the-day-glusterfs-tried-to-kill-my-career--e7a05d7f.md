@@ -1,7 +1,7 @@
 ---
 title: "The Day GlusterFS Tried to Kill My Career"
 url: "https://it-notes.dragas.net/2025/05/21/the_day_glusterfs_tried_to_kill_my_career/"
-fetched_at: 2026-04-28T07:02:49.994314+00:00
+fetched_at: 2026-04-29T07:02:10.929979+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

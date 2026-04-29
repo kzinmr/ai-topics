@@ -1,7 +1,7 @@
 ---
 title: "How to Write Useful Commit Messages"
 url: "https://refactoringenglish.com/chapters/commit-messages/"
-fetched_at: 2026-04-28T07:02:03.099893+00:00
+fetched_at: 2026-04-29T07:01:22.929231+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
 ---

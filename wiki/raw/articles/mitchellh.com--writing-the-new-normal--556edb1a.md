@@ -1,7 +1,7 @@
 ---
 title: "Mitchell Hashimoto"
 url: "https://mitchellh.com/writing/the-new-normal"
-fetched_at: 2026-04-28T07:02:41.497744+00:00
+fetched_at: 2026-04-29T07:02:01.366229+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

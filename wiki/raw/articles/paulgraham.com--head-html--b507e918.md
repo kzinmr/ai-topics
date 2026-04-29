@@ -1,7 +1,7 @@
 ---
 title: "Holding a Program in One's Head"
 url: "http://www.paulgraham.com/head.html"
-fetched_at: 2026-04-28T07:02:24.790830+00:00
+fetched_at: 2026-04-29T07:01:44.509582+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

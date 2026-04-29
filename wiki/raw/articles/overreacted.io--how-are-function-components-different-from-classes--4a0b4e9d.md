@@ -1,7 +1,7 @@
 ---
 title: "How Are Function Components Different from Classes?"
 url: "https://overreacted.io/how-are-function-components-different-from-classes/"
-fetched_at: 2026-04-28T07:02:39.553599+00:00
+fetched_at: 2026-04-29T07:01:58.726692+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "the rust project has a burnout problem"
 url: "https://jyn.dev/the-rust-project-has-a-burnout-problem/"
-fetched_at: 2026-04-28T07:02:51.141567+00:00
+fetched_at: 2026-04-29T07:02:12.082963+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

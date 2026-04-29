@@ -1,7 +1,7 @@
 ---
 title: "Stop Using (only) GitHub Releases"
 url: "https://hugotunius.se/2024/01/20/stop-using-github-releases.html"
-fetched_at: 2026-04-28T07:02:52.510119+00:00
+fetched_at: 2026-04-29T07:02:13.405269+00:00
 source: "hugotunius.se"
 tags: [blog, raw]
 ---

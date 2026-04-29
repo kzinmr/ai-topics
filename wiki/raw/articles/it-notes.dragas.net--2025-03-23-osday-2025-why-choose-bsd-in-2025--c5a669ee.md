@@ -1,7 +1,7 @@
 ---
 title: "OSDay 2025 - Why Choose to Use the BSDs in 2025"
 url: "https://it-notes.dragas.net/2025/03/23/osday-2025-why-choose-bsd-in-2025/"
-fetched_at: 2026-04-28T07:02:50.203673+00:00
+fetched_at: 2026-04-29T07:02:11.281065+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

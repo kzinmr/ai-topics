@@ -1,7 +1,7 @@
 ---
 title: "Does Mythos mean you need to shut down your Open Source repositories?"
 url: "https://shkspr.mobi/blog/2026/04/does-mythos-mean-you-need-to-shut-down-your-open-source-repos/"
-fetched_at: 2026-04-28T07:01:46.766310+00:00
+fetched_at: 2026-04-29T07:01:07.783218+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
 ---

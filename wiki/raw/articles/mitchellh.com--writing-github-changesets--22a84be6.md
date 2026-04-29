@@ -1,7 +1,7 @@
 ---
 title: "Reorient GitHub Pull Requests Around Changesets"
 url: "https://mitchellh.com/writing/github-changesets"
-fetched_at: 2026-04-28T07:02:40.843738+00:00
+fetched_at: 2026-04-29T07:02:00.471974+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

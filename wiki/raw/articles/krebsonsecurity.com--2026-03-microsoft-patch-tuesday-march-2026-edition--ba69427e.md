@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Patch Tuesday, March 2026 Edition"
 url: "https://krebsonsecurity.com/2026/03/microsoft-patch-tuesday-march-2026-edition/"
-fetched_at: 2026-04-28T07:02:46.168939+00:00
+fetched_at: 2026-04-29T07:02:06.321150+00:00
 source: "krebsonsecurity.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Which Design Doc Did a Human Write?"
 url: "https://refactoringenglish.com/blog/ai-vs-human-design-doc/"
-fetched_at: 2026-04-28T07:02:01.830191+00:00
+fetched_at: 2026-04-29T07:01:22.248859+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
 ---

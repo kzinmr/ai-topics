@@ -1,7 +1,7 @@
 ---
 title: "Change Your Name"
 url: "http://www.paulgraham.com/name.html"
-fetched_at: 2026-04-28T07:02:14.404878+00:00
+fetched_at: 2026-04-29T07:01:34.128492+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

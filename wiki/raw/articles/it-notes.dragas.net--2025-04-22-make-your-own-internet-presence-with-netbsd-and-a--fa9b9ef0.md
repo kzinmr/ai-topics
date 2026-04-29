@@ -1,7 +1,7 @@
 ---
 title: "Make Your Own Internet Presence with NetBSD and a 1 euro VPS - Part 1: Your Blog"
 url: "https://it-notes.dragas.net/2025/04/22/make-your-own-internet-presence-with-netbsd-and-a-1-euro-vps-part-1-your-blog/"
-fetched_at: 2026-04-28T07:02:50.161346+00:00
+fetched_at: 2026-04-29T07:02:11.270650+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

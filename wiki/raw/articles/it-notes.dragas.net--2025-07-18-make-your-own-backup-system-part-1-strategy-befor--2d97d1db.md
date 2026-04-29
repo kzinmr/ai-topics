@@ -1,7 +1,7 @@
 ---
 title: "Make Your Own Backup System - Part 1: Strategy Before Scripts"
 url: "https://it-notes.dragas.net/2025/07/18/make-your-own-backup-system-part-1-strategy-before-scripts/"
-fetched_at: 2026-04-28T07:02:49.833609+00:00
+fetched_at: 2026-04-29T07:02:10.914163+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

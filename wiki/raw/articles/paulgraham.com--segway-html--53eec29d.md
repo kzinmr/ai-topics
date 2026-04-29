@@ -1,7 +1,7 @@
 ---
 title: "The Trouble with the Segway"
 url: "http://www.paulgraham.com/segway.html"
-fetched_at: 2026-04-28T07:02:20.562423+00:00
+fetched_at: 2026-04-29T07:01:40.257220+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

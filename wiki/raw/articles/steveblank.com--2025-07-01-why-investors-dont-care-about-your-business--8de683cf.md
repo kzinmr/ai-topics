@@ -1,7 +1,7 @@
 ---
 title: "Why Investors Don’t Care About Your Business"
 url: "https://steveblank.com/2025/07/01/why-investors-dont-care-about-your-business/"
-fetched_at: 2026-04-28T07:01:50.413049+00:00
+fetched_at: 2026-04-29T07:01:11.262664+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

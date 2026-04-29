@@ -1,7 +1,7 @@
 ---
 title: "A quote from Maggie Appleton"
 url: "https://simonwillison.net/2026/Apr/23/maggie-appleton/#atom-everything"
-fetched_at: 2026-04-28T07:01:58.963743+00:00
+fetched_at: 2026-04-29T07:01:19.567246+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

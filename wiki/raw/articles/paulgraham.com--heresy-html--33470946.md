@@ -1,7 +1,7 @@
 ---
 title: "Heresy"
 url: "http://www.paulgraham.com/heresy.html"
-fetched_at: 2026-04-28T07:02:08.747939+00:00
+fetched_at: 2026-04-29T07:01:28.624072+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

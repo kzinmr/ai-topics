@@ -27,6 +27,7 @@ NVIDIA is a semiconductor and AI infrastructure company. In the context of this 
 ## Recent Activity (April 2026)
 - Published Dynamo architecture documentation for agentic inference
 - Tweet about agentic coding bottlenecks received 454 bookmarks
+- **Nemotron 3 Nano Omni** — Released 30B/3A MoE model with 256K context window, 9x faster inference, open-weight availability
 
 ## Related
 

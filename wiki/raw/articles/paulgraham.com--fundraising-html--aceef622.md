@@ -1,7 +1,7 @@
 ---
 title: "A Fundraising Survival Guide"
 url: "http://www.paulgraham.com/fundraising.html"
-fetched_at: 2026-04-28T07:02:22.889877+00:00
+fetched_at: 2026-04-29T07:01:42.660158+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

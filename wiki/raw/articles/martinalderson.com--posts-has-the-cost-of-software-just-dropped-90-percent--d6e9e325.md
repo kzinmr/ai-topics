@@ -1,7 +1,7 @@
 ---
 title: "Has the cost of building software just dropped 90%?"
 url: "https://martinalderson.com/posts/has-the-cost-of-software-just-dropped-90-percent/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:44.288831+00:00
+fetched_at: 2026-04-29T07:02:04.276903+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

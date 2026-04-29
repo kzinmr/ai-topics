@@ -1,7 +1,7 @@
 ---
 title: "The Lesson to Unlearn"
 url: "http://www.paulgraham.com/lesson.html"
-fetched_at: 2026-04-28T07:02:12.766701+00:00
+fetched_at: 2026-04-29T07:01:32.545972+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

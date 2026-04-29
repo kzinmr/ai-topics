@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/the-small-web-is-tricky-to-find/"
-fetched_at: 2026-04-28T07:02:35.606008+00:00
+fetched_at: 2026-04-29T07:01:54.510143+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---

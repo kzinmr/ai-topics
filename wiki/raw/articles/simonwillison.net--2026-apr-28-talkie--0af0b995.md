@@ -1,7 +1,7 @@
 ---
 title: "a 13B vintage language model from 1930"
 url: "https://simonwillison.net/2026/Apr/28/talkie/#atom-everything"
-fetched_at: 2026-04-28T07:01:30.532204+00:00
+fetched_at: 2026-04-29T07:00:52.100865+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---
@@ -27,6 +27,11 @@ talkie-1930-13b-it
 try that out here
 .
 Both models are Apache 2.0 licensed. Since the training data for the base model is entirely out of copyright (the USA copyright cutoff date is currently January 1, 1931), I'm hoping they later decide to release the training data as well.
+Update
+on that:
+Nick Levine on Twitter
+:
+Will publish more on the corpus in the future (and do our best to share the data or at least scripts to reproduce it).
 Their report suggests some fascinating research objectives for this class of model, including:
 How good are these models at predicting the future? "we calculated the surprisingness of short descriptions of historical events to a 13B model trained on pre-1931 text"
 Can these models invent things that are past their knowledge cutoffs? "As Demis Hassabis has asked, could a model trained up to 1911 independently discover General Relativity, as Einstein did in 1915?"

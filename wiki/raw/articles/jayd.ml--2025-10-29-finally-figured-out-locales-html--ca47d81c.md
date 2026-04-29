@@ -1,7 +1,7 @@
 ---
 title: "I Finally Fixed My Locales In Arch Linux (Yes I Am Smart)"
 url: "https://jayd.ml/2025/10/29/finally-figured-out-locales.html"
-fetched_at: 2026-04-28T07:02:52.571867+00:00
+fetched_at: 2026-04-29T07:02:13.461414+00:00
 source: "jayd.ml"
 tags: [blog, raw]
 ---

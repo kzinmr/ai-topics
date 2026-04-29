@@ -1,7 +1,7 @@
 ---
 title: "sftp sandboxing"
 url: "https://jyn.dev/sftp-sandboxing/"
-fetched_at: 2026-04-28T07:02:50.984190+00:00
+fetched_at: 2026-04-29T07:02:11.929927+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

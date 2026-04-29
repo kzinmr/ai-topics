@@ -1,7 +1,7 @@
 ---
 title: "How to Make Wealth"
 url: "http://www.paulgraham.com/wealth.html"
-fetched_at: 2026-04-28T07:02:31.617121+00:00
+fetched_at: 2026-04-29T07:01:51.353355+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "How to Securely Erase an old Hard Drive on macOS Tahoe"
 url: "https://www.jeffgeerling.com/blog/2026/securely-erase-hard-drive-macos-tahoe/"
-fetched_at: 2026-04-28T07:02:53.099944+00:00
+fetched_at: 2026-04-29T07:02:13.813983+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Simdutf Can Now Be Used Without libc++ or libc++abi"
 url: "https://mitchellh.com/writing/simdutf-no-libcxx"
-fetched_at: 2026-04-28T07:02:40.295660+00:00
+fetched_at: 2026-04-29T07:01:59.210253+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

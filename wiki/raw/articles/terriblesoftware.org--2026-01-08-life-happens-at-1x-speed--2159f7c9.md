@@ -1,7 +1,7 @@
 ---
 title: "Life Happens at 1x Speed"
 url: "https://terriblesoftware.org/2026/01/08/life-happens-at-1x-speed/"
-fetched_at: 2026-04-28T07:01:48.087819+00:00
+fetched_at: 2026-04-29T07:01:08.974915+00:00
 source: "terriblesoftware.org"
 tags: [blog, raw]
 ---

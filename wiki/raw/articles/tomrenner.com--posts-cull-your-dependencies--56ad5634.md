@@ -1,7 +1,7 @@
 ---
 title: "Cull your dependencies"
 url: "https://tomrenner.com/posts/cull-your-dependencies/"
-fetched_at: 2026-04-28T07:01:45.312664+00:00
+fetched_at: 2026-04-29T07:01:06.485827+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

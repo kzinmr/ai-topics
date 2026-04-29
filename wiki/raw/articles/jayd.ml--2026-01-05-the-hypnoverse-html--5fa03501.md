@@ -1,7 +1,7 @@
 ---
 title: "MORE ENTICING THAN EVER: THE HYPNOVERSE"
 url: "https://jayd.ml/2026/01/05/the-hypnoverse.html"
-fetched_at: 2026-04-28T07:02:52.430805+00:00
+fetched_at: 2026-04-29T07:02:13.337505+00:00
 source: "jayd.ml"
 tags: [blog, raw]
 ---

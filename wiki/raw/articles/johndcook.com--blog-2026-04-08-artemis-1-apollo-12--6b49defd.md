@@ -1,7 +1,7 @@
 ---
 title: "A Three- and a Four- Body Problem"
 url: "https://www.johndcook.com/blog/2026/04/08/artemis-1-apollo-12/"
-fetched_at: 2026-04-28T07:02:47.241218+00:00
+fetched_at: 2026-04-29T07:02:07.380486+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

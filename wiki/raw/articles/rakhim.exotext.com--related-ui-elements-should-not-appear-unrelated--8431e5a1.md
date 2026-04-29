@@ -1,7 +1,7 @@
 ---
 title: "Related UI elements should not appear unrelated"
 url: "https://rakhim.exotext.com/related-ui-elements-should-not-appear-unrelated"
-fetched_at: 2026-04-28T07:01:59.854404+00:00
+fetched_at: 2026-04-29T07:01:20.257009+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

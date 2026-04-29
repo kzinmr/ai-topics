@@ -1,7 +1,7 @@
 ---
 title: "Why I Love FreeBSD"
 url: "https://it-notes.dragas.net/2026/03/16/why-i-love-freebsd/"
-fetched_at: 2026-04-28T07:02:49.446183+00:00
+fetched_at: 2026-04-29T07:02:10.547822+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

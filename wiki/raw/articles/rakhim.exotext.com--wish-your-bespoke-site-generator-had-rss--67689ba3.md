@@ -1,7 +1,7 @@
 ---
 title: "I wish your bespoke React-Tailwind-etc static site generator had RSS"
 url: "https://rakhim.exotext.com/wish-your-bespoke-site-generator-had-rss"
-fetched_at: 2026-04-28T07:02:00.724076+00:00
+fetched_at: 2026-04-29T07:01:21.194574+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

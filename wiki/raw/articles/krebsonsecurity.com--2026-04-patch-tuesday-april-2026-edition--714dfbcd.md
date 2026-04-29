@@ -1,7 +1,7 @@
 ---
 title: "Patch Tuesday, April 2026 Edition"
 url: "https://krebsonsecurity.com/2026/04/patch-tuesday-april-2026-edition/"
-fetched_at: 2026-04-28T07:02:45.902005+00:00
+fetched_at: 2026-04-29T07:02:06.051667+00:00
 source: "krebsonsecurity.com"
 tags: [blog, raw]
 ---

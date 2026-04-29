@@ -1,7 +1,7 @@
 ---
 title: "technical debt is different from technical risk"
 url: "https://jyn.dev/technical-debt-is-different-from-technical-risk/"
-fetched_at: 2026-04-28T07:02:50.981013+00:00
+fetched_at: 2026-04-29T07:02:11.919573+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

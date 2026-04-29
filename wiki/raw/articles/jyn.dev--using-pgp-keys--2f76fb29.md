@@ -1,7 +1,7 @@
 ---
 title: "Using PGP Keys"
 url: "https://jyn.dev/using-pgp-keys/"
-fetched_at: 2026-04-28T07:02:52.159297+00:00
+fetched_at: 2026-04-29T07:02:13.125087+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Gabriel Knight 3: Blood of the Sacred, Blood of the Damned"
 url: "https://www.filfre.net/2026/02/gabriel-knight-3-blood-of-the-sacred-blood-of-the-damned/"
-fetched_at: 2026-04-28T07:02:46.110535+00:00
+fetched_at: 2026-04-29T07:02:06.281860+00:00
 source: "filfre.net"
 tags: [blog, raw]
 ---

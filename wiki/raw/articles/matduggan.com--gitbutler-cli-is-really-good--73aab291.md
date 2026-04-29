@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/gitbutler-cli-is-really-good/"
-fetched_at: 2026-04-28T07:02:35.937806+00:00
+fetched_at: 2026-04-29T07:01:54.717733+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---

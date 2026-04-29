@@ -1,7 +1,7 @@
 ---
 title: "how i use my terminal"
 url: "https://jyn.dev/how-i-use-my-terminal/"
-fetched_at: 2026-04-28T07:02:50.848228+00:00
+fetched_at: 2026-04-29T07:02:11.853674+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

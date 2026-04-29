@@ -1,7 +1,7 @@
 ---
 title: "how i write blog posts"
 url: "https://jyn.dev/how-i-write-blog-posts/"
-fetched_at: 2026-04-28T07:02:50.829883+00:00
+fetched_at: 2026-04-29T07:02:11.832619+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

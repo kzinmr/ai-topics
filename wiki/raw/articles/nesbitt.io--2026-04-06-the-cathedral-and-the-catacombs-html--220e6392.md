@@ -1,7 +1,7 @@
 ---
 title: "The Cathedral and the Catacombs"
 url: "https://nesbitt.io/2026/04/06/the-cathedral-and-the-catacombs.html"
-fetched_at: 2026-04-28T07:02:41.794416+00:00
+fetched_at: 2026-04-29T07:02:01.904887+00:00
 source: "nesbitt.io"
 tags: [blog, raw]
 ---

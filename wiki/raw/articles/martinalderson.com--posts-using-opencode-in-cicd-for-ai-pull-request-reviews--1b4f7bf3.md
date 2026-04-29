@@ -1,7 +1,7 @@
 ---
 title: "Using OpenCode in CI/CD for AI pull request reviews"
 url: "https://martinalderson.com/posts/using-opencode-in-cicd-for-ai-pull-request-reviews/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:44.118975+00:00
+fetched_at: 2026-04-29T07:02:04.062889+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

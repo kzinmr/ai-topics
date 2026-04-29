@@ -1,7 +1,7 @@
 ---
 title: "Five Questions about Language Design"
 url: "http://www.paulgraham.com/langdes.html"
-fetched_at: 2026-04-28T07:02:33.965348+00:00
+fetched_at: 2026-04-29T07:01:53.699982+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

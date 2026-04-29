@@ -1,7 +1,7 @@
 ---
 title: "wonder"
 url: "https://jyn.dev/wonder/"
-fetched_at: 2026-04-28T07:02:51.146446+00:00
+fetched_at: 2026-04-29T07:02:12.193079+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

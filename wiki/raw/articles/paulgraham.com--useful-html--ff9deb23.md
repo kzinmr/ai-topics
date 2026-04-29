@@ -1,7 +1,7 @@
 ---
 title: "How to Write Usefully"
 url: "http://www.paulgraham.com/useful.html"
-fetched_at: 2026-04-28T07:02:12.015927+00:00
+fetched_at: 2026-04-29T07:01:31.854129+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

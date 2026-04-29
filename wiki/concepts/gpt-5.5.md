@@ -23,18 +23,26 @@ sources:
 | Type | Fully retrained base model (first since GPT-4.5) |
 | Design Target | Multi-step work: planning, tool use, self-checking |
 | Terminal-Bench 2.0 | **82.7%** |
-| Agent Use Case | Can carry tasks through to completion autonomously |
+| Epoch Capabilities Index | **159** (GPT-5.5 Pro) |
+| FrontierMath Tier 4 | **2 problems solved** (GPT-5.5 Pro) |
+| Agentic Use Case | Can carry tasks through to completion autonomously |
 
-## Significance
+## Benchmarks & Performance (Updated Apr 2026)
 
-GPT-5.5 represents a strategic shift for OpenAI toward **agent-optimized base models**. Unlike GPT-4.5 which was a general-purpose language model, GPT-5.5's architecture prioritizes:
+### Terminal-Bench 2.0
+GPT-5.5 scored **82.7%** on Terminal-Bench 2.0, positioning it as one of the top-performing models for agentic coding and terminal-based workflows.
 
-- **Planning and reasoning** — ability to decompose complex tasks into sub-steps
-- **Tool use proficiency** — native capability to invoke and integrate external tools
-- **Self-checking and error recovery** — can verify its own work and correct mistakes
-- **Multi-step task completion** — designed to carry tasks through from start to finish without human intervention
+### GPT-5.5 Pro Benchmarks (Apr 2026)
+- **Epoch Capabilities Index**: **159** — the highest score recorded, significantly outperforming previous generations
+- **FrontierMath Tier 4**: Solved **2 problems** at the highest difficulty tier
+- **Performance vs Opus 4.7**: Surpasses Anthropic's Opus 4.7 in overall capability
+- **Token Efficiency**: **40% more efficient** than GPT-5.2/5.4 on comparable tasks
 
-Its 82.7% score on Terminal-Bench 2.0 positions it as one of the top-performing models for agentic coding and terminal-based workflows.
+### VibeBench
+New subjective evaluation framework using 1,000 software engineers for human-rated quality assessment. Complements traditional benchmarks with practitioner experience data.
+
+### ParseBench
+Document intelligence benchmark for evaluating model capabilities in parsing and understanding complex document structures.
 
 ### Codex Unification
 

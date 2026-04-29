@@ -1,7 +1,7 @@
 ---
 title: "Filters that Fight Back"
 url: "http://www.paulgraham.com/ffb.html"
-fetched_at: 2026-04-28T07:02:31.733792+00:00
+fetched_at: 2026-04-29T07:01:51.397132+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "The Department of War Just Shot the Accountants and Opted for Speed"
 url: "https://steveblank.com/2025/11/11/the-department-of-war-just-shot-the-accountants-and-opted-for-speed/"
-fetched_at: 2026-04-28T07:01:50.150340+00:00
+fetched_at: 2026-04-29T07:01:11.129911+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

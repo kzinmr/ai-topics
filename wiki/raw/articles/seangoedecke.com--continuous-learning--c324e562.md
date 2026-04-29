@@ -1,7 +1,7 @@
 ---
 title: "What's so hard about continuous learning?"
 url: "https://seangoedecke.com/continuous-learning/"
-fetched_at: 2026-04-28T07:01:57.651084+00:00
+fetched_at: 2026-04-29T07:01:18.179124+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

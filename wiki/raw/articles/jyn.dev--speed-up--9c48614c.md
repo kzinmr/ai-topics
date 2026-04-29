@@ -1,7 +1,7 @@
 ---
 title: "Speed Up!"
 url: "https://jyn.dev/speed-up/"
-fetched_at: 2026-04-28T07:02:52.140580+00:00
+fetched_at: 2026-04-29T07:02:13.064874+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Where to See Silicon Valley"
 url: "http://www.paulgraham.com/seesv.html"
-fetched_at: 2026-04-28T07:02:18.743395+00:00
+fetched_at: 2026-04-29T07:01:38.507183+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

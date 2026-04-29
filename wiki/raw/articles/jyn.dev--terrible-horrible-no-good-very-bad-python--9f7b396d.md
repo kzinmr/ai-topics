@@ -1,7 +1,7 @@
 ---
 title: "Terrible Horrible No Good Very Bad Python"
 url: "https://jyn.dev/terrible-horrible-no-good-very-bad-python/"
-fetched_at: 2026-04-28T07:02:51.051027+00:00
+fetched_at: 2026-04-29T07:02:12.205593+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

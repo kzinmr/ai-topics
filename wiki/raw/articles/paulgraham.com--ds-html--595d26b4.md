@@ -1,7 +1,7 @@
 ---
 title: "Do Things that Don't Scale"
 url: "http://www.paulgraham.com/ds.html"
-fetched_at: 2026-04-28T07:02:16.235783+00:00
+fetched_at: 2026-04-29T07:01:36.011559+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Rust in 2021"
 url: "https://jyn.dev/rust-in-2021/"
-fetched_at: 2026-04-28T07:02:51.495582+00:00
+fetched_at: 2026-04-29T07:02:12.591511+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

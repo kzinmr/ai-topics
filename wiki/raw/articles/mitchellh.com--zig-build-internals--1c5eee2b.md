@@ -1,7 +1,7 @@
 ---
 title: "Zig Build System Internals"
 url: "https://mitchellh.com/zig/build-internals"
-fetched_at: 2026-04-28T07:02:41.042960+00:00
+fetched_at: 2026-04-29T07:02:00.881259+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

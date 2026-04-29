@@ -1,7 +1,7 @@
 ---
 title: "Which programming languages are most token-efficient?"
 url: "https://martinalderson.com/posts/which-programming-languages-are-most-token-efficient/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:44.230482+00:00
+fetched_at: 2026-04-29T07:02:04.250933+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

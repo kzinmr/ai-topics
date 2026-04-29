@@ -1,7 +1,7 @@
 ---
 title: "How to Think for Yourself"
 url: "http://www.paulgraham.com/think.html"
-fetched_at: 2026-04-28T07:02:11.654995+00:00
+fetched_at: 2026-04-29T07:01:31.387534+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

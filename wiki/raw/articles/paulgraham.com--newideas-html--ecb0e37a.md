@@ -1,7 +1,7 @@
 ---
 title: "Crazy New Ideas"
 url: "http://www.paulgraham.com/newideas.html"
-fetched_at: 2026-04-28T07:02:09.859468+00:00
+fetched_at: 2026-04-29T07:01:29.722843+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

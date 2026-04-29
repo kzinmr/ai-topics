@@ -1,7 +1,7 @@
 ---
 title: "Golang’s encoding/XML is broken and no one seems to care"
 url: "https://jayd.ml/2025/06/15/encoding-xml-is-broken-and-no-one-cares.html"
-fetched_at: 2026-04-28T07:02:52.612230+00:00
+fetched_at: 2026-04-29T07:02:13.562658+00:00
 source: "jayd.ml"
 tags: [blog, raw]
 ---

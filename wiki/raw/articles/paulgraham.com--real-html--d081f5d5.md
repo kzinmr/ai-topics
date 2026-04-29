@@ -1,7 +1,7 @@
 ---
 title: "The Real Reason to End the Death Penalty"
 url: "http://www.paulgraham.com/real.html"
-fetched_at: 2026-04-28T07:02:10.550919+00:00
+fetched_at: 2026-04-29T07:01:30.315436+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

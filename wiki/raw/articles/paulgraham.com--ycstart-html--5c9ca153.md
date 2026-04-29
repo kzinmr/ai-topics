@@ -1,7 +1,7 @@
 ---
 title: "How Y Combinator Started"
 url: "http://www.paulgraham.com/ycstart.html"
-fetched_at: 2026-04-28T07:02:17.163095+00:00
+fetched_at: 2026-04-29T07:01:36.908106+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

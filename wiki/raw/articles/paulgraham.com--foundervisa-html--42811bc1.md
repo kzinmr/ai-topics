@@ -1,7 +1,7 @@
 ---
 title: "The Founder Visa"
 url: "http://www.paulgraham.com/foundervisa.html"
-fetched_at: 2026-04-28T07:02:20.934520+00:00
+fetched_at: 2026-04-29T07:01:40.789467+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

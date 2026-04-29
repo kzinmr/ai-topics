@@ -1,7 +1,7 @@
 ---
 title: "Old Vintage Computing Research"
 url: "https://oldvcr.blogspot.com/2025/12/stewart-cheifet-has-died.html"
-fetched_at: 2026-04-28T07:02:03.366337+00:00
+fetched_at: 2026-04-29T07:01:24.355816+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

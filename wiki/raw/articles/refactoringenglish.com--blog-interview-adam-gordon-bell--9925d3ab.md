@@ -1,7 +1,7 @@
 ---
 title: "Adam Gordon Bell on Attracting Customers through Blogging"
 url: "https://refactoringenglish.com/blog/interview-adam-gordon-bell/"
-fetched_at: 2026-04-28T07:02:02.100355+00:00
+fetched_at: 2026-04-29T07:01:22.613358+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Blame The Human Leaders"
 url: "https://feed.tedium.co/link/15204/17323348/mcclatchy-journalism-ai-scapegoat"
-fetched_at: 2026-04-28T07:01:40.098454+00:00
+fetched_at: 2026-04-29T07:01:01.729867+00:00
 source: "tedium.co"
 tags: [blog, raw]
 ---

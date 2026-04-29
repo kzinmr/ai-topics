@@ -1,7 +1,7 @@
 ---
 title: "Writing, Briefly"
 url: "http://www.paulgraham.com/writing44.html"
-fetched_at: 2026-04-28T07:02:29.623871+00:00
+fetched_at: 2026-04-29T07:01:49.378432+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

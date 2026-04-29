@@ -1,7 +1,7 @@
 ---
 title: "From ZNC to Soju"
 url: "https://susam.net/from-znc-to-soju.html"
-fetched_at: 2026-04-28T07:01:42.824609+00:00
+fetched_at: 2026-04-29T07:01:04.558356+00:00
 source: "susam.net"
 tags: [blog, raw]
 ---

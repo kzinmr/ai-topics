@@ -1,7 +1,7 @@
 ---
 title: "WHY ARE YOU LIKE THIS"
 url: "https://simonwillison.net/2026/Apr/25/why-are-you-like-this/#atom-everything"
-fetched_at: 2026-04-28T07:01:31.140396+00:00
+fetched_at: 2026-04-29T07:00:53.294736+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

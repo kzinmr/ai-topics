@@ -1,7 +1,7 @@
 ---
 title: "AI And The Ship of Theseus"
 url: "https://lucumr.pocoo.org/2026/3/5/theseus/"
-fetched_at: 2026-04-28T07:02:44.718975+00:00
+fetched_at: 2026-04-29T07:02:04.671119+00:00
 source: "lucumr.pocoo.org"
 tags: [blog, raw]
 ---

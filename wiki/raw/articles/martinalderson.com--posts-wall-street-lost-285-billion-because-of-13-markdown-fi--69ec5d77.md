@@ -1,7 +1,7 @@
 ---
 title: "Wall Street just lost $285 billion because of 13 markdown files"
 url: "https://martinalderson.com/posts/wall-street-lost-285-billion-because-of-13-markdown-files/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:44.257438+00:00
+fetched_at: 2026-04-29T07:02:04.138819+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

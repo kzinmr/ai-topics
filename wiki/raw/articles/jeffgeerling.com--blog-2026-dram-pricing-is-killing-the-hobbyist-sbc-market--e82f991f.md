@@ -1,7 +1,7 @@
 ---
 title: "DRAM pricing is killing the hobbyist SBC market"
 url: "https://www.jeffgeerling.com/blog/2026/dram-pricing-is-killing-the-hobbyist-sbc-market/"
-fetched_at: 2026-04-28T07:02:52.835488+00:00
+fetched_at: 2026-04-29T07:02:13.733332+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "The Secret Life of Circuits"
 url: "https://lcamtuf.substack.com/p/the-secret-life-of-circuits"
-fetched_at: 2026-04-28T07:02:47.983499+00:00
+fetched_at: 2026-04-29T07:02:08.029123+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---
@@ -17,7 +17,7 @@ The Secret Life of Circuits:
 I think it’s an exceptional book. It’s the reference I wish I had earlier in my life: an accessible, in-depth exploration of how circuits really work, from the motion of electrons to the dark art of embedded system programming.
 The book is meant for the inquiring hobbyist, including those who have tried to learn the craft and hit a brick wall. With 420+ pages and 290+ meticulously-crafted color illustrations,
 The Secret Life of Circuits
-focuses on modern problem-solving and emphasizes intuition over abstract formulas.
+focuses on modern problem-solving and emphasizes intuition over cryptic formulas.
 The book is done but is still going through the final stages of production. Sample chapter can be found
 here
 . If you order today from the publisher, you can save 25% and get

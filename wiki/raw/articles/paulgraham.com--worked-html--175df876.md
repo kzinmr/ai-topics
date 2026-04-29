@@ -1,7 +1,7 @@
 ---
 title: "What I Worked On"
 url: "http://www.paulgraham.com/worked.html"
-fetched_at: 2026-04-28T07:02:10.938639+00:00
+fetched_at: 2026-04-29T07:01:30.804647+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

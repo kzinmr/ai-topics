@@ -1,7 +1,7 @@
 ---
 title: "How nonlinearity affects a pendulum"
 url: "https://www.johndcook.com/blog/2026/04/24/nonlinear-pendulum/"
-fetched_at: 2026-04-28T07:02:46.410319+00:00
+fetched_at: 2026-04-29T07:02:06.374646+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

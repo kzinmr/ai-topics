@@ -1,7 +1,7 @@
 ---
 title: "an engineer's perspective on hiring"
 url: "https://jyn.dev/an-engineers-perspective-on-hiring/"
-fetched_at: 2026-04-28T07:02:50.585640+00:00
+fetched_at: 2026-04-29T07:02:11.658904+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

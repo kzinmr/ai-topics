@@ -1,7 +1,7 @@
 ---
 title: "My ramblings are available over gopher"
 url: "https://maurycyz.com/misc/gopher/"
-fetched_at: 2026-04-28T07:02:36.860384+00:00
+fetched_at: 2026-04-29T07:01:55.868621+00:00
 source: "maurycyz.com"
 tags: [blog, raw]
 ---

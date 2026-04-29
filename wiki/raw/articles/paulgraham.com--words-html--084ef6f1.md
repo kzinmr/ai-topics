@@ -1,7 +1,7 @@
 ---
 title: "Putting Ideas into Words"
 url: "http://www.paulgraham.com/words.html"
-fetched_at: 2026-04-28T07:02:09.660401+00:00
+fetched_at: 2026-04-29T07:01:29.402489+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

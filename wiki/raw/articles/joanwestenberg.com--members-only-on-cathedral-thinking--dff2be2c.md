@@ -1,7 +1,7 @@
 ---
 title: "Members Only: On Cathedral thinking"
 url: "https://www.joanwestenberg.com/members-only-on-cathedral-thinking/"
-fetched_at: 2026-04-28T07:02:43.170845+00:00
+fetched_at: 2026-04-29T07:02:03.607000+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Up - A scientist’s guide to the magic above us by Dr Lucy Rogers - Terence Eden’s Blog"
 url: "https://shkspr.mobi/blog/2026/04/book-review-up-a-scientists-guide-to-the-magic-above-us-by-dr-lucy-rogers/"
-fetched_at: 2026-04-28T07:01:46.769364+00:00
+fetched_at: 2026-04-29T07:01:07.786177+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
 ---

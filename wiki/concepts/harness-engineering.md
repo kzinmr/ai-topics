@@ -123,14 +123,36 @@ Transformerは有限のtoken列しか扱えないが、エージェントの知�
 
 | Harness | Maker | Key Feature | Open? |
 |---|---|---|---|
-| [[entities/letta]] (Letta Code) | Letta AI | Model-agnostic, persistent memory, computer use, subagents | ✓ |
+| [[entities/letta]] (Letta CODE) | Letta AI | Model-agnostic, persistent memory, computer use, subagents | ✓ |
 | agent-sdk | Browser Use | Minimal agent architecture (Bitter Lesson approach) | ✓ |
 | Symphony | OpenAI | Issue-Tracker-Driven Orchestration | ✗ |
 | Claude Code + Agent SDK | Anthropic | Claude integration | ✗ |
 | Gemini for Computer Use | Google | Gemini-native | ✗ |
 | Copilot Studio | Microsoft | Copilot-native | ✗ |
+| **Mistral Workflows** | Mistral AI | Public preview, enterprise orchestration with durability & monitoring | ✓ (preview) |
 
-> All closed foundation labs are moving toward agent harnesses (2026-03). Letta Code fills the gap as the only open, model-agnostic harness.
+> All closed foundation labs are moving toward agent harnesses (2026-03). Letta CODE fills the gap as the only open, model-agnostic harness.
+
+## Mistral Workflows (Apr 2026)
+
+Mistral AI launched **Workflows** in public preview, targeting enterprise-grade agent orchestration:
+- **Durability & Monitoring**: Built-in workflow state persistence and execution monitoring
+- **Enterprise Focus**: Designed for production AI orchestration with reliability requirements
+- **Local-First AI**: Part of a broader trend toward offline-capable AI agents, with over 300,000 HuggingFace users running local models
+- **Complements Open-Source Ecosystem**: Aligns with vLLM infrastructure for efficient inference
+
+This represents the **local-first AI movement** gaining enterprise traction — users want agent orchestration that doesn't depend entirely on cloud APIs. Compare with [[concepts/harness-engineering]] patterns and [[concepts/serving-llms-vllm]] infrastructure.
+
+## Agentic Literacy & AI-Native Teams (Apr 2026)
+
+Andrew Ng observed that successful AI-native teams require **agentic literacy** — the ability to understand the "shape" of files, tools, and logic flows that agents interact with. This goes beyond prompt engineering to understanding:
+- How agents structure and navigate information
+- Tool interaction patterns
+- Workflow orchestration concepts
+
+Chris Paik introduced the concept of "オーテュー" (autonomy) — measuring how independently an AI system can operate. This frames the discussion around **agentic literacy as a core skill** for engineers working alongside AI agents.
+
+Related: [[concepts/agentic-engineering/cognitive-debt]], [[concepts/agentic-engineering/context-window-management]]
 
 ## Continual Learning for AI Agents
 

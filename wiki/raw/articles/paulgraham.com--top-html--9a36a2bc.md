@@ -1,7 +1,7 @@
 ---
 title: "The Top Idea in Your Mind"
 url: "http://www.paulgraham.com/top.html"
-fetched_at: 2026-04-28T07:02:19.288811+00:00
+fetched_at: 2026-04-29T07:01:39.107772+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "I'll Rust With You: the song"
 url: "https://jyn.dev/i-ll-rust-with-you-the-song/"
-fetched_at: 2026-04-28T07:02:51.364456+00:00
+fetched_at: 2026-04-29T07:02:12.421354+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "What Business Can Learn from Open Source"
 url: "http://www.paulgraham.com/opensource.html"
-fetched_at: 2026-04-28T07:02:29.140702+00:00
+fetched_at: 2026-04-29T07:01:48.733069+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

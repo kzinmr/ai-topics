@@ -1,7 +1,7 @@
 ---
 title: "SQLAlchemy 2 In Practice - Chapter 6: A Page Analytics Solution"
 url: "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-6-a-page-analytics-solution"
-fetched_at: 2026-04-28T07:02:06.244361+00:00
+fetched_at: 2026-04-29T07:01:26.109217+00:00
 source: "miguelgrinberg.com"
 tags: [blog, raw]
 ---

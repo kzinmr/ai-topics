@@ -1,7 +1,7 @@
 ---
 title: "Hire Me in Japan"
 url: "https://overreacted.io/hire-me-in-japan/"
-fetched_at: 2026-04-28T07:02:36.356460+00:00
+fetched_at: 2026-04-29T07:01:55.289913+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

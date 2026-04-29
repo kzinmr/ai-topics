@@ -1,7 +1,7 @@
 ---
 title: "“Good Taste” Is Just Experience"
 url: "https://terriblesoftware.org/2026/03/27/good-taste-is-just-experience/"
-fetched_at: 2026-04-28T07:01:47.952305+00:00
+fetched_at: 2026-04-29T07:01:08.906700+00:00
 source: "terriblesoftware.org"
 tags: [blog, raw]
 ---

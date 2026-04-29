@@ -1,7 +1,7 @@
 ---
 title: "An Analysis of Privacy on the App Store"
 url: "https://hugotunius.se/2021/01/03/an-analysis-of-privacy-on-the-app-store.html"
-fetched_at: 2026-04-28T07:02:52.689660+00:00
+fetched_at: 2026-04-29T07:02:13.522771+00:00
 source: "hugotunius.se"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Growth of AI Through a Cloud Lens"
 url: "https://mitchellh.com/writing/ai-through-a-cloud-lens"
-fetched_at: 2026-04-28T07:02:41.204492+00:00
+fetched_at: 2026-04-29T07:02:01.077082+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

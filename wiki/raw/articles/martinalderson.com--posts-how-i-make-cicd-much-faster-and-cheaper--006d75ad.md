@@ -1,7 +1,7 @@
 ---
 title: "How I make CI/CD (much) faster and cheaper"
 url: "https://martinalderson.com/posts/how-i-make-cicd-much-faster-and-cheaper/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:44.472100+00:00
+fetched_at: 2026-04-29T07:02:04.384643+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "The gap between Eastern and Western Easter"
 url: "https://www.johndcook.com/blog/2026/04/12/orthodox-western-easter/"
-fetched_at: 2026-04-28T07:02:47.308835+00:00
+fetched_at: 2026-04-29T07:02:07.229708+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

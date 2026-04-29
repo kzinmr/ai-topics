@@ -1,7 +1,7 @@
 ---
 title: "Welcoming Ghostty Subsystem Maintainers"
 url: "https://mitchellh.com/writing/ghostty-subsystem-maintainers"
-fetched_at: 2026-04-28T07:02:40.445355+00:00
+fetched_at: 2026-04-29T07:01:59.962634+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

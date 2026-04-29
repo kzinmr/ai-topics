@@ -1,7 +1,7 @@
 ---
 title: "Why to Start a Startup in a Bad Economy"
 url: "http://www.paulgraham.com/badeconomy.html"
-fetched_at: 2026-04-28T07:02:22.634788+00:00
+fetched_at: 2026-04-29T07:01:42.341633+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

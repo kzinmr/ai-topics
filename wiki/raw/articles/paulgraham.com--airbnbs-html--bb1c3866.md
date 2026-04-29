@@ -1,7 +1,7 @@
 ---
 title: "The Airbnbs"
 url: "http://www.paulgraham.com/airbnbs.html"
-fetched_at: 2026-04-28T07:02:11.450643+00:00
+fetched_at: 2026-04-29T07:01:31.239662+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

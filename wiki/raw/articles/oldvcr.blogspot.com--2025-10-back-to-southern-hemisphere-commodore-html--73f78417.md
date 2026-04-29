@@ -1,7 +1,7 @@
 ---
 title: "Back to the Southern Hemisphere Commodore 128DCR"
 url: "https://oldvcr.blogspot.com/2025/10/back-to-southern-hemisphere-commodore.html"
-fetched_at: 2026-04-28T07:02:04.421861+00:00
+fetched_at: 2026-04-29T07:01:24.562988+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

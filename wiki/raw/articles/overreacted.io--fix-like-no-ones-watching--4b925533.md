@@ -1,7 +1,7 @@
 ---
 title: "Fix Like No One’s Watching"
 url: "https://overreacted.io/fix-like-no-ones-watching/"
-fetched_at: 2026-04-28T07:02:39.246949+00:00
+fetched_at: 2026-04-29T07:01:58.316297+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

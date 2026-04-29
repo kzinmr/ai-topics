@@ -1,7 +1,7 @@
 ---
 title: "AI Can Write Your Code. It Can’t Do Your Job."
 url: "https://terriblesoftware.org/2025/12/11/ai-can-write-your-code-it-cant-do-your-job/"
-fetched_at: 2026-04-28T07:01:48.163203+00:00
+fetched_at: 2026-04-29T07:01:09.037564+00:00
 source: "terriblesoftware.org"
 tags: [blog, raw]
 ---

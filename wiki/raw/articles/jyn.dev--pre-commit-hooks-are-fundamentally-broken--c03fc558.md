@@ -1,7 +1,7 @@
 ---
 title: "pre-commit hooks are fundamentally broken"
 url: "https://jyn.dev/pre-commit-hooks-are-fundamentally-broken/"
-fetched_at: 2026-04-28T07:02:50.193578+00:00
+fetched_at: 2026-04-29T07:02:11.215929+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

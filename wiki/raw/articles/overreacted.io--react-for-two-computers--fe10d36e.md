@@ -1,7 +1,7 @@
 ---
 title: "React for Two Computers"
 url: "https://overreacted.io/react-for-two-computers/"
-fetched_at: 2026-04-28T07:02:39.485299+00:00
+fetched_at: 2026-04-29T07:01:58.288292+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

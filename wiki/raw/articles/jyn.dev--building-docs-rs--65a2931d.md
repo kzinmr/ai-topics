@@ -1,7 +1,7 @@
 ---
 title: "Building Docs.rs"
 url: "https://jyn.dev/building-docs-rs/"
-fetched_at: 2026-04-28T07:02:51.644386+00:00
+fetched_at: 2026-04-29T07:02:12.575019+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

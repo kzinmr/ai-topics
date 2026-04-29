@@ -1,7 +1,7 @@
 ---
 title: "Can the MacBook Neo replace my M4 Air?"
 url: "https://www.jeffgeerling.com/blog/2026/macbook-neo-replace-m4-air/"
-fetched_at: 2026-04-28T07:02:53.012361+00:00
+fetched_at: 2026-04-29T07:02:13.892122+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
 ---

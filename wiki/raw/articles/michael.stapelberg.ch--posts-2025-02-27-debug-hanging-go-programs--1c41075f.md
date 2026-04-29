@@ -1,7 +1,7 @@
 ---
 title: "Tips to debug hanging Go programs (2025)"
 url: "https://michael.stapelberg.ch/posts/2025-02-27-debug-hanging-go-programs/"
-fetched_at: 2026-04-28T07:01:53.388586+00:00
+fetched_at: 2026-04-29T07:01:14.115253+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
 ---

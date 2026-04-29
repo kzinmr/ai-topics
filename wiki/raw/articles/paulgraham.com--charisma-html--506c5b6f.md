@@ -1,7 +1,7 @@
 ---
 title: "It's Charisma, Stupid"
 url: "http://www.paulgraham.com/charisma.html"
-fetched_at: 2026-04-28T07:02:30.531921+00:00
+fetched_at: 2026-04-29T07:01:50.149696+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

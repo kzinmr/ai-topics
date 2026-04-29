@@ -1,7 +1,7 @@
 ---
 title: "Refurb weekend double header: Alpha Micro AM-1000E and AM-1200"
 url: "https://oldvcr.blogspot.com/2026/03/refurb-weekend-double-header-alpha.html"
-fetched_at: 2026-04-28T07:02:03.683518+00:00
+fetched_at: 2026-04-29T07:01:24.100758+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

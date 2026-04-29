@@ -1,7 +1,7 @@
 ---
 title: "Programming Bottom-Up"
 url: "http://www.paulgraham.com/progbot.html"
-fetched_at: 2026-04-28T07:02:34.708066+00:00
+fetched_at: 2026-04-29T07:01:54.504046+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

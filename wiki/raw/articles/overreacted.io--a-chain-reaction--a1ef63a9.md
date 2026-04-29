@@ -1,7 +1,7 @@
 ---
 title: "A Chain Reaction"
 url: "https://overreacted.io/a-chain-reaction/"
-fetched_at: 2026-04-28T07:02:38.407894+00:00
+fetched_at: 2026-04-29T07:01:57.274938+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

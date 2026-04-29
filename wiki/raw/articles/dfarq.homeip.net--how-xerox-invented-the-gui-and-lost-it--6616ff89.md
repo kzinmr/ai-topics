@@ -1,7 +1,7 @@
 ---
 title: "How Xerox invented the GUI and lost it"
 url: "https://dfarq.homeip.net/how-xerox-invented-the-gui-and-lost-it/?utm_source=rss&utm_medium=rss&utm_campaign=how-xerox-invented-the-gui-and-lost-it"
-fetched_at: 2026-04-28T07:01:31.683546+00:00
+fetched_at: 2026-04-29T07:00:54.017257+00:00
 source: "dfarq.homeip.net"
 tags: [blog, raw]
 ---

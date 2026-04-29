@@ -1,7 +1,7 @@
 ---
 title: "The Venture Capital Squeeze"
 url: "http://www.paulgraham.com/vcsqueeze.html"
-fetched_at: 2026-04-28T07:02:28.516140+00:00
+fetched_at: 2026-04-29T07:01:48.203689+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Getting Forked by Microsoft"
 url: "https://philiplaine.com/posts/getting-forked-by-microsoft/"
-fetched_at: 2026-04-28T07:02:35.807831+00:00
+fetched_at: 2026-04-29T07:01:54.999366+00:00
 source: "philiplaine.com"
 tags: [blog, raw]
 ---

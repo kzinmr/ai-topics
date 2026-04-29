@@ -1,7 +1,7 @@
 ---
 title: "How Does the Development Mode Work?"
 url: "https://overreacted.io/how-does-the-development-mode-work/"
-fetched_at: 2026-04-28T07:02:39.130018+00:00
+fetched_at: 2026-04-29T07:01:58.067365+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

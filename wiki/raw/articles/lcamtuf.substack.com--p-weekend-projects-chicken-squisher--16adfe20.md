@@ -1,7 +1,7 @@
 ---
 title: "Weekend projects: Chicken Squisher 3000"
 url: "https://lcamtuf.substack.com/p/weekend-projects-chicken-squisher"
-fetched_at: 2026-04-28T07:02:49.246684+00:00
+fetched_at: 2026-04-29T07:02:09.194752+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

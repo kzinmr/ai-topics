@@ -1,7 +1,7 @@
 ---
 title: "After the Ladder"
 url: "http://www.paulgraham.com/ladder.html"
-fetched_at: 2026-04-28T07:02:28.799080+00:00
+fetched_at: 2026-04-29T07:01:48.476221+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

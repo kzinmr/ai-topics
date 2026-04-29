@@ -1,7 +1,7 @@
 ---
 title: "Jupyter notebooks as e2e tests"
 url: "https://rakhim.exotext.com/jupyter-notebooks-as-e2e-tests"
-fetched_at: 2026-04-28T07:02:00.862461+00:00
+fetched_at: 2026-04-29T07:01:21.391882+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

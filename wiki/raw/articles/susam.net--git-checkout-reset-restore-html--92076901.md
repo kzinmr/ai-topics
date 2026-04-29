@@ -1,7 +1,7 @@
 ---
 title: "Git Checkout, Reset and Restore"
 url: "https://susam.net/git-checkout-reset-restore.html"
-fetched_at: 2026-04-28T07:01:41.818855+00:00
+fetched_at: 2026-04-29T07:01:03.542105+00:00
 source: "susam.net"
 tags: [blog, raw]
 ---

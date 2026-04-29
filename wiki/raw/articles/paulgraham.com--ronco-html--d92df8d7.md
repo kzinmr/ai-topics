@@ -1,7 +1,7 @@
 ---
 title: "The Ronco Principle"
 url: "http://www.paulgraham.com/ronco.html"
-fetched_at: 2026-04-28T07:02:14.788060+00:00
+fetched_at: 2026-04-29T07:01:34.609832+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

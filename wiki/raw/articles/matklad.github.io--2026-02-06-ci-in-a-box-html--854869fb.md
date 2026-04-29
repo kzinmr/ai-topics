@@ -1,7 +1,7 @@
 ---
 title: "CI In a Box"
 url: "https://matklad.github.io/2026/02/06/ci-in-a-box.html"
-fetched_at: 2026-04-28T07:02:45.135368+00:00
+fetched_at: 2026-04-29T07:02:05.075090+00:00
 source: "matklad.github.io"
 tags: [blog, raw]
 ---

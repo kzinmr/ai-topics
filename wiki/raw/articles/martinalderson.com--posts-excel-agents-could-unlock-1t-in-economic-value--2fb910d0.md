@@ -1,7 +1,7 @@
 ---
 title: "Could Excel agents unlock $1T in economic value?"
 url: "https://martinalderson.com/posts/excel-agents-could-unlock-1T-in-economic-value/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-28T07:02:44.350568+00:00
+fetched_at: 2026-04-29T07:02:04.346386+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

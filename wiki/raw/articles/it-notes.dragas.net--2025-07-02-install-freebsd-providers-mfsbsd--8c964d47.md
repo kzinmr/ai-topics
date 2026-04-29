@@ -1,7 +1,7 @@
 ---
 title: "How to install FreeBSD on providers that don't support it with mfsBSD"
 url: "https://it-notes.dragas.net/2025/07/02/install_freebsd_providers_mfsbsd/"
-fetched_at: 2026-04-28T07:02:49.853828+00:00
+fetched_at: 2026-04-29T07:02:10.891462+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

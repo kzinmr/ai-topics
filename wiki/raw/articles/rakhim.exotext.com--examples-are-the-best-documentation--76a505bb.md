@@ -1,7 +1,7 @@
 ---
 title: "Examples are the best documentation"
 url: "https://rakhim.exotext.com/examples-are-the-best-documentation"
-fetched_at: 2026-04-28T07:02:00.196395+00:00
+fetched_at: 2026-04-29T07:01:20.705100+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

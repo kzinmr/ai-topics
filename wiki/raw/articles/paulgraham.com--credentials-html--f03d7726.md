@@ -1,7 +1,7 @@
 ---
 title: "After Credentials"
 url: "http://www.paulgraham.com/credentials.html"
-fetched_at: 2026-04-28T07:02:22.006907+00:00
+fetched_at: 2026-04-29T07:01:41.856309+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

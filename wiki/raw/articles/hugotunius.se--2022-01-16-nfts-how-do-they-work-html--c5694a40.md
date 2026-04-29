@@ -1,7 +1,7 @@
 ---
 title: "NFTs, How Do They Work?"
 url: "https://hugotunius.se/2022/01/16/nfts-how-do-they-work.html"
-fetched_at: 2026-04-28T07:02:52.543950+00:00
+fetched_at: 2026-04-29T07:02:13.426350+00:00
 source: "hugotunius.se"
 tags: [blog, raw]
 ---

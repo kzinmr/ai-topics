@@ -1,7 +1,7 @@
 ---
 title: "Schlep Blindness"
 url: "http://www.paulgraham.com/schlep.html"
-fetched_at: 2026-04-28T07:02:17.730200+00:00
+fetched_at: 2026-04-29T07:01:37.620609+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

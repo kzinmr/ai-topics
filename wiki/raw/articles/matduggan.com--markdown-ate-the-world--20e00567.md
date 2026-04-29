@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/markdown-ate-the-world/"
-fetched_at: 2026-04-28T07:02:35.188609+00:00
+fetched_at: 2026-04-29T07:01:54.797223+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---

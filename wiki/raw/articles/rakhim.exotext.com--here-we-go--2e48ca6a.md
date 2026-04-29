@@ -1,7 +1,7 @@
 ---
 title: "Here we go | exotext"
 url: "https://rakhim.exotext.com/here-we-go"
-fetched_at: 2026-04-28T07:02:01.065078+00:00
+fetched_at: 2026-04-29T07:01:21.491876+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

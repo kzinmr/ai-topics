@@ -1,7 +1,7 @@
 ---
 title: "Black Swan Farming"
 url: "http://www.paulgraham.com/swan.html"
-fetched_at: 2026-04-28T07:02:16.828385+00:00
+fetched_at: 2026-04-29T07:01:36.740062+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

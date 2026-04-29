@@ -1,7 +1,7 @@
 ---
 title: "Why Isn’t X a Hook?"
 url: "https://overreacted.io/why-isnt-x-a-hook/"
-fetched_at: 2026-04-28T07:02:39.611156+00:00
+fetched_at: 2026-04-29T07:01:58.706647+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Object Oriented Python"
 url: "https://jyn.dev/object-oriented-python/"
-fetched_at: 2026-04-28T07:02:52.192286+00:00
+fetched_at: 2026-04-29T07:02:13.109270+00:00
 source: "jyn.dev"
 tags: [blog, raw]
 ---

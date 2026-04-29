@@ -1,7 +1,7 @@
 ---
 title: "The sound of inevitability"
 url: "https://tomrenner.com/posts/llm-inevitabilism/"
-fetched_at: 2026-04-28T07:01:45.238524+00:00
+fetched_at: 2026-04-29T07:01:06.352421+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

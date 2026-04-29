@@ -1,7 +1,7 @@
 ---
 title: "Windows 2000 Minesweeper recreated in Godot 4.1"
 url: "https://jayd.ml/2026/02/14/godot-minesweeper.html"
-fetched_at: 2026-04-28T07:02:52.428628+00:00
+fetched_at: 2026-04-29T07:02:13.324917+00:00
 source: "jayd.ml"
 tags: [blog, raw]
 ---

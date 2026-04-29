@@ -1,7 +1,7 @@
 ---
 title: "What I've Learned from Hacker News"
 url: "http://www.paulgraham.com/hackernews.html"
-fetched_at: 2026-04-28T07:02:21.954033+00:00
+fetched_at: 2026-04-29T07:01:41.702964+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

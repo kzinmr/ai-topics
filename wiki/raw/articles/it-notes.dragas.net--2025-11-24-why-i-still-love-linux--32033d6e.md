@@ -1,7 +1,7 @@
 ---
 title: "Why I (still) love Linux"
 url: "https://it-notes.dragas.net/2025/11/24/why-i-still-love-linux/"
-fetched_at: 2026-04-28T07:02:49.418753+00:00
+fetched_at: 2026-04-29T07:02:10.539938+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---
