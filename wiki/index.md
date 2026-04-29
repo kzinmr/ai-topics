@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-29 | Total pages: 671 | Full entries: 642 | Stubs: 619
+> Last updated: 2026-04-29 | Total pages: 678 | Full entries: 649 | Stubs: 619
 
 ## Entities (331 pages)
 
@@ -278,6 +278,21 @@
 - [[entities/yann-lecun]] — **フルネーム** | Yann André LeCun |
 - [[entities/zach-mueller]] — **X** | @TheZachMueller |
 - [[entities/zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.
+
+- [[entities/palantir]] — AI-powered decision infrastructure company. The Palantir Ontology contextualizes computation within "lived reality" for enterprise agent workflows.
+- [[entities/mistral-ai]] — French AI company. Released Mistral Workflows (enterprise orchestration layer) and Voxtral TTS in April 2026.
+- [[entities/talkie]] — Open-weight 13B historical LLM trained exclusively on pre-1930 data. By David Duvenaud, Alec Radford, and @status_effects.
+- [[entities/david-duvenaud]] — AI researcher. Co-announced Talkie, a 13B LLM trained exclusively on pre-1930 data.
+- [[entities/periodic-ai]] — AI research company with physical lab focused on RL scaling for frontier LLMs (1T+ parameters).
+- [[entities/mimo]] — Xiaomi's open-source LLM family. MiMo-V2.5-Pro: 1.02T MoE (42B active), 1M context, hybrid attention with learnable sink bias.
+- [[entities/supermemory]] — Company building SMFS (Supermemory Filesystem) — a mountable filesystem designed for AI agents, replacing RAG pipelines.
+- [[entities/palantir]] — AI-powered decision infrastructure company. The Palantir Ontology contextualizes computation within "lived reality" for enterprise agent workflows.
+- [[entities/mistral-ai]] — French AI company. Released Mistral Workflows (enterprise orchestration layer) and Voxtral TTS in April 2026.
+- [[entities/talkie]] — Open-weight 13B historical LLM trained exclusively on pre-1930 data. By David Duvenaud, Alec Radford, and @status_effects.
+- [[entities/david-duvenaud]] — AI researcher. Co-announced Talkie, a 13B LLM trained exclusively on pre-1930 data.
+- [[entities/periodic-ai]] — AI research company with physical lab focused on RL scaling for frontier LLMs (1T+ parameters).
+- [[entities/mimo]] — Xiaomi's open-source LLM family. MiMo-V2.5-Pro: 1.02T MoE (42B active), 1M context, hybrid attention with learnable sink bias.
+- [[entities/supermemory]] — Company building SMFS (Supermemory Filesystem) — a mountable filesystem designed for AI agents, replacing RAG pipelines.
 
 ## Concepts (329 pages)
 
@@ -625,6 +640,8 @@
 - [[entities/solo-founder-stack]] — 2026年のソロfounderがAIを活用して**一人で大企業並みの生産性**を実現するためのツールスタックとアーキテクチャ。「One-Person Unicorn」の具体実装。
 - [[entities/telegram-managed-bots]] — Telegram Bot platformの**Managed Bots**機能は、1つのボットが他のボットを作成・管理・共有できるシステム。2025-2026年に正式導入され、Telegram Bot ecosystemの階層管理・マルチテナント化を可能にした。
 - [[entities/trycua-cua]] — Open-source framework enabling AI agents to control full operating systems within high-performance, lightweight virtual containers. Backed by Y Combinator (X25 batch).
+- [[concepts/smfs]] — Supermemory Filesystem: mountable filesystem for AI agents replacing UNIX operations with agent-aware alternatives. Combines RAG and filesystem paradigms.
+- [[concepts/mesa-filesystem]] — Filesystem designed specifically for enterprise AI agents. Addresses where agent artifacts (contracts, documents) live beyond chat history.
 
 ## Comparisons (11 pages)
 

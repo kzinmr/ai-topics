@@ -37,6 +37,34 @@
 
 # Change Log
 
+## [2026-04-30] X bookmarks ingest | Batch from 2026-04-28/29
+
+### New Entity Pages Created:
+- **entities/palantir.md** — AI-powered decision infrastructure. Palantir Ontology as enterprise agent workflow framework.
+- **entities/mistral-ai.md** — French AI company. Workflows (enterprise orchestration) and Voxtral TTS releases.
+- **entities/talkie.md** — Open-weight 13B historical LLM trained exclusively on pre-1930 data.
+- **entities/david-duvenaud.md** — AI researcher, co-announced Talkie with Alec Radford and @status_effects.
+- **entities/periodic-ai.md** — AI research company with physical lab for RL scaling (1T+ parameters).
+- **entities/mimo.md** — Xiaomi's open-source LLM. MiMo-V2.5-Pro: 1.02T MoE (42B active), 1M context.
+- **entities/supermemory.md** — Company building SMFS, agent-optimized filesystem replacing RAG pipelines.
+
+### New Concept Pages Created:
+- **concepts/smfs.md** — Supermemory Filesystem: mountable FS for AI agents, replaces UNIX ops with agent-aware alternatives.
+- **concepts/mesa-filesystem.md** — Enterprise AI agent filesystem for artifacts beyond chat history.
+
+### Pages Updated:
+- **entities/hermes-agent.md** — Added "15 Features Deep Dive" section from viral X article (2791 bookmarks, 350K impressions)
+- **entities/nvidia.md** — Updated Nemotron 3 Nano Omni details (30B params, 256K context, multimodal)
+- **concepts/harness-engineering.md** — Added iii platform "The Harness Is the Backend" thesis (Worker/Trigger/Function primitives)
+
+### Raw Articles Saved:
+- 14 files in wiki/raw/articles/ (4 X-native articles + 7 tweet metadata + 3 external articles)
+
+### Index Updated:
+- Total pages: 671 → 678 (+7 new)
+- Full entries: 642 → 649
+
+
 > Chronological record of wiki changes, updates, and additions.
 > See [[log-2026]] for entries before the rotation.
 

@@ -1,7 +1,7 @@
 ---
 title: NVIDIA
 created: 2026-04-26
-updated: 2026-04-26
+updated: 2026-04-30
 type: entity
 tags: [company, platform]
 sources:
@@ -27,7 +27,7 @@ NVIDIA is a semiconductor and AI infrastructure company. In the context of this 
 ## Recent Activity (April 2026)
 - Published Dynamo architecture documentation for agentic inference
 - Tweet about agentic coding bottlenecks received 454 bookmarks
-- **Nemotron 3 Nano Omni** — Released 30B/3A MoE model with 256K context window, 9x faster inference, open-weight availability
+- **Nemotron 3 Nano Omni** — Released April 2026. 30B parameters, 256K context length. Open multimodal model with leading accuracy and highest efficiency in the Nemotron family. Tweet received 471 bookmarks, 1149 likes, 393K impressions.
 
 ## Related
 

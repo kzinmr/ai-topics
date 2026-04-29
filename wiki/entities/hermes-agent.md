@@ -13,9 +13,10 @@ tags:
 status: complete
 description: "Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawから移行中のユーザーが増加。"
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-04-30
 sources:
   - "https://x.com/i/article/2045080054917476451"
+  - "raw/articles/2026-04-28_15-hermes-agent-features.md"
   - "https://x.com/i/article/2045935785661349956"
 related:
   - "[[concepts/harness-engineering]]"
@@ -89,6 +90,16 @@ related:
 5. **⚙️ Content-ops pipeline** — ブログ作成、cold emails、YC/X/Reddit lead scraping
 6. **💬 24/7 personal assistant** — Telegram/WhatsApp across channels、Persistent memory
 7. **🛡️ Agent watchdog** — OpenClawのmonitoringにHermesを2時間cronで配置、障害検知→自動復旧（15秒以内）
+
+
+## 15 Features Deep Dive (April 2026)
+The article "15 Hermes Agent features you've never touched" (2791 bookmarks, 913 likes, 350K impressions) covers advanced features including:
+- Web search and content extraction capabilities
+- Cron job automation for recurring tasks
+- Skill-based procedural memory system
+- Entity and concept wiki management
+- Multi-agent orchestration patterns
+- Filesystem and terminal integration
 
 ## Sources
 - [Hermes Agent: What People Are Actually Using It For](https://x.com/i/article/2045935785661349956) (2026-04-26, X article) — usage patterns from Reddit/X/YouTube

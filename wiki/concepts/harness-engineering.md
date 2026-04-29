@@ -13,11 +13,12 @@ tags:
 status: complete
 description: "Agent = Model + Harness. Environment design philosophy for agent-driven development."
 created: 2026-04-09
-updated: 2026-04-24
+updated: 2026-04-30
 sources:
   - "https://openai.com/index/harness-engineering/"
   - "http://latent.space/p/harness-eng"
   - "https://github.com/openai/symphony"
+  - "raw/articles/2026-04-28_the-harness-is-the-backend.md"
 related:
   - "[[concepts/harness-engineering]]"
   - "[[concepts/agentic-engineering]]"
@@ -182,3 +183,32 @@ Anthropic、OpenAI、Perplexity、LangChainが実際に構築しているもの�
 - [Letta's next phase](../raw/articles/2033670953956479223_lettas-next-phase.md) (2026-03-16, X article) — Letta Code model-agnostic harness
 - [Continual learning for AI agents](https://x.com/i/article/2040467997022884194) (2026-04-24, @hwchase17) — 3-layer learning (model/harness/context)
 - [The Anatomy of an Agent Harness](https://x.com/i/article/2041146899319971922) (2026-04-24, @akshay_pachaar) — Anthropic/OpenAI/Perplexity/LangChain harness comparison
+
+## iii Platform: "The Harness Is the Backend"
+
+A significant architectural thesis from the **iii** platform (April 2026): the harness shouldn't be separate from the backend — it *is* the backend.
+
+### Core Argument
+Traditional architectures separate the agent harness (orchestration loop, tools, memory, context management) from "the backend" (queues, state, HTTP routing, SSR, observability). This creates a debugging nightmare: when something breaks, you must correlate logs across systems with no direct trace connecting them.
+
+With N agents and M backend systems, there are N×M stochastic paths to debug. Since agents are intentionally stochastic (not by accident), this compounds rapidly.
+
+### iii's Solution
+Three primitives collapse the architecture:
+1. **Worker** — any process that connects to the engine and registers functions and triggers (agents, services, browsers, IoT devices)
+2. **Trigger** — declarative event bindings (HTTP, cron, queue, state change, stream event)
+3. **Function** — unit of work with a stable identifier
+
+An agent becomes just another worker. Its tools are functions. Its memory is state. Its orchestration is triggers and composition. No special agent infrastructure needed.
+
+### Key Properties
+- **Live discovery**: Workers see all functions across all workers in real-time
+- **Live extensibility**: Add capabilities at runtime without redeploying
+- **Live observability**: OpenTelemetry traces across all workers, languages, and queue handoffs
+- **Recursive workers**: Agents can create sandbox workers at runtime
+
+### Relation to Harness Debate
+When agents are workers, the thin-vs-thick harness debate becomes: how many functions you register and how you compose them. A thin harness is an agent worker with few functions; a thick harness has more functions and explicit approval gates.
+
+> "The harness isn't on top of the backend. The harness is a part of the backend. And the backend is whatever connects to iii."
+
