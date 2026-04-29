@@ -6,7 +6,7 @@ type: concept
 tags: [ai-adoption, content-creation, automation]
 aliases: ["AI Content Engine", "Content Pipeline"]
 sources: []
-status: skeleton
+status: complete
 ---
 
 # Content Engine

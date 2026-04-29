@@ -8,7 +8,7 @@ aliases: ["Managed Bots", "Telegram Bot API 9.6"]
 sources:
   - https://core.telegram.org/bots/api-changelog
   - https://core.telegram.org/bots/features
-status: skeleton
+status: complete
 ---
 
 # Telegram Managed Bots

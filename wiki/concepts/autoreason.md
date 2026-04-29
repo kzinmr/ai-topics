@@ -8,7 +8,7 @@ aliases: ["AutoReason", "Autoreasoning"]
 sources:
   - https://github.com/NousResearch/autoreason
   - https://github.com/karpathy/autoresearch
-status: skeleton
+status: complete
 ---
 
 # Autoreason

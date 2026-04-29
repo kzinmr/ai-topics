@@ -3,7 +3,7 @@ title: "SGLang (Structured Generation Language)"
 type: concept
 created: 2026-04-15
 updated: 2026-04-15
-status: skeleton
+status: complete
 tags: [inference, serving, structured-generation, sglang, lmsys, pytorch]
 aliases: ["sglang-serving", "radix-attention", "xgrammar"]
 related: [[concepts/inference/vllm]], [[concepts/inference/llama-cpp]], [[concepts/structured-outputs]], [[concepts/inference-speed-development]]

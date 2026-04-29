@@ -9,7 +9,7 @@ sources:
   - https://www.linkedin.com/posts/khehy_how-to-get-your-company-ai-pilled-activity-7449429963163795456-uqzJ
   - https://khehy.com/
   - https://www.latourai.com
-status: skeleton
+status: complete
 ---
 
 # Company AI-Pilled

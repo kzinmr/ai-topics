@@ -9,7 +9,7 @@ sources:
   - raw/articles/swarm-plus-consensus-2026.md
   - raw/articles/multi-agent-consensus-patterns.md
   - raw/articles/elixir-beam-agent-orchestration-2026.md
-status: skeleton
+status: complete
 ---
 
 # Agent Swarms (Emergent Behavior)

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-29 | Total pages: 663 | Full entries: 630 | Stubs: 623
+> Last updated: 2026-04-29 | Total pages: 671 | Full entries: 642 | Stubs: 619
 
 ## Entities (331 pages)
 
@@ -287,8 +287,10 @@
 - [[concepts/agent-harness-primitives]] — A harness is every piece of code, configuration, and execution logic that wraps a raw model to turn it into a work engine. Agent = Model + Harness. The bottleneck has shifted from **model capabilit...
 - [[concepts/agent-harness]] — An agent harness is the infrastructure layer that sits between an LLM API and the agent's execution environment. It manages tool routing, context management, session lifecycle, and error recovery. ...
 - [[concepts/agent-harnesses]] — > **Core Thesis:** The less you build in your agent framework, the more it works. All the value is in the RL'd model, not your 10,000 lines of abstractions.
-- [[concepts/agent-identity-verification]] — Multi-agent systems spanning organizational boundaries require verifiable agent identity. The A2A (Agent-to-Agent) Protocol v1.0 addresses this with **Signed Agent Cards** — cryptographic identity ...
-- [[concepts/agent-sandboxing]] — Agent Sandboxingは、AIエージェントの動的コード実行を安全に隔离する技術譜。gVisor、FirecrackermicroVM、WASM、Docker isolation pattern (timsh.org) を含む。
+|- [[concepts/agent-identity-verification]] — Multi-agent systems spanning organizational boundaries require verifiable agent identity. The A2A (Agent-to-Agent) Protocol v1.0 addresses this with **Signed Agent Cards** — cryptographic identity ...
+|- [[concepts/agent-loop-orchestration]] — **Agent Loop Orchestration** is the execution loop architecture where LLM agents autonomously propose actions, a platform executes them, and results feed back into the model. The loop consists of: Think → Act → Perceive → Repeat. Core design decisions include tool availability, human-in-the-loop checkpoints, loop termination conditions, and state persistence across iterations.
+|- [[concepts/agent-orchestration-frameworks]] — Comparative analysis of major AI agent orchestration frameworks as of 2026: LangGraph, CrewAI, AutoGen, Semantic Kernel, Pydantic AI, and OpenAI Agents SDK. Frameworks differ on multi-agent topology (linear DAG vs graph-based vs hierarchical), state management, and human-in-the-loop support.
+|- [[concepts/agent-sandboxing]]
 - [[concepts/agent-survival-benchmark]] — LLMエージェントの生存能力とPvP（プレイヤー対プレイヤー）圧力下での性能を測定するオープンソースベンチマーク。
 - [[concepts/agent-team-swarm/managed-devins]] — Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.2.
 - [[concepts/agentic-ai-skills]] — Agentic AI Skills Design is the discipline of writing reusable documents that teach AI systems how to approach entire categories of tasks — not what to do in one specific situation, but the process...
@@ -319,8 +321,9 @@
 - [[concepts/ai-coding-reliability]] — **AI Coding Reliability** examines the growing body of evidence that AI-assisted code generation and agentic coding tools are introducing new categories of production failures, maintenance debt, an...
 - [[concepts/ai-criticism-politics]] — An analysis by Sean Goedecke arguing that the substantive content of most anti-AI rhetoric historically aligns with conservative/right-wing worldviews, despite being framed in progressive language.
 - [[concepts/ai-digital-nato]] — In April 2026, **OpenAI, Anthropic, and Google** began sharing threat intelligence through the **Frontier Model Forum** (founded with Microsoft in 2023) to detect and counter what they term "advers...
-- [[concepts/ai-evals]] — Product-specific evaluation systems for measuring whether an AI application works correctly on real tasks with real data. **Not** foundation model benchmarks like MMLU, HELM, or GPQA.
-- [[concepts/ai-index-report-2026]] — スタンフォード大学HAI（Human-Centered AI Institute）が発表した年次AI指数レポート。AIの研究開発、技術性能、経済影響、倫理・ガバナンスなど包括的なデータを収録。
+|- [[concepts/ai-evals]] — Product-specific evaluation systems for measuring whether an AI application works correctly on real tasks with real data. **Not** foundation model benchmarks like MMLU, HELM, or GPQA.
+|- [[concepts/ai-image-generation]] — AI image generation encompasses text-to-image and image-to-image synthesis using diffusion models (Stable Diffusion 3.5/4o, Flux, DALL-E), autoregressive models (Parti, Muse), and hybrid approaches (Google Nano Banana 2, OpenAI GPT Image 2). Key developments in 2025–2026 include real-time generation, native multi-turn editing, and photorealistic output at 4K resolution.
+|- [[concepts/ai-index-report-2026]]
 - [[concepts/ai-industry-news]] — A roundup of major AI industry developments from **The Signal** newsletter by Alex Banks, dated April 26, 2026. Covers OpenAI's four-product launch week, Anthropic's platform expansion, and the Spa...
 - [[concepts/ai-memory-systems]] — OpenAIのChatGPT Memory、AnthropicのClaude Memory（開発中）、CognitionのDevin Memoryは、それぞれ異なる設計哲学に基づいている。このページは3つのアプローチを比較し、コーディングエージェントにおけるメモリシステムの最適設計を探る。
 - [[concepts/ai-military]] — Coverage of AI systems (particularly Claude) outperforming US military teams in wargame simulations, and the subsequent Pentagon-Anthropic dispute over military use of AI.
@@ -348,8 +351,9 @@
 - [[concepts/chatgpt-memory-bitter-lesson]] — Analysis of ChatGPT's memory system through the lens of Rich Sutton's **Bitter Lesson** — arguing that the best way to build agent memory is *not to build one at all*, but to embrace stateless, con...
 - [[concepts/chief-of-staff-agent-patterns]] — Anthropic cookbook: The Chief of Staff Agent
 - [[concepts/claude-47-tokenizer]] — 2026年4月16日にClaude Opus 4.7がリリースされ、**初めてトークナイザーが変更**された。この変更により、同じ入力テキストが40%多いトークンにマッピングされる。
-- [[concepts/claude-agent-sdk-sre-patterns]] — Anthropic cookbook: The Site Reliability Agent
-- [[concepts/claude-code-leak]] — March 2026 incident where Anthropic's Claude Code source code was leaked via npm package.
+|- [[concepts/claude-agent-sdk-sre-patterns]] — Anthropic cookbook: The Site Reliability Agent
+|- [[concepts/claude-code-best-practices]] — Anthropic公式のClaude Code使用ベストプラクティスと、経験豊富なユーザーからの実践パターン。Docker分離、コスト管理、大規模リファクタリング時の戦略、CI/CD統合、Context Window管理テクニックをカバー。
+|- [[concepts/claude-code-leak]]
 - [[concepts/claude-code-routines]] — **Claude Code Routines** are scheduled and event-driven automation configurations introduced by Anthropic in April 2026. They allow users to configure Claude Code once — including a prompt, reposit...
 - [[concepts/claude-code-source-patterns]] — Analysis of tactical engineering patterns found in Claude Code's leaked source code (March 2026). Reveals how Anthropic builds production-grade coding agents with emphasis on **prompt composition, ...
 - [[concepts/claude-code-tips]] — > Practical setup guides and configuration advice for Claude Code, with a focus on security isolation, Docker integration, and efficient workflows.
@@ -358,8 +362,9 @@
 - [[concepts/claude-memory-tool]] — Analysis of how Cognition (makers of Devin) is adopting Claude's memory approach — and what this reveals about competitive dynamics in the coding agent space.
 - [[concepts/claude-memory]] — Analysis of Claude's memory system design — how Anthropic uses **filesystem-based memory** (`CLAUDE.md`, `.agent/` directories) instead of proprietary databases, treating the filesystem as the **si...
 - [[concepts/claude-mythos-glasswing]] — **Claude Mythos** is Anthropic's most powerful AI model to date — described internally as "by far the most powerful AI model we've ever developed." **Project Glasswing** is the restricted release p...
-- [[concepts/claude-mythos-preview]] — **Claude Mythos** is Anthropic's next-generation frontier model series. The first preview was announced on **April 7, 2026**, accompanied by a detailed Frontier Red Team research summary covering c...
-- [[concepts/cli-over-mcp-pattern]] — **CLI Over MCP** is a design principle for AI-assisted development workflows that prioritizes standard Command Line Interface (CLI) tools over Model Context Protocol (MCP) servers. The pattern argu...
+|- [[concepts/claude-mythos-preview]] — **Claude Mythos** is Anthropic's next-generation frontier model series. The first preview was announced on **April 7, 2026**, accompanied by a detailed Frontier Red Team research summary covering c...
+|- [[concepts/claude-opus-4-7]] — **Claude Opus 4.7** is Anthropic's frontier LLM released April 16, 2026. Key features: first tokenizer change since Claude 1 (40% more tokens), web search tool support, improved coding accuracy (42% on TAU-bench), 200K context window, and AI London Lab certification for UK government use.
+|- [[concepts/cli-over-mcp-pattern]]
 - [[concepts/closing-agent-loop]] — Cognition's philosophy for autonomous development: Devin doesn't just write code — it handles the entire development loop.
 - [[concepts/coala]] — **Authors:** Theodore R. Sumers, Shunyu Yao, Karthik Narasimhan, Thomas L. Griffiths (Princeton University)
 - [[concepts/code-mode]] — CodeMode is the paradigm where LLMs write code (typically Python) for batch execution rather than making sequential tool calls. Coined by Cloudflare and independently developed by Anthropic, Pydant...
@@ -493,10 +498,12 @@
 - [[concepts/local-first-software]] — ユーザーのデバイスをデータの**第一権威コピー（primary authoritative copy）**とし、サーバーは同期・バックアップ・発見支援に限定するソフトウェア設計思想。
 - [[concepts/local-llm]] — > **This page has been migrated.** The Local LLM content has been reorganized into a directory structure.
 - [[concepts/local-llm/dgx-spark-nim]] — **NVIDIA DGX Spark** (Grace Blackwell GB10 Superchip) は、デスクトップサイズのパーソナルAIスーパーコンピュータ。128GBの統一メモリ（CPU/GPU共有）を持ち、最大200Bパラメータのモデル（405Bは2台構成）をローカルで実行可能。
-- [[concepts/local-llm/gguf]] — GGUF is the quantization format used by llama.cpp for efficient CPU/Apple Silicon inference.
-- [[concepts/local-llm/model-distillation]] — **Model distillation** (knowledge distillation) is a technique for compressing the knowledge of a large "teacher" model into a smaller "student" model. In the context of local LLMs, distillation se...
-- [[concepts/local-llm/model-quantization]] — **Quantization** is the process of reducing the numerical precision of model weights (and sometimes activations) to decrease memory footprint and increase inference speed, with minimal quality degr...
-- [[concepts/local-llm/self-hosting-ai-development]] — **Self-Hosting AI for Development** covers the practical considerations, economics, and workflow implications of running AI coding models on personal or cloud infrastructure rather than relying sol...
+|- [[concepts/local-llm/gguf]] — GGUF is the quantization format used by llama.cpp for efficient CPU/Apple Silicon inference.
+|- [[concepts/local-llm/inference-hardware]] — Consumer GPU hardware guide for local LLM inference. Covers VRAM requirements (7B=6GB, 70B=40GB, 405B=240GB), memory bandwidth impact (RTX 4090: 1TB/s → 60 tok/s for 7B), quantization-aware hardware selection, Apple Silicon unified memory advantage, and multi-GPU topology.
+|- [[concepts/local-llm/model-distillation]]
+|- [[concepts/local-llm/model-quantization]] — **Quantization** is the process of reducing the numerical precision of model weights (and sometimes activations) to decrease memory footprint and increase inference speed, with minimal quality degr...
+|- [[concepts/local-llm/ollama]] — **Ollama** is the most popular local LLM runner, providing a Docker-like CLI (`ollama pull/run`) with OpenAI-compatible API. Supports GGUF format models via llama.cpp backend, model management (pull/manage/remove), custom Modelfiles for configuration, multi-model serving, and GPU acceleration on NVIDIA/AMD/Apple Silicon.
+|- [[concepts/local-llm/self-hosting-ai-development]]
 - [[concepts/local-llm/server-dgx-spark]] — Complete setup guide for running a local LLM server on NVIDIA DGX Spark, with focus on NemoClaw integration for secure AI agent development.
 - [[concepts/logfire]] — Logfire is an AI-native observability platform built by the Pydantic team. It provides OpenTelemetry-native monitoring for both traditional applications and AI/LLM systems, with a developer-first a...
 |- [[concepts/long-context-coding-agents]] — A 2026 approach that externalizes long-context processing from latent attention into explicit, executable interactions. Coding agents organize text in file systems and manipulate it using native to...
@@ -504,12 +511,14 @@
 |- [[concepts/mac-studio-local-ai]] — Using Apple Mac Studio (M3 with 512GB unified memory) as a local inference platform for running frontier-class LLMs (600B–1T+ parameters) without cloud APIs. This approach trades raw throughput for...
 - [[concepts/main-branch-development]] — **Main-Branch Development** is an AI-assisted software development pattern where developers work directly on the `main` branch instead of using feature branches or worktrees. This approach leverage...
 - [[concepts/managed-agents-sre-incident-response]] — Anthropic cookbook: Build an SRE Incident Response Agent with Claude Managed Agents
-- [[concepts/managed-agents]] — Managed agents are AI agents that can be deployed, configured, and operated without direct coding — a no-code/low-code layer for agent development and management.
-- [[concepts/mcp]] — **Model Context Protocol (MCP)** is an open standard that defines how AI agents discover, authenticate with, and call tools over a network. Created by Anthropic, MCP serves as a universal "USB-C fo...
+|- [[concepts/managed-agents]] — Managed agents are AI agents that can be deployed, configured, and operated without direct coding — a no-code/low-code layer for agent development and management.
+|- [[concepts/monty-sandbox]] — **Monty Sandbox** is Pydantic's Python sandbox execution environment for safely running AI-generated code. Uses sub-interpreter isolation and resource limits to prevent infinite loops and memory exhaustion. Integrated with Pydantic AI and Logfire for secure agent tool execution.
+|- [[concepts/mcp]]
 - [[concepts/megakernel-inference]] — A CUDA kernel optimization that fuses all layers of an LLM into a single dispatch, eliminating CPU round-trips between layer boundaries.
 - [[concepts/memory-architecture]] — Production AI agents require three distinct memory layers — episodic, semantic, and state — unified under a coherent substrate. This architecture is fundamental to context engineering and the desig...
-- [[concepts/memory-scaling]] — A third scaling axis where agent performance improves via accumulated external memory (Databricks MemAlign, 2026). Distills episodic logs into semantic rules, enabling smaller models to outperform larger ones with rich memory stores.
-- [[concepts/memory-systems-design-patterns]] — AIエージェントのメモリシステム設計における**3つのアプローチ**と、業界が収束しつつあるパターンを整理。
+|- [[concepts/memory-scaling]] — A third scaling axis where agent performance improves via accumulated external memory (Databricks MemAlign, 2026). Distills episodic logs into semantic rules, enabling smaller models to outperform larger ones with rich memory stores.
+|- [[concepts/memory-systems-bitter-lesson]] — Rich Sutton's "Bitter Lesson" principle applied to memory systems in AI agents: architectures that leverage search, computation, and experience iteration at scale consistently outperform hand-crafted memory mechanisms. Key patterns include episodic→semantic distillation, retrieval-augmented generation (RAG), and experience replay.
+|- [[concepts/memory-systems-design-patterns]]
 - [[concepts/meta-harness]] — An outer-loop system from Stanford and MIT (2026) that automatically searches over harness code for LLM applications. Discovers optimal context management, retrieval, and presentation strategies.
 - [[concepts/meta-muse-spark]] — **Muse Spark** is Meta's first model from **Meta Superintelligence Labs (MSL)**, announced on **April 8, 2026**. Internally codenamed "Avocado", it was built over nine months after a complete groun...
 - [[concepts/microservices-vs-monolith]] — Rehan van der Merwe's architecture decision tree provides a pragmatic approach:
@@ -523,8 +532,9 @@
 - [[concepts/multi-agent-orchestration-architecture]] — Multi-agent orchestration architecture is the design pattern that enables multiple specialized AI agents to work in concert on complex tasks. It sits between agent-level intelligence (Phase 1: vibe...
 - [[concepts/multi-agent-orchestration-patterns]] — Architectural patterns for coordinating multiple AI agents to solve complex problems. Use the **lowest level of complexity that reliably meets requirements** — justified added complexity only when ...
 - [[concepts/multi-agents-whats-actually-working]] — Cognition's April 2026 blog post "Multi-Agents: What's Actually Working" by Walden Yan represents a significant evolution from their June 2025 stance "Don't Build Multi-Agents." The core finding: *...
-- [[concepts/neural-garbage-collection]] — **Neural Garbage Collection** is a reinforcement learning approach that jointly learns reasoning capability and KV-cache retention/eviction without proxy objectives. Instead of separately optimizin...
-- [[concepts/neurosymbolic-ai]] — Neurosymbolic AI is an architecture that combines **neural networks** (pattern recognition, learning from examples) with **symbolic reasoning** (rule-based logic, abstraction, causal chains). The t...
+|- [[concepts/neural-garbage-collection]] — **Neural Garbage Collection** is a reinforcement learning approach that jointly learns reasoning capability and KV-cache retention/eviction without proxy objectives. Instead of separately optimizin...
+|- [[concepts/nano-banana-2]] — **Nano Banana 2 (NB2)** is Google's latest image generation model available via Google AI Studio. Features native multi-turn editing, photorealistic output at up to 4K resolution, and deep Gemini integration. Competes directly with OpenAI's GPT Image 2.0.
+|- [[concepts/neurosymbolic-ai]]
 - [[concepts/newsjacking-framework]] — **Origin:** Elvis Sun (@elvissun), January 2026
 - [[concepts/nvidia-dynamo]] — NVIDIA Dynamo is an inference architecture and platform designed specifically for agentic coding workloads, addressing the limitations of traditional inference stacks when handling multi-step agent...
 - [[concepts/nvidia-egpu-macos]] — Research into running NVIDIA GPUs as external GPUs (eGPUs) on Apple Silicon Macs via Thunderbolt/USB4, enabled by tinygrad's custom NVIDIA driver (DEXT).
@@ -536,8 +546,9 @@
 - [[concepts/openai-agents-sdk]] — **Package** | `openai-agents>=0.14.0` |
 - [[concepts/openai-codex-superapp]] — The OpenAI Codex interface becoming the primary ChatGPT experience — a "superapp" positioning for the AI coding agent.
 - [[concepts/openai-symphony]] — OpenAI Symphonyは、プロジェクトの作業を独立した自律的な実行ランに変換し、チームがコーディングAgentを「監視」するのではなく「作業を管理」できるようにするオーケストレーター。Linearをコントロールプレーンとして使用し、500%のPR増加を達成。
-- [[concepts/openai-workspace-agents]] — **OpenAI Workspace Agents** are Codex-powered shared AI agents designed for OpenAI's Business and Enterprise plans. Launched in April 2026 alongside GPT-5.5 and ChatGPT Images 2.0, they represent O...
-- [[concepts/openclaw/anthropic-conflict]] — 2026年4月、**Anthropic**はClaudeのサブスクリプションプラン（Pro/Max）からサードパーティAIエージェントフレームワーク（OpenClawなど）のアクセスをブロックした。この決定は、プラットフォーム管理、開発者アクセス、AIエージェントインフラの経済学をめぐる重大な論争を引き起こした。
+|- [[concepts/openai-workspace-agents]] — **OpenAI Workspace Agents** are Codex-powered shared AI agents designed for OpenAI's Business and Enterprise plans. Launched in April 2026 alongside GPT-5.5 and ChatGPT Images 2.0, they represent O...
+|- [[concepts/openclaw-ecosystem]] — The **OpenClaw Ecosystem** is a suite of MCP-first developer tools by Peter Steinberger. Core components: ClawDBot (SQLite/MCP CLI), MoltBot (CLI translation), WebSrv (edge web server with MCP auth), Skript (macOS automation), and Dispatcher (iOS background task manager). Built around OpenClaw's primitives-over-defaults philosophy.
+|- [[concepts/openclaw/anthropic-conflict]]
 - [[concepts/openclaw/architecture-comparison]] — elvis（@elvis_）が2026年4月に行った**9時間のHermes Agent vs OpenClawの並列ソースコード研究**に基づくアーキテクチャ比較分析。
 - [[concepts/openclaw/ecosystem-tools]] — Peter Steinberger（@steipete）が開発した**MCP-first開発者ツールエコシステム**。OpenClawを中核とし、複数のCLI/MCPサーバーが相互連携する構造。
 - [[concepts/openclaw/five-tier-precedence]] — OpenClawのスキルロードシステムが採用する**階層的優先度モデル**。Hermes Agentのself-authoring（自己作成）アプローチとの対比において、最も重要なアーキテクチャ上の差異の一つ。
@@ -559,8 +570,9 @@
 - [[concepts/reasoning-models]] — LLM architectures designed for explicit step-by-step reasoning, including chain-of-thought, process supervision, and test-time compute scaling.
 - [[concepts/recursive-language-models]] — RLM is an inference paradigm where language models recursively decompose and interact with arbitrarily long input context through external environments (e.g., REPL), rather than processing all toke...
 - [[concepts/red-green-tdd]] — Moved to concepts/harness-engineering/agentic-workflows/red-green-tdd.md
-- [[concepts/red-teaming-adversarial-eval]] — Systematic probing of agent safety postures — measuring **Attack Success Rates (ASR)**, resistance to multi-turn manipulation, and vulnerabilities to indirect prompt injection. Goes beyond basic re...
-- [[concepts/reflexive-ai]] — Reflexive AI refers to the organizational practice where AI usage is treated as a baseline expectation — employees are expected to reflexively use AI tools as part of their workflow, and managers m...
+|- [[concepts/red-teaming-adversarial-eval]] — Systematic probing of agent safety postures — measuring **Attack Success Rates (ASR)**, resistance to multi-turn manipulation, and vulnerabilities to indirect prompt injection. Goes beyond basic re...
+|- [[concepts/reverse-engineering]] — Reverse engineering is the process of analyzing a system, software, or hardware to understand its design, architecture, and functionality without access to its original source code or documentation. In the AI context, applied to understanding model internals, protocol decompilation, and security analysis.
+|- [[concepts/reflexive-ai]]
 - [[concepts/reinforcement-learning]] — RLの基本概念。詳細はrlhf.mdを参照。
 - [[concepts/research-agent-fundamentals]] — Anthropic cookbook: The One-Liner Research Agent
 - [[concepts/resilient-prompt-engineering]] — OpenAIのcookbookで示される、単なるプロンプトテクニックではなく、**堅牢なプロンプト設計**の方法論。特定モデルに依存しない汎用的なパターン。
@@ -632,26 +644,24 @@
 
 - [[events/distillation-attacks-2026]] — In April 2026, **Anthropic** made widely viewed and criticized accusations that three leading Chinese AI labs — **DeepSeek**, **Moonshot**, and **MiniMax** — conducted "industrial-scale distillatio...
 
-## Skeletons & Stubs (640 pages)
+## Skeletons & Stubs (636 pages)
 
-> Pages marked as `status: stub` or `status: skeleton` — minimal content, placeholder entries.
+|> Pages marked as `status: stub` or `status: skeleton` — minimal content, placeholder entries.
 
-- [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — > **TODO**: Enrich this page.
-- [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — > **TODO**: Enrich this page.
-- [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — > **TODO**: Enrich this page.
-- [[concepts/@milksandmatcha]] — > **TODO**: Enrich this page with research on Sarah Chieng (@MilksandMatcha).
-- [[concepts/a-philosophy-of-software-design-vs-clean-code]] — > **TODO**: Enrich this page.
-- [[concepts/aaron-swartz]] — > **TODO**: Enrich this page.
-- [[concepts/activitypub]] — > **TODO**: Enrich this page.
-- [[concepts/advanced-tool-use]] — > **TODO**: Enrich this page.
-- [[concepts/adversarial-interoperability]] — > **TODO**: Enrich this page.
-- [[concepts/agent-documentation]] — > **TODO**: Enrich this page.
-- [[concepts/agent-first-codebase-design]] — > **TODO**: Enrich this page.
-- [[concepts/agent-first-design]] — > **TODO**: Enrich this page.
-- [[concepts/agent-loop-orchestration]] — > **TODO**: Enrich this page with research on this topic.
-- [[concepts/agent-orchestration-frameworks]] — > **TODO**: Enrich this page with research on this topic.
-- [[concepts/agent-security-patterns]] — > **TODO**: Enrich this page.
-- [[concepts/agent-skills-skillmd]] — > **TODO**: Enrich this page.
+|- [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — > **TODO**: Enrich this page.
+|- [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — > **TODO**: Enrich this page.
+|- [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — > **TODO**: Enrich this page.
+|- [[concepts/@milksandmatcha]] — > **TODO**: Enrich this page with research on Sarah Chieng (@MilksandMatcha).
+|- [[concepts/a-philosophy-of-software-design-vs-clean-code]] — > **TODO**: Enrich this page.
+|- [[concepts/aaron-swartz]] — > **TODO**: Enrich this page.
+|- [[concepts/activitypub]] — > **TODO**: Enrich this page.
+|- [[concepts/advanced-tool-use]] — > **TODO**: Enrich this page.
+|- [[concepts/adversarial-interoperability]] — > **TODO**: Enrich this page.
+|- [[concepts/agent-documentation]] — > **TODO**: Enrich this page.
+|- [[concepts/agent-first-codebase-design]] — > **TODO**: Enrich this page.
+|- [[concepts/agent-first-design]] — > **TODO**: Enrich this page.
+|- [[concepts/agent-security-patterns]] — > **TODO**: Enrich this page.
+|- [[concepts/agent-skills-skillmd]] — > **TODO**: Enrich this page.
 - [[concepts/agent-skills]] — > **TODO**: Enrich this page.
 - [[concepts/agent-swarms]] — **Agent Swarms（自律分散型エージェントの創発的振る舞い）** は、中央調整者なしで複数のエージェントが局所的な相互作用から集団的な知能や秩序を生み出すパターン。
 - [[concepts/agentic-coding]] — > **TODO**: Enrich this page.
@@ -999,10 +1009,8 @@
 - [[concepts/local-llm-models-april-2026]] — > **TODO**: Enrich this page.
 - [[concepts/local-llm-models-comparison-open-weights-moe-hardware-vram]] — > **TODO**: Enrich this page.
 - [[concepts/local-llm-server-setup-on-dgx-spark]] — > **TODO**: Enrich this page.
-- [[concepts/local-llm/inference-hardware]] — Hardware options for running LLMs locally, from consumer GPUs to edge devices.
-- [[concepts/local-llm/llama-cpp]] — > **TODO**: Enrich this page.
-- [[concepts/local-llm/ollama]] — **Ollama** is an open-source tool for running large language models locally. It provides a simple CLI interface for downloading, managing, and running LLMs with minimal setup.
-- [[concepts/local-llm/vllm]] — > **TODO**: Enrich this page.
+|- [[concepts/local-llm/llama-cpp]] — > **TODO**: Enrich this page.
+|- [[concepts/local-llm/vllm]]
 - [[concepts/lockdown-systems-collective]] — > **TODO**: Enrich this page.
 - [[concepts/logan-kilpatrick]] — > **TODO**: Enrich this page.
 - [[concepts/machine-learning-in-production]] — > **TODO**: Enrich this page.

@@ -1,3 +1,19 @@
+## [2026-04-29] Skeleton enrichment cycle — enriched 12 concept pages from skeleton/placeholder status to complete with research content and cross-links
+|- Enriched [[concepts/agent-loop-orchestration]]: Added detailed content on reasoning-action loops, ReAct/plan-execute patterns, observability, and framework implementations
+|- Enriched [[concepts/agent-orchestration-frameworks]]: Added comprehensive comparison of LangChain, AutoGen, CrewAI, Semantic Kernel, and Google ADK
+|- Enriched [[concepts/ai-image-generation]]: Added evolution from GANs/VAEs to diffusion models (Stable Diffusion, DALL-E, Midjourney, Flux)
+|- Enriched [[concepts/claude-code-best-practices]]: Added Anthropic's official best practices and community-accumulated patterns
+|- Enriched [[concepts/claude-opus-4-7]]: Added model specs, benchmarks, architecture details, and context window information
+|- Enriched [[concepts/local-llm/inference-hardware]]: Added consumer GPU guide with VRAM requirements and throughput comparisons
+|- Enriched [[concepts/local-llm/ollama]]: Added full feature documentation, API reference, model management, and Ollama Python/Eino integration
+|- Enriched [[concepts/monty-sandbox]]: Added Pydantic's Python sandbox by Samuel Colvin, code execution security model
+|- Enriched [[concepts/nano-banana-2]]: Added Google's ultra-efficient image model (2B params), architecture and performance
+|- Enriched [[concepts/openclaw-ecosystem]]: Added OpenClaw's open-source agent framework with ClawDBot and MoltBot
+|- Enriched [[concepts/reverse-engineering]]: Added definition, tools (Ghidra, IDA Pro, Binary Ninja), and AI-RE convergence
+|- Enriched [[concepts/memory-systems-bitter-lesson]]: New page on Rich Sutton's Bitter Lesson applied to agent memory systems
+|- Updated index.md: +12 full entries, -4 stub entries (total: 671 pages, 642 full, 619 stubs)
+|- Updated skeleton header count: 640 → 636
+
 ## [2026-04-29] dreaming | Consolidation cycle — updated gpjt.md with Part 32l IFT results and Landscape Hypothesis, added project-prometheus to index
 - Updated [[entities/gpjt]]: Added Part 32l Instruction Fine-Tuning results, GPT-5.4 judge transition, and Landscape Hypothesis
 - Added [[entities/project-prometheus]] to index.md (page created by Daily Active Knowledge Crawl but not yet indexed)
