@@ -37,7 +37,7 @@ topics:
   - concepts/ai-agent-engineering/_index
   notes: 19ページ。最新事例・ベストプラクティスの深掘り
   added: 2026-04-14
-  last_crawled: '2026-04-25'
+  last_crawled: '2026-04-29'
 - slug: harness-engineering
   title: Harness Engineering
   crawl_policy: prerequisites
@@ -104,7 +104,7 @@ topics:
   - concepts/dspy
   notes: 急速に進化中。GEPA, RLM等の最新動向を追跡
   added: 2026-04-14
-  last_crawled: '2026-04-25'
+  last_crawled: '2026-04-29'
 - slug: local-llm
   title: Local LLM Inference
   crawl_policy: deepdive
@@ -133,7 +133,7 @@ topics:
   - concepts/claude-memory
   notes: '前提: episodic vs semantic memory, vector DB architectures等'
   added: 2026-04-14
-  last_crawled: '2026-04-25'
+  last_crawled: '2026-04-29'
 - slug: death-of-browser
   title: Death of Browser
   crawl_policy: deepdive

@@ -2,8 +2,10 @@
 title: "DSPy — Declarative Self-improving Python for LMs"
 tags: [training, concept, ai-agents, llm, prompting, rag, evaluations]
 created: 2026-04-24
-updated: 2026-04-28
+updated: 2026-04-29
 type: concept
+sources:
+  - raw/articles/crawl-2026-04-29-dspy-adoption-gap-khattabs-law.md
 ---
 
 # DSPy: Declarative Self-improving Language Systems
@@ -73,6 +75,28 @@ See [[concepts/dspy-comparisons]] for the full comparison tables.
 | **Phase 2** | DSPy v1 (2023) | Teleprompters, Signature/Module abstractions (ICLR 2024 Spotlight) |
 | **Phase 3** | DSPy v2 (2024) | Assertions, Fine-tuning integration, MIPROv2 |
 | **Phase 4** | DSPy v3 (2025+) | GEPA integration, multi-module GRPO, RLM convergence |
+
+### Khattab's Law: The Production Adoption Gap (2026)
+
+Skylar Payne (March 2026) introduced **"Khattab's Law"** — named after DSPy creator Omar Khattab — which holds that *any sufficiently complex AI system eventually reinvents DSPy's core abstractions on its own*: typed I/O signatures, composable modules, prompt versioning, retry logic, and model-swapping shims. Teams do this ad hoc, buggily, and after significant pain, tracing a canonical seven-stage evolution:
+
+1. Raw API call → 2. Add retry logic → 3. Add prompt templates/versioning → 4. Add Pydantic parsing → 5. Add RAG retrieval → 6. Add eval scaffolding → 7. A fragile hand-rolled framework that poorly recreates DSPy
+
+**Production users** include JetBlue, Databricks, Replit, VMware, and Sephora — reporting faster model swaps, more maintainable pipelines, and less plumbing overhead.
+
+**Download gap:** DSPy ~4.7M monthly downloads vs LangChain ~222M, indicating significant adoption friction despite technical merit.
+
+### Adoption Barriers
+
+Despite the argument for DSPy, adoption faces genuine obstacles:
+
+1. **Labeled data requirement:** DSPy's optimization loop requires labeled training/evaluation datasets — a researcher's discipline that many product teams lack
+2. **Exploratory friction:** The evaluation-first mental model can impede iteration speed for teams figuring out *what* their LLM system should do
+3. **Lighter alternatives:** LiteLLM and Vercel AI SDK handle model abstraction and typed outputs without DSPy's complexity
+4. **Academic roots:** Originally designed for benchmarks with ground-truth labels; production systems often don't have that luxury
+5. **MIPROv2 underutilized:** DSPy's true differentiator — Bayesian prompt optimization — is rarely used even by adopters, suggesting the framework's main value may be its type-safe pipeline abstractions rather than its optimization engine
+
+DSPy is genuinely valuable for teams with stable, well-defined tasks requiring systematic prompt optimization at scale, but its positioning as a universal antidote to LLM engineering pain is undercut by the labeled data requirement and the availability of lighter-weight alternatives for simpler use cases.
 
 ## Application Guidelines
 

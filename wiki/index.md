@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-29 | Total pages: 659 | Full entries: 627 | Stubs: 623
+> Last updated: 2026-04-29 | Total pages: 660 | Full entries: 627 | Stubs: 623
 
 ## Entities (329 pages)
 
@@ -507,6 +507,7 @@
 - [[concepts/mcp]] — **Model Context Protocol (MCP)** is an open standard that defines how AI agents discover, authenticate with, and call tools over a network. Created by Anthropic, MCP serves as a universal "USB-C fo...
 - [[concepts/megakernel-inference]] — A CUDA kernel optimization that fuses all layers of an LLM into a single dispatch, eliminating CPU round-trips between layer boundaries.
 - [[concepts/memory-architecture]] — Production AI agents require three distinct memory layers — episodic, semantic, and state — unified under a coherent substrate. This architecture is fundamental to context engineering and the desig...
+- [[concepts/memory-scaling]] — A third scaling axis where agent performance improves via accumulated external memory (Databricks MemAlign, 2026). Distills episodic logs into semantic rules, enabling smaller models to outperform larger ones with rich memory stores.
 - [[concepts/memory-systems-design-patterns]] — AIエージェントのメモリシステム設計における**3つのアプローチ**と、業界が収束しつつあるパターンを整理。
 - [[concepts/meta-harness]] — An outer-loop system from Stanford and MIT (2026) that automatically searches over harness code for LLM applications. Discovers optimal context management, retrieval, and presentation strategies.
 - [[concepts/meta-muse-spark]] — **Muse Spark** is Meta's first model from **Meta Superintelligence Labs (MSL)**, announced on **April 8, 2026**. Internally codenamed "Avocado", it was built over nine months after a complete groun...

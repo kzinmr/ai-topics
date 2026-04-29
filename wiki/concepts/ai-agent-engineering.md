@@ -6,6 +6,7 @@ type: concept
 tags: [concept, ai-agents, orchestration, architecture, harness-engineering]
 sources:
   - raw/newsletters/2026-04-28-builders.md
+  - raw/articles/crawl-2026-04-29-paul-duvall-agentic-patterns.md
 ---
 
 # AI Agent Engineering
@@ -90,6 +91,45 @@ The April 2026 Cursor safety incident highlighted critical concerns:
 - Transparency requirements for AI-assisted development tools
 
 See [[concepts/harness-engineering]] for the R.E.S.T framework (Reliability, Efficiency, Security, Traceability).
+
+## Engineering Discipline Patterns for AI Agents (March 2026)
+
+Paul Duvall (author of "Continuous Integration") and colleagues have documented how agentic AI **amplifies** — not replaces — core engineering discipline. As AI generates code at higher velocity, traditional manual review shifts to automated validation and agentic guardrails.
+
+### Specification-Driven Development
+
+Vague prompts produce "random results." Structured intent is required:
+
+| Pattern | Description |
+|---------|-------------|
+| **Specification-Driven** | Define behavior and constraints (Role, Context, Constraints) before generation |
+| **Codified Rules** | Embed architectural constraints and standards into the agent's context |
+| **Atomic Decomposition** | Break tasks into small parts for parallel agent execution |
+| **Observable Development** | Use automated traceability and production telemetry in the dev cycle |
+| **Ralph Loops** | Sub-agents iteratively refine solutions until requirements are met |
+
+Source: Paul Duvall's [AI Development Patterns](https://github.com/paulDuvall/ai-development-patterns) repository.
+
+### XP Revival in AI Workflows
+
+Agentic engineering is replicating Extreme Programming (XP) patterns:
+- **Red, Green, Refactor:** Agents follow the TDD cycle naturally — write failing test, make it pass, refactor
+- **Trunk-Based Development:** Frequent small commits become essential when AI changes code
+- **Plan Mode:** Reviewing agent intent before execution prevents "AI horror stories"
+- **Issue-Based Workflows:** Moving from PRs to collaborative design (open an issue, design together, then implement)
+
+### Shift-Left / Shift-Right Feedback Loops
+
+- **Shift-Left:** Provide accurate architectural patterns so agents produce code coherent with existing codebase
+- **Shift-Right:** AI analyzes production telemetry expansively, identifying issues fed back as new requirements or bug fixes
+
+### Evolution of the Engineering Role
+
+- **Team Size:** Movement toward "one pizza teams" as coordination overhead decreases
+- **Identity:** Engineering identity moves "up a level" beyond code — architectural taste and design judgment remain the critical human filter
+- **Validation over Review:** Code is reviewed by automated mechanisms, not necessarily by a human every time
+
+See [[concepts/agentic-engineering]] for the parallel developer-workflow perspective on these patterns.
 
 ## Related Concepts
 - [[concepts/harness-engineering]] — Parent concept: Agent = Model + Harness

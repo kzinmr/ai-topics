@@ -131,3 +131,37 @@ Processed triage checkpoint from newsletters dated 2026-04-28 and 2026-04-29.
 - Couch-to-5K for AI (behavioral/habit content, not technical AI)
 - Substack UI noise (like buttons, comment links, share links)
 
+## [2026-04-29] Active Crawl [deepdive + deepdive + prerequisites] | ai-agent-engineering → Engineering Discipline Patterns / dspy → Khattab's Law / ai-memory-systems → Memory Scaling
+
+**Scope:** Daily active knowledge crawl based on hot-topics.yaml. Selected topics with last_crawled ≥ 3 days:
+- ai-agent-engineering (deepdive, high) — last_crawled 2026-04-25
+- dspy (deepdive, high) — last_crawled 2026-04-25
+- ai-memory-systems (prerequisites, medium) — last_crawled 2026-04-25
+
+### Enriched: concepts/ai-agent-engineering.md (deepdive)
+- **Parent topic:** ai-agent-engineering (deepdive)
+- **Added:** "Engineering Discipline Patterns for AI Agents" section — Paul Duvall's 5 patterns (Specification-Driven, Codified Rules, Atomic Decomposition, Observable Development, Ralph Loops), XP revival in AI workflows (Red/Green/Refactor, trunk-based dev, plan mode), Shift-Left/Shift-Right feedback loops, evolution of engineering role toward "one pizza teams"
+- **Source:** InfoQ / Paul Duvall (March 2026) — raw/articles/crawl-2026-04-29-paul-duvall-agentic-patterns.md
+
+### Enriched: concepts/dspy.md (deepdive)
+- **Parent topic:** dspy (deepdive)
+- **Added:** "Khattab's Law: The Production Adoption Gap (2026)" section — the observation that any complex AI system rebuilds DSPy's abstractions ad hoc; canonical seven-stage evolution; production users (JetBlue, Databricks, Replit); download gap (4.7M vs 222M); adoption barriers (labeled data requirement, exploratory friction, lighter alternatives like LiteLLM, academic roots)
+- **Source:** Agent Wars / Skylar Payne (March 24, 2026) — raw/articles/crawl-2026-04-29-dspy-adoption-gap-khattabs-law.md
+
+### Created: concepts/memory-scaling.md (prerequisites)
+- **Parent topic:** ai-memory-systems (prerequisites policy)
+- **What:** Memory Scaling is a third scaling axis (alongside parametric and inference-time scaling) where agent performance improves via accumulated external memory. Introduced by Databricks AI Research (April 2026). The MemAlign framework distills episodic interactions into semantic rules, enabling smaller models with rich memory stores to outperform larger models.
+- **Why it's a prerequisite:** Understanding why memory systems matter requires understanding the scaling dynamics they unlock — memory scaling explains the ROI of building persistent memory for AI agents.
+- **Source:** Databricks Engineering Blog (April 10, 2026) — raw/articles/crawl-2026-04-29-databricks-memory-scaling.md
+
+### Files affected:
+- Created: concepts/memory-scaling.md
+- Updated: concepts/ai-agent-engineering.md (added Engineering Discipline Patterns section)
+- Updated: concepts/dspy.md (added Khattab's Law section, frontmatter sources)
+- Created: raw/articles/crawl-2026-04-29-databricks-memory-scaling.md
+- Created: raw/articles/crawl-2026-04-29-paul-duvall-agentic-patterns.md
+- Created: raw/articles/crawl-2026-04-29-dspy-adoption-gap-khattabs-law.md
+- Updated: index.md (+1 entry, total 660)
+- Updated: config/hot-topics.yaml (last_crawled for ai-agent-engineering, dspy, ai-memory-systems)
+
+
