@@ -2,19 +2,20 @@
 title: "OpenAI Symphony"
 type: concept
 created: 2026-04-13
-updated: 2026-04-13
-tags: [concept, agent-team-swarm, openai, orchestration]
+updated: 2026-04-29
+tags: [concept, agent-team-swarm, openai, orchestration, coding-agents]
 related: [agent-team-swarm, harness-engineering, dark-factory-software-factory]
 sources:
   - https://github.com/openai/symphony
   - https://github.com/openai/symphony/blob/main/SPEC.md
   - https://news.ycombinator.com/item?id=47252045
+  - https://openai.com/index/open-source-codex-orchestration-symphony/
 ---
 
 # OpenAI Symphony
 
-**Source:** OpenAI GitHub (2026-02-26)
-**Status:** Low-key engineering preview
+**Source:** OpenAI Engineering Blog (2026-04-27) + GitHub (2026-02-26)
+**Status:** Open-source spec with reference implementation
 **Related:** [[concepts/agent-team-swarm]], [[concepts/harness-engineering]], [[concepts/dark-factory-software-factory]]
 
 ---
@@ -149,6 +150,33 @@ You are working on a Linear ticket {{ issue.identifier }}
 - [[concepts/anthropic-managed-agents]] — 競合のマネージドAgentプラットフォーム
 - [[concepts/multi-agent-autonomy-scale]] — 大規模Agent協調の研究
 - [[ryan-lopopolo]] — Symphonyの作者、Harness Engineering提唱者。OpenAI Frontierで1M LOCのagent-only実験を主導
+
+---
+
+## OpenAI Engineering Blog Update (Apr 2026)
+
+OpenAI published an [engineering blog post](https://openai.com/index/open-source-codex-orchestration-symphony/) detailing the results and lessons from deploying Symphony internally.
+
+### Key Results
+- **500% increase in landed PRs** within three weeks of Symphony adoption on some teams
+- Human attention was the bottleneck — engineers could only manage 3–5 agent sessions before context switching became painful
+- Symphony turned issue trackers (Linear) into a **control plane** for autonomous coding agents
+
+### The Economic Shift
+When implementation cost drops to near zero, engineering behavior changes fundamentally:
+- **Speculative Tasks:** Engineers explore refactors and test hypotheses freely, discarding results that don't work
+- **Broadened Access:** Product managers and designers can file feature requests directly — agents provide video walkthroughs as "review packets"
+- **From Interaction to Orchestration:** The paradigm shifted from micromanaging agent sessions to an "always-on" orchestrator that pulls work from the task tracker
+
+### Codex App Server Mode
+Symphony uses a headless JSON-RPC API (`Codex App Server`) with dynamic tool calls:
+- Functions like `linear_graphql` are exposed to agents without exposing raw API tokens
+- Full session handshake protocol: `initialize → thread/start → turn/start`
+
+### Lessons Learned
+1. **Loss of Nudging:** Moving to ticket-level work means humans can't "steer" agents mid-flight
+2. **System Hardening over Manual Fixing:** Instead of fixing agent mistakes, add skills to the harness (e2e tests, Chrome DevTools access) so agents self-correct
+3. **Objectives over Transitions:** Treating agents as rigid state machine nodes failed; giving agents *objectives* and tools and "letting them cook" works better
 
 ---
 

@@ -1,76 +1,77 @@
 ---
-title: "Symphony: An Open-Source Spec for Codex Orchestration"
-source: "OpenAI Blog"
+title: "An open-source spec for Codex orchestration: Symphony"
 url: "https://openai.com/index/open-source-codex-orchestration-symphony/"
 date: "2026-04-27"
+source: "OpenAI Engineering Blog"
+author: "OpenAI Engineering Team"
 tags: [codex, agent-orchestration, symphony, openai, linear, coding-agents]
 ---
 
-# An Open-Source Spec for Codex Orchestration: Symphony
+# OpenAI Engineering Blog: Open-Source Codex Orchestration — Symphony
 
-**Authors:** Alex Kotliarskyi, Victor Zhu, Zach Brock
-**Repository:** [github.com/openai/symphony](https://github.com/openai/symphony)
+## Summary
 
-## Problem: Human Attention Bottleneck
+OpenAI announced Symphony as an open-source specification and reference implementation for orchestrating Codex coding agents at scale. The system transforms project management boards (like Linear) into a control plane for autonomous agents, enabling teams to "manage work instead of supervising agents."
 
-Engineers could only manage 3–5 interactive Codex sessions before productivity collapsed. Instead of supervising agents session-by-session, Symphony lets them **pull work from the issue tracker** (Linear) automatically.
+## Key Results
 
-## Results
-- **500% increase** in landed PRs on some teams within first 3 weeks
-- Linear workspaces spike upon release
+- **500% increase in landed PRs** within three weeks on some teams
+- Human attention bottleneck eliminated — engineers manage 3-5 agent sessions before context switching becomes painful
+- Symphony acts as a daemon continuously polling issue trackers
+- Agents can create sub-tasks, build DAGs of dependencies, and file follow-up issues
+- One issue can produce multiple PRs or pure analysis without code changes
 
-## Architecture
+## Technical Architecture
 
-1. **Issue tracker (Linear)** → source of truth
-2. **Symphony orchestrator** (poll loop, state machine, workspace manager)
-3. **Coding agent (Codex app-server)** per issue in isolated workspace
-4. **`WORKFLOW.md`** codifies team process
+### System Components
+1. **Workflow Loader** - Reads `WORKFLOW.md` (repo-level contract)
+2. **Issue Tracker Client** - Fetches/normalizes tracker data
+3. **Orchestrator** - Polling loop, concurrency control, retries
+4. **Workspace Manager** - Creates isolated filesystem directories per issue
+5. **Agent Runner** - Launches Codex app-server, streams updates
 
-### State Machine
-- **Todo/In Progress** → agent starts working
-- **In Review** → agent finishes, attaches PRs
-- **Done/Closed** → workspace cleaned up
-
-### Key Design
-- Agents have **objectives, not rigid transitions**
-- **Workspace isolation** per issue
-- `WORKFLOW.md` defines workflow (checkout → set In Progress → attach PR → review video)
-
-## SPEC.md (Core Specification)
-
-Language-agnostic spec. Reference in Elixir.
-
-### Key Config
+### WORKFLOW.md Contract
+Teams define agent policy in-repo with YAML frontmatter + Markdown prompt:
 ```yaml
 tracker:
   kind: linear
+  project_slug: my-project
   active_states: ["Todo", "In Progress"]
-  terminal_states: ["Closed", "Cancelled", "Done"]
-
 agent:
   max_concurrent_agents: 10
-  max_retry_backoff_ms: 300000
-
-codex:
-  command: codex app-server
-  turn_timeout_ms: 3600000
-  stall_timeout_ms: 300000
+hooks:
+  after_create: "npm install"
 ```
 
-### Agent Runner Protocol (JSON-RPC)
-```json
-{"id":1,"method":"initialize","params":{"clientInfo":{"name":"symphony"}}}
-{"method":"initialized","params":{}}
-{"id":2,"method":"thread/start","params":{...}}
-```
+### Codex App Server Mode
+- Headless JSON-RPC API for dynamic tool calls
+- Functions like `linear_graphql` exposed without raw API tokens
+- Session handshake: initialize → thread/start → turn/start
 
-### Safety Invariants
-1. Agent only runs in per-issue workspace path
-2. Path must be under workspace root
-3. Key sanitized: only `[A-Za-z0-9._-]`
+## The Economic Shift
 
-### Retry & Backoff
-Normal: 1s. Failure: `delay = min(10000 * 2^(attempt-1), max_retry_backoff_ms)`
+When implementation cost → near zero:
+- **Speculative tasks** become trivial (explore refactors, test hypotheses)
+- **Broadened access** — PMs/designers file requests directly, agents provide video walkthroughs
+- **From interaction to orchestration** — always-on daemon vs micromanaged sessions
 
-## Why Elixir?
-"When code is effectively free, you can optimize for correctness/elegance over CPU efficiency."
+## Lessons Learned
+
+1. **Loss of Nudging** — Can't steer agents mid-flight in ticket-level work
+2. **System Hardening over Manual Fixing** — Add skills to harness (e2e tests, Chrome DevTools) so agents self-correct
+3. **Objectives over Transitions** — Treating agents as rigid state machine nodes failed; give them objectives and tools, "let them cook"
+
+## Multi-Language Verification
+
+OpenAI verified the spec by having Codex generate implementations in:
+- TypeScript
+- Go
+- Rust
+- Java
+- Python
+- Elixir (reference implementation)
+
+## Repository
+- **GitHub:** https://github.com/openai/symphony
+- **SPEC.md:** https://github.com/openai/symphony/blob/main/SPEC.md
+- **License:** Apache 2.0
