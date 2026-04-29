@@ -26,7 +26,7 @@ sources: [raw/articles/source-name.md]
 ## Tag Taxonomy (Canonical)
 
 ### Core Types (auto-set by type field)
-- `concept`, `entity`, `comparison`, `query`, `summary`
+- `concept`, `entity`, `comparison`, `query`, `summary`, `coding-agent`, `memory-system`
 
 ### Primary Categories
 - **Models**: model, multimodal, text-generation, image-generation, local-llm, sglang

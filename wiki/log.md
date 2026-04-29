@@ -1,3 +1,20 @@
+## 2026-04-29 — Dreaming Cycle Consolidation
+
+### Created
+- [[entities/alex-volkov]]: AI Evangelist at Weights & Biases, ThursdAI host
+- [[entities/gergely-orosz]]: The Pragmatic Engineer newsletter author, Big Tech insights
+
+### Updated
+- [[concepts/chatgpt-images-2.0]]: Updated with reasoning-before-generation feature
+- [[concepts/google-photo-scanning-ai]]: Verified existing coverage of Personal Intelligence update
+- [[entities/google-tpu]]: Already has TPU 8t/8i deep dive coverage
+- [[concepts/tokenmaxxing]]: Cross-referenced with AINews Tasteful Tokenmaxxing coverage
+
+### Articles Processed
+- 17 newsletter articles collected (2026-04-22 to 2026-04-29)
+- 2 new entity pages created
+- 4 existing pages verified/updated
+
 # Change Log
 
 > Chronological record of wiki changes, updates, and additions.
@@ -164,4 +181,13 @@ Processed triage checkpoint from newsletters dated 2026-04-28 and 2026-04-29.
 - Updated: index.md (+1 entry, total 660)
 - Updated: config/hot-topics.yaml (last_crawled for ai-agent-engineering, dspy, ai-memory-systems)
 
+## [2026-04-30] lint | Wiki health check — 72 broken wikilinks, 75 orphan pages, 103 missing from index, 16 incomplete frontmatter, 124 stale articles
 
+- **Broken wikilinks:** 72 unique broken links detected (top offenders: agent-engineering, boris-cherny subpages, concepts/dspy-architecture/*, drew-breunig subpages, harness-engineering subpages)
+- **Orphan pages:** 75 pages with zero inbound links (includes _index.md files, agent-memory.md, clinical-ai.md, etc.)
+- **Missing from index:** 103 pages exist on disk but are not listed in index.md
+- **Frontmatter issues:** 1 file missing frontmatter entirely (log-2026.md), 16 files missing `type` field
+- **Stale raw articles:** 124 articles >30 days old by filename date; 1,950 total raw articles (32 berthub.eu political articles likely need cleanup)
+- **Duplicates:** 8 entity groups with same root name (boris-cherny, claude-code, clefourrier, drew-breunig, dspy, eugene-yan, jason-liu, ryan-lopopolo); 54 concept groups with same root name (mostly `_index.md` in subdirs + duplicate concept pages)
+- **Fixed:** Added `coding-agent` and `memory-system` to canonical tag taxonomy in SCHEMA.md (were being used but not declared)
+- **Tag sprawl:** 1,524 tag uses not matching canonical taxonomy — need bulk cleanup or taxonomy expansion
