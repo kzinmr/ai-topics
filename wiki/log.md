@@ -1,3 +1,13 @@
+## [2026-04-30] Will Brown — RL-Harness Lifecycle Thesis
+
+- [[concepts/rl-harness-lifecycle]] — New concept page: the co-evolutionary cycle of harnesses and RL training. Strong agents emerge from: harnesses create training environments → RL produces capable models → models internalize harness patterns → more ambitious harnesses become possible.
+- [[concepts/rl-harness-lifecycle]] — Key claims: "Harness paradigms evolve half a model generation at a time", "The best harness ideas don't work yet (but would be amazing if RL-trained)", bearish on "bolt-on memory" due to lack of clean rollout loop.
+- [[concepts/rl-harness-lifecycle]] — CoT, ReAct, parallel tools, Claude Code, compaction, subagents, RLMs as historical examples of harness→RL internalization pipeline.
+- [[concepts/rl-harness-lifecycle]] — "OpenClaw envs" interpreted as RL training environments modeled on real-world agent platforms.
+- [[entities/will-brown]] — Added "The RL-Harness Lifecycle" section under Key Quotes with full analysis and cross-reference.
+- [[entities/will-brown]] — Related links updated: added rl-harness-lifecycle concept, fixed broken wikilinks for agent-harness, prime-intellect, morgan-stanley.
+- **Key architectural insight**: Products like Claude Code and OpenClaw are not final applications but prototypes for future training environments. The current awkward usage patterns are scaffolding for next-generation model capabilities. Bolt-on memory fails because "memory written → later used correctly → reward increased" causality is too noisy for RL.
+
 ## [2026-04-30] Agent around REPL: RLM Patterns on Pydantic AI
 
 - [[concepts/code-mode]] — Added "Agent around REPL: 3つの実装パターン" (minimal CodeMode+output function, DSPy-compatible explicit loop, graph-native durable execution), "Agent around REPL vs Agent on REPL" architectural principle, and "Deferred Tool Calls" status update (HandleDeferredToolCalls in v0.2.0)

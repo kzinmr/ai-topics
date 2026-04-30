@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 706 | Full entries: 678 | Stubs: 620
+> Last updated: 2026-04-30 | Total pages: 708 | Full entries: 680 | Stubs: 620
 
 ## Entities (339 pages)
 
@@ -668,8 +668,9 @@
 - [[concepts/rag-systems]] — > **RAG = Search + Reasoning** — Search brings facts, reasoning provides coherence.
 - [[concepts/ram-relative-adoption-metric]] — The **Relative Adoption Metric (RAM)** is a time-varying, size-normalized metric developed by Nathan Lambert and Florian to evaluate whether a new language model is on track to be ecosystem-definin...
 |- [[concepts/reasoning-model-cost-transparency]] — A 2026 study revealing that listed API prices for reasoning language models are systematically misleading, with actual costs differing dramatically from advertised rates.
-|- [[concepts/reasoning-compression]] — The phenomenon where test-time scaling (CoT, search, agentic loops) gets compressed into model weights through training. Explicit reasoning steps become implicit model capabilities over successive generations.
-|- [[concepts/reasoning-models]]
+| - [[concepts/reasoning-compression]] — The phenomenon where test-time scaling (CoT, search, agentic loops) gets compressed into model weights through training. Explicit reasoning steps become implicit model capabilities over successive generations.
+| - [[concepts/rl-harness-lifecycle]] — The co-evolutionary cycle: harnesses create training environments → RL produces capable models → models internalize harness patterns → more ambitious harnesses become possible. Coined by Will Brown (Prime Intellect). "Harness paradigms evolve half a model generation at a time."
+| - [[concepts/reasoning-models]]
 - [[concepts/recursive-language-models]] — RLM is an inference paradigm where language models recursively decompose and interact with arbitrarily long input context through external environments (e.g., REPL), rather than processing all toke...
 - [[concepts/red-green-tdd]] — Moved to concepts/harness-engineering/agentic-workflows/red-green-tdd.md
 |- [[concepts/red-teaming-adversarial-eval]] — Systematic probing of agent safety postures — measuring **Attack Success Rates (ASR)**, resistance to multi-turn manipulation, and vulnerabilities to indirect prompt injection. Goes beyond basic re...

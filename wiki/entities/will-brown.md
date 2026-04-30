@@ -155,16 +155,35 @@ A comprehensive learning roadmap for generative AI, covering everything from bas
 
 > "We think most AI companies will want post-training agentic or otherwise focused models for specific tasks and workflows."
 
+> "Harness paradigms can only evolve half a model generation at a time. They need to half-work in order to get enough attention to be trained on."
+
+> "The best harness ideas are those which didn't actually work yet, but which would be amazing in theory if you did the RL."
+
+### The RL-Harness Lifecycle
+
+In April 2026, Brown articulated a framework for understanding how AI agent capabilities evolve: **the RL-harness lifecycle**. The thesis is that strong agents emerge not from model-only RL or harness-only engineering, but from a co-evolutionary cycle: harnesses create training environments → RL produces capable models → models internalize harness patterns → more ambitious harnesses become possible.
+
+Key claims from his viral tweet thread:
+- **"It's not RL vs harnesses"** — the competitive frontier is in the lifecycle between them
+- **"Harness paradigms evolve half a model generation at a time"** — they need to half-work to generate training signal
+- **"The best harness ideas don't work yet"** — but would be transformative if RL-trained
+- **Bearish on "bolt-on memory"** — because memory lacks a clean rollout loop for RL evaluation
+
+This framework reframes products like Claude Code, OpenClaw, and subagent systems not as final applications, but as **prototypes for future training environments**. The current awkward usage patterns are the scaffolding for next-generation model capabilities.
+
+See [[concepts/rl-harness-lifecycle]] for the full analysis.
+
 ## Related
 
 - [[concepts/fine-tuning/grpo-rl-training]] — Group Relative Policy Optimization, the technique Brown popularized for open-source reasoning model training
+- [[concepts/rl-harness-lifecycle]] — Co-evolutionary cycle of harnesses and RL training, coined by Brown
 - [[concepts/rlhf]] — Reinforcement Learning from Human Feedback, the broader alignment paradigm
 - [[concepts/reasoning-models]] — Models with extended reasoning capabilities, Brown's primary research focus
--  — Agent execution frameworks that verifiers supports
+- [[concepts/agent-harness]] — Agent execution frameworks that verifiers supports
 - [[nathan-lambert]] — Interconnects newsletter author, fellow open-source RL researcher
 - [[teknium]] — Nous Research co-founder, open-source AI community leader
--  — Brown's current organization
--  — Brown's previous employer
+- [[entities/prime-intellect]] — Brown's current organization
+- [[entities/morgan-stanley]] — Brown's previous employer
 
 ## Sources
 
