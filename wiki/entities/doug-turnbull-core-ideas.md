@@ -62,14 +62,53 @@ Turnbull was an early and sustained advocate of **learning-to-rank**: using ML m
 
 ## RAG Isn't a Vector Search Problem
 
-A central thesis in Turnbull's recent writing is that **the RAG community over-indexes on embeddings and under-appreciates classical IR**:
+A central thesis in Turnbull's recent writing is that **the RAG community over-indexes on embeddings and under-appreciates classical IR**. His December 2025 article *"RAG Users Want Affordances, Not Vectors"* [[raw/articles/2025-12-09_doug-turnbull-rag-users-want-affordances]] lays out three specific failure modes of pure vector search for RAG:
 
-- Embeddings alone lack match/non-match awareness — a similarity score doesn't tell you if a document actually answers the query
+### Embedding Crowding
+Off-the-shelf embedding models are trained on general web data. In specific domains (e.g., finance), distinct concepts like "S1 filings" and "quarterly earnings" appear nearly identical, creating a "clumped" vector space where everything has high similarity (e.g., 0.1 cosine distance).
+
+### The Threshold Problem
+Vector search provides a similarity gradient, not a "match/no-match" binary. A correct answer might score 0.9 while a related but incorrect answer scores 0.8 — and there is no universal cutoff because a different query might return the correct answer at 0.6 similarity. **Without classifiers, pure vector retrieval cannot distinguish correct from incorrect information.**
+
+### In-Domain Nuance
+General embedding leaderboards do not reflect industry performance:
+- "High yield" → junk bonds (risk), not high returns
+- "Chinese walls" → information barriers for compliance, not a physical wall
+
+### Resulting Principles
+- Embeddings alone lack match/non-match awareness
 - "Similarity floors don't work consistently" — a cutoff that works for one query may be disastrous for another
 - BM25 and lexical matching remain essential complements to vector retrieval
 - User engagement data (clicks, hovers, session behavior) is the most valuable signal for improving RAG quality — yet most RAG teams rely exclusively on human/LLM evaluation
 
 He calls this gap **"RAG's big blindspot"** — the lack of engagement-based evaluation in an era obsessed with LLM judges.
+
+### The Affordances Solution
+Turnbull invokes Donald Norman's **affordances** concept: users want to manipulate data using specific selectors, not just nearest-neighbor similarity. Effective search is more about **Information Architecture** and **Data Modeling** than semantic similarity.
+
+The solution: use LLMs as **query understanding powerhouses** — translate free-text queries into structured schemas with typed fields:
+
+```python
+class Query(BaseModel):
+    styles: List[str]
+    materials: List[Literal["leather", "suede", "..."]]
+    classification: str  # e.g., "Living Room / Sofas"
+```
+
+Then decompose similarity spaces by attribute:
+- **Style** → CLIP/visual embeddings
+- **Material** → Exact taxonomic matches
+- **Classification** → Hierarchical ranking (direct matches > siblings > cousins)
+
+### The Tiered Strategy
+Great search follows a three-tier approach:
+1. **High-Precision Intent** — Structured, filtered results when query is understood
+2. **Fallback Retrieval** — BM25 or vector search when confidence is low
+3. **Multi-Factor Ranking** — Relevance > similarity: popularity, recency, authority, proximity
+
+**Diversity is critical for agentic loops:** agents need to see a broad range of results to learn how to reformulate queries. Ten identical results kill agent exploration.
+
+This article is a direct predecessor to Turnbull's 2026 "Grep Moment" and "Rag is the What" talk — it established the foundational critique of vector-centric RAG that later evolved into the full agentic search framework.
 
 ## Query Understanding > Ranking
 

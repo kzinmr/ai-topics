@@ -17,6 +17,7 @@ sources:
   - raw/articles/2026-04-06_softwaredoug-agentic-search-grep-moment.md
   - raw/articles/2026-03-30_claude-web-search-dynamic-filtering.md
   - raw/articles/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how.md
+  - raw/articles/2025-12-09_doug-turnbull-rag-users-want-affordances.md
   - https://arxiv.org/abs/2602.21456
   - https://arxiv.org/abs/2603.20432
   - https://www.sid.ai/research/sid-1-technical-report
@@ -50,6 +51,8 @@ A landmark 2026 study by Meng, Ou, MacAvaney, and Dalton (University of Glasgow)
 Agent-issued queries differ fundamentally from the natural language queries used to train neural rankers. Deep research agents produce **web-search-style keyword syntax** — using quotes for exact matches, Boolean operators, and fragmented terms — while neural rankers (dense retrieval models like RepLLaMA, Qwen3-Embed) are trained on complete natural language questions.
 
 This mismatch means that **lexical (BM25), learned sparse (SPLADE-v3), and multi-vector (ColBERTv2) retrievers outperform standard dense retrievers** in agentic search contexts.
+
+This academic finding echoes a practitioner argument Turnbull made months earlier in *"RAG Users Want Affordances, Not Vectors"* [[raw/articles/2025-12-09_doug-turnbull-rag-users-want-affordances]] — embedding crowding, the threshold problem, and in-domain nuance all make dense vectors unreliable for agent-driven queries. The academic IR community caught up to what search engineers had already discovered in production.
 
 ### Key Findings
 
@@ -364,6 +367,7 @@ The IR-layer findings are based on:
 - [Revisiting Text Ranking in Deep Research](https://arxiv.org/abs/2602.21456) — Meng, Ou, MacAvaney, Dalton (2026). Systematic evaluation of IR methods in deep research contexts.
 - [Coding Agents are Effective Long-Context Processors](https://arxiv.org/abs/2603.20432) — Cao, Yin, Dhingra, Zhou (2026). Coding agents as retrieval/processing interface outperforming traditional IR on long-context tasks.
 - [Agentic Search Is Having a Grep Moment](https://softwaredoug.com/blog/2026/04/06/agentic-search-is-having-a-grep-moment) — Doug Turnbull (2026). Practitioner perspective on grep vs search harness architecture.
-- ["Rag is the What. Agentic search is the How." (YouTube)](https://www.youtube.com/watch?v=UXQ916WRK0A) — Doug Turnbull (2026). 54-minute talk: full architectural critique of RAG paradigm shift toward agentic search, with four-stage unwinding and SID-1 endorsement.
+- [RAG Users Want Affordances, Not Vectors](https://softwaredoug.com/blog/2025/12/09/rag-users-want-affordances-not-vectors) — Doug Turnbull (2025). Foundational critique of vector-centric RAG: embedding crowding, threshold problem, in-domain nuance, and the affordance-based alternative of structured schema extraction via LLMs.
+- [Rag is the What. Agentic search is the How. (YouTube)](https://www.youtube.com/watch?v=UXQ916WRK0A) — Doug Turnbull (2026). 54-minute talk: full architectural critique of RAG paradigm shift toward agentic search, with four-stage unwinding and SID-1 endorsement.
 - [Lessons from Building AI Agents in Financial Services](raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md) — Agentic search as skill discovery in Fintool.
 - [Text Ranking in Deep Research (Code)](https://github.com/ChuanMeng/text-ranking-in-deep-research) — Open-source code and data.

@@ -1,3 +1,13 @@
+## [2026-04-30] Doug Turnbull — "RAG Users Want Affordances, Not Vectors" (Dec 2025)
+
+- Expanded [[concepts/agentic-search]] — Added cross-reference to foundational article in Level 1 (IR Research): Turnbull's practitioner critique of vector-centric RAG embedding crowding, threshold problem, in-domain nuance echoes the academic findings. Added raw article to sources frontmatter and sources section.
+- Expanded [[entities/doug-turnbull-core-ideas]] — "RAG Isn't a Vector Search Problem" section enriched with three failure modes, the affordances solution (structured schema extraction via LLMs), the tiered strategy, and diversity-for-agentic-loops principle.
+- Expanded [[entities/doug-turnbull]] — Added "Affordances Not Vectors" to Recent Blog Posts list. Cleaned up duplicate entries.
+- Saved raw article: raw/articles/2025-12-09_doug-turnbull-rag-users-want-affordances.md
+- Source: https://softwaredoug.com/blog/2025/12/09/rag-users-want-affordances-not-vectors
+
+---
+
 ## [2026-04-30] Doug Turnbull — "Rag is the What. Agentic search is the How." Talk (April 2026)
 
 - Expanded [[concepts/agentic-search]] — Added "Talk: 'Rag is the What. Agentic search is the How.'" section under Level 3 (Practitioner Perspective). Four-stage unwinding framework (Structured Attributes → Tool Calling → Reasoning → Dumb Retrievers). Complexity migration thesis: retrieval → agent+harness. Explicit SID-1 endorsement. This talk is the live-recorded version of the "Grep Moment" thesis, extended to a full architectural critique of the RAG paradigm.

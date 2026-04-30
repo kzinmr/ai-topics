@@ -74,6 +74,7 @@ See [[doug-turnbull-speaking]] for conference appearances, community contributio
 
 See [[doug-turnbull-blog]] for summaries of:
 
+- **[RAG Users Want Affordances, Not Vectors](https://softwaredoug.com/blog/2025/12/09/rag-users-want-affordances-not-vectors)** (Dec 2025) — Foundational critique: vector-centric RAG fails due to embedding crowding, threshold problem, and in-domain nuance. Solution: structured schema extraction via LLMs.
 - **[Reasoning Agents Need Bad Search](https://softwaredoug.com/blog/2025/09/22/reasoning-agents-need-bad-search)** (Sep 2025) — Thin search APIs enable transparent agent reasoning
 - **[Semantic Search Without Embeddings](https://softwaredoug.com/blog/2026/01/08/semantic-search-without-embeddings)** (Jan 2026) — Three pillars of semantic search and why embeddings fail at the third
 
