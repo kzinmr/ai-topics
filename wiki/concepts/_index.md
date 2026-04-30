@@ -11,6 +11,15 @@ AI and LLM concept pages organized by topic.
 
 ## Overview
 
+## AI Agent Architecture Patterns
+
+- [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, pure-functional processing (core) from side-effect-heavy decision making (shell). In AI agents, the functional core handles mechanical, verifiable tasks while the imperative shell manages validation, evaluation, and strategic decision-making.
+- [[concepts/reasoning-compression]] — The principle that software complexity and reasoning requirements will be compressed over time as models improve, eliminating the need for extensive exploration and reducing the imperative shell to validation/evaluation only.
+- [[concepts/agent-serverless]] — Serverless deployment pattern for AI agents — managed environments with built-in SaaS integration, permissions, and security. Includes enterprise tiers with persistent logs, audit trails, and turnkey agent infrastructure.
+- [[concepts/agent-iam]] — Agent IAM / Non-Human Identity Security for managing permissions and access control for AI agents interacting with enterprise systems.
+- [[concepts/bitter-lesson-harnessing]] — How model intelligence evolution affects the importance of harness engineering — as models get smarter, harness complexity becomes less critical.
+- [[concepts/generative-app-evolution]] — Generative App Evolution pattern: UI → Stateless App → Stateful App progression in AI-driven applications.
+
 ## Harness-Engineering
 
 - [[concepts/harness-engineering/agentic-engineering-patterns]] — Simon Willisonが2026年2月23日に開始したガイドプロジェクト。コーディングエージェント（Claude Code、OpenAI Codex、Gemini CLI等）から最高の結果を得るための実践パターンを体系化したもの。

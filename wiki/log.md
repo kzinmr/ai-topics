@@ -246,6 +246,24 @@ Processed triage checkpoint from newsletters dated 2026-04-28 and 2026-04-29.
 - Updated: index.md (+1 entry, total 660)
 - Updated: config/hot-topics.yaml (last_crawled for ai-agent-engineering, dspy, ai-memory-systems)
 
+## [2026-04-30] Slack historical message extraction (pre-3/30) — 6 AI Agent Architecture concepts
+
+Processed Slack channel C077ACXR5UY messages from March 2026. Extracted 6 major architectural concepts and created/updated wiki pages.
+
+### New Concept Pages Created:
+- **[[concepts/functional-core-imperative-shell]]** — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, work migrates from shell to core. Source: 3/30 23:54 "検証や評価や意思決定という、外界のモデリングしか残ってない"
+- **[[concepts/reasoning-compression]]** — The principle that software complexity and reasoning requirements compress over time as models improve. Reasoning currently expanded across time as exploration will compress into direct solutions. Source: 3/30 23:56-57 "reasoningが時間軸方向に展開された探索空間として圧縮され"
+- **[[concepts/agent-serverless]]** — Serverless deployment pattern for AI agents with built-in SaaS integration, permissions, and security. Enterprise tiers monetize log persistence and audit trails. Source: 3/24 19:06 "エージェントのサーバレスが今後育つとしたら、SaaS連携と権限とセキュリティの完備されたマネージド環境"
+
+### Existing Pages Updated:
+- **[[concepts/bitter-lesson-harnessing]]** — Added exact Slack quotes about harness complexity decreasing as models improve, and human role shifting from coder to PM
+- **[[concepts/agent-iam]]** — Already had content from 3/24 message about Astrix Security, Zenity, WorkOS FGA
+- **[[concepts/generative-app-evolution]]** — Already covered
+
+### Index Updates:
+- Added new "AI Agent Architecture Patterns" section to concepts/_index.md with all 6 concepts
+- Cross-linked all 6 concepts to each other
+
 ## [2026-04-30] lint | Wiki health check — 72 broken wikilinks, 75 orphan pages, 103 missing from index, 16 incomplete frontmatter, 124 stale articles
 
 - **Broken wikilinks:** 72 unique broken links detected (top offenders: agent-engineering, boris-cherny subpages, concepts/dspy-architecture/*, drew-breunig subpages, harness-engineering subpages)

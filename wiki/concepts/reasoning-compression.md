@@ -1,108 +1,173 @@
 ---
 title: "Reasoning Compression"
 type: concept
-description: "The phenomenon where reasoning — initially an explicit, time-expanded search process — becomes compressed into implicit model weights, eventually eliminating the need for explicit search"
+aliases:
+  - reasoning-compression
+  - temporal-reasoning-compression
+  - reasoning-space-compression
+  - exploration-compression
+description: "The principle that software complexity and reasoning requirements will be compressed over time as models improve, eliminating the need for extensive exploration and reducing the imperative shell to validation/evaluation only."
 category: concepts
-sub_category: Model Architecture
-tags: [reasoning, model-compression, test-time-scaling, pretraining, search]
+sub_category: AI Agent Architecture
+tags: [ai-agents, reasoning, complexity-reduction, temporal-compression, model-improvement, software-complexity]
 status: complete
 created: 2026-04-30
 updated: 2026-04-30
+source_slack_channel: C077ACXR5UY
+source_slack_date: 2026-03-30
+source_slack_user: U076RPG60QY (Kazuki Inamura)
+source_message: |
+  "あとはソフトウエアの複雑性という問題も、結局のところ非決定性のある問題解決を時間軸方向に展開したものに過ぎないという点で、いずれ圧縮されるものだろうって最近思うところがある"
+  "reasoningが時間軸方向に展開された探索空間として圧縮されいずれ探索不要な形に縮約されていくように"
 ---
 
 # Reasoning Compression
 
 ## TL;DR
 
-**Reasoning compression** is the phenomenon where explicit reasoning (chain-of-thought, test-time scaling, search-based problem solving) that was initially learned as a time-expanded process becomes **compressed into the model's weights**, eventually eliminating the need for explicit search steps.
+**Reasoning Compression** is the principle that software complexity and reasoning requirements will be compressed over time as AI models improve. What currently requires extensive exploration, iteration, and problem-solving will eventually be solved directly without the need for step-by-step reasoning. The reasoning process itself — which is currently expanded across time as exploration — will compress into immediate, direct solutions.
 
-This is the logical continuation of the **Bitter Lesson**: methods that leverage computation eventually absorb the complexity that was previously handled by human-designed structure.
+## Origin
 
-## The Compression Timeline
+This concept emerged from a Slack discussion about the future of AI agents and software development (2026-03-30). The key insight:
+
+> *"あとはソフトウエアの複雑性という問題も、結局のところ非決定性のある問題解決を時間軸方向に展開したものに過ぎないという点で、いずれ圧縮されるものだろうって最近思うところがある"*
+
+> *"reasoningが時間軸方向に展開された探索空間として圧縮されいずれ探索不要な形に縮約されていくように"*
+
+## The Core Principle
+
+### Current State: Reasoning as Temporal Exploration
+
+Today, solving complex software problems requires:
+1. **Problem decomposition**: Breaking down the problem into sub-problems
+2. **Exploration**: Trying different approaches, testing, iterating
+3. **Reasoning chains**: Multi-step thinking to connect cause and effect
+4. **Time investment**: Hours, days, or weeks of exploration
+
+This is **reasoning expanded across time** — we spread out the problem-solving process because our current models (and humans) can't solve it directly.
+
+### Future State: Compressed Reasoning
+
+As models improve:
+1. **Direct solutions**: Problems are solved without extensive exploration
+2. **Compressed reasoning**: The thinking process is condensed into immediate answers
+3. **Reduced iteration**: Fewer cycles needed to reach correct solutions
+4. **Time compression**: What took hours now takes seconds
+
+The reasoning process doesn't disappear — it **compresses** into a more efficient form.
+
+## The Compression Curve
 
 ```
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│  Reasoning Capability ──────────────────────────────►         │
-│                                                              │
-│  Stage 1: Explicit Reasoning                                  │
-│  ┌─────────────────────────────────────────────┐              │
-│  │ Chain-of-thought, tree search, ReAct loops   │              │
-│  │ High token cost, slow, but works             │              │
-│  └─────────────────────────────────────────────┘              │
-│                            │                                   │
-│                            ▼                                   │
-│  Stage 2: Compressed Reasoning                                  │
-│  ┌─────────────────────────────────────────────┐              │
-│  │ Reasoning patterns internalized in weights   │              │
-│  │ Fewer explicit steps, faster inference       │              │
-│  └─────────────────────────────────────────────┘              │
-│                            │                                   │
-│                            ▼                                   │
-│  Stage 3: Implicit Competence                                   │
-│  ┌─────────────────────────────────────────────┐              │
-│  │ No explicit reasoning needed                 │              │
-│  │ Model "just knows" the answer                │              │
-│  └─────────────────────────────────────────────┘              │
-│                                                              │
-│  Time / Training Scale ─────────────────────────────►         │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
+Reasoning Time Required
+    │
+High│  ████
+    │  █  ████
+    │  █     ████
+    │  █        ████
+Low │  █           ████  ← As models improve
+    └───────────────────────► Model Capability
 ```
 
-## Mechanism
+### Stages of Compression
 
-### Stage 1: Time-Expanded Search
-When a model first learns to reason, it does so through **explicit multi-step processes**:
-- Chain-of-thought (CoT) prompting
-- Tree-of-thought search
-- Self-consistency voting
-- ReAct (Reason + Act) loops
+| Stage | Reasoning Pattern | Time Required | Human Role |
+|-------|------------------|---------------|------------|
+| **Manual** | Human exploration | Hours/days | Doer |
+| **Assisted** | Human + AI iteration | Minutes/hours | Director |
+| **Automated** | AI exploration | Seconds/minutes | Reviewer |
+| **Compressed** | Direct AI solution | Instant | Validator |
 
-These are **computationally expensive** but necessary — the model hasn't internalized the reasoning patterns yet.
+## Relationship to Other Patterns
 
-### Stage 2: Compression into Weights
-As the model trains on more reasoning trajectories:
-- Common reasoning patterns become **encoded directly in weights**
-- The model learns to skip intermediate steps for familiar problems
-- Test-time computation decreases while capability is maintained
+### [[concepts/functional-core-imperative-shell]]
+- Reasoning compression **reduces the imperative shell's workload**
+- More reasoning moves to the functional core (deterministic processing)
+- The shell becomes focused on validation only, not exploration
 
-### Stage 3: Implicit Competence
-Eventually, for many problem types:
-- The model produces correct answers **without visible reasoning steps**
-- What required 100+ tokens of CoT now requires a single forward pass
-- The search process has been **fully compressed** into pattern recognition
+### [[concepts/bitter-lesson-harnessing]]
+- As reasoning compresses, **harness patterns become simpler**
+- Less orchestration needed when models can solve problems directly
+- The Bitter Lesson applies: computational power replaces careful reasoning design
 
-## Implications for Agent Architecture
+### [[concepts/generative-app-evolution]]
+- Generative apps benefit from reasoning compression
+- UI generation becomes more accurate with less iteration
+- State management becomes more predictable
 
-### Harness Engineering Impact
-As reasoning compresses, the **harness complexity required decreases**:
-- Early agents need elaborate orchestration (ReAct loops, verification steps, self-correction)
-- Later agents need simpler harnesses because the model internalizes these patterns
-- Eventually, the agent harness becomes a thin wrapper around a highly capable model
+### [[concepts/agent-serverless]]
+- Serverless agents naturally embody reasoning compression
+- Managed environments compress operational reasoning into platform capabilities
+- Less infrastructure reasoning needed = thinner shell
 
-### The "Reasoning Compression" Advantage
-Teams that understand this pattern can:
-1. **Start with explicit reasoning** to bootstrap agent capabilities
-2. **Gradually compress** reasoning into the model through targeted training
-3. **Simplify the harness** as the model absorbs complexity
+## Practical Implications
 
-This creates a competitive moat: the same agent behavior that initially required complex orchestration can eventually be achieved with a simple API call.
+### For Software Development
+1. **Less debugging time**: Models can identify and fix issues directly
+2. **Faster iteration**: Exploration cycles compress
+3. **Reduced boilerplate**: Common patterns are generated without thinking
+4. **Architecture simplification**: Complex designs become unnecessary
 
-## Relationship to Other Concepts
+### For Agent Design
+1. **Thinner imperative shell**: Less human validation needed
+2. **Wider functional core**: More automated processing
+3. **Faster feedback loops**: Compressed reasoning enables rapid iteration
+4. **Reduced orchestration**: Agents can solve problems more directly
 
-- **[[concepts/bitter-lesson-harnessing]]**: Reasoning compression is a specific instance of the Bitter Lesson — compute beats hand-designed structure
-- **[[concepts/test-time-scaling]]**: Test-time scaling is the Stage 1 approach; reasoning compression is what happens when Stage 1 succeeds
-- **[[concepts/dspy]]**: DSPy's GEPA optimization can be seen as automated reasoning compression
+### For Team Organization
+1. **Shift from doing to validating**: Humans focus on judgment, not exploration
+2. **Fewer iteration cycles**: Less back-and-forth needed
+3. **Higher-level thinking**: Strategic decisions become the primary human role
+4. **Reduced cognitive load**: Compressed reasoning frees mental resources
 
-## Open Questions
+## The Compression Metaphor
 
-1. **Does all reasoning compress?** Some problems may inherently require explicit search (e.g., novel problems outside the training distribution)
-2. **How to measure compression?** No standard metric exists for "how compressed" a model's reasoning is
-3. **What's the role of RL?** Reinforcement learning may accelerate compression by rewarding efficient reasoning paths
+Think of reasoning like a **compressed file**:
 
-## See Also
+- **Uncompressed**: Full exploration, all steps visible, time-expanded
+- **Compressed**: Essential information only, direct path, time-condensed
+- **Decompressed when needed**: Can still expand to full reasoning if required
 
-- [[concepts/bitter-lesson-harnessing]]
-- [[concepts/test-time-scaling]]
-- [[concepts/dspy]]
+As models improve, more reasoning stays compressed. The decompression (detailed step-by-step thinking) becomes optional rather than necessary.
+
+## Future Trajectory
+
+The compression trend suggests:
+
+```
+Current:    Problem → Exploration → Reasoning → Solution
+Future:     Problem → Compressed Reasoning → Solution
+Eventually: Problem → Direct Solution (no explicit reasoning needed)
+```
+
+This doesn't mean reasoning disappears — it becomes **internalized** and **compressed** within the model's capabilities.
+
+## Examples
+
+### Example 1: Code Generation
+- **Today**: Prompt → Generate → Test → Fix → Iterate → Final code
+- **Compressed**: Prompt → Generate → Correct code (with internal testing)
+- **Future**: Problem description → Working solution
+
+### Example 2: Architecture Design
+- **Today**: Requirements → Explore patterns → Evaluate trade-offs → Design
+- **Compressed**: Requirements → Optimal architecture (with reasoning compressed)
+- **Future**: Business goal → System design
+
+### Example 3: Debugging
+- **Today**: Bug report → Reproduce → Investigate → Fix → Test
+- **Compressed**: Bug report → Root cause + fix
+- **Future**: System anomaly → Automatic correction
+
+## Key Insight
+
+> **Software complexity is not a permanent property — it's a temporary artifact of our current reasoning limitations.** As models improve, what seems complex today will compress into simple, direct solutions.
+
+The "complexity" we experience is largely the **temporal expansion** of reasoning across time. When reasoning compresses, complexity disappears.
+
+## Sources
+
+- Slack discussion (C077ACXR5UY, 2026-03-30): Original insight about reasoning compression
+- [[concepts/bitter-lesson-harnessing]]: Related concept about model capability vs. harness complexity
+- [[concepts/functional-core-imperative-shell]]: Related architectural pattern
