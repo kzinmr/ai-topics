@@ -35,6 +35,12 @@
 
 ---
 
+## [2026-04-30] Doug Turnbull — Can Agents Replace the Search Stack?
+
+- Expanded [[concepts/agentic-search]] — Added "Benchmarking Agents vs Search Stack: Amazon ESCI" section under Level 1 (after SID-1). Key results: GPT-5 + BM25 + embeddings achieves 0.453 NDCG (+56.7% vs BM25 baseline). Agents naturally refine queries (emerging Q2Q behavior). Encouraged exploration (min 4 calls + diversity) improves NDCG from 0.410 → 0.4308. Key boundary: agentic search works for "finding things" but not "deep research." Connected findings back to all three levels via validated patterns table.
+- Saved raw article: raw/articles/2026-04-28_softwaredoug-can-agents-replace-search-stack.md
+- Fixed: cleaned up duplicate entries in agentic-search.md frontmatter sources.
+
 ## [2026-04-30] Anthropic Dynamic Web Search Filtering — Production externalized processing
 
 - Expanded [[concepts/agentic-search]] — Added "Production Implementation: Claude's Dynamic Web Search Filtering (Anthropic)" section under Level 3. Filter-before-reasoning flow: Claude writes code to extract relevant data from web results before context loading. ~11% accuracy gain, ~24% token reduction. Validates all three levels: code as re-ranker (L1), harness orchestration (L2), externalized processing (L3). Cross-referenced with Cao et al. paper (same paradigm, web layer instead of filesystem layer).

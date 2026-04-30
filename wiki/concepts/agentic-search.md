@@ -16,14 +16,13 @@ sources:
   - raw/articles/2025-12-04_sid-1-agentic-retrieval.md
   - raw/articles/2026-04-06_softwaredoug-agentic-search-grep-moment.md
   - raw/articles/2026-03-30_claude-web-search-dynamic-filtering.md
-  - raw/articles/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how.md
-  - raw/articles/2025-12-09_doug-turnbull-rag-users-want-affordances.md
-  - raw/articles/2026-02-20_doug-turnbull-build-first-agentic-search-app.md
+  - raw/articles/2026-04-28_softwaredoug-can-agents-replace-search-stack.md
   - https://arxiv.org/abs/2602.21456
   - https://arxiv.org/abs/2603.20432
   - https://www.sid.ai/research/sid-1-technical-report
   - https://softwaredoug.com/blog/2026/04/06/agentic-search-is-having-a-grep-moment
   - https://www.gend.co/blog/claude-web-search-dynamic-filtering
+  - https://softwaredoug.com/blog/2026/04/28/search-apis-replaced-by-agents.html
   - https://github.com/ChuanMeng/text-ranking-in-deep-research
 ---
 
@@ -128,6 +127,66 @@ SID-1 achieves **near-doubled recall** over traditional reranking pipelines whil
 #### Production Position
 
 SID-1 works as a composable subagent for larger LLMs (similar to `swe-grep` in coding agents). Its recall at 1/374th the cost of frontier models makes it a practical replacement for vector search + reranking pipelines in production agentic search systems.
+
+### Benchmarking Agents vs Search Stack: Amazon ESCI
+
+Search engineer Doug Turnbull ([[entities/doug-turnbull-core-ideas]]) conducted a 2026 benchmark on Amazon ESCI validating that even simple agents with basic retrieval tools outperform traditional search stacks.
+
+#### Results
+
+| Strategy | NDCG | Δ vs BM25 baseline |
+|----------|------|:---:|
+| BM25 (baseline) | 0.289 | — |
+| e5_embedding | 0.314 | +8.7% |
+| GPT-5-mini + e5 | 0.359 | +24.2% |
+| GPT-5-mini + BM25 | 0.385 | +33.2% |
+| GPT-5-mini + Both | 0.410 | +41.9% |
+| **GPT-5 (Full) + Both** | **0.453** | **+56.7%** |
+
+A **56.7% NDCG improvement** achieved simply by wrapping a frontier LLM with basic retrievers — no data-specific tuning, no custom ranking signals.
+
+#### Agents Use Tools Intelligently
+
+Analysis of reasoning traces reveals that agents naturally recognize result mismatches and refine queries:
+
+```
+Search "pvc coupler" → networking results (RJ45 connectors)
+→ Recognizes mismatch: "Those are RJ45 couplers..."
+→ Reformulates: "Probably asking about PVC pipe couplers"
+→ Search "PVC pipe coupler" → correct results
+```
+
+This mirrors the Q2Q reformulation finding (Level 1) but occurs emergently via the agent's reasoning rather than through an explicit translation step.
+
+#### Encouraged Exploration Improves Results
+
+Preventing agents from being "lazy" with minimum 4 tool calls + 0.9 similarity diversity threshold:
+
+| Setting | NDCG |
+|---------|------|
+| Default (2 tools, any number of calls) | 0.410 |
+| Min 4 calls | 0.429 |
+| Min 4 calls + similarity filter | **0.4308** |
+
+This validates Doug Turnbull's harness architecture (Level 3): the **outer loop** constraint ("try harder with different queries") directly improves retrieval quality.
+
+#### Key Limitation: Finding Things vs Deep Research
+
+Turnbull identifies a critical boundary: **agentic search works for finding entities** (products, jobs, documents — things the agent can recognize from metadata) but **fails to improve information retrieval** (MSMarco passages — where the LLM doesn't know what information exists).
+
+> "The LLM can't evaluate what it doesn't know. If it knew what information was correct, it wouldn't need search!"
+
+This explains why SID-1's RL-trained approach (document-centric reward for relevance ranking) and Cao et al.'s externalized processing (grep/scripts for factual extraction) succeed in different domains than general search ranking.
+
+#### Validated Patterns
+
+| Finding | Connected To |
+|---------|-------------|
+| BM25 outperforms embeddings for agents | Level 1: Query Mismatch (Meng et al.) |
+| Agents naturally refine queries | Level 1: Q2Q Reformulation |
+| Harness constraints improve results | Level 3: Two-Loop Architecture |
+| SID-1 as specialized drop-in | Level 1: RL-Trained Retrieval |
+| "Finding things" > "Deep research" | Boundary condition for all approaches |
 
 ---
 
@@ -378,6 +437,7 @@ The IR-layer findings are based on:
 
 ## Sources
 
+- [Can Agents Replace the Search Stack?](https://softwaredoug.com/blog/2026/04/28/search-apis-replaced-by-agents.html) — Doug Turnbull (2026). Agentic search benchmark on Amazon ESCI: GPT-5 + BM25 + embeddings achieves 0.453 NDCG (+56.7% vs BM25 baseline). Key limitation: agentic search works for "finding things" but not "deep research."
 - [Dynamic Filtering in Claude Web Search](https://www.gend.co/blog/claude-web-search-dynamic-filtering) — Anthropic (2026). Production implementation of externalized processing: Claude writes code to filter web results before context loading. ~11% accuracy gain, ~24% token reduction.
 - [SID-1 Technical Report: Test-Time Compute for Retrieval](https://www.sid.ai/research/sid-1-technical-report) — SID Research (2025). First RL-trained agentic retrieval model. Qwen3-14B + GRPO, 0.84 recall, TI/TO pipeline insight.
 - [Revisiting Text Ranking in Deep Research](https://arxiv.org/abs/2602.21456) — Meng, Ou, MacAvaney, Dalton (2026). Systematic evaluation of IR methods in deep research contexts.
