@@ -271,6 +271,7 @@ Processed Slack channel C077ACXR5UY messages from March 2026. Extracted 6 major 
 - **Missing from index:** 103 pages exist on disk but are not listed in index.md
 - **Frontmatter issues:** 1 file missing frontmatter entirely (log-2026.md), 16 files missing `type` field
 - **Stale raw articles:** 124 articles >30 days old by filename date; 1,950 total raw articles (32 berthub.eu political articles likely need cleanup)
-- **Duplicates:** 8 entity groups with same root name (boris-cherny, claude-code, clefourrier, drew-breunig, dspy, eugene-yan, jason-liu, ryan-lopopolo); 54 concept groups with same root name (mostly `_index.md` in subdirs + duplicate concept pages)
 - **Fixed:** Added `coding-agent` and `memory-system` to canonical tag taxonomy in SCHEMA.md (were being used but not declared)
+- **Tag sprawl:** 1,524 tag uses not matching canonical taxonomy — need bulk cleanup or taxonomy expansion
+- **[2026-04-30] AI Agent Architectures (Fintool & Ramp):** Added 8 concept pages (s3-first-architecture, background-coding-agent, warm-start-optimization, modal-sandboxes, ask-user-question-pattern, markdown-based-skills, agentic-search, delta-updates-redis) and 5 entity pages (fintool, nicolas-bustamante, ramp, inspect, opencode). Updated index.md (+13 pages, total 696) and raw/articles/ (2 sources).
 - **Tag sprawl:** 1,524 tag uses not matching canonical taxonomy — need bulk cleanup or taxonomy expansion

@@ -8,6 +8,13 @@ tags: [ai-agents, harness-engineering, bitter-lesson, model-evolution, architect
 status: complete
 created: 2026-04-30
 updated: 2026-04-30
+source_slack_channel: C077ACXR5UY
+source_slack_date: "2026-03-24 18:56, 2026-03-30 21:29-30"
+source_slack_user: U076RPG60QY (Kazuki Inamura)
+source_messages:
+  - "3/24 18:56: LLMができることの幅が進化し続ける→自由型が有利 / 幅が収束しつつある→フレームワーク化が有利"
+  - "3/30 21:29: モデルをある程度固定したらHarnessingが重要、って話はありつつ、モデルが賢くなったらHarnessingの重要度が減る、って話はあるんだよな（The Bitter Lesson）"
+  - "3/30 21:30: Harnessingの重要度が減るほどモデルが賢くなってきた場合、人間がAIにお願いする仕事は、いよいよ coder というよりも PM に対するそれにまた一段次元が上がることになる"
 ---
 
 # The Bitter Lesson and Harnessing Evolution

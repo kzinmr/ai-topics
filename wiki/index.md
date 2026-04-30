@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 683 | Full entries: 653 | Stubs: 620
+> Last updated: 2026-04-30 | Total pages: 696 | Full entries: 666 | Stubs: 620
 
-## Entities (331 pages)
+## Entities (335 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -350,7 +350,7 @@
 - [[entities/ryan-lopopolo--core-ideas]] — Ryan Lopopolo (@_lopopolo) core ideas on AI engineering
 - [[entities/ryan-lopopolo--timeline]] — Ryan Lopopolo career timeline
 - [[entities/ryan-lopopolo--writings]] — Ryan Lopopolo writings and blog posts
-## Concepts (377 pages)
+## Concepts (385 pages)
 
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
 - [[concepts/agent-economics]] — The cost structures, token consumption patterns (1000x multiplier), and economic implications of deploying autonomous AI agents at scale across L1-L5 autonomy levels.
@@ -382,6 +382,7 @@
 |- [[concepts/agentic-scaffolding]] — エージェントを本番環境で安全に動作させるための「足場」パターン。エージェントの力を最大化しつつ、リスクを管理するインフラストラクチャ設計。
 ||- [[concepts/agentic-security]] — Agentic Security encompasses the security patterns, protocols, and tools for protecting AI agents, MCP servers, and the broader agent ecosystem. Covers package security (Nesbitt.io), authentication, authorization, data exfiltration prevention, MCP server security, prompt injection defense, and sandboxing strategies.
 ||- [[concepts/agentic-sysadmin]] — Pattern for using Claude Code as a sysadmin assistant — infrastructure as markdown, CLAUDE.md as project memory, security-first workflow for bare-metal and cloud servers.
+||- [[concepts/agentic-search]] — Fintool's approach to search: SQL discovery for lazy-loading skills + agentic grep/SQL hybrid for SEC filings. Only loads relevant skills based on context analysis to avoid token waste.
 ||- [[concepts/agentic-theory]] — Sean Goedecke's analysis applying Peter Naur's 1985 "theory building" concept to AI-assisted programming.
 - [[concepts/agentic-web]] — > "The web is transitioning from a human-centric read/write platform to an Agentic Web, where AI systems interact with websites on behalf of users."
 - [[concepts/agentic-workflow-patterns]] — > "The most successful AI systems in 2026 are built around agentic workflow patterns that manage uncertainty, memory, tools, and feedback deliberately. These patterns aren't flashy. They are struct...
@@ -416,7 +417,9 @@
 - [[concepts/attention-mechanism-variants]] — Modern transformer architectures use different attention mechanisms to optimize the trade-off between modeling capacity, compute efficiency, and context length. A prerequisite concept for concepts/...
 - [[concepts/back-of-house-multi-agent-patterns]] — 厨房のメタファーを用いたマルチエージェント・ワークフローパターン。Sarah Chieng (concepts/@milksandmatcha) と [@0xSero] によって2026年4月に提唱。
 - [[concepts/back-of-house-patterns]] — > 共著: milksandmatcha|Sarah Chieng (@MilksandMatcha) + sero|Sero (@0xSero)
+- [[concepts/background-coding-agent]] — Asynchronous cloud-based AI coding agents that run independently, verify their own work, and produce validated PRs. Ramp's Inspect handles ~30% of merged PRs.
 - [[concepts/base-consistency]] — BASE is an alternative consistency model to ACID, designed for distributed systems that prioritize availability over strict consistency. It stands for:
+- [[concepts/delta-updates-redis]] — Real-time streaming pattern where systems send incremental operations (APPEND, PATCH) via Redis Streams instead of full state updates. Used by Fintool for agent UI updates.
 |- [[concepts/behavioral-trait-transmission]] — Language models that share initialization can transmit behavioural traits through training data that is semantically unrelated to those traits — a phenomenon discovered by Anthropic and academic re...
 |- [[concepts/bitter-lesson-harnessing]] — As model capabilities improve through scaling, the role of the harness shifts from implementing logic to orchestrating model behavior. The harness becomes thinner while the model carries more intelligence.
 |- [[concepts/building-effective-agents]]
@@ -589,12 +592,14 @@
 |- [[concepts/logic-tensor-networks]] — Logic Tensor Networks (LTN) is a neurosymbolic framework that combines neural networks with first-order logic reasoning using differentiable logic operators. Developed by Serafini and Garcez, LTN enables end-to-end learning from data while enforcing logical constraints, supporting tasks like knowledge graph completion, relational learning, and constraint-satisfaction problems.
 |- [[concepts/mac-studio-local-ai]] — Using Apple Mac Studio (M3 with 512GB unified memory) as a local inference platform for running frontier-class LLMs (600B–1T+ parameters) without cloud APIs. This approach trades raw throughput for...
 - [[concepts/main-branch-development]] — **Main-Branch Development** is an AI-assisted software development pattern where developers work directly on the `main` branch instead of using feature branches or worktrees. This approach leverage...
+- [[concepts/markdown-based-skills]] — Agent capabilities defined in `.md` files with YAML frontmatter, allowing non-engineers to encode domain-specific methodologies. Shadowing hierarchy: private > shared > public.
 - [[concepts/managed-agents-sre-incident-response]] — Anthropic cookbook: Build an SRE Incident Response Agent with Claude Managed Agents
 |- [[concepts/managed-agents]] — Managed agents are AI agents that can be deployed, configured, and operated without direct coding — a no-code/low-code layer for agent development and management.
 |- [[concepts/monty-sandbox]] — **Monty Sandbox** is Pydantic's Python sandbox execution environment for safely running AI-generated code. Uses sub-interpreter isolation and resource limits to prevent infinite loops and memory exhaustion. Integrated with Pydantic AI and Logfire for secure agent tool execution.
 |- [[concepts/mcp]]
 - [[concepts/megakernel-inference]] — A CUDA kernel optimization that fuses all layers of an LLM into a single dispatch, eliminating CPU round-trips between layer boundaries.
 - [[concepts/memory-architecture]] — Production AI agents require three distinct memory layers — episodic, semantic, and state — unified under a coherent substrate. This architecture is fundamental to context engineering and the desig...
+- [[concepts/modal-sandboxes]] — Isolated cloud VMs (Modal platform) used as execution environments for AI coding agents. Near-instant startup, filesystem snapshots, serverless scaling. Used by Ramp Inspect.
 |- [[concepts/memory-scaling]] — A third scaling axis where agent performance improves via accumulated external memory (Databricks MemAlign, 2026). Distills episodic logs into semantic rules, enabling smaller models to outperform larger ones with rich memory stores.
 |- [[concepts/memory-systems-bitter-lesson]] — Rich Sutton's "Bitter Lesson" principle applied to memory systems in AI agents: architectures that leverage search, computation, and experience iteration at scale consistently outperform hand-crafted memory mechanisms. Key patterns include episodic→semantic distillation, retrieval-augmented generation (RAG), and experience replay.
 |- [[concepts/memory-systems-design-patterns]]
@@ -616,9 +621,11 @@
 |- [[concepts/neurosymbolic-ai]]
 - [[concepts/newsjacking-framework]] — **Origin:** Elvis Sun (@elvissun), January 2026
 - [[concepts/nvidia-dynamo]] — NVIDIA Dynamo is an inference architecture and platform designed specifically for agentic coding workloads, addressing the limitations of traditional inference stacks when handling multi-step agent...
+- [[concepts/s3-first-architecture]] — Data persistence pattern where S3 is the primary source of truth; databases used for indexing only. 11 nines durability, free versioning, human-readable files. Pioneered by Fintool.
 - [[concepts/nvidia-egpu-macos]] — Research into running NVIDIA GPUs as external GPUs (eGPUs) on Apple Silicon Macs via Thunderbolt/USB4, enabled by tinygrad's custom NVIDIA driver (DEXT).
 - [[concepts/offline-evaluation]] — Offline Evaluationは、本番環境にデプロイする前にLLMアプリケーションを体系的に評価するパイプライン。オフラインテスト、人間判定、プロダクションテレメトリの3層で構成。
 - [[concepts/one-person-unicorn]] — A billion-dollar company founded and operated by a single person, enabled by AI agents and the solo-founder-stack.
+- [[concepts/warm-start-optimization]] — Latency reduction technique: pre-initialize execution environments before user explicitly requests them. Typing-triggered warm-up + filesystem snapshots.
 - [[concepts/open-model-consortium]] — The **Open Model Consortium** is a proposed organizational structure for funding and developing frontier-level open-weight AI models through shared investment from multiple companies, rather than r...
 - [[concepts/open-source-ai-destruction]] — **Open Source AI Destruction** describes the emerging crisis where AI coding agents overwhelm open source maintainers with low-quality pull requests, hallucinated bug reports, and spam submissions ...
 - [[concepts/open-source-ai]] — The strategic use of open-source AI models and frameworks to achieve rapid iteration, widespread adoption, and industrial dominance through community-driven feedback loops.
@@ -703,7 +710,11 @@
 - [[entities/claude-perfect-memory]] — Claude Code（AnthropicのAIコーディングエージェント）が持つ**多層記憶システム**の完全指南。Gul Jabeen（@techwithgul.ai）が2026年3月にMediumで公開し、8,194件のブックマーク、170万インプレッションを記録した。
 - [[entities/company-ai-pilled]] — 企業を「AI駆動組織」へ変革するための実践的フレームワーク。Khe Hy（@KheHy）が2026年4月に提唱。
 - [[entities/content-engine]] — AIを活用した**自動化コンテンツ生成・配信パイプライン**。ソロfounderが個人ブランドやビジネスのコンテンツを、チームなしでスケールさせるための基盤。
+- [[entities/fintool]] — Financial services company building production AI agents for DCF valuations, SEC filing analysis. S3-first architecture, Temporal orchestration, Markdown-based skills.
+- [[entities/nicolas-bustamante]] — Technical leader at Fintool. Pioneer of S3-first architecture, markdown-based skills, and AskUserQuestion pattern for financial AI agents.
 - [[entities/lucebox]] — A personal computer built for local AI agents. Open-source project focused on maximizing inference throughput on consumer hardware through custom CUDA kernel optimization.
+- [[entities/inspect]] — Ramp's background coding agent handling ~30% of merged PRs. Modal sandboxes, OpenCode framework, Cloudflare Durable Objects for state.
+- [[entities/opencode]] — Open-source AI coding agent framework. Server-first architecture, typed SDK. Used by Ramp as the foundation for Inspect.
 - [[entities/mac-studio-local-ai]] — Apple Mac Studio（特にM3/M4 Ultra + 最大512GB unified memory構成）を、**フロントティアクラスのLLMをローカルで推論するためのプラットフォーム**として活用するアプローチ。2026年4月にspicyneuron（Elvis Sun）が「6ヶ月後」の検証を公開。
 - [[entities/reflexive-ai]] — Shopify CEO Tobi Lütkeが2025年4月に宣言した**「Reflexive AI usage is now a baseline expectation at Shopify」**。AI使用が単なるオプションではなく、**組織の必須スキル**へ昇格したことを示す。
 - [[entities/solo-founder-stack]] — 2026年のソロfounderがAIを活用して**一人で大企業並みの生産性**を実現するためのツールスタックとアーキテクチャ。「One-Person Unicorn」の具体実装。
