@@ -20,6 +20,7 @@ sources:
   - https://ai.pydantic.dev/capabilities/
   - https://ai.pydantic.dev/hooks/
   - https://pydantic.dev/articles/pydantic-monty
+  - https://github.com/pydantic/pydantic-ai-harness/releases/tag/v0.2.0
 ---
 
 # pydantic-ai-harness
@@ -29,6 +30,10 @@ sources:
 **pydantic-ai-harness** is the official "batteries-included" capability library for [Pydantic AI](https://ai.pydantic.dev/), maintained by the Pydantic team. It provides standalone building blocks — tools, lifecycle hooks, and instructions — that extend agent functionality without requiring framework changes.
 
 The key insight: **Pydantic AI core ships only model/framework-level capabilities** (web search, tool search, thinking). Everything else lives in the harness as modular, pick-and-choose components.
+
+**Important positioning**: This repo is best understood as a **公式インキュベータ兼roadmap** rather than a "多機能な完成品". Capabilities are developed here first, then graduated to core once proven essential and stable. The published API (as of v0.2.0) is essentially just `CodeMode` — the other capabilities listed in the matrix are still in PR stage. The repo structure reflects this: `pydantic_ai_harness/` (current code), `tests/`, and `legacy/pydantic-harness/` (compatibility shim from the pre-rename era).
+
+**Versioning**: The library is on a **0.x policy** — minor version bumps may include breaking changes. v0.1.1 renamed the package from `pydantic-harness` to `pydantic-ai-harness`; the `legacy/` directory preserves backward compatibility. Adoption guidance: treat this as **"公式だが、まだ固めている最中の層"**.
 
 **Positioning in the 3-layer architecture** ([agent-architecture-decomposition]]):
 - **Runtime**: Pydantic Monty (Rust-based secure Python interpreter) — [[concepts/monty-sandbox]]
@@ -115,6 +120,16 @@ agent = Agent(
 ```
 
 **Runtime + Harness coupling**: CodeMode requires `[code-mode]` extra, which installs Monty (the Runtime). The Harness provides the orchestration layer that decides *when* to write code vs. use sequential tool calls.
+
+#### CodeMode as RLM Foundation
+
+CodeMode is the natural foundation for implementing RLM-style agents on pydantic-ai. See [[concepts/code-mode]] for the full "Agent around REPL" pattern — three implementation tiers from minimal (`CodeMode + output function`) to graph-native (`pydantic-graph` + Monty snapshots).
+
+Key architectural principle: **Monty is a REPL sandbox, not an agent host**. Conversation control, output validation, approval, history management, and durability belong on the Pydantic AI side (the "around"); code execution belongs inside Monty (the "REPL"). This separation keeps each layer focused and composable.
+
+#### Deferred Tool Calls — Current Status
+
+The CodeMode documentation historically stated that "approval/deferred tools are excluded from the sandbox." However, v0.2.0 release notes introduced `HandleDeferredToolCalls` for inline resolution. The current implementation branches: if a handler exists, the deferred call is resolved; if not, it errors. So the accurate reading is **"not fully forbidden — handler-required and actively evolving"**, rather than the earlier "complete prohibition." The documentation may lag behind the implementation here.
 
 ### Full Capability Matrix
 

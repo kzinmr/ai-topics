@@ -1,3 +1,10 @@
+## [2026-04-30] Agent around REPL: RLM Patterns on Pydantic AI
+
+- [[concepts/code-mode]] — Added "Agent around REPL: 3つの実装パターン" (minimal CodeMode+output function, DSPy-compatible explicit loop, graph-native durable execution), "Agent around REPL vs Agent on REPL" architectural principle, and "Deferred Tool Calls" status update (HandleDeferredToolCalls in v0.2.0)
+- [[concepts/pydantic-ai-harness]] — Added "公式インキュベータ兼roadmap" positioning, v0.x versioning policy details, CodeMode as RLM Foundation section, and deferred tool calls current status
+- [[concepts/dspy-rlm.md]] — Added comparison table (DSPy.RLM vs pydantic-ai native RLM), cross-references to CodeMode/Monty/harness pages
+- **Key architectural insight**: Monty is a REPL sandbox solution, not an agent host. The cleanest RLM implementation on pydantic-ai follows "Agent around REPL" — conversation control, output validation, approval, history management, and durability on the Pydantic AI side; code execution inside Monty. Three maturity tiers: (1) CodeMode + output function (recommended, minimal), (2) RunCode|FinalAnswer explicit loop (DSPy-compatible), (3) pydantic-graph nodes + Monty snapshots (production-grade, durable).
+
 ## [2026-04-30] Pydantic AI Harness — Runtime + Harness Full Stack Investigation
 
 - [[concepts/pydantic-ai-harness]] — Fully expanded: capability model abstraction (`AbstractCapability`), full capability matrix (CodeMode ✅, FileSystem 🚧, Memory 🚧, Sub-agents 🚧, Guardrails 🚧, etc.), graduation model (harness → core), AICA "Ralph loop" workflow
