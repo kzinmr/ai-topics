@@ -1,148 +1,102 @@
 ---
-title: "DSPy — Declarative Self-improving Python for LMs"
-tags: [training, concept, ai-agents, llm, prompting, rag, evaluations]
-created: 2026-04-24
-updated: 2026-04-29
+title: "DSPy — Declarative Self-improving Python"
 type: concept
+created: 2026-04-30
+updated: 2026-04-30
+tags: [dspy, prompt-optimization, llm-engineering, declarative-programming]
 sources:
   - raw/articles/crawl-2026-04-29-dspy-adoption-gap-khattabs-law.md
+  - https://github.com/stanfordnlp/dspy
+related:
+  - concepts/agentic-engineering
+  - concepts/harness-engineering
+  - concepts/prompt-engineering
 ---
 
-# DSPy: Declarative Self-improving Language Systems
+# DSPy — Declarative Self-improving Python
 
-**DSPy** (Declarative Self-improving Python for LMs, "dee-spai") is a **declarative LM programming framework** developed by Stanford NLP Group (Omar Khattab, Arnav Singhvi et al.). It replaces manual prompt engineering with a compilable, optimizable program specification.
+**DSPy** (Declarative Self-improving Python) is a framework by Stanford NLP (led by Omar Khattab) for building AI systems with declarative programming and automatic prompt optimization. It separates the flow of a program (modules) from the parameters of that flow (prompts), enabling systematic optimization.
 
-## Core Philosophy: Prompting is Not Programming
+## Khattab's Law (March 2026)
 
-> *"Making broad progress in AI is not restricted to training larger models, but can take the form of designing general tools that grant AI developers more control."* — Omar Khattab (2024)
+Named after DSPy creator Omar Khattab:
 
-**Traditional approach (prompt engineering):**
-1. Break problem into steps
-2. Write prompts by trial and error for each step
-3. Rewrite prompts when model changes
-4. Pipeline quality depends directly on prompt quality
+> **Any sufficiently complex AI system eventually reinvents DSPy's core abstractions on its own:** typed I/O signatures, composable modules, prompt versioning, retry logic, and model-swapping shims. Teams do this ad hoc, buggily, and after significant pain.
 
-**DSPy approach (declarative programming):**
-1. Declare input/output contracts via **Signature**
-2. Compose inference patterns via **Module**
-3. Define success criteria via **Metric**
-4. Optimize automatically via **Teleprompter**
+## The Seven-Stage LLM Pipeline Evolution
 
-This mirrors the shift PyTorch brought to deep learning — from manual weight tuning (NumPy) to declarative module composition with automatic optimization (backprop → Teleprompter).
+Skylar Payne (Agent Wars, March 2026) traces the canonical evolution:
 
-## Architecture Overview
+1. **Raw API call** — simple, direct
+2. **Add retry logic** — error handling, rate limiting
+3. **Add prompt templates** — versioning, organization
+4. **Add Pydantic parsing** — structured output validation
+5. **Add RAG retrieval** — external context integration
+6. **Add eval scaffolding** — testing framework
+7. **Result** — a fragile, hand-rolled framework that recreates DSPy poorly
 
-DSPy's architecture is built on three abstractions:
+## Core Abstractions
 
-- **[[concepts/dspy-architecture|Signatures]]** — Declarative input/output contracts (model-independent)
-- **[[concepts/dspy-architecture|Modules]]** — Composable inference patterns (e.g., ChainOfThought, ReAct)
-- **[[concepts/dspy-architecture|Teleprompters]]** — Automatic optimization engine (compile-time)
+| Concept | Description |
+|---|---|
+| **Signatures** | Typed I/O declarations (what goes in, what comes out) |
+| **Modules** | Composable building blocks (ChainOfThought, ReAct, etc.) |
+| **Optimizers** | Automatic prompt tuning (MIPROv2 for Bayesian optimization) |
+| **Teleprompters** | Bootstrap and compile multi-stage programs |
 
-See [[concepts/dspy-architecture]] for the full architectural deep-dive.
+## MIPROv2 — Bayesian Prompt Optimization
 
-## Modules and Pipeline Patterns
+DSPy's actual technical differentiator. MIPROv2 performs Bayesian optimization over prompt space, automatically finding better demonstrations and instructions without manual prompt engineering.
 
-DSPy provides a rich set of composable modules (`dspy.Predict`, `dspy.ChainOfThought`, `dspy.ReAct`, `dspy.ProgramOfThought`, `dspy.MultiChainComparison`) and supports patterns like RAG, multi-hop search, and multi-agent debate — all **model-independent**.
+> **Key insight:** MIPROv2 is under-discussed in adoption articles but represents the framework's true competitive advantage.
 
-See [[concepts/dspy-modules]] for the complete module reference and pipeline pattern examples.
+## Production Users
 
-## Optimization Techniques
+Companies using DSPy in production: **JetBlue, Databricks, Replit, VMware, Sephora**
 
-DSPy offers three complementary optimization approaches:
+Reported benefits:
+- Faster model swaps
+- More maintainable pipelines
+- Less plumbing work
 
-1. **[[concepts/dspy-optimization|Teleprompters]]** — Data-driven prompt optimization (BootstrapFewShot, MIPROv2, COPRO, Ensemble)
-2. **[[concepts/dspy-optimization|Assertions]]** — Runtime validation with automatic self-correction loops
-3. **Fine-Tuning + Prompt Optimization synergy** — Combined approach yields +23% improvement (synergistic, not additive)
+## The Download Gap (Adoption Paradox)
 
-See [[concepts/dspy-optimization]] for detailed coverage.
+| Framework | Monthly Downloads |
+|---|---|
+| LangChain | ~222M |
+| DSPy | ~4.7M |
 
-## Paradigm Comparisons
+Despite technical merit, DSPy's adoption remains limited. Key barriers:
 
-| Dimension | DSPy | LangChain | RLMs | GEPA |
-|-----------|------|-----------|------|------|
-| **Philosophy** | Declarative (what) | Imperative (how) | Recursive (self-manage) | Evolutionary |
-| **Optimization** | Compile-time | Manual | Inference-time | Generational |
-| **Control** | Teleprompter | Developer | LM itself | Algorithm |
-| **Best for** | Repetitive pipelines | Broad integrations | Ultra-long context | Deep prompt evolution |
+1. **Evaluation-first mental model** — DSPy requires labeled training/evaluation data before optimization works
+2. **Steep learning curve** — Declarative paradigm requires shift from imperative thinking
+3. **Academic origins** — Designed for benchmarks with ground-truth labels; production systems often lack this
+4. **Exploratory phase mismatch** — Teams in early product iteration need speed; DSPy's optimization overhead impedes iteration
 
-See [[concepts/dspy-comparisons]] for the full comparison tables.
+## When DSPy is Valuable
 
-## Design Philosophy Evolution
+- **Stable, well-defined tasks** with clear evaluation metrics
+- **Teams ready for systematic prompt optimization** at scale
+- **Multi-model deployments** where model-swapping shims matter
+- **Production systems** with labeled data available
 
-| Phase | Version | Key Innovation |
-|-------|---------|----------------|
-| **Phase 1** | DSP (2022) | Manual prompt wrappers, no optimization |
-| **Phase 2** | DSPy v1 (2023) | Teleprompters, Signature/Module abstractions (ICLR 2024 Spotlight) |
-| **Phase 3** | DSPy v2 (2024) | Assertions, Fine-tuning integration, MIPROv2 |
-| **Phase 4** | DSPy v3 (2025+) | GEPA integration, multi-module GRPO, RLM convergence |
+## When to Use Alternatives
 
-### Khattab's Law: The Production Adoption Gap (2026)
+- **Exploratory/prototype phase**: Use LiteLLM or Vercel AI SDK for simpler model abstraction
+- **No labeled data**: DSPy optimizers require ground-truth signals
+- **Rapid iteration needed**: Hand-tuned prompts may be faster initially
 
-Skylar Payne (March 2026) introduced **"Khattab's Law"** — named after DSPy creator Omar Khattab — which holds that *any sufficiently complex AI system eventually reinvents DSPy's core abstractions on its own*: typed I/O signatures, composable modules, prompt versioning, retry logic, and model-swapping shims. Teams do this ad hoc, buggily, and after significant pain, tracing a canonical seven-stage evolution:
+## Relationship to Agent Engineering
 
-1. Raw API call → 2. Add retry logic → 3. Add prompt templates/versioning → 4. Add Pydantic parsing → 5. Add RAG retrieval → 6. Add eval scaffolding → 7. A fragile hand-rolled framework that poorly recreates DSPy
+DSPy's declarative approach aligns with agentic engineering principles:
+- **Specification-Driven**: Signatures define expected behavior upfront
+- **Composable**: Modules chain like agent tools
+- **Optimizable**: Teleprompters auto-improve agent behavior
+- **Testable**: Evaluation metrics baked into the framework
 
-**Production users** include JetBlue, Databricks, Replit, VMware, and Sephora — reporting faster model swaps, more maintainable pipelines, and less plumbing overhead.
+> DSPy represents the "harness engineering" philosophy applied to prompt optimization — the framework itself becomes the agent's cognitive architecture.
 
-**Download gap:** DSPy ~4.7M monthly downloads vs LangChain ~222M, indicating significant adoption friction despite technical merit.
-
-### Adoption Barriers
-
-Despite the argument for DSPy, adoption faces genuine obstacles:
-
-1. **Labeled data requirement:** DSPy's optimization loop requires labeled training/evaluation datasets — a researcher's discipline that many product teams lack
-2. **Exploratory friction:** The evaluation-first mental model can impede iteration speed for teams figuring out *what* their LLM system should do
-3. **Lighter alternatives:** LiteLLM and Vercel AI SDK handle model abstraction and typed outputs without DSPy's complexity
-4. **Academic roots:** Originally designed for benchmarks with ground-truth labels; production systems often don't have that luxury
-5. **MIPROv2 underutilized:** DSPy's true differentiator — Bayesian prompt optimization — is rarely used even by adopters, suggesting the framework's main value may be its type-safe pipeline abstractions rather than its optimization engine
-
-DSPy is genuinely valuable for teams with stable, well-defined tasks requiring systematic prompt optimization at scale, but its positioning as a universal antidote to LLM engineering pain is undercut by the labeled data requirement and the availability of lighter-weight alternatives for simpler use cases.
-
-## RLM Bundled in DSPy v3.1.3: Multi-layered Sandboxing
-
-DSPy v3.1.3 bundles RLM (Recursive Language Models) with a notable **multi-layered sandboxing architecture**: `rlm on pyodide on deno`. This creates a defense-in-depth execution model where:
-
-- **Deno** provides the outer runtime with capability-based permissions (filesystem, network access control)
-- **Pyodide** (Python compiled to WebAssembly) provides the inner sandbox, with a 128MB memory ceiling — variables exceeding this are passed via JSON-RPC through a virtual filesystem (`inject_var` method)
-- **RLM** runs atop this stack, using the sandboxed Python REPL to interact with its own prompt as data
-
-This pattern originates from Simon Willison's [Pyodide sandboxing on Deno](https://til.simonwillison.net/deno/pyodide-sandbox), which demonstrated that combining Deno's permission model with Pyodide's WASM isolation creates a practical sandbox for untrusted LLM-generated code. DSPy's adoption of this architecture signals that **secure code execution is becoming a first-class concern for agentic frameworks**, not an afterthought.
-
-The Pyodide 128MB FFI crash ceiling is a known limitation — large data payloads require JSON-RPC virtual filesystem transfer rather than direct memory sharing. This is an acceptable tradeoff for security, but worth monitoring as RLM usage scales.
-
-## Application Guidelines
-
-**Use DSPy when:**
-- Same task is **repeated** in a pipeline
-- **Evaluation metrics** are clearly defined
-- 10-50+ training examples are available
-- Pipeline runs across multiple LLMs
-- Prompt maintenance cost is high
-
-**Avoid DSPy when:**
-- One-off exploratory queries (no evaluation data)
-- Highly **dynamic tasks** (frequent Signature changes)
-- **Real-time adaptation** needed (consider RLMs)
-- Broad **ecosystem integrations** critical (consider LangChain)
-
-## Key Papers
-
-| Date | Title | Insight |
-|------|-------|---------|
-| Oct 2023 | DSPy: Compiling Declarative LM Calls (ICLR 2024) | Teleprompter paradigm |
-| Dec 2023 | DSPy Assertions | Self-correcting pipelines |
-| Jul 2024 | Fine-Tuning and Prompt Optimization | Synergistic combination (+23%) |
-| 2025 | GEPA | Genetic prompt evolution |
-| 2025 | RLMs | Recursive context processing |
-
----
-
-## See Also
-
-- [[concepts/dspy-architecture]] — The three core abstractions
-- [[concepts/dspy-modules]] — Module reference and pipeline patterns
-- [[concepts/dspy-optimization]] — Teleprompters, Assertions, Fine-Tuning
-- [[concepts/dspy-comparisons]] — DSPy vs LangChain, RLMs, GEPA
-- [[concepts/gepa]] — Genetic prompt optimization
-- [[concepts/rlms]] — Recursive Language Models
-- [[omar-khattab]] — Creator of DSPy
+## Sources
+- [If DSPy Is So Great, Why Isn't Anyone Using It?](https://agent-wars.com/news/2026-03-24-dspy-adoption-gap-llm-engineering) — Skylar Payne, Agent Wars, March 2026
+- [DSPy GitHub](https://github.com/stanfordnlp/dspy) — Stanford NLP
+- [DSPy Documentation](https://dspy.ai/)

@@ -3,34 +3,72 @@ title: "Mistral AI"
 type: entity
 created: 2026-04-30
 updated: 2026-04-30
-tags: [company, platform, ai-agents, orchestration]
+tags: [company, ai-lab, open-weights, coding-agents, mistral]
 sources:
-  - raw/articles/2026-04-28_mistralai-workflows.md
-  - raw/articles/2026-04-28_mistral-voxtral-tts.md
+  - raw/articles/mistral-medium-3-5-vibe-remote-agents.md
+  - https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5
+related:
+  - concepts/coding-agents
+  - concepts/local-llm
+  - entities/anthropic
+  - entities/openai
 ---
 
 # Mistral AI
 
-Mistral AI is a French AI company that develops open-weight language models and enterprise AI infrastructure. Known for the Mistral, Mixtral, and Voxel model families.
+**Mistral AI** is a French AI research laboratory founded in 2023, known for developing open-weight language models and agent frameworks. As of April 2026, Mistral has expanded into remote coding agents and enterprise AI orchestration.
 
-## Key Products
+## Mistral Medium 3.5 (April 2026)
 
-### Mistral Voxtral TTS
-- Open-weights text-to-speech model
-- Combines autoregressive semantic token generation with flow-matching acoustic token synthesis
-- Announced April 2026
+### Model Specifications
+- **Architecture**: 128B dense model (single weight set)
+- **Context Window**: 256K tokens
+- **Capabilities**: Instruction following, reasoning, and coding in a single model
+- **Vision**: Trained from scratch with variable size and aspect ratio vision encoder
+- **Inference**: Adjustable "reasoning effort" per request (quick answers to complex agent execution)
 
-### Mistral Workflows (April 2026)
-- Public preview of **Workflows**, the orchestration layer for enterprise AI
-- Addresses the gap between having capable models and running them reliably in production
-- Takes AI-powered business processes from experimental to production-grade
-- Enterprise-focused orchestration with reliability guarantees
+### Benchmarks
+- **SWE-bench Verified**: 77.6% (surpasses Devstral 2, Qwen3.5 397B)
+- **τ³-Telecom**: 91.4
 
-## Position in the AI Ecosystem
-Mistral AI occupies the space between open-source model providers and enterprise AI infrastructure companies. Their **Workflows** product positions them as a direct competitor to platforms that provide orchestration and reliability layers for AI agents.
+### Licensing & Deployment
+- Open-weight release under modified MIT license
+- Available on Hugging Face
+- Self-hostable on minimum 4 GPUs
+- Hosted via NVIDIA NIM on build.nvidia.com
 
-## Related
-- [[entities/anthropic]] — Competitor in enterprise AI
-- [[entities/openai]] — Competitor in orchestration (Symphony)
-- [[concepts/agent-orchestration-frameworks]] — Mistral Workflows fits here
-- [[concepts/harness-engineering]] — Workflows as production orchestration
+## Mistral Vibe: Remote Coding Agent (April 2026)
+
+**Vibe** is Mistral's cloud-based coding agent architecture that shifts coding from local laptops to isolated cloud sandboxes.
+
+### Key Features
+- **Asynchronous Execution**: Start a task and walk away; receive notification on completion
+- **Teleportation**: Seamlessly transfer local CLI sessions to cloud, preserving session history, task state, and approvals
+- **Parallelism**: Run multiple coding sessions simultaneously without developer bottlenecks
+- **Integrations**: GitHub (code/PRs), Linear/Jira (issues), Sentry (incidents), Slack/MS Teams (reports)
+
+### Ideal Use Cases
+> "Suited for high-volume, well-defined work that takes developer time but not judgment: module refactoring, test generation, dependency upgrades, CI investigation, bug fixes."
+
+## Le Chat Work Mode (Preview)
+
+Work Mode transforms Le Chat into an execution backend for multi-step projects and cross-tool actions:
+- **Cross-tool Workflows**: Aggregate data from email, calendar, messaging (e.g., meeting prep with attendee context)
+- **Research & Synthesis**: Deep investigation of web and internal documents, structured report generation
+- **Admin Automation**: Inbox triage, reply drafting, Jira issue creation from chat discussions
+- **Transparency & Safety**: All tool calls and "reasoning rationale" visible; explicit approval required for sensitive actions
+
+## API Pricing (per 1M tokens)
+| Component | Price |
+|---|---|
+| Input | $1.50 |
+| Output | $7.50 |
+
+## Ecosystem Context
+- Part of the broader European AI ecosystem
+- Competes with Anthropic, OpenAI in open-weight model space
+- Complements open-source agent frameworks like Claude Code and OpenAI Codex
+
+## Sources
+- [Vibe Remote Agents + Mistral Medium 3.5](https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5) — Mistral AI Blog, April 2026
+- [Mistral-Medium-3.5 on Hugging Face](https://huggingface.co/mistralai/Mistral-Medium-3.5)

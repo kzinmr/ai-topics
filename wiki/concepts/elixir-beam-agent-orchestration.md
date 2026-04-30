@@ -1,36 +1,61 @@
 ---
-title: "Elixir/BEAM for Agent Orchestration"
+title: "Elixir/BEAM for AI Agent Orchestration"
 type: concept
-created: 2026-04-19
-updated: 2026-04-19
-tags: [elixir, beam, orchestration, erlang, process-supervision, openai-symphony]
-aliases: ["beam-agents", "otp-agent-orchestration", "elixir-for-agents"]
+created: 2026-04-30
+updated: 2026-04-30
+tags: [elixir, beam, otp, agent-orchestration, fault-tolerance, concurrency, openai-symphony]
 sources:
- - raw/articles/elixir-beam-agent-orchestration-2026.md
+  - raw/articles/elixir-beam-agent-orchestration-2026.md
+  - raw/articles/openai-symphony-codex-orchestration.md
+related:
+  - concepts/harness-engineering
+  - concepts/openai-symphony
+  - concepts/multi-agent-orchestration
+  - concepts/agent-lifecycle
 ---
 
-# Elixir/BEAM for Agent Orchestration
+# Elixir/BEAM for AI Agent Orchestration
 
-Elixir/BEAM（Erlang仮想マシン）をAIエージェントオーケストレーションに活用するパターン。[[concepts/openai-symphony]] のRyan Lopopoloが採用したアプローチ。
+Using the Erlang VM (BEAM) and OTP patterns for orchestrating multi-agent systems, pioneered by Ryan Lopopolo in OpenAI Symphony.
 
-## なぜElixir/BEAMか
+## Why Elixir/BEAM for Agents?
 
-Ryan Lopopolo（OpenAI Frontier）はOpenAI SymphonyにElixir/BEAMを選択した。理由はBEAMが telecommunications 障害耐性のために設計されたことを活用するため。
+### 1. Native Process Supervision
 
-### BEAMのコア機能
+BEAM was designed for telecommunications fault tolerance — exactly the reliability profile needed for agent orchestration:
 
-| 機能 | 説明 | エージェントへの適用 |
-|------|------|---------------------|
-| **轻型プロセス** | 数百万の軽量プロセス対応 | 各エージェント独立的 |
-| **プロセス間通信** | 共有メモリなし、メッセージパッシング | エージェント間通信 |
-| **耐故障性** | スーパーバイザ木による自動再起動 | エージェント障害から回復 |
-| **動的监督管理** | 実行時プロセス管理 | 動的エージェントプール |
+```
+gen_server behavior
+  ├── handle_call (synchronous messages)
+  ├── handle_cast (asynchronous messages)
+  └── handle_info (system messages like exits)
 
-## プロセススーパビジョンパターン
+Supervisor tree
+  ├── AgentSupervisor
+  │   ├── Agent1
+  │   ├── Agent2
+  │   └── Agent3
+  └── HarnessSupervisor
+      ├── Harness1
+      └── Harness2
+```
 
-### スーパーバイザ木
+**Process supervision** means:
+- If an agent crashes, the supervisor restarts it
+- If a harness fails, the supervisor can recover state
+- The system gracefully handles partial failures
+
+### 2. Massive Concurrency
+
+BEAM handles millions of lightweight processes:
+- Each agent is a separate process
+- Each tool call can be a separate process
+- Message passing between processes is fast and reliable
+
+### 3. Fault Tolerance Patterns
 
 ```elixir
+# Supervision strategy: one_for_one (restart failed child only)
 defmodule AgentSupervisor do
   use Supervisor
 
@@ -44,88 +69,101 @@ defmodule AgentSupervisor do
 end
 ```
 
-### 再起動戦略
+**Key patterns:**
+- `:one_for_one` — restart only the failed process
+- `:one_for_all` — restart all children if any fails
+- `:rest_for_one` — restart failed process and those started after it
 
-| 戦略 | 動作 | 適用場面 |
-|------|------|---------|
-| `:one_for_one` | 失敗したプロセスのみ再起動 | 独立したエージェント |
-| `:one_for_all` | 1つが失敗した場合全て再起動 | 密な結合タスク |
-| `:rest_for_one` | 失敗したプロセスとそれ以降を再起動 | パイプラインタスク |
+### 4. Message Passing Concurrency
 
-### GenServer — ステートフルエージェント
+Agents communicate via message passing, not shared state:
 
 ```elixir
-defmodule AgentProcess do
-  use GenServer
+# Send a task to an agent
+send(agent_pid, {:task, task_id, task_spec})
 
-  # 起動
-  def start_link(config) do
-    GenServer.start_link(__MODULE__, config, name: __MODULE__)
-  end
-
-  # タスク受領（非同期的）
-  def handle_cast({:task, task_id, spec}, state) do
-    result = execute_task(spec)
-    {:noreply, %{state | results: Map.put(state.results, task_id, result)}}
-  end
-
-  # タスク受領（同期的）
-  def handle_call({:get_result, task_id}, _from, state) do
-    {:reply, Map.get(state.results, task_id), state}
-  end
+# Agent receives and processes
+def handle_info({:task, task_id, task_spec}, state) do
+  result = execute_task(task_spec)
+  {:noreply, %{state | results: Map.put(state.results, task_id, result)}}
 end
 ```
 
-## OpenAI Symphonyアーキテクチャ
+Benefits:
+- No shared memory contention
+- Failures isolated to message boundaries
+- Natural audit trail (all messages logged)
+
+### 5. OTP (Open Telecom Platform) Integration
+
+Elixir's OTP provides battle-tested patterns for:
+- **GenServer** — Stateful agent processes
+- **Registry** — Dynamic agent discovery
+- **ETS** — Shared state tables
+- **Phoenix Channels** — Real-time communication
+
+## OpenAI Symphony Architecture
+
+OpenAI Symphony uses Elixir/BEAM to orchestrate multiple coding agents:
 
 ```
 ┌─────────────────────────────────────────────────────┐
 │ Symphony Orchestrator (Elixir/OTP)                  │
 ├─────────────────────────────────────────────────────┤
-│ AgentPool (動的、スーパーバイズ済み)                  │
+│ AgentPool (dynamic, supervised)                     │
 │ ┌─────────┐ ┌─────────┐ ┌─────────┐               │
 │ │ Agent 1 │ │ Agent 2 │ │ Agent N │               │
 │ └─────────┘ └─────────┘ └─────────┘               │
 ├─────────────────────────────────────────────────────┤
-│ HarnessRegistry (ETS支援)                           │
-│ エージェント↔実行ハーネス マッピング                  │
+│ HarnessRegistry (ETS-backed)                        │
+│ Maps agents to their execution harnesses            │
 ├─────────────────────────────────────────────────────┤
 │ TaskQueue (GenStage/dispatch)                       │
-│ バックプレッシャー対応タスク分散                      │
+│ Backpressure-aware task distribution                │
 └─────────────────────────────────────────────────────┘
 ```
 
-### Symphonyの実績
+### Key Symphony Features
 
-- **3-5 PR/日 → 75 PR/週**: 手動比15倍改善
-- **非インタラクティブ**: 初期spec以降人間の介在なし
-- **Elixirネイティブ**: Ryan LopopoloがBEAMのプロセススーパビジョンを選択
+1. **SPEC.md-driven**: Agents receive full specification, implement in any language
+2. **3-5 PR/day → 75 PR/week**: 15x improvement over manual
+3. **Non-interactive**: No human in the loop after initial spec
+4. **Elixir-native**: Ryan Lopopolo chose BEAM for its process supervision
 
-## Harness Engineeringとの関係
-
-[[concepts/harness-engineering]] はエージェント実行環境を構築。Elixir/BEAMは以下の調整層を提供：
-
-|  concern | Harness Engineering | Elixir/BEAM 解決策 |
-|----------|---------------------|-------------------|
-| エージェントライフサイクル | エージェント起動/停止 | スーパーバイザ木 |
-| 状態管理 | ハーネス状態 | GenServer状態 |
-| ツール実行 | MCPツール | GenServerメッセージパッシング |
-| 障害回復 | 再起動戦略 | OTPスーパーバイザ戦略 |
-| 並行性 | 並列エージェント | BEAMプロセス（数百万） |
-
-## 既存概念との接続
-
-- [[concepts/openai-symphony]] — Symphonyの詳細（Ryan Lopopolo作）
-- [[concepts/agent-team-swarm]] — マルチエージェントチームパターン
-- [[concepts/harness-engineering]] — エージェント実行環境設計
-- [[ryan-lopopolo]] — Symphonyの作者、Harness Engineering提唱者
-
-## 主要引用
+### Quote from Interviews
 
 > "The process supervision and the gen servers are super amenable to the type of process orchestration that we're doing here."
 
 > "When we turn the spec into Elixir, where like the model takes a shortcut... it has all these primitives that it can make use of in this lovely runtime that has native process supervision."
 
-## ソース
+## Relationship to Harness Engineering
 
-- [Elixir/BEAM for Agent Orchestration](raw/articles/elixir-beam-agent-orchestration-2026.md) — Ryan Lopopolo, OpenAI Frontier, 2026
+Harness Engineering builds agent execution environments. Elixir/BEAM provides the **orchestration layer** for managing multiple harnesses:
+
+| Concern | Harness Engineering | Elixir/BEAM Solution |
+|---------|---------------------|----------------------|
+| Agent lifecycle | Start/stop agents | Supervisor trees |
+| State management | Harness state | GenServer state |
+| Tool execution | MCP tools | GenServer message passing |
+| Failure recovery | Restart strategies | OTP supervision strategies |
+| Concurrency | Parallel agents | BEAM processes (millions) |
+
+## When to Use BEAM for Agent Orchestration
+
+**Good fit:**
+- Multi-agent systems with 10+ concurrent agents
+- Systems requiring fault tolerance and graceful degradation
+- Long-running agent orchestration (hours/days)
+- Systems needing natural audit trails
+
+**Consider alternatives:**
+- Single-agent workflows (Python + subprocess is simpler)
+- Quick prototyping (LangGraph/AutoGen may be faster)
+- When team lacks Elixir expertise
+
+## See Also
+- [[concepts/harness-engineering]]
+- [[concepts/openai-symphony]]
+- [[concepts/multi-agent-orchestration]]
+- [[concepts/agent-lifecycle]]
+- [[concepts/agent-orchestration-patterns]]
