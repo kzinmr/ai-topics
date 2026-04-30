@@ -18,6 +18,8 @@ sources: []
 
 Turnbull is a regular speaker at search industry conferences:
 
+- **\"How To Build Your First Agentic Search Application\"** (Feb 2026, Vanishing Gradients podcast): 35-minute interview covering the practical implementation side of agentic search — passive vs active search spectrum, core tool-calling loop in code, the harness validation loop with LLM-as-Judge, long-running agents/memory compaction, and build-vs-buy decisions (Pydantic AI vs hand-rolling). [[raw/articles/2026-02-20_doug-turnbull-build-first-agentic-search-app]]
+
 - **\"Rag is the What. Agentic search is the How.\"** (April 2026): 54-minute talk tracking the paradigm shift from classical RAG to agentic search — arguing that complexity moves from retrieval to the agent+harness, and that "dumb retrievers" (BM25, grep) work best with agent reasoning. Explicitly connects to SID-1, semantic grep, and scaffold+tool design. [[raw/articles/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how]]
 
 - **Berlin Buzzwords / Haystack EU** (2024): "Learning to Rank for Reddit Search: A Project Retro" with Charles Njoroge

@@ -1,3 +1,13 @@
+## [2026-04-30] Doug Turnbull — "How To Build Your First Agentic Search Application" (Feb 2026, Vanishing Gradients)
+
+- Expanded [[concepts/agentic-search]] — Added "Practitioner Implementation: The Tool-Calling Loop" section under Level 2 (Harness Engineering). Concrete 6-step implementation loop connecting the harness layer to Fintool's SQL-based skill discovery pattern.
+- Expanded [[entities/doug-turnbull-core-ideas]] — Added "The Agentic Search Implementation Loop" section with core tool-calling loop, harness validation loop ("try harder" pattern), long-running agents & memory compaction direction, and build-vs-buy guidance (Pydantic AI vs hand-rolling). Also added "Passive → Proactive → Active (Agentic) Spectrum" framework.
+- Enriched [[entities/doug-turnbull-speaking]] — Added interview to Conference Talks list.
+- Saved raw article: raw/articles/2026-02-20_doug-turnbull-build-first-agentic-search-app.md
+- Source: https://www.youtube.com/watch?v=AJPH9kpN3Sc
+
+---
+
 ## [2026-04-30] Doug Turnbull — "RAG Users Want Affordances, Not Vectors" (Dec 2025)
 
 - Expanded [[concepts/agentic-search]] — Added cross-reference to foundational article in Level 1 (IR Research): Turnbull's practitioner critique of vector-centric RAG embedding crowding, threshold problem, in-domain nuance echoes the academic findings. Added raw article to sources frontmatter and sources section.

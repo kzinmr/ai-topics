@@ -18,6 +18,7 @@ sources:
   - raw/articles/2026-03-30_claude-web-search-dynamic-filtering.md
   - raw/articles/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how.md
   - raw/articles/2025-12-09_doug-turnbull-rag-users-want-affordances.md
+  - raw/articles/2026-02-20_doug-turnbull-build-first-agentic-search-app.md
   - https://arxiv.org/abs/2602.21456
   - https://arxiv.org/abs/2603.20432
   - https://www.sid.ai/research/sid-1-technical-report
@@ -146,12 +147,27 @@ Rather than loading all skills/tools upfront, the agent queries a structured dat
 
 Fintool's agents need to answer questions about SEC filings (10-K, 10-Q, proxy statements). Instead of loading all 50+ analytical skills into context:
 
-```
+```markdown
 User asks: "What's the company's R&D spend trend?"
 → SQL query finds skills related to "financial metrics", "trend analysis"
 → Only those skills are loaded into context
 → Agent executes with focused capability set
 ```
+
+### Practitioner Implementation: The Tool-Calling Loop
+
+In his February 2026 Vanishing Gradients interview [[raw/articles/2026-02-20_doug-turnbull-build-first-agentic-search-app]], Turnbull described the concrete agentic search implementation loop at the harness level:
+
+```
+1. Agent receives query + system prompt with tool descriptions
+2. Agent decides: call tool (search) or generate final answer
+3. Search results → structured observations
+4. Agent reflects on relevance → reformulates if needed
+5. Outer harness validates output against quality criteria
+6. "Try harder" feedback loop if below threshold
+```
+
+This mirrors the SQL-based skill discovery pattern (Fintool) above — both are harness-layer orchestration patterns where the agent's tool selection is managed not by the LLM alone, but by an outer loop that imposes quality constraints.
 
 ---
 
@@ -369,5 +385,6 @@ The IR-layer findings are based on:
 - [Agentic Search Is Having a Grep Moment](https://softwaredoug.com/blog/2026/04/06/agentic-search-is-having-a-grep-moment) — Doug Turnbull (2026). Practitioner perspective on grep vs search harness architecture.
 - [RAG Users Want Affordances, Not Vectors](https://softwaredoug.com/blog/2025/12/09/rag-users-want-affordances-not-vectors) — Doug Turnbull (2025). Foundational critique of vector-centric RAG: embedding crowding, threshold problem, in-domain nuance, and the affordance-based alternative of structured schema extraction via LLMs.
 - [Rag is the What. Agentic search is the How. (YouTube)](https://www.youtube.com/watch?v=UXQ916WRK0A) — Doug Turnbull (2026). 54-minute talk: full architectural critique of RAG paradigm shift toward agentic search, with four-stage unwinding and SID-1 endorsement.
+- [How To Build Your First Agentic Search Application (YouTube)](https://www.youtube.com/watch?v=AJPH9kpN3Sc) — Doug Turnbull (2026, Vanishing Gradients). 35-minute interview: passive→active spectrum, tool-calling loop, harness validation, long-running agents, build-vs-buy.
 - [Lessons from Building AI Agents in Financial Services](raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md) — Agentic search as skill discovery in Fintool.
 - [Text Ranking in Deep Research (Code)](https://github.com/ChuanMeng/text-ranking-in-deep-research) — Open-source code and data.

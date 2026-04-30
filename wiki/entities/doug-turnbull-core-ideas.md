@@ -83,6 +83,18 @@ General embedding leaderboards do not reflect industry performance:
 
 He calls this gap **"RAG's big blindspot"** — the lack of engagement-based evaluation in an era obsessed with LLM judges.
 
+### The Passive → Proactive → Active (Agentic) Spectrum
+
+In his February 2026 Vanishing Gradients interview [[raw/articles/2026-02-20_doug-turnbull-build-first-agentic-search-app]], Turnbull introduced a spectrum framework for understanding when agentic search is needed:
+
+| Mode | Description | Example |
+|------|------------|---------|
+| **Passive** | User types query → gets results. Single-shot. | Traditional Google search |
+| **Proactive** | User manually iterates (spreadsheet, open tabs). User *is* the agent. | Manually vetting 100 job postings |
+| **Active (Agentic)** | Agent automates the proactive loop. | Agent iterates results, evaluates, reformulates |
+
+The key insight: users who do "proactive" work (copy-pasting into spreadsheets, opening tabs, comparing results) are the **ideal target** for agentic search — they're already doing the loop manually. The agent just automates what the user was already doing.
+
 ### The Affordances Solution
 Turnbull invokes Donald Norman's **affordances** concept: users want to manipulate data using specific selectors, not just nearest-neighbor similarity. Effective search is more about **Information Architecture** and **Data Modeling** than semantic similarity.
 
@@ -149,6 +161,39 @@ These logged interactions become a **semantic cache** — new queries are matche
 ### The Clickstream Blindspot
 
 Turnbull identified a critical risk in agentic search: **agents lack access to implicit human behavior signals**. Traditional search relies on decades of noisy but valuable clickstream data. An agent may rate highly engaging results as "meh" because they don't align with logical deduction — creating a mismatch between reasoning quality and actual user satisfaction.
+
+### The Agentic Search Implementation Loop
+
+In his February 2026 Vanishing Gradients interview [[raw/articles/2026-02-20_doug-turnbull-build-first-agentic-search-app]], Turnbull translated his conceptual arguments into concrete implementation patterns:
+
+#### Core Tool-Calling Loop
+```
+1. Agent receives query + system prompt with tool descriptions
+2. Agent decides: call tool (search) or generate final answer
+3. Search results → structured observations
+4. Agent reflects: "Are these relevant? Do I need different keywords?"
+5. If not satisfied → reformulate → search again
+6. Continue until confident or iteration limit
+```
+
+#### The Harness Validation Loop (Outer Loop)
+Turnbull emphasizes separating the agent's search loop from a programmatic quality loop:
+
+- **Inner loop:** Agent iterates through tool calls
+- **Outer harness loop:** Validates agent output against quality criteria using LLM-as-a-Judge
+- **"Try harder" pattern:** If results don't meet a threshold (recency, popularity, accuracy), the harness passes structured feedback back: "Result X has low Y, keep trying"
+- This structured error feedback is what makes simple tools work — the harness compensates for the tool's lack of sophistication
+
+#### Long-Running Agents & Memory Compaction
+Turnbull identified three emerging directions:
+1. **Persistent agents** — Search tasks that span hours or days
+2. **Memory compaction** — Compressing reasoning history to fit in limited context windows
+3. **Recursive LMs** — Agents that call themselves recursively for deeper search tasks
+
+#### Build-vs-Buy Guidance
+- **Pydantic AI** — Good starting point for structured outputs and tool definitions
+- **Hand-rolling** — Preferred for teams with deep domain knowledge; full control over every part of the loop
+- **Decision factor:** Team comfort and domain complexity, not theoretical purity
 
 ## Semantic Search Without Embeddings
 
