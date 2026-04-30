@@ -1,7 +1,7 @@
 ---
 title: "Extract PDF text in your browser with LiteParse for the web"
 url: "https://simonwillison.net/2026/Apr/23/liteparse-for-the-web/#atom-everything"
-fetched_at: 2026-04-29T07:01:19.544908+00:00
+fetched_at: 2026-04-30T07:01:12.106004+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

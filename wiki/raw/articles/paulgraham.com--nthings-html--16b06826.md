@@ -1,7 +1,7 @@
 ---
 title: "The List of N Things"
 url: "http://www.paulgraham.com/nthings.html"
-fetched_at: 2026-04-29T07:01:39.878427+00:00
+fetched_at: 2026-04-30T07:01:33.456618+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

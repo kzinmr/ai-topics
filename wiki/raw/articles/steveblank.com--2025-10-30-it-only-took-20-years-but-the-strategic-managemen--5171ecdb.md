@@ -1,7 +1,7 @@
 ---
 title: "It only took 20 years, but the Strategic Management Society now Believes the Lean Startup is a Strategy"
 url: "https://steveblank.com/2025/10/30/it-only-took-20-years-but-the-strategic-management-society-now-believes-the-lean-startup-is-a-strategy-i-got-an-award-for-it/"
-fetched_at: 2026-04-29T07:01:11.119832+00:00
+fetched_at: 2026-04-30T07:01:03.280838+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "How to read error messages"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/errmsg/"
-fetched_at: 2026-04-29T07:00:57.400874+00:00
+fetched_at: 2026-04-30T07:00:49.389056+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

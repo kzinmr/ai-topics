@@ -1,7 +1,7 @@
 ---
 title: "The Email They Shouldn't Have Read"
 url: "https://it-notes.dragas.net/2025/10/08/the-email-they-shouldnt-have-read/"
-fetched_at: 2026-04-29T07:02:10.497604+00:00
+fetched_at: 2026-04-30T07:02:04.893605+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

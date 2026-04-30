@@ -1,7 +1,7 @@
 ---
 title: "Alarm is sacred, must not fail, but iOS 26 is wicked"
 url: "https://rakhim.exotext.com/alarm-is-sacred-but-ios-26-is-wicked"
-fetched_at: 2026-04-29T07:01:20.560263+00:00
+fetched_at: 2026-04-30T07:01:13.554262+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

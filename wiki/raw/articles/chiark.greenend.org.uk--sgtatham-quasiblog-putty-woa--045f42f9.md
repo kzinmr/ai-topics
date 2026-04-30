@@ -1,7 +1,7 @@
 ---
 title: "Porting PuTTY to Windows on Arm"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/putty-woa/"
-fetched_at: 2026-04-29T07:00:58.213312+00:00
+fetched_at: 2026-04-30T07:00:50.290360+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

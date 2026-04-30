@@ -1,12 +1,12 @@
 ---
-title: "10Gb Ethernet: what I had to (re)learn"
+title: "10Gb/s Ethernet: what I had to (re)learn"
 url: "https://www.gilesthomas.com/2026/04/10g-ethernet-what-i-relearned"
-fetched_at: 2026-04-29T07:00:51.669235+00:00
+fetched_at: 2026-04-30T07:00:42.840920+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
 ---
 
-# 10Gb Ethernet: what I had to (re)learn
+# 10Gb/s Ethernet: what I had to (re)learn
 
 Source: https://www.gilesthomas.com/2026/04/10g-ethernet-what-i-relearned
 
@@ -197,3 +197,5 @@ Fun!  Time to put it into practice :-)  In my
 next post, I'll show exactly the changes I had to make to get my existing 2.5Gb/s
 network ported over to 10Gb/s -- the hardware I wound up buying, how well it works,
 and (importantly) how hot it all runs.
+Here's a link to that post
+.

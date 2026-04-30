@@ -1,7 +1,7 @@
 ---
 title: "Practical Defenses Against Technofascism"
 url: "https://micahflee.com/practical-defenses-against-technofascism/"
-fetched_at: 2026-04-29T07:02:03.832047+00:00
+fetched_at: 2026-04-30T07:01:57.141618+00:00
 source: "micahflee.com"
 tags: [blog, raw]
 ---

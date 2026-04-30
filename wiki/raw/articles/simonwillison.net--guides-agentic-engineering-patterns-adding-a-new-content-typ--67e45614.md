@@ -1,7 +1,7 @@
 ---
 title: "Adding a new content type to my blog-to-newsletter tool"
 url: "https://simonwillison.net/guides/agentic-engineering-patterns/adding-a-new-content-type/#atom-everything"
-fetched_at: 2026-04-29T07:01:20.587649+00:00
+fetched_at: 2026-04-30T07:01:13.404940+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

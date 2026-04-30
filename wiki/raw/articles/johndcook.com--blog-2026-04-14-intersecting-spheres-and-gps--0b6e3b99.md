@@ -1,7 +1,7 @@
 ---
 title: "Intersecting spheres and GPS"
 url: "https://www.johndcook.com/blog/2026/04/14/intersecting-spheres-and-gps/"
-fetched_at: 2026-04-29T07:02:06.843810+00:00
+fetched_at: 2026-04-30T07:01:59.976711+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

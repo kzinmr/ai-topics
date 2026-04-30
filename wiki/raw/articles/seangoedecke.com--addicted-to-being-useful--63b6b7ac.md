@@ -1,7 +1,7 @@
 ---
 title: "I'm addicted to being useful"
 url: "https://seangoedecke.com/addicted-to-being-useful/"
-fetched_at: 2026-04-29T07:01:18.926093+00:00
+fetched_at: 2026-04-30T07:01:11.593556+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

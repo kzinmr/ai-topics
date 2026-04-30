@@ -1,7 +1,7 @@
 ---
 title: "A Navajo weaving of an integrated circuit: the 555 timer"
 url: "http://www.righto.com/2025/09/marilou-schultz-navajo-555-weaving.html"
-fetched_at: 2026-04-29T07:01:15.840090+00:00
+fetched_at: 2026-04-30T07:01:07.854018+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

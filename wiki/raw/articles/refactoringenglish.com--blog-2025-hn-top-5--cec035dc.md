@@ -1,7 +1,7 @@
 ---
 title: "The Most Popular Blogs of Hacker News in 2025"
 url: "https://refactoringenglish.com/blog/2025-hn-top-5/"
-fetched_at: 2026-04-29T07:01:22.135519+00:00
+fetched_at: 2026-04-30T07:01:15.107274+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
 ---

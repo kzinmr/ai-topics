@@ -1,7 +1,7 @@
 ---
 title: "The Python Paradox"
 url: "http://www.paulgraham.com/pypar.html"
-fetched_at: 2026-04-29T07:01:50.759768+00:00
+fetched_at: 2026-04-30T07:01:44.740597+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

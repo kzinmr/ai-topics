@@ -1,7 +1,7 @@
 ---
 title: "What next for the compute crunch?"
 url: "https://martinalderson.com/posts/what-next-for-the-compute-crunch/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-29T07:02:03.970818+00:00
+fetched_at: 2026-04-30T07:01:57.106720+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

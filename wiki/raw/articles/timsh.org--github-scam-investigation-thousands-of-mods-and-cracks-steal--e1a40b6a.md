@@ -1,7 +1,7 @@
 ---
 title: "Github scam investigation: Thousands of \"mods\" and \"cracks\" stealing your data"
 url: "https://timsh.org/github-scam-investigation-thousands-of-mods-and-cracks-stealing-your-data/"
-fetched_at: 2026-04-29T07:00:59.104286+00:00
+fetched_at: 2026-04-30T07:00:51.791461+00:00
 source: "timsh.org"
 tags: [blog, raw]
 ---

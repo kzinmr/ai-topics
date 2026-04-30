@@ -1,7 +1,7 @@
 ---
 title: "LLM-generated skills work, if you generate them afterwards"
 url: "https://seangoedecke.com/generate-skills-afterwards/"
-fetched_at: 2026-04-29T07:01:17.720467+00:00
+fetched_at: 2026-04-30T07:01:10.416024+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

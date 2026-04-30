@@ -1,7 +1,7 @@
 ---
 title: "Writing and Speaking"
 url: "http://www.paulgraham.com/speak.html"
-fetched_at: 2026-04-29T07:01:36.832846+00:00
+fetched_at: 2026-04-30T07:01:30.439993+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

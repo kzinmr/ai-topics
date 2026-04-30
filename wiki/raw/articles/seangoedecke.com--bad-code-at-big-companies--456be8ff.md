@@ -1,7 +1,7 @@
 ---
 title: "How good engineers write bad code at big companies"
 url: "https://seangoedecke.com/bad-code-at-big-companies/"
-fetched_at: 2026-04-29T07:01:19.940183+00:00
+fetched_at: 2026-04-30T07:01:12.249604+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

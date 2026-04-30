@@ -1,7 +1,7 @@
 ---
 title: "How People Get Rich Now"
 url: "http://www.paulgraham.com/richnow.html"
-fetched_at: 2026-04-29T07:01:30.384696+00:00
+fetched_at: 2026-04-30T07:01:23.772462+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

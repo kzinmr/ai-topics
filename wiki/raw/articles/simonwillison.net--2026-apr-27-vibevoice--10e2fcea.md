@@ -1,7 +1,7 @@
 ---
 title: "microsoft/VibeVoice"
 url: "https://simonwillison.net/2026/Apr/27/vibevoice/#atom-everything"
-fetched_at: 2026-04-29T07:00:52.833980+00:00
+fetched_at: 2026-04-30T07:00:43.981487+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

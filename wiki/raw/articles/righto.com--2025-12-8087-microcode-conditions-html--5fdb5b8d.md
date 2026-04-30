@@ -1,7 +1,7 @@
 ---
 title: "Conditions in the Intel 8087 floating-point chip's microcode"
 url: "http://www.righto.com/2025/12/8087-microcode-conditions.html"
-fetched_at: 2026-04-29T07:01:14.809299+00:00
+fetched_at: 2026-04-30T07:01:06.857860+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

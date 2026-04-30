@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/sqlite-for-a-rest-api-database/"
-fetched_at: 2026-04-29T07:01:54.826447+00:00
+fetched_at: 2026-04-30T07:01:48.591315+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---

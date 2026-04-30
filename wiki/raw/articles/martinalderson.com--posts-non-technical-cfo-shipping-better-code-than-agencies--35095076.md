@@ -1,7 +1,7 @@
 ---
 title: "A non-technical CFO is shipping better code than the agencies he hired"
 url: "https://martinalderson.com/posts/non-technical-cfo-shipping-better-code-than-agencies/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-29T07:02:04.334492+00:00
+fetched_at: 2026-04-30T07:01:57.669425+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

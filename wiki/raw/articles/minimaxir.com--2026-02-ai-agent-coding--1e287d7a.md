@@ -1,7 +1,7 @@
 ---
 title: "An AI agent coding skeptic tries AI agent coding, in excessive detail"
 url: "https://minimaxir.com/2026/02/ai-agent-coding/"
-fetched_at: 2026-04-29T07:02:01.993132+00:00
+fetched_at: 2026-04-30T07:01:55.446288+00:00
 source: "minimaxir.com"
 tags: [blog, raw]
 ---

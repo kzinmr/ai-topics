@@ -1,7 +1,7 @@
 ---
 title: "Diagnostics Factory"
 url: "https://matklad.github.io/2026/02/16/diagnostics-factory.html"
-fetched_at: 2026-04-29T07:02:04.959563+00:00
+fetched_at: 2026-04-30T07:01:58.085293+00:00
 source: "matklad.github.io"
 tags: [blog, raw]
 ---

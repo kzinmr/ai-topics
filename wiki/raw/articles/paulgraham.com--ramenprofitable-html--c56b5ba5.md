@@ -1,7 +1,7 @@
 ---
 title: "Ramen Profitable"
 url: "http://www.paulgraham.com/ramenprofitable.html"
-fetched_at: 2026-04-29T07:01:40.468597+00:00
+fetched_at: 2026-04-30T07:01:34.148595+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

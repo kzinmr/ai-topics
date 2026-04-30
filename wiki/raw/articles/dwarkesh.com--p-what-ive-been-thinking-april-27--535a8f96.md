@@ -1,7 +1,7 @@
 ---
 title: "What I've been thinking about this weekend - More open questions, intelligence vs power, the problem of verification in science, the parallel discovery of Darwinism"
 url: "https://www.dwarkesh.com/p/what-ive-been-thinking-april-27"
-fetched_at: 2026-04-29T07:00:53.066348+00:00
+fetched_at: 2026-04-30T07:00:44.868127+00:00
 source: "dwarkesh.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Should we welcome or fear the Metaverse?"
 url: "https://tomrenner.com/posts/should-we-welcome-or-fear-the-metaverse/"
-fetched_at: 2026-04-29T07:01:06.528467+00:00
+fetched_at: 2026-04-30T07:00:58.849207+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

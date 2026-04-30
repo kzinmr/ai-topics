@@ -1,7 +1,7 @@
 ---
 title: "Ghostty Is Leaving GitHub"
 url: "https://mitchellh.com/writing/ghostty-leaving-github"
-fetched_at: 2026-04-29T07:00:51.089241+00:00
+fetched_at: 2026-04-30T07:00:42.311199+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "SQLAlchemy 2 In Practice - Chapter 1 - Database Setup"
 url: "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-1---database-setup"
-fetched_at: 2026-04-29T07:01:26.923700+00:00
+fetched_at: 2026-04-30T07:01:20.605427+00:00
 source: "miguelgrinberg.com"
 tags: [blog, raw]
 ---

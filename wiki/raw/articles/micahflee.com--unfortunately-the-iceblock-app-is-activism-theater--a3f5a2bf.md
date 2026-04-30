@@ -1,7 +1,7 @@
 ---
 title: "Unfortunately, the ICEBlock app is activism theater"
 url: "https://micahflee.com/unfortunately-the-iceblock-app-is-activism-theater/"
-fetched_at: 2026-04-29T07:02:03.939633+00:00
+fetched_at: 2026-04-30T07:01:56.998045+00:00
 source: "micahflee.com"
 tags: [blog, raw]
 ---

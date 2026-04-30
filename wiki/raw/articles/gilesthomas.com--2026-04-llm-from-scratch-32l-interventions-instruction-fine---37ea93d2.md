@@ -1,7 +1,7 @@
 ---
 title: "Writing an LLM from scratch, part 32l -- Interventions: updated instruction fine-tuning results"
 url: "https://www.gilesthomas.com/2026/04/llm-from-scratch-32l-interventions-instruction-fine-tuning-tests"
-fetched_at: 2026-04-29T07:02:03.063703+00:00
+fetched_at: 2026-04-30T07:01:56.711572+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
 ---

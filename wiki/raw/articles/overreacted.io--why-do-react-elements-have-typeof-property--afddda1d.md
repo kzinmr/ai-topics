@@ -1,7 +1,7 @@
 ---
 title: "Why Do React Elements Have a $$typeof Property?"
 url: "https://overreacted.io/why-do-react-elements-have-typeof-property/"
-fetched_at: 2026-04-29T07:01:59.144556+00:00
+fetched_at: 2026-04-30T07:01:53.309707+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

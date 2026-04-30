@@ -1,7 +1,7 @@
 ---
 title: "Goodbye, Clean Code"
 url: "https://overreacted.io/goodbye-clean-code/"
-fetched_at: 2026-04-29T07:01:57.444095+00:00
+fetched_at: 2026-04-30T07:01:51.836743+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

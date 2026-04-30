@@ -1,7 +1,7 @@
 ---
 title: "Package Security Defenses for AI Agents"
 url: "https://nesbitt.io/2026/04/09/package-security-defenses-for-ai-agents.html"
-fetched_at: 2026-04-29T07:02:01.764237+00:00
+fetched_at: 2026-04-30T07:01:55.232207+00:00
 source: "nesbitt.io"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "How I use Claude Code to manage sysadmin tasks"
 url: "https://martinalderson.com/posts/how-i-use-claude-code-to-manage-sysadmin-tasks/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-29T07:02:04.543438+00:00
+fetched_at: 2026-04-30T07:01:57.417086+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

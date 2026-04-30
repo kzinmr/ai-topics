@@ -1,7 +1,7 @@
 ---
 title: "Kalman and Bayes average grades"
 url: "https://www.johndcook.com/blog/2026/04/04/kalman-bayes/"
-fetched_at: 2026-04-29T07:02:07.831218+00:00
+fetched_at: 2026-04-30T07:02:00.931120+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

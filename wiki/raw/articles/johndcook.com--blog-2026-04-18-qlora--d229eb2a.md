@@ -1,7 +1,7 @@
 ---
 title: "Gaussian distributed weights for LLMs"
 url: "https://www.johndcook.com/blog/2026/04/18/qlora/"
-fetched_at: 2026-04-29T07:02:07.089383+00:00
+fetched_at: 2026-04-30T07:02:00.168718+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

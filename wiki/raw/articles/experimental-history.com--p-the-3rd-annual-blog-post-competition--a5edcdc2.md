@@ -1,7 +1,7 @@
 ---
 title: "The 3rd Annual Blog Post Competition, Extravaganza, and Jamboree"
 url: "https://www.experimental-history.com/p/the-3rd-annual-blog-post-competition"
-fetched_at: 2026-04-29T07:00:51.438456+00:00
+fetched_at: 2026-04-30T07:00:42.755177+00:00
 source: "experimental-history.com"
 tags: [blog, raw]
 ---

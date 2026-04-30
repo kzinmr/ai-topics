@@ -1,7 +1,7 @@
 ---
 title: "The Silicon Underground"
 url: "https://dfarq.homeip.net/trs-80-model-100/?utm_source=rss&utm_medium=rss&utm_campaign=trs-80-model-100"
-fetched_at: 2026-04-29T07:00:52.066506+00:00
+fetched_at: 2026-04-30T07:00:43.702347+00:00
 source: "dfarq.homeip.net"
 tags: [blog, raw]
 ---

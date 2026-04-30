@@ -1,7 +1,7 @@
 ---
 title: "5x5 Pixel font for tiny screens"
 url: "https://maurycyz.com/projects/mcufont/"
-fetched_at: 2026-04-29T07:01:55.837112+00:00
+fetched_at: 2026-04-30T07:01:49.684161+00:00
 source: "maurycyz.com"
 tags: [blog, raw]
 ---

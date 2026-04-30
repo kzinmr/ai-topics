@@ -1,7 +1,7 @@
 ---
 title: "TeleMessage customers include DC Police, Andreessen Horowitz, JP Morgan, and hundreds more"
 url: "https://micahflee.com/telemessage-customers-include-dc-police-andreesen-horowitz-jp-morgan-and-hundreds-more/"
-fetched_at: 2026-04-29T07:02:03.918596+00:00
+fetched_at: 2026-04-30T07:01:56.987914+00:00
 source: "micahflee.com"
 tags: [blog, raw]
 ---

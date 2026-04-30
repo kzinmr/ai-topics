@@ -1,7 +1,7 @@
 ---
 title: "Taste for Makers"
 url: "http://www.paulgraham.com/taste.html"
-fetched_at: 2026-04-29T07:01:53.304352+00:00
+fetched_at: 2026-04-30T07:01:47.251993+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

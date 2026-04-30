@@ -1,7 +1,7 @@
 ---
 title: "The Software Essays that Shaped Me"
 url: "https://refactoringenglish.com/blog/software-essays-that-shaped-me/"
-fetched_at: 2026-04-29T07:01:22.372300+00:00
+fetched_at: 2026-04-30T07:01:15.503678+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
 ---

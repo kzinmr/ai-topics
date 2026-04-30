@@ -1,7 +1,7 @@
 ---
 title: "Suppressions of Suppressions"
 url: "https://overreacted.io/suppressions-of-suppressions/"
-fetched_at: 2026-04-29T07:01:55.908368+00:00
+fetched_at: 2026-04-30T07:01:49.896942+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Name It, and They Will Come"
 url: "https://overreacted.io/name-it-and-they-will-come/"
-fetched_at: 2026-04-29T07:01:58.075848+00:00
+fetched_at: 2026-04-30T07:01:52.113358+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

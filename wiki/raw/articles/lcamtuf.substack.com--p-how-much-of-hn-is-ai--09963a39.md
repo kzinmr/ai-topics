@@ -1,7 +1,7 @@
 ---
 title: "How much of HN is AI?"
 url: "https://lcamtuf.substack.com/p/how-much-of-hn-is-ai"
-fetched_at: 2026-04-29T07:02:08.182254+00:00
+fetched_at: 2026-04-30T07:02:01.660570+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

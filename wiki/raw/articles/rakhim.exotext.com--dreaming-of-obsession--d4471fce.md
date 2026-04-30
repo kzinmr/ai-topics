@@ -1,7 +1,7 @@
 ---
 title: "Dreaming of obsession"
 url: "https://rakhim.exotext.com/dreaming-of-obsession"
-fetched_at: 2026-04-29T07:01:21.761686+00:00
+fetched_at: 2026-04-30T07:01:14.722358+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

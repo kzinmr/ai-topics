@@ -1,7 +1,7 @@
 ---
 title: "\"We are currently clean on OPSEC\": The Signalgate Saga"
 url: "https://micahflee.com/we-are-currently-clean-on-opsec-the-signalgate-saga/"
-fetched_at: 2026-04-29T07:02:03.852795+00:00
+fetched_at: 2026-04-30T07:01:56.932664+00:00
 source: "micahflee.com"
 tags: [blog, raw]
 ---

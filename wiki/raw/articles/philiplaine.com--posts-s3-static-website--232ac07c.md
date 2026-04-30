@@ -1,7 +1,7 @@
 ---
 title: "Common S3 Static Website Problems"
 url: "https://philiplaine.com/posts/s3-static-website/"
-fetched_at: 2026-04-29T07:01:55.194203+00:00
+fetched_at: 2026-04-30T07:01:49.033739+00:00
 source: "philiplaine.com"
 tags: [blog, raw]
 ---

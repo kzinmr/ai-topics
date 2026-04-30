@@ -1,7 +1,7 @@
 ---
 title: "On wintering."
 url: "https://www.joanwestenberg.com/on-wintering/"
-fetched_at: 2026-04-29T07:00:51.108172+00:00
+fetched_at: 2026-04-30T07:00:42.322696+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

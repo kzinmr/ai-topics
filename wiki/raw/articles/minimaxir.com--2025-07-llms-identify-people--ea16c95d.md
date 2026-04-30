@@ -1,7 +1,7 @@
 ---
 title: "LLMs can now identify public figures in images"
 url: "https://minimaxir.com/2025/07/llms-identify-people/"
-fetched_at: 2026-04-29T07:02:02.063573+00:00
+fetched_at: 2026-04-30T07:01:55.555684+00:00
 source: "minimaxir.com"
 tags: [blog, raw]
 ---

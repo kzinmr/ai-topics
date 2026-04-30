@@ -1,7 +1,7 @@
 ---
 title: "What Startups Are Really Like"
 url: "http://www.paulgraham.com/really.html"
-fetched_at: 2026-04-29T07:01:39.767912+00:00
+fetched_at: 2026-04-30T07:01:33.470184+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

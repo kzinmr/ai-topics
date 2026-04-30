@@ -1,7 +1,7 @@
 ---
 title: "Pluralistic: Ada Palmer’s “Inventing the Renaissance” (25 Apr 2026)"
 url: "https://pluralistic.net/2026/04/25/machiavellian/"
-fetched_at: 2026-04-29T07:01:10.732298+00:00
+fetched_at: 2026-04-30T07:01:02.214071+00:00
 source: "pluralistic.net"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "A Student's Guide to Startups"
 url: "http://www.paulgraham.com/mit.html"
-fetched_at: 2026-04-29T07:01:46.464267+00:00
+fetched_at: 2026-04-30T07:01:40.132346+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Notes from MCP Dev Summit Europe: Where the Protocol Is Headed"
 url: "https://martinalderson.com/posts/notes-from-mcp-europe/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-29T07:02:04.355921+00:00
+fetched_at: 2026-04-30T07:01:57.475044+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

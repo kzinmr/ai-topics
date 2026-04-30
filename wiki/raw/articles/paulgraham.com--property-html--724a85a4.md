@@ -1,7 +1,7 @@
 ---
 title: "Defining Property"
 url: "http://www.paulgraham.com/property.html"
-fetched_at: 2026-04-29T07:01:37.061637+00:00
+fetched_at: 2026-04-30T07:01:30.613442+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

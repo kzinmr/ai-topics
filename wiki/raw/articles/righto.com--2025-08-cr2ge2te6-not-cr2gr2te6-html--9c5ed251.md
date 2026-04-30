@@ -1,7 +1,7 @@
 ---
 title: "Why do people keep writing about the imaginary compound Cr2Gr2Te6?"
 url: "http://www.righto.com/2025/08/Cr2Ge2Te6-not-Cr2Gr2Te6.html"
-fetched_at: 2026-04-29T07:01:15.169922+00:00
+fetched_at: 2026-04-30T07:01:07.177897+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

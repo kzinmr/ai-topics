@@ -1,7 +1,7 @@
 ---
 title: "Travel agents took 10 years to collapse. Developers are 3 years in."
 url: "https://martinalderson.com/posts/travel-agents-developers/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-29T07:02:04.229647+00:00
+fetched_at: 2026-04-30T07:01:57.301369+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

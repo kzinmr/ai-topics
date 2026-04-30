@@ -1,7 +1,7 @@
 ---
 title: "What You'll Wish You'd Known"
 url: "http://www.paulgraham.com/hs.html"
-fetched_at: 2026-04-29T07:01:50.205217+00:00
+fetched_at: 2026-04-30T07:01:44.018660+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

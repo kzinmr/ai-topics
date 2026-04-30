@@ -1,7 +1,7 @@
 ---
 title: "Cursed circuits #3: true mathematics"
 url: "https://lcamtuf.substack.com/p/cursed-circuits-3-true-mathematics"
-fetched_at: 2026-04-29T07:02:08.842629+00:00
+fetched_at: 2026-04-30T07:02:02.522733+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

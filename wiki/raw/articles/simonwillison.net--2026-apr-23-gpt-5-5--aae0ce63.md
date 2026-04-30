@@ -1,7 +1,7 @@
 ---
 title: "A pelican for GPT-5.5 via the semi-official Codex backdoor API"
 url: "https://simonwillison.net/2026/Apr/23/gpt-5-5/#atom-everything"
-fetched_at: 2026-04-29T07:01:19.558882+00:00
+fetched_at: 2026-04-30T07:01:12.131641+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

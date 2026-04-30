@@ -1,7 +1,7 @@
 ---
 title: "A Local Revolution?"
 url: "http://www.paulgraham.com/revolution.html"
-fetched_at: 2026-04-29T07:01:40.673925+00:00
+fetched_at: 2026-04-30T07:01:34.360104+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

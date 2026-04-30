@@ -1,7 +1,7 @@
 ---
 title: "Beyond the Hype: Real-World MCP Support Across Major AI APIs"
 url: "https://martinalderson.com/posts/mcp-support-across-ai-apis/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-29T07:02:04.443819+00:00
+fetched_at: 2026-04-30T07:01:57.566619+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

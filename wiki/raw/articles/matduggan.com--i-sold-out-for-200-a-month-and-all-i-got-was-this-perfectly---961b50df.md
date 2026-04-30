@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/i-sold-out-for-200-a-month-and-all-i-got-was-this-perfectly-generated-terraform/"
-fetched_at: 2026-04-29T07:01:54.611227+00:00
+fetched_at: 2026-04-30T07:01:49.057426+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---

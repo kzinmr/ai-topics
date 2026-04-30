@@ -1,7 +1,7 @@
 ---
 title: "Thank you Google for breaking my YouTube addiction"
 url: "https://rakhim.exotext.com/thank-you-google-for-breaking-my-youtube-addiction"
-fetched_at: 2026-04-29T07:01:20.861773+00:00
+fetched_at: 2026-04-30T07:01:13.786251+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

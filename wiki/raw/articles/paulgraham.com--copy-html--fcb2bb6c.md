@@ -1,7 +1,7 @@
 ---
 title: "Copy What You Like"
 url: "http://www.paulgraham.com/copy.html"
-fetched_at: 2026-04-29T07:01:46.375255+00:00
+fetched_at: 2026-04-30T07:01:40.195075+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

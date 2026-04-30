@@ -1,7 +1,7 @@
 ---
 title: "Two Kinds of Judgement"
 url: "http://www.paulgraham.com/judgement.html"
-fetched_at: 2026-04-29T07:01:45.392073+00:00
+fetched_at: 2026-04-30T07:01:39.022375+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

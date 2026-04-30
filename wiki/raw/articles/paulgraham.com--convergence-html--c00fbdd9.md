@@ -1,7 +1,7 @@
 ---
 title: "Why TV Lost"
 url: "http://www.paulgraham.com/convergence.html"
-fetched_at: 2026-04-29T07:01:41.360411+00:00
+fetched_at: 2026-04-30T07:01:35.083453+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

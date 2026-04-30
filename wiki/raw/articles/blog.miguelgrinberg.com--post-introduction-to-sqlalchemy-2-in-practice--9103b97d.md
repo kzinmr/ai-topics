@@ -1,7 +1,7 @@
 ---
 title: "Introduction to SQLAlchemy 2 In Practice"
 url: "https://blog.miguelgrinberg.com/post/introduction-to-sqlalchemy-2-in-practice"
-fetched_at: 2026-04-29T07:01:26.939038+00:00
+fetched_at: 2026-04-30T07:01:20.615713+00:00
 source: "miguelgrinberg.com"
 tags: [blog, raw]
 ---

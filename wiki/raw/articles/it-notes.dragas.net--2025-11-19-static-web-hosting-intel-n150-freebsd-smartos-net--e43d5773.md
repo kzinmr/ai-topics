@@ -1,7 +1,7 @@
 ---
 title: "Static Web Hosting on the Intel N150: FreeBSD, SmartOS, NetBSD, OpenBSD and Linux Compared"
 url: "https://it-notes.dragas.net/2025/11/19/static-web-hosting-intel-n150-freebsd-smartos-netbsd-openbsd-linux/"
-fetched_at: 2026-04-29T07:02:10.568534+00:00
+fetched_at: 2026-04-30T07:02:04.949716+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

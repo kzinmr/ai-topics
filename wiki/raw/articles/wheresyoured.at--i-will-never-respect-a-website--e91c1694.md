@@ -1,7 +1,7 @@
 ---
 title: "I Will Never Respect A Website"
 url: "https://www.wheresyoured.at/i-will-never-respect-a-website/"
-fetched_at: 2026-04-29T07:01:04.377063+00:00
+fetched_at: 2026-04-30T07:00:56.627008+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
 ---

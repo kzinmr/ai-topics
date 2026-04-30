@@ -1,7 +1,7 @@
 ---
 title: "Return of the Mac"
 url: "http://www.paulgraham.com/mac.html"
-fetched_at: 2026-04-29T07:01:49.333678+00:00
+fetched_at: 2026-04-30T07:01:43.262555+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

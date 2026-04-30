@@ -1,7 +1,7 @@
 ---
 title: "How I created an Ethereum Proof-of-Stake demo entirely with AI"
 url: "https://timsh.org/how-i-created-an-ethereum-proof-of-stake-demo-entirely-with-ai/"
-fetched_at: 2026-04-29T07:00:59.303405+00:00
+fetched_at: 2026-04-30T07:00:52.173164+00:00
 source: "timsh.org"
 tags: [blog, raw]
 ---

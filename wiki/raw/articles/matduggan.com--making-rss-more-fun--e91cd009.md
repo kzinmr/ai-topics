@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/making-rss-more-fun/"
-fetched_at: 2026-04-29T07:01:54.833124+00:00
+fetched_at: 2026-04-30T07:01:49.360119+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---

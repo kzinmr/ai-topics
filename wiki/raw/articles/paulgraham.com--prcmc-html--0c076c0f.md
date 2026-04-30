@@ -1,7 +1,7 @@
 ---
 title: "The Pooled-Risk Company Management Company"
 url: "http://www.paulgraham.com/prcmc.html"
-fetched_at: 2026-04-29T07:01:42.631724+00:00
+fetched_at: 2026-04-30T07:01:36.238765+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

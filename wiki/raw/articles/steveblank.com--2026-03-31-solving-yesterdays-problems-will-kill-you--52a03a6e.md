@@ -1,7 +1,7 @@
 ---
 title: "Solving Yesterday’s Problems Will Kill You"
 url: "https://steveblank.com/2026/03/31/solving-yesterdays-problems-will-kill-you/"
-fetched_at: 2026-04-29T07:01:10.688021+00:00
+fetched_at: 2026-04-30T07:01:02.877793+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

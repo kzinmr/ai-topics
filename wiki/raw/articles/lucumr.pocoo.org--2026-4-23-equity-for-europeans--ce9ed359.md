@@ -1,7 +1,7 @@
 ---
 title: "Equity for Europeans"
 url: "https://lucumr.pocoo.org/2026/4/23/equity-for-europeans/"
-fetched_at: 2026-04-29T07:02:04.587402+00:00
+fetched_at: 2026-04-30T07:01:57.706487+00:00
 source: "lucumr.pocoo.org"
 tags: [blog, raw]
 ---

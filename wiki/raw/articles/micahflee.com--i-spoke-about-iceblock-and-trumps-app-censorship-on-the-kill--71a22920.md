@@ -1,7 +1,7 @@
 ---
 title: "I spoke about ICEBlock and Trump's app censorship on the kill switch podcast"
 url: "https://micahflee.com/i-spoke-about-iceblock-and-trumps-app-censorship-on-the-kill-switch-podcast/"
-fetched_at: 2026-04-29T07:02:03.791716+00:00
+fetched_at: 2026-04-30T07:01:56.817413+00:00
 source: "micahflee.com"
 tags: [blog, raw]
 ---

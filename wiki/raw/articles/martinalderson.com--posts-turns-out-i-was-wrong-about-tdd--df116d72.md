@@ -1,7 +1,7 @@
 ---
 title: "Turns out I was wrong about TDD"
 url: "https://martinalderson.com/posts/turns-out-i-was-wrong-about-tdd/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-29T07:02:04.161915+00:00
+fetched_at: 2026-04-30T07:01:57.255533+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

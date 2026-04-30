@@ -1,7 +1,7 @@
 ---
 title: "Serving the For You feed"
 url: "https://simonwillison.net/2026/Apr/24/serving-the-for-you-feed/#atom-everything"
-fetched_at: 2026-04-29T07:01:19.531256+00:00
+fetched_at: 2026-04-30T07:01:12.092231+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

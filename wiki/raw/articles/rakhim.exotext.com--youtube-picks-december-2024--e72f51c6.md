@@ -1,7 +1,7 @@
 ---
 title: "YouTube picks, December 2024"
 url: "https://rakhim.exotext.com/youtube-picks-december-2024"
-fetched_at: 2026-04-29T07:01:21.118778+00:00
+fetched_at: 2026-04-30T07:01:14.019263+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

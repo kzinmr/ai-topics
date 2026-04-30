@@ -1,7 +1,7 @@
 ---
 title: "This Year We Can End the Death Penalty in California"
 url: "http://www.paulgraham.com/prop62.html"
-fetched_at: 2026-04-29T07:01:54.591750+00:00
+fetched_at: 2026-04-30T07:01:48.482186+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

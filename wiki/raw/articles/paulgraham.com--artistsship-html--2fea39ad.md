@@ -1,7 +1,7 @@
 ---
 title: "The Other Half of \"Artists Ship\""
 url: "http://www.paulgraham.com/artistsship.html"
-fetched_at: 2026-04-29T07:01:42.235969+00:00
+fetched_at: 2026-04-30T07:01:36.131050+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

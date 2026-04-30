@@ -1,7 +1,7 @@
 ---
 title: "How to Sell to the Dept of War - The 2025 PEO Directory - Now with 500 more names"
 url: "https://steveblank.com/2025/10/15/how-to-sell-to-the-dept-of-war-the-2025-peo-directory-now-with-500-more-names/"
-fetched_at: 2026-04-29T07:01:11.092239+00:00
+fetched_at: 2026-04-30T07:01:03.305857+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

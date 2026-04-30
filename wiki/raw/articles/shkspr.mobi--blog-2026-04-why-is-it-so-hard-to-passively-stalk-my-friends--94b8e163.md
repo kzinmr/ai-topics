@@ -1,7 +1,7 @@
 ---
 title: "Why is it so hard to passively stalk my friends’ locations?"
 url: "https://shkspr.mobi/blog/2026/04/why-is-it-so-hard-to-passively-stalk-my-friends-locations/"
-fetched_at: 2026-04-29T07:01:08.684201+00:00
+fetched_at: 2026-04-30T07:01:01.006675+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
 ---

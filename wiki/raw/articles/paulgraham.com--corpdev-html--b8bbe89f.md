@@ -1,7 +1,7 @@
 ---
 title: "Don't Talk to Corp Dev"
 url: "http://www.paulgraham.com/corpdev.html"
-fetched_at: 2026-04-29T07:01:34.855887+00:00
+fetched_at: 2026-04-30T07:01:28.358373+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

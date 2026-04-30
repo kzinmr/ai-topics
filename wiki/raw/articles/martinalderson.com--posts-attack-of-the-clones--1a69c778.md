@@ -1,7 +1,7 @@
 ---
 title: "Attack of the SaaS clones"
 url: "https://martinalderson.com/posts/attack-of-the-clones/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-29T07:02:04.131983+00:00
+fetched_at: 2026-04-30T07:01:57.184844+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

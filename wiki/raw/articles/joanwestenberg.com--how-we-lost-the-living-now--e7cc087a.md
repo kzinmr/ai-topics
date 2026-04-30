@@ -1,7 +1,7 @@
 ---
 title: "How we lost the living Now"
 url: "https://www.joanwestenberg.com/how-we-lost-the-living-now/"
-fetched_at: 2026-04-29T07:02:03.123486+00:00
+fetched_at: 2026-04-30T07:01:56.454175+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

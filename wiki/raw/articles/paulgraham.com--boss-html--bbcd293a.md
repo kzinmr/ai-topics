@@ -1,7 +1,7 @@
 ---
 title: "You Weren't Meant to Have a Boss"
 url: "http://www.paulgraham.com/boss.html"
-fetched_at: 2026-04-29T07:01:43.554257+00:00
+fetched_at: 2026-04-30T07:01:37.345180+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

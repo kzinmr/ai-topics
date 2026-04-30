@@ -1,0 +1,194 @@
+{
+  "report_id": "20260430T071102Z",
+  "generated_at": "2026-04-30T07:11:15Z",
+  "newsletters": [
+    {
+      "message_id": "<20260429.153303.bb8b6f75@mta29>",
+      "subject": "The Trial That Could Break OpenAI",
+      "date": "2026-04-29",
+      "source_label": "uid=29",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-04-29-the-trial-that-could-break-openai.md",
+      "classification": "high",
+      "rationale": "Covers the Musk v. OpenAI trial that began April 27, 2026 in Oakland, with Musk testifying and seeking Altman's ouster. Also covers the Nippon Life Insurance Co. v. OpenAI case alleging ChatGPT practiced law without a license, plus OpenAI's $122B funding round, IPO strategy discussions, and geopolitical risks (Iran threatening Stargate data centers). Significant AI governance, legal precedent, and industry-impact content.",
+      "topics": [
+        "OpenAI legal trials",
+        "Musk v. OpenAI lawsuit",
+        "AI regulation and liability",
+        "Unlicensed practice of law via AI",
+        "OpenAI funding and valuation",
+        "AI governance and safety",
+        "Geopolitical AI infrastructure risks"
+      ],
+      "wiki_relevance": {
+        "entities": ["OpenAI", "Sam Altman", "Elon Musk", "ChatGPT", "Microsoft", "Satya Nadella", "Greg Brockman"],
+        "concepts": ["AI liability", "AI regulation", "AI safety concerns", "AGI development"],
+        "suggested_pages": ["OpenAI Legal Challenges 2026", "Musk v. OpenAI Trial", "AI and Legal Practice Regulation"]
+      },
+      "article_count": 20,
+      "quality_score": 0.85,
+      "freshness_score": 0.95,
+      "action": "ingest",
+      "priority_order": 2
+    },
+    {
+      "message_id": "<20260429170112.3.920f41a26edea95c@mg-d0.substack.com>",
+      "subject": "The product skill you must now master: Reinvention",
+      "date": "2026-04-29",
+      "source_label": "uid=30",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-04-29-the-product-skill-you-must-now-master-reinvention.md",
+      "classification": "low",
+      "rationale": "Appears to be a career/product management piece from 'theskip' on Substack. The available links are mostly Substack UI/app links (podcast player, comments, share buttons). The actual article content was not accessible via extraction (redirected to app download page). The title suggests a general professional development piece about 'reinvention' rather than AI-specific technical content. No significant AI/LLM agent technical content detected.",
+      "topics": [
+        "Product management skills",
+        "Career reinvention",
+        "Professional development"
+      ],
+      "wiki_relevance": {
+        "entities": ["theskip (Substack author)"],
+        "concepts": [],
+        "suggested_pages": []
+      },
+      "article_count": 20,
+      "quality_score": 0.20,
+      "freshness_score": 0.70,
+      "action": "skip",
+      "priority_order": 3,
+      "skip_reason": "Non-technical career advice; no AI-specific content detected; links are mostly Substack UI elements"
+    },
+    {
+      "message_id": "<20260430014251.3.46578e1027d2495c@mg2.substack.com>",
+      "subject": "[AINews] The Inference Inflection",
+      "date": "2026-04-30",
+      "source_label": "uid=31",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-04-30-ainews-the-inference-inflection.md",
+      "classification": "critical",
+      "rationale": "Extremely high-value AINews from Latent.Space/swyx covering the shift from training to inference era. Key content: (1) Industry leaders (Noam Brown, Sam Altman, Jensen Huang, Intel CEO Lip-Bu Tan) all signaling inference compute as strategic resource; (2) Coding agents evolving into platforms (OpenAI Codex with WebSocket mode, Cursor SDK as agent runtime, VS Code agent evaluation); (3) Agent Harness Engineering breakthrough (77% pass@1 on Terminal-Bench, HALO recursive self-improvement boosting AppWorld from 73.7 to 89.5); (4) New model releases (Mistral Medium 3.5 128B, IBM Granite 4.1 open-weight, Ling-2.6-flash 107B MoE with 61.2 SWE-bench, Tencent Hunyuan 1.8B-1.25bit); (5) Inference optimization (FlashQLA 2-3x speedups, vLLM on Blackwell 230 tok/s, LayerSplit 132% prefill throughput improvement); (6) Research on Incompressible Knowledge Probes showing factual knowledge scales log-linearly with model size (R²=0.917). This is dense with technical facts, model benchmarks, and industry shifts directly relevant to the AI agent wiki.",
+      "topics": [
+        "Inference compute inflection",
+        "CPU renaissance for AI agents",
+        "Coding agents as platforms",
+        "Agent harness engineering",
+        "OpenAI Codex enterprise features",
+        "Cursor SDK agent infrastructure",
+        "Mistral Medium 3.5",
+        "IBM Granite 4.1 open models",
+        "Ling-2.6-flash MoE model",
+        "FlashQLA linear attention",
+        "vLLM Blackwell optimization",
+        "Incompressible Knowledge Probes research",
+        "Agentic RL environments",
+        "Model efficiency and quantization"
+      ],
+      "wiki_relevance": {
+        "entities": [
+          "swyx (Shawn Wang)",
+          "Latent Space",
+          "AINews",
+          "Noam Brown",
+          "Sam Altman",
+          "Jensen Huang",
+          "NVIDIA",
+          "Intel",
+          "Lip-Bu Tan",
+          "OpenAI Codex",
+          "Cursor",
+          "Mistral AI",
+          "IBM Granite",
+          "Ant Group",
+          "Tencent",
+          "Zhipu AI",
+          "Alibaba",
+          "LangChain",
+          "vLLM",
+          "John Carmack"
+        ],
+        "concepts": [
+          "Inference inflection",
+          "Agentic harness engineering",
+          "HALO (recursive self-improvement)",
+          "Terminal-Bench",
+          "SWE-bench Verified",
+          "Incompressible Knowledge Probes",
+          "FlashQLA",
+          "NVLink Fusion",
+          "KV cache optimization",
+          "Speculative decoding",
+          "NVFP4 quantization",
+          "AgentOps",
+          "CPU compute shortage theory"
+        ],
+        "suggested_pages": [
+          "Inference Inflection 2026",
+          "Agent Harness Engineering",
+          "HALO Self-Improvement",
+          "Incompressible Knowledge Probes",
+          "OpenAI Codex Enterprise",
+          "Cursor SDK",
+          "Mistral Medium 3.5",
+          "IBM Granite 4.1",
+          "Ling-2.6-flash",
+          "FlashQLA",
+          "vLLM Blackwell Performance",
+          "LayerSplit KV Cache Optimization",
+          "CPU Renaissance for AI Agents"
+        ]
+      },
+      "article_count": 20,
+      "quality_score": 0.98,
+      "freshness_score": 1.00,
+      "action": "ingest_urgently",
+      "priority_order": 1
+    }
+  ],
+  "summary": {
+    "total_newsletters": 3,
+    "total_articles": 60,
+    "critical_count": 1,
+    "high_count": 1,
+    "low_count": 1,
+    "ingest_count": 2,
+    "skip_count": 1,
+    "top_topics": [
+      "Inference compute shift from training to inference era",
+      "OpenAI legal trials and governance",
+      "Agent harness engineering and self-improvement",
+      "New open-weight model releases and efficiency gains",
+      "Coding agents evolving into platform infrastructure",
+      "AI and legal practice regulation"
+    ],
+    "key_entities_to_update": [
+      "OpenAI",
+      "swyx (Shawn Wang)",
+      "Noam Brown",
+      "Jensen Huang",
+      "Mistral AI",
+      "IBM Granite",
+      "Cursor",
+      "LangChain"
+    ],
+    "new_concept_pages_recommended": [
+      "Inference Inflection 2026",
+      "Agent Harness Engineering",
+      "HALO Self-Improvement",
+      "Incompressible Knowledge Probes",
+      "CPU Renaissance for AI Agents"
+    ]
+  },
+  "next_steps": {
+    "priority_1": {
+      "newsletter": "[AINews] The Inference Inflection (uid=31)",
+      "action": "Run full article extraction on all 20 redirect links to capture technical details on model releases, harness engineering, and inference optimization. Create/update concept pages for inference inflection, agent harness engineering, and new model releases.",
+      "estimated_effort": "2-3 hours for full extraction and wiki page creation"
+    },
+    "priority_2": {
+      "newsletter": "The Trial That Could Break OpenAI (uid=29)",
+      "action": "Extract key legal and governance articles. Update OpenAI entity page with trial details, new funding round, and regulatory developments. Consider creating AI Liability concept page.",
+      "estimated_effort": "1-2 hours"
+    },
+    "priority_3": {
+      "newsletter": "The product skill you must now master: Reinvention (uid=30)",
+      "action": "Skip - no actionable AI/LLM technical content. Links are Substack UI elements.",
+      "estimated_effort": "0 minutes"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 ---
 title: "How to Raise Money"
 url: "http://www.paulgraham.com/fr.html"
-fetched_at: 2026-04-29T07:01:35.749314+00:00
+fetched_at: 2026-04-30T07:01:29.435764+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "General and Surprising"
 url: "http://www.paulgraham.com/sun.html"
-fetched_at: 2026-04-29T07:01:33.036932+00:00
+fetched_at: 2026-04-30T07:01:26.461170+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

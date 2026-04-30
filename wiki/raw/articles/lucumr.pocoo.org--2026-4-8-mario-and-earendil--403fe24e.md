@@ -1,7 +1,7 @@
 ---
 title: "Mario and Earendil"
 url: "https://lucumr.pocoo.org/2026/4/8/mario-and-earendil/"
-fetched_at: 2026-04-29T07:02:04.612378+00:00
+fetched_at: 2026-04-30T07:01:57.723471+00:00
 source: "lucumr.pocoo.org"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "The Acceleration of Addictiveness"
 url: "http://www.paulgraham.com/addiction.html"
-fetched_at: 2026-04-29T07:01:38.843275+00:00
+fetched_at: 2026-04-30T07:01:32.486757+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

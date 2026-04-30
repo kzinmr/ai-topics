@@ -1,7 +1,7 @@
 ---
 title: "An NFT That Saves Lives"
 url: "http://www.paulgraham.com/nft.html"
-fetched_at: 2026-04-29T07:01:30.339042+00:00
+fetched_at: 2026-04-30T07:01:23.714159+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

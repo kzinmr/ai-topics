@@ -1,7 +1,7 @@
 ---
 title: "Tagged Union Subsets with Comptime in Zig"
 url: "https://mitchellh.com/writing/zig-comptime-tagged-union-subset"
-fetched_at: 2026-04-29T07:02:00.598522+00:00
+fetched_at: 2026-04-30T07:01:53.808396+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

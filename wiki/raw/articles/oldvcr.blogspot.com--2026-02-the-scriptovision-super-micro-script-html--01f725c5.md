@@ -1,7 +1,7 @@
 ---
 title: "The Scriptovision Super Micro Script video titler is almost a home computer"
 url: "https://oldvcr.blogspot.com/2026/02/the-scriptovision-super-micro-script.html"
-fetched_at: 2026-04-29T07:01:24.420367+00:00
+fetched_at: 2026-04-30T07:01:17.728304+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

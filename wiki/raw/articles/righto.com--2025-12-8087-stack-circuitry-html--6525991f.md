@@ -1,7 +1,7 @@
 ---
 title: "The stack circuitry of the Intel 8087 floating point chip, reverse-engineered"
 url: "http://www.righto.com/2025/12/8087-stack-circuitry.html"
-fetched_at: 2026-04-29T07:01:14.838848+00:00
+fetched_at: 2026-04-30T07:01:07.216366+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

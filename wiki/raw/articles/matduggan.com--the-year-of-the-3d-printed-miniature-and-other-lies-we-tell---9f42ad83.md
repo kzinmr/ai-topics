@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/the-year-of-the-3d-printed-miniature-and-other-lies-we-tell-ourselves/"
-fetched_at: 2026-04-29T07:01:54.940183+00:00
+fetched_at: 2026-04-30T07:01:49.244220+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---

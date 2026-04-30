@@ -1,7 +1,7 @@
 ---
 title: "Claude Haiku 4.5 does not appreciate my attempts to jailbreak it"
 url: "https://minimaxir.com/2025/10/claude-haiku-jailbreak/"
-fetched_at: 2026-04-29T07:02:01.932775+00:00
+fetched_at: 2026-04-30T07:01:55.522220+00:00
 source: "minimaxir.com"
 tags: [blog, raw]
 ---

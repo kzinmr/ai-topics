@@ -1,7 +1,7 @@
 ---
 title: "Homelab downtime update: The fight for DNS supremacy"
 url: "https://xeiaso.net/notes/2026/dns-fight/"
-fetched_at: 2026-04-29T07:00:58.217210+00:00
+fetched_at: 2026-04-30T07:00:50.341573+00:00
 source: "xeiaso.net"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Zig AstGen: AST => ZIR"
 url: "https://mitchellh.com/zig/astgen"
-fetched_at: 2026-04-29T07:02:01.633294+00:00
+fetched_at: 2026-04-30T07:01:54.982034+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

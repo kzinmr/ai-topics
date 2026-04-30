@@ -1,7 +1,7 @@
 ---
 title: "SQLAlchemy 2 In Practice - Chapter 3 - One-To-Many Relationships"
 url: "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-3---one-to-many-relationships"
-fetched_at: 2026-04-29T07:01:26.540582+00:00
+fetched_at: 2026-04-30T07:01:20.170429+00:00
 source: "miguelgrinberg.com"
 tags: [blog, raw]
 ---

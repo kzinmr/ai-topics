@@ -1,7 +1,7 @@
 ---
 title: "How to easily dig through the Epstein files yourself"
 url: "https://micahflee.com/how-to-easily-dig-through-the-epstein-files-yourself/"
-fetched_at: 2026-04-29T07:02:03.805897+00:00
+fetched_at: 2026-04-30T07:01:56.820032+00:00
 source: "micahflee.com"
 tags: [blog, raw]
 ---

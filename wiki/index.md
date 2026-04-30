@@ -749,7 +749,7 @@
 - [[concepts/dspy-architecture]] — DSPy Architecture — three core abstractions: Signatures, Modules, and Teleprompters.
 - [[concepts/dspy-comparisons]] — DSPy vs Other Approaches — paradigm comparison with LangChain, RLMs, GEPA.
 - [[concepts/dspy-modules]] — DSPy Modules Reference — composable building blocks connecting Signatures to execution.
-- [[concepts/dspy-optimization]] — DSPy Optimization — Teleprompters, Assertions, and Fine-Tuning techniques.
+- [[concepts/dspy-optimization]] — DSPy Optimization — Teleprompters, Assertions, and Fine-Tuning techniques. Includes Dropbox Dash relevance judge case study (April 2026): GEPA optimizer for model adaptation, MIPROv2 for small-model reliability, Instruction Library Layer for production safety.
 - [[concepts/dual-process-theory]] — Dual-process theory applied to AI reasoning — System 1 vs System 2 processing in LLMs.
 - [[concepts/durable-execution]] — Durable execution pattern for long-running AI agent workflows with checkpointing and recovery.
 - [[concepts/fine-tuning/_index]] — Fine-tuning — index page for model fine-tuning concepts.

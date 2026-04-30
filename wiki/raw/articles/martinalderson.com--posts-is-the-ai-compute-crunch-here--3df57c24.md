@@ -1,7 +1,7 @@
 ---
 title: "Is the AI Compute Crunch Here?"
 url: "https://martinalderson.com/posts/is-the-ai-compute-crunch-here/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-29T07:02:04.051911+00:00
+fetched_at: 2026-04-30T07:01:57.149108+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

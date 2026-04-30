@@ -1,7 +1,7 @@
 ---
 title: "Git without a forge"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/git-no-forge/"
-fetched_at: 2026-04-29T07:00:55.052660+00:00
+fetched_at: 2026-04-30T07:00:47.110610+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

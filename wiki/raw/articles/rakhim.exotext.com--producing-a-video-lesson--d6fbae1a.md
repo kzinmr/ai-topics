@@ -1,7 +1,7 @@
 ---
 title: "Producing a video lesson"
 url: "https://rakhim.exotext.com/producing-a-video-lesson"
-fetched_at: 2026-04-29T07:01:21.745290+00:00
+fetched_at: 2026-04-30T07:01:14.662565+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Engineers do get promoted for writing simple code"
 url: "https://seangoedecke.com/simple-work-gets-rewarded/"
-fetched_at: 2026-04-29T07:01:17.437565+00:00
+fetched_at: 2026-04-30T07:01:09.735237+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

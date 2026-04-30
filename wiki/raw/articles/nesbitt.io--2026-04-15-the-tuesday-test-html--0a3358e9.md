@@ -1,7 +1,7 @@
 ---
 title: "The Tuesday Test"
 url: "https://nesbitt.io/2026/04/15/the-tuesday-test.html"
-fetched_at: 2026-04-29T07:02:01.657886+00:00
+fetched_at: 2026-04-30T07:01:55.199791+00:00
 source: "nesbitt.io"
 tags: [blog, raw]
 ---

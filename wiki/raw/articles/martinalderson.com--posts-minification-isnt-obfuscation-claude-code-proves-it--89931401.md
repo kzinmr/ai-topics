@@ -1,7 +1,7 @@
 ---
 title: "Minification isn't obfuscation - Claude Code proves it"
 url: "https://martinalderson.com/posts/minification-isnt-obfuscation-claude-code-proves-it/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-29T07:02:04.281206+00:00
+fetched_at: 2026-04-30T07:01:57.353645+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

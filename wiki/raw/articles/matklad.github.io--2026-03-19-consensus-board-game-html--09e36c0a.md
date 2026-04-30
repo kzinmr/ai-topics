@@ -1,7 +1,7 @@
 ---
 title: "Consensus Board Game"
 url: "https://matklad.github.io/2026/03/19/consensus-board-game.html"
-fetched_at: 2026-04-29T07:02:04.883758+00:00
+fetched_at: 2026-04-30T07:01:58.000962+00:00
 source: "matklad.github.io"
 tags: [blog, raw]
 ---

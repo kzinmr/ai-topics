@@ -1,7 +1,7 @@
 ---
 title: "Clever memory tricks"
 url: "http://xania.org/202512/22-memory-cunningness?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-29T07:01:05.089509+00:00
+fetched_at: 2026-04-30T07:00:57.350620+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

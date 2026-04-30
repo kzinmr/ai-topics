@@ -1,7 +1,7 @@
 ---
 title: "Millisecond Converter"
 url: "https://simonwillison.net/2026/Apr/24/milliseconds/#atom-everything"
-fetched_at: 2026-04-29T07:01:19.459791+00:00
+fetched_at: 2026-04-30T07:01:11.982096+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

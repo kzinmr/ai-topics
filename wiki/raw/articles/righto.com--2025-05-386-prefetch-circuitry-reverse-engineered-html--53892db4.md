@@ -1,7 +1,7 @@
 ---
 title: "Reverse engineering the 386 processor's prefetch queue circuitry"
 url: "http://www.righto.com/2025/05/386-prefetch-circuitry-reverse-engineered.html"
-fetched_at: 2026-04-29T07:01:15.362440+00:00
+fetched_at: 2026-04-30T07:01:08.514202+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

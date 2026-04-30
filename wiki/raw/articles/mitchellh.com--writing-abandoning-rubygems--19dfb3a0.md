@@ -1,7 +1,7 @@
 ---
 title: "Abandoning Rubygems"
 url: "https://mitchellh.com/writing/abandoning-rubygems"
-fetched_at: 2026-04-29T07:02:01.361977+00:00
+fetched_at: 2026-04-30T07:01:54.857080+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

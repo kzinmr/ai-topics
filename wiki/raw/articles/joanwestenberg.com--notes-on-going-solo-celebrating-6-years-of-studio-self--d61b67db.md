@@ -1,7 +1,7 @@
 ---
 title: "Notes on going solo: celebrating 6 years of Studio Self"
 url: "https://www.joanwestenberg.com/notes-on-going-solo-celebrating-6-years-of-studio-self/"
-fetched_at: 2026-04-29T07:02:03.598015+00:00
+fetched_at: 2026-04-30T07:01:56.727704+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

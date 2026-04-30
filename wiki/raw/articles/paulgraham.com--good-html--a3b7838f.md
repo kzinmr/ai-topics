@@ -1,7 +1,7 @@
 ---
 title: "Be Good"
 url: "http://www.paulgraham.com/good.html"
-fetched_at: 2026-04-29T07:01:43.233839+00:00
+fetched_at: 2026-04-30T07:01:37.071410+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

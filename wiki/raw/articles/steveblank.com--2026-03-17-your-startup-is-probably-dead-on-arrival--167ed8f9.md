@@ -1,7 +1,7 @@
 ---
 title: "Your Startup Is Probably Dead On Arrival"
 url: "https://steveblank.com/2026/03/17/your-startup-is-probably-dead-on-arrival/"
-fetched_at: 2026-04-29T07:01:10.760229+00:00
+fetched_at: 2026-04-30T07:01:02.963935+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

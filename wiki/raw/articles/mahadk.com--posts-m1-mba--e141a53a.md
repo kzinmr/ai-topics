@@ -1,7 +1,7 @@
 ---
 title: "Using the M1 MacBook Air in 2026"
 url: "https://mahadk.com/posts/m1-mba/"
-fetched_at: 2026-04-29T07:01:16.196598+00:00
+fetched_at: 2026-04-30T07:01:08.526439+00:00
 source: "skyfall.dev"
 tags: [blog, raw]
 ---

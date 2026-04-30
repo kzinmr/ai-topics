@@ -1,7 +1,7 @@
 ---
 title: "Why AI browsers haven't taken off"
 url: "https://mahadk.com/posts/ai-browsers/"
-fetched_at: 2026-04-29T07:01:16.221126+00:00
+fetched_at: 2026-04-30T07:01:08.542162+00:00
 source: "skyfall.dev"
 tags: [blog, raw]
 ---

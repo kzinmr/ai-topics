@@ -1,7 +1,7 @@
 ---
 title: "Optimism is not a personality flaw"
 url: "https://www.joanwestenberg.com/optimism-is-not-a-personality-flaw/"
-fetched_at: 2026-04-29T07:02:03.309272+00:00
+fetched_at: 2026-04-30T07:01:56.580217+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

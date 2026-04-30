@@ -1,7 +1,7 @@
 ---
 title: "How to Write Blog Posts that Developers Read"
 url: "https://refactoringenglish.com/chapters/write-blog-posts-developers-read/"
-fetched_at: 2026-04-29T07:01:22.897886+00:00
+fetched_at: 2026-04-30T07:01:15.889934+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
 ---

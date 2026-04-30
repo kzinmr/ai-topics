@@ -1,7 +1,7 @@
 ---
 title: "Why sandboxing coding agents is harder than you think"
 url: "https://martinalderson.com/posts/why-sandboxing-coding-agents-is-harder-than-you-think/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-29T07:02:04.192800+00:00
+fetched_at: 2026-04-30T07:01:57.267150+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

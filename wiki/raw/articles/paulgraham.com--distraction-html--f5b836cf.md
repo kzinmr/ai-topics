@@ -1,7 +1,7 @@
 ---
 title: "Disconnecting Distraction"
 url: "http://www.paulgraham.com/distraction.html"
-fetched_at: 2026-04-29T07:01:42.732940+00:00
+fetched_at: 2026-04-30T07:01:36.400051+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

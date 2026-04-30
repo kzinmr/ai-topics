@@ -1,7 +1,7 @@
 ---
 title: "Is There Such a Thing as Good Taste?"
 url: "http://www.paulgraham.com/goodtaste.html"
-fetched_at: 2026-04-29T07:01:29.411276+00:00
+fetched_at: 2026-04-30T07:01:22.806953+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

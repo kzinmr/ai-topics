@@ -1,7 +1,7 @@
 ---
 title: "Refurb weekend: Gremlin Blasto arcade board"
 url: "https://oldvcr.blogspot.com/2025/06/refurb-weekend-gremlin-blasto-arcade.html"
-fetched_at: 2026-04-29T07:01:25.579248+00:00
+fetched_at: 2026-04-30T07:01:19.241135+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

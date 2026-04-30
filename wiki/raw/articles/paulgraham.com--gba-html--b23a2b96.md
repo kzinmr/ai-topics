@@ -1,7 +1,7 @@
 ---
 title: "The Word \"Hacker\""
 url: "http://www.paulgraham.com/gba.html"
-fetched_at: 2026-04-29T07:01:51.149489+00:00
+fetched_at: 2026-04-30T07:01:45.088833+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "RSC for LISP Developers"
 url: "https://overreacted.io/rsc-for-lisp-developers/"
-fetched_at: 2026-04-29T07:01:56.246631+00:00
+fetched_at: 2026-04-30T07:01:49.962614+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

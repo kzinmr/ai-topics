@@ -1,7 +1,7 @@
 ---
 title: "Installing Void Linux on ZFS with Hibernation Support"
 url: "https://it-notes.dragas.net/2025/12/22/void-linux-zfs-hibernation-guide/"
-fetched_at: 2026-04-29T07:02:10.530230+00:00
+fetched_at: 2026-04-30T07:02:04.923797+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Where Did The Form 1040 Come From?"
 url: "https://feed.tedium.co/link/15204/17321557/tax-forms-history-irs"
-fetched_at: 2026-04-29T07:01:01.908632+00:00
+fetched_at: 2026-04-30T07:00:53.755606+00:00
 source: "tedium.co"
 tags: [blog, raw]
 ---

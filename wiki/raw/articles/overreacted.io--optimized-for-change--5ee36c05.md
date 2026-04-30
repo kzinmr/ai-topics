@@ -1,7 +1,7 @@
 ---
 title: "Optimized for Change"
 url: "https://overreacted.io/optimized-for-change/"
-fetched_at: 2026-04-29T07:01:59.087058+00:00
+fetched_at: 2026-04-30T07:01:53.031100+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Why I refrain from infosec punditry"
 url: "https://lcamtuf.substack.com/p/why-i-refrain-from-infosec-punditry"
-fetched_at: 2026-04-29T07:02:08.144793+00:00
+fetched_at: 2026-04-30T07:02:01.361182+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

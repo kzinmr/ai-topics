@@ -1,7 +1,7 @@
 ---
 title: "Separation of concerns in a bug tracker"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/bugtracker-separate/"
-fetched_at: 2026-04-29T07:00:55.745135+00:00
+fetched_at: 2026-04-30T07:00:47.791042+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "What Microsoft Is this the Altair Basic of?"
 url: "http://www.paulgraham.com/altair.html"
-fetched_at: 2026-04-29T07:01:34.503997+00:00
+fetched_at: 2026-04-30T07:01:28.069513+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

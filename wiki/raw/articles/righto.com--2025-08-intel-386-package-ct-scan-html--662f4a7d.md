@@ -1,7 +1,7 @@
 ---
 title: "A CT scanner reveals surprises inside the 386 processor's ceramic package"
 url: "http://www.righto.com/2025/08/intel-386-package-ct-scan.html"
-fetched_at: 2026-04-29T07:01:16.612763+00:00
+fetched_at: 2026-04-30T07:01:07.731451+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

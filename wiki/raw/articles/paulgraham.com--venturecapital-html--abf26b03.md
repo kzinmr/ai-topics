@@ -1,7 +1,7 @@
 ---
 title: "A Unified Theory of VC Suckage"
 url: "http://www.paulgraham.com/venturecapital.html"
-fetched_at: 2026-04-29T07:01:49.425406+00:00
+fetched_at: 2026-04-30T07:01:43.400112+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

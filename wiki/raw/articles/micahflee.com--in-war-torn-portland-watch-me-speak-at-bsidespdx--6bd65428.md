@@ -1,7 +1,7 @@
 ---
 title: "In war-torn Portland? Watch me speak at BSidesPDX!"
 url: "https://micahflee.com/in-war-torn-portland-watch-me-speak-at-bsidespdx/"
-fetched_at: 2026-04-29T07:02:03.787811+00:00
+fetched_at: 2026-04-30T07:01:56.887699+00:00
 source: "micahflee.com"
 tags: [blog, raw]
 ---

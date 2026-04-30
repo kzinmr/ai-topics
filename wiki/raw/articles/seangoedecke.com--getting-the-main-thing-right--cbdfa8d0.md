@@ -1,7 +1,7 @@
 ---
 title: "Getting the main thing right"
 url: "https://seangoedecke.com/getting-the-main-thing-right/"
-fetched_at: 2026-04-29T07:01:18.651118+00:00
+fetched_at: 2026-04-30T07:01:11.031208+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

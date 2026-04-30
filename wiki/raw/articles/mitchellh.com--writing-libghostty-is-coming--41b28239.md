@@ -1,7 +1,7 @@
 ---
 title: "Libghostty Is Coming"
 url: "https://mitchellh.com/writing/libghostty-is-coming"
-fetched_at: 2026-04-29T07:01:59.573641+00:00
+fetched_at: 2026-04-30T07:01:53.364793+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

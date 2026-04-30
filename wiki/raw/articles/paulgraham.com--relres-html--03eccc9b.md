@@ -1,7 +1,7 @@
 ---
 title: "Relentlessly Resourceful"
 url: "http://www.paulgraham.com/relres.html"
-fetched_at: 2026-04-29T07:01:41.008996+00:00
+fetched_at: 2026-04-30T07:01:34.650106+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

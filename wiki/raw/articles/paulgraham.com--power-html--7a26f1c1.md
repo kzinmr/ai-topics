@@ -1,7 +1,7 @@
 ---
 title: "Succinctness is Power"
 url: "http://www.paulgraham.com/power.html"
-fetched_at: 2026-04-29T07:01:52.757153+00:00
+fetched_at: 2026-04-30T07:01:46.686927+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

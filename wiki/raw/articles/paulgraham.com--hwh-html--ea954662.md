@@ -1,7 +1,7 @@
 ---
 title: "How to Work Hard"
 url: "http://www.paulgraham.com/hwh.html"
-fetched_at: 2026-04-29T07:01:29.648802+00:00
+fetched_at: 2026-04-30T07:01:23.110604+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

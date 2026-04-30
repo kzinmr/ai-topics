@@ -1,7 +1,7 @@
 ---
 title: "Premium: How OpenAI Kills Oracle"
 url: "https://www.wheresyoured.at/how-openai-kills-oracle/"
-fetched_at: 2026-04-29T07:01:04.161217+00:00
+fetched_at: 2026-04-30T07:00:56.476387+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
 ---

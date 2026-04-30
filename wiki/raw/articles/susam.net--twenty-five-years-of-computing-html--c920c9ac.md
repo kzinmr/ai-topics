@@ -1,7 +1,7 @@
 ---
 title: "Twenty Five Years of Computing"
 url: "https://susam.net/twenty-five-years-of-computing.html"
-fetched_at: 2026-04-29T07:01:04.938123+00:00
+fetched_at: 2026-04-30T07:00:57.191201+00:00
 source: "susam.net"
 tags: [blog, raw]
 ---

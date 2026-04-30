@@ -1,7 +1,7 @@
 ---
 title: "The Patent Pledge"
 url: "http://www.paulgraham.com/patentpledge.html"
-fetched_at: 2026-04-29T07:01:37.705595+00:00
+fetched_at: 2026-04-30T07:01:31.378787+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

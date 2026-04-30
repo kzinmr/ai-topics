@@ -1,7 +1,7 @@
 ---
 title: "Writing Resilient Components"
 url: "https://overreacted.io/writing-resilient-components/"
-fetched_at: 2026-04-29T07:01:58.819690+00:00
+fetched_at: 2026-04-30T07:01:52.702501+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "(One) Good AI Is Here"
 url: "https://anildash.com/2026/04/28/one-good-ai-is-here/"
-fetched_at: 2026-04-29T07:00:51.987303+00:00
+fetched_at: 2026-04-30T07:00:44.163036+00:00
 source: "anildash.com"
 tags: [blog, raw]
 ---

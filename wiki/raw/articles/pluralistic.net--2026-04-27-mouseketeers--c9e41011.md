@@ -1,7 +1,7 @@
 ---
 title: "Pluralistic: Vicky Osterweil’s “The Extended Universe” (28 Apr 2026)"
 url: "https://pluralistic.net/2026/04/27/mouseketeers/"
-fetched_at: 2026-04-29T07:00:53.616581+00:00
+fetched_at: 2026-04-30T07:00:44.485156+00:00
 source: "pluralistic.net"
 tags: [blog, raw]
 ---

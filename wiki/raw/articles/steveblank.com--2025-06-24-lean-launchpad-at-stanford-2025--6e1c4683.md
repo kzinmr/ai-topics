@@ -1,7 +1,7 @@
 ---
 title: "Lean Launchpad at Stanford - 2025"
 url: "https://steveblank.com/2025/06/24/lean-launchpad-at-stanford-2025/"
-fetched_at: 2026-04-29T07:01:11.294422+00:00
+fetched_at: 2026-04-30T07:01:03.465970+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

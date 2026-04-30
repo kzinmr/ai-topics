@@ -1,7 +1,7 @@
 ---
 title: "Why YC"
 url: "http://www.paulgraham.com/whyyc.html"
-fetched_at: 2026-04-29T07:01:47.387989+00:00
+fetched_at: 2026-04-30T07:01:41.228254+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

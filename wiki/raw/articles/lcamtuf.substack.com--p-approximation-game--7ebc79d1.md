@@ -1,7 +1,7 @@
 ---
 title: "Approximation game"
 url: "https://lcamtuf.substack.com/p/approximation-game"
-fetched_at: 2026-04-29T07:02:08.905375+00:00
+fetched_at: 2026-04-30T07:02:01.842972+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

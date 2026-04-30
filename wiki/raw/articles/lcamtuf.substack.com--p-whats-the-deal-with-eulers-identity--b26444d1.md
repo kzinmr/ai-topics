@@ -1,7 +1,7 @@
 ---
 title: "What's the deal with Euler's identity?"
 url: "https://lcamtuf.substack.com/p/whats-the-deal-with-eulers-identity"
-fetched_at: 2026-04-29T07:02:09.122392+00:00
+fetched_at: 2026-04-30T07:02:02.706125+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

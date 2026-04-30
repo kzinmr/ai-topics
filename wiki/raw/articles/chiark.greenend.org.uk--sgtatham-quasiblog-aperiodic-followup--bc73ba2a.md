@@ -1,7 +1,7 @@
 ---
 title: "Beyond “Beyond the wall”"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-followup/"
-fetched_at: 2026-04-29T07:00:56.393143+00:00
+fetched_at: 2026-04-30T07:00:48.382891+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

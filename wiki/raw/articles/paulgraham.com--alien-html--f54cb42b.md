@@ -1,7 +1,7 @@
 ---
 title: "Alien Truth"
 url: "http://www.paulgraham.com/alien.html"
-fetched_at: 2026-04-29T07:01:28.561794+00:00
+fetched_at: 2026-04-30T07:01:21.880828+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

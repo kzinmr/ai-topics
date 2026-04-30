@@ -1,7 +1,7 @@
 ---
 title: "How an LLM becomes more coherent as we train it"
 url: "https://www.gilesthomas.com/2026/04/how-an-llm-becomes-more-coherent-over-training"
-fetched_at: 2026-04-29T07:02:02.883585+00:00
+fetched_at: 2026-04-30T07:01:56.342484+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Great Hackers"
 url: "http://www.paulgraham.com/gh.html"
-fetched_at: 2026-04-29T07:01:51.175214+00:00
+fetched_at: 2026-04-30T07:01:45.144727+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

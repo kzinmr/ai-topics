@@ -1,7 +1,7 @@
 ---
 title: "Can I finally start using Wayland in 2026?"
 url: "https://michael.stapelberg.ch/posts/2026-01-04-wayland-sway-in-2026/"
-fetched_at: 2026-04-29T07:01:12.837954+00:00
+fetched_at: 2026-04-30T07:01:05.059733+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
 ---

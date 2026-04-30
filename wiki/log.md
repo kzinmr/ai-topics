@@ -1,3 +1,15 @@
+## [2026-04-30] Dropbox Dash Relevance Judge with DSPy
+
+- **Source:** [How we optimized Dash's relevance judge with DSPy](https://dropbox.tech/machine-learning/optimizing-dropbox-dash-relevance-judge-with-dspy) — Dropbox Tech Blog, April 2026
+- **Key findings:**
+  - Dropbox Dash uses a relevance judge to score file/message relevance (1–5 scale)
+  - **GEPA optimizer** for gpt-oss-120b adaptation: NMSE dropped 45% (8.83 → 4.86), adaptation time 2 weeks → 2 days
+  - **MIPROv2** for gemma-3-12b: malformed JSON reduced 97% (358 → 9 invalid), NMSE 46.88 → 17.26
+  - **Instruction Library Layer** for o3: human-curated rules + DSPy optimizer selection for safe incremental improvements
+  - Key pattern: NMSE (Normalized Mean Squared Error) as metric for human-LLM alignment
+- Raw article: raw/articles/2026-04-30_dropbox-tech-optimizing-dash-relevance-judge-with-dspy.md
+- Updated: wiki/concepts/dspy.md (added Dropbox case study to Production Users), wiki/index.md, wiki/log.md
+
 ## [2026-04-30] Rivet — Docker Sandbox MicroVM API Research
 
 - [[concepts/docker-sandbox-microvm-api]] — New concept page: reverse-engineered Docker Sandbox undocumented `sandboxd` API for kernel-isolated MicroVM execution

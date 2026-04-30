@@ -1,7 +1,7 @@
 ---
 title: "Post-Medium Publishing"
 url: "http://www.paulgraham.com/publishing.html"
-fetched_at: 2026-04-29T07:01:39.745439+00:00
+fetched_at: 2026-04-30T07:01:33.413798+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

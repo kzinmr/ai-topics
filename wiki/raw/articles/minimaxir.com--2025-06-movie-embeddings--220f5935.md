@@ -1,7 +1,7 @@
 ---
 title: "Predicting Average IMDb Movie Ratings Using Text Embeddings of Movie Metadata"
 url: "https://minimaxir.com/2025/06/movie-embeddings/"
-fetched_at: 2026-04-29T07:02:02.149844+00:00
+fetched_at: 2026-04-30T07:01:55.613004+00:00
 source: "minimaxir.com"
 tags: [blog, raw]
 ---

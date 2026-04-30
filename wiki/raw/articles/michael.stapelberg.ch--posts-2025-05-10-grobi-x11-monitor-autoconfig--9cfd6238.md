@@ -1,7 +1,7 @@
 ---
 title: "In praise of grobi for auto-configuring X11 monitors (2025)"
 url: "https://michael.stapelberg.ch/posts/2025-05-10-grobi-x11-monitor-autoconfig/"
-fetched_at: 2026-04-29T07:01:14.298442+00:00
+fetched_at: 2026-04-30T07:01:06.471073+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
 ---

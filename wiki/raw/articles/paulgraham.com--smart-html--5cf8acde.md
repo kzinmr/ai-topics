@@ -1,7 +1,7 @@
 ---
 title: "Beyond Smart"
 url: "http://www.paulgraham.com/smart.html"
-fetched_at: 2026-04-29T07:01:29.450475+00:00
+fetched_at: 2026-04-30T07:01:22.831783+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

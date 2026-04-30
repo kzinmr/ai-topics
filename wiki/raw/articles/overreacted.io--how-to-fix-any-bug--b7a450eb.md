@@ -1,7 +1,7 @@
 ---
 title: "How to Fix Any Bug"
 url: "https://overreacted.io/how-to-fix-any-bug/"
-fetched_at: 2026-04-29T07:01:55.364356+00:00
+fetched_at: 2026-04-30T07:01:49.448635+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

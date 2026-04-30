@@ -1,7 +1,7 @@
 ---
 title: "Pi: The Minimal Agent Within OpenClaw"
 url: "https://lucumr.pocoo.org/2026/1/31/pi/"
-fetched_at: 2026-04-29T07:02:04.787296+00:00
+fetched_at: 2026-04-30T07:01:57.902805+00:00
 source: "lucumr.pocoo.org"
 tags: [blog, raw]
 ---

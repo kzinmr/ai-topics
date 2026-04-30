@@ -1,7 +1,7 @@
 ---
 title: "The Best Way to Use Text Embeddings Portably is With Parquet and Polars"
 url: "https://minimaxir.com/2025/02/embeddings-parquet/"
-fetched_at: 2026-04-29T07:02:02.250895+00:00
+fetched_at: 2026-04-30T07:01:55.688665+00:00
 source: "minimaxir.com"
 tags: [blog, raw]
 ---

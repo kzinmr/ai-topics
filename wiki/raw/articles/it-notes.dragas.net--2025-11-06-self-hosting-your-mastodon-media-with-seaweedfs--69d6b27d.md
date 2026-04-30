@@ -1,7 +1,7 @@
 ---
 title: "Self-hosting your Mastodon media with SeaweedFS"
 url: "https://it-notes.dragas.net/2025/11/06/self-hosting-your-mastodon-media-with-seaweedfs/"
-fetched_at: 2026-04-29T07:02:10.515550+00:00
+fetched_at: 2026-04-30T07:02:04.884923+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

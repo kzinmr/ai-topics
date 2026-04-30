@@ -1,7 +1,7 @@
 ---
 title: "Time Machine inside a FreeBSD jail"
 url: "https://it-notes.dragas.net/2026/01/28/time-machine-freebsd-jail/"
-fetched_at: 2026-04-29T07:02:10.476305+00:00
+fetched_at: 2026-04-30T07:02:04.870505+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
 ---

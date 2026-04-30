@@ -1,7 +1,7 @@
 ---
 title: "Mitchell Hashimoto"
 url: "https://mitchellh.com/writing/as-code"
-fetched_at: 2026-04-29T07:01:59.855210+00:00
+fetched_at: 2026-04-30T07:01:53.604919+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

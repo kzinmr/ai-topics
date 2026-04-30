@@ -1,7 +1,7 @@
 ---
 title: "As an Experienced LLM User, I Actually Don't Use Generative LLMs Often"
 url: "https://minimaxir.com/2025/05/llm-use/"
-fetched_at: 2026-04-29T07:02:02.164097+00:00
+fetched_at: 2026-04-30T07:01:55.582578+00:00
 source: "minimaxir.com"
 tags: [blog, raw]
 ---

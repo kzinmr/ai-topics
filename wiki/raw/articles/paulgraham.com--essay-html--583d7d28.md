@@ -1,7 +1,7 @@
 ---
 title: "The Age of the Essay"
 url: "http://www.paulgraham.com/essay.html"
-fetched_at: 2026-04-29T07:01:50.607549+00:00
+fetched_at: 2026-04-30T07:01:44.559501+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

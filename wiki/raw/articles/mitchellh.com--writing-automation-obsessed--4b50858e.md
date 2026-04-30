@@ -1,7 +1,7 @@
 ---
 title: "Automation Obsessed"
 url: "https://mitchellh.com/writing/automation-obsessed"
-fetched_at: 2026-04-29T07:02:01.516136+00:00
+fetched_at: 2026-04-30T07:01:54.831819+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

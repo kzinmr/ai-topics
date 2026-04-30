@@ -1,7 +1,7 @@
 ---
 title: "Offline knowledge, buses, and note-taking"
 url: "https://tomrenner.com/posts/offline-knowledge/"
-fetched_at: 2026-04-29T07:01:06.727716+00:00
+fetched_at: 2026-04-30T07:00:59.048962+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "HN Popularity Contest"
 url: "https://refactoringenglish.com/tools/hn-popularity/methodology/"
-fetched_at: 2026-04-29T07:01:22.825600+00:00
+fetched_at: 2026-04-30T07:01:15.864164+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
 ---

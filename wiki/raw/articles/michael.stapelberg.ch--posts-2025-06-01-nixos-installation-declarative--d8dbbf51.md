@@ -1,7 +1,7 @@
 ---
 title: "How I like to install NixOS (declaratively) (2025)"
 url: "https://michael.stapelberg.ch/posts/2025-06-01-nixos-installation-declarative/"
-fetched_at: 2026-04-29T07:01:14.486660+00:00
+fetched_at: 2026-04-30T07:01:06.648916+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
 ---

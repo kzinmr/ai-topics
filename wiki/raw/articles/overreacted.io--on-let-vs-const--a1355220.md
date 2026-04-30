@@ -1,7 +1,7 @@
 ---
 title: "On let vs const - overreacted"
 url: "https://overreacted.io/on-let-vs-const/"
-fetched_at: 2026-04-29T07:01:57.772475+00:00
+fetched_at: 2026-04-30T07:01:52.069830+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

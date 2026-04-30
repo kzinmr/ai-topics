@@ -1,7 +1,7 @@
 ---
 title: "Justifying text-wrap: pretty"
 url: "https://matklad.github.io/2026/02/14/justifying-text-wrap-pretty.html"
-fetched_at: 2026-04-29T07:02:05.000822+00:00
+fetched_at: 2026-04-30T07:01:58.119439+00:00
 source: "matklad.github.io"
 tags: [blog, raw]
 ---

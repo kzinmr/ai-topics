@@ -1,7 +1,7 @@
 ---
 title: "RSC for Astro Developers"
 url: "https://overreacted.io/rsc-for-astro-developers/"
-fetched_at: 2026-04-29T07:01:56.311169+00:00
+fetched_at: 2026-04-30T07:01:50.277575+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

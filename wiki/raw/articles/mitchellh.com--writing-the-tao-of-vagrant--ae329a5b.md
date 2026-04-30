@@ -1,12 +1,12 @@
 ---
-title: "The Tao of Vagrant"
+title: "Mitchell Hashimoto"
 url: "https://mitchellh.com/writing/the-tao-of-vagrant"
-fetched_at: 2026-04-29T07:02:01.054585+00:00
+fetched_at: 2026-04-30T07:01:54.992127+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---
 
-# The Tao of Vagrant
+# Mitchell Hashimoto
 
 Source: https://mitchellh.com/writing/the-tao-of-vagrant
 

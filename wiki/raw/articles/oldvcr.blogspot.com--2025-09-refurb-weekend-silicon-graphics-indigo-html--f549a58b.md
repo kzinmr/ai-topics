@@ -1,7 +1,7 @@
 ---
 title: "Refurb weekend: Silicon Graphics Indigo² IMPACT 10000"
 url: "https://oldvcr.blogspot.com/2025/09/refurb-weekend-silicon-graphics-indigo.html"
-fetched_at: 2026-04-29T07:01:25.018434+00:00
+fetched_at: 2026-04-30T07:01:18.803467+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

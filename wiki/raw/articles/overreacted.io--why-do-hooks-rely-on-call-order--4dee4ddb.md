@@ -1,7 +1,7 @@
 ---
 title: "Why Do React Hooks Rely on Call Order?"
 url: "https://overreacted.io/why-do-hooks-rely-on-call-order/"
-fetched_at: 2026-04-29T07:01:59.259590+00:00
+fetched_at: 2026-04-30T07:01:53.184787+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

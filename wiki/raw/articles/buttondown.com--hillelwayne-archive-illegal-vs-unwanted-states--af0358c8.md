@@ -1,7 +1,7 @@
 ---
 title: "Illegal vs Unwanted States"
 url: "https://buttondown.com/hillelwayne/archive/illegal-vs-unwanted-states/"
-fetched_at: 2026-04-29T07:00:53.414755+00:00
+fetched_at: 2026-04-30T07:00:48.834484+00:00
 source: "buttondown.com/hillelwayne"
 tags: [blog, raw]
 ---

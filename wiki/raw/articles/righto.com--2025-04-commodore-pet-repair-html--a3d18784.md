@@ -1,7 +1,7 @@
 ---
 title: "A tricky Commodore PET repair: tracking down 6 1/2 bad chips"
 url: "http://www.righto.com/2025/04/commodore-pet-repair.html"
-fetched_at: 2026-04-29T07:01:16.090239+00:00
+fetched_at: 2026-04-30T07:01:08.192671+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

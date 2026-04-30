@@ -1,7 +1,7 @@
 ---
 title: "When compilers surprise you"
 url: "http://xania.org/202512/24-cunning-clang?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-29T07:01:05.053563+00:00
+fetched_at: 2026-04-30T07:00:57.322226+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Persuade xor Discover"
 url: "http://www.paulgraham.com/discover.html"
-fetched_at: 2026-04-29T07:01:39.580522+00:00
+fetched_at: 2026-04-30T07:01:33.262159+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

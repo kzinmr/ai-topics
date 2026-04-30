@@ -1,7 +1,7 @@
 ---
 title: "Don't make it \"like Google\""
 url: "https://rakhim.exotext.com/dont-make-it-like-google"
-fetched_at: 2026-04-29T07:01:21.070078+00:00
+fetched_at: 2026-04-30T07:01:13.941576+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

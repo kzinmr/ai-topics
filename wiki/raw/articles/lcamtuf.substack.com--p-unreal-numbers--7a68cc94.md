@@ -1,7 +1,7 @@
 ---
 title: "Unreal numbers - lcamtuf’s thing"
 url: "https://lcamtuf.substack.com/p/unreal-numbers"
-fetched_at: 2026-04-29T07:02:08.540183+00:00
+fetched_at: 2026-04-30T07:02:01.812514+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

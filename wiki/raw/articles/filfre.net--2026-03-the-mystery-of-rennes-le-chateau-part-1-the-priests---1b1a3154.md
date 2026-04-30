@@ -1,7 +1,7 @@
 ---
 title: "The Mystery of Rennes-le-Château, Part 1: The Priest’s Treasure"
 url: "https://www.filfre.net/2026/03/the-mystery-of-rennes-le-chateau-part-1-the-priests-treasure/"
-fetched_at: 2026-04-29T07:02:05.969594+00:00
+fetched_at: 2026-04-30T07:01:58.811133+00:00
 source: "filfre.net"
 tags: [blog, raw]
 ---

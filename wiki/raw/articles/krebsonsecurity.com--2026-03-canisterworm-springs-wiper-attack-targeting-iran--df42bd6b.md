@@ -1,7 +1,7 @@
 ---
 title: "‘CanisterWorm’ Springs Wiper Attack Targeting Iran"
 url: "https://krebsonsecurity.com/2026/03/canisterworm-springs-wiper-attack-targeting-iran/"
-fetched_at: 2026-04-29T07:02:06.284574+00:00
+fetched_at: 2026-04-30T07:01:59.217702+00:00
 source: "krebsonsecurity.com"
 tags: [blog, raw]
 ---

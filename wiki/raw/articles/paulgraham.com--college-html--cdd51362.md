@@ -1,7 +1,7 @@
 ---
 title: "Undergraduation"
 url: "http://www.paulgraham.com/college.html"
-fetched_at: 2026-04-29T07:01:49.529024+00:00
+fetched_at: 2026-04-30T07:01:43.465934+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

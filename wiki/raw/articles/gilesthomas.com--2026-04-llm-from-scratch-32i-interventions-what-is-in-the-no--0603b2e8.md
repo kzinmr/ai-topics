@@ -1,7 +1,7 @@
 ---
 title: "Writing an LLM from scratch, part 32i -- Interventions: what is in the noise?"
 url: "https://www.gilesthomas.com/2026/04/llm-from-scratch-32i-interventions-what-is-in-the-noise"
-fetched_at: 2026-04-29T07:02:02.830456+00:00
+fetched_at: 2026-04-30T07:01:56.556125+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
 ---

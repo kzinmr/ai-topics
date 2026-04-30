@@ -1,7 +1,7 @@
 ---
 title: "Default Alive or Default Dead?"
 url: "http://www.paulgraham.com/aord.html"
-fetched_at: 2026-04-29T07:01:34.064416+00:00
+fetched_at: 2026-04-30T07:01:27.528478+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

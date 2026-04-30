@@ -1,7 +1,7 @@
 ---
 title: "If Lisp is So Great"
 url: "http://www.paulgraham.com/iflisp.html"
-fetched_at: 2026-04-29T07:01:51.649648+00:00
+fetched_at: 2026-04-30T07:01:45.657440+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Armin Ronacher's Thoughts and Writings"
 url: "https://lucumr.pocoo.org/2026/4/28/before-github/"
-fetched_at: 2026-04-29T07:00:51.091789+00:00
+fetched_at: 2026-04-30T07:00:42.337197+00:00
 source: "lucumr.pocoo.org"
 tags: [blog, raw]
 ---

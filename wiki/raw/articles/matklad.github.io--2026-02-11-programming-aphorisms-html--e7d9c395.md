@@ -1,7 +1,7 @@
 ---
 title: "Programming Aphorisms"
 url: "https://matklad.github.io/2026/02/11/programming-aphorisms.html"
-fetched_at: 2026-04-29T07:02:04.996599+00:00
+fetched_at: 2026-04-30T07:01:58.101262+00:00
 source: "matklad.github.io"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "AirPods, Touch Bars, and the rest of Tim Cook’s legacy"
 url: "https://www.theverge.com/podcast/917965/apple-ceo-cook-ternus-transition"
-fetched_at: 2026-04-29T07:00:53.423756+00:00
+fetched_at: 2026-04-30T07:00:45.004494+00:00
 source: "daringfireball.net"
 tags: [blog, raw]
 ---

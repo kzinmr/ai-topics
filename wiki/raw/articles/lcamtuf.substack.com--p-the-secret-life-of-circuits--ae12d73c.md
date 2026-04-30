@@ -1,7 +1,7 @@
 ---
 title: "The Secret Life of Circuits"
 url: "https://lcamtuf.substack.com/p/the-secret-life-of-circuits"
-fetched_at: 2026-04-29T07:02:08.029123+00:00
+fetched_at: 2026-04-30T07:02:01.322803+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

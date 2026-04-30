@@ -1,7 +1,7 @@
 ---
 title: "A USB interface to the \"Mother of All Demos\" keyset"
 url: "http://www.righto.com/2025/03/mother-of-all-demos-usb-keyset-interface.html"
-fetched_at: 2026-04-29T07:01:15.955810+00:00
+fetched_at: 2026-04-30T07:01:08.423200+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

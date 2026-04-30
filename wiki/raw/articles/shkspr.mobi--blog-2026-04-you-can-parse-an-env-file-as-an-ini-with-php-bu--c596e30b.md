@@ -1,7 +1,7 @@
 ---
 title: "You can parse an .env file as an .ini with PHP"
 url: "https://shkspr.mobi/blog/2026/04/you-can-parse-an-env-file-as-an-ini-with-php-but-theres-a-catch/"
-fetched_at: 2026-04-29T07:01:07.708823+00:00
+fetched_at: 2026-04-30T07:01:00.054449+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
 ---

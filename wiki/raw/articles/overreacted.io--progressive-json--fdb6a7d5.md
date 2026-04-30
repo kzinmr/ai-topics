@@ -1,7 +1,7 @@
 ---
 title: "Progressive JSON"
 url: "https://overreacted.io/progressive-json/"
-fetched_at: 2026-04-29T07:01:56.171799+00:00
+fetched_at: 2026-04-30T07:01:50.018548+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

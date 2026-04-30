@@ -1,7 +1,7 @@
 ---
 title: "How to Disagree"
 url: "http://www.paulgraham.com/disagree.html"
-fetched_at: 2026-04-29T07:01:43.526967+00:00
+fetched_at: 2026-04-30T07:01:37.184465+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

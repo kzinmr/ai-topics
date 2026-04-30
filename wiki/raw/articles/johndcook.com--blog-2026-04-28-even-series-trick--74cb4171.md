@@ -1,7 +1,7 @@
 ---
 title: "Turning a trick into a technique"
 url: "https://www.johndcook.com/blog/2026/04/28/even-series-trick/"
-fetched_at: 2026-04-29T07:00:51.293957+00:00
+fetched_at: 2026-04-30T07:00:42.691691+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

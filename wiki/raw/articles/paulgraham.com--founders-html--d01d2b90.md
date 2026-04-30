@@ -1,7 +1,7 @@
 ---
 title: "What We Look for in Founders"
 url: "http://www.paulgraham.com/founders.html"
-fetched_at: 2026-04-29T07:01:38.219222+00:00
+fetched_at: 2026-04-30T07:01:31.835899+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

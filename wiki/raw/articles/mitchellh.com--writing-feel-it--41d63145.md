@@ -1,7 +1,7 @@
 ---
 title: "You Have to Feel It"
 url: "https://mitchellh.com/writing/feel-it"
-fetched_at: 2026-04-29T07:01:59.872135+00:00
+fetched_at: 2026-04-30T07:01:53.569590+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

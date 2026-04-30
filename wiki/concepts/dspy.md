@@ -3,7 +3,7 @@ title: "DSPy — Declarative Self-improving Python"
 type: concept
 created: 2026-04-30
 updated: 2026-04-30
-tags: [dspy, prompt-optimization, llm-engineering, declarative-programming]
+tags: [dspy, prompt-optimization, llm-engineering, declarative-programming, llm-as-judge]
 sources:
   - raw/articles/crawl-2026-04-29-dspy-adoption-gap-khattabs-law.md
   - https://github.com/stanfordnlp/dspy
@@ -52,7 +52,26 @@ DSPy's actual technical differentiator. MIPROv2 performs Bayesian optimization o
 
 ## Production Users
 
-Companies using DSPy in production: **JetBlue, Databricks, Replit, VMware, Sephora**
+Companies using DSPy in production: **JetBlue, Databricks, Replit, VMware, Sephora, Dropbox**
+
+### Dropbox Dash Relevance Judge Case Study (April 2026)
+
+Dropbox used DSPy to optimize Dash's relevance judge (LLM scoring file/message relevance to user queries).
+
+**Three-stage approach:**
+
+| Stage | Model | Optimizer | Key Result |
+|-------|-------|-----------|------------|
+| Adaptation | gpt-oss-120b | GEPA | NMSE dropped **45%** (8.83 → 4.86), adaptation time 2 weeks → 2 days |
+| Small model | gemma-3-12b | MIPROv2 | Malformed JSON reduced **97%** (358 → 9 invalid), NMSE 46.88 → 17.26 |
+| Production | o3 | Instruction Library Layer | Incremental "small PRs with tests" approach — optimizer selects human-written rules of thumb |
+
+**Key patterns:**
+- GEPA reflection loop: Evaluate → Feedback → Refine (avoids overfitting by generating general rules from specific failures)
+- Instruction Library: human-curated rules + DSPy optimizer for selection (safer than full rewrites for production models)
+- NMSE (Normalized Mean Squared Error) as metric for human-LLM alignment
+
+[Source: Dropbox Tech Blog](https://dropbox.tech/machine-learning/optimizing-dropbox-dash-relevance-judge-with-dspy)
 
 Reported benefits:
 - Faster model swaps

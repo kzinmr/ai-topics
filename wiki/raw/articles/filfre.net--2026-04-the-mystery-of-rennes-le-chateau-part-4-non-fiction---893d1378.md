@@ -1,7 +1,7 @@
 ---
 title: "The Mystery of Rennes-le-Château, Part 4: Non-Fiction Meets Fiction"
 url: "https://www.filfre.net/2026/04/the-mystery-of-rennes-le-chateau-part-4-non-fiction-meets-fiction/"
-fetched_at: 2026-04-29T07:02:06.228229+00:00
+fetched_at: 2026-04-30T07:01:58.991350+00:00
 source: "filfre.net"
 tags: [blog, raw]
 ---

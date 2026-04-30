@@ -1,7 +1,7 @@
 ---
 title: "Figma's woes compound with Claude Design"
 url: "https://martinalderson.com/posts/figmas-woes-compound-with-claude-design/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-29T07:02:03.959782+00:00
+fetched_at: 2026-04-30T07:01:57.012393+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

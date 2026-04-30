@@ -1,7 +1,7 @@
 ---
 title: "Blind to Disruption - The CEOs Who Missed the Future"
 url: "https://steveblank.com/2025/07/08/blind-to-disruption-the-ceos-who-missed-the-future/"
-fetched_at: 2026-04-29T07:01:11.257391+00:00
+fetched_at: 2026-04-30T07:01:03.445470+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

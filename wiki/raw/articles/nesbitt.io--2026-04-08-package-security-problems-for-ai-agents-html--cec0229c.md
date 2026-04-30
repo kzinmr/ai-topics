@@ -1,7 +1,7 @@
 ---
 title: "Package Security Problems for AI Agents"
 url: "https://nesbitt.io/2026/04/08/package-security-problems-for-ai-agents.html"
-fetched_at: 2026-04-29T07:02:01.822538+00:00
+fetched_at: 2026-04-30T07:01:55.289931+00:00
 source: "nesbitt.io"
 tags: [blog, raw]
 ---

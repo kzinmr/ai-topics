@@ -1,7 +1,7 @@
 ---
 title: "LLM Use in the Python Source Code"
 url: "https://blog.miguelgrinberg.com/post/llm-use-in-the-python-source-code"
-fetched_at: 2026-04-29T07:01:27.448971+00:00
+fetched_at: 2026-04-30T07:01:21.083291+00:00
 source: "miguelgrinberg.com"
 tags: [blog, raw]
 ---

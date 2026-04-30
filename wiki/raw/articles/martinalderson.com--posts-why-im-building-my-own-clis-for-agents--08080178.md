@@ -1,7 +1,7 @@
 ---
 title: "Why I'm building my own CLIs for agents"
 url: "https://martinalderson.com/posts/why-im-building-my-own-clis-for-agents/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-29T07:02:04.244550+00:00
+fetched_at: 2026-04-30T07:01:57.305765+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

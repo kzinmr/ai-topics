@@ -1,7 +1,7 @@
 ---
 title: "The Need to Read"
 url: "http://www.paulgraham.com/read.html"
-fetched_at: 2026-04-29T07:01:28.554301+00:00
+fetched_at: 2026-04-30T07:01:21.882502+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Common Package Specification"
 url: "https://nesbitt.io/2026/04/13/common-package-specification.html"
-fetched_at: 2026-04-29T07:02:01.702007+00:00
+fetched_at: 2026-04-30T07:01:55.278912+00:00
 source: "nesbitt.io"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Coronavirus and Credibility"
 url: "http://www.paulgraham.com/cred.html"
-fetched_at: 2026-04-29T07:01:31.704532+00:00
+fetched_at: 2026-04-30T07:01:25.202480+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

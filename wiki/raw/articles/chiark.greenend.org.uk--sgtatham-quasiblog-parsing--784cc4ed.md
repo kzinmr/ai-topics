@@ -1,7 +1,7 @@
 ---
 title: "In which I have Opinions about parsing and grammars"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/parsing/"
-fetched_at: 2026-04-29T07:00:55.142086+00:00
+fetched_at: 2026-04-30T07:00:46.929844+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

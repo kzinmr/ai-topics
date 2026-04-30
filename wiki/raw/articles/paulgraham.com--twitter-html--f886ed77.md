@@ -1,7 +1,7 @@
 ---
 title: "Why Twitter is a Big Deal"
 url: "http://www.paulgraham.com/twitter.html"
-fetched_at: 2026-04-29T07:01:40.661311+00:00
+fetched_at: 2026-04-30T07:01:34.399285+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

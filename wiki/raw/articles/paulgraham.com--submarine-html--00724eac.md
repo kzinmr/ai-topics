@@ -1,7 +1,7 @@
 ---
 title: "The Submarine"
 url: "http://www.paulgraham.com/submarine.html"
-fetched_at: 2026-04-29T07:01:49.222082+00:00
+fetched_at: 2026-04-30T07:01:43.123597+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Microsoft is Dead"
 url: "http://www.paulgraham.com/microsoft.html"
-fetched_at: 2026-04-29T07:01:45.357039+00:00
+fetched_at: 2026-04-30T07:01:39.184780+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

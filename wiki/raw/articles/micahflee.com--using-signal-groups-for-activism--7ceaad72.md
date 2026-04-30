@@ -1,7 +1,7 @@
 ---
 title: "Using Signal groups for activism"
 url: "https://micahflee.com/using-signal-groups-for-activism/"
-fetched_at: 2026-04-29T07:02:03.898425+00:00
+fetched_at: 2026-04-30T07:01:56.976181+00:00
 source: "micahflee.com"
 tags: [blog, raw]
 ---

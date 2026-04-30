@@ -1,7 +1,7 @@
 ---
 title: "I don't know if my job will still exist in ten years"
 url: "https://seangoedecke.com/will-my-job-still-exist/"
-fetched_at: 2026-04-29T07:01:17.480808+00:00
+fetched_at: 2026-04-30T07:01:10.188388+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

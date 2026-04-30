@@ -1,7 +1,7 @@
 ---
 title: "LLMs are a 400-year-long confidence trick"
 url: "https://tomrenner.com/posts/400-year-confidence-trick/"
-fetched_at: 2026-04-29T07:01:06.280820+00:00
+fetched_at: 2026-04-30T07:00:58.576867+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

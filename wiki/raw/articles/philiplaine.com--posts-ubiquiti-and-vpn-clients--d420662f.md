@@ -1,7 +1,7 @@
 ---
 title: "Ubiquiti And VPN Clients"
 url: "https://philiplaine.com/posts/ubiquiti-and-vpn-clients/"
-fetched_at: 2026-04-29T07:01:55.134111+00:00
+fetched_at: 2026-04-30T07:01:49.012949+00:00
 source: "philiplaine.com"
 tags: [blog, raw]
 ---

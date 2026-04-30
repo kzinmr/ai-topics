@@ -1,7 +1,7 @@
 ---
 title: "Policy of transience"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/transience/"
-fetched_at: 2026-04-29T07:00:55.047687+00:00
+fetched_at: 2026-04-30T07:00:46.953415+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

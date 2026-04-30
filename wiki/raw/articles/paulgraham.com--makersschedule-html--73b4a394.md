@@ -1,7 +1,7 @@
 ---
 title: "Maker's Schedule, Manager's Schedule"
 url: "http://www.paulgraham.com/makersschedule.html"
-fetched_at: 2026-04-29T07:01:40.512722+00:00
+fetched_at: 2026-04-30T07:01:34.219161+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

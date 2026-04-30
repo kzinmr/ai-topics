@@ -1,7 +1,7 @@
 ---
 title: "Someone at BrowserStack is Leaking Users’ Email Address"
 url: "https://shkspr.mobi/blog/2026/04/someone-at-browserstack-is-leaking-users-email-address/"
-fetched_at: 2026-04-29T07:01:09.666239+00:00
+fetched_at: 2026-04-30T07:01:01.995526+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
 ---

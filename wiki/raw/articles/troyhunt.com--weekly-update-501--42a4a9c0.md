@@ -1,7 +1,7 @@
 ---
 title: "Weekly Update 501"
 url: "https://www.troyhunt.com/weekly-update-501/"
-fetched_at: 2026-04-29T07:00:51.741672+00:00
+fetched_at: 2026-04-30T07:00:43.619949+00:00
 source: "troyhunt.com"
 tags: [blog, raw]
 ---

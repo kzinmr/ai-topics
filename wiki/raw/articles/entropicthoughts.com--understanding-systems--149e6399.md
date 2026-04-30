@@ -1,7 +1,7 @@
 ---
 title: "Understanding systems"
 url: "https://entropicthoughts.com/understanding-systems"
-fetched_at: 2026-04-29T07:00:51.895640+00:00
+fetched_at: 2026-04-30T07:00:43.562881+00:00
 source: "entropicthoughts.com"
 tags: [blog, raw]
 ---

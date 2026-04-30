@@ -1,7 +1,7 @@
 ---
 title: "The Subprime AI Crisis Is Here"
 url: "https://www.wheresyoured.at/the-subprime-ai-crisis-is-here/"
-fetched_at: 2026-04-29T07:01:04.521619+00:00
+fetched_at: 2026-04-30T07:00:56.781884+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
 ---

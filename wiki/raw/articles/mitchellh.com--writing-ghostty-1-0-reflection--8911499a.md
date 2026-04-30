@@ -1,7 +1,7 @@
 ---
 title: "Ghostty: Reflecting on Reaching 1.0"
 url: "https://mitchellh.com/writing/ghostty-1-0-reflection"
-fetched_at: 2026-04-29T07:01:59.658052+00:00
+fetched_at: 2026-04-30T07:01:53.423632+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

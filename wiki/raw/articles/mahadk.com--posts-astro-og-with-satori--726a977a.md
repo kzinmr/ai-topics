@@ -1,7 +1,7 @@
 ---
 title: "How to generate OpenGraph images with Astro and Satori"
 url: "https://mahadk.com/posts/astro-og-with-satori/"
-fetched_at: 2026-04-29T07:01:16.335434+00:00
+fetched_at: 2026-04-30T07:01:08.704241+00:00
 source: "skyfall.dev"
 tags: [blog, raw]
 ---

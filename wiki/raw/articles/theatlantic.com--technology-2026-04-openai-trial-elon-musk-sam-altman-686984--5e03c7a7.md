@@ -1,0 +1,40 @@
+---
+title: "Sam Altman and Elon Musk Sure Dislike Each Other"
+url: "https://www.theatlantic.com/technology/2026/04/openai-trial-elon-musk-sam-altman/686984/?gift=iWa_iB9lkw4UuiWbIbrWGYJmg9p-llxzEAgykQekDFA"
+fetched_at: 2026-04-30T07:00:42.005761+00:00
+source: "daringfireball.net"
+tags: [blog, raw]
+---
+
+# Sam Altman and Elon Musk Sure Dislike Each Other
+
+Source: https://www.theatlantic.com/technology/2026/04/openai-trial-elon-musk-sam-altman/686984/?gift=iWa_iB9lkw4UuiWbIbrWGYJmg9p-llxzEAgykQekDFA
+
+Elon Musk and Sam Altman are two of the most influential people in Silicon Valley, if not the world. Between the two of them, Musk and Altman run technology companies worth many trillions of dollars that promise to reshape civilization. But this morning, both sat under fluorescent lights in a courthouse in downtown Oakland, suffering through all manner of technical glitches as their respective attorneys kicked off the long-awaited trial in
+Musk v. Altman
+.
+As Steven Molo, a lawyer for Musk, began his opening argument, confused looks swept the courtroom. “We can’t hear you,” Judge Yvonne Gonzalez Rogers said. Someone fixed his microphone. Later, as Molo began to call into question Altman’s integrity, his microphone cut out again, and his presentation disappeared from screens in the room. (“We are funded by the federal government,” Gonzalez Rogers joked. “The judiciary is happy to take more funds.”)
+Musk is suing Altman and OpenAI, among others, demanding legal and financial remedies that would effectively destroy OpenAI as we know it. The fight stretches back to 2015, when Musk partnered with Altman to create OpenAI out of concern, as they told it, that Google DeepMind could not be trusted to create artificial general intelligence. Corporate greed would get in the way of societal progress, they claimed, so OpenAI would be a nonprofit. After a falling out with Altman and other co-founders, Musk left in 2018. All of this was before OpenAI added a for-profit entity, and before ChatGPT became the fastest-growing consumer app in history. In 2024, Musk sued, alleging that by putting profits above its founding mission, OpenAI had violated its founding charter and misused Musk’s initial charitable donations. “It’s very simple,” Musk testified today. “It’s not okay to steal a charity.” Also named in his complaint are the OpenAI co-founder Greg Brockman and Microsoft, a major investor in the company.
+Musk is asking that Altman be removed from OpenAI’s board, that the company convert back to a nonprofit, and for the return of allegedly “ill-gotten gains”—some $150 billion—which Musk says would go to OpenAI’s charitable trust.
+Outside legal experts
+say that Musk is unlikely to win all or even much of this. His argument is confusing: OpenAI has certainly evolved from a nonprofit lab to a revenue-chasing, consumer behemoth, and a chorus of critics has alleged that it has deviated from its original mission of ensuring that AGI benefits humanity. But Musk himself appears to have insisted that OpenAI couldn’t keep up as a nonprofit—for instance, in early 2018, he wrote an
+email
+to OpenAI leadership saying that merging the firm with Tesla “is the only path that could even hope to hold a candle to Google.” And even before he sued, Musk launched a rival for-profit company, xAI. “Mr. Musk’s lawsuit is a pageant of hypocrisy,” William Savitt, a lawyer for OpenAI, told the jury today, later adding that Musk had “sour grapes.” (OpenAI, which declined to comment,
+wrote
+yesterday that the lawsuit is “a baseless and jealous bid to derail a competitor.” Musk’s legal team did not respond to a request for comment.)
+The substance of these claims is important to the AI industry as a whole. The ramifications of this lawsuit go beyond any company or executive: The conflict between Musk and Altman has itself directly shaped the course of the AI industry. It is, in effect, the AI boom’s founding feud. The next few weeks of the trial will illuminate tensions about the development of AI that have grown only more urgent—between profit and social good, and over who can be trusted with this technology.
+Already, the pretrial process produced no shortage of drama. Both sides published internal communication between Musk and OpenAI leadership. OpenAI shared texts suggesting that Musk had used a former member of OpenAI’s board to keep tabs on the company. (That board member, Shivon Zilis, has multiple children with Musk, and in her deposition said that she is in a romantic relationship with him; asked about Zilis today, Musk said she was “my chief of staff and uh, well, yeah,” smirking.) Musk’s alleged ketamine use during important OpenAI negotiations, which he has said he does not recall, became a key issue until, in a recent pretrial hearing, Gonzalez Rogers deemed this line of inquiry irrelevant.
+The trial makes the AI boom seem sordid and small. In his sworn
+deposition
+, Altman wrote that Musk used to message him complaints that he wanted more credit for the success of OpenAI and took offense at not being included in an anniversary photo. Altman
+has
+also said, of Musk and his lawsuit, “Probably his whole life is from a position of insecurity. I feel for the guy.” In the courtroom, Altman sat stone-faced next to Brockman and departed right before Musk took to the witness stand.
+Musk, for his part, has said that he would drop his lawsuit if OpenAI changed its name to “ClosedAI.” Yesterday, as jury selection began, Musk began furiously posting on X and repeatedly called his co-founder “Scam Altman.” Before the start of opening arguments today, Gonzalez Rogers admonished Musk and Altman for their social-media use, asking them to limit their “propensity” to post about the trial; both meekly assented, “Yes.”
+Now we are all living in the fallout of Musk and Altman’s vendetta. Disagreements over the direction of Google DeepMind led to the creation of OpenAI, and then more disagreements led Musk to found xAI. Similarly, a few years ago, Dario Amodei and six other OpenAI employees split off to form a competing AI company, Anthropic, themselves trusting neither OpenAI’s structure nor its leadership to prioritize the benefit of humanity over financial gain. And there’s Mark Zuckerberg, whom Musk asked about joining forces to purchase OpenAI in 2025, according to texts released in pretrial discovery. (Meta previously
+declined to comment
+.) Zuckerberg has since spent tens or even hundreds of billions of dollars overhauling the AI team at Meta in a bid to catch up in the AI race. The very sort of AI schism that started with Musk and Altman keeps recurring.
+A more cynical description of this dynamic is that the AI boom is shaped by a very small group of men, nearly all of whom claim to be the best steward of humanity while being largely dismissive of their competition. At the same time, the goal of creating an organizational structure, whether nonprofit or corporate, to provide a check on a CEO has all but withered away. An independent board was supposed to govern OpenAI, but the company has basically been Altman’s fiefdom—just as Anthropic is Amodei’s and xAI is Musk’s. Grok has at times
+explicitly aligned
+its responses with Musk’s political views by mimicking his social-media posts.
+Both sides have made the issue of concentration of power—that no one company or person should control such a transformative technology—central to their arguments. “If you have someone that’s not trustworthy in charge of AI,” Musk testified, “I think that’s very dangerous to the whole world.” The defense, meanwhile, said that “one person having control wasn’t consistent with OpenAI’s core mission.” Apparently, the irony was lost on everyone.
+This trial will offer the clearest glimpse into an elite circle whose bickering is shaping the most expensive infrastructure buildout in human history in the name of a technology that could upend the labor market, spell the end of education as we know it, and reshape the geopolitical order. That is, as long as the microphones keep working.

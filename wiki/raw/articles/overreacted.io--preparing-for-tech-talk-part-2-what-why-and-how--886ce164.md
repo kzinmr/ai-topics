@@ -1,7 +1,7 @@
 ---
 title: "Preparing for a Tech Talk, Part 2: What, Why, and How"
 url: "https://overreacted.io/preparing-for-tech-talk-part-2-what-why-and-how/"
-fetched_at: 2026-04-29T07:01:58.756119+00:00
+fetched_at: 2026-04-30T07:01:52.875029+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

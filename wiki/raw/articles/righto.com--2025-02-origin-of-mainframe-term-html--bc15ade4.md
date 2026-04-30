@@ -1,7 +1,7 @@
 ---
 title: "The origin and unexpected evolution of the word \"mainframe\""
 url: "http://www.righto.com/2025/02/origin-of-mainframe-term.html"
-fetched_at: 2026-04-29T07:01:16.197318+00:00
+fetched_at: 2026-04-30T07:01:09.329480+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

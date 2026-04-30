@@ -1,7 +1,7 @@
 ---
 title: "React as a UI Runtime"
 url: "https://overreacted.io/react-as-a-ui-runtime/"
-fetched_at: 2026-04-29T07:01:59.039330+00:00
+fetched_at: 2026-04-30T07:01:53.095168+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "The Dictator's Handbook and the politics of technical competence"
 url: "https://seangoedecke.com/the-dictators-handbook/"
-fetched_at: 2026-04-29T07:01:19.579067+00:00
+fetched_at: 2026-04-30T07:01:11.747300+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

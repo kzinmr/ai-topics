@@ -1,7 +1,7 @@
 ---
 title: "History of PuTTY's development"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/putty-history/"
-fetched_at: 2026-04-29T07:00:57.264707+00:00
+fetched_at: 2026-04-30T07:00:49.663153+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

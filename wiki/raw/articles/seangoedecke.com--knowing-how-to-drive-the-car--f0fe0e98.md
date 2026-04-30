@@ -1,7 +1,7 @@
 ---
 title: "You have to know how to drive the car"
 url: "https://seangoedecke.com/knowing-how-to-drive-the-car/"
-fetched_at: 2026-04-29T07:01:18.553600+00:00
+fetched_at: 2026-04-30T07:01:11.245914+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

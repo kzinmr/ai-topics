@@ -1,7 +1,7 @@
 ---
 title: "The stages of package installation"
 url: "https://nesbitt.io/2026/04/27/the-stages-of-package-installation.html"
-fetched_at: 2026-04-29T07:00:52.408086+00:00
+fetched_at: 2026-04-30T07:00:44.380392+00:00
 source: "nesbitt.io"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "The rise and fall of IBM's 4 Pi aerospace computers: an illustrated history"
 url: "http://www.righto.com/2026/03/ibm-4-pi-computer-history.html"
-fetched_at: 2026-04-29T07:01:14.335761+00:00
+fetched_at: 2026-04-30T07:01:06.506355+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

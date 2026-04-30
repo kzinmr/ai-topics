@@ -1,7 +1,7 @@
 ---
 title: "The Mystery of Rennes-le-Château, Part 3: A Secret History"
 url: "https://www.filfre.net/2026/04/the-mystery-of-rennes-le-chateau-part-3-a-secret-history/"
-fetched_at: 2026-04-29T07:02:05.998602+00:00
+fetched_at: 2026-04-30T07:01:58.824846+00:00
 source: "filfre.net"
 tags: [blog, raw]
 ---

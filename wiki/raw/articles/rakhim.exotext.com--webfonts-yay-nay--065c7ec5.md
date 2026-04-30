@@ -1,7 +1,7 @@
 ---
 title: "Should I use web fonts?"
 url: "https://rakhim.exotext.com/webfonts-yay-nay"
-fetched_at: 2026-04-29T07:01:21.417969+00:00
+fetched_at: 2026-04-30T07:01:14.318033+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---
