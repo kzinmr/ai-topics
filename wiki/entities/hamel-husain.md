@@ -55,6 +55,7 @@ His career spans **GitHub** (where he contributed to the precursors of Copilot a
 || 2025 | Launched **"RAG Is Not Dead"** open 7-part series with [[entities/ben-clavie|Ben Clavié]] — arguing the future of RAG lies in better retrieval, not bigger context windows |
 || 2025 | Hosted **Part 1: "I don't use RAG, I just retrieve documents"** — featuring [[entities/ben-clavie|Ben Clavié]] on the modern retrieval toolkit |
 || 2026 | Published **"P7: You Don't Need a Graph DB (Probably)"** — with Jo Kristian Bergum on avoiding over-engineering in RAG systems |
+|| 2026 | Published **"P6: Context Rot"** — featuring Kelly Hong (Chroma) on LLM performance degradation with long contexts |
 
 ## Core Philosophy
 
@@ -157,6 +158,7 @@ Co-authored with **Eugene Yan, Shreya Shankar, Jason Liu, Bryan Bischof, Charles
 -   [GitHub](https://github.com/hamelsmu) — Open source projects.
 -   [Parlance Labs](https://parlance-labs.com) — Consulting firm.
 -   [AnswerAI](https://www.answer.ai/) — R&D role.
--   [P7: You Don't Need a Graph DB (Probably)](https://hamel.dev/notes/llm/rag/p7-graph-db.html) — Co-authored with Jo Kristian Bergum on RAG architecture decisions (2026).
--   [Stop Saying RAG Is Dead](https://hamel.dev/notes/llm/rag/not_dead.html) — Open 7-part series with Ben Clavié arguing RAG is not dead (2025).
+- [P7: You Don't Need a Graph DB (Probably)](https://hamel.dev/notes/llm/rag/p7-graph-db.html) — Co-authored with Jo Kristian Bergum on RAG architecture decisions (2026).
+- [P6: Context Rot](https://hamel.dev/notes/llm/rag/p6-context_rot.html) — Featuring Kelly Hong (Chroma) on LLM context degradation (2026).
+- [Stop Saying RAG Is Dead](https://hamel.dev/notes/llm/rag/not_dead.html) — Open 7-part series with Ben Clavié arguing RAG is not dead (2025).
 -   [P1: I don't use RAG, I just retrieve documents](https://hamel.dev/notes/llm/rag/p1-intro.html) — Hosted Ben Clavié on the modern retrieval toolkit (2025).

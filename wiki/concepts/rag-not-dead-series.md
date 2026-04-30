@@ -44,7 +44,7 @@ The 2023 version of RAG (chunk → vector DB → cosine similarity → LLM) fail
 | 3 | [[concepts/reasoning-retrieval\|Optimizing Retrieval with Reasoning Models]] | Orion Weller | Promptriever (instruction-aware bi-encoder) + Rank1 (reasoning-based reranker with CoT) |
 | 4 | [[concepts/late-interaction-retrieval|Late Interaction Models For RAG]] | Antoine Chaffin | ColBERT-style MaxSim preserving token-level detail; 150M model outperforming 7B dense models on reasoning |
 | 5 | [[concepts/multiple-representations-rag|RAG with Multiple Representations]] | Bryan Bischof & Ayush Chaurasia | "The Map is Not the Territory" — create multiple specialized maps instead of one perfect embedding |
-| 6 | Context Rot | Kelly Hong | LLM performance degrades with longer inputs; context engineering is critical |
+| 6 | [[concepts/context-rot|Context Rot]] | Kelly Hong | LLM performance degrades with longer inputs; context engineering is critical |
 | 7 | [[concepts/graph-db-overengineering-rag\|You Don't Need a Graph DB (Probably)]] | Jo Kristian Bergum | GraphRAG is a technique, not a technology; HNSW as hidden graph |
 
 ## Key Insights Across the Series
@@ -109,6 +109,20 @@ Dense vector search compresses all tokens into a single vector — inherently lo
 
 **Demo (Semantic Dot Art):** Art indexed via 4 maps (literal, poetic, mood, image). Poetic query → poetic index; image → multimodal embeddings.
 
+### Part 6: Context Rot (Kelly Hong)
+
+**Context Rot** is the phenomenon where LLM performance degrades as input context length increases, even with 1M+ token windows. Hong debunks the "Needle in a Haystack" (NIAH) benchmark as misleading — it tests **lexical matching**, not the **semantic retrieval** real users need.
+
+**Key experiments (Chroma research):**
+- **Distractor injection:** Semantically similar but factually incorrect info causes GPT to hallucinate confidently; Claude aborts ("I don't know")
+- **Shuffled context:** Models performed *better* on randomly shuffled text — LLMs don't process context linearly like humans
+- **LongMemEval:** Focused history (~100 tokens) dramatically outperformed full history (120k tokens)
+- **Text replication:** Simple word repetition fails at high token counts; Claude refuses ("copyright"), Gemini produces random noise
+
+**Orchestrator Pattern** as mitigation: Main agent manages high-level task → subagents with clean, focused context → subagents return only distilled results. No consistent positional advantage found (contrary to "U-shaped curve" theory).
+
+> *"Context Window ≠ Reasoning Capacity. Just because a model can 'fit' 1 million tokens doesn't mean it can reason across them effectively."*
+
 ## Graph Structure Query
 
 ```
@@ -119,6 +133,7 @@ Dense vector search compresses all tokens into a single vector — inherently lo
 [rag-not-dead-series] ──includes──→ [reasoning-retrieval]
 [rag-not-dead-series] ──includes──→ [late-interaction-retrieval]
 [rag-not-dead-series] ──includes──→ [multiple-representations-rag]
+[rag-not-dead-series] ──includes──→ [context-rot]
 [rag-not-dead-series] ──includes──→ [graph-db-overengineering-rag]
 [rag-not-dead-series] ──contrasts──→ [naive-single-vector-rag]
 [rag-not-dead-series] ──embodies──→ [harness-engineering]
@@ -135,7 +150,7 @@ Dense vector search compresses all tokens into a single vector — inherently lo
 - [[concepts/harness-engineering]] — Measure-first philosophy across the series
 - [[concepts/ai-evals]] — Evaluation methodology for AI systems
 - [[concepts/agentic-rag]] — Broader taxonomy of agentic retrieval
-- [[concepts/context-graph]] — Context engineering and "context rot"
+- [[concepts/context-rot]] — Context engineering and context degradation in long-context scenarios
 
 ## Sources
 
@@ -148,3 +163,5 @@ Dense vector search compresses all tokens into a single vector — inherently lo
 - [Raw article: P4](raw/articles/2026-04-30_hamel-husain-rag-p4-late-interaction.md)
 - [P5: RAG with Multiple Representations](https://hamel.dev/notes/llm/rag/p5_map.html)
 - [Raw article: P5](raw/articles/2026-04-30_hamel-husain-rag-p5-map.md)
+- [P6: Context Rot](https://hamel.dev/notes/llm/rag/p6-context_rot.html)
+- [Raw article: P6](raw/articles/2026-04-30_hamel-husain-rag-p6-context-rot.md)

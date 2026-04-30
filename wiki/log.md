@@ -591,3 +591,14 @@ Processed two articles from timsh.org covering Claude Code in Docker isolation a
 - Updated [[concepts/github-copilot-billing]] — Added Opus 4.7 multiplier promotional period note (ends April 30). Bumped updated date.
 - Themes screened: 8 (3 scored ≥0.65, 3 scored 0.45-0.65, 2 skipped)
 - 4 themes already well-covered by existing wiki pages; 2 minor updates applied
+
+---
+
+## [2026-04-30] RAG Is Not Dead — Added Part 6: Context Rot (Kelly Hong/Chroma)
+
+- Created [[concepts/context-rot]] — The phenomenon where LLM performance degrades as input context length increases. Popularized by Kelly Hong (Chroma) in the "RAG Is Not Dead" series. Debunks NIAH benchmarks, documents distractor sensitivity (GPT hallucinates, Claude abstains), shuffled context paradox, and orchestrator pattern as mitigation.
+- Updated [[concepts/rag-not-dead-series]] — Added Part 6 wikilink, detail section with Chroma experimental findings, graph query entry, and source. Fixed wrong wikilink to [[concepts/context-graph]] (enterprise decision traces) → [[concepts/context-rot]].
+- Updated [[entities/hamel-husain]] — Added 2026 timeline entry for P6 publication, source reference.
+- Saved raw article: `raw/articles/2026-04-30_hamel-husain-rag-p6-context-rot.md`
+- Sources: https://hamel.dev/notes/llm/rag/p6-context_rot.html
+- Updated index files: wiki/index.md, wiki/log.md.
