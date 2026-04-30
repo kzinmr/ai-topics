@@ -1,3 +1,9 @@
+## [2026-04-30] SID-1 — First RL-Trained Agentic Retrieval Model
+
+- Expanded [[concepts/agentic-search]] — Added "RL-Trained Agentic Retrieval: SID-1" section under Level 1 (IR Research Perspective). SID-1 (SID AI, Dec 2025, Qwen3-14B + GRPO): 0.84 recall (near-doubled vs reranker @10), 24× faster than GPT-5.1, 374× cheaper than Sonnet 4.5. Key insights: document-centric reward (NDCG), TI/TO pipeline (message abstractions cause model collapse), length scheduling. Emergent capabilities: parallel tool use, hierarchical retrieval with `read` tool, RRF fusion.
+- Saved raw article: raw/articles/2025-12-04_sid-1-agentic-retrieval.md
+- Source: https://www.sid.ai/research/sid-1-technical-report
+
 ## [2026-04-30] Coding Agents are Effective Long-Context Processors — Cao, Yin, Dhingra, Zhou
 
 - Expanded [[concepts/agentic-search]] — Added Level 3: "Coding Agents as Retrieval/Processing Interface" (Duke & CMU, arXiv:2603.20432). Key findings: coding agents outperform SOTA by 17.3% on long-context tasks by using file system tools (grep, sed, ripgrep, Python scripts). BrowseComp-Plus score of 88.50 vs 80.00 baseline. Retrieval tools *harm* performance when agents can use file system exploration. Folder structure (89.0%) beats single file (83.0%). Cost: ~$0.19–$0.70/query. Paradigm shift: externalized processing as alternative to context window scaling.

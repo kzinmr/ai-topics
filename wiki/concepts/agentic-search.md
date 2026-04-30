@@ -3,17 +3,20 @@ title: Agentic Search
 created: 2026-04-30
 updated: 2026-04-30
 type: concept
-tags: [search, ai-agents, information-retrieval, deep-research, reranking, coding-agents]
+tags: [search, ai-agents, information-retrieval, deep-research, reranking, coding-agents, rl-training]
 aliases:
   - deep-research-retrieval
   - agent-query-mismatch
   - externalized-processing
+  - agentic-retrieval
 sources:
   - raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md
   - raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
   - raw/papers/2026-03-20_2603.20432_coding-agents-effective-long-context-processors.md
+  - raw/articles/2025-12-04_sid-1-agentic-retrieval.md
   - https://arxiv.org/abs/2602.21456
   - https://arxiv.org/abs/2603.20432
+  - https://www.sid.ai/research/sid-1-technical-report
   - https://github.com/ChuanMeng/text-ranking-in-deep-research
 ---
 
@@ -84,6 +87,38 @@ This BM25–monoT5-3B configuration approaches **GPT-5-level agent performance**
 ### Why Reasoning Re-rankers Underperform
 
 Reasoning-based re-rankers (e.g., Rank1-7B) showed **no clear advantage** over standard re-rankers. They often misinterpret keyword-heavy agent queries as genuine reasoning problems rather than search retrieval requests.
+
+### RL-Trained Agentic Retrieval: SID-1
+
+SID-1 (SID AI, December 2025) is the first model trained end-to-end via RL specifically for **agentic retrieval**. Built on Qwen3-14B with modified GRPO (no SFT), it iteratively uses search tools to reason over results — a concrete implementation of agentic search at the IR level.
+
+| Model | Recall | Latency | Cost/Query |
+|-------|--------|---------|-----------|
+| **SID-1 (4x)** | **0.84** | 5.5s | $0.0014 |
+| GPT-5.1 (high) | 0.78 | 131s | $0.24 |
+| Gemini 3 Pro | 0.66 | 156s | $0.12 |
+| Sonnet 4.5 | 0.64 | 35s | $0.54 |
+| Reranker @10 | 0.45 | 0.78s | $0.00061 |
+
+SID-1 achieves **near-doubled recall** over traditional reranking pipelines while being **24× faster than GPT-5.1** and **374× cheaper than Sonnet 4.5**.
+
+#### Training Design Insights
+
+**Document-Centric Reward:** Unlike Search-R1 or SimpleQA, SID-1 is rewarded for finding the **correct documents** (NDCG), not the answer. This discourages over-reporting while preferring slight over-reporting over missed documents.
+
+**TI/TO Pipeline (Critical):** Using standard OpenAI-style message abstractions in multi-turn RL leads to **model collapse** — parsing tokens to messages and back is "lossy" (erases whitespace around tool calls), creating low-probability tokens that dominate gradients. Strictly maintaining a Tokens-In/Tokens-Out (TI/TO) pipeline prevents this.
+
+**Length Bias:** "Length-debiased" GRPO can cause logit collapse when failed rollouts are longer. Fixed via **Length Scheduling** (short → long rollouts) + soft length penalty.
+
+#### Emergent Capabilities
+
+- **Parallel tool use** — Multiple search queries in a single turn (naturally emerged)
+- **Hierarchical retrieval** — First reads excerpts, uses `read` tool for full content only when needed
+- **Reciprocal Rank Fusion (RRF)** — 4 parallel rollouts fused for max recall at zero additional latency
+
+#### Production Position
+
+SID-1 works as a composable subagent for larger LLMs (similar to `swe-grep` in coding agents). Its recall at 1/374th the cost of frontier models makes it a practical replacement for vector search + reranking pipelines in production agentic search systems.
 
 ---
 
@@ -201,8 +236,8 @@ The IR-layer findings are based on:
 
 ## Sources
 
+- [SID-1 Technical Report: Test-Time Compute for Retrieval](https://www.sid.ai/research/sid-1-technical-report) — SID Research (2025). First RL-trained agentic retrieval model. Qwen3-14B + GRPO, 0.84 recall, TI/TO pipeline insight.
 - [Revisiting Text Ranking in Deep Research](https://arxiv.org/abs/2602.21456) — Meng, Ou, MacAvaney, Dalton (2026). Systematic evaluation of IR methods in deep research contexts.
 - [Coding Agents are Effective Long-Context Processors](https://arxiv.org/abs/2603.20432) — Cao, Yin, Dhingra, Zhou (2026). Coding agents as retrieval/processing interface outperforming traditional IR on long-context tasks.
 - [Lessons from Building AI Agents in Financial Services](raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md) — Agentic search as skill discovery in Fintool.
 - [Text Ranking in Deep Research (Code)](https://github.com/ChuanMeng/text-ranking-in-deep-research) — Open-source code and data.
-- [Coding Agents Long-Context (Code)](https://arxiv.org/abs/2603.20432) — Paper and experiments.
