@@ -3,9 +3,9 @@ title: "LangChain"
 type: entity
 tags: [langchain, orchestration, framework, agent-engineering, llm-framework]
 created: 2026-04-27
-updated: 2026-04-28
+updated: 2026-04-30
 aliases: [LangChain Framework, LangChain AI]
-related: [[langgraph]], [[langsmith]], [[agent-orchestration-frameworks]], [[dspy]], [[llamaindex]], [[agent-engineering]]
+related: [[langgraph]], [[langsmith]], [[agent-orchestration-frameworks]], [[dspy]], [[llamaindex]], [[agent-engineering]], [[concepts/harness-engineering]]
 sources: [https://www.langchain.com/, https://github.com/langchain-ai/langchain, https://en.wikipedia.org/wiki/LangChain]
 ---
 
@@ -95,9 +95,9 @@ The company has evolved beyond the open-source framework into a full **Agent Eng
 - Dataset management for regression testing
 - **LangSmith Deployment** (2025): deploy and scale agents in production
 
-### Deep Agents (2025)
-- Build agents that can plan, use subagents, and leverage file systems for complex tasks
-- Combines LangGraph orchestration with deep reasoning loops
+### Deep Agents & Harness Profiles (2025-2026)
+- **Deep Agents** (2025): Build agents that can plan, use subagents, and leverage file systems for complex tasks. Combines LangGraph orchestration with deep reasoning loops.
+- **Harness Profiles** (April 2026): Pre-configured agent harness configurations optimized for specific use cases, building on the [[concepts/harness-engineering]] decomposition (Open Models / Open Runtime / Open Harness). A step toward agent infrastructure standardization, allowing developers to select purpose-built execution environments rather than manually assembling harness components.
 
 ## Key Use Cases
 
@@ -133,3 +133,4 @@ The company has evolved beyond the open-source framework into a full **Agent Eng
 - [LangChain Blog: Series B Announcement](https://blog.langchain.com/series-b)
 - [LangChain Documentation: Component Architecture](https://docs.langchain.com/oss/python/langchain/component-architecture)
 - [Sequoia Podcast: Harrison Chase on Building the Orchestration Layer](https://sequoiacap.com/podcast/training-data-harrison-chase)
+- [AINews: The Inference Inflection](raw/newsletters/2026-04-30-ainews-the-inference-inflection.md)

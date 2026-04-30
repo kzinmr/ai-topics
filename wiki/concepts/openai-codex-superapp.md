@@ -2,10 +2,11 @@
 title: "OpenAI Codex Superapp"
 type: concept
 created: 2026-04-24
-updated: 2026-04-24
-tags: [product, openai, coding-agents, devtools, chatgpt]
+updated: 2026-04-30
+tags: [product, openai, coding-agents, devtools, chatgpt, codex]
 aliases: ["Codex Superapp"]
-sources: []
+sources:
+  - "raw/newsletters/2026-04-30-ainews-the-inference-inflection.md"
 ---
 
 # OpenAI Codex Superapp
@@ -52,6 +53,32 @@ The Codex CLI's open-source nature allows:
 2. Third-party tools to route prompts through existing ChatGPT subscriptions
 3. Bypass of the delayed public API for GPT-5.5
 4. Creates a "backdoor" to access frontier models at subscription prices
+
+### Codex Platform Evolution (April 2026)
+
+Codex is expanding beyond a coding tool into a **general work surface** encompassing research, spreadsheets, and decision tracking — positioning as the universal AI workspace rather than just a developer IDE.
+
+**WebSocket Mode (Responses API):**
+- Moving from polling to persistent WebSocket connections keeps state "warm"
+- Results in **40% faster agentic workflows** — the single biggest latency improvement for agent loops
+- Represents a fundamental architectural shift in how agents maintain conversational state
+
+**$0 Seat Fee Promotion:**
+- Eligible Business/Enterprise customers can use Codex at **$0 seat fee through June 2026**
+- Strategic move to drive enterprise adoption and displace competitors before monetizing
+
+**Auto-Review Mode:**
+- A "guardian agent" that automatically reviews code and PRs
+- Extends the Superapp concept into the review/QA pipeline, making Codex the central node in the development lifecycle
+
+### Codex as General Work Surface
+
+Beyond coding, Codex is being used for:
+- **Research** — document analysis, literature synthesis
+- **Spreadsheets** — data manipulation and analysis within the Codex interface
+- **Decision tracking** — reasoning transparency and decision logging
+
+This aligns with the broader trend of [[concepts/ai-agent-engineering]] where agent interfaces swallow multiple productivity verticals.
 
 See [[concepts/gpt-models]] for GPT model details, [[openai]] for company context, [[concepts/openai-agents-sdk]] for the official SDK approach.
 

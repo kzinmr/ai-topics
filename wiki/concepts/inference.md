@@ -13,11 +13,12 @@ tags:
 status: active
 description: "LLM推論の3大エンジン: llama.cpp (ローカルCPU/GPU), vLLM (サーバー高スループット), SGLang (エージェント最適化)"
 created: 2026-04-09
-updated: 2026-04-24
+updated: 2026-04-30
 sources:
   - "https://github.com/ggml-org/llama.cpp"
   - "https://github.com/vllm-project/vllm"
   - "https://github.com/sgl-project/sglang"
+  - "raw/newsletters/2026-04-30-ainews-the-inference-inflection.md"
 related:
   - "[[concepts/inference/llama-cpp]]"
   - "[[concepts/inference/vllm]]"
@@ -83,6 +84,42 @@ LLM推論を最適化するための3大エンジンとその使い分け。
 - 仮想メモリのページング概念をKVキャッシュ管理に応用
 - メモリの断片化を解消し、スループットを最大化
 - 24x throughput vs. HuggingFace Transformers (claim)
+
+## The Inference Inflection (April 2026)
+
+A major industry shift from training-dominant to inference-dominant AI workloads, signaled by multiple industry leaders at NVIDIA GTC 2026 and beyond. The thesis: as AI moves from model-building to agent-running, inference compute becomes the primary cost driver.
+
+### Industry Leaders Signal the Shift
+
+- **Sam Altman (OpenAI CEO):** "To a significant degree, we have to become an AI inference company now." — acknowledging that inference demand is eclipsing training demand.
+- **Noam Brown (OpenAI):** "Inference compute is a strategic resource, currently undervalued." [[entities/noam-brown]]
+- **Jensen Huang (NVIDIA CEO):** Computing demand has increased **1 million times** in two years. "AI now has to think... In order to think, it has to inference... it's way past training now."
+
+### The CPU Shortage
+
+Despite the GPU narrative, the AI inference boom is creating a **CPU refresh cycle crisis**:
+
+- **Intel CEO Lip-Bu Tan** reported rising CPU demand for AI workloads — software simulation (RL gyms), production agents, and coding agent tools run heavily on CPUs.
+- **Doug (SemiAnalysis):** "Usually what you do is you have this big refresh... but everyone has essentially scrounged all of their budget [for GPUs]... we might actually be seeing a CPU shortage partially 'cause of this refresh cycle."
+
+### FlashQLA — Linear Attention for Inference
+
+**Qwen's FlashQLA** delivers high-performance linear attention kernels:
+- **2–3× forward speedups** for long-context workloads
+- Specifically optimized for personal/edge devices
+- Represents a promising direction for efficient inference on consumer hardware
+
+### vLLM on NVIDIA Blackwell
+
+Running [[concepts/inference/vllm]] on Blackwell GPUs achieves **230 tokens/sec** on DeepSeek V3.2 using NVFP4 quantization and speculative decoding — showcasing the ceiling of current inference optimization.
+
+### Implications
+
+The Inference Inflection reframes the landscape:
+- Inference infrastructure (not training clusters) becomes the competitive frontier
+- CPU capacity planning for agent workloads becomes critical
+- Edge inference (llama.cpp, FlashQLA) gains strategic importance
+- [[concepts/local-llm]] and [[concepts/serving-llms-vllm]] become complementary rather than alternatives
 
 ## 100K Stars (llama.cpp, Mar 2026)
 

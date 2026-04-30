@@ -327,7 +327,23 @@ Processed Slack channel C077ACXR5UY messages from March 2026. Extracted 6 major 
 - Added new "AI Agent Architecture Patterns" section to concepts/_index.md with all 6 concepts
 - Cross-linked all 6 concepts to each other
 
-## [2026-04-30] lint | Wiki health check — 72 broken wikilinks, 75 orphan pages, 103 missing from index, 16 incomplete frontmatter, 124 stale articles
+## [2026-04-30] ingest | AINews: The Inference Inflection
+
+**Source:** raw/newsletters/2026-04-30-ainews-the-inference-inflection.md ([AINews](https://www.latent.space/) by swyx)
+
+Significant newsletter covering the industry-wide shift from training-dominant to inference-dominant AI workloads.
+
+### Files updated:
+- [[concepts/inference]] — Added "The Inference Inflection" section: Sam Altman "inference company" quote, Noam Brown "inference compute as strategic resource" quote, Jensen Huang's GTC 2026 inference inflection keynote, Intel CPU renaissance, FlashQLA linear attention, vLLM on Blackwell (230 tok/s DeepSeek V3.2)
+- [[concepts/harness-engineering]] — Added "Agentic Harness Evolution" section: Terminal-Bench 2 69.7→77.0%, HALO recursive self-improvement (AppWorld 73.7→89.5), LangChain Deep Agents Harness Profiles, Cloudflare agents-as-customers
+- [[concepts/openai-codex-superapp]] — Added Codex Platform Evolution: WebSocket mode (40% faster), $0 seat fee promotion, Auto-Review Mode (guardian agent), expansion to general work surface (research, spreadsheets, decision tracking)
+- [[entities/cursor-3]] — Added Cursor SDK section: programmable agent infrastructure, CI/CD integration, embedded products
+- [[entities/noam-brown]] — Added inference compute quote from GTC 2026
+- [[entities/langchain]] — Updated Deep Agents section with Harness Profiles detail
+
+### Other newsletters triaged (no wiki action taken):
+- **"The Trial That Could Break OpenAI"** (beehiiv) — General news coverage of Musk v. OpenAI trial; journalistic, not wiki-worthy
+- **"The product skill you must now master: Reinvention"** (The Skip by Nikhyl Singhal) — Career advice for product managers; outside wiki scope
 
 - **Broken wikilinks:** 72 unique broken links detected (top offenders: agent-engineering, boris-cherny subpages, concepts/dspy-architecture/*, drew-breunig subpages, harness-engineering subpages)
 - **Orphan pages:** 75 pages with zero inbound links (includes _index.md files, agent-memory.md, clinical-ai.md, etc.)

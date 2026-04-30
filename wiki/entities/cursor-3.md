@@ -56,6 +56,17 @@ Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified 
 - Eliminates traditional IDE boundaries
 - Enables continuous agent-assisted development
 
+### Cursor SDK (April 2026)
+
+Cursor is shifting from an IDE to **programmable agent infrastructure**, making its runtime and harness available outside the IDE:
+
+- **CI/CD Integration**: Run Cursor agents in automated pipelines — code review, testing, deployment
+- **Embedded Products**: Third-party products can embed Cursor's agent runtime
+- **Programmable Harness**: Access Cursor's agent orchestration loop, tool system, and context management as composable APIs
+- **Strategic Positioning**: Competes with OpenAI Codex's platform ambitions and Anthropic's managed agents
+
+This represents the next evolution of the [[concepts/harness-engineering]] thesis — the harness becomes a platform SDK, not just an IDE feature.
+
 ## Sources
 - 
 - Cursor blog announcement

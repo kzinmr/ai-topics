@@ -2,8 +2,8 @@
 title: Noam Brown
 type: entity
 created: 2026-04-14
-updated: 2026-04-14
-depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': False}
+updated: 2026-04-30
+depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
 tags:
   - person
   - openai
@@ -13,7 +13,8 @@ tags:
   - reasoning
   - multi-agent
   - diplomacy
-sources: []
+sources:
+  - "raw/newsletters/2026-04-30-ainews-the-inference-inflection.md"
 ---
 
 
@@ -173,6 +174,13 @@ Brown's work on reasoning models directly extends his game AI research:
 | CICERO language + strategy | GPT-4 + o1 integration | **Combining communication with planning** |
 
 > Brown has stated that the principles underlying **strategic game-playing** — imperfect information, multi-step planning, self-correction — are the same principles needed for **general AI reasoning**. His career is a continuous exploration of this insight.
+
+## Recent Quotes (April 2026)
+
+At NVIDIA GTC 2026, Noam Brown stated:
+> "Inference compute is a strategic resource, currently undervalued."
+
+This aligns with the industry-wide [[concepts/inference#the-inference-inflection-april-2026]] shift from training-dominant to inference-dominant AI workloads. Brown's perspective, coming from a career bridging game theory and reasoning models ([[concepts/o-series-reasoning-models]]), frames inference compute as analogous to deliberative "thinking time" in strategic games — the scarce resource that determines decision quality.
 
 ## Awards and Recognition
 
