@@ -1,3 +1,11 @@
+## 2026-04-30 — Cloudflare Code Mode MCP
+
+- Expanded [[concepts/code-mode]] — Added "Cloudflare Server-Side Code Mode (MCP)" section with 2-tool interface (search/execute), V8 sandbox, 99.9% token reduction from ~1.17M to ~1K tokens. Added context reduction approaches comparison table. Added "CodeMode × RLM: 並行する文脈爆縮の2つのアプローチ" section with architectural comparison, tradeoff analysis, and convergence prediction. Updated frontmatter with Cloudflare sources.
+- Saved raw article: raw/articles/2026-04-30_cloudflare-code-mode-mcp.md
+- Source: https://blog.cloudflare.com/code-mode-mcp/
+
+---
+
 ## [2026-04-30] Anthropic Dynamic Web Search Filtering — Production externalized processing
 
 - Expanded [[concepts/agentic-search]] — Added "Production Implementation: Claude's Dynamic Web Search Filtering (Anthropic)" section under Level 3. Filter-before-reasoning flow: Claude writes code to extract relevant data from web results before context loading. ~11% accuracy gain, ~24% token reduction. Validates all three levels: code as re-ranker (L1), harness orchestration (L2), externalized processing (L3). Cross-referenced with Cao et al. paper (same paradigm, web layer instead of filesystem layer).
