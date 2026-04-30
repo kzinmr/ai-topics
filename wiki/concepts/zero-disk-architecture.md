@@ -79,10 +79,11 @@ It is *not* yet practical for small organizations or individual developers who l
 
 ## Related Concepts
 
-- [[concepts/disaggregated-storage]] — Broader pattern of separating compute from storage
-- [[concepts/lambda-monolith-lambdalith]] — Serverless deployment pattern (complementary approach)
-- [[concepts/event-driven-architecture]] — Often used alongside Zero Disk for async data flow
-- [[entities/avi-im]] — Avi Kivity, author and popularizer of the concept
+- **[[concepts/ai-agent-memory-middleware]]**: Zero DiskはL3（クラウド/共有ストレージ）層の**完全分離パターン**。Memory MiddlewareがカバーするS3 FilesやTigrisとは異なり、Zero DiskはS3を直接バックエンドとして使用し、エージェントの状態を完全にクラウドにオフロードする。
+- **[[concepts/db9-fs-sql-pattern]]**: Zero Diskの「完全分離」と対照的なアプローチ。db9は計算とストレージをPostgreSQL内で**再統合**し、エージェントのファイル成果物とメタデータを一元管理する。
+- **[[concepts/lambda-monolith-lambdalith]]**: サーバーレスデプロイメントパターン。Zero Diskのステートレス計算層と親和性が高い。
+- **[[concepts/event-driven-architecture]]**: Zero Diskと併用され、非同期データフローを実現。
+- **[[entities/avi-im]]**: Avi Kivity、本概念の提唱者。
 
 ## Sources
 

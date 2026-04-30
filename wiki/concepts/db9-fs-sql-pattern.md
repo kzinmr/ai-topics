@@ -4,7 +4,7 @@ created: 2026-04-30
 updated: 2026-04-30
 tags: [concept, database, agent-workflow, filesystem, postgresql, sql]
 aliases: ["db9", "fs9", "db9-fs-sql-patterns"]
-related: [[concepts/filesystem-memory]], [[concepts/disaggregated-storage]], [[concepts/zero-disk-architecture]], [[concepts/agent-loop-orchestration]]
+related: [[concepts/ai-agent-memory-middleware]], [[concepts/zero-disk-architecture]], [[concepts/disaggregated-storage]], [[concepts/agent-loop-orchestration]]
 sources: ["https://me.0xffff.me/db9-fs-sql-patterns.html"]
 ---
 
@@ -120,10 +120,10 @@ values ('/reports/output.md', 'report', '{"inputs":["/docs/agents/intro.md"]}'::
 
 ## Relationship to Other Patterns
 
-- **[[concepts/filesystem-memory]]**: db9 extends the "filesystem as agent memory" pattern by adding SQL-queryable metadata alongside the files.
-- **[[concepts/zero-disk-architecture]]**: Both advocate for simplifying the storage layer — db9 unifies files + SQL locally, while Zero Disk offloads everything to S3.
-- **[[concepts/disaggregated-storage]]**: db9 can be viewed as a "re-aggregated" approach for agent workloads, where compute and storage are colocated in PostgreSQL for simplicity.
-- **[[concepts/agent-loop-orchestration]]**: db9 provides the data layer for the retrieval-augmented generation loop (source → chunk → retrieve → generate → output).
+- **[[concepts/ai-agent-memory-middleware]]**: db9はエージェントのL3（クラウド/共有ストレージ）層における**ローカル統合パターン**。Memory MiddlewareがカバーするS3 Files（ステージ＆コミットモデル）やTigris（グローバル分散）とは対照的に、db9は単一PostgreSQLノード内で完結する軽量アプローチ。エージェントのメモリ層（episodic/semantic/personal）を「fs9=episodicファイル + SQLテーブル=semanticメタデータ」として自然に表現できる。
+- **[[concepts/zero-disk-architecture]]**: 両者ともストレージレイヤの単純化を提唱するが、**真逆の方法論**。Zero Diskは「計算をS3にオフロード（完全分離）」、db9は「計算とデータを1つのPostgreSQLに再統合」。Zero Diskが大規模DBベンダー向けなら、db9は個々のエージェント開発者向け。
+- **[[concepts/disaggregated-storage]]**: db9は「再統合（re-aggregated）」アプローチ。分離がもたらす複雑性を避け、エージェントワークロードには単一ノードで十分と判断。
+- **[[concepts/agent-loop-orchestration]]**: db9はRAGパイプラインのデータ層を提供（source → chunk → retrieve → generate → outputの全工程をSQLで完結）。
 
 ## Key SQL Patterns Summary
 

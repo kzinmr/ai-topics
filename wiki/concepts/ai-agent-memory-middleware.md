@@ -3,7 +3,7 @@ title: "AI Agent Memory Middleware — Storage Infrastructure for Agentic AI"
 type: concept
 status: complete
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-04-30
 sources:
   - "https://www.allthingsdistributed.com/2026/04/s3-files-and-the-changing-face-of-s3.html"
   - "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-s3-files/"
@@ -214,6 +214,8 @@ AIエージェントの完全なメモリスタック：
 - **[memory-systems-design-patterns](memory-systems-design-patterns.md)**: L2ローカルファイルベースの設計パターン（Anthropic vs OpenAI vs Cognition）
 - **[claude-memory](claude-memory.md)**: CLAUDE.mdとファイルシステムの活用
 - **[chatgpt-memory-bitter-lesson](chatgpt-memory-bitter-lesson.md)**: ステートレスvsステートフルの議論
+- **[db9-fs-sql-pattern](db9-fs-sql-pattern.md)**: L3層の**ローカル統合アプローチ**。PostgreSQL内でファイルとSQLメタデータを一元化。単一エージェント〜小規模チーム向け。
+- **[zero-disk-architecture](zero-disk-architecture.md)**: L3層の**完全分離アプローチ**。S3を直接バックエンドとし、計算をステートレスにオフロード。大規模DBベンダー向け。
 
 S3 Filesは「Bitter Lesson」の原則（計算量を活用する一般的方法が勝つ）をストレージレイヤーで体現している：カスタムデータベースを構築するのではなく、既存のS3+EFSインフラを組み合わせ、境界を明示的にすることでスケーラビリティを実現する。
 
@@ -279,6 +281,35 @@ DatabricksのMemAlignはepisodic memoryをsemantic rulesに蒸留:
 - [Tigris for AI agents](https://www.tigrisdata.com/docs/agents-use-cases/) — Tigris Documentation
 - [LLMFS — Filesystem Memory for LLMs and AI Agents](https://github.com/viditraj/llmfs) — Vidit Raj, GitHub
 - [Memory Scaling for AI Agents](https://www.databricks.com/blog/memory-scaling-ai-agents) — Databricks AI Research Team, April 2026
+
+## Storage Architecture Spectrum for AI Agents
+
+エージェントの永続ストレージ設計は、**「分離 vs 統合」**のスペクトル上で位置付けられる：
+
+| アーキテクチャ | アプローチ | 規模 | 対象ユーザー |
+|---|---|---|---|
+| **[[concepts/zero-disk-architecture]]** | 完全分離 (S3 = バックエンド) | 大規模 | DBベンダー、大規模テック企業 |
+| **S3 Files / Tigris** | 統合インターフェース (クラウド) | 中規模 | マルチエージェントチーム |
+| **[[concepts/db9-fs-sql-pattern]]** | 統合データベース (ローカル) | 小規模 | 単一エージェント、個人開発者 |
+| **L2 (CLAUDE.md + Git)** | ローカルファイル | 最小 | 個人セッション |
+
+### 選択基準
+
+- **チーム規模**: 1人 → L2/db9、数人 → db9/Tigris、数十人 → S3 Files
+- **データ量**: MB単位 → db9、GB単位 → S3 Files/Tigris、TB以上 → Zero Disk
+- **複雑性許容**: 低い → db9/L2、高い → S3 Files/Zero Disk
+- **可用性要件**: 低 → db9、高 → S3 Files/Tigris、最大 → Zero Disk
+
+### db9とZero Diskの根本的な違い
+
+| 次元 | db9 | Zero Disk |
+|---|---|---|
+| **哲学** | 計算+データを1つに | 計算とデータを完全に分離 |
+| **バックエンド** | PostgreSQL (ローカル) | S3 (クラウド) |
+| **ファイル処理** | fs9拡張 (SQLから直接) | Stage-and-Commit (EFS経由) |
+| **スケーリング** | 垂直スケール | 水平スケール（無限） |
+| **運用コスト** | 低い（1つのDB） | 高い（分散システム） |
+| **エージェント適合性** | 単一エージェントのRAGパイプライン | マルチエージェントの共有ワークスペース |
 
 ## See Also
 
