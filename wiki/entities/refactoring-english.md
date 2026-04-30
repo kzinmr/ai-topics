@@ -1,9 +1,14 @@
 ---
 title: refactoring-english
+description: Technical blog focused on software engineering, AI vs human writing quality, and design documentation. Covers practical tips for developers.
+url: https://refactoringenglish.com
 type: entity
+status: skeleton
 ---
 
 # refactoring-english
+
+Technical blog focused on software engineering, AI vs human writing quality, and design documentation. Covers practical tips for developers.
 
 ## References
 

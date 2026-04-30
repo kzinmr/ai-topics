@@ -106,3 +106,9 @@ An earlier piece demonstrating his design rigor: professional designers are mixi
 - ["I built a timer I can't fail to set"](https://danieldelaney.net/timer/) (Dec 2025)
 - ["Checkboxes Are Never Round"](https://danieldelaney.net/checkboxes/)
 - [danieldelaney.net](https://danieldelaney.net)
+
+## References
+
+- dfarq.homeip.net--how-xerox-invented-the-gui-and-lost-it--6616ff89
+- dfarq.homeip.net--trs-80-model-100--c7c05fd3
+- dfarq.homeip.net--what-happened-to-palm-pilots--152db25d
