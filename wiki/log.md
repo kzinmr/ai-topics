@@ -1,3 +1,13 @@
+## [2026-04-30] Hamel Husain & Jo Kristian Bergum — "P7: You Don't Need a Graph DB (Probably)"
+
+- Created [[concepts/graph-db-overengineering-rag]] — Core thesis: GraphRAG is a technique, not a technology. Covers silver bullet trap, context stuffing (Floppy Disk Rule), HNSW as hidden graph, evaluation-first approach. Designed with structured graph query cross-references for wiki knowledge base traversal.
+- Updated [[entities/hamel-husain]] — Added 2026 publication to timeline, wikilink to new concept, source reference.
+- Updated [[concepts/knowledge-graph-memory-agents]] — Added "You Don't Need a Graph DB" Constraint section referencing this article.
+- Saved raw article: raw/articles/2026-04-30_hamel-husain-p7-graph-db-rag.md
+- Source: https://hamel.dev/notes/llm/rag/p7-graph-db.html
+
+---
+
 ## [2026-04-30] Doug Turnbull — "How To Build Your First Agentic Search Application" (Feb 2026, Vanishing Gradients)
 
 - Expanded [[concepts/agentic-search]] — Added "Practitioner Implementation: The Tool-Calling Loop" section under Level 2 (Harness Engineering). Concrete 6-step implementation loop connecting the harness layer to Fintool's SQL-based skill discovery pattern.

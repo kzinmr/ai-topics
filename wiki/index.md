@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 719 | Full entries: 690 | Stubs: 619
+> Last updated: 2026-04-30 | Total pages: 720 | Full entries: 691 | Stubs: 619
 
 ## Entities (346 pages)
 
@@ -382,7 +382,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (389 pages)
+## Concepts (390 pages)
 
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
@@ -543,8 +543,9 @@
 - [[concepts/formal-logic-foundation]] — Formal logic is the symbolic reasoning layer that underpins neurosymbolic AI systems. In the NeSy paradigm, formal logic provides the deterministic, verifiable reasoning capabilities that complemen...
 - [[concepts/formal-verification-llm-agents]] — Formal verification is the practice of mathematically proving that code *always* satisfies its specifications—including all edge cases. AI is poised to bring this from a fringe academic pursuit int...
 |- [[concepts/functional-emotions-llms]] — The discovery that Large Language Models develop internal representations of emotion concepts that causally influence model behavior, including alignment-relevant outcomes. Based on Anthropic's 202...
-|- [[concepts/gapa]] — Redirect page. GAPA refers to GEPA (Genetic-Pareto Prompt Evolution), a DSPy-integrated genetic algorithm for prompt optimization. See [[concepts/gepa]] for full content.
-|- [[concepts/gemini]] — **Gemini** is Google DeepMind's family of multimodal AI models, spanning text, images, video, audio, and code. Originally announced in December 2023, Gemini has evolved through multiple generations...
+||- [[concepts/gapa]] — Redirect page. GAPA refers to GEPA (Genetic-Pareto Prompt Evolution), a DSPy-integrated genetic algorithm for prompt optimization. See [[concepts/gepa]] for full content.
+||- [[concepts/graph-db-overengineering-rag]] — Hamel Husain & Jo Kristian Bergum argue against premature graph DB adoption for RAG systems. Covers the silver bullet trap, context stuffing, HNSW as hidden graph, and evaluation-first approach.
+||- [[concepts/gemini]] — **Gemini** is Google DeepMind's family of multimodal AI models, spanning text, images, video, audio, and code. Originally announced in December 2023, Gemini has evolved through multiple generations...
 - [[concepts/generic-agent-self-evolving]] — **GenericAgent (GA)** is a self-evolving LLM agent system from Fudan University (arXiv:2604.17091, April 2026) built around **contextual information density maximization** — the principle that long...
 |- [[concepts/generative-app-evolution]] — The evolution trajectory of AI applications from generative UI (stateless, single-turn) to generative apps (stateful, multi-turn with persistence). Maps the "generative staircase" and the FCIS (Functional Core / Imperative Shell) pattern for AI-era architecture.
 |- [[concepts/gepa]] — GEPAはDSPyに統合された遺伝的アルゴリズムベースのプロンプト最適化手法。Pareto最適化により品質とコストを同時に最適化し、GRPOより35倍少ないサンプルで6%高い性能を達成。ICLR 2026 Oral。

@@ -77,6 +77,16 @@ Contextual AI proposed treating GraphRAG's traversal as an **agentic tool-use pr
 
 Each component covers what the others can't.
 
+## The "You Don't Need a Graph DB" Constraint (Hamel Husain & Jo Kristian Bergum, 2026)
+
+The [[concepts/graph-db-overengineering-rag|You Don't Need a Graph DB for RAG (Probably)]] article adds an important constraint to this picture: for most RAG applications, **you don't need a dedicated graph database at all** because:
+
+1. **GraphRAG triplets** can be stored in Postgres, CSV, or JSON — no graph DB required
+2. **HNSW (used in every vector DB) is already a graph** — vector search → rerank → neighbor expansion achieves graph-like multi-hop retrieval
+3. **Context stuffing** (putting everything in LLM context) works for small-to-medium corpora
+
+This shifts the decision from "which graph DB?" to "do I need graph traversal at all?" — and if yes, whether existing vector infrastructure can handle it.
+
 ## Related Concepts
 
 - [[concepts/agentic-alternative-to-graphrag]] — Contextual AI's metadata search approach

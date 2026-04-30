@@ -52,6 +52,7 @@ His career spans **GitHub** (where he contributed to the precursors of Copilot a
 | 2025 | Published **"A Field Guide to Rapidly Improving AI Products"** |
 | 2025 | Released **evals-skills** (OSS plugins for coding agents) |
 | Sep 2025 | **Lenny's Podcast** (w/ Shreya Shankar): "Why AI evals are the hottest new skill" (100K+ views) |
+| 2026 | Published **"P7: You Don't Need a Graph DB (Probably)"** — with Jo Kristian Bergum on avoiding over-engineering in RAG systems |
 
 ## Core Philosophy
 
@@ -140,6 +141,7 @@ Co-authored with **Eugene Yan, Shreya Shankar, Jason Liu, Bryan Bischof, Charles
 -   [[concepts/harness-engineering]] — His core engineering philosophy.
 -   [[concepts/critique-shadowing]] — His signature methodology.
 -   [[concepts/llm-as-judge]] — Core evaluation technique he critiques and teaches.
+-   [[concepts/graph-db-overengineering-rag]] — Co-authored with Jo Kristian Bergum on avoiding unnecessary graph DB complexity for RAG.
 
 ## Sources
 
@@ -150,3 +152,4 @@ Co-authored with **Eugene Yan, Shreya Shankar, Jason Liu, Bryan Bischof, Charles
 -   [GitHub](https://github.com/hamelsmu) — Open source projects.
 -   [Parlance Labs](https://parlance-labs.com) — Consulting firm.
 -   [AnswerAI](https://www.answer.ai/) — R&D role.
+-   [P7: You Don't Need a Graph DB (Probably)](https://hamel.dev/notes/llm/rag/p7-graph-db.html) — Co-authored with Jo Kristian Bergum on RAG architecture decisions (2026).
