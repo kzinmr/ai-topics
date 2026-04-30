@@ -399,3 +399,17 @@ Processed two articles from timsh.org covering Claude Code in Docker isolation a
 
 ### Tagging changes:
 - Added multi-llm, workflow, blogger, developer-tooling to SCHEMA.md taxonomy
+
+## [2026-04-30] crawl | Daily Active Knowledge Crawl — Video Generation, AI Regulation, SLMs
+
+**Active discovery crawl — identified and filled three major knowledge gaps not covered in hot-topics.yaml.**
+
+### Files created:
+- [[concepts/ai-video-generation-2026]] — Full concept page covering the 2026 landscape: Veo 3.1, Seedance 2.0, Kling 3.0, Runway Gen-4.5, Sora 2, Wan 2.6. Key trends: native audio generation, multi-shot storytelling, character consistency, 4K resolution, cost plunging to $0.022/sec. Open-source ecosystem (Wan series). Pricing comparison table.
+- [[concepts/ai-regulation-2026]] — Full concept page covering 1,561 state AI bills in 2026, CA SB 53 (TFAIA) effective Jan 2026, NY RAISE Act amendments, EU AI Act timeline, UK non-legislative approach. Implications for developers: frontier AI frameworks, transparency requirements, incident reporting, model cards. Open questions on federal preemption.
+
+### Files enriched:
+- [[concepts/small-language-models]] — Upgraded from stub to full entry: key models (Phi-4, Llama 3, Qwen 2.5, TinyAgent, xLAM), SLM vs LLM comparison table, agentic SLMs (2026 trend with TinyLLM framework), hardware backends (CPU/GPU/NPU), use cases, limitations.
+
+### Files updated:
+- [[index.md]] — Added ai-video-generation-2026 and ai-regulation-2026 to Concepts section. Updated small-language-models description (removed TODO tag). Total pages: 710 | Full entries: 683 | Stubs: 619.

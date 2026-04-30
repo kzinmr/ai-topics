@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 708 | Full entries: 680 | Stubs: 620
+> Last updated: 2026-04-30 | Total pages: 710 | Full entries: 683 | Stubs: 619
 
 ## Entities (339 pages)
 
@@ -846,19 +846,21 @@
 - [[concepts/ai-eval-tools-comparison]] — > **TODO**: Enrich this page.
 - [[concepts/ai-evals-people]] — > **TODO**: Enrich this page.
 - [[concepts/ai-evaluation]] — > **TODO**: Enrich this page.
-- [[concepts/ai-image-generation]] — > **TODO**: Enrich this page with research on this topic.
-- [[concepts/ai-in-military-wargames]] — > **TODO**: Enrich this page.
-- [[concepts/ai-memory-systems-chatgpt-vs-claude-vs-cognition]] — > **TODO**: Enrich this page.
-- [[concepts/ai-memory-systems-チャット-vs-コーディングエージェントの設計哲学比較]] — > **TODO**: Enrich this page.
-- [[concepts/ai-persona-embodiment]] — > **TODO**: Enrich this page.
-- [[concepts/ai-programming-as-theory-building]] — > **TODO**: Enrich this page.
-- [[concepts/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] — > **TODO**: Enrich this page.
-- [[concepts/ai-safety-and-alignment]] — > **TODO**: Enrich this page.
-- [[concepts/ai-safety-military-governance-claude]] — > **TODO**: Enrich this page.
-- [[concepts/ai-subprime-crisis]] — > **TODO**: Enrich this page.
-- [[concepts/ai-sycophancy]] — > **TODO**: Enrich this page.
-- [[concepts/ai-vulnerability-discovery]] — > **TODO**: Enrich this page.
-- [[concepts/aiベンチマークとコミュニティ]] — > **TODO**: Enrich this page.
+   849|- [[concepts/ai-image-generation]] — > **TODO**: Enrich this page with research on this topic.
+   850|- [[concepts/ai-in-military-wargames]] — > **TODO**: Enrich this page.
+   851|- [[concepts/ai-memory-systems-chatgpt-vs-claude-vs-cognition]] — > **TODO**: Enrich this page.
+   852|- [[concepts/ai-memory-systems-チャット-vs-コーディングエージェントの設計哲学比較]] — > **TODO**: Enrich this page.
+   853|- [[concepts/ai-persona-embodiment]] — > **TODO**: Enrich this page.
+   854|- [[concepts/ai-programming-as-theory-building]] — > **TODO**: Enrich this page.
+   855|- [[concepts/ai-regulation-2026]] — AI regulation hit a watershed in 2026: 1,561 state bills, CA SB 53 (TFAIA) in effect, EU AI Act approaching implementation, NY RAISE Act amended. Covers US state/federal legislation, EU, UK, and implications for developers.
+   856|- [[concepts/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] — > **TODO**: Enrich this page.
+   857|- [[concepts/ai-safety-and-alignment]] — > **TODO**: Enrich this page.
+   858|- [[concepts/ai-safety-military-governance-claude]] — > **TODO**: Enrich this page.
+   859|- [[concepts/ai-subprime-crisis]] — > **TODO**: Enrich this page.
+   860|- [[concepts/ai-sycophancy]] — > **TODO**: Enrich this page.
+   861|- [[concepts/ai-video-generation-2026]] — AI video generation crossed into production use in 2026: Veo 3.1 (4K native+audio), Seedance 2.0 (multi-modal), Kling 3.0 (4K best-value), Wan 2.6 (open-source). Pricing from $0.022/sec. Key trends: native audio, multi-shot storytelling, character consistency.
+   862|- [[concepts/ai-vulnerability-discovery]] — > **TODO**: Enrich this page.
+   863|- [[concepts/aiベンチマークとコミュニティ]] — > **TODO**: Enrich this page.
 - [[concepts/ai批判の政治的バイアス分析]] — > **TODO**: Enrich this page.
 - [[concepts/alex-hall]] — > **TODO**: Enrich this page.
 - [[concepts/alex-krizhevsky]] — > **TODO**: Enrich this page.
@@ -1335,7 +1337,7 @@
 - [[concepts/sierra-online]] — > **TODO**: Enrich this page.
 - [[concepts/signal]] — > **TODO**: Enrich this page.
 - [[concepts/small-internet]] — > **TODO**: Enrich this page.
-- [[concepts/small-language-models]] — > **TODO**: Enrich this page.
+- [[concepts/small-language-models]] — Small Language Models (SLMs) for edge/on-device AI: Phi-4, Llama 3 1B/3B, Qwen 2.5, TinyAgent. Agentic SLMs for function calling and tool use. Hardware backends (CPU/GPU/NPU). Cost values from $0.022/sec.
 - [[concepts/smollm]] — > **TODO**: Enrich this page.
 - [[concepts/smollm2]] — > **TODO**: Enrich this page.
 - [[concepts/snapshot-testing]] — > **TODO**: Enrich this page.
