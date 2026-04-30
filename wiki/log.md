@@ -1,3 +1,9 @@
+## [2026-04-30] Anthropic Dynamic Web Search Filtering — Production externalized processing
+
+- Expanded [[concepts/agentic-search]] — Added "Production Implementation: Claude's Dynamic Web Search Filtering (Anthropic)" section under Level 3. Filter-before-reasoning flow: Claude writes code to extract relevant data from web results before context loading. ~11% accuracy gain, ~24% token reduction. Validates all three levels: code as re-ranker (L1), harness orchestration (L2), externalized processing (L3). Cross-referenced with Cao et al. paper (same paradigm, web layer instead of filesystem layer).
+- Saved raw article: raw/articles/2026-03-30_claude-web-search-dynamic-filtering.md
+- Source: https://www.gend.co/blog/claude-web-search-dynamic-filtering
+
 ## [2026-04-30] Doug Turnbull — Agentic Search Is Having a Grep Moment
 
 - Expanded [[concepts/agentic-search]] — Added "Practitioner Perspective: Doug Turnbull's 'Grep Moment'" section under Level 3. Two-loop architecture (inner agent loop + outer harness validation), deconstructing the search stack (ranking logic moves from search engine to harness), why dumb tools work (constraints budget creativity, code navigation training data), three limits of grep (actionable feedback, complexity, token cost). Cross-references SID-1 and the externalized processing paradigm.

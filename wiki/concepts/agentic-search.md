@@ -15,10 +15,12 @@ sources:
   - raw/papers/2026-03-20_2603.20432_coding-agents-effective-long-context-processors.md
   - raw/articles/2025-12-04_sid-1-agentic-retrieval.md
   - raw/articles/2026-04-06_softwaredoug-agentic-search-grep-moment.md
+  - raw/articles/2026-03-30_claude-web-search-dynamic-filtering.md
   - https://arxiv.org/abs/2602.21456
   - https://arxiv.org/abs/2603.20432
   - https://www.sid.ai/research/sid-1-technical-report
   - https://softwaredoug.com/blog/2026/04/06/agentic-search-is-having-a-grep-moment
+  - https://www.gend.co/blog/claude-web-search-dynamic-filtering
   - https://github.com/ChuanMeng/text-ranking-in-deep-research
 ---
 
@@ -262,6 +264,52 @@ Turnbull warns that the "grep moment" has diminishing returns:
 
 This mirrors the Level 1 finding (SID-1: RL-trained retrieval outperforms both vector search and pure grep-based approaches) and the Level 3 finding (retrieval tools can harm file-system exploration). The article suggests the optimal path is a **well-tuned search harness**, not an either/or choice.
 
+### Production Implementation: Claude's Dynamic Web Search Filtering (Anthropic)
+
+Anthropic's **Dynamic Filtering** (March 2026) for Claude Web Search is a production-grade embodiment of the externalized processing paradigm. Instead of loading raw HTML into the context window, Claude writes and executes code to pre-process web results *before* they enter the model's reasoning context.
+
+#### Filter-Before-Reasoning Flow
+
+```
+User query
+        ↓
+  1. Web search / URL fetch
+        ↓
+  2. Claude generates extraction script
+     (targets: pricing tables, headings, citations)
+        ↓
+  3. Script runs in sandboxed environment
+        ↓
+  4. Only filtered output → Context window
+        ↓
+  5. Final reasoning on clean data
+```
+
+#### Performance Gains
+
+| Metric | Improvement |
+|--------|-------------|
+| Search accuracy | ~11% average |
+| Input tokens used | ~24% fewer |
+| DeepsearchQA F1 (Sonnet 4.6) | 52.6% → 59.4% |
+| DeepsearchQA F1 (Opus 4.6) | 69.8% → 77.3% |
+
+#### Technical Requirements
+
+- **Models**: Opus 4.6 / Sonnet 4.6
+- **Tool versions**: `web_search_20260209` or `web_fetch_20260209`
+- **Beta header**: `anthropic-beta: code-execution-web-tools-2026-02-09`
+- **Dependency**: Code Execution tool must be enabled (free when used with web tools; standard token costs apply)
+
+#### Connection to the Three-Level Framework
+
+This implementation validates patterns from all three levels:
+
+- **Level 1 (IR)**: The code execution acts as a just-in-time filter, mirroring the re-ranking stage but at the code level rather than with a separate ranker model
+- **Level 2 (Harness)**: The harness (Claude API infrastructure) orchestrates the tool flow — search → script → sandbox → context — without the agent needing to manage each step
+- **Level 3 (Externalized Processing)**: This is the most direct validation — Claude replaces latent attention (internal HTML parsing) with explicit code execution (script-based extraction), exactly as the Cao et al. paper prescribes, but at the web search layer rather than the file system layer
+
+The key difference from the Cao et al. approach: instead of organizing text in filesystems, Claude uses code execution as an ephemeral processing pipeline for each web fetch. Both externalize processing from the model's internal attention to executable code.
 
 ---
 
@@ -291,6 +339,7 @@ The IR-layer findings are based on:
 
 ## Sources
 
+- [Dynamic Filtering in Claude Web Search](https://www.gend.co/blog/claude-web-search-dynamic-filtering) — Anthropic (2026). Production implementation of externalized processing: Claude writes code to filter web results before context loading. ~11% accuracy gain, ~24% token reduction.
 - [SID-1 Technical Report: Test-Time Compute for Retrieval](https://www.sid.ai/research/sid-1-technical-report) — SID Research (2025). First RL-trained agentic retrieval model. Qwen3-14B + GRPO, 0.84 recall, TI/TO pipeline insight.
 - [Revisiting Text Ranking in Deep Research](https://arxiv.org/abs/2602.21456) — Meng, Ou, MacAvaney, Dalton (2026). Systematic evaluation of IR methods in deep research contexts.
 - [Coding Agents are Effective Long-Context Processors](https://arxiv.org/abs/2603.20432) — Cao, Yin, Dhingra, Zhou (2026). Coding agents as retrieval/processing interface outperforming traditional IR on long-context tasks.
