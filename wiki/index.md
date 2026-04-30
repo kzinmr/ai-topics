@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 722 | Full entries: 693 | Stubs: 619
+> Last updated: 2026-04-30 | Total pages: 724 | Full entries: 695 | Stubs: 619
 
 ## Entities (346 pages)
 
@@ -541,8 +541,9 @@
 - [[concepts/fine-tuning/unsloth]] — Unsloth is a fine-tuning optimization library providing 2-5x faster training with 50-80% less memory usage through custom Triton kernels and LoRA/QLoRA optimization.
 - [[concepts/flashattention-pytorch-educational]] — shreyansh26/FlashAttention-PyTorch は、FlashAttentionアルゴリズム（FA1からFA4まで）をPyTorchで教育的・アルゴリズム的明晰さのために実装したプロジェクト。
 - [[concepts/formal-logic-foundation]] — Formal logic is the symbolic reasoning layer that underpins neurosymbolic AI systems. In the NeSy paradigm, formal logic provides the deterministic, verifiable reasoning capabilities that complemen...
-- [[concepts/formal-verification-llm-agents]] — Formal verification is the practice of mathematically proving that code *always* satisfies its specifications—including all edge cases. AI is poised to bring this from a fringe academic pursuit int...
-|- [[concepts/functional-emotions-llms]] — The discovery that Large Language Models develop internal representations of emotion concepts that causally influence model behavior, including alignment-relevant outcomes. Based on Anthropic's 202...
+|- [[concepts/formal-verification-llm-agents]] — Formal verification is the practice of mathematically proving that code *always* satisfies its specifications—including all edge cases. AI is poised to bring this from a fringe academic pursuit int...
+||- [[concepts/freshstack-benchmark]] — Nandan Thakur's modern RAG evaluation benchmark using real-time data. Three metrics: Grounding (Coverage@20), Diversity (alpha-nDCG@10), Relevance (Recall@50). Replaces contaminated BEIR/MTEB.
+||- [[concepts/functional-emotions-llms]] — The discovery that Large Language Models develop internal representations of emotion concepts that causally influence model behavior, including alignment-relevant outcomes. Based on Anthropic's 202...
 ||- [[concepts/gapa]] — Redirect page. GAPA refers to GEPA (Genetic-Pareto Prompt Evolution), a DSPy-integrated genetic algorithm for prompt optimization. See [[concepts/gepa]] for full content.
 ||- [[concepts/graph-db-overengineering-rag]] — Hamel Husain & Jo Kristian Bergum argue against premature graph DB adoption for RAG systems. Covers the silver bullet trap, context stuffing, HNSW as hidden graph, and evaluation-first approach.
 ||- [[concepts/gemini]] — **Gemini** is Google DeepMind's family of multimodal AI models, spanning text, images, video, audio, and code. Originally announced in December 2023, Gemini has evolved through multiple generations...
@@ -710,8 +711,9 @@
 |- [[concepts/reasoning-model-cost-transparency]] — A 2026 study revealing that listed API prices for reasoning language models are systematically misleading, with actual costs differing dramatically from advertised rates.
 | - [[concepts/reasoning-compression]] — The phenomenon where test-time scaling (CoT, search, agentic loops) gets compressed into model weights through training. Explicit reasoning steps become implicit model capabilities over successive generations.
 | - [[concepts/rl-harness-lifecycle]] — The co-evolutionary cycle: harnesses create training environments → RL produces capable models → models internalize harness patterns → more ambitious harnesses become possible. Coined by Will Brown (Prime Intellect). "Harness paradigms evolve half a model generation at a time."
-| - [[concepts/reasoning-models]]
-- [[concepts/recursive-language-models]] — RLM is an inference paradigm where language models recursively decompose and interact with arbitrarily long input context through external environments (e.g., REPL), rather than processing all toke...
+|| - [[concepts/reasoning-models]]
+|| - [[concepts/reasoning-retrieval]] — Orion Weller's Promptriever (instruction-aware bi-encoder) + Rank1 (reasoning-based reranker with CoT). 10-point gain from reasoning traces. Part 3 of the RAG Is Not Dead series.
+|- [[concepts/recursive-language-models]]
 - [[concepts/red-green-tdd]] — Moved to concepts/harness-engineering/agentic-workflows/red-green-tdd.md
 |- [[concepts/red-teaming-adversarial-eval]] — Systematic probing of agent safety postures — measuring **Attack Success Rates (ASR)**, resistance to multi-turn manipulation, and vulnerabilities to indirect prompt injection. Goes beyond basic re...
 |- [[concepts/reverse-engineering]] — Reverse engineering is the process of analyzing a system, software, or hardware to understand its design, architecture, and functionality without access to its original source code or documentation. In the AI context, applied to understanding model internals, protocol decompilation, and security analysis.

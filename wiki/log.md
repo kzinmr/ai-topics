@@ -1,3 +1,14 @@
+## [2026-04-30] RAG Is Not Dead — Added Parts 2 & 3: FreshStack + Reasoning Retrieval
+
+- Created [[concepts/freshstack-benchmark]] — Nandan Thakur's modern RAG evaluation benchmark. Three metrics (Coverage@20, Diversity, Recall@50). Replaces contaminated BEIR/MTEB with real-time data.
+- Created [[concepts/reasoning-retrieval]] — Orion Weller's Promptriever (instruction-aware bi-encoder) + Rank1 (reasoning-based reranker with CoT). 10-point gain from reasoning traces.
+- Updated [[concepts/rag-not-dead-series]] — Added detailed P2/P3 sections, fixed ben-clavie → benjamin-clavie reference, added new concept wikilinks and sources.
+- Saved raw articles: `raw/articles/2026-04-30_hamel-husain-rag-p2-evals.md`, `raw/articles/2026-04-30_hamel-husain-rag-p3-reasoning.md`
+- Sources: https://hamel.dev/notes/llm/rag/p2-evals.html, https://hamel.dev/notes/llm/rag/p3_reasoning.html
+- Updated index files: wiki/index.md, wiki/log.md.
+
+---
+
 ## [2026-04-30] Hamel Husain — RAG Is Not Dead Series & Part 1 Modern Retrieval Toolkit
 
 - Created [[concepts/rag-not-dead-series]] — Hamel Husain & Ben Clavié's open 7-part series arguing RAG is not dead. Covers all 7 parts from naive single-vector myth through context rot to graph DB over-engineering.
