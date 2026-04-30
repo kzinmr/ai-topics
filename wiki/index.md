@@ -13,6 +13,7 @@
 - [[entities/agi-bot]] — Chinese humanoid robot manufacturer. Second-largest Chinese humanoid robot seller after Unitree.
 - [[entities/agibot-10000-units]] — Real-world demand for humanoid robots accelerates as AGIBot ships 10,000 units.
 - [[entities/akira-realmcore]] — **X** | @realmcore_ |
+- [[entities/akshay-pachaar]] — AIエンジニア、データサイエンティスト、教育者。patchy631
 - [[entities/alec-radford]] — **Role** | AI Researcher (former OpenAI); Advisor, Thinking Machines Lab |
 - [[entities/alex-banks]] — **Name** | Alex Banks |
 - [[entities/alex-zhang]] — **Name:** Alex L. Zhang
@@ -36,6 +37,7 @@
 - [[entities/ben-boyter]] — Creator of searchcode.com, scc (Sloc Cloc and Code), cs (Code Spelunker). Author of 'Marketing to the Machine' B2A thesis on Business-to-Agent design.
 - [[entities/benjamin-clavie]] — **X** | @bclavie |
 - [[entities/berthub-eu]] — **Blog** | berthub.eu |
+- [[entities/block-ai]] — ブロックAIの概念と実装（スケルトンページ）
 - [[entities/boaz-barak]] — **X** | @boazbaraktcs |
 - [[entities/bogdanthegeek-s-blog]] — **URL:** https://bogdanthegeek.github.io/blog/
 - [[entities/boris-cherny]] — **X/Twitter** | @bcherny__ |
@@ -57,6 +59,7 @@
 - [[entities/claude-design]] — Anthropic Labs product for collaborative visual design, powered by Claude Opus 4.7's vision model. Released April 17, 2026 in research preview.
 - [[entities/claude-mythos]] — Anthropic's next-generation model, developed after . Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
 - [[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
+- [[entities/coding-agents]] — AIコーディングエージェントの実体と参照（スケルトンページ）
 - [[entities/construction-physics-com]] — **URL:** https://constructionphysics.substack.com
 - [[entities/corbett]] — **X/Twitter** | @corbtt |
 - [[entities/cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
@@ -87,6 +90,7 @@
 - [[entities/eli-thegreenplace-net]] — **URL:** https://eli.thegreenplace.net
 - [[entities/elie-bakouch]] — ML engineer and researcher at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training.
 - [[entities/elvis-sun]] — Elvis Sun is an AI researcher and newsletter author operating under the pen name **spicyneuron**. He publishes on Substack covering practical local AI deployment, hardware choices for self-hosted L...
+- [[entities/embeddings]] — ベクトル埋め込み表現（スケルトンページ）
 - [[entities/embra]] — AI context engine company acquired by Notion (Jan 2026). Founded by Zach Tratar.
 - [[entities/elvis]] — **Platform:** X/Twitter (@elvis_)
 - [[entities/emollick]] — **X** | @emollick |
@@ -115,6 +119,7 @@
 - [[entities/geoffreylitt-com]] — **URL:** https://geoffreylitt.com
 - [[entities/geohot-github-io]] — **Projects:** comma.ai (Founder/CEO), tinygrad (Creator), tiny corp (Founder)
 - [[entities/georgi-gerganov]] — **X/Twitter** | @ggerganov |
+- [[entities/gilesthomas]] — ML研究者、教育者、ソフトウェア開発者。PythonAnywhere創設者。gilesthomas.com
 - [[entities/glm-5-zai]] — New state-of-the-art open weights LLM from Z.ai (智谱AI).
 - [[entities/glm-5v-turbo]] — Model that turns designs into code, part of the multimodal AI wave from Chinese labs.
 - [[entities/gm8xx8-com]] — **Handle:** @gm8xx8 (X/Twitter, HuggingFace, GitHub)
@@ -135,6 +140,7 @@
 - [[entities/hugo-bowne-anderson]] — **Data scientist, educator, podcaster, consultant.** Independent AI & data science educator based in Sydney, Australia. Host of the **Vanishing Gradients** podcast. Former Head of Developer Relatio...
 - [[entities/harrison-chase]] — CEO & Co-founder of LangChain. Articulated the "Open Models / Open Runtime / Open Harness" three-layer agent architecture framework. LangChain Deep Agents is the reference implementation of an Open Harness.
 - [[entities/hynek-schlawack]] — **X** | @hynek |
+- [[entities/hyperbo]] — hyperboドメインのAIエージェント記事・コンテンツ
 - [[entities/ian-goodfellow]] — **フルネーム** | Ian Joseph Goodfellow |
 - [[entities/ian-nuttall]] — **URL:** https://ian.is
 - [[entities/ilya-sutskever]] — **Full Name** | Ilya Sutskever (איליה סوتскеבר) |
@@ -169,12 +175,15 @@
 - [[entities/lilian-weng]] — **URL:** https://lilianweng.github.io
 - [[entities/lilianweng]] — **X** | @lilianweng |
 - [[entities/lmsys-org]] — **URL** | https://lmsys.org |
+- [[entities/lora-fine-tuning]] — LoRAファインチューニング（スケルトンページ）
+- [[entities/mahadk]] — テクニカルライター。AI、Web開発、LLMアプリケーション。mahadk.com
 - [[entities/manus]] — **Manus**は、元Alibaba/ByteDanceエンジニアらが創業した中国系スタートアップ（Monica.im）が開発した汎用AIエージェント。2025年3月のバイラルデモで注目され、ブラウザ操作・コード実行・ファイル作成を仮想コンピュータ上で自律実行できる。2025年11月には**Browser Operator**機能をリリース、2026年には**Metaに買収**された。
 - [[entities/mario-zechner]] — **X** | @badlogicgames |
 - [[entities/mark-chen]] — **Role** | Chief Research Officer, OpenAI |
 - [[entities/martin-alderson]] — **Blog** | martinalderson.com |
 - [[entities/martin-kleppmann]] — ケンブリッジ大学計算機科学技術学科准教授。分散システム、ローカルファースト協調ソフトウェア、暗号プロトコルを研究。
 - [[entities/matduggan-com]] — **URL:** https://matduggan.com
+- [[entities/mathematical-methods]] — 数学的方法（スケルトンページ）
 - [[entities/matklad-github-io]] — **Blog** | matklad.github.io |
 - [[entities/maurycyz-com]] — **Blog** | maurycyz.com |
 - [[entities/max-bernstein]] — **URL:** https://bernsteinbear.com
@@ -227,6 +236,7 @@
 - [[entities/rakhim-exotext-com]] — **Rakhim Davletkaliyev** is a staff engineer at concepts/iqm-quantum-computers, a programming educator, author, and philosophical tech writer. He blogs at concepts/rakhim.exotext.com (with a web lo...
 - [[entities/ramp-labs]] — AI research company focused on multi-agent system efficiency. Created Latent Briefing — KV cache compaction for efficient memory sharing between agents.
 - [[entities/raw-works]] — **Role:** ML researcher, RLM (Recursive Language Model) practitioner
+- [[entities/refactoring-english]] — ソフトウェアエンジニアリング、AI vs人間の文章品質。refactoringenglish.com
 - [[entities/regie-ai]] — > TODO: Research company blog, product, and technical depth to build L3 page.
 - [[entities/rehan-van-der-merwe]] — Cloud-native architect and blogger. Writes at rehanvdm.com.
 - [[entities/richard-sutton]] — **Role** | Professor, University of Alberta; Research Scientist, Keen Technologies; Former Distinguished Research Scientist, Google DeepMind |
@@ -256,6 +266,7 @@
 - [[entities/spike]] — **URL:** https://supaiku.com
 - [[entities/stefano-marinelli]] — **Blog:** it-notes.dragas.net — "Scattered IT Notes"
 - [[entities/steve-blank]] — **Blog** | steveblank.com |
+- [[entities/substack]] — Substackプラットフォーム。ドメイン別AI記事
 - [[entities/susam-net]] — **Blog** | susam.net |
 - [[entities/tailcalled]] — **Platform:** LessWrong
 - [[entities/tedium-the-dull-side-of-the-internet]] — **URL:** https://tedium.co
@@ -266,6 +277,7 @@
 - [[entities/thariq-shihipar]] — **X** | @trq212 |
 - [[entities/the-old-new-thing]] — **URL:** https://devblogs.microsoft.com/oldnewthing/
 - [[entities/the-silicon-underground]] — **URL:** https://dfarq.homeip.net
+- [[entities/thin-bi-tool]] — 薄くなるBIツール（スケルトンページ）
 - [[entities/tim-sh]] — **Blog** | timsh.org | AI coding practitioner, PM, Multi-LLM workflow pioneer |
 - [[entities/tim-sherratt]] — **Blog** | timsherratt.au | Historian, GLAM hacker, creator of GLAM Workbench |
 - [[entities/tobi-lutke]] — Tobi Lütke is the CEO of Shopify and a prominent advocate for organizational AI adoption.
@@ -289,8 +301,10 @@
 - [[entities/xpeng]] — Chinese electric vehicle manufacturer with integrated robotics and flying vehicle divisions. Builds cars, robots, and flying vehicles on a single AI-powered platform.
 - [[entities/yacine-mahdid]] — **URL:** https://yacine.ca/
 - [[entities/yann-lecun]] — **フルネーム** | Yann André LeCun |
+- [[entities/ysymyth]] — YSYMYTH（スケルトンページ）
 - [[entities/zach-mueller]] — **X** | @TheZachMueller |
 - [[entities/zach-tratar]] — AI @ Notion. Founded Embra (acquired 2026). Argues for unified AI context apps over vertical SaaS.
+- [[entities/zakirullin]] — Zakirullin。認知負荷に関する研究（スケルトンページ）
 - [[entities/zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.
 
 - [[entities/palantir]] — AI-powered decision infrastructure company. The Palantir Ontology contextualizes computation within "lived reality" for enterprise agent workflows.
@@ -372,12 +386,19 @@
 
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
+- [[concepts/agent-communication-standards]] — ACP, A2A, BeeAIなど、マルチエージェント通信のための標準プロトコル群
 - [[concepts/agent-economics]] — The cost structures, token consumption patterns (1000x multiplier), and economic implications of deploying autonomous AI agents at scale across L1-L5 autonomy levels.
 - [[concepts/agent-governance]] — Agent governance is the structured approach enterprises use to define how autonomous AI systems operate, what they can access, and how their actions are monitored. It encompasses policy, identity, ...
 - [[concepts/agent-harness-primitives]] — A harness is every piece of code, configuration, and execution logic that wraps a raw model to turn it into a work engine. Agent = Model + Harness. The bottleneck has shifted from **model capabilit...
 - [[concepts/agent-harness]] — An agent harness is the infrastructure layer that sits between an LLM API and the agent's execution environment. It manages tool routing, context management, session lifecycle, and error recovery. ...
 |- [[concepts/agent-harnesses]] — > **Core Thesis:** The less you build in your agent framework, the more it works. All the value is in the RL'd model, not your 10,000 lines of abstractions.
 |- [[concepts/agent-iam]] — Agent IAM (Identity & Access Management) for non-human identities (NHI). Security and authorization framework for AI agents operating across organizational boundaries.
+- [[concepts/agent-patterns]] — AIエージェントの一般的な設計パターンと実装プラクティス
+- [[concepts/agent-sandbox-patterns]] — Browser Useのエージェントサンドボクシングアーキテクチャ。ツール分離パターンとエージェント分離パターン
+- [[concepts/ask-user-question-pattern]] — エージェントがユーザーに確認を求めるためのハーネスパターン
+- [[concepts/bitter-lesson-agent-harnesses]] — モデル能力のスケール向上に伴い、ハーネスの役割は論理実装からモデル行動のオーケストレーションへ移行する
+- [[concepts/context-providers]] — エージェントとツールの間にあるコンテキスト供給レイヤーの設計パターン
+- [[concepts/db9-filesystem-sql]] — PostgreSQL + fs9ファイルシステム拡張を用いたエージェントワークフローアーキテクチャ。アーティファクトはファイル、メタデータはSQL
 |- [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.
 |- [[concepts/agent-serverless]] — Serverless deployment pattern for AI agents with built-in SaaS integration, permissions, security, and log persistence tiers. Enterprise monetization via persistent logs and audit trails.
 ||- [[concepts/agent-identity-verification]]
@@ -587,6 +608,7 @@
 - [[concepts/inference]] — LLM推論の3大エンジン: llama.cpp (ローカルCPU/GPU), vLLM (サーバー高スループット), SGLang (エージェント最適化)
 - [[concepts/inference/llama-cpp]] — llama.cpp is a C/C++ inference engine for running LLMs efficiently on consumer hardware, created by Georgi Gerganov and now maintained under ggml-org. As of April 2026, it has evolved from a simple...
 - [[concepts/inference/vllm]] — vLLM is a high-throughput LLM serving engine with PagedAttention optimization, developed by UC Berkeley and maintained by the vLLM project. As of April 2026, the v0.19.0 release (448 commits, 197 c...
+- [[concepts/instruction-hierarchy]] — LLMの命令階層構造。システムプロンプト、ユーザープロンプト、ツール出力の優先順位とprompt-injection対策
 - [[concepts/intent-formalization]] — **Intent formalization** is the challenge of automatically translating vague human intent into precise, checkable program specifications. It is the central unsolved problem for reliable AI-generate...
 - [[concepts/interactive-explanations]] — Moved to concepts/harness-engineering/agentic-workflows/interactive-explanations.md
 - [[concepts/karpathy-loop]] — > **Definition:** The Karpathy Loop is an autonomous research pattern where a human writes a natural-language research protocol (`program.md`), an AI agent iteratively modifies code (`train.py`), r...
@@ -600,7 +622,9 @@
 - [[concepts/lambda-monolith-lambdalith]] — A serverless architecture pattern where a single AWS Lambda function handles all API routes, rather than splitting into many small, route-specific Lambda functions.
 - [[concepts/latent-briefing]] — Latent Briefing is Ramp Labs' implementation of task-guided KV cache compaction for efficient memory sharing between agents in hierarchical multi-agent systems. Instead of passing full context as t...
 - [[concepts/llm-as-judge]] — LLM-as-JudgeはLLMを使用してLLM出力を評価するパラダイム。3つのバイアス类型（ルーブリック順序、スコアID、参照解答）と7つのベストプラクティスを整理。高リスク評価にはGPT-4oクラスが必要。
+- [[concepts/llm-core]] — 大規模言語モデルのコアアーキテクチャと言語モデル基礎
 - [[concepts/llm-evaluation-harness]] — Frameworks and tools for systematically evaluating Large Language Models across standardized benchmarks and custom test suites.
+- [[concepts/llm-memory-architecture]] — LLMメモリ設計。ai-agents、memory、architecture、knowledge-graphs
 - [[concepts/llm-training-coherence-evolution]] — How an LLM's coherence and usefulness improve as training progresses, with empirical analysis from Giles Thomas's "Writing an LLM from Scratch" series.
 - [[concepts/local-first-software]] — ユーザーのデバイスをデータの**第一権威コピー（primary authoritative copy）**とし、サーバーは同期・バックアップ・発見支援に限定するソフトウェア設計思想。
 - [[concepts/local-llm]] — > **This page has been migrated.** The Local LLM content has been reorganized into a directory structure.
@@ -646,6 +670,7 @@
 |- [[concepts/neurosymbolic-ai]]
 - [[concepts/newsjacking-framework]] — **Origin:** Elvis Sun (@elvissun), January 2026
 - [[concepts/nvidia-dynamo]] — NVIDIA Dynamo is an inference architecture and platform designed specifically for agentic coding workloads, addressing the limitations of traditional inference stacks when handling multi-step agent...
+- [[concepts/prompt-design]] — プロンプト設計の原則と指示書作成パターン
 - [[concepts/s3-first-architecture]] — Data persistence pattern where S3 is the primary source of truth; databases used for indexing only. 11 nines durability, free versioning, human-readable files. Pioneered by Fintool.
 - [[concepts/nvidia-egpu-macos]] — Research into running NVIDIA GPUs as external GPUs (eGPUs) on Apple Silicon Macs via Thunderbolt/USB4, enabled by tinygrad's custom NVIDIA driver (DEXT).
 - [[concepts/offline-evaluation]] — Offline Evaluationは、本番環境にデプロイする前にLLMアプリケーションを体系的に評価するパイプライン。オフラインテスト、人間判定、プロダクションテレメトリの3層で構成。
