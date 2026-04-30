@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 681 | Full entries: 652 | Stubs: 619
+> Last updated: 2026-04-30 | Total pages: 683 | Full entries: 653 | Stubs: 620
 
 ## Entities (331 pages)
 
@@ -29,6 +29,7 @@
 - [[entities/arize]] — > TODO: Research company blog, product documentation, and technical depth to build L3 page.
 - [[entities/arlan-r]] — **Name** | Arlan Rakhmetzhanov |
 - [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko, born 10 May 1989, Austria) is a software engineer, open-source developer, and entrepreneur who has profoundly shaped the Python ecosystem and is now building the next ge...
+- [[entities/avi-im]] — **Blog** | avi.im | Creator of **KVM**, author of [[concepts/zero-disk-architecture]]
 - [[entities/ashpreet-bedi]] — **Name** | Ashpreet Bedi |
 - [[entities/beej-us]] — **URL:** https://beej.us
 - [[entities/benjamin-clavie]] — **X** | @bclavie |
@@ -349,15 +350,16 @@
 - [[entities/ryan-lopopolo--core-ideas]] — Ryan Lopopolo (@_lopopolo) core ideas on AI engineering
 - [[entities/ryan-lopopolo--timeline]] — Ryan Lopopolo career timeline
 - [[entities/ryan-lopopolo--writings]] — Ryan Lopopolo writings and blog posts
-## Concepts (368 pages)
+## Concepts (377 pages)
 
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
 - [[concepts/agent-economics]] — The cost structures, token consumption patterns (1000x multiplier), and economic implications of deploying autonomous AI agents at scale across L1-L5 autonomy levels.
 - [[concepts/agent-governance]] — Agent governance is the structured approach enterprises use to define how autonomous AI systems operate, what they can access, and how their actions are monitored. It encompasses policy, identity, ...
 - [[concepts/agent-harness-primitives]] — A harness is every piece of code, configuration, and execution logic that wraps a raw model to turn it into a work engine. Agent = Model + Harness. The bottleneck has shifted from **model capabilit...
 - [[concepts/agent-harness]] — An agent harness is the infrastructure layer that sits between an LLM API and the agent's execution environment. It manages tool routing, context management, session lifecycle, and error recovery. ...
-- [[concepts/agent-harnesses]] — > **Core Thesis:** The less you build in your agent framework, the more it works. All the value is in the RL'd model, not your 10,000 lines of abstractions.
-|- [[concepts/agent-identity-verification]] — Multi-agent systems spanning organizational boundaries require verifiable agent identity. The A2A (Agent-to-Agent) Protocol v1.0 addresses this with **Signed Agent Cards** — cryptographic identity ...
+|- [[concepts/agent-harnesses]] — > **Core Thesis:** The less you build in your agent framework, the more it works. All the value is in the RL'd model, not your 10,000 lines of abstractions.
+|- [[concepts/agent-iam]] — Agent IAM (Identity & Access Management) for non-human identities (NHI). Security and authorization framework for AI agents operating across organizational boundaries.
+||- [[concepts/agent-identity-verification]]
 |- [[concepts/agent-loop-orchestration]] — **Agent Loop Orchestration** is the execution loop architecture where LLM agents autonomously propose actions, a platform executes them, and results feed back into the model. The loop consists of: Think → Act → Perceive → Repeat. Core design decisions include tool availability, human-in-the-loop checkpoints, loop termination conditions, and state persistence across iterations.
 |- [[concepts/agent-orchestration-frameworks]] — Comparative analysis of major AI agent orchestration frameworks as of 2026: LangGraph, CrewAI, AutoGen, Semantic Kernel, Pydantic AI, and OpenAI Agents SDK. Frameworks differ on multi-agent topology (linear DAG vs graph-based vs hierarchical), state management, and human-in-the-loop support.
 |- [[concepts/agent-sandboxing]]
@@ -413,8 +415,9 @@
 - [[concepts/back-of-house-multi-agent-patterns]] — 厨房のメタファーを用いたマルチエージェント・ワークフローパターン。Sarah Chieng (concepts/@milksandmatcha) と [@0xSero] によって2026年4月に提唱。
 - [[concepts/back-of-house-patterns]] — > 共著: milksandmatcha|Sarah Chieng (@MilksandMatcha) + sero|Sero (@0xSero)
 - [[concepts/base-consistency]] — BASE is an alternative consistency model to ACID, designed for distributed systems that prioritize availability over strict consistency. It stands for:
-- [[concepts/behavioral-trait-transmission]] — Language models that share initialization can transmit behavioural traits through training data that is semantically unrelated to those traits — a phenomenon discovered by Anthropic and academic re...
-- [[concepts/building-effective-agents]] — Moved to concepts/harness-engineering/system-architecture/building-effective-agents.md
+|- [[concepts/behavioral-trait-transmission]] — Language models that share initialization can transmit behavioural traits through training data that is semantically unrelated to those traits — a phenomenon discovered by Anthropic and academic re...
+|- [[concepts/bitter-lesson-harnessing]] — As model capabilities improve through scaling, the role of the harness shifts from implementing logic to orchestrating model behavior. The harness becomes thinner while the model carries more intelligence.
+|- [[concepts/building-effective-agents]]
 - [[concepts/caid-coordination]] — A coordination framework from CMU (2026) for running multiple coding agents in parallel on complex software engineering tasks. Uses git operations as the core coordination primitive.
 - [[concepts/causal-backbone-conjecture]] — **Author:** tailcalled (LessWrong)
 - [[concepts/chaos-engineering]] — Chaos Engineering is the discipline of experimenting on a system to build confidence in its ability to withstand turbulent conditions in production. For microservices, this means intentionally inje...
@@ -445,8 +448,9 @@
 - [[concepts/cognitive-cost-of-agents]] — **Date:** April 3, 2026
 - [[concepts/cognitive-load-software-development]] — Artem Zakirullinの **"Cognitive load is what matters"** — GitHubで12,000+スターを獲得したソフトウェア設計における認知負荷の体系的フレームワーク。
 - [[concepts/compute-scaling-bottlenecks]] — **Date:** April 10, 2026
-- [[concepts/context-compression]] — Methods for reducing the size of context windows while preserving task-relevant information. Critical prerequisite for concepts/context-engineering — addresses the fundamental constraint that LLMs ...
-- [[concepts/context-engineering]] — Context EngineeringはHarness Engineeringの横断技術コンポーネント。harness-engineering配下に移動。
+|- [[concepts/context-compression]] — Methods for reducing the size of context windows while preserving task-relevant information. Critical prerequisite for concepts/context-engineering — addresses the fundamental constraint that LLMs ...
+|- [[concepts/context-efficiency]] — Context Efficiency measures the ratio of task-relevant tokens to total tokens injected into an AI coding agent's context window. Trae's "no context limit" marketing obscures the real bottleneck: how efficiently context is used, not how much exists.
+|- [[concepts/context-engineering]]
 - [[concepts/context-fragments]] — Vivek Trivedy (@vtrivedy10) が2026年4月に提唱した概念。コンテキストウィンドウを「harnessが選択的にロードするオブジェクトの集合」として捉えるフレームワーク。
 - [[concepts/context-graph]] — > "A **context graph** is a living record of decision traces stitched across entities and time—not 'the model's chain-of-thought,' but a living record of decision traces stitched across entities an...
 - [[concepts/context-routing]] — > クエリを分類し、コンテキストウィンドウに取り込む前に、適切なコンテキストソースへ振り分けるパターン。
@@ -455,8 +459,9 @@
 - [[concepts/critique-shadowing]] — A 7-step iterative methodology for building aligned LLM-as-Judge evaluators, coined by **Hamel Husain**. The core insight: the process of building an LLM judge forces domain experts to carefully ex...
 - [[concepts/cryptography-patterns]] — > A deep-dive into how Bitwarden (and its open-source clone Vaultwarden) encrypts and decrypts secrets. Based on Miguel Grinberg's reverse-engineering of the Bitwarden client and server code.
 - [[concepts/cybersecurity-proof-of-work]] — A concept coined by Drew Breunig in April 2026, observing that as LLMs like **Claude Mythos** become increasingly effective at finding security vulnerabilities, cybersecurity transforms into an eco...
-- [[concepts/dark-factory-software-factory]] — **Source:** Simon Willison's Weblog (2026-01-28, 2026-02-07)
-- [[concepts/death-of-browser]] — > "The browser is not going to disappear overnight, but its dominance as the primary interface for the internet is ending."
+|- [[concepts/dark-factory-software-factory]] — **Source:** Simon Willison's Weblog (2026-01-28, 2026-02-07)
+|- [[concepts/db9-fs-sql-pattern]] — Filesystem + SQL integration pattern for AI agents. Instead of separating artifacts (files) and metadata (tables), db9 uses PostgreSQL as a unified data layer where agents manage both through SQL.
+|- [[concepts/death-of-browser]]
 - [[concepts/decoder-only-gpt]] — The **decoder-only GPT** (Generative Pre-trained Transformer) is the dominant architecture behind modern large language models (ChatGPT, Claude, Gemini, etc.). Andrej Karpathy's **microgpt** projec...
 - [[concepts/deep-agents-runtime]] — Production runtime primitives for deep AI agents — durable execution, memory, multi-tenancy, HITL, guardrails, observability, sandbox, and cron.
 - [[concepts/deep-agents]] — Deep agents are autonomous AI agents that combine multiple architectural patterns to handle complex, multi-step tasks with minimal human intervention. They feature:
@@ -492,7 +497,8 @@
 |- [[concepts/gapa]] — Redirect page. GAPA refers to GEPA (Genetic-Pareto Prompt Evolution), a DSPy-integrated genetic algorithm for prompt optimization. See [[concepts/gepa]] for full content.
 |- [[concepts/gemini]] — **Gemini** is Google DeepMind's family of multimodal AI models, spanning text, images, video, audio, and code. Originally announced in December 2023, Gemini has evolved through multiple generations...
 - [[concepts/generic-agent-self-evolving]] — **GenericAgent (GA)** is a self-evolving LLM agent system from Fudan University (arXiv:2604.17091, April 2026) built around **contextual information density maximization** — the principle that long...
-- [[concepts/gepa]] — GEPAはDSPyに統合された遺伝的アルゴリズムベースのプロンプト最適化手法。Pareto最適化により品質とコストを同時に最適化し、GRPOより35倍少ないサンプルで6%高い性能を達成。ICLR 2026 Oral。
+|- [[concepts/generative-app-evolution]] — The evolution trajectory of AI applications from generative UI (stateless, single-turn) to generative apps (stateful, multi-turn with persistence). Maps the "generative staircase" and the FCIS (Functional Core / Imperative Shell) pattern for AI-era architecture.
+|- [[concepts/gepa]] — GEPAはDSPyに統合された遺伝的アルゴリズムベースのプロンプト最適化手法。Pareto最適化により品質とコストを同時に最適化し、GRPOより35倍少ないサンプルで6%高い性能を達成。ICLR 2026 Oral。
 - [[concepts/github-copilot-billing]] — In April 2026, Microsoft announced a major shift in GitHub Copilot's pricing model from **requests-based billing** to **token-based billing**, alongside tightening rate limits across all tiers. Thi...
 - [[concepts/gnu-ai-reimplementations]] — **GNU AI Reimplementations** refers to the concept — articulated primarily by Salvatore Sanfilippo (antirez), creator of Redis — that AI coding agents are enabling a new wave of clean-room software...
 - [[concepts/gold-diff-distillation]] — コーディング製品企業が開発した新しいRLトレーニング手法。ユーザーの最終的な「望ましい状態」をRLターゲットとして利用する。
@@ -614,8 +620,9 @@
 - [[concepts/open-model-consortium]] — The **Open Model Consortium** is a proposed organizational structure for funding and developing frontier-level open-weight AI models through shared investment from multiple companies, rather than r...
 - [[concepts/open-source-ai-destruction]] — **Open Source AI Destruction** describes the emerging crisis where AI coding agents overwhelm open source maintainers with low-quality pull requests, hallucinated bug reports, and spam submissions ...
 - [[concepts/open-source-ai]] — The strategic use of open-source AI models and frameworks to achieve rapid iteration, widespread adoption, and industrial dominance through community-driven feedback loops.
-- [[concepts/openai-agents-sdk]] — **Package** | `openai-agents>=0.14.0` |
-- [[concepts/openai-codex-superapp]] — The OpenAI Codex interface becoming the primary ChatGPT experience — a "superapp" positioning for the AI coding agent.
+|- [[concepts/openai-agents-sdk]] — **Package** | `openai-agents>=0.14.0` |
+|- [[concepts/openai-astral-acquisition]] — OpenAI's March 2026 acquisition of Astral (uv, Ruff, ty) signals a strategic move to own the Python development toolchain. By integrating Codex with the full lifecycle (dependency management, linting, type checking), OpenAI positions agents as autonomous Python developers.
+|- [[concepts/openai-codex-superapp]]
 - [[concepts/openai-symphony]] — OpenAI Symphonyは、プロジェクトの作業を独立した自律的な実行ランに変換し、チームがコーディングAgentを「監視」するのではなく「作業を管理」できるようにするオーケストレーター。Linearをコントロールプレーンとして使用し、500%のPR増加を達成。
 |- [[concepts/openai-workspace-agents]] — **OpenAI Workspace Agents** are Codex-powered shared AI agents designed for OpenAI's Business and Enterprise plans. Launched in April 2026 alongside GPT-5.5 and ChatGPT Images 2.0, they represent O...
 |- [[concepts/openclaw-ecosystem]] — The **OpenClaw Ecosystem** is a suite of MCP-first developer tools by Peter Steinberger. Core components: ClawDBot (SQLite/MCP CLI), MoltBot (CLI translation), WebSrv (edge web server with MCP auth), Skript (macOS automation), and Dispatcher (iOS background task manager). Built around OpenClaw's primitives-over-defaults philosophy.
@@ -631,14 +638,16 @@
 - [[concepts/process-reward-models-agent-eval]] — **Process Reward Models (PRMs)** evaluate individual reasoning steps or agent actions rather than just final outcomes. This is a fundamentally different evaluation paradigm from outcome-based evalu...
 - [[concepts/project-glasswing]] — Anthropic's initiative to use claude-mythos for defensive security research — finding and patching vulnerabilities in critical software.
 - [[concepts/prompt-caching]] — LLM API呼び出しにおけるキャッシングの設計パターン。コスト削減とレイテンシ改善のために、どの部分をキャッシュし、いつ無効化するかを体系的に扱う。
-- [[concepts/pydantic-ai]] — Pydantic AI is an open-source Python agent framework built by the Pydantic team. It brings the "FastAPI feeling" to GenAI development: validated outputs, dependency injection, structured tool contr...
-- [[concepts/pydantic-serializability]] — Pydantic's serializability system provides structured output for AI models. Key innovations include:
+|- [[concepts/pydantic-ai]] — Pydantic AI is an open-source Python agent framework built by the Pydantic team. It brings the "FastAPI feeling" to GenAI development: validated outputs, dependency injection, structured tool contr...
+|- [[concepts/pydantic-ai-harness]] — Pydantic AI as an agent harness — dependency injection, tool validation, structured outputs, and the Monty sandbox for safe code execution. Bridges the gap between web frameworks (FastAPI) and agent frameworks.
+|- [[concepts/pydantic-serializability]]
 - [[concepts/pydantic]] — Pydantic is a Python data validation library that uses type hints to validate, serialize, and document data. It has become the de facto standard for data validation in the Python ecosystem, with 27...
 - [[concepts/qwen3-6-27b]] — A dense 27B parameter model from the Qwen (OpenQwen) series that outperforms the predecessor 397B MoE model on agentic coding benchmarks.
 - [[concepts/rag-systems]] — > **RAG = Search + Reasoning** — Search brings facts, reasoning provides coherence.
 - [[concepts/ram-relative-adoption-metric]] — The **Relative Adoption Metric (RAM)** is a time-varying, size-normalized metric developed by Nathan Lambert and Florian to evaluate whether a new language model is on track to be ecosystem-definin...
-- [[concepts/reasoning-model-cost-transparency]] — A 2026 study revealing that listed API prices for reasoning language models are systematically misleading, with actual costs differing dramatically from advertised rates.
-- [[concepts/reasoning-models]] — LLM architectures designed for explicit step-by-step reasoning, including chain-of-thought, process supervision, and test-time compute scaling.
+|- [[concepts/reasoning-model-cost-transparency]] — A 2026 study revealing that listed API prices for reasoning language models are systematically misleading, with actual costs differing dramatically from advertised rates.
+|- [[concepts/reasoning-compression]] — The phenomenon where test-time scaling (CoT, search, agentic loops) gets compressed into model weights through training. Explicit reasoning steps become implicit model capabilities over successive generations.
+|- [[concepts/reasoning-models]]
 - [[concepts/recursive-language-models]] — RLM is an inference paradigm where language models recursively decompose and interact with arbitrarily long input context through external environments (e.g., REPL), rather than processing all toke...
 - [[concepts/red-green-tdd]] — Moved to concepts/harness-engineering/agentic-workflows/red-green-tdd.md
 |- [[concepts/red-teaming-adversarial-eval]] — Systematic probing of agent safety postures — measuring **Attack Success Rates (ASR)**, resistance to multi-turn manipulation, and vulnerabilities to indirect prompt injection. Goes beyond basic re...
@@ -675,8 +684,9 @@
 - [[concepts/thin-bi]] — > **Core Thesis:** Modern BI tools are "becoming thin" as cloud data warehouses take over data ingestion and transformation roles.
 - [[concepts/token-economics]] — LLM inference cost analysis, optimization layers, and the economics of running language models at scale. A prerequisite concept for concepts/context-engineering.
 - [[concepts/tokenmaxxing]] — Post-AIE Miami (April 2026), AI leadership has shifted toward **"Tasteful Tokenmaxxing"** — maximizing AI adoption and ROI while avoiding wasteful, low-quality output cycles. The concept represents...
-- [[concepts/turboquant]] — Google Research's vector quantization method for extreme LLM KV cache compression with near-optimal theoretical guarantees.
-- [[concepts/ungrounded-meaning]] — Analysis of whether language meaning can be learned from textual form alone, based on Shunyu Yao's commentary on Merrill et al.'s Provable Limitations of Acquiring Meaning from Ungrounded Form.
+|- [[concepts/turboquant]] — Google Research's vector quantization method for extreme LLM KV cache compression with near-optimal theoretical guarantees.
+|- [[concepts/turbopuffer-rank-by-attribute]] — TurboPuffer's `rank_by` attribute-based filtering combines vector similarity search with structured metadata filtering in a single operation. Eliminates the need for separate filtering steps or hybrid search approaches.
+|- [[concepts/ungrounded-meaning]]
 - [[concepts/vajra-background-agent]] — Vajra is an open-source **background coding agent** that autonomously handles issue planning, implementation, review, and PR creation. Inspired by real-world validation from major tech companies (C...
 - [[concepts/vector-db-agent-memory]] — Vector databases are the dominant infrastructure for AI agent **long-term memory (LTM)** and **semantic memory**, enabling agents to persist and retrieve information across sessions via dense embed...
 - [[concepts/vibe-ceo]] — A management model where a solo founder (the "Vibe CEO") orchestrates AI agents rather than human employees. The CEO sets high-level strategic direction and cultural tone ("vibes"), while specializ...
@@ -684,6 +694,7 @@
 - [[concepts/web-as-filesystem]] — Webの全ドキュメントをUnixファイルシステムとしてマウントする抽象化。エージェントにtree/grep/cat/findを自然に使い、コード幻覚を解消。
 - [[concepts/world-id-4-agentkit]] — **World ID 4.0** is Sam Altman's "full-stack proof of human" identity infrastructure, unveiled in April 2026. It uses iris scanning (the **Orb**) to verify human identity cryptographically. **Agent...
 - [[concepts/world-models-science]] — Using world models and agent loops to automate scientific research and discovery.
+- [[concepts/zero-disk-architecture]] — Database design paradigm where all persistent state is offloaded to managed object storage (S3), achieving infinite scalability and serverless elasticity. By Avi Kivity (avi.im).
 - [[concepts/zero-trust-agentic-ai]] — Zero Trust security model applied to AI agents: assume no request is safe by default, verify every action, and enforce least privilege. **The LLM should not be the one making security decisions.**
 - [[entities/agreement-bug]] — NYK Builderz (@nyk_builderz) が2026年3月に公開した、**Claude Codeサブエージェントの「構造化された不一致」フレームワーク**。
 - [[entities/autoreason]] — SHL0MS（@SHL0MS）とHermes Agent（NousResearch）が共同開発した、**主観的ドメインにおける自己改善（self-refinement）の自動化手法**。KarpathyのAutoResearchを主観的評価分野へ拡張した。

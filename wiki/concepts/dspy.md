@@ -98,6 +98,18 @@ Despite the argument for DSPy, adoption faces genuine obstacles:
 
 DSPy is genuinely valuable for teams with stable, well-defined tasks requiring systematic prompt optimization at scale, but its positioning as a universal antidote to LLM engineering pain is undercut by the labeled data requirement and the availability of lighter-weight alternatives for simpler use cases.
 
+## RLM Bundled in DSPy v3.1.3: Multi-layered Sandboxing
+
+DSPy v3.1.3 bundles RLM (Recursive Language Models) with a notable **multi-layered sandboxing architecture**: `rlm on pyodide on deno`. This creates a defense-in-depth execution model where:
+
+- **Deno** provides the outer runtime with capability-based permissions (filesystem, network access control)
+- **Pyodide** (Python compiled to WebAssembly) provides the inner sandbox, with a 128MB memory ceiling — variables exceeding this are passed via JSON-RPC through a virtual filesystem (`inject_var` method)
+- **RLM** runs atop this stack, using the sandboxed Python REPL to interact with its own prompt as data
+
+This pattern originates from Simon Willison's [Pyodide sandboxing on Deno](https://til.simonwillison.net/deno/pyodide-sandbox), which demonstrated that combining Deno's permission model with Pyodide's WASM isolation creates a practical sandbox for untrusted LLM-generated code. DSPy's adoption of this architecture signals that **secure code execution is becoming a first-class concern for agentic frameworks**, not an afterthought.
+
+The Pyodide 128MB FFI crash ceiling is a known limitation — large data payloads require JSON-RPC virtual filesystem transfer rather than direct memory sharing. This is an acceptable tradeoff for security, but worth monitoring as RLM usage scales.
+
 ## Application Guidelines
 
 **Use DSPy when:**

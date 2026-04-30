@@ -1,3 +1,9 @@
+## [2026-04-30] Zero Disk Architecture — Avi Kivity's database design paradigm
+
+- Created [[concepts/zero-disk-architecture]]: Database design paradigm where all persistent state is offloaded to managed object storage (S3), achieving infinite scalability and serverless elasticity. Covers the LCD Model trade-off (Latency/Cost/Durability), enabling technologies (LSM Trees, Conditional Writes, S3 Express One Zone), and industry adoption (Snowflake, Neon, SlateDB, WarpStream).
+- Created [[entities/avi-im]]: Avi Kivity — creator of KVM, QEMU contributor, systems infrastructure blogger. Key ideas: Zero Disk Architecture, S3 as "malloc of the web."
+- Raw article: raw/articles/2024_avi-im_zero-disk-architecture.md
+
 ## [2026-04-30] Agent Sandbox Architecture — Browser Use production patterns
 
 - Created [[concepts/agent-sandboxing-patterns]]: Browser Use's production agent sandboxing architecture (millions of concurrent web agents). Two patterns: isolate the tool vs. isolate the agent with control plane architecture and zero-secret sandboxes using Unikraft micro-VMs.
