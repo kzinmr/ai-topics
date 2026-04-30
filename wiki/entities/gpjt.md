@@ -2,7 +2,7 @@
 title: "Giles Thomas (gpjt)"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-29
+updated: 2026-04-30
 type: entity
 ---
 
@@ -91,6 +91,18 @@ The series systematically tested and combined:
 4. **Dropout removal** — reduces noise in final training phase
 5. **QKV bias** — attention mechanism refinement (excluded from final stack due to negative impact)
 
+### Part 33: What I Learned from the Appendices (April 2026)
+
+After finishing the main body of the LLM from scratch series, Giles read through the appendices of Sebastian Raschka's "Build a Large Language Model (from Scratch)" book. Key reflections:
+
+- **Appendix A (PyTorch)**: Excellent overview but math details too brief; inspired Giles to write his own slower, more detailed explanation
+- **DDP Walkthrough**: Would have saved time if read earlier, but learning by doing led to deeper understanding
+- **Appendix D (Bells & Whistles)**: Covers gradient clipping and LR scheduling — already learned through side quests
+- **Appendix E (LoRA)**: Raschka shows raw LoRA implementation code (not just PEFT/Unsloth); inspired Giles to write his own LoRA guide
+- **Conclusion**: Book completed! Next goal: build a GPT-2 style model in **JAX** (winning framework from Twitter poll)
+
+> **Meta-Insight**: "If I read explanations, I learn faster, but the knowledge is shallower. Learning by doing is slower but deeper. Working out a good balance is hard."
+
 ### Key Themes
 
 - **Practical Deep Learning**: Focus on what works in real training scenarios, not just theory
@@ -123,3 +135,4 @@ This approach makes his series valuable for both learning deep learning fundamen
 
 - [Giles' Blog](https://www.gilesthomas.com/)
 - [Writing an LLM from scratch, part 32k](https://www.gilesthomas.com/2026/04/llm-from-scratch-32k-interventions-training-our-best-model-locally-gradient-accumulation)
+- [Writing an LLM from scratch, part 33](https://www.gilesthomas.com/2026/04/llm-from-scratch-33-what-i-learned-from-the-appendices)

@@ -2,7 +2,7 @@
 title: "GitHub Copilot Token-Based Billing"
 tags: [github-copilot]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-30
 type: concept
 ---
 
@@ -30,7 +30,7 @@ Different models now consume requests at different rates:
 |-------|---------------------------|--------|
 | GPT-5.4 Mini | 0.33x | Most efficient |
 | Claude Opus 4.6 | 3x | Significantly more expensive |
-| **Claude Opus 4.7** | **7.5x** | Most expensive, ~250% more than Opus 4.6 |
+| **Claude Opus 4.7** | **7.5x** | Most expensive, ~250% more expensive than Opus 4.6. **Promotional pricing** — 7.5x multiplier only guaranteed until April 30, 2026; expected to increase after that date. |
 
 ### Rate Limits
 

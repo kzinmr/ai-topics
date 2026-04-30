@@ -479,3 +479,12 @@ Processed two articles from timsh.org covering Claude Code in Docker isolation a
 - [[concepts/code-intelligence-for-llms]] — New concept page: providing LLMs with structured, pre-computed code analysis data via MCP/REST APIs. Replaces 'clone + cat' pattern. Canonical implementation: searchcode.com. Cuts token usage 99%.
 - [[concepts/business-to-agent]] — New concept page: B2A paradigm where the primary user of a service is an AI agent/LLM. Coined by Ben Boyter. Services optimize for Context ROI (token efficiency). Contrasts with B2C model: MCP/API over UI, LLM testimonials over human testimonials.
 - Raw article: raw/articles/2026-04-30-searchcode-com-code-intelligence-llms.md
+
+---
+
+## [2026-04-30] Dreaming Consolidation
+
+- Updated [[entities/gpjt]] — Added Part 33 (Appendices reflection) with JAX follow-up milestone. Bumped updated date.
+- Updated [[concepts/github-copilot-billing]] — Added Opus 4.7 multiplier promotional period note (ends April 30). Bumped updated date.
+- Themes screened: 8 (3 scored ≥0.65, 3 scored 0.45-0.65, 2 skipped)
+- 4 themes already well-covered by existing wiki pages; 2 minor updates applied
