@@ -107,6 +107,34 @@ Husain's estimate that the majority of LLM development time should be spent on e
 
 This concept was popularized by [[entities/hamel-husain|Hamel Husain]], contrasts with vibe-based engineering, extends the broader [[concepts/ai-evals]] framework, and is taught through methods like [[concepts/critique-shadowing]].
 
+
+
+## The Harness > Model Principle (2026 Consensus)
+
+By April 2026, production agent teams have converged on a clear hierarchy: **the harness is doing more work than the model in any production agent worth its compute bill.**
+
+- The model picks the next action
+- The harness validates it, runs it in a sandbox, captures the output, decides what to feed back, decides when to stop, decides when to checkpoint, decides when to spawn a subagent
+- Swap the model for a different one of similar quality and a good harness still ships
+- Swap the harness for a worse one and the best model in the world still produces an agent that randomly forgets what it was doing
+
+This is operationalized through the **file-system-as-state** pattern: think → act → observe → repeat. The model is stateless; the harness must be stateful. Every action is logged and replayable. Claude Code, Cursor, Devin, Aider, OpenHands, and goose have all converged on this architecture.
+
+Key implication for resource allocation: if you're building anything more elaborate than a single-shot tool call, **the harness is where you should be spending your time. The model is a component inside it.**
+
+## Harness Components in Production (2026 Stack)
+
+| Component | Production Default | Purpose |
+|-----------|-------------------|---------|
+| Orchestration | LangGraph | Typed state, conditional edges, durable workflows |
+| Protocol | MCP | Clean separation of capabilities/tools/resources |
+| Tracing | Langfuse / LangSmith | "What did the agent actually do?" |
+| Evals | Langfuse evals / Braintrust | "Is the agent better or worse than yesterday?" |
+| Sandbox | E2B / Browserbase / Modal | Blast radius containment |
+| State | File system / Postgres | Think-act-observe loop persistence |
+
+**Source**: 2026 Agent Engineering Guide (published April 2026), Claude Code engineering team postmortems.
+
 ## Related Concepts
 
 - [[concepts/ai-evals]] — The broader evaluation framework that harness engineering operationalizes.

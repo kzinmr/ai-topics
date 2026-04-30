@@ -621,3 +621,24 @@ Processed two articles from timsh.org covering Claude Code in Docker isolation a
 - Saved raw article: `raw/articles/2026-04-30_hamel-husain-rag-p6-context-rot.md`
 - Sources: https://hamel.dev/notes/llm/rag/p6-context_rot.html
 - Updated index files: wiki/index.md, wiki/log.md.
+## [2026-04-30] bookmark batch: Agent Engineering Guide 2026 + caching/memory/harness updates
+
+- **New concept page**: [[concepts/agent-engineering-guide-2026]] — Comprehensive 30K-char guide: what to learn (context engineering, tool design, orchestrator-subagent, evals, harness, MCP, sandboxing), what to build with (LangGraph, MCP, Langfuse, E2B), what to skip (AutoGen, CrewAI, DSPy, autonomous agents, SWE-bench chasing, per-seat SaaS)
+- **Updated**: [[concepts/prompt-caching]] — Claude Code production caching lessons: static-first layout, cache-safe plan mode, deferred tool loading, cache-safe compaction, monitor hit rate like uptime
+- **Updated**: [[concepts/harness-engineering]] — Harness > Model principle, file-system-as-state pattern, production harness components stack (2026)
+- **Updated**: [[concepts/ai-agent-memory]] — Mercury analysis: human vs. agent memory distinction, hybrid Markdown+structured architecture, five principles of serious agent memory
+- **Updated**: [[entities/claude-code]] — Prompt caching architecture section, April 2026 regression postmortem reference
+- **Saved**: 15 raw articles (8 X native articles + 1 Reddit + 6 tweet captures)
+  - `raw/articles/2026-04-30_x--what-to-learn-build-skip-ai-agents.md` (30K chars)
+  - `raw/articles/2026-04-30_x--lessons-claude-code-prompt-caching.md` (7.5K)
+  - `raw/articles/2026-04-30_x--karpathy-second-brain-mercury.md` (6.3K)
+  - `raw/articles/2026-04-30_x--your-agent-has-a-filesystem.md` (4.5K)
+  - `raw/articles/2026-04-30_x--tuning-deep-agents-different-models.md` (4.0K)
+  - `raw/articles/2026-04-30_x--prompt-auto-caching-claude.md` (3.5K)
+  - `raw/articles/2026-04-30_x--naval-apple-dead-saas-next.md` (12.8K)
+  - `raw/articles/2026-04-30_x--semantic-layer-2026.md` (6.5K)
+  - `raw/articles/2026-04-30_reddit--pi-coding-agent-qwen-local.md` (3.5K)
+  - + 6 tweet captures (HALO, SID-1, Dwarkesh lecture, local AI, shifting structures, Sequoia fireside chat)
+- **Scored 16 bookmarks** against Karpathy's filter: 7 Tier 1 (3x compound topics), 5 Tier 2, 4 Tier 3
+- **Karpathy filter alignment**: 5 bookmarks on context engineering (compound), 2 on tool design (compound), 1 on orchestrator-subagent (compound), 1 on eval discipline (compound)
+

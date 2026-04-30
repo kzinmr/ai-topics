@@ -100,3 +100,51 @@ cache_key = hash(
 - [[concepts/context-window-management]] — Context Window Management
 - [[concepts/inference-speed-development]] — Inference Speed Development
 - [[concepts/agentic-scaffolding]] — Agentic Scaffolding
+
+## Claude Code Production Caching Lessons (Anthropic, 2026)
+
+Claude Code builds its entire harness around prompt caching. A high cache hit rate decreases costs and enables generous rate limits — they run alerts on cache hit rate and declare SEVs if it's too low. Key production lessons:
+
+### Static First, Dynamic Last — Order Is Everything
+
+Prompt caching works by prefix matching — the API caches everything from the start of the request up to each `cache_control` breakpoint. For Claude Code:
+
+```
+Static system prompt & Tools (globally cached)
+→ Claude.MD (cached within a project)
+→ Session context (cached within a session)
+→ Conversation messages (dynamic)
+```
+
+**Fragility alert**: This ordering can break from: putting a timestamp in the static system prompt, shuffling tool order non-deterministically, updating tool parameter definitions, etc.
+
+### Use Messages for Updates, Not Prompt Changes
+
+When information becomes stale (time changes, user edits a file), do NOT update the prompt — that causes a cache miss. Instead, insert `<system-reminder>` tags in the next user message or tool result (e.g., "it is now Wednesday"). This preserves the cache.
+
+### Never Change Models Mid-Session
+
+Prompt caches are unique to models. If you're 100K tokens into a conversation with Opus and want a simple question answered, switching to Haiku is **more expensive** because the cache must be rebuilt. If you need model switching, use subagents with handoff messages.
+
+### Never Add or Remove Tools Mid-Session
+
+Changing the tool set invalidates the cache for the entire conversation — one of the most common cache-breaking mistakes.
+
+### Plan Mode — Design Around the Cache
+
+Instead of swapping tool sets when entering plan mode (which breaks cache), Claude Code keeps ALL tools in the request at all times and uses `EnterPlanMode`/`ExitPlanMode` as tools themselves. The model can autonomously enter plan mode when it detects a hard problem — no cache break.
+
+### Tool Search — Defer Instead of Remove
+
+For dozens of MCP tools: send lightweight stubs (`defer_loading: true`) that stay in the prefix. The model discovers full schemas via a `ToolSearch` tool when needed. Same stubs, same order → stable cache.
+
+### Cache-Safe Forking (Compaction)
+
+When compacting the context window, use the **exact same system prompt, tools, and history** as the parent conversation. Append the compaction prompt as a new user message at the end. From the API's perspective, this looks nearly identical to the parent's last request — cached prefix is reused. The only new tokens are the compaction prompt itself.
+
+### Monitor Cache Hit Rate Like Uptime
+
+Claude Code treats cache breaks as incidents. A few percentage points of cache miss rate can dramatically affect cost and latency. **Build your agent around prompt caching from day one.**
+
+Source: [[entities/claude-code]] engineering team, "Lessons from Building Claude Code: Prompt Caching Is Everything" (April 2026)
+

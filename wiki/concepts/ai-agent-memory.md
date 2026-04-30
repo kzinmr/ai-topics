@@ -56,3 +56,33 @@ AI agent memory is the mechanism by which autonomous AI systems persist and reca
 - [Letta: Memory for AI Agents](https://www.letta.com/blog/agent-memory)
 - [LLM Agent Memory Systems | Coding Confessions](https://blog.codingconfessions.com/p/llm-agent-memory)
 - [Anthropic Memory Tool Documentation](https://docs.anthropic.com/en/docs/build-with-claude/memory)
+
+## Human Memory vs. Agent Memory (Mercury Analysis, April 2026)
+
+The Mercury project (MIT-licensed, mercury.cosmicstack.org) articulates why Karpathy's LLM Wiki pattern—compelling for humans—breaks down at agent scale:
+
+| Dimension | Human Second Brain | Agent Memory System |
+|-----------|-------------------|---------------------|
+| **Optimizes for** | Readability, browsing, reflection, manual correction | Fast retrieval, persistent state, low token cost, repeated automated use |
+| **Access pattern** | Read whole pages | Extract single facts (preferred deploy target, current budget, unresolved task) |
+| **Update frequency** | Occasional | After every task, conversation, tool call, decision |
+| **Failure mode** | Staleness | Memory drift: old assumptions ranking equally with fresh information |
+| **Core challenge** | Organization | Ranking: newest, strongest, most relevant, should-be-ignored |
+
+**The Hybrid Architecture** (Mercury's thesis): Not Markdown vs. database — both.
+
+- **Markdown for humans**: Notes, reports, summaries, journals, identity files
+- **Structured memory for agents**: Facts, entities, relationships, preferences, task state, indexes, timestamps, scoring
+- **Markdown as interface. Structured memory as substrate.**
+
+**Five Principles of Serious Agent Memory**:
+1. **Selective Injection** — Only relevant memory enters context. Everything else stays in storage.
+2. **Structured Retrieval** — Agents query latest valid preference, task state, related decisions, relevant prior context — not just read notes and infer.
+3. **Scoring** — Memories need metadata: confidence, freshness, importance, reinforcement. Without scoring, everything competes equally.
+4. **Conflict Resolution** — Newer wins. Higher-confidence wins. Or ask the user. Silent contradiction is failure.
+5. **Decay** — Some memory should weaken, expire, or be archived. An agent that remembers everything equally eventually remembers poorly.
+
+**The Real Shift**: Moving from AI you open occasionally to software that runs continuously, knows your workflows, and acts on your behalf. That requires memory designed for machines: structured, selective, scored, inspectable, token-aware, built to improve without drifting.
+
+**Source**: "Why Karpathy's Second Brain Breaks at Agent Scale. How Mercury Solves It." (April 2026), raw/articles/2026-04-30_x--karpathy-second-brain-mercury.md
+

@@ -141,9 +141,10 @@
 - [[entities/harrison-chase]] — CEO & Co-founder of LangChain. Articulated the "Open Models / Open Runtime / Open Harness" three-layer agent architecture framework. LangChain Deep Agents is the reference implementation of an Open Harness.
 - [[entities/hynek-schlawack]] — **X** | @hynek |
 - [[entities/hyperbo]] — hyperboドメインのAIエージェント記事・コンテンツ
-- [[entities/ian-goodfellow]] — **フルネーム** | Ian Joseph Goodfellow |
-- [[entities/ian-nuttall]] — **URL:** https://ian.is
-- [[entities/ilya-sutskever]] — **Full Name** | Ilya Sutskever (איליה סوتскеבר) |
+|- [[entities/ian-goodfellow]] — **フルネーム** | Ian Joseph Goodfellow |
+|- [[entities/ian-nuttall]] — **URL:** https://ian.is
+|- [[entities/iii-platform]] — Open-source backend engine that collapses distributed infrastructure into three primitives: Function, Trigger, Worker. Core thesis: the agent harness should BE the backend.
+|- [[entities/ilya-sutskever]] — **Full Name** | Ilya Sutskever
 - [[entities/intuit-machine]] — AI agent framework company focused on agentic AI skills design. Published 'Ten Design Principles of Agentic AI Skills Design' — structural insights about how AI systems achieve 10x-100x effectiveness.
 - [[entities/ivan-burazin]] — CEO of Daytona. Coined "Headless SaaS" — SaaS rebuilt with agent-first APIs, no GUI.
 - [[entities/jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of **Bun** — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining...
@@ -384,6 +385,7 @@
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
 ## Concepts (390 pages)
 
+- [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
 - [[concepts/agent-communication-standards]] — ACP, A2A, BeeAIなど、マルチエージェント通信のための標準プロトコル群
