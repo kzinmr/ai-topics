@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-29 | Total pages: 678 | Full entries: 649 | Stubs: 619
+> Last updated: 2026-04-30 | Total pages: 681 | Full entries: 652 | Stubs: 619
 
 ## Entities (331 pages)
 
@@ -156,6 +156,7 @@
 - [[entities/lance-martin]] — **X** | @RLanceMartin |
 - [[entities/late-interaction]] — **URL:** https://www.lateinteraction.com
 - [[entities/lcamtuf]] — **URL:** https://lcamtuf.coredump.cx
+- [[entities/larsen-cundric]] — **X** | @larsencc | **Company** | Browser Use Founding Engineer | Agent sandboxing architecture (Pattern 2: isolate the agent with control plane)
 - [[entities/lester-solbakken]] — **X/Twitter** | @lestersolbakken |
 - [[entities/letta]] — > **Core Thesis:** Memory is the key to self-improving AI. Letta builds open, model-agnostic agent harnesses with persistent memory systems.
 - [[entities/lilian-weng]] — **URL:** https://lilianweng.github.io
@@ -360,7 +361,8 @@
 |- [[concepts/agent-loop-orchestration]] — **Agent Loop Orchestration** is the execution loop architecture where LLM agents autonomously propose actions, a platform executes them, and results feed back into the model. The loop consists of: Think → Act → Perceive → Repeat. Core design decisions include tool availability, human-in-the-loop checkpoints, loop termination conditions, and state persistence across iterations.
 |- [[concepts/agent-orchestration-frameworks]] — Comparative analysis of major AI agent orchestration frameworks as of 2026: LangGraph, CrewAI, AutoGen, Semantic Kernel, Pydantic AI, and OpenAI Agents SDK. Frameworks differ on multi-agent topology (linear DAG vs graph-based vs hierarchical), state management, and human-in-the-loop support.
 |- [[concepts/agent-sandboxing]]
-- [[concepts/agent-survival-benchmark]] — LLMエージェントの生存能力とPvP（プレイヤー対プレイヤー）圧力下での性能を測定するオープンソースベンチマーク。
+|- [[concepts/agent-sandboxing-patterns]] — Browser Use's production agent sandboxing architecture (millions of concurrent web agents). Two patterns: isolate the tool (simpler) vs. isolate the agent (control plane architecture with zero-secret sandboxes, scalable independently). Core philosophy: "your agent should have nothing worth stealing and nothing worth preserving."
+|- [[concepts/agent-survival-benchmark]]
 - [[concepts/agent-team-swarm/managed-devins]] — Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.2.
 - [[concepts/agentic-ai-skills]] — Agentic AI Skills Design is the discipline of writing reusable documents that teach AI systems how to approach entire categories of tasks — not what to do in one specific situation, but the process...
 |- [[concepts/agentic-alternative-to-graphrag]] — A November 2025 paper by Contextual AI (George Halal, Jackie Zhang, Sheshansh Agrawal) proposing that the reference traversal problem in RAG pipelines should be solved via **agentic tool-use** rath...

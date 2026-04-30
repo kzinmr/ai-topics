@@ -1,3 +1,9 @@
+## [2026-04-30] Agent Sandbox Architecture — Browser Use production patterns
+
+- Created [[concepts/agent-sandboxing-patterns]]: Browser Use's production agent sandboxing architecture (millions of concurrent web agents). Two patterns: isolate the tool vs. isolate the agent with control plane architecture and zero-secret sandboxes using Unikraft micro-VMs.
+- Created [[entities/larsen-cundric]]: Browser Use's Founding Engineer, sole infrastructure engineer, authored the sandbox architecture article. Key achievement: migrated to AWS-native infra with 80% cost reduction and 3× latency improvement.
+- Raw article: raw/articles/two-ways-to-sandbox-agents-2026-02-25.md
+
 ## [2026-04-29] Skeleton enrichment cycle — enriched 12 concept pages from skeleton/placeholder status to complete with research content and cross-links
 |- Enriched [[concepts/agent-loop-orchestration]]: Added detailed content on reasoning-action loops, ReAct/plan-execute patterns, observability, and framework implementations
 |- Enriched [[concepts/agent-orchestration-frameworks]]: Added comprehensive comparison of LangChain, AutoGen, CrewAI, Semantic Kernel, and Google ADK
