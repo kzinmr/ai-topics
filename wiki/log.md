@@ -1,3 +1,18 @@
+## [2026-04-30] Harrison Chase's "Open Models / Open Runtime / Open Harness" Framework
+
+- [[entities/harrison-chase]] — New entity page: LangChain CEO who articulated the three-layer agent architecture decomposition
+- [[entities/nvidia-openshell]] — New entity page: NVIDIA OpenShell as the reference implementation of "Open Runtime"
+- [[concepts/agent-architecture-decomposition]] — New concept page: Model/Runtime/Harness framework with detailed runtime→tool-use mapping
+- [[concepts/harness-engineering]] — Updated with Open Models/Runtime/Harness section, runtime determines tool-use pattern table, heterogeneous agents + MCP as universal adapter
+
+**Key architectural insight**: Runtime choice determines the native function-calling interface:
+- **Agent on bash** → CLI tools are the natural function-calling mechanism
+- **Agent on Python REPL** → Python functions are the natural mechanism
+- **Heterogeneous agents** → (Remote) MCP absorbs differences and bundles them, analogous to microservices with an API gateway
+
+- Updated: wiki/index.md (3 new entries), wiki/log.md
+- Sources: [Harrison Chase's X post](https://x.com/hwchase17/status/2034297125417460044), [LangChain Deep Agents](https://blog.langchain.dev/deep-agents/), NVIDIA OpenShell
+
 ## [2026-04-30] Dropbox Dash Relevance Judge with DSPy
 
 - **Source:** [How we optimized Dash's relevance judge with DSPy](https://dropbox.tech/machine-learning/optimizing-dropbox-dash-relevance-judge-with-dspy) — Dropbox Tech Blog, April 2026

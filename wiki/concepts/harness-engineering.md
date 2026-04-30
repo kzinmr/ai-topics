@@ -19,6 +19,7 @@ sources:
   - "http://latent.space/p/harness-eng"
   - "https://github.com/openai/symphony"
   - "raw/articles/2026-04-28_the-harness-is-the-backend.md"
+  - "raw/newsletters/2026-04-30-ainews-the-inference-inflection.md"
 related:
   - "[[concepts/harness-engineering]]"
   - "[[concepts/agentic-engineering]]"
@@ -252,6 +253,31 @@ CREAOプラットフォームの「Self-Healing Agent Harness」パターン（2
 
 参考: [raw/articles/2026-the-self-healing-agent-harness.md](../raw/articles/2026-the-self-healing-agent-harness.md)
 
+## Agentic Harness Evolution (April 2026)
+
+### Agentic Harness Engineering — Terminal-Bench 2 Results
+
+A systematic research approach making harness evolution observable achieved significant improvements:
+- **Terminal-Bench 2** scores improved from **69.7% → 77.0%** in ten iterations
+- Demonstrates that systematic harness iteration (not just model improvement) yields measurable gains
+- Related to [[concepts/agentic-engineering/red-green-tdd]] — harness evolution mirrors TDD cycles
+
+### HALO — Recursively Self-Improving Agents
+
+A technique where agents use **trace analysis to patch their own harness failures**:
+- **AppWorld benchmark** improved from 73.7 → **89.5** through recursive self-improvement
+- Agents analyze execution traces to identify harness bugs and generate fixes autonomously
+- Distinct from [[concepts/halo-loss-attention-sinks]] (a loss function technique for KV cache optimization)
+- Represents a concrete implementation of the Continual Learning for AI Agents framework's **Harness Layer** (see above)
+
+### LangChain Deep Agents — Harness Profiles
+
+LangChain's "Deep Agents" introduced **Harness Profiles** — pre-configured agent harness configurations optimized for specific use cases, building on the Open Models / Open Runtime / Open Harness decomposition (see below). Key development in agent infrastructure standardization.
+
+### Cloudflare — Agents as Customers
+
+A paradigm shift: Cloudflare is enabling agents to act as "customers" — creating accounts, registering domains, and managing paid plans autonomously. This extends the harness concept from developer tooling to business infrastructure.
+
 ## Sources (追加)
 - [The Definitive Guide to Harness Engineering](https://x.com/i/article/2046553574201843712) (2026-04-23, X article) — PPAF, REPL Harness, R.E.S.T, 6 design principles, 4-level sandbox
 - [Letta's next phase](../raw/articles/2033670953956479223_lettas-next-phase.md) (2026-03-16, X article) — Letta Code model-agnostic harness
@@ -287,4 +313,55 @@ An agent becomes just another worker. Its tools are functions. Its memory is sta
 When agents are workers, the thin-vs-thick harness debate becomes: how many functions you register and how you compose them. A thin harness is an agent worker with few functions; a thick harness has more functions and explicit approval gates.
 
 > "The harness isn't on top of the backend. The harness is a part of the backend. And the backend is whatever connects to iii."
+
+## Open Models / Open Runtime / Open Harness (Harrison Chase, 2026-03)
+
+Harrison Chase (LangChain CEO) articulated a three-layer decomposition that applies to **all** production AI agents:
+
+```
+┌─────────────────────────────────────┐
+│  Open Harness    (LangChain Deep)   │  Orchestration, memory, tool routing
+├─────────────────────────────────────┤
+│  Open Runtime    (NVIDIA OpenShell) │  Sandbox, execution environment
+├─────────────────────────────────────┤
+│  Open Models     (Nemotron, etc.)   │  LLM intelligence
+└─────────────────────────────────────┘
+```
+
+> "Claude Code, OpenClaw, Manus and other agents all use the same architecture under the hood. They consist of a model, a runtime (environment), and a harness." — Harrison Chase, March 2026
+
+### Three Layers Explained
+
+1. **Open Models** — The intelligence layer. Model-agnostic architectures allow swapping the best model per task. Examples: NVIDIA Nemotron 3 Super (120B MoE, 1M context), Claude Opus 4.7, GPT-5.5.
+
+2. **Open Runtime** — The execution environment. **This determines the native tool-use interface:**
+   - **Agent on bash** → CLI tools are the natural function-calling mechanism
+   - **Agent on Python REPL** → Python functions are the natural function-calling mechanism
+   - **Heterogeneous agents** → (Remote) MCP absorbs the differences and bundles them
+
+3. **Open Harness** — The orchestration layer connecting model to runtime. LangChain Deep Agents provides: task planning, sub-agent spawning, long-term memory, context management.
+
+### Runtime Determines Tool-Use Pattern
+
+A critical architectural insight: the runtime choice **constrains the natural function-calling mechanism**.
+
+| Runtime | Native Tool Interface | Example Agents |
+|---|---|---|
+| Bash/Shell | CLI commands (`curl`, `grep`, `python -c`) | Claude Code, OpenClaw, Codex CLI |
+| Python REPL | Python function calls | DSPy, custom orchestration |
+| Browser DOM | DOM manipulation APIs | Browser Use, Playwright MCP |
+| MicroVM/Sandbox | Full environment API | Daytona, Rivet agentOS |
+
+For heterogeneous agent systems, **(Remote) MCP** serves as the universal adapter — absorbing runtime differences and bundling agents into a unified interface, analogous to microservice API gateways.
+
+### Open Harness vs Closed Harness
+
+Chase's "Your Harness, Your Memory" thesis (April 2026): **agent memory is inseparable from the harness**. Closed/proprietary harnesses = vendor lock-in at the memory layer. Open harnesses preserve:
+- Memory ownership
+- Model optionality
+- Custom instruction/skill portability
+
+LangChain Deep Agents uses open standards (AGENTS.md, Agent Skills) and supports pluggable memory backends (Mongo, Postgres, Redis).
+
+See: [[entities/harrison-chase]], [[entities/nvidia-openshell]], [[concepts/deep-agents]]
 

@@ -2,8 +2,11 @@
 title: "Deep Agents — Autonomous Multi-Step AI Agents"
 tags: [ai-agents-autonomy-planning-file-operations-delegation-sandbox]
 created: 2026-04-15
-updated: 2026-04-16
+updated: 2026-04-30
 type: concept
+sources:
+  - "https://docs.langchain.com/oss/python/deepagents/overview"
+  - "https://github.com/langchain-ai/deepagents"
 ---
 
 # Deep Agents — Autonomous Multi-Step AI Agents
@@ -58,4 +61,17 @@ Deep agents require secure code execution environments. Options include:
 - [[concepts/harness-engineering]] — Environment design for autonomous agents
 - [[concepts/code-mode]] — Code execution for deep agents
 - [[concepts/monty-sandbox]] — Secure execution environment
+- [[concepts/agent-architecture-decomposition]] — Model/Runtime/Harness three-layer framework
+- [[entities/harrison-chase]] — LangChain CEO, Deep Agents framework originator
+- [[entities/nvidia-openshell]] — Open Runtime reference implementation
 - [[samuel-colvin]] — Pydantic AI creator
+
+## Harrison Chase's Framework: Deep Agents as Open Harness
+
+LangChain's Deep Agents is the reference implementation of an **Open Harness** in Harrison Chase's three-layer model. In this framework:
+
+- **Model layer** → Any LLM (Claude, GPT, Nemotron) — model-agnostic
+- **Runtime layer** → The execution environment (bash, Python REPL, Docker sandbox) — determines native tool-use interface
+- **Harness layer** → Deep Agents provides planning, sub-agent spawning, memory management, tool routing
+
+Deep Agents maps to the Harness layer, connecting the model to the runtime. Its design philosophy aligns with the "[[concepts/harness-engineering]]" principle: **Agent = Model + Harness**, where the harness is everything that wraps a raw model to turn it into a productive work engine.
