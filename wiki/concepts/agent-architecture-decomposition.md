@@ -38,10 +38,62 @@ The **execution environment** where agents operate. This layer determines the na
 | Runtime Type | Native Tool Interface | Example Agents | Security Model |
 |---|---|---|---|
 | **Bash/Shell** | CLI commands (`curl`, `grep`, `python script.py`) | Claude Code, OpenClaw, Codex CLI | User-level permissions |
-| **Python REPL** | Python function calls | DSPy, custom orchestration | Process-level isolation |
+| **Python REPL** | Python function calls | DSPy, Pydantic AI, RLM | Process-level isolation |
+| **Micro-VM Interpreter** | Bytecode VM with capability grants | Pydantic Monty | Deny-by-default, explicit function exposure |
 | **Browser DOM** | DOM manipulation, JS execution | Browser Use, Playwright MCP | Browser sandbox |
 | **Container/MicroVM** | Full environment API | Daytona, Rivet agentOS | Hardware-level isolation |
 | **Dedicated Sandboxes** | Policy-enforced execution | NVIDIA OpenShell | Deny-by-default + YAML policies |
+
+#### Agent on REPL: Python関数ネイティブのRuntime
+
+Python REPLをRuntimeに選択すると、エージェントはCLIコマンドではなく**Python関数**を直接呼び出す形でツールを利用する。
+
+```python
+agent → call_tool(search_codebase, pattern="...")
+agent → call_tool(run_tests, path="./tests/")
+agent → call_tool(fetch_weather, city="London")
+```
+
+**代表例: RLM (Recursive Language Model)**
+
+RLMは「コンテキストの分解」をモデルに委ねるアーキテクチャ（[[mlops/agent-vs-rlm-comparison]]）。REPL環境内で`grep`、スライス等のコード操作を通じて関連コンテキストを選択的に抽出する。タスク分解ではなく**コンテキスト分解**が基本単位。
+
+**代表例: Pydantic AI**
+
+型安全なエージェントフレームワーク（[[concepts/pydantic-ai]]）。Python関数をツールとして登録し、Pydanticモデルで入出力を検証。Graph APIによるワークフロー定義も可能。
+
+**Agent on REPLの利点**:
+- 型安全: Python型ヒントでツールパラメータを検証可能
+- 構造化出力: Pydanticモデル等で戻り値を保証
+- 高速: プロセス内実行（IPC不要）
+- 状態共有: REPL内のメモリ空間をエージェント間で共有可能
+
+#### Micro-VM Interpreter: 専用バイトコードVMのRuntime
+
+**代表例: Pydantic Monty**
+
+MontyはRust製のミニマルPythonインタープリタ（[[concepts/monty-sandbox]]）。Agent on REPLの延長線上にあるが、**CPythonではなく専用VM**でコードを実行する点が根本的に異なる。
+
+| 特性 | 値 |
+|---|---|
+| 起動遅延 | 0.004ms（Docker 195msの~1/50,000） |
+| バイナリサイズ | ~4.5MB |
+| メモリオーバーヘッド | ~5MB（CPython埋め込み時） |
+| セキュリティ | Deny-by-default。外部関数として明示的に公開したもののみアクセス可能 |
+
+Montyは「**エージェントのために作られたエージェントのRuntime**」という設計思想。標準ライブラリもサードパーティパッケージも使わず、ホストから明示的にgrantされた関数のみを実行できる。これはcapabilities-based securityの原則に従っている。
+
+**実行連続体**（Samuel Colvinの整理）:
+
+| アプローチ | 制御度 | 表現力 | 遅延 | コスト |
+|---|---|---|---|---|
+| **Tool Calling** | 高 | 低 | シーケンシャル往復 | トークンごと |
+| **Monty / CodeMode** | 高-中 | 中 | 0.004ms起動 | プロセス内 |
+| **Sandbox Services** | 中 | 高 | ~1000ms+起動 | 実行ごと |
+| **Coding Agents** | 低 | 非常に高い | 分単位 | 高 |
+| **Full Computer Use** | なし | 最大 | 分単位 | 非常に高 |
+
+Montyは「シーケンシャルなTool Callingの低表現力」と「Sandbox/Full Computer Useの高コスト・高遅延」の間に位置する。エージェントがループ・条件分岐・並列呼び出しを1回のコード生成で表現でき、かつインフラコストゼロ。
 
 #### Runtime → Tool-Use Relationship
 
@@ -127,10 +179,19 @@ This mapping explains why **microservice architecture patterns** (service discov
 - [LangChain Deep Agents](https://blog.langchain.dev/deep-agents/) — Open Harness reference
 - [Continual learning for AI agents](https://x.com/i/article/2040467997022884194) (@hwchase17, April 2026)
 - [The Definitive Guide to Harness Engineering](../raw/articles/2026-04-27_2047145274200768969_The-Definitive-Guide-to-Harness-Engineering.md)
+- [Pydantic Monty: A Minimal Python Sandbox for AI Agents](https://pydantic.dev/articles/pydantic-monty) (Samuel Colvin, Feb 2026)
+- [RLM Blog Post](https://alexzhang13.github.io/blog/2025/rlm/) (Alex L. Zhang, Oct 2025)
+- [Language Models will be Scaffolds](https://alexzhang13.github.io/blog/2026/scaffold/) (Alex L. Zhang, Feb 2026)
+- [Monty, from tool calling to computer use - PyAI Conf 2026](https://www.youtube.com/watch?v=wXjZdrS3LqA) (Samuel Colvin, 2026)
 
 ## Related
 
 - [[entities/harrison-chase]]
+- [[entities/samuel-colvin]]
 - [[entities/nvidia-openshell]]
 - [[concepts/harness-engineering]]
 - [[concepts/deep-agents]]
+- [[concepts/monty-sandbox]]
+- [[concepts/pydantic-ai]]
+- [[mlops/agent-vs-rlm-comparison]]
+- [[entities/alex-zhang]]

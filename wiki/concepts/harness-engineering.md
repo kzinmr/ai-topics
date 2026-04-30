@@ -336,7 +336,8 @@ Harrison Chase (LangChain CEO) articulated a three-layer decomposition that appl
 
 2. **Open Runtime** — The execution environment. **This determines the native tool-use interface:**
    - **Agent on bash** → CLI tools are the natural function-calling mechanism
-   - **Agent on Python REPL** → Python functions are the natural function-calling mechanism
+   - **Agent on Python REPL** → Python functions are the natural function-calling mechanism (RLM, Pydantic AI)
+   - **Micro-VM Interpreter** → Dedicated bytecode VM with capability grants (Pydantic Monty)
    - **Heterogeneous agents** → (Remote) MCP absorbs the differences and bundles them
 
 3. **Open Harness** — The orchestration layer connecting model to runtime. LangChain Deep Agents provides: task planning, sub-agent spawning, long-term memory, context management.

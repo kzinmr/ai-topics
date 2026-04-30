@@ -7,11 +7,14 @@
 
 **Key architectural insight**: Runtime choice determines the native function-calling interface:
 - **Agent on bash** → CLI tools are the natural function-calling mechanism
-- **Agent on Python REPL** → Python functions are the natural mechanism
+- **Agent on Python REPL** → Python functions are the natural mechanism (RLM, Pydantic AI)
+- **Micro-VM Interpreter** → Dedicated bytecode VM with capability grants (Pydantic Monty)
 - **Heterogeneous agents** → (Remote) MCP absorbs differences and bundles them, analogous to microservices with an API gateway
 
+**Monty (Pydantic)**: Rust製ミニマルPythonインタープリタ。0.004ms起動、Deny-by-defaultセキュリティ。エージェントのために作られたRuntime — Tool CallingとSandboxの間に位置し、CodeMode（エージェントが1回のコード生成でループ・条件分岐・並列呼び出しを表現）を実現。
+
 - Updated: wiki/index.md (3 new entries), wiki/log.md
-- Sources: [Harrison Chase's X post](https://x.com/hwchase17/status/2034297125417460044), [LangChain Deep Agents](https://blog.langchain.dev/deep-agents/), NVIDIA OpenShell
+- Sources: [Harrison Chase's X post](https://x.com/hwchase17/status/2034297125417460044), [LangChain Deep Agents](https://blog.langchain.dev/deep-agents/), NVIDIA OpenShell, [Pydantic Monty](https://pydantic.dev/articles/pydantic-monty), [RLM](https://alexzhang13.github.io/blog/2025/rlm/)
 
 ## [2026-04-30] Dropbox Dash Relevance Judge with DSPy
 
