@@ -1,181 +1,302 @@
 ---
 title: "RL-Harness Lifecycle"
+status: draft
 type: concept
-aliases:
-  - rl-harness lifecycle
-  - rl-harness-feedback-loop
-  - harness-evolution-cycle
 tags:
   - concept
   - reinforcement-learning
   - harness-engineering
   - agent-architecture
-  - training-paradigm
-status: skeleton
-description: "The co-evolutionary cycle where harnesses provide training environments for RL, and RL-trained models internalize harness patterns, enabling progressively more sophisticated harnesses."
-created: 2026-04-30
-updated: 2026-04-30
-sources:
-  - "https://x.com/willccbb/status/2045958417073029546"
-  - "raw/articles/2026-04-30_willccbb-rl-harness-lifecycle.md"
-related:
-  - "[[concepts/harness-engineering]]"
-  - "[[concepts/bitter-lesson-harnessing]]"
-  - "[[concepts/agent-harness]]"
-  - "[[concepts/agentic-engineering]]"
-  - "[[concepts/context-engineering]]"
-  - "[[concepts/chain-of-thought]]"
-  - "[[concepts/react]]"
-  - "[[entities/will-brown]]"
+aliases:
+  - rl-harness-lifecycle
+  - rl-harness-feedback-loop
+  - co-evolutionary-harness-cycle
 ---
 
 # RL-Harness Lifecycle
 
-> **Core thesis:** Strong AI agents are not the product of model-only RL or harness-only engineering. They emerge from a **co-evolutionary cycle**: harnesses create training environments → RL produces capable models → models internalize harness patterns → more ambitious harnesses become possible → repeat.
+> **"It's not RL vs harnesses. It's the RL-harness lifecycle."** — Will Brown (@willccbb)
 
-Coined by **Will Brown** (@willccbb), Research Lead at [[entities/prime-intellect|Prime Intellect]], in April 2026. The framework explains why the competitive frontier in AI agents has shifted from "which model is smarter" to "which lab can build the best training environments and reward loops."
+## Definition
 
-## The Lifecycle
+The **RL-Harness Lifecycle** describes the co-evolutionary process by which AI agent capabilities emerge through the interaction of:
+
+1. **Harness invention** — External scaffolding that gives models new action spaces (tools, workflows, context management)
+2. **Imperfect usage** — Current models use these harnesses awkwardly, generating logs and failure modes
+3. **RL training signal** — The harness creates a structured environment where model actions can be evaluated and rewarded
+4. **Capability internalization** — Models learn to use the harness patterns naturally through reinforcement learning
+5. **Next harness generation** — Internalized capabilities enable more ambitious harness designs
+
+This cycle creates a ratchet effect where each generation of models makes previously external engineering patterns into internal capabilities, enabling the next wave of harness innovation.
+
+## Core Thesis
+
+The competitive frontier in AI agent development is not simply "bigger models" vs "better prompt engineering" vs "more tools." Instead, the decisive advantage comes from:
+
+- **Which labs can build realistic agent environments at scale?**
+- **Which labs can collect rollouts from tool use, code editing, browser operation, memory, and subagent delegation?**
+- **Which labs can turn today's half-working harness ideas into tomorrow's trained capabilities?**
+- **Which products are not just applications, but training environments for the next generation?**
+
+## Key Components
+
+### Harness (External Scaffolding)
+
+The harness is everything surrounding the raw model that enables it to act:
+
+- **Tool definitions** — What APIs, functions, or capabilities the model can invoke
+- **Context management** — How conversation history, file contents, and environment state are presented
+- **Workflow orchestration** — The sequence and structure of model interactions
+- **Execution environment** — Sandboxes, file systems, browsers, terminals where actions occur
+- **Evaluation layer** — How success/failure is measured and rewarded
+
+Examples of current harness patterns:
+- Chain-of-Thought (CoT) prompting
+- ReAct (Reasoning + Acting) loops
+- Parallel tool calls
+- Claude Code's developer environment
+- Subagent delegation
+- Context compaction/summarization
+- Recursive Language Models (RLMs)
+
+### Reinforcement Learning (Capability Shaping)
+
+RL transforms awkward, externally-guided behavior into natural model capability:
+
+- **Rollout collection** — Gathering traces of model behavior in harness environments
+- **Reward design** — Defining what constitutes success (test passage, task completion, safety)
+- **Policy optimization** — Training the model to maximize reward through trial and error
+- **Internalization** — The model learns harness patterns as natural behavior, not prompted instructions
+
+The critical insight: **RL needs clean feedback loops**. When the causal chain between "model did X" and "reward went up" is noisy or delayed, training becomes ineffective.
+
+### Environment (Training World)
+
+The environment encompasses the harness plus the task domain:
+
+- **State representation** — What the model can observe
+- **Action space** — What the model can do
+- **Transition dynamics** — How actions change state
+- **Reward signals** — How success is measured
+
+Environments like OpenClaw represent "real-world agent sandboxes" where models interact with messaging platforms, file systems, APIs, and user workflows — generating rich training signal for agentic capabilities.
+
+## Historical Examples
+
+### Chain-of-Thought (CoT)
+
+**Phase 1 — Harness Invention:** Prompt engineering technique asking models to "think step by step"
+
+**Phase 2 — Imperfect Usage:** Models generate verbose reasoning, sometimes correct, sometimes hallucinated
+
+**Phase 3 — RL Training Signal:** Reasoning traces can be evaluated for correctness, providing reward signal
+
+**Phase 4 — Capability Internalization:** Models learn to reason internally without explicit prompting
+
+**Phase 5 — Next Harness:** Internalized reasoning enables more complex planning, self-correction, and multi-step problem solving
+
+### ReAct (Reasoning + Acting)
+
+**Phase 1 — Harness Invention:** Framework interleaving reasoning traces with tool use actions
+
+**Phase 2 — Imperfect Usage:** Models struggle with when to reason vs when to act, tool selection, error recovery
+
+**Phase 3 — RL Training Signal:** Tool use success/failure provides clear reward signal
+
+**Phase 4 — Capability Internalization:** Models learn natural tool-use patterns without explicit ReAct prompting
+
+**Phase 5 — Next Harness:** Internalized tool use enables multi-step workflows, subagent delegation, parallel execution
+
+### Parallel Tool Calls
+
+**Phase 1 — Harness Invention:** API capability allowing models to invoke multiple tools simultaneously
+
+**Phase 2 — Imperfect Usage:** Models struggle with which tasks to parallelize, how to integrate results, when parallelism wastes context
+
+**Phase 3 — RL Training Signal:** Task completion time, context efficiency, and result quality provide reward dimensions
+
+**Phase 4 — Capability Internalization:** Models learn natural parallelism patterns (what to parallelize, what to sequence)
+
+**Phase 5 — Next Harness:** Parallel execution enables complex multi-agent workflows, distributed computation patterns
+
+### Claude Code / Developer Environments
+
+**Phase 1 — Harness Invention:** Full-stack developer environment with code editing, terminal access, testing, context management
+
+**Phase 2 — Imperfect Usage:** Models make editing mistakes, struggle with large codebases, inefficient context use
+
+**Phase 3 — RL Training Signal:** Test passage, user approval, edit success rates provide reward signal
+
+**Phase 4 — Capability Internalization:** Models learn natural coding workflows, context management, error recovery
+
+**Phase 5 — Next Harness:** Internalized coding enables autonomous feature development, refactoring, debugging agents
+
+### Context Compaction
+
+**Phase 1 — Harness Invention:** Summarization of long conversations to free context window
+
+**Phase 2 — Imperfect Usage:** Models lose important constraints, user intentions, or working hypotheses during compaction
+
+**Phase 3 — RL Training Signal:** Task success after compaction, user satisfaction, information retention metrics
+
+**Phase 4 — Capability Internalization:** Models learn what to preserve, what to compress, how to maintain state
+
+**Phase 5 — Next Harness:** Internalized compaction enables longer-running agents, more complex workflows, better memory management
+
+### Subagent Delegation
+
+**Phase 1 — Harness Invention:** Spawning specialized agents with isolated contexts for parallel work
+
+**Phase 2 — Imperfect Usage:** Models struggle with task decomposition, context selection, result integration, trust calibration
+
+**Phase 3 — RL Training Signal:** Task completion quality, resource efficiency, user satisfaction with outcomes
+
+**Phase 4 — Capability Internalization:** Models learn natural delegation patterns, task routing, result synthesis
+
+**Phase 5 — Next Harness:** Internalized delegation enables multi-agent orchestration, agent swarms, hierarchical planning
+
+## The "Half a Model Generation" Principle
+
+> **"Harness paradigms can only evolve half a model generation at a time. They need to half-work in order to get enough attention to be trained on."**
+
+This principle captures the tempo of agent capability evolution:
+
+### Why Half-Working is Optimal
+
+**Completely broken harnesses:**
+- Generate no useful rollouts
+- Cannot provide training signal
+- Attract no investment or attention
+- Die before they can be trained
+
+**Perfectly working harnesses:**
+- Become commodity features
+- No competitive advantage
+- Everyone can implement them
+- Limited ceiling for improvement
+
+**Half-working harnesses:**
+- Generate valuable failure data
+- Attract investment to fix them
+- Create structured training environments
+- Enable the next generation of capabilities
+- Represent the "adjacent possible" for agent design
+
+### The Evolution Cycle
 
 ```
-Harness (prototype)
-    ↓ half-works, generates attention
-RL Environment (tasks + harness + rewards)
-    ↓ clean rollout loop, measurable outcomes
-RL-trained Model (internalizes patterns)
-    ↓ natural capability, fewer harness guardrails
-Next-generation Harness (more ambitious)
-    ↓ repeat
+Model Generation N
+    ↓
+Harness H half-works with Model N
+    ↓
+Collect rollouts, design rewards
+    ↓
+RL training on H
+    ↓
+Model N+0.5 uses H much better
+    ↓
+Harness H+1 becomes possible
+    ↓
+Model Generation N+1
 ```
 
-### Stage 1: Harness as Prototype
+This creates a **ratchet mechanism** where each cycle locks in new capabilities and enables more ambitious designs.
 
-A new interaction pattern is invented as an **external harness** — prompt engineering, tool-calling conventions, workflow orchestration. It half-works with current models. Examples from history:
+## Why Bolt-On Memory Fails the Lifecycle Test
 
-- **Chain-of-Thought** (2022): "Let's think step by step" — a prompt hack that improved reasoning
-- **ReAct** (2023): Interleaving reasoning traces with tool use — a workflow pattern
-- **Parallel tool calls** (2024-2025): Multiple simultaneous API calls — an orchestration feature
-- **Claude Code** (2025-2026): Full development environment harness — model + filesystem + terminal + context management
-- **Compaction** (2025-2026): Context summarization to free up window space
-- **Subagents** (2025-2026): Delegating work to isolated contexts
-- **RLMs / Recursive Language Models** (2025): Models that programmatically explore and decompose long contexts
+> **"Also why I'm bearish on bolt-on memory. Not a clean enough rollout loop."**
 
-### Stage 2: RL Environment Construction
+### The Problem with External Memory
 
-The harness is formalized into a **training environment** with:
-- **Task specification** (what the agent should accomplish)
-- **Harness interface** (tools, sandboxes, context management)
-- **Reward function / rubric** (how to measure success)
+Bolt-on memory refers to systems where:
+- Memories are stored in vector databases or markdown files
+- Retrieval happens via semantic search
+- The model reads memories as context
+- No feedback loop exists for what memories helped vs hurt
 
-As Prime Intellect's [[entities/will-brown|Will Brown]] puts it: *"Environment construction is the new data labeling."* An environment encapsulates everything needed for model improvement via trial and error.
+### Why RL Can't Train Bolt-On Memory
 
-### Stage 3: RL Training and Internalization
+**Noisy reward attribution:**
+- Did the model succeed because of the memory, or despite it?
+- Which specific memory contributed to success?
+- Was the retrieved memory relevant, or did it contaminate context?
 
-Models trained via RL on these environments **internalize the harness patterns**. What was once an external instruction becomes natural model behavior:
+**Delayed feedback:**
+- A memory saved today might help (or hurt) weeks later
+- User preferences change over time
+- Causality between memory actions and outcomes is opaque
 
-- CoT went from explicit prompt → baked into reasoning models (o1, R1, etc.)
-- ReAct went from workflow pattern → standard agent behavior
-- Tool calling went from function schema → native model capability
+**Evaluation difficulty:**
+- Code editing: test pass/fail is clear
+- Math problems: answer correct/incorrect is clear
+- Browser tasks: reservation completed/not is clear
+- Memory usage: ??? 
 
-### Stage 4: Next-Generation Harness
+### What Would Work
 
-With models that have internalized previous harness patterns, **new, more ambitious harnesses become possible**:
+For memory to participate in the RL-harness lifecycle, it needs:
+- **Clear action-reward chains** — "Model saved X, later retrieved X, task succeeded"
+- **Controllable forgetting** — Reward for removing obsolete information
+- **Freshness signals** — Time-decay or validation mechanisms
+- **Conflict resolution** — How contradictory memories are handled
+- **Privacy boundaries** — What should never be stored
 
-- Models that natively reason can handle more complex tool orchestration
-- Models that natively use tools can be given access to richer environments
-- Models that natively manage context can be trusted with longer, more complex workflows
+Until memory systems can generate clean training signal, they remain bolt-on rather than internalized capabilities.
 
-## "Half a Model Generation" Evolution
+## Implications for AI Agent Development
 
-> *"Sadly, harness paradigms can only evolve half a model generation at a time. They need to half-work in order to get enough attention to be trained on."*
+### Competitive Advantages
 
-This is the **key constraint** of the lifecycle:
+The labs that win will be those who:
 
-- **If a harness doesn't work at all** with current models → no training data, no investment, no attention
-- **If a harness works perfectly** → it's just a product feature, no competitive moat, everyone copies it
-- **If a harness half-works** → it generates enough signal for RL training, and enough promise for investment
+1. **Build realistic environments at scale** — Not just benchmarks, but production-like agent sandboxes
+2. **Collect diverse rollouts** — Tool use, code editing, browser operation, memory management, subagent delegation
+3. **Design effective rewards** — Clear signal, low noise, aligned with user value
+4. **Iterate harness designs** — Continuously create new action spaces for models to learn
+5. **Internalize capabilities** — Turn today's external scaffolding into tomorrow's native behavior
 
-The competitive advantage lies in identifying harness patterns that are **just barely functional** with today's models but would be transformative if RL-trained.
+### Product Strategy
 
-## "The Best Harness Ideas Don't Work Yet"
+Products like Claude Code and OpenClaw should be viewed as:
+- **Training environments first** — They generate the rollouts and reward signal
+- **Applications second** — The user-facing features are the side effect
+- **Capability prototypes** — They demonstrate what's possible with sufficient training
 
-> *"The best harness ideas are those which didn't actually work yet, but which would be amazing in theory if you did the RL."*
+The most valuable products are those that:
+- Generate rich training data from real usage
+- Allow rapid experimentation with new harness patterns
+- Provide clear evaluation metrics for model behavior
+- Scale to collect millions of diverse agent interactions
 
-This reframes how to evaluate agent architectures:
-- **Not**: "Does this work well today?"
-- **But**: "Would this be powerful if the model were trained on it?"
+### Research Direction
 
-The harness is not just a wrapper — it's a **new action space** for the model. More tools, more context management options, more delegation strategies = more behavioral degrees of freedom. But **more degrees of freedom without training = more failures**. RL is what turns action space into capability.
+The RL-harness lifecycle suggests focusing on:
 
-## Why "Bolt-On Memory" Is Problematic
+- **Environment design** — How to create training worlds that generate useful signal
+- **Reward engineering** — How to define success for complex, multi-step agent tasks
+- **Harness evaluation** — How to measure which external patterns are worth training
+- **Capability internalization** — How to turn awkward workflows into natural behavior
+- **Lifecycle acceleration** — How to shorten the cycle from harness invention to capability emergence
 
-> *"Also why I'm bearish on bolt-on memory. Not a clean enough rollout loop."*
+## Related Concepts
 
-**Bolt-on memory** refers to post-hoc memory systems — vector databases, Markdown files, conversation history retrieval, user profile storage — that are attached to agents as external components rather than being part of a training loop.
+- **[[harness-engineering]]** — The discipline of designing and building agent scaffolding
+- **[[agent-harness]]** — Specific implementations of model-environment interfaces
+- **[[reinforcement-learning]]** — The training paradigm that internalizes harness patterns
+- **[[chain-of-thought]]** — Historical example of harness-to-capability evolution
+- **[[react-pattern]]** — Reasoning-acting interleaving as trainable behavior
+- **[[agent-delegation]]** — Subagent patterns and their internalization potential
+- **[[context-management]]** — Compaction, memory, and state preservation challenges
+- **[[agent-environment-design]]** — Creating training worlds for agentic RL
 
-### The Clean Rollout Loop Problem
+## Sources
 
-For RL to work effectively, you need a **causal chain** that's measurable at scale:
-- Code edit → tests pass → reward ✓ (clean)
-- Math problem → correct answer → reward ✓ (clean)
-- Browser task → form submitted → reward ✓ (clean)
+- Will Brown (@willccbb), "it's not RL vs harnesses" tweet thread, April 2026
+- Prime Intellect research on verifiers and agentic RL
+- OpenAI tool use documentation on parallel_tool_calls
+- Anthropic Claude Code documentation on context management and subagents
+- OpenClaw architecture documentation on agentic loops and persistence
 
-Memory **breaks this chain**:
-- Memory written today → might help in 3 weeks → or might be obsolete → or might actively mislead
-- User preferences change → stale memory causes harm
-- Retrieved memory might have been unnecessary → noise vs. signal is unclear
-- Wrong memory corrupts future sessions → pollution is hard to detect
+---
 
-The missing piece: **there's no stable, low-noise way to evaluate whether a memory action was "correct"** across the timescales where memory matters.
-
-### What Would Make Memory RL-Trainable
-
-For memory to become part of the lifecycle rather than a bolt-on, the **entire memory lifecycle** needs to be a trainable behavior:
-- **When to write** (not everything is worth remembering)
-- **What to forget** (preferences change, facts become obsolete)
-- **What to retrieve** (relevance judgment under uncertainty)
-- **How to resolve contradictions** (conflicting memories, updated information)
-- **How much trust to place** (source reliability, recency weighting)
-
-This requires memory to be embedded in an environment where these decisions have **measurable downstream consequences** — not just "can you store and recall facts."
-
-## Implications for AI Agent Competition
-
-The RL-harness lifecycle reframes the competitive landscape:
-
-| Old framing | New framing |
-|---|---|
-| "GPT-X vs Claude-Y" | "Who has the best agent training environments?" |
-| Model capability races | Environment construction + reward design races |
-| Prompt engineering as moat | Harness patterns as training data for next-gen models |
-| Memory as a feature | Memory as a trainable behavior |
-
-The labs that win will be those that:
-1. Build **realistic agent environments** at scale
-2. Create **reward functions** for tool use, code editing, browsing, memory, subagent delegation, and context compaction
-3. Turn **half-working harnesses** into RL training data
-4. Use their products (Claude Code, OpenClaw, etc.) as **both applications and environment prototypes**
-
-## Relationship to Existing Concepts
-
-### [[concepts/harness-engineering]]
-Harness Engineering is the broader philosophy ("Agent = Model + Harness"). The RL-harness lifecycle is the **mechanism** by which harness engineering produces actual capability gains — through the co-evolutionary cycle.
-
-### [[concepts/bitter-lesson-harnessing]]
-The Bitter Lesson applied to harnesses: investing in harness engineering may seem wasteful if models will soon internalize the patterns. But **you need the harness to generate the training signal** that lets models internalize those patterns. The harness is the **scaffolding** for the bitter lesson.
-
-### [[concepts/agent-harness]]
-The agent harness is the static infrastructure layer. The RL-harness lifecycle describes **how that layer evolves over time** through training and model improvement.
-
-### [[concepts/context-engineering]]
-Context engineering provides the substrate (what information the model sees). The RL-harness lifecycle determines **which context engineering patterns become model-native** through training.
-
-## TODO: Research Items
-
-- [ ] Quantify "half a model generation" — what metrics indicate a harness is ready for RL training?
-- [ ] Case studies of harness → RL internalization beyond CoT and ReAct
-- [ ] Prime Intellect's Environments Hub and verifiers library as concrete implementations
-- [ ] Comparison with OpenAI's RL environments, Anthropic's Constitutional AI training
-- [ ] The role of synthetic data generation in harness-based RL
-- [ ] Memory systems that DO have clean rollout loops (if any exist)
-- [ ] Economic analysis: how much are frontier labs spending on agent training environments?
+*This concept page captures the RL-harness lifecycle framework as articulated by Will Brown and the AI research community. It describes how agent capabilities evolve through the interaction of external scaffolding and reinforcement learning training.*
