@@ -1,3 +1,13 @@
+## [2026-04-30] RAG Is Not Dead — Added Part 4: Late-Interaction Retrieval (ColBERT)
+
+- Created [[concepts/late-interaction-retrieval]] — Antoine Chaffin's ColBERT/MaxSim. 150M parameter model beats 7B dense on BRIGHT. PyLate tooling. Three adoption barriers now resolved (storage, VectorDB, tooling).
+- Updated [[concepts/rag-not-dead-series]] — Added Part 4 detail section, wikilink, graph query, and source.
+- Saved raw article: `raw/articles/2026-04-30_hamel-husain-rag-p4-late-interaction.md`
+- Sources: https://hamel.dev/notes/llm/rag/p4_late_interaction.html
+- Updated index files: wiki/index.md, wiki/log.md.
+
+---
+
 ## [2026-04-30] RAG Is Not Dead — Added Parts 2 & 3: FreshStack + Reasoning Retrieval
 
 - Created [[concepts/freshstack-benchmark]] — Nandan Thakur's modern RAG evaluation benchmark. Three metrics (Coverage@20, Diversity, Recall@50). Replaces contaminated BEIR/MTEB with real-time data.

@@ -42,7 +42,7 @@ The 2023 version of RAG (chunk → vector DB → cosine similarity → LLM) fail
 | 1 | [[concepts/modern-retrieval-toolkit\|I don't use RAG, I just retrieve documents]] | Ben Clavié | Why naive single-vector search is dead; the modern retrieval toolkit (BM25, ColBERT, agentic search) |
 | 2 | [[concepts/freshstack-benchmark\|Modern IR Evals For RAG]] | Nandan Thakur | FreshStack: multi-dimensional eval (Coverage, Diversity, Relevance) replacing contaminated BEIR/MTEB |
 | 3 | [[concepts/reasoning-retrieval\|Optimizing Retrieval with Reasoning Models]] | Orion Weller | Promptriever (instruction-aware bi-encoder) + Rank1 (reasoning-based reranker with CoT) |
-| 4 | Late Interaction Models For RAG | Antoine Chaffin | ColBERT-style token-level preservation outperforming 7B models on reasoning |
+| 4 | [[concepts/late-interaction-retrieval|Late Interaction Models For RAG]] | Antoine Chaffin | ColBERT-style MaxSim preserving token-level detail; 150M model outperforming 7B dense models on reasoning |
 | 5 | RAG with Multiple Representations | Bryan Bischof & Ayush Chaurasia | Multiple specialized indices beat one perfect embedding |
 | 6 | Context Rot | Kelly Hong | LLM performance degrades with longer inputs; context engineering is critical |
 | 7 | [[concepts/graph-db-overengineering-rag\|You Don't Need a Graph DB (Probably)]] | Jo Kristian Bergum | GraphRAG is a technique, not a technology; HNSW as hidden graph |
@@ -83,6 +83,19 @@ RAG retrieval is stuck in a 1999 keyword-matching paradigm. Two models introduce
 
 **"Invisible documents":** Rank1 finds relevant documents human annotators missed in old benchmarks (DL19/DL20). After re-judging, Rank1 became top performer — revealing a "long tail" of previously invisible relevant content.
 
+### Part 4: Late-Interaction Retrieval (Antoine Chaffin)
+
+Dense vector search compresses all tokens into a single vector — inherently lossy. Late-interaction models (ColBERT) replace this pooling step with the **MaxSim operator**: for each query token, find its maximum similarity across all document tokens, then sum. This preserves all token-level detail and makes retrieval interpretable.
+
+**Key results:**
+- On BRIGHT benchmark: a **150M parameter** late-interaction model outperformed **7B parameter** dense models
+- Fine-tuned late-interaction: **19.61 nDCG** vs 12.31 for dense on BRIGHT
+- Better out-of-domain generalization and fine-tuning stability
+
+**Tooling:** PyLate (open-source by Chaffin) makes late-interaction as easy as Sentence Transformers.
+
+**Adoption barriers now resolved:** Quantization for storage, Vespa/Weaviate/LanceDB for VectorDB support, PyLate for tooling.
+
 ## Graph Structure Query
 
 ```
@@ -91,6 +104,7 @@ RAG retrieval is stuck in a 1999 keyword-matching paradigm. Two models introduce
 [rag-not-dead-series] ──includes──→ [modern-retrieval-toolkit]
 [rag-not-dead-series] ──includes──→ [freshstack-benchmark]
 [rag-not-dead-series] ──includes──→ [reasoning-retrieval]
+[rag-not-dead-series] ──includes──→ [late-interaction-retrieval]
 [rag-not-dead-series] ──includes──→ [graph-db-overengineering-rag]
 [rag-not-dead-series] ──contrasts──→ [naive-single-vector-rag]
 [rag-not-dead-series] ──embodies──→ [harness-engineering]
@@ -101,6 +115,7 @@ RAG retrieval is stuck in a 1999 keyword-matching paradigm. Two models introduce
 - [[concepts/modern-retrieval-toolkit]] — Part 1: modern retrieval pipeline replacing naive RAG
 - [[concepts/freshstack-benchmark]] — Part 2: multi-dimensional RAG evaluation
 - [[concepts/reasoning-retrieval]] — Part 3: instruction-aware + reasoning-based retrieval
+- [[concepts/late-interaction-retrieval]] — Part 4: ColBERT/MaxSim preserving token-level detail; 150M model beats 7B dense
 - [[concepts/graph-db-overengineering-rag]] — Part 7: GraphRAG as technique, not technology
 - [[concepts/harness-engineering]] — Measure-first philosophy across the series
 - [[concepts/ai-evals]] — Evaluation methodology for AI systems
@@ -114,3 +129,5 @@ RAG retrieval is stuck in a 1999 keyword-matching paradigm. Two models introduce
 - [P3: Optimizing Retrieval with Reasoning Models](https://hamel.dev/notes/llm/rag/p3_reasoning.html)
 - [Raw article: P2](raw/articles/2026-04-30_hamel-husain-rag-p2-evals.md)
 - [Raw article: P3](raw/articles/2026-04-30_hamel-husain-rag-p3-reasoning.md)
+- [P4: Late Interaction Models For RAG](https://hamel.dev/notes/llm/rag/p4_late_interaction.html)
+- [Raw article: P4](raw/articles/2026-04-30_hamel-husain-rag-p4-late-interaction.md)
