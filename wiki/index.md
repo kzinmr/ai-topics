@@ -2,13 +2,14 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 710 | Full entries: 683 | Stubs: 619
+> Last updated: 2026-04-30 | Total pages: 719 | Full entries: 690 | Stubs: 619
 
-## Entities (339 pages)
+## Entities (346 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
 - [[entities/addy-osmani]] — **X/Twitter** | @addyosmani |
+- [[entities/agentcraft]] — Open-source AI agent orchestrator with RTS game interface. Supports Claude Code, OpenCode, Cursor.
 - [[entities/agi-bot]] — Chinese humanoid robot manufacturer. Second-largest Chinese humanoid robot seller after Unitree.
 - [[entities/agibot-10000-units]] — Real-world demand for humanoid robots accelerates as AGIBot ships 10,000 units.
 - [[entities/akira-realmcore]] — **X** | @realmcore_ |
@@ -358,8 +359,14 @@
 - [[entities/quarq-labs]] — Quarq Labs — AI research and development lab
 - [[entities/ryan-lopopolo--core-ideas]] — Ryan Lopopolo (@_lopopolo) core ideas on AI engineering
 - [[entities/ryan-lopopolo--timeline]] — Ryan Lopopolo career timeline
-- [[entities/ryan-lopopolo--writings]] — Ryan Lopopolo writings and blog posts
-## Concepts (388 pages)
+|- [[entities/ryan-lopopolo--writings]] — Ryan Lopopolo writings and blog posts
+|- [[entities/contextarena]] — LLM long-context benchmark leaderboard. Evaluates 70+ LLMs on GDM-MRCRv2 (8-Needle test) across 128K and 1M token windows. Measures accuracy, AUC, token efficiency, and cost.
+|- [[entities/databricks]] — Major AI/ML data platform company. Open-sourced MLflow and Unity Catalog. Published Memory Scaling research with MemAlign framework for AI agents.
+|- [[entities/devin]] — First autonomous AI coding agent by Cognition AI. End-to-end software engineering: shell, code editor, browser, planner. Comparison with Claude Code and OpenAI Codex.
+|- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
+|- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
+|- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
+## Concepts (389 pages)
 
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
@@ -581,8 +588,9 @@
 - [[concepts/karpathy-loop]] — > **Definition:** The Karpathy Loop is an autonomous research pattern where a human writes a natural-language research protocol (`program.md`), an AI agent iteratively modifies code (`train.py`), r...
 - [[concepts/karpathy]] — Karpathy (Andrej Karpathy) — AI researcher, educator, and OpenAI/DirectX co-founder. Entity: entities/andrej-karpathy.md
 - [[concepts/kimi-k2-6]] — **Moonshot Kimi K2.6** is a major open-weight refresh of Moonshot's leading Chinese open model, released in April 2026. It is a **1T-parameter Mixture of Experts (MoE)** model featuring **32B activ...
-- [[concepts/knowledge-graph-memory-agents]] — Knowledge graph memory stores facts as a structured graph of **entities** and **typed relationships**, enabling multi-hop reasoning and entity-centric queries that flat vector stores cannot express...
-- [[concepts/kv-aware-routing]] — KV-aware routing is an inference optimization technique where the request router selects workers not just based on current load, but also on KV cache overlap — i.e., whether a worker already has the KV cache for a prefix pre-computed.
+|- [[concepts/knowledge-graph-memory-agents]] — Knowledge graph memory stores facts as a structured graph of **entities** and **typed relationships**, enabling multi-hop reasoning and entity-centric queries that flat vector stores cannot express...
+|- [[concepts/korean-ai]] — Korean AI ecosystem overview. Covers model category rankings (April 2026), Korean LLM regional leaderboard (Solar, HyperCLOVA X, EXAONE), notable companies (Upstage, Naver, SKT, LG), unique evaluation methodology (KMMLU, CLIcK, HAE-RAE), and government AI strategy.
+|- [[concepts/kv-aware-routing]] — KV-aware routing is an inference optimization technique where the request router selects workers not just based on current load, but also on KV cache overlap — i.e., whether a worker already has the KV cache for a prefix pre-computed.
 - [[concepts/kv-cache]] — The KV (Key-Value) Cache is an optimization technique in transformer inference that stores intermediate attention computations across generation steps, avoiding redundant recomputation. Understanding KV cache mechanics — size scaling (batch × layers × heads × d_k × sequence_length × precision), memory bandwidth bottleneck, and cache-aware scheduling — is a prerequisite for context engineering, prompt caching, and inference optimization.
 - [[concepts/kv-cache-compaction]] — KV Cache Compaction is a technique for reducing token usage in multi-agent systems by operating directly on the model's internal representations. Instead of LLM-based summarization or RAG-based ret...
 - [[concepts/lambda-monolith-lambdalith]] — A serverless architecture pattern where a single AWS Lambda function handles all API routes, rather than splitting into many small, route-specific Lambda functions.

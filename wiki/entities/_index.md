@@ -14,6 +14,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[abacaj]] — Anton Bacaj is a software engineer and ML practitioner known for his open-source contributions in large language model fine-tuning, evaluation, and inference optimization. He has worked at Jet.com (20
 - [[adam-mastroianni]] — Adam's signature thesis: psychology is experimental history. Unlike historians who wait for events to unfold, psychologists construct situations, place humans inside them, and record what happens. The
 - [[addy-osmani]] — Addy Osmani is a Director at Google Cloud AI, working on Gemini and Vertex AI. Previously, he was Engineering Lead for Chrome & Web Platform at Google, where he became one of the most prolific writers
+- [[agentcraft]] — Open-source AI agent orchestrator with an RTS game interface. Built by Ido Salomon (@idosal1). Displays agents as hero units on a 3D map with missions, fog of war, and achievements. Supports Claude Code, OpenCode, and Cursor.
 - [[agibot-10000-units]] — Real-world demand for humanoid robots accelerates as AGIBot ships 10,000 units.
 - [[akira-realmcore]] — Akira (@realmcore_) は Random Labs のAIエンジニアリングチームの中心的な声。同社は2024年設立、YC S24バッチのスタートアップで、創設者は Kiran と Mihir Chintawar。
 - [[alec-radford]] — Alec Radford represents the anti-traditional academic path in AI research: no PhD, no extensive publication record in top conferences, no public speaking circuit. Yet he is a co-author on some of the 

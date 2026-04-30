@@ -1,3 +1,20 @@
+## [2026-04-30] Bulk c3afd19 — 解決完了: 未作成48件の全件対応 + 3 Skeleton Enrich
+
+- **48件の「ファイル未作成」全件対応完了**
+  - ✅ 新規Entity/Concept作成: shuvendu, devin, kimi, lenny, databricks, contextarena, agentcraft, concepts/korean-ai
+  - ✅ 既存Entityにマッピング確認: wheresyoured→ed-zitron, mariozechner→mario-zechner, 0xsero→sero, kleppmann→martin-kleppmann, ysymyth
+  - ✅ 既存Conceptでカバー: llamacpp, vllm, a2a, acp, swarm, vellum, openlayer
+  - 🗑️ スキップ（一般メディア・非AI）: the-verge, fortune, cnbc, cnn, theregister等 25件
+  - 🗑️ arXiv-onlyスキップ: agentprm, merge-models
+  - 詳細: wiki/bulk-processing/bulk-c3afd19.md
+- ✅ Skeleton Enrich: refactoring-english (Michael Lynch, 11.8KB), gilesthomas (Giles Thomas/PythonAnywhere, 12.5KB), mahadk (Mahad Kalam, 12.4KB)
+
+## [2026-04-30] AgentCraft Wiki Entity Page
+
+- [[entities/agentcraft]] — New entity page: open-source AI agent orchestrator with RTS game interface. Built by Ido Salomon (@idosal1). Single-pane command center where AI agents appear as hero units on a 3D map. Supports Claude Code, OpenCode, Cursor. Key features: multi-agent heroes, fog of war, alliance hall, isolated containers, remote access, voice input, git worktrees.
+- Raw article: raw/articles/2026-04-25-agentcraft-rts-agent-orchestration.md
+- Sources: getagentcraft.com, getagentcraft.com/docs, Google Cloud Next speaker profile, X pinned post
+
 ## [2026-04-30] Will Brown — RL-Harness Lifecycle Thesis
 
 - [[concepts/rl-harness-lifecycle]] — New concept page: the co-evolutionary cycle of harnesses and RL training. Strong agents emerge from: harnesses create training environments → RL produces capable models → models internalize harness patterns → more ambitious harnesses become possible.
