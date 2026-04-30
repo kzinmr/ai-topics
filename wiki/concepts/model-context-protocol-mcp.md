@@ -97,6 +97,35 @@ Chrome 146 introduced **WebMCP** — a browser-native implementation exposing `n
 | **Terminator MCP** | Terminal output relay MCP server | — |
 | **WebMCP** | Chrome 146 native model context protocol | — |
 
+## MCP Provider Support Comparison (2026-04)
+
+Martin Aldersonの実践的評価による主要AI API間のMCPサポート比較:
+
+### Anthropic Claude API — ✅ Works out of the box
+- フルリモートMCPサポート。ストリーミングHTTPトランスポートでURL指定のみ
+- ツール発見・実行がAnthropic側で自動的に処理
+- 数秒で既存リモートMCPサーバーをプロンプトに追加可能
+- **欠点**: API価格が高い（Gemini 2.5 Flash比で大幅高）
+
+### OpenAI API — ⚠️ Promising but broken
+- フルリモートMCPサポートを謳っている
+- ツール発見は成功するが、ツール呼び出し時に`"Session terminated"`エラー
+- MCP Inspector、Claude、直接JSON-RPCでは正常動作 → OpenAI側の実装に問題
+- 今後の改善に期待
+
+### Google Gemini API — ❌ No real MCP support
+- MCPセクションは存在するが、ホスト側でツールを列挙してツール定義に挿入するだけ
+- LLMプロバイダー側がツールを発見・実行する「真のMCP」ではない
+- JavaScript/Python SDKのみ対応
+- Gemini web UIのGoogleサービス連携は優秀だが、APIレベルでは貧弱
+
+### MCP Ecosystem Growth
+- 2026年4月時点で**1,150+サーバー**（1週間で900→1,150、日約25-30新規サーバー）
+- [mcp-tracker.martinalderson.com](https://mcp-tracker.martinalderson.com) でリアルタイム追跡可能
+
+### Open Weights Opportunity
+オープンウェイトモデル（Qwen3、gpt-oss等）をホストしたAPIで、洗練されたMCP統合オプションを提供する機会が大きい。現時点で存在しない。
+
 ## CLI Over MCP Pattern
 
 Some developers (notably @steipete) argue that **standard CLI tools are often superior to MCP servers** for agent workflows:

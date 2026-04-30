@@ -390,7 +390,79 @@
       "deliver": "discord:1233771389367095377:1491801814222504169",
       "origin": null,
       "last_delivery_error": null
+    },
+    {
+      "id": "ac70e197fc75",
+      "name": "wiki-health-plan",
+      "prompt": "Wiki health auto-fix planning job for AI topics. The script output above is from ~/.hermes/scripts/wiki_health.py. Do not edit files. Return JSON only. Schema: {\"date\":\"YYYY-MM-DD\",\"summary_ja\":\"short Japanese summary\",\"actions\":[{\"id\":\"stable-action-id\",\"category\":\"orphan_index|frontmatter_metadata|raw_article_curation|stale_page|broken_link|duplicate_page|other\",\"risk\":\"low|medium|high\",\"confidence\":0.0,\"target_path\":\"~/wiki/...\",\"diagnosis_ja\":\"short diagnosis\",\"fix_ja\":\"specific fix instruction\",\"auto_apply\":true}],\"skip_reason_ja\":null}. Rules: set auto_apply true only for low-risk deterministic fixes such as adding existing orphan Layer 2 pages to ~/wiki/index.md, fixing clearly broken internal links when the target is unambiguous, or filling clearly missing metadata. For raw article curation, stale enrichment, duplicate merging, or content synthesis, set auto_apply false. Use ~/wiki paths only.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "wiki_health.py",
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "10 17 * * *",
+        "display": "10 17 * * *"
+      },
+      "schedule_display": "10 17 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-30T01:03:01.991122+00:00",
+      "next_run_at": "2026-04-30T17:10:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "6f3525ec4d9a",
+      "name": "wiki-health-fix",
+      "prompt": "Wiki health auto-fix apply job for the AI topics wiki. The pre-run script loaded the latest wiki-health-plan JSON. All output must be in Japanese. If _wiki_health_plan_checkpoint.ok is false, report the checkpoint error briefly. Apply only actions where auto_apply is true, risk is low, and confidence is at least 0.8. Do not apply raw_article_curation, stale_page enrichment, duplicate merging, or content synthesis unless the plan is explicitly deterministic and low risk. Work from ~/ai-topics and edit only ~/wiki plus index/log files when needed. Before each edit, inspect the target file. After edits, run python3 ~/.hermes/scripts/wiki_health.py to verify. Commit and push from ~/ai-topics with commit message: wiki: auto-fix health issues. If there are no safe auto-apply actions and nothing changed, respond with exactly [SILENT].",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "wiki_health_plan_checkpoint.py",
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "25 17 * * *",
+        "display": "25 17 * * *"
+      },
+      "schedule_display": "25 17 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-30T01:03:07.752628+00:00",
+      "next_run_at": "2026-04-30T17:25:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "discord:1233771389367095377:1491801814222504169",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null
     }
   ],
-  "updated_at": "2026-04-23T12:09:52.506261+00:00"
+  "updated_at": "2026-04-30T01:03:07.752628+00:00"
 }

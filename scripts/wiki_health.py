@@ -22,7 +22,15 @@ except ImportError:
 # Paths
 # ---------------------------------------------------------------------------
 
-WIKI_ROOT = Path(__file__).resolve().parent.parent / "wiki"
+def resolve_wiki_root() -> Path:
+    """Prefer the Hermes canonical ~/wiki, with repo-local fallback for dev runs."""
+    home_wiki = Path.home() / "wiki"
+    if home_wiki.exists():
+        return home_wiki
+    return Path(__file__).resolve().parent.parent / "wiki"
+
+
+WIKI_ROOT = resolve_wiki_root()
 REPO_ROOT = WIKI_ROOT.parent
 ENTITIES_DIR = WIKI_ROOT / "entities"
 CONCEPTS_DIR = WIKI_ROOT / "concepts"
