@@ -15,7 +15,7 @@ sources:
 
 ## Summary
 
-**Rivet** is an open-source AI agent infrastructure company founded by Nathan Flurry (CTO). They build products for running, managing, and scaling AI agents in production — with a focus on sandboxed code execution and agent orchestration. Notable products: **agentOS** (WebAssembly/V8 isolate-based agent runtime), **Sandbox Agent SDK** (universal API for coding agents), and the Docker Sandbox MicroVM reverse-engineering effort.
+**Rivet** is an open-source AI agent infrastructure company founded by Nathan Flurry (CTO). They build products for running, managing, and scaling AI agents in production — with a focus on sandboxed code execution and agent orchestration. Notable products: **agentOS** (WebAssembly/V8 isolate-based agent runtime) and **Sandbox Agent SDK** (universal API for coding agents).
 
 *Not to be confused with Ironclad's "Rivet" visual AI programming environment (rivet.ironcladapp.com).*
 
@@ -39,13 +39,6 @@ sources:
 - Normalizes all agent event formats into a universal session schema for storage and replay
 - Announced: 2026-01-28
 
-### Docker Sandbox MicroVM API Research
-
-- Reverse-engineered Docker's undocumented `sandboxd` API (2026-02-04)
-- Enables developers to run any containerized workload in a kernel-isolated MicroVM
-- Details: [[concepts/docker-sandbox-microvm-api]]
-- Published on Rivet blog by Nathan Flurry (CTO)
-
 ## Technical Philosophy
 
 Rivet's approach to agent infrastructure centers on:
@@ -57,7 +50,7 @@ Rivet's approach to agent infrastructure centers on:
 
 ## Key People
 
-- **Nathan Flurry** — Co-founder & CTO. Active GitHub contributor on rivet-dev repos. Authored the Docker Sandbox MicroVM reverse-engineering article and the Sandbox Agent SDK.
+- **Nathan Flurry** — Co-founder & CTO. Active GitHub contributor on rivet-dev repos. Built the Sandbox Agent SDK and authored research on Docker Sandbox's undocumented MicroVM API.
 
 ## Company Info
 
