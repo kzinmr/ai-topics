@@ -1,3 +1,9 @@
+## [2026-04-30] Revisiting Text Ranking in Deep Research — Meng, Ou, MacAvaney, Dalton
+
+- Expanded [[concepts/agentic-search]] — Restructured to two-level definition (IR/Retrieval Layer + Harness Engineering Layer). Added comprehensive section on University of Glasgow study (arXiv:2602.21456): BM25 dominance over neural rankers, passage-level retrieval, Q2Q reformulation (7.95% accuracy gain), re-ranking depth (BM25–monoT5-3B at 0.716 recall), reasoning re-rankers underperform.
+- Saved raw paper: raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
+- Source: https://arxiv.org/abs/2602.21456 (arXiv-only, ingested per user request)
+
 ## [2026-04-30] Bulk c3afd19 — 解決完了: 未作成48件の全件対応 + 3 Skeleton Enrich
 
 - **48件の「ファイル未作成」全件対応完了**

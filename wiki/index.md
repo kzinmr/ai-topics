@@ -423,7 +423,7 @@
 |- [[concepts/agentic-scaffolding]] — エージェントを本番環境で安全に動作させるための「足場」パターン。エージェントの力を最大化しつつ、リスクを管理するインフラストラクチャ設計。
 ||- [[concepts/agentic-security]] — Agentic Security encompasses the security patterns, protocols, and tools for protecting AI agents, MCP servers, and the broader agent ecosystem. Covers package security (Nesbitt.io), authentication, authorization, data exfiltration prevention, MCP server security, prompt injection defense, and sandboxing strategies.
 ||- [[concepts/agentic-sysadmin]] — Pattern for using Claude Code as a sysadmin assistant — infrastructure as markdown, CLAUDE.md as project memory, security-first workflow for bare-metal and cloud servers.
-||- [[concepts/agentic-search]] — Fintool's approach to search: SQL discovery for lazy-loading skills + agentic grep/SQL hybrid for SEC filings. Only loads relevant skills based on context analysis to avoid token waste.
+||- [[concepts/agentic-search]] — Retrieval strategies for LLM agents: IR research (query mismatch, BM25 > neural, passage-level indexing, Q2Q reformulation) + harness engineering (skill discovery via SQL/grep). Expanded with University of Glasgow study on text ranking in deep research.
 ||- [[concepts/agentic-theory]] — Sean Goedecke's analysis applying Peter Naur's 1985 "theory building" concept to AI-assisted programming.
 - [[concepts/agentic-web]] — > "The web is transitioning from a human-centric read/write platform to an Agentic Web, where AI systems interact with websites on behalf of users."
 - [[concepts/agentic-workflow-patterns]] — > "The most successful AI systems in 2026 are built around agentic workflow patterns that manage uncertainty, memory, tools, and feedback deliberately. These patterns aren't flashy. They are struct...
