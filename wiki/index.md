@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 700 | Full entries: 670 | Stubs: 620
+> Last updated: 2026-04-30 | Total pages: 706 | Full entries: 674 | Stubs: 620
 
-## Entities (335 pages)
+## Entities (339 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -64,6 +64,7 @@
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
 - [[entities/dario-amodei]] — **Role** | Co-founder & CEO, Anthropic |
 - [[entities/dax-raad]] — **X** | @thdxr |
+- [[entities/daytona-io]] — CEO: Ivan Burazin. Composable computing environments (sandboxes) for AI agents.
 - [[entities/deepseek]] — Chinese open-source LLM provider that has driven **cost disruption** in the AI industry. Exemplifies China's open-source AI strategy enabling rapid global uptake.
 - [[entities/deliberate-coder]] — **URL:** https://www.benmvp.com (blog), https://github.com/benmvp (GitHub)
 - [[entities/deliberatecoder]] — **URL:** https://deliberate-software.com
@@ -84,6 +85,7 @@
 - [[entities/eli-thegreenplace-net]] — **URL:** https://eli.thegreenplace.net
 - [[entities/elie-bakouch]] — ML engineer and researcher at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training.
 - [[entities/elvis-sun]] — Elvis Sun is an AI researcher and newsletter author operating under the pen name **spicyneuron**. He publishes on Substack covering practical local AI deployment, hardware choices for self-hosted L...
+- [[entities/embra]] — AI context engine company acquired by Notion (Jan 2026). Founded by Zach Tratar.
 - [[entities/elvis]] — **Platform:** X/Twitter (@elvis_)
 - [[entities/emollick]] — **X** | @emollick |
 - [[entities/entropicthoughts-com]] — **URL:** https://entropicthoughts.com (formerly two-wrongs.com)
@@ -134,6 +136,7 @@
 - [[entities/ian-nuttall]] — **URL:** https://ian.is
 - [[entities/ilya-sutskever]] — **Full Name** | Ilya Sutskever (איליה סوتскеבר) |
 - [[entities/intuit-machine]] — AI agent framework company focused on agentic AI skills design. Published 'Ten Design Principles of Agentic AI Skills Design' — structural insights about how AI systems achieve 10x-100x effectiveness.
+- [[entities/ivan-burazin]] — CEO of Daytona. Coined "Headless SaaS" — SaaS rebuilt with agent-first APIs, no GUI.
 - [[entities/jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of **Bun** — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining...
 - [[entities/jason-liu]] — **X** | @jxnlco |
 - [[entities/jaya-gupta]] — Partner at Foundation Capital, thought leader on context graphs and enterprise AI. Published influential thesis on Context Graphs as AI's trillion-dollar opportunity.
@@ -281,6 +284,7 @@
 - [[entities/yacine-mahdid]] — **URL:** https://yacine.ca/
 - [[entities/yann-lecun]] — **フルネーム** | Yann André LeCun |
 - [[entities/zach-mueller]] — **X** | @TheZachMueller |
+- [[entities/zach-tratar]] — AI @ Notion. Founded Embra (acquired 2026). Argues for unified AI context apps over vertical SaaS.
 - [[entities/zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.
 
 - [[entities/palantir]] — AI-powered decision infrastructure company. The Palantir Ontology contextualizes computation within "lived reality" for enterprise agent workflows.
@@ -352,7 +356,7 @@
 - [[entities/ryan-lopopolo--core-ideas]] — Ryan Lopopolo (@_lopopolo) core ideas on AI engineering
 - [[entities/ryan-lopopolo--timeline]] — Ryan Lopopolo career timeline
 - [[entities/ryan-lopopolo--writings]] — Ryan Lopopolo writings and blog posts
-## Concepts (387 pages)
+## Concepts (388 pages)
 
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
@@ -560,6 +564,7 @@
 - [[concepts/harness-engineering/system-architecture/multi-agent-research-system]] — Anthropicが構築した、複数のClaudeエージェントを並列に動作させるリサーチシステム。
 - [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — Anthropicが実践した、AIエージェント向けのツール設計方法论。「エージェントのためにツールを書き、エージェントを使ってツールを最適化する」アプローチ。
 - [[concepts/headless-ai-services]] — Matt Webbが提唱した概念で、**personal AIが直接API経由でSaaSサービスを操作**し、GUIベースの操作（bot-controlled mouse）を排除するアプローチ。
+- [[concepts/headless-saas]] — SaaS products rebuilt with agent-first APIs as the primary interface (no human GUI). Distinct from Headless AI Services.
 - [[concepts/helium-crisis-2026]] — Semiconductor supply chain disruption caused by helium shortage, impacting chip manufacturing globally.
 - [[concepts/hisparse]] — **Type** | Memory Management / Inference Optimization |
 - [[concepts/illusion-of-thinking]] — A series of research papers in 2025-2026 demonstrated that **pure LLMs fail at logical planning tasks** they appear to solve, and that **neurosymbolic hybrids dramatically outperform Vision-Languag...

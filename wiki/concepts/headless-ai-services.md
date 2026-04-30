@@ -2,9 +2,9 @@
 title: "Headless AI Services"
 type: concept
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-04-30
 tags: [concept, ai-agents, api-first, saas, agentic-engineering]
-related: [agentic-engineering, api-first-development, mcp]
+related: [agentic-engineering, api-first-development, mcp, headless-saas]
 sources: []
 ---
 
@@ -32,7 +32,17 @@ Matt Webbが提唱した概念で、**personal AIが直接API経由でSaaSサー
 
 ## 料金構造への影響
 
-API-firstモデルが主流になると、**per-head SaaS pricing schemes**が壊れる可能性がある。
+API-firstモデルが主流になると、**per-head SaaS pricing schemes**が壊れる可能性がある。エージェントは人間とは異なる利用パターンを持ち、1つの企業で数十〜数百のエージェントがAPIを叩くようになるため、従来のper-seat課金は成立しなくなる。
+
+## Headless SaaS との関係
+
+[[concepts/headless-saas]]（Ivan Burazinが提唱）はHeadless AI Servicesをさらに発展させた概念。両者の違い：
+
+| 側面 | Headless AI Services (Webb) | Headless SaaS (Burazin) |
+|------|---|---|
+| フォーカス | 既存SaaSをAIがAPI経由で操作 | SaaS自体をエージェント向けに再構築 |
+| インターフェース | 人間向けUIの上にAPI層 | APIが**唯一**のインターフェース（GUIなし） |
+| ビジネスモデル | 既存SaaSの料金構造が課題 | 消費量ベースの新しいモデル |
 
 ## 関連項目
 
