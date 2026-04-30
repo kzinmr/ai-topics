@@ -65,10 +65,9 @@ StrongDMはこのLevel 5を実践し、Anthropic Managed AgentsとOpenAI Symphon
 ### Communication Protocols
 Three protocols competing to become the standard:
 - **MCP** — Agent-to-tool communication (mature, widely adopted)
-- **A2A** — Dynamic discovery between autonomous agents (Google)
-- **ACP** — Enterprise-focused, regulated industries (IBM/I Am Bee, alpha)
+- **A2A** — Dynamic discovery + enterprise governance between autonomous agents (Google + IBM/Linux Foundation, 2025 merger)
 
-Decision: MCP for tools, A2A for cross-org, ACP for governance.
+Decision: MCP for tools, A2A for cross-org and governance.
 
 ### Critical Failure Modes
 - **Infinite Delegation:** Agent A → B → A loop. Solution: depth limit (3-5)

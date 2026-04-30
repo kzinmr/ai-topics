@@ -152,7 +152,7 @@ The business entity supporting McGugan's open-source work:
 - **Textualize team** — Contributors and maintainers of Rich and Textual; community of developers building the Python TUI ecosystem
 - **Python community** — Rich and Textual are deeply embedded in Python's open-source ecosystem, with integration into popular tools like Jupyter, pytest, and pip
 - **Claude Code / OpenHands / Gemini CLI** — AI coding agents that Toad supports; McGugan's work bridges the gap between these tools and terminal workflows
-- **ACP protocol community** — Developers working on the Agent Communication Protocol that enables Toad's multi-agent support
+- **ACP protocol community** — Developers working on the Agent Client Protocol that enables Toad's multi-agent support
 
 ## X Activity Themes
 

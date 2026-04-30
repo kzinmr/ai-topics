@@ -4,10 +4,11 @@ created: 2026-04-30
 updated: 2026-04-30
 type: concept
 tags: [agent-client-protocol, acp, mcp, a2a, coding-agents, editor-integration, json-rpc]
-aliases: [Agent Client Protocol, ACP (Client)]
+aliases: [Agent Client Protocol, ACP]
 related: [[concepts/agent-communication-protocols]], [[concepts/mcp]], [[concepts/ai-coding-agent-criticism]]
 sources:
   - "https://www.philschmid.de/acp-overview"
+  - "https://agentclientprotocol.com/get-started/introduction"
 ---
 
 # Agent Client Protocol (ACP)
@@ -17,6 +18,8 @@ sources:
 The **Agent Client Protocol (ACP)** is an open standard (JSON-RPC 2.0) that provides a common interface for editors/IDEs to interact with AI coding agents. It abstracts agent-specific events and outputs, enabling any ACP-compliant editor (Zed, JetBrains, Obsidian) to communicate with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, Goose, Codex CLI).
 
 **Key distinction:** ACP governs **agent-to-client (UI)** communication, whereas [[concepts/mcp]] governs **agent-to-tool** communication. They are complementary protocols serving different layers of the agent stack.
+
+> **⚠️ Naming conflict:** "ACP" also refers to the former **Agent Communication Protocol** (IBM/I Am Bee), which **merged into A2A** under the Linux Foundation in August 2025. This page covers **Agent Client Protocol** only. For the merged A2A standard, see [[concepts/agent-communication-protocols]].
 
 ## Protocol Architecture
 
@@ -127,10 +130,10 @@ Hermes implements ACP-mode for external agent integration:
 |---|---|---|---|
 | **Full Name** | Agent Client Protocol | Model Context Protocol | Agent-to-Agent Protocol |
 | **Layer** | Agent ↔ Editor/UI | Agent ↔ Tools/Data | Agent ↔ Agent |
-| **Transport** | stdio, HTTP | stdio, HTTP | HTTP |
+| **Transport** | stdio, HTTP | stdio, HTTP | HTTP (REST) |
 | **Purpose** | UI integration for coding agents | Tool discovery and execution | Cross-agent coordination |
-| **Origin** | Open standard (IBM/I Am Bee) | Anthropic | Google |
-| **Status** | Alpha | Stable/Widely adopted | Beta |
+| **Origin** | Open standard | Anthropic | Google + IBM (Linux Foundation, 2025 merger) |
+| **Status** | Alpha | Stable/Widely adopted | Beta (with former ACP capabilities) |
 
 **Decision:** Use **MCP** for tool integration, **A2A** for cross-organizational agent interaction, and **ACP** for editor/UI integration with coding agents.
 

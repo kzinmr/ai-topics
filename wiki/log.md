@@ -3,6 +3,16 @@
 - Created [[concepts/agent-client-protocol]]: Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. Covers protocol lifecycle (initialize, session/new, session/prompt), methods (fs/read, fs/write, terminal/*, request_permission), notification types (plan, agent_message_chunk, tool_call, thought_message_chunk), and key implementations (Hermes ACP mode, Toad by Will McGugan). Updated [[concepts/agent-communication-protocols]] to distinguish Agent **Client** Protocol from Agent **Communication** Protocol (same acronym, different purpose).
 - Raw article: https://www.philschmid.de/acp-overview
 
+## [2026-04-30] ACP Naming Resolution + A2A Merger Documentation
+
+- Renamed `agent-communication-protocols.md` → MCP vs A2A (removed ACP column)
+- Merged former Agent Communication Protocol (IBM/I Am Bee) content into A2A section with merger details, timeline, and TSC members
+- Updated `agent-client-protocol.md` with naming conflict warning and corrected comparison table
+- Updated `agent-team-swarm/_index.md` and `agent-identity-verification.md` to replace ACP references with A2A
+- Updated `entities/will-mcgugan.md` to correct ACP protocol reference
+- Saved raw article: `2025-08-25_i-am-bee_acp-joins-a2a.md`
+- Sources: https://github.com/orgs/i-am-bee/discussions/5, https://agentcommunicationprotocol.dev/introduction/welcome
+
 ## [2026-04-30] db9: Filesystem + Postgres for Agent Workflows
 
 - Created [[concepts/db9-fs-sql-pattern]]: PostgreSQL distribution for agentic workloads that unifies file-based artifacts and relational metadata using SQL as the glue. Covers fs9 filesystem integration (read/write files, query CSV/JSONL/Parquet as relations), server-side embedding + pgvector HNSW search, and the compact RAG pipeline (source → chunk → retrieve → generate → output). Key benefit: "Why did the agent do that?" becomes a standard SQL query.

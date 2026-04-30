@@ -82,7 +82,7 @@ The [sigstore/sigstore-a2a](https://github.com/sigstore/sigstore-a2a) library (A
 Unlike transport-layer trust (HTTPS/OAuth), Signed Agent Cards provide **agent-level identity** that persists across delegation chains. This is complementary to:
 
 - **MCP security model** — tool-level authorization within an agent
-- **ACP governance** — enterprise auditability and RBAC
+- **A2A governance** — enterprise auditability and RBAC (from former ACP specification merged into A2A in 2025)
 - **OAuth 2.0** — user/application authorization, not agent identity
 
 ## Current Status (April 2026)
