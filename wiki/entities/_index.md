@@ -37,6 +37,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[beej-us]] — Brian "Beej Jorgensen" Hall is one of the most influential technical educators of the internet era. His Beej's Guide to Network Programming has taught socket programming to generations of developers s
 - [[benjamin-clavie]] — Benjamin Claviéはフランス出身のNLP/情報検索(IR)研究者で、現在はTokyo, Japanを拠点にMixedbreadでML R&Dに従事し、National Institute of Informatics (NII) のKasys lab（指導教員: Makoto P. Kato教授）でPhD課程在籍中。
 - [[berthub-eu]] — Bert is a systems-level thinker who operates at the intersection of software engineering, public policy, and scientific research. His work spans from RFCs that secure global DNS infrastructure to poli
+- [[block-ai]] — Block, Inc. (formerly Square) — Jack Dorsey's AI-native organizational transformation from hierarchy to intelligence-driven coordination
 - [[boaz-barak]] — Boaz Barak is one of the most prominent theoretical computer scientists working on AI safety and the foundations of machine learning. As the Gordon McKay Professor of Computer Science at Harvard SEAS 
 - [[bogdanthegeek-s-blog]] — Bogdan Ionescu, known online as BogdanTheGeek, is an embedded engineer who publishes deeply technical, hands-on projects that blend serious engineering with creative experimentation. His blog sits at 
 - [[boris-cherny]] — Boris Cherny is the creator of Claude Code, Anthropic's agentic coding CLI. He is one of the most influential voices in practical AI agent workflows, known for deep technical insights on parallel agen
@@ -54,6 +55,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[chris-tate]] — Chris Tate is a software engineer at Vercel and a prolific open-source creator focused on developer tools and AI-assisted workflows. He is the creator of three notable open-source projects:
 - [[claude-mythos]] — Anthropic's next-generation model, developed after [[concepts/claude-opus-4-6]]. Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
 - [[clefourrier]] — Clémentine Fourrier is a research scientist who, between 2023 and 2025, led Hugging Face's evaluation efforts and collaborations on LLMs and AI agents. She is one of the most influential figures in th
+- [[coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
 - [[construction-physics-com]] — Brian Potter is the author of Construction Physics, a Substack newsletter that examines the technology and economics of building construction with a focus on understanding why construction productivit
 - [[corbett]] — Kyle Corbitt (known as "Corbett" on X/Twitter, handle @corbtt) is a serial entrepreneur and engineer focused on making AI model fine-tuning and reinforcement learning accessible to developers. He is c
 - [[cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
@@ -81,6 +83,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[elie-bakouch]] — ML engineer and researcher at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training.
 - [[elvis-sun]] — Elvis spent 8 years at Google building Firebase before becoming a generalist founder who can build the entire business — product, code, ops, marketing, sales. In the AI era, he argues one person can b
 - [[elvis]] — Conducted a 9-hour side-by-side source code study of Hermes Agent and OpenClaw, producing one of the most detailed public comparisons of agent architecture patterns.
+- [[embeddings]] — Single-vector embedding models — strengths, limitations, and theoretical constraints (LIMIT dataset, drowning-in-documents paradox)
 - [[emollick]] — Ethan Mollick is one of the most influential public educators on practical AI usage. As a professor at the Wharton School of the University of Pennsylvania, he has spent over two decades studying inno
 - [[entropicthoughts-com]] — Chris is the author of Entropic Thoughts, a blog that applies rigorous quantitative thinking — statistics, queueing theory, information theory, and Bayesian reasoning — to software engineering, produc
 - [[eric-hartford]] — Eric Hartford is one of the most prominent independent creators in the open-source LLM fine-tuning ecosystem. He is best known as the creator of the Dolphin series of models — uncensored, instruction-
@@ -148,12 +151,14 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[lester-solbakken]] — Lester Solbakken is a search and retrieval infrastructure researcher with 25+ years of experience spanning from legacy enterprise search engines to next-generation agent-native retrieval systems. He i
 - [[lilian-weng]] — Lilian Weng is one of the most influential voices in AI research communication and a leading figure in AI safety and autonomous agent systems. She co-founded [Thinking Machines Lab](https://thinkingma
 - [[lilianweng]] — Lilian Weng occupies a rare position at the intersection of frontier AI research and practical safety engineering. As VP of Research at OpenAI, she leads the Preparedness team — responsible for safegu
+- [[lora-fine-tuning]] — LoRA (Low-Rank Adaptation) fine-tuning paradigm, including Sakana AI's Doc-to-LoRA and Text-to-LoRA hypernetwork-based adapter generation
 - [[manus]] — Manusの最大の差別化はローカルブラウザ拡張によるエージェント実行。クラウドのサンドボックスではなく、ユーザーの実際のブラウザ上で動作する。
 - [[mario-zechner]] — Mario Zechner is one of the most distinctive voices in the tech industry — a veteran game developer, systems programmer, and civic technologist who brings an engineer's pragmatism and a craftsman's ey
 - [[mark-chen]] — Mark Chen is the Chief Research Officer at OpenAI, where he leads frontier research in multimodal modeling and reasoning capabilities. He is the lead author of the Codex paper (which powers GitHub Cop
 - [[martin-alderson]] — Martin's most viral essay documented how 13 markdown files (~156KB) in Anthropic's `knowledge-work-plugin` repository on GitHub triggered a $285 billion selloff in SaaS stocks on February 3, 2026 — ro
 - [[martin-kleppmann]] — ケンブリッジ大学計算機科学技術学科准教授。分散システム、ローカルファースト協調ソフトウェア、暗号プロトコルを研究。
 - [[matduggan-com]] — Mat Duggan is an American sysadmin and DevOps engineer living in Denmark who writes about the practical realities of infrastructure, open source sustainability, the evolution of technology platforms, 
+- [[mathematical-methods]] — Philosophical paper by Terence Tao and Tanya Klowden on the impact of AI on mathematical practice and human thought (arXiv:2603.26524)
 - [[matklad-github-io]] — Aleksey Kladov (blog handle "matklad") is one of the most influential writers on compiler tooling and IDE architecture in the modern open-source ecosystem. As the creator and primary architect of rust
 - [[maurycyz-com]] — Maurycy's entire website is a manifesto for the small web, demonstrated through implementation rather than essay:
 - [[max-bernstein]] — Max Bernstein is a compiler engineer and prolific technical writer whose work spans runtime optimization, type systems, and programming language implementation. He is a core developer of ZJIT, Ruby's 
@@ -230,6 +235,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[thariq-shihipar]] — Thariq Shihipar occupies a unique position in the AI engineering world — he is simultaneously a core builder of production AI systems (Claude Code at Anthropic) and a reflective practitioner who write
 - [[the-old-new-thing]] — Raymond Chen is a Principal Software Engineer at Microsoft who has been involved in the evolution of Windows for more than 30 years. Since 2003, he has written The Old New Thing, one of the most respe
 - [[concepts/the-silicon-underground]] — Dave Farquhar is the author of The Silicon Underground, one of the most prolific and detailed blogs devoted to the history of personal computing, semiconductor technology, and the business dynamics of
+- [[thin-bi-tool]] — 薄くなるBIツール — BI tools transitioning from comprehensive platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
 - [[tim-sh]] — Sherratt is the creator of the GLAM Workbench, a comprehensive platform of Jupyter notebooks that teaches researchers how to work with cultural collection data. He served as Creative Technologist-in-R
 - [[tom-aarsen]] — Tom Aarsen is one of the most active and influential maintainers in the open-source NLP and embeddings ecosystem. Since late 2023, he has been the lead maintainer of Sentence Transformers, the most wi
 - [[tom-renner]] — Renner's writing is distinctive for its willingness to question technology — even (especially) when it comes from within the tech industry. He has published essays arguing that LLMs are a "400-year-lo
@@ -249,4 +255,5 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[yacine-mahdid]] — Yacine Mahdid is a software engineer and computational neuroscience researcher based in Ottawa, Canada. He works at a Canadian startup and has previously been affiliated with McGill University (Comput
 - [[yann-lecun]] — フランス系アメリカ人コンピュータサイエンティスト。CNNの発明者、2018年チューリング賞受賞者。Meta元チーフAIサイエンティスト、NYU教授。
 - [[zach-mueller]] — Zach Mueller is one of the most authoritative voices in distributed deep learning training within the open-source AI community. As the Technical Lead for Hugging Face Accelerate, he maintains the libr
+- [[zakirullin]] — Artem Zakirullin — Software Architect, author of "Cognitive load is what matters" (12K+ GitHub stars), a framework on minimizing cognitive complexity in software design
 - [[zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.

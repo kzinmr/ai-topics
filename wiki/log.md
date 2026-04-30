@@ -1,3 +1,18 @@
+## [2026-04-30] Daily Skeleton Enrichment — 8 Entity Pages Enriched
+
+- Enriched [[entities/coding-agents]] — LLM-powered coding agents ecosystem (Claude Code, Cursor, Copilot, Warp). Eric Zakariasson's optimization framework.
+- Enriched [[entities/block-ai]] — Block Inc. (Square) AI transformation "From Hierarchy to Intelligence" by Jack Dorsey.
+- Enriched [[entities/mathematical-methods]] — Terence Tao & Tanya Klowden's philosophical paper on AI and mathematical thought (arXiv:2603.26524).
+- Enriched [[entities/embeddings]] — Single-vector embedding limitations (LIMIT dataset, drowning-in-documents paradox). arXiv:2603.29519.
+- Enriched [[entities/zakirullin]] — Artem Zakirullin, author of "Cognitive load is what matters" (12K+ GitHub stars).
+- Enriched [[entities/lora-fine-tuning]] — LoRA fine-tuning plus Sakana AI's Doc-to-LoRA and Text-to-LoRA hypernetwork paradigm.
+- Enriched [[entities/thin-bi-tool]] — 薄くなるBIツール — BI tools transitioning from comprehensive platforms to lightweight, DWH-native visualization tools.
+- Enriched [[entities/akshay-pachaar]] — Senior AI Engineer at Lightning AI, Co-Founder of Daily Dose of Data Science, author of "Anatomy of an Agent Harness".
+- Updated index files: wiki/index.md, entities/_index.md.
+- Sources: Combination of raw articles, web research (arXiv, Wikipedia, GitHub, LinkedIn, blog posts).
+
+---
+
 ## [2026-04-30] Hamel Husain & Jo Kristian Bergum — "P7: You Don't Need a Graph DB (Probably)"
 
 - Created [[concepts/graph-db-overengineering-rag]] — Core thesis: GraphRAG is a technique, not a technology. Covers silver bullet trap, context stuffing (Floppy Disk Rule), HNSW as hidden graph, evaluation-first approach. Designed with structured graph query cross-references for wiki knowledge base traversal.

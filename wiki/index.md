@@ -13,7 +13,7 @@
 - [[entities/agi-bot]] — Chinese humanoid robot manufacturer. Second-largest Chinese humanoid robot seller after Unitree.
 - [[entities/agibot-10000-units]] — Real-world demand for humanoid robots accelerates as AGIBot ships 10,000 units.
 - [[entities/akira-realmcore]] — **X** | @realmcore_ |
-- [[entities/akshay-pachaar]] — AIエンジニア、データサイエンティスト、教育者。patchy631
+- [[entities/akshay-pachaar]] — Senior AI Engineer at Lightning AI, Co-Founder of Daily Dose of Data Science, author of "The Anatomy of an Agent Harness" synthesis
 - [[entities/alec-radford]] — **Role** | AI Researcher (former OpenAI); Advisor, Thinking Machines Lab |
 - [[entities/alex-banks]] — **Name** | Alex Banks |
 - [[entities/alex-zhang]] — **Name:** Alex L. Zhang
@@ -37,7 +37,7 @@
 - [[entities/ben-boyter]] — Creator of searchcode.com, scc (Sloc Cloc and Code), cs (Code Spelunker). Author of 'Marketing to the Machine' B2A thesis on Business-to-Agent design.
 - [[entities/benjamin-clavie]] — **X** | @bclavie |
 - [[entities/berthub-eu]] — **Blog** | berthub.eu |
-- [[entities/block-ai]] — ブロックAIの概念と実装（スケルトンページ）
+- [[entities/block-ai]] — Block, Inc. (formerly Square) — Jack Dorsey's AI-native organizational transformation from hierarchy to intelligence-driven coordination
 - [[entities/boaz-barak]] — **X** | @boazbaraktcs |
 - [[entities/bogdanthegeek-s-blog]] — **URL:** https://bogdanthegeek.github.io/blog/
 - [[entities/boris-cherny]] — **X/Twitter** | @bcherny__ |
@@ -59,7 +59,7 @@
 - [[entities/claude-design]] — Anthropic Labs product for collaborative visual design, powered by Claude Opus 4.7's vision model. Released April 17, 2026 in research preview.
 - [[entities/claude-mythos]] — Anthropic's next-generation model, developed after . Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
 - [[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
-- [[entities/coding-agents]] — AIコーディングエージェントの実体と参照（スケルトンページ）
+- [[entities/coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
 - [[entities/construction-physics-com]] — **URL:** https://constructionphysics.substack.com
 - [[entities/corbett]] — **X/Twitter** | @corbtt |
 - [[entities/cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
@@ -90,7 +90,7 @@
 - [[entities/eli-thegreenplace-net]] — **URL:** https://eli.thegreenplace.net
 - [[entities/elie-bakouch]] — ML engineer and researcher at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training.
 - [[entities/elvis-sun]] — Elvis Sun is an AI researcher and newsletter author operating under the pen name **spicyneuron**. He publishes on Substack covering practical local AI deployment, hardware choices for self-hosted L...
-- [[entities/embeddings]] — ベクトル埋め込み表現（スケルトンページ）
+- [[entities/embeddings]] — Single-vector embedding models — strengths, limitations, and the theoretical constraints of embedding-based retrieval (LIMIT dataset, drowning-in-documents paradox)
 - [[entities/embra]] — AI context engine company acquired by Notion (Jan 2026). Founded by Zach Tratar.
 - [[entities/elvis]] — **Platform:** X/Twitter (@elvis_)
 - [[entities/emollick]] — **X** | @emollick |
@@ -175,7 +175,7 @@
 - [[entities/lilian-weng]] — **URL:** https://lilianweng.github.io
 - [[entities/lilianweng]] — **X** | @lilianweng |
 - [[entities/lmsys-org]] — **URL** | https://lmsys.org |
-- [[entities/lora-fine-tuning]] — LoRAファインチューニング（スケルトンページ）
+- [[entities/lora-fine-tuning]] — LoRA (Low-Rank Adaptation) fine-tuning paradigm, including Sakana AI's Doc-to-LoRA and Text-to-LoRA hypernetwork-based adapter generation
 - [[entities/mahadk]] — テクニカルライター。AI、Web開発、LLMアプリケーション。mahadk.com
 - [[entities/manus]] — **Manus**は、元Alibaba/ByteDanceエンジニアらが創業した中国系スタートアップ（Monica.im）が開発した汎用AIエージェント。2025年3月のバイラルデモで注目され、ブラウザ操作・コード実行・ファイル作成を仮想コンピュータ上で自律実行できる。2025年11月には**Browser Operator**機能をリリース、2026年には**Metaに買収**された。
 - [[entities/mario-zechner]] — **X** | @badlogicgames |
@@ -183,7 +183,7 @@
 - [[entities/martin-alderson]] — **Blog** | martinalderson.com |
 - [[entities/martin-kleppmann]] — ケンブリッジ大学計算機科学技術学科准教授。分散システム、ローカルファースト協調ソフトウェア、暗号プロトコルを研究。
 - [[entities/matduggan-com]] — **URL:** https://matduggan.com
-- [[entities/mathematical-methods]] — 数学的方法（スケルトンページ）
+- [[entities/mathematical-methods]] — Philosophical paper by Terence Tao and Tanya Klowden on the impact of AI on mathematical practice and human thought (arXiv:2603.26524)
 - [[entities/matklad-github-io]] — **Blog** | matklad.github.io |
 - [[entities/maurycyz-com]] — **Blog** | maurycyz.com |
 - [[entities/max-bernstein]] — **URL:** https://bernsteinbear.com
@@ -277,7 +277,7 @@
 - [[entities/thariq-shihipar]] — **X** | @trq212 |
 - [[entities/the-old-new-thing]] — **URL:** https://devblogs.microsoft.com/oldnewthing/
 - [[entities/the-silicon-underground]] — **URL:** https://dfarq.homeip.net
-- [[entities/thin-bi-tool]] — 薄くなるBIツール（スケルトンページ）
+- [[entities/thin-bi-tool]] — 薄くなるBIツール — BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
 - [[entities/tim-sh]] — **Blog** | timsh.org | AI coding practitioner, PM, Multi-LLM workflow pioneer |
 - [[entities/tim-sherratt]] — **Blog** | timsherratt.au | Historian, GLAM hacker, creator of GLAM Workbench |
 - [[entities/tobi-lutke]] — Tobi Lütke is the CEO of Shopify and a prominent advocate for organizational AI adoption.
@@ -304,7 +304,7 @@
 - [[entities/ysymyth]] — YSYMYTH（スケルトンページ）
 - [[entities/zach-mueller]] — **X** | @TheZachMueller |
 - [[entities/zach-tratar]] — AI @ Notion. Founded Embra (acquired 2026). Argues for unified AI context apps over vertical SaaS.
-- [[entities/zakirullin]] — Zakirullin。認知負荷に関する研究（スケルトンページ）
+- [[entities/zakirullin]] — Artem Zakirullin — Software Architect, author of "Cognitive load is what matters" (12K+ GitHub stars), a framework on minimizing cognitive complexity in software design
 - [[entities/zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.
 
 - [[entities/palantir]] — AI-powered decision infrastructure company. The Palantir Ontology contextualizes computation within "lived reality" for enterprise agent workflows.
