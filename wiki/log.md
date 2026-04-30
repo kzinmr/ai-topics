@@ -1,3 +1,13 @@
+## [2026-04-30] The Revenge of the Data Scientist — Hamel Husain's Foundational Essay on Harness Engineering
+
+- Created [[concepts/harness-engineering]] — Concept page synthesizing Hamel Husain's "Harness is Data Science" thesis: the 5 Eval Pitfalls, the mapping of modern LLM tasks to classic DS practices, binary-over-Likert principle, and vibe-based engineering critique.
+- Enriched [[entities/hamel-husain]] — Added "The Revenge of the Data Scientist" (Mar 2024) to timeline, expanded Harness Engineering section with the 5 Eval Pitfalls and DS mapping table, added source link.
+- Saved raw article: `raw/articles/2024-03-26_hamel-revenge-data-scientist.md`
+- Sources: https://hamel.dev/blog/posts/revenge/
+- Updated index files: wiki/index.md, wiki/log.md.
+
+---
+
 ## [2026-04-30] RAG Is Not Dead — Added Part 5: Multiple Representations ("The Map is Not the Territory")
 
 - Created [[concepts/multiple-representations-rag]] — Bryan Bischof & Ayush Chaurasia. Core thesis: "The Map is Not the Territory" — create multiple specialized maps instead of one universal embedding. Detailed Bischof's unique framework: curving space, buzzword deconstruction, bicycle analogy, three IR responsibilities.

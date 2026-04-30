@@ -47,7 +47,7 @@ His career spans **GitHub** (where he contributed to the precursors of Copilot a
 | Oct 2024–Present | R&D at **AnswerAI** (Jeremy Howard's new AI venture) |
 | 2024 | Published "Your AI Product Needs Evals" (Hamel.dev) |
 | Oct 2024 | Published "Using LLM-as-a-Judge For Evaluation: A Complete Guide" |
-| May 2024 | Co-authored **"What We've Learned From A Year of Building with LLMs"** (O'Reilly Radar, Parts I, II, III) |
+|| Mar 2024 | Published **"The Revenge of the Data Scientist"** — foundational essay arguing the LLM harness is fundamentally a data science problem; introduced the 5 major eval pitfalls |
 | 2025 | Published "Selecting The Right AI Evals Tool" |
 | 2025 | Published **"A Field Guide to Rapidly Improving AI Products"** |
 | 2025 | Released **evals-skills** (OSS plugins for coding agents) |
@@ -81,6 +81,26 @@ Husain is a proponent of **Harness Engineering** — the practice of building sy
 -   **60-80% of dev time** should be spent on error analysis and evaluation.
 -   **Binary over Likert**: Pass/fail judgments are more actionable than 1-5 scales.
 -   **Synthetic Data Strategy**: Generate inputs, not outputs, to prevent inheriting model biases.
+
+#### The Harness is Data Science (2024)
+In his essay "The Revenge of the Data Scientist" (Mar 2024), Husain argued that the LLM harness maps directly to classic data science practices:
+
+| Modern LLM Task | Data Science Fundamental |
+| :--- | :--- |
+| Reading traces, categorizing failures | **Exploratory Data Analysis (EDA)** |
+| Validating an LLM judge | **Model Evaluation** |
+| Building test sets from logs | **Experimental Design** |
+| Expert labeling | **Data Collection** |
+| Monitoring production performance | **Production ML** |
+
+#### The Five Eval Pitfalls
+The same essay identified five common mistakes in LLM evaluation, each rooted in a failure to apply DS fundamentals:
+
+1. **Generic Metrics** — Using off-the-shelf scores (helpfulness, coherence) that can't diagnose app-specific failures.
+2. **Unverified Judges** — Deploying LLM-as-judge without measuring precision/recall against human labels.
+3. **Bad Experimental Design** — Generating synthetic tests by asking an LLM for "50 queries" instead of using production logs.
+4. **Bad Data and Labels** — Outsourcing labeling instead of using domain experts; ignoring criteria drift.
+5. **Automating Too Much** — Trying to automate the data inspection step, which requires human judgment.
 
 ### The "LLM Judge" Skepticism
 While he teaches how to build LLM judges, he is skeptical of their standalone value without human-in-the-loop grounding.
@@ -156,8 +176,9 @@ Co-authored with **Eugene Yan, Shreya Shankar, Jason Liu, Bryan Bischof, Charles
 -   [O'Reilly Radar](https://www.oreilly.com/people/hamel-husain/) — Author profile.
 -   [Lenny's Podcast](https://www.lennysnewsletter.com/p/why-ai-evals-are-the-hottest-new-skill) — Episode summary.
 -   [GitHub](https://github.com/hamelsmu) — Open source projects.
--   [Parlance Labs](https://parlance-labs.com) — Consulting firm.
+- [Parlance Labs](https://parlance-labs.com) — Consulting firm.
 -   [AnswerAI](https://www.answer.ai/) — R&D role.
+- ["The Revenge of the Data Scientist"](https://hamel.dev/blog/posts/revenge/) — Foundational essay arguing the LLM harness is data science, introducing the 5 eval pitfalls (Mar 2024).
 - [P7: You Don't Need a Graph DB (Probably)](https://hamel.dev/notes/llm/rag/p7-graph-db.html) — Co-authored with Jo Kristian Bergum on RAG architecture decisions (2026).
 - [P6: Context Rot](https://hamel.dev/notes/llm/rag/p6-context_rot.html) — Featuring Kelly Hong (Chroma) on LLM context degradation (2026).
 - [Stop Saying RAG Is Dead](https://hamel.dev/notes/llm/rag/not_dead.html) — Open 7-part series with Ben Clavié arguing RAG is not dead (2025).
