@@ -46,8 +46,25 @@ CodeMode is the paradigm where LLMs write code (typically Python) for batch exec
 - **Anthropic**: Documented in multiple blog posts on agent patterns
 - **Cloudflare**: Coined the term "CodeMode"
 
+## Official Implementations
+
+### Pydantic AI Harness — CodeMode
+
+The [pydantic-ai-harness](https://github.com/pydantic/pydantic-ai-harness) library provides the canonical CodeMode implementation:
+
+- `CodeMode` capability wraps all agent tools into a single `run_code` tool
+- Powered by [Monty](https://github.com/pydantic/monty) sandbox (Rust-based Python VM)
+- Supports `asyncio.gather()` for parallel tool execution within one model round-trip
+- Observability via [Logfire](https://pydantic.dev/logfire) — nested tool calls as child spans
+
+### Other Implementations
+
+- **Anthropic** — Code execution in Claude agent mode
+- **Cloudflare** — Coined the term, blog documentation
+
 ## Related Patterns
 
 - [[concepts/harness-engineering]] — Monty as a harness environment
+- [[concepts/pydantic-ai-harness]] — Official CodeMode capability library
 - [[concepts/structured-outputs]] — Type safety constrains LLM output
 - [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — Alternative to MCP tool execution

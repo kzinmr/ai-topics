@@ -1,3 +1,12 @@
+## [2026-04-30] Pydantic AI Harness — Runtime + Harness Full Stack Investigation
+
+- [[concepts/pydantic-ai-harness]] — Fully expanded: capability model abstraction (`AbstractCapability`), full capability matrix (CodeMode ✅, FileSystem 🚧, Memory 🚧, Sub-agents 🚧, Guardrails 🚧, etc.), graduation model (harness → core), AICA "Ralph loop" workflow
+- [[concepts/agent-architecture-decomposition]] — Added "Pydantic: The Full Stack (Runtime + Harness)" section: Monty as Open Runtime + pydantic-ai-harness as Open Harness, analogous to Kubernetes/containerd coupling
+- [[concepts/code-mode]] — Added "Official Implementations" section with pydantic-ai-harness CodeMode details
+- Raw article: raw/articles/2026-04-30_pydantic-ai-harness_capability-library.md
+
+**Key finding**: Pydantic uniquely provides both Open Runtime (Monty) and Open Harness (pydantic-ai-harness) as an integrated stack. CodeMode requires Monty — the Harness decides *when* to write code, the Runtime executes it safely. Samuel Colvin's *"Start from nothing, then selectively grant capabilities"* applies to both layers.
+
 ## [2026-04-30] Harrison Chase's "Open Models / Open Runtime / Open Harness" Framework
 
 - [[entities/harrison-chase]] — New entity page: LangChain CEO who articulated the three-layer agent architecture decomposition

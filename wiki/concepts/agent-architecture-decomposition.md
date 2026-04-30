@@ -157,6 +157,26 @@ The **orchestration layer** that connects the model to the runtime and manages t
 | Portability | High | Low |
 
 LangChain Deep Agents is Chase's reference implementation of an Open Harness.
+[[concepts/pydantic-ai-harness]] is the Pydantic team's reference implementation — a modular capability library that provides CodeMode, memory, orchestration, guardrails, and more.
+
+### Pydantic: The Full Stack (Runtime + Harness)
+
+Pydantic is unique in providing **both** the Open Runtime and Open Harness layers as an integrated stack:
+
+| Layer | Component | Role |
+|---|---|---|
+| **Open Runtime** | [Monty](https://github.com/pydantic/monty) | Secure Python bytecode VM (0.004ms startup, deny-by-default) |
+| **Open Harness** | [pydantic-ai-harness](https://github.com/pydantic/pydantic-ai-harness) | Capability library (CodeMode, memory, orchestration, guards) |
+| **Open Models** | Pydantic AI core | Model-agnostic — works with Claude, GPT, Gemini, Ollama |
+
+**The coupling insight**: CodeMode in the Harness *requires* Monty as its Runtime. The Harness decides *when* to write code vs. use sequential tool calls; the Runtime executes that code safely. This is analogous to how Kubernetes (orchestration) requires container runtime (containerd) — they're separate layers but tightly coupled by design.
+
+This contrasts with frameworks that mix Runtime and Harness concerns:
+- **Claude Code / OpenClaw**: Runtime = bash, Harness = proprietary (not separable)
+- **LangChain**: Runtime = container/VM (external), Harness = LangGraph (separate vendors)
+- **RLM**: Runtime = Python REPL, Harness = recursive context decomposition (same repo, different abstraction levels)
+
+Samuel Colvin's design philosophy — *"Start from nothing, then selectively grant capabilities"* — applies to both Monty (zero filesystem/network by default) and the Harness (zero tools by default — you compose what you need).
 
 ## Relationship to Traditional Architecture
 

@@ -1,7 +1,7 @@
 ---
 title: "pydantic-ai-harness — Official Capability Library for Pydantic AI"
 type: concept
-description: "Official batteries-included capability library for Pydantic AI agents — CodeMode with Monty sandbox, MCP integration, and composable agent extensions."
+description: "Official batteries-included capability library for Pydantic AI agents — CodeMode with Monty sandbox, MCP integration, context management, memory, orchestration, guardrails, and composable agent extensions. Provides the Harness layer that pairs with Monty as Open Runtime."
 category: concepts
 sub_category: AI Agent Architectures
 tags: [pydantic, ai-agents, harness-engineering, sandboxing, mcp, code-execution]
@@ -12,21 +12,52 @@ related:
   - logfire
   - samuel-colvin
   - harness-engineering
+  - agent-architecture-decomposition
 created: 2026-04-30
 updated: 2026-04-30
 sources:
   - https://github.com/pydantic/pydantic-ai-harness
   - https://ai.pydantic.dev/capabilities/
   - https://ai.pydantic.dev/hooks/
+  - https://pydantic.dev/articles/pydantic-monty
 ---
 
 # pydantic-ai-harness
 
 ## TL;DR
 
-**pydantic-ai-harness** is the official "batteries-included" capability library for [Pydantic AI](https://ai.pydantic.dev/), maintained by the Pydantic team. It provides standalone building blocks — tools, lifecycle hooks, instructions, and model settings — that extend what a Pydantic AI agent can do without framework changes.
+**pydantic-ai-harness** is the official "batteries-included" capability library for [Pydantic AI](https://ai.pydantic.dev/), maintained by the Pydantic team. It provides standalone building blocks — tools, lifecycle hooks, and instructions — that extend agent functionality without requiring framework changes.
 
 The key insight: **Pydantic AI core ships only model/framework-level capabilities** (web search, tool search, thinking). Everything else lives in the harness as modular, pick-and-choose components.
+
+**Positioning in the 3-layer architecture** ([agent-architecture-decomposition]]):
+- **Runtime**: Pydantic Monty (Rust-based secure Python interpreter) — [[concepts/monty-sandbox]]
+- **Harness**: pydantic-ai-harness (capability library) — this page
+- Together they form a complete **Open Runtime + Open Harness** stack for production agents.
+
+## The Capabilities Model
+
+### Core Abstraction
+
+A `Capability` is an `AbstractCapability` subclass that bundles:
+
+| Component | Purpose |
+|---|---|
+| **Toolsets** | Collections of tools provided to the agent |
+| **Hooks** | Lifecycle methods (`before_model_request`, `wrap_run`, `after_tool_execute`) that intercept agent graph execution |
+| **Instructions** | System prompts and behavioral guidelines |
+| **Model Settings** | Configuration for the underlying model |
+| **Guards** | Input/output validation, cost budgets, secret masking |
+
+### Graduation Model
+
+Capabilities follow a **staging pipeline**:
+
+```
+pydantic-ai-harness (experimental) → stabilize → prove essential → graduate to Pydantic AI core
+```
+
+This keeps the core lean while allowing rapid experimentation. Capabilities are versioned at 0.x (APIs still stabilizing).
 
 ## Architecture Philosophy
 
@@ -41,19 +72,25 @@ The key insight: **Pydantic AI core ships only model/framework-level capabilitie
 │            pydantic-ai-harness                   │
 │  (standalone, composable capabilities)           │
 │  ├── CodeMode (Monty sandbox)                    │
-│  ├── MCP server connectors                       │
-│  ├── Lifecycle hooks                             │
-│  └── ...more capabilities stabilize here first   │
+│  ├── FileSystem                                  │
+│  ├── Verification Loop                           │
+│  ├── Sliding Window / Context Compaction         │
+│  ├── Memory (KV persistence)                     │
+│  ├── Sub-agents / Planning                       │
+│  ├── Guardrails / Secret Masking                 │
+│  └── Loop Detection                              │
 └─────────────────────────────────────────────────┘
 ```
 
-**Graduation model:** Capabilities start in the harness → stabilize → prove broadly essential → graduate into Pydantic AI core. This keeps the core lean while allowing rapid experimentation.
-
 ## Key Capabilities
 
-### CodeMode
+### CodeMode (Flagship Capability)
 
-The flagship capability. CodeMode wraps **all tools into a single `run_code` tool** powered by [Monty](https://github.com/pydantic/monty) sandbox, enabling the model to orchestrate multiple tool calls with Python code instead of one model round-trip per call.
+**CodeMode wraps all tools into a single `run_code` tool** powered by [Monty](https://github.com/pydantic/monty) sandbox. The model writes Python that calls multiple tools with loops, conditionals, variables, and `asyncio.gather` — all inside one tool call.
+
+**Problem**: Standard tool calling requires one model round-trip per call. An agent needing 10 items makes 11+ model calls — slow, expensive, context-heavy.
+
+**Solution**: CodeMode collapses sequential calls into one script execution.
 
 ```python
 from pydantic_ai import Agent
@@ -68,70 +105,78 @@ agent = Agent(
     ],
 )
 
-result = agent.run_sync(
-    'Rank the open PRs on pydantic/pydantic-ai-harness by thumbs-up reactions.'
-)
+# Model writes Python code internally:
+# paris, tokyo = await asyncio.gather(
+#     get_weather(city='Paris'),
+#     get_weather(city='Tokyo'),
+# )
+# paris_c = await convert_temp(fahrenheit=paris['temp_f'])
+# ...
 ```
 
-**Why this matters:** Instead of the agent making 10 sequential tool calls (each requiring a full LLM round-trip), CodeMode lets the model write a single Python script that calls all 10 tools at once. This dramatically reduces latency and token cost for multi-step operations.
+**Runtime + Harness coupling**: CodeMode requires `[code-mode]` extra, which installs Monty (the Runtime). The Harness provides the orchestration layer that decides *when* to write code vs. use sequential tool calls.
 
-### Monty Sandbox Integration
+### Full Capability Matrix
 
-CodeMode requires the `[code-mode]` extra, which installs [Monty](https://github.com/pydantic/monty) — Pydantic's Rust-based secure Python interpreter. Monty provides:
+| Category | Capability | Status | Notes |
+| :--- | :--- | :--- | :--- |
+| **Tools & Execution** | Code Mode | ✅ Available | Powered by Monty sandbox |
+| | File System | 🚧 PR #177 | Read/write/search with path traversal prevention |
+| | Verification Loop | 🚧 PR #169 | Auto-run tests after edits, auto-fix failures |
+| **Context Mgmt** | Sliding Window | 🚧 PR #191 | Trim history to stay within token limits |
+| | Context Compaction | 🚧 PR #191 | LLM-powered summarization of old messages |
+| **Memory** | Persistence (KV) | 🚧 PR #176/179 | Save/restore conversation state and memory |
+| **Orchestration** | Sub-agents | 🚧 PR #178 | Delegate tasks to specialized child agents |
+| | Planning | 🚧 PR #180 | Break complex tasks into structured plans |
+| **Safety** | Guardrails | 🚧 PR #182 | Input/output validation and cost/token budgets |
+| | Secret Masking | 🚧 PR #172 | Detect and redact secrets in I/O |
+| **Reliability** | Loop Detection | 🚧 PR #186 | Detect and break repetitive agent loops |
+| | Tool Error Recovery | 🚧 PR #171 | Auto-retry failed tool calls |
 
-- Sub-interpreter isolation
-- Resource limits (memory, CPU time)
-- Capability-based security (no arbitrary filesystem/network access)
+*Note: Several capabilities are being upstreamed from community partner [vstorm-co](https://github.com/vstorm-co).*
 
 ### Logfire Observability
 
 When combined with [Logfire](https://pydantic.dev/logfire), every agent run gets a trace. With CodeMode, you see the `run_code` span with each nested tool call as a child span — making it easy to debug what the model's code actually did.
 
-```python
-import logfire
-from pydantic_ai import Agent
-from pydantic_ai_harness import CodeMode
+## Development Workflow
 
-logfire.configure()
-logfire.instrument_pydantic_ai()
+### AICA (AI Code Assistant) Integration
 
-agent = Agent('anthropic:claude-sonnet-4-6', capabilities=[CodeMode()])
+The repo uses a state-machine workflow called the **"Ralph loop"**:
+
+```
+TRIAGE → GOALS → PLAN → CODE → VERIFY → REVIEW → PUBLISH
 ```
 
-## Capability Matrix
+PR review uses the **DDD+ protocol**: do, dismiss, discuss, waiting, done.
 
-The harness team studied leading coding agents, agent frameworks, and Claw-style assistants to map every capability area that matters for production agents. The matrix tracks:
+### Coding Standards
 
-| Capability Area | Status | Notes |
-|----------------|--------|-------|
-| Code Execution | ✅ CodeMode | Powered by Monty sandbox |
-| MCP Integration | ✅ Core | From pydantic-ai core |
-| Web Search | ✅ Core | From pydantic-ai core |
-| Tool Search | ✅ Core | Deferred tools from pydantic-ai |
-| Thinking | ✅ Core | Model-level capability |
-| ...more | 🔄 Stabilizing | See repo for current matrix |
+| Standard | Requirement |
+|---|---|
+| **Type Safety** | Pyright strict mode. No `Any` types. |
+| **Type Narrowing** | No typecasting (`cast()`); use narrowing. |
+| **Testing** | 100% branch coverage (`make testcov`). |
+| **Linting** | Ruff (line-length=120, single quotes, max-complexity=15). |
+| **Security** | PRs modifying `pyproject.toml`/`uv.lock` from non-members are auto-closed. |
 
-## Installation
+## Positioning in Harrison Chase's 3-Layer Framework
 
-```bash
-# Basic installation
-uv add pydantic-ai-harness
+Pydantic uniquely provides **both Runtime and Harness**:
 
-# With code execution support (includes Monty sandbox)
-uv add "pydantic-ai-harness[code-mode]"
-```
+| Layer | Pydantic Component | Role |
+|---|---|---|
+| **Open Runtime** | Monty | Secure Python bytecode VM (0.004ms startup, deny-by-default) |
+| **Open Harness** | pydantic-ai-harness | Capability library (CodeMode, memory, orchestration, guards) |
+| **Open Models** | Model-agnostic | Works with Claude, GPT, Gemini, Ollama, etc. via Pydantic AI core |
 
-**Requirements:** Python 3.10+, `pydantic-ai-slim>=1.80.0`
+This is different from:
+- **Claude Code / OpenClaw**: Runtime = bash, Harness = proprietary
+- **LangChain Deep Agents**: Runtime = container, Harness = LangChain orchestration
+- **RLM**: Runtime = Python REPL, Harness = recursive context decomposition
 
-## Relationship to Harness Engineering
-
-pydantic-ai-harness embodies the broader **harness engineering** trend: the realization that the differentiator for production AI agents is not the base model, but the surrounding execution environment — tools, security boundaries, observability, and lifecycle management.
-
-Key design principles:
-1. **Separation of concerns** — Core handles model/framework; harness handles capabilities
-2. **Gradual graduation** — Proven capabilities move from harness to core
-3. **Composability** — Pick and choose only what you need
-4. **Security-first** — Monty sandbox as the default for code execution
+Samuel Colvin's design philosophy: *"Start from nothing, then selectively grant capabilities."* This applies to both Monty (no filesystem/network by default) and the Harness (no tools by default — you compose what you need).
 
 ## See Also
 
@@ -140,3 +185,5 @@ Key design principles:
 - [[concepts/logfire]] — Observability and tracing
 - [[entities/samuel-colvin]] — Pydantic creator
 - [[concepts/harness-engineering]] — Broader harness engineering pattern
+- [[concepts/agent-architecture-decomposition]] — 3-layer framework context
+- [[concepts/code-mode]] — Code execution pattern for agents

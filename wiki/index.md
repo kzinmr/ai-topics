@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 706 | Full entries: 674 | Stubs: 620
+> Last updated: 2026-04-30 | Total pages: 706 | Full entries: 675 | Stubs: 620
 
 ## Entities (339 pages)
 
@@ -661,7 +661,7 @@
 - [[concepts/project-glasswing]] — Anthropic's initiative to use claude-mythos for defensive security research — finding and patching vulnerabilities in critical software.
 - [[concepts/prompt-caching]] — LLM API呼び出しにおけるキャッシングの設計パターン。コスト削減とレイテンシ改善のために、どの部分をキャッシュし、いつ無効化するかを体系的に扱う。
 |- [[concepts/pydantic-ai]] — Pydantic AI is an open-source Python agent framework built by the Pydantic team. It brings the "FastAPI feeling" to GenAI development: validated outputs, dependency injection, structured tool contr...
-|- [[concepts/pydantic-ai-harness]] — Pydantic AI as an agent harness — dependency injection, tool validation, structured outputs, and the Monty sandbox for safe code execution. Bridges the gap between web frameworks (FastAPI) and agent frameworks.
+|- [[concepts/pydantic-ai-harness]] — Official capability library for Pydantic AI — CodeMode with Monty sandbox, memory, orchestration, guardrails, context management, and composable agent extensions. Together with Monty forms the full Open Runtime + Open Harness stack.
 |- [[concepts/pydantic-serializability]]
 - [[concepts/pydantic]] — Pydantic is a Python data validation library that uses type hints to validate, serialize, and document data. It has become the de facto standard for data validation in the Python ecosystem, with 27...
 - [[concepts/qwen3-6-27b]] — A dense 27B parameter model from the Qwen (OpenQwen) series that outperforms the predecessor 397B MoE model on agentic coding benchmarks.
