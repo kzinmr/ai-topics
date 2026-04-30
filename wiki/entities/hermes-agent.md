@@ -104,3 +104,13 @@ The article "15 Hermes Agent features you've never touched" (2791 bookmarks, 913
 ## Sources
 - [Hermes Agent: What People Are Actually Using It For](https://x.com/i/article/2045935785661349956) (2026-04-26, X article) — usage patterns from Reddit/X/YouTube
 - [Hermes Agent + Polymarket - weather trading guide](https://x.com/i/article/2045080054917476451) (2026-04-25, X article) — installation + Polymarket trading
+
+## References
+
+- 2026-1-month-with-hermes
+- hermes-architecture-analysis-kazuki-inamura
+
+- 2026-04-27_2045080054917476451_Hermes-Agent-Polymarket-Self-Learning-Weather-Trading-Bot
+- 2026-04-27_2045935785661349956_Hermes-Agent-What-People-Are-Actually-Using-It-For
+- 2026-04-28_x-article-15-hermes-agent-features
+- 2042539396638085339_What-Hermes-Agent-Can-Do-for-You

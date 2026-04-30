@@ -114,3 +114,7 @@ See full details: [[boris-cherny--key-work|Key Work & Impact]]
 - [How the Creator of Claude Code Uses Claude Code (paddo.dev)](https://paddo.dev/blog/how-boris-uses-claude-code/) — Detailed workflow analysis
 - [Thread Reader App: Boris Cherny's Threads](https://threadreaderapp.com/user/bcherny) — Comprehensive collection of Claude Code insights
 - [borischerny.com](https://borischerny.com/) — Personal blog
+
+## References
+
+- chermycode-boris-cherny-dev-env

@@ -114,3 +114,40 @@ The common thread is **curiosity-driven mathematical exploration**. He finds som
 - [GPT-5 for AI-Assisted Discovery](https://www.johndcook.com/blog/2025/10/10/gpt-5-for-ai-assisted-discovery/) (Oct 2025)
 - [johndcook.com/about](https://www.johndcook.com/blog/about/)
 - [Gaussian distributed weights for LLMs: NF4 and QLoRA](https://www.johndcook.com/blog/2026/04/18/qlora/) (Apr 2026) — NF4量子化形式はなぜFP4よりLLMの重み分布に適しているかを数学的に分析。QLoRAの非対称量子化がなぜ正確に0を表現できないか、bitsandbytesのα=929/960という設定の由来等问题を追究。
+
+## References
+
+- johndcook.com--blog-2026-03-26-lebesgue-constants--8cd1ea58
+- johndcook.com--blog-2026-03-27-an-ai-odyssey-part-3-lost-needle-in-the-hays--47c13835
+- johndcook.com--blog-2026-03-27-complex-argument--05a170b3
+- johndcook.com--blog-2026-03-31-morse-code-tree--b013ee37
+- johndcook.com--blog-2026-03-31-quantum-y2k--5f042224
+- johndcook.com--blog-2026-04-01-truncated-triangular-numbers--a9e81223
+- johndcook.com--blog-2026-04-02-artemis-apollo--1cd20011
+- johndcook.com--blog-2026-04-02-hyperbolic-napier-mnemonic--e623171b
+- johndcook.com--blog-2026-04-03-roman-moon-greek-moon--26cebda6
+- johndcook.com--blog-2026-04-04-kalman-bayes--8e9eaf78
+- johndcook.com--blog-2026-04-05-hipaa-compliant-ai--fc6185f9
+- johndcook.com--blog-2026-04-06-tofolli-gates--a34baf8a
+- johndcook.com--blog-2026-04-08-andrica--48408185
+- johndcook.com--blog-2026-04-08-artemis-1-apollo-12--6b49defd
+- johndcook.com--blog-2026-04-09-pyramid-speed-of-light--f08cc138
+- johndcook.com--blog-2026-04-09-random-hexagon-fractal--707b68c7
+- johndcook.com--blog-2026-04-10-fraction-digits--841bfad8
+- johndcook.com--blog-2026-04-12-lunations--7f568bdc
+- johndcook.com--blog-2026-04-12-orthodox-western-easter--c88c219b
+- johndcook.com--blog-2026-04-13-the-smallest-math-library--eaef31b8
+- johndcook.com--blog-2026-04-14-artz-parabola--235220bb
+- johndcook.com--blog-2026-04-14-intersecting-spheres-and-gps--0b6e3b99
+- johndcook.com--blog-2026-04-16-newton-diameters--ac1ff698
+- johndcook.com--blog-2026-04-17-fp4--64365c7c
+- johndcook.com--blog-2026-04-18-qlora--d229eb2a
+- johndcook.com--blog-2026-04-20-newton-diameter-quintic--213f80cc
+- johndcook.com--blog-2026-04-21-an-ai-odyssey-part-4-astounding-coding-agent--85a4b5af
+- johndcook.com--blog-2026-04-23-solve-a-right-triangle--db90ef19
+- johndcook.com--blog-2026-04-23-solve-an-oblique-triangle--26f8f89a
+- johndcook.com--blog-2026-04-24-nonlinear-pendulum--c358c47b
+- johndcook.com--blog-2026-04-25-exact-solution-nonlinear-pendulum--82a86f77
+- johndcook.com--blog-2026-04-25-nth-derivative-of-a-quotient--1ec0ba72
+- johndcook.com--blog-2026-04-28-circular-arc-approximation--73d10e2a
+- johndcook.com--blog-2026-04-28-even-series-trick--74cb4171

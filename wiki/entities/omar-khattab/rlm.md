@@ -55,3 +55,10 @@ Both Khattab/Zhang's RLM framework and [[shunyu-yao]]'s RL generalization thesis
 - [[concepts/rlms]] — Concept page
 - [[entities/omar-khattab]] — Co-author
 - [[entities/alex-zhang]] — First author
+
+## References
+
+- 2026-04-25-rlm-gepa-combo
+- 2026-04-26-rlm-gepa-experiment
+- raw-works-rlms-new-reasoning-models-2026-04-20
+- raw-works-rlms-sota-on-longcot-2026-04-19

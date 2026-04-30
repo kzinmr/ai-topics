@@ -136,3 +136,16 @@ Smith writes thoughtfully about the business of running Tedium as an independent
 - "They're Vibe-Coding Spam Now" (February 2026)
 - "Paywalls For Minimalists" (March 2026)
 - Tedium author page: https://tedium.co/author/ernie/
+
+## References
+
+- feed.tedium.co--link-15204-17307620-apple-mac-pro-discontinued-anniversary--8236ac2e
+- feed.tedium.co--link-15204-17308221-self-hosting-platform-tools-guide--1b655694
+- feed.tedium.co--link-15204-17311236-ronald-g-wayne-apple-interview--b4397b30
+- feed.tedium.co--link-15204-17312777-emdash-cloudflare-wordpress-competitor--d234d4e8
+- feed.tedium.co--link-15204-17315642-pork-johnson-gimp-parody-interview--581eae81
+- feed.tedium.co--link-15204-17316812-solitaire-card-game-types-history--9bbb124c
+- feed.tedium.co--link-15204-17319282-linux-external-fingerprint-reader-challe--1a6dda1a
+- feed.tedium.co--link-15204-17321557-tax-forms-history-irs--3dec023e
+- feed.tedium.co--link-15204-17323348-mcclatchy-journalism-ai-scapegoat--2bb93b51
+- feed.tedium.co--link-15204-17324561-tweezer-weird-facts-history--601352cf

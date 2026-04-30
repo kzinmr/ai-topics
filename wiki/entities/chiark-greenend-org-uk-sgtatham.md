@@ -109,3 +109,33 @@ Tatham's series on aperiodic tilings (five parts and counting) and his essay on 
 - [Coroutines in C](https://www.chiark.greenend.org.uk/~sgtatham/coroutines.html)
 - [Writing commit messages](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/commit-messages/)
 - [Symbiosisware](https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/symbiosisware/)
+
+## References
+
+- chiark.greenend.org.uk--sgtatham-quasiblog-adventitious--c4d9d5fb
+- chiark.greenend.org.uk--sgtatham-quasiblog-aperiodic-followup--bc73ba2a
+- chiark.greenend.org.uk--sgtatham-quasiblog-aperiodic-refine--e141342c
+- chiark.greenend.org.uk--sgtatham-quasiblog-aperiodic-spectre--ed40eb98
+- chiark.greenend.org.uk--sgtatham-quasiblog-aperiodic-tilings--7868abd7
+- chiark.greenend.org.uk--sgtatham-quasiblog-aperiodic-transducers--a60a18f5
+- chiark.greenend.org.uk--sgtatham-quasiblog-bubblesort--35710caf
+- chiark.greenend.org.uk--sgtatham-quasiblog-bugtracker-separate--51ba701d
+- chiark.greenend.org.uk--sgtatham-quasiblog-c11-generic--16360ed2
+- chiark.greenend.org.uk--sgtatham-quasiblog-code-review-antipatterns--ce35aa04
+- chiark.greenend.org.uk--sgtatham-quasiblog-commit-messages--6e00df14
+- chiark.greenend.org.uk--sgtatham-quasiblog-coroutines-c-20--d6b197bf
+- chiark.greenend.org.uk--sgtatham-quasiblog-coroutines-philosophy--12d3c7d2
+- chiark.greenend.org.uk--sgtatham-quasiblog-errmsg--930bc032
+- chiark.greenend.org.uk--sgtatham-quasiblog-findloop--7c9313ec
+- chiark.greenend.org.uk--sgtatham-quasiblog-git-no-forge--898dabb3
+- chiark.greenend.org.uk--sgtatham-quasiblog-mines-solver--8c5a2c13
+- chiark.greenend.org.uk--sgtatham-quasiblog-net-solver--09cd6467
+- chiark.greenend.org.uk--sgtatham-quasiblog-parsing--784cc4ed
+- chiark.greenend.org.uk--sgtatham-quasiblog-putty-certificates--f5adb297
+- chiark.greenend.org.uk--sgtatham-quasiblog-putty-history--72457bda
+- chiark.greenend.org.uk--sgtatham-quasiblog-putty-icons--699fcf9b
+- chiark.greenend.org.uk--sgtatham-quasiblog-putty-woa--045f42f9
+- chiark.greenend.org.uk--sgtatham-quasiblog-stop-helping--f58ad8c1
+- chiark.greenend.org.uk--sgtatham-quasiblog-symbiosisware--135daeeb
+- chiark.greenend.org.uk--sgtatham-quasiblog-transience--a0f6dabd
+- chiark.greenend.org.uk--sgtatham-quasiblog-xor--cd697e44

@@ -113,3 +113,38 @@ His **"Modern C++ for C Programmers"** series (6 parts) is a widely-referenced r
 - [Optimizing optimizing: 400% speedup of PowerDNS](https://berthub.eu/articles/posts/optimizing-optimizing/)
 - [SkewDB in Nature Scientific Data](https://www.nature.com/articles/s41597-022-01440-9)
 - [berthub.eu/articles](https://berthub.eu/articles/) — Full article archive
+
+## References
+
+- berthub.eu--articles-nevenfuncties--549a57a7
+- berthub.eu--articles-posts-an-ai-premortem--3535e81f
+- berthub.eu--articles-posts-aws-and-microsoft-are-selling-much-more-than---1593eb80
+- berthub.eu--articles-posts-bert-vote-gemeenteraad-2026--ab192048
+- berthub.eu--articles-posts-betere-kamerdocumenten-en-innovatie--c5dae9e7
+- berthub.eu--articles-posts-big-tech-clouds-niet-veiliger-met-papier--2d2b805f
+- berthub.eu--articles-posts-btw-as-an-american-service--4c1d926b
+- berthub.eu--articles-posts-cloud-kootwijk-verkiezingen--00106506
+- berthub.eu--articles-posts-cloud-overview--79bac584
+- berthub.eu--articles-posts-dashboard-amerikaanse-afhankelijkheden--3b651515
+- berthub.eu--articles-posts-data-experts-politiek-tweede-kamer--d32fdd73
+- berthub.eu--articles-posts-digitaal-zoet-zuur-coalitie-akkoord--c58befdc
+- berthub.eu--articles-posts-digitale-coalitieplannen--b52bcc06
+- berthub.eu--articles-posts-ft-on-european-cloud--c74744dc
+- berthub.eu--articles-posts-ga-niet-kapot-aan-je-overheid--e5c87380
+- berthub.eu--articles-posts-hello-europe-joe-biden-is-gone--42e7bfd2
+- berthub.eu--articles-posts-het-nerdvote-effect--31910ca2
+- berthub.eu--articles-posts-keynote-opening-digital-commons-edic-eu--419c9c67
+- berthub.eu--articles-posts-lijstduwer-fra-award-bnr-nrc-btw-meer--7a056066
+- berthub.eu--articles-posts-makelaarstaal-over-onze-belastinggeheimen--dbf75f01
+- berthub.eu--articles-posts-nadi-nabi-in-europa-of-niet--233fe6e7
+- berthub.eu--articles-posts-overheid-operationele-afhankelijkheden--1d6fffe1
+- berthub.eu--articles-posts-rapport-digitale-afhankelijkheden-energy-inno--3800bf75
+- berthub.eu--articles-posts-restzetels-en-voorkeursstemmen--27a9b358
+- berthub.eu--articles-posts-software-turnkey-as-a-service--4e5a4244
+- berthub.eu--articles-posts-the-european-cloud-2025--88567b21
+- berthub.eu--articles-posts-tu-delft-security-of-science--a8cf9ecc
+- berthub.eu--articles-posts-unsigned-char-std-string-cpp--d7f42c87
+- berthub.eu--articles-posts-update-7-februari--7f6502d2
+- berthub.eu--articles-posts-updates-opentk-maart-2026--15e59c35
+- berthub.eu--articles-posts-waarom-we-nu-wel-zuinig-moeten-doen-en-meer-g--b7d6f3ad
+- berthub.eu--articles-praatjes--a3d07904

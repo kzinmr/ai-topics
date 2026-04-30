@@ -191,3 +191,17 @@ Shihipar's X activity (@trq212) typically covers:
 4. **Spiritual and philosophical content** — Thoughtful posts on intention, character development, and the meaning of technology in human life
 5. **AI product strategy** — Insights on building AI products that users actually want, drawing from extensive startup experience
 6. **Community engagement** — Active participation in AI developer communities, workshop presentations, and knowledge sharing
+
+## References
+
+- thariq-shihipar-a-lovely-autumn-night
+- thariq-shihipar-claude-computer-use-is-vision-the-ultimate-api
+- thariq-shihipar-clay-and-light
+- thariq-shihipar-entropix
+- thariq-shihipar-fast
+- thariq-shihipar-intention
+- thariq-shihipar-interpretability
+- thariq-shihipar-llm-powered-sorting-with-trueskill
+- thariq-shihipar-sparse-rewards
+- thariq-shihipar-spiritual-technology
+- thariq-shihipar-the-thing

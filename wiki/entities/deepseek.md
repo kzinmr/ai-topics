@@ -33,3 +33,7 @@ Chinese open-source LLM provider that has driven **cost disruption** in the AI i
 
 - How does DeepSeek's open-source approach compare to Western proprietary models in capability?
 - What is the role of U.S. open-source models (e.g., Llama family) in competing with China's open-source ecosystem?
+
+## References
+
+- chapterpal--deepseek-v4-million-token-context

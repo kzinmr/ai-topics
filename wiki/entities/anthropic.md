@@ -109,3 +109,11 @@ Anthropic's research priorities:
 - [[anthropic]] — The model family
 - [[claude-code]] — Claude Code CLI agent
 - [[foundation-capital]] — Partner in Claude Managed Agents
+
+## References
+
+- 2026-04-12-anthropic-openclaw-subscription-ban
+- 2026-04-15-property-based-testing-anthropic
+
+- 2026-04-26-claude-code-anthropic-agentic-coding-system
+- anthropic-claude-code-session-management-1m-context

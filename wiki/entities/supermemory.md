@@ -76,3 +76,7 @@ SMFS solves the fundamental mismatch between agentic search (designed for code) 
 ## Related
 - [[concepts/smfs]] — The filesystem concept page
 - [[concepts/filesystem-memory]] — Alternative approach to agent memory
+
+## References
+
+- 2026-04-28_x-article-introducing-smfs-supermemory-filesystems

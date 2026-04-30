@@ -71,3 +71,7 @@ Rivet's approach to agent infrastructure centers on:
 - [Rivet Launches the Sandbox Agent SDK to Solve Agent API Fragmentation](https://www.infoq.com/news/2026/02/rivet-agent-sandbox-sdk/) — InfoQ / Sergio De Simone, 2026-02-23
 - [github.com/rivet-dev/sandbox-agent](https://github.com/rivet-dev/sandbox-agent)
 - [github.com/rivet-dev/agent-os](https://github.com/rivet-dev/agent-os)
+
+## References
+
+- 2026-02-04_rivet-docker-sandbox-microvm-api

@@ -91,3 +91,7 @@ KarpathyのAutoResearch（自動研究手法）の自然な拡張であり、LLM
 - [Karpathy's AutoResearch](https://karpathy.github.io/2025/04/28/self-play-benchmark.html)
 - [Agent Disagreement (Agreement Bug)](agreement-bug.md)
 - [Multi-Agent Systems](multi-agent-systems.md)
+
+## References
+
+- 2026-04-12-shl0ms-autoreason-paper

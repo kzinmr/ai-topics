@@ -70,3 +70,7 @@ Proposed a **selection theorem for agent-like structures** based on resource con
 - [LessWrong Profile](https://www.lesswrong.com/users/tailcalled)
 - [The Causal Backbone Conjecture](https://www.lesswrong.com/posts/BcrPdMipzqecg4JdQ/the-causal-backbone-conjecture)
 - [Rationalists are missing a core piece for agent-like structure](https://www.lesswrong.com/posts/YZvyQn2dAw4tL2xQY/rationalists-are-missing-a-core-piece-for-agent-like)
+
+## References
+
+- tailcalled-causal-backbone-conjecture-2024

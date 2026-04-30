@@ -144,3 +144,17 @@ In his most recent writing, Armin has been defending the irreplaceable value of 
 - UV: ~25K+ stars in its first year, became a major Python packaging tool
 - His "Agent Psychosis" post (2026) sparked widespread discussion in the developer community about AI coding culture
 - Consistently ranked among the most influential Python developers
+
+## References
+
+- lucumr.pocoo.org--2026-1-27-earendil--979124ed
+- lucumr.pocoo.org--2026-1-31-pi--0eb410a7
+- lucumr.pocoo.org--2026-2-13-the-final-bottleneck--c0f2f354
+- lucumr.pocoo.org--2026-2-9-a-language-for-agents--77a0e78a
+- lucumr.pocoo.org--2026-3-20-some-things-just-take-time--2f940842
+- lucumr.pocoo.org--2026-3-5-theseus--586d096c
+- lucumr.pocoo.org--2026-4-11-the-center-has-a-bias--46e39b9f
+- lucumr.pocoo.org--2026-4-23-equity-for-europeans--ce9ed359
+- lucumr.pocoo.org--2026-4-28-before-github--bdde8eb0
+- lucumr.pocoo.org--2026-4-4-absurd-in-production--f79bb5d7
+- lucumr.pocoo.org--2026-4-8-mario-and-earendil--403fe24e

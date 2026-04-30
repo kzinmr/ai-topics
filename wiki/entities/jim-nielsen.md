@@ -154,3 +154,8 @@ Jim built [Can I Still Use?](https://canistilluse.com) — a site documenting wh
 - [Can I Still Use?](https://canistilluse.com) (2021)
 - [jim-nielsen.com](https://jim-nielsen.com) — Personal site and portfolio
 - [Quadratic](https://www.quadratichq.com) — Where Jim is a founding engineer
+
+## References
+
+- blog.jim-nielsen.com--2026-collective-speed-isnt-the-sum-of-individual-speed--5ba65187
+- blog.jim-nielsen.com--2026-collective-speed-isnt-the-sum-of-individual-speed--f3bd5712

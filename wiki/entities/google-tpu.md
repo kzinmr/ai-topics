@@ -134,3 +134,7 @@ The eighth generation's dual-system specialization (8t for training, 8i for infe
 
 -  — Google Cloud Blog, Cloud Next 2026
 -  — AINews #21, Latent.Space
+
+## References
+
+- tpu-8t-8i-technical-deep-dive

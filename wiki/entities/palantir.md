@@ -93,3 +93,7 @@ Palantir's hands-on onboarding program where customers achieve operational AI ou
 
 - [Connecting Agents to Decisions](https://x.com/i/article/2049136883528011954) — Palantir X Article, April 28, 2026
 - [raw/articles/2026-04-28_connecting-agents-to-decisions.md](../raw/articles/2026-04-28_connecting-agents-to-decisions.md)
+
+## References
+
+- 2026-04-28_x-article-connecting-agents-to-decisions-palantir

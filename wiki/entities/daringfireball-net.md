@@ -161,3 +161,8 @@ Daring Fireball has operated as an independent publication for over two decades.
 - "Something Is Rotten in the State of Cupertino" (March 2025)
 - "Apple Pulls Advanced Data Protection From the UK" (February 2025)
 - Apple on the Digital Markets Act (September 2025)
+
+## References
+
+- daringfireball.net--2026-04-nyt-wrong-crossword-grid--f77c4b38
+- daringfireball.net--feeds-sponsors--a706ab2f

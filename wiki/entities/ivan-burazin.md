@@ -65,3 +65,7 @@ Burazin argues that the market term "sandbox" undersells the concept. Humans use
 - [Daytona.io](https://www.daytona.io/)
 - [WorkOS: Composable computers for agents](https://workos.com/blog/composable-computers-for-agents-daytona-ivan-burazin) (2026-04-15)
 - [Cerebral Valley: Daytona deep dive](https://cerebralvalley.beehiiv.com/p/daytona-composable-computers-for-ai-agents) (2026-01-20)
+
+## References
+
+- 2026-04-30_ivanburazin_headless-saas

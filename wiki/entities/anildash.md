@@ -132,3 +132,8 @@ Building on his coding agents thesis, Anil envisions:
 - [A Codeless Ecosystem, or hacking beyond vibe coding](https://anildash.com/2026/01/27/codeless-ecosystem/) (Jan 2026)
 - [500,000 tech workers have been laid off since ChatGPT was released](https://anildash.com/2026/01/06/500k-tech-workers-laid-off/) (Jan 2026)
 - [Why We Speak](https://anildash.com/2026/01/26/why-we-speak/) (Jan 2026)
+
+## References
+
+- anildash.com--2026-04-28-one-good-ai-is-here--6fa4603f
+- anildash.com--2026-04-30-artemis-photos-flickr--69a418b9

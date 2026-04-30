@@ -122,3 +122,10 @@ This frustration led him to build tooling and share practical solutions for cros
 - Spegel project: https://github.com/spegel-org/spegel
 - Kubernetes Generated Secret: https://github.com/phillebaba/kubernetes-generated-secret
 - Minifeed aggregation: https://minifeed.net/blogs/28xoqC74
+
+## References
+
+- philiplaine.com--posts-cross-compiling-docker-images--d094ad29
+- philiplaine.com--posts-getting-forked-by-microsoft--70fd3908
+- philiplaine.com--posts-s3-static-website--232ac07c
+- philiplaine.com--posts-ubiquiti-and-vpn-clients--d420662f

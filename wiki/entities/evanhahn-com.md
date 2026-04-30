@@ -146,3 +146,14 @@ In his "[Programming Beliefs as of July 2024](https://evanhahn.com/programming-b
 - [Helmet.js](https://github.com/helmetjs/helmet) (226M+ downloads/year)
 - [Express in Action](https://www.manning.com/books/express-in-action) (Manning)
 - [JavaScript Testing with Jasmine](https://www.oreilly.com/library/view/javascript-testing-with/9781491943410/) (O'Reilly)
+
+## References
+
+- evanhahn.com--all-tests-pass-a-short-story--ae5343b6
+- evanhahn.com--how-i-use-gen-ai-on-this-blog--3a1cf847
+- evanhahn.com--in-defense-of-githubs-poor-uptime--cb1ede3b
+- evanhahn.com--introducing-gzpeek--eed82059
+- evanhahn.com--llm-eliza--79a6e181
+- evanhahn.com--notes-from-february-2026--b116241b
+- evanhahn.com--notes-from-march-2026--1c9c8967
+- evanhahn.com--the-two-kinds-of-error--6874a492

@@ -133,3 +133,63 @@ Perhaps Dan's most influential meta-contribution is his willingness to change hi
 - Redux: ~60K+ GitHub stars, foundational to React ecosystem
 - His blog consistently ranks among the top technical blogs in JavaScript surveys
 - Known for animated, interactive blog posts that teach through exploration rather than exposition
+
+## References
+
+- overreacted.io--a-chain-reaction--a1ef63a9
+- overreacted.io--a-complete-guide-to-useeffect--85f6e5fa
+- overreacted.io--a-lean-syntax-primer--bef9d206
+- overreacted.io--a-social-filesystem--f8483a3b
+- overreacted.io--algebraic-effects-for-the-rest-of-us--1b43ce38
+- overreacted.io--before-you-memo--97f0d997
+- overreacted.io--beyond-booleans--6a0e0bfa
+- overreacted.io--coping-with-feedback--94b8e4ca
+- overreacted.io--fix-like-no-ones-watching--4b925533
+- overreacted.io--functional-html--f41b31d0
+- overreacted.io--goodbye-clean-code--8c548fa5
+- overreacted.io--hire-me-in-japan--23681a61
+- overreacted.io--how-are-function-components-different-from-classes--4a0b4e9d
+- overreacted.io--how-does-react-tell-a-class-from-a-function--91d8a506
+- overreacted.io--how-does-setstate-know-what-to-do--9d8ba10e
+- overreacted.io--how-does-the-development-mode-work--1a5da350
+- overreacted.io--how-imports-work-in-rsc--ee5796ad
+- overreacted.io--how-to-fix-any-bug--b7a450eb
+- overreacted.io--im-doing-a-little-consulting--72028829
+- overreacted.io--impossible-components--a22447e4
+- overreacted.io--introducing-rsc-explorer--0eb57635
+- overreacted.io--jsx-over-the-wire--6dbfcdfd
+- overreacted.io--making-setinterval-declarative-with-react-hooks--4b816f37
+- overreacted.io--my-decade-in-review--5fe8f3f3
+- overreacted.io--my-wishlist-for-hot-reloading--ba47eea2
+- overreacted.io--name-it-and-they-will-come--165cfac0
+- overreacted.io--npm-audit-broken-by-design--173cf2c2
+- overreacted.io--on-let-vs-const--a1355220
+- overreacted.io--one-roundtrip-per-navigation--46e2fdae
+- overreacted.io--open-social--2f640746
+- overreacted.io--optimized-for-change--5ee36c05
+- overreacted.io--preparing-for-tech-talk-part-1-motivation--d7828739
+- overreacted.io--preparing-for-tech-talk-part-2-what-why-and-how--886ce164
+- overreacted.io--preparing-for-tech-talk-part-3-content--78d1bc34
+- overreacted.io--progressive-json--fdb6a7d5
+- overreacted.io--react-as-a-ui-runtime--da0feb63
+- overreacted.io--react-for-two-computers--fe10d36e
+- overreacted.io--rsc-for-astro-developers--46e7e4e0
+- overreacted.io--rsc-for-lisp-developers--84408baf
+- overreacted.io--static-as-a-server--911a63ea
+- overreacted.io--suppressions-of-suppressions--7d8723ec
+- overreacted.io--the-bug-o-notation--a24df39d
+- overreacted.io--the-elements-of-ui-engineering--7cf94a42
+- overreacted.io--the-math-is-haunted--50e56944
+- overreacted.io--the-two-reacts--f066b655
+- overreacted.io--the-wet-codebase--91ea2b24
+- overreacted.io--things-i-dont-know-as-of-2018--9016e7c3
+- overreacted.io--what-are-the-react-team-principles--d55d41db
+- overreacted.io--what-does-use-client-do--f37323ba
+- overreacted.io--what-is-javascript-made-of--0c725b1d
+- overreacted.io--where-its-at--482544ad
+- overreacted.io--why-do-hooks-rely-on-call-order--4dee4ddb
+- overreacted.io--why-do-react-elements-have-typeof-property--afddda1d
+- overreacted.io--why-do-we-write-super-props--75805534
+- overreacted.io--why-does-rsc-integrate-with-a-bundler--b618288c
+- overreacted.io--why-isnt-x-a-hook--a5c5779f
+- overreacted.io--writing-resilient-components--7d6249a1

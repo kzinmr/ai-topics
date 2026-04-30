@@ -140,3 +140,21 @@ Cellebrite — Device extraction company analyzed in Lee's technofascism framewo
 - [Dangerzone](https://dangerzone.rocks) — Document sanitization tool
 - [Lockdown Systems Collective](https://lockdown.systems) — Cyd app development
 - GitHub: [@micahflee](https://github.com/micahflee)
+
+## References
+
+- micahflee.com--are-your-signal-groups-full-of-people-name-things-like-l-or---2bb35cd8
+- micahflee.com--ddosecrets-publishes-410-gb-of-heap-dumps-hacked-from-teleme--4df4fc69
+- micahflee.com--going-to-defcon-see-my-talk-we-are-currently-clean-on-opsec---e66e0c6e
+- micahflee.com--how-to-easily-dig-through-the-epstein-files-yourself--beb1da32
+- micahflee.com--i-spoke-about-iceblock-and-trumps-app-censorship-on-the-kill--71a22920
+- micahflee.com--iceblock-handled-my-vulnerability-report-in-the-worst-possib--c2279f11
+- micahflee.com--in-war-torn-portland-watch-me-speak-at-bsidespdx--6bd65428
+- micahflee.com--jeffrey-epstein-bought-books-about-pedophilia-woody-allen-an--d29a0391
+- micahflee.com--practical-defenses-against-technofascism--62e06b2a
+- micahflee.com--telemessage-customers-include-dc-police-andreesen-horowitz-j--f2bd4f42
+- micahflee.com--telemessage-explorer-a-new-open-source-research-tool--f72280d4
+- micahflee.com--unfortunately-the-iceblock-app-is-activism-theater--a3f5a2bf
+- micahflee.com--using-signal-groups-for-activism--7ceaad72
+- micahflee.com--we-are-currently-clean-on-opsec-the-signalgate-saga--e8b6d537
+- micahflee.com--why-hack-the-dhs-i-can-think-of-a-couple-pretti-good-reasons--be35e375

@@ -145,3 +145,7 @@ In early 2026, hackers compromised the Hugging Face platform, distributing Andro
 - [[concepts/vllm]] (complementary inference engine)
 -  (acquired 2025)
 -  (acquired 2022)
+
+## References
+
+- huggingface.co--google-gemma-4-e4b--b37a0ece

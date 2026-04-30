@@ -70,3 +70,7 @@ Gary Marcus evaluated the results as finding a middle ground: Mythos is "nowhere
 - 
 - [[concepts/project-glasswing]]
 - [[concepts/ai-safety]]
+
+## References
+
+- 2026-04-13-claude-mythos-preview-red-team

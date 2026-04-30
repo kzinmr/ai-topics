@@ -41,5 +41,6 @@ March 2026 incident where Anthropic's Claude Code source code was leaked via npm
 - Raises questions about proprietary vs open AI development
 
 ## Sources
-- 
-- 
+- kuber.studio--blog-ai-claude-code-s-entire-source-code-got-leaked-via-a-so--871ffae3.md
+- the-register--2026-03-31-anthropic-claude-code-source-code--ba8c2ae1.md
+- github.com--disler-pi-vs-claude-code-comparison.md

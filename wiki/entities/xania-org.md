@@ -212,3 +212,26 @@ Godbolt's writing is characterized by:
 - [2025 in Review](https://xania.org/) (Dec 2025)
 - [Compiler Explorer, LLC](https://xania.org/Compiler-Explorer) (Mar 2024)
 - [xania.org/about](https://xania.org/) (footer)
+
+## References
+
+- xania.org--202512-07-division-again--d6369932
+- xania.org--202512-08-going-loopy--4b4b9b89
+- xania.org--202512-09-induction-variables--9dc0ece2
+- xania.org--202512-10-loop-unrolling--8ff3426c
+- xania.org--202512-11-pop-goes-the-weasel-er-count--50b56b8c
+- xania.org--202512-12-loop-unswitching--32c1792d
+- xania.org--202512-13-licking-licm--cb9540e4
+- xania.org--202512-14-licm-when-it-doesnt--d6ba12b4
+- xania.org--202512-15-aliasing-in-general--db67e9b5
+- xania.org--202512-16-calling-conventions--73063886
+- xania.org--202512-17-inlining-the-ultimate-optimisation--4c1dc3cd
+- xania.org--202512-18-partial-inlining--f098b5a4
+- xania.org--202512-19-tail-call-optimisation--43c52e52
+- xania.org--202512-20-simd-city--5b3333a3
+- xania.org--202512-2025-in-review--1e6a8d39
+- xania.org--202512-21-vectorising-floats--5df4cd95
+- xania.org--202512-22-memory-cunningness--a305c37c
+- xania.org--202512-23-switching-it-up--38bb0f1b
+- xania.org--202512-24-cunning-clang--7ec472e1
+- xania.org--202512-25-thank-you--1ab8388e

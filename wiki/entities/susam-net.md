@@ -174,3 +174,28 @@ This connects to his broader view of computation: **the computer is a medium for
 - [Writing First, Tooling Second](https://susam.net/writing-first-tooling-second.html)
 - [MathB.in Is Shutting Down](https://susam.net/mathb-in-is-shutting-down.html)
 - [Fed 24 Years of My Blog Posts to a Markov Model](https://susam.net/fed-24-years-of-my-blog-posts-to-a-markov-model.html)
+
+## References
+
+- susam.net--26a-html--2ed57095
+- susam.net--26b-html--1d6a7c2c
+- susam.net--26c-html--76d34e4a
+- susam.net--code-news-hnskins-0-1-0-html--f8702220
+- susam.net--code-news-hnskins-0-2-0-html--3b8687dd
+- susam.net--code-news-hnskins-0-3-0-html--47b12157
+- susam.net--code-news-hnskins-0-4-0-html--dd607527
+- susam.net--code-news-nq-4-0-0-html--6e9df57e
+- susam.net--code-news-quickqwerty-1-2-2-html--d08b947e
+- susam.net--code-news-wander-0-1-0-html--bb02d040
+- susam.net--code-news-wander-0-2-0-html--7d4d188e
+- susam.net--code-news-wander-0-3-0-html--159c465a
+- susam.net--code-news-wander-0-4-0-html--b81c7a20
+- susam.net--code-news-wander-0-5-0-html--43fb56eb
+- susam.net--deep-blue-html--fbd7d0e9
+- susam.net--fork-commits-via-original-repo-html--39599ac1
+- susam.net--from-znc-to-soju-html--0bdf52bb
+- susam.net--git-checkout-reset-restore-html--92076901
+- susam.net--multiple-urls-in-git-remote-html--7d9e2f70
+- susam.net--soju-user-delete-hash-html--4b070c72
+- susam.net--twenty-five-years-of-computing-html--c920c9ac
+- susam.net--wander--54fc0247

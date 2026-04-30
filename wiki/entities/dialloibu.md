@@ -123,3 +123,19 @@ Beyond writing, Diallo is a working lead software engineer:
 - ["I'm writing a book"](https://idiallo.com/blog/im-writing-a-book/)
 - ["What I'm doing now"](https://idiallo.com/now) (Feb 2026)
 - [idiallo.com/aboutme](https://idiallo.com/aboutme.html)
+
+## References
+
+- idiallo.com--blog-advice-from-a-millionaire--7e4144cc
+- idiallo.com--blog-back-button-hijacking-is-going-away-seo--88f8f09e
+- idiallo.com--blog-have-you-seen-the-new-xl-ai-parody--31bd3b14
+- idiallo.com--blog-how-to-come-up-with-great-ideas--86e1d114
+- idiallo.com--blog-it-took-me-10-hours-to-fix-ai-code--5451c05e
+- idiallo.com--blog-say-no-to-localhost3000-use-custom-domains--0952af5b
+- idiallo.com--blog-we-are-playing-politics--7b2b9081
+- idiallo.com--blog-what-are-you-trying-to-say--779388d9
+- idiallo.com--blog-what-do-you-charge-for--4a6ad1ed
+- idiallo.com--blog-you-paid-for-it-you-should-be-comfortable-in-it--0ce96a0b
+- idiallo.com--blog-your-friends-are-hiding-their-ideas--75fd62a2
+- idiallo.com--byte-size-the-satisfaction-of-a-chatgpt-plan--643431ed
+- idiallo.com--byte-size-we-are-aws-salesmen--d73ea189

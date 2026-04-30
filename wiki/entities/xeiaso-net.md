@@ -130,3 +130,13 @@ Xe's recent writing in early-mid 2026 covers AI-assisted development and abstrac
 - [Xeiaso.net/about](https://xeiaso.net/about)
 - [Claude Code won April Fools Day this year](https://xeiaso.net/notes/2026/claude-code-wins-april-fools/) (Apr 2026)
 - [Vibe Coding Trip Report: Making a sponsor panel](https://xeiaso.net/blog/2026/vibe-coding-sponsor-panel/) (Mar 2026)
+
+## References
+
+- xeiaso.net--blog-2026-hospital-advice--d6becd3b
+- xeiaso.net--blog-2026-seroquel-xanax-trip-report--3eb76d21
+- xeiaso.net--blog-2026-some-thorns-have-roses--233fc2ff
+- xeiaso.net--blog-2026-surgery-recovery-clankers--ebc6aee8
+- xeiaso.net--notes-2026-ai-gpus-cant-process-graphics--12cd1c1c
+- xeiaso.net--notes-2026-dns-fight--d224f8ab
+- xeiaso.net--notes-2026-homelab-is-down--3bb3ebe4

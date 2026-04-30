@@ -153,3 +153,17 @@ Go — Language Grinberg has explored for systems programming
 - [Flask-SocketIO](https://github.com/miguelgrinberg/flask-socketio)
 - [learn.miguelgrinberg.com](https://learn.miguelgrinberg.com) — Course platform
 - GitHub: [@miguelgrinberg](https://github.com/miguelgrinberg)
+
+## References
+
+- blog.miguelgrinberg.com--post-how-bitwarden-encrypts-and-decrypts-secrets--146d9a70
+- blog.miguelgrinberg.com--post-how-to-host-your-own-email-server--850145a7
+- blog.miguelgrinberg.com--post-introduction-to-sqlalchemy-2-in-practice--9103b97d
+- blog.miguelgrinberg.com--post-llm-use-in-the-python-source-code--476cafdb
+- blog.miguelgrinberg.com--post-my-courses-site-is-moving-to-a-new-home--a98d1a17
+- blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-1-database-setup--adc2ebd7
+- blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-1-database-tables--6831fd60
+- blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-3-one-to-many-relation--38c6d188
+- blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-4-many-to-many-relatio--d7e49b59
+- blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-5-advanced-many-to-man--ffc1a277
+- blog.miguelgrinberg.com--post-sqlalchemy-2-in-practice-chapter-6-a-page-analytics-sol--1731e3e7

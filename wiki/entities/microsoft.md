@@ -61,3 +61,10 @@ Microsoft continues to participate in the broader AI governance conversation. Me
 ## Sources
 - **OpenAI-Microsoft Renegotiation Report (2026-04-28)** — Beehiiv newsletter digest, raw/articles
 - **Market Analysis: NVIDIA GPU dominance** — ~20M B200/B300 GPUs installed by Q4 2025, Azure is a major consumer
+
+## References
+
+- devblogs.microsoft.com--oldnewthing-20260427-00--f99d4946
+- devblogs.microsoft.com--oldnewthing-20260428-00--7333bbac
+
+- crawl-2026-04-24-microsoft-red-teaming-agents

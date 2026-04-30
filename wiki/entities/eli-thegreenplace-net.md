@@ -195,3 +195,7 @@ This reflects his broader philosophy: claims without evidence are just opinions.
 - "Rewriting pycparser with the help of an LLM" (2026): influential account of AI-assisted systems programming
 - "LaTeX, LLMs and Boring Technology" (2025): widely cited argument for proven tools in the AI era
 - Consistent presence on Hacker News and r/programming with high-quality technical analysis
+
+## References
+
+- eli.thegreenplace.net--2026-thoughts-on-webassembly-as-a-stack-machine--370f4288

@@ -61,3 +61,7 @@ For Zero Disk architectures, Avi identifies the fundamental trade-off triangle:
 - [avi.im/blag](https://avi.im/blag/)
 - [Zero Disk Architecture article](https://avi.im/blag/2024/zero-disk-architecture/)
 - [KVM Wikipedia](https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine)
+
+## References
+
+- 2024_avi-im_zero-disk-architecture

@@ -95,3 +95,16 @@ In 2025 alone, Milne published 123,382 words across 104 posts. He values blogs a
 - Permanently Moved podcast (301 episodes)
 - Experience.Computer podcast
 - Off Grid: Red Team — Semaeopus cybersecurity game
+
+## References
+
+- jayd.ml--2025-04-15-arch-linux-on-surface-html--97105161
+- jayd.ml--2025-04-30-someone-at-youtube-needs-glasses-html--9965a209
+- jayd.ml--2025-05-31-adventures-in-podcasting-html--62747723
+- jayd.ml--2025-06-15-encoding-xml-is-broken-and-no-one-cares-html--3522c300
+- jayd.ml--2025-10-29-finally-figured-out-locales-html--ca47d81c
+- jayd.ml--2025-11-10-someone-at-youtube-needs-glasses-prophecy-fulfill--1a20d5d7
+- jayd.ml--2026-01-05-the-hypnoverse-html--5fa03501
+- jayd.ml--2026-02-14-godot-minesweeper-html--9f958842
+- jayd.ml--2026-02-14-letterboxd2jellyfin-html--7d65fe92
+- jayd.ml--2026-02-14-microsoft-game-pass-fraud-html--d58463f3

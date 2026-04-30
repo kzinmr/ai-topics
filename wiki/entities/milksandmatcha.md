@@ -72,3 +72,8 @@ Sarah advocates for:
 - **Blog**: [milksandmatcha.com](https://milksandmatcha.com)
 - **Back of House article**: [milksandmatcha.com/back-of-house](https://milksandmatcha.com) (exact URL TBD)
 - **Co-authored thread**: [X thread](https://x.com/milksandmatcha/status/2044863551186309460) with @0xSero
+
+## References
+
+- milksandmatcha-0xsero-single-agent-ceiling-2026
+- milksandmatcha-0xsero-single-agent-nightmare-2026

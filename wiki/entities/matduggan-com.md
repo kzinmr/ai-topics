@@ -206,3 +206,21 @@ His blog is built on **Ghost CMS** with a custom minimal Handlebars theme. He ch
 - "Climate change what-if" conversation post
 - Mastodon: @matdevdug@c.im
 - Ghost CMS theme: GitLab repository (minimal design with Mastodon integration)
+
+## References
+
+- matduggan.com--boy-i-was-wrong-about-the-fediverse--00226752
+- matduggan.com--fyi-broadcom-is-ruining-bitnami-containers--f620f63a
+- matduggan.com--gitbutler-cli-is-really-good--73aab291
+- matduggan.com--greenland-is-a-beautiful-nightmare--76e8c4fd
+- matduggan.com--hosting-a-snowflake-proxy--495a7c45
+- matduggan.com--i-broke-and-fixed-my-ghost-blog--f3d783c6
+- matduggan.com--i-cant-see-apples-vision--2cdb9313
+- matduggan.com--i-sold-out-for-200-a-month-and-all-i-got-was-this-perfectly---961b50df
+- matduggan.com--making-rss-more-fun--e91cd009
+- matduggan.com--markdown-ate-the-world--20e00567
+- matduggan.com--sqlite-for-a-rest-api-database--eeb58877
+- matduggan.com--the-small-web-is-tricky-to-find--0511e88b
+- matduggan.com--the-year-of-the-3d-printed-miniature-and-other-lies-we-tell---9f42ad83
+- matduggan.com--update-to-the-ghost-theme-that-powers-this-site--0c71b905
+- matduggan.com--you-can-absolutely-have-an-rss-dependent-website-in-2026--05b35677

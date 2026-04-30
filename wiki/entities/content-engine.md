@@ -84,3 +84,7 @@ Content Engineの需要（7,943件のブックマーク）は、ソロfounder・
 
 - [Solo Founder Stack](solo-founder-stack.md) — Vibe CEOの構成要素
 - [Claude Perfect Memory](claude-perfect-memory.md) — コンテキスト管理の重要性
+
+## References
+
+- 2026-04-10-build-content-engine-full-course

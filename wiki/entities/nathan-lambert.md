@@ -143,3 +143,7 @@ Lambert writes with a distinctive mix of technical rigor and personal candor. He
 - **LinkedIn**: [linkedin.com/in/natolambert](https://linkedin.com/in/natolambert)
 - **X/Twitter**: [@natolambert](https://x.com/natolambert)
 - **Google Scholar**: Available on his website
+
+## References
+
+- 2026-04-12-nathan-lambert-open-model-consortium

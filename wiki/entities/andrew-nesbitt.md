@@ -212,3 +212,18 @@ His blogging cadence accelerated dramatically in 2025–2026, with 25 posts in J
 - Open Source Security podcast: "Ecosyste.ms with Andrew Nesbitt" (2025)
 - FOSDEM 2026: "Open source funding: you're doing it wrong" (with Benjamin Nickolls)
 - OSS Summit NA 2026 panel: "The Impact of Funding" (with Georg Link, Dawn Foster, Alyssa Wright)
+
+## References
+
+- nesbitt.io--2026-04-06-the-cathedral-and-the-catacombs-html--220e6392
+- nesbitt.io--2026-04-07-who-built-this-html--b5a6f50d
+- nesbitt.io--2026-04-08-package-security-problems-for-ai-agents-html--cec0229c
+- nesbitt.io--2026-04-09-package-security-defenses-for-ai-agents-html--aa01c0e5
+- nesbitt.io--2026-04-10-package-registries-and-pagination-html--8b902b68
+- nesbitt.io--2026-04-13-common-package-specification-html--d838ec3a
+- nesbitt.io--2026-04-14-standing-on-the-shoulders-of-homebrew-html--e96ec339
+- nesbitt.io--2026-04-15-the-tuesday-test-html--0a3358e9
+- nesbitt.io--2026-04-16-features-everyone-should-steal-from-npmx-html--f9f32488
+- nesbitt.io--2026-04-21-brief-html--7ba936c4
+- nesbitt.io--2026-04-27-the-stages-of-package-installation-html--50f05a11
+- nesbitt.io--2026-04-28-github-actions-is-the-weakest-link-html--0c77c59b

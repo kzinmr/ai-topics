@@ -80,3 +80,14 @@ Key tools and practices:
 - [About | timsh.org](https://timsh.org/about/)
 - [How I created an Ethereum Proof of Stake demo entirely with ChatGPT and Cursor](https://timsh.org/how-i-created-an-ethereum-proof-of-stake-demo-entirely-with-chatgpt-and-cursor/) — April 2026
 - [Switching to Claude Code + VSCode inside Docker](https://timsh.org/claude-inside-docker/) — April 2026
+
+## References
+
+- timsh.org--2m-laundered-the-youtube-crypto-tutorials-huge-scam-investig--d749b749
+- timsh.org--everyone-knows-your-location-part-2-try-it-yourself--cfc88813
+- timsh.org--github-scam-investigation-thousands-of-mods-and-cracks-steal--e1a40b6a
+- timsh.org--i-made-a-chrome-extension-to-help-avoid-playing-cheaters-in---392e26df
+- timsh.org--scam-telegram-investigation--d507827d
+- timsh.org--tracking-myself-down-through-in-app-ads--205a3798
+- timsh.org--why-i-created-ethereum-proof-of-stake-demo--708fbf2f
+- timsh.org--why-you-should-self-host--bff25172

@@ -211,3 +211,11 @@ Maurycy writes in a **direct, tutorial-oriented style** — code-heavy, theory-l
 - [My ramblings are available over gopher](https://maurycyz.com/misc/gopher/) (Apr 2026)
 - [Life TV: Video with 2 bits to spare](https://maurycyz.com/misc/life_tv/) (Mar 2026)
 - [maurycyz.com/about.html](https://maurycyz.com/about.html)
+
+## References
+
+- maurycyz.com--misc-13kb--996b8f45
+- maurycyz.com--misc-gopher--6e1b561e
+- maurycyz.com--misc-v6day--4e7d43ac
+- maurycyz.com--projects-gopher--9ac0ddee
+- maurycyz.com--projects-mcufont--3a2892c4

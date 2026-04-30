@@ -63,3 +63,7 @@ Tratar has been focused on the challenge of **context engineering** — building
 - [LinkedIn: Zach Tratar](https://www.linkedin.com/in/zachtratar)
 - [Embra Acquired by Notion](https://tradersunion.com/news/billionaires/show/1353675-notion-welcomes-embra/) (2026-01-29)
 - [Zach Tratar's announcement tweet](https://x.com/zachtratar/status/2016920503718727814) (2026-01-29)
+
+## References
+
+- 2026-04-30_zachtratar_ai-context-app

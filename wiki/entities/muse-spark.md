@@ -41,4 +41,8 @@ Announced following a year of silence from Meta on model development, and after 
 - [[meta]]
 - [[concepts/inference/llama-cpp]]
 - 
-- 
+-
+
+## References
+
+- 2026-04-08-meta-muse-spark-launch

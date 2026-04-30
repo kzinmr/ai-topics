@@ -187,3 +187,22 @@ His teaching philosophy is **offensive-first**: understand how attacks work befo
 - **Microsoft Regional Director** and **MVP for Developer Security** since 2011
 - **First hired employee** in November 2024, transitioning from solo to team operation
 - His Ashley Madison breach handling established the template for "sensitive breach" classification now used industry-wide
+
+## References
+
+- troyhunt.com--heres-what-agentic-ai-can-do-with-have-i-been-pwneds-apis--7eefad3f
+- troyhunt.com--passkeys-k-anonymity-searches-massive-speed-enhancements-bul--bc44064c
+- troyhunt.com--weekly-update-488--eb3c5f16
+- troyhunt.com--weekly-update-489--74488b89
+- troyhunt.com--weekly-update-490--d080b5c4
+- troyhunt.com--weekly-update-491--a9da2f7e
+- troyhunt.com--weekly-update-492--dc0b936b
+- troyhunt.com--weekly-update-493--87775125
+- troyhunt.com--weekly-update-494--a5a376ee
+- troyhunt.com--weekly-update-495--f9facec2
+- troyhunt.com--weekly-update-496--20acd351
+- troyhunt.com--weekly-update-497--18b66d2e
+- troyhunt.com--weekly-update-498--02e7e74a
+- troyhunt.com--weekly-update-499--4bdc4948
+- troyhunt.com--weekly-update-500--f907f171
+- troyhunt.com--weekly-update-501--42a4a9c0

@@ -99,3 +99,31 @@ Ken's posts consistently translate abstract computer science concepts into concr
 - [Inside the 74181 ALU chip: die photos and reverse engineering](http://www.righto.com/2017/01) (Jan 2017)
 - [Understanding silicon circuits: inside the ubiquitous 741 op amp](http://www.righto.com/2015/10) (Oct 2015)
 - [Ken Shirriff's About Page](https://www.righto.com/p/about-ken-shirriff.html)
+
+## References
+
+- righto.com--2025-01-its-time-to-abandon-cargo-cult-metaphor-html--4f496c8d
+- righto.com--2025-01-pentium-carry-lookahead-reverse-engineered-html--0bf9652b
+- righto.com--2025-01-pentium-reverse-engineering-bicmos-html--7a997557
+- righto.com--2025-02-origin-of-mainframe-term-html--bc15ade4
+- righto.com--2025-03-mother-of-all-demos-usb-keyset-interface-html--6c6e6a31
+- righto.com--2025-03-pentium-microcde-rom-circuitry-html--220d8f09
+- righto.com--2025-03-pentium-multiplier-adder-reverse-engineered-html--109ebfb1
+- righto.com--2025-04-commodore-pet-repair-html--a3d18784
+- righto.com--2025-05-386-prefetch-circuitry-reverse-engineered-html--53892db4
+- righto.com--2025-05-intel-386-register-circuitry-html--775778ee
+- righto.com--2025-06-inside-apollo-fdai-html--3542d02d
+- righto.com--2025-07-reverse-engineering-mysterious-up-data-html--b3bbe849
+- righto.com--2025-08-cr2ge2te6-not-cr2gr2te6-html--9c5ed251
+- righto.com--2025-08-intel-386-package-ct-scan-html--662f4a7d
+- righto.com--2025-08-reverse-engineering-analog-tda7000-html--b2efc096
+- righto.com--2025-08-static-latchup-metastability-386-html--c20c83c4
+- righto.com--2025-09-marilou-schultz-navajo-555-weaving-html--1acb6916
+- righto.com--2025-10-solve-nyt-pips-with-constraints-html--3a458a97
+- righto.com--2025-11-unusual-386-standard-cell-circuits-html--8638b7df
+- righto.com--2025-12-8087-microcode-conditions-html--5fdb5b8d
+- righto.com--2025-12-8087-stack-circuitry-html--6525991f
+- righto.com--2026-01-notes-on-intel-8086-processors-html--91ae37c5
+- righto.com--2026-02-8087-instruction-decoding-html--e09b9a2a
+- righto.com--2026-03-ibm-4-pi-computer-history-html--62ae6c44
+- righto.com--2026-04-b-52-star-tracker-angle-computer-html--509284fa

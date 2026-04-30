@@ -169,3 +169,27 @@ Notable recent publications include his 2024 essay "A Lasting Model for Change: 
 - [Lean LaunchPad at Stanford – 2025](https://steveblank.com/2025/06/24/lean-launchpad-at-stanford-2025/) (Jun 2025)
 - [steveblank.com/about](https://steveblank.com/about)
 - [Grokipedia: Steve Blank](https://grokipedia.com/page/Steve_Blank) (for biographical details marked "via Grokipedia")
+
+## References
+
+- steveblank.com--2025-06-10-teaching-national-security-policy-with-ai--9ec9ca54
+- steveblank.com--2025-06-17-hacking-for-defense-stanford-2025-lessons-learned--608fc920
+- steveblank.com--2025-06-24-lean-launchpad-at-stanford-2025--6e1c4683
+- steveblank.com--2025-07-01-why-investors-dont-care-about-your-business--8de683cf
+- steveblank.com--2025-07-08-blind-to-disruption-the-ceos-who-missed-the-futur--d04cf7b4
+- steveblank.com--2025-09-10-how-to-sell-to-the-dept-of-defense-the-2025-peo-d--c1e342c5
+- steveblank.com--2025-09-17-when-sht-hits-the-fan-founders-in-a-crisis--00718cfb
+- steveblank.com--2025-10-13-no-science-no-startups-the-unseen-engine-were-swi--0a1fad8a
+- steveblank.com--2025-10-15-how-to-sell-to-the-dept-of-war-the-2025-peo-direc--d593123a
+- steveblank.com--2025-10-30-it-only-took-20-years-but-the-strategic-managemen--5171ecdb
+- steveblank.com--2025-11-11-the-department-of-war-just-shot-the-accountants-a--0a2b1d52
+- steveblank.com--2025-12-16-the-department-of-war-directory--bd672c8f
+- steveblank.com--2026-02-03-making-the-wrong-things-go-faster-at-the-departme--334b1b22
+- steveblank.com--2026-02-10-revisionist-history-aliens-secrets-and-conspiraci--afdea64b
+- steveblank.com--2026-02-18-you-only-think-they-work-for-you--89c0717e
+- steveblank.com--2026-02-24-time-to-move-on-the-reason-relationships-end--c6ac454f
+- steveblank.com--2026-03-17-your-startup-is-probably-dead-on-arrival--167ed8f9
+- steveblank.com--2026-03-31-solving-yesterdays-problems-will-kill-you--52a03a6e
+- steveblank.com--2026-04-09-nowhere-is-safe--634ead7a
+- steveblank.com--2026-04-22-ai-and-teaching-the-brave-new-world--707a0ba6
+- steveblank.com--2026-04-28-anthropic-mythos-weve-opened-pandoras-box--ccad47b0

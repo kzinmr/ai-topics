@@ -48,3 +48,7 @@ Key observations:
 
 - [AI's Trillion-Dollar Opportunity: Context Graphs](https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity) — Jaya Gupta, April 2026
 - [Anthropic Managed Agents](https://www.anthropic.com/managed-agents) — Analysis by Jaya Gupta
+
+## References
+
+- foundation-capital-context-graphs-2025-12-22

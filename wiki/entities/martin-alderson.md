@@ -115,3 +115,51 @@ Martin wrote about Anthropic's red team finding **500+ critical vulnerabilities*
 - [No, it doesn't cost Anthropic $5k per Claude Code user](https://martinalderson.com/posts/anthropic-5k-per-user/) (Mar 2026)
 - [Which web frameworks are most token-efficient for AI agents?](https://martinalderson.com/posts/web-frameworks-token-efficiency/) (Feb 2026)
 - [martinalderson.com/archive/](https://martinalderson.com/archive/)
+
+## References
+
+- martinalderson.com--posts-ai-agents-are-starting-to-eat-saas--37d8652e
+- martinalderson.com--posts-anthropic-found-500-zero-days--e16d62a3
+- martinalderson.com--posts-are-we-dismissing-ai-spend-before-the-6x-lands--0aadfca9
+- martinalderson.com--posts-are-we-in-a-gpt4-style-leap-that-evals-cant-see--7696618b
+- martinalderson.com--posts-are-we-really-repeating-the-telecoms-crash-with-ai-dat--e40dbebb
+- martinalderson.com--posts-attack-of-the-clones--1a69c778
+- martinalderson.com--posts-building-a-tax-agent-with-claude-code--72e6cc36
+- martinalderson.com--posts-claude-code-static-analysis--2a4b4efb
+- martinalderson.com--posts-excel-agents-could-unlock-1t-in-economic-value--2fb910d0
+- martinalderson.com--posts-figmas-woes-compound-with-claude-design--f8915a52
+- martinalderson.com--posts-google-ai-studio-api-unreliable-for-two-weeks--8a7a82ba
+- martinalderson.com--posts-has-mythos-just-broken-the-deal-that-kept-the-internet--290ac35f
+- martinalderson.com--posts-has-the-cost-of-software-just-dropped-90-percent--d6e9e325
+- martinalderson.com--posts-how-i-make-cicd-much-faster-and-cheaper--006d75ad
+- martinalderson.com--posts-how-i-use-claude-code-to-manage-sysadmin-tasks--82cdaf85
+- martinalderson.com--posts-how-to-make-great-looking-consistent-reports-with-clau--3d6f1578
+- martinalderson.com--posts-how-to-use-qwen-3-5-to-ocr-documents--f3719003
+- martinalderson.com--posts-i-finally-found-a-use-for-ipv6--d17a28d3
+- martinalderson.com--posts-is-the-ai-compute-crunch-here--3df57c24
+- martinalderson.com--posts-mcp-support-across-ai-apis--c5e1cf4b
+- martinalderson.com--posts-minification-isnt-obfuscation-claude-code-proves-it--89931401
+- martinalderson.com--posts-moe-expert-routing-visualization--a70dde30
+- martinalderson.com--posts-no-it-doesnt-cost-anthropic-5k-per-claude-code-user--77319d6f
+- martinalderson.com--posts-non-technical-cfo-shipping-better-code-than-agencies--35095076
+- martinalderson.com--posts-notes-from-mcp-europe--22c3c8bd
+- martinalderson.com--posts-ported-photoshop-1-to-csharp-in-30-minutes--e5438a32
+- martinalderson.com--posts-self-improving-claude-md-files--ac9dfa7e
+- martinalderson.com--posts-telnyx-litellm-axios-supply-chain-crisis--1cf34d19
+- martinalderson.com--posts-the-coming-ai-compute-crunch--de305311
+- martinalderson.com--posts-tracking-mcp-server-growth--d7da3712
+- martinalderson.com--posts-travel-agents-developers--03e9ba7f
+- martinalderson.com--posts-turns-out-i-was-wrong-about-tdd--df116d72
+- martinalderson.com--posts-two-kinds-of-ai-users-are-emerging--409d6535
+- martinalderson.com--posts-using-agents-and-wine-to-move-off-windows--85a78b28
+- martinalderson.com--posts-using-opencode-in-cicd-for-ai-pull-request-reviews--1b4f7bf3
+- martinalderson.com--posts-wall-street-lost-285-billion-because-of-13-markdown-fi--69ec5d77
+- martinalderson.com--posts-welcome--6aca66b2
+- martinalderson.com--posts-what-happens-when-coding-agents-stop-feeling-like-dial--d2aad4ef
+- martinalderson.com--posts-what-next-for-the-compute-crunch--d8f87332
+- martinalderson.com--posts-which-programming-languages-are-most-token-efficient--9c9c84db
+- martinalderson.com--posts-which-web-frameworks-are-most-token-efficient-for-ai-a--a83d9cfe
+- martinalderson.com--posts-why-claudes-new-1m-context-length-is-a-big-deal--294e4983
+- martinalderson.com--posts-why-im-building-my-own-clis-for-agents--08080178
+- martinalderson.com--posts-why-on-device-agentic-ai-cant-keep-up--5a080ee7
+- martinalderson.com--posts-why-sandboxing-coding-agents-is-harder-than-you-think--4d65588c

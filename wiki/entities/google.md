@@ -88,3 +88,14 @@ This aligns with Google's broader strategy of "100% local browser agent" using G
 - [Google: New text-to-speech AI model](https://blog.google/technology/ai/google-gemini-text-to-speech-ai-model-2026/) — TTS model release
 - [Google AI Plans with Cloud Storage](https://substack.com/redirect/07e1d369-9cdd-4737-821a-62accd29792c?j=eyJ1Ij...tf6E) — AI subscription plans
 - [Alex Banks, The Signal: "ChatGPT Images 2.0 is genuinely fantastic"](https://thesignal.substack.com/p/chatgpt-images-20-is-genuinely-fantastic) (2026-04-24) — comparative analysis with GPT Image 2
+
+## References
+
+- 2039737982576636294_Googles-20-Year-Secret-Is-Now-Available-to-Every-Enterprise
+- mail-settings.google.com--mail-uf-5bangjdj-mpdsvrpq2o-bxft2lknzyiqqd9nnux04-g55ecqbaig--00d2671a
+- mail-settings.google.com--mail-uf-5bangjdj-tz1kqisscqea7p2h9ohaeqo8bviifbgqv5v-quhnr7---e2e5f3d8
+- mail-settings.google.com--mail-uf-5bangjdj8p9wtaapz-g3xoovf0gpcffbvjfi0zga5n6mwor-kpxq--666ea53c
+- mail-settings.google.com--mail-uf-5bangjdj9qifvdd8v-t4nci-qckrry3ycuzn3qmn7bghamsn0w-8--0769be32
+
+- 2043609541477044439_Google-Engineer-Automated-80-of-Work-with-Claude-Code
+- blog.google--innovation-and-ai-technology-developers-tools-gemma-4--9648c97b

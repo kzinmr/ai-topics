@@ -181,3 +181,30 @@ This is not Luddism — it's **technological skepticism grounded in engineering 
 - [Things that made me think: Cycle time, learning theory, and build chain security](https://tomrenner.com/posts/things-that-made-me-think-cycle-time/)
 - [Optimising for trust](https://tomrenner.com/posts/optimising-for-trust/)
 - [GitHub - tr325](https://github.com/tr325)
+
+## References
+
+- tomrenner.com--posts-400-year-confidence-trick--254b79a6
+- tomrenner.com--posts-a-quick-guide-for-productive-development--e04ae7d7
+- tomrenner.com--posts-cull-your-dependencies--56ad5634
+- tomrenner.com--posts-does-my-toaster-love-me--087415c4
+- tomrenner.com--posts-does-the-software-industry-learn--f87f78b7
+- tomrenner.com--posts-dora-i-barely-know-her--c97853a8
+- tomrenner.com--posts-efficiency-is-bad-for-your-health--3c1f3c4e
+- tomrenner.com--posts-fullstack--753eb0ce
+- tomrenner.com--posts-getting-the-right-scale--f403d38f
+- tomrenner.com--posts-llm-inevitabilism--0ab83a28
+- tomrenner.com--posts-make-yourself-a-happy-place--bfd293f7
+- tomrenner.com--posts-offline-knowledge--cf2ac77c
+- tomrenner.com--posts-optimising-for-trust--f2875ba2
+- tomrenner.com--posts-saying-the-quiet-part-out-loud--c5c4111d
+- tomrenner.com--posts-setting-up-chromebook--72ce4700
+- tomrenner.com--posts-should-we-welcome-or-fear-the-metaverse--74a52f4f
+- tomrenner.com--posts-temple-of-fail--f7a24e0b
+- tomrenner.com--posts-the-customer-is-always-right--767ae6a7
+- tomrenner.com--posts-ttmmt-1--732d9776
+- tomrenner.com--posts-ttmmt-2--6a92d2fa
+- tomrenner.com--posts-ttmmt-3--f1608142
+- tomrenner.com--posts-twitter-graphing-with-gephi--efe119a0
+- tomrenner.com--posts-why-am-i-doing-this-again--1fcb2785
+- tomrenner.com--posts-xtc-basecamp-shape-up--d8b1cf64

@@ -134,3 +134,7 @@ The company has evolved beyond the open-source framework into a full **Agent Eng
 - [LangChain Documentation: Component Architecture](https://docs.langchain.com/oss/python/langchain/component-architecture)
 - [Sequoia Podcast: Harrison Chase on Building the Orchestration Layer](https://sequoiacap.com/podcast/training-data-harrison-chase)
 - [AINews: The Inference Inflection](raw/newsletters/2026-04-30-ainews-the-inference-inflection.md)
+
+## References
+
+- 2026-04-25-langchain-anatomy-agent-harness

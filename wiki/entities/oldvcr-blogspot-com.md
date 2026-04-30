@@ -154,3 +154,31 @@ Scriptovision — Canadian video titler company; Kaiser reverse-engineered their
 - [TenFourFox Development](https://tenfourfox.blogspot.com) — Related blog
 - [floodgap.com](https://www.floodgap.com) — Floodgap Systems
 - Ko-fi: ClassicHasClass — Donation-funded hardware preservation
+
+## References
+
+- oldvcr.blogspot.com--2025-06-refurb-weekend-gremlin-blasto-arcade-html--c04f6f39
+- oldvcr.blogspot.com--2025-06-see-jane-128-by-arktronics-run-html--c37733ff
+- oldvcr.blogspot.com--2025-06-theres-not-much-point-in-buying-html--780c9f98
+- oldvcr.blogspot.com--2025-07-so-i-saw-this-headline-html--05ffa9f6
+- oldvcr.blogspot.com--2025-08-a-real-powerbook-macintosh-application-html--006125f2
+- oldvcr.blogspot.com--2025-08-make-your-apple-ii-or-commodore-64-html--e2e83f7c
+- oldvcr.blogspot.com--2025-09-microsoft-makes-6502-basic-open-source-html--2dee9dd8
+- oldvcr.blogspot.com--2025-09-refurb-weekend-silicon-graphics-indigo-html--f549a58b
+- oldvcr.blogspot.com--2025-10-back-to-southern-hemisphere-commodore-html--73f78417
+- oldvcr.blogspot.com--2025-10-the-apple-network-server-macos-roms-html--cc33fff2
+- oldvcr.blogspot.com--2025-10-the-end-of-aol-dialup-html--6770c50c
+- oldvcr.blogspot.com--2025-11-rebecca-heineman-has-died-html--75834e97
+- oldvcr.blogspot.com--2025-11-they-call-it-mister-pibb-again-html--f9d703c5
+- oldvcr.blogspot.com--2025-11-when-ups-charged-me-684-tariff-on-355-html--ce02777c
+- oldvcr.blogspot.com--2025-12-a-christmas-2007-video-present-from-old-html--67db5276
+- oldvcr.blogspot.com--2025-12-oblast-better-blasto-game-for-commodore-html--7d62eafe
+- oldvcr.blogspot.com--2025-12-stewart-cheifet-has-died-html--84d4e4a9
+- oldvcr.blogspot.com--2025-12-the-texas-instruments-cc-40-invades-html--ac09a89c
+- oldvcr.blogspot.com--2026-01-hands-on-with-two-apple-network-server-html--75ee171b
+- oldvcr.blogspot.com--2026-02-hideki-sato-has-died-html--78bc1971
+- oldvcr.blogspot.com--2026-02-the-scriptovision-super-micro-script-html--01f725c5
+- oldvcr.blogspot.com--2026-03-6o6-v11-faster-6502-on-6502-html--c727af78
+- oldvcr.blogspot.com--2026-03-hedley-davis-has-died-html--c4c60edb
+- oldvcr.blogspot.com--2026-03-mini-review-david-pogues-apple-first-50-html--111348ae
+- oldvcr.blogspot.com--2026-03-refurb-weekend-double-header-alpha-html--9945b2ae

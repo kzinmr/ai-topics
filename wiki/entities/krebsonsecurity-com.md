@@ -131,3 +131,16 @@ His coverage of the Kimwolf story revealed how botnet operators were tunneling t
 - 2016: Survived 620 Gbps DDoS attacks, among the largest ever recorded against a single target
 - Consistently breaks stories before major outlets — his investigative methodology has become a model for security journalism
 - Named among the most influential voices in cybersecurity by multiple industry publications
+
+## References
+
+- krebsonsecurity.com--2026-02-who-is-the-kimwolf-botmaster-dort--cc684d98
+- krebsonsecurity.com--2026-03-canisterworm-springs-wiper-attack-targeting-iran--df42bd6b
+- krebsonsecurity.com--2026-03-feds-disrupt-iot-botnets-behind-huge-ddos-attacks--2307ef09
+- krebsonsecurity.com--2026-03-how-ai-assistants-are-moving-the-security-goalposts--7291d0a1
+- krebsonsecurity.com--2026-03-iran-backed-hackers-claim-wiper-attack-on-medtech-fi--b79cc542
+- krebsonsecurity.com--2026-03-microsoft-patch-tuesday-march-2026-edition--ba69427e
+- krebsonsecurity.com--2026-04-germany-doxes-unkn-head-of-ru-ransomware-gangs-revil--dc201ebc
+- krebsonsecurity.com--2026-04-patch-tuesday-april-2026-edition--714dfbcd
+- krebsonsecurity.com--2026-04-russia-hacked-routers-to-steal-microsoft-office-toke--83697ae5
+- krebsonsecurity.com--2026-04-scattered-spider-member-tylerb-pleads-guilty--f662a80d

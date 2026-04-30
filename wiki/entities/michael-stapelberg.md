@@ -119,3 +119,21 @@ Stapelberg has been running a blog since 2005 — over 20 years of documented te
 - [Ryzen 7 Mini-PC makes a power-efficient VM host](https://michael.stapelberg.ch/posts/2024-07-mini-pc/) (Jul 2024)
 - [Minimal Linux Bootloader debugging story](https://michael.stapelberg.ch/posts/2024-02-bootloader-debug/) (Feb 2024)
 - [michael.stapelberg.ch/posts/](https://michael.stapelberg.ch/posts/) — Full blog archive
+
+## References
+
+- michael.stapelberg.ch--posts-2025-02-27-debug-hanging-go-programs--1c41075f
+- michael.stapelberg.ch--posts-2025-03-19-intel-core-ultra-9-285k-on-asus-z890-not-st--a47c7de6
+- michael.stapelberg.ch--posts-2025-05-10-grobi-x11-monitor-autoconfig--9cfd6238
+- michael.stapelberg.ch--posts-2025-05-15-my-2025-high-end-linux-pc--0ca4c38b
+- michael.stapelberg.ch--posts-2025-06-01-nixos-installation-declarative--d8dbbf51
+- michael.stapelberg.ch--posts-2025-07-13-nixos-nas-network-storage-config--3539d582
+- michael.stapelberg.ch--posts-2025-07-27-dev-shells-with-nix-4-quick-examples--e7061d97
+- michael.stapelberg.ch--posts-2025-08-24-secret-management-with-sops-nix--6af256c4
+- michael.stapelberg.ch--posts-2025-09-07-bye-intel-hi-amd-9950x3d--356ab075
+- michael.stapelberg.ch--posts-2025-09-21-nixcon-2025-trip-report--22893187
+- michael.stapelberg.ch--posts-2025-10-31-macbook-pro-m4-impressions--1fb54d3d
+- michael.stapelberg.ch--posts-2025-11-29-self-hosting-photos-with-immich--ee50adfd
+- michael.stapelberg.ch--posts-2026-01-04-wayland-sway-in-2026--a6e7a27b
+- michael.stapelberg.ch--posts-2026-02-01-coding-agent-microvm-nix--1af8da31
+- michael.stapelberg.ch--posts-2026-04-05-stamp-it-all-programs-must-report-their-ver--74a089c8

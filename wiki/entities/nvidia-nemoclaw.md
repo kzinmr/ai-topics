@@ -187,3 +187,10 @@ cd ~/.nemoclaw/source
 - [[concepts/local-llm/server-dgx-spark]] — Complete DGX Spark setup guide
 - [[concepts/local-llm]] — Local LLM inference overview
 - [[concepts/capabilities-based-security]] — Security philosophy matching NemoClaw's approach
+
+## References
+
+- 2026-04-28_nvidia-nemotron-3-nano-omni
+
+- crawl-2026-04-18-nvidia-speculative-decoding
+- crawl-2026-04-23-speculative-decoding-nvidia

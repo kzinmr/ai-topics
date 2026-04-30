@@ -31,3 +31,7 @@ Talkie represents a novel approach to LLM training: instead of training on the f
 ## Related
 - [[concepts/karpathy]] — Alec Radford's collaborator on many AI projects
 - [[entities/david-duvenaud]] — Primary researcher behind Talkie
+
+## References
+
+- 2026-04-27_talkie-historical-llm

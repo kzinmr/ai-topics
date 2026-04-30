@@ -158,3 +158,27 @@ The Watchdog Timer safety mechanism in his Game of Life build — forcing a rebo
 - His fuzzing research directly influenced Google's OSS-Fuzz program
 - His work on grammar fuzzing (2026) continues to shape automated vulnerability discovery
 - Big Sleep project (2024): Demonstrated LLMs can find vulnerabilities in well-fuzzed codebases
+
+## References
+
+- lcamtuf.substack.com--p-a-breakthrough-in-cc-dependency-management--fd4785e0
+- lcamtuf.substack.com--p-approximation-game--7ebc79d1
+- lcamtuf.substack.com--p-conways-game-of-life-in-real-life--78466b4b
+- lcamtuf.substack.com--p-cursed-circuits-2-switched-capacitor--261fd8dd
+- lcamtuf.substack.com--p-cursed-circuits-3-true-mathematics--667ffa1c
+- lcamtuf.substack.com--p-cursed-circuits-4-pll-frequency-multiplier--54d0a322
+- lcamtuf.substack.com--p-cursed-circuits-charge-pump-voltage--d06dbc06
+- lcamtuf.substack.com--p-how-much-of-hn-is-ai--09963a39
+- lcamtuf.substack.com--p-its-all-a-blur--953baff0
+- lcamtuf.substack.com--p-its-hard-to-build-an-oscillator--0b6e538d
+- lcamtuf.substack.com--p-see-it-with-your-lying-ears--988f0100
+- lcamtuf.substack.com--p-the-secret-life-of-circuits--ae12d73c
+- lcamtuf.substack.com--p-the-toil-of-blog-art--4c707873
+- lcamtuf.substack.com--p-things-you-can-do-with-diodes--87e1a5e3
+- lcamtuf.substack.com--p-unreal-numbers--7a68cc94
+- lcamtuf.substack.com--p-weekend-projects-chicken-squisher--16adfe20
+- lcamtuf.substack.com--p-whats-the-deal-with-eulers-identity--b26444d1
+- lcamtuf.substack.com--p-when-it-comes-to-writing-llms-have--571fce31
+- lcamtuf.substack.com--p-why-i-refrain-from-infosec-punditry--cf4dd58f
+- lcamtuf.substack.com--p-you-gotta-think-outside-the-hypercube--1973c5f0
+- lcamtuf.substack.com--p-zombies--4ef51f3b

@@ -178,3 +178,7 @@ Ronacher's technical philosophy — simplicity, developer-first design, and prag
 - https://earendil.com/posts/announcement-reflection/ — Earendil announcement
 - https://sentry.io/ — Sentry official site
 - https://en.wikipedia.org/wiki/Armin_Ronacher — Wikipedia entry
+
+## References
+
+- 2026-04-11-armin-ronacher-center-has-a-bias

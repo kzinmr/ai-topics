@@ -127,3 +127,7 @@ Claude Perfect Memoryは、**「エージェントのセッション間記憶」
 - [Solo Founder Stack](solo-founder-stack.md) — コンテキストエンジニアリングはソロfounderの核心スキル
 - [CLAUDE.md](claude-md-pattern.md) — 構造化記憶ファイルパターン
 - [Context Engineering](context-engineering.md) — 情報環境の設計
+
+## References
+
+- 2026-04-22-claude-perfect-memory-guide

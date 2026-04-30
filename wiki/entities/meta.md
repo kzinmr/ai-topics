@@ -103,3 +103,7 @@ See also: [[concepts/open-source-vs-closed]]
 - [Meta Positions AI Glasses and Personal Agents at Center of Growth (AI Insider, Jan 2026)](https://theaiinsider.tech/2026/01/29/meta-positions-ai-glasses-and-personal-agents-at-the-center-of-its-next-growth-phase/)
 - [VisionClaw: Turning Ray-Ban Meta Glasses into an Autonomous Super-Agent (Elluminate Me, Feb 2026)](https://elluminateme.com/artificial-intelligence/visionclaw/)
 -  (Ben's Bites, 2026-04-09)
+
+## References
+
+- 2025-07-30-meta-personal-superintelligence

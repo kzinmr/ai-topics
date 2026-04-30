@@ -136,3 +136,18 @@ The underlying theme: data should be portable, locally accessible, and resilient
 - Dialectic Podcast: "Software You Can Shape"
 - Metamuse Podcast: "Bring your own client | Dynamic documents"
 - Causal Islands 2023: "Dynamic Documents as Personal Software"
+
+## References
+
+- 2026-04-27_2041215978957389908_Turning-the-Entire-Web-Into-a-Filesystem
+- geoffreylitt.com--2023-03-25-llm-end-user-programming-html--17879d95
+- geoffreylitt.com--2023-07-25-building-personal-tools-on-the-fly-with-llms-html--2637063a
+- geoffreylitt.com--2023-12-17-seven-books-that-stuck-with-me-in-2023-html--b9dbfa2d
+- geoffreylitt.com--2024-08-25-your-pie-doesnt-need-be-original-html--12e590b3
+- geoffreylitt.com--2024-12-22-making-programming-more-fun-with-an-ai-generated---edfaae3f
+- geoffreylitt.com--2025-03-03-the-nightmare-bicycle-html--fcc08fa7
+- geoffreylitt.com--2025-04-12-how-i-made-a-useful-ai-assistant-with-one-sqlite---974575c1
+- geoffreylitt.com--2025-06-29-chat-ai-dialogue-html--c5a3971b
+- geoffreylitt.com--2025-07-27-enough-ai-copilots-we-need-ai-huds-html--19d40805
+- geoffreylitt.com--2025-09-10-ai-as-teleportation-html--062562c0
+- geoffreylitt.com--2025-10-24-code-like-a-surgeon-html--74871037

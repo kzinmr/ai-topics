@@ -119,3 +119,44 @@ Slatton treats design documents like mathematical proofs — their purpose is to
 - "Every Man a Microservice" — Organizational design post
 - "Writing a good design document" — Technical writing post
 - AWS engineering background (former employee)
+
+## References
+
+- grantslatton.com--accidental-urbanism--9bec50c0
+- grantslatton.com--ai-auditability--777735df
+- grantslatton.com--ai-software-nonexistence--6a4455d3
+- grantslatton.com--binary-iq--ca20172d
+- grantslatton.com--bjj-ghost-escape--6bdc2bde
+- grantslatton.com--book-review-the-perfectionists--9bb5d6fc
+- grantslatton.com--bug-proof-engines--de7f4e65
+- grantslatton.com--bureaulogy--da6519ed
+- grantslatton.com--claude-code--1d686b27
+- grantslatton.com--culture-schelling--637ce85f
+- grantslatton.com--design-patterns--0fd534f4
+- grantslatton.com--every-man-a-microservice--ed0d2efe
+- grantslatton.com--graph-search-puzzle-game--0d38a93c
+- grantslatton.com--how-to-design-document--edd0f732
+- grantslatton.com--how-to-software--9fcc2602
+- grantslatton.com--llm-memory--24ed6f56
+- grantslatton.com--manufacturing-as-maintenance--8a72bf2c
+- grantslatton.com--nobody-cares--205ff09e
+- grantslatton.com--onsen-unreality--5a12a362
+- grantslatton.com--peasants-plight--3a9e124d
+- grantslatton.com--personal-api--2955ed56
+- grantslatton.com--portals--df4af239
+- grantslatton.com--quasirandom--77072ef2
+- grantslatton.com--road-widths--46475574
+- grantslatton.com--rohit-chess--ae22aa18
+- grantslatton.com--rowzero-property-testing--354b9c37
+- grantslatton.com--rust-macros--f29c6873
+- grantslatton.com--shuttle--8e1861a3
+- grantslatton.com--software-pathfinding--bcf3f9fd
+- grantslatton.com--solution-space-taste--f014061f
+- grantslatton.com--sorting-algorithm-the-game--b43b9c80
+- grantslatton.com--sports-vs-games--32f8758b
+- grantslatton.com--status-among-whom--b5b7a873
+- grantslatton.com--technocapital--5137c2f2
+- grantslatton.com--the-curve-is-bending--fe9b44d8
+- grantslatton.com--town-bootstrapping--e45b1549
+- grantslatton.com--twitter--697d0692
+- grantslatton.com--typo-minimizing-keyboard--0d6e1344

@@ -209,3 +209,41 @@ Chaos Theory — Subject of Rakhim's Codexpanse Podcast exploration
 - *Foundations of Clojure* (Leanpub)
 - *Conscious Attention* (Leanpub)
 - GitHub: [@freetonik](https://github.com/freetonik) — Open source projects
+
+## References
+
+- rakhim.exotext.com--ai-is-impressive-because-we-ve-failed-at-semantic-web-and-pe--c2bd8892
+- rakhim.exotext.com--ai-is-not-another-abstraction-because-god-plays-dice--7c27d1a1
+- rakhim.exotext.com--alarm-is-sacred-but-ios-26-is-wicked--bf693eb6
+- rakhim.exotext.com--benjamin-button-reviews-macos--aeeafc6e
+- rakhim.exotext.com--but-what-if-i-really-want-a-faster-horse--15e93489
+- rakhim.exotext.com--can-you-add-38-features--cd5c6c60
+- rakhim.exotext.com--dont-make-it-like-google--2b5911c8
+- rakhim.exotext.com--dreaming-of-obsession--d4471fce
+- rakhim.exotext.com--examples-are-the-best-documentation--76a505bb
+- rakhim.exotext.com--finland-is-a-high-context-society-that-loves-defaults--f1230d2b
+- rakhim.exotext.com--git-stage-outside-editor--13b541cf
+- rakhim.exotext.com--here-we-go--2e48ca6a
+- rakhim.exotext.com--how-to-build-and-publish-multi-platform-rust-binaries--e4468fe1
+- rakhim.exotext.com--how-to-make-forbidden-changes-to-sqlite-tables--f094cbb4
+- rakhim.exotext.com--how-to-play-half-life-2-on-mchip-macs--ff98974b
+- rakhim.exotext.com--its-okay-to-walk-uphill--234a5f33
+- rakhim.exotext.com--jupyter-notebooks-as-e2e-tests--01167ee7
+- rakhim.exotext.com--knight-ride-a-game-about-rogue-chess-knight--587187a1
+- rakhim.exotext.com--lesser-known-sci-fi-movies--7301dc8a
+- rakhim.exotext.com--making-human-languages-irrelevant--8e7a46d8
+- rakhim.exotext.com--markdown-editor-for-exotext--db4eff01
+- rakhim.exotext.com--modern-ui-is-not-invisible--fddd22c1
+- rakhim.exotext.com--please-recommend-me-a-book-about-x--a0e75369
+- rakhim.exotext.com--producing-a-video-lesson--d6fbae1a
+- rakhim.exotext.com--products-arent-for-people-yet--d4d8229e
+- rakhim.exotext.com--programming-vs-coding-vs-software-engineering--d32b0538
+- rakhim.exotext.com--related-ui-elements-should-not-appear-unrelated--8431e5a1
+- rakhim.exotext.com--thank-you-google-for-breaking-my-youtube-addiction--1ebbd3c0
+- rakhim.exotext.com--the-mandatory-smartphone--341708fe
+- rakhim.exotext.com--they-made-computers-behave-like-annoying-salesmen--6a9c7466
+- rakhim.exotext.com--web-developers-a-growing-disconnect--f74f16eb
+- rakhim.exotext.com--webfonts-yay-nay--065c7ec5
+- rakhim.exotext.com--windows-11-experience--06f05687
+- rakhim.exotext.com--wish-your-bespoke-site-generator-had-rss--67689ba3
+- rakhim.exotext.com--youtube-picks-december-2024--e72f51c6

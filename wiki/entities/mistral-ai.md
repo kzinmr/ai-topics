@@ -72,3 +72,7 @@ Work Mode transforms Le Chat into an execution backend for multi-step projects a
 ## Sources
 - [Vibe Remote Agents + Mistral Medium 3.5](https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5) — Mistral AI Blog, April 2026
 - [Mistral-Medium-3.5 on Hugging Face](https://huggingface.co/mistralai/Mistral-Medium-3.5)
+
+## References
+
+- 2026-04-28_mistralai-workflows

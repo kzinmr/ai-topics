@@ -86,8 +86,36 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 - [[concepts/chatgpt-images-2.0]] — GPT Image 2 image generation
 - [[concepts/nano-banana-2]] — Google's NB2 image generation competitor
 
+### OpenAI-related articles
+- [2026-04-06-openai-anthropic-google-distillation-alliance](2026-04-06-openai-anthropic-google-distillation-alliance.md)
+- [2026-04-11-geohot-openai-nothing-without-people](2026-04-11-geohot-openai-nothing-without-people.md)
+- [feed.tedium.co--link-15204-17327554-openai-anthropic-ai-tools-expensive-alte--a5938895](feed.tedium.co--link-15204-17327554-openai-anthropic-ai-tools-expensive-alte--a5938895.md)
+- [garymarcus.substack.com--p-three-thoughts-on-the-musk-openai--867f8dfb](garymarcus.substack.com--p-three-thoughts-on-the-musk-openai--867f8dfb.md)
+- [martinalderson.com--posts-are-openai-and-anthropic-really-losing-money-on-infere--beeb95b5](martinalderson.com--posts-are-openai-and-anthropic-really-losing-money-on-infere--beeb95b5.md)
+- [open.substack.com--pub-swyx-p-ainews-openai-launches-gpt-image--6e7fb087](open.substack.com--pub-swyx-p-ainews-openai-launches-gpt-image--6e7fb087.md)
+- [openai-agents-sdk-next-evolution-2026-04](openai-agents-sdk-next-evolution-2026-04.md)
+- [openai-codex-orchestration-symphony](openai-codex-orchestration-symphony.md)
+- [openai-equip-responses-api-computer-environment-2026-03-11](openai-equip-responses-api-computer-environment-2026-03-11.md)
+- [openai-harness-engineering-lopopolo](openai-harness-engineering-lopopolo.md)
+- [openai-sandbox-agents-api-guide-2026-04](openai-sandbox-agents-api-guide-2026-04.md)
+- [openai-unlocking-codex-harness](openai-unlocking-codex-harness.md)
+- [openai-unrolling-codex-agent-loop](openai-unrolling-codex-agent-loop.md)
+- [simonwillison.net--2026-apr-28-openai-codex--558b4b74](simonwillison.net--2026-apr-28-openai-codex--558b4b74.md)
+- [theatlantic.com--technology-2026-04-openai-trial-elon-musk-sam-altman-686984--5e03c7a7](theatlantic.com--technology-2026-04-openai-trial-elon-musk-sam-altman-686984--5e03c7a7.md)
+- [thesignal.substack.com--openai-is-cooking-anthropic-sweep-2026-04-26](thesignal.substack.com--openai-is-cooking-anthropic-sweep-2026-04-26.md)
+- [trendingtopics.eu--is-this-gpt-6-openai-bets-everything-on-new-model-spud--f17ba49f](trendingtopics.eu--is-this-gpt-6-openai-bets-everything-on-new-model-spud--f17ba49f.md)
+- [wheresyoured.at--hatersguide-openai--1e5ccc17](wheresyoured.at--hatersguide-openai--1e5ccc17.md)
+- [wheresyoured.at--how-openai-kills-oracle--55ef849c](wheresyoured.at--how-openai-kills-oracle--55ef849c.md)
+- [wheresyoured.at--openai-cfo-news--6d149a3a](wheresyoured.at--openai-cfo-news--6d149a3a.md)
+- [wheresyoured.at--openai-projects-chatgpt-plus-subscriptions-to-drop-by-80-fro--4a94de93](wheresyoured.at--openai-projects-chatgpt-plus-subscriptions-to-drop-by-80-fro--4a94de93.md)
+
 ## Sources
 - **OpenAI Agents SDK Blog (2026-04-15)** — [openai.com](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
 - **OpenAI API Sandbox Docs** — [developers.openai.com](https://developers.openai.com/api/docs/guides/agents/sandboxes)
 - **Simon Willison: GPT-5.5 prompting guide (2026-04-25)** — [simonwillison.net](https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/)
 - **Alex Banks, The Signal: "OpenAI Is Cooking, The Anthropic Sweep, and SpaceX Courts Cursor" (2026-04-26)** — [substack.com](https://open.substack.com/pub/thesignal/p/openai-is-cooking-the-anthropic-sweep)
+
+## References
+
+- openai-symphony-codex-orchestration
+- sign-of-the-future-gpt-55

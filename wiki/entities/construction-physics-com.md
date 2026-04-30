@@ -143,3 +143,7 @@ This post exemplifies Potter's method: take a seemingly narrow technical problem
 - "How Much Computing Power is in a Data Center?" (March 2026)
 - Mindvalley Book Club interview (January 2026)
 - Amazon book listing: _The Origins of Efficiency_ (ISBN 978-1953953520)
+
+## References
+
+- construction-physics.com--p-reading-list-042526--9dbc1da7

@@ -63,3 +63,9 @@ Gemini-powered image generation (NB2) competes directly with OpenAI's GPT Image 
 ## Sources
 - [Alex Banks, The Signal: "ChatGPT Images 2.0 is genuinely fantastic"](https://thesignal.substack.com/p/chatgpt-images-20-is-genuinely-fantastic) (2026-04-24) — comparative analysis
 - [Ben's Bites: Gemini 3.1 Flash TTS](https://substack.com/redirect/417cdc81-3b4b-4bc6-af06-907920a73e36) — TTS model details
+
+## References
+
+- 2033543094373859488_turning-geminis-embedding-api-into-a-universal-mul
+
+- gemini-deep-research-agent

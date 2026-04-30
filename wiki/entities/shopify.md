@@ -37,3 +37,7 @@ Shopify is an e-commerce platform and a reference case for organizational AI ado
 - [[tobi-lutke]]
 - [[experience-is-a-tax]]
 - [[solo-founder-stack]]
+
+## References
+
+- shopify-roast-structured-ai-workflows

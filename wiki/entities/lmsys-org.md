@@ -76,6 +76,18 @@ The industry-standard blind pairwise comparison platform for LLM evaluation:
 - **Alibaba Cloud / Ant Group**: Production deployments and EPD contributions
 - **Hugging Face**: Model weight hosting
 
+### Blog posts
+- [2026-01-12_lmsys-epd-disaggregation](2026-01-12_lmsys-epd-disaggregation.md)
+- [2026-01-15_lmsys-pipeline-parallelism](2026-01-15_lmsys-pipeline-parallelism.md)
+- [2026-01-26_lmsys-int4-qat](2026-01-26_lmsys-int4-qat.md)
+- [2026-02-16_lmsys-sglang-diffusion](2026-02-16_lmsys-sglang-diffusion.md)
+- [2026-02-20_lmsys-gb300-inferencex](2026-02-20_lmsys-gb300-inferencex.md)
+- [2026-03-11_lmsys-nemotron-3-super](2026-03-11_lmsys-nemotron-3-super.md)
+- [2026-03-17_lmsys-rocm-miles-rl](2026-03-17_lmsys-rocm-miles-rl.md)
+- [2026-03-25_lmsys-elastic-ep](2026-03-25_lmsys-elastic-ep.md)
+- [2026-04-10_lmsys-hisparse](2026-04-10_lmsys-hisparse.md)
+- [2026-04-25_lmsys-deepseek-v4](2026-04-25_lmsys-deepseek-v4.md)
+
 ## Links
 - [LMSYS Blog](https://lmsys.org/blog/)
 - [GitHub Organization](https://github.com/sgl-project)

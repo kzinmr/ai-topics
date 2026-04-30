@@ -174,3 +174,38 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 - "What Actually Makes You Senior"
 - "The Strange Case of Engineers Who Dismiss AI"
 - Podcast appearances: Pragmatic Engineer, 99% Invisible, The Changelog, Exponent, Staff Plus Journey, Humans of Reliability, Grammar Girl, Dead Code, ABC News
+
+## References
+
+- seangoedecke.com--2025-wrapup--17f79aba
+- seangoedecke.com--a-little-bit-cynical--7ba10c9b
+- seangoedecke.com--addicted-to-being-useful--63b6b7ac
+- seangoedecke.com--ai-detection--e63a94c4
+- seangoedecke.com--bad-code-at-big-companies--456be8ff
+- seangoedecke.com--big-tech-needs-big-egos--47117535
+- seangoedecke.com--continuous-learning--c324e562
+- seangoedecke.com--fast-llm-inference--9f52f6cb
+- seangoedecke.com--gas-and-ralph--fbb0beb3
+- seangoedecke.com--generate-skills-afterwards--b1d3a6ea
+- seangoedecke.com--getting-the-main-thing-right--cbdfa8d0
+- seangoedecke.com--giving-llms-a-personality--5d1208a5
+- seangoedecke.com--grok-deepfakes--5642acf5
+- seangoedecke.com--heroism--f93f8694
+- seangoedecke.com--how-does-ai-impact-skill-formation--f6695380
+- seangoedecke.com--how-i-estimate-work--e0588a85
+- seangoedecke.com--insider-amnesia--173bb317
+- seangoedecke.com--knowing-how-to-drive-the-car--f0fe0e98
+- seangoedecke.com--luddites-and-ai-datacenters--3ab44e30
+- seangoedecke.com--many-anti-ai-arguments-are-conservative--ed12c53a
+- seangoedecke.com--nobody-knows-how-software-products-work--5e504594
+- seangoedecke.com--programming-with-ai-agents-as-theory-building--b672de74
+- seangoedecke.com--screwing-up--77b3722a
+- seangoedecke.com--simple-work-gets-rewarded--8214c3f2
+- seangoedecke.com--software-engineering-may-no-longer-be-a-lifetime-career--be1d2e58
+- seangoedecke.com--the-dictators-handbook--354e2eb5
+- seangoedecke.com--unblockable--dd42280e
+- seangoedecke.com--will-my-job-still-exist--f6e439b0
+- seangoedecke.com--working-on-products-people-hate--9dead82f
+- seangoedecke.com--you-cant-design-software-you-dont-work-on--1c498a63
+
+- seangoedecke-anti-ai-conservative-2026-04-18

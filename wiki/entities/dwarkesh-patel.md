@@ -192,3 +192,8 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [Dylan Patel — "3 big bottlenecks to scaling AI compute" (Mar 2026)](https://www.dwarkeshpatel.com/p/dylan-patel-deep-dive-on-the-3-big-bottlenecks-to-scaling-ai-compute)
 - [Elon Musk — "Cheapest AI will be in space" (Feb 2026)](https://www.dwarkesh.com/p/elon-musk)
 - [Jensen Huang — "TPU competition, China, supply chain moat" (Apr 2026)](https://www.dwarkesh.com/p/jensen-huang)
+
+## References
+
+- dwarkesh.com--p-reiner-pope--11ee10e4
+- dwarkesh.com--p-what-ive-been-thinking-april-27--535a8f96

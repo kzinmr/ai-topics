@@ -187,3 +187,16 @@ But this transparency strengthens rather than weakens his historical work. By ac
 - [Heroes of Might and Magic III Design History](https://www.filfre.net/2025/07/18/) (Jul 2025)
 - Maher's earlier works: *Let's Tell a Story Together: A History of Interactive Fiction*, *His Majesty's Ship Impetuous*, *The King of Shreds and Patches*
 - SPAG magazine — Maher served as the last long-serving editor before founding The Digital Antiquarian
+
+## References
+
+- filfre.net--2026-01-homeworld--e857fe8c
+- filfre.net--2026-01-omikron-the-nomad-soul--2ef39d28
+- filfre.net--2026-02-1998-ebook--b59a9b48
+- filfre.net--2026-02-gabriel-knight-3-blood-of-the-sacred-blood-of-the-da--31b30c20
+- filfre.net--2026-02-ultima-ix--cb76b13f
+- filfre.net--2026-03-the-mystery-of-rennes-le-chateau-part-1-the-priests---1b1a3154
+- filfre.net--2026-03-the-mystery-of-rennes-le-chateau-part-2-secret-codes--57d85396
+- filfre.net--2026-04-the-mystery-of-rennes-le-chateau-part-3-a-secret-his--028f4fdc
+- filfre.net--2026-04-the-mystery-of-rennes-le-chateau-part-4-non-fiction---893d1378
+- filfre.net--2026-04-this-week-on-the-analog-antiquarian--a61b592d

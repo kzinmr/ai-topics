@@ -162,3 +162,11 @@ Marcusの結論:
 - *Taming Silicon Valley* (2023/2024)
 - *The Algebraic Mind* (2001)
 - Senate Testimony on AI regulation
+
+## References
+
+- garymarcus.substack.com--p-dario-amodei-hype-ai-safety-and-the--3583b8c4
+- garymarcus.substack.com-claude-mythos-evaluated-2026-04-13
+
+- 2026-04-11-gary-marcus-biggest-advance-ai-llm
+- 2026-04-12-gary-marcus-even-more-good-news-neurosymbolic

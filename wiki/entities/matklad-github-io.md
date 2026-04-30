@@ -174,3 +174,17 @@ His "Missing IDE Feature" essay — advocating for "fold method bodies by defaul
 - [Rust Is a Scalable Language](https://matklad.github.io/2023/03/28/rust-is-a-scalable-language.html) (Mar 2023)
 - [Zig Language Server And Cancellation](https://matklad.github.io/2023/05/06/zig-language-server-and-cancellation.html) (May 2023)
 - [rust-analyzer Guide](https://rust-analyzer.github.io/book/contributing/guide.html)
+
+## References
+
+- matklad-test-case-min-2026-04-21
+- matklad.github.io--2026-01-27-make-ts-html--c278a640
+- matklad.github.io--2026-02-06-ci-in-a-box-html--854869fb
+- matklad.github.io--2026-02-11-programming-aphorisms-html--e7d9c395
+- matklad.github.io--2026-02-14-justifying-text-wrap-pretty-html--3f023c73
+- matklad.github.io--2026-02-16-diagnostics-factory-html--26233271
+- matklad.github.io--2026-02-21-wrapping-code-comments-html--eb9b6dcb
+- matklad.github.io--2026-02-25-against-query-based-compilers-html--b2f45cec
+- matklad.github.io--2026-03-05-jj-lsp-followup-html--3ad43ab1
+- matklad.github.io--2026-03-19-consensus-board-game-html--09e36c0a
+- matklad.github.io--2026-04-20-test-case-minimization-html--d9a14099

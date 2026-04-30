@@ -154,3 +154,23 @@ Westenberg's essays are distinguished by:
 - [The Case for Blogging in the Ruins](https://joanwestenberg.com/the-case-for-blogging-in-the-ruins/) (2026)
 - [joanwestenberg.com/about](https://joanwestenberg.com/about/)
 - [Stay Gold, America — Jeff Atwood](https://staygoldamerica.org) (collaboration)
+
+## References
+
+- joanwestenberg.com--how-we-lost-the-living-now--e7cc087a
+- joanwestenberg.com--i-truly-hate-mostpeopleslop--d655f2da
+- joanwestenberg.com--members-only-on-cathedral-thinking--dff2be2c
+- joanwestenberg.com--notes-on-going-solo-celebrating-6-years-of-studio-self--d61b67db
+- joanwestenberg.com--on-wintering--1bd87152
+- joanwestenberg.com--optimism-is-not-a-personality-flaw--966bd16c
+- joanwestenberg.com--sometimes-powerful-people-just-do-dumb-shit--e8c1fb24
+- joanwestenberg.com--the-ai-writing-witchhunt-is-pointless--499c6fe0
+- joanwestenberg.com--the-entire-internet-is-a-ugc-reaction-video-now--34aba885
+- joanwestenberg.com--the-hacker-news-tarpit--9522cda9
+- joanwestenberg.com--the-loop-everything-has-happened-before-and-everything-will---a70e4e53
+- joanwestenberg.com--the-passive-income-trap-ate-a-generation-of-entrepreneurs--ffe47a20
+- joanwestenberg.com--the-worlds-first-bullshit--7a8aa6c3
+- joanwestenberg.com--tim--e8cf2167
+- joanwestenberg.com--tread-carefully-because-you-tread-on-my-fucks--78a0861a
+- joanwestenberg.com--why-i-quit-the-strive--82fcc19f
+- joanwestenberg.com--why-prediction-markets-are-a-sure-sign-that-our-civilisation--61e5f297

@@ -176,3 +176,18 @@ His **Memex Method** — maintaining 50,000+ public notes in a searchable databa
 - [Enshittification: How Platforms Die](https://doctorow.medium.com/enshittification-506307699418) — The original enshittification essay (republished by Wired)
 - [Delegating trust is really, really, really hard](https://pluralistic.net/2022/10/11/rene-descartes-was-a-drunken-fart/#trusting-trust) — Pluralistic, Oct 2022
 - [pluralistic.net](https://pluralistic.net) — Daily blog
+
+## References
+
+- pluralistic.net--2026-04-15-artificial-lifeforms--21e76e30
+- pluralistic.net--2026-04-16-pascals-wager--6c0f18e0
+- pluralistic.net--2026-04-17-for-youze--000d19a4
+- pluralistic.net--2026-04-18-dominion-sucks-actually--b2f5ebe5
+- pluralistic.net--2026-04-20-praxis--5e07feb5
+- pluralistic.net--2026-04-21-torment-nexusism--e45abb26
+- pluralistic.net--2026-04-22-uber-for-nurses--56a4b129
+- pluralistic.net--2026-04-23-poison-pill--e68e07a4
+- pluralistic.net--2026-04-24-poop-emoji-plus-plus--1906b5a4
+- pluralistic.net--2026-04-25-machiavellian--6f8b9f50
+- pluralistic.net--2026-04-27-analogs-and-analogies--36a28626
+- pluralistic.net--2026-04-27-mouseketeers--c9e41011

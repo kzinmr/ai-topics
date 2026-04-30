@@ -205,3 +205,7 @@ Chris's interests span an unusually wide range:
 - "The MVC Mistake" (March 2026)
 - "Long Hiatus: Emacs Upgrades"
 - Buttondown newsletter: Entropic Thoughts
+
+## References
+
+- entropicthoughts.com--understanding-systems--149e6399

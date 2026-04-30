@@ -216,3 +216,23 @@ Freedom of Information — Process Eden uses to access government data
 - GitHub: [@edent](https://github.com/edent) — Open source projects
 - Bluesky: [@edent](https://bsky.app/profile/edent) — Social media presence
 - UK Government Digital Service — Eden's former employer
+
+## References
+
+- shkspr.mobi--blog-2026-04-android-now-stops-you-sharing-your-location-in---de2e8f86
+- shkspr.mobi--blog-2026-04-better-tts-on-linux--f770e312
+- shkspr.mobi--blog-2026-04-book-review-how-to-kill-a-witch-a-guide-for-the--a423bf01
+- shkspr.mobi--blog-2026-04-book-review-small-comfort-by-ia-genberg--6a80f3d3
+- shkspr.mobi--blog-2026-04-book-review-superintelligence-paths-dangers-str--cec9583c
+- shkspr.mobi--blog-2026-04-book-review-up-a-scientists-guide-to-the-magic---aabbad6d
+- shkspr.mobi--blog-2026-04-cheapest-way-to-keep-a-uk-mobile-number-using-a--64bcfc4c
+- shkspr.mobi--blog-2026-04-did-wordpress-vip-leak-my-phone-number--8bd58bd0
+- shkspr.mobi--blog-2026-04-does-mythos-mean-you-need-to-shut-down-your-ope--021b2763
+- shkspr.mobi--blog-2026-04-lets-get-digging--0b28883d
+- shkspr.mobi--blog-2026-04-reprojecting-dual-fisheye-videos-to-equirectang--6550b565
+- shkspr.mobi--blog-2026-04-sneaky-spam-in-conversational-replies-to-blog-p--dde8f6c2
+- shkspr.mobi--blog-2026-04-someone-at-browserstack-is-leaking-users-email---ca65e456
+- shkspr.mobi--blog-2026-04-theatre-review-avenue-q--f4765991
+- shkspr.mobi--blog-2026-04-theatre-review-hadestown--44eda2ab
+- shkspr.mobi--blog-2026-04-why-is-it-so-hard-to-passively-stalk-my-friends--94b8e163
+- shkspr.mobi--blog-2026-04-you-can-parse-an-env-file-as-an-ini-with-php-bu--c596e30b

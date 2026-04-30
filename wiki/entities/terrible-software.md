@@ -216,3 +216,16 @@ The blog uses WordPress with email subscription functionality and is distributed
 - "Why Am I Doing the Thinking for You?" (February 2026)
 - "Life Happens at 1x Speed" (January 2026)
 - "Creating Your Own Opportunities" (January 2026)
+
+## References
+
+- terriblesoftware.org--2025-12-11-ai-can-write-your-code-it-cant-do-your-job--c0ff8c38
+- terriblesoftware.org--2025-12-19-the-strange-case-of-engineers-who-dismiss-ai--281a6788
+- terriblesoftware.org--2025-12-29-a-year-of-writing-for-myself-that-230000-people-r--48a6acca
+- terriblesoftware.org--2026-01-05-creating-your-own-opportunities--767a3ab1
+- terriblesoftware.org--2026-01-08-life-happens-at-1x-speed--2159f7c9
+- terriblesoftware.org--2026-01-22-why-i-still-write-code-as-an-engineering-manager--f759f740
+- terriblesoftware.org--2026-02-02-why-am-i-doing-the-thinking-for-you--f3162734
+- terriblesoftware.org--2026-03-03-nobody-gets-promoted-for-simplicity--a80f62f8
+- terriblesoftware.org--2026-03-27-good-taste-is-just-experience--6b9df632
+- terriblesoftware.org--2026-04-01-say-the-thing-you-want--56b09ae0

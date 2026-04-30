@@ -78,3 +78,7 @@ Includes his work at **Stitch Fix** (multimodal embedding systems, Flight framew
 - **Conference talks and workshops** — Maven course updates, keynote announcements, community engagement
 - **Software 3.0 philosophy** — Arguments for classical engineering rigor in LLM applications
 - **Consulting insights** — Real-world patterns observed across startups and enterprises
+
+## References
+
+- jason-liu-sandboxes-agents-sdk-2026-04

@@ -67,3 +67,7 @@ Telegram's bot platform has become a significant deployment surface for AI syste
 - [[claude-code]] — Agentic coding platforms
 - [[memory-architecture]] — Multi-agent systems
 - [[agent-swarms]] — Bot-to-bot coordination patterns
+
+## References
+
+- core.telegram.org--bots-features-managed-bots

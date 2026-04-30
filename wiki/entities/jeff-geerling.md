@@ -184,3 +184,27 @@ Geerling's product reviews are distinguished by their willingness to deliver neg
 - "Corporate Open Source is Dead" (2024): widely cited in licensing discussions
 - His voice cloning incident (2025) became a case study in AI ethics and identity theft
 - Regular speaker at AnsibleFest, DrupalCon, and other open-source conferences
+
+## References
+
+- jeffgeerling.com--blog-2026-ai-is-destroying-open-source--90aa7e5c
+- jeffgeerling.com--blog-2026-arm-mainboard-for-framework-laptop--b32c90f0
+- jeffgeerling.com--blog-2026-best-laptop-apple-ever-made--d113437b
+- jeffgeerling.com--blog-2026-build-your-own-dial-up-isp-with-a-raspberry-pi--fdb96af0
+- jeffgeerling.com--blog-2026-dram-pricing-is-killing-the-hobbyist-sbc-market--e82f991f
+- jeffgeerling.com--blog-2026-expert-beginners-and-lone-wolves-dominate-llm-era--c1ee61d4
+- jeffgeerling.com--blog-2026-exploring-a-modern-smpte-2110-broadcast-truck-with--52dd8947
+- jeffgeerling.com--blog-2026-firewire-on-a-raspberry-pi--da90e989
+- jeffgeerling.com--blog-2026-frigate-with-hailo-for-object-detection-on-a-raspb--ee099022
+- jeffgeerling.com--blog-2026-macbook-neo-replace-m4-air--e5b9e8af
+- jeffgeerling.com--blog-2026-minidv-with-raspberry-pi-firewire-hat--32c47ee4
+- jeffgeerling.com--blog-2026-new-10-gbe-usb-adapters-cooler-smaller-cheaper--72a709e7
+- jeffgeerling.com--blog-2026-ode-to-the-aa-battery--c77c9394
+- jeffgeerling.com--blog-2026-pint-sized-macintosh-pico-micro-mac--ceca8a06
+- jeffgeerling.com--blog-2026-ptp-wall-clock-impractical-too-precise--d5aceaaa
+- jeffgeerling.com--blog-2026-raspberry-pi-connect-may-control-windows-soon--86bbba72
+- jeffgeerling.com--blog-2026-restoring-xserve-g5-apple-server--f1bd9922
+- jeffgeerling.com--blog-2026-securely-erase-hard-drive-macos-tahoe--2ddd3957
+- jeffgeerling.com--blog-2026-testing-reachy-mini-hugging-face-robot--af3666d1
+- jeffgeerling.com--blog-2026-the-first-good-raspberry-pi-laptop--444c4638
+- jeffgeerling.com--blog-2026-upgrading-my-open-source-pi-surveillance-server-fr--457a6774
