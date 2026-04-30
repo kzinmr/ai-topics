@@ -430,3 +430,14 @@ Processed two articles from timsh.org covering Claude Code in Docker isolation a
 
 ### Files updated:
 - [[index.md]] — Added ai-video-generation-2026 and ai-regulation-2026 to Concepts section. Updated small-language-models description (removed TODO tag). Total pages: 710 | Full entries: 683 | Stubs: 619.
+
+## [2026-04-30] searchcode.com — Code Intelligence for LLMs
+
+- [[entities/searchcode-com]] — New entity page: code intelligence MCP server for LLMs. 6 MCP tools (code_analyze, code_search, code_get_file, code_get_files, code_file_tree, code_get_findings). Previously indexed 75B+ lines of code as a source code search engine (~2013–2025).
+- [[entities/searchcode-com]] — Rebooted March 2026 as B2A (Business-to-Agent) service. World's first website with LLM testimonials. Claims 99% token reduction (267 MB raw code → 0.8 MB structured data).
+- [[entities/searchcode-com]] — Powered by scc (Sloc Cloc and Code, 300+ languages) and cs (Code Spelunker). Free beta, REST API + MCP + Python SDK available. Enterprise: Docker + Helm for private repos.
+- [[entities/ben-boyter]] — New entity page: Ben E. C. Boyter, Australian software engineer and creator of searchcode.com, scc, and cs. Author of the 'Marketing to the Machine' B2A thesis.
+- [[entities/ben-boyter]] — 15+ years experience in testing, AWS, large-scale systems. Also created Bonzamate (Australian search engine), lc (License Checker), hashit. Blog at boyter.org.
+- [[concepts/code-intelligence-for-llms]] — New concept page: providing LLMs with structured, pre-computed code analysis data via MCP/REST APIs. Replaces 'clone + cat' pattern. Canonical implementation: searchcode.com. Cuts token usage 99%.
+- [[concepts/business-to-agent]] — New concept page: B2A paradigm where the primary user of a service is an AI agent/LLM. Coined by Ben Boyter. Services optimize for Context ROI (token efficiency). Contrasts with B2C model: MCP/API over UI, LLM testimonials over human testimonials.
+- Raw article: raw/articles/2026-04-30-searchcode-com-code-intelligence-llms.md

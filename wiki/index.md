@@ -33,6 +33,7 @@
 - [[entities/avi-im]] — **Blog** | avi.im | Creator of **KVM**, author of [[concepts/zero-disk-architecture]]
 - [[entities/ashpreet-bedi]] — **Name** | Ashpreet Bedi |
 - [[entities/beej-us]] — **URL:** https://beej.us
+- [[entities/ben-boyter]] — Creator of searchcode.com, scc (Sloc Cloc and Code), cs (Code Spelunker). Author of 'Marketing to the Machine' B2A thesis on Business-to-Agent design.
 - [[entities/benjamin-clavie]] — **X** | @bclavie |
 - [[entities/berthub-eu]] — **Blog** | berthub.eu |
 - [[entities/boaz-barak]] — **X** | @boazbaraktcs |
@@ -240,6 +241,7 @@
 - [[entities/sankalp-sinha]] — **Sankalp Sinha**, known online as **dejavucoder** (@dejavucoder), is an **AI engineer** and applied LLM researcher based in India. He focuses on AI-assisted coding, agentic workflows, LLM evaluati...
 - [[entities/scott-wu]] — CEO and co-founder of **Cognition AI**, the company behind **Devin** — the world's first autonomous AI software engineer. Former competitive programming champion (3× IOI gold medals, 1st place in 2...
 - [[entities/seangoedecke-com]] — **URL:** https://www.seangoedecke.com
+- [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. 6 specialized tools for code analysis/search/retrieval from any public git repo. Previously indexed 75B+ lines of code. Built by [[ben-boyter]]. Free beta, no API key needed.
 - [[entities/sero]] — Sero (known online as **0xSero**) is an open-source developer, AI infrastructure builder, and founder of **Sybil Solutions**. He operates at the intersection of AI agents, blockchain infrastructure...
 - [[entities/sglang]] — **Type** | LLM Inference Engine / Serving Framework |
 - [[entities/sheshansh-agrawal]] — **X/Twitter** | @sheshansh_agrawal |
@@ -442,6 +444,7 @@
 |- [[concepts/behavioral-trait-transmission]] — Language models that share initialization can transmit behavioural traits through training data that is semantically unrelated to those traits — a phenomenon discovered by Anthropic and academic re...
 |- [[concepts/bitter-lesson-harnessing]] — As model capabilities improve through scaling, the role of the harness shifts from implementing logic to orchestrating model behavior. The harness becomes thinner while the model carries more intelligence.
 |- [[concepts/building-effective-agents]]
+- [[concepts/business-to-agent]] — Business paradigm where the primary user is an AI agent/LLM rather than a human. Services optimize for token efficiency and structured data output over human UI/UX. Coined by [[ben-boyter]].
 - [[concepts/caid-coordination]] — A coordination framework from CMU (2026) for running multiple coding agents in parallel on complex software engineering tasks. Uses git operations as the core coordination primitive.
 - [[concepts/causal-backbone-conjecture]] — **Author:** tailcalled (LessWrong)
 - [[concepts/chaos-engineering]] — Chaos Engineering is the discipline of experimenting on a system to build confidence in its ability to withstand turbulent conditions in production. For microservices, this means intentionally inje...
@@ -465,7 +468,8 @@
 |- [[concepts/cli-over-mcp-pattern]]
 - [[concepts/closing-agent-loop]] — Cognition's philosophy for autonomous development: Devin doesn't just write code — it handles the entire development loop.
 - [[concepts/coala]] — **Authors:** Theodore R. Sumers, Shunyu Yao, Karthik Narasimhan, Thomas L. Griffiths (Princeton University)
-- [[concepts/code-mode]] — CodeMode is the paradigm where LLMs write code (typically Python) for batch execution rather than making sequential tool calls. Coined by Cloudflare and independently developed by Anthropic, Pydant...
+- [[concepts/code-mode]] — CodeMode is the paradigm where LLMs write code (typically Python) for batch execution rather than making sequential tool calls. Coined by Cloudflare and independently developed by Pydantic, Anthropic and o...
+- [[concepts/code-intelligence-for-llms]] — Providing LLMs with structured, pre-computed code analysis data via MCP/REST APIs rather than raw source files. Cuts token usage 99%. Canonical implementation: [[searchcode-com]].
 - [[concepts/coding-agents]] — LLM-powered coding agents — tools, environments, and optimization patterns for agent-driven development.
 - [[concepts/cognition-ai-data-analyst]] — Cognitionチームが提唱する、AIソフトウェアエンジニア（Devin）を24/7オンデマンドデータサイエンティストとして活用するアプローチ。SQL専用ツールではなく、**コードベースの文脈理解+データ分析+可視化**を統合したエージェント設計。
 - [[concepts/cognition-devin-philosophy]] — Cognition Labs（CEO: Scott Wu @ScottWu46）の Devin チームが発信する、AI coding agent に関する一貫した哲学。
