@@ -1,3 +1,9 @@
+## [2026-04-30] Doug Turnbull — Agentic Search Is Having a Grep Moment
+
+- Expanded [[concepts/agentic-search]] — Added "Practitioner Perspective: Doug Turnbull's 'Grep Moment'" section under Level 3. Two-loop architecture (inner agent loop + outer harness validation), deconstructing the search stack (ranking logic moves from search engine to harness), why dumb tools work (constraints budget creativity, code navigation training data), three limits of grep (actionable feedback, complexity, token cost). Cross-references SID-1 and the externalized processing paradigm.
+- Saved raw article: raw/articles/2026-04-06_softwaredoug-agentic-search-grep-moment.md
+- Source: https://softwaredoug.com/blog/2026/04/06/agentic-search-is-having-a-grep-moment
+
 ## [2026-04-30] SID-1 — First RL-Trained Agentic Retrieval Model
 
 - Expanded [[concepts/agentic-search]] — Added "RL-Trained Agentic Retrieval: SID-1" section under Level 1 (IR Research Perspective). SID-1 (SID AI, Dec 2025, Qwen3-14B + GRPO): 0.84 recall (near-doubled vs reranker @10), 24× faster than GPT-5.1, 374× cheaper than Sonnet 4.5. Key insights: document-centric reward (NDCG), TI/TO pipeline (message abstractions cause model collapse), length scheduling. Emergent capabilities: parallel tool use, hierarchical retrieval with `read` tool, RRF fusion.

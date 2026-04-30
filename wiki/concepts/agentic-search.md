@@ -14,9 +14,11 @@ sources:
   - raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
   - raw/papers/2026-03-20_2603.20432_coding-agents-effective-long-context-processors.md
   - raw/articles/2025-12-04_sid-1-agentic-retrieval.md
+  - raw/articles/2026-04-06_softwaredoug-agentic-search-grep-moment.md
   - https://arxiv.org/abs/2602.21456
   - https://arxiv.org/abs/2603.20432
   - https://www.sid.ai/research/sid-1-technical-report
+  - https://softwaredoug.com/blog/2026/04/06/agentic-search-is-having-a-grep-moment
   - https://github.com/ChuanMeng/text-ranking-in-deep-research
 ---
 
@@ -208,6 +210,59 @@ The coding agent approach is not always cheaper than RAG, but it is significantl
 
 This research suggests a new thesis: **delegating long-context processing to coding agents is a viable alternative to scaling context windows or optimizing retrieval pipelines.** By structuring text to look like code repositories, frontier models' software engineering capabilities can be leveraged for general text-processing.
 
+### Practitioner Perspective: Doug Turnbull's "Grep Moment"
+
+Search engineer Doug Turnbull ([[entities/doug-turnbull-core-ideas]]) contextualizes this trend in his April 2026 article *"Is grep all you need for RAG?"* He argues the key insight isn't about `grep` itself — it's about the **harness architecture** that constrains and validates agent behavior.
+
+#### The Two-Loop Architecture
+
+Turnbull defines the critical distinction:
+
+1. **Inner Loop (The Agent)** — LLM iterates through tool calls (`grep`, `cat`, `ls`, `find`) until satisfied
+2. **Outer Loop (The Harness)** — Programmatic validation hooks (rerankers, LLM-as-a-judge, metadata checks) evaluate results. If below quality bar (recency, popularity, authority), the harness tells the agent to "try harder."
+
+```python
+def harness(user_prompt):
+    inputs = [
+        {"role": "system", "content": system_prompt},
+        {"role": "system", "content": user_prompt},
+    ]
+    valid = False
+    while not valid:
+        inputs = agent_loop(inputs)  # Inner loop
+        search_results = inputs[-1]
+        for result in search_results:
+            if result.review < 4.0:
+                inputs.append({"role": "system",
+                               "content": f"Result {result} is not high enough reviews, keep trying"})
+                valid = False
+```
+
+#### Deconstructing the Search Stack
+
+Traditionally, ranking logic was embedded inside search engines (Elasticsearch). In the agentic model:
+- **Raw Access**: Agent gets "dumb" tools (grep)
+- **Acceptance Criteria**: Logic moves to the outer loop harness
+
+#### Why Dumb Tools Work
+
+- **Constraints** budget the agent's creativity, saving reasoning for where it matters
+- **Training data**: Frontier LLMs are trained on code navigation — `grep` is a learned "happy path"
+- **Structured outputs**: Developers force specific filters within simple keyword search
+
+#### Three Limits of Grep
+
+Turnbull warns that the "grep moment" has diminishing returns:
+
+1. **Actionable Feedback** — If a search tool cannot prioritize relevance, berating the agent to "try harder" won't help
+2. **Complexity** — Real retrieval balances recency, popularity, embeddings, lexical search; modeling this in flat markdown becomes unmanageable
+3. **Token Cost** — Many tool calls to compensate for a "dumb" search tool is expensive
+
+> *"While `grep` is having a moment, high-quality retrieval still matters. Eventually, the most appropriate tool for an agent is a well-tuned `search` function."*
+
+This mirrors the Level 1 finding (SID-1: RL-trained retrieval outperforms both vector search and pure grep-based approaches) and the Level 3 finding (retrieval tools can harm file-system exploration). The article suggests the optimal path is a **well-tuned search harness**, not an either/or choice.
+
+
 ---
 
 ## Experimental Setup (BrowseComp-Plus)
@@ -239,5 +294,6 @@ The IR-layer findings are based on:
 - [SID-1 Technical Report: Test-Time Compute for Retrieval](https://www.sid.ai/research/sid-1-technical-report) — SID Research (2025). First RL-trained agentic retrieval model. Qwen3-14B + GRPO, 0.84 recall, TI/TO pipeline insight.
 - [Revisiting Text Ranking in Deep Research](https://arxiv.org/abs/2602.21456) — Meng, Ou, MacAvaney, Dalton (2026). Systematic evaluation of IR methods in deep research contexts.
 - [Coding Agents are Effective Long-Context Processors](https://arxiv.org/abs/2603.20432) — Cao, Yin, Dhingra, Zhou (2026). Coding agents as retrieval/processing interface outperforming traditional IR on long-context tasks.
+- [Agentic Search Is Having a Grep Moment](https://softwaredoug.com/blog/2026/04/06/agentic-search-is-having-a-grep-moment) — Doug Turnbull (2026). Practitioner perspective on grep vs search harness architecture.
 - [Lessons from Building AI Agents in Financial Services](raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md) — Agentic search as skill discovery in Fintool.
 - [Text Ranking in Deep Research (Code)](https://github.com/ChuanMeng/text-ranking-in-deep-research) — Open-source code and data.
