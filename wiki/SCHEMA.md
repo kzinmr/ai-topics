@@ -33,10 +33,10 @@ sources: [raw/articles/source-name.md]
 - **People/Orgs**: person, company, lab, open-source, anthropic, openai, google
 - **Products**: product, platform, tool, service, protocol, framework, claude-code
 - **Techniques**: inference, fine-tuning, training, optimization, quantization, alignment, benchmark, evaluation, speculative-decoding, diffusion, prompting, rag, kv-cache
-- **Engineering**: agentic-engineering, harness-engineering, ai-agent-engineering, context-engineering, context-management
+- **Engineering**: agentic-engineering, harness-engineering, ai-agent-engineering, context-engineering, context-management, multi-llm, workflow
 - **AI Agents**: ai-agents, multi-agent, orchestration, agents, coding-agents, memory-systems, agent-safety
 - **Infrastructure**: platform, protocol, security, architecture
-- **Meta**: comparison, timeline, controversy, prediction, review, safety
+| **Meta**: comparison, timeline, controversy, prediction, review, safety, blogger, developer-tooling
 
 ### Guidelines
 - Every tag must be a useful category — avoid one-off tags that just restate the page title

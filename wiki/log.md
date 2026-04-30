@@ -355,5 +355,21 @@ Significant newsletter covering the industry-wide shift from training-dominant t
 - **Stale raw articles:** 124 articles >30 days old by filename date; 1,950 total raw articles (32 berthub.eu political articles likely need cleanup)
 - **Fixed:** Added `coding-agent` and `memory-system` to canonical tag taxonomy in SCHEMA.md (were being used but not declared)
 - **Tag sprawl:** 1,524 tag uses not matching canonical taxonomy — need bulk cleanup or taxonomy expansion
-- **[2026-04-30] AI Agent Architectures (Fintool & Ramp):** Added 8 concept pages (s3-first-architecture, background-coding-agent, warm-start-optimization, modal-sandboxes, ask-user-question-pattern, markdown-based-skills, agentic-search, delta-updates-redis) and 5 entity pages (fintool, nicolas-bustamante, ramp, inspect, opencode). Updated index.md (+13 pages, total 696) and raw/articles/ (2 sources).
-- **Tag sprawl:** 1,524 tag uses not matching canonical taxonomy — need bulk cleanup or taxonomy expansion
+
+## [2026-04-30] ingest | Tim Sh — AI Coding Workflows
+
+**Source:** raw/articles/timsh.org--claude-inside-docker--6842418e.md, raw/articles/timsh.org--how-i-created-an-ethereum-proof-of-stake-demo-entirely-with---3d132b24.md
+
+Processed two articles from timsh.org covering Claude Code in Docker isolation and Multi-LLM workflows.
+
+### Files created:
+- [[entities/tim-sh]] — Rewritten for timsh.org author (Tim Sh, PM/AI-coder). Covers Multi-LLM Role Separation, Docker isolation patterns, Ethereum PoS demo with Claude Code.
+- [[entities/tim-sherratt]] — Created from old tim-sh.md content. Covers historian, GLAM hacker, GLAM Workbench creator. Moved to disambiguate from tim-sh.
+
+### Files updated:
+- [[concepts/ai-coding-workflows]] — Added "Multi-LLM Role Separation Pattern" section. Updated frontmatter (new tag: multi-llm, new source).
+- [[SCHEMA.md]] — Added tags to taxonomy: multi-llm, workflow (Engineering category); blogger, developer-tooling (Meta category).
+- [[index.md]] — Updated tim-sh entry with correct domain/description. Added tim-sherratt entry. Updated ai-coding-workflows description.
+
+### Tagging changes:
+- Added multi-llm, workflow, blogger, developer-tooling to SCHEMA.md taxonomy

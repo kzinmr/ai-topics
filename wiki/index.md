@@ -263,7 +263,8 @@
 - [[entities/thariq-shihipar]] — **X** | @trq212 |
 - [[entities/the-old-new-thing]] — **URL:** https://devblogs.microsoft.com/oldnewthing/
 - [[entities/the-silicon-underground]] — **URL:** https://dfarq.homeip.net
-- [[entities/tim-sh]] — **Blog** | updates.timsherratt.org, timsherratt.au |
+- [[entities/tim-sh]] — **Blog** | timsh.org | AI coding practitioner, PM, Multi-LLM workflow pioneer |
+- [[entities/tim-sherratt]] — **Blog** | timsherratt.au | Historian, GLAM hacker, creator of GLAM Workbench |
 - [[entities/tobi-lutke]] — Tobi Lütke is the CEO of Shopify and a prominent advocate for organizational AI adoption.
 - [[entities/tom-aarsen]] — **X** | @tomaarsen |
 - [[entities/tom-renner]] — **Blog** | tomrenner.com |
@@ -385,7 +386,7 @@
 - [[concepts/agentic-design-patterns]] — A system-theoretic framework for engineering robust AI agents, deconstructing them into 5 functional subsystems and mapping them to a catalogue of 12 reusable Agentic Design Patterns (ADPs).
 - [[concepts/agentic-engineering]] — Moved to concepts/harness-engineering/agentic-engineering.
 - [[concepts/ai-agent-engineering]] — Platform architecture for agent execution; Anthropic Managed Agents, OpenAI Symphony, agentic literacy
-- [[concepts/ai-coding-workflows]] — Secure AI coding patterns: Docker container isolation, credential management, cost comparison (Claude Code vs Cursor), agent security
+- [[concepts/ai-coding-workflows]] — Secure AI coding patterns: Docker container isolation, credential management, Multi-LLM Role Separation, cost comparison
 - [[concepts/agentic-manual-testing]] — Moved to concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md
 - [[concepts/agentic-pbt]] — Anthropic + Hypothesis共同研究（NeurIPS 2025 DL4C Workshop）。Claude Codeエージェントが型注釈、docstring、関数名、コメントからコードの不変条件（properties）を自律的に推論し、HypothesisフレームワークでPBTを生成・実行する。
 - [[concepts/agentic-rag]] — Agentic RAG integrates autonomous AI agents into the RAG pipeline, enabling dynamic retrieval, iterative context refinement, and adaptive workflow orchestration. It addresses limitations of traditi...
