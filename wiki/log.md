@@ -1,3 +1,8 @@
+## [2026-04-30] db9: Filesystem + Postgres for Agent Workflows
+
+- Created [[concepts/db9-fs-sql-pattern]]: PostgreSQL distribution for agentic workloads that unifies file-based artifacts and relational metadata using SQL as the glue. Covers fs9 filesystem integration (read/write files, query CSV/JSONL/Parquet as relations), server-side embedding + pgvector HNSW search, and the compact RAG pipeline (source → chunk → retrieve → generate → output). Key benefit: "Why did the agent do that?" becomes a standard SQL query.
+- Raw article: raw/articles/db9-fs-sql-patterns.md
+
 ## [2026-04-30] Zero Disk Architecture — Avi Kivity's database design paradigm
 
 - Created [[concepts/zero-disk-architecture]]: Database design paradigm where all persistent state is offloaded to managed object storage (S3), achieving infinite scalability and serverless elasticity. Covers the LCD Model trade-off (Latency/Cost/Durability), enabling technologies (LSM Trees, Conditional Writes, S3 Express One Zone), and industry adoption (Snowflake, Neon, SlateDB, WarpStream).

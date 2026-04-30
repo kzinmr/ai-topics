@@ -460,7 +460,7 @@
 - [[concepts/cryptography-patterns]] — > A deep-dive into how Bitwarden (and its open-source clone Vaultwarden) encrypts and decrypts secrets. Based on Miguel Grinberg's reverse-engineering of the Bitwarden client and server code.
 - [[concepts/cybersecurity-proof-of-work]] — A concept coined by Drew Breunig in April 2026, observing that as LLMs like **Claude Mythos** become increasingly effective at finding security vulnerabilities, cybersecurity transforms into an eco...
 |- [[concepts/dark-factory-software-factory]] — **Source:** Simon Willison's Weblog (2026-01-28, 2026-02-07)
-|- [[concepts/db9-fs-sql-pattern]] — Filesystem + SQL integration pattern for AI agents. Instead of separating artifacts (files) and metadata (tables), db9 uses PostgreSQL as a unified data layer where agents manage both through SQL.
+|- [[concepts/db9-fs-sql-pattern]] — **db9** is a PostgreSQL distribution with compiled-in extensions for agentic workloads. Unifies file-based artifacts and relational metadata using SQL as the glue. Covers fs9 filesystem integration, server-side embedding/vector search, and the compact RAG pipeline (source → chunk → retrieve → generate → output).
 |- [[concepts/death-of-browser]]
 - [[concepts/decoder-only-gpt]] — The **decoder-only GPT** (Generative Pre-trained Transformer) is the dominant architecture behind modern large language models (ChatGPT, Claude, Gemini, etc.). Andrej Karpathy's **microgpt** projec...
 - [[concepts/deep-agents-runtime]] — Production runtime primitives for deep AI agents — durable execution, memory, multi-tenancy, HITL, guardrails, observability, sandbox, and cron.
