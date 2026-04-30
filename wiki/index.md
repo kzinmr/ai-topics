@@ -294,7 +294,62 @@
 - [[entities/mimo]] — Xiaomi's open-source LLM family. MiMo-V2.5-Pro: 1.02T MoE (42B active), 1M context, hybrid attention with learnable sink bias.
 - [[entities/supermemory]] — Company building SMFS (Supermemory Filesystem) — a mountable filesystem designed for AI agents, replacing RAG pipelines.
 
-## Concepts (329 pages)
+
+- [[entities/_index]] — Entities directory index page
+- [[entities/alex-volkov]] — Alexander Volkov — AI researcher and contributor
+- [[entities/boris-cherny--claude-code-development]] — Boris Cherny on Claude Code development history
+- [[entities/boris-cherny--core-ideas]] — Boris Cherny core ideas on AI coding agents
+- [[entities/boris-cherny--key-work]] — Boris Cherny key contributions and projects
+- [[entities/claude-code--architecture]] — Claude Code architecture and design patterns
+- [[entities/claude-code--capabilities]] — Claude Code capabilities and feature set
+- [[entities/claude-code--history]] — Claude Code development history and evolution
+- [[entities/claude-code--usage]] — Claude Code usage patterns and best practices
+- [[entities/clefourrier--core-ideas]] — Clefourrier core ideas on software development
+- [[entities/clefourrier--influence]] — Clefourrier influence on the developer community
+- [[entities/clefourrier--key-quotes]] — Notable quotes from Clefourrier
+- [[entities/clefourrier--sources]] — Sources and references for Clefourrier
+- [[entities/clefourrier--timeline]] — Clefourrier development timeline
+- [[entities/doug-turnbull-blog]] — Doug Turnbull (Softwaredoug) blog posts and articles
+- [[entities/doug-turnbull-core-ideas]] — Doug Turnbull core ideas on search and relevance
+- [[entities/doug-turnbull-projects]] — Doug Turnbull projects and tools
+- [[entities/doug-turnbull-speaking]] — Doug Turnbull speaking engagements and talks
+- [[entities/doug-turnbull-timeline]] — Doug Turnbull career timeline
+- [[entities/drew-breunig--core-ideas]] — Drew Breunig core ideas on data and AI
+- [[entities/drew-breunig--projects]] — Drew Breunig projects and contributions
+- [[entities/drew-breunig--timeline]] — Drew Breunig career timeline
+- [[entities/drew-breunig--writings]] — Drew Breunig writings and blog posts
+- [[entities/eugene-yan--core-ideas]] — Eugene Yan core ideas on ML engineering
+- [[entities/eugene-yan--key-quotes]] — Notable quotes from Eugene Yan
+- [[entities/eugene-yan--timeline]] — Eugene Yan career timeline
+- [[entities/gergely-orosz]] — Gergely Orosz — Engineering leader, author of Pragmatic Engineer newsletter
+- [[entities/jason-liu--context-engineering]] — Jason Liu (jxnlco) on context engineering patterns
+- [[entities/jason-liu--instructor]] — Jason Liu — Creator of Instructor library for structured LLM outputs
+- [[entities/jason-liu--key-work]] — Jason Liu key contributions and projects
+- [[entities/jason-liu--rag-framework]] — Jason Liu RAG framework and patterns
+- [[entities/karpathy-ideas]] — Andrej Karpathy ideas and perspectives on AI
+- [[entities/karpathy-projects]] — Andrej Karpathy projects and code
+- [[entities/karpathy-research]] — Andrej Karpathy research contributions
+- [[entities/karpathy-writings]] — Andrej Karpathy writings and blog posts
+- [[entities/langchain]] — LangChain — framework for building applications with LLMs via composable chains
+- [[entities/llamaindex]] — LlamaIndex — data framework for connecting custom data sources to LLMs
+- [[entities/mitchell-hashimoto-ghostty]] — Mitchell Hashimoto on Ghostty terminal emulator
+- [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto on HashiCorp and infrastructure tools
+- [[entities/omar-khattab/baleen]] — Omar Khattab — Baleen multi-hop retrieval system
+- [[entities/omar-khattab/colbert]] — Omar Khattab — ColBERT late-interaction retrieval model
+- [[entities/omar-khattab/collaborations]] — Omar Khattab research collaborations
+- [[entities/omar-khattab/dspy]] — Omar Khattab — DSPy declarative LM programming framework
+- [[entities/omar-khattab/gepa]] — Omar Khattab — GEPA genetic Pareto prompt evolution
+- [[entities/omar-khattab/impact-metrics]] — Omar Khattab impact metrics and citations
+- [[entities/omar-khattab/philosophy]] — Omar Khattab philosophy on AI research
+- [[entities/omar-khattab/publications]] — Omar Khattab academic publications
+- [[entities/omar-khattab/quotes]] — Omar Khattab notable quotes
+- [[entities/omar-khattab/research-trajectory]] — Omar Khattab research trajectory and career
+- [[entities/omar-khattab/rlm]] — Omar Khattab — RLM recursive language models
+- [[entities/quarq-labs]] — Quarq Labs — AI research and development lab
+- [[entities/ryan-lopopolo--core-ideas]] — Ryan Lopopolo (@_lopopolo) core ideas on AI engineering
+- [[entities/ryan-lopopolo--timeline]] — Ryan Lopopolo career timeline
+- [[entities/ryan-lopopolo--writings]] — Ryan Lopopolo writings and blog posts
+## Concepts (368 pages)
 
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
 - [[concepts/agent-economics]] — The cost structures, token consumption patterns (1000x multiplier), and economic implications of deploying autonomous AI agents at scale across L1-L5 autonomy levels.
@@ -643,6 +698,46 @@
 - [[concepts/smfs]] — Supermemory Filesystem: mountable filesystem for AI agents replacing UNIX operations with agent-aware alternatives. Combines RAG and filesystem paradigms.
 - [[concepts/mesa-filesystem]] — Filesystem designed specifically for enterprise AI agents. Addresses where agent artifacts (contracts, documents) live beyond chat history.
 
+
+- [[concepts/Mooncake]] — Mooncake is a KVCache-centric disaggregated architecture for serving LLMs at scale, developed by Moonshot AI.
+- [[concepts/_index]] — Concepts directory index page
+- [[concepts/agent-memory]] — Redirect page. Content consolidated to [[concepts/ai-agent-memory]].
+- [[concepts/agent-team-swarm/_index]] — Agent team swarm — multi-agent coordination patterns index.
+- [[concepts/ai-organization/_index]] — AI Organization — index page for AI-driven organizational structures.
+- [[concepts/clinical-ai]] — AI applications in clinical/medical settings. Healthcare AI integration patterns.
+- [[concepts/cloud-data-warehouses]] — Modern cloud data warehouse architectures for AI workloads.
+- [[concepts/cognitive-load-patterns]] — Patterns for managing cognitive load in software development.
+- [[concepts/cognitive-load-theory]] — Theory of cognitive load in software engineering — how mental overhead affects code comprehension.
+- [[concepts/cognitive-load-tool-support]] — Tool support for reducing cognitive load in development workflows.
+- [[concepts/cursor-ide]] — Cursor IDE — AI-native code editor built for agent-assisted development.
+- [[concepts/death-of-browser/_index]] — Death of Browser — index for posts on AI replacing browser-based interfaces.
+- [[concepts/defense-in-depth]] — Layered security strategy for AI systems — multiple control mechanisms at different layers.
+- [[concepts/dspy-architecture]] — DSPy Architecture — three core abstractions: Signatures, Modules, and Teleprompters.
+- [[concepts/dspy-comparisons]] — DSPy vs Other Approaches — paradigm comparison with LangChain, RLMs, GEPA.
+- [[concepts/dspy-modules]] — DSPy Modules Reference — composable building blocks connecting Signatures to execution.
+- [[concepts/dspy-optimization]] — DSPy Optimization — Teleprompters, Assertions, and Fine-Tuning techniques.
+- [[concepts/dual-process-theory]] — Dual-process theory applied to AI reasoning — System 1 vs System 2 processing in LLMs.
+- [[concepts/durable-execution]] — Durable execution pattern for long-running AI agent workflows with checkpointing and recovery.
+- [[concepts/fine-tuning/_index]] — Fine-tuning — index page for model fine-tuning concepts.
+- [[concepts/fine-tuning/instruction-fine-tuning]] — Instruction fine-tuning — training LLMs to follow instructions via supervised fine-tuning.
+- [[concepts/google-photo-scanning-ai]] — AI-powered photo scanning and enhancement technology by Google.
+- [[concepts/gpt-5.5-spud]] — OpenAI GPT-5.5 (codenamed Spud) — first fully retrained base model since GPT-4.5.
+- [[concepts/gpt-model-milestones]] — Timeline and milestones of OpenAI GPT model series evolution.
+- [[concepts/harness-engineering/_index]] — Harness Engineering — index page for agent harness design patterns.
+- [[concepts/harness-engineering/agentic-workflows/_index]] — Agentic Workflows — index page for AI-assisted coding workflow patterns.
+- [[concepts/harness-engineering/system-architecture/_index]] — System Architecture — index page for agent system architecture patterns.
+- [[concepts/human-in-the-loop]] — Human-in-the-loop (HITL) pattern — human judgment gates agent actions in agentic workflows.
+- [[concepts/inference/_index]] — Inference — index page for LLM inference engines and patterns.
+- [[concepts/langgraph]] — LangGraph — stateful agent orchestration framework by LangChain.
+- [[concepts/local-llm/_index]] — Local LLM — index page for local model deployment.
+- [[concepts/multimodal/_index]] — Multimodal — index page for vision/audio/c9-modal AI.
+- [[concepts/openclaw/_index]] — OpenClaw — index page for OpenClaw ecosystem concepts.
+- [[concepts/rags]] — RAGS — RAG system patterns and implementations.
+- [[concepts/sandbox/_index]] — Sandbox — index page for code execution sandboxing patterns.
+- [[concepts/self-learning-agents]] — Self-Learning Agents — AI agents that improve via experience and feedback loops.
+- [[concepts/speech/_index]] — Speech — index page for speech/audio AI concepts.
+- [[concepts/system-architecture/_index]] — System Architecture — index page for system design patterns.
+- [[concepts/tool-orchestration]] — Tool Orchestration — patterns for coordinating multiple tool calls in AI agents.
 ## Comparisons (11 pages)
 
 - [[comparisons/agent-orchestration-frameworks]] — **Date:** April 10, 2026
