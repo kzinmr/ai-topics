@@ -16,6 +16,7 @@ sources:
   - raw/articles/2025-12-04_sid-1-agentic-retrieval.md
   - raw/articles/2026-04-06_softwaredoug-agentic-search-grep-moment.md
   - raw/articles/2026-03-30_claude-web-search-dynamic-filtering.md
+  - raw/articles/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how.md
   - https://arxiv.org/abs/2602.21456
   - https://arxiv.org/abs/2603.20432
   - https://www.sid.ai/research/sid-1-technical-report
@@ -264,6 +265,25 @@ Turnbull warns that the "grep moment" has diminishing returns:
 
 This mirrors the Level 1 finding (SID-1: RL-trained retrieval outperforms both vector search and pure grep-based approaches) and the Level 3 finding (retrieval tools can harm file-system exploration). The article suggests the optimal path is a **well-tuned search harness**, not an either/or choice.
 
+### Talk: "Rag is the What. Agentic search is the How." (April 2026)
+
+In his 54-minute talk of the same title, Turnbull expanded his "grep moment" argument into a full architectural critique of the RAG paradigm. [[raw/articles/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how]]
+
+**Core argument:** Complexity in RAG lived in the retrieval layer (embedding pipelines, rerankers, fusion). With agentic search, that complexity is migrating to the agent+harness (tools, scaffolds, reasoning loops). Turnbull traces this unwinding through four stages:
+
+| Stage | What Changed | Impact |
+|-------|-------------|--------|
+| **Structured Attributes** | LLMs perform query understanding reliably via schema | Structured query languages enable accurate filtering |
+| **Tool Calling** | Agents know they *are searching*, not force-fed context | Intentional, self-directed retrieval behavior |
+| **Reasoning** | Agents reflect on results, analyze patterns, search again | Self-correcting retrieval replaces reranking |
+| **Dumb Retrievers** | Agents get by with BM25, grep, and simple tools | Complexity moves from retrieval to harness |
+
+The talk explicitly endorses SID-1 (RL-trained agentic retrieval) and positions it as the model-level complement to the harness-level changes: SID-1 speeds up the search reasoning loop, making "simple retrieval" practical at production scale.
+
+> "I wouldn't start RAG today assuming you need the classic RAG embedding+chunking paradigm. I'd focus on tools that deliver needed context. The dumbest thing that can work, with simplest."
+
+This talk is best read as a **live-recorded version** of the same thesis Turnbull published in his "Grep Moment" blog post — but extended from a single insight about grep to a full framework for understanding why and how agentic search replaces classical RAG.
+
 ### Production Implementation: Claude's Dynamic Web Search Filtering (Anthropic)
 
 Anthropic's **Dynamic Filtering** (March 2026) for Claude Web Search is a production-grade embodiment of the externalized processing paradigm. Instead of loading raw HTML into the context window, Claude writes and executes code to pre-process web results *before* they enter the model's reasoning context.
@@ -344,5 +364,6 @@ The IR-layer findings are based on:
 - [Revisiting Text Ranking in Deep Research](https://arxiv.org/abs/2602.21456) — Meng, Ou, MacAvaney, Dalton (2026). Systematic evaluation of IR methods in deep research contexts.
 - [Coding Agents are Effective Long-Context Processors](https://arxiv.org/abs/2603.20432) — Cao, Yin, Dhingra, Zhou (2026). Coding agents as retrieval/processing interface outperforming traditional IR on long-context tasks.
 - [Agentic Search Is Having a Grep Moment](https://softwaredoug.com/blog/2026/04/06/agentic-search-is-having-a-grep-moment) — Doug Turnbull (2026). Practitioner perspective on grep vs search harness architecture.
+- ["Rag is the What. Agentic search is the How." (YouTube)](https://www.youtube.com/watch?v=UXQ916WRK0A) — Doug Turnbull (2026). 54-minute talk: full architectural critique of RAG paradigm shift toward agentic search, with four-stage unwinding and SID-1 endorsement.
 - [Lessons from Building AI Agents in Financial Services](raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md) — Agentic search as skill discovery in Fintool.
 - [Text Ranking in Deep Research (Code)](https://github.com/ChuanMeng/text-ranking-in-deep-research) — Open-source code and data.

@@ -1,4 +1,13 @@
-## 2026-04-30 — Cloudflare Code Mode MCP
+## [2026-04-30] Doug Turnbull — "Rag is the What. Agentic search is the How." Talk (April 2026)
+
+- Expanded [[concepts/agentic-search]] — Added "Talk: 'Rag is the What. Agentic search is the How.'" section under Level 3 (Practitioner Perspective). Four-stage unwinding framework (Structured Attributes → Tool Calling → Reasoning → Dumb Retrievers). Complexity migration thesis: retrieval → agent+harness. Explicit SID-1 endorsement. This talk is the live-recorded version of the "Grep Moment" thesis, extended to a full architectural critique of the RAG paradigm.
+- Enriched [[entities/doug-turnbull-speaking]] — Added this 54-minute talk to Conference Talks list with wikilink to raw article.
+- Saved raw article: raw/articles/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how.md
+- Source: https://www.youtube.com/watch?v=UXQ916WRK0A
+
+---
+
+## [2026-04-30] Cloudflare Code Mode MCP
 
 - Expanded [[concepts/code-mode]] — Added "Cloudflare Server-Side Code Mode (MCP)" section with 2-tool interface (search/execute), V8 sandbox, 99.9% token reduction from ~1.17M to ~1K tokens. Added context reduction approaches comparison table. Added "CodeMode × RLM: 並行する文脈爆縮の2つのアプローチ" section with architectural comparison, tradeoff analysis, and convergence prediction. Updated frontmatter with Cloudflare sources.
 - Saved raw article: raw/articles/2026-04-30_cloudflare-code-mode-mcp.md

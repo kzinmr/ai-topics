@@ -3,7 +3,7 @@ title: Doug Turnbull - Speaking & Community
 type: entity-sub
 parent: doug-turnbull
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-04-30
 tags:
   - person
   - speaking
@@ -17,6 +17,10 @@ sources: []
 ## Conference Talks
 
 Turnbull is a regular speaker at search industry conferences:
+
+- **\"Rag is the What. Agentic search is the How.\"** (April 2026): 54-minute talk tracking the paradigm shift from classical RAG to agentic search — arguing that complexity moves from retrieval to the agent+harness, and that "dumb retrievers" (BM25, grep) work best with agent reasoning. Explicitly connects to SID-1, semantic grep, and scaffold+tool design. [[raw/articles/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how]]
+
+- **Berlin Buzzwords / Haystack EU** (2024): "Learning to Rank for Reddit Search: A Project Retro" with Charles Njoroge
 
 - **Berlin Buzzwords / Haystack EU** (2024): "Learning to Rank for Reddit Search: A Project Retro" with Charles Njoroge
 - **Elastic{ON}16** (2016): "The Ghost in the Search Machine"
