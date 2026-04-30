@@ -1,3 +1,12 @@
+## [2026-04-30] Skill Retrieval Augmentation (SRA) — Academic framework for agent skill retrieval at scale
+
+- Created [[concepts/skill-retrieval-augmentation]] — Concept page synthesizing Su, Long, Ai et al. (2026) arXiv:2604.24594. Three-stage SRA pipeline (Retrieve→Incorporate→Apply), SRA-Bench (5,400 tasks, 26,262 skills), "incorporation bottleneck" finding, and connection to harness engineering (progressive disclosure).
+- Saved raw paper: `raw/papers/2026-04-27_2604.24594_skill-retrieval-augmentation-for-agentic-ai.md` (user override — arXiv only, no venue found)
+- Cross-referenced with [[concepts/agentic-search]] (Level 2: skill/tool discovery), [[concepts/skill-architecture-patterns]] (Hermes vs OpenClaw skill management), [[concepts/harness-engineering]] (outer loop gating of skill selection)
+- Updated index files: wiki/index.md, wiki/log.md.
+
+---
+
 ## [2026-04-30] The Revenge of the Data Scientist — Hamel Husain's Foundational Essay on Harness Engineering
 
 - Created [[concepts/harness-engineering]] — Concept page synthesizing Hamel Husain's "Harness is Data Science" thesis: the 5 Eval Pitfalls, the mapping of modern LLM tasks to classic DS practices, binary-over-Likert principle, and vibe-based engineering critique.

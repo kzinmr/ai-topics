@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 726 | Full entries: 697 | Stubs: 619
+> Last updated: 2026-04-30 | Total pages: 727 | Full entries: 698 | Stubs: 619
 
 ## Entities (346 pages)
 
@@ -738,7 +738,8 @@
 - [[concepts/sglang-pipeline-parallelism]] — **Type** | Inference Parallelism Strategy |
 - [[concepts/showboat]] — Moved to concepts/harness-engineering/agentic-workflows/showboat.md
 - [[concepts/single-agent-ceiling]] — > 提唱: milksandmatcha|Sarah Chieng (@MilksandMatcha) + sero|Sero (@0xSero), 2026年4月
-- [[concepts/skill-architecture-patterns]] — **Overview:** Comparative analysis of two fundamentally different approaches to agent skill management — Hermes Agent's self-authoring, maximalist skill system vs OpenClaw's governed, primitives-fi...
+|- [[concepts/skill-architecture-patterns]] — **Overview:** Comparative analysis of two fundamentally different approaches to agent skill management — Hermes Agent's self-authoring, maximalist skill system vs OpenClaw's governed, primitives-fi...
+|- [[concepts/skill-retrieval-augmentation]] — **SRA**: Academic framework for dynamically retrieving agent skills from external corpora. Defines Retrieve→Incorporate→Apply pipeline. SRA-Bench benchmark. "Incorporation bottleneck" finding. (arXiv:2604.24594, Su et al. 2026)
 - [[concepts/solo-founder-stack]] — The set of tools, practices, and organizational models that enable a single founder to build and run a company at scale in the AI era — the "one-person unicorn" paradigm.
 - [[concepts/space-gpus]] — **Space GPUs** refers to the emerging concept of deploying AI compute hardware — primarily GPUs — in orbit aboard satellites, creating **orbital data centers (ODCs)** that leverage the unique physi...
 - [[concepts/speculative-decoding]] — A technique to accelerate LLM inference by using a smaller "draft" model to generate candidate tokens, which are then verified in parallel by a larger "target" model. Reduces per-token latency by 2...
