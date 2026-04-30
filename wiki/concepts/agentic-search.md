@@ -3,14 +3,17 @@ title: Agentic Search
 created: 2026-04-30
 updated: 2026-04-30
 type: concept
-tags: [search, ai-agents, information-retrieval, deep-research, reranking]
+tags: [search, ai-agents, information-retrieval, deep-research, reranking, coding-agents]
 aliases:
   - deep-research-retrieval
   - agent-query-mismatch
+  - externalized-processing
 sources:
   - raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md
   - raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
+  - raw/papers/2026-03-20_2603.20432_coding-agents-effective-long-context-processors.md
   - https://arxiv.org/abs/2602.21456
+  - https://arxiv.org/abs/2603.20432
   - https://github.com/ChuanMeng/text-ranking-in-deep-research
 ---
 
@@ -109,6 +112,69 @@ User asks: "What's the company's R&D spend trend?"
 
 ---
 
+## Level 3: Coding Agents as Retrieval/Processing Interface
+
+A 2026 study by Cao, Yin, Dhingra, and Zhou (Duke & CMU) proposes a paradigm shift: instead of using agents that *query retrieval systems*, treat the agent itself (Claude Code, Codex) as the retrieval/processing mechanism by letting it organize text in file systems and manipulate them with native tools.
+
+### How It Works
+
+Agents externalize long-context processing from latent attention (internal LLM processing) into explicit, executable interactions:
+
+```
+Massive text corpus
+        ↓
+  Agent organizes into directory structure (files/folders)
+        ↓
+  Uses grep, sed, ripgrep, Python scripts for navigation
+        ↓
+  Writes custom scripts for index/slice/filter/aggregate
+        ↓
+  Returns precise answer from up to 3 trillion tokens
+```
+
+### The "Folder Structure" Advantage
+
+Coding agents have **strong inductive priors** for hierarchical directory navigation from training on large code repositories:
+- **Folder structure**: 89.0% accuracy on BrowseComp-Plus
+- **Single file (JSON)**: 83.0% accuracy — filesystem structure itself is a retrieval signal
+
+### Negative Result: Retrieval Tools Harm Performance
+
+> "Equipping coding agents with retrieval tools does not consistently improve performance and can even degrade it — standard retrievers, when available, become the agent's default discovery mechanism and displace broader file-system exploration strategies."
+
+This directly challenges the assumption from the IR perspective (Level 1) that better retrievers are always beneficial. When agents can use file system tools directly, adding a retrieval layer can *reduce* exploration quality.
+
+### Performance vs IR Methods on BrowseComp-Plus
+
+| Approach | Score | Method |
+|----------|-------|--------|
+| **Coding Agent** | **88.50** | Folder structure + grep/scripts |
+| BM25–monoT5-3B + Q2Q | 0.716 recall / 0.689 accuracy | IR pipeline (Level 1) |
+| Previous SOTA | 80.00 | Retrieval-based |
+
+### Emergent Strategies
+
+Agents autonomously adapt their processing strategy to the task type:
+
+1. **Multi-hop QA** — "Search-and-refine" loop across entity chains (e.g., Riot Games → Brandon Beck → ... → Max Mazanov in 6 hops)
+2. **Analytical tasks** — Abandons search entirely; writes Python scripts to parse, count, sort across thousands of lines
+3. **Reading comprehension** — Balanced tool usage with LLM's inherent reasoning
+
+### Cost Comparison
+
+| Task | Coding Agent | GPT-5 Full Context | Notes |
+|-----|-------------|-------------------|-------|
+| BrowseComp-Plus | ~$0.70/query | ~$0.27 | GPT-5 couldn't see full 750M corpus |
+| Oolong-Syn | ~$0.19/query | ~$1.42 | Coding agent 7× cheaper |
+
+The coding agent approach is not always cheaper than RAG, but it is significantly cheaper than full-context processing while offering higher accuracy on long-context tasks.
+
+### Paradigm Shift: Externalized Processing
+
+This research suggests a new thesis: **delegating long-context processing to coding agents is a viable alternative to scaling context windows or optimizing retrieval pipelines.** By structuring text to look like code repositories, frontier models' software engineering capabilities can be leveraged for general text-processing.
+
+---
+
 ## Experimental Setup (BrowseComp-Plus)
 
 The IR-layer findings are based on:
@@ -136,5 +202,7 @@ The IR-layer findings are based on:
 ## Sources
 
 - [Revisiting Text Ranking in Deep Research](https://arxiv.org/abs/2602.21456) — Meng, Ou, MacAvaney, Dalton (2026). Systematic evaluation of IR methods in deep research contexts.
+- [Coding Agents are Effective Long-Context Processors](https://arxiv.org/abs/2603.20432) — Cao, Yin, Dhingra, Zhou (2026). Coding agents as retrieval/processing interface outperforming traditional IR on long-context tasks.
 - [Lessons from Building AI Agents in Financial Services](raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md) — Agentic search as skill discovery in Fintool.
 - [Text Ranking in Deep Research (Code)](https://github.com/ChuanMeng/text-ranking-in-deep-research) — Open-source code and data.
+- [Coding Agents Long-Context (Code)](https://arxiv.org/abs/2603.20432) — Paper and experiments.

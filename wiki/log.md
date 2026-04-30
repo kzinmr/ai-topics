@@ -1,3 +1,9 @@
+## [2026-04-30] Coding Agents are Effective Long-Context Processors — Cao, Yin, Dhingra, Zhou
+
+- Expanded [[concepts/agentic-search]] — Added Level 3: "Coding Agents as Retrieval/Processing Interface" (Duke & CMU, arXiv:2603.20432). Key findings: coding agents outperform SOTA by 17.3% on long-context tasks by using file system tools (grep, sed, ripgrep, Python scripts). BrowseComp-Plus score of 88.50 vs 80.00 baseline. Retrieval tools *harm* performance when agents can use file system exploration. Folder structure (89.0%) beats single file (83.0%). Cost: ~$0.19–$0.70/query. Paradigm shift: externalized processing as alternative to context window scaling.
+- Saved raw paper: raw/papers/2026-03-20_2603.20432_coding-agents-effective-long-context-processors.md
+- Source: https://arxiv.org/abs/2603.20432 (arXiv-only, ingested per user request)
+
 ## [2026-04-30] Revisiting Text Ranking in Deep Research — Meng, Ou, MacAvaney, Dalton
 
 - Expanded [[concepts/agentic-search]] — Restructured to two-level definition (IR/Retrieval Layer + Harness Engineering Layer). Added comprehensive section on University of Glasgow study (arXiv:2602.21456): BM25 dominance over neural rankers, passage-level retrieval, Q2Q reformulation (7.95% accuracy gain), re-ranking depth (BM25–monoT5-3B at 0.716 recall), reasoning re-rankers underperform.
