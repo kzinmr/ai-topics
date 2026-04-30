@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 697 | Full entries: 667 | Stubs: 620
+> Last updated: 2026-04-30 | Total pages: 700 | Full entries: 670 | Stubs: 620
 
 ## Entities (335 pages)
 
@@ -187,6 +187,7 @@
 - [[entities/muse-spark]] — Meta's latest language model, announced April 2026.
 - [[entities/mustafa-suleyman]] — **Role** | CEO, Microsoft AI; Co-founder, DeepMind; Co-founder, Inflection AI |
 - [[entities/nader-dabit]] — **Role** | Growth Engineer at Cognition AI (Feb 2026 – Present) |
+- [[entities/nathan-flurry]] — Co-founder & CTO of Rivet (rivet.dev). Built Sandbox Agent SDK (universal coding agent API), reverse-engineered Docker Sandbox MicroVM. Focus: agent infrastructure, sandboxing.
 - [[entities/nathan-lambert]] — Nathan Lambert is a Senior Research Scientist and **Post-Training Lead** at the **Allen Institute for AI (AI2)**. He previously worked at **HuggingFace** as a Research Scientist and RLHF Team Lead ...
 - [[entities/noam-brown]] — **Role** | Research Scientist, OpenAI |
 - [[entities/noetik]] — Noetik is a biotech AI company applying transformer models to oncology, specifically addressing the 95% clinical trial failure rate in cancer drug development. The company's core thesis: many "fail...
@@ -222,6 +223,7 @@
 - [[entities/regie-ai]] — > TODO: Research company blog, product, and technical depth to build L3 page.
 - [[entities/rehan-van-der-merwe]] — Cloud-native architect and blogger. Writes at rehanvdm.com.
 - [[entities/richard-sutton]] — **Role** | Professor, University of Alberta; Research Scientist, Keen Technologies; Former Distinguished Research Scientist, Google DeepMind |
+- [[entities/rivet-dev]] — AI agent infrastructure company. Products: agentOS (WASM/V8 isolate runtime), Sandbox Agent SDK (universal coding agent API), Docker Sandbox MicroVM research. CTO: Nathan Flurry.
 - [[entities/righto-com]] — **Blog** | righto.com |
 - [[entities/ryan-carson]] — **X** | @ryancarson |
 - [[entities/ryan-dahl]] — Ryan Dahl is a software engineer best known as the creator of **Node.js** (2009) and **Deno** (2018), two foundational JavaScript/TypeScript runtimes. His work has shaped the modern server-side Jav...
@@ -996,6 +998,7 @@
 - [[concepts/digital-minimalism]] — > **TODO**: Enrich this page.
 - [[concepts/dingcad]] — > **TODO**: Enrich this page.
 - [[concepts/dingllm.nvim]] — > **TODO**: Enrich this page.
+- [[concepts/docker-sandbox-microvm-api]] — Reverse-engineered Docker Sandbox undocumented API (sandboxd). Per-VM Docker daemons, kernel isolation, MITM proxy. Requires Docker Desktop 4.58+ on macOS/Windows. By Rivet (Nathan Flurry).
 - [[concepts/douwe-maan]] — > **TODO**: Enrich this page.
 - [[concepts/drewdevault-com]] — > **TODO**: Enrich this page.
 - [[concepts/dspyrlm]] — > **TODO**: Enrich this page.

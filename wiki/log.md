@@ -1,3 +1,16 @@
+## [2026-04-30] Rivet — Docker Sandbox MicroVM API Research
+
+- [[concepts/docker-sandbox-microvm-api]] — New concept page: reverse-engineered Docker Sandbox undocumented `sandboxd` API for kernel-isolated MicroVM execution
+- [[entities/rivet-dev]] — New entity page: AI agent infrastructure company (agentOS, Sandbox Agent SDK)
+- [[entities/nathan-flurry]] — New entity page: Co-founder & CTO of Rivet
+  - **Source:** [We Reverse-Engineered Docker Sandbox's Undocumented MicroVM API](https://www.rivet.dev/blog/2026-02-04-we-reverse-engineered-docker-sandbox-undocumented-microvm-api/) — Nathan Flurry, 2026-02-04
+  - **Key findings:** Docker Sandboxes use per-VM Docker daemons via Unix socket (`sandboxd.sock`), kernel isolation via MicroVMs (Apple Virtualization.framework / Hyper-V), outbound traffic through MITM filtering proxy at port 3128
+  - **Sandbox Agent SDK:** Universal API for coding agents (Claude Code, Codex, OpenCode, Cursor, Amp, Pi) — write once, swap with config
+  - **Comparison:** Related to [[concepts/agent-sandboxing-patterns]] (Browser Use's Unikraft approach) but different runtime target (Docker Desktop vs Unikraft/AWS)
+  - New pages: concepts/docker-sandbox-microvm-api.md, entities/rivet-dev.md, entities/nathan-flurry.md
+  - Raw article: raw/articles/2026-02-04_rivet-docker-sandbox-microvm-api.md
+  - Updated: wiki/index.md (3 new entries), wiki/log.md
+
 ## [2026-04-30] ai-consulting-playbook | New concept page created
 - [[concepts/ai-consulting-playbook]]
   - **Source**: https://567-labs.github.io/consulting/ (The AI Consulting Playbook by Jason Liu / 567 Studios)
