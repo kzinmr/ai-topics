@@ -292,6 +292,7 @@ DatabricksのMemAlignはepisodic memoryをsemantic rulesに蒸留:
 | **S3 Files / Tigris** | 統合インターフェース (クラウド) | 中規模 | マルチエージェントチーム |
 | **[[concepts/db9-fs-sql-pattern]]** | 統合データベース (ローカル) | 小規模 | 単一エージェント、個人開発者 |
 | **L2 (CLAUDE.md + Git)** | ローカルファイル | 最小 | 個人セッション |
+| **OPFS** | ブラウザプライベートストレージ | Webエージェント | ブラウザベースAIエージェント |
 
 ### 選択基準
 
@@ -311,10 +312,61 @@ DatabricksのMemAlignはepisodic memoryをsemantic rulesに蒸留:
 | **運用コスト** | 低い（1つのDB） | 高い（分散システム） |
 | **エージェント適合性** | 単一エージェントのRAGパイプライン | マルチエージェントの共有ワークスペース |
 
-## See Also
+## OPFS — ブラウザプライベートファイルシステム
 
-- [[concepts/_index]]
-- [[concepts/claude-memory-tool]]
-- [[concepts/neurosymbolic-ai]]
-- [[concepts/headless-ai-services]]
-- [[concepts/vajra-background-agent]]
+**Origin Private File System (OPFS)** は、Web APIの一部としてブラウザ内に隔離された高性能ストレージ領域を提供する。2023年3月から広く利用可能。
+
+### 核心イノベーション
+
+OPFSは**ブラウザベースのエージェント**にとって重要なストレージレイヤー：
+
+| 特徴 | 説明 |
+|---|---|
+| **プライバシー** | オリジンに隔離。ユーザーの通常のファイルマネージャに表示されない |
+| **高性能** | 従来のFile System Access APIより高速。セキュリティチェックのオーバーヘッドが排除されている |
+| **同期アクセス** | Web Worker内で同期的に読み書き可能（Promiseオーバーヘッドなし） |
+| **バイトレベルアクセス** | SQLiteデータベースなどの大規模更新に最適 |
+
+### AIエージェントへの適用
+
+OPFSは以下のエージェントパターンで有用：
+
+1. **ブラウザ内エージェント**: Webブラウザ上で動作するAIエージェントがセッション状態を永続化
+2. **SQLite + OPFS**: ブラウザ内で動作する軽量データベース（例: SQLite WASM）のバックエンドストレージ
+3. **キャッシュストレージ**: エージェントの推論結果や中間データをブラウザ内に保持
+4. **プライバシー保護**: ユーザーデータがブラウザ外に漏れないため、機密性の高いエージェントワークフローに適合
+
+### OPFS API例
+
+```javascript
+// OPFSルートディレクトリ取得
+const opfsRoot = await navigator.storage.getDirectory();
+
+// ファイル作成・取得
+const fileHandle = await opfsRoot.getFileHandle("agent-state.json", { create: true });
+
+// Web Workerでの同期アクセス
+const accessHandle = await fileHandle.createSyncAccessHandle();
+accessHandle.write(encoder.encode(data), { at: offset });
+accessHandle.flush();
+```
+
+### OPFSと他のストレージレイヤーの関係
+
+| 次元 | OPFS | S3 Files | db9 |
+|---|---|---|---|
+| **ロケーション** | ブラウザ内 | AWSクラウド | ローカル/サーバー |
+| **スコープ** | オリジン単位 | アカウント単位 | PostgreSQLインスタンス |
+| **永続性** | サイトデータ削除で消去 | 99.999999999% | DB依存 |
+| **アクセス** | Web API (JS) | POSIX/S3 API | SQL |
+| **エージェント型** | ブラウザ内エージェント | クラウドエージェント | ローカルエージェント |
+
+## Sources
+
+- [S3 Files and the changing face of S3](https://www.allthingsdistributed.com/2026/04/s3-files-and-the-changing-face-of-s3.html) — Werner Vogels, All Things Distributed, April 2026
+- [Announcing Amazon S3 Files](https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-s3-files/) — AWS, April 2026
+- [Amazon S3 Files gives AI agents a native file system workspace](https://venturebeat.com/data/amazon-s3-files-gives-ai-agents-a-native-file-system-workspace-ending-the) — VentureBeat, April 2026
+- [Tigris for AI agents](https://www.tigrisdata.com/docs/agents-use-cases/) — Tigris Documentation
+- [LLMFS — Filesystem Memory for LLMs and AI Agents](https://github.com/viditraj/llmfs) — Vidit Raj, GitHub
+- [Memory Scaling for AI Agents](https://www.databricks.com/blog/memory-scaling-ai-agents) — Databricks AI Research Team, April 2026
+- [Origin Private File System - MDN](https://developer.mozilla.org/en-US/docs/Web/API/File_System_API/Origin_private_file_system)
