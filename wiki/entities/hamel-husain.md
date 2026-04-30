@@ -52,7 +52,9 @@ His career spans **GitHub** (where he contributed to the precursors of Copilot a
 | 2025 | Published **"A Field Guide to Rapidly Improving AI Products"** |
 | 2025 | Released **evals-skills** (OSS plugins for coding agents) |
 | Sep 2025 | **Lenny's Podcast** (w/ Shreya Shankar): "Why AI evals are the hottest new skill" (100K+ views) |
-| 2026 | Published **"P7: You Don't Need a Graph DB (Probably)"** — with Jo Kristian Bergum on avoiding over-engineering in RAG systems |
+|| 2025 | Launched **"RAG Is Not Dead"** open 7-part series with [[entities/ben-clavie|Ben Clavié]] — arguing the future of RAG lies in better retrieval, not bigger context windows |
+|| 2025 | Hosted **Part 1: "I don't use RAG, I just retrieve documents"** — featuring [[entities/ben-clavie|Ben Clavié]] on the modern retrieval toolkit |
+|| 2026 | Published **"P7: You Don't Need a Graph DB (Probably)"** — with Jo Kristian Bergum on avoiding over-engineering in RAG systems |
 
 ## Core Philosophy
 
@@ -141,6 +143,9 @@ Co-authored with **Eugene Yan, Shreya Shankar, Jason Liu, Bryan Bischof, Charles
 -   [[concepts/harness-engineering]] — His core engineering philosophy.
 -   [[concepts/critique-shadowing]] — His signature methodology.
 -   [[concepts/llm-as-judge]] — Core evaluation technique he critiques and teaches.
+-   [[entities/ben-clavie]] — Co-author of the "RAG Is Not Dead" series; featured expert in Part 1 on the modern retrieval toolkit.
+-   [[concepts/rag-not-dead-series]] — Open 7-part series with Ben Clavié arguing RAG is not dead.
+-   [[concepts/modern-retrieval-toolkit]] — Part 1: the modern retrieval toolkit replacing naive single-vector search.
 -   [[concepts/graph-db-overengineering-rag]] — Co-authored with Jo Kristian Bergum on avoiding unnecessary graph DB complexity for RAG.
 
 ## Sources
@@ -153,3 +158,5 @@ Co-authored with **Eugene Yan, Shreya Shankar, Jason Liu, Bryan Bischof, Charles
 -   [Parlance Labs](https://parlance-labs.com) — Consulting firm.
 -   [AnswerAI](https://www.answer.ai/) — R&D role.
 -   [P7: You Don't Need a Graph DB (Probably)](https://hamel.dev/notes/llm/rag/p7-graph-db.html) — Co-authored with Jo Kristian Bergum on RAG architecture decisions (2026).
+-   [Stop Saying RAG Is Dead](https://hamel.dev/notes/llm/rag/not_dead.html) — Open 7-part series with Ben Clavié arguing RAG is not dead (2025).
+-   [P1: I don't use RAG, I just retrieve documents](https://hamel.dev/notes/llm/rag/p1-intro.html) — Hosted Ben Clavié on the modern retrieval toolkit (2025).

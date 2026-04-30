@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 720 | Full entries: 691 | Stubs: 619
+> Last updated: 2026-04-30 | Total pages: 722 | Full entries: 693 | Stubs: 619
 
 ## Entities (346 pages)
 
@@ -35,7 +35,7 @@
 - [[entities/ashpreet-bedi]] — **Name** | Ashpreet Bedi |
 - [[entities/beej-us]] — **URL:** https://beej.us
 - [[entities/ben-boyter]] — Creator of searchcode.com, scc (Sloc Cloc and Code), cs (Code Spelunker). Author of 'Marketing to the Machine' B2A thesis on Business-to-Agent design.
-- [[entities/benjamin-clavie]] — **X** | @bclavie |
+- [[entities/benjamin-clavie]] — French ML researcher specializing in NLP and IR, creator of RAGatouille, co-author of ModernBERT. Co-hosted the "RAG Is Not Dead" series with Hamel Husain.
 - [[entities/berthub-eu]] — **Blog** | berthub.eu |
 - [[entities/block-ai]] — Block, Inc. (formerly Square) — Jack Dorsey's AI-native organizational transformation from hierarchy to intelligence-driven coordination
 - [[entities/boaz-barak]] — **X** | @boazbaraktcs |
@@ -649,7 +649,8 @@
 |- [[concepts/mcp]]
 - [[concepts/megakernel-inference]] — A CUDA kernel optimization that fuses all layers of an LLM into a single dispatch, eliminating CPU round-trips between layer boundaries.
 - [[concepts/memory-architecture]] — Production AI agents require three distinct memory layers — episodic, semantic, and state — unified under a coherent substrate. This architecture is fundamental to context engineering and the desig...
-- [[concepts/modal-sandboxes]] — Isolated cloud VMs (Modal platform) used as execution environments for AI coding agents. Near-instant startup, filesystem snapshots, serverless scaling. Used by Ramp Inspect.
+|- [[concepts/modal-sandboxes]] — Isolated cloud VMs (Modal platform) used as execution environments for AI coding agents. Near-instant startup, filesystem snapshots, serverless scaling. Used by Ramp Inspect.
+|- [[concepts/modern-retrieval-toolkit]] — Ben Clavié's thesis that naive single-vector RAG is dead but retrieval itself is more essential than ever. Covers the modern retrieval toolkit (BM25, ColBERT, agentic search) and why long context windows won't kill retrieval. Part 1 of the "RAG Is Not Dead" series.
 |- [[concepts/memory-scaling]] — A third scaling axis where agent performance improves via accumulated external memory (Databricks MemAlign, 2026). Distills episodic logs into semantic rules, enabling smaller models to outperform larger ones with rich memory stores.
 |- [[concepts/memory-systems-bitter-lesson]] — Rich Sutton's "Bitter Lesson" principle applied to memory systems in AI agents: architectures that leverage search, computation, and experience iteration at scale consistently outperform hand-crafted memory mechanisms. Key patterns include episodic→semantic distillation, retrieval-augmented generation (RAG), and experience replay.
 |- [[concepts/memory-systems-design-patterns]]
@@ -702,8 +703,9 @@
 |- [[concepts/pydantic-ai-harness]] — Official capability library for Pydantic AI — CodeMode with Monty sandbox, memory, orchestration, guardrails, context management, and composable agent extensions. Together with Monty forms the full Open Runtime + Open Harness stack.
 |- [[concepts/pydantic-serializability]]
 - [[concepts/pydantic]] — Pydantic is a Python data validation library that uses type hints to validate, serialize, and document data. It has become the de facto standard for data validation in the Python ecosystem, with 27...
-- [[concepts/qwen3-6-27b]] — A dense 27B parameter model from the Qwen (OpenQwen) series that outperforms the predecessor 397B MoE model on agentic coding benchmarks.
-- [[concepts/rag-systems]] — > **RAG = Search + Reasoning** — Search brings facts, reasoning provides coherence.
+|- [[concepts/qwen3-6-27b]] — A dense 27B parameter model from the Qwen (OpenQwen) series that outperforms the predecessor 397B MoE model on agentic coding benchmarks.
+|- [[concepts/rag-not-dead-series]] — Hamel Husain & Ben Clavié's open 7-part series arguing RAG is not dead. Covers the single-vector myth, modern retrieval toolkit, context rot, and why graph DBs are overkill.
+|- [[concepts/rag-systems]] — > **RAG = Search + Reasoning** — Search brings facts, reasoning provides coherence.
 - [[concepts/ram-relative-adoption-metric]] — The **Relative Adoption Metric (RAM)** is a time-varying, size-normalized metric developed by Nathan Lambert and Florian to evaluate whether a new language model is on track to be ecosystem-definin...
 |- [[concepts/reasoning-model-cost-transparency]] — A 2026 study revealing that listed API prices for reasoning language models are systematically misleading, with actual costs differing dramatically from advertised rates.
 | - [[concepts/reasoning-compression]] — The phenomenon where test-time scaling (CoT, search, agentic loops) gets compressed into model weights through training. Explicit reasoning steps become implicit model capabilities over successive generations.

@@ -1,3 +1,15 @@
+## [2026-04-30] Hamel Husain — RAG Is Not Dead Series & Part 1 Modern Retrieval Toolkit
+
+- Created [[concepts/rag-not-dead-series]] — Hamel Husain & Ben Clavié's open 7-part series arguing RAG is not dead. Covers all 7 parts from naive single-vector myth through context rot to graph DB over-engineering.
+- Created [[concepts/modern-retrieval-toolkit]] — Ben Clavié's thesis that naive single-vector RAG is dead but retrieval itself is more essential. Covers modern retrieval toolkit (BM25, ColBERT, agentic search) and why long context windows won't kill retrieval.
+- Updated [[entities/hamel-husain]] — Added 2025 timeline entries for RAG Is Not Dead series launch and Part 1 hosting. Added sources and related entities (benjamin-clavie, rag-not-dead-series, modern-retrieval-toolkit).
+- Updated [[entities/benjamin-clavie]] — Added 2026 timeline entries for RAG Is Not Dead series and Part 1 presentation. Added sources and related concepts.
+- Saved raw articles: `raw/articles/2026-04-30_hamel-husain-rag-not-dead.md`, `raw/articles/2026-04-30_hamel-husain-rag-p1-retrieve-documents.md`
+- Sources: https://hamel.dev/notes/llm/rag/not_dead.html, https://hamel.dev/notes/llm/rag/p1-intro.html
+- Updated index files: wiki/index.md, wiki/log.md.
+
+---
+
 ## [2026-04-30] Daily Skeleton Enrichment — 8 Entity Pages Enriched
 
 - Enriched [[entities/coding-agents]] — LLM-powered coding agents ecosystem (Claude Code, Cursor, Copilot, Warp). Eric Zakariasson's optimization framework.
