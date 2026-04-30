@@ -43,7 +43,7 @@ The 2023 version of RAG (chunk → vector DB → cosine similarity → LLM) fail
 | 2 | [[concepts/freshstack-benchmark\|Modern IR Evals For RAG]] | Nandan Thakur | FreshStack: multi-dimensional eval (Coverage, Diversity, Relevance) replacing contaminated BEIR/MTEB |
 | 3 | [[concepts/reasoning-retrieval\|Optimizing Retrieval with Reasoning Models]] | Orion Weller | Promptriever (instruction-aware bi-encoder) + Rank1 (reasoning-based reranker with CoT) |
 | 4 | [[concepts/late-interaction-retrieval|Late Interaction Models For RAG]] | Antoine Chaffin | ColBERT-style MaxSim preserving token-level detail; 150M model outperforming 7B dense models on reasoning |
-| 5 | RAG with Multiple Representations | Bryan Bischof & Ayush Chaurasia | Multiple specialized indices beat one perfect embedding |
+| 5 | [[concepts/multiple-representations-rag|RAG with Multiple Representations]] | Bryan Bischof & Ayush Chaurasia | "The Map is Not the Territory" — create multiple specialized maps instead of one perfect embedding |
 | 6 | Context Rot | Kelly Hong | LLM performance degrades with longer inputs; context engineering is critical |
 | 7 | [[concepts/graph-db-overengineering-rag\|You Don't Need a Graph DB (Probably)]] | Jo Kristian Bergum | GraphRAG is a technique, not a technology; HNSW as hidden graph |
 
@@ -96,6 +96,19 @@ Dense vector search compresses all tokens into a single vector — inherently lo
 
 **Adoption barriers now resolved:** Quantization for storage, Vespa/Weaviate/LanceDB for VectorDB support, PyLate for tooling.
 
+### Part 5: Multiple Representations (Bryan Bischof & Ayush Chaurasia)
+
+**Core thesis ("The Map is Not the Territory"):** Any data representation is a *map* distinct from the real data (*territory*). Engineers can — and should — create **multiple specialized maps** of the same data instead of searching for one perfect universal embedding.
+
+**Bryan Bischof's unique framework:**
+- **"Curving Space"** — intentionally shaping indices to bring relevant items closer. Index engineering as active spatial design, not passive embedding.
+- **Deconstructing buzzwords** — Agentic RAG = query enrichment pipeline, HyDE = document enrichment pipeline, Rank Fusion = multi-stage processing. Strip marketing, see actual pipeline transformations.
+- **Bicycle analogy** — don't try to fix one all-terrain bike (embedding). Build specialized bikes for different terrains and route to the right one.
+
+**Three responsibilities of an IR engineer:** Predicting user intent → generating multiple representations (summaries, entity lists, tables) → matching intent to representation.
+
+**Demo (Semantic Dot Art):** Art indexed via 4 maps (literal, poetic, mood, image). Poetic query → poetic index; image → multimodal embeddings.
+
 ## Graph Structure Query
 
 ```
@@ -105,6 +118,7 @@ Dense vector search compresses all tokens into a single vector — inherently lo
 [rag-not-dead-series] ──includes──→ [freshstack-benchmark]
 [rag-not-dead-series] ──includes──→ [reasoning-retrieval]
 [rag-not-dead-series] ──includes──→ [late-interaction-retrieval]
+[rag-not-dead-series] ──includes──→ [multiple-representations-rag]
 [rag-not-dead-series] ──includes──→ [graph-db-overengineering-rag]
 [rag-not-dead-series] ──contrasts──→ [naive-single-vector-rag]
 [rag-not-dead-series] ──embodies──→ [harness-engineering]
@@ -116,6 +130,7 @@ Dense vector search compresses all tokens into a single vector — inherently lo
 - [[concepts/freshstack-benchmark]] — Part 2: multi-dimensional RAG evaluation
 - [[concepts/reasoning-retrieval]] — Part 3: instruction-aware + reasoning-based retrieval
 - [[concepts/late-interaction-retrieval]] — Part 4: ColBERT/MaxSim preserving token-level detail; 150M model beats 7B dense
+- [[concepts/multiple-representations-rag]] — Part 5: "The Map is Not the Territory" — create multiple specialized maps instead of one universal embedding
 - [[concepts/graph-db-overengineering-rag]] — Part 7: GraphRAG as technique, not technology
 - [[concepts/harness-engineering]] — Measure-first philosophy across the series
 - [[concepts/ai-evals]] — Evaluation methodology for AI systems
@@ -131,3 +146,5 @@ Dense vector search compresses all tokens into a single vector — inherently lo
 - [Raw article: P3](raw/articles/2026-04-30_hamel-husain-rag-p3-reasoning.md)
 - [P4: Late Interaction Models For RAG](https://hamel.dev/notes/llm/rag/p4_late_interaction.html)
 - [Raw article: P4](raw/articles/2026-04-30_hamel-husain-rag-p4-late-interaction.md)
+- [P5: RAG with Multiple Representations](https://hamel.dev/notes/llm/rag/p5_map.html)
+- [Raw article: P5](raw/articles/2026-04-30_hamel-husain-rag-p5-map.md)

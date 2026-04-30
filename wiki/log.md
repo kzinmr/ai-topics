@@ -1,3 +1,13 @@
+## [2026-04-30] RAG Is Not Dead — Added Part 5: Multiple Representations ("The Map is Not the Territory")
+
+- Created [[concepts/multiple-representations-rag]] — Bryan Bischof & Ayush Chaurasia. Core thesis: "The Map is Not the Territory" — create multiple specialized maps instead of one universal embedding. Detailed Bischof's unique framework: curving space, buzzword deconstruction, bicycle analogy, three IR responsibilities.
+- Updated [[concepts/rag-not-dead-series]] — Added Part 5 detail section, wikilink, graph query, and source.
+- Saved raw article: `raw/articles/2026-04-30_hamel-husain-rag-p5-map.md`
+- Sources: https://hamel.dev/notes/llm/rag/p5_map.html
+- Updated index files: wiki/index.md, wiki/log.md.
+
+---
+
 ## [2026-04-30] RAG Is Not Dead — Added Part 4: Late-Interaction Retrieval (ColBERT)
 
 - Created [[concepts/late-interaction-retrieval]] — Antoine Chaffin's ColBERT/MaxSim. 150M parameter model beats 7B dense on BRIGHT. PyLate tooling. Three adoption barriers now resolved (storage, VectorDB, tooling).

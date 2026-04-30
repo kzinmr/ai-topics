@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 725 | Full entries: 696 | Stubs: 619
+> Last updated: 2026-04-30 | Total pages: 726 | Full entries: 697 | Stubs: 619
 
 ## Entities (346 pages)
 
@@ -669,7 +669,8 @@
 - [[concepts/multi-agent-orchestration-architecture]] — Multi-agent orchestration architecture is the design pattern that enables multiple specialized AI agents to work in concert on complex tasks. It sits between agent-level intelligence (Phase 1: vibe...
 - [[concepts/multi-agent-orchestration-patterns]] — Architectural patterns for coordinating multiple AI agents to solve complex problems. Use the **lowest level of complexity that reliably meets requirements** — justified added complexity only when ...
 - [[concepts/multi-agents-whats-actually-working]] — Cognition's April 2026 blog post "Multi-Agents: What's Actually Working" by Walden Yan represents a significant evolution from their June 2025 stance "Don't Build Multi-Agents." The core finding: *...
-|- [[concepts/neural-garbage-collection]] — **Neural Garbage Collection** is a reinforcement learning approach that jointly learns reasoning capability and KV-cache retention/eviction without proxy objectives. Instead of separately optimizin...
+|- [[concepts/multiple-representations-rag]] — Bryan Bischof & Ayush Chaurasia: "The Map is Not the Territory" — create multiple specialized maps of the same data. Part 5 of RAG Is Not Dead series.
+||- [[concepts/neural-garbage-collection]]
 |- [[concepts/nano-banana-2]] — **Nano Banana 2 (NB2)** is Google's latest image generation model available via Google AI Studio. Features native multi-turn editing, photorealistic output at up to 4K resolution, and deep Gemini integration. Competes directly with OpenAI's GPT Image 2.0.
 |- [[concepts/neurosymbolic-ai]]
 - [[concepts/newsjacking-framework]] — **Origin:** Elvis Sun (@elvissun), January 2026
