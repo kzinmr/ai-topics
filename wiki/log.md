@@ -1,3 +1,11 @@
+## [2026-04-30] ai-consulting-playbook | New concept page created
+- [[concepts/ai-consulting-playbook]]
+  - **Source**: https://567-labs.github.io/consulting/ (The AI Consulting Playbook by Jason Liu / 567 Studios)
+  - **Key concepts**: Consulting flywheel (Content → Calls → Proof → Content), value-based pricing, situational assessment proposals, buyer qualification framework, content-as-strategic-friction
+  - **Structure**: 7 parts covering mindset, content/lead gen, pricing, sales/discovery, proposals, engagement/scaling, business operations
+  - New page: concepts/ai-consulting-playbook.md
+  - Updated: wiki/index.md, wiki/log.md
+
 ## [2026-04-30] Agent Client Protocol (ACP)
 
 - Created [[concepts/agent-client-protocol]]: Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. Covers protocol lifecycle (initialize, session/new, session/prompt), methods (fs/read, fs/write, terminal/*, request_permission), notification types (plan, agent_message_chunk, tool_call, thought_message_chunk), and key implementations (Hermes ACP mode, Toad by Will McGugan). Updated [[concepts/agent-communication-protocols]] to distinguish Agent **Client** Protocol from Agent **Communication** Protocol (same acronym, different purpose).

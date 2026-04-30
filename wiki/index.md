@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 696 | Full entries: 666 | Stubs: 620
+> Last updated: 2026-04-30 | Total pages: 697 | Full entries: 667 | Stubs: 620
 
 ## Entities (335 pages)
 
@@ -350,7 +350,7 @@
 - [[entities/ryan-lopopolo--core-ideas]] — Ryan Lopopolo (@_lopopolo) core ideas on AI engineering
 - [[entities/ryan-lopopolo--timeline]] — Ryan Lopopolo career timeline
 - [[entities/ryan-lopopolo--writings]] — Ryan Lopopolo writings and blog posts
-## Concepts (386 pages)
+## Concepts (387 pages)
 
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
@@ -395,6 +395,7 @@
 - [[concepts/ai-autonomy-debate]] — The **AI Autonomy Debate** centers on whether AI agents should operate fully autonomously or maintain human oversight in the loop. What started as a niche technical discussion has become one of the...
 - [[concepts/ai-bubble-economics]] — The **AI Bubble Economics** concept encompasses the growing body of analysis questioning whether the unprecedented capital flowing into artificial intelligence infrastructure is backed by real econ...
 - [[concepts/ai-coding-agent-criticism]] — Armin Ronacher (lucumr.pocoo.org) identified a structural asymmetry in how AI coding agents are debated:
+- [[concepts/ai-consulting-playbook]] — Framework for building and scaling an AI consulting practice: positioning, content flywheel, value-based pricing, situational assessments, and engagement models. By Jason Liu (567 Studios).
 - [[concepts/ai-coding-reliability]] — **AI Coding Reliability** examines the growing body of evidence that AI-assisted code generation and agentic coding tools are introducing new categories of production failures, maintenance debt, an...
 - [[concepts/ai-criticism-politics]] — An analysis by Sean Goedecke arguing that the substantive content of most anti-AI rhetoric historically aligns with conservative/right-wing worldviews, despite being framed in progressive language.
 - [[concepts/ai-digital-nato]] — In April 2026, **OpenAI, Anthropic, and Google** began sharing threat intelligence through the **Frontier Model Forum** (founded with Microsoft in 2023) to detect and counter what they term "advers...
