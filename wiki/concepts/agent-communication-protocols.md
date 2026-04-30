@@ -20,6 +20,7 @@ Three competing protocols are emerging as the standard for multi-agent communica
 | **MCP** | Model Context Protocol | Connects models to tools/data | Agent-to-tool communication | Open (Anthropic) |
 | **A2A** | Agent-to-Agent | Google's protocol for direct interaction | Dynamic discovery between autonomous agents | Open (Google) |
 | **ACP** | Agent Communication Protocol | Enterprise-focused open standard | Regulated industries requiring auditability/RBAC | Open (IBM/I Am Bee) |
+| **ACP (Client)** | Agent **Client** Protocol | Standard for editors/IDEs ↔ coding agents | Multi-agent editor support | Open (see [[concepts/agent-client-protocol]]) |
 
 **Decision Logic:** Use **MCP** for tools, **A2A** for cross-org interaction, and **ACP** for governance.
 

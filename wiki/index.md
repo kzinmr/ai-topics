@@ -350,8 +350,9 @@
 - [[entities/ryan-lopopolo--core-ideas]] — Ryan Lopopolo (@_lopopolo) core ideas on AI engineering
 - [[entities/ryan-lopopolo--timeline]] — Ryan Lopopolo career timeline
 - [[entities/ryan-lopopolo--writings]] — Ryan Lopopolo writings and blog posts
-## Concepts (385 pages)
+## Concepts (386 pages)
 
+- [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
 - [[concepts/agent-economics]] — The cost structures, token consumption patterns (1000x multiplier), and economic implications of deploying autonomous AI agents at scale across L1-L5 autonomy levels.
 - [[concepts/agent-governance]] — Agent governance is the structured approach enterprises use to define how autonomous AI systems operate, what they can access, and how their actions are monitored. It encompasses policy, identity, ...
