@@ -332,13 +332,12 @@
 - [[entities/karpathy-writings]] — Andrej Karpathy writings and blog posts
 - [[entities/langchain]] — LangChain — framework for building applications with LLMs via composable chains
 - [[entities/llamaindex]] — LlamaIndex — data framework for connecting custom data sources to LLMs
-- [[entities/mitchell-hashimoto-ghostty]] — Mitchell Hashimoto on Ghostty terminal emulator
-- [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto on HashiCorp and infrastructure tools
-- [[entities/omar-khattab/baleen]] — Omar Khattab — Baleen multi-hop retrieval system
-- [[entities/omar-khattab/colbert]] — Omar Khattab — ColBERT late-interaction retrieval model
-- [[entities/omar-khattab/collaborations]] — Omar Khattab research collaborations
-- [[entities/omar-khattab/dspy]] — Omar Khattab — DSPy declarative LM programming framework
-- [[entities/omar-khattab/gepa]] — Omar Khattab — GEPA genetic Pareto prompt evolution
+| - [[entities/mitchell-hashimoto-ghostty]] — Mitchell Hashimoto on Ghostty terminal emulator
+| - [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto on HashiCorp and infrastructure tools
+| - [[entities/omar-khattab/baleen]] — Omar Khattab — Baleen multi-hop retrieval system
+| - [[entities/omar-khattab/colbert]] — Omar Khattab — ColBERT late-interaction retrieval model
+| - [[entities/omar-khattab/collaborations]] — Omar Khattab research collaborations
+| - [[entities/omar-khattab/gepa]] — Omar Khattab — GEPA genetic Pareto prompt evolution
 - [[entities/omar-khattab/impact-metrics]] — Omar Khattab impact metrics and citations
 - [[entities/omar-khattab/philosophy]] — Omar Khattab philosophy on AI research
 - [[entities/omar-khattab/publications]] — Omar Khattab academic publications
