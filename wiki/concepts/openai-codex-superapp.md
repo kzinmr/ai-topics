@@ -2,7 +2,7 @@
 title: "OpenAI Codex Superapp"
 type: concept
 created: 2026-04-24
-updated: 2026-04-30
+updated: 2026-05-01
 tags: [product, openai, coding-agents, devtools, chatgpt, codex]
 aliases: ["Codex Superapp"]
 sources:
@@ -70,6 +70,12 @@ Codex is expanding beyond a coding tool into a **general work surface** encompas
 **Auto-Review Mode:**
 - A "guardian agent" that automatically reviews code and PRs
 - Extends the Superapp concept into the review/QA pipeline, making Codex the central node in the development lifecycle
+
+### Codex /goal Command (April 2026)
+
+Codex CLI 0.128.0 introduces the `/goal` command, enabling autonomous looping until a specified goal is completed or the token budget is exhausted. This implements the **Ralph loop pattern** — the agent evaluates goal completion at the end of each turn and continues if not done.
+
+Mechanism: goals are managed through `goals/continuation.md` and `goals/budget_limit.md` prompts, automatically injected at the end of each turn. This represents a meaningful step toward autonomous, long-horizon agent execution.
 
 ### Codex as General Work Surface
 

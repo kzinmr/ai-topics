@@ -2,7 +2,7 @@
 title: Dwarkesh Patel
 type: entity
 created: 2026-04-09
-updated: 2026-04-18
+updated: 2026-05-01
 sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/]
 tags:
   - person
@@ -53,6 +53,7 @@ As of early 2026, the Dwarkesh Podcast has published approximately 115 episodes 
 | **Mar 2026** | Interviewed Terence Tao: "Kepler, Newton, and the true nature of mathematical discovery" |
 | **Apr 2026** | Interviewed Jensen Huang: "TPU competition, why we should sell chips to China, & Nvidia's supply chain moat" |
 | **Apr 2026** | Published "The most important question nobody's asking about AI" |
+| **Apr 2026** | Blackboard Lecture with Reiner Pope: "The math behind how LLMs are trained and served" — roofline analysis, batch size economics, MoE parallelism |
 
 ## Key Projects
 
@@ -172,6 +173,7 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [[gary-marcus]] — Both critique current AI approaches from different angles
 - [[anthropic]] — Frequent interview subject (Dario Amodei episodes)
 - [[jensen-huang]] — Interviewed April 2026: "TPU competition, China, supply chain moat"; subject of TeortaxesTex epistemic gap analysis
+- [[entities/reiner-pope]] — Blackboard lecture guest (April 2026): LLM inference/training economics
 - [[teortaxestex]] — Published methodology analysis of Dwarkesh's interviewing approach
 - [[andrej-karpathy]] — Interviewed Oct 2025: "AGI is still a decade away"
 - [[ilya-sutskever]] — Interviewed Nov 2025: "Age of scaling to age of research"
@@ -197,3 +199,4 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 
 - dwarkesh.com--p-reiner-pope--11ee10e4
 - dwarkesh.com--p-what-ive-been-thinking-april-27--535a8f96
+- 2026-04-30_x--dwarkesh-reiner-pope-blackboard-lecture

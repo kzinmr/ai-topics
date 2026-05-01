@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-01 | Total pages: 739 | Full entries: 707 | Stubs: 618
+> Last updated: 2026-05-01 | Total pages: 741 | Full entries: 710 | Stubs: 615
 
-## Entities (354 pages)
+## Entities (356 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -189,6 +189,7 @@
 - [[entities/matduggan-com]] — **URL:** https://matduggan.com
 - [[entities/mathematical-methods]] — Philosophical paper by Terence Tao and Tanya Klowden on the impact of AI on mathematical practice and human thought (arXiv:2603.26524)
 - [[entities/matklad-github-io]] — **Blog** | matklad.github.io |
+- [[entities/matx]] — AI chip startup founded by Reiner Pope, focusing on next-gen hardware for LLM training and inference.
 - [[entities/maurycyz-com]] — **Blog** | maurycyz.com |
 - [[entities/max-bernstein]] — **URL:** https://bernsteinbear.com
 - [[entities/maximor]] — > TODO: Research company blog, product, and technical depth to build L3 page.
@@ -244,6 +245,7 @@
 - [[entities/refactoring-english]] — ソフトウェアエンジニアリング、AI vs人間の文章品質。refactoringenglish.com
 - [[entities/regie-ai]] — > TODO: Research company blog, product, and technical depth to build L3 page.
 - [[entities/rehan-van-der-merwe]] — Cloud-native architect and blogger. Writes at rehanvdm.com.
+- [[entities/reiner-pope]] — CEO of MatX, former Google TPU architect. Expert on full-stack AI from chip design to model architecture. Known for roofline analysis framework for LLM inference economics.
 - [[entities/richard-sutton]] — **Role** | Professor, University of Alberta; Research Scientist, Keen Technologies; Former Distinguished Research Scientist, Google DeepMind |
 - [[entities/rivet-dev]] — AI agent infrastructure company. Products: agentOS (WASM/V8 isolate runtime), Sandbox Agent SDK (universal coding agent API), Docker Sandbox MicroVM research. CTO: Nathan Flurry.
 - [[entities/righto-com]] — **Blog** | righto.com |
@@ -1209,10 +1211,10 @@
 - [[concepts/llm-assisted-development]] — > **TODO**: Enrich this page.
 - [[concepts/llm-evaluation]] — > **TODO**: Enrich this page.
 - [[concepts/llm-inference-optimization-performance]] — > **TODO**: Enrich this page.
-- [[concepts/llm-inference]] — > **TODO**: Enrich this page.
+- [[concepts/llm-inference]] — Roofline analysis framework for LLM inference economics: batch size vs latency/cost, KV cache bandwidth, MoE hardware topology, pipeline parallelism tradeoffs (Reiner Pope/Dwarkesh).
 - [[concepts/llm-integration-patterns]] — > **TODO**: Enrich this page.
 - [[concepts/llm-output-formatting-json-pydantic-reliability-type-safety-function-calling]] — > **TODO**: Enrich this page.
-- [[concepts/llm-security]] — > **TODO**: Enrich this page.
+- [[concepts/llm-security]] — AISI evaluation of GPT-5.5 cyber capabilities: 71.4% CTF pass rate, universal jailbreak in 6 hours, 400× faster than human experts on reverse engineering tasks.
 - [[concepts/llm-training-fundamentals]] — > **TODO**: Enrich this page.
 - [[concepts/llm.nvim]] — > **TODO**: Enrich this page.
 - [[concepts/llvm]] — > **TODO**: Enrich this page.
@@ -1490,7 +1492,7 @@
 - [[concepts/yourbench]] — > **TODO**: Enrich this page.
 - [[concepts/zephyr]] — > **TODO**: Enrich this page.
 - [[concepts/zhanchao-zhou]] — > **TODO**: Enrich this page.
-- [[concepts/zig]] — > **TODO**: Enrich this page.
+- [[concepts/zig]] — Systems programming language with the open-source community's most stringent anti-LLM contribution policy. "Contributor poker" philosophy values contributors over contributions.
 - [[concepts/zjit]] — > **TODO**: Enrich this page.
 - [[entities/adam-rosenthal]] — > **TODO**: Enrich this page.
 - [[entities/george-hotz]] — Security hacker, entrepreneur, engineer. First to iPhone-unlock (2007), PS3 jailbreak (2010). Founder of comma.ai/openpilot, tinygrad, and tiny corp.

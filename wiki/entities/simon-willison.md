@@ -3,7 +3,7 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-04-19
+updated: 2026-05-01
 status: L3
 sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/]
 tags: [person, opinion-leader]
@@ -169,6 +169,15 @@ LLMのコンテキストウィンドウは**限られたリソース**として�
 - [simonwillison.net--2026-apr-30-zig-anti-ai--e30e52cf](simonwillison.net--2026-apr-30-zig-anti-ai--e30e52cf.md)
 - [substack.com--simonw--bba9b315](substack.com--simonw--bba9b315.md)
 
+### LLM 0.32a0 — Major Backwards-Compatible Refactor (April 2026)
+
+LLM 0.32a0 introduces two fundamental architectural changes to Simon's Python library and CLI tool for LLM access:
+
+1. **Messages-based input**: Prompts are now modeled as sequences of messages (`llm.user()`, `llm.assistant()`), replacing the simple prompt/response model. This enables feeding in prior conversation history directly and building API-compatible interfaces.
+2. **Streaming typed parts**: Model output is now a stream of typed event parts (`text`, `tool_call_name`, `tool_call_args`) rather than plain strings. This supports multimodal outputs (reasoning + text + tool calls + images/audio) and server-side tool execution (e.g., OpenAI's code interpreter, Anthropic's web search).
+
+These changes make LLM future-proof for the diversity of input/output capabilities in modern frontier models, while maintaining full backwards compatibility.
+
 ## Sources
 - [Agentic Engineering Patterns Guide](https://simonwillison.net/guides/agentic-engineering-patterns/)
 - [Writing about Agentic Engineering Patterns](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/)
@@ -182,4 +191,8 @@ LLMのコンテキストウィンドウは**限られたリソース**として�
 - simonwillison.net--2026-apr-22-claude-code-confusion--c0c17d47
 - simonwillison.net--2026-apr-24-recent-claude-code-quality-reports--7811dd0a
 - simonwillison.net--2026-apr-25-gpt-5-5-prompting-guide--ea0ef1af
+- simonwillison.net--2026-apr-29-llm--dff2021f
+- simonwillison.net--2026-apr-30-codex-goals--b85bdf73
+- simonwillison.net--2026-apr-30-andrew-kelley--7be6c476
+- simonwillison.net--2026-apr-30-zig-anti-ai--e30e52cf
 - simonwillison.net--guides-agentic-engineering-patterns-adding-a-new-content-typ--67e45614

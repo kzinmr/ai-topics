@@ -1,3 +1,22 @@
+## [2026-05-01] Blog Wiki Ingest — Reiner Pope, LLM 0.32a0, Codex /goal, Zig Anti-AI, GPT-5.5 Cyber Eval
+
+- Created [[entities/reiner-pope]] — CEO of MatX, former Google TPU architect. Expert on full-stack AI from chip design to model architecture. Known for roofline analysis framework.
+- Created [[entities/matx]] — AI chip startup founded by Reiner Pope.
+- Enriched [[concepts/llm-inference]] — Expanded from stub to L2 page with Reiner Pope's roofline analysis framework: batch size economics, KV cache bandwidth, MoE hardware topology, pipeline parallelism tradeoffs, 20ms batch train scheduling, RL overtraining implications.
+- Enriched [[concepts/zig]] — Expanded from stub to L2 page. Documented Zig's anti-LLM contribution policy, "contributor poker" rationale by Loris Cro, Andrew Kelley's "digital smell" concept, Bun fork implications.
+- Enriched [[concepts/llm-security]] — Expanded from stub to L2 page with AISI evaluation of GPT-5.5 cyber capabilities: 71.4% CTF pass rate, 10-min rust_vm solve (vs 12 human hours), universal jailbreak in 6 hours, TLO range solution.
+- Updated [[entities/simon-willison]] — Added LLM 0.32a0 section documenting messages-based input and streaming typed parts architecture. Added raw article references.
+- Updated [[entities/dwarkesh-patel]] — Added Reiner Pope blackboard lecture to timeline and related entities.
+- Updated [[concepts/openai-codex-superapp]] — Added /goal command section (Codex CLI 0.128.0), Ralph loop pattern implementation.
+- Updated index: wiki/index.md, wiki/log.md
+- Sources:
+  - raw/articles/dwarkesh.com--p-reiner-pope--11ee10e4.md
+  - raw/articles/simonwillison.net--2026-apr-29-llm--dff2021f.md
+  - raw/articles/simonwillison.net--2026-apr-30-codex-goals--b85bdf73.md
+  - raw/articles/simonwillison.net--2026-apr-30-zig-anti-ai--e30e52cf.md
+  - raw/articles/simonwillison.net--2026-apr-30-andrew-kelley--7be6c476.md
+  - https://www.aisi.gov.uk/blog/our-evaluation-of-openais-gpt-5-5-cyber-capabilities
+
 ## [2026-05-01] Cloudflare Project Think: PTCの4次元拡張（Execution Ladder, Durable Execution, Self-Authored Extensions, Hibernation Economics）
 
 - Expanded [[concepts/programmatic-tool-calling]] — Added "Cloudflare Project Think: PTCの次元拡張" section with 4 new dimensions:
