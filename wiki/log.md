@@ -138,6 +138,14 @@
 
 ---
 
+## 2026-05-01 — RLM × PTC analysis: independent paradigms sharing code-execution substrate
+
+- Added [[concepts/dspy-rlm]] section "RLM × Programmatic Tool Calling: 独立した2つのパラダイム" — RLM does NOT explicitly incorporate PTC. They evolved independently solving different problems (context rot vs tool definition bloat) with the same substrate (sandboxed code execution). RLM's `llm_query` is recursive sub-LM calling, not tool calling. RLM's `tools` parameter is architectural freedom (accidental extensibility), not designed integration. 4 specific limitations listed.
+- Added [[concepts/programmatic-tool-calling]] section "Relation to RLM: Same Substrate, Different Problems" — comparison table and cross-reference to dspy-rlm analysis.
+- Updated See Also in programmatic-tool-calling.md to include dspy-rlm and rlm-recursive-language-models.
+
+---
+
 ## 2026-05-01 — Monty README positioning: designed for Programmatic Tool Calling
 
 - Updated [[concepts/monty-sandbox]] — Added "設計思想: Programmatic Tool Calling のランタイム" section with direct README quote ("Monty avoids the 'faff' of containers"). Added Monty vs Docker/Pyodide/WASI comparison table. Added 3-layer hierarchy positioning (Programmatic Tool Calling → Monty → CodeMode). Updated Related Concepts and sources.

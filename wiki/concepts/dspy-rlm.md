@@ -221,6 +221,78 @@ DSPyのRLMと同様の「REPLを介したコンテキスト分解」は、pydant
 2. **DSPy互換ループ**: `RunCode | FinalAnswer` 構造化出力 + 明示的Action→Execute→Observeループ
 3. **graph-native版**: Plan/RunCode/Observe/Finalizeをpydantic-graphノードに分解 + Monty snapshotでdurable execution
 
+## RLM × Programmatic Tool Calling: 独立した2つのパラダイム
+
+RLMと[[concepts/programmatic-tool-calling|Programmatic Tool Calling(PTC)]]は、同じ「LLMがコードを書く」基盤を共有しながらも、**異なる問題を異なる解決策で解く、独立進化したパラダイム**である。
+
+### RLMはPTCを陽に取り込んでいない
+
+RLMの論文（arXiv:2512.24601, Dec 2025）とDSPy.RLMのAPIを精査した結果：
+
+1. **RLMの組み込みツールは`llm_query(prompt)`のみ** — これは外部ツール呼び出しではなく、**モデル自身の再帰的サブクエリ**。PTCの`allowed_callers`概念は存在しない。
+2. **RLMの`tools`パラメータは汎用`Callable`** — 任意のPython関数を受け入れるが、PTC的な"async tool wrapping + allowed_callers"は提供しない。
+3. **RLMが解く問題は「コンテキスト管理」** — 巨大ドキュメントをREPL変数として与え、モデルがコードで探索・分解・再帰クエリする。PTCが解く「ツールオーケストレーション」は射程外。
+
+### 問題の違い
+
+| 次元 | RLM | Programmatic Tool Calling |
+|------|-----|--------------------------|
+| **問題** | Context rot（コンテキスト増大による性能劣化） | ツール定義膨張・中間結果ブロート |
+| **検索空間** | 100万トークン以上のドキュメント | 2,500+ APIエンドポイント |
+| **モデルの行動** | コードで文脈を探索 → `llm_query`で再帰分析 | コードでツールをasync呼び出し → 結果をフィルタ |
+| **再帰性** | **本質的** — `llm_query`がサブLMを起動 | **なし** — ツール呼び出しはフラット |
+| **ツール起源** | `tools`パラメータ（任意Python関数） | `allowed_callers`付きのMCP/APIツール定義 |
+| **`allowed_callers`** | 概念なし | **中核機構** |
+
+### 基盤の共通性
+
+両者に共通するのは、サンドボックスコード実行という**基盤**だけ：
+
+```
+LLMがコードを書く → サンドボックスで実行 → 結果だけがモデルに返る
+```
+
+この基盤は同じだが、コードの**中身**が根本的に異なる：
+
+- RLMのコード: `data[start:end]`, `re.findall(pattern, text)`, `llm_query("summarize this")`, `SUBMIT(answer)`
+- PTCのコード: `await tool_a(input)`, `await tool_b(result)`, `asyncio.gather(...)`, `print(filtered)`
+
+### アーキテクチャ上の自由度: 合成可能だが設計されていない
+
+RLMの`tools`パラメータにPTC的なツール関数を渡すことは**技術的に可能**：
+
+```python
+# RLMのtoolsにPTC的な関数を渡す（可能だが、PTCのasync wrappingはない）
+rlm = dspy.RLM(
+    "context, query -> answer",
+    tools=[search_api, fetch_document]  # 任意のPython関数
+)
+```
+
+しかしこれは**設計された統合ではなく、偶発的な拡張性**。以下の制約がある：
+
+1. PTCの`allowed_callers`によるセキュリティ境界がない — RLM内の全コードが全ツールにアクセス可能
+2. ツールのasync自動ラッピングがない — PTCではツールが自動的にasync変換される
+3. `caller`識別子がない — PTCのレスポンスには`caller`フィールドでコード→ツール呼び出しを追跡できる
+4. ツール結果のコンテキスト除外保証がない — PTCではプログラム的呼び出しの結果は自動的にコンテキストから除外される
+
+### 結論: 独立した2つのパラダイム
+
+```
+RLM:                                   PTC:
+コードで文脈を探索                     コードでツールを呼び出す
+    ↓                                       ↓
+llm_queryで再帰分析                    await tool()で外部実行
+    ↓                                       ↓
+SUBMITで最終回答                       print(stdout)で終了
+```
+
+両者は**補完関係**にある：
+- RLMは「何を分析するか」の選択（コンテキスト分解）
+- PTCは「どう実行するか」の制御（ツールオーケストレーション）
+
+真の統合（RLM内でPTCツールを呼び出し→結果をさらに再帰分析）は、現状では**手動構成が必要**であり、フレームワークレベルでは未対応。ただし[[concepts/pydantic-ai-harness]]（Monty + CodeMode）は両方を内包できるプラットフォームとして最も統合に近い。
+
 ## ステータス・既知問題
 
 | 項目 | ステータス |

@@ -170,11 +170,27 @@ All three converge on the same insight: **LLMs are better at writing code than a
 
 This mechanism enables the Externalized Processing pattern described in [[concepts/agentic-search]]. Cao et al.'s finding that "coding agents are effective long-context processors" is a direct consequence of programmatic tool calling: the model writes code to grep, search, and filter before the results enter the context window.
 
+## Relation to RLM: Same Substrate, Different Problems
+
+PTCと[[concepts/dspy-rlm|RLM]]は「LLMがコードを書く→サンドボックス実行→結果だけモデルに返る」という基盤を共有するが、**解く問題が異なる独立進化パラダイム**である：
+
+| 次元 | PTC | RLM |
+|------|-----|-----|
+| **問題** | ツール定義膨張・中間結果ブロート | Context rot（コンテキスト増大による劣化） |
+| **モデルの行動** | コードでツールをasync呼び出し → 結果をフィルタ | コードで文脈を探索 → `llm_query`で再帰分析 |
+| **再帰性** | なし（ツール呼び出しはフラット） | 本質的（`llm_query`がサブLMを起動） |
+| **セキュリティ** | `allowed_callers`で制御 | 汎用`tools`パラメータ（すべてアクセス可） |
+
+詳細な比較は[[concepts/dspy-rlm#RLM × Programmatic Tool Calling: 独立した2つのパラダイム]]を参照。
+
+**補完関係**: RLMが「何を分析するか」(context decomposition)、PTCが「どう実行するか」(tool orchestration)。真の統合は現状手動構成が必要。
+
 ## See Also
 
 - [[concepts/code-execution-with-mcp]] — Architectural pattern: MCP as code API
 - [[concepts/code-mode]] — Specific CodeMode implementations
-- [[concepts/rlm-recursive-language-models]] — RLM: code execution for long-context
+- [[concepts/dspy-rlm]] — RLM: same substrate (code execution), different problem (context management)
+- [[concepts/rlm-recursive-language-models]] — RLM general concept
 - [[concepts/agentic-search]] — Externalized processing level
 - [[concepts/monty-sandbox]] — Reference runtime: Rust-based Python interpreter for PTC
 - [[concepts/pydantic-ai-harness]] — Harness layer: CodeMode capability wrapping Monty
