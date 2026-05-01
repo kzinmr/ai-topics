@@ -203,7 +203,7 @@ PhD at NTNU in Artificial Intelligence and Machine Learning. Research topics: ne
 ## Related
 
 - [[doug-turnbull]] — Parallel thesis: "thick search APIs are counterproductive for agents" (user perspective)
-- [[jo-bergum]] — Co-founder/CEO, Hornet; complementary business+vision perspective
+- [[jo-kristian-bergum]] — Co-founder/CEO, Hornet; complementary business+vision perspective
 -  — HORNET.dev, the retrieval engine for agents
 -  — Agentic search and retrieval patterns
 - [[concepts/context-engineering]] — Context management for agents
