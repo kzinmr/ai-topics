@@ -109,8 +109,7 @@
    109|- [[georgi-gerganov]] — Georgi Gerganov is the principal architect of the local AI inference stack. By re-implementing heavy neural network models in pure, dependency-free C/C++, he made it possible to run state-of-the-art L
    110|- [[glm-5-zai]] — New state-of-the-art open weights LLM from Z.ai (智谱AI).
    111|- [[glm-5v-turbo]] — Model that turns designs into code, part of the multimodal AI wave from Chinese labs.
-   112|- [[gm8xx8-com]] — gm8xx8 operates as a high-signal research scanner rather than a traditional researcher or developer. Key characteristics:
-   113|- [[gm8xx8]] — gm8xx8 is a highly active AI/ML paper curator on X/Twitter and HuggingFace, known for sharing cutting-edge research papers across a remarkably broad range of topics. With 77K+ HuggingFace followers an
+- [[gm8xx8]] — gm8xx8 is a highly active AI/ML paper curator on X/Twitter and HuggingFace, known for sharing cutting-edge research papers across a remarkably broad range of topics. Operates as a high-signal research scanner rather than a traditional researcher or developer. With 77K+ HuggingFace followers an
    114|- [[google-tpu]] — Google's custom ASIC for ML workloads, now split into specialized TPU 8t (training) and TPU 8i (inference) chips at the 8th generation. Designed for agentic AI, world models, Mixture-of-Experts (MoEs)
    115|- [[gpjt]] — Giles Thomas is a software engineer and blogger known for his detailed, hands-on series "Writing an LLM from scratch" — a comprehensive, iterative exploration of building and training large language m
    116|- [[grad]] — Beyond the speedrun, Fares is a co-author on significant papers including Value Residual Learning (ACL 2025), GoldFinch (RWKV/Transformer hybrid), and INTELLECT-3 (106B parameter MoE model trained wit
@@ -135,7 +134,7 @@
    135|- [[jensen-huang]] — Jensen Huang is the co-founder, CEO, and president of Nvidia Corporation. Under his leadership, Nvidia has evolved from a gaming GPU company to the dominant provider of AI compute infrastructure, cont
    136|- [[jim-fan]] — Jim Fan is a leading AI researcher at NVIDIA, where he serves as Director of AI and Distinguished Scientist. He co-leads Project GR00T, NVIDIA's foundational model initiative for humanoid robots, and 
    137|- [[jim-nielsen]] — Jim's signature concept for software craft: building software is like woodworking. You start rough and progressively refine until every interaction feels smooth:
-   138|- [[jo-bergum]] — Jo Kristian Bergum is a search and retrieval infrastructure veteran who spent approximately 15 years as Chief Scientist at Vespa.ai (the open-source big data serving engine developed by Yahoo and late
+   138|- [[jo-kristian-bergum]] — Jo Kristian Bergum is a search and retrieval infrastructure veteran who spent approximately 15 years as Chief Scientist at Vespa.ai (the open-source big data serving engine developed by Yahoo and late
    139|- [[john-carmack]] — John Carmack is one of the most influential programmers in computer science history. From self-taught assembly programming as a teenager to creating the Doom and Quake engines, to pioneering Asynchron
    140|- [[john-d-cook-applied-mathematics-consulting]] — John D. Cook is a mathematical generalist-practitioner who bridges the gap between pure mathematics and real-world computation. His blog — updated almost daily with short, dense posts on mathematics, 
    141|- [[john-schulman]] — John Schulman is one of the most consequential AI researchers of his generation, though he operates far from the spotlight. As the co-inventor of Proximal Policy Optimization (PPO) and the pioneer of 

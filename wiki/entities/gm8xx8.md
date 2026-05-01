@@ -23,6 +23,15 @@ Unlike opinion leaders who produce original analysis, gm8xx8's value lies in **c
 
 GitHub activity shows contributions to diverse projects including cuLA, MyPhoneBench, trace-blame, florence2_ros2_wrapper, MiroEval, capgym/cap-x, GLM-skills, varex-bench, DIAL, and Bonsai-demo — indicating engagement with both research and applied AI systems.
 
+Organized by category:
+
+- **Training frameworks:** inclusionAI/cuLA
+- **Benchmarks:** FreedomIntelligence/MyPhoneBench, MiroMindAI/MiroEval, udibarzi/varex-bench
+- **Robotics/VLA:** xpeng-robotics/DIAL, JEDominguezVidal/florence2_ros2_wrapper
+- **Quantization:** PrismML-Eng/Bonsai-demo
+- **Skills/Agents:** zai-org/GLM-skills, capgym/cap-x
+- **Debugging:** MiroMindAI/trace-blame
+
 ## Curated Paper Analysis (March–April 2026)
 
 The following table captures the papers gm8xx8 has shared/curated, organized by topical cluster:
@@ -158,7 +167,31 @@ gm8xx8's HuggingFace upvote activity shows engagement with:
 - **Enrichment target**: This page needs enrichment with direct quotes from gm8xx8's X posts, commentary patterns, and specific curation philosophy. The skeleton status should be removed once enriched.
 - **Last updated**: 2026-04-14
 
+### Curation Style
+
+- **High volume, broad coverage:** 29+ papers curated in a single batch (March 2026)
+- **No commentary, just links:** Unlike Simon Willison or Karpathy, gm8xx8 shares papers with minimal analysis — the signal is in *what* they choose to share
+- **Cross-platform:** HF upvotes, X tweets, GitHub contributions form a unified curation pipeline
+- **Early detection:** Picks up papers from arxiv, GitHub repos, and HF collections before they hit mainstream attention
+
+### Notable Tweet
+
+> \"The FFT Strikes Back: An Efficient Alternative to Self-Attention\" (arxiv:2502.18394)
+> — 676 likes, 52K views, 2 months ago
+
+This tweet generated significant discussion, with replies from Eduardo Bergel (@BergelEduardo), Ljubomir Josifovski (@ljupc0), and others debating whether this is genuinely novel or an improvement on FNet (2021). The engagement level (52K views) shows gm8xx8's curation has real reach.
+
+### Connections to Other Tracked Individuals
+
+- **Simon Willison:** Both track emerging AI developments, but Simon adds commentary while gm8xx8 is pure signal detection
+- **Karpathy:** Both interested in architecture fundamentals (weight tying, tokenization, scaling laws)
+- **Overlap with x-accounts:** gm8xx8 tracks similar efficiency/architecture topics as the broader opinion leader set, but through a curation-first lens rather than creation-first
+
+### Key Insight: The Curator as Sensor
+
+gm8xx8 represents a new type of signal source in the AI ecosystem — not a researcher, builder, or commentator, but a **high-taste curator** whose upvote/share patterns serve as an early-warning system for emerging research trends. Their interest in formal methods (proofs, CDCL solvers) combined with practical engineering (quantization, VLA, hardware) is unusually broad and suggests someone with both theoretical and applied backgrounds.
+
 ## See Also
 
 - [[entities/_index]]
-- [[gm8xx8-com]]
+- [[gm8xx8]]
