@@ -7,6 +7,8 @@ type: concept
 sources:
   - raw/articles/2026-04-30_cloudflare-code-mode-mcp.md
   - https://blog.cloudflare.com/code-mode-mcp/
+  - https://blog.cloudflare.com/project-think/
+  - raw/articles/2026-04-15_cloudflare-project-think.md
 ---
 
 # CodeMode — LLM Code Execution Over Sequential Tool Calling
@@ -138,6 +140,74 @@ The [pydantic-ai-harness](https://github.com/pydantic/pydantic-ai-harness) libra
 - **Anthropic** — Code execution in Claude agent mode
 - **Cloudflare** — Server-side V8 sandbox MCP (search + execute); [[concepts/model-context-protocol-mcp]]
 - **OpenAI Codex CLI** — Code-first agent approach with sandboxed Python execution
+
+## 言語選択の二分性: JavaScript vs Python
+
+CloudflareはJS/TypeScript、PydanticはPython、AnthropicはPython — この言語選択の違いはCodeModeの方向性に深い影響を与えるが、これまで系統的に分析されていない。
+
+| 次元 | JavaScript (Cloudflare V8) | Python (Pydantic Monty) | Python (Anthropic Container) |
+|------|---------------------------|------------------------|-----------------------------|
+| **ランタイム** | V8 isolate（軽量、起動ミリ秒） | Rust製bytecode VM（起動0.004ms） | Dockerコンテナ（起動~秒） |
+| **パッケージ管理** | npm（tscの型検査に依存） | PyPI（pip install） | プリインストール済み |
+| **非同期実行** | native async/await | asyncio（MontyはRust tokio上） | asyncio |
+| **型の扱い** | `any` による動的dispatch（型安全と速度のトレードオフ） | duck typing + pydantic BaseModel | duck typing |
+| **モデル親和性** | TSの豊富な学習データ（GitHub TSコード量） | Pythonの極めて豊富な学習データ | Python |
+| **エコシステム親和性** | MCP SDK（TypeScriptファースト） | pydantic / FastAPI / LangChain | Claude API（Python SDK充実） |
+
+### なぜCloudflareはJSを選んだのか
+
+Cloudflare公式の論点：
+
+> *"We made this choice with the intuition that the models are better at TypeScript than custom tool-call formats."*
+> — Cloudflare Code Mode blog
+
+しかしこれは**検証可能な仮説**であり、確定した知見ではない。以下の論点が未解決：
+
+1. **訓練データ量**: GPT-5/Claude 4系の訓練データにおけるPython vs TypeScriptの割合は非公開。両者とも豊富だが、PythonはNumPy/PyTorch/pandas等の特定ドメインコードが多く、ツール呼び出しパターンはTypeScript（async/await）の方が直感的か。
+2. **モデル世代差**: Opus 4.6→Sonnet 4.7でPythonコード生成能力が有意に向上したという報告があり、言語選択の優位性はモデルバージョンによって変動する。
+3. **型安全性**: Cloudflare自身も指摘する通り、TypeScriptの`any`型を多用するツールラッパーでは型安全が損なわれる。Pythonのpydantic BaseModelによるstrictな型定義（Pydantic AIのコア設計）の方が、CodeModeのツールインターフェースとして堅牢である可能性がある。
+
+### 示唆: ランタイム分岐の予測
+
+今後、CodeModeの標準化が進むにつれて、以下の方向性が考えられる：
+
+- **マルチランゲージランタイム**: CloudflareのMCP Server Portal構想は、1つのゲートウェイで複数の実行環境を切り替える方向を示唆している。JSのDynamic Worker + Montyの両方を提供する可能性。
+- **MCP標準化**: MCPプロトコル自体がコード実行を標準化すれば、言語選択はランタイムプロバイダの問題に分離され、クライアントは意識しなくなる。
+- **言語非依存PTC**: PTCの本質は「コードでツールをasync呼び出す」こと自体にあり、言語は二次的な選択。RLMとの統合（PTC in RLM, 案A）ではPythonが自然だが、CLIツールとしてはJSの方が起動が速い。
+
+## MCP-based vs Native API: トランスポート層の設計選択
+
+CloudflareのCodeModeは **MCPをトランスポートとして使う**（search + executeの2つのMCP toolとして実装）。一方、AnthropicのPTCは **ネイティブAPI**（`code_execution_20260120`ツールとしてモデル側に組み込み）。このトランスポート層の違いは、今後のPTCエコシステムの分岐点となる。
+
+| 次元 | MCP-based (Cloudflare) | Native API (Anthropic) |
+|------|----------------------|----------------------|
+| **プロトコル** | 標準MCP — どんなクライアントでも使える | Claude API固有 — 他のモデルでは使えない |
+| **ツール定義** | MCPスキーマに従う（コード実行はsearch/execute 2ツール） | モデル固有の`tool_use`ブロック（1ツール: `code_execution_20260120`） |
+| **コード実行結果** | MCP tool_resultとしてstdoutが返る | tool_resultとしてstdoutが返る（同様） |
+| **セキュリティ** | OAuth 2.1 + scoped permissions + Binding | `allowed_callers` + container sandbox |
+| **移植性** | 高い（任意のMCPクライアントで動作） | 低い（Claude API依存） |
+| **状態管理** | MCPセッションに依存（Cloudflare DOの場合は永続的） | session tokenで管理（container lifetime依存） |
+| **拡張性** | MCP Server Portalで複数サービスの統合ゲートウェイ化可能 | API拡張に依存（Anthropicのロードマップ次第） |
+
+### MCP-basedの優位性
+
+- **プロトコル標準化**: どんなMCPクライアント（Claude Desktop, Cursor, VS Code extension）でも同じCodeMode体験を得られる
+- **OAuth 2.1統合**: スコープ付きパーミッションで細かいアクセス制御が可能
+- **Server Portal構想**: 単一ゲートウェイで複数のバックエンドMCPサーバを統合し、トークン消費はゲートウェイの固定ツール数（search + execute）に縮退される
+
+### Native APIの優位性
+
+- **モデル最適化**: `code_execution_20260120`はモデル内部のtool_useメカニズムと統合されており、モデルが自発的にコード実行を選択できる
+- **`allowed_callers`**: ツールごとに「直接呼び出し可能」「コード実行からのみ呼び出し可能」を制御できる。MCP-basedでは`allowed_callers`相当の機構がプロトコル標準にない
+- **caller識別**: レスポンスの`caller`フィールドで、ツール呼び出しがコードから発信されたか直接か区別できる
+
+### 将来の収束予測
+
+両者の折衷として、以下の標準化が予想される：
+
+1. **MCPプロトコル拡張によるコード実行標準化**: MCP仕様に`code_execution`プリミティブ（`allowed_callers`相当のフィールド）を追加 → CloudflareのMCP依存強みが標準に
+2. **Native APIのMCP互換ラッパー**: AnthropicがClaude APIのコード実行機能をMCPサーバとしても公開（既に部分的に進行中）
+3. **ランタイム非依存PTC**: PTCのコア（コードでツールを呼ぶパターン）はトランスポート層から独立して標準化され、MCP経由でもNative API経由でも同じ体験を目指す
 
 ## Related Patterns
 

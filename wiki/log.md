@@ -1,3 +1,16 @@
+## [2026-05-01] Cloudflare Project Think: PTCの4次元拡張（Execution Ladder, Durable Execution, Self-Authored Extensions, Hibernation Economics）
+
+- Expanded [[concepts/programmatic-tool-calling]] — Added "Cloudflare Project Think: PTCの次元拡張" section with 4 new dimensions:
+  1. **Execution Ladder** — 5-tier capability escalation (Workspace → Dynamic Worker → npm → Browser → Sandbox), each tier maps to PTC environment capability vs isolation tradeoff
+  2. **Durable Execution (Fibers)** — `stash()` checkpointing for crash recovery, comparison with Anthropic's 30-day container limit, connection to RLM's implicit statefulness
+  3. **Self-Authored Extensions (Meta-PTC)** — PTC as Autogenesis: agents write TypeScript tools at runtime (git extension → Dynamic Worker load → persistent tool), 3-layer recursion with PTC in RLM (案A)
+  4. **Hibernation Economics** — Zero-idle-cost Durable Objects vs always-on containers, implications for PTC granularity design and long-running RLM context exploration
+- Expanded [[concepts/code-mode]] — Added "言語選択の二分性: JavaScript vs Python" section (Cloudflare V8 JS vs Pydantic Monty Python vs Anthropic Container Python: runtime, package management, type safety, model affinity) and "MCP-based vs Native API: トランスポート層の設計選択" section (MCP-based vs Anthropic native `code_execution_20260120`: protocol standardization, security, portability, convergence prediction)
+- Saved raw article: raw/articles/2026-04-15_cloudflare-project-think.md
+- Sources:
+  - https://blog.cloudflare.com/project-think/
+  - https://blog.cloudflare.com/code-mode/
+
 ## [2026-05-01] Audio Tokenizer Comparison — SoundStream / EnCodec / DAC / SpeechTokenizer / Mimi
 
 5つの音声トークナイザの比較分析を作成・取り込み：
