@@ -1,9 +1,14 @@
 ---
 title: "RLM (Recursive Language Models)"
-tags: [training, concept, ai-agents, llm, prompting, rag, evaluations, inference]
+tags: [training, concept, ai-agents, llm, prompting, rag, evaluations, inference, context-management, code-execution]
 created: 2026-04-13
-updated: 2026-04-24
+updated: 2026-05-01
 type: concept
+sources:
+  - https://arxiv.org/abs/2512.24601
+  - https://alexzhang13.github.io/blog/2025/rlm/
+  - https://dspy.ai/api/modules/RLM/
+  - https://github.com/alexzhang13/rlm
 ---
 
 # RLM (Recursive Language Models)
@@ -219,15 +224,54 @@ Returns `Prediction` with:
 - `trajectory`: List of dicts with `reasoning`, `code`, `output` per step
 - `final_reasoning`: LLM reasoning on final step
 
+## Relation to Programmatic Tool Calling (PTC): 2-Axis Complementarity
+
+RLM and [[concepts/programmatic-tool-calling|Programmatic Tool Calling (PTC)]] are **complementary paradigms** that apply the same solution (code execution) to fundamentally different problems:
+
+| Dimension | RLM (Data Axis) | PTC (Function Axis) |
+|-----------|-----------------|---------------------|
+| **Core concern** | **What to analyze** — context management | **How to execute** — tool orchestration |
+| **Direction** | **Split** — decompose 1 huge context → N pieces | **Merge** — bundle N tool calls → 1 code block |
+| **Replaces** | RAG / long-context prompting | Sequential `tool_use` blocks |
+| **Code writes** | `context[start:end]`, `re.findall()`, `llm_query()` | `await tool_a()`, `asyncio.gather()` |
+| **Freedom** | Dynamic decomposition strategy (4-level spectrum) | Dynamic execution flow (conditionals, parallelism) |
+| **Metaphor** | Soft MapReduce: MAP → SHUFFLE(llm_query) → REDUCE(SUBMIT) | Orchestration: async function composition |
+
+### Decomposition Strategy: The LLM Decides
+
+A key insight from the RLM paper (§5): *"Unlike prior agentic methods that rigidly define these workflow patterns, RLMs defer these decisions entirely to the language model."*
+
+The LLM dynamically chooses its decomposition strategy from a spectrum:
+
+1. **Manual** — raw Python: `re.findall()`, slicing
+2. **Semi-manual** — helper functions defined in code
+3. **Tool-delegated** — PTC tools like `chunk_by_topic(context)`
+4. **Recursive** — `llm_query()` for semantic decomposition
+
+This flexibility is the core advantage over RAG (fixed chunk size + fixed top-k).
+
+### Architectural Fusibility
+
+A **Tool-Augmented RLM** (案A: PTC in RLM) can naturally host both axes in the same environment:
+
+```python
+relevant = [s for s in context if "revenue" in s.lower()]  # RLM: explore
+financials = await query_api({"ids": extract_ids(relevant)})  # PTC: execute
+analysis = llm_query(f"Compare: {relevant} vs {financials}")  # RLM: analyze
+```
+
+Full analysis in [[concepts/dspy-rlm#RLM × Programmatic Tool Calling: 補完する2軸（関数軸 vs データ軸）]].
+
 ## Related Concepts
 
 - **[[concepts/dspy]]** — Declarative LM programming framework; ships RLM module
-- **[[concepts/dspyrlm]]** — This page covers the DSPy.RLM implementation
+- **[[concepts/dspy-rlm]]** — DSPy.RLM implementation with full analysis of PTC relationship, 2-axis framing (function vs data), merge/split symmetry, and Tool-Augmented RLM design
+- **[[concepts/programmatic-tool-calling]]** — Complementary paradigm: LLM writes code that calls tools (function axis). PTC merges N tool calls into 1 code block; RLM splits 1 huge context into N pieces. Mirror symmetry.
+- **[[concepts/code-execution-with-mcp]]** — Middle architectural layer between PTC and CodeMode: MCP as code API with progressive disclosure
+- **[[concepts/code-mode]]** — Specific implementations (Cloudflare V8, Pydantic Monty) of the code-execution-over-tool-calling pattern
 - **[[concepts/context-folding]]** — Parallel approach: branch/return with summarization
 - **[[concepts/inference-time-scaling]]** — RLM scales computation, not parameters
-- **** — RLM as a new ACI paradigm
-- **** — RLMs are trainable scaffolds
+- **[[concepts/agentic-search]]** — Externalized processing paradigm; Level 3 connects to RLM's approach
 - **[[shunyu-yao]]** — "The Second Half" framework; RL generalization thesis
 - **[[alex-zhang]]** — Primary author, RLM creator
 - **[[omar-khattab]]** — Co-author, DSPy creator, ColBERT lineage
-- **** — Co-author, MIT DSG, ML systems expert

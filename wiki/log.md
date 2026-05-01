@@ -138,7 +138,10 @@
 
 ---
 
-## 2026-05-01 — RLM decomposition strategy analysis + merge/split symmetry
+## 2026-05-01 — Final review: cross-reference all PTC×RLM insights across remaining pages
+
+- Updated [[concepts/rlm-recursive-language-models]] — Added "Relation to Programmatic Tool Calling (PTC): 2-Axis Complementarity" section with comparison table, decomposition strategy analysis (4-level spectrum), and architectural fusibility code example. Fixed broken wikilinks in Related Concepts (> code-execution-with-mcp, programmatic-tool-calling, code-mode, agentic-search). Updated frontmatter with sources and tags.
+- Updated [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — Added cross-references to programmatic-tool-calling (upper concept) and code-execution-with-mcp (root level). Fixed broken frontmatter (duplicate updated field, lost sources key).
 
 - Updated [[concepts/dspy-rlm]] — Added 3 new subsections under "補完する2軸" framing:
   1. "方向性の対称性: PTCは統合(merge)、RLMは分解(split)" — PTC merges N tool calls into 1 code block; RLM splits 1 huge context into N pieces. Mirror symmetry.

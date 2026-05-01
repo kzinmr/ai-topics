@@ -7,7 +7,7 @@ aliases:
   - mcp-code-execution
   - filesystem-tool-discovery
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-05-01
 tags:
   - concept
   - system-architecture
@@ -116,6 +116,9 @@ await salesforce.updateRecord({
 
 ## 関連概念
 
+- [[concepts/programmatic-tool-calling]] — 上位概念: LLMがコードを書いてツールを呼び出すAPIメカニズム。Code Execution with MCPはこのパターンのMCP版
+- [[concepts/code-execution-with-mcp]] — 上位概念（ルートレベル）: MCPをコードAPIとして扱うアーキテクチャパターン
+- [[concepts/code-mode]] — Cloudflare Code Mode (V8 MCP)、Pydantic Monty実装など具体的実装
 - [[concepts/harness-engineering]] — 上位インデックス
 - [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — 高度なツール使用（PTCと関連）
 - [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] — エージェント用ツール設計
