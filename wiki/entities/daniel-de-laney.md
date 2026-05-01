@@ -98,6 +98,10 @@ An earlier piece demonstrating his design rigor: professional designers are mixi
 - [[berthub-eu]] — Bert Hubert's lean software philosophy complements Daniel's UI minimalism
 - [[concepts/harness-engineering]] — Structured AI workflows vs. conversational AI
 - [[concepts/harness-engineering/agentic-engineering]] — Daniel's approach to AI-assisted development
+- [[steve-blank]] — Lean Startup creator; AI entrepreneurship and methodology
+- [[drmaciver]] — Hypothesis creator; property-based testing and AI coding
+- [[mitchellh-com]] — HashiCorp co-founder; harness engineering pioneer
+- [[akira-realmcore]] — Random Labs/Slate; swarm orchestration pioneer
 
 ## Sources
 

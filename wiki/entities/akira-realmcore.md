@@ -162,6 +162,12 @@ Slateは[[concepts/agentic-engineering]]における「swarm orchestration」パ
 | [[peter-steinberger]](@steipete) | OpenClaw開発者。並列エージェントアプローチで関連 | [[peter-steinberger]] |
 | [[nader-dabit]](@dabit3) | Cloud agents / agent fleet — 長時間実行エージェントの文脈で関連 | — |
 
+## Related
+
+- [[drmaciver]] — Hypothesis creator; PBT and AI evaluation methodology
+- [[mitchellh-com]] — HashiCorp co-founder; harness engineering pioneer
+- [[daniel-de-laney]] — Designer/PM; structured AI development critique
+
 ## X Activity Themes
 
 | Theme | Content |

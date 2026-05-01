@@ -75,6 +75,10 @@ Mitchell made Ghostty a non-profit organization, believing that terminal emulato
 -  — Terminal emulator project, now non-profit
 - [[concepts/agentic-engineering]] — Agent-first development workflows
 -  — Infrastructure-as-code company Mitchell co-founded
+- [[akira-realmcore]] — Random Labs/Slate; swarm orchestration pioneer
+- [[steve-blank]] — Lean Startup creator; AI startup methodology
+- [[daniel-de-laney]] — Designer/PM; structured development and AI tools
+- [[drmaciver]] — Hypothesis creator; property-based testing and AI reliability
 
 ## Sources
 

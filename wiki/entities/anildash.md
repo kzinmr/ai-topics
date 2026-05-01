@@ -117,6 +117,9 @@ Building on his coding agents thesis, Anil envisions:
 - [[concepts/agentic-engineering]] — The practice of orchestrating AI systems to produce software
 - [[concepts/vibe-coding]] — AI-assisted coding using natural language prompts
 - [[concepts/codeless-software]] — Software created without direct code writing
+- [[peter-steinberger]] — AI-native developer; pioneered parallel agent workflows
+- [[simon-willison]] — Django co-creator; defined agentic engineering patterns
+- [[xeiaso-net]] — Infrastructure engineer; creator of Anubis anti-scraper tool
 -  — Fellow AI commentator; coined "agentic engineering"
 -  — Tech policy writer; discussed AI as potential enabler of open web resurgence
 -  — Cory Doctorow's theory of platform decay; relevant to Anil's tech industry critique

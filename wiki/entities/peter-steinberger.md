@@ -147,4 +147,6 @@ Steinberger maintains a live blurb at **whatmodelispeterusing.com** — tracking
 - [[concepts/skill-architecture-patterns]] — Skill governance model (OpenClaw's primitives-first approach)
 - [[boris-cherny]] — Anthropic's Head of Claude Code
 - [[simon-willison]] — Fellow opinion leader on agentic engineering
+- [[xeiaso-net]] — Infrastructure engineer; creator of Anubis anti-scraper
+- [[anildash]] — Tech commentator; agentic engineering and coding culture
 - [[concepts/harness-engineering/agentic-workflows/vibe-coding]] — The coding approach Steinberger evolved into "AI-native development"

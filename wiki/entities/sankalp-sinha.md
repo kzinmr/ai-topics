@@ -125,6 +125,7 @@ Sankalp's approach to AI engineering can be summarized as:
 -  — AI coding tool he evaluates and discusses
 - [[cursor-3]] — IDE he compares in his writing
 - [[teknium]] — Fellow open-source AI developer
+- [[simon-willison]] — Django co-creator; agentic engineering guide
 
 ## Key Links
 

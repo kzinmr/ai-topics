@@ -105,6 +105,7 @@ Unlike many AI startups that keep their technology proprietary, OpenPipe has con
 -  — Acquired OpenPipe in 2025
 -  — Corbitt's former employer (Startup School Director)
 - [[concepts/chatgpt-memory-bitter-lesson]] — Philosophy underlying OpenPipe's approach
+- [[john-carmack]] — Keen Technologies founder; AGI via reinforcement learning
 
 ## Sources
 

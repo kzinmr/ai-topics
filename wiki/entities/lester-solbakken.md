@@ -208,6 +208,7 @@ PhD at NTNU in Artificial Intelligence and Machine Learning. Research topics: ne
 -  — Agentic search and retrieval patterns
 - [[concepts/context-engineering]] — Context management for agents
 -  — The IR discipline behind retrieval quality
+- [[addy-osmani]] — Google Cloud AI director; agentic coding patterns
 
 ## Sources
 

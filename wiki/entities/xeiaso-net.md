@@ -119,6 +119,9 @@ Xe's recent writing in early-mid 2026 covers AI-assisted development and abstrac
 -  — The social dynamics of maintaining popular projects
 -  — Security-first thinking for open-source developers
 -  — Xe's organization
+- [[peter-steinberger]] — AI-native developer; parallel agent workflows
+- [[simon-willison]] — Django co-creator; agentic engineering patterns
+- [[anildash]] — Tech commentator; AI policy and web culture
 
 ## Sources
 
