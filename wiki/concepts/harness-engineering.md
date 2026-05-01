@@ -137,6 +137,7 @@ Key implication for resource allocation: if you're building anything more elabor
 
 ## Related Concepts
 
+- [[concepts/agentic-engineering]] — The practice of engineering with AI coding agents, tightly coupled to harness engineering.
 - [[concepts/ai-evals]] — The broader evaluation framework that harness engineering operationalizes.
 - [[concepts/critique-shadowing]] — Husain's methodology for building aligned LLM judges.
 - [[concepts/llm-as-judge]] — Core technique that requires harness validation.
