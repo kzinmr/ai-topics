@@ -162,7 +162,7 @@ Notable recent publications include his 2024 essay "A Lasting Model for Change: 
 - [[concepts/harness-engineering/agentic-engineering]] — Agent-first development workflows changing startup dynamics
 - [[daniel-de-laney]] — Designer/PM; structured AI workflows and tools critique
 - [[drmaciver]] — Hypothesis creator; property-based testing for AI reliability
-- [[mitchellh-com]] — HashiCorp co-founder; harness engineering pioneer
+- [[mitchell-hashimoto]] — HashiCorp co-founder; harness engineering pioneer
 
 ## Sources
 

@@ -16,7 +16,8 @@ Techniques and engines for fast LLM inference, from consumer hardware to product
 | [[concepts/inference/sglang]] | **Agentic loops, RAG, structured output** | RadixAttention, xgrammar, prefill-decode disaggregation |
 | [[concepts/inference/vllm]] | **General production serving** | PagedAttention, continuous batching, multi-LoRA |
 | [[concepts/inference/llama-cpp]] | **CPU / Apple Silicon / consumer GPU** | GGUF format, local-first, zero cloud dependency |
-| Ollama | **Local LLM runner (CLI + API)** | Wraps llama.cpp, model library, one-line setup |
+|| Ollama | **Local LLM runner (CLI + API)** | Wraps llama.cpp, model library, one-line setup |
+|| [[concepts/tensorrt-llm]] | **NVIDIA GPU 最高効率** | TensorRT compiler, FP8/FP4, Triton統合, ハードウェア最適化最大 |
 
 ## Optimization Techniques
 

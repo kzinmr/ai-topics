@@ -165,7 +165,7 @@ Slateは[[concepts/agentic-engineering]]における「swarm orchestration」パ
 ## Related
 
 - [[drmaciver]] — Hypothesis creator; PBT and AI evaluation methodology
-- [[mitchellh-com]] — HashiCorp co-founder; harness engineering pioneer
+- [[mitchell-hashimoto]] — HashiCorp co-founder; harness engineering pioneer
 - [[daniel-de-laney]] — Designer/PM; structured AI development critique
 
 ## X Activity Themes

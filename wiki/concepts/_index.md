@@ -106,7 +106,16 @@ AI and LLM concept pages organized by topic.
 
 - [[concepts/inference/llama-cpp]] — llama.cpp is a C/C++ inference engine for running LLMs efficiently on consumer hardware, created by Georgi Gerganov.
 - [[concepts/inference/sglang]] — SGLang's signature optimization. Builds a tree-structured KV cache across requests sharing common prefixes:
-- [[concepts/inference/vllm]] — vLLM is a high-throughput LLM serving engine with PagedAttention optimization.
+| [[concepts/inference/vllm]] — vLLM is a high-throughput LLM serving engine with PagedAttention optimization.
+|- [[concepts/tensorrt-llm]] — NVIDIA's optimized inference engine with TensorRT compiler, FP8/FP4 quantization, Triton integration. Highest throughput on NVIDIA GPUs.
+
+## Ai-Infrastructure-Engineering
+
+- [[concepts/ai-infrastructure-engineering/_index]] — Parent page: AI Infrastructure Engineering. GPU/VRAM fundamentals, distributed training, model serving, observability, cost optimization.
+- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — GPU memory hierarchy, VRAM requirement calculation, roofline model, batching economics, quantization effects. ⬜ L1
+- [[concepts/ai-infrastructure-engineering/distributed-training]] — DDP → FSDP → DeepSpeed ZeRO stages, 3D parallelism (TP/PP/EP), strategy selection guide. ⬜ L1
+- [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — Deployment architectures, autoscaling strategies (HPA, predictive, serverless), load balancing, cost optimization. ⬜ L1
+- [[concepts/ai-infrastructure-engineering/llm-observability]] — Inference metrics (TTFT, TPOT, ITL), GPU/VRAM monitoring, cost attribution, production patterns, vLLM OTel integration. ⬜ L1
 
 ## Web-Filesystem.Md
 
