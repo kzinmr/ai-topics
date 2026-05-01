@@ -127,6 +127,7 @@ Lambert writes with a distinctive mix of technical rigor and personal candor. He
 - [[concepts/rlhf]] — Core research area, book author
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — Direct Preference Optimization, Zephyr
 - [[concepts/post-training]] — His primary research focus
+- [[teknium]] — Fellow post-training researcher, Nous Research co-founder
 -  — Co-created reward model evaluation benchmark
 -  — Advocate for fully open AI development
 - [[concepts/fine-tuning/grpo-rl-training]] — Discussed extensively as part of the RLVR trend

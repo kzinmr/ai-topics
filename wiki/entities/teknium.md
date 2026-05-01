@@ -168,6 +168,7 @@ Nous Research's decentralized training infrastructure (DiStrO) and Psyche Networ
 - [[concepts/hermes-models]] — Lead architect of Hermes 2/3/4
 - [[hermes-agent]] — Creator and lead maintainer (68K+ stars)
 - [[concepts/post-training]] — His primary area of expertise
+- [[nathan-lambert]] — Fellow post-training researcher, RLHF book author
 -  — DataForge, GPTeacher, custom pipelines
 -  — Atropos RL environments
 - [[concepts/harness-engineering]] — CLI/terminal-use harnessing philosophy
