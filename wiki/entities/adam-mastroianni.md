@@ -112,8 +112,7 @@ His academic research reveals systematic misperceptions in social interaction:
 
 ## Related
 
--  — Adam's framework for understanding psychology as storytelling
--  — Progress through best ideas winning, not gatekeeping bad ones
+-  — Adam's framework for understanding psychology as storytelling-  — Progress through best ideas winning, not gatekeeping bad ones
 -  — Systematic underestimation of how much others like you
 - [[dwarkesh-patel]] — Fellow science communicator with overlapping audience
 - [[paulgraham-com]] — Similar essayistic approach to understanding human behavior

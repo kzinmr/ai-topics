@@ -169,8 +169,7 @@ The key insight: **AI doesn't need to be right on the first attempt — it needs
 
 ## Related Concepts
 
--  — The broader methodology shift this enables
-- [[concepts/claude-code-best-practices]] — Practical patterns for Claude Code users
+-  — The broader methodology shift this enables- [[concepts/claude-code-best-practices]] — Practical patterns for Claude Code users
 - [[concepts/cognitive-cost-of-agents]] — The hidden cost of reviewing vs. writing
 - [[concepts/ai-coding-reliability]] — Why speed without reliability gates causes outages
 - [[concepts/claude-code-source-patterns]] — How Anthropic engineers inference-speed patterns into Claude Code itself

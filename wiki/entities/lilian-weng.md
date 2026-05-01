@@ -148,7 +148,6 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 - [[john-schulman]] — Thinking Machines Lab co-founder and Chief Scientist
 - [[sam-altman]] — OpenAI CEO during her tenure
 -  — The approach used for the Rubik's Cube robot
-
 ## Influence Metrics
 
 - **Lil'Log blog**: Hundreds of thousands of readers; consistently cited in academic papers, conference talks, and engineering documentation

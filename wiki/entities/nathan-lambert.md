@@ -128,13 +128,9 @@ Lambert writes with a distinctive mix of technical rigor and personal candor. He
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — Direct Preference Optimization, Zephyr
 - [[concepts/post-training]] — His primary research focus
 - [[teknium]] — Fellow post-training researcher, Nous Research co-founder
--  — Co-created reward model evaluation benchmark
--  — Advocate for fully open AI development
-- [[concepts/fine-tuning/grpo-rl-training]] — Discussed extensively as part of the RLVR trend
+-  — Co-created reward model evaluation benchmark-  — Advocate for fully open AI development- [[concepts/fine-tuning/grpo-rl-training]] — Discussed extensively as part of the RLVR trend
 - [[simon-willison]] — Fellow open-source AI advocate
--  — His newsletter and podcast
--  — Open post-training model family he leads
-
+-  — His newsletter and podcast-  — Open post-training model family he leads
 ## Key Links
 
 - **Website**: [natolambert.com](https://www.natolambert.com/)

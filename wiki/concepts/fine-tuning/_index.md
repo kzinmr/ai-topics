@@ -39,7 +39,6 @@ Post-training techniques for adapting pre-trained language models to specific ta
 - [[concepts/inference/llama-cpp]] — CPU/Apple Silicon inference engine
 - [[concepts/inference/vllm]] — High-throughput GPU serving
 -  — Production model serving patterns
-
 ## The Fine-Tuning Pipeline
 
 ```
@@ -63,7 +62,6 @@ Pre-trained Model → SFT → Preference Optimization (DPO/GRPO/RLHF) → Quanti
 - [[concepts/local-llm]] — Running fine-tuned models locally
 - [[concepts/inference]] — Inference optimization post-fine-tuning
 -  — Evaluating fine-tuned models
-
 ## Sources
 - HuggingFace TRL documentation
 - DeepSeek R1 paper (GRPO)

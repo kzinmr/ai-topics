@@ -72,9 +72,7 @@ The incident highlights risks of: inference endpoint discoverability, credential
 
 - [[concepts/anthropic-openclaw-conflict]] — Anthropic's concurrent restrictions on third-party tool access
 - [[dario-amodei]] — Anthropic CEO, announced Mythos Preview
--  — Dual-use risk management framework
--  — Project Vend, Project Fetch
-
+-  — Dual-use risk management framework-  — Project Vend, Project Fetch
 ## Sources
 
 - https://red.anthropic.com/claude-mythos-preview (Apr 7, 2026) — Full Frontier Red Team Research Summary

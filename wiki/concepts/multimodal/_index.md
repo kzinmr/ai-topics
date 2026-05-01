@@ -23,7 +23,6 @@ AI models that process and connect multiple modalities (vision, language, audio)
 ## Sub-pages
 
 -  — CLIP: Contrastive Language-Image Pre-Training
-
 > **Note:** Whisper moved to [[concepts/speech/whisper]] — speech models are conceptually distinct from vision-language multimodal systems.
 
 ## Key Concepts

@@ -105,10 +105,7 @@ Marinelli helped launch the **illumos Cafe** — a community-run hub on illumos,
 - [[george-hotz]] — AI infrastructure, open-source ethos
 - [[grant-slatton]] — AI alignment, technocapital economics
 - [[john-carmack]] — Pragmatic AI tool use
--  — Operating system Marinelli advocates for and uses extensively
--  — Open-source Solaris derivative, community infrastructure
--  — Self-hosted infrastructure, community control
-
+-  — Operating system Marinelli advocates for and uses extensively-  — Open-source Solaris derivative, community infrastructure-  — Self-hosted infrastructure, community control
 ## Sources
 
 - [it-notes.dragas.net](https://it-notes.dragas.net) — "Scattered IT Notes" blog

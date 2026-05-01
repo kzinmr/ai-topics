@@ -153,7 +153,6 @@ Nuttall's content platform and course business teaching programmatic SEO strateg
 - [[claude-code]] — His primary AI coding tool
 - [[concepts/harness-engineering/system-architecture/agent-skills]] — Playbooks.com is a skill directory for AI agents
 -  — His approach to agent state management
-
 ## Sources
 
 - Personal website: https://ian.is

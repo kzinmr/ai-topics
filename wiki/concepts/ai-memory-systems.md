@@ -195,7 +195,6 @@ Claudeのメモリが「The Bitter Lesson」に沿った設計であることは
 - [[anthropic]] — Claude Memory、Claude Code
 - [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition]] — Devin、エージェント特化型メモリ
 -  — 「The Bitter Lesson」の提唱者
-
 ## 出典
 
 - Rich Sutton, "The Bitter Lesson" (2019)

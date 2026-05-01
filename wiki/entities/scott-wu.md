@@ -152,7 +152,6 @@ The team is characterized by:
 
 ## See Also
 
--  — Devin AI software engineer product page
-- [[concepts/cognition-ai-data-analyst]] — Cognition AI company page
+-  — Devin AI software engineer product page- [[concepts/cognition-ai-data-analyst]] — Cognition AI company page
 - [[concepts/harness-engineering/agentic-engineering]] — Simon Willison's framework that describes tools like Devin
 - [[concepts/harness-engineering]] — Ryan Lopopolo's structured automation approach (contrasts with Devin's autonomous model)

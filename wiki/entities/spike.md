@@ -130,7 +130,6 @@ Spike's "spikisms" are aphoristic technical insights that blend computational th
 -  — His llm.nvim project and views on AI in programming
 -  — The instruction set architecture used in the 100K line ML stack proposal
 -  — The concept of systems that can build themselves
-
 ## Influence Metrics
 
 - BrainChop (dingllm.nvim): 865+ GitHub stars, active PyPI package with WebGPU export

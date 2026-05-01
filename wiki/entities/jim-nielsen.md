@@ -135,10 +135,7 @@ Jim built [Can I Still Use?](https://canistilluse.com) — a site documenting wh
 - [[concepts/sanding-ui]] — Jim's framework for iterative UI refinement
 - [[concepts/personal-websites]] — Independent web publishing as digital sovereignty
 - [[concepts/code-as-process]] — Coding as a thinking tool, not just production
--  — Fellow blogger on web culture and personal sites
--  — Curator and blogger with similar web philosophy
--  — Design engineer writing about web craft
-
+-  — Fellow blogger on web culture and personal sites-  — Curator and blogger with similar web philosophy-  — Design engineer writing about web craft
 ## Sources
 
 - [Sanding UI](https://blog.jim-nielsen.com/2024/sanding-ui/) (Sep 2024) — 1,300 points on Hacker News

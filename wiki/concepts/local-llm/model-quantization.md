@@ -152,7 +152,6 @@ The **Unsloth** and **llama.cpp** ecosystems have made step 3 nearly automated �
 - [[georgi-gerganov]] — GGUF/K-Quants creator
 - [[nvidia-dgx-spark]] — Hardware supporting NVFP4/FP4
 -  — Inference optimization techniques
-
 ## Sources
 
 - [llama.cpp quantization documentation](https://github.com/ggerganov/llama.cpp#quantization)

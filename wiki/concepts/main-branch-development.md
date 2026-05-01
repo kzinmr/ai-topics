@@ -184,7 +184,6 @@ Complements Claude Code patterns:
 - [[concepts/direct-prompting-philosophy]] — Anti-complexity mindset applied to Git
 - [[concepts/claude-code-best-practices]] — Atomic commits enable sub-agent delegation
 -  — How AI changes traditional development workflows
-
 ## Sources
 
 - [Peter Steinberger: Live Coding Session: Building Arena](https://steipete.me/posts/2025/live-coding-session-building-arena) — Arena feature built in ~1 hour on main

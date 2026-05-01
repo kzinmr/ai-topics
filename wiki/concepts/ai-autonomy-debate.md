@@ -145,8 +145,7 @@ The phrase earning traction: **"Trust comes before autonomy. You don't earn the 
 
 ## Related Concepts
 
--  — The practice of directing AI agents rather than writing code
-- [[concepts/anthropic-managed-agents]] — Hosted agent services and the debate around them
+-  — The practice of directing AI agents rather than writing code- [[concepts/anthropic-managed-agents]] — Hosted agent services and the debate around them
 - [[concepts/ai-agent-traps]] — Common pitfalls in agent deployment and design
 - [[concepts/compute-scaling-bottlenecks]] — Infrastructure constraints affecting agent capabilities
 - [[concepts/cognitive-cost-of-agents]] — The human cognitive burden of managing AI agents

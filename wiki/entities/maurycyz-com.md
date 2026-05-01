@@ -194,10 +194,8 @@ Maurycy writes in a **direct, tutorial-oriented style** — code-heavy, theory-l
 
 - [[concepts/web-minimalism]] — The small web movement
 - [[concepts/c-programming]] — C as a systems language
--  — Pre-web information retrieval
--  — Verlet integration and spatial hashing
+-  — Pre-web information retrieval-  — Verlet integration and spatial hashing
 -  — Independent, framework-free websites
-
 ## Sources
 
 - [Writing my own static site generator](https://maurycyz.com/misc/new_ssg/) (Jan 2026)

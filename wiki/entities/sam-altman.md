@@ -213,8 +213,7 @@ The 2023 board crisis revealed deep tensions between safety-focused board member
 - [[john-schulman]] — OpenAI co-founder; RL researcher
 - [[dario-amodei]] — Anthropic CEO; competitor
 - [[openai]] — Company Altman leads
--  — Altman's proof-of-personhood project
--  — Altman's stated long-term goal
+-  — Altman's proof-of-personhood project-  — Altman's stated long-term goal
 
 ## Sources
 

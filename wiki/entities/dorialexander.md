@@ -188,10 +188,7 @@ Long-time Wikipedia contributor since ~2006, elected administrator in 2012 with 
 - [[concepts/sciences-po]] — Where Langlais teaches data science
 - [[concepts/open-science]] — Core philosophy underlying Pleias's work
 - [[concepts/small-language-models]] — Pleias's model design philosophy
--  — Domain of Pleias-RAG models
--  — Langlais's former company
--  — Collaboration with Nvidia
-
+-  — Domain of Pleias-RAG models-  — Langlais's former company-  — Collaboration with Nvidia
 ## Sources
 
 - **Blog:** [vintagedata.org](https://vintagedata.org/blog/) — Pierre-Carl Langlais's personal blog

@@ -120,8 +120,7 @@ Building on his coding agents thesis, Anil envisions:
 - [[peter-steinberger]] — AI-native developer; pioneered parallel agent workflows
 - [[simon-willison]] — Django co-creator; defined agentic engineering patterns
 - [[xeiaso-net]] — Infrastructure engineer; creator of Anubis anti-scraper tool
--  — Fellow AI commentator; coined "agentic engineering"
--  — Tech policy writer; discussed AI as potential enabler of open web resurgence
+-  — Fellow AI commentator; coined "agentic engineering"-  — Tech policy writer; discussed AI as potential enabler of open web resurgence
 -  — Cory Doctorow's theory of platform decay; relevant to Anil's tech industry critique
 
 ## Sources

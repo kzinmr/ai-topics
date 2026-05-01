@@ -139,10 +139,7 @@ Jyn's blog alternates between **deep technical walkthroughs** (build systems, ru
 
 - [[concepts/build-systems]] — Deep analysis of build architecture
 - [[concepts/rust-ecosystem]] — Rust compiler, tooling, and language design
--  — Making complex systems approachable
--  — The Rust programming language project
--  — Rust consulting company
-
+-  — Making complex systems approachable-  — The Rust programming language project-  — Rust consulting company
 ## Sources
 
 - [The Core of Rust](https://jyn.dev/the-core-of-rust)

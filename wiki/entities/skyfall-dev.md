@@ -129,8 +129,7 @@ His projects share a common philosophy: **build tools that solve actual problems
 - [[concepts/hack-club]] — Teenager-run coding community and organization
 - [[concepts/digital-minimalism]] — Conscious technology use, lightweight websites
 - [[concepts/saas-dependency]] — Risks of entrusting data to proprietary platforms
--  — Mattermost, self-hosted alternatives
--  — Parasocial AI relationships, user safety, deprecation
+-  — Mattermost, self-hosted alternatives-  — Parasocial AI relationships, user safety, deprecation
 -  — Procurement failures, consultancy costs, taxpayer value
 
 ---

@@ -165,6 +165,4 @@ His RAIVN Lab (Reasoning, AI, and VisioN) at UW, co-directed with Ranjay Krishna
 - [[concepts/olmo-open-language-model]] — Farhadi's flagship open LLM project at Ai2
 - [[concepts/open-model-consortium]] — Collaborative open-source AI model development
 - [[concepts/object-detection]] — YOLO and the real-time detection paradigm
--  — Agents that understand and interact with physical environments
--  — Farhadi's distinctive safety approach
--  — Beyond recognition to understanding "why" and "what next"
+-  — Agents that understand and interact with physical environments-  — Farhadi's distinctive safety approach-  — Beyond recognition to understanding "why" and "what next"

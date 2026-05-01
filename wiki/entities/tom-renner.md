@@ -169,10 +169,7 @@ This is not Luddism — it's **technological skepticism grounded in engineering 
 
 - [[terrible-software]] — Human-centered approach to software engineering
 - [[seangoedecke-com]] — Software engineering writing and team dynamics
--  — Systems thinking and ethical technology
--  — Critical analysis of AI limitations
--  — Quality-focused engineering culture
-
+-  — Systems thinking and ethical technology-  — Critical analysis of AI limitations-  — Quality-focused engineering culture
 ## Sources
 
 - [About | tomrenner.com](https://tomrenner.com/about/)

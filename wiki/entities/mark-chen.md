@@ -156,9 +156,7 @@ His public statements emphasize OpenAI's commitment to advancing **reasoning and
 - [[ilya-sutskever]] — OpenAI co-founder; former senior colleague
 - [[alec-radford]] — Fellow OpenAI researcher; collaborated on GPT series
 - [[greg-brockman]] — OpenAI co-founder; engineering leadership
--  — Chen's primary research area
--  — o1 model represents this paradigm
-
+-  — Chen's primary research area-  — o1 model represents this paradigm
 ## Sources
 
 - Grokipedia: Mark Chen

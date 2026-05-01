@@ -145,7 +145,6 @@ AnthropicのMemory Toolは、メモリ設計における**明確な bet** だっ
 - [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition]] — Devinの開発元、Anthropicの動向を注視
 - [[claude-code]] — Anthropicのコーディングエージェント
 -  — Cognitionのコーディングエージェント
-
 ## 出典
 
 - Shlok Khemani, "Anthropic's Opinionated Memory Bet" (2025-10-14) — https://www.shloked.com/writing/claude-memory-tool

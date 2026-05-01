@@ -158,9 +158,7 @@ This creates a **perfect storm** for compulsive development behavior.
 
 - [[concepts/inference-speed-development]] — Why faster iteration amplifies addiction risk
 - [[concepts/direct-prompting-philosophy]] — How low-friction interaction enables compulsive behavior
--  — The broader context of AI-assisted development culture
--  — Community response to the phenomenon
-
+-  — The broader context of AI-assisted development culture-  — Community response to the phenomenon
 ## Sources
 
 - [Peter Steinberger: Just One More Prompt](https://steipete.me/posts/2025/just-one-more-prompt) — Primary source, Claude Code Anonymous London talk

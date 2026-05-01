@@ -60,11 +60,8 @@ Proposed a **selection theorem for agent-like structures** based on resource con
 ## Related Entities
 
 - [[concepts/causal-backbone-conjecture]] — Primary theoretical contribution
--  — Research program context
--  — Selection Theorems program originator
-- [[gary-marcus]] — Shared skepticism of pure scaling approaches
+-  — Research program context-  — Selection Theorems program originator- [[gary-marcus]] — Shared skepticism of pure scaling approaches
 -  — Related filtering concepts
-
 ## Sources
 
 - [LessWrong Profile](https://www.lesswrong.com/users/tailcalled)

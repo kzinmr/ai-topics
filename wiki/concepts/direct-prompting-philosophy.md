@@ -120,8 +120,7 @@ The combination creates a development rhythm measured in **minutes, not hours**.
 
 ## Related Concepts
 
--  — The broader methodology this serves
-- [[concepts/claude-code-best-practices]] — Practical implementation patterns
+-  — The broader methodology this serves- [[concepts/claude-code-best-practices]] — Practical implementation patterns
 - [[concepts/cli-over-mcp-pattern]] — Why minimal tooling pairs with direct prompting
 - [[concepts/inference-speed-development]] — How this enables rapid iteration
 - [[concepts/context-window-management]] — Why short prompts preserve context

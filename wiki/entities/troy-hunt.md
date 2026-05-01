@@ -173,8 +173,7 @@ His teaching philosophy is **offensive-first**: understand how attacks work befo
 - [[concepts/breach-disclosure]] — His framework for how organizations should respond to breaches
 - [[concepts/developer-security]] — His educational mission through Pluralsight courses
 - [[concepts/gdpr]] — The legal framework informing his sensitive breach classification
--  — HIBP's password breach search service
--  — His pragmatic approach to integrating autonomous tools
+-  — HIBP's password breach search service-  — His pragmatic approach to integrating autonomous tools
 -  — His operational philosophy of public accountability
 
 ## Influence Metrics

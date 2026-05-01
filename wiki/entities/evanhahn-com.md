@@ -133,7 +133,6 @@ In his "[Programming Beliefs as of July 2024](https://evanhahn.com/programming-b
 -  — Maintaining widely-depended-upon packages
 -  — Nonprofit publisher software where Evan works
 -  — human.json and web-native identity systems
-
 ## Sources
 
 - [Evan Hahn's Blog](https://evanhahn.com) (2011–present)

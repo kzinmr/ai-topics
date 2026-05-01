@@ -112,5 +112,4 @@ ML engineering (quantization, sharding, containers), infrastructure management, 
 
 ## Sources
 
--  — Spheron & Introl inference economics analysis
-- Sebastian Raschka, "A Visual Guide to Attention Variants in Modern LLMs" (Ahead of AI)
+-  — Spheron & Introl inference economics analysis- Sebastian Raschka, "A Visual Guide to Attention Variants in Modern LLMs" (Ahead of AI)

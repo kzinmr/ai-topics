@@ -124,8 +124,7 @@ Active engagement with the local/open-source LLM community through AMAs, discuss
 - [[concepts/mixture-of-experts]] — His research focus area
 - [[concepts/scaling-laws]] — Compute-optimal training research
 - [[concepts/fineweb]] — Training dataset he helped curate
--  — His training philosophy
--  — Community he actively participates in
+-  — His training philosophy-  — Community he actively participates in
 -  — Emerging training methodology he follows
 
 ## Sources

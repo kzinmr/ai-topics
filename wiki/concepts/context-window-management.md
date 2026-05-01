@@ -257,8 +257,7 @@ Before ending a session:
 - [[concepts/claude-code-best-practices]] — User-facing patterns that depend on context management
 - [[concepts/claude-code-source-patterns]] — Internal Anthropic patterns for context handling
 - [[concepts/inference-speed-development]] — Why fast iteration requires clean contexts
--  — The methodology this supports
-- [[concepts/ai-coding-reliability]] — How context drift leads to bugs
+-  — The methodology this supports- [[concepts/ai-coding-reliability]] — How context drift leads to bugs
 
 ## Sources
 

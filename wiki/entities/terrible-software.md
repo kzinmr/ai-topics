@@ -190,8 +190,7 @@ The blog uses WordPress with email subscription functionality and is distributed
 - [[concepts/engineering-management]] — Leading teams, hands-on management, coding as a manager
 - [[concepts/career-development]] — Senior skills, promotion strategies, communication
 - [[concepts/ai-and-software-engineering]] — Practical impact of AI on the profession
--  — Communication patterns, complexity bias
--  — Setting standards, building trust, leading by example
+-  — Communication patterns, complexity bias-  — Setting standards, building trust, leading by example
 -  — The undervalued skill of keeping things simple
 
 ## Influence

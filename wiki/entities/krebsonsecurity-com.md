@@ -119,8 +119,7 @@ His coverage of the Kimwolf story revealed how botnet operators were tunneling t
 - [[concepts/ai-agent-security]] — OpenClaw, prompt injection, and the lethal trifecta
 - [[concepts/phishing]] — Evolution from static pages to real-time proxy attacks (Starkiller)
 - [[concepts/cybercrime-economics]] — Follow-the-money journalism approach
--  — AI coding assistant compromises and dependency chains
--  — Krebs's own experience being targeted and the broader botnet threat
+-  — AI coding assistant compromises and dependency chains-  — Krebs's own experience being targeted and the broader botnet threat
 -  — APT28/Forest Blizzard, Iran-linked operations
 
 ## Influence Metrics

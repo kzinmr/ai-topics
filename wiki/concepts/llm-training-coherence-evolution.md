@@ -96,7 +96,6 @@ These findings have direct implications for [[concepts/ai-coding-reliability]]:
 - [[concepts/ai-coding-reliability]] — Why review and verification remain essential
 - [[concepts/ai-agent-traps]] — How coherence illusions create agent failures
 -  — Broader IFT patterns and techniques
-
 ## Sources
 - [Giles Thomas: How an LLM becomes more coherent as we train it](https://www.gilesthomas.com/2026/04/how-an-llm-becomes-more-coherent-over-training) — Empirical coherence analysis
 - [Giles Thomas: Interventions: updated IFT results](https://www.gilesthomas.com/2026/04/llm-from-scratch-32l-interventions-instruction-fine-tuning-tests) — Updated usefulness-focused IFT evaluation

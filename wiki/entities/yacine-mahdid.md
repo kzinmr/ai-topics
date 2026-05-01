@@ -112,9 +112,7 @@ Mahdid's recent contributions to tscircuit/tscircuit-autorouter (open-source PCB
 - [[concepts/llm.nvim]] — No-frills LLM-assisted programming (24 stars)
 - [[concepts/ai-assisted-development]] — The broader category of tools Mahdid contributes to
 -  — tscircuit and dingcad projects
--  — Mahdid's research background at McGill
--  — The philosophy underlying talk and dingcad
-
+-  — Mahdid's research background at McGill-  — The philosophy underlying talk and dingcad
 ## Influence Metrics
 
 - dingllm.nvim: 865+ GitHub stars, widely used Neovim LLM integration

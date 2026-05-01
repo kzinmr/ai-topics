@@ -171,9 +171,7 @@ But this transparency strengthens rather than weakens his historical work. By ac
 - [[concepts/interactive-fiction]] — The medium Maher has spent two decades documenting and preserving
 - [[concepts/infocom]] — The company whose legacy Maher has extensively chronicled
 - [[concepts/sierra-online]] — The company Maher has written about in unprecedented depth
--  — Infocom's virtual machine, foundational technology for IF
--  — The annual competition that organizes the modern IF community
--  — Maher's broader project of documenting and archiving gaming history
+-  — Infocom's virtual machine, foundational technology for IF-  — The annual competition that organizes the modern IF community-  — Maher's broader project of documenting and archiving gaming history
 
 ## Sources
 

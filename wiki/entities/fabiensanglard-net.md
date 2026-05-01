@@ -91,8 +91,7 @@ This reflects a core belief: **you can't truly understand historical software wi
 - [[john-carmack]] — Engine architect whose designs Fabien analyzes in depth
 - [[concepts/michael-abrash]] — Graphics programmer who wrote Quake's ASM optimizations
 -  — How limited resources drive creative engineering
--  — Fabien's anti-bloat philosophy
--  — Using diagrams and drawings to explain complex systems
+-  — Fabien's anti-bloat philosophy-  — Using diagrams and drawings to explain complex systems
 
 ## Sources
 

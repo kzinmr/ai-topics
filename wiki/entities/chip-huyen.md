@@ -187,9 +187,7 @@ In a widely-discussed LinkedIn post (referenced in Lenny's Podcast), Huyen ident
 - [[concepts/data-engineering-for-ml]] — Pipelines, labeling, weak supervision, and dataset curation
 - [[concepts/stanford-cs329s]] — Machine Learning Systems Design course
 -  — Weak supervision and data labeling platform
--  — ML framework for training and deploying AI models
--  — Real-time ML production pipeline startup
-
+-  — ML framework for training and deploying AI models-  — Real-time ML production pipeline startup
 ---
 
 ## Influence

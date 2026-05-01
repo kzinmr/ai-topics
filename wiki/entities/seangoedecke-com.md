@@ -146,9 +146,7 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 - [[concepts/software-engineering]] — Career progression, system design, tech industry dynamics
 - [[concepts/ai-sycophancy]] — AI models agreeing with users even when wrong
 -  — Impact of interest rates on engineering hiring
--  — Practical architecture, not interview prep
--  — Code review, team dynamics, leadership
-
+-  — Practical architecture, not interview prep-  — Code review, team dynamics, leadership
 ## Influence
 
 - Appeared on **The Pragmatic Engineer Podcast** (Gergely Orosz's show), signaling recognition by the broader tech writing community

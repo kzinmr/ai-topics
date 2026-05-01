@@ -217,8 +217,7 @@ This aligns with the industry-wide [[concepts/inference#the-inference-inflection
 - [[ilya-sutskever]] — OpenAI co-founder; Q* project (related to reasoning)
 - [[sam-altman]] — OpenAI CEO
 -  — Brown's theoretical foundation
--  — o1/o3 models represent this paradigm
--  — CICERO and Pluribus
+-  — o1/o3 models represent this paradigm-  — CICERO and Pluribus
 
 ## Sources
 

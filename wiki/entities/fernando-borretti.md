@@ -213,7 +213,6 @@ His blog is structured around **projects, articles, and fiction** — reflecting
 -  — SM-2 algorithm, learning science, productivity
 -  — Ontologies, logic, information management
 -  — Memory safety, resource management, capability-based security
-
 ## Podcasts & Media
 
 - **Func Prog Podcast #6** — Discussing Austral and functional programming

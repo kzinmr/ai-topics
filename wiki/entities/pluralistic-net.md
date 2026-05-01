@@ -154,13 +154,11 @@ His **Memex Method** — maintaining 50,000+ public notes in a searchable databa
 - [[concepts/chokepoint-capitalism]] — Intermediaries as unavoidable bottlenecks
 - [[concepts/right-to-repair]] — Anti-circumvention law's impact on device ownership
 - [[concepts/posse-pattern]] — Publish on Own Site, Syndicate Everywhere
--  — Public note-taking as knowledge creation
-- [[ed-zitron-s-where-s-your-ed-at]] — Another critical tech-policy voice
+-  — Public note-taking as knowledge creation- [[ed-zitron-s-where-s-your-ed-at]] — Another critical tech-policy voice
 -  — AIドゥーマー議論のパスカルの賭え framing
 - [[concepts/ai-bubble-economics]] — AI投資バブルと経済リスク
 -  — 脱・米国中心インターネット構想
 -  — Electronic Frontier Foundation, where Doctorow is a special advisor
-
 ## Sources
 
 - [Enshittification: Why Everything Suddenly Got Worse and What to Do About It](https://us.macmillan.com/books/9780374608347/enshittification) (FSG, Oct 2025)

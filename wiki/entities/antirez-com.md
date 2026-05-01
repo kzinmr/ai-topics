@@ -140,8 +140,7 @@ Sanfilippo crafts his own data structures (SDS for strings, Rax for radix trees)
 - [[concepts/ai-assisted-development]] — His nuanced position on LLMs as programming partners
 - [[concepts/open-source-licensing]] — His pragmatic view of sustainability and community
 -  — SDS, Rax, and the philosophy of building from first principles
--  — Using documentation as an analytical tool
--  — His distinction between passive and active AI-assisted coding
+-  — Using documentation as an analytical tool-  — His distinction between passive and active AI-assisted coding
 
 ## Influence Metrics
 

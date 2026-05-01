@@ -61,7 +61,6 @@ sources:
 - [[concepts/context-window-management]] — 圧縮の上位概念（Simon Willisonの戦略的管理）
 - [[concepts/harness-engineering/system-architecture/agent-loop-orchestration]] — 圧縮が必要になるコンテキスト累積の発生源
 -  — 圧縮を実装する基盤API
-
 ## 参照
 
 - [OpenAI: Equipping the Responses API with a computer environment](https://openai.com/index/equip-responses-api-computer-environment/)

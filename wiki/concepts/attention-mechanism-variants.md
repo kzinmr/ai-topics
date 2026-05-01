@@ -114,6 +114,5 @@ These attention variants directly impact [[concepts/context-engineering]] becaus
 ## Sources
 
 - Sebastian Raschka, "A Visual Guide to Attention Variants in Modern LLMs" (Ahead of AI, 2026)
--  — Attention mechanisms analysis
-- Anthropic Engineering Blog, "Effective context engineering for AI agents"
+-  — Attention mechanisms analysis- Anthropic Engineering Blog, "Effective context engineering for AI agents"
 - Karpathy, "Software 2.0" and context engineering definition (X/Twitter, June 2025)

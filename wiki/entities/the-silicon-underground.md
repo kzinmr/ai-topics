@@ -124,7 +124,6 @@ Farquhar treats these companies with the same seriousness as Intel and Microsoft
 - [[tedium-the-dull-side-of-the-internet]] — Ernie Smith's newsletter; both cover forgotten technology stories with scholarly rigor
 - [[bogdanthegeek-s-blog]] — Bogdan Ionescu's blog; shares Farquhar's hands-on approach to retro/embedded hardware
 -  — the broader community Farquhar contributes to
-
 ## Sources
 
 - The Silicon Underground: https://dfarq.homeip.net

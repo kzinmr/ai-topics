@@ -101,7 +101,6 @@ MacIverのClaude Code実践レポート（2026-04）：
 - [[drmaciver]] — Hypothesis作者、Antithesis Senior Engineer
 - [[concepts/mismanaged-geniuses-hypothesis]] — Python PBTライブラリ
 -  — 言語横断PBTプロトコル
-
 ## Sources
 
 - [Property-Based Testing with Claude](https://red.anthropic.com/2026/property-based-testing/) — Anthropic Research

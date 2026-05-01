@@ -126,8 +126,7 @@ The nature of software has changed. Reimplementations under different licenses a
 
 ## Related Concepts
 
--  — Using AI agents as collaborative development partners
-- [[concepts/harness-engineering]] — Building systems and constraints around agents for autonomous productivity
+-  — Using AI agents as collaborative development partners- [[concepts/harness-engineering]] — Building systems and constraints around agents for autonomous productivity
 -  — Human-guided AI development with active steering
 - [[concepts/harness-engineering/agentic-workflows/vibe-coding]] — Passive AI code generation without deep involvement
 - [[concepts/open-source-ai-destruction]] — The countervailing concern about AI's impact on open source sustainability

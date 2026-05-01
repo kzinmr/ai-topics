@@ -152,7 +152,6 @@ This vulnerability pattern affects many local AI development tools that listen o
 - [[concepts/agent-sandboxing]] — Isolation technologies for safe agent execution
 - [[concepts/anthropic-managed-agents]] — Managed agent services and their security approaches
 -  — The practice of directing AI agents in software development
-
 ## Sources
 
 - [Reddit: "Slingshot: A new CORS heist"](https://www.reddit.com/r/AI_Agents/comments/1lty0vz/slingshot_a_new_cors_heist/) (2026)

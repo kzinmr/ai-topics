@@ -177,8 +177,7 @@ From the GoldFinch abstract:
 - [[concepts/jxbz]] — Jeremy Bernstein, speedrun contributor (Newton-Schulz iteration)
 - [[concepts/bozavlado]] — Speedrun contributor
 - [[concepts/brendanh0gan]] — Speedrun contributor (U-net, 2x lr record)
--  — Speedrun contributor
--  — Speedrun contributor (Muon improvements)
+-  — Speedrun contributor-  — Speedrun contributor (Muon improvements)
 -  — Speedrun contributor (Muon improvements)
 
 ## Sources

@@ -195,11 +195,9 @@ Graham's recent work reflects the transition from a **software-eats-the-world** 
 - [[concepts/superlinear-returns]] — Graham's framework for understanding outsized outcomes
 - [[concepts/founder-mode]] — Anti-managerial thesis for startup leadership
 - [[concepts/the-brand-age]] — Identity as competitive moat in commoditized markets
--  — The cognitive trait that enables breakthrough work
--  — Following interest over strategic calculation
+-  — The cognitive trait that enables breakthrough work-  — Following interest over strategic calculation
 - [[concepts/harness-engineering]] — Systems thinking approach to preventing recurring failures (Aaron Swartz connection)
 -  — Agent-first development workflows
-
 ### Influences and Connections
 
 - **Aaron Swartz:** Created the definitive RSS feed for PG's essays. Swartz's systems thinking approach (fix the machine, not the person; mistake logging; Toyota's Five Whys) complements Graham's independent-mindedness thesis.

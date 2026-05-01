@@ -155,9 +155,7 @@ Personal Superintelligence
 ## 関連エンティティ
 
 - [[meta]] — Personal Superintelligence提唱
--  — Meta CEO、ビジョン策定
--  — Meta Superintelligence Labs責任者
-- [[peter-steinberger]] — OpenClaw創設者
+-  — Meta CEO、ビジョン策定-  — Meta Superintelligence Labs責任者- [[peter-steinberger]] — OpenClaw創設者
 - [[shlok-khemani]] — パーソナルAIメモリの研究者
 - [[sero]] — Freedom Tech / ローカルAIインフラ
 - [[mario-zechner]] — ローカルLLMエンジニアリング

@@ -235,7 +235,6 @@ Gary Marcus has been one of the most consistent critics of AI economics, arguing
 - [[concepts/ai-coding-reliability]] — Whether AI-generated code delivers real productivity or creates technical debt
 - [[concepts/cognitive-cost-of-agents]] — The hidden organizational costs of delegating work to AI
 -  — The promise vs. reality of AI-powered software development
-
 ## Sources
 
 - [Edward Zitron: How Much Of The AI Bubble Is Real?](https://www.wheresyoured.at/premium-how-much-of-the-ai-bubble-is-real/) (Mar 2026)

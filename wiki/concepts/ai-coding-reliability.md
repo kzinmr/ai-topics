@@ -247,8 +247,7 @@ This creates a **vulnerability compounding effect**: more code → more review b
 
 ## Related Concepts
 
--  — The shift from writing code to directing AI agents, and the reliability implications
-- [[concepts/cognitive-cost-of-agents]] — The hidden cost of developers losing deep understanding of AI-generated code
+-  — The shift from writing code to directing AI agents, and the reliability implications- [[concepts/cognitive-cost-of-agents]] — The hidden cost of developers losing deep understanding of AI-generated code
 - [[concepts/claude-mythos-glasswing]] — When AI capabilities exceed human review capacity, restricted access becomes necessary
 - [[concepts/ai-bubble-economics]] — The economic incentives driving AI adoption despite reliability concerns
 

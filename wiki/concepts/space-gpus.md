@@ -155,7 +155,6 @@ Most experts consider this **optimistic**. Brandon Lucia (Carnegie Mellon) calls
 - [[concepts/compute-scaling-bottlenecks]] — The Earth-side constraints driving the search for alternative compute locations
 - [[dylan-patel]] — SemiAnalysis coverage of the semiconductor supply chain and compute economics
 -  — The broader landscape of AI compute infrastructure
-
 ## Sources
 
 - [NPR: Will data centers in space work? Elon Musk says yes](https://www.npr.org/2026/04/03/nx-s1-5718416/ai-data-centers-in-space-spacex-elon-musk) (April 2026)

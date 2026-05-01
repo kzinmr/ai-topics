@@ -91,10 +91,7 @@ Tatham's series on aperiodic tilings (five parts and counting) and his essay on 
 
 - [[concepts/unix-philosophy]] — Small tools, clear interfaces, composability
 - [[concepts/code-review]] — Social dynamics of reviewing code
--  — Using Git without GitHub/GitLab
--  — Distributed version control system
--  — Building tools for developers
-- [[armin-ronacher]] — Another free-software author with similar philosophy
+-  — Using Git without GitHub/GitLab-  — Distributed version control system-  — Building tools for developers- [[armin-ronacher]] — Another free-software author with similar philosophy
 
 ## Sources
 

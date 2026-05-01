@@ -188,10 +188,8 @@ Hinton has mentored many of the leading figures in modern AI:
 - [[concepts/yoshua-bengio]] — Turing Award co-recipient; deep learning pioneer
 - [[yann-lecun]] — Turing Award co-recipient; CNN pioneer
 - [[google-tpu]] — Former employer (2013–2023)
--  — Current affiliation
--  — Hinton's foundational field
--  — Hinton's most influential algorithm
-- [[concepts/ai-safety]] — Hinton's current advocacy focus
+-  — Current affiliation-  — Hinton's foundational field
+-  — Hinton's most influential algorithm- [[concepts/ai-safety]] — Hinton's current advocacy focus
 
 ## Sources
 

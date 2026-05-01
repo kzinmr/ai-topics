@@ -135,9 +135,7 @@ He explicitly states: *"Don't feel like you have to trade me something if you on
 - [[john-d-cook-applied-mathematics-consulting]] — Applied mathematician sharing interest in formal methods and AI reliability
 -  — Temporal Logic of Actions, formal specification language by Leslie Lamport
 -  — Testing general properties rather than specific examples
--  — Cognitive and operational costs in software development
--  — Framework for preventing production incidents
-
+-  — Cognitive and operational costs in software development-  — Framework for preventing production incidents
 ## Sources
 
 - [Hillel Wayne's Blog](https://hillelwayne.com) (2017–present)

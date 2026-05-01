@@ -126,10 +126,7 @@ This approach makes his series valuable for both learning deep learning fundamen
 ## Related
 
 - [[concepts/llm-training-fundamentals]] — Core concepts of training language models
--  — Technique for simulating large batch sizes
--  — DDP and multi-GPU training patterns
--  — Running LLM training on consumer hardware
-- [[geohot-github-io]] — Another advocate for accessible, minimal deep learning (tinygrad)
+-  — Technique for simulating large batch sizes-  — DDP and multi-GPU training patterns-  — Running LLM training on consumer hardware- [[geohot-github-io]] — Another advocate for accessible, minimal deep learning (tinygrad)
 
 ## Sources
 

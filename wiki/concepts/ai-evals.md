@@ -152,7 +152,6 @@ A **trace** is the complete record of all actions, messages, tool calls, and dat
 - [[concepts/eval-tools-comparison]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI
 - [[concepts/evals-skills]] — Evals skills for coding agents
 -  — PBT methodology applied to LLM evaluation (MacIver)
-
 ## Related People
 
 - [[drmaciver]] — Created `foundational-llm-evals` applying property-based testing to LLM evaluation

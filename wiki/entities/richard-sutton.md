@@ -133,7 +133,6 @@ Sutton emphasizes mathematical foundations and empirical validation over theoret
 - [[concepts/chatgpt-memory-bitter-lesson]] — Sutton's most influential essay
 -  — Sutton's long-term research goal
 -  — Sutton's current industry affiliation
-
 ## Sources
 
 - Grokipedia: Richard Sutton

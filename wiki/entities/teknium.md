@@ -170,8 +170,7 @@ Nous Research's decentralized training infrastructure (DiStrO) and Psyche Networ
 - [[concepts/post-training]] — His primary area of expertise
 - [[nathan-lambert]] — Fellow post-training researcher, RLHF book author
 -  — DataForge, GPTeacher, custom pipelines
--  — Atropos RL environments
-- [[concepts/harness-engineering]] — CLI/terminal-use harnessing philosophy
+-  — Atropos RL environments- [[concepts/harness-engineering]] — CLI/terminal-use harnessing philosophy
 -  — Nous Research ethos, DiStrO, Psyche Network
 - [[concepts/open-source-ai-destruction]] — Advocate for open-weight models and transparent development
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — Direct Preference Optimization for Hermes 3 alignment
