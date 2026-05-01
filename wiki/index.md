@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-01 | Total pages: 747 | Full entries: 716 | Stubs: 615
+> Last updated: 2026-05-01 | Total pages: 749 | Full entries: 718 | Stubs: 615
 
-## Entities (361 pages)
+## Entities (362 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -373,6 +373,7 @@
 - [[entities/karpathy-projects]] — Andrej Karpathy projects and code
 - [[entities/karpathy-research]] — Andrej Karpathy research contributions
 - [[entities/karpathy-writings]] — Andrej Karpathy writings and blog posts
+- [[entities/knowledgator]] — Open-Source ML research company focused on encoder-based models for information extraction (GLiNER, GLiClass, GLiREL)
 - [[entities/langchain]] — LangChain — framework for building applications with LLMs via composable chains
 - [[entities/llamaindex]] — LlamaIndex — data framework for connecting custom data sources to LLMs
 | - [[entities/mitchell-hashimoto-ghostty]] — Mitchell Hashimoto on Ghostty terminal emulator
@@ -397,7 +398,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (399 pages)
+## Concepts (400 pages)
 
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
@@ -574,6 +575,7 @@
 - [[concepts/generic-agent-self-evolving]] — **GenericAgent (GA)** is a self-evolving LLM agent system from Fudan University (arXiv:2604.17091, April 2026) built around **contextual information density maximization** — the principle that long...
 |- [[concepts/generative-app-evolution]] — The evolution trajectory of AI applications from generative UI (stateless, single-turn) to generative apps (stateful, multi-turn with persistence). Maps the "generative staircase" and the FCIS (Functional Core / Imperative Shell) pattern for AI-era architecture.
 |- [[concepts/gepa]] — GEPAはDSPyに統合された遺伝的アルゴリズムベースのプロンプト最適化手法。Pareto最適化により品質とコストを同時に最適化し、GRPOより35倍少ないサンプルで6%高い性能を達成。ICLR 2026 Oral。
+- [[concepts/gliclass]] — Encoder-only zero-shot text classification model family (Knowledgator). Up to 50× faster than Cross-Encoders. Three sub-families: V3 (general), Instruct (instruction-following), Multilang (20 languages). Apache-2.0.
 - [[concepts/github-copilot-billing]] — In April 2026, Microsoft announced a major shift in GitHub Copilot's pricing model from **requests-based billing** to **token-based billing**, alongside tightening rate limits across all tiers. Thi...
 - [[concepts/gnu-ai-reimplementations]] — **GNU AI Reimplementations** refers to the concept — articulated primarily by Salvatore Sanfilippo (antirez), creator of Redis — that AI coding agents are enabling a new wave of clean-room software...
 - [[concepts/gold-diff-distillation]] — コーディング製品企業が開発した新しいRLトレーニング手法。ユーザーの最終的な「望ましい状態」をRLターゲットとして利用する。
