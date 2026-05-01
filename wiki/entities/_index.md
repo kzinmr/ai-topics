@@ -174,7 +174,7 @@
    174|- [[mistral-voxtral-tts]] — Mistral AI's open-weights text-to-speech model, announced April 2026. Combines autoregressive semantic token generation with flow-matching acoustic token synthesis.
    175|- [[mitchell-hashimoto]] — Mitchell Hashimoto is one of the most influential infrastructure engineers of the modern era. As co-founder of HashiCorp (with Armon Dadgar), he built Terraform (downloaded 100M+ times), Vagrant, Pack
    176|- [[mitchellh-com]] — Mitchell is a software craftsman who approaches AI with a pragmatic, iterative methodology. Unlike hype-driven adopters, he forces himself through an initial "friction phase" to build first-principles
-   177|- [[mitsuhiko]] — Armin Ronacher is one of the most influential Python developers of his generation. He created Flask (the most popular Python web microframework), Jinja2 (the dominant Python template engine), and Werk
+   177|- [[armin-ronacher]] — Armin Ronacher is one of the most influential Python developers of his generation. He created Flask (the most popular Python web microframework), Jinja2 (the dominant Python template engine), and Werk
    178|- [[muse-spark]] — Meta's latest language model, announced April 2026.
    179|- [[mustafa-suleyman]] — Mustafa Suleyman is the CEO of Microsoft AI and a three-time founder — DeepMind, Inflection AI, and now leading Microsoft's consumer AI division. His trajectory from working-class North London to $4B 
    180|- [[nader-dabit]] — Nader Dabit is a developer advocate turned AI agent growth engineer who joined Cognition AI in February 2026 to help scale Devin's enterprise adoption. Before Cognition, he spent over a decade buildin

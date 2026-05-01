@@ -155,7 +155,7 @@ Hynek's blog at [hynek.me/articles](https://hynek.me/articles) covers Python dev
 ## Related People
 
 - [[samuel-colvin]] — Fellow Python ecosystem maintainer (Pydantic, Pydantic AI, Monty)
-- [[mitsuhiko]] — Python/Rust developer (Flask, Sentry, Jinja2) with complementary focus on web frameworks
+- [[armin-ronacher]] — Python/Rust developer (Flask, Sentry, Jinja2) with complementary focus on web frameworks
 - [[concepts/sebastien-ramirez]] — FastAPI creator, fellow OSS maintainer dealing with AI-generated PR challenges
 -  — Python's creator; Hynek's attrs work directly influenced PEP 557 (dataclasses)
 -  — attrs co-conspirator from the original IRC session; Twisted project leader

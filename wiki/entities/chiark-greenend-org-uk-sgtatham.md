@@ -94,7 +94,7 @@ Tatham's series on aperiodic tilings (five parts and counting) and his essay on 
 -  — Using Git without GitHub/GitLab
 -  — Distributed version control system
 -  — Building tools for developers
-- [[mitsuhiko]] — Another free-software author with similar philosophy
+- [[armin-ronacher]] — Another free-software author with similar philosophy
 
 ## Sources
 

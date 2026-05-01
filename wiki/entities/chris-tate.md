@@ -122,7 +122,7 @@ He occasionally shares **technical threads** explaining the reasoning behind his
 -  — Simon Willison, similar focus on developer tools and AI
 - [[antirez-com]] — Salvatore Sanfilippo, shared philosophy of building for developers
 - [[geoffreylitt-com]] — Geoffrey Litt, small tools and local-first philosophy
-- [[mitsuhiko]] — Armin Ronacher (Flask), developer tooling focus
+- [[armin-ronacher]] — Armin Ronacher (Flask), developer tooling focus
 -  — The paradigm Tate pioneered with json-render
 -  — agent-browser's domain
 -  — Tate's employer and ecosystem
