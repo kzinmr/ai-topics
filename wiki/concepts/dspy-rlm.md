@@ -293,6 +293,144 @@ SUBMITで最終回答                       print(stdout)で終了
 
 真の統合（RLM内でPTCツールを呼び出し→結果をさらに再帰分析）は、現状では**手動構成が必要**であり、フレームワークレベルでは未対応。ただし[[concepts/pydantic-ai-harness]]（Monty + CodeMode）は両方を内包できるプラットフォームとして最も統合に近い。
 
+### 第一原理からの再検討: PTC統合のための環境拡張設計
+
+上の分析は「DSPy.RLM実装における現状」としては正確だが、RLM論文の**純粋なアーキテクチャ**から見ると、PTC統合はむしろ自然な拡張である。
+
+#### RLM論文の環境抽象化
+
+RLM論文が定義する環境は、以下の3要素からなる：
+
+```
+Environment = {
+  REPL: Python実行環境（状態永続、sandboxed builtins）
+  context変数: 巨大な入力データ
+  llm_query(): 再帰的サブLM呼び出し
+  SUBMIT(): 最終回答
+}
+```
+
+この環境は **「モデルが記号的に操作できる対象の集合」** として設計されている。論文の強調：
+
+> *"The key insight is that long prompts should not be fed into the neural network directly but should instead be treated as **part of the environment** that the LLM can **symbolically interact with**."*
+
+論文で「環境の部品」として想定されているのは`context`変数だけだが、**この抽象化は任意の「記号的操作可能な対象」に拡張可能**である。
+
+#### Tool-Augmented Environment Design
+
+PTCツールをRLM環境の第一級市民として統合する設計：
+
+```
+Tool-Augmented Environment = {
+  REPL: Python実行環境（sandboxed, async対応）
+  context変数: 入力データ（RLM由来）
+  tools: PTCツール群（async関数として公開） ← NEW
+  llm_query(): 再帰的サブLM呼び出し（RLM由来）
+  SUBMIT(): 最終回答（RLM由来）
+}
+```
+
+RLMのループは変わらないが、コードが書ける対象が増える：
+
+```python
+# 純粋RLMのコード（論文の例）
+for i, section in enumerate(context):
+    buffer = llm_query(f"Section {i}: {section}")
+    print(f"Tracked: {buffer}")
+
+# Tool-Augmented RLMのコード（同じループ構造）
+for i, section in enumerate(context):
+    # RLM: コードで文脈を探索
+    relevant = [s for s in section if "budget" in s.lower()]
+    # PTC: コードで外部ツールを呼び出し
+    financial_data = await query_financial_api({"ids": extract_ids(relevant)})
+    # RLM: 再帰分析
+    analysis = llm_query(f"Analyze: {relevant}, {financial_data}")
+    print(f"Tracked: {analysis}")
+```
+
+#### なぜRLMの環境抽象化がPTCと相性が良いか
+
+| RLM環境の特性 | PTC統合との整合性 |
+|--------------|------------------|
+| **REPLで任意のPythonコード実行** | PTCツールも`await tool()`で呼べる — コードの延長線上 |
+| **結果はREPLの変数空間に留まる** | PTCツール結果もモデルコンテキストに入らず、変数空間で保持 |
+| **sandboxed builtins** | PTCの`allowed_callers`はsandboxの一種 |
+| **llm_queryで再帰分析** | PTCツール結果をllm_queryの入力にできる |
+| **SUBMITで最終回答** | PTCツール結果を含む最終回答を提出 |
+
+#### 3つの統合アーキテクチャ
+
+論文の環境抽象化を尊重した場合、3つのアーキテクチャが考えられる：
+
+##### 案A: PTC in RLM（RLMが外側、PTCが内側）★ 推奨
+
+```
+RLM Root（環境にcontext + tools + llm_query）
+  └── モデルがPythonコードを書く
+        ├── context[start:end]  ← RLM: 文脈探索
+        ├── await tool_a()       ← PTC: ツール呼び出し
+        └── llm_query(...)       ← RLM: 再帰分析
+  └── SUBMIT(answer)
+```
+
+**利点**: RLMのループ構造（探索→分析→集約）を維持したまま、PTCツールを追加。環境の一貫性が高い。
+
+##### 案B: RLM as PTC Tool（PTCが外側、RLMがツールの一つ）
+
+```
+PTC Agent
+  ├── await search_db(query)
+  ├── await rlm_analyze(context, sub_query)  ← RLMを「ツール」として呼ぶ
+  ├── await fetch_details(ids)
+  └── submit(answer)
+```
+
+**利点**: AnthropicのPTC APIに直接載せられる。ただしRLMの再帰的探索が「外部ツール呼び出し」に埋没し、文脈探索の自然さが失われる。
+
+##### 案C: Dual Environment（環境の二層化）
+
+```
+Layer 1: PTC Environment（tool orchestration）
+  └── await tool_a(), await tool_b()
+      └── Layer 2: RLM Environment（context decomposition）
+            └── context探索, llm_query(), SUBMIT()
+```
+
+**利点**: 関心の分離。ただし環境の切り替えにオーバーヘッド。
+
+#### 設計上の課題
+
+真の統合には以下の設計判断が必要：
+
+1. **ツール発見**: PTCツールの定義（input_schema）をどうRLM環境に注入するか？
+   - Cloudflare CodeModeの教訓: `search()` + `execute()`の2ツールに圧縮するのが最適
+   - → 環境に`discover_tools(query)` + `call_tool(name, args)`を追加
+
+2. **セキュリティ境界**: `allowed_callers`に相当する制御をどうREPLに課すか？
+   - RLM論文のsandboxed builtinsは「危険な関数を消す」だけ
+   - PTCは「許可されたツールだけを呼べる」というpositive model
+   - → RLMのsandboxに`allowed_callers`相当の許可リストを追加
+
+3. **結果ルーティング**: PTCツールの結果はモデルコンテキストに入れず、REPL変数空間に留める
+   - RLMはすでに`print()`出力だけをモデルに見せている
+   - → PTCツール結果も`print()`されたものだけがモデルコンテキストに入る（自然な拡張）
+
+4. **再帰との相互作用**: PTCツール結果 + 再帰的llm_queryの合成
+   - → `llm_query(tool_result + context_snippet)` で両者を合成可能（REPL変数空間なら自然）
+
+#### まとめ
+
+DSPy.RLMが現在PTCを「陽に取り込んでいない」のは実装の制約であって、**アーキテクチャ上の必然ではない**。RLM論文の環境抽象化は、PTCツールを第一級市民としてホストするよう設計されていると言える。
+
+設計判断としては**案A（PTC in RLM）**が優れている：
+- RLMのループ構造を維持
+- PTCツールを環境の一部として自然に統合
+- Cloudflare CodeModeの`search()+ execute()`パターンを環境層に移植可能
+- pydantic-ai-harness（Monty + CodeMode）がこのアーキテクチャに最も近い実装
+
+実装の最短経路は、RLM環境の`tools`パラメータを「単なるPython関数のリスト」から「async対応・allowed_callers付き・結果自動フィルタリング付きのPTCツールコレクション」に昇格させること。これはDSPy.RLMの変更でも、pydantic-ai-harness上の独立実装でも可能。
+
 ## ステータス・既知問題
 
 | 項目 | ステータス |

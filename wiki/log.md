@@ -138,6 +138,14 @@
 
 ---
 
+## 2026-05-01 — RLM × PTC first-principles re-analysis: architecturally fusible
+
+- Updated [[concepts/dspy-rlm]] — Added "第一原理からの再検討: PTC統合のための環境拡張設計" subsection. RLM論文の環境抽象化（Environment = {REPL, context, llm_query, SUBMIT}）は任意の記号的操作対象に拡張可能であり、PTCツールを第一級市民としてホストする設計が自然であることを論証。3つの統合アーキテクチャ（案A: PTC in RLM★推奨 / 案B: RLM as PTC Tool / 案C: Dual Environment）を提案。4つの設計課題と解決方針を明示。
+- Updated [[concepts/programmatic-tool-calling]] — Rewrote "Relation to RLM" section. Added first-principles compatibility table (REPL, variable space, sandboxed builtins, llm_query all align with PTC). Added recommended architecture diagram (PTC in RLM). Conclusion: DSPy does NOT incorporate PTC, but architectural necessity is different — RLM's environment abstraction is naturally compatible with PTC tools.
+- Source: https://arxiv.org/abs/2512.24601v1 (RLM paper, full reading)
+
+---
+
 ## 2026-05-01 — RLM × PTC analysis: independent paradigms sharing code-execution substrate
 
 - Added [[concepts/dspy-rlm]] section "RLM × Programmatic Tool Calling: 独立した2つのパラダイム" — RLM does NOT explicitly incorporate PTC. They evolved independently solving different problems (context rot vs tool definition bloat) with the same substrate (sandboxed code execution). RLM's `llm_query` is recursive sub-LM calling, not tool calling. RLM's `tools` parameter is architectural freedom (accidental extensibility), not designed integration. 4 specific limitations listed.

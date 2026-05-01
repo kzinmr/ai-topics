@@ -170,20 +170,56 @@ All three converge on the same insight: **LLMs are better at writing code than a
 
 This mechanism enables the Externalized Processing pattern described in [[concepts/agentic-search]]. Cao et al.'s finding that "coding agents are effective long-context processors" is a direct consequence of programmatic tool calling: the model writes code to grep, search, and filter before the results enter the context window.
 
-## Relation to RLM: Same Substrate, Different Problems
+## Relation to RLM: Same Substrate, Different Problems — But Architecturally Fusible
 
-PTCと[[concepts/dspy-rlm|RLM]]は「LLMがコードを書く→サンドボックス実行→結果だけモデルに返る」という基盤を共有するが、**解く問題が異なる独立進化パラダイム**である：
+PTCと[[concepts/dspy-rlm|RLM]]は「LLMがコードを書く→サンドボックス実行→結果だけモデルに返る」という基盤を共有する独立進化パラダイムだが、**第一原理から見るとRLMの環境抽象化はPTCツールを自然にホストできる**。
 
-| 次元 | PTC | RLM |
+### DSPy.RLM実装における現状
+
+| 次元 | PTC | RLM (DSPy実装) |
 |------|-----|-----|
 | **問題** | ツール定義膨張・中間結果ブロート | Context rot（コンテキスト増大による劣化） |
 | **モデルの行動** | コードでツールをasync呼び出し → 結果をフィルタ | コードで文脈を探索 → `llm_query`で再帰分析 |
 | **再帰性** | なし（ツール呼び出しはフラット） | 本質的（`llm_query`がサブLMを起動） |
-| **セキュリティ** | `allowed_callers`で制御 | 汎用`tools`パラメータ（すべてアクセス可） |
+| **`allowed_callers`** | 中核機構 | 概念なし |
+| **`tools`パラメータ** | なし | 任意Python関数（PTC的制御なし） |
 
-詳細な比較は[[concepts/dspy-rlm#RLM × Programmatic Tool Calling: 独立した2つのパラダイム]]を参照。
+### 第一原理から見た統合可能性
 
-**補完関係**: RLMが「何を分析するか」(context decomposition)、PTCが「どう実行するか」(tool orchestration)。真の統合は現状手動構成が必要。
+RLM論文の環境抽象化を尊重した場合、PTC統合はむしろ自然な拡張：
+
+```
+RLM論文の環境:                          Tool-Augmented RLM:
+Environment = {                        Environment = {
+  REPL,                                   REPL,
+  context変数, ← 記号的操作対象のみ        context変数,
+  llm_query(),                            tools(PTC), ← 同じく記号的操作対象
+  SUBMIT()                                llm_query(),
+}                                         SUBMIT()
+                                        }
+```
+
+| RLM環境の特性 | PTC統合との整合性 |
+|--------------|------------------|
+| REPLで任意のPythonコード実行 | PTCツールも`await tool()`で呼べる — コードの延長線上 |
+| 結果はREPL変数空間に留まる | PTCツール結果もモデルコンテキストに入らず変数空間で保持 |
+| sandboxed builtins | PTCの`allowed_callers`もsandboxの一種 |
+| llm_queryで再帰分析 | PTCツール結果をllm_queryの入力にできる |
+
+### 推奨アーキテクチャ: PTC in RLM（案A）
+
+```
+RLM Root（環境にcontext + tools + llm_query）
+  └── モデルがPythonコードを書く
+        ├── context探索          ← RLM
+        ├── await tool_a()        ← PTC
+        └── llm_query(...)        ← RLM再帰分析
+  └── SUBMIT(answer)
+```
+
+詳細な比較・設計判断は[[concepts/dspy-rlm#RLM × Programmatic Tool Calling: 独立した2つのパラダイム]]（第一原理セクション）を参照。
+
+**結論**: DSPy実装はPTCを取り込んでいないが、アーキテクチャ上の必然ではない。RLMの環境抽象化はPTCと高い親和性を持ち、適切な設計（案A）で統合可能。
 
 ## See Also
 
