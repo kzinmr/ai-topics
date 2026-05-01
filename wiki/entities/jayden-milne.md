@@ -80,7 +80,7 @@ In 2025 alone, Milne published 123,382 words across 104 posts. He values blogs a
 
 - [[george-hotz]] — AI infrastructure, open-source ethos, anti-monopoly views
 - [[grant-slatton]] — Technocapital thesis, capital ownership in AI era
-- [[stefano-marlinelli]] — Critical AI infrastructure perspectives, "EnshittifAIcation"
+- [[stefano-marinelli]] — Critical AI infrastructure perspectives, "EnshittifAIcation"
 - [[john-carmack]] — Pragmatic AI tool use, optimization focus
 -  — Personal websites, addressable archives, anti-platform dependency
 -  — Character.AI, Replika, "Little Guys"

@@ -1,8 +1,10 @@
 ---
 title: "Stefano Marinelli"
 tags: [person]
+aliases:
+  - stefano-marlinelli
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-25
 type: entity
 ---
 
