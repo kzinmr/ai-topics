@@ -1,7 +1,7 @@
 ---
 title: "DORA? I barely know her!"
 url: "https://tomrenner.com/posts/dora-i-barely-know-her/"
-fetched_at: 2026-04-30T07:00:58.856502+00:00
+fetched_at: 2026-05-01T07:01:08.194882+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

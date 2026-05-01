@@ -1,7 +1,7 @@
 ---
 title: "Why prediction markets are a sure sign that our civilisation is in decay"
 url: "https://www.joanwestenberg.com/why-prediction-markets-are-a-sure-sign-that-our-civilisation-is-in-decay/"
-fetched_at: 2026-04-30T07:01:56.420217+00:00
+fetched_at: 2026-05-01T07:02:05.732518+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

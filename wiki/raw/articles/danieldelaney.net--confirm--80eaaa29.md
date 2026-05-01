@@ -1,12 +1,12 @@
 ---
-title: "Never Use the Confirm Dialog"
+title: "Never use the confirm dialog"
 url: "https://danieldelaney.net/confirm/"
-fetched_at: 2026-04-30T07:00:42.129246+00:00
+fetched_at: 2026-05-01T07:13:06.446280+00:00
 source: "danieldelaney.net"
 tags: [blog, raw]
 ---
 
-# Never Use the Confirm Dialog
+# Never use the confirm dialog
 
 Source: https://danieldelaney.net/confirm/
 

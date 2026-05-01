@@ -1,7 +1,7 @@
 ---
 title: "How to Get New Ideas"
 url: "http://www.paulgraham.com/getideas.html"
-fetched_at: 2026-04-30T07:01:21.905282+00:00
+fetched_at: 2026-05-01T07:01:32.094003+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

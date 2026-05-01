@@ -1,7 +1,7 @@
 ---
 title: "Symbiosisware"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/symbiosisware/"
-fetched_at: 2026-04-30T07:00:47.677594+00:00
+fetched_at: 2026-05-01T07:00:56.699695+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

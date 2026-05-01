@@ -1,7 +1,7 @@
 ---
 title: "How much of HN is AI?"
 url: "https://lcamtuf.substack.com/p/how-much-of-hn-is-ai"
-fetched_at: 2026-04-30T07:02:01.660570+00:00
+fetched_at: 2026-05-01T07:02:11.764025+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---
@@ -40,3 +40,5 @@ February 19
 (
 “AI is not a coworker, it’s an exoskeleton”
 ). In my opinion, it has a wide range of red flags.
+Update for April 2026:
+The month started with a very high density of AI stories, followed by a week with almost none (red arrow). I wonder if this was a wacky coincidence or a moderation experiment. Either way, we’re now back to the “old” baseline.

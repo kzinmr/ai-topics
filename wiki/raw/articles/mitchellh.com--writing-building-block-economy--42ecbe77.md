@@ -1,7 +1,7 @@
 ---
 title: "The Building Block Economy"
 url: "https://mitchellh.com/writing/building-block-economy"
-fetched_at: 2026-04-30T07:01:53.261920+00:00
+fetched_at: 2026-05-01T07:02:02.727733+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Learning from Founders"
 url: "http://www.paulgraham.com/foundersatwork.html"
-fetched_at: 2026-04-30T07:01:39.324954+00:00
+fetched_at: 2026-05-01T07:01:48.752414+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

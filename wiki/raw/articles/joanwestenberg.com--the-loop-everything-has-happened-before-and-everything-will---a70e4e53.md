@@ -1,7 +1,7 @@
 ---
 title: "The Loop: everything has happened before, and everything will happen again"
 url: "https://www.joanwestenberg.com/the-loop-everything-has-happened-before-and-everything-will-happen-again/"
-fetched_at: 2026-04-30T07:00:44.462844+00:00
+fetched_at: 2026-05-01T07:00:53.711182+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

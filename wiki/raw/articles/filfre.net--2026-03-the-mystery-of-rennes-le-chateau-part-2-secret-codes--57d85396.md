@@ -1,7 +1,7 @@
 ---
 title: "The Mystery of Rennes-le-Château, Part 2: Secret Codes and Hidden Messages"
 url: "https://www.filfre.net/2026/03/the-mystery-of-rennes-le-chateau-part-2-secret-codes-and-hidden-messages/"
-fetched_at: 2026-04-30T07:01:58.970839+00:00
+fetched_at: 2026-05-01T07:02:09.180765+00:00
 source: "filfre.net"
 tags: [blog, raw]
 ---

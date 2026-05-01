@@ -1,7 +1,7 @@
 ---
 title: "What Happened to Palm Pilots? The Rise and Fall of a Classic"
 url: "https://dfarq.homeip.net/what-happened-to-palm-pilots/?utm_source=rss&utm_medium=rss&utm_campaign=what-happened-to-palm-pilots"
-fetched_at: 2026-04-30T07:00:42.306175+00:00
+fetched_at: 2026-05-01T07:13:06.961435+00:00
 source: "dfarq.homeip.net"
 tags: [blog, raw]
 ---

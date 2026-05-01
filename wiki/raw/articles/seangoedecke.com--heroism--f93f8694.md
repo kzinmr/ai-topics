@@ -1,7 +1,7 @@
 ---
 title: "Large tech companies don't need heroes"
 url: "https://seangoedecke.com/heroism/"
-fetched_at: 2026-04-30T07:01:11.053019+00:00
+fetched_at: 2026-05-01T07:01:19.672099+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

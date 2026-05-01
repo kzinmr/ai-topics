@@ -1,7 +1,7 @@
 ---
 title: "Many anti-AI arguments are conservative arguments"
 url: "https://seangoedecke.com/many-anti-ai-arguments-are-conservative/"
-fetched_at: 2026-04-30T07:01:09.658867+00:00
+fetched_at: 2026-05-01T07:01:18.892096+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

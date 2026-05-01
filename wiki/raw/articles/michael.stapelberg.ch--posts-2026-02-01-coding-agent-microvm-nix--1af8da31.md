@@ -1,7 +1,7 @@
 ---
 title: "Coding Agent VMs on NixOS with microvm.nix"
 url: "https://michael.stapelberg.ch/posts/2026-02-01-coding-agent-microvm-nix/"
-fetched_at: 2026-04-30T07:01:04.998478+00:00
+fetched_at: 2026-05-01T07:01:14.576435+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
 ---

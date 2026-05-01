@@ -1,7 +1,7 @@
 ---
 title: "Headless everything for personal AI"
 url: "https://simonwillison.net/2026/Apr/19/headless-everything/#atom-everything"
-fetched_at: 2026-04-30T07:01:12.949167+00:00
+fetched_at: 2026-05-01T07:01:22.421800+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

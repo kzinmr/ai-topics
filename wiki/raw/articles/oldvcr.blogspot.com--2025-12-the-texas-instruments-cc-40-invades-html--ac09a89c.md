@@ -1,7 +1,7 @@
 ---
 title: "The Texas Instruments CC-40 invades Gopherspace (plus TI-74 BASICALC)"
 url: "https://oldvcr.blogspot.com/2025/12/the-texas-instruments-cc-40-invades.html"
-fetched_at: 2026-04-30T07:01:17.367153+00:00
+fetched_at: 2026-05-01T07:01:27.212860+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Going loopy - Matt Godbolt’s blog"
 url: "http://xania.org/202512/08-going-loopy?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-30T07:00:58.405843+00:00
+fetched_at: 2026-05-01T07:01:07.696115+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

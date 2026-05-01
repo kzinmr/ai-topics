@@ -1,7 +1,7 @@
 ---
 title: "A Plan for Spam"
 url: "http://www.paulgraham.com/spam.html"
-fetched_at: 2026-04-30T07:01:46.482204+00:00
+fetched_at: 2026-05-01T07:01:55.777845+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

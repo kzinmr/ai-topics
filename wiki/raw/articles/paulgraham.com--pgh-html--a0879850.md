@@ -1,7 +1,7 @@
 ---
 title: "How to Make Pittsburgh a Startup Hub"
 url: "http://www.paulgraham.com/pgh.html"
-fetched_at: 2026-04-30T07:01:26.692472+00:00
+fetched_at: 2026-05-01T07:01:36.738533+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "On screwing up"
 url: "https://seangoedecke.com/screwing-up/"
-fetched_at: 2026-04-30T07:01:10.631107+00:00
+fetched_at: 2026-05-01T07:01:19.736746+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Integrating Zig and SwiftUI"
 url: "https://mitchellh.com/writing/zig-and-swiftui"
-fetched_at: 2026-04-30T07:01:54.184008+00:00
+fetched_at: 2026-05-01T07:02:03.357435+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

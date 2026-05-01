@@ -1,7 +1,7 @@
 ---
 title: "You can't design software you don't work on"
 url: "https://seangoedecke.com/you-cant-design-software-you-dont-work-on/"
-fetched_at: 2026-04-30T07:01:12.172427+00:00
+fetched_at: 2026-05-01T07:01:21.114626+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

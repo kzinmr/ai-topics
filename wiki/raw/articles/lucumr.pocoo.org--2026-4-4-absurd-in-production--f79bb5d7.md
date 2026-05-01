@@ -1,7 +1,7 @@
 ---
 title: "Absurd In Production"
 url: "https://lucumr.pocoo.org/2026/4/4/absurd-in-production/"
-fetched_at: 2026-04-30T07:01:57.730205+00:00
+fetched_at: 2026-05-01T07:02:07.556979+00:00
 source: "lucumr.pocoo.org"
 tags: [blog, raw]
 ---

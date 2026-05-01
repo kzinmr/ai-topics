@@ -1,7 +1,7 @@
 ---
 title: "Open Social - overreacted"
 url: "https://overreacted.io/open-social/"
-fetched_at: 2026-04-30T07:01:50.753482+00:00
+fetched_at: 2026-05-01T07:02:00.089957+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

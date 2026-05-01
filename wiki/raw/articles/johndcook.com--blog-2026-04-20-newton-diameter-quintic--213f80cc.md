@@ -1,7 +1,7 @@
 ---
 title: "More on Newton’s diameter theorem"
 url: "https://www.johndcook.com/blog/2026/04/20/newton-diameter-quintic/"
-fetched_at: 2026-04-30T07:01:59.905287+00:00
+fetched_at: 2026-05-01T07:02:09.657810+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

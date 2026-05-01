@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/you-can-absolutely-have-an-rss-dependent-website-in-2026/"
-fetched_at: 2026-04-30T07:01:47.880093+00:00
+fetched_at: 2026-05-01T07:01:57.153863+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Multiple URLs in Git Remote"
 url: "https://susam.net/multiple-urls-in-git-remote.html"
-fetched_at: 2026-04-30T07:00:41.954054+00:00
+fetched_at: 2026-05-01T07:13:06.099174+00:00
 source: "susam.net"
 tags: [blog, raw]
 ---

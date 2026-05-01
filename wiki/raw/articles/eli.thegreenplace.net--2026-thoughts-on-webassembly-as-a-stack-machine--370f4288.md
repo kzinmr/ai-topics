@@ -1,7 +1,7 @@
 ---
 title: "Thoughts on WebAssembly as a stack machine"
 url: "https://eli.thegreenplace.net/2026/thoughts-on-webassembly-as-a-stack-machine/"
-fetched_at: 2026-04-30T07:00:41.813037+00:00
+fetched_at: 2026-05-01T07:13:06.252714+00:00
 source: "eli.thegreenplace.net"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Have You Seen the New Excel?"
 url: "https://idiallo.com/blog/have-you-seen-the-new-xl-ai-parody?src=feed"
-fetched_at: 2026-04-30T07:00:41.921084+00:00
+fetched_at: 2026-05-01T07:13:06.211644+00:00
 source: "idiallo.com"
 tags: [blog, raw]
 ---

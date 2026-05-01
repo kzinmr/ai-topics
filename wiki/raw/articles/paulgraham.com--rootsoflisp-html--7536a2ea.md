@@ -1,7 +1,7 @@
 ---
 title: "The Roots of Lisp"
 url: "http://www.paulgraham.com/rootsoflisp.html"
-fetched_at: 2026-04-30T07:01:47.399629+00:00
+fetched_at: 2026-05-01T07:01:56.697800+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

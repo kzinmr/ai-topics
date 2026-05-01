@@ -1,7 +1,7 @@
 ---
 title: "[Updated] Exclusive: Microsoft Moving All GitHub Copilot Subscribers To Token-Based Billing In June"
 url: "https://www.wheresyoured.at/exclusive-microsoft-moving-all-github-copilot-subscribers-to-token-based-billing-in-june/"
-fetched_at: 2026-04-30T07:00:56.481348+00:00
+fetched_at: 2026-05-01T07:01:05.767033+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
 ---

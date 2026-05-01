@@ -1,7 +1,7 @@
 ---
 title: "Zig Builds Are Getting Faster"
 url: "https://mitchellh.com/writing/zig-builds-getting-faster"
-fetched_at: 2026-04-30T07:01:53.583863+00:00
+fetched_at: 2026-05-01T07:02:02.845888+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

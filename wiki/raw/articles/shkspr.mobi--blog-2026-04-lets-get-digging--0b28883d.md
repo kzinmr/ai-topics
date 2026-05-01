@@ -1,7 +1,7 @@
 ---
 title: "Let’s Get Digging! - Terence Eden’s Blog"
 url: "https://shkspr.mobi/blog/2026/04/lets-get-digging/"
-fetched_at: 2026-04-30T07:00:42.225212+00:00
+fetched_at: 2026-05-01T07:13:06.326952+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
 ---

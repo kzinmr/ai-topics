@@ -1,7 +1,7 @@
 ---
 title: "Samsung is increasingly worried about first-ever mobile division loss in RAM crisis, report"
 url: "https://9to5google.com/2026/04/22/samsung-is-increasingly-worried-about-first-ever-mobile-division-loss-in-ram-crisis-report/"
-fetched_at: 2026-04-30T07:00:46.142699+00:00
+fetched_at: 2026-05-01T07:00:55.406131+00:00
 source: "daringfireball.net"
 tags: [blog, raw]
 ---

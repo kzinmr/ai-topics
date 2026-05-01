@@ -1,7 +1,7 @@
 ---
 title: "Hiring is Obsolete"
 url: "http://www.paulgraham.com/hiring.html"
-fetched_at: 2026-04-30T07:01:42.955960+00:00
+fetched_at: 2026-05-01T07:01:52.205847+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

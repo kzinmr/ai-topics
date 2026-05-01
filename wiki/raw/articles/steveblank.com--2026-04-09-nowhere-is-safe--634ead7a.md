@@ -1,7 +1,7 @@
 ---
 title: "Steve Blank Nowhere Is Safe"
 url: "https://steveblank.com/2026/04/09/nowhere-is-safe/"
-fetched_at: 2026-04-30T07:01:02.807188+00:00
+fetched_at: 2026-05-01T07:01:12.199318+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "How Does React Tell a Class from a Function?"
 url: "https://overreacted.io/how-does-react-tell-a-class-from-a-function/"
-fetched_at: 2026-04-30T07:01:53.259096+00:00
+fetched_at: 2026-05-01T07:02:02.809209+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

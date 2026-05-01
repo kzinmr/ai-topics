@@ -1,7 +1,7 @@
 ---
 title: "Why Nerds are Unpopular"
 url: "http://www.paulgraham.com/nerds.html"
-fetched_at: 2026-04-30T07:01:46.205212+00:00
+fetched_at: 2026-05-01T07:01:55.421958+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Discover the Small Web"
 url: "https://susam.net/wander/"
-fetched_at: 2026-04-30T07:00:55.713224+00:00
+fetched_at: 2026-05-01T07:01:05.158616+00:00
 source: "susam.net"
 tags: [blog, raw]
 ---

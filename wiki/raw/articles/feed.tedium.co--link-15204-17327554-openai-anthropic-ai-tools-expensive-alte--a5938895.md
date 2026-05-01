@@ -1,7 +1,7 @@
 ---
 title: "Proceed With Caution"
 url: "https://feed.tedium.co/link/15204/17327554/openai-anthropic-ai-tools-expensive-alternatives"
-fetched_at: 2026-04-30T07:00:45.280521+00:00
+fetched_at: 2026-05-01T07:00:53.801007+00:00
 source: "tedium.co"
 tags: [blog, raw]
 ---

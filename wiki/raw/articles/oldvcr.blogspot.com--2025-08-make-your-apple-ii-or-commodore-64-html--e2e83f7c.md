@@ -1,7 +1,7 @@
 ---
 title: "Reverse-engineering Roadsearch Plus, or, roadgeeking with an 8-bit CPU"
 url: "https://oldvcr.blogspot.com/2025/08/make-your-apple-ii-or-commodore-64.html"
-fetched_at: 2026-04-30T07:01:18.723941+00:00
+fetched_at: 2026-05-01T07:01:28.207834+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

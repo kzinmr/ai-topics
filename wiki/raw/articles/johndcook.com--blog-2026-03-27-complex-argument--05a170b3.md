@@ -1,7 +1,7 @@
 ---
 title: "Computing sine and cosine of complex arguments with only real functions"
 url: "https://www.johndcook.com/blog/2026/03/27/complex-argument/"
-fetched_at: 2026-04-30T07:02:02.190759+00:00
+fetched_at: 2026-05-01T07:02:12.081175+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

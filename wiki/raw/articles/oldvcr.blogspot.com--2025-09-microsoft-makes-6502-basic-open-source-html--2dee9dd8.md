@@ -1,7 +1,7 @@
 ---
 title: "Microsoft makes 6502 BASIC open source"
 url: "https://oldvcr.blogspot.com/2025/09/microsoft-makes-6502-basic-open-source.html"
-fetched_at: 2026-04-30T07:01:18.491453+00:00
+fetched_at: 2026-05-01T07:01:27.660351+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

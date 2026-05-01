@@ -1,7 +1,7 @@
 ---
 title: "My AI Adoption Journey"
 url: "https://mitchellh.com/writing/my-ai-adoption-journey"
-fetched_at: 2026-04-30T07:01:53.297637+00:00
+fetched_at: 2026-05-01T07:02:02.758600+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

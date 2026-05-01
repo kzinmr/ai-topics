@@ -1,7 +1,7 @@
 ---
 title: "What Doesn't Seem Like Work?"
 url: "http://www.paulgraham.com/work.html"
-fetched_at: 2026-04-30T07:01:28.309602+00:00
+fetched_at: 2026-05-01T07:01:37.972488+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

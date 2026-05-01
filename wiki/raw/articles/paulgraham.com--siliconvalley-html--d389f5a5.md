@@ -1,7 +1,7 @@
 ---
 title: "How to Be Silicon Valley"
 url: "http://www.paulgraham.com/siliconvalley.html"
-fetched_at: 2026-04-30T07:01:40.738692+00:00
+fetched_at: 2026-05-01T07:01:50.109244+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

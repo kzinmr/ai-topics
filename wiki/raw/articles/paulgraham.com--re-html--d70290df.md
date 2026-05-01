@@ -1,7 +1,7 @@
 ---
 title: "The Refragmentation"
 url: "http://www.paulgraham.com/re.html"
-fetched_at: 2026-04-30T07:01:27.302426+00:00
+fetched_at: 2026-05-01T07:01:37.102161+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

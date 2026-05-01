@@ -1,7 +1,7 @@
 ---
 title: "A Lean Syntax Primer"
 url: "https://overreacted.io/a-lean-syntax-primer/"
-fetched_at: 2026-04-30T07:01:49.724232+00:00
+fetched_at: 2026-05-01T07:01:59.395024+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

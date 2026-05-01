@@ -1,7 +1,7 @@
 ---
 title: "Vibing a Non-Trivial Ghostty Feature"
 url: "https://mitchellh.com/writing/non-trivial-vibing"
-fetched_at: 2026-04-30T07:01:53.379564+00:00
+fetched_at: 2026-05-01T07:02:02.953621+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

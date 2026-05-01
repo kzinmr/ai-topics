@@ -1,7 +1,7 @@
 ---
 title: "Big tech engineers need big egos"
 url: "https://seangoedecke.com/big-tech-needs-big-egos/"
-fetched_at: 2026-04-30T07:01:10.033840+00:00
+fetched_at: 2026-05-01T07:01:18.856884+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Advice for Tech Non-Profits"
 url: "https://mitchellh.com/writing/advice-for-tech-nonprofits"
-fetched_at: 2026-04-30T07:01:53.602021+00:00
+fetched_at: 2026-05-01T07:02:02.927258+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "AI and Teaching - The Brave New World"
 url: "https://steveblank.com/2026/04/22/ai-and-teaching-the-brave-new-world/"
-fetched_at: 2026-04-30T07:01:03.093871+00:00
+fetched_at: 2026-05-01T07:01:12.123179+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

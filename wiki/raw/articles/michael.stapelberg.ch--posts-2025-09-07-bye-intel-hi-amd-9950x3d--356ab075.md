@@ -1,7 +1,7 @@
 ---
 title: "Bye Intel, hi AMD! I’m done after 2 dead Intels (2025)"
 url: "https://michael.stapelberg.ch/posts/2025-09-07-bye-intel-hi-amd-9950x3d/"
-fetched_at: 2026-04-30T07:01:05.034945+00:00
+fetched_at: 2026-05-01T07:01:14.617067+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
 ---

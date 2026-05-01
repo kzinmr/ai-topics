@@ -1,7 +1,7 @@
 ---
 title: "Partial inlining"
 url: "http://xania.org/202512/18-partial-inlining?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-30T07:00:57.778130+00:00
+fetched_at: 2026-05-01T07:01:07.161062+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

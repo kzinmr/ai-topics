@@ -1,7 +1,7 @@
 ---
 title: "Elon Musk appeared more petty than prepared"
 url: "https://www.theverge.com/ai-artificial-intelligence/920191/elon-musk-sam-altman-trial-day-one?view_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6InBrV1FGdGtlcEEiLCJwIjoiL2FpLWFydGlmaWNpYWwtaW50ZWxsaWdlbmNlLzkyMDE5MS9lbG9uLW11c2stc2FtLWFsdG1hbi10cmlhbC1kYXktb25lIiwiZXhwIjoxNzc3OTA1NDgxLCJpYXQiOjE3Nzc0NzM0ODF9.FkMZ8-YRv8q3d7n6p8q_scJaERWtNumD9pK7kONpTE4"
-fetched_at: 2026-04-30T07:00:41.804598+00:00
+fetched_at: 2026-05-01T07:13:06.240543+00:00
 source: "daringfireball.net"
 tags: [blog, raw]
 ---

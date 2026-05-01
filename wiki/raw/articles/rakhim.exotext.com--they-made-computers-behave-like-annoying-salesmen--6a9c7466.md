@@ -1,7 +1,7 @@
 ---
 title: "They made computers behave like annoying salesmen"
 url: "https://rakhim.exotext.com/they-made-computers-behave-like-annoying-salesmen"
-fetched_at: 2026-04-30T07:01:14.011356+00:00
+fetched_at: 2026-05-01T07:01:23.244974+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

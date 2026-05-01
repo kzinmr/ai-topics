@@ -1,7 +1,7 @@
 ---
 title: "I'm Doing a Little Consulting"
 url: "https://overreacted.io/im-doing-a-little-consulting/"
-fetched_at: 2026-04-30T07:01:49.931144+00:00
+fetched_at: 2026-05-01T07:01:59.405118+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

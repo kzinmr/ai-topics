@@ -1,7 +1,7 @@
 ---
 title: "Looking at consequences of passing too few register parameters to a C function on various architectures"
 url: "https://devblogs.microsoft.com/oldnewthing/20260427-00/?p=112271"
-fetched_at: 2026-04-30T07:00:44.944663+00:00
+fetched_at: 2026-05-01T07:00:53.850961+00:00
 source: "devblogs.microsoft.com/oldnewthing"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Claude system prompts as a git timeline"
 url: "https://simonwillison.net/2026/Apr/18/extract-system-prompts/#atom-everything"
-fetched_at: 2026-04-30T07:01:13.274525+00:00
+fetched_at: 2026-05-01T07:01:22.518008+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

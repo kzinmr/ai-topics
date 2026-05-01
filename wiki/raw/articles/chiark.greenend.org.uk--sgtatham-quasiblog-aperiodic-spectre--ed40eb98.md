@@ -1,7 +1,7 @@
 ---
 title: "Combinatorial coordinates for the aperiodic Spectre tiling"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-spectre/"
-fetched_at: 2026-04-30T07:00:49.476724+00:00
+fetched_at: 2026-05-01T07:00:58.480780+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

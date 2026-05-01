@@ -1,7 +1,7 @@
 ---
 title: "Writing an LLM from scratch, part 32h -- Interventions: full fat float32"
 url: "https://www.gilesthomas.com/2026/04/llm-from-scratch-32h-interventions-full-fat-float32"
-fetched_at: 2026-04-30T07:01:56.172702+00:00
+fetched_at: 2026-05-01T07:02:05.286375+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Writing a soluble-grid generator for Mines"
 url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/mines-solver/"
-fetched_at: 2026-04-30T07:00:49.761134+00:00
+fetched_at: 2026-05-01T07:00:58.759247+00:00
 source: "chiark.greenend.org.uk/~sgtatham"
 tags: [blog, raw]
 ---

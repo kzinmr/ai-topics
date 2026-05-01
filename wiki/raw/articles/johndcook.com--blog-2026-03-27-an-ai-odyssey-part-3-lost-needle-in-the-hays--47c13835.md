@@ -1,7 +1,7 @@
 ---
 title: "An AI Odyssey, Part 3: Lost Needle in the Haystack"
 url: "https://www.johndcook.com/blog/2026/03/27/an-ai-odyssey-part-3-lost-needle-in-the-haystack/"
-fetched_at: 2026-04-30T07:02:02.282610+00:00
+fetched_at: 2026-05-01T07:02:12.140657+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

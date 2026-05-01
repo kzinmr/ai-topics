@@ -1,7 +1,7 @@
 ---
 title: "Why Arc Isn't Especially Object-Oriented"
 url: "http://www.paulgraham.com/noop.html"
-fetched_at: 2026-04-30T07:01:47.147035+00:00
+fetched_at: 2026-05-01T07:01:56.309817+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

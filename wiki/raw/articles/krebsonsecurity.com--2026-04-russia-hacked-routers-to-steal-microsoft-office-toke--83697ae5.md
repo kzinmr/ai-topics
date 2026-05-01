@@ -1,7 +1,7 @@
 ---
 title: "Russia Hacked Routers to Steal Microsoft Office Tokens"
 url: "https://krebsonsecurity.com/2026/04/russia-hacked-routers-to-steal-microsoft-office-tokens/"
-fetched_at: 2026-04-30T07:01:59.209367+00:00
+fetched_at: 2026-05-01T07:02:09.115803+00:00
 source: "krebsonsecurity.com"
 tags: [blog, raw]
 ---

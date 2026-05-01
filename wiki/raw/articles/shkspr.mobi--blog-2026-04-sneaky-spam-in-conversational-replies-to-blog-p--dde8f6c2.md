@@ -1,7 +1,7 @@
 ---
 title: "Sneaky spam in conversational replies to blog posts"
 url: "https://shkspr.mobi/blog/2026/04/sneaky-spam-in-conversational-replies-to-blog-posts/"
-fetched_at: 2026-04-30T07:01:00.038227+00:00
+fetched_at: 2026-05-01T07:01:09.404588+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
 ---

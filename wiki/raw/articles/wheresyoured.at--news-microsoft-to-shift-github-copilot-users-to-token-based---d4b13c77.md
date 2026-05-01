@@ -1,7 +1,7 @@
 ---
 title: "Exclusive: Microsoft To Shift GitHub Copilot Users To Token-Based Billing, Tighten Rate Limits"
 url: "https://www.wheresyoured.at/news-microsoft-to-shift-github-copilot-users-to-token-based-billing-reduce-rate-limits-2/"
-fetched_at: 2026-04-30T07:00:56.552310+00:00
+fetched_at: 2026-05-01T07:01:05.878895+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
 ---

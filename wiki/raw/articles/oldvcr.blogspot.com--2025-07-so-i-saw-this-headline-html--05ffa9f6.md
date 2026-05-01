@@ -1,7 +1,7 @@
 ---
 title: "Old Vintage Computing Research"
 url: "https://oldvcr.blogspot.com/2025/07/so-i-saw-this-headline.html"
-fetched_at: 2026-04-30T07:01:18.951848+00:00
+fetched_at: 2026-05-01T07:01:28.465175+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "How to Do Philosophy"
 url: "http://www.paulgraham.com/philosophy.html"
-fetched_at: 2026-04-30T07:01:38.260952+00:00
+fetched_at: 2026-05-01T07:01:47.819332+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

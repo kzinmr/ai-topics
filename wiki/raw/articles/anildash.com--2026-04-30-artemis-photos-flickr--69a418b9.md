@@ -1,7 +1,7 @@
 ---
 title: "Why are the Artemis II photos on Flickr?"
 url: "https://anildash.com/2026/04/30/artemis-photos-flickr/"
-fetched_at: 2026-04-30T07:00:42.933026+00:00
+fetched_at: 2026-05-01T07:13:06.883954+00:00
 source: "anildash.com"
 tags: [blog, raw]
 ---

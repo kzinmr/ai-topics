@@ -1,7 +1,7 @@
 ---
 title: "A New Venture Animal"
 url: "http://www.paulgraham.com/ycombinator.html"
-fetched_at: 2026-04-30T07:01:37.385107+00:00
+fetched_at: 2026-05-01T07:01:46.844385+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

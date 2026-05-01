@@ -1,7 +1,7 @@
 ---
 title: "Programming (with AI agents) as theory building"
 url: "https://seangoedecke.com/programming-with-ai-agents-as-theory-building/"
-fetched_at: 2026-04-30T07:01:09.762947+00:00
+fetched_at: 2026-05-01T07:01:18.884509+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

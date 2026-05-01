@@ -1,7 +1,7 @@
 ---
 title: "Is It Worth Being Wise?"
 url: "http://www.paulgraham.com/wisdom.html"
-fetched_at: 2026-04-30T07:01:39.417287+00:00
+fetched_at: 2026-05-01T07:01:48.866304+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

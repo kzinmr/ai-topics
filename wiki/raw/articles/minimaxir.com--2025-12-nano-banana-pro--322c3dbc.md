@@ -1,7 +1,7 @@
 ---
 title: "Nano Banana Pro is the best AI image generator, with caveats"
 url: "https://minimaxir.com/2025/12/nano-banana-pro/"
-fetched_at: 2026-04-30T07:01:55.470413+00:00
+fetched_at: 2026-05-01T07:02:04.637210+00:00
 source: "minimaxir.com"
 tags: [blog, raw]
 ---

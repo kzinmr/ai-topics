@@ -1,7 +1,7 @@
 ---
 title: "A quote from Bobby Holley"
 url: "https://simonwillison.net/2026/Apr/22/bobby-holley/#atom-everything"
-fetched_at: 2026-04-30T07:01:12.204354+00:00
+fetched_at: 2026-05-01T07:01:21.657485+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

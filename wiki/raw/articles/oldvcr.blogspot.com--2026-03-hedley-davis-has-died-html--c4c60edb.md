@@ -1,7 +1,7 @@
 ---
 title: "Old Vintage Computing Research"
 url: "https://oldvcr.blogspot.com/2026/03/hedley-davis-has-died.html"
-fetched_at: 2026-04-30T07:01:16.520628+00:00
+fetched_at: 2026-05-01T07:01:26.213471+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

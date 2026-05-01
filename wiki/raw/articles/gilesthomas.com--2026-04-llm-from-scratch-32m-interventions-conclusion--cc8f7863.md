@@ -1,7 +1,7 @@
 ---
 title: "Writing an LLM from scratch, part 32m -- Interventions: conclusion"
 url: "https://www.gilesthomas.com/2026/04/llm-from-scratch-32m-interventions-conclusion"
-fetched_at: 2026-04-30T07:01:56.759141+00:00
+fetched_at: 2026-05-01T07:02:05.834828+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
 ---

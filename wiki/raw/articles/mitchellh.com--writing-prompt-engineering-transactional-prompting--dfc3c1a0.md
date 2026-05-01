@@ -1,7 +1,7 @@
 ---
 title: "Prompt Engineering is for Transactional Prompting"
 url: "https://mitchellh.com/writing/prompt-engineering-transactional-prompting"
-fetched_at: 2026-04-30T07:01:54.353348+00:00
+fetched_at: 2026-05-01T07:02:03.550378+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

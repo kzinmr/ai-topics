@@ -1,7 +1,7 @@
 ---
 title: "Anthropic Mythos - We’ve Opened Pandora’s Box"
 url: "https://steveblank.com/2026/04/28/anthropic-mythos-weve-opened-pandoras-box/"
-fetched_at: 2026-04-30T07:00:42.231657+00:00
+fetched_at: 2026-05-01T07:00:51.252407+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

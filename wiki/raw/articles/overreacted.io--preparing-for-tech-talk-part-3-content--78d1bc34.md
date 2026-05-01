@@ -1,7 +1,7 @@
 ---
 title: "Preparing for a Tech Talk, Part 3: Content"
 url: "https://overreacted.io/preparing-for-tech-talk-part-3-content/"
-fetched_at: 2026-04-30T07:01:52.094921+00:00
+fetched_at: 2026-05-01T07:02:01.561387+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

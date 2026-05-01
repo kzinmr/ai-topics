@@ -1,7 +1,7 @@
 ---
 title: "Hyperbolic version of Napier’s mnemonic"
 url: "https://www.johndcook.com/blog/2026/04/02/hyperbolic-napier-mnemonic/"
-fetched_at: 2026-04-30T07:02:01.012228+00:00
+fetched_at: 2026-05-01T07:02:10.721450+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

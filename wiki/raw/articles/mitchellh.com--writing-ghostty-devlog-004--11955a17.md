@@ -1,12 +1,12 @@
 ---
-title: "Mitchell Hashimoto"
+title: "Ghostty Devlog 004"
 url: "https://mitchellh.com/writing/ghostty-devlog-004"
-fetched_at: 2026-04-30T07:01:53.977232+00:00
+fetched_at: 2026-05-01T07:02:03.325241+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---
 
-# Mitchell Hashimoto
+# Ghostty Devlog 004
 
 Source: https://mitchellh.com/writing/ghostty-devlog-004
 

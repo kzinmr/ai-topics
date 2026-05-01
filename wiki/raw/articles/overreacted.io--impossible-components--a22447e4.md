@@ -1,7 +1,7 @@
 ---
 title: "Impossible Components"
 url: "https://overreacted.io/impossible-components/"
-fetched_at: 2026-04-30T07:01:52.777553+00:00
+fetched_at: 2026-05-01T07:02:02.011280+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

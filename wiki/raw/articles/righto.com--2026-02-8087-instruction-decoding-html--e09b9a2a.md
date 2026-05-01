@@ -1,7 +1,7 @@
 ---
 title: "Instruction decoding in the Intel 8087 floating-point chip"
 url: "http://www.righto.com/2026/02/8087-instruction-decoding.html"
-fetched_at: 2026-04-30T07:01:07.015663+00:00
+fetched_at: 2026-05-01T07:01:15.854016+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

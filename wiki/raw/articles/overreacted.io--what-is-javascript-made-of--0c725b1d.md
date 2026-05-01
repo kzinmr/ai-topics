@@ -1,7 +1,7 @@
 ---
 title: "What Is JavaScript Made Of?"
 url: "https://overreacted.io/what-is-javascript-made-of/"
-fetched_at: 2026-04-30T07:01:52.078873+00:00
+fetched_at: 2026-05-01T07:02:01.502553+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

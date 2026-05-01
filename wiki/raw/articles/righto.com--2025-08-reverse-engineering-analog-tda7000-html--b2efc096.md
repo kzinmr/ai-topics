@@ -1,7 +1,7 @@
 ---
 title: "How to reverse engineer an analog chip: the TDA7000 FM radio receiver"
 url: "http://www.righto.com/2025/08/reverse-engineering-analog-TDA7000.html"
-fetched_at: 2026-04-30T07:01:07.528116+00:00
+fetched_at: 2026-05-01T07:01:17.021281+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

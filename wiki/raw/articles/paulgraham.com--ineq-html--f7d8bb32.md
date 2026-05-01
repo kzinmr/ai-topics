@@ -1,7 +1,7 @@
 ---
 title: "Economic Inequality"
 url: "http://www.paulgraham.com/ineq.html"
-fetched_at: 2026-04-30T07:01:27.131081+00:00
+fetched_at: 2026-05-01T07:01:37.042250+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

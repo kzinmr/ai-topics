@@ -1,7 +1,7 @@
 ---
 title: "News from the Front"
 url: "http://www.paulgraham.com/colleges.html"
-fetched_at: 2026-04-30T07:01:38.128474+00:00
+fetched_at: 2026-05-01T07:01:47.662098+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "LLM 0.32a0 is a major backwards-compatible refactor"
 url: "https://simonwillison.net/2026/Apr/29/llm/#atom-everything"
-fetched_at: 2026-04-30T07:00:41.281819+00:00
+fetched_at: 2026-05-01T07:13:05.452514+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

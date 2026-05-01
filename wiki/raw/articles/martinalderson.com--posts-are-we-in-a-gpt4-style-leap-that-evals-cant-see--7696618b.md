@@ -1,7 +1,7 @@
 ---
 title: "Are we in a GPT-4-style leap that evals can't see?"
 url: "https://martinalderson.com/posts/are-we-in-a-gpt4-style-leap-that-evals-cant-see/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-30T07:01:57.393277+00:00
+fetched_at: 2026-05-01T07:02:07.090658+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

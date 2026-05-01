@@ -1,7 +1,7 @@
 ---
 title: "The Digital Antiquarian"
 url: "https://www.filfre.net/2026/02/1998-ebook/"
-fetched_at: 2026-04-30T07:01:58.890459+00:00
+fetched_at: 2026-05-01T07:02:08.871239+00:00
 source: "filfre.net"
 tags: [blog, raw]
 ---

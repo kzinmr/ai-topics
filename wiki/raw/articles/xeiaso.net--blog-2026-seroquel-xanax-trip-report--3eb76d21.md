@@ -1,7 +1,7 @@
 ---
 title: "The Unbound Scepter"
 url: "https://xeiaso.net/blog/2026/seroquel-xanax-trip-report/"
-fetched_at: 2026-04-30T07:00:51.092014+00:00
+fetched_at: 2026-05-01T07:01:00.005140+00:00
 source: "xeiaso.net"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Hands-on with two Apple Network Server prototype ROMs"
 url: "https://oldvcr.blogspot.com/2026/01/hands-on-with-two-apple-network-server.html"
-fetched_at: 2026-04-30T07:01:17.738360+00:00
+fetched_at: 2026-05-01T07:01:26.879160+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "10Gb/s Ethernet: what I actually did to get it working in my home"
 url: "https://www.gilesthomas.com/2026/04/10g-ethernet-what-i-did"
-fetched_at: 2026-04-30T07:00:41.960008+00:00
+fetched_at: 2026-05-01T07:13:06.205371+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
 ---

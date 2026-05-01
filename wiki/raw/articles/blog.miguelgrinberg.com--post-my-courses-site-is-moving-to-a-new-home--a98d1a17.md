@@ -1,7 +1,7 @@
 ---
 title: "My Courses Site is Moving to a New Home"
 url: "https://blog.miguelgrinberg.com/post/my-courses-site-is-moving-to-a-new-home"
-fetched_at: 2026-04-30T07:01:21.412064+00:00
+fetched_at: 2026-05-01T07:01:31.031215+00:00
 source: "miguelgrinberg.com"
 tags: [blog, raw]
 ---

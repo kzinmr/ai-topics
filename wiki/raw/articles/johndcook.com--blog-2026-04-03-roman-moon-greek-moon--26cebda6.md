@@ -1,7 +1,7 @@
 ---
 title: "Roman moon, Greek moon"
 url: "https://www.johndcook.com/blog/2026/04/03/roman-moon-greek-moon/"
-fetched_at: 2026-04-30T07:02:01.162494+00:00
+fetched_at: 2026-05-01T07:02:11.036485+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

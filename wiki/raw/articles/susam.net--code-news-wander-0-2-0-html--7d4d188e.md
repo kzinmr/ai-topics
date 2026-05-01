@@ -1,7 +1,7 @@
 ---
 title: "Wander Console 0.2.0"
 url: "https://susam.net/code/news/wander/0.2.0.html"
-fetched_at: 2026-04-30T07:00:55.460981+00:00
+fetched_at: 2026-05-01T07:01:04.870557+00:00
 source: "susam.net"
 tags: [blog, raw]
 ---

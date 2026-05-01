@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/hosting-a-snowflake-proxy/"
-fetched_at: 2026-04-30T07:01:48.030422+00:00
+fetched_at: 2026-05-01T07:01:57.315820+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Circular arc approximation"
 url: "https://www.johndcook.com/blog/2026/04/28/circular-arc-approximation/"
-fetched_at: 2026-04-30T07:00:43.129365+00:00
+fetched_at: 2026-05-01T07:00:52.350401+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

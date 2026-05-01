@@ -1,7 +1,7 @@
 ---
 title: "Reiner Pope - The math behind how LLMs are trained and served"
 url: "https://www.dwarkesh.com/p/reiner-pope"
-fetched_at: 2026-04-30T07:00:41.459421+00:00
+fetched_at: 2026-05-01T07:13:05.856149+00:00
 source: "dwarkesh.com"
 tags: [blog, raw]
 ---

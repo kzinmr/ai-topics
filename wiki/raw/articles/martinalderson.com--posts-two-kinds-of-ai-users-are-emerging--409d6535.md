@@ -1,7 +1,7 @@
 ---
 title: "Two kinds of AI users are emerging. The gap between them is astonishing."
 url: "https://martinalderson.com/posts/two-kinds-of-ai-users-are-emerging/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-30T07:01:57.261380+00:00
+fetched_at: 2026-05-01T07:02:06.954429+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

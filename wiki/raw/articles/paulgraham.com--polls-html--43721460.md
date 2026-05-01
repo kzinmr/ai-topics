@@ -1,7 +1,7 @@
 ---
 title: "Bradley's Ghost"
 url: "http://www.paulgraham.com/polls.html"
-fetched_at: 2026-04-30T07:01:44.189236+00:00
+fetched_at: 2026-05-01T07:01:53.431424+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

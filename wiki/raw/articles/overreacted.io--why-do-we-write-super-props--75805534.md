@@ -1,7 +1,7 @@
 ---
 title: "Why Do We Write super(props)?"
 url: "https://overreacted.io/why-do-we-write-super-props/"
-fetched_at: 2026-04-30T07:01:53.208991+00:00
+fetched_at: 2026-05-01T07:02:02.678315+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

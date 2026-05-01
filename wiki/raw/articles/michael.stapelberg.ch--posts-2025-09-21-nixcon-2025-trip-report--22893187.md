@@ -1,7 +1,7 @@
 ---
 title: "NixCon 2025 Trip Report 🐝 (2025)"
 url: "https://michael.stapelberg.ch/posts/2025-09-21-nixcon-2025-trip-report/"
-fetched_at: 2026-04-30T07:01:04.852544+00:00
+fetched_at: 2026-05-01T07:01:14.601745+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
 ---

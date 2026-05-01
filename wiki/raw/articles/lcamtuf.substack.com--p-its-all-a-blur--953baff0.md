@@ -1,7 +1,7 @@
 ---
 title: "It's all a blur - lcamtuf’s thing"
 url: "https://lcamtuf.substack.com/p/its-all-a-blur"
-fetched_at: 2026-04-30T07:02:01.992054+00:00
+fetched_at: 2026-05-01T07:02:12.207179+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

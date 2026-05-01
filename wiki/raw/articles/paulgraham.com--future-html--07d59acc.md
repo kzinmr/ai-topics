@@ -1,7 +1,7 @@
 ---
 title: "The Future of Startup Funding"
 url: "http://www.paulgraham.com/future.html"
-fetched_at: 2026-04-30T07:01:32.517286+00:00
+fetched_at: 2026-05-01T07:01:42.328736+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

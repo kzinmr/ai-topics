@@ -1,7 +1,7 @@
 ---
 title: "Old Vintage Computing Research"
 url: "https://oldvcr.blogspot.com/2025/10/the-end-of-aol-dialup.html"
-fetched_at: 2026-04-30T07:01:18.381528+00:00
+fetched_at: 2026-05-01T07:01:27.884450+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/i-cant-see-apples-vision/"
-fetched_at: 2026-04-30T07:01:47.972846+00:00
+fetched_at: 2026-05-01T07:01:57.397756+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---

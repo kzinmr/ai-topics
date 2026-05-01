@@ -1,7 +1,7 @@
 ---
 title: "GitHub Actions is the weakest link"
 url: "https://nesbitt.io/2026/04/28/github-actions-is-the-weakest-link.html"
-fetched_at: 2026-04-30T07:00:42.270562+00:00
+fetched_at: 2026-05-01T07:00:51.316286+00:00
 source: "nesbitt.io"
 tags: [blog, raw]
 ---

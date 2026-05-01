@@ -1,7 +1,7 @@
 ---
 title: "How to Convince Investors"
 url: "http://www.paulgraham.com/convince.html"
-fetched_at: 2026-04-30T07:01:29.540663+00:00
+fetched_at: 2026-05-01T07:01:39.455146+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

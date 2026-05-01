@@ -1,7 +1,7 @@
 ---
 title: "Unreal numbers - lcamtuf’s thing"
 url: "https://lcamtuf.substack.com/p/unreal-numbers"
-fetched_at: 2026-04-30T07:02:01.812514+00:00
+fetched_at: 2026-05-01T07:02:12.073247+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---
@@ -240,7 +240,7 @@ To describe the underlying structure of real numbers in more precise terms, we c
 Dedekind cuts
 . Informally, the idea is that we can unambiguously identify each real number by associating it with the set of all rationals that come before it. More specifically, to describe real number
 x,
-we could take the set of rational numbers and partition it into an ordered pair of sets
+we could take the ordered set of rational numbers and partition it into an ordered pair of sets
 (A, B)
 , such that set
 A

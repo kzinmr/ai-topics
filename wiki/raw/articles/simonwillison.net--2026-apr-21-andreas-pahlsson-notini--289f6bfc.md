@@ -1,7 +1,7 @@
 ---
 title: "A quote from Andreas Påhlsson-Notini"
 url: "https://simonwillison.net/2026/Apr/21/andreas-pahlsson-notini/#atom-everything"
-fetched_at: 2026-04-30T07:01:12.619469+00:00
+fetched_at: 2026-05-01T07:01:21.712694+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "A Clever WordPress Revamp, Hold The PHP"
 url: "https://feed.tedium.co/link/15204/17312777/emdash-cloudflare-wordpress-competitor"
-fetched_at: 2026-04-30T07:00:54.760258+00:00
+fetched_at: 2026-05-01T07:01:03.396133+00:00
 source: "tedium.co"
 tags: [blog, raw]
 ---

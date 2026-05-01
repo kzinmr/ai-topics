@@ -1,7 +1,7 @@
 ---
 title: "Beating the Averages"
 url: "http://www.paulgraham.com/avg.html"
-fetched_at: 2026-04-30T07:01:48.225995+00:00
+fetched_at: 2026-05-01T07:01:57.336324+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

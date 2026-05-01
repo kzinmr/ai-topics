@@ -1,7 +1,7 @@
 ---
 title: "I gave Claude Code a folder of tax documents and used it as a professional tax agent"
 url: "https://martinalderson.com/posts/building-a-tax-agent-with-claude-code/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-30T07:01:57.551722+00:00
+fetched_at: 2026-05-01T07:02:07.324538+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

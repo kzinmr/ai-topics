@@ -1,7 +1,7 @@
 ---
 title: "2025 was an excellent year for this blog"
 url: "https://seangoedecke.com/2025-wrapup/"
-fetched_at: 2026-04-30T07:01:12.014816+00:00
+fetched_at: 2026-05-01T07:01:20.538273+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

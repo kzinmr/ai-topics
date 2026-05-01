@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/fyi-broadcom-is-ruining-bitnami-containers/"
-fetched_at: 2026-04-30T07:01:48.833723+00:00
+fetched_at: 2026-05-01T07:01:58.257230+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---

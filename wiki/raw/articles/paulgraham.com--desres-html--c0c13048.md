@@ -1,7 +1,7 @@
 ---
 title: "Design and Research"
 url: "http://www.paulgraham.com/desres.html"
-fetched_at: 2026-04-30T07:01:46.232732+00:00
+fetched_at: 2026-05-01T07:01:55.613994+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Chasing your tail"
 url: "http://xania.org/202512/19-tail-call-optimisation?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-30T07:00:57.706529+00:00
+fetched_at: 2026-05-01T07:01:07.040205+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

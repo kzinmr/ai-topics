@@ -1,7 +1,7 @@
 ---
 title: "Before You memo()"
 url: "https://overreacted.io/before-you-memo/"
-fetched_at: 2026-04-30T07:01:51.371516+00:00
+fetched_at: 2026-05-01T07:02:00.923904+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

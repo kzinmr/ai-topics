@@ -1,7 +1,7 @@
 ---
 title: "What Kate Saw in Silicon Valley"
 url: "http://www.paulgraham.com/kate.html"
-fetched_at: 2026-04-30T07:01:33.729643+00:00
+fetched_at: 2026-05-01T07:01:43.343873+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

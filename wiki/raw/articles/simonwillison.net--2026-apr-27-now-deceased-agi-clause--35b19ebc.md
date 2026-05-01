@@ -1,7 +1,7 @@
 ---
 title: "Tracking the history of the now-deceased OpenAI Microsoft AGI clause"
 url: "https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/#atom-everything"
-fetched_at: 2026-04-30T07:00:44.015515+00:00
+fetched_at: 2026-05-01T07:00:53.280962+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

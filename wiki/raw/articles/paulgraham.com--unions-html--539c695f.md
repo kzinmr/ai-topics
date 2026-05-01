@@ -1,7 +1,7 @@
 ---
 title: "An Alternative Theory of Unions"
 url: "http://www.paulgraham.com/unions.html"
-fetched_at: 2026-04-30T07:01:38.910585+00:00
+fetched_at: 2026-05-01T07:01:48.322917+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

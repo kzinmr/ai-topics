@@ -1,7 +1,7 @@
 ---
 title: "Pentagonal numbers are truncated triangular numbers"
 url: "https://www.johndcook.com/blog/2026/04/01/truncated-triangular-numbers/"
-fetched_at: 2026-04-30T07:02:00.854431+00:00
+fetched_at: 2026-05-01T07:02:11.848836+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

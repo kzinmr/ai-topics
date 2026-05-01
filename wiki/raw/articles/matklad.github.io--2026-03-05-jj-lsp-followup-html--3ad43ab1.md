@@ -1,7 +1,7 @@
 ---
 title: "JJ LSP Follow Up"
 url: "https://matklad.github.io/2026/03/05/jj-lsp-followup.html"
-fetched_at: 2026-04-30T07:01:57.930896+00:00
+fetched_at: 2026-05-01T07:02:07.761976+00:00
 source: "matklad.github.io"
 tags: [blog, raw]
 ---

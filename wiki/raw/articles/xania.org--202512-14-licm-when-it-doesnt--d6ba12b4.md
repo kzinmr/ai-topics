@@ -1,7 +1,7 @@
 ---
 title: "When LICM fails us"
 url: "http://xania.org/202512/14-licm-when-it-doesnt?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-30T07:00:57.854851+00:00
+fetched_at: 2026-05-01T07:01:07.343751+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Developing a cross-process reader/writer lock with limited readers, part 1: A semaphore"
 url: "https://devblogs.microsoft.com/oldnewthing/20260428-00/?p=112278"
-fetched_at: 2026-04-30T07:00:42.927478+00:00
+fetched_at: 2026-05-01T07:00:52.647766+00:00
 source: "devblogs.microsoft.com/oldnewthing"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Stuff"
 url: "http://www.paulgraham.com/stuff.html"
-fetched_at: 2026-04-30T07:01:38.397432+00:00
+fetched_at: 2026-05-01T07:01:47.834754+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

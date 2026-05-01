@@ -1,7 +1,7 @@
 ---
 title: "10Gb/s Ethernet: what I had to (re)learn"
 url: "https://www.gilesthomas.com/2026/04/10g-ethernet-what-i-relearned"
-fetched_at: 2026-04-30T07:00:42.840920+00:00
+fetched_at: 2026-05-01T07:00:51.862898+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
 ---

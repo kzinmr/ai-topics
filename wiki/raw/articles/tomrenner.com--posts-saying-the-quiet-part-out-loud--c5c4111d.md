@@ -1,7 +1,7 @@
 ---
 title: "Saying the quiet part out loud"
 url: "https://tomrenner.com/posts/saying-the-quiet-part-out-loud/"
-fetched_at: 2026-04-30T07:00:58.788955+00:00
+fetched_at: 2026-05-01T07:01:08.144185+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

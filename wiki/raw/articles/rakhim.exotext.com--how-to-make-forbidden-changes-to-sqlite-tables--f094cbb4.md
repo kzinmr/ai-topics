@@ -1,7 +1,7 @@
 ---
 title: "How to make forbidden changes to SQLite tables"
 url: "https://rakhim.exotext.com/how-to-make-forbidden-changes-to-sqlite-tables"
-fetched_at: 2026-04-30T07:01:14.124448+00:00
+fetched_at: 2026-05-01T07:01:23.392185+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

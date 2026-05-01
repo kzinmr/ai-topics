@@ -1,7 +1,7 @@
 ---
 title: "Being a Noob"
 url: "http://www.paulgraham.com/noob.html"
-fetched_at: 2026-04-30T07:01:25.565182+00:00
+fetched_at: 2026-05-01T07:01:35.656843+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

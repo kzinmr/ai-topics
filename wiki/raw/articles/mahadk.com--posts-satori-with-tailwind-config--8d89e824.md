@@ -1,7 +1,7 @@
 ---
 title: "How to use Satori with your Tailwind config"
 url: "https://mahadk.com/posts/satori-with-tailwind-config/"
-fetched_at: 2026-04-30T07:01:08.644464+00:00
+fetched_at: 2026-05-01T07:01:17.955015+00:00
 source: "skyfall.dev"
 tags: [blog, raw]
 ---

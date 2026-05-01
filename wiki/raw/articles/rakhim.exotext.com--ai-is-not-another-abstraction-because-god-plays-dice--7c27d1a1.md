@@ -1,7 +1,7 @@
 ---
 title: "AI is not another abstraction because god plays dice"
 url: "https://rakhim.exotext.com/ai_is_not_another_abstraction_because_god_plays_dice"
-fetched_at: 2026-04-30T07:01:13.644633+00:00
+fetched_at: 2026-05-01T07:01:22.924914+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

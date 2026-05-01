@@ -1,7 +1,7 @@
 ---
 title: "The Zig project's rationale for their firm anti-AI contribution policy"
 url: "https://simonwillison.net/2026/Apr/30/zig-anti-ai/#atom-everything"
-fetched_at: 2026-04-30T07:00:41.266749+00:00
+fetched_at: 2026-05-01T07:13:05.389309+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---
@@ -30,6 +30,9 @@ that code
 @bunjavascript says
 :
 We do not currently plan to upstream this, as Zig has a strict ban on LLM-authored contributions.
+(Update: here's
+a Zig core contributor
+providing details on why they wouldn't accept that particular patch independent of the LLM issue - parallel semantic analysis is a long planned feature but has implications "for the Zig language itself".)
 In
 Contributor Poker and Zig's AI Ban
 (

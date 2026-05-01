@@ -1,7 +1,7 @@
 ---
 title: "Getting Rails' ActiveStorage blob IDs from file URLs"
 url: "https://mahadk.com/posts/activestorage-file-id/"
-fetched_at: 2026-04-30T07:01:08.539203+00:00
+fetched_at: 2026-05-01T07:01:17.941088+00:00
 source: "skyfall.dev"
 tags: [blog, raw]
 ---

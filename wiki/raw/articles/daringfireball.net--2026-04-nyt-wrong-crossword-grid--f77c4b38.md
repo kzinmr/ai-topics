@@ -1,7 +1,7 @@
 ---
 title: "The New York Times Printed the Wrong Crossword Grid Last Sunday, and I Find That Timing Serendipitous"
 url: "https://daringfireball.net/2026/04/nyt_wrong_crossword_grid"
-fetched_at: 2026-04-30T07:00:45.605134+00:00
+fetched_at: 2026-05-01T07:00:54.633207+00:00
 source: "daringfireball.net"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "XTC discusses Basecamp's Shape-Up"
 url: "https://tomrenner.com/posts/xtc-basecamp-shape-up/"
-fetched_at: 2026-04-30T07:00:58.988763+00:00
+fetched_at: 2026-05-01T07:01:08.353971+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

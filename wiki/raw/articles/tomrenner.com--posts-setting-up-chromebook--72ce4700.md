@@ -1,7 +1,7 @@
 ---
 title: "Setting up a bottom-end Chromebook for development"
 url: "https://tomrenner.com/posts/setting-up-chromebook/"
-fetched_at: 2026-04-30T07:00:59.059888+00:00
+fetched_at: 2026-05-01T07:01:08.393185+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

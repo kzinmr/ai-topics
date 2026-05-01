@@ -1,7 +1,7 @@
 ---
 title: "Please, recommend me a book about X"
 url: "https://rakhim.exotext.com/please-recommend-me-a-book-about-x"
-fetched_at: 2026-04-30T07:01:14.665150+00:00
+fetched_at: 2026-05-01T07:01:23.898492+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "\"Why hack the DHS? I can think of a couple Pretti Good reasons!\""
 url: "https://micahflee.com/why-hack-the-dhs-i-can-think-of-a-couple-pretti-good-reasons/"
-fetched_at: 2026-04-30T07:01:56.816465+00:00
+fetched_at: 2026-05-01T07:02:06.698483+00:00
 source: "micahflee.com"
 tags: [blog, raw]
 ---

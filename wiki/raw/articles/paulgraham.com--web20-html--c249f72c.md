@@ -1,7 +1,7 @@
 ---
 title: "Web 2.0"
 url: "http://www.paulgraham.com/web20.html"
-fetched_at: 2026-04-30T07:01:41.839051+00:00
+fetched_at: 2026-05-01T07:01:51.154306+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

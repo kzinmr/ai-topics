@@ -1,7 +1,7 @@
 ---
 title: "Viaweb, June 1998"
 url: "http://www.paulgraham.com/vw.html"
-fetched_at: 2026-04-30T07:01:31.333927+00:00
+fetched_at: 2026-05-01T07:01:40.996884+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

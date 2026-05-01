@@ -1,7 +1,7 @@
 ---
 title: "Three thoughts on the Musk-OpenAI lawsuit"
 url: "https://garymarcus.substack.com/p/three-thoughts-on-the-musk-openai"
-fetched_at: 2026-04-30T07:00:41.357727+00:00
+fetched_at: 2026-05-01T07:13:06.247011+00:00
 source: "garymarcus.substack.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "The Pentium contains a complicated circuit to multiply by three"
 url: "http://www.righto.com/2025/03/pentium-multiplier-adder-reverse-engineered.html"
-fetched_at: 2026-04-30T07:01:08.478353+00:00
+fetched_at: 2026-05-01T07:01:17.753325+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

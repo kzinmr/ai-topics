@@ -1,7 +1,7 @@
 ---
 title: "A quote from OpenAI Codex base_instructions"
 url: "https://simonwillison.net/2026/Apr/28/openai-codex/#atom-everything"
-fetched_at: 2026-04-30T07:00:42.220532+00:00
+fetched_at: 2026-05-01T07:00:51.272027+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Book Review: Small Comfort by Ia Genberg"
 url: "https://shkspr.mobi/blog/2026/04/book-review-small-comfort-by-ia-genberg/"
-fetched_at: 2026-04-30T07:01:01.203623+00:00
+fetched_at: 2026-05-01T07:01:10.463265+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
 ---

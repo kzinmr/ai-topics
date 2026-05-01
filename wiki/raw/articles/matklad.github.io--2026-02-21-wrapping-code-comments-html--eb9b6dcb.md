@@ -1,7 +1,7 @@
 ---
 title: "Wrapping Code Comments"
 url: "https://matklad.github.io/2026/02/21/wrapping-code-comments.html"
-fetched_at: 2026-04-30T07:01:58.011971+00:00
+fetched_at: 2026-05-01T07:02:07.823994+00:00
 source: "matklad.github.io"
 tags: [blog, raw]
 ---

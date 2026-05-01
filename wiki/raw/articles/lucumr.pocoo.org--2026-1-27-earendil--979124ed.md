@@ -1,7 +1,7 @@
 ---
 title: "Colin and Earendil"
 url: "https://lucumr.pocoo.org/2026/1/27/earendil/"
-fetched_at: 2026-04-30T07:01:57.907240+00:00
+fetched_at: 2026-05-01T07:02:07.708542+00:00
 source: "lucumr.pocoo.org"
 tags: [blog, raw]
 ---

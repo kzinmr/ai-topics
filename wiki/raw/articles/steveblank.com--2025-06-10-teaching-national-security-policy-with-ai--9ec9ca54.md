@@ -1,7 +1,7 @@
 ---
 title: "Teaching National Security Policy with AI"
 url: "https://steveblank.com/2025/06/10/teaching-national-security-policy-with-ai/"
-fetched_at: 2026-04-30T07:01:03.540634+00:00
+fetched_at: 2026-05-01T07:01:13.002747+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

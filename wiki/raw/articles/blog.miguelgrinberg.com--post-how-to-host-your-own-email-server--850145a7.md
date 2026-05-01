@@ -1,7 +1,7 @@
 ---
 title: "How to Host your Own Email Server"
 url: "https://blog.miguelgrinberg.com/post/how-to-host-your-own-email-server"
-fetched_at: 2026-04-30T07:01:20.771818+00:00
+fetched_at: 2026-05-01T07:01:30.123314+00:00
 source: "miguelgrinberg.com"
 tags: [blog, raw]
 ---

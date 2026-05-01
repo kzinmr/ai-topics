@@ -1,7 +1,7 @@
 ---
 title: "npm audit: Broken by Design"
 url: "https://overreacted.io/npm-audit-broken-by-design/"
-fetched_at: 2026-04-30T07:01:51.362648+00:00
+fetched_at: 2026-05-01T07:02:00.818979+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

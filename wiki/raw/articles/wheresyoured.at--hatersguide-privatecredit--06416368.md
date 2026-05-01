@@ -1,7 +1,7 @@
 ---
 title: "Premium: The Hater's Guide to Private Credit"
 url: "https://www.wheresyoured.at/hatersguide-privatecredit/"
-fetched_at: 2026-04-30T07:00:56.570473+00:00
+fetched_at: 2026-05-01T07:01:05.924632+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
 ---

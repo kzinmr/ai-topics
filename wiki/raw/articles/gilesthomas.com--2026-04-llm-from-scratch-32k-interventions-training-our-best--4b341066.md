@@ -1,7 +1,7 @@
 ---
 title: "Writing an LLM from scratch, part 32k -- Interventions: training a better model locally with gradient accumulation"
 url: "https://www.gilesthomas.com/2026/04/llm-from-scratch-32k-interventions-training-our-best-model-locally-gradient-accumulation"
-fetched_at: 2026-04-30T07:01:56.611852+00:00
+fetched_at: 2026-05-01T07:02:05.611928+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
 ---

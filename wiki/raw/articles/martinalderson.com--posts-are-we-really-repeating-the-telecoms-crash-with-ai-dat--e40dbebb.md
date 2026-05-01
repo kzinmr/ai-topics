@@ -1,7 +1,7 @@
 ---
 title: "Are we really repeating the telecoms crash with AI datacenters?"
 url: "https://martinalderson.com/posts/are-we-really-repeating-the-telecoms-crash-with-ai-datacenters/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-30T07:01:57.436446+00:00
+fetched_at: 2026-05-01T07:02:07.174259+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

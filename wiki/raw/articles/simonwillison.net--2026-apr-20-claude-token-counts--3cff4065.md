@@ -1,7 +1,7 @@
 ---
 title: "Claude Token Counter, now with model comparisons"
 url: "https://simonwillison.net/2026/Apr/20/claude-token-counts/#atom-everything"
-fetched_at: 2026-04-30T07:01:12.355522+00:00
+fetched_at: 2026-05-01T07:01:22.281985+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

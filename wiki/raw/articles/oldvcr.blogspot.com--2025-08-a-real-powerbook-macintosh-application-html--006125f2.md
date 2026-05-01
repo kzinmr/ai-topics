@@ -1,7 +1,7 @@
 ---
 title: "A real PowerBook: the Macintosh Application Environment on a PA-RISC laptop"
 url: "https://oldvcr.blogspot.com/2025/08/a-real-powerbook-macintosh-application.html"
-fetched_at: 2026-04-30T07:01:18.339504+00:00
+fetched_at: 2026-05-01T07:01:28.449734+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

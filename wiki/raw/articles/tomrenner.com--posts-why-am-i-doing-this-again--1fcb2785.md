@@ -1,7 +1,7 @@
 ---
 title: "Why am I doing this again?"
 url: "https://tomrenner.com/posts/why-am-i-doing-this-again/"
-fetched_at: 2026-04-30T07:00:59.204236+00:00
+fetched_at: 2026-05-01T07:01:08.547582+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

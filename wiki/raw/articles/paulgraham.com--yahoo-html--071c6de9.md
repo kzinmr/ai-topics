@@ -1,7 +1,7 @@
 ---
 title: "What Happened to Yahoo"
 url: "http://www.paulgraham.com/yahoo.html"
-fetched_at: 2026-04-30T07:01:32.325023+00:00
+fetched_at: 2026-05-01T07:01:42.123432+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

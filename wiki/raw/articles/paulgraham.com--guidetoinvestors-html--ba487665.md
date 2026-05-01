@@ -1,7 +1,7 @@
 ---
 title: "The Hacker's Guide to Investors"
 url: "http://www.paulgraham.com/guidetoinvestors.html"
-fetched_at: 2026-04-30T07:01:39.223801+00:00
+fetched_at: 2026-05-01T07:01:48.746067+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

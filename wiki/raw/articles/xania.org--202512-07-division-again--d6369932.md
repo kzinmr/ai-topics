@@ -1,7 +1,7 @@
 ---
 title: "Multiplying our way out of division"
 url: "http://xania.org/202512/07-division-again?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-30T07:00:58.421262+00:00
+fetched_at: 2026-05-01T07:01:07.722011+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

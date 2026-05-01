@@ -1,7 +1,7 @@
 ---
 title: "Why Smart People Have Bad Ideas"
 url: "http://www.paulgraham.com/bronze.html"
-fetched_at: 2026-04-30T07:01:43.273967+00:00
+fetched_at: 2026-05-01T07:01:52.666362+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

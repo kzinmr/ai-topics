@@ -1,7 +1,7 @@
 ---
 title: "Mini-review: David Pogue's Apple: The First 50 Years"
 url: "https://oldvcr.blogspot.com/2026/03/mini-review-david-pogues-apple-first-50.html"
-fetched_at: 2026-04-30T07:01:16.705052+00:00
+fetched_at: 2026-05-01T07:01:26.081958+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

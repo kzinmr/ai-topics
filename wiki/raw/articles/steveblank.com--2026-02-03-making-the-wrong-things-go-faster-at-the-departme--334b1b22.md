@@ -1,7 +1,7 @@
 ---
 title: "Making the Wrong Things Go Faster at The Department of War"
 url: "https://steveblank.com/2026/02/03/making-the-wrong-things-go-faster-at-the-department-of-war/"
-fetched_at: 2026-04-30T07:01:03.206593+00:00
+fetched_at: 2026-05-01T07:01:12.500861+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

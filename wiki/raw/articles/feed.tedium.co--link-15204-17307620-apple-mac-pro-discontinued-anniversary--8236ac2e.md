@@ -1,7 +1,7 @@
 ---
 title: "The Timing Is Symbolic"
 url: "https://feed.tedium.co/link/15204/17307620/apple-mac-pro-discontinued-anniversary"
-fetched_at: 2026-04-30T07:00:56.233377+00:00
+fetched_at: 2026-05-01T07:01:05.550541+00:00
 source: "tedium.co"
 tags: [blog, raw]
 ---

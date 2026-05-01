@@ -1,7 +1,7 @@
 ---
 title: "Writing an LLM from scratch, part 32g -- Interventions: weight tying"
 url: "https://www.gilesthomas.com/2026/03/llm-from-scratch-32g-interventions-weight-tying"
-fetched_at: 2026-04-30T07:01:56.286957+00:00
+fetched_at: 2026-05-01T07:02:05.395393+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
 ---

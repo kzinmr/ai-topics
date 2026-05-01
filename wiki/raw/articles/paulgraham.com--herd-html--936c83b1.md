@@ -1,7 +1,7 @@
 ---
 title: "Investor Herd Dynamics"
 url: "http://www.paulgraham.com/herd.html"
-fetched_at: 2026-04-30T07:01:29.294925+00:00
+fetched_at: 2026-05-01T07:01:39.255343+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

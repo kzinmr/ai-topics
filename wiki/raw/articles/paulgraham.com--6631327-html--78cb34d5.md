@@ -1,7 +1,7 @@
 ---
 title: "6,631,372"
 url: "http://www.paulgraham.com/6631327.html"
-fetched_at: 2026-04-30T07:01:41.232438+00:00
+fetched_at: 2026-05-01T07:01:50.559609+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

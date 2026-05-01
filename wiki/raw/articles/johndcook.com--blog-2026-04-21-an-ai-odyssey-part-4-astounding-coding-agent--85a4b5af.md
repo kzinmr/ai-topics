@@ -1,7 +1,7 @@
 ---
 title: "An AI Odyssey, Part 4: Astounding Coding Agents"
 url: "https://www.johndcook.com/blog/2026/04/21/an-ai-odyssey-part-4-astounding-coding-agents/"
-fetched_at: 2026-04-30T07:01:59.871158+00:00
+fetched_at: 2026-05-01T07:02:09.570288+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

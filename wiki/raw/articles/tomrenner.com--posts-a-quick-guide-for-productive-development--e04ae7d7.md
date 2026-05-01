@@ -1,7 +1,7 @@
 ---
 title: "A quick guide for productive development"
 url: "https://tomrenner.com/posts/a-quick-guide-for-productive-development/"
-fetched_at: 2026-04-30T07:00:59.077551+00:00
+fetched_at: 2026-05-01T07:01:08.418920+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

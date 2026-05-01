@@ -1,7 +1,7 @@
 ---
 title: "Flagship-Level Coding in a 27B Dense Model"
 url: "https://simonwillison.net/2026/Apr/22/qwen36-27b/#atom-everything"
-fetched_at: 2026-04-30T07:01:12.190821+00:00
+fetched_at: 2026-05-01T07:01:21.575850+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

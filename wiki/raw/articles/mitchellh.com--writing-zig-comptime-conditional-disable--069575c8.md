@@ -1,7 +1,7 @@
 ---
 title: "Conditionally Disabling Code with Comptime in Zig"
 url: "https://mitchellh.com/writing/zig-comptime-conditional-disable"
-fetched_at: 2026-04-30T07:01:53.772675+00:00
+fetched_at: 2026-05-01T07:02:03.021809+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

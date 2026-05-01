@@ -1,7 +1,7 @@
 ---
 title: "Tread carefully, because you tread on my fucks."
 url: "https://www.joanwestenberg.com/tread-carefully-because-you-tread-on-my-fucks/"
-fetched_at: 2026-04-30T07:01:56.814097+00:00
+fetched_at: 2026-05-01T07:02:06.326772+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

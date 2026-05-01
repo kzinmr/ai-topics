@@ -1,7 +1,7 @@
 ---
 title: "The Entire Internet Is a UGC Reaction Video Now"
 url: "https://www.joanwestenberg.com/the-entire-internet-is-a-ugc-reaction-video-now/"
-fetched_at: 2026-04-30T07:01:56.717800+00:00
+fetched_at: 2026-05-01T07:02:06.149394+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "What You (Want to)* Want"
 url: "http://www.paulgraham.com/want.html"
-fetched_at: 2026-04-30T07:01:21.843008+00:00
+fetched_at: 2026-05-01T07:01:32.145018+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

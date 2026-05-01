@@ -1,7 +1,7 @@
 ---
 title: "Mean People Fail"
 url: "http://www.paulgraham.com/mean.html"
-fetched_at: 2026-04-30T07:01:29.018404+00:00
+fetched_at: 2026-05-01T07:01:38.837511+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

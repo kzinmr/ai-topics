@@ -1,7 +1,7 @@
 ---
 title: "How Does setState Know What to Do?"
 url: "https://overreacted.io/how-does-setstate-know-what-to-do/"
-fetched_at: 2026-04-30T07:01:53.196791+00:00
+fetched_at: 2026-05-01T07:02:02.517714+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

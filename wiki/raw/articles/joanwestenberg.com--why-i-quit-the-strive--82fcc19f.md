@@ -1,7 +1,7 @@
 ---
 title: "Why I quit \"The Strive\""
 url: "https://www.joanwestenberg.com/why-i-quit-the-strive/"
-fetched_at: 2026-04-30T07:01:56.585192+00:00
+fetched_at: 2026-05-01T07:02:05.990289+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

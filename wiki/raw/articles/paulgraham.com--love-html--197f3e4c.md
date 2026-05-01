@@ -1,7 +1,7 @@
 ---
 title: "How to Do What You Love"
 url: "http://www.paulgraham.com/love.html"
-fetched_at: 2026-04-30T07:01:41.630803+00:00
+fetched_at: 2026-05-01T07:01:51.017787+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

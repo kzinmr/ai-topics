@@ -1,7 +1,7 @@
 ---
 title: "Why to Move to a Startup Hub"
 url: "http://www.paulgraham.com/startuphubs.html"
-fetched_at: 2026-04-30T07:01:37.984477+00:00
+fetched_at: 2026-05-01T07:01:47.415756+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

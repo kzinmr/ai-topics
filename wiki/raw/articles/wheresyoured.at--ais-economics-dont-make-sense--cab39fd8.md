@@ -1,7 +1,7 @@
 ---
 title: "AI's Economics Don't Make Sense"
 url: "https://www.wheresyoured.at/ais-economics-dont-make-sense/"
-fetched_at: 2026-04-30T07:00:42.090244+00:00
+fetched_at: 2026-05-01T07:00:51.169038+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
 ---

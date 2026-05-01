@@ -1,7 +1,7 @@
 ---
 title: "The Math Is Haunted"
 url: "https://overreacted.io/the-math-is-haunted/"
-fetched_at: 2026-04-30T07:01:49.821341+00:00
+fetched_at: 2026-05-01T07:01:59.299219+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

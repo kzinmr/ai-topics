@@ -1,7 +1,7 @@
 ---
 title: "Changes in the system prompt between Claude Opus 4.6 and 4.7"
 url: "https://simonwillison.net/2026/Apr/18/opus-system-prompt/#atom-everything"
-fetched_at: 2026-04-30T07:01:12.658360+00:00
+fetched_at: 2026-05-01T07:01:21.751032+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

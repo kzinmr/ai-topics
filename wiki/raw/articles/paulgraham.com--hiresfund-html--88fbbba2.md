@@ -1,7 +1,7 @@
 ---
 title: "High Resolution Fundraising"
 url: "http://www.paulgraham.com/hiresfund.html"
-fetched_at: 2026-04-30T07:01:32.307828+00:00
+fetched_at: 2026-05-01T07:01:41.949975+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "A little tool to visualise MoE expert routing"
 url: "https://martinalderson.com/posts/moe-expert-routing-visualization/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-30T07:01:57.023023+00:00
+fetched_at: 2026-05-01T07:02:06.680789+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "How does AI impact skill formation?"
 url: "https://seangoedecke.com/how-does-ai-impact-skill-formation/"
-fetched_at: 2026-04-30T07:01:11.182650+00:00
+fetched_at: 2026-05-01T07:01:20.048414+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

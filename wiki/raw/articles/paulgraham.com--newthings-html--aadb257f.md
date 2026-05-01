@@ -1,7 +1,7 @@
 ---
 title: "Six Principles for Making New Things"
 url: "http://www.paulgraham.com/newthings.html"
-fetched_at: 2026-04-30T07:01:37.665649+00:00
+fetched_at: 2026-05-01T07:01:47.077680+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

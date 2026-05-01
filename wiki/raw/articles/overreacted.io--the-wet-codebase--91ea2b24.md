@@ -1,7 +1,7 @@
 ---
 title: "The WET Codebase"
 url: "https://overreacted.io/the-wet-codebase/"
-fetched_at: 2026-04-30T07:01:51.820087+00:00
+fetched_at: 2026-05-01T07:02:00.900489+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

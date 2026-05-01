@@ -1,7 +1,7 @@
 ---
 title: "A quote from Matthew Yglesias"
 url: "https://simonwillison.net/2026/Apr/28/matthew-yglesias/#atom-everything"
-fetched_at: 2026-04-30T07:00:42.271389+00:00
+fetched_at: 2026-05-01T07:00:51.286382+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

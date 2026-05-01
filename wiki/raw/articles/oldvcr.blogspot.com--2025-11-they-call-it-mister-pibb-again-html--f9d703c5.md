@@ -1,7 +1,7 @@
 ---
 title: "They call it Mister Pibb (again)"
 url: "https://oldvcr.blogspot.com/2025/11/they-call-it-mister-pibb-again.html"
-fetched_at: 2026-04-30T07:01:18.109177+00:00
+fetched_at: 2026-05-01T07:01:27.316133+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
 ---

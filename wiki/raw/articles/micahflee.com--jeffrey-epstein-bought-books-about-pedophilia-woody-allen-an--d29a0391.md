@@ -1,7 +1,7 @@
 ---
 title: "Jeffrey Epstein Bought Books About Pedophilia, Woody Allen, and Trump"
 url: "https://micahflee.com/jeffrey-epstein-bought-books-about-pedophilia-woody-allen-and-trump/"
-fetched_at: 2026-04-30T07:01:56.822520+00:00
+fetched_at: 2026-05-01T07:02:06.515579+00:00
 source: "micahflee.com"
 tags: [blog, raw]
 ---

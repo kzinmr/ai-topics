@@ -1,7 +1,7 @@
 ---
 title: "Why Improve Your Writing?"
 url: "https://refactoringenglish.com/chapters/why-improve-your-writing/"
-fetched_at: 2026-04-30T07:01:15.271044+00:00
+fetched_at: 2026-05-01T07:01:24.520387+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
 ---

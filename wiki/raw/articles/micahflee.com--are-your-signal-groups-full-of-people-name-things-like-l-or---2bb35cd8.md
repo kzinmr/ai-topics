@@ -1,7 +1,7 @@
 ---
 title: "Is everyone in your Signal groups named something like \"E\" or \"🥑\"? Nicknames can help!"
 url: "https://micahflee.com/are-your-signal-groups-full-of-people-name-things-like-l-or-sinicknames/"
-fetched_at: 2026-04-30T07:01:56.808066+00:00
+fetched_at: 2026-05-01T07:02:06.511875+00:00
 source: "micahflee.com"
 tags: [blog, raw]
 ---

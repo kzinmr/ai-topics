@@ -1,7 +1,7 @@
 ---
 title: "Loading... [13 kB]"
 url: "https://maurycyz.com/misc/13kb/"
-fetched_at: 2026-04-30T07:01:49.828821+00:00
+fetched_at: 2026-05-01T07:01:59.144405+00:00
 source: "maurycyz.com"
 tags: [blog, raw]
 ---

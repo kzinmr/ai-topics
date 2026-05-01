@@ -1,7 +1,7 @@
 ---
 title: "Taking down my site on purpose:"
 url: "https://maurycyz.com/misc/v6day/"
-fetched_at: 2026-04-30T07:01:49.794409+00:00
+fetched_at: 2026-05-01T07:01:59.137738+00:00
 source: "maurycyz.com"
 tags: [blog, raw]
 ---

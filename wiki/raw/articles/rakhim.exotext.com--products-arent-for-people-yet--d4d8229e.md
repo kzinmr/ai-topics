@@ -1,7 +1,7 @@
 ---
 title: "Products aren't for people yet"
 url: "https://rakhim.exotext.com/products-arent-for-people-yet"
-fetched_at: 2026-04-30T07:01:14.574059+00:00
+fetched_at: 2026-05-01T07:01:23.850804+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

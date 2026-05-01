@@ -1,7 +1,7 @@
 ---
 title: "Are Software Patents Evil?"
 url: "http://www.paulgraham.com/softwarepatents.html"
-fetched_at: 2026-04-30T07:01:41.290487+00:00
+fetched_at: 2026-05-01T07:01:50.696995+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

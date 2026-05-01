@@ -1,7 +1,7 @@
 ---
 title: "How do you do, fellow web developers? A growing disconnect."
 url: "https://rakhim.exotext.com/web-developers-a-growing-disconnect"
-fetched_at: 2026-04-30T07:01:14.220579+00:00
+fetched_at: 2026-05-01T07:01:23.581189+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

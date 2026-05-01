@@ -1,7 +1,7 @@
 ---
 title: "Still Worth Trying In 2026?"
 url: "https://feed.tedium.co/link/15204/17308221/self-hosting-platform-tools-guide"
-fetched_at: 2026-04-30T07:00:56.433734+00:00
+fetched_at: 2026-05-01T07:01:05.380599+00:00
 source: "tedium.co"
 tags: [blog, raw]
 ---

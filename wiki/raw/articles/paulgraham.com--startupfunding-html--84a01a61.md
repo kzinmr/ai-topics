@@ -1,7 +1,7 @@
 ---
 title: "How to Fund a Startup"
 url: "http://www.paulgraham.com/startupfunding.html"
-fetched_at: 2026-04-30T07:01:42.176415+00:00
+fetched_at: 2026-05-01T07:01:51.627580+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

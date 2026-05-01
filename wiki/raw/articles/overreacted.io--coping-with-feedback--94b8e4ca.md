@@ -1,7 +1,7 @@
 ---
 title: "Coping with Feedback"
 url: "https://overreacted.io/coping-with-feedback/"
-fetched_at: 2026-04-30T07:01:52.226629+00:00
+fetched_at: 2026-05-01T07:02:01.882991+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

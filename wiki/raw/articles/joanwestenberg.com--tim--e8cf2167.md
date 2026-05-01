@@ -1,7 +1,7 @@
 ---
 title: "Time is a User-Interface"
 url: "https://www.joanwestenberg.com/tim/"
-fetched_at: 2026-04-30T07:01:56.714138+00:00
+fetched_at: 2026-05-01T07:02:06.253214+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
 ---

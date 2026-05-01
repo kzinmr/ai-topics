@@ -1,7 +1,7 @@
 ---
 title: "The electromechanical angle computer inside the B-52 bomber's star tracker"
 url: "http://www.righto.com/2026/04/B-52-star-tracker-angle-computer.html"
-fetched_at: 2026-04-30T07:01:06.385287+00:00
+fetched_at: 2026-05-01T07:01:15.208231+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

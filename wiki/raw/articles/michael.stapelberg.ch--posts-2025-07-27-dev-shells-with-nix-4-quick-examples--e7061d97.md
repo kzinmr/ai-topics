@@ -1,7 +1,7 @@
 ---
 title: "Development shells with Nix: four quick examples (2025)"
 url: "https://michael.stapelberg.ch/posts/2025-07-27-dev-shells-with-nix-4-quick-examples/"
-fetched_at: 2026-04-30T07:01:05.683196+00:00
+fetched_at: 2026-05-01T07:01:15.110415+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
 ---

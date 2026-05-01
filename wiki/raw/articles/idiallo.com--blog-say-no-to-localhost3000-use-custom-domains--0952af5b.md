@@ -1,7 +1,7 @@
 ---
 title: "Don't use localhost:3000, use your own custom domain"
 url: "https://idiallo.com/blog/say-no-to-localhost3000-use-custom-domains?src=feed"
-fetched_at: 2026-04-30T07:00:45.077028+00:00
+fetched_at: 2026-05-01T07:00:54.268058+00:00
 source: "idiallo.com"
 tags: [blog, raw]
 ---

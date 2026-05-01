@@ -1,7 +1,7 @@
 ---
 title: "Automating starting Lambda Labs instances"
 url: "https://www.gilesthomas.com/2026/04/automating-starting-lambda-instances"
-fetched_at: 2026-04-30T07:01:56.128707+00:00
+fetched_at: 2026-05-01T07:02:05.240974+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
 ---

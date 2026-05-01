@@ -1,7 +1,7 @@
 ---
 title: "SQLAlchemy 2 In Practice - Chapter 2 - Database Tables"
 url: "https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-1---database-tables"
-fetched_at: 2026-04-30T07:01:20.575458+00:00
+fetched_at: 2026-05-01T07:01:30.103026+00:00
 source: "miguelgrinberg.com"
 tags: [blog, raw]
 ---

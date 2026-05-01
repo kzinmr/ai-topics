@@ -1,7 +1,7 @@
 ---
 title: "Quantum Y2K"
 url: "https://www.johndcook.com/blog/2026/03/31/quantum-y2k/"
-fetched_at: 2026-04-30T07:02:00.982769+00:00
+fetched_at: 2026-05-01T07:02:12.017582+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

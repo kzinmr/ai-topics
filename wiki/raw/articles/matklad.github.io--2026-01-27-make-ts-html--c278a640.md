@@ -1,7 +1,7 @@
 ---
 title: "make.ts"
 url: "https://matklad.github.io/2026/01/27/make-ts.html"
-fetched_at: 2026-04-30T07:01:58.206452+00:00
+fetched_at: 2026-05-01T07:02:07.988670+00:00
 source: "matklad.github.io"
 tags: [blog, raw]
 ---

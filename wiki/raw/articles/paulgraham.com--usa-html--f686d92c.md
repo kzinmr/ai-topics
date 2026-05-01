@@ -1,7 +1,7 @@
 ---
 title: "Made in USA"
 url: "http://www.paulgraham.com/usa.html"
-fetched_at: 2026-04-30T07:01:44.068043+00:00
+fetched_at: 2026-05-01T07:01:53.358415+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://sfstandard.com/2026/04/28/oak-sfo-reach-naming-settlement/"
-fetched_at: 2026-04-30T07:00:42.425184+00:00
+fetched_at: 2026-05-01T07:13:06.822662+00:00
 source: "daringfireball.net"
 tags: [blog, raw]
 ---

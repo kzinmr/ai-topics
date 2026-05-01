@@ -1,7 +1,7 @@
 ---
 title: "Rules for Writing Software Tutorials"
 url: "https://refactoringenglish.com/chapters/rules-for-software-tutorials/"
-fetched_at: 2026-04-30T07:01:16.791374+00:00
+fetched_at: 2026-05-01T07:01:25.407678+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
 ---

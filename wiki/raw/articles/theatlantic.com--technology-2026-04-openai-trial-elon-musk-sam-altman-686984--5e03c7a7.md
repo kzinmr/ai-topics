@@ -1,7 +1,7 @@
 ---
 title: "Sam Altman and Elon Musk Sure Dislike Each Other"
 url: "https://www.theatlantic.com/technology/2026/04/openai-trial-elon-musk-sam-altman/686984/?gift=iWa_iB9lkw4UuiWbIbrWGYJmg9p-llxzEAgykQekDFA"
-fetched_at: 2026-04-30T07:00:42.005761+00:00
+fetched_at: 2026-05-01T07:13:06.369385+00:00
 source: "daringfireball.net"
 tags: [blog, raw]
 ---

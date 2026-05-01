@@ -1,7 +1,7 @@
 ---
 title: "Dario Amodei, hype, AI safety, and the explosion of vibe-coded AI disasters"
 url: "https://garymarcus.substack.com/p/dario-amodei-hype-ai-safety-and-the"
-fetched_at: 2026-04-30T07:00:44.877742+00:00
+fetched_at: 2026-05-01T07:00:54.106829+00:00
 source: "garymarcus.substack.com"
 tags: [blog, raw]
 ---

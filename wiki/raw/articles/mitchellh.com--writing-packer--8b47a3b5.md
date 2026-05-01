@@ -1,7 +1,7 @@
 ---
 title: "Mitchell Hashimoto"
 url: "https://mitchellh.com/writing/packer"
-fetched_at: 2026-04-30T07:01:54.854204+00:00
+fetched_at: 2026-05-01T07:02:03.738585+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

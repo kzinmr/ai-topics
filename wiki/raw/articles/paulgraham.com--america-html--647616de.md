@@ -1,7 +1,7 @@
 ---
 title: "Why Startups Condense in America"
 url: "http://www.paulgraham.com/america.html"
-fetched_at: 2026-04-30T07:01:40.584188+00:00
+fetched_at: 2026-05-01T07:01:49.978059+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Good riddance, 4o"
 url: "https://mahadk.com/posts/4o/"
-fetched_at: 2026-04-30T07:01:08.472320+00:00
+fetched_at: 2026-05-01T07:01:17.664759+00:00
 source: "skyfall.dev"
 tags: [blog, raw]
 ---

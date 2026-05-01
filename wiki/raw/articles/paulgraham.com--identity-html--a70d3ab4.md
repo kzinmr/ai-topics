@@ -1,7 +1,7 @@
 ---
 title: "Keep Your Identity Small"
 url: "http://www.paulgraham.com/identity.html"
-fetched_at: 2026-04-30T07:01:35.343281+00:00
+fetched_at: 2026-05-01T07:01:45.040221+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

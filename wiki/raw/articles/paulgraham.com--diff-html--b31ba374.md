@@ -1,7 +1,7 @@
 ---
 title: "What Made Lisp Different"
 url: "http://www.paulgraham.com/diff.html"
-fetched_at: 2026-04-30T07:01:47.154591+00:00
+fetched_at: 2026-05-01T07:01:56.381158+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

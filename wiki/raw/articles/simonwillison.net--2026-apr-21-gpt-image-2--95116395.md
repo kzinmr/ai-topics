@@ -1,7 +1,7 @@
 ---
 title: "Where’s the raccoon with the ham radio? (ChatGPT Images 2.0)"
 url: "https://simonwillison.net/2026/Apr/21/gpt-image-2/#atom-everything"
-fetched_at: 2026-04-30T07:01:12.891217+00:00
+fetched_at: 2026-05-01T07:01:21.843462+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

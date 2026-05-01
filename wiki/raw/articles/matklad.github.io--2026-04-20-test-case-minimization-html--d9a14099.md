@@ -1,7 +1,7 @@
 ---
 title: "256 Lines or Less: Test Case Minimization"
 url: "https://matklad.github.io/2026/04/20/test-case-minimization.html"
-fetched_at: 2026-04-30T07:01:57.981961+00:00
+fetched_at: 2026-05-01T07:02:07.812640+00:00
 source: "matklad.github.io"
 tags: [blog, raw]
 ---

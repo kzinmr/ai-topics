@@ -1,7 +1,7 @@
 ---
 title: "Charisma / Power"
 url: "http://www.paulgraham.com/pow.html"
-fetched_at: 2026-04-30T07:01:26.560508+00:00
+fetched_at: 2026-05-01T07:01:36.632144+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

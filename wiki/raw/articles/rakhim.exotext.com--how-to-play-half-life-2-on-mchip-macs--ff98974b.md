@@ -1,7 +1,7 @@
 ---
 title: "How to play Half Life 1 and 2 on M-chip Macs"
 url: "https://rakhim.exotext.com/how-to-play-half-life-2-on-mchip-macs"
-fetched_at: 2026-04-30T07:01:13.878270+00:00
+fetched_at: 2026-05-01T07:01:23.183469+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

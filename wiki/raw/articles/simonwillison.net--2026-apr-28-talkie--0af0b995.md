@@ -1,7 +1,7 @@
 ---
 title: "a 13B vintage language model from 1930"
 url: "https://simonwillison.net/2026/Apr/28/talkie/#atom-everything"
-fetched_at: 2026-04-30T07:00:43.940045+00:00
+fetched_at: 2026-05-01T07:00:53.202928+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

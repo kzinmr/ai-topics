@@ -1,7 +1,7 @@
 ---
 title: "What Are the React Team Principles?"
 url: "https://overreacted.io/what-are-the-react-team-principles/"
-fetched_at: 2026-04-30T07:01:51.852303+00:00
+fetched_at: 2026-05-01T07:02:01.480917+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

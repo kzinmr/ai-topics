@@ -1,7 +1,7 @@
 ---
 title: "Pluralistic: Georgia’s voting technology blunder (18 Apr 2026)"
 url: "https://pluralistic.net/2026/04/18/dominion-sucks-actually/"
-fetched_at: 2026-04-30T07:01:02.945448+00:00
+fetched_at: 2026-05-01T07:01:13.357857+00:00
 source: "pluralistic.net"
 tags: [blog, raw]
 ---

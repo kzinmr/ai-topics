@@ -1,7 +1,7 @@
 ---
 title: "SQL functions in Google Sheets to fetch data from Datasette"
 url: "https://simonwillison.net/2026/Apr/20/datasette-sql/#atom-everything"
-fetched_at: 2026-04-30T07:01:12.897074+00:00
+fetched_at: 2026-05-01T07:01:22.207349+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

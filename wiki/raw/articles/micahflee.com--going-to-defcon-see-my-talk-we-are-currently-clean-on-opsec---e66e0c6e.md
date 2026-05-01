@@ -1,7 +1,7 @@
 ---
 title: "Going to DEFCON? See my talk, \"We are currently clean on OPSEC\": The Signalgate Saga"
 url: "https://micahflee.com/going-to-defcon-see-my-talk-we-are-currently-clean-on-opsec-the-signalgate-saga/"
-fetched_at: 2026-04-30T07:01:56.919761+00:00
+fetched_at: 2026-05-01T07:02:06.559582+00:00
 source: "micahflee.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "How To Sell to the Dept of War - The 2025 PEO Directory"
 url: "https://steveblank.com/2025/09/10/how-to-sell-to-the-dept-of-defense-the-2025-peo-directory/"
-fetched_at: 2026-04-30T07:01:03.410905+00:00
+fetched_at: 2026-05-01T07:01:12.839393+00:00
 source: "steveblank.com"
 tags: [blog, raw]
 ---

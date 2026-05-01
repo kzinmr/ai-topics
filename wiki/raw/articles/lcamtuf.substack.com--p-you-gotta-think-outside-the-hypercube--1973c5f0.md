@@ -1,7 +1,7 @@
 ---
 title: "You gotta think outside the hypercube"
 url: "https://lcamtuf.substack.com/p/you-gotta-think-outside-the-hypercube"
-fetched_at: 2026-04-30T07:02:02.096285+00:00
+fetched_at: 2026-05-01T07:02:12.233481+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
 ---

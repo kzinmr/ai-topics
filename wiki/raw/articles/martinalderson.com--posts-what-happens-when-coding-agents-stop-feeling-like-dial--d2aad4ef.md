@@ -1,7 +1,7 @@
 ---
 title: "What happens when coding agents stop feeling like dialup?"
 url: "https://martinalderson.com/posts/what-happens-when-coding-agents-stop-feeling-like-dialup/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-30T07:01:57.504047+00:00
+fetched_at: 2026-05-01T07:02:07.253253+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

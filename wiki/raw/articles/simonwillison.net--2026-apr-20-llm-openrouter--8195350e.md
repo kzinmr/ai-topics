@@ -1,7 +1,7 @@
 ---
 title: "llm-openrouter 0.6"
 url: "https://simonwillison.net/2026/Apr/20/llm-openrouter/#atom-everything"
-fetched_at: 2026-04-30T07:01:12.985491+00:00
+fetched_at: 2026-05-01T07:01:22.251000+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

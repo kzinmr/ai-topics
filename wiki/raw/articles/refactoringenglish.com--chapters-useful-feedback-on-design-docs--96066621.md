@@ -1,7 +1,7 @@
 ---
 title: "How to Get Meaningful Feedback on Your Design Document"
 url: "https://refactoringenglish.com/chapters/useful-feedback-on-design-docs/"
-fetched_at: 2026-04-30T07:01:14.853525+00:00
+fetched_at: 2026-05-01T07:01:24.365618+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Against Query Based Compilers"
 url: "https://matklad.github.io/2026/02/25/against-query-based-compilers.html"
-fetched_at: 2026-04-30T07:01:58.008532+00:00
+fetched_at: 2026-05-01T07:02:07.816238+00:00
 source: "matklad.github.io"
 tags: [blog, raw]
 ---

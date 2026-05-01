@@ -1,7 +1,7 @@
 ---
 title: "My Wishlist for Hot Reloading"
 url: "https://overreacted.io/my-wishlist-for-hot-reloading/"
-fetched_at: 2026-04-30T07:01:53.217616+00:00
+fetched_at: 2026-05-01T07:02:02.647998+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

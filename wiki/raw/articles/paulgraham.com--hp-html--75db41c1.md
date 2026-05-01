@@ -1,7 +1,7 @@
 ---
 title: "Hackers and Painters"
 url: "http://www.paulgraham.com/hp.html"
-fetched_at: 2026-04-30T07:01:45.611475+00:00
+fetched_at: 2026-05-01T07:01:54.936036+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

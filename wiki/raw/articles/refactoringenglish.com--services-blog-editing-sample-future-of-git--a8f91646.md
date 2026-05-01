@@ -1,7 +1,7 @@
 ---
 title: "Refactoring English"
 url: "https://refactoringenglish.com/services/blog-editing/sample-future-of-git/"
-fetched_at: 2026-04-30T07:01:16.693995+00:00
+fetched_at: 2026-05-01T07:01:25.691172+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
 ---

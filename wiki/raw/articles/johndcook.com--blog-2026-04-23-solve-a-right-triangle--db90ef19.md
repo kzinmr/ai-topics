@@ -1,7 +1,7 @@
 ---
 title: "Simple approximation for solving a right triangle"
 url: "https://www.johndcook.com/blog/2026/04/23/solve-a-right-triangle/"
-fetched_at: 2026-04-30T07:01:59.838765+00:00
+fetched_at: 2026-05-01T07:02:09.933787+00:00
 source: "johndcook.com"
 tags: [blog, raw]
 ---

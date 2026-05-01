@@ -1,7 +1,7 @@
 ---
 title: "Inequality and Risk"
 url: "http://www.paulgraham.com/inequality.html"
-fetched_at: 2026-04-30T07:01:42.379011+00:00
+fetched_at: 2026-05-01T07:01:51.722510+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

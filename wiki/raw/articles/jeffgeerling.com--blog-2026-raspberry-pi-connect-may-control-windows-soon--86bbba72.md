@@ -1,7 +1,7 @@
 ---
 title: "Raspberry Pi Connect may control Windows soon"
 url: "https://www.jeffgeerling.com/blog/2026/raspberry-pi-connect-may-control-windows-soon/"
-fetched_at: 2026-04-30T07:00:41.307323+00:00
+fetched_at: 2026-05-01T07:13:05.694673+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Which web frameworks are most token-efficient for AI agents?"
 url: "https://martinalderson.com/posts/which-web-frameworks-are-most-token-efficient-for-ai-agents/?utm_source=rss&utm_medium=rss&utm_campaign=feed"
-fetched_at: 2026-04-30T07:01:57.233557+00:00
+fetched_at: 2026-05-01T07:02:06.888614+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
 ---

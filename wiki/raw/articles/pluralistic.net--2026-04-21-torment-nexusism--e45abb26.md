@@ -1,7 +1,7 @@
 ---
 title: "Pluralistic: Quinn Slobodian and Ben Tarnoff’s “Muskism: A Guide for the Perplexed” (21 Apr 2026)"
 url: "https://pluralistic.net/2026/04/21/torment-nexusism/"
-fetched_at: 2026-04-30T07:01:02.733801+00:00
+fetched_at: 2026-05-01T07:01:12.896752+00:00
 source: "pluralistic.net"
 tags: [blog, raw]
 ---

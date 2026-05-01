@@ -1,7 +1,7 @@
 ---
 title: "Pluralistic: The enshittification multiverse (27 Apr 2026)"
 url: "https://pluralistic.net/2026/04/27/analogs-and-analogies/"
-fetched_at: 2026-04-30T07:00:45.341144+00:00
+fetched_at: 2026-05-01T07:00:54.590779+00:00
 source: "pluralistic.net"
 tags: [blog, raw]
 ---

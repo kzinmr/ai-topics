@@ -1,7 +1,7 @@
 ---
 title: "How I estimate work as a staff software engineer"
 url: "https://seangoedecke.com/how-i-estimate-work/"
-fetched_at: 2026-04-30T07:01:11.372142+00:00
+fetched_at: 2026-05-01T07:01:20.290564+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

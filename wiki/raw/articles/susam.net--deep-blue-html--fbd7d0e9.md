@@ -1,7 +1,7 @@
 ---
 title: "Deep Blue: Chess vs Programming"
 url: "https://susam.net/deep-blue.html"
-fetched_at: 2026-04-30T07:00:56.729782+00:00
+fetched_at: 2026-05-01T07:01:06.054700+00:00
 source: "susam.net"
 tags: [blog, raw]
 ---

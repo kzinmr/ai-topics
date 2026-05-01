@@ -1,7 +1,7 @@
 ---
 title: "Let the Other 95% of Great Programmers In"
 url: "http://www.paulgraham.com/95.html"
-fetched_at: 2026-04-30T07:01:28.432745+00:00
+fetched_at: 2026-05-01T07:01:38.433496+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

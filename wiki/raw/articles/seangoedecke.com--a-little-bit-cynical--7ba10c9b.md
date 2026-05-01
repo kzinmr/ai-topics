@@ -1,7 +1,7 @@
 ---
 title: "Software engineers should be a little bit cynical"
 url: "https://seangoedecke.com/a-little-bit-cynical/"
-fetched_at: 2026-04-30T07:01:12.252626+00:00
+fetched_at: 2026-05-01T07:01:21.038272+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
 ---

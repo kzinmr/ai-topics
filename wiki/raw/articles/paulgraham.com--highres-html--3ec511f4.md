@@ -1,7 +1,7 @@
 ---
 title: "The High-Res Society"
 url: "http://www.paulgraham.com/highres.html"
-fetched_at: 2026-04-30T07:01:35.981502+00:00
+fetched_at: 2026-05-01T07:01:45.556447+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

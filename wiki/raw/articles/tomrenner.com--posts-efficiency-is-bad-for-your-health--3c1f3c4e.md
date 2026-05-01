@@ -1,7 +1,7 @@
 ---
 title: "\"Efficiency\" is bad for your health, and your learning"
 url: "https://tomrenner.com/posts/efficiency-is-bad-for-your-health/"
-fetched_at: 2026-04-30T07:00:59.039551+00:00
+fetched_at: 2026-05-01T07:01:08.373283+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
 ---

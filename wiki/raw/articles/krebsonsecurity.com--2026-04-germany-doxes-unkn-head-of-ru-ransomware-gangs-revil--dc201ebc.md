@@ -1,7 +1,7 @@
 ---
 title: "Germany Doxes “UNKN,” Head of RU Ransomware Gangs REvil, GandCrab"
 url: "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/"
-fetched_at: 2026-04-30T07:01:59.212780+00:00
+fetched_at: 2026-05-01T07:02:09.126946+00:00
 source: "krebsonsecurity.com"
 tags: [blog, raw]
 ---

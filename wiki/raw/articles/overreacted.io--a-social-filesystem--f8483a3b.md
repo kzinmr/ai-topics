@@ -1,7 +1,7 @@
 ---
 title: "A Social Filesystem"
 url: "https://overreacted.io/a-social-filesystem/"
-fetched_at: 2026-04-30T07:01:51.742646+00:00
+fetched_at: 2026-05-01T07:02:01.299818+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

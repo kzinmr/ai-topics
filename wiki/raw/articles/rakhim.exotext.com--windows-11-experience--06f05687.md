@@ -1,7 +1,7 @@
 ---
 title: "Windows 11 after two decades of macOS: okay, but also awful"
 url: "https://rakhim.exotext.com/windows-11-experience"
-fetched_at: 2026-04-30T07:01:13.353730+00:00
+fetched_at: 2026-05-01T07:01:22.779050+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
 ---

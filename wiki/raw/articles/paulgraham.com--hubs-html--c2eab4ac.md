@@ -1,7 +1,7 @@
 ---
 title: "Why Startup Hubs Work"
 url: "http://www.paulgraham.com/hubs.html"
-fetched_at: 2026-04-30T07:01:31.360929+00:00
+fetched_at: 2026-05-01T07:01:41.041226+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

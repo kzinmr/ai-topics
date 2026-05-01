@@ -1,7 +1,7 @@
 ---
 title: "Reverse engineering the mysterious Up-Data Link Test Set from Apollo"
 url: "http://www.righto.com/2025/07/reverse-engineering-mysterious-up-data.html"
-fetched_at: 2026-04-30T07:01:07.596686+00:00
+fetched_at: 2026-05-01T07:01:17.164303+00:00
 source: "righto.com"
 tags: [blog, raw]
 ---

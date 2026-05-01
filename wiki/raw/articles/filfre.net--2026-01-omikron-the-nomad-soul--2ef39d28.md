@@ -1,7 +1,7 @@
 ---
 title: "Omikron: The Nomad Soul"
 url: "https://www.filfre.net/2026/01/omikron-the-nomad-soul/"
-fetched_at: 2026-04-30T07:01:59.387346+00:00
+fetched_at: 2026-05-01T07:02:09.442115+00:00
 source: "filfre.net"
 tags: [blog, raw]
 ---

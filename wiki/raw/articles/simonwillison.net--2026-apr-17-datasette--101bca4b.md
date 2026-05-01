@@ -1,7 +1,7 @@
 ---
 title: "datasette 1.0a28"
 url: "https://simonwillison.net/2026/Apr/17/datasette/#atom-everything"
-fetched_at: 2026-04-30T07:01:13.414732+00:00
+fetched_at: 2026-05-01T07:01:22.594634+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "The Hundred-Year Language"
 url: "http://www.paulgraham.com/hundred.html"
-fetched_at: 2026-04-30T07:01:46.170150+00:00
+fetched_at: 2026-05-01T07:01:55.347451+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

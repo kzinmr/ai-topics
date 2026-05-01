@@ -1,7 +1,7 @@
 ---
 title: "Unswitching loops for fun and profit"
 url: "http://xania.org/202512/12-loop-unswitching?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-30T07:00:58.087760+00:00
+fetched_at: 2026-05-01T07:01:07.493730+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

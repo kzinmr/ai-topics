@@ -1,7 +1,7 @@
 ---
 title: "Ghostty Devlog 006"
 url: "https://mitchellh.com/writing/ghostty-devlog-006"
-fetched_at: 2026-04-30T07:01:53.888768+00:00
+fetched_at: 2026-05-01T07:02:03.345926+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
 ---

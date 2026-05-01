@@ -1,7 +1,7 @@
 ---
 title: "The Bus Ticket Theory of Genius"
 url: "http://www.paulgraham.com/genius.html"
-fetched_at: 2026-04-30T07:01:26.472131+00:00
+fetched_at: 2026-05-01T07:01:36.161450+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
 ---

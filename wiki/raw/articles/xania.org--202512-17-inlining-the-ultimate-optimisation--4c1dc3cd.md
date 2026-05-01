@@ -1,7 +1,7 @@
 ---
 title: "Inlining - the ultimate optimisation"
 url: "http://xania.org/202512/17-inlining-the-ultimate-optimisation?utm_source=feed&utm_medium=rss"
-fetched_at: 2026-04-30T07:00:57.923700+00:00
+fetched_at: 2026-05-01T07:01:07.146114+00:00
 source: "xania.org"
 tags: [blog, raw]
 ---

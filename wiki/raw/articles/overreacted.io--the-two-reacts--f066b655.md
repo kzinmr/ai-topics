@@ -1,7 +1,7 @@
 ---
 title: "The Two Reacts - overreacted"
 url: "https://overreacted.io/the-two-reacts/"
-fetched_at: 2026-04-30T07:01:51.094340+00:00
+fetched_at: 2026-05-01T07:02:00.754760+00:00
 source: "overreacted.io"
 tags: [blog, raw]
 ---

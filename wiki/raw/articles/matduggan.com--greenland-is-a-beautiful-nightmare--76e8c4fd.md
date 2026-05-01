@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 url: "https://matduggan.com/greenland-is-a-beautiful-nightmare/"
-fetched_at: 2026-04-30T07:01:48.844023+00:00
+fetched_at: 2026-05-01T07:01:58.693742+00:00
 source: "matduggan.com"
 tags: [blog, raw]
 ---
