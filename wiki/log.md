@@ -1,3 +1,16 @@
+## [2026-05-01] Active Crawl — Google Cloud Next 2026, GPT-OSS, Nemotron Cascade 2, Anti-Sycophancy
+
+- Created [[entities/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform announced at Cloud Next 2026. Evolves Vertex AI into full-stack agent platform with 4 pillars (Build/Scale/Govern/Optimize), 200+ models via Model Garden, Agent Studio, ADK, Memory Bank, Agent Sandbox. 75% of Google code now AI-generated.
+- Created [[entities/gpt-oss]] — OpenAI's first open-weight model since GPT-2 (Apache 2.0). Two MoE variants: 120B (5.1B active) and 20B (3.6B active). Near-o4-mini reasoning, configurable effort levels, native MXFP4. Strategic shift in OpenAI's openness posture.
+- Created [[entities/nemotron-cascade-2]] — NVIDIA's open-weight 30B MoE (3B active). Gold medal at IMO/IOI/ICPC 2025 via Cascade RL + Multi-Domain On-Policy Distillation. 24GB VRAM, 256K context. Embodies the "intelligence density" thesis.
+- Created [[concepts/anti-sycophancy]] — Concept page on sycophancy mitigation in LLMs. Covers the Silicon Mirror framework (Behavioral Access Control, Trait Classifier, Generator-Critic Loop) achieving 85.7% sycophancy reduction on Claude Sonnet 4. Characterizes RLHF "validation-before-correction" failure mode.
+- Updated [[index]] — Entities 358→361, Concepts 392→393, Total pages 743→747
+- Sources:
+  - raw/articles/2026-04-22_google-cloud-next-gemini-enterprise-agent-platform.md (Google blog + Cloud blog)
+  - raw/articles/2025-08-05_openai-gpt-oss-open-weight-models.md (OpenAI official)
+  - raw/articles/2026-03-16_nvidia-nemotron-cascade-2.md (NVIDIA Research)
+  - raw/articles/2026-04-02_arxiv-2604.00478-silicon-mirror-anti-sycophancy.md (arXiv:2604.00478)
+
 ## [2026-05-01] Dolt & Beads — エージェント向けデータベース/イシュートラッカーのwiki取り込み
 
 - Created [[entities/dolt]] — Version-controlled SQL database ("Git for Data") by DoltHub Inc. MySQL/Postgres/SQLite-compatible. Prolly Trees storage engine, branches/merges/diffs, Dolt MCP for AI agents, Hosted Dolt/DoltHub/DoltLab ecosystem.

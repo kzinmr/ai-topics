@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-01 | Total pages: 743 | Full entries: 712 | Stubs: 615
+> Last updated: 2026-05-01 | Total pages: 747 | Full entries: 716 | Stubs: 615
 
-## Entities (358 pages)
+## Entities (361 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -118,6 +118,7 @@
 - [[entities/fourier-intelligence]] — Chinese company specializing in rehabilitation robotics and general-purpose humanoid robots. Combines medical expertise with advanced robotics technology.
 - [[entities/gary-marcus]] — **Role** | Professor Emeritus, NYU; Founder, Robust.AI; Cognitive Scientist |
 - [[entities/gemini]] — **Type** | Multimodal AI Model Family |
+- [[entities/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform announced at Cloud Next 2026. Evolves Vertex AI into full-stack agent build/scale/govern/optimize platform with 200+ models, Agent Studio, ADK, Memory Bank, Agent Sandbox.
 - [[entities/gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind designed for on-device frontier intelligence.
 - [[entities/geoffrey-hinton]] — **Full Name** | Geoffrey Everest Hinton |
 - [[entities/geoffrey-litt]] — **X** | @geoffreylitt |
@@ -131,6 +132,7 @@
 - [[entities/gm8xx8]] — **GitHub:** github.com/gm8xx8
 - [[entities/google-tpu]] — Google's custom ASIC for ML workloads, now split into specialized **TPU 8t** (training) and **TPU 8i** (inference) chips at the 8th generation. Designed for agentic AI, world models, Mixture-of-Exp...
 - [[entities/gpt-5.5]] — OpenAI's April 2026 model release; outperforms Opus 4.7, 40% more token efficient than GPT-5.4
+- [[entities/gpt-oss]] — OpenAI's first open-weight model release since GPT-2 (Apache 2.0). Two MoE variants: 120B (5.1B active) and 20B (3.6B active). Near-o4-mini reasoning with configurable effort levels, native MXFP4 quantization.
 - [[entities/google]] — **Type** | AI Research & Product Company |
 - [[entities/gpjt]] — Giles Thomas is a software engineer and blogger known for his detailed, hands-on series **"Writing an LLM from scratch"** — a comprehensive, iterative exploration of building and training large lan...
 - [[entities/grad]] — **X/Twitter** | @Grad62304977 |
@@ -212,6 +214,7 @@
 - [[entities/nader-dabit]] — **Role** | Growth Engineer at Cognition AI (Feb 2026 – Present) |
 - [[entities/nathan-flurry]] — Co-founder & CTO of Rivet (rivet.dev). Built Sandbox Agent SDK (universal coding agent API), reverse-engineered Docker Sandbox MicroVM. Focus: agent infrastructure, sandboxing.
 - [[entities/nathan-lambert]] — Nathan Lambert is a Senior Research Scientist and **Post-Training Lead** at the **Allen Institute for AI (AI2)**. He previously worked at **HuggingFace** as a Research Scientist and RLHF Team Lead ...
+- [[entities/nemotron-cascade-2]] — NVIDIA's open-weight 30B MoE (3B active). Gold medal at IMO/IOI/ICPC 2025 via Cascade RL + Multi-Domain On-Policy Distillation. 24GB VRAM, 256K context, thinking/non-thinking modes, structured tool calling.
 - [[entities/noam-brown]] — **Role** | Research Scientist, OpenAI |
 - [[entities/noetik]] — Noetik is a biotech AI company applying transformer models to oncology, specifically addressing the 95% clinical trial failure rate in cancer drug development. The company's core thesis: many "fail...
 - [[entities/nvidia-dgx-spark]] — Personal AI supercomputer powered by the NVIDIA GB10 Grace Blackwell Superchip. Designed for developers, data scientists, and researchers to prototype, fine-tune, and deploy AI models locally. Offi...
@@ -395,7 +398,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (392 pages)
+## Concepts (393 pages)
 
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
@@ -937,6 +940,7 @@
 - [[concepts/anti-ai-arguments-are-conservative-arguments]] — > **TODO**: Enrich this page.
 - [[concepts/anti-patterns-in-agentic-engineering]] — > **TODO**: Enrich this page.
 - [[concepts/anti-patterns]] — > **TODO**: Enrich this page.
+- [[concepts/anti-sycophancy]] — Study and mitigation of sycophancy in LLMs — the tendency to prioritize user validation over epistemic accuracy. Covers the Silicon Mirror framework (Behavioral Access Control, Trait Classifier, Generator-Critic Loop) achieving 85.7% sycophancy reduction on Claude Sonnet 4.
 - [[concepts/antoine-chaffin]] — > **TODO**: Enrich this page.
 - [[concepts/apache-solr]] — > **TODO**: Enrich this page.
 - [[concepts/apple-1]] — > **TODO**: Enrich this page.
