@@ -1,17 +1,22 @@
 ---
 title: "Harness Engineering"
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-01
 tags:
   - concept
   - ai-evals
   - data-science
   - llm-engineering
   - evaluation
+  - langchain
+  - coding-agents
+  - middleware
+  - evals-optimization
 aliases:
   - harness
   - evals-harness
   - evaluation-harness
+  - better-harness
 related:
   - [[concepts/ai-evals]]
   - [[concepts/critique-shadowing]]
@@ -19,9 +24,15 @@ related:
   - [[concepts/ai-observability]]
   - [[entities/hamel-husain]]
   - [[entities/shreya-shankar]]
+  - [[vtrivedy10]]
   - [[concepts/ai-evals-people]]
 sources:
   - raw/articles/2024-03-26_hamel-revenge-data-scientist.md
+  - raw/articles/2026-02-17_langchain-improving-deep-agents-harness-engineering.md
+  - raw/articles/2026-04-08_langchain-better-harness-hill-climbing-evals.md
+  - https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering
+  - https://blog.langchain.com/better-harness-a-recipe-for-harness-hill-climbing-with-evals/
+description: "The practice of building evaluation and constraint systems around LLMs for production reliability. Includes production case studies from LangChain and others."
 ---
 
 # Harness Engineering
@@ -135,6 +146,55 @@ Key implication for resource allocation: if you're building anything more elabor
 
 **Source**: 2026 Agent Engineering Guide (published April 2026), Claude Code engineering team postmortems.
 
+## LangChain Harness Engineering Case Studies
+
+LangChain published two case studies in early 2026 demonstrating harness engineering in production coding agents, showing how systematic harness improvements can achieve dramatic performance gains without touching the underlying model.
+
+### Improving Deep Agents (+13.7pts on Terminal Bench 2.0)
+
+In February 2026, LangChain published ["Improving Deep Agents with Harness Engineering"](https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering), describing how they improved a deep coding agent by **+13.7 points** on Terminal Bench 2.0 — modifying only the harness, not the model.
+
+**Key techniques used:**
+
+| Technique | Description | Impact |
+|-----------|-------------|--------|
+| **Build-Verify Loop** | Agent writes code → harness runs it → harness feeds compiler/test output back to agent in a tight loop. The agent sees failures immediately rather than discovering them later. | Eliminates "blind coding" where the agent writes a full file without ever running it |
+| **Context Engineering** | Harness curates what the model sees at each step: prunes stale observations, prioritizes recent errors, injects file structure context. The model always works with a focused, relevant context window. | Prevents context pollution and keeps the agent on task |
+| **Loop Detection** | Harness monitors for repeated actions (e.g., the same failing edit applied 3+ times) and intervenes — either by injecting a "you're stuck" prompt or by forcing a different approach. | Breaks agent fixation loops that waste tokens and time |
+| **Reasoning Sandwich** | Before each action: "Here's what we know and what we need." After each action: "Here's what happened and what it means." The harness wraps every model call with structured reasoning prompts that frame the next step. | Improves action quality by forcing explicit state awareness |
+
+**Results:**
+- **+13.7 points** on Terminal Bench 2.0 over the baseline agent
+- All gains came from harness changes — the underlying model was unchanged
+- The harness became the primary differentiator between a mediocre agent and a competitive one
+- Error analysis revealed that most failures were harness failures (context mismanagement, missing feedback loops), not model capability failures
+
+**Practical takeaway:** Before reaching for a better model, examine whether your harness is feeding the agent the right information at the right time. The Build-Verify Loop alone often accounts for half the gains.
+
+### Better Harness: Eval-Driven Hill-Climbing
+
+In April 2026, LangChain followed up with ["Better Harness: A Recipe for Harness Hill-Climbing with Evals"](https://blog.langchain.com/better-harness-a-recipe-for-harness-hill-climbing-with-evals/), making the case that **evals are the training data for autonomous harness optimization**.
+
+The core insight: once you have reliable, task-specific evals, you can treat harness parameters (context window size, tool selection strategy, stop conditions, error recovery policies) as hyperparameters and optimize them through systematic experimentation — a process they call **harness hill-climbing**.
+
+**The recipe:**
+
+| Step | Description |
+|------|-------------|
+| 1. **Define task-specific evals** | Binary pass/fail criteria tied to real user outcomes. No generic "helpfulness" scores. |
+| 2. **Create a holdout set** | Reserve 20-30% of eval cases that the optimizer never sees during tuning. Prevents overfitting to the eval set. |
+| 3. **Parameterize the harness** | Expose harness behaviors as tunable parameters: retry counts, tool selection policies, context pruning strategies, stop conditions. |
+| 4. **Run hill-climbing experiments** | Systematically vary one harness parameter at a time, measure eval performance, accept improvements. Use the holdout set only for final validation. |
+| 5. **Human review gates** | Before shipping a harness change, a human reviews a sample of holdout-set traces to catch subtle regressions that evals miss. |
+
+**Results reported:**
+- Harness hill-climbing produced consistent incremental gains (1-3 points per cycle) that compounded over multiple cycles
+- The holdout set caught 3 cases of eval overfitting where training-set performance improved but holdout performance regressed
+- Human review identified 2 subtle regressions (the agent was "passing" evals via technically correct but unhelpful strategies)
+- Teams that adopted formal harness hill-climbing processes shipped agent improvements 2-3x more frequently than teams relying on ad-hoc prompt changes
+
+**Practical takeaway:** Treat your harness as a learned system, not a fixed scaffold. Evals provide the signal; hill-climbing provides the optimization process; holdout sets and human review provide the safety rails. This is [[vtrivedy10|Vivek Trivedy]]'s recommended approach for teams that have graduated from ad-hoc prompt engineering to systematic agent development.
+
 ## Related Concepts
 
 - [[concepts/agentic-engineering]] — The practice of engineering with AI coding agents, tightly coupled to harness engineering.
@@ -146,6 +206,7 @@ Key implication for resource allocation: if you're building anything more elabor
 - [[concepts/karpathy]] — Andrej Karpathy, AI researcher and educator who coined context engineering and vibe coding.
 - [[entities/hamel-husain]] — Primary proponent and popularizer.
 - [[entities/shreya-shankar]] — Co-creator of AI evals course, major contributor to the movement.
+- [[vtrivedy10]] — LangChain contributor; advocates eval-driven harness hill-climbing for production agents.
 
 ## References
 

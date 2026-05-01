@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-01 | Total pages: 749 | Full entries: 718 | Stubs: 615
+> Last updated: 2026-05-01 | Total pages: 750 | Full entries: 719 | Stubs: 615
 
 ## Entities (362 pages)
 
@@ -583,7 +583,7 @@
 - [[concepts/gpt-models]] — The **GPT** (Generative Pre-trained Transformer) series, developed by OpenAI, represents the evolution of decoder-only transformer language models from 117M parameters (2018) to frontier-scale reas...
 - [[concepts/halo-loss-attention-sinks]] — Transformerモデルにおける「Attention Sinks」（注意の沈み込み）現象と、これに対処するHALO損失関数の理論と歴史。
 - [[concepts/harness-design-long-running-apps]] — Anthropic Labs（Prithvi Rajasekaran）による長期自律エージェントの実践設計。**GAN-inspiredループ**（Generator ↔ Evaluator）をフルスタック開発にスケールさせたアーキテクチャ。
-- [[concepts/harness-engineering]] — The practice of building evaluation systems, tests, and constraints that guide LLMs to reliable outputs. Popularized by [[entities/hamel-husain|Hamel Husain]], who argues the harness is fundamentally a data science problem.
+- [[concepts/harness-engineering]] — The practice of building evaluation systems, tests, and constraints that guide LLMs to reliable outputs. Popularized by Hamel Husain and advanced by Vivek Trivedy (LangChain) who demonstrated +13.7pts on Terminal Bench 2.0 through harness-only changes, and introduced eval-driven hill-climbing for autonomous harness optimization.
 - [[concepts/harness-engineering/agentic-engineering-patterns]] — Simon Willisonが2026年2月23日に開始したガイドプロジェクト。コーディングエージェント（Claude Code、OpenAI Codex、Gemini CLI等）から最高の結果を得るための実践パターンを体系化したもの。
 - [[concepts/harness-engineering/agentic-engineering]] — > **Definition:** Agentic engineering is the practice of treating AI coding agents (Claude Code, Codex, etc.) as junior team members on a development project. Humans act as supervisors — providing ...
 - [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — コードベースを「人間がナビゲートしやすい」のではなく**「AIエージェントが作業しやすい」ように設計する**哲学。
@@ -959,6 +959,7 @@
 - [[concepts/at-protocol]] — > **TODO**: Enrich this page.
 - [[concepts/austral]] — > **TODO**: Enrich this page.
 - [[concepts/autoreason]] — A self-refinement framework for AI reasoning that extends karpathy-loop (Karpathy's AutoResearch) into the subjective reasoning domain. Addresses three structural failures in iterative self-refinem...
+- [[concepts/autodata-agentic-data-creation]] — Meta AI's Autodata framework: agentic data scientists that iteratively generate, evaluate, and refine training/eval data. Uses Weak-vs-Strong solver paradigm with 34% discrimination gap (vs 1.9% baseline). Meta-optimization improved pass rate from 12.8%→42.4%. Key technique for converting inference compute into higher-quality data.
 - [[concepts/axolotl-fine-tuning-framework]] — > **TODO**: Enrich this page.
 - [[concepts/background-agent-orchestration-linear-github-workflow-automation-graph-based]] — > **TODO**: Enrich this page.
 - [[concepts/base-consistency-model]] — > **TODO**: Enrich this page.
