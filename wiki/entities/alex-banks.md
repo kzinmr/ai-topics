@@ -2,7 +2,7 @@
 title: "Alex Banks"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-10
+updated: 2026-05-01
 type: entity
 ---
 
@@ -52,6 +52,7 @@ His approach to AI education is distinctive: rather than chasing every announcem
 | 2024–2025 | Newsletter grew from ~40,000 to 55,000+ subscribers |
 | 2025–2026 | X following grew to 140K+; LinkedIn to 185K+ |
 | Mar 2026 | Published "How to Build Skills in Claude" — detailed workflow guide for Claude Skills |
+| Apr 2026 | Published Claude Cowork series: "How to properly set up Claude Cowork," "How to Build Skills in Claude," "How to Setup Projects in Claude," "How to run Claude Cowork from your phone (Dispatch)" — comprehensive workflow guides covering the entire Claude desktop agent workflow from setup to mobile async orchestration |
 
 ## Core Ideas
 
@@ -118,7 +119,8 @@ Despite working in AI, Banks consistently returns to the human element:
 -  — Alex Banks's weekly AI newsletter
 -  — Platform where Banks teaches prompt engineering
 -  — AI analytics startup founded by Banks
-- [[anthropic]] — Frequent coverage subject; Banks is an early adopter of Claude Skills
+- [[anthropic]] — Frequent coverage subject; Banks is an early adopter of Claude Skills, Claude Cowork, and Claude Dispatch
+- [[concepts/agentic-engineering]] — Banks's Claude Cowork/Dispatch workflow series exemplifies agentic engineering patterns (async orchestration, phone-to-desktop pairing, walkie-talkie model)
 - [[concepts/resilient-prompt-engineering]] — Banks's core expertise area
 
 ## Sources

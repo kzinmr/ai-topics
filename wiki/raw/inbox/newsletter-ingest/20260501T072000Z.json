@@ -1,0 +1,96 @@
+{
+  "triage_timestamp": "2026-05-01T07:20:00Z",
+  "run_id": "20260501T071514Z",
+  "newsletters": [
+    {
+      "message_id": "<20260430130322.3.b25e2af196d4d062@mg2.substack.com>",
+      "subject": "How to run Claude Cowork from your phone",
+      "source": "The Signal / Alex Banks",
+      "date": "2026-04-30",
+      "canonical_url": "https://thesignal.substack.com/p/how-to-run-claude-cowork-from-your",
+      "classification": "high",
+      "summary": "Workflow guide on Claude Dispatch — running Cowork tasks asynchronously from phone to desktop. Covers the two-minute phone-desktop pairing setup, how Dispatch differs from normal chatbot usage (asynchronous orchestrator vs. interactive chat), and weekly prompt patterns.",
+      "wiki_relevance": "AI Agent workflows, Claude Cowork ecosystem, mobile agent interaction patterns",
+      "recommended_action": "Enrich entities: claude-cowork, dispatch. Update claude-cowork entity page with mobile/remote usage patterns."
+    },
+    {
+      "message_id": "<20260430130321.3.c05155a0ff47492e@mg-d0.substack.com>",
+      "subject": "Building gets easier",
+      "source": "Ben's Bites / Ben Tossell",
+      "date": "2026-04-30",
+      "canonical_url": "https://www.bensbites.com/p/building-gets-easier",
+      "classification": "critical",
+      "summary": "Comprehensive roundup of agentic AI tooling: Cloudflare now allows agents to create accounts, buy domains, and deploy services autonomously; Stripe agentic commerce suite with Link wallet for agents (one-time-use credentials via CLI); Cursor SDK for building agents on same runtime as Cursor editor; Warp terminal going open-source with OpenAI as founding sponsor; Poolside releasing Laguna M.1 and XS.2 models for agentic coding; here.now agent cloud storage; Sandcastle open-source software factory; Martin Fowler's updated AI coding notes on vibe coding vs agentic engineering.",
+      "wiki_relevance": "AI coding agents, agent infrastructure, agentic commerce, developer tooling evolution",
+      "recommended_action": "Create/enrich entities: cloudflare-agents, stripe-agentic-commerce, cursor-sdk, warp-terminal, poolside-laguna, here-now, sandcastle, agentic-engineering. Update ben-tossell entity. High-value content for agent infrastructure pages."
+    },
+    {
+      "message_id": "<20260430.155144.f520c795@mta5>",
+      "subject": "$700 Billion AI Bet, One Earnings Night",
+      "source": "AI News Newsletter (beehiiv)",
+      "date": "2026-04-30",
+      "canonical_url": "https://www.reuters.com/business/retail-consumer/google-cloud-pulls-ahead-big-techs-ai-bet-swells-700-billion-2026-04-30/",
+      "classification": "high",
+      "summary": "Big Tech Q1 2026 earnings analysis: combined AI capex now exceeding $700B for 2026. Google Cloud surged 63% to $20B (first time AI enterprise tools became #1 growth driver), shares +6%. Microsoft capex forecast $190B, Azure supply-constrained. Meta capex up to $145B, shares -10% on safety backlash. Amazon stable at $200B. Futurum Group analysis confirms $660-690B hyperscaler spend, Stargate $500B infrastructure project (OpenAI/SoftBank/Oracle), pure-play AI revenue <$35B vs capex gap, China investing ~$76B (Alibaba $53B/3yr, ByteDance $23B).",
+      "wiki_relevance": "AI infrastructure economics, hyperscaler capex, AI industry financial landscape",
+      "recommended_action": "Create concept page: ai-infrastructure-economics or update existing hyperscaler/investment pages. Key data for understanding the economic forces driving AI agent deployment."
+    },
+    {
+      "message_id": "<20260430205212.3.46aa2292c9bef2db@mg2.substack.com>",
+      "subject": "True Positive Weekly #159",
+      "source": "True Positive Weekly / Andriy Burkov",
+      "date": "2026-04-30",
+      "canonical_url": "https://aiweekly.substack.com/p/true-positive-weekly-159",
+      "classification": "medium",
+      "summary": "Weekly AI/ML news roundup: AI revolution in math (Quanta Magazine), hidden cost of Google's AI defaults (Ars Technica), developing future-ready skills with generative AI (Google Research), 8 tips for writing agent skills (Phil Schmid blog), visualizing loss landscapes of neural networks (Hackerstreak), Gemma 4 fine-tuning guide (Unsloth), Dive into Claude Code (ChapterPal podcast on agent system design space).",
+      "wiki_relevance": "Agent skills best practices, Claude Code, Gemma 4, ML visualization",
+      "recommended_action": "Create concept page: agent-skills-writing (based on Phil Schmid's 8 tips). Enrich gemma-4 entity with fine-tuning info. ChapterPal Claude Code content valuable for claude-code entity."
+    },
+    {
+      "message_id": "<20260501023044.3.745ea065c25611b5@mg2.substack.com>",
+      "subject": "AI Value Capture - The Shift To Model Labs",
+      "source": "SemiAnalysis / Dylan Patel",
+      "date": "2026-05-01",
+      "canonical_url": "https://newsletter.semianalysis.com/p/ai-value-capture-the-shift-to-model",
+      "classification": "critical",
+      "summary": "Deep analysis of AI value capture shift from infrastructure (Nvidia/TSMC) to model labs (Anthropic/OpenAI). Key findings: Anthropic ARR exploded from $9B to $44B, gross margins on inference up from 38% to 70%. Agentic AI transformed tokens from chat outputs to labor replacements. Cache hit rates 90%+ bring effective cost to ~$0.99/M tokens despite high sticker prices. Software optimizations (wideEP + disagg + MTP) yield 14x throughput increase. Vera Rubin VR NVL72 launching 2H26 with SOCAMM socketed memory. GPU rental economics: cost floor $4.92/hr vs value ceiling $12.25/hr. Nvidia acting as 'Central Bank' — strategic pricing restraint to maintain ecosystem dependence.",
+      "wiki_relevance": "AI economics, token economics, agentic AI ROI, GPU infrastructure pricing, model lab business models",
+      "recommended_action": "Create concept page: ai-value-capture-economics. Enrich semianalysis entity. Key data for understanding the economic viability of AI agents at scale."
+    },
+    {
+      "message_id": "<20260501045341.3.e19fbfcec2480774@mg-d1.substack.com>",
+      "subject": "[AINews] Agents for Everything Else: Codex for Knowledge Work, Claude for Creative Work",
+      "source": "AINews / swyx",
+      "date": "2026-05-01",
+      "canonical_url": "https://swyx.substack.com/p/ainews-agents-for-everything-else",
+      "classification": "critical",
+      "summary": "Comprehensive frontier AI landscape update. Codex: pivoted from dev tool to 'SuperApp' for knowledge work, 42% faster Computer Use, dynamic UI routing, /chronicle and /goal commands, deep Microsoft/Google/Salesforce integrations. Claude: creative suite support (Blender, Autodesk, Adobe, Ableton, Canva), Claude Security with Opus 4.7, 1M conversation study on sycophancy. GPT-5.5 cyber: 71.4% pass rate on UK AI Security Institute evals (vs Claude Mythos 68.6%), GPT-5.5 Pro 60% lower cost on CritPt. Open models: Qwen3.6 27B (Apache 2.0, 262K context, single H100), Grok 4.3 (1500 Elo), Hy3-preview (295B MoE), Ling 2.6 1T. DeepSeek V4-Flash: outputs bounding boxes/coordinates for GUI navigation. Pretraining now >100T tokens. Cursor agent harness engineering details. PyPI lightning package supply chain attack.",
+      "wiki_relevance": "Frontier model benchmarks, Codex expansion, Claude capabilities, open-source models, agent infrastructure, AI security",
+      "recommended_action": "HIGH PRIORITY: Create/update entities: codex-superapp, gpt-5-5, claude-mythos, qwen3-6, grok-4-3, hy3-preview, deepseek-v4-flash, cursor-agent-harness. Create concept: agent-harness-engineering. Update swyx entity."
+    }
+  ],
+  "summary": {
+    "total_newsletters": 6,
+    "critical": 3,
+    "high": 2,
+    "medium": 1,
+    "low": 0,
+    "key_themes": [
+      "Agentic AI tooling explosion (Codex, Claude Cowork, Cursor, Warp)",
+      "AI infrastructure economics ($700B capex, value capture shift to labs)",
+      "Frontier model competition (GPT-5.5, Claude Mythos, Qwen3.6, Grok 4.3)",
+      "Agent infrastructure maturation (Cloudflare agents, Stripe agentic commerce)",
+      "Agent engineering practices (skills, harness engineering, vibe coding vs agentic engineering)"
+    ],
+    "recommended_wiki_updates": [
+      "Create agent-skills-writing concept page",
+      "Create ai-value-capture-economics concept page",
+      "Create ai-infrastructure-economics concept page",
+      "Create agent-harness-engineering concept page",
+      "Enrich claude-cowork entity with mobile/Dispatch patterns",
+      "Create codex-superapp entity",
+      "Update frontier model entities (GPT-5.5, Claude Mythos, Qwen3.6, Grok 4.3)",
+      "Enrich entities: cloudflare, stripe, cursor, warp, poolside, semianalysis, swyx"
+    ]
+  }
+}

@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-01 | Total pages: 736 | Full entries: 707 | Stubs: 618
+> Last updated: 2026-05-01 | Total pages: 739 | Full entries: 707 | Stubs: 618
 
-## Entities (352 pages)
+## Entities (354 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -59,6 +59,7 @@
 - [[entities/claude-design]] — Anthropic Labs product for collaborative visual design, powered by Claude Opus 4.7's vision model. Released April 17, 2026 in research preview.
 - [[entities/claude-mythos]] — Anthropic's next-generation model, developed after . Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
 - [[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
+- [[entities/cloudflare]] — Global cloud platform repositioning as "agentic cloud" infrastructure. Agents SDK, Project Think, autonomous account provisioning via Stripe Projects, Registrar API.
 - [[entities/coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
 - [[entities/construction-physics-com]] — **URL:** https://constructionphysics.substack.com
 - [[entities/corbett]] — **X/Twitter** | @corbtt |
@@ -297,6 +298,7 @@
 - [[entities/vtrivedy10]] — **X** | @vtrivedy10 |
 - [[entities/vibevoice]] — Microsoft Research's next-token diffusion TTS model for long-form, multi-speaker conversational audio (up to 90 min, 4 speakers). ICLR 2026 Oral. Open-source (MIT). [[entities/vibevoice|→詳細]]
 - [[entities/walden-yan]] — **Role** | Co-Founder & Chief Product Officer (CPO), Cognition AI |
+- [[entities/warp-terminal]] — AI-native terminal and Agentic Development Environment (ADE). Open-sourced April 2026 under AGPLv3 with OpenAI as founding sponsor. Oz orchestration platform.
 - [[entities/webmcp]] — **WebMCP**は、W3C Web Machine Learning Community Groupで開発されているブラウザ標準。GoogleとMicrosoftが共同で策定し、AIエージェントがWebアプリケーションと構造的に対話するための`navigator.modelContext` APIを定義する。2026年2月にChrome 146で早期プレビューが開始された。
 - [[entities/westenberg]] — **Blog** | joanwestenberg.com |
 - [[entities/will-brown]] — **X/Twitter** | @willccbb |
@@ -389,7 +391,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (391 pages)
+## Concepts (392 pages)
 
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
@@ -420,6 +422,7 @@
 |- [[concepts/agent-architecture-decomposition]] — Three-layer framework for production AI agents: Open Models (intelligence), Open Runtime (execution environment), Open Harness (orchestration). Covers Agent on bash vs Agent on Python REPL (RLM, Pydantic AI), Micro-VM interpreters (Pydantic Monty), and MCP as universal adapter for heterogeneous agents.
 - [[concepts/agentic-ai-skills]] — Agentic AI Skills Design is the discipline of writing reusable documents that teach AI systems how to approach entire categories of tasks — not what to do in one specific situation, but the process...
 |- [[concepts/agentic-alternative-to-graphrag]] — A November 2025 paper by Contextual AI (George Halal, Jackie Zhang, Sheshansh Agrawal) proposing that the reference traversal problem in RAG pipelines should be solved via **agentic tool-use** rath...
+|- [[concepts/agentic-commerce]] — Emerging paradigm where AI agents autonomously discover products, negotiate purchases, and complete transactions. Stripe's Agentic Commerce Suite with ACP protocol, Shared Payment Tokens (SPTs), Link CLI agent wallet.
 |- [[concepts/agentic-browsing]] — Agentic Browsing refers to AI agents that autonomously navigate websites, click buttons, fill forms, and execute multi-step web tasks without human intervention. Tools like Browser Use, Playwright MCP, and Puppeteer enable agents to interact with web UIs as humans do — clicking, scrolling, typing, and reading structured and unstructured content.
 |- [[concepts/agentic-conflict-resolution]] — As organizations scale from a few AI agents to hundreds, they create a "digital workforce" with competing priorities. **Conflict is an inherent feature of multi-agent systems**, and must be designe...
 - [[concepts/agentic-design-patterns]] — A system-theoretic framework for engineering robust AI agents, deconstructing them into 5 functional subsystems and mapping them to a catalogue of 12 reusable Agentic Design Patterns (ADPs).

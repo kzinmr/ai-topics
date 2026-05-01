@@ -1,7 +1,7 @@
 ---
 title: Poolside
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-05-01
 type: entity
 tags: [company, model, coding-agents]
 sources:
@@ -61,3 +61,4 @@ The April 2026 Laguna release marks their first public shipping of foundation mo
 - [Poolside Blog: A Deeper Dive](https://poolside.ai/blog/laguna-a-deeper-dive)
 - [HuggingFace: poolside/Laguna-XS.2](https://huggingface.co/poolside/Laguna-XS.2)
 - [Ollama: Laguna XS.2](https://ollama.com/library/laguna-xs.2)
+- [Ben's Bites: Building gets easier (Apr 30, 2026)](https://open.substack.com/pub/bensbites/p/building-gets-easier)

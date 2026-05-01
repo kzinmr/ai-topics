@@ -735,3 +735,25 @@ Processed two articles from timsh.org covering Claude Code in Docker isolation a
 - **Scored 16 bookmarks** against Karpathy's filter: 7 Tier 1 (3x compound topics), 5 Tier 2, 4 Tier 3
 - **Karpathy filter alignment**: 5 bookmarks on context engineering (compound), 2 on tool design (compound), 1 on orchestrator-subagent (compound), 1 on eval discipline (compound)
 
+---
+
+## [2026-05-01] newsletter ingest | 2 newsletters: The Signal + Ben's Bites (triage recovery)
+
+- Newsletter pipeline: newsletter-triage failed to produce valid JSON; wiki-ingest performed triage directly.
+- Source 1: "How to run Claude Cowork from your phone" (The Signal, Alex Banks) — Paywalled; extracted Claude Dispatch concept (async agent orchestration from phone). Updated [[entities/alex-banks]].
+- Source 2: "Building gets easier" (Ben's Bites, Ben Tossell) — Rich AI ecosystem roundup.
+
+### New Pages Created
+- [[concepts/agentic-commerce]] — ★★★★★ Stripe's Agentic Commerce Suite, ACP/SPT protocols, Link CLI agent wallet, Stripe Projects (Cloudflare co-design). Core concept for agent economy.
+- [[entities/cloudflare]] — ★★★★☆ Agentic cloud infrastructure: Agents SDK, Project Think, autonomous account provisioning, Registrar API.
+- [[entities/warp-terminal]] — ★★★☆☆ AI-native terminal open-sourced (AGPLv3), OpenAI founding sponsor, Oz orchestration platform.
+
+### Updated Pages
+- [[entities/alex-banks]] — Added Claude Cowork/Dispatch series timeline entry and agentic engineering relationship.
+- [[entities/cursor-3]] — Added Ben's Bites source reference.
+- [[entities/poolside]] — Added Ben's Bites source reference.
+
+### Updated Index
+- Total pages: 736 → 739
+- Entities: 352 → 354 | Concepts: 391 → 392
+

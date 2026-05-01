@@ -2,7 +2,7 @@
 title: Cursor 3
 type: entity
 created: 2026-04-10
-updated: 2026-04-27
+updated: 2026-05-01
 tags:
 - entity
 - ide
@@ -70,6 +70,7 @@ This represents the next evolution of the [[concepts/harness-engineering]] thesi
 ## Sources
 - 
 - Cursor blog announcement
+- [Ben's Bites: Building gets easier (Apr 30, 2026)](https://open.substack.com/pub/bensbites/p/building-gets-easier)
 
 ## SpaceX Partnership (Apr 2026)
 
