@@ -838,8 +838,9 @@
 - [[concepts/speech/_index]] — Speech — index page for speech/audio AI concepts.
 - [[concepts/system-architecture/_index]] — System Architecture — index page for system design patterns.
 - [[concepts/tool-orchestration]] — Tool Orchestration — patterns for coordinating multiple tool calls in AI agents.
-## Comparisons (11 pages)
+## Comparisons (12 pages)
 
+- [[comparisons/coding-agent-harnesses]] — Code harnesses comparison: Claude Code vs OpenCode vs Pi vs Aider vs Codex CLI vs Cursor. Harness effect（ハーネス効果）とモデル×ハーネス相性マトリックスを中心に。
 - [[comparisons/agent-orchestration-frameworks]] — **Date:** April 10, 2026
 - [[comparisons/ai-agent-platforms]] — Two leading AI-powered agentic coding systems: Claude Code (Anthropic) and OpenAI Codex. Both represent the evolution from code completion to autonomous coding agents.
 - [[comparisons/ai-competition]] — The strategic competitive positions of the United States and China in AI, robotics, and embodied intelligence as of 2026.

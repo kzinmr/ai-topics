@@ -1,3 +1,8 @@
+## [2026-05-01] Coding Agent Harnesses Comparison 作成
+
+- Created [[comparisons/coding-agent-harnesses]] — コーディングエージェントハーネス比較：Claude Code vs OpenCode vs Pi vs Aider vs Codex CLI vs Cursor。ハーネス効果（Harness Effect）の概念、モデル×ハーネス相性マトリックス、実測ベンチマーク、Anthropicのサードパーティハーネス制限を含む。出典: thoughts.jock.pl, grigio.org, disler/pi-vs-claude-code GitHub, Terminal Trove。
+- Updated [[index]] — Comparisons 11→12 pages
+
 ## [2026-05-01] Blog Wiki Ingest — Reiner Pope, LLM 0.32a0, Codex /goal, Zig Anti-AI, GPT-5.5 Cyber Eval
 
 - Created [[entities/reiner-pope]] — CEO of MatX, former Google TPU architect. Expert on full-stack AI from chip design to model architecture. Known for roofline analysis framework.
