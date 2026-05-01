@@ -138,6 +138,16 @@
 
 ---
 
+## 2026-05-01 — RLM decomposition strategy analysis + merge/split symmetry
+
+- Updated [[concepts/dspy-rlm]] — Added 3 new subsections under "補完する2軸" framing:
+  1. "方向性の対称性: PTCは統合(merge)、RLMは分解(split)" — PTC merges N tool calls into 1 code block; RLM splits 1 huge context into N pieces. Mirror symmetry.
+  2. "RLM = 文脈の分割統治/MapReduceをLLMで柔らかく行う" — RLM as soft MapReduce: MAP = context exploration/code, SHUFFLE = llm_query extraction, REDUCE = SUBMIT/synthesis. Contrast with rigid MapReduce.
+  3. "文脈の分割戦略はLLM自身が決める——そして自由だ" — YES, the LLM decides decomposition strategy end-to-end. Spectrum from manual (raw Python) to delegated (PTC tools) to recursive (llm_query). 4 levels of decomposition freedom (method, granularity, depth, tool delegation). Tool-Augmented RLM code examples for each strategy.
+- Source: RLM paper §5 ("unlike prior agentic methods... defer decisions to the LM").
+
+---
+
 ## 2026-05-01 — PTC × RLM: 補完する2軸（関数軸 vs データ軸）に再フレーミング
 
 - Rewrote [[concepts/dspy-rlm]] section "RLM × Programmatic Tool Calling" — Added "補完する2軸（関数軸 vs データ軸）" framing. PTC solves tool execution (function axis), RLM solves context management (data axis). Both apply code execution to fundamentally different problems. Added comparison table, axis diagram, concrete code examples for each axis and their integration. Reorganized existing DSPy implementation analysis + first-principles design under the new framing.
