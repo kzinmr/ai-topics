@@ -138,6 +138,13 @@
 
 ---
 
+## 2026-05-01 — PTC × RLM: 補完する2軸（関数軸 vs データ軸）に再フレーミング
+
+- Rewrote [[concepts/dspy-rlm]] section "RLM × Programmatic Tool Calling" — Added "補完する2軸（関数軸 vs データ軸）" framing. PTC solves tool execution (function axis), RLM solves context management (data axis). Both apply code execution to fundamentally different problems. Added comparison table, axis diagram, concrete code examples for each axis and their integration. Reorganized existing DSPy implementation analysis + first-principles design under the new framing.
+- Rewrote [[concepts/programmatic-tool-calling]] section "Relation to RLM" — Same 2-axis framing. Confirmed user's insight: PTC = deterministic execution via code vs tool calling, RLM = context scaling/selection via code vs RAG/long-context. Cross-reference to dspy-rlm for full analysis.
+
+---
+
 ## 2026-05-01 — RLM × PTC first-principles re-analysis: architecturally fusible
 
 - Updated [[concepts/dspy-rlm]] — Added "第一原理からの再検討: PTC統合のための環境拡張設計" subsection. RLM論文の環境抽象化（Environment = {REPL, context, llm_query, SUBMIT}）は任意の記号的操作対象に拡張可能であり、PTCツールを第一級市民としてホストする設計が自然であることを論証。3つの統合アーキテクチャ（案A: PTC in RLM★推奨 / 案B: RLM as PTC Tool / 案C: Dual Environment）を提案。4つの設計課題と解決方針を明示。

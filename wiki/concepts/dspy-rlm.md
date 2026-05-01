@@ -221,9 +221,85 @@ DSPyのRLMと同様の「REPLを介したコンテキスト分解」は、pydant
 2. **DSPy互換ループ**: `RunCode | FinalAnswer` 構造化出力 + 明示的Action→Execute→Observeループ
 3. **graph-native版**: Plan/RunCode/Observe/Finalizeをpydantic-graphノードに分解 + Monty snapshotでdurable execution
 
-## RLM × Programmatic Tool Calling: 独立した2つのパラダイム
+## RLM × Programmatic Tool Calling: 補完する2軸（関数軸 vs データ軸）
 
-RLMと[[concepts/programmatic-tool-calling|Programmatic Tool Calling(PTC)]]は、同じ「LLMがコードを書く」基盤を共有しながらも、**異なる問題を異なる解決策で解く、独立進化したパラダイム**である。
+### 根本的なフレーミング
+
+RLMと[[concepts/programmatic-tool-calling|PTC]]は、LLMの2つの根本的な問題に、同じ解決策（コード実行）を適用したものと理解できる：
+
+| 軸 | PTCが解決する問題 | RLMが解決する問題 |
+|----|------------------|------------------|
+| **中心** | **ツール（関数）** — 「どう実行するか」 | **データ（文脈）** — 「何を分析するか」 |
+| **LLMの代替対象** | 逐次ツール呼び出し（N回の`tool_use`ブロック） | RAG / 長文脈プロンプト（全データの詰め込み） |
+| **問題** | ラウンドトリップ爆発・中間結果ブロート | Context rot（コンテキスト増大による性能劣化） |
+| **コードが書く対象** | `await tool_a()`, `asyncio.gather()` | `context[start:end]`, `re.findall()`, `llm_query()` |
+| **コードの目的** | ツールの実行順序・分岐・並列化を自由に制御 | データの探索範囲・分解方法を自由に選択 |
+| **コードの入出力** | 入力を決めてツールを呼び、結果を変数で受け取る | 文脈を切り出して分析し、集約して回答する |
+| **決定論の次元** | 実行順序の決定論（同じコードなら同じツールが同じ順序で呼ばれる） | 探索戦略の決定論（同じコードなら同じ範囲を見る） |
+| **自由度の次元** | 逐次ツール呼び出しより高い（コードで条件分岐・並列実行が可能） | RAG/長文脈より高い（コードで探索範囲・分解粒度を自由に制御） |
+
+### 補完関係の図示
+
+```
+                ↑ RLM (データ軸: 何を分析するか)
+                │   コードで文脈を探索・分解・再帰分析
+                │   context[start:end], llm_query(), SUBMIT()
+                │
+                │   ★ Tool-Augmented RLM (案A)
+                │   PTC in RLM — 環境にtoolsを追加
+                │   context探索 + await tool() + llm_query()
+                │
+    ────────────┼──────────────────────────────────→ PTC (関数軸: どう実行するか)
+                │   コードでツールをasync呼び出し・並列化
+                │   await tool(), asyncio.gather()
+                │
+                │   RLM as PTC Tool (案B)
+                │   PTCエージェントがRLMをツールの一つとして呼ぶ
+```
+
+### 具体例で見る違い
+
+**PTCのコード（関数軸）:**
+```python
+# 「どう実行するか」に集中
+results = await asyncio.gather(
+    query_database("SELECT * FROM sales"),
+    fetch_weather("Tokyo"),
+    search_docs("budget 2025"),
+)
+aggregated = sorted(results[0], key=lambda x: x['revenue'])[:5]
+print(aggregated)
+```
+
+**RLMのコード（データ軸）:**
+```python
+# 「何を分析するか」に集中
+budget_sections = [s for s in context if "budget" in s.lower()]
+for i, section in enumerate(budget_sections[:10]):
+    analysis = llm_query(f"Extract key numbers from: {section}")
+    print(f"Section {i}: {analysis}")
+SUBMIT(synthesized_answer)
+```
+
+**統合されたコード（Tool-Augmented RLM, 案A）:**
+```python
+# 両軸を同時に扱う
+relevant = [s for s in context if "revenue" in s.lower()]  # RLM: 文脈探索
+financials = await query_financial_api({"ids": extract_ids(relevant)})  # PTC: 外部実行
+analysis = llm_query(f"Compare: {relevant} vs {financials}")  # RLM: 再帰分析
+print(analysis)
+```
+
+### なぜこのフレーミングが重要か
+
+PTCとRLMを「コード実行」という共通基盤で1つにまとめてしまうと、**それぞれが解決している本質的に異なる問題が見えなくなる**。一方で「全く別物」として扱うと、**統合時の相乗効果を見落とす**。
+
+正しい理解:
+- PTCは**関数軸**の最適化（標準のtool callingが非効率なのをコードで改善）
+- RLMは**データ軸**の最適化（RAG/長文脈が非効率なのをコードで改善）
+- 両者は直交するため、統合（Tool-Augmented RLM, 案A）によって両軸を同時に最適化できる
+
+### DSPy実装における現状と第一原理の可能性
 
 ### RLMはPTCを陽に取り込んでいない
 

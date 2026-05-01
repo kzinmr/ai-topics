@@ -170,11 +170,68 @@ All three converge on the same insight: **LLMs are better at writing code than a
 
 This mechanism enables the Externalized Processing pattern described in [[concepts/agentic-search]]. Cao et al.'s finding that "coding agents are effective long-context processors" is a direct consequence of programmatic tool calling: the model writes code to grep, search, and filter before the results enter the context window.
 
-## Relation to RLM: Same Substrate, Different Problems — But Architecturally Fusible
+## Relation to RLM: 関数軸 vs データ軸の補完関係
 
-PTCと[[concepts/dspy-rlm|RLM]]は「LLMがコードを書く→サンドボックス実行→結果だけモデルに返る」という基盤を共有する独立進化パラダイムだが、**第一原理から見るとRLMの環境抽象化はPTCツールを自然にホストできる**。
+### 根本的なフレーミング
 
-### DSPy.RLM実装における現状
+PTCと[[concepts/dspy-rlm|RLM]]は、LLMの2つの異なる根本問題に**同じ解決策（コード実行）**を適用したものだが、その**中心が異なる**：
+
+| 次元 | PTC | RLM |
+|------|-----|-----|
+| **中心** | **ツール（関数）** — 「どう実行するか」 | **データ（文脈）** — 「何を分析するか」 |
+| **LLMの代替対象** | 逐次ツール呼び出し（N回の`tool_use`ブロック） | RAG / 長文脈プロンプト（全データの詰め込み） |
+| **問題** | ラウンドトリップ爆発・中間結果ブロート | Context rot（コンテキスト増大による性能劣化） |
+| **決定論の次元** | 実行順序の決定論（コードがツール呼び出し順序を固定） | 探索戦略の決定論（コードが探索範囲を固定） |
+| **自由度の次元** | 逐次ツール呼び出しより高い（条件分岐・並列実行が可能） | RAG/長文脈より高い（探索範囲・分解粒度を自由に制御） |
+
+あなたの直感は正確：
+
+> PTC = llm比で**決定論的実行**を動的に自由度高く実現する手段
+> RLM = RAG/長文脈llm比で**コンテキスト長スケーリングとコンテキスト選択**を動的に自由度高く実現する手段
+
+### 補完関係の図示
+
+```
+                ↑ RLM (データ軸)
+                │   コードで文脈を探索・分解
+                │   context[start:end], llm_query()
+                │
+                │   ★ Tool-Augmented RLM
+                │   context探索 + await tool() + llm_query()
+                │
+    ────────────┼─────────────────────────→ PTC (関数軸)
+                │   コードでツールをasync呼び出し
+                │   await tool(), asyncio.gather()
+```
+
+### 例: 両軸の違い
+
+**PTC（関数軸）:** ツールの実行方法に集中
+```python
+results = await asyncio.gather(
+    query_db("SELECT * FROM sales"),
+    fetch_weather("Tokyo"),
+)
+aggregated = sorted(results[0], ...)[:5]
+```
+
+**RLM（データ軸）:** データの分析方法に集中
+```python
+relevant = [s for s in context if "budget" in s.lower()]
+analysis = llm_query(f"Extract from: {relevant}")
+SUBMIT(analysis)
+```
+
+**統合（両軸）:** 両方を同時に扱う
+```python
+relevant = [s for s in context if "revenue" in s.lower()]  # RLM
+financials = await query_api({"ids": extract_ids(relevant)})  # PTC
+analysis = llm_query(f"Compare: {relevant} vs {financials}")  # RLM
+```
+
+完全な分析は[[concepts/dspy-rlm#RLM × Programmatic Tool Calling: 補完する2軸（関数軸 vs データ軸）]]を参照。
+
+### DSPy実装における現状
 
 | 次元 | PTC | RLM (DSPy実装) |
 |------|-----|-----|
