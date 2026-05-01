@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-01 | Total pages: 741 | Full entries: 710 | Stubs: 615
+> Last updated: 2026-05-01 | Total pages: 743 | Full entries: 712 | Stubs: 615
 
-## Entities (356 pages)
+## Entities (358 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -33,6 +33,7 @@
 - [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko, born 10 May 1989, Austria) is a software engineer, open-source developer, and entrepreneur who has profoundly shaped the Python ecosystem and is now building the next ge...
 - [[entities/avi-im]] — **Blog** | avi.im | Creator of **KVM**, author of [[concepts/zero-disk-architecture]]
 - [[entities/ashpreet-bedi]] — **Name** | Ashpreet Bedi |
+- [[entities/beads]] — Distributed graph issue tracker for AI coding agents. Created by Steve Yegge (Gastown Hall), powered by Dolt. Agent-optimized with dependency tracking, memory compaction, and MCP integration.
 - [[entities/beej-us]] — **URL:** https://beej.us
 - [[entities/ben-boyter]] — Creator of searchcode.com, scc (Sloc Cloc and Code), cs (Code Spelunker). Author of 'Marketing to the Machine' B2A thesis on Business-to-Agent design.
 - [[entities/benjamin-clavie]] — French ML researcher specializing in NLP and IR, creator of RAGatouille, co-author of ModernBERT. Co-hosted the "RAG Is Not Dead" series with Hamel Husain.
@@ -68,6 +69,7 @@
 - [[entities/daniel-han]] — **X/Twitter** | @danielhanchen |
 - [[entities/daniel-van-strien]] — **X** | @vanstriendaniel |
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
+- [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.
 - [[entities/dario-amodei]] — **Role** | Co-founder & CEO, Anthropic |
 - [[entities/dax-raad]] — **X** | @thdxr |
 - [[entities/daytona-io]] — CEO: Ivan Burazin. Composable computing environments (sandboxes) for AI agents.

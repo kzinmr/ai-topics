@@ -1,3 +1,10 @@
+## [2026-05-01] Dolt & Beads — エージェント向けデータベース/イシュートラッカーのwiki取り込み
+
+- Created [[entities/dolt]] — Version-controlled SQL database ("Git for Data") by DoltHub Inc. MySQL/Postgres/SQLite-compatible. Prolly Trees storage engine, branches/merges/diffs, Dolt MCP for AI agents, Hosted Dolt/DoltHub/DoltLab ecosystem.
+- Created [[entities/beads]] — Distributed graph issue tracker for AI coding agents by Steve Yegge (Gastown Hall). Powered by Dolt. Dependency-aware graph, memory compaction, hash-based IDs, MCP integration, formulas/molecules/gates.
+- Updated [[index]] — Entities 356→358, Total pages 741→743
+- Sources: dolthub.com, docs.dolthub.com, gastownhall.github.io/beads, github.com/steveyegge/beads, steve-yegge.medium.com (Beads Best Practices)
+
 ## [2026-05-01] Coding Agent Harnesses Comparison 作成
 
 - Created [[comparisons/coding-agent-harnesses]] — コーディングエージェントハーネス比較：Claude Code vs OpenCode vs Pi vs Aider vs Codex CLI vs Cursor。ハーネス効果（Harness Effect）の概念、モデル×ハーネス相性マトリックス、実測ベンチマーク、Anthropicのサードパーティハーネス制限を含む。出典: thoughts.jock.pl, grigio.org, disler/pi-vs-claude-code GitHub, Terminal Trove。
