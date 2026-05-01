@@ -12,8 +12,20 @@ Pre-verified query templates for the blogwatcher-cli SQLite database.
 
 ## Database Location
 
-- Path: `/home/exedev/.blogwatcher-cli/blogwatcher-cli.db`
-- Type: SQLite3
+- **Primary path:** `/opt/data/.blogwatcher/blogwatcher.db`
+- **Legacy/previous path:** `/home/exedev/.blogwatcher-cli/blogwatcher-cli.db`
+- **Type:** SQLite3
+- **⚠️ DB name is `blogwatcher.db`, NOT `blogwatcher-cli.db`** — use `find / -name 'blogwatcher.db'` for discovery, not the CLI binary name.
+
+### DB Discovery Fallback
+
+If the expected path doesn't exist, discover the actual location:
+
+```bash
+find / -path '*.blogwatcher*' -name '*.db' 2>/dev/null
+```
+
+The database may be stored under `/opt/data/.blogwatcher/` rather than the user home directory, especially when blogwatcher-cli runs from `/opt/data/bin/`.
 
 ## Verified Schema
 
@@ -60,6 +72,8 @@ These are commonly guessed but **do not exist**:
 - `updated_at` → not tracked
 
 ## Verified Query Templates
+
+⚠️ **sqlite3 CLI may not be available** in the agent environment (no system `sqlite3` binary). Use Python's built-in `sqlite3` module instead for reliable queries (see Python Usage Pattern below). The SQL templates below are still correct — use them as SQL strings in Python's `conn.execute()`. 
 
 ### Daily scan — articles discovered on a specific date
 
@@ -144,7 +158,18 @@ import sqlite3
 import json
 import os
 
-DB_PATH = "/home/exedev/.blogwatcher-cli/blogwatcher-cli.db"
+DB_PATH = "/opt/data/.blogwatcher/blogwatcher.db"
+# Fallback: discover DB if not at primary path
+if not os.path.exists(DB_PATH):
+    import subprocess
+    result = subprocess.run(
+        ["find", "/", "-path", "*.blogwatcher*", "-name", "*.db"],
+        capture_output=True, text=True, timeout=15
+    )
+    candidates = [p.strip() for p in result.stdout.strip().split("\n") if p.strip()]
+    if candidates:
+        DB_PATH = candidates[0]
+        print(f"Discovered DB at: {DB_PATH}", file=__import__("sys").stderr)
 
 def query_daily_scan(date_str):
     """Get all articles discovered on a specific date, grouped by blog."""
@@ -197,6 +222,27 @@ def generate_daily_report(date_str, blogs):
 - Filename: `daily-scan-YYYY-MM-DD.md`
 - After creation, commit: `cd ~/ai-topics && git add inbox/rss-scans/ && git commit -m "wiki: daily RSS scan YYYY-MM-DD" && git push`
 
+## Execution Tips
+
+### Write a standalone .py script, not inline `-c`
+
+Passing Python code inline via `terminal("python3 -c ...")` is **prone to quote-escaping failures** — especially when the code contains triple-quoted strings or nested single quotes. Instead, write the script to `/tmp/` first, then execute it:
+
+```bash
+# Write script first (using write_file or echo)
+python3 /tmp/query_blogwatcher.py
+```
+
+### Quick one-liner for counting articles
+
+For a simple count (no complex SQL), this pattern works in a single terminal call:
+
+```python
+python3 -c "import sqlite3; print(sqlite3.connect(DB_PATH).execute('SELECT COUNT(*) FROM articles').fetchone()[0])"
+```
+
+Replace `DB_PATH` with the actual path.
+
 ## Pitfalls
 
 1. **`published_at` does not exist** → use `published_date` or `discovered_date`
@@ -207,3 +253,6 @@ def generate_daily_report(date_str, blogs):
 6. **No article content stored** → only URLs; scrape with `web_extract` if needed
 7. **`published_date` can be NULL** → articles without RSS pub date have this set to NULL
 8. **`last_scanned` on blogs** → ISO 8601 format, use to check freshness
+9. **sqlite3 CLI may not be installed** — use Python's sqlite3 module instead
+10. **DB may not be at the expected path** — run DB Discovery Fallback (see above) before assuming location
+11. **DB filename is `blogwatcher.db`, not `blogwatcher-cli.db`** — adjust `find` patterns accordingly

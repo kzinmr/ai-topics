@@ -90,6 +90,7 @@ The bottleneck shifts from "proving" to "defining what to prove." The arc of dif
 
 ## Related Concepts
 
+- [[concepts/formal-methods]] — Foundational formal methods practice and theory
 - [[concepts/neurosymbolic-ai]] — Symbolic reasoning (formal methods) combined with neural approaches
 - [[concepts/ai-safety]] — Alignment, oversight, and interpretability for AI agents
 - [[concepts/agent-sandboxing]] — Isolation for untrusted AI-generated code

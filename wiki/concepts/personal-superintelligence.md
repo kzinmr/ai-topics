@@ -150,6 +150,7 @@ Personal Superintelligence
 - [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] — エージェント活用開発パターン
 - [[concepts/cache-first-engineering]] — プロンプトキャッシュ最適化
 - [[concepts/ai-privacy-tools]] — AIエージェントのプライバシー課題
+- [[concepts/vibe-coding]] — 自然言語で開発するvibe codingアプローチ
 
 ## 関連エンティティ
 

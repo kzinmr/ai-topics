@@ -87,7 +87,8 @@ For AI coding agents, formal verification is particularly relevant because:
 
 ## Related Concepts
 
-- [[concepts/intent-formalization]] — The complementary challenge of translating human intent into formal specs
+- [[concepts/intent-formalization]] — The complementary challenge
+- [[concepts/formal-methods]] — Foundational formal methods practice and theory
 - [[concepts/neurosymbolic-ai]] — Symbolic reasoning (formal logic) combined with neural networks
 - [[concepts/ai-safety]] — Alignment and oversight for AI agents
 - [[concepts/agent-sandboxing]] — Isolation for untrusted code (complementary safety approach)

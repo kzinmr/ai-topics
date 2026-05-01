@@ -77,6 +77,7 @@ L_DPO = -E[log σ(β * log(π(y_w|x)/π_ref(y_w|x)) - β * log(π(y_l|x)/π_ref(
 - [[concepts/fine-tuning/grpo-rl-training]] — GRPO for reasoning and format enforcement
 - [[concepts/fine-tuning/trl]] — TRL library implementing these methods
 - [[concepts/harness-engineering]] — How preference optimization fits into the model + harness paradigm
+- [[concepts/post-training]] — The post-training stage that encompasses preference optimization
 
 ## Sources
 

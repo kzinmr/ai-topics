@@ -8,6 +8,7 @@ created: 2026-04-14
 updated: 2026-04-24
 related:
   - "[[concepts/rlhf]]"
+  - "[[concepts/chatgpt-memory-bitter-lesson]]"
 sources: []
 ---
 

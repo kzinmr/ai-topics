@@ -46,15 +46,22 @@ A `candidates` array injected from `${HERMES_HOME}/cron/data/newsletter/latest.j
 | `redirect/2/eyJ...` or `redirect/<uuid>` | Obfuscated redirect | Try web_extract or skip |
 | `utm_campaign=email-read-in-app` | Read-in-app prompt | Skip |
 
-Keep only **actual content URLs** — usually 0-2 per newsletter that link to real articles.
+After filtering, what remains is the **newsletter subject/title URL only** — NOT the actual article links the newsletter curator shared. The real content links are inside the newsletter post body on substack and must be extracted separately (see Workflow Step 1).
+
+**IMPORTANT**: After filtering noise, the remaining URL is typically the newsletter's own post page, not the external articles being linked to. You must access the newsletter post's body to find the real curated links.
 
 ## Workflow
 
 ### 1. Discover & Read Content
-- For raw article files: use the Python discovery above
-- For newsletter checkpoints: filter substack noise, then read the raw newsletter file to extract the actual article links
+- For raw article files: use the Python discovery above, then read their full content
+- For newsletter checkpoints: 
+  1. Filter substack noise (see table above) — the surviving URL is the newsletter's own post page
+  2. Resolve the newsletter post URL: extract `publication_id`+`post_id` from `app-link/post?...` patterns, or use `open.substack.com/pub/{pub}/p/{slug}` if present
+  3. Call `web_extract` on the resolved newsletter post URL to get the full post body
+  4. From the post body, extract the actual curated article links (with titles and descriptions) — these are the real content to triage
+  5. For beehiiv newsletters: call `web_extract` directly on the tracking URL — the redirect chain resolves to the actual article content
 
-Read each substantive newsletter/raw file to extract title, key phrases, and named entities.
+The raw newsletter file (in `wiki/raw/newsletters/`) contains only extracted tracking/redirect URLs and will NOT reveal the actual article links. You MUST access the newsletter post page to find curated links.
 
 ### 2. Extract Content Metadata
 For each substantive article:

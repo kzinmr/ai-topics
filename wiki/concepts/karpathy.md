@@ -14,6 +14,7 @@ created: 2026-04-09
 updated: 2026-04-24
 related:
   - "[[andrej-karpathy]]"
+  - "[[concepts/harness-engineering]]"
 sources:
   - "https://karpathy.github.io/"
   - "https://x.com/karpathy"
