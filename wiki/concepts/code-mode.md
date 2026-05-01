@@ -11,6 +11,20 @@ sources:
 
 # CodeMode — LLM Code Execution Over Sequential Tool Calling
 
+## Positioning in the Hierarchy
+
+CodeMode is a **concrete implementation layer** below two higher-level concepts:
+
+```
+Programmatic Tool Calling (API mechanism — allowed_callers, code_execution_20260120)
+    └── Code Execution with MCP (Architectural pattern — MCP as code API)
+            └── CodeMode (Specific implementations — Cloudflare MCP, Pydantic Monty) ★ このページ
+```
+
+- [[concepts/programmatic-tool-calling]] — The API-level mechanism enabling models to write code that calls tools
+- [[concepts/code-execution-with-mcp]] — The architectural pattern: MCP servers as code APIs with progressive disclosure
+- **CodeMode** — Concrete implementations (Cloudflare server-side V8, Pydantic Monty in-process)
+
 ## Definition
 
 CodeMode is the paradigm where LLMs write code (typically Python) for batch execution rather than making sequential tool calls. Coined by Cloudflare and independently developed by Anthropic, Pydantic, and others.
@@ -127,6 +141,8 @@ The [pydantic-ai-harness](https://github.com/pydantic/pydantic-ai-harness) libra
 
 ## Related Patterns
 
+- [[concepts/programmatic-tool-calling]] — API mechanism: `allowed_callers`, `code_execution_20260120`
+- [[concepts/code-execution-with-mcp]] — Architectural pattern: MCP servers as code APIs
 - [[concepts/harness-engineering]] — Monty as a harness environment
 - [[concepts/pydantic-ai-harness]] — Official CodeMode capability library
 - [[concepts/structured-outputs]] — Type safety constrains LLM output

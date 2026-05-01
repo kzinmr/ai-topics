@@ -124,7 +124,19 @@
 
 ---
 
-## [2026-04-30] Cloudflare Code Mode MCP
+## 2026-05-01 — Programmatic Tool Calling & Code Execution with MCP
+
+- Created [[concepts/programmatic-tool-calling]] — New highest-level concept: Anthropic's API mechanism (`code_execution_20260120` tool, `allowed_callers` field). Defines the 3-layer hierarchy: Programmatic Tool Calling → Code Execution with MCP → CodeMode. Covers container lifecycle, token optimization (98.7% reduction), async tool interface, advanced patterns (batch, early termination, conditional). Cross-references to CodeMode, RLM, agentic-search Externalized Processing.
+- Enriched [[concepts/code-execution-with-mcp]] — Upgraded from stub to full concept page. Architectural pattern: MCP servers as filesystem of TypeScript wrappers, progressive disclosure, PII tokenization, skills persistence. Middle layer between Programmatic Tool Calling and CodeMode.
+- Updated [[concepts/code-mode]] — Added "Positioning in the Hierarchy" section with 3-layer diagram. Updated "Related Patterns" with cross-references to both higher-level pages.
+- Saved raw articles referenced (Anthropic platform docs + engineering blog)
+- Sources:
+  - https://platform.claude.com/docs/en/agents-and-tools/tool-use/programmatic-tool-calling
+  - https://www.anthropic.com/engineering/code-execution-with-mcp
+
+---
+
+## 2026-04-30 — Cloudflare Code Mode MCP
 
 - Expanded [[concepts/code-mode]] — Added "Cloudflare Server-Side Code Mode (MCP)" section with 2-tool interface (search/execute), V8 sandbox, 99.9% token reduction from ~1.17M to ~1K tokens. Added context reduction approaches comparison table. Added "CodeMode × RLM: 並行する文脈爆縮の2つのアプローチ" section with architectural comparison, tradeoff analysis, and convergence prediction. Updated frontmatter with Cloudflare sources.
 - Saved raw article: raw/articles/2026-04-30_cloudflare-code-mode-mcp.md

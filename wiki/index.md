@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-01 | Total pages: 728 | Full entries: 699 | Stubs: 619
+> Last updated: 2026-05-01 | Total pages: 730 | Full entries: 701 | Stubs: 618
 
 ## Entities (347 pages)
 
@@ -703,8 +703,9 @@
 - [[concepts/personal-superintelligence]] — **「AIは中央で全てを自動化するべきか、それとも個人それぞれが自分の目標に向かう道具となるべきか。」**
 - [[concepts/polymarket-trading-agents]] — AI agents used for automated trading on Polymarket prediction markets — weather, crypto, sports. Self-learning bots that operate 24/7 with no emotions.
 - [[concepts/process-supervision]] — The infrastructure discipline of managing long-running AI agent processes: automatic restart on failure, health monitoring, supervised process trees, and cgroup-based resource control. A prerequisite for [[harness-engineering]] — agent harnesses must supervise subprocesses (tool execution, sandboxed code) to ensure reliability at production scale.
-- [[concepts/process-reward-models-agent-eval]] — **Process Reward Models (PRMs)** evaluate individual reasoning steps or agent actions rather than just final outcomes. This is a fundamentally different evaluation paradigm from outcome-based evalu...
-- [[concepts/project-glasswing]] — Anthropic's initiative to use claude-mythos for defensive security research — finding and patching vulnerabilities in critical software.
+|- [[concepts/process-reward-models-agent-eval]] — **Process Reward Models (PRMs)** evaluate individual reasoning steps or agent actions rather than just final outcomes. This is a fundamentally different evaluation paradigm from outcome-based evalu...
+|- [[concepts/programmatic-tool-calling]] — API mechanism where LLMs write code that calls tools (async Python functions) within a sandboxed container. Anthropic's `code_execution_20260120` tool with `allowed_callers` field. Foundation layer above CodeMode and Code Execution with MCP.
+|- [[concepts/project-glasswing]] — Anthropic's initiative to use claude-mythos for defensive security research — finding and patching vulnerabilities in critical software.
 - [[concepts/prompt-caching]] — LLM API呼び出しにおけるキャッシングの設計パターン。コスト削減とレイテンシ改善のために、どの部分をキャッシュし、いつ無効化するかを体系的に扱う。
 |- [[concepts/pydantic-ai]] — Pydantic AI is an open-source Python agent framework built by the Pydantic team. It brings the "FastAPI feeling" to GenAI development: validated outputs, dependency injection, structured tool contr...
 |- [[concepts/pydantic-ai-harness]] — Official capability library for Pydantic AI — CodeMode with Monty sandbox, memory, orchestration, guardrails, context management, and composable agent extensions. Together with Monty forms the full Open Runtime + Open Harness stack.
@@ -989,7 +990,7 @@
 - [[concepts/co-intelligence]] — > **TODO**: Enrich this page.
 - [[concepts/code-as-process]] — > **TODO**: Enrich this page.
 - [[concepts/code-execution-agents-latency-monty-pydantic-ai-tool-calling-sandbox]] — > **TODO**: Enrich this page.
-- [[concepts/code-execution-with-mcp]] — > **TODO**: Enrich this page.
+- [[concepts/code-execution-with-mcp]] — Architectural pattern: treat MCP servers as code APIs. Progressive disclosure via filesystem navigation, PII tokenization, skills persistence. Middle layer between Programmatic Tool Calling and CodeMode.
 - [[concepts/code-hoarding/knowledge-accumulation]] — > **TODO**: Enrich this page.
 - [[concepts/code-review]] — > **TODO**: Enrich this page.
 - [[concepts/codeless-software]] — > **TODO**: Enrich this page.
