@@ -124,6 +124,14 @@
 
 ---
 
+## 2026-05-01 — Monty README positioning: designed for Programmatic Tool Calling
+
+- Updated [[concepts/monty-sandbox]] — Added "設計思想: Programmatic Tool Calling のランタイム" section with direct README quote ("Monty avoids the 'faff' of containers"). Added Monty vs Docker/Pyodide/WASI comparison table. Added 3-layer hierarchy positioning (Programmatic Tool Calling → Monty → CodeMode). Updated Related Concepts and sources.
+- Updated [[concepts/programmatic-tool-calling]] — Added "Reference Runtime: Monty (Pydantic)" section. Monty feature-to-PTC requirement mapping table. Updated See Also with monty-sandbox and pydantic-ai-harness.
+- Source: https://raw.githubusercontent.com/pydantic/monty/refs/heads/main/README.md
+
+---
+
 ## 2026-05-01 — Programmatic Tool Calling & Code Execution with MCP
 
 - Created [[concepts/programmatic-tool-calling]] — New highest-level concept: Anthropic's API mechanism (`code_execution_20260120` tool, `allowed_callers` field). Defines the 3-layer hierarchy: Programmatic Tool Calling → Code Execution with MCP → CodeMode. Covers container lifecycle, token optimization (98.7% reduction), async tool interface, advanced patterns (batch, early termination, conditional). Cross-references to CodeMode, RLM, agentic-search Externalized Processing.

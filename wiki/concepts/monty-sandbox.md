@@ -16,6 +16,8 @@ status: complete
 sources:
   - url: "https://github.com/pydantic/monty"
     title: "Pydantic Monty — GitHub Repository"
+  - url: "https://raw.githubusercontent.com/pydantic/monty/refs/heads/main/README.md"
+    title: "Monty README — Explicitly states 'designed for Programmatic Tool Calling'"
   - url: "https://pydantic.dev/articles/pydantic-monty"
     title: "Pydantic Monty: You probably don't need a full sandbox (Samuel Colvin, 2026-02)"
   - url: "https://pydantic.dev/articles/hack-monty"
@@ -86,8 +88,42 @@ Monty は「許可リスト（allowlist）」アプローチを採用：
 3. **エッジデバイス** — Rust バイナリなので組み込みシステムや宇宙機でも動作可能
 4. **ブラウザ内実行** — WebAssembly にコンパイルしてブラウザ内サンドボックスとしても利用可能（Simon Willison が実証）
 
+## 設計思想: Programmatic Tool Calling のランタイム
+
+Monty の README は、**Monty が「Programmatic Tool Calling」用に設計されたランタイムである**ことを明示している：
+
+> *"Monty avoids the 'faff' of containers. It is designed for **Programmatic Tool Calling**, where LLMs write Python code to interact with tools more reliably than traditional JSON-based tool calling."*
+> — Monty README
+
+これは、Monty が単なるサンドボックスではなく、[[concepts/programmatic-tool-calling]] という**上位概念の具体的なランタイム実装**であることを意味する。
+
+### トレードオフ比較（Montyが示す比較表）
+
+| 技術 | セキュリティ | 起動レイテンシ | スナップショット | セットアップ |
+|------|------------|--------------|----------------|------------|
+| **Monty** | **Strict** | **0.06ms** | **Easy** | **Easy** |
+| Docker | Good | 195ms | Intermediate | Intermediate |
+| Pyodide | Poor | 2800ms | Hard | Intermediate |
+| WASI/Wasmer | Strict | 66ms | Intermediate | Intermediate |
+| YOLO Python | Non-existent | 0.1ms | Hard | None |
+
+### 3層アーキテクチャにおけるMontyの位置
+
+```
+Programmatic Tool Calling (API mechanism) 
+    └── Monty (Open Runtime — secure Python interpreter in Rust)
+            └── CodeMode (Harness — wraps tools into run_code in PydanticAI)
+```
+
+- Monty は **Open Runtime** 層に位置し、[[concepts/code-execution-with-mcp|Code Execution with MCP]] パターンの実行基盤を提供する
+- [[concepts/pydantic-ai-harness]] の CodeMode 機能が Monty を内包している
+- コンテナの「faff」を避けつつ、Strict なセキュリティを実現する点が差別化要因
+
 ## 関連概念
 
+- [[concepts/programmatic-tool-calling]] — Montyが設計された上位概念。LLMがコードを書いてツールを呼び出すAPIメカニズム
+- [[concepts/code-execution-with-mcp]] — MCPをコードAPIとして扱うアーキテクチャパターン。Montyがその実行基盤に
+- [[concepts/code-mode]] — Montyを搭載したPydanticAIのCodeMode機能
 - [[concepts/agent-loop-orchestration]] — エージェントループ内でのコード実行
 - [[concepts/claude-code-best-practices]] — Claude Code のベストプラクティス
 - [[concepts/reverse-engineering]] — サンドボックス回避とセキュリティ研究

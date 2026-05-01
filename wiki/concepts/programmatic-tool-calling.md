@@ -124,6 +124,27 @@ This allows the client to distinguish between direct LLM tool calls and tool cal
 | **Data Aggregation** | Filter/sort/transform before returning | 10K rows → 5 filtered rows |
 | **Chained Operations** | Sequence of tool calls in one execution | Download → process → upload |
 
+## Reference Runtime: Monty (Pydantic)
+
+Monty — PydanticのRust製Pythonインタプリタ — は、明示的に **Programmatic Tool Calling 用に設計されたランタイム**として位置づけられている。
+
+> *"Monty avoids the 'faff' of containers. It is designed for Programmatic Tool Calling, where LLMs write Python code to interact with tools more reliably than traditional JSON-based tool calling."*
+> — [Monty README](https://github.com/pydantic/monty)
+
+### なぜMontyがPTCに最適か
+
+| Montyの特徴 | PTCの要求 |
+|------------|-----------|
+| 0.06ms起動（コンテナ不要） | Tool呼び出しのたびにランタイム起動が必要 |
+| Strictな隔離（fs/network/env完全ブロック） | LLM生成コードの安全性保証 |
+| 外部関数経由の明示的アクセス制御 | `allowed_callers` のランタイム側実装 |
+| スナップショット可能（状態のbyte列化・復元） | 長時間実行PTCの状態永続化 |
+| Rust/Python/JSから呼び出し可能 | クロスプラットフォームPTC |
+
+MontyはPTCパターンの**Open Runtime**層を提供し、[[concepts/pydantic-ai-harness]]のCodeMode機能（Harness層）と組み合わせて完全なPTCスタックを形成する。
+
+[[concepts/monty-sandbox]] に詳細あり。
+
 ## Constraints
 
 | Constraint | Detail |
@@ -155,5 +176,7 @@ This mechanism enables the Externalized Processing pattern described in [[concep
 - [[concepts/code-mode]] — Specific CodeMode implementations
 - [[concepts/rlm-recursive-language-models]] — RLM: code execution for long-context
 - [[concepts/agentic-search]] — Externalized processing level
+- [[concepts/monty-sandbox]] — Reference runtime: Rust-based Python interpreter for PTC
+- [[concepts/pydantic-ai-harness]] — Harness layer: CodeMode capability wrapping Monty
 - [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] — Anthropic engineering blog coverage (deep dive)
 - [[concepts/harness-engineering/system-architecture/advanced-tool-use]] — Related advanced tool patterns
