@@ -82,6 +82,18 @@ Both models support GDPR and HIPAA-compliant deployments through secure on-premi
 - Confirmed as #1 TTS tool by independent technology platforms in 2026
 - Focus on ultra-realistic voice synthesis and multi-language support
 
+## Neural Audio Tokenizers
+
+Neural audio tokenizers convert raw audio into discrete token sequences for use in language models. The five major techniques share an RVQ (Residual Vector Quantization) backbone but differ fundamentally in design goals:
+
+- **SoundStream** — Fully convolutional end-to-end codec, 3–18 kbps variable bitrate, foundational architecture
+- **EnCodec** — Production-standard codec from Meta, 1.5–24 kbps, widely adopted in research
+- **DAC (Descript Audio Codec)** — High-fidelity universal codec, 44.1 kHz / 8 kbps, single model for speech/music/environment
+- **SpeechTokenizer** — Unified semantic+acoustic tokenizer guided by HuBERT distillation; layer 1 = semantic, rest = acoustic
+- **Mimi** — Ultra-low-rate streaming codec from Kyutai, 12.5 Hz / 1.1 kbps for real-time spoken LLM
+
+→ Full comparison: [[concepts/audio-tokenizer-comparison]]. See also [[entities/soundstream]], [[entities/encodec]], [[entities/descript-audio-codec]], [[entities/speech-tokenizer]], [[entities/mimi]]
+
 ## Architectural Patterns
 
 ### Voice Agent Pipeline

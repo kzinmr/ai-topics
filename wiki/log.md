@@ -1,4 +1,18 @@
-## [2026-05-01] VibeVoice — Microsoft Research's next-token diffusion TTS model for long-form multi-speaker speech
+## [2026-05-01] Audio Tokenizer Comparison — SoundStream / EnCodec / DAC / SpeechTokenizer / Mimi
+
+5つの音声トークナイザの比較分析を作成・取り込み：
+
+- Created [[concepts/audio-tokenizer-comparison]] — Concept page with comparison table (architecture, token rate, bitrate, semantic separation, streaming, domain coverage), detailed breakdown of each model, practical selection guide, and caveats on sample rate / causality differences
+- Created [[entities/soundstream]] — Foundational Google neural audio codec (2021), fully convolutional + RVQ, 3–18 kbps
+- Created [[entities/encodec]] — Meta's production-standard codec (2022), 24/48 kHz, 1.5–24 kbps, de facto standard
+- Created [[entities/descript-audio-codec]] — High-fidelity universal codec by Descript (2024), 44.1 kHz / 8 kbps, speech/music/environment
+- Created [[entities/speech-tokenizer]] — Unified semantic+acoustic tokenizer by Fudan (2023), HuBERT-distilled layer separation, ~50 Hz / ~4 kbps
+- Created [[entities/mimi]] — Kyutai's ultra-low-rate streaming codec (2024), 12.5 Hz / 1.1 kbps, WavLM-distilled, for Moshi
+- Updated [[concepts/speech-audio-asr-tts-voice]] — Added Neural Audio Tokenizers section with links to the comparison and all 5 entities
+- Saved raw article: `raw/articles/2026-05-01_audio-tokenizer-comparison.md`
+- Updated index: wiki/index.md, wiki/log.md
+
+---
 
 - Created [[entities/vibevoice]] — Entity page for Microsoft's open-source TTS model. Combines Qwen2.5 LLM with continuous speech tokenizers (7.5 Hz, 3200× compression) and diffusion head for up to 90 min, 4-speaker generation. ICLR 2026 Oral. GitHub repo disabled due to misuse concerns.
 - Saved raw article: `raw/articles/vibevoice-technical-report.md`

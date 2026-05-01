@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-01 | Total pages: 730 | Full entries: 701 | Stubs: 618
+> Last updated: 2026-05-01 | Total pages: 736 | Full entries: 707 | Stubs: 618
 
-## Entities (347 pages)
+## Entities (352 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -75,6 +75,7 @@
 - [[entities/deliberatecoder]] — **URL:** https://deliberate-software.com
 - [[entities/demis-hassabis]] — **Role** | CEO, Google DeepMind; Co-founder, DeepMind |
 - [[entities/derek-thompson]] — **Blog** | Derek Thompson on Substack |
+- [[entities/descript-audio-codec]] — **DAC** | High-fidelity universal neural audio codec by Descript. 44.1 kHz, 8 kbps, ~90× compression, single model for speech/music/environment. Improved RVQGAN.
 - [[entities/dialloibu]] — **Blog** | idiallo.com |
 - [[entities/dji]] — Chinese drone manufacturer with an "iron grip" on the global drone market. Despite U.S. regulatory efforts, DJI's market dominance remains largely intact.
 - [[entities/dorialexander]] — **X/Twitter** | @Dorialexander (~16K followers, joined March 2011) |
@@ -94,6 +95,7 @@
 - [[entities/embra]] — AI context engine company acquired by Notion (Jan 2026). Founded by Zach Tratar.
 - [[entities/elvis]] — **Platform:** X/Twitter (@elvis_)
 - [[entities/emollick]] — **X** | @emollick |
+- [[entities/encodec]] — **EnCodec** | Meta's production-standard neural audio codec. 24/48 kHz, 1.5–24 kbps, streaming, with Transformer entropy coding. De facto standard for codec-style tokenizers.
 - [[entities/entropicthoughts-com]] — **URL:** https://entropicthoughts.com (formerly two-wrongs.com)
 - [[entities/eric-hartford]] — **X** | @QuixiAI |
 - [[entities/eric-zhang]] — Systems hacker and designer. Creator of bore, sshx, rustpad, and Percival. Former founding engineer at Modal, now at Thinking Machines Lab.
@@ -194,6 +196,7 @@
 - [[entities/michael-stapelberg]] — **Blog** | michael.stapelberg.ch |
 - [[entities/miguel-grinberg]] — **Miguel Grinberg** is a Python educator, open-source maintainer, and software engineer best known for his influential tutorials, deep technical blog posts, and long-running contributions to the Py...
 - [[entities/milksandmatcha]] — Sarah Chieng is an AI agent educator and developer advocate focused on practical multi-agent workflow patterns. She is known for co-authoring the **"Back of House"** framework with @0xSero, which m...
+- [[entities/mimi]] — **Mimi (Kyutai)** | Ultra-low-rate streaming speech codec: 24 kHz → 12.5 Hz → 1.1 kbps, 80 ms latency. WavLM-distilled semantic layer. Designed for Moshi full-duplex spoken dialogue.
 - [[entities/minimaxir-com]] — **Max Woolf** (@minimaxir) is a data scientist, open-source developer, and technical blogger based in San Francisco. He is a Senior Data Scientist at concepts/buzzfeed, where he has applied machine...
 - [[entities/mira-murati]] — **Role** | CEO & Co-founder, Thinking Machines Lab; Former CTO, OpenAI |
 - [[entities/mistral-voxtral-tts]] — Mistral AI's open-weights text-to-speech model, announced April 2026. Combines autoregressive semantic token generation with flow-matching acoustic token synthesis.
@@ -264,6 +267,8 @@
 - [[entities/simon-willison]] — Django co-creator, open-source advocate, and leading voice in AI-assisted software development. Founder of Datasette and prolific blogger at simonwillison.net.
 - [[entities/simone-salis]] — **URL:** https://simone.org
 - [[entities/skyfall-dev]] — **URL:** https://skyfall.dev
+- [[entities/soundstream]] — **SoundStream (Google)** | Foundational neural audio codec. Fully convolutional encoder-decoder + RVQ, 3–18 kbps variable bitrate. Prototype for EnCodec, DAC, and later tokenizers.
+- [[entities/speech-tokenizer]] — **SpeechTokenizer (Fudan)** | Unified semantic + acoustic speech tokenizer. HuBERT-distilled layer 1 for semantic, remaining layers for acoustic. ~50 Hz, ~4 kbps. Designed for speech LLMs.
 - [[entities/spike]] — **URL:** https://supaiku.com
 - [[entities/stefano-marinelli]] — **Blog:** it-notes.dragas.net — "Scattered IT Notes"
 - [[entities/steve-blank]] — **Blog** | steveblank.com |
@@ -384,7 +389,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (390 pages)
+## Concepts (391 pages)
 
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
@@ -399,6 +404,7 @@
 - [[concepts/agent-patterns]] — AIエージェントの一般的な設計パターンと実装プラクティス
 - [[concepts/agent-sandbox-patterns]] — Browser Useのエージェントサンドボクシングアーキテクチャ。ツール分離パターンとエージェント分離パターン
 - [[concepts/ask-user-question-pattern]] — エージェントがユーザーに確認を求めるためのハーネスパターン
+- [[concepts/audio-tokenizer-comparison]] — 비교/Comparison of 5 neural audio tokenizers: SoundStream, EnCodec, DAC, SpeechTokenizer, Mimi. RVQ-based, differing in codec quality vs. speech LLM readiness, semantic/acoustic separation, token rate, and domain.
 - [[concepts/bitter-lesson-agent-harnesses]] — モデル能力のスケール向上に伴い、ハーネスの役割は論理実装からモデル行動のオーケストレーションへ移行する
 - [[concepts/context-providers]] — エージェントとツールの間にあるコンテキスト供給レイヤーの設計パターン
 - [[concepts/db9-filesystem-sql]] — PostgreSQL + fs9ファイルシステム拡張を用いたエージェントワークフローアーキテクチャ。アーティファクトはファイル、メタデータはSQL
