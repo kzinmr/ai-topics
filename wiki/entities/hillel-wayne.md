@@ -132,6 +132,7 @@ He explicitly states: *"Don't feel like you have to trade me something if you on
 ## Related
 
 - [[concepts/formal-methods]] — Mathematical techniques for verifying software correctness
+- [[john-d-cook-applied-mathematics-consulting]] — Applied mathematician sharing interest in formal methods and AI reliability
 -  — Temporal Logic of Actions, formal specification language by Leslie Lamport
 -  — Testing general properties rather than specific examples
 -  — Cognitive and operational costs in software development

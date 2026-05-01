@@ -101,6 +101,7 @@ The common thread is **curiosity-driven mathematical exploration**. He finds som
 ## Related
 
 - [[concepts/formal-methods]] — Proving correctness properties for critical systems
+- [[hillel-wayne]] — Formal methods practitioner and educator, shared interest in practical software verification
 -  — The correctness conundrum in AI systems
 -  — HIPAA expert determination and differential privacy
 -  — Mathematician whose work intersects with Cook's analysis of AI-assisted discovery
