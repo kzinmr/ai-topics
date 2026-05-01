@@ -104,3 +104,11 @@ Jason curated a comprehensive speaker series featuring practitioners from top co
 - **Quadrant Analysis framework:** Evaluate both **relevance** AND **sufficiency**
 - **Metadata tagging reality:** ~40% of clients have indexes too small for metadata to provide meaningful benefits
 - **Recommended tooling:** Lilypad (Mirascope) for evaluation & versioning
+
+## See Also
+
+- [[jason-liu--instructor]] — Structured outputs library by Jason Liu using Pydantic validation.
+- [[jason-liu--context-engineering]] — Beyond chunks: context engineering for RAG and agentic systems.
+- [[retrieval-augmented-generation]] — Core RAG concepts and architecture patterns.
+- [[context-engineering]] — Designing information environments for AI agents.
+- [[structured-outputs]] — Schema-first design for LLM integration.

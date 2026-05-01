@@ -101,3 +101,11 @@ A hands-on educational site (github.com/jxnl/structuredoutputsbyexample) showcas
 - **AI Engineer Keynote: Pydantic is all you need** (Nov 2023) — The talk that launched his public profile, arguing that structured outputs via Pydantic solve the fundamental LLM integration problem
 - **Pydantic is Still All You Need: Reflections on a Year of Structured Outputs** (Sep 2024) — One-year retrospective: \"nothing's really changed in the past year. The core API is still just one function call.\" Covers 40% month-over-month growth, multi-language expansion, and the case for validation-first design
 - **Bridging Language Models with Python with Instructor, Pydantic, and OpenAI's Function Calls** (Medium, 2023) — Technical deep-dive into why Pydantic is the right abstraction between LLMs and traditional software
+
+## See Also
+
+- [[jason-liu--key-work]] — Jason Liu's career, RAG Master Series, and consulting practice.
+- [[jason-liu--context-engineering]] — Context engineering for RAG and agentic systems.
+- [[structured-outputs]] — Schema-first design for LLM integration.
+- [[pydantic]] — Data validation library used as the foundation of Instructor.
+- [[llm-engineering]] — Best practices for building production LLM applications.

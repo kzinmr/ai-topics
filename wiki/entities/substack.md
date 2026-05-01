@@ -457,7 +457,13 @@ substack domain articles and content.
 - substack.com--redirect-f8601173-ac7a-4c21-b063-92ea35c3265d--bf403c1c
 - substack.com--redirect-fc937db9-1f9f-4d17-8d14-568f58e27526--f7737c4f
 - substack.com--redirect-ff70a602-f5e0-4101-a487-8b3ecce2f7ea--95b747c4
-- substack.com--theskip--72586ec3
+|- substack.com--theskip--72586ec3
+
+## See Also
+
+- [[gergely-orosz]] — The Pragmatic Engineer newsletter on Substack.
+- [[alex-volkov]] — AI commentator and newsletter author.
+- [[newsletter]] — Tech newsletter ecosystem and publishing platforms.
 
 - email.mg-d1.substack.com--c-ejxskb-o3caqxj8goluaobalikif7jus-qx96aw4scs5ph3k-5or0mwzo9--fbd1914f
 - email.mg-d1.substack.com--c-ejxskcuo2yayhz8gdol-wmfkwaksmxfoa1hcfjsoblwu7arpxzntqwyxsz--cb702bd2

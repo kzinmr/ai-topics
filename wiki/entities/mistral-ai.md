@@ -76,3 +76,11 @@ Work Mode transforms Le Chat into an execution backend for multi-step projects a
 ## References
 
 - 2026-04-28_mistralai-workflows
+
+## See Also
+
+- [[gemma-4]] — Google's open-weight competitor to Mistral Medium 3.5.
+- [[coding-agents]] — AI agents for software engineering, including Mistral's Vibe remote agent.
+- [[open-models]] — Open-weight model ecosystem and licensing landscape.
+- [[anthropic]] — Competitor AI lab with Claude models.
+- [[openai]] — Competitor AI lab with GPT models and Codex agent.

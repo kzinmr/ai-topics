@@ -62,3 +62,11 @@ Jason's work on the OpenAI Agents SDK sandbox features and \"in distribution\" t
 - **[Agent Frameworks and Form Factors](https://jxnl.co/writing/2025/09/04/context-engineering-agent-frameworks-and-form-factors/)** — Three form factors (chatbot, workflow, research artifact) and autonomy spectrum. \"Ask your team for specific results, not just 'agents.'\"
 - **[Rapid Agent Prototyping](https://jxnl.co/writing/2025/09/11/rag-series-index/)** — Use Claude Code's project runner as a testing harness. \"Get one passing test before you write any orchestration code.\"
 - **[AI Agent Compaction Experiments](https://jxnl.co/writing/2025/09/11/rag-series-index/)** — \"If in-context learning is gradient descent, then compaction is momentum.\"
+
+## See Also
+
+- [[jason-liu--key-work]] — Jason Liu's career, RAG Master Series, and consulting practice.
+- [[jason-liu--instructor]] — Structured outputs library by Jason Liu using Pydantic validation.
+- [[retrieval-augmented-generation]] — Core RAG concepts and architecture patterns.
+- [[context-engineering]] — Designing information environments for AI agents.
+- [[coding-agents]] — AI agents for software engineering tasks.

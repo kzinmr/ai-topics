@@ -107,3 +107,11 @@ type: entity
 *最終更新: 2026年4月14日*
 *データソース: Grokipedia、Ian Goodfellowウェブサイト、学術論文、NeurIPS/ICML発表*
 *深度: L2（基本プロフィール、経歴、研究貢献、受賞歴）→ L3へ升级予定（哲学、引用分析、概念的枠組み）*
+
+## See Also
+
+- [[yann-lecun]] — CNNの発明者。深層学習とコンピュータビジョンのパイオニア。
+- [[fei-fei-li]] — ImageNetの作成者。データ駆動型AIの先駆者。
+- [[yoshua-bengio]] — GoodfellowのPhD指導者。深層学習のパイオニア。
+- [[generative-adversarial-networks]] — Goodfellowが発明した生成的モデルの基盤技術。
+- [[adversarial-machine-learning]] — Goodfellowが先駆けた敵対的機械学習とセキュリティ分野。

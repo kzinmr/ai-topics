@@ -104,3 +104,11 @@ type: entity
 *最終更新: 2026年4月14日*
 *データソース: Grokipedia、Meta AIブログ、NYUプロフィール、学術論文*
 *深度: L2（基本プロフィール、経歴、研究貢献、受賞歴）→ L3へ升级予定（哲学、引用分析、概念的枠組み）*
+
+## See Also
+
+- [[fei-fei-li]] — ImageNetの作成者。コンピュータビジョンと深層学習で協力関係。
+- [[ian-goodfellow]] — GANsの発明者。深層学習と敵対的機械学習のパイオニア。
+- [[geoffrey-hinton]] — バックプロパゲーションの共同研究者。LeCunのポスドク指導者。
+- [[yoshua-bengio]] — 深層学習のパイオニア。LeCunと共に2018年チューリング賞受賞。
+- [[pytorch]] — Meta FAIR時代に主要貢献した深層学習フレームワーク。

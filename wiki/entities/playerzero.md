@@ -56,3 +56,11 @@ Featured as the exemplar of Path 3 startups. Foundation Capital argues:
 - [ ] Check for case studies or customer testimonials
 - [ ] Research world model claims and what "simulation" means in their framing
 - [ ] Remove skeleton status after enrichment
+
+## See Also
+
+- [[regie-ai]] — AI-native sales engagement platform using context graphs.
+- [[maximor]] — AI agent startup automating finance/accounting workflows with decision traces.
+- [[arize]] — AI observability platform for monitoring agent decision quality.
+- [[ai-agents]] — AI agent infrastructure and frameworks.
+- [[context-graphs]] — Decision trace capture and reasoning lineage.

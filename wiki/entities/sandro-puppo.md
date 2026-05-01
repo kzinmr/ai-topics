@@ -61,3 +61,11 @@ Advocates for software-level GPU optimization over hardware upgrades. Key insigh
 - Lucebox: [lucebox.com](https://www.lucebox.com)
 - Cua: [cua.ai](https://cua.ai), [GitHub](https://github.com/trycua/cua)
 - Lucebox Hub: [github.com/Luce-Org/lucebox-hub](https://github.com/Luce-Org/lucebox-hub)
+
+## See Also
+
+- [[lucebox]] — Personal computer for local AI agents, co-founded by Sandro Puppo.
+- [[trycua-cua]] — Open-source framework for computer-use agents, co-founded by Sandro Puppo.
+- [[davide-ciffa]] — Co-founder and CUDA/kernel engineer at Lucebox and Cua.
+- [[speculative-decoding]] — Inference optimization technique pioneered by Puppo's DFlash work.
+- [[gpu-inference]] — Local LLM inference on consumer GPUs.

@@ -59,3 +59,11 @@ The context graph becomes a competitive moat: the more deals processed, the smar
 - [ ] Check for case studies or customer testimonials
 - [ ] Research how agents and humans collaborate in their model
 - [ ] Remove skeleton status after enrichment
+
+## See Also
+
+- [[playerzero]] — AI agent startup using context graphs for production engineering.
+- [[maximor]] — AI agent startup automating finance/accounting workflows.
+- [[arize]] — AI observability platform for monitoring agent decision quality.
+- [[ai-agents]] — AI agent infrastructure and frameworks.
+- [[enterprise-ai]] — Enterprise AI adoption and integration patterns.

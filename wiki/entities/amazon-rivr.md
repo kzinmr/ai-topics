@@ -59,6 +59,12 @@ March 2026 acquisition of Zurich-based autonomous robotics startup Rivr by Amazo
 - Signals Amazon's commitment to last-mile automation
 
 ## Sources
-- 
-- The Information report
-- LinkedIn announcement by Marko Bjelonic
+|- 
+|- The Information report
+|- LinkedIn announcement by Marko Bjelonic
+
+## See Also
+
+- [[zoox-expansion]] — Amazon's autonomous robotaxi expansion across multiple cities.
+- [[agibot-10000-units]] — Humanoid robotics production milestone.
+- [[autonomous-vehicles]] — Self-driving vehicle technology and deployment.

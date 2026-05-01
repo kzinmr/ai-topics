@@ -121,4 +121,12 @@ Aarsen is a **Hugging Face Fellow** since July 2023 and full-time **Machine Lear
 - **Library maintenance** -- Bug fixes, dependency updates, and community support across multiple open-source projects
 - **Hugging Face ecosystem** -- Integration work with Transformers, Skills, and other HF libraries
 - **Developer tools** -- Posts about efficient development workflows, testing strategies, and CI/CD for ML libraries
-- **Technical deep-dives** -- Detailed threads on Flash Attention, cross-modality support, and sparse embeddings
+|- **Technical deep-dives** -- Detailed threads on Flash Attention, cross-modality support, and sparse embeddings
+
+## See Also
+
+- [[huggingface]] — AI community and model hub where Tom Aarsen maintains Sentence Transformers.
+- [[sentence-transformers]] — Library for text embeddings that Tom Aarsen leads as maintainer.
+- [[nltk]] — Natural Language Toolkit where Aarsen is a core maintainer.
+- [[semantic-search]] — Search paradigm powered by Sentence Transformers embeddings.
+- [[embeddings]] — Dense vector representations for text, the core of Sentence Transformers.

@@ -115,11 +115,19 @@ The article at patloeber.com documents a practical setup for running **pi** (Mar
 | Multi-file refactors | 128K | ~8 GB |
 | Full repo context | 256K | ~16 GB |
 
-The article emphasizes the tradeoff between context size and VRAM overhead. Coding agents accumulate heavy session context, making larger contexts highly beneficial for multi-file refactors and full repo understanding.
+|The article emphasizes the tradeoff between context size and VRAM overhead. Coding agents accumulate heavy session context, making larger contexts highly beneficial for multi-file refactors and full repo understanding.
 
 ## Sources
-- 
-- 
-- Google DeepMind announcement
-- Martin Alderson, "A little tool to visualise MoE expert routing," martinalderson.com (April 13, 2026)
-- Patrick Loeber, "How to run a local coding agent with Gemma 4 and Pi," patloeber.com (Apr 2026)
+|- 
+|- 
+|- Google DeepMind announcement
+|- Martin Alderson, "A little tool to visualise MoE expert routing," martinalderson.com (April 13, 2026)
+|- Patrick Loeber, "How to run a local coding agent with Gemma 4 and Pi," patloeber.com (Apr 2026)
+
+## See Also
+
+- [[pi-coding-agent]] — Minimal coding agent by Mario Zechner that runs with Gemma 4 via LM Studio.
+- [[mistral-ai]] — Competing open-weight model provider with Mistral Medium 3.5.
+- [[open-models]] — Open-weight model ecosystem and licensing landscape.
+- [[coding-agents]] — AI agents for software engineering tasks.
+- [[lmstudio]] — Local model serving tool for running Gemma 4 on consumer hardware.

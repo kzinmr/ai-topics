@@ -126,3 +126,11 @@ type: entity
 *最終更新: 2026年4月14日*
 *データソース: Grokipedia、Stanfordプロフィール、Google Cloudブログ、World Labsウェブサイト*
 *深度: L2（基本プロフィール、経歴、研究貢献、受賞歴）→ L3へ升级予定（哲学、引用分析、概念的枠組み）*
+
+## See Also
+
+- [[yann-lecun]] — CNNのパイオニア。ImageNetの深層学習応用で協力関係。
+- [[ian-goodfellow]] — GANsの発明者。コンピュータビジョンと深層学習で関連研究。
+- [[imageNet]] — Fei-Fei Liが作成した大規模画像データセット。深層学習革命の触媒。
+- [[stanford-hai]] — Liが共同設立したヒューマンセンタードAI研究所。
+- [[world-labs]] — Liが2024年に共同設立した空間知能スタートアップ。

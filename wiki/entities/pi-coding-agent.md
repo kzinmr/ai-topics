@@ -98,3 +98,11 @@ Notable community skills include `liteparse` (doc parsing for image-only models)
 
 - Patrick Loeber, "How to run a local coding agent with Gemma 4 and Pi," patloeber.com (Apr 2026)
 - [GitHub repository](https://github.com/badlogic/pi-mono)
+
+## See Also
+
+- [[gemma-4]] — Open-weight MoE model commonly used with pi for local coding agents.
+- [[mario-zechner]] — Creator of pi coding agent.
+- [[claude-code]] — Anthropic's coding agent that pi positions as an alternative to.
+- [[coding-agents]] — AI agents for software engineering tasks and tooling.
+- [[lmstudio]] — Local inference server used to run models with pi.

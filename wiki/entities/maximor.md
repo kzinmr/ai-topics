@@ -59,3 +59,11 @@ The context graph for finance becomes a queryable audit trail and a library of p
 - [ ] Check for case studies or customer testimonials
 - [ ] Research how they handle the "connection problem" across finance systems
 - [ ] Remove skeleton status after enrichment
+
+## See Also
+
+- [[regie-ai]] — AI-native sales engagement platform using context graphs.
+- [[playerzero]] — AI agent startup using context graphs for production engineering.
+- [[arize]] — AI observability platform for monitoring agent decision quality.
+- [[ai-agents]] — AI agent infrastructure and frameworks.
+- [[enterprise-ai]] — Enterprise AI adoption and integration patterns.

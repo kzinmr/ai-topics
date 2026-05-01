@@ -56,3 +56,11 @@ While primarily focused on traditional software engineering, Orosz's work has be
 - [The Pragmatic Engineer Newsletter](https://newsletter.pragmaticengineer.com)
 - [Substack Profile](https://open.substack.com/users/30107029-gergely-orosz)
 - X/Twitter: @GergelyOrosz
+
+## See Also
+
+- [[substack]] — Platform hosting The Pragmatic Engineer newsletter.
+- [[alex-volkov]] — Tech newsletter author and AI commentator.
+- [[simon-willison]] — Software engineer and blogging personality in the tech ecosystem.
+- [[engineering-management]] — Engineering leadership and management practices.
+- [[newsletter]] — Tech newsletter ecosystem and publishing.

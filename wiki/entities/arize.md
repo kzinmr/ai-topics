@@ -59,3 +59,11 @@ Together they enable:
 - [ ] Check for comparisons to OpenTelemetry integration
 - [ ] Research competitive landscape (Honeycomb, Datadog's agent observability features)
 - [ ] Remove skeleton status after enrichment
+
+## See Also
+
+- [[playerzero]] — AI agent startup using context graphs for production engineering.
+- [[regie-ai]] — AI-native sales engagement platform using context graphs.
+- [[maximor]] — AI agent startup automating finance/accounting workflows.
+- [[ai-agents]] — AI agent infrastructure and frameworks.
+- [[observability]] — Monitoring and evaluation of AI agent decision quality.

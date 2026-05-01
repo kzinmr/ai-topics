@@ -50,5 +50,11 @@ Internal codename for OpenAI's next major language model (potentially GPT-6 or G
 - Competitive pressure from Anthropic Claude and Google Gemini driving urgency
 
 ## Sources
-- 
-- The Information report (March 2026)
+|- 
+|- The Information report (March 2026)
+
+## See Also
+
+- [[openai]] — OpenAI's GPT model family and company background.
+- [[coding-agents]] — OpenAI Codex and agent tooling.
+- [[anthropic]] — Competing AI lab with Claude models.

@@ -59,3 +59,10 @@ Cua delivers up to 90% native speed on Apple Silicon and works with any language
 - GitHub: [github.com/trycua/cua](https://github.com/trycua/cua)
 - Crunchbase: [Cua Profile](https://www.crunchbase.com/organization/cua-a556)
 - LinkedIn: [Cua (YC X25)](https://linkedin.com/company/cua-ai)
+
+## See Also
+
+- [[sandro-puppo]] — Co-founder of Cua, expert in GPU inference optimization.
+- [[lucebox]] — Personal computer for local AI agents by the same team.
+- [[computer-use]] — AI agents controlling operating systems within virtual containers.
+- [[davide-ciffa]] — Co-founder and kernel engineer at Cua and Lucebox.
