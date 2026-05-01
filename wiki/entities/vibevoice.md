@@ -22,7 +22,7 @@ sources:
   - https://arxiv.org/abs/2508.19205
   - https://microsoft.github.io/VibeVoice/
   - https://huggingface.co/microsoft/VibeVoice-1.5B
-status: skeleton
+status: complete
 ---
 
 # Microsoft VibeVoice

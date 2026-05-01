@@ -13,7 +13,7 @@ sources:
   - raw/papers/2026-04-27_2604.24594_skill-retrieval-augmentation-for-agentic-ai.md
   - https://arxiv.org/abs/2604.24594
   - https://github.com/oneal2000/SR-Agents
-status: skeleton
+status: stub
 ---
 
 # Skill Retrieval Augmentation (SRA)

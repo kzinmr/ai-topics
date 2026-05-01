@@ -1,25 +1,11 @@
 ---
-title: "Samuel Colvin"
+title: samuelcolvin
 type: entity
+redirect: samuel-colvin
 aliases:
   - samuelcolvin
-created: 2026-04-25
-updated: 2026-04-25
-tags:
-  - entity
-  - person
-status: stub
-
 ---
 
-# Samuel Colvin
+# samuelcolvin
 
-> **TODO**: Enrich this page.
-
-## Overview
-
-Stub page for Samuel Colvin.
-
-## Related Pages
-
-- [[entities/_index]]
+This page is a redirect. See [[samuel-colvin]].

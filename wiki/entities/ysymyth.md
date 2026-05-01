@@ -1,10 +1,9 @@
 ---
 title: ysymyth
 type: entity
+redirect: shunyu-yao
 ---
 
 # ysymyth
 
-## References
-
-- 2026-04-16-ysymyth-ungrounded-meaning
+This page is a redirect. See [[shunyu-yao]].

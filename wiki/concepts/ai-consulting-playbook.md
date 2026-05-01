@@ -7,7 +7,7 @@ tags: [consulting, ai-business, pricing, content-marketing, client-engagement, j
 aliases: ["ai-consulting-playbook", "content-flywheel", "value-based-pricing-ai"]
 sources:
   - https://567-labs.github.io/consulting/
-status: skeleton
+status: stub
 ---
 
 # The AI Consulting Playbook
