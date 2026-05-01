@@ -1,3 +1,13 @@
+## [2026-05-01] VibeVoice — Microsoft Research's next-token diffusion TTS model for long-form multi-speaker speech
+
+- Created [[entities/vibevoice]] — Entity page for Microsoft's open-source TTS model. Combines Qwen2.5 LLM with continuous speech tokenizers (7.5 Hz, 3200× compression) and diffusion head for up to 90 min, 4-speaker generation. ICLR 2026 Oral. GitHub repo disabled due to misuse concerns.
+- Saved raw article: `raw/articles/vibevoice-technical-report.md`
+- Updated [[concepts/speech-audio-asr-tts-voice]] — Added VibeVoice as a key player (Microsoft section), updated competitive positioning table with multi-speaker/max-duration columns, added to open-vs-closed section
+- Updated [[concepts/speech]] — Added VibeVoice to related concepts
+- Updated index: wiki/index.md, wiki/log.md
+
+---
+
 ## [2026-04-30] Skill Retrieval Augmentation (SRA) — Academic framework for agent skill retrieval at scale
 
 - Created [[concepts/skill-retrieval-augmentation]] — Concept page synthesizing Su, Long, Ai et al. (2026) arXiv:2604.24594. Three-stage SRA pipeline (Retrieve→Incorporate→Apply), SRA-Bench (5,400 tasks, 26,262 skills), "incorporation bottleneck" finding, and connection to harness engineering (progressive disclosure).

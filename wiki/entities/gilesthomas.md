@@ -82,7 +82,9 @@ The most ambitious series on Thomas's blog. Spanning 46+ posts (from December 20
 ### Additional ML Content
 
 - **Messing around with fine-tuning LLMs** (10-part series, 2024) — Fine-tuning experiments covering load balancing, multi-GPU training, Hugging Face Hub integration with `AutoModel`, `pipeline`, and `Trainer`.
-- **10Gb/s Home Ethernet** (April 2026) — Technical deep-dive on setting up high-speed wired networking infrastructure at home.
+- **10Gb/s Home Ethernet** (April 2026) — Technical deep-dive on setting up high-speed wired networking infrastructure at home - two-part series covering theoretical background and practical implementation.
+- **LLM Coherence Evolution** (April 2026) — Visualized how a GPT-2-small-style model becomes more coherent over 57 training checkpoints. Key finding: FineWeb-Edu models scored significantly higher on IFT than loss alone would predict, suggesting knowledge density matters separately from raw intelligence.
+- **Lambda Labs Instance Automation** (April 2026) — Built `lambda-manager`, a CLI tool for polling Lambda Labs API and automatically launching GPU instances when available, with Telegram notifications.
 
 ## Writing Style & Philosophy
 
@@ -138,3 +140,7 @@ Thomas is a **Python Software Foundation (PSF) Fellow** and an advocate of **Ext
 - gilesthomas.com--2026-04-smolagents-vs-openai-agents-sdk-feature-parity--4df391fa
 - gilesthomas.com--2026-04-visualizing-smolagents-logs-and-traces-using-argilla--cc8f7863
 - gilesthomas.com--2026-04-llm-from-scratch-33-what-i-learned-from-the-appendic--383f52a1
+- gilesthomas-coherence-2026-04-17.md
+- gilesthomas.com--2026-04-automating-starting-lambda-instances--e9d854e4.md
+- gilesthomas.com--2026-04-10g-ethernet-what-i-did--89f5510c.md
+- gilesthomas.com--2026-04-10g-ethernet-what-i-relearned--8afc5c80.md

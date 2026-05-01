@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 727 | Full entries: 698 | Stubs: 619
+> Last updated: 2026-05-01 | Total pages: 728 | Full entries: 699 | Stubs: 619
 
-## Entities (346 pages)
+## Entities (347 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -290,6 +290,7 @@
 - [[entities/utcc-utoronto-ca-cks]] — **Blog** | Wandering Thoughts |
 - [[entities/varun-trivedy]] — **X** | @Vtrivedy10 |
 - [[entities/vtrivedy10]] — **X** | @vtrivedy10 |
+- [[entities/vibevoice]] — Microsoft Research's next-token diffusion TTS model for long-form, multi-speaker conversational audio (up to 90 min, 4 speakers). ICLR 2026 Oral. Open-source (MIT). [[entities/vibevoice|→詳細]]
 - [[entities/walden-yan]] — **Role** | Co-Founder & Chief Product Officer (CPO), Cognition AI |
 - [[entities/webmcp]] — **WebMCP**は、W3C Web Machine Learning Community Groupで開発されているブラウザ標準。GoogleとMicrosoftが共同で策定し、AIエージェントがWebアプリケーションと構造的に対話するための`navigator.modelContext` APIを定義する。2026年2月にChrome 146で早期プレビューが開始された。
 - [[entities/westenberg]] — **Blog** | joanwestenberg.com |

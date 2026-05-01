@@ -21,6 +21,7 @@ sources:
   - https://ai.pydantic.dev/hooks/
   - https://pydantic.dev/articles/pydantic-monty
   - https://github.com/pydantic/pydantic-ai-harness/releases/tag/v0.2.0
+  - raw/articles/2026-04-30_pydantic-ai-harness_capability-library.md
 ---
 
 # pydantic-ai-harness

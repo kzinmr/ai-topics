@@ -65,6 +65,28 @@ Zitron's lifestyle reflects frequent relocations, including stints in New York, 
 
 Ed Zitron is the tech industry's **most eloquent contrarian** — a practitioner who writes from within the PR and marketing world, armed with firsthand knowledge of how tech narratives are manufactured, amplified, and eventually collapse under their own weight. Unlike academic critics, Zitron speaks the language of the industry he critiques. His writing is distinctive: **profane, passionate, deeply researched, and relentlessly empirical**. He doesn't theorize about AI or VC — he tracks what they actually do, how they actually behave, and what they actually deliver.
 
+### The Subprime AI Crisis (2024–2026)
+
+Zitron's most significant ongoing reporting project — first raised in September 2024 — draws systematic parallels between the AI industry and the 2008 subprime mortgage crisis. The thesis has evolved through 2025–2026 into a detailed framework:
+
+**The Core Argument**: The AI industry is built on deceptive pricing, easy debt, and inflated valuations — mirroring the 2008 housing crash:
+- **"Teaser Rates"**: AI subscriptions mask actual compute costs (token burn) behind flat fees. Users burn $3–$13 in compute for every $1 of subscription revenue.
+- **Universal Subsidies**: VC and cheap debt fund below-cost pricing across consumers, startups, and enterprises
+- **The "Chain of Pain"**: Data center debt → GPU rentals → AI lab operating losses → startup dependencies → consumer subscription decay
+- **Behavioral Trapping**: AI companies trained users to expect unsustainable service levels, making eventual price hikes catastrophic for retention
+
+**Key Data Points from His Reporting**:
+- OpenAI: $4.3B revenue vs $8.67B inference spend (thru Sept 2025)
+- Anthropic: $5B revenue vs $10B+ compute spend
+- CoreWeave: -6% operating margin, -29% net loss (2025)
+- Cursor: gave users $2,192 in tokens on a $200/month plan
+- Perplexity: cut deep research queries from 600/month → 20/month (97% reduction)
+- Data centers: $178.5B debt raised, only 5GW of 200GW under construction
+
+**"Pale Horses of the AIpocalypse"** — Zitron's updated warning signs (Apr 2026): AI lab price hikes, data center deal collapses, CoreWeave debt issues, SoftBank over-leverage ($40B debt due in 1 year), ARM stock decline, NVIDIA earnings, and Blue Owl financial stability.
+
+See the full [[concepts/ai-subprime]] concept page for complete analysis.
+
 ### The AI Product Collapse Thesis
 
 Zitron's most consistent and prescient argument — made repeatedly through 2025-2026 — is that **most AI products are fundamentally broken and will fail at scale**. His reasoning is structural, not speculative:
@@ -161,4 +183,19 @@ On labor issues, Zitron argues that tech industry leaders view workers' rights a
 - [Where's Your Ed At](https://www.wheresyoured.at) — Primary blog and newsletter
 - [The Death of Marketing](https://www.wheresyoured.at/book) (2024) — Zitron's book on marketing industry transformation
 - [wheresyoured.substack.com](https://wheresyoured.substack.com) — Newsletter with ongoing tech criticism and industry analysis
-- [Grokipedia: Ed Zitron](https://grokipedia.com/page/ed_zitron) — Biographical information and additional context (facts marked with "via Grokipedia" sourced from this page)
+- [Grokipedia: Ed Zitron](https://grokipedia.com/page/ed_zitron) — Biographical information
+- raw/articles/wheresyoured.at--the-subprime-ai-crisis-is-here--278f66de.md
+- raw/articles/wheresyoured.at--the-ai-industry-is-lying-to-you--00c54f74.md
+- raw/articles/wheresyoured.at--four-horsemen-of-the-aipocalypse--4b0fae4c.md
+- raw/articles/wheresyoured.at--ais-economics-dont-make-sense--cab39fd8.md
+- raw/articles/wheresyoured.at--ais-economics-dont-make-sense-ad-free--b7415062.md
+- raw/articles/wheresyoured.at--ai-is-really-weird--cfa83f71.md
+- raw/articles/wheresyoured.at--premium-how-much-of-the-ai-bubble-is-real--77b4d8a4.md
+- raw/articles/wheresyoured.at--premium-ai-isnt-too-big-to-fail--e4456726.md
+- raw/articles/wheresyoured.at--news-microsoft-to-shift-github-copilot-users-to-token-based---d4b13c77.md
+- raw/articles/wheresyoured.at--news-anthropic-removes-pro-cc--0f3f1ae4.md
+- raw/articles/wheresyoured.at--i-will-never-respect-a-website--e91c1694.md
+- raw/articles/wheresyoured.at--hatersguide-privatecredit--06416368.md
+- raw/articles/wheresyoured.at--hatersguide-adobe--37ba8c0e.md
+- raw/articles/wheresyoured.at--exclusive-microsoft-moving-all-github-copilot-subscribers-to--7951c0ff.md
+- raw/articles/fortune.com--2026-03-26-anthropic-says-testing-mythos-powerful-new-ai-mod--e63c44b8.md

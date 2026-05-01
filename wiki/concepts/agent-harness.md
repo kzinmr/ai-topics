@@ -7,7 +7,13 @@ aliases: [agent-harness, harness-anatomy, agent-scaffolding]
 related: [[concepts/harness-engineering]], [[concepts/deep-agents-runtime]], [[concepts/agent-loop-orchestration]], [[concepts/context-engineering]], [[concepts/bitter-lesson-harnessing]]
 sources: [
   "https://x.com/akshay_pachaar/status/2041146899319971922",
-  "https://x.com/i/article/2041146899319971922"
+  "https://x.com/i/article/2041146899319971922",
+  "raw/articles/2026-04-28_the-harness-is-the-backend.md",
+  "raw/articles/2041146899319971922_the-anatomy-of-an-agent-harness-.md",
+  "raw/articles/2026-the-self-healing-agent-harness.md",
+  "raw/articles/2026-the-ai-cake-trade.md",
+  "raw/articles/crawl-2026-04-18-token-economics.md",
+  "raw/articles/2026-is-s3-faster-than-a-file-system.md"
 ]
 ---
 
@@ -173,6 +179,21 @@ The harness is not a solved problem or a commodity layer. It's where the hard en
 The field is moving toward thinner harnesses as models improve. But the harness itself isn't going away. Even the most capable model needs something to manage its context window, execute its tool calls, persist its state, and verify its work.
 
 > **The next time your agent fails, don't blame the model. Look at the harness.**
+
+## The Harness Is the Backend (iii Paradigm)
+
+A radical alternative view emerged in April 2026 from the [[entities/iii-platform|iii platform]]: the harness should not be separate from the backend — it should **be** the backend.
+
+**Current assumption challenged**: Most architectures treat the harness as "extrinsic to the traditional backend." The agent's loop, tools, and memory live in one layer; queues, state, HTTP routing, and observability live in another. These are connected by HTTP requests with independent retry schedules, timeouts, and traces — creating **agents² × services** stochastic paths to debug.
+
+**The iii solution**: Three primitives — Worker, Function, Trigger — apply universally. An agent is a worker. A queue is a trigger. A sandbox is a worker. "The agent's 'tools' are functions. Its 'memory' is state. Its 'orchestration' is triggers and composition. There is no special agent infrastructure because there doesn't need to be."
+
+**Implications for harness design**:
+- Thin vs thick harness becomes a design pattern within the same system, not different architectures
+- Removing scaffolding = simplifying a function, not rearchitecting an integration layer
+- Categories collapse: "Queues have broker semantics, HTTP has routing semantics, agents have orchestration semantics. In iii, they are all the same thing: a process that registers functions and triggers."
+
+This paradigm connects to the [[concepts/bitter-lesson-harnessing|Bitter Lesson of Harnessing]] — as models improve, infrastructure should collapse categories rather than add new ones. See [[entities/iii-platform]] for full details.
 
 ## See Also
 

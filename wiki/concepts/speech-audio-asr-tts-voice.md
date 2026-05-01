@@ -66,6 +66,17 @@ Both models support GDPR and HIPAA-compliant deployments through secure on-premi
 - **Text-to-Speech API**: GA March 2026 — natural-sounding speech from Grok models
 - **Speech-to-Text API**: GA April 2026 — transcribe audio in 25 languages, batch and streaming modes
 
+### Microsoft — VibeVoice (August 2025)
+
+- **Type**: Long-form, multi-speaker TTS using next-token diffusion
+- **Key Innovation**: Continuous speech tokenizers at 7.5 Hz (3200× compression) — 80× better than Encodec
+- **Capabilities**: Up to **90 minutes** of speech, up to **4 speakers**
+- **Base Model**: Qwen2.5-1.5B / Qwen2.5-7B (reported)
+- **Variants**: Full (1.5B, multi-speaker), Realtime (0.5B, single-speaker streaming)
+- **Safety**: Audible AI disclaimer + watermarking + inference logging
+- **Status**: ICLR 2026 Oral. Open-source (MIT) but GitHub repo disabled due to misuse concerns
+- **Performance**: Outperforms Gemini 2.5 Pro TTS and ElevenLabs V3 in subjective evaluations
+
 ### ElevenLabs
 - Market leader in voice cloning and AI voice generation
 - Confirmed as #1 TTS tool by independent technology platforms in 2026
@@ -117,17 +128,19 @@ Small models (≤4B params) can run on edge devices:
 
 ### Open vs Closed
 - **Mistral**: Open weights (Apache 2.0), self-hostable — strong edge play
+- **Microsoft VibeVoice**: Open-source (MIT) — long-form multi-speaker frontier, repo currently disabled
 - **OpenAI**: API-first, custom voice fine-tuning for enterprise
 - **xAI**: API-first, 25-language STT support
 - **ElevenLabs**: Proprietary, highest-quality voice cloning
 
 ### Competitive Positioning
-| Provider | TTS Quality | Voice Cloning | Open Weights | Edge Support | Languages |
-|----------|-------------|---------------|--------------|--------------|-----------|
-| Mistral Voxtral TTS | Frontier | Zero-shot (3s clip) | ✅ Apache 2.0 | ✅ (≥16GB VRAM) | 9 |
-| OpenAI TTS | HD quality | Enterprise custom | ❌ | ❌ | English-optimized |
-| xAI Grok TTS | Natural | ❌ | ❌ | ❌ | 25 (STT) |
-| ElevenLabs | Industry-best | Best-in-class | ❌ | ❌ | 32+ |
+|| Provider | TTS Quality | Voice Cloning | Open Weights | Edge Support | Languages | Multi-Speaker | Max Duration |
+||----------|-------------|---------------|--------------|--------------|-----------|--------------|-------------|
+|| Mistral Voxtral TTS | Frontier | Zero-shot (3s clip) | ✅ Apache 2.0 | ✅ (≥16GB VRAM) | 9 | ❌ | Standard |
+|| OpenAI TTS | HD quality | Enterprise custom | ❌ | ❌ | English-optimized | ❌ | Standard |
+|| xAI Grok TTS | Natural | ❌ | ❌ | ❌ | 25 (STT) | ❌ | Standard |
+|| **Microsoft VibeVoice** | **Frontier** | **Prompt-based** | **✅ MIT** | ❌ | **EN, ZH** | **✅ Up to 4** | **~90 min** |
+|| ElevenLabs | Industry-best | Best-in-class | ❌ | ❌ | 32+ | Limited | Limited |
 
 ## Related
 

@@ -48,6 +48,7 @@ Speech AI encompasses the technologies for synthesizing human-like speech from t
 - [[gemini]]
 - [[gpt-models]]
 - [[entities/mistral-voxtral-tts]]
+- [[entities/vibevoice]]
 - [[decoder-only-gpt]]
 
 ## Sources
