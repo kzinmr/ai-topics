@@ -1,3 +1,19 @@
+---
+title: "Larsen Cundric"
+type: entity
+created: 2026-04-30
+updated: 2026-05-02
+tags:
+  - person
+  - ai-agents
+  - harness-engineering
+  - sandboxing
+status: active
+sources:
+  - url: "https://browser-use.com/posts/two-ways-to-sandbox-agents"
+    title: "How We Built Secure, Scalable Agent Sandbox Infrastructure"
+---
+
 # Larsen Cundric
 
 **Company:** Browser Use (Founding Engineer)
@@ -7,8 +23,6 @@
 **GitHub:** [LarsenCundric](https://github.com/LarsenCundric)
 **Blog:** [browser-use.com/posts](https://browser-use.com/posts)
 **Status:** skeleton
-
----
 
 ## Bio
 

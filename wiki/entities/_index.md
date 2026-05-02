@@ -1,259 +1,258 @@
-     1|---
-     2|title: "Entity Pages"
-     3|tags: [training, ai-agents, llm, entity, prompting, rag, evaluations, inference]
-     4|created: 2026-04-24
-     5|updated: 2026-04-24
-     6|---
-     7|
-     8|# Entity Pages
-     9|
-    10|People, companies, organizations, and projects in the AI ecosystem.
-    11|
-    12|## All Entities
-    13|
-    14|- [[abacaj]] — Anton Bacaj is a software engineer and ML practitioner known for his open-source contributions in large language model fine-tuning, evaluation, and inference optimization. He has worked at Jet.com (20
-    15|- [[adam-mastroianni]] — Adam's signature thesis: psychology is experimental history. Unlike historians who wait for events to unfold, psychologists construct situations, place humans inside them, and record what happens. The
-    16|- [[addy-osmani]] — Addy Osmani is a Director at Google Cloud AI, working on Gemini and Vertex AI. Previously, he was Engineering Lead for Chrome & Web Platform at Google, where he became one of the most prolific writers
-    17|- [[agentcraft]] — Open-source AI agent orchestrator with an RTS game interface. Built by Ido Salomon (@idosal1). Displays agents as hero units on a 3D map with missions, fog of war, and achievements. Supports Claude Code, OpenCode, and Cursor.
-    18|- [[agibot-10000-units]] — Real-world demand for humanoid robots accelerates as AGIBot ships 10,000 units.
-    19|- [[akira-realmcore]] — Akira (@realmcore_) は Random Labs のAIエンジニアリングチームの中心的な声。同社は2024年設立、YC S24バッチのスタートアップで、創設者は Kiran と Mihir Chintawar。
-    20|- [[alec-radford]] — Alec Radford represents the anti-traditional academic path in AI research: no PhD, no extensive publication record in top conferences, no public speaking circuit. Yet he is a co-author on some of the 
-    21|- [[alex-banks]] — Alex Banks is a British AI educator, creator, and entrepreneur who bridges the gap between cutting-edge AI research and practical, everyday application. He is best known for writing The Signal, a week
-    22|- [[alex-zhang]] — Alex Zhang is a PhD student at MIT CSAIL working on areas where language models are underutilized or inefficient. He is the primary author of Recursive Language Models (RLMs), a paradigm that treats c
-    23|- [[ali-farhadi]] — Computer vision pioneer, co-creator of YOLO (You Only Look Once) object detection, founder of Xnor.ai (acquired by Apple), former CEO of Allen Institute for AI (Ai2). In March 2026 stepped down from A
-    24|- [[amazon-rivr]] — March 2026 acquisition of Zurich-based autonomous robotics startup Rivr by Amazon.
-    25|- [[andrej-karpathy]] — His YouTube series "Neural Networks: Zero to Hero" is one of the most popular free deep learning educational resources on the internet. His Stanford course CS231n: Convolutional Neural Networks for Vi
-    26|- [[andrew-nesbitt]] — Andrew Nesbitt is one of the most focused specialists in the open source ecosystem: he has spent the last decade thinking almost exclusively about package management, dependency graphs, and software s
-    27|- [[andriy-burkov]] — Andriy Burkov is an ML educator and NLP researcher who has made a significant impact on the machine learning community through his accessible, concise writing style. He is best known for "The Hundred-
-    28|- [[anildash]] — Anil's most urgent recent thesis: 2026 is the decisive year for whether the open web survives. He argues that Big Tech's "hectobillionaires" are conducting a final assault on the open internet:
-    29|- [[ankur-goyal]] — Ankur Goyal is a serial entrepreneur and AI industry veteran best known as the founder and CEO of Braintrust Data, an end-to-end platform for building and evaluating AI applications. Braintrust helps 
-    30|- [[anthropic-computer-use]] — タスク指示 → スクリーンショット取得 → ビジョンモデルがUI要素認識 →
-    31|- [[anthropic]] — AI safety research company, developer of the Claude model family.
-    32|- [[antirez-com]] — Salvatore "antirez" Sanfilippo is one of the most influential systems programmers of the modern era. He created Redis in 2009, which became one of the most widely deployed in-memory data stores in the
-    33|- [[arize]] — AI observability platform positioned as 'Datadog for agents' — monitoring agent decision quality, reasoning paths, and evaluation metrics at scale
-    34|- [[arlan-r]] — Arlan Rakhmetzhanov is an 18-year-old Kazakhstani entrepreneur who dropped out of high school to attend Y Combinator's Summer 2025 batch and build Nozomio, an AI coding agents product lab. His flagshi
-    35|- [[armin-ronacher]] — Armin Ronacher (@mitsuhiko, born 10 May 1989, Austria) is a software engineer, open-source developer, and entrepreneur who has profoundly shaped the Python ecosystem and is now building the next gener
-    36|- [[ashpreet-bedi]] — Ashpreet Bedi is a software engineer and entrepreneur with over 15 years of experience building data infrastructure and machine learning systems at scale. He is the founder and CEO of Agno (formerly P
-    37|- [[beej-us]] — Brian "Beej Jorgensen" Hall is one of the most influential technical educators of the internet era. His Beej's Guide to Network Programming has taught socket programming to generations of developers s
-    38|- [[benjamin-clavie]] — Benjamin Claviéはフランス出身のNLP/情報検索(IR)研究者で、現在はTokyo, Japanを拠点にMixedbreadでML R&Dに従事し、National Institute of Informatics (NII) のKasys lab（指導教員: Makoto P. Kato教授）でPhD課程在籍中。
-    39|- [[berthub-eu]] — Bert is a systems-level thinker who operates at the intersection of software engineering, public policy, and scientific research. His work spans from RFCs that secure global DNS infrastructure to poli
-    40|- [[block-ai]] — Block, Inc. (formerly Square) — Jack Dorsey's AI-native organizational transformation from hierarchy to intelligence-driven coordination
-    41|- [[boaz-barak]] — Boaz Barak is one of the most prominent theoretical computer scientists working on AI safety and the foundations of machine learning. As the Gordon McKay Professor of Computer Science at Harvard SEAS 
-    42|- [[bogdanthegeek-s-blog]] — Bogdan Ionescu, known online as BogdanTheGeek, is an embedded engineer who publishes deeply technical, hands-on projects that blend serious engineering with creative experimentation. His blog sits at 
-    43|- [[boris-cherny]] — Boris Cherny is the creator of Claude Code, Anthropic's agentic coding CLI. He is one of the most influential voices in practical AI agent workflows, known for deep technical insights on parallel agen
-    44|- [[bradford-morgan-white]] — Bradford Morgan White is a computing historian and systems administrator whose writing spans two distinct but complementary modes: deep-dive historical analysis on his Substack Abort Retry Fail, and p
-    45|- [[browser-use]] — from browser_use import Agent, Browser, ChatBrowserUse
-    46|- [[browserbase]] — ┌─────────────────────────────────────────────┐
-    47|- [[brutecat-com]] — Brutecat is a systems-level security researcher whose work centers on a single, powerful thesis: large tech platforms hide their most vulnerable surfaces behind abstraction layers, and the key to find
-    48|- [[bryan-bischof]] — Bryan Bischof is one of the most pragmatic voices at the intersection of data science, AI engineering, and venture capital. His career spans the full breadth of the modern data stack: he started the d
-    49|- [[cats-with-power-tools]] — The blog operates on a dual domain (blog.pixelmelt.dev and blog.exploit.cat), with the latter serving as a secondary/mirror identity. The author uses Matomo analytics with custom tracking endpoints na
-    50|- [[chad-nauseam-home]] — Chad Nauseam is a systems-thinking generalist who writes about technology, economics, and culture with a distinctive style: self-deprecating, deeply technical, and unafraid to challenge consensus. His
-    51|- [[charles-frye]] — Charles Frye grew up in Kankakee, Illinois. (via Grokipedia) He attended the Illinois Math and Science Academy in Aurora, Illinois — a selective residential high school focused on advanced study in ma
-    52|- [[chiark-greenend-org-uk-sgtatham]] — Simon Tatham was born on 3 May 1977 in the United Kingdom (via Grokipedia). He attended primary school at Dolphin School and Hurst School — the latter twice, due to family relocations — and completed 
-    53|- [[chip-huyen]] — Chip Huyen is one of the most influential voices in ML/AI systems engineering, bridging the gap between academic research and production deployment. She is a writer, computer scientist, and educator w
-    54|- [[chipro]] — Chip Huyen is one of the most respected voices in production machine learning and AI engineering. Unlike researchers who focus on model accuracy in isolation, Huyen's work centers on the full lifecycl
-    55|- [[chris-tate]] — Chris Tate is a software engineer at Vercel and a prolific open-source creator focused on developer tools and AI-assisted workflows. He is the creator of three notable open-source projects:
-    56|- [[claude-mythos]] — Anthropic's next-generation model, developed after [[concepts/claude-opus-4-6]]. Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
-    57|- [[clefourrier]] — Clémentine Fourrier is a research scientist who, between 2023 and 2025, led Hugging Face's evaluation efforts and collaborations on LLMs and AI agents. She is one of the most influential figures in th
-    58|- [[coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
-    59|- [[construction-physics-com]] — Brian Potter is the author of Construction Physics, a Substack newsletter that examines the technology and economics of building construction with a focus on understanding why construction productivit
-    60|- [[corbett]] — Kyle Corbitt (known as "Corbett" on X/Twitter, handle @corbtt) is a serial entrepreneur and engineer focused on making AI model fine-tuning and reinforcement learning accessible to developers. He is c
-    61|- [[cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
-    62|- [[daniel-de-laney]] — Daniel is a product-minded designer who operates at the intersection of design, development, and product strategy. He writes about the human side of software — how tools feel, how they fail to meet re
-    63|- [[daniel-han]] — What makes Daniel's story remarkable is the technical depth. Unsloth is not a PyTorch wrapper — it performs actual operator-level optimization with manual autograd derivatives and chained matrix multi
-    64|- [[daniel-van-strien]] — Daniel van Strien occupies a unique and increasingly critical position at the intersection of open-source AI, data infrastructure, and the cultural sector. As a Machine Learning Librarian at Hugging F
-    65|- [[daringfireball-net]] — John Gruber is one of the most influential voices in the Apple ecosystem and a significant figure in the broader technology writing landscape. Since launching Daring Fireball in 2002, he has built a r
-    66|- [[dario-amodei]] — Dario Amodei is the CEO and co-founder of Anthropic, one of the most influential AI safety companies in the world. His career traces a direct line from theoretical physics to AI alignment to leading a
-    67|- [[dax-raad]] — Before his work on serverless and AI developer tools, Raad founded Ironbay as a software engineering venture dedicated to helping young companies build lasting technology (via Grokipedia). Ironbay ope
-    68|- [[deliberate-coder]] — The concept emerged from Ilegbodu's frustration with the inefficiency of traditional AI-assisted workflows. After experiencing rounds of "no, that's not what I meant" with AI-generated code, he develo
-    69|- [[deliberatecoder]] — The blog's name is its thesis: deliberate coding means doing things consciously and intentionally. Shogren's work is characterized by a willingness to challenge conventional wisdom in software enginee
-    70|- [[demis-hassabis]] — Sir Demis Hassabis is the CEO of Google DeepMind and one of the most influential figures in artificial general intelligence (AGI) research. His career uniquely spans chess prodigy, game developer, neu
-    71|- [[derek-thompson]] — Derek Thompson is a supply-side progressive who applies abundance thinking to every domain — from housing policy to AI economics. Unlike tech optimists who focus on capability trajectories or skeptics
-    72|- [[dialloibu]] — Ibrahim Diallo is a storyteller-programmer who uses narrative to illuminate the human side of technology. His blog is unique in the developer blogging space: rather than tutorials or hot takes, he wri
-    73|- [[dorialexander]] — Langlais holds a PhD in Information and Communication from Université Paris IV (Sorbonne), where his doctoral thesis on the birth of financial journalism in France earned the Young Researcher 2016 Awa
-    74|- [[doug-turnbull]] — Doug Turnbull (known online as @softwaredoug) is a search relevance engineer, author, and consultant who has been one of the most influential voices in the information retrieval and search engineering
-    75|- [[downtowndougbrown-com]] — Doug Brown operates at the intersection of vintage computing preservation and modern embedded engineering. His work is distinguished by a rare combination of skills: hardware-level diagnosis, Linux ke
-    76|- [[drew-breunig]] — Drew Breunig is a writer, developer, and strategist working at the intersection of cultural anthropology, computer science, and media. He is one of the most prominent early voices on context engineeri
-    77|- [[drmaciver]] — Creator of Hypothesis, the world's most widely used property-based testing library (Python, 2M+ downloads/month). Pioneer in test-case reduction (Shrinkray) and LLM evaluation methodologies. Currently
-    78|- [[dwarkesh-patel]] — Dwarkesh Patel (born August 19, 2000) is an American podcaster, writer, and technology journalist best known for the Dwarkesh Podcast and his 2025 book The Scaling Era: An Oral History of AI, 2019–202
-    79|- [[dylan-patel]] — tags:
-    80|- [[dynomight-net]] — Dynomight is a pseudonymous writer who produces long-form essays on topics ranging from AI safety and the philosophy of consciousness to tactical parenting, tea optimization, and the statistical analy
-    81|- [[ed-zitron-s-where-s-your-ed-at]] — Ed Zitron was born in the United Kingdom and grew up in West London, initially in the White City area before his family relocated to Hammersmith (via Grokipedia). His father worked in management consu
-    82|- [[eli-thegreenplace-net]] — Eli Bendersky is a systems programmer, compiler enthusiast, and one of the most consistent technical bloggers in the industry. His website thegreenplace.net has been publishing since 2004, accumulatin
-    83|- [[elie-bakouch]] — ML engineer and researcher at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training.
-    84|- [[elvis-sun]] — Elvis spent 8 years at Google building Firebase before becoming a generalist founder who can build the entire business — product, code, ops, marketing, sales. In the AI era, he argues one person can b
-    85|- [[elvis]] — Conducted a 9-hour side-by-side source code study of Hermes Agent and OpenClaw, producing one of the most detailed public comparisons of agent architecture patterns.
-    86|- [[embeddings]] — Single-vector embedding models — strengths, limitations, and theoretical constraints (LIMIT dataset, drowning-in-documents paradox)
-    87|- [[emollick]] — Ethan Mollick is one of the most influential public educators on practical AI usage. As a professor at the Wharton School of the University of Pennsylvania, he has spent over two decades studying inno
-    88|- [[entropicthoughts-com]] — Chris is the author of Entropic Thoughts, a blog that applies rigorous quantitative thinking — statistics, queueing theory, information theory, and Bayesian reasoning — to software engineering, produc
-    89|- [[eric-hartford]] — Eric Hartford is one of the most prominent independent creators in the open-source LLM fine-tuning ecosystem. He is best known as the creator of the Dolphin series of models — uncensored, instruction-
-    90|- [[eric-zhang]] — Systems hacker and designer. Creator of bore, sshx, rustpad, and Percival. Former founding engineer at Modal, now at Thinking Machines Lab.
-    91|- [[ericmigi]] — Migicovsky's career trajectory reflects a distinctive philosophy: build products you personally want, prioritize sustainability over growth-at-all-costs, and maintain deep engagement with the communit
-    92|- [[ethan-mollick]] — Ethan Mollick is one of the most influential public intellectuals on the practical impact of generative AI on work, education, and entrepreneurship. An associate professor at the Wharton School of the
-    93|- [[eugene-yan]] — Eugene Yan (Ziyou) is a practitioner-scholar who has become one of the most influential voices on building production machine learning systems and, more recently, on applying large language models at 
-    94|- [[eugeneyan]] — Eugene Yan is among the most pragmatic and grounded voices in applied machine learning. His career spans e-commerce ML at Alibaba/Lazada, healthtech at a Series A startup, recommendation systems at Am
-    95|- [[evanhahn-com]] — Evan Hahn is a pragmatic engineer-philosopher — someone who writes code that protects millions of web applications daily, but whose writing consistently returns to the human, ethical, and craft dimens
-    96|- [[fabiensanglard-net]] — Fabien treats game engines the way an archaeologist treats excavation sites: every layer tells a story about the constraints, decisions, and ingenuity of its creators. His Game Engine Black Book serie
-    97|- [[fei-fei-li]] — 中国系アメリカ人コンピュータサイエンティスト。ImageNetの作成者、Stanford HAI共同創設者。コンピュータビジョン、空間知能、ヒューマンセンタードAIのパイオニア。
-    98|- [[fernando-borretti]] — Fernando Borretti is a software engineer, compiler author, and prolific technical writer who builds programming languages and writes deeply about software engineering practice, AI systems, and data mo
-    99|- [[figma]] — FigmaはClaude Designの登場により、SaaS AI時代の脆弱性を示すケーススタディとなっている。
-   100|- [[filfre-net]] — Jimmy Maher is the preeminent historian of interactive fiction and one of the most thorough chroniclers of computer gaming's formative decades. His blog, The Digital Antiquarian, has published hundred
-   101|- [[florian-brand]] — Florian Brand operates at the intersection of AI infrastructure, open model research, and public-facing AI analysis. As a PhD student at the University of Trier and researcher at DFKI, his academic wo
-   102|- [[foundation-capital]] — Venture capital firm that published 'AI's Trillion-Dollar Opportunity: Context Graphs' — arguing that the next trillion-dollar platforms will be built by capturing decision traces, not adding AI to existing data
-   103|- [[gary-marcus]] — Gary Marcus is a cognitive scientist and AI researcher best known for his rigorous critique of pure deep learning approaches to artificial intelligence. His central thesis, developed over decades of r
-   104|- [[gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind designed for on-device frontier intelligence.
-   105|- [[geoffrey-hinton]] — Geoffrey Hinton is arguably the most influential figure in the history of artificial intelligence. His career spans the entire arc of neural network research — from the "AI winters" of the 1970s–1990s
-   106|- [[geoffrey-litt]] — Geoffrey Litt is one of the most thoughtful voices on malleable software — the idea that computing environments should let users adapt, reshape, and extend their tools with minimal friction. This visi
-   107|- [[geoffreylitt-com]] — Geoffrey Litt is a design engineer and researcher focused on malleable software — computing environments where anyone can adapt their tools to their needs with minimal friction. His work spans end-use
-   108|- [[geohot-github-io]] — George Hotz (geohot) is a hacker, entrepreneur, and software engineer best known for being the first person to carrier-unlock the iPhone and hack the PlayStation 3. He founded comma.ai in 2015 to buil
-   109|- [[georgi-gerganov]] — Georgi Gerganov is the principal architect of the local AI inference stack. By re-implementing heavy neural network models in pure, dependency-free C/C++, he made it possible to run state-of-the-art L
-   110|- [[glm-5-zai]] — New state-of-the-art open weights LLM from Z.ai (智谱AI).
-   111|- [[glm-5v-turbo]] — Model that turns designs into code, part of the multimodal AI wave from Chinese labs.
+---
+title: "Entity Pages"
+tags: [training, ai-agents, llm, entity, prompting, rag, evaluations, inference]
+created: 2026-04-24
+updated: 2026-04-24
+---
+
+# Entity Pages
+
+People, companies, organizations, and projects in the AI ecosystem.
+
+## All Entities
+
+- [[abacaj]] — Anton Bacaj is a software engineer and ML practitioner known for his open-source contributions in large language model fine-tuning, evaluation, and inference optimization. He has worked at Jet.com (20
+- [[adam-mastroianni]] — Adam's signature thesis: psychology is experimental history. Unlike historians who wait for events to unfold, psychologists construct situations, place humans inside them, and record what happens. The
+- [[addy-osmani]] — Addy Osmani is a Director at Google Cloud AI, working on Gemini and Vertex AI. Previously, he was Engineering Lead for Chrome & Web Platform at Google, where he became one of the most prolific writers
+- [[agentcraft]] — Open-source AI agent orchestrator with an RTS game interface. Built by Ido Salomon (@idosal1). Displays agents as hero units on a 3D map with missions, fog of war, and achievements. Supports Claude Code, OpenCode, and Cursor.
+- [[agibot-10000-units]] — Real-world demand for humanoid robots accelerates as AGIBot ships 10,000 units.
+- [[akira-realmcore]] — Akira (@realmcore_) は Random Labs のAIエンジニアリングチームの中心的な声。同社は2024年設立、YC S24バッチのスタートアップで、創設者は Kiran と Mihir Chintawar。
+- [[alec-radford]] — Alec Radford represents the anti-traditional academic path in AI research: no PhD, no extensive publication record in top conferences, no public speaking circuit. Yet he is a co-author on some of the 
+- [[alex-banks]] — Alex Banks is a British AI educator, creator, and entrepreneur who bridges the gap between cutting-edge AI research and practical, everyday application. He is best known for writing The Signal, a week
+- [[alex-zhang]] — Alex Zhang is a PhD student at MIT CSAIL working on areas where language models are underutilized or inefficient. He is the primary author of Recursive Language Models (RLMs), a paradigm that treats c
+- [[ali-farhadi]] — Computer vision pioneer, co-creator of YOLO (You Only Look Once) object detection, founder of Xnor.ai (acquired by Apple), former CEO of Allen Institute for AI (Ai2). In March 2026 stepped down from A
+- [[amazon-rivr]] — March 2026 acquisition of Zurich-based autonomous robotics startup Rivr by Amazon.
+- [[andrej-karpathy]] — His YouTube series "Neural Networks: Zero to Hero" is one of the most popular free deep learning educational resources on the internet. His Stanford course CS231n: Convolutional Neural Networks for Vi
+- [[andrew-nesbitt]] — Andrew Nesbitt is one of the most focused specialists in the open source ecosystem: he has spent the last decade thinking almost exclusively about package management, dependency graphs, and software s
+- [[andriy-burkov]] — Andriy Burkov is an ML educator and NLP researcher who has made a significant impact on the machine learning community through his accessible, concise writing style. He is best known for "The Hundred-
+- [[anildash]] — Anil's most urgent recent thesis: 2026 is the decisive year for whether the open web survives. He argues that Big Tech's "hectobillionaires" are conducting a final assault on the open internet:
+- [[ankur-goyal]] — Ankur Goyal is a serial entrepreneur and AI industry veteran best known as the founder and CEO of Braintrust Data, an end-to-end platform for building and evaluating AI applications. Braintrust helps 
+- [[anthropic-computer-use]] — タスク指示 → スクリーンショット取得 → ビジョンモデルがUI要素認識 →
+- [[anthropic]] — AI safety research company, developer of the Claude model family.
+- [[antirez-com]] — Salvatore "antirez" Sanfilippo is one of the most influential systems programmers of the modern era. He created Redis in 2009, which became one of the most widely deployed in-memory data stores in the
+- [[arize]] — AI observability platform positioned as 'Datadog for agents' — monitoring agent decision quality, reasoning paths, and evaluation metrics at scale
+- [[arlan-r]] — Arlan Rakhmetzhanov is an 18-year-old Kazakhstani entrepreneur who dropped out of high school to attend Y Combinator's Summer 2025 batch and build Nozomio, an AI coding agents product lab. His flagshi
+- [[armin-ronacher]] — Armin Ronacher (@mitsuhiko, born 10 May 1989, Austria) is a software engineer, open-source developer, and entrepreneur who has profoundly shaped the Python ecosystem and is now building the next gener
+- [[ashpreet-bedi]] — Ashpreet Bedi is a software engineer and entrepreneur with over 15 years of experience building data infrastructure and machine learning systems at scale. He is the founder and CEO of Agno (formerly P
+- [[beej-us]] — Brian "Beej Jorgensen" Hall is one of the most influential technical educators of the internet era. His Beej's Guide to Network Programming has taught socket programming to generations of developers s
+- [[benjamin-clavie]] — Benjamin Claviéはフランス出身のNLP/情報検索(IR)研究者で、現在はTokyo, Japanを拠点にMixedbreadでML R&Dに従事し、National Institute of Informatics (NII) のKasys lab（指導教員: Makoto P. Kato教授）でPhD課程在籍中。
+- [[berthub-eu]] — Bert is a systems-level thinker who operates at the intersection of software engineering, public policy, and scientific research. His work spans from RFCs that secure global DNS infrastructure to poli
+- [[block-ai]] — Block, Inc. (formerly Square) — Jack Dorsey's AI-native organizational transformation from hierarchy to intelligence-driven coordination
+- [[boaz-barak]] — Boaz Barak is one of the most prominent theoretical computer scientists working on AI safety and the foundations of machine learning. As the Gordon McKay Professor of Computer Science at Harvard SEAS 
+- [[bogdanthegeek-s-blog]] — Bogdan Ionescu, known online as BogdanTheGeek, is an embedded engineer who publishes deeply technical, hands-on projects that blend serious engineering with creative experimentation. His blog sits at 
+- [[boris-cherny]] — Boris Cherny is the creator of Claude Code, Anthropic's agentic coding CLI. He is one of the most influential voices in practical AI agent workflows, known for deep technical insights on parallel agen
+- [[bradford-morgan-white]] — Bradford Morgan White is a computing historian and systems administrator whose writing spans two distinct but complementary modes: deep-dive historical analysis on his Substack Abort Retry Fail, and p
+- [[browser-use]] — from browser_use import Agent, Browser, ChatBrowserUse
+- [[browserbase]] — ┌─────────────────────────────────────────────┐
+- [[brutecat-com]] — Brutecat is a systems-level security researcher whose work centers on a single, powerful thesis: large tech platforms hide their most vulnerable surfaces behind abstraction layers, and the key to find
+- [[bryan-bischof]] — Bryan Bischof is one of the most pragmatic voices at the intersection of data science, AI engineering, and venture capital. His career spans the full breadth of the modern data stack: he started the d
+- [[cats-with-power-tools]] — The blog operates on a dual domain (blog.pixelmelt.dev and blog.exploit.cat), with the latter serving as a secondary/mirror identity. The author uses Matomo analytics with custom tracking endpoints na
+- [[chad-nauseam-home]] — Chad Nauseam is a systems-thinking generalist who writes about technology, economics, and culture with a distinctive style: self-deprecating, deeply technical, and unafraid to challenge consensus. His
+- [[charles-frye]] — Charles Frye grew up in Kankakee, Illinois. (via Grokipedia) He attended the Illinois Math and Science Academy in Aurora, Illinois — a selective residential high school focused on advanced study in ma
+- [[chiark-greenend-org-uk-sgtatham]] — Simon Tatham was born on 3 May 1977 in the United Kingdom (via Grokipedia). He attended primary school at Dolphin School and Hurst School — the latter twice, due to family relocations — and completed 
+- [[chip-huyen]] — Chip Huyen is one of the most influential voices in ML/AI systems engineering, bridging the gap between academic research and production deployment. She is a writer, computer scientist, and educator w
+- [[chipro]] — Chip Huyen is one of the most respected voices in production machine learning and AI engineering. Unlike researchers who focus on model accuracy in isolation, Huyen's work centers on the full lifecycl
+- [[chris-tate]] — Chris Tate is a software engineer at Vercel and a prolific open-source creator focused on developer tools and AI-assisted workflows. He is the creator of three notable open-source projects:
+- [[claude-mythos]] — Anthropic's next-generation model, developed after [[concepts/claude-opus-4-6]]. Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
+- [[clefourrier]] — Clémentine Fourrier is a research scientist who, between 2023 and 2025, led Hugging Face's evaluation efforts and collaborations on LLMs and AI agents. She is one of the most influential figures in th
+- [[coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
+- [[construction-physics-com]] — Brian Potter is the author of Construction Physics, a Substack newsletter that examines the technology and economics of building construction with a focus on understanding why construction productivit
+- [[corbett]] — Kyle Corbitt (known as "Corbett" on X/Twitter, handle @corbtt) is a serial entrepreneur and engineer focused on making AI model fine-tuning and reinforcement learning accessible to developers. He is c
+- [[cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
+- [[daniel-de-laney]] — Daniel is a product-minded designer who operates at the intersection of design, development, and product strategy. He writes about the human side of software — how tools feel, how they fail to meet re
+- [[daniel-han]] — What makes Daniel's story remarkable is the technical depth. Unsloth is not a PyTorch wrapper — it performs actual operator-level optimization with manual autograd derivatives and chained matrix multi
+- [[daniel-van-strien]] — Daniel van Strien occupies a unique and increasingly critical position at the intersection of open-source AI, data infrastructure, and the cultural sector. As a Machine Learning Librarian at Hugging F
+- [[daringfireball-net]] — John Gruber is one of the most influential voices in the Apple ecosystem and a significant figure in the broader technology writing landscape. Since launching Daring Fireball in 2002, he has built a r
+- [[dario-amodei]] — Dario Amodei is the CEO and co-founder of Anthropic, one of the most influential AI safety companies in the world. His career traces a direct line from theoretical physics to AI alignment to leading a
+- [[dax-raad]] — Before his work on serverless and AI developer tools, Raad founded Ironbay as a software engineering venture dedicated to helping young companies build lasting technology (via Grokipedia). Ironbay ope
+- [[deliberate-coder]] — The concept emerged from Ilegbodu's frustration with the inefficiency of traditional AI-assisted workflows. After experiencing rounds of "no, that's not what I meant" with AI-generated code, he develo
+- [[deliberatecoder]] — The blog's name is its thesis: deliberate coding means doing things consciously and intentionally. Shogren's work is characterized by a willingness to challenge conventional wisdom in software enginee
+- [[demis-hassabis]] — Sir Demis Hassabis is the CEO of Google DeepMind and one of the most influential figures in artificial general intelligence (AGI) research. His career uniquely spans chess prodigy, game developer, neu
+- [[derek-thompson]] — Derek Thompson is a supply-side progressive who applies abundance thinking to every domain — from housing policy to AI economics. Unlike tech optimists who focus on capability trajectories or skeptics
+- [[dialloibu]] — Ibrahim Diallo is a storyteller-programmer who uses narrative to illuminate the human side of technology. His blog is unique in the developer blogging space: rather than tutorials or hot takes, he wri
+- [[dorialexander]] — Langlais holds a PhD in Information and Communication from Université Paris IV (Sorbonne), where his doctoral thesis on the birth of financial journalism in France earned the Young Researcher 2016 Awa
+- [[doug-turnbull]] — Doug Turnbull (known online as @softwaredoug) is a search relevance engineer, author, and consultant who has been one of the most influential voices in the information retrieval and search engineering
+- [[downtowndougbrown-com]] — Doug Brown operates at the intersection of vintage computing preservation and modern embedded engineering. His work is distinguished by a rare combination of skills: hardware-level diagnosis, Linux ke
+- [[drew-breunig]] — Drew Breunig is a writer, developer, and strategist working at the intersection of cultural anthropology, computer science, and media. He is one of the most prominent early voices on context engineeri
+- [[drmaciver]] — Creator of Hypothesis, the world's most widely used property-based testing library (Python, 2M+ downloads/month). Pioneer in test-case reduction (Shrinkray) and LLM evaluation methodologies. Currently
+- [[dwarkesh-patel]] — Dwarkesh Patel (born August 19, 2000) is an American podcaster, writer, and technology journalist best known for the Dwarkesh Podcast and his 2025 book The Scaling Era: An Oral History of AI, 2019–202
+- [[dylan-patel]] — tags:
+- [[dynomight-net]] — Dynomight is a pseudonymous writer who produces long-form essays on topics ranging from AI safety and the philosophy of consciousness to tactical parenting, tea optimization, and the statistical analy
+- [[ed-zitron-s-where-s-your-ed-at]] — Ed Zitron was born in the United Kingdom and grew up in West London, initially in the White City area before his family relocated to Hammersmith (via Grokipedia). His father worked in management consu
+- [[eli-thegreenplace-net]] — Eli Bendersky is a systems programmer, compiler enthusiast, and one of the most consistent technical bloggers in the industry. His website thegreenplace.net has been publishing since 2004, accumulatin
+- [[elie-bakouch]] — ML engineer and researcher at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training.
+- [[elvis-sun]] — Elvis spent 8 years at Google building Firebase before becoming a generalist founder who can build the entire business — product, code, ops, marketing, sales. In the AI era, he argues one person can b
+- [[elvis]] — Conducted a 9-hour side-by-side source code study of Hermes Agent and OpenClaw, producing one of the most detailed public comparisons of agent architecture patterns.
+- [[embeddings]] — Single-vector embedding models — strengths, limitations, and theoretical constraints (LIMIT dataset, drowning-in-documents paradox)
+- [[emollick]] — Ethan Mollick is one of the most influential public educators on practical AI usage. As a professor at the Wharton School of the University of Pennsylvania, he has spent over two decades studying inno
+- [[entropicthoughts-com]] — Chris is the author of Entropic Thoughts, a blog that applies rigorous quantitative thinking — statistics, queueing theory, information theory, and Bayesian reasoning — to software engineering, produc
+- [[eric-hartford]] — Eric Hartford is one of the most prominent independent creators in the open-source LLM fine-tuning ecosystem. He is best known as the creator of the Dolphin series of models — uncensored, instruction-
+- [[eric-zhang]] — Systems hacker and designer. Creator of bore, sshx, rustpad, and Percival. Former founding engineer at Modal, now at Thinking Machines Lab.
+- [[ericmigi]] — Migicovsky's career trajectory reflects a distinctive philosophy: build products you personally want, prioritize sustainability over growth-at-all-costs, and maintain deep engagement with the communit
+- [[ethan-mollick]] — Ethan Mollick is one of the most influential public intellectuals on the practical impact of generative AI on work, education, and entrepreneurship. An associate professor at the Wharton School of the
+- [[eugene-yan]] — Eugene Yan (Ziyou) is a practitioner-scholar who has become one of the most influential voices on building production machine learning systems and, more recently, on applying large language models at 
+- [[eugeneyan]] — Eugene Yan is among the most pragmatic and grounded voices in applied machine learning. His career spans e-commerce ML at Alibaba/Lazada, healthtech at a Series A startup, recommendation systems at Am
+- [[evanhahn-com]] — Evan Hahn is a pragmatic engineer-philosopher — someone who writes code that protects millions of web applications daily, but whose writing consistently returns to the human, ethical, and craft dimens
+- [[fabiensanglard-net]] — Fabien treats game engines the way an archaeologist treats excavation sites: every layer tells a story about the constraints, decisions, and ingenuity of its creators. His Game Engine Black Book serie
+- [[fei-fei-li]] — 中国系アメリカ人コンピュータサイエンティスト。ImageNetの作成者、Stanford HAI共同創設者。コンピュータビジョン、空間知能、ヒューマンセンタードAIのパイオニア。
+- [[fernando-borretti]] — Fernando Borretti is a software engineer, compiler author, and prolific technical writer who builds programming languages and writes deeply about software engineering practice, AI systems, and data mo
+- [[figma]] — FigmaはClaude Designの登場により、SaaS AI時代の脆弱性を示すケーススタディとなっている。
+- [[filfre-net]] — Jimmy Maher is the preeminent historian of interactive fiction and one of the most thorough chroniclers of computer gaming's formative decades. His blog, The Digital Antiquarian, has published hundred
+- [[florian-brand]] — Florian Brand operates at the intersection of AI infrastructure, open model research, and public-facing AI analysis. As a PhD student at the University of Trier and researcher at DFKI, his academic wo
+- [[foundation-capital]] — Venture capital firm that published 'AI's Trillion-Dollar Opportunity: Context Graphs' — arguing that the next trillion-dollar platforms will be built by capturing decision traces, not adding AI to existing data
+- [[gary-marcus]] — Gary Marcus is a cognitive scientist and AI researcher best known for his rigorous critique of pure deep learning approaches to artificial intelligence. His central thesis, developed over decades of r
+- [[gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind designed for on-device frontier intelligence.
+- [[geoffrey-hinton]] — Geoffrey Hinton is arguably the most influential figure in the history of artificial intelligence. His career spans the entire arc of neural network research — from the "AI winters" of the 1970s–1990s
+- [[geoffrey-litt]] — Geoffrey Litt is one of the most thoughtful voices on malleable software — the idea that computing environments should let users adapt, reshape, and extend their tools with minimal friction. This visi
+- [[geoffreylitt-com]] — Geoffrey Litt is a design engineer and researcher focused on malleable software — computing environments where anyone can adapt their tools to their needs with minimal friction. His work spans end-use
+- [[geohot-github-io]] — George Hotz (geohot) is a hacker, entrepreneur, and software engineer best known for being the first person to carrier-unlock the iPhone and hack the PlayStation 3. He founded comma.ai in 2015 to buil
+- [[georgi-gerganov]] — Georgi Gerganov is the principal architect of the local AI inference stack. By re-implementing heavy neural network models in pure, dependency-free C/C++, he made it possible to run state-of-the-art L
+- [[glm-5-zai]] — New state-of-the-art open weights LLM from Z.ai (智谱AI).
+- [[glm-5v-turbo]] — Model that turns designs into code, part of the multimodal AI wave from Chinese labs.
 - [[gm8xx8]] — gm8xx8 is a highly active AI/ML paper curator on X/Twitter and HuggingFace, known for sharing cutting-edge research papers across a remarkably broad range of topics. Operates as a high-signal research scanner rather than a traditional researcher or developer. With 77K+ HuggingFace followers an
-   114|- [[google-tpu]] — Google's custom ASIC for ML workloads, now split into specialized TPU 8t (training) and TPU 8i (inference) chips at the 8th generation. Designed for agentic AI, world models, Mixture-of-Experts (MoEs)
-   115|- [[gpjt]] — Giles Thomas is a software engineer and blogger known for his detailed, hands-on series "Writing an LLM from scratch" — a comprehensive, iterative exploration of building and training large language m
-   116|- [[grad]] — Beyond the speedrun, Fares is a co-author on significant papers including Value Residual Learning (ACL 2025), GoldFinch (RWKV/Transformer hybrid), and INTELLECT-3 (106B parameter MoE model trained wit
-   117|- [[grantslatton-com]] — Grant Slatton is a writer and engineer whose work focuses on AI alignment, the economics of artificial intelligence, and organizational design. His Technocapital essay — arguing that a self-reinforcin
-   118|- [[greg-brockman]] — Greg Brockman is one of the most influential engineers in AI history, though he operates largely behind the scenes. As OpenAI's co-founder and President, he has been the technical architect behind the
-   119|- [[gwern]] — Gwern Branwen (born c. 1984) is a pseudonymous independent researcher and writer based in the USA, known for his prolific contributions to AI, psychology, statistics, and rationalist thought under the
-   120|- [[hamel-husain]] — Hamel Husain is a veteran AI Engineer and Consultant with over 20 years of experience, currently operating as an independent consultant through Parlance Labs, an R&D member at AnswerAI (Jeremy Howard'
-   121|- [[herman-s-blog]] — Herman created Bear Blog as an antidote to everything wrong with modern web platforms. The manifesto (implicit in his writing, explicit in the product) holds that:
-   122|- [[hermes-agent]] — Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawから移行中のユーザーが増加。
-   123|- [[hillel-wayne]] — Hillel is a formal methods practitioner who bridges the gap between academic formal verification and practical software engineering. Unlike most formal methods advocates who focus purely on theory, Hi
-   124|- [[hugo-bowne-anderson]] — Hugo's central thesis across all his work is that AI systems require a fundamentally different development paradigm than traditional software. His philosophy can be summarized in three pillars:
-   125|- [[hynek-schlawack]] — Born from a late-night IRC session in January 2015, attrs has since surpassed 1 billion downloads and directly inspired Python 3.7's `dataclasses` module. structlog, launched in 2013, is the productio
-   126|- [[ian-goodfellow]] — アメリカのコンピュータサイエンティスト。Generative Adversarial Networks (GANs) の発明者、敵対的機械学習のパイオニア。Google DeepMind研究員。
-   127|- [[ian-nuttall]]
-   128|- [[iii-platform]] — Ian Nuttall is a serial indie hacker and developer-tools builder based in Nottingham, UK. He describes himself as a "serial internet biz builder with multiple 6 & 7 figure exits" who "makes software w
-   129|- [[ilya-sutskever]] — Ilya Sutskever is one of the most cited researchers in deep learning history. His career spans three pivotal moments in AI:
-   130|- [[jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of Bun — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining Anthro
-   131|- [[jason-liu]] — Jason Liu is one of the most influential practitioners in the space of structured LLM outputs — the problem of getting reliable, typed, validated data from language models rather than loose text. His 
-   132|- [[jaya-gupta]] — Partner at Foundation Capital, co-author of 'AI's Trillion-Dollar Opportunity: Context Graphs
-   133|- [[jayden-milne]] — Jayden Milne is a writer, game designer, podcaster, and researcher whose work spans AI culture criticism, cybersecurity education, interactive fiction, and digital sovereignty. He is a prolific blogge
-   134|- [[jeff-geerling]] — Jeff Geerling is a prolific open-source developer, author, YouTuber, and hardware tinkerer. He is best known as the creator of Ansible for DevOps (the best-selling Ansible book with 87K+ copies sold a
-   135|- [[jensen-huang]] — Jensen Huang is the co-founder, CEO, and president of Nvidia Corporation. Under his leadership, Nvidia has evolved from a gaming GPU company to the dominant provider of AI compute infrastructure, cont
-   136|- [[jim-fan]] — Jim Fan is a leading AI researcher at NVIDIA, where he serves as Director of AI and Distinguished Scientist. He co-leads Project GR00T, NVIDIA's foundational model initiative for humanoid robots, and 
-   137|- [[jim-nielsen]] — Jim's signature concept for software craft: building software is like woodworking. You start rough and progressively refine until every interaction feels smooth:
-   138|- [[jo-kristian-bergum]] — Jo Kristian Bergum is a search and retrieval infrastructure veteran who spent approximately 15 years as Chief Scientist at Vespa.ai (the open-source big data serving engine developed by Yahoo and late
-   139|- [[john-carmack]] — John Carmack is one of the most influential programmers in computer science history. From self-taught assembly programming as a teenager to creating the Doom and Quake engines, to pioneering Asynchron
-   140|- [[john-d-cook-applied-mathematics-consulting]] — John D. Cook is a mathematical generalist-practitioner who bridges the gap between pure mathematics and real-world computation. His blog — updated almost daily with short, dense posts on mathematics, 
-   141|- [[john-schulman]] — John Schulman is one of the most consequential AI researchers of his generation, though he operates far from the spotlight. As the co-inventor of Proximal Policy Optimization (PPO) and the pioneer of 
-   142|- [[jonathan-whitaker]] — Jonathan Whitaker (known online as Johno) is a polymath researcher and educator whose work sits at the intersection of generative AI, practical ML education, and creative experimentation. Currently do
-   143|- [[jxmo]] — Jack Morris (known online as jxmo or @jxmnop) is an AI researcher whose work spans text embedding models, information theory for language models, and representation learning. He completed his PhD at C
-   144|- [[jyn]] — Jyn's most philosophically significant essay argues that Rust's learning difficulty is a feature, not a bug. Adapting Stroustrup's famous quote about C++:
-   145|- [[k0nserv]] — Hugo Tunius is a pattern-recognizing systems thinker — someone who observes the cyclical nature of technology trends, builds infrastructure that is simple and cost-effective, and writes clearly about 
-   146|- [[karri-saarinen]] — Karri's design pedigree is exceptional. At Airbnb, he was Principal Designer and led the creation of the company's design system, the Cereal typeface, and Lottie — the open-source animation library no
-   147|- [[koylan-ai]] — Muratcan Koylan is a Context Engineer and open-source contributor working at the intersection of multi-agent systems, context management, and AI persona embodiment. He currently works on the Research 
-   148|- [[krebsonsecurity-com]] — Brian Krebs is one of the most prominent cybersecurity journalists in the world, known for his deep investigative reporting on cybercriminal enterprises, data breaches, and the underground economy of 
-   149|- [[lance-martin]] — Lance Martin has established himself as one of the leading thinkers in AI agent engineering, particularly around the challenge of context engineering — the art and science of filling an LLM's context 
-   150|- [[late-interaction]] — The Late Interaction Workshop (LIR) is the first academic workshop dedicated to late interaction retrieval methods — a paradigm pioneered by ColBERT (Contextualized Late Interaction over BERT) that co
-   151|- [[lcamtuf]] — Michał Zalewski, known online as "lcamtuf," is a Polish-American security researcher whose career spans nearly three decades of vulnerability research, fuzzing innovation, and applied security thinkin
-   152|- [[lester-solbakken]] — Lester Solbakken is a search and retrieval infrastructure researcher with 25+ years of experience spanning from legacy enterprise search engines to next-generation agent-native retrieval systems. He i
-   153|- [[lilian-weng]] — Lilian Weng is one of the most influential voices in AI research communication and a leading figure in AI safety and autonomous agent systems. She co-founded [Thinking Machines Lab](https://thinkingma
-   154|- [[lilianweng]] — Lilian Weng occupies a rare position at the intersection of frontier AI research and practical safety engineering. As VP of Research at OpenAI, she leads the Preparedness team — responsible for safegu
-   155|- [[lora-fine-tuning]] — LoRA (Low-Rank Adaptation) fine-tuning paradigm, including Sakana AI's Doc-to-LoRA and Text-to-LoRA hypernetwork-based adapter generation
-   156|- [[manus]] — Manusの最大の差別化はローカルブラウザ拡張によるエージェント実行。クラウドのサンドボックスではなく、ユーザーの実際のブラウザ上で動作する。
-   157|- [[mario-zechner]] — Mario Zechner is one of the most distinctive voices in the tech industry — a veteran game developer, systems programmer, and civic technologist who brings an engineer's pragmatism and a craftsman's ey
-   158|- [[mark-chen]] — Mark Chen is the Chief Research Officer at OpenAI, where he leads frontier research in multimodal modeling and reasoning capabilities. He is the lead author of the Codex paper (which powers GitHub Cop
-   159|- [[martin-alderson]] — Martin's most viral essay documented how 13 markdown files (~156KB) in Anthropic's `knowledge-work-plugin` repository on GitHub triggered a $285 billion selloff in SaaS stocks on February 3, 2026 — ro
-   160|- [[martin-kleppmann]] — ケンブリッジ大学計算機科学技術学科准教授。分散システム、ローカルファースト協調ソフトウェア、暗号プロトコルを研究。
-   161|- [[matduggan-com]] — Mat Duggan is an American sysadmin and DevOps engineer living in Denmark who writes about the practical realities of infrastructure, open source sustainability, the evolution of technology platforms, 
-   162|- [[mathematical-methods]] — Philosophical paper by Terence Tao and Tanya Klowden on the impact of AI on mathematical practice and human thought (arXiv:2603.26524)
-   163|- [[matklad-github-io]] — Aleksey Kladov (blog handle "matklad") is one of the most influential writers on compiler tooling and IDE architecture in the modern open-source ecosystem. As the creator and primary architect of rust
-   164|- [[maurycyz-com]] — Maurycy's entire website is a manifesto for the small web, demonstrated through implementation rather than essay:
-   165|- [[max-bernstein]] — Max Bernstein is a compiler engineer and prolific technical writer whose work spans runtime optimization, type systems, and programming language implementation. He is a core developer of ZJIT, Ruby's 
-   166|- [[maximor]] — AI agent startup automating finance workflows — cash management, close management, and core accounting — becoming the system of record for reconciliation logic while keeping the ERP as the ledger
-   167|- [[meta]] — Social media and technology company, developer of the LLaMA model family, Ray-Ban AI collaboration, and the Personal Superintelligence vision articulated by Mark Zuckerberg.
-   168|- [[micahflee]] — His work spans the full stack of information security — from developing widely used tools like OnionShare (secure file sharing over Tor) and Dangerzone (malware-safe document sanitization), to foundin
-   169|- [[michael-stapelberg]] — Michael Stapelberg is a pragmatic systems architect — someone who has spent two decades building and maintaining real-world infrastructure, from the i3 window manager (used by hundreds of thousands) t
-   170|- [[miguel-grinberg]] — Grinberg writes from a deeply pragmatic, hands-on perspective — he builds tools, measures them, publishes data, and is unafraid to critique trends in the industry regardless of their popularity. His b
-   171|- [[milksandmatcha]] — Sarah Chieng is an AI agent educator and developer advocate focused on practical multi-agent workflow patterns. She is known for co-authoring the "Back of House" framework with [@0xSero]([[sero|0xSero
-   172|- [[minimaxir-com]] — Woolf's blog at minimaxir.com is characterized by data-driven skepticism, empirical benchmarking, and a willingness to challenge industry narratives with hard numbers. He approaches every claim — whet
-   173|- [[mira-murati]] — Mira Murati is one of the most prominent engineering leaders in the AI industry. At OpenAI, she rose from VP of Applied AI to CTO, overseeing the launch of GPT-4, ChatGPT, DALL-E, and Sora. She briefl
-   174|- [[mistral-voxtral-tts]] — Mistral AI's open-weights text-to-speech model, announced April 2026. Combines autoregressive semantic token generation with flow-matching acoustic token synthesis.
+- [[google-tpu]] — Google's custom ASIC for ML workloads, now split into specialized TPU 8t (training) and TPU 8i (inference) chips at the 8th generation. Designed for agentic AI, world models, Mixture-of-Experts (MoEs)
+- [[gpjt]] — Giles Thomas is a software engineer and blogger known for his detailed, hands-on series "Writing an LLM from scratch" — a comprehensive, iterative exploration of building and training large language m
+- [[grad]] — Beyond the speedrun, Fares is a co-author on significant papers including Value Residual Learning (ACL 2025), GoldFinch (RWKV/Transformer hybrid), and INTELLECT-3 (106B parameter MoE model trained wit
+- [[grantslatton-com]] — Grant Slatton is a writer and engineer whose work focuses on AI alignment, the economics of artificial intelligence, and organizational design. His Technocapital essay — arguing that a self-reinforcin
+- [[greg-brockman]] — Greg Brockman is one of the most influential engineers in AI history, though he operates largely behind the scenes. As OpenAI's co-founder and President, he has been the technical architect behind the
+- [[gwern]] — Gwern Branwen (born c. 1984) is a pseudonymous independent researcher and writer based in the USA, known for his prolific contributions to AI, psychology, statistics, and rationalist thought under the
+- [[hamel-husain]] — Hamel Husain is a veteran AI Engineer and Consultant with over 20 years of experience, currently operating as an independent consultant through Parlance Labs, an R&D member at AnswerAI (Jeremy Howard'
+- [[herman-s-blog]] — Herman created Bear Blog as an antidote to everything wrong with modern web platforms. The manifesto (implicit in his writing, explicit in the product) holds that:
+- [[hermes-agent]] — Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawから移行中のユーザーが増加。
+- [[hillel-wayne]] — Hillel is a formal methods practitioner who bridges the gap between academic formal verification and practical software engineering. Unlike most formal methods advocates who focus purely on theory, Hi
+- [[hugo-bowne-anderson]] — Hugo's central thesis across all his work is that AI systems require a fundamentally different development paradigm than traditional software. His philosophy can be summarized in three pillars:
+- [[hynek-schlawack]] — Born from a late-night IRC session in January 2015, attrs has since surpassed 1 billion downloads and directly inspired Python 3.7's `dataclasses` module. structlog, launched in 2013, is the productio
+- [[ian-goodfellow]] — アメリカのコンピュータサイエンティスト。Generative Adversarial Networks (GANs) の発明者、敵対的機械学習のパイオニア。Google DeepMind研究員。
+- [[ian-nuttall]]
+- [[iii-platform]] — Ian Nuttall is a serial indie hacker and developer-tools builder based in Nottingham, UK. He describes himself as a "serial internet biz builder with multiple 6 & 7 figure exits" who "makes software w
+- [[ilya-sutskever]] — Ilya Sutskever is one of the most cited researchers in deep learning history. His career spans three pivotal moments in AI:
+- [[jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of Bun — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining Anthro
+- [[jason-liu]] — Jason Liu is one of the most influential practitioners in the space of structured LLM outputs — the problem of getting reliable, typed, validated data from language models rather than loose text. His 
+- [[jaya-gupta]] — Partner at Foundation Capital, co-author of 'AI's Trillion-Dollar Opportunity: Context Graphs
+- [[jayden-milne]] — Jayden Milne is a writer, game designer, podcaster, and researcher whose work spans AI culture criticism, cybersecurity education, interactive fiction, and digital sovereignty. He is a prolific blogge
+- [[jeff-geerling]] — Jeff Geerling is a prolific open-source developer, author, YouTuber, and hardware tinkerer. He is best known as the creator of Ansible for DevOps (the best-selling Ansible book with 87K+ copies sold a
+- [[jensen-huang]] — Jensen Huang is the co-founder, CEO, and president of Nvidia Corporation. Under his leadership, Nvidia has evolved from a gaming GPU company to the dominant provider of AI compute infrastructure, cont
+- [[jim-fan]] — Jim Fan is a leading AI researcher at NVIDIA, where he serves as Director of AI and Distinguished Scientist. He co-leads Project GR00T, NVIDIA's foundational model initiative for humanoid robots, and 
+- [[jim-nielsen]] — Jim's signature concept for software craft: building software is like woodworking. You start rough and progressively refine until every interaction feels smooth:
+- [[jo-kristian-bergum]] — Jo Kristian Bergum is a search and retrieval infrastructure veteran who spent approximately 15 years as Chief Scientist at Vespa.ai (the open-source big data serving engine developed by Yahoo and late
+- [[john-carmack]] — John Carmack is one of the most influential programmers in computer science history. From self-taught assembly programming as a teenager to creating the Doom and Quake engines, to pioneering Asynchron
+- [[john-d-cook-applied-mathematics-consulting]] — John D. Cook is a mathematical generalist-practitioner who bridges the gap between pure mathematics and real-world computation. His blog — updated almost daily with short, dense posts on mathematics, 
+- [[john-schulman]] — John Schulman is one of the most consequential AI researchers of his generation, though he operates far from the spotlight. As the co-inventor of Proximal Policy Optimization (PPO) and the pioneer of 
+- [[jonathan-whitaker]] — Jonathan Whitaker (known online as Johno) is a polymath researcher and educator whose work sits at the intersection of generative AI, practical ML education, and creative experimentation. Currently do
+- [[jxmo]] — Jack Morris (known online as jxmo or @jxmnop) is an AI researcher whose work spans text embedding models, information theory for language models, and representation learning. He completed his PhD at C
+- [[jyn]] — Jyn's most philosophically significant essay argues that Rust's learning difficulty is a feature, not a bug. Adapting Stroustrup's famous quote about C++:
+- [[k0nserv]] — Hugo Tunius is a pattern-recognizing systems thinker — someone who observes the cyclical nature of technology trends, builds infrastructure that is simple and cost-effective, and writes clearly about 
+- [[karri-saarinen]] — Karri's design pedigree is exceptional. At Airbnb, he was Principal Designer and led the creation of the company's design system, the Cereal typeface, and Lottie — the open-source animation library no
+- [[koylan-ai]] — Muratcan Koylan is a Context Engineer and open-source contributor working at the intersection of multi-agent systems, context management, and AI persona embodiment. He currently works on the Research 
+- [[krebsonsecurity-com]] — Brian Krebs is one of the most prominent cybersecurity journalists in the world, known for his deep investigative reporting on cybercriminal enterprises, data breaches, and the underground economy of 
+- [[lance-martin]] — Lance Martin has established himself as one of the leading thinkers in AI agent engineering, particularly around the challenge of context engineering — the art and science of filling an LLM's context 
+- [[late-interaction]] — The Late Interaction Workshop (LIR) is the first academic workshop dedicated to late interaction retrieval methods — a paradigm pioneered by ColBERT (Contextualized Late Interaction over BERT) that co
+- [[lcamtuf]] — Michał Zalewski, known online as "lcamtuf," is a Polish-American security researcher whose career spans nearly three decades of vulnerability research, fuzzing innovation, and applied security thinkin
+- [[lester-solbakken]] — Lester Solbakken is a search and retrieval infrastructure researcher with 25+ years of experience spanning from legacy enterprise search engines to next-generation agent-native retrieval systems. He i
+- [[lilian-weng]] — Lilian Weng is one of the most influential voices in AI research communication and a leading figure in AI safety and autonomous agent systems. She co-founded [Thinking Machines Lab](https://thinkingma
+- [[lilianweng]] — Lilian Weng occupies a rare position at the intersection of frontier AI research and practical safety engineering. As VP of Research at OpenAI, she leads the Preparedness team — responsible for safegu
+- [[lora-fine-tuning]] — LoRA (Low-Rank Adaptation) fine-tuning paradigm, including Sakana AI's Doc-to-LoRA and Text-to-LoRA hypernetwork-based adapter generation
+- [[manus]] — Manusの最大の差別化はローカルブラウザ拡張によるエージェント実行。クラウドのサンドボックスではなく、ユーザーの実際のブラウザ上で動作する。
+- [[mario-zechner]] — Mario Zechner is one of the most distinctive voices in the tech industry — a veteran game developer, systems programmer, and civic technologist who brings an engineer's pragmatism and a craftsman's ey
+- [[mark-chen]] — Mark Chen is the Chief Research Officer at OpenAI, where he leads frontier research in multimodal modeling and reasoning capabilities. He is the lead author of the Codex paper (which powers GitHub Cop
+- [[martin-alderson]] — Martin's most viral essay documented how 13 markdown files (~156KB) in Anthropic's `knowledge-work-plugin` repository on GitHub triggered a $285 billion selloff in SaaS stocks on February 3, 2026 — ro
+- [[martin-kleppmann]] — ケンブリッジ大学計算機科学技術学科准教授。分散システム、ローカルファースト協調ソフトウェア、暗号プロトコルを研究。
+- [[matduggan-com]] — Mat Duggan is an American sysadmin and DevOps engineer living in Denmark who writes about the practical realities of infrastructure, open source sustainability, the evolution of technology platforms, 
+- [[mathematical-methods]] — Philosophical paper by Terence Tao and Tanya Klowden on the impact of AI on mathematical practice and human thought (arXiv:2603.26524)
+- [[matklad-github-io]] — Aleksey Kladov (blog handle "matklad") is one of the most influential writers on compiler tooling and IDE architecture in the modern open-source ecosystem. As the creator and primary architect of rust
+- [[maurycyz-com]] — Maurycy's entire website is a manifesto for the small web, demonstrated through implementation rather than essay:
+- [[max-bernstein]] — Max Bernstein is a compiler engineer and prolific technical writer whose work spans runtime optimization, type systems, and programming language implementation. He is a core developer of ZJIT, Ruby's 
+- [[maximor]] — AI agent startup automating finance workflows — cash management, close management, and core accounting — becoming the system of record for reconciliation logic while keeping the ERP as the ledger
+- [[meta]] — Social media and technology company, developer of the LLaMA model family, Ray-Ban AI collaboration, and the Personal Superintelligence vision articulated by Mark Zuckerberg.
+- [[micahflee]] — His work spans the full stack of information security — from developing widely used tools like OnionShare (secure file sharing over Tor) and Dangerzone (malware-safe document sanitization), to foundin
+- [[michael-stapelberg]] — Michael Stapelberg is a pragmatic systems architect — someone who has spent two decades building and maintaining real-world infrastructure, from the i3 window manager (used by hundreds of thousands) t
+- [[miguel-grinberg]] — Grinberg writes from a deeply pragmatic, hands-on perspective — he builds tools, measures them, publishes data, and is unafraid to critique trends in the industry regardless of their popularity. His b
+- [[milksandmatcha]] — Sarah Chieng is an AI agent educator and developer advocate focused on practical multi-agent workflow patterns. She is known for co-authoring the "Back of House" framework with [@0xSero]([[sero|0xSero
+- [[minimaxir-com]] — Woolf's blog at minimaxir.com is characterized by data-driven skepticism, empirical benchmarking, and a willingness to challenge industry narratives with hard numbers. He approaches every claim — whet
+- [[mira-murati]] — Mira Murati is one of the most prominent engineering leaders in the AI industry. At OpenAI, she rose from VP of Applied AI to CTO, overseeing the launch of GPT-4, ChatGPT, DALL-E, and Sora. She briefl
+- [[mistral-voxtral-tts]] — Mistral AI's open-weights text-to-speech model, announced April 2026. Combines autoregressive semantic token generation with flow-matching acoustic token synthesis.
 - [[mitchell-hashimoto]] — Mitchell Hashimoto is one of the most influential infrastructure engineers of the modern era. As co-founder of HashiCorp (with Armon Dadgar), he built Terraform (downloaded 100M+ times), Vagrant, Pack
 - [[armin-ronacher]] — Armin Ronacher is one of the most influential Python developers of his generation. He created Flask (the most popular Python web microframework), Jinja2 (the dominant Python template engine), and Werk
-   178|- [[muse-spark]] — Meta's latest language model, announced April 2026.
-   179|- [[mustafa-suleyman]] — Mustafa Suleyman is the CEO of Microsoft AI and a three-time founder — DeepMind, Inflection AI, and now leading Microsoft's consumer AI division. His trajectory from working-class North London to $4B 
-   180|- [[nader-dabit]] — Nader Dabit is a developer advocate turned AI agent growth engineer who joined Cognition AI in February 2026 to help scale Devin's enterprise adoption. Before Cognition, he spent over a decade buildin
-   181|- [[nathan-lambert]] — Nathan Lambert is a Senior Research Scientist and Post-Training Lead at the Allen Institute for AI (AI2). He previously worked at HuggingFace as a Research Scientist and RLHF Team Lead (2022–2023). He
-   182|- [[noam-brown]] — Noam Brown is the most influential AI researcher that most people haven't heard of — his work powers three of the most significant game-playing AIs in history (Libratus, Pluribus, CICERO), and he is n
-   183|- [[noetik]] — Noetik is a biotech AI company applying transformer models to oncology, specifically addressing the 95% clinical trial failure rate in cancer drug development. The company's core thesis: many "failed"
-   184|- [[nvidia-dgx-spark]] — Personal AI supercomputer powered by the NVIDIA GB10 Grace Blackwell Superchip. Designed for developers, data scientists, and researchers to prototype, fine-tune, and deploy AI models locally. Officia
-   185|- [[nvidia-nemoclaw]] — NVIDIA NemoClaw is a secure AI agent development framework designed for running AI agents with enterprise-grade isolation. It bundles OpenShell (sandbox runtime), OpenClaw (agent framework), a Privacy
-   186|- [[oldvcr-blogspot-com]] — Kaiser is the creator and maintainer of  — the PowerPC-native Firefox fork that extended the usable life of aging Mac hardware long after Mozilla abandoned the platform. He has also cont
-   187|- [[omar-khattab]] — MIT EECS Assistant Professor. Creator of ColBERT (late interaction retrieval), DSPy (declarative LM programming), GEPA (genetic prompt optimization), and co-author of RLMs (Recursive Language Models). X: @lateinteraction
-   188|- [[openai-cua]] — OpenAIのCUA（Computer-Using Agent）モデルは、GPT-4oのビジョン機能と強化学習を組み合わせて、スクリーンショットを見てGUIを操作するエージェント。2025年1月に「Operator」として公開され、2025年7月にChatGPTエージェントに完全統合された。
-   189|- [[openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
-   190|- [[openai]] — OpenAI is a leading AI research and product company known for developing the GPT series of large language models, ChatGPT, and a growing ecosystem of AI developer tools. The company has been at the fo
-   191|- [[concepts/openclaw]] — Open-source always-on AI assistant framework created by Peter Steinberger (former PSPDFKit CEO). Deploys autonomous agents that run continuously, self-evolve through interaction, and integrate with me
-   192|- [[overreacted-io]] — Dan Abramov is a core contributor to React and a prominent voice in the frontend development community. He co-created Redux and Create React App, and has worked at Meta on the React team. His blog ove
-   193|- [[paulgraham-com]] — Paul Graham is a programmer, essayist, and venture capitalist. Co-founder of Y Combinator (2005), the startup accelerator that has funded over 4,000 companies including Airbnb, Stripe, Dropbox, and Re
-   194|- [[perplexity-comet]] — Cometの核心は検索ファーストアーキテクチャ。従来のブラウザが「URLを入力 → ページをレンダリング → ユーザーが読む」というフローだったのに対し、Cometはユーザーの意図を直接理解し、エージェントがウェブ上でタスクを代行する。
-   195|- [[peter-steinberger]] — Austrian software developer, creator of OpenClaw (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as @steipete on GitHub/Twitter. A pioneer of AI-native development work
-   196|- [[philiplaine-com]] — Philip Laine is a software engineer who writes about the practical challenges of building and maintaining cloud-native infrastructure. His blog, modestly tagged "random thoughts about software develop
-   197|- [[philipp-schmid]] — Philipp Schmid is one of the most prolific and influential technical educators in the AI ecosystem. His blog at philschmid.de has been a go-to resource for developers since 2021, covering everything f
-   198|- [[playerzero]] — AI agent startup building context graphs as 'engineering world models' — automating L2/L3 support while capturing the decision traces that explain why systems break
-   199|- [[pluralistic-net]] — Cory Doctorow is one of the most influential tech-policy thinkers of his generation. His work connects antitrust theory, copyright law, digital rights, and platform economics into a unified critique o
-   200|- [[pratik-bhavsar]] — Pratik Bhavsar is a practitioner-researcher at the intersection of LLM evaluation, agentic systems, and retrieval-augmented generation. His intellectual signature is the thesis that evaluation is the 
-   201|- [[qwen3-6-plus]] — Alibabaのエージェント指向言語モデル。実世界の自律的ワークフローを対象としている。
-   202|- [[rachelbythebay-com]] — Rachel by the Bay is one of the internet's most distinctive voices on systems administration, infrastructure reliability, and the art of keeping things running when nobody notices — until they break. 
-   203|- [[rahul]] — Rahul Sengottuvelu is the Head of Applied AI at Ramp, where he leads the company's AI engineering strategy and product development. He co-founded and served as CTO of Cohere.io, an AI-powered customer
-   204|- [[rakhim-exotext-com]] — Rakhim is notable for his willingness to shut down projects when they no longer serve their purpose — a philosophy that runs counter to the "growth at all costs" mentality of modern tech. He has built
-   205|- [[raw-works]] — Raymond Weitekamp is an ML researcher focused on Recursive Language Models (RLMs) and DSPy-based scaffolding. His work has demonstrated that small open-source models with RLM scaffolding can outperfor
-   206|- [[regie-ai]] — AI-native sales engagement platform replacing Outreach/Salesloft — designed for mixed teams where the agent is a first-class actor with prospecting, outreach, follow-ups, routing, and human escalation capabilities
-   207|- [[rehan-van-der-merwe]] — Cloud-native architect and blogger. Writes at [rehanvdm.com](https://rehanvdm.com/blog/).
-   208|- [[richard-sutton]] — Richard Sutton is the most consequential figure in the history of reinforcement learning (RL). Along with his doctoral advisor Andrew G. Barto, Sutton established the conceptual and algorithmic founda
-   209|- [[righto-com]] — Ken Shirriff is a blogger and hardware reverse engineer based in Silicon Valley. His blog, righto.com, has been active since 2008 and covers computer history, vintage computing, integrated circuit rev
-   210|- [[ryan-carson]] — Ryan Carson is one of the most influential figures in the democratization of tech education. In 2008, he founded Treehouse (originally Treehouse Island), an online platform designed to teach web devel
-   211|- [[ryan-dahl]] — Ryan Dahl is a software engineer best known as the creator of Node.js (2009) and Deno (2018), two foundational JavaScript/TypeScript runtimes. His work has shaped the modern server-side JavaScript eco
-   212|- [[ryan-lopopolo]] — Ryan Lopopolo is the originator of Harness Engineering — the systematic practice of building the scaffolding, feedback loops, observability, and architectural constraints that allow AI coding agents t
-   213|- [[sam-altman]] — Sam Altman is the CEO of OpenAI and arguably the most influential person in the current AI era. Under his leadership, OpenAI has:
-   214|- [[samuel-colvin]] — Pydantic's success (27.3K GitHub stars, 46M+ monthly PyPI downloads) stems from applying this principle to data validation. The same principle drives Logfire (observability with developer-friendly SQL
-   215|- [[sankalp-sinha]] — He describes himself as a "0.5x engineer made 5x with help of LLMs" and maintains a pseudonymous online persona while being selective about what personal details he shares publicly ("selectively doxxe
-   216|- [[scott-wu]] — CEO and co-founder of Cognition AI, the company behind Devin — the world's first autonomous AI software engineer. Former competitive programming champion (3× IOI gold medals, 1st place in 2014).
-   217|- [[seangoedecke-com]] — Sean Goedecke is an Australian software engineer who writes about AI's practical impact on software engineering, large tech company dynamics, and the structural forces shaping engineers' careers. He i
-   218|- [[sero]] — Sero (known online as 0xSero) is an open-source developer, AI infrastructure builder, and founder of Sybil Solutions. He operates at the intersection of AI agents, blockchain infrastructure, and devel
-   219|- [[sheshansh-agrawal]] — Sheshansh Agrawal is a search and retrieval researcher at the intersection of academic IR research and applied agentic AI. He currently serves as Director of Research at Contextual AI (Jun 2024–), whe
-   220|- [[shkspr-mobi]] — Eden blogs at  — a minimalist, self-hosted site he has maintained for years — where he writes about technology policy, open-source sustainability, web accessibility, and the practical c
-   221|- [[shlok-khemani]] — Writer and programmer based in Gurgaon, India. Currently researching personal AI and memory systems for AI agents. Previously at Decentralised.co, building products for the crypto space. Author of Ope
-   222|- [[shreya-shankar]] — Shreya Shankar is a PhD candidate at UC Berkeley EECS (advised by Aditya G. Parameswaran) and one of the most influential voices in AI evaluation methodology. Alongside Hamel Husain, she co-created th
-   223|- [[shunyu-yao]] — Shunyu Yao is one of the most influential researchers in the language agent space. His work spans from the foundational ReAct paradigm (2022) through Tree of Thoughts (2023), Reflexion (2023), CoALA (
-   224|- [[simon-willison]] — Django co-creator, open-source advocate, and leading voice in AI-assisted software development. Founder of [Datasette](https://datasette.io/) and prolific blogger at simonwillison.net.
-   225|- [[simone-salis]] — Simone Salis is a creative engineer who bridges Italian aesthetics with American pragmatism. His work sits at the intersection of media production, technology philosophy, and digital minimalism. After
-   226|- [[skyfall-dev]] — His projects span a wide range: a newspaper bot for Hack Club that handles story writing, editor approvals, and newsletter generation; a real-time inventory and price monitoring system for Hack Club's
-   227|- [[spike]] — Spike (real name: Mike Doan) is an independent machine learning researcher and systems programmer with a distinctive perspective on the foundations of AI computation. He previously worked at a math/AS
-   228|- [[stefano-marinelli]] — Stefano Marinelli is an Italian system administrator and blogger who writes about FreeBSD, illumos, Void Linux, and infrastructure management. His blog, IT Notes, has been running since 2014 and cover
-   229|- [[steve-blank]] — Steven Gary Blank was born on November 30, 1953, in Manhattan, New York City, to Eastern European immigrants — his mother from Eishyshok in Lithuania and his father from the region encompassing modern
-   230|- [[susam-net]] — Pal's intellectual contribution spans three domains: mathematical puzzles (over 23 published on his site), software engineering (early Apache Nutch contributor), and the art of the personal website as
-   231|- [[tailcalled]] — Proposed a selection theorem for agent-like structures based on resource constraints rather than task richness. Key arguments:
-   232|- [[tedium-the-dull-side-of-the-internet]] — Ernie Smith is the creator and sole author of Tedium, a biweekly newsletter subtitled "The Dull Side of the Internet." Despite the self-deprecating name, Tedium is one of the most intellectually rich 
-   233|- [[teknium]] — Ryan, known online as Teknium (@teknium1), is the Co-founder and Head of Post-Training at Nous Research. He is the lead architect behind both the Hermes model family and the Hermes Agent framework — a
-   234|- [[teortaxestex]] — TeortaxesTex is a writer and commentator active on X/Twitter since September 2010, with approximately 107K tweets, 59K followers, and a distinctive voice that bridges Chinese AI ecosystem observation,
-   235|- [[terrible-software]] — The blog gained remarkable traction quickly — 230,000+ unique visitors in its first year (December 2025 retrospective) — by focusing on topics that resonate deeply with working software engineers:
-   236|- [[thariq-shihipar]] — Thariq Shihipar occupies a unique position in the AI engineering world — he is simultaneously a core builder of production AI systems (Claude Code at Anthropic) and a reflective practitioner who write
-   237|- [[the-old-new-thing]] — Raymond Chen is a Principal Software Engineer at Microsoft who has been involved in the evolution of Windows for more than 30 years. Since 2003, he has written The Old New Thing, one of the most respe
-   238|- [[concepts/the-silicon-underground]] — Dave Farquhar is the author of The Silicon Underground, one of the most prolific and detailed blogs devoted to the history of personal computing, semiconductor technology, and the business dynamics of
-   239|- [[thin-bi-tool]] — 薄くなるBIツール — BI tools transitioning from comprehensive platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
-   240|- [[tim-sh]] — Sherratt is the creator of the GLAM Workbench, a comprehensive platform of Jupyter notebooks that teaches researchers how to work with cultural collection data. He served as Creative Technologist-in-R
-   241|- [[tom-aarsen]] — Tom Aarsen is one of the most active and influential maintainers in the open-source NLP and embeddings ecosystem. Since late 2023, he has been the lead maintainer of Sentence Transformers, the most wi
-   242|- [[tom-renner]] — Renner's writing is distinctive for its willingness to question technology — even (especially) when it comes from within the tech industry. He has published essays arguing that LLMs are a "400-year-lo
-   243|- [[troy-hunt]] — Troy Hunt is one of the most recognizable voices in cybersecurity education and data breach transparency. He is best known as the creator and operator of Have I Been Pwned (HIBP), a free service that 
-   244|- [[utcc-utoronto-ca-cks]] — Chris Siebenmann is an empirical systems thinker — a career sysadmin who writes about technology from the trenches rather than from theory. His blog is characterized by a distinctive voice: skeptical 
-   245|- [[varun-trivedy]] — Varun Trivedy (who goes by "Viv") is one of the leading voices in harness engineering — the discipline of building the infrastructure, tooling, and execution logic that wraps around AI models to make 
-   246|- [[vtrivedy10]] — Vivek Trivedy (also known as Varun Trivedy or Viv) is the Product Lead for Agents & Harnesses at LangChain. He is a leading voice in the emerging field of Harness Engineering — the discipline of desig
-   247|- [[walden-yan]] — Walden Yan is a Co-Founder and Chief Product Officer (CPO) at Cognition AI, where he leads product strategy and has become one of the most influential voices in the emerging field of context engineeri
-   248|- [[webmcp]] — 従来のブラウザエージェント（スクリーンショット解析、DOMスクレイピング）は「推測ベース」だった。WebMCPは逆転の発想で、ウェブサイト側が構造化されたツール（名前、説明、JSON Schema入力）を明示的に登録し、エージェントがそれらを発見・呼び出せるようにする。
-   249|- [[westenberg]] — Westenberg writes at the intersection of technological critique, political philosophy, and cultural analysis. Her essays combine historical framing, economic data, and philosophical reasoning to argue
-   250|- [[will-brown]] — William "Will" Brown is a Research Lead at [Prime Intellect](https://primeintellect.ai/), where he leads open-source research and infrastructure for agentic reinforcement learning. He is the original 
-   251|- [[will-mcgugan]] — Will McGugan is one of the most creative and prolific Python developers of the modern era. His work is defined by a simple but powerful insight: terminals are underutilized as interactive interfaces, 
-   252|- [[wirtzdan]] — Daniel Wirtz writes about productivity systems, facilitation, cohort-based learning, personal knowledge management, and building in public. His work is characterized by a pragmatic, experiment-driven 
-   253|- [[xania-org]] — Godbolt writes primarily about compilers, systems programming, open-source project stewardship, and the intersection of AI with developer tools. His blog is a rare window into the internals of how mod
-   254|- [[xeiaso-net]] — Xe Iaso is an infrastructure humanist — someone who thinks deeply about the social and economic structures that underpin the internet, and builds tools to protect the small, independent web from the f
-   255|- [[xjdr]] — Jeff Rose (known online as xjdr) is a systems developer, AI/ML researcher, and infrastructure engineer with a career spanning high-performance distributed systems, operating system design, and cutting
-   256|- [[yacine-mahdid]] — Yacine Mahdid is a software engineer and computational neuroscience researcher based in Ottawa, Canada. He works at a Canadian startup and has previously been affiliated with McGill University (Comput
-   257|- [[yann-lecun]] — フランス系アメリカ人コンピュータサイエンティスト。CNNの発明者、2018年チューリング賞受賞者。Meta元チーフAIサイエンティスト、NYU教授。
-   258|- [[zach-mueller]] — Zach Mueller is one of the most authoritative voices in distributed deep learning training within the open-source AI community. As the Technical Lead for Hugging Face Accelerate, he maintains the libr
-   259|- [[zakirullin]] — Artem Zakirullin — Software Architect, author of "Cognitive load is what matters" (12K+ GitHub stars), a framework on minimizing cognitive complexity in software design
-   260|- [[zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.
-   261|
+- [[muse-spark]] — Meta's latest language model, announced April 2026.
+- [[mustafa-suleyman]] — Mustafa Suleyman is the CEO of Microsoft AI and a three-time founder — DeepMind, Inflection AI, and now leading Microsoft's consumer AI division. His trajectory from working-class North London to $4B 
+- [[nader-dabit]] — Nader Dabit is a developer advocate turned AI agent growth engineer who joined Cognition AI in February 2026 to help scale Devin's enterprise adoption. Before Cognition, he spent over a decade buildin
+- [[nathan-lambert]] — Nathan Lambert is a Senior Research Scientist and Post-Training Lead at the Allen Institute for AI (AI2). He previously worked at HuggingFace as a Research Scientist and RLHF Team Lead (2022–2023). He
+- [[noam-brown]] — Noam Brown is the most influential AI researcher that most people haven't heard of — his work powers three of the most significant game-playing AIs in history (Libratus, Pluribus, CICERO), and he is n
+- [[noetik]] — Noetik is a biotech AI company applying transformer models to oncology, specifically addressing the 95% clinical trial failure rate in cancer drug development. The company's core thesis: many "failed"
+- [[nvidia-dgx-spark]] — Personal AI supercomputer powered by the NVIDIA GB10 Grace Blackwell Superchip. Designed for developers, data scientists, and researchers to prototype, fine-tune, and deploy AI models locally. Officia
+- [[nvidia-nemoclaw]] — NVIDIA NemoClaw is a secure AI agent development framework designed for running AI agents with enterprise-grade isolation. It bundles OpenShell (sandbox runtime), OpenClaw (agent framework), a Privacy
+- [[oldvcr-blogspot-com]] — Kaiser is the creator and maintainer of  — the PowerPC-native Firefox fork that extended the usable life of aging Mac hardware long after Mozilla abandoned the platform. He has also cont
+- [[omar-khattab]] — MIT EECS Assistant Professor. Creator of ColBERT (late interaction retrieval), DSPy (declarative LM programming), GEPA (genetic prompt optimization), and co-author of RLMs (Recursive Language Models). X: @lateinteraction
+- [[openai-cua]] — OpenAIのCUA（Computer-Using Agent）モデルは、GPT-4oのビジョン機能と強化学習を組み合わせて、スクリーンショットを見てGUIを操作するエージェント。2025年1月に「Operator」として公開され、2025年7月にChatGPTエージェントに完全統合された。
+- [[openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
+- [[openai]] — OpenAI is a leading AI research and product company known for developing the GPT series of large language models, ChatGPT, and a growing ecosystem of AI developer tools. The company has been at the fo
+- [[concepts/openclaw]] — Open-source always-on AI assistant framework created by Peter Steinberger (former PSPDFKit CEO). Deploys autonomous agents that run continuously, self-evolve through interaction, and integrate with me
+- [[overreacted-io]] — Dan Abramov is a core contributor to React and a prominent voice in the frontend development community. He co-created Redux and Create React App, and has worked at Meta on the React team. His blog ove
+- [[paulgraham-com]] — Paul Graham is a programmer, essayist, and venture capitalist. Co-founder of Y Combinator (2005), the startup accelerator that has funded over 4,000 companies including Airbnb, Stripe, Dropbox, and Re
+- [[perplexity-comet]] — Cometの核心は検索ファーストアーキテクチャ。従来のブラウザが「URLを入力 → ページをレンダリング → ユーザーが読む」というフローだったのに対し、Cometはユーザーの意図を直接理解し、エージェントがウェブ上でタスクを代行する。
+- [[peter-steinberger]] — Austrian software developer, creator of OpenClaw (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as @steipete on GitHub/Twitter. A pioneer of AI-native development work
+- [[philiplaine-com]] — Philip Laine is a software engineer who writes about the practical challenges of building and maintaining cloud-native infrastructure. His blog, modestly tagged "random thoughts about software develop
+- [[philipp-schmid]] — Philipp Schmid is one of the most prolific and influential technical educators in the AI ecosystem. His blog at philschmid.de has been a go-to resource for developers since 2021, covering everything f
+- [[playerzero]] — AI agent startup building context graphs as 'engineering world models' — automating L2/L3 support while capturing the decision traces that explain why systems break
+- [[pluralistic-net]] — Cory Doctorow is one of the most influential tech-policy thinkers of his generation. His work connects antitrust theory, copyright law, digital rights, and platform economics into a unified critique o
+- [[pratik-bhavsar]] — Pratik Bhavsar is a practitioner-researcher at the intersection of LLM evaluation, agentic systems, and retrieval-augmented generation. His intellectual signature is the thesis that evaluation is the 
+- [[qwen3-6-plus]] — Alibabaのエージェント指向言語モデル。実世界の自律的ワークフローを対象としている。
+- [[rachelbythebay-com]] — Rachel by the Bay is one of the internet's most distinctive voices on systems administration, infrastructure reliability, and the art of keeping things running when nobody notices — until they break. 
+- [[rahul]] — Rahul Sengottuvelu is the Head of Applied AI at Ramp, where he leads the company's AI engineering strategy and product development. He co-founded and served as CTO of Cohere.io, an AI-powered customer
+- [[rakhim-exotext-com]] — Rakhim is notable for his willingness to shut down projects when they no longer serve their purpose — a philosophy that runs counter to the "growth at all costs" mentality of modern tech. He has built
+- [[raw-works]] — Raymond Weitekamp is an ML researcher focused on Recursive Language Models (RLMs) and DSPy-based scaffolding. His work has demonstrated that small open-source models with RLM scaffolding can outperfor
+- [[regie-ai]] — AI-native sales engagement platform replacing Outreach/Salesloft — designed for mixed teams where the agent is a first-class actor with prospecting, outreach, follow-ups, routing, and human escalation capabilities
+- [[rehan-van-der-merwe]] — Cloud-native architect and blogger. Writes at [rehanvdm.com](https://rehanvdm.com/blog/).
+- [[richard-sutton]] — Richard Sutton is the most consequential figure in the history of reinforcement learning (RL). Along with his doctoral advisor Andrew G. Barto, Sutton established the conceptual and algorithmic founda
+- [[righto-com]] — Ken Shirriff is a blogger and hardware reverse engineer based in Silicon Valley. His blog, righto.com, has been active since 2008 and covers computer history, vintage computing, integrated circuit rev
+- [[ryan-carson]] — Ryan Carson is one of the most influential figures in the democratization of tech education. In 2008, he founded Treehouse (originally Treehouse Island), an online platform designed to teach web devel
+- [[ryan-dahl]] — Ryan Dahl is a software engineer best known as the creator of Node.js (2009) and Deno (2018), two foundational JavaScript/TypeScript runtimes. His work has shaped the modern server-side JavaScript eco
+- [[ryan-lopopolo]] — Ryan Lopopolo is the originator of Harness Engineering — the systematic practice of building the scaffolding, feedback loops, observability, and architectural constraints that allow AI coding agents t
+- [[sam-altman]] — Sam Altman is the CEO of OpenAI and arguably the most influential person in the current AI era. Under his leadership, OpenAI has:
+- [[samuel-colvin]] — Pydantic's success (27.3K GitHub stars, 46M+ monthly PyPI downloads) stems from applying this principle to data validation. The same principle drives Logfire (observability with developer-friendly SQL
+- [[sankalp-sinha]] — He describes himself as a "0.5x engineer made 5x with help of LLMs" and maintains a pseudonymous online persona while being selective about what personal details he shares publicly ("selectively doxxe
+- [[scott-wu]] — CEO and co-founder of Cognition AI, the company behind Devin — the world's first autonomous AI software engineer. Former competitive programming champion (3× IOI gold medals, 1st place in 2014).
+- [[seangoedecke-com]] — Sean Goedecke is an Australian software engineer who writes about AI's practical impact on software engineering, large tech company dynamics, and the structural forces shaping engineers' careers. He i
+- [[sero]] — Sero (known online as 0xSero) is an open-source developer, AI infrastructure builder, and founder of Sybil Solutions. He operates at the intersection of AI agents, blockchain infrastructure, and devel
+- [[sheshansh-agrawal]] — Sheshansh Agrawal is a search and retrieval researcher at the intersection of academic IR research and applied agentic AI. He currently serves as Director of Research at Contextual AI (Jun 2024–), whe
+- [[shkspr-mobi]] — Eden blogs at  — a minimalist, self-hosted site he has maintained for years — where he writes about technology policy, open-source sustainability, web accessibility, and the practical c
+- [[shlok-khemani]] — Writer and programmer based in Gurgaon, India. Currently researching personal AI and memory systems for AI agents. Previously at Decentralised.co, building products for the crypto space. Author of Ope
+- [[shreya-shankar]] — Shreya Shankar is a PhD candidate at UC Berkeley EECS (advised by Aditya G. Parameswaran) and one of the most influential voices in AI evaluation methodology. Alongside Hamel Husain, she co-created th
+- [[shunyu-yao]] — Shunyu Yao is one of the most influential researchers in the language agent space. His work spans from the foundational ReAct paradigm (2022) through Tree of Thoughts (2023), Reflexion (2023), CoALA (
+- [[simon-willison]] — Django co-creator, open-source advocate, and leading voice in AI-assisted software development. Founder of [Datasette](https://datasette.io/) and prolific blogger at simonwillison.net.
+- [[simone-salis]] — Simone Salis is a creative engineer who bridges Italian aesthetics with American pragmatism. His work sits at the intersection of media production, technology philosophy, and digital minimalism. After
+- [[skyfall-dev]] — His projects span a wide range: a newspaper bot for Hack Club that handles story writing, editor approvals, and newsletter generation; a real-time inventory and price monitoring system for Hack Club's
+- [[spike]] — Spike (real name: Mike Doan) is an independent machine learning researcher and systems programmer with a distinctive perspective on the foundations of AI computation. He previously worked at a math/AS
+- [[stefano-marinelli]] — Stefano Marinelli is an Italian system administrator and blogger who writes about FreeBSD, illumos, Void Linux, and infrastructure management. His blog, IT Notes, has been running since 2014 and cover
+- [[steve-blank]] — Steven Gary Blank was born on November 30, 1953, in Manhattan, New York City, to Eastern European immigrants — his mother from Eishyshok in Lithuania and his father from the region encompassing modern
+- [[susam-net]] — Pal's intellectual contribution spans three domains: mathematical puzzles (over 23 published on his site), software engineering (early Apache Nutch contributor), and the art of the personal website as
+- [[tailcalled]] — Proposed a selection theorem for agent-like structures based on resource constraints rather than task richness. Key arguments:
+- [[tedium-the-dull-side-of-the-internet]] — Ernie Smith is the creator and sole author of Tedium, a biweekly newsletter subtitled "The Dull Side of the Internet." Despite the self-deprecating name, Tedium is one of the most intellectually rich 
+- [[teknium]] — Ryan, known online as Teknium (@teknium1), is the Co-founder and Head of Post-Training at Nous Research. He is the lead architect behind both the Hermes model family and the Hermes Agent framework — a
+- [[teortaxestex]] — TeortaxesTex is a writer and commentator active on X/Twitter since September 2010, with approximately 107K tweets, 59K followers, and a distinctive voice that bridges Chinese AI ecosystem observation,
+- [[terrible-software]] — The blog gained remarkable traction quickly — 230,000+ unique visitors in its first year (December 2025 retrospective) — by focusing on topics that resonate deeply with working software engineers:
+- [[thariq-shihipar]] — Thariq Shihipar occupies a unique position in the AI engineering world — he is simultaneously a core builder of production AI systems (Claude Code at Anthropic) and a reflective practitioner who write
+- [[the-old-new-thing]] — Raymond Chen is a Principal Software Engineer at Microsoft who has been involved in the evolution of Windows for more than 30 years. Since 2003, he has written The Old New Thing, one of the most respe
+- [[concepts/the-silicon-underground]] — Dave Farquhar is the author of The Silicon Underground, one of the most prolific and detailed blogs devoted to the history of personal computing, semiconductor technology, and the business dynamics of
+- [[thin-bi-tool]] — 薄くなるBIツール — BI tools transitioning from comprehensive platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
+- [[tim-sh]] — Sherratt is the creator of the GLAM Workbench, a comprehensive platform of Jupyter notebooks that teaches researchers how to work with cultural collection data. He served as Creative Technologist-in-R
+- [[tom-aarsen]] — Tom Aarsen is one of the most active and influential maintainers in the open-source NLP and embeddings ecosystem. Since late 2023, he has been the lead maintainer of Sentence Transformers, the most wi
+- [[tom-renner]] — Renner's writing is distinctive for its willingness to question technology — even (especially) when it comes from within the tech industry. He has published essays arguing that LLMs are a "400-year-lo
+- [[troy-hunt]] — Troy Hunt is one of the most recognizable voices in cybersecurity education and data breach transparency. He is best known as the creator and operator of Have I Been Pwned (HIBP), a free service that 
+- [[utcc-utoronto-ca-cks]] — Chris Siebenmann is an empirical systems thinker — a career sysadmin who writes about technology from the trenches rather than from theory. His blog is characterized by a distinctive voice: skeptical 
+- [[varun-trivedy]] — Varun Trivedy (who goes by "Viv") is one of the leading voices in harness engineering — the discipline of building the infrastructure, tooling, and execution logic that wraps around AI models to make 
+- [[vtrivedy10]] — Vivek Trivedy (also known as Varun Trivedy or Viv) is the Product Lead for Agents & Harnesses at LangChain. He is a leading voice in the emerging field of Harness Engineering — the discipline of desig
+- [[walden-yan]] — Walden Yan is a Co-Founder and Chief Product Officer (CPO) at Cognition AI, where he leads product strategy and has become one of the most influential voices in the emerging field of context engineeri
+- [[webmcp]] — 従来のブラウザエージェント（スクリーンショット解析、DOMスクレイピング）は「推測ベース」だった。WebMCPは逆転の発想で、ウェブサイト側が構造化されたツール（名前、説明、JSON Schema入力）を明示的に登録し、エージェントがそれらを発見・呼び出せるようにする。
+- [[westenberg]] — Westenberg writes at the intersection of technological critique, political philosophy, and cultural analysis. Her essays combine historical framing, economic data, and philosophical reasoning to argue
+- [[will-brown]] — William "Will" Brown is a Research Lead at [Prime Intellect](https://primeintellect.ai/), where he leads open-source research and infrastructure for agentic reinforcement learning. He is the original 
+- [[will-mcgugan]] — Will McGugan is one of the most creative and prolific Python developers of the modern era. His work is defined by a simple but powerful insight: terminals are underutilized as interactive interfaces, 
+- [[wirtzdan]] — Daniel Wirtz writes about productivity systems, facilitation, cohort-based learning, personal knowledge management, and building in public. His work is characterized by a pragmatic, experiment-driven 
+- [[xania-org]] — Godbolt writes primarily about compilers, systems programming, open-source project stewardship, and the intersection of AI with developer tools. His blog is a rare window into the internals of how mod
+- [[xeiaso-net]] — Xe Iaso is an infrastructure humanist — someone who thinks deeply about the social and economic structures that underpin the internet, and builds tools to protect the small, independent web from the f
+- [[xjdr]] — Jeff Rose (known online as xjdr) is a systems developer, AI/ML researcher, and infrastructure engineer with a career spanning high-performance distributed systems, operating system design, and cutting
+- [[yacine-mahdid]] — Yacine Mahdid is a software engineer and computational neuroscience researcher based in Ottawa, Canada. He works at a Canadian startup and has previously been affiliated with McGill University (Comput
+- [[yann-lecun]] — フランス系アメリカ人コンピュータサイエンティスト。CNNの発明者、2018年チューリング賞受賞者。Meta元チーフAIサイエンティスト、NYU教授。
+- [[zach-mueller]] — Zach Mueller is one of the most authoritative voices in distributed deep learning training within the open-source AI community. As the Technical Lead for Hugging Face Accelerate, he maintains the libr
+- [[zakirullin]] — Artem Zakirullin — Software Architect, author of "Cognitive load is what matters" (12K+ GitHub stars), a framework on minimizing cognitive complexity in software design
+- [[zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.

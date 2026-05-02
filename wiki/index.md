@@ -329,13 +329,6 @@
 - [[entities/periodic-ai]] — AI research company with physical lab focused on RL scaling for frontier LLMs (1T+ parameters).
 - [[entities/mimo]] — Xiaomi's open-source LLM family. MiMo-V2.5-Pro: 1.02T MoE (42B active), 1M context, hybrid attention with learnable sink bias.
 - [[entities/supermemory]] — Company building SMFS (Supermemory Filesystem) — a mountable filesystem designed for AI agents, replacing RAG pipelines.
-- [[entities/palantir]] — AI-powered decision infrastructure company. The Palantir Ontology contextualizes computation within "lived reality" for enterprise agent workflows.
-- [[entities/mistral-ai]] — French AI company. Released Mistral Workflows (enterprise orchestration layer) and Voxtral TTS in April 2026.
-- [[entities/talkie]] — Open-weight 13B historical LLM trained exclusively on pre-1930 data. By David Duvenaud, Alec Radford, and @status_effects.
-- [[entities/david-duvenaud]] — AI researcher. Co-announced Talkie, a 13B LLM trained exclusively on pre-1930 data.
-- [[entities/periodic-ai]] — AI research company with physical lab focused on RL scaling for frontier LLMs (1T+ parameters).
-- [[entities/mimo]] — Xiaomi's open-source LLM family. MiMo-V2.5-Pro: 1.02T MoE (42B active), 1M context, hybrid attention with learnable sink bias.
-- [[entities/supermemory]] — Company building SMFS (Supermemory Filesystem) — a mountable filesystem designed for AI agents, replacing RAG pipelines.
 
 
 - [[entities/_index]] — Entities directory index page

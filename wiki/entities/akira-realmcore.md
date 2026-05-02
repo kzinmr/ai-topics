@@ -164,6 +164,7 @@ Slateは[[concepts/agentic-engineering]]における「swarm orchestration」パ
 
 ## Related
 
+- [[steve-blank]] — Lean Startup methodologist; shared focus on agentic-engineering and harness-engineering patterns
 - [[drmaciver]] — Hypothesis creator; PBT and AI evaluation methodology
 - [[mitchell-hashimoto]] — HashiCorp co-founder; harness engineering pioneer
 - [[daniel-de-laney]] — Designer/PM; structured AI development critique

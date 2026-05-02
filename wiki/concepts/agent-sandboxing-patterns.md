@@ -1,3 +1,20 @@
+---
+title: "Agent Sandbox Architecture Patterns"
+type: concept
+created: 2026-04-30
+updated: 2026-05-02
+tags:
+  - concept
+  - ai-agents
+  - agent-sandboxing
+  - infrastructure
+  - security
+status: active
+sources:
+  - url: "https://browser-use.com/posts/two-ways-to-sandbox-agents"
+    title: "How We Built Secure, Scalable Agent Sandbox Infrastructure"
+---
+
 # Agent Sandbox Architecture Patterns
 
 **Source:** [How We Built Secure, Scalable Agent Sandbox Infrastructure](https://browser-use.com/posts/two-ways-to-sandbox-agents) by Larsen Cundric (Browser Use, 2026-02-25)
