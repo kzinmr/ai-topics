@@ -1,3 +1,13 @@
+## [2026-05-02] Paul Hoekstra — Agentic Engineering 4-Layer Framework (Full Series Ingestion)
+
+- **[[entities/paul-hoekstra]]** — Created entity page for data engineer and Paul's Pipeline author. Documented 4-layer Agentic Engineering framework, key articles, and contributions.
+- **[[concepts/harness-engineering/agentic-engineering-configuration-layer]]** — Created concept page for Layer 1. CLAUDE.md, Skills system, `<HARD-GATE>` enforcement, SkillsBench findings, anti-rationalization tables, division of labor strategy.
+- **[[concepts/harness-engineering/agentic-engineering-capability-layer]]** — Created concept page for Layer 2. MCP with deferred loading, live docs (Context7, DeepWiki, Exa), visual output tools (Figma, frontend-slides, Remotion, draw.io), 3-layer memory strategy (MEMORY.md, episodic-memory, QMD).
+- **[[concepts/harness-engineering/agentic-engineering-orchestration-layer]]** — Created concept page for Layer 3. Subagents vs Agent Teams, Ralph Loop, Git worktrees, context compression, "context over roles" design principle.
+- **[[concepts/harness-engineering/agentic-engineering-guardrails-layer]]** — Created concept page for Layer 4. Poisoned instructions, homoglyph attacks, sandboxing (bubblewrap/Apple), permissions system, AST-grep, pre-commit/CI gates.
+- **[[concepts/harness-engineering/agentic-engineering]]** — Updated: Added "Paul Hoekstra's 4-Layer Framework" section with integration notes vs Willison's framing. Updated sources and further reading.
+- Source raw articles: 6 articles saved (4 series parts + statusline article + visual output article)
+
 ## [2026-05-02] Pi Podcast (Syntax #976) — Entity Enrichment & Concept Update
 
 - **[[entities/pi-coding-agent]]** — Enriched with podcast insights: Pi's core definition ("a while loop with 4 tools"), "Bash is all you need" philosophy, steering queue, self-modifying skills with hot reloading, MCP critique vs Pi approach, prompt injection concerns, "Code is truth" memory philosophy, MAM (Master of Mischief) Slack bot.

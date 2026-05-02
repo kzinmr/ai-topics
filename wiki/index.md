@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-02 | Total pages: 765 | Full entries: 734 | Stubs: 614
+| Last updated: 2026-05-02 | Total pages: 770 | Full entries: 739 | Stubs: 614
 
-## Entities (370 pages)
+## Entities (371 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -234,7 +234,8 @@
 - [[entities/openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
 - [[entities/openai]] — **Type** | AI Research & Product Company |
 - [[entities/openclaw]] — Open-source always-on AI assistant framework created by **Peter Steinberger** (former PSPDFKit CEO). Deploys autonomous agents that run continuously, self-evolve through interaction, and integrate ...
-- [[entities/overreacted-io]] — **URL:** https://overreacted.io
+|- [[entities/overreacted-io]] — **URL:** https://overreacted.io
+|- [[entities/paul-hoekstra]] — Data engineer and author of Paul's Pipeline (Substack). Defined the 4-layer Agentic Engineering framework (Configuration → Capability → Orchestration → Guardrails) for coding agents like Claude Code and Codex.
 |- [[entities/paulgraham-com]] — **Blog** | paulgraham.com |
 |- [[entities/pi-coding-agent]] — Mario Zechner's minimal coding agent — 4-package monorepo, 4 default tools, YOLO execution, context-control philosophy. 40k+ GitHub stars. |
 - [[entities/perplexity-comet]] — **Perplexity Comet**は、Perplexity AIが開発したAIネイティブブラウザ。2025年7月にWindows/macOSでリリースされ、同年11月にAndroid、2026年3月にiOSに対応。「ブラウザをAIエージェントにする」戦略の最前線に位置する製品。
@@ -589,8 +590,12 @@
 - [[concepts/harness-design-long-running-apps]] — Anthropic Labs（Prithvi Rajasekaran）による長期自律エージェントの実践設計。**GAN-inspiredループ**（Generator ↔ Evaluator）をフルスタック開発にスケールさせたアーキテクチャ。
 - [[concepts/harness-engineering]] — The practice of building evaluation systems, tests, and constraints that guide LLMs to reliable outputs. Popularized by Hamel Husain and advanced by Vivek Trivedy (LangChain) who demonstrated +13.7pts on Terminal Bench 2.0 through harness-only changes, and introduced eval-driven hill-climbing for autonomous harness optimization.
 - [[concepts/harness-engineering/agentic-engineering-patterns]] — Simon Willisonが2026年2月23日に開始したガイドプロジェクト。コーディングエージェント（Claude Code、OpenAI Codex、Gemini CLI等）から最高の結果を得るための実践パターンを体系化したもの。
-- [[concepts/harness-engineering/agentic-engineering]] — > **Definition:** Agentic engineering is the practice of treating AI coding agents (Claude Code, Codex, etc.) as junior team members on a development project. Humans act as supervisors — providing ...
-- [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — コードベースを「人間がナビゲートしやすい」のではなく**「AIエージェントが作業しやすい」ように設計する**哲学。
+|- [[concepts/harness-engineering/agentic-engineering]] — > **Definition:** Agentic engineering is the practice of treating AI coding agents (Claude Code, Codex, etc.) as junior team members on a development project. Humans act as supervisors — providing ...
+|- [[concepts/harness-engineering/agentic-engineering-configuration-layer]] — Paul Hoekstra's framework layer 1: CLAUDE.md, Skills, `<HARD-GATE>` tags, pre-commit hooks that prevent agents from defaulting to low-quality "defensive sludge."
+|- [[concepts/harness-engineering/agentic-engineering-capability-layer]] — Paul Hoekstra's framework layer 2: MCP with deferred loading, live docs (Context7, Exa), 3-layer memory strategy (MEMORY.md, episodic-memory, QMD).
+|- [[concepts/harness-engineering/agentic-engineering-orchestration-layer]] — Paul Hoekstra's framework layer 3: Subagents, Git worktrees, context compression via Ralph Loop, and the "context over roles" design principle.
+|- [[concepts/harness-engineering/agentic-engineering-guardrails-layer]] — Paul Hoekstra's framework layer 4: Permission systems, sandboxing, AST-grep, homoglyph attack detection, and pre-commit/CI gates.
+|- [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — コードベースを「人間がナビゲートしやすい」のではなく**「AIエージェントが作業しやすい」ように設計する**哲学。
 - [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] — コーディングエージェントによる**探索的テスト**。自動テストがパスしても見逃される問題（クラッシュ、UI欠落、エッジケース）を発見するために、エージェントの手動テスト能力を活用する。
 - [[concepts/harness-engineering/agentic-workflows/anti-patterns]] — Simon Willisonが警告する**コーディングエージェント使用時のアンチパターン**。特に「レビューされていないコードを他者に押し付ける」行為は深刻な問題。
 - [[concepts/harness-engineering/agentic-workflows/cli-first-development]] — ソフトウェア開発を**CLI（コマンドラインインターフェース）から始める**アプローチ。エージェント時代の開発ワークフローの核心パターン。

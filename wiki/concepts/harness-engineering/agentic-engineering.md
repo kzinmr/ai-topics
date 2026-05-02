@@ -3,7 +3,7 @@ title: Agentic Engineering
 type: concept
 slug: agentic-engineering
 created: 2026-04-12
-updated: 2026-04-27
+updated: 2026-05-02
 status: complete
 tags:
   - ai
@@ -14,7 +14,11 @@ aliases:
   - ai-coding-agents
   - agentic-workflow
 source: https://simonwillison.net/2025/Apr/11/agentic-engineering/
-sources: []
+sources:
+  - https://paulhoekstra.substack.com/p/agentic-engineering-the-configuration
+  - https://paulhoekstra.substack.com/p/agentic-engineering-the-interface
+  - https://paulhoekstra.substack.com/p/agentic-engineering-the-orchestration
+  - https://paulhoekstra.substack.com/p/agentic-engineering-the-guardrails
 ---
 
 # Agentic Engineering
@@ -53,6 +57,31 @@ Work happens in tight, iterative cycles:
 
 ### 5. Hoard Your Skills
 Don't let critical knowledge live only in the agent's context window. Document decisions, save patterns, and maintain human-understandable artifacts. The agent is replaceable; your engineering judgment is not.
+
+---
+
+---
+
+## Paul Hoekstra's 4-Layer Framework (March 2026)
+
+Data engineer [[entities/paul-hoekstra|Paul Hoekstra]] proposed a complementary, more granular framework for agentic engineering organized into four operational layers:
+
+| Layer | Focus | Key Components |
+|-------|-------|---------------|
+| **1. Configuration** | Behavioral baseline | CLAUDE.md, Skills, `<HARD-GATE>` tags, pre-commit hooks |
+| **2. Capability** | Tools & memory | MCP with deferred loading, live docs (Context7, Exa), 3-layer memory |
+| **3. Orchestration** | Multi-agent scaling | Subagents, Git worktrees, context compression, Ralph Loop |
+| **4. Guardrails** | Security & quality | Permissions system, sandboxing, AST-grep, homoglyph detection |
+
+While Simon Willison's framing focuses on *philosophy and human-side patterns*, Hoekstra's framework is **implementation-focused** — providing concrete file paths, CLI commands, and configuration snippets for each layer.
+
+### Key Distinctions from Willison's Framework
+- **Configuration > Vibes:** Hoekstra highlights that *configuration* (not just "good engineering practice") is the critical difference — agents without structured instructions default to "defensive sludge"
+- **Layered architecture:** Explicit layer separation mirrors infrastructure design patterns (networking OSI model), making the framework teachable and scalable
+- **Security-first:** The Guardrails Layer reflects lessons from the 2026 "OpenClaw" scenario that's largely absent from earlier agentic engineering discourse
+
+### Integration
+Willison's patterns (TDD-first, Compound Engineering Loop, Git Integration) complement Hoekstra's layers — they are the *what* while Hoekstra provides the *how* and *where*.
 
 ---
 
@@ -160,7 +189,11 @@ Agentic Engineeringの文脈では、このトレードオフを意識し、抽�
 - [Agentic Engineering](https://simonwillison.net/2025/Apr/11/agentic-engineering/) — Simon Willison
 - [My Experience with Claude Code 2.0](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/) — Sankalp
 - [Shipping at Inference Speed](https://steipete.me/posts/2025/shipping-at-inference-speed) — Peter Steinberger (@steipete)
-- Related concepts: [[concepts/harness-engineering]], [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]], [[concepts/inference-speed-development]], [[concepts/claude-code-best-practices]], [[concepts/context-window-management]], [[concepts/claude-code-source-patterns]], [[concepts/ai-coding-reliability]]
+- [Agentic Engineering, Part 1: The Configuration Layer](https://paulhoekstra.substack.com/p/agentic-engineering-the-configuration) — Paul Hoekstra
+- [Agentic Engineering, Part 2: The Capability Layer](https://paulhoekstra.substack.com/p/agentic-engineering-the-interface) — Paul Hoekstra
+- [Agentic Engineering, Part 3: The Orchestration Layer](https://paulhoekstra.substack.com/p/agentic-engineering-the-orchestration) — Paul Hoekstra
+- [Agentic Engineering, Part 4: The Guardrails Layer](https://paulhoekstra.substack.com/p/agentic-engineering-the-guardrails) — Paul Hoekstra
+- Related concepts: [[concepts/harness-engineering]], [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]], [[concepts/inference-speed-development]], [[concepts/claude-code-best-practices]], [[concepts/context-window-management]], [[concepts/claude-code-source-patterns]], [[concepts/ai-coding-reliability]], [[concepts/harness-engineering/agentic-engineering-configuration-layer]], [[concepts/harness-engineering/agentic-engineering-capability-layer]], [[concepts/harness-engineering/agentic-engineering-orchestration-layer]], [[concepts/harness-engineering/agentic-engineering-guardrails-layer]]
 
 ---
 
