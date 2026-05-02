@@ -1,3 +1,12 @@
+## [2026-05-02] Recursive by Design — Lambda-RLM, Theodoros Galanos & The Harness Blog Ingestion
+
+- **[[concepts/lambda-rlm]]** — Created concept page for Lambda-RLM, a deterministic pipeline variant of RLM for the AEC domain. Plan (0 LLM calls) → Extract+Review → Generate. 14x token reduction, +8.4% quality improvement over open REPL.
+- **[[entities/theodoros-galanos]]** — Created entity page for Theodoros Galanos, AI researcher and harness engineering practitioner. Chief Science Officer at infrared.city. Creator of Lambda-RLM and AEC-Bench.
+- **[[entities/the-harness-blog]]** — Created entity page for The Harness blog (theharness.blog). 25 posts across 6 topics on harness engineering, agent evaluation, and AI in AEC.
+- **[[concepts/rlm-recursive-language-models]]** — Updated with Lambda-RLM production case study section and benchmark metrics.
+- **[[concepts/recursive-language-models]]** — Updated with Lambda-RLM variant reference.
+- Source: `raw/articles/2026-05-02_the-harness-blog_recursive-by-design.md` | https://theharness.blog/blog/recursive-by-design/
+
 ## [2026-05-02] Paul Hoekstra — Agentic Engineering 4-Layer Framework (Full Series Ingestion)
 
 - **[[entities/paul-hoekstra]]** — Created entity page for data engineer and Paul's Pipeline author. Documented 4-layer Agentic Engineering framework, key articles, and contributions.

@@ -39,6 +39,12 @@ RLM connects to [[concepts/context-engineering]] (managing context window constr
 - Models trained explicitly to recursively reason (not just post-trained)
 - RLM as a general-purpose inference-time scaling paradigm, potentially the next milestone after CoT and ReAct
 
+## Lambda-RLM Variant
+
+Theodoros Galanos introduced **Lambda-RLM**, a deterministic pipeline variant of RLM for the AEC domain. Instead of dynamic REPL-based decomposition, it computes task structure upfront (Plan → Extract+Review → Generate), achieving **14x token reduction with +8.4% quality improvement**. See [[concepts/lambda-rlm]] for full details.
+
+Source: [Recursive by Design](https://theharness.blog/blog/recursive-by-design/) (The Harness Blog, April 2026)
+
 ## References
 
 - arXiv:2512.24601 (Dec 2025, v2 Jan 2026)

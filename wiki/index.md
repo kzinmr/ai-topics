@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-02 | Total pages: 770 | Full entries: 739 | Stubs: 614
+| Last updated: 2026-05-02 | Total pages: 773 | Full entries: 742 | Stubs: 614
 
-## Entities (371 pages)
+## Entities (373 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -296,8 +296,10 @@
 - [[entities/teortaxestex]] — **X/Twitter** | @teortaxesTex |
 - [[entities/terrible-software]] — **URL:** https://terriblesoftware.org
 - [[entities/thariq-shihipar]] — **X** | @trq212 |
+- [[entities/the-harness-blog]] — Working notebook on harness engineering and agentic AI for AEC. 25 posts across 6 topics by [[entities/theodoros-galanos|Theodoros Galanos]].
 - [[entities/the-old-new-thing]] — **URL:** https://devblogs.microsoft.com/oldnewthing/
 - [[entities/the-silicon-underground]] — **URL:** https://dfarq.homeip.net
+- [[entities/theodoros-galanos]] — AI researcher and harness engineering practitioner. Chief Science Officer at infrared.city, author of The Harness blog, creator of Lambda-RLM and AEC-Bench. @TheodoreGalanos.
 - [[entities/thin-bi-tool]] — 薄くなるBIツール — BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
 - [[entities/tim-sh]] — **Blog** | timsh.org | AI coding practitioner, PM, Multi-LLM workflow pioneer |
 - [[entities/tim-sherratt]] — **Blog** | timsherratt.au | Historian, GLAM hacker, creator of GLAM Workbench |
@@ -658,6 +660,7 @@
 - [[concepts/kv-cache]] — The KV (Key-Value) Cache is an optimization technique in transformer inference that stores intermediate attention computations across generation steps, avoiding redundant recomputation. Understanding KV cache mechanics — size scaling (batch × layers × heads × d_k × sequence_length × precision), memory bandwidth bottleneck, and cache-aware scheduling — is a prerequisite for context engineering, prompt caching, and inference optimization.
 - [[concepts/kv-cache-compaction]] — KV Cache Compaction is a technique for reducing token usage in multi-agent systems by operating directly on the model's internal representations. Instead of LLM-based summarization or RAG-based ret...
 |- [[concepts/lambda-monolith-lambdalith]] — A serverless architecture pattern where a single AWS Lambda function handles all API routes, rather than splitting into many small, route-specific Lambda functions.
+|- [[concepts/lambda-rlm]] — Deterministic pipeline variant of Recursive Language Models for engineering report generation. Plan (0 LLM calls) → Extract+Review → Generate. 14x token reduction, +8.4% quality improvement. By [[entities/theodoros-galanos|Theodoros Galanos]].
 |- [[concepts/late-interaction-retrieval]] — Antoine Chaffin's ColBERT/MaxSim preserving token-level detail. 150M model outperforms 7B dense models on reasoning tasks (BRIGHT). Part 4 of the RAG Is Not Dead series.
 |- [[concepts/latent-briefing]]
 - [[concepts/llm-as-judge]] — LLM-as-JudgeはLLMを使用してLLM出力を評価するパラダイム。3つのバイアス类型（ルーブリック順序、スコアID、参照解答）と7つのベストプラクティスを整理。高リスク評価にはGPT-4oクラスが必要。

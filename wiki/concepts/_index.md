@@ -580,6 +580,10 @@ AI and LLM concept pages organized by topic.
 
 - [[concepts/lambda-monolith-lambdalith]] — A serverless architecture pattern where a single AWS Lambda function handles all API routes, rather than splitting into many small, route-specific Lambda functions.
 
+## Lambda-Rlm.Md
+
+- [[concepts/lambda-rlm]] — Deterministic pipeline variant of Recursive Language Models for engineering report generation. Plan (0 LLM calls) → Extract+Review → Generate. 14x token reduction, +8.4% quality improvement. By [[entities/theodoros-galanos|Theodoros Galanos]].
+
 ## Linear-Walkthroughs.Md
 
 -  — Linear walkthroughs are structured, step-by-step guides that walk users through processes in a sequential, predictable manner. In agentic contexts, they inform how agents should structure task complet

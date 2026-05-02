@@ -140,6 +140,27 @@ This connects directly to **Shunyu Yao's "The Second Half"** framework:
 
 Both converge on: **the scaffold itself becomes the environment for RL training**.
 
+## Lambda-RLM: Production Case Study (AEC Domain)
+
+Theodoros Galanos ([the-harness-blog|The Harness Blog]) demonstrated a production-grade RLM variant called **Lambda-RLM** in the Architecture, Engineering, and Construction (AEC) domain. Unlike standard RLM which uses an open-ended REPL with dynamic decomposition, Lambda-RLM computes the task structure upfront as a deterministic pipeline:
+
+1. **Plan** — Reads template, measures sources, computes dependency tree (0 LLM calls)
+2. **Extract + Review** — Pulls data from bounded chunks in dependency order with contract alignment
+3. **Generate** — Composes sections from extractions and dependencies
+
+### Key Metrics (Open REPL vs Lambda-RLM)
+
+| Metric | Open REPL | Lambda-RLM | Improvement |
+|--------|-----------|------------|-------------|
+| Total Tokens | 740K | 53K | **14x less** |
+| Input Tokens | 732K | 33K | **22x less** |
+| API Calls | 48 | 27 | **1.8x fewer** |
+| Quality (Reward) | 0.67 | 0.73 | **+8.4%** |
+
+Core insight: When task structure is deterministic and bounded, giving the model freedom to decide decomposition strategy wastes tokens on control code rather than engineering reasoning. See [[concepts/lambda-rlm]] for full details.
+
+Source: ["Recursive by Design"](https://theharness.blog/blog/recursive-by-design/) (The Harness Blog, April 2026)
+
 ## Adoption & Ecosystem
 
 - **Prime Intellect:** Implemented RLMEnv in their verifiers stack; ablation with GPT-5-mini and INTELLECT-3-MoE
