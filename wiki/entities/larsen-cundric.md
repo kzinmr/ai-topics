@@ -22,7 +22,6 @@ sources:
 **LinkedIn:** [larsencundric](https://www.linkedin.com/in/larsencundric)
 **GitHub:** [LarsenCundric](https://github.com/LarsenCundric)
 **Blog:** [browser-use.com/posts](https://browser-use.com/posts)
-**Status:** skeleton
 
 ## Bio
 

@@ -28,7 +28,7 @@
 - [[entities/anthropic-labs]] — Anthropic's experimental product division, responsible for launching products outside the core Claude AI assistant.
 - [[entities/anthropic]] — AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing.
 - [[entities/antirez-com]] — **URL:** https://antirez.com
-- [[entities/arize]] — > TODO: Research company blog, product documentation, and technical depth to build L3 page.
+- [[entities/arize]] — AI observability & LLM evaluation platform. Built Phoenix OSS (2M+ monthly downloads). $131M raised. "Datadog for agents." Enterprise customers: Uber, Chime, eBay, Spotify.
 - [[entities/arlan-r]] — **Name** | Arlan Rakhmetzhanov |
 - [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko, born 10 May 1989, Austria) is a software engineer, open-source developer, and entrepreneur who has profoundly shaped the Python ecosystem and is now building the next ge...
 - [[entities/avi-im]] — **Blog** | avi.im | Creator of **KVM**, author of [[concepts/zero-disk-architecture]]
@@ -199,7 +199,7 @@
 - [[entities/matx]] — AI chip startup founded by Reiner Pope, focusing on next-gen hardware for LLM training and inference.
 - [[entities/maurycyz-com]] — **Blog** | maurycyz.com |
 - [[entities/max-bernstein]] — **URL:** https://bernsteinbear.com
-- [[entities/maximor]] — > TODO: Research company blog, product, and technical depth to build L3 page.
+- [[entities/maximor]] — AI-native finance automation platform. ERP-agnostic Audit-Ready Agents for close/cash/revenue/reporting. Founded by former Microsoft execs. $9M seed from Foundation Capital.
 - [[entities/meta]] — Social media and technology company, developer of the LLaMA model family, Ray-Ban AI collaboration, and the **Personal Superintelligence** vision articulated by Mark Zuckerberg.
 - [[entities/micahflee]] — **Micah Lee** (he/him, pronounced "my-kah") is a security researcher, investigative data journalist, software engineer, and author. He is best known for building practical open-source privacy tools...
 - [[entities/michael-stapelberg]] — **Blog** | michael.stapelberg.ch |
@@ -239,7 +239,7 @@
 |- [[entities/cory-doctorow]] — Canadian-British sci-fi author and digital rights activist. Coined "enshittification." Blogs at pluralistic.net. Critical voice on AI policy and corporate personhood.
 |- [[entities/philiplaine-com]] — **URL:** https://philiplaine.com
 - [[entities/philipp-schmid]] — **X** | @_philschmid |
-- [[entities/playerzero]] — > TODO: Research company blog, funding history, and technical depth to build L3 page.
+- [[entities/playerzero]] — AI production engineering platform. Context graphs as engineering world models. Founded by Animesh Koratana (Stanford DAWN lab). $20M total funding. Customer: Zuora.
 - [[entities/poolside]] — AI code generation startup. Released **Laguna XS.2** (33B/3B MoE, Apache 2.0, single-GPU inference) in April 2026.
 - [[entities/project-prometheus]] — Jeff Bezos co-founded AI startup. $10B raised, $38B valuation. Focus on "Physical AI" for manufacturing/aerospace.
 - [[entities/pluralistic-net]] — **Blog** | pluralistic.net |
@@ -251,7 +251,7 @@
 - [[entities/ramp-labs]] — AI research company focused on multi-agent system efficiency. Created Latent Briefing — KV cache compaction for efficient memory sharing between agents.
 - [[entities/raw-works]] — **Role:** ML researcher, RLM (Recursive Language Model) practitioner
 - [[entities/refactoring-english]] — ソフトウェアエンジニアリング、AI vs人間の文章品質。refactoringenglish.com
-- [[entities/regie-ai]] — > TODO: Research company blog, product, and technical depth to build L3 page.
+- [[entities/regie-ai]] — AI-native sales engagement platform (SEP) replacing Outreach/SalesLoft. RegieOne platform. $50M total funding ($30M Series B Feb 2025). Backed by Khosla Ventures, Scale Venture Partners.
 - [[entities/rehan-van-der-merwe]] — Cloud-native architect and blogger. Writes at rehanvdm.com.
 - [[entities/reiner-pope]] — CEO of MatX, former Google TPU architect. Expert on full-stack AI from chip design to model architecture. Known for roofline analysis framework for LLM inference economics.
 - [[entities/richard-sutton]] — **Role** | Professor, University of Alberta; Research Scientist, Keen Technologies; Former Distinguished Research Scientist, Google DeepMind |

@@ -1,21 +1,71 @@
 ---
 title: "Maximor"
-tags: [company]
+tags:
+  - company
+  - ai-agent
+  - fintech
+  - finance-automation
+  - enterprise-ai
 created: 2026-04-20
-updated: 2026-04-24
+updated: 2026-05-02
 type: entity
+sources:
+  - https://www.maximor.ai/
+  - https://www.maximor.ai/blog/maximor-raises-9m-to-give-cfos-audit-ready-finance-automation-without-erp-rip-and-replace
+  - https://www.thesaasnews.com/news/maximor-raises-9-million-seed-round
+  - https://techcrunch.com/2025/09/29/former-microsoft-executives-launch-ai-agents-to-end-excel-driven-finance-for-mid-market-enterprise-businesses/
+  - https://www.axios.com/pro/fintech-deals/2025/09/29/maximor-9m-finance-ops-automation
 ---
 
 # Maximor
 
-> TODO: Research company blog, product, and technical depth to build L3 page.
+**Maximor** is an AI-native finance automation platform for mid-market and enterprise companies. Founded by former Microsoft executives, it provides an ERP-agnostic layer that automates accounting workflows — reconciliations, journal entries, close management, revenue recognition — while keeping existing systems intact. Built on the proprietary **Audit-Ready Agent™ architecture**, every output is fully traceable and audit-ready by default.
 
-## Profile
+## Company Overview
 
-- **Type:** AI Agent Startup (Finance/Accounting)
-- **Website:** [maximor.ai](https://www.maximor.ai/)
-- **Focus:** Automating cash management, close management, and core accounting workflows
-- **Positioning:** "Audit-Ready Agents" — ERP-agnostic layer that becomes the source of truth for reconciliation logic
+| Attribute | Detail |
+|-----------|--------|
+| **Founded** | 2023 |
+| **Founders** | Ramnandan Krishnamurthy (CEO), Ajay Krishna Amudan (CTO) |
+| **Headquarters** | New York, NY (also San Francisco) |
+| **Total Funding** | $9M seed |
+| **Lead Investor** | Foundation Capital |
+| **Key Backers** | Gaia Ventures, Boldcap; angels: Aravind Srinivas (Perplexity CEO), Tien Tzuo (Zuora CEO), CFOs from Ramp, Gusto, MongoDB, Big 4 |
+| **Pricing Model** | SaaS — modules for close, cash, revenue, reporting |
+| **Positioning** | "Audit-Ready Agents" — ERP-agnostic layer that becomes the source of truth for reconciliation logic |
+
+## Founders
+
+### Ramnandan Krishnamurthy (CEO)
+Former Microsoft executive (2016–2023) where he drove customer adoption for Azure OpenAI and led incubation of India's digital public infrastructure. Co-founded multiple startups (fastnext.co, Quabl). Holds dual degree in Computer Science & Engineering from IIT Madras.
+
+### Ajay Krishna Amudan (CTO)
+Former Founding Architect at Microsoft (2016–2023), where he led the rebuild of Microsoft's internal finance platform covering revenue, pricing, discounting, accounting, and reporting — scaling it from Azure pilot to handle all $200B+ of Microsoft's annual revenue. Founding engineer for Azure DNS (10M+ queries/s). ACM-ICPC 2015 World Finalist, IMO 2011/2012 medalist. Graduate studies in CS at Stanford, B.Tech from IIT Madras.
+
+## Product: Audit-Ready Agent™ Platform
+
+Maximor deploys specialized AI agents across four finance domains:
+
+| Domain | Agent Capabilities |
+|--------|-------------------|
+| **Revenue Automation** | Parse contracts, allocate revenue, manage ASC 606 compliance |
+| **Cash Automation** | Reconcile bank statements, match transactions, manage cash flow |
+| **Close Automation** | Journal entries, flux analysis, close checklists, intercompany eliminations |
+| **Board-Ready Reporting** | Audit-ready report packages, variance analysis, monthly/quarterly close |
+
+Key design principles:
+- **ERP-agnostic:** Connects to SAP, Oracle, NetSuite, and existing stacks without migration
+- **Audit-ready by default:** Every reconciliation, journal entry, and report is fully traceable
+- **Exception-based review:** AI does the prep; finance teams review only anomalies
+- **System-agnostic:** Works across ERPs, banks, CRMs, billing, and payroll
+
+## Funding History
+
+| Date | Round | Amount | Lead Investor | Notable Participants |
+|------|-------|--------|---------------|---------------------|
+| Sep 2025 | Seed | $9M | Foundation Capital | Gaia Ventures, Boldcap, Aravind Srinivas, Tien Tzuo |
+
+Guarantees a **5-Day Audit-Ready Close in 60 Days** for new customers.
 
 ## Role in Foundation Capital's Framework
 
@@ -50,15 +100,6 @@ Maximor's value proposition is building decision traces for finance workflows:
 - What precedent was used
 
 The context graph for finance becomes a queryable audit trail and a library of prior decisions that improves automation over time.
-
-## TODO
-
-- [ ] Research funding history and investors
-- [ ] Find technical blog posts or documentation
-- [ ] Understand how they handle ERP integration (SAP, Oracle, NetSuite)
-- [ ] Check for case studies or customer testimonials
-- [ ] Research how they handle the "connection problem" across finance systems
-- [ ] Remove skeleton status after enrichment
 
 ## See Also
 

@@ -1,3 +1,31 @@
+## [2026-05-02] Skeleton Enrichment — Foundation Capital Portfolio Companies (4 entities enriched)
+
+- **[[entities/maximor]]** — Enriched from skeleton to L3 page. Added funding ($9M seed, Foundation Capital), founder bios (Ramnandan Krishnamurthy & Ajay Amudan, ex-Microsoft), Audit-Ready Agent architecture, product table, ERP-agnostic design principles. Sources: Blog, SaaSNews, TechCrunch, Axios.
+- **[[entities/regie-ai]]** — Enriched from skeleton to L3 page. Added funding history ($50M total, $30M Series B Feb 2025), founder bios (Srinath Sridhar, Matt Millen), RegieOne platform features, investor list (Khosla Ventures, Scale Venture Partners, Foundation Capital). Sources: Crunchbase, PRNewswire, Regie blog.
+- **[[entities/arize]]** — Enriched from skeleton to L3 page. Added funding ($131M total, $70M Series C), founder bios (Jason Lopatecki, Aparna Dhinakaran), Phoenix OSS details (2M+ monthly downloads, 9.5K GitHub stars, OpenTelemetry-based), AI Copilot, enterprise customers (Uber, Chime, eBay, Spotify, US Air Force). Sources: Arize blog, PRNewswire, GitHub, Crunchbase.
+- **[[entities/playerzero]]** — Enriched from skeleton to L3 page. Added funding ($20M total, $15M Series A led by Foundation Capital), founder bio (Animesh Koratana, Stanford DAWN lab), context graph technology deep-dive (two clocks problem, engineering world models, code simulation), competitive positioning vs Cursor/Datadog/APM, customer Zuora, investor list (Matei Zaharia, Drew Houston, Dylan Field, Guillermo Rauch). Sources: TechCrunch, PlayerZero resources, AInvest.
+- **[[entities/larsen-cundric]]** — Cleaned up stale `**Status:** skeleton` body text (frontmatter already showed `status: active`).
+
+## [2026-05-02] Wiki Health Lint — Daily Automated Check
+
+- **Critical Issues Found:**
+  - 110 broken wikilinks to non-existent concept/entity pages
+  - 331 unknown tags (tag sprawl — not in SCHEMA.md taxonomy)
+  - 27 orphan entity pages, 172 orphan concept pages
+  - 43 pages with incomplete frontmatter
+  - Index count mismatch: header says 760 total but 1498 actual pages exist
+
+- **Warnings:**
+  - 91 oversized pages (>200 lines), including index.md at 1521 lines
+  - 638 stub pages containing TODO markers
+  - 7 entities split across 4-6 sub-pages each (claude-code, clefourrier, etc.)
+  - 1 corrupted raw article with HTML parsing artifacts
+
+- **Minor:**
+  - 4 pages missing from index.md
+  - 2 subdirectories missing _index.md
+  - 1 page without frontmatter (log-2026.md)
+
 ## [2026-05-02] Active Crawl — xAI Grok 4.3, Microsoft Copilot Wave 3, MIT FTTE, SpaceX-xAI Merger
 
 - **Researched 5 trending AI/ML topics** not yet covered in wiki:
