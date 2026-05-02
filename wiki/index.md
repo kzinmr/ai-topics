@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-02 | Total pages: 776 | Full entries: 745 | Stubs: 614
+| Last updated: 2026-05-02 | Total pages: 780 | Full entries: 749 | Stubs: 614
 
-## Entities (375 pages)
+## Entities (377 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -190,8 +190,9 @@
 - [[entities/lmsys-org]] — **URL** | https://lmsys.org |
 - [[entities/lora-fine-tuning]] — LoRA (Low-Rank Adaptation) fine-tuning paradigm, including Sakana AI's Doc-to-LoRA and Text-to-LoRA hypernetwork-based adapter generation
 - [[entities/marcus-moretti]] — General Manager of Spiral (Every's AI writing partner). Author of "A Guide to Agent-native Product Management", creator of ce:strategy/ce:product-pulse skills.
-- [[entities/mahadk]] — テクニカルライター。AI、Web開発、LLMアプリケーション。mahadk.com
-- [[entities/manus]] — **Manus**は、元Alibaba/ByteDanceエンジニアらが創業した中国系スタートアップ（Monica.im）が開発した汎用AIエージェント。2025年3月のバイラルデモで注目され、ブラウザ操作・コード実行・ファイル作成を仮想コンピュータ上で自律実行できる。2025年11月には**Browser Operator**機能をリリース、2026年には**Metaに買収**された。
+|- [[entities/mahadk]] — テクニカルライター。AI、Web開発、LLMアプリケーション。mahadk.com
+|- [[entities/malika-aubakirova]] — a16z infrastructure researcher, co-author of the OpenRouter State of AI 2025 study analyzing 100T tokens of real-world LLM usage.
+|- [[entities/manus]]
 - [[entities/mario-zechner]] — **X** | @badlogicgames |
 - [[entities/mark-chen]] — **Role** | Chief Research Officer, OpenAI |
 - [[entities/martin-alderson]] — **Blog** | martinalderson.com |
@@ -235,6 +236,7 @@
 - [[entities/openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
 - [[entities/openai]] — **Type** | AI Research & Product Company |
 - [[entities/openclaw]] — Open-source always-on AI assistant framework created by **Peter Steinberger** (former PSPDFKit CEO). Deploys autonomous agents that run continuously, self-evolve through interaction, and integrate ...
+- [[entities/openrouter]] — Unified API gateway for 300+ LLMs from multiple providers. Published the State of AI 2025 study analyzing 100T tokens of real-world LLM usage.
 |- [[entities/overreacted-io]] — **URL:** https://overreacted.io
 |- [[entities/paul-hoekstra]] — Data engineer and author of Paul's Pipeline (Substack). Defined the 4-layer Agentic Engineering framework (Configuration → Capability → Orchestration → Guardrails) for coding agents like Claude Code and Codex.
 |- [[entities/paulgraham-com]] — **Blog** | paulgraham.com |
@@ -585,7 +587,8 @@
 - [[concepts/generic-agent-self-evolving]] — **GenericAgent (GA)** is a self-evolving LLM agent system from Fudan University (arXiv:2604.17091, April 2026) built around **contextual information density maximization** — the principle that long...
 |- [[concepts/generative-app-evolution]] — The evolution trajectory of AI applications from generative UI (stateless, single-turn) to generative apps (stateful, multi-turn with persistence). Maps the "generative staircase" and the FCIS (Functional Core / Imperative Shell) pattern for AI-era architecture.
 |- [[concepts/gepa]] — GEPAはDSPyに統合された遺伝的アルゴリズムベースのプロンプト最適化手法。Pareto最適化により品質とコストを同時に最適化し、GRPOより35倍少ないサンプルで6%高い性能を達成。ICLR 2026 Oral。
-- [[concepts/gliclass]] — Encoder-only zero-shot text classification model family (Knowledgator). Up to 50× faster than Cross-Encoders. Three sub-families: V3 (general), Instruct (instruction-following), Multilang (20 languages). Apache-2.0.
+|- [[concepts/glass-slipper-effect]] — Framework for LLM user retention from the OpenRouter State of AI 2025 study. Foundational cohorts, Boomerang Effect, and workload-model fit drive model loyalty.
+|- [[concepts/gliclass]] — Encoder-only zero-shot text classification model family (Knowledgator). Up to 50× faster than Cross-Encoders. Three sub-families: V3 (general), Instruct (instruction-following), Multilang (20 languages). Apache-2.0.
 - [[concepts/github-copilot-billing]] — In April 2026, Microsoft announced a major shift in GitHub Copilot's pricing model from **requests-based billing** to **token-based billing**, alongside tightening rate limits across all tiers. Thi...
 - [[concepts/gnu-ai-reimplementations]] — **GNU AI Reimplementations** refers to the concept — articulated primarily by Salvatore Sanfilippo (antirez), creator of Redis — that AI coding agents are enabling a new wave of clean-room software...
 - [[concepts/gold-diff-distillation]] — コーディング製品企業が開発した新しいRLトレーニング手法。ユーザーの最終的な「望ましい状態」をRLターゲットとして利用する。
@@ -726,6 +729,7 @@
 - [[concepts/one-person-unicorn]] — A billion-dollar company founded and operated by a single person, enabled by AI agents and the solo-founder-stack.
 - [[concepts/warm-start-optimization]] — Latency reduction technique: pre-initialize execution environments before user explicitly requests them. Typing-triggered warm-up + filesystem snapshots.
 - [[concepts/open-model-consortium]] — The **Open Model Consortium** is a proposed organizational structure for funding and developing frontier-level open-weight AI models through shared investment from multiple companies, rather than r...
+- [[concepts/openrouter-state-of-ai-2025]] — Landmark study by OpenRouter & a16z analyzing 100T tokens of real-world LLM usage. Identified the reasoning inflection point, the Glass Slipper Effect, and the dominance of Programming and Roleplay.
 - [[concepts/open-source-ai-destruction]] — **Open Source AI Destruction** describes the emerging crisis where AI coding agents overwhelm open source maintainers with low-quality pull requests, hallucinated bug reports, and spam submissions ...
 - [[concepts/open-source-ai]] — The strategic use of open-source AI models and frameworks to achieve rapid iteration, widespread adoption, and industrial dominance through community-driven feedback loops.
 |- [[concepts/openai-agents-sdk]] — **Package** | `openai-agents>=0.14.0` |

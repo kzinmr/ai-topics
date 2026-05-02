@@ -1,3 +1,12 @@
+## [2026-05-02] OpenRouter State of AI 2025 — 100T Token LLM Usage Study
+
+- **[[concepts/openrouter-state-of-ai-2025]]** — Created concept page for the landmark study by OpenRouter & a16z analyzing 100 trillion tokens of real-world LLM usage. Covers: reasoning inflection point (Dec 5, 2024, o1 release), open vs closed source dynamics (30% OSS equilibrium, Chinese OSS rise), agentic inference shift (50%+ reasoning tokens, 4x prompt length explosion), category taxonomy (Programming 50%+ tokens, Roleplay 52% of OSS), provider specializations, economics (price inelasticity, Jevons Paradox, market archetypes), and geography (Asia 31%, doubled).
+- **[[concepts/glass-slipper-effect]]** — Created concept page for the Cinderella Glass Slipper retention framework. Foundational cohorts (~40% retention at Month 5), Boomerang Effect, cognitive inertia, and workload-model fit thesis.
+- **[[entities/openrouter]]** — Created entity page for OpenRouter, the unified API gateway for 300+ LLMs. Published the State of AI 2025 study with a16z.
+- **[[entities/malika-aubakirova]]** — Created entity page for Malika Aubakirova, a16z infrastructure researcher and co-author of the State of AI 2025 study.
+- **raw/articles/2025-12-01_openrouter-state-of-ai-2025.md** — Saved raw article.
+- Source: https://openrouter.ai/state-of-ai
+
 ## [2026-05-02] Sparse Signal Loop — stochi's Experimental Validation of MGH
 
 - **[[concepts/sparse-signal-loop]]** — Created concept page for Sparse Signal Loop experiment. Controlled 2×2 matrix test of feedback density (sparse vs dense), memory location (chat vs files), and procedure persistence (reinjection vs skill files) across LongBench-Pro and Mini SWE Agent Plus. Key findings: feedback sparsity is task-dependent, the "Judge Gap" (0.9667 Judge YES vs 0.5667 actual solve), constraint beats free-form memory.

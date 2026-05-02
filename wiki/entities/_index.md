@@ -163,7 +163,8 @@
    163|- [[lilian-weng]] — Lilian Weng is one of the most influential voices in AI research communication and a leading figure in AI safety and autonomous agent systems. She co-founded [Thinking Machines Lab](https://thinkingma
    164|- [[lilianweng]] — Lilian Weng occupies a rare position at the intersection of frontier AI research and practical safety engineering. As VP of Research at OpenAI, she leads the Preparedness team — responsible for safegu
    165|- [[lora-fine-tuning]] — LoRA (Low-Rank Adaptation) fine-tuning paradigm, including Sakana AI's Doc-to-LoRA and Text-to-LoRA hypernetwork-based adapter generation
-   166|- [[manus]] — Manusの最大の差別化はローカルブラウザ拡張によるエージェント実行。クラウドのサンドボックスではなく、ユーザーの実際のブラウザ上で動作する。
+   166|- [[malika-aubakirova]] — a16z infrastructure researcher, co-author of the OpenRouter State of AI 2025 study analyzing 100T tokens of real-world LLM usage.
+|- [[manus]] — Manusの最大の差別化はローカルブラウザ拡張によるエージェント実行。クラウドのサンドボックスではなく、ユーザーの実際のブラウザ上で動作する。
    167|- [[mario-zechner]] — Mario Zechner is one of the most distinctive voices in the tech industry — a veteran game developer, systems programmer, and civic technologist who brings an engineer's pragmatism and a craftsman's ey
    168|- [[mark-chen]] — Mark Chen is the Chief Research Officer at OpenAI, where he leads frontier research in multimodal modeling and reasoning capabilities. He is the lead author of the Codex paper (which powers GitHub Cop
    169|- [[martin-alderson]] — Martin's most viral essay documented how 13 markdown files (~156KB) in Anthropic's `knowledge-work-plugin` repository on GitHub triggered a $285 billion selloff in SaaS stocks on February 3, 2026 — ro
@@ -197,6 +198,7 @@
    197|- [[openai-cua]] — OpenAIのCUA（Computer-Using Agent）モデルは、GPT-4oのビジョン機能と強化学習を組み合わせて、スクリーンショットを見てGUIを操作するエージェント。2025年1月に「Operator」として公開され、2025年7月にChatGPTエージェントに完全統合された。
    198|- [[openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
    199|- [[openai]] — OpenAI is a leading AI research and product company known for developing the GPT series of large language models, ChatGPT, and a growing ecosystem of AI developer tools. The company has been at the fo
+|- [[openrouter]] — Unified API gateway for 300+ LLMs from multiple providers. Published the landmark State of AI 2025 study with a16z analyzing 100T tokens of real-world LLM usage.
    200|- [[concepts/openclaw]] — Open-source always-on AI assistant framework created by Peter Steinberger (former PSPDFKit CEO). Deploys autonomous agents that run continuously, self-evolve through interaction, and integrate with me
    201|- [[overreacted-io]] — Dan Abramov is a core contributor to React and a prominent voice in the frontend development community. He co-created Redux and Create React App, and has worked at Meta on the React team. His blog ove
    202|- [[paulgraham-com]] — Paul Graham is a programmer, essayist, and venture capitalist. Co-founder of Y Combinator (2005), the startup accelerator that has funded over 4,000 companies including Airbnb, Stripe, Dropbox, and Re
