@@ -4,7 +4,7 @@
 > Read this first to find relevant pages for any query.
 | Last updated: 2026-05-02 | Total pages: 774 | Full entries: 743 | Stubs: 614
 
-## Entities (373 pages)
+## Entities (374 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -21,6 +21,7 @@
 - [[entities/amazon-rivr]] — March 2026 acquisition of Zurich-based autonomous robotics startup Rivr by Amazon.
 - [[entities/andrej-karpathy]] — **Andrej Karpathy** (born October 23, 1986, Bratislava, Czechoslovakia) is a leading AI researcher and educator, widely regarded as one of the most effective communicators of deep learning concepts...
 - [[entities/andrew-nesbitt]] — **URL:** https://nesbitt.io
+- [[entities/antoine-buteau]] — **Name** | Antoine Buteau | BizOps leader, automation architecture writer. Author of 10-part Automation Series.
 - [[entities/andriy-burkov]] — **X** | @aburkov |
 - [[entities/anildash]] — **Blog** | Anil Dash (since 2000) |
 - [[entities/ankur-goyal]] — **Name** | Ankur Goyal |
@@ -402,7 +403,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (407 pages)
+## Concepts (408 pages)
 
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
@@ -486,6 +487,7 @@
 - [[concepts/anthropic-managed-agents]] — **Source:** Anthropic Claude Blog + Engineering Blog + Platform Docs (April 2026)
 - [[concepts/anthropic-openclaw-conflict]] — In April 2026, **Anthropic** blocked third-party AI agent frameworks (including **OpenClaw**) from accessing Claude models through flat-rate subscription plans (Pro/Max). This decision triggered a ...
 - [[concepts/arc-agi-2]] — **ARC-AGI-2** (Abstraction and Reasoning Corpus, 2nd iteration) is an AI benchmark developed by the ARC Prize Foundation that tests systems' ability to infer abstract transformation rules from grid...
+- [[concepts/automation-series]] — 10-part series by Antoine Buteau on automation architecture: bounded agents, HITL as design pattern, state/idempotency, observability/replay, blast radius.
 - [[concepts/attention-mechanism-variants]] — Modern transformer architectures use different attention mechanisms to optimize the trade-off between modeling capacity, compute efficiency, and context length. A prerequisite concept for concepts/...
 - [[concepts/back-of-house-multi-agent-patterns]] — 厨房のメタファーを用いたマルチエージェント・ワークフローパターン。Sarah Chieng (concepts/@milksandmatcha) と [@0xSero] によって2026年4月に提唱。
 - [[concepts/back-of-house-patterns]] — > 共著: milksandmatcha|Sarah Chieng (@MilksandMatcha) + sero|Sero (@0xSero)

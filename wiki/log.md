@@ -1,3 +1,10 @@
+## [2026-05-02] Antoine Buteau — Automation Series (10 Parts) Full Ingestion
+
+- **[[entities/antoine-buteau]]** — Created entity page for Antoine Buteau (Head of BizOps at Shakepay, previously Replit). Documented career timeline, Automation Series overview table, other series (Agency, Power, Technical Literacy, Live Player), key ideas (Three Kinds of Work, Automation Boundary, HITL as Design Pattern, Bounded Agents), and key quotes.
+- **[[concepts/automation-series]]** — Created concept page for the 10-part Automation Series. Parts table covering all entries from "Automation Is Not One Thing" through "The Automation Architecture Worksheet." Key insights synthesized: Three Kinds of Work, Confidence-Driven Action, Bounded Agents, Staged Autonomy, and more.
+- **raw/articles/2026-05-02_antoine-buteau_automation-series-1.md** through **automation-series-10.md** — Saved all 10 raw articles.
+- Sources: https://www.antoinebuteau.com (full series via sitemap)
+
 ## [2026-05-02] PyTorch GPU Memory Profiling — Memory Snapshot & Profiler Tools Ingestion
 
 - **[[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]]** — Created concept page for PyTorch v2.1+ GPU memory debugging tools. Covers Memory Snapshot (allocation trace visualization with stack traces), Memory Profiler (categorized usage: gradients/optimizer/activations), OOM staircase pattern fix (`optimizer.zero_grad(set_to_none=True)`), `record_function` labeling, and tool comparison table.
