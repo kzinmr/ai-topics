@@ -54,3 +54,4 @@ Cycle 3: (Prompt + X + Y) → AI generates even better code → ...
 - [[concepts/harness-engineering/agentic-workflows/code-hoarding]] — 知識の蓄積パターン
 - [[concepts/agentic-engineering]] — Agentic Engineering全体像
 - [[concepts/harness-engineering/agentic-workflows/cognitive-debt]] — 認知負債（Compound Loopで返済）
+- [[concepts/compound-engineering-every]] — Every社のCompound Engineering（ビジネス・PM視点の拡張版）

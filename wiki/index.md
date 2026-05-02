@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-01 | Total pages: 750 | Full entries: 719 | Stubs: 615
+> Last updated: 2026-05-02 | Total pages: 755 | Full entries: 724 | Stubs: 614
 
-## Entities (362 pages)
+## Entities (365 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -79,7 +79,7 @@
 - [[entities/demis-hassabis]] — **Role** | CEO, Google DeepMind; Co-founder, DeepMind |
 - [[entities/derek-thompson]] — **Blog** | Derek Thompson on Substack |
 - [[entities/descript-audio-codec]] — **DAC** | High-fidelity universal neural audio codec by Descript. 44.1 kHz, 8 kbps, ~90× compression, single model for speech/music/environment. Improved RVQGAN.
-- [[entities/dialloibu]] — **Blog** | idiallo.com |
+|- [[entities/dialloibu]] — **Ibrahim Diallo** (idiallo.com) — Software developer and technical writer known for reflective writing on AI-assisted workflows, LLM-assisted writing challenges, and the tension between AI efficiency and authentic human voice. Advocates for multi-stage writing process using AI for structure then human editing for voice.
 - [[entities/dji]] — Chinese drone manufacturer with an "iron grip" on the global drone market. Despite U.S. regulatory efforts, DJI's market dominance remains largely intact.
 - [[entities/dorialexander]] — **X/Twitter** | @Dorialexander (~16K followers, joined March 2011) |
 - [[entities/doug-turnbull]] — **X/Twitter** | @softwaredoug |
@@ -106,6 +106,7 @@
 - [[entities/ethan-mollick]] — **URL:** https://www.oneusefulthing.org
 - [[entities/eugene-yan]] — **URL:** https://eugeneyan.com
 - [[entities/eugeneyan]] — **X** | @eugeneyan |
+- [[entities/every-inc]] — AI-native media & software company. Publishers of the daily newsletter, creators of Compound Engineering plugin (7K+ stars). 5 products (Spiral, Cora, Sparkle, Monologue, Lex) with single-person teams. CEO: Dan Shipper.
 - [[entities/evanhahn-com]] — **Blog** | evanhahn.com |
 - [[entities/fabiensanglard-net]] — **Blog** | fabiensanglard.net |
 - [[entities/farhan-thawar]] — Farhan Thawar is a technology writer and commentator known for viral takes on AI industry trends.
@@ -171,6 +172,7 @@
 - [[entities/k0nserv]] — **Blog** | hugotunius.se |
 - [[entities/karri-saarinen]] — **X** | @karrisaarinen |
 - [[entities/khe-hy]] — Khe Hy is a writer and thinker focused on organizational AI adoption strategies.
+- [[entities/kieran-klaassen]] — General Manager of Cora, Every's AI email assistant. Author of "Compound Engineering: The Definitive Guide", creator of the compound-engineering-plugin (7K+ stars).
 - [[entities/koylan-ai]] — **URL:** https://muratcankoylan.com
 - [[entities/krebsonsecurity-com]] — **URL:** https://krebsonsecurity.com
 - [[entities/lance-martin]] — **X** | @RLanceMartin |
@@ -183,6 +185,7 @@
 - [[entities/lilianweng]] — **X** | @lilianweng |
 - [[entities/lmsys-org]] — **URL** | https://lmsys.org |
 - [[entities/lora-fine-tuning]] — LoRA (Low-Rank Adaptation) fine-tuning paradigm, including Sakana AI's Doc-to-LoRA and Text-to-LoRA hypernetwork-based adapter generation
+- [[entities/marcus-moretti]] — General Manager of Spiral (Every's AI writing partner). Author of "A Guide to Agent-native Product Management", creator of ce:strategy/ce:product-pulse skills.
 - [[entities/mahadk]] — テクニカルライター。AI、Web開発、LLMアプリケーション。mahadk.com
 - [[entities/manus]] — **Manus**は、元Alibaba/ByteDanceエンジニアらが創業した中国系スタートアップ（Monica.im）が開発した汎用AIエージェント。2025年3月のバイラルデモで注目され、ブラウザ操作・コード実行・ファイル作成を仮想コンピュータ上で自律実行できる。2025年11月には**Browser Operator**機能をリリース、2026年には**Metaに買収**された。
 - [[entities/mario-zechner]] — **X** | @badlogicgames |
@@ -391,7 +394,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (400 pages)
+## Concepts (402 pages)
 
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
@@ -412,8 +415,9 @@
 - [[concepts/db9-filesystem-sql]] — PostgreSQL + fs9ファイルシステム拡張を用いたエージェントワークフローアーキテクチャ。アーティファクトはファイル、メタデータはSQL
 |- [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.
 |- [[concepts/agent-serverless]] — Serverless deployment pattern for AI agents with built-in SaaS integration, permissions, security, and log persistence tiers. Enterprise monetization via persistent logs and audit trails.
-||- [[concepts/agent-identity-verification]]
-|- [[concepts/agent-loop-orchestration]] — **Agent Loop Orchestration** is the execution loop architecture where LLM agents autonomously propose actions, a platform executes them, and results feed back into the model. The loop consists of: Think → Act → Perceive → Repeat. Core design decisions include tool availability, human-in-the-loop checkpoints, loop termination conditions, and state persistence across iterations.
+|- [[concepts/agent-identity-verification]]
+|- [[concepts/agent-loop-orchestration]]
+|- [[concepts/agent-native-product-management]] — AIエージェント（特にClaude Code, Codex）をPM業務の主要インターフェースとして活用する手法。ce:strategy（戦略策定）とce:product-pulse（自動ヘルスレポート）の2スキルを中核に、80/20計画重視シフト。[[entities/every-inc|Every社]]のMarcus Morettiが提唱。
 |- [[concepts/agent-orchestration-frameworks]] — Comparative analysis of major AI agent orchestration frameworks as of 2026: LangGraph, CrewAI, AutoGen, Semantic Kernel, Pydantic AI, and OpenAI Agents SDK. Frameworks differ on multi-agent topology (linear DAG vs graph-based vs hierarchical), state management, and human-in-the-loop support.
 |- [[concepts/agent-sandboxing]]
 |- [[concepts/agent-sandboxing-patterns]] — Browser Use's production agent sandboxing architecture (millions of concurrent web agents). Two patterns: isolate the tool (simpler) vs. isolate the agent (control plane architecture with zero-secret sandboxes, scalable independently). Core philosophy: "your agent should have nothing worth stealing and nothing worth preserving."
@@ -1031,7 +1035,8 @@
 - [[concepts/compiler-construction]] — > **TODO**: Enrich this page.
 - [[concepts/compiler-design]] — > **TODO**: Enrich this page.
 - [[concepts/compiler-explorer]] — > **TODO**: Enrich this page.
-- [[concepts/compound-engineering-loop]] — > **TODO**: Enrich this page.
+- [[concepts/compound-engineering-every]] — Every社のCompound Engineering。各単位の作業が将来の作業を容易にするAIネイティブ開発哲学。ce:strategy/ce:product-pulseなどのプラグイン技術。[[entities/kieran-klaassen|Kieran Klaassen]]提唱。
+- [[concepts/compound-engineering-loop]] — > **TODO**: Redirect to [[concepts/compound-engineering-every]] および [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]]
 - [[concepts/computer-architecture]] — > **TODO**: Enrich this page.
 - [[concepts/computer-science-education]] — > **TODO**: Enrich this page.
 - [[concepts/computer-using-agent]] — > **TODO**: Enrich this page.

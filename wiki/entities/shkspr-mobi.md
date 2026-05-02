@@ -146,6 +146,22 @@ Eden's observation about companies routing customers to AI chatbots during peak 
 
 This is Eden at his most pragmatic: he's not anti-AI, he's anti-bad-design. If AI chatbots were solving the underlying problem (insufficient human support capacity), they'd be useful. But they're being used to mask the problem, not fix it.
 
+### AI Model Releases & Security Implications (2026)
+
+In April 2026, Eden wrote ["Does Mythos mean you need to shut down your Open Source AI?"](https://shkspr.mobi/blog/2026/04/does-mythos-mean-you-need-to-shut-down-your-ope--021b2763) analyzing the [[concepts/claude-mythos|Claude Mythos]] release and its implications for open-source AI hosting. He concluded that Mythos demonstrated real cyber-capability risks but argued against panic-driven shutdowns of open-source AI infrastructure.
+
+### NHS Goes To War Against Open Source (May 2026)
+
+In May 2026, Eden published a detailed critique of the NHS's decision to effectively ban open-source software from its procurement pipeline. The piece documented how the NHS's new vendor requirements — ostensibly about security — functionally excluded open-source projects that cannot provide formal compliance documentation or indemnification insurance.
+
+Key arguments:
+- **Open-source software is not inherently less secure** — in fact, the transparency enables faster vulnerability discovery and patching
+- **The real issue is procurement process, not technical capability** — NHS vendors can provide formal SLAs, compliance certifications, and legal indemnification that open-source maintainers cannot
+- **This creates a perverse incentive**: vendors wrap open-source software in proprietary packaging to meet procurement requirements, adding cost without adding value
+- **The NHS's own open-source contributions** (like the NHS App's frontend framework) become collateral damage
+
+Eden's analysis connects to his broader themes: **standardization enables participation**, and when procurement processes favor closed systems, the ecosystem suffers. He drew parallels to his earlier work on open API decline and government data transparency.
+
 ### Regulatory Data Transparency
 
 Eden's experience trying to access historic energy price cap data from Ofgem reveals a structural problem in government data publication:
@@ -182,7 +198,7 @@ Eden's response is typically pragmatic: file the FOI, get the data, publish the 
 
 **2025:** Published "Open Data Man" essay on personal data disclosure ethics at Open Data Camp. Wrote "How Can Governments Pay Open Source Maintainers?" based on UK Government experience. Continued development of decentralized bot infrastructure.
 
-**2026:** Published "Are there any open APIs left?" documenting a decade of API ecosystem decline. Reviewed *Diversifying Open Source* by Paloma Oliveira, citing his own 2014 license critique. Identified cross-browser Unicode rendering bugs affecting accessibility. Advocated for lightweight, minimal approaches to decentralized infrastructure.
+**2026:** Published "Are there any open APIs left?" documenting a decade of API ecosystem decline. Reviewed *Diversifying Open Source* by Paloma Oliveira, citing his own 2014 license critique. Identified cross-browser Unicode rendering bugs affecting accessibility. Advocated for lightweight, minimal approaches to decentralized infrastructure. Published "Does Mythos mean you need to shut down your Open Source AI?" analyzing Claude Mythos cyber-capability implications. Published "NHS Goes To War Against Open Source" critiquing procurement processes that functionally exclude open-source software.
 
 ---
 
@@ -236,3 +252,4 @@ Freedom of Information — Process Eden uses to access government data
 - shkspr.mobi--blog-2026-04-theatre-review-hadestown--44eda2ab
 - shkspr.mobi--blog-2026-04-why-is-it-so-hard-to-passively-stalk-my-friends--94b8e163
 - shkspr.mobi--blog-2026-04-you-can-parse-an-env-file-as-an-ini-with-php-bu--c596e30b
+- shkspr.mobi--blog-2026-05-nhs-goes-to-war-against-open-source--6dd55203

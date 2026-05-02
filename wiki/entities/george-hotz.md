@@ -163,6 +163,17 @@ Hotz believes compute should be a commodity, not a moat. tiny corp's explicit go
 
 Unlike many AI researchers, Hotz is skeptical of AI safety concerns. He views most AI safety research as premature, and argues the real risk is **concentration of AI power** in a few companies rather than superintelligence. He advocates for open-source AI as the best defense against centralized control. His 2026 blog posts argue that "Closed Source AI = Neofeudalism" and that "OpenAI is nothing without its people."
 
+### AI Will Create Jobs — Jevons Paradox (May 2026)
+
+In his May 2026 blog post ["AI will create jobs"](https://geohot.github.io//blog/jekyll/update/2026/05/01/ai-will-create-jobs.html), Hotz made several interconnected arguments:
+
+- **AI and immigration are fundamentally the same phenomenon**: "New people showing up" increases total economic activity. Both expand the labor supply, which critics frame as wage competition, but which actually grows the overall economic pie.
+- **[[concepts/jevons-paradox|Jevons Paradox]] applied to AI**: "If we make something more efficient, we end up using more of it." He cited the Facebook aphorism: "if you make the site 10% faster, people spend 5% more total time on it." By extension, making labor 10x more efficient via AI doesn't reduce total work — it increases demand for work.
+- **Protectionism is for losers**: Just as anti-immigration arguments focus on wage competition rather than pie growth, AI doomerism focuses on displacement rather than creation. The key design challenge is ensuring inequality stays in check "not by redistribution but by design."
+- **"There will be more to do than ever before"**: Hotz's conclusion is that AI agents, like immigrants, create new categories of work that are currently unimaginable, and that total employment will increase, not decrease.
+
+This post connects to his broader [[concepts/bitter-lesson|Bitter Lesson]] philosophy — that leveraging raw computation (and by extension, AI agents) beats hand-optimization — and extends it into labor economics.
+
 ---
 
 ## Key Writings & Tweets

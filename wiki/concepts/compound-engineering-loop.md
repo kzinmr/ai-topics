@@ -4,21 +4,19 @@ type: concept
 aliases:
   - compound-engineering-loop
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-05-02
 tags:
   - concept
-status: stub
-
+  - agentic-engineering
+status: redirect
 ---
 
 # Compound Engineering Loop
 
-> **TODO**: Enrich this page.
+This page consolidates two related concepts:
 
-## Overview
+- **[[concepts/compound-engineering-every|Compound Engineering (Every Inc.)]]** — Business-level philosophy by [[entities/every-inc|Every Inc.]]: each unit of work makes future work easier. Includes installable PM/engineering skills (ce:strategy, ce:product-pulse). By [[entities/kieran-klaassen|Kieran Klaassen]].
 
-Stub page for Compound Engineering Loop.
+- **[[concepts/harness-engineering/agentic-workflows/compound-engineering-loop|Compound Engineering Loop (Simon Willison)]]** — Code-level feedback cycle: Write → Review → Improve → Save → Repeat.
 
-## Related Pages
-
-- [[concepts/_index]]
+See each page for the full treatment.

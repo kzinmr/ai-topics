@@ -130,9 +130,11 @@ In his "[Programming Beliefs as of July 2024](https://evanhahn.com/programming-b
 - [[concepts/web-security]] — HTTP security headers, middleware, defense-in-depth
 - [[concepts/error-handling]] — Expected vs. unexpected errors, language design
 - [[concepts/software-craftsmanship]] — Code quality, pragmatism, reading code
--  — Maintaining widely-depended-upon packages
--  — Nonprofit publisher software where Evan works
--  — human.json and web-native identity systems
+- [[concepts/translategemma]] — Offline CLI translation demonstrated by Evan
+- [[concepts/open-source-maintainership]] — Maintaining widely-depended-upon packages
+- [[entities/ghost-cms]] — Nonprofit publisher software where Evan works
+- [[concepts/human-json]] — human.json and web-native identity systems
+- [[concepts/ai-writing-workflow]] — Evan's LLM-assisted article editing process
 ## Sources
 
 - [Evan Hahn's Blog](https://evanhahn.com) (2011–present)
@@ -155,4 +157,5 @@ In his "[Programming Beliefs as of July 2024](https://evanhahn.com/programming-b
 - evanhahn.com--llm-eliza--79a6e181
 - evanhahn.com--notes-from-february-2026--b116241b
 - evanhahn.com--notes-from-march-2026--1c9c8967
+- evanhahn.com--offline-cli-translation-with-translategemma-and-ollama--3b989f49
 - evanhahn.com--the-two-kinds-of-error--6874a492

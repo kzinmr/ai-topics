@@ -1,3 +1,23 @@
+## [2026-05-02] Every Guide — Agent-native Product Management + Compound Engineering
+
+- Saved raw article: `raw/articles/2026-05-02_guide-to-agent-native-product-management.md` — Every社のガイド。Marcus Moretti（Spiral GM）が提唱するエージェントネイティブPM。ce:strategy（戦略策定）とce:product-pulse（自動ヘルスレポート）の2スキルを中核に、MCP経由でPostHog/Stripe/Datadogを統合。80/20計画重視シフト。
+
+- Created [[entities/every-inc]] — AI-native media & software company (CEO Dan Shipper). 5 products with single-person teams. Compound Engineering plugin (7K+ stars).
+
+- Created [[entities/marcus-moretti]] — GM of Spiral, author of Agent-native PM guide.
+
+- Created [[entities/kieran-klaassen]] — GM of Cora, author of Compound Engineering: The Definitive Guide.
+
+- Created [[concepts/agent-native-product-management]] — PMフレームワーク: 会話が仕事、80/20計画シフト、ce:strategy/ce:product-pulseスキル、エージェント管理バックログ。
+
+- Created [[concepts/compound-engineering-every]] — Every社版Compound Engineering（各作業が将来を容易化）。Simon Willison版（コードレベルの反復改善ループ）とは異なる。
+
+- Updated [[concepts/compound-engineering-loop]] — Stub→redirect（compound-engineering-every および Simon Willison版への誘導ページに変更）。
+
+- Updated [[concepts/harness-engineering/agentic-workflows/compound-engineering-loop]] — Simon Willison版にEvery社版への相互参照を追加。
+
+- Updated [[index]] — Added 3 entities + 2 concepts. Total: 750→755. Reclassified 1 stub.
+
 ## [2026-05-02] YouTube Video — "Why 2026 is The Year of Agentic Search" (Doug Turnbull & Jo Kristian Bergum)
 
 - Saved raw article: `raw/articles/2026-05-01_doug-turnbull-2026-is-the-year-of-agentic-search.md` — 65-min fireside chat covering four pillars: LLM Query Understanding at scale, Autoresearch (agents writing ranking code), Agentic Search Harnesses (feedback loops for dumb retrievers), and LLM-as-a-Judge for principled search evaluation.
