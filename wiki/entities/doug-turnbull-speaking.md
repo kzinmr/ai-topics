@@ -3,7 +3,7 @@ title: Doug Turnbull - Speaking & Community
 type: entity-sub
 parent: doug-turnbull
 created: 2026-04-10
-updated: 2026-04-30
+updated: 2026-05-02
 tags:
   - person
   - speaking
@@ -22,9 +22,10 @@ Turnbull is a regular speaker at search industry conferences:
 
 - **\"Rag is the What. Agentic search is the How.\"** (April 2026): 54-minute talk tracking the paradigm shift from classical RAG to agentic search — arguing that complexity moves from retrieval to the agent+harness, and that "dumb retrievers" (BM25, grep) work best with agent reasoning. Explicitly connects to SID-1, semantic grep, and scaffold+tool design. [[raw/articles/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how]]
 
-- **Berlin Buzzwords / Haystack EU** (2024): "Learning to Rank for Reddit Search: A Project Retro" with Charles Njoroge
+- **\"Why 2026 is The Year of Agentic Search\"** (May 2026, YouTube): 65-minute fireside chat with Jo Kristian Bergum (Vespa.ai) on the four pillars of agentic search — LLM Query Understanding at scale, Autoresearch (agents writing ranking code), Agentic Search Harnesses (feedback loops that make dumb retrievers smart), and LLM-as-a-Judge for principled evaluation. References Doug's Maven course starting May 18. [[raw/articles/2026-05-01_doug-turnbull-2026-is-the-year-of-agentic-search]]
 
 - **Berlin Buzzwords / Haystack EU** (2024): "Learning to Rank for Reddit Search: A Project Retro" with Charles Njoroge
+
 - **Elastic{ON}16** (2016): "The Ghost in the Search Machine"
 - **MICES 2024** (Mix Camp E-Commerce): "Planning of E-Commerce Relevance Work"
 - **Relevance Cornucopia** workshops: Intensive small-group training on "Think Like a Relevance Engineer" and "Hello LTR"

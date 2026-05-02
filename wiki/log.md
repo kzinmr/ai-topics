@@ -1,3 +1,9 @@
+## [2026-05-02] YouTube Video — "Why 2026 is The Year of Agentic Search" (Doug Turnbull & Jo Kristian Bergum)
+
+- Saved raw article: `raw/articles/2026-05-01_doug-turnbull-2026-is-the-year-of-agentic-search.md` — 65-min fireside chat covering four pillars: LLM Query Understanding at scale, Autoresearch (agents writing ranking code), Agentic Search Harnesses (feedback loops for dumb retrievers), and LLM-as-a-Judge for principled search evaluation.
+- Updated [[entities/doug-turnbull-speaking]] — Added talk to conference talks list (removed duplicate Berlin Buzzwords entry).
+- Updated [[concepts/agentic-search]] — Added source with summary of four pillars.
+
 ## [2026-05-01] X Bookmarks Ingest — OpenAI WebSockets, LangChain Harness Engineering, Meta Autodata
 
 - Saved raw articles:
