@@ -143,11 +143,19 @@ A stripped-down coding agent built around four components:
 - **pi-tui** — Terminal UI with differential rendering and synchronized output
 - **pi-coding-agent** — CLI with session management, AGENTS.md context, custom themes
 
+As discussed on Syntax.fm #976 (Feb 2026), Pi embodies Zechner's "Bash is all you need" philosophy — modern LLMs like Claude 3.7 are extensively trained on bash commands, so Pi provides just 4 tools (`read`, `write`, `edit`, `bash`) and a `while` loop. Key podcast revelations:
+- Pi is the **underlying technology for OpenClaw** (Cloudbot/Moltbot)
+- Pi's **steering queue** lets users correct the agent mid-execution on long-running tasks
+- **Self-modifying skills** — the agent can write new tools and Pi hot-reloads them without restart (Armin: "My browser skill changes every three days because there is a new cookie banner... it can fix itself")
+- Pi's approach to memory: **"Code is truth"** — no complex RAG, just a folder structure map and file reads
+- Zechner's **MAM (Master of Mischief)** — a Slack bot with JSONL log + `jq` for "infinite memory"
+
 ### AMS Berufsinfomat Replica (2024)
 A ~400-line RAG chatbot that replicated the Austrian government's job information system at a fraction of the cost. Demonstrated that the government's €464,000 system could be built in 2 nights on a €30/month server.
 
 ## Blog / Recent Posts
 
+- **Syntax.fm #976 — "Pi - The AI Harness That Powers OpenClaw"** (Feb 4, 2026) — Podcast appearance with Armin Ronacher discussing Pi's architecture, self-modifying skills, steering queue, and the "Bash is all you need" philosophy
 - **"I've sold out"** (April 8, 2026) — Personal reflection on selling equity or compromising principles for financial security. Candid discussion of the tension between idealism and pragmatism in software development.
 - **"Thoughts on slowing the fuck down"** (March 25, 2026) — Essay on the importance of deliberate, unhurried development. Arguments against the startup hustle culture and in favor of sustainable, long-term building.
 - **"What I learned building an opinionated and minimal coding agent"** (November 30, 2025) — Deep technical analysis of the pi coding agent project. Covers provider abstraction realities, TUI design choices, agent architecture, and lessons from building a minimal tool in a bloated ecosystem.

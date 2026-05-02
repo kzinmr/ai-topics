@@ -24,7 +24,8 @@ related: [[concepts/model-context-protocol-mcp]], [[entities/salt-security]], [[
 - CoSAI (Coalition for Secure AI) released an extensive taxonomy for MCP security in January 2026
 
 ### 2. Prompt Injection
-- **Indirect prompt injection** via web content: agent reads compromised pages that inject malicious instructions
+| **Indirect prompt injection** via web content: agent reads compromised pages that inject malicious instructions
+| **The Camel Paper approach**: A theoretical defense using two LLMs — one for policy decisions and one for data retrieval. However, this often breaks the agent's utility because it can no longer make decisions based on the data it reads. As discussed in the Pi podcast (Syntax #976): "there is no foolproof way to differentiate between a user's instruction and malicious data within the same context window."
 - Microsoft Security published guidance on protecting against indirect prompt injection attacks in MCP (April 2025)
 - Google's Project Glasswing / Claude Mythos offers defensive research into agent-secure architectures
 

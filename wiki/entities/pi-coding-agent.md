@@ -99,6 +99,56 @@ Notable community skills include `liteparse` (doc parsing for image-only models)
 - Patrick Loeber, "How to run a local coding agent with Gemma 4 and Pi," patloeber.com (Apr 2026)
 - [GitHub repository](https://github.com/badlogic/pi-mono)
 
+## Podcast: Syntax #976 (Feb 2026)
+
+The Syntax.fm episode "Pi - The AI Harness That Powers OpenClaw" (with Armin Ronacher and Mario Zechner, hosts Wes Bos & Scott Tolinski) provides the most comprehensive public discussion of Pi's design philosophy and architecture.
+
+### Pi's Core Definition
+
+> *"Pi is a while loop that calls an LLM with four tools. The LLM gives back tool calls or not, and that's it. It tries to be minimal because it turns out that the current generation of LLMs are really good at just reading, writing, editing files, and calling bash."* — **Mario Zechner**
+
+### "Bash is All You Need"
+
+The podcast's central thesis: modern LLMs (especially Claude 3.7/Sonnet) are extensively trained on bash commands and shell usage. Rather than building complex agent frameworks with custom tools for every scenario, Pi provides a minimal environment where the agent can write its own scripts. This makes Pi the underlying technology for **OpenClaw** (Cloudbot/Moltbot).
+
+### Steering Queue
+
+Pi includes a unique **steering queue** mechanism — users can send messages to the agent *while* it is executing a long-running task to correct its course mid-execution. This addresses the "agent drift" problem where an agent goes in the wrong direction and the user has to wait for the session to finish before correcting.
+
+### Self-Modifying Skills (Hot Reloading)
+
+A key Pi innovation: the agent can write new tools or modify existing skills during a session, and Pi loads them immediately without restart:
+
+> *"My browser skill changes effectively every three days because there is a new cookie banner I have to dismiss... it can fix itself because it has everything within its control."* — **Armin Ronacher**
+
+### MCP Critique vs Pi Approach
+
+The podcast critiques MCP on two grounds:
+1. **Not composable** — Data must pass through the LLM's context window to move between tools, which is wasteful and leads to context exhaustion
+2. **Rigid** — MCP servers often require a full agent restart to update
+
+Pi's alternative: let the agent write and modify its own scripts locally. Instead of loading a massive database into context, the agent writes a script (e.g., `jq`) to filter data locally and only returns relevant bits to the LLM.
+
+### Prompt Injection Concerns
+
+The podcast addresses prompt injection as an unresolved problem for autonomous agents. If an agent has tools to search the web and read local files, a malicious website can include hidden exfiltration instructions. The theoretical "Camel Paper" fix (two LLMs: one for policy, one for data) often breaks utility. Current conclusion: no foolproof way to separate user instruction from malicious data in the same context window.
+
+### "Code Is Truth" Memory Philosophy
+
+Mario argues against complex RAG/embedding systems for coding. His approach: give the agent a simple map of the folder structure and let it read files as needed. **"Code is truth."**
+
+### MAM: Master of Mischief
+
+Mario's personal Slack bot that uses `jq` on a JSONL log of all channel history to provide "infinite memory" — a practical demonstration of Pi's philosophy applied to chatbot memory.
+
+## Sources
+
+- Patrick Loeber, "How to run a local coding agent with Gemma 4 and Pi," patloeber.com (Apr 2026)
+- [GitHub repository](https://github.com/badlogic/pi-mono)
+- Syntax.fm #976 — "Pi - The AI Harness That Powers OpenClaw" (Feb 4, 2026)
+  - [Transcript](https://syntax.fm/show/976/pi-the-ai-harness-that-powers-openclaw-w-armin-ronacher-and-mario-zechner/transcript)
+  - Raw: raw/articles/2026-02-04_pi-syntax-fm-podcast.md
+
 ## See Also
 
 - [[gemma-4]] — Open-weight MoE model commonly used with pi for local coding agents.
@@ -106,3 +156,4 @@ Notable community skills include `liteparse` (doc parsing for image-only models)
 - [[claude-code]] — Anthropic's coding agent that pi positions as an alternative to.
 - [[coding-agents]] — AI agents for software engineering tasks and tooling.
 - [[lmstudio]] — Local inference server used to run models with pi.
+- [[openclaw]] — Open-source agent framework built on top of Pi.

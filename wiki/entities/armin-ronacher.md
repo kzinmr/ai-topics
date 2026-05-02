@@ -50,6 +50,7 @@ Ronacher's technical philosophy — simplicity, developer-first design, and prag
 | 2026-01-14 | Ported **MiniJinja** from Rust to Go using AI agents (Opus 4.5 + GPT-5.2 Codex) in ~45 minutes of active human time; the agent ran for 10 hours, 2,698 messages, 1,386 tool calls, $60 API cost |
 | 2026-01-27 | Announced founding of **Earendil** with co-founder Colin; incorporated as a PBC (Public Benefit Corporation) |
 | 2026-04-08 | **Earendil** acquired **Pi** (Mario Zechner's minimal coding agent); announced **Lefos**, a new kind of entity designed to be both capable and trustworthy |
+| 2026-02-04 | Appeared on Syntax.fm #976 discussing Pi's architecture, the "Bash is all you need" philosophy, self-modifying skills with hot reloading, and prompt injection challenges |
 | 2026-04-11 | Published "**The Center Has a Bias**" — analysis of how discussions about AI coding agents are polarized, arguing that the "center" is biased toward engagement because crossing the threshold of use selects for curiosity |
 | 2026 | Flask reaches 71k+ GitHub stars with 70M+ monthly PyPI downloads |
 

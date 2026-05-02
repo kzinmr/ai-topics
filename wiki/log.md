@@ -1,3 +1,11 @@
+## [2026-05-02] Pi Podcast (Syntax #976) — Entity Enrichment & Concept Update
+
+- **[[entities/pi-coding-agent]]** — Enriched with podcast insights: Pi's core definition ("a while loop with 4 tools"), "Bash is all you need" philosophy, steering queue, self-modifying skills with hot reloading, MCP critique vs Pi approach, prompt injection concerns, "Code is truth" memory philosophy, MAM (Master of Mischief) Slack bot.
+- **[[entities/mario-zechner]]** — Enriched: Syntax.fm podcast appearance added to Recent Posts, Pi podcast revelations added to pi section (OpenClaw connection, steering queue, self-modifying skills).
+- **[[entities/armin-ronacher]]** — Enriched: Syntax.fm #976 appearance added to timeline (Feb 4, 2026).
+- **[[concepts/agentic-security]]** — Updated: Added "Camel Paper" section documenting the two-LLM approach to prompt injection defense and its practical limitations, with quote from the Pi podcast.
+- Source: `raw/articles/2026-02-04_pi-syntax-fm-podcast.md` | https://syntax.fm/show/976/pi-the-ai-harness-that-powers-openclaw-w-armin-ronacher-and-mario-zechner/transcript
+
 ## [2026-05-02] Simulacrum of Knowledge Work — Concept & Entity Ingestion
 
 - **[[concepts/simulacrum-of-knowledge-work]]** — Created concept page. Critical analysis by @onehappyfellow of how LLMs broke the proxy measures that knowledge work relies on for quality assessment. Covers proxy measures, incentive alignment crisis, Goodhart's Law recursive problem, and the "tokens-spent leaderboard" meta-commentary.
