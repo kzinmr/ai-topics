@@ -161,6 +161,22 @@ Core insight: When task structure is deterministic and bounded, giving the model
 
 Source: ["Recursive by Design"](https://theharness.blog/blog/recursive-by-design/) (The Harness Blog, April 2026)
 
+### λ-RLM: Typed Functional Runtime (Huawei)
+
+**λ-RLM** (Amartya Roy et al., Huawei Noah's Ark Lab, arXiv:2603.20105, March 2026) replaces the open-ended REPL control flow with a **typed functional runtime grounded in λ-calculus**. Unlike standard RLM (LLM writes Python control code) and Lambda-RLM (template-driven pipeline), λ-RLM uses a fixed-point combinator over a library of pre-verified operators (SPLIT, MAP, FILTER, REDUCE, CROSS).
+
+| Aspect | λ-RLM | Lambda-RLM |
+|--------|-------|------------|
+| **Control model** | Y-combinator fixed-point over combinators | Deterministic pipeline (Plan → Extract → Generate) |
+| **Formal proofs** | Termination, cost bounds, optimal partition | None |
+| **Optimal split** | k*=2 (binary splitting, proven) | Template-driven |
+| **Empirical scope** | 9 models, 4 benchmarks | Single domain (AEC), single model |
+| **Key metric** | +21.9pp accuracy, 4.1× faster | 14× token reduction, +8.4% quality |
+
+These two variants independently arrived at the same critique (open-ended REPL is wasteful) from opposite directions — λ-RLM from formal theory, Lambda-RLM from production practice. See [[concepts/typed-rlm]] for full analysis and [[concepts/typed-rlm#Comparison with Lambda-RLM (Galanos)|detailed comparison]].
+
+Source: [arXiv:2603.20105](https://arxiv.org/abs/2603.20105) (Huawei Noah's Ark Lab, March 2026, arXiv-only)
+
 ## Adoption & Ecosystem
 
 - **Prime Intellect:** Implemented RLMEnv in their verifiers stack; ablation with GPT-5-mini and INTELLECT-3-MoE
@@ -302,7 +318,7 @@ Full analysis in [[concepts/dspy-rlm#RLM × Programmatic Tool Calling: 補完す
 - **[[concepts/code-mode]]** — Specific implementations (Cloudflare V8, Pydantic Monty) of the code-execution-over-tool-calling pattern
 - **[[concepts/context-folding]]** — Parallel approach: branch/return with summarization
 - **[[concepts/inference-time-scaling]]** — RLM scales computation, not parameters
-- **[[concepts/agentic-search]]** — Externalized processing paradigm; Level 3 connects to RLM's approach
+- **[[concepts/typed-rlm]]** — Typed functional runtime variant (Huawei); formal proofs for termination, cost bounds, optimal partition
 - **[[shunyu-yao]]** — "The Second Half" framework; RL generalization thesis
 - **[[alex-zhang]]** — Primary author, RLM creator
 - **[[omar-khattab]]** — Co-author, DSPy creator, ColBERT lineage

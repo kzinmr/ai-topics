@@ -1,3 +1,11 @@
+## [2026-05-02] lambda-RLM (Typed Recursive Reasoning) — Huawei Paper Ingestion
+
+- **[[concepts/typed-rlm]]** — Created concept page for lambda-RLM (typed functional runtime, Huawei Noah's Ark Lab). Formal guarantees (termination, cost bounds, optimal partition k*=2), Y-combinator fixed-point over SPLIT/MAP/REDUCE combinators. 29/36 wins, +21.9pp accuracy, 4.1x faster. arXiv:2603.20105 (arXiv-only, ingested per user request).
+- **[[concepts/lambda-rlm]]** — Updated with disambiguation warning distinguishing from Huawei's lambda-RLM. Added [[concepts/typed-rlm]] to related.
+- **[[concepts/rlm-recursive-language-models]]** — Added lambda-RLM variant section with comparison table. Updated Related Concepts.
+- **raw/papers/2026-03-20_2603.20105_y-combinator-for-llms.md** — Saved raw paper summary with blocked reason: no_peer_review.
+- Source: `raw/papers/2026-03-20_2603.20105_y-combinator-for-llms.md` | https://arxiv.org/abs/2603.20105
+
 ## [2026-05-02] Recursive by Design — Lambda-RLM, Theodoros Galanos & The Harness Blog Ingestion
 
 - **[[concepts/lambda-rlm]]** — Created concept page for Lambda-RLM, a deterministic pipeline variant of RLM for the AEC domain. Plan (0 LLM calls) → Extract+Review → Generate. 14x token reduction, +8.4% quality improvement over open REPL.

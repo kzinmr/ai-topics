@@ -13,9 +13,11 @@ aliases:
   - Lambda Recursive Language Model
   - Lambda RLM
   - deterministic RLM pipeline
+  - Galanos Lambda-RLM
 related:
   - [[concepts/rlm-recursive-language-models]]
   - [[concepts/recursive-language-models]]
+  - [[concepts/typed-rlm]]
   - [[concepts/harness-engineering]]
   - [[entities/theodoros-galanos]]
   - [[entities/the-harness-blog]]
@@ -25,6 +27,8 @@ sources:
 ---
 
 # Lambda-RLM
+
+> **⚠️ Name Disambiguation:** This page describes **Lambda-RLM** (deterministic pipeline, Theodoros Galanos, The Harness Blog, AEC domain). Do not confuse with **[[concepts/typed-rlm|λ-RLM]]** (typed functional runtime, Amartya Roy et al., Huawei Noah's Ark Lab, arXiv:2603.20105). Despite similar names, they are independent works by different authors. See [[concepts/typed-rlm#Comparison with Lambda-RLM (Galanos)|detailed comparison]].
 
 **Lambda-RLM** is a deterministic pipeline architecture for Recursive Language Models, introduced by [[entities/theodoros-galanos|Theodoros Galanos]] in his blog post "Recursive by Design" (April 2026). Instead of letting the model decide how to decompose work in an open-ended REPL, Lambda-RLM computes the task structure upfront as a dependency tree — the "task is the plan" approach.
 

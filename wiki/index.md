@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-02 | Total pages: 773 | Full entries: 742 | Stubs: 614
+| Last updated: 2026-05-02 | Total pages: 774 | Full entries: 743 | Stubs: 614
 
 ## Entities (373 pages)
 
@@ -1490,6 +1490,7 @@
 - [[concepts/transformer-architecture]] — > **TODO**: Enrich this page.
 - [[concepts/transformers-library]] — > **TODO**: Enrich this page.
 - [[concepts/tree-of-thoughts]] — > **TODO**: Enrich this page.
+- [[concepts/typed-rlm]] — lambda-RLM: Typed functional runtime RLM variant (Huawei). Formal proofs for termination, cost bounds, optimal partition. 29/36 wins, +21.9pp accuracy, 4.1x faster.
 - [[concepts/trey-grainger]] — > **TODO**: Enrich this page.
 - [[concepts/trl-transformer-reinforcement-learning]] — > **TODO**: Enrich this page.
 - [[concepts/tuomas-sandholm]] — > **TODO**: Enrich this page.
