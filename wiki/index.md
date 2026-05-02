@@ -271,7 +271,7 @@
 - [[entities/sheshansh-agrawal]] — **X/Twitter** | @sheshansh_agrawal |
 - [[entities/shkspr-mobi]] — **Terence Eden** (pronounced "ed-en") is a technology policy expert, open-source advocate, web standards contributor, and blogger. Based in the UK, he has worked at the intersection of government t...
 - [[entities/shlok-khemani]] — Writer and programmer based in Gurgaon, India. Currently researching **personal AI** and **memory systems for AI agents**. Previously at Decentralised.co, building products for the crypto space. Au...
-- [[entities/shopify]] — Shopify is an e-commerce platform and a reference case for organizational AI adoption.
+- [[entities/shopify]] — Shopify is an e-commerce platform and a reference case for organizational AI adoption. Its data science team also publishes entrepreneurship trend research.
 - [[entities/shreya-shankar]] — **Role** | PhD Candidate, UC Berkeley EECS (Aditya Parameswaran lab) |
 - [[entities/shunyu-yao]] — **Name:** Shunyu Yao (姚顺雨)
 - [[entities/simon-willison]] — Django co-creator, open-source advocate, and leading voice in AI-assisted software development. Founder of Datasette and prolific blogger at simonwillison.net.

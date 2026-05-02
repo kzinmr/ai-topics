@@ -1,3 +1,9 @@
+## [2026-05-02] Shopify — "The Most Future-Proof Job: Entrepreneurship" Data Analysis
+
+- Saved raw article: `raw/articles/2026-04-15_shopify-future-proof-job-entrepreneurship.md` — Shopifyデータサイエンスチームによる起業家精神の分析。AIによる雇用減少（2026年3月の解雇の25%）と起業家増加（Shopify初回販売が2018年比7倍）の「Risk Flip」を示すデータ。リピート創業者の2倍以上の売上、eコマースの市場拡大（14%→20%+）、AI「Exoskeletons」の役割。
+- Updated [[entities/shopify]] — 「Entrepreneurship & Ecommerce Trends」セクションを追加。「Risk Flip」テーゼ、リピート創業者 compounding、AI Exoskeletonsのデータを収録。
+- Updated [[solo-founder-stack]] — 「Empirical Support: Shopify Data」セクションを追加。Shopifyの実証データで solo founder テーゼを補強（Risk Flip、Compounding Entrepreneur、AI Accelerator）。
+
 ## [2026-05-02] Every Guide — Agent-native Product Management + Compound Engineering
 
 - Saved raw article: `raw/articles/2026-05-02_guide-to-agent-native-product-management.md` — Every社のガイド。Marcus Moretti（Spiral GM）が提唱するエージェントネイティブPM。ce:strategy（戦略策定）とce:product-pulse（自動ヘルスレポート）の2スキルを中核に、MCP経由でPostHog/Stripe/Datadogを統合。80/20計画重視シフト。
