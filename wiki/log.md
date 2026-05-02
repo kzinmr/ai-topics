@@ -1,3 +1,27 @@
+## [2026-05-02] Active Crawl — xAI Grok 4.3, Microsoft Copilot Wave 3, MIT FTTE, SpaceX-xAI Merger
+
+- **Researched 5 trending AI/ML topics** not yet covered in wiki:
+  1. **xAI Grok 4.3** — Always-on reasoning, 1M context, aggressive pricing, Custom Voices
+  2. **Microsoft Copilot Wave 3** — Copilot Cowork with Anthropic Claude, Agent 365, E7 Frontier Suite
+  3. **MIT FTTE** — Federated Tiny Training Engine, 81% faster FL on edge devices
+  4. **SpaceX acquires xAI** — $1.25T combined valuation
+  5. **Grok Computer** — xAI's autonomous desktop agent
+
+- **Saved 4 raw articles:**
+  - `raw/articles/2026-05-01_xai-grok-4-3-launch.md`
+  - `raw/articles/2026-03-09_microsoft-copilot-wave-3-frontier-transformation.md`
+  - `raw/articles/2026-04-29_mit-ftte-federated-learning-edge-devices.md`
+  - `raw/articles/2026-02-02_spacex-acquires-xai-merger.md`
+
+- **Created 5 wiki pages:**
+  - [[entities/xai]] — Company entity covering Grok ecosystem, SpaceX acquisition, pricing strategy
+  - [[entities/grok-4-3]] — Latest model: always-on reasoning, 1M context, benchmarks, Custom Voices
+  - [[concepts/grok-computer]] — Desktop agent: pixel-reading, universal app control, Grok 4.3 integration
+  - [[concepts/microsoft-copilot-wave-3]] — Wave 3 transformation: Copilot Cowork, Agent 365, E7 suite
+  - [[concepts/federated-tiny-training-engine]] — MIT FTTE: semi-async FL with 81% speedup on edge devices
+
+- **Updated [[index]]** — Added 2 entities + 3 concepts. Total: 755→760. Entities: 365→367. Concepts: 402→405.
+
 ## [2026-05-02] Shopify — "The Most Future-Proof Job: Entrepreneurship" Data Analysis
 
 - Saved raw article: `raw/articles/2026-04-15_shopify-future-proof-job-entrepreneurship.md` — Shopifyデータサイエンスチームによる起業家精神の分析。AIによる雇用減少（2026年3月の解雇の25%）と起業家増加（Shopify初回販売が2018年比7倍）の「Risk Flip」を示すデータ。リピート創業者の2倍以上の売上、eコマースの市場拡大（14%→20%+）、AI「Exoskeletons」の役割。

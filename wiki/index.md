@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-02 | Total pages: 755 | Full entries: 724 | Stubs: 614
+> Last updated: 2026-05-02 | Total pages: 760 | Full entries: 729 | Stubs: 614
 
-## Entities (365 pages)
+## Entities (367 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -138,6 +138,7 @@
 - [[entities/grad]] — **X/Twitter** | @Grad62304977 |
 - [[entities/grantslatton-com]] — **Blog:** grantslatton.com
 - [[entities/greg-brockman]] — **Role** | Co-founder & President, OpenAI |
+- [[entities/grok-4-3]] — xAI's latest LLM (May 2026) featuring always-on reasoning, 1M token context, aggressive pricing ($1.25/$2.50 per 1M tokens), and Custom Voices suite.
 - [[entities/gwern]] — **Blog** | gwern.net |
 - [[entities/hamel-husain]] — **Role** | Independent Consultant (Parlance Labs), R&D at AnswerAI, Scout at Bain Capital |
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
@@ -387,6 +388,7 @@
 - [[entities/quarq-labs]] — Quarq Labs — AI research and development lab
 - [[entities/ryan-lopopolo--core-ideas]] — Ryan Lopopolo (@_lopopolo) core ideas on AI engineering
 - [[entities/ryan-lopopolo--timeline]] — Ryan Lopopolo career timeline
+|- [[entities/xai]] — AI company founded by Elon Musk (2023). Creator of Grok LLMs and Grok Computer desktop agent. Acquired by SpaceX in Feb 2026 ($1.25T combined valuation).
 |- [[entities/ryan-lopopolo--writings]] — Ryan Lopopolo writings and blog posts
 |- [[entities/contextarena]] — LLM long-context benchmark leaderboard. Evaluates 70+ LLMs on GDM-MRCRv2 (8-Needle test) across 128K and 1M token windows. Measures accuracy, AUC, token efficiency, and cost.
 |- [[entities/databricks]] — Major AI/ML data platform company. Open-sourced MLflow and Unity Catalog. Published Memory Scaling research with MemAlign framework for AI agents.
@@ -394,7 +396,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (402 pages)
+## Concepts (405 pages)
 
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
@@ -552,6 +554,7 @@
 - [[concepts/exec-plans]] — エージェントにタスクを実行させる際、事前に計画（プラン）を立ててから実行するパターン。計画と実行を分離することで、透明性・再現性・デバッグ性を向上させる。
 - [[concepts/experience-is-a-tax]] — The thesis that traditional experience and seniority in knowledge work is becoming a liability rather than an asset in the AI era. Experienced workers may be more resistant to AI adoption, locked i...
 - [[concepts/experiential-memory]] — Vivek Trivedy (@vtrivedy10) が2026年4月に提唱した概念。エージェントが相互作用を通じて蓄積する「経験的記憶」を、エージェント間で共有・フォーク・再利用するフレームワーク。
+- [[concepts/federated-tiny-training-engine]] — MIT CSAIL's FTTE framework for federated learning on edge devices. Achieves 81% faster convergence, 80% lower memory, 69% less communication vs synchronous FL. Semi-asynchronous with staleness-weighted aggregation.
 - [[concepts/filesystem-memory]] — The **filesystem as agent memory** approach uses standard file I/O operations for persistent agent memory, rather than specialized memory databases or tools. This pattern has emerged as a superior ...
 - [[concepts/fine-tuning/axolotl]] — Axolotl is a YAML-configured fine-tuning framework supporting 100+ models with LoRA/QLoRA, DPO/KTO/ORPO/GRPO, and multimodal capabilities.
 - [[concepts/fine-tuning/grpo-rl-training]] — Group Relative Policy Optimization — a reinforcement learning approach for fine-tuning language models that compares multiple completions within a group to learn preferred behaviors without requiri...
@@ -578,6 +581,7 @@
 - [[concepts/gold-diff-distillation]] — コーディング製品企業が開発した新しいRLトレーニング手法。ユーザーの最終的な「望ましい状態」をRLターゲットとして利用する。
 - [[concepts/gpt-5.5]] — **GPT-5.5** is OpenAI's first fully retrained base model since GPT-4.5, announced in April 2026. Designed specifically for multi-step work including planning, tool use, and self-checking, it repres...
 - [[concepts/gpt-models]] — The **GPT** (Generative Pre-trained Transformer) series, developed by OpenAI, represents the evolution of decoder-only transformer language models from 117M parameters (2018) to frontier-scale reas...
+- [[concepts/grok-computer]] — xAI's autonomous desktop AI agent (beta Apr 2026). Operates any software by reading screen pixels — no API needed. Paired with Grok 4.3 as reasoning brain + execution hands.
 - [[concepts/halo-loss-attention-sinks]] — Transformerモデルにおける「Attention Sinks」（注意の沈み込み）現象と、これに対処するHALO損失関数の理論と歴史。
 - [[concepts/harness-design-long-running-apps]] — Anthropic Labs（Prithvi Rajasekaran）による長期自律エージェントの実践設計。**GAN-inspiredループ**（Generator ↔ Evaluator）をフルスタック開発にスケールさせたアーキテクチャ。
 - [[concepts/harness-engineering]] — The practice of building evaluation systems, tests, and constraints that guide LLMs to reliable outputs. Popularized by Hamel Husain and advanced by Vivek Trivedy (LangChain) who demonstrated +13.7pts on Terminal Bench 2.0 through harness-only changes, and introduced eval-driven hill-climbing for autonomous harness optimization.
@@ -683,6 +687,7 @@
 - [[concepts/meta-harness]] — An outer-loop system from Stanford and MIT (2026) that automatically searches over harness code for LLM applications. Discovers optimal context management, retrieval, and presentation strategies.
 - [[concepts/meta-muse-spark]] — **Muse Spark** is Meta's first model from **Meta Superintelligence Labs (MSL)**, announced on **April 8, 2026**. Internally codenamed "Avocado", it was built over nine months after a complete groun...
 - [[concepts/microservices-vs-monolith]] — Rehan van der Merwe's architecture decision tree provides a pragmatic approach:
+- [[concepts/microsoft-copilot-wave-3]] — Microsoft's Wave 3 (Mar 2026) shifts M365 Copilot to agentic capabilities. Copilot Cowork (built with Anthropic Claude), Agent 365 governance plane, E7 Frontier Suite ($99/user/mo). GA May 1, 2026.
 - [[concepts/miles-rl]] — **Type** | RL Post-Training Framework |
 - [[concepts/mismanaged-geniuses-hypothesis]] — > **AI models are already good enough for the next leap in capabilities. The bottleneck is no longer scaling model size or training data. It is how we manage, decompose, and compose existing fronti...
 - [[concepts/mlx-llm]] — mlx-lm and mlx-vlm are Apple's MLX framework packages for running large language models and multimodal models on Apple Silicon. As of 2026, MLX provides **10–25% faster inference** than llama.cpp o...
