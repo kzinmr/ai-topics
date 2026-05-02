@@ -1,3 +1,11 @@
+## [2026-05-02] Sparse Signal Loop — stochi's Experimental Validation of MGH
+
+- **[[concepts/sparse-signal-loop]]** — Created concept page for Sparse Signal Loop experiment. Controlled 2×2 matrix test of feedback density (sparse vs dense), memory location (chat vs files), and procedure persistence (reinjection vs skill files) across LongBench-Pro and Mini SWE Agent Plus. Key findings: feedback sparsity is task-dependent, the "Judge Gap" (0.9667 Judge YES vs 0.5667 actual solve), constraint beats free-form memory.
+- **[[entities/stochi]]** — Created entity page for stochi (stochi0). Independent AI researcher focused on post-training, agents, RL, model architectures. Previously shipped AI at QX Labs and Unsiloed AI (YC F25).
+- **[[concepts/mismanaged-geniuses-hypothesis]]** — Added "Empirical Validation: Sparse Signal Loop" section with 3 key findings (supports, refines, warns). Added [[concepts/sparse-signal-loop]] to Related Concepts and cross-connections.
+- **raw/articles/2026-05-02_sparse-signal-loop.md** — Saved raw article.
+- Source: https://stochi0.vercel.app/writings/sparse-signal-loop
+
 ## [2026-05-02] Antoine Buteau — Automation Series (10 Parts) Full Ingestion
 
 - **[[entities/antoine-buteau]]** — Created entity page for Antoine Buteau (Head of BizOps at Shakepay, previously Replit). Documented career timeline, Automation Series overview table, other series (Agency, Power, Technical Literacy, Live Player), key ideas (Three Kinds of Work, Automation Boundary, HITL as Design Pattern, Bounded Agents), and key quotes.

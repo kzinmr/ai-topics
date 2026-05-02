@@ -2,7 +2,7 @@
 title: "The Mismanaged Geniuses Hypothesis (MGH)"
 tags: [agents-scaffolding-composition-inference-scaling-hypothesis]
 created: 2026-04-19
-updated: 2026-04-26
+updated: 2026-05-02
 type: concept
 ---
 
@@ -148,6 +148,18 @@ Anthropic recognized that the harness interface needs to be stable while the und
 4. **Evaluation gap:** No standard benchmark exists for measuring "composition ability"
 5. **The "genius" assumption:** Are current models truly general enough, or do they only excel on benchmark-like tasks?
 
+## Empirical Validation: Sparse Signal Loop (April 2026)
+
+The [[concepts/sparse-signal-loop|Sparse Signal Loop]] experiment by [[entities/stochi|stochi]] (April 2026) provides the first controlled 2x2 matrix test of the MGH, investigating whether feedback density, memory location, and procedure persistence are the primary bottlenecks for agent reasoning.
+
+**Key findings that support and refine MGH:**
+
+- **Supports MGH:** Harness design (feedback type, memory location) significantly impacts agent performance — consistent with MGH's claim that models are underutilized by poor scaffolding
+- **Refines MGH:** Adding more scaffold layers (notebooks, skill files) does **not** automatically unlock latent intelligence. The correct *decomposition language* matters more than scaffold complexity
+- **Warns against the "Judge Gap":** Persistent memory can stabilize bad habits (0.9667 Judge YES vs 0.5667 actual solve rate), demonstrating that scaffold improvements must be validated against ground-truth task completion, not proxy metrics
+
+**See:** [[concepts/sparse-signal-loop]] for the full experimental design, phase-by-phase results, and efficiency analysis.
+
 ## Key Quotes
 
 > *"AI models are already good enough for the next leap in capabilities."*
@@ -161,6 +173,7 @@ Anthropic recognized that the harness interface needs to be stable while the und
 ## Related Concepts
 
 - **[[concepts/rlm-recursive-language-models]]** — Proof-of-concept implementation
+- **[[concepts/sparse-signal-loop]]** — Controlled experimental validation showing MGH's limits and refinements
 - **[[concepts/agentic-scaffolding]]** — The broader category of scaffold design
 - **[[concepts/harness-engineering]]** — Infrastructure for autonomous agent work
 - **[[concepts/scaffold-vs-rl-debate]]** — Whether scaffolds or training is the path forward (MGH says: both, but scaffold-first)
@@ -171,5 +184,5 @@ Anthropic recognized that the harness interface needs to be stable while the und
 ## Status
 
 - **Page status:** Full (L3 depth achieved — >30% direct quotes, conceptual mapping complete)
-- **Cross-connections:** Alex Zhang (entity), RLM (concept), Harness Engineering, Agentic Scaffolding, Omar Khattab
+- **Cross-connections:** Alex Zhang (entity), RLM (concept), Harness Engineering, Agentic Scaffolding, Omar Khattab, Sparse Signal Loop (concept), stochi (entity)
 - **Last updated:** 2026-04-19

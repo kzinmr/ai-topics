@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-02 | Total pages: 774 | Full entries: 743 | Stubs: 614
+| Last updated: 2026-05-02 | Total pages: 776 | Full entries: 745 | Stubs: 614
 
-## Entities (374 pages)
+## Entities (375 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -289,6 +289,7 @@
 - [[entities/stefano-marinelli]] — **Blog:** it-notes.dragas.net — "Scattered IT Notes"
 - [[entities/steve-blank]] — **Blog** | steveblank.com |
 - [[entities/substack]] — Substackプラットフォーム。ドメイン別AI記事
+|- [[entities/stochi]] — Independent AI researcher focused on post-training, agents, RL, model architectures. Author of the [[concepts/sparse-signal-loop]] experiment. Previously shipped AI at QX Labs and Unsiloed AI (YC F25).
 - [[entities/susam-net]] — **Blog** | susam.net |
 - [[entities/tailcalled]] — **Platform:** LessWrong
 - [[entities/tedium-the-dull-side-of-the-internet]] — **URL:** https://tedium.co
@@ -403,7 +404,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (408 pages)
+## Concepts (409 pages)
 
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
@@ -783,6 +784,7 @@
 - [[concepts/showboat]] — Moved to concepts/harness-engineering/agentic-workflows/showboat.md
 - [[concepts/simulacrum-of-knowledge-work]] — Critical analysis of how LLMs broke the proxy measures that knowledge work relies on for quality assessment, creating a "simulacrum" where surface-level output quality no longer correlates with substantive quality.
 - [[concepts/single-agent-ceiling]] — > 提唱: milksandmatcha|Sarah Chieng (@MilksandMatcha) + sero|Sero (@0xSero), 2026年4月
+|- [[concepts/sparse-signal-loop]] — Controlled experiment testing feedback density, memory location, and procedure persistence in agent harness design. Direct experimental validation of the Mismanaged Geniuses Hypothesis. By [[entities/stochi|stochi]].
 |- [[concepts/skill-architecture-patterns]] — **Overview:** Comparative analysis of two fundamentally different approaches to agent skill management — Hermes Agent's self-authoring, maximalist skill system vs OpenClaw's governed, primitives-fi...
 |- [[concepts/skill-retrieval-augmentation]] — **SRA**: Academic framework for dynamically retrieving agent skills from external corpora. Defines Retrieve→Incorporate→Apply pipeline. SRA-Bench benchmark. "Incorporation bottleneck" finding. (arXiv:2604.24594, Su et al. 2026)
 - [[concepts/solo-founder-stack]] — The set of tools, practices, and organizational models that enable a single founder to build and run a company at scale in the AI era — the "one-person unicorn" paradigm.
