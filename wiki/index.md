@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-02 | Total pages: 763 | Full entries: 732 | Stubs: 614
+| Last updated: 2026-05-02 | Total pages: 765 | Full entries: 734 | Stubs: 614
 
-## Entities (369 pages)
+## Entities (370 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -229,6 +229,7 @@
 - [[entities/microsoft]] — **Type** | AI Research & Product Company | Cloud infrastructure leader with Azure, GitHub Copilot, and OpenAI partnership renegotiated April 2026.
 - [[entities/oldvcr-blogspot-com]] — **Cameron Kaiser** (blogging as **ClassicHasClass**) is a vintage computing researcher, software engineer, and open-source developer based at concepts/floodgap-systems. He runs the blog **Old Vinta...
 - [[entities/omar-khattab]] — **Position:** Assistant Professor, MIT EECS (TIBCO Founders' Career Development Professor)
+- [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml programmer and technology writer.
 - [[entities/openai-cua]] — OpenAIの**CUA（Computer-Using Agent）**モデルは、GPT-4oのビジョン機能と強化学習を組み合わせて、スクリーンショットを見てGUIを操作するエージェント。2025年1月に「Operator」として公開され、2025年7月にChatGPTエージェントに完全統合された。
 - [[entities/openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
 - [[entities/openai]] — **Type** | AI Research & Product Company |
@@ -398,7 +399,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (406 pages)
+## Concepts (407 pages)
 
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
@@ -769,6 +770,7 @@
 - [[concepts/session-hierarchy-management]] — **Session Hierarchy Management** is a three-level framework for organizing AI coding work across session boundaries. It unifies **single-session context hygiene** (trq212/Anthropic) with **multi-ag...
 - [[concepts/sglang-pipeline-parallelism]] — **Type** | Inference Parallelism Strategy |
 - [[concepts/showboat]] — Moved to concepts/harness-engineering/agentic-workflows/showboat.md
+- [[concepts/simulacrum-of-knowledge-work]] — Critical analysis of how LLMs broke the proxy measures that knowledge work relies on for quality assessment, creating a "simulacrum" where surface-level output quality no longer correlates with substantive quality.
 - [[concepts/single-agent-ceiling]] — > 提唱: milksandmatcha|Sarah Chieng (@MilksandMatcha) + sero|Sero (@0xSero), 2026年4月
 |- [[concepts/skill-architecture-patterns]] — **Overview:** Comparative analysis of two fundamentally different approaches to agent skill management — Hermes Agent's self-authoring, maximalist skill system vs OpenClaw's governed, primitives-fi...
 |- [[concepts/skill-retrieval-augmentation]] — **SRA**: Academic framework for dynamically retrieving agent skills from external corpora. Defines Retrieve→Incorporate→Apply pipeline. SRA-Bench benchmark. "Incorporation bottleneck" finding. (arXiv:2604.24594, Su et al. 2026)

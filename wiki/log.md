@@ -1,3 +1,9 @@
+## [2026-05-02] Simulacrum of Knowledge Work — Concept & Entity Ingestion
+
+- **[[concepts/simulacrum-of-knowledge-work]]** — Created concept page. Critical analysis by @onehappyfellow of how LLMs broke the proxy measures that knowledge work relies on for quality assessment. Covers proxy measures, incentive alignment crisis, Goodhart's Law recursive problem, and the "tokens-spent leaderboard" meta-commentary.
+- **[[entities/onehappyfellow]]** — Created entity page for the author of "Simulacrum of Knowledge Work." Head of The Institute for Type Safe Memetic Research. OCaml programmer, technology writer, and rapper.
+- Source: `raw/articles/2026-04-25_onehappyfellow-simulacrum-of-knowledge-work.md` | https://blog.happyfellow.dev/simulacrum-of-knowledge-work/
+
 ## [2026-05-02] Fireworks AI Podcast (SE Daily Episode 1919) — Entity & Concept Ingestion
 
 - **[[entities/fireworks-ai]]** — Created entity page for Fireworks AI. AI inference and model customization platform for open-weight models. 13T+ tokens/day. Multi-hardware (NVIDIA + AMD), FireAttention kernels, custom speculator training, RFT capabilities.
