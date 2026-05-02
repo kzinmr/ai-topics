@@ -1,3 +1,10 @@
+## [2026-05-02] PyTorch GPU Memory Profiling — Memory Snapshot & Profiler Tools Ingestion
+
+- **[[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]]** — Created concept page for PyTorch v2.1+ GPU memory debugging tools. Covers Memory Snapshot (allocation trace visualization with stack traces), Memory Profiler (categorized usage: gradients/optimizer/activations), OOM staircase pattern fix (`optimizer.zero_grad(set_to_none=True)`), `record_function` labeling, and tool comparison table.
+- **[[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]]** — Added `pytorch-gpu-memory-profiling` to `related` and `Related Pages` sections.
+- **[[concepts/ai-infrastructure-engineering/_index]]** — Added "Memory Debugging" row to scope table with link to new page.
+- Source: https://pytorch.org/blog/understanding-gpu-memory-1/
+
 ## [2026-05-02] Braintrust Evals 101 Course — Practical Eval Methodology Ingestion
 
 - **[[concepts/ai-evals]]** — Added "Braintrust Evals 101: Practical Eval Methodology" section covering: non-determinism as core thesis, 3-component eval model (dataset/task/scorer), LLM-as-Judge with choice scores, trial counts for variance reduction, multi-level trace scoring (per-turn vs per-trace), online scoring, the Improvement Loop with temperature=0/max_concurrency=1 settings, and the GPT-4o sycophancy rollback case study.

@@ -21,6 +21,7 @@ related:
   - "[[concepts/llm-inference]]"
   - "[[concepts/model-quantization]]"
   - "[[concepts/ai-infrastructure-engineering/_index]]"
+  - "[[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]]"
 ---
 
 # GPU / VRAM Fundamentals
@@ -118,6 +119,7 @@ LLM推論において、GPUはただの「速い計算機」ではない。**メ
 
 ## Related Pages
 
+- [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]] — PyTorchビルトインのGPUメモリデバッグツール
 - [[concepts/llm-inference]] — Roofline analysis, batch size economics
 - [[concepts/local-llm/inference-hardware]] — Consumer hardware specifics
 - [[concepts/model-quantization]] — Quantization methods & tradeoffs

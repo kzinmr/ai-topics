@@ -47,6 +47,7 @@ related:
 | **Model Serving** | Autoscaling, Load Balancing, Prefix Caching | [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] ⬜ L1 |
 | **Cost Optimization** | Prompt Caching, Batch Orchestration, Token Economics | [[concepts/prompt-caching]] ✅ LIVE |
 | **Observability** | Traces, Metrics, Logs, Evals | [[concepts/ai-infrastructure-engineering/llm-observability]] ⬜ L1 |
+| **Memory Debugging** | PyTorch Memory Snapshot, Memory Profiler, OOM Debugging | [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]] 🟢 L1 |
 
 ## 学習ロードマップ
 

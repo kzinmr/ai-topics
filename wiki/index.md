@@ -460,7 +460,8 @@
 |- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — GPUメモリ階層、VRAM計算、roofline model、バッチング経済学、量子化効果。⬜ L1
 |- [[concepts/ai-infrastructure-engineering/distributed-training]] — DDP→FSDP→DeepSpeed ZeRO、3D並列化（TP/PP/EP）、戦略選択ガイド。⬜ L1
 |- [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — デプロイ構成、オートスケーリング（HPA, predictive, serverless）、ロードバランシング。⬜ L1
-|- [[concepts/ai-infrastructure-engineering/llm-observability]] — 推論メトリクス（TTFT, TPOT, ITL）、GPU/VRAM監視、コスト帰属、vLLM OTel統合。⬜ L1
+||- [[concepts/ai-infrastructure-engineering/llm-observability]] — 推論メトリクス（TTFT, TPOT, ITL）、GPU/VRAM監視、コスト帰属、vLLM OTel統合。⬜ L1
+||- [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]] — PyTorch Memory Snapshot & Profiler。GPUメモリデバッグ、OOM原因特定、メモリ可視化。🟢 L1
 |- [[concepts/ai-autonomy-debate]] — The **AI Autonomy Debate
 - [[concepts/ai-bubble-economics]] — The **AI Bubble Economics** concept encompasses the growing body of analysis questioning whether the unprecedented capital flowing into artificial intelligence infrastructure is backed by real econ...
 - [[concepts/ai-coding-agent-criticism]] — Armin Ronacher (lucumr.pocoo.org) identified a structural asymmetry in how AI coding agents are debated:
