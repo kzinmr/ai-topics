@@ -1,6 +1,10 @@
 ---
 title: "vLLM"
-tags: [local-llm, inference, serving, open-source, performance]
+tags:
+  - local-llm
+  - inference
+  - open-source
+  - performance
 created: 2026-04-14
 updated: 2026-04-27
 type: concept

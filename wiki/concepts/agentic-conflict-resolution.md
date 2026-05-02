@@ -3,7 +3,11 @@ title: "Agentic Conflict Resolution"
 created: 2026-04-24
 updated: 2026-04-24
 type: concept
-tags: [multi-agent, conflict-resolution, governance, agent-swarm, orchestration]
+tags:
+  - multi-agent
+  - conflict-resolution
+  - governance
+  - orchestration
 sources:
   - raw/articles/crawl-2026-04-24-agentic-conflict-resolution-playbook.md
   - raw/articles/crawl-2026-04-24-multi-agent-production-architecture-2026.md

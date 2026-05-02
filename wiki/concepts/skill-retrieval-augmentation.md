@@ -3,7 +3,12 @@ title: "Skill Retrieval Augmentation (SRA)"
 type: concept
 created: 2026-04-30
 updated: 2026-04-30
-tags: [ai-agents, skill-retrieval, information-retrieval, harness-engineering, agent-capabilities, sra]
+tags:
+  - ai-agents
+  - skill-retrieval
+  - information-retrieval
+  - harness-engineering
+  - sra
 aliases:
   - sra
   - skill-retrieval-augmentation

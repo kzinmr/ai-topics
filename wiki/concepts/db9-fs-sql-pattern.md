@@ -2,7 +2,13 @@
 title: "db9: Filesystem + SQL Pattern for Agent Workflows"
 created: 2026-04-30
 updated: 2026-04-30
-tags: [concept, database, agent-workflow, filesystem, postgresql, sql]
+tags:
+  - concept
+  - database
+  - workflow
+  - filesystem
+  - postgresql
+  - sql
 aliases: ["db9", "fs9", "db9-fs-sql-patterns"]
 related: [[concepts/ai-agent-memory-middleware]], [[concepts/zero-disk-architecture]], [[concepts/disaggregated-storage]], [[concepts/agent-loop-orchestration]]
 sources: ["https://me.0xffff.me/db9-fs-sql-patterns.html"]

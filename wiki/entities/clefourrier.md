@@ -20,9 +20,9 @@ tags:
   - person
   - ai
   - evaluation
-  - llm
+  - model
   - huggingface
-  - benchmarks
+  - benchmark
   - lighteval
   - gaia
 sources: []

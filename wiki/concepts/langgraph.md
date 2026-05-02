@@ -1,7 +1,11 @@
 ---
 title: "LangGraph"
 type: concept
-tags: [langgraph, langchain, agent-orchestration, stateful-agents]
+tags:
+  - langgraph
+  - langchain
+  - orchestration
+  - stateful-agents
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

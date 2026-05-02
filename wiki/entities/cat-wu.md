@@ -3,7 +3,10 @@ title: "Cat Wu"
 type: entity
 created: 2026-04-24
 updated: 2026-04-24
-tags: [person, anthropic, product-management, claude-code]
+tags:
+  - person
+  - anthropic
+  - product-management
 aliases: ["Cat Wu (Anthropic)"]
 sources: []
 ---

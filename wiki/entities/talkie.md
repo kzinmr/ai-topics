@@ -3,7 +3,10 @@ title: "Talkie"
 type: entity
 created: 2026-04-30
 updated: 2026-04-30
-tags: [model, open-source, historical-data, llm]
+tags:
+  - model
+  - open-source
+  - historical-data
 sources:
   - raw/articles/2026-04-28_talkie-historical-llm.md
 related:

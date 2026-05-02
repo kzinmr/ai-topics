@@ -10,9 +10,10 @@ tags:
   - x-account
   - ai
   - ml-engineering
-  - gpu
+  - inference
   - infrastructure
   - developer-advocacy
+
 ---
 
 

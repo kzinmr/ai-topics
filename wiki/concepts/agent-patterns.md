@@ -6,7 +6,7 @@ updated: 2026-04-30
 tags:
   - concept
   - ai-agents
-  - agent-patterns
+  - agentic-engineering
 status: complete
 description: "Patterns and practices for building and deploying AI agents — harnesses, workflows, and multi-agent orchestration."
 ---

@@ -5,7 +5,13 @@ created: 2026-04-27
 updated: 2026-04-27
 status: L2
 sources: [https://x.com/nyk_builderz/status/2041091619848634661, https://x.com/nyk_builderz/status/2037870116059201828, https://x.com/nyk_builderz/status/2038519372541730819]
-tags: [claude-code, multi-agent, disagreement, subagents, architecture-evaluation, diversity-of-perspective]
+tags:
+  - anthropic
+  - multi-agent
+  - disagreement
+  - subagents
+  - architecture-evaluation
+  - diversity-of-perspective
 aliases: [structured-disagreement, claude-code-subagent-disagreement]
 ---
 

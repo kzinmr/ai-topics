@@ -8,8 +8,7 @@ tags:
   - person
   - anthropic
   - openai
-  - ai-safety
-  - claude
+  - agent-safety
   - interpretability
 sources: []
 ---

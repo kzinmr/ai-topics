@@ -10,7 +10,7 @@ tags:
   - concept
   - harness-engineering
   - context-management
-  - prompt-engineering
+  - prompting
   - optimization
 status: active
 sources:

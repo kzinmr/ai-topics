@@ -4,7 +4,12 @@ type: concept
 description: "TurboPuffer's rank-by-attribute feature enables mixing numeric and date attributes into BM25 text search scoring using Saturate/Decay functions, improving first-stage relevance without full reranking."
 category: concepts
 sub_category: Vector Search
-tags: [turbopuffer, vector-search, bm25, relevance-ranking, search-infrastructure]
+tags:
+  - turbopuffer
+  - search
+  - bm25
+  - relevance-ranking
+  - search-infrastructure
 status: complete
 related:
   - bm25

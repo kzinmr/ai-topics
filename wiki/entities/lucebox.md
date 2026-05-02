@@ -6,8 +6,7 @@ created: 2026-04-23
 updated: 2026-04-23
 tags:
   - local-llm
-  - gpu-inference
-  - cuda
+  - inference
   - speculative-decoding
   - hardware
 sources:

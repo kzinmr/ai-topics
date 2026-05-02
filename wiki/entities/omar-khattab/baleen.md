@@ -1,6 +1,8 @@
 ---
 title: "Baleen — Multi-Hop Retrieval-Augmented Reasoning"
-tags: [research, retrieval, RAG]
+tags:
+  - lab
+  - rag
 created: 2026-04-24
 updated: 2026-04-24
 type: sub-entity

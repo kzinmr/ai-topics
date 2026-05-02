@@ -8,7 +8,7 @@ tags:
   - person
   - ai
   - theoretical-cs
-  - ai-safety
+  - agent-safety
   - computational-complexity
   - cryptography
   - education

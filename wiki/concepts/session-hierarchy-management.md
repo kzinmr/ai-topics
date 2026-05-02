@@ -3,7 +3,12 @@ title: Session Hierarchy Management
 type: concept
 created: 2026-04-18
 updated: 2026-04-18
-tags: [session-management, multi-agent, context-engineering, orchestration, claude-code]
+tags:
+  - session-management
+  - multi-agent
+  - context-engineering
+  - orchestration
+  - anthropic
 aliases: ["session-hierarchy", "context-hierarchy", "multi-level-session-management"]
 related: [[concepts/context-window-management]], [[concepts/back-of-house-patterns]], [[concepts/single-agent-ceiling]], [[concepts/subagents]]
 sources:

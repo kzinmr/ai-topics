@@ -3,7 +3,14 @@ title: "Jarred Sumner"
 type: entity
 created: 2026-04-16
 updated: 2026-04-16
-tags: [person, developer-tools, javascript, bun, anthropic, ai-agents, infrastructure]
+tags:
+  - person
+  - developer-tooling
+  - javascript
+  - bun
+  - anthropic
+  - ai-agents
+  - infrastructure
 aliases: ["jarred-sumner", "oven-sh"]
 related: [[concepts/sandbox/js-runtime]], [[ryan-dahl]]
 depth: L2

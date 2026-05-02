@@ -12,7 +12,7 @@ tags:
   - data-science
   - mlops
   - evaluation
-  - agentic-workflows
+  - workflow
   - human-centered-ai
   - ai-education
 sources: []

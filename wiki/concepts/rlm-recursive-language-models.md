@@ -1,6 +1,16 @@
 ---
 title: "RLM (Recursive Language Models)"
-tags: [training, concept, ai-agents, llm, prompting, rag, evaluations, inference, context-management, code-execution]
+tags:
+  - training
+  - concept
+  - ai-agents
+  - model
+  - prompting
+  - rag
+  - evaluation
+  - inference
+  - context-management
+  - coding-agents
 created: 2026-04-13
 updated: 2026-05-01
 type: concept

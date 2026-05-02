@@ -3,7 +3,12 @@ title: "Context Window Management"
 type: concept
 created: 2026-04-13
 updated: 2026-04-16
-tags: [context-window, token-management, prompt-engineering, claude-code, llm-optimization]
+tags:
+  - context-management
+  - token-management
+  - prompting
+  - anthropic
+  - optimization
 aliases: ["context-window-optimization", "token-budget-management", "conversation-hygiene"]
 related: [[concepts/claude-code-best-practices]], [[concepts/claude-code-source-patterns]], [[concepts/inference-speed-development]], 
 sources:

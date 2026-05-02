@@ -11,7 +11,7 @@ tags:
   - microsoft
   - inflection-ai
   - anthropic
-  - ai-safety
+  - agent-safety
   - ai-ethics
 sources: []
 ---

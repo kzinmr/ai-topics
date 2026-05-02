@@ -8,7 +8,7 @@ created: 2026-04-12
 updated: 2026-04-12
 tags:
   - concept
-  - system-architecture
+  - architecture
   - harness-engineering
   - anthropic
 status: draft

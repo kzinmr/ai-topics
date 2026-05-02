@@ -11,7 +11,7 @@ tags:
   - concept
   - openclaw
   - skill-management
-  - agent-architecture
+  - architecture
   - governance
 related:
   - concepts/skill-architecture-patterns

@@ -8,10 +8,7 @@ tags:
   - infrastructure
   - inference
   - training
-  - serving
   - observability
-  - gpu
-  - distributed-training
 status: L1
 aliases:
   - ai-infra

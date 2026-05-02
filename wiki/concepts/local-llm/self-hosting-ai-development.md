@@ -3,7 +3,13 @@ title: "Self-Hosting AI for Development"
 type: concept
 created: 2026-04-13
 updated: 2026-04-13
-tags: [self-hosting, local-llm, qwen, opencode, cost-optimization, model-comparison]
+tags:
+  - self-hosting
+  - local-llm
+  - qwen
+  - opencode
+  - optimization
+  - model-comparison
 aliases: ["self-hosted-coding-agents", "local-ai-development", "qwen-coder-workflow", "ai-inference-economics"]
 related: [[concepts/claude-code-best-practices]], [[concepts/cli-over-mcp-pattern]], [[concepts/inference-speed-development]], [[concepts/openclaw]]
 sources:

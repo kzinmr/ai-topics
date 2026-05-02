@@ -5,12 +5,11 @@ created: 2026-04-17
 updated: 2026-04-17
 tags:
   - person
-  - researcher
   - engineer
   - search
   - information-retrieval
   - rag
-  - agent
+  - ai-agents
   - infrastructure
   - ml-serving
   - author

@@ -3,7 +3,10 @@ title: Claude Perfect Memory
 created: 2026-04-27
 updated: 2026-04-27
 type: concept
-tags: [memory, claude-code, agent-architecture]
+tags:
+  - memory-systems
+  - anthropic
+  - architecture
 aliases: ["Claude Code Memory", "File-based Memory"]
 sources:
   - https://ianlpaterson.com/blog/claude-code-memory-architecture/

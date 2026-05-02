@@ -3,7 +3,12 @@ title: Agent Economics
 created: 2026-04-28
 updated: 2026-04-28
 type: concept
-tags: [economics, tokens, cost, agent, infrastructure]
+tags:
+  - economics
+  - tokens
+  - cost
+  - ai-agents
+  - infrastructure
 sources:
   - raw/newsletters/2026-04-27-this-week-on-how-i-ai-gpt-5-5-claude-design-and-gpt-images-2-0-hands-on-reviews-.md
   - raw/newsletters/2026-04-28-ainews-imagegen-is-on-the-path-to-agi.md

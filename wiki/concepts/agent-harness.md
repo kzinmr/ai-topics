@@ -2,7 +2,10 @@
 title: "Agent Harness"
 created: 2026-04-27
 updated: 2026-04-30
-tags: [harness-engineering, agent-architecture, ai-agents]
+tags:
+  - harness-engineering
+  - architecture
+  - ai-agents
 aliases: [agent-harness, harness-anatomy, agent-scaffolding]
 related: [[concepts/harness-engineering]], [[concepts/deep-agents-runtime]], [[concepts/agent-loop-orchestration]], [[concepts/context-engineering]], [[concepts/bitter-lesson-harnessing]]
 sources: [

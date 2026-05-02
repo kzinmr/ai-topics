@@ -8,7 +8,10 @@ status: complete
 depth_tracking:
  created: 2026-04-20
  target_depth: concept-level
-tags: [llm-evaluation, ai-evals, bias-mitigation, rubric-design]
+tags:
+  - evaluation
+  - bias-mitigation
+  - rubric-design
 sources:
  - raw/articles/llm-as-judge-scoring-bias-2026-04-20.md
  - raw/articles/dspy-rlm-2026-04-20.md

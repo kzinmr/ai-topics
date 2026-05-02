@@ -6,9 +6,8 @@ updated: 2026-04-27
 tags:
   - concept
   - rag
-  - retrieval
-  - llm
-  - enterprise-ai
+  - model
+  - company
 aliases:
   - retrieval-augmented-generation
   - rag-systems

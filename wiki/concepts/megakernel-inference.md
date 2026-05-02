@@ -5,11 +5,10 @@ status: draft
 created: 2026-04-23
 updated: 2026-04-23
 tags:
-  - cuda
-  - inference-optimization
+  - inference
+  - optimization
   - local-llm
   - kernel-fusion
-  - gpu
 sources:
   - https://www.lucebox.com/blog/megakernel
 related:

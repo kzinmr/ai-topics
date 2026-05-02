@@ -10,7 +10,15 @@ related:
   - concepts/ai-agent-traps
   - entities/simon-willison
   - entities/andrej-karpathy
-tags: [agentic-engineering, coding-agents, claude-code, codex, testing, git, patterns, simon-willison]
+tags:
+  - agentic-engineering
+  - coding-agents
+  - anthropic
+  - codex
+  - testing
+  - git
+  - patterns
+  - simon-willison
 source: https://simonwillison.net/guides/agentic-engineering-patterns/
 sources: []
 ---

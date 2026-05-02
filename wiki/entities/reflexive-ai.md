@@ -5,7 +5,13 @@ created: 2026-04-27
 updated: 2026-04-27
 status: L2
 sources: [https://www.firstround.com/ai/shopify, https://x.com/tobi/status/1741234567890123457](status: pending)
-tags: [ai-adoption, enterprise-ai, shopify, reflexive-ai, organizational-change, hiring-policy]
+tags:
+  - ai-adoption
+  - company
+  - shopify
+  - reflexive-ai
+  - organizational-change
+  - hiring-policy
 aliases: [reflexive-ai-usage, shopify-ai-policy]
 ---
 

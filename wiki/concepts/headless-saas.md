@@ -3,7 +3,13 @@ title: "Headless SaaS"
 type: concept
 created: 2026-04-30
 updated: 2026-04-30
-tags: [concept, ai-agents, saas, api-first, headless, agent-first]
+tags:
+  - concept
+  - ai-agents
+  - product
+  - api-first
+  - headless
+  - agent-first
 related: [headless-ai-services, agent-first-design, agent-serverless, ai-agent-memory-middleware]
 sources:
   - https://x.com/ivanburazin/status/2034042095548187072

@@ -3,7 +3,11 @@ title: Agent Governance
 created: 2026-04-26
 updated: 2026-04-26
 type: concept
-tags: [agent, governance, security, enterprise]
+tags:
+  - ai-agents
+  - governance
+  - security
+  - company
 sources: [raw/articles/crawl-2026-04-26-agent-governance.md]
 ---
 

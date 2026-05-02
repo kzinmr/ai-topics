@@ -3,7 +3,12 @@ title: "Claude Design"
 type: entity
 created: 2026-04-25
 updated: 2026-04-25
-tags: [product, anthropic, design, vision, labs]
+tags:
+  - product
+  - anthropic
+  - design
+  - vision
+  - lab
 aliases: ["Claude Design by Anthropic Labs"]
 sources: []
 ---

@@ -9,7 +9,7 @@ tags:
   - person
   - x-account
   - ai
-  - developer-tools
+  - developer-tooling
   - generative-ui
   - vercel
 sources: []

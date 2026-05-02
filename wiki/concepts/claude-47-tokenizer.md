@@ -3,7 +3,11 @@ title: "Claude 4.7 Tokenizer Change"
 type: concept
 created: 2026-04-20
 updated: 2026-04-20
-tags: [concept, anthropic, claude, tokenizer, cost-analysis]
+tags:
+  - concept
+  - anthropic
+  - model
+  - cost-analysis
 related: [context-window-management, context-compaction, claude-opus]
 sources: []
 ---

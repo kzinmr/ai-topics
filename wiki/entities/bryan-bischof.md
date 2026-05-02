@@ -10,7 +10,7 @@ tags:
   - ai
   - data-science
   - ml-engineering
-  - venture-capital
+  - company
   - analytics
 sources: []
 ---

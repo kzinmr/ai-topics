@@ -10,7 +10,7 @@ updated: 2026-04-12
 tags:
   - concept
   - agentic-engineering
-  - agent-architecture
+  - architecture
 status: draft
 sources:
   - "https://simonwillison.net/guides/agentic-engineering-patterns/how-agents-work/"

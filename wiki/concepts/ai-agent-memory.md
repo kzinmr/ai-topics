@@ -1,7 +1,11 @@
 ---
 title: "AI Agent Memory"
 type: concept
-tags: [agent-memory, memory-systems, context, persistent-memory]
+tags:
+  - ai-agents
+  - memory-systems
+  - context
+  - persistent-memory
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

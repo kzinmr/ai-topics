@@ -4,6 +4,11 @@ type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags:
+  - concept
+  - report
+  - stanford
+  - ai-trends
+  - benchmark
 - concept
 - report
 - stanford

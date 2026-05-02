@@ -12,7 +12,7 @@ tags:
   - person
   - search-engine
   - vespa
-  - vector-search
+  - search
   - norway
 
 ---

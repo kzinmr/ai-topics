@@ -1,6 +1,12 @@
 ---
 title: "LLM Integration Patterns — A Comparative Taxonomy"
-tags: [training, ai-agents, llm, prompting, rag, comparison]
+tags:
+  - training
+  - ai-agents
+  - model
+  - prompting
+  - rag
+  - comparison
 created: 2026-04-24
 updated: 2026-04-24
 type: comparison

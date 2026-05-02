@@ -1,7 +1,8 @@
 ---
 title: "Agent Memory (Redirect)"
 type: redirect
-tags: [agent-memory]
+tags:
+  - ai-agents
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

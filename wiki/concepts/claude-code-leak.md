@@ -3,7 +3,11 @@ title: "Claude Code Source Leak"
 type: concept
 created: 2026-04-10
 updated: 2026-04-10
-tags: [concept, security, leak, anthropic, claude]
+tags:
+  - concept
+  - security
+  - leak
+  - anthropic
 related: [ai-security, open-source, anthropic]
 sources: []
 ---

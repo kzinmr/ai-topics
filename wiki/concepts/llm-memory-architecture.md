@@ -2,7 +2,11 @@
 title: "LLM Memory Architecture"
 created: 2026-04-30
 updated: 2026-04-30
-tags: [ai-agents, memory, architecture, knowledge-graphs]
+tags:
+  - ai-agents
+  - memory-systems
+  - architecture
+  - knowledge-graphs
 aliases: [llm-memory, agent-memory-architecture]
 related: [[concepts/ai-agent-memory-middleware]], [[concepts/ai-agent-memory-two-camps]], [[concepts/ai-memory-systems]], [[concepts/context-engineering]], [[concepts/claude-memory]]
 sources: [

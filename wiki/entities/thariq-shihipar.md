@@ -7,13 +7,11 @@ updated: 2026-04-10
 tags:
   - person
   - ai
-  - startups
+  - company
   - tech
   - anthropic
-  - claude-code
   - agents
   - mit-media-lab
-  - yc
   - interpretability
 sources: []
 ---

@@ -3,7 +3,12 @@ title: "DSPy — Declarative Self-improving Python"
 type: concept
 created: 2026-04-30
 updated: 2026-04-30
-tags: [dspy, prompt-optimization, llm-engineering, declarative-programming, llm-as-judge]
+tags:
+  - dspy
+  - optimization
+  - model
+  - declarative-programming
+  - evaluation
 sources:
   - raw/articles/crawl-2026-04-29-dspy-adoption-gap-khattabs-law.md
   - https://github.com/stanfordnlp/dspy

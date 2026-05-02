@@ -3,7 +3,12 @@ title: "Multi-Agent Consensus Patterns"
 type: concept
 created: 2026-04-19
 updated: 2026-04-19
-tags: [multi-agent, consensus, distributed-systems, orchestration, ai-agents]
+tags:
+  - multi-agent
+  - consensus
+  - architecture
+  - orchestration
+  - ai-agents
 aliases: ["swarm-consensus", "agent-consensus", "decentralized-consensus"]
 sources:
  - raw/articles/swarm-plus-consensus-2026.md

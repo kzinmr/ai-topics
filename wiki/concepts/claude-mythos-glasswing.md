@@ -3,7 +3,13 @@ title: "Claude Mythos & Project Glasswing"
 type: concept
 created: 2026-04-10
 updated: 2026-04-24
-tags: [claude-mythos, project-glasswing, anthropic, cybersecurity, frontier-ai, ai-safety]
+tags:
+  - claude-mythos
+  - project-glasswing
+  - anthropic
+  - security
+  - frontier-ai
+  - agent-safety
 aliases: ["project-glasswing", "mythos-preview"]
 related: , , [[concepts/cognitive-cost-of-agents]], 
 sources: []

@@ -4,6 +4,9 @@ type: entity
 created: 2026-04-09
 updated: 2026-04-13
 tags:
+  - model
+  - agent-safety
+  - emerging
 - model
 - llm
 - ai-safety

@@ -6,10 +6,8 @@ created: 2026-04-23
 updated: 2026-04-23
 tags:
   - ai
-  - computer-use
-  - agent-infrastructure
-  - startup
-  - yc
+  - ai-agents
+  - company
 sources:
   - https://cua.ai
   - https://github.com/trycua/cua

@@ -12,7 +12,7 @@ tags:
   - python-developer
   - smolagents
   - huggingface
-  - llm
+  - model
 sources:
   - https://www.gilesthomas.com/2024/04/about/
   - https://www.gilesthomas.com/personal

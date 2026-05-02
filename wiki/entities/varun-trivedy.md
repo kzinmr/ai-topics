@@ -11,7 +11,7 @@ tags:
   - agents
   - langchain
   - harness-engineering
-  - evals
+  - evaluation
   - open-source
 sources: []
 ---

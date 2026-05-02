@@ -8,7 +8,7 @@ tags:
   - person
   - ai
   - coding-agents
-  - claude-code
+  - anthropic
 sources: []
 ---
 

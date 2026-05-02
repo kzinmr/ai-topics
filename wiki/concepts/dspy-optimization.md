@@ -1,6 +1,12 @@
 ---
 title: "DSPy Optimization — Teleprompters, Assertions, Fine-Tuning"
-tags: [concept, dspy, optimization, teleprompter, assertion, finetuning]
+tags:
+  - concept
+  - dspy
+  - optimization
+  - teleprompter
+  - assertion
+  - fine-tuning
 created: 2026-04-28
 updated: 2026-04-28
 type: concept

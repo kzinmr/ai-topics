@@ -9,8 +9,8 @@ tags:
   - person
   - ai
   - coding-agents
-  - developer-tools
-  - startups
+  - developer-tooling
+  - company
 sources: []
 ---
 

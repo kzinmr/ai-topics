@@ -8,7 +8,7 @@ tags:
   - observability
   - monitoring
   - tracing
-  - evals
+  - evaluation
   - infrastructure
 status: L1
 aliases:

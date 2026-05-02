@@ -10,7 +10,7 @@ updated: 2026-04-27
 tags:
   - concept
   - ai-agents
-  - machine-learning
+  - model
   - continual-learning
 status: complete
 description: "AIエージェントとモデルの継続的学習 — モデル、ハーネス、コンテキストの3層で学習するフレームワーク。"

@@ -4,6 +4,12 @@ type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
+  - entity
+  - model
+  - mistral
+  - tts
+  - audio
+  - multimodal
 - entity
 - model
 - mistral

@@ -4,7 +4,13 @@ type: concept
 description: "The evolutionary staircase of generative applications: from generative UI components to stateless generative apps to stateful generative apps — and the parallel backend/DB evolution"
 category: concepts
 sub_category: AI Agent Architecture
-tags: [generative-ui, generative-app, stateless, stateful, architecture, AI-agents]
+tags:
+  - generative-ui
+  - generative-app
+  - stateless
+  - stateful
+  - architecture
+  - ai-agents
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

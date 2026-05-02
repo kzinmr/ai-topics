@@ -7,7 +7,6 @@ tags:
   - architecture
   - microservices
   - monolith
-  - distributed-systems
 aliases:
   - monolith-vs-microservices
   - monolith

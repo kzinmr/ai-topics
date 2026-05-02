@@ -4,7 +4,13 @@ type: concept
 description: "Official batteries-included capability library for Pydantic AI agents — CodeMode with Monty sandbox, MCP integration, context management, memory, orchestration, guardrails, and composable agent extensions. Provides the Harness layer that pairs with Monty as Open Runtime."
 category: concepts
 sub_category: AI Agent Architectures
-tags: [pydantic, ai-agents, harness-engineering, sandboxing, mcp, code-execution]
+tags:
+  - pydantic
+  - ai-agents
+  - harness-engineering
+  - sandbox
+  - mcp
+  - coding-agents
 status: complete
 related:
   - pydantic-ai

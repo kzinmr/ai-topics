@@ -3,7 +3,13 @@ title: Anti-Sycophancy
 created: 2026-05-01
 updated: 2026-05-01
 type: concept
-tags: [concept, safety, agent-safety, alignment, rlhf, evaluation]
+tags:
+  - concept
+  - safety
+  - agent-safety
+  - alignment
+  - fine-tuning
+  - evaluation
 sources: [raw/articles/2026-04-02_arxiv-2604.00478-silicon-mirror-anti-sycophancy.md]
 ---
 

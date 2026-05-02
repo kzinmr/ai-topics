@@ -2,7 +2,12 @@
 title: "Anthropic"
 type: entity
 aliases: [anthropic]
-tags: [entity, llm, claude, managed-agents, safety-research]
+tags:
+  - entity
+  - model
+  - anthropic
+  - managed-agents
+  - safety-research
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27

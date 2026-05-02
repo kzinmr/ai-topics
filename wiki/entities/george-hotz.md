@@ -13,7 +13,7 @@ tags:
   - security
   - open-source
   - autonomous-driving
-  - deep-learning
+  - model
   - infrastructure
 sources:
   - entities/geohot-github-io

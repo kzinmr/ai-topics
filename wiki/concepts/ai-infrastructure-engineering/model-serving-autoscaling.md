@@ -5,7 +5,7 @@ created: 2026-05-01
 updated: 2026-05-01
 tags:
   - concept
-  - serving
+  - inference
   - autoscaling
   - load-balancing
   - infrastructure

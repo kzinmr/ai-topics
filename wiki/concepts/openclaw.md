@@ -1,7 +1,10 @@
 ---
 title: "OpenClaw"
 type: concept
-tags: [openclaw, ai-agent, agent-framework, always-on]
+tags:
+  - openclaw
+  - ai-agents
+  - always-on
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

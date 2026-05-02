@@ -1,6 +1,10 @@
 ---
 title: "Local LLM"
-tags: [llm, local-llm, concept, inference]
+tags:
+  - model
+  - local-llm
+  - concept
+  - inference
 created: 2026-04-24
 updated: 2026-04-24
 type: concept

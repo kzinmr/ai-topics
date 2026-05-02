@@ -9,7 +9,7 @@ tags:
   - hn-popular
   - powerdns
   - open-source
-  - cybersecurity
+  - security
   - digital-sovereignty
   - tech-policy
   - lean-software

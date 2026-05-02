@@ -3,7 +3,12 @@ title: Back of House Multi-Agent Patterns
 type: concept
 created: 2026-04-18
 updated: 2026-04-18
-tags: [multi-agent, orchestration, coding-agents, agent-patterns, kitchen-metaphor]
+tags:
+  - multi-agent
+  - orchestration
+  - coding-agents
+  - agentic-engineering
+  - kitchen-metaphor
 aliases: ["kitchen-metaphor", "head-chef-pattern", "line-cook-pattern", "multi-agent-kitchen"]
 sources: []
 ---

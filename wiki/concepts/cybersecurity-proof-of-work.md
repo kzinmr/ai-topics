@@ -3,7 +3,12 @@ title: "Cybersecurity Proof of Work"
 type: concept
 created: 2026-04-14
 updated: 2026-04-14
-tags: [concept, cybersecurity, llm-economics, claude-mythos, aisafety]
+tags:
+  - concept
+  - security
+  - llm-economics
+  - claude-mythos
+  - aisafety
 related:
   - concepts/claude-mythos-preview
   - concepts/ai-digital-nato

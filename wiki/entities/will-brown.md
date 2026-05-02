@@ -9,7 +9,7 @@ tags:
   - x-account
   - ai
   - ml-research
-  - rlhf
+  - fine-tuning
   - reinforcement-learning
   - open-source
 sources: []

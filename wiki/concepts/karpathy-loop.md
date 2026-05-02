@@ -5,7 +5,7 @@ slug: karpathy-loop
 status: complete
 tags:
   - ai
-  - research
+  - lab
   - agents
   - autonomous-experimentation
   - constraint-design

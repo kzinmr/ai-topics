@@ -3,7 +3,12 @@ title: "Reiner Pope"
 type: entity
 created: 2026-05-01
 updated: 2026-05-01
-tags: [person, ai-researcher, hardware, inference, training, architecture]
+tags:
+  - person
+  - hardware
+  - inference
+  - training
+  - architecture
 sources:
   - "raw/articles/dwarkesh.com--p-reiner-pope--11ee10e4.md"
   - "raw/articles/2026-04-30_x--dwarkesh-reiner-pope-blackboard-lecture.md"

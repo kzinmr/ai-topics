@@ -4,10 +4,9 @@ created: 2026-04-30
 updated: 2026-05-01
 tags:
   - concept
-  - ai-evals
-  - data-science
-  - llm-engineering
   - evaluation
+  - data-science
+  - model
   - langchain
   - coding-agents
   - middleware

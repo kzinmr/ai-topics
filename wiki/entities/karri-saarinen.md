@@ -6,11 +6,11 @@ updated: 2026-04-10
 tags:
   - person
   - product-design
-  - startups
+  - company
   - ai-agents
   - issue-tracking
   - linear
-  - developer-tools
+  - developer-tooling
 sources: []
 ---
 

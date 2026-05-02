@@ -3,7 +3,11 @@ title: "Vector Database for AI Agent Memory"
 type: concept
 created: 2026-04-21
 updated: 2026-04-21
-tags: [concept, memory-systems, infrastructure, llm]
+tags:
+  - concept
+  - memory-systems
+  - infrastructure
+  - model
 aliases: ["vector-memory", "vector-db-agent-memory"]
 sources:
  - path: raw/articles/crawl-2026-04-21-vector-db-agent-memory.md

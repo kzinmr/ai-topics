@@ -5,7 +5,7 @@ created: 2026-04-30
 updated: 2026-04-30
 tags:
   - llm-safety
-  - prompt-injection
+  - agent-safety
   - instruction-hierarchy
   - openai
 sources: []

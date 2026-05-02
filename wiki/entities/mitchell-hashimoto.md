@@ -12,7 +12,7 @@ tags:
   - ai-agents
   - blogger
   - building-block-economy
-  - developer-tools
+  - developer-tooling
   - ghostty
   - harness-engineering
   - hashicorp

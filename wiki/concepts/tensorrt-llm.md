@@ -9,7 +9,6 @@ tags:
   - nvidia
   - tensorrt
   - optimization
-  - serving
 status: L1
 aliases:
   - tensorrt-llm

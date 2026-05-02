@@ -9,7 +9,6 @@ tags:
   - hn-popular
   - programmer
   - writer
-  - entrepreneur
 sources: []
 ---
 

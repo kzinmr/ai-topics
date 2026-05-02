@@ -11,8 +11,7 @@ tags:
   - concept
   - index
   - harness-engineering
-  - system-architecture
-  - agent-architecture
+  - architecture
 status: active
 parent: harness-engineering
 sources: []

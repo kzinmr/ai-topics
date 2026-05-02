@@ -7,11 +7,10 @@ tags:
   - person
   - blogger
   - hn-popular
-  - entrepreneurship
+  - company
   - lean-startup
   - customer-development
   - ai-agents
-  - venture-capital
 sources: []
 ---
 

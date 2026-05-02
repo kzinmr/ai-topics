@@ -1,7 +1,11 @@
 ---
 title: "LlamaIndex"
 type: entity
-tags: [llamaindex, rag, data-framework, agent-framework, retrieval]
+tags:
+  - llamaindex
+  - rag
+  - data-framework
+  - ai-agents
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [LlamaIndex Framework, GPT Index, Llama Hub]

@@ -11,7 +11,7 @@ tags:
   - web-filesystem
   - documentation
   - rags
-  - agent-tools
+  - tool
 status: complete
 description: "Webの全ドキュメントをUnixファイルシステムとしてマウントする抽象化。エージェントにtree/grep/cat/findを自然に使い、コード幻覚を解消。"
 created: 2026-04-27

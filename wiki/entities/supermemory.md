@@ -3,7 +3,11 @@ title: "Supermemory (SMFS)"
 type: entity
 created: 2026-04-30
 updated: 2026-04-30
-tags: [company, memory, filesystem, ai-agents]
+tags:
+  - company
+  - memory-systems
+  - filesystem
+  - ai-agents
 sources:
   - raw/articles/2026-04-29_introducing-smfs.md
 ---

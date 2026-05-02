@@ -1,6 +1,15 @@
 ---
 title: "Concepts"
-tags: [training, concept, ai-agents, llm, local-llm, prompting, rag, evaluations, inference]
+tags:
+  - training
+  - concept
+  - ai-agents
+  - model
+  - local-llm
+  - prompting
+  - rag
+  - evaluation
+  - inference
 created: 2026-04-24
 updated: 2026-04-24
 ---

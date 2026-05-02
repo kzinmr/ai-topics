@@ -9,9 +9,8 @@ tags:
   - concept
   - local-llm
   - quantization
-  - gguf
   - gptq
-  - inference-optimization
+  - optimization
 related:
 - "[[concepts/local-llm/gguf]]"
 - "[[concepts/inference/llama-cpp]]"

@@ -8,11 +8,12 @@ related: [local-first-software, automerge, bluesky-at-protocol]
 sources: [https://martin.kleppmann.com, https://martin.kleppmann.com/papers/local-first.pdf]
 tags:
   - person
-  - distributed-systems
+  - architecture
   - CRDT
   - local-first
   - databases
   - open-source
+
 ---
 
 

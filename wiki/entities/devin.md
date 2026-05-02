@@ -5,7 +5,7 @@ created: 2026-04-30
 updated: 2026-04-30
 tags:
   - company
-  - ai-agent
+  - ai-agents
   - coding-agent
 aliases:
   - cognition-devin

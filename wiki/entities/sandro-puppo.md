@@ -7,10 +7,9 @@ updated: 2026-04-23
 tags:
   - ai
   - local-llm
-  - gpu-inference
-  - cuda
+  - inference
   - speculative-decoding
-  - startup
+  - company
 sources:
   - https://x.com/pupposandro
   - https://www.lucebox.com

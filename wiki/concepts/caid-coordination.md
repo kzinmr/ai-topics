@@ -3,7 +3,12 @@ title: "CAID (Centralized Asynchronous Isolated Delegation)"
 type: concept
 created: 2026-04-09
 updated: 2026-04-09
-tags: [concept, multi-agent, coding, cmu, coordination]
+tags:
+  - concept
+  - multi-agent
+  - coding-agents
+  - cmu
+  - coordination
 related: [multi-agent-systems, coding-agents, parallelism]
 sources: []
 ---

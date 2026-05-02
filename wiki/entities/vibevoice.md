@@ -8,7 +8,7 @@ tags:
   - model
   - microsoft
   - tts
-  - speech
+  - multimodal
   - diffusion
   - audio
   - open-source

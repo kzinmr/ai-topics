@@ -8,10 +8,9 @@ tags:
   - x-account
   - ai
   - coding-agents
-  - claude-code
+  - anthropic
   - openai
   - typescript
-  - anthropic
   - meta
 sources: []
 ---

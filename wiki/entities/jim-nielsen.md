@@ -9,7 +9,7 @@ tags:
   - developer
   - web-design
   - writing
-  - hackernews
+  - hn-popular
   - ui-ux
 sources: []
 ---

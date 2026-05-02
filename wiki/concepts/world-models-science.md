@@ -3,7 +3,12 @@ title: "World Models for Scientific Discovery"
 type: concept
 created: 2026-04-10
 updated: 2026-04-10
-tags: [concept, world-models, scientific-ai, agent-loops, research]
+tags:
+  - concept
+  - world-models
+  - scientific-ai
+  - agent-loops
+  - lab
 related: [causal-reasoning, scientific-method, ai-researchers, agent-workflows]
 sources: []
 ---

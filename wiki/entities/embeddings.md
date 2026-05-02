@@ -7,10 +7,10 @@ created: 2026-04-25
 updated: 2026-04-30
 tags:
   - entity
-  - embeddings
+  - model
   - information-retrieval
   - nlp
-  - vector-search
+  - search
 aliases:
   - Single-Vector Embeddings
   - Embedding Models

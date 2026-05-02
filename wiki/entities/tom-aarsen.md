@@ -10,8 +10,8 @@ tags:
   - sentence-transformers
   - nlp
   - huggingface
-  - semantic-search
-  - embeddings
+  - search
+  - model
   - open-source
 sources: []
 ---

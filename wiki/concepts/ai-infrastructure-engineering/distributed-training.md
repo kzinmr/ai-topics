@@ -6,7 +6,6 @@ updated: 2026-05-01
 tags:
   - concept
   - training
-  - distributed-training
   - fsdp
   - deepspeed
   - ddp

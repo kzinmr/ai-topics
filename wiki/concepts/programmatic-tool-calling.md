@@ -1,6 +1,14 @@
 ---
 title: "Programmatic Tool Calling — LLM Writing Code that Calls Tools"
-tags: [concept, tool-calling, code-execution, anthropic, sandbox, mcp, code-mode, harness-engineering]
+tags:
+  - concept
+  - tool
+  - coding-agents
+  - anthropic
+  - sandbox
+  - mcp
+  - code-mode
+  - harness-engineering
 created: 2026-05-01
 updated: 2026-05-01
 type: concept

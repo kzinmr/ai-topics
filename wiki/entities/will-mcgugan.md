@@ -8,7 +8,7 @@ tags:
   - person
   - x-account
   - python
-  - developer-tools
+  - developer-tooling
   - open-source
   - ai
   - terminal-ui

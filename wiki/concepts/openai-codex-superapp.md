@@ -3,7 +3,13 @@ title: "OpenAI Codex Superapp"
 type: concept
 created: 2026-04-24
 updated: 2026-05-01
-tags: [product, openai, coding-agents, devtools, chatgpt, codex]
+tags:
+  - product
+  - openai
+  - coding-agents
+  - developer-tooling
+  - chatgpt
+  - codex
 aliases: ["Codex Superapp"]
 sources:
   - "raw/newsletters/2026-04-30-ainews-the-inference-inflection.md"

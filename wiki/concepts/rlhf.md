@@ -9,7 +9,6 @@ tags:
   - concept
   - training
   - alignment
-  - post-training
   - reinforcement-learning
 status: complete
 description: "人間のフィードバックを用いたLLMのアライメント技術と、その発展形（DPO, ORPO, KTO, GRPO）の統合ページ"

@@ -3,7 +3,11 @@ title: "GRPO RL Training"
 type: concept
 created: 2026-04-19
 updated: 2026-04-19
-tags: [fine-tuning, reinforcement-learning, grpo, trl, post-training]
+tags:
+  - fine-tuning
+  - reinforcement-learning
+  - training
+  - trl
 related:
   - concepts/fine-tuning/_index
   - concepts/fine-tuning/trl

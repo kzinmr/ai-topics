@@ -5,7 +5,7 @@ updated: 2026-04-18
 type: entity
 tags:
   - person
-  - ai-safety
+  - agent-safety
   - selection-theorems
   - lesswrong
 sources:

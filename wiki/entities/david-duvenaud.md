@@ -3,7 +3,9 @@ title: "David Duvenaud"
 type: entity
 created: 2026-04-30
 updated: 2026-04-30
-tags: [person, researcher, ai]
+tags:
+  - person
+  - ai
 sources:
   - raw/articles/2026-04-28_talkie-historical-llm.md
 ---

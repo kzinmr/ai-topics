@@ -3,7 +3,12 @@ title: Physical AI
 created: 2026-04-28
 updated: 2026-04-28
 type: concept
-tags: [robotics, autonomous-systems, simulation, applied-intuition, screen-vs-physical]
+tags:
+  - robotics
+  - autonomous-systems
+  - simulation
+  - company
+  - screen-vs-physical
 sources:
   - raw/newsletters/2026-04-27-physical-ai-that-moves-the-world-qasar-younis-peter-ludwig-applied-intuition.md
 ---

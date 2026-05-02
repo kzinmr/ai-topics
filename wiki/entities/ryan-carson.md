@@ -10,7 +10,7 @@ tags:
   - education
   - tech-education
   - ai
-  - entrepreneurship
+  - company
 sources: []
 ---
 

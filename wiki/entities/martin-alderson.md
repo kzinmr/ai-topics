@@ -8,10 +8,10 @@ tags:
   - blogger
   - hn-popular
   - ai
-  - saas
-  - developer-tools
+  - product
+  - developer-tooling
   - economics
-  - startup
+  - company
 sources: []
 ---
 

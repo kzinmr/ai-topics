@@ -5,7 +5,12 @@ created: 2026-04-27
 updated: 2026-04-27
 status: L2
 sources: [https://x.com/i/article/2047678896959893504, https://www.nytimes.com/2026/04/02/technology/ai-billion-dollar-company-medvi.html, https://www.businessinsider.com/solo-founder-runs-company-with-15-ai-agents-heres-how-2026-2]
-tags: [solo-founder, one-person-unicorn, context-engineering, vibe-ceo, ai-startup]
+tags:
+  - person
+  - one-person-unicorn
+  - context-engineering
+  - vibe-ceo
+  - startup
 aliases: [solopreneur-stack, solo-founder-ai-stack, one-person-unicorn]
 ---
 

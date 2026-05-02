@@ -1,6 +1,12 @@
 ---
 title: "Cognitive Cost of Agents"
-tags: [concept, ai-agents, llm, prompting, rag, inference]
+tags:
+  - concept
+  - ai-agents
+  - model
+  - prompting
+  - rag
+  - inference
 created: 2026-04-24
 updated: 2026-04-24
 type: concept

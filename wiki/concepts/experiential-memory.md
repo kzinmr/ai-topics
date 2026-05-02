@@ -5,7 +5,11 @@ created: 2026-04-16
 updated: 2026-04-16
 status: active
 depth: L2
-tags: [agent-memory, memory-systems, harness-engineering, multi-agent]
+tags:
+  - ai-agents
+  - memory-systems
+  - harness-engineering
+  - multi-agent
 source: https://x.com/vtrivedy10 (Vivek Trivedy, Apr 2026)
 related:
   - context-fragments

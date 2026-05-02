@@ -2,7 +2,11 @@
 title: "Rivet"
 created: 2026-04-30
 updated: 2026-04-30
-tags: [company, agent-infrastructure, sandbox, open-source]
+tags:
+  - company
+  - ai-agents
+  - sandbox
+  - open-source
 aliases: ["rivet-dev", "rivet.gg"]
 related: [[concepts/agent-sandboxing]], [[concepts/docker-sandbox-microvm-api]], [[entities/nathan-flurry]], [[concepts/agent-sandboxing-patterns]]
 sources:

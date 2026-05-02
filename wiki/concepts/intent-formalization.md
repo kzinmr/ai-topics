@@ -3,7 +3,13 @@ title: "Intent Formalization for AI Agents"
 type: concept
 created: 2026-04-21
 updated: 2026-04-21
-tags: [concept, safety, formal-methods, llm, reliability, prompt-engineering]
+tags:
+  - concept
+  - safety
+  - formal-methods
+  - model
+  - reliability
+  - prompting
 aliases: ["intent-specification", "program-specification-llm", "formal-spec-llm"]
 sources:
  - path: raw/articles/crawl-2026-04-21-shuvendu-intent-formalization.md

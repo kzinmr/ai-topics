@@ -18,11 +18,12 @@ tags:
   - person
   - ai-agents
   - coding-agents
-  - prompt-engineering
+  - prompting
   - memory-systems
   - background-agents
-  - multi-agent-orchestration
+  - orchestration
   - personal-ai
+
 ---
 
 

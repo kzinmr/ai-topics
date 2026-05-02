@@ -29,14 +29,14 @@ sources: [raw/articles/source-name.md]
 - `concept`, `entity`, `comparison`, `query`, `summary`, `coding-agent`, `memory-system`
 
 ### Primary Categories
-- **Models**: model, multimodal, text-generation, image-generation, local-llm, sglang
-- **People/Orgs**: person, company, lab, open-source, anthropic, openai, google
-- **Products**: product, platform, tool, service, protocol, framework, claude-code
-- **Techniques**: inference, fine-tuning, training, optimization, quantization, alignment, benchmark, evaluation, speculative-decoding, diffusion, prompting, rag, kv-cache
-- **Engineering**: agentic-engineering, harness-engineering, ai-agent-engineering, context-engineering, context-management, multi-llm, workflow
-- **AI Agents**: ai-agents, multi-agent, orchestration, agents, coding-agents, memory-systems, agent-safety
-- **Infrastructure**: platform, protocol, security, architecture
-| **Meta**: comparison, timeline, controversy, prediction, review, safety, blogger, developer-tooling
+- **Models**: model, multimodal, text-generation, image-generation, local-llm, sglang, reasoning, reinforcement-learning
+- **People/Orgs**: person, company, lab, open-source, anthropic, openai, google, huggingface, nvidia, langchain, pytorch
+- **Products**: product, platform, tool, service, protocol, framework, claude-code, mcp, dspy
+- **Techniques**: inference, fine-tuning, training, optimization, quantization, alignment, benchmark, evaluation, speculative-decoding, diffusion, prompting, rag, kv-cache, testing, sandbox
+- **Engineering**: agentic-engineering, harness-engineering, ai-agent-engineering, context-engineering, context-management, multi-llm, workflow, software-engineering, formal-methods
+- **AI Agents**: ai-agents, multi-agent, orchestration, agents, coding-agents, memory-systems, agent-safety, openclaw
+- **Infrastructure**: platform, protocol, security, architecture, infrastructure, hardware, aws, database, serverless, isolation, nlp
+| **Meta**: comparison, timeline, controversy, prediction, review, safety, blogger, developer-tooling, ecosystem, search, methodology, governance, reliability, automation
 
 ### Guidelines
 - Every tag must be a useful category — avoid one-off tags that just restate the page title

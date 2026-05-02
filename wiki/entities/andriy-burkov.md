@@ -8,7 +8,7 @@ related: [[concepts/hundred-page-ml-book]], [[concepts/hundred-page-nlp-book]], 
 tags:
   - person
   - ai
-  - machine-learning
+  - model
   - nlp
   - education
   - books

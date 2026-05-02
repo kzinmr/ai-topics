@@ -4,7 +4,13 @@ type: concept
 description: "Identity and access management for AI agents — treating agents as Non-Human Identities (NHI) with ephemeral credentials, fine-grained authorization, and behavioral monitoring"
 category: concepts
 sub_category: AI Security
-tags: [agent-iam, non-human-identity, security, authorization, SaaS, OAuth]
+tags:
+  - agent-iam
+  - non-human-identity
+  - security
+  - authorization
+  - saas
+  - oauth
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

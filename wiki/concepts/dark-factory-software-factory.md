@@ -3,7 +3,11 @@ title: "Dark Factory Software Factory"
 type: concept
 created: 2026-04-13
 updated: 2026-04-13
-tags: [concept, agent-team-swarm, automation, strongdm]
+tags:
+  - concept
+  - multi-agent
+  - automation
+  - strongdm
 related: [agent-team-swarm, openai-symphony, anthropic-managed-agents]
 sources:
   - https://simonwillison.net/2026/Feb/7/software-factory/

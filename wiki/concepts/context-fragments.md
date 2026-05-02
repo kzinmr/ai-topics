@@ -5,7 +5,11 @@ created: 2026-04-16
 updated: 2026-04-16
 status: active
 depth: L2
-tags: [harness-engineering, memory, context-management, agent-design]
+tags:
+  - harness-engineering
+  - memory-systems
+  - context-management
+  - agentic-engineering
 source: https://x.com/vtrivedy10/status/... (Vivek Trivedy, Apr 2026)
 related:
   - harness-engineering

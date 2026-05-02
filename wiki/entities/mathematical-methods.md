@@ -10,7 +10,7 @@ tags:
   - mathematics
   - philosophy
   - ai-impact
-  - research-paper
+  - benchmark
   - terence-tao
 aliases:
   - Mathematical Methods and Human Thought in the Age of AI

@@ -1,7 +1,12 @@
 ---
 title: "HiSparse"
 type: concept
-tags: [memory-management, inference-optimization, sparse-attention, sglang, kv-cache]
+tags:
+  - memory-management
+  - optimization
+  - sparse-attention
+  - sglang
+  - kv-cache
 status: active
 created: 2026-04-27
 updated: 2026-04-27

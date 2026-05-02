@@ -3,7 +3,12 @@ title: "AI Coding Agent Criticism"
 type: concept
 created: 2026-04-13
 updated: 2026-04-13
-tags: [concept, ai-coding, criticism, debate, engagement-bias]
+tags:
+  - concept
+  - coding-agents
+  - criticism
+  - debate
+  - engagement-bias
 aliases: ["coding agent debate", "center bias"]
 related:
   - entities/armin-ronacher

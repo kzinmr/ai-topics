@@ -19,13 +19,14 @@ sources:
 tags:
   - person
   - computer-vision
-  - open-source-ai
-  - large-language-models
+  - open-source
+  - model
   - ai-research-leader
   - object-detection
   - multimodal-ai
   - embodied-ai
-  - ai-safety
+  - agent-safety
+
 ---
 
 

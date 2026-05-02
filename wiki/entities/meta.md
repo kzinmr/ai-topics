@@ -5,7 +5,7 @@ created: 2026-04-09
 updated: 2026-04-15
 tags:
   - company
-  - llm
+  - model
   - active
   - personal-ai
 aliases:

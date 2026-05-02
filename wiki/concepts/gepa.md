@@ -8,7 +8,12 @@ status: complete
 depth_tracking:
  created: 2026-04-20
  target_depth: concept-level
-tags: [llm-optimization, prompt-engineering, dspy, genetic-algorithms, irl-2026]
+tags:
+  - optimization
+  - prompting
+  - dspy
+  - genetic-algorithms
+  - irl-2026
 sources:
  - raw/articles/gepa-iclr2026-2026-04-20.md
  - raw/articles/2026-04-25-rlm-gepa-prompt-evolution.md

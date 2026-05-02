@@ -6,9 +6,9 @@ created: 2026-04-27
 updated: 2026-04-27
 tags:
   - rag
-  - retrieval-augmented-generation
-  - evals
-  - llm-engineering
+  - evaluation
+  - model
+
 ---
 
 # Jason Liu: RAG Philosophy & Framework

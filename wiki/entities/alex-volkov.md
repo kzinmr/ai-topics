@@ -3,7 +3,11 @@ title: Alex Volkov (@altryne)
 created: 2026-04-29
 updated: 2026-04-29
 type: entity
-tags: [person, ai-engineering, newsletter, podcast]
+tags:
+  - person
+  - agentic-engineering
+  - newsletter
+  - podcast
 sources:
   - https://open.substack.com/users/152216110-alex-volkov
   - https://substack.com/app-link/post?publication_id=1084089&post_id=195193203

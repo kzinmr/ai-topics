@@ -6,9 +6,9 @@ type: entity
 created: 2026-04-25
 updated: 2026-04-30
 tags:
-  - devtools
+  - developer-tooling
   - coding-agents
-  - ai-agent
+  - ai-agents
   - ide
   - ecosystem
 aliases:

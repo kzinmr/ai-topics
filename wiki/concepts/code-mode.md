@@ -1,6 +1,14 @@
 ---
 title: "CodeMode — LLM Code Execution Over Sequential Tool Calling"
-tags: [code-execution, monty, pydantic-ai, tool-calling, sandbox, RLM, mcp, cloudflare]
+tags:
+  - coding-agents
+  - monty
+  - pydantic-ai
+  - tool
+  - sandbox
+  - rlm
+  - mcp
+  - cloudflare
 created: 2026-04-16
 updated: 2026-04-30
 type: concept

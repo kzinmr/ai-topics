@@ -9,7 +9,7 @@ tags:
   - tech-commentary
   - ai-policy
   - web-culture
-  - coding
+  - coding-agents
 sources: []
 ---
 

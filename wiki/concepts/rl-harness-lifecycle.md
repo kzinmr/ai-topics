@@ -6,7 +6,7 @@ tags:
   - concept
   - reinforcement-learning
   - harness-engineering
-  - agent-architecture
+  - architecture
 aliases:
   - rl-harness-lifecycle
   - rl-harness-feedback-loop

@@ -3,7 +3,13 @@ title: "AI Bubble Economics"
 type: concept
 created: 2026-04-10
 updated: 2026-04-10
-tags: [ai-bubble, economics, subprime-ai, venture-capital, hype-cycle, market-analysis]
+tags:
+  - ai-bubble
+  - economics
+  - subprime-ai
+  - company
+  - hype-cycle
+  - market-analysis
 aliases: ["subprime-ai-crisis", "ai-economics-2026", "ai-bubble-burst"]
 related: [[concepts/claude-mythos-glasswing]], , [[concepts/cognitive-cost-of-agents]], [[concepts/ai-coding-reliability]]
 sources: []

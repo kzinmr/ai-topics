@@ -3,7 +3,13 @@ title: "Memory Scaling (メモリスケーリング)"
 created: 2026-04-29
 updated: 2026-04-29
 type: concept
-tags: [concept, memory, scaling, ai-agents, architecture, inference]
+tags:
+  - concept
+  - memory-systems
+  - scaling
+  - ai-agents
+  - architecture
+  - inference
 sources:
   - raw/articles/crawl-2026-04-29-databricks-memory-scaling.md
 ---

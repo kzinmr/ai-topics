@@ -3,7 +3,13 @@ title: "Anthropic's Memory Tool — Cognitionの戦略的追随"
 type: concept
 created: 2026-04-12
 updated: 2026-04-12
-tags: [anthropic, cognition, claude, devin, memory-tool, competitive-analysis, agentic-engineering]
+tags:
+  - anthropic
+  - cognition
+  - devin
+  - memory-tool
+  - competitive-analysis
+  - agentic-engineering
 sources:
   - url: "https://www.shloked.com/writing/claude-memory-tool"
     author: "Shlok Khemani"

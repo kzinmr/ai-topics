@@ -1,6 +1,11 @@
 ---
 title: "Reasoning Models"
-tags: [reasoning, models, thinking, coherence, hallucination]
+tags:
+  - reasoning
+  - model
+  - thinking
+  - coherence
+  - hallucination
 created: 2026-04-14
 updated: 2026-04-17
 type: concept

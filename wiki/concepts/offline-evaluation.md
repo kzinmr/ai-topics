@@ -8,7 +8,11 @@ status: complete
 depth_tracking:
  created: 2026-04-20
  target_depth: concept-level
-tags: [llm-evaluation, offline-testing, regression-testing, eval-pipeline]
+tags:
+  - evaluation
+  - offline-testing
+  - regression-testing
+  - eval-pipeline
 sources:
  - raw/articles/dspy-rlm-2026-04-20.md
  - raw/articles/llm-as-judge-scoring-bias-2026-04-20.md

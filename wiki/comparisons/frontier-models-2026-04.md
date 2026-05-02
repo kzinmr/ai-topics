@@ -3,7 +3,10 @@ title: "Frontier Models Comparison — April 2026"
 type: comparison
 created: 2026-04-09
 updated: 2026-04-24
-tags: [comparison, llm, research]
+tags:
+  - comparison
+  - model
+  - lab
 aliases: ["frontier-models-april-2026", "LLM landscape 2026-04"]
 sources: []
 ---

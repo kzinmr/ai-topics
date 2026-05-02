@@ -2,7 +2,12 @@
 title: "Docker Sandbox MicroVM API"
 created: 2026-04-30
 updated: 2026-04-30
-tags: [sandbox, docker, microvm, agent-infrastructure, security]
+tags:
+  - sandbox
+  - docker
+  - microvm
+  - ai-agents
+  - security
 aliases: ["docker-sandbox-microvm", "sandboxd-api", "docker-sandboxes"]
 related: [[concepts/agent-sandboxing-patterns]], [[concepts/agent-sandboxing]], [[entities/rivet-dev]]
 sources:

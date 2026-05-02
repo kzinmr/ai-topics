@@ -1,7 +1,10 @@
 ---
 title: "Context Management"
 type: concept
-tags: [context-management, llm, context-window, agent-memory]
+tags:
+  - context-management
+  - model
+  - ai-agents
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

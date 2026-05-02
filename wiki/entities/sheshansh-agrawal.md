@@ -5,14 +5,12 @@ created: 2026-04-17
 updated: 2026-04-3004-17
 tags:
   - person
-  - researcher
   - engineer
   - search
   - information-retrieval
-  - agentic-search
-  - retrieval
+  - rag
   - reranking
-  - rl
+  - training
   - ai
 related:
   - agentic-retrieval

@@ -8,7 +8,7 @@ updated: 2026-04-28
 tags:
   - concept
   - audio
-  - speech
+  - multimodal
   - tts
   - asr
   - voice-agents

@@ -3,7 +3,11 @@ title: "Mesa Filesystem"
 type: concept
 created: 2026-04-30
 updated: 2026-04-30
-tags: [concept, filesystem, ai-agents, enterprise]
+tags:
+  - concept
+  - filesystem
+  - ai-agents
+  - company
 sources:
   - raw/articles/2026-04-28_mesa-filesystem-ai-agents.md
 ---

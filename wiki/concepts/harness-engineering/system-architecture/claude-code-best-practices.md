@@ -12,11 +12,10 @@ created: 2026-04-12
 updated: 2026-04-20
 tags:
   - concept
-  - system-architecture
+  - architecture
   - harness-engineering
   - anthropic
-  - claude-code
-  - prompt-engineering
+  - prompting
   - mcp
   - subagents
   - workflow-patterns

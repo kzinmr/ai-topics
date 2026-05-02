@@ -10,7 +10,7 @@ tags:
   - concept
   - sandbox
   - pydantic
-  - code-execution
+  - coding-agents
   - agent-safety
 status: complete
 sources:

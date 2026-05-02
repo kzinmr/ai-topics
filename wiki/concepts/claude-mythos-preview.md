@@ -3,7 +3,13 @@ title: "Claude Mythos Preview"
 type: concept
 created: 2026-04-13
 updated: 2026-04-13
-tags: [concept, anthropic, frontier-models, cybersecurity, red-team, dual-use]
+tags:
+  - concept
+  - anthropic
+  - model
+  - security
+  - red-team
+  - dual-use
 aliases: ["mythos preview", "anthropic frontier red team 2026"]
 related:
   - concepts/anthropic-openclaw-conflict

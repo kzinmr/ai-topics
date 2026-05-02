@@ -1,7 +1,10 @@
 ---
 title: "Fine-Tuning"
 type: concept
-tags: [fine-tuning, llm-training, transfer-learning]
+tags:
+  - fine-tuning
+  - training
+  - transfer-learning
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

@@ -3,7 +3,11 @@ title: "Project Glasswing"
 type: concept
 created: 2026-04-09
 updated: 2026-04-09
-tags: [concept, ai-safety, security, emerging]
+tags:
+  - concept
+  - agent-safety
+  - security
+  - emerging
 aliases: ["Anthropic Project Glasswing"]
 sources: []
 ---

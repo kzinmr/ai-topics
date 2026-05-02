@@ -17,9 +17,10 @@ tags:
   - person
   - opinion-leader
   - property-based-testing
-  - ai-evals
-  - ai-coding
+  - evaluation
+  - coding-agents
   - software-correctness
+
 ---
 
 # David R. MacIver (DRMacIver)

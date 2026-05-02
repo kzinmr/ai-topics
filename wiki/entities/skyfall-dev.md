@@ -1,6 +1,11 @@
 ---
 title: "Skyfall Developer (Mahad Kalam)"
-tags: [ai-agents, llm, entity, rag, inference]
+tags:
+  - ai-agents
+  - model
+  - entity
+  - rag
+  - inference
 created: 2026-04-24
 updated: 2026-04-24
 type: entity

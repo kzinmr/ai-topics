@@ -1,7 +1,11 @@
 ---
 title: "MLX"
 type: concept
-tags: [mlx, apple-silicon, inference, machine-learning]
+tags:
+  - mlx
+  - apple-silicon
+  - inference
+  - model
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

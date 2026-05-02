@@ -4,7 +4,13 @@ type: concept
 description: "Agent workflow architecture pattern using PostgreSQL with filesystem extensions (fs9) — files for artifacts, tables for queryable state, SQL as the glue"
 category: concepts
 sub_category: AI Agent Architecture
-tags: [db9, postgresql, filesystem, agent-workflows, RAG, data-architecture]
+tags:
+  - db9
+  - postgresql
+  - filesystem
+  - agent-workflows
+  - rag
+  - data-architecture
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

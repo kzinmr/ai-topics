@@ -10,11 +10,10 @@ tags:
   - x-account
   - ai
   - local-llm
-  - llama.cpp
   - ggml
-  - gguf
+  - quantization
   - whisper.cpp
-  - hugging-face
+  - huggingface
   - open-source
   - fabrice-bellard-lineage
 sources: []

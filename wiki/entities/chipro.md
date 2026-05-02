@@ -7,7 +7,7 @@ updated: 2026-04-10
 tags:
   - person
   - ml-systems
-  - ai-engineering
+  - agentic-engineering
   - production-ml
   - education
 sources: []

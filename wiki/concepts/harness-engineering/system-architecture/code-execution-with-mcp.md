@@ -10,11 +10,11 @@ created: 2026-04-12
 updated: 2026-05-01
 tags:
   - concept
-  - system-architecture
+  - architecture
   - harness-engineering
   - anthropic
   - mcp
-  - code-execution
+  - coding-agents
 status: draft
 sources:
   - "https://www.anthropic.com/engineering/code-execution-with-mcp"

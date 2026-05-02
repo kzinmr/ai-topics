@@ -3,7 +3,12 @@ title: "Tasteful Tokenmaxxing — Quality-Over-Quantity AI Adoption"
 type: concept
 created: 2026-04-23
 updated: 2026-04-23
-tags: [ai-agents, optimization, technique, enterprise, emerging]
+tags:
+  - ai-agents
+  - optimization
+  - technique
+  - company
+  - emerging
 aliases: ["tokenmaxxing", "tasteful-tokenmaxxing"]
 sources:
   - https://substack.com/app-link/post?publication_id=1084089&post_id=195193203

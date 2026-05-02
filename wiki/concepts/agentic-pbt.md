@@ -13,10 +13,11 @@ sources:
   - https://antithesis.com/blog/2026/hegel/
 tags:
   - concept
-  - ai-coding
+  - coding-agents
   - property-based-testing
-  - ai-evals
+  - evaluation
   - software-correctness
+
 ---
 
 # Agentic Property-Based Testing

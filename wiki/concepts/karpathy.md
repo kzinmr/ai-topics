@@ -7,7 +7,6 @@ aliases:
 tags:
   - concept
   - person
-  - ai-researcher
 status: complete
 description: "Karpathy (Andrej Karpathy) — AI researcher, educator, and OpenAI/DirectX co-founder. Entity: entities/andrej-karpathy.md"
 created: 2026-04-09

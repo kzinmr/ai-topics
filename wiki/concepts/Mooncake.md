@@ -5,7 +5,12 @@ status: incomplete
 description: "Mooncake is a KVCache-centric disaggregated architecture for serving large language models, used by Moonshot AI's Kimi chatbot."
 created: 2026-04-27
 updated: 2026-04-28
-tags: [concept, llm-serving, inference, kv-cache, architecture, moonshot]
+tags:
+  - concept
+  - inference
+  - kv-cache
+  - architecture
+  - moonshot
 aliases: [Mooncake Architecture, Mooncake KVCache]
 related: [[concepts/inference/vllm]], [[concepts/inference/sglang]], [[concepts/kvcache]], [[entities/moonshot-ai]]
 sources: [https://arxiv.org/abs/2407.00079]

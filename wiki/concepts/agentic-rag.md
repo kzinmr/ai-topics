@@ -3,7 +3,12 @@ title: "Agentic RAG (Retrieval-Augmented Generation)"
 type: concept
 created: 2026-04-21
 updated: 2026-04-21
-tags: [concept, agentic-rag, retrieval, llm, inference]
+tags:
+  - concept
+  - agentic-rag
+  - rag
+  - model
+  - inference
 aliases: ["agentic-retrieval", "agentic-RAG"]
 sources:
  - path: raw/articles/crawl-2026-04-21-agentic-alternative-graphrag.md

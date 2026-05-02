@@ -3,7 +3,12 @@ title: "Zach Tratar"
 type: entity
 created: 2026-04-30
 updated: 2026-04-30
-tags: [entity, entrepreneur, ai, notion, context-engineering]
+tags:
+  - entity
+  - person
+  - ai
+  - notion
+  - context-engineering
 related: [headless-saas, ai-agent-memory-middleware, context-graph]
 sources:
   - https://x.com/zachtratar

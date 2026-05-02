@@ -3,7 +3,15 @@ title: "AI Industry News (The Signal — Apr 26)"
 type: concept
 created: 2026-04-27
 updated: 2026-04-27
-tags: [newsletter, industry-roundup, openai, anthropic, spacex, cursor, agents, enterprise]
+tags:
+  - newsletter
+  - industry-roundup
+  - openai
+  - anthropic
+  - spacex
+  - cursor
+  - agents
+  - company
 aliases: ["The Signal Apr 26 2026", "OpenAI Is Cooking", "Anthropic Sweep", "SpaceX Courts Cursor"]
 sources:
   - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md

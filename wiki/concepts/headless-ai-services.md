@@ -3,7 +3,12 @@ title: "Headless AI Services"
 type: concept
 created: 2026-04-20
 updated: 2026-04-30
-tags: [concept, ai-agents, api-first, saas, agentic-engineering]
+tags:
+  - concept
+  - ai-agents
+  - api-first
+  - product
+  - agentic-engineering
 related: [agentic-engineering, api-first-development, mcp, headless-saas]
 sources: []
 ---

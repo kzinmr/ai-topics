@@ -3,7 +3,10 @@ title: "Periodic AI"
 type: entity
 created: 2026-04-30
 updated: 2026-04-30
-tags: [company, rl, research]
+tags:
+  - company
+  - training
+  - lab
 sources:
   - raw/articles/2026-04-28_agarwl-iclr-rl-talk.md
 ---

@@ -6,7 +6,7 @@ aliases:
   - kimi-k2
 tags:
   - company
-  - llm
+  - model
   - china
   - open-source
 created: 2026-04-30

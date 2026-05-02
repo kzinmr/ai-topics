@@ -8,8 +8,7 @@ updated: 2026-04-30
 tags:
   - entity
   - fine-tuning
-  - lora
-  - llm
+  - model
   - sakana-ai
 aliases:
   - Low-Rank Adaptation

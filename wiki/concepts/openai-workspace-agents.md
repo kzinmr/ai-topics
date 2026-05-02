@@ -3,7 +3,14 @@ title: "OpenAI Workspace Agents"
 type: concept
 created: 2026-04-27
 updated: 2026-04-29
-tags: [product, platform, openai, ai-agents, enterprise, workspace, codex]
+tags:
+  - product
+  - platform
+  - openai
+  - ai-agents
+  - company
+  - workspace
+  - codex
 aliases: ["Workspace Agents", "OpenAI Business Agents"]
 sources:
   - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md

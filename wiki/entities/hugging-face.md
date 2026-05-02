@@ -9,7 +9,7 @@ tags:
   - company
   - ai-infrastructure
   - open-source
-  - llm
+  - model
   - ml-platform
   - nlp
 url: https://huggingface.co/

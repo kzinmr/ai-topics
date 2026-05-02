@@ -3,7 +3,14 @@ title: "Infrastructure-Level Sandbox"
 type: concept
 created: 2026-04-10
 updated: 2026-04-16
-tags: [concept, ai-agents, security, sandboxing, isolation, coding-agents, infrastructure]
+tags:
+  - concept
+  - ai-agents
+  - security
+  - sandbox
+  - isolation
+  - coding-agents
+  - infrastructure
 aliases: ["agent-isolation", "ai-sandbox-technologies", "infrastructure-sandbox"]
 related: [[concepts/sandbox/in-process]], [[concepts/anthropic-managed-agents]], [[concepts/ai-coding-reliability]], 
 depth: L2

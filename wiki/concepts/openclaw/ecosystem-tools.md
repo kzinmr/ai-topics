@@ -11,7 +11,7 @@ tags:
   - concept
   - openclaw
   - mcp
-  - developer-tools
+  - developer-tooling
   - ecosystem
 related:
   - concepts/openclaw/_index

@@ -5,8 +5,7 @@ created: 2026-04-30
 updated: 2026-04-30
 tags:
   - benchmark
-  - leaderboard
-  - llm-evaluation
+  - evaluation
   - long-context
 aliases:
   - contextarena-ai

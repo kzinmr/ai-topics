@@ -3,7 +3,12 @@ title: "Knowledgator"
 type: entity
 created: 2026-05-01
 updated: 2026-05-01
-tags: [organization, research, open-source, classification, nlp]
+tags:
+  - organization
+  - lab
+  - open-source
+  - classification
+  - nlp
 aliases: ["knowledgator", "Knowledgator Engineering"]
 sources:
   - https://knowledgator.com

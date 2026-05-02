@@ -7,11 +7,11 @@ depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_though
 tags:
   - person
   - reinforcement-learning
-  - rlhf
+  - fine-tuning
   - openai
   - anthropic
   - thinking-machines-lab
-  - ai-safety
+  - agent-safety
 sources: []
 ---
 

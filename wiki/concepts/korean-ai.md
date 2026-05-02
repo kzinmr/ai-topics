@@ -6,7 +6,7 @@ updated: 2026-04-30
 tags:
   - concept
   - korea
-  - llm
+  - model
   - ecosystem
   - model-rankings
 aliases:

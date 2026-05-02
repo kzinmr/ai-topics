@@ -1,7 +1,15 @@
 ---
 title: "Dolt"
 type: entity
-tags: [dolt, dolthub, version-control, database, sql, prolly-tree, mcp, agent-infrastructure]
+tags:
+  - dolt
+  - dolthub
+  - version-control
+  - database
+  - sql
+  - prolly-tree
+  - mcp
+  - ai-agents
 created: 2026-05-01
 updated: 2026-05-01
 aliases: [DoltHub, Dolt Database, Doltgres, DoltLite, Prolly Tree]

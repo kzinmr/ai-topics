@@ -3,8 +3,8 @@ title: "Context Rot"
 tags:
   - concept
   - rag
-  - llm
-  - context-window
+  - model
+  - context-management
   - evaluation
 created: 2026-04-30
 updated: 2026-04-30

@@ -6,9 +6,8 @@ updated: 2026-04-10
 source: pleias.fr
 tags:
   - person
-  - ai-researcher
   - open-source
-  - llm
+  - model
   - digital-humanities
   - wikipedia
   - french-tech

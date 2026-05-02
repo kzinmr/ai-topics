@@ -3,7 +3,11 @@ title: "GPT-5.5"
 type: concept
 created: 2026-04-27
 updated: 2026-04-27
-tags: [model, llm, openai, gpt, frontier-models, agent, benchmark]
+tags:
+  - model
+  - openai
+  - ai-agents
+  - benchmark
 aliases: ["GPT-5.5", "OpenAI SPUD"]
 sources:
   - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md

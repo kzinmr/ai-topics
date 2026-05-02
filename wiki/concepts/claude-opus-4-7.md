@@ -10,7 +10,6 @@ tags:
   - concept
   - anthropic
   - model
-  - llm
 status: complete
 sources:
   - url: "https://www.anthropic.com/news/claude-opus-4-7"

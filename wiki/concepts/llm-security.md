@@ -3,7 +3,12 @@ title: "LLM Security"
 type: concept
 created: 2026-04-25
 updated: 2026-05-01
-tags: [concept, security, ai-safety, evaluation, red-teaming, adversarial]
+tags:
+  - concept
+  - security
+  - agent-safety
+  - evaluation
+  - adversarial
 status: L2
 sources:
   - "raw/articles/simonwillison.net--2026-apr-30-gpt-55-cyber-capabilities.md"

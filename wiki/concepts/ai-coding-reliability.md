@@ -3,7 +3,12 @@ title: "AI Coding Reliability"
 type: concept
 created: 2026-04-10
 updated: 2026-04-10
-tags: [ai-coding, reliability, production-failures, software-engineering, agentic-coding, code-quality]
+tags:
+  - coding-agents
+  - reliability
+  - production-failures
+  - software-engineering
+  - code-quality
 aliases: ["ai-code-outages", "ai-generated-code-bugs", "ai-coding-reliability-crisis"]
 related: , [[concepts/cognitive-cost-of-agents]], [[concepts/claude-mythos-glasswing]], [[concepts/ai-bubble-economics]]
 sources: []

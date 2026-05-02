@@ -11,8 +11,8 @@ updated: 2026-05-01
 tags:
   - concept
   - audio
-  - speech
-  - tokenizer
+  - multimodal
+  - model
   - codec
 status: L3
 related:

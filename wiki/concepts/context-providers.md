@@ -3,7 +3,12 @@ title: "Context Providers — The Missing Layer Between Agents and Tools"
 type: concept
 created: 2026-04-30
 updated: 2026-04-30
-tags: [agent-architecture, context-management, tool-use, multi-agent, subagents]
+tags:
+  - architecture
+  - context-management
+  - tool
+  - multi-agent
+  - subagents
 sources:
   - raw/articles/2026-context-providers-the-missing-layer-between-agents-and-tools.md
 related:

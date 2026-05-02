@@ -3,7 +3,13 @@ title: Claude Code Tips
 type: concept
 created: 2026-04-27
 updated: 2026-04-27
-tags: [concept, agentic-engineering, claude-code, dev-tooling, docker, security]
+tags:
+  - concept
+  - agentic-engineering
+  - anthropic
+  - dev-tooling
+  - docker
+  - security
 aliases: ["claude-code-best-practices", "claude-code-docker"]
 sources:
   - raw/articles/timsh.org--claude-inside-docker--6842418e.md

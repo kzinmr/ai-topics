@@ -3,7 +3,11 @@ title: "LLM Evaluation Harness"
 created: 2026-04-12
 updated: 2026-04-12
 type: concept
-tags: [ai-agents, framework, technique, research]
+tags:
+  - ai-agents
+  - framework
+  - technique
+  - lab
 aliases: ["lm-evaluation-harness", "LLM Eval Harness"]
 sources:
   - raw/articles/lenny-podcast-ai-evals-hottest-skill-hamel-shreya-2025-09.md

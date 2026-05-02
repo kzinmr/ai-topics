@@ -3,7 +3,14 @@ title: Agentic Search
 created: 2026-04-30
 updated: 2026-04-30
 type: concept
-tags: [search, ai-agents, information-retrieval, deep-research, reranking, coding-agents, rl-training]
+tags:
+  - search
+  - ai-agents
+  - information-retrieval
+  - deep-research
+  - reranking
+  - coding-agents
+  - training
 aliases:
   - deep-research-retrieval
   - agent-query-mismatch

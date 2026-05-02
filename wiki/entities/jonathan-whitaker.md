@@ -8,7 +8,7 @@ tags:
   - person
   - ai
   - education
-  - generative-models
+  - model
   - fastai
   - diffusion
   - open-source

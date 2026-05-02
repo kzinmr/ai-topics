@@ -3,7 +3,11 @@ title: "Ivan Burazin"
 type: entity
 created: 2026-04-30
 updated: 2026-04-30
-tags: [entity, entrepreneur, ai-infra, daytona]
+tags:
+  - entity
+  - person
+  - ai-infra
+  - daytona
 related: [headless-saas, headless-ai-services, agent-serverless]
 sources:
   - https://x.com/ivanburazin

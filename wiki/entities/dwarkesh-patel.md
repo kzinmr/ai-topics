@@ -8,9 +8,9 @@ tags:
   - person
   - podcaster
   - blogger
-  - ai-researcher
   - hn-popular
   - author
+
 ---
 
 # Dwarkesh Patel

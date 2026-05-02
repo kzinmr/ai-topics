@@ -3,7 +3,11 @@ title: "Agentic Alternative to GraphRAG"
 type: concept
 created: 2026-04-21
 updated: 2026-04-21
-tags: [concept, agentic-rag, retrieval, knowledge-graph, llm]
+tags:
+  - concept
+  - agentic-rag
+  - rag
+  - model
 aliases: ["metadata-search-tool", "agentic-graphrag"]
 sources:
  - path: raw/articles/crawl-2026-04-21-agentic-alternative-graphrag.md

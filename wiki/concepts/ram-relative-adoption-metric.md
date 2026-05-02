@@ -3,7 +3,13 @@ title: "RAM — Relative Adoption Metric"
 type: concept
 created: 2026-04-14
 updated: 2026-04-14
-tags: [concept, open-models, model-evaluation, nathan-lambert, atom-project, ai-ecosystem-metrics]
+tags:
+  - concept
+  - open-source
+  - evaluation
+  - nathan-lambert
+  - atom-project
+  - ai-ecosystem-metrics
 related:
   - entities/nathan-lambert
   - concepts/atom-project

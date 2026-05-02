@@ -10,7 +10,7 @@ updated: 2026-04-15
 tags:
   - concept
   - organization
-  - solo-founder
+  - person
   - super-ic
 status: draft
 depth_tracking:

@@ -6,7 +6,7 @@ updated: 2026-04-30
 tags:
   - entity
   - open-source
-  - agent-infrastructure
+  - ai-agents
   - backend
   - agent-harness
   - rust

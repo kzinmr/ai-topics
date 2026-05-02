@@ -8,7 +8,8 @@ tags:
   - context-engineering
   - rag
   - agents
-  - llm-engineering
+  - model
+
 ---
 
 # Jason Liu: Context Engineering

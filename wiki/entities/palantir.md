@@ -3,7 +3,11 @@ title: "Palantir Technologies"
 type: entity
 created: 2026-04-30
 updated: 2026-04-30
-tags: [company, enterprise-ai, decision-centric, ontology, agents]
+tags:
+  - company
+  - decision-centric
+  - ontology
+  - agents
 sources:
   - raw/articles/2026-04-28_connecting-agents-to-decisions.md
   - https://x.com/i/article/2049136883528011954

@@ -8,7 +8,11 @@ status: emerging
 depth_tracking:
  created: 2026-04-20
  target_depth: concept-level
-tags: [llm-architecture, inference-time-scaling, self-optimization, context-management]
+tags:
+  - llm-architecture
+  - inference
+  - self-optimization
+  - context-management
 sources:
  - raw/articles/rlms-recursive-language-models-2026-04-20.md
  - raw/articles/gepa-iclr2026-2026-04-20.md

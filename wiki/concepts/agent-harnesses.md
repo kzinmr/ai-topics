@@ -3,7 +3,11 @@ title: "Agent Harnesses"
 type: concept
 created: 2026-04-24
 updated: 2026-04-24
-tags: [ai-agents, agent-frameworks, rl, minimalism, browser-agents]
+tags:
+  - ai-agents
+  - training
+  - minimalism
+  - browser-agents
 aliases: ["The Bitter Lesson of Agent Harnesses", "Agent Frameworks Philosophy"]
 sources: []
 ---

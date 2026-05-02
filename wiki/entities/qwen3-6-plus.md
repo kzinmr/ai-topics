@@ -4,6 +4,11 @@ type: entity
 created: 2026-04-10
 updated: 2026-04-21
 tags:
+  - entity
+  - model
+  - alibaba
+  - qwen
+  - ai-agents
 - entity
 - model
 - alibaba

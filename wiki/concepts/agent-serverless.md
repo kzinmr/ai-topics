@@ -11,7 +11,15 @@ aliases:
 description: "Serverless deployment pattern for AI agents — managed environments with built-in SaaS integration, permissions, and security. Includes enterprise plans with log persistence, auto-scaling, and turnkey agent infrastructure."
 category: concepts
 sub_category: AI Agent Architecture
-tags: [ai-agents, serverless, managed-services, saas-integration, security, permissions, logs, enterprise]
+tags:
+  - ai-agents
+  - serverless
+  - managed-services
+  - saas-integration
+  - security
+  - permissions
+  - logs
+  - company
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

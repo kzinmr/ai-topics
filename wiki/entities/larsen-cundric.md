@@ -7,7 +7,7 @@ tags:
   - person
   - ai-agents
   - harness-engineering
-  - sandboxing
+  - sandbox
 status: active
 sources:
   - url: "https://browser-use.com/posts/two-ways-to-sandbox-agents"

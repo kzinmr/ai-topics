@@ -3,7 +3,11 @@ title: DSPy
 created: 2026-04-25
 updated: 2026-04-30
 type: entity
-tags: [open-source, framework, tool, NLP]
+tags:
+  - open-source
+  - framework
+  - tool
+  - nlp
 sources:
   - raw/articles/crawl-2026-04-29-dspy-adoption-gap-khattabs-law.md
 ---

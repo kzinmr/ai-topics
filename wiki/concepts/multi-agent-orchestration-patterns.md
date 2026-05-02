@@ -3,7 +3,11 @@ title: "Multi-Agent Orchestration Patterns"
 created: 2026-04-24
 updated: 2026-04-24
 type: concept
-tags: [multi-agent, orchestration, design-patterns, agent-swarm, architecture]
+tags:
+  - multi-agent
+  - orchestration
+  - design-patterns
+  - architecture
 sources:
   - raw/articles/crawl-2026-04-24-multi-agent-production-architecture-2026.md
 ---

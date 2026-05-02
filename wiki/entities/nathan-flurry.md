@@ -2,7 +2,10 @@
 title: "Nathan Flurry"
 created: 2026-04-30
 updated: 2026-04-30
-tags: [person, engineer, founder, agent-infrastructure]
+tags:
+  - person
+  - engineer
+  - ai-agents
 aliases: ["nathanflurry"]
 related: [[entities/rivet-dev]], [[concepts/docker-sandbox-microvm-api]], [[concepts/agent-sandboxing]]
 sources:

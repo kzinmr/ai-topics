@@ -1,7 +1,12 @@
 ---
 title: "LangChain"
 type: entity
-tags: [langchain, orchestration, framework, agent-engineering, llm-framework]
+tags:
+  - langchain
+  - orchestration
+  - framework
+  - agentic-engineering
+  - llm-framework
 created: 2026-04-27
 updated: 2026-04-30
 aliases: [LangChain Framework, LangChain AI]

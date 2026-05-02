@@ -10,7 +10,7 @@ updated: 2026-04-29
 tags:
   - concept
   - image-generation
-  - generative-ai
+  - model
   - multimodal
 status: complete
 sources:

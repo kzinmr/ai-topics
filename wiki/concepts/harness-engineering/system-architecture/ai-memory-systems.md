@@ -10,9 +10,9 @@ created: 2026-04-13
 updated: 2026-04-13
 tags:
   - concept
-  - memory
+  - memory-systems
   - context-engineering
-  - agent-architecture
+  - architecture
 status: draft
 sources: []
 ---

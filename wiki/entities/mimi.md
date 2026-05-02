@@ -5,7 +5,7 @@ tags:
   - entity
   - audio-codec
   - speech-tokenizer
-  - tokenizer
+  - model
   - streaming
   - kyutai
 created: 2026-05-01

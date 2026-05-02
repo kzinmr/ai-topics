@@ -3,7 +3,18 @@ title: "JavaScript Runtimes for AI Agents"
 type: concept
 created: 2026-04-16
 updated: 2026-04-16
-tags: [concept, ai-agents, sandboxing, javascript, bun, deno, nodejs, runtime, v8, javascriptcore, process-isolation]
+tags:
+  - concept
+  - ai-agents
+  - sandbox
+  - javascript
+  - bun
+  - deno
+  - nodejs
+  - runtime
+  - v8
+  - javascriptcore
+  - process-isolation
 aliases: ["js-runtime", "javascript-runtime-comparison", "bun-deno-node", "agent-js-runtime"]
 related: [[concepts/harness-engineering/system-architecture/infrastructure-noise]], [[concepts/sandbox/in-process]], [[concepts/harness-engineering]], [[jarred-sumner]], [[ryan-dahl]]
 depth: L2

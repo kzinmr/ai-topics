@@ -1,6 +1,8 @@
 ---
 title: "ColBERT — Late Interaction Retrieval"
-tags: [research, information-retrieval]
+tags:
+  - lab
+  - information-retrieval
 created: 2026-04-24
 updated: 2026-04-24
 type: sub-entity

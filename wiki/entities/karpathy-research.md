@@ -1,6 +1,8 @@
 ---
 title: "Karpathy Research Contributions"
-tags: [person, research]
+tags:
+  - person
+  - lab
 created: 2026-04-27
 updated: 2026-04-27
 type: entity

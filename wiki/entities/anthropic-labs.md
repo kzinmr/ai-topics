@@ -3,7 +3,11 @@ title: "Anthropic Labs"
 type: entity
 created: 2026-04-25
 updated: 2026-04-25
-tags: [company, product, anthropic, labs]
+tags:
+  - company
+  - product
+  - anthropic
+  - lab
 aliases: ["Anthropic Labs Division"]
 sources: []
 ---

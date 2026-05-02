@@ -11,11 +11,11 @@ tags:
   - structured-outputs
   - pydantic
   - instructor
-  - llm-engineering
-  - developer-tools
+  - model
+  - developer-tooling
   - rag
   - context-engineering
-  - evals
+  - evaluation
 sources: []
 ---
 

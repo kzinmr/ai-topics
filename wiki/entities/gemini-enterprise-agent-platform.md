@@ -3,7 +3,11 @@ title: Gemini Enterprise Agent Platform
 created: 2026-05-01
 updated: 2026-05-01
 type: entity
-tags: [platform, agent-infrastructure, google, enterprise, ai-agents]
+tags:
+  - platform
+  - ai-agents
+  - google
+  - company
 sources: [raw/articles/2026-04-22_google-cloud-next-gemini-enterprise-agent-platform.md]
 ---
 

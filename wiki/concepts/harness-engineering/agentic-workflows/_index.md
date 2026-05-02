@@ -12,7 +12,7 @@ tags:
   - methodology
   - index
   - harness-engineering
-  - agentic-workflows
+  - workflow
 status: active
 parent: harness-engineering
 sources: []

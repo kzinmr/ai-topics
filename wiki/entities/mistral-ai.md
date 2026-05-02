@@ -3,7 +3,12 @@ title: "Mistral AI"
 type: entity
 created: 2026-04-30
 updated: 2026-04-30
-tags: [company, ai-lab, open-weights, coding-agents, mistral]
+tags:
+  - company
+  - lab
+  - open-source
+  - coding-agents
+  - mistral
 sources:
   - raw/articles/mistral-medium-3-5-vibe-remote-agents.md
   - https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5

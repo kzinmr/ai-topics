@@ -7,7 +7,7 @@ depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_though
 tags:
   - person
   - openai
-  - gpt
+  - model
   - whisper
   - clip
   - multimodal

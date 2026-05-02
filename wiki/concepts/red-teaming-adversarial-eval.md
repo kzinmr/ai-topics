@@ -3,7 +3,12 @@ title: "Red Teaming & Adversarial Evaluation for AI Agents"
 created: 2026-04-24
 updated: 2026-04-24
 type: concept
-tags: [evaluation, red-teaming, adversarial, agent-security, testing]
+tags:
+  - evaluation
+  - agent-safety
+  - adversarial
+  - agent-security
+  - testing
 sources:
   - raw/articles/crawl-2026-04-24-microsoft-red-teaming-agents.md
   - raw/articles/crawl-2026-04-24-debugging-ai-agents-production-2026.md

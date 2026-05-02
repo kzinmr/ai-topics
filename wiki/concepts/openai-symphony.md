@@ -3,7 +3,12 @@ title: "OpenAI Symphony"
 type: concept
 created: 2026-04-13
 updated: 2026-04-29
-tags: [concept, agent-team-swarm, openai, orchestration, coding-agents]
+tags:
+  - concept
+  - multi-agent
+  - openai
+  - orchestration
+  - coding-agents
 related: [agent-team-swarm, harness-engineering, dark-factory-software-factory]
 sources:
   - https://github.com/openai/symphony

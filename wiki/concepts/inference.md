@@ -9,7 +9,6 @@ tags:
   - inference
   - mlops
   - local-llm
-  - serving
 status: active
 description: "LLM推論の3大エンジン: llama.cpp (ローカルCPU/GPU), vLLM (サーバー高スループット), SGLang (エージェント最適化)"
 created: 2026-04-09

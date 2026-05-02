@@ -3,7 +3,11 @@ title: Autoreason
 created: 2026-04-27
 updated: 2026-04-27
 type: concept
-tags: [reasoning, research, nous-research, karpathy]
+tags:
+  - reasoning
+  - lab
+  - nous-research
+  - karpathy
 aliases: ["AutoReason", "Autoreasoning"]
 sources:
   - https://github.com/NousResearch/autoreason

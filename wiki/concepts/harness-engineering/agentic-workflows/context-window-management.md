@@ -9,7 +9,7 @@ updated: 2026-04-12
 tags:
   - concept
   - agentic-engineering
-  - prompt-engineering
+  - prompting
 status: draft
 sources:
   - "https://simonwillison.net/guides/agentic-engineering-patterns/context-window-management/"

@@ -9,6 +9,11 @@ aliases:
 created: 2026-04-13
 updated: 2026-04-13
 tags:
+  - entity
+  - technology
+  - ai-agents
+  - browser-agent
+  - openai
 - entity
 - technology
 - computer-use

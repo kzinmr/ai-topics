@@ -5,7 +5,7 @@ created: 2026-04-30
 updated: 2026-04-30
 tags:
   - concept
-  - llm
+  - model
   - language-models
 status: complete
 description: "Large language model architecture, training, and research."

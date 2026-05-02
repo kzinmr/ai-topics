@@ -3,7 +3,12 @@ title: "CoALA — Cognitive Architectures for Language Agents"
 type: concept
 created: 2026-04-16
 updated: 2026-04-16
-tags: [framework, cognitive-architecture, language-agents, memory, decision-making]
+tags:
+  - framework
+  - cognitive-architecture
+  - language-agents
+  - memory-systems
+  - decision-making
 aliases: [Cognitive Architectures for Language Agents]
 related:
   - concepts/ungrounded-meaning

@@ -3,7 +3,13 @@ title: "Open Model Consortium"
 type: concept
 created: 2026-04-13
 updated: 2026-04-13
-tags: [concept, open-source, models, consortium, nvidia, allen-institute]
+tags:
+  - concept
+  - open-source
+  - model
+  - consortium
+  - nvidia
+  - allen-institute
 aliases: ["open-model lab", "open foundation models"]
 related:
   - entities/nathan-lambert

@@ -8,8 +8,8 @@ tags:
   - person
   - x-account
   - ai
-  - llm-engineering
-  - agent-evaluation
+  - model
+  - evaluation
   - rag
   - llm-as-a-judge
   - galileo

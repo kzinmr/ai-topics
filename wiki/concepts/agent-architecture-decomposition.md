@@ -1,7 +1,13 @@
 ---
 title: "Agent Architecture Decomposition: Model / Runtime / Harness"
 category: concept
-tags: [ai-agent, architecture, open-models, open-runtime, open-harness, mcp]
+tags:
+  - ai-agents
+  - architecture
+  - open-source
+  - open-runtime
+  - open-harness
+  - mcp
 created: 2026-04-30
 updated: 2026-04-30
 ---

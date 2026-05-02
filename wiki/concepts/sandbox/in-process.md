@@ -3,7 +3,14 @@ title: "In-Process Sandbox"
 type: concept
 created: 2026-04-16
 updated: 2026-04-16
-tags: [concept, ai-agents, security, sandboxing, capabilities, monty, in-process]
+tags:
+  - concept
+  - ai-agents
+  - security
+  - sandbox
+  - capabilities
+  - monty
+  - in-process
 aliases: ["monty-sandbox", "capabilities-based-security", "monty", "capability-sandbox"]
 related: [[concepts/harness-engineering/system-architecture/infrastructure-noise]], [[concepts/harness-engineering]], [[samuel-colvin]]
 depth: L2

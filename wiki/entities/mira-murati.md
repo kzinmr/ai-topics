@@ -8,7 +8,7 @@ tags:
   - ai-executive
   - openai
   - thinking-machines-lab
-  - ai-safety
+  - agent-safety
 sources: []
 ---
 

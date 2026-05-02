@@ -1,7 +1,11 @@
 ---
 title: "Self-Learning Agents"
 type: concept
-tags: [self-learning, rl, agent-improvement, continual-learning]
+tags:
+  - self-learning
+  - training
+  - agent-improvement
+  - continual-learning
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

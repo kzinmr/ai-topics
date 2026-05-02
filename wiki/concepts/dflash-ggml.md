@@ -7,9 +7,9 @@ updated: 2026-04-23
 tags:
   - speculative-decoding
   - local-llm
-  - cuda
+  - inference
   - ggml
-  - inference-optimization
+  - optimization
 sources:
   - https://www.lucebox.com/blog/dflash27b
 related:

@@ -7,7 +7,7 @@ updated: 2026-04-10
 tags:
   - person
   - llm-research
-  - ai-safety
+  - agent-safety
   - agents
   - openai
 sources: []

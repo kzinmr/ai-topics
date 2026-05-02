@@ -9,9 +9,9 @@ tags:
   - ai
   - huggingface
   - accelerate
-  - distributed-training
+  - training
   - pytorch
-  - model-optimization
+  - optimization
   - open-source
 sources: []
 ---

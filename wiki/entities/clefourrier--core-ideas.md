@@ -8,8 +8,8 @@ tags:
   - person
   - evaluation
   - philosophy
-  - llm
-  - benchmarks
+  - model
+  - benchmark
 sources: []
 ---
 

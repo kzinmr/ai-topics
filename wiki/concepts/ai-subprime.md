@@ -4,7 +4,7 @@ tags:
   - concept
   - ai-economics
   - ai-bubble
-  - venture-capital
+  - company
   - ai-subsidies
   - tech-criticism
 created: 2026-04-24

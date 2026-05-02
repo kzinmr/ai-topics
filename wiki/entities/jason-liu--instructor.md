@@ -8,7 +8,8 @@ tags:
   - instructor
   - structured-outputs
   - pydantic
-  - llm-engineering
+  - model
+
 ---
 
 # Jason Liu: Instructor Library & Structured Outputs

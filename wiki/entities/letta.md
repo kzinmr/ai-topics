@@ -3,7 +3,11 @@ title: "Letta (Letta AI)"
 type: entity
 created: 2026-04-27
 updated: 2026-04-27
-tags: [ai-agents, agent-harness, memory-systems, open-source, computer-use]
+tags:
+  - ai-agents
+  - agent-harness
+  - memory-systems
+  - open-source
 aliases: ["Letta AI", "Letta Code"]
 sources:
   - "https://www.letta.com/blog/context-repositories"

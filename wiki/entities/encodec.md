@@ -5,7 +5,7 @@ tags:
   - entity
   - audio-codec
   - neural-audio
-  - tokenizer
+  - model
   - meta
 created: 2026-05-01
 updated: 2026-05-01

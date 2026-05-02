@@ -3,7 +3,15 @@ title: "Ryan Dahl"
 type: entity
 created: 2026-04-16
 updated: 2026-04-16
-tags: [person, developer-tools, javascript, nodejs, deno, jsr, ai-agents, infrastructure]
+tags:
+  - person
+  - developer-tooling
+  - javascript
+  - nodejs
+  - deno
+  - jsr
+  - ai-agents
+  - infrastructure
 aliases: ["ryan-dahl", "node-js-creator", "deno-creator"]
 related: [[concepts/sandbox/js-runtime]], [[concepts/harness-engineering/system-architecture/infrastructure-noise]], [[jarred-sumner]]
 depth: L2

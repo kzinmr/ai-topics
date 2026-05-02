@@ -3,7 +3,11 @@ title: Claude Code Routines
 type: concept
 created: 2026-04-24
 updated: 2026-04-24
-tags: [concept, claude-code, automation, agentic-engineering]
+tags:
+  - concept
+  - anthropic
+  - automation
+  - agentic-engineering
 aliases: [claude-code-scheduling, claude-code-automation]
 sources: []
 ---

@@ -5,11 +5,11 @@ status: draft
 created: 2026-04-23
 updated: 2026-04-23
 tags:
-  - gpu
+  - inference
   - local-llm
   - apple-silicon
   - nvidia
-  - inference-optimization
+  - optimization
 sources:
   - https://www.lucebox.com/blog/egpu-myth
 related:

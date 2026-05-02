@@ -7,7 +7,7 @@ updated: 2026-04-10
 tags:
   - person
   - ml-research
-  - embeddings
+  - model
   - information-theory
   - nlp
 sources: []

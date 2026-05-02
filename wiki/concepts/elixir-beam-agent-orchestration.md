@@ -3,7 +3,14 @@ title: "Elixir/BEAM for AI Agent Orchestration"
 type: concept
 created: 2026-04-30
 updated: 2026-04-30
-tags: [elixir, beam, otp, agent-orchestration, fault-tolerance, concurrency, openai-symphony]
+tags:
+  - elixir
+  - beam
+  - otp
+  - orchestration
+  - fault-tolerance
+  - concurrency
+  - openai-symphony
 sources:
   - raw/articles/elixir-beam-agent-orchestration-2026.md
   - raw/articles/openai-symphony-codex-orchestration.md

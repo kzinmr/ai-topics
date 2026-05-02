@@ -1,6 +1,8 @@
 ---
 title: "GEPA — Genetic-Pareto Prompt Optimization"
-tags: [research, prompt-optimization]
+tags:
+  - lab
+  - optimization
 created: 2026-04-24
 updated: 2026-04-24
 type: sub-entity

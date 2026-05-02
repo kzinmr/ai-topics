@@ -3,7 +3,11 @@ title: "Unsloth — Fast Fine-Tuning"
 type: concept
 created: 2026-04-19
 updated: 2026-04-19
-tags: [fine-tuning, unsloth, optimization, lora, qlora, speed]
+tags:
+  - fine-tuning
+  - unsloth
+  - optimization
+  - speed
 related:
   - concepts/fine-tuning/_index
   - concepts/fine-tuning/axolotl

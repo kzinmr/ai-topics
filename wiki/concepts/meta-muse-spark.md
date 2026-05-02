@@ -3,7 +3,13 @@ title: "Meta Muse Spark"
 type: concept
 created: 2026-04-13
 updated: 2026-04-24
-tags: [concept, meta, frontier-models, closed-source, muse, alexandr-wang]
+tags:
+  - concept
+  - meta
+  - model
+  - closed-source
+  - muse
+  - alexandr-wang
 aliases: ["muse spark", "meta superintelligence labs", "meta avocado"]
 related:
   - concepts/anthropic-openclaw-conflict

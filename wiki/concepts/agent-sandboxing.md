@@ -8,7 +8,13 @@ status: complete
 depth_tracking:
  created: 2026-04-20
  target_depth: concept-level
-tags: [agent-security, sandboxing, isolation, firecracker, gvisor, capability-security]
+tags:
+  - agent-security
+  - sandbox
+  - isolation
+  - firecracker
+  - gvisor
+  - capability-security
 sources:
  - raw/articles/agent-sandboxing-2026-northflank.md
 related:

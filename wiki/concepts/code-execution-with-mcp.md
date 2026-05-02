@@ -1,6 +1,14 @@
 ---
 title: "Code Execution with MCP — Treating MCP Servers as Code APIs"
-tags: [concept, code-execution, mcp, anthropic, tool-calling, progressive-disclosure, harness-engineering, sandbox]
+tags:
+  - concept
+  - coding-agents
+  - mcp
+  - anthropic
+  - tool
+  - progressive-disclosure
+  - harness-engineering
+  - sandbox
 created: 2026-04-25
 updated: 2026-05-01
 type: concept

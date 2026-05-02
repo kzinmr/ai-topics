@@ -1,7 +1,11 @@
 ---
 title: "GPT Model Milestones"
 type: concept
-tags: [llm, openai, gpt, transformer, history]
+tags:
+  - model
+  - openai
+  - transformer
+  - history
 status: active
 created: 2026-04-27
 updated: 2026-04-27

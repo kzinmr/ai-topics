@@ -4,7 +4,13 @@ type: concept
 created: 2026-04-15
 updated: 2026-04-29
 status: complete
-tags: [local-llm, hardware, gpu, consumer, edge, vram]
+tags:
+  - local-llm
+  - hardware
+  - inference
+  - consumer
+  - edge
+  - vram
 aliases: [inference-hardware, consumer-gpu-llm, local-llm-hardware]
 related: [[concepts/local-llm]], [[concepts/local-llm/ollama]], [[concepts/inference/sglang]]
 sources:

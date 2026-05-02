@@ -4,7 +4,16 @@ type: concept
 description: "Recursive Language Model — 大規模コンテキストをsandobx Python REPLでプログラム的に探索するDSPyモジュール"
 category: concepts
 sub_category: AI Agent Architectures
-tags: [dspy, rlm, context-management, inference-time-scaling, sandbox, python-repl, pydantic-ai, code-mode, monty]
+tags:
+  - dspy
+  - rlm
+  - context-management
+  - inference
+  - sandbox
+  - python-repl
+  - pydantic-ai
+  - code-mode
+  - monty
 status: complete
 related:
   - dspy

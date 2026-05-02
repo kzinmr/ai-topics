@@ -7,7 +7,7 @@ tags:
   - person
   - blogger
   - hn-popular
-  - developer-tools
+  - developer-tooling
   - free-software
   - unix-philosophy
 sources: []

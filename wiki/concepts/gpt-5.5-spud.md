@@ -1,7 +1,11 @@
 ---
 title: "GPT-5.5 \"Spud\""
 type: concept
-tags: [llm, openai, gpt, frontier-models, benchmark, agent]
+tags:
+  - model
+  - openai
+  - benchmark
+  - ai-agents
 status: active
 created: 2026-04-27
 updated: 2026-04-27

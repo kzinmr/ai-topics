@@ -8,9 +8,9 @@ tags:
   - person
   - ai
   - reinforcement-learning
-  - distributed-training
+  - training
   - open-source
-  - llm-evaluation
+  - evaluation
   - prime-intellect
   - interconnects
 sources: []

@@ -7,7 +7,7 @@ tags:
   - concept
   - video-generation
   - multimodal
-  - generative-ai
+  - model
   - text-to-video
 status: complete
 sources:

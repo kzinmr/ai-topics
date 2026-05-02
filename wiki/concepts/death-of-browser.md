@@ -3,7 +3,11 @@ title: "Death of the Browser"
 created: 2026-04-13
 updated: 2026-04-26
 type: concept
-tags: [browser-automation, agent, web-infrastructure, cross-cutting]
+tags:
+  - browser-automation
+  - ai-agents
+  - web-infrastructure
+  - cross-cutting
 sources: [raw/articles/crawl-2026-04-26-browser-landscape-2026.md]
 ---
 

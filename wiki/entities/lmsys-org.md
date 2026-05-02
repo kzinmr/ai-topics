@@ -1,7 +1,12 @@
 ---
 title: "LMSYS Org"
 type: entity
-tags: [organization, research, uc-berkeley, sglang, llm-evaluation]
+tags:
+  - organization
+  - lab
+  - uc-berkeley
+  - sglang
+  - evaluation
 status: active
 created: 2026-04-27
 updated: 2026-04-27

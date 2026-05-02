@@ -4,11 +4,11 @@ created: 2026-04-30
 updated: 2026-04-30
 type: concept
 tags:
-  - agent-engineering
+  - agentic-engineering
   - career-development
   - context-engineering
   - tool-design
-  - evals
+  - evaluation
   - harness-engineering
   - mcp
   - orchestration

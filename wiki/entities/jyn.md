@@ -10,7 +10,7 @@ tags:
   - rust
   - compiler
   - build-systems
-  - developer-tools
+  - developer-tooling
   - documentation
 sources: []
 ---

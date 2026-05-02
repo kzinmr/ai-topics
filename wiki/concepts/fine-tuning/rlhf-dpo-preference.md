@@ -3,7 +3,10 @@ title: "RLHF, DPO, ORPO, KTO — Preference Optimization"
 type: concept
 created: 2026-04-19
 updated: 2026-04-19
-tags: [fine-tuning, rlhf, dpo, orpo, kto, preference-optimization, post-training]
+tags:
+  - fine-tuning
+  - training
+  - preference-optimization
 related:
   - concepts/fine-tuning/_index
   - concepts/fine-tuning/grpo-rl-training

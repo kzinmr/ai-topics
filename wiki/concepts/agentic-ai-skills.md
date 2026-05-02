@@ -2,7 +2,11 @@
 title: "Agentic AI Skills Design"
 created: 2026-04-27
 updated: 2026-04-27
-tags: [skills, agentic-ai, prompt-engineering, harness-engineering]
+tags:
+  - skills
+  - ai-agents
+  - prompting
+  - harness-engineering
 aliases: [ai-skills, agent-skills]
 related: [[concepts/agent-harness]], [[concepts/harness-engineering]], [[concepts/personal-os-for-ai-agents]], [[tool-orchestration]]
 sources: [

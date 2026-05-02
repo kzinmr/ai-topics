@@ -1,6 +1,8 @@
 ---
 title: "Omar Khattab — Key Publications"
-tags: [research, publications]
+tags:
+  - lab
+  - publications
 created: 2026-04-24
 updated: 2026-04-24
 type: sub-entity

@@ -3,7 +3,13 @@ title: "Figma AI Challenge"
 type: entity
 created: 2026-04-20
 updated: 2026-04-20
-tags: [entity, figma, saas, anthropic, claude-design, competitive-analysis]
+tags:
+  - entity
+  - figma
+  - product
+  - anthropic
+  - claude-design
+  - competitive-analysis
 related: [anthropic, saas-apocalypse, claude-design]
 sources: []
 ---

@@ -3,7 +3,10 @@ title: Company AI-Pilled
 created: 2026-04-27
 updated: 2026-04-27
 type: concept
-tags: [ai-adoption, organizational-culture, enterprise]
+tags:
+  - ai-adoption
+  - organizational-culture
+  - company
 aliases: ["AI-pilled", "Getting AI-pilled"]
 sources:
   - https://www.linkedin.com/posts/khehy_how-to-get-your-company-ai-pilled-activity-7449429963163795456-uqzJ

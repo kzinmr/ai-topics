@@ -4,7 +4,15 @@ type: concept
 description: "OpenAI's acquisition of Astral (creators of uv, Ruff, ty) and its implications for Codex — integrating foundational Python developer tools into AI coding agents"
 category: concepts
 sub_category: AI Ecosystem
-tags: [OpenAI, Astral, Codex, uv, Ruff, Python, developer-tools, acquisition]
+tags:
+  - openai
+  - Astral
+  - Codex
+  - uv
+  - Ruff
+  - Python
+  - developer-tooling
+  - acquisition
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

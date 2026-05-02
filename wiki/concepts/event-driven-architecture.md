@@ -5,7 +5,6 @@ created: 2026-04-16
 updated: 2026-04-16
 tags:
   - architecture
-  - distributed-systems
   - aws
   - eventbridge
 aliases:

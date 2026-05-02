@@ -3,7 +3,11 @@ title: "Filesystem as Agent Memory"
 type: concept
 created: 2026-04-27
 updated: 2026-04-27
-tags: [agent-memory, file-system-memory, context-engineering, persistency]
+tags:
+  - ai-agents
+  - file-system-memory
+  - context-engineering
+  - persistency
 aliases: [filesystem-memory, agent-filesystem-memory]
 related: [[concepts/claude-managed-agents]], [[agent-memory]], [[concepts/context-engineering]]
 ---

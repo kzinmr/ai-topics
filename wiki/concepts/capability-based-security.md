@@ -3,7 +3,11 @@ title: Capability-Based Security
 created: 2026-04-25
 updated: 2026-04-28
 type: concept
-tags: [security, architecture, sandboxing, inference]
+tags:
+  - security
+  - architecture
+  - sandbox
+  - inference
 aliases:
   - capabilities-based-security
 sources:

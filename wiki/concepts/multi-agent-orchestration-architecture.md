@@ -3,7 +3,11 @@ title: Multi-Agent Orchestration Architecture
 created: 2026-04-26
 updated: 2026-04-26
 type: concept
-tags: [agent, orchestration, architecture, multi-agent]
+tags:
+  - ai-agents
+  - orchestration
+  - architecture
+  - multi-agent
 sources: [raw/articles/crawl-2026-04-26-agent-governance.md]
 ---
 

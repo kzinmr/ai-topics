@@ -1,7 +1,11 @@
 ---
 title: "Lenny Rachitsky"
 aliases: ["lenny-rachitsky", "lennys-podcast"]
-tags: [person, podcast, product-management, ai-evals]
+tags:
+  - person
+  - podcast
+  - product-management
+  - evaluation
 created: 2026-04-30
 updated: 2026-04-30
 type: entity

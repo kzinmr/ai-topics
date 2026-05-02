@@ -7,7 +7,6 @@ tags:
   - entity
   - model
   - openai
-  - frontier-model
   - benchmark
 sources:
   - raw/newsletters/2026-04-28-builders.md

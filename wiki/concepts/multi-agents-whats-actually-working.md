@@ -3,7 +3,11 @@ title: "Multi-Agents: What's Actually Working"
 created: 2026-04-23
 updated: 2026-04-23
 type: concept
-tags: [multi-agent, agentic-engineering, agent-team-swarm, context-window-management, code-review]
+tags:
+  - multi-agent
+  - agentic-engineering
+  - context-window-management
+  - coding-agents
 sources:
   - raw/articles/2026-04-22-multi-agents-whats-actually-working.md
 related:

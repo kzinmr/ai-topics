@@ -10,7 +10,18 @@ sources:
   - "https://venturebeat.com/data/amazon-s3-files-gives-ai-agents-a-native-file-system-workspace-ending-the"
   - "https://www.tigrisdata.com/docs/agents-use-cases/"
   - "https://github.com/viditraj/llmfs"
-tags: [memory-middleware, cloud-storage, s3, agent-infrastructure, posix, multi-agent, shared-state, virtual-filesystem, chromafs, databricks, memory-scaling]
+tags:
+  - memory-middleware
+  - cloud-storage
+  - s3
+  - ai-agents
+  - posix
+  - multi-agent
+  - shared-state
+  - virtual-filesystem
+  - chromafs
+  - databricks
+  - memory-scaling
 related: [memory-systems-design-patterns, claude-memory, chatgpt-memory-bitter-lesson, amazon-s3-files, chromafs, databricks-memory-scaling]
 ---
 

@@ -6,8 +6,6 @@ updated: 2026-04-30
 tags:
   - concept
   - rag
-  - graphrag
-  - retrieval
   - evaluation
   - architecture
 aliases:
