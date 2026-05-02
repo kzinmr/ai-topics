@@ -7,9 +7,9 @@ tags:
   - transfer-learning
 status: L3
 created: 2026-04-27
-updated: 2026-04-28
+updated: 2026-05-02
 aliases: [LLM Fine-Tuning, Model Fine-Tuning, SFT]
-related: [[fine-tuning/peft-lora-qlora]], [[fine-tuning/grpo-rl-training]], [[fine-tuning/rlhf-dpo-preference]], [[fine-tuning/axolotl]], [[fine-tuning/unsloth]], [[concepts/continual-learning]]
+related: [[fine-tuning/peft-lora-qlora]], [[fine-tuning/grpo-rl-training]], [[fine-tuning/rlhf-dpo-preference]], [[fine-tuning/axolotl]], [[fine-tuning/unsloth]], [[concepts/continual-learning]], [[concepts/reinforcement-fine-tuning]], [[entities/fireworks-ai]]
 sources: [https://www.superannotate.com/blog/llm-fine-tuning, https://zylos.ai/research/2026-01-13-llm-fine-tuning-techniques]
 ---
 
@@ -24,6 +24,7 @@ Fine-tuning is a supervised learning process that adapts a pre-trained large lan
 - **Supervised Fine-Tuning (SFT)**: The foundational approach — train a pre-trained model on curated (instruction, response) pairs to teach it desired behaviors and formats
 - **Parameter-Efficient Fine-Tuning (PEFT)**: Methods like LoRA and QLoRA update only a small subset of parameters (<1%), reducing memory requirements by 10–20x while maintaining 80–95% of full fine-tuning quality
 - **Preference Optimization**: After SFT, methods like RLHF (PPO), DPO, and GRPO align models with human preferences using comparative data rather than explicit correct answers
+- **Reinforcement Fine-Tuning (RFT)**: A pragmatic alternative to SFT that uses **production traces + LLM-as-Judge** scoring to bootstrap an RL improvement loop without requiring dedicated MLE teams. Pioneered by [[entities/fireworks-ai]]. [[concepts/reinforcement-fine-tuning|See RFT concept page]].
 - **Data Quality > Quantity**: The most critical success factor in fine-tuning — well-curated, diverse, task-specific data consistently outweighs hyperparameter optimization
 - **Catastrophic Forgetting**: A central challenge where updating a model on new tasks degrades performance on previously learned tasks; mitigated through replay buffers, regularization, and progressive training strategies
 
@@ -34,6 +35,7 @@ Fine-tuning is a supervised learning process that adapts a pre-trained large lan
 - **QLoRA**: LoRA combined with 4-bit quantization, enabling fine-tuning of 65B models on a single 48GB GPU
 - **DPO (Direct Preference Optimization)**: Simplified alignment method that directly optimizes using preference pairs without a separate reward model or RL loop
 - **GRPO (Group Relative Policy Optimization)**: DeepSeek-popularized RL method that compares multiple completions within a group to learn preferred behaviors
+- **RFT (Reinforcement Fine-Tuning)**: Pragmatic RL approach using production traces and LLM-as-Judge, pioneered by Fireworks AI. See [[concepts/reinforcement-fine-tuning]]
 - **RLVR (Reinforcement Learning with Verifiable Rewards)**: Post-training approach using automatically verifiable rewards (e.g., math correctness) rather than human preference labels
 
 ## Examples/Applications

@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-02 | Total pages: 760 | Full entries: 729 | Stubs: 614
+> Last updated: 2026-05-02 | Total pages: 763 | Full entries: 732 | Stubs: 614
 
-## Entities (367 pages)
+## Entities (369 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -37,6 +37,7 @@
 - [[entities/beej-us]] — **URL:** https://beej.us
 - [[entities/ben-boyter]] — Creator of searchcode.com, scc (Sloc Cloc and Code), cs (Code Spelunker). Author of 'Marketing to the Machine' B2A thesis on Business-to-Agent design.
 - [[entities/benjamin-clavie]] — French ML researcher specializing in NLP and IR, creator of RAGatouille, co-author of ModernBERT. Co-hosted the "RAG Is Not Dead" series with Hamel Husain.
+- [[entities/benny-chen]] — Co-Founder of Fireworks AI. Former Meta ML infrastructure. Pioneered Reinforcement Fine-Tuning (RFT) and Eval Protocol for open-weight model customization.
 - [[entities/berthub-eu]] — **Blog** | berthub.eu |
 - [[entities/block-ai]] — Block, Inc. (formerly Square) — Jack Dorsey's AI-native organizational transformation from hierarchy to intelligence-driven coordination
 - [[entities/boaz-barak]] — **X** | @boazbaraktcs |
@@ -114,6 +115,7 @@
 - [[entities/fernando-borretti]] — **URL:** https://borretti.me
 - [[entities/figma]] — FigmaはClaude Designの登場により、**SaaS AI時代の脆弱性を示すケーススタディ**となっている。
 - [[entities/filfre-net]] — **Blog** | filfre.net (The Digital Antiquarian) |
+- [[entities/fireworks-ai]] — AI inference and model customization platform. 13T+ tokens/day. Multi-hardware (NVIDIA+AMD), FireAttention, custom speculator training, RFT capabilities.
 - [[entities/florian-brand]] — **X** | @xeophon |
 - [[entities/foundation-capital]] — AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents.
 - [[entities/fourier-intelligence]] — Chinese company specializing in rehabilitation robotics and general-purpose humanoid robots. Combines medical expertise with advanced robotics technology.
@@ -396,7 +398,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (405 pages)
+## Concepts (406 pages)
 
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
@@ -751,6 +753,7 @@
 |- [[concepts/reverse-engineering]] — Reverse engineering is the process of analyzing a system, software, or hardware to understand its design, architecture, and functionality without access to its original source code or documentation. In the AI context, applied to understanding model internals, protocol decompilation, and security analysis.
 |- [[concepts/reflexive-ai]]
 - [[concepts/reinforcement-learning]] — RLの基本概念。詳細はrlhf.mdを参照。
+- [[concepts/reinforcement-fine-tuning]] — RFT: A fine-tuning methodology using production traces + LLM-as-Judge scoring to bootstrap RL improvement loops. Pioneered by Fireworks AI. Vercel achieved 40x faster code fixing via RFT.
 - [[concepts/research-agent-fundamentals]] — Anthropic cookbook: The One-Liner Research Agent
 - [[concepts/resilient-prompt-engineering]] — OpenAIのcookbookで示される、単なるプロンプトテクニックではなく、**堅牢なプロンプト設計**の方法論。特定モデルに依存しない汎用的なパターン。
 - [[concepts/rlhf]] — 人間のフィードバックを用いたLLMのアライメント技術と、その発展形（DPO, ORPO, KTO, GRPO）の統合ページ

@@ -1,10 +1,10 @@
 ---
 title: "Speculative Decoding"
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-05-02
 type: concept
 tags: [inference, optimization, technique, architecture]
-sources: [raw/articles/crawl-2026-04-18-speculative-decoding.md]
+sources: [raw/articles/crawl-2026-04-18-speculative-decoding.md, raw/articles/2026-04-28_fireworks-ai-open-weight-models-sed.md]
 ---
 
 # Speculative Decoding
@@ -69,6 +69,22 @@ Speculative decoding directly impacts [[concepts/token-economics]]:
 - [[concepts/token-economics]] — Throughput optimization and cost reduction
 - [[concepts/attention-mechanism-variants]] — Different attention mechanisms affect speculative decoding performance
 - [[concepts/local-llm/model-quantization]] — Quantization can be combined with speculative decoding
+
+## Custom Speculator Training (Fireworks AI Approach)
+
+Fireworks AI has pioneered an approach where customers train **custom draft models (speculators)** specifically for their fine-tuned models. Unlike generic speculative decoding where a pre-existing smaller model serves as the draft, custom speculators are trained on the fine-tuned model's output distribution, achieving significantly higher token acceptance rates.
+
+### Key Insight
+A speculator trained on the same distribution as the target model achieves acceptance rates closer to 90%+ (vs. 70-90% for generic well-matched drafts). This directly translates to near-optimal speedup — approaching the theoretical maximum of 1/(1-α) where α approaches 1.
+
+### Workflow
+1. Fine-tune target model using RFT or SFT on domain-specific data
+2. Train a small draft model (typically 1-5% of target params) on the same output distribution via distillation
+3. Deploy speculator + target model pair on Fireworks infrastructure
+4. Achieve 2-5x inference speedup over standalone target model
+
+### Relevance for Fine-Tuned Models
+For production deployments where models are fine-tuned on proprietary data, generic speculative decoding often underperforms because the draft model was trained on a different distribution. Custom speculators solve this mismatch. See [[entities/fireworks-ai]] and [[concepts/reinforcement-fine-tuning]].
 - [[concepts/local-llm]] — Inference optimization techniques
 
 ## Sources

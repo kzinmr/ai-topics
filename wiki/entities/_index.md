@@ -44,6 +44,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[ashpreet-bedi]] — Ashpreet Bedi is a software engineer and entrepreneur with over 15 years of experience building data infrastructure and machine learning systems at scale. He is the founder and CEO of Agno (formerly P
 - [[beej-us]] — Brian "Beej Jorgensen" Hall is one of the most influential technical educators of the internet era. His Beej's Guide to Network Programming has taught socket programming to generations of developers s
 - [[benjamin-clavie]] — Benjamin Claviéはフランス出身のNLP/情報検索(IR)研究者で、現在はTokyo, Japanを拠点にMixedbreadでML R&Dに従事し、National Institute of Informatics (NII) のKasys lab（指導教員: Makoto P. Kato教授）でPhD課程在籍中。
+- [[benny-chen]] — Co-Founder of Fireworks AI, inference and model customization platform for open-weight models. Formerly Meta ML infrastructure. Pioneered Reinforcement Fine-Tuning (RFT) and the Eval Protocol.
 - [[berthub-eu]] — Bert is a systems-level thinker who operates at the intersection of software engineering, public policy, and scientific research. His work spans from RFCs that secure global DNS infrastructure to poli
 - [[block-ai]] — Block, Inc. (formerly Square) — Jack Dorsey's AI-native organizational transformation from hierarchy to intelligence-driven coordination
 - [[boaz-barak]] — Boaz Barak is one of the most prominent theoretical computer scientists working on AI safety and the foundations of machine learning. As the Gordon McKay Professor of Computer Science at Harvard SEAS 
@@ -106,6 +107,7 @@ People, companies, organizations, and projects in the AI ecosystem.
 - [[fernando-borretti]] — Fernando Borretti is a software engineer, compiler author, and prolific technical writer who builds programming languages and writes deeply about software engineering practice, AI systems, and data mo
 - [[figma]] — FigmaはClaude Designの登場により、SaaS AI時代の脆弱性を示すケーススタディとなっている。
 - [[filfre-net]] — Jimmy Maher is the preeminent historian of interactive fiction and one of the most thorough chroniclers of computer gaming's formative decades. His blog, The Digital Antiquarian, has published hundred
+- [[fireworks-ai]] — AI inference and model customization platform for serving open-weight models at scale. 13T+ tokens/day. Multi-hardware (NVIDIA + AMD), FireAttention kernels, custom speculator training, RFT capabilities.
 - [[florian-brand]] — Florian Brand operates at the intersection of AI infrastructure, open model research, and public-facing AI analysis. As a PhD student at the University of Trier and researcher at DFKI, his academic wo
 - [[foundation-capital]] — Venture capital firm that published 'AI's Trillion-Dollar Opportunity: Context Graphs' — arguing that the next trillion-dollar platforms will be built by capturing decision traces, not adding AI to existing data
 - [[gary-marcus]] — Gary Marcus is a cognitive scientist and AI researcher best known for his rigorous critique of pure deep learning approaches to artificial intelligence. His central thesis, developed over decades of r

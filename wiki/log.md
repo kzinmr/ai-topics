@@ -1,3 +1,12 @@
+## [2026-05-02] Fireworks AI Podcast (SE Daily Episode 1919) — Entity & Concept Ingestion
+
+- **[[entities/fireworks-ai]]** — Created entity page for Fireworks AI. AI inference and model customization platform for open-weight models. 13T+ tokens/day. Multi-hardware (NVIDIA + AMD), FireAttention kernels, custom speculator training, RFT capabilities.
+- **[[entities/benny-chen]]** — Created entity page for Benny Chen, Co-Founder of Fireworks AI. Former Meta ML infrastructure. Key theses: RFT, "Traces Are All You Need," Eval Protocol, multi-hardware supply chain strategy.
+- **[[concepts/reinforcement-fine-tuning]]** — Created concept page for RFT. Pragmatic RL fine-tuning using production traces + LLM-as-Judge. RFT vs SFT comparison table, Vercel case study (40x faster code fixing).
+- **[[concepts/fine-tuning]]** — Updated: Added RFT as a method in Key Ideas + Terminology. Added related wikilinks to RFT page and Fireworks AI.
+- **[[concepts/speculative-decoding]]** — Updated: Added "Custom Speculator Training (Fireworks AI Approach)" section. Documented distribution-matched speculators achieving 90%+ acceptance rates.
+- Source: `raw/articles/2026-04-28_fireworks-ai-open-weight-models-sed.md` (SED transcript)
+
 ## [2026-05-02] Skeleton Enrichment — Foundation Capital Portfolio Companies (4 entities enriched)
 
 - **[[entities/maximor]]** — Enriched from skeleton to L3 page. Added funding ($9M seed, Foundation Capital), founder bios (Ramnandan Krishnamurthy & Ajay Amudan, ex-Microsoft), Audit-Ready Agent architecture, product table, ERP-agnostic design principles. Sources: Blog, SaaSNews, TechCrunch, Axios.
