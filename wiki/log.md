@@ -1,3 +1,10 @@
+## [2026-05-02] Braintrust Evals 101 Course — Practical Eval Methodology Ingestion
+
+- **[[concepts/ai-evals]]** — Added "Braintrust Evals 101: Practical Eval Methodology" section covering: non-determinism as core thesis, 3-component eval model (dataset/task/scorer), LLM-as-Judge with choice scores, trial counts for variance reduction, multi-level trace scoring (per-turn vs per-trace), online scoring, the Improvement Loop with temperature=0/max_concurrency=1 settings, and the GPT-4o sycophancy rollback case study.
+- **[[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]]** — Enriched with Braintrust eval features, Evals 101 course module table, and comparison matrix with LangSmith/Arize Phoenix/Inspect AI.
+- **raw/articles/2026-05-02_braintrust-evals-101-why-are-evals-important.md** — Saved raw article with full module-by-module breakdown (14 modules across Learn/Build/Refine sections).
+- Source: https://www.braintrust.dev/foundations/why-are-evals-important | GitHub: braintrustdata/eval-101-course
+
 ## [2026-05-02] lambda-RLM (Typed Recursive Reasoning) — Huawei Paper Ingestion
 
 - **[[concepts/typed-rlm]]** — Created concept page for lambda-RLM (typed functional runtime, Huawei Noah's Ark Lab). Formal guarantees (termination, cost bounds, optimal partition k*=2), Y-combinator fixed-point over SPLIT/MAP/REDUCE combinators. 29/36 wins, +21.9pp accuracy, 4.1x faster. arXiv:2603.20105 (arXiv-only, ingested per user request).

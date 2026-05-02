@@ -1129,7 +1129,7 @@
 - [[concepts/evaluation-coding-agents-mcp-automation-harness-engineering]] — > **TODO**: Enrich this page.
 - [[concepts/evaluation-development-process-quality]] — > **TODO**: Enrich this page.
 - [[concepts/evaluation-llm-as-judge-error-analysis-ai-engineering-ai-systems]] — > **TODO**: Enrich this page.
-- [[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]] — > **TODO**: Enrich this page.
+- [[concepts/evaluation-tools-langsmith-braintrust-arize-phoenix-inspect-ai]] — Braintrust vs LangSmith vs Arize Phoenix vs Inspect AI comparison with Braintrust Evals 101 course coverage
 - [[concepts/event-driven-architecture-eda]] — > **TODO**: Enrich this page.
 - [[concepts/facilitation]] — > **TODO**: Enrich this page.
 - [[concepts/fares-obeid-grad62304977]] — > **TODO**: Enrich this page.

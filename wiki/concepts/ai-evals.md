@@ -143,6 +143,74 @@ A **trace** is the complete record of all actions, messages, tool calls, and dat
 5. **Arbitrary Scoring**: Using uncalibrated 1-5 scales where the difference between scores is unclear
 6. **Eval-Driven Development**: Writing evaluators for imagined errors rather than discovered ones (exception: strict, known constraints like "never mention competitors")
 
+## Braintrust Evals 101: Practical Eval Methodology
+
+The [Braintrust Evals 101 course](https://www.braintrust.dev/foundations/why-are-evals-important) (14 modules, ~1 hour) provides a hands-on, tool-specific approach to building evals that complements the philosophy-driven approach above. Key methodology contributions:
+
+### Core Thesis: Non-Determinism as the Organizing Problem
+
+While the above framework treats evals as a broad development practice, Braintrust's course centers **LLM non-determinism** as the fundamental reason traditional testing fails for AI:
+
+> "Unlike traditional software, where the same input reliably produces the same output, LLMs can behave differently each time they run."
+
+Six specific failure modes traditional testing can't catch: hallucinations, model drift, hidden regressions, cost/quality trade-offs, unmeasurable tweaks, and intuition-based shipping. See the GPT-4o sycophancy rollback (April 2025) as a canonical case study — optimizing for a single metric (thumbs-up) degraded others (honesty).
+
+### Three Components of an Eval
+1. **Dataset** — Representative inputs for the AI
+2. **Task** — The specific operation the AI performs
+3. **Scorer** — The logic used to grade the output
+
+### LLM-as-Judge with Choice Scores
+Concrete rubric pattern used in the course (Brand Alignment scorer):
+```python
+LLMClassifier(
+    name="Brand Alignment",
+    prompt_template="Rate on helpfulness, tone, and policy compliance...",
+    choice_scores={"A": 1.0, "B": 0.5, "C": 0.0},
+    use_cot=True,
+)
+```
+- A/B/C rubric with mapped scores — more structured than free-form grading
+- Chain-of-thought (`use_cot=True`) forces the judge to reason before assigning a score
+- Rationale is written as metadata for later inspection
+
+### Trial Counts for Variance Reduction
+`trial_count=3` runs each input multiple times and averages the scores:
+- Produces more stable measurements than single runs
+- Rows with flipping grades across trials are **borderline cases** — a different signal from consistently medium-scored rows
+- Essential for comparing prompt variants where scorer noise could mask real differences
+
+### Multi-Level Trace Scoring
+Two levels for conversational AI:
+- **Per-turn scoring (Brand Alignment):** Scores each individual assistant response for helpfulness, tone, and policy compliance
+- **Per-trace scoring (Conversation Quality):** Scores the full conversation as a unit — was the issue resolved?
+- Both levels use CoT, and rationale is written to span metadata
+
+### Online Scoring
+Configure scoring rules in the UI that automatically run on new log data:
+- Rule-based: apply Brand Alignment on all spans, Conversation Quality on root spans
+- Enables automated evaluation of production traffic without manual intervention
+
+### The Improvement Loop
+Module 14 demonstrates a critical lesson: **sometimes a reasonable hypothesis doesn't pan out.**
+
+A prompt fix (adding company policy info) was expected to improve Brand Alignment on account/login issues. The baseline scored ~52.6%, the fix ~50.0% — **no improvement.** The chain-of-thought rationale on failing rows revealed the real issue was often scorer calibration, not the prompt. This teaches:
+
+- Always run a baseline before assuming a fix works
+- CoT rationale on failures is more valuable than aggregate scores
+- `temperature=0` eliminates scoring variance when comparing prompt variants
+- The improvement loop: hypothesis → test → analyze failures → recalibrate → repeat
+
+### Tool-Specific Settings
+- **`temperature=0`**: Eliminates sampling variance for deterministic comparison between prompt variants
+- **`max_concurrency=1`**: Avoids API rate limits when scorers call external APIs (Braintrust BTQL: 20 req/60s)
+- **`trial_count=N`**: Multi-run averaging for stable measurements
+
+### Source
+- Course page: [Why Are Evals Important](https://www.braintrust.dev/foundations/why-are-evals-important)
+- GitHub: [braintrustdata/eval-101-course](https://github.com/braintrustdata/eval-101-course)
+- Raw article: [[wiki/raw/articles/2026-05-02_braintrust-evals-101-why-are-evals-important.md]]
+
 ## Related Concepts
 
 - [[concepts/llm-as-judge]] — Using LLMs to evaluate AI outputs
