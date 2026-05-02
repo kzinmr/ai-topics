@@ -5,6 +5,11 @@
 - **raw/articles/2026-05-02_antoine-buteau_automation-series-1.md** through **automation-series-10.md** — Saved all 10 raw articles.
 - Sources: https://www.antoinebuteau.com (full series via sitemap)
 
+## [2026-05-02] PyTorch GPU Memory Profiling — Memory Measurement Without Execution (FakeTensorMode)
+
+- **[[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]]** — Added Section 4: "モデルを実行せずにメモリ使用量を測定する — FakeTensorMode + MemoryTrackingMode". Covers Alban Desmaison's ~30-line MemoryTrackingMode implementation, simultaneous use with FakeTensorMode for CUDA-on-CPU memory estimation, Module-wise tracking (PR #124688), allocated vs reserved memory distinction with fragmentation, NCCL buffer blind spot, and PyTorch caching allocator refactoring roadmap.
+- Source: https://dev-discuss.pytorch.org/t/how-to-measure-memory-usage-from-your-model-without-running-it/
+
 ## [2026-05-02] PyTorch GPU Memory Profiling — Memory Snapshot & Profiler Tools Ingestion
 
 - **[[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]]** — Created concept page for PyTorch v2.1+ GPU memory debugging tools. Covers Memory Snapshot (allocation trace visualization with stack traces), Memory Profiler (categorized usage: gradients/optimizer/activations), OOM staircase pattern fix (`optimizer.zero_grad(set_to_none=True)`), `record_function` labeling, and tool comparison table.
