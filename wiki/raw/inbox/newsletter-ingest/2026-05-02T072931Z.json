@@ -1,0 +1,121 @@
+{
+  "triage_run": "2026-05-02T072931Z",
+  "triaged_at": "2026-05-02T07:29:31+00:00",
+  "newsletters": [
+    {
+      "message_id": "<20260501.155115.77e5c907@mta13>",
+      "subject": "Anthropic: From $18B to $900B in Two Years",
+      "date": "2026-05-01",
+      "source_label": "uid=39",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-01-anthropic-from-18b-to-900b-in-two-years.md",
+      "classification": "high",
+      "reason": "Beehiiv-curated digest of Anthropic news. Covers Anthropic valuation growth ($18B → $900B), $30B annualized revenue milestone, 5GW compute partnership with Google/Broadcom. Major AI industry developments.",
+      "wiki_actions": [
+        "Update entities/anthropic.md with valuation, revenue, compute deals",
+        "Create or update concepts/ai-company-valuations-2026.md if tracking industry valuations"
+      ],
+      "key_topics": ["anthropic", "valuation", "claude", "funding", "compute infrastructure"],
+      "dedup_note": "Duplicate of uid=42 (2026-05-02 re-send); only process one"
+    },
+    {
+      "message_id": "<20260501215746.3.c02dbd5eea1a7379@mg-d1.substack.com>",
+      "subject": "Hermes Agent.",
+      "date": "2026-05-01",
+      "source_label": "uid=41",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-01-hermes-agent.md",
+      "classification": "critical",
+      "reason": "Aakash Gupta (AI by Aakash) newsletter about Hermes Agent by Nous Research — the same system running this pipeline. Covers SOUL.md persistent memory, learning loop, setup/install, mobile integration, weekly briefings, health coaching, ComfyUI skill. Also includes weekly AI news: Claude's creative tool integration (Blender/Fusion/Adobe/Ableton), Gemini vs Copilot, OpenAI/Microsoft AGI clause removal, Cursor SDK, Grok Imagine Agent.",
+      "wiki_actions": [
+        "Enrich entities/hermes-agent.md or entities/nous-research.md",
+        "Update entities/claude-code.md with new creative tool connectors",
+        "Create entities/cursor-sdk.md if not exists",
+        "Cross-reference with uid=40 (Simon Willison on AGI clause)"
+      ],
+      "key_topics": ["hermes-agent", "nous-research", "autonomous-agents", "claude-code", "cursor-sdk", "grok-imagine", "openai", "microsoft"]
+    },
+    {
+      "message_id": "<20260501164641.3.e2acb70c24ade3b1@mg-d0.substack.com>",
+      "subject": "DeepSeek v4, and the end of the OpenAI/Microsoft AGI clause",
+      "date": "2026-05-01",
+      "source_label": "uid=40",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-01-deepseek-v4-and-the-end-of-the-openai-microsoft-agi-clause.md",
+      "classification": "critical",
+      "reason": "Simon Willison's newsletter covering: (1) DeepSeek V4 release — 1.6T MoE, 1M context, MIT license, dramatically lower cost vs GPT-5.5/Gemini. (2) End of OpenAI/Microsoft AGI clause — legal restructuring of partnership through 2032. (3) LLM 0.32a0 library major refactor — multi-modal, streaming, reasoning tokens. (4) Industry trends: Zig anti-AI policy, VibeVoice, Talkie-1930, pip lockfiles.",
+      "wiki_actions": [
+        "Create or update entities/deepseek.md with V4 specs",
+        "Update entities/openai.md with AGI clause termination",
+        "Create or update entities/microsoft-ai.md for partnership changes",
+        "Update entities/llm-python.md for v0.32a0 changes",
+        "Create concept page on open-weight-vs-closed-model-gap-2026.md",
+        "Create entities/vibevoice.md (Microsoft diarization model)"
+      ],
+      "key_topics": ["deepseek", "openai", "microsoft", "agi-clause", "llm-python", "open-weights", "mixture-of-experts", "zig-lang", "ai-policy"]
+    },
+    {
+      "message_id": "<20260502.010453.ede7aabe@mta30>",
+      "subject": "Anthropic: From $18B to $900B in Two Years",
+      "date": "2026-05-02",
+      "source_label": "uid=42",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-02-anthropic-from-18b-to-900b-in-two-years.md",
+      "classification": "high",
+      "reason": "Duplicate of uid=39 (same Beehiiv newsletter, re-sent next day). Same content — Anthropic valuation/revenue milestone.",
+      "wiki_actions": ["Skip — deduplicate with uid=39"],
+      "key_topics": ["anthropic", "valuation", "duplicate"],
+      "dedup_note": "DUPLICATE of uid=39 from previous day"
+    },
+    {
+      "message_id": "<20260502072155.3.45987e826192abfc@mg-d1.substack.com>",
+      "subject": "[AINews] AI Engineer World's Fair — Autoresearch, Memory, World Models, Tokenmaxxing, Agentic Commerce, and Vertic…",
+      "date": "2026-05-02",
+      "source_label": "uid=43",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-02-ainews-ai-engineer-worlds-fair-autoresearch-memory-world-models-tokenmaxxing-ag.md",
+      "classification": "critical",
+      "reason": "swyx's AINews — dense with technical and industry developments. Covers: AI Engineer World's Fair 2026 new tracks (Autoresearch, Memory, World Models, Agentic Commerce, Vertical AI, Robotics), Grok 4.3 (40% cheaper, Intelligence Index 53), DeepSeek V4 Pro/Vision specs, GPT-5.5/Codex ($1.73 for 12h cyber task in 11min), ReaLM-Retrieve (10.1% F1 improvement), OCR-Memory, recursive multi-agent systems, PFlash (10x llama.cpp speedup), Qwen-Scope SAEs, Spark Cluster builds, Google TPU 8t/8i. Also covers industry trends: durable execution, open vs closed gap narrowing, GPT 'goblin' phenomenon.",
+      "wiki_actions": [
+        "Update entities/xai.md with Grok 4.3 specs",
+        "Update entities/deepseek.md with V4 Pro/Vision details",
+        "Update entities/openai.md with GPT-5.5/Codex revenue",
+        "Create or update concepts/agentic-commerce.md",
+        "Create or update concepts/world-models.md",
+        "Create or update concepts/durable-execution-agents.md",
+        "Create entities/real-m-retrieve.md (RAG improvement)",
+        "Create entities/pflash.md (speculative prefill)",
+        "Create entities/qwen-scope.md (SAEs for interpretability)",
+        "Update concepts/open-vs-closed-ai-models.md with 2026 gap analysis"
+      ],
+      "key_topics": ["ai-engineer-worlds-fair", "grok-4.3", "deepseek-v4", "gpt-5.5", "codex", "agent-infrastructure", "retrieval", "memory", "local-llm", "hardware", "open-vs-closed"]
+    }
+  ],
+  "summary": {
+    "total_newsletters": 5,
+    "unique_newsletters": 4,
+    "duplicates": 1,
+    "critical": 3,
+    "high": 1,
+    "low": 0,
+    "top_entities_to_create_or_update": [
+      "anthropic",
+      "deepseek",
+      "openai",
+      "hermes-agent",
+      "grok-xai",
+      "cursor-sdk",
+      "vibevoice",
+      "llm-python",
+      "real-m-retrieve",
+      "pflash",
+      "qwen-scope"
+    ],
+    "top_concepts_to_create_or_update": [
+      "agi-clause-legal",
+      "agentic-commerce",
+      "world-models",
+      "durable-execution-agents",
+      "open-vs-closed-ai-models",
+      "autoresearch",
+      "tokenmaxxing",
+      "ocr-memory"
+    ],
+    "pipeline_notes": "uid=39 and uid=42 are the same Beehiiv newsletter sent on consecutive days — process only once. The 'getsuperintel.site/subscribe' link in uid=42 is a subscription CTA, not an article."
+  }
+}
