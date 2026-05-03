@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-03 | Total pages: 789 | Full entries: 754 | Stubs: 614 |
+| Last updated: 2026-05-03 | Total pages: 792 | Full entries: 757 | Stubs: 614 |
 
-## Entities (383 pages)
+## Entities (384 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -71,6 +71,7 @@
 - [[entities/cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
 - [[entities/daniel-de-laney]] — **Blog** | danieldelaney.net |
 - [[entities/daniel-han]] — **X/Twitter** | @danielhanchen |
+- [[entities/daniel-miessler]] — Cybersecurity and AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ GitHub stars), SecLists, PAI. Author of Autonomous Component Optimization and Intent-Based Engineering concepts.
 - [[entities/daniel-van-strien]] — **X** | @vanstriendaniel |
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
 - [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.
@@ -412,7 +413,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (410 pages)
+## Concepts (412 pages)
 
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
@@ -498,6 +499,7 @@
 - [[concepts/arc-agi-2]] — **ARC-AGI-2** (Abstraction and Reasoning Corpus, 2nd iteration) is an AI benchmark developed by the ARC Prize Foundation that tests systems' ability to infer abstract transformation rules from grid...
 - [[concepts/automation-series]] — 10-part series by Antoine Buteau on automation architecture: bounded agents, HITL as design pattern, state/idempotency, observability/replay, blast radius.
 - [[concepts/attention-mechanism-variants]] — Modern transformer architectures use different attention mechanisms to optimize the trade-off between modeling capacity, compute efficiency, and context length. A prerequisite concept for concepts/...
+- [[concepts/autonomous-component-optimization]] — Daniel Miesslerが提唱する汎用的自己改善サイクル（Map→Execute→Log→Collect→Optimize→Update）。Karpathy LoopのML超パラメータチューニングを任意の知識ワークフローに拡張した概念。
 - [[concepts/back-of-house-multi-agent-patterns]] — 厨房のメタファーを用いたマルチエージェント・ワークフローパターン。Sarah Chieng (concepts/@milksandmatcha) と [@0xSero] によって2026年4月に提唱。
 - [[concepts/back-of-house-patterns]] — > 共著: milksandmatcha|Sarah Chieng (@MilksandMatcha) + sero|Sero (@0xSero)
 - [[concepts/background-coding-agent]] — Asynchronous cloud-based AI coding agents that run independently, verify their own work, and produce validated PRs. Ramp's Inspect handles ~30% of merged PRs.
@@ -663,6 +665,7 @@
 | [[concepts/inference/vllm]] — vLLM is a high-throughput LLM serving engine with PagedAttention optimization, developed by UC Berkeley and maintained by the vLLM project. As of April 2026, the v0.19.0 release (448 commits, 197 c...
 |- [[concepts/tensorrt-llm]] — NVIDIA's inference optimization engine with TensorRT compiler, FP8/FP4 quantization, Triton integration. Highest throughput on NVIDIA GPUs (H100/B200). ⬜ L1
 - [[concepts/instruction-hierarchy]] — LLMの命令階層構造。システムプロンプト、ユーザープロンプト、ツール出力の優先順位とprompt-injection対策
+- [[concepts/intent-based-engineering]] — AI開発における新たなボトルネック「articulation gap（表明のギャップ）」を特定した概念。エンジニアリングが「どう作るか」から「良い状態をどう記述するか」へ移行することを示す。Daniel Miessler提唱。
 - [[concepts/intent-formalization]] — **Intent formalization** is the challenge of automatically translating vague human intent into precise, checkable program specifications. It is the central unsolved problem for reliable AI-generate...
 - [[concepts/interactive-explanations]] — Moved to concepts/harness-engineering/agentic-workflows/interactive-explanations.md
 - [[concepts/karpathy-loop]] — > **Definition:** The Karpathy Loop is an autonomous research pattern where a human writes a natural-language research protocol (`program.md`), an AI agent iteratively modifies code (`train.py`), r...

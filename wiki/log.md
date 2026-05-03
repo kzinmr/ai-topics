@@ -1,3 +1,13 @@
+## [2026-05-03] Daniel Miessler — "The Most Important Ideas in AI Right Now"
+
+- **[[entities/daniel-miessler]]** — Created entity page for Daniel Miessler. Cybersecurity/AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ stars), SecLists, PAI, TELOS. Former Apple (BI Security), HP (co-founded Fortify on Demand). Author of Human 3.0 philosophy.
+- **[[concepts/autonomous-component-optimization]]** — Created concept page. Miessler's generalization of Karpathy's Autoresearch to any workflow: the Universal Improvement Cycle (Map→Execute→Log→Collect→Optimize→Update).
+- **[[concepts/intent-based-engineering]]** — Created concept page. Identifies the "articulation gap" as the new bottleneck: engineering shifts from "how to build" to "how to describe what good looks like."
+- **[[concepts/agentic-scaffolding]]** — Enriched with "The Scaffolding Ratio" section: Miessler's thesis that 75–99% of knowledge work is overhead/scaffolding.
+- **[[concepts/karpathy-loop]]** — Enriched with "Generalization: Autonomous Component Optimization" section.
+- **raw/articles/2026-04_daniel-miessler_most-important-ideas-in-ai.md** — Saved raw article.
+- Source: https://danielmiessler.com/blog/the-most-important-ideas-in-ai
+
 ## [2026-05-03] Claw Code — Open-Source AI Coding Agent Harness (Claude Code Clean-Room Reimplementation)
 
 - **[[concepts/claw-code]]** — Created concept page for Claw Code, the open-source clean-room Rust/Python reimplementation of Claude Code's agent harness architecture. Created by [[sigrid-jin]] after Anthropic's March 31, 2026 source code leak. Fastest repo in GitHub history to surpass 100K stars (~24 hours). Covers: dual-language architecture (Rust 72.9% / Python 27.1%), 11+ Rust crates, 19 built-in permission-gated tools, three-part meta-system (OmX/clawhip/OmO), comparison with Claude Code and OpenClaw, the autonomous development thesis, roadmap (deterministic state machines, LaneEvents), and known gaps.

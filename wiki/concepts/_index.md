@@ -498,4 +498,13 @@
    498|- [[concepts/functional-emotions-llms]] — The discovery that Large Language Models develop internal representations of emotion concepts that causally influence model behavior, including alignment-relevant outcomes. Based on Anthropic's 2026 i
    499|
    500|## Gemini.Md
-   501|
+
+- [[concepts/gemini]] — (content needed)
+
+## Autonomous-Component-Optimization.Md
+
+- [[concepts/autonomous-component-optimization]] — Daniel Miesslerが提唱する汎用的自己改善サイクル（Map→Execute→Log→Collect→Optimize→Update）。Karpathy LoopのML超パラメータチューニングを任意の知識ワークフローに拡張した概念。
+
+## Intent-Based-Engineering.Md
+
+- [[concepts/intent-based-engineering]] — AI開発における新たなボトルネック「articulation gap（表明のギャップ）」を特定した概念。エンジニアリングが「どう作るか」から「良い状態をどう記述するか」へ移行することを示す。Daniel Miessler提唱。   501|
