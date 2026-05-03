@@ -78,7 +78,7 @@
 - [[entities/dario-amodei]] — **Role** | Co-founder & CEO, Anthropic |
 - [[entities/dax-raad]] — **X** | @thdxr |
 - [[entities/daytona-io]] — CEO: Ivan Burazin. Composable computing environments (sandboxes) for AI agents.
-- [[entities/deepseek]] — Chinese open-source LLM provider that has driven **cost disruption** in the AI industry. Exemplifies China's open-source AI strategy enabling rapid global uptake.
+- [[entities/deepseek]] — Chinese open-source LLM provider driving **cost disruption**. DeepSeek V4 (1.6T Pro / 284B Flash, MoE, 1M context, MIT license) confirmed running on Huawei Ascend 950 for inference — partial decoupling from Western hardware.
 - [[entities/deliberate-coder]] — **URL:** https://www.benmvp.com (blog), https://github.com/benmvp (GitHub)
 - [[entities/deliberatecoder]] — **URL:** https://deliberate-software.com
 - [[entities/demis-hassabis]] — **Role** | CEO, Google DeepMind; Co-founder, DeepMind |

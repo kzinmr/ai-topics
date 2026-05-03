@@ -1,0 +1,41 @@
+{
+  "run_id": "20260503T071054Z",
+  "triaged_at": "2026-05-03T07:11:00.000000+00:00",
+  "newsletters": [
+    {
+      "subject": "NVIDIA Blackwell vs. Huawei Ascend",
+      "date": "2026-05-02",
+      "source_label": "uid=44",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-02-nvidia-blackwell-vs-huawei-ascend.md",
+      "article_count": 16,
+      "classification": "critical",
+      "reason": "Subject indicates coverage of NVIDIA Blackwell vs Huawei Ascend GPU/AI accelerator competition - core AI infrastructure topic directly relevant to LLM training/inference hardware landscape.",
+      "wiki_action": "create_entity_pages-for-nvidia-blackwell-and-huawei-ascend; update-existing-entity-pages-with-latest-developments",
+      "articles": [
+        {"title": "Link 1", "url": "https://link.mail.beehiiv.com/v1/c/rh1a2PPqCujTbm0G9kQPG%2BX6%2B7FopOXa05y31V%2FwnOVXG5ZUxYZocxdfultU%0AJ1BeOyyGRzVHKld9C4S6Y8w87000uowddAjTFMvmM5tcxlGwFLMZx83WwPbU%0ASw%2FAtbL0wKeINnLhDh8icFyu8t5CPls2J%2FTZ88ukL%2FDqkP1hm4NJmQ0mmSdX%0ABustkNLSuYRt2NF2mNi6bnXJHkn5qdU%2BpA%3D%3D%0A/808c2664e36a1cbf", "classification": "high", "reason": "Likely NVIDIA Blackwell architecture details"},
+        {"title": "Link 2", "url": "https://link.mail.beehiiv.com/v1/c/VHQi25TU1kgvoryoT62KVtW%2FjCtOFPV8mlcgRLWpQVgu5wQwfmbJuNKO7Zcq%0AIff2u8pR9VSNQwlZzwbjxjgzRAckhg1seXyAbUozv84J7NbJqYM8UVkf%2BfT6%0A7jKP58cI8ePzMr%2Bti7Ci3zcd%2Bx%2FW4Qw7INQVrLklpfGl3e1shx66CVtE%2F%2FZQ%0Aj84aGOHeUUecLqUUBIkJ00aDDE6ZOaJoJg%3D%3D%0A/eda4ce178f072d50", "classification": "high", "reason": "Likely Huawei Ascend chip comparison content"},
+        {"title": "Link 3", "url": "https://link.mail.beehiiv.com/v1/c/Nh1El4iwNxpmy5fta43EqfVe1rKTS9yVuATMO%2BVvJ9C%2Fh%2FVrP1Mh79M5vL9y%0Aw1tZvfNphjPNQlttLC%2BNVjwZvfAC2s%2B0SeW7WIgfyJ%2BsXNhZ5VmhzbIHm545%0Amt7mVHThZGiNXJ%2FuFNGPjtGiDlmOCdVtvrfboTIItF%2B8rr%2BELJYtCzAoqyFP%0ApYw6woSC2b9ftzokv4YHfXJLY3en22EOHg%3D%3D%0A/92ad0d6b69e519d2", "classification": "high", "reason": "Likely GPU/AI accelerator benchmark or performance data"},
+        {"title": "Link 4", "url": "https://link.mail.beehiiv.com/v1/c/aMizowf47PZuzx7T9rOTF9OL%2FWBHzRrxGnksE3u6zu7pnFljiliGITDTVrNR%0A1mXnRj%2FrCnIDboDMfHLwm2GqcehlZ8NHh801qa%2BbVD5Hie44set8pKFvDDOx%0AS6%2FAZs7z2914VOJgmO5awOyJHTu2wp1PrIJKXWLqmtBYfIdAJg%2BG%2F9x%2FzRlF%0AKE8A9Cqd%2FnV4zGf1XSUTn%2BAXqvbRlGQ2%2Bg%3D%3D%0A/1fd81a02824f85e3", "classification": "medium", "reason": "Likely AI chip market analysis or industry commentary"},
+        {"title": "Link 5", "url": "https://link.mail.beehiiv.com/v1/c/3Z37cH7cwOWhSPnaIe67eTFj8B63GOozfILQV3WPP8kA8H72lQa0Gt2%2BGJZ4%0AEjDg8AEU4aGyJm3DJI5MDLT1eRRV%2B%2BW0EOahsZLhu%2F3ButYlz6YDW46w6t97%0AAVRkGL1SxSPOldscShH1b1pb8GYjn4zWdeDRC1WfvStp0bdfdElT1G0jqEz5%0A8DRDa%2BsE3Yj8%2B5EsvbmOkfh9d0SShVaAOQ%3D%3D%0A/6718424a51f0b483", "classification": "medium", "reason": "Likely AI hardware ecosystem or supply chain content"},
+        {"title": "Link 6", "url": "https://link.mail.beehiiv.com/v1/c/3XF7SUCxHqKm5NTNuBHBRQwT76CHHgh%2BzIYLdqw7nNsh9hnM%2FP3nr72%2FmtJc%0AOPws3Vw3cYnS5lMTSB4kKhduLzhbX1BdKmrRcI9FxIu%2Fa4ue5SGKivaN%2BIs4%0AjtHLNsiTtDbJnWaJDVcNcxam4FjLHvuThslJupxqmyXJDrEWdtq7E2kUi12Y%0A1fYnWrxg435ElY783d3Voy2dmgFugeDwcg%3D%3D%0A/216ba4f8025eb963", "classification": "medium", "reason": "Likely NVIDIA or Huawei corporate news"},
+        {"title": "Link 7", "url": "https://link.mail.beehiiv.com/v1/c/bjC%2BbgXSuoi76%2Fp5Mgy6yD7PCDF7iSMtpBgl5rdKcc7ANu7R91VWBpvHFv01%0AmJuG2d8M2t0ma6Vs4vSaoAxiBs80VWj4mP9cjrzOvOPSkP44YXmLB23RoZPY%0ACFfrj%2BULmgp5THRUCUjhPs75GPMsg4e3h9S0o1GzXk03DuQ58Uyf76OxgvQ%2B%0ABAqAJkjKUFD5Z3PMoa6k00OoGkj81zLuhw%3D%3D%0A/777c6bd01a59c6a0", "classification": "low", "reason": "May be general tech news or tangential AI content"},
+        {"title": "Link 8", "url": "https://link.mail.beehiiv.com/v1/c/bzTkh9A3nQR%2BOpEyNBVRIOJqzq6XG8X5NM2Pnd0gZsSAuQEZ2gRc4OHN8lMT%0AvMUbgEyERD7SzS%2FUbDpXNi9narGmluzrwNm3OyZZhVXa6niZu1eLXeX%2BAEjN%0AxxAavbAAUbJ0Cr%2B4pXbO2HjSStUh9bDYHCN99UxUoIfI%2BD5eLh4osnWS0GMA%0AaeUXIzhYZgc0YSx6Lrqug0BdSfecq7%2Bkdg%3D%3D%0A/ed5ed640031a2a92", "classification": "low", "reason": "May be general tech news or tangential AI content"},
+        {"title": "Link 9", "url": "https://link.mail.beehiiv.com/v1/c/linfGRS91yaNc4YjNOWi37FLZagjCJCwvwriGTQaqx19lrlzi%2F6JrwwNbwms%0AVRCmopaCY6D7JpLsJfXBqy5AsGO%2F4aa9OLXq8jSMmcwSyhsOBPrEqyDYwEgD%0ADeyHl4QbJhFh3A9e42F1T7dyCkNEMTpsIj88pOe2WQxn6pvrWBfDxvgULzc2%0AXjLnDTHngn0CPLHNwrTcag0ni9qYUmNJ2A%3D%3D%0A/526253f86daf40e6", "classification": "low", "reason": "May be general tech news or tangential AI content"},
+        {"title": "Link 10", "url": "https://link.mail.beehiiv.com/v1/c/Isr7Bti06TIpW0%2B7r92oXDN%2Bdp8%2FDkAsb9or73TakDKYjOuVE0PwmBoyqD6s%0Auud46X4z%2FWaV1iOyroSFaSbfAIHoTSePFJUhXqQNQ45gnCizuGloy5jTAxNJ%0ATi%2F6AZGOnADGLj6XsVUKE27a%2FB2u2rJtygBgkiHFiLPsscTradZgBLUWL80S%0AEOybbWHxQ02V%2BK8PaIjdHkt%2FfdawcLrZHQ%3D%3D%0A/c974774fd5a12610", "classification": "low", "reason": "May be general tech news or tangential AI content"},
+        {"title": "Link 11", "url": "https://link.mail.beehiiv.com/v1/c/k3sCsoG%2BHTHkh175nGQ13zHZitn56vdLbsqlxWIFPQfaxw%2BLKFIvCr6SpoTK%0A%2FuzVTMiWw02kuCKXJK%2FXJM4y263jBkhtE27mVWqUDinfW9hx1HF6RzDOB1yv%0AvRrnU2WckL4F%2FXrPxc%2BJrV7Jp9TtaWUxDuPKxhhIMRjBJnBoOv3oxjJm9Q%2BI%0AsiSr5tBByqOVwkQgckhjbnjOFNbJZ%2FcgOA%3D%3D%0A/ea17c2ddd729e41b", "classification": "low", "reason": "May be general tech news or tangential AI content"},
+        {"title": "Link 12", "url": "https://link.mail.beehiiv.com/v1/c/E8sV4KaQC9zsOvyUv81rS%2BRpN3m6dI758gkzTSxnu9o8Rzus4Io7Y7WJ1XLL%0A2oS%2B4cUE6dJiI7IFuVSwOQfjk16NM1Oi4Ku8UuvchHbpBL3XD10lFtQ5kECW%0A9JsLpwAYugYwRtFtagmc%2FwQGd7hlhWPebkcw%2BZlfQo7P0RsJ3ZDrVh2hezQ7%0AFGukOMrkKLKtTwbdybFqpqjRcY0%2B%2FcLgcQ%3D%3D%0A/5425f6fce69c36ea", "classification": "low", "reason": "May be general tech news or tangential AI content"},
+        {"title": "Link 13", "url": "https://link.mail.beehiiv.com/v1/c/BM%2B7QorD8t3BMqEzIKWs5g66m8HD44vO5RkvH7migPd8qfaMQbau9fzMjvB6%0AmQvECwl0Mv9RvksTSw%2BNWRPLTEb100FWf%2B4jjcolrQ5jgBprZeoVxJgXamz%2B%0AgYMF2HNUGredm5OPk7V7kYjTZbsUuc%2FQuqvvGyNsg1ar7IYm7fTkGZF9hHIy%0AyVuQIoJycxWNEDfEfIX2h3twFAdaNVWI4g%3D%3D%0A/ad3e8a8cde1fbec6", "classification": "low", "reason": "May be general tech news or tangential AI content"},
+        {"title": "Link 14", "url": "https://link.mail.beehiiv.com/v1/c/ruPpgBx9NNVpyXnA0mjgO2v9yxCFViuwNVDYziBMnzw3ID8uEX1mKWBQa3cy%0AY9JlJX3heF1w17eKdOkfcGSxgZpAODKwOQmtIMOSM9HoOronhm525ePLHpsX%0AFAgTLXgslQObuzs9tqjdrl9709bVrmyU01vZ%2BJ1d%2FiTK3DbWTwzujEZNmnd8%0AmCySklObM9eXVij1AJ9Q%2BBpOzxSHiD26Fw%3D%3D%0A/b4c7b9f325e50e90", "classification": "low", "reason": "May be general tech news or tangential AI content"},
+        {"title": "Link 15", "url": "https://hp.beehiiv.com/ccc0ac2a-6a36-45a0-abc7-558e4657920f", "classification": "low", "reason": "Beehiiv platform link, likely newsletter footer or subscription management"},
+        {"title": "Link 16", "url": "https://email.beehiivstatus.com/49334d1e0074e7eb2f54e6904313f0535247dc9e/hclick", "classification": "low", "reason": "Beehiiv status page link, not article content"}
+      ],
+      "summary": "Newsletter covering NVIDIA Blackwell vs Huawei Ascend GPU/AI accelerator competition. Contains 16 links, with the first ~6 likely being primary article content about AI chip architecture, benchmarks, and market analysis. Links 7-14 are likely secondary content. Links 15-16 are beehiiv platform links (footer/subscription). Overall classification: CRITICAL - directly relevant to LLM/AI infrastructure knowledge base.",
+      "next_steps": [
+        "Resolve beehiiv redirect URLs to extract actual article content",
+        "Create or update wiki entity pages for NVIDIA Blackwell and Huawei Ascend",
+        "Add comparison page if significant new benchmark data or architectural details are found",
+        "Cross-reference with existing mlops/inference wiki pages"
+      ]
+    }
+  ]
+}

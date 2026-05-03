@@ -1,3 +1,9 @@
+## [2026-05-03] Newsletter Wiki Ingest — Superintel+ V4 Newsletter: DeepSeek V4 + Huawei Ascend 950
+
+- **[[entities/deepseek]]** — Major expansion: Added V4 model series table (Pro 1.6T/49B active, Flash 284B/13B active, 1M context MoE). Added pricing comparison, efficiency gains (27% FLOPs/10% KV cache vs V3.2 for Pro). Added Huawei Ascend 950 deployment section: SMIC quadruple-patterning, chip utilization 60%→85%, EUV prototype rumors. Updated strategy and market impact sections. 2→8 cross-references.
+- **raw/articles/2026-05-02-superintel-nvidia-blackwell-vs-huawei-ascend-deepseek-v4.md** — Saved raw article (paywalled, preview only)
+- Source: Superintel+ newsletter via beehiiv (getsuperintel.com), Kim "Chubby" Isenberg, May 2 2026. Cross-referenced with Simon Willison's V4 coverage (Apr 24 2026).
+
 ## [2026-05-03] Karpathy — Vibe Coding MenuGen Post-mortem
 
 - **[[entities/karpathy-writings]]** — Expanded "Vibe coding MenuGen" entry: 80/20 trap, API hallucination issues (OpenAI OCR, Replicate), Vercel/Clerk/Stripe deployment hurdles, LLM gaslighting, four demands for vibe coding era
