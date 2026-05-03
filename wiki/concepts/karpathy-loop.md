@@ -201,6 +201,19 @@ Karpathy's approach is essentially a harness for a *research agent* rather than 
 > *"The bottleneck shifted from 'can the AI do it?' to 'can the human review it fast enough?'"*
 > — **Vineet Bhosle**, LinkedIn comment on Sarah Guo's post
 
+## Generalization: Autonomous Component Optimization
+
+Daniel Miessler (April 2026) proposed [[concepts/autonomous-component-optimization]] as a **generalized version of the Karpathy Loop** — extending the ML hyperparameter search pattern to any knowledge work domain.
+
+| Aspect | Karpathy Loop | Autonomous Component Optimization |
+|--------|--------------|----------------------------------|
+| **Scope** | ML hyperparameter tuning | Any workflow or process |
+| **Input** | ML training code + constraints | Goals, SOPs, and verifiable criteria |
+| **Loop** | Train → Log → Tweak → Repeat | Map → Execute → Log → Collect → Optimize → Update |
+| **Optimization target** | `val_bpb` (a single number) | User-defined binary pass/fail criteria |
+
+The Karpathy Loop's core insight — that constraint quality determines autonomy — generalizes directly: Miessler's articulation gap ([[concepts/intent-based-engineering]]) is simply the human-side equivalent of constraint design.
+
 ---
 
 ## Further Reading

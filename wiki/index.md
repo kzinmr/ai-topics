@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-03 | Total pages: 785 | Full entries: 754 | Stubs: 614 |
+| Last updated: 2026-05-03 | Total pages: 789 | Full entries: 754 | Stubs: 614 |
 
-## Entities (380 pages)
+## Entities (383 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -277,6 +277,7 @@
 - [[entities/seangoedecke-com]] — **URL:** https://www.seangoedecke.com
 - [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. 6 specialized tools for code analysis/search/retrieval from any public git repo. Previously indexed 75B+ lines of code. Built by [[ben-boyter]]. Free beta, no API key needed.
 - [[entities/sero]] — Sero (known online as **0xSero**) is an open-source developer, AI infrastructure builder, and founder of **Sybil Solutions**. He operates at the intersection of AI agents, blockchain infrastructure...
+- [[entities/sigrid-jin]] — Creator of **[[claw-code]]**, the clean-room Rust/Python reimplementation of Claude Code's agent harness. Fastest repo in GitHub history to surpass 100K stars. Featured in WSJ for 25B Claude Code tokens. Korean-Canadian, UBC.
 - [[entities/sglang]] — **Type** | LLM Inference Engine / Serving Framework |
 - [[entities/sheshansh-agrawal]] — **X/Twitter** | @sheshansh_agrawal |
 - [[entities/shkspr-mobi]] — **Terence Eden** (pronounced "ed-en") is a technology policy expert, open-source advocate, web standards contributor, and blogger. Based in the UK, he has worked at the intersection of government t...
@@ -316,6 +317,7 @@
 - [[entities/troy-hunt]] — **URL:** https://www.troyhunt.com
 - [[entities/ubtech-robotics]] — One of China's most valuable AI and robotics companies. Focuses on service robots and humanoid platforms for education and commercial applications.
 - [[entities/unitree-robotics]] — Hangzhou-based humanoid and quadruped robot manufacturer. Founded 2016 by Wang Xingxing (former DJI engineer, age 26 at founding). World's #1 humanoid robot seller in 2025.
+- [[entities/ultraworkers]] — GitHub organization hosting **[[claw-code]]**, the Rust implementation of the `claw` CLI agent harness. Fastest repo in history to surpass 100K stars. Home of Sigrid Jin and Yeachan Heo's autonomous development demo.
 - [[entities/utcc-utoronto-ca-cks]] — **Blog** | Wandering Thoughts |
 - [[entities/varun-trivedy]] — **X** | @Vtrivedy10 |
 - [[entities/vtrivedy10]] — **X** | @vtrivedy10 |
@@ -333,6 +335,7 @@
 - [[entities/xpeng]] — Chinese electric vehicle manufacturer with integrated robotics and flying vehicle divisions. Builds cars, robots, and flying vehicles on a single AI-powered platform.
 - [[entities/yacine-mahdid]] — **URL:** https://yacine.ca/
 - [[entities/yann-lecun]] — **フルネーム** | Yann André LeCun |
+- [[entities/yeachan-heo]] — Creator of **Oh-My-Codex (OmX)** workflow layer for Codex CLI and **Oh-My-Claudecode (OMC)**. Algorithmic trader in Seoul. Primary collaborator on **[[claw-code]]** Rust implementation.
 - [[entities/ysymyth]] — YSYMYTH（スケルトンページ）
 - [[entities/zach-mueller]] — **X** | @TheZachMueller |
 - [[entities/zach-tratar]] — AI @ Notion. Founded Embra (acquired 2026). Argues for unified AI context apps over vertical SaaS.
@@ -524,6 +527,7 @@
 - [[concepts/claude-mythos-glasswing]] — **Claude Mythos** is Anthropic's most powerful AI model to date — described internally as "by far the most powerful AI model we've ever developed." **Project Glasswing** is the restricted release p...
 |- [[concepts/claude-mythos-preview]] — **Claude Mythos** is Anthropic's next-generation frontier model series. The first preview was announced on **April 7, 2026**, accompanied by a detailed Frontier Red Team research summary covering c...
 |- [[concepts/claude-opus-4-7]] — **Claude Opus 4.7** is Anthropic's frontier LLM released April 16, 2026. Key features: first tokenizer change since Claude 1 (40% more tokens), web search tool support, improved coding accuracy (42% on TAU-bench), 200K context window, and AI London Lab certification for UK government use.
+|- [[concepts/claw-code]] — Open-source clean-room Rust/Python reimplementation of Claude Code's agent harness architecture. Created by [[sigrid-jin]] after March 2026 leak. Fastest repo in GitHub history to surpass 100K stars. Built with oh-my-codex.
 |- [[concepts/cli-over-mcp-pattern]]
 - [[concepts/closing-agent-loop]] — Cognition's philosophy for autonomous development: Devin doesn't just write code — it handles the entire development loop.
 - [[concepts/coala]] — **Authors:** Theodore R. Sumers, Shunyu Yao, Karthik Narasimhan, Thomas L. Griffiths (Princeton University)

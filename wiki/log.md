@@ -1,3 +1,12 @@
+## [2026-05-03] Claw Code — Open-Source AI Coding Agent Harness (Claude Code Clean-Room Reimplementation)
+
+- **[[concepts/claw-code]]** — Created concept page for Claw Code, the open-source clean-room Rust/Python reimplementation of Claude Code's agent harness architecture. Created by [[sigrid-jin]] after Anthropic's March 31, 2026 source code leak. Fastest repo in GitHub history to surpass 100K stars (~24 hours). Covers: dual-language architecture (Rust 72.9% / Python 27.1%), 11+ Rust crates, 19 built-in permission-gated tools, three-part meta-system (OmX/clawhip/OmO), comparison with Claude Code and OpenClaw, the autonomous development thesis, roadmap (deterministic state machines, LaneEvents), and known gaps.
+- **[[entities/sigrid-jin]]** — Created entity page for Sigrid Jin (@realsigridjin), creator of claw-code. Korean-Canadian, UBC. Featured in WSJ for 25B Claude Code tokens. Built initial Python port in hours with 1 human helper + 10 OpenClaw instances.
+- **[[entities/yeachan-heo]]** — Created entity page for Yeachan Heo (@bellman_ych), creator of oh-my-codex (OmX), oh-my-claudecode (OMC), clawhip. Algorithmic trader in Seoul. Primary collaborator on claw-code Rust implementation.
+- **[[entities/ultraworkers]]** — Created entity page for UltraWorkers GitHub organization, canonical home of the claw-code Rust implementation.
+- **raw/articles/2026-05-03_claw-code-overview.md** — Saved raw article with full details.
+- Updated: wiki/index.md (4 new entries → 789 total pages), wiki/log.md
+
 ## [2026-05-03] Knowledge Shields — Systems Understanding Methodology from Entropic Thoughts
 
 - **[[concepts/knowledge-shields]]** — Created concept page capturing Chris (Entropic Thoughts)'s unified methodology for understanding complex systems. Covers: the hypothesis-invalidation loop, mental model diagnosis through observation, self-verification skills (alternative approaches, feasibility checks, recursive verification), knowledge shields (strongly held wrong beliefs resist correction), productive vs. unproductive error classification, and motivation management. Includes connections to AI agent debugging, eval design, and prompt engineering. Sources: entropicthoughts.com/understanding-systems.

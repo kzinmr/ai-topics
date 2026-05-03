@@ -69,9 +69,32 @@ Step 1 (Plan) → Review → Step 2 (Execute) → Verify → Step 3 (Report)
 3. **Observability First**: 全ての操作をログ・トレース可能に
 4. **Graceful Degradation**: 検証失敗時も安全にフォールバック
 
+## The Scaffolding Ratio (Miessler's Thesis)
+
+Daniel Miessler (April 2026) proposed that **75–99% of knowledge work is scaffolding** — the overhead of maintaining tools, workflows, templates, and knowledge bases rather than doing the actual "hard thinking."
+
+### Key Claims
+
+1. **The Scaffolding Ratio**: The "hard thinking" is a tiny percentage of most knowledge work. The vast majority is setup, maintenance, and context management.
+2. **AI Commoditization**: AI "crushes" this scaffolding. Agent Skills can package context and methodology, executing as well as professionals because "the work wasn't the hard part — the maintenance was."
+3. **Implication for Scaffolding Design**: As scaffolding becomes the primary interface between humans and AI agents, its design quality determines output quality more than the underlying model capability.
+
+### Relationship to Scaffolding Layers
+
+| Miessler's Thesis | Wiki's Scaffolding Layers |
+|-------------------|--------------------------|
+| 75-99% is overhead | Validates the importance of layered guardrails — the scaffolding IS the work |
+| AI crushes the maintenance | Tool use, sandboxing, and observability layers enable automation of scaffolding |
+| Skills package methodology | Agent Skills (SKILL.md bundles) are the mechanism for packaging expert scaffolding |
+
+See [[concepts/autonomous-component-optimization]] for the complementary improvement cycle, and [[concepts/intent-based-engineering]] for how to define what "good" looks like.
+
 ## Related
 
 - [[concepts/harness-engineering/system-architecture/agent-security-patterns]] — Agent Security Patterns
 - [[concepts/agent-loop-orchestration]] — Agent Loop Orchestration
 - [[concepts/harness-engineering/system-architecture/building-effective-agents]] — Building Effective Agents (Anthropic)
 - [[concepts/agent-sandboxing]] — Agent Sandboxing
+- [[concepts/autonomous-component-optimization]] — Miessler's Universal Improvement Cycle
+- [[concepts/intent-based-engineering]] — Miessler's articulation gap concept
+- [[entities/daniel-miessler]] — Author of the Scaffolding Ratio thesis
