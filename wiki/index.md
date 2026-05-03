@@ -1490,7 +1490,7 @@
 - [[concepts/sycophancy-in-llms]] — > **TODO**: Enrich this page.
 - [[concepts/symphony]] — > **TODO**: Enrich this page.
 - [[concepts/synth]] — > **TODO**: Enrich this page.
-- [[concepts/synthetic-data]] — > **TODO**: Enrich this page.
+- [[concepts/synthetic-data]] — Synthetic data for LLM pre-training: techniques from simple rephrasing (1.48× efficiency) to Megadocs (1.80× via stitching/stretching), agentic data creation, and distributional shift paradox.
 - [[concepts/systems-programming]] — > **TODO**: Enrich this page.
 - [[concepts/talk]] — > **TODO**: Enrich this page.
 - [[concepts/tau-bench]] — > **TODO**: Enrich this page.

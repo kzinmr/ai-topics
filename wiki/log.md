@@ -1,3 +1,9 @@
+## [2026-05-03] X Account Scan — Megadocs Synthetic Data Paper + Error Report
+
+- **[[concepts/synthetic-data]]** — Enriched from stub to comprehensive: Megadocs technique (stitching/stretching for 1.80× data efficiency), synthetic rephrasing baseline (1.48×), distributional shift paradox, pre-training best practices. Source: Kim et al. "Data-efficient pre-training by scaling synthetic megadocs" (arXiv:2603.18534, March 2026), shared by @Grad62304977.
+- **raw/articles/2026-03-19_megadocs-synthetic-pretraining.md** — Saved paper summary
+- **Infrastructure Alert:** 66/79 tracked X accounts had user_id resolution failures — investigation needed
+
 ## [2026-05-03] Daily Skeleton Enrichment — Sebastián Ramírez, Adam Rosenthal
 
 - **[[entities/sebastian-ramirez]]** — Enriched from stub to comprehensive entity: creator of FastAPI, Typer, SQLModel, Asyncer. Added biography (homeschooled in Colombia, self-taught, cancer survivor), career timeline, project list with GitHub stars, philosophy, Sequoia Open Source Fellowship.
