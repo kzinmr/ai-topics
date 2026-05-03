@@ -1,3 +1,14 @@
+## [2026-05-03] Trending Topics — NIST CAISI Evaluation, CISA AI Cyber Deadline, Boston Dynamics Exodus, Gary Marcus
+
+- **[[entities/deepseek]]** — Updated with NIST CAISI evaluation section: +8 month capability lag vs US frontier, suspected benchmark contamination, cost efficiency confirmed. Added CAISI evaluation results table and verification under "Independent Evaluation" heading.
+- **[[entities/gary-marcus]]** — Enriched from stub to comprehensive entity: cognitive scientist, LLM consciousness skepticism, Gullibility Gap concept, Dawkins critique. Added publications, quotes, cross-references.
+- **raw/articles/2026-05-01_nist-caisi-deepseek-v4-evaluation.md** — Saved NIST CAISI full report
+- **raw/articles/2026-05-01_cisa-ai-powered-hacking-patch-deadline.md** — Saved Reuters exclusive: CISA considers 3-day patching deadline
+- **raw/articles/2026-05-01_boston-dynamics-c-suite-exodus.md** — Saved Semafor exclusive: CEO/COO/CSO/CTO departures
+- **inbox/rss-scans/daily-scan-2026-05-03.md** — Saved daily trending topics report (7 topics)
+- **Trending topics identified (top 5):** ① NIST CAISI DeepSeek V4 evaluation (8-month gap, benchmark contamination) ② CISA 3-day patch deadline (AI-powered hacking by Mythos/GPT-5.4-Cyber) ③ DeepSeek V4 + Huawei Ascend 950 supply crunch (ByteDance/Tencent/Alibaba scramble) ④ Boston Dynamics C-suite exodus (Hyundai pressure for humanoid scale) ⑤ Dawkins vs Marcus LLM consciousness debate
+- Updated: wiki/index.md (Gary Marcus description enriched), wiki/log.md
+
 ## [2026-05-03] Active Crawl — Microsoft Agent 365, Amazon Bedrock AgentCore, Grok Imagine, NVIDIA B300 China Pricing
 
 - **[[concepts/microsoft-agent-365]]** — Created concept page for Microsoft's enterprise AI agent governance control plane. Launched May 1, 2026 at $15/user/month. Manages agents across Foundry, Copilot Studio, and third-party platforms. Key differentiator: security & oversight layer vs. AI feature integration (Wave 3).

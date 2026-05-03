@@ -124,7 +124,7 @@
 - [[entities/florian-brand]] — **X** | @xeophon |
 - [[entities/foundation-capital]] — AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents.
 - [[entities/fourier-intelligence]] — Chinese company specializing in rehabilitation robotics and general-purpose humanoid robots. Combines medical expertise with advanced robotics technology.
-- [[entities/gary-marcus]] — **Role** | Professor Emeritus, NYU; Founder, Robust.AI; Cognitive Scientist |
+- [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs.
 - [[entities/gemini]] — **Type** | Multimodal AI Model Family |
 - [[entities/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform announced at Cloud Next 2026. Evolves Vertex AI into full-stack agent build/scale/govern/optimize platform with 200+ models, Agent Studio, ADK, Memory Bank, Agent Sandbox.
 - [[entities/gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind designed for on-device frontier intelligence.

@@ -3,11 +3,12 @@ title: DeepSeek
 created: 2026-04-26
 updated: 2026-05-03
 type: entity
-tags: [company, open-source, model, inference, training]
+tags: [company, open-source, model, inference, training, benchmark]
 sources:
   - raw/articles/2026-04-25-china-ai-robotics-industry-competitive-landscape.md
   - raw/articles/simonwillison.net--2026-apr-24-deepseek-v4--d443e33a.md
   - raw/newsletters/2026-05-02-nvidia-blackwell-vs-huawei-ascend.md
+  - raw/articles/2026-05-01_nist-caisi-deepseek-v4-evaluation.md
 ---
 
 # DeepSeek
@@ -82,6 +83,19 @@ DeepSeek V4 is confirmed to run on **Huawei Ascend 950** chips for inference and
 - [[inference]] — Efficiency innovations in V4 architecture
 - [[entities/simon-willison]] — Covered V4 technical details
 - [[entities/kimi]] — Competitor (K2.6 at 1.1T)
+
+## Independent Evaluation: NIST CAISI (May 2026)
+
+On May 1, 2026, the **Center for AI Standards and Innovation (CAISI)** at NIST published an independent evaluation of DeepSeek V4 Pro. Key findings:
+
+- **8-month capability gap vs US frontier** — CAISI's IRT analysis estimates V4 Pro at Elo 800 vs GPT-5.5 xhigh at 1260
+- **Benchmark contamination suspected** — DeepSeek's self-reported parity with GPT-5.4 may reflect public benchmark contamination; CAISI's private benchmarks (PortBench, CTF-Archive-Diamond) reveal larger gaps
+- **Strengths**: Mathematics (OTIS-AIME-2025: 97%), PUMaC 2024: 96%
+- **Weaknesses**: Abstract reasoning (ARC-AGI-2 private: 46% vs GPT-5.5 79%), Cybersecurity (CTF: 32% vs 71%), Software engineering (PortBench: 44% vs 78%)
+- **Cost efficiency confirmed**: V4 Pro is 53% cheaper than GPT-5.4 mini on certain benchmarks ($1.74/$3.48 per M tokens vs $0.75/$4.50)
+- **Verdict**: Most capable PRC model to date, but not yet frontier-competitive despite aggressive marketing claims
+
+Sources: [NIST CAISI Report](https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro)
 
 ## Open Questions
 
