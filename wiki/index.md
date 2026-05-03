@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-03 | Total pages: 782 | Full entries: 751 | Stubs: 614
+| Last updated: 2026-05-03 | Total pages: 784 | Full entries: 753 | Stubs: 614
 
-## Entities (378 pages)
+## Entities (380 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -23,6 +23,7 @@
 - [[entities/andrew-nesbitt]] — **URL:** https://nesbitt.io
 - [[entities/antoine-buteau]] — **Name** | Antoine Buteau | BizOps leader, automation architecture writer. Author of 10-part Automation Series.
 - [[entities/andriy-burkov]] — **X** | @aburkov |
+- [[entities/andy-nguyen]] — **X** | @kevinnguyendn | Founder & CEO of ByteRover, portable file-based memory layer for coding agents.
 - [[entities/anildash]] — **Blog** | Anil Dash (since 2000) |
 - [[entities/ankur-goyal]] — **Name** | Ankur Goyal |
 - [[entities/anthropic-computer-use]] — **Anthropic Computer Use**は、Claudeモデルがスクリーンショットを見てGUIを直接操作する機能。2024年10月に研究プレビューとして公開され、スクリーン座標へのクリック、キー入力、スクロールなど、人間と同じ方法でコンピュータを操作できる。2026年2月のVercept買収とClaude Sonnet 4.6リリースにより、OSWorldスコアが15%未満から7...
@@ -49,6 +50,7 @@
 - [[entities/browserbase]] — **Browserbase**は、AIエージェント向けの信頼性の高いブラウザ自動化インフラを提供するプラットフォーム。「the where（どこで実行するか）」を担当し、Stagehand（the what）とStagehand API（the how）と統合された3層アーキテクチャを構築している。
 - [[entities/brutecat-com]] — **Blog** | brutecat.com |
 - [[entities/bryan-bischof]] — **X** | @BEBischof |
+- [[entities/byterover]] — **ByteRover** is a portable, file-based memory layer for coding agents with 92-96% retrieval accuracy. Replaces vector DB with LLM-curated Markdown context tree. BYO Vietnam. Open source (Elastic 2.0).
 - [[entities/cat-wu]] — Head of Product at Anthropic, responsible for Claude Code and Anthropic's product development strategy.
 - [[entities/cats-with-power-tools]] — **URL:** https://blog.pixelmelt.dev (primary), https://blog.exploit.cat (secondary)
 - [[entities/chad-nauseam-home]] — **Blog** | chadnauseam.com |

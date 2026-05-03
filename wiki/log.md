@@ -1,3 +1,10 @@
+## [2026-05-03] ByteRover — Portable File-Based Memory Layer for Coding Agents
+
+- **[[entities/byterover]]** — Created entity page for ByteRover (formerly Cipher). Portable, file-based memory layer for autonomous coding agents with market-best 92-96% retrieval accuracy on LoCoMo/LongMemEval. Built in TypeScript by campfirein (Vietnam). Architecture: replaces vector DBs with LLM-curated Hierarchical Context Tree of Markdown files with Adaptive Knowledge Lifecycle (AKL) and 5-tier progressive retrieval. Open source (Elastic 2.0), 4.2k+ GitHub stars. Native plugins for Hermes Agent, Claude Code, OpenClaw. arXiv:2604.01599.
+- **[[entities/andy-nguyen]]** — Created entity page for Duy Anh "Andy" Nguyen (@kevinnguyendn), Founder & CEO of ByteRover. Based in Da Nang, Vietnam. Former ML Engineer at OpenLab JSC.
+- **raw/articles/2026-05-03_ByteRover-overview.md** — Saved raw article from homepage + GitHub + arXiv paper.
+- Source: https://www.byterover.dev/blog, https://github.com/campfirein/byterover-cli, https://arxiv.org/abs/2604.01599
+
 ## [2026-05-03] Minimal Coding Agent — Thorsten Ball's "Emperor Has No Clothes" Guide
 
 - **[[concepts/minimal-coding-agent]]** — Created concept page for the minimal code-editing agent pattern: ~400 lines of Go, 3 tools (read_file/list_files/edit_file via string replacement), heartbeat loop. Thorsten Ball's thesis: the agent loop itself has no moat; differentiation comes from UI/UX, system prompts, error handling.
