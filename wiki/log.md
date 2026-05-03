@@ -1,3 +1,12 @@
+## [2026-05-03] Minimal Coding Agent — Thorsten Ball's "Emperor Has No Clothes" Guide
+
+- **[[concepts/minimal-coding-agent]]** — Created concept page for the minimal code-editing agent pattern: ~400 lines of Go, 3 tools (read_file/list_files/edit_file via string replacement), heartbeat loop. Thorsten Ball's thesis: the agent loop itself has no moat; differentiation comes from UI/UX, system prompts, error handling.
+- **[[entities/thorsten-ball]]** — Created entity page for Thorsten Ball. Software engineer at Sourcegraph (Amp), author of Writing An Interpreter In Go / Writing A Compiler In Go, writes Register Spill newsletter.
+- **[[concepts/agent-loop-orchestration]]** — Added [[concepts/minimal-coding-agent]] as a concrete Go implementation reference.
+- **[[concepts/harness-engineering/system-architecture/building-effective-agents]]** — Added [[concepts/minimal-coding-agent]] as a concrete implementation of Anthropic's "simple composable patterns" principle.
+- **raw/articles/2025-04-15_ampcode-how-to-build-a-code-editing-agent.md** — Saved raw article.
+- Source: https://ampcode.com/notes/how-to-build-an-agent
+
 ## [2026-05-02] OpenRouter State of AI 2025 — 100T Token LLM Usage Study
 
 - **[[concepts/openrouter-state-of-ai-2025]]** — Created concept page for the landmark study by OpenRouter & a16z analyzing 100 trillion tokens of real-world LLM usage. Covers: reasoning inflection point (Dec 5, 2024, o1 release), open vs closed source dynamics (30% OSS equilibrium, Chinese OSS rise), agentic inference shift (50%+ reasoning tokens, 4x prompt length explosion), category taxonomy (Programming 50%+ tokens, Roleplay 52% of OSS), provider specializations, economics (price inelasticity, Jevons Paradox, market archetypes), and geography (Asia 31%, doubled).

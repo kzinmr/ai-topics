@@ -92,3 +92,4 @@ command → plan → tool call → environment feedback → iterate → result
 - [[concepts/harness-engineering]] — 上位インデックス
 - [[concepts/context-engineering]] — コンテキスト管理
 - [[concepts/harness-engineering/system-architecture/evals-for-ai-agents]] — エージェント評価
+- [[concepts/minimal-coding-agent]] — Thorsten Ballによる400行のGo実装。Anthropicの「単純で合成可能なパターン」原則の具体例

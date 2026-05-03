@@ -89,6 +89,7 @@ sources:
 - [[concepts/agent-swarms]] — 創発的マルチエージェントシステム
 - [[concepts/claude-code-best-practices]] — Claude Code のエージェントループ活用
 - [[concepts/autoreason]] — 自己改善型推論ループ
+- [[concepts/minimal-coding-agent]] — Thorsten Ballによる400行のGo実装。3ツール(read_file/list_files/edit_file)の最小エージェントループ
 
 ## ソース
 
