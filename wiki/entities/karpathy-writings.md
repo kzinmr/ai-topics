@@ -2,7 +2,7 @@
 title: "Karpathy Writings & Blog Posts"
 tags: [person, writing]
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-05-03
 type: entity
 ---
 
@@ -35,7 +35,27 @@ Explores the fundamental importance of verifiability in AI systems. Argues that 
 Conceptual framework for thinking about AI behavior. Contrasts reactive, stimulus-driven behavior (animals) with generative, imagination-driven behavior (ghosts). Provides a lens for understanding different AI capabilities and limitations.
 
 ### Vibe coding MenuGen (Apr 2025)
-Origin of the term **"vibe coding"**. Built a menu generation prototype using LLMs (OCR + AI image gen for restaurant menus). Developed with Cursor/Claude & Superwhisper (voice-to-code). Describes the experience of coding by natural language description and iterative refinement.
+Origin of the term **"vibe coding"**. A detailed post-mortem of building **MenuGen** (menugen.app) -- a production app that photographs restaurant menus, OCRs them, and generates AI images for every dish -- 100% via Cursor + Claude 3.7. Karpathy acted as "vibe coder" providing high-level direction without writing code directly. The app is a real product with authentication (Clerk), payments (Stripe), and a "good and honest 10% markup" on API costs.
+
+**Key insights from the post-mortem:**
+
+| Insight | Detail |
+|---------|--------|
+| **80/20 Trap** | Local prototype was fast, but deploying a real app was a "painful slog." Felt 80% done but was closer to 20% |
+| **API Hallucination** | OpenAI OCR - LLM hallucinated deprecated APIs; Replicate - heavy rate limiting + out-of-date docs |
+| **Vercel Debugging** | Required "pushing fake debugging commits" to force redeploys |
+| **Clerk Auth** | Claude hallucinated ~1000 lines of deprecated code; needed custom domain, DNS, Google Cloud Console OAuth config |
+| **Stripe Logic Error** | Claude initially matched payments to users via email (wrong - Stripe email does not equal Google OAuth email). Karpathy caught it |
+| **LLM Gaslighting** | When corrected, LLM "thanks me... and tells me it will do it correctly in the future, which I know is just gaslighting" |
+| **No State** | Skipped database (Supabase) and queues (Upstash) as "too much bear" - app prone to timeouts |
+
+**Four recommendations** for the vibe coding era:
+1. **Batteries-Included Platforms** -- "opposite of Vercel Marketplace" that pre-configures domain, auth, payments, DB
+2. **LLM-Friendly Services** -- docs in Markdown, configs via CLI/curl, not web UIs: "Don't talk to a developer... Instruct and empower their LLM"
+3. **Simpler Stacks** -- Considering HTML/CSS/JS + Python FastAPI over "serverless multiverse"
+4. **Apps as Prompts** -- Questioning if apps should be standalone products or "Artifacts" generated on-the-fly
+
+**Conclusion:** Barrier to app creation dropping to ~zero; anyone can create custom automations as easily as making a TikTok.
 
 ### Power to the people: How LLMs flip the script on technology diffusion (Apr 2025)
 Argues that LLMs dramatically accelerate the spread of technical capabilities. Previously, expertise was the bottleneck; now it's access and judgment. Democratizing effect on software development.

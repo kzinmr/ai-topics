@@ -1,3 +1,11 @@
+## [2026-05-03] Karpathy — Vibe Coding MenuGen Post-mortem
+
+- **[[entities/karpathy-writings]]** — Expanded "Vibe coding MenuGen" entry: 80/20 trap, API hallucination issues (OpenAI OCR, Replicate), Vercel/Clerk/Stripe deployment hurdles, LLM gaslighting, four demands for vibe coding era
+- **[[entities/karpathy-ideas]]** — Added MenuGen post-mortem insights section to Vibe Coding entry: IKEA Future metaphor, Batteries-Included Platform vision, LLM-Friendly Design principle, Apps as Prompts thesis
+- **[[concepts/harness-engineering/agentic-workflows/vibe-coding]]** — Added Karpathy MenuGen as the original vibe coding case study, with post-mortem insight table and four demands
+- **raw/articles/2025-04-27_karpathy-vibe-coding-menugen.md** — Saved raw article
+- Source: https://karpathy.bearblog.dev/vibe-coding-menugen/
+
 ## [2026-05-03] Daniel Miessler — "The Most Important Ideas in AI Right Now"
 
 - **[[entities/daniel-miessler]]** — Created entity page for Daniel Miessler. Cybersecurity/AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ stars), SecLists, PAI, TELOS. Former Apple (BI Security), HP (co-founded Fortify on Demand). Author of Human 3.0 philosophy.

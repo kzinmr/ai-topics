@@ -2,7 +2,7 @@
 title: "Karpathy Ideas & Social Influence"
 tags: [person, ideas]
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-05-03
 type: entity
 ---
 
@@ -51,7 +51,15 @@ Across multiple essays (Digital Hygiene, Chemical Hygiene), Karpathy advocates f
 The fundamental paradigm shift where neural networks replace hand-coded programs. Instead of writing explicit rules (Software 1.0), we specify objective functions and let the network learn the implementation from data.
 
 ### Vibe Coding
-Coding by describing intent in natural language and iteratively refining based on the output. The programmer becomes a curator and reviewer rather than a writer. The "vibe" is the feeling of working with AI as a creative partner — fast, exploratory, and low-friction.
+Coding by describing intent in natural language and iteratively refining based on the output. The programmer becomes a curator and reviewer rather than a writer. The "vibe" is the feeling of working with AI as a creative partner -- fast, exploratory, and low-friction.
+
+**MenuGen post-mortem insights** (Apr 2025): His own vibe coding project revealed the gap between local prototyping and production deployment. Key findings:
+- **The 80/20 Trap**: Local prototype is fast; shipping a real product (auth, payments, deployment) is a "painful slog."
+- **The IKEA Future**: Modern app building is less about coding and more about "gluing a monster" of disparate services (Vercel, Clerk, Stripe, OpenAI, Replicate)
+- **LLM Gaslighting**: The AI apologizes when wrong but makes the same mistakes next session -- "it will do it correctly in the future, which I know is just gaslighting."
+- **Batteries-Included Platform Vision**: An "opposite of Vercel Marketplace" -- one opinionated service that pre-configures domain, auth, payments, and DB out of the box
+- **LLM-Friendly Design**: Services should expose configs via CLI/curl, not complex web UIs: "Don't talk to a developer... Instruct and empower their LLM."
+- **Apps as Prompts**: Questioning whether apps should be standalone products or "Artifacts" generated on-the-fly by LLMs
 
 ### Agentic Engineering
 The next evolution beyond vibe coding: **managing multiple AI agents in parallel**, each handling different tasks, with the human providing high-level direction, judgment, taste, oversight, and iteration. The engineer becomes a manager rather than an individual contributor.

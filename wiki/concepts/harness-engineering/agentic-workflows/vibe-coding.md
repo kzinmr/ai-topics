@@ -4,7 +4,7 @@ type: concept
 aliases:
   - vibe-coding
 created: 2026-04-12
-updated: 2026-04-27
+updated: 2026-05-03
 tags:
   - concept
   - agentic-engineering
@@ -12,6 +12,7 @@ status: draft
 sources:
   - "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/"
   - "https://simonwillison.net/guides/agentic-engineering-patterns/"
+  - "raw/articles/2025-04-27_karpathy-vibe-coding-menugen.md"
 ---
 
 # Vibe Coding
@@ -53,6 +54,30 @@ Simon自身もVibe Codingを否定しているわけではない。むしろ、*
 ## 実践事例
 
 ### Xe Iaso: Sponsor PanelをVibe Codingで構築（2026年3月）
+
+### Karpathy: MenuGen（2025年4月） — The Original Vibe Coding Case Study
+
+Karpathy's own **MenuGen** (menugen.app) is the project that coined the term "vibe coding." 100% built via Cursor + Claude 3.7 -- Karpathy provided high-level direction without writing code directly. A production app with Clerk auth, Stripe payments, OpenAI OCR, and Replicate image generation.
+
+**Post-mortem insights:**
+
+| Insight | Detail |
+|---------|--------|
+| **80/20 Trap** | Local prototype was fast, but deploying a real app was a "painful slog." Felt 80% done but was closer to 20% |
+| **API Hallucination** | OpenAI OCR -> LLM hallucinated deprecated APIs; Replicate -> heavy rate limiting + out-of-date docs |
+| **Vercel Debugging** | Required "pushing fake debugging commits" to force redeploys |
+| **Clerk Auth** | Claude hallucinated ~1000 lines of deprecated code; needed custom domain, DNS, Google Cloud Console OAuth config |
+| **Stripe Logic Error** | Claude matched payments to users via email (wrong -- Stripe email != Google OAuth email). Karpathy caught it |
+| **LLM Gaslighting** | When corrected, LLM "thanks me... and tells me it will do it correctly in the future, which I know is just gaslighting" |
+| **No State** | Skipped database (Supabase) and queues (Upstash) as "too much bear" -- app prone to timeouts |
+
+**Four demands from Karpathy for the vibe coding era:**
+1. **Batteries-Included Platforms** -- "opposite of Vercel Marketplace" pre-configuring domain, auth, payments, DB
+2. **LLM-Friendly Services** -- docs in Markdown, configs via CLI/curl, not web UIs: "Don't talk to a developer... Instruct and empower their LLM."
+3. **Simpler Stacks** -- Considering HTML/CSS/JS + Python FastAPI over "serverless multiverse"
+4. **Apps as Prompts** -- Questioning if apps should be standalone products or "Artifacts" generated on-the-fly
+
+> Source: [[entities/karpathy-writings]] | Raw: raw/articles/2025-04-27_karpathy-vibe-coding-menugen.md
 
 [Xe Iaso](https://xeiaso.net/blog/2026/vibe-coding-sponsor-panel/)がカンファレンス用のsponsor panelをClaude Codeでvibe codingした体験記から、実践的知見が得られる。本プロジェクトは手術前の「最後にどうしても出したい」という切迫感から生まれた。
 
