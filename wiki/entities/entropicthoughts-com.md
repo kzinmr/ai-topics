@@ -45,7 +45,8 @@ This intellectual humility — publishing to be corrected, not to be right — i
 | 2024 | Publishes "Are LLMs not getting better?" — statistical analysis of code generation benchmarks |
 | 2025 | Launches premium newsletter tier via Buttondown |
 | 2025–2026 | Continues publishing on topics including Emacs, Haskell, ZFS, pathfinding algorithms, and forecasting |
-| 2026 | Publishes "The MVC Mistake" — architectural critique |
+| 2026 Early | Publishes "The MVC Mistake" — architectural critique |
+| 2026 Q1/Q2 | Publishes "Understanding Systems" — unified methodology for debugging/learning through mental model diagnosis, knowledge shields, and hypothesis-invalidation loop |
 
 ## Core Ideas
 
@@ -176,6 +177,7 @@ Chris's interests span an unusually wide range:
 
 ## Related
 
+- [[concepts/knowledge-shields]] — Systems understanding methodology, knowledge shields, hypothesis-invalidation loop for debugging
 - [[concepts/statistical-process-control]] — XmR charts, natural process limits, signal vs. noise
 - [[concepts/queueing-theory]] — Response time as utilisation diagnostic
 - [[concepts/bayesian-reasoning]] — Odds-form Bayes' rule, forecasting

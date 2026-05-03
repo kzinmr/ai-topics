@@ -1,3 +1,10 @@
+## [2026-05-03] Knowledge Shields — Systems Understanding Methodology from Entropic Thoughts
+
+- **[[concepts/knowledge-shields]]** — Created concept page capturing Chris (Entropic Thoughts)'s unified methodology for understanding complex systems. Covers: the hypothesis-invalidation loop, mental model diagnosis through observation, self-verification skills (alternative approaches, feasibility checks, recursive verification), knowledge shields (strongly held wrong beliefs resist correction), productive vs. unproductive error classification, and motivation management. Includes connections to AI agent debugging, eval design, and prompt engineering. Sources: entropicthoughts.com/understanding-systems.
+- **[[entities/entropicthoughts-com]]** — Added wikilink to knowledge-shields concept in Related section; added Understanding Systems to Timeline.
+- Raw article already saved: raw/articles/entropicthoughts.com--understanding-systems--149e6399.md.
+- Source: https://entropicthoughts.com/understanding-systems
+
 ## [2026-05-03] Raindrop — AI Agent Monitoring Platform
 
 - **[[concepts/raindrop]]** — Created concept page for Raindrop, "Sentry for AI Agents" monitoring platform. Covers: Trajectories (agent-native trace viz), Signals (7 default + custom classifiers), Deep Search (natural language over traces), Experiments (A/B testing), Agent Self Diagnostics. Includes detailed comparison tables with Braintrust/LangSmith/Arize/Langfuse/Logfire and cross-category comparison with OpenAI Symphony (monitoring vs orchestration layers). Sources: raindrop.ai docs, blog posts (seed round, trajectories, agent self diagnostics), PRNewswire.

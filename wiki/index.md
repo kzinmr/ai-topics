@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-03 | Total pages: 784 | Full entries: 753 | Stubs: 614
+| Last updated: 2026-05-03 | Total pages: 785 | Full entries: 754 | Stubs: 614 |
 
 ## Entities (380 pages)
 
@@ -664,6 +664,7 @@
 - [[concepts/karpathy-loop]] — > **Definition:** The Karpathy Loop is an autonomous research pattern where a human writes a natural-language research protocol (`program.md`), an AI agent iteratively modifies code (`train.py`), r...
 - [[concepts/karpathy]] — Karpathy (Andrej Karpathy) — AI researcher, educator, and OpenAI/DirectX co-founder. Entity: entities/andrej-karpathy.md
 - [[concepts/kimi-k2-6]] — **Moonshot Kimi K2.6** is a major open-weight refresh of Moonshot's leading Chinese open model, released in April 2026. It is a **1T-parameter Mixture of Experts (MoE)** model featuring **32B activ...
+|- [[concepts/knowledge-shields]] — Systems understanding methodology: mental model diagnosis, knowledge shields (strongly held wrong beliefs), self-verification skills, and the hypothesis-invalidation loop for debugging any complex system. From [[entities/entropicthoughts-com]]
 |- [[concepts/knowledge-graph-memory-agents]] — Knowledge graph memory stores facts as a structured graph of **entities** and **typed relationships**, enabling multi-hop reasoning and entity-centric queries that flat vector stores cannot express...
 |- [[concepts/korean-ai]] — Korean AI ecosystem overview. Covers model category rankings (April 2026), Korean LLM regional leaderboard (Solar, HyperCLOVA X, EXAONE), notable companies (Upstage, Naver, SKT, LG), unique evaluation methodology (KMMLU, CLIcK, HAE-RAE), and government AI strategy.
 |- [[concepts/kv-aware-routing]] — KV-aware routing is an inference optimization technique where the request router selects workers not just based on current load, but also on KV cache overlap — i.e., whether a worker already has the KV cache for a prefix pre-computed.
