@@ -1,3 +1,8 @@
+## [2026-05-03] Daily Skeleton Enrichment — Sebastián Ramírez, Adam Rosenthal
+
+- **[[entities/sebastian-ramirez]]** — Enriched from stub to comprehensive entity: creator of FastAPI, Typer, SQLModel, Asyncer. Added biography (homeschooled in Colombia, self-taught, cancer survivor), career timeline, project list with GitHub stars, philosophy, Sequoia Open Source Fellowship.
+- **[[entities/adam-rosenthal]]** — Researched but could not positively identify in AI/developer ecosystem context. Multiple individuals with this name exist but none match the wiki's domain. Set to `status: needs-identification`.
+
 ## [2026-05-03] Trending Topics — NIST CAISI Evaluation, CISA AI Cyber Deadline, Boston Dynamics Exodus, Gary Marcus
 
 - **[[entities/deepseek]]** — Updated with NIST CAISI evaluation section: +8 month capability lag vs US frontier, suspected benchmark contamination, cost efficiency confirmed. Added CAISI evaluation results table and verification under "Independent Evaluation" heading.

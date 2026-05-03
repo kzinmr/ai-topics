@@ -158,8 +158,9 @@
 - [[entities/hynek-schlawack]] — **X** | @hynek |
 - [[entities/hyperbo]] — hyperboドメインのAIエージェント記事・コンテンツ
 |- [[entities/ian-goodfellow]] — **フルネーム** | Ian Joseph Goodfellow |
-|- [[entities/ian-nuttall]] — **URL:** https://ian.is
-|- [[entities/iii-platform]] — Open-source backend engine that collapses distributed infrastructure into three primitives: Function, Trigger, Worker. Core thesis: the agent harness should BE the backend.
+||- [[entities/ian-nuttall]] — **URL:** https://ian.is
+|- [[entities/idiallo-com]] — **Ibrahim Diallo** (idiallo.com) — Software developer and technical writer known for reflective writing on AI-assisted workflows, LLM-assisted writing challenges, and the tension between AI efficiency and authentic human voice.
+||- [[entities/iii-platform]] — Open-source backend engine that collapses distributed infrastructure into three primitives: Function, Trigger, Worker. Core thesis: the agent harness should BE the backend.
 |- [[entities/ilya-sutskever]] — **Full Name** | Ilya Sutskever
 - [[entities/intuit-machine]] — AI agent framework company focused on agentic AI skills design. Published 'Ten Design Principles of Agentic AI Skills Design' — structural insights about how AI systems achieve 10x-100x effectiveness.
 - [[entities/ivan-burazin]] — CEO of Daytona. Coined "Headless SaaS" — SaaS rebuilt with agent-first APIs, no GUI.
@@ -683,8 +684,9 @@
 |- [[concepts/lambda-rlm]] — Deterministic pipeline variant of Recursive Language Models for engineering report generation. Plan (0 LLM calls) → Extract+Review → Generate. 14x token reduction, +8.4% quality improvement. By [[entities/theodoros-galanos|Theodoros Galanos]].
 |- [[concepts/late-interaction-retrieval]] — Antoine Chaffin's ColBERT/MaxSim preserving token-level detail. 150M model outperforms 7B dense models on reasoning tasks (BRIGHT). Part 4 of the RAG Is Not Dead series.
 |- [[concepts/latent-briefing]]
-- [[concepts/llm-as-judge]] — LLM-as-JudgeはLLMを使用してLLM出力を評価するパラダイム。3つのバイアス类型（ルーブリック順序、スコアID、参照解答）と7つのベストプラクティスを整理。高リスク評価にはGPT-4oクラスが必要。
-- [[concepts/llm-core]] — 大規模言語モデルのコアアーキテクチャと言語モデル基礎
+|- [[concepts/llm-as-judge]] — LLM-as-JudgeはLLMを使用してLLM出力を評価するパラダイム。3つのバイアス类型（ルーブリック順序、スコアID、参照解答）と7つのベストプラクティスを整理。高リスク評価にはGPT-4oクラスが必要。
+|- [[concepts/llm-assisted-writing]] — LLM-Assisted Writing: authors use LLMs to draft/structure content, then apply human editing to restore personal voice and authenticity. Case study: Ibrahim Diallo.
+|- [[concepts/llm-core]] — 大規模言語モデルのコアアーキテクチャと言語モデル基礎
 - [[concepts/llm-evaluation-harness]] — Frameworks and tools for systematically evaluating Large Language Models across standardized benchmarks and custom test suites.
 - [[concepts/llm-memory-architecture]] — LLMメモリ設計。ai-agents、memory、architecture、knowledge-graphs
 - [[concepts/llm-training-coherence-evolution]] — How an LLM's coherence and usefulness improve as training progresses, with empirical analysis from Giles Thomas's "Writing an LLM from Scratch" series.
@@ -715,8 +717,9 @@
 |- [[concepts/memory-scaling]] — A third scaling axis where agent performance improves via accumulated external memory (Databricks MemAlign, 2026). Distills episodic logs into semantic rules, enabling smaller models to outperform larger ones with rich memory stores.
 |- [[concepts/memory-systems-bitter-lesson]] — Rich Sutton's "Bitter Lesson" principle applied to memory systems in AI agents: architectures that leverage search, computation, and experience iteration at scale consistently outperform hand-crafted memory mechanisms. Key patterns include episodic→semantic distillation, retrieval-augmented generation (RAG), and experience replay.
 |- [[concepts/memory-systems-design-patterns]]
-- [[concepts/meta-harness]] — An outer-loop system from Stanford and MIT (2026) that automatically searches over harness code for LLM applications. Discovers optimal context management, retrieval, and presentation strategies.
-- [[concepts/meta-muse-spark]] — **Muse Spark** is Meta's first model from **Meta Superintelligence Labs (MSL)**, announced on **April 8, 2026**. Internally codenamed "Avocado", it was built over nine months after a complete groun...
+|- [[concepts/meta-harness]] — An outer-loop system from Stanford and MIT (2026) that automatically searches over harness code for LLM applications. Discovers optimal context management, retrieval, and presentation strategies.
+|- [[concepts/meta-ai-glasses-content-moderation]] — May 2026 controversy: Kenyan human content moderators for Meta's Ray-Ban AI glasses exposed to non-consensual private footage, raising privacy and worker protection concerns.
+|- [[concepts/meta-muse-spark]] — **Muse Spark** is Meta's first model from **Meta Superintelligence Labs (MSL)**, announced on **April 8, 2026**. Internally codenamed "Avocado", it was built over nine months after a complete groun...
 - [[concepts/microservices-vs-monolith]] — Rehan van der Merwe's architecture decision tree provides a pragmatic approach:
 - [[concepts/microsoft-copilot-wave-3]] — Microsoft's Wave 3 (Mar 2026) shifts M365 Copilot to agentic capabilities. Copilot Cowork (built with Anthropic Claude), Agent 365 governance plane, E7 Frontier Suite ($99/user/mo). GA May 1, 2026.
 - [[concepts/microsoft-agent-365]] — Microsoft's dedicated governance and security control plane for enterprise AI agents. Launched May 1, 2026. $15/user/month. Manages agents across Foundry, Copilot Studio, and third-party platforms.
@@ -1514,11 +1517,12 @@
 - [[concepts/training/trl]] — > **TODO**: Enrich this page.
 - [[concepts/transformer-architecture]] — > **TODO**: Enrich this page.
 - [[concepts/transformers-library]] — > **TODO**: Enrich this page.
-- [[concepts/tree-of-thoughts]] — > **TODO**: Enrich this page.
-- [[concepts/typed-rlm]] — lambda-RLM: Typed functional runtime RLM variant (Huawei). Formal proofs for termination, cost bounds, optimal partition. 29/36 wins, +21.9pp accuracy, 4.1x faster.
-- [[concepts/trey-grainger]] — > **TODO**: Enrich this page.
-- [[concepts/trl-transformer-reinforcement-learning]] — > **TODO**: Enrich this page.
-- [[concepts/tuomas-sandholm]] — > **TODO**: Enrich this page.
+|- [[concepts/tree-of-thoughts]] — > **TODO**: Enrich this page.
+|- [[concepts/translategemma]] — Google-developed offline translation model (Gemma family). Runs locally via Ollama with automatic language detection. Privacy-focused, zero API cost.
+|- [[concepts/typed-rlm]] — lambda-RLM: Typed functional runtime RLM variant (Huawei). Formal proofs for termination, cost bounds, optimal partition. 29/36 wins, +21.9pp accuracy, 4.1x faster.
+|- [[concepts/trey-grainger]] — > **TODO**: Enrich this page.
+|- [[concepts/trl-transformer-reinforcement-learning]] — > **TODO**: Enrich this page.
+|- [[concepts/tuomas-sandholm]] — > **TODO**: Enrich this page.
 - [[concepts/uk-government-digital-service]] — > **TODO**: Enrich this page.
 - [[concepts/uk-government]] — > **TODO**: Enrich this page.
 - [[concepts/unix-philosophy]] — > **TODO**: Enrich this page.
@@ -1551,10 +1555,10 @@
 - [[concepts/zhanchao-zhou]] — > **TODO**: Enrich this page.
 - [[concepts/zig]] — Systems programming language with the open-source community's most stringent anti-LLM contribution policy. "Contributor poker" philosophy values contributors over contributions.
 - [[concepts/zjit]] — > **TODO**: Enrich this page.
-- [[entities/adam-rosenthal]] — > **TODO**: Enrich this page.
+- [[entities/adam-rosenthal]] — Stub page — this person could not be positively identified as an AI/ML/developer ecosystem notable.
 - [[entities/george-hotz]] — Security hacker, entrepreneur, engineer. First to iPhone-unlock (2007), PS3 jailbreak (2010). Founder of comma.ai/openpilot, tinygrad, and tiny corp.
 - [[entities/grant-slatton]] — > **TODO**: Enrich this page with research on this person.
 - [[entities/jo-kristian-bergum]] — > **TODO**: Enrich this page with research on this person.
 - [[entities/samuelcolvin]] — > **TODO**: Enrich this page.
-- [[entities/sebastian-ramirez]] — > **TODO**: Enrich this page.
+- [[entities/sebastian-ramirez]] — Creator of FastAPI, Typer, SQLModel, Asyncer. Colombian open-source developer, Sequoia Open Source Fellow.
 - [[entities/stefano-marlinelli]] — > **TODO**: Enrich this page with research on this person.
