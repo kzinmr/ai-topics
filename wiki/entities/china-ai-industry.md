@@ -1,10 +1,10 @@
 ---
 title: China AI Industry
 created: 2026-04-26
-updated: 2026-04-26
+updated: 2026-05-03
 type: entity
 tags: [company]
-sources: [raw/articles/2026-04-25-china-ai-robotics-industry-competitive-landscape.md]
+sources: [raw/articles/2026-04-25-china-ai-robotics-industry-competitive-landscape.md, raw/articles/2026-05-03_nvidia-b300-china-1m-pricing.md]
 ---
 
 # China AI Industry
@@ -59,6 +59,25 @@ Second-largest Chinese humanoid robot seller (5,168 units, 2025).
 
 ### [[fourier-intelligence]]
 Rehabilitation and humanoid robotics; GR-1 general-purpose humanoid.
+
+## Hardware Supply Crisis: NVIDIA B300 at $1M (April 2026)
+
+As of April 2026, NVIDIA's B300 AI servers reached **~7 million yuan (~$1M)** each in China — nearly **double the US price** of ~$550,000. This reflects a "scarcity premium" driven by:
+
+- **US export controls** restricting direct B300 sales to China
+- **Crackdown on grey market**: Supermicro co-founder Yih-Shyan "Wally" Liaw prosecuted (March 2026), choking key supply channels
+- **Surging domestic demand**: Chinese AI firms racing for cost-efficient inference hardware to monetize models
+- **Rental market spike**: Monthly B300 rentals reaching 190,000 yuan on short-term contracts
+
+**Implications:**
+- Split market dynamics: the same hardware trades at ~2x premium inside China
+- Pressures Chinese firms toward domestic alternatives (Huawei Ascend 950 used by DeepSeek V4)
+- MATCH Act (April 22, 2026): US legislation to compel Netherlands/Japan to align chip restrictions
+
+### Key Hardware Players
+
+### [[deepseek]]
+Open-source LLM provider driving cost disruption. V4 deployed on [[google-tpu|Huawei Ascend 950]] for inference.
 
 ## Policy Framework
 

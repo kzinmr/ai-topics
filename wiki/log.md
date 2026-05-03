@@ -1,3 +1,16 @@
+## [2026-05-03] Active Crawl — Microsoft Agent 365, Amazon Bedrock AgentCore, Grok Imagine, NVIDIA B300 China Pricing
+
+- **[[concepts/microsoft-agent-365]]** — Created concept page for Microsoft's enterprise AI agent governance control plane. Launched May 1, 2026 at $15/user/month. Manages agents across Foundry, Copilot Studio, and third-party platforms. Key differentiator: security & oversight layer vs. AI feature integration (Wave 3).
+- **[[entities/amazon-bedrock-agentcore]]** — Created entity page for AWS's fully-managed agentic AI platform. Framework-agnostic, composable services (Memory, Gateway, Browser Runtime, Code Interpreter). 8-hour long-running workloads, VPC isolation, pay-for-what-you-use. Enterprise case studies: Epsilon, Amazon Devices, Ericsson, Thomson Reuters.
+- **[[entities/grok-imagine]]** — Created entity page for xAI's video generation platform. 1.245B videos in first 30 days. DesignArena #1 (Elo 1,329). 6 generation modes, 720p, 30s max. $4.20/min — 7x cheaper than Sora 2 Pro.
+- **[[entities/china-ai-industry]]** — Enriched with new "Hardware Supply Crisis" section: NVIDIA B300 servers at $1M in China ($550K in US). Driven by US export controls, Supermicro co-founder arrest, MATCH Act. Split market dynamics. Updated frontmatter.
+- **raw/articles/2026-05-03_microsoft-agent-365-launch.md** — Saved raw article
+- **raw/articles/2026-05-03_amazon-bedrock-agentcore.md** — Saved raw article
+- **raw/articles/2026-05-03_nvidia-b300-china-1m-pricing.md** — Saved raw article
+- **raw/articles/2026-05-03_grok-imagine-video-generation.md** — Saved raw article
+- Updated: wiki/index.md (3 new entries → 795 total pages), wiki/log.md
+- Sources: AllInOneAICenter, AWS Official Docs, Reuters (Exclusive Apr 30), blog.mean.ceo, TNW
+
 ## [2026-05-03] Newsletter Wiki Ingest — Superintel+ V4 Newsletter: DeepSeek V4 + Huawei Ascend 950
 
 - **[[entities/deepseek]]** — Major expansion: Added V4 model series table (Pro 1.6T/49B active, Flash 284B/13B active, 1M context MoE). Added pricing comparison, efficiency gains (27% FLOPs/10% KV cache vs V3.2 for Pro). Added Huawei Ascend 950 deployment section: SMIC quadruple-patterning, chip utilization 60%→85%, EUV prototype rumors. Updated strategy and market impact sections. 2→8 cross-references.

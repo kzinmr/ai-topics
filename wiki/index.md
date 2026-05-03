@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-03 | Total pages: 792 | Full entries: 757 | Stubs: 614 |
+| Last updated: 2026-05-03 | Total pages: 795 | Full entries: 760 | Stubs: 614 |
 
-## Entities (384 pages)
+## Entities (386 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -19,6 +19,7 @@
 - [[entities/alex-zhang]] — **Name:** Alex L. Zhang
 - [[entities/ali-farhadi]] — Computer vision pioneer, co-creator of **YOLO** (You Only Look Once) object detection, founder of **Xnor.ai** (acquired by Apple), former CEO of Allen Institute for AI (Ai2). In March 2026 stepped ...
 - [[entities/amazon-rivr]] — March 2026 acquisition of Zurich-based autonomous robotics startup Rivr by Amazon.
+- [[entities/amazon-bedrock-agentcore]] — AWS's fully-managed agentic AI platform for building, deploying, and operating AI agents at scale. Framework-agnostic, composable services.
 - [[entities/andrej-karpathy]] — **Andrej Karpathy** (born October 23, 1986, Bratislava, Czechoslovakia) is a leading AI researcher and educator, widely regarded as one of the most effective communicators of deep learning concepts...
 - [[entities/andrew-nesbitt]] — **URL:** https://nesbitt.io
 - [[entities/antoine-buteau]] — **Name** | Antoine Buteau | BizOps leader, automation architecture writer. Author of 10-part Automation Series.
@@ -144,6 +145,7 @@
 - [[entities/grad]] — **X/Twitter** | @Grad62304977 |
 - [[entities/grantslatton-com]] — **Blog:** grantslatton.com
 - [[entities/greg-brockman]] — **Role** | Co-founder & President, OpenAI |
+- [[entities/grok-imagine]] — xAI's full-stack video generation platform (Feb 2026). Leads DesignArena image-to-video benchmark (Elo 1,329). 1.245B videos in first 30 days. $4.20/min vs Sora $30/min.
 - [[entities/grok-4-3]] — xAI's latest LLM (May 2026) featuring always-on reasoning, 1M token context, aggressive pricing ($1.25/$2.50 per 1M tokens), and Custom Voices suite.
 - [[entities/gwern]] — **Blog** | gwern.net |
 - [[entities/hamel-husain]] — **Role** | Independent Consultant (Parlance Labs), R&D at AnswerAI, Scout at Bain Capital |
@@ -413,7 +415,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (412 pages)
+## Concepts (413 pages)
 
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
@@ -717,6 +719,7 @@
 - [[concepts/meta-muse-spark]] — **Muse Spark** is Meta's first model from **Meta Superintelligence Labs (MSL)**, announced on **April 8, 2026**. Internally codenamed "Avocado", it was built over nine months after a complete groun...
 - [[concepts/microservices-vs-monolith]] — Rehan van der Merwe's architecture decision tree provides a pragmatic approach:
 - [[concepts/microsoft-copilot-wave-3]] — Microsoft's Wave 3 (Mar 2026) shifts M365 Copilot to agentic capabilities. Copilot Cowork (built with Anthropic Claude), Agent 365 governance plane, E7 Frontier Suite ($99/user/mo). GA May 1, 2026.
+- [[concepts/microsoft-agent-365]] — Microsoft's dedicated governance and security control plane for enterprise AI agents. Launched May 1, 2026. $15/user/month. Manages agents across Foundry, Copilot Studio, and third-party platforms.
 - [[concepts/minimal-coding-agent]] — Thorsten Ballが提唱する最小コードエディットエージェントパターン。~400行のGo、3ツール(read_file/list_files/edit_file)、string replacement編集。「エージェントループ自体にモートはない」という主張。
 - [[concepts/miles-rl]] — **Type** | RL Post-Training Framework |
 - [[concepts/mismanaged-geniuses-hypothesis]] — > **AI models are already good enough for the next leap in capabilities. The bottleneck is no longer scaling model size or training data. It is how we manage, decompose, and compose existing fronti...
