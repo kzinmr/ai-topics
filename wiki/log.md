@@ -1,3 +1,9 @@
+## [2026-05-03] Raindrop — AI Agent Monitoring Platform
+
+- **[[concepts/raindrop]]** — Created concept page for Raindrop, "Sentry for AI Agents" monitoring platform. Covers: Trajectories (agent-native trace viz), Signals (7 default + custom classifiers), Deep Search (natural language over traces), Experiments (A/B testing), Agent Self Diagnostics. Includes detailed comparison tables with Braintrust/LangSmith/Arize/Langfuse/Logfire and cross-category comparison with OpenAI Symphony (monitoring vs orchestration layers). Sources: raindrop.ai docs, blog posts (seed round, trajectories, agent self diagnostics), PRNewswire.
+- **raw/articles/2026-05-03_raindrop-introduction.md** — Saved raw article with full detail.
+- Source: https://www.raindrop.ai/docs/introduction
+
 ## [2026-05-03] ByteRover — Portable File-Based Memory Layer for Coding Agents
 
 - **[[entities/byterover]]** — Created entity page for ByteRover (formerly Cipher). Portable, file-based memory layer for autonomous coding agents with market-best 92-96% retrieval accuracy on LoCoMo/LongMemEval. Built in TypeScript by campfirein (Vietnam). Architecture: replaces vector DBs with LLM-curated Hierarchical Context Tree of Markdown files with Adaptive Knowledge Lifecycle (AKL) and 5-tier progressive retrieval. Open source (Elastic 2.0), 4.2k+ GitHub stars. Native plugins for Hermes Agent, Claude Code, OpenClaw. arXiv:2604.01599.

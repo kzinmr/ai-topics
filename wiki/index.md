@@ -762,7 +762,8 @@
 |- [[concepts/qwen3-6-27b]] — A dense 27B parameter model from the Qwen (OpenQwen) series that outperforms the predecessor 397B MoE model on agentic coding benchmarks.
 |- [[concepts/rag-not-dead-series]] — Hamel Husain & Ben Clavié's open 7-part series arguing RAG is not dead. Covers the single-vector myth, modern retrieval toolkit, context rot, and why graph DBs are overkill.
 |- [[concepts/rag-systems]] — > **RAG = Search + Reasoning** — Search brings facts, reasoning provides coherence.
-- [[concepts/ram-relative-adoption-metric]] — The **Relative Adoption Metric (RAM)** is a time-varying, size-normalized metric developed by Nathan Lambert and Florian to evaluate whether a new language model is on track to be ecosystem-definin...
+|- [[concepts/raindrop]] — **Raindrop** is the monitoring platform for AI agents. \"Sentry for AI Agents\" — discovers silent agent failures in production. Agent-native Trajectories, Signals, Deep Search, Experiments, Self Diagnostics. $15M Seed (Lightspeed). Competes with: Braintrust, LangSmith, Arize, Langfuse, Logfire.
+|- [[concepts/ram-relative-adoption-metric]] — The **Relative Adoption Metric (RAM)**
 |- [[concepts/reasoning-model-cost-transparency]] — A 2026 study revealing that listed API prices for reasoning language models are systematically misleading, with actual costs differing dramatically from advertised rates.
 | - [[concepts/reasoning-compression]] — The phenomenon where test-time scaling (CoT, search, agentic loops) gets compressed into model weights through training. Explicit reasoning steps become implicit model capabilities over successive generations.
 | - [[concepts/rl-harness-lifecycle]] — The co-evolutionary cycle: harnesses create training environments → RL produces capable models → models internalize harness patterns → more ambitious harnesses become possible. Coined by Will Brown (Prime Intellect). "Harness paradigms evolve half a model generation at a time."
