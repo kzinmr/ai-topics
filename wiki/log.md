@@ -1,3 +1,11 @@
+## [2026-05-04] bitsandbytes — concept page + linear4bit API docs ingestion
+
+- **[[concepts/bitsandbytes]]** — Created concept page (L2): 4-bit/8-bit quantization library (Tim Dettmers / bitsandbytes-foundation). Covers: Linear4bit architecture (LinearFP4, LinearNF4, Params4bit), NF4 equal-area bins under N(0,1) with α=929/960, double quantization (0.4 bits/param savings), BitsAndBytesConfig integration with HF Transformers, ecosystem position (training vs GPTQ/AWQ inference), T4 benchmarks, CUDA-only constraint. Sources: Linear4bit API docs, HF blog, QLoRA paper, John D. Cook analysis.
+- **[[concepts/model-quantization]]** — Updated: Added [[concepts/bitsandbytes]] to Related Pages.
+- **raw/articles/2026-05-04_bitsandbytes-linear4bit-hf-docs.md** — Saved raw article
+- Updated: wiki/index.md (+1 concept, 812→813), wiki/log.md
+- Sources: https://huggingface.co/docs/bitsandbytes/en/reference/nn/linear4bit, https://huggingface.co/blog/4bit-transformers-bitsandbytes
+
 ## [2026-05-04] Quantization deep-dive — LLM.int8(), emergent features, visual guide, 1.58-bit frontier
 
 - **[[concepts/model-quantization]]** — Major expansion (L1 → comprehensive): Added IEEE-754 representation fundamentals (sign/exponent/fraction), symmetric (Absmax) vs asymmetric (Zero-point) quantization mapping, LLM.int8() with mixed precision decomposition, 6.7B parameter phase shift (Dettmers), Two Streams Theory, calibration deep-dive (MSE/KL/Percentile), expanded PTQ section (GPTQ Hessian-based error redistribution, GGUF block-wise), QAT wide minima theory, BitNet (1-bit, signum) and BitNet b1.58 (ternary, absmean, addition-only matmul) frontier section. Sources and TODO updated.

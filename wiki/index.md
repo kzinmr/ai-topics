@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
->| Last updated: 2026-05-04 | Total pages: 812 | Full entries: 779 | Stubs: 613 |
+>| Last updated: 2026-05-04 | Total pages: 813 | Full entries: 780 | Stubs: 613 |
 
 ## Entities (391 pages)
 
@@ -522,6 +522,7 @@
 - [[concepts/background-coding-agent]] — Asynchronous cloud-based AI coding agents that run independently, verify their own work, and produce validated PRs. Ramp's Inspect handles ~30% of merged PRs.
 - [[concepts/base-consistency]] — BASE is an alternative consistency model to ACID, designed for distributed systems that prioritize availability over strict consistency. It stands for:
 - [[concepts/delta-updates-redis]] — Real-time streaming pattern where systems send incremental operations (APPEND, PATCH) via Redis Streams instead of full state updates. Used by Fintool for agent UI updates.
+|- [[concepts/bitsandbytes]] — bitsandbytes: 4-bit / 8-bit quantization library (CUDA). NF4 data type, LLM.int8(), double quantization. Hugging Face Transformers統合バックエンド。QLoRAによるGPU上4ビット訓練を可能にする。
 |- [[concepts/behavioral-trait-transmission]] — Language models that share initialization can transmit behavioural traits through training data that is semantically unrelated to those traits — a phenomenon discovered by Anthropic and academic re...
 |- [[concepts/bitter-lesson-harnessing]] — As model capabilities improve through scaling, the role of the harness shifts from implementing logic to orchestrating model behavior. The harness becomes thinner while the model carries more intelligence.
 |- [[concepts/building-effective-agents]]

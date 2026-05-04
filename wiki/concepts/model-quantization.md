@@ -331,6 +331,7 @@ NF4            | 80.9% | 35 GB
 
 ## Related Pages
 
+- [[concepts/bitsandbytes]] — bitsandbytes: NF4/FP4 quantization library, QLoRA backend
 - [[concepts/gguf-quantization]] — GGUF format deep-dive
 - [[concepts/local-llm/model-quantization]] — Local LLM quantization specifics
 - [[concepts/fine-tuning/quantization-overview]] — Fine-tuning quantization
