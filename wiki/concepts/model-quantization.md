@@ -103,6 +103,29 @@ Memory (GB) ≈ (Number of Parameters × Number of Bits) / 8
 | **KL-divergence** | 分布のエントロピーを最大化 | 最も正確だが高コスト |
 | **Min/Max** | 全範囲をそのまま使用 | 外れ値1つで精度が激減 |
 
+### Accumulation Data Types
+演算中の精度損失を防ぐため、各データ型には対応する**アキュムレーション型**が存在する:
+
+| データ型 | アキュムレーション型 | 理由 |
+|:---------|:-------------------|:-----|
+| float16 | float16 | 同じ型で十分な範囲 |
+| bfloat16 | float32 | 積算で指数がオーバーフローしうる |
+| int16 | int32 | 例: 127+127=254 > int8 範囲 |
+| int8 | int32 | 2つのint8最大値の和でint8を超過 |
+
+例: A=127, B=127（int8最大値）の場合、C = A + B = 254となりint8の範囲（-128〜127）を超えるため、int32のアキュムレーションが必要。
+
+### Granularity: Per-tensor vs Per-channel
+量子化の粒度は精度とメモリのトレードオフを決める:
+
+| 粒度 | (S, Z)ペア数 | 精度 | メモリ |
+|:----|:------------|:-----|:------|
+| **Per-tensor** | テンソル全体で1組 | 低い（外れ値に弱い） | 最小 |
+| **Per-channel** | 次元ごとに1組（例: 4Dテンソルのチャネル軸） | 高い | 中程度 |
+| **Vector-wise (LLM.int8)** | 行ごと + 列ごとに1組ずつ | 高い（外れ値にロバスト） | より高い |
+
+Per-channelはPer-tensorより精度が高いが、スケール因子の数が増えるためメモリオーバーヘッドが発生する。LLM.int8()のベクトル単位量子化は、各行と各列に独立したスケールを持つ特殊ケース。
+
 ## 3. Precision Formats Overview
 
 | Format | Bits/Param | 70B Model | 品質 | 推論速度 | 主な用途 |
@@ -329,6 +352,40 @@ NF4            | 80.9% | 35 GB
 - KV Cacheは重みより量子化に対する耐性が高い（アテンション分布がスパース）
 - FP8 KV Cache: ほぼ無損失で2倍のKV Cache容量
 
+## 11. Energy Efficiency & Practical Workflow
+
+### Energy Efficiency: Counterintuitive Findings
+量子化は常に省エネになるとは限らない。Optimumの実測データ:
+
+| 条件 | エネルギー変動 | 原因 |
+|:-----|:-------------|:-----|
+| 大モデル (>=5B) + NF4 | **メモリ節約 + 効率維持** | 量子化の利得がオーバーヘッドを上回る |
+| 小モデル (<3B) + NF4 | **25-56% 増加** | 復元（dequantization）オーバーヘッドが支配的 |
+| Mixed INT8 (threshold=6.0) vs FP16 | **17-33% 増加** | 混合精度の分岐コスト |
+| バッチサイズ 1→64 | **96%削減**（全量子化方式で） | メモリ帯域幅の利用効率向上 |
+
+**実務的含意:** 小モデルの場合、NF4量子化よりバッチサイズ最適化の方が効果的。エネルギー削減の第一選択肢は「バッチ処理の最適化」であり、その次に量子化形式の選択を検討すべき。
+
+### Practical Implementation Workflow (Optimum)
+HF Optimumが推奨する6ステップ実装フロー:
+
+1. **演算子の特定**: 計算集約的な演算（Linear投影、MatMul）を特定
+2. **Dynamic Quantization試行**: 実行時範囲計算。設定が簡単、精度が十分なら終了
+3. **Static Quantization試行**: Observersをモデルに適用。キャリブレーションデータが必要
+4. **キャリブレーション**: 手法を選び、代表データ（~200サンプル）で範囲を決定
+5. **変換**: float32演算子をint8版に置き換え
+6. **評価**: 精度不足ならQAT（Quantization Aware Training）へ移行
+
+```python
+# Optimumで利用可能なツール
+from optimum.onnxruntime import ORTQuantizer  # ONNXモデル
+from optimum.intel import (                   # Intel HW最適化
+    IntelQuantizer, IntelModelForQuantization
+)
+from optimum.gptq import GPTQQuantizer         # LLM用GPTQ量子化
+from optimum.fx import FxQuantizer             # PyTorchグラフモード量子化
+```
+
 ## Related Pages
 
 - [[concepts/bitsandbytes]] — bitsandbytes: NF4/FP4 quantization library, QLoRA backend
@@ -356,6 +413,7 @@ NF4            | 80.9% | 35 GB
 - [The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits (Ma et al., 2024)](https://arxiv.org/abs/2402.17764)
 - [GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers (Frantar et al., 2023)](https://arxiv.org/abs/2210.17323)
 - [AWQ: Activation-aware Weight Quantization for LLM (Lin et al., 2023)](https://arxiv.org/abs/2306.00978)
+- [HF Optimum Quantization Concept Guide](https://huggingface.co/docs/optimum/concept_guides/quantization)
 
 ## TODO
 
@@ -365,6 +423,8 @@ NF4            | 80.9% | 35 GB
 - [x] Add calibration deep-dive (MSE, KL, Percentile)
 - [x] Add BitNet / 1.58-bit frontier section
 - [x] Update sources with Dettmers and BitNet papers
+- [x] Add accumulation types & granularity (per-tensor vs per-channel)
+- [x] Add energy efficiency counterintuitive findings (Optimum)
 - [ ] Add per-method benchmark comparisons (GPTQ vs AWQ vs GGUF vs vanilla)
 - [ ] Add calibration dataset requirements for GPTQ/AWQ
 - [ ] Add hardware-specific quantization guide per GPU generation

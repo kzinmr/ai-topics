@@ -1,3 +1,13 @@
+## [2026-05-04] Optimum quantization guide — accumulation types, energy efficiency, granularity
+
+- **[[concepts/model-quantization]]** — Expanded with 3 new sections from HF Optimum docs:
+  - Section 2: Accumulation Data Types (float16->float16, bfloat16->float32, int8->int32 etc.) and Granularity (per-tensor vs per-channel vs vector-wise) added after calibration
+  - Section 11: Energy Efficiency and Practical Workflow — counterintuitive findings (NF4 on <3B models: +25-56% energy; batching 1->64: -96% energy), 6-step Optimum implementation pipeline
+  - Sources updated with Optimum concept guide
+- **raw/articles/2026-05-04_optimum-quantization-concept-guide.md** — Saved raw article
+- Updated: wiki/log.md
+- Source: https://huggingface.co/docs/optimum/concept_guides/quantization
+
 ## [2026-05-04] bitsandbytes — concept page + linear4bit API docs ingestion
 
 - **[[concepts/bitsandbytes]]** — Created concept page (L2): 4-bit/8-bit quantization library (Tim Dettmers / bitsandbytes-foundation). Covers: Linear4bit architecture (LinearFP4, LinearNF4, Params4bit), NF4 equal-area bins under N(0,1) with α=929/960, double quantization (0.4 bits/param savings), BitsAndBytesConfig integration with HF Transformers, ecosystem position (training vs GPTQ/AWQ inference), T4 benchmarks, CUDA-only constraint. Sources: Linear4bit API docs, HF blog, QLoRA paper, John D. Cook analysis.
