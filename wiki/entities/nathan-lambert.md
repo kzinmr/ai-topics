@@ -2,8 +2,15 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-15
+updated: 2026-05-04
 type: entity
+aliases:
+  - natolambert
+  - nathan-lambert
+sources:
+  - https://www.interconnects.ai/p/the-distillation-panic
+  - https://www.natolambert.com/
+  - https://www.interconnects.ai/
 ---
 
 
@@ -64,6 +71,18 @@ His unconventional path — starting his Ph.D. in MEMS/physics, being rejected b
 - **Top podcast appearances**: Lex Fridman (2x), Latent Space (2x), ChinaTalk (5x), The MAD Podcast, Lawfare's "Scaling Laws", AI Summer
 - **2025 highlights**: Covered DeepSeek V3/V4, OLMo 3 launch, RLVR revolution, sycophancy in LLMs
 - **2026 highlights**: ATOM Report release, RAM metric development, Gemma 4 analysis, RLHF Book publication
+
+### May 2026: The Distillation Panic
+
+**"The Distillation Panic" (May 4, 2026)**: Published a major policy intervention arguing that the term "distillation attacks" is a dangerous misnomer. Key arguments:
+- The real problematic behavior is **API abuse** (jailbreaking, identity spoofing, extracting reasoning traces), not distillation itself
+- Anti-distillation rhetoric risks criminalizing a fundamental technique used by Anthropic, OpenAI, xAI, Nvidia, and Ai2
+- Proposed alternative terminology: call it "API abuse," "jailbreaking," or "hacking" instead of "distillation attacks"
+- Warned of regulatory overreach: H.B. 8283, NSTM-4 Executive Order, and Congressional probes could create a de facto ban on open-weight models
+- Cited Kevin Xu's "crutch" theory — Chinese reliance on distillation may prevent original research development
+- **Created concept**: [[concepts/ai-api-abuse]] — distinguishing illegitimate API access from legitimate model distillation
+
+See [[raw/articles/2026-05-04_interconnects_distillation-panic]] and [[concepts/model-distillation]].
 
 ### April 2026 Developments
 
@@ -128,8 +147,9 @@ Lambert writes with a distinctive mix of technical rigor and personal candor. He
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — Direct Preference Optimization, Zephyr
 - [[concepts/post-training]] — His primary research focus
 - [[teknium]] — Fellow post-training researcher, Nous Research co-founder
--  — Co-created reward model evaluation benchmark-  — Advocate for fully open AI development- [[concepts/fine-tuning/grpo-rl-training]] — Discussed extensively as part of the RLVR trend
-- [[simon-willison]] — Fellow open-source AI advocate
+-  — Co-created reward model evaluation benchmark-  — Advocate for fully open AI development- [[concepts/model-distillation]] — Fundamental ML technique; Lambert's "Distillation Panic" defends it from criminalization
+- [[concepts/ai-api-abuse]] — Term Lambert coined to replace the misleading "distillation attacks" framing
+- [[events/distillation-attacks-2026]] — Anthropic's accusations that prompted Lambert's response
 -  — His newsletter and podcast-  — Open post-training model family he leads
 ## Key Links
 

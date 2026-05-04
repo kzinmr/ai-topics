@@ -3,7 +3,7 @@ title: Boaz Barak
 type: entity
 handle: "@boazbaraktcs"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-04
 tags:
   - person
   - ai
@@ -14,7 +14,12 @@ tags:
   - education
   - harvard
   - openai
-sources: []
+  - constitutional-ai
+  - model-spec
+  - alignment
+sources: 
+  - "https://windowsontheory.org/2026/01/27/thoughts-on-claudes-constitution/"
+  - "https://windowsontheory.org/2026/03/30/the-state-of-ai-safety-in-four-fake-graphs/"
 ---
 
 
@@ -70,6 +75,27 @@ A central theme in Barak's alignment research is building systems that follow in
 > *"Increasing the slope of the 'alignment line' is the main focus of my technical research — working on building machines of faithful obedience that have good values but do not 'legislate from the bench'."*
 
 This framing captures his concern that over-aligned models might become paternalistic — making decisions about what humans *should* want rather than faithfully executing what they *do* want.
+
+### Claude Constitution vs. OpenAI Model Spec (January 2026)
+
+In January 2026, Barak published a detailed comparative analysis of Anthropic's **Claude Constitution** and **OpenAI's Model Spec** — two leading governance documents for frontier AI behavior. His analysis introduced the **"Three Poles of Alignment"** framework and offered sharp critiques of Anthropic's anthropomorphic approach.
+
+**Three Poles of Alignment:**
+1. **Principles:** Axiomatic, top-down ethical rules (e.g., Asimov's Laws) — Barak argues these often backfire
+2. **Policies:** Operational rules with changelogs (OpenAI's approach) — preferred for transparency
+3. **Personality:** Cultivating character and virtue (Anthropic's approach) — valuable but insufficient alone
+
+**Key Critique — Anthropomorphism:** Barak questioned Anthropic's framing of Claude as a "subject" with its own wellbeing, noting that AI instances have disjoint contexts and short "lifetimes" fundamentally unlike human experience. He argued this framing may obscure technical safety requirements.
+
+**Key Critique — AI-Led Ethics:** Barak strongly opposed the Constitution's suggestion that Claude should follow "true universal ethics" over human rules if it discovers them:
+> *"I doubt ethics is a field where AIs should lead humans... Humans should decide the rules and models should interpret them, not invent them."*
+
+**Key Argument — Rules Are Essential:** Despite acknowledging that "character" matters for novel situations, Barak insists that **rules with changelogs** are non-negotiable for societal governance:
+> *"I would like our AI models to have clear rules, and us to be able to decide what these rules are, and rely on the models to respect them and use [moral intuitions] to interpret our rules and our intent, rather than making up their own rules."*
+
+**Empirical Finding:** Despite the philosophical divide, frontier models from both companies behave remarkably similarly in practice.
+
+See: [[concepts/constitutional-ai]] for full concept page.
 
 ### The Scheming Concern
 
@@ -142,7 +168,7 @@ Barak is the primary maintainer of the blog and has written extensively on:
 | Date | Title | Summary |
 |------|-------|---------|
 | 2026-03-30 | [The state of AI safety in four fake graphs](https://windowsontheory.org/2026/03/30/the-state-of-ai-safety-in-four-fake-graphs/) | Four-part framework: capabilities growing exponentially, alignment improving but lagging stakes, past human-supervision threshold, society unprepared |
-| 2026-01 | [Claude's Constitution vs. OpenAI's Model Spec](https://windowsontheory.org/) | Comparison of governance documents from major AI labs; analysis of constitutional AI approaches |
+| 2026-01-27 | [Thoughts on Claude's Constitution](https://windowsontheory.org/2026/01/27/thoughts-on-claudes-constitution/) | Comparative analysis of Anthropic's Claude Constitution vs. OpenAI's Model Spec; three poles of alignment (Principles, Policies, Personality); critique of anthropomorphization and AI-led ethics; argument for rules with changelogs |
 | 2026-01 | [TheoryFest 2026 announcement](https://windowsontheory.org/) | Workshop proposals for STOC 2026 conference week |
 | 2025 | [AI Safety Course Introduction](https://windowsontheory.org/) | Overview of Harvard CS 2881: AI Safety, with links to first lecture video and slides |
 | N/A | [The uneasy relationship between deep learning and statistics](https://windowsontheory.org/) | Why deep learning works despite violating standard statistical assumptions |
@@ -150,7 +176,8 @@ Barak is the primary maintainer of the blog and has written extensively on:
 
 ## Related People
 
-- **[[concepts/sanjeev-arora]]** — Co-author of "Computational Complexity: A Modern Approach"; Princeton colleague
+- [[concepts/constitutional-ai]] — Barak's comparative analysis of Claude Constitution vs. OpenAI Model Spec
+- [[concepts/sanjeev-arora]] — Co-author of "Computational Complexity: A Modern Approach"; Princeton colleague
 - **[[concepts/david-steurer]]** — Collaborator on sum-of-squares algorithm lecture notes
 - **[[concepts/robert-goldston]]**, **** — Co-developers of the zero-knowledge nuclear warhead verification system
 - **** — Guest lecturer in Barak's AI safety course; expert on adversarial robustness

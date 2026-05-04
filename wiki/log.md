@@ -1,3 +1,12 @@
+## [2026-05-04] Interconnects Distillation Panic | New concept + enriched model-distillation + Nathan Lambert update
+
+- **[[concepts/model-distillation]]** — Enriched from stub to comprehensive: full definition, how it works (core mechanism, 4 forms in post-training table), the 2026 "Distillation Panic" context (Anthropic's accusations, Lambert's response, policy fallout), Kevin Xu's "crutch" theory, and risks of regulatory overreach. Status: stub → active.
+- **[[concepts/ai-api-abuse]]** — New concept page: malicious exploitation of AI model APIs through jailbreaking, identity spoofing, and reasoning trace extraction. Distinct from legitimate model distillation. Term coined by Nathan Lambert in "The Distillation Panic." Covers exploitation techniques table, 2026 context, policy implications (H.B. 8283, NSTM-4), and mitigation approaches.
+- **[[entities/nathan-lambert]]** — Updated: added May 2026 "Distillation Panic" section with key arguments, updated frontmatter (aliases, sources, updated date), added cross-links to model-distillation, ai-api-abuse, and distillation-attacks-2026.
+- **raw/articles/2026-05-04_interconnects_distillation-panic.md** — Saved raw article (Nathan Lambert, Interconnects, May 4, 2026)
+- New concept: 1 (ai-api-abuse). Enriched from stub: 1 (model-distillation).
+- Updated: wiki/concepts/model-distillation.md, wiki/concepts/ai-api-abuse.md, wiki/entities/nathan-lambert.md, wiki/index.md (+1 concept, 830→831), wiki/log.md
+
 ## [2026-05-04] dynamic-software | New concept page + Ashpreet Bedi article + entity update
 
 - **[[concepts/dynamic-software]]** — Created concept page: The paradigm shift from static (deterministic, hard-coded control flow) to dynamic (model-driven, non-deterministic, agentic) software. Breaks 50-year assumptions about determinism, state/time/sessions, and observability. 80% of agents fail because teams spend 6+ months on infrastructure instead of the agent. Calls for a new 'runtime' akin to what Django/Express/Vercel did for static software. Ashpreet Bedi's "live orchestra" metaphor.
