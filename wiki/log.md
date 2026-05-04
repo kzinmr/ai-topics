@@ -79,8 +79,8 @@
 - **[[entities/tim-dettmers]]** — Created entity page: University of Washington researcher. Creator of bitsandbytes, LLM.int8() (zero-degradation 8-bit inference for 175B+ models), QLoRA co-creator (with Artidoro Pagnoni). Discovered emergent outlier features and 6.7B phase shift. NF4 data type, double quantization.
 - **[[entities/maarten-grootendorst]]** — Created entity page: Data scientist, AI educator. Author of 'Visual Guide to Quantization' covering IEEE-754, PTQ vs QAT, BitNet. Creator of BERTopic, PolyFuzz.
 - **[[concepts/fine-tuning/quantization-overview]]** — Updated: Added sources (Dettmers, Grootendorst) and cross-references to [[concepts/model-quantization]] and [[entities/tim-dettmers]].
-- **raw/articles/2022-08-17_tim-dettmers_llm-int8-emergent-features.md** — Saved raw article
-- **raw/articles/2024-09-23_maarten-grootendorst_visual-guide-quantization.md** — Saved raw article
+- **raw/articles/2022-08-17_tim-dettmers-llm-int8-quantization.md** — Saved raw article (dedup: removed simpler variant _llm-int8-emergent-features.md)
+- **raw/articles/2024-07-22_maarten-grootendorst_visual-guide-quantization.md** — Saved raw article (corrected date: 2024-07-22, not 2024-09-23)
 - Updated: wiki/index.md (+2 entities, 810→812), wiki/log.md
 - Sources: https://timdettmers.com/2022/08/17/llm-int8-and-emergent-features/, https://www.maartengrootendorst.com/blog/quantization/
 
