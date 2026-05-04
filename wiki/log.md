@@ -1,3 +1,9 @@
+## [2026-05-04] Maxime Labonne — Entity page
+
+- **[[entities/maxime-labonne]]** — Created entity page: Head of Post-Training @ Liquid AI, creator of LLM Course (78.9k ⭐), abliteration technique, mergekit/quantization educator, author of two Packt books. Career: Airbus AI Lab → JPMorgan (IndexGPT, Spam-T5) → Liquid AI.
+- Updated: wiki/index.md, wiki/log.md
+- Source: https://mlabonne.github.io/blog/
+
 ## [2026-05-04] TGI Multi-LoRA — Inference serving concept page
 
 - **[[concepts/inference/tgi]]** — Created concept page: Hugging Face TGI (Text Generation Inference) with native Multi-LoRA serving. 30+ adapters per base model, ~3% VRAM overhead, dynamic adapter_id routing, Punica/LoRAX kernels. Comparison with vLLM/SGLang. Economics: ~$8/adapter training, flat cost scaling.

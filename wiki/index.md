@@ -210,6 +210,7 @@
 - [[entities/matx]] — AI chip startup founded by Reiner Pope, focusing on next-gen hardware for LLM training and inference.
 - [[entities/maurycyz-com]] — **Blog** | maurycyz.com |
 - [[entities/max-bernstein]] — **URL:** https://bernsteinbear.com
+- [[entities/maxime-labonne]] — Head of Post-Training @ Liquid AI. Creator of the LLM Course (78.9k ⭐), abliteration technique, and best-selling author of "LLM Engineer's Handbook" and "Hands-On Graph Neural Networks."
 - [[entities/maximor]] — AI-native finance automation platform. ERP-agnostic Audit-Ready Agents for close/cash/revenue/reporting. Founded by former Microsoft execs. $9M seed from Foundation Capital.
 - [[entities/meta]] — Social media and technology company, developer of the LLaMA model family, Ray-Ban AI collaboration, and the **Personal Superintelligence** vision articulated by Mark Zuckerberg.
 - [[entities/micahflee]] — **Micah Lee** (he/him, pronounced "my-kah") is a security researcher, investigative data journalist, software engineer, and author. He is best known for building practical open-source privacy tools...
