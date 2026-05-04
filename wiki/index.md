@@ -507,7 +507,7 @@
 - [[concepts/ai-digital-nato]] — In April 2026, **OpenAI, Anthropic, and Google** began sharing threat intelligence through the **Frontier Model Forum** (founded with Microsoft in 2023) to detect and counter what they term "advers...
 |- [[concepts/ai-evals]] — Product-specific evaluation systems for measuring whether an AI application works correctly on real tasks with real data. **Not** foundation model benchmarks like MMLU, HELM, or GPQA.
 |- [[concepts/ai-image-generation]] — AI image generation encompasses text-to-image and image-to-image synthesis using diffusion models (Stable Diffusion 3.5/4o, Flux, DALL-E), autoregressive models (Parti, Muse), and hybrid approaches (Google Nano Banana 2, OpenAI GPT Image 2). Key developments in 2025–2026 include real-time generation, native multi-turn editing, and photorealistic output at 4K resolution.
-|- [[concepts/ai-index-report-2026]]
+|- [[concepts/ai-index-report-2026]] — スタンフォード大学HAI年次AI指数レポート（第9版）。AI研究開発・技術性能・経済・RAI・政策・教育・世論の包括的データ。2025-2026年の主要トレンド：米中ギャップ消滅、投資倍増、ベンチマーク信頼性危機、AI主権台頭。
 - [[concepts/ai-industry-news]] — A roundup of major AI industry developments from **The Signal** newsletter by Alex Banks, dated April 26, 2026. Covers OpenAI's four-product launch week, Anthropic's platform expansion, and the Spa...
 - [[concepts/ai-memory-systems]] — OpenAIのChatGPT Memory、AnthropicのClaude Memory（開発中）、CognitionのDevin Memoryは、それぞれ異なる設計哲学に基づいている。このページは3つのアプローチを比較し、コーディングエージェントにおけるメモリシステムの最適設計を探る。
 - [[concepts/ai-military]] — Coverage of AI systems (particularly Claude) outperforming US military teams in wargame simulations, and the subsequent Pentagon-Anthropic dispute over military use of AI.

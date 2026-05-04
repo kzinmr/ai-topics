@@ -1,3 +1,16 @@
+## [2026-05-04] ai-index-report-2026 | Enriched with detailed chapter data from Stanford HAI chapter pages
+- **[[concepts/ai-index-report-2026]]** — Substantially enriched from initial digest-based entry:
+  - Added **3 new Top Takeaways**: "Big Four" convergence & benchmark reliability crisis (#3), AI Sovereignty & Policy Governance (#10), expanded expert vs public divide (#11)
+  - **Technical Performance**: Arena Elo ratings (Anthropic 1,503), benchmark invalidity rates (GSM8K 42%), agent OSWorld 66.3%, video generation (Veo 3), professional domains 60-90%, AV deployment data
+  - **Responsible AI**: Hallucination detection rates (22-94%), knowledge vs belief confusion, ISO 42001/NIST RMF adoption, Foundation Model Transparency Index drop (58 to 40), jailbreak vulnerability data, language gap data
+  - **Economy**: Investment +127.5%, GenAI +200%+, Google CAPEX $150B+, consumer surplus $172B, labor market (young devs -20%), productivity gains (14-50%), industrial robots (China 54%)
+  - **Policy & Governance**: AI sovereignty clusters (Europe 3 to 44), data localization measures, congressional witness data (5 to 102), public vs private investment disparity
+  - Updated Chapter Structure table from 7 to 9 chapters (split Science & Medicine, added Public Opinion)
+  - Added 6 new raw articles from Stanford HAI chapter pages, news article, and Hyperight summary
+  - Added sources, enriched See Also (4 new cross-links)
+  - Tags expanded with regulation, economy, responsible-ai, ai-sovereignty
+- Updated: wiki/concepts/ai-index-report-2026.md, wiki/index.md, wiki/log.md
+
 ## [2026-05-04] llm-evaluation-harness + open-llm-leaderboard | Enriched from paper, slides, GitHub, and HF sources
 - **[[concepts/llm-evaluation-harness]]** — Completely rewritten: 3 primitive request types (loglikelihood/perplexity/generation), multi-choice normalization methods, supported backends (8), best practices from the "Lessons from the Trenches" paper, prompting sensitivity case study (Mistral-7B +4.4pp between styles). Raw sources: paper, Hailey Schoelkopf slides, GitHub README.
 - **[[concepts/open-llm-leaderboard]]** — Expanded from stub: team (Thomas Wolf, clefourrier, Nathan Habib), key resources (main leaderboard, results dataset, comparator, generation visualizer), v1/v2 versions, relationship to lm-eval.
