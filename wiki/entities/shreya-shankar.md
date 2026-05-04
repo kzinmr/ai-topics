@@ -196,6 +196,11 @@ Her research has been adopted by **OpenAI and Anthropic teams** for their evalua
 - [[concepts/critique-shadowing]] — Husain's methodology (complementary)
 - [[drmaciver]] — Property-based testing applied to LLM evaluation (`foundational-llm-evals`); PBT methodology for eval design
 
+## Related Concepts
+
+- [[concepts/llm-patterns-eugene-yan]] — Co-author of the O'Reilly Applied LLMs Guide (What We Learned from a Year of Building with LLMs)
+- [[entities/eugene-yan]] — Lead author of the Applied LLMs Guide
+
 ## Sources
 
 - [Personal Website](https://www.sh-reya.com/) — Research statement, publications, mentees

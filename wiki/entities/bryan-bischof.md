@@ -134,8 +134,12 @@ A talk presenting his framework for systematic AI agent evaluation. The talk cov
 - **The Gordian Knot of Inventory Management** (Theory Ventures) — Case study of AI applied to supply chain and inventory problems. Demonstrates the gap between AI promise and production reality in complex, real-world domains.
 - **Sell Coffee and Jeans, Not Picks and Shovels** (Theory Ventures) — Investment thesis arguing that the best AI opportunities are in applied verticals, not infrastructure tools.
 
-## Related People
+## Related Concepts
 
+- [[concepts/llm-patterns-eugene-yan]] — Co-author of the O'Reilly Applied LLMs Guide (What We Learned from a Year of Building with LLMs)
+- [[entities/eugene-yan]] — Lead author of the Applied LLMs Guide
+
+### 関連人物 (Related People)
 - **[[charles-frye]]** — Former Weights & Biases colleague; both advocate for practical ML engineering education over hype
 - **[[will-mcgugan]]** — Fellow Weights & Biases community figure; both interested in developer experience and tooling
 - **Weights & Biases** — Where Bischof built the data teams; central to modern ML experiment tracking

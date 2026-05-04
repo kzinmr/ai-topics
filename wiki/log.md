@@ -1,3 +1,9 @@
+
+## [2026-05-04] llm-patterns-eugene-yan | Enriched with OReilly Applied LLMs Guide (3 parts, 6 co-authors)
+- **[[concepts/llm-patterns-eugene-yan]]** — Enriched existing concept page with comprehensive OReilly What We Learned from a Year of Building with LLMs guide. Added: Part I (Tactical: Prompting, RAG, Flow Engineering, Evals), Part II (Operations: Data, Models, Product, Team), Part III (Strategy: Resource Allocation, System Moat, Human-Centered AI, Economics). Updated evolution table with v2 details. Added co-author cross-links.
+- Raw articles: raw/articles/2026-05-04_oreilly-applied-llms-part1.md, part2.md, part3.md
+- Updated entities: bryan-bischof.md (Related Concepts + restored Related People), jason-liu.md (Related Concepts), shreya-shankar.md (Related Concepts)
+- Updated: wiki/index.md (entry enriched), wiki/log.md
 ## [2026-05-04] genai-handbook | New meta-knowledge concept page (William Brown GenAI Handbook)
 - **[[concepts/genai-handbook]]** — Created comprehensive meta-knowledge concept page for William Brown (@willccbb) GenAI Handbook v0.1 (June 2024). 9-section roadmap mapping against existing wiki concepts with coverage ratings (~5-85% per section), linked resource evaluation and quality assessment, gap analysis (6 topics, 3 priorities), and learner-type recommendations (Engineer / Researcher / Beginner).
 - リソース評価の主な判定: Karpathy「Let's build GPT」· Lilian Wengエージェント記事· 3Blue1Brownシリーズ· Tim Dettmers量子化ブログ → 🟢 現在も価値不変。GANs関連· Goodfellow DL本 → ⚪ 歴史的価値のみ。

@@ -79,6 +79,11 @@ Includes his work at **Stitch Fix** (multimodal embedding systems, Flight framew
 - **Software 3.0 philosophy** — Arguments for classical engineering rigor in LLM applications
 - **Consulting insights** — Real-world patterns observed across startups and enterprises
 
+## Related Concepts
+
+- [[concepts/llm-patterns-eugene-yan]] — Co-author of the O'Reilly Applied LLMs Guide (What We Learned from a Year of Building with LLMs)
+- [[entities/eugene-yan]] — Lead author of the Applied LLMs Guide
+
 ## References
 
 - jason-liu-sandboxes-agents-sdk-2026-04
