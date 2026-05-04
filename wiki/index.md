@@ -701,8 +701,9 @@
 |- [[concepts/late-interaction-retrieval]] — Antoine Chaffin's ColBERT/MaxSim preserving token-level detail. 150M model outperforms 7B dense models on reasoning tasks (BRIGHT). Part 4 of the RAG Is Not Dead series.
 |- [[concepts/latent-briefing]]
 |- [[concepts/llm-as-judge]] — LLM-as-JudgeはLLMを使用してLLM出力を評価するパラダイム。3つのバイアス类型（ルーブリック順序、スコアID、参照解答）と7つのベストプラクティスを整理。高リスク評価にはGPT-4oクラスが必要。
-|- [[concepts/llm-assisted-writing]] — LLM-Assisted Writing: authors use LLMs to draft/structure content, then apply human editing to restore personal voice and authenticity. Case study: Ibrahim Diallo.
-|- [[concepts/llm-core]] — 大規模言語モデルのコアアーキテクチャと言語モデル基礎
+||- [[concepts/llm-assisted-writing]] — LLM-Assisted Writing: authors use LLMs to draft/structure content, then apply human editing to restore personal voice and authenticity. Case study: Ibrahim Diallo.
+- [[concepts/llm-course-roadmap]] — メタ知識: Maxime LabonneのLLM Courseを既存Wiki概念にマッピングした知識マップ。カリキュラム構造を通してカバレッジとギャップを可視化。
+- [[concepts/llm-core]] — 大規模言語モデルのコアアーキテクチャと言語モデル基礎
 - [[concepts/llm-evaluation-harness]] — Frameworks and tools for systematically evaluating Large Language Models across standardized benchmarks and custom test suites.
 - [[concepts/llm-memory-architecture]] — LLMメモリ設計。ai-agents、memory、architecture、knowledge-graphs
 - [[concepts/llm-training-coherence-evolution]] — How an LLM's coherence and usefulness improve as training progresses, with empirical analysis from Giles Thomas's "Writing an LLM from Scratch" series.

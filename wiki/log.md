@@ -27,11 +27,12 @@
 - Updated: wiki/index.md (+2 pages, +1 entity, 810 total), wiki/log.md
 - Source: arXiv:2009.06489 / Communications of the ACM, Vol. 64, Issue 12 (2021)
 
-## [2026-05-04] Maxime Labonne — Entity page
+## [2026-05-04] LLM Course Roadmap — Meta-knowledge map
 
-- **[[entities/maxime-labonne]]** — Created entity page: Head of Post-Training @ Liquid AI, creator of LLM Course (78.9k ⭐), abliteration technique, mergekit/quantization educator, author of two Packt books. Career: Airbus AI Lab → JPMorgan (IndexGPT, Spam-T5) → Liquid AI.
+- **[[concepts/llm-course-roadmap]]** — Created concept page: Maxime Labonne's LLM Course (78.9k ⭐) structured as a knowledge map. Maps all three parts (Fundamentals → Scientist → Engineer) against existing Wiki concepts with coverage ratings and gap analysis. LLM領域の体系的な知識マップ。
+- **[[entities/maxime-labonne]]** — Created entity page: Head of Post-Training @ Liquid AI, creator of LLM Course, abliteration technique, quantization educator, author of two Packt books. Career: Airbus → JPMorgan → Liquid AI.
 - Updated: wiki/index.md, wiki/log.md
-- Source: https://mlabonne.github.io/blog/
+- Sources: https://github.com/mlabonne/llm-course, https://mlabonne.github.io/blog/
 
 ## [2026-05-04] TGI Multi-LoRA — Inference serving concept page
 
