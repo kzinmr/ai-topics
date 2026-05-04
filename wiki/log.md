@@ -7,6 +7,14 @@
 - Updated: wiki/index.md (799 total pages, concepts: 415), wiki/log.md
 - Source: Notion (yumoxu)
 
+## [2026-05-04] Paper Ingest — RPG (Regularized Policy Gradient) for KL-Regularized PG Framework
+
+- **[[concepts/rpg-regularized-policy-gradient]]** — Created concept page: RPG framework unifies KL-regularized policy gradient algorithms for LLM reasoning (Zhang et al., ICLR 2026). Identifies GRPO importance-weighting mismatch and proposes RPG-REINFORCE with RPG-Style Clip. AIME24/25: **+6pp over DAPO**. AIME25 (8K): 52% — surpasses Qwen3-4B-Instruct (47%).
+- **[[concepts/fine-tuning/grpo-rl-training]]** — Updated See Also section with cross-link to RPG page noting the KL mismatch correction.
+- **raw/papers/2025-05-19_2505.17508_kl-regularized-policy-gradient-rpg.md** — Raw paper saved.
+- **Source:** arXiv:2505.17508, ICLR 2026
+- Updated: wiki/index.md (+1 concept), wiki/log.md
+
 ## [2026-05-04] Active Crawl — Pentagon AI Deals, Agentic AI Governance, MIT-IBM Computing Lab
 
 - **[[entities/anthropic]]** — Added Pentagon Blacklisting section: supply chain risk designation (Feb 2026), Mythos exception, $900B valuation target, lawsuits, May 2026 exclusion from 7-company deals.

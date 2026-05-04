@@ -22,3 +22,5 @@ Stub page for GRPO RL Training.
 ## Related Pages
 
 - [[concepts/_index]]
+- [[concepts/multi-teacher-on-policy-distillation]] — MOPD, which evolved from GRPO by replacing group-mean advantage with teacher-student log-ratio advantage
+- [[concepts/model-distillation]] — broader category of distillation techniques
