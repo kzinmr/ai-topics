@@ -675,6 +675,7 @@
 - [[concepts/inference]] — LLM推論の3大エンジン: llama.cpp (ローカルCPU/GPU), vLLM (サーバー高スループット), SGLang (エージェント最適化)
 - [[concepts/inference/llama-cpp]] — llama.cpp is a C/C++ inference engine for running LLMs efficiently on consumer hardware, created by Georgi Gerganov and now maintained under ggml-org. As of April 2026, it has evolved from a simple...
 | [[concepts/inference/vllm]] — vLLM is a high-throughput LLM serving engine with PagedAttention optimization, developed by UC Berkeley and maintained by the vLLM project. As of April 2026, the v0.19.0 release (448 commits, 197 c...
+|- [[concepts/inference/tgi]] — TGI (Text Generation Inference) is Hugging Face's production inference server. Native Multi-LoRA serving: 30+ adapters per base model, ~3% VRAM overhead, dynamic adapter_id routing. Punica/LoRAX kernels.
 |- [[concepts/tensorrt-llm]] — NVIDIA's inference optimization engine with TensorRT compiler, FP8/FP4 quantization, Triton integration. Highest throughput on NVIDIA GPUs (H100/B200). ⬜ L1
 - [[concepts/instruction-hierarchy]] — LLMの命令階層構造。システムプロンプト、ユーザープロンプト、ツール出力の優先順位とprompt-injection対策
 - [[concepts/intent-based-engineering]] — AI開発における新たなボトルネック「articulation gap（表明のギャップ）」を特定した概念。エンジニアリングが「どう作るか」から「良い状態をどう記述するか」へ移行することを示す。Daniel Miessler提唱。

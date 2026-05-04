@@ -1,3 +1,11 @@
+## [2026-05-04] TGI Multi-LoRA — Inference serving concept page
+
+- **[[concepts/inference/tgi]]** — Created concept page: Hugging Face TGI (Text Generation Inference) with native Multi-LoRA serving. 30+ adapters per base model, ~3% VRAM overhead, dynamic adapter_id routing, Punica/LoRAX kernels. Comparison with vLLM/SGLang. Economics: ~$8/adapter training, flat cost scaling.
+- **[[concepts/inference/_index]]** — Enriched: Added TGI row to engine comparison table, updated recommendation table (Multi-LoRA -> TGI, not vLLM).
+- **raw/articles/2024-07-18_tgi-multi-lora-serving.md** — Saved raw article
+- Updated: wiki/index.md (inference/tgi entry), wiki/log.md
+- Source: https://huggingface.co/blog/multi-lora-serving
+
 ## [2026-05-04] Accelerate — Distributed training launcher + DeepSpeed concept page
 
 - **[[concepts/accelerate]]** — Created concept page: Hugging Face Accelerate as unified distributed training abstraction. FSDP vs DeepSpeed configuration mapping (6 dimensions), memory/precision differences (fp32 upcast), plugin system (FullyShardedDataParallelPlugin, DeepSpeedPlugin), decision guide. Lead developer attribution added: [[entities/the-zach-mueller]].
