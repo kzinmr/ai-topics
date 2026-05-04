@@ -48,6 +48,7 @@ related:
 | **Cost Optimization** | Prompt Caching, Batch Orchestration, Token Economics | [[concepts/prompt-caching]] ✅ LIVE |
 | **Observability** | Traces, Metrics, Logs, Evals | [[concepts/ai-infrastructure-engineering/llm-observability]] ⬜ L1 |
 | **Memory Debugging** | PyTorch Memory Snapshot, Memory Profiler, OOM Debugging | [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]] 🟢 L1 |
+| **Research Frameworks** | Hardware Lottery, Path Dependency, Infrastructure Decision Theory | [[concepts/ai-infrastructure-engineering/hardware-lottery]] 🟢 L2 |
 
 ## 学習ロードマップ
 

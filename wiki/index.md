@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-04 | Total pages: 808 | Full entries: 775 | Stubs: 613 |
+| Last updated: 2026-05-04 | Total pages: 810 | Full entries: 777 | Stubs: 613 |
 
-## Entities (389 pages)
+## Entities (390 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -281,6 +281,7 @@
 - [[entities/samuel-colvin]] — **Name** | Samuel Colvin |
 - [[entities/sandro-puppo]] — Co-founder of Cua (YC X25) and Lucebox. Focus on local LLM inference optimization and computer-use agent infrastructure.
 - [[entities/sankalp-sinha]] — **Sankalp Sinha**, known online as **dejavucoder** (@dejavucoder), is an **AI engineer** and applied LLM researcher based in India. He focuses on AI-assisted coding, agentic workflows, LLM evaluati...
+- [[entities/sara-hooker]] — Researcher at Google DeepMind. Author of **"The Hardware Lottery"** — foundational framework on how hardware availability determines AI research direction. Advocate for cross-disciplinary hardware/software/ML collaboration.
 - [[entities/scott-wu]] — CEO and co-founder of **Cognition AI**, the company behind **Devin** — the world's first autonomous AI software engineer. Former competitive programming champion (3× IOI gold medals, 1st place in 2...
 - [[entities/seangoedecke-com]] — **URL:** https://www.seangoedecke.com
 - [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. 6 specialized tools for code analysis/search/retrieval from any public git repo. Previously indexed 75B+ lines of code. Built by [[ben-boyter]]. Free beta, no API key needed.
@@ -484,6 +485,7 @@
 |- [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — デプロイ構成、オートスケーリング（HPA, predictive, serverless）、ロードバランシング。⬜ L1
 ||- [[concepts/ai-infrastructure-engineering/llm-observability]] — 推論メトリクス（TTFT, TPOT, ITL）、GPU/VRAM監視、コスト帰属、vLLM OTel統合。⬜ L1
 ||- [[concepts/ai-infrastructure-engineering/pytorch-gpu-memory-profiling]] — PyTorch Memory Snapshot & Profiler。GPUメモリデバッグ、OOM原因特定、メモリ可視化。🟢 L1
+|- [[concepts/ai-infrastructure-engineering/hardware-lottery]] — **Hardware Lottery**: Meta-framework for understanding how hardware/software availability — not algorithmic merit — determines which AI research ideas succeed. Sara Hooker (CACM 2021). 🟢 L2
 |- [[concepts/ai-autonomy-debate]] — The **AI Autonomy Debate
 - [[concepts/ai-bubble-economics]] — The **AI Bubble Economics** concept encompasses the growing body of analysis questioning whether the unprecedented capital flowing into artificial intelligence infrastructure is backed by real econ...
 - [[concepts/ai-coding-agent-criticism]] — Armin Ronacher (lucumr.pocoo.org) identified a structural asymmetry in how AI coding agents are debated:

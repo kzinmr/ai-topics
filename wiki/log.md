@@ -1,3 +1,12 @@
+## [2026-05-04] The Hardware Lottery — Concept page + Sara Hooker entity
+
+- **[[concepts/ai-infrastructure-engineering/hardware-lottery]]** — Created concept page (🟢 L2): Sara Hooker's **Hardware Lottery** framework — meta-framework explaining why AI research ideas succeed based on hardware/software compatibility, not algorithmic merit. Covers Anna Karenina principle, neural networks' lost decades (CPU vs GPU), TPU lock-in, domain specialization trap, and strategic implications for AI infrastructure engineers (GPU procurement, cloud provider choice, interconnect strategy).
+- **[[entities/sara-hooker]]** — Created entity page: Google DeepMind researcher, author of The Hardware Lottery (CACM 2021). Advocate for cross-disciplinary hardware/software/ML collaboration.
+- **raw/papers/2020-09-14_2009-06489_hardware-lottery.md** — Saved raw paper with abstract, core contributions, key data points
+- **[[concepts/ai-infrastructure-engineering/_index]]** — Enriched: Added "Research Frameworks" row to scope table with hardware-lottery link
+- Updated: wiki/index.md (+2 pages, +1 entity, 810 total), wiki/log.md
+- Source: arXiv:2009.06489 / Communications of the ACM, Vol. 64, Issue 12 (2021)
+
 ## [2026-05-04] Maxime Labonne — Entity page
 
 - **[[entities/maxime-labonne]]** — Created entity page: Head of Post-Training @ Liquid AI, creator of LLM Course (78.9k ⭐), abliteration technique, mergekit/quantization educator, author of two Packt books. Career: Airbus AI Lab → JPMorgan (IndexGPT, Spam-T5) → Liquid AI.
