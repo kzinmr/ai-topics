@@ -72,8 +72,9 @@ See [[eugene-yan--key-quotes]] for the full collection.
 - [[concepts/machine-learning-in-production]] — His primary domain: shipping ML systems at scale
 - [[concepts/recommendation-systems]] — Deep expertise from Lazada and Amazon
 - [[concepts/llm-evaluation-harness]] — Eval-driven development and LLM-as-Judge
-- [[concepts/retrieval-augmented-generation]] — One of his seven core LLM patterns
-- [[concepts/applied-ml]] — His most-starred GitHub repo (28.7K stars)
+|- [[concepts/retrieval-augmented-generation]] — One of his seven core LLM patterns
+|- [[concepts/llm-patterns-eugene-yan]] — His comprehensive 7-pattern framework for building LLM-based systems & products
+|- [[concepts/applied-ml]]
 - [[concepts/open-llms]] — Curated list of commercially usable open LLMs (12.7K stars)
 
 ## Influence Metrics

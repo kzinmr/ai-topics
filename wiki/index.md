@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
->| Last updated: 2026-05-04 | Total pages: 815 | Full entries: 782 | Stubs: 613 |
+>| Last updated: 2026-05-04 | Total pages: 818 | Full entries: 785 | Stubs: 613 |
 
 ## Entities (392 pages)
 
@@ -428,7 +428,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (418 pages)
+## Concepts (421 pages)
 
 |- [[concepts/accelerate]] — Hugging Face Accelerate: zero-code-change distributed training launcher. Created/led by Zach Mueller (@TheZachMueller). Unified abstraction layer making FSDP and DeepSpeed interchangeable via CLI or Python plugins.
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
@@ -550,8 +550,9 @@
 |- [[concepts/claude-opus-4-7]] — **Claude Opus 4.7** is Anthropic's frontier LLM released April 16, 2026. Key features: first tokenizer change since Claude 1 (40% more tokens), web search tool support, improved coding accuracy (42% on TAU-bench), 200K context window, and AI London Lab certification for UK government use.
 |- [[concepts/claw-code]] — Open-source clean-room Rust/Python reimplementation of Claude Code's agent harness architecture. Created by [[sigrid-jin]] after March 2026 leak. Fastest repo in GitHub history to surpass 100K stars. Built with oh-my-codex.
 |- [[concepts/cli-over-mcp-pattern]]
-- [[concepts/closing-agent-loop]] — Cognition's philosophy for autonomous development: Devin doesn't just write code — it handles the entire development loop.
-- [[concepts/coala]] — **Authors:** Theodore R. Sumers, Shunyu Yao, Karthik Narasimhan, Thomas L. Griffiths (Princeton University)
+|- [[concepts/closing-agent-loop]] — Cognition's philosophy for autonomous development: Devin doesn't just write code — it handles the entire development loop.
+|- [[concepts/cmu-llms-methods-applications|CMU LLMs: Methods and Applications]] — メタ知識: CMU LTI (Xiong & Ipolito, 2026春) のLLM応用コース。プロンプト→RAG→エージェント→マルチモーダル→デプロイまでをカバー。3コース中最も入門しやすい。
+|- [[concepts/coala]] — **Authors:
 - [[concepts/code-mode]] — CodeMode is the paradigm where LLMs write code (typically Python) for batch execution rather than making sequential tool calls. Coined by Cloudflare and independently developed by Pydantic, Anthropic and others. Expanded with JS vs Python language dichotomy analysis and MCP-based vs Native API transport layer comparison.
 - [[concepts/code-intelligence-for-llms]] — Providing LLMs with structured, pre-computed code analysis data via MCP/REST APIs rather than raw source files. Cuts token usage 99%. Canonical implementation: [[searchcode-com]].
 - [[concepts/coding-agents]] — LLM-powered coding agents — tools, environments, and optimization patterns for agent-driven development.
@@ -785,8 +786,9 @@
 - [[concepts/openclaw/five-tier-precedence]] — OpenClawのスキルロードシステムが採用する**階層的優先度モデル**。Hermes Agentのself-authoring（自己作成）アプローチとの対比において、最も重要なアーキテクチャ上の差異の一つ。
 - [[concepts/openclaw/philosophy]] — OpenClawの設計哲学の中核は**「Primitives over Defaults」**（デフォルトではなくプリミティブを提供する）。これはLinuxカーネルやKubernetesの設計思想に近い。
 - [[concepts/personal-os-for-ai-agents]] — A file-based personal operating system that lives inside a Git repository. Instead of databases, vector stores, or API keys, it uses 80+ files in markdown, YAML, and JSONL — formats that both human...
-- [[concepts/personal-superintelligence]] — **「AIは中央で全てを自動化するべきか、それとも個人それぞれが自分の目標に向かう道具となるべきか。」**
-- [[concepts/polymarket-trading-agents]] — AI agents used for automated trading on Polymarket prediction markets — weather, crypto, sports. Self-learning bots that operate 24/7 with no emotions.
+|- [[concepts/personal-superintelligence]] — **「AIは中央で全てを自動化するべきか、それとも個人それぞれが自分の目標に向かう道具となるべきか。」**
+|- [[concepts/princeton-cos597r-deep-dive-llm|Princeton COS597R: Deep Dive into LLMs]] — メタ知識: Princeton (Chen & Arora, 2024秋) の論文ベースLLM研究サーベイ。スケーリング則→データ→アライメント→推論→RAG→HW。研究指向、実装なし。
+|- [[concepts/polymarket-trading-agents]] — AI agents used for automated trading on Polymarket prediction markets
 - [[concepts/process-supervision]] — The infrastructure discipline of managing long-running AI agent processes: automatic restart on failure, health monitoring, supervised process trees, and cgroup-based resource control. A prerequisite for [[harness-engineering]] — agent harnesses must supervise subprocesses (tool execution, sandboxed code) to ensure reliability at production scale.
 |- [[concepts/process-reward-models-agent-eval]] — **Process Reward Models (PRMs)** evaluate individual reasoning steps or agent actions rather than just final outcomes. This is a fundamentally different evaluation paradigm from outcome-based evalu...
 |- [[concepts/programmatic-tool-calling]] — API mechanism where LLMs write code that calls tools (async Python functions) within a sandboxed container. Anthropic's `code_execution_20260120` tool with `allowed_callers` field. Expanded with Cloudflare Project Think's 4 new dimensions: Execution Ladder (5-tier capability escalation), Durable Execution (Fibers + stash checkpointing), Self-Authored Extensions (Meta-PTC: code generating new tools), and Hibernation Economics (zero-idle-cost Durable Objects vs containers).
@@ -835,8 +837,9 @@
 |- [[concepts/skill-architecture-patterns]] — **Overview:** Comparative analysis of two fundamentally different approaches to agent skill management — Hermes Agent's self-authoring, maximalist skill system vs OpenClaw's governed, primitives-fi...
 |- [[concepts/skill-retrieval-augmentation]] — **SRA**: Academic framework for dynamically retrieving agent skills from external corpora. Defines Retrieve→Incorporate→Apply pipeline. SRA-Bench benchmark. "Incorporation bottleneck" finding. (arXiv:2604.24594, Su et al. 2026)
 - [[concepts/solo-founder-stack]] — The set of tools, practices, and organizational models that enable a single founder to build and run a company at scale in the AI era — the "one-person unicorn" paradigm.
-- [[concepts/space-gpus]] — **Space GPUs** refers to the emerging concept of deploying AI compute hardware — primarily GPUs — in orbit aboard satellites, creating **orbital data centers (ODCs)** that leverage the unique physi...
-- [[concepts/speculative-decoding]] — A technique to accelerate LLM inference by using a smaller "draft" model to generate candidate tokens, which are then verified in parallel by a larger "target" model. Reduces per-token latency by 2...
+|- [[concepts/space-gpus]] — **Space GPUs** refers to the emerging concept of deploying AI compute hardware — primarily GPUs — in orbit aboard satellites, creating **orbital data centers (ODCs)** that leverage the unique physi...
+|- [[concepts/stanford-cs336-language-modeling-from-scratch|Stanford CS336: Language Modeling from Scratch]] — メタ知識: Stanford (Hashimoto & Liang, 2025春) のゼロからのLLM構築コース。Token化→Transformer→Triton→Scaling→Common Crawl→RLを5課題で実装。最も実践的。
+|- [[concepts/speculative-decoding]] — A technique to accelerate LLM inference
 - [[concepts/speech/whisper]] — Whisper is OpenAI's general-purpose speech recognition model, released in 2022. It uses a Transformer encoder-decoder architecture trained on 680k hours of multilingual and multitask supervised data.
 - [[concepts/sqs-lambda-esm-scaling]] — AWS LambdaのEvent Source Mapping (ESM)はSQSキューからメッセージをPullし、Lambda関数を自動起動する仕組み。Rehan van der Merweが100回以上の実験で得た知見をまとめる。
 - [[concepts/structured-outputs]] — Structured outputs is the paradigm of constraining LLM generation to produce valid, machine-readable data (JSON, XML, Pydantic models) rather than free-form text. This enables reliable integration ...

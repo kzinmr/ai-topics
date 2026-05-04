@@ -1,3 +1,11 @@
+## [2026-05-04] Top 3 courses — full curriculum pages (CS336, COS597R, CMU LLMs)
+- **[[concepts/stanford-cs336-language-modeling-from-scratch|Stanford CS336]]** — Created full curriculum concept page. 5 assignments mapped to wiki concepts (Transformer→Triton→Scaling→Common Crawl→Alignment). Key finding: Tied to `flashattention-pytorch-educational`, `grpo-rl-training`, `decoder-only-gpt`. Includes GPU cost guide ($1.99-3.29/h H100).
+- **[[concepts/princeton-cos597r-deep-dive-llm|Princeton COS597R]]** — Created full curriculum concept page. 14-week paper schedule with wiki mapping. Key finding: Debate Panel format + Scribe system unique. Covers scaling laws, DPO, Constitutional AI, test-time compute scaling, FlashAttention.
+- **[[concepts/cmu-llms-methods-applications|CMU LLMs]]** — Created full curriculum concept page. 4 phases (Foundations→RAG/Agents→Safety/Code→Deployment). Key finding: 2026版で最も新しい、RAGを3週連続で扱う唯一のコース。
+- New pages: concepts/stanford-cs336-language-modeling-from-scratch.md, concepts/princeton-cos597r-deep-dive-llm.md, concepts/cmu-llms-methods-applications.md
+- Raw articles: raw/articles/2026-05-04_stanford-cs336-syllabus.md, princeton-cos597r-syllabus.md, cmu-llms-syllabus.md
+- Updated: wiki/index.md (Concept +3), wiki/log.md
+
 ## [2026-05-04] learning-llms-in-2025 | New concept page (Yoav Goldberg's curriculum guide)
 - **[[concepts/learning-llms-in-2025|Learning LLMs in 2025]]** — Created meta-knowledge concept page for Yoav Goldberg's curated LLM curriculum guide. Evaluates 15 academic resources on quality, accessibility, and relevance with learner-type-specific recommendations.
   - Courses: Chiang (TONN), CMU LLMs, Princeton Deep Dive, Stanford Human-Centered, Berkeley Safety, JHU Self-supervised, Stanford CS336 (Language Models from Scratch), UW NLP LLM, NYU NLU
