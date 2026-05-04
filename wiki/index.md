@@ -225,8 +225,9 @@
 - [[entities/mistral-voxtral-tts]] — Mistral AI's open-weights text-to-speech model, announced April 2026. Combines autoregressive semantic token generation with flow-matching acoustic token synthesis.
 - [[entities/mitchell-hashimoto]] — HashiCorp co-founder (Vagrant, Terraform, Vault), Ghostty creator. Left GitHub in 2026 citing instability from AI agent scale.
 - [[entities/mitchellh-com]] — **Blog** | mitchellh.com |
-- [[entities/mitsuhiko]] — **URL:** https://lucumr.pocoo.org
-- [[entities/muse-spark]] — Meta's latest language model, announced April 2026.
+|- [[entities/mitsuhiko]] — **URL:** https://lucumr.pocoo.org
+|- [[entities/mobius-labs]] — AI research company specializing in model compression, quantization (HQQ), and multimodal understanding (Aana). Acquired by Dropbox. Creators of GemLite GPU kernels.
+|- [[entities/muse-spark]] — Meta's latest language model, announced April 2026.
 - [[entities/mustafa-suleyman]] — **Role** | CEO, Microsoft AI; Co-founder, DeepMind; Co-founder, Inflection AI |
 - [[entities/nader-dabit]] — **Role** | Growth Engineer at Cognition AI (Feb 2026 – Present) |
 - [[entities/nathan-flurry]] — Co-founder & CTO of Rivet (rivet.dev). Built Sandbox Agent SDK (universal coding agent API), reverse-engineered Docker Sandbox MicroVM. Focus: agent infrastructure, sandboxing.
@@ -1416,10 +1417,11 @@
 - [[concepts/pycon]] — > **TODO**: Enrich this page.
 - [[concepts/pycparser]] — > **TODO**: Enrich this page.
 - [[concepts/python-packaging]] — > **TODO**: Enrich this page.
-- [[concepts/python]] — > **TODO**: Enrich this page.
+|- [[concepts/python]] — > **TODO**: Enrich this page.
+|- [[concepts/pytorch-fsdp-distributed-training]] — PyTorch FSDP fully sharded data parallel: parameter sharding, sharding strategies (NO_SHARD, SHARD_GRAD_OP, FULL_SHARD), memory savings for large models.
 |- [[concepts/pytorch-fsdp]] — PyTorch FSDP (Fully Sharded Data Parallel): ZeRO-3 sharding of parameters, gradients, optimizer states across GPUs. CPU offloading, HF ecosystem integration, DeepSpeed comparison.
-- [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation): 4-bit NF4 quantization + LoRA adapters for memory-efficient fine-tuning. Three innovations: NF4, Double Quantization, Paged Optimizers. Enables 70B on single 48GB GPU.
-- [[concepts/quantifying-infrastructure-noise-in-agentic-coding-evals]] — > **TODO**: Enrich this page.
+|- [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation): 4-bit NF4 quantization + LoRA adapters for memory-efficient fine-tuning. Three innovations: NF4, Double Quantization, Paged Optimizers. Enables 70B on single 48GB GPU.
+|- [[concepts/quantifying-infrastructure-noise-in-agentic-coding-evals]] — > **TODO**: Enrich this page.
 - [[concepts/quepid]] — > **TODO**: Enrich this page.
 - [[concepts/queueing-theory]] — > **TODO**: Enrich this page.
 - [[concepts/qwen]] — > **TODO**: Enrich this page.
