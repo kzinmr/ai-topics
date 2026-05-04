@@ -13,7 +13,9 @@ related:
   - concepts/fine-tuning/_index
   - concepts/fine-tuning/peft-lora-qlora
   - concepts/inference/llama-cpp
-sources: []
+sources:
+  - https://timdettmers.com/2022/08/17/llm-int8-and-emergent-features/
+  - https://www.maartengrootendorst.com/blog/quantization/
 ---
 
 # Model Quantization
@@ -82,9 +84,11 @@ Reduces disk space by ~40% while maintaining vLLM and llmcompressor compatibilit
 
 ## Related
 
+- [[concepts/model-quantization]] — Comprehensive quantization guide (LLM.int8(), BitNet, 1.58-bit frontier)
 - [[concepts/fine-tuning/peft-lora-qlora]] — QLoRA fine-tuning
 - [[concepts/inference/llama-cpp]] — GGUF inference engine
 - [[concepts/inference/vllm]] — vLLM serving with quantized models
+- [[entities/tim-dettmers]] — bitsandbytes, LLM.int8(), QLoRA creator
 
 ## Sources
 

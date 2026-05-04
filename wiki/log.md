@@ -1,3 +1,14 @@
+## [2026-05-04] Quantization deep-dive — LLM.int8(), emergent features, visual guide, 1.58-bit frontier
+
+- **[[concepts/model-quantization]]** — Major expansion (L1 → comprehensive): Added IEEE-754 representation fundamentals (sign/exponent/fraction), symmetric (Absmax) vs asymmetric (Zero-point) quantization mapping, LLM.int8() with mixed precision decomposition, 6.7B parameter phase shift (Dettmers), Two Streams Theory, calibration deep-dive (MSE/KL/Percentile), expanded PTQ section (GPTQ Hessian-based error redistribution, GGUF block-wise), QAT wide minima theory, BitNet (1-bit, signum) and BitNet b1.58 (ternary, absmean, addition-only matmul) frontier section. Sources and TODO updated.
+- **[[entities/tim-dettmers]]** — Created entity page: University of Washington researcher. Creator of bitsandbytes, LLM.int8() (zero-degradation 8-bit inference for 175B+ models), QLoRA co-creator (with Artidoro Pagnoni). Discovered emergent outlier features and 6.7B phase shift. NF4 data type, double quantization.
+- **[[entities/maarten-grootendorst]]** — Created entity page: Data scientist, AI educator. Author of 'Visual Guide to Quantization' covering IEEE-754, PTQ vs QAT, BitNet. Creator of BERTopic, PolyFuzz.
+- **[[concepts/fine-tuning/quantization-overview]]** — Updated: Added sources (Dettmers, Grootendorst) and cross-references to [[concepts/model-quantization]] and [[entities/tim-dettmers]].
+- **raw/articles/2022-08-17_tim-dettmers_llm-int8-emergent-features.md** — Saved raw article
+- **raw/articles/2024-09-23_maarten-grootendorst_visual-guide-quantization.md** — Saved raw article
+- Updated: wiki/index.md (+2 entities, 810→812), wiki/log.md
+- Sources: https://timdettmers.com/2022/08/17/llm-int8-and-emergent-features/, https://www.maartengrootendorst.com/blog/quantization/
+
 ## [2026-05-04] Justine Tunney CPU matmul — LLM on CPU optimization + CPU offloading connection
 
 - **[[entities/justine-tunney]]** — Created entity page: Software engineer, llamafile creator. 84 CPU matmul kernels (30-500% faster), Cosmopolitan Libc. Mozilla/Google alum.
