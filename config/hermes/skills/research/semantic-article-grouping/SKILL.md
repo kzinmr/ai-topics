@@ -50,6 +50,20 @@ After filtering, what remains is the **newsletter subject/title URL only** — N
 
 **IMPORTANT**: After filtering noise, the remaining URL is typically the newsletter's own post page, not the external articles being linked to. You must access the newsletter post's body to find the real curated links.
 
+**CRITICAL: Beehiiv Tracking URL Handling** — Beehiiv newsletters in the ingest pipeline appear as `link.mail.beehiiv.com/v1/c/...` tracking URLs. These are NOT all article content. Only a subset resolve to actual articles. Filter and resolve using this table:
+
+| Pattern | Type | Action |
+|---------|------|--------|
+| `link.mail.beehiiv.com/v1/c/...` | Beehiiv tracking (generic) | Call web_extract — resolves to actual article, author profile, or interstitial (e.g., login page, subscribe prompt) |
+| `hp.beehiiv.com/<uuid>` | Beehiiv hosted page | **Skip** — almost always resolves to Terms of Service or other boilerplate, NOT newsletter content |
+| `email.beehiivstatus.com/<hash>/hclick` | Status tracking pixel | **Skip** — zero content value |
+| `getsuperintel.com` / `substack.com` / similar publication domain | Actual article content | Take — this is where substantive articles live |
+| `@handle` domain (e.g., `@kimmonismus` on x.com) | Author X/Twitter profile | **Skip** — low wiki value unless the author is a major figure |
+
+**Deduplication pitfall**: Multiple beehiiv tracking URLs in the same checkpoint may all resolve to the **same article** with different auth states (e.g., Link 1 → full article, Link 2 → same article with login interstitial). After calling web_extract, compare resolved page titles and content to detect duplicates. Flag all-but-one as noise.
+
+**Source name trap**: The `source_name` in the checkpoint (e.g. "NVIDIA Blackwell vs. Huawei Ascend") is often the **article title**, not the newsletter/publication name. The actual publication name lives inside the resolved content (e.g., "Superintel+ / getsuperintel.com"). Do not trust `source_name` as the canonical publication — extract it from the article content or the domain.
+
 ## Workflow
 
 ### 1. Discover & Read Content
@@ -209,6 +223,29 @@ When analyzing platform articles, note the architectural approach:
 - After grouping: use `wiki-entity-enrichment-from-article` or `newsletter-wiki-ingest` to create/update pages
 - After processing: update `wiki/index.md` and `wiki/log.md`
 - Commit: `cd ~/ai-topics && git add wiki/ && git commit -m "wiki: [action]" && git push`
+
+## Pipeline Resilience: Cron Output Format
+
+**Problem**: Cron job output is always wrapped in markdown (the Hermes cron runner wraps agent responses). When `newsletter-wiki-ingest` tries to parse the triage output as raw JSON, it fails because the JSON is embedded inside a `.md` file with header, prompt, and instructions.
+
+**Fallback**: The triage JSON is also saved to `${HERMES_HOME}/cron/data/newsletter/triage_latest.json` by the newsletter-triage job. When the downstream ingest job encounters a JSON parse failure:
+
+1. Read `${HERMES_HOME}/cron/data/newsletter/triage_latest.json` directly — this is pure JSON with the `decisions` array
+2. If the triage output file at `${HERMES_HOME}/cron/output/<job-id>/<timestamp>.md` also exists, extract the JSON block from it as a secondary fallback (look for the `{...}` block after "## Response" heading)
+3. Proceed with wiki-ingest using the recovered JSON
+
+## Paywalled Content Handling
+
+Paywalled articles (common with beehiiv/substack newsletters) are still worth ingesting when:
+- The free preview contains **specific technical claims** (model versions, chip names, utilization numbers)
+- The information fills a **clear wiki gap** not covered by other sources
+- The claims can be cross-referenced against non-paywalled sources (e.g., Simon Willison blog for V4 tech specs)
+
+When ingesting paywalled content:
+- Note `paywalled` in the raw article frontmatter
+- Extract only what's visible in the free preview
+- Cross-reference with non-paywalled sources to validate claims
+- Mark uncertain claims with qualifiers ("reports suggest", "rumored")
 
 ## Cron Job Context
 When running as a scheduled cron job:
