@@ -87,6 +87,17 @@ Martin wrote about Anthropic's red team finding **500+ critical vulnerabilities*
 - **Developer productivity** — Agentic coding tools, MCPs, token efficiency
 - **Supply chain security** — Open source vulnerability cascades, LLM-accelerated attacks
 - **Enterprise adoption** — The bifurcation between power users and casual users
+- **AI cybersecurity discourse** — Fictional scenarios and real analysis on AI-discovered vulnerabilities
+
+### AI-Cybersecurity Scenarios and AI-Discovered Zero-Days
+
+Martin's August 2026 post "[29th August 2026: a scenario](https://martinalderson.com/posts/august-29-2026-a-scenario/)" uses fictional narrative to illustrate three critical theses about AI and cybersecurity:
+
+1. **CopyFail (CVE-2026-31431)** — A real 9-year-old Linux kernel page-cache bug in crypto code, found by an AI tool in four months. Demonstrates that "the rate at which vulnerabilities get found from now on is bounded by GPU hours, not human ones."
+2. **Cloud centralization risk** — Modern life depends on AWS and Azure; disaster recovery plans don't model "what happens if the fallback is also down, or if every other org on earth is failing over at the same minute."
+3. **Democratization of sophisticated attacks** — "Everyone is worried about nation states. Most of the big incidents that have actually happened turned out to be a kid, a misconfiguration, or someone who didn't really understand what they were doing. The threat model in most boards' heads assumes a sophisticated adversary. The thing that's actually arriving is an unsophervised adversary holding tools that are now sophisticated for them."
+
+This post extends his earlier writing on Anthropic's red team finding [500+ critical vulnerabilities](https://martinalderson.com/posts/anthropic-found-500-zero-days/) in abandoned software — the coordination problem of "who fixes the zero-days AI finds?"
 
 ## Key Quotes
 

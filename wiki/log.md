@@ -1,3 +1,13 @@
+## [2026-05-04] Blog Ingest — 18 articles collected, 3 entity pages created/updated, anti-sycophancy concept enriched
+
+- **[[concepts/anti-sycophancy]]** — Enriched with Anthropic's May 2026 sycophancy metrics: 9% overall, but 38% in spirituality conversations and 25% in relationships. Shows domain-specific vulnerability in RLHF-trained models. Source: [Simon Willison on Anthropic's research summary](https://simonwillison.net/2026/May/3/anthropic/).
+- **[[entities/gary-marcus]]** — Updated with May 2026 healthcare thesis: "Have LLMs improved patient outcomes?" — aligned with Eric Topol and Nature Medicine editorial finding no evidence of patient outcome improvement beyond admin tasks. Source: [garymarcus.substack.com](https://garymarcus.substack.com/p/have-llms-improved-patient-outcomes).
+- **[[entities/george-hotz]]** — Updated with May 2026 "Punk, or why I don't stream anymore" essay: critique of AI-mediated culture, wireheading, and the "information war" on inner reality. Source: [geohot.github.io](https://geohot.github.io//blog/jekyll/update/2026/05/03/punk-or-why-i-dont-stream.html).
+- **[[entities/martin-alderson]]** — Enriched with "29th August 2026: a scenario" — fictional narrative illustrating CopyFail (CVE-2026-31431) kernel bug, cloud centralization risk, and democratization of sophisticated attacks.
+- **[[entities/matklad]]** — New Zig 0.16 error context patterns (errdefer + telescopic context) article collected.
+- **[[entities/jim-nielsen]]** — "Lots of Little HTML Pages" (LLMS) post-mortem: building websites with HTML/CSS view transitions instead of JS-heavy SPAs.
+- raw/articles/ — 18 articles saved from blog ingestion cycle
+
 ## [2026-05-03] X Account Scan — Megadocs Synthetic Data Paper + Error Report
 
 - **[[concepts/synthetic-data]]** — Enriched from stub to comprehensive: Megadocs technique (stitching/stretching for 1.80× data efficiency), synthetic rephrasing baseline (1.48×), distributional shift paradox, pre-training best practices. Source: Kim et al. "Data-efficient pre-training by scaling synthetic megadocs" (arXiv:2603.18534, March 2026), shared by @Grad62304977.

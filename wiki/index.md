@@ -131,7 +131,7 @@
 - [[entities/geoffrey-hinton]] — **Full Name** | Geoffrey Everest Hinton |
 - [[entities/geoffrey-litt]] — **X** | @geoffreylitt |
 - [[entities/geoffreylitt-com]] — **URL:** https://geoffreylitt.com
-- [[entities/geohot-github-io]] — **Projects:** comma.ai (Founder/CEO), tinygrad (Creator), tiny corp (Founder)
+- [[entities/geohot-github-io]] — **Projects:** comma.ai (Founder/CEO), tinygrad (Creator), tiny corp (Founder). **Essays:** "Punk, or why I don't stream anymore" (May 2026) — critique of AI-mediated culture, wireheading, "information war" on inner reality, anti-streaming stance.
 - [[entities/georgi-gerganov]] — **X/Twitter** | @ggerganov |
 - [[entities/gilesthomas]] — ML研究者、教育者、ソフトウェア開発者。PythonAnywhere創設者。gilesthomas.com
 - [[entities/glm-5-zai]] — New state-of-the-art open weights LLM from Z.ai (智谱AI).
