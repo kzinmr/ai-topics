@@ -431,7 +431,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (424 pages)
+## Concepts (425 pages)
 
 |- [[concepts/accelerate]] — Hugging Face Accelerate: zero-code-change distributed training launcher. Created/led by Zach Mueller (@TheZachMueller). Unified abstraction layer making FSDP and DeepSpeed interchangeable via CLI or Python plugins.
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
@@ -447,9 +447,10 @@
 |- [[concepts/agent-iam]] — Agent IAM (Identity & Access Management) for non-human identities (NHI). Security and authorization framework for AI agents operating across organizational boundaries.
 - [[concepts/agent-patterns]] — AIエージェントの一般的な設計パターンと実装プラクティス
 - [[concepts/agent-sandbox-patterns]] — Browser Useのエージェントサンドボクシングアーキテクチャ。ツール分離パターンとエージェント分離パターン
-- [[concepts/ask-user-question-pattern]] — エージェントがユーザーに確認を求めるためのハーネスパターン
-- [[concepts/audio-tokenizer-comparison]] — 비교/Comparison of 5 neural audio tokenizers: SoundStream, EnCodec, DAC, SpeechTokenizer, Mimi. RVQ-based, differing in codec quality vs. speech LLM readiness, semantic/acoustic separation, token rate, and domain.
-- [[concepts/bitter-lesson-agent-harnesses]] — モデル能力のスケール向上に伴い、ハーネスの役割は論理実装からモデル行動のオーケストレーションへ移行する
+|- [[concepts/ask-user-question-pattern]] — エージェントがユーザーに確認を求めるためのハーネスパターン
+|- [[concepts/ai-patterns-for-glam|AI Design Patterns for Information Professionals]] — Practical "boring AI" design patterns for GLAM and information professionals. Covers discovery, structured extraction, evaluation, and infrastructure. WIP book by [[entities/daniel-van-strien]].
+|- [[concepts/audio-tokenizer-comparison]] — 비교/Comparison of 5 neural audio tokenizers: SoundStream, EnCodec, DAC, SpeechTokenizer, Mimi. RVQ-based, differing in codec quality vs. speech LLM readiness, semantic/acoustic separation, token rate, and domain.
+|- [[concepts/bitter-lesson-agent-harnesses]] — モデル能力のスケール向上に伴い、ハーネスの役割は論理実装からモデル行動のオーケストレーションへ移行する
 - [[concepts/context-providers]] — エージェントとツールの間にあるコンテキスト供給レイヤーの設計パターン
 - [[concepts/db9-filesystem-sql]] — PostgreSQL + fs9ファイルシステム拡張を用いたエージェントワークフローアーキテクチャ。アーティファクトはファイル、メタデータはSQL
 |- [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.

@@ -3,7 +3,7 @@ title: Daniel van Strien
 type: entity
 handle: "@vanstriendaniel"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-04
 tags:
   - person
   - ai
@@ -12,7 +12,9 @@ tags:
   - digital-humanities
   - synthetic-data
   - open-source
-sources: []
+sources:
+  - https://danielvanstrien.xyz/ai-patterns-for-glam/
+  - https://danielvanstrien.xyz/ai-patterns-for-glam/intro.html
 ---
 
 
@@ -24,7 +26,7 @@ sources: []
 | **Blog** | [danielvanstrien.xyz](https://danielvanstrien.xyz) |
 | **GitHub** | [davanstrien](https://github.com/davanstrien) |
 | **Role** | Machine Learning Librarian at Hugging Face |
-| **Known for** | Datasets curation, synthetic data pipelines, GLAM AI integration, reasoning datasets |
+| **Known for** | Datasets curation, synthetic data pipelines, GLAM AI integration, reasoning datasets, [[concepts/ai-patterns-for-glam\|AI Patterns for GLAM]] book |
 | **Bio** | Daniel van Strien is a Machine Learning Librarian at Hugging Face, where he focuses on datasets, data infrastructure, and making ML accessible. He previously worked at the British Library on the Living with Machines project and has a background in economic and social history, libraries, and digital humanities. |
 
 ## Overview
@@ -55,7 +57,7 @@ His January 2025 post on distilling DeepSeek reasoning to ModernBERT classifiers
 
 ### GLAM Sector and AI Integration
 
-Drawing on his background at the British Library, Daniel has been a leading voice on how AI can serve the **GLAM sector** (Galleries, Libraries, Archives, Museums). His June 2025 post "Who Benefits? Rethinking Library Data in the Age of AI" presents a framework for libraries to transition from being mere data providers to becoming active AI partners — co-developing tools that enhance discovery, improve collections, and advance responsible AI.
+Drawing on his background at the British Library, Daniel has been a leading voice on how AI can serve the **GLAM sector** (Galleries, Libraries, Archives, Museums). In March 2026, he published **[[concepts/ai-patterns-for-glam|AI Design Patterns for Information Professionals]]**, a work-in-progress book documenting practical AI design patterns for information professionals — covering discovery, structured extraction, evaluation, and infrastructure. His June 2025 post "Who Benefits? Rethinking Library Data in the Age of AI" presents a framework for libraries to transition from being mere data providers to becoming active AI partners — co-developing tools that enhance discovery, improve collections, and advance responsible AI.
 
 His earlier work includes building image search engines for British Library book illustrations using Hugging Face datasets, deploying ML into archival workflows with flyswot, and creating metadata generation pipelines that combine text and tabular models for web archive collections. This work has consistently emphasized that AI in cultural heritage must be built collaboratively, with deep respect for the communities whose data is being processed.
 
@@ -107,6 +109,7 @@ Daniel has been a vocal advocate for **community evals** over black-box leaderbo
 |------|-------|-------|
 | Feb 2026 | Re-OCR Your Digitised Collections for ~$0.002/Page | Open-source VLM-based OCR for GLAM collections |
 | Jan 2026 | Train on Massive Datasets Without Downloading | HF Streaming + Unsloth for disk-free LLM training |
+| Mar 2026 | **[[concepts/ai-patterns-for-glam\|AI Design Patterns for Information Professionals]]** | Book (WIP): practical AI design patterns for GLAM and information professionals |
 | Jul 2025 | Efficient Batch Inference with vLLM + UV Scripts | Scaling Qwen3-30B across 4 GPUs on HF Jobs |
 | Jun 2025 | Who Benefits? Rethinking Library Data in the Age of AI | AI integration strategy for GLAM sector |
 | Sep 2025 | Fine-tuning VLMs for Art History | TRL + HF Jobs for Iconclass classification |

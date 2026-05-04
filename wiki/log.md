@@ -1,3 +1,10 @@
+## [2026-05-04] ai-patterns-for-glam | New concept page: AI Design Patterns for Information Professionals
+- **[[concepts/ai-patterns-for-glam|AI Design Patterns for Information Professionals (Boring AI)]]** — Created new concept page covering Daniel van Strien's WIP book on practical "boring AI" design patterns for GLAM and information professionals. Core philosophy: most impactful AI for information work is deliberately mundane (structured extraction, classification, metadata enrichment). Four-stage framework: Discovery → Design Patterns → Evaluation → Infrastructure. Pattern language approach inspired by Christopher Alexander (1977).
+- **[[entities/daniel-van-strien]]** — Updated: added book to Known for, Blog Posts table, and GLAM Sector section. Added sources and bumped updated date.
+- Raw articles saved: raw/articles/2026-03-23_ai-patterns-for-glam-welcome.md
+- New concept: concepts/ai-patterns-for-glam.md
+- Updated: entities/daniel-van-strien.md, wiki/index.md (Concept +1 → 425), wiki/log.md
+
 ## [2026-05-04] synthetic-data + dataset-engineering | Enriched concept pages from two articles
 - **[[concepts/synthetic-data]]** — Enriched with CAI framework (Constitutional AI / RLAIF), synthetic data hierarchy (instructions → preferences → critiques), practical tips (best model, lock API versions), open-source examples (OpenHermes, Orca, Starling, Evol-Instruct, SteerLM, Prometheus), and OpenAI Superalignment connection.
 - **[[concepts/dataset-engineering]]** — Created new concept page covering the shift from data science to dataset engineering, Data-Centric AI (Andrew Ng), democratization of AI training, tooling ecosystem (argilla, CVAT, FiftyOne, distilabel), and relationship to synthetic data.
