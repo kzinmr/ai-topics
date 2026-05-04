@@ -1,3 +1,14 @@
+## [2026-05-04] Active Crawl — Pentagon AI Deals, Agentic AI Governance, MIT-IBM Computing Lab
+
+- **[[entities/anthropic]]** — Added Pentagon Blacklisting section: supply chain risk designation (Feb 2026), Mythos exception, $900B valuation target, lawsuits, May 2026 exclusion from 7-company deals.
+- **[[concepts/ai-military]]** — Expanded with Pentagon AI Deals section: 7 companies (SpaceX, OpenAI, Google, Nvidia, Microsoft, AWS, Reflection) signed for classified IL6/IL7 military AI work, "any lawful use" clause, Anthropic excluded.
+- **[[entities/reflection-ai]]** — Created entity page: 2-year-old startup (former DeepMind researchers), seeking $25B valuation, backed by Nvidia and 1789 Capital. Pentagon defense partner. No public model yet.
+- **[[concepts/agentic-ai-governance]]** — Created concept page: Yale CELI framework (May 2026), three-tiered guardrails, HITL/HOTL patterns, ISO/IEC 42001, excessive agency risk, indirect prompt injection.
+- **[[entities/mit-ibm-computing-research-lab]]** — Created entity page: IBM+MIT joint lab (Apr 2026), AI + algorithms + quantum computing convergence, 2029 fault-tolerant quantum roadmap, 3 research pillars.
+- **raw/articles/** — 3 new raw articles saved: pentagon-seven-ai-deals-anthropic-excluded, yale-celi-agentic-ai-governance-framework, mit-ibm-computing-research-lab-launch
+- Updated: wiki/index.md (798 total pages, +3 new entries), wiki/log.md
+- Sources: The Guardian, CNBC, Reuters, IBM Newsroom, MIT News, Fortune/EWSolutions
+
 ## [2026-05-04] Newsletter Ingest — The Signal: Anthropic Creative Coalition, Claude Security, OpenAI AWS Bedrock, Google Gemini updates
 
 - Source: The Signal newsletter "Gemini Gets to Work, Claude's Big Pull, and OpenAI Unchained" (2026-05-03)

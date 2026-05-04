@@ -18,7 +18,8 @@ sources: [
   "raw/newsletters/2026-04-26-openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
   "raw/articles/2026-04-28-anthropic-claude-creative-coalition.md",
   "raw/articles/2026-04-30-anthropic-claude-security-public-beta.md",
-  "raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md"
+  "raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md",
+  "raw/articles/2026-05-01_pentagon-seven-ai-deals-anthropic-excluded.md"
 ]
 related: [
   "[[anthropic]]",
@@ -149,6 +150,27 @@ Anthropic's internal "too dangerous to release" model **Mythos** was accessed on
 - Used the model to build simple websites (not malicious purposes, but the access was unauthorized)
 
 The incident highlights risks of: inference endpoint discoverability, credential sharing among contractors, and naming convention predictability.
+
+## Pentagon Blacklisting (Feb–May 2026)
+
+Anthropic was designated a **"supply chain risk"** by the Pentagon in February 2026 — the first time an American company has received this label — after refusing the "any lawful use" clause in defense contracts. Anthropic objected citing concerns about:
+- **Autonomous lethal weapons**: Claude models could potentially pilot drones or make targeting decisions
+- **Domestic mass surveillance**: "Lawful use" could extend to monitoring U.S. citizens
+
+### Escalation Timeline
+- **Feb 2026**: Pentagon blacklists Anthropic; OpenAI strikes deal hours later (Altman: "opportunistic and sloppy")
+- **Mar 2026**: Anthropic sues in San Francisco and Washington D.C. to reverse blacklisting
+- **Apr 2026**: [[entities/claude-mythos|Mythos]] demonstrated finding 271 Firefox zero-days; White House reopens discussions
+- **May 1, 2026**: Pentagon signs 7 AI companies (SpaceX, OpenAI, Google, Nvidia, Microsoft, AWS, [[entities/reflection-ai|Reflection AI]]) — Anthropic excluded
+- **May 2026**: DOD CTO Emil Michael says Mythos is a "separate national security moment"; NSA reportedly using it despite the blacklist
+
+### Implications
+- **Anthropic losing $50B+ defense contracts** while competitors profit
+- **Mythos paradox**: Model too dangerous for public release, but too valuable for Pentagon to completely exclude
+- **$900B valuation target**: May be impacted by defense revenue exclusion
+- Dario Amodei met with White House Chief of Staff Susie Wiles; Trump says deal is "possible"
+
+See [[concepts/ai-military]] for broader context.
 
 ## Research Focus
 

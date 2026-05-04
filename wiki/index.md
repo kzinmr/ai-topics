@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-03 | Total pages: 795 | Full entries: 760 | Stubs: 614 |
+| Last updated: 2026-05-04 | Total pages: 798 | Full entries: 763 | Stubs: 614 |
 
-## Entities (386 pages)
+## Entities (388 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -235,6 +235,7 @@
 - [[entities/nvidia-openshell]] — NVIDIA OpenShell: secure agent execution environment providing OS-level sandboxing, deny-by-default security policies, YAML-based access control. Reference implementation of the "Open Runtime" layer in Harrison Chase's framework.
 - [[entities/nvidia]] — NVIDIA is a semiconductor and AI infrastructure company. In the context of this wiki, NVIDIA is significant for:
 - [[entities/microsoft]] — **Type** | AI Research & Product Company | Cloud infrastructure leader with Azure, GitHub Copilot, and OpenAI partnership renegotiated April 2026.
+- [[entities/mit-ibm-computing-research-lab]] — Joint MIT-IBM research lab (Apr 2026) exploring convergence of AI, algorithms, and quantum computing. Successor to MIT-IBM Watson AI Lab.
 - [[entities/oldvcr-blogspot-com]] — **Cameron Kaiser** (blogging as **ClassicHasClass**) is a vintage computing researcher, software engineer, and open-source developer based at concepts/floodgap-systems. He runs the blog **Old Vinta...
 - [[entities/omar-khattab]] — **Position:** Assistant Professor, MIT EECS (TIBCO Founders' Career Development Professor)
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml programmer and technology writer.
@@ -264,6 +265,7 @@
 - [[entities/ramp-labs]] — AI research company focused on multi-agent system efficiency. Created Latent Briefing — KV cache compaction for efficient memory sharing between agents.
 - [[entities/raw-works]] — **Role:** ML researcher, RLM (Recursive Language Model) practitioner
 - [[entities/refactoring-english]] — ソフトウェアエンジニアリング、AI vs人間の文章品質。refactoringenglish.com
+- [[entities/reflection-ai]] — AI startup building open-weight models to counter Chinese AI. Pentagon defense partner, backed by Nvidia and 1789 Capital. No public model yet.
 - [[entities/regie-ai]] — AI-native sales engagement platform (SEP) replacing Outreach/SalesLoft. RegieOne platform. $50M total funding ($30M Series B Feb 2025). Backed by Khosla Ventures, Scale Venture Partners.
 - [[entities/rehan-van-der-merwe]] — Cloud-native architect and blogger. Writes at rehanvdm.com.
 - [[entities/reiner-pope]] — CEO of MatX, former Google TPU architect. Expert on full-stack AI from chip design to model architecture. Known for roofline analysis framework for LLM inference economics.
@@ -416,13 +418,14 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (413 pages)
+## Concepts (414 pages)
 
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
 - [[concepts/agent-communication-standards]] — ACP, A2A, BeeAIなど、マルチエージェント通信のための標準プロトコル群
 - [[concepts/agent-economics]] — The cost structures, token consumption patterns (1000x multiplier), and economic implications of deploying autonomous AI agents at scale across L1-L5 autonomy levels.
+- [[concepts/agentic-ai-governance]] — Frameworks for governing autonomous AI agents in enterprise — identity-based access, three-tiered guardrails (Yale CELI, 2026), HITL/HOTL patterns, regulatory alignment.
 - [[concepts/agent-governance]] — Agent governance is the structured approach enterprises use to define how autonomous AI systems operate, what they can access, and how their actions are monitored. It encompasses policy, identity, ...
 - [[concepts/agent-harness-primitives]] — A harness is every piece of code, configuration, and execution logic that wraps a raw model to turn it into a work engine. Agent = Model + Harness. The bottleneck has shifted from **model capabilit...
 - [[concepts/agent-harness]] — An agent harness is the infrastructure layer that sits between an LLM API and the agent's execution environment. It manages tool routing, context management, session lifecycle, and error recovery. ...
