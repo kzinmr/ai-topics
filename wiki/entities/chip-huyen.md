@@ -219,6 +219,11 @@ In a widely-discussed LinkedIn post (referenced in Lenny's Podcast), Huyen ident
 - TWIML AI Podcast guest appearance
 - Gradient Podcast with Weights & Biases (Jul 2020) — "ML Research and Production Pipelines"
 - GitHub: chiphuyen/aie-book (14.1k stars, 1,200+ reference links)
-- Snorkel AI author page (snorkel.ai/author/chip-huyen)
+
+## Related Wiki Pages
+
+- [[concepts/genai-handbook]] — Chip Huyenのブログ記事（RLHF, Building LLM Applications, Multimodal）が🟢最重要リソースとして評価されている
+- [[concepts/rag-systems]]
+- [[concepts/rlhf]]
 - "Machine learning systems design" course notes (huyenchip.com/machine-learning-systems-design/)
 - Goodreads reviews and ratings for Designing ML Systems (1,077 ratings, 4.33 avg)

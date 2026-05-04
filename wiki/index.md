@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
->| Last updated: 2026-05-04 | Total pages: 820 | Full entries: 786 | Stubs: 613 |
+>| Last updated: 2026-05-04 | Total pages: 825 | Full entries: 786 | Stubs: 613 |
 
 ## Entities (392 pages)
 
@@ -133,6 +133,7 @@
 - [[entities/geoffreylitt-com]] — **URL:** https://geoffreylitt.com
 - [[entities/geohot-github-io]] — **Projects:** comma.ai (Founder/CEO), tinygrad (Creator), tiny corp (Founder). **Essays:** "Punk, or why I don't stream anymore" (May 2026) — critique of AI-mediated culture, wireheading, "information war" on inner reality, anti-streaming stance.
 - [[entities/georgi-gerganov]] — **X/Twitter** | @ggerganov |
+|- [[entities/grant-sanderson-3blue1brown]] — **Alias** | 3Blue1Brown | YouTube math/ML educator. Essence of calculus/linear algebra, Neural networks series, "But what is a GPT?" — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
 - [[entities/gilesthomas]] — ML研究者、教育者、ソフトウェア開発者。PythonAnywhere創設者。gilesthomas.com
 - [[entities/glm-5-zai]] — New state-of-the-art open weights LLM from Z.ai (智谱AI).
 - [[entities/glm-5v-turbo]] — Model that turns designs into code, part of the multimodal AI wave from Chinese labs.
@@ -166,6 +167,7 @@
 - [[entities/ivan-burazin]] — CEO of Daytona. Coined "Headless SaaS" — SaaS rebuilt with agent-first APIs, no GUI.
 - [[entities/jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of **Bun** — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining...
 - [[entities/jason-liu]] — **X** | @jxnlco |
+|- [[entities/jay-alammar]] — **Blog** | jalammar.github.io | Visual ML explainer. "The Illustrated Transformer", "The Illustrated Word2Vec" — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
    169|- [[entities/jaya-gupta]] — Partner at Foundation Capital, thought leader on context graphs and enterprise AI. Published influential thesis on Context Graphs as AI's trillion-dollar opportunity.
    170|- [[entities/jayden-milne]] — **Blog:** thejaymo.net
    171|- [[entities/jay-mody]] — **Blog:** jaykmody.com | Educator known for picoGPT (GPT-2 in 60 lines of NumPy) and clear LLM internals explanations |
@@ -232,6 +234,7 @@
 - [[entities/nader-dabit]] — **Role** | Growth Engineer at Cognition AI (Feb 2026 – Present) |
 - [[entities/nathan-flurry]] — Co-founder & CTO of Rivet (rivet.dev). Built Sandbox Agent SDK (universal coding agent API), reverse-engineered Docker Sandbox MicroVM. Focus: agent infrastructure, sandboxing.
 - [[entities/nathan-lambert]] — Nathan Lambert is a Senior Research Scientist and **Post-Training Lead** at the **Allen Institute for AI (AI2)**. He previously worked at **HuggingFace** as a Research Scientist and RLHF Team Lead ...
+|- [[entities/neel-nanda]] — **Website** | neelnanda.io | Mechanistic Interpretability researcher. MI Glossary, Quickstart Guide, Favourite Papers — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
 - [[entities/nemotron-cascade-2]] — NVIDIA's open-weight 30B MoE (3B active). Gold medal at IMO/IOI/ICPC 2025 via Cascade RL + Multi-Domain On-Policy Distillation. 24GB VRAM, 256K context, thinking/non-thinking modes, structured tool calling.
 - [[entities/noam-brown]] — **Role** | Research Scientist, OpenAI |
 - [[entities/noetik]] — Noetik is a biotech AI company applying transformer models to oncology, specifically addressing the 95% clinical trial failure rate in cancer drug development. The company's core thesis: many "fail...
@@ -428,7 +431,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (422 pages)
+## Concepts (423 pages)
 
 |- [[concepts/accelerate]] — Hugging Face Accelerate: zero-code-change distributed training launcher. Created/led by Zach Mueller (@TheZachMueller). Unified abstraction layer making FSDP and DeepSpeed interchangeable via CLI or Python plugins.
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
@@ -840,6 +843,7 @@
 - [[concepts/solo-founder-stack]] — The set of tools, practices, and organizational models that enable a single founder to build and run a company at scale in the AI era — the "one-person unicorn" paradigm.
 |- [[concepts/space-gpus]] — **Space GPUs** refers to the emerging concept of deploying AI compute hardware — primarily GPUs — in orbit aboard satellites, creating **orbital data centers (ODCs)** that leverage the unique physi...
 |- [[concepts/stanford-cs336-language-modeling-from-scratch|Stanford CS336: Language Modeling from Scratch]] — メタ知識: Stanford (Hashimoto & Liang, 2025春) のゼロからのLLM構築コース。Token化→Transformer→Triton→Scaling→Common Crawl→RLを5課題で実装。最も実践的。
+|- [[concepts/ssm-mamba]] — SSM/Mamba: State Space Models for sequence modeling (S4→Mamba→Mamba-2→Mamba-3). Linear-time alternative to Transformers with selective state spaces, hardware-aware algorithms, and inference-first design (ICLR 2026 Oral). Full resource evaluation included.
 |- [[concepts/speculative-decoding]] — A technique to accelerate LLM inference
 - [[concepts/speech/whisper]] — Whisper is OpenAI's general-purpose speech recognition model, released in 2022. It uses a Transformer encoder-decoder architecture trained on 680k hours of multilingual and multitask supervised data.
 - [[concepts/sqs-lambda-esm-scaling]] — AWS LambdaのEvent Source Mapping (ESM)はSQSキューからメッセージをPullし、Lambda関数を自動起動する仕組み。Rehan van der Merweが100回以上の実験で得た知見をまとめる。
@@ -1591,5 +1595,6 @@
 - [[entities/grant-slatton]] — > **TODO**: Enrich this page with research on this person.
 - [[entities/jo-kristian-bergum]] — > **TODO**: Enrich this page with research on this person.
 - [[entities/samuelcolvin]] — > **TODO**: Enrich this page.
+|- [[entities/sebastian-raschka]] — **Blog** | sebastianraschka.com | ML researcher, educator. LoRA finetuning guides, "Ahead of AI" newsletter — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
 - [[entities/sebastian-ramirez]] — Creator of FastAPI, Typer, SQLModel, Asyncer. Colombian open-source developer, Sequoia Open Source Fellow.
 - [[entities/stefano-marlinelli]] — > **TODO**: Enrich this page with research on this person.

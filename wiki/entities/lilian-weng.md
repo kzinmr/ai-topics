@@ -172,5 +172,11 @@ This trait manifests in her work ethic: blog posts that take months of reading a
 - https://www.wired.com/story/thinking-machines-lab-mira-murati-funding/ — Thinking Machines Lab funding
 - https://www.reuters.com/technology/artificial-intelligence/former-openai-technology-chief-mira-muratis-ai-startup-taps-top-researchers-2025-02-18 — Thinking Machines Lab launch
 - https://github.com/lilianweng — GitHub profile
+
+## Related Wiki Pages
+
+- [[concepts/genai-handbook]] — Lilian Wengのブログ記事（RL Overview, Agent, Diffusion, Prompt Engineering）が🟢最重要リソースとして評価されている
+- [[concepts/llm-course-roadmap]]
+- [[concepts/learning-llms-in-2025]]
 - https://linkedin.com/in/lilianweng — LinkedIn profile
 - https://www.ayeshakhanna.com/women-in-ai-feature/lilian-weng — Women in AI feature

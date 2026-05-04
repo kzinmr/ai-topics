@@ -1,3 +1,15 @@
+## [2026-05-04] ssm-mamba + genai-handbook-resources | SSM/Mamba concept page, entity pages for key educators, resource enrichment
+- **[[concepts/ssm-mamba]]** — Created comprehensive concept page for SSM/Mamba evolution (S4 2021 → Mamba 2023 → Mamba-2/SSD 2024 → Mamba-3 ICLR 2026 Oral). Core mechanism (SSM equations, discretization, HiPPO, selective scan S6), comparison with Transformers, hybrid model trends, full resource evaluation with 🟢🟡 ratings.
+- **GenAI Handbook Resource Ingestion:** Created 4 entity pages for 🟢 top-tier resource creators:
+  - [[entities/grant-sanderson-3blue1brown]] — 3Blue1Brown (math/ML visualization)
+  - [[entities/neel-nanda]] — MI researcher (Glossary, Quickstart Guide)
+  - [[entities/jay-alammar]] — Visual ML explainer (Illustrated Transformer/Word2Vec)
+  - [[entities/sebastian-raschka]] — LoRA finetuning expert (Ahead of AI)
+- Enriched existing entities with handbook cross-links: [[entities/lilian-weng]], [[entities/chip-huyen]], [[entities/tim-dettmers]], [[entities/maarten-grootendorst]]
+- Raw articles saved: tim-dettmers-llm-int8 (quantization), maarten-grootendorst-mamba-guide
+- New pages: concepts/ssm-mamba.md, entities/grant-sanderson-3blue1brown.md, entities/neel-nanda.md, entities/jay-alammar.md, entities/sebastian-raschka.md
+- Raw articles: raw/articles/2022-08-17_tim-dettmers-llm-int8-quantization.md, raw/articles/2024_maarten-grootendorst-visual-guide-mamba.md
+- Updated: entities/will-brown.md (cross-link), wiki/index.md (Concept +1 → 423, Entity +4, Total +5 → 825), wiki/log.md
 
 ## [2026-05-04] llm-patterns-eugene-yan | Enriched with OOD finetuning for hallucination detection (Yan)
 - **[[concepts/llm-patterns-eugene-yan]]** — Added NLI-based Hallucination Detection subsection under Evals: OOD bootstrapping method (USB Wikipedia -> FIB News), 25x recall improvement (0.02->0.50), BART+MNLI approach, QLoRA usage.

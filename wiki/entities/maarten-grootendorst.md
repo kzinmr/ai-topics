@@ -35,6 +35,10 @@ A comprehensive illustrated guide covering the full quantization landscape:
 - **QAT fundamentals**: Fake quants and the "wide minima" theory — why QAT outperforms PTQ at low bit-widths
 - **1-bit & 1.58-bit Frontier**: BitNet (signum, {-1, +1}) and BitNet b1.58 (absmean, {-1, 0, +1}) — the addition-only future
 
+### Visual Guide to Mamba and State Space Models (2024)
+An illustrated walkthrough of the Mamba architecture — continuous SSM equations, discretization, HiPPO, and the selective scan algorithm (S6). Cited as a 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
+Full analysis: [[concepts/ssm-mamba]].
+
 ### Other Visual Guides
 - **Attention Mechanism** — Illustrated explanations of self-attention, multi-head attention, and transformer architecture
 - **RAG** — Retrieval-Augmented Generation patterns and architectures

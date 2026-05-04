@@ -77,4 +77,6 @@ Key insight: emergence follows an **exponential function related to perplexity**
 - [[concepts/qlora]] — QLoRA fine-tuning
 - [[concepts/fsdp-qlora]] — FSDP + QLoRA distributed training
 - [[concepts/emergent-features-llm]] — Detailed analysis of phase shift phenomenon
+- [[concepts/genai-handbook]] — Tim Dettmersの量子化ブログ（LLM.int8()）が🟢最重要リソースとして評価されている
+- [[concepts/ssm-mamba]] — SSM量子化研究への接点
 - [[entities/artidoro-pagnoni]] — QLoRA co-creator
