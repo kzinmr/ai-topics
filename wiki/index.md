@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-04 | Total pages: 801 | Full entries: 768 | Stubs: 613 |
+| Last updated: 2026-05-04 | Total pages: 805 | Full entries: 772 | Stubs: 613 |
 
 ## Entities (389 pages)
 
@@ -253,7 +253,7 @@
 - [[entities/peter-steinberger]] — Austrian software developer, creator of **OpenClaw** (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as **@steipete** on GitHub/Twitter. A pioneer of **AI-native dev...
 |- [[entities/cory-doctorow]] — Canadian-British sci-fi author and digital rights activist. Coined "enshittification." Blogs at pluralistic.net. Critical voice on AI policy and corporate personhood.
 |- [[entities/philiplaine-com]] — **URL:** https://philiplaine.com
-- [[entities/philipp-schmid]] — **X** | @_philschmid |
+|- [[entities/phil-schmid]] — Staff Engineer (AI DevX/DevRel) at Google DeepMind, ex-Hugging Face Tech Lead (revenue $0→$100M). Author of FSDP+Q-LoRA guide, RLHF tutorials, Inference Endpoints.
 - [[entities/playerzero]] — AI production engineering platform. Context graphs as engineering world models. Founded by Animesh Koratana (Stanford DAWN lab). $20M total funding. Customer: Zuora.
 - [[entities/poolside]] — AI code generation startup. Released **Laguna XS.2** (33B/3B MoE, Apache 2.0, single-GPU inference) in April 2026.
 - [[entities/project-prometheus]] — Jeff Bezos co-founded AI startup. $10B raised, $38B valuation. Focus on "Physical AI" for manufacturing/aerospace.
@@ -594,6 +594,7 @@
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — After Supervised Fine-Tuning (SFT), preference optimization methods align models with human values and desired behaviors. These methods differ in data requirements, complexity, and training stability.
 - [[concepts/fine-tuning/trl]] — TRL is HuggingFace's library for fine-tuning language models with reinforcement learning and preference optimization methods.
 - [[concepts/fine-tuning/unsloth]] — Unsloth is a fine-tuning optimization library providing 2-5x faster training with 50-80% less memory usage through custom Triton kernels and LoRA/QLoRA optimization.
+- [[concepts/fsdp-qlora]] — FSDP + Q-LoRA combined technique: shard quantized (NF4) model states across GPUs via PyTorch FSDP. Enables 70B training on 2× 40GB or 4× 24GB (CPU offload) GPUs. Answer.AI × Tim Dettmers × HF collaboration.
 - [[concepts/flashattention-pytorch-educational]] — shreyansh26/FlashAttention-PyTorch は、FlashAttentionアルゴリズム（FA1からFA4まで）をPyTorchで教育的・アルゴリズム的明晰さのために実装したプロジェクト。
 - [[concepts/formal-logic-foundation]] — Formal logic is the symbolic reasoning layer that underpins neurosymbolic AI systems. In the NeSy paradigm, formal logic provides the deterministic, verifiable reasoning capabilities that complemen...
 |- [[concepts/formal-verification-llm-agents]] — Formal verification is the practice of mathematically proving that code *always* satisfies its specifications—including all edge cases. AI is poised to bring this from a fringe academic pursuit int...
@@ -1406,7 +1407,8 @@
 - [[concepts/pycparser]] — > **TODO**: Enrich this page.
 - [[concepts/python-packaging]] — > **TODO**: Enrich this page.
 - [[concepts/python]] — > **TODO**: Enrich this page.
-- [[concepts/pytorch-fsdp-distributed-training]] — > **TODO**: Enrich this page.
+|- [[concepts/pytorch-fsdp]] — PyTorch FSDP (Fully Sharded Data Parallel): ZeRO-3 sharding of parameters, gradients, optimizer states across GPUs. CPU offloading, HF ecosystem integration, DeepSpeed comparison.
+- [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation): 4-bit NF4 quantization + LoRA adapters for memory-efficient fine-tuning. Three innovations: NF4, Double Quantization, Paged Optimizers. Enables 70B on single 48GB GPU.
 - [[concepts/quantifying-infrastructure-noise-in-agentic-coding-evals]] — > **TODO**: Enrich this page.
 - [[concepts/quepid]] — > **TODO**: Enrich this page.
 - [[concepts/queueing-theory]] — > **TODO**: Enrich this page.

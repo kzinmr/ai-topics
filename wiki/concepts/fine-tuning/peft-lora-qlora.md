@@ -106,6 +106,9 @@ tokenizer.save_pretrained("production_model")
 ```
 
 ## Related Concepts
+- [[concepts/qlora]] — Deep dive on Q-LoRA: NF4 quantization, Double Quantization, Paged Optimizers
+- [[concepts/fsdp-qlora]] — FSDP + Q-LoRA combined technique for multi-GPU memory-efficient training
+- [[concepts/pytorch-fsdp]] — PyTorch FSDP for distributed training with parameter/optimizer sharding
 - [[concepts/fine-tuning/unsloth]] — 2-5x faster fine-tuning with LoRA optimization
 - [[concepts/fine-tuning/axolotl]] — YAML-config fine-tuning with LoRA/QLoRA support
 - [[concepts/fine-tuning/grpo-rl-training]] — GRPO training with PEFT integration

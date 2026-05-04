@@ -1,3 +1,13 @@
+## [2026-05-04] Phil Schmid FSDP+Q-LoRA guide — Full wiki ingest (4 pages)
+
+- **[[entities/phil-schmid]]** — Created entity page: Philipp (Phil) Schmid, Staff Engineer (AI DevX/DevRel) at Google DeepMind, ex-Hugging Face Technical Lead. Key contributions: FSDP+Q-LoRA, Inference Endpoints, Zephyr/SmolLM/StarCoder partnerships, revenue $0→$100M.
+- **[[concepts/pytorch-fsdp]]** — Created top-level concept page: PyTorch FSDP (Fully Sharded Data Parallel) with ZeRO-3 sharding, CPU offloading, memory tradeoffs for Llama 3 70B, HF ecosystem integration, DeepSpeed comparison. Existing fine-tuning/pytorch-fsdp.md updated to redirect.
+- **[[concepts/qlora]]** — Created concept page: Q-LoRA (Quantized Low-Rank Adaptation). Covers NF4, Double Quantization, Paged Optimizers, architecture diagram, memory comparison (70B ~36GB VRAM).
+- **[[concepts/fsdp-qlora]]** — Created concept page: FSDP+Q-LoRA combined training technique (Answer.AI × Tim Dettmers × HF). Memory scaling table, cost analysis ($255 for 70B 3-epoch on 4× A10G), implementation config, comparison with alternatives.
+- **raw/articles/2026-05-04_phil-schmid-fsdp-qlora-llama3.md** — Saved raw article
+- Updated: wiki/index.md (+4 pages, 801→805), wiki/log.md
+- Source: https://www.philschmid.de/fsdp-qlora-llama3
+
 ## [2026-05-04] Jay Mody blog — Full wiki ingest (5 articles)
 
 - **[[entities/jay-mody]]** — Created entity page: Educator known for picoGPT (GPT-2 in 60 lines of NumPy), speculative sampling tutorial, and clear LLM internals explanations. 5 articles ingested.
