@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-04 | Total pages: 826 | Full entries: 787 | Stubs: 613 |
+> Last updated: 2026-05-04 | Total pages: 829 | Full entries: 787 | Stubs: 613 |
 
 ## Entities (392 pages)
 
@@ -97,6 +97,7 @@
 - [[entities/dylan-patel]] — **Role** | Founder, CEO, and Chief Analyst at SemiAnalysis |
 - [[entities/dynomight-net]] — **URL:** https://dynomight.net
 - [[entities/ed-zitron-s-where-s-your-ed-at]] — **Blog** | wheresyoured.at |
+- [[entities/eleutherai]] — Grassroots research collective that started the modern open-source AI movement. Creators of GPT-Neo, Pythia, and the LM Evaluation Harness.
 - [[entities/eli-thegreenplace-net]] — **URL:** https://eli.thegreenplace.net
 - [[entities/elie-bakouch]] — ML engineer and researcher at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training.
 - [[entities/elvis-sun]] — Elvis Sun is an AI researcher and newsletter author operating under the pen name **spicyneuron**. He publishes on Substack covering practical local AI deployment, hardware choices for self-hosted L...
@@ -149,6 +150,7 @@
 - [[entities/grok-imagine]] — xAI's full-stack video generation platform (Feb 2026). Leads DesignArena image-to-video benchmark (Elo 1,329). 1.245B videos in first 30 days. $4.20/min vs Sora $30/min.
 - [[entities/grok-4-3]] — xAI's latest LLM (May 2026) featuring always-on reasoning, 1M token context, aggressive pricing ($1.25/$2.50 per 1M tokens), and Custom Voices suite.
 - [[entities/gwern]] — **Blog** | gwern.net |
+- [[entities/hailey-schoelkopf]] — Research Scientist at EleutherAI, primary maintainer of the LM Evaluation Harness (lm-eval). Co-author of Pythia (ICML 2023).
 - [[entities/hamel-husain]] — **Role** | Independent Consultant (Parlance Labs), R&D at AnswerAI, Scout at Bain Capital |
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
 - [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawから移行中のユーザーが増加。
@@ -307,6 +309,7 @@
 - [[entities/speech-tokenizer]] — **SpeechTokenizer (Fudan)** | Unified semantic + acoustic speech tokenizer. HuBERT-distilled layer 1 for semantic, remaining layers for acoustic. ~50 Hz, ~4 kbps. Designed for speech LLMs.
 - [[entities/spike]] — **URL:** https://supaiku.com
 - [[entities/stefano-marinelli]] — **Blog:** it-notes.dragas.net — "Scattered IT Notes"
+- [[entities/stella-biderman]] — Executive Director of EleutherAI. Mathematician and AI researcher leading open-source AI. Co-author of Pythia, GPT-Neo, BLOOM.
 - [[entities/steve-blank]] — **Blog** | steveblank.com |
 - [[entities/substack]] — Substackプラットフォーム。ドメイン別AI記事
 |- [[entities/stochi]] — Independent AI researcher focused on post-training, agents, RL, model architectures. Author of the [[concepts/sparse-signal-loop]] experiment. Previously shipped AI at QX Labs and Unsiloed AI (YC F25).
@@ -714,7 +717,7 @@
 ||- [[concepts/llm-assisted-writing]] — LLM-Assisted Writing: authors use LLMs to draft/structure content, then apply human editing to restore personal voice and authenticity. Case study: Ibrahim Diallo.
 - [[concepts/llm-course-roadmap]] — メタ知識: Maxime LabonneのLLM Courseを既存Wiki概念にマッピングした知識マップ。カリキュラム構造を通してカバレッジとギャップを可視化。
 - [[concepts/llm-core]] — 大規模言語モデルのコアアーキテクチャと言語モデル基礎
-- [[concepts/llm-evaluation-harness]] — Frameworks and tools for systematically evaluating Large Language Models across standardized benchmarks and custom test suites.
+- [[concepts/llm-evaluation-harness]] — Industry-standard open-source framework for reproducible LLM evaluation (EleutherAI). 60+ benchmarks, 3 primitive request types (loglikelihood/perplexity/generation). Powers the Open LLM Leaderboard.
 - [[concepts/llm-memory-architecture]] — LLMメモリ設計。ai-agents、memory、architecture、knowledge-graphs
 - [[concepts/llm-training-coherence-evolution]] — How an LLM's coherence and usefulness improve as training progresses, with empirical analysis from Giles Thomas's "Writing an LLM from Scratch" series.
 - [[concepts/local-first-software]] — ユーザーのデバイスをデータの**第一権威コピー（primary authoritative copy）**とし、サーバーは同期・バックアップ・発見支援に限定するソフトウェア設計思想。
@@ -1376,7 +1379,7 @@
 - [[concepts/opcode-collective]] — > **TODO**: Enrich this page.
 - [[concepts/open-claw-ecosystem]] — > **TODO**: Enrich this page.
 - [[concepts/open-data]] — > **TODO**: Enrich this page.
-- [[concepts/open-llm-leaderboard]] — > **TODO**: Enrich this page.
+- [[concepts/open-llm-leaderboard]] — Hugging Face's central hub for ranking open-source LLMs via standardized benchmarks. Powered by lm-eval (EleutherAI). 4,500+ evaluation datasets.
 - [[concepts/open-llms]] — > **TODO**: Enrich this page.
 - [[concepts/open-science]] — > **TODO**: Enrich this page.
 - [[concepts/open-source-licensing]] — > **TODO**: Enrich this page.

@@ -1,3 +1,13 @@
+## [2026-05-04] llm-evaluation-harness + open-llm-leaderboard | Enriched from paper, slides, GitHub, and HF sources
+- **[[concepts/llm-evaluation-harness]]** — Completely rewritten: 3 primitive request types (loglikelihood/perplexity/generation), multi-choice normalization methods, supported backends (8), best practices from the "Lessons from the Trenches" paper, prompting sensitivity case study (Mistral-7B +4.4pp between styles). Raw sources: paper, Hailey Schoelkopf slides, GitHub README.
+- **[[concepts/open-llm-leaderboard]]** — Expanded from stub: team (Thomas Wolf, clefourrier, Nathan Habib), key resources (main leaderboard, results dataset, comparator, generation visualizer), v1/v2 versions, relationship to lm-eval.
+- **[[entities/eleutherai]]** — New entity page: grassroots research collective turned non-profit. Projects: GPT-Neo, Pythia, BLOOM, Llemma, lm-eval, The Pile.
+- **[[entities/hailey-schoelkopf]]** — New entity page: lm-eval maintainer, Pythia co-author (ICML 2023), Research Scientist at EleutherAI.
+- **[[entities/stella-biderman]]** — New entity page: Executive Director of EleutherAI, led GPT-Neo, Pythia, BLOOM, The Pile.
+- Raw articles saved: raw/papers/2024-05-23_2405.14782_lessons-from-the-trenches.md, raw/articles/2024-06-11_hailey-schoelkopf-lm-evaluation-deep-dive.md
+- New entities: 3 (eleutherai, hailey-schoelkopf, stella-biderman), Updated concepts: 2 (llm-evaluation-harness, open-llm-leaderboard)
+- Updated: wiki/index.md (+3 entities, +3 pages to count), wiki/log.md
+
 ## [2026-05-04] ai-patterns-for-glam | New concept page: AI Design Patterns for Information Professionals
 - **[[concepts/ai-patterns-for-glam|AI Design Patterns for Information Professionals (Boring AI)]]** — Created new concept page covering Daniel van Strien's WIP book on practical "boring AI" design patterns for GLAM and information professionals. Core philosophy: most impactful AI for information work is deliberately mundane (structured extraction, classification, metadata enrichment). Four-stage framework: Discovery → Design Patterns → Evaluation → Infrastructure. Pattern language approach inspired by Christopher Alexander (1977).
 - **[[entities/daniel-van-strien]]** — Updated: added book to Known for, Blog Posts table, and GLAM Sector section. Added sources and bumped updated date.
