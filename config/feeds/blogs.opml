@@ -89,6 +89,40 @@
       <outline type="rss" text="anildash.com" title="anildash.com" xmlUrl="https://anildash.com/feed.xml" htmlUrl="https://anildash.com" />
       <outline type="rss" text="michael.stapelberg.ch" title="michael.stapelberg.ch" xmlUrl="https://michael.stapelberg.ch/feed.xml" htmlUrl="https://michael.stapelberg.ch" />
       <outline type="rss" text="miguelgrinberg.com" title="miguelgrinberg.com" xmlUrl="https://blog.miguelgrinberg.com/feed" htmlUrl="https://miguelgrinberg.com" />
+      <outline type="rss" text="Daniel Lemire" title="Daniel Lemire" xmlUrl="https://lemire.me/blog/feed/" htmlUrl="https://lemire.me/blog/" />
+      <outline type="rss" text="Ash Vardanyan" title="Ash Vardanyan" xmlUrl="https://ashvardanian.com/feed.xml" htmlUrl="https://ashvardanian.com/archives/" />
+      <outline type="rss" text="Wojciech Muła (0x80)" title="Wojciech Muła (0x80)" xmlUrl="http://0x80.pl/notesen.rss" htmlUrl="http://0x80.pl/" />
+      <outline type="rss" text="Daniel Kutenin (danlark)" title="Daniel Kutenin (danlark)" xmlUrl="https://danlark.org/feed/" htmlUrl="https://danlark.org/" />
+      <outline type="rss" text="Alisa Sireneva (PurpleSyringa)" title="Alisa Sireneva (PurpleSyringa)" xmlUrl="https://purplesyringa.moe/blog/feed.rss" htmlUrl="https://purplesyringa.moe/blog/" />
+      <outline type="rss" text="Peter Kankowski (strchr)" title="Peter Kankowski (strchr)" xmlUrl="https://www.strchr.com/?feed=/" htmlUrl="https://www.strchr.com/" />
+      <outline type="rss" text="Fangrui Song (MaskRay)" title="Fangrui Song (MaskRay)" xmlUrl="https://maskray.me/atom.xml" htmlUrl="https://maskray.me/" />
+      <outline type="rss" text="Justine Tunney" title="Justine Tunney" xmlUrl="https://justine.lol/rss.xml" htmlUrl="https://justine.lol/" />
+      <outline type="rss" text="LLVM Blog" title="LLVM Blog" xmlUrl="https://blog.llvm.org/index.xml" htmlUrl="https://blog.llvm.org/" />
+      <outline type="rss" text="LWN.net" title="LWN.net" xmlUrl="https://lwn.net/headlines/rss" htmlUrl="https://lwn.net/" />
+      <outline type="rss" text="Kyle Kingsbury (Jepsen)" title="Kyle Kingsbury (Jepsen)" xmlUrl="https://jepsen.io/blog/feed.xml" htmlUrl="https://jepsen.io/blog" />
+      <outline type="rss" text="Database Architects" title="Database Architects" xmlUrl="https://databasearchitects.blogspot.com/feeds/posts/default" htmlUrl="https://databasearchitects.blogspot.com/" />
+      <outline type="rss" text="Mark Callaghan (smalldatum)" title="Mark Callaghan (smalldatum)" xmlUrl="https://smalldatum.blogspot.com/feeds/posts/default" htmlUrl="https://smalldatum.blogspot.com/" />
+      <outline type="rss" text="Marc Brooker" title="Marc Brooker" xmlUrl="https://brooker.co.za/blog/rss.xml" htmlUrl="https://brooker.co.za/blog/" />
+      <outline type="rss" text="Yann Collet (LZ4/Zstd)" title="Yann Collet (LZ4/Zstd)" xmlUrl="https://fastcompression.blogspot.com/feeds/posts/default" htmlUrl="https://fastcompression.blogspot.com/" />
+      <outline type="rss" text="Russ Cox (research.swtch)" title="Russ Cox (research.swtch)" xmlUrl="https://research.swtch.com/feed.atom" htmlUrl="https://research.swtch.com/" />
+      <outline type="rss" text="Kamila Szewczyk (iczelia)" title="Kamila Szewczyk (iczelia)" xmlUrl="https://iczelia.net/feed.xml" htmlUrl="https://iczelia.net/posts/" />
+      <outline type="rss" text="Charles Bloom" title="Charles Bloom" xmlUrl="https://cbloomrants.blogspot.com/feeds/posts/default" htmlUrl="https://cbloomrants.blogspot.com/" />
+      <outline type="rss" text="Brendan Gregg" title="Brendan Gregg" xmlUrl="https://www.brendangregg.com/blog/rss.xml" htmlUrl="https://www.brendangregg.com/blog/index.html" />
+      <outline type="rss" text="Dan Luu" title="Dan Luu" xmlUrl="https://danluu.com/atom.xml" htmlUrl="https://danluu.com/" />
+      <outline type="rss" text="Nikita Lapkov (laplab)" title="Nikita Lapkov (laplab)" xmlUrl="https://laplab.me/posts/index.xml" htmlUrl="https://laplab.me/posts/" />
+      <outline type="rss" text="Ben Boyter" title="Ben Boyter" xmlUrl="https://boyter.org/index.xml" htmlUrl="https://boyter.org/" />
+      <outline type="rss" text="Andrej Karpathy" title="Andrej Karpathy" xmlUrl="https://karpathy.github.io/feed.xml" htmlUrl="https://karpathy.github.io/" />
+      <outline type="rss" text="Jay Mody" title="Jay Mody" xmlUrl="https://jaykmody.com/feed.xml" htmlUrl="https://jaykmody.com/" />
+      <outline type="rss" text="Bartosz Ciechanowski" title="Bartosz Ciechanowski" xmlUrl="https://ciechanow.ski/archives/atom.xml" htmlUrl="https://ciechanow.ski/archives/" />
+      <outline type="rss" text="Fabien Sanglard" title="Fabien Sanglard" xmlUrl="https://fabiensanglard.net/rss.xml" htmlUrl="https://fabiensanglard.net/" />
+      <outline type="rss" text="Julia Evans (jvns)" title="Julia Evans (jvns)" xmlUrl="https://jvns.ca/atom.xml" htmlUrl="https://jvns.ca/" />
+      <outline type="rss" text="Malte Skarupke (Probably Dance)" title="Malte Skarupke (Probably Dance)" xmlUrl="https://probablydance.com/feed/" htmlUrl="https://probablydance.com/" />
+      <outline type="rss" text="Preshing" title="Preshing" xmlUrl="https://preshing.com/feed" htmlUrl="https://preshing.com/" />
+      <outline type="rss" text="Marek Vavruša (idea.popcount)" title="Marek Vavruša (idea.popcount)" xmlUrl="https://idea.popcount.org/rss.xml" htmlUrl="https://idea.popcount.org/" />
+      <outline type="rss" text="V8 Blog" title="V8 Blog" xmlUrl="https://v8.dev/features.atom" htmlUrl="https://v8.dev/blog" />
+      <outline type="rss" text="Matt Mahoney" title="Matt Mahoney" xmlUrl="https://mattmahoney.net/dc/feed.xml" htmlUrl="https://mattmahoney.net/dc/" />
     </outline>
-  <outline type="rss" text="hyperbola :: blog" title="hyperbola :: blog" xmlUrl="https://hyperbo.la/w/feed.xml" htmlUrl="https://hyperbo.la/" /></body>
+    <outline type="rss" text="hyperbola :: blog" title="hyperbola :: blog" xmlUrl="https://hyperbo.la/w/feed.xml" htmlUrl="https://hyperbo.la/" />
+    <outline type="rss" text="LMSYS Org Blog" title="LMSYS Org Blog" xmlUrl="https://www.lmsys.org/blog/feed.xml" htmlUrl="https://www.lmsys.org/blog/" />
+  </body>
 </opml>
