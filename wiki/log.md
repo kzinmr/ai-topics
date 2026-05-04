@@ -1,11 +1,12 @@
 ## [2026-05-04] Accelerate — Distributed training launcher + DeepSpeed concept page
 
-- **[[concepts/accelerate]]** — Created concept page: Hugging Face Accelerate as unified distributed training abstraction. FSDP vs DeepSpeed configuration mapping (6 dimensions), memory/precision differences (fp32 upcast), plugin system (FullyShardedDataParallelPlugin, DeepSpeedPlugin), decision guide.
+- **[[concepts/accelerate]]** — Created concept page: Hugging Face Accelerate as unified distributed training abstraction. FSDP vs DeepSpeed configuration mapping (6 dimensions), memory/precision differences (fp32 upcast), plugin system (FullyShardedDataParallelPlugin, DeepSpeedPlugin), decision guide. Lead developer attribution added: [[entities/the-zach-mueller]].
 - **[[concepts/deepspeed]]** — Created concept page: Microsoft DeepSpeed (ZeRO 1/2/3/3-offload/Infinity, 3D-Parallelism, MoE, NVMe offload). Notable models (BLOOM, MT-530B, GPT-NeoX). Accelerate integration mapping. Fills existing wikilink from pytorch-fsdp.
 - **[[concepts/pytorch-fsdp]]** — Enriched: Added Accelerate cross-reference to Related Concepts.
+- **[[entities/zach-mueller]]** — Enriched: Added Cross-References section (accelerate, pytorch-fsdp, deepspeed), updated sources with Accelerate guide, bumped update date. Linked from [[concepts/accelerate]] as lead developer.
 - **raw/articles/2026-05-04_accelerate-fsdp-deepspeed-guide.md** — Saved raw article
-- Updated: wiki/index.md (+2 concepts, 808 pages, 417 concepts), wiki/log.md
-- Sources: hf.co/docs/accelerate, pytorch.org FSDP2 tutorial, deepspeed.ai
+- Updated: wiki/index.md (zach-mueller→the-zach-mueller, accelerate description), wiki/log.md
+- Sources: muellerzr.github.io, hf.co/docs/accelerate
 
 ## [2026-05-04] Mobius Labs entity page — Dropbox acquisition, HQQ, Aana, low-bit inference
 

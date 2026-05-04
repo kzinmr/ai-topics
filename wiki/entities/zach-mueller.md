@@ -3,7 +3,7 @@ title: Zach Mueller
 type: entity
 handle: "@TheZachMueller"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-04
 tags:
   - person
   - ai
@@ -13,7 +13,10 @@ tags:
   - pytorch
   - optimization
   - open-source
-sources: []
+sources:
+  - raw/articles/2026-05-04_accelerate-fsdp-deepspeed-guide.md
+  - https://muellerzr.github.io/
+  - https://muellerzr.github.io/blog/
 ---
 
 
@@ -106,6 +109,12 @@ Mueller's Accelerate work underpins training infrastructure used by thousands of
 | 2024 | [PyTorch, Gradient Accumulation, and the dreaded drop in speed](https://muellerzr.github.io/blog/gradient_accumulation.html) | Foundational post identifying no_sync optimization patterns that yield 2x speedup on multi-node training |
 | Oct 2022 | [From PyTorch DDP to Accelerate to Trainer](https://huggingface.co/blog/pytorch-ddp-accelerate-transformers) | Comprehensive tutorial walking through all three levels of distributed training abstraction |
 | Sep 2022 | [How Accelerate runs very large models thanks to PyTorch](https://huggingface.co/blog) | Technical deep-dive into Accelerate's large model handling capabilities |
+
+## Cross-References
+
+- [[concepts/accelerate]] — Lead developer of Hugging Face's distributed training launcher
+- [[concepts/pytorch-fsdp]] — FSDP is one of the backends Accelerate supports
+- [[concepts/deepspeed]] — DeepSpeed is the alternative backend Accelerate abstracts over
 
 ## Related People
 

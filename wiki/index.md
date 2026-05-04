@@ -345,7 +345,7 @@
 - [[entities/yann-lecun]] — **フルネーム** | Yann André LeCun |
 - [[entities/yeachan-heo]] — Creator of **Oh-My-Codex (OmX)** workflow layer for Codex CLI and **Oh-My-Claudecode (OMC)**. Algorithmic trader in Seoul. Primary collaborator on **[[claw-code]]** Rust implementation.
 - [[entities/ysymyth]] — YSYMYTH（スケルトンページ）
-- [[entities/zach-mueller]] — **X** | @TheZachMueller |
+- [[entities/zach-mueller]] — **Zach Mueller** (@TheZachMueller, muellerzr). Lead developer of Hugging Face Accelerate. ML Engineer at 🤗. fastai educator, OSS author (AdaptNLP, fastdebug). Distributed training infrastructure expert.
 - [[entities/zach-tratar]] — AI @ Notion. Founded Embra (acquired 2026). Argues for unified AI context apps over vertical SaaS.
 - [[entities/zakirullin]] — Artem Zakirullin — Software Architect, author of "Cognitive load is what matters" (12K+ GitHub stars), a framework on minimizing cognitive complexity in software design
 - [[entities/zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.
@@ -423,7 +423,7 @@
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
 ## Concepts (417 pages)
 
-- [[concepts/accelerate]] — Hugging Face Accelerate: zero-code-change distributed training launcher. Unified abstraction layer making FSDP and DeepSpeed interchangeable via CLI or Python plugins.
+|- [[concepts/accelerate]] — Hugging Face Accelerate: zero-code-change distributed training launcher. Created/led by Zach Mueller (@TheZachMueller). Unified abstraction layer making FSDP and DeepSpeed interchangeable via CLI or Python plugins.
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.

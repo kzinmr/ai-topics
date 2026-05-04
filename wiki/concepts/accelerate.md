@@ -23,6 +23,7 @@ related:
   - concepts/fine-tuning/pytorch-fsdp
   - concepts/deepspeed
   - concepts/ai-infrastructure-engineering/distributed-training
+  - entities/zach-mueller
 sources:
   - raw/articles/2026-05-04_accelerate-fsdp-deepspeed-guide.md
   - https://huggingface.co/docs/accelerate
@@ -32,6 +33,8 @@ sources:
 # Hugging Face Accelerate
 
 **Accelerate** is Hugging Face's unified distributed training library that enables the same PyTorch training code to run on any hardware configuration — single GPU, multi-GPU, CPU, or TPU — with zero code changes. It serves as the **abstraction layer that makes [[concepts/pytorch-fsdp]] and [[concepts/deepspeed]] interchangeable**, allowing practitioners to swap between them via a single CLI flag.
+
+Created and led by **[[entities/zach-mueller|Zach Mueller]]**, a Machine Learning Software Engineer at Hugging Face, Accelerate is the backbone of Hugging Face's training stack — used by Transformers Trainer, TRL SFTTrainer, and PEFT under the hood.
 
 > "Write your training loop once, run it anywhere." — Hugging Face Accelerate motto
 
