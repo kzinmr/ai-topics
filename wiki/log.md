@@ -1,3 +1,12 @@
+## [2026-05-04] Modelcrafting — Letting AI Posttrain AI
+
+- **[[concepts/modelcrafting]]** — Created concept page: paradigm of AI agents autonomously shaping and improving other AI models. Covers research intuition gap, 6 failure modes (naive SFT, no sanity checks, no curriculum learning, eval contamination, commitment bias, spend inefficiency), tokenizer workaround case study.
+- **[[entities/thoughtful-lab]]** — Created entity page: AI research lab behind the "Letting AI Posttrain AI" experiment (Apr 2026). Tested Claude 4.6 Opus and GPT-5.4 on autonomous post-training of Qwen3-8B for the Frog Placement Game.
+- **[[concepts/post-training]]** — Enriched from stub to full page: added overview, key techniques table, automated post-training research section (Thoughtful Lab experiment), known challenges section, and cross-references.
+- **raw/articles/2026-04_thoughtfullab-letting-ai-posttrain-ai.md** — Saved raw article
+- Updated: wiki/index.md (800 total pages), wiki/entities/_index.md, wiki/log.md
+- Source: [Letting AI Posttrain AI - Thoughtful Lab](https://www.thoughtfullab.com/letting-ai-posttrain-ai.html)
+
 ## [2026-05-04] Multi-Teacher On-Policy Distillation (MOPD) — New concept from Notion article
 
 - **[[concepts/multi-teacher-on-policy-distillation]]** — Created concept page: MOPD is a post-training primitive that solves the see-saw problem via reverse KL distillation from multiple teachers within a GRPO-like loop. Covers IcePop, full-vocabulary distillation, WAL-based fault-tolerant rollouts, and comparisons across MiMo-V2-Flash, GLM-5, Nemotron-Cascade 2, and DeepSeek-V4.
