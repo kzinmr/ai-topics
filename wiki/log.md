@@ -1,3 +1,12 @@
+## [2026-05-04] Mobius Labs entity page — Dropbox acquisition, HQQ, Aana, low-bit inference
+
+- **[[entities/mobius-labs]]** — Created entity page: AI research company (HQQ quantization, GemLite Triton kernels, Aana multimodal SDK). Acquired by Dropbox ~2025, powers Dash multimodal search. Covers FSDP/QLoRA collaboration (Answer.AI, Tim Dettmers), FP4 quality recovery, metadata offloading, low-bit inference survey. 3 raw articles ingested.
+- **raw/articles/2025_mobius-labs-blog-summary.md** — Saved raw article
+- **raw/articles/2025-05-04_dropbox-mobius-labs-aana-integration.md** — Saved raw article
+- **raw/articles/2026-05-04_dropbox-low-bit-inference.md** — Saved raw article
+- Updated: wiki/index.md (+1 entity, 806 pages), wiki/log.md
+- Sources: blog.mobiuslabs.com, dropbox.tech
+
 ## [2026-05-04] vLLM spec-decode blog — Speculative decoding wiki enrichment
 
 - **[[concepts/speculative-decoding]]** — Enriched: Added vLLM Implementation section (3 supported methods: Draft Model, Prompt Lookup/N-gram, Medusa/Eagle/MLPSpeculator), code examples, critical QPS sensitivity insight (2.8x speedup at low QPS, 1.4-1.8x slowdown at high QPS), Dynamic Speculative Decoding roadmap. Sources updated.
