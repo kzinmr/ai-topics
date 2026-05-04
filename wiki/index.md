@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-04 | Total pages: 829 | Full entries: 787 | Stubs: 613 |
+> Last updated: 2026-05-04 | Total pages: 830 | Full entries: 788 | Stubs: 613 |
 
 ## Entities (392 pages)
 
@@ -475,6 +475,7 @@
 - [[concepts/agentic-design-patterns]] — A system-theoretic framework for engineering robust AI agents, deconstructing them into 5 functional subsystems and mapping them to a catalogue of 12 reusable Agentic Design Patterns (ADPs).
 - [[concepts/agentic-engineering]] — Moved to concepts/harness-engineering/agentic-engineering.
 - [[concepts/ai-agent-engineering]] — Platform architecture for agent execution; Anthropic Managed Agents, OpenAI Symphony, agentic literacy
+- [[concepts/ai-api-abuse]] — Malicious exploitation of AI model APIs through jailbreaking, identity spoofing, and reasoning trace extraction. Distinct from legitimate model distillation. Term coined by Nathan Lambert in "The Distillation Panic."
 - [[concepts/ai-coding-workflows]] — Secure AI coding patterns: Docker container isolation, credential management, Multi-LLM Role Separation, cost comparison
 - [[concepts/agentic-manual-testing]] — Moved to concepts/harness-engineering/agentic-workflows/agentic-manual-testing.md
 - [[concepts/agentic-pbt]] — Anthropic + Hypothesis共同研究（NeurIPS 2025 DL4C Workshop）。Claude Codeエージェントが型注釈、docstring、関数名、コメントからコードの不変条件（properties）を自律的に推論し、HypothesisフレームワークでPBTを生成・実行する。
@@ -593,6 +594,7 @@
 - [[concepts/direct-prompting-philosophy]] — **Direct Prompting Philosophy** (or "Just Talk To It") is an anti-overengineering approach to agentic development. It rejects complex orchestration layers (RAG pipelines, subagent frameworks, custo...
 - [[concepts/dspy-rlm]] — Recursive Language Model — 大規模コンテキストをsandobx Python REPLでプログラム的に探索するDSPyモジュール
 - [[concepts/dspy]] — **DSPy** (Declarative Self-improving Python for LMs, "dee-spai")は、Stanford NLP Group（Omar Khattab, Arnav Singhviら）が開発した**宣言的LMプログラミングフレームワーク**。
+- [[concepts/dynamic-software]] — The paradigm shift from static (deterministic, hard-coded) to dynamic (model-driven, non-deterministic, agentic) software. Breaks 50-year assumptions about determinism, state/sessions, and observability. Calls for a new runtime akin to what Django/Vercel did for static web apps. (Ashpreet Bedi, Apr 2026)
 - [[concepts/ecs-fargate-scaling]] — AWS ECS FargateをLambdaのようにスケーリングさせる実験的検証。SQSワークロードでのバーストハンドリング性能を最適化する。
 - [[concepts/elastic-ep]] — **Type** | Inference Infrastructure / Fault Tolerance |
 - [[concepts/elixir-beam-agent-orchestration]] — Elixir/BEAM（Erlang仮想マシン）をAIエージェントオーケストレーションに活用するパターン。concepts/openai-symphony のRyan Lopopoloが採用したアプローチ。

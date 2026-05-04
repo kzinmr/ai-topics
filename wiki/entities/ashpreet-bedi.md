@@ -2,7 +2,7 @@
 title: "Ashpreet Bedi"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-10
+updated: 2026-05-04
 type: entity
 ---
 
@@ -28,7 +28,7 @@ Ashpreet Bedi is a software engineer and entrepreneur with over 15 years of expe
 
 Bedi's career spans some of the most data-intensive companies in tech: **Cisco** (data engineering and ML, 2013–2014), **Facebook & Instagram** (data infrastructure, community safety models, virality algorithms, 2014–2017), and **Airbnb** (data infrastructure, bot detection, search, supply/demand models, 2017–2022). This background in production systems at massive scale directly informs his approach to agentic software engineering.
 
-His most significant conceptual contribution is the **Five Levels of Agentic Software** framework, which provides a progressive model for building reliable AI agents — from simple tool-using LLMs to fully autonomous, self-learning multi-agent systems.
+His most significant conceptual contribution is the **Five Levels of Agentic Software** framework, which provides a progressive model for building reliable AI agents — from simple tool-using LLMs to fully autonomous, self-learning multi-agent systems. In April 2026, he published **"Dynamic Software"**, articulating the paradigm shift from static (deterministic, hard-coded) to dynamic (model-driven, non-deterministic) software — a thesis that reframes the entire agentic software movement as the emergence of a new software paradigm requiring new infrastructure and runtimes.
 
 ## Timeline
 
@@ -50,6 +50,7 @@ His most significant conceptual contribution is the **Five Levels of Agentic Sof
 | Feb 2026 | Published "The Programming Language for Agentic Software" |
 | Mar 2026 | Published "Building, running, and scaling agents as production services" |
 | Apr 2026 | Agno reached General Availability |
+|| Apr 2026 | Published "Dynamic Software: The Shift from Static to Agentic" |
 
 ## Core Ideas
 
@@ -130,6 +131,8 @@ Many agentic applications take 30 minutes to 3 hours to complete, spawning thous
 
 > "We refused to claim 'production-ready' unless genuinely battle-tested." — Agno GA Announcement
 
+> "Static software is a recording... Dynamic Software is a live orchestra. The model is the maestro. The tools are the instruments. The control flow is the performance, not the recording." — Dynamic Software (Apr 2026)
+
 ## Projects
 
 | Project | Description | Status |
@@ -164,5 +167,6 @@ Many agentic applications take 30 minutes to 3 hours to complete, spawning thous
 - [Agno: General Availability Announcement](https://www.agno.com/blog/ga)
 - [The 5 Levels of Agentic Software](https://www.agno.com/blog/the-5-levels-of-agentic-software-a-progressive-framework-for-building-reliable-ai-agents)
 - [Learning Machines: Why AI Memory Hasn't Been Solved (Yet)](https://www.ashpreetbedi.com/articles/learning-machines-v0)
+- [Dynamic Software: The Shift from Static to Agentic](https://www.ashpreetbedi.com/dynamic-software)
 - [Ashpreet Bedi — Personal Website](https://www.ashpreetbedi.com/)
 - [Cohorte: Agno Practical Guide](https://www.cohorte.co/blog/agno-formerly-phidata-the-practical-guide-to-production-ready-memory-rich-agents-that-actually-ship)

@@ -1,3 +1,10 @@
+## [2026-05-04] dynamic-software | New concept page + Ashpreet Bedi article + entity update
+
+- **[[concepts/dynamic-software]]** — Created concept page: The paradigm shift from static (deterministic, hard-coded control flow) to dynamic (model-driven, non-deterministic, agentic) software. Breaks 50-year assumptions about determinism, state/time/sessions, and observability. 80% of agents fail because teams spend 6+ months on infrastructure instead of the agent. Calls for a new 'runtime' akin to what Django/Express/Vercel did for static software. Ashpreet Bedi's "live orchestra" metaphor.
+- **raw/articles/** — Saved raw article: `2026-05-02_ashpreetbedi_dynamic-software.md` (ashpreetbedi.com/dynamic-software, Apr 30, 2026)
+- **[[entities/ashpreet-bedi]]** — Updated: Added Dynamic Software article to timeline and Key Quotes. Expanded Overview to reflect his dynamic software thesis and its relationship to the Five Levels of Agentic Software framework.
+- Updated: wiki/concepts/dynamic-software.md, wiki/index.md (+1 concept, 829→830), wiki/entities/ashpreet-bedi.md, wiki/log.md
+
 ## [2026-05-04] gm8xx8 | Enriched skeleton entity page (daily cron job)
 - **[[entities/gm8xx8]]** — Enriched from X/Twitter profile data, HuggingFace, and live tweet scraping:
   - Updated HF follower count: 77K+ → **89,826**
