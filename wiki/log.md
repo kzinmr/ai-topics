@@ -1,3 +1,12 @@
+## [2026-05-04] Answer.AI benchmarks — FSDP+Q-LoRA performance enrichment
+
+- **[[concepts/fsdp-qlora]]** — Enriched: Added Answer.AI official benchmarks table (Llama-2 70B, 5 hardware tiers, $2-5 cost range), hardware bottleneck analysis (PCIe/NVLink, CPU RAM saturation), progressive optimization guide (6-step DDP→Activation Offload), DDP vs FSDP decision rule.
+- **[[concepts/pytorch-fsdp]]** — Enriched: Added DDP vs FSDP decision guidance, progressive optimization strategy table (6 memory-saving steps), sources updated with Answer.AI benchmarks.
+- **[[concepts/qlora]]** — Enriched: Added speed advantage insight (QLoRA can be faster than LoRA via larger batch sizes), CPU offloading performance paradox.
+- **raw/articles/2024-03_answerai-fsdp-qlora-benchmarks.md** — Saved raw article
+- Updated: wiki/log.md
+- Source: https://github.com/AnswerDotAI/fsdp_qlora/blob/main/benchmarks_03_2024.md
+
 ## [2026-05-04] Phil Schmid FSDP+Q-LoRA guide — Full wiki ingest (4 pages)
 
 - **[[entities/phil-schmid]]** — Created entity page: Philipp (Phil) Schmid, Staff Engineer (AI DevX/DevRel) at Google DeepMind, ex-Hugging Face Technical Lead. Key contributions: FSDP+Q-LoRA, Inference Endpoints, Zephyr/SmolLM/StarCoder partnerships, revenue $0→$100M.

@@ -19,6 +19,7 @@ related:
   - concepts/fine-tuning/peft-lora-qlora
   - entities/phil-schmid
 sources:
+  - raw/articles/2024-03_answerai-fsdp-qlora-benchmarks.md
   - raw/articles/2026-05-04_phil-schmid-fsdp-qlora-llama3.md
   - https://arxiv.org/abs/2305.14314
 ---
@@ -105,6 +106,18 @@ Q-LoRA's architecture consists of two components:
 | Q-LoRA + Double Quant | ~35 GB | ~0.2B | ~0.4 GB | ~36 GB |
 
 > **Practical result**: Q-LoRA enables fine-tuning a **70B parameter model on a single 48GB GPU** (e.g., NVIDIA A6000, RTX 6000 Ada).
+
+### Speed Advantage via Larger Batches
+
+Answer.AI's benchmarks confirm a counterintuitive insight: **QLoRA can be faster than LoRA despite quantization overhead**, because its smaller memory footprint allows larger batch sizes.
+
+> "QLoRA enables a larger max batch size, giving it an extra speed advantage over the standard LoRA version... by using less memory for model weights."
+
+This means the 4× memory reduction from NF4 quantization doesn't just save VRAM — it translates to higher throughput when batch-size-limited.
+
+### CPU Offloading Performance Paradox
+
+On memory-constrained hardware (e.g., dual 3090, 24GB each), enabling CPU offloading can actually **increase** training speed because it allows significantly larger batch sizes. The PCIe transfer overhead is offset by the higher GPU utilization from processing more samples per step.
 
 ---
 

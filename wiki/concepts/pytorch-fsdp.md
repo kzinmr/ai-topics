@@ -16,7 +16,9 @@ related:
   - concepts/deepspeed
   - concepts/peft-fine-tuning
 sources:
+  - raw/articles/2024-03_answerai-fsdp-qlora-benchmarks.md
   - raw/articles/2026-05-04_phil-schmid-fsdp-qlora-llama3.md
+  - https://github.com/AnswerDotAI/fsdp_qlora
 ---
 
 # PyTorch FSDP (Fully Sharded Data Parallel)
@@ -220,13 +222,34 @@ Axolotl provides a YAML-based FSDP configuration (see [[concepts/fine-tuning/pyt
 ## Common Issues & Troubleshooting
 
 | Problem | Likely Cause | Solution |
-|---|---|---|
+|:---|---|---|---|
 | OOM during forward | Batch size too large; activation memory peaks | Reduce batch size, enable activation checkpointing |
 | OOM during backward | Gradient accumulation buffers | Gradient accumulation, CPU offloading |
 | Slow inter-node training | Low NCCL bandwidth | Use `hybrid_shard` to minimize inter-node all-gathers |
 | State dict save OOM | `FULL_STATE_DICT` on large model | Use `SHARDED_STATE_DICT` (sharded checkpoint) |
 | CUDA out of memory on CPU offload | CPU RAM exhausted under double-buffering | Set `FSDP_CPU_RAM_EFFICIENT_LOADING=1` |
 | RuntimeError: unshard expected | Wrong `auto_wrap_policy` for model architecture | Match `transformer_layer_cls_to_wrap` to actual model class |
+
+## DDP vs FSDP: When to Use Which
+
+Answer.AI's benchmark research establishes a clear guideline:
+
+> **If the model + QLoRA fits on a single GPU, use Distributed Data Parallel (DDP) instead of FSDP.** FSDP's all-gather communication overhead for shard reconstruction exceeds its benefits when the model already fits in GPU memory. QLoRA's 4-bit quantization reduces memory footprint enough that many models (7B, 13B) that previously required FSDP now work with DDP on consumer GPUs.
+
+### Progressive Optimization Strategy
+
+Answer.AI recommends escalating memory-saving techniques step by step — never add more than needed:
+
+| Step | Configuration | Method | When to Use |
+|:-----|:-------------|:-------|:------------|
+| 1 | **Vanilla DDP** | Batch size 1, no memory options | Starting point (model fits single GPU) |
+| 2 | **Gradient Checkpointing** | Recompute activations during backward | First memory bottleneck |
+| 3 | **SHARD_GRAD_OP (ZeRO-2)** | Shard gradients + optimizer only | Parameters fit GPU, optimizer states OOM |
+| 4 | **FULL_SHARD (ZeRO-3)** | Shard params + gradients + optimizer | Model doesn't fit single-GPU memory |
+| 5 | **CPU Offloading** | Move shards to CPU RAM when inactive | Extreme VRAM constraints (24GB cards for 70B) |
+| 6 | **Activation Offloading** | Move intermediate activations to CPU RAM | Last resort (single 16GB GPU) |
+
+> **Key strategy:** Once stable at batch size 1, try increasing batch size. Moving to a heavier memory-saving step may be faster overall if it enables a significantly larger effective batch size.
 
 ---
 

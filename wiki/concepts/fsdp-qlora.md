@@ -19,7 +19,9 @@ related:
   - concepts/peft-fine-tuning
   - entities/phil-schmid
 sources:
+  - raw/articles/2024-03_answerai-fsdp-qlora-benchmarks.md
   - raw/articles/2026-05-04_phil-schmid-fsdp-qlora-llama3.md
+  - https://github.com/AnswerDotAI/fsdp_qlora
   - https://www.philschmid.de/fsdp-qlora-llama3
 ---
 
@@ -50,6 +52,26 @@ The technique offers multiple tiers of hardware accessibility:
 For Llama 3 70B, 3-epoch training:
 - **4× A10G (g5.12xlarge):** ~$5.67/h × 45h = **~$255**
 - **4× H100:** ~$1.25h (p95) = **~$25–50**
+
+### Answer.AI Official Benchmarks (70B Model)
+
+Answer.AI's fsdp_qlora repo provides real benchmarks for Llama-2 70B training (1,024 samples, context length 2048, effective batch size 32):
+
+| Accelerator | GPUs | CPU Offload | Time (s) | Ballpark Cost |
+| :--- | :---: | :---: | :---: | :--- |
+| **A5000 24GB** | 2 | True | 9,688 | $2.37 – $4.14 |
+| **A5000 24GB** | 8 | False | 2,613 | $2.55 – $4.47 |
+| **A6000 Ada 48GB** | 2 | False | 5,867 | $3.72 – $5.22 |
+| **A100 40GB SXM** | 4 | False | 1,266 | $2.53 – $2.90 |
+| **H100 80GB SXM** | 4 | False | 667 | $3.48 – $3.53 |
+
+**Key Finding:** Total cost to train 70B remains surprisingly consistent ($2–5) across all hardware tiers. Upper hardware (H100) is 14.5× faster but costs about the same per-run. The real ROI comes from existing hardware — using what you already own is more cost-effective despite longer wall time.
+
+### Hardware Bottlenecks
+
+- **Interconnect Speed:** On machines with slow PCIe lanes (older motherboards), GPU ↔ GPU data transfer overhead can outweigh the benefits of quantization-based sharding.
+- **CPU RAM Saturation:** Training a 70B model can saturate 128GB of CPU RAM during initialization. A swapfile (e.g., 10GB) may be necessary to prevent crashes.
+- **PCIe vs. NVLink:** Dual 3090 setups benefit greatly from NVLink. Dual 4090 setups require a workstation motherboard with **full x16 PCIe v4 lanes** to minimize FSDP overhead.
 
 ## Technical Architecture
 
@@ -119,6 +141,25 @@ model = AutoPeftModelForCausalLM.from_pretrained(
     device_map="auto"
 )
 ```
+
+## Practical Optimization Guide
+
+Answer.AI recommends a progressive memory-savings approach — start simple and escalate only when needed:
+
+| Step | Configuration | Method | When to Use |
+|:-----|:-------------|:-------|:------------|
+| 1 | **Vanilla** | DDP, batch size 1, no memory options | Starting point (model fits single GPU) |
+| 2 | **Gradient Checkpointing** | Recompute activations during backward pass | First memory bottleneck |
+| 3 | **SHARD_GRAD_OP** | FSDP ZeRO-2: shard gradients + optimizer only | Parameters still fit in GPU but optim states OOM |
+| 4 | **FULL_SHARD** | FSDP ZeRO-3: shard params + gradients + optim | Model doesn't fit in single-GPU memory |
+| 5 | **CPU Offloading** | Move shards to CPU RAM when inactive | Extreme VRAM constraints (e.g., 24GB cards for 70B) |
+| 6 | **Activation Offloading** | Move intermediate activations to CPU RAM | Last resort (single 16GB GPU) |
+
+> **Key strategy:** Once stable at batch size 1, try increasing batch size. If it OOMs, moving to the next "heavier" memory-saving step may be faster overall if it enables a significantly larger batch size.
+
+### DDP vs FSDP Decision Rule
+
+> **If model fits on a single GPU, use DDP (not FSDP).** FSDP's all-gather communication overhead exceeds its benefits when the model already fits in GPU memory. QLoRA's 4-bit quantization already reduces memory footprint enough that many models that previously required FSDP (e.g., 7B) now fit on single GPUs with DDP.
 
 ## Comparison with Alternatives
 
