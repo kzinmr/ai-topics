@@ -1,3 +1,11 @@
+## [2026-05-04] vLLM spec-decode blog — Speculative decoding wiki enrichment
+
+- **[[concepts/speculative-decoding]]** — Enriched: Added vLLM Implementation section (3 supported methods: Draft Model, Prompt Lookup/N-gram, Medusa/Eagle/MLPSpeculator), code examples, critical QPS sensitivity insight (2.8x speedup at low QPS, 1.4-1.8x slowdown at high QPS), Dynamic Speculative Decoding roadmap. Sources updated.
+- **[[concepts/inference/vllm]]** — Enriched: Added Speculative Decoding in vLLM section with methods table and configuration examples, linking to full concept page.
+- **raw/articles/2025-10-09_vllm-speculative-decoding-blog.md** — Saved raw article
+- Updated: wiki/log.md
+- Source: https://vllm.ai/blog/spec-decode
+
 ## [2026-05-04] Answer.AI benchmarks — FSDP+Q-LoRA performance enrichment
 
 - **[[concepts/fsdp-qlora]]** — Enriched: Added Answer.AI official benchmarks table (Llama-2 70B, 5 hardware tiers, $2-5 cost range), hardware bottleneck analysis (PCIe/NVLink, CPU RAM saturation), progressive optimization guide (6-step DDP→Activation Offload), DDP vs FSDP decision rule.

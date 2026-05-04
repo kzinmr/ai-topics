@@ -6,9 +6,11 @@ type: concept
 tags: [inference, optimization, technique, architecture]
 aliases: [speculative-sampling, assisted-generation, drafter-verifier]
 sources:
+  - raw/articles/2025-10-09_vllm-speculative-decoding-blog.md
   - raw/articles/2023-02-08_jaymody-speculative-sampling.md
   - raw/articles/crawl-2026-04-18-speculative-decoding.md
   - raw/articles/2026-04-28_fireworks-ai-open-weight-models-sed.md
+  - https://vllm.ai/blog/spec-decode
 ---
 
 # Speculative Decoding
@@ -97,6 +99,61 @@ A speculator trained on the same distribution as the target model achieves accep
 
 ### Relevance for Fine-Tuned Models
 For production deployments where models are fine-tuned on proprietary data, generic speculative decoding often underperforms because the draft model was trained on a different distribution. Custom speculators solve this mismatch. See [[entities/fireworks-ai]] and [[concepts/reinforcement-fine-tuning]].
+
+## vLLM Implementation
+
+vLLM is the most widely-deployed production serving framework for speculative decoding, supporting three methods:
+
+### 1. Draft Model-Based
+Uses a separate smaller model (e.g., Llama 68M) to propose tokens for a large model (e.g., Llama 70B).
+- **Requirement:** Both models must share the same vocabulary (problematic for Llama 3's unique tokenizer)
+- **Memory:** Draft model can run on fewer GPUs via `speculative_draft_tensor_parallel_size`
+- **Configuration:**
+  ```python
+  llm = LLM(
+      model="facebook/opt-6.7b",
+      speculative_model="facebook/opt-125m",
+      num_speculative_tokens=5,
+  )
+  ```
+
+### 2. Prompt Lookup Decoding (N-gram Matching)
+Matches repeating n-gram patterns between the prompt and generation — zero model overhead.
+- **Best for:** Summarization, document-based Q&A (high input-output overlap)
+- **Configuration:**
+  ```python
+  llm = LLM(
+      model="facebook/opt-6.7b",
+      speculative_model="[ngram]",
+      num_speculative_tokens=5,
+      ngram_prompt_lookup_max=4,
+      ngram_prompt_lookup_min=1,
+  )
+  ```
+
+### 3. Medusa / Eagle / MLPSpeculator (Multi-Head)
+Adds specialized prediction heads to the target model's hidden states, predicting multiple future tokens in parallel.
+- **Benefit:** No separate draft model or vocabulary compatibility needed
+- **Trade-off:** Requires training additional heads per target model
+
+### Critical Performance Insight: QPS Sensitivity
+
+vLLM's benchmarks reveal that **speculative decoding is net-positive only at low QPS** (latency-bound workloads):
+
+| Scenario | Dataset | Speedup |
+|:---|---:|:---:|
+| **Low QPS (QPS=1)** | ShareGPT (Draft Model) | **1.5x** |
+| **Low QPS (QPS=1)** | CNN/DailyMail (N-gram) | **2.8x** |
+| **High QPS** | Various | **1.4x – 1.8x Slowdown** |
+
+In compute-bound (high-QPS) environments, the extra compute for drafting and verification becomes a bottleneck — making speculative decoding **slower** than not using it. This is a critical deployment consideration.
+
+### Future: Dynamic Speculative Decoding
+
+vLLM's upcoming **Dynamic Speculative Decoding** addresses the high-QPS regression by:
+- Automatically adjusting the number of speculative tokens based on real-time system load
+- Shortening proposals when the system is busy or draft accuracy is low
+- Ensuring speculative decoding is always a net benefit regardless of traffic patterns
 - [[concepts/local-llm]] — Inference optimization techniques
 
 ## Sources

@@ -16,7 +16,30 @@ sources:
 
 vLLM is a high-throughput LLM serving engine with PagedAttention optimization, developed by UC Berkeley and maintained by the vLLM project. As of April 2026, the v0.19.0 release (448 commits, 197 contributors) represents a major advancement in production LLM serving.
 
-## Key Capabilities
+## Speculative Decoding in vLLM
+
+vLLM is the flagship production implementation of [[concepts/speculative-decoding]], supporting three complementary methods. Performance is highly workload-dependent — see the concept page for the critical QPS sensitivity analysis.
+
+### Supported Methods
+
+| Method | Mechanism | Best For |
+|:-------|:----------|:---------|
+| **Draft Model** | Separate small model proposes tokens (same vocab required) | General-purpose acceleration |
+| **Prompt Lookup (N-gram)** | Pattern matches prompt text (zero model overhead) | Summarization, document Q&A |
+| **Medusa/Eagle/MLPSpeculator** | Multi-head prediction from target hidden states | No vocab mismatch, no separate model |
+
+### Configuration Example
+```python
+# Draft model on fewer GPUs than target
+llm = LLM(
+    model="meta-llama/Meta-Llama-3.1-70B-Instruct",
+    tensor_parallel_size=4,
+    speculative_model="ibm-fms/llama3-70b-accelerator",
+    speculative_draft_tensor_parallel_size=1,
+)
+```
+
+### Key Capabilities
 
 - **PagedAttention** — Virtual memory-inspired KV cache management (24x throughput vs. HF Transformers)
 - **Continuous batching** and chunked prefill
