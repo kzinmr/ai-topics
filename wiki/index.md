@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-04 | Total pages: 806 | Full entries: 773 | Stubs: 613 |
+| Last updated: 2026-05-04 | Total pages: 808 | Full entries: 775 | Stubs: 613 |
 
 ## Entities (389 pages)
 
@@ -421,8 +421,9 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (415 pages)
+## Concepts (417 pages)
 
+- [[concepts/accelerate]] — Hugging Face Accelerate: zero-code-change distributed training launcher. Unified abstraction layer making FSDP and DeepSpeed interchangeable via CLI or Python plugins.
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
@@ -568,6 +569,7 @@
 - [[concepts/decoder-only-gpt]] — The **decoder-only GPT** (Generative Pre-trained Transformer) is the dominant architecture behind modern large language models (ChatGPT, Claude, Gemini, etc.). Andrej Karpathy's **microgpt** projec...
 - [[concepts/deep-agents-runtime]] — Production runtime primitives for deep AI agents — durable execution, memory, multi-tenancy, HITL, guardrails, observability, sandbox, and cron.
 - [[concepts/deep-agents]] — Deep agents are autonomous AI agents that combine multiple architectural patterns to handle complex, multi-step tasks with minimal human intervention. They feature:
+- [[concepts/deepspeed]] — Microsoft DeepSpeed: open-source deep learning optimization library. ZeRO (1/2/3/3-offload/Infinity), 3D-Parallelism, DeepSpeed-MoE. Powers BLOOM, MT-530B. Integrated with Accelerate.
 - [[concepts/dflash-ggml]] — DFlash (DeltaFlash) speculative decoding implementation ported to the ggml library, enabling high-throughput inference for hybrid DeltaNet/Attention models on consumer GPUs.
 - [[concepts/dflash]] — Lightweight block diffusion model for flash speculative decoding — replaces sequential draft generation with parallel diffusion-based drafting for >6x speedup.
 - [[concepts/differential-symbolic-modules]] — Differential symbolic modules are symbolic computation layers that have been made differentiable — capable of computing gradients through symbolic operations. This enables end-to-end training of hy...

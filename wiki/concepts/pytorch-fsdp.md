@@ -211,10 +211,11 @@ Axolotl provides a YAML-based FSDP configuration (see [[concepts/fine-tuning/pyt
 
 ## Related Concepts
 
+- **[[concepts/accelerate]]** — Hugging Face Accelerate: unified distributed training launcher making FSDP and DeepSpeed interchangeable
 - **[[concepts/qlora]]** — Combines 4-bit quantization (QLoRA) with FSDP for fine-tuning on consumer GPUs
 - **[[concepts/fine-tuning/pytorch-fsdp]]** — Fine-tuning-specific FSDP configuration guide (Axolotl, common issues, NCCL testing)
 - **[[concepts/peft-fine-tuning]]** — Parameter-Efficient Fine-Tuning methods (LoRA, Q-LoRA) commonly used alongside FSDP
-- **[[concepts/deepspeed]]** — DeepSpeed ZeRO, the alternative distributed training framework
+- **[[concepts/deepspeed]]** — DeepSpeed ZeRO, the alternative distributed training framework (now has dedicated concept page)
 - **[[concepts/fsdp-qlora]]** — The specific technique combining FSDP with QLoRA for memory-efficient training
 
 ---

@@ -1,3 +1,12 @@
+## [2026-05-04] Accelerate — Distributed training launcher + DeepSpeed concept page
+
+- **[[concepts/accelerate]]** — Created concept page: Hugging Face Accelerate as unified distributed training abstraction. FSDP vs DeepSpeed configuration mapping (6 dimensions), memory/precision differences (fp32 upcast), plugin system (FullyShardedDataParallelPlugin, DeepSpeedPlugin), decision guide.
+- **[[concepts/deepspeed]]** — Created concept page: Microsoft DeepSpeed (ZeRO 1/2/3/3-offload/Infinity, 3D-Parallelism, MoE, NVMe offload). Notable models (BLOOM, MT-530B, GPT-NeoX). Accelerate integration mapping. Fills existing wikilink from pytorch-fsdp.
+- **[[concepts/pytorch-fsdp]]** — Enriched: Added Accelerate cross-reference to Related Concepts.
+- **raw/articles/2026-05-04_accelerate-fsdp-deepspeed-guide.md** — Saved raw article
+- Updated: wiki/index.md (+2 concepts, 808 pages, 417 concepts), wiki/log.md
+- Sources: hf.co/docs/accelerate, pytorch.org FSDP2 tutorial, deepspeed.ai
+
 ## [2026-05-04] Mobius Labs entity page — Dropbox acquisition, HQQ, Aana, low-bit inference
 
 - **[[entities/mobius-labs]]** — Created entity page: AI research company (HQQ quantization, GemLite Triton kernels, Aana multimodal SDK). Acquired by Dropbox ~2025, powers Dash multimodal search. Covers FSDP/QLoRA collaboration (Answer.AI, Tim Dettmers), FP4 quality recovery, metadata offloading, low-bit inference survey. 3 raw articles ingested.
