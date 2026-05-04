@@ -1,3 +1,12 @@
+## [2026-05-04] Multi-Teacher On-Policy Distillation (MOPD) — New concept from Notion article
+
+- **[[concepts/multi-teacher-on-policy-distillation]]** — Created concept page: MOPD is a post-training primitive that solves the see-saw problem via reverse KL distillation from multiple teachers within a GRPO-like loop. Covers IcePop, full-vocabulary distillation, WAL-based fault-tolerant rollouts, and comparisons across MiMo-V2-Flash, GLM-5, Nemotron-Cascade 2, and DeepSeek-V4.
+- **[[concepts/model-distillation]]** — Updated Related Pages with cross-link to MOPD
+- **[[concepts/grpo-rl-training]]** — Updated Related Pages with cross-link to MOPD
+- **raw/articles/2026-05-04_multi-teacher-on-policy-distillation.md** — Saved raw article
+- Updated: wiki/index.md (799 total pages, concepts: 415), wiki/log.md
+- Source: Notion (yumoxu)
+
 ## [2026-05-04] Active Crawl — Pentagon AI Deals, Agentic AI Governance, MIT-IBM Computing Lab
 
 - **[[entities/anthropic]]** — Added Pentagon Blacklisting section: supply chain risk designation (Feb 2026), Mythos exception, $900B valuation target, lawsuits, May 2026 exclusion from 7-company deals.

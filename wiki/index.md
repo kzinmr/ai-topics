@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-04 | Total pages: 798 | Full entries: 763 | Stubs: 614 |
+| Last updated: 2026-05-04 | Total pages: 799 | Full entries: 764 | Stubs: 614 |
 
 ## Entities (388 pages)
 
@@ -312,6 +312,7 @@
 - [[entities/the-harness-blog]] — Working notebook on harness engineering and agentic AI for AEC. 25 posts across 6 topics by [[entities/theodoros-galanos|Theodoros Galanos]].
 - [[entities/the-old-new-thing]] — **URL:** https://devblogs.microsoft.com/oldnewthing/
 - [[entities/the-silicon-underground]] — **URL:** https://dfarq.homeip.net
+- [[entities/thoughtful-lab]] — AI research lab exploring modelcrafting: autonomous AI agents improving other AI models. Landmark experiment "Letting AI Posttrain AI" (Apr 2026).
 - [[entities/theodoros-galanos]] — AI researcher and harness engineering practitioner. Chief Science Officer at infrared.city, author of The Harness blog, creator of Lambda-RLM and AEC-Bench. @TheodoreGalanos.
 - [[entities/thin-bi-tool]] — 薄くなるBIツール — BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
 - [[entities/thorsten-ball]] — **Thorsten Ball** — Software engineer, author of Writing An Interpreter In Go and Writing A Compiler In Go, works on Amp at Sourcegraph. Wrote "How to Build a Code-Editing Agent: The Emperor Has No Clothes Guide."
@@ -418,7 +419,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (414 pages)
+## Concepts (415 pages)
 
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
@@ -731,12 +732,14 @@
 - [[concepts/mismanaged-geniuses-hypothesis]] — > **AI models are already good enough for the next leap in capabilities. The bottleneck is no longer scaling model size or training data. It is how we manage, decompose, and compose existing fronti...
 - [[concepts/mlx-llm]] — mlx-lm and mlx-vlm are Apple's MLX framework packages for running large language models and multimodal models on Apple Silicon. As of 2026, MLX provides **10–25% faster inference** than llama.cpp o...
 - [[concepts/model-context-protocol-mcp]] — **Model Context Protocol (MCP)** is an open standard created by **Anthropic** (November 2024) for connecting AI assistants and agents to external data sources, tools, and development environments. ...
+- [[concepts/modelcrafting]] — Paradigm of using AI agents to autonomously shape and improve other AI models. Coined by [[entities/thoughtful-lab|Thoughtful Lab]] in their "Letting AI Posttrain AI" experiment (Apr 2026).
 - [[concepts/mooncake]] — Mooncake is a KVCache-centric disaggregated architecture for serving large language models, developed by Moonshot AI (Kimi). It separates prefill and decode computation across a GPU cluster connected by RDMA, using a KVCache transfer fabric and a P2P-based scheduler to maximize throughput and support long-context inference at scale.
 - [[concepts/multi-agent-autonomy-scale]] — Research testing how much autonomy multi-agent LLM systems can sustain at unprecedented scale: **25,000 tasks, 8 models, up to 256 agents, 8 coordination protocols**.
 - [[concepts/multi-agent-consensus-patterns]] — 分散型AIエージェントシステムにおける合意形成パターン。単一障害点を排除し、スケーラビリティと耐障害性を確保するための調整プロトコル。
 - [[concepts/multi-agent-orchestration-architecture]] — Multi-agent orchestration architecture is the design pattern that enables multiple specialized AI agents to work in concert on complex tasks. It sits between agent-level intelligence (Phase 1: vibe...
 - [[concepts/multi-agent-orchestration-patterns]] — Architectural patterns for coordinating multiple AI agents to solve complex problems. Use the **lowest level of complexity that reliably meets requirements** — justified added complexity only when ...
-- [[concepts/multi-agents-whats-actually-working]] — Cognition's April 2026 blog post "Multi-Agents: What's Actually Working" by Walden Yan represents a significant evolution from their June 2025 stance "Don't Build Multi-Agents." The core finding: *...
+|- [[concepts/multi-agents-whats-actually-working]] — Cognition's April 2026 blog post "Multi-Agents: What's Actually Working" by Walden Yan represents a significant evolution from their June 2025 stance "Don't Build Multi-Agents." The core finding: *...
+|- [[concepts/multi-teacher-on-policy-distillation]] — MOPD is a post-training primitive that solves the see-saw problem by distilling from multiple teachers via reverse KL within a GRPO-like loop. Used by MiMo-V2-Flash, GLM-5, Nemotron-Cascade 2, and DeepSeek-V4.
 |- [[concepts/multiple-representations-rag]] — Bryan Bischof & Ayush Chaurasia: "The Map is Not the Territory" — create multiple specialized maps of the same data. Part 5 of RAG Is Not Dead series.
 ||- [[concepts/neural-garbage-collection]]
 |- [[concepts/nano-banana-2]] — **Nano Banana 2 (NB2)** is Google's latest image generation model available via Google AI Studio. Features native multi-turn editing, photorealistic output at up to 4K resolution, and deep Gemini integration. Competes directly with OpenAI's GPT Image 2.0.
@@ -1381,7 +1384,7 @@
 - [[concepts/polars]] — > **TODO**: Enrich this page.
 - [[concepts/polecats]] — > **TODO**: Enrich this page.
 - [[concepts/posse-pattern]] — > **TODO**: Enrich this page.
-- [[concepts/post-training]] — > **TODO**: Enrich this page.
+- [[concepts/post-training]] — The set of techniques (SFT, RLHF, DPO, RLVR) applied after pre-training. Includes automated post-training research by [[concepts/modelcrafting|modelcrafting]] and [[entities/thoughtful-lab|Thoughtful Lab]].
 - [[concepts/powerdns]] — > **TODO**: Enrich this page.
 - [[concepts/prediction-markets]] — > **TODO**: Enrich this page.
 - [[concepts/privacy-engineering]] — > **TODO**: Enrich this page.
