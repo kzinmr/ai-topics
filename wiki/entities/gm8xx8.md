@@ -1,9 +1,14 @@
 ---
 title: "gm8xx8"
-tags: [person]
+tags: [person, curator, paper-curation, ai-research, community-signal]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-04
 type: entity
+aliases: [Gm8xx8, gm8xx8]
+sources:
+  - https://x.com/gm8xx8
+  - https://huggingface.co/gm8xx8
+  - https://github.com/gm8xx8
 ---
 
 
@@ -17,7 +22,10 @@ type: entity
 
 ## Overview
 
-gm8xx8 is a highly active AI/ML paper curator on X/Twitter and HuggingFace, known for sharing cutting-edge research papers across a remarkably broad range of topics. With 77K+ HuggingFace followers and a presence on X since August 2022, gm8xx8 operates as a signal filter for the AI research community — identifying and amplifying noteworthy papers in real-time.
+gm8xx8 is a highly active AI/ML paper curator on X/Twitter and HuggingFace, known for sharing cutting-edge research papers across a remarkably broad range of topics. With **89,826+ HuggingFace followers** and **8,785 X followers** (17,100+ posts), gm8xx8 operates as a signal filter for the AI research community — identifying and amplifying noteworthy papers in real-time. The X account was created in **March 2010**, with heavy AI curation activity emerging circa August 2022.
+
+**Bio:** `𝐇𝐈𝐆𝐇-𝐓𝐀𝐒𝐓𝐄 𝐀𝐈 | 𝐎𝐏𝐄𝐍 𝐌𝐎𝐃𝐄𝐋𝐒`
+**Pinned tweet:** "THIS WEEK SHOULD BE EXCITING me: every week, forever." — a self-deprecating acknowledgment of the relentless pace of AI research.
 
 Unlike opinion leaders who produce original analysis, gm8xx8's value lies in **curation breadth**: tracking contributions across dozens of organizations (InclusionAI, FreedomIntelligence, MiroMindAI, XPeng Robotics, PrismML, Zhipu AI, Meituan LongCat, etc.) and surfacing papers that span the full stack from theoretical CS to deployed robotics systems.
 
@@ -163,23 +171,40 @@ gm8xx8's HuggingFace upvote activity shows engagement with:
 ## Notes
 
 - **Identity**: gm8xx8 appears to be primarily a curator rather than an original researcher. No public blog, website, or identifiable real name found.
-- **Activity level**: Very high — daily paper sharing across X/Twitter, with substantial HuggingFace engagement (77K+ followers).
-- **Enrichment target**: This page needs enrichment with direct quotes from gm8xx8's X posts, commentary patterns, and specific curation philosophy. The skeleton status should be removed once enriched.
-- **Last updated**: 2026-04-14
+- **Activity level**: Very high — daily paper sharing across X/Twitter (17,100+ posts), with substantial HuggingFace engagement (89,826+ followers). Following 715 accounts, which suggests a curated reading list rather than broad firehose consumption.
+- **Account history**: X account created March 2010 (15+ years old), but AI-heavy curation activity emerged around August 2022. The long account history with a pivot to AI signals sustained interest across multiple tech eras.
+- **Last updated**: 2026-05-04 (enriched with X profile data, follower counts, direct quotes)
 
-### Curation Style
+## Curation Style
 
-- **High volume, broad coverage:** 29+ papers curated in a single batch (March 2026)
+- **High volume, broad coverage:** 29+ papers curated in a single batch (March 2026), spanning 9 topical clusters from proof theory to robotics deployment
 - **No commentary, just links:** Unlike Simon Willison or Karpathy, gm8xx8 shares papers with minimal analysis — the signal is in *what* they choose to share
 - **Cross-platform:** HF upvotes, X tweets, GitHub contributions form a unified curation pipeline
 - **Early detection:** Picks up papers from arxiv, GitHub repos, and HF collections before they hit mainstream attention
+- **All-caps enthusiasm:** Characteristic style of clipped, emphatic summaries, e.g. "𝐙𝐇𝐈𝐏𝐔 𝐒𝐇𝐈𝐏𝐒 — again" for model releases, and "𝑨 𝑪𝑳𝑬𝑨𝑵, 𝑭𝑶𝑹𝑴𝑨𝑳 𝑩𝑹𝑬𝑨𝑲𝑫𝑶𝑾𝑵 𝑶𝑭 𝑾𝑯𝒀 𝒀𝑶𝑼𝑹 𝟕𝑩 𝑳𝑳𝑴 𝑳𝑬𝑨𝑹𝑵𝑺 𝑵𝑶𝑻𝑯𝑰𝑵𝑮 𝑭𝑹𝑶𝑴 𝑯𝑰𝑮𝑯-𝑸𝑼𝑨𝑳𝑰𝑻𝒀 𝑫𝑨𝑻𝑨" for paper summaries
+- **Metric-first framing:** Tweets consistently lead with quantitative signals — views, likes, GPU-hours, parameter counts, benchmark numbers
+- **Model release coverage:** Detailed, structured threads for new model drops (GLM-4.5, GLM-4.6, LFM2) with architecture specs, benchmark comparisons, and competitive positioning
+- **Open models bias:** Bio states "OPEN MODELS" as core identity; curated content heavily favors open-weight and open-source releases over proprietary systems
 
-### Notable Tweet
+### Notable Tweets
 
-> \"The FFT Strikes Back: An Efficient Alternative to Self-Attention\" (arxiv:2502.18394)
-> — 676 likes, 52K views, 2 months ago
+1. **"The FFT Strikes Back: An Efficient Alternative to Self-Attention"** (arxiv:2502.18394)
+   — 652 likes, 52K views (March 2025). Generated significant discussion with replies from Eduardo Bergel (@BergelEduardo), Ljubomir Josifovski (@ljupc0), and others debating whether this is genuinely novel or an improvement on FNet (2021).
 
-This tweet generated significant discussion, with replies from Eduardo Bergel (@BergelEduardo), Ljubomir Josifovski (@ljupc0), and others debating whether this is genuinely novel or an improvement on FNet (2021). The engagement level (52K views) shows gm8xx8's curation has real reach.
+2. **"LLM Post-Training: A Deep Dive into Reasoning Large Language Models"**
+   — **2,400 likes, 191K views** (March 2025). gm8xx8's highest-engagement post found. A survey-style curated pointer to a comprehensive post-training overview.
+
+3. **"All Roads Lead to Likelihood: The Value of Reinforcement Learning in Fine-Tuning"**
+   — 872 likes, 53K views (March 2025). Focus on RL in post-training.
+
+4. **"Data Mixing Can Induce Phase Transitions in Knowledge Acquisition"**
+   — 804 likes, 128K views (May 2025). High engagement for a technical paper share. gm8xx8's framing: *"A CLEAN, FORMAL BREAKDOWN OF WHY YOUR 7B LLM LEARNS NOTHING FROM HIGH-QUALITY DATA."*
+
+5. **"Meta just ran one of the largest synthetic-data studies (over 1000 LLMs, more than 100k GPU hours)"**
+   — Quoting a major Meta study on synthetic vs natural data mixing thresholds.
+
+6. **"GLM-4.6 is here. Zhipu extends the 4.5 line with..."**
+   — Detailed model release thread covering context length (128K→200K), coding benchmarks, real-world app performance, and competitive positioning against Claude Sonnet 4 and DeepSeek-V3.1-Terminus.
 
 ### Connections to Other Tracked Individuals
 
@@ -193,5 +218,8 @@ gm8xx8 represents a new type of signal source in the AI ecosystem — not a rese
 
 ## See Also
 
-- [[entities/_index]]
-- [[gm8xx8]]
+- [[entities/miles-brundage|Miles Brundage]] — Both are signal-amplifiers in the AI ecosystem (Brundage via policy, gm8xx8 via research curation)
+- [[entities/yannic-kilcher|Yannic Kilcher]] — Both curate research; Kilcher adds video commentary while gm8xx8 is text-only signal detection
+- [[entities/sophia-xia|Sophia Xia]] — Overlaps in multimodal and open model tracking
+- [[entities/_index]] — Full entity index
+- **open-models** — Core curation focus area (no entity page yet)

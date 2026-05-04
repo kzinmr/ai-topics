@@ -138,7 +138,7 @@
 - [[entities/gilesthomas]] — ML研究者、教育者、ソフトウェア開発者。PythonAnywhere創設者。gilesthomas.com
 - [[entities/glm-5-zai]] — New state-of-the-art open weights LLM from Z.ai (智谱AI).
 - [[entities/glm-5v-turbo]] — Model that turns designs into code, part of the multimodal AI wave from Chinese labs.
-- [[entities/gm8xx8]] — **Handle:** @gm8xx8 (X/Twitter, HuggingFace, GitHub). **GitHub:** github.com/gm8xx8
+- [[entities/gm8xx8]] — High-taste AI research curator on X/Twitter and HuggingFace (89K+ HF followers, 17K+ posts). Bio: "HIGH-TASTE AI | OPEN MODELS." Curates across proof theory, scaling laws, multimodal systems, and robotics. X account since 2010; AI curation since 2022.
 - [[entities/google-tpu]] — Google's custom ASIC for ML workloads, now split into specialized **TPU 8t** (training) and **TPU 8i** (inference) chips at the 8th generation. Designed for agentic AI, world models, Mixture-of-Exp...
 - [[entities/gpt-5.5]] — OpenAI's April 2026 model release; outperforms Opus 4.7, 40% more token efficient than GPT-5.4
 - [[entities/gpt-oss]] — OpenAI's first open-weight model release since GPT-2 (Apache 2.0). Two MoE variants: 120B (5.1B active) and 20B (3.6B active). Near-o4-mini reasoning with configurable effort levels, native MXFP4 quantization.
@@ -1225,7 +1225,6 @@
 - [[concepts/genie]] — > **TODO**: Enrich this page.
 - [[concepts/gguf-quantization]] — > **TODO**: Enrich this page.
 - [[concepts/gguf]] — > **TODO**: Enrich this page.
-- [[concepts/gm8xx8-gm8xx8-ai-paper-curator]] — > **TODO**: Enrich this page.
 - [[concepts/go-golang]] — > **TODO**: Enrich this page.
 - [[concepts/go-tooling]] — > **TODO**: Enrich this page.
 - [[concepts/google-gemini]] — > **TODO**: Enrich this page.

@@ -1,3 +1,18 @@
+## [2026-05-04] gm8xx8 | Enriched skeleton entity page (daily cron job)
+- **[[entities/gm8xx8]]** — Enriched from X/Twitter profile data, HuggingFace, and live tweet scraping:
+  - Updated HF follower count: 77K+ → **89,826**
+  - Added X follower count: **8,785**
+  - Added X post count: **17,100+**
+  - Added bio and pinned tweet as direct quotes
+  - Added account creation date (March 2010 — not August 2022 as previously assumed)
+  - Added 6 Notable Tweets with engagement metrics (highest: 2,400 likes, 191K views)
+  - Expanded Curation Style section: all-caps enthusiasm, metric-first framing, model release coverage, open models bias
+  - Replaced self-referential "See Also" with cross-links to related entities
+  - Removed "skeleton" status note
+  - Added proper frontmatter: aliases, sources, extended tags
+  - Updated: wiki/entities/gm8xx8.md, wiki/entities/_index.md, wiki/index.md (entity desc + removed stale concept link)
+- Raw sources consulted: x.com/gm8xx8, huggingface.co/gm8xx8, github.com/gm8xx8
+
 ## [2026-05-04] ai-index-report-2026 | Enriched with detailed chapter data from Stanford HAI chapter pages
 - **[[concepts/ai-index-report-2026]]** — Substantially enriched from initial digest-based entry:
   - Added **3 new Top Takeaways**: "Big Four" convergence & benchmark reliability crisis (#3), AI Sovereignty & Policy Governance (#10), expanded expert vs public divide (#11)
