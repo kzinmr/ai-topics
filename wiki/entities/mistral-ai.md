@@ -1,91 +1,70 @@
 ---
-title: "Mistral AI"
+title: Mistral AI
 type: entity
-created: 2026-04-30
-updated: 2026-04-30
+created: 2026-05-04
+updated: 2026-05-04
 tags:
   - company
-  - lab
+  - llm
   - open-source
-  - coding-agents
-  - mistral
+  - europe
+  - model
+aliases:
+  - Mistral
+  - Mistral AI SAS
 sources:
-  - raw/articles/mistral-medium-3-5-vibe-remote-agents.md
-  - https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5
-related:
-  - concepts/coding-agents
-  - concepts/local-llm
-  - entities/anthropic
-  - entities/openai
+  - raw/articles/2026-05-04_thorsten-ball-joy-and-curiosity-84.md
 ---
 
 # Mistral AI
 
-**Mistral AI** is a French AI research laboratory founded in 2023, known for developing open-weight language models and agent frameworks. As of April 2026, Mistral has expanded into remote coding agents and enterprise AI orchestration.
+Mistral AI (Mistral AI SAS) is a French artificial intelligence company headquartered in Paris, founded in 2023 by former Meta and Google AI researchers (Arthur Mensch, Timothée Lacroix, and Guillaume Lample). It develops open-weight and proprietary large language models, and is positioned as **Europe's sovereign AI champion**.
 
-## Mistral Medium 3.5 (April 2026)
+## Key Facts
 
-### Model Specifications
-- **Architecture**: 128B dense model (single weight set)
-- **Context Window**: 256K tokens
-- **Capabilities**: Instruction following, reasoning, and coding in a single model
-- **Vision**: Trained from scratch with variable size and aspect ratio vision encoder
-- **Inference**: Adjustable "reasoning effort" per request (quick answers to complex agent execution)
+- **Founded**: 2023 (Paris, France)
+- **Employees**: ~860 (as of 2026)
+- **Valuation**: €12 billion (~$14 billion) as of September 2025
+- **Total raised**: ~$3.72B (equity + debt)
+- **Annualized Revenue**: >$400M (2025), targeting >$1B ARR by end of 2026
+- **Revenue growth**: $20M → $400M+ in one year
+- **Customers**: ~450,000 total, 1,031 high-value enterprise customers (July 2025)
+- **Investors**: ASML (11% stake), 369 Growth Partners, E1 Ventures, PSG
 
-### Benchmarks
-- **SWE-bench Verified**: 77.6% (surpasses Devstral 2, Qwen3.5 397B)
-- **τ³-Telecom**: 91.4
+## Strategy: "Smaller, Cheaper, and Not American"
 
-### Licensing & Deployment
-- Open-weight release under modified MIT license
-- Available on Hugging Face
-- Self-hostable on minimum 4 GPUs
-- Hosted via NVIDIA NIM on build.nvidia.com
+Mistral differentiates through three pillars:
 
-## Mistral Vibe: Remote Coding Agent (April 2026)
+1. **European sovereignty**: Positioned as the AI company that governments and enterprises can trust with data sovereignty under EU regulations
+2. **Efficiency**: Smaller, more cost-efficient models vs. US competitors (OpenAI, Anthropic)
+3. **Open ecosystem**: Open-weight models for customization and on-premise deployment, alongside proprietary offerings
 
-**Vibe** is Mistral's cloud-based coding agent architecture that shifts coding from local laptops to isolated cloud sandboxes.
+## Key Products
 
-### Key Features
-- **Asynchronous Execution**: Start a task and walk away; receive notification on completion
-- **Teleportation**: Seamlessly transfer local CLI sessions to cloud, preserving session history, task state, and approvals
-- **Parallelism**: Run multiple coding sessions simultaneously without developer bottlenecks
-- **Integrations**: GitHub (code/PRs), Linear/Jira (issues), Sentry (incidents), Slack/MS Teams (reports)
+| Product | Description |
+|---------|-------------|
+| **Le Chat** | Consumer AI chat app — reached 1M downloads in 14 days |
+| **Mistral Large** | Flagship proprietary model, competitive with GPT-4 and Claude |
+| **Mistral Small/Medium** | Tiered model sizes for cost-efficiency |
+| **Pixtral Large** | Multimodal model (November 2024) |
+| **Mistral API** | Cloud and on-premise deployment platform |
 
-### Ideal Use Cases
-> "Suited for high-volume, well-defined work that takes developer time but not judgment: module refactoring, test generation, dependency upgrades, CI investigation, bug fixes."
+## Infrastructure
 
-## Le Chat Work Mode (Preview)
+- **$830M debt** for Nvidia chips (13,800 GPUs, new data center near Paris, March 2026)
+- Largest compute build-out by any European AI company
 
-Work Mode transforms Le Chat into an execution backend for multi-step projects and cross-tool actions:
-- **Cross-tool Workflows**: Aggregate data from email, calendar, messaging (e.g., meeting prep with attendee context)
-- **Research & Synthesis**: Deep investigation of web and internal documents, structured report generation
-- **Admin Automation**: Inbox triage, reply drafting, Jira issue creation from chat discussions
-- **Transparency & Safety**: All tool calls and "reasoning rationale" visible; explicit approval required for sensitive actions
+## Competitive Position
 
-## API Pricing (per 1M tokens)
-| Component | Price |
-|---|---|
-| Input | $1.50 |
-| Output | $7.50 |
+While Mistral trails US (Anthropic, OpenAI) and Chinese (DeepSeek) frontier model developers on some benchmarks, it occupies a unique strategic position:
 
-## Ecosystem Context
-- Part of the broader European AI ecosystem
-- Competes with Anthropic, OpenAI in open-weight model space
-- Complements open-source agent frameworks like Claude Code and OpenAI Codex
+- **European government contracts**: Sovereign AI deployments for public sector
+- **Enterprise adoption**: On-premise deployment for regulated industries
+- **Cost leadership**: Smaller, more efficient models with competitive performance
+- **EU alignment**: GDPR compliance, data localization, regulatory tailwinds
 
-## Sources
-- [Vibe Remote Agents + Mistral Medium 3.5](https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5) — Mistral AI Blog, April 2026
-- [Mistral-Medium-3.5 on Hugging Face](https://huggingface.co/mistralai/Mistral-Medium-3.5)
+## Related
 
-## References
-
-- 2026-04-28_mistralai-workflows
-
-## See Also
-
-- [[gemma-4]] — Google's open-weight competitor to Mistral Medium 3.5.
-- [[coding-agents]] — AI agents for software engineering, including Mistral's Vibe remote agent.
-- [[open-models]] — Open-weight model ecosystem and licensing landscape.
-- [[anthropic]] — Competitor AI lab with Claude models.
-- [[openai]] — Competitor AI lab with GPT models and Codex agent.
+- [[entities/anthropic]] — US competitor (frontier models, safety focus)
+- [[entities/deepseek]] — Chinese competitor (open-weight, benchmark-leading)
+- [[entities/openai]] — US competitor

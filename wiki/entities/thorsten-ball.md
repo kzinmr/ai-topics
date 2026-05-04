@@ -1,73 +1,53 @@
 ---
-title: "thorsten-ball"
-description: "Software engineer, author of Writing An Interpreter In Go and Writing A Compiler In Go, creator of Amp (AI code editor at Sourcegraph). Works at Sourcegraph on Amp."
-url: https://thorstenball.com
+title: Thorsten Ball
 type: entity
-created: 2026-05-03
-updated: 2026-05-03
-aliases:
-  - thorstenball
-  - mrnugget
-  - Thorsten Ball
-  - @thorstenball
+created: 2026-05-04
+updated: 2026-05-04
 tags:
   - person
   - author
-  - go
-  - programming-languages
-  - ai-agent
-  - coding-agents
+  - developer-tooling
+  - sourcegraph
+aliases:
+  - thorstenball
+  - mrnugget
 sources:
-  - raw/articles/2025-04-15_ampcode-how-to-build-a-code-editing-agent.md
-  - https://thorstenball.com
-  - https://github.com/mrnugget
-  - https://twitter.com/thorstenball
-  - https://registerspill.thorstenball.com/about
+  - raw/articles/2026-05-04_thorsten-ball-joy-and-curiosity-84.md
 ---
 
 # Thorsten Ball
 
-**Thorsten Ball** (@thorstenball, GitHub: mrnugget) is a German software engineer, author, and occasional writer. He is best known for his two self-published books — *Writing An Interpreter In Go* (2017) and *Writing A Compiler In Go* (2018) — which are widely regarded as the most accessible practical introductions to programming languages.
+Thorsten Ball is a software engineer, technical author, and newsletter writer based in Germany. He is the author of two highly regarded books on programming language implementation, and writes the weekly **Register Spill** newsletter covering software engineering, AI, and the developer ecosystem.
 
-He currently works remotely at **Sourcegraph** on **Amp**, an AI code editor. Previously, he worked at **Zed** (the high-performance code editor) and spent five years at Sourcegraph before that.
+## Key Facts
 
-## Overview
-
-Thorsten Ball lives in Großwallstadt, Bavaria, Germany. His professional career spans web technologies (Ruby, JavaScript, Go, C) and systems programming. He writes a weekly newsletter called **Register Spill** on Substack, and maintains a personal blog at thorstenball.com covering programming languages, Unix internals, and software engineering.
-
-His technical philosophy emphasizes building from scratch with no third-party dependencies, working code as the primary artifact, and thoroughly understanding the layers of abstraction that seem like "magic."
+- **Books**: *Writing An Interpreter In Go* (2016) and *Writing A Compiler In Go* — self-published, widely praised for clarity and hands-on approach
+- **Newsletter**: [Register Spill](https://registerspill.thorstenball.com) — weekly digest of software engineering insights (8,000+ subscribers)
+- **Current**: Works remotely at [[entities/sourcegraph]] on [Amp](https://ampcode.com)
+- **Previous**: Worked at [[entities/zed|Zed]] on the Zed code editor
+- **Social**: [@thorstenball](https://twitter.com/thorstenball) on X/Twitter, @mrnugget on GitHub/Mastodon
 
 ## Books
 
-### Writing An Interpreter In Go (2017)
-A hands-on guide to building a full-fledged interpreter for the Monkey programming language from scratch. Features include: lexer, parser, AST, REPL, object system, and tree-walking evaluator. ~200 pages, all code in Go standard library only.
+### Writing An Interpreter In Go (2016)
+A practical, step-by-step guide to building a complete interpreter (Monkey language) in Go. Known for demonstrating that programming language implementation is accessible with no prior compiler experience. The code from the original 2016 release (Go 1.7) still compiles and runs with Go 1.23 — a testament to Go's backward compatibility.
 
-### Writing A Compiler In Go (2018)
-The sequel, extending the Monkey interpreter into a bytecode compiler and virtual machine, achieving significant performance improvements over tree-walking evaluation.
+### Writing A Compiler In Go
+Companion volume that extends the interpreter into a bytecode compiler and virtual machine. Together, the books form a complete, self-contained curriculum for understanding how programming languages work — from parsing to execution.
 
-## Current Work: Amp
+## Register Spill Newsletter
 
-Thorsten works on **Amp** (https://ampcode.com), an AI code editor built at Sourcegraph. Amp represents one of the most concrete implementations of the "minimal agent philosophy" in production — building a code-editing agent that is simple, transparent, and effective.
+Weekly newsletter covering:
+- Software engineering philosophy and the shifting developer tooling landscape
+- AI/LLM impact on development practices and education
+- Technical deep-dives (algorithms, security, performance)
+- Curated insights from across the industry (the "messages I'd send if you'd asked me what's on my mind")
 
-## Key Writings
+Notable issues:
+- **Joy & Curiosity #84** (May 2026) — Covered software degradation, Mitchell Hashimoto leaving GitHub, AI-mediated competence loss, Mistral's strategy, Zed 1.0, and Daniel Lemire's SIMD algorithm
 
-### "How to Build a Code-Editing Agent: The Emperor Has No Clothes Guide" (April 2025)
-Published on ampcode.com, this article demonstrates that a functional code-editing agent can be built in ~400 lines of Go with just three tools: `read_file`, `list_files`, and `edit_file` (via string replacement). The core thesis is that the "agent" part of an AI coding agent is trivially simple — sophistication comes from UI/UX, system prompts, and error handling.
+## Related
 
-> "300 lines of code and three tools and now you're able to talk to an alien intelligence that edits your code... That's why we think everything's changing."
-
-## Cross-References
-
-- [[concepts/minimal-coding-agent]] — The pattern described in his 2025 article
-- [[concepts/agent-loop-orchestration]] — His implementation is a concrete Go example of the agent loop
-- [[concepts/agent-harness]] — His article reinforces the "harness is the operating system" thesis
-- [[concepts/harness-engineering]] — The broader umbrella concept his work exemplifies
-- [[entities/sourcegraph]] — Employer and platform for Amp
-
-## Community
-- **Website**: https://thorstenball.com
-- **Blog**: https://registerspill.thorstenball.com
-- **GitHub**: https://github.com/mrnugget
-- **X/Twitter**: https://twitter.com/thorstenball
-- **Bluesky**: https://bsky.app/profile/thorstenball.com
-- **Mastodon**: https://mastodon.social/@mrnugget
+- [[entities/mitchell-hashimoto]] — Featured in Joy & Curiosity #84 (GitHub exodus)
+- [[entities/zed]] — Former employer, code editor reaching 1.0
+- [[entities/sourcegraph]] — Current employer

@@ -1,3 +1,13 @@
+## [2026-05-04] Thorsten Ball Joy & Curiosity #84 — Newsletter ingest
+
+- **[[entities/mitchell-hashimoto]]** — Created entity page: HashiCorp co-founder, Ghostty creator. Index entry enriched from stub to full (left GitHub 2026 over AI agent instability).
+- **[[entities/thorsten-ball]]** — Created entity page: Author of Writing An Interpreter/Compiler In Go, Register Spill newsletter, Sourcegraph engineer.
+- **[[entities/zed]]** — Created entity page: High-performance Rust editor by former Atom team. Reached 1.0 (Apr 29, 2026). AI-native with parallel agent orchestration.
+- **[[entities/mistral-ai]]** — Created entity page: French AI company, €12B valuation, $400M+ ARR, "smaller, cheaper, not American" strategy.
+- **raw/articles/2026-05-04_thorsten-ball-joy-and-curiosity-84.md** — Saved raw article
+- Updated: wiki/index.md (801 pages, 389 entities), wiki/log.md
+- Source: [Joy & Curiosity #84 - Register Spill](https://registerspill.thorstenball.com/p/joy-and-curiosity-84)
+
 ## [2026-05-04] Modelcrafting — Letting AI Posttrain AI
 
 - **[[concepts/modelcrafting]]** — Created concept page: paradigm of AI agents autonomously shaping and improving other AI models. Covers research intuition gap, 6 failure modes (naive SFT, no sanity checks, no curriculum learning, eval contamination, commitment bias, spend inefficiency), tokenizer workaround case study.

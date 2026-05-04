@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-| Last updated: 2026-05-04 | Total pages: 800 | Full entries: 765 | Stubs: 614 |
+| Last updated: 2026-05-04 | Total pages: 801 | Full entries: 768 | Stubs: 613 |
 
-## Entities (388 pages)
+## Entities (389 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -219,7 +219,7 @@
 - [[entities/minimaxir-com]] — **Max Woolf** (@minimaxir) is a data scientist, open-source developer, and technical blogger based in San Francisco. He is a Senior Data Scientist at concepts/buzzfeed, where he has applied machine...
 - [[entities/mira-murati]] — **Role** | CEO & Co-founder, Thinking Machines Lab; Former CTO, OpenAI |
 - [[entities/mistral-voxtral-tts]] — Mistral AI's open-weights text-to-speech model, announced April 2026. Combines autoregressive semantic token generation with flow-matching acoustic token synthesis.
-- [[entities/mitchell-hashimoto]] — **X/Twitter** | @mitchellh |
+- [[entities/mitchell-hashimoto]] — HashiCorp co-founder (Vagrant, Terraform, Vault), Ghostty creator. Left GitHub in 2026 citing instability from AI agent scale.
 - [[entities/mitchellh-com]] — **Blog** | mitchellh.com |
 - [[entities/mitsuhiko]] — **URL:** https://lucumr.pocoo.org
 - [[entities/muse-spark]] — Meta's latest language model, announced April 2026.
@@ -348,6 +348,7 @@
 - [[entities/zach-tratar]] — AI @ Notion. Founded Embra (acquired 2026). Argues for unified AI context apps over vertical SaaS.
 - [[entities/zakirullin]] — Artem Zakirullin — Software Architect, author of "Cognitive load is what matters" (12K+ GitHub stars), a framework on minimizing cognitive complexity in software design
 - [[entities/zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.
+- [[entities/zed]] — High-performance Rust code editor from former Atom team (Nathan Sobo, Antonio Scandurra, Max Brunsfeld). Reached 1.0 on April 29, 2026. AI-native with parallel agent orchestration, Zeta LLM, GPUI framework.
 
 - [[entities/palantir]] — AI-powered decision infrastructure company. The Palantir Ontology contextualizes computation within "lived reality" for enterprise agent workflows.
 - [[entities/mistral-ai]] — French AI company. Released Mistral Workflows (enterprise orchestration layer) and Voxtral TTS in April 2026.
