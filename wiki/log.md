@@ -1,3 +1,10 @@
+
+## [2026-05-04] llm-patterns-eugene-yan | New concept page (Eugene Yan LLM Patterns framework)
+- **[[concepts/llm-patterns-eugene-yan]]** — Created comprehensive concept page for Eugene Yan 7-pattern framework for building LLM-based systems and products. Covers: Evals, RAG, Fine-tuning, Caching, Guardrails, Defensive UX, User Feedback. Includes v1 to v2 evolution (vs O Reilly co-authored version). Maps each pattern to existing wiki concept pages with wikilinks.
+- New page: concepts/llm-patterns-eugene-yan.md
+- Raw article: raw/articles/2026-05-04_eugeneyan-llm-patterns.md
+- Updated: entities/eugene-yan.md (Related Concepts), entities/eugeneyan.md (Seven Patterns section + link), entities/eugene-yan--core-ideas.md (cross-link)
+- Updated: wiki/index.md (Concept +1), wiki/log.md
 ## [2026-05-04] Top 3 courses — full curriculum pages (CS336, COS597R, CMU LLMs)
 - **[[concepts/stanford-cs336-language-modeling-from-scratch|Stanford CS336]]** — Created full curriculum concept page. 5 assignments mapped to wiki concepts (Transformer→Triton→Scaling→Common Crawl→Alignment). Key finding: Tied to `flashattention-pytorch-educational`, `grpo-rl-training`, `decoder-only-gpt`. Includes GPU cost guide ($1.99-3.29/h H100).
 - **[[concepts/princeton-cos597r-deep-dive-llm|Princeton COS597R]]** — Created full curriculum concept page. 14-week paper schedule with wiki mapping. Key finding: Debate Panel format + Scribe system unique. Covers scaling laws, DPO, Constitutional AI, test-time compute scaling, FlashAttention.

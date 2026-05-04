@@ -49,6 +49,8 @@ In his landmark July 2023 post ["Patterns for Building LLM-based Systems & Produ
 6. **Defensive UX** — Anticipating and managing errors gracefully at the user interface level
 7. **Feedback Collection** — Continuously gathering user signals to improve the system
 
+> 詳細は [[concepts/llm-patterns-eugene-yan]] を参照 — 各パターンの実装詳細、フレームワークの進化（v1→v2）、既存Wikiページへのマッピングをカバー。
+
 These patterns map to Yan's broader philosophy that LLM applications succeed or fail based on system design, not model capability alone.
 
 ### Evals as the Foundation

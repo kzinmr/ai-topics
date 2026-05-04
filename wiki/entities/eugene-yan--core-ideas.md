@@ -28,9 +28,11 @@ Yan's most influential framework organizes practical LLM integration into seven 
 4. **Prompting** — Effective instruction design for task-specific outputs
 5. **UX** — Designing user interfaces that account for LLM capabilities and limitations
 6. **LLM-as-Judge** — Using models to evaluate other models (with careful calibration)
-7. **Cascade** — Breaking complex tasks into simpler sub-tasks, each handled by the most appropriate model
-
-His framework emphasizes that **evals are the foundation** — without measurement, you can't improve. RAG is positioned as the most cost-effective way to add knowledge, since updating retrieval indices is cheaper than retraining models.
+|7. **Cascade** — Breaking complex tasks into simpler sub-tasks, each handled by the most appropriate model
+|
+|> 各パターンの実装詳細、フレームワークの進化（v1→v2）は [[concepts/llm-patterns-eugene-yan]] を参照。
+|
+|His framework emphasizes that **evals are the foundation**
 
 ## Eval-Driven Development (EDD)
 

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
->| Last updated: 2026-05-04 | Total pages: 818 | Full entries: 785 | Stubs: 613 |
+>| Last updated: 2026-05-04 | Total pages: 819 | Full entries: 786 | Stubs: 613 |
 
 ## Entities (392 pages)
 
@@ -1299,6 +1299,7 @@
 - [[concepts/llm-inference-optimization-performance]] — > **TODO**: Enrich this page.
 - [[concepts/llm-inference]] — Roofline analysis framework for LLM inference economics: batch size vs latency/cost, KV cache bandwidth, MoE hardware topology, pipeline parallelism tradeoffs (Reiner Pope/Dwarkesh).
 - [[concepts/llm-integration-patterns]] — > **TODO**: Enrich this page.
+- [[concepts/llm-patterns-eugene-yan]] — Eugene Yan 7-pattern framework for production LLM systems: Evals, RAG, Fine-tuning, Caching, Guardrails, Defensive UX, User Feedback. Includes v1->v2 evolution. Maps patterns to existing wiki concept pages.
 - [[concepts/llm-output-formatting-json-pydantic-reliability-type-safety-function-calling]] — > **TODO**: Enrich this page.
 - [[concepts/llm-security]] — AISI evaluation of GPT-5.5 cyber capabilities: 71.4% CTF pass rate, universal jailbreak in 6 hours, 400× faster than human experts on reverse engineering tasks.
 - [[concepts/llm-training-fundamentals]] — > **TODO**: Enrich this page.
