@@ -13,13 +13,13 @@
 
 ## [2026-05-04] llm-patterns-eugene-yan | Enriched with OOD finetuning for hallucination detection (Yan)
 - **[[concepts/llm-patterns-eugene-yan]]** — Added NLI-based Hallucination Detection subsection under Evals: OOD bootstrapping method (USB Wikipedia -> FIB News), 25x recall improvement (0.02->0.50), BART+MNLI approach, QLoRA usage.
-- Raw article: raw/articles/2026-05-04_eugeneyan-finetuning-hallucination-detection.md
+- Raw article: raw/articles/2023-11-05_eugeneyan-finetuning-hallucination-detection.md
 - Updated: entities/eugene-yan.md (Sources +finetuning article)
 - Updated: wiki/log.md
 
 ## [2026-05-04] llm-patterns-eugene-yan | Enriched with OReilly Applied LLMs Guide (3 parts, 6 co-authors)
 - **[[concepts/llm-patterns-eugene-yan]]** — Enriched existing concept page with comprehensive OReilly What We Learned from a Year of Building with LLMs guide. Added: Part I (Tactical: Prompting, RAG, Flow Engineering, Evals), Part II (Operations: Data, Models, Product, Team), Part III (Strategy: Resource Allocation, System Moat, Human-Centered AI, Economics). Updated evolution table with v2 details. Added co-author cross-links.
-- Raw articles: raw/articles/2026-05-04_oreilly-applied-llms-part1.md, part2.md, part3.md
+|- Raw articles: raw/articles/2024-05-28_oreilly-applied-llms-part1.md, 2024-05-31_oreilly-applied-llms-part2.md, 2024-06-06_oreilly-applied-llms-part3.md
 - Updated entities: bryan-bischof.md (Related Concepts + restored Related People), jason-liu.md (Related Concepts), shreya-shankar.md (Related Concepts)
 - Updated: wiki/index.md (entry enriched), wiki/log.md
 ## [2026-05-04] genai-handbook | New meta-knowledge concept page (William Brown GenAI Handbook)
@@ -33,7 +33,7 @@
 ## [2026-05-04] llm-patterns-eugene-yan | New concept page (Eugene Yan LLM Patterns framework)
 - **[[concepts/llm-patterns-eugene-yan]]** — Created comprehensive concept page for Eugene Yan 7-pattern framework for building LLM-based systems and products. Covers: Evals, RAG, Fine-tuning, Caching, Guardrails, Defensive UX, User Feedback. Includes v1 to v2 evolution (vs O Reilly co-authored version). Maps each pattern to existing wiki concept pages with wikilinks.
 - New page: concepts/llm-patterns-eugene-yan.md
-- Raw article: raw/articles/2026-05-04_eugeneyan-llm-patterns.md
+|- Raw article: raw/articles/2023-07-30_eugeneyan-llm-patterns.md
 - Updated: entities/eugene-yan.md (Related Concepts), entities/eugeneyan.md (Seven Patterns section + link), entities/eugene-yan--core-ideas.md (cross-link)
 - Updated: wiki/index.md (Concept +1), wiki/log.md
 ## [2026-05-04] Top 3 courses — full curriculum pages (CS336, COS597R, CMU LLMs)

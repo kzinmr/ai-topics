@@ -2,7 +2,7 @@
 title: "What We Learned from a Year of Building with LLMs (Part III): Strategy"
 source: "https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-iii-strategy/"
 authors: ["Eugene Yan", "Bryan Bischof", "Charles Frye", "Hamel Husain", "Jason Liu", "Shreya Shankar"]
-date: 2024-06-17
+date: 2024-06-06
 tags: [llm, production, strategy, product-market-fit, competitive-advantage, economics, oreilly]
 ---
 

@@ -2,7 +2,7 @@
 title: "What We Learned from a Year of Building with LLMs (Part I): Tactical"
 source: "https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i/"
 authors: ["Eugene Yan", "Bryan Bischof", "Charles Frye", "Hamel Husain", "Jason Liu", "Shreya Shankar"]
-date: 2024-06-17
+date: 2024-05-28
 tags: [llm, production, prompting, rag, evals, flow-engineering, oreilly]
 ---
 

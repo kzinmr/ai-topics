@@ -2,7 +2,7 @@
 title: "Patterns for Building LLM-based Systems & Products"
 source: https://eugeneyan.com/writing/llm-patterns/
 author: Eugene Yan (Ziyou Yan)
-date: 2023-07-12
+date: 2023-07-30
 tags: [llm, patterns, evals, rag, fine-tuning, caching, guardrails, ux, user-feedback]
 ---
 

@@ -2,7 +2,7 @@
 title: "What We Learned from a Year of Building with LLMs (Part II): Operations"
 source: "https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-ii/"
 authors: ["Eugene Yan", "Bryan Bischof", "Charles Frye", "Hamel Husain", "Jason Liu", "Shreya Shankar"]
-date: 2024-06-17
+date: 2024-05-31
 tags: [llm, production, data-ops, model-management, product-design, team-building, oreilly]
 ---
 

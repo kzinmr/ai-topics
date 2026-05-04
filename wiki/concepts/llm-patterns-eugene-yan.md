@@ -19,10 +19,10 @@ sources:
   - https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i/
   - https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-ii/
   - https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-iii-strategy/
-  - raw/articles/2026-05-04_eugeneyan-llm-patterns.md
-  - raw/articles/2026-05-04_oreilly-applied-llms-part1.md
-  - raw/articles/2026-05-04_oreilly-applied-llms-part2.md
-  - raw/articles/2026-05-04_oreilly-applied-llms-part3.md
+  - raw/articles/2023-07-30_eugeneyan-llm-patterns.md
+  - raw/articles/2024-05-28_oreilly-applied-llms-part1.md
+  - raw/articles/2024-05-31_oreilly-applied-llms-part2.md
+  - raw/articles/2024-06-06_oreilly-applied-llms-part3.md
 status: Level2
 ---
 

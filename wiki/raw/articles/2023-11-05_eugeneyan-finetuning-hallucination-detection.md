@@ -2,7 +2,7 @@
 title: "Out-of-Domain Finetuning to Bootstrap Hallucination Detection"
 source: "https://eugeneyan.com/writing/finetuning/"
 author: "Eugene Yan"
-date: 2024-05-20
+date: 2023-11-05
 tags: [fine-tuning, hallucination, NLI, evaluation, factual-consistency, bootstrapping]
 ---
 
