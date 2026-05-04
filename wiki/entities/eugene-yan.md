@@ -101,5 +101,6 @@ See [[eugene-yan--key-quotes]] for the full collection.
 - https://eugeneyan.com/writing/georgia-tech-omscs-faq/
 - https://eugeneyan.com/writing/2024-review/
 - https://eugeneyan.com/writing/semantic-ids-recsys/
+- https://eugeneyan.com/writing/finetuning/ — Out-of-Domain Finetuning to Bootstrap Hallucination Detection
 - https://eugeneyan.com/writing/llm-bio/
 - https://eugeneyan.com/speaking/sharing-at-singapore-management-university-on-data-analytics-talk/

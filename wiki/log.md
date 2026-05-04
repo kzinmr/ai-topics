@@ -1,4 +1,10 @@
 
+## [2026-05-04] llm-patterns-eugene-yan | Enriched with OOD finetuning for hallucination detection (Yan)
+- **[[concepts/llm-patterns-eugene-yan]]** — Added NLI-based Hallucination Detection subsection under Evals: OOD bootstrapping method (USB Wikipedia -> FIB News), 25x recall improvement (0.02->0.50), BART+MNLI approach, QLoRA usage.
+- Raw article: raw/articles/2026-05-04_eugeneyan-finetuning-hallucination-detection.md
+- Updated: entities/eugene-yan.md (Sources +finetuning article)
+- Updated: wiki/log.md
+
 ## [2026-05-04] llm-patterns-eugene-yan | Enriched with OReilly Applied LLMs Guide (3 parts, 6 co-authors)
 - **[[concepts/llm-patterns-eugene-yan]]** — Enriched existing concept page with comprehensive OReilly What We Learned from a Year of Building with LLMs guide. Added: Part I (Tactical: Prompting, RAG, Flow Engineering, Evals), Part II (Operations: Data, Models, Product, Team), Part III (Strategy: Resource Allocation, System Moat, Human-Centered AI, Economics). Updated evolution table with v2 details. Added co-author cross-links.
 - Raw articles: raw/articles/2026-05-04_oreilly-applied-llms-part1.md, part2.md, part3.md
