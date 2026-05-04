@@ -1,3 +1,12 @@
+## [2026-05-04] Newsletter Ingest — The Signal: Anthropic Creative Coalition, Claude Security, OpenAI AWS Bedrock, Google Gemini updates
+
+- Source: The Signal newsletter "Gemini Gets to Work, Claude's Big Pull, and OpenAI Unchained" (2026-05-03)
+- **[[entities/anthropic]]** — Added Creative Coalition (9 connectors: Adobe CC, Blender, Autodesk Fusion, Ableton, etc.), Claude Security public beta (Opus 4.7, vulnerability scanning with 271 Firefox zero-days), Market Position (40% enterprise LLM spend, $30B ARR, Oct 2026 IPO)
+- **[[entities/openai]]** — Added AWS Bedrock integration (GPT-5.5, Codex, Managed Agents on Bedrock, limited preview), Economics comparison table ($25B ARR, IPO delayed to 2027, compute commitments walked back to $600B)
+- **[[entities/claude-mythos]]** — Updated Firefox zero-day data: 271 vulnerabilities discovered in single sweep (~4× Mozilla 2025 total)
+- **[[entities/google]]** — Updated with Gemini file generation (Docs/Sheets/Slides/PDF), AI compute dominance stats (25% of global AI compute, 3.8M TPUs + 1.3M GPUs), 7-9 month model velocity gap estimate
+- raw/articles/ — 3 new raw articles saved: anthropic-claude-creative-coalition, anthropic-claude-security-public-beta, openai-aws-bedrock-partnership
+
 ## [2026-05-04] Blog Ingest — 18 articles collected, 3 entity pages created/updated, anti-sycophancy concept enriched
 
 - **[[concepts/anti-sycophancy]]** — Enriched with Anthropic's May 2026 sycophancy metrics: 9% overall, but 38% in spirituality conversations and 25% in relationships. Shows domain-specific vulnerability in RLHF-trained models. Source: [Simon Willison on Anthropic's research summary](https://simonwillison.net/2026/May/3/anthropic/).

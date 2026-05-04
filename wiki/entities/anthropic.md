@@ -11,11 +11,14 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-04-28
+updated: 2026-05-04
 sources: [
   "https://x.com/RLanceMartin/status/2041927992986009773",
   "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
-  "raw/newsletters/2026-04-26-openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md"
+  "raw/newsletters/2026-04-26-openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
+  "raw/articles/2026-04-28-anthropic-claude-creative-coalition.md",
+  "raw/articles/2026-04-30-anthropic-claude-security-public-beta.md",
+  "raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md"
 ]
 related: [
   "[[anthropic]]",
@@ -78,6 +81,51 @@ Anthropic launched **Claude Design**, an AI-driven design tool focused on market
 - Represents Anthropic's expansion beyond language models into creative tooling
 - GPT Image 2.0 + Codex integration makes standalone design tools like Claude Design potentially redundant
 
+### Creative Coalition (Apr 2026)
+
+Anthropic launched **9 connectors** for professional creative tools, positioning Claude as a hub for creative and professional workflows:
+
+| Connector | Functionality |
+|-----------|--------------|
+| **Adobe for Creativity** | 50+ Creative Cloud tools (Photoshop, Premiere, Express) for design workflows |
+| **Autodesk Fusion** | Natural language control for 3D modeling and engineering design |
+| **Blender** | MCP-based connector; Python API natural-language interface; Anthropic donated to Blender Foundation |
+| **Affinity by Canva** | Batch image adjustments, layer renaming, file export automation |
+| **SketchUp** | Room/furniture descriptions → 3D model starting points |
+| **Ableton** | Product documentation for Live and Push (music production) |
+| **Splice** | Royalty-free sample catalog search within Claude |
+| **Resolume** | Real-time VJ/live visual artist control (Arena/Wire) |
+
+- Built on **MCP (Model Context Protocol)** — interoperable with other LLMs
+- Educational partnerships: RISD, Ringling College, Goldsmiths University
+- Part of Anthropic's enterprise expansion strategy alongside Managed Agents
+
+### Claude Security (Public Beta, Apr 2026)
+
+Anthropic launched **Claude Security** in public beta for Enterprise customers, powered by **Claude Opus 4.7**:
+
+- **Deep Code Reasoning**: Traces data flows, reads source code, examines file interactions — beyond pattern matching
+- **Vulnerability Insights**: Confidence ratings, severity/impact assessment, reproduction steps
+- **Targeted Patching**: Generates fix instructions; open and apply directly in Claude Code on the Web
+- **Workflow Integration**: Scheduled scans, directory targeting, CSV/Markdown exports, webhooks to Slack/Jira
+- **Ecosystem Partners**: CrowdStrike, Microsoft Security, Palo Alto Networks, SentinelOne, TrendAI, Wiz
+- **Services Partners**: Accenture, BCG, Deloitte, Infosys, PwC
+
+### Claude Security Performance
+
+- **Claude Mythos** found **271 zero-day vulnerabilities in Firefox** in one sweep — ~4× what Mozilla patched in all of 2025
+- Early users report moving from "scan to applied patch" in a single sitting
+- Multi-stage validation pipelines reduce false positives
+
+### Market Position (May 2026)
+
+Anthropic leads enterprise AI adoption with strong market metrics:
+- **40%** of enterprise LLM spend (surpassing OpenAI)
+- **54%** of enterprise coding market share
+- **$30B ARR** (annual recurring revenue)
+- **IPO target**: October 2026 at $400–500B valuation
+- Cleaner unit economics than OpenAI; focused on enterprise over consumer scale
+
 ### Claude Code
 
 Anthropic's CLI coding agent (see [[claude-code]]). A terminal-based agent that can:
@@ -113,7 +161,10 @@ Anthropic's research priorities:
 ## Related
 - [[anthropic]] — The model family
 - [[claude-code]] — Claude Code CLI agent
+- [[claude-mythos]] — Claude Mythos model (used by Claude Security)
 - [[foundation-capital]] — Partner in Claude Managed Agents
+- [[concepts/claude-managed-agents]] — Managed Agents platform details
+- [[concepts/project-glasswing]] — Defensive security initiative
 
 ## References
 

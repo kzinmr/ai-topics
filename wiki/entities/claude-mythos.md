@@ -2,18 +2,15 @@
 title: Claude Mythos
 type: entity
 created: 2026-04-09
-updated: 2026-04-13
+updated: 2026-05-04
 tags:
   - model
   - agent-safety
   - emerging
-- model
-- llm
-- ai-safety
-- emerging
+  - security
 aliases:
 - Mythos
-sources: []
+sources: ["raw/articles/2026-04-30-anthropic-claude-security-public-beta.md"]
 ---
 
 # Claude Mythos
@@ -29,14 +26,18 @@ Claude Mythos represents a significant leap over Opus 4.6 in benchmark performan
 | Benchmark | Opus 4.6 | Mythos |
 |-----------|----------|--------|
 | Firefox exploit generation | 2 working exploits (hundreds of attempts) | **181 working exploits** |
+| Firefox zero-day discovery (codebase scan) | — | **271 zero-day vulnerabilities** (~4× what Mozilla patched in all of 2025) |
 | General benchmarks | Baseline | Massive improvements |
 
 ## Vulnerability Discovery
 
 Mythos identified long-standing security bugs in critical software projects:
+- **Firefox**: 271 zero-day vulnerabilities discovered in a single sweep (May 2026 data from Claude Security announcement)
 - **OpenBSD**: 27-year-old bug discovered
 - **FFmpeg**: 16-year-old bug discovered
 - Multiple other critical projects affected
+
+Mythos is now deployed via **Project Glasswing** for defensive security research and powers Anthropic's **Claude Security** product (Opus 4.7) for enterprise vulnerability scanning.
 
 ## Availability
 

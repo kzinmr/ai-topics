@@ -2,10 +2,10 @@
 title: "Google (AI/ML)"
 type: entity
 created: 2026-04-25
-updated: 2026-04-25
-tags: [company, lab, product, platform, ai]
+updated: 2026-05-04
+tags: [company, lab, product, platform, ai, infrastructure]
 aliases: ["Google DeepMind", "Google Research"]
-sources: [raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md]
+sources: [raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md, raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md]
 ---
 # Google (AI/ML)
 
@@ -23,9 +23,28 @@ Google is a major player in AI/ML with extensive research through Google DeepMin
 ## Key AI Products
 
 ### Gemini
-- Google's multimodal model family (Gemini 1.5, Gemini 2.0, Gemini 3.1 Flash)
+- Google's multimodal model family (Gemini 1.5, Gemini 2.0, Gemini 3.1 Pro/Flash)
 - Handles text, images, audio, video as input/output
 - Powers Google's consumer AI products (Gemini App, Google Workspace AI features)
+- Last frontier model: **Gemini 3.1 Pro** (Feb 2026); estimated 7–9 months behind Anthropic/OpenAI in model velocity
+
+### Gemini File Generation (May 2026)
+
+Gemini now supports direct file generation and export in-chat:
+- **Output Formats**: Docs, Sheets, Slides, PDF, `.docx`, `.xlsx`, `.csv`, Markdown
+- No native PowerPoint export at launch
+- **Switching Tools**: Users can import full chat histories from ChatGPT via ZIP exports or copy-paste memory summaries
+- **UK Memories**: Cross-chat memory features launched in UK to meet regulatory standards
+- Viewed as catch-up functionality vs. competitors
+
+### AI Compute Dominance
+
+Google's hardware infrastructure advantage (May 2026):
+- Controls ~**25% of global AI compute**
+- **3.8 million TPUs** + **1.3 million GPUs**
+- Google Cloud grew 63% last quarter ($20B); Azure 40%; AWS 28%
+- Alphabet 2026 capex guidance: **$180–190 billion**
+- Alexis Ohanian quote: Google's compute advantage is a long-term strategic moat
 
 ### Google AI Studio
 - Platform for experimenting with Gemini models

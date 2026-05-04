@@ -1,0 +1,156 @@
+{
+  "run_id": "20260504T071420Z",
+  "triage_timestamp": "2026-05-04T07:20:00Z",
+  "source": "newsletter-ingest",
+  "newsletters": [
+    {
+      "message_id": "<20260503123059.3.aa9a6334ea869b06@mg-d0.substack.com>",
+      "subject": "Why cultivating agency matters more than cultivating skills in the AI era | Max Schoening (Head of Product, Notion)",
+      "source_publication": "Lenny's Newsletter (Lenny Rachitsky)",
+      "date": "2026-05-03",
+      "importance": "high",
+      "wiki_relevance": true,
+      "summary": "Max Schoening (Head of Product, Notion) discusses why high agency matters more than technical skills in the AI era. Key topics: vibe coding quality gap, the 'first 10% is free' rule, 'tiny core' theory of great products, Notion's 'drive it like it's stolen' culture, Jevons Paradox for AI software demand, and the role of Claude Code in bridging design-to-production workflows.",
+      "key_concepts": [
+        "agency-vs-skills",
+        "vibe-coding-quality-gap",
+        "tiny-core-theory",
+        "jevons-paradox-ai",
+        "claude-code-workflows",
+        "drive-it-like-its-stolen",
+        "prototyping-in-terminal",
+        "saaSpocalypse-overstated"
+      ],
+      "entities_mentioned": [
+        {
+          "name": "Max Schoening",
+          "role": "Head of Product, Notion"
+        },
+        {
+          "name": "Claude Code",
+          "type": "coding-agent"
+        },
+        {
+          "name": "Ghostty",
+          "type": "terminal-emulator"
+        },
+        {
+          "name": "Figma",
+          "type": "design-tool"
+        },
+        {
+          "name": "Notion",
+          "type": "product"
+        }
+      ],
+      "recommended_actions": [
+        "Enrich/wiki-update: claude-code skill page with Notion workflow reference",
+        "Create wiki concept page: 'agency-vs-skills-ai-era' or add to existing concepts",
+        "Create concept: 'vibe-coding-quality-gap' (Jevons Paradox applied to AI software)",
+        "Link to existing entity pages: notion, max-schoening (if doesn't exist, create skeleton)"
+      ],
+      "article_url": "https://www.lennysnewsletter.com/p/why-cultivating-agency-matters-more",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-03-why-cultivating-agency-matters-more-than-cultivating-skills-in-the-ai-era-max-sc.md"
+    },
+    {
+      "message_id": "<20260503132408.3.e8c514555d635429@mg2.substack.com>",
+      "subject": "Gemini Gets to Work, Claude's Big Pull, and OpenAI Unchained",
+      "source_publication": "The Signal (Alex Banks)",
+      "date": "2026-05-03",
+      "importance": "critical",
+      "wiki_relevance": true,
+      "summary": "Comprehensive AI industry analysis covering: Google Gemini Workspace integration (native Docs/Sheets/Slides generation, UK Memories, competitor chat import tools), Anthropic enterprise dominance ($30B ARR, 40% enterprise LLM spend, 54% coding share, Opus 4.7, Claude Security, Creative Coalition with 9 professional tool connectors), OpenAI multi-cloud pivot (AWS Bedrock, Symphony open-source spec for autonomous agents, reduced compute commitments $600B through 2030), humanoid manufacturing scale (Figure 1 robot/hour, Unitree $4,290 dual-arm, RobotEra 85% efficiency), and screen-aware AI interfaces.",
+      "key_concepts": [
+        "gemini-workspace-integration",
+        "anthropic-enterprise-dominance",
+        "openai-multi-cloud-pivot",
+        "symphony-autonomous-agents",
+        "claude-security-ops",
+        "claude-creative-coalition",
+        "humanoid-manufacturing-economics",
+        "screen-aware-ai",
+        "opus-4-7-security-scanning",
+        "aws-bedrock-openai"
+      ],
+      "entities_mentioned": [
+        {
+          "name": "Google Gemini",
+          "type": "model"
+        },
+        {
+          "name": "Anthropic",
+          "type": "company"
+        },
+        {
+          "name": "OpenAI",
+          "type": "company"
+        },
+        {
+          "name": "Claude",
+          "type": "model"
+        },
+        {
+          "name": "Opus 4.7",
+          "type": "model-version"
+        },
+        {
+          "name": "Codex",
+          "type": "model"
+        },
+        {
+          "name": "Symphony",
+          "type": "open-source-spec"
+        },
+        {
+          "name": "Claude Security",
+          "type": "product"
+        },
+        {
+          "name": "Claude Creative Coalition",
+          "type": "integration"
+        },
+        {
+          "name": "Figure (BotQ)",
+          "type": "company"
+        },
+        {
+          "name": "Unitree",
+          "type": "company"
+        },
+        {
+          "name": "Amazon Bedrock",
+          "type": "cloud-service"
+        },
+        {
+          "name": "Alex Banks",
+          "role": "Author, The Signal"
+        },
+        {
+          "name": "Alexis Ohanian",
+          "role": "Commentator"
+        }
+      ],
+      "recommended_actions": [
+        "CRITICAL: Update Anthropic entity page with $30B ARR, 40% enterprise share, 54% coding share data",
+        "CRITICAL: Update OpenAI entity page with multi-cloud pivot, Symphony spec, $600B compute projection",
+        "Create wiki concept page: 'symphony-autonomous-agents' (open-source spec for agent orchestration via issue trackers)",
+        "Create concept page: 'screen-aware-ai' (next-gen interaction paradigm)",
+        "Create concept: 'humanoid-manufacturing-economics' (Figure/Unitree/RobotEra data)",
+        "Update Claude Code page with Creative Coalition connectors (Adobe, Blender, Autodesk, Ableton, SketchUp)",
+        "Create/update Claude Security entity page",
+        "Update Google Gemini entity page with Workspace native file generation"
+      ],
+      "article_url": "https://thesignal.substack.com/p/gemini-gets-to-work-claudes-big-pull",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md"
+    }
+  ],
+  "summary": {
+    "total_newsletters": 2,
+    "critical": 1,
+    "high": 1,
+    "low": 0,
+    "total_key_concepts_identified": 18,
+    "total_entities_mentioned": 20,
+    "total_recommended_actions": 15
+  }
+}

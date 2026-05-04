@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-04-29
+updated: 2026-05-04
 tags:
   - company
   - model
@@ -16,6 +16,8 @@ sources:
   - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md
   - raw/newsletters/2026-04-28-openai-breaks-free-from-microsoft.md
   - raw/articles/simonwillison.net--2026-apr-25-romain-huet--fea00393.md
+  - raw/articles/2026-04-28-openai-aws-bedrock-partnership.md
+  - raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md
 ---
 
 # OpenAI
@@ -69,6 +71,35 @@ OpenAI is a leading AI research and product company known for developing the GPT
 - **World ID 4.0 / AgentKit** — Sam Altman's Worldcoin project reached 18M verified users across 160 countries. AgentKit enables AI agents to carry cryptographic proof they act for verified humans. Vercel has "human in the loop" authentication live; Okta planning "Human Principal" for API policies. New integrations include Tinder (verified-human badges), Zoom ("Deep Face" iris+live selfie cross-checks), and DocuSign (proof-of-human signatures).
 - **SpaceX-Cursor Deal** — SpaceX has right to acquire Cursor for $60B or pay $10B for collaborative compute credits (likely Colossus H100 equivalents). Signals industry trend: top coding labs need to own both model and product.
 - **Microsoft Partnership Renegotiation (Apr 2026)** — OpenAI ended exclusive distribution agreement with Microsoft, allowing multi-cloud deployment on AWS, Google Cloud, and Oracle. Microsoft retains nonexclusive IP license through 2032 with capped 20% revenue share through 2030. AGI escape clause replaced with fixed timelines. See [[entities/microsoft]] for Microsoft perspective.
+
+### AWS Bedrock Integration (Apr 2026)
+
+In a landmark multi-cloud expansion, OpenAI launched three offerings on **Amazon Bedrock** (all limited preview, April 28, 2026):
+
+| Offering | Description |
+|----------|-------------|
+| **OpenAI Models on Bedrock** | Frontier models including GPT-5.5 available through Bedrock APIs with IAM, PrivateLink, guardrails, encryption, CloudTrail |
+| **Codex on Bedrock** | Coding agent via Bedrock API; Codex CLI, desktop app, VS Code extension; usage applies to AWS cloud commitments |
+| **Bedrock Managed Agents (powered by OpenAI)** | Production-ready agents with persistent context, tool use, multi-step workflows; OpenAI harness + AWS infrastructure |
+
+- **Significance**: Direct consequence of the Microsoft partnership renegotiation — OpenAI now free to sell across any cloud
+- Bedrock Managed Agents handles infrastructure, orchestration, and governance, letting teams focus on agent utility
+- Each agent has its own identity, logs every action, and runs in the customer's AWS environment
+
+### Economics & IPO Outlook (May 2026)
+
+OpenAI's financial position compared to Anthropic:
+
+| Metric | OpenAI | Anthropic |
+|--------|--------|-----------|
+| **Annual Revenue** | $25B ARR | $30B ARR |
+| **Training Costs** | Forecast to exceed revenue 2026–2028 | Cleaner unit economics (enterprise focus) |
+| **IPO Target** | Likely 2027 (delayed due to internal controls) | October 2026 ($400–500B valuation) |
+| **Compute Strategy** | "Buy everything" / Consumer scale | Targeted enterprise / Coding focus |
+
+- CFO Sarah Friar reportedly walked back compute commitments from $1.4T to $600B through 2030
+- Concern over meeting contract payments if growth doesn't accelerate
+- OpenAI's consumer-heavy strategy contrasts with Anthropic's enterprise-first approach
 
 ## Security Architecture
 
