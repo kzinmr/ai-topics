@@ -1,3 +1,10 @@
+## [2026-05-04] genai-handbook | New meta-knowledge concept page (William Brown GenAI Handbook)
+- **[[concepts/genai-handbook]]** — Created comprehensive meta-knowledge concept page for William Brown (@willccbb) GenAI Handbook v0.1 (June 2024). 9-section roadmap mapping against existing wiki concepts with coverage ratings (~5-85% per section), linked resource evaluation and quality assessment, gap analysis (6 topics, 3 priorities), and learner-type recommendations (Engineer / Researcher / Beginner).
+- リソース評価の主な判定: Karpathy「Let's build GPT」· Lilian Wengエージェント記事· 3Blue1Brownシリーズ· Tim Dettmers量子化ブログ → 🟢 現在も価値不変。GANs関連· Goodfellow DL本 → ⚪ 歴史的価値のみ。
+- 主要ギャップ: 🔴 SSM/Mamba, Representation Engineering, 🟡 Model Merging, Context Scaling
+- New page: concepts/genai-handbook.md
+- Raw article: raw/articles/2026-05-04_genai-handbook.md
+- Updated: entities/will-brown.md (cross-link to concept page), wiki/index.md (Concept +1 → 422, Total +1 → 820), wiki/log.md
 
 ## [2026-05-04] llm-patterns-eugene-yan | New concept page (Eugene Yan LLM Patterns framework)
 - **[[concepts/llm-patterns-eugene-yan]]** — Created comprehensive concept page for Eugene Yan 7-pattern framework for building LLM-based systems and products. Covers: Evals, RAG, Fine-tuning, Caching, Guardrails, Defensive UX, User Feedback. Includes v1 to v2 evolution (vs O Reilly co-authored version). Maps each pattern to existing wiki concept pages with wikilinks.

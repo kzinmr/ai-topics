@@ -25,7 +25,7 @@ sources: []
 | **GitHub** | [github.com/willccbb](https://github.com/willccbb) |
 | **Blog** | [willcb.com/research/](https://willcb.com/research/) |
 | **Role** | Research Lead, Prime Intellect |
-| **Known for** | Verifiers library, PRIME-RL, GRPO demos, GenAI Handbook |
+| **Known for** | Verifiers library, PRIME-RL, GRPO demos, [[concepts/genai-handbook|GenAI Handbook]] |
 | **Education** | PhD Computer Science, Columbia University (advisors: Christos Papadimitriou, Tim Roughgarden) |
 
 ## Overview

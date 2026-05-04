@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
->| Last updated: 2026-05-04 | Total pages: 819 | Full entries: 786 | Stubs: 613 |
+>| Last updated: 2026-05-04 | Total pages: 820 | Full entries: 786 | Stubs: 613 |
 
 ## Entities (392 pages)
 
@@ -428,7 +428,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (421 pages)
+## Concepts (422 pages)
 
 |- [[concepts/accelerate]] — Hugging Face Accelerate: zero-code-change distributed training launcher. Created/led by Zach Mueller (@TheZachMueller). Unified abstraction layer making FSDP and DeepSpeed interchangeable via CLI or Python plugins.
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
@@ -617,6 +617,7 @@
 ||- [[concepts/gemini]] — **Gemini** is Google DeepMind's family of multimodal AI models, spanning text, images, video, audio, and code. Originally announced in December 2023, Gemini has evolved through multiple generations...
 - [[concepts/generic-agent-self-evolving]] — **GenericAgent (GA)** is a self-evolving LLM agent system from Fudan University (arXiv:2604.17091, April 2026) built around **contextual information density maximization** — the principle that long...
 |- [[concepts/generative-app-evolution]] — The evolution trajectory of AI applications from generative UI (stateless, single-turn) to generative apps (stateful, multi-turn with persistence). Maps the "generative staircase" and the FCIS (Functional Core / Imperative Shell) pattern for AI-era architecture.
+|- [[concepts/genai-handbook|GenAI Handbook]] — メタ知識: William Brown (@willccbb)のGenerative AI学習リソースロードマップ。9セクションのWikiカバレッジマッピング、リンクリソース評価、ギャップ分析、学習者タイプ別推奨。
 |- [[concepts/gepa]] — GEPAはDSPyに統合された遺伝的アルゴリズムベースのプロンプト最適化手法。Pareto最適化により品質とコストを同時に最適化し、GRPOより35倍少ないサンプルで6%高い性能を達成。ICLR 2026 Oral。
 |- [[concepts/glass-slipper-effect]] — Framework for LLM user retention from the OpenRouter State of AI 2025 study. Foundational cohorts, Boomerang Effect, and workload-model fit drive model loyalty.
 |- [[concepts/gliclass]] — Encoder-only zero-shot text classification model family (Knowledgator). Up to 50× faster than Cross-Encoders. Three sub-families: V3 (general), Instruct (instruction-following), Multilang (20 languages). Apache-2.0.
