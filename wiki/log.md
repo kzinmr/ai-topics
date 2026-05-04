@@ -1,3 +1,14 @@
+## [2026-05-04] learning-llms-in-2025 | New concept page (Yoav Goldberg's curriculum guide)
+- **[[concepts/learning-llms-in-2025|Learning LLMs in 2025]]** — Created meta-knowledge concept page for Yoav Goldberg's curated LLM curriculum guide. Evaluates 15 academic resources on quality, accessibility, and relevance with learner-type-specific recommendations.
+  - Courses: Chiang (TONN), CMU LLMs, Princeton Deep Dive, Stanford Human-Centered, Berkeley Safety, JHU Self-supervised, Stanford CS336 (Language Models from Scratch), UW NLP LLM, NYU NLU
+  - Seminars: Robin Jia Science of LLMs, Danqi Chen 2022, Michael Hahn Alignment, Tal Linzen Cognitive
+  - Videos: Stanford CS25
+  - Key findings: CS336 = best for implementation-focused learners, Princeton Deep Dive = best for research-focused, CMU LLMs = best all-around entry point
+  - Accessibility warnings: Neubig ANLP schedule page empty, both Tal Linzen resources behind Google Docs access walls
+  - New page: concepts/learning-llms-in-2025.md
+  - New entity: [[entities/yoav-goldberg]]
+  - Updated: wiki/index.md (Entity +1, Concept +1), wiki/log.md
+
 ## [2026-05-04] Optimum quantization guide — accumulation types, energy efficiency, granularity
 
 - **[[concepts/model-quantization]]** — Expanded with 3 new sections from HF Optimum docs:

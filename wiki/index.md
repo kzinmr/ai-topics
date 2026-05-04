@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
->| Last updated: 2026-05-04 | Total pages: 813 | Full entries: 780 | Stubs: 613 |
+>| Last updated: 2026-05-04 | Total pages: 815 | Full entries: 782 | Stubs: 613 |
 
-## Entities (391 pages)
+## Entities (392 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -350,6 +350,7 @@
 - [[entities/yacine-mahdid]] — **URL:** https://yacine.ca/
 - [[entities/yann-lecun]] — **フルネーム** | Yann André LeCun |
 - [[entities/yeachan-heo]] — Creator of **Oh-My-Codex (OmX)** workflow layer for Codex CLI and **Oh-My-Claudecode (OMC)**. Algorithmic trader in Seoul. Primary collaborator on **[[claw-code]]** Rust implementation.
+- [[entities/yoav-goldberg]] — NLP researcher, author of 'Neural Network Methods for NLP', curator of 'Learning LLMs in 2025' guide. Formerly at Bar-Ilan University and AI2.
 - [[entities/ysymyth]] — YSYMYTH（スケルトンページ）
 - [[entities/zach-mueller]] — **Zach Mueller** (@TheZachMueller, muellerzr). Lead developer of Hugging Face Accelerate. ML Engineer at 🤗. fastai educator, OSS author (AdaptNLP, fastdebug). Distributed training infrastructure expert.
 - [[entities/zach-tratar]] — AI @ Notion. Founded Embra (acquired 2026). Argues for unified AI context apps over vertical SaaS.
@@ -427,7 +428,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (417 pages)
+## Concepts (418 pages)
 
 |- [[concepts/accelerate]] — Hugging Face Accelerate: zero-code-change distributed training launcher. Created/led by Zach Mueller (@TheZachMueller). Unified abstraction layer making FSDP and DeepSpeed interchangeable via CLI or Python plugins.
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
@@ -702,6 +703,7 @@
 |- [[concepts/lambda-rlm]] — Deterministic pipeline variant of Recursive Language Models for engineering report generation. Plan (0 LLM calls) → Extract+Review → Generate. 14x token reduction, +8.4% quality improvement. By [[entities/theodoros-galanos|Theodoros Galanos]].
 |- [[concepts/late-interaction-retrieval]] — Antoine Chaffin's ColBERT/MaxSim preserving token-level detail. 150M model outperforms 7B dense models on reasoning tasks (BRIGHT). Part 4 of the RAG Is Not Dead series.
 |- [[concepts/latent-briefing]]
+|- [[concepts/learning-llms-in-2025|Learning LLMs in 2025]] — メタ知識: Yoav Goldberg精選のLLM学習カリキュラムマップ。15のアカデミックリソースを品質・アクセス性・関連性で評価。学習者タイプ別の優先順位付き。
 |- [[concepts/llm-as-judge]] — LLM-as-JudgeはLLMを使用してLLM出力を評価するパラダイム。3つのバイアス类型（ルーブリック順序、スコアID、参照解答）と7つのベストプラクティスを整理。高リスク評価にはGPT-4oクラスが必要。
 ||- [[concepts/llm-assisted-writing]] — LLM-Assisted Writing: authors use LLMs to draft/structure content, then apply human editing to restore personal voice and authenticity. Case study: Ibrahim Diallo.
 - [[concepts/llm-course-roadmap]] — メタ知識: Maxime LabonneのLLM Courseを既存Wiki概念にマッピングした知識マップ。カリキュラム構造を通してカバレッジとギャップを可視化。
