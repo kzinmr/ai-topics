@@ -7,6 +7,15 @@
 - Updated: wiki/index.md (800 total pages), wiki/entities/_index.md, wiki/log.md
 - Source: [Letting AI Posttrain AI - Thoughtful Lab](https://www.thoughtfullab.com/letting-ai-posttrain-ai.html)
 
+## [2026-05-04] MGH Validation: LongCoT Experiment — Zhang's RLM LongCoT article ingested
+
+- **[[concepts/mismanaged-geniuses-hypothesis]]** — Added "Empirical Validation: LongCoT Experiment" section: GPT-5.2 + RLM + Claude Code trajectory tips = 65.6% on LongCoT-mini (baseline 38.7%). Three failure modes identified (brute-force, verification gaps, prompting gaps). Ablation proves RLM mechanism is essential.
+- **[[concepts/rlm-recursive-language-models]]** — Added "MGH Validation: Zhang's Direct LongCoT RLM Experiment" section with results table (65.6% total, >70% with partial rewards) and identified failure modes.
+- **[[entities/alex-zhang]]** — Added Apr 2026 LongCoT blog post to Blog Posts table; added "Proof (prompt-level steering)" bullet to MGH section.
+- **[[entities/omar-khattab/rlm]]** — Added LongCoT-mini result (65.6%) to benchmark list.
+- **raw/articles/2026-04-26_alex-zhang-longcot-rlm-mgh.md** — Saved raw article: Alex Zhang's direct application of MGH to LongCoT via RLM + Claude Code trajectory analysis.
+- Source: https://alexzhang13.github.io/blog/2026/longcot-rlm/
+
 ## [2026-05-04] Multi-Teacher On-Policy Distillation (MOPD) — New concept from Notion article
 
 - **[[concepts/multi-teacher-on-policy-distillation]]** — Created concept page: MOPD is a post-training primitive that solves the see-saw problem via reverse KL distillation from multiple teachers within a GRPO-like loop. Covers IcePop, full-vocabulary distillation, WAL-based fault-tolerant rollouts, and comparisons across MiMo-V2-Flash, GLM-5, Nemotron-Cascade 2, and DeepSeek-V4.

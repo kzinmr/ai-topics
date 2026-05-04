@@ -2,7 +2,7 @@
 title: "The Mismanaged Geniuses Hypothesis (MGH)"
 tags: [agents-scaffolding-composition-inference-scaling-hypothesis]
 created: 2026-04-19
-updated: 2026-05-02
+updated: 2026-05-04
 type: concept
 ---
 
@@ -159,6 +159,33 @@ The [[concepts/sparse-signal-loop|Sparse Signal Loop]] experiment by [[entities/
 - **Warns against the "Judge Gap":** Persistent memory can stabilize bad habits (0.9667 Judge YES vs 0.5667 actual solve rate), demonstrating that scaffold improvements must be validated against ground-truth task completion, not proxy metrics
 
 **See:** [[concepts/sparse-signal-loop]] for the full experimental design, phase-by-phase results, and efficiency analysis.
+
+### Empirical Validation: LongCoT Experiment (April 2026)
+
+**Alex Zhang** (co-authored with Omar Khattab) directly applied the MGH thesis to the LongCoT benchmark (Motwani et al., 2026) — a graph-structured compositional reasoning task. The experiment demonstrated that simple **prompt-level fixes** (generating "tips" via Claude Code trajectory analysis) boosted RLM performance from 50.6% to 65.6% on LongCoT-mini, without any model retraining.
+
+**Methodology:**
+1. Zhang used **Claude Code** to analyze RLM failure trajectories on LongCoT
+2. Identified three failure modes: brute-force timeouts, lack of verification, and prompting gaps
+3. Generated a set of "tips": graph structure descriptions, fake problem examples, and instructions to avoid brute-forcing
+
+**Results:**
+
+| Method | Total Score | Key Finding |
+|--------|-------------|-------------|
+| GPT-5.2 (Base) | 38.7% | Prior SOTA without scaffold |
+| RLM (GPT-5.2) - Initial | 50.6% | Raw RLM without targeted tips |
+| **RLM (GPT-5.2) + Tips** | **65.6%** | **+27pp over base, +15pp over raw RLM** |
+| RLM + Partial Rewards | >70% | With partial correctness accounting |
+
+**Ablation:** Providing the same tips to a standard LM (without RLM mechanism) resulted in *worse* performance, proving that the **RLM mechanism (recursive decomposition)** is essential for tracking graph-structured dependencies.
+
+**MGH connection:**
+- The ~39% → ~66% jump validates MGH's core claim: "frontier model cannot solve X" is often a premature conclusion based on sub-optimal scaffolding
+- Demonstrates **prompting as steering**: while RL is the long-term goal for RLM behavior, prompting is a highly effective short-term strategy to avoid sparse rewards
+- Shows that frontier models (Claude Code) can *self-diagnose* their own failure patterns and generate corrective scaffolding — a form of **self-improving harness**
+
+**Source:** [[raw/articles/2026-04-26_alex-zhang-longcot-rlm-mgh.md]] | [alexzhang13.github.io/blog/2026/longcot-rlm/](https://alexzhang13.github.io/blog/2026/longcot-rlm/)
 
 ## Key Quotes
 

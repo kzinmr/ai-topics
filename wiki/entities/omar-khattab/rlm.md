@@ -5,7 +5,7 @@ tags:
   - inference
   - context
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-04
 type: sub-entity
 ---
 
@@ -48,6 +48,7 @@ The through-line across all three: **architectural flexibility over brute-force 
 - **BrowseComp-Plus:** perfect performance at 1000 documents (10M+ tokens)
 - **Cost:** RLM runs are comparable to or cheaper than base model calls (median)
 - **Scale:** effectively processes 10M+ token inputs — 100× beyond native context windows
+- **LongCoT-mini (Apr 2026):** Zhang demonstrated GPT-5.2 + RLM + trajectory-analysis tips achieves **65.6%** (baseline GPT-5.2: 38.7%, raw RLM: 50.6%), validating the MGH thesis that scaffold-level fixes unlock latent model capability
 
 ## Connection to "The Second Half"
 

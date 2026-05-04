@@ -2,7 +2,7 @@
 title: "Alex L. Zhang"
 tags: [person]
 created: 2026-04-13
-updated: 2026-04-24
+updated: 2026-05-04
 type: entity
 ---
 
@@ -84,7 +84,8 @@ Co-authored with Zhening (Zed) Li and Omar Khattab, MGH posits that **frontier l
 - Current agent scaffolds (ReAct, tool-use APIs) are brittle and force narrow reasoning patterns
 - Models can already decompose tasks correctly but lack the environment to execute decompositions
 - Learning the **composition operator** (chaining in-distribution LM calls into OOD solutions) is more efficient than scaling parameters
-- **Proof:** Qwen3-4B-Instruct + RL bootstrapping on simple tasks → 100% success on 1M context/8 needles (was ~0%)
+- **Proof (RL bootstrapping):** Qwen3-4B-Instruct + RL bootstrapping on simple tasks → 100% success on 1M context/8 needles (was ~0%)
+- **Proof (prompt-level steering):** GPT-5.2 + RLM + Claude Code-generated tips → 65.6% on LongCoT-mini (baseline: 38.7%), demonstrating that even **prompt-level fixes** unlock massive capability gains
 
 MGH extends the RLM framework into a broader industry thesis: **stop building bigger models, start building better scaffolds.**
 
@@ -158,8 +159,9 @@ Prime Intellect synthesizes both:
 
 | Date | Title | Key Insight |
 |------|-------|-------------|
-| Oct 2025 | "Recursive Language Models" | RLMs treat context as an environment variable, not a static prompt |
-| 2024 | "A Meticulous Guide to Advances in Deep Learning Efficiency" | Comprehensive survey from pre-AlexNet to foundation models |
+| Oct 2025 | Recursive Language Models | RLMs treat context as an environment variable, not a static prompt |
+| Apr 2026 | A Mini Exercise on the Mismanaged Geniuses Hypothesis (RLMs on LongCoT) | Simple prompt-level fixes boost RLM from 50.6% -> 65.6% on LongCoT-mini, validating MGH via Claude Code trajectory analysis |
+| 2024 | A Meticulous Guide to Advances in Deep Learning Efficiency | Comprehensive survey from pre-AlexNet to foundation models |
 
 ## Quotes
 

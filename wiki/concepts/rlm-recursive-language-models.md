@@ -12,7 +12,7 @@ tags:
   - context-management
   - coding-agents
 created: 2026-04-13
-updated: 2026-05-01
+updated: 2026-05-04
 type: concept
 sources:
   - https://arxiv.org/abs/2512.24601
@@ -78,6 +78,26 @@ Raymond Weitekamp ([@raw_works](https://twitter.com/raw_works)) demonstrated tha
 Sources:
 - [RLMs are SOTA on LongCoT](https://raw.works/rlms-are-sota-on-longcot/) (Apr 2026)
 - [RLMs are the New Reasoning Models](https://raw.works/rlms-are-the-new-reasoning-models/) (Apr 2026)
+
+### MGH Validation: Zhang's Direct LongCoT RLM Experiment (April 2026)
+
+**Alex Zhang** directly tested the Mismanaged Geniuses Hypothesis on LongCoT by using **Claude Code** to analyze RLM failure trajectories and generate corrective "tips." Unlike Weitekamp's approach (open models + dspy.RLM), Zhang used **GPT-5.2 + RLM + targeted prompting fixes**:
+
+| Method | Total Score | MATH | CHEM | CS | LOGIC | CHESS |
+|--------|-------------|------|------|----|-------|-------|
+| GPT-5.2 (Base) | 38.7% | 26.0% | 37.0% | 40.4% | 53.6% | 36.6% |
+| RLM (GPT-5.2) - Initial | 50.6% | 5.6% | 50.0% | 11.0% | 86.7% | 93.0% |
+| **RLM (GPT-5.2) + Tips** | **65.6%** | Significant Incr. | — | — | — | — |
+| Partial Rewards | >70% | — | — | — | — | — |
+
+**Identified failure modes via trajectory analysis:**
+1. **Brute-force timeouts** — Models tried to solve MATH/CS nodes via brute force, crashing the REPL
+2. **Lack of verification** — Sub-agents launched but outputs never validated
+3. **Prompting gaps** — Models not instructed on how to handle graph-structured dependencies
+
+**Key insight:** The same tips given to a non-RLM (standard) LM resulted in *worse* performance — proving the RLM's recursive decomposition mechanism is essential for tracking graph-structured reasoning.
+
+Source: [[raw/articles/2026-04-26_alex-zhang-longcot-rlm-mgh.md]] | [alexzhang13.github.io/blog/2026/longcot-rlm/](https://alexzhang13.github.io/blog/2026/longcot-rlm/)
 
 ### Benchmark Performance
 
