@@ -2,10 +2,11 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-04 | Total pages: 831 | Full entries: 790 | Stubs: 612 |
+> Last updated: 2026-05-04 | Total pages: 836 | Full entries: 795 | Stubs: 612 |
 
 ## Entities (392 pages)
 
+- [[entities/0xjeff]] — 0xJeff — Crypto/DeFi analyst and Hermes Agent power user. 8 years PE/VC/IB. Known for documenting Hermes as personal analyst pipeline.
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
 - [[entities/addy-osmani]] — **X/Twitter** | @addyosmani |
@@ -34,6 +35,7 @@
 - [[entities/arize]] — AI observability & LLM evaluation platform. Built Phoenix OSS (2M+ monthly downloads). $131M raised. "Datadog for agents." Enterprise customers: Uber, Chime, eBay, Spotify.
 - [[entities/arlan-r]] — **Name** | Arlan Rakhmetzhanov |
 - [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko, born 10 May 1989, Austria) is a software engineer, open-source developer, and entrepreneur who has profoundly shaped the Python ecosystem and is now building the next ge...
+- [[entities/atal-upadhyay]] — Atal Upadhyay — AI/ML engineer and technical blogger specializing in agent harness architecture, MCP, RAG, Agentic AI. Author of 9-component agent harness framework.
 - [[entities/avi-im]] — **Blog** | avi.im | Creator of **KVM**, author of [[concepts/zero-disk-architecture]]
 - [[entities/ashpreet-bedi]] — **Name** | Ashpreet Bedi |
 - [[entities/beads]] — Distributed graph issue tracker for AI coding agents. Created by Steve Yegge (Gastown Hall), powered by Dolt. Agent-optimized with dependency tracking, memory compaction, and MCP integration.
@@ -182,6 +184,7 @@
 - [[entities/john-d-cook-applied-mathematics-consulting]] — **Blog** | johndcook.com/blog |
 - [[entities/john-schulman]] — **Role** | Co-founder & Chief Scientist, Thinking Machines Lab |
 - [[entities/jonathan-whitaker]] — **X** | @johnowhitaker |
+- [[entities/julien-bek]] — Julien Bek — Partner at Sequoia Capital (London). Author of "Services: The New Software" thesis. Angel investor in Revolut.
 - [[entities/justine-tunney]] — Software engineer, creator of llamafile. 84 CPU matmul kernels for llama.cpp (30-500% speedup). Cosmopolitan Libc, Mozilla alum.
 - [[entities/jxmo]] — **X** | @jxmnop |
 - [[entities/jyn]] — **Blog** | jyn.dev |
@@ -293,6 +296,7 @@
 - [[entities/scott-wu]] — CEO and co-founder of **Cognition AI**, the company behind **Devin** — the world's first autonomous AI software engineer. Former competitive programming champion (3× IOI gold medals, 1st place in 2...
 - [[entities/seangoedecke-com]] — **URL:** https://www.seangoedecke.com
 - [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. 6 specialized tools for code analysis/search/retrieval from any public git repo. Previously indexed 75B+ lines of code. Built by [[ben-boyter]]. Free beta, no API key needed.
+- [[entities/sequoia-capital]] — Sequoia Capital — Leading VC firm. Published the Service-as-Software thesis (2026) via partner Julien Bek. Backs AI-native service companies like Rillet, Magentic, Harvey.
 - [[entities/sero]] — Sero (known online as **0xSero**) is an open-source developer, AI infrastructure builder, and founder of **Sybil Solutions**. He operates at the intersection of AI agents, blockchain infrastructure...
 - [[entities/sigrid-jin]] — Creator of **[[claw-code]]**, the clean-room Rust/Python reimplementation of Claude Code's agent harness. Fastest repo in GitHub history to surpass 100K stars. Featured in WSJ for 25B Claude Code tokens. Korean-Canadian, UBC.
 - [[entities/sglang]] — **Type** | LLM Inference Engine / Serving Framework |
@@ -839,6 +843,7 @@
 - [[concepts/self-evolving-agents]] — エージェントが自身の振る舞いや能力を時間とともに改善していくパターン。固定されたロジックではなく、フィードバックと学習による継続的な進化を可能にする。
 - [[concepts/self-hosting-ai-development]] — > Strategies and patterns for deploying AI-generated applications to self-hosted infrastructure, covering the full pipeline from development to production.
 - [[concepts/serializability]] — Serializability in AI systems refers to the ability to reliably convert LLM outputs into structured, typed data formats (JSON, Pydantic models, etc.) that can be consumed by downstream systems.
+- [[concepts/service-as-software]] — AI business model where companies sell completed outcomes (the work itself) rather than tools. Julien Bek/Sequoia thesis: $1 spent on software = $6 on services. Insurance, accounting, legal, IT managed services.
 - [[concepts/session-hierarchy-management]] — **Session Hierarchy Management** is a three-level framework for organizing AI coding work across session boundaries. It unifies **single-session context hygiene** (trq212/Anthropic) with **multi-ag...
 - [[concepts/sglang-pipeline-parallelism]] — **Type** | Inference Parallelism Strategy |
 - [[concepts/showboat]] — Moved to concepts/harness-engineering/agentic-workflows/showboat.md

@@ -2,7 +2,7 @@
 title: "Yacine Mahdid"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-04
 type: entity
 ---
 
@@ -51,6 +51,7 @@ He is active on X (@yacineMTB) where he shares technical insights, advocates for
 | 2025–2026 | dingcad reaches 473 stars — live reload CAD scripting |
 | 2026 | Active contributor to tscircuit/tscircuit-autorouter (open-source PCB routing) |
 | 2026 | Last known blog update: yacine.ca/practice.mp4 |
+| Nov 2025 | Published "networking guide for a hardened technical introvert" — an X Article applying graph theory concepts to social networking strategy for technical introverts. 56.6K views, widely bookmarked in the AI developer community |
 
 ## Core Ideas
 

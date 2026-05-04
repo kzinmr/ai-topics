@@ -1,13 +1,13 @@
 ---
 title: "Agent Harness"
 created: 2026-04-27
-updated: 2026-04-30
+updated: 2026-05-04
 tags:
   - harness-engineering
   - architecture
   - ai-agents
 aliases: [agent-harness, harness-anatomy, agent-scaffolding]
-related: [[concepts/harness-engineering]], [[concepts/deep-agents-runtime]], [[concepts/agent-loop-orchestration]], [[concepts/context-engineering]], [[concepts/bitter-lesson-harnessing]]
+related: [[concepts/harness-engineering]], [[concepts/deep-agents-runtime]], [[concepts/agent-loop-orchestration]], [[concepts/context-engineering]], [[concepts/bitter-lesson-harnessing]], [[entities/atal-upadhyay]]
 sources: [
   "https://x.com/akshay_pachaar/status/2041146899319971922",
   "https://x.com/i/article/2041146899319971922",
@@ -16,7 +16,8 @@ sources: [
   "raw/articles/2026-the-self-healing-agent-harness.md",
   "raw/articles/2026-the-ai-cake-trade.md",
   "raw/articles/crawl-2026-04-18-token-economics.md",
-  "raw/articles/2026-is-s3-faster-than-a-file-system.md"
+  "raw/articles/2026-is-s3-faster-than-a-file-system.md",
+  "raw/articles/2026-05-02_atalupadhyay-agent-harness.md"
 ]
 ---
 
@@ -120,6 +121,31 @@ Boris Cherny (creator of Claude Code) noted that giving the model a way to verif
 
 ### 12. Termination Conditions
 Layered: model produces response with no tool calls, maximum turn limit exceeded, token budget exhausted, guardrail tripwire fires, user interrupts, or safety refusal returned. Simple questions: 1-2 turns. Complex refactoring: dozens of tool calls across many turns.
+
+## Atal Upadhyay's 9-Component Framework (May 2026)
+
+[[entities/atal-upadhyay|Atal Upadhyay]] proposed a canonical decomposition of an agent harness into 9 core components in his guide "The Agent Harness: What It Is, Why It Matters, and How to Build One from Scratch":
+
+| # | Component | Role |
+|---|-----------|------|
+| 1 | **The `while` Loop** | Heartbeat managing Decide→Act→Observe cycle; requires `max_iterations` |
+| 2 | **Context Management** | Token budgeting with compaction (summarizing old turns, keeping recent verbatim) |
+| 3 | **Tools & Skills Registry** | Map of capabilities with schemas and permission levels |
+| 4 | **Sub-Agent Management** | Isolated sessions for parallel/complex tasks to prevent single-thread choking |
+| 5 | **Built-In Skills** | OOTB capabilities: file ops, code navigation |
+| 6 | **Session Persistence** | Append-only logs (JSON/Markdown) for crash recovery |
+| 7 | **System Prompt Assembly** | Dynamic injection of project-specific rules into static core prompt |
+| 8 | **Lifecycle Hooks** | Pre/post-tool hooks for auditing, modifying, or blocking actions |
+| 9 | **Permissions & Safety** | Hierarchy (read/workspace/full) requiring human approval for destructive actions |
+
+Upadhyay's framework complements the industry analysis above by providing a **build-from-scratch** reference architecture, including a minimal Python implementation demonstrating each component. His distinction between frameworks (building blocks) and harnesses (working agents out of the box) reinforces the central theme: the harness determines agency, not the model.
+
+Key implementation insights from the framework:
+- **Prefix Caching**: Always place the static core prompt first — changing dynamic content order invalidates cache, causing 3-5x latency spikes
+- **Semantic Compaction**: Use a smaller LLM to summarize history while preserving function signatures and error traces
+- **Command Classification**: Parse shell commands via AST/shlex (not string matching) to prevent permission bypass
+
+> "Don't just prompt the model. Engineer the loop. The harness is where agency becomes reliable." — Atal Upadhyay
 
 ## The Ralph Loop Pattern
 

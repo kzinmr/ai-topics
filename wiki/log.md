@@ -1,3 +1,30 @@
+## 2026-05-04 X Bookmarks Ingest
+
+**Batch**: 6 bookmarks → 3 articles scraped, 3 metadata-only (X auth wall).
+
+### New Pages Created
+- 🆕 [[entities/atal-upadhyay]] — AI/ML engineer, agent harness blogger. Author of 9-component harness framework.
+- 🆕 [[entities/julien-bek]] — Sequoia Capital partner. Author of "Services: The New Software" thesis.
+- 🆕 [[entities/0xjeff]] — Crypto/DeFi analyst, Hermes Agent power user. Documented Hermes as personal analyst pipeline.
+- 🆕 [[entities/sequoia-capital]] — Leading VC firm. Published Service-as-Software thesis.
+- 🆕 [[concepts/service-as-software]] — AI business model: sell outcomes, not tools. 6x budget expansion over SaaS.
+
+### Pages Enriched
+- ✏️ [[concepts/agent-harness]] — Added Atal Upadhyay's 9-Component Framework section with reference implementation insights.
+- ✏️ [[entities/teortaxestex]] — Added Inferencemaxxing article (April 2026), coining term for inference-centric paradigm shift.
+- ✏️ [[entities/yacine-mahdid]] — Added "networking guide for a hardened technical introvert" (Nov 2025, 56.6K views) to timeline.
+
+### Raw Articles Saved
+- `raw/articles/2026-03-05_sequoia-services-the-new-software.md` — Sequoia Capital, Julien Bek
+- `raw/articles/2026-05-02_atalupadhyay-agent-harness.md` — Atal Upadhyay, agent harness architecture
+- `raw/articles/2026-05-03_atalupadhyay-beyond-markdown-memory.md` — Atal Upadhyay, parametric vs contextual memory
+
+### Metadata-Only (X auth wall, no mirror found)
+- "What I Use Hermes Agent For (And How I Use It)" — author 109011736, 3,555 bookmarks
+- "Hermes as the Ultimate Analyst" — @0xJeff, 555 bookmarks
+- "Inferencemaxxing" — @teortaxesTex, 716 bookmarks
+- "networking guide for a hardened technical introvert" — @yacinelearning, 3,624 bookmarks
+
 ## [2026-05-04] Interconnects Distillation Panic | New concept + enriched model-distillation + Nathan Lambert update
 
 - **[[concepts/model-distillation]]** — Enriched from stub to comprehensive: full definition, how it works (core mechanism, 4 forms in post-training table), the 2026 "Distillation Panic" context (Anthropic's accusations, Lambert's response, policy fallout), Kevin Xu's "crutch" theory, and risks of regulatory overreach. Status: stub → active.

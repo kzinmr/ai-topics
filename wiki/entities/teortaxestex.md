@@ -4,7 +4,7 @@ type: entity
 url: "https://aguea.net/teortaxesTex"
 twitter: "https://x.com/teortaxesTex"
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-05-04
 tags:
   - person
   - blogger
@@ -64,6 +64,10 @@ TeortaxesTex provides unique perspective on Chinese AI ecosystem:
 - Critiques Western media's framing of Chinese tech companies
 - Argues that US chip export restrictions are counterproductive ("Americans are uniquely vulnerable because they're parochial and ignorant")
 - Highlights that China's energy abundance and manufacturing scale allow older nodes (7nm ≈ Hopper generation) to match newer architectures when efficiency-per-watt is less constrained
+
+### Inferencemaxxing (April 2026)
+
+Published a long-form X Article exploring the inference economics landscape, arguing that the AI industry is shifting from a training-centric to an inference-centric paradigm. The article's title coined the term "Inferencemaxxing" — the strategic optimization of inference infrastructure as the primary competitive differentiator in 2026. This complements TeortaxesTex's broader thesis about compute economics and US-China AI competition dynamics.
 
 ## Geopolitical Perspective
 
