@@ -334,3 +334,13 @@
 - Updated [[concepts/inference/_index]] — TensorRT-LLMをエンジン比較表に追加
 - Updated [[index]] — Concepts 393→399, added 7 new entries + updated 2 TODO entries
 - Sources: (new pages are skeleton/L1, will need article ingestion for enrichment)
+
+---
+
+## [2026-05-04] blog-wiki-ingest | 18 articles, 0 created, 0 updated
+- **Pipeline**: blog-ingest → blog-triage → blog-wiki-ingest
+- **Checkpoint**: 20260504T070032Z
+- **Take**: 0 — 既存Wikiページですべてカバー済み
+- **Reference**: 4 — Simon Willison/Anthropic sycophancy (anti-sycophancy.md), Martin Alderson CopyFail (martin-alderson.md), George Hotz essay (george-hotz.md), Gary Marcus healthcare (gary-marcus.md)
+- **Skip**: 14 — Zig, PNG, touch typing, RSS→Atom, politics, staff engineer, math, sponsor page, Steve Jobs, HTML/CSS, 86-DOS, Bluesky politics, wheel history, empty file
+- **Verdict**: No new wiki pages needed. All AI-relevant articles already captured in existing entity/concept pages.
