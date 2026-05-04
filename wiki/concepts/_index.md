@@ -423,9 +423,13 @@
    423|
    424|## Context-Window-Management.Md
    425|
-   426|- [[concepts/context-window-management]] — The core challenge: LLMs have a fixed context window, but software projects have unbounded complexity. Effective management is the difference between a productive AI session and a confused, expensive 
-   427|
-   428|## Critique-Shadowing.Md
+- [[concepts/context-window-management]] — The core challenge: LLMs have a fixed context window, but software projects have unbounded complexity. Effective management is the difference between a productive AI session and a confused, expensive 
+
+## Constitutional-Ai.Md
+
+- [[concepts/constitutional-ai]] — Anthropic's methodology for aligning AI via explicit constitutional principles. Three Poles of Alignment (Principles, Policies, Personality) framework from Boaz Barak's 2026 analysis. Claude Constitution vs. OpenAI Model Spec comparison. Covers RLAIF, anthropomorphism critique, and AI-led ethics debate.
+
+## Critique-Shadowing.Md
    429|
    430|- [[concepts/critique-shadowing]] — A 7-step iterative methodology for building aligned LLM-as-Judge evaluators, coined by Hamel Husain. The core insight: the process of building an LLM judge forces domain experts to carefully examine d
    431|

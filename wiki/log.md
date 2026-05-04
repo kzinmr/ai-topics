@@ -7,6 +7,14 @@
 - New concept: 1 (ai-api-abuse). Enriched from stub: 1 (model-distillation).
 - Updated: wiki/concepts/model-distillation.md, wiki/concepts/ai-api-abuse.md, wiki/entities/nathan-lambert.md, wiki/index.md (+1 concept, 830→831), wiki/log.md
 
+## [2026-05-04] constitutional-ai + boaz-barak | New concept page, entity enriched, raw article saved
+
+- **[[concepts/constitutional-ai]]** — Created concept page: Anthropic's methodology for aligning AI through explicit constitutional principles. Covers: Three Poles of Alignment (Barak's Principles/Policies/Personality framework), Claude Constitution vs. OpenAI Model Spec comparison, RLAIF mechanism, anthropomorphism critique, AI-led ethics debate, relationship to synthetic data. Key source: Boaz Barak's Jan 2026 analysis.
+- **[[entities/boaz-barak]]** — Enriched entity page: Added comprehensive "Claude Constitution vs. OpenAI Model Spec" section under Core Ideas. Updated blog post entry with full URL and detailed summary. Added tags (constitutional-ai, model-spec, alignment), sources (both analysis URLs), and cross-link to concepts/constitutional-ai. Updated date to 2026-05-04.
+- **raw/articles/2026-01-27_boaz-barak_claude-constitution.md** — Saved raw article: Barak's full comparative analysis of Anthropic's Claude Constitution vs. OpenAI's Model Spec. Includes Three Poles framework, anthropomorphism critique, white lie examples, AI-led ethics debate, and rules-with-changelogs argument.
+- Updated: wiki/concepts/constitutional-ai.md (new), wiki/entities/boaz-barak.md, wiki/index.md (+1 concept, 830→831, entity desc enriched), wiki/log.md
+- Source: https://windowsontheory.org/2026/01/27/thoughts-on-claudes-constitution/
+
 ## [2026-05-04] dynamic-software | New concept page + Ashpreet Bedi article + entity update
 
 - **[[concepts/dynamic-software]]** — Created concept page: The paradigm shift from static (deterministic, hard-coded control flow) to dynamic (model-driven, non-deterministic, agentic) software. Breaks 50-year assumptions about determinism, state/time/sessions, and observability. 80% of agents fail because teams spend 6+ months on infrastructure instead of the agent. Calls for a new 'runtime' akin to what Django/Express/Vercel did for static software. Ashpreet Bedi's "live orchestra" metaphor.
