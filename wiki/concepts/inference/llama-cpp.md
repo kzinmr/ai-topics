@@ -5,12 +5,44 @@ created: 2026-04-14
 updated: 2026-04-27
 type: concept
 sources:
+  - raw/articles/2024-06_justine-tunney-llama-cpu-matmul.md
   - raw/articles/crawl-2026-04-27-llamacpp-features.md
 ---
 
 # llama.cpp
 
 llama.cpp is a C/C++ inference engine for running LLMs efficiently on consumer hardware, created by Georgi Gerganov and now maintained under ggml-org. As of April 2026, it has evolved from a simple CPU inference engine into a full-featured local LLM serving platform (build b8946, 2026-04-27).
+
+## CPU Performance Optimization
+
+Justine Tunney's work on **84 new matrix multiplication kernels** (integrated into llamafile and upstreamed to llama.cpp under MIT License) dramatically improved CPU prompt processing. The kernels target `GGML_OP_MUL_MAT` (~95% of inference time).
+
+### Core Technique: Outer-Loop Unrolling
+
+Instead of unrolling the innermost loop (handled by CPU speculative execution), the kernels **unroll outer loops**, sharing register loads across multiple FMA operations. This reduces memory references and exploits instruction-level parallelism.
+
+### Custom Threading Model
+
+llamafile avoids OpenMP/BLAS to prevent resource starvation within llama.cpp's spinlock barrier model:
+- `BEGIN_KERNEL` / `END_KERNEL` macros manually calculate per-thread workload
+- **Efficiency core management:** On Intel Alderlake, avoids efficiency cores to prevent lockstep bottleneck (fast cores waiting for slow)
+
+### Hardware-Specific Performance
+
+| Hardware | Model | Weights | llamafile-0.7 | Standard llama.cpp |
+|:---|:---|:---|:---|:---|
+| **Intel i9-14900K** | TinyLlama 1.1B | f16 | **407 tok/s** | 90 tok/s |
+| **RPi 5 (ARMv8.2)** | TinyLlama 1.1B | f16 | **62 tok/s** | 28 tok/s |
+| **M2 Ultra (CPU)** | Mistral 7B | f16 | **79 tok/s** | 57 tok/s |
+| **Threadripper 7995WX** | Mistral 7B | f16 | **485 tok/s** | 197 tok/s |
+
+Key findings:
+- **2x faster than Intel MKL** for matrices fitting in L2 cache (prompts < 1,000 tokens)
+- ARMv8.2 fp16 lacks Kahan summation → `Q8_0` preserves better perplexity on RPi
+- AMD Zen 4 native bf16 critical (Mistral is bf16 → fp16 loses precision for ~87% of values)
+- The speedups are so significant that **memory bandwidth may no longer be the primary bottleneck** for CPU inference, potentially reducing the need for quantization on CPU
+
+See [[entities/justine-tunney]] for the author of these optimizations and [[concepts/local-llm]] for the broader ecosystem.
 
 ## Key Capabilities
 
@@ -71,6 +103,7 @@ llama.cpp is the foundational inference engine for the local LLM ecosystem. Most
 - [[concepts/speculative-decoding]] — Inference acceleration technique
 - [[concepts/inference/vllm]] — Production serving alternative
 - [[entities/georgi-gerganov]] — Creator of llama.cpp and GGML/GGUF
+- [[entities/justine-tunney]] — Author of 84 CPU matmul kernels (llamafile, upstreamed to llama.cpp)
 
 ## Sources
 

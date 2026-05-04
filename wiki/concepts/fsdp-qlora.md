@@ -19,6 +19,7 @@ related:
   - concepts/peft-fine-tuning
   - entities/phil-schmid
 sources:
+  - raw/articles/2024-06_justine-tunney-llama-cpu-matmul.md
   - raw/articles/2024-03_answerai-fsdp-qlora-benchmarks.md
   - raw/articles/2026-05-04_phil-schmid-fsdp-qlora-llama3.md
   - https://github.com/AnswerDotAI/fsdp_qlora
@@ -155,7 +156,13 @@ Answer.AI recommends a progressive memory-savings approach — start simple and 
 | 5 | **CPU Offloading** | Move shards to CPU RAM when inactive | Extreme VRAM constraints (e.g., 24GB cards for 70B) |
 | 6 | **Activation Offloading** | Move intermediate activations to CPU RAM | Last resort (single 16GB GPU) |
 
-> **Key strategy:** Once stable at batch size 1, try increasing batch size. If it OOMs, moving to the next "heavier" memory-saving step may be faster overall if it enables a significantly larger batch size.
+> **Key strategy:** Once stable at batch size 1, try increasing batch size. Moving to a heavier memory-saving step may be faster overall if it enables a significantly larger batch size.
+
+### CPU Performance & Offloading Viability
+
+Offloading to CPU during training depends critically on CPU math throughput. Justine Tunney's 84 new matmul kernels (llamafile/llama.cpp) demonstrated **30–500% faster CPU matrix multiplication**, with some configurations exceeding Intel MKL by 2× for L2-cache fits.
+
+This is directly relevant to [[concepts/pytorch-fsdp#DDP vs FSDP: When to Use Which|CPU offloading in FSDP/DeepSpeed]]: when offloaded parameters require CPU computation before being sent back to GPU, faster CPU matmul reduces the PCIe transfer bottleneck. The more efficient CPU becomes, the less penalty offloading incurs — making CPU-offloaded FSDP+Q-LoRA training on 24GB cards more viable.
 
 ### DDP vs FSDP Decision Rule
 

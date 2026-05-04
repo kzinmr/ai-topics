@@ -1,3 +1,12 @@
+## [2026-05-04] Justine Tunney CPU matmul — LLM on CPU optimization + CPU offloading connection
+
+- **[[entities/justine-tunney]]** — Created entity page: Software engineer, llamafile creator. 84 CPU matmul kernels (30-500% faster), Cosmopolitan Libc. Mozilla/Google alum.
+- **[[concepts/inference/llama-cpp]]** — Enriched: Added CPU Performance Optimization section (outer-loop unrolling, custom threading model, hardware-specific benchmarks). Added [[entities/justine-tunney]] reference.
+- **[[concepts/fsdp-qlora]]** — Enriched: Added CPU Performance & Offloading Viability section connecting faster CPU matmul to reduced offloading penalty in FSDP/DeepSpeed training.
+- **raw/articles/2024-06_justine-tunney-llama-cpu-matmul.md** — Saved raw article
+- Updated: wiki/index.md (+1 entity, 810 pages), wiki/log.md
+- Source: https://justine.lol/matmul/
+
 ## [2026-05-04] The Hardware Lottery — Concept page + Sara Hooker entity
 
 - **[[concepts/ai-infrastructure-engineering/hardware-lottery]]** — Created concept page (🟢 L2): Sara Hooker's **Hardware Lottery** framework — meta-framework explaining why AI research ideas succeed based on hardware/software compatibility, not algorithmic merit. Covers Anna Karenina principle, neural networks' lost decades (CPU vs GPU), TPU lock-in, domain specialization trap, and strategic implications for AI infrastructure engineers (GPU procurement, cloud provider choice, interconnect strategy).

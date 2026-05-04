@@ -4,7 +4,7 @@
 > Read this first to find relevant pages for any query.
 | Last updated: 2026-05-04 | Total pages: 810 | Full entries: 777 | Stubs: 613 |
 
-## Entities (390 pages)
+## Entities (391 pages)
 
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -178,6 +178,7 @@
 - [[entities/john-d-cook-applied-mathematics-consulting]] — **Blog** | johndcook.com/blog |
 - [[entities/john-schulman]] — **Role** | Co-founder & Chief Scientist, Thinking Machines Lab |
 - [[entities/jonathan-whitaker]] — **X** | @johnowhitaker |
+- [[entities/justine-tunney]] — Software engineer, creator of llamafile. 84 CPU matmul kernels for llama.cpp (30-500% speedup). Cosmopolitan Libc, Mozilla alum.
 - [[entities/jxmo]] — **X** | @jxmnop |
 - [[entities/jyn]] — **Blog** | jyn.dev |
 - [[entities/k0nserv]] — **Blog** | hugotunius.se |
