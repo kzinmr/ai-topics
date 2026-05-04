@@ -166,10 +166,11 @@
 - [[entities/ivan-burazin]] — CEO of Daytona. Coined "Headless SaaS" — SaaS rebuilt with agent-first APIs, no GUI.
 - [[entities/jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of **Bun** — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining...
 - [[entities/jason-liu]] — **X** | @jxnlco |
-- [[entities/jaya-gupta]] — Partner at Foundation Capital, thought leader on context graphs and enterprise AI. Published influential thesis on Context Graphs as AI's trillion-dollar opportunity.
-- [[entities/jayden-milne]] — **Blog:** thejaymo.net
-- [[entities/jeff-geerling]] — **URL:** https://www.jeffgeerling.com
-- [[entities/jensen-huang]] — **Role** | Co-founder, CEO, and President of Nvidia Corporation |
+   169|- [[entities/jaya-gupta]] — Partner at Foundation Capital, thought leader on context graphs and enterprise AI. Published influential thesis on Context Graphs as AI's trillion-dollar opportunity.
+   170|- [[entities/jayden-milne]] — **Blog:** thejaymo.net
+   171|- [[entities/jay-mody]] — **Blog:** jaykmody.com | Educator known for picoGPT (GPT-2 in 60 lines of NumPy) and clear LLM internals explanations |
+   172|- [[entities/jeff-geerling]] — **URL:** https://www.jeffgeerling.com
+   173|- [[entities/jensen-huang]] — **Role** | Co-founder, CEO, and President of Nvidia Corporation |
 - [[entities/jim-fan]] — **X** | @jim-fan |
 - [[entities/jim-nielsen]] — **Blog** | Jim Nielsen's Blog |
 - [[entities/jo-bergum]] — **URL:** https://hornet.dev

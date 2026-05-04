@@ -4,13 +4,31 @@ type: concept
 created: 2026-04-18
 updated: 2026-04-18
 tags: [architecture, technique, inference, optimization]
-aliases: ["attention-mechanisms", "transformer-attention", "GQA", "MLA", "SWA"]
-sources: []
+aliases: ["attention-mechanisms", "transformer-attention", "GQA", "MLA", "SWA", "scaled-dot-product-attention"]
+sources:
+  - raw/articles/2022-10-22_jaymody-attention-intuition.md
 ---
 
 # Attention Mechanism Variants
 
 Modern transformer architectures use different attention mechanisms to optimize the trade-off between modeling capacity, compute efficiency, and context length. A prerequisite concept for [[concepts/context-engineering]].
+
+## Educational Derivations
+
+For readers new to attention, [[entities/jay-mody|Jay Mody]] provides a first-principles derivation of Scaled Dot-Product Attention:
+
+1. **KV lookup abstraction**: Attention as fuzzy dictionary lookup — weighted sum of values based on query-key similarity
+2. **Dot product similarity**: Word vectors clustered by meaning; dot product measures semantic similarity
+3. **Softmax normalization**: Converts raw scores to probability distribution
+4. **Scaling by √d_k**: Prevents vanishing gradients from large dot products in high dimensions
+
+```python
+def attention(Q, K, V):
+    d_k = K.shape[-1]
+    return softmax(Q @ K.T / np.sqrt(d_k)) @ V
+```
+
+This derivation complements the architectural variants below by grounding attention in intuitive terms.
 
 ## Attention Spectrum
 

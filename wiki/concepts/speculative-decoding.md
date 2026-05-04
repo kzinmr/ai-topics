@@ -1,10 +1,14 @@
 ---
 title: "Speculative Decoding"
 created: 2026-04-18
-updated: 2026-05-02
+updated: 2026-05-04
 type: concept
 tags: [inference, optimization, technique, architecture]
-sources: [raw/articles/crawl-2026-04-18-speculative-decoding.md, raw/articles/2026-04-28_fireworks-ai-open-weight-models-sed.md]
+aliases: [speculative-sampling, assisted-generation, drafter-verifier]
+sources:
+  - raw/articles/2023-02-08_jaymody-speculative-sampling.md
+  - raw/articles/crawl-2026-04-18-speculative-decoding.md
+  - raw/articles/2026-04-28_fireworks-ai-open-weight-models-sed.md
 ---
 
 # Speculative Decoding
@@ -63,6 +67,14 @@ Speculative decoding directly impacts [[concepts/token-economics]]:
 - **Non-determinism:** Results vary based on draft model quality and token count
 - **Domain sensitivity:** Works best when draft and target models share training data distribution
 - **Streaming incompatibility:** Harder to implement with streaming outputs (must wait for full draft sequence)
+
+## Gentle Introduction
+
+For a hands-on, code-driven introduction, [[entities/jay-mody|Jay Mody]]'s tutorial on speculative sampling ([speculative-sampling](https://jaykmody.com/blog/speculative-sampling/)) implements the full algorithm in NumPy with GPT-2 models:
+
+- **GPT-2 1.5B** (target) / **GPT-2 124M** (draft), K=4 → **2.23x speedup** at temperature=0 (identical output)
+- Algorithm is mathematically equivalent to sampling from target model alone
+- Common phrases are easier for small models → big efficiency gains
 
 ## Related
 

@@ -1,3 +1,16 @@
+## [2026-05-04] Jay Mody blog — Full wiki ingest (5 articles)
+
+- **[[entities/jay-mody]]** — Created entity page: Educator known for picoGPT (GPT-2 in 60 lines of NumPy), speculative sampling tutorial, and clear LLM internals explanations. 5 articles ingested.
+- **[[concepts/speculative-decoding]]** — Enriched: added Gentle Introduction section with Jay Mody's tutorial (2.23x speedup), aliases, cross-reference to jay-mody entity. Added raw/article source.
+- **[[concepts/attention-mechanism-variants]]** — Enriched: added Educational Derivations section with Jay Mody's first-principles derivation of scaled dot-product attention. Added alias `scaled-dot-product-attention`.
+- **raw/articles/2023-02-08_jaymody-speculative-sampling.md** — Saved raw article
+- **raw/articles/2023-01-30_jaymody-picoGPT.md** — Saved raw article
+- **raw/articles/2022-12-15_jaymody-stable-softmax.md** — Saved raw article
+- **raw/articles/2022-10-22_jaymody-attention-intuition.md** — Saved raw article
+- **raw/articles/2021-04-04_jaymody-distance-matrices.md** — Saved raw article
+- Updated: wiki/index.md (entity entry), wiki/log.md
+- Source: https://jaykmody.com/
+
 ## [2026-05-04] Thorsten Ball Joy & Curiosity #84 — Newsletter ingest
 
 - **[[entities/mitchell-hashimoto]]** — Created entity page: HashiCorp co-founder, Ghostty creator. Index entry enriched from stub to full (left GitHub 2026 over AI agent instability).
