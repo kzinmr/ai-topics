@@ -1,3 +1,8 @@
+## [2026-05-04] synthetic-data + dataset-engineering | Enriched concept pages from two articles
+- **[[concepts/synthetic-data]]** — Enriched with CAI framework (Constitutional AI / RLAIF), synthetic data hierarchy (instructions → preferences → critiques), practical tips (best model, lock API versions), open-source examples (OpenHermes, Orca, Starling, Evol-Instruct, SteerLM, Prometheus), and OpenAI Superalignment connection.
+- **[[concepts/dataset-engineering]]** — Created new concept page covering the shift from data science to dataset engineering, Data-Centric AI (Andrew Ng), democratization of AI training, tooling ecosystem (argilla, CVAT, FiftyOne, distilabel), and relationship to synthetic data.
+- Raw articles saved: 2023-11-29_interconnects-llm-synthetic-data.md (Nathan Lambert), 2025-01-16_pelayoarbues-dataset-engineer.md (Pelayo Arbués)
+
 ## [2026-05-04] ssm-mamba + genai-handbook-resources | SSM/Mamba concept page, entity pages for key educators, resource enrichment
 - **[[concepts/ssm-mamba]]** — Created comprehensive concept page for SSM/Mamba evolution (S4 2021 → Mamba 2023 → Mamba-2/SSD 2024 → Mamba-3 ICLR 2026 Oral). Core mechanism (SSM equations, discretization, HiPPO, selective scan S6), comparison with Transformers, hybrid model trends, full resource evaluation with 🟢🟡 ratings.
 - **GenAI Handbook Resource Ingestion:** Created 4 entity pages for 🟢 top-tier resource creators:

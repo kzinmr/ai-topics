@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
->| Last updated: 2026-05-04 | Total pages: 825 | Full entries: 786 | Stubs: 613 |
+> Last updated: 2026-05-04 | Total pages: 826 | Full entries: 787 | Stubs: 613 |
 
 ## Entities (392 pages)
 
@@ -431,7 +431,7 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
-## Concepts (423 pages)
+## Concepts (424 pages)
 
 |- [[concepts/accelerate]] — Hugging Face Accelerate: zero-code-change distributed training launcher. Created/led by Zach Mueller (@TheZachMueller). Unified abstraction layer making FSDP and DeepSpeed interchangeable via CLI or Python plugins.
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
@@ -1144,8 +1144,9 @@
 - [[concepts/daniel-jackson]] — > **TODO**: Enrich this page.
 - [[concepts/data-breach]] — > **TODO**: Enrich this page.
 - [[concepts/data-engineering-for-ml]] — > **TODO**: Enrich this page.
-- [[concepts/data-validation-python-type-hints-rust-web-frameworks-fastapi]] — > **TODO**: Enrich this page.
-- [[concepts/datalog]] — > **TODO**: Enrich this page.
+|- [[concepts/data-validation-python-type-hints-rust-web-frameworks-fastapi]] — > **TODO**: Enrich this page.
+|- [[concepts/dataset-engineering]] — The emerging discipline of systematically curating, annotating, and managing training data for ML models. Covers Data-Centric AI, tooling ecosystem (argilla, CVAT, FiftyOne), and the shift from model-centric to data-centric workflows.
+|- [[concepts/datalog]] — The logic programming language, co-invented by Seymour Papert in the 1960s.
 - [[concepts/david-montague]] — > **TODO**: Enrich this page.
 - [[concepts/david-steurer]] — > **TODO**: Enrich this page.
 - [[concepts/decoder-only-gpt-architecture]] — > **TODO**: Enrich this page.
@@ -1525,7 +1526,7 @@
 - [[concepts/sycophancy-in-llms]] — > **TODO**: Enrich this page.
 - [[concepts/symphony]] — > **TODO**: Enrich this page.
 - [[concepts/synth]] — > **TODO**: Enrich this page.
-- [[concepts/synthetic-data]] — Synthetic data for LLM pre-training: techniques from simple rephrasing (1.48× efficiency) to Megadocs (1.80× via stitching/stretching), agentic data creation, and distributional shift paradox.
+|- [[concepts/synthetic-data]] — AI-generated training data for LLMs: covers Constitutional AI (CAI/RLAIF), instruction/preference/critique hierarchy, pre-training scaling (Megadocs, rephrasing), Superalignment, and open-source examples (OpenHermes, Orca, Starling, Evol-Instruct).
 - [[concepts/systems-programming]] — > **TODO**: Enrich this page.
 - [[concepts/talk]] — > **TODO**: Enrich this page.
 - [[concepts/tau-bench]] — > **TODO**: Enrich this page.
