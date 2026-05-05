@@ -67,12 +67,53 @@ The information-theoretic framing explains OPD's efficiency: if RL teaches ~O(1)
 
 ### Will Brown's Contribution
 
-In his May 2026 X article "On SFT, RL, and on-policy distillation," **Will Brown** ([[entities/will-brown]]) provides a practitioner's framing of this comparison. Coming from his work on **verifiers** (RL environments) and **PRIME-RL** (distributed RL training), Brown argues that:
+In his May 2026 X article "On SFT, RL, and on-policy distillation," **Will Brown** ([[entities/will-brown]]) provides a practitioner's framing of this comparison — notably co-authored with **Claude Opus 4.7** as an experiment in AI-assisted technical writing via artifact "debate."
 
 - The three paradigms are not competitors but layers in a **post-training stack**
 - On-policy distillation fills a specific niche: dense, on-policy supervision at minimal compute cost
 - The choice of paradigm depends on **environment quality** — with high-quality environments and reward signals, RL still wins for open-ended exploration; with verifiable outcomes (math, code), OPD is the cost-effective choice
 - This extends his earlier **RL-Harness Lifecycle** thesis ([[concepts/rl-harness-lifecycle]]): harnesses create environments → OPD efficiently extracts capabilities from teacher models → RL refines through exploration
+
+### The Gradient Geometry of SFT vs RL vs OPD
+
+A key original contribution of Brown's article is a **gradient geometry analysis** that explains *why* each paradigm has different stability properties. The analysis sits on two axes:
+
+| Axis | Meaning |
+|------|---------|
+| **Sparse vs Dense** | Does each token get a signal, or just the trajectory? |
+| **Biased vs Unbiased** | Does the expected gradient point in a fixed direction (data distribution), or only along directions reward correlates with? |
+| **Diffuse vs Concentrated** | Is the gradient signal spread evenly across tokens, or dominated by a few "pivot tokens"? |
+
+**RL (GRPO):** Sparse + unbiased + diffuse. Each per-token advantage is noise (most tokens didn't cause the outcome), but noise vectors **cancel via destructive interference** under large-batch averaging. What survives is the small consistent bias along dimensions that correlate with reward. This is why RL is "safe but slow" — moves a tiny amount in a trustworthy direction.
+
+**SFT:** Dense + biased + diffuse. Every token gets a one-hot label. The bias is uncontested (no noise cancellation), but it's **diffuse across many tokens** the model already partially supports. The data distribution is diverse, so the model drifts toward the data manifold as a whole rather than any single example. This is why SFT is forgiving — the bias is real but unconcentrated.
+
+**Same-family OPD:** Dense + biased + diffuse (like SFT). The teacher distribution is calibrated to the student's family, so the per-token signal is about the capability gap (not stylistic differences). The teacher's logprobs sit close to the student's, producing a diffuse gradient.
+
+**Self-distillation (OPSD):** Dense + biased + **concentrated**. When a student generates a long math rollout but misses one "pivot token" (e.g., the right substitution), the teacher conditioned on the answer assigns ~0.6 probability to that token vs the student's ~0.01. The per-token reverse KL is ~4.1 nats — ~100x a typical token's contribution. The gradient is dominated by a single concentrated tug in parameter space, with no noise cancellation and no diffuseness to absorb it. This is why OPSD requires explicit KL clipping (point-wise per-vocab-entry divergence cap) — without it, performance collapses within ~100 steps.
+
+### The Meta-Algorithm
+
+Brown unifies all four methods into a single token-level policy gradient with two scalar knobs:
+- **α ∈ [0,1]** — how on-policy the sampling distribution is
+- **λ ∈ [0,1]** — how much of the per-token advantage comes from teacher KL vs outcome reward
+
+| Method | α | λ | Teacher |
+|--------|---|---|---------|
+| SFT | 0 | 1 | δ_{y_data} (degenerate, averaged cross examples) |
+| RL (GRPO) | 1 | 0 | None (no teacher, set λ=0) |
+| OPD | 1 | 1 | Same-family teacher |
+| OPSD/SDFT | 1 | 1 | Self-with-hint (most concentrated) |
+
+The interior of this space — α, λ ∈ (0,1) — is mostly unexplored and represents the frontier for the "next round of progress" in post-training.
+
+### Toward an Optimal Teacher
+
+Brown frames the optimal-teacher problem as a Lagrangian: maximize E[Δreward] − β·KL for a given KL budget β. Different methods trace different points on the Pareto curve. Proposed future approaches include:
+- **Per-task prompt optimization** over the Lagrangian (e.g., GEPA on a per-task basis)
+- **Distribution-level hint rewriting** — train a model that transforms large privileged hints into minimal ones that move the teacher distribution as little as possible
+- **Self-prompt-optimization online RL** — hint-writer and policy co-evolve
+- **Expert RL + OPD** (DeepSeek V4-style) — layer a teacher signal on top of locally-optimal RL
 
 ### Industry Adoption
 

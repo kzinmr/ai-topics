@@ -19,7 +19,7 @@ sources: []
 # Will Brown
 
 | | |
-|---|---|
+---|---|
 | **X/Twitter** | [@willccbb](https://x.com/willccbb) |
 | **Website** | [willcb.com](https://willcb.com/) |
 | **GitHub** | [github.com/willccbb](https://github.com/willccbb) |
@@ -39,7 +39,7 @@ Brown has emerged as one of the most prominent voices able to **publicly discuss
 ## Timeline
 
 | Date | Event |
-|------|-------|
+------|-------|
 | ~2016 | Began working in and around AI (per his own account in the GenAI Handbook) |
 | 2014–2018 | Undergraduate at University of Pennsylvania (CS, Data Science, Philosophy) |
 | 2020 | Published "Change Point Detection in Software Performance Testing" (ICPE) |
@@ -65,7 +65,7 @@ Brown has emerged as one of the most prominent voices able to **publicly discuss
 | 2025 | Created **mcp-client-server** — MCP Server that's also an MCP Client (124 stars) |
 | 2025 | Created **agent-engineering** course files (71 stars) |
 | 2025 | Created **research-agent-lesson** — "Build Your Own AI Research Agent" lesson files |
-| May 2026 | Published "On SFT, RL, and on-policy distillation" — X article comparing post-training paradigms; 1,800+ likes, 3,300+ bookmarks |
+| May 2026 | Published "On SFT, RL, and on-policy distillation" — X article comparing post-training paradigms; co-authored with Claude Opus 4.7 as an experiment in AI-assisted technical writing via artifact "debate." 1,800+ likes, 3,300+ bookmarks
 
 ## Core Ideas
 
@@ -189,7 +189,9 @@ See [[concepts/rl-harness-lifecycle]] for the full analysis.
 ## Sources
 
 - [Will Brown's Website](https://willcb.com/)
-- [On SFT, RL, and on-policy distillation — X Article (May 2026)](https://x.com/willccbb/status/2050038277454143918) — Auth wall; raw article at [[raw/articles/2026-05-01_willccbb-sft-rl-on-policy-distillation]]
+- [On SFT, RL, and on-policy distillation — X Article (May 2026)](https://x.com/willccbb/status/2050038277454143918) — Co-authored with Claude Opus 4.7; raw article at [[raw/articles/2026-05-01_willccbb-sft-rl-on-policy-distillation]]
+- [Claude Artifact (article draft)](https://claude.ai/public/artifacts/478fd2c4-e37d-4f1e-8295-780d811b1859) — Original artifact used in writing process
+- [Claude Artifact (markdown version)](https://claude.ai/public/artifacts/e03bf1a9-a6ab-4324-8ed2-cca1543f0878) — Markdown export of the article
 - [GenAI Handbook](https://genai-handbook.github.io/)
 - [Verifiers GitHub Repository](https://github.com/PrimeIntellect-ai/verifiers)
 - [GRPO Demo Gist](https://gist.github.com/willccbb/4676755236bb08cab5f4e54a0475d6fb)

@@ -2,9 +2,11 @@
 
 - **[[concepts/model-distillation]]** — Added comprehensive "SFT vs RL vs On-Policy Distillation" section: paradigm comparison table (policy/supervision density/info-theoretic efficiency/compute cost), dense on-policy supervision insight, "dense reward per token" information-theoretic principle (O(N) bits/episode vs O(1) for RL), Will Brown's practitioner framing (post-training stack layers, environment quality dependency), industry adoption list (Qwen3, MiMo, GLM-5, Thinking Machines Lab, Nvidia Nemotron Cascade 2).
 - **[[entities/will-brown]]** — Added timeline entry (May 2026: "On SFT, RL, and on-policy distillation" X article) and source reference.
-- **raw/articles/2026-05-01_willccbb-sft-rl-on-policy-distillation.md** — Saved raw article (metadata-only: X auth wall, article ID 2050010745375768576, no mirror found).
-- Updated: wiki/concepts/model-distillation.md, wiki/entities/will-brown.md, wiki/index.md (model-distillation desc enriched)
-- Source: https://x.com/willccbb/status/2050038277454143918 (auth wall)
+- **raw/articles/2026-05-01_willccbb-sft-rl-on-policy-distillation.md** — Full article body retrieved via GetXAPI (25.8KB). Co-authored with Claude Opus 4.7 via artifact "debate" workflow. Includes 8 sections on gradient geometry, meta-algorithm, and optimal teacher framework. Claude artifact links saved.
+- **[[concepts/model-distillation]]** — Expanded with Gradient Geometry section (Sparse/Dense x Biased/Unbiased x Diffuse/Concentrated axes), Meta-Algorithm (alpha/lambda knobs unifying SFT/RL/OPD/OPSD), and Optimal Teacher Pareto Lagrangian framing.
+- **[[entities/will-brown]]** — Updated timeline with co-author detail (Claude Opus 4.7), added Claude Artifact sources.
+- **[[social-media/x-article-getxapi-fallback]]** — New skill created for GetXAPI-based X article body retrieval fallback.
+- Updated: wiki/raw/articles/2026-05-01_willccbb-sft-rl-on-policy-distillation.md, wiki/concepts/model-distillation.md, wiki/entities/will-brown.md
 
 ## 2026-05-04 X Bookmarks Ingest
 
