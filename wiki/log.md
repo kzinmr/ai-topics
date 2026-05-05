@@ -1,3 +1,8 @@
+## [2026-05-05] Entity Enrichment: Daniel Tunkelang — O'Reilly profile + multi-source research
+
+- **[[entities/daniel-tunkelang]]** — Enriched from skeleton to full entity page. Added from O'Reilly profile + Springer author bio + SlideShare: PhD CS (CMU), BS Math/CS (MIT). Endeca founding employee, Chief Scientist (acquired by Oracle $1.1B). Led local search at Google. Director of Data Science at LinkedIn (founded query understanding team). Book: Faceted Search (Springer, 76+ citations). 24 US patents. Founded HCIR symposium (2007). Consulting clients: Etsy, Flipkart. O'Reilly articles (2015-2016). Previous stints at IBM T.J. Watson and AT&T Labs. Removed `status: skeleton`.
+- Source: https://www.oreilly.com/people/daniel-tunkelang/, https://link.springer.com/book/10.1007/978-3-031-02262-3
+
 ## [2026-05-05] YouTube Video: "Will Agents Replace Search Teams?" — Doug Turnbull & Daniel Tunkelang
 
 - **[[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]** — Saved raw article: 55-minute discussion on what agents can and cannot replace in search teams. Covers latency-feedback tradeoff, e-commerce search spectrum, economic disruption (EXA, Reddit, Stack Overflow), stakes-based error models, domain-specific LLM assumptions (auto parts case study), personalization risks, and the rising importance of critical thinking.
