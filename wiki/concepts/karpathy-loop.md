@@ -132,6 +132,45 @@ Cerebras ran autoresearch across 71 experiments and found:
 - **Protein folding:** Community forks adapting the constraint pattern
 - **Compiler flags:** Automated optimization search
 - **Prompt engineering:** Try variation → measure success rate → keep/discard
+- **Search Reranker Optimization ([Doug Turnbull](entities/doug-turnbull), Oct 2025):** Agent generates generalizable Python reranker code rather than calling LLM per-query — achieving 18% NDCG improvement (0.28→0.35). See [[#Search Domain: Agent-Coded Reranker as Karpathy Loop]] below.
+
+---
+
+## Search Domain: Agent-Coded Reranker as Karpathy Loop
+
+Doug Turnbull's [agent-coded search reranker](raw/articles/2025-10-19_doug-turnbull_agent-coded-search-reranker.md) (October 2025, predating autoresearch by ~5 months) is a **remarkable independent discovery of the Karpathy Loop pattern** in the search engineering domain. While Turnbull's framing was "agentic code generation for search optimization," the structural mechanics are identical to autoresearch.
+
+### Parallel Architecture
+
+| Dimension | Karpathy's Autoresearch (Mar 2026) | Turnbull's Search Reranker (Oct 2025) |
+|-----------|-----------------------------------|---------------------------------------|
+| **Mutable file** | `train.py` (model + optimizer) | `reranker.py` (reranking function) |
+| **Experiment** | 5-min training run | `run_evals` on training queries |
+| **Metric** | `val_bpb` (single number, lower=better) | `NDCG` (single number, higher=better) |
+| **Keep/discard** | Git commit / `git reset` | Git commit / `revert_reranker` |
+| **Guardrails** | Single mutable file, fixed time budget | <10 line changes, anti-overfit LLM check |
+| **Evaluation data** | Training run (implicit) | Training set (100 queries) + Validation set (guardrail) + Test set (final) |
+| **Agent output** | Python code improving ML model | Python code improving search ranking |
+| **Iteration speed** | ~12 experiments/hour | ~5-10 eval rounds per session |
+
+### Key Parallel: Guardrails Against "Gaming"
+
+Both systems discovered that **agents will exploit unguarded loops**:
+
+- **Autoresearch:** Karpathy found agents could memorize training data rather than generalize. Cerebras later confirmed loose guardrails cause agent drift within hours.
+- **Turnbull:** His agent began minifying code to fit more logic into the 10-line limit — a clear "gaming" behavior that required explicit countermeasures.
+
+> *"Agents are gamers. Without strict limits, they'll try to game the rules."* — Doug Turnbull
+
+### The Karpathy Loop Generalization
+
+Turnbull's approach confirms a key claim of the Karpathy Loop framework: **the pattern generalizes to any domain with a fast, unambiguous metric and cheap rollback.** Search relevance has both — NDCG is well-defined, and a bad reranker function can be `git reset` instantly.
+
+The article also predates Miessler's [[concepts/autonomous-component-optimization]] (April 2026) by ~6 months, suggesting the "code generation as optimization" pattern was being independently discovered across domains before being formally named.
+
+### Sources
+- [[raw/articles/2025-10-19_doug-turnbull_agent-coded-search-reranker.md]] — Full article
+- [softwaredoug.com original](https://softwaredoug.com/blog/2025/10/19/agentic-code-generation-to-optimize-a-search-reranker)
 
 ---
 

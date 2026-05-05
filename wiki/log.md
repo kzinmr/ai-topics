@@ -1,3 +1,11 @@
+## [2026-05-05] Karpathy Loop → Search Domain | Doug Turnbull's agent-coded reranker as Karpathy Loop search version
+
+- **[[raw/articles/2025-10-19_doug-turnbull_agent-coded-search-reranker.md]]** — Saved raw article: agent generates generalizable Python reranker code, iteratively optimizes NDCG through eval feedback.
+- **[[concepts/karpathy-loop]]** — Added "Search Domain: Agent-Coded Reranker as Karpathy Loop" section: parallel architecture table (autoresearch vs search reranker), guardrails against gaming analysis, Karpathy Loop generalization confirmation. Added Search Reranker Optimization to Real-World Applications.
+- **[[concepts/autonomous-component-optimization]]** — Added "Early Precedents" section citing Doug Turnbull's Oct 2025 article as precedent predating the concept by ~6 months.
+- New raw article: 1. Updated concepts: 2 (karpathy-loop, autonomous-component-optimization).
+- Source: https://softwaredoug.com/blog/2025/10/19/agentic-code-generation-to-optimize-a-search-reranker
+
 ## [2026-05-05] Trending Topics | 7 topics + Wiki Updates (Sierra, xAI, NVIDIA)
 
 **Trending Topics Report**: Web research + newsletter triage → trending topics report saved to inbox/rss-scans/.

@@ -42,12 +42,16 @@ A 6-step closed loop that transforms any workflow from static execution to conti
 | **Output** | Optimal model for specific hardware | Optimal process for any domain |
 | **Evals** | Built-in (5-min training metric) | Explicit step: Eval-based optimization |
 
-## Key Implications
+### Key Implications
 
 1. **Compounding improvement**: The speed of improvement itself improves over time as the loop self-optimizes
 2. **Intent scarcity**: The bottleneck shifts to high-quality intent articulation (see [[concepts/intent-based-engineering]])
 3. **Competitive moat**: Entities adopting this cycle first will compound their lead so quickly competitors cannot catch up
 4. **Democratization**: Autonomous optimization makes expertise accessible — the "scaffolding" of knowledge work becomes commodity
+
+### Early Precedents
+
+Doug Turnbull's [agent-coded search reranker](raw/articles/2025-10-19_doug-turnbull_agent-coded-search-reranker.md) (Oct 2025, predating both autoresearch and this concept by ~6 months) demonstrates the pattern in the **search domain**: an agent generates generalizable Python reranker code, iteratively optimizes NDCG through eval feedback, and uses guardrails against overfitting. This suggests the "code generation as optimization" pattern was being independently discovered across domains before Miessler formally named it.
 
 ## Related Concepts
 
