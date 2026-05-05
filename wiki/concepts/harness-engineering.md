@@ -1,7 +1,7 @@
 ---
 title: "Harness Engineering"
 created: 2026-04-30
-updated: 2026-05-01
+updated: 2026-05-05
 tags:
   - concept
   - evaluation
@@ -194,6 +194,44 @@ The core insight: once you have reliable, task-specific evals, you can treat har
 
 **Practical takeaway:** Treat your harness as a learned system, not a fixed scaffold. Evals provide the signal; hill-climbing provides the optimization process; holdout sets and human review provide the safety rails. This is [[vtrivedy10|Vivek Trivedy]]'s recommended approach for teams that have graduated from ad-hoc prompt engineering to systematic agent development.
 
+## The "Token Burn" Crisis (May 2026)
+
+As agentic workloads shift from single-turn to multi-step autonomous agents, flat-rate pricing models are breaking:
+
+- **Theo's Experiment (May 2026)**: A single Copilot message chain consumed **60M+ tokens**, estimated at **$221 in inference costs** against a standard $40 subscription
+- **Cost Implications**: This means every deep agent session is a money-losing proposition for flat-rate services
+- **Harness as cost-control**: The harness must manage not just correctness but token budget — deciding when to compact, when to stop, and when to spawn cheaper sub-models
+
+This creates a structural tension: better harnesses → more autonomous agents → higher token consumption → unsustainable unit economics. The resolution likely involves tiered pricing, harness-level token budgets, and model-switching strategies.
+
+## Context Pipelines as Competitive Moats (May 2026)
+
+From swyx's AINews analysis (May 2026), the "product boundary" is shifting from model weights to the harness middleware:
+
+- **Repo state curation**: How repo state is fetched, ranked, and compressed for the agent
+- **Measurable impact**: Tuning prompts and middleware moved **gpt-5.2-codex from 52.8% to 66.5%** on Terminal-Bench 2.0
+- **Open harness ecosystem momentum**: Hermes Agent Kanban (visual multi-agent coordination), deepagents, Flue-style systems
+- **Cost efficiency**: Teams achieving **>20x cheaper agents** by tuning open models inside high-quality harnesses rather than using frontier APIs
+- **LangGraph improvements**: Model-specific harness configs, schema migrations, node-level error handlers
+
+## Sierra: Harness-as-a-Service at Scale
+
+[[entities/sierra|Sierra]], the AI customer service platform, demonstrates harness engineering at enterprise scale:
+
+| Metric | Value | Date |
+|--------|-------|------|
+| Valuation | $15B | May 2026 |
+| ARR | $100M → $200M+ | Nov 2025 → May 2026 |
+| Revenue multiple | 50-75x | May 2026 |
+
+Sierra's value proposition is fundamentally harness engineering: deploying conversational AI agents that integrate with enterprise systems, handle end-to-end customer service, and deliver measurable business outcomes. The company represents the "Service-as-Software" thesis where the harness — not the model — is the product.
+
+## Infrastructure: Zyphra TSP and DORA (May 2026)
+
+Training and inference infrastructure advances enabling better harnesses:
+- **Zyphra TSP**: Folded Tensor + Sequence Parallelism hitting **173M tok/sec** on 1024 MI300X GPUs (vs 86M for standard approaches)
+- **DORA**: Asynchronous RL system with **8.2x rollout speedup** and 2.12x end-to-end throughput improvement
+
 ## Related Concepts
 
 - [[concepts/agentic-engineering]] — The practice of engineering with AI coding agents, tightly coupled to harness engineering.
@@ -206,6 +244,8 @@ The core insight: once you have reliable, task-specific evals, you can treat har
 - [[entities/hamel-husain]] — Primary proponent and popularizer.
 - [[entities/shreya-shankar]] — Co-creator of AI evals course, major contributor to the movement.
 - [[vtrivedy10]] — LangChain contributor; advocates eval-driven harness hill-climbing for production agents.
+- [[entities/sierra]] — Enterprise harness-as-a-service at $15B valuation
+- [[concepts/service-as-software]] — Business model thesis behind Sierra
 
 ## References
 

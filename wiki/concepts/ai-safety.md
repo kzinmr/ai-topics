@@ -2,7 +2,7 @@
 title: "AI Safety"
 tags: [ai-safety-alignment-rlhf-scalable-oversight-interpretability]
 created: 2026-04-19
-updated: 2026-04-24
+updated: 2026-05-05
 type: concept
 ---
 
@@ -121,6 +121,39 @@ The exodus created two camps:
 - [[concepts/reasoning-models]] — Process supervision and step-by-step verification
 - [[concepts/ai-evals]] — Evaluation as a safety mechanism
 - [[concepts/harness-engineering]] — Constraining AI behavior through system design
+- [[concepts/privacy-engineering]] — Privacy as a dimension of AI safety
+
+## Privacy Engineering for AI Agents (May 2026)
+
+From Hugo Bowne-Anderson and Katharine Jarmul's "15 Privacy Questions Every AI Builder is Asking" (May 2026), privacy engineering is an essential but often overlooked dimension of AI safety:
+
+### Core Principle: Agent Harnesses Are Public by Default
+
+> "System prompts are not private. It's been proven many times... anything that you write in your system prompt, you should be comfortable writing on your public website." — Katharine Jarmul
+
+Key vulnerabilities:
+- **Context Leakage**: RAG database contents can be deduced from model output variations
+- **Memory Exposure**: All information fed to an agent harness should be treated as potentially exposed
+- **Multimodal Threats**: VLMs can re-identify patients via retina shapes or other biological markers
+
+### Three-Layer Guardrail Architecture
+
+1. **External Deterministic**: Fast regex/hash filters for PII and copyright blocks (e.g., Microsoft Presidio)
+2. **External Algorithmic**: Secondary classifier models (e.g., Meta's Llama Guard) judging prompt/output safety
+3. **Internal Alignment**: RLHF-trained refusal capabilities natively in the model
+
+### Privacy Observability
+Before implementing complex math, builders should focus on:
+1. **Map Data Flows**: Know where sensitive data lives and travels
+2. **Audit Traces**: PII in chat logs is the first fix
+3. **Privacy Champions**: Designate specific engineers rather than relying on collective responsibility
+
+### Advanced Approaches
+- **Privacy Routing**: API gateway routes sensitive queries to local open-weight models, standard queries to frontier APIs
+- **Federated Learning + Differential Privacy**: Keeping raw data localized while training
+- **Red Teaming for Privacy**: Hack days where teams try to extract system prompts and RAG context
+
+See: [[entities/hugo-bowne]], [[entities/katharine-jarmul]]
 
 ## Sources
 

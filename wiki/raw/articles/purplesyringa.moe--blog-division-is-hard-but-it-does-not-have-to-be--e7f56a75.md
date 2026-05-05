@@ -1,0 +1,755 @@
+---
+title: "Division is hard, but it doesn't have to be"
+url: "https://purplesyringa.moe/blog/./division-is-hard-but-it-does-not-have-to-be/"
+fetched_at: 2026-05-05T07:02:09.948259+00:00
+source: "Alisa Sireneva (PurpleSyringa)"
+tags: [blog, raw]
+---
+
+# Division is hard, but it doesn't have to be
+
+Source: https://purplesyringa.moe/blog/./division-is-hard-but-it-does-not-have-to-be/
+
+Division is hard, but it doesn't have to be
+August 24, 2024
+Reddit
+Developers don’t usually divide numbers all the time, but hashmaps often need to compute
+remainders
+modulo a prime. Hashmaps are really common, so fast division is useful.
+For instance, rolling hashes might compute
+u128 % u64
+with a fixed divisor. Compilers just drop the ball here:
+fn
+modulo
+(n:
+u128
+)
+->
+u64
+{
+    (n %
+0xffffffffffffffc5
+)
+as
+u64
+}
+modulo:
+push
+rax
+mov
+rdx
+, -
+59
+xor
+ecx
+,
+ecx
+call
+qword
+ptr
+[
+rip
++ __umodti3@GOTPCREL]
+pop
+rcx
+ret
+__umodti3
+is a generic long division implementation, and it’s slow and ugly.
+I prefer my code the opposite of slow and ugly.
+And I know math
+0xffffffffffffffc5
+is
+2
+64
+−
+59
+; in fact it’s the largest prime below
+2
+64
+, but what I really care about is that it’s oh so close to
+2
+64
+.
+So I’m going to use a trick. I’ll subtract a multiple of
+2
+64
+−
+59
+from
+n
+, which won’t affect the reminder. Namely, I wish to transform
+n
+to
+n
+−
+⌊
+n
+2
+64
+⌋
+⋅
+(
+2
+64
+−
+59
+)
+, which can be simplified to
+n
+mod
+2
+64
++
+⌊
+n
+2
+64
+⌋
+⋅
+59
+.
+fn
+modulo
+(
+mut
+n:
+u128
+)
+->
+u64
+{
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+) *
+59
+;
+    (n %
+0xffffffffffffffc5
+)
+as
+u64
+}
+Computers divide by
+2
+64
+all the time; this operation is almost free. So at the cost of a single multiplication by
+59
+,
+n
+up to
+2
+128
+−
+1
+is transformed to an equivalent
+n
+up to
+(
+2
+64
+−
+1
+)
+⋅
+60
+.
+Then I apply the same operation twice, further reducing to
+n
+up to
+2
+64
++
+59
+2
+−
+1
+.
+This
+remainder can be computed with a single
+if
+.
+fn
+modulo
+(
+mut
+n:
+u128
+)
+->
+u64
+{
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+) *
+59
+;
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+) *
+59
+;
+if
+n >=
+0xffffffffffffffc5
+{
+        n -=
+0xffffffffffffffc5
+;
+    }
+    n
+as
+u64
+}
+modulo:
+mov
+rax
+,
+rsi
+mov
+esi
+,
+59
+mul
+rsi
+mov
+rcx
+,
+rax
+add
+rcx
+,
+rdi
+adc
+rdx
+,
+0
+mov
+rax
+,
+rdx
+mul
+rsi
+add
+rax
+,
+rcx
+adc
+rdx
+,
+0
+xor
+ecx
+,
+ecx
+mov
+rsi
+, -
+60
+cmp
+rsi
+,
+rax
+sbb
+rcx
+,
+rdx
+lea
+rcx
+, [
+rax
++
+59
+]
+cmovb
+rax
+,
+rcx
+ret
+Oh, and it’s not like hard-coding
+2
+64
+−
+59
+was necessary. Two iterations suffice for any divisor
+≥
+2
+64
+−
+2
+32
++
+1
+. Need more primes? Choose away, there’s a lot of them in the
+2
+32
+-long region.
+Need a smaller divisor? Three iterations work for
+n
+≥
+2
+64
+−
+6981461082631
+(42.667 bits compared to 32 for two iterations), four for
+n
+≥
+2
+64
+−
+281472113362716
+(48 bits). Sounds like a lot? That’s still better than
+__umodti3
+. Sure, it’s not universal, but still covers important usecases.
+And this method works for division too, not just modulo:
+fn
+divide
+(
+mut
+n:
+u128
+)
+->
+u128
+{
+let
+mut
+quotient
+= n >>
+64
+;
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+) *
+59
+;
+    quotient += n >>
+64
+;
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+) *
+59
+;
+if
+n >=
+0xffffffffffffffc5
+{
+        quotient +=
+1
+;
+    }
+    quotient
+}
+It gets better
+What if you
+don’t
+need a large prime? What if you just need something large that isn’t a power of two? Say,
+2
+64
+−
+1
+? Let’s start anew:
+fn
+modulo
+(
+mut
+n:
+u128
+)
+->
+u64
+{
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+) *
+1
+;
+    (n %
+u64
+::MAX
+as
+u128
+)
+as
+u64
+}
+The first line now just sums two halves of the number! It’s not really hard to get optimal code starting from here; in fact, even the compiler realizes this immediately:
+fn
+modulo
+(n:
+u128
+)
+->
+u64
+{
+    (n %
+u64
+::MAX
+as
+u128
+)
+as
+u64
+}
+modulo:
+add
+rdi
+,
+rsi
+adc
+rdi
+,
+0
+xor
+eax
+,
+eax
+cmp
+rdi
+, -
+1
+cmovne
+rax
+,
+rdi
+ret
+This isn’t all
+Rolling hashes in particular don’t need
+the
+remainder. They need
+a
+representation of a number. It’s not like it matters if a number divisible by
+2
+64
+−
+59
+is represented by
+0
+or
+2
+64
+−
+59
+during computation of the hash, as long as it’s all mapped to
+0
+at the very end of the computation.
+So we can modify the code
+just so
+:
+fn
+reduce
+(
+mut
+n:
+u128
+)
+->
+u64
+{
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+) *
+59
+;
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+) *
+59
+;
+if
+n >=
+0x10000000000000000
+{
+        n -=
+0xffffffffffffffc5
+;
+    }
+    n
+as
+u64
+}
+…which reduces the assembly a bit. The effect is most prominent with
+2
+64
+−
+1
+:
+fn
+reduce
+(
+mut
+n:
+u128
+)
+->
+u64
+{
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+);
+if
+n >=
+1
+<<
+64
+{
+        
+        (n +
+1
+)
+as
+u64
+}
+else
+{
+        n
+as
+u64
+}
+}
+reduce:
+mov
+rax
+,
+rdi
+add
+rax
+,
+rsi
+adc
+rax
+,
+0
+ret
+Benchmarks
+I’m going to compare these implementations:
+fn
+modulo_naive
+(n:
+u128
+)
+->
+u64
+{
+    (n %
+0xffffffffffffffc5
+)
+as
+u64
+}
+fn
+modulo_optimized
+(
+mut
+n:
+u128
+)
+->
+u64
+{
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+) *
+59
+;
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+) *
+59
+;
+if
+n >=
+0xffffffffffffffc5
+{
+        n -=
+0xffffffffffffffc5
+;
+    }
+    n
+as
+u64
+}
+fn
+reduce
+(
+mut
+n:
+u128
+)
+->
+u64
+{
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+) *
+59
+;
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+) *
+59
+;
+if
+n >=
+0x10000000000000000
+{
+        n -=
+0xffffffffffffffc5
+;
+    }
+    n
+as
+u64
+}
+fn
+divide_naive
+(n:
+u128
+)
+->
+u128
+{
+    n /
+0xffffffffffffffc5
+}
+fn
+divide_optimized
+(
+mut
+n:
+u128
+)
+->
+u128
+{
+let
+mut
+quotient
+= n >>
+64
+;
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+) *
+59
+;
+    quotient += n >>
+64
+;
+    n = n % (
+1
+<<
+64
+) + (n >>
+64
+) *
+59
+;
+if
+n >=
+0xffffffffffffffc5
+{
+        quotient +=
+1
+;
+    }
+    quotient
+}
+I’m also going to compare to the
+strength_reduce
+crate
+to simulate the same optimizations that compilers perform with
+u64 % u32
+. I’m compiling with
+-C target-cpu=native
+.
+Test
+Time/iteration (ns)
+Speedup
+modulo_naive
+25.440
+(base)
+modulo_strength_reduce
+4.9672
+5.1x
+modulo_optimized
+2.5847
+9.8x
+reduce
+2.1746
+11.7x
+divide_naive
+25.460
+(base)
+divide_strength_reduce
+5.4451
+4.7x
+divide_optimized
+2.7730
+9.2x
+So what?
+In all honesty, this is not immediately useful when applied to rolling hashes.
+reduce
+is still a little slower than two
+u64 % u32
+computations, so if calculating the hash modulo two 32-bit primes rather than one 64-bit prime suffices for you, do that. Still, if you need the best guaranteed collision rate as fast as possible, this is the way.
+This trick is also applicable to
+u64 % u32
+computations on 32-bit platforms, arguably a slightly more popular usecase.
+Finally, It’s a free (if conditional) optimization for compilers to perform. It’s quite possible that I’m not just unfamiliar with practical applications. Also, hey, it’s one more trick you might be able to apply elsewhere now that you’ve seen it.

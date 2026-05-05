@@ -1,0 +1,159 @@
+{
+  "run_id": "20260505T071136Z",
+  "triage_timestamp": "2026-05-05T07:11:36Z",
+  "newsletters": [
+    {
+      "message_id": "<20260504114611.3.56bf74ac6502fcc8@mg-d1.substack.com>",
+      "subject": "Aviate, Navigate, Communicate",
+      "source": "hyperdimensional (Substack)",
+      "date": "2026-05-04",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-04-aviate-navigate-communicate.md",
+      "classification": "low",
+      "reason": "General-purpose Substack newsletter; links are Substack internal redirects with no clear AI/LLM focus from URLs alone. Not actionable for wiki enrichment without further content extraction.",
+      "action": "skip",
+      "tags": [
+        "newsletter"
+      ]
+    },
+    {
+      "message_id": "<20260504123209.3.634efb152a161a2a@mg-d0.substack.com>",
+      "subject": "Import AI 455: AI systems are about to start building themselves.",
+      "source": "Jack Clark / Import AI",
+      "date": "2026-05-04",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-04-import-ai-455-ai-systems-are-about-to-start-building-themselves.md",
+      "classification": "critical",
+      "reason": "Import AI is a top-tier AI newsletter. Topic: AI self-improvement / autonomous research agents. Directly relevant to LLM agent capabilities and AI safety. High signal for wiki enrichment.",
+      "action": "process_full",
+      "suggested_wiki_topics": [
+        "autonomous-ai-research",
+        "ai-self-improvement",
+        "automated-ml-pipelines"
+      ],
+      "tags": [
+        "newsletter",
+        "ai-research",
+        "autonomous-agents",
+        "ai-safety"
+      ]
+    },
+    {
+      "message_id": "<20260504150156.3.22afc266ce8d4b3c@mg-d1.substack.com>",
+      "subject": "\ud83c\udf99\ufe0f This week on How I AI: The internal AI tool that's transforming how Stripe designs products",
+      "source": "Lenny's Newsletter",
+      "date": "2026-05-04",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-04-this-week-on-how-i-ai-the-internal-ai-tool-that-s-transforming-how-stripe-design.md",
+      "classification": "high",
+      "reason": "Stripe's internal AI tool for product design. Relevant to AI-in-enterprise, product development workflows, and practical AI tool adoption at scale. Good case study material.",
+      "action": "process_full",
+      "suggested_wiki_topics": [
+        "stripe-ai-tools",
+        "ai-in-product-design",
+        "enterprise-ai-adoption"
+      ],
+      "tags": [
+        "newsletter",
+        "enterprise-ai",
+        "product-design",
+        "stripe"
+      ]
+    },
+    {
+      "message_id": "<20260504155645.3.e0cd1edc412445ac@mg-d1.substack.com>",
+      "subject": "The distillation panic",
+      "source": "Nato Lambert / Robotic (Substack)",
+      "date": "2026-05-04",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-04-the-distillation-panic.md",
+      "classification": "high",
+      "reason": "Model distillation is a core ML technique. 'Panic' suggests policy/regulatory/industry concern around knowledge distillation from large models. Directly relevant to LLM training, efficiency, and AI safety discourse.",
+      "action": "process_full",
+      "suggested_wiki_topics": [
+        "model-distillation",
+        "knowledge-distillation-policy",
+        "llm-efficiency"
+      ],
+      "tags": [
+        "newsletter",
+        "model-distillation",
+        "ai-safety",
+        "llm-training"
+      ]
+    },
+    {
+      "message_id": "<20260504.183137.e8398d22@mta23>",
+      "subject": "$1.75 Billion Bet on Chinese AI",
+      "source": "Beehiiv newsletter (unspecified)",
+      "date": "2026-05-04",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-04-1-75-billion-bet-on-chinese-ai.md",
+      "classification": "high",
+      "reason": "Major investment in Chinese AI sector. Relevant to AI ecosystem landscape, geopolitical AI competition, and funding trends. Good for tracking China AI ecosystem developments.",
+      "action": "process_full",
+      "suggested_wiki_topics": [
+        "china-ai-investment",
+        "geopolitical-ai-competition",
+        "ai-funding-trends-2026"
+      ],
+      "tags": [
+        "newsletter",
+        "china-ai",
+        "investment",
+        "geopolitics"
+      ]
+    },
+    {
+      "message_id": "<20260504232906.3.a3e44643656b3fdb@mg2.substack.com>",
+      "subject": "[AINews] The Other vs The Utility",
+      "source": "swyx (Substack)",
+      "date": "2026-05-04",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-04-ainews-the-other-vs-the-utility.md",
+      "classification": "high",
+      "reason": "swyx is a prominent AI developer/agent thinker. AINews is a curated AI links digest. 'The Other vs The Utility' suggests philosophical framing of AI differentiation vs commoditization. Relevant to AI strategy and developer tooling discourse.",
+      "action": "process_full",
+      "suggested_wiki_topics": [
+        "ai-commoditization",
+        "ai-developer-tooling",
+        "ai-strategy"
+      ],
+      "tags": [
+        "newsletter",
+        "ai-strategy",
+        "developer-tooling",
+        "swyx"
+      ]
+    },
+    {
+      "message_id": "<20260505070200.3.9666081042461dfd@mg-d0.substack.com>",
+      "subject": "15 Privacy Questions Every AI Builder is Asking",
+      "source": "Hugo Bowne (Substack)",
+      "date": "2026-05-05",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-05-15-privacy-questions-every-ai-builder-is-asking.md",
+      "classification": "low",
+      "reason": "AI privacy questions \u2014 tangentially relevant. Privacy is important but this is more about compliance/governance than core LLM/agent technology. Could be useful for an AI safety/governance wiki section if one exists.",
+      "action": "archive_only",
+      "suggested_wiki_topics": [
+        "ai-privacy-governance"
+      ],
+      "tags": [
+        "newsletter",
+        "ai-privacy",
+        "governance"
+      ]
+    }
+  ],
+  "summary": {
+    "total_newsletters": 7,
+    "critical": 1,
+    "high": 4,
+    "low": 2,
+    "process_full": 5,
+    "archive_only": 1,
+    "skip": 1,
+    "key_themes": [
+      "AI self-improvement and autonomous research",
+      "Model distillation concerns",
+      "Chinese AI investment surge",
+      "Enterprise AI tool adoption (Stripe case study)",
+      "AI commoditization vs differentiation",
+      "AI privacy and governance"
+    ]
+  }
+}

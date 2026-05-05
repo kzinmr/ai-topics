@@ -1,3 +1,30 @@
+## [2026-05-05] Newsletter Ingest | Import AI 455 + AINews + Hyperdimensional + Interconnects + Hugo Bowne + Atlantic
+
+**Batch**: 6 newsletter articles from triage → 5 new entity pages, 1 new concept, 2 concept enrichments.
+
+### New Pages Created
+- 🆕 [[entities/jack-clark]] — Anthropic co-founder, Import AI newsletter. 60%+ recursive self-improvement probability by end 2028.
+- 🆕 [[entities/dean-ball]] — AI policy analyst, Hyperdimensional. Mythos governance framework, IVOs.
+- 🆕 [[entities/hugo-bowne]] — Data scientist, AI privacy engineering writer. 3-layer guardrail framework.
+- 🆕 [[entities/sierra]] — AI customer service platform. $15B valuation, $200M+ ARR. Harness-as-a-Service.
+- 🆕 [[concepts/recursive-self-improvement]] — AI autonomously building successors. Capability evidence, compounding alignment risk.
+
+### Pages Enriched
+- ✏️ [[concepts/harness-engineering]] — Added Token Burn Crisis (60M tokens, $221/session), Context Pipelines as Moats (52.8%→66.5% on Terminal-Bench 2.0), Sierra case study, Zyphra TSP/DORA infrastructure.
+- ✏️ [[concepts/ai-safety]] — Added Privacy Engineering for AI Agents section. 3-layer guardrail framework, context leakage vulnerability, privacy observability practices.
+
+### Raw Articles Saved
+- `raw/articles/2026-05-04_import-ai-455-automating-ai-research.md` — Jack Clark, 60% RSI probability
+- `raw/articles/2026-05-04_aviate-navigate-communicate-dean-ball.md` — Dean Ball, Mythos governance
+- `raw/articles/2026-05-04_15-privacy-questions-ai-builder.md` — Hugo Bowne, privacy engineering
+
+### Already Covered (No Action Needed)
+- Nathan Lambert's Distillation Panic: Already fully covered in [[entities/nathan-lambert]] and [[concepts/model-distillation]] (from May 4 ingest).
+- The Atlantic "AI Not a Bubble": Paywalled, no usable content extracted. Reference only.
+
+### Triage Decisions
+- 6 take, 2 reference, 10 skip from 7 newsletters across 18 total candidates.
+
 ## [2026-05-05] willccbb — SFT vs RL vs On-Policy Distillation | Enriched model-distillation.md + will-brown.md timeline
 
 - **[[concepts/model-distillation]]** — Added comprehensive "SFT vs RL vs On-Policy Distillation" section: paradigm comparison table (policy/supervision density/info-theoretic efficiency/compute cost), dense on-policy supervision insight, "dense reward per token" information-theoretic principle (O(N) bits/episode vs O(1) for RL), Will Brown's practitioner framing (post-training stack layers, environment quality dependency), industry adoption list (Qwen3, MiMo, GLM-5, Thinking Machines Lab, Nvidia Nemotron Cascade 2).
