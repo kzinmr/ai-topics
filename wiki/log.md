@@ -1,3 +1,21 @@
+## [2026-05-05] Trending Topics | 7 topics + Wiki Updates (Sierra, xAI, NVIDIA)
+
+**Trending Topics Report**: Web research + newsletter triage → trending topics report saved to inbox/rss-scans/.
+
+### Wiki Pages Updated
+- 🔄 [[entities/sierra]] — Updated valuation ($15.8B), Series E details ($950M), Ghostwriter AaaS, customer list
+- 🔄 [[entities/xai]] — Added GPU Utilization Crisis section (11% utilization, Colossus 2GW/555K GPUs)
+- 🔄 [[entities/nvidia]] — Added China market share zero section (95%→0%, $4.5B charges)
+
+### Trending Topics Covered
+1. ホワイトハウス、AIモデル事前審査の大統領令を検討（NYT/Forbes/Bloomberg）
+2. Sierra $950M Series E at $15.8B valuation（CNBC/TechCrunch）
+3. Jack Clark Import AI 455 — Automating AI Research（jack-clark.net）
+4. Nathan Lambert「蒸留パニック」— distillation policy debate（Interconnects）
+5. xAI GPU稼働率11%問題（The Information/WCCFTech）
+6. NVIDIA中国市場シェア0% — Jensen Huang「輸出規制は裏目」（Tom's Hardware/SEC 10-K）
+7. AIエージェント投資ブーム全体像（Axios: $24B in 2025）
+
 ## [2026-05-05] Active Crawl | Cloudflare LLM Infra + Shadow AI Governance + ADLC + Salesforce Headless 360 + Portkey/Palo Alto
 
 **Batch**: Web research → 4 sources → 6 new wiki pages (3 concepts, 3 entities).

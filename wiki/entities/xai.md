@@ -7,6 +7,7 @@ tags: [company, grok, person, elon-musk, model]
 sources:
   - raw/articles/2026-05-01_xai-grok-4-3-launch.md
   - raw/articles/2026-02-02_spacex-acquires-xai-merger.md
+  - https://wccftech.com/xai-using-just-11-percent-gpus/
 ---
 
 # xAI
@@ -46,6 +47,16 @@ xAI's autonomous desktop agent (private beta April 13, 2026). Operates computers
 - xAI had previously acquired X (Twitter) in March 2025
 - Raised $20B Series E in January 2026 before acquisition
 - Tesla sold $430M in Megapacks to xAI for data centers
+
+## GPU Utilization Crisis (May 2026)
+
+xAI operates the world's largest single AI training facility — **Colossus** in Memphis, TN — with 555,000+ NVIDIA GPUs at 2 GW power. However, reports indicate only **~11% utilization**, dramatically below Meta (43-46%) and Google:
+
+- **Root cause**: Distributed training network and software stack not yet mature for this scale
+- **Pattern**: Burst GPU usage → idle during result analysis and strategy adjustment
+- **Target**: xAI aims for 50% utilization, no timeline given
+- **Context**: Industry-wide problem — GPU-rich does not mean GPU-efficient. The Colossus cluster represents 4x the power of the next-largest dedicated AI training site (Meta's ~500 MW).
+- **Plans**: Software stack optimization; potential GPU rental services for underutilized capacity
 
 ## Pricing Strategy
 

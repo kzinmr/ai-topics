@@ -4,7 +4,10 @@ created: 2026-05-05
 updated: 2026-05-05
 type: entity
 tags: [company, ai-agents, product, platform, valuation]
-sources: [raw/newsletters/2026-05-04-ainews-the-other-vs-the-utility.md]
+sources:
+  - raw/newsletters/2026-05-04-ainews-the-other-vs-the-utility.md
+  - https://www.cnbc.com/2026/05/04/bret-taylor-sierra-fundraise-openai.html
+  - https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/
 ---
 
 # Sierra
@@ -15,11 +18,15 @@ Sierra is an AI-powered customer service platform that deploys conversational AI
 
 ## Key Metrics (May 2026)
 
-- **Valuation**: $15B (up from ~$4.5B in early 2025)
-- **Funding**: Raised ~$1B in latest round
-- **ARR trajectory**: $100M (Nov 2025) → $150M (Feb 2026) → ~$200M+ (current estimate)
+- **Valuation**: $15.8B (Series E, May 4 2026 — up from $10B in Fall 2025)
+- **Funding**: $950M Series E led by Tiger Global and Google's GV, with Benchmark, Sequoia, Greenoaks
+- **ARR**: $150M+ in 8 quarters — fastest growth in enterprise software history
+- **Customers**: Fortune 50's 40%+, Prudential, Cigna, Blue Cross Blue Shield, Rocket Mortgage
 - **Revenue multiple**: 50-75x — reflecting AI agent premium in enterprise
-- **Customers**: WeightWatchers, Sonos, SiriusXM, OluKai, other major brands
+
+### Ghostwriter (Agent as a Service, April 2026)
+
+Sierra launched **Ghostwriter**, an "agent as a service" tool. Users describe what they need in natural language, and Ghostwriter autonomously creates and deploys a specialized agent. This extends Sierra's platform beyond customer-facing agents into internal business process automation.
 
 ## Product
 
