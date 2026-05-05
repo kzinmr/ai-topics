@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-05 | Total pages: 847 | Full entries: 806 | Stubs: 612 |
+> Last updated: 2026-05-05 | Total pages: 849 | Full entries: 809 | Stubs: 610 |
 
 ## Entities (399 pages)
 
@@ -175,6 +175,7 @@
 |- [[entities/idiallo-com]] — **Ibrahim Diallo** (idiallo.com) — Software developer and technical writer known for reflective writing on AI-assisted workflows, LLM-assisted writing challenges, and the tension between AI efficiency and authentic human voice.
 ||- [[entities/iii-platform]] — Open-source backend engine that collapses distributed infrastructure into three primitives: Function, Trigger, Worker. Core thesis: the agent harness should BE the backend.
 |- [[entities/ilya-sutskever]] — **Full Name** | Ilya Sutskever
+- [[entities/ibm-granite-embedding]] — IBM's dense embedding models (311M params, 32K context, ModernBERT architecture). Matryoshka Representation Learning support. Apache 2.0. 200+ languages, 9 programming languages.
 - [[entities/intuit-machine]] — AI agent framework company focused on agentic AI skills design. Published 'Ten Design Principles of Agentic AI Skills Design' — structural insights about how AI systems achieve 10x-100x effectiveness.
 - [[entities/ivan-burazin]] — CEO of Daytona. Coined "Headless SaaS" — SaaS rebuilt with agent-first APIs, no GUI.
 - [[entities/jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of **Bun** — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining...
@@ -868,7 +869,7 @@
 |- [[concepts/space-gpus]] — **Space GPUs** refers to the emerging concept of deploying AI compute hardware — primarily GPUs — in orbit aboard satellites, creating **orbital data centers (ODCs)** that leverage the unique physi...
 |- [[concepts/stanford-cs336-language-modeling-from-scratch|Stanford CS336: Language Modeling from Scratch]] — メタ知識: Stanford (Hashimoto & Liang, 2025春) のゼロからのLLM構築コース。Token化→Transformer→Triton→Scaling→Common Crawl→RLを5課題で実装。最も実践的。
 |- [[concepts/ssm-mamba]] — SSM/Mamba: State Space Models for sequence modeling (S4→Mamba→Mamba-2→Mamba-3). Linear-time alternative to Transformers with selective state spaces, hardware-aware algorithms, and inference-first design (ICLR 2026 Oral). Full resource evaluation included.
-|- [[concepts/speculative-decoding]] — A technique to accelerate LLM inference
+|- [[concepts/speculative-decoding]] — LLM inference acceleration: draft model generates candidate tokens, target model verifies in parallel. Multi-Token Prediction (MTP) drafters (Google Gemma 4): up to 3× speedup, zero quality degradation.
 - [[concepts/speech/whisper]] — Whisper is OpenAI's general-purpose speech recognition model, released in 2022. It uses a Transformer encoder-decoder architecture trained on 680k hours of multilingual and multitask supervised data.
 - [[concepts/sqs-lambda-esm-scaling]] — AWS LambdaのEvent Source Mapping (ESM)はSQSキューからメッセージをPullし、Lambda関数を自動起動する仕組み。Rehan van der Merweが100回以上の実験で得た知見をまとめる。
 - [[concepts/structured-outputs]] — Structured outputs is the paradigm of constraining LLM generation to produce valid, machine-readable data (JSON, XML, Pydantic models) rather than free-form text. This enables reliable integration ...
@@ -879,6 +880,7 @@
 - [[concepts/thin-bi]] — > **Core Thesis:** Modern BI tools are "becoming thin" as cloud data warehouses take over data ingestion and transformation roles.
 - [[concepts/token-economics]] — LLM inference cost analysis, optimization layers, and the economics of running language models at scale. A prerequisite concept for concepts/context-engineering.
 - [[concepts/tokenmaxxing]] — Post-AIE Miami (April 2026), AI leadership has shifted toward **"Tasteful Tokenmaxxing"** — maximizing AI adoption and ROI while avoiding wasteful, low-quality output cycles. The concept represents...
+- [[concepts/tsp-tensor-sequence-parallelism]] — Zyphra's TSP "folds" Tensor Parallelism and Sequence Parallelism onto a single device axis, overcoming GPU memory bottlenecks in long-context training. >2× throughput at 128K tokens vs standard TP+SP.
 |- [[concepts/turboquant]] — Google Research's vector quantization method for extreme LLM KV cache compression with near-optimal theoretical guarantees.
 |- [[concepts/turbopuffer-rank-by-attribute]] — TurboPuffer's `rank_by` attribute-based filtering combines vector similarity search with structured metadata filtering in a single operation. Eliminates the need for separate filtering steps or hybrid search approaches.
 |- [[concepts/ungrounded-meaning]]
@@ -988,7 +990,7 @@
 |- [[concepts/agent-skills-skillmd]] — > **TODO**: Enrich this page.
 - [[concepts/agent-skills]] — > **TODO**: Enrich this page.
 - [[concepts/agent-swarms]] — **Agent Swarms（自律分散型エージェントの創発的振る舞い）** は、中央調整者なしで複数のエージェントが局所的な相互作用から集団的な知能や秩序を生み出すパターン。
-- [[concepts/agentic-coding]] — > **TODO**: Enrich this page.
+- [[concepts/agentic-coding]] — Practice of developing software with AI coding agents, where code is cheap and value shifts to intent, architecture, testing, and taste. Drew Breunig's 10 Lessons framework: Spec-Driven Development Triangle (Spec + Code + Tests).
 - [[concepts/agentic-engineering-cognition-devin-multi-agents-orchestration]] — > **TODO**: Enrich this page.
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — > **TODO**: Enrich this page.
 - [[concepts/agentic-engineering-patterns]] — > **TODO**: Enrich this page.
@@ -1497,7 +1499,7 @@
 - [[concepts/sarah-chieng]] — > **TODO**: Enrich this page.
 - [[concepts/scaffold-vs-rl-debate]] — > **TODO**: Enrich this page.
 - [[concepts/scaling-hypothesis]] — > **TODO**: Enrich this page.
-- [[concepts/scaling-laws]] — > **TODO**: Enrich this page.
+- [[concepts/scaling-laws]] — Predictable relationship between model performance and training resources. Chinchilla (2022): optimal compute allocation. InfoLaw (ICML 2026): extends to data quality, mixture weights, and repetition — 0.15% mean error in loss prediction.
 - [[concepts/sciences-po]] — > **TODO**: Enrich this page.
 - [[concepts/scrapscript]] — > **TODO**: Enrich this page.
 - [[concepts/scribepod]] — > **TODO**: Enrich this page.

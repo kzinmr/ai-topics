@@ -1,16 +1,18 @@
 ---
 title: "Speculative Decoding"
 created: 2026-04-18
-updated: 2026-05-04
+updated: 2026-05-05
 type: concept
-tags: [inference, optimization, technique, architecture]
-aliases: [speculative-sampling, assisted-generation, drafter-verifier]
+tags: [inference, optimization, technique, architecture, speculative-decoding, multi-token-prediction]
+aliases: [speculative-sampling, assisted-generation, drafter-verifier, mtp-drafters]
 sources:
   - raw/articles/2025-10-09_vllm-speculative-decoding-blog.md
   - raw/articles/2023-02-08_jaymody-speculative-sampling.md
   - raw/articles/crawl-2026-04-18-speculative-decoding.md
   - raw/articles/2026-04-28_fireworks-ai-open-weight-models-sed.md
+  - raw/articles/2026-05-05_google-gemma-4-multi-token-prediction-drafters.md
   - https://vllm.ai/blog/spec-decode
+  - https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/
 ---
 
 # Speculative Decoding
@@ -40,6 +42,20 @@ The target model can verify multiple draft tokens in a single forward pass (same
 - No additional model training needed
 - Example: Llama-3 8B's first 4 layers can draft for the full 8B model
 - More practical for most deployments
+
+### Multi-Token Prediction (MTP) Drafters — Google Gemma 4 (May 2026)
+
+Google introduced **MTP drafters** for the Gemma 4 model family, a specialized speculative decoding architecture achieving up to **3× faster inference** with zero quality degradation:
+
+- **Shared KV Cache**: Drafters reuse the target model's activations and KV cache, eliminating redundant computation.
+- **Clustering for edge models**: E2B/E4B edge models use a clustering technique in the embedder to bypass logit calculation bottlenecks.
+- **Batch optimization on Apple Silicon**: Batch sizes of 4–8 unlock ~2.2× additional speedup for the 26B MoE model.
+- **Supported frameworks**: LiteRT-LM, MLX, Ollama, vLLM, SGLang, Hugging Face Transformers.
+- **License**: Apache 2.0.
+
+MTP represents a production-hardened implementation of speculative decoding, deployed across Google's entire Gemma 4 family from edge (E2B) to workstation (31B). It can be seen as the "Google-flavored" answer to the draft-and-verify paradigm: a purpose-built lightweight drafter sharing compute with the target model.
+
+See also: [[gemma-4|Google Gemma 4]], [Google Blog: Accelerating Gemma 4 with MTP](https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/)
 
 ## Performance Characteristics
 

@@ -1,3 +1,32 @@
+## [2026-05-05] X Accounts Scan — Gemma 4 MTP, Zyphra TSP, Agentic Coding, InfoLaw, IBM Granite Embeddings
+
+**X Accounts Scan**: 12 new posts processed from 4 accounts (simonw, gm8xx8, _philschmid, dbreunig, charles_irl).
+
+### Wiki Pages Created
+- 🆕 **[[concepts/tsp-tensor-sequence-parallelism]]** — Zyphra's TSP: folds TP + SP onto single device axis. 2× throughput at 128K tokens, 55% less memory than TP alone. Paper: arXiv:2604.26294.
+- 🆕 **[[entities/ibm-granite-embedding]]** — IBM's dense embedding models (311M + 97M params). ModernBERT architecture, 32K context, Matryoshka MRL, Apache 2.0, 200+ languages.
+
+### Wiki Pages Enriched
+- ✏️ **[[concepts/agentic-coding]]** — Stub → full page. Drew Breunig's 10 Lessons framework: Spec-Driven Development Triangle (Spec + Code + Tests), 10 workflow patterns for coding with agents.
+- ✏️ **[[concepts/scaling-laws]]** — Stub → full page. Chinchilla (2022) foundation + InfoLaw (Liu et al., ICML 2026): information accumulation model for data quality, mixture, and repetition.
+- ✏️ **[[concepts/speculative-decoding]]** — Added Multi-Token Prediction (MTP) Drafters section: Google Gemma 4's production implementation, 3× speedup, shared KV cache, Apple Silicon batch optimization.
+- ✏️ **[[entities/gemma-4]]** — Added MTP Drafters section: architecture, performance impact table, cross-platform support, Apache 2.0 licensing.
+- ✏️ **[[entities/drew-breunig--writings]]** — Added "10 Lessons for Agentic Coding" (May 2026) to AI Period writings.
+
+### Raw Articles Saved
+- 2026-05-05_google-gemma-4-multi-token-prediction-drafters.md
+- 2026-05-05_zyphra-tsp-tensor-sequence-parallelism.md
+- 2026-05-04_drew-breunig-10-lessons-agentic-coding.md
+- 2026-05-04_infolaw-information-scaling-laws.md
+- 2026-05-05_ibm-granite-embedding-311m-multilingual-r2.md
+
+### Additional Posts (Not Yet Processed)
+- Simon Willison: Bun Zig→Rust port, Granite 4.1 SVG pelican gallery, AI cafe in Stockholm, GPT-5.5 Instant API update
+- Charles Frye: MADE benchmark paper (arXiv:2601.20996)
+- gm8xx8: IBM Granite Embedding 97M compact model
+
+New concepts: 1. New entities: 1. Updated concepts: 3. Updated entities: 2. New raw articles: 5.
+Sources: X/Twitter scan (x-accounts-scan cron job).
 ## [2026-05-05] Entity Enrichment: Daniel Tunkelang — O'Reilly profile + multi-source research
 
 - **[[entities/daniel-tunkelang]]** — Enriched from skeleton to full entity page. Added from O'Reilly profile + Springer author bio + SlideShare: PhD CS (CMU), BS Math/CS (MIT). Endeca founding employee, Chief Scientist (acquired by Oracle $1.1B). Led local search at Google. Director of Data Science at LinkedIn (founded query understanding team). Book: Faceted Search (Springer, 76+ citations). 24 US patents. Founded HCIR symposium (2007). Consulting clients: Etsy, Flipkart. O'Reilly articles (2015-2016). Previous stints at IBM T.J. Watson and AT&T Labs. Removed `status: skeleton`.

@@ -3,13 +3,15 @@ title: "Drew Breunig — Writings, Speaking & Key Quotes"
 type: entity
 parent: drew-breunig
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-05
 tags:
   - person
   - writing
   - speaking
   - blog
-sources: []
+sources:
+  - raw/articles/2026-05-04_drew-breunig-10-lessons-agentic-coding.md
+  - https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html
 ---
 
 # Drew Breunig: Writings, Speaking & Key Quotes
@@ -41,7 +43,7 @@ Since ChatGPT's launch, Breunig's writing shifted intensely toward AI:
 
 - **Prompt Engineering & Context**: "Prompt Engineering at the End of the Universe" (2024), "The Prompt Foreman" (2025), "Let the Model Write the Prompt" (2025)
 - **AI Products & Strategy**: "The 3 AI Use Cases" (2024), "Be Better, Not Smaller" (2024), "What Remains After an AI Collapse?" (2024)
-- **Agent Development**: "Enterprise Agents Have a Reliability Problem" (2025), "Two Beliefs About Coding Agents" (2026), "The 2nd Phase of Agentic Development" (2026)
+- **Agent Development**: "Enterprise Agents Have a Reliability Problem" (2025), "Two Beliefs About Coding Agents" (2026), "The 2nd Phase of Agentic Development" (2026), "10 Lessons for Agentic Coding" (May 2026) — codified the Spec-Driven Development Triangle (Spec + Code + Tests) and 10 workflow patterns for coding with agents
 - **RLMs & DSPy**: "The Potential of RLMs" (2026), "Pipelines & Prompt Optimization with DSPy" (2024)
 - **Geospatial**: "Towards Standardizing Place" (2024), "DuckDB is Probably the Most Important Geospatial Software of the Last Decade" (2025)
 

@@ -2,18 +2,23 @@
 title: Google Gemma 4
 type: entity
 created: 2026-04-10
-updated: 2026-04-13
+updated: 2026-05-05
 tags:
 - entity
 - model
 - google
 - open-weight
 - gemma
+- speculative-decoding
+- mtp
 related:
 - google-deepmind
 - open-models
 - on-device-ai
-sources: []
+- speculative-decoding
+sources:
+- raw/articles/2026-05-05_google-gemma-4-multi-token-prediction-drafters.md
+- https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/
 ---
 
 # Google Gemma 4
@@ -117,8 +122,34 @@ The article at patloeber.com documents a practical setup for running **pi** (Mar
 
 |The article emphasizes the tradeoff between context size and VRAM overhead. Coding agents accumulate heavy session context, making larger contexts highly beneficial for multi-file refactors and full repo understanding.
 
+## Multi-Token Prediction (MTP) Drafters (May 2026)
+
+Google released specialized **MTP drafters** for the entire Gemma 4 family, achieving up to **3× faster inference** through speculative decoding:
+
+### How MTP Works
+1. **Drafting**: A lightweight MTP model suggests multiple future tokens simultaneously
+2. **Verification**: The target Gemma 4 model checks the entire sequence in a **single forward pass**
+3. **Bonus Token**: If the target agrees, it accepts the draft sequence AND generates one additional token
+
+### Technical Enhancements
+- **Shared KV Cache**: Drafters reuse the target model's activations, avoiding redundant computation
+- **Clustering for Edge**: E2B/E4B models use a clustering technique in the embedder to bypass logit bottlenecks
+- **Batch Optimization**: On Apple Silicon, batch sizes of 4–8 unlock ~2.2× speedup for 26B MoE
+- **Cross-platform**: Supported on LiteRT-LM (edge), MLX (Apple), Ollama, vLLM, SGLang, and Hugging Face Transformers
+
+### Performance Impact
+| Model Tier | Use Case | MTP Speedup |
+|------------|----------|-------------|
+| E2B/E4B (Edge) | Mobile/IoT, battery-preserved | Significant latency reduction |
+| 26B MoE | Offline coding, agentic workflows | Up to 3× (batch-optimized) |
+| 31B Dense | Workstation-grade tasks | Up to 3× |
+
+The MTP drafters are released under **Apache 2.0** and are available in the [Gemma 4 HuggingFace Collection](https://huggingface.co/collections/google/gemma-4).
+
+See also: [[speculative-decoding]], [Google Blog: Accelerating Gemma 4 with MTP](https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/)
+
 ## Sources
-|- 
+|- raw/articles/2026-05-05_google-gemma-4-multi-token-prediction-drafters.md
 |- 
 |- Google DeepMind announcement
 |- Martin Alderson, "A little tool to visualise MoE expert routing," martinalderson.com (April 13, 2026)
