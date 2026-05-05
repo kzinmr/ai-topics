@@ -1,7 +1,7 @@
 ---
 title: Agentic Search
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-05
 type: concept
 tags:
   - search
@@ -17,6 +17,7 @@ aliases:
   - externalized-processing
   - agentic-retrieval
 sources:
+  - raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams
   - raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md
   - raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
   - raw/papers/2026-03-20_2603.20432_coding-agents-effective-long-context-processors.md
@@ -30,6 +31,7 @@ sources:
   - https://softwaredoug.com/blog/2026/04/06/agentic-search-is-having-a-grep-moment
   - https://www.gend.co/blog/claude-web-search-dynamic-filtering
   - https://softwaredoug.com/blog/2026/04/28/search-apis-replaced-by-agents.html
+  - https://www.youtube.com/watch?v=OGnW2Pu2uVE
   - https://github.com/ChuanMeng/text-ranking-in-deep-research
 ---
 
@@ -349,6 +351,91 @@ Turnbull warns that the "grep moment" has diminishing returns:
 > *"While `grep` is having a moment, high-quality retrieval still matters. Eventually, the most appropriate tool for an agent is a well-tuned `search` function."*
 
 This mirrors the Level 1 finding (SID-1: RL-trained retrieval outperforms both vector search and pure grep-based approaches) and the Level 3 finding (retrieval tools can harm file-system exploration). The article suggests the optimal path is a **well-tuned search harness**, not an either/or choice.
+
+### Discussion: "Will Agents Replace Search Teams?" (January 2026)
+
+A 55-minute fireside chat between Doug Turnbull and search veteran **Daniel Tunkelang** (Endeca co-founder, query understanding specialist). [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
+
+Unlike Turnbull's other talks (which focus on architecture and implementation), this discussion — moderated by Tunkelang — centers on the **human, business, and economic implications** of agentic search.
+
+#### The Feedback Loop Problem
+
+Tunkelang's central critique: agentic search breaks the rapid feedback loop that makes traditional search effective. Traditional search lets users refine iteratively in seconds. Agentic search introduces 15-minute delays, and if the agent misunderstood, that time is wasted. This is a **UX regression** for many search scenarios.
+
+> "Search isn't that smart, but the feedback is pretty quick. It puts a lot of burden on us to refine, but at least the speed of feedback allows us to keep making attempts." — Daniel Tunkelang
+
+#### The Spectrum of Search Needs
+
+Tunkelang and Turnbull map search behavior onto a spectrum:
+
+| Need Type | Example | Suited for Agents? |
+|-----------|---------|:---:|
+| Complex research with clear intent | Buying durable headphones, real estate search | ✅ Yes |
+| Background candidate sourcing | Finding 500 experts in a field | ✅ Yes |
+| Federated multi-source search | Cross-referencing LinkedIn, Indeed, GitHub | ✅ Yes |
+| Commodity purchase / instant gratification | Toilet paper, red shoes on Amazon | ❌ No |
+| Exploratory browsing | Retail therapy, "I'll know it when I see it" | ❌ No |
+
+This echoes but extends Turnbull's earlier distinction between "finding things" (good for agents) and "deep research" (bad for agents). Tunkelang adds the **time-sensitivity dimension**: if the user wants instant satisfaction, agentic latency is a net negative.
+
+#### Economic Disruption: Machines as Search Consumers
+
+Tunkelang identifies a structural shift: when AI agents (not humans) consume search results, the ad-based business model breaks because **machine attention cannot be monetized**.
+
+Already visible effects:
+- **EXA** charges for agent-accessible web indexes (agent-to-API, not human-to-web)
+- **Reddit** enters content monetization agreements
+- **Stack Overflow** traffic declines as LLMs answer directly
+- **GitHub** open-source maintainers see reduced human engagement and reputation flow
+
+> "If most of the attention will be done by machines whose attention cannot be monetized directly, the economic model does have to change." — Daniel Tunkelang
+
+Turnbull connects this to the "private internet theory": the web fragments into walled gardens where humans hide from AI crawlers, while LLMs consume the open web that was previously crawlable by Google.
+
+#### Stakes-Based Error Sensitivity
+
+Tunkelang proposes that agentic systems should self-calibrate based on the cost of errors:
+
+| Stakes | Error Cost | Recommended Behavior |
+|--------|-----------|---------------------|
+| **Low** (play wrong song) | User hits "next" | Execute immediately |
+| **Medium** (product research) | User wastes money | Show evidence, explain reasoning |
+| **High** (email to wrong person) | Professional/legal damage | Confirm before acting |
+
+He notes that current systems don't invest enough in this sensitivity model — they apply the same verification level to all queries regardless of stakes.
+
+#### Domain-Specific Assumptions
+
+Turnbull shares a revealing case study from a major US auto parts supplier. The LLM's default assumption (and Turnbull's) was that searching a part number means the user wants that part. In reality, salespeople were **checking commissions**. This 20% gap highlights:
+
+- **The "unknown assumptions" problem**: LLMs embed domain assumptions that may not match reality
+- **Query performance prediction**: detecting when results look unreasonable
+- **Prior-based ambiguity signals**: statistically unusual queries should trigger clarification
+
+#### Education and Critical Thinking
+
+Tunkelang draws a powerful analogy to the early ML era: as tooling was democratized, the people who didn't understand statistics misused the tools. Same pattern with agentic search:
+
+> "The biggest danger I see in the technology of search getting too easy is that we're masking the importance of critical thinking."
+
+The democratization of search tools means the **bar for research skills rises, not falls** — users need more critical thinking to evaluate agent-provided results than they did to evaluate raw search results.
+
+#### Personalization Overfitting
+
+Tunkelang shares a concrete example of ChatGPT over-personalizing: because it inferred he was a "high-class consultant," it assumed all restaurant queries were for entertaining clients. The solution is **transparency** — agents should show *what* they learned and *why* they're making assumptions.
+
+> "The nice thing is that an agent can appropriately try to overfit to the searcher, but also can be transparent about it, can say what it's learned."
+
+#### Key Takeaway for Search Teams
+
+Tunkelang's closing position: **search teams manage ambiguity, edge cases, and business alignment.** Key areas where agents can't replace them today:
+
+1. Distinguishing clarifying questions from proceeding
+2. Recognizing when the search process itself teaches the user something
+3. Aligning results with business incentives (which may conflict with user incentives)
+4. Handling the long tail of domain-specific edge cases
+
+Sources: [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]], [[entities/daniel-tunkelang]]
 
 ### Talk: "Rag is the What. Agentic search is the How." (April 2026)
 

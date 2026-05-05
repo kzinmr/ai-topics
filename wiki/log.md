@@ -1,3 +1,12 @@
+## [2026-05-05] YouTube Video: "Will Agents Replace Search Teams?" — Doug Turnbull & Daniel Tunkelang
+
+- **[[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]** — Saved raw article: 55-minute discussion on what agents can and cannot replace in search teams. Covers latency-feedback tradeoff, e-commerce search spectrum, economic disruption (EXA, Reddit, Stack Overflow), stakes-based error models, domain-specific LLM assumptions (auto parts case study), personalization risks, and the rising importance of critical thinking.
+- **[[entities/doug-turnbull-speaking]]** — Added this talk to the Conference Talks list.
+- **[[entities/daniel-tunkelang]]** — Created new entity page (skeleton) for search veteran and Endeca co-founder.
+- **[[concepts/agentic-search]]** — Added "Discussion: Will Agents Replace Search Teams?" section with: Tunkelang's feedback loop critique, search needs spectrum, economic disruption analysis, stakes-based error sensitivity model, domain-specific assumption case study, education/critical thinking implications, personalization overfitting risks, and search team defense.
+- New raw articles: 1. New entities: 1 (daniel-tunkelang). New concepts: 0. Updated entities: 1 (doug-turnbull-speaking). Updated concepts: 1 (agentic-search).
+- Source: https://www.youtube.com/watch?v=OGnW2Pu2uVE
+
 ## [2026-05-05] Karpathy Loop → Search Domain | Doug Turnbull's agent-coded reranker as Karpathy Loop search version
 
 - **[[raw/articles/2025-10-19_doug-turnbull_agent-coded-search-reranker.md]]** — Saved raw article: agent generates generalizable Python reranker code, iteratively optimizes NDCG through eval feedback.

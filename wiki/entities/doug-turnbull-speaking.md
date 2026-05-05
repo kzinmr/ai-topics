@@ -24,6 +24,8 @@ Turnbull is a regular speaker at search industry conferences:
 
 - **\"Why 2026 is The Year of Agentic Search\"** (May 2026, YouTube): 65-minute fireside chat with Jo Kristian Bergum (Vespa.ai) on the four pillars of agentic search — LLM Query Understanding at scale, Autoresearch (agents writing ranking code), Agentic Search Harnesses (feedback loops that make dumb retrievers smart), and LLM-as-a-Judge for principled evaluation. References Doug's Maven course starting May 18. [[raw/articles/2026-05-01_doug-turnbull-2026-is-the-year-of-agentic-search]]
 
+- **"Will Agents Replace Search Teams? (a discussion)"** (Jan 2026, YouTube): 55-minute discussion with Daniel Tunkelang exploring the boundary between what agents can and cannot replace in search teams — covers the latency-feedback tradeoff, domain-specific LLM assumptions, economic disruption (EXA, Reddit), stakes-based error models, and the growing importance of critical thinking. [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
+
 - **Berlin Buzzwords / Haystack EU** (2024): "Learning to Rank for Reddit Search: A Project Retro" with Charles Njoroge
 
 - **Elastic{ON}16** (2016): "The Ghost in the Search Machine"

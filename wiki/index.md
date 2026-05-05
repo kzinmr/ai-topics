@@ -82,6 +82,7 @@
 - [[entities/daniel-de-laney]] — **Blog** | danieldelaney.net |
 - [[entities/daniel-han]] — **X/Twitter** | @danielhanchen |
 - [[entities/daniel-miessler]] — Cybersecurity and AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ GitHub stars), SecLists, PAI. Author of Autonomous Component Optimization and Intent-Based Engineering concepts.
+- [[entities/daniel-tunkelang]] — **X/Twitter** | @dtunkelang | Search consultant, Endeca co-founder (faceted search pioneer). Specializes in query understanding and e-commerce search. [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
 - [[entities/daniel-van-strien]] — **X** | @vanstriendaniel |
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
 - [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.
