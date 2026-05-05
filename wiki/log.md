@@ -1,3 +1,34 @@
+## [2026-05-05] Active Crawl | Cloudflare LLM Infra + Shadow AI Governance + ADLC + Salesforce Headless 360 + Portkey/Palo Alto
+
+**Batch**: Web research → 4 sources → 6 new wiki pages (3 concepts, 3 entities).
+
+### New Pages Created
+- 🆕 [[concepts/cloudflare-llm-infrastructure]] — Cloudflare's custom LLM inference stack. PD disaggregation, Infire Rust engine, Mooncake KV-cache, EAGLE-3 speculative decoding. 3x latency improvement, 80% cache hit ratio.
+- 🆕 [[concepts/shadow-ai-governance]] — 80% of Fortune 500 use AI agents without governance strategy. 5-capability control framework (Registry, Access Control, Visualization, Interoperability, Security).
+- 🆕 [[concepts/agent-development-lifecycle]] — ADLC framework formalizing agent operations: Agent Supervisor, QA Lead, AI Ops Manager, Chief AI Officer. DevOps vs. ADLC comparison.
+- 🆕 [[entities/salesforce-headless-360]] — Salesforce's agent-first restructuring. APIs, MCP, CLI. Browser UI optional.
+- 🆕 [[entities/portkey]] — AI agent security platform. Acquired by Palo Alto Networks (Q4 2026). Action inspection, 99.99% uptime.
+- 🆕 [[entities/palo-alto-networks]] — Cybersecurity company. Portkey acquisition signals agent security maturity.
+
+### Raw Articles Saved
+- `raw/articles/2026-05-05_cloudflare-high-performance-llms.md` — Cloudflare blog: Infire engine, PD disaggregation, Mooncake KV-cache
+- `raw/articles/2026-05-04_shadow-ai-governance-crisis.md` — Security Boulevard: 5-capability framework, Zscaler discovery of 4M prompts/week
+- `raw/articles/2026-05-01_salesforce-8-ways-ai-agents-evolving-2026.md` — Salesforce: ADLC, Headless 360, HyperClassifier, deterministic guardrails
+- `raw/articles/2026-05-05_ai-agent-news-weekly-apr28-may4.md` — AI Agent Store: Portkey/Palo Alto, FIDO, NVIDIA Nemotron 3 Nano Omni
+
+### Cross-References Added
+- [[concepts/cloudflare-llm-infrastructure]] ↔ [[concepts/mooncake]], [[concepts/nvidia-dynamo]], [[entities/kimi]]
+- [[concepts/shadow-ai-governance]] ↔ [[concepts/agent-governance]], [[concepts/agent-iam]], [[concepts/agentic-security]], [[concepts/zero-trust-agentic-ai]]
+- [[concepts/agent-development-lifecycle]] ↔ [[concepts/harness-engineering]], [[concepts/agent-governance]], [[concepts/ai-observability]]
+- [[entities/salesforce-headless-360]] ↔ [[concepts/headless-saas]], [[concepts/model-context-protocol-mcp]]
+- [[entities/portkey]] ↔ [[entities/palo-alto-networks]], [[concepts/agentic-security]], [[concepts/shadow-ai-governance]]
+
+### Topics Researched But Already Covered
+- MCP scale (97M installs): Covered in [[concepts/model-context-protocol-mcp]]
+- Agent harness patterns: Already extensively covered in [[concepts/harness-engineering]]
+- $700B AI infrastructure spend: Covered in [[concepts/ai-bubble-economics]], [[concepts/compute-scaling-bottlenecks]]
+
+---
 ## [2026-05-05] Newsletter Ingest | Import AI 455 + AINews + Hyperdimensional + Interconnects + Hugo Bowne + Atlantic
 
 **Batch**: 6 newsletter articles from triage → 5 new entity pages, 1 new concept, 2 concept enrichments.
