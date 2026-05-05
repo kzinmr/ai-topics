@@ -974,7 +974,7 @@
 
 |- [[concepts/2026-04-23-how-anthropic-s-product-team-moves-faster-than-anyone-else-cat-wu-head-of-produc]] — > **TODO**: Enrich this page.
 |- [[concepts/2026-04-24-ainews-gpt-5-5-and-openai-codex-superapp]] — > **TODO**: Enrich this page.
-|- [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — > **TODO**: Enrich this page.
+- [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — April 2026 OpenAI launch wave — GPT-5.5 (SPUD), ChatGPT Images 2.0 with reasoning, Qwen3 6B/27B, Workspace Agents. Synthesis page.
 |- [[concepts/@milksandmatcha]] — > **TODO**: Enrich this page with research on Sarah Chieng (@MilksandMatcha).
 |- [[concepts/a-philosophy-of-software-design-vs-clean-code]] — > **TODO**: Enrich this page.
 |- [[concepts/aaron-swartz]] — > **TODO**: Enrich this page.

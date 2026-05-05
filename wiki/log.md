@@ -787,3 +787,38 @@
 - **Reference**: 4 — Simon Willison/Anthropic sycophancy (anti-sycophancy.md), Martin Alderson CopyFail (martin-alderson.md), George Hotz essay (george-hotz.md), Gary Marcus healthcare (gary-marcus.md)
 - **Skip**: 14 — Zig, PNG, touch typing, RSS→Atom, politics, staff engineer, math, sponsor page, Steve Jobs, HTML/CSS, 86-DOS, Bluesky politics, wheel history, empty file
 - **Verdict**: No new wiki pages needed. All AI-relevant articles already captured in existing entity/concept pages.
+
+## [2026-05-06] dreaming | Wiki ingest — enriched stub page, 7 themes skipped (already covered)
+
+### Dreaming Pipeline
+- **Source**: dreaming-group checkpoint (2026-04-28, 8 themes from 37 articles)
+- **Pre-run script**: Failed JSON parse from dreaming-group output; recovered from fallback file at `/opt/data/.hermes/cron/data/dreaming/grouped_themes_latest.json`
+
+### Pages Enriched
+- 🆙 [[concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b]] — Enriched from 420-byte stub (status: stub) to full synthesis page (3.8KB, status: enriched). Covers April 2026 OpenAI launch wave: GPT-5.5 (SPUD), ChatGPT Images 2.0 with reasoning, Qwen3 6B/27B, Workspace Agents. Removed `status: stub`, cross-references to 5 related pages.
+
+### Themes Skipped (Already Covered by Existing Pages)
+1. **ChatGPT Images 2.0 Reasoning** (0.72, NJ=4) — Fully covered in [[concepts/chatgpt-images-2.0]] (updated 2026-04-28)
+2. **Google TPU 8t/8i Deep Dive** (0.68, NJ=3) — Fully covered in [[entities/google-tpu]] (updated 2026-04-28, 139 lines)
+3. **GitHub Copilot Token Billing** (0.65, NJ=4) — Fully covered in [[concepts/github-copilot-billing]] (updated 2026-04-30)
+4. **GPJT LLM from Scratch IFT** (0.61, NJ=2) — Covered in [[entities/gpjt]] (part 32l detailed)
+5. **Gumloop AI Automation** (0.48, NJ=2) — Below threshold, themes 7 days stale
+6. **AI Coding Best Practices** (0.46, NJ=2) — Below threshold, themes 7 days stale
+7. **Google Photo Scanning AI** (0.42) — Below threshold, skip
+8. **Bezos Project Prometheus** (0.40, NJ=3) — Below threshold, skip
+
+### Health Note
+- Index.md has 208 `|-` pipe-corrupted lines (pre-existing issue, tracked by wiki-health pipeline)
+- Entity pages `concepts/gpt-5.5-chatgpt-images-2-0-qwen3-6-27b.md` resolved to `concepts/2026-04-24-gpt-5-5-chatgpt-images-2-0-qwen3-6-27b.md` (date-prefixed)
+
+---
+
+## [2026-05-06] lint | 定期ヘルスチェック実行
+- index.md: 1599ファイル中847件しかカウント（752件過少）
+- index.mdフォーマット破損: 'N|-'パターン20行、'|-'先頭217行
+- index.md重複エントリ17件、存在しないターゲット24件
+- Wikilinks壊れ284件、未分類タグ430件（220ページ影響）
+- 孤立ページ1190件、大容量ページ103件
+- 命名規則違反4件（日付始まり3、特殊文字1）
+- log.md正常（77エントリー）、メタデータ完全性OK
+---
