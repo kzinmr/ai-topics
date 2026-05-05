@@ -2,7 +2,7 @@
 title: Will Brown
 type: entity
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-05
 source: "x-account"
 tags:
   - person
@@ -65,6 +65,7 @@ Brown has emerged as one of the most prominent voices able to **publicly discuss
 | 2025 | Created **mcp-client-server** — MCP Server that's also an MCP Client (124 stars) |
 | 2025 | Created **agent-engineering** course files (71 stars) |
 | 2025 | Created **research-agent-lesson** — "Build Your Own AI Research Agent" lesson files |
+| May 2026 | Published "On SFT, RL, and on-policy distillation" — X article comparing post-training paradigms; 1,800+ likes, 3,300+ bookmarks |
 
 ## Core Ideas
 
@@ -188,6 +189,7 @@ See [[concepts/rl-harness-lifecycle]] for the full analysis.
 ## Sources
 
 - [Will Brown's Website](https://willcb.com/)
+- [On SFT, RL, and on-policy distillation — X Article (May 2026)](https://x.com/willccbb/status/2050038277454143918) — Auth wall; raw article at [[raw/articles/2026-05-01_willccbb-sft-rl-on-policy-distillation]]
 - [GenAI Handbook](https://genai-handbook.github.io/)
 - [Verifiers GitHub Repository](https://github.com/PrimeIntellect-ai/verifiers)
 - [GRPO Demo Gist](https://gist.github.com/willccbb/4676755236bb08cab5f4e54a0475d6fb)

@@ -1355,7 +1355,7 @@
 - [[concepts/mixture-of-experts]] — > **TODO**: Enrich this page.
 - [[concepts/ml-systems]] — > **TODO**: Enrich this page.
 - [[concepts/mlops]] — > **TODO**: Enrich this page.
-- [[concepts/model-distillation]] — > **TODO**: Enrich this page.
+- [[concepts/model-distillation]] — Training a student model on teacher outputs for post-training. Covers on-policy vs off-policy, SFT vs RL vs OPD comparison, and the 2026 Distillation Panic.
 - [[concepts/model-quantization-for-local-llms]] — > **TODO**: Enrich this page.
 - [[concepts/model-quantization]] — > **TODO**: Enrich this page.
 - [[concepts/modernbert]] — > **TODO**: Enrich this page.

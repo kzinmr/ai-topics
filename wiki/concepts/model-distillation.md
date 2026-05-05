@@ -6,7 +6,7 @@ aliases:
   - knowledge-distillation
   - teacher-student-distillation
 created: 2026-04-25
-updated: 2026-05-04
+updated: 2026-05-05
 tags:
   - concept
   - post-training
@@ -43,6 +43,46 @@ Distillation is a cornerstone of modern AI post-training pipelines. It is used b
 | **On-Policy Distillation** | Teacher and student co-evolve in a training loop; student learns from teacher's distribution in real-time | MOPD (Multi-Teacher On-Policy Distillation) |
 | **Synthetic Data Generation** | Teacher creates training data for domains with limited human data | Evol-Instruct, Orca, OpenHermes |
 
+## SFT vs RL vs On-Policy Distillation
+
+A central technical debate in LLM post-training (circa May 2026) is the relationship between three paradigms:
+
+| Paradigm | Policy | Supervision Density | Info-Theoretic Efficiency | Typical Compute Cost |
+|----------|--------|---------------------|--------------------------|---------------------|
+| **SFT** | Off-policy | Dense (token-level) | ~O(N) bits/episode but distribution mismatch | Low |
+| **RL (GRPO)** | On-policy | Sparse (outcome only) | ~O(1) bits/episode | High (17,920 GPU hrs for Qwen3) |
+| **On-Policy Distillation** | On-policy | Dense (token-level) | ~O(N) bits/episode, matched distribution | Low (1,800 GPU hrs for Qwen3) |
+
+### The Key Insight: Dense On-Policy Supervision
+
+On-policy distillation (OPD) resolves the fundamental tension between SFT and RL:
+
+- **SFT's weakness**: Off-policy — the model trains on teacher-forced prefixes that diverge from its own generation distribution at inference time (exposure bias). The supervision is dense but distributionally mismatched.
+- **RL's weakness**: On-policy but sparse — a single outcome reward per episode provides ~O(1) bits of information, creating a severe credit assignment bottleneck. The model cannot learn which *tokens* caused success or failure.
+- **OPD's solution**: On-policy like RL (student generates its own rollouts), dense like SFT (token-level teacher logits). The student learns from the teacher's distribution on its *own* trajectories, matching both policy and supervision density.
+
+### The "Dense Reward Per Token" Principle
+
+The information-theoretic framing explains OPD's efficiency: if RL teaches ~O(1) bits per episode (just whether the outcome was good or bad), OPD teaches ~O(N) bits per episode (one distribution-matching signal per token). In Qwen3's results, this translated to **74.4% on AIME'24 at ~1,800 GPU hours** vs **67.6% at ~17,920 GPU hours for pure RL** — a ~10x compute advantage.
+
+### Will Brown's Contribution
+
+In his May 2026 X article "On SFT, RL, and on-policy distillation," **Will Brown** ([[entities/will-brown]]) provides a practitioner's framing of this comparison. Coming from his work on **verifiers** (RL environments) and **PRIME-RL** (distributed RL training), Brown argues that:
+
+- The three paradigms are not competitors but layers in a **post-training stack**
+- On-policy distillation fills a specific niche: dense, on-policy supervision at minimal compute cost
+- The choice of paradigm depends on **environment quality** — with high-quality environments and reward signals, RL still wins for open-ended exploration; with verifiable outcomes (math, code), OPD is the cost-effective choice
+- This extends his earlier **RL-Harness Lifecycle** thesis ([[concepts/rl-harness-lifecycle]]): harnesses create environments → OPD efficiently extracts capabilities from teacher models → RL refines through exploration
+
+### Industry Adoption
+
+By May 2026, OPD has been adopted by:
+- **Qwen3** (Alibaba) — 74.4% AIME'24 via OPD at 1/10th RL compute
+- **MiMo** (Apple/Partners) — OPD in post-training pipeline
+- **GLM-5** (Zhipu AI) — OPD in post-training pipeline
+- **Thinking Machines Lab** — Independent replication confirming Qwen3's OPD recipe
+- **Nvidia Nemotron Cascade 2** — Multi-domain OPD as headline contribution
+
 ## The "Distillation Panic" (2026)
 
 In April–May 2026, a political controversy erupted around the term "distillation attacks." Key events:
@@ -76,4 +116,5 @@ Lambert and others warn that anti-distillation regulation could backfire:
 - [[concepts/ai-api-abuse]] — The API exploitation behavior commonly conflated with distillation
 - [[events/distillation-attacks-2026]] — Anthropic's April 2026 accusations against Chinese labs
 - [[entities/nathan-lambert]] — Author of "The Distillation Panic"
-- [[raw/articles/2026-05-04_interconnects_distillation-panic]] — Raw article
+  - raw/articles/2026-05-04_interconnects_distillation-panic
+  - raw/articles/2026-05-01_willccbb-sft-rl-on-policy-distillation

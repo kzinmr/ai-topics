@@ -1,3 +1,11 @@
+## [2026-05-05] willccbb — SFT vs RL vs On-Policy Distillation | Enriched model-distillation.md + will-brown.md timeline
+
+- **[[concepts/model-distillation]]** — Added comprehensive "SFT vs RL vs On-Policy Distillation" section: paradigm comparison table (policy/supervision density/info-theoretic efficiency/compute cost), dense on-policy supervision insight, "dense reward per token" information-theoretic principle (O(N) bits/episode vs O(1) for RL), Will Brown's practitioner framing (post-training stack layers, environment quality dependency), industry adoption list (Qwen3, MiMo, GLM-5, Thinking Machines Lab, Nvidia Nemotron Cascade 2).
+- **[[entities/will-brown]]** — Added timeline entry (May 2026: "On SFT, RL, and on-policy distillation" X article) and source reference.
+- **raw/articles/2026-05-01_willccbb-sft-rl-on-policy-distillation.md** — Saved raw article (metadata-only: X auth wall, article ID 2050010745375768576, no mirror found).
+- Updated: wiki/concepts/model-distillation.md, wiki/entities/will-brown.md, wiki/index.md (model-distillation desc enriched)
+- Source: https://x.com/willccbb/status/2050038277454143918 (auth wall)
+
 ## 2026-05-04 X Bookmarks Ingest
 
 **Batch**: 6 bookmarks → 3 articles scraped, 3 metadata-only (X auth wall).
