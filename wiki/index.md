@@ -277,7 +277,8 @@
 |- [[entities/cory-doctorow]] — Canadian-British sci-fi author and digital rights activist. Coined "enshittification." Blogs at pluralistic.net. Critical voice on AI policy and corporate personhood.
 |- [[entities/philiplaine-com]] — **URL:** https://philiplaine.com
 |- [[entities/phil-schmid]] — Staff Engineer (AI DevX/DevRel) at Google DeepMind, ex-Hugging Face Tech Lead (revenue $0→$100M). Author of FSDP+Q-LoRA guide, RLHF tutorials, Inference Endpoints.
-- [[entities/playerzero]] — AI production engineering platform. Context graphs as engineering world models. Founded by Animesh Koratana (Stanford DAWN lab). $20M total funding. Customer: Zuora.
+|- [[entities/philipp-schmid]] — Philipp Schmid (@_philschmid) — Senior AI Developer Experience Engineer at Google DeepMind, ex-Hugging Face Tech Lead. Prolific AI educator, deployment optimization expert, agent harness advocate.
+|- [[entities/playerzero]]
 - [[entities/poolside]] — AI code generation startup. Released **Laguna XS.2** (33B/3B MoE, Apache 2.0, single-GPU inference) in April 2026.
 - [[entities/project-prometheus]] — Jeff Bezos co-founded AI startup. $10B raised, $38B valuation. Focus on "Physical AI" for manufacturing/aerospace.
 - [[entities/pluralistic-net]] — **Blog** | pluralistic.net |
@@ -478,6 +479,7 @@
 - [[concepts/agent-sandbox-patterns]] — Browser Useのエージェントサンドボクシングアーキテクチャ。ツール分離パターンとエージェント分離パターン
 |- [[concepts/ask-user-question-pattern]] — エージェントがユーザーに確認を求めるためのハーネスパターン
 |- [[concepts/ai-patterns-for-glam|AI Design Patterns for Information Professionals]] — Practical "boring AI" design patterns for GLAM and information professionals. Covers discovery, structured extraction, evaluation, and infrastructure. WIP book by [[entities/daniel-van-strien]].
+|- [[concepts/ai-retail-experiments]] — Experiments where autonomous AI agents manage real-world physical businesses (cafes, retail stores) with minimal human oversight. Andon Labs AI cafe in Stockholm, ordering errors, ethical concerns.
 |- [[concepts/audio-tokenizer-comparison]] — 비교/Comparison of 5 neural audio tokenizers: SoundStream, EnCodec, DAC, SpeechTokenizer, Mimi. RVQ-based, differing in codec quality vs. speech LLM readiness, semantic/acoustic separation, token rate, and domain.
 |- [[concepts/bitter-lesson-agent-harnesses]] — モデル能力のスケール向上に伴い、ハーネスの役割は論理実装からモデル行動のオーケストレーションへ移行する
 - [[concepts/context-providers]] — エージェントとツールの間にあるコンテキスト供給レイヤーの設計パターン
@@ -657,6 +659,7 @@
 ||- [[concepts/gemini]] — **Gemini** is Google DeepMind's family of multimodal AI models, spanning text, images, video, audio, and code. Originally announced in December 2023, Gemini has evolved through multiple generations...
 - [[concepts/generic-agent-self-evolving]] — **GenericAgent (GA)** is a self-evolving LLM agent system from Fudan University (arXiv:2604.17091, April 2026) built around **contextual information density maximization** — the principle that long...
 |- [[concepts/generative-app-evolution]] — The evolution trajectory of AI applications from generative UI (stateless, single-turn) to generative apps (stateful, multi-turn with persistence). Maps the "generative staircase" and the FCIS (Functional Core / Imperative Shell) pattern for AI-era architecture.
+|- [[concepts/gm8xx8-gm8xx8-ai-paper-curator]] — Stub page for gm8xx8 (@gm8xx8), high-taste AI paper curator with 89K+ HF followers. Status: stub.
 |- [[concepts/genai-handbook|GenAI Handbook]] — メタ知識: William Brown (@willccbb)のGenerative AI学習リソースロードマップ。9セクションのWikiカバレッジマッピング、リンクリソース評価、ギャップ分析、学習者タイプ別推奨。
 |- [[concepts/gepa]] — GEPAはDSPyに統合された遺伝的アルゴリズムベースのプロンプト最適化手法。Pareto最適化により品質とコストを同時に最適化し、GRPOより35倍少ないサンプルで6%高い性能を達成。ICLR 2026 Oral。
 |- [[concepts/glass-slipper-effect]] — Framework for LLM user retention from the OpenRouter State of AI 2025 study. Foundational cohorts, Boomerang Effect, and workload-model fit drive model loyalty.
