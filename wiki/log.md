@@ -1,3 +1,23 @@
+
+## [2026-05-06] Dreaming Wiki Ingest — GPT-5.5 Instant, GLM-5.1, MiniMax M2.7, Index Maintenance
+
+**Topics discovered**: 3 new models, 1 IDE concept
+**Pages created**: 3 new concept pages + 1 existing concept updated
+**Pages updated**: `concepts/github-copilot-billing.md` (Cursor IDE competition context)
+**Index maintenance**: Fixed pipe table corruption, removed 22 duplicate entries, updated page counts
+
+### New Concept Pages (3)
+- [[concepts/gpt-5.5-instant]] — OpenAIのGPT-5.5 Instant。2026年5月、ChatGPTとOpenAI APIのデフォルトモデルに。記憶保持、ファイル統合、Gmail連携でパーソナルAIワークステーション化。
+- [[concepts/glm-5-1]] — Zhipu AIのオープンソースMoEモデル（744Bパラメータ、40Bアクティブ）。DeepSeek Sparse Attention採用。長期自律エージェントタスクに特化。
+- [[concepts/minimax-m2-7]] — MiniMaxの2026年フロンティアLLM。自律エージェントハーネス構築とRL実験による自己改善ループが特徴。
+
+### Index Maintenance
+- Fixed pipe table corruption (`|- [[` → `- [[`) across index.md
+- Removed 22 duplicate entries (TODO stubs where rich entries existed)
+- Updated header counts: Total pages 5167, Full entries 4621, Stubs 546
+
+---
+
 ## [2026-05-06] Active Crawl — Meta AI Agents, Cloudflare LLM Infra, Project Mariner, Mistral Vibe, ServiceNow
 
 **Topics discovered**: 5 major developments
