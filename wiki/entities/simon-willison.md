@@ -3,7 +3,7 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-05-01
+updated: 2026-05-06
 status: L3
 sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/]
 tags: [person, opinion-leader]
@@ -166,8 +166,12 @@ LLMのコンテキストウィンドウは**限られたリソース**として�
 - [simonwillison.net--2026-apr-28-matthew-yglesias--fc5431dc](simonwillison.net--2026-apr-28-matthew-yglesias--fc5431dc.md)
 - [simonwillison.net--2026-apr-28-pip-261--75a0da6d](simonwillison.net--2026-apr-28-pip-261--75a0da6d.md)
 - [simonwillison.net--2026-apr-28-talkie--0af0b995](simonwillison.net--2026-apr-28-talkie--0af0b995.md)
-- [simonwillison.net--2026-apr-29-llm--dff2021f](simonwillison.net--2026-apr-29-llm--dff2021f.md)
+- [simonwillison.net--2026-apr-30-andrew-kelley--7be6c476](simonwillison.net--2026-apr-30-andrew-kelley--7be6c476.md)
 - [simonwillison.net--2026-apr-30-zig-anti-ai--e30e52cf](simonwillison.net--2026-apr-30-zig-anti-ai--e30e52cf.md)
+- [simonwillison.net--2026-may-5-datasette-llm--9b418a5a](simonwillison.net--2026-may-5-datasette-llm--9b418a5a.md)
+- [simonwillison.net--2026-may-5-llm-echo--6fa00161](simonwillison.net--2026-may-5-llm-echo--6fa00161.md)
+- [simonwillison.net--2026-may-5-datasette-referrer-policy--47e367af](simonwillison.net--2026-may-5-datasette-referrer-policy--47e367af.md)
+- [simonwillison.net--2026-may-5-our-ai-started-a-cafe-in-stockholm--0a8c7878](simonwillison.net--2026-may-5-our-ai-started-a-cafe-in-stockholm--0a8c7878.md)
 - [substack.com--simonw--bba9b315](substack.com--simonw--bba9b315.md)
 
 ### LLM 0.32a0 — Major Backwards-Compatible Refactor (April 2026)

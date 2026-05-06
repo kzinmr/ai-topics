@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-05 | Total pages: 849 | Full entries: 809 | Stubs: 610 |
+> Last updated: 2026-05-06 | Total pages: 851 | Full entries: 811 | Stubs: 610 |
 
 ## Entities (399 pages)
 
@@ -611,6 +611,9 @@
 - [[concepts/direct-prompting-philosophy]] — **Direct Prompting Philosophy** (or "Just Talk To It") is an anti-overengineering approach to agentic development. It rejects complex orchestration layers (RAG pipelines, subagent frameworks, custo...
 - [[concepts/dspy-rlm]] — Recursive Language Model — 大規模コンテキストをsandobx Python REPLでプログラム的に探索するDSPyモジュール
 - [[concepts/dspy]] — **DSPy** (Declarative Self-improving Python for LMs, "dee-spai")は、Stanford NLP Group（Omar Khattab, Arnav Singhviら）が開発した**宣言的LMプログラミングフレームワーク**。
+- [[concepts/datasette-llm]] — LLM-powered SQL queries for Datasette — natural language to SQL, AI-assisted data exploration plugin for Simon Willison's Datasette platform.
+- [[concepts/datasette-referrer-policy]] — Datasette plugin for controlling HTTP referrer policy headers to prevent URL leakage.
+- [[concepts/llm-echo]] — Plugin for the llm CLI tool that records and replays LLM API interactions for deterministic testing.
 - [[concepts/dynamic-software]] — The paradigm shift from static (deterministic, hard-coded) to dynamic (model-driven, non-deterministic, agentic) software. Breaks 50-year assumptions about determinism, state/sessions, and observability. Calls for a new runtime akin to what Django/Vercel did for static web apps. (Ashpreet Bedi, Apr 2026)
 - [[concepts/ecs-fargate-scaling]] — AWS ECS FargateをLambdaのようにスケーリングさせる実験的検証。SQSワークロードでのバーストハンドリング性能を最適化する。
 - [[concepts/elastic-ep]] — **Type** | Inference Infrastructure / Fault Tolerance |

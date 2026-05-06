@@ -1,3 +1,34 @@
+## [2026-05-06] Blog Ingest — Simon Willison Datasette Plugins, Gary Marcus Autonomous Agents Critique, Daring Fireball Software Philosophy
+
+**Blog Ingest**: 20 articles collected from 12 blogs. 4 new wiki concept pages created, 2 entity pages updated.
+
+### Wiki Pages Created
+- 🆕 **[[concepts/datasette-llm]]** — LLM-powered SQL queries for Datasette. Natural language to SQL translation plugin (v0.1a7). Works with any provider supported by Simon's llm CLI.
+- 🆕 **[[concepts/datasette-referrer-policy]]** — Datasette plugin for controlling HTTP Referrer-Policy headers to prevent URL leakage to external sites (v0.1).
+- 🆕 **[[concepts/llm-echo]]** — Plugin for the llm CLI that records and replays LLM API interactions. Enables deterministic testing, prompt engineering iteration, and model comparison without burning API credits (v0.5a0).
+- 🆕 **[[concepts/ai-retail-experiments]]** — AI-managed physical businesses (cafes, retail stores). Andon Labs' Stockholm cafe experiment where AI manager "Mona" made comical ordering errors and caused real-world disruption. Raises ethical concerns about non-consensual impact on humans and systems.
+
+### Wiki Pages Enriched
+- ✏️ **[[entities/gary-marcus]]** — Added "Autonomous Agents are a Shitshow" security study (May 2026) — identifies core challenges: context overflow, prompt injection, tool misuse, agent-to-agent communication, hallucination in action-taking, and proposes mitigation strategies. Added Musk-OpenAI trial analysis with five key issues. Updated tags and sources.
+- ✏️ **[[entities/simon-willison]]** — Added May 2026 articles: datasette-llm, llm-echo, datasette-referrer-policy, AI cafe in Stockholm. Updated date.
+
+### Notable Non-AI Articles (Saved as Raw, Not Processed)
+- **Daring Fireball**: Software as the Product of Obsession Times Voice — critiques "Software Brain" mentality (Nilay Patel's term) where software is treated as databases rather than craft/art.
+- **Troy Hunt**: Weekly Update 502 — cybersecurity roundup.
+- **nesbitt.io**: Package Manager Threat Models — supply chain security analysis.
+- **shkspr.mobi**: RSS Feeds Send Me More Traffic Than Google — RSS vs search traffic analysis.
+- **berthub.eu**: The Impossible Things We Have to Believe — technology skepticism piece.
+- **johndcook.com**: Changing one character in a PDF — PDF format quirk exploration.
+- **Apple News**: $250M Siri settlement, Mac RAM cuts, Iran War costs.
+- **Old New Thing**: TAB key dispute between Microsoft and IBM organizational structures.
+- **dfarq.homeip.net**: First desktop computer: Datapoint 2200 — computing history.
+
+### Raw Articles Saved
+- 20 articles saved to wiki/raw/articles/ (see saved_articles in script output)
+
+New concepts: 4. Updated entities: 2. New raw articles: 20.
+Sources: Blog ingestion (blog-ingest cron job), 12 blogs scanned.
+
 ## [2026-05-05] X Accounts Scan — Gemma 4 MTP, Zyphra TSP, Agentic Coding, InfoLaw, IBM Granite Embeddings
 
 **X Accounts Scan**: 12 new posts processed from 4 accounts (simonw, gm8xx8, _philschmid, dbreunig, charles_irl).
