@@ -51,7 +51,8 @@ The database may be stored under `/opt/data/.blogwatcher/` rather than the user 
 | `published_date` | TIMESTAMP | nullable | When article was published (ISO 8601 from RSS) |
 | `discovered_date` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | When blogwatcher discovered it |
 | `is_read` | BOOLEAN | DEFAULT FALSE (0/1) | Read/unread status |
-| `categories` | TEXT | nullable | JSON array of tags, e.g. `["llms","machine-learning"]` |
+
+**`categories` column does NOT exist** in the `articles` table as of the current DB schema (verified 2026-05-04 via PRAGMA table_info). Any query that references `a.categories` will fail with `no such column: a.categories`. If categories were present in an older schema version, the current DB has dropped them. **Always verify the actual columns** with `PRAGMA table_info(articles)` before building queries.
 
 ### Table: `schema_migrations`
 
@@ -67,7 +68,7 @@ These are commonly guessed but **do not exist**:
 - `source` → use `blog_id` JOIN `blogs.name`
 - `author` → not tracked
 - `content` / `body` / `text` → not stored (URLs only)
-- `tags` → use `categories` (JSON array)
+- `categories` / `tags` → not stored in this DB version. Removed from schema (confirmed 2026-05-04). **Do NOT reference in queries.**
 - `created_at` → use `discovered_date`
 - `updated_at` → not tracked
 
@@ -78,11 +79,13 @@ These are commonly guessed but **do not exist**:
 ### Daily scan — articles discovered on a specific date
 
 ```sql
-SELECT b.name, a.title, a.url, a.published_date, a.discovered_date, a.categories
+SELECT b.name, a.title, a.url, a.published_date, a.discovered_date
 FROM articles a JOIN blogs b ON a.blog_id = b.id
 WHERE DATE(a.discovered_date) = 'YYYY-MM-DD'
 ORDER BY b.name, a.discovered_date DESC;
 ```
+
+**NOTE:** `a.categories` does not exist in the current DB schema. Omit it from SELECT unless you've verified via PRAGMA table_info that it exists.
 
 ### Unread articles (triage queue)
 
@@ -96,7 +99,7 @@ ORDER BY a.discovered_date DESC;
 ### Articles by specific blog
 
 ```sql
-SELECT a.title, a.url, a.published_date, a.discovered_date, a.is_read, a.categories
+SELECT a.title, a.url, a.published_date, a.discovered_date, a.is_read
 FROM articles a JOIN blogs b ON a.blog_id = b.id
 WHERE b.name = 'simonwillison.net'
 ORDER BY a.discovered_date DESC;
@@ -105,7 +108,7 @@ ORDER BY a.discovered_date DESC;
 ### Articles by blog + date range
 
 ```sql
-SELECT a.title, a.url, a.published_date, a.discovered_date, a.categories
+SELECT a.title, a.url, a.published_date, a.discovered_date
 FROM articles a JOIN blogs b ON a.blog_id = b.id
 WHERE b.name = 'r/LocalLLaMA'
   AND DATE(a.discovered_date) BETWEEN 'YYYY-MM-DD' AND 'YYYY-MM-DD'
@@ -131,21 +134,25 @@ GROUP BY b.name
 ORDER BY cnt DESC;
 ```
 
-### Filter by category (JSON contains tag)
+### Filter by keyword in article title
+
+Since `categories` column does not exist in the current DB, filter articles by title keywords instead:
 
 ```sql
-SELECT b.name, a.title, a.url, a.discovered_date, a.categories
+SELECT b.name, a.title, a.url, a.discovered_date
 FROM articles a JOIN blogs b ON a.blog_id = b.id
-WHERE a.categories LIKE '%"AI%"%'
-   OR a.categories LIKE '%"llm%"%'
-   OR a.categories LIKE '%"machine-learning%"%'
+WHERE a.title LIKE '%AI%'
+   OR a.title LIKE '%llm%'
+   OR a.title LIKE '%agent%'
 ORDER BY a.discovered_date DESC;
 ```
+
+**Note:** This is a title-only match. For content-based filtering, scrape articles via `web_extract` after getting URLs from DB, then filter in Python.
 
 ### Recent articles across all blogs (last N days)
 
 ```sql
-SELECT b.name, a.title, a.url, a.published_date, a.discovered_date, a.categories
+SELECT b.name, a.title, a.url, a.published_date, a.discovered_date
 FROM articles a JOIN blogs b ON a.blog_id = b.id
 WHERE a.discovered_date > datetime('now', '-N days')
 ORDER BY a.discovered_date DESC;

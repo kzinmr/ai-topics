@@ -121,6 +121,7 @@
       <outline type="rss" text="Marek Vavruša (idea.popcount)" title="Marek Vavruša (idea.popcount)" xmlUrl="https://idea.popcount.org/rss.xml" htmlUrl="https://idea.popcount.org/" />
       <outline type="rss" text="V8 Blog" title="V8 Blog" xmlUrl="https://v8.dev/features.atom" htmlUrl="https://v8.dev/blog" />
       <outline type="rss" text="Matt Mahoney" title="Matt Mahoney" xmlUrl="https://mattmahoney.net/dc/feed.xml" htmlUrl="https://mattmahoney.net/dc/" />
+      <outline type="rss" text="Maxime Labonne" title="Maxime Labonne" xmlUrl="https://mlabonne.github.io/blog/index.xml" htmlUrl="https://mlabonne.github.io/blog/" />
     </outline>
     <outline type="rss" text="hyperbola :: blog" title="hyperbola :: blog" xmlUrl="https://hyperbo.la/w/feed.xml" htmlUrl="https://hyperbo.la/" />
     <outline type="rss" text="LMSYS Org Blog" title="LMSYS Org Blog" xmlUrl="https://www.lmsys.org/blog/feed.xml" htmlUrl="https://www.lmsys.org/blog/" />
