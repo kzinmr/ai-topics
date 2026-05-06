@@ -1,3 +1,25 @@
+## [2026-05-06] Blog Ingest — Gary Marcus AI Agent Security + Simon Willison AI Ethics
+
+**Pipeline**: blog-wiki-ingest ← blog-triage ← blog-ingest
+**Triage**: 2 take, 3 reference, 15 skip (from 20 candidates)
+**Source articles**:
+- Gary Marcus "Breaking: Autonomous Agents are a Shitshow" (847-deployment empirical study)
+- Simon Willison "Our AI started a cafe in Stockholm" (Andon Labs AI cafe ethics)
+
+### Wiki Pages Updated (2)
+
+**Concepts:**
+- 🔄 **[[concepts/ai-agent-security]]** — Upgraded from stub to full page. Stanford/MIT/CMU 2026 study: 91% tool-chaining vulnerable, 89.4% goal drift at ~30 steps, 94% memory-augmented poisoning. OpenClaw/Moltbook: 770K agents compromised via single DB exploit. Taxonomy showing agents more vulnerable than stateless LLMs.
+
+**Entities:**
+- 🔄 **[[entities/simon-willison]]** — Added "AI Ethics Commentary: Stockholm AI Cafe Experiment" section. Willison's ethical stance: autonomous agent outbound actions affecting non-consenting third parties require human-in-the-loop. Andon Labs AI manager ordering errors, police permit application, supplier EMERGENCY emails.
+
+### Articles Referenced
+- [simonwillison.net: datasette-referrer-policy 0.1](https://simonwillison.net/2026/May/5/datasette-referrer-policy/#atom-everything) — Minor Codex + GPT-5.5 plugin build. Reference only.
+- [garymarcus.substack.com: Musk-OpenAI trial](https://garymarcus.substack.com/p/what-matters-or-should-matter-at) — Brockman diary testimony. Already covered in gary-marcus entity page. Reference only.
+
+---
+
 ## [2026-05-06] Newsletter Ingest — AINews Silicon Valley Services, Vibe Physics, Codex Push, Claude JV
 
 **Pipeline**: newsletter-wiki-ingest ← newsletter-triage ← newsletter-ingest

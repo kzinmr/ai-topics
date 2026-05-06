@@ -1012,7 +1012,7 @@
 - [[concepts/agents-self-improvement-learning]] — > **TODO**: Enrich this page.
 - [[concepts/agno]] — > **TODO**: Enrich this page.
 - [[concepts/ai-agent-architecture]] — > **TODO**: Enrich this page.
-- [[concepts/ai-agent-security]] — > **TODO**: Enrich this page.
+- [[concepts/ai-agent-security]] — AI agents are demonstrably more vulnerable than stateless LLMs: 91% tool-chaining vulnerability rate, 89.4% goal drift after ~30 steps, 94% memory-augmented poisoning rate (Stanford/MIT/CMU 2026 study of 847 deployments). Real-world: OpenClaw/Moltbook 770K agents compromised via single DB exploit.
 - [[concepts/ai-agents-autonomy-planning-file-operations-delegation-sandbox]] — > **TODO**: Enrich this page.
 - [[concepts/ai-agents-framework-python-type-safety-structured-outputs-pydantic]] — > **TODO**: Enrich this page.
 - [[concepts/ai-agents]] — > **TODO**: Enrich this page.
