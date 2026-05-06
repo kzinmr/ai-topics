@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-05-04
+updated: 2026-05-06
 sources: [
   "https://x.com/RLanceMartin/status/2041927992986009773",
   "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
@@ -126,6 +126,26 @@ Anthropic leads enterprise AI adoption with strong market metrics:
 - **$30B ARR** (annual recurring revenue)
 - **IPO target**: October 2026 at $400–500B valuation
 - Cleaner unit economics than OpenAI; focused on enterprise over consumer scale
+
+### $1.5B Services Joint Venture (May 2026)
+
+Anthropic partnered with Blackstone, Hellman & Friedman, and Goldman Sachs to form an **unnamed JV** focused on developing Claude-powered systems tailored to specific organizational operations:
+
+| Detail | Value |
+|--------|-------|
+| **Total Raise** | $1.5B ($300M each from main participants) |
+| **Focus** | Claude-powered enterprise deployment systems |
+| **Significance** | Part of broader industry shift from model APIs to service delivery |
+| **Context** | See [[concepts/ai-services-joint-ventures]] for full comparison with OpenAI's $4B Deployment Company |
+
+### Anthropic Orbit (Leaked, May 2026)
+
+**Orbit** is a rumored proactive assistant from Anthropic that synthesizes data from enterprise tools without explicit prompts:
+
+- **Integration scope**: Slack, Gmail, GitHub, Figma, and other workplace tools
+- **Proactive mode**: Auto-generates briefings and summaries from ingested data
+- **Positioning**: Counter to ChatGPT Pulse (OpenAI's proactive assistant)
+- **Status**: Leaked/discussed in Superintel newsletter (May 2026); not officially announced
 
 ### Claude Code
 

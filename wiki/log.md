@@ -1,3 +1,41 @@
+## [2026-05-06] Newsletter Ingest — AINews Silicon Valley Services, Vibe Physics, Codex Push, Claude JV
+
+**Pipeline**: newsletter-wiki-ingest ← newsletter-triage ← newsletter-ingest
+**Sources**: 5 newsletters (AINews, Latent Space/Vibe Physics, Ben's Bites/Codex, Superintel/Claude, Hyperdimensional/Dean Ball)
+**Triage**: 14 take, 5 reference, 2 skip
+
+### Wiki Pages Created (8 new)
+
+**Concepts:**
+- 🆕 **[[concepts/ai-services-joint-ventures]]** — AI Services JVs: Anthropic × Blackstone/Goldman $1.5B, OpenAI $4B Deployment Co, Tessera Series A. Service-as-Software thesis in JV form.
+- 🆕 **[[concepts/programbench]]** — Meta's full-repo generation benchmark. ~200 tasks, 0% top accuracy. Exposes whole-repo gap in LLM code generation.
+- 🆕 **[[concepts/vibe-physics]]** — AI-driven scientific discovery. Alex Lupsasca (OpenAI) — GPT-5.x reproduces months of research in 30min, 110 pages of novel graviton physics in 1 day.
+
+**Entities:**
+- 🆕 **[[entities/cursor-ai]]** — Cursor CI-fix agents + SpaceX acquisition option ($60B).
+- 🆕 **[[entities/radixark]]** — $100M seed for SGLang inference + Miles RL infrastructure.
+- 🆕 **[[entities/perplexity]]** — Professional Finance Computer (35 workflows) + NEJM/BMJ premium access.
+- 🆕 **[[entities/vercel]]** — deepsec: open-source security harness using coding agents.
+- 🆕 **[[entities/flue]]** — TypeScript framework for Claude Code-style agents.
+
+### Wiki Pages Enriched (3)
+- ✏️ **[[entities/openai]]** — GPT-5.5 Instant default model, Agents SDK TypeScript + Auto Review, Codex push details, $4B Deployment Company JV.
+- ✏️ **[[entities/anthropic]]** — $1.5B Blackstone/Goldman JV, Orbit proactive assistant (Slack/Gmail/GitHub/Figma).
+- ✏️ **[[entities/manus]]** — Manus Cloud Computer: always-on cloud machine for persistent agent execution.
+
+### Reference Items (Not Processed into Pages)
+- Model–Harness–Task fit > benchmarks (reference)
+- Grok 4.3 API: 1M context, $1.25/$2.50 pricing
+- Gemini API Webhooks + Web UI Bench (20 models)
+- Dean Ball Sustainable Interference framework (covered in dean-ball.md)
+- MCP security governance for Claude Cowork
+
+### Skipped
+- Wispr Flow / RAVEN AI / self-destructing plastic (non-AI)
+- Lenny's Podcast AI monetization (business strategy, not technical AI)
+
+New pages: 8 (3 concepts + 5 entities). Enriched: 3. Reference: 5. Skipped: 2.
+Sources: AINews (swyx), Latent Space (lupsasca), Ben's Bites (codex), Superintel (claude), Hyperdimensional (dean-ball).
 ## [2026-05-06] Blog Ingest — Simon Willison Datasette Plugins, Gary Marcus Autonomous Agents Critique, Daring Fireball Software Philosophy
 
 **Blog Ingest**: 20 articles collected from 12 blogs. 4 new wiki concept pages created, 2 entity pages updated.

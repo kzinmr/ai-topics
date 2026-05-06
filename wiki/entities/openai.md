@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-05-04
+updated: 2026-05-06
 tags:
   - company
   - model
@@ -43,12 +43,15 @@ OpenAI is a leading AI research and product company known for developing the GPT
   - **Key change:** Since GPT-5.4, OpenAI unified Codex and the main model into a single system. There is no separate coding line anymore. GPT-5.5 extends this further with strong gains in agentic coding, computer use, and any task on a computer (per Romain Huet).
   - **Prompting guidance:** OpenAI recommends treating GPT-5.5 as a **new model family to tune for**, not a drop-in replacement for GPT-5.2 or GPT-5.4. Start with the smallest prompt that preserves the product contract, then tune reasoning effort, verbosity, tool descriptions, and output format ([Simon Willison, Apr 2026](https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/)).
   - **Codex migration:** OpenAI recommends running `$openai-docs migrate this project to gpt-5.5` to follow the embedded upgrade guide in their openai-docs skill.
+- **GPT-5.5 Instant** (May 2026) — Now the **default model** for both ChatGPT and API (`gpt-5.5-chat-latest`). Improvements include: factuality, baseline intelligence, image understanding, and conversational tone. Key new capability: access to saved memories, past chats, uploaded files, and connected Gmail for personalized responses.
 - **o-series** — Reasoning-focused models with extended thinking
 - **GPT-4o / GPT-4o-mini** — Multimodal models with vision and audio capabilities
 
 ### Developer Tools
 - **Workspace Agents** (Apr 2026) — Codex-powered shared agents for Business/Enterprise plans. Integrates Slack, Salesforce, Notion, Google Drive with persistent memory and role-based governance. Designed for organizational workflows, not individual use.
 - **Agents SDK** (v0.14.0, April 2026) — Python SDK for building agents with:
+  - **TypeScript support** (May 2026) — Agents SDK now supports TypeScript, including sandbox agents and open-source harness. Major platform expansion.
+  - **Auto Review** (May 2026) — New feature for lower-friction approvals in automated agent workflows.
   - Native sandbox execution (isolated workspaces)
   - Harness/Compute architectural separation
   - Manifest-based workspace portability
@@ -58,6 +61,7 @@ OpenAI is a leading AI research and product company known for developing the GPT
   - Durability: Snapshotting & rehydration for long-horizon tasks
 - **Symphony** — Agent orchestration framework (see [[concepts/harness-engineering]])
 - **Codex** — AI coding agent. Since GPT-5.4, Codex has been unified into the main model — there is no separate coding model line. No GPT-5.5-Codex will be released ([Romain Huet, Apr 2026](https://simonwillison.net/2026/Apr/25/romain-huet/)).
+  - **Codex Push (May 2026):** OpenAI aggressively targeting non-technical users. Migration tools to import from Claude Cowork. Workplace features (slides, sheets). iMessage handoff skill. `/pet` fun feature. See [[concepts/vibe-physics]] for scientific Codex applications.
 
 ### Other Products
 - **ChatGPT** — Conversational AI interface
@@ -68,6 +72,7 @@ OpenAI is a leading AI research and product company known for developing the GPT
 - **Sora** — Video generation
 
 ### Strategic Initiatives (OpenAI Ecosystem)
+- **"The Deployment Company" JV (May 2026)** — OpenAI raised ~$4B at $10B pre-money valuation for a dedicated deployment company. Backed by 19 investors (TPG, Bain Capital, SoftBank, etc.). COO Brad Lightcap is shifting to lead "special projects" and this JV. Represents the shift from model API sales to enterprise service delivery. See [[concepts/ai-services-joint-ventures]].
 - **World ID 4.0 / AgentKit** — Sam Altman's Worldcoin project reached 18M verified users across 160 countries. AgentKit enables AI agents to carry cryptographic proof they act for verified humans. Vercel has "human in the loop" authentication live; Okta planning "Human Principal" for API policies. New integrations include Tinder (verified-human badges), Zoom ("Deep Face" iris+live selfie cross-checks), and DocuSign (proof-of-human signatures).
 - **SpaceX-Cursor Deal** — SpaceX has right to acquire Cursor for $60B or pay $10B for collaborative compute credits (likely Colossus H100 equivalents). Signals industry trend: top coding labs need to own both model and product.
 - **Microsoft Partnership Renegotiation (Apr 2026)** — OpenAI ended exclusive distribution agreement with Microsoft, allowing multi-cloud deployment on AWS, Google Cloud, and Oracle. Microsoft retains nonexclusive IP license through 2032 with capped 20% revenue share through 2030. AGI escape clause replaced with fixed timelines. See [[entities/microsoft]] for Microsoft perspective.

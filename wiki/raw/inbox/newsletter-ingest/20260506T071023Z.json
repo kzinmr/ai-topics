@@ -1,0 +1,193 @@
+{
+  "run_id": "20260506T071023Z",
+  "triaged_at": "2026-05-06T07:10:00Z",
+  "newsletters": [
+    {
+      "title": "Before Leviathan Wakes",
+      "source": "Hyperdimensional (Dean W. Ball)",
+      "date": "2026-05-05",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-05-before-leviathan-wakes.md",
+      "scraped_url": "https://open.substack.com/pub/hyperdimensional/p/before-leviathan-wakes",
+      "importance": "low",
+      "wiki_relevance": "AI policy/philosophy essay. Libertarian-conservative take on AI regulation. Discusses catastrophic risk management vs existential risk. Could inform entity page on Dean W. Ball or AI governance concepts.",
+      "recommended_actions": [
+        "Consider creating/updating entity page for dean-w-ball if not exists",
+        "Reference in AI policy/governance concept pages"
+      ],
+      "key_topics": [
+        "AI regulation",
+        "catastrophic risk",
+        "AI governance",
+        "libertarianism"
+      ],
+      "external_links_worthy_of_scraping": []
+    },
+    {
+      "title": "Codex is gaining steam",
+      "source": "Ben's Bites",
+      "date": "2026-05-05",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-05-codex-is-gaining-steam.md",
+      "scraped_url": "https://open.substack.com/pub/bensbites/p/codex-is-gaining-steam",
+      "importance": "critical",
+      "wiki_relevance": "Rich with AI tooling developments. Covers OpenAI Codex adoption push, Grok 4.3 (1M context window, $1.25/$2.50 per 1M tokens), new developer tools (Flue agent framework, Deepsec security, Manus Cloud Computer, Proxyuser testing), benchmarks (Frustration Meter shows Opus 4.7 vs 4.6), and agent UX patterns.",
+      "recommended_actions": [
+        "Update OpenAI Codex entity page with adoption/migration features",
+        "Create/update xAI Grok 4.3 entity page",
+        "Document new tools: Flue, Deepsec, Manus Cloud Computer, Proxyuser",
+        "Update AI coding agent comparison pages",
+        "Note Opus 4.7 frustration benchmark data"
+      ],
+      "key_topics": [
+        "OpenAI Codex",
+        "Grok 4.3",
+        "AI coding agents",
+        "developer tools",
+        "benchmarks",
+        "agent UX"
+      ],
+      "external_links_worthy_of_scraping": [
+        "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/",
+        "https://chatgpt.com/codex/switch-to-codex/",
+        "https://github.com/gragland/codex-imessage-handoff"
+      ]
+    },
+    {
+      "title": "Why SaaS freemium playbooks don't work in AI, and what to do instead",
+      "source": "Lenny's Newsletter (Vikas Kansal, Google AI)",
+      "date": "2026-05-05",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-05-why-saas-freemium-playbooks-don-t-work-in-ai-and-what-to-do-instead.md",
+      "scraped_url": "https://open.substack.com/pub/lenny/p/why-saas-freemium-playbooks-dont",
+      "importance": "low",
+      "wiki_relevance": "AI monetization strategy article. Discusses why traditional SaaS freemium fails when compute costs scale with usage. Proposes 3-pillar model: gate usage intensity, gate outcomes (agents), gate heavy compute modalities. More business/strategy than technical \u2014 limited wiki value for a technical LLM/Agent knowledge base.",
+      "recommended_actions": [
+        "Optional: reference in AI business models concept page",
+        "Note: Vikas Kansal (Google AI Product Lead) could be an entity to track"
+      ],
+      "key_topics": [
+        "AI monetization",
+        "SaaS",
+        "freemium",
+        "compute costs",
+        "tiered pricing"
+      ],
+      "external_links_worthy_of_scraping": []
+    },
+    {
+      "title": "Claude Is Coming for Your Company",
+      "source": "Beehiiv newsletter (unknown author)",
+      "date": "2026-05-05",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-05-claude-is-coming-for-your-company.md",
+      "scraped_url": null,
+      "importance": "high",
+      "wiki_relevance": "All links are obfuscated via Beehiiv redirect URLs \u2014 content could not be extracted. Title suggests enterprise AI/Claude adoption focus. Given the timing (May 2026) and alignment with Anthropic's enterprise push, likely highly relevant. Recommend manual review or browser-based extraction of at least 2-3 redirect URLs to assess actual content.",
+      "recommended_actions": [
+        "Extract 2-3 redirect URLs via browser to determine actual content",
+        "If Claude enterprise-focused: update Anthropic entity page",
+        "If AI agent adoption: update enterprise AI concepts"
+      ],
+      "key_topics": [
+        "Claude",
+        "enterprise AI",
+        "AI adoption"
+      ],
+      "external_links_worthy_of_scraping": [],
+      "note": "All URLs obfuscated via Beehiiv \u2014 content unavailable via web_extract"
+    },
+    {
+      "title": "Doing Vibe Physics \u2014 Alex Lupsasca, OpenAI",
+      "source": "Latent.Space (swyx)",
+      "date": "2026-05-05",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-05-doing-vibe-physics-alex-lupsasca-openai.md",
+      "scraped_url": "https://open.substack.com/pub/swyx/p/lupsasca",
+      "importance": "critical",
+      "wiki_relevance": "Latent.Space podcast interview with Alex Lupsasca (OpenAI researcher, 2024 Breakthrough Prize winner). GPT-5.x reproducing physics papers in 30 minutes that took humans months/years. 'Vibe Physics' methodology \u2014 AI extending human knowledge frontier in theoretical physics. Case studies: gluon tree amplitudes (32-term equation solved in 1 week), graviton paper (110 pages of novel physics in 3 days). Includes arXiv paper references and full AI session transcript.",
+      "recommended_actions": [
+        "Create entity page for alex-lupsasca (OpenAI researcher, Breakthrough Prize winner)",
+        "Create concept page for 'vibe-physics' / AI for Science methodology",
+        "Document GPT-5.x science capabilities benchmark",
+        "Reference arXiv papers: 2602.12176 (gluons), 2603.04330 (gravitons)",
+        "Update OpenAI research entity page with science breakthrough examples",
+        "Create concept page for 'AI for theoretical physics'"
+      ],
+      "key_topics": [
+        "GPT-5",
+        "AI for Science",
+        "theoretical physics",
+        "quantum gravity",
+        "Vibe Physics",
+        "Alex Lupsasca",
+        "OpenAI research"
+      ],
+      "external_links_worthy_of_scraping": [
+        "https://arxiv.org/pdf/2602.12176",
+        "https://arxiv.org/abs/2603.04330",
+        "https://cdn.openai.com/pdf/gluon-to-graviton-paper.pdf"
+      ]
+    },
+    {
+      "title": "[AINews] Silicon Valley gets Serious about Services",
+      "source": "Latent.Space / AINews (swyx)",
+      "date": "2026-05-06",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-06-ainews-silicon-valley-gets-serious-about-services.md",
+      "scraped_url": "https://open.substack.com/pub/swyx/p/ainews-silicon-valley-gets-serious",
+      "importance": "critical",
+      "wiki_relevance": "Dense AINews edition covering: Anthropic's $1.5B JV with Blackstone/Hellman & Friedman/Goldman Sachs for Claude enterprise systems; OpenAI's $4B 'Deployment Company' JV with 19 investors; GPT-5.5 Instant launch with Gmail/memory integration; Meta's ProgramBench (0% top accuracy for full repo generation); Cursor CI-fix agents; Gemma 4 MTP drafters (3x faster decoding); RadixArk $100M seed for SGLang/Miles infrastructure; enterprise verticalization (Anthropic finance templates, Perplexity NEJM/BMJ access); 'Anthropic Orbit' proactive assistant rumors.",
+      "recommended_actions": [
+        "Create/update Anthropic enterprise JV entity page ($1.5B with Blackstone)",
+        "Create/update OpenAI Deployment Company entity page ($4B, 19 investors)",
+        "Update GPT-5.5 entity page with Instant features",
+        "Create ProgramBench concept page (Meta benchmark, 200 tasks)",
+        "Document Gemma 4 MTP (Multi-Token Prediction) breakthrough",
+        "Update RadixArk/SGLang entity pages",
+        "Create AI enterprise services concept page",
+        "Update Cursor, Perplexity entity pages",
+        "Note Anthropic Orbit rumors"
+      ],
+      "key_topics": [
+        "Anthropic",
+        "OpenAI",
+        "enterprise AI",
+        "GPT-5.5",
+        "Gemma 4",
+        "MTP",
+        "ProgramBench",
+        "SGLang",
+        "AI services",
+        "RadixArk"
+      ],
+      "external_links_worthy_of_scraping": [
+        "https://github.com/ggml-org/llama.cpp/pull/22673",
+        "https://gist.github.com/buzz/1c439684d5e3f36492ae9f64ef7e3f67"
+      ]
+    }
+  ],
+  "summary": {
+    "total_newsletters": 6,
+    "critical": 3,
+    "high": 1,
+    "low": 2,
+    "recommended_wiki_pages_new": [
+      "entities/alex-lupsasca.md",
+      "concepts/vibe-physics.md",
+      "concepts/ai-for-theoretical-physics.md",
+      "concepts/programbench.md",
+      "concepts/ai-enterprise-services.md",
+      "entities/openai-deployment-company.md",
+      "entities/anthropic-enterprise-jv.md"
+    ],
+    "recommended_wiki_pages_update": [
+      "entities/openai-codex.md",
+      "entities/xa-grok.md",
+      "entities/gpt-5-5.md",
+      "entities/gemma-4.md",
+      "entities/sglang.md",
+      "entities/radixark.md",
+      "entities/cursor.md",
+      "entities/perplexity.md",
+      "entities/anthropic.md",
+      "entities/openai.md"
+    ],
+    "external_links_to_scrape": 9,
+    "blocked_newsletters": 1
+  }
+}

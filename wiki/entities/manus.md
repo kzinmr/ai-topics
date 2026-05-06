@@ -6,7 +6,7 @@ aliases:
 - manus-browser-operator
 - monica-im
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-05-06
 tags:
   - entity
   - technology
@@ -39,6 +39,15 @@ sources:
 | 買収 | 2026年、Metaにより |
 | バイラルデモ | 2025年3月（フライト予約、コーディング等） |
 | アクセス | 招待制（初期）、後に全ユーザー開放 |
+
+## Manus Cloud Computer (May 2026)
+
+Manus launched an **always-on cloud machine** that keeps bots, scripts, and agents running even when the user's local computer is offline:
+
+- **Always-on execution**: Agents continue running on cloud infrastructure regardless of local machine state
+- **Use cases**: Scheduled jobs, long-running agent tasks, background automation
+- **Significance**: Removes the local-computer dependency from agent execution — a step toward persistent autonomous agent infrastructure
+- **Ecosystem context**: See [[entities/flue]] for TypeScript agent frameworks; [[entities/vercel]] for cloud-native agent deployment
 
 ## Manus Browser Operator（2025年11月〜）
 

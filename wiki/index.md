@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-06 | Total pages: 851 | Full entries: 811 | Stubs: 610 |
+> Last updated: 2026-05-06 | Total pages: 859 | Full entries: 811 | Stubs: 610 |
 
 ## Entities (399 pages)
 
@@ -181,11 +181,13 @@
 - [[entities/jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of **Bun** — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining...
 - [[entities/jason-liu]] — **X** | @jxnlco |
 |- [[entities/jay-alammar]] — **Blog** | jalammar.github.io | Visual ML explainer. "The Illustrated Transformer", "The Illustrated Word2Vec" — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
-   169|- [[entities/jaya-gupta]] — Partner at Foundation Capital, thought leader on context graphs and enterprise AI. Published influential thesis on Context Graphs as AI's trillion-dollar opportunity.
-   170|- [[entities/jayden-milne]] — **Blog:** thejaymo.net
-   171|- [[entities/jay-mody]] — **Blog:** jaykmody.com | Educator known for picoGPT (GPT-2 in 60 lines of NumPy) and clear LLM internals explanations |
-   172|- [[entities/jeff-geerling]] — **URL:** https://www.jeffgeerling.com
-   173|- [[entities/jensen-huang]] — **Role** | Co-founder, CEO, and President of Nvidia Corporation |
+   1|- [[entities/flue]] — Flue — TypeScript framework for building Claude Code-style coding agents. Announced May 2026.
+   2|- [[entities/cursor-ai]] — Cursor AI — AI-powered code editor and coding agent platform. CI-fix agents monitor GitHub and auto-fix CI failures. SpaceX holds acquisition right for $60B.
+     3|- [[entities/jaya-gupta]] — Partner at Foundation Capital, thought leader on context graphs and enterprise AI. Published influential thesis on Context Graphs as AI's trillion-dollar opportunity.
+     4|- [[entities/jayden-milne]] — **Blog:** thejaymo.net
+     5|- [[entities/jay-mody]] — **Blog:** jaykmody.com | Educator known for picoGPT (GPT-2 in 60 lines of NumPy) and clear LLM internals explanations |
+     6|- [[entities/jeff-geerling]] — **URL:** https://www.jeffgeerling.com
+     7|- [[entities/jensen-huang]] — **Role** | Co-founder, CEO, and President of Nvidia Corporation |
 - [[entities/jim-fan]] — **X** | @jim-fan |
 - [[entities/jim-nielsen]] — **Blog** | Jim Nielsen's Blog |
 - [[entities/jo-bergum]] — **URL:** https://hornet.dev
@@ -447,6 +449,9 @@
 |- [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
 |- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 |- [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
+   8|- [[entities/vercel]] — Vercel — Frontend cloud platform (Next.js). Released deepsec open-source security harness using coding agents for vulnerability discovery and remediation (May 2026).
+   9|- [[entities/radixark]] — RadixArk — AI inference infrastructure startup. $100M seed (May 2026), built on SGLang inference + Miles (large-scale RL).
+  10|- [[entities/perplexity]] — Perplexity — AI search platform expanding into vertical products: Professional Finance Computer (35 analyst workflows), NEJM/BMJ premium medical access.
 ## Concepts (431 pages)
 
 - [[concepts/agent-development-lifecycle]] — Agent Development Lifecycle (ADLC) — formalized framework for AI agent lifecycle: planning, deployment, operation, iteration. New operational roles: Agent Supervisor, QA Lead, AI Ops Manager, Chief AI Officer.
@@ -536,6 +541,7 @@
 - [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — AIツールスタックが成熟するにつれ、「**1人 = 従来の10人チーム**」というパラダイムが現実化している。Reddit r/ClaudeCodeコミュニティとFourWeekMBAの議論を統合し、ソロ創業者の台頭、スーパーICの登場、そしてその限界と課題を整理する。
 - [[concepts/ai-privacy-tools]] — **AI Privacy Tools** encompasses the techniques, vulnerabilities, and defensive measures surrounding how AI agents access, extract, and protect data across web boundaries. A pivotal development in ...
 - [[concepts/ai-safety]] — AI Safety encompasses the technical and philosophical work of ensuring that increasingly capable AI systems behave as intended, remain aligned with human values, and can be understood and controlle...
+- [[concepts/ai-services-joint-ventures]] — May 2026 inflection: AI labs creating dedicated JV deployment arms. Anthropic × Blackstone/Goldman $1.5B JV, OpenAI $4B "Deployment Company", Tessera Series A. Service-as-Software thesis extended into capital-intensive JV form.
 - [[concepts/ai-subprime]] — Ed Zitron's analysis drawing parallels between the 2008 subprime mortgage crisis and the current AI industry economics.
 - [[concepts/anthropic-managed-agents]] — **Source:** Anthropic Claude Blog + Engineering Blog + Platform Docs (April 2026)
 - [[concepts/anthropic-openclaw-conflict]] — In April 2026, **Anthropic** blocked third-party AI agent frameworks (including **OpenClaw**) from accessing Claude models through flat-rate subscription plans (Pro/Max). This decision triggered a ...
@@ -822,6 +828,7 @@
 |- [[concepts/polymarket-trading-agents]] — AI agents used for automated trading on Polymarket prediction markets
 - [[concepts/process-supervision]] — The infrastructure discipline of managing long-running AI agent processes: automatic restart on failure, health monitoring, supervised process trees, and cgroup-based resource control. A prerequisite for [[harness-engineering]] — agent harnesses must supervise subprocesses (tool execution, sandboxed code) to ensure reliability at production scale.
 |- [[concepts/process-reward-models-agent-eval]] — **Process Reward Models (PRMs)** evaluate individual reasoning steps or agent actions rather than just final outcomes. This is a fundamentally different evaluation paradigm from outcome-based evalu...
+|- [[concepts/programbench]] — Meta's full-repo generation benchmark (May 2026). ~200 tasks requiring building SQLite/FFmpeg from scratch, 0% top accuracy. Reveals the "whole-repo gap" — models cannot architect complete software systems autonomously.
 |- [[concepts/programmatic-tool-calling]] — API mechanism where LLMs write code that calls tools (async Python functions) within a sandboxed container. Anthropic's `code_execution_20260120` tool with `allowed_callers` field. Expanded with Cloudflare Project Think's 4 new dimensions: Execution Ladder (5-tier capability escalation), Durable Execution (Fibers + stash checkpointing), Self-Authored Extensions (Meta-PTC: code generating new tools), and Hibernation Economics (zero-idle-cost Durable Objects vs containers).
 |- [[concepts/project-glasswing]] — Anthropic's initiative to use claude-mythos for defensive security research — finding and patching vulnerabilities in critical software.
 - [[concepts/prompt-caching]] — LLM API呼び出しにおけるキャッシングの設計パターン。コスト削減とレイテンシ改善のために、どの部分をキャッシュし、いつ無効化するかを体系的に扱う。
@@ -891,6 +898,7 @@
 - [[concepts/vector-db-agent-memory]] — Vector databases are the dominant infrastructure for AI agent **long-term memory (LTM)** and **semantic memory**, enabling agents to persist and retrieve information across sessions via dense embed...
 - [[concepts/vibe-ceo]] — A management model where a solo founder (the "Vibe CEO") orchestrates AI agents rather than human employees. The CEO sets high-level strategic direction and cultural tone ("vibes"), while specializ...
 - [[concepts/vibe-coding]] — Moved to concepts/harness-engineering/agentic-workflows/vibe-coding.md
+- [[concepts/vibe-physics]] — AI-driven scientific discovery in theoretical physics (Alex Lupsasca, OpenAI). GPT-5.x reproduces months of research in 30min, generates 110 pages of novel graviton physics in 1 day. Extends the knowledge frontier beyond recombining existing code.
 - [[concepts/web-as-filesystem]] — Webの全ドキュメントをUnixファイルシステムとしてマウントする抽象化。エージェントにtree/grep/cat/findを自然に使い、コード幻覚を解消。
 - [[concepts/world-id-4-agentkit]] — **World ID 4.0** is Sam Altman's "full-stack proof of human" identity infrastructure, unveiled in April 2026. It uses iris scanning (the **Orb**) to verify human identity cryptographically. **Agent...
 - [[concepts/world-models-science]] — Using world models and agent loops to automate scientific research and discovery.
