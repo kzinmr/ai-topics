@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-06 | Total pages: 859 | Full entries: 811 | Stubs: 610 |
+> Last updated: 2026-05-06 | Total pages: 1504 | Full entries: 820 | Stubs: 610 |
 
 ## Entities (399 pages)
 
@@ -282,6 +282,7 @@
 - [[entities/project-prometheus]] — Jeff Bezos co-founded AI startup. $10B raised, $38B valuation. Focus on "Physical AI" for manufacturing/aerospace.
 - [[entities/pluralistic-net]] — **Blog** | pluralistic.net |
 - [[entities/pratik-bhavsar]] — **X** | @ptkbhv |
+- [[entities/project-mariner]] — Google's autonomous web browsing AI agent (Chrome extension). Shut down in May 2026 due to poor performance and high costs. See: [[concepts/google-project-mariner-shutdown]]
 - [[entities/qwen3-6-plus]] — Alibabaのエージェント指向言語モデル。実世界の自律的ワークフローを対象としている。
 - [[entities/rachelbythebay-com]] — **Blog** | rachelbythebay.com/w |
 - [[entities/rahul]] — **URL:** https://rahul.gs/
@@ -455,8 +456,12 @@
 ## Concepts (431 pages)
 
 - [[concepts/agent-development-lifecycle]] — Agent Development Lifecycle (ADLC) — formalized framework for AI agent lifecycle: planning, deployment, operation, iteration. New operational roles: Agent Supervisor, QA Lead, AI Ops Manager, Chief AI Officer.
+- [[concepts/cloudflare-agents]] — Cloudflare's iMARS (Internal MCP Agent/Server Rollout Squad) AI engineering stack. 3,683 internal users, 93% R&D coverage, 2x MR velocity increase. AI Code Reviewer multi-agent review, Engineering Codex.
 - [[concepts/cloudflare-llm-infrastructure]] — Cloudflare's custom LLM inference stack — PD disaggregation, Infire Rust engine, Mooncake KV-cache, speculative decoding. 3x latency improvement, 80% cache hit ratio.
 - [[concepts/accelerate]] — Hugging Face Accelerate: zero-code-change distributed training launcher. Created/led by Zach Mueller (@TheZachMueller). Unified abstraction layer making FSDP and DeepSpeed interchangeable via CLI or Python plugins.
+- [[concepts/deepclaude]] — Open-source tool enabling Claude Code's agent loop with DeepSeek V4 Pro, demonstrating agent framework interoperability.
+- [[concepts/google-project-mariner-shutdown]] — Google's shutdown of Project Mariner browser agent in May 2026 due to poor performance and high costs.
+- [[concepts/mit-encompass]] — MIT CSAIL framework for AI agent search with automatic backtracking and parallel cloning, 15-40% accuracy boost.
 - [[concepts/recursive-self-improvement]] — AI systems autonomously designing and training successor models. Jack Clark's 60% probability by end 2028. Compounding alignment risk, SWE-Bench 93.9% evidence.
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
@@ -775,6 +780,7 @@
 |- [[concepts/memory-scaling]] — A third scaling axis where agent performance improves via accumulated external memory (Databricks MemAlign, 2026). Distills episodic logs into semantic rules, enabling smaller models to outperform larger ones with rich memory stores.
 |- [[concepts/memory-systems-bitter-lesson]] — Rich Sutton's "Bitter Lesson" principle applied to memory systems in AI agents: architectures that leverage search, computation, and experience iteration at scale consistently outperform hand-crafted memory mechanisms. Key patterns include episodic→semantic distillation, retrieval-augmented generation (RAG), and experience replay.
 |- [[concepts/memory-systems-design-patterns]]
+- [[concepts/meta-capacity-efficiency-agents]] — Meta's unified AI agent platform for infrastructure optimization. Encodes senior engineer expertise. FBDetect catches 0.005% regressions, AI Regression Solver auto-generates fixes. Recovered hundreds of MW power.
 |- [[concepts/meta-harness]] — An outer-loop system from Stanford and MIT (2026) that automatically searches over harness code for LLM applications. Discovers optimal context management, retrieval, and presentation strategies.
 |- [[concepts/meta-ai-glasses-content-moderation]] — May 2026 controversy: Kenyan human content moderators for Meta's Ray-Ban AI glasses exposed to non-consensual private footage, raising privacy and worker protection concerns.
 |- [[concepts/meta-muse-spark]] — **Muse Spark** is Meta's first model from **Meta Superintelligence Labs (MSL)**, announced on **April 8, 2026**. Internally codenamed "Avocado", it was built over nine months after a complete groun...
@@ -805,6 +811,7 @@
 - [[concepts/nvidia-egpu-macos]] — Research into running NVIDIA GPUs as external GPUs (eGPUs) on Apple Silicon Macs via Thunderbolt/USB4, enabled by tinygrad's custom NVIDIA driver (DEXT).
 - [[concepts/offline-evaluation]] — Offline Evaluationは、本番環境にデプロイする前にLLMアプリケーションを体系的に評価するパイプライン。オフラインテスト、人間判定、プロダクションテレメトリの3層で構成。
 - [[concepts/one-person-unicorn]] — A billion-dollar company founded and operated by a single person, enabled by AI agents and the solo-founder-stack.
+- [[concepts/servicenow-ai-workforce]] — ServiceNow's autonomous AI workforce for enterprise operations: sense, decide, and act securely.
 - [[concepts/shadow-ai-governance]] — Shadow AI Governance Crisis — 80% of Fortune 500 use AI agents without clear strategy. Agentic Shadow AI: autonomous, continuous, API-connected. 5-capability control framework.
 - [[concepts/warm-start-optimization]] — Latency reduction technique: pre-initialize execution environments before user explicitly requests them. Typing-triggered warm-up + filesystem snapshots.
 - [[concepts/open-model-consortium]] — The **Open Model Consortium** is a proposed organizational structure for funding and developing frontier-level open-weight AI models through shared investment from multiple companies, rather than r...
@@ -962,6 +969,11 @@
 - [[concepts/speech/_index]] — Speech — index page for speech/audio AI concepts.
 - [[concepts/system-architecture/_index]] — System Architecture — index page for system design patterns.
 - [[concepts/tool-orchestration]] — Tool Orchestration — patterns for coordinating multiple tool calls in AI agents.
+- [[concepts/mistral-vibe-remote-agents]] — Mistral Medium 3.5 (128B dense, 256k context) + Vibe Remote Agents for async cloud coding with parallel sessions.
+- [[concepts/google-project-mariner-shutdown]] — Google's shutdown of Project Mariner browser agent in May 2026 due to poor performance and high costs.
+- [[concepts/deepclaude]] — Open-source tool enabling Claude Code's agent loop with DeepSeek V4 Pro, demonstrating agent framework interoperability.
+- [[concepts/mit-encompass]] — MIT CSAIL framework for AI agent search with automatic backtracking and parallel cloning, 15-40% accuracy boost.
+- [[concepts/servicenow-ai-workforce]] — ServiceNow's autonomous AI workforce for enterprise operations: sense, decide, and act securely.
 ## Comparisons (12 pages)
 
 - [[comparisons/coding-agent-harnesses]] — Code harnesses comparison: Claude Code vs OpenCode vs Pi vs Aider vs Codex CLI vs Cursor. Harness effect（ハーネス効果）とモデル×ハーネス相性マトリックスを中心に。
@@ -1321,6 +1333,7 @@
 - [[concepts/karpathy-rl-agents]] — > **TODO**: Enrich this page.
 - [[concepts/katerra]] — > **TODO**: Enrich this page.
 - [[concepts/keller-jordan]] — > **TODO**: Enrich this page.
+- [[concepts/kernel-evolve]] — Meta's agentic system for autonomous GPU kernel generation. LLM + MCTS + RAG + Automated Evaluation. >60% throughput improvement on NVIDIA GPUs, >25% on custom MTIA silicon. Paper: arXiv:2512.23236.
 - [[concepts/ken-williams]] — > **TODO**: Enrich this page.
 - [[concepts/kernelbench]] — > **TODO**: Enrich this page.
 - [[concepts/kimi-k2-5]] — > **TODO**: Enrich this page.
@@ -1479,6 +1492,7 @@
 - [[concepts/rakhim.exotext.com]] — > **TODO**: Enrich this page.
 - [[concepts/ramp]] — > **TODO**: Enrich this page.
 - [[concepts/ranjay-krishna]] — > **TODO**: Enrich this page.
+- [[concepts/ranking-engineer-agent]] — Meta's autonomous AI agent (REA) for end-to-end ML lifecycle management. Confucius framework, 2x model accuracy improvement, 5x engineering output. Hibernate-and-Wake for multi-day workflows.
 - [[concepts/ransomware]] — > **TODO**: Enrich this page.
 - [[concepts/raspberry-pi]] — > **TODO**: Enrich this page.
 - [[concepts/recommendation-systems]] — > **TODO**: Enrich this page.

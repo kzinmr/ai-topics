@@ -2,7 +2,7 @@
 title: Meta
 type: entity
 created: 2026-04-09
-updated: 2026-04-15
+updated: 2026-05-06
 tags:
   - company
   - model
@@ -67,6 +67,39 @@ Per Ethan Mollick's analysis:
 - **Tier 3**: xAI (fallen off)
 - **Chinese models**: 7-9 months behind frontier
 
+
+## Internal AI Agents for Infrastructure (April 2026)
+
+Meta has pioneered a new approach to infrastructure optimization using AI agents:
+
+### Unified AI Agent Platform
+- Encodes senior engineering expertise into reusable "skills" for LLM agents
+- **FBDetect**: catches regressions as small as 0.005% in production environments
+- **AI Regression Solver**: auto-generates fix-forward PRs for detected
+- **Recovered hundreds of MW** of power across global infrastructure
+- Compresses ~10 hours of manual investigation into ~30 minutes
+
+See: [[concepts/meta-capacity-efficiency-agents]]
+
+### KernelEvolve
+- Agentic system for autonomous kernel generation/optimization
+- Uses LLM + MCTS + RAG + Automated Evaluation
+- >60% throughput improvement on NVIDIA GPUs (Andromeda Ads Model)
+- >25% training throughput improvement on Meta's custom MTIA silicon
+- 100% pass rate on Stanford's KernelBench (250 problems)
+- Paper: [arXiv:2512.23236](https://arxiv.org/abs/2512.23236), to appear at ISCA 2026
+
+See: [[concepts/kernel-evolve]]
+
+### Ranking Engineer Agent (REA)
+- Autonomous AI managing end-to-end ML lifecycle for ads ranking
+- Built on Confucius internal framework
+- 2x model accuracy improvement, 5x engineering output
+- Hibernate-and-Wake mechanism for multi-day workflows
+- Dual-source hypothesis engine (Historical Insights + ML Research Agent)
+
+See: [[concepts/ranking-engineer-agent]]
+
 ## Open Source History
 
 Meta pioneered open-source frontier models with the LLaMA series, creating the entire ecosystem of fine-tuned open models (Llama 2, Llama 3, Llama 4). However, **Muse Spark (April 2026)** is closed-source, suggesting a strategic shift. Community concerns:
@@ -87,6 +120,9 @@ See also: [[concepts/open-source-vs-closed]]
 - [[concepts/personal-superintelligence]] — Meta's core AI philosophy
 - [[concepts/meta-muse-spark]] — Muse Spark model details
 - [[concepts/openclaw-ecosystem]] — Community personal agent framework
+- [[concepts/meta-capacity-efficiency-agents]] — Unified AI agents for infrastructure
+- [[concepts/kernel-evolve]] — Agentic kernel authoring
+- [[concepts/ranking-engineer-agent]] — Autonomous ML lifecycle management
 - [[concepts/anthropic-openclaw-conflict]] — Platform control vs open access
 - [[concepts/inference/llama-cpp]]
 - [[anthropic]]

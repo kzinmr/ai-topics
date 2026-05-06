@@ -1,3 +1,39 @@
+## [2026-05-06] Active Crawl — Meta AI Agents, Cloudflare LLM Infra, Project Mariner, Mistral Vibe, ServiceNow
+
+**Topics discovered**: 5 major developments
+**Pages created**: 5 new concept pages
+**Pages updated**: 2 existing entity pages (Cloudflare, Meta)
+**Raw articles saved**: 5
+
+### New Concept Pages (5)
+- [[concepts/meta-capacity-efficiency-agents]] — Meta's unified AI agents for capacity optimization at hyperscale
+- [[concepts/cloudflare-llm-infrastructure]] — Cloudflare's custom LLM inference stack with PD disaggregation, Infire engine, Mooncake KV-cache
+- [[concepts/google-project-mariner-shutdown]] — Google's shutdown of Project Mariner browser agent in May 2026
+- [[concepts/mistral-vibe-remote-agents]] — Mistral Medium 3.5 + Vibe Remote Agents for async cloud coding
+- [[concepts/mit-encompass]] — MIT CSAIL framework for AI agent search with automatic backtracking
+- [[concepts/servicenow-ai-workforce]] — ServiceNow's autonomous AI workforce for enterprise operations
+- [[concepts/deepclaude]] — Open-source tool enabling Claude Code's agent loop with DeepSeek V4 Pro
+
+### Entity Pages Updated (2)
+- [[entities/cloudflare]] — Added Project Think, internal AI engineering stack, autonomous account provisioning
+- [[entities/meta]] — Added Capacity Efficiency AI Agent, KernelEvolve, Ranking Engineer Agent
+
+### Raw Articles Saved (5)
+- `raw/articles/2026-05-06_wired-google-project-mariner-shakeup.md`
+- `raw/articles/google-project-mariner-shutdown.md`
+- `raw/articles/meta-capacity-efficiency-agents-2026.md`
+- `raw/articles/mistral-medium-3-5-vibe-remote-agents.md`
+- `raw/articles/mit-encompass-feb-2026.md`
+
+### Key Themes Identified
+1. **Agent Infrastructure** — Meta, Cloudflare building specialized infra for agentic workloads
+2. **Browser Agent Reality Check** — Project Mariner shutdown shows limits of current browser automation
+3. **Agent Framework Interoperability** — DeepClaude demonstrates decoupling orchestration from model inference
+4. **Enterprise AI Workforce** — ServiceNow positioning AI as autonomous workforce, not just tools
+5. **Open Model + Cloud Agent Convergence** — Mistral combining open weights with cloud agent infrastructure
+
+---
+
 ## [2026-05-06] Blog Ingest — Gary Marcus AI Agent Security + Simon Willison AI Ethics
 
 **Pipeline**: blog-wiki-ingest ← blog-triage ← blog-ingest
