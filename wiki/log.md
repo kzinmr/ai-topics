@@ -1,3 +1,17 @@
+## [2026-05-07] LLM Creative Writing概念ページ作成 — Gwern "Towards Better LLM Creative Writing"
+
+**Source**: User request (Discord) — gwern.net/blog/2025/better-llm-writing のwiki取り込み
+
+**Raw articles saved**:
+- `raw/articles/2025-05-29_gwern-better-llm-writing.md` — Gwern Branwenによる LLM Creative Writing 手法の包括的概要。Anti-Examples prompting trick、Manual of Style (MoS) 抽出、メタ学習/パーソナライゼーション、Atomic Snippets、Generate-Rank-Selectブレインストーミング。核心哲学：質は検索プロセスから生まれ、初回生成からは生まれない。
+
+**Pages created**:
+- `concepts/llm-creative-writing.md` — GwernのLLM創作執筆手法を文書化した新規概念ページ。Anti-Examples逆転換トリック、MoS抽出、メタ学習インタビュー、Atomic Snippets多層抽象度出力、Seriation/ツリー埋め込み、5つの重要インサイト比較表を含む。Hermes Agentの定期レポーティング品質向上への応用セクションも追加。
+
+**Pages enriched**:
+- `entities/gwern.md` — Sourcesセクションに"Towards Better LLM Creative Writing"を追加。[[concepts/llm-creative-writing]]との相互参照。
+
+---
 ## [2026-05-07] Transformer Architecture概念ページ拡充 — Gwern "You Could've Invented Transformers"
 
 **Source**: User request (Discord) — gwern.net/blog/2025/you-could-have-invented-transformers のwiki取り込み

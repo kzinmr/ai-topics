@@ -158,6 +158,7 @@ Gwern challenges the Whiggish "expanding circle" narrative of moral progress, ar
 - [Spaced Repetition for Efficient Learning](https://gwern.net/spaced-repetition)
 - [The Narrowing Circle](https://gwern.net/narrowing-circle) (2012)
 - [Lizardman Constant in Surveys](https://gwern.net/note/lizardman) (2013)
+- [Towards Better LLM Creative Writing](https://gwern.net/blog/2025/better-llm-writing) (2025) — Anti-Examples prompting, Manual of Style extraction, meta-learning for personalization, atomic snippets. [[raw/articles/2025-05-29_gwern-better-llm-writing.md|Source]]
 - [Interview with Dwarkesh Patel](https://www.dwarkeshpatel.com/gwern-branwen) (2024)
 - [About This Website](https://gwern.net/About) — Gwern's writing methodology and philosophy
 - [Grokipedia: Gwern Branwen](https://grokipedia.com/page/gwern) — Biographical details, early life, Haskell contributions, funding model
