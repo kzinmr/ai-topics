@@ -3,7 +3,7 @@ title: Neel Nanda
 type: entity
 created: 2026-05-04
 updated: 2026-05-04
-status: stub
+status: complete
 tags: [person, ai-safety, interpretability, mechanistic-interpretability, research]
 aliases: [neel-nanda-mechanistic-interpretability]
 sources:

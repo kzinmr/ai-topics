@@ -1,14 +1,13 @@
 ---
-title: "Moonshot AI"
+title: Moonshot AI
 type: entity
-created: 2026-05-07
-updated: 2026-05-07
-tags: ['company', 'ai-infra']
-status: stub
+redirect: kimi
+aliases:
+  - moonshot-ai
+  - moonshotai
+  - 月之暗面
 ---
 
 # Moonshot AI
 
-AI company behind Kimi and Mooncake caching infrastructure
-
-> **TODO**: Enrich this entity page.
+This page is a redirect. See [[kimi]] for the comprehensive Moonshot AI / Kimi entity page.

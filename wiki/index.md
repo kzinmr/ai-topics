@@ -194,7 +194,7 @@
    190|     7|- [[entities/jensen-huang]] — **Role** | Co-founder, CEO, and President of Nvidia Corporation |
    191|- [[entities/jim-fan]] — **X** | @jim-fan |
    192|- [[entities/jim-nielsen]] — **Blog** | Jim Nielsen's Blog |
-   193|- [[entities/jo-bergum]] — **URL:** https://hornet.dev
+   193|- [[entities/jo-kristian-bergum]] — **URL:** https://hornet.dev
    194|- [[entities/john-carmack]] — **Role** | Founder, Keen Technologies; Former CTO, Oculus/Meta; Co-founder, id Software |
    195|- [[entities/john-d-cook-applied-mathematics-consulting]] — **Blog** | johndcook.com/blog |
    196|- [[entities/john-schulman]] — **Role** | Co-founder & Chief Scientist, Thinking Machines Lab |

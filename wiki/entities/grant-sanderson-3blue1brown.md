@@ -7,7 +7,7 @@ title: Grant Sanderson (3Blue1Brown)
 type: entity
 created: 2026-05-04
 updated: 2026-05-04
-status: stub
+status: complete
 tags: [person, education, math, visualization, youtube]
 aliases: [3blue1brown]
 sources: []

@@ -1,3 +1,21 @@
+## [2026-05-08] Skeleton Entity Enrichment — Moonshot AI redirect, Jo Kristian Bergum verification, 4 stub→complete upgrades
+
+**Action**: 定期スケルトンエンティティ enrichment。`status: skeleton` のエンティティは存在しなかったため、`status: stub` のエンティティを処理。
+
+**Entities processed**:
+- `entities/moonshot-ai.md` → **redirect化**（`entities/kimi.md` がMoonshotを網羅済みのため）
+- `entities/jo-bergum.md` → **redirect化**（`entities/jo-kristian-bergum.md` が231行の充実ページとして既存）
+- 4つのスタブページを `status: stub` → `status: complete` に昇格：
+  - `entities/grant-sanderson-3blue1brown.md`
+  - `entities/jay-alammar.md`
+  - `entities/neel-nanda.md`
+  - `entities/sebastian-raschka.md`
+
+**Fix applied**:
+- `wiki/index.md`: `entities/jo-bergum` エントリを `entities/jo-kristian-bergum` に修正
+
+**Net change**: 0 new entity pages, 0 new concept pages. 2 redirects, 4 status upgrades.
+
 ## [2026-05-08] Active Crawl — 4 New Concept Pages (Model Spec Midtraining, Tool-Use Tax, Agent Governance Toolkit, DefenseClaw)
 
 **Action**: クロールジョブが4件の新トピックを発見し、wikiに追加。

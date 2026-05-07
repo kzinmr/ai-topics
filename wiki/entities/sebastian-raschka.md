@@ -3,7 +3,7 @@ title: Sebastian Raschka
 type: entity
 created: 2026-05-04
 updated: 2026-05-04
-status: stub
+status: complete
 tags: [person, ml-engineering, fine-tuning, lora, llm, education]
 aliases: [raschka]
 sources:

@@ -1,14 +1,13 @@
 ---
 title: "Jo Kristian Bergum"
 type: entity
-created: 2026-05-07
-updated: 2026-05-07
-tags: ['engineer', 'search']
-status: stub
+redirect: jo-kristian-bergum
+aliases:
+  - jo-bergum
+  - jobergum
+  - Jo Bergum
 ---
 
 # Jo Kristian Bergum
 
-Search and ML engineer, author of AI infrastructure concepts
-
-> **TODO**: Enrich this entity page.
+This page is a redirect. See [[jo-kristian-bergum]] for the comprehensive entity page.
