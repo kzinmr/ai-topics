@@ -2,7 +2,7 @@
      2|
      3|> Content catalog. Every wiki page listed under its type with a one-line summary.
      4|> Read this first to find relevant pages for any query.
-> Last updated: 2026-05-07 | Total pages: 5193 | Full entries: 4644 | Stubs: 546 |
+> Last updated: 2026-05-07 | Total pages: 5195 | Full entries: 4646 | Stubs: 546 |
      6|
      7|## Entities (405 pages)
      8|
@@ -462,7 +462,7 @@
    454|   8|- [[entities/vercel]] — Vercel — Frontend cloud platform (Next.js). Released deepsec open-source security harness using coding agents for vulnerability discovery and remediation (May 2026).
    455|   9|- [[entities/radixark]] — RadixArk — AI inference infrastructure startup. $100M seed (May 2026), built on SGLang inference + Miles (large-scale RL).
    456|  10|- [[entities/perplexity]] — Perplexity — AI search platform expanding into vertical products: Professional Finance Computer (35 analyst workflows), NEJM/BMJ premium medical access.
-## Concepts (444 pages)
+## Concepts (446 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/altman-three-observations]] — Altman's Three Observations: 対数スケーリング（intelligence ≈ log(resources)）、超デフレコスト（10x/年）、超指数関数的価値の3つの経済観察枠組み。GPT-4→GPT-4oで150xのコスト低下、2035年ビジョン、AIエージェント経済学。
@@ -517,6 +517,7 @@
 |- [[concepts/constitutional-ai]] — Anthropic's methodology for aligning AI via explicit principles (Constitution). Compared with OpenAI Model Spec by Boaz Barak (Jan 2026). Three poles of alignment: Principles, Policies, Personality.
 |- [[concepts/data-analysis-agents]] — AIデータ分析エージェントの包括的概念。データ探索→スキーマ理解→クエリ生成→実行→検証→可視化→報告のパイプライン。OpenAI社内データエージェント（GPT-5.2）とCognition DANA/Devinの2大アプローチを比較。DWHセマンティックレイヤー・ゴールデンクエリとの関係性も含む。
 |- [[concepts/db9-filesystem-sql]]
+- [[concepts/frontier-swe-benchmark]] — FrontierSWE: 超高難度コーディングエージェントベンチマーク（Proximal Labs）。20時間制限、Implementation/Performance/Researchの3カテゴリ17タスク。GPT-5.5+Codexが平均ランク2.35（Dominance 83%）で首位。保守（GPT-5.4）vs攻撃的（Opus 4.6）の行動比較、overconfidence/cheating行動を記録。
    488|- [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.
    489|- [[concepts/agent-serverless]] — Serverless deployment pattern for AI agents with built-in SaaS integration, permissions, security, and log persistence tiers. Enterprise monetization via persistent logs and audit trails.
    490|- [[concepts/agent-identity-verification]]
@@ -531,5 +532,6 @@
    499|- [[concepts/agent-architecture-decomposition]] — Three-layer framework for production AI agents: Open Models (intelligence), Open Runtime (execution environment), Open Harness (orchestration). Covers Agent on bash vs Agent on Python REPL (RLM, Pydantic AI), Micro-VM interpreters (Pydantic Monty), and MCP as universal adapter for heterogeneous agents.
    500|- [[concepts/agentic-ai-skills]] — Agentic AI Skills Design is the discipline of writing reusable documents that teach AI systems how to approach entire categories of tasks — not what to do in one specific situation, but the process...
    501|- [[concepts/scaling-hypothesis]] — Gwern Branwen's formalization of the theory that scale alone drives AI capability emergence. Contrasts strong scaling hypothesis (OpenAI) vs weak scaling hypothesis (DeepMind). Covers blessings of scale, emergent agency ("It From Byte"), the pretraining thesis/last bits theory, and the hardware overhang argument.
+- [[concepts/workspace-bench]] — Workspace-Bench 1.0: マルチファイル依存関係を評価する大規模エージェントベンチマーク（OpenDataBox）。5職種プロファイル、74ファイル種別、20,476ファイル（最大20GB）、388タスク。Best AI 68.7%（OpenClaw+Opus 4.7）vs Human 80.7%。5段階進化モデル（L0-L4）、Agent-as-a-Judge評価フレームワーク。
 - [[concepts/unbundled-agents]] — Viv Trivedy's architectural pattern: specialist subagents exposed as Tools within a harness, making the harness a configurable box populated per task.
    502|- [[concepts/transformer-architecture]] — The Transformer architecture, derived via pedagogical "discovery fiction" from n-grams to QKV self-attention. Self-attention as multiplicative interactions with direct access. Logical progression through embeddings, convolutions, MLP-Mixers, to modern Transformers. Emergence at scale (induction heads, ICL). [[raw/articles/2025-05-25_gwern-invented-transformers.md|Source: Gwern 2025]].

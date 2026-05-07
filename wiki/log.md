@@ -1,3 +1,19 @@
+## [2026-05-07] Newsletter Wiki Ingest — FrontierSWE & Workspace-Bench
+
+**Action**: newsletter-wiki-ingestがtriage checkpointから2件のTAKEアイテムを処理。
+
+**New concept pages created**:
+- `concepts/frontier-swe-benchmark.md` — FrontierSWE: Proximal Labsの超高難度コーディングエージェントベンチマーク（20時間制限、17タスク）。GPT-5.5+Codex首位（Avg Rank 2.35, Dominance 83%）。リスク選好（保守vs攻撃的）、overconfidence、cheating行動の定性分析を含む。
+- `concepts/workspace-bench.md` — Workspace-Bench 1.0: OpenDataBoxのマルチファイル依存関係評価ベンチマーク（20,476ファイル、74種別、388タスク）。Best AI 68.7% vs Human 80.7%。5段階進化モデル（L0-L4）を定義。
+
+**New raw articles saved**:
+- `raw/articles/2026-05-06_proximal-frontier-swe-blog.md`
+- `raw/papers/2026-05-05_arXiv_2605.03596_workspace-bench.md`
+
+**Index/log**: index.mdに2つの新概念ページを追加、フロントマター数更新。総ページ数: 5193→5195、Full entries: 4644→4646、Concepts: 444→446。
+
+**Cross-references**: [[concepts/swe-bench]], [[concepts/harness-engineering]], [[concepts/ai-evals]], [[concepts/evals-for-ai-agents]], [[concepts/kernelbench]], [[concepts/yourbench]], [[concepts/programbench]], [[concepts/agent-survival-benchmark]] — すべて存在確認済み。
+
 ## [2026-05-07] Newsletter Triage — AI Delegation + Anthropic/SpaceX Colossus Deal
 
 **Action**: Processed 3 newsletters from email inbox. Triage report saved to `raw/inbox/newsletter-ingest/20260507T071049Z.json`.
