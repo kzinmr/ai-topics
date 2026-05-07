@@ -28,9 +28,10 @@
     28|- [[concepts/agent-iam]] — Agent IAM / Non-Human Identity Security for managing permissions and access control for AI agents interacting with enterprise systems.
     29|- [[concepts/automation-series]] â 10-part series by Antoine Buteau on automation architecture: three kinds of work (deterministic/probabilistic/accountable), bounded agents, the automation boundary (code vs model vs human), HITL as design pattern, state/idempotency/queues, observability/replay, failure modes/blast radius, and an architecture worksheet.
     30|- [[concepts/bitter-lesson-harnessing]] — How model intelligence evolution affects the importance of harness engineering — as models get smarter, harness complexity becomes less critical.
-    31|- [[concepts/generative-app-evolution]] — Generative App Evolution pattern: UI → Stateless App → Stateful App progression in AI-driven applications.
-    32|
-    33|## Harness-Engineering
+- [[concepts/generative-app-evolution]] — Generative App Evolution pattern: UI → Stateless App → Stateful App progression in AI-driven applications.
+- [[concepts/information-theory-and-agent-communication]] — Shannon (1948) の通信の数学的理論をAIエージェント間コミュニケーションの観点から再解釈。V-Information (Xu et al., 2020) との統合によるエージェント通信3層モデル。ハーネス効果の情報理論的基礎、コンテキストウィンドウのShannon容量アナロジー。
+
+## Harness-Engineering
     34|
     35|- [[concepts/harness-engineering/agentic-engineering-patterns]] — Simon Willisonが2026年2月23日に開始したガイドプロジェクト。コーディングエージェント（Claude Code、OpenAI Codex、Gemini CLI等）から最高の結果を得るための実践パターンを体系化したもの。
     36|- [[concepts/harness-engineering/agentic-engineering]] — Based on the concept popularized by Simon Willison's [Agentic Engineering guide](https://simonwillison.net/2025/Apr/11/agentic-engineering/).
