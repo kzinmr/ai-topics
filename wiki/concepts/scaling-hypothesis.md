@@ -377,9 +377,14 @@ Meta's [Memory Layers](https://ai.meta.com/research/publications/memory-layers-a
 
 Sources:
 - [OpenAI o3 announcement](https://openai.com/index/introducing-o3-and-o4-mini/) (April 2025)
+  - [[raw/articles/2025-04-16_openai-o3-test-time-scaling]] — Full analysis
 - [SynthLLM: Breaking the AI Data Wall](https://www.microsoft.com/en-us/research/articles/synthllm-breaking-the-ai-data-wall-with-scalable-synthetic-data/) (Microsoft Research, 2025)
+  - [[raw/papers/2025_colm_synthllm-scaling-laws-synthetic-data]] — COLM 2025
+  - [[raw/papers/2025_emnlp_demystifying-synthetic-data]] — EMNLP 2025 (30% rule)
 - [BLT: Patches Scale Better Than Tokens](https://arxiv.org/abs/2412.09871) — ACL 2025
+  - [[raw/papers/2025_acl_byte-latent-transformer]] — Full paper summary
 - [Memory Layers at Scale](https://ai.meta.com/research/publications/memory-layers-at-scale/) — Meta AI
+  - [[raw/papers/2025_meta_memory-layers-at-scale]] — 128B memory params
 - [Conditional Memory via Scalable Lookup](https://arxiv.org/abs/2601.07372) (Engram)
 - [Pretraining: The First Scaling Frontier](https://research.dimensioncap.com/p/pretraining-the-first-scaling-frontier) — Dimension Research, Dec 2025
 
