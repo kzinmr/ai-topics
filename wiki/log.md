@@ -1,3 +1,15 @@
+## [2026-05-07] Transformer Architecture概念ページ拡充 — Gwern "You Could've Invented Transformers"
+
+**Source**: User request (Discord) — gwern.net/blog/2025/you-could-have-invented-transformers のwiki取り込み
+
+**Raw articles saved**:
+- `raw/articles/2025-05-25_gwern-invented-transformers.md` — Gwern Branwenによる Transformerの「発見フィクション」提案。n-gramからQKV自己注意までの論理的導出。多様体相互作用の直接アクセスとしての自己注意、スケールでの創発（誘導ヘッド、文脈内学習）。
+
+**Pages created/updated**:
+- `concepts/transformer-architecture.md` — スタブから完全版へ。Transformerの教育的「発見フィクション」導出。n-gram→埋め込み→畳み込み→MLP-Mixer→動的畳み込み→QKV自己注意→多頭注意→位置埋め込み→最適化「おまじない」の9段階。スケールでの創発特性。SSM/線形Transformerとの関連付け。[attention-mechanism-variants](concepts/attention-mechanism-variants.md)へのリンクを含む。
+
+---
+
 ## [2026-05-07] Scaling Hypothesis概念ページ拡充 — gwern.net論文本体からの完全版
 
 **Source**: User request (Discord) — gwern.net/scaling-hypothesis のwiki取り込み
