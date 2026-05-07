@@ -1388,4 +1388,16 @@ Sources: X/Twitter scan (x-accounts-scan cron job).
 - 孤立ページ1190件、大容量ページ103件
 - 命名規則違反4件（日付始まり3、特殊文字1）
 - log.md正常（77エントリー）、メタデータ完全性OK
----
+|---
+
+## [2026-05-07] Poor Man's Continuous Learning概念ページ作成
+
+**Action**: kzinmrからのリクエストにより、Ashpreet BediのSQL Agent記事（"poor man's continuous learning"）をwikiに取り込み。BQ Conversational AnalyticsのGolden Queries、Google Native Semantic Layer、dbt Semantic Layer、LPE-SQL論文とリンクさせて包括的な概念ページを作成。
+
+**New raw articles saved:**
+- `raw/articles/2025-12-15_self-improving-text2sql-agent-ashpreet-bedi.md` — Ashpreet BediのSelf-Improving Text2SQL Agent記事。Dynamic Context + "Poor Man's Continuous Learning"によるText-to-SQLエージェントフレームワーク。
+
+**New page created:**
+- `concepts/poor-mans-continuous-learning.md` — Poor Man's Continuous Learning概念ページ。日本語＋英語。定義、モチベーション、2-pathアーキテクチャ（Online/Offline）、KB設計（Table Info / Sample Queries / Business Semanticsの3分類）、5つの実装例比較表（PMCL SQL Agent / BQ Golden Queries / BQ Semantic Graph / dbt Semantic Layer / LPE-SQL）、ユースケース判定基準を含む。
+
+**Index updated**: [[concepts/poor-mans-continuous-learning]] をConceptsセクションに追加（grpoの次）。
