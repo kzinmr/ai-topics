@@ -142,3 +142,17 @@
 - `concepts/linguistic-vertigo.md` — 「経験的前提：Re-encountering Languageと身体の言葉の発見」セクションを新設。理論 vs 経験の二部構成比較表。社会の影セクションに[[concepts/societal-shadow]]へのクロスリファレンスを追加。関連ページ・出典にqiaochu-yuanエンティティとsocietal-shadow概念を追加。
 
 **Index/log**: index.mdにentities/qiaochu-yuan、concepts/societal-shadowを追加。linguistic-vertigoエントリを更新（societal-shadow/Raw Articleクロスリファレンス）。総ページ数: 5195→5198、Entities: 405→406、Concepts: 446→447。
+
+## [2026-05-07] Societal Shadow 大幅拡充 — 技術的対応物の網羅的調査
+
+**Action**: 調査依頼に基づき、societal-shadow概念ページの「技術的対応物」セクションを全面刷新。新たに6つのカテゴリ・20以上のデータセット/システムを追加。
+
+**New technical artifacts added**:
+- **RLHF訓練データセット**: Anthropic Red Team (38,961対話), PKU-SafeRLHF/BeaverTails (14 category, 333K+ QA), Do-Not-Answer (939 prompts, 61 harms), Tulu 3 (36 topics)
+- **Guardrails**: OpenAI Moderation API (omni-moderation), Meta Llama Guard 1/2/3/4 (11→14 categories), NVIDIA Aegis 1.0/2.0 (21 categories), OpenAI Model Spec
+- **Benchmarks**: SORRY-Bench (45 categories, class-balanced), HarmBench (510 behaviors, 7 categories), OR-Bench (80K over-refusal), XSTest, WildGuard, AgentHarm, SocialHarmBench
+- **Constitutional AI**: Anthropic CAI principles, Collective CAI, Acceptable Use Policies (Meta, DeepSeek), EU AI Act Article 5
+- **Shadow research**: Shadow Alignment paper, Waluigi Effect
+- **Platform-specific**: Roblox Content Safety Taxonomy (25 categories)
+
+**New section**: 「増幅メカニズム — 影の自己拡大ループ」を追加。6つの相互連鎖メカニズム（カテゴリ分裂加速、Guardrail多層化、訓練/評価循環、プラットフォーム差異、Shadow武器化、Over-Refusal拡大）を記述。
