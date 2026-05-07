@@ -5,8 +5,13 @@
 **New raw articles saved**:
 - `raw/articles/2026-01-26_anthropic-interactive-tools-claude.md` — Anthropic公式ブログ。MCP Apps（インタラクティブUI拡張）の発表。10のローンチパートナー（Amplitude, Asana, Box, Canva, Clay, Figma, Hex, monday.com, Slack, Salesforce）に対応。
 
+**追加取り込み (3 resources)**:
+- `raw/articles/2025-11-21_mcp-apps-proposal.md` — MCP Apps提案（SEP-1865）。Anthropic・OpenAI・MCP-UIコミュニティによる共同策定。技術仕様の詳細（`ui://` URI scheme, iframe sandboxing, backward compatibility）。
+- `raw/articles/2026-01-26_mcp-apps-official-release.md` — MCP Apps正式リリース。App API（`@modelcontextprotocol/ext-apps`）、セキュリティモデル、クライアント対応表（Claude/Goose/VS Code/ChatGPT）、使用例。
+- `raw/articles/2026-01-01_mcpui-dev-landing-page.md` — MCP-UIプロジェクト（Ido Salomon）。TypeScript/Ruby/Python SDK。現在はMCP Apps標準の実装として継続。
+
 **Pages enriched**:
-- `concepts/mcp.md` — 「MCP Apps (Interactive UI Extension)」セクションを新設。キーコンセプト、ローンチパートナー一覧表、エコシステム採用状況、競合標準（MCP-UI, OpenAI Apps SDK, Google A2UI）との比較を追加。tags・sources・related conceptsを更新。
+- `concepts/mcp.md` — MCP Appsセクションを大幅拡充。History（MCP-UI→SEP-1865統合の経緯）、Technical Architecture（`_meta.ui.resourceUri` + `ui://` + App API）、Security Model（5層防御）、Use Cases、Client Support表、Developer Resources、Key Quote（Harald Kirschner/VS Code）を追加。
 
 ## [2026-05-07] Anthropic「Demystifying Evals for AI Agents」記事取り込み
 

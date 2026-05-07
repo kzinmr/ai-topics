@@ -4,7 +4,7 @@ created: 2026-04-26
 updated: 2026-05-07
 type: concept
 tags: [protocol, agentic-engineering, tool, mcp-apps]
-sources: [raw/articles/troyhunt.com--heres-what-agentic-ai-can-do-with-have-i-been-pwneds-apis--7eefad3f.md, raw/articles/2026-04-25-langchain-anatomy-agent-harness.md, raw/articles/gemini-deep-research-agent.md, raw/articles/2026-01-26_anthropic-interactive-tools-claude.md]
+sources: [raw/articles/troyhunt.com--heres-what-agentic-ai-can-do-with-have-i-been-pwneds-apis--7eefad3f.md, raw/articles/2026-04-25-langchain-anatomy-agent-harness.md, raw/articles/gemini-deep-research-agent.md, raw/articles/2026-01-26_anthropic-interactive-tools-claude.md, raw/articles/2025-11-21_mcp-apps-proposal.md, raw/articles/2026-01-26_mcp-apps-official-release.md, raw/articles/2026-01-01_mcpui-dev-landing-page.md]
 ---
 
 # MCP (Model Context Protocol)
@@ -92,11 +92,87 @@ MCP servers for GitHub, databases, and file systems enable AI coding agents (Cla
 
 ## MCP Apps (Interactive UI Extension)
 
-**MCP Apps** is an extension to the Model Context Protocol that allows MCP servers to deliver rich, interactive user interfaces inside supporting AI products (ChatGPT, Claude, Gemini, etc.). Announced by Anthropic in January 2026, it transforms MCP from a purely tool-calling protocol into a full bidirectional UI channel.
+**MCP Apps** is the first official extension to the Model Context Protocol, enabling MCP servers to deliver rich, interactive user interfaces inside supporting AI products. Announced as a proposal in November 2025 ([SEP-1865](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/1865)) and officially released on January 26, 2026, it transforms MCP from a purely tool-calling protocol into a full bidirectional UI channel.
+
+### History
+
+The MCP Apps standard emerged from the consolidation of two independent efforts:
+
+- **MCP-UI** (early 2025) — Created by **Ido Salomon** (@idosal1), an independent open-source project providing interactive UI components over MCP. Provided client (`@mcp-ui/client`) and server (`@mcp-ui/server`) SDKs for TypeScript, Ruby, and Python. Code executed in sandboxed iframes. Apache 2.0 license.
+- **OpenAI Apps SDK** — OpenAI's parallel effort for tool UIs in ChatGPT.
+
+In November 2025, the MCP-UI community working group (Anthropic, OpenAI, Ido Salomon) consolidated these into **SEP-1865**, the official MCP Apps extension. MCP-UI packages now implement the MCP Apps standard, and the original MCP-UI project is maintained as a legacy adapter for hosts that don't yet support MCP Apps natively.
 
 ### Key Concept
 
 Traditional MCP servers expose tools that return text/structured data. MCP Apps servers additionally expose **interactive UI components** — charts, forms, kanban boards, document previews, and other rich interfaces — rendered inline within the AI chat. This enables a new class of AI-tool interaction where the user sees and directly manipulates the tool's output through the AI interface.
+
+### Technical Architecture
+
+MCP Apps uses two primary primitives:
+
+1. **Tools with UI Metadata** — Tools include a `_meta.ui.resourceUri` field pointing to a UI resource:
+   ```json
+   {
+     "name": "visualize_data",
+     "description": "Visualize data as an interactive chart",
+     "inputSchema": { ... },
+     "_meta": {
+       "ui": {
+         "resourceUri": "ui://charts/interactive"
+       }
+     }
+   }
+   ```
+
+2. **UI Resources** — Server-side resources served via the `ui://` URI scheme, containing bundled HTML/JavaScript. Uses `text/html+mcp` MIME type. Resources are **pre-declared** so hosts can prefetch and review them before execution.
+
+3. **App API** — The `@modelcontextprotocol/ext-apps` package provides bidirectional JSON-RPC communication over `postMessage`:
+   - `app.connect()` — Establish communication with host
+   - `app.ontoolresult` — Receive tool execution results
+   - `app.callServerTool()` — Call server tools from the UI
+   - `app.updateModelContext()` — Send context back to the AI model
+
+#### Code Example: App API
+
+```javascript
+import { App } from "@modelcontextprotocol/ext-apps";
+const app = new App();
+await app.connect();
+
+// Receive tool results from the host
+app.ontoolresult = (result) => {
+  renderChart(result.data);
+};
+
+// Call server tools from the UI
+const response = await app.callServerTool({
+  name: "fetch_details",
+  arguments: { id: "123" },
+});
+
+// Update model context
+await app.updateModelContext({
+  content: [{ type: "text", text: "User selected option B" }],
+});
+```
+
+### Security Model
+
+MCP Apps employs a multi-layered security approach:
+
+1. **Iframe Sandboxing** — Restricted permissions for all UI content (no top-level navigation, no popups, no same-origin access)
+2. **Pre-declared Templates** — Hosts review HTML content before rendering; no surprise UI code
+3. **Auditable Messages** — All UI-to-host communication is loggable, structured JSON-RPC
+4. **User Consent** — Hosts can require explicit approval before a UI component initiates a tool call
+5. **Text Fallbacks** — Servers are encouraged to provide text-only fallbacks for clients without UI support
+
+### Use Cases
+
+- **Data Exploration** — Interactive charts with filtering, drill-down, and parameter adjustment
+- **Configuration Wizards** — Multi-step forms with dependent fields (e.g., staging vs. production settings)
+- **Document Review** — Inline PDF/HTML viewers where users can click to approve or flag clauses
+- **Real-time Monitoring** — Live system health metrics (CPU, memory, requests) that update without re-running the tool
 
 ### Launch Partners (January 2026)
 
@@ -115,32 +191,53 @@ At launch, the following tools implemented MCP Apps as **interactive connectors*
 | **Slack (Salesforce)** | Search conversations, generate drafts, review/format messages |
 | **Salesforce** | Integration via Agentforce 360 (launched later) |
 
+### Client Support
+
+| Client | Availability |
+|--------|-------------|
+| **Claude** | Available at launch (Web & Desktop) |
+| **Goose** | Available at launch |
+| **VS Code** | Available in VS Code Insiders |
+| **ChatGPT** | Rolling out week of January 26, 2026 |
+
 ### Ecosystem Adoption
 
-MCP Apps has been adopted beyond Anthropic:
+MCP Apps has been adopted beyond the initial launch:
 - **Microsoft Copilot** (March 2026): Copilot Chat supports MCP Apps ecosystem including Adobe, Monday.com, and Figma connectors
-- **VS Code**: MCP Apps servers can deliver interactive UIs within the editor
-- **Open standard**: The MCP Apps specification is open, and any MCP server can implement it. Developers build UIs using standard web technologies, documented at [modelcontextprotocol.io](https://modelcontextprotocol.io/docs/getting-started/intro).
+- **Open standard**: Any MCP server can implement the spec
+- Example servers available: `threejs-server` (3D visualization), `map-server` (interactive maps), `pdf-server` (document viewing), `system-monitor-server` (real-time dashboards)
 
 ### Relationship to Other UI-over-MCP Standards
 
-MCP Apps competes with other approaches to providing UI over MCP:
-- **MCP-UI** (by Ido Salomon) — Alternative open-source standard for UI over MCP, created independently before MCP Apps was announced
-- **OpenAI Apps SDK & AgentKit** — OpenAI's approach to tool UIs
-- **Google A2UI** — Google's agent-to-user interface standard
+The MCP Apps standard was formed by consolidating earlier independent efforts:
+- **MCP-UI** (Ido Salomon) — The original open-source standard; now implements MCP Apps spec and offers legacy adapter for backward compatibility
+- **OpenAI Apps SDK & AgentKit** — OpenAI's parallel approach; merged into SEP-1865
+- **Google A2UI** — Google's independent agent-to-user interface standard (not part of MCP Apps)
 
-This ecosystem of competing UI-over-MCP standards reflects the early-stage nature of agentic UI.
+### Developer Resources
 
-### Getting Started
+- **Official SDK:** [`@modelcontextprotocol/ext-apps`](https://www.npmjs.com/package/@modelcontextprotocol/ext-apps) (npm)
+- **Documentation:** [MCP Apps Guide](https://modelcontextprotocol.io/docs/extensions/apps)
+- **Quickstart:** [Getting Started Guide](https://apps.extensions.modelcontextprotocol.io/api/documents/Quickstart.html)
+- **MCP-UI Project (legacy):** [mcpui.dev](https://mcpui.dev) — Community SDK packages for TypeScript, Ruby, Python; GitHub: [github.com/idosal/mcp-ui](https://github.com/idosal/mcp-ui)
+- **Specification:** [SEP-1865](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/1865)
+- **Community:** `#mcp-ui` channel in MCP Contributors Discord
 
-Users connect MCP Apps via their AI product's integration directory:
-- Claude: [claude.ai/directory](https://claude.ai/directory) → "Featured" section
-- Separate app authentication is handled through the MCP server, not the AI product
+### Key Quote
 
-### Source
+> "With MCP Apps, that contract finally includes the missing human step: when the workflow needs a decision, a selection, or exploration, the client can give you the right interaction without turning the conversation into a choose-your-own-adventure prompt."
+> — **Harald Kirschner**, Principal Product Manager, VS Code
+
+### Sources
 
 - [Anthropic Blog: Interactive Connectors and MCP Apps in Claude](https://claude.com/blog/interactive-tools-in-claude) (January 26, 2026)
+- [MCP Blog: MCP Apps Proposal (SEP-1865)](https://blog.modelcontextprotocol.io/posts/2025-11-21-mcp-apps/) (November 21, 2025)
+- [MCP Blog: MCP Apps Official Release](https://blog.modelcontextprotocol.io/posts/2026-01-26-mcp-apps/) (January 26, 2026)
+- [mcpui.dev](https://mcpui.dev) — MCP-UI project (now standardized into MCP Apps)
 - [[wiki/raw/articles/2026-01-26_anthropic-interactive-tools-claude.md]]
+- [[wiki/raw/articles/2025-11-21_mcp-apps-proposal.md]]
+- [[wiki/raw/articles/2026-01-26_mcp-apps-official-release.md]]
+- [[wiki/raw/articles/2026-01-01_mcpui-dev-landing-page.md]]
 
 ## 2026 Roadmap
 
