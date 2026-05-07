@@ -21,8 +21,11 @@ sources:
   - raw/articles/2020-05-28_gwern-scaling-hypothesis.md
   - raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer.md
   - raw/articles/2024-04-11_hyungwonchung-transcript.md
+  - raw/articles/2024-12-13_ilyasutskever-seq2seq-decade.md
+  - raw/articles/2024-12-13_ilyasutskever-transcript.md
   - https://gwern.net/scaling-hypothesis
   - https://www.youtube.com/watch?v=orDKvo8h71o
+  - https://www.youtube.com/watch?v=1yvBqasHLZs
 related:
   - scaling-laws
   - bitter-lesson
@@ -202,6 +205,58 @@ Sources:
 - [[raw/articles/2024-04-11_hyungwonchung-transcript]] — Full talk transcript
 - [Stanford CS25: Hyung Won Chung](https://www.youtube.com/watch?v=orDKvo8h71o) (YouTube)
 
+## Ilya Sutskever: The End of Pretraining (NeurIPS 2024)
+
+Ilya Sutskever's NeurIPS 2024 keynote, "Sequence to Sequence Learning with Neural Networks: What a Decade," provides a unique perspective on the Scaling Hypothesis — from one of its original architects. The talk is a 10-year retrospective on the 2014 seq2seq paper, reflecting on what the early scaling pioneers got right and wrong.
+
+### The 2014 Recipe
+
+The seq2seq paper's recipe was strikingly simple:
+1. An **autoregressive model** trained on text
+2. A **large neural network** (by 2014 standards)
+3. A **large dataset**
+
+This recipe — now recognizable as the foundation of GPT-style models — was summarized as the "Deep Learning Dogma": if any human in the world can do a task in a fraction of a second, a 10-layer neural network can replicate it.
+
+### What They Got Wrong
+
+The early scaling pioneers underestimated how far scaling would go:
+- They thought ~10 layers would be sufficient
+- The actual answer: many more layers, and every additional layer helps
+- Human-level translation, which seemed impossible in 2014, was achieved with GPT-4
+
+### What Comes Next: Beyond Scaling
+
+Sutskever's most provocative claim:
+
+> **"Pretraining as we know it will end."**
+
+And what comes next:
+
+> **Superintelligence that is: agentic, reasons, understands, and is self-aware.**
+
+This is a critical evolution of the Scaling Hypothesis:
+
+| Phase | Paradigm | Limitation |
+|-------|----------|-----------|
+| **2014–2024** | Pretraining at scale (seq2seq → GPT-4) | Finite internet data; diminishing returns |
+| **2024+** | Post-pretraining superintelligence | Agency, reasoning, understanding, self-awareness |
+
+### Connection to the Scaling Hypothesis
+
+Sutskever's talk addresses a core question Gwern raised in his original essay: *"What would future scaled-up models learn?"* The answer, from someone who helped build the scaling paradigm:
+
+1. **Scaling was necessary but insufficient** for full intelligence
+2. **The next frontier is not more pretraining** — it's agency, reasoning, understanding, and self-awareness
+3. **Superintelligence requires new capabilities** that go beyond the "blessings of scale" alone
+
+This represents an important evolution of the scaling hypothesis from its 2020 form: the hypothesis held that scale alone would produce intelligence. Sutskever now argues that scale got us to superhuman pattern matching, but the remaining gap requires directed capabilities (agency, reasoning) rather than just more compute on more data.
+
+Sources:
+- [[raw/articles/2024-12-13_ilyasutskever-seq2seq-decade]] — Talk summary
+- [[raw/articles/2024-12-13_ilyasutskever-transcript]] — Full transcript
+- [NeurIPS 2024: Ilya Sutskever](https://www.youtube.com/watch?v=1yvBqasHLZs) (YouTube)
+
 ## Relationship to Other Scaling Concepts
 
 - **[[concepts/scaling-laws|Scaling Laws]]**: The empirical mathematical framework for predicting loss given compute/data/parameters
@@ -216,3 +271,5 @@ Sources:
 - [Shaping the Future of AI from the History of Transformer](https://www.youtube.com/watch?v=orDKvo8h71o) — Hyung Won Chung, Stanford CS25 (2024)
 - [Slides](https://docs.google.com/presentation/d/1u05yQQaw4QXLVYGLI6o3YoFHv6eC3YN8GvWD8JMumpE) — Same lecture
 - [Scaling Instruction-Finetuned Language Models](https://arxiv.org/abs/2210.11416) — Chung et al. (Flan, 2022)
+- [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215) — Sutskever, Vinyals, Le (2014)
+- [Ilya Sutskever NeurIPS 2024 talk](https://www.youtube.com/watch?v=1yvBqasHLZs) — "What a Decade" retrospective

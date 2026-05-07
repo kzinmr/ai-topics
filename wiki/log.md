@@ -31,7 +31,20 @@
 - `raw/articles/2024-04-11_hyungwonchung-transcript.md` — 同講義の文字起こし
 
 **Pages updated**:
-- `concepts/scaling-hypothesis.md` — 「Architectural Case Study: Hyung Won Chung」セクション追加。Structure Paradox（構造がスケーリングを妨げる）、Encoder-Decoder→Decoder-Onlyへの移行分析、3つの時代遅れになった構造（分離パラメータ、情報ボトルネック、双方向性）、Flan事例、予測フレームワーク。Scaling Hypothesisがモデルサイズだけでなくアーキテクチャ設計自体に適用されることを示す。
+- `concepts/scaling-hypothesis.md` — 「Architectural Case Study: Hyung Won Chung」セクション追加。
+
+---
+
+## [2026-05-07] Scaling Hypothesis概念ページ拡充 — Ilya Sutskever NeurIPS 2024基調講演
+
+**Source**: User request (Discord) — Sutskever 10年総括講演のwiki取り込み
+
+**Raw articles saved**:
+- `raw/articles/2024-12-13_ilyasutskever-seq2seq-decade.md` — Ilya Sutskever (OpenAI/SSI) のNeurIPS 2024基調講演（2024年12月）
+- `raw/articles/2024-12-13_ilyasutskever-transcript.md` — 同講演の文字起こし
+
+**Pages updated**:
+- `concepts/scaling-hypothesis.md` — 「Ilya Sutskever: The End of Pretraining (NeurIPS 2024)」セクション追加。2014年レシピ（autoregressive + large NN + large data）、Deep Learning Dogma、pretrainingの終焉と超知能（agentic, reasons, understands, self-aware）への移行。Scaling Hypothesisの限界と次フェーズの展望をSutskeverの視点から。
 
 ---
 
