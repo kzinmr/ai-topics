@@ -2,7 +2,7 @@
      2|
      3|> Content catalog. Every wiki page listed under its type with a one-line summary.
      4|> Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 5202 | Full entries: 4652 | Stubs: 546 |
+> Last updated: 2026-05-07 | Total pages: 5203 | Full entries: 4653 | Stubs: 546 |
      6|
      7|## Entities (406 pages)
      8|
@@ -474,6 +474,7 @@
 - [[concepts/agent-development-lifecycle]] — Agent Development Lifecycle (ADLC) — formalized framework for AI agent lifecycle: planning, deployment, operation, iteration. New operational roles: Agent Supervisor, QA Lead, AI Ops Manager, Chief AI Officer.
    460|- [[concepts/cloudflare-agents]] — Cloudflare's iMARS (Internal MCP Agent/Server Rollout Squad) AI engineering stack. 3,683 internal users, 93% R&D coverage, 2x MR velocity increase. AI Code Reviewer multi-agent review, Engineering Codex.
    461|- [[concepts/cloudflare-llm-infrastructure]] — Cloudflare's custom LLM inference stack — PD disaggregation, Infire Rust engine, Mooncake KV-cache, speculative decoding. 3x latency improvement, 80% cache hit ratio.
+|- [[concepts/claude-managed-agents]] — Anthropic's Managed Agents platform: memory stores (file-as-memory), multi-agent orchestration (coordinator + 20 sub-agents), outcomes loop (rubric-driven grader), Dreams (memory curation), webhooks (push notifications). GA with Dreams in Research Preview.
    462|- [[concepts/accelerate]] — Hugging Face Accelerate: zero-code-change distributed training launcher. Created/led by Zach Mueller (@TheZachMueller). Unified abstraction layer making FSDP and DeepSpeed interchangeable via CLI or Python plugins.
 - [[concepts/deepclaude]] — Open-source tool enabling Claude Code's agent loop with DeepSeek V4 Pro, demonstrating agent framework interoperability.
 - [[concepts/deepseek-v3]] — DeepSeek-V3: 671B MoEモデル（37B活性化/トークン）。MLA、補助損失なし負荷分散、MTP、FP8訓練、DualPipeなど複数の革新的技術を導入。14.8Tトークンで$5.576Mの訓練コスト。GPT-4oクラスの性能を達成したマイルストーン論文（arXiv:2412.19437, Dec 2024）。
