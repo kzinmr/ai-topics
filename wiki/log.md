@@ -1,4 +1,14 @@
-## [2026-05-08] Predictive $\mathcal{V}$-Information 概念ページ作成 — Xu et al. ICLR 2020
+## [2026-05-08] 「Techno-Pessimism」概念ページ作成 — Curtis Yarvinのテクノ悲観主義マニフェスト
+
+**Source**: User request (Discord) — graymirror.substack.com/p/a-techno-pessimist-manifesto のwiki取り込み
+
+**Raw article saved**:
+- `raw/articles/graymirror.substack.com--a-techno-pessimist-manifesto.md` — Curtis YarvinによるMarc Andreessen「Techno-Optimist Manifesto」への反論。二つの曲線（技術上昇・秩序下降）、ヨハネスブルグ・プロトコル、資源呪いのアナロジー、ゼロ限界生産物人間問題、トロツキー・ニーチェ・ウィリアム・ジェームズ・E.M.フォースターとの思想的系譜。
+
+**Pages created**:
+- `concepts/techno-pessimism.md` — 新規概念ページ。テクノ楽観主義との対比表、AIへの示唆（「AI万能解決」への疑問、ゼロ限界生産物人間、アクセラレーショニズム=革命的ユートピアニズム、秩序問題は技術で解決不能）を含む。
+
+## [2026-05-08] Predictive $\\mathcal{V}$-Information 概念ページ作成 — Xu et al. ICLR 2020
 
 **Source**: User request (Discord) — arxiv.org/abs/2002.10689 のwiki取り込み
 

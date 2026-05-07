@@ -511,4 +511,8 @@
 
 ## Intent-Based-Engineering.Md
 
-- [[concepts/intent-based-engineering]] — AI開発における新たなボトルネック「articulation gap（表明のギャップ）」を特定した概念。エンジニアリングが「どう作るか」から「良い状態をどう記述するか」へ移行することを示す。Daniel Miessler提唱。   501|
+- [[concepts/intent-based-engineering]] — AI開発における新たなボトルネック「articulation gap（表明のギャップ）」を特定した概念。エンジニアリングが「どう作るか」から「良い状態をどう記述するか」へ移行することを示す。Daniel Miessler提唱。
+
+## Philosophy & Critique
+
+- [[concepts/techno-pessimism]] — Curtis Yarvinによるテクノ悲観主義マニフェスト。Marc Andreessenの「Techno-Optimist Manifesto」への反論。技術の加速は文明の衰退の治療薬ではなく原因であると主張。テクノロジーの上昇曲線と人間の精神（thymos）の下降曲線が乖離する「二つの曲線」が核心。
