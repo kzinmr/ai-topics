@@ -1,3 +1,17 @@
+## [2026-05-08] DeepSeek-V3 Technical Report 論文取り込み — arXiv:2412.19437
+
+**Source**: User request (Discord) — マイルストーン的位置付け論文。DeepSeek-V3: 671B MoEモデル、GPT-4o級性能を$5.576Mで達成。
+
+**Raw paper saved**:
+- `raw/papers/2024-12-27_2412.19437_deepseek-v3-technical-report.md` — DeepSeek-AI (200+ authors)。MLA、Auxiliary-Loss-Free Load Balancing、Multi-Token Prediction、FP8混合精度訓練（671Bスケール初検証）、DualPipe。14.8Tトークン、2.788M H800 GPU時間、訓練中ロールバックゼロ。
+
+**Pages created**:
+- `concepts/deepseek-v3.md` — 包括的概念ページ。アーキテクチャ（MLA, DeepSeekMoE, MTP, Auxiliary-Loss-Free Load Balancing）、訓練（FP8, DualPipe, $5.576Mコスト内訳）、ベンチマーク（MMLU 88.5, MATH-500 90.2）、ポストトレーニング（R1蒸留, GRPO, YaRN 128K）、歴史的意義（6つの革新ポイント）、ハードウェア設計提言。13個のwikilink。
+
+**Pages updated**:
+- `entities/deepseek.md` — Earlier ModelsセクションにDeepSeek V3の記述を追加（671B/37B active, マイルストーン論文として位置付け）。フロントマターのsourcesとupdated日付を更新。
+
+**Index/log**: index.mdのConceptsセクションにdeepseek-v3を追加。総ページ数: 5172→5173、Full entries: 4626→4627、Concepts: 437→438。
 ## [2026-05-08] 「Techno-Pessimism」概念ページ作成 — Curtis Yarvinのテクノ悲観主義マニフェスト
 
 **Source**: User request (Discord) — graymirror.substack.com/p/a-techno-pessimist-manifesto のwiki取り込み

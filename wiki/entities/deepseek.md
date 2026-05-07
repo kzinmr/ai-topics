@@ -1,7 +1,7 @@
 ---
 title: DeepSeek
 created: 2026-04-26
-updated: 2026-05-03
+updated: 2026-05-08
 type: entity
 tags: [company, open-source, model, inference, training, benchmark]
 sources:
@@ -9,6 +9,7 @@ sources:
   - raw/articles/simonwillison.net--2026-apr-24-deepseek-v4--d443e33a.md
   - raw/newsletters/2026-05-02-nvidia-blackwell-vs-huawei-ascend.md
   - raw/articles/2026-05-01_nist-caisi-deepseek-v4-evaluation.md
+  - raw/papers/2024-12-27_2412.19437_deepseek-v3-technical-report.md
 ---
 
 # DeepSeek
@@ -56,8 +57,9 @@ DeepSeek V4 is confirmed to run on **Huawei Ascend 950** chips for inference and
 
 ### Earlier Models
 
-- **DeepSeek V3.2 / V3.2 Speciale** (December 2025) — 685B params, predecessor to V4
-- **DeepSeek R1** — Reasoning-focused variant
+- **[[concepts/deepseek-v3|DeepSeek V3]]** (December 2024) — 671B total / 37B active params, MoE. Landmark technical report (arXiv:2412.19437): first FP8 training at 671B scale, auxiliary-loss-free load balancing, multi-token prediction, DualPipe. Trained on 14.8T tokens for $5.576M (2.788M H800 GPU hours). Achieved GPT-4o-class performance at <1/20th the training cost. MIT license.
+- **[[concepts/deepseek-v3-2|DeepSeek V3.2 / V3.2 Speciale]]** (December 2025) — 685B params, evolved from V3
+- **[[deepseek-r1|DeepSeek R1]]** — Reasoning-focused variant; reasoning patterns distilled into V3
 
 ## Strategy
 
