@@ -1,3 +1,40 @@
+## [2026-05-07] Hermes Agent vs OpenClaw アーキテクチャ比較ページ作成
+
+**Source**: User request (Discord) — raw/articles/2026-05-07_chatgpt-hermes-vs-openclaw-comparison.md のwiki取り込み
+
+**Raw article referenced**:
+- `raw/articles/2026-05-07_chatgpt-hermes-vs-openclaw-comparison.md` — Hermes Agentアーキテクチャ詳細分析（ChatGPT deep dive）
+- `raw/articles/2026-05-07_chatgpt-openclaw-architecture-deep-dive.md` — OpenClawアーキテクチャ詳細分析（ChatGPT deep dive）
+
+**Pages created**:
+- `concepts/hermes-vs-openclaw.md` — 包括的比較ページ（205行）。9セクション：概要（能力蓄積 vs スコープ制御）、コア設計哲学（Rails vs Linux/Kubernetes）、アーキテクチャ比較表（17次元）、スキルシステム詳細比較（自己生成・増殖 vs 索引注入・許可リスト + トレードオフ表）、スキル爆発問題（4つの解決策）、プロンプトアーキテクチャ（stable prefix vs platform-owned）、キーインサイト（Rails vs Linux）、相互学習（各5項目）、総括比較表（10軸レーティング）。7個のwikilink。
+
+**Index/log**: index.mdのConceptsセクションにhermes-vs-openclaw追加。総ページ数: 5178→5179、Full entries: 4632→4633、Concepts: 443→444。
+
+## [2026-05-07] Hermes Agentアーキテクチャ概念ページ作成 — ChatGPT deep dive記事から
+
+**Source**: User request (Discord) — raw/articles/2026-05-07_chatgpt-hermes-agent-architecture-deep-dive.md のwiki取り込み
+
+**Raw article referenced**:
+- `raw/articles/2026-05-07_chatgpt-hermes-agent-architecture-deep-dive.md` — Hermes Agentアーキテクチャの詳細分析。AIAgent中心設計、3つのAPI実行モード、キャッシュ対応プロンプトアセンブリ、SQLite+FTS5永続状態、自己登録型ツールレジストリ、subagent delegation vs execute_code、14+プラットフォームGateway、共有プロバイダランタイム、拡張モデル。agent-core-first vs gateway-firstの比較分析を含む。
+
+**Pages created**:
+- `concepts/hermes-agent-architecture.md` — 包括的概念ページ（278行）。全14セクション：Overview（AIAgent中心）、Core Architecture（中心核+3実行モード）、Agent Loop（ターンライフサイクル・割り込み・並列性）、Prompt Assembly（キャッシュ/セッション固定/エフェメラルの3層）、Persistent State（SQLite+FTS5+JSONL+bounded memory）、Tool Runtime（自己登録レジストリ+承認フロー）、Subagent Delegation vs execute_code（2つの実行プリミティブ）、Gateway Layer（14+プラットフォーム+2レベルガード）、Provider Runtime（共有リゾルバ+フォールバック）、Extension Model（プラグイン/フック/プロバイダ）、Key Architectural Characteristics（4特性）、Trade-offs（複雑性/memory/skill explosion）、Code Reading Order（10段階）、References。10個のwikilink。
+
+**Index/log**: index.mdのConceptsセクションにhermes-agent-architecture追加。総ページ数: 5177→5178、Full entries: 4631→4632、Concepts: 442→443。
+
+## [2026-05-07] OpenClawアーキテクチャ概念ページ作成 — ChatGPT deep dive記事から
+
+**Source**: User request (Discord) — raw/articles/2026-05-07_chatgpt-openclaw-architecture-deep-dive.md のwiki取り込み
+
+**Raw article referenced**:
+- `raw/articles/2026-05-07_chatgpt-openclaw-architecture-deep-dive.md` — OpenClaw内部アーキテクチャの詳細分析。Gateway-first設計、WS制御面、埋め込みagent runtime、セッション管理、sandbox分離、ノード、キューイング、サブエージェント、プラグインシステム、スキル索引注入、単一trust boundaryモデル。
+
+**Pages created**:
+- `concepts/openclaw-architecture.md` — 包括的概念ページ（~300行）。全17セクション：概要（Gateway-first）、全体アーキテクチャ、Gateway中核、WebSocketプロトコル、埋め込みagent runtime、エージェントループ、セッション管理（二層永続化）、ワークスペース（prompt注入）、システムプロンプト（OpenClaw-owned + sub-agent minimal mode）、ツール実行（Sandbox/Tool Policy/Elevatedの3軸分離）、ノード（capability surface + pairing）、キューイング（session/global lane + queue mode）、サブエージェント（background run + session tree）、プラグインシステム（4層 + capability register API）、スキル（索引注入パターン）、セキュリティ（単一trust boundary）、まとめ。5個のwikilink。
+
+**Index/log**: index.mdのConceptsセクションにopenclaw-architecture追加。総ページ数: 5176→5177、Full entries: 4630→4631、Concepts: 441→442。
+
 ## [2026-05-08] HN DeepSeek-V4 議論から重要知見を抽出してwikiに統合
 
 **Source**: User request (Discord) — news.ycombinator.com/item?id=47884971 の重要な議論のみ抽出。
