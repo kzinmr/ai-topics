@@ -478,6 +478,7 @@
 - [[concepts/grpo]] — Group Relative Policy Optimization: DeepSeek-R1で導入されたRLアルゴリズム。PPOのクリティックモデルを不要にし、大規模モデルのRL訓練の計算ボトルネックを解消。グループ内相対比較でアドバンテージ推定。
 - [[concepts/llm-creative-writing]] — Gwern Branwen's methodology for high-quality LLM creative writing and style personalization. Anti-Examples prompting trick, Manual of Style (MoS) Extraction, meta-learning/personalization, atomic snippets, seriation. Core philosophy: intensive search + personalization, not first-draft generation.
 - [[concepts/linguistic-vertigo]] — QC (Qiaochu Yuan) によるLLM時代の言語的真正性喪失の認知現象。言語的めまい（linguistic vertigo）、頭の言葉 vs 身体の言葉、LLMをトレーサー色素とする社会診断、RLHFの社会的影へのマッピング。Gwernによるプロンプト視覚（unseeing / prompt-vision）の補遺を含む。
+- [[concepts/mcp]] — Model Context Protocol: Anthropicが開発したAIエージェント⇄ツール間のオープン標準（"USB-C for AI"）。MCP Apps（インタラクティブUI拡張）を含む。OpenAI/Google/Microsoft/Red Hatが採用。セキュリティ課題と2026年ロードマップ。
 - [[concepts/mit-encompass]] — MIT CSAIL framework for AI agent search with automatic backtracking and parallel cloning, 15-40% accuracy boost.
    466|- [[concepts/recursive-self-improvement]] — AI systems autonomously designing and training successor models. Jack Clark's 60% probability by end 2028. Compounding alignment risk, SWE-Bench 93.9% evidence.
    467|- [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.

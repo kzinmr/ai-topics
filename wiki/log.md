@@ -1,3 +1,13 @@
+## [2026-05-07] Claude Blog「Interactive Connectors and MCP Apps」記事取り込み
+
+**Action**: kzinmrからのリクエストにより、`https://claude.com/blog/interactive-tools-in-claude` の取り込み状態を確認。未取り込みだったため、raw article保存＋既存MCP概念ページにMCP Appsセクションを追加。
+
+**New raw articles saved**:
+- `raw/articles/2026-01-26_anthropic-interactive-tools-claude.md` — Anthropic公式ブログ。MCP Apps（インタラクティブUI拡張）の発表。10のローンチパートナー（Amplitude, Asana, Box, Canva, Clay, Figma, Hex, monday.com, Slack, Salesforce）に対応。
+
+**Pages enriched**:
+- `concepts/mcp.md` — 「MCP Apps (Interactive UI Extension)」セクションを新設。キーコンセプト、ローンチパートナー一覧表、エコシステム採用状況、競合標準（MCP-UI, OpenAI Apps SDK, Google A2UI）との比較を追加。tags・sources・related conceptsを更新。
+
 ## [2026-05-07] Anthropic「Demystifying Evals for AI Agents」記事取り込み
 
 **Action**: kzinmrからのリクエストにより、Anthropic Engineering Blogの「Demystifying Evals for AI Agents」記事の取り込み状態を確認し、未保存のraw articleを保存、既存ページを強化。
