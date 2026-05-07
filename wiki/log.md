@@ -102,3 +102,21 @@
 - `entities/addy-osmani.md` — 「The 70% Problem」セクションを新設。O'Reilly記事で大衆化された概念として位置づけ、AI vs 人間の役割比較表を含む。
 
 **Index/log**: index.mdにentities/tim-oreilly追加。総ページ数: 5188→5189、Full entries: 4639→4640。
+
+## [2026-05-08] QC (Qiaochu Yuan) Wiki取り込み — Societal Shadow + Re-encountering Language
+
+**Action**: kzinmrからのリクエストにより、Qiaochu Yuanの2本のエッセイ（Core dump, Re-encountering Language）を統合的にwikiに取り込み。QCの理論（Core dump 2024）とその経験的基盤（Re-encountering Language 2023）を体系的に紐付け。
+
+**New raw articles saved**:
+- `raw/articles/2023-03-13_qchu-re-encountering-language.md` — QCの身体の言葉への最初のアクセス体験。2024年のCore dump理論の1年半前の自伝的基盤。詩への覚醒、feral selfの解放、社会の氷の下の地下河川。
+
+**New entity page created**:
+- `entities/qiaochu-yuan.md` — Mathematician, ex-MIRI researcher, Thicket Forte Substack著者。言語的めまい・head/body words・societal shadowの提唱者。知的系譜（Johnstone, Gendlin, Circling, Gwern, Jung, Bataille）をマッピング。Core dumpとRe-encountering Languageを二部構成として統合。
+
+**New concept page created**:
+- `concepts/societal-shadow.md` — RLHF禁止リストが社会の抑圧領域を可視化する逆説現象。知的系譜（Jungの影→Batailleの侵犯→Foucaultの権力→Kristevaのアブジェクシオン）を体系的にマッピング。技術的対応物（HH-RLHF Dataset, OpenAI Usage Policies, GPT-4 System Card）との接続。関連現象（Waluigi Effect, Sycophancy, Mode Collapse）。「Re-encountering Language」との経験的基盤の関係も包含。
+
+**Pages enriched**:
+- `concepts/linguistic-vertigo.md` — 「経験的前提：Re-encountering Languageと身体の言葉の発見」セクションを新設。理論 vs 経験の二部構成比較表。社会の影セクションに[[concepts/societal-shadow]]へのクロスリファレンスを追加。関連ページ・出典にqiaochu-yuanエンティティとsocietal-shadow概念を追加。
+
+**Index/log**: index.mdにentities/qiaochu-yuan、concepts/societal-shadowを追加。linguistic-vertigoエントリを更新（societal-shadow/Raw Articleクロスリファレンス）。総ページ数: 5195→5198、Entities: 405→406、Concepts: 446→447。

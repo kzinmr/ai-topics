@@ -2,9 +2,9 @@
      2|
      3|> Content catalog. Every wiki page listed under its type with a one-line summary.
      4|> Read this first to find relevant pages for any query.
-> Last updated: 2026-05-07 | Total pages: 5195 | Full entries: 4646 | Stubs: 546 |
+> Last updated: 2026-05-08 | Total pages: 5198 | Full entries: 4648 | Stubs: 546 |
      6|
-     7|## Entities (405 pages)
+     7|## Entities (406 pages)
      8|
      9|- [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
     10|- [[entities/hugo-bowne]] — Hugo Bowne-Anderson — Data scientist and AI privacy engineering writer. Co-author of "15 Privacy Questions Every AI Builder is Asking" with Katharine Jarmul.
@@ -447,8 +447,9 @@
    439|- [[entities/omar-khattab/publications]] — Omar Khattab academic publications
    440|- [[entities/omar-khattab/quotes]] — Omar Khattab notable quotes
    441|- [[entities/omar-khattab/research-trajectory]] — Omar Khattab research trajectory and career
-   442|- [[entities/omar-khattab/rlm]] — Omar Khattab — RLM recursive language models
-   443|- [[entities/quarq-labs]] — Quarq Labs — AI research and development lab
+|- [[entities/omar-khattab/rlm]] — Omar Khattab — RLM recursive language models
+|- [[entities/qiaochu-yuan]] — QC (Qiaochu Yuan) — Mathematician, ex-MIRI researcher, writer of Thicket Forte Substack. Introduced linguistic vertigo, head/body words, and societal shadow concepts in LLM criticism.
+|   443|- [[entities/quarq-labs]] — Quarq Labs — AI research and development lab
    444|- [[entities/ryan-lopopolo--core-ideas]] — Ryan Lopopolo (@_lopopolo) core ideas on AI engineering
    445|- [[entities/ryan-lopopolo--timeline]] — Ryan Lopopolo career timeline
    446|- [[entities/xai]] — AI company founded by Elon Musk (2023). Creator of Grok LLMs and Grok Computer desktop agent. Acquired by SpaceX in Feb 2026 ($1.25T combined valuation).
@@ -462,7 +463,7 @@
    454|   8|- [[entities/vercel]] — Vercel — Frontend cloud platform (Next.js). Released deepsec open-source security harness using coding agents for vulnerability discovery and remediation (May 2026).
    455|   9|- [[entities/radixark]] — RadixArk — AI inference infrastructure startup. $100M seed (May 2026), built on SGLang inference + Miles (large-scale RL).
    456|  10|- [[entities/perplexity]] — Perplexity — AI search platform expanding into vertical products: Professional Finance Computer (35 analyst workflows), NEJM/BMJ premium medical access.
-## Concepts (446 pages)
+## Concepts (447 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/altman-three-observations]] — Altman's Three Observations: 対数スケーリング（intelligence ≈ log(resources)）、超デフレコスト（10x/年）、超指数関数的価値の3つの経済観察枠組み。GPT-4→GPT-4oで150xのコスト低下、2035年ビジョン、AIエージェント経済学。
@@ -482,7 +483,7 @@
 |- [[concepts/grpo]] — Group Relative Policy Optimization: DeepSeek-R1で導入されたRLアルゴリズム。PPOのクリティックモデルを不要にし、大規模モデルのRL訓練の計算ボトルネックを解消。グループ内相対比較でアドバンテージ推定。
 |- [[concepts/poor-mans-continuous-learning]] — Poor Man's Continuous Learning: LLMエージェントがモデル重みを更新せずに、成功した出力・ユーザーの修正・ドメイン知識を外部ナレッジベースに蓄積して改善する設計パターン。Text-to-SQL文脈でAshpreet Bediが提唱。BQ Golden Queries、dbt Semantic Layer、LPE-SQLと同種のアプローチ。
 |- [[concepts/llm-creative-writing]]
-- [[concepts/linguistic-vertigo]] — QC (Qiaochu Yuan) によるLLM時代の言語的真正性喪失の認知現象。言語的めまい（linguistic vertigo）、頭の言葉 vs 身体の言葉、LLMをトレーサー色素とする社会診断、RLHFの社会的影へのマッピング。Gwernによるプロンプト視覚（unseeing / prompt-vision）の補遺を含む。
+|- [[concepts/linguistic-vertigo]] — QC (Qiaochu Yuan) によるLLM時代の言語的真正性喪失の認知現象。言語的めまい（linguistic vertigo）、頭の言葉 vs 身体の言葉、LLMをトレーサー色素とする社会診断、RLHFの社会的影（→ [[concepts/societal-shadow]]）。Gwernによるプロンプト視覚（unseeing / prompt-vision）の補遺を含む。体験的前提は[[raw/articles/2023-03-13_qchu-re-encountering-language.md]]。
 - [[concepts/mcp]] — Model Context Protocol: Anthropicが開発したAIエージェント⇄ツール間のオープン標準（"USB-C for AI"）。MCP Apps（インタラクティブUI拡張）を含む。OpenAI/Google/Microsoft/Red Hatが採用。セキュリティ課題と2026年ロードマップ。
 - [[concepts/moltbook-breach-2026]] — **Moltbook Breach 2026（77万エージェント同時侵害事件）** — 史上初の産業規模AIエージェントセキュリティインシデント。Supabase RLS無効により77万エージェントのAPIトークン（150万件）が露出。CVE-2026-25253（One-Click RCE）、ClawHavocキャンペーン（341悪意スキル）と同時期に発生。致死的三要素（Lethal Trifecta）の現実検証。
 - [[concepts/mit-encompass]] — MIT CSAIL framework for AI agent search with automatic backtracking and parallel cloning, 15-40% accuracy boost.
@@ -532,7 +533,8 @@
    498|- [[concepts/agent-team-swarm/managed-devins]] — Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.2.
    499|- [[concepts/agent-architecture-decomposition]] — Three-layer framework for production AI agents: Open Models (intelligence), Open Runtime (execution environment), Open Harness (orchestration). Covers Agent on bash vs Agent on Python REPL (RLM, Pydantic AI), Micro-VM interpreters (Pydantic Monty), and MCP as universal adapter for heterogeneous agents.
    500|- [[concepts/agentic-ai-skills]] — Agentic AI Skills Design is the discipline of writing reusable documents that teach AI systems how to approach entire categories of tasks — not what to do in one specific situation, but the process...
-   501|- [[concepts/scaling-hypothesis]] — Gwern Branwen's formalization of the theory that scale alone drives AI capability emergence. Contrasts strong scaling hypothesis (OpenAI) vs weak scaling hypothesis (DeepMind). Covers blessings of scale, emergent agency ("It From Byte"), the pretraining thesis/last bits theory, and the hardware overhang argument.
-- [[concepts/workspace-bench]] — Workspace-Bench 1.0: マルチファイル依存関係を評価する大規模エージェントベンチマーク（OpenDataBox）。5職種プロファイル、74ファイル種別、20,476ファイル（最大20GB）、388タスク。Best AI 68.7%（OpenClaw+Opus 4.7）vs Human 80.7%。5段階進化モデル（L0-L4）、Agent-as-a-Judge評価フレームワーク。
+|   501|- [[concepts/scaling-hypothesis]] — Gwern Branwen's formalization of the theory that scale alone drives AI capability emergence. Contrasts strong scaling hypothesis (OpenAI) vs weak scaling hypothesis (DeepMind). Covers blessings of scale, emergent agency ("It From Byte"), the pretraining thesis/last bits theory, and the hardware overhang argument.
+|- [[concepts/societal-shadow]] — QC (Qiaochu Yuan)が提唱した概念。RLHFがLLMに語らせないための禁止リストが逆説的に社会の影（性的・暴力的・非常識なもの全て）をカタログ化した皮肉な現象。Jungの影、Batailleの侵犯論、Foucaultの権力論と接続。
+|- [[concepts/workspace-bench]] — Workspace-Bench 1.0: マルチファイル依存関係を評価する大規模エージェントベンチマーク（OpenDataBox）。5職種プロファイル、74ファイル種別、20,476ファイル（最大20GB）、388タスク。Best AI 68.7%（OpenClaw+Opus 4.7）vs Human 80.7%。5段階進化モデル（L0-L4）、Agent-as-a-Judge評価フレームワーク。
 - [[concepts/unbundled-agents]] — Viv Trivedy's architectural pattern: specialist subagents exposed as Tools within a harness, making the harness a configurable box populated per task.
    502|- [[concepts/transformer-architecture]] — The Transformer architecture, derived via pedagogical "discovery fiction" from n-grams to QKV self-attention. Self-attention as multiplicative interactions with direct access. Logical progression through embeddings, convolutions, MLP-Mixers, to modern Transformers. Emergence at scale (induction heads, ICL). [[raw/articles/2025-05-25_gwern-invented-transformers.md|Source: Gwern 2025]].
