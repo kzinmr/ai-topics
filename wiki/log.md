@@ -1,3 +1,13 @@
+## [2026-05-08] HN DeepSeek-V4 議論から重要知見を抽出してwikiに統合
+
+**Source**: User request (Discord) — news.ycombinator.com/item?id=47884971 の重要な議論のみ抽出。
+
+**Raw article saved**:
+- `raw/articles/2026-05-08_hn-deepseek-v4-discussion.md` — HNコミュニティ議論の合成。SWE-bench 80.6%、ローカル推論（Flash on Mac Studio M3 Ultra）、地政学的分析（検閲/hard refusal/制裁/欧州オプション）、開発者体験。
+
+**Pages updated**:
+- `concepts/deepseek-v4.md` — **Community Reception & Independent Benchmarks (HN)** セクション新設（V3進化サマリーと歴史的意義の間）。コミュニティベンチマーク表（SWE-bench 80.6%、PhD数学、システム設計、カスタマーサポート）、ローカル推論（Flash 154GB→Mac Studio）、開発者体験表、地政学的側面（検閲/hard refusal/ダンピング/制裁/欧州オプション）。歴史的意義に7番目の項目（SWE-bench 80.6%）を追加。フロントマターにHN source追加。
+- `entities/deepseek.md` — V4 key factsにSWE-bench 80.6%とローカル推論情報を追加。
 ## [2026-05-08] DeepSeek-V4 Technical Report 論文取り込み（HuggingFace公開）
 
 **Source**: User request (Discord) — DeepSeek-V4: million-token context intelligence。HuggingFace deepseek-ai/DeepSeek-V4-Pro より。

@@ -6,6 +6,7 @@ type: concept
 tags: [model, mixture-of-experts, long-context, hybrid-attention, fp4, speculative-decoding, agent, training, benchmark, deepseek]
 sources:
   - raw/papers/2026-04-xx_deepseek-v4-technical-report.md
+  - raw/articles/2026-05-08_hn-deepseek-v4-discussion.md
   - https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf
 ---
 
@@ -185,6 +186,43 @@ FP4はFP8のさらに半分のビット幅。ただし活性化はFP8/BF16を維
 | **エージェント** | — | Interleaved Thinking, Quick Instruction |
 | **コード** | Codeforces 1134 | **Codeforces 3206** |
 
+## Community Reception & Independent Benchmarks (HN)
+
+Hacker NewsでのV4公開議論 ([thread](https://news.ycombinator.com/item?id=47884971)) から抽出された重要知見：
+
+### コミュニティベンチマーク
+
+| Benchmark | V4-Pro-Max | 文脈 |
+|-----------|-----------|------|
+| **SWE-bench Verified** | **80.6%** | 初のオープンウェイトモデルで80%超え |
+| PhD-level数学 | 高評価 | 確率論・統計・ランダム行列理論でGeminiより厳密な証明 |
+| システム設計・リファクタリング | Claude 3.5 Opusに匹敵 | — |
+| カスタマーサポート (Flash) | Gemini-3-Flash同等以上 | Qwen 3.5超え、かつ安価 |
+| ホワイトカラータスク | V4-Pro ≥ Claude 3.5 Sonnet | ただしOpus 4.6 (Thinking有効) には及ばず |
+
+### ローカル推論
+
+- **V4-Flash**: ネイティブ重み ~154GB → **Mac Studio M3 Ultra (512GB RAM)** で実行可能
+- **V4-Pro**: フル精度 ~800GB、大規模量子化 ~400GB+ → データセンター級VRAMが必要
+- MITライセンス、オープンウェイト → 制限なしの自由な展開が可能
+
+### 開発者体験
+
+| 項目 | 評価 |
+|------|------|
+| ドキュメント | 「no-BS」と高評価 |
+| エージェント統合 | Aider, Claude Code, Zedで動作 |
+| API制限 | JSON Schema・Batch API未対応 |
+| 安定性 | ローンチ時に「429 Overload」多発 |
+
+### 地政学的側面
+
+- **検閲**: 中国ホストAPIは政治的トピック（天安門事件、台湾など）で検閲。ただし**ローカル版・量子化版では制限回避可能**との報告
+- **「hard refusal」選好**: 一部ユーザーは中国モデルの「明確な拒否」を、西洋モデルの「説教臭い回避（moralizing/white-washing）」より好む
+- **ダンピング戦略**: 市場シェア獲得のための超低価格戦略と分析する声
+- **制裁の実効性への疑問**: 米国の半導体輸出規制下でもフロンティア級AIの構築が可能であることを実証
+- **「欧州オプション」**: Mistral・Kyutaiが低コスト中国モデルと高性能米国モデルの狭間で板挟み
+
 ## 歴史的意義
 
 DeepSeek-V4は以下の点でマイルストーン的成果：
@@ -195,6 +233,7 @@ DeepSeek-V4は以下の点でマイルストーン的成果：
 4. **MegaMoE + TileLang**: ハードウェア限界を克服するシステムソフトウェア革新
 5. **On-Policy Distillation**: 複数専門家の全ロジット分布から学習する新しい蒸留パラダイム
 6. **Agent-Native Design**: Interleaved Thinking、Quick Instruction — 最初からエージェント用途を想定した初のDeepSeekモデル
+7. **SWE-bench 80.6%**: オープンウェイトモデルとして初めて80%の壁を突破。コーディングエージェント性能の民主化における画期的到達点
 
 ## 関連項目
 

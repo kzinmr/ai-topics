@@ -74,7 +74,9 @@ DeepSeek-V4  (Apr 2026)           フロンティア規模
 - **Codeforces 3206** rating（V4-Pro-Max）— 人間23位相当
 - White-collar tasks: 63% non-loss rate vs Claude Opus 4.6
 - Agent-native: Interleaved Thinking（ツール呼び出し境界を越える推論保持）、Quick Instruction
+- **SWE-bench Verified: 80.6%** — オープンウェイトモデルとして初の80%超え
 - Trained on 32T+ tokens with Anticipatory Routing + SwiGLU Clamping for stability
+- **Local inference**: V4-Flash (~154GB) runs on Mac Studio M3 Ultra (512GB); V4-Pro (~800GB) requires data center VRAM
 
 ### Pricing (per million tokens)
 
