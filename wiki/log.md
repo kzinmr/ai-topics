@@ -32,6 +32,16 @@
 
 **Index/log**: entities/kiloをKセクションに追加。ページ数5183→5184、Full entries 4637→4638。
 
+## [2026-05-07] comparisons/coding-agent-harnesses.md を concepts/agent-harness-comparison.md に統合
+
+**Action**: kzinmrからの指示により、2ページのハーネス比較を統合。
+
+**Merged**:
+- `concepts/agent-harness-comparison.md` — 統合後の単一正規ページ（19.8KB、12セクション）。旧ページの以下を移植：Codex CLI Deep Dive（Section 5）、モデル中心の互換性ビュー（Section 3）、詳細アーキテクチャ比較（Section 2）、Anthropic Wall分析（Section 7）、決定フレームワーク（Section 8）、主観的まとめ（Section 9）。
+- `comparisons/coding-agent-harnesses.md` — リダイレクトページに変更（→ concepts/agent-harness-comparison）。全内容は統合先に保持。
+- `wiki/index.md` — `comparisons/coding-agent-harnesses` エントリ更新（リダイレクト反映）
+- `wiki/log.md` — 本エントリ追加
+
 **Action**: concepts/hermes-vs-openclaw.md を削除（comparisons/hermes-vs-openclaw-architecture.md と concepts/openclaw/architecture-comparison.md が2026-04-18に既存）
 **Merged**: 新規の建築的深掘り分析を comparisons/hermes-vs-openclaw-architecture.md に追加（Architecture Deep-Diveセクション）
 **Kept**: concepts/hermes-agent-architecture.md と concepts/openclaw-architecture.md（単体アーキテクチャ詳細は新規価値あり）

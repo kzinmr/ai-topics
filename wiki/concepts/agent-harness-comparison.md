@@ -15,6 +15,8 @@ aliases:
 sources:
   - https://thoughts.jock.pl/p/ai-coding-harness-agents-2026
   - https://prowe214.medium.com/agentic-coding-harnesses-a-comparison-4db34b87fd5c
+  - https://grigio.org/opencode-vs-pi-which-ai-coding-agent-should-you-use/
+  - https://github.com/disler/pi-vs-claude-code
   - https://github.com/badlogic/pi-mono
   - https://github.com/openai/codex
   - https://github.com/anomalyco/opencode
@@ -28,6 +30,7 @@ sources:
   - https://factory.ai
   - https://opencode.ai
   - https://openai.com/codex/
+  - https://medium.com/superagentic-ai/codex-cli-running-gpt-oss-and-local-coding-models-with-ollama-lm-studio-and-mlx-4b796e39404b
 related:
   - "[[entities/claude-code]]"
   - "[[entities/opencode]]"
@@ -47,6 +50,8 @@ related:
 
 > Complete comparison of the 9 major AI agent harnesses (May 2026): Claude Code, OpenCode, Pi, Codex, Copilot CLI, Droid, Kilo, OpenClaw, Hermes Agent. Features, model compatibility, architecture, pricing, and the Harness Effect.
 
+> **This page is the single canonical comparison.** See [[comparisons/coding-agent-harnesses]] for the archived original.
+
 ---
 
 ## 1. Quick Overview Table
@@ -65,25 +70,35 @@ related:
 
 ---
 
-## 2. Architecture Comparison
+## 2. Detailed Architecture Comparison
 
-| Feature | Claude Code | OpenCode | Pi | Codex | Copilot CLI | Droid | Kilo | OpenClaw | Hermes Agent |
-|---------|-------------|----------|----|-------|-------------|-------|------|----------|--------------|
+| Dimension | Claude Code | OpenCode | Pi | Codex | Copilot CLI | Droid | Kilo | OpenClaw | Hermes Agent |
+|-----------|-------------|----------|----|-------|-------------|-------|------|----------|--------------|
+| **Philosophy** | Full orchestrator | Batteries-included OSS | Minimal primitives | Lightweight universal | GitHub-native | Enterprise everywhere | All-in-one platform | Always-on agent | Self-improving agent |
+| **Language** | TypeScript | TypeScript | TypeScript | **Rust** (96.2%) | Unknown | Unknown | TypeScript | TypeScript (Pi-based) | TypeScript/Python |
 | **CLI** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **Desktop App** | ✅ | ✅ | ❌ | ✅ (mac/Win) | ❌ | ✅ | ❌ | ❌ | ❌ |
+| **Desktop App** | ✅ | ✅ (Tauri) | ❌ | ✅ (mac/Win) | ❌ | ✅ | ❌ | ❌ | ❌ |
 | **IDE Extension** | VS Code, JetBrains | VS Code, Zed | ❌ | VS Code, Cursor, Windsurf | ❌ | VS Code, JetBrains, Vim, Zed | **VS Code + JetBrains** | ❌ | ❌ |
 | **Web Interface** | ✅ | ❌ | ❌ | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | **Slack/Teams** | ✅ Slack | ❌ | ✅ Slack | ❌ | ❌ | ✅ Slack/Teams | ❌ | ❌ | ✅ 14+ platforms |
-| **Always-on** | ❌ | ❌ | ✅ (CLI loop) | ❌ | ❌ | ✅ (background agents) | ✅ (KiloClaw) | ✅ (core feature) | ✅ (core feature) |
-| **Sub-agents** | ✅ | ✅ (@general) | ❌ (by design) | ✅ | ✅ (/fleet) | ✅ (specialized Droids) | ✅ (modes) | ❌ | ✅ (delegate_task) |
-| **MCP Support** | ✅ | ✅ | ❌ (extensible) | ✅ | ✅ | ✅ | ✅ (marketplace) | ❌ | ✅ |
+| **Always-on** | ❌ | ❌ | ✅ (CLI loop) | ❌ | ❌ | ✅ (background) | ✅ (KiloClaw) | ✅ (core) | ✅ (core) |
+| **Sub-agents** | ✅ Agent Teams | ✅ (@general) | ❌ (by design) | ✅ (config.toml) | ✅ (/fleet) | ✅ specialized | ✅ modes | ❌ | ✅ delegate_task |
+| **System Prompt** | Several K tokens | ~10K+ tokens | **<1K tokens** | Efficient | Moderate | Unknown | OpenCode legacy | Pi-based | 3-layer assembly |
+| **Core Tools** | Many (+ sub-agents) | build/plan dual | **4** (r/w/edit/bash) | Many (builtin+plugin) | Fleet agents | Specialized Droids | OpenCode based | Pi-based | 50+ tools |
+| **MCP Support** | ✅ | ✅ (built-in) | ✅ (extensible) | **✅ bidirectional** | ✅ | ✅ | ✅ (marketplace) | ❌ | ✅ |
+| **LSP Integration** | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **Multimodal** | ✅ | ✅ | ✅ | **✅ image+gen** | ❌ | ❌ | ✅ | ✅ (vision) | ✅ (vision) |
+| **Web Search** | ✅ Computer Use | ✅ | ❌ (ext.) | ✅ (cache+Livemode) | ❌ | ❌ | ❌ | ✅ | ✅ |
 | **Inline Autocomplete** | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ Tab | ❌ | ❌ |
-| **Cloud Agents** | ❌ | ✅ (limited) | ❌ | ❌ | ✅ (cloud agent) | ✅ | ✅ | ❌ | ❌ |
-| **Code Review** | ✅ Auto-Review | ✅ GitHub | ❌ | ✅ | ✅ | ✅ Droid Action | ✅ Kilo Reviewer | ❌ | ❌ |
+| **Cloud Agents** | ❌ | ✅ (limited) | ❌ | ❌ | ✅ cloud agent | ✅ | ✅ | ❌ | ❌ |
+| **Code Review** | ✅ Auto-Review | ✅ GitHub | ❌ | ✅ /review | ✅ | ✅ Droid Action | ✅ Kilo Reviewer | ❌ | ❌ |
+| **Playground** | ✅ Managed Agents | ❌ | ❌ | ✅ Codex Web | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 ---
 
 ## 3. Model Compatibility Matrix
+
+### Harness → Model View
 
 | Model | Claude Code | OpenCode | Pi | Codex | Copilot CLI | Droid | Kilo | OpenClaw | Hermes Agent |
 |-------|-------------|----------|----|-------|-------------|-------|------|----------|--------------|
@@ -93,17 +108,24 @@ related:
 | **GPT-5.4** | ❌ | ✅ | ✅ | 🥇 Native | ✅ (BYOK) | ✅ | ✅ (Gateway) | ✅ | ✅ |
 | **Gemini 2.5 Pro** | ❌ | ✅ | ✅ | ❌ | ✅ (BYOK) | ✅ | ✅ (Gateway) | ✅ | ✅ |
 | **DeepSeek V4** | ❌ | ✅ (75+ providers) | ✅ | ✅ (custom) | ✅ (BYOK) | ❌ | ✅ (Gateway) | ✅ (Ollama) | ✅ |
-| **Qwen 3.5 Coder 32B** | ❌ | ✅ | **🥇 Best** (local GGUF) | ✅ (Ollama) | ✅ (local) | ❌ | ✅ (Gateway) | ✅ (Ollama) | ✅ (Ollama) |
-| **Local GGUF (7-14B)** | ❌ | ⚠️ (overhead) | **🥇 Best** | ✅ | ✅ | ❌ | ✅ (OpenCode legacy) | ✅ | ✅ |
+| **Qwen 3.5 Coder 32B** | ❌ | ✅ | **🥇 Best** (GGUF) | ✅ (Ollama) | ✅ (local) | ❌ | ✅ (Gateway) | ✅ (Ollama) | ✅ (Ollama) |
+| **Local GGUF (7-14B)** | ❌ | ⚠️ (overhead) | **🥇 Best** | ✅ | ✅ | ❌ | ✅ (legacy) | ✅ | ✅ |
 | **Local Ollama** | ❌ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | 🥇 Native | ✅ |
 
-### Subscription Wall Alert ⚠️
+### Model → Best Harness View
 
-| Provider | Trapped? | Details |
-|----------|----------|---------|
-| **Anthropic Max** | ✅ **YES** | Claude Max subscription NOT usable in third-party harnesses (Pi, OpenCode). Users must pay API rates even with Max. |
-| **ChatGPT Plus/Pro** | ✅ **NO** | OpenAI welcomes third-party use of ChatGPT subscriptions via Codex CLI backdoor. Pi, OpenCode, OpenClaw all supported. |
-| **Copilot** | ✅ **NO** | Copilot CLI BYOK allows any model; local models work offline. |
+| Model | Optimal Harness | Why |
+|-------|----------------|-----|
+| **Claude Opus 4.7** | Cursor (93%) → Claude Code (77%) → Pi/OpenCode (⚠️ double-bill) | Harness effect is largest for Opus. Cursor's prompt engineering extracts maximum value. |
+| **GPT-5.5** | **Codex CLI** (native) → Pi / OpenCode | Codex CLI is designed for GPT-5.5, included in ChatGPT sub. |
+| **GPT-5.3 Codex** | **Codex CLI** (dedicated) | Tuned specifically for Codex CLI workflows. SWE-bench Pro 56.8%. |
+| **GPT-OSS 20B/120B** | **Codex CLI** (`--oss` flag) | Run OpenAI's OSS models locally via Ollama from Codex CLI. |
+| **Gemma 4 26B A4B** | **Pi** (<1K prompt + LM Studio) | Local MoE model. Pi's minimal overhead shines under VRAM constraints. |
+| **DeepSeek V3/V4** | **Codex CLI** (custom provider) → Pi / OpenCode | Best cost-performance. Easy config.toml setup in Codex CLI. |
+| **Qwen 3.5 Coder 32B** | **Pi** (MLX optimal) or **Codex CLI** (LM Studio) | Best open-weight coder for local use. Works on both harnesses. |
+| **Gemini 2.5 series** | **OpenCode** or **Pi** | Google API compatibility is strong with both. |
+| **GLM-5.1** (OSS) | **OpenCode** or **Codex CLI** (custom provider) | SWE-bench Pro 58.4%. OpenCode has easiest integration. |
+| **Small local (7B-14B)** | **Pi** (ultra-light prompt) | OpenCode's 10K prompt overwhelms small models. Pi's <1K is ideal. |
 
 ---
 
@@ -123,20 +145,66 @@ related:
 
 ---
 
-## 5. The Harness Effect (Same Model, Different Results)
+## 5. Codex CLI Deep Dive
 
-| Harness | Claude Opus SWE-bench | Notes |
-|---------|----------------------|-------|
-| Claude Code | 72.7% | Native Anthropic harness |
-| Cursor | 93% | +16pp harness effect over Claude Code |
-| Minimal scaffold | 42% | CORE-Bench (no context engineering) |
-| Claude Code (full) | 78% | CORE-Bench (+36pp over scaffold) |
+Codex CLIに関する情報には誤った認識が多いため、正確な情報をまとめる。
 
-> **Key insight**: The harness itself causes **5-40 percentage point** performance differences for the same model. Pi's minimal overhead helps local/small models; feature-rich harnesses help frontier models.
+### Basic Facts
+| Item | Detail |
+|------|--------|
+| **GitHub** | [github.com/openai/codex](https://github.com/openai/codex) — 79.3K stars, Apache-2.0 |
+| **Install** | `npm i -g @openai/codex` or `brew install --cask codex` |
+| **Language** | Rust (96.2%) + Python (2.8%) + TypeScript (0.3%) |
+| **Subscription** | Included in ChatGPT Plus/Pro/Team/Enterprise (API key also possible) |
+
+### Model Support
+- **OpenAI native:** gpt-5.5 (recommended), gpt-5.4, GPT-5.3-Codex-Spark (Pro only)
+- **OSS local:** `--oss` flag → GPT-OSS-20B / GPT-OSS-120B (via Ollama)
+- **Custom providers:** `config.toml` → `[model_providers]` → DeepSeek, Qwen, Gemma, etc.
+- **Local engines:** Ollama / LM Studio / MLX
+- **Mid-session switch:** `/model` command
+
+### Key Capabilities
+- **SWE-bench Pro:** GPT-5.3 Codex = 56.8%, GPT-5.5 = 58.6%
+- **MCP:** Bidirectional (connect MCP servers + act as MCP server)
+- **Sub-agents:** `[agents]` section in config.toml
+- **Remote TUI:** `codex app-server` + `codex --remote`
+- **Code review:** `/review` (base branch / uncommitted / specific SHA)
+- **Image generation:** `$imagegen` or natural language → gpt-image-2
+- **Session persistence:** Local save, `codex resume` to restore
+- **Permission modes:** Auto / Read-only / Full Access
+
+### Common Misconceptions (Errata)
+
+| Item | ❌ Wrong | ✅ Correct |
+|------|---------|-----------|
+| Model support | GPT-5.4 only | gpt-5.5/gpt-5.4/Codex-Spark + custom + OSS |
+| License | Closed-source | **Apache-2.0 open source** |
+| Language | TypeScript | **Rust** (96.2%) |
+| MCP | Not supported | **Bidirectional** (client + server) |
+| Sub-agents | Not supported | **config.toml configurable** |
+| Pricing | API billing only | **Included in ChatGPT Plus/Pro/Team/Enterprise** |
 
 ---
 
-## 6. Pricing Comparison
+## 6. The Harness Effect (Same Model, Different Results)
+
+| Harness | Claude Opus SWE-bench | Notes |
+|---------|----------------------|-------|
+| Claude Code | 72.7% / 77% | Native Anthropic harness (different benchmarks yield different numbers) |
+| Cursor | **93%** | **+16pp** harness effect over Claude Code |
+| Minimal scaffold | 42% | CORE-Bench (no context engineering) |
+| Claude Code (full) | 78% | CORE-Bench (**+36pp** over minimal scaffold) |
+
+> **Key insight**: The harness itself causes **5-40 percentage point** performance differences for the same model. Pi's minimal overhead helps local/small models; feature-rich harnesses help frontier models. The model alone is meaningless without specifying the harness.
+>
+> Source: Matt Mayer independent tests, CORE-Bench
+
+---
+
+## 7. Pricing & Subscription Wall
+
+### Pricing Comparison
 
 | Harness | Free Tier | Subscription | BYOK | "Double Billing" Risk |
 |---------|-----------|-------------|------|----------------------|
@@ -150,41 +218,97 @@ related:
 | **OpenClaw** | ✅ Free (MIT) | ❌ None | ✅ Yes (BYO model) | ✅ No wall |
 | **Hermes Agent** | ✅ Free (OSS) | ❌ None | ✅ Yes | ✅ No wall |
 
----
+### The Anthropic Wall (Critical)
 
-## 7. Use Case Recommendations
+Anthropicは**PiやOpenCode等のサードパーティハーネスがClaude Maxサブスクリプションクレジットを使うことを許可していない**。Pi/OpenCodeでClaude Opusを使う場合、サブスク＋API従量課金の二重払いになる。
 
-### For Local/Privacy-First Development
-1. **Pi** — Minimal overhead, excellent for local GGUF/MLX models, 4 tools
-2. **Copilot CLI** — BYOK + local models since April 2026, air-gap capable
-3. **OpenCode** — Ollama/LM Studio integration, 75+ providers
+> *「Anthropicがこのポリシーを変えれば、PiはClaudeユーザーにとって第一の選択肢になる。」* — thoughts.jock.pl
 
-### For Enterprise / Team Use
-1. **Droid** — SOC-2, SSO, multi-platform, specialized sub-agents, cost tracking
-2. **Kilo** — Teams plan, centralized billing, SSO, analytics, managed KiloClaw
-3. **Copilot CLI** — GitHub ecosystem integration, sub-agent fleet
-4. **Claude Code** — If already on Anthropic enterprise plan
+### OpenAI Advantage
 
-### For Maximum Model Flexibility
-1. **Kilo** — 500+ models via Kilo Gateway at zero markup + OpenCode provider legacy
-2. **OpenCode** — 75+ LLM providers through Models.dev
-3. **Codex** — config.toml custom providers, local models, Apache-2.0
+OpenAIは**ChatGPT Plus/Pro/Team/EnterpriseサブスクリプションでCodex CLIの全機能が利用可能**。課金は一本化されており、Pi/OpenCodeのような二重取り問題は発生しない。
 
-### For Always-On / Background Agents
-1. **Hermes Agent** — Self-improving, persistent, 14+ platforms
-2. **Kilo** — KiloClaw (hosted OpenClaw, one-click deploy, 5 minutes)
-3. **OpenClaw** — Telegram-based, always-on, self-evolving
-4. **Droid** — Cloud background agents, Linear/Jira auto-trigger
+これが**Codex CLIの最大の競争優位性**：サブスク料金だけでGPT-5.5クラスのエージェントコーディングを使える。
 
-### For Zero-Cost Development
-1. **Pi** — MIT license, no subscription, BYOK only (OpenClaw built on it)
-2. **OpenCode** — MIT license, free tier available
-3. **Codex** — Apache-2.0, included in ChatGPT Free/Go
-4. **Kilo** — Apache-2.0, free tier with pay-as-you-go optional
+### Copilot Flexibility
+
+GitHub Copilot CLIは2026年4月からBYOK+ローカルモデルに対応。Copilotサブスクがなくても使える。GitHub認証もオプション化。
 
 ---
 
-## 8. Community & Ecosystem
+## 8. 決定フレームワーク (Decision Framework)
+
+日本語でのシナリオ別おすすめ。
+
+### 「放置して寝てる間に動かしたい」
+→ **Claude Code**（唯一の「夜通し動かせる」ハーネス）
+- モデル: Claude Opus 4.7 一択
+- Auto Mode + Agent Teams で複数ファイル/複数タスクを並列
+- SWE-bench Verified 72.7%
+
+### 「ChatGPTサブスクに入ってるからそのまま使いたい」
+→ **Codex CLI**（ChatGPT Plus/Proに含まれる）
+- モデル: GPT-5.5（推奨）/ GPT-5.3 Codex
+- 追加費用ゼロ、Rust製で軽量
+- MCP・サブエージェント・リモートTUI・画像生成・Web検索まで網羅
+- `--oss` でローカルモデルにも対応、カスタムプロバイダ設定も可
+
+### 「全部入りのプラットフォームが欲しい」
+→ **Kilo**（OpenCode fork、500+モデル、CLI/IDE/KiloClaw）
+- OpenCodeをベースにVS Code + JetBrains拡張 + Kilo CLI + ホステッドOpenClaw
+- 500+モデルをKilo Gateway経由でゼロマークアップ
+- インライン補完、Cloud Agents、Teams/SSO、コードレビュー
+- Apache-2.0、無料枠あり
+
+### 「いろんなモデルを試したい / 乗り換えたい」
+→ **OpenCode**（75+プロバイダ、155K GitHub Stars）
+- Claude → GPT → Gemini → Qwen → DeepSeek を同一ワークフローで切替
+- LSP統合、Plan/Buildデュアルエージェント
+- 850+ contributors、コミュニティ最大
+
+### 「ローカルモデルで最速」
+→ **Pi**（<1Kシステムプロンプト、MLX/GGUF最適）
+- 同モデルでも2-3倍高速（OpenCode比）
+- Qwen 3.5 Coder 32B / Gemma 4 26B / DeepSeek との相性抜群
+- OpenClawでTelegram常時稼働ボットにもできる
+- RPCモードでサブプロセス埋め込み可能
+
+### 「OSSモデルをOpenAIのCLIで使いたい」
+→ **Codex CLI + `--oss`**（GPT-OSS ローカル実行）
+- `codex --oss` だけでOllama経由GPT-OSSモデル起動
+- LM Studio / MLX 設定もconfig.tomlで簡単
+- カスタムProviderでDeepSeek/Qwen等の設定も可
+
+### 「エンタープライズで使いたい」
+→ **Droid**（SOC-2, SSO, 全方位プラットフォーム）
+- CLI/IDE/Slack/Linear/CI/CD 全て対応
+- 専門Droid（CodeDroid/Review Droid/QA Droid）
+- コスト管理、監査ログ、専用コンピュート
+
+### 「IDEの中で最高品質」
+→ **Cursor + Claude Opus**（スコア93%=業界最高）
+- ただし人間操作前提。無人実行には不向き
+
+### 「24時間動く自律エージェントが欲しい」
+- **Telegram + 常時稼働** → **OpenClaw**（Piベース、145K Stars）
+- **マルチプラットフォーム + Self-improving** → **Hermes Agent**
+- **マネージド + ワンクリックデプロイ** → **KiloClaw**（KiloのホステッドOpenClaw）
+
+---
+
+## 9. 主観的まとめ (Subjective Summary)
+
+1. **モデルよりハーネスが重要** — 同じOpusで77% vs 93%（+16pt）。ハーネス効果は5〜40pt。
+2. **Codex CLIは最も過小評価されている** — オープンソース（Apache-2.0）、ChatGPTサブスク込み、GPT-5.5ネイティブ、MCP双方向、カスタムProvider、OSSローカル実行。事実上「万能ハーネス」。
+3. **Piはローカルの王者** — 最も軽量なシステムプロンプトはローカルモデルで最大の効果を発揮。
+4. **OpenCodeは実験の王者** — 75+プロバイダでモデル比較/乗り換えを容易にする。コミュニティ最大（155K Stars）。
+5. **Claude Codeは無人実行の王者** — Auto Mode + Agent Teamsで唯一の「夜通し動作」可能。
+6. **Kiloは「全部入り」の新星** — OpenCodeのエコシステムを継承しつつ、IDE/CLI/KiloClaw/Teamsを統合。
+7. **Anthropicの壁** — これが崩れればPiがClaudeユーザーの第一選択肢に。
+
+---
+
+## 10. Community & Ecosystem
 
 | Harness | GitHub Stars | Contributors | Release Frequency |
 |---------|-------------|--------------|-------------------|
@@ -192,12 +316,12 @@ related:
 | OpenClaw | 145K+ | Large community | Active |
 | Codex | 79.3K | 6,218+ commits | Daily |
 | Pi | 45.5K | 3,952+ commits | Active |
-| Kilo | N/A (private?) | Active | 381 releases (v7.2.40) |
-| Hermes Agent | N/A (private?) | Nous Research | Active |
+| Kilo | N/A | Active | 381 releases (v7.2.40) |
+| Hermes Agent | N/A | Nous Research | Active |
 
 ---
 
-## 9. Relationship Map
+## 11. Relationship Map
 
 ```
 OpenCode (Anomaly, MIT)
@@ -213,9 +337,9 @@ ChatGPT (OpenAI)
 
 ---
 
-## 10. Related Comparisons
+## 12. Related Comparisons & Pages
 
-- **[[comparisons/coding-agent-harnesses]]** — Earlier comparison page (May 1, 2026) covering 6 harnesses
+- **[[comparisons/coding-agent-harnesses]]** — Original version (archived)
 - **[[concepts/harness-engineering]]** — The broader field of harness engineering
 - **[[concepts/agent-harnesses]]** — The Bitter Lesson applied to agent architecture
 - **[[concepts/bitter-lesson-agent-harnesses]]** — Less abstraction = more performance
