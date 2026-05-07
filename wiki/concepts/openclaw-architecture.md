@@ -24,7 +24,7 @@ sources:
 
 OpenClawのアーキテクチャ的本質は **agent-first ではなく gateway-first** である。単一の長寿命Gatewayを中心に、チャネル接続・セッション管理・WebSocket制御面・エージェント実行・ツール実行・ノード管理・UIを束ねる **assistant control plane** として設計されている。READMEもGatewayをcontrol planeと位置づけ、アーキテクチャドキュメントも「1つのGatewayが全messaging surfaceを所有する」と明言している。
 
-複数のフロントエンド（WhatsApp・Telegram・Slack・Discord・Signal・iMessage・WebChat）を持ちながらも、内部では **一つのcontrol planeが会話・配信・状態を統治する** モデルである。これは [[concepts/hermes-agent-architecture]] のようなagent-first設計とは根本的に異なる設計思想であり、詳細は [[concepts/hermes-vs-openclaw]] を参照。
+複数のフロントエンド（WhatsApp・Telegram・Slack・Discord・Signal・iMessage・WebChat）を持ちながらも、内部では **一つのcontrol planeが会話・配信・状態を統治する** モデルである。これは [[concepts/hermes-agent-architecture]] のようなagent-first設計とは根本的に異なる設計思想であり、詳細は [[comparisons/hermes-vs-openclaw-architecture]] を参照。
 
 ---
 
@@ -331,7 +331,10 @@ OpenClawのアーキテクチャを一言で言い切るなら：
 ### 関連ページ
 
 - [[concepts/hermes-agent-architecture]] — Hermes Agentの対照的アーキテクチャ（agent-first設計）
-- [[concepts/hermes-vs-openclaw]] — agent-first vs gateway-firstの設計思想比較
+- [[comparisons/hermes-vs-openclaw-architecture]] — agent-first vs gateway-firstの設計思想比較
+- [[concepts/openclaw/_index]] — OpenClaw コンセプトクラスターインデックス
+- [[concepts/openclaw/philosophy]] — OpenClaw 設計哲学
+- [[concepts/openclaw/five-tier-precedence]] — OpenClaw 5層優先順位モデル
 - [[entities/openclaw]] — OpenClawプロジェクト概要
 - [[entities/peter-steinberger]] — OpenClaw作者
 - [[entities/nvidia-nemoclaw]] — OpenClawをバンドルしたNVIDIAのセキュアエージェントフレームワーク

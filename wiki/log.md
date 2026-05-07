@@ -1,3 +1,10 @@
+## [2026-05-07] Hermes vs OpenClaw 重複解消 — アーキテクチャ分析の既存ページと統合
+
+**Action**: concepts/hermes-vs-openclaw.md を削除（comparisons/hermes-vs-openclaw-architecture.md と concepts/openclaw/architecture-comparison.md が2026-04-18に既存）
+**Merged**: 新規の建築的深掘り分析を comparisons/hermes-vs-openclaw-architecture.md に追加（Architecture Deep-Diveセクション）
+**Kept**: concepts/hermes-agent-architecture.md と concepts/openclaw-architecture.md（単体アーキテクチャ詳細は新規価値あり）
+**Updated**: wikilink修正、concepts/openclaw/_index.md への相互リンク追加
+
 ## [2026-05-07] Hermes Agent vs OpenClaw アーキテクチャ比較ページ作成
 
 **Source**: User request (Discord) — raw/articles/2026-05-07_chatgpt-hermes-vs-openclaw-comparison.md のwiki取り込み

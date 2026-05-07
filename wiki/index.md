@@ -2,7 +2,7 @@
      2|
      3|> Content catalog. Every wiki page listed under its type with a one-line summary.
      4|> Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 5179 | Full entries: 4633 | Stubs: 546 |
+> Last updated: 2026-05-08 | Total pages: 5178 | Full entries: 4632 | Stubs: 546 |
      6|
      7|## Entities (400 pages)
      8|
@@ -455,7 +455,7 @@
    454|   8|- [[entities/vercel]] — Vercel — Frontend cloud platform (Next.js). Released deepsec open-source security harness using coding agents for vulnerability discovery and remediation (May 2026).
    455|   9|- [[entities/radixark]] — RadixArk — AI inference infrastructure startup. $100M seed (May 2026), built on SGLang inference + Miles (large-scale RL).
    456|  10|- [[entities/perplexity]] — Perplexity — AI search platform expanding into vertical products: Professional Finance Computer (35 analyst workflows), NEJM/BMJ premium medical access.
-## Concepts (444 pages)
+## Concepts (443 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/object-storage-queue]] — Object Storage Queue: S3のCASを利用した分散キュー実装パターン。Group Commit、Stateless Broker、HeartbeatによるJob Recovery。ゼロディスクアーキテクチャの応用。Absurd（PG Queue）との比較を含む。 — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
@@ -486,7 +486,7 @@
    475|- [[concepts/agent-harness]] — An agent harness is the infrastructure layer that sits between an LLM API and the agent's execution environment. It manages tool routing, context management, session lifecycle, and error recovery. ...
 - [[concepts/agent-harnesses]] — > **Core Thesis:** The less you build in your agent framework, the more it works. All the value is in the RL'd model, not your 10,000 lines of abstractions.
 - [[concepts/hermes-agent-architecture]] — Hermes Agent（v0.9.0）のアーキテクチャ詳細。AIAgent中心設計、3つのAPI実行モード、キャッシュ対応プロンプトアセンブリ、SQLite+FTS5永続状態、自己登録型ツールレジストリ、subagent delegation vs execute_code、14+プラットフォームGateway、共有プロバイダランタイム。agent-core-firstの能力蓄積システム。
-- [[concepts/hermes-vs-openclaw]] — Hermes Agent vs OpenClaw アーキテクチャ比較。能力蓄積型（Rails）vs スコープ制御型（Linux/Kubernetes）。スキルシステム（自己生成・増殖 vs 索引注入・許可リスト）、スキル爆発問題、プロンプトアーキテクチャ、相互学習を16次元の比較表で分析。
+
 - [[concepts/agent-iam]]
    478|- [[concepts/agent-patterns]] — AIエージェントの一般的な設計パターンと実装プラクティス
    479|- [[concepts/agent-sandbox-patterns]] — Browser Useのエージェントサンドボクシングアーキテクチャ。ツール分離パターンとエージェント分離パターン

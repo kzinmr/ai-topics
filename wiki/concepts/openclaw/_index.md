@@ -55,6 +55,11 @@ sources: []
 OpenClawのTOOLS.md + VercelのAGENTS.mdパターンを組み合わせ:
 > 「約50のCLI/APIから正しいものを選ぶタスクにおいて、ツール起動の正確性はOpenClawの方がHermesより優れていた。」 — elvis
 
+## アーキテクチャ詳細分析（2026年5月）
+
+- [[concepts/openclaw-architecture]] — OpenClaw公式ドキュメントベースの内部アーキテクチャ詳細（338行）。Gateway-first設計、WS protocol、埋め込みagent runtime、sandbox分離、nodes、queueing、plugin system。
+- [[concepts/hermes-agent-architecture]] — Hermes Agent公式ドキュメントベースの内部アーキテクチャ詳細（278行）。AIAgent中心設計、prompt assembly、永続state、tool runtime、subagent delegation。
+
 ## アーキテクチャ比較（[[concepts/openclaw/architecture-comparison]]）
 
 | 次元 | OpenClaw | Hermes Agent |

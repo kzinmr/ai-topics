@@ -1,13 +1,15 @@
 ---
 title: "Hermes Agent vs OpenClaw Architecture Comparison"
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-05-07
 type: comparison
 tags: [ai-agents, architecture, comparison, hermes-agent, openclaw]
 sources:
   - "elvis analysis (April 2026) — 9-hour side-by-side source code study"
+  - "ChatGPT deep research analysis of official docs (May 2026)"
   - "https://hermes-agent.nousresearch.com/docs/"
   - "https://github.com/steipete/openclaw"
+  - "raw/articles/2026-05-07_chatgpt-hermes-vs-openclaw-comparison.md"
 ---
 
 # Hermes Agent vs OpenClaw Architecture Comparison
@@ -135,6 +137,8 @@ OpenClaw's influence extends beyond direct usage. The governance patterns, prece
 - [[concepts/harness-engineering]] — Harness Engineering framework
 - [[concepts/anthropic-openclaw-conflict]] — Open-source vs platform risk
 - [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — Agent-first codebase design
+- [[concepts/hermes-agent-architecture]] — Hermes Agent architecture deep-dive (official docs)
+- [[concepts/openclaw-architecture]] — OpenClaw architecture deep-dive (official docs)
 
 ## Sources
 
@@ -143,3 +147,47 @@ OpenClaw's influence extends beyond direct usage. The governance patterns, prece
 - OpenClaw VISION.md — skill governance policy
 - Vercel AGENTS.md pattern — https://vercel.com/blog/agents-md
 - OpenClaw GitHub — https://github.com/steipete/openclaw
+
+## Architecture Deep-Dive (Official Docs Analysis, May 2026)
+
+**Source:** ChatGPT deep research analysis of Hermes Agent v0.9.0 docs and OpenClaw official docs (May 7, 2026)
+
+### Core Architectural Philosophy
+
+| Dimension | Hermes Agent | OpenClaw |
+|-----------|-------------|----------|
+| **Design Center** | agent-core-first (AIAgent class is the single central core) | gateway-first (long-lived Gateway daemon as control plane) |
+| **Architecture Model** | Capability accumulation system — agent grows stronger with use | Scope-controlled assistant control plane — more predictable with tighter scope |
+| **State Management** | Three-tier: bounded memory + SQLite/FTS5 searchable sessions + external providers | Two-tier: sessions.json metadata + JSONL transcripts. Gateway is source of truth. |
+| **Prompt Assembly** | 10-layer cached system prompt + ephemeral additions. Frozen memory snapshots for cache stability. | OpenClaw-owned platform-oriented sections. Stable prefix + dynamic suffix. Skills injected as metadata index, not full text. |
+| **Tool Runtime** | Self-registering registry. AST discovery. Toolsets with check_fn. execute_code as sandboxed executor separate from subagent delegation. | Sandbox / Tool Policy / Elevated as three separate axes. exec tool with host/security/ask modes. |
+| **Subagent Model** | delegate_task spawns child AIAgent with fresh context. 3 parallel max. execute_code for mechanical pipelines. | Background agent runs with session tree. Subagent queue lane. Announce chain for completion. |
+| **Gateway** | Multi-platform adapter layer. AIAgent is core; gateway is frontend orchestration. | Gateway IS the core. Typed WebSocket protocol. Device identity + pairing. Queue modes (collect/followup/steer/interrupt). |
+| **Extension** | Python plugins (general + memory providers + context engines). Hooks at agent loop lifecycle points. | 4-layer plugin architecture. Manifest + discovery separate from runtime. Native plugins unsandboxed (same process). |
+| **Communication** | CLI, gateway (14+ platforms), ACP, cron, batch | Typed WebSocket text JSON frames. req/res + event pattern. Live control channel (not durable event log). |
+| **Security Model** | DANGEROUS_PATTERNS approval flow for terminal. Session-level allowlist. Terminal backends (local/docker/ssh/singularity/modal/daytona). | Single trust boundary (personal assistant model). Sandboxing (off|non-main|all), elevated escape hatch, node pairing for capability trust. |
+
+### Gateway Architecture Comparison
+
+| | Hermes Agent | OpenClaw |
+|---|---|---|
+| **Position** | Frontend layer. Core is AIAgent. | Central control plane. Everything connects through Gateway. |
+| **Protocol** | Platform-specific adapters normalized to MessageEvent | Typed WebSocket text JSON frames. TypeBox → JSON Schema → Swift models. |
+| **Session Key** | Resolved by gateway runner | Resolved by Gateway. Gateway is source of truth. |
+| **Message Flow** | Two-level guard (adapter + runner). Queue + interrupt events. | Session lane + global lane. Queue modes (collect/followup/steer/interrupt). |
+
+### Mutual Learning Opportunities
+
+**What Hermes can learn from OpenClaw:**
+1. Skill allowlist/precedence for deterministic debugging
+2. Explicit tool routing (TOOLS.md + AGENTS.md pattern) for better activation correctness
+3. Sandbox/Tool Policy/Elevated separation for clearer security boundaries
+4. Per-agent scope control for corpus hygiene
+5. Index-injection skill pattern to reduce prompt token pressure
+
+**What OpenClaw can learn from Hermes:**
+1. Post-task procedural capture (skill auto-creation after complex successes)
+2. Patch-in-place learning loop (skill self-improvement from errors)
+3. Built-in session_search for cross-conversation knowledge reuse
+4. Bounded memory with durable fact extraction
+5. Progressive skill disclosure (metadata always visible, full text on demand)

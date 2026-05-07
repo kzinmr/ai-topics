@@ -25,7 +25,7 @@ sources:
 
 Hermes Agent は Nous Research が開発したオープンソースの自己ホスト型 AI エージェントである。アーキテクチャ上の最大の特徴は、**AIAgent クラスが単一の中心核（central core）** として全サブシステムを統合する点にある。これは「ツールを呼べる CLI」ではなく、「持続的に稼働し自己改善するエージェントランタイム」として設計されていることを意味する。
 
-アーキテクチャ哲学を一言で表すなら **capability accumulation system（能力蓄積システム）** である。エージェントは使用されるほどに手続き的知識（skills）と環境記憶（memory）を蓄積し、時間とともに強くなる。これは scope-controlled assistant control plane を志向する OpenClaw とは根本的に異なる設計思想である。詳細な比較は [[concepts/hermes-vs-openclaw]] を参照。
+アーキテクチャ哲学を一言で表すなら **capability accumulation system（能力蓄積システム）** である。エージェントは使用されるほどに手続き的知識（skills）と環境記憶（memory）を蓄積し、時間とともに強くなる。これは scope-controlled assistant control plane を志向する OpenClaw とは根本的に異なる設計思想である。詳細な比較は [[comparisons/hermes-vs-openclaw-architecture]] を参照。
 
 公開ドキュメントとソースコード分析（elvis による9時間の並列研究、2026年4月）から、Hermes は built-in learning loop を掲げ、agent-managed skills、pre-compression memory flush、bounded curated memory の3層構造を持つことが確認されている。
 
@@ -270,8 +270,9 @@ Hermes Agent のコードベースを理解するための推奨探索順序（v
 - [Hermes Agent — Skills System (公式ドキュメント)](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills)
 - [GitHub — NousResearch/hermes-agent](https://github.com/nousresearch/hermes-agent)
 - [[entities/hermes-agent]] — Hermes Agent エンティティページ（機能・使用例・3層モデル）
-- [[concepts/hermes-vs-openclaw]] — Hermes vs OpenClaw アーキテクチャ比較
+- [[comparisons/hermes-vs-openclaw-architecture]] — Hermes vs OpenClaw アーキテクチャ比較
 - [[concepts/openclaw-architecture]] — OpenClaw アーキテクチャ詳細（Hermes の agent-core-first との対比）
+- [[concepts/openclaw/_index]] — OpenClaw コンセプトクラスターインデックス
 - [[concepts/agent-loop-orchestration]] — エージェントループオーケストレーションの一般的パターン
 - [[concepts/agent-harness-primitives]] — エージェントハーネスの6つの基本プリミティブ
 - [[concepts/ai-memory-systems]] — AIメモリシステムの設計哲学比較（OpenAI/Anthropic/Cognition）
