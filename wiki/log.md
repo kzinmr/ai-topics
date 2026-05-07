@@ -1,3 +1,15 @@
+## [2026-05-07] Scaling Hypothesis概念ページ拡充 — gwern.net論文本体からの完全版
+
+**Source**: User request (Discord) — gwern.net/scaling-hypothesis のwiki取り込み
+
+**Raw articles saved**:
+- `raw/articles/2020-05-28_gwern-scaling-hypothesis.md` — Gwern Branwenによる Scaling Hypothesis 論文（2020年、2022年更新）
+
+**Pages created/updated**:
+- `concepts/scaling-hypothesis.md` — スタブから完全版へ。Strong/Weak Scaling Hypothesisの区別、Blessings of Scale、最も深い残差（The Last Bits）、創発的エージェンシー（It From Byte）、ハードウェアオーバーハング論。Scaling Laws概念ページとの比較表を含む。
+
+---
+
 ## [2026-05-07] turbopufferエンティティ拡充 — 全ブログ記事8本からエンリッチメント
 
 **Source**: User request (Discord) — turbopufferブログ記事群からのエンリッチメント
