@@ -14,13 +14,16 @@
   - Process-based delegation → Orchestration
 - **LOW**: GPT-5.5 Instant (Superintelligence/beehiiv) — all URLs are obfuscated tracking redirects, cannot extract content
 
-**New page created**:
+**New pages created**:
 - `concepts/ai-delegation-patterns.md` — AI delegation archetypes, three failures, progression from chat to orchestration. BCG/Harvard/MIT research framework. (~100 lines)
+- `concepts/vibe-coding-vs-agentic-engineering.md` — Distinction and blurring between vibe coding and professional agentic engineering. Simon Willison analysis.
+- `concepts/open-weights-licensing-tightening.md` — 2026 trend of open weights providers tightening licenses. Contestable markets theory, oligopoly risk.
+- `concepts/normalization-of-deviance-in-ai-coding.md` — Risk of trusting AI outputs without review, Challenger disaster framework applied to coding agents.
+- `concepts/speed-vs-legitimacy-in-ai-institutions.md` — Fast vs slow institutions in AI governance. Two-tier civilization risk framework.
+- `entities/claris-filemaker-agentic-coding.md` — Claris/Apple making FileMaker a target for agentic coding tools.
+- `events/anthropic-code-w-claude-2026.md` — Anthropic developer event with Colossus infrastructure details, Claude Code features.
 
-**Pages enriched**:
-- `events/anthropic-code-w-claude-2026.md` — Added Colossus 1 scale details (300MW, 220k GPUs, $5B/yr), xAI Colossus 2 detail, rate limit increases, Opus API limits, Dario Amodei predictions, infrastructure news. Added swyx/AINews as source.
-
-**Index/log**: index.mdにconcepts/ai-delegation-patterns.md追加。総ページ数: 5189→5190、Full entries: 4640→4641。
+**Index/log**: index.mdに5新概念ページ+1エンティティ追加。総ページ数: 5188→5193、Full entries: 4639→4644。
 
 
 ## [2026-05-07] Sam Altman「Three Observations」記事取り込み
