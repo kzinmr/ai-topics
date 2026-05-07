@@ -328,8 +328,11 @@
     {
       "id": "15f7bc35ec06",
       "name": "x-bookmarks-ingest",
-      "prompt": "Incoming X bookmarks batch attached below. Use `~/ai-topics` as the canonical repo root for this job. The canonical wiki path is `~/wiki`, which should resolve to `~/ai-topics/wiki`. Save every scraped article only to `~/wiki/raw/articles/`. Do not write to `/opt/data/home/wiki` or any inferred alternate path. For each bookmark URL, scrape the linked article (skip X-internal replies/quotes with no external link), save it following the newsletter digest format, and create/update a concept or entity page in `~/wiki/` if the topic is SCHEMA.md-aligned. After processing, commit and push ai-topics. Report in Japanese: titles, URLs, and which wiki pages were touched. If no new bookmarks since last run, respond [SILENT].",
-      "skills": [],
+      "prompt": "Incoming X bookmarks batch attached below. Use `~/ai-topics` as the canonical repo root for this job. The canonical wiki path is `~/wiki`, which resolves to `~/ai-topics/wiki`. Save scraped or metadata-only bookmark records only under `~/wiki/raw/articles/`. Do not write to `/opt/data/home/wiki`, `/opt/data/wiki`, `~/home/wiki`, or any inferred alternate path. For bookmarks with external URLs, scrape the linked article and save it following the newsletter digest/raw article format. For X native articles (`x.com/i/article/...`) with no external URL: try an approved X-article fallback only if credentials/tools are already available; if not available, save a metadata-only raw article record under `~/wiki/raw/articles/` and continue. Never treat auth-walled X native articles as a job failure solely because the body cannot be scraped. Create/update concept or entity pages in `~/wiki/` only when the topic is SCHEMA.md-aligned and the source content is sufficient; otherwise leave the metadata-only raw article. Update `~/wiki/index.md` and `~/wiki/log.md` for wiki page changes. After processing, run `cd ~/ai-topics && git status --short`; if changes were made only by this job, commit and push with `git add wiki/ && git commit -m \"wiki: X bookmarks ingest\" && git push`. If no new bookmarks since last run, respond exactly `[SILENT]`. Report in Japanese: titles, URLs, and which wiki pages were touched.",
+      "skills": [
+        "wiki-ingestion-pipelines",
+        "raw-article-filename-policy"
+      ],
       "skill": null,
       "model": null,
       "provider": null,
@@ -337,10 +340,10 @@
       "script": "fetch_x_bookmarks.py",
       "schedule": {
         "kind": "cron",
-        "expr": "0 */6 * * *",
-        "display": "every 6h"
+        "expr": "30 23 * * *",
+        "display": "30 23 * * *"
       },
-      "schedule_display": "every 6h",
+      "schedule_display": "30 23 * * *",
       "repeat": {
         "times": null,
         "completed": 0
