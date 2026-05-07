@@ -2,7 +2,7 @@
      2|
      3|> Content catalog. Every wiki page listed under its type with a one-line summary.
      4|> Read this first to find relevant pages for any query.
-     > Last updated: 2026-05-08 | Total pages: 5175 | Full entries: 4629 | Stubs: 546 |
+     > Last updated: 2026-05-08 | Total pages: 5176 | Full entries: 4630 | Stubs: 546 |
      6|
      7|## Entities (400 pages)
      8|
@@ -455,7 +455,7 @@
    454|   8|- [[entities/vercel]] — Vercel — Frontend cloud platform (Next.js). Released deepsec open-source security harness using coding agents for vulnerability discovery and remediation (May 2026).
    455|   9|- [[entities/radixark]] — RadixArk — AI inference infrastructure startup. $100M seed (May 2026), built on SGLang inference + Miles (large-scale RL).
    456|  10|- [[entities/perplexity]] — Perplexity — AI search platform expanding into vertical products: Professional Finance Computer (35 analyst workflows), NEJM/BMJ premium medical access.
-## Concepts (440 pages)
+## Concepts (441 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/object-storage-queue]] — Object Storage Queue: S3のCASを利用した分散キュー実装パターン。Group Commit、Stateless Broker、HeartbeatによるJob Recovery。ゼロディスクアーキテクチャの応用。Absurd（PG Queue）との比較を含む。 — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
@@ -467,6 +467,7 @@
 - [[concepts/deepclaude]] — Open-source tool enabling Claude Code's agent loop with DeepSeek V4 Pro, demonstrating agent framework interoperability.
 - [[concepts/deepseek-v3]] — DeepSeek-V3: 671B MoEモデル（37B活性化/トークン）。MLA、補助損失なし負荷分散、MTP、FP8訓練、DualPipeなど複数の革新的技術を導入。14.8Tトークンで$5.576Mの訓練コスト。GPT-4oクラスの性能を達成したマイルストーン論文（arXiv:2412.19437, Dec 2024）。
 - [[concepts/deepseek-r1]] — DeepSeek-R1: Pure RL（GRPO）で推論能力の創発を初の大規模実証。Nature掲載。R1-Zero（純粋RL）/ R1（4段階パイプライン）/ 蒸留モデル。自己検証・アハモーメント。AIME 79.8%, MATH-500 97.3%。$294Kでo1級性能。
+- [[concepts/deepseek-v4]] — DeepSeek-V4: 1.6T Pro/284B Flash、1MコンテキストMoE。Hybrid Attention（CSA+HCA+SWA）、mHC、Muon Optimizer、MegaMoE、TileLang DSL、On-Policy Distillation、FP4 QAT。V3.2比FLOPs 3.7-10x削減、KVキャッシュ10-14x削減。Codeforces 3206（人間23位相当）。
 - [[concepts/google-project-mariner-shutdown]] — Google's shutdown of Project Mariner browser agent in May 2026 due to poor performance and high costs.
 - [[concepts/grpo]] — Group Relative Policy Optimization: DeepSeek-R1で導入されたRLアルゴリズム。PPOのクリティックモデルを不要にし、大規模モデルのRL訓練の計算ボトルネックを解消。グループ内相対比較でアドバンテージ推定。
 - [[concepts/llm-creative-writing]] — Gwern Branwen's methodology for high-quality LLM creative writing and style personalization. Anti-Examples prompting trick, Manual of Style (MoS) Extraction, meta-learning/personalization, atomic snippets, seriation. Core philosophy: intensive search + personalization, not first-draft generation.

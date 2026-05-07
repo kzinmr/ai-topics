@@ -12,6 +12,7 @@ sources:
   - raw/papers/2024-12-27_2412.19437_deepseek-v3-technical-report.md
   - raw/papers/2025-01-22_2501.12948_deepseek-r1.md
   - raw/articles/2026-05-08_martinfowler-deepseek-papers.md
+  - raw/papers/2026-04-xx_deepseek-v4-technical-report.md
 ---
 
 # DeepSeek
@@ -53,7 +54,7 @@ DeepSeek-V4  (Apr 2026)           フロンティア規模
 
 ### DeepSeek V4 Series (April 2026)
 
-The V4 series represents DeepSeek's most ambitious release, pushing into frontier territory at dramatically lower cost.
+**[[concepts/deepseek-v4|DeepSeek-V4]]** は100万トークンコンテキストを実用的コストで処理する超高効率MoEシリーズ。主要革新：Hybrid Attention（CSA+HCA+SWA）、Manifold-Constrained Hyper-Connections（mHC）、Muon Optimizer、MegaMoE、TileLang DSL、On-Policy Distillation、FP4 QAT。
 
 | Model | Total Params | Active Params | Context | Architecture |
 |-------|-------------|---------------|---------|-------------|
@@ -61,11 +62,19 @@ The V4 series represents DeepSeek's most ambitious release, pushing into frontie
 | **V4-Flash** | 284B | 13B | 1M tokens | Mixture of Experts |
 | **V4-Pro-Max** | 1.6T+ | 49B+ (reasoning) | 1M tokens | MoE + reasoning tokens |
 
+**Efficiency vs V3.2 (at 1M context):**
+| Metric | V4-Pro | V4-Flash |
+|--------|--------|----------|
+| Single-Token FLOPs | 27% (3.7x lower) | 10% (10x lower) |
+| KV Cache Size | 10% (10x smaller) | 7% (14x smaller) |
+
 **Key facts:**
 - MIT license, open weights on HuggingFace (Pro: 865GB, Flash: 160GB)
 - V4-Pro is the largest open weights model, surpassing Kimi K2.6 (1.1T) and GLM-5.1 (754B)
-- Massive efficiency gains vs V3.2: Pro achieves 27% FLOPs and 10% KV cache at 1M context; Flash achieves 10% FLOPs and 7% KV cache
-- Self-reported benchmarks: V4-Pro-Max trails GPT-5.4/Gemini 3.1 Pro by ~3-6 months
+- **Codeforces 3206** rating（V4-Pro-Max）— 人間23位相当
+- White-collar tasks: 63% non-loss rate vs Claude Opus 4.6
+- Agent-native: Interleaved Thinking（ツール呼び出し境界を越える推論保持）、Quick Instruction
+- Trained on 32T+ tokens with Anticipatory Routing + SwiGLU Clamping for stability
 
 ### Pricing (per million tokens)
 
@@ -114,6 +123,7 @@ DeepSeek V4 is confirmed to run on **Huawei Ascend 950** chips for inference and
 - [[nvidia]] — Competitor in AI hardware; DeepSeek reducing dependence on NVIDIA
 - [[open-source-ai]] — Leading open-source AI model provider
 - [[concepts/deepseek-v3]] — Predecessor model series
+- [[concepts/deepseek-v4]] — Latest model series (1M context, Hybrid Attention, mHC)
 - [[concepts/deepseek-r1]] — Reasoning model (Nature 2025)
 - [[concepts/grpo]] — RL algorithm introduced in R1
 - [[token-economics]] — Pricing disruption context

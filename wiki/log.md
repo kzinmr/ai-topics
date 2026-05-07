@@ -1,3 +1,17 @@
+## [2026-05-08] DeepSeek-V4 Technical Report 論文取り込み（HuggingFace公開）
+
+**Source**: User request (Discord) — DeepSeek-V4: million-token context intelligence。HuggingFace deepseek-ai/DeepSeek-V4-Pro より。
+
+**Raw paper saved**:
+- `raw/papers/2026-04-xx_deepseek-v4-technical-report.md` — DeepSeek-AI。Hybrid Attention (CSA+HCA+SWA)、Manifold-Constrained Hyper-Connections (mHC)、Muon Optimizer、MegaMoE Expert Parallelism、TileLang DSL、Anticipatory Routing、SwiGLU Clamping、Specialist Training + On-Policy Distillation、FP4 QAT、Interleaved Thinking、Quick Instruction。
+
+**Pages created**:
+- `concepts/deepseek-v4.md` — 包括的概念ページ（~220行）。モデルラインナップ（1.6T Pro/284B Flash/Pro-Max）、Hybrid Attentionの3層構造と詳細比較表、mHC（二重確率行列制約）、Muon Optimizer（Newton-Schulz直交化）、訓練インフラ（32T+ tokens, Anticipatory Routing, SwiGLU Clamping, MegaMoE, TileLang）、効率性比較表（V3.2比3.7-10x FLOPs削減）、ポストトレーニング（Specialist Training + OPD, Interleaved Thinking, FP4 QAT）、ベンチマーク（Codeforces 3206, 63% non-loss vs Opus 4.6）、**V3→V4進化サマリー比較表**（14次元）。11個のwikilink。
+
+**Pages updated**:
+- `entities/deepseek.md` — V4 Seriesセクションを技術的に拡充（Hybrid Attention/mHC/Muon/MegaMoE/TileLang/OPD/FP4 QAT列挙、効率性比較表、Codeforces 3206、63% non-loss、Interleaved Thinking）。フロントマターソース追加、Relationshipsにdeepseek-v4を追加。
+
+**Index/log**: index.mdにdeepseek-v4追加。総ページ数: 5175→5176、Full entries: 4629→4630、Concepts: 440→441。
 ## [2026-05-08] Martin Fowler「The DeepSeek Series: A Technical Overview」参考取り込み
 
 **Source**: User request (Discord) — martinfowler.com/articles/deepseek-papers.html の整理を参考にwiki強化。
