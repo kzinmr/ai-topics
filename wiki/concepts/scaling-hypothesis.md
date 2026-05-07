@@ -19,7 +19,10 @@ tags:
   - pretraining-thesis
 sources:
   - raw/articles/2020-05-28_gwern-scaling-hypothesis.md
+  - raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer.md
+  - raw/articles/2024-04-11_hyungwonchung-transcript.md
   - https://gwern.net/scaling-hypothesis
+  - https://www.youtube.com/watch?v=orDKvo8h71o
 related:
   - scaling-laws
   - bitter-lesson
@@ -152,6 +155,53 @@ Gwern's most pointed critique is epistemological: mainstream AI researchers spea
 
 He compares this to the tone of a 1940 *Scientific American* article titled "Don't Worry — It Can't Happen" about the atomic bomb.
 
+## Architectural Case Study: Hyung Won Chung (OpenAI, 2024)
+
+Hyung Won Chung's 2024 Stanford CS25 lecture provides a concrete architectural case study of the Scaling Hypothesis in action. His central argument: **the history of Transformer architectures is a journey of removing human-imposed structure** in favor of more general methods that leverage massive scale.
+
+### The Structure Paradox
+
+Chung formalizes a key tension:
+
+> "Adding optimal inductive bias for a given level of compute... is critical. These are shortcuts that will hinder further scaling later on. **Remove them later.**"
+
+This directly mirrors the Scaling Hypothesis — what works at small scale (inductive biases, architectural specializations) becomes a bottleneck at large scale. The reason:
+
+> "Compute is getting cheaper faster than we are becoming better researchers."
+
+### Three Structures Removed by Scale
+
+Chung analyzes three specific structures in encoder-decoder models that were justified for their era but became liabilities as compute scaled:
+
+| Structure | Original Rationale | Why It Became Obsolete |
+|-----------|-------------------|----------------------|
+| **Separate parameters for input/target** | Machine translation: different source/target languages | LMs learn *world knowledge*, not just language — sharing parameters lets knowledge combine across languages |
+| **Information bottleneck (decoder→final encoder layer only)** | Clean separation of encoding/decoding | Different layers encode different granularities; restricting to the final layer loses information — decoder-only allows layer-to-layer interaction |
+| **Bidirectional input attention** | SQuAD needed ~20% boost from bidirectionality (2018) | At scale, empirical performance difference vanishes; bidirectionality creates engineering challenges for multi-turn chat (can't use KV caching) |
+
+### The Flan Case Study
+
+In "Scaling Instruction-Finetuned Language Models" (Chung et al., 2022), encoder-decoder models showed larger gains than decoder-only on academic benchmarks. Chung explains this as a *task distribution artifact*: academic datasets have long inputs and short targets, a distribution that favors separate encoder-decoder parameters. This is precisely the kind of "shortcut" that limits scaling to more interesting, long-form applications.
+
+### Prediction Framework
+
+Chung's methodology operationalizes the Scaling Hypothesis for practitioners:
+
+1. **Identify** the assumptions and structures in your current approach
+2. **Ask** whether they still "earn their keep" at current compute scale
+3. **Remove** those that don't — replace with more general methods + more compute
+
+> "What is better in the long term almost always looks worse now."
+
+### Connection to the Scaling Hypothesis
+
+Chung's talk demonstrates that the Scaling Hypothesis is not just about model size — it applies to **architectural design itself**. The shift from encoder-decoder → decoder-only is a concrete example of the "blessings of scale": problems with bidirectionality vanish, information bottlenecks don't matter, and separate parameter sets become wasteful when models are large enough. This validates Gwern's claim that "hard problems are easier to solve than easy problems" — the architectural problems that seemed intractable at small scale (unidirectional attention, shared parameters) simply dissolve at large scale.
+
+Sources:
+- [[raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer]] — Slides summary
+- [[raw/articles/2024-04-11_hyungwonchung-transcript]] — Full talk transcript
+- [Stanford CS25: Hyung Won Chung](https://www.youtube.com/watch?v=orDKvo8h71o) (YouTube)
+
 ## Relationship to Other Scaling Concepts
 
 - **[[concepts/scaling-laws|Scaling Laws]]**: The empirical mathematical framework for predicting loss given compute/data/parameters
@@ -163,3 +213,6 @@ He compares this to the tone of a 1940 *Scientific American* article titled "Don
 
 - [The Scaling Hypothesis](https://gwern.net/scaling-hypothesis) — Gwern Branwen (2020)
 - [Raw article](raw/articles/2020-05-28_gwern-scaling-hypothesis.md) — Full text saved from gwern.net
+- [Shaping the Future of AI from the History of Transformer](https://www.youtube.com/watch?v=orDKvo8h71o) — Hyung Won Chung, Stanford CS25 (2024)
+- [Slides](https://docs.google.com/presentation/d/1u05yQQaw4QXLVYGLI6o3YoFHv6eC3YN8GvWD8JMumpE) — Same lecture
+- [Scaling Instruction-Finetuned Language Models](https://arxiv.org/abs/2210.11416) — Chung et al. (Flan, 2022)

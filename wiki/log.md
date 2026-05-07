@@ -10,6 +10,19 @@
 
 ---
 
+## [2026-05-07] Scaling Hypothesis概念ページ拡充 — Hyung Won Chung講義からアーキテクチャ事例
+
+**Source**: User request (Discord) — Stanford CS25講義 + Google Slidesのwiki取り込み
+
+**Raw articles saved**:
+- `raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer.md` — Hyung Won Chung (OpenAI) のCS25講義（2024年4月）
+- `raw/articles/2024-04-11_hyungwonchung-transcript.md` — 同講義の文字起こし
+
+**Pages updated**:
+- `concepts/scaling-hypothesis.md` — 「Architectural Case Study: Hyung Won Chung」セクション追加。Structure Paradox（構造がスケーリングを妨げる）、Encoder-Decoder→Decoder-Onlyへの移行分析、3つの時代遅れになった構造（分離パラメータ、情報ボトルネック、双方向性）、Flan事例、予測フレームワーク。Scaling Hypothesisがモデルサイズだけでなくアーキテクチャ設計自体に適用されることを示す。
+
+---
+
 ## [2026-05-07] turbopufferエンティティ拡充 — 全ブログ記事8本からエンリッチメント
 
 **Source**: User request (Discord) — turbopufferブログ記事群からのエンリッチメント
