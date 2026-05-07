@@ -191,6 +191,56 @@ Hetznerの€8/月プランは、同等スペックのDigital Ocean（〜$30/月
 - **スタートアップCTO**: 会社のツールやインフラを低コストでセットアップしたい
 - **但し、爆発的成長が確実なアプリ**（ユーザー数10倍/日）には従来のサーバーレスが適している場合もある
 
+## Tim O'Reilly の視点: CHOP パラダイムと歴史的文脈
+
+Tim O'Reilly（O'Reilly Media 創業者）は2025年2月の記事「[The End of Programming as We Know It](https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it/)」で、[[entities/tim-oreilly|Vibe Coding]]を**プログラミング抽象化の長い歴史の最新波**として位置づけた。
+
+> Source: [raw/articles/2025-02-04_oreilly-end-of-programming.md](2025-02-04_oreilly-end-of-programming.md)
+
+### 抽象化の歴史的進化
+
+| 時代 | 抽象化レベル | 結果 |
+|------|-------------|------|
+| 黎明期 | 機械語 → アセンブリ | ハードウェアエンジニアの需要減少 |
+| 高水準言語 | Fortran, COBOL, C, Java | プログラマー増加、需要拡大 |
+| OS革命 | ハードウェアドライバ → API | アプリケーション開発に集中 |
+| Web & Cloud | Stripe, Google Maps API | 「インターネットOS」の誕生 |
+| AI時代 (CHOP) | 自然言語 → コード | プログラマー = デジタル同僚の管理者 |
+
+### CHOP (Chat-Oriented Programming)
+
+O'Reilly は現在のパラダイムを **CHOP (Chat-Oriented Programming)** と命名。自然言語プロンプトがコード記述に代わる主要インターフェースとなる。
+
+> *"The human programmers are their managers. There are now hundreds of thousands of programmers doing this kind of supervisory work. They are already living in a world where the job is creating and managing digital co-workers."*
+
+### Jevons Paradox とプログラミング需要の拡大
+
+O'Reilly は経済学者 William Jevons のパラドックスを引用 — 石炭効率が向上すると石炭消費が増加したように、AI がプログラミングを効率化すればするほど、ソフトウェアへの需要は**減少ではなく増加**すると主張。
+
+### The 70% Problem (Addy Osmani)
+
+[[entities/addy-osmani]] が O'Reilly の記事で紹介した概念。AI はプロジェクトの最初の70%（足場作り、ドキュメント生成）を処理できるが、残りの30%は「ハードに得られたエンジニアリングの叡智」を必要とし、これを怠ると「ハウス・オブ・カードコード」が現実のプレッシャーで崩壊する。
+
+| フェーズ | AI の役割 | 人間の役割 |
+|---------|-----------|-----------|
+| 最初の70% | 足場作り、ドキュメント、プロトタイピング | 方向性の指示、要件定義 |
+| 最後の30% | 限定的（エッジケース対応は困難） | エンジニアリング判断、アーキテクチャ決定、品質保証 |
+
+### エージェントエンジニアという新たな役割
+
+O'Reilly は、AI エージェントにビジネスポリシーやプロセスをエンコードすることに特化した **Agent Engineer** という新たな専門職の出現を予見。これは React 開発者がフロントエンドアーキテクチャに特化したのと類似の構図。
+
+### エージェントインフラストラクチャプロトコルの必要性
+
+O'Reilly は、エージェントのための標準化されたプロトコル（ウェブにおける HTTPS に相当）の創出を提唱:
+1. 特定のエージェント/ユーザーへのアクションの帰属
+2. エージェント間相互作用の設計
+3. 有害なアクションの検出と修復
+
+これは後に MCP（Model Context Protocol）、ACP（Agent Communication Protocol）、A2A などの標準として具現化されることになる先駆的枠組み。
+
+> *"Computer science is about systematic thinking, not writing code."* — Mehran Sahami, Stanford CS Chair（O'Reilly 記事より引用）
+
 ## 関連概念
 
 - [[concepts/agentic-engineering]] — 対照的な開発スタイル
@@ -198,7 +248,11 @@ Hetznerの€8/月プランは、同等スペックのDigital Ocean（〜$30/月
 - [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — 認知負債を返済する手法
 - [[concepts/claude-code-tips]] — Claude Codeのセットアップガイド
 - [[concepts/self-hosting-ai-development]] — Vibe codingアプリのセルフホスティング
+- [[concepts/mcp]] — エージェント間通信プロトコル（O'Reillyが先駆的に提唱したプロトコル標準化の具現化）
 
 ## 参照
+
 - [[simon-willison]] — Vibe Coding vs Agentic Engineeringの提唱者
 - [[entities/xeiaso-net]] — Xe Iaso（実践例の著者）
+- [[entities/tim-oreilly]] — CHOPパラダイムの提唱者、プログラミング抽象化の歴史的文脈
+- [[entities/addy-osmani]] — The 70% Problem、コンダクター→オーケストレーターフレームワーク

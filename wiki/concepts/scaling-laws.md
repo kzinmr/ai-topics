@@ -71,6 +71,7 @@ The shift from Chinchilla (token-count) to InfoLaw (information-density) reflect
 
 ## Related Concepts
 
+- [[altman-three-observations]] — Economic framework: logarithmic scaling, 10x/year cost deflation, super-exponential value
 - [[pretraining]] — LLM pretraining methodology
 - [[chinchilla]] — Optimal compute allocation
 - [[data-quality]] — Data curation and quality filtering

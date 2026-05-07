@@ -160,6 +160,22 @@ Co-founded OpenAI with **Elon Musk**, **Greg Brockman**, **Ilya Sutskever**, **W
   - Focus: Epigenetic reprogramming, cellular senescence reversal, Alzheimer's therapy
 - **Thrive AI Health**: Co-launched AI-driven health monitoring platform
 
+## Three Observations (February 2025)
+
+In February 2025, Altman published a landmark blog post titled *[Three Observations](raw/articles/2025-02-09_samaltman-three-observations.md)* articulating the economic case for continued exponential AI investment. The framework comprises three laws:
+
+| # | Observation | Key Data Point |
+|---|-------------|----------------|
+| 1 | **Logarithmic Scaling**: intelligence ≈ log(resources used) | Training + inference compute bundled into unified scaling |
+| 2 | **Hyper-Deflationary Costs**: cost to use AI falls ~10x/12mo | GPT-4 → GPT-4o: 150x price drop in ~16 months |
+| 3 | **Super-Exponential Value**: value of intelligence outpaces its linear increase | Justifies $500B+ infrastructure investment |
+
+The post also laid out Altman's vision of AI agents as virtual co-workers (junior engineer metaphor, scaling to millions) and a 2035 vision where everyone has access to "unlimited genius." Altman explicitly bundled inference compute into scaling laws — a notable reframing of the scaling debate.
+
+> *"Anyone in 2035 should be able to marshall the intellectual capacity equivalent to everyone in 2025; everyone should have access to unlimited genius to direct however they can imagine."*
+
+See [[altman-three-observations]] for full analysis.
+
 ## Core Philosophy
 
 ### Compute Scaling as the Path to AGI

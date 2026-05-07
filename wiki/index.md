@@ -350,8 +350,9 @@
    345|- [[entities/theodoros-galanos]] — AI researcher and harness engineering practitioner. Chief Science Officer at infrared.city, author of The Harness blog, creator of Lambda-RLM and AEC-Bench. @TheodoreGalanos.
    346|- [[entities/thin-bi-tool]] — 薄くなるBIツール — BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
    347|- [[entities/thorsten-ball]] — **Thorsten Ball** — Software engineer, author of Writing An Interpreter In Go and Writing A Compiler In Go, works on Amp at Sourcegraph. Wrote "How to Build a Code-Editing Agent: The Emperor Has No Clothes Guide."
-   348|- [[entities/tim-dettmers]] — Researcher (UW), creator of bitsandbytes, LLM.int8() (zero-degradation 8-bit inference), and QLoRA (4-bit fine-tuning). Discovered 6.7B parameter phase shift for emergent outlier features.
-   349|- [[entities/tim-sh]] — **Blog** | timsh.org | AI coding practitioner, PM, Multi-LLM workflow pioneer |
+|- [[entities/tim-dettmers]] — Researcher (UW), creator of bitsandbytes, LLM.int8() (zero-degradation 8-bit inference), and QLoRA (4-bit fine-tuning). Discovered 6.7B parameter phase shift for emergent outlier features.
+|- [[entities/tim-oreilly]] — O'Reilly Media founder, technology thinker. Coined "Web 2.0", framed Vibe Coding/CHOP in historical abstraction context, articulated Agent Engineer role and need for agent infrastructure protocols.
+|- [[entities/tim-sh]] — **Blog** | timsh.org | AI coding practitioner, PM, Multi-LLM workflow pioneer |
    350|- [[entities/tim-sherratt]] — **Blog** | timsherratt.au | Historian, GLAM hacker, creator of GLAM Workbench |
    351|- [[entities/tobi-lutke]] — Tobi Lütke is the CEO of Shopify and a prominent advocate for organizational AI adoption.
    352|- [[entities/tom-aarsen]] — **X** | @tomaarsen |

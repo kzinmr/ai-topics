@@ -91,6 +91,17 @@ In "Stop Using /init for AGENTS.md" (Mar 2026), Osmani argued that:
 - Before adding any line: "Can the agent find this by reading the code? If yes, don't write it"
 - Treat context engineering as **agile** — prune aggressively, encode only non-obvious conventions
 
+### The 70% Problem
+
+Osmani identified a critical limitation of AI-generated code, popularized in Tim O'Reilly's landmark 2025 article: AI can handle the first 70% of a project (scaffolding, documentation, initial prototype) but the final 30% requires "hard-won engineering wisdom" to prevent "house of cards code" that collapses under real-world pressure.
+
+This framing has become a widely cited cautionary concept in the vibe coding debate — the gap between AI's impressive initial output and production-grade quality.
+
+| Phase | AI's Role | Human's Role |
+|-------|-----------|-------------|
+| First 70% | Scaffolding, documentation, prototyping | Direction setting, requirements |
+| Final 30% | Limited (edge cases struggle) | Engineering judgment, architecture decisions, quality assurance |
+
 ### Comprehension Debt
 
 Osmani identified a hidden cost of AI-generated code:
