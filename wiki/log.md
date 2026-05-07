@@ -1,3 +1,13 @@
+## [2026-05-07] Anthropic「Demystifying Evals for AI Agents」記事取り込み
+
+**Action**: kzinmrからのリクエストにより、Anthropic Engineering Blogの「Demystifying Evals for AI Agents」記事の取り込み状態を確認し、未保存のraw articleを保存、既存ページを強化。
+
+**New raw articles saved**:
+  - `raw/articles/2026-01-09_anthropic_demystifying-evals-ai-agents.md`
+
+**Pages enriched**:
+  - `concepts/harness-engineering/system-architecture/evals-for-ai-agents.md` — Eval Saturation、Creative Failures、Swiss Cheese Model（ホリスティック評価フレームワーク）の3セクションを追加。updated日とsourcesを更新。
+
 ## [2026-05-07] 8大AI Agentハーネス一覧比較ポータル構築 — 4エンティティ新規追加 + 1エンリッチ + 1比較ページ
 
 **Action**: kzinmrからの指示により、8つのAI Agentハーネスのwikiエンティティ状態を確認し、不足分をエンリッチメント込みで追加。一覧比較ポータルを整備。
