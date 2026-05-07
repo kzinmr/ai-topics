@@ -89,6 +89,7 @@ Reduces disk space by ~40% while maintaining vLLM and llmcompressor compatibilit
 - [[concepts/inference/llama-cpp]] — GGUF inference engine
 - [[concepts/inference/vllm]] — vLLM serving with quantized models
 - [[entities/tim-dettmers]] — bitsandbytes, LLM.int8(), QLoRA creator
+- [[concepts/napkin-math-for-finetuning]] — Memory & compute estimation for fine-tuning (by Jonathan Whitaker)
 
 ## Sources
 

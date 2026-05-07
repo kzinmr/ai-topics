@@ -14,10 +14,11 @@ tags:
   - gradient-checkpointing
   - cpu-offloading
 related_concepts:
-  - fsdp-qlora
-  - flash-attention
-  - lora
-  - quantization
+  - fine-tuning/peft-lora-qlora
+  - qlora
+  - fine-tuning/quantization-overview
+  - flashattention-pytorch-educational
+  - fine-tuning/instruction-fine-tuning
 related_entities:
   - jonathan-whitaker
 related_articles:

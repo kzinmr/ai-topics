@@ -71,3 +71,4 @@ sources: []
 
 - [[concepts/_index]]
 - [[concepts/fine-tuning/pytorch-fsdp]]
+- [[concepts/napkin-math-for-finetuning]] — Memory & compute estimation for fine-tuning (by Jonathan Whitaker)

@@ -51,6 +51,7 @@ The fix is **paired evaluation**: present responses from multiple models side-by
 - [[concepts/llm-training-coherence-evolution]] — Training methodology evolution
 - [[entities/gpjt]] — Giles Thomas's LLM training experiments
 - [[concepts/evaluation-benchmarks]] — Model evaluation approaches
+- [[concepts/napkin-math-for-finetuning]] — Memory & compute estimation for fine-tuning (by Jonathan Whitaker)
 
 ## Sources
 

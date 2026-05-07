@@ -221,6 +221,7 @@ trainer.train()
 - **[TRL (Transformer Reinforcement Learning)](../concepts/trl.md)** — Library providing `SFTTrainer`, which integrates Q-LoRA configuration.
 - **[Double Quantization](../concepts/double_quantization.md)** — Technique to compress quantization metadata by applying a second quantization pass.
 - **[Gradient Checkpointing](../concepts/gradient_checkpointing.md)** — Complementary memory-saving technique often used alongside Q-LoRA.
+- **[Napkin Math For Finetuning](../concepts/napkin-math-for-finetuning.md)** — Jonathan Whitaker's framework for estimating memory/compute requirements during fine-tuning.
 
 ---
 

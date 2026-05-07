@@ -113,6 +113,7 @@ tokenizer.save_pretrained("production_model")
 - [[concepts/fine-tuning/axolotl]] — YAML-config fine-tuning with LoRA/QLoRA support
 - [[concepts/fine-tuning/grpo-rl-training]] — GRPO training with PEFT integration
 - [[concepts/fine-tuning/quantization-overview]] — GGUF/GPTQ/FP8 quantization formats
+- [[concepts/napkin-math-for-finetuning]] — Memory & compute estimation for fine-tuning (by Jonathan Whitaker)
 
 ## Sources
 - HuggingFace PEFT documentation (huggingface.co/docs/peft)
