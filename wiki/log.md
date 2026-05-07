@@ -56,7 +56,16 @@
 - `raw/articles/2024-12-16_danielhanchen-post-pretraining.md` — Daniel HanのIlya講演分析スレッド（2024年12月）
 
 **Pages updated**:
-- `concepts/scaling-hypothesis.md` — 「Post-Pretraining Playbook: Daniel Han's Analysis」セクション追加。5つのpost-pretrainingアプローチ（test-time scaling、MoE/Memory+、BLT、データ壁突破、post-training最適化）、Memory+層の技術詳細（Product Key tricks）、データ壁問題。Scaling Hypothesisの進化（2014-2020→2020-2024→2024+）を整理。
+- `concepts/scaling-hypothesis.md` — 「Post-Pretraining Playbook: Daniel Han's Analysis」セクション追加。
+
+---
+
+## [2026-05-07] Scaling Hypothesis概念ページ拡充 — 2025年の発展とクロスリファレンス
+
+**Source**: User request (Discord) — 2025年の議論の調査とクロスリファレンス追加
+
+**Pages updated**:
+- `concepts/scaling-hypothesis.md` — 「2025 Cross-References and Developments」セクション追加。o3/o4-mini (test-time compute scaling), SynthLLM (synthetic data scaling laws), BLT (byte latent transformer), Memory Layers at Scale (sparse lookup tables, 128B param). 各トピックをDaniel Hanの5アプローチにマッピング。2020→2024→2025の進化比較表を含む。
 
 ---
 

@@ -28,6 +28,10 @@ sources:
   - https://www.youtube.com/watch?v=orDKvo8h71o
   - https://www.youtube.com/watch?v=1yvBqasHLZs
   - https://x.com/danielhanchen/status/1868748998783517093
+  - https://openai.com/index/introducing-o3-and-o4-mini/
+  - https://arxiv.org/abs/2412.09871
+  - https://ai.meta.com/research/publications/memory-layers-at-scale/
+  - https://www.microsoft.com/en-us/research/articles/synthllm-breaking-the-ai-data-wall-with-scalable-synthetic-data/
 related:
   - scaling-laws
   - bitter-lesson
@@ -309,6 +313,76 @@ Sources:
 - [[raw/articles/2024-12-16_danielhanchen-post-pretraining]] — Full thread analysis
 - [Original tweet](https://x.com/danielhanchen/status/1868748998783517093)
 
+## 2025 Cross-References and Developments
+
+The "post-pretraining" thesis from Sutskever's NeurIPS 2024 talk has been validated and extended by several major 2025 developments across industry and academia.
+
+### Test-Time Compute Scaling: OpenAI o3/o4-mini (April 2025)
+
+OpenAI's o3 model [formally introduced test-time compute scaling](https://openai.com/index/introducing-o3-and-o4-mini/), demonstrating that "large-scale reinforcement learning exhibits the same 'more compute = better performance' trend observed in GPT-series pretraining." Key findings:
+- RL scaling offers a **new axis** for improvement beyond pretraining compute
+- o3 achieved 87.7% on GPQA Diamond (expert-level science)
+- ARC-AGI score: 76% (low compute) → 88% (high compute) — demonstrating that unrestricted test-time resources unlock qualitatively different capabilities
+- **o4-mini** (smaller, faster) achieved 99.5% pass@1 on AIME 2025 with Python interpreter
+
+**Connection**: This validates Han's "Approach #1" — test-time compute is the first major post-pretraining scaling paradigm to reach production.
+
+### Synthetic Data Scaling Laws: SynthLLM (Microsoft, March 2025)
+
+Microsoft Research demonstrated [scaling laws for synthetic data](https://www.microsoft.com/en-us/research/articles/synthllm-breaking-the-ai-data-wall-with-scalable-synthetic-data/) through the SynthLLM framework:
+- **Rectified scaling law**: Synthetic data follows a modified version of the original scaling law
+- Performance plateaus at ~300B tokens of synthetic data
+- Larger models need *less* synthetic data (inverse trend vs. natural data)
+- EMNLP 2025 paper [Demystifying Synthetic Data in LLM Pre-training](https://arxiv.org/abs/2510.01631) (1,000+ LLMs, 100K+ GPU hours) found: 1/3 synthetic + 2/3 natural data mixtures speed up training 5-10× at larger budgets
+
+**Connection**: Validates Han's "Approach #4" (Data Wall breakthroughs) — synthetic data is a viable path but follows different scaling dynamics.
+
+### Byte Latent Transformer (Meta, ACL 2025)
+
+Meta's [BLT architecture](https://arxiv.org/abs/2412.09871) changes what "tokens" means:
+- Operates directly on **raw bytes**, grouped into **dynamic patches** based on entropy
+- Complex regions get fine patches, simple regions get coarse patches
+- Matches Llama 3 performance with **50% fewer inference FLOPs**
+- Unlocks a new scaling dimension: growing both patch and model size simultaneously
+- Published at ACL 2025 ([Pagnoni et al.](https://aclanthology.org/2025.acl-long.453/))
+
+**Connection**: Validates Han's "Approach #3" — editing the scaling law definition. BLT demonstrates that the tokenization bottleneck itself can be eliminated at scale.
+
+### Memory Layers at Scale (Meta, 2025)
+
+Meta's [Memory Layers](https://ai.meta.com/research/publications/memory-layers-at-scale/) paper (Berges et al.) scales sparse lookup tables up to **128B parameters**:
+- Replaces FFN MLPs with trainable key-value lookup tables
+- **100%+ improvement** in factual accuracy (QA benchmarks)
+- Outperforms dense models with **2× the compute budget**
+- Outperforms MoE models when matched for both compute and parameters
+- Follow-up work: [Conditional Memory via Scalable Lookup](https://arxiv.org/abs/2601.07372) (Engram, Jan 2026) adds another sparsity axis combining MoE + memory
+
+**Connection**: Validates Han's "Approach #2" — architecture innovation. Memory+ layers represent a genuine new primitive beyond both dense FFNs and MoEs.
+
+### Industry Analysis: "Pretraining: The First Scaling Frontier" (Dimension Research, Dec 2025)
+
+[Dimension Research](https://research.dimensioncap.com/p/pretraining-the-first-scaling-frontier) published a comprehensive analysis agreeing with Sutskever's thesis:
+- "Pretraining is Dead(?)" — finite data volume/quality, long training timelines, costly compute
+- Key quote: "We can only battle finite data volume/quality, long training timelines, and costly compute/power infrastructure for so long"
+- References Sardana et al.'s **inference-optimized scaling** as a clarifying framework
+
+### Summary: The Evolving Scaling Hypothesis in 2025
+
+| 2020 View (Gwern) | 2024 Shift (Sutskever) | 2025 Validation |
+|-------------------|----------------------|-----------------|
+| Scale compute + data → AGI | "Pretraining will end" | o3 RL scaling proves new compute axis |
+| Emergent abilities from scale | Need agency + reasoning | Memory layers: 2× compute efficiency |
+| Neural nets are lazy | Data wall is real | SynthLLM: rectified scaling laws |
+| Hardware overhang | Test-time compute | BLT: 50% fewer FLOPs, same performance |
+
+Sources:
+- [OpenAI o3 announcement](https://openai.com/index/introducing-o3-and-o4-mini/) (April 2025)
+- [SynthLLM: Breaking the AI Data Wall](https://www.microsoft.com/en-us/research/articles/synthllm-breaking-the-ai-data-wall-with-scalable-synthetic-data/) (Microsoft Research, 2025)
+- [BLT: Patches Scale Better Than Tokens](https://arxiv.org/abs/2412.09871) — ACL 2025
+- [Memory Layers at Scale](https://ai.meta.com/research/publications/memory-layers-at-scale/) — Meta AI
+- [Conditional Memory via Scalable Lookup](https://arxiv.org/abs/2601.07372) (Engram)
+- [Pretraining: The First Scaling Frontier](https://research.dimensioncap.com/p/pretraining-the-first-scaling-frontier) — Dimension Research, Dec 2025
+
 ## Relationship to Other Scaling Concepts
 
 - **[[concepts/scaling-laws|Scaling Laws]]**: The empirical mathematical framework for predicting loss given compute/data/parameters
@@ -326,3 +400,7 @@ Sources:
 - [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215) — Sutskever, Vinyals, Le (2014)
 - [Ilya Sutskever NeurIPS 2024 talk](https://www.youtube.com/watch?v=1yvBqasHLZs) — "What a Decade" retrospective
 - [Daniel Han's Post-Pretraining Analysis](https://x.com/danielhanchen/status/1868748998783517093) — Technical roadmap for beyond pretraining
+- [OpenAI o3 and o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) — Test-time compute scaling, April 2025
+- [Byte Latent Transformer](https://arxiv.org/abs/2412.09871) — Meta, ACL 2025, patches scale better than tokens
+- [Memory Layers at Scale](https://ai.meta.com/research/publications/memory-layers-at-scale/) — Meta, 128B parameter sparse lookup tables
+- [SynthLLM: Breaking the AI Data Wall](https://www.microsoft.com/en-us/research/articles/synthllm-breaking-the-ai-data-wall-with-scalable-synthetic-data/) — Microsoft Research, rectified scaling laws for synthetic data
