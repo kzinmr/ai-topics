@@ -1,7 +1,7 @@
 ---
 title: "Coding Agent Harnesses Comparison"
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-07
 type: comparison
 tags: [comparison, coding-agents, harness, harness-engineering, ai-agents]
 sources:
@@ -18,8 +18,8 @@ sources:
 
 # Coding Agent Harnesses Comparison
 
-**Date:** May 1, 2026 (Updated from original)
-**Related:** [[hermes-vs-openclaw-architecture]], [[concepts/harness-engineering]], [[concepts/coding-agents]], [[concepts/agent-harness-primitives]]
+**Date:** May 7, 2026 (Kilo追加)
+**Related:** [[concepts/agent-harness-comparison]] — 更新版9ハーネス比較ポータル, [[hermes-vs-openclaw-architecture]], [[concepts/harness-engineering]], [[concepts/coding-agents]], [[concepts/agent-harness-primitives]]
 
 > **注意:** 本ページは推論サーバー（vLLM/llama.cpp等）ではなく、**コーディングエージェントハーネス**（Claude Code, OpenCode, Pi, Codex CLI, Cursor, OpenClaw, Hermes Agent）を比較する。Aiderは対象外。
 
@@ -164,6 +164,13 @@ OpenAIは**ChatGPT Plus/Pro/Team/EnterpriseサブスクリプションでCodex C
 - MCP・サブエージェント・リモートTUI・画像生成・Web検索まで網羅
 - `--oss` でローカルモデルにも対応、カスタムプロバイダ設定も可
 
+### 「全部入りのプラットフォームが欲しい」
+→ **Kilo**（OpenCode fork、500+モデル、CLI/IDE/KiloClaw）
+- OpenCodeをベースにVS Code + JetBrains拡張 + Kilo CLI + ホステッドOpenClaw
+- 500+モデルをKilo Gateway経由でゼロマークアップ
+- インライン補完、Cloud Agents、Teams/SSO、コードレビュー
+- Apache-2.0、無料枠あり
+
 ### 「いろんなモデルを試したい / 乗り換えたい」
 → **OpenCode**（75+プロバイダ、140K GitHub Stars）
 - Claude → GPT → Gemini → Qwen → DeepSeek を同一ワークフローで切替
@@ -212,8 +219,9 @@ OpenAIは**ChatGPT Plus/Pro/Team/EnterpriseサブスクリプションでCodex C
 - [[concepts/agent-harness-primitives]]
 - [[concepts/coding-agents]]
 - [[entities/claude-code]]
-- [[entities/pi-coding-agent]]
+- [[entities/pi]]
 - [[entities/opencode]]
+- [[entities/kilo]]
 - [[entities/hermes-agent]]
 - [[entities/openclaw]]
 

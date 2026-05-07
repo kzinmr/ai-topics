@@ -17,6 +17,21 @@
 
 **Index/log**: index.mdに5エントリ追加、1リダイレクト更新、1エントリ削除（pi-coding-agent→pi統合）。ページ数5178→5183、Full entries 4632→4637。
 
+## [2026-05-07] Kilo（OpenCode fork）をハーネス比較に追加
+
+**Action**: kzinmrからの指示により、Kilo（コードエージェントプラットフォーム）を既存の9ハーネス比較に追加。過去セッションの存在を確認。
+
+**Previous analysis found**: `comparisons/coding-agent-harnesses.md`（2026-05-01作成）が存在。過去4セッション（5/1-5/2）でcoding agent harness比較を行っていたことを確認。
+
+**Pages created**:
+- `entities/kilo.md` — Kilo Code: OpenCode fork、Apache-2.0、VS Code+JetBrains+CLI、500+モデル/Kilo Gateway、KiloClaw（hosted OpenClaw）、Teams/SSO/Analytics、インライン補完。L2。
+
+**Pages updated**:
+- `concepts/agent-harness-comparison.md` — 「8 Major Harnesses」→「9 Major Harnesses」に更新。全比較表（概要/アーキテクチャ/モデル相性/価格/ユースケース/コミュニティ）にKilo列追加。関係図セクション追加。
+- `comparisons/coding-agent-harnesses.md` — 決定フレームワークにKilo推奨追加、Related更新。pi-coding-agent→pi参照修正。
+
+**Index/log**: entities/kiloをKセクションに追加。ページ数5183→5184、Full entries 4637→4638。
+
 **Action**: concepts/hermes-vs-openclaw.md を削除（comparisons/hermes-vs-openclaw-architecture.md と concepts/openclaw/architecture-comparison.md が2026-04-18に既存）
 **Merged**: 新規の建築的深掘り分析を comparisons/hermes-vs-openclaw-architecture.md に追加（Architecture Deep-Diveセクション）
 **Kept**: concepts/hermes-agent-architecture.md と concepts/openclaw-architecture.md（単体アーキテクチャ詳細は新規価値あり）

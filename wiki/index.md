@@ -2,7 +2,7 @@
      2|
      3|> Content catalog. Every wiki page listed under its type with a one-line summary.
      4|> Read this first to find relevant pages for any query.
-> Last updated: 2026-05-07 | Total pages: 5183 | Full entries: 4637 | Stubs: 546 |
+> Last updated: 2026-05-07 | Total pages: 5184 | Full entries: 4638 | Stubs: 546 |
      6|
      7|## Entities (404 pages)
      8|
@@ -205,8 +205,9 @@
    202|- [[entities/k0nserv]] — **Blog** | hugotunius.se |
    203|- [[entities/karri-saarinen]] — **X** | @karrisaarinen |
    204|- [[entities/khe-hy]] — Khe Hy is a writer and thinker focused on organizational AI adoption strategies.
-   205|- [[entities/kieran-klaassen]] — General Manager of Cora, Every's AI email assistant. Author of "Compound Engineering: The Definitive Guide", creator of the compound-engineering-plugin (7K+ stars).
-   206|- [[entities/koylan-ai]] — **URL:** https://muratcankoylan.com
+- [[entities/kieran-klaassen]] — General Manager of Cora, Every's AI email assistant. Author of "Compound Engineering: The Definitive Guide", creator of the compound-engineering-plugin (7K+ stars).
+- [[entities/kilo]] — OpenCode forkによるオープンソースAIコーディングプラットフォーム。Apache-2.0、VS Code + JetBrains + CLI、500+モデル（Kilo Gateway）、ホステッドOpenClaw（KiloClaw）。Teams/SSO/Analytics。インライン補完、Cloud Agents、コードレビュー。
+- [[entities/koylan-ai]] — **URL:** https://muratcankoylan.com
    207|- [[entities/krebsonsecurity-com]] — **URL:** https://krebsonsecurity.com
    208|- [[entities/lance-martin]] — **X** | @RLanceMartin |
    209|- [[entities/late-interaction]] — **URL:** https://www.lateinteraction.com
