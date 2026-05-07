@@ -134,6 +134,7 @@ This work challenges the traditional separation between discriminative and gener
 | Jul 2023 | Why and How I'm Shifting Focus to LLMs | Transition from image to text generation |
 | Apr 2023 | A Recipe for Training Good Generative Models | Three-stage framework for generative model training |
 | Apr 2023 | Reward Hacking with RainbowDiffusion | Exploring adversarial behavior in diffusion models |
+| 2025 | Napkin Math For Finetuning (slides) | Back-of-the-envelope estimation of memory & compute for fine-tuning LLMs |
 
 ### Professional Experience
 
