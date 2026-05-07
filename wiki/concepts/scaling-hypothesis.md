@@ -23,9 +23,11 @@ sources:
   - raw/articles/2024-04-11_hyungwonchung-transcript.md
   - raw/articles/2024-12-13_ilyasutskever-seq2seq-decade.md
   - raw/articles/2024-12-13_ilyasutskever-transcript.md
+  - raw/articles/2024-12-16_danielhanchen-post-pretraining.md
   - https://gwern.net/scaling-hypothesis
   - https://www.youtube.com/watch?v=orDKvo8h71o
   - https://www.youtube.com/watch?v=1yvBqasHLZs
+  - https://x.com/danielhanchen/status/1868748998783517093
 related:
   - scaling-laws
   - bitter-lesson
@@ -257,6 +259,56 @@ Sources:
 - [[raw/articles/2024-12-13_ilyasutskever-transcript]] — Full transcript
 - [NeurIPS 2024: Ilya Sutskever](https://www.youtube.com/watch?v=1yvBqasHLZs) (YouTube)
 
+## Post-Pretraining Playbook: Daniel Han's Analysis
+
+Daniel Han's detailed thread (December 2024) on Ilya Sutskever's talk provides a concrete technical roadmap for the "post-pretraining" world. He unpacks Sutskever's claim into five actionable directions, backed by specific papers and architectures.
+
+### The Core Argument
+
+Sutskever implied we need to find **something else to scale** — the brain–body mass ratio graph showed human intelligence "scaled" better than mammals biologically, suggesting evolution found a different scaling path. Similarly, LSTMs got out-scaled by transformers. The goal is to **"edit" the scaling laws** rather than just follow them.
+
+### Five Post-Pretraining Approaches
+
+| # | Approach | Key Technologies | Scaling Law Impact |
+|---|----------|-----------------|-------------------|
+| 1 | **Test-time compute scaling** | Search, agents, O1, QwQ | Shifts from training compute to inference compute |
+| 2 | **Architecture innovation** | MoE, Memory+ layers | Active parameters >> total parameters |
+| 3 | **Scaling law definition change** | Byte Latent Transformers (BLT) | Changes what "tokens" means vs. bytes |
+| 4 | **Data Wall breakthroughs** | Synthetic data, filtering (FineWeb) | Extends the data scaling frontier |
+| 5 | **Post-training optimization** | RL, DPO, PPO | Squeezes more performance from same tokens |
+
+### Key Architecture: Memory+ Layers
+
+The most interesting direction according to Han — **sparse lookup tables** replacing FFN MLPs:
+
+- A giant learnable matrix V (Values, size ~100M×d) with a Key matrix K for dot-product indexing
+- Select top-K rows via Cartesian product trick: split K into KA and KB (sqrt(100M)×d/2)
+- Indices computed as: sqrt(N) × topK_indices(KA·q) + topK_indices(KB·q)
+- Memory+ adds GLU-style nonlinearity — **scales better than MoEs**
+
+### The Data Wall
+
+A theoretical limit: all internet data will eventually be consumed by large models. Approaches:
+1. **Synthetic Data Generation** — using trained models to augment datasets (question: will it plateau?)
+2. **Better filtering** — FineWeb dataset as exemplar
+3. **RL & post-training** — DPO, PPO extract more from the same tokens
+
+### Connection to the Scaling Hypothesis
+
+Daniel Han's analysis operationalizes the evolution of the Scaling Hypothesis:
+
+| Era | Paradigm | Limitation |
+|-----|----------|-----------|
+| **2014–2020** | seq2seq → GPT-3 (scale compute + data) | Engineering conviction |
+| **2020–2024** | GPT-3 → GPT-4 (scale everything) | Data is finite |
+| **2024+** | Post-pretraining (scale smarter) | Need new architectures + data strategies |
+
+The hypothesis has evolved from "scale more" to "scale *differently*" — finding new dimensions for scaling (test-time compute, active parameters, data efficiency) rather than just pushing the same axes.
+
+Sources:
+- [[raw/articles/2024-12-16_danielhanchen-post-pretraining]] — Full thread analysis
+- [Original tweet](https://x.com/danielhanchen/status/1868748998783517093)
+
 ## Relationship to Other Scaling Concepts
 
 - **[[concepts/scaling-laws|Scaling Laws]]**: The empirical mathematical framework for predicting loss given compute/data/parameters
@@ -273,3 +325,4 @@ Sources:
 - [Scaling Instruction-Finetuned Language Models](https://arxiv.org/abs/2210.11416) — Chung et al. (Flan, 2022)
 - [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215) — Sutskever, Vinyals, Le (2014)
 - [Ilya Sutskever NeurIPS 2024 talk](https://www.youtube.com/watch?v=1yvBqasHLZs) — "What a Decade" retrospective
+- [Daniel Han's Post-Pretraining Analysis](https://x.com/danielhanchen/status/1868748998783517093) — Technical roadmap for beyond pretraining

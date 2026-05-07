@@ -44,7 +44,19 @@
 - `raw/articles/2024-12-13_ilyasutskever-transcript.md` — 同講演の文字起こし
 
 **Pages updated**:
-- `concepts/scaling-hypothesis.md` — 「Ilya Sutskever: The End of Pretraining (NeurIPS 2024)」セクション追加。2014年レシピ（autoregressive + large NN + large data）、Deep Learning Dogma、pretrainingの終焉と超知能（agentic, reasons, understands, self-aware）への移行。Scaling Hypothesisの限界と次フェーズの展望をSutskeverの視点から。
+- `concepts/scaling-hypothesis.md` — 「Ilya Sutskever: The End of Pretraining (NeurIPS 2024)」セクション追加。
+
+---
+
+## [2026-05-07] Scaling Hypothesis概念ページ拡充 — Daniel Hanのpost-pretraining分析
+
+**Source**: User request (Discord) — Daniel Han (@danielhanchen) のIlya講演メモスレッドのwiki取り込み
+
+**Raw articles saved**:
+- `raw/articles/2024-12-16_danielhanchen-post-pretraining.md` — Daniel HanのIlya講演分析スレッド（2024年12月）
+
+**Pages updated**:
+- `concepts/scaling-hypothesis.md` — 「Post-Pretraining Playbook: Daniel Han's Analysis」セクション追加。5つのpost-pretrainingアプローチ（test-time scaling、MoE/Memory+、BLT、データ壁突破、post-training最適化）、Memory+層の技術詳細（Product Key tricks）、データ壁問題。Scaling Hypothesisの進化（2014-2020→2020-2024→2024+）を整理。
 
 ---
 
