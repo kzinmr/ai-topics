@@ -29,6 +29,8 @@ sources:
   - raw/articles/2024-03-26_hamel-revenge-data-scientist.md
   - raw/articles/2026-02-17_langchain-improving-deep-agents-harness-engineering.md
   - raw/articles/2026-04-08_langchain-better-harness-hill-climbing-evals.md
+  - raw/articles/2026-05-06_vtrivedy10_strong-opinions-agent-harness-engineering.md
+  - https://x.com/vtrivedy10/status/2052100726608781363
   - https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering
   - https://blog.langchain.com/better-harness-a-recipe-for-harness-hill-climbing-with-evals/
 description: "The practice of building evaluation and constraint systems around LLMs for production reliability. Includes production case studies from LangChain and others."
@@ -214,6 +216,22 @@ From swyx's AINews analysis (May 2026), the "product boundary" is shifting from 
 - **Cost efficiency**: Teams achieving **>20x cheaper agents** by tuning open models inside high-quality harnesses rather than using frontier APIs
 - **LangGraph improvements**: Model-specific harness configs, schema migrations, node-level error handlers
 
+## Viv Trivedy's "Strong Opinions, Loosely Held" (May 2026)
+
+On May 6, 2026, [[entities/vtrivedy10|Viv Trivedy]] published an 8-point manifesto on agent + harness engineering that synthesized and extended the field's consensus:
+
+| # | Point | Significance for Harness Engineering |
+|---|-------|-------------------------------------|
+| 1 | **Harness > Model** | Formalizes the LangChain finding: harness optimization (prompts, tools, skills, hooks) outperforms model swapping. Optimization is becoming agent-driven. |
+| 2-3 | **No general purpose agent** | Challenges the notion of a universal agent; what exists is a tradeoff between customization and performance |
+| 4 | **Convergence on Skills** | Harness optimization packages into Skills as models improve at in-context learning — reducing harness complexity over time |
+| 5 | **Evals as a moat** | Extends the [[concepts/ai-evals]] framework with a business moat thesis: data to produce evals is a competitive advantage |
+| 6 | **Open model cost advantage** | 20x+ cost reduction from open models drives harness engineering investment — aligning with the Context Pipelines finding above |
+| 7 | **Context window drives architecture** | Most task decomposition exists because usable context is 50-100k — directly ties [[concepts/context-engineering]] to architectural decisions |
+| 8 | **Age of Unbundled Agents** | Subagents as Tools within a harness — see [[concepts/unbundled-agents]] |
+
+**Key takeaway**: Viv's manifesto provides a unified framework connecting harness hill-climbing (Point 1), evals as moat (Point 5), and open model cost dynamics (Point 6) — all pointing to harness engineering as the primary differentiator in production AI.
+
 ## Sierra: Harness-as-a-Service at Scale
 
 [[entities/sierra|Sierra]], the AI customer service platform, demonstrates harness engineering at enterprise scale:
@@ -240,6 +258,7 @@ Training and inference infrastructure advances enabling better harnesses:
 - [[concepts/llm-as-judge]] — Core technique that requires harness validation.
 - [[concepts/ai-evals-people]] — The community of practitioners
 - [[concepts/context-engineering]] — The practice of optimizing context windows for LLM agents, a cross-cutting component of harness engineering.
+- [[concepts/unbundled-agents]] — Viv Trivedy's pattern of specialist subagents as Tools within a harness.
 - [[concepts/karpathy]] — Andrej Karpathy, AI researcher and educator who coined context engineering and vibe coding.
 - [[concepts/rlm-recursive-language-models]] — Recursive decomposition as a harness pattern; RLM's programmatic context management aligns with harness engineering's build-verify loop.
 - [[entities/hamel-husain]] — Primary proponent and popularizer.

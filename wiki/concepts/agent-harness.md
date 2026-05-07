@@ -17,7 +17,9 @@ sources: [
   "raw/articles/2026-the-ai-cake-trade.md",
   "raw/articles/crawl-2026-04-18-token-economics.md",
   "raw/articles/2026-is-s3-faster-than-a-file-system.md",
-  "raw/articles/2026-05-02_atalupadhyay-agent-harness.md"
+  "raw/articles/2026-05-02_atalupadhyay-agent-harness.md",
+  "raw/articles/2026-05-06_vtrivedy10_strong-opinions-agent-harness-engineering.md",
+  "https://x.com/vtrivedy10/status/2052100726608781363"
 ]
 ---
 
@@ -209,6 +211,18 @@ The field is moving toward thinner harnesses as models improve. But the harness 
 
 > **The next time your agent fails, don't blame the model. Look at the harness.**
 
+### Viv Trivedy's Synthesis (May 2026)
+
+[[entities/vtrivedy10|Viv Trivedy]]'s 8-point "Strong Opinions" ([source](https://x.com/vtrivedy10/status/2052100726608781363)) reframes the harness landscape with three key extensions:
+
+1. **No general purpose agent exists** (Point 2-3) — What's called "general purpose" is just "decently good at many tasks out of the box," which ultimately converges on a good coding agent with the right tool set.
+
+2. **Convergence on Skills** (Point 4) — As models improve at in-context learning, task-specific harness optimization packages into discrete Skills (prompt + tool design), reducing harness complexity while preserving task performance.
+
+3. **Subagents as Tools** (Point 8) — The harness becomes a configurable box populated with specialist subagent-tools (WarpGrep, Chroma Context, Nemotron) rather than a monolithic runtime. See [[concepts/unbundled-agents]].
+
+These points extend the framework's core argument: the harness determines agency, not the model. As harnesses evolve toward skill-based composition and subagent-as-tool architectures, the design challenge shifts from "how do I run this agent" to "what tools/subagents do I configure for this task."
+
 ## The Harness Is the Backend (iii Paradigm)
 
 A radical alternative view emerged in April 2026 from the [[entities/iii-platform|iii platform]]: the harness should not be separate from the backend — it should **be** the backend.
@@ -231,4 +245,5 @@ This paradigm connects to the [[concepts/bitter-lesson-harnessing|Bitter Lesson 
 - [[concepts/agentic-ai-skills]] — Design principles for reusable agent capabilities
 - [[concepts/bitter-lesson-harnessing]] — How model intelligence affects harness complexity
 - [[concepts/context-engineering]] — Managing what the model sees and when
+- [[concepts/unbundled-agents]] — Viv Trivedy's subagents-as-Tools pattern
 - [[entities/akshay-pachaar]] — Author of "The Anatomy of an Agent Harness"

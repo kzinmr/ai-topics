@@ -7,10 +7,13 @@ title: "Vivek 'Varun' Trivedy (@vtrivedy10)"
 type: entity
 handle: "@vtrivedy10"
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-05-07
 tags: [person, langchain, harness-engineering, ai-agents, deep-agents]
 aliases: ["vtrivedy10", "Vivek Trivedy", "Varun Trivedy"]
-sources: []
+sources:
+  - raw/articles/2026-05-06_vtrivedy10_strong-opinions-agent-harness-engineering.md
+  - https://x.com/vtrivedy10/status/2052100726608781363
+  - raw/articles/2024-03-26_hamel-revenge-data-scientist.md
 ---
 
 # Vivek 'Varun' Trivedy (@vtrivedy10)
@@ -104,9 +107,10 @@ Trivedy predicts a future where builders create custom harnesses (like Bolt or C
 | Oct 2025 | Published "The Modern Planning Agent is Really a Dynamic, Adaptive Workflow Generator" |
 | Nov 2025 | Published "Agents Should Be More Opinionated" |
 | Dec 2025 | Published "Evaluating Deep Agents CLI on Terminal Bench 2.0" |
-| Feb 2026 | Published "Improving Deep Agents with Harness Engineering" |
-| Dec 2025 – Present | Product Lead, Agents & Harnesses @ LangChain |
-| Mar 2026 | Published "The Anatomy of an Agent Harness" |
+|| Feb 2026 | Published "Improving Deep Agents with Harness Engineering" |
+|| May 2026 | Published "Strong Opinions, Loosely Held on Agent + Harness Engineering" — 8-point manifesto on harness design, general-purpose agents, evals as moat, open model cost efficiency, and unbundled agents |
+|| Dec 2025 – Present | Product Lead, Agents & Harnesses @ LangChain |
+|| Mar 2026 | Published "The Anatomy of an Agent Harness" |
 | Mar 2026 | LangChain open-sourced Deep Agents (MIT License) |
 
 ## Blog / Recent Posts
@@ -131,6 +135,41 @@ Trivedy predicts a future where builders create custom harnesses (like Bolt or C
 *   **Agent Reliability:** Posts about evaluation, benchmarking (Terminal Bench), and self-verification.
 *   **Open Source AI:** Advocating for open harnesses (Deep Agents) and model-agnosticism.
 *   **Developer Tools:** Commentary on the evolution of IDEs, CLIs, and agent workflows.
+
+## Strong Opinions, Loosely Held (May 2026)
+
+On May 6, 2026, Viv published an 8-point manifesto "Strong Opinions, Loosely Held on Agent + Harness Engineering" on X ([source](https://x.com/vtrivedy10/status/2052100726608781363)). These opinions generated 542 bookmarks, 377 likes, and substantial discussion from the AI engineering community.
+
+### The 8 Points
+
+| # | Point | Key Claim |
+|---|-------|-----------|
+| 1 | **Harness > Model** | You can outperform any default harness+model by engineering the harness around the task. Using the exact same model, curate prompts, tools, skills, hooks for that task. The optimization process is becoming agent-driven with humans reviewing evals/rewards to hill climb on. "Just say what you want." |
+| 2 | **No General Purpose Agent** | A "general purpose" agent doesn't exist — it's a tradeoff between customization time and performance (cost, latency, accuracy). Who decides what's general? |
+| 3 | **If it existed** | A general purpose agent would look like a good coding agent. |
+| 4 | **Convergence on Skills** | Task-specific harness optimization will converge to good prompt & tool design packaged as a Skill, as models get better at in-context learning. |
+| 5 | **Evals as a Moat** | Evals are a moat, and data to produce evals is a moat. Especially true for vertical agent companies. If evals encode all good behavior, the signal can be hill climbed to improve the agent. |
+| 6 | **Open Model Cost Advantage** | Frontier closed models are far too expensive for most tasks. As teams map costs to ROI, Open Model Harness Engineering will take off. A potential 20x+ cost reduction is almost always worth trying. |
+| 7 | **Context Window Drives Architecture** | Most design decisions around task decomposition and context engineering exist because our usable context window is 50-100k. Agents that excel at breaking down tasks, applying compaction, and orchestrating subagents will be the most delightful products. |
+| 8 | **Age of Unbundled (& Rebundled) Agents** | Subagents exposed as Tools do domain-specific work for an orchestrator agent. The Harness becomes a box populated with exactly the right set of tools, skills, and subagents. Examples: WarpGrep (search), Chroma Context-1 (search), Nemotron 3 Omni (small multimodal), software-as-tools via Skills (Remotion, Blender). |
+
+### Connection to Existing Framework
+
+| Earlier Framework Element | Strong Opinions Extension |
+|--------------------------|--------------------------|
+| Harness = Model + System | Point 1 formalizes "harness optimization as hill-climbing on evals" |
+| Task decomposition | Point 7 traces this to context window limits (50-100k) |
+| Sub-agents | Point 8: Subagents-as-Tools as the emerging architecture |
+| Open models | Point 6: 20x+ cost reduction as ROI-driven imperative |
+| LangChain case studies | Point 5 positions evals as a *moat* rather than just a development tool |
+
+### Community Reception
+
+The post sparked extensive discussion with notable responses:
+- **Abhi Katiyar** (RT): "Agree with Viv's points. Today's harnesses are optimized for narrow tasks; the open harnesses are not generalizable."
+- **Anna B. Schäfer** and **Harrison Chase**: Discussed starting narrow with harness primitives vs. starting broad
+- **Johannes Mauerer**: Discussed model-harness coupling (models can't be swapped between harnesses)
+- **Elias Lumer**: Questioned the definition of "general purpose" — Viv clarified it means "decently good at many tasks out of the box" like a coding agent
 
 ## Harness, Memory, Context Fragments & the Bitter Lesson (Apr 2026)
 

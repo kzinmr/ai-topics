@@ -1,3 +1,20 @@
+## [2026-05-07] Viv Trivedy「Strong Opinions on Agent + Harness Engineering」取り込み
+
+**Action**: kzinmrからのリクエストにより、@vtrivedy10 の8項目マニフェスト（Note Tweet）をwikiに取り込み。raw article保存＋entityページ拡張＋新概念ページ作成＋既存概念ページへの相互参照追加。
+
+**New raw articles saved**:
+- `raw/articles/2026-05-06_vtrivedy10_strong-opinions-agent-harness-engineering.md` — Note Tweet全文（8項目）+ コミュニティ反応
+
+**New page created**:
+- `concepts/unbundled-agents.md` — Viv Trivedyの「Subagents-as-Tools」アーキテクチャパターン。ハーネスがタスクごとに最適なツール/スキル/サブエージェントで構成される設定可能なボックスになる概念。WarpGrep, Chroma Context-1, Nemotron 3 Omniなどの具体例を含む。
+
+**Pages enriched**:
+- `entities/vtrivedy10.md` — 「Strong Opinions, Loosely Held」セクションを新設。8項目の詳細説明＋既存フレームワークとの接続表＋コミュニティ反応を追加。タイムラインにMay 2026エントリ追加。sources更新。
+- `concepts/harness-engineering.md` — 「Viv Trivedy's Strong Opinions」セクションを新設。各項目のHarness Engineeringへの意義を表形式で整理。Related Conceptsにunbundled-agents追加。sources更新。
+- `concepts/agent-harness.md` — 「Viv Trivedy's Synthesis」サブセクションを追加。汎用エージェント不存在論、Skillsへの収束、Subagents-as-Toolsの3点を整理。See Also + sources更新。
+
+**Index updated**: [[concepts/unbundled-agents]] をConceptsセクションに追加。
+
 ## [2026-05-07] OpenClaw/Moltbook 77万エージェント同時侵害事件 — 専用概念ページ作成
 
 **Action**: kzinmrからのリクエストにより、OpenClaw/Moltbookのセキュリティインシデント（2026年1月）をwikiに取り込み。ソース調査＋raw article保存＋専用概念ページ作成＋既存ページへの相互参照追加。
