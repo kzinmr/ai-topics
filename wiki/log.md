@@ -1,3 +1,28 @@
+## [2026-05-07] Newsletter Triage — AI Delegation + Anthropic/SpaceX Colossus Deal
+
+**Action**: Processed 3 newsletters from email inbox. Triage report saved to `raw/inbox/newsletter-ingest/20260507T071049Z.json`.
+
+**Classified**:
+- **CRITICAL**: [AINews] Anthropic-SpaceXai's 300MW/$5B/yr deal for Colossus I (swyx/Substack)
+  - 220k+ GPUs, $5B/yr, 8000% ARR growth
+  - Code with Claude event: Dreaming, Outcomes, Managed Orchestration
+  - Dario Amodei predictions: one-person billion-dollar company, multiagents
+  - Infrastructure: OpenAI MRC, Perplexity ROSE, vLLM+Mooncake, ZAYA1-8B, Gemma 4
+- **HIGH**: The art of delegation in the age of AI (Alex Banks/The Signal)
+  - BCG/Harvard/MIT study: Cyborgs (60%), Centaurs (14%), Self-Automators (26%)
+  - Three delegation failures: Brief, Let Go, Review
+  - Process-based delegation → Orchestration
+- **LOW**: GPT-5.5 Instant (Superintelligence/beehiiv) — all URLs are obfuscated tracking redirects, cannot extract content
+
+**New page created**:
+- `concepts/ai-delegation-patterns.md` — AI delegation archetypes, three failures, progression from chat to orchestration. BCG/Harvard/MIT research framework. (~100 lines)
+
+**Pages enriched**:
+- `events/anthropic-code-w-claude-2026.md` — Added Colossus 1 scale details (300MW, 220k GPUs, $5B/yr), xAI Colossus 2 detail, rate limit increases, Opus API limits, Dario Amodei predictions, infrastructure news. Added swyx/AINews as source.
+
+**Index/log**: index.mdにconcepts/ai-delegation-patterns.md追加。総ページ数: 5189→5190、Full entries: 4640→4641。
+
+
 ## [2026-05-07] Sam Altman「Three Observations」記事取り込み
 
 **Action**: kzinmrからのリクエストにより、blog.samaltman.com/three-observations をwikiに取り込み。Sam Altmanの3つの経済的観察（対数スケーリング、超デフレコスト、超指数関数的価値）を文書化。

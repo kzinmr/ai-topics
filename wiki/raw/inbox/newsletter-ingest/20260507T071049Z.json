@@ -1,0 +1,62 @@
+{
+  "triage_run": "20260507T071049Z",
+  "triage_date": "2026-05-07",
+  "newsletters": [
+    {
+      "message_id": "<20260506130325.3.db5266984297793d@mg2.substack.com>",
+      "subject": "The art of delegation in the age of AI",
+      "source": "The Signal (Alex Banks) - Substack",
+      "date": "2026-05-06",
+      "classification": "high",
+      "reasoning": "Excellent article on AI delegation patterns (Cyborgs/Centaurs/Self-Automators), process-based delegation, and orchestration. Highly relevant to AI agent workflows and the claude-code/skills knowledge base.",
+      "key_topics": [
+        "AI delegation patterns",
+        "Cyborgs vs Centaurs vs Self-Automators (BCG/Harvard/MIT study)",
+        "Process-based delegation vs task-based prompting",
+        "Claude Projects and Skills as onboarding",
+        "Orchestration of parallel AI workflows",
+        "Agent review and verification"
+      ],
+      "recommended_action": "Create wiki concept page on AI delegation patterns. Link to entities/claude-code skill.",
+      "raw_file": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-06-the-art-of-delegation-in-the-age-of-ai.md"
+    },
+    {
+      "message_id": "<20260506.155248.19d55087@mta23>",
+      "subject": "GPT-5.5 Instant: Less Fluff, More Facts",
+      "source": "Superintelligence (beehiiv newsletter)",
+      "date": "2026-05-06",
+      "classification": "low",
+      "reasoning": "All 20 URLs are obfuscated beehiiv tracking redirects. Cannot extract actual article content.",
+      "key_topics": [
+        "Unknown - all URLs are tracking redirects"
+      ],
+      "recommended_action": "Skip. Links cannot be resolved to actual article URLs.",
+      "raw_file": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-06-gpt-5-5-instant-less-fluff-more-facts.md"
+    },
+    {
+      "message_id": "<202607055714.3.431cb5cbaa877476@mg-d1.substack.com>",
+      "subject": "[AINews] Anthropic-SpaceXai's 300MW/$5B/yr deal for Colossus I, ARR growth is 8000% annualized",
+      "source": "swyx (AINews) - Substack",
+      "date": "2026-05-07",
+      "classification": "critical",
+      "reasoning": "Major industry news: Anthropic x SpaceX/xAI Colossus 1 deal, Code with Claude event, managed agent features, Dario Amodei predictions, infrastructure updates.",
+      "key_topics": [
+        "Anthropic-SpaceX/xAI Colossus 1 deal (300MW, 220k+ GPUs, $5B/yr)",
+        "Code with Claude developer event",
+        "Managed agent features: Dreaming, Outcomes, Managed Orchestration",
+        "Claude Code rate limit increases",
+        "Dario Amodei: one-person billion-dollar company, multiagents",
+        "OpenAI MRC, Perplexity ROSE, vLLM+Mooncake",
+        "ZAYA1-8B MoE, Gemma 4, OBLIQ-Bench, LAB benchmark"
+      ],
+      "recommended_action": "CRITICAL - Create multiple wiki pages. Update Anthropic entity.",
+      "raw_file": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-07-ainews-anthropic-spacexai-s-300mw-5b-yr-deal-for-colossus-i-arr-growth-is-8000-a.md"
+    }
+  ],
+  "summary": {
+    "total_newsletters": 3,
+    "critical": 1,
+    "high": 1,
+    "low": 1
+  }
+}
