@@ -60,6 +60,24 @@ Zed was designed as an **AI-native editor** from the ground up:
 - SSH remoting
 - Debugging support
 
+## AI Agent Harness Capabilities (Local Models)
+
+Zed doubles as an **agent harness** — not just an editor, but a platform for running AI coding agents directly in the IDE. 0xSero ranks it as **#2 best harness for local models** (April 4, 2026):
+
+> **2. Zed IDE:**
+> - OpenAI compatible APIs are first class
+> - Works like Cursor so if you prefer IDEs this is for you
+> - Clean design
+
+### Local Model Support
+- **OpenAI-compatible APIs are first-class citizens** — Ollama, LM Studio, and any local inference server works seamlessly
+- **ACP (Agent Client Protocol)** — Co-developed with Google and JetBrains, standardizing how agents communicate with editors
+- **Parallel agent orchestration** — Run multiple AI agents simultaneously at native speed
+- No subscription wall for local models — BYOK (Bring Your Own Keys)
+
+### Agent Workflow
+Zed's agent harness capabilities mirror Cursor's approach: an IDE-integrated agent that can edit files, run terminal commands, and navigate code — but with fully open infrastructure and no vendor lock-in on models.
+
 ## Business
 
 Zed is freemium — free for individual use with planned **Zed for Business** tier (centralized billing, role-based access, team management).

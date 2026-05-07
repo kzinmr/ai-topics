@@ -156,3 +156,20 @@
 - **Platform-specific**: Roblox Content Safety Taxonomy (25 categories)
 
 **New section**: 「増幅メカニズム — 影の自己拡大ループ」を追加。6つの相互連鎖メカニズム（カテゴリ分裂加速、Guardrail多層化、訓練/評価循環、プラットフォーム差異、Shadow武器化、Over-Refusal拡大）を記述。
+
+## [2026-05-08] 0xSero's Local Model Harness Ranking — RooCode & Parchi 新規追加、Droid/Zed エンリッチ
+
+**Action**: Discord スレッド要望 + 0xSero のツイート (https://x.com/0xsero/status/2040445532171108375) に基づき、ローカルモデル向けのAIエージェントハーネスをwikiに追加/拡充。
+
+**New entity pages created**:
+- `entities/roocode.md` — VS Code拡張。Steer Modeで弱いローカルモデルでも強制的に正しく動作。0xSero #4位。サンセット移行中→コミュニティメンテナンス。
+- `entities/parchi.md` — 0xSero 作のブラウザコパイロット（Chrome/Firefox拡張）。ローカルモデルでブラウザ自動操作。0xSero #6位。
+
+**Existing pages enriched**:
+- `entities/droid.md` — 0xSero #1位のエンドースメント追加。BYOKローカルLLM、ハイブリッドクラウド/ローカルオーケストレーション、Qwen3.5 daily driverとしての使用例。
+- `entities/zed.md` — エージェントハーネスセクション追加（#2位）。OpenAI互換APIがファーストクラス、Cursor類似UX、ACPプロトコル。
+
+**Concept page updated**:
+- `concepts/agent-harness-comparison.md` — セクション13（0xSero's Local Model Harness Ranking）追加。セクション14（Updates）追加。RooCode/Parchi/Zedを関連ページ・関係図に追加。
+
+**Cross-references**: [[entities/0xsero]], [[entities/droid]], [[entities/zed]], [[entities/roocode]], [[entities/parchi]], [[concepts/agent-harness-comparison]]

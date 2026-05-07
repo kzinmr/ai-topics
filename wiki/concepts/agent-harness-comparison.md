@@ -333,7 +333,54 @@ Pi (Mario Zechner, MIT)
 
 ChatGPT (OpenAI)
   └── Codex (OpenAI, Apache-2.0) — CLI/Desktop/IDE, uses ChatGPT subscription
+
+RooCode (RooCode Inc.)
+  └── Roomote (original team's next project) — successor direction
+
+Parchi (0xSero, MIT) — browser copilot, not a coding agent harness
 ```
+
+---
+
+## 13. 0xSero's Local Model Harness Ranking
+
+> **Source:** [@0xSero (April 4, 2026)](https://x.com/0xsero/status/2040445532171108375) — "Best harnesses for local models"
+
+0xSero, a prominent open-source AI advocate (creator of Parchi), ranked local model harnesses:
+
+| Rank | Harness | Key Strength |
+|------|---------|-------------|
+| **#1** | **[[entities/droid|Droid]]** | BYOK local LLMs, hybrid cloud/local orchestration, Qwen3.5 daily driver |
+| **#2** | **[[entities/zed|Zed IDE]]** | First-class OpenAI-compatible APIs, Cursor-like UX, clean design |
+| **#3** | **[[entities/pi|Pi Coding Agent]]** | Open source, very token efficient, supports vLLM and open weight models |
+| **#4** | **[[entities/roocode|RooCode]]** | Steer Mode forces local/dumber models to behave via prompt re-injection |
+| **#5** | **[[entities/opencode|OpenCode]]** | Super easy to add new providers, desktop/mobile web app, open source |
+| **#6** | **Parchi** | Any provider of any type, very simple UX, browser automation with local models |
+
+### Key Insights from 0xSero
+
+1. **Droid dominates for local-first workflows** — "This is my daily driver, I use Qwen3.5 models in it very happily"
+2. **Droid's hybrid architecture is unique** — Using local models as orchestrators while cloud models do heavy lifting
+3. **Steer Mode is essential for weaker models** — RooCode's prompt re-injection keeps dumber local models on track
+4. **Pi remains the gold standard for token efficiency** — But Droid's structure is more forgiving for weaker local models
+5. **Parchi fills a unique niche** — Not a coding agent, but lets local models drive browser automation
+
+### Harnesses NOT on 0xSero's List
+
+Notable absences from 0xSero's local model ranking:
+- **Claude Code** — Not local-model compatible (Anthropic-locked)
+- **Codex CLI** — Primarily designed for GPT-5.x cloud models, though custom providers exist
+- **Copilot CLI** — Recently added local/BYOK support (April 2026), may not have been tested yet
+- **Kilo** — Newer platform, gateway-based, may not have been evaluated
+- **Hermes Agent** — Not positioned as a local-local coding agent
+
+---
+
+## 14. Updates
+
+| Date | Change |
+|------|--------|
+| 2026-05-08 | Added 0xSero's local model harness ranking (section 13). Added [[entities/roocode]], [[entities/parchi]], [[entities/zed]] to related pages. Added RooCode + Parchi to relationship map.
 
 ---
 
@@ -352,3 +399,6 @@ ChatGPT (OpenAI)
 - **[[entities/kilo]]** — Full Kilo entity page
 - **[[entities/openclaw]]** — Full OpenClaw entity page
 - **[[entities/hermes-agent]]** — Full Hermes Agent entity page
+- **[[entities/roocode]]** — RooCode entity page (VS Code extension with Steer Mode for local models)
+- **[[entities/parchi]]** — Parchi entity page (browser copilot for local models)
+- **[[entities/zed]]** — Zed editor entity page (AI-native editor, #2 local model harness by 0xSero)

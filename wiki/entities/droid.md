@@ -21,6 +21,7 @@ sources:
   - https://docs.z.ai/devpack/tool/droid
   - https://factory.ai/product/cli
   - https://factory.ai/product/ide
+  - https://x.com/0xsero/status/2040445532171108375
 related:
   - "[[entities/claude-code]]"
   - "[[entities/copilot-cli]]"
@@ -95,6 +96,24 @@ related:
 | **Droid Core** (open-weight) | Free pool — smaller models for cost efficiency |
 | **BYOK** | Bring your own API keys |
 | Any model per task | Switch based on performance or cost |
+
+## 0xSero's Assessment — #1 for Local Models
+
+From 0xSero's ranking of best harnesses for local models (April 4, 2026):
+
+> **1. Droid:**
+> - Very good performance, forces the models to behave, you can wire in all your local LLMs very easily with BYOK
+> - Allows you to use your local models as orchestrators/subagents so you can benefit from Cloud models as well
+> - Practically everything you need is already in Droid
+> - **"This is my daily driver, I use Qwen3.5 models in it very happily"**
+
+This endorsement positions Droid as the **top-tier choice for local model users**, especially those who want to hybridize local + cloud models in a single workflow.
+
+### Local Model Differentiators
+- **BYOK** — Wire in local LLMs (Ollama, LM Studio, etc.) alongside premium APIs
+- **Hybrid orchestration** — Use local models as orchestrators/sub-agents while leveraging cloud models for heavy lifting
+- **Qwen 3.5 Coder 32B** — Confirmed working well via local setup
+- **"Forces models to behave"** — Droid's structure keeps even weaker local models on track
 
 ## Pricing
 
