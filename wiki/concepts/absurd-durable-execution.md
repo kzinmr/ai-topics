@@ -197,11 +197,136 @@ InngestはHTTPベースのPushモデル。AbsurdはPullベース。InngestはDeb
 
 ---
 
+## PG Queue運用の観点からの批判的レビュー
+
+> 本セクションはPlanetScaleの記事「[[raw/articles/2026-05-07_keeping-postgres-queue-healthy-planetscale|Keeping a Postgres Queue Healthy]]」の知見を基に、Absurdのアーキテクチャ上のリスクを評価する。
+
+### 前提：Absurdが正しくやっていること
+
+| Absurdの実装 | PG Queueのベストプラクティス | 評価 |
+|:---|:---|:---:|
+| `FOR UPDATE SKIP LOCKED` を使用 | PlanetScale: 「常にSKIP LOCKEDを使え」 | ✅ |
+| パーティションストレージモードを提供 | 大規模テーブルの管理に有効 | ✅ |
+| pg_cron経由の定期クリーンアップ関数（`cleanup_tasks`, `ensure_partitions`, `schedule_detach_jobs`） | PlanetScale: 「リソース制御を実装せよ」 | ✅ |
+| 冪等性キー（`i_` テーブル） | PlanetScale: 「リトライを実装せよ」 | ✅ |
+| Unpartitioned Modeの `fillfactor=70` | 更新頻度の高いテーブル向けの定石 | ✅ |
+
+Absurdの作者はPG Queue運用の基本を理解しており、多くのベストプラクティスに従っている。しかし、Durable Executionというレイヤーが上乗せされることで、単純なキューでは発生しない複合的なリスクが生じる。
+
+---
+
+### 問題1：Checkpoint による増幅された書き込み負荷
+
+通常のPGキューは「INSERT → READ → DELETE」の単一テーブルで完結する。Absurdは**1タスクあたり最大6テーブル**（`t_`=Tasks, `r_`=Runs, `c_`=Checkpoints, `e_`=Events, `w_`=Wait Registrations, `i_`=Idempotency Keys）に書き込む。
+
+**試算：20ステップのLLM Agentループが3回リトライした場合**
+```
+1 task + 3 runs + 20 checkpoints + 1 event + 1 wait registration
+= 26 rows created → cleanup実行まで26のdead tupleが蓄積
+```
+
+PlanetScaleの核心的な警告を再掲する：
+
+> "A database is destined to fail if it cannot reclaim dead tuples faster than its workload creates them."
+
+Absurdは単純なジョブキューより**数倍多くのdead tupleを生成する**。`fillfactor=70`（30%の空き領域を確保）という設計判断は、この問題への暗黙の認識と見なせる。ただしfillfactorは「B-Treeページ内の空き容量」を増やすだけで、**MVCC Horizonが固定された場合の抜本的な解決にはならない**。
+
+---
+
+### 問題2：「Just Postgres」がもたらす混合ワークロードの罠
+
+Ronacherは「Just Postgres — no additional infrastructure」をAbsurdの最大のセールスポイントにしている。しかしPlanetScaleの記事は、**これが最大の危険信号**だと警告する。
+
+特にAI Agentワークフローでは、以下の要因がMVCC Horizon固定のリスクを高める：
+
+| シナリオ | MVCC Horizonへの影響 |
+|:---|:---|
+| LLM呼び出し待ちのSleep — `sleep(3600)` | 行は生存し続け、同じインスタンス上の分析クエリがHorizonを固定 |
+| Agent思考ループ中の並行分析クエリ | PlanetScaleが「Staggered Query Trap」と呼ぶ状態 — クエリが20秒間隔で立ち上がり、Horizonが永久に進まない |
+| Event待ちの長時間サスペンド — `awaitEvent(timeout: 86400)` | Wait Registration行が24時間生存 |
+
+PlanetScaleの800 jobs/secベンチマークが示す通り、Absurd自体が高速に動作しても、**同じインスタンス上の他のワークロードがMVCC Horizonを固定すれば、Absurdのテーブルだけが異常肥大化する**。
+
+---
+
+### 問題3：Unpartitioned Mode の死亡スパイラル
+
+AbsurdのデフォルトはUnpartitioned Mode。PlanetScaleのベンチマーク結果：
+
+| 条件 | Queue Backlog | Lock Time | 結果 |
+|:---|:---:|:---:|:---:|
+| Queue単体（800 jobs/sec） | 0 | 2ms | ✅ 安定 |
+| Queue + 重複分析クエリ | **155,000 jobs** | **300ms+** | ❌ 死亡スパイラル |
+
+特に注意すべきは、Absurdの**Checkpointテーブル（`c_`）のB-Tree肥大化**。通常のキューと異なり、Checkpointはタスク完了後もクリーンアップTTLが来るまで削除されない。その間、以下の悪循環が発生する：
+
+1. B-Treeが肥大化 → スキャンコスト増大
+2. Lock Timeが増加 → ワーカーのスループット低下
+3. 未処理タスクが滞留 → さらに多くのCheckpointが生成
+4. `autovacuum`が追いつかない → B-Treeのbottom-up deletionも効果を発揮できない
+
+PlanetScaleの記事は「Postgres v18になっても、天井は上がっていない」と結論づけている。
+
+---
+
+### 問題4：クリーンアップのタイミングミスマッチ
+
+Absurdの `cleanup_tasks` はpg_cronで定期実行できる。しかし：
+
+1. **頻度の問題**: デフォルトのcron式 `17 * * * *`（毎時17分）は、800 jobs/secの環境で生成されるdead tuple量に到底追いつかない
+2. **DELETEの自己矛盾**: cleanup自身のDELETEが新たなdead tupleを生む。DELETEが空き領域をすぐに回収できるわけではない
+3. **VACUUM不在**: AbsurdはDELETEを実行するが、`VACUUM`との連携戦略は提供していない。削除してもすぐに領域は返却されない
+4. **監視の欠如**: PlanetScaleは「Creeping lock times = デッドタプル蓄積の先行指標」と指摘するが、Absurdはこのメトリクスを監視する仕組みを持たない。Habitatダッシュボードはタスク状態を表示するが、テーブルBloat率やLock待ち時間は見えない
+
+---
+
+### 問題5：イベントテーブルの無制限蓄積
+
+Event機構は `e_` (Emitted Events) テーブルを使用する。「first emit wins」の設計は競合状態を排除する点で優れているが、**TTLが来るまでイベント行は削除されない**。
+
+Agent間連携パターンで問題となるのは：
+- `emitEvent('user-activated:alice', ...)` → 受信ワーカーは1度だけ消費
+- しかしイベント行はcleanup TTLまで生存 → 全Agentの全イベントが蓄積
+- イベント名のユニーク性が高いほど（`user-activated:{userId}`）、削除条件のマッチングが複雑になる
+
+大量のイベントが蓄積すると、`awaitEvent()` の検索が `e_` テーブルのフルスキャンに近づく。
+
+---
+
+### 問題6：パーティションモードの限界
+
+Absurdは週次レンジパーティション（UUIDv7ベース）を提供している。しかし：
+
+1. **パーティション内のMVCC問題**: パーティションを切っても各パーティション内でのMVCC bloatは解決されない。単に「1つの大きなテーブル」が「複数の小さなテーブル」になるだけ
+2. **DETACH PARTITIONの困難さ**: Ronacher自身がproduction retrospectiveで認めている通り、`DETACH PARTITION CONCURRENTLY` のトランザクション外実行はPostgresの制約上難しい
+3. **パーティションプランナーのオーバーヘッド**: 多数のパーティションを持つテーブルに対するクエリは、パーティションプルーニングが効かないケースでかえって遅くなる
+
+---
+
+### 総評：適切なスコープと危険ゾーン
+
+**Absurdが適切なシナリオ：**
+- 低〜中スループット（< 100 tasks/sec）
+- Postgres専用インスタンス（混合ワークロードなし）
+- 短命タスク（分単位で完了）、Checkpoint数が少ない
+- インフラを増やせない自己ホスト環境
+
+**危険ゾーン：**
+- 高スループット（> 500 tasks/sec）＋同一DBの分析クエリ → 死亡スパイラル確実
+- 数時間〜数日かかるAgentワークフローの大量並行実行 → Sleep行の生存によるBloat
+- 100+ Checkpointを持つAgentの大量実行 → `c_`テーブルの爆発的肥大化
+- 複数サービスが同一Postgresインスタンスを共有する環境
+
+**結論：** Absurdは「PostgresだけでDurable Execution」というアイデアのエレガントな実装だが、そのトレードオフはSDKの薄さ以上に深い。PG Queue運用の古典的問題（MVCC bloat、混合ワークロード分離）は、薄いSDKに複雑性を押し込まない代わりに、**運用者に完全に委ねられている**。Temporalが専用Server/SDKレイヤーでこれらの問題を吸収しているのに対し、Absurdは「Postgresさえ面倒見ればいい」という一見シンプルな運用を、高負荷下では**逆説的に複雑**にする。適切なスコープを見極めた上で採用すべきであり、「Just Postgres」の主張を額面通りに受け取るべきではない。
+
+---
+
 ## 参考文献
 
 - [Absurd Workflows: Durable Execution With Just Postgres](https://lucumr.pocoo.org/2025/11/3/absurd-workflows/) — Armin Ronacher (2025-11-03) — 初回発表記事（[[raw/articles/2025-11-03_absurd-workflows-armin-ronacher]]）
 - [Absurd In Production](https://lucumr.pocoo.org/2026/4/4/absurd-in-production/) — Armin Ronacher (2026-04-04) — 5ヶ月の本番運用レポート（[[raw/articles/2026-04-04_absurd-in-production-armin-ronacher]]）
 - [Absurd 公式ドキュメント](https://earendil-works.github.io/absurd/) — Quickstart, Concepts, Patterns, SDKs
 - [Absurd GitHub Repository](https://github.com/earendil-works/absurd) — ソースコード、SDK、比較ドキュメント
+- [Keeping a Postgres Queue Healthy](https://planetscale.com/blog/keeping-a-postgres-queue-healthy) — PlanetScale (2026-05-07) — PG Queue運用のベストプラクティスとMVCC Bloat分析（[[raw/articles/2026-05-07_keeping-postgres-queue-healthy-planetscale]]）
 - [[entities/armin-ronacher]] — 製作者（Armin Ronacher / @mitsuhiko）のエンティティページ
 - [[entities/pi-coding-agent]] — Pi Agent SDK（Absurdとの統合パターンあり）
