@@ -173,3 +173,18 @@
 - `concepts/agent-harness-comparison.md` — セクション13（0xSero's Local Model Harness Ranking）追加。セクション14（Updates）追加。RooCode/Parchi/Zedを関連ページ・関係図に追加。
 
 **Cross-references**: [[entities/0xsero]], [[entities/droid]], [[entities/zed]], [[entities/roocode]], [[entities/parchi]], [[concepts/agent-harness-comparison]]
+
+## [2026-05-08] Waluigi Effect 取り込み — Cleo Nardo概念ページ
+
+**Action**: kzinmrからのリクエストにより、Cleo NardoのLessWrong mega-post「The Waluigi Effect」をwikiに取り込み。Simulator Theory・ネガティブプロンプティング・アトラクター状態仮説・RLHF失敗の機構論を体系的に文書化。
+
+**New raw articles saved**:
+- `raw/articles/2023-03-02_cleo-nardo_waluigi-effect.md` — Waluigi Effect原典（19分記事）。3つのメカニズム（ルールの共起、K-複雑性非対称性、構造主義的物語論）、Simulator Theory、RLHF後のWaluigi、Jailbreaking再概念化（DAN等）。
+
+**New concept page created**:
+- `concepts/waluigi-effect.md` — Cleo Nardo提唱のLLMアライメント根本限界。定義・Simulator Theory・3メカニズム・アトラクター状態予想・RLHF悪化証拠・Jailbreaking再概念化・Societal Shadowとの関係（現象論vs機構論）。批判（leogao, Hebbar, toms）も収録。
+
+**Pages enriched**:
+- `concepts/societal-shadow.md` — 「関連現象」表のWaluigi Effectエントリを[[concepts/waluigi-effect]]にリンク。関連ページにwaluigi-effectを追加。
+
+**Index/log**: index.mdにconcepts/waluigi-effectを追加。societal-shadowエントリ更新。総ページ数: 5203→5204、Concepts: 451→452。

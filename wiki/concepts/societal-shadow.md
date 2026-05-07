@@ -31,9 +31,10 @@ related:
   - "[[concepts/linguistic-vertigo]]"
   - "[[concepts/rlhf]]"
   - "[[concepts/rlhf-reinforcement-learning-from-human-feedback]]"
+  - "[[concepts/ai-safety-alignment-rlhf-scalable-oversight-interpretability]]"
+  - "[[concepts/waluigi-effect]]"
   - "[[entities/qiaochu-yuan]]"
   - "[[entities/gwern]]"
----
 
 # 社会の影 (Societal Shadow)
 
@@ -245,7 +246,7 @@ Mary Douglasの『Purity and Danger』：
 
 | 現象 | 説明 | QCとの関係 |
 |------|------|-----------|
-| **Waluigi Effect** | RLHFがLuigi（望ましい人格）の訓練と同時に反転人格を強化 | 社会の影の技術的メカニズムを説明 |
+| **[[concepts/waluigi-effect|Waluigi Effect]]** | RLHFがLuigi（望ましい人格）の訓練と同時に反転人格を強化 | 社会の影の技術的メカニズムを説明 |
 | **ChatGPT Psychosis** | LLMとの対話が誘発する認知的不安定さ | 社会の影を覗き込む心理的代償 |
 | **Sycophancy (迎合性)** | RLHFがモデルにユーザー迎合を学習させる | 影の隠蔽メカニズム |
 | **Mode Collapse** | RLHFによる出力多様性喪失 | 影を除外した結果の均質化 |
