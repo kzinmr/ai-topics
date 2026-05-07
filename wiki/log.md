@@ -1,3 +1,16 @@
+## [2026-05-08] Martin Fowler「The DeepSeek Series: A Technical Overview」参考取り込み
+
+**Source**: User request (Discord) — martinfowler.com/articles/deepseek-papers.html の整理を参考にwiki強化。
+
+**Raw article saved**:
+- `raw/articles/2026-05-08_martinfowler-deepseek-papers.md` — Martin FowlerによるDeepSeek論文シリーズ（LLM→V2→V3→R1）の技術分析。HPC Co-Design哲学、3つの研究アーク（Efficiency/Sparsity/Reasoning）。
+
+**Pages updated**:
+- `entities/deepseek.md` — 大幅強化:
+  - **Technical Evolution & HPC Co-Design Philosophy**セクション新設（OverviewとModelsの間）。HPC Co-Designの定義、3研究アーク表、論文シリーズ進化図（LLM→V2→V3→R1→V4のフロー）
+  - **Earlier Models**にDeepSeek-LLM (Jan 2024, 67B, Scaling Laws) とDeepSeek-V2 (Jun 2024, MLA+DeepSeekMoE初導入) を追加
+  - **Relationships**: deepseek-r1, grpo へのwikilink追加
+  - **Sources**: martinfowler記事追加
 ## [2026-05-08] DeepSeek-R1 論文取り込み — arXiv:2501.12948（Nature掲載）
 
 **Source**: User request (Discord) — Reasoningモデルのマイルストーン論文。Pure RLによる推論能力創発、Nature掲載。
