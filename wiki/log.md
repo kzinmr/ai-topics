@@ -1,3 +1,25 @@
+## [2026-05-07] turbopufferエンティティ拡充 — 全ブログ記事8本からエンリッチメント
+
+**Source**: User request (Discord) — turbopufferブログ記事群からのエンリッチメント
+
+**Raw articles saved** (8 new, total 10):
+- `raw/articles/2024-09-04_turbopuffer-continuous-recall.md` — Production recall@10 monitoring via 1% query sampling. [Morgan Gallant]
+- `raw/articles/2025-01-21_turbopuffer-native-filtering.md` — SPFresh clustering-based native filtered vector search (>90% recall). [Bojan Serafimov]
+- `raw/articles/2026-01-07_turbopuffer-bm25-scaling.md` — BM25 power law scaling: K=0.35→0.92, essential terms optimization. [Adrien Grand]
+- `raw/articles/2026-01-14_turbopuffer-fts-v2-postings.md` — Fixed-size block partitioning inverted indexes (9.9x size reduction). [Morgan Gallant, Adrien Grand]
+- `raw/articles/2026-01-14_turbopuffer-fts-v2-maxscore.md` — Vectorized MAXSCORE > WAND for long LLM queries. [Adrien Grand, Morgan Gallant]
+- `raw/articles/2026-02-03_turbopuffer-fts-v2.md` — FTS v2 announcement: 20x faster, 10x smaller indexes. [Adrien Grand, Morgan Gallant, Nikhil Benesch]
+- `raw/articles/2026-03-08_turbopuffer-rust-zero-cost-simd.md` — Rust batched iterators unblocking SIMD: 220ms→47ms. [Xavier Denis]
+- `raw/articles/2026-05-05_turbopuffer-ann-v3.md` — ANN v3: 100B vectors @ 200ms p99 via RaBitQ + AVX-512. [Nathan VanBenschoten]
+
+**Pages enriched**:
+- [[entities/turbopuffer]] — 151→319行に拡大。新規追加: ANN v3性能表 / Native Filtering / Continuous Recall / FTS v2（MAXSCORE + ブロック分割 + BM25 scaling）/ チーム一覧（8名）/ 沿革拡張（6→14エントリ）/ 参考文献再編成
+
+**Description**:
+![turbopuffer](https://turbopuffer.com/)
+
+---
+
 
 ## [2026-05-07] Object Storage Queueパターン + turbopuffer entity追加 — S3ベース分散キューの実装パターン
 

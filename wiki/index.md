@@ -352,7 +352,7 @@
    352|- [[entities/tom-aarsen]] — **X** | @tomaarsen |
    353|- [[entities/tom-renner]] — **Blog** | tomrenner.com |
    354|- [[entities/troy-hunt]] — **URL:** https://www.troyhunt.com
-- [[entities/turbopuffer]] — Object-Storage-Native vector + full-text search engine. Built on S3/GCS, SPFresh ANN, LSM Tree, stateless Rust nodes. Customers: Cursor (95% cost reduction), Notion AI, Linear, Superhuman.
+  355|- [[entities/turbopuffer]] — Object-Storage-Native vector + full-text search engine. Built on S3/GCS, SPFresh ANN v3 (100B vec @ 200ms), RaBitQ/AVX-512, FTS v2 (20x), Native Filtering, Continuous Recall. Cursor (95% cheaper), Notion AI, Linear, Superhuman.
 - [[entities/ubtech-robotics]] — One of China's most valuable AI and robotics companies. Focuses on service robots and humanoid platforms for education and commercial applications.
    356|- [[entities/unitree-robotics]] — Hangzhou-based humanoid and quadruped robot manufacturer. Founded 2016 by Wang Xingxing (former DJI engineer, age 26 at founding). World's #1 humanoid robot seller in 2025.
    357|- [[entities/ultraworkers]] — GitHub organization hosting **[[claw-code]]**, the Rust implementation of the `claw` CLI agent harness. Fastest repo in history to surpass 100K stars. Home of Sigrid Jin and Yeachan Heo's autonomous development demo.
@@ -500,5 +500,6 @@
    497|- [[concepts/agent-survival-benchmark]]
    498|- [[concepts/agent-team-swarm/managed-devins]] — Cognition's evolved approach to multi-agent coordination, introduced in Devin 2.2.
    499|- [[concepts/agent-architecture-decomposition]] — Three-layer framework for production AI agents: Open Models (intelligence), Open Runtime (execution environment), Open Harness (orchestration). Covers Agent on bash vs Agent on Python REPL (RLM, Pydantic AI), Micro-VM interpreters (Pydantic Monty), and MCP as universal adapter for heterogeneous agents.
-   500|- [[concepts/agentic-ai-skills]] — Agentic AI Skills Design is the discipline of writing reusable documents that teach AI systems how to approach entire categories of tasks — not what to do in one specific situation, but the process...
+   503|   500|- [[concepts/agentic-ai-skills]] — Agentic AI Skills Design is the discipline of writing reusable documents that teach AI systems how to approach entire categories of tasks — not what to do in one specific situation, but the process...
+   504|   501|- [[concepts/scaling-hypothesis]] — Gwern Branwen's formalization of the theory that scale alone drives AI capability emergence. Contrasts strong scaling hypothesis (OpenAI) vs weak scaling hypothesis (DeepMind). Covers blessings of scale, emergent agency ("It From Byte"), the pretraining thesis/last bits theory, and the hardware overhang argument.
    501|
