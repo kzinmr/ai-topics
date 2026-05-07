@@ -1,3 +1,18 @@
+## [2026-05-08] DeepSeek-R1 論文取り込み — arXiv:2501.12948（Nature掲載）
+
+**Source**: User request (Discord) — Reasoningモデルのマイルストーン論文。Pure RLによる推論能力創発、Nature掲載。
+
+**Raw paper saved**:
+- `raw/papers/2025-01-22_2501.12948_deepseek-r1.md` — DeepSeek-AI。DeepSeek-R1-Zero（純粋RL→推論創発、GRPO、アハモーメント）、DeepSeek-R1（4段階パイプライン）、蒸留モデル（Qwen-1.5B〜Llama-70B）。AIME 2024: 79.8%、MATH-500: 97.3%。訓練コスト$294K。
+
+**Pages created**:
+- `concepts/deepseek-r1.md` — 包括的概念ページ。R1-Zero（純粋RLからの創発、アハモーメント）、R1（Cold Start→Reasoning RL→Rejection Sampling→General RLの4段階パイプライン）、蒸留（1.5BがGPT-4oを上回る）、ベンチマーク比較表（o1-1217対比）、制限事項、歴史的意義6点。18個のwikilink。
+- `concepts/grpo.md` — Group Relative Policy Optimization 独立概念ページ。PPOのクリティックモデル問題、GRPOのアドバンテージ計算式・目的関数、ルールベース報酬設計、PPOとの比較表、適用事例（R1-Zero/R1/V3）、制限と今後の課題。PPO/RLHF/reasoning等にwikilink。
+
+**Pages updated**:
+- `entities/deepseek.md` — Earlier ModelsのR1エントリを拡充（Nature掲載、GRPO、アハモーメント、ベンチマーク、蒸留、$294K）。フロントマターにソース追加。
+
+**Index/log**: index.mdのConceptsセクションにdeepseek-r1とgrpoを追加。総ページ数: 5173→5175、Full entries: 4627→4629、Concepts: 438→440。
 ## [2026-05-08] DeepSeek-V3 Technical Report 論文取り込み — arXiv:2412.19437
 
 **Source**: User request (Discord) — マイルストーン的位置付け論文。DeepSeek-V3: 671B MoEモデル、GPT-4o級性能を$5.576Mで達成。

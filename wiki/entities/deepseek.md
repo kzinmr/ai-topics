@@ -10,6 +10,7 @@ sources:
   - raw/newsletters/2026-05-02-nvidia-blackwell-vs-huawei-ascend.md
   - raw/articles/2026-05-01_nist-caisi-deepseek-v4-evaluation.md
   - raw/papers/2024-12-27_2412.19437_deepseek-v3-technical-report.md
+  - raw/papers/2025-01-22_2501.12948_deepseek-r1.md
 ---
 
 # DeepSeek
@@ -59,7 +60,7 @@ DeepSeek V4 is confirmed to run on **Huawei Ascend 950** chips for inference and
 
 - **[[concepts/deepseek-v3|DeepSeek V3]]** (December 2024) — 671B total / 37B active params, MoE. Landmark technical report (arXiv:2412.19437): first FP8 training at 671B scale, auxiliary-loss-free load balancing, multi-token prediction, DualPipe. Trained on 14.8T tokens for $5.576M (2.788M H800 GPU hours). Achieved GPT-4o-class performance at <1/20th the training cost. MIT license.
 - **[[concepts/deepseek-v3-2|DeepSeek V3.2 / V3.2 Speciale]]** (December 2025) — 685B params, evolved from V3
-- **[[deepseek-r1|DeepSeek R1]]** — Reasoning-focused variant; reasoning patterns distilled into V3
+- **[[concepts/deepseek-r1|DeepSeek R1]]** (January 2025) — Reasoning-focused model. **Nature**掲載（Vol. 645, 2025）。Pure RL（GRPO）で推論能力の創発を初めて大規模実証。「アハモーメント」、自己検証・内省の自律的獲得。AIME 2024: 79.8%, MATH-500: 97.3%（o1-1217に匹敵）。蒸留によりQwen-1.5B/7B、Llama-8B/70Bにも展開。訓練コスト$294K。推論パターンはV3へも蒸留。
 
 ## Strategy
 
