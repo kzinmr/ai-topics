@@ -1,7 +1,17 @@
-#!/usr/bin/env bash
-# Auto-pull Hermes cron state into repo before every commit.
-set -euo pipefail
+#!/bin/sh
+# Pre-commit hook: validate wiki/index.md for corruption patterns
+# Installed via: git config core.hooksPath .githooks
 
-REPO_ROOT="$(git rev-parse --show-toplevel)"
-"$REPO_ROOT/scripts/sync_cron.sh" pull
-git add "$REPO_ROOT/config/hermes/cron/jobs.json"
+SCRIPT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+
+# Only check index.md if it's staged
+if git diff --cached --name-only | grep -q 'wiki/index.md'; then
+    python3 "$SCRIPT_DIR/scripts/validate_index.py"
+    if [ $? -ne 0 ]; then
+        echo ""
+        echo "❌ wiki/index.md has corruption patterns detected."
+        echo "   Run 'python3 scripts/validate_index.py' locally to see details."
+        echo "   To skip this check: git commit --no-verify"
+        exit 1
+    fi
+fi
