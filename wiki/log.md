@@ -14,6 +14,22 @@
 
 **Index/log**: index.mdにconcepts/altman-three-observations追加。総ページ数: 5187→5188、Full entries: 4638→4639。
 
+## [2026-05-07] Sam Altman「Three Observations」記事取り込み
+
+**Action**: kzinmrからのリクエストにより、blog.samaltman.com/three-observations をwikiに取り込み。Sam Altmanの3つの経済的観察（対数スケーリング、超デフレコスト、超指数関数的価値）を文書化。
+
+**New raw articles saved**:
+- `raw/articles/2025-02-09_samaltman-three-observations.md` — Sam Altmanの3つの観察：対数スケーリング則（intelligence ≈ log(resources)）、コストの10x/年低下（GPT-4→GPT-4oで150x）、超指数関数的価値。AIエージェントビジョン（ジュニアエンジニア比喩、100万体の仮想同僚）、2035年ビジョン（全員が無限の天才にアクセス）。
+
+**New page created**:
+- `concepts/altman-three-observations.md` — 包括的概念ページ（~120行）。3つの観察の詳細説明、AIエージェントビジョン、社会的影響（人間の主体性、科学進歩、財価格）、受容と分析、他フレームワークとの比較表（Scaling Laws/Moore's Law/Jevons Paradox/Eroom's Law）。フロントマターにaliases（three-observations, ai-economic-observations, altman-scaling-laws）を含む。
+
+**Pages enriched**:
+- `entities/sam-altman.md` — 「Three Observations (February 2025)」セクションを新設。3つの観察の要約表＋2035年ビジョンの引用＋概念的接続（[[altman-three-observations]]）。
+- `concepts/scaling-laws.md` — Related Conceptsに[[altman-three-observations]]を追加。
+
+**Index/log**: index.mdにconcepts/altman-three-observations追加。総ページ数: 5187→5188、Full entries: 4638→4639。
+
 ## [2026-05-07] Tim O'Reilly「The End of Programming as We Know It」記事取り込み
 
 **Action**: kzinmrからのリクエストにより、O'Reilly RadarのTim O'Reilly記事「The End of Programming as We Know It」(2025-02-04) をwikiに取り込み。Vibe Coding勃興期の歴史的ランドマーク記事として位置づけ。
