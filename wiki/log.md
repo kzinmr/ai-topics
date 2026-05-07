@@ -1,4 +1,21 @@
 
+## [2026-05-07] Object Storage Queueパターン + turbopuffer entity追加 — S3ベース分散キューの実装パターン
+
+**Source**: User request (Discord) — zero-disk-architecture的なキュー実装として関心
+
+**Raw articles saved** (2):
+- `raw/articles/2026-05-07_object-storage-queue-turbopuffer.md` — turbopufferによる単一JSONファイル分散キュー実装
+- `raw/articles/2026-05-07_turbopuffer-fast-search-object-storage.md` — turbopuffer製品発表ブログ
+
+**Pages created**:
+- [[concepts/object-storage-queue]] — Object Storage Queue: S3のCASを利用した分散キュー実装パターン。Group Commit / Stateless Broker / Heartbeat Recovery。ゼロディスクアーキテクチャの応用。Absurdとの詳細比較を含む。
+- [[entities/turbopuffer]] — Object-Storage-Native検索エンジン（ベクトル＋全文検索）。SPFresh ANN、S3ネイティブLSM Tree、ステートレスRustノード。Cursor（95%コスト削減）、Notion AI、Linear等が顧客。
+
+**Pages enriched**:
+- [[concepts/zero-disk-architecture]] — Industry Adoptionセクションの"Turbo Puffer"表記を[[entities/turbopuffer]]に修正
+
+---
+
 ## [2026-05-07] Absurd概念ページ作成 — Postgres-Native Durable Execution for AI Agents
 
 **Source**: User request (Discord) — 非同期処理基盤の実装パターンとして関心

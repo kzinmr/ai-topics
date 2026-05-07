@@ -62,7 +62,7 @@ Modern infrastructure systems already using Zero Disk or near-Zero Disk paradigm
 
 - **OLAP/Data Warehouses**: Snowflake, ClickHouse, Quickwit
 - **Streaming/Messaging**: WarpStream (Kafka-compatible), Bufstream, MemQ (Pinterest)
-- **Databases/Vector Stores**: SlateDB, Turbo Puffer, Milvus, WeSQL, Chroma
+- **Databases/Vector Stores**: SlateDB, [[entities/turbopuffer|turbopuffer]], Milvus, WeSQL, Chroma
 
 ## S3 as "Malloc of the Web"
 

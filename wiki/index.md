@@ -2,9 +2,9 @@
      2|
      3|> Content catalog. Every wiki page listed under its type with a one-line summary.
      4|> Read this first to find relevant pages for any query.
-     5|> Last updated: 2026-05-07 | Total pages: 5168 | Full entries: 4622 | Stubs: 546 |
+     5|> Last updated: 2026-05-07 | Total pages: 5170 | Full entries: 4624 | Stubs: 546 |
      6|
-     7|## Entities (399 pages)
+     7|## Entities (400 pages)
      8|
      9|- [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
     10|- [[entities/hugo-bowne]] — Hugo Bowne-Anderson — Data scientist and AI privacy engineering writer. Co-author of "15 Privacy Questions Every AI Builder is Asking" with Katharine Jarmul.
@@ -352,7 +352,8 @@
    352|- [[entities/tom-aarsen]] — **X** | @tomaarsen |
    353|- [[entities/tom-renner]] — **Blog** | tomrenner.com |
    354|- [[entities/troy-hunt]] — **URL:** https://www.troyhunt.com
-   355|- [[entities/ubtech-robotics]] — One of China's most valuable AI and robotics companies. Focuses on service robots and humanoid platforms for education and commercial applications.
+- [[entities/turbopuffer]] — Object-Storage-Native vector + full-text search engine. Built on S3/GCS, SPFresh ANN, LSM Tree, stateless Rust nodes. Customers: Cursor (95% cost reduction), Notion AI, Linear, Superhuman.
+- [[entities/ubtech-robotics]] — One of China's most valuable AI and robotics companies. Focuses on service robots and humanoid platforms for education and commercial applications.
    356|- [[entities/unitree-robotics]] — Hangzhou-based humanoid and quadruped robot manufacturer. Founded 2016 by Wang Xingxing (former DJI engineer, age 26 at founding). World's #1 humanoid robot seller in 2025.
    357|- [[entities/ultraworkers]] — GitHub organization hosting **[[claw-code]]**, the Rust implementation of the `claw` CLI agent harness. Fastest repo in history to surpass 100K stars. Home of Sigrid Jin and Yeachan Heo's autonomous development demo.
    358|- [[entities/utcc-utoronto-ca-cks]] — **Blog** | Wandering Thoughts |
@@ -454,9 +455,10 @@
    454|   8|- [[entities/vercel]] — Vercel — Frontend cloud platform (Next.js). Released deepsec open-source security harness using coding agents for vulnerability discovery and remediation (May 2026).
    455|   9|- [[entities/radixark]] — RadixArk — AI inference infrastructure startup. $100M seed (May 2026), built on SGLang inference + Miles (large-scale RL).
    456|  10|- [[entities/perplexity]] — Perplexity — AI search platform expanding into vertical products: Professional Finance Computer (35 analyst workflows), NEJM/BMJ premium medical access.
-## Concepts (433 pages)
+## Concepts (434 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
+- [[concepts/object-storage-queue]] — Object Storage Queue: S3のCASを利用した分散キュー実装パターン。Group Commit、Stateless Broker、HeartbeatによるJob Recovery。ゼロディスクアーキテクチャの応用。Absurd（PG Queue）との比較を含む。 — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/agent-development-lifecycle]] — Agent Development Lifecycle (ADLC) — formalized framework for AI agent lifecycle: planning, deployment, operation, iteration. New operational roles: Agent Supervisor, QA Lead, AI Ops Manager, Chief AI Officer.
    460|- [[concepts/cloudflare-agents]] — Cloudflare's iMARS (Internal MCP Agent/Server Rollout Squad) AI engineering stack. 3,683 internal users, 93% R&D coverage, 2x MR velocity increase. AI Code Reviewer multi-agent review, Engineering Codex.
    461|- [[concepts/cloudflare-llm-infrastructure]] — Cloudflare's custom LLM inference stack — PD disaggregation, Infire Rust engine, Mooncake KV-cache, speculative decoding. 3x latency improvement, 80% cache hit ratio.
