@@ -1,3 +1,22 @@
+## [2026-05-08] X Accounts Scan — Colossus Deal, ds4.c, Mozilla Mythos, China AI Labs, json-render
+
+**Action**: デイリーXアカウントスキャン。79アカウント中12件の新規ポストを検出、うち5件をWikiに取り込み。
+
+**New concept pages created (3)**:
+- `concepts/xai-anthropic-colossus-deal.md` — AnthropicがxAIのColossus 1データセンターの全容量を取得する取引。環境問題、Muskの「回収権」による供給連鎖リスク。
+- `concepts/ds4-deepseek-flash-metal.md` — Armin Ronacher (mitsuhiko) によるDeepSeek V4 Flash専用Apple Silicon Metal推論エンジン。Disk-First KV Cache、非対称2ビット量子化。
+- `concepts/json-render.md` — Vercel LabsのGenerative UI フレームワーク。ZodスキーマでAI出力をコンポーネントカタログに制約。12+レンダラー、Apache-2.0。
+
+**Existing pages enriched (2)**:
+- `concepts/claude-mythos-preview.md` — Mozilla Firefox Hardening セクション追加。423件のバグ修正、うち271件をMythos Previewが発見。15年前・20年前のバグを含む。エージェントハーネスパイプライン詳細。
+- `entities/china-ai-industry.md` — Nathan Lambertの中国AIラボ現地報告を追加。研究文化比較表、学生主導イノベーション、Build-Not-Buy、データ産業欠如、Claudeが主要開発ツールという洞察。
+
+**Raw articles saved (10)**:
+- simon-willison (xai-anthropic-colossus), nathan-lambert (china-ai-labs), mozilla (firefox-mythos), google (gemini-api-breaking-changes), mitsuhiko (ds4), vercel-labs (json-render), anthropic (claude-dreams), drew-breunig (system-prompt-changes), openai (sparse-circuits), zeroentropy (zerank-2)
+
+**Index/log**: index.mdに3件の新コンセプト追加、ヘッダー更新。総ページ数: 5204→5207、Concepts: 452→455。
+
+**Sources**: Simon Willison, Nathan Lambert (Interconnects), Mozilla Hacks, Google AI, Armin Ronacher (mitsuhiko/ds4), Eugene Yan, Vercel Labs, Drew Breunig
 ## [2026-05-08] Skeleton Entity Enrichment — Moonshot AI redirect, Jo Kristian Bergum verification, 4 stub→complete upgrades
 
 **Action**: 定期スケルトンエンティティ enrichment。`status: skeleton` のエンティティは存在しなかったため、`status: stub` のエンティティを処理。

@@ -2,7 +2,7 @@
 title: "Claude Mythos Preview"
 type: concept
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-05-08
 tags:
   - concept
   - anthropic
@@ -10,12 +10,16 @@ tags:
   - security
   - red-team
   - dual-use
+  - agentic-harness
+  - firefox
 aliases: ["mythos preview", "anthropic frontier red team 2026"]
 related:
   - concepts/anthropic-openclaw-conflict
   - entities/dario-amodei
   - concepts/ai-agent-engineering
-sources: []
+  - entities/mozilla
+sources:
+  - raw/articles/2026-05-07_mozilla_behind-the-scenes-hardening-firefox.md
 ---
 
 # Claude Mythos Preview
@@ -73,6 +77,48 @@ The incident highlights risks of: inference endpoint discoverability, credential
 2. **Infrastructure shift**: Standard open-source tools now sufficient for multistage network attacks — no custom infrastructure needed
 3. **Release caution**: The lockdown approach suggests Anthropic sees Mythos capabilities as exceeding what can be safely deployed publicly
 4. **Physical world integration**: Project Vend and Project Fetch signal Anthropic's interest in AI agents operating in real-world environments, not just digital tasks
+
+## Mozilla Firefox Hardening — 実運用での成果 (May 2026)
+
+Mozilla は **Claude Mythos Preview** と他の AI モデルを活用し、Firefox の大規模セキュリティ監査を実施。2026年4月だけで **423件** のセキュリティバグを修正 — これは2025年全体の合計を上回る規模。
+
+### バグ内訳
+
+| 発見元 | 件数 |
+|--------|------|
+| **Claude Mythos Preview** | 271 |
+| 外部報告 | 41 |
+| その他内部 (Fuzzing/手動) | 111 |
+| **合計** | **423** |
+
+### 深刻度分布 (Mythos Preview 発見分)
+- **sec-high**: 180件
+- **sec-moderate**: 80件
+- **sec-low**: 11件
+
+### 特徴的な発見
+
+- **Sandbox Escape（サンドボックス突破）**: 従来のファジングでは検出が極めて困難なバグを多数発見。モデルは Firefox ソースコードをパッチしてサンドボックス内限定実行が許可されている
+- **15年前のバグ** (Bug 2024437): `<legend>` 要素の再帰スタック深度とサイクルコレクションの問題
+- **20年前の XSLT バグ** (Bug 2025977): 再入可能呼び出しがポインタ使用中にハッシュテーブル再ハッシュを引き起こす
+- **JIT 最適化エラー** (Bug 2024918): WebAssembly GC struct で fake-object プリミティブ生成
+- **RLBox エスケープ** (Bug 2029813): プロセス内サンドボックスの検証ロジックのギャップを突破
+
+### パイプラインアーキテクチャ
+
+Mozilla は以下の要素からなるプロジェクト固有パイプラインを構築：
+
+1. **Discovery Subsystem**: 既存ファジング基盤上に構築されたエージェントハーネス
+2. **並列化**: 複数のエフェメラル VM でジョブを実行、各ジョブが特定ファイルを対象
+3. **統合**: Bugzilla で自動重複排除・追跡、エンジニアによるトリアージ
+4. **モデル非依存**: Claude Opus 4.6 → Mythos Preview への移行が容易
+
+### 教訓
+
+Mozilla はすべてのソフトウェアプロジェクトに対し、**今すぐ AI ハーネスの使用を開始する**ことを推奨：
+> *"There is a bug in this part of the code, please find it and build a testcase."* という単純なプロンプトから始め、発見と検証の「内部ループ」の周りにオーケストレーションとツールを段階的に構築する。
+
+今後の計画として、**ファイルベースのスキャンからパッチベースの CI スキャン**への移行を予定。
 
 ## Related
 
