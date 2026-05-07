@@ -1,3 +1,25 @@
+## [2026-05-08] Active Crawl — 4 New Concept Pages (Model Spec Midtraining, Tool-Use Tax, Agent Governance Toolkit, DefenseClaw)
+
+**Action**: クロールジョブが4件の新トピックを発見し、wikiに追加。
+
+**Research**: トレンドAIトピックを検索し、wiki未カバーを確認。4件の高品質な一次ソースを取得。
+
+**New raw articles saved**:
+- `raw/articles/2026-05-05_anthropic-model-spec-midtraining.md` — Anthropic Alignment Science Blog: MSM training stage, agentic misalignment 68%→5%, 10-60x AFT efficiency
+- `raw/articles/2026-04-30_arxiv-tool-use-tax-llm-agents.md` — arXiv 2605.00136: Tool-calling protocol overhead, semantic noise sensitivity, G-STEP mitigation
+- `raw/articles/2026-04-02_microsoft-agent-governance-toolkit.md` — Microsoft Open Source Blog: 7-package runtime security framework, OWASP Top 10 coverage, MIT license
+- `raw/articles/2026-03-23_cisco-defenseclaw-rsac.md` — Cisco Blogs (RSAC 2026): Open-source governance for OpenClaw, 5 scanners, NVIDIA OpenShell integration
+
+**New concept pages created**:
+- `concepts/model-spec-midtraining.md` — AnthropicのModel Spec Midtraining。Pre-trainingとAFTの間に挿入する新訓練段階。合成Spec文書で一般化を制御。Qwen2.5-32BでAM 68%→5%。AFTデータ効率10-60x向上。
+- `concepts/tool-use-tax.md` — LLMエージェントのツール使用に伴うパフォーマンス低下現象。ツール呼び出しプロトコルのオーバーヘッドが原因。ノイズ環境下ではネイティブCoTがツール拡張推論を上回るケースを実証。
+- `concepts/microsoft-agent-governance-toolkit.md` — MicrosoftのオープンソースAIエージェントランタイムセキュリティフレームワーク。7パッケージ、OWASP Top 10全対応、<0.1ms p99レイテンシ。
+- `concepts/defenseclaw.md` — CiscoのOpenClaw向けオープンソースセキュリティレイヤー。RSAC 2026発表。5つのプリランスキャナー、ランタイム脅威検出、即時強制執行。
+
+**Index/log**: index.mdに4件の新コンセプトページを追加、フロントマター数更新。総ページ数: 5198→5202、Full entries: 4648→4652、Concepts: 447→451。
+
+**Cross-references**: [[concepts/constitutional-ai]], [[concepts/agent-governance]], [[concepts/agentic-ai-governance]], [[concepts/moltbook-breach-2026]], [[concepts/mcp]], [[concepts/agent-harness]], [[concepts/chain-of-thought]], [[concepts/agent-sandboxing]], [[concepts/openclaw-architecture]], [[entities/anthropic]], [[entities/microsoft]], [[entities/openclaw]], [[entities/nvidia]] — すべて存在確認済み。
+
 ## [2026-05-07] Shannon原典追加 & 情報理論×エージェント通信再考 (スレッド要望)
 
 **Action**: スレッドのV-Information論文 (2002.10689) の文脈で、Shannon (1948) 原典をwikiに追加。さらに情報理論とAIエージェント間通信を統合した概念ページを作成。

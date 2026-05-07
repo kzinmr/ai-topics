@@ -2,7 +2,7 @@
      2|
      3|> Content catalog. Every wiki page listed under its type with a one-line summary.
      4|> Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 5198 | Full entries: 4648 | Stubs: 546 |
+> Last updated: 2026-05-08 | Total pages: 5202 | Full entries: 4652 | Stubs: 546 |
      6|
      7|## Entities (406 pages)
      8|
@@ -463,7 +463,7 @@
    454|   8|- [[entities/vercel]] — Vercel — Frontend cloud platform (Next.js). Released deepsec open-source security harness using coding agents for vulnerability discovery and remediation (May 2026).
    455|   9|- [[entities/radixark]] — RadixArk — AI inference infrastructure startup. $100M seed (May 2026), built on SGLang inference + Miles (large-scale RL).
    456|  10|- [[entities/perplexity]] — Perplexity — AI search platform expanding into vertical products: Professional Finance Computer (35 analyst workflows), NEJM/BMJ premium medical access.
-## Concepts (447 pages)
+## Concepts (451 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/altman-three-observations]] — Altman's Three Observations: 対数スケーリング（intelligence ≈ log(resources)）、超デフレコスト（10x/年）、超指数関数的価値の3つの経済観察枠組み。GPT-4→GPT-4oで150xのコスト低下、2035年ビジョン、AIエージェント経済学。
@@ -479,12 +479,15 @@
 - [[concepts/deepseek-v3]] — DeepSeek-V3: 671B MoEモデル（37B活性化/トークン）。MLA、補助損失なし負荷分散、MTP、FP8訓練、DualPipeなど複数の革新的技術を導入。14.8Tトークンで$5.576Mの訓練コスト。GPT-4oクラスの性能を達成したマイルストーン論文（arXiv:2412.19437, Dec 2024）。
 - [[concepts/deepseek-r1]] — DeepSeek-R1: Pure RL（GRPO）で推論能力の創発を初の大規模実証。Nature掲載。R1-Zero（純粋RL）/ R1（4段階パイプライン）/ 蒸留モデル。自己検証・アハモーメント。AIME 79.8%, MATH-500 97.3%。$294Kでo1級性能。
 - [[concepts/deepseek-v4]] — DeepSeek-V4: 1.6T Pro/284B Flash、1MコンテキストMoE。Hybrid Attention（CSA+HCA+SWA）、mHC、Muon Optimizer、MegaMoE、TileLang DSL、On-Policy Distillation、FP4 QAT。V3.2比FLOPs 3.7-10x削減、KVキャッシュ10-14x削減。Codeforces 3206（人間23位相当）。
+- [[concepts/defenseclaw]] — Cisco's open-source agentic governance layer for OpenClaw. Pre-run scanning (5 scanners), runtime threat detection, non-advisory enforcement. Built on NVIDIA OpenShell. Announced RSAC 2026.
 - [[concepts/google-project-mariner-shutdown]] — Google's shutdown of Project Mariner browser agent in May 2026 due to poor performance and high costs.
 |- [[concepts/grpo]] — Group Relative Policy Optimization: DeepSeek-R1で導入されたRLアルゴリズム。PPOのクリティックモデルを不要にし、大規模モデルのRL訓練の計算ボトルネックを解消。グループ内相対比較でアドバンテージ推定。
 |- [[concepts/poor-mans-continuous-learning]] — Poor Man's Continuous Learning: LLMエージェントがモデル重みを更新せずに、成功した出力・ユーザーの修正・ドメイン知識を外部ナレッジベースに蓄積して改善する設計パターン。Text-to-SQL文脈でAshpreet Bediが提唱。BQ Golden Queries、dbt Semantic Layer、LPE-SQLと同種のアプローチ。
 |- [[concepts/llm-creative-writing]]
 |- [[concepts/linguistic-vertigo]] — QC (Qiaochu Yuan) によるLLM時代の言語的真正性喪失の認知現象。言語的めまい（linguistic vertigo）、頭の言葉 vs 身体の言葉、LLMをトレーサー色素とする社会診断、RLHFの社会的影（→ [[concepts/societal-shadow]]）。Gwernによるプロンプト視覚（unseeing / prompt-vision）の補遺を含む。体験的前提は[[raw/articles/2023-03-13_qchu-re-encountering-language.md]]。
 - [[concepts/mcp]] — Model Context Protocol: Anthropicが開発したAIエージェント⇄ツール間のオープン標準（"USB-C for AI"）。MCP Apps（インタラクティブUI拡張）を含む。OpenAI/Google/Microsoft/Red Hatが採用。セキュリティ課題と2026年ロードマップ。
+- [[concepts/microsoft-agent-governance-toolkit]] — Microsoft's open-source (MIT) runtime security framework for AI agents. 7 packages addressing all 10 OWASP Agentic AI risks. Sub-ms policy enforcement, framework-agnostic.
+- [[concepts/model-spec-midtraining]] — Anthropic's novel midtraining stage between pre-training and AFT. Trains models on synthetic Model Spec docs to shape generalization. Reduces agentic misalignment from 68% to 5%. 10-60x AFT data efficiency.
 - [[concepts/moltbook-breach-2026]] — **Moltbook Breach 2026（77万エージェント同時侵害事件）** — 史上初の産業規模AIエージェントセキュリティインシデント。Supabase RLS無効により77万エージェントのAPIトークン（150万件）が露出。CVE-2026-25253（One-Click RCE）、ClawHavocキャンペーン（341悪意スキル）と同時期に発生。致死的三要素（Lethal Trifecta）の現実検証。
 - [[concepts/mit-encompass]] — MIT CSAIL framework for AI agent search with automatic backtracking and parallel cloning, 15-40% accuracy boost.
    466|- [[concepts/recursive-self-improvement]] — AI systems autonomously designing and training successor models. Jack Clark's 60% probability by end 2028. Compounding alignment risk, SWE-Bench 93.9% evidence.
@@ -515,6 +518,7 @@
 |- [[concepts/open-weights-licensing-tightening]] — Trend of leading open weights AI model providers tightening license terms in 2026. Meta dropped open weights, Alibaba Qwen API-first, Mistral commercial restrictions, Kimi attribution clause. DeepSeek exception. Contestable markets theory, oligopoly risk.
 |- [[concepts/normalization-of-deviance-in-ai-coding]] — Risk of gradually trusting AI-generated code without review, coined from Diane Vaughan's Challenger disaster framework. Each successful unreviewed deployment reinforces trust, creating security/quality risk. AI agents lack professional reputation/accountability.
 |- [[concepts/speed-vs-legitimacy-in-ai-institutions]] — Core tension: fast institutions (AI labs, tech) move at tech speed but lack trust; slow institutions (regulators, courts) have legitimacy but can't keep pace. Two-tier civilization risk. Historical parallel: late medieval Church vs new money/press/science.
+- [[concepts/tool-use-tax]] — Performance degradation in LLM agents caused by tool-calling protocol overhead. In noisy environments, native CoT can outperform tool-augmented reasoning. G-STEP partial mitigation.
 |- [[concepts/vibe-coding-vs-agentic-engineering]] — Distinction between vibe coding (natural language → code, no review) vs agentic engineering (professional judgment, security, production quality). Blurring boundary as agents improve. Bottleneck shifts: ~200 lines/day → ~2000 lines/day. Real-world usage as quality signal.
 |- [[concepts/constitutional-ai]] — Anthropic's methodology for aligning AI via explicit principles (Constitution). Compared with OpenAI Model Spec by Boaz Barak (Jan 2026). Three poles of alignment: Principles, Policies, Personality.
 |- [[concepts/data-analysis-agents]] — AIデータ分析エージェントの包括的概念。データ探索→スキーマ理解→クエリ生成→実行→検証→可視化→報告のパイプライン。OpenAI社内データエージェント（GPT-5.2）とCognition DANA/Devinの2大アプローチを比較。DWHセマンティックレイヤー・ゴールデンクエリとの関係性も含む。
