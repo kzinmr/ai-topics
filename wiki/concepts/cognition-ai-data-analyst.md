@@ -6,18 +6,20 @@ aliases:
   - devin-data-analyst
   - ai-data-analyst-pattern
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-05-07
 tags:
   - concept
   - cognition
   - devin
+  - dana
   - data-analysis
   - mcp
   - ai-agent-engineering
-status: draft
+status: complete
 sources:
   - https://devin.ai/ai-data-analyst-1
   - https://devin.ai/ai-data-analyst-2
+  - https://cognition.ai/blog/how-cognition-uses-devin-to-build-devin
 related:
   - code-execution-with-mcp
   - cognition-devin-philosophy
@@ -148,3 +150,54 @@ Devinのデータ分析精度を決定する最も重要な要素。チーム全
 | チーム工数/月 | 150+時間 | 数分×質問数 |
 | 知識の断片化 | 5チームに分散（Product Eng, Data Eng, DS, BI, Finance） | 一元化 |
 | 出力の検証可能性 | 低（プロセスがブラックボックス） | 高（SQL+リンク付き） |
+
+## DANA (Data Analyst Agent) — Devin版データ分析専用エージェント
+
+Cognition社内では、Devinのデータ分析役割を **DANA (Data Analyst Agent)** として正式に製品化している。
+
+### 特徴
+- **アクセス方法**: Slackで `/dana` または `@Devin !dana` を打つだけで起動
+- **対応DB**: Redshift, Snowflake, BigQuery
+- **可視化**: Seabornでチャート生成、ダッシュボード構築
+- **対象ユーザー**: 非エンジニアでも利用可能。「なぜ火曜日にサインアップが落ちた？」といったアドホック質問を、エンジニアを引き剥がさずに回答
+
+### DANAとDevinの役割分担
+
+```
+@Devin       → ソフトウェアエンジニアリング全般（コード修正、PR、レビュー）
+@Devin !dana → データ分析専用（クエリ、可視化、ダッシュボード）
+```
+
+これは **Agent Specialization** の実践例 — 同じエージェント基盤上で、役割ごとに異なるKnowledge・MCP・振る舞いを定義するパターン。
+
+### 関連
+- [[concepts/agent-patterns]] — エージェント特殊化パターンの実例
+- [[concepts/closing-agent-loop]] — データ分析特化型の閉ループ
+
+## End-to-End Bug Debugging — データ分析とエンジニアリングの融合
+
+CognitionはDANAのデータ分析能力を、**バグトリアージとエンドツーエンド修正**にも拡張している。
+
+### ワークフロー
+1. **トリガー**: Linearの`Bug`ラベルがトリガー
+2. **調査**: Datadog（ログ）+ read-only DBレプリカにアクセスして原因特定
+3. **トレース**: 改変コミットをgit historyから特定
+4. **修正**: コード修正 + 回帰テストを作成
+5. **PR**: 自動でPRを開く
+
+### 重要な接続
+
+このワークフローは、データ分析エージェントとソフトウェアエンジニアリングエージェントの**統合**を示している：
+
+```
+データ分析（DANA）: なぜ数値がおかしい？ → コードレベルの原因特定
+バグ修正（Devin）:      コード修正 + テスト追加
+```
+
+従来は別々のチーム（Data + Engineering）が担当していたワークフローを、単一エージェント基盤で完結させることで、**原因発見から修正までのリードタイムを劇的に短縮**している。
+
+### 技術的基盤
+- Datadog連携（MCP経由）
+- Read-only DB replica（データ整合性検証）
+- Git history walk（改変コミット特定）
+- Playbook（バグトリアージ用のカスタムシステムプロンプト）

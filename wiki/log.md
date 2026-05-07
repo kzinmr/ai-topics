@@ -1401,3 +1401,19 @@ Sources: X/Twitter scan (x-accounts-scan cron job).
 - `concepts/poor-mans-continuous-learning.md` — Poor Man's Continuous Learning概念ページ。日本語＋英語。定義、モチベーション、2-pathアーキテクチャ（Online/Offline）、KB設計（Table Info / Sample Queries / Business Semanticsの3分類）、5つの実装例比較表（PMCL SQL Agent / BQ Golden Queries / BQ Semantic Graph / dbt Semantic Layer / LPE-SQL）、ユースケース判定基準を含む。
 
 **Index updated**: [[concepts/poor-mans-continuous-learning]] をConceptsセクションに追加（grpoの次）。
+
+## [2026-05-07] データ分析エージェント事例 — OpenAI内部エージェント + Cognition DANA/Devin
+
+**Action**: kzinmrからのリクエストにより、OpenAI社内データエージェント記事 + Cognition Devin DANA + End-to-Endバグデバッグ事例をwikiに取り込み。統合概念ページを作成し、既存ページ（cognition-ai-data-analyst）を大幅に拡充。
+
+**New raw articles saved:**
+- `raw/articles/2026-01-29_openai-in-house-data-agent.md` — OpenAI社内データエージェント（GPT-5.2、600+PB/70k+データセット）。Six Layers of Context、The Teammate Model、"Meaning Lives in Code"の教訓。
+- `raw/articles/2026-04-01_cognition-how-cognition-uses-devin-to-build-devin.md` — CognitionによるDevin活用の全容。DANA（Data Analyst Agent）、end-to-endバグデバッグ、Playbooks、DeepWiki、MCP Marketplace。
+
+**New page created:**
+- `concepts/data-analysis-agents.md` — 包括的概念ページ。データ分析エージェントのコアチャレンジ、2大アプローチ比較（OpenAI vs Cognition）、共通アーキテクチャパターン（多層コンテキスト接地/KB/検証ループ/MCP）、DWHセマンティックレイヤーとの関係性、データ質問→コード修正までのエンドツーエンド統合。
+
+**Pages enriched:**
+- `concepts/cognition-ai-data-analyst.md` — DANA専用エージェントセクション追加（/dana、@Devin !danaパターン、Agent Specialization）。End-to-Endバグデバッグセクション追加（Datadog連携、git history walk、Linear Bug labelトリガー）。frontmatter更新（status: draft→complete、DANAタグ追加、Cognition blogソース追加）。
+
+**Index updated**: [[concepts/data-analysis-agents]] をConceptsセクションに追加。[[concepts/cognition-ai-data-analyst]] の説明文を拡充。

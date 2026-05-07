@@ -379,7 +379,7 @@
    379|
    380|## Cognition-Ai-Data-Analyst.Md
    381|
-   382|- [[concepts/cognition-ai-data-analyst]] — Cognitionチームが提唱する、AIソフトウェアエンジニア（Devin）を24/7オンデマンドデータサイエンティストとして活用するアプローチ。SQL専用ツールではなく、コードベースの文脈理解+データ分析+可視化を統合したエージェント設計。
+   382|- [[concepts/cognition-ai-data-analyst]] — Cognition/Devinを24/7データ分析エージェントにする設計。MCP + Knowledge設定 + DANA専用エージェント。コードベース文脈理解×データ分析の統合。End-to-Endバグデバッグ（Datadog連携）も含む。
    383|
    384|## Cognition-Devin-Philosophy.Md
    385|
@@ -429,7 +429,14 @@
 
 - [[concepts/constitutional-ai]] — Anthropic's methodology for aligning AI via explicit constitutional principles. Three Poles of Alignment (Principles, Policies, Personality) framework from Boaz Barak's 2026 analysis. Claude Constitution vs. OpenAI Model Spec comparison. Covers RLAIF, anthropomorphism critique, and AI-led ethics debate.
 
+## Data-Analysis-Agents.Md
+
+- [[concepts/data-analysis-agents]] — AIデータ分析エージェントの包括的概念。データ探索→スキーマ理解→クエリ生成→実行→検証→可視化→報告のパイプライン。OpenAI社内データエージェント（GPT-5.2）とCognition DANA/Devinの2大アプローチを比較。DWHセマンティックレイヤー・ゴールデンクエリとの関係性も含む。
+
+## Db9-Filesystem-Sql.Md
+
 ## Critique-Shadowing.Md
+
    429|
    430|- [[concepts/critique-shadowing]] — A 7-step iterative methodology for building aligned LLM-as-Judge evaluators, coined by Hamel Husain. The core insight: the process of building an LLM judge forces domain experts to carefully examine d
    431|
