@@ -1,4 +1,16 @@
-## [2026-05-07] LLM Creative Writing概念ページ作成 — Gwern "Towards Better LLM Creative Writing"
+## [2026-05-07] Linguistic Vertigo概念ページ作成 — QC \"Core dump\" エッセイ
+
+**Source**: User request (Discord) — qchu.substack.com/p/core-dump のwiki取り込み
+
+**Raw articles saved**:
+- `raw/articles/2024-09-16_qchu-core-dump.md` — QC (Qiaochu Yuan) によるLLM時代の言語的真正性に関するエッセイ。言語的めまい（linguistic vertigo）、頭の言葉（Head Words） vs 身体の言葉（Body Words）、LLMをトレーサー色素（tracer dye）とする社会の虚ろな言語の診断、RLHFによる社会の影（societal shadow）のマッピング。Gwernによるコメント補遺：プロンプト視覚（prompt-vision/unseeing）、モード崩壊したRLHFの不気味さ、言語機械としての人間。
+
+**Pages created**:
+- `concepts/linguistic-vertigo.md` — 新規概念ページ。QCの一元論的な言語批判から抽出した5つの概念を構造化：言語的めまい、頭 vs 身体の言葉、トレーサー色素、社会的影、プロンプト視覚。既存の[[concepts/rlhf]]との比較表を含む。
+
+---
+
+
 
 **Source**: User request (Discord) — gwern.net/blog/2025/better-llm-writing のwiki取り込み
 
