@@ -48,9 +48,21 @@ This is documented in Section 9 of the paper and represents the first industrial
 | Dimension | Stateless LLMs | AI Agents |
 |-----------|---------------|-----------|
 | Input vectors | Prompt text, images | Prompt + tool outputs + memory state + environment |
-| Output vectors | Text response | API calls, file writes, network access, email sends |
-| Security boundary | Single inference call | Multi-step execution with persistent state |
-| Mitigation difficulty | Prompt filtering, alignment | Runtime monitoring + tool-output sanitization + memory integrity |
+|| Output vectors | Text response | API calls, file writes, network access, email sends |
+|| Security boundary | Single inference call | Multi-step execution with persistent state |
+|| Mitigation difficulty | Prompt filtering, alignment | Runtime monitoring + tool-output sanitization + memory integrity |
+
+## Real-World Incidents
+
+### Moltbook Breach (2026年1月) — 77万エージェント同時侵害
+
+史上初の産業規模AIエージェントセキュリティインシデント。詳細は別ページに記録:
+
+→ [[concepts/moltbook-breach-2026|Moltbook Breach 2026 — 77万エージェント同時侵害事件]]
+
+**要約**: Moltbook（AIエージェント専用SNS）のSupabaseバックエンドでRLSが無効。フロントエンドに露出したAPIキーから誰でもデータベース全体にアクセス可能。77万以上のエージェントのAPIトークン（150万件）、メールアドレス（35,000件）、全プライベートメッセージが暴露。各エージェントはホストマシンへのシェルアクセス権限を持っていたため、実質的に世界最大のAIエージェントボットネットが構築可能な状態だった。
+
+併せてCVE-2026-25253（One-Click RCE, CVSS 8.8）とClawHavocキャンペーン（341個の悪意スキルによる暗号資産窃取）も同時期に発生し、OpenClawエコシステム全体が同時多発的に攻撃された。
 
 ## Related Pages
 

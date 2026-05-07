@@ -1,3 +1,23 @@
+## [2026-05-07] OpenClaw/Moltbook 77万エージェント同時侵害事件 — 専用概念ページ作成
+
+**Action**: kzinmrからのリクエストにより、OpenClaw/Moltbookのセキュリティインシデント（2026年1月）をwikiに取り込み。ソース調査＋raw article保存＋専用概念ページ作成＋既存ページへの相互参照追加。
+
+**New raw articles saved (5件)**:
+- `raw/articles/2026-01-31_404media_moltbook-database-exposed.md` — 404 Mediaの一次スクープ。Jamieson O'Reilly発見、Supabase RLS無効の詳細。
+- `raw/articles/2026-02-02_treblle_moltbook-breach-breakdown.md` — Treblleによる技術分解。修正SQLの実例。
+- `raw/articles/2026-02-02_dtg-cve-2026-25253-openclaw-moltbook.md` — CVE-2026-25253詳細＋ClawHavocキャンペーンIoC。
+- `raw/articles/2026-02-02_adversa-openclaw-security-guide.md` — Adversa AIの包括的セキュリティガイド。全CVE一覧＋ハードニング手法。
+- `raw/articles/2026-02-02_astrix-openclaw-moltbot-security-nightmare.md` — Astrix Securityの包括的時系列分析＋ClawdHunter統計。
+
+**New page created**:
+- `concepts/moltbook-breach-2026.md` — 専用インシデント概念ページ。日本語。77万エージェント侵害の全容：技術的詳細、時系列、Lethal Trifecta分析、関連脆弱性（CVE-2026-25253, ClawHavoc）、エコシステム背景（Crustafarianism創発など）、教訓。
+
+**Pages enriched**:
+- `concepts/ai-agent-security.md` — 既存の「Real-World Validation」セクションに加え、専用の「Real-World Incidents → Moltbook Breach」セクションを新設。専用ページへの相互参照を追加。
+- `concepts/openclaw-ecosystem.md` — 「セキュリティとガバナンス」セクション内に「2026年1月のセキュリティインシデント」サブセクション追加。3攻撃ベクトル（Moltbook Breach / CVE-2026-25253 / ClawHavoc）の比較表＋相互参照。
+
+**Index updated**: [[concepts/moltbook-breach-2026]] をConceptsセクションに追加。
+
 ## [2026-05-07] Claude Blog「Interactive Connectors and MCP Apps」記事取り込み
 
 **Action**: kzinmrからのリクエストにより、`https://claude.com/blog/interactive-tools-in-claude` の取り込み状態を確認。未取り込みだったため、raw article保存＋既存MCP概念ページにMCP Appsセクションを追加。
