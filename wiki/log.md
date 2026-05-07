@@ -1,4 +1,21 @@
-## [2026-05-07] Hermes vs OpenClaw 重複解消 — アーキテクチャ分析の既存ページと統合
+## [2026-05-07] 8大AI Agentハーネス一覧比較ポータル構築 — 4エンティティ新規追加 + 1エンリッチ + 1比較ページ
+
+**Action**: kzinmrからの指示により、8つのAI Agentハーネスのwikiエンティティ状態を確認し、不足分をエンリッチメント込みで追加。一覧比較ポータルを整備。
+
+**Pages created (4 entity pages + 1 concept page)**:
+- `entities/pi.md` — Pi（Mario Zechner製ミニマルAIコーディングハーネス）。~1K token system prompt、4ツール、45.5K GitHub Stars、MIT。OpenClawの基盤。ローカルモデル最適。L3。
+- `entities/codex.md` — OpenAI Codex CLI。Apache-2.0、Rust製、79.3K Stars。GPT-5.5ネイティブ＋カスタムプロバイダ＋ローカルモデル。CLI/Desktop/IDE/Web。ChatGPT Plus/Pro含む。L3。
+- `entities/copilot-cli.md` — GitHub Copilot CLI。6ビルトインサブエージェント、`/fleet`並列、MCP拡張、BYOK/ローカルモデル対応。L2。
+- `entities/droid.md` — Factory Droid。CLI/IDE/Slack/Linear/CI/CD全方位。Specification Mode + 3段階Auto-Run。SOC-2。専門サブエージェント。L2。
+- `concepts/agent-harness-comparison.md` — 8ハーネス（Claude Code/OpenCode/Pi/Codex/Copilot CLI/Droid/OpenClaw/Hermes Agent）の包括的比較ポータル。機能表、モデル互換性マトリクス、価格比較、ユースケース推奨、Harness Effect分析。
+
+**Pages enriched**:
+- `entities/opencode.md` — 全面書き換え（155K Stars、MIT、75+プロバイダ、マルチサーフェス、Plan/Build/Generalエージェント、LSP統合、GitHub統合）。Rampの採用理由も維持。
+
+**Pages updated (redirect)**:
+- `entities/pi-coding-agent.md` → `entities/pi`へのリダイレクトに変更（重複解消）
+
+**Index/log**: index.mdに5エントリ追加、1リダイレクト更新、1エントリ削除（pi-coding-agent→pi統合）。ページ数5178→5183、Full entries 4632→4637。
 
 **Action**: concepts/hermes-vs-openclaw.md を削除（comparisons/hermes-vs-openclaw-architecture.md と concepts/openclaw/architecture-comparison.md が2026-04-18に既存）
 **Merged**: 新規の建築的深掘り分析を comparisons/hermes-vs-openclaw-architecture.md に追加（Architecture Deep-Diveセクション）

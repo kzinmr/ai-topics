@@ -2,9 +2,9 @@
      2|
      3|> Content catalog. Every wiki page listed under its type with a one-line summary.
      4|> Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 5178 | Full entries: 4632 | Stubs: 546 |
+> Last updated: 2026-05-07 | Total pages: 5183 | Full entries: 4637 | Stubs: 546 |
      6|
-     7|## Entities (400 pages)
+     7|## Entities (404 pages)
      8|
      9|- [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
     10|- [[entities/hugo-bowne]] — Hugo Bowne-Anderson — Data scientist and AI privacy engineering writer. Co-author of "15 Privacy Questions Every AI Builder is Asking" with Katharine Jarmul.
@@ -73,11 +73,13 @@
     73|- [[entities/claude-code]] — AnthropicのAIコーディングエージェント。CLI、デスクトップアプリ、VS Code/JetBrains拡張、Web、iOS、Slackマルチサーフェスで動作。Boris Chernyによって開発され、2025年7月にAnthropicからOpenAIへ移管された。
     74|- [[entities/claude-design]] — Anthropic Labs product for collaborative visual design, powered by Claude Opus 4.7's vision model. Released April 17, 2026 in research preview.
     75|- [[entities/claude-mythos]] — Anthropic's next-generation model, developed after . Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
-    76|- [[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
-    77|- [[entities/cloudflare]] — Global cloud platform repositioning as "agentic cloud" infrastructure. Agents SDK, Project Think, autonomous account provisioning via Stripe Projects, Registrar API.
-    78|- [[entities/coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
-    79|- [[entities/construction-physics-com]] — **URL:** https://constructionphysics.substack.com
-    80|- [[entities/corbett]] — **X/Twitter** | @corbtt |
+- [[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
+- [[entities/codex]] — OpenAI製のオープンソースAIコーディングエージェント。Apache-2.0、Rust製、79.3K GitHub Stars。GPT-5.5/5.4ネイティブ＋カスタムプロバイダ＋ローカルモデル対応。CLI/Desktop/IDE/Webのマルチサーフェス。ChatGPT Plus/Proに含まれ、サブスクリプション壁なし。
+- [[entities/cloudflare]] — Global cloud platform repositioning as "agentic cloud" infrastructure. Agents SDK, Project Think, autonomous account provisioning via Stripe Projects, Registrar API.
+- [[entities/coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
+- [[entities/construction-physics-com]] — **URL:** https://constructionphysics.substack.com
+- [[entities/copilot-cli]] — GitHub製ターミナルネイティブAIコーディングエージェント。6種類のビルトインサブエージェント（explore/code-review/research等）、`/fleet`並列実行、MCP拡張、BYOK/ローカルモデル対応（2026年4月+）。Copilot Free/Pro/Pro+/Business/Enterpriseに含まれる。
+- [[entities/corbett]] — **X/Twitter** | @corbtt |
     81|- [[entities/cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
     82|- [[entities/daniel-de-laney]] — **Blog** | danieldelaney.net |
     83|- [[entities/daniel-han]] — **X/Twitter** | @danielhanchen |
@@ -101,8 +103,9 @@
    101|- [[entities/doug-turnbull]] — **X/Twitter** | @softwaredoug |
    102|- [[entities/downtowndougbrown-com]] — **Blog** | downtowndougbrown.com |
    103|- [[entities/drew-breunig]] — **Blog** | dbreunig.com |
-   104|- [[entities/drmaciver]] — **Blog:** drmaciver.com | **Notebook:** notebook.drmaciver.com | **Substack:** Overthinking Everything
-   105|- [[entities/dspy]] — DSPy (Declare + Optimize) is an open-source framework developed by Stanford's NLP group for building systems that use large language models. Instead of writing hand-crafted prompts, developers decl...
+- [[entities/drmaciver]] — **Blog:** drmaciver.com | **Notebook:** notebook.drmaciver.com | **Substack:** Overthinking Everything
+- [[entities/droid]] — Factory AI製エンタープライズコーディングエージェント。CLI/IDE/Slack/Linear/CI/CDマルチプラットフォーム。Specification Mode + 3段階Auto-Run。SOC-2準拠、$20-50/mo。専門化サブエージェント（CodeDroid/Review Droid/QA Droid）。
+- [[entities/dspy]] — DSPy (Declare + Optimize) is an open-source framework developed by Stanford's NLP group for building systems that use large language models. Instead of writing hand-crafted prompts, developers decl...
    106|- [[entities/dwarkesh-patel]] — **Born** | August 19, 2000, United States |
    107|- [[entities/dylan-patel]] — **Role** | Founder, CEO, and Chief Analyst at SemiAnalysis |
    108|- [[entities/dynomight-net]] — **URL:** https://dynomight.net
@@ -266,14 +269,15 @@
    266|- [[entities/openai-cua]] — OpenAIの**CUA（Computer-Using Agent）**モデルは、GPT-4oのビジョン機能と強化学習を組み合わせて、スクリーンショットを見てGUIを操作するエージェント。2025年1月に「Operator」として公開され、2025年7月にChatGPTエージェントに完全統合された。
    267|- [[entities/openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
    268|- [[entities/openai]] — **Type** | AI Research & Product Company |
-   269|- [[entities/openclaw]] — Open-source always-on AI assistant framework created by **Peter Steinberger** (former PSPDFKit CEO). Deploys autonomous agents that run continuously, self-evolve through interaction, and integrate ...
-   270|- [[entities/openrouter]] — Unified API gateway for 300+ LLMs from multiple providers. Published the State of AI 2025 study analyzing 100T tokens of real-world LLM usage.
-   271|- [[entities/overreacted-io]] — **URL:** https://overreacted.io
-   272|- [[entities/paul-hoekstra]] — Data engineer and author of Paul's Pipeline (Substack). Defined the 4-layer Agentic Engineering framework (Configuration → Capability → Orchestration → Guardrails) for coding agents like Claude Code and Codex.
-   273|- [[entities/paulgraham-com]] — **Blog** | paulgraham.com |
-   274|- [[entities/pi-coding-agent]] — Mario Zechner's minimal coding agent — 4-package monorepo, 4 default tools, YOLO execution, context-control philosophy. 40k+ GitHub stars. |
-   275|- [[entities/perplexity-comet]] — **Perplexity Comet**は、Perplexity AIが開発したAIネイティブブラウザ。2025年7月にWindows/macOSでリリースされ、同年11月にAndroid、2026年3月にiOSに対応。「ブラウザをAIエージェントにする」戦略の最前線に位置する製品。
-   276|- [[entities/peter-steinberger]] — Austrian software developer, creator of **OpenClaw** (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as **@steipete** on GitHub/Twitter. A pioneer of **AI-native dev...
+- [[entities/openclaw]] — Open-source always-on AI assistant framework created by **Peter Steinberger** (former PSPDFKit CEO). Deploys autonomous agents that run continuously, self-evolve through interaction, and integrate ...
+- [[entities/opencode]] — 最も人気のあるオープンソースAIコーディングエージェント。155K GitHub Stars、MITライセンス、850+コントリビューター。75+ LLMプロバイダ対応、マルチサーフェス（TUI/Desktop/IDE）。Plan/Build/Generalの3エージェント、LSP統合、GitHubネイティブ統合。
+- [[entities/openrouter]] — Unified API gateway for 300+ LLMs from multiple providers. Published the State of AI 2025 study analyzing 100T tokens of real-world LLM usage.
+- [[entities/overreacted-io]] — **URL:** https://overreacted.io
+- [[entities/paul-hoekstra]] — Data engineer and author of Paul's Pipeline (Substack). Defined the 4-layer Agentic Engineering framework (Configuration → Capability → Orchestration → Guardrails) for coding agents like Claude Code and Codex.
+- [[entities/paulgraham-com]] — **Blog** | paulgraham.com |
+- [[entities/perplexity-comet]] — Perplexity Cometは、Perplexity AIが開発したAIネイティブブラウザ。2025年7月にWindows/macOSでリリースされ、同年11月にAndroid、2026年3月にiOSに対応。「ブラウザをAIエージェントにする」戦略の最前線に位置する製品。
+- [[entities/peter-steinberger]] — Austrian software developer, creator of **OpenClaw** (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as **@steipete** on GitHub/Twitter. A pioneer of **AI-native dev...
+- [[entities/pi]] — Mario Zechner（libGDX開発者）製ミニマルAIコーディングハーネス。~1K token system prompt、4ツールのみ（read/write/edit/bash）、45.5K GitHub Stars、MITライセンス。TypeScript拡張/スキル/テーマによる拡張。OpenClawの基盤。ローカルモデルに最適。
    277|- [[entities/cory-doctorow]] — Canadian-British sci-fi author and digital rights activist. Coined "enshittification." Blogs at pluralistic.net. Critical voice on AI policy and corporate personhood.
    278|- [[entities/philiplaine-com]] — **URL:** https://philiplaine.com
    279|- [[entities/phil-schmid]] — Staff Engineer (AI DevX/DevRel) at Google DeepMind, ex-Hugging Face Tech Lead (revenue $0→$100M). Author of FSDP+Q-LoRA guide, RLHF tutorials, Inference Endpoints.
@@ -484,6 +488,7 @@
    473|- [[concepts/agent-governance]] — Agent governance is the structured approach enterprises use to define how autonomous AI systems operate, what they can access, and how their actions are monitored. It encompasses policy, identity, ...
    474|- [[concepts/agent-harness-primitives]] — A harness is every piece of code, configuration, and execution logic that wraps a raw model to turn it into a work engine. Agent = Model + Harness. The bottleneck has shifted from **model capabilit...
    475|- [[concepts/agent-harness]] — An agent harness is the infrastructure layer that sits between an LLM API and the agent's execution environment. It manages tool routing, context management, session lifecycle, and error recovery. ...
+- [[concepts/agent-harness-comparison]] — 8大AIエージェントハーネス（Claude Code/OpenCode/Pi/Codex/Copilot CLI/Droid/OpenClaw/Hermes Agent）の包括的比較ポータル。機能比較表、モデル互換性マトリクス、価格比較、ユースケースレコメンデーション、Harness Effect分析。
 - [[concepts/agent-harnesses]] — > **Core Thesis:** The less you build in your agent framework, the more it works. All the value is in the RL'd model, not your 10,000 lines of abstractions.
 - [[concepts/hermes-agent-architecture]] — Hermes Agent（v0.9.0）のアーキテクチャ詳細。AIAgent中心設計、3つのAPI実行モード、キャッシュ対応プロンプトアセンブリ、SQLite+FTS5永続状態、自己登録型ツールレジストリ、subagent delegation vs execute_code、14+プラットフォームGateway、共有プロバイダランタイム。agent-core-firstの能力蓄積システム。
 
