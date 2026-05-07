@@ -12,7 +12,10 @@ tags:
   - fastai
   - diffusion
   - open-source
-sources: []
+sources:
+  - blog: johnowhitaker.dev
+    rss: https://johnowhitaker.dev/index.xml
+    x: "@johnowhitaker"
 ---
 
 
