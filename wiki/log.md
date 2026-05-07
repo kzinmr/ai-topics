@@ -1,4 +1,16 @@
-## [2026-05-07] Linguistic Vertigo概念ページ作成 — QC \"Core dump\" エッセイ
+## [2026-05-08] Predictive $\mathcal{V}$-Information 概念ページ作成 — Xu et al. ICLR 2020
+
+**Source**: User request (Discord) — arxiv.org/abs/2002.10689 のwiki取り込み
+
+**Raw paper saved**:
+- `raw/papers/2020-02-25_2002.10689_predictive-v-information.md` — Yilun Xu, Shengjia Zhao, Jiaming Song, Russell Stewart, Stefano Ermon による Predictive $\mathcal{V}$-Information 理論。Shannon情報理論の変分拡張で観測者の計算制約を考慮。DPI違反、高次元でのPAC推定保証、構造学習・公平表現学習への応用。ICLR 2020 Talk、211被引用。
+
+**Pages created**:
+- `concepts/predictive-v-information.md` — 新規概念ページ。定義（$\mathcal{V}$-Entropy, Conditional $\mathcal{V}$-Entropy, $\mathcal{V}$-Information）、理論的意義（DPI違反、PAC保証、既存指標の一般化）、3つの応用領域（構造学習、公平表現学習、深層表現学習）を含む。Shannon情報理論との比較表あり。
+
+---
+
+
 
 **Source**: User request (Discord) — qchu.substack.com/p/core-dump のwiki取り込み
 
