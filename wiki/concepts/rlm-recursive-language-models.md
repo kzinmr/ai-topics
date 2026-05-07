@@ -332,6 +332,7 @@ Full analysis in [[concepts/dspy-rlm#RLM × Programmatic Tool Calling: 補完す
 ## Related Concepts
 
 - **[[concepts/dspy]]** — Declarative LM programming framework; ships RLM module
+- **[[concepts/harness-engineering]]** — Evaluation and constraint systems around LLMs; RLM's recursive decomposition pattern aligns with harness engineering's "build-verify loop" philosophy
 - **[[concepts/dspy-rlm]]** — DSPy.RLM implementation with full analysis of PTC relationship, 2-axis framing (function vs data), merge/split symmetry, and Tool-Augmented RLM design
 - **[[concepts/programmatic-tool-calling]]** — Complementary paradigm: LLM writes code that calls tools (function axis). PTC merges N tool calls into 1 code block; RLM splits 1 huge context into N pieces. Mirror symmetry.
 - **[[concepts/code-execution-with-mcp]]** — Middle architectural layer between PTC and CodeMode: MCP as code API with progressive disclosure

@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/scott-wu]]
 title: "Akira (@realmcore_) / Random Labs"
 type: entity
 handle: "@realmcore_"

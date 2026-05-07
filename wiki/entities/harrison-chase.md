@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/samuel-colvin]]
 title: "Harrison Chase"
 type: entity
 tags:
@@ -8,11 +12,12 @@ tags:
   - harness-engineering
 status: complete
 description: "Co-founder and CEO of LangChain. Pioneer of the Open Models / Open Runtime / Open Harness agent architecture framework."
-created: 2026-04-30
+updated: 2026-05-06
 sources:
   - "https://x.com/hwchase17/status/2034297125417460044"
   - "https://www.langchain.com/blog/nvidia-enterprise"
   - "https://www.langchain.com/blog/your-harness-your-memory"
+  - "https://www.langchain.com/blog/agent-observability-needs-feedback-to-power-learning"
   - "https://github.com/langchain-ai/langchain"
   - "https://www.linkedin.com/in/harrison-chase-961287118"
 related:
@@ -68,6 +73,19 @@ Chase published a key thesis: **agent memory is inextricably linked to the harne
 - Memory should be open, owned by the agent builder
 - Harnesses should be model-agnostic to preserve optionality
 - Deep Agents uses open standards (AGENTS.md, Agent Skills) and supports pluggable memory backends (Mongo, Postgres, Redis)
+
+## Agent Observability & Feedback Loop Thesis (May 2026)
+
+Chase published "Agent Observability Needs Feedback to Power Learning" arguing that **observability alone is insufficient** — the critical value comes from closing the feedback loop between observing agent behavior and systematically improving performance.
+
+**Key arguments:**
+1. **Traces as the Foundation** — "In software, the code documents the app; in AI, the traces do."
+2. **Feedback-Powered Learning Loop** — Collect traces → enrich with evaluations → identify failures → make changes → validate → repeat
+3. **Offline + Online Evaluations** — Golden-set evals (unit tests for LLMs) + real-time production drift detection
+4. **Human-in-the-Loop Calibration** — LLM-as-judge isn't always right; LangSmith routes to human reviewers
+5. **Framework-Agnostic Observability** — LangSmith supports AutoGen, Claude Agent SDK, CrewAI, Mastra, OpenAI Agents, PydanticAI, Vercel AI SDK — not just LangChain/LangGraph
+
+Source: [langchain.com/blog/agent-observability-needs-feedback-to-power-learning](https://www.langchain.com/blog/agent-observability-needs-feedback-to-power-learning)
 
 ## LangChain Platform
 

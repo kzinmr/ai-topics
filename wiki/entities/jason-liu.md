@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/rahul]]
 title: Jason Liu
 type: entity
 handle: "@jxnlco"

@@ -70,6 +70,7 @@ Akshay's work is characterized by:
 - **Data-driven claims** — References benchmarks and empirical results
 
 ## Related Entities
+- [[entities/atal-upadhyay]]
 - [[entities/intuit-machine]] — Also written extensively on agent skills/harness patterns
 - [[entities/boris-cherny]] — Creator of Claude Code, another key voice on agent infrastructure
 - [[entities/harrison-chase]] — LangChain CEO, articulated the three-layer agent architecture framework

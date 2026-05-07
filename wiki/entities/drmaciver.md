@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/scott-wu]]
 title: David R. MacIver (DRMacIver)
 type: entity
 aliases: [drmaciver, david-maciver]

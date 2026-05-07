@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/martin-kleppmann]]
 title: Daniel van Strien
 type: entity
 handle: "@vanstriendaniel"

@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/clefourrier]]
 title: Hailey Schoelkopf
 description: Research Scientist at EleutherAI, maintainer of LM Evaluation Harness
 url: https://haileyschoelkopf.github.io/

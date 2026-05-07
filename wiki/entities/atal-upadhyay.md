@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/akshay-pachaar]]
 title: "Atal Upadhyay"
 type: entity
 created: 2026-05-04

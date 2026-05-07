@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/daniel-van-strien]]
 title: Martin Kleppmann
 type: entity
 created: 2026-04-13

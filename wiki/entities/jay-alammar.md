@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/grant-sanderson-3blue1brown]]
 title: Jay Alammar
 type: entity
 created: 2026-05-04

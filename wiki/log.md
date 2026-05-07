@@ -1,5 +1,41 @@
 
-## [2026-05-06] Dreaming Wiki Ingest — GPT-5.5 Instant, GLM-5.1, MiniMax M2.7, Index Maintenance
+## [2026-05-07] Absurd概念ページ作成 — Postgres-Native Durable Execution for AI Agents
+
+**Source**: User request (Discord) — 非同期処理基盤の実装パターンとして関心
+
+**Raw articles saved** (2):
+- `raw/articles/2025-11-03_absurd-workflows-armin-ronacher.md` — 初回発表（Armin Ronacher）
+- `raw/articles/2026-04-04_absurd-in-production-armin-ronacher.md` — 5ヶ月本番運用レポート
+
+**Pages created**:
+- [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
+
+---
+
+## [2026-05-06] X Bookmarks Ingest — 6 articles processed, subagent patterns + agent observability + Factory AI Free Droid
+
+**Source**: X bookmarks ingest cron job (x-bookmarks-ingest)
+
+**Raw articles saved** (6):
+- `raw/articles/2026-05-05_how-agents-manage-other-agents-four-subagent-patterns.md` — Philipp Schmid's 4 subagent patterns (Inline Tool, Fan-Out, Agent Pool, Teams)
+- `raw/articles/2026-05-05_agent-observability-needs-feedback-to-power-learning.md` — Harrison Chase's feedback-powered observability thesis
+- `raw/articles/2026-05-05_gemma-4-drafter-explained.md` — Google Gemma MTP drafter technical deep-dive
+- `raw/articles/2026-05-03_how-to-think-using-ai.md` — Sufyan Maan's AI-augmented thinking framework (metadata-only)
+- `raw/articles/2026-04-03_free-droid-for-all.md` — Factory AI free autonomous coding agents announcement
+- `raw/articles/2026-05-05_the-layoffs-will-continue-till-we-learn-to-use-ai.md` — Brian Armstrong's Coinbase AI layoffs perspective (lightweight)
+
+**Pages created**:
+- [[concepts/agent-observability]] — AIエージェントの可観測性とフィードバック駆動学習ループ概念
+
+**Pages enriched**:
+- [[entities/phil-schmid]] — Added Subagent Patterns (May 2026) to Agent Infrastructure section + timeline entry + reference
+- [[entities/harrison-chase]] — Added Agent Observability & Feedback Loop Thesis section + source
+- [[concepts/agent-patterns]] — Added structured Subagent Patterns section (4 patterns, comparison table, implementation guidelines)
+- [[concepts/speculative-decoding]] — Added Gemma 4 X article as source
+- [[entities/sero]] — Added Factory AI — Free Droid announcement section
+
+---
+
 
 **Topics discovered**: 3 new models, 1 IDE concept
 **Pages created**: 3 new concept pages + 1 existing concept updated
@@ -504,7 +540,7 @@ Sources: X/Twitter scan (x-accounts-scan cron job).
 
 ## [2026-05-04] Accelerate — Distributed training launcher + DeepSpeed concept page
 
-- **[[concepts/accelerate]]** — Created concept page: Hugging Face Accelerate as unified distributed training abstraction. FSDP vs DeepSpeed configuration mapping (6 dimensions), memory/precision differences (fp32 upcast), plugin system (FullyShardedDataParallelPlugin, DeepSpeedPlugin), decision guide. Lead developer attribution added: [[entities/the-zach-mueller]].
+- **[[concepts/accelerate]]** — Created concept page: Hugging Face Accelerate as unified distributed training abstraction. FSDP vs DeepSpeed configuration mapping (6 dimensions), memory/precision differences (fp32 upcast), plugin system (FullyShardedDataParallelPlugin, DeepSpeedPlugin), decision guide. Lead developer attribution added: [[entities/zach-mueller]].
 - **[[concepts/deepspeed]]** — Created concept page: Microsoft DeepSpeed (ZeRO 1/2/3/3-offload/Infinity, 3D-Parallelism, MoE, NVMe offload). Notable models (BLOOM, MT-530B, GPT-NeoX). Accelerate integration mapping. Fills existing wikilink from pytorch-fsdp.
 - **[[concepts/pytorch-fsdp]]** — Enriched: Added Accelerate cross-reference to Related Concepts.
 - **[[entities/zach-mueller]]** — Enriched: Added Cross-References section (accelerate, pytorch-fsdp, deepspeed), updated sources with Accelerate guide, bumped update date. Linked from [[concepts/accelerate]] as lead developer.
@@ -632,7 +668,7 @@ Sources: X/Twitter scan (x-accounts-scan cron job).
 - **[[entities/gary-marcus]]** — Updated with May 2026 healthcare thesis: "Have LLMs improved patient outcomes?" — aligned with Eric Topol and Nature Medicine editorial finding no evidence of patient outcome improvement beyond admin tasks. Source: [garymarcus.substack.com](https://garymarcus.substack.com/p/have-llms-improved-patient-outcomes).
 - **[[entities/george-hotz]]** — Updated with May 2026 "Punk, or why I don't stream anymore" essay: critique of AI-mediated culture, wireheading, and the "information war" on inner reality. Source: [geohot.github.io](https://geohot.github.io//blog/jekyll/update/2026/05/03/punk-or-why-i-dont-stream.html).
 - **[[entities/martin-alderson]]** — Enriched with "29th August 2026: a scenario" — fictional narrative illustrating CopyFail (CVE-2026-31431) kernel bug, cloud centralization risk, and democratization of sophisticated attacks.
-- **[[entities/matklad]]** — New Zig 0.16 error context patterns (errdefer + telescopic context) article collected.
+- **[[entities/matklad-github-io]]** — New Zig 0.16 error context patterns (errdefer + telescopic context) article collected.
 - **[[entities/jim-nielsen]]** — "Lots of Little HTML Pages" (LLMS) post-mortem: building websites with HTML/CSS view transitions instead of JS-heavy SPAs.
 - raw/articles/ — 18 articles saved from blog ingestion cycle
 

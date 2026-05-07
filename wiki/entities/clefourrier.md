@@ -1,4 +1,9 @@
 ---
+
+## Related Entities
+
+- [[entities/stella-biderman]]
+- [[entities/hailey-schoelkopf]]
 title: Clémentine Fourrier
 type: entity
 handle: "@clefourrier"

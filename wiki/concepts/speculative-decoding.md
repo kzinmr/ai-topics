@@ -11,6 +11,7 @@ sources:
   - raw/articles/crawl-2026-04-18-speculative-decoding.md
   - raw/articles/2026-04-28_fireworks-ai-open-weight-models-sed.md
   - raw/articles/2026-05-05_google-gemma-4-multi-token-prediction-drafters.md
+  - raw/articles/2026-05-05_gemma-4-drafter-explained.md
   - https://vllm.ai/blog/spec-decode
   - https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/
 ---

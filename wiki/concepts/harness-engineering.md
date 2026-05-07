@@ -241,6 +241,7 @@ Training and inference infrastructure advances enabling better harnesses:
 - [[concepts/ai-evals-people]] — The community of practitioners
 - [[concepts/context-engineering]] — The practice of optimizing context windows for LLM agents, a cross-cutting component of harness engineering.
 - [[concepts/karpathy]] — Andrej Karpathy, AI researcher and educator who coined context engineering and vibe coding.
+- [[concepts/rlm-recursive-language-models]] — Recursive decomposition as a harness pattern; RLM's programmatic context management aligns with harness engineering's build-verify loop.
 - [[entities/hamel-husain]] — Primary proponent and popularizer.
 - [[entities/shreya-shankar]] — Co-creator of AI evals course, major contributor to the movement.
 - [[vtrivedy10]] — LangChain contributor; advocates eval-driven harness hill-climbing for production agents.

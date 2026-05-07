@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/chip-huyen]]
 title: "Lilian Weng (@lilianweng)"
 tags: [type:, entity]
 created: 2026-04-24

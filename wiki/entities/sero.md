@@ -2,7 +2,7 @@
 title: "Sero (0xSero)"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-06
 type: entity
 ---
 
@@ -45,6 +45,11 @@ Starting April 2026, Sero publishes a weekly curated list of the best local mode
 Source: [X thread](https://x.com/0xsero/status/2037837722094641610)
 
 ## Key Open-Source Projects
+
+### Factory AI — Free Droid (April 2026)
+Factory AI announced \"Free Droid for all\" — making their autonomous coding agents available to all developers. This freemium shift follows their $150M Series C at $1.5B valuation (Khosla Ventures, Sequoia, Insight Partners, Blackstone). Droids execute entire workflows: feature development, testing, code review, documentation, and deployment—different from IDE assistants like Copilot/Cursor. Sero's own [**factory-cursor-bridge**](https://github.com/0xSero/factory-cursor-bridge) enables using Factory's model configs within Cursor IDE.
+
+Source: [X thread](https://x.com/0xsero/status/2040012153885761973) — \"Free Droid for all\" (April 3, 2026)
 
 ### AI Data Extraction Toolkit (594+ stars)
 - Python toolkit to extract complete conversation history, code context, and metadata from AI coding assistants (Claude Code, Cursor, Codex, Windsurf, Trae)

@@ -1,4 +1,9 @@
 ---
+
+## Related Entities
+
+- [[entities/scott-wu]]
+- [[entities/ryan-lopopolo]]
 title: Steve Blank
 type: entity
 created: 2026-04-09

@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/jason-liu]]
 title: "Rahul Sengottuvelu"
 tags:
   - ai-agents

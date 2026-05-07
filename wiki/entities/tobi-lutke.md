@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/farhan-thawar]]
 title: Tobi Lütke
 created: 2026-04-26
 updated: 2026-04-26

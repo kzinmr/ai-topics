@@ -99,6 +99,7 @@ The real work is the iterative loop of measuring, reviewing, and refining the ha
 
 ## Related Entities
 
+- [[entities/vtrivedy10]]
 - [[entities/the-harness-blog]] — The Harness blog (his publication)
 - [[concepts/rlm-recursive-language-models]] — RLM framework (Lambda-RLM is a variant)
 - [[concepts/recursive-language-models]] — Simpler RLM concept page

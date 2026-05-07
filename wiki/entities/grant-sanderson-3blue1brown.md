@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/jay-alammar]]
 title: Grant Sanderson (3Blue1Brown)
 type: entity
 created: 2026-05-04

@@ -9,7 +9,7 @@ tags:
   - hugging-face
   - google-deepmind
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-06
 type: entity
 aliases:
   - philipp-schmid
@@ -66,10 +66,11 @@ Schmid has published extensively on Reinforcement Learning from Human Feedback:
 - **Text Generation Inference (TGI)** — Guides on deploying models with Hugging Face TGI
 - **Serverless inference** — Cost and performance comparisons for various deployment strategies
 
-### Agent Infrastructure
+### Agent Infrastructure & Multi-Agent Patterns
 
 - **Agent Client Protocol (ACP)** — Author of the ACP overview (2026), an open standard abstracting agent events and outputs for editor integration (similar to MCP but for agent-to-client communication)
 - **Agent Harnesses** — Analysis of agent harnesses as the key infrastructure layer for 2026
+- **Subagent Patterns (May 2026)** — Published \"How Agents Manage Other Agents: Four Subagent Patterns in 2026\" on [philschmid.de](https://www.philschmid.de/subagent-patterns-2026), a taxonomy of multi-agent control patterns: Inline Tool, Fan-Out, Agent Pool, and Teams.
 
 ## Writing Style & Philosophy
 
@@ -124,6 +125,7 @@ Authored works on **context engineering** — the practice of optimizing LLM con
 | 2025–Present | Staff Engineer (DevEx & DevRel) | Google DeepMind |
 | ~2021–2025 | Technical Lead | Hugging Face |
 | Pre-2021 | Machine Learning Engineer / Developer Advocate | Various |
+| 2026-05 | Published Subagent Patterns taxonomy | philschmid.de |
 
 ## Cross-References
 
@@ -141,6 +143,7 @@ Authored works on **context engineering** — the practice of optimizing LLM con
 
 - `raw/articles/2026-05-04_phil-schmid-fsdp-qlora-llama3.md` — FSDP + Q-LoRA for Llama 3 guide
 - `raw/articles/2026-02-01_philschmid_acp-overview.md` — Agent Client Protocol overview
+- `raw/articles/2026-05-05_how-agents-manage-other-agents-four-subagent-patterns.md` — Subagent Patterns taxonomy (4 patterns)
 
 ## Sources
 

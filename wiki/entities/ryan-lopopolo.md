@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/steve-blank]]
 title: Ryan Lopopolo
 type: entity
 handle: "@_lopopolo"

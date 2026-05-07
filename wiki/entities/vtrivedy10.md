@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/theodoros-galanos]]
 title: "Vivek 'Varun' Trivedy (@vtrivedy10)"
 type: entity
 handle: "@vtrivedy10"

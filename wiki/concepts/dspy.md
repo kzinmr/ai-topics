@@ -124,3 +124,13 @@ DSPy's declarative approach aligns with agentic engineering principles:
 - [If DSPy Is So Great, Why Isn't Anyone Using It?](https://agent-wars.com/news/2026-03-24-dspy-adoption-gap-llm-engineering) — Skylar Payne, Agent Wars, March 2026
 - [DSPy GitHub](https://github.com/stanfordnlp/dspy) — Stanford NLP
 - [DSPy Documentation](https://dspy.ai/)
+
+## Related Pages
+
+- [[concepts/dspy-modules]] — DSPy's composable building blocks connecting Signatures to execution
+- [[concepts/dspy-architecture]] — Signatures, Modules, Teleprompters overview
+- [[concepts/dspy-optimization]] — How optimizers tune module behavior
+- [[concepts/dspy-comparisons]] — How DSPy modules compare to LangChain/LangGraph chains
+- [[concepts/overture-maps-foundation]] — Open-source geospatial data foundation by Drew Breunig
+- [[concepts/spec-driven-development]] — Drew Breunig's spec-driven development framework
+- [[concepts/harness-engineering]] — DSPy represents harness engineering applied to prompt optimization

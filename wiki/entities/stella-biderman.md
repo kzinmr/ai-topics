@@ -1,4 +1,8 @@
 ---
+
+## Related Entities
+
+- [[entities/clefourrier]]
 title: Stella Biderman
 description: Executive Director and co-founder of EleutherAI, leading the open-source AI movement
 url: https://www.stellabiderman.ai/

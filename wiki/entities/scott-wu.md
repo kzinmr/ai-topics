@@ -1,4 +1,10 @@
 ---
+
+## Related Entities
+
+- [[entities/steve-blank]]
+- [[entities/drmaciver]]
+- [[entities/akira-realmcore]]
 title: Scott Wu
 type: entity
 handle: "@ScottWu46"
