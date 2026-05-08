@@ -2,16 +2,41 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 1757 | Full entries: 1757 | Stubs: 0 |
+> Last updated: 2026-05-08 | Total pages: 699 | Full entries: 699 | Stubs: 0 |
 
-## Entities (526 pages)
+## Entities (523 pages)
 
+- [[entities/adam-rosenthal]] — Adam Rosenthal
+- [[entities/agreement-bug]] — Agreement is a Bug
+- [[entities/autoreason]] — Autoreason
+- [[entities/claude-perfect-memory]] — Claude Perfect Memory
+- [[entities/company-ai-pilled]] — Company AI Pilled
+- [[entities/content-engine]] — Content Engine
 - [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
+- [[entities/evis-drenova]] — Evis Drenova
+- [[entities/fintool]] — Fintool
+- [[entities/george-hotz]] — George Hotz (geohot)
+- [[entities/grant-slatton]] — Grant Slatton
 - [[entities/hugo-bowne]] — Hugo Bowne-Anderson — Data scientist and AI privacy engineering writer. Co-author of "15 Privacy Questions Every AI Builder is Asking" with Katharine Jarmul.
+- [[entities/inspect]] — Inspect (Ramp)
 - [[entities/jack-clark]] — Jack Clark — Anthropic co-founder, Import AI newsletter. 60%+ probability of autonomous AI R&D by end 2028. Recursive self-improvement forecast.
+- [[entities/jo-bergum]] — Jo Kristian Bergum
+- [[entities/lucebox]] — Lucebox
+- [[entities/mac-studio-local-ai]] — Mac Studio Local AI
+- [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto — HashiCorp
+- [[entities/moonshot-ai]] — Moonshot AI
+- [[entities/nicolas-bustamante]] — Nicolas Bustamante
 - [[entities/palo-alto-networks]] — Global cybersecurity company. Acquired Portkey (May 2026) for AI agent security.
+- [[entities/parchi]] — Parchi
+- [[entities/pi-coding-agent]] — pi (Coding Agent) [redirected to entities/pi]
 - [[entities/portkey]] — AI agent security platform — inspects actions, stops risky behavior, 99.99% uptime. Acquired by Palo Alto Networks (Q4 2026).
+- [[entities/ramp]] — Ramp
+- [[entities/reflexive-ai]] — Reflexive AI Usage
+- [[entities/roocode]] — RooCode
 - [[entities/salesforce-headless-360]] — Salesforce's agent-first platform restructuring. Exposes full CRM via APIs, MCP, CLI. Browser UI is now optional.
+- [[entities/samuelcolvin]] — samuelcolvin
+- [[entities/sebastian-ramirez]] — Sebastián Ramírez
+- [[entities/sebastian-raschka]] — Sebastian Raschka
 - [[entities/sierra]] — Sierra — AI customer service platform ($15B valuation, $200M+ ARR). Enterprise conversational AI agents. Service-as-Software.
 - [[entities/0xjeff]] — 0xJeff — Crypto/DeFi analyst and Hermes Agent power user. 8 years PE/VC/IB. Known for documenting Hermes as personal analyst pipeline.
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
@@ -333,6 +358,7 @@
 - [[entities/simon-willison]] — Django co-creator, open-source advocate, and leading voice in AI-assisted software development. Founder of Datasette and prolific blogger at simonwillison.net.
 - [[entities/simone-salis]] — **URL:** https://simone.org
 - [[entities/skyfall-dev]] — **URL:** https://skyfall.dev
+- [[entities/solo-founder-stack]] — Solo Founder Stack
 - [[entities/soundstream]] — **SoundStream (Google)** | Foundational neural audio codec. Fully convolutional encoder-decoder + RVQ, 3–18 kbps variable bitrate. Prototype for EnCodec, DAC, and later tokenizers.
 - [[entities/speech-tokenizer]] — **SpeechTokenizer (Fudan)** | Unified semantic + acoustic speech tokenizer. HuBERT-distilled layer 1 for semantic, remaining layers for acoustic. ~50 Hz, ~4 kbps. Designed for speech LLMs.
 - [[entities/spike]] — **URL:** https://supaiku.com
@@ -346,6 +372,7 @@
 - [[entities/tedium-the-dull-side-of-the-internet]] — **URL:** https://tedium.co
 - [[entities/teknium]] — Ryan, known online as **Teknium** (@teknium1), is the **Co-founder and Head of Post-Training** at **Nous Research**. He is the lead architect behind both the **Hermes model family** and the **Herme...
 - [[entities/telegram]] — Telegram is a cloud-based messaging platform and bot ecosystem that supports extensive third-party integrations, AI-powered bots, Mini Apps (Web Apps), and managed bot infrastructure.
+- [[entities/telegram-managed-bots]] — Telegram Managed Bots
 - [[entities/teortaxestex]] — **X/Twitter** | @teortaxesTex |
 - [[entities/terrible-software]] — **URL:** https://terriblesoftware.org
 - [[entities/thariq-shihipar]] — **X** | @trq212 |
@@ -364,6 +391,7 @@
 - [[entities/tom-aarsen]] — **X** | @tomaarsen |
 - [[entities/tom-renner]] — **Blog** | tomrenner.com |
 - [[entities/troy-hunt]] — **URL:** https://www.troyhunt.com
+- [[entities/trycua-cua]] — TryCua (Cua)
 - [[entities/turbopuffer]] — Object-Storage-Native vector + full-text search engine. Built on S3/GCS, SPFresh ANN v3 (100B vec @ 200ms), RaBitQ/AVX-512, FTS v2 (20x), Native Filtering, Continuous Recall. Cursor (95% cheaper), Notion AI, Linear, Superhuman.
 - [[entities/ubtech-robotics]] — One of China's most valuable AI and robotics companies. Focuses on service robots and humanoid platforms for education and commercial applications.
 - [[entities/unitree-robotics]] — Hangzhou-based humanoid and quadruped robot manufacturer. Founded 2016 by Wang Xingxing (former DJI engineer, age 26 at founding). World's #1 humanoid robot seller in 2025.
@@ -509,14 +537,52 @@
 - [[entities/vanta]] — Vanta — Security and compliance automation. $300M+ ARR. YC W18.
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
-## Concepts (1219 pages)
+
+## Concepts (164 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
+- [[concepts/agentic-search]] — Agentic Search
+- [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
+- [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
+- [[concepts/ai-autonomy-debate]] — AI Autonomy Debate
+- [[concepts/ai-bubble-economics]] — AI Bubble Economics
+- [[concepts/ai-coding-reliability]] — AI Coding Reliability
+- [[concepts/ai-evals]] — AI Evals (AI Evaluation Systems)
+- [[concepts/ai-index-report-2026]] — 2026 AI Index Report
+- [[concepts/ai-memory-systems]] — AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較
+- [[concepts/ai-privacy-tools]] — AI Privacy Tools
+- [[concepts/ai-subprime]] — AI Subprime Crisis
 - [[concepts/altman-three-observations]] — Altman's Three Observations: 対数スケーリング（intelligence ≈ log(resources)）、超デフレコスト（10x/年）、超指数関数的価値の3つの経済観察枠組み。GPT-4→GPT-4oで150xのコスト低下、2035年ビジョン、AIエージェント経済学。
 - [[concepts/ambient-agency]] — Ambient Agency（環境的エージェンシー）: エージェンシーがTuring完全性と同様に、複雑なシステムから不可避的に自然発生するというGwernの洞察。明示的な設計・選択なしに収斂する「あまりに有用な能力」。Tool AI幻想への根本的異議。
 - [[concepts/anthropic-infrastructure-postmortems]] — Anthropicの2つの大規模品質低下ポストモーテム（2025年8-9月: コンテキストウィンドウ誤ルーティング・出力破損・XLA:TPU誤コンパイル / 2026年3-4月: 推論努力誤設定・推論履歴消失バグ・冗長性削減プロンプト）。検出の遅れ・社内評価限界・プライバシー制約の共通パターン。
+- [[concepts/automation-series]] — Antoine Buteau's Automation Series
+- [[concepts/back-of-house-multi-agent-patterns]] — Back of House Multi-Agent Patterns
+- [[concepts/back-of-house-patterns]] — Back of House Multi-Agent Patterns
+- [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
+- [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling
+- [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst — Devinをデータ分析エージェントにする設計
+- [[concepts/context-graph]] — Context Graph
+- [[concepts/context-window-management]] — Context Window Management
+- [[concepts/decoder-only-gpt]] — Decoder-Only GPT Architecture
+- [[concepts/deepspeed]] — Microsoft DeepSpeed
+- [[concepts/dspy-rlm]] — DSPy.RLM
+- [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
+- [[concepts/gliclass]] — GLiClass
+- [[concepts/harness-engineering]] — Harness Engineering
+- [[concepts/karpathy-loop]] — The Karpathy Loop — Autonomous Experiment Design
+- [[concepts/knowledge-shields]] — Knowledge Shields and Systems Understanding
+- [[concepts/korean-ai]] — Korean AI Ecosystem
+- [[concepts/learning-llms-in-2025]] — Learning LLMs in 2025 (Yoav Goldberg)
+- [[concepts/llm-course-roadmap]] — LLM Course Roadmap (Maxime Labonne)
+- [[concepts/llm-memory-architecture]] — LLM Memory Architecture
+- [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
+- [[concepts/local-first-software]] — Local-First Software
+- [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
+- [[concepts/model-distillation]] — Model Distillation
+- [[concepts/model-quantization]] — Model Quantization
 - [[concepts/object-storage-queue]] — Object Storage Queue: S3のCASを利用した分散キュー実装パターン。Group Commit、Stateless Broker、HeartbeatによるJob Recovery。ゼロディスクアーキテクチャの応用。Absurd（PG Queue）との比較を含む。 — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
+- [[concepts/open-source-ai-destruction]] — Open Source AI Destruction
 - [[concepts/openclaw-architecture]] — OpenClawのアーキテクチャ詳細。Gateway-firstなassistant control planeの全容：長寿命Gateway、typed WebSocket protocol、埋め込みagent runtime、二層セッション永続化、sandbox/tool-policy/elevatedの3軸分離、ノードcapability surface、キューイング、サブエージェント、4層プラグインシステム、索引注入スキル。単一trust boundaryモデル。
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information（予測的V-情報）：観測者の計算制約を考慮したShannon情報理論の変分拡張。DPI違反、高次元でのPAC推定保証、構造学習・公平表現学習への応用（Xu et al., ICLR 2020）。
 - [[concepts/information-theory-and-agent-communication]] — Shannon (1948) の通信の数学的理論をAIエージェント間コミュニケーションの観点から再解釈。V-Information (Xu et al., 2020) との統合によるエージェント通信3層モデル。ハーネス効果の情報理論的基礎、コンテキストウィンドウのShannon容量アナロジー。
@@ -557,6 +623,13 @@
 - [[concepts/mozilla-firefox-ai-hardening]] — Mozilla used Claude Mythos Preview to find 423 security bugs in Firefox (April 2026)
 - [[concepts/mit-encompass]] — MIT CSAIL framework for AI agent search with automatic backtracking and parallel cloning, 15-40% accuracy boost.
 - [[concepts/moe-training-noumena-methodology]] — Noumena Network's 12-post MoE training research program. Speedrun loop, eval-gated autoresearch, routing collapse ≠ quality collapse, per-expert LR tuning, RDEP.
+- [[concepts/programmatic-tool-calling]] — Programmatic Tool Calling — LLM Writing Code that Calls Tools
+- [[concepts/pydantic-ai-harness]] — pydantic-ai-harness — Official Capability Library for Pydantic AI
+- [[concepts/pytorch-fsdp]] — PyTorch FSDP (Fully Sharded Data Parallel)
+- [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation)
+- [[concepts/rag-not-dead-series]] — RAG Is Not Dead — 7-Part Series
+- [[concepts/rag-systems]] — RAG Systems
+- [[concepts/raindrop]] — Raindrop — AI Agent Monitoring & Observability Platform
 - [[concepts/recursive-self-improvement]] — AI systems autonomously designing and training successor models. Jack Clark's 60% probability by end 2028. Compounding alignment risk, SWE-Bench 93.9% evidence.
 - [[concepts/rdep]] — Research Dispatch/Expert Parallelism — direct CUDA IPC dispatch/return replacing NCCL all-to-all for single-node MoE training. B200-first.
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
@@ -594,13 +667,19 @@
 - [[concepts/claris-filemaker-agentic-coding]] — Claris (Apple) making FileMaker a first-class target for agentic coding tools (Claude Code, Cursor, Codex). Natural language → production scripts, modern web-native UI, independent shipping model. Ryan McCann (CEO).
 - [[concepts/open-weights-licensing-tightening]] — Trend of leading open weights AI model providers tightening license terms in 2026. Meta dropped open weights, Alibaba Qwen API-first, Mistral commercial restrictions, Kimi attribution clause. DeepSeek exception. Contestable markets theory, oligopoly risk.
 - [[concepts/normalization-of-deviance-in-ai-coding]] — Risk of gradually trusting AI-generated code without review, coined from Diane Vaughan's Challenger disaster framework. Each successful unreviewed deployment reinforces trust, creating security/quality risk. AI agents lack professional reputation/accountability.
+- [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle
+- [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
+- [[concepts/session-hierarchy-management]] — Session Hierarchy Management
+- [[concepts/space-gpus]] — Space GPUs
 - [[concepts/speed-vs-legitimacy-in-ai-institutions]] — Core tension: fast institutions (AI labs, tech) move at tech speed but lack trust; slow institutions (regulators, courts) have legitimacy but can't keep pace. Two-tier civilization risk. Historical parallel: late medieval Church vs new money/press/science.
+- [[concepts/ssm-mamba]] — SSM / Mamba — State Space Models for Sequence Modeling
 - [[concepts/swe-bench-agent-scaffolding]] — Claude 3.5 SonnetがSWE-bench Verified 49%達成時のエージェント設計。哲学は「可能な限りモデルに制御を委ね、scaffoldingを最小限に」。Bash Tool + Edit Tool + 最小限プロンプト。同一モデル×scaffolding最適化の重要性を実証。
 - [[concepts/tool-use-tax]] — Performance degradation in LLM agents caused by tool-calling protocol overhead. In noisy environments, native CoT can outperform tool-augmented reasoning. G-STEP partial mitigation.
 - [[concepts/tau-bench]] — τ-bench: Sierra AI ResearchのAIエージェント評価ベンチマークスイート。複数ターン対話・ドメインポリシー遵守・pass^k信頼性の3軸で評価。τ-bench（2024/航空・小売）→τ²-bench（2025/Telecomデュアルコントロール）→τ³-Bench（2026/τ-Knowledge+τ-Voice）へ進化。GPT-4o<50%、pass^8<25%、音声エージェント26-38%の現実を定量化。業界標準のデファクト評価基盤。
 - [[concepts/tau-knowledge]] — τ-Knowledge: τ-Bench拡張、非構造化知識ベース（698文書/21カテゴリ/195Kトークン）でのエージェント評価。τ-Bankingドメイン。GPT-5.2でもpass^1~25.5%、必要文書提供でも~40%。知識検索＋推論統合のボトルネックを定量化。
 - [[concepts/tau-squared-bench]] — τ²-bench: デュアルコントロールベンチマーク。エージェントとユーザーの両方がツールを使うDec-POMDP環境。Telecomドメイン。Solo→Interactiveで最大-25pt。協調とガイダンスの困難さを定量化。
 - [[concepts/tau-voice]] — τ-Voice: フルデュプレックス音声エージェント評価。278タスク。GPT-5テキスト85%に対し音声31-51%（クリーン）/26-38%（現実的）。失敗79-90%がエージェント行動起因（ASRではない）。音声モダリティの本質的難易度を証明。
+- [[concepts/typed-rlm]] — λ-RLM (Typed Recursive Reasoning)
 - [[concepts/vibe-coding-vs-agentic-engineering]] — Distinction between vibe coding (natural language → code, no review) vs agentic engineering (professional judgment, security, production quality). Blurring boundary as agents improve. Bottleneck shifts: ~200 lines/day → ~2000 lines/day. Real-world usage as quality signal.
 - [[concepts/constitutional-ai]] — Anthropic's methodology for aligning AI via explicit principles (Constitution). Compared with OpenAI Model Spec by Boaz Barak (Jan 2026). Three poles of alignment: Principles, Policies, Personality.
 - [[concepts/data-analysis-agents]] — AIデータ分析エージェントの包括的概念。データ探索→スキーマ理解→クエリ生成→実行→検証→可視化→報告のパイプライン。OpenAI社内データエージェント（GPT-5.2）とCognition DANA/Devinの2大アプローチを比較。DWHセマンティックレイヤー・ゴールデンクエリとの関係性も含む。
@@ -626,6 +705,7 @@
 - [[concepts/unbundled-agents]] — Viv Trivedy's architectural pattern: specialist subagents exposed as Tools within a harness, making the harness a configurable box populated per task.
 - [[concepts/transformer-architecture]] — The Transformer architecture, derived via pedagogical "discovery fiction" from n-grams to QKV self-attention. Self-attention as multiplicative interactions with direct access. Logical progression through embeddings, convolutions, MLP-Mixers, to modern Transformers. Emergence at scale (induction heads, ICL). [[raw/articles/2025-05-25_gwern-invented-transformers.md|Source: Gwern 2025]].
 - [[concepts/turing-completeness-emergence]] — Turing完全性の自然発生: 十分な複雑性を持つシステムではTCが不可避的に出現するというGwernの洞察。CSS、Minecraft、MTGなど「計算機ではない」システムのTCカタログ。Weird Machines、Unseeing（見抜き）、Greenspunの第十法則。[[concepts/ambient-agency|Ambient Agency]]への拡張を含む。セキュリティ・AI安全性への深い含意。
+
 
 ## Comparisons (12 pages)
 
