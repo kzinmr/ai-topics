@@ -1,3 +1,21 @@
+## [2026-05-08] concept-enrich | turing-completeness-emergence: Goal-Completenessセクション追加
+
+**Action**: LessWrong記事「Goal-Completeness is like Turing-Completeness for AGI」(Liron, 2023) をwikiに取り込み、既存の `concepts/turing-completeness-emergence.md` を大幅強化。
+
+**Raw記事**: `raw/articles/2023-12-19_liron-goal-completeness.md` を新規保存。
+
+**Enrich内容**:
+- 新セクション「AIへの拡張: Goal-Completeness（目標完全性）」を追加（60行）
+- Goal-Completenessの定義：「任意の目標を入力として受け取り、未来を効果的に舵取りするAI」
+- Turing-Completenessとのアナロジー比較表（5項目: 定義、収斂ドライバー、歴史的推移、不可避性の根拠、Unseeingの対象）
+- Gwernの3層連鎖との統合図（TC発生 → Ambient Agency → Goal-Completeness）
+- Lironの3つの中心的主張の要約
+- AI安全性への含意（「まだ起きていない≠起きない」）
+
+**関連するgwern記事（再確認 — 全て取り込み済み）**:
+- ✅ gwern.net/turing-complete — raw + concept
+- ✅ gwern.net/scaling-hypothesis — raw + concept (scaling-hypothesis + ambient-agency)
+- ✅ gwern.net/unseeing — concept (linguistic-vertigo, societal-shadow) ※raw記事なし
 ## [2026-05-08] entity-create | Pinecone + Arena AI entity pages
 
 **Action**: Created two new entity pages for wiki coverage of AI infrastructure and evaluation companies.
