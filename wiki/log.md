@@ -1,3 +1,13 @@
+## [2026-05-08] entity-create | Pinecone + Arena AI entity pages
+
+**Action**: Created two new entity pages for wiki coverage of AI infrastructure and evaluation companies.
+
+**New entity pages (2):**
+- `entities/pinecone.md` — Pinecone vector database company (pinecone.io). Founded 2019 by Edo Liberty (ex-AWS SageMaker). $138M Series B at $750M valuation (2023), $100M Series B-1. Managed vector search for AI/LLM embeddings. Tech blog at pinecone.io/blog (sitemap monitoring added). Cross-referenced with voyage-ai, openai, anthropic, langchain. Note: not to be confused with Pi coding agent (pi.md).
+- `entities/arena-ai.md` — Arena AI (arena.ai), platform for AI model evaluation and comparison. Operates Chatbot Arena with blind pairwise LLM comparisons. Tech blog at arena.ai/blog (RSS: arena.ai/blog/feed). Cross-referenced with openai, anthropic, contextarena. Note: not to be confused with Context Arena benchmark (contextarena.md).
+
+**Index**: +2 entries (arena-ai, pinecone) | **Page count**: 5272 → 5274 | **Entities**: 496 → 498
+
 ## [2026-05-08] blog-wiki-ingest | Mozilla/Claude Mythosセキュリティ + xAI/Anthropic取引 + トレーニング水平線分析
 
 2026-05-07のブログスキャン（18件中3件take、3件reference、12件skip）。

@@ -1,7 +1,7 @@
 ---
 title: Warp Terminal
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-08
 type: entity
 tags: [product, tool, coding-agents, open-source, platform]
 sources:
@@ -12,6 +12,25 @@ sources:
 # Warp Terminal
 
 **Warp** is an AI-native terminal and **Agentic Development Environment (ADE)** used by nearly a million developers. Built in Rust, it combines a modern terminal UX with integrated AI agents. In April 2026, Warp open-sourced its client under AGPLv3 with OpenAI as the founding sponsor.
+
+## Key Facts
+
+| Field | Detail |
+|-------|--------|
+| **Tech Blog** | [warp.dev/blog](https://www.warp.dev/blog) |
+| **Founded** | 2020 (New York, NY) |
+| **CEO & Co-Founder** | Zach Lloyd (former Principal Engineer at Google, Google Sheets/Docs) |
+| **Total Raised** | ~$73M across 3 rounds |
+| **Funding Rounds** | Seed: $6M (2020) • Series A: $17M (Apr 2022, led by Dylan Field) • Series B: $50M (Jun 2023, led by Sequoia) |
+| **Notable Investors** | Sequoia, GV, BoxGroup, Neo, Sam Altman, Jeff Weiner, Marc Benioff, Elad Gil |
+| **Estimated Valuation** | $200–300M (Dealroom) |
+| **Employees** | ~44 (2026) |
+| **License** | AGPLv3 (core), MIT (UI framework) — open-sourced April 2026 |
+| **Founding Sponsor** | [[entities/openai]] |
+
+### Paraform Context
+
+Warp operates in the hypercompetitive developer tools space, vying for senior engineering talent in New York and San Francisco against well-funded peers. The company's lean team (~44 employees serving nearly 1M developers) reflects an engineering-heavy headcount typical of companies recruiting through platforms like [[entities/paraform]]. Warp's open-source pivot and "agent-first" contribution model also create demand for niche roles — DevRel, Rust systems engineers, and AI/agent infrastructure engineers — which are the kind of hard-to-fill positions that Paraform's recruiter marketplace specializes in. With OpenAI as founding sponsor, Warp also competes for talent against [[entities/openai]], [[entities/cursor-3]], and [[entities/anthropic]].
 
 ## Products
 
@@ -64,12 +83,18 @@ Warp is competing in the **agentic development environment** space alongside:
 
 - [[entities/openai]] — Founding sponsor; GPT-5.5 powers agent workflows
 - [[entities/cursor-3]] — Competitor in agentic development environments
+- [[entities/anthropic]] — Competitor via Claude Code; shares talent pool
+- [[entities/google]] — Zach Lloyd's former employer (Google Sheets/Docs)
+- [[entities/paraform]] — Recruiting platform context; Warp competes for niche developer-tool talent
+- [[entities/ghostty]] — Mitchell Hashimoto's terminal; Ghostty left GitHub as Warp went open-source
 - [[concepts/agentic-engineering]] — Embodies the agent-first workflow pattern
 - [[concepts/harness-engineering]] — Oz provides the orchestration harness
-- [[entities/ghostty]] — Mitchell Hashimoto's terminal; Ghostty left GitHub as Warp went open-source
 
 ## Sources
 
 - [Warp: Warp is now open-source](https://www.warp.dev/blog/warp-is-now-open-source)
 - [Warp Documentation](https://docs.warp.dev/)
 - [Ben's Bites: Building gets easier (Apr 30, 2026)](https://open.substack.com/pub/bensbites/p/building-gets-easier)
+- [PitchBook: Warp Company Profile](https://pitchbook.com/profiles/company/455184-10)
+- [Tracxn: Warp Company Profile](https://tracxn.com/d/companies/warp/)
+- [Dealroom: Warp Company Profile](https://app.dealroom.co/companies/warp_1_2)

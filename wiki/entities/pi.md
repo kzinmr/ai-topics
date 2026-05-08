@@ -3,7 +3,7 @@ title: Pi (pi-coding-agent)
 type: entity
 aliases: [pi-coding-agent, pi-dev, pi-mono, mario-zechner-pi]
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-08
 status: L3
 tags:
   - entity
@@ -46,6 +46,7 @@ related:
 | GitHub Stars | ~45.5K (May 2026) |
 | 初回リリース | November 2025 |
 | 公式サイト | [pi.dev](https://pi.dev) |
+| ブログ | [mariozechner.at](https://mariozechner.at) |
 | インストール | `npm i -g @mariozechner/pi-coding-agent` |
 | ドメイン寄贈 | exe.dev |
 

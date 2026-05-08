@@ -463,6 +463,8 @@
 - [[entities/vercel]] — Vercel — Frontend cloud platform (Next.js). Released deepsec open-source security harness using coding agents for vulnerability discovery and remediation (May 2026).
 - [[entities/radixark]] — RadixArk — AI inference infrastructure startup. $100M seed (May 2026), built on SGLang inference + Miles (large-scale RL).
 - [[entities/perplexity]] — Perplexity — AI search platform expanding into vertical products: Professional Finance Computer (35 analyst workflows), NEJM/BMJ premium medical access.
+- [[entities/arena-ai]] — Arena (arena.ai) — AI model evaluation and comparison platform. Chatbot Arena leaderboard with blind pairwise comparisons across text, vision, code, and search.
+- [[entities/pinecone]] — Pinecone — Vector database company (pinecone.io). Managed vector search for AI/LLM embeddings. $138M Series B at $750M valuation. Founded 2019 by Edo Liberty.
 - [[entities/abridge]] — Abridge — AI for healthcare clinical conversations. Automates medical documentation.
 - [[entities/adept]] — Adept — AI agent company. Founded by Transformer co-inventors. $350M Series B.
 - [[entities/anyscale]] — Anyscale — Ray framework for scalable AI/ML compute. Founded by UC Berkeley RISELab creators.

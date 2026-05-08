@@ -2,7 +2,7 @@
 title: Context Arena
 type: entity
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-08
 tags:
   - benchmark
   - evaluation
@@ -15,6 +15,8 @@ sources:
   - raw/articles/contextarena.ai--llm-long-context-benchmark-leaderboard-2026-04-26.md
   - https://contextarena.ai/
   - https://arxiv.org/abs/2409.12640
+  - https://arena.ai/blog/
+  - https://arena.ai/blog/feed
 ---
 
 # Context Arena
@@ -22,6 +24,8 @@ sources:
 **Context Arena** (contextarena.ai) is a live long-context benchmark leaderboard that evaluates 70+ large language models (LLMs) on their ability to retrieve and reason over information within extended context windows. It is built on the **GDM-MRCRv2** (Google DeepMind Multi-Round Coreference Resolution v2) benchmark, specifically the **8-Needle** variant — a rigorous multi-needle retrieval test that measures how well models can simultaneously track, distinguish, and recall multiple pieces of information buried within long synthetic conversations.
 
 Unlike simpler benchmarks that test basic fact retrieval, Context Arena evaluates the full spectrum of long-context performance across **128K and 1M token** windows, tracking accuracy, AUC, token efficiency, and cost — providing both a capability ranking and a practical cost-effectiveness analysis for production deployments.
+
+> **Note:** Context Arena (contextarena.ai) is a **benchmark/leaderboard** for long-context performance, built by teortaxestex. It is separate from **Arena** (arena.ai) — the LLM ranking platform (formerly LMSYS Chatbot Arena) that runs blind pairwise comparisons across text, vision, code, and search tasks. Arena (the company) maintains a blog at [arena.ai/blog](https://arena.ai/blog/) (RSS: [arena.ai/blog/feed](https://arena.ai/blog/feed)).
 
 ## Overview
 
