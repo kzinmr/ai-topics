@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 5270 | Full entries: 4724 | Stubs: 542 |
+> Last updated: 2026-05-08 | Total pages: 5271 | Full entries: 4725 | Stubs: 542 |
 
 ## Entities (496 pages)
 
@@ -503,7 +503,7 @@
 - [[entities/vanta]] — Vanta — Security and compliance automation. $300M+ ARR. YC W18.
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
-## Concepts (462 pages)
+## Concepts (463 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/altman-three-observations]] — Altman's Three Observations: 対数スケーリング（intelligence ≈ log(resources)）、超デフレコスト（10x/年）、超指数関数的価値の3つの経済観察枠組み。GPT-4→GPT-4oで150xのコスト低下、2035年ビジョン、AIエージェント経済学。
@@ -516,6 +516,7 @@
 - [[concepts/infrastructure-noise-agent-evals]] — エージェント型コーディング評価におけるインフラノイズの定量分析。Terminal-Bench 2.0でリソース1x→uncapped間で6pp差（p<0.01）。3pp未満のリーダーボード差は懐疑的に。時刻・並列度・帯域幅も隠れた交絡因子。
 - [[concepts/agent-development-lifecycle]] — Agent Development Lifecycle (ADLC) — formalized framework for AI agent lifecycle: planning, deployment, operation, iteration. New operational roles: Agent Supervisor, QA Lead, AI Ops Manager, Chief AI Officer.
 - [[concepts/carlini-c-compiler-agents]] — Nicholas Carliniの実験: 16体のClaudeエージェントを2,000セッション並列稼働、$20Kで100K行のRust Cコンパイラを構築しLinux 6.9カーネルをコンパイル成功。Infinite Agent Loop、Gitベースタスクロック、並列エージェント設計の実践的教訓。
+- [[concepts/caisi-federal-ai-review]] — CAISI連邦AI事前審査: NIST商務省傘下のCenter for AI Standards and Innovation。2026年5月、Google DeepMind/Microsoft/xAIがOpenAI/Anthropicに続きモデル事前公開前評価契約に参加。40件以上の評価完了、TRAINS Taskforce、国家安全保障（サイバー・バイオ・化学）評価。Mythosを契機に制度化。
 - [[concepts/cloudflare-agents]] — Cloudflare's iMARS (Internal MCP Agent/Server Rollout Squad) AI engineering stack. 3,683 internal users, 93% R&D coverage, 2x MR velocity increase. AI Code Reviewer multi-agent review, Engineering Codex.
 - [[concepts/cloudflare-llm-infrastructure]] — Cloudflare's custom LLM inference stack — PD disaggregation, Infire Rust engine, Mooncake KV-cache, speculative decoding. 3x latency improvement, 80% cache hit ratio.
 - [[concepts/claude-code-auto-mode]] — Claude Codeのauto mode。Sonnet 4.6ベースの2段階transcript分類器（Stage 1: 高速シングルトークンフィルタ → Stage 2: CoT推論）が人間承認者を代替。prompt injection probeとの2層防御で、危険行動をブロックしつつ許可プロンプトを最小化。FPR 0.4%、実overeager行動の83%捕捉。Deny-and-continue設計。

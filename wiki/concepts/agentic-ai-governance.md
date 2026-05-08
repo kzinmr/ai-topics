@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "Frameworks for governing autonomous AI agents in enterprise — identity-based access, three-tiered guardrails, HITL/HOTL patterns, and regulatory alignment."
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-08
 sources:
   - raw/articles/2026-05-02_yale-celi-agentic-ai-governance-framework.md
 related:
@@ -75,6 +75,8 @@ Treat agents as distinct digital identities. Enforce **least-privilege principle
 ## 2026 Context
 
 The Yale Chief Executive Leadership Institute (CELI) published its governance framework in May 2026, triggered partly by [[entities/anthropic|Anthropic]]'s [[entities/claude-mythos|Mythos]] model exposing a "crisis in corporate governance" — demonstrating that AI capabilities are outpacing organizational readiness for oversight.
+
+At the federal level, the [[concepts/caisi-federal-ai-review|CAISI]] (Center for AI Standards and Innovation) expanded its pre-deployment evaluation agreements in May 2026 to include Google DeepMind, Microsoft, and xAI, joining existing signatories OpenAI and Anthropic. This institutionalized government AI safety testing represents one pillar of the broader governance landscape alongside enterprise frameworks.
 
 Enterprise vendors (e.g., Appier) report blocking 80% of risky agent responses through self-monitoring.
 

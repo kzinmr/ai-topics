@@ -1,3 +1,17 @@
+## [2026-05-08] newsletter-wiki-ingest | CAISI連邦AI事前審査conceptページ作成
+
+Superintel+ 5/6号からWSJ記事「Google, Microsoft and xAI Agree to Share Early AI Models With U.S.」を処理。
+
+**新規作成 (1 page):**
+- `concepts/caisi-federal-ai-review.md` — CAISI (Center for AI Standards and Innovation): NIST商務省傘下の連邦AI事前審査機関。2026年5月にGoogle DeepMind/Microsoft/xAIがOpenAI/Anthropicに続き契約参加。40件以上の評価完了、TRAINS Taskforce、国家安全保障（サイバー・バイオ・化学）評価。Mythosを契機に制度化。全5大フロンティアAIラボがCAISI評価契約下に。
+
+**更新 (1 page):**
+- `concepts/agentic-ai-governance.md` — 2026 ContextセクションにCAISIの連邦レベル評価フレームワークを追加、updated日付bump。
+
+**Raw article**: `raw/articles/2026-05-05_caisi-google-microsoft-xai-model-review.md`
+**Sources**: NIST公式発表、WSJ、Guardian、CNN、CSO Online、Microsoftブログ
+**Index**: +1 entry | **Page count**: 5270 → 5271
+
 ## [2026-05-08] sitemap-monitor → Block 4完了: 残り3スタブをenrich
 
 sitemap-monitorで見つかったスタブページのうち、最後の3件を完全enrich。
