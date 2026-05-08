@@ -140,6 +140,9 @@ Co-authored monthly roundups tracking open model releases with Nathan Lambert. N
 | 13 | May 19 | HLE | Knowledge + Reasoning |
 | 14 | May 20 | CountBenchQA | Counting |
 | 15 | May 21 | ARC-AGI (1) | Abstract Reasoning |
+| 16 | May 22 | ARC-AGI 2 | Abstract Reasoning |
+| 17 | May 23 | SWE-Bench Verified | Software Engineering |
+| 18 | May 27 | Factorio LE | Game-based Agent |
 
 Key message: Benchmarks indicate relative strengths and general progress, not absolute model quality.
 

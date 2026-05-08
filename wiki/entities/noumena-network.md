@@ -25,6 +25,10 @@ Noumena is built on the belief that expert work requires intelligence designed f
 - **Feedback Teaches, Not Flattens** — Expert judgment refines capability
 - **Respects Expertise** — Systems that improve with, not despite, expert input
 
+## Key People
+
+- [[entities/xjdr|xjdr (@_xjdr)]] — Founder / core engineer. Primary architect of nmoe and RDEP. Creator of entropix (entropy-based sampling, 3.4K ⭐). Systems background in distributed computing, async I/O, secure OS.
+
 ## Two Major Workstreams
 
 ### 1. nmoe — MoE Training Infrastructure

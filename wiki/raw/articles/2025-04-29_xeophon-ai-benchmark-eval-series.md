@@ -6,8 +6,7 @@ author: Florian Brand (@xeophon)
 type: x_thread
 series: AI Benchmarks & Evals Series
 parts: 18
-scrape_status: complete_15_of_18
-missing_parts: [16, 17, 18]
+scrape_status: complete_all_18
 tags:
   - benchmarks
   - evals
@@ -15,7 +14,7 @@ tags:
   - ai-metrics
 ---
 
-# AI Benchmarks & Evals Series — @xeophon (Part 1-15)
+# AI Benchmarks & Evals Series — @xeophon (All 18 Parts)
 
 Florian Brand (@xeophon)による、主要なAIベンチマーク・評価指標を解説する18部構成のXスレッドシリーズ。各Partで一つのベンチマークを取り上げ、その設計思想、データ収集方法、強みと弱点を解説している。
 
@@ -79,5 +78,24 @@ Florian Brand (@xeophon)による、主要なAIベンチマーク・評価指標
 **Date:** 2025-05-21
 **Summary:** 今でもお気に入りの一つのベンチマーク。抽象推論とfluid intelligenceをテストするARC-AGI。CholletとARC Prize財団による。
 
-## Parts 16-18: [NOT YET RETRIEVED]
-**Status:** データ未取得。nitter.netのページが不完全/JSブロックにより全18パートの取得ができなかった。
+## Part 16: ARC-AGI 2 by ARC Prize
+**Date:** 2025-05-22
+**Tweet:** https://x.com/xeophon/status/1925513059281305612
+**Summary:** ARC-AGIの第2版。多数の人間をタスクテストに参加させることで初版を意味のある形で改善。タスクは初版とかなり似ているにもかかわらず、非人間（AI）のパフォーマンスが急落するのが驚き。
+- Website: https://arcprize.org
+- Paper: https://arxiv.org/abs/2505.11831
+
+## Part 17: SWE-Bench Verified by Ofir Press / OpenAI
+**Date:** 2025-05-23
+**Tweet:** https://x.com/xeophon/status/1925870415173300350
+**Summary:** 健全なベンチマーク。モデルは既存のGitHub issueを解決するタスクを与えられる。1 issueあたり3名のアノテーターによる検証は手厚い。モデルが現在80-85%で頭打ちになっているのは驚き。また、最初の（？）エージェント的ベンチマークでもある。
+- OG Paper: https://arxiv.org/abs/2310.06770
+- SWE-bench Verified: https://openai.com/index/introducing-swe-bench-verified/
+- Leaderboard: https://swebench.com
+
+## Part 18: Factorio Learning Environment (FLE)
+**Date:** 2025-05-27
+**Tweet:** https://x.com/xeophon/status/1927325298011287757
+**Summary:** 非常に楽しいeval。重要なのは、モデルがコードを書いてREPLを通じて対話する方式で、ビジョンは不要な点。Factorioを知らない人は調べない方がいい（何時間も溶けるので）。
+- Project page: https://jackhopkins.github.io/factorio-learning-environment/
+- Paper: https://arxiv.org/abs/2503.09617
