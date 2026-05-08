@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 721 | Full entries: 721 | Stubs: 0 |
+> Last updated: 2026-05-08 | Total pages: 723 | Full entries: 723 | Stubs: 0 |
 
 ## Entities (525 pages)
 
@@ -77,6 +77,7 @@
 - [[entities/benjamin-clavie]] — French ML researcher specializing in NLP and IR, creator of RAGatouille, co-author of ModernBERT. Co-hosted the "RAG Is Not Dead" series with Hamel Husain.
 - [[entities/benny-chen]] — Co-Founder of Fireworks AI. Former Meta ML infrastructure. Pioneered Reinforcement Fine-Tuning (RFT) and Eval Protocol for open-weight model customization.
 - [[entities/berthub-eu]] — **Blog** | berthub.eu |
+- [[entities/bespoke-labs]] — AI research company focused on agent optimization. Creators of Curator (synthetic data), OpenThoughts (open reasoning datasets), Evalchemy. ICLR 2026. Multi-turn tool-use RL training with GRPO.
 - [[entities/block-ai]] — Block, Inc. (formerly Square) — Jack Dorsey's AI-native organizational transformation from hierarchy to intelligence-driven coordination
 - [[entities/boaz-barak]] — **X** | @boazbaraktcs | OpenAI alignment researcher, Harvard CS professor. Analyzed Claude Constitution vs. OpenAI Model Spec (Jan 2026).
 - [[entities/bogdanthegeek-s-blog]] — **URL:** https://bogdanthegeek.github.io/blog/
@@ -541,7 +542,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (185 pages)
+## Concepts (186 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -594,6 +595,7 @@
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information（予測的V-情報）：観測者の計算制約を考慮したShannon情報理論の変分拡張。DPI違反、高次元でのPAC推定保証、構造学習・公平表現学習への応用（Xu et al., ICLR 2020）。
 - [[concepts/ifeval]] — IFEval — 指示追従評価。25種の検証可能な指示タイプ、~500プロンプト。決定論的評価。Qwen3.5-27Bが95.0%でリード。上位モデルで飽和傾向。
 - [[concepts/hle]] — Humanity's Last Exam (HLE) — 人類最後の試験。100以上の分野から2,500問。$500Kの賞金プール。厳格なフィルタリングパイプライン。3%→65%へのスコア進化。Nature掲載。
+- [[concepts/hybrid-flow]] — HybridFlow (veRL): RLHF/GRPOのための制御フローと計算フローを分離するアーキテクチャ。volcengine/veRL実装。Ray上の単一プロセスコントローラがWorkerGroupを通じてマルチGPUワーカーを透過制御。@registerデコレータで分散実行を隠蔽。FSDP/Megatron/TorchTitan/vLLM/SGLangのマルチバックエンド対応。
 - [[concepts/information-theory-and-agent-communication]] — Shannon (1948) の通信の数学的理論をAIエージェント間コミュニケーションの観点から再解釈。V-Information (Xu et al., 2020) との統合によるエージェント通信3層モデル。ハーネス効果の情報理論的基礎、コンテキストウィンドウのShannon容量アナロジー。
 - [[concepts/infrastructure-noise-agent-evals]] — エージェント型コーディング評価におけるインフラノイズの定量分析。Terminal-Bench 2.0でリソース1x→uncapped間で6pp差（p<0.01）。3pp未満のリーダーボード差は懐疑的に。時刻・並列度・帯域幅も隠れた交絡因子。
 - [[concepts/interpretability]] — Interpretability（機械的解釈可能性）: LLM内部の特徴と回路を可視化する研究分野。AnthropicのScaling Monosemanticity、Golden Gate Claude、Entropix。RLHF代替としての推論時steering、性能と制御性のトレードオフに対応。
@@ -683,6 +685,7 @@
 - [[concepts/claris-filemaker-agentic-coding]] — Claris (Apple) making FileMaker a first-class target for agentic coding tools (Claude Code, Cursor, Codex). Natural language → production scripts, modern web-native UI, independent shipping model. Ryan McCann (CEO).
 - [[concepts/open-weights-licensing-tightening]] — Trend of leading open weights AI model providers tightening license terms in 2026. Meta dropped open weights, Alibaba Qwen API-first, Mistral commercial restrictions, Kimi attribution clause. DeepSeek exception. Contestable markets theory, oligopoly risk.
 - [[concepts/mrcr]] — MRCR — Multi-Round Coreference Resolution。複数needleの長文コンテキストeval。Google DeepMindのLSQフレームワーク発。OpenAIがOSS版を公開。Claude Opus 4.6が8-needle 1Mで93%。
+- [[concepts/multi-turn-tool-use-rl]] — Multi-Turn Tool Use with RL: GRPOを用いてLLMエージェントにマルチターンツールオーケストレーションを教える手法。Bespoke LabsがBFCL v3で+23%達成（Qwen2.5-7B, 100サンプル）。報酬設計のLess is More、過長フィルタリング+KL 0.001。
 - [[concepts/normalization-of-deviance-in-ai-coding]] — Risk of gradually trusting AI-generated code without review, coined from Diane Vaughan's Challenger disaster framework. Each successful unreviewed deployment reinforces trust, creating security/quality risk. AI agents lack professional reputation/accountability.
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)

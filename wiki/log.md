@@ -2,6 +2,19 @@
 
 **Action**: @xeophonの18部構成シリーズの各ベンチマークに対応する個別コンセプトページを16件作成（既存のtau-bench/swe-bench/arc-agi-2を除く）。3つの並列サブエージェントで研究・執筆。
 
+## 2026-05-08 | HybridFlow (veRL) concept page created
+
+**Action**: veRL HybridFlow Programming Guide ドキュメントをwikiに取り込み。制御フロー/計算フロー分離アーキテクチャの包括的ガイド。raw記事 + コンセプトページを作成。
+
+**New pages**:
+- `concepts/hybrid-flow.md` — HybridFlow/veRL コンセプトページ（11500B）
+- `raw/articles/2025-06-02_verl-readthedocs_hybrid-flow-programming-guide.md` — ドキュメント元記事（3169B）
+
+**Modified**:
+- `index.md` — hybrid-flow追加、概念ページ数185→186
+
+**Links**: concepts/grpo-rl-training, concepts/fine-tuning/rlhf-dpo-preference, entities/deepseek
+
 **New concept pages** (16 pages):
 - `concepts/gpqa.md` — GPQA: Graduate-Level Google-Proof Q&A
 - `concepts/livecodebench.md` — LiveCodeBench: contamination-free coding eval
