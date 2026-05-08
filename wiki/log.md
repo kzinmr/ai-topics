@@ -1,3 +1,20 @@
+## [2026-05-08] ingest | Entire — pgr agentic code search 研究 & ツール
+
+Entire社のブログ記事「How We Improved Agentic Search」(May 6, 2026, Evis Drenova) を wiki に取り込み。
+
+**作成したページ (3 files):**
+- 🆕 `concepts/pgr.md` — Rust MCP エージェント指向コード検索ツール。definitions-first ランキング。first-query MRR 0.32→0.41, Hit@1 26%→34%。
+- 🆕 `entities/entire.md` — AI agent observability 企業。agent trace (checkpoint) 収集基盤。pgr 開発。
+- 🆕 `entities/evis-drenova.md` — Entire のソフトウェアエンジニア。agentic code search のランドマーク的研究を主導。
+
+**主要知見:**
+- コーディングエージェントのツール呼び出しの **48.8%** が検索関連
+- **検索速度 (fff: 14.7ms→1.7ms) はエンドツーエンドをわずか 1.6% 改善するのみ** — ツール実行は総 wall clock の ~0.4%
+- **ランキング品質 (pgr) が first-query 検索品質を有意に改善**: 実装タスクで Hit@1 14.3%→42.9%
+- ベンチマーク: 60タスク (entireio/cli), Claude Sonnet, 3層ベンチマークスタック
+
+**Raw article**: `raw/articles/2026-05-06_entire-improving-agentic-search-in-coding-agents.md`
+
 ## [2026-05-08] pliny the prompter エンティティ + AIレッドチーミングキャリア コンセプトページ作成
 
 **Action**: pliny.gg と L1B3RT4S リポジトリを調査し、Pliny the Prompter のエンティティページと AIレッドチーミング/プロンプトインジェクション分野のキャリア情報を wiki 化。
