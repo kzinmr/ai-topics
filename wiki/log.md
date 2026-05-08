@@ -18,6 +18,12 @@
 
 **Action**: `https://www.anthropic.com/learn/build-with-claude` をソースとして、Claudeモデルファミリーの包括的概念ページを作成。エンリッチメントまで完了。
 
+**※その後、ユーザー指摘により全面再構成**:
+- 旧: モデルタイムライン中心（60%がモデル列挙）
+- 新: build-with-claude の4本柱に準拠（🚀 Quick Start → 🧠 Advanced Capabilities → 🛠️ Architectural Patterns → 📈 Optimization）
+- モデル情報は簡易タイムライン + 3階層テーブルに圧縮しAppendix化
+- 開発者視点の実践的情報（curl例、CLI install、価格比較表など）を追加
+
 **New concept page created (1)**:
 - `concepts/claude-model-family.md` — Claudeモデルファミリーの全体像。Haiku/Sonnet/Opusの3階層設計哲学、Claude 1からOpus 4.7までの全13+モデルタイムライン、Constitutional AI/Extended Thinking/Computer Useのコア技術、APIエコシステム（Tool Use, Prompt Caching, Structured Output, Batch）、価格体系（サブスク+API）、全製品エコシステム（Claude.ai, Claude Code, Claude Design, Managed Agents, MCP, Agent SDK）、開発者リソース一覧、競合比較表を含む。
 
