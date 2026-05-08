@@ -730,3 +730,19 @@ Group C (14): anyscale, vannevar-labs, abridge, the-browser-company, reevo, chal
 - `concepts/societal-shadow.md` — 「関連現象」表のWaluigi Effectエントリを[[concepts/waluigi-effect]]にリンク。関連ページにwaluigi-effectを追加。
 
 **Index/log**: index.mdにconcepts/waluigi-effectを追加。societal-shadowエントリ更新。総ページ数: 5203→5204、Concepts: 451→452。
+
+---
+
+## 2026-05-08 — Wiki Health Fix (post-graph-analysis + wiki-health reports)
+
+### Changes
+- **index.md**: Fixed header (Total pages: 5286→1757, removed stale stub count), added `## Comparisons (12 pages)` and `## Queries (0 pages)` sections, updated section counts (Entities: 500→526, Concepts: 472→1219)
+- **Broken wikilinks**: Fixed ~300 bare wikilinks (e.g., `[[simon-willison]]` → `[[entities/simon-willison]]`, `[[openai]]` → `[[entities/openai]]`) across entities/, concepts/, comparisons/ — 5 batch passes
+- **Frontmatter**: Added missing frontmatter to `concepts/data-analysis-agents.md` and `concepts/poor-mans-continuous-learning.md`; added `updated: 2026-05-08` to 24 pages lacking the field
+- **Orphan cross-links**: Added incoming wikilinks from 9 pages to 10 orphan pages (e.g., `information-theory-and-agent-communication` → `predictive-v-information`, `megakernel-for-llm-inference` → `megakernel-inference`, `mac-studio-local-ai` → `nvidia-egpu-macos` + `dflash-ggml`)
+
+### Remaining
+- ~29 bare wikilink references remain (mostly code artifacts like `[[:alnum:]]`, `[[:space:]]`, `[[gnu::packed]]`, `[[fallthrough]]`)
+- 20 prefix-style broken links point to subdirectory pages that don't exist yet (e.g., `concepts/capabilities-based-security`, `entities/paraform`)
+- 1,131 orphan index entries still need registration in index.md (large task, batched separately)
+- 1,434 unique tags need taxonomy audit
