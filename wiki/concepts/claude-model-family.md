@@ -61,38 +61,7 @@ related:
 
 ## 🚀 1. Quick Start — 開発の第一歩
 
-### 1.1 アカウントとAPIキー
-[Anthropic Console](https://console.anthropic.com) でサインアップし、APIキーを発行。クレジットをチャージして利用開始。
-
-### 1.2 最初の API 呼び出し
-
-```bash
-curl https://api.anthropic.com/v1/messages \
-  -H "x-api-key: $ANTHROPIC_API_KEY" \
-  -H "anthropic-version: 2023-06-01" \
-  -H "content-type: application/json" \
-  -d '{
-    "model": "claude-sonnet-4-6",
-    "max_tokens": 1024,
-    "messages": [{"role": "user", "content": "Hello Claude"}]
-  }'
-```
-
-### 1.3 Claude Code のインストール
-```bash
-npm install -g @anthropic-ai/claude-code
-```
-ターミナル上で自律型コーディングエージェントとして動作。詳細は [[claude-code]] 参照。
-
-### 1.4 最初に読むリソース
-
-| リソース | 用途 |
-|---------|------|
-| [Quickstart Guide](https://docs.anthropic.com/en/docs/get-started) | 初回APIリクエストの手順 |
-| [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) | ワークフロー別コードスニペット |
-| [Anthropic Quickstarts](https://github.com/anthropics/anthropic-quickstarts) | プリビルドアプリテンプレート |
-| [Developer Docs](https://docs.anthropic.com/en/home) | 全機能の技術ドキュメント |
-| [API Reference](https://docs.anthropic.com/en/api/skills-guide) | エンドポイント・パラメータ詳細 |
+[Anthropic Console](https://console.anthropic.com) でAPIキー発行。[Quickstart Guide](https://docs.anthropic.com/en/docs/get-started) で初回APIリクエスト。CLIで `npm install -g @anthropic-ai/claude-code`。詳細は [Developer Docs](https://docs.anthropic.com/en/home) と [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) を参照。
 
 ---
 
