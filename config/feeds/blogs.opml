@@ -123,7 +123,6 @@
       <outline type="rss" text="Database Architects" title="Database Architects" xmlUrl="https://databasearchitects.blogspot.com/feeds/posts/default" htmlUrl="https://databasearchitects.blogspot.com/" />
       <outline type="rss" text="LangChain Blog" title="LangChain Blog" xmlUrl="https://www.langchain.com/blog/rss.xml" htmlUrl="https://www.langchain.com/blog" />
       <outline type="rss" text="LMSYS Org Blog" title="LMSYS Org Blog" xmlUrl="https://www.lmsys.org/blog/feed.xml" htmlUrl="https://www.lmsys.org/blog/" />
-      <outline type="rss" text="LLVM Blog" title="LLVM Blog" xmlUrl="https://blog.llvm.org/index.xml" htmlUrl="https://blog.llvm.org/" />
       <outline type="rss" text="LWN.net" title="LWN.net" xmlUrl="https://lwn.net/headlines/rss" htmlUrl="https://lwn.net/" />
       <outline type="rss" text="OpenAI Alignment Research" title="OpenAI Alignment Research" xmlUrl="https://alignment.openai.com/rss.xml" htmlUrl="https://alignment.openai.com/" />
       <outline type="rss" text="OpenAI Developers Blog" title="OpenAI Developers Blog" xmlUrl="https://developers.openai.com/rss.xml" htmlUrl="https://developers.openai.com/blog" />
