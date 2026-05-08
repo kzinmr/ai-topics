@@ -28,6 +28,10 @@ sources: []
 | **Known for** | Claude Agent SDK architecture, "Skills" system design, agent harness engineering, interpretability research, YC-backed startups |
 | **Bio** | Engineer and serial entrepreneur currently on the Claude Code team at Anthropic. Previously founded Multiverse (YC W20, raised $17M), sold a SaaS startup (Edgeout.gg → blitz.gg), co-founded Pubpub.org (non-profit academic publishing), and studied at the MIT Media Lab. Writes thoughtfully about AI interpretability, agent architecture, spirituality, and the craft of building. |
 
+## Notable Writing
+
+- **"[Detecting when LLMs are Uncertain](https://www.thariq.io/blog/entropix/)"** (Oct 2024) — The canonical explainer of [[entities/xjdr|xjdr's]] entropix project. Breaks down the entropy/varentropy quadrant, 4 adaptive sampling strategies, and the "thinking token" insight. [[concepts/entropix]]
+
 ## Overview
 
 Thariq Shihipar occupies a unique position in the AI engineering world — he is simultaneously a **core builder of production AI systems** (Claude Code at Anthropic) and a **reflective practitioner** who writes deeply about the philosophical and spiritual dimensions of technology. This combination of deep technical chops and introspective analysis makes his blog one of the most distinctive in the AI space.

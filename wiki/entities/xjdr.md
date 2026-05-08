@@ -46,6 +46,8 @@ A research project exploring **entropy and varentropy** for context-aware LLM sa
 - **entropix-trainer** (forthcoming): RL training pipeline
 - **Entropy Quadrant** visualization: Low/High Entropy × Low/High Varentropy → different sampling strategies
 
+**External coverage**: Thariq Shihipar (@trq212, Anthropic Claude Code team) wrote "[Detecting when LLMs are Uncertain](https://www.thariq.io/blog/entropix/)" (Oct 2024) — the canonical explainer of entropix's adaptive sampling across the 4 entropy/varentropy states. [[entities/thariq-shihipar]]
+
 ### Earlier Systems Work
 
 Before AI, xjdr built significant systems infrastructure:

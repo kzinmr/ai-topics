@@ -1,3 +1,21 @@
+## [2026-05-08] ingest | entropix explained — Thariq Shihipar article + concept page
+
+**Action**: kzinmrからのリクエストにより、@trq212 の entropix 解説記事を wiki に取り込み。
+
+**New raw article saved**:
+- `raw/articles/2024-10-11_thariq-entropix-explained.md` — Thariq Shihipar (@trq212, Anthropic Claude Codeチーム) によるentropix解説。エントロピー/バレントロピーの4象限、適応的サンプリング戦略、"thinking token"洞察。
+
+**New concept page created**:
+- `concepts/entropix.md` — xjdrのエントロピーベース適応的LLMサンプリング。entropy/varentropy象限による動的戦略選択、学習不要のCoTシミュレーション。
+
+**Entity pages enriched**:
+- `entities/xjdr.md` — entropix セクションに Thariq 記事の外部カバレッジ追加
+- `entities/thariq-shihipar.md` — Notable Writing セクション追加、entropix 記事を収録
+
+**Cross-references**: [[entities/xjdr]], [[entities/thariq-shihipar]], [[concepts/entropix]], [[entities/noumena-network]]
+
+---
+
 ## [2026-05-08] enrich | xjdr (@_xjdr) — Noumena founder/entropix creator → stub → full
 
 **Action**: kzinmrからのリクエストにより、@_xjdrのエンティティページをスタブからフルエントリに拡充。
