@@ -1,3 +1,16 @@
+## 2026-05-08 | Bespoke Labs エンティティ + Multi-Turn Tool Use RL 概念ページ作成
+
+**Action**: Bespoke Labs のブログ記事「Improving Multi-Turn Tool Use with Reinforcement Learning」を wiki に取り込み。
+
+**New entity page**:
+- [[entities/bespoke-labs]] — AI research company focused on agent optimization. Creators of Curator (synthetic data curation), OpenThoughts (open reasoning datasets, ICLR 2026), Evalchemy. Fortune 500 enterprise customers. Multi-turn tool-use RL training with GRPO: Qwen2.5-7B +23% on BFCL v3 (55%→78%, 100 samples).
+
+**New concept page**:
+- [[concepts/multi-turn-tool-use-rl]] — GRPOを用いてLLMエージェントにマルチターンツールオーケストレーションを教える手法。Bespoke LabsがBFCL v3 multi-turnで+23%達成（Qwen2.5-7B-Instruct, 100訓練サンプル）。主要知見: (1) 過長フィルタリング + KL weight 0.001 で Completion Length Blowup を防止、(2) 報酬設計は Less is More（単純な正解報酬が複合報酬より安定）、(3) 参照モデルの100ステップ毎更新が性能向上に寄与。
+
+**Raw article**: `raw/articles/2026-05-08_bespokelabs_multi-turn-tool-use-rl.md`
+
+**Cross-references**: [[concepts/bfcl-v3]], [[concepts/grpo]], [[concepts/deepseek-r1]]
 ## 2026-05-08 | AI Benchmarks & Evals — 16 individual concept pages created
 
 **Action**: @xeophonの18部構成シリーズの各ベンチマークに対応する個別コンセプトページを16件作成（既存のtau-bench/swe-bench/arc-agi-2を除く）。3つの並列サブエージェントで研究・執筆。

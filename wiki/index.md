@@ -4,7 +4,7 @@
 > Read this first to find relevant pages for any query.
 > Last updated: 2026-05-08 | Total pages: 723 | Full entries: 723 | Stubs: 0 |
 
-## Entities (525 pages)
+## Entities (526 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/agreement-bug]] — Agreement is a Bug
