@@ -1,3 +1,21 @@
+## [2026-05-08] ingest | Noumena Network Research — 12-Post MoE Training Methodology
+
+**Action**: kzinmrからのリクエストにより、https://noumena.com/research/ の12件の研究ポストを順に理解しwikiに追加。
+
+**New raw articles saved**:
+- `raw/articles/2026-03-14_noumena-research-12-posts.md` — Noumena Networkの研究ページ全12ポスト（MoE学習方法論）
+
+**New entity page created**:
+- `entities/noumena-network.md` — Noumena Network — AI研究ラボ。nmoe（B200-first MoEトレーニングフレームワーク、RDEP）、エージェントシステム（Skill is All You Need）。ASI志向。
+
+**New concept pages created (2)**:
+- `concepts/moe-training-noumena-methodology.md` — 12ポストの包括的統合：Speedrun Loop、eval-gated autoresearch、Super-4096（ルーティング崩壊≠品質崩壊）、Expert-LR Tuning、NVFP4 Dynamics、Atlas Hypothesis、Dense-vs-MoE Fairness Contract
+- `concepts/rdep.md` — Research Dispatch/Expert Parallelism: NCCL all-to-allの代わりにCUDA IPC direct dispatch/returnで単一ノードMoE学習
+
+**Cross-references**: [[entities/noumena-network]], [[concepts/moe-training-noumena-methodology]], [[concepts/rdep]], [[concepts/mixture-of-experts]], [[entities/deepseek]]
+
+---
+
 ## [2026-05-08] AI Benchmarks & Evals Overview — @xeophon 18-Part Series
 
 **Action**: kzinmrからのリクエストにより、Florian Brand (@xeophon) のAI Benchmarks/Evals 18部構成Xスレッドシリーズをwikiに取り込み。15/18パート取得（nitter.netのJSブロックによりPart 16-18は未取得）。

@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 5280 | Full entries: 4734 | Stubs: 541 |
+> Last updated: 2026-05-08 | Total pages: 5283 | Full entries: 4737 | Stubs: 541 |
 
-## Entities (499 pages)
+## Entities (500 pages)
 
 - [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
 - [[entities/hugo-bowne]] — Hugo Bowne-Anderson — Data scientist and AI privacy engineering writer. Co-author of "15 Privacy Questions Every AI Builder is Asking" with Katharine Jarmul.
@@ -496,6 +496,7 @@
 - [[entities/modal-labs]] — Modal Labs — Serverless GPU cloud platform. Founded by Erik Bernhardsson. Python-native containerless execution.
 - [[entities/nominal]] — Nominal — AI and analytics platform.
 - [[entities/nuro]] — Nuro — Autonomous delivery vehicles. Pivoted to Nuro Driver licensing platform in 2024.
+- [[entities/noumena-network]] — Noumena Network — AI research lab and product company. MoE training infrastructure (nmoe, RDEP) and agent systems. "Engineered for Experts // Built for Mastery."
 - [[entities/parallel-web-systems]] — Parallel Web Systems — Web infrastructure for AI agents. Founded by ex-Twitter CEO Parag Agrawal. $2B+ valuation.
 - [[entities/reevo]] — Reevo — AI platform.
 - [[entities/rogo]] — Rogo — AI for financial services. $750M valuation. 25K+ users across 150 firms.
@@ -508,7 +509,7 @@
 - [[entities/vanta]] — Vanta — Security and compliance automation. $300M+ ARR. YC W18.
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
-## Concepts (467 pages)
+## Concepts (469 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/altman-three-observations]] — Altman's Three Observations: 対数スケーリング（intelligence ≈ log(resources)）、超デフレコスト（10x/年）、超指数関数的価値の3つの経済観察枠組み。GPT-4→GPT-4oで150xのコスト低下、2035年ビジョン、AIエージェント経済学。
@@ -553,7 +554,9 @@
 - [[concepts/moltbook-breach-2026]] — **Moltbook Breach 2026（77万エージェント同時侵害事件）** — 史上初の産業規模AIエージェントセキュリティインシデント。Supabase RLS無効により77万エージェントのAPIトークン（150万件）が露出。CVE-2026-25253（One-Click RCE）、ClawHavocキャンペーン（341悪意スキル）と同時期に発生。致死的三要素（Lethal Trifecta）の現実検証。
 - [[concepts/mozilla-firefox-ai-hardening]] — Mozilla used Claude Mythos Preview to find 423 security bugs in Firefox (April 2026)
 - [[concepts/mit-encompass]] — MIT CSAIL framework for AI agent search with automatic backtracking and parallel cloning, 15-40% accuracy boost.
+- [[concepts/moe-training-noumena-methodology]] — Noumena Network's 12-post MoE training research program. Speedrun loop, eval-gated autoresearch, routing collapse ≠ quality collapse, per-expert LR tuning, RDEP.
 - [[concepts/recursive-self-improvement]] — AI systems autonomously designing and training successor models. Jack Clark's 60% probability by end 2028. Compounding alignment risk, SWE-Bench 93.9% evidence.
+- [[concepts/rdep]] — Research Dispatch/Expert Parallelism — direct CUDA IPC dispatch/return replacing NCCL all-to-all for single-node MoE training. B200-first.
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.

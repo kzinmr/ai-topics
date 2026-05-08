@@ -22,3 +22,7 @@ Stub page for Mixture-of-Experts.
 ## Related Pages
 
 - [[concepts/_index]]
+- [[entities/noumena-network]] — Noumena Network (nmoe, RDEP)
+- [[concepts/moe-training-noumena-methodology]] — MoE training methodology synthesis
+- [[concepts/rdep]] — RDEP expert parallelism
+- [[entities/deepseek]] — DeepSeek (major MoE practitioner)
