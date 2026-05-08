@@ -3,13 +3,14 @@ title: NVIDIA DGX Spark
 type: entity
 aliases: [dgx-spark, project-digits, gb10-spark, nvidia-dgx-spark]
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-05-08
 status: L2
 sources:
   - https://www.nvidia.com/en-us/products/workstations/dgx-spark
   - https://docs.nvidia.com/dgx/dgx-spark
   - https://build.nvidia.com/spark
   - https://github.com/NVIDIA/dgx-spark-playbooks
+  - "raw/articles/2026-05-07_x-andrewchen-local-ai-home-lab-state.md"
 tags: [entity, hardware, local-llm, nvidia, inference]
 ---
 
@@ -130,9 +131,27 @@ See [[concepts/local-llm/server-dgx-spark]] for the complete setup guide.
 | Mar 2026 | NemoClaw alpha released with DGX Spark support |
 | Apr 2026 | DGX Spark Playbooks repo reaches 40+ recipes |
 
+## Real-world Practitioner Perspectives
+
+### Andrew Chen (a16z) — May 2026
+
+Andrew Chen built a home lab progressing through Mac Mini → DGX Spark → 5090 eGPU → Strix Halo Framework. His DGX Spark assessment:
+
+> *"The new GB10/DGX Spark family of devices have big memory but relatively low memory bandwidth (so not the fastest tok/s) but you get CUDA and the whole ecosystem there."*
+
+**Key takeaway**: The 128 GB unified memory enables running large models (120B+) locally — impossible on consumer GPUs — but the 273 GB/s bandwidth ceiling means generation speed lags behind Mac Studios (~800 GB/s) and discrete GPUs. The compensating factor is **CUDA ecosystem access**: TRT-LLM, NVFP4 quantization, NIM microservices, and the full NVIDIA software stack.
+
+**Practical use**: Andrew uses DGX Spark as part of a two-tier setup via LiteLLM → vLLM: a 35B MoE model for fast queries and a 122B model for complex analysis. His recommendation: *"If you want to invest in a new piece of hardware, the DGX Spark or Strix Halo systems are nice to be able to try out bigger models."*
+
+**Position in his journey**: DGX Spark was his second hardware step (after Mac Mini), later supplemented by a 5090 eGPU and Strix Halo — suggesting he outgrew its speed limitations but retained it for the CUDA ecosystem and big-model capability.
+
+Full context: → [[concepts/local-ai]], [[entities/andrew-chen]]
+
 ## Related
 
 - [[nvidia-nemoclaw]] — NemoClaw secure agent framework
+- [[concepts/local-ai]] — Local AI state snapshot (May 2026)
+- [[entities/andrew-chen]] — a16z GP, DGX Spark practitioner perspective
 - [[concepts/local-llm/server-dgx-spark]] — Setup guide for local LLM server
 - [[concepts/local-llm]] — Local LLM inference overview
 - [[jensen-huang]] — NVIDIA CEO, physical AI advocate

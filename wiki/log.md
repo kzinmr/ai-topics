@@ -9,9 +9,12 @@
 - `entities/andrew-chen.md` — Andrew Chen — a16z General Partner leading speedrun。Uberライダーグロース、The Cold Start Problem著者。ホームラボ遍歴：Mac Mini→DGX Spark→5090 eGPU→Strix Halo。OpenClaw+Hermes Agent運用。
 
 **Concept page enriched**:
-- `concepts/local-ai.md` — スタブ→フルエントリに拡充。Andrew Chenポストをケーススタディに、6セクション構成（ハードウェアランドスケープ・モデルランドスケープ・ソフトウェアスタック・パフォーマンス特性・ユースケース・スタートガイド）。主要テーゼ：オープンウェイトモデルはSOTAから1年遅れ、2027年Opus級ローカル可能予測、非同期バッチ処理がスイートスポット。
+- `concepts/local-ai.md` — スタブ→フルエントリに拡充。Andrew Chenポストをケーススタディに、6セクション構成（ハードウェアランドスケープ・モデルランドスケープ・ソフトウェアスタック・パフォーマンス特性・ユースケース・スタートガイド）。
 
-**Cross-references**: [[entities/andrew-chen]], [[entities/nvidia-dgx-spark]], [[entities/openclaw]], [[entities/hermes-agent]], [[concepts/local-llm]], [[concepts/local-llm-inference-hardware]], [[concepts/mac-studio-local-ai]], [[concepts/dgx-spark-local-llm-server]], [[concepts/ollama]], [[concepts/vllm]], [[concepts/model-quantization-for-local-llms]]
+**Entity page enriched**:
+- `entities/nvidia-dgx-spark.md` — 「Real-world Practitioner Perspectives」セクション追加。Andrew ChenのDGX Spark評価（大容量メモリ/低帯域幅トレードオフ、CUDAエコシステムが決め手、120B+モデル実運用、二段階モデル戦略での位置づけ）を直接引用付きで収録。
+
+**Cross-references**: [[entities/andrew-chen]], [[entities/nvidia-dgx-spark]], [[entities/openclaw]], [[entities/hermes-agent]], [[concepts/local-llm]], [[concepts/mac-studio-local-ai]], [[concepts/ollama]], [[concepts/vllm]]
 
 ## [2026-05-08] active-crawl | Enterprise AI JVs, IBM Think 2026 AI Operating Model, China Agentic Coding Sprint
 
