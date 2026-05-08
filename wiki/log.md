@@ -1,3 +1,25 @@
+## [2026-05-08] τ-bench エコシステムの包括的Wiki化 — τ-bench → τ²-bench → τ³-Bench（τ-Knowledge + τ-Voice）
+
+**Action**: ユーザーリクエストによるSierra AI Researchのτ-benchエコシステム（論文5本 + ブログ4本 + taubench.com）の包括的取り込み。AI Agentの強化学習と評価に関する知見を集約。
+
+**New pages created (4)**:
+- `concepts/tau-squared-bench.md` — τ²-bench: Dual-Controlベンチマーク。Dec-POMDPモデル、Telecomドメイン。Solo→Interactiveで最大-25pt。協調とガイダンスの困難さを定量化。
+- `concepts/tau-knowledge.md` — τ-Knowledge: 非構造化知識ベース（698文書/195Kトークン）でのエージェント評価。τ-Bankingドメイン。GPT-5.2 ~25.5%。知識検索+推論統合のボトルネック。
+- `concepts/tau-voice.md` — τ-Voice: フルデュプレックス音声エージェント評価（278タスク）。GPT-5テキスト85%→音声26-38%。失敗79-90%がASRではなくエージェント起因。
+- `concepts/pass-k-metric.md` — pass^k: τ-benchファミリーの信頼性評価指標。k回連続成功を要求し一貫性を測定。
+
+**Existing pages enriched (1)**:
+- `concepts/tau-bench.md` — 24行のstubから254行（17.7KB）の包括的アンブレラページに全面拡張。τ-bench哲学、3つの評価軸（対話/ポリシー遵守/信頼性）、アーキテクチャ、ドメイン進化表、業界インパクト、Shunyu Yaoの「The Second Half」との接続を網羅。
+
+**Raw papers saved (4)**:
+- `raw/papers/2024-06-17_2406.12045_tau-bench-tool-agent-user-interaction.md`
+- `raw/papers/2025-06-09_2506.07982_tau-squared-bench-dual-control.md`
+- `raw/papers/2026-03-04_2603.04370_tau-knowledge-unstructured-knowledge.md`
+- `raw/papers/2026-03-14_2603.13686_tau-voice-full-duplex-voice-agents.md`
+
+**Index updated**:
+- index.md: Concepts 455→459、Total pages 5207→5211、Full entries 4657→4662、Stubs 546→545
+
 ## [2026-05-08] 論文取り込み — DeepSeek-V3.2 テクニカルレポート (arXiv:2512.02556)
 
 **Action**: ユーザーリクエストによるDeepSeek V3.2テクニカルレポートのWiki取り込み。V4以前のマイルストーン論文。
