@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 723 | Full entries: 723 | Stubs: 0 |
+> Last updated: 2026-05-08 | Total pages: 724 | Full entries: 724 | Stubs: 0 |
 
 ## Entities (526 pages)
 
@@ -542,10 +542,11 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (186 pages)
+## Concepts (187 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
+- [[concepts/adam-optimizer]] — Adam（Adaptive Moment Estimation）: 深層学習で最も広く使われる適応的最適化アルゴリズム。1次・2次モーメントの指数移動平均で学習率を適応制御。AdamWはWeight Decayを分離し汎化性能を改善。LLM学習の標準。→ [[raw/articles/2024-02-08_linkedin-processsense-adam-adamw.md]]
 - [[concepts/agentic-search]] — Agentic Search
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy

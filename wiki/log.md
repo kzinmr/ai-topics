@@ -1,3 +1,16 @@
+## 2026-05-08 | Adam Optimizer 概念ページ作成 + Raw Article 保存
+
+**Action**: ProcessSense Lab の LinkedIn 記事「Understanding Adam and AdamW」(2024-02-08) を wiki に取り込み。
+
+**Saved raw article**:
+- `wiki/raw/articles/2024-02-08_linkedin-processsense-adam-adamw.md` — Adam と AdamW の包括的解説。バイアス補正、Weight Decay の結合問題、PyTorch 疑似コード比較を含む
+
+**New concept page**:
+- `wiki/concepts/adam-optimizer.md` — Adam 最適化アルゴリズムの概念ページ。仕組み（1次/2次モーメント、バイアス補正）、AdamW（Decoupled Weight Decay）、LLM学習での位置付け、GRPO・Q-LoRA への相互参照
+
+**Updated pages**:
+- `wiki/index.md` — Concepts 187 pages (+1), Total 724 (+1)
+
 ## 2026-05-08 | DSPy Tutorial 概念ページ作成 + DSPyエンティティ更新
 
 **Action**: Maxime Rivest の X Article「A simple introduction to DSPy」(190K views) を wiki に取り込み。

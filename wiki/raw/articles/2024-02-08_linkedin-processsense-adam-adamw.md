@@ -7,11 +7,8 @@ date_published: 2024-02-08
 date_ingested: 2026-05-08
 tags:
   - optimization
-  - adam
-  - adamw
-  - deep-learning
-  - gradient-descent
-  - weight-decay
+  - training
+  - fine-tuning
 ---
 
 # Understanding Adam and AdamW
