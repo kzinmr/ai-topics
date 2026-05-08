@@ -1,3 +1,14 @@
+## [2026-05-08] sitemap-monitor → Block 3: Anthropic Engineering 残り4件をconcept化
+
+sitemap-monitorが収集したAnthropic Engineering Blog 24件の第3ブロック（残り4件、2件のpostmortemを1ページに統合）。
+
+**新規作成 (3 pages):**
+- `concepts/ai-resistant-evaluations.md` — Tristan HumeによるAIに打ち負かされない採用テスト設計論。v1（疑似アクセラレータ最適化）→v2→v3（Zachtronics風制約命令セット）。各バージョンがClaudeに撃破され再設計。公開チャレンジあり。
+- `concepts/anthropic-infrastructure-postmortems.md` — 2つの大規模品質低下ポストモーテムを統合。2025年8-9月（コンテキストウィンドウ誤ルーティング・出力破損・XLA:TPU誤コンパイル）と2026年3-4月（推論努力誤設定・推論履歴消失・冗長性削減プロンプト）。
+- `concepts/infrastructure-noise-agent-evals.md` — エージェント型コーディング評価のインフラノイズ定量分析。Terminal-Bench 2.0でリソース1x→uncapped: 6pp差（p<0.01）。SWE-benchでも1.54pp。3pp未満のリーダーボード差は懐疑的に。
+
+**Sources**: `raw/articles/2026-05-08_anthropic-engineering_*.md`
+**Index**: +3 entries | **Page count**: 5267 → 5270
 ## [2026-05-08] sitemap-monitor → Block 2: Anthropic Engineering 4件をconcept化
 
 sitemap-monitorが収集したAnthropic Engineering Blog 24件の第2ブロック（4件）。
