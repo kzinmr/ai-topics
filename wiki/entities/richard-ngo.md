@@ -51,7 +51,14 @@ His landmark report analyzing AGI safety from foundational principles, providing
 A high-profile transcribed Discord debate with Eliezer Yudkowsky, moderated by Nate Soares, on the fundamental difficulty of AI alignment. Later expanded to include discussions with Ajeya Cotra, Paul Christiano, Holden Karnofsky, and others. [Read on Alignment Forum](https://www.alignmentforum.org/posts/7im8at9PmhbT4JHsW/ngo-and-yudkowsky-on-alignment-difficulty).
 
 ### Towards a Scale-Free Theory of Intelligent Agency (2025)
-His current major research direction, introducing the concept of **coalitional agency** — a unified mathematical framework describing both understanding and influencing the world. Critiques expected utility maximization (EUM) and active inference as insufficient, and proposes a synthesis that accounts for deep learning, RL, and multi-agent dynamics. [Read on Mind the Future](https://www.mindthefuture.info/p/towards-a-scale-free-theory-of-intelligent).
+His current major research direction, introducing the concept of **[[concepts/coalitional-agency|coalitional agency]]** — a unified mathematical framework describing both understanding and influencing the world. Key contributions:
+
+- **Critique of EUM**: Expected utility maximization assumes fixed concepts and separates beliefs from goals — real agents learn concepts and heuristics through deep learning and RL
+- **Critique of Active Inference**: Though superior to EUM in explaining how beliefs/goals form, it remains a "single-agent theory" that privileges one scale
+- **Two formalization paths**: (1) Top-down from EUM via bargaining between agents; (2) Bottom-up from Active Inference via prediction markets, auctions, and voting
+- **Implications for AI**: Multi-agent architectures (agent harness, unbundled agents) are natural implementations of coalitional structure; alignment must work at coalitional scales
+
+[Read on Mind the Future](https://www.mindthefuture.info/p/towards-a-scale-free-theory-of-intelligent). [Read the wiki concept page](concepts/coalitional-agency.md).
 
 ### Why I'm Not a Bayesian (2024)
 Philosophical objections to Bayesianism as a complete epistemology, arguing that Bayesian formalisms cannot fully capture how intelligent agents reason and learn. [Read on Mind the Future](https://www.mindthefuture.info/p/why-im-not-a-bayesian).

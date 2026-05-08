@@ -1,3 +1,10 @@
+## 2026-05-08 18:30 — coalitional agency 概念ページ作成 + Richard Ngo エンティティ強化
+
+- **New concept**: [[concepts/coalitional-agency]] — Richard Ngo の提唱する「スケールフリーな知的エージェンシー理論」。知性は競争と協調を行うサブエージェントの連合体（coalition）。EUM + Active Inference の両方を批判的に統合。2つの形式化パス（トップダウンEUM、ボトムアップActive Inference → 予測市場/オークション/投票）。Minsky の Society of Mind (1986) から GWAS ブリッジ。AIエージェント設計（Unbundled Agents, Agent Harness）の理論的基礎。
+- **Enriched entity**: [[entities/richard-ngo]] — coalitional agency セクションを詳細化、形式化パス・AI含意を追加、概念ページへの wikilink
+- **Index**: concepts/coalitional-agency 追加、カウント 704→705, Concepts 167→168
+- **Source**: https://www.mindthefuture.info/p/towards-a-scale-free-theory-of-intelligent (2025-03-22) + LessWrong/AF discussion
+
 ## 2026-05-08 18:15 — near.blog/links curation (Richard Ngo entity + raw articles)
 
 - **New entity**: [[entities/richard-ngo]] — Independent AI researcher & philosopher. Former DeepMind AGI Safety and OpenAI Governance. Creator of AGI Safety from First Principles. Writes at mindthefuture.info.
