@@ -87,13 +87,28 @@ Shihipar introduced the concept of **Context Engineering** — using the filesys
 
 > *"One of the key insights we had building Claude Code is that people were using it for non-coding tasks. The filesystem turned out to be the universal interface."*
 
-### Interpretability and Steering
+### Interpretability and Steering → [[concepts/interpretability]] / [[concepts/activation-steering]]
 
-In "Should Developers Care about Interpretability?" (Nov 2024), Shihipar made the case that interpretability is not just an academic concern but a practical engineering tool:
+In **"Should Developers Care about Interpretability?"** (Nov 2024), Shihipar made the case that interpretability is not just an academic concern but a practical engineering tool that promises developers "a level of control over their models that has not been possible thus far."
 
-- Understanding *how* models make decisions enables better prompt engineering
-- Steering techniques (modifying model behavior without retraining) are becoming production-ready
-- Developers who understand model internals will have a significant advantage in building reliable AI systems
+**Key arguments:**
+
+1. **Style capture beyond words**: Steering allows control that natural language can't express — e.g., "70% friendly, 50% concise, 80% professional." Examples span text (Goodfire.ai, Prism), voice (Hume), and images (Featurelab.xyz).
+
+2. **RLHF alternative**: Steering happens at **inference time**, giving API developers per-request control vs. RLHF's provider-imposed, one-size-fits-all post-training. This avoids RLHF's side effects (false refusals, quality degradation).
+
+3. **Persistent user preferences**: Preferences like "respond briefly" are lost from the context window — steering can make them permanent by amplifying the relevant feature.
+
+4. **Cheap classification without separate models**: Find "spam features" from a few examples and classify at inference time — no separate classifier training needed.
+
+**His cautionary notes** foreshadow the [[concepts/scaling-hypothesis|performance-controllability tradeoff]]:
+> "Steering is like brain surgery, prompting is like asking politely."
+
+- Over-amplification can push the model out-of-distribution (Golden Gate Claude thinking it *is* the bridge)
+- Feature labeling is still unreliable (humans + machines, disagreeable labels)
+- Feature circuits create unpredictable side effects, much like RLHF
+
+**Shihipar's prediction**: "Next-gen model APIs will get a lot more powerful but also more complicated — requiring more than just prompting and RAG to get the outputs we want."
 
 ### Entropix and Uncertainty Detection
 
@@ -171,7 +186,7 @@ An accessible explanation of XJDR's uncertainty detection technique:
 | 2025-12-06 | Spiritual Technology | Character — Systematized ways of improving character, inspired by Ghazali |
 | 2025-12-06 | Intention | Purpose — Nature of intention, accountability, public writing on spirituality |
 | 2025-11-17 | LLM-Powered Sorting with TrueSkill | Technical — Sorting large datasets using LLMs and TrueSkill ranking |
-| 2025-11-04 | Should Developers Care about Interpretability? | Technical — Breakdown of interpretability and steering, why it matters |
+| 2024-11-04 | Should Developers Care about Interpretability? | Technical — Breakdown of interpretability and steering, why it matters |
 | 2025-10-24 | AI & Product Strategy Consulting through Multiverse Inc. | Business — Consulting services for AI product development |
 | 2024-11-04 | Detecting when LLMs are Uncertain (Entropix) | Technical — Accessible deep-dive into Entropix reasoning techniques |
 | 2024-10-11 | Crypto ELI5 | Education — Explaining cryptocurrency intuition through a "toy crypto" currency |

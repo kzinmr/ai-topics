@@ -1,3 +1,24 @@
+## [2026-05-08] ingest + create | interpretability & activation-steering — Thariq Shihipar article + 2 concept pages
+
+**Action**: kzinmrからのリクエストにより、Thariq Shihiparの「Should Developers Care about Interpretability?」記事をwikiに取り込み、interpretability + activation-steeringの2つの新コンセプトページを作成。blog/のperformance-controllability tradeoff記事との相互リンクも追加。
+
+**Raw article updated**:
+- `raw/articles/thariq-shihipar-interpretability.md` — 従来のスタブを完全記事化。InterpretabilityとSteeringの基礎、4つの応用（スタイル制御、RLHF代替、ユーザー嗜好永続化、安価な分類器）、3つの課題（分布外、特徴誤ラベル、回路副作用）。
+
+**New concept pages created**:
+- `concepts/interpretability.md` — LLM内部の特徴・回路可視化の研究分野。Anthropic Scaling Monosemanticity、Golden Gate Claude、Entropixなどのランドマーク。[[concepts/activation-steering]]、[[concepts/scaling-hypothesis]]とのクロスリファレンス。
+- `concepts/activation-steering.md` — 推論時の特徴活性化操作技術。RLHFとの比較表、Abliteration、Goodfire.ai、Prism。4つの応用とGolden Gate Claude分析。
+
+**Entity pages enriched**:
+- `entities/thariq-shihipar.md` — Interpretability and Steeringセクションを詳細化（4つの応用、RLHF代替論、brain surgery比喩）。ブログ記事テーブルの日付修正（2025-11-04→2024-11-04）。
+
+**Blog articles cross-linked**:
+- `blog/2026-05-08_hermes_ai-performance-controllability-tradeoff.md` — ソース追加（concepts/interpretability.md, concepts/activation-steering.md）。潜在推論セクションにinterpretability/steeringのwikilink追加。
+
+**Cross-references**: [[concepts/interpretability]], [[concepts/activation-steering]], [[entities/thariq-shihipar]], [[concepts/scaling-hypothesis]]
+
+---
+
 ## [2026-05-08] ingest | entropix explained — Thariq Shihipar article + concept page
 
 **Action**: kzinmrからのリクエストにより、@trq212 の entropix 解説記事を wiki に取り込み。
