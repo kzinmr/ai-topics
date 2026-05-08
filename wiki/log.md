@@ -1,3 +1,20 @@
+## [2026-05-08] 論文取り込み — DeepSeek-V3.2 テクニカルレポート (arXiv:2512.02556)
+
+**Action**: ユーザーリクエストによるDeepSeek V3.2テクニカルレポートのWiki取り込み。V4以前のマイルストーン論文。
+
+**New pages created (1)**:
+- `concepts/deepseek-v3-2.md` — DeepSeek-V3.2（685B）。3つの革新：DSA（DeepSeek Sparse Attention：学習可能スパースアテンション $O(L^2)→O(Lk)$）、スケーラブルRL（GRPO強化：Unbiased KL推定 + Off-Policy Sequence Masking + Keep Routing Mask）、大規模エージェントタスク合成（1,827環境・85Kプロンプト）。Thinking in Tool-Useコンテキスト管理（3 discard戦略）。V3.2-SpecialeはIMO 2025・IOI 2025金メダル、ICPC World Finals 2025世界2位。GPT-5/Gemini-3.0-Proに迫るベンチマーク性能。既存のdangling wikilink（entities/deepseek.md, concepts/deepseek-v3.mdからの[[deepseek-v3-2]]参照）を解決。
+
+**Raw papers saved (1)**:
+- `raw/papers/2025-12-02_2512.02556_deepseek-v3.2-technical-report.md`
+
+**Existing pages enriched (2)**:
+- `entities/deepseek.md` — 論文シリーズ進化図にV3.2追加。V3.2モデル説明を1行→詳細に拡張（DSA、RL、エージェント合成、金メダル実績、波及効果）。sourcesにraw/paper追加。
+- `concepts/deepseek-v3.md` — 後継モデル参照を拡張。関連項目にV3.2 wikilink追加。
+
+**Index updated**:
+- index.md: コンセプト455ページに追加。ページ数更新（5206→5207）。
+
 ## [2026-05-08] Wiki ingest — How to Think About Agent Frameworks (Harrison Chase, LangChain)
 
 **Action**: ユーザーリクエストによるLangChainブログ記事のWiki取り込み。

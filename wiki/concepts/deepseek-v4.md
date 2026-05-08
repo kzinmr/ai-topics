@@ -239,6 +239,7 @@ DeepSeek-V4は以下の点でマイルストーン的成果：
 
 - [[entities/deepseek]] — DeepSeek企業概要
 - [[deepseek-v3]] — 前世代アーキテクチャ
+- [[deepseek-v3-2]] — 直前世代（DSA、スケーラブルRL、エージェント合成）
 - [[deepseek-r1]] — 推論特化モデル（GRPOの起源）
 - [[grpo]] — ポストトレーニングで使用されるRLアルゴリズム
 - [[mixture-of-experts]] — MoEアーキテクチャ一般

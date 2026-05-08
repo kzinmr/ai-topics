@@ -11,6 +11,7 @@ sources:
   - raw/articles/2026-05-01_nist-caisi-deepseek-v4-evaluation.md
   - raw/papers/2024-12-27_2412.19437_deepseek-v3-technical-report.md
   - raw/papers/2025-01-22_2501.12948_deepseek-r1.md
+  - raw/papers/2025-12-02_2512.02556_deepseek-v3.2-technical-report.md
   - raw/articles/2026-05-08_martinfowler-deepseek-papers.md
   - raw/papers/2026-04-xx_deepseek-v4-technical-report.md
 ---
@@ -44,6 +45,9 @@ DeepSeek-V3  (Dec 2024)           超大規模HPC Co-Design
     ↓                            671B MoE, FP8, DualPipe, Aux-Loss-Free
 DeepSeek-R1  (Jan 2025)           推論の創発
                                  Pure RL → 自己検証・内省・蒸留 (Nature掲載)
+DeepSeek-V3.2(Dec 2025)           推論能力のフロンティア到達
+                                 DSA + スケーラブルRL + エージェント合成
+                                 IMO/IOI金メダル、GPT-5/Gemini-3.0-Proに迫る
 DeepSeek-V4  (Apr 2026)           フロンティア規模
                                  1.6T Pro / 284B Flash、1M context、Ascend 950
 ```
@@ -102,7 +106,7 @@ DeepSeek V4 is confirmed to run on **Huawei Ascend 950** chips for inference and
 - **DeepSeek-LLM** (January 2024) — 67B params。スケーリング則を非埋込FLOPs/token（M）で再定義。高品質データが同トークン数でより大きなモデルを正当化することを示した。2Tバイリンガルトークンで訓練、LLaMA-2 70Bを数学・コーディングで上回る。Scaling Laws論文。
 - **DeepSeek-V2** (June 2024) — アーキテクチャ効率の革命。**MLA**（Multi-Head Latent Attention：KVキャッシュの低ランク圧縮）と **DeepSeekMoE**（共有エキスパート＋ルーテッドエキスパート、H800インターコネクト制約を克服するDevice-Limited Routing）を初導入。以降の全モデルの基盤。
 - **[[concepts/deepseek-v3|DeepSeek V3]]** (December 2024) — 671B total / 37B active params, MoE. Landmark technical report (arXiv:2412.19437): first FP8 training at 671B scale, auxiliary-loss-free load balancing, multi-token prediction, DualPipe. Trained on 14.8T tokens for $5.576M (2.788M H800 GPU hours). Achieved GPT-4o-class performance at <1/20th the training cost. MIT license.
-- **[[concepts/deepseek-v3-2|DeepSeek V3.2 / V3.2 Speciale]]** (December 2025) — 685B params, evolved from V3
+- **[[concepts/deepseek-v3-2|DeepSeek V3.2 / V3.2 Speciale]]** (December 2025) — 685B params。**DSA**（DeepSeek Sparse Attention：学習可能なスパースアテンションによる $O(L^2)→O(Lk)$ 効率化）、**スケーラブルRL**（GRPO強化：Unbiased KL推定 + Off-Policy Sequence Masking + Keep Routing Mask、ポストトレーニング予算が事前学習の10%超）、**大規模エージェントタスク合成**（1,827環境・85Kプロンプト）の3つの革新。V3.2-SpecialeはIMO 2025・IOI 2025で金メダル、ICPC World Finals世界2位。GPT-5/Gemini-3.0-Proに迫る性能。DSAはV4、GLM-5.1にも波及。技術レポート（arXiv:2512.02556）。
 - **[[concepts/deepseek-r1|DeepSeek R1]]** (January 2025) — Reasoning-focused model. **Nature**掲載（Vol. 645, 2025）。Pure RL（GRPO）で推論能力の創発を初めて大規模実証。「アハモーメント」、自己検証・内省の自律的獲得。AIME 2024: 79.8%, MATH-500: 97.3%（o1-1217に匹敵）。蒸留によりQwen-1.5B/7B、Llama-8B/70Bにも展開。訓練コスト$294K。推論パターンはV3へも蒸留。
 
 ## Strategy
@@ -125,6 +129,7 @@ DeepSeek V4 is confirmed to run on **Huawei Ascend 950** chips for inference and
 - [[nvidia]] — Competitor in AI hardware; DeepSeek reducing dependence on NVIDIA
 - [[open-source-ai]] — Leading open-source AI model provider
 - [[concepts/deepseek-v3]] — Predecessor model series
+- [[concepts/deepseek-v3-2]] — Intermediate model (DSA, scalable RL, agent synthesis)
 - [[concepts/deepseek-v4]] — Latest model series (1M context, Hybrid Attention, mHC)
 - [[concepts/deepseek-r1]] — Reasoning model (Nature 2025)
 - [[concepts/grpo]] — RL algorithm introduced in R1
