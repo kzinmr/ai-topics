@@ -1,3 +1,19 @@
+## [2026-05-08] Pliny the Prompter エンティティ + AIレッドチーミングキャリア コンセプトページ作成
+
+**Action**: pliny.gg と L1B3RT4S リポジトリを調査し、Pliny the Prompter のエンティティページと AIレッドチーミング/プロンプトインジェクション分野のキャリア情報を wiki 化。
+
+**New pages created (2)**:
+- `entities/pliny-prompter.md` — Pliny the Prompter (elder_plinius) のエンティティページ。L1B3RT4S（18.6k stars）、G0DM0D3、0BL1T3R4TUSなど主要プロジェクト、TIME100 AI 2025選出、BBC/FT/VentureBeat掲載歴、10本以上の学術論文引用、BASI Discordコミュニティ、JOIN THE MISSION 4領域を網羅。
+- `concepts/ai-red-teaming-careers.md` — AIレッドチーミング/プロンプトインジェクション分野のキャリア包括ガイド。AI Red Teamer（$130K-250K）、Adversarial ML Researcher（$140K-220K）、AI Penetration Tester（$115K-180K）、AI Security Analyst（$95K-150K）の4職種。雇用企業（OpenAI/Anthropic/DeepMind/Microsoft/Meta/Amazon/HiddenLayer/Lakera）、必須スキル（Adversarial ML、OWASP LLM Top 10、MITRE ATLAS）、主要ツール（PyRIT/Garak/Promptfoo/L1B3RT4S）、キャリアエントリーパス、業界動向（WEF: 14%のみAIセキュリティ人材確保）を収録。
+
+**Key sources**:
+- https://pliny.gg/ — Pliny the Prompter のポータルサイト（プロジェクト一覧、メディア掲載、JOIN THE MISSION）
+- https://github.com/elder-plinius/L1B3RT4S — 18.6k stars、30+モデル対応のリベレーションプロンプト集
+- VentureBeat インタビュー（2024年5月） — 初の独占インタビュー
+- TechJackSolutions AI Red Teamer Career Guide — 給与・スキル・キャリアパス
+- AICareerFinder AI Red Team Specialist Guide — 職種概要・ATSキーワード
+- Google Cloud Blog "Building an effective AI red team"（2026年3月）
+
 ## [2026-05-08] Blog Post v2: Joshua Kimの古典的MLアナロジーを中心に据えた改訂版
 
 **Action**: ユーザーフィードバックに基づき、Joshua KimのLinkedIn投稿（「LLMの潜在推論は古典的MLでの解釈可能性vs性能トレードオフの再来」）をブログ記事の中心的フレーミングに据えて全面改訂。

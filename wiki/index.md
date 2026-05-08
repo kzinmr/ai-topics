@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 5211 | Full entries: 4662 | Stubs: 545 |
+> Last updated: 2026-05-08 | Total pages: 5213 | Full entries: 4664 | Stubs: 545 |
 
-## Entities (405 pages)
+## Entities (406 pages)
 
 - [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
 - [[entities/hugo-bowne]] — Hugo Bowne-Anderson — Data scientist and AI privacy engineering writer. Co-author of "15 Privacy Questions Every AI Builder is Asking" with Katharine Jarmul.
@@ -285,6 +285,7 @@
 - [[entities/phil-schmid]] — Staff Engineer (AI DevX/DevRel) at Google DeepMind, ex-Hugging Face Tech Lead (revenue $0→$100M). Author of FSDP+Q-LoRA guide, RLHF tutorials, Inference Endpoints.
 - [[entities/philipp-schmid]] — Philipp Schmid (@_philschmid) — Senior AI Developer Experience Engineer at Google DeepMind, ex-Hugging Face Tech Lead. Prolific AI educator, deployment optimization expert, agent harness advocate.
 - [[entities/playerzero]]
+- [[entities/pliny-prompter]] — Pliny the Prompter (elder_plinius) — World's most prolific AI jailbreaker. TIME100 AI 2025. L1B3RT4S (18.6k stars), G0DM0D3, 0BL1T3R4TUS. Prompt injection, red teaming, system prompt leaks. BASI Discord community.
 - [[entities/poolside]] — AI code generation startup. Released **Laguna XS.2** (33B/3B MoE, Apache 2.0, single-GPU inference) in April 2026.
 - [[entities/project-prometheus]] — Jeff Bezos co-founded AI startup. $10B raised, $38B valuation. Focus on "Physical AI" for manufacturing/aerospace.
 - [[entities/pluralistic-net]] — **Blog** | pluralistic.net |
@@ -461,7 +462,7 @@
 - [[entities/vercel]] — Vercel — Frontend cloud platform (Next.js). Released deepsec open-source security harness using coding agents for vulnerability discovery and remediation (May 2026).
 - [[entities/radixark]] — RadixArk — AI inference infrastructure startup. $100M seed (May 2026), built on SGLang inference + Miles (large-scale RL).
 - [[entities/perplexity]] — Perplexity — AI search platform expanding into vertical products: Professional Finance Computer (35 analyst workflows), NEJM/BMJ premium medical access.
-## Concepts (459 pages)
+## Concepts (460 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/altman-three-observations]] — Altman's Three Observations: 対数スケーリング（intelligence ≈ log(resources)）、超デフレコスト（10x/年）、超指数関数的価値の3つの経済観察枠組み。GPT-4→GPT-4oで150xのコスト低下、2035年ビジョン、AIエージェント経済学。
@@ -513,6 +514,7 @@
 - [[concepts/agent-sandbox-patterns]] — Browser Useのエージェントサンドボクシングアーキテクチャ。ツール分離パターンとエージェント分離パターン
 - [[concepts/ask-user-question-pattern]] — エージェントがユーザーに確認を求めるためのハーネスパターン
 - [[concepts/ai-patterns-for-glam|AI Design Patterns for Information Professionals]] — Practical "boring AI" design patterns for GLAM and information professionals. Covers discovery, structured extraction, evaluation, and infrastructure. WIP book by [[entities/daniel-van-strien]].
+- [[concepts/ai-red-teaming-careers]] — AIレッドチーミング/プロンプトインジェクション関連キャリアの包括的ガイド。職種（AI Red Teamer $130K-250K、Adversarial ML Researcher、AI PenTester）、雇用企業（OpenAI/Anthropic/DeepMind/Meta/HiddenLayer）、必須スキル、ツール（PyRIT/Garak/Promptfoo）、キャリアパス。
 - [[concepts/ai-retail-experiments]] — Experiments where autonomous AI agents manage real-world physical businesses (cafes, retail stores) with minimal human oversight. Andon Labs AI cafe in Stockholm, ordering errors, ethical concerns.
 - [[concepts/audio-tokenizer-comparison]] — 비교/Comparison of 5 neural audio tokenizers: SoundStream, EnCodec, DAC, SpeechTokenizer, Mimi. RVQ-based, differing in codec quality vs. speech LLM readiness, semantic/acoustic separation, token rate, and domain.
 - [[concepts/bitter-lesson-agent-harnesses]] — モデル能力のスケール向上に伴い、ハーネスの役割は論理実装からモデル行動のオーケストレーションへ移行する
