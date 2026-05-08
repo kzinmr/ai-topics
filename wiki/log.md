@@ -1,3 +1,11 @@
+## [2026-05-08] lint | Daily wiki health check — 218 broken links, 513 non-taxonomy tags, 2 duplicate index entries, 518 orphan pages
+
+**Critical**: 218 unique broken wikilinks (pages referenced but don't exist); 513 tags not in SCHEMA.md taxonomy; index header claims 5,286 pages but only 1,759 files exist on disk; 2 duplicate index entries for armin-ronacher and mitchell-hashimoto-ghostty.
+
+**Warning**: 124 pages exceed 200-line limit (top: dspy-rlm at 651 lines, agentic-search at 545); 518 orphan pages with no inbound wikilinks; 30 pages missing type field; 801 pages missing sources field; 28 composite kebab tags.
+
+---
+
 ## [2026-05-08] ingest + create | interpretability & activation-steering — Thariq Shihipar article + 2 concept pages
 
 **Action**: kzinmrからのリクエストにより、Thariq Shihiparの「Should Developers Care about Interpretability?」記事をwikiに取り込み、interpretability + activation-steeringの2つの新コンセプトページを作成。blog/のperformance-controllability tradeoff記事との相互リンクも追加。
