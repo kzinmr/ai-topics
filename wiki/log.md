@@ -1,4 +1,11 @@
-## [2026-05-08] Blog Post: モデルの性能と制御性のトレードオフ
+## [2026-05-08] Blog Post v2: Joshua Kimの古典的MLアナロジーを中心に据えた改訂版
+
+**Action**: ユーザーフィードバックに基づき、Joshua KimのLinkedIn投稿（「LLMの潜在推論は古典的MLでの解釈可能性vs性能トレードオフの再来」）をブログ記事の中心的フレーミングに据えて全面改訂。
+
+**New pages created (1)**:
+- `raw/articles/2026-05-08_hermes_ai-performance-controllability-tradeoff-v2.md` — Joshua Kimの「gradient boosting vs 決定木 → SHAP」アナロジーを核に、LLMの制御不能感は新しい問題ではなく古典的パターンの最新章だと論じる構成（~12,200字）
+
+**Key change from v1**: 冒頭にKimの投稿全文を引用し、「これは昔からあるトレードオフだ」という冷めた視点を記事全体の背骨に。セクション1に「古典的MLで起きていたこと」（決定木→ランダムフォレスト→gradient boosting→SHAPの歴史）を新設し、以降の全セクション（構造パラドックス、Bitter Lesson、Scaling Hypothesis、Alignment Paradox、潜在推論vs CoT）を「同じパターンの再演」として接続。
 
 **Action**: ユーザーリクエストによるオリジナルブログ記事の執筆。モデルの認識・処理性能と制御性・説明性の間に存在するトレードオフを、Scaling Hypothesis、Bitter Lesson、Structure Paradox、Alignment Paradox、Latent Reasoning vs CoT、Constitutional AI、MSMなどの観点から活写。
 
