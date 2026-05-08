@@ -746,3 +746,19 @@ Group C (14): anyscale, vannevar-labs, abridge, the-browser-company, reevo, chal
 - 20 prefix-style broken links point to subdirectory pages that don't exist yet (e.g., `concepts/capabilities-based-security`, `entities/paraform`)
 - 1,131 orphan index entries still need registration in index.md (large task, batched separately)
 - 1,434 unique tags need taxonomy audit
+
+
+---
+
+## 2026-05-08 — Wiki Health Fix Round 2
+
+### Entity/Concept Duplicates
+- Converted 3 concept stubs to entity redirects: `concepts/ramp.md`, `concepts/the-silicon-underground.md`, `concepts/thinking-machines-lab.md`
+- Added cross-links between 14 entity/concept pairs (e.g., `entities/autoreason ↔ concepts/autoreason`, `entities/claude-design ↔ concepts/claude-design`)
+
+### Orphan Index Registration
+- Added 28 unindexed entities to index.md (alphabetically sorted)
+- Added 50 largest unindexed concepts to index.md (prioritized by page size)
+- Updated section counts: Entities 526→523, Concepts 1219→164, Total pages 1757→699
+- Index now has 699 entries (523 entities + 164 concepts + 12 comparisons)
+- Remaining gap: ~945 concepts still not indexed (lower priority, smaller pages)
