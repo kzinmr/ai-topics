@@ -124,6 +124,8 @@
       <outline type="rss" text="Maxime Labonne" title="Maxime Labonne" xmlUrl="https://mlabonne.github.io/blog/index.xml" htmlUrl="https://mlabonne.github.io/blog/" />
       <outline type="rss" text="johnowhitaker.dev" title="johnowhitaker.dev" xmlUrl="https://johnowhitaker.dev/index.xml" htmlUrl="https://johnowhitaker.dev" />
       <outline type="rss" text="LangChain Blog" title="LangChain Blog" xmlUrl="https://www.langchain.com/blog/rss.xml" htmlUrl="https://www.langchain.com/blog" />
+      <outline type="rss" text="OpenAI Developers Blog" title="OpenAI Developers Blog" xmlUrl="https://developers.openai.com/rss.xml" htmlUrl="https://developers.openai.com/blog" />
+      <outline type="rss" text="Sierra Blog" title="Sierra Blog" xmlUrl="https://sierra.ai/rss.xml" htmlUrl="https://sierra.ai/blog" />
     </outline>
     <outline type="rss" text="hyperbola :: blog" title="hyperbola :: blog" xmlUrl="https://hyperbo.la/w/feed.xml" htmlUrl="https://hyperbo.la/" />
     <outline type="rss" text="LMSYS Org Blog" title="LMSYS Org Blog" xmlUrl="https://www.lmsys.org/blog/feed.xml" htmlUrl="https://www.lmsys.org/blog/" />
