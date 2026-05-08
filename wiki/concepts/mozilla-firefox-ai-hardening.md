@@ -86,6 +86,7 @@ The distinction suggests AI is currently more reliable as an **analysis tool** t
 
 ## Related
 
+- [[concepts/ai-vulnerability-detection-at-scale]] — General concept: LLM-driven vulnerability detection at industrial scale
 - [[concepts/claude-mythos-preview]] — The model that enabled this hardening effort
 - [[concepts/ai-coding-reliability]] — Contrast: AI generation vs AI analysis reliability
 - [[concepts/harness-engineering/agentic-engineering]] — The methodology behind the success

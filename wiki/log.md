@@ -1,3 +1,22 @@
+## [2026-05-08] blog-wiki-ingest | Mozilla/Claude Mythosセキュリティ + xAI/Anthropic取引 + トレーニング水平線分析
+
+2026-05-07のブログスキャン（18件中3件take、3件reference、12件skip）。
+
+**新規作成 (1 page):**
+- `concepts/ai-vulnerability-detection-at-scale.md` — LLMを使った産業規模でのセキュリティ脆弱性発見の一般概念。Mozilla FirefoxがClaude Mythosで月423件のバグ修正（14倍増）。「AI slop」から高精度バグレポートへの転換を文書化。
+
+**更新 (2 pages):**
+- `entities/simon-willison.md` — 「xAI/Anthropicデータセンター取引分析」セクション追加。Colossus 1リースの環境問題、Elon Muskの「計算資源没収」条項、Grok 4.1 Fast廃止など。Referencesに3件追加。updated: 2026-05-06→2026-05-08。
+- `entities/seangoedecke-com.md` — 「Why Longer-Horizon Training Hasn't Slowed AI Progress」セクション追加。FLOP効率改善（GPT-4 FP16バグ理論）、人間の知能判断の不完全性、知能≠能力（Constellation Theory）の3部分析。Referencesに1件追加。updated: 2026-04-24→2026-05-08。
+
+**Reference処理 (3件):**
+- blog-2: GitHub Repo Stats → simon-willison Referencesに追加
+- blog-8: OpenAI/Broadcom 10GWチップ → gary-marcusエンティティ（軽微、別機会に）
+- unsaved-llm-gemini: llm-gemini 0.31 → マイナーリリース、llm conceptページ機会
+
+**既存発見**: `concepts/mozilla-firefox-ai-hardening.md`（96行）が同じソースから既に作成済み。新 `ai-vulnerability-detection-at-scale` はより一般的な概念ページとして補完的役割。相互wikilink済み。
+
+**Index**: +1 entry（ai-vulnerability-detection-at-scale） | **Page count**: 5271 → 5272
 ## [2026-05-08] newsletter-wiki-ingest | CAISI連邦AI事前審査conceptページ作成
 
 Superintel+ 5/6号からWSJ記事「Google, Microsoft and xAI Agree to Share Early AI Models With U.S.」を処理。

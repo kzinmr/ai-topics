@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-08
 type: entity
 ---
 
@@ -96,6 +96,21 @@ Goedecke argues that code review is not just a technical practice but a **leader
 - Balance the cost of additional review rounds against the risk of merging
 
 This connects to his broader thesis that **soft skills are the differentiator** in senior engineering roles — not technical prowess, which is table stakes.
+
+### Why Longer-Horizon Training Hasn't Slowed AI Progress (May 2026)
+
+Goedecke responded to Dwarkesh Patel's question — why hasn't AI progress slowed down despite longer training horizons requiring more FLOPs per reward signal? — with a nuanced three-part analysis:
+
+**1. FLOP Efficiency Gains (The "Boneheaded Mistakes" Theory)**:
+Training efficiency is determined not by genius ideas but by **eliminating boneheaded mistakes**. Goedecke cites the **GPT-4 FP16 summation bug**: using FP16 when summing many small values completely corrupts results if the sum is large. Fixing bugs like this plausibly buys **more efficiency than any inherent slowdown from longer training**. Frontier labs are still learning to use their existing FLOPs orders of magnitude more efficiently.
+
+**2. Human Intelligence Judgment Is Inherently Flawed**:
+The jump from GPT-3 to GPT-4 seemed huge because GPT-3 was dumber than almost all humans. But frontier models are now in the **realm of ambiguity**: it's hard to tell if they're smarter than you because when they are, **you're the one making mistakes**. Rate-of-growth of "raw intelligence" may have genuinely slowed — we wouldn't necessarily know.
+
+**3. Intelligence ≠ Capability (The Constellation Theory)**:
+Many traits other than raw intelligence determine model capabilities: **working memory, tool familiarity, context window attention, persistence, personality**. The jump to "agentic" models in October 2025 might have come from any of these, not just intelligence. Goedecke cites Apple's "The Illusion of Thinking" paper: models failed Tower of Hanoi not from lack of intelligence but lack of **persistence** — willingness to power through hundreds of steps.
+
+**Key Insight**: AI development is dominated by "lightning strikes" — silly bugs that make training 100× worse, clever ideas that make models 100× more useful, and spiky capabilities. A general theory like "RL takes more FLOPs-per-reward as tasks get longer" sounds good but is overwhelmed by implementation reality.
 
 ## Key Quotes
 
@@ -207,3 +222,4 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 - seangoedecke.com--you-cant-design-software-you-dont-work-on--1c498a63
 
 - seangoedecke-anti-ai-conservative-2026-04-18
+- seangoedecke.com--why-hasnt-longer-horizon-training-slowed-ai-progress--6cc7ecad
