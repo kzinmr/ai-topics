@@ -129,6 +129,7 @@ paths: ["src/api/**/*.ts"]
 Claude Perfect Memoryは、**「エージェントのセッション間記憶」の重要性を広く認識させるきっかけ**となった。8,194件のブックマークは、ソロファウンダー・AIエンジニアにとって「コンテキストエンジニアリング」がコアスキルへ成長していることを示す。
 
 ## Related Concepts
+- [[concepts/claude-perfect-memory]]
 
 - [Solo Founder Stack](solo-founder-stack.md) — コンテキストエンジニアリングはソロfounderの核心スキル
 - [CLAUDE.md](claude-md-pattern.md) — 構造化記憶ファイルパターン

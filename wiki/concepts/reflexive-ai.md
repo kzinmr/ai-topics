@@ -51,6 +51,7 @@ Reflexive AI connects to:
 - [[ai-organization]] — represents a shift from hierarchical to intelligence-driven orgs
 
 ## Related
+- [[entities/reflexive-ai]]
 
 - [[concepts/experience-is-a-tax]]
 - [[concepts/solo-founder-stack]]

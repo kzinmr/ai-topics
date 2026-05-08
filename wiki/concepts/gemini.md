@@ -106,6 +106,7 @@ Google introduced tiered AI plans with cloud storage integration, allowing users
 - Technical deep dive on TPU architecture improvements for multimodal workloads
 
 ## Related Models
+- [[entities/gemini]]
 
 - **Gemini 3.1 Flash**: Base multimodal model
 - **Lyria 3**: Google's music/song generation model

@@ -56,3 +56,7 @@ These are judged by **fresh agents with no shared context** via blind **Borda co
 - [ ] Track NousResearch paper publication and benchmark results
 - [ ] Compare with other self-refinement frameworks (Reflexion, Self-Correction)
 - [ ] Document Borda count implementation details for agent voting
+
+## See Also
+
+- [[entities/autoreason]]

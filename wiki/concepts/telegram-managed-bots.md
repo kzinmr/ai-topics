@@ -56,3 +56,7 @@ The manager bot acts as an orchestrator layer, receiving user intent through its
 - [ ] Track adoption metrics and third-party manager bot ecosystems
 - [ ] Compare with other no-code agent platforms (Anthropic Managed Agents, etc.)
 - [ ] Document security and abuse prevention mechanisms
+
+## See Also
+
+- [[entities/telegram-managed-bots]]

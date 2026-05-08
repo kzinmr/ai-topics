@@ -69,3 +69,7 @@ Gemini-powered image generation (NB2) competes directly with OpenAI's GPT Image 
 - 2033543094373859488_turning-geminis-embedding-api-into-a-universal-mul
 
 - gemini-deep-research-agent
+
+## See Also
+
+- [[concepts/gemini]]

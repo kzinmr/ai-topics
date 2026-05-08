@@ -75,6 +75,7 @@ spicyneuronの検証（2026年4月）:
 Mac Studio Local AIは、**「クラウド依存からの脱却」**と**「データプライバシーの確保」**を両立する実用的なアプローチ。512GB unified memoryは、コンシューマハードウェアでフロントティアLLMをローカルで動かすための**唯一の実用的な選択肢**であり、AIパワード開発者の重要なインフラストラクチャ。
 
 ## Related Concepts
+- [[concepts/mac-studio-local-ai]]
 
 - [[local-llm]] — ローカルLLMの概要
 - [[llama-cpp]] — GGUF推論エンジン

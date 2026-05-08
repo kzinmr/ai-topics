@@ -79,6 +79,7 @@ In the same review cycle, Codex (powered by GPT-5.5) exhibited a "baked potato" 
 GPT-5.5's agentic mode shows **1000x token consumption** compared to traditional chat interactions. A single 6-hour autonomous task can consume as many tokens as thousands of conversational turns. This economic model is central to [[concepts/agent-economics]].
 
 ## Related Pages
+- [[entities/gpt-5.5]]
 
 - [[concepts/gpt-models]] — The full GPT model family series
 - [[entities/openai]] — OpenAI entity page

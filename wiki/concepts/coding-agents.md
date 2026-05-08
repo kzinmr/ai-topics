@@ -113,3 +113,7 @@ Codex搭載の共有エージェント。Business/Enterpriseプラン向け。Sl
 - [simonw-agentic-engineering-patterns-guide](simonw-agentic-engineering-patterns-guide.md)
 - [simonwillison.net--guides-agentic-engineering-patterns-adding-a-new-content-typ--67e45614](simonwillison.net--guides-agentic-engineering-patterns-adding-a-new-content-typ--67e45614.md)
 - [troyhunt-agentic-hibp-2026-04-17](troyhunt-agentic-hibp-2026-04-17.md)
+
+## See Also
+
+- [[entities/coding-agents]]

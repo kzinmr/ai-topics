@@ -134,6 +134,7 @@ http://127.0.0.1:18789/#token=<your-gateway-token>
 | **Multi-Agent Chatbot** | 1 hr | Multiple agents coordination |
 
 ## Related
+- [[concepts/openclaw]]
 - [[entities/telegram-managed-bots]]
 
 - [[entities/nvidia-nemoclaw]] — NemoClaw secure wrapper for OpenClaw

@@ -1,24 +1,12 @@
 ---
-title: "Thinking Machines Lab"
+title: "Thinking Machines Lab (redirect)"
 type: concept
-aliases:
-  - thinking-machines-lab
+status: redirect
+redirect: entities/thinking-machines-lab
 created: 2026-04-25
-updated: 2026-04-25
-tags:
-  - concept
-status: stub
-
+updated: 2026-05-08
 ---
 
 # Thinking Machines Lab
 
-> **TODO**: Enrich this page.
-
-## Overview
-
-Stub page for Thinking Machines Lab.
-
-## Related Pages
-
-- [[concepts/_index]]
+> **Redirect**: This page has been merged into [[entities/thinking-machines-lab]].

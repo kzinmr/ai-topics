@@ -44,6 +44,7 @@ Manager Bot
 | **White-label bots** | 企業ブランドごとにbotをカスタマイズして配布 |
 
 ## Related Features
+- [[concepts/telegram-managed-bots]]
 
 Managed BotsはTelegram Bot platformの他の機能と組み合わせて使用される:
 

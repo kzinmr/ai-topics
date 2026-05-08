@@ -1,24 +1,12 @@
 ---
-title: "The Silicon Underground"
+title: "The Silicon Underground (redirect)"
 type: concept
-aliases:
-  - the-silicon-underground
+status: redirect
+redirect: entities/the-silicon-underground
 created: 2026-04-25
-updated: 2026-04-25
-tags:
-  - concept
-status: stub
-
+updated: 2026-05-08
 ---
 
 # The Silicon Underground
 
-> **TODO**: Enrich this page.
-
-## Overview
-
-Stub page for The Silicon Underground.
-
-## Related Pages
-
-- [[concepts/_index]]
+> **Redirect**: This page has been merged into [[entities/the-silicon-underground|Dave Farquhar (The Silicon Underground)]].

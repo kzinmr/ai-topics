@@ -68,6 +68,7 @@ Claude Design's distinctive advantage is the seamless handoff to Claude Code for
 | Pricing | Included in Claude plans | Add-on | Subscription | Subscription |
 
 ## Related
+- [[entities/claude-design]]
 
 - [[entities/anthropic]] — Parent company; Big Swing strategy
 - [[concepts/claude-opus-4-7]] — Vision model powering Claude Design

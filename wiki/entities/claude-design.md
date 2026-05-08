@@ -71,6 +71,7 @@ Canva is an early integration partner. [Melanie Perkins](https://www.canva.com) 
 Claude Design is powered by Claude Opus 4.7's vision model, which supports images up to 2,576 pixels on the long edge (~3.75 megapixels) — more than 3× prior models. This high-resolution vision capability is critical for analyzing design files, screenshots, and technical diagrams with precision.
 
 ## Related
+- [[concepts/claude-design]]
 
 - [[concepts/claude-opus-4-7]] — Vision model powering Claude Design
 - [[entities/claude-code]] — Handoff integration for design-to-code

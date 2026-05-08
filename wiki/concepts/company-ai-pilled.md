@@ -60,6 +60,7 @@ There's a difference between "using AI" and being AI-pilled. One uses a chatbot 
 4. **Cultural shift** — "using AI well is a skill that needs to be carefully learned" (Tobi Lütke)
 
 ## Related Entities
+- [[entities/company-ai-pilled]]
 
 - **Khe Hy** (Khemaridh Hy) — Former Wall Street analyst, founder of Rad Reads, now running Latour AI consultancy
 - **Tobi Lütke** — Shopify CEO, author of the viral "Reflexive AI" internal memo

@@ -47,6 +47,7 @@ The solo founder stack emerges from the intersection of:
 - [[concepts/managed-agents]] (Telegram, Claude) lowering the barrier to entry
 
 ## Related
+- [[entities/solo-founder-stack]]
 
 - [[vibe-ceo]]
 - [[concepts/context-engineering]]

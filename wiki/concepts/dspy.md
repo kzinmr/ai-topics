@@ -126,6 +126,7 @@ DSPy's declarative approach aligns with agentic engineering principles:
 - [DSPy Documentation](https://dspy.ai/)
 
 ## Related Pages
+- [[entities/dspy]]
 
 - [[concepts/dspy-modules]] — DSPy's composable building blocks connecting Signatures to execution
 - [[concepts/dspy-architecture]] — Signatures, Modules, Teleprompters overview

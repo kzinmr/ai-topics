@@ -106,6 +106,7 @@ Serial founders earn **more than twice the sales per shop** vs first-time founde
 See [[entities/shopify|Shopify entity page]] for full breakdown.
 
 ## Related Concepts
+- [[concepts/solo-founder-stack]]
 
 - [[claude-perfect-memory]] — コンテキストエンジニアリングの核心
 - [[company-ai-pilled]] — 組織のAI駆動化

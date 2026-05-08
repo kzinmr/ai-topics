@@ -82,6 +82,7 @@ Mixture-of-Experts models keep all weights in memory but activate only a subset 
 - What's the energy efficiency comparison vs cloud GPU inference per token?
 
 ## Related Concepts
+- [[entities/mac-studio-local-ai]]
 - [[concepts/nvidia-egpu-macos]]
 - [[concepts/dflash-ggml]]
 
