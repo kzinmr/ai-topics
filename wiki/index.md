@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 705 | Full entries: 705 | Stubs: 0 |
+> Last updated: 2026-05-08 | Total pages: 721 | Full entries: 721 | Stubs: 0 |
 
-## Entities (524 pages)
+## Entities (525 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/agreement-bug]] — Agreement is a Bug
@@ -345,6 +345,7 @@
 - [[entities/sankalp-sinha]] — **Sankalp Sinha**, known online as **dejavucoder** (@dejavucoder), is an **AI engineer** and applied LLM researcher based in India. He focuses on AI-assisted coding, agentic workflows, LLM evaluati...
 - [[entities/sara-hooker]] — Researcher at Google DeepMind. Author of **"The Hardware Lottery"** — foundational framework on how hardware availability determines AI research direction. Advocate for cross-disciplinary hardware/software/ML collaboration.
 - [[entities/scott-wu]] — CEO and co-founder of **Cognition AI**, the company behind **Devin** — the world's first autonomous AI software engineer. Former competitive programming champion (3× IOI gold medals, 1st place in 2...
+- [[entities/scott-alexander]] — Scott Alexander (Scott Alexander Siskind) — Psychiatrist and blogger. Slate Star Codex / Astral Codex Ten. Author of "Meditations On Moloch" (2014), popularizing the concept of multipolar traps. Central figure in rationalist community and AI safety discourse.
 - [[entities/seangoedecke-com]] — **URL:** https://www.seangoedecke.com
 - [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. 6 specialized tools for code analysis/search/retrieval from any public git repo. Previously indexed 75B+ lines of code. Built by [[entities/ben-boyter]]. Free beta, no API key needed.
 - [[entities/sequoia-capital]] — Sequoia Capital — Leading VC firm. Published the Service-as-Software thesis (2026) via partner Julien Bek. Backs AI-native service companies like Rillet, Magentic, Harvey.
@@ -540,7 +541,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (168 pages)
+## Concepts (185 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -555,6 +556,7 @@
 - [[concepts/ai-memory-systems]] — AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較
 - [[concepts/ai-privacy-tools]] — AI Privacy Tools
 - [[concepts/ai-subprime]] — AI Subprime Crisis
+- [[concepts/aider-polyglot]] — Aider Polyglot — 6言語対応コーディングベンチマーク。Exercismの225問をC++/Go/Java/JS/Python/Rustでテスト。GPT-5が88%でリード。
 - [[concepts/altman-three-observations]] — Altman's Three Observations: 対数スケーリング（intelligence ≈ log(resources)）、超デフレコスト（10x/年）、超指数関数的価値の3つの経済観察枠組み。GPT-4→GPT-4oで150xのコスト低下、2035年ビジョン、AIエージェント経済学。
 - [[concepts/ambient-agency]] — Ambient Agency（環境的エージェンシー）: エージェンシーがTuring完全性と同様に、複雑なシステムから不可避的に自然発生するというGwernの洞察。明示的な設計・選択なしに収斂する「あまりに有用な能力」。Tool AI幻想への根本的異議。
 - [[concepts/anthropic-infrastructure-postmortems]] — Anthropicの2つの大規模品質低下ポストモーテム（2025年8-9月: コンテキストウィンドウ誤ルーティング・出力破損・XLA:TPU誤コンパイル / 2026年3-4月: 推論努力誤設定・推論履歴消失バグ・冗長性削減プロンプト）。検出の遅れ・社内評価限界・プライバシー制約の共通パターン。
@@ -576,17 +578,22 @@
 - [[concepts/knowledge-shields]] — Knowledge Shields and Systems Understanding
 - [[concepts/korean-ai]] — Korean AI Ecosystem
 - [[concepts/learning-llms-in-2025]] — Learning LLMs in 2025 (Yoav Goldberg)
+- [[concepts/livecodebench]] — LiveCodeBench — LeetCode/AtCoder/CodeForcesから定期収集する汚染のないコーディングeval。コード生成・自己修復・実行予測の4シナリオ。ICLR 2025 Poster。
 - [[concepts/llm-course-roadmap]] — LLM Course Roadmap (Maxime Labonne)
 - [[concepts/llm-memory-architecture]] — LLM Memory Architecture
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
 - [[concepts/local-first-software]] — Local-First Software
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
+- [[concepts/mmmu]] — MMMU — 11.5Kのマルチモーダル質問。大学試験・教科書から収集。6分野30科目183サブフィールド。30種類以上の画像タイプ。GPT-4V 56%、Gemini Ultra 59%。CVPR 2024 Oral。
+- [[concepts/mmlu-pro]] — MMLU Pro — MMLUの改良版。10択MC、12K+問、14ドメイン。43%がオリジナルMMLUにない新規問題。LLM支援フィルタリング。16-33%の精度低下。NeurIPS Spotlight。
 - [[concepts/model-distillation]] — Model Distillation
 - [[concepts/model-quantization]] — Model Quantization
 - [[concepts/object-storage-queue]] — Object Storage Queue: S3のCASを利用した分散キュー実装パターン。Group Commit、Stateless Broker、HeartbeatによるJob Recovery。ゼロディスクアーキテクチャの応用。Absurd（PG Queue）との比較を含む。 — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/open-source-ai-destruction]] — Open Source AI Destruction
 - [[concepts/openclaw-architecture]] — OpenClawのアーキテクチャ詳細。Gateway-firstなassistant control planeの全容：長寿命Gateway、typed WebSocket protocol、埋め込みagent runtime、二層セッション永続化、sandbox/tool-policy/elevatedの3軸分離、ノードcapability surface、キューイング、サブエージェント、4層プラグインシステム、索引注入スキル。単一trust boundaryモデル。
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information（予測的V-情報）：観測者の計算制約を考慮したShannon情報理論の変分拡張。DPI違反、高次元でのPAC推定保証、構造学習・公平表現学習への応用（Xu et al., ICLR 2020）。
+- [[concepts/ifeval]] — IFEval — 指示追従評価。25種の検証可能な指示タイプ、~500プロンプト。決定論的評価。Qwen3.5-27Bが95.0%でリード。上位モデルで飽和傾向。
+- [[concepts/hle]] — Humanity's Last Exam (HLE) — 人類最後の試験。100以上の分野から2,500問。$500Kの賞金プール。厳格なフィルタリングパイプライン。3%→65%へのスコア進化。Nature掲載。
 - [[concepts/information-theory-and-agent-communication]] — Shannon (1948) の通信の数学的理論をAIエージェント間コミュニケーションの観点から再解釈。V-Information (Xu et al., 2020) との統合によるエージェント通信3層モデル。ハーネス効果の情報理論的基礎、コンテキストウィンドウのShannon容量アナロジー。
 - [[concepts/infrastructure-noise-agent-evals]] — エージェント型コーディング評価におけるインフラノイズの定量分析。Terminal-Bench 2.0でリソース1x→uncapped間で6pp差（p<0.01）。3pp未満のリーダーボード差は懐疑的に。時刻・並列度・帯域幅も隠れた交絡因子。
 - [[concepts/interpretability]] — Interpretability（機械的解釈可能性）: LLM内部の特徴と回路を可視化する研究分野。AnthropicのScaling Monosemanticity、Golden Gate Claude、Entropix。RLHF代替としての推論時steering、性能と制御性のトレードオフに対応。
@@ -608,7 +615,9 @@
 - [[concepts/deepseek-r1]] — DeepSeek-R1: Pure RL（GRPO）で推論能力の創発を初の大規模実証。Nature掲載。R1-Zero（純粋RL）/ R1（4段階パイプライン）/ 蒸留モデル。自己検証・アハモーメント。AIME 79.8%, MATH-500 97.3%。$294Kでo1級性能。
 - [[concepts/deepseek-v4]] — DeepSeek-V4: 1.6T Pro/284B Flash、1MコンテキストMoE。Hybrid Attention（CSA+HCA+SWA）、mHC、Muon Optimizer、MegaMoE、TileLang DSL、On-Policy Distillation、FP4 QAT。V3.2比FLOPs 3.7-10x削減、KVキャッシュ10-14x削減。Codeforces 3206（人間23位相当）。
 - [[concepts/defenseclaw]] — Cisco's open-source agentic governance layer for OpenClaw. Pre-run scanning (5 scanners), runtime threat detection, non-advisory enforcement. Built on NVIDIA OpenShell. Announced RSAC 2026.
+- [[concepts/good-regulator-theorem]] — Good Regulator Theorem (Gooder Regulator): Conant & Ashby (1970) の「あらゆる良いレギュレータはシステムのモデルでなければならない」を John Wentworth (2021) が情報ボトルネック制約を加えて修正した選択定理。AIエージェントの世界モデル・評価設計・ハーネス効果の理論的基盤。tailcalled の [[concepts/causal-backbone-conjecture]] が批判的応答。
 - [[concepts/google-project-mariner-shutdown]] — Google's shutdown of Project Mariner browser agent in May 2026 due to poor performance and high costs.
+- [[concepts/gpqa]] — GPQA — 大学院レベルのGoogle-proof Q&A。生物学・物理学・化学の448問（Diamond set 198問）。PhD専門家65-74%、非専門家34%。フロンティアモデルは~94%で飽和しつつある。
 - [[concepts/grpo]] — Group Relative Policy Optimization: DeepSeek-R1で導入されたRLアルゴリズム。PPOのクリティックモデルを不要にし、大規模モデルのRL訓練の計算ボトルネックを解消。グループ内相対比較でアドバンテージ推定。
 - [[concepts/pgr]] — pgr: Entire製のRust MCPエージェント指向コード検索ツール。definitions-first・パス認識ランキングでfirst-query MRR 0.32→0.41、Hit@1 26%→34%。検索速度よりもランキング品質がエージェント性能を改善することを実証。
 - [[concepts/poor-mans-continuous-learning]] — Poor Man's Continuous Learning: LLMエージェントがモデル重みを更新せずに、成功した出力・ユーザーの修正・ドメイン知識を外部ナレッジベースに蓄積して改善する設計パターン。Text-to-SQL文脈でAshpreet Bediが提唱。BQ Golden Queries、dbt Semantic Layer、LPE-SQLと同種のアプローチ。
@@ -626,6 +635,7 @@
 - [[concepts/mozilla-firefox-ai-hardening]] — Mozilla used Claude Mythos Preview to find 423 security bugs in Firefox (April 2026)
 - [[concepts/mit-encompass]] — MIT CSAIL framework for AI agent search with automatic backtracking and parallel cloning, 15-40% accuracy boost.
 - [[concepts/moe-training-noumena-methodology]] — Noumena Network's 12-post MoE training research program. Speedrun loop, eval-gated autoresearch, routing collapse ≠ quality collapse, per-expert LR tuning, RDEP.
+- [[concepts/moloch-multipolar-trap]] — Scott Alexander's concept: competitive dynamics that force all agents to sacrifice shared values, resulting in outcomes everyone hates but no one can escape. 14 real-world examples (prisoner's dilemma, capitalism, arms races, cancer). Central to AI existential risk discourse — technology erodes the four restraining factors (excess resources, physical limits, utility maximization, coordination), making superintelligence the ultimate multipolar trap.
 - [[concepts/programmatic-tool-calling]] — Programmatic Tool Calling — LLM Writing Code that Calls Tools
 - [[concepts/pydantic-ai-harness]] — pydantic-ai-harness — Official Capability Library for Pydantic AI
 - [[concepts/pytorch-fsdp]] — PyTorch FSDP (Fully Sharded Data Parallel)
@@ -654,6 +664,7 @@
 - [[concepts/agent-iam]]
 - [[concepts/agent-patterns]] — AIエージェントの一般的な設計パターンと実装プラクティス
 - [[concepts/agent-sandbox-patterns]] — Browser Useのエージェントサンドボクシングアーキテクチャ。ツール分離パターンとエージェント分離パターン
+- [[concepts/arc-agi-1]] — ARC-AGI-1 — François Cholletによるfluid intelligenceテスト。グリッドベースの抽象推論。o3が87.5%で初の人間レベル突破。2024年ARC Prize。
 - [[concepts/ask-user-question-pattern]] — エージェントがユーザーに確認を求めるためのハーネスパターン
 - [[concepts/ai-patterns-for-glam|AI Design Patterns for Information Professionals]] — Practical "boring AI" design patterns for GLAM and information professionals. Covers discovery, structured extraction, evaluation, and infrastructure. WIP book by [[entities/daniel-van-strien]].
 - [[concepts/ai-red-teaming-careers]] — AIレッドチーミング/プロンプトインジェクション関連キャリアの包括的ガイド。職種（AI Red Teamer $130K-250K、Adversarial ML Researcher、AI PenTester）、雇用企業（OpenAI/Anthropic/DeepMind/Meta/HiddenLayer）、必須スキル、ツール（PyRIT/Garak/Promptfoo）、キャリアパス。
@@ -661,7 +672,9 @@
 - [[concepts/ai-retail-experiments]] — Experiments where autonomous AI agents manage real-world physical businesses (cafes, retail stores) with minimal human oversight. Andon Labs AI cafe in Stockholm, ordering errors, ethical concerns.
 - [[concepts/ai-vulnerability-detection-at-scale]] — Using LLMs to discover and triage security vulnerabilities at industrial scale. Mozilla Firefox case study: 423 bugs/month with Claude Mythos (14× increase). From "AI slop" to high-signal bug reports.
 - [[concepts/audio-tokenizer-comparison]] — 비교/Comparison of 5 neural audio tokenizers: SoundStream, EnCodec, DAC, SpeechTokenizer, Mimi. RVQ-based, differing in codec quality vs. speech LLM readiness, semantic/acoustic separation, token rate, and domain.
+- [[concepts/bfcl-v3]] — BFCL V3 — Berkeley Function Calling Leaderboard V3。マルチターン・マルチステップ関数呼び出し評価。状態ベース検証。GLM 4.5が76.7%でリード。
 - [[concepts/bitter-lesson-agent-harnesses]] — モデル能力のスケール向上に伴い、ハーネスの役割は論理実装からモデル行動のオーケストレーションへ移行する
+- [[concepts/chartqa]] — ChartQA — チャート理解QAベンチマーク。Statista/Pew/OECD等から収集した実チャート。32.7K QAペア。ノイジーなテストデータが問題。
 - [[concepts/china-agentic-coding-sprint]] — China's rapid convergence on SWE-Bench Pro: Kimi K2.6, MiniMax M2.7, Z.ai GLM-5.1 all scoring 56-59 in 12-day window. Open weights, below Western pricing. "China is 6-9 months behind" framing no longer holds.
 - [[concepts/context-providers]] — エージェントとツールの間にあるコンテキスト供給レイヤーの設計パターン
 - [[concepts/contextual-retrieval]] — AnthropicのRAG改善手法。チャンクembedding/BM25インデックス化前にClaudeで文書全体の文脈を自動付加。Contextual Embeddings + Contextual BM25の組み合わせで検索失敗率49%削減、reranking追加で67%削減。Prompt Caching活用で100万ドキュメントトークンあたり$1.02。
@@ -669,6 +682,7 @@
 - [[concepts/entropix]] — xjdr's entropy-based adaptive LLM sampling (3.4K ⭐). Uses entropy/varentropy quadrant to select sampling strategy at inference time. Training-free CoT simulation.
 - [[concepts/claris-filemaker-agentic-coding]] — Claris (Apple) making FileMaker a first-class target for agentic coding tools (Claude Code, Cursor, Codex). Natural language → production scripts, modern web-native UI, independent shipping model. Ryan McCann (CEO).
 - [[concepts/open-weights-licensing-tightening]] — Trend of leading open weights AI model providers tightening license terms in 2026. Meta dropped open weights, Alibaba Qwen API-first, Mistral commercial restrictions, Kimi attribution clause. DeepSeek exception. Contestable markets theory, oligopoly risk.
+- [[concepts/mrcr]] — MRCR — Multi-Round Coreference Resolution。複数needleの長文コンテキストeval。Google DeepMindのLSQフレームワーク発。OpenAIがOSS版を公開。Claude Opus 4.6が8-needle 1Mで93%。
 - [[concepts/normalization-of-deviance-in-ai-coding]] — Risk of gradually trusting AI-generated code without review, coined from Diane Vaughan's Challenger disaster framework. Each successful unreviewed deployment reinforces trust, creating security/quality risk. AI agents lack professional reputation/accountability.
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
@@ -685,8 +699,10 @@
 - [[concepts/typed-rlm]] — λ-RLM (Typed Recursive Reasoning)
 - [[concepts/vibe-coding-vs-agentic-engineering]] — Distinction between vibe coding (natural language → code, no review) vs agentic engineering (professional judgment, security, production quality). Blurring boundary as agents improve. Bottleneck shifts: ~200 lines/day → ~2000 lines/day. Real-world usage as quality signal.
 - [[concepts/constitutional-ai]] — Anthropic's methodology for aligning AI via explicit principles (Constitution). Compared with OpenAI Model Spec by Boaz Barak (Jan 2026). Three poles of alignment: Principles, Policies, Personality.
+- [[concepts/countbenchqa]] — CountBenchQA — 超シンプルなオブジェクトカウンティングベンチマーク。LAION-400Mから手動検証。2-10個の物体。データ品質は最高。
 - [[concepts/data-analysis-agents]] — AIデータ分析エージェントの包括的概念。データ探索→スキーマ理解→クエリ生成→実行→検証→可視化→報告のパイプライン。OpenAI社内データエージェント（GPT-5.2）とCognition DANA/Devinの2大アプローチを比較。DWHセマンティックレイヤー・ゴールデンクエリとの関係性も含む。
 - [[concepts/db9-filesystem-sql]]
+- [[concepts/factorio-learning-environment]] — Factorio Learning Environment (FLE) — Factorioゲームを模したエージェントeval。コード+REPLで操作、ビジョン不要。24のlab-playタスク。NeurIPS 2025。
 - [[concepts/frontier-swe-benchmark]] — FrontierSWE: 超高難度コーディングエージェントベンチマーク（Proximal Labs）。20時間制限、Implementation/Performance/Researchの3カテゴリ17タスク。GPT-5.5+Codexが平均ランク2.35（Dominance 83%）で首位。保守（GPT-5.4）vs攻撃的（Opus 4.6）の行動比較、overconfidence/cheating行動を記録。
 - [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.
 - [[concepts/agent-serverless]] — Serverless deployment pattern for AI agents with built-in SaaS integration, permissions, security, and log persistence tiers. Enterprise monetization via persistent logs and audit trails.
@@ -702,7 +718,9 @@
 - [[concepts/agent-architecture-decomposition]] — Three-layer framework for production AI agents: Open Models (intelligence), Open Runtime (execution environment), Open Harness (orchestration). Covers Agent on bash vs Agent on Python REPL (RLM, Pydantic AI), Micro-VM interpreters (Pydantic Monty), and MCP as universal adapter for heterogeneous agents.
 - [[concepts/agentic-ai-skills]] — Agentic AI Skills Design is the discipline of writing reusable documents that teach AI systems how to approach entire categories of tasks — not what to do in one specific situation, but the process...
 - [[concepts/scaling-hypothesis]] — Gwern Branwen's formalization of the theory that scale alone drives AI capability emergence. Contrasts strong scaling hypothesis (OpenAI) vs weak scaling hypothesis (DeepMind). Covers blessings of scale, emergent agency ("It From Byte"), the pretraining thesis/last bits theory, and the hardware overhang argument.
+- [[concepts/simpleqa]] — SimpleQA — 事実知識のサニティチェック。4,326問の敵対的収集質問。RL学習後の知識喪失検出に重要。SimpleQA Verified（DeepMind 2025）ではトップスコア55.6%。
 - [[concepts/societal-shadow]] — QC (Qiaochu Yuan)が提唱した概念。RLHFがLLMに語らせないための禁止リストが逆説的に社会の影（性的・暴力的・非常識なもの全て）をカタログ化した皮肉な現象。Jungの影、Batailleの侵犯論、Foucaultの権力論、Kristevaの棄却論と接続。技術的対応物としてHH-RLHF, BeaverTails(14カテゴリ), Do-Not-Answer(61 harms), SORRY-Bench(45カテゴリ), HarmBench(510 behaviors), Llama Guard, Aegis, OpenAI Moderation API, Shadow Alignment等20以上のデータセット/システムを網羅。増幅メカニズムとしてカテゴリ分裂加速・Guardrail多層化・訓練/評価循環・プラットフォーム差異・Shadow武器化・Over-Refusal拡大の6軸を記述。
+- [[concepts/vibe-eval]] — Vibe-Eval — Reka AIのパーソナライズドマルチモーダルeval。269の専門家作成プロンプト。>50%のhard問題が全フロンティアモデルで未解決。逆スケーリング現象あり。
 - [[concepts/waluigi-effect]] — Cleo Nardoが提唱したLLMアライメントの根本的限界。望ましい性質Pへの訓練が逆性質¬Pの呼び出しを容易にする現象。Simulator Theory・デリダの脱構築・構造主義的物語論に基づく3つのメカニズム。Waluigiがアトラクター状態である理論。RLHFが問題を悪化させる証拠。Jailbreaking（DAN等）の再概念化。Societal Shadowの技術的メカニズムを提供。
 - [[concepts/workspace-bench]] — Workspace-Bench 1.0: マルチファイル依存関係を評価する大規模エージェントベンチマーク（OpenDataBox）。5職種プロファイル、74ファイル種別、20,476ファイル（最大20GB）、388タスク。Best AI 68.7%（OpenClaw+Opus 4.7）vs Human 80.7%。5段階進化モデル（L0-L4）、Agent-as-a-Judge評価フレームワーク。
 - [[concepts/unbundled-agents]] — Viv Trivedy's architectural pattern: specialist subagents exposed as Tools within a harness, making the harness a configurable box populated per task.

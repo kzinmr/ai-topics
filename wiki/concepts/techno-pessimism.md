@@ -64,3 +64,4 @@ Both techno-optimism and techno-pessimism can be understood through religious an
 - [[entities/eliezer-yudkowsky]] — Central Singularitarian figure
 - [[concepts/technological-singularity]] — The event at stake
 - [[concepts/ai-safety]] — The existential risk dimension
+- [[concepts/moloch-multipolar-trap]] — The coordination failure dynamic that makes techno-pessimism's governance-first argument essential

@@ -1,3 +1,53 @@
+## 2026-05-08 | AI Benchmarks & Evals — 16 individual concept pages created
+
+**Action**: @xeophonの18部構成シリーズの各ベンチマークに対応する個別コンセプトページを16件作成（既存のtau-bench/swe-bench/arc-agi-2を除く）。3つの並列サブエージェントで研究・執筆。
+
+**New concept pages** (16 pages):
+- `concepts/gpqa.md` — GPQA: Graduate-Level Google-Proof Q&A
+- `concepts/livecodebench.md` — LiveCodeBench: contamination-free coding eval
+- `concepts/aider-polyglot.md` — Aider Polyglot: 6-language coding benchmark
+- `concepts/mmlu-pro.md` — MMLU Pro: 10-option MC upgrade
+- `concepts/mmmu.md` — MMMU: Massive Multi-discipline Multimodal Understanding
+- `concepts/mrcr.md` — MRCR: Multi-Round Coreference Resolution (long-context)
+- `concepts/simpleqa.md` — SimpleQA: factual knowledge sanity check
+- `concepts/vibe-eval.md` — Vibe-Eval: Reka AI personalized multimodal eval
+- `concepts/bfcl-v3.md` — BFCL V3: Berkeley Function Calling Leaderboard
+- `concepts/ifeval.md` — IFEval: Instruction-Following Evaluation
+- `concepts/chartqa.md` — ChartQA: chart understanding QA
+- `concepts/hle.md` — Humanity's Last Exam: hardest MMLU-style benchmark
+- `concepts/countbenchqa.md` — CountBenchQA: ultra-simple counting benchmark
+- `concepts/arc-agi-1.md` — ARC-AGI-1: Chollet's fluid intelligence test
+- `concepts/factorio-learning-environment.md` — Factorio LE: game-based agent eval
+
+**Enriched**: `concepts/swe-bench.md` — stub → 203-line comprehensive page with history, variants, contamination concerns
+
+**Total**: 17 pages, ~2,550 lines of research-backed content
+
+## 2026-05-08 | Good Regulator Theorem (Gooder Regulator) ingestion + Causal Backbone enrichment
+
+**New concept page**:
+- [[concepts/good-regulator-theorem]] — Good Regulator Theorem (Gooder Regulator): Conant & Ashby (1970) の原定理から John Wentworth (2021) の情報ボトルネック修正まで。AIエージェントの世界モデル・評価設計・ハーネス効果の理論的基盤
+
+**Enriched concept page**:
+- [[concepts/causal-backbone-conjecture]] — 壊れていたwikilinksを修正 (good-regulator-theorem, agentic-coding, information-bottleneck)。Gooder Regulatorとの対比を深掘り
+
+**Saved raw articles**:
+- `raw/articles/johnswentworth-fixing-good-regulator-theorem-2021.md`
+- `raw/articles/alfred-harwood-good-regulator-explanation-2024.md`
+- `raw/articles/testingthewaters-model-evals-good-regulator-2025.md`
+
+**Key connections**: Gooder Regulator → Causal Backbone → Harness Effect。情報ボトルネックがモデル構築を強制するという Wentworth の洞察は、ハーネス設計の理論的基盤になる。Context window が information bottleneck として機能し、エージェントに内部タスクモデルの構築を強いる。
+## 2026-05-08 18:42 — Meditations On Moloch 取り込み + Scott Alexander エンティティ + 概念ページ横断リンク追加
+
+- **New concept**: [[concepts/moloch-multipolar-trap]] — Scott Alexander の代表的エッセイ「Meditations On Moloch」(2014) から抽出した概念。多極的罠（multipolar traps）とは、競争に参加する全エージェントが共有価値を犠牲にせざるを得ず、全員が嫌う結果に至る協調失敗の力学。14の実例（囚人のジレンマ、資本主義、軍拡競争、がん、教育、科学など）。技術進歩が4つの抑制要因（余剰資源・物理的限界・効用最大化・協調）を侵食し、超知能が究極の多極的罠となる。Scott Alexander の解決策：「Molochを殺す」— 人類の価値のために最適化する友好的超知能を普遍的な庭師として据える。
+- **New entity**: [[entities/scott-alexander]] — Scott Alexander Siskind。精神科医・ブロガー。Slate Star Codex (2013-2020) → Astral Codex Ten (2021-)。合理主義コミュニティの中心人物。AI安全性・整列の言説に多大な影響。
+- **Raw article**: raw/articles/2014-07-30_slatestarcodex-meditations-on-moloch.md
+- **Cross-references added**:
+  - [[concepts/ai-safety]] に関連概念として moloch-multipolar-trap を追加
+  - [[concepts/techno-pessimism]] に関連概念として moloch-multipolar-trap を追加
+- **Index**: entities/scott-alexander, concepts/moloch-multipolar-trap 追加、総数 705→707、Entity 524→525、Concept 168→169
+- **Source**: https://slatestarcodex.com/2014/07/30/meditations-on-moloch/
+
 ## 2026-05-08 18:30 — coalitional agency 概念ページ作成 + Richard Ngo エンティティ強化
 
 - **New concept**: [[concepts/coalitional-agency]] — Richard Ngo の提唱する「スケールフリーな知的エージェンシー理論」。知性は競争と協調を行うサブエージェントの連合体（coalition）。EUM + Active Inference の両方を批判的に統合。2つの形式化パス（トップダウンEUM、ボトムアップActive Inference → 予測市場/オークション/投票）。Minsky の Society of Mind (1986) から GWAS ブリッジ。AIエージェント設計（Unbundled Agents, Agent Harness）の理論的基礎。

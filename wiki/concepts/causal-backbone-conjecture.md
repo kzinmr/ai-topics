@@ -1,7 +1,7 @@
 ---
 title: "The Causal Backbone Conjecture"
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-05-08
 type: concept
 tags:
   - architecture
@@ -66,10 +66,10 @@ Because all agents track the backbone, its components become tightly coupled. Th
 
 ## Relationship to Other Concepts
 
-- ****: Proposes resource constraints as the driving force for agent-like structure emergence, contrasting with task-richness theories
+- **[[concepts/good-regulator-theorem]]** (Original + Gooder): The parent selection theorem this conjecture responds to. The Gooder Regulator claims task diversity + information bottleneck forces model-building; the Causal Backbone argues resource constraints, NOT task diversity, is the real driver.
 - **[[concepts/world-models-science]]**: Argues against exhaustive world modeling in favor of sparse, strategically-relevant modeling
-- ****: Suggests designs should prioritize identifying and tracking high-resource, high-influence nodes
-- ****: Natural filtering mechanism — only backbone-relevant information passes through
+- **[[concepts/agentic-coding]]**: Agentic coding systems implicitly operate on backbone principles — prioritizing high-leverage code modifications over exhaustive codebase understanding
+- **[[concepts/information-bottleneck]]**: The natural filtering mechanism — information bottlenecks (context windows, attention budgets) force the agent to identify backbone-relevant signals
 - **[[concepts/karpathy-loop]]**: The loop implicitly operates on causal backbones — which experiments to run is determined by resource-weighted hypotheses
 
 ## Open Questions

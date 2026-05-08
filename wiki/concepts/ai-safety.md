@@ -122,6 +122,7 @@ The exodus created two camps:
 - [[concepts/ai-evals]] — Evaluation as a safety mechanism
 - [[concepts/harness-engineering]] — Constraining AI behavior through system design
 - [[concepts/privacy-engineering]] — Privacy as a dimension of AI safety
+- [[concepts/moloch-multipolar-trap]] — The coordination problem underlying AI existential risk: why competitive dynamics push toward unsafe outcomes
 
 ## Privacy Engineering for AI Agents (May 2026)
 
