@@ -572,6 +572,7 @@
 - [[concepts/decoder-only-gpt]] — Decoder-Only GPT Architecture
 - [[concepts/deepspeed]] — Microsoft DeepSpeed
 - [[concepts/dspy-rlm]] — DSPy.RLM
+- [[concepts/dspy-tutorial]] — Hands-on DSPy getting started tutorial (Maxime Rivest): Signature → gold set → MIPROv2 optimization in ~50 lines yielding 20% precision improvement
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/gliclass]] — GLiClass
 - [[concepts/harness-engineering]] — Harness Engineering

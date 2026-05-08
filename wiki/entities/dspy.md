@@ -1,7 +1,7 @@
 ---
 title: DSPy
 created: 2026-04-25
-updated: 2026-04-30
+updated: 2026-05-08
 type: entity
 tags:
   - open-source
@@ -10,6 +10,7 @@ tags:
   - nlp
 sources:
   - raw/articles/crawl-2026-04-29-dspy-adoption-gap-khattabs-law.md
+  - raw/articles/2025-06-03_maxime-rivest-dspy-introduction.md
 ---
 
 # DSPy
@@ -68,6 +69,10 @@ Skylar Payne (March 2026) introduced **"Khattab's Law"** — named after DSPy cr
 
 **Production users** include JetBlue, Databricks, Replit, VMware, and Sephora. **Download gap:** DSPy ~4.7M monthly downloads vs LangChain ~222M, indicating significant adoption friction despite technical merit.
 
+## Getting Started / Tutorials
+
+For a practical, hands-on tutorial that takes ~1 hour: [[concepts/dspy-tutorial]] — Maxime Rivest's complete walkthrough covering Signature definition, synthetic gold set creation with SOTA models, MIPROv2 optimization, and evaluation (Flash-lite: 65% → 85% precision).
+
 ## Application Guidelines
 
 **Use DSPy when:**
@@ -86,6 +91,7 @@ Skylar Payne (March 2026) introduced **"Khattab's Law"** — named after DSPy cr
 ## Relationship to Other Wiki Topics
 
 - [[concepts/dspy]] — Core concept page (deep-dive)
+- [[concepts/dspy-tutorial]] — Hands-on getting started tutorial (Maxime Rivest)
 - [[concepts/dspy-architecture]] — Architecture deep-dive
 - [[concepts/dspy-optimization]] — Teleprompters, Assertions, Fine-Tuning
 - [[concepts/dspy-comparisons]] — DSPy vs LangChain, RLMs, GEPA

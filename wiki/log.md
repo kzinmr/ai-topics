@@ -1,3 +1,17 @@
+## 2026-05-08 | DSPy Tutorial 概念ページ作成 + DSPyエンティティ更新
+
+**Action**: Maxime Rivest の X Article「A simple introduction to DSPy」(190K views) を wiki に取り込み。
+
+**New concept page**:
+- [[concepts/dspy-tutorial]] — Hands-on DSPy getting started tutorial: Signature定義 → データ取得 → SOTAモデル (Sonnet 4) でGold Set作成 → MIPROv2でFlash-lite最適化。結果: 65% → 85% (+20% precision)。全工程~50行。
+
+**Updated pages**:
+- [[entities/dspy]] — ソース追加、Getting Started / Tutorials セクション追加、[[concepts/dspy-tutorial]] への相互参照追加
+
+**Raw article**: `raw/articles/2025-06-03_maxime-rivest-dspy-introduction.md`
+
+**Cross-references**: [[concepts/dspy-optimization]], [[concepts/dspy-architecture]], [[entities/omar-khattab]]
+
 ## 2026-05-08 | Bespoke Labs エンティティ + Multi-Turn Tool Use RL 概念ページ作成
 
 **Action**: Bespoke Labs のブログ記事「Improving Multi-Turn Tool Use with Reinforcement Learning」を wiki に取り込み。
