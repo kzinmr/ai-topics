@@ -121,6 +121,7 @@
     <outline text="Company Tech Blogs" title="Company Tech Blogs">
       <!-- RSS-based -->
       <outline type="rss" text="Anyscale Blog" title="Anyscale Blog" xmlUrl="https://www.anyscale.com/rss.xml" htmlUrl="https://www.anyscale.com/blog" />
+      <outline type="rss" text="Arena Blog" title="Arena Blog" xmlUrl="https://arena.ai/blog/feed" htmlUrl="https://arena.ai/blog/" />
       <outline type="rss" text="Augment Code Blog" title="Augment Code Blog" xmlUrl="https://www.augmentcode.com/blog/rss.xml" htmlUrl="https://www.augmentcode.com/blog" />
       <outline type="rss" text="Cognition Blog" title="Cognition Blog" xmlUrl="https://cognition.ai/rss.xml" htmlUrl="https://cognition.ai/blog" />
       <outline type="rss" text="Database Architects" title="Database Architects" xmlUrl="https://databasearchitects.blogspot.com/feeds/posts/default" htmlUrl="https://databasearchitects.blogspot.com/" />
@@ -132,6 +133,7 @@
       <outline type="rss" text="OpenAI Alignment Research" title="OpenAI Alignment Research" xmlUrl="https://alignment.openai.com/rss.xml" htmlUrl="https://alignment.openai.com/" />
       <outline type="rss" text="OpenAI Developers Blog" title="OpenAI Developers Blog" xmlUrl="https://developers.openai.com/rss.xml" htmlUrl="https://developers.openai.com/blog" />
       <outline type="rss" text="OpenAI News" title="OpenAI News" xmlUrl="https://openai.com/news/rss.xml" htmlUrl="https://openai.com/news/engineering/" />
+      <outline type="rss" text="Ramp Engineering Blog" title="Ramp Engineering Blog" xmlUrl="https://builders.ramp.com/feed.xml" htmlUrl="https://builders.ramp.com" />
       <outline type="rss" text="Sierra Blog" title="Sierra Blog" xmlUrl="https://sierra.ai/rss.xml" htmlUrl="https://sierra.ai/blog" />
       <outline type="rss" text="Thinking Machines Lab Blog" title="Thinking Machines Lab Blog" xmlUrl="https://thinkingmachines.ai/index.xml" htmlUrl="https://thinkingmachines.ai/blog/" />
       <outline type="rss" text="Together AI Blog" title="Together AI Blog" xmlUrl="https://www.together.ai/blog/rss.xml" htmlUrl="https://www.together.ai/blog" />
@@ -154,8 +156,8 @@
       <outline type="sitemap" text="Mistral AI Blog" title="Mistral AI Blog" xmlUrl="https://mistral.ai/sitemap.xml" htmlUrl="https://mistral.ai/news/" />
       <outline type="sitemap" text="Parallel Web Systems Blog" title="Parallel Web Systems Blog" xmlUrl="https://parallel.ai/sitemap.xml" htmlUrl="https://parallel.ai/blog" />
       <outline type="sitemap" text="Pinecone Blog" title="Pinecone Blog" xmlUrl="https://www.pinecone.io/sitemap.xml" htmlUrl="https://www.pinecone.io/blog/" />
-      <outline type="sitemap" text="Ramp Blog" title="Ramp Blog" xmlUrl="https://ramp.com/sitemap.xml" htmlUrl="https://ramp.com/blog" />
       <outline type="sitemap" text="Scale AI Blog" title="Scale AI Blog" xmlUrl="https://scale.com/sitemap.xml" htmlUrl="https://scale.com/blog" />
+      <outline type="sitemap" text="The Browser Company Blog" title="The Browser Company Blog" xmlUrl="https://arc.net/sitemap.xml" htmlUrl="https://arc.net/blog" />
       <outline type="sitemap" text="Warp Blog" title="Warp Blog" xmlUrl="https://www.warp.dev/sitemap.xml" htmlUrl="https://www.warp.dev/blog" />
     </outline>
   </body>
