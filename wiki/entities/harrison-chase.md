@@ -87,6 +87,36 @@ Chase published "Agent Observability Needs Feedback to Power Learning" arguing t
 
 Source: [langchain.com/blog/agent-observability-needs-feedback-to-power-learning](https://www.langchain.com/blog/agent-observability-needs-feedback-to-power-learning)
 
+## "How to Think About Agent Frameworks" (April 2025)
+
+Chase authored a landmark 20-minute blog post articulating a comprehensive framework for evaluating agentic systems and their frameworks. Published as a direct rebuttal to OpenAI's "Guide on Building Agents," it became one of the most influential pieces in the agent orchestration space.
+
+### Core Thesis: The Context Problem
+The hard part of building reliable agentic systems is **making sure the LLM has the appropriate context at each step** — both controlling the exact content going into the LLM and running the appropriate steps to generate relevant content. Any framework that obfuscates this control is counterproductive.
+
+### Workflows vs Agents (Spectrum)
+Rather than a binary choice, systems exist on a **spectrum of agenticness**:
+- **Workflows:** LLMs orchestrated through predefined code paths (high predictability)
+- **Agents:** LLMs dynamically directing their own processes (high flexibility)
+- Production systems combine both patterns
+
+### Floor vs. Ceiling Framework
+A meta-framework for evaluating agent frameworks:
+- **Low Floor** → Easy to start (beginner-friendly)
+- **High Floor** → Steep learning curve
+- **Low Ceiling** → Limited capabilities, easy to outgrow
+- **High Ceiling** → Extensive flexibility for advanced use cases
+
+Insight: Most "Agent Abstractions" (OpenAI SDK, CrewAI, early LangChain) are **Low Floor, Low Ceiling**. LangGraph aims to be **Low Floor, High Ceiling**.
+
+### Critique of Agent Abstractions
+Chase argues frameworks like OpenAI Agents SDK hide critical logic behind class abstractions, making it impossible to verify what context reaches the LLM. He explicitly acknowledges original LangChain chains/agents suffered from the same problem — LangGraph was the solution.
+
+### Living Framework Comparison
+Published a [living comparison spreadsheet](https://docs.google.com/spreadsheets/d/1B37VxTBuGLeTSPVWtz7UMsCdtXrqV5hCjWkbHN8tfAo/edit?usp=sharing) covering: Agents SDK, Google ADK, LangChain, CrewAI, LlamaIndex, Agno AI, Mastra, Pydantic AI, AutoGen, Temporal, SmolAgents, DSPy.
+
+Source: [raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md](raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md)
+
 ## LangChain Platform
 
 - **LangChain** (open-source framework) — composable LLM application builder

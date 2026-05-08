@@ -1,3 +1,19 @@
+## [2026-05-08] Wiki ingest — How to Think About Agent Frameworks (Harrison Chase, LangChain)
+
+**Action**: ユーザーリクエストによるLangChainブログ記事のWiki取り込み。
+
+**New pages created (1)**:
+- `concepts/langgraph.md` — LangGraphオーケストレーションフレームワークの独立概念ページ。Floor vs Ceiling評価フレームワーク、Agent Abstractions批判、「Keras for Agents」哲学、HITL/HOTL/Persistence/Streaming/Fault Tolerance機能一覧。既存のdangling wikilink（human-in-the-loop, harness-engineering, entity/langchainからのリンク）を解決。
+
+**Existing pages enriched (3)**:
+- `entities/harrison-chase.md` — "How to Think About Agent Frameworks"セクション追加（Context問題、Workflows vs Agentsスペクトラム、Floor vs Ceiling評価枠組み、Agent Abstractions批判、Living Spreadsheet比較）
+- `comparisons/agent-orchestration-frameworks.md` — LangGraphセクションにLiving Spreadsheet参照とHarrison Chaseのポジショニング記述を追加
+- `entities/langchain.md` — ソース一覧にraw/articleを追加
+
+**Raw articles saved (1)**:
+- `raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md` — 全文（context問題、ワークフローvsエージェント、フロアvsシーリング、抽象化批判、価値提案、将来予測、フレームワーク比較表の全8セクション）
+
+**Index**: concepts 453→454, total pages 5205→5206.
 ## [2026-05-08] Claude Model Family — 包括的概念ページ作成
 
 **Action**: `https://www.anthropic.com/learn/build-with-claude` をソースとして、Claudeモデルファミリーの包括的概念ページを作成。エンリッチメントまで完了。

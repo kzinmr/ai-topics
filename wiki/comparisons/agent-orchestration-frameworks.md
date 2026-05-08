@@ -42,6 +42,8 @@ LangGraph models agent workflows as **directed graphs** where nodes represent ag
 - Cyclic workflows with feedback loops
 - Integration with LangChain's extensive tool ecosystem
 
+Harrison Chase (LangChain CEO) positions LangGraph as an **orchestration framework** (not an agent abstraction), arguing in his April 2025 blog post that most "agent frameworks" are just abstractions hiding critical context from developers. A [living comparison spreadsheet](https://docs.google.com/spreadsheets/d/1B37VxTBuGLeTSPVWtz7UMsCdtXrqV5hCjWkbHN8tfAo/edit?usp=sharing) evaluates LangGraph against 12 competing frameworks across multiple dimensions.
+
 ### CrewAI
 
 **Developer:** CrewAI team
