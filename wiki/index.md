@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 5213 | Full entries: 4664 | Stubs: 545 |
+> Last updated: 2026-05-08 | Total pages: 5253 | Full entries: 4704 | Stubs: 545 |
 
-## Entities (406 pages)
+## Entities (494 pages)
 
 - [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
 - [[entities/hugo-bowne]] — Hugo Bowne-Anderson — Data scientist and AI privacy engineering writer. Co-author of "15 Privacy Questions Every AI Builder is Asking" with Katharine Jarmul.
@@ -462,6 +462,46 @@
 - [[entities/vercel]] — Vercel — Frontend cloud platform (Next.js). Released deepsec open-source security harness using coding agents for vulnerability discovery and remediation (May 2026).
 - [[entities/radixark]] — RadixArk — AI inference infrastructure startup. $100M seed (May 2026), built on SGLang inference + Miles (large-scale RL).
 - [[entities/perplexity]] — Perplexity — AI search platform expanding into vertical products: Professional Finance Computer (35 analyst workflows), NEJM/BMJ premium medical access.
+- [[entities/abridge]] — Abridge — AI for healthcare clinical conversations. Automates medical documentation.
+- [[entities/adept]] — Adept — AI agent company. Founded by Transformer co-inventors. $350M Series B.
+- [[entities/anyscale]] — Anyscale — Ray framework for scalable AI/ML compute. Founded by UC Berkeley RISELab creators.
+- [[entities/applied-intuition]] — Applied Intuition — Physical AI autonomy platform. $15B valuation. Serves 18 of top 20 OEMs and U.S. Army.
+- [[entities/augment]] — Augment Code — AI coding assistant. $227M raised at $977M valuation. CEO Scott Dietzen.
+- [[entities/baseten]] — Baseten — ML model inference platform. $850M valuation. Optimized LLM serving infrastructure.
+- [[entities/bedrock-robotics]] — Bedrock Robotics — Robotics company focused on autonomous systems.
+- [[entities/brain-co]] — Brain Co. — AI for institutions. Founded 2024 by Jared Kushner and Elad Gil.
+- [[entities/cartesia]] — Cartesia — State space models. Creator of Sonic AI voice model. Efficient audio generation.
+- [[entities/chalk]] — Chalk — Real-time feature platform for machine learning. Online feature computation.
+- [[entities/cognition]] — Cognition — Maker of Devin, the first autonomous AI coding agent. Also makes Windsurf IDE.
+- [[entities/cohere]] — Cohere — Enterprise AI platform. Founded by Transformer paper co-author Aidan Gomez. $6.8B valuation.
+- [[entities/decagon]] — Decagon — AI customer support agents. $4.5B valuation. 10M+ customers served.
+- [[entities/elevenlabs]] — ElevenLabs — AI voice and speech synthesis. $11B valuation. $500M+ ARR.
+- [[entities/eventual]] — Eventual — Data and AI platform.
+- [[entities/factory]] — Factory — AI coding agents ("Droids") for enterprise legacy code migrations. $1.5B valuation.
+- [[entities/faire]] — Faire — Wholesale marketplace connecting independent brands with retailers.
+- [[entities/glean]] — Glean — Enterprise AI search and work assistant. Founded by ex-Google search engineers. $600M+ raised.
+- [[entities/harvey]] — Harvey — AI for legal industry. $8B valuation. 100K+ lawyers across 60%+ of AmLaw 100.
+- [[entities/hebbia]] — Hebbia — AI for knowledge work. Product: Matrix. $700M valuation. 30% of top 50 asset managers.
+- [[entities/hex-technologies]] — Hex Technologies — Collaborative data science and AI notebooks platform.
+- [[entities/linear]] — Linear — Project management software known for exceptional design quality. $1.25B valuation.
+- [[entities/mercor]] — Mercor — AI recruiting and hiring platform. $10B valuation. Founded by Brendan Foody (age 22).
+- [[entities/merge]] — Merge — Unified API for integrations. Connect to 200+ platforms through a single API.
+- [[entities/metronome]] — Metronome — Usage-based billing platform. Acquired by Stripe. OpenAI is flagship customer.
+- [[entities/modal-labs]] — Modal Labs — Serverless GPU cloud platform. Founded by Erik Bernhardsson. Python-native containerless execution.
+- [[entities/nominal]] — Nominal — AI and analytics platform.
+- [[entities/nuro]] — Nuro — Autonomous delivery vehicles. Pivoted to Nuro Driver licensing platform in 2024.
+- [[entities/parallel-web-systems]] — Parallel Web Systems — Web infrastructure for AI agents. Founded by ex-Twitter CEO Parag Agrawal. $2B+ valuation.
+- [[entities/reevo]] — Reevo — AI platform.
+- [[entities/rogo]] — Rogo — AI for financial services. $750M valuation. 25K+ users across 150 firms.
+- [[entities/scale-ai]] — Scale AI — Data labeling and AI infrastructure. Founded 2016. Key supplier to major AI labs.
+- [[entities/the-browser-company]] — The Browser Company — Maker of Arc browser, reimagining web browsing with AI integration.
+- [[entities/thinking-machines-lab]] — Thinking Machines Lab — AI research lab founded by ex-OpenAI CTO Mira Murati. Tinker fine-tuning API. $2B seed at $12B valuation.
+- [[entities/together-ai]] — Together AI — Open-source AI cloud platform. Creators of FlashAttention. Decentralized GPU training/inference.
+- [[entities/traversal]] — Traversal — AI incident resolution platform. $53M raised. Backed by Sequoia, Kleiner Perkins.
+- [[entities/vannevar-labs]] — Vannevar Labs — Defense and national security AI. Backed by top-tier defense tech investors.
+- [[entities/vanta]] — Vanta — Security and compliance automation. $300M+ ARR. YC W18.
+- [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
+- [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 ## Concepts (460 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。

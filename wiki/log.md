@@ -1,6 +1,20 @@
-## [2026-05-08] Pliny the Prompter エンティティ + AIレッドチーミングキャリア コンセプトページ作成
+## [2026-05-08] pliny the prompter エンティティ + AIレッドチーミングキャリア コンセプトページ作成
 
 **Action**: pliny.gg と L1B3RT4S リポジトリを調査し、Pliny the Prompter のエンティティページと AIレッドチーミング/プロンプトインジェクション分野のキャリア情報を wiki 化。
+
+## [2026-05-08] ingest | Paraform Talent Density Index — 40 社エンティティ一括追加
+
+Paraform Talent Density Index (https://www.paraform.com/talent-density-index) から 50 社を抽出。
+既存 10 社 + 新規 40 社のエンティティページを wiki に追加し、各社のテックブログ URL を特定。
+
+**作成したエンティティページ (40 files):**
+Group A (13): thinking-machines-lab, applied-intuition, modal-labs, decagon, voyage-ai, cohere, glean, together-ai, cognition, harvey, scale-ai, hebbia, rogo
+Group B (13): augment, parallel-web-systems, baseten, brain-co, linear, mercor, nuro, adept, vanta, traversal, metronome, elevenlabs, factory
+Group C (14): anyscale, vannevar-labs, abridge, the-browser-company, reevo, chalk, nominal, cartesia, hex-technologies, merge, whatnot, eventual, faire, bedrock-robotics
+
+**更新:** index.md — Entity セクションに 40 エントリ追加 (406→494 pages に更新)
+**テックブログ発見率:** 37/40 (92.5%) — The Browser Company, Whatnot, Bedrock Robotics の 3 社のみブログなし
+**次のステップ:** 37 社の RSS feed 検証 → blogwatcher/OPML 登録 → cron 監視設定
 
 **New pages created (2)**:
 - `entities/pliny-prompter.md` — Pliny the Prompter (elder_plinius) のエンティティページ。L1B3RT4S（18.6k stars）、G0DM0D3、0BL1T3R4TUSなど主要プロジェクト、TIME100 AI 2025選出、BBC/FT/VentureBeat掲載歴、10本以上の学術論文引用、BASI Discordコミュニティ、JOIN THE MISSION 4領域を網羅。
