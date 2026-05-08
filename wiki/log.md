@@ -1,3 +1,20 @@
+## [2026-05-08] research | Gwern: Turing完全性の自然発生 → Ambient Agency 理論のwiki化
+
+Gwern Branwen の「Surprisingly Turing-Complete」(2012) と「The Scaling Hypothesis §Ambient Agency」(2020) の思想的連関を wiki に体系化。
+
+**新規作成 (2 pages, 2 raw articles):**
+- `concepts/turing-completeness-emergence.md` — Turing完全性が複雑性から不可避的に自然発生する現象。TCの3要素（分岐・メモリ・反復）の組み合わせ爆発、Weird Machines、Unseeingハッカーマインドセット。CSS/Minecraft/MTG等のカタログ、セキュリティ含意。
+- `concepts/ambient-agency.md` — エージェンシーがTCと同様に「収斂的」に自然発生する洞察。3つの発生経路、もぐら叩き原理、Tool AI幻想への根本的異議。
+- `raw/articles/2012-12-09_gwern-surprisingly-turing-complete.md`
+- `raw/articles/2020-05-28_gwern-ambient-agency.md`
+
+**拡充 (2 pages):**
+- `entities/gwern.md` — 「Turing完全性の自然発生とAmbient Agency」セクション追加。タグ・関連・ソース更新。
+- `concepts/scaling-hypothesis.md` — Ambient agency項目に新概念ページへのwikilink追加。
+
+**更新:**
+- `index.md` — 2概念を追加、カウント更新 (5256→5258, 460→462)
+
 ## [2026-05-08] ingest | Entire — pgr agentic code search 研究 & ツール
 
 Entire社のブログ記事「How We Improved Agentic Search」(May 6, 2026, Evis Drenova) を wiki に取り込み。

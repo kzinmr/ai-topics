@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 5256 | Full entries: 4707 | Stubs: 545 |
+> Last updated: 2026-05-08 | Total pages: 5258 | Full entries: 4709 | Stubs: 545 |
 
 ## Entities (496 pages)
 
@@ -503,10 +503,11 @@
 - [[entities/vanta]] — Vanta — Security and compliance automation. $300M+ ARR. YC W18.
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
-## Concepts (460 pages)
+## Concepts (462 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/altman-three-observations]] — Altman's Three Observations: 対数スケーリング（intelligence ≈ log(resources)）、超デフレコスト（10x/年）、超指数関数的価値の3つの経済観察枠組み。GPT-4→GPT-4oで150xのコスト低下、2035年ビジョン、AIエージェント経済学。
+- [[concepts/ambient-agency]] — Ambient Agency（環境的エージェンシー）: エージェンシーがTuring完全性と同様に、複雑なシステムから不可避的に自然発生するというGwernの洞察。明示的な設計・選択なしに収斂する「あまりに有用な能力」。Tool AI幻想への根本的異議。
 - [[concepts/object-storage-queue]] — Object Storage Queue: S3のCASを利用した分散キュー実装パターン。Group Commit、Stateless Broker、HeartbeatによるJob Recovery。ゼロディスクアーキテクチャの応用。Absurd（PG Queue）との比較を含む。 — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/openclaw-architecture]] — OpenClawのアーキテクチャ詳細。Gateway-firstなassistant control planeの全容：長寿命Gateway、typed WebSocket protocol、埋め込みagent runtime、二層セッション永続化、sandbox/tool-policy/elevatedの3軸分離、ノードcapability surface、キューイング、サブエージェント、4層プラグインシステム、索引注入スキル。単一trust boundaryモデル。
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information（予測的V-情報）：観測者の計算制約を考慮したShannon情報理論の変分拡張。DPI違反、高次元でのPAC推定保証、構造学習・公平表現学習への応用（Xu et al., ICLR 2020）。
@@ -594,3 +595,4 @@
 - [[concepts/workspace-bench]] — Workspace-Bench 1.0: マルチファイル依存関係を評価する大規模エージェントベンチマーク（OpenDataBox）。5職種プロファイル、74ファイル種別、20,476ファイル（最大20GB）、388タスク。Best AI 68.7%（OpenClaw+Opus 4.7）vs Human 80.7%。5段階進化モデル（L0-L4）、Agent-as-a-Judge評価フレームワーク。
 - [[concepts/unbundled-agents]] — Viv Trivedy's architectural pattern: specialist subagents exposed as Tools within a harness, making the harness a configurable box populated per task.
 - [[concepts/transformer-architecture]] — The Transformer architecture, derived via pedagogical "discovery fiction" from n-grams to QKV self-attention. Self-attention as multiplicative interactions with direct access. Logical progression through embeddings, convolutions, MLP-Mixers, to modern Transformers. Emergence at scale (induction heads, ICL). [[raw/articles/2025-05-25_gwern-invented-transformers.md|Source: Gwern 2025]].
+- [[concepts/turing-completeness-emergence]] — Turing完全性の自然発生: 十分な複雑性を持つシステムではTCが不可避的に出現するというGwernの洞察。CSS、Minecraft、MTGなど「計算機ではない」システムのTCカタログ。Weird Machines、Unseeing（見抜き）、Greenspunの第十法則。[[concepts/ambient-agency|Ambient Agency]]への拡張を含む。セキュリティ・AI安全性への深い含意。

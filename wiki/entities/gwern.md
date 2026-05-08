@@ -12,6 +12,9 @@ tags:
   - epistemology
   - self-experimentation
   - forecasting
+  - turing-completeness
+  - emergence
+  - ai-safety
 sources: []
 ---
 
@@ -83,6 +86,29 @@ Gwern's essay on "Ordinary Incompetence" argues that **incompetence is the basel
 
 Gwern defines the security/hacker mindset as **extreme reductionism**: ignoring surface abstractions to treat a system as a collection of manipulable parts. Unlike mathematicians who abstract complexity away, hackers "unsee" the simple model down to the more-complex but more-true underlying reality. This applies beyond computing—to financial exploits, social engineering, speedrunning, and any domain where conventional assumptions mask exploitable structure.
 
+### Turing完全性の自然発生と Ambient Agency
+
+Gwern の最も独創的な洞察の一つは、[[concepts/turing-completeness-emergence|Turing完全性の自然発生]]とAIエージェンシーを同型の現象として捉える視点である。
+
+2012年のエッセイ「[Surprisingly Turing-Complete](https://gwern.net/turing-complete)」で、彼は「十分な複雑性を持つあらゆるシステムは、積極的に阻止されない限りTuring完全性を宿す」という逆説をカタログ化した。CSS、Minecraft、Magic: The Gathering、C++テンプレート——いずれも「計算機」として設計されていないのにTuring完全である。
+
+> 「計算とは、プログラミング言語や注意深くセットアップされたコンピュータの中にだけ存在する秘教的なものではない。合理的な複雑さを持つあらゆるシステムにおいて、Turing完全性は積極的に阻止されない限り、ほぼ不可避的に出現する」
+>
+> — *Surprisingly Turing-Complete*
+
+8年後の「The Scaling Hypothesis」(2020) の付録 Ambient Agency で、彼は同じ論理をエージェンシーに適用した：
+
+> 「エージェンシーはTuring完全性のようなものかもしれない：選択や最適化のない設定においてさえ、それはあまりに有用で、あまりに収斂的な能力であり、その不在を保証することはできない」
+
+この [[concepts/ambient-agency|Ambient Agency（環境的エージェンシー）]] の洞察の核心：
+
+- **収斂性**：Turing完全性が複雑なソフトウェアで自然発生するように、エージェンシーも強力なAIで自然発生する
+- **発見不可能性**：TCが表面に見えなくても存在しうるように、エージェンシーも行動に現れていなくても内部的に存在しうる（"Sampling can show the presence of knowledge, but not the absence."）
+- **もぐら叩き**：1つの経路を塞いでも別の経路から出現する。データフィルタリングでは防げない
+- **Tool AI 幻想**：「ツールAIはエージェントAIにならない」という前提は根本的に誤り
+
+関連文献：[[raw/articles/2012-12-09_gwern-surprisingly-turing-complete|Surprisingly Turing-Complete]]、[[raw/articles/2020-05-28_gwern-ambient-agency|Ambient Agency セクション]]
+
 ### Self-Experimentation & Cognitive Enhancement
 
 Gwern is a practitioner of **rigorous self-experimentation** (Quantified Self), using statistical analysis in R to evaluate nootropics, sleep interventions, and cognitive tools. Notable experiments include:
@@ -143,6 +169,8 @@ Gwern challenges the Whiggish "expanding circle" narrative of moral progress, ar
 ## Related
 
 - [[concepts/scaling-hypothesis]] — Gwern's formalization of the theory that scale alone drives AI capability emergence
+- [[concepts/turing-completeness-emergence]] — Turing完全性が複雑性から不可避的に出現するという洞察
+- [[concepts/ambient-agency]] — エージェンシーもTCと同様に自然発生するという拡張
 - [[dwarkesh-patel]] — Interviewed Gwern on his AI predictions and research methodology
 - [[concepts/ordinary-incompetence]] — Gwern's analysis of why most people fail to improve despite experience
 -  — The irreducible noise floor in human survey responses
@@ -162,3 +190,5 @@ Gwern challenges the Whiggish "expanding circle" narrative of moral progress, ar
 - [Interview with Dwarkesh Patel](https://www.dwarkeshpatel.com/gwern-branwen) (2024)
 - [About This Website](https://gwern.net/About) — Gwern's writing methodology and philosophy
 - [Grokipedia: Gwern Branwen](https://grokipedia.com/page/gwern) — Biographical details, early life, Haskell contributions, funding model
+- [Surprisingly Turing-Complete](https://gwern.net/turing-complete) (2012, updated 2022) — [[raw/articles/2012-12-09_gwern-surprisingly-turing-complete.md|Raw excerpt]]
+- [The Scaling Hypothesis §Ambient Agency](https://gwern.net/scaling-hypothesis#ambient-agency) (2020) — [[raw/articles/2020-05-28_gwern-ambient-agency.md|Raw excerpt]]
