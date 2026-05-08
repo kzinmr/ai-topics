@@ -223,6 +223,22 @@ verl/
 
 veRL は **DeepSeek-R1 の GRPO 訓練**に使用されたことで注目を集め、現在 RLHF/GRPO 訓練のデファクトスタンダードの一つとなっている。
 
+### Anyscale比較（2025-07）における位置づけ
+
+Anyscaleの10ライブラリ比較では、Verlは「成熟度・パフォーマンスで最も信頼できる選択肢」と評価。12.9k ⭐、351 contributorsとTRLに次ぐコミュニティ規模。
+
+| 側面 | Verl | 競合 |
+|------|------|------|
+| 成熟度 | 高い（ByteDance、12.9k ⭐） | TRL (15.3k ⭐)に次ぐ |
+| 拡張性 | FSDP+Megatron、複数推論エンジン | slime (Megatron+SGLang固定)より柔軟 |
+| 環境/エージェント | 🚧 RFC段階、tool-calling経由 | SkyRL, RAGEN: ✅ フル環境対応 |
+| Async | 🚧 RFC段階 | AReaL, slime: ✅ ネイティブ非同期 |
+| エコシステム | RAGENなど派生ライブラリ多数 | TRL → Verifiers、Verl → RAGEN |
+
+**VeRLベースの派生**: [[concepts/ragen|RAGEN]]（環境インターフェース追加）、hybrid-flowの制御/計算分離パターンは他ライブラリの設計にも影響。
+
+→ 全RLライブラリ比較: [[concepts/open-source-rl-libraries-comparison]]
+
 ## 関連ページ
 
 - [[concepts/grpo-rl-training]] — veRL で実装される主要アルゴリズム

@@ -1,3 +1,27 @@
+## 2026-05-08 | Open Source RL Libraries — 9概念ページ + 比較ポータル作成
+
+**Action**: Anyscaleブログ「Open Source RL Libraries for LLMs」(Tyler Griggs + Philipp Moritz, 2025-07-01)をwikiに取り込み。10のRLライブラリを網羅的にカバー。
+
+**New concept pages (8)**:
+- [[concepts/openrlhf]] — OpenRLHF: 最古のOSS RLHFライブラリ。DeepSpeed、非同期訓練。
+- [[concepts/ragen]] — RAGEN: veRLベースのエージェントRL拡張。明示的環境インターフェース。
+- [[concepts/areal]] — AReaL (Ant Group): 非同期スループット最大化。interruptible rollouts。
+- [[concepts/nemo-rl]] — NeMo-RL (NVIDIA): クリーンインターフェース、モジュラー設計。
+- [[concepts/roll-rl]] — ROLL (Alibaba): 高設定自由度、多様なユーザー層向け。
+- [[concepts/verifiers-rl]] — Verifiers: TRLベースのマルチターンRL拡張。研究用途に人気。
+- [[concepts/slime-rl]] — slime (Z.ai/清華大学): Megatron+SGLang固定、シンプルさ重視。
+- [[concepts/skyrl]] — SkyRL (UC Berkeley): 最大柔軟性、sync/async/colocated/disaggregated対応。
+
+**New comparison portal**:
+- [[concepts/open-source-rl-libraries-comparison]] — 10ライブラリのアーキテクチャ比較表、次元別評価、選択ガイドライン。
+
+**Enriched existing pages**:
+- [[concepts/fine-tuning/trl]] — Ecosystem Positionセクション追加、全RLライブラリ比較リンク。
+- [[concepts/hybrid-flow]] — Anyscale比較における位置づけ追加。
+
+**Raw article**: `raw/articles/2025-07-01_anyscale_open-source-rl-libraries-for-llms.md`
+
+**Cross-references**: [[concepts/grpo]], [[concepts/deepseek-r1]], [[concepts/post-training]], [[concepts/fine-tuning/rlhf-dpo-preference]]
 ## 2026-05-08 | Adam Optimizer 概念ページ作成 + Raw Article 保存
 
 **Action**: ProcessSense Lab の LinkedIn 記事「Understanding Adam and AdamW」(2024-02-08) を wiki に取り込み。
