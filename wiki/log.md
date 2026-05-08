@@ -1,3 +1,14 @@
+## [2026-05-08] AI Benchmarks & Evals Overview — @xeophon 18-Part Series
+
+**Action**: kzinmrからのリクエストにより、Florian Brand (@xeophon) のAI Benchmarks/Evals 18部構成Xスレッドシリーズをwikiに取り込み。15/18パート取得（nitter.netのJSブロックによりPart 16-18は未取得）。
+
+**New pages**:
+- `concepts/ai-benchmarks-evals-overview.md` — 15ベンチマークの包括的カタログ + 分類・学びのまとめ
+- `raw/articles/2025-04-29_xeophon-ai-benchmark-eval-series.md` — スレッド全文
+
+**Updated**:
+- `entities/florian-brand.md` — AI Benchmarks & Evals Seriesセクション追加
+
 ## [2026-05-08] Andrew Chen Local AI Home Lab — Local AI Landscape May 2026 スナップショット
 
 **Action**: kzinmrからのリクエストにより、Andrew Chen (a16z GP) のXポスト「ローカルAIホームラボ構築体験」を26'05時点のlocal AI現在地としてwikiに取り込み。

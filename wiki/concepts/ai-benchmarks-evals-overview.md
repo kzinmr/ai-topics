@@ -1,0 +1,137 @@
+---
+title: AI Benchmarks & Evals Overview (xeophon Series)
+type: concept
+created: 2026-05-08
+updated: 2026-05-08
+status: active
+featured: true
+tags:
+  - benchmarks
+  - evaluation
+  - llm
+  - ai-metrics
+  - model-comparison
+  - coding-benchmarks
+  - knowledge-benchmarks
+  - reasoning-benchmarks
+  - multimodal-benchmarks
+sources:
+  - https://x.com/xeophon/status/1917175899948020203
+  - wiki/raw/articles/2025-04-29_xeophon-ai-benchmark-eval-series.md
+author: Florian Brand (@xeophon)
+related_entities:
+  - entities/florian-brand.md
+related_concepts:
+  - concepts/llm-evaluation.md
+---
+
+# AI Benchmarks & Evals Overview
+
+> Florian Brand (@xeophon) による「Popular Benchmarks / Evals」18部構成シリーズの包括的まとめ。
+> 各ベンチマークの設計思想、データソーシング方法、強み・弱点を解説。
+> **Note: Parts 16-18 are not yet retrieved (nitter.net JS block).**
+
+---
+
+## シリーズ概要
+
+| Part | Date | Benchmark | Category | Key Insight |
+|------|------|-----------|----------|-------------|
+| 1 | 2025-04-29 | **GPQA** | Knowledge (Science) | Bio/Physics/Chemistry only. Diamond set > main set. |
+| 2 | 2025-04-30 | **LiveCodeBench** | Coding | Rolling problems stay fresh. Easy tasks bore modern LLMs. |
+| 3 | 2025-05-01 | **Aider Polyglot** | Coding (Multi-lang) | 6 languages, not just Python. Rarer than expected. |
+| 4 | 2025-05-02 | **MMLU Pro** | Knowledge (Multi-domain) | 43% new questions vs MMLU. LLM-assisted filtering. |
+| 5 | 2025-05-05 | **MMMU** | Multimodal | Broad topics, college-level. Hand-crafted by students. |
+| 6 | 2025-05-06 | **MRCR** | Long-context | Multiple needles. Improvements over NIAH. |
+| 7 | 2025-05-07 | **SimpleQA** | Knowledge (Factual) | Sanity check. Important for RL-trained models. |
+| 8 | 2025-05-08 | **Vibe-Eval** | Personalized | Custom prompts. Everyone should have their own. |
+| 9 | 2025-05-09 | **BFCL V3** | Function Calling | Multi-turn, multi-step. Human-validated. |
+| 10 | 2025-05-13 | **IFEval** | Instruction Following | Simple, tests one aspect. Easy to evaluate. |
+| 11 | 2025-05-14 | **ChartQA** | Multimodal (Charts) | Noisy test data. Brand recommends retirement. |
+| 12 | 2025-05-15 | **Tau-Bench** | Function Calling (Agent) | LLM simulates users. Small but powerful. |
+| 13 | 2025-05-19 | **HLE** | Knowledge + Reasoning | Hardest MMLU-style. Strict filtering. |
+| 14 | 2025-05-20 | **CountBenchQA** | Counting | Ultra-simple. Tests one thing well. |
+| 15 | 2025-05-21 | **ARC-AGI (1)** | Abstract Reasoning | Fluid intelligence. Chollet's classic. |
+
+---
+
+## ベンチマーク分類
+
+### 知識・サイエンス系 (Knowledge)
+- **GPQA** — 大学院レベルのGoogle-proofなQ&A。専門家（PhD保有/取得中）が作成。Diamond setが最も信頼性の高いサブセット。
+- **MMLU Pro** — MMLUの改良版。10択に拡張、トリビアルな問題を除外。43%が新規問題。
+- **SimpleQA** — ニッチな事実知識のチェック。RL学習後のモデルの知識喪失検出に有用。
+- **HLE (Humanity's Last Exam)** — 人類最後の試験。最も難しいMMLU形式のベンチマーク。厳格なフィルタリングと高い参加インセンティブ。
+
+### コーディング系 (Coding)
+- **LiveCodeBench** — LeetCode/AtCoder/CodeForcesから定期的に新問題を収集。汚染のないコード生成評価。
+- **Aider Polyglot** — Pythonだけでなく6言語対応。多言語コーディング能力をテスト。
+
+### マルチモーダル系 (Multimodal)
+- **MMMU** — 大学レベルのマルチモーダル理解。6分野30科目183サブフィールド。大学生による手作業のデータ作成。
+- **ChartQA** — チャート理解。データは良いがテストセットのノイズが多い。引退推奨。
+
+### 関数呼び出し・指示追従系 (Function Calling / Instruction Following)
+- **BFCL V3** — Berkeley Function Calling Leaderboard V3。マルチターン・マルチステップの関数呼び出し。人間検証済み。
+- **IFEval** — シンプルな指示追従評価。一つの側面だけをテストし評価が容易。
+- **Tau-Bench** — 別のLLMでユーザーをシミュレートする関数呼び出しテスト。
+
+### 長文コンテキスト系 (Long Context)
+- **MRCR** — Multi-Round Coreference Resolution。複数のneedleを使用し、NIAHを改善。
+
+### 抽象的推論系 (Abstract Reasoning)
+- **ARC-AGI (1)** — François Cholletによるfluid intelligenceテスト。抽象的な視覚パターン推論。今でも最も重要なベンチマークの一つ。
+
+### カウンティング系 (Counting)
+- **CountBenchQA** — 超シンプルなカウンティング。一つのことを一つのレベルでテスト。
+
+### パーソナライズド系 (Personalized)
+- **Vibe-Eval** — 個人の興味に基づくプロンプトセット。誰でも独自に持つべきeval。
+
+---
+
+## 主要な学び (Key Takeaways)
+
+### 1. ベンチマークは相対的な強みを示す
+Brand の一貫したメッセージ：「ベンチマークは額面通りに受け取るべきではなく、モデルの相対的な強みと各分野の全般的な進歩を示すもの」。絶対的なモデル品質を測定するものではない。
+
+### 2. データ品質が全て
+- **良い例**: GPQA（専門家が作成・検証）、HLE（厳格なフィルタリング）
+- **悪い例**: ChartQA（ノイジーなテストデータ、不整合）
+
+### 3. サチュレーション（飽和）への対応
+多くのベンチマークが飽和しつつある：
+- LiveCodeBench: easy/medium LeetCode問題はLLMにとって簡単すぎる
+- MMLU: 改善の余地が少ないためMMLU Proが開発された
+- 定期的な問題更新（LiveCodeBench方式）が一つの解決策
+
+### 4. 新しいeval設計のトレンド
+- **マルチターン・マルチステップ**: BFCL V3が示すように、単一ターンの関数呼び出しから複雑な対話へ
+- **LLM-as-judge の活用**: Tau-Benchのように別のLLMでユーザーをシミュレート
+- **パーソナライゼーション**: Vibe-Evalのような個人化された評価
+
+### 5. ベンチマークの「引退」判断
+ChartQAのように、データの質が低いベンチマークは積極的に引退させるべき。コミュニティとして健全なベンチマークエコシステムを維持するために重要。
+
+---
+
+## 未取得パート (Parts 16-18)
+
+Parts 16-18はnitter.netのJSブロックにより取得できなかった。考えられる候補：
+- SWE-bench (Verified) — ソフトウェア工学
+- AIME 2025 / MATH-500 — 数学
+- WebArena / OSWorld — エージェントベンチマーク
+- GAIA — 汎用AIアシスタント
+- Arena Hard / Chatbot Arena — LLM-as-judge
+- BBH / MUSR — 推論
+- MGSM — 多言語数学
+
+実際の内容は要確認。
+
+---
+
+## Related Pages
+
+- [[entities/florian-brand]] — Florian Brand (@xeophon) の人物ページ
+- [[concepts/llm-evaluation]] — LLM評価全般
+- 各ベンチマークの個別コンセプトページ（必要に応じて作成）

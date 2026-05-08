@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 5278 | Full entries: 4732 | Stubs: 541 |
+> Last updated: 2026-05-08 | Total pages: 5280 | Full entries: 4734 | Stubs: 541 |
 
 ## Entities (499 pages)
 
@@ -508,7 +508,7 @@
 - [[entities/vanta]] — Vanta — Security and compliance automation. $300M+ ARR. YC W18.
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
-## Concepts (466 pages)
+## Concepts (467 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/altman-three-observations]] — Altman's Three Observations: 対数スケーリング（intelligence ≈ log(resources)）、超デフレコスト（10x/年）、超指数関数的価値の3つの経済観察枠組み。GPT-4→GPT-4oで150xのコスト低下、2035年ビジョン、AIエージェント経済学。
@@ -563,6 +563,7 @@
 - [[concepts/agent-governance]] — Agent governance is the structured approach enterprises use to define how autonomous AI systems operate, what they can access, and how their actions are monitored. It encompasses policy, identity, ...
 - [[concepts/agent-harness-primitives]] — A harness is every piece of code, configuration, and execution logic that wraps a raw model to turn it into a work engine. Agent = Model + Harness. The bottleneck has shifted from **model capabilit...
 - [[concepts/agent-harness]] — An agent harness is the infrastructure layer that sits between an LLM API and the agent's execution environment. It manages tool routing, context management, session lifecycle, and error recovery. ...
+- [[concepts/ai-benchmarks-evals-overview]] — Florian Brand (@xeophon)によるAIベンチマーク・評価指標18部構成シリーズの包括的まとめ。GPQA、LiveCodeBench、Aider Polyglot、MMLU Pro、MMMU、MRCR、SimpleQA、Vibe-Eval、BFCL V3、IFEval、ChartQA、Tau-Bench、HLE、CountBenchQA、ARC-AGI等の設計思想・データソーシング・強みと弱点を解説。
 - [[concepts/ai-delegation-patterns]] — AI delegation patterns (Cyborgs/Centaurs/Self-Automators), process-based delegation, orchestration vs chat. BCG/Harvard/MIT research on human-AI collaboration.
 - [[concepts/ai-operating-model]] — IBM's four-system blueprint for enterprise AI: Agents + Data + Automation + Hybrid. Coordinated, governed, auditable agent ecosystems at scale. Announced Think 2026.
 - [[concepts/agent-harness-comparison]] — 8大AIエージェントハーネス（Claude Code/OpenCode/Pi/Codex/Copilot CLI/Droid/OpenClaw/Hermes Agent）の包括的比較ポータル。機能比較表、モデル互換性マトリクス、価格比較、ユースケースレコメンデーション、Harness Effect分析。

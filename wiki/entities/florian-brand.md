@@ -3,7 +3,7 @@ title: Florian Brand
 type: entity
 handle: "@xeophon"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-08
 tags:
   - person
   - ai
@@ -13,6 +13,7 @@ tags:
   - evaluation
   - prime-intellect
   - interconnects
+  - benchmarks
 sources: []
 ---
 
@@ -117,6 +118,30 @@ Co-authored monthly roundups tracking open model releases with Nathan Lambert. N
 - **[How FastHTML sparked my joy in web development](https://florianbrand.com/)** — Personal tech exploration
 - **[Sane Python dependency management with uv](https://florianbrand.com/)** — Developer tooling
 - **[Using OpenAI's Deep Research to save Time and Money](https://florianbrand.com/)** — Practical AI workflows
+
+### AI Benchmarks & Evals Series (2025)
+
+18-part X thread series analyzing popular AI benchmarks and their design. [[concepts/ai-benchmarks-evals-overview|Full overview →]]
+
+| Part | Date | Benchmark | Category |
+|------|------|-----------|----------|
+| 1 | Apr 29 | GPQA | Knowledge (Science) |
+| 2 | Apr 30 | LiveCodeBench | Coding |
+| 3 | May 1 | Aider Polyglot | Coding (Multi-lang) |
+| 4 | May 2 | MMLU Pro | Knowledge |
+| 5 | May 5 | MMMU | Multimodal |
+| 6 | May 6 | MRCR | Long-context |
+| 7 | May 7 | SimpleQA | Factual Knowledge |
+| 8 | May 8 | Vibe-Eval (Reka) | Personalized |
+| 9 | May 9 | BFCL V3 | Function Calling |
+| 10 | May 13 | IFEval | Instruction Following |
+| 11 | May 14 | ChartQA | Multimodal (Charts) |
+| 12 | May 15 | Tau-Bench | Function Calling (Agent) |
+| 13 | May 19 | HLE | Knowledge + Reasoning |
+| 14 | May 20 | CountBenchQA | Counting |
+| 15 | May 21 | ARC-AGI (1) | Abstract Reasoning |
+
+Key message: Benchmarks indicate relative strengths and general progress, not absolute model quality.
 
 ### Academic Work
 
