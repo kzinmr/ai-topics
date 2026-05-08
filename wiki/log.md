@@ -16,16 +16,19 @@
 
 ---
 
-## [2026-05-08] AI Benchmarks & Evals Overview — @xeophon 18-Part Series
+## [2026-05-08] AI Benchmarks & Evals Overview — @xeophon 18-Part Series (COMPLETE)
 
-**Action**: kzinmrからのリクエストにより、Florian Brand (@xeophon) のAI Benchmarks/Evals 18部構成Xスレッドシリーズをwikiに取り込み。15/18パート取得（nitter.netのJSブロックによりPart 16-18は未取得）。
+**Action**: kzinmrからのリクエストにより、Florian Brand (@xeophon) のAI Benchmarks/Evals 18部構成Xスレッドシリーズをwikiに完全収録。
 
 **New pages**:
-- `concepts/ai-benchmarks-evals-overview.md` — 15ベンチマークの包括的カタログ + 分類・学びのまとめ
+- `concepts/ai-benchmarks-evals-overview.md` — 全18ベンチマークの包括的カタログ + 分類・学びのまとめ
 - `raw/articles/2025-04-29_xeophon-ai-benchmark-eval-series.md` — スレッド全文
 
 **Updated**:
 - `entities/florian-brand.md` — AI Benchmarks & Evals Seriesセクション追加
+
+**All 18 Parts**:
+1. GPQA / 2. LiveCodeBench / 3. Aider Polyglot / 4. MMLU Pro / 5. MMMU / 6. MRCR / 7. SimpleQA / 8. Vibe-Eval / 9. BFCL V3 / 10. IFEval / 11. ChartQA / 12. Tau-Bench / 13. HLE / 14. CountBenchQA / 15. ARC-AGI (1) / 16. ARC-AGI 2 / 17. SWE-Bench Verified / 18. Factorio LE
 
 ## [2026-05-08] Andrew Chen Local AI Home Lab — Local AI Landscape May 2026 スナップショット
 
