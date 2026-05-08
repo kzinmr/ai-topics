@@ -15,3 +15,16 @@ if git diff --cached --name-only | grep -q 'wiki/index.md'; then
         exit 1
     fi
 fi
+
+# Tag taxonomy validation — check all staged wiki pages
+STAGED_WIKI=$(git diff --cached --name-only --diff-filter=ACM | grep '^wiki/.*\.md$' | grep -v '^wiki/raw/' | grep -v '_index')
+if [ -n "$STAGED_WIKI" ]; then
+    python3 "$SCRIPT_DIR/.githooks/pre-commit-tag-validator.py"
+    if [ $? -ne 0 ]; then
+        echo ""
+        echo "❌ Tag taxonomy violations detected. See above for details."
+        echo "   Fix: Add missing tags to wiki/SCHEMA.md or use existing canonical tags."
+        echo "   To skip this check: git commit --no-verify"
+        exit 1
+    fi
+fi
