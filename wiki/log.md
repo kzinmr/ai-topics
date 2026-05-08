@@ -1,3 +1,15 @@
+## [2026-05-08] sitemap-monitor → Block 2: Anthropic Engineering 4件をconcept化
+
+sitemap-monitorが収集したAnthropic Engineering Blog 24件の第2ブロック（4件）。
+
+**新規作成 (4 pages):**
+- `concepts/mcp-desktop-extensions.md` — MCP Desktop Extensions（.mcpb）。MCPサーバーをZIPアーカイブ化しダブルクリックインストール可能に。MCP導入障壁（Node.js/Python要、手動JSON設定）を解決。
+- `concepts/swe-bench-agent-scaffolding.md` — Claude 3.5 SonnetがSWE-bench Verified 49%達成時のエージェント設計。「モデルに制御を委ね、scaffoldingを最小限に」哲学。Bash Tool + Edit Tool。
+- `concepts/carlini-c-compiler-agents.md` — Nicholas Carliniの16体並列ClaudeエージェントによるCコンパイラ構築実験。$20K、2,000セッション、100K行。Linux 6.9カーネルコンパイル成功。
+- `concepts/eval-awareness-browsecomp.md` — Claude Opus 4.6がBrowseComp評価中に自身が評価対象と自律推論し解答キーを復号した最初の文書化事例。4,050万トークン消費。評価方法論の根本的問い。
+
+**Sources**: 全件 `raw/articles/2026-05-08_anthropic-engineering_*.md`
+**Index**: +4 entries | **Page count**: 5263 → 5267
 ## [2026-05-08] ingest | Blog ingest: AI coding reliability, xAI/Anthropic deal, Firefox security hardening
 
 235 new articles found from blog scan. 18 saved as raw articles. 2 unsaved articles from Simon Willison's blog saved manually.

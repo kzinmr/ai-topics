@@ -1,0 +1,106 @@
+{
+  "triage_run_id": "20260508T072022Z",
+  "triage_date": "2026-05-08T07:20:22Z",
+  "newsletters": [
+    {
+      "message_id": "<20260507130319.3.2ceacbcdfcbe4c7e@mg-d0.substack.com>",
+      "subject": "Elon doubled limits",
+      "source": "bensbites (Substack)",
+      "date": "2026-05-07",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-07-elon-doubled-limits.md",
+      "classification": "high",
+      "reasoning": "Ben's Bites is a leading AI industry newsletter. The title references xAI doubling context/usage limits — relevant for tracking LLM capability trends and competitive dynamics in the AI infrastructure space.",
+      "suggested_actions": [
+        "Resolve Substack redirect links to identify actual external articles",
+        "Create/update wiki entity page for xAI if significant developments found",
+        "Check for related competitive analysis (Anthropic, OpenAI context limits)"
+      ],
+      "wiki_relevance": "AI industry competition, LLM context windows, xAI developments",
+      "article_count": 20
+    },
+    {
+      "message_id": "<20260507.155203.eb991b74@mta23>",
+      "subject": "Musk's GPUs Now Power Claude",
+      "source": "Beehiiv newsletter",
+      "date": "2026-05-07",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-07-musk-s-gpus-now-power-claude.md",
+      "classification": "high",
+      "reasoning": "Major AI infrastructure story: xAI's GPU resources being used to power Anthropic's Claude. This represents significant cross-company compute sharing and is important for understanding AI supply chain dynamics.",
+      "suggested_actions": [
+        "Resolve Beehiiv redirect links to find source articles",
+        "Update xAI and Anthropic entity pages with compute infrastructure details",
+        "Track as a potential wiki concept: 'AI compute sharing arrangements'",
+        "Monitor for follow-up coverage on capacity/contract details"
+      ],
+      "wiki_relevance": "AI infrastructure, compute sharing, xAI-Anthropic relationship, GPU economics",
+      "article_count": 20
+    },
+    {
+      "message_id": "<20260507154244.3.f78ce6854e4797f9@mg-d0.substack.com>",
+      "subject": "Notes from inside China's AI labs",
+      "source": "natolambert / Robotic (Substack)",
+      "date": "2026-05-07",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-07-notes-from-inside-china-s-ai-labs.md",
+      "classification": "high",
+      "reasoning": "First-hand reporting from inside Chinese AI laboratories. China's AI development is a major topic for the wiki — this provides ground-level insight into capabilities, strategies, and culture of Chinese AI labs.",
+      "suggested_actions": [
+        "Extract actual article URLs from Substack redirects",
+        "Identify specific Chinese AI labs/companies mentioned",
+        "Update or create wiki entity pages for mentioned labs/researchers",
+        "Consider concept page: 'Chinese AI industry landscape 2026'",
+        "Cross-reference with Nathan Lambert's other reporting"
+      ],
+      "wiki_relevance": "China AI ecosystem, lab culture, competitive intelligence, AI geopolitics",
+      "article_count": 20
+    },
+    {
+      "message_id": "<20260507191638.3.001aa4deba99bdc7@mg2.substack.com>",
+      "subject": "True Positive Weekly #160",
+      "source": "AI Weekly (Substack)",
+      "date": "2026-05-07",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-07-true-positive-weekly-160.md",
+      "classification": "low",
+      "reasoning": "General AI weekly roundup newsletter. While AI-relevant, these broad digest formats typically have lower signal-to-noise ratio for wiki purposes. Most links are likely aggregated news rather than in-depth analysis.",
+      "suggested_actions": [
+        "Scan resolved links for any standout technical articles",
+        "Skip wiki updates unless a link warrants entity/concept creation",
+        "Log as background awareness — no immediate action needed"
+      ],
+      "wiki_relevance": "General AI news aggregation — low specific value",
+      "article_count": 20
+    },
+    {
+      "message_id": "<20260508071125.3.2acb6e91bccd5d0d@mg-d0.substack.com>",
+      "subject": "[AINews] GPT-Realtime-2, -Translate, and -Whisper: new SOTA realtime voice APIs",
+      "source": "swyx / AINews (Substack)",
+      "date": "2026-05-08",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-08-ainews-gpt-realtime-2-translate-and-whisper-new-sota-realtime-voice-apis.md",
+      "classification": "critical",
+      "reasoning": "Direct coverage of new OpenAI API releases: GPT-Realtime-2, GPT-Translate, and updated Whisper. These are significant product launches that affect the voice/realtime AI landscape. swyx (AInews) is a high-quality technical source. This is exactly the kind of news that should drive wiki entity updates.",
+      "suggested_actions": [
+        "PRIORITY: Resolve all links and extract technical details",
+        "Update OpenAI entity page with GPT-Realtime-2, GPT-Translate capabilities",
+        "Update Whisper entity page with new SOTA details",
+        "Create concept page for 'Realtime voice APIs' if not exists",
+        "Compare with existing realtime API coverage in wiki",
+        "Document API pricing/limits if available in source articles"
+      ],
+      "wiki_relevance": "OpenAI APIs, voice AI, realtime models, Whisper, translation models",
+      "article_count": 20
+    }
+  ],
+  "summary": {
+    "total_newsletters": 5,
+    "critical": 1,
+    "high": 3,
+    "low": 1,
+    "total_links": 100,
+    "priority_actions": [
+      "Resolve swyx AINews links for OpenAI voice API details (CRITICAL)",
+      "Resolve China AI labs links for entity/concept creation (HIGH)",
+      "Resolve xAI GPU/Claude links for infrastructure coverage (HIGH)",
+      "Resolve Ben's Bites links for competitive context (HIGH)",
+      "Optionally scan True Positive Weekly for any standout articles (LOW)"
+    ]
+  }
+}
