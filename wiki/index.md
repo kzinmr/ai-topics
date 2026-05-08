@@ -565,6 +565,7 @@
 - [[concepts/ask-user-question-pattern]] — エージェントがユーザーに確認を求めるためのハーネスパターン
 - [[concepts/ai-patterns-for-glam|AI Design Patterns for Information Professionals]] — Practical "boring AI" design patterns for GLAM and information professionals. Covers discovery, structured extraction, evaluation, and infrastructure. WIP book by [[entities/daniel-van-strien]].
 - [[concepts/ai-red-teaming-careers]] — AIレッドチーミング/プロンプトインジェクション関連キャリアの包括的ガイド。職種（AI Red Teamer $130K-250K、Adversarial ML Researcher、AI PenTester）、雇用企業（OpenAI/Anthropic/DeepMind/Meta/HiddenLayer）、必須スキル、ツール（PyRIT/Garak/Promptfoo）、キャリアパス。
+- [[concepts/ai-resistant-evaluations]] — Tristan HumeによるAIに打ち負かされない採用テスト設計論。Claude Opus 4/4.5に3回撃破され再設計。v3はZachtronics風制約命令セットパズル。リアリズムを犠牲に新奇性で対抗。公開チャレンジ（1,487サイクル以下で採用）。
 - [[concepts/ai-retail-experiments]] — Experiments where autonomous AI agents manage real-world physical businesses (cafes, retail stores) with minimal human oversight. Andon Labs AI cafe in Stockholm, ordering errors, ethical concerns.
 - [[concepts/audio-tokenizer-comparison]] — 비교/Comparison of 5 neural audio tokenizers: SoundStream, EnCodec, DAC, SpeechTokenizer, Mimi. RVQ-based, differing in codec quality vs. speech LLM readiness, semantic/acoustic separation, token rate, and domain.
 - [[concepts/bitter-lesson-agent-harnesses]] — モデル能力のスケール向上に伴い、ハーネスの役割は論理実装からモデル行動のオーケストレーションへ移行する
