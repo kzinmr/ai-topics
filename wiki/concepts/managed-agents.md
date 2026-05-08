@@ -1,50 +1,93 @@
 ---
-title: Managed Agents
-created: 2026-04-26
-updated: 2026-04-26
+title: "Managed Agents (Anthropic)"
 type: concept
-tags: [agentic-engineering, platform]
+created: 2026-04-25
+updated: 2026-05-08
+tags:
+  - agent-architecture
+  - anthropic
+  - infrastructure
+  - meta-harness
+aliases:
+  - Claude Managed Agents
+  - decoupled agent architecture
+status: active
 sources:
-  - raw/articles/2026-04-25-telegram-managed-bots.md
-  - raw/articles/2026-04-09-claude-managed-agents-guide.md
+  - raw/articles/2026-05-08_anthropic-engineering_managed-agents.md
+  - https://www.anthropic.com/engineering/managed-agents
+related:
+  - building-effective-agents
+  - effective-harnesses-for-long-running-agents
+  - multi-agent-research-system
+  - agent-team-swarm
 ---
 
-# Managed Agents
+# Managed Agents (Anthropic)
 
-Managed agents are AI agents that can be deployed, configured, and operated without direct coding — a no-code/low-code layer for agent development and management.
+Anthropicの長期間稼働エージェント向けホスト型サービス。**「脳（brain）を手（hands）から分離する」** アーキテクチャ。
 
-## Platforms
+## 設計哲学
 
-### Telegram Managed Bots (April 2026)
-- Anyone can utilize AI bots to develop, launch and manage their own bot with no coding required
-- Supports [[agent-communication-protocols]] for inter-agent interoperability
-- Bots for Business use cases
-- Links to [[telegram]] as a platform
+> "How to design a system for 'programs as yet unthought of.'"
 
-### Claude Managed Agents (Anthropic)
-- Beginner-friendly agent setup and configuration
-- Managed agent workflows for business processes
-- 3,008 bookmarks indicate strong demand (April 2026)
-- Connects to [[anthropic-managed-agents]] and [[claude-code]]
+OSがハードウェアを `process` / `file` に仮想化したように、Managed Agentsはエージェントの構成要素を仮想化:
+- **Session** — 発生した全イベントの追記専用ログ
+- **Harness** — Claudeを呼び出しツール呼び出しをルーティングするループ
+- **Sandbox** — Claudeがコード実行・ファイル編集する実行環境
 
-## Why This Matters
+各インターフェースは実装と独立 → 実装の自由な交換が可能。
 
-1. **Democratization:** Lowers barrier to AI agent creation for non-technical users
-2. **Scalability:** Enables [[solo-founder-stack]] by reducing development overhead
-3. **Interoperability:** Bot-to-bot communication enables [[agent-swarms]] and [[agentic-engineering]] patterns
-4. **Enterprise Adoption:** Managed agents make it easier for companies to implement [[reflexive-ai]] policies
+## Pets vs Cattle
 
-## Relationship to Other Concepts
+### 結合アーキテクチャ（Pet）
+- セッション・ハーネス・サンドボックスを1コンテナに同居
+- コンテナ障害 → セッション消失
+- デバッグにシェルアクセス必要 → ユーザーデータへのアクセスと衝突
+- ハーネスが「リソースはコンテナ内にある」と仮定 → VPC接続時に壁
 
-- [[anthropic-managed-agents]] — Claude-specific managed agent offerings
-- [[agentic-engineering]] — broader engineering discipline
-- [[solo-founder-stack]] — managed agents enable solo founders
-- [[agent-governance]] — management implies governance
+### 分離アーキテクチャ（Cattle）
 
-## Related
+```
+execute(name, input) → string
+provision({resources})
+wake(sessionId)
+getSession(id)
+emitEvent(id, event)
+getEvents()
+```
 
-- [[anthropic-managed-agents]]
-- [[agentic-engineering]]
-- [[solo-founder-stack]]
-- [[telegram]]
-- [[agent-governance]]
+- コンテナ死 → ツール呼び出しエラーとして検出、Claudeがリトライ判断
+- ハーネスクラッシュ → `wake(sessionId)` で再起動、イベントログから再開
+- 認証情報はサンドボックス外のVaultに（Claudeの生成コードから到達不能）
+
+## セッション ≠ コンテキストウィンドウ
+
+- セッションはコンテキストウィンドウの**外**にある永続的コンテキストオブジェクト
+- `getEvents()` で位置ベースのスライス取得（再開・巻き戻し・再読込）
+- 取得イベントはハーネス内で変換可能（prompt caching最適化、context engineering）
+
+## 性能改善
+
+- **p50 TTFT**: 約60%削減
+- **p95 TTFT**: 90%以上削減
+- 脳がコンテナを必要としない場合、プロビジョニング待ちなしで推論開始
+
+## Many Brains, Many Hands
+
+- **Many brains**: 複数のステートレスハーネスを起動、必要なときだけ手に接続
+- **Many hands**: 各手は `execute(name, input) → string` ツール。ハーネスは手の実体（コンテナ/電話/ポケモンエミュレータ）を意識しない
+- 脳同士で手を受け渡し可能
+
+## Meta-Harness
+
+Managed Agentsは**メタハーネス** — 特定のハーネス実装に依存せず、Claude Codeのような汎用ハーネスもタスク特化ハーネスも収容可能。
+
+> "We're opinionated about the shape of these interfaces, not about what runs behind them."
+
+## See Also
+
+- [[building-effective-agents]] — Building effective agents
+- [[effective-harnesses-for-long-running-agents]] — Long-running agent harnesses
+- [[multi-agent-research-system]] — Multi-agent research system
+- [[agent-team-swarm]] — Agent team/swarm architecture
+- [[carlini-c-compiler-agents]] — Carlini's parallel agent experiment

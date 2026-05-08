@@ -1,3 +1,13 @@
+## [2026-05-08] sitemap-monitor → Block 4完了: 残り3スタブをenrich
+
+sitemap-monitorで見つかったスタブページのうち、最後の3件を完全enrich。
+
+**Enrich完了 (3 pages):**
+- `concepts/advanced-tool-use.md` — Tool Search Tool（85%トークン削減, Opus 4: 49→74%）、Programmatic Tool Calling（コード実行からのツール呼び出し）、Tool Use Examplesの3機能。
+- `concepts/managed-agents.md` — Brain/Hands分離アーキテクチャ。Session/Harness/Sandboxの仮想化。Pets-vs-Cattle。p50 TTFT 60%減。
+- `concepts/multi-agent-research-system.md` — Orchestrator-workerパターン。Multi-agentがsingle-agent比+90.2%。トークン使用量がBrowseComp分散の80%説明。LLM-as-Judgeルーブリック評価。
+
+**24件の最終集計**: 新規14件 + enrich 6件 + 既存十分 4件 = 全件wiki化完了 🎉
 ## [2026-05-08] sitemap-monitor → Block 3: Anthropic Engineering 残り4件をconcept化
 
 sitemap-monitorが収集したAnthropic Engineering Blog 24件の第3ブロック（残り4件、2件のpostmortemを1ページに統合）。

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 5270 | Full entries: 4721 | Stubs: 545 |
+> Last updated: 2026-05-08 | Total pages: 5270 | Full entries: 4724 | Stubs: 542 |
 
 ## Entities (496 pages)
 
