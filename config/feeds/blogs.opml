@@ -142,12 +142,21 @@
       <outline type="sitemap" text="Anthropic Engineering" title="Anthropic Engineering" xmlUrl="https://www.anthropic.com/sitemap.xml" htmlUrl="https://www.anthropic.com/engineering" />
       <outline type="sitemap" text="Cartesia Blog" title="Cartesia Blog" xmlUrl="https://cartesia.ai/sitemap.xml" htmlUrl="https://cartesia.ai/blog" />
       <outline type="sitemap" text="Cohere Blog" title="Cohere Blog" xmlUrl="https://cohere.com/sitemap.xml" htmlUrl="https://cohere.com/blog" />
+      <outline type="sitemap" text="Cursor Blog" title="Cursor Blog" xmlUrl="https://cursor.com/sitemap.xml" htmlUrl="https://cursor.com/blog" />
       <outline type="sitemap" text="Decagon Blog" title="Decagon Blog" xmlUrl="https://decagon.ai/sitemap.xml" htmlUrl="https://decagon.ai/blog" />
       <outline type="sitemap" text="ElevenLabs Blog" title="ElevenLabs Blog" xmlUrl="https://elevenlabs.io/sitemap.xml" htmlUrl="https://elevenlabs.io/blog" />
       <outline type="sitemap" text="Factory Blog" title="Factory Blog" xmlUrl="https://factory.ai/sitemap.xml" htmlUrl="https://factory.ai/news" />
+      <outline type="sitemap" text="Fireworks AI Blog" title="Fireworks AI Blog" xmlUrl="https://fireworks.ai/sitemap.xml" htmlUrl="https://fireworks.ai/blog" />
       <outline type="sitemap" text="Glean Blog" title="Glean Blog" xmlUrl="https://www.glean.com/sitemap.xml" htmlUrl="https://www.glean.com/blog" />
       <outline type="sitemap" text="Harvey Blog" title="Harvey Blog" xmlUrl="https://www.harvey.ai/sitemap.xml" htmlUrl="https://www.harvey.ai/blog" />
+      <outline type="sitemap" text="Hebbia Blog" title="Hebbia Blog" xmlUrl="https://www.hebbia.ai/sitemap.xml" htmlUrl="https://www.hebbia.ai/blog" />
+      <outline type="sitemap" text="Hex Technologies Blog" title="Hex Technologies Blog" xmlUrl="https://hex.tech/sitemap.xml" htmlUrl="https://hex.tech/blog" />
+      <outline type="sitemap" text="Mistral AI Blog" title="Mistral AI Blog" xmlUrl="https://mistral.ai/sitemap.xml" htmlUrl="https://mistral.ai/news/" />
+      <outline type="sitemap" text="Parallel Web Systems Blog" title="Parallel Web Systems Blog" xmlUrl="https://parallel.ai/sitemap.xml" htmlUrl="https://parallel.ai/blog" />
+      <outline type="sitemap" text="Pinecone Blog" title="Pinecone Blog" xmlUrl="https://www.pinecone.io/sitemap.xml" htmlUrl="https://www.pinecone.io/blog/" />
+      <outline type="sitemap" text="Ramp Blog" title="Ramp Blog" xmlUrl="https://ramp.com/sitemap.xml" htmlUrl="https://ramp.com/blog" />
       <outline type="sitemap" text="Scale AI Blog" title="Scale AI Blog" xmlUrl="https://scale.com/sitemap.xml" htmlUrl="https://scale.com/blog" />
+      <outline type="sitemap" text="Warp Blog" title="Warp Blog" xmlUrl="https://www.warp.dev/sitemap.xml" htmlUrl="https://www.warp.dev/blog" />
     </outline>
   </body>
 </opml>
