@@ -1,3 +1,18 @@
+## [2026-05-08] Andrew Chen Local AI Home Lab — Local AI Landscape May 2026 スナップショット
+
+**Action**: kzinmrからのリクエストにより、Andrew Chen (a16z GP) のXポスト「ローカルAIホームラボ構築体験」を26'05時点のlocal AI現在地としてwikiに取り込み。
+
+**New raw articles saved**:
+- `raw/articles/2026-05-07_x-andrewchen-local-ai-home-lab-state.md` — Andrew Chen @andrewchen のフルポスト（14.5K Views, 104 Likes, 97 Replies）
+
+**New entity page created**:
+- `entities/andrew-chen.md` — Andrew Chen — a16z General Partner leading speedrun。Uberライダーグロース、The Cold Start Problem著者。ホームラボ遍歴：Mac Mini→DGX Spark→5090 eGPU→Strix Halo。OpenClaw+Hermes Agent運用。
+
+**Concept page enriched**:
+- `concepts/local-ai.md` — スタブ→フルエントリに拡充。Andrew Chenポストをケーススタディに、6セクション構成（ハードウェアランドスケープ・モデルランドスケープ・ソフトウェアスタック・パフォーマンス特性・ユースケース・スタートガイド）。主要テーゼ：オープンウェイトモデルはSOTAから1年遅れ、2027年Opus級ローカル可能予測、非同期バッチ処理がスイートスポット。
+
+**Cross-references**: [[entities/andrew-chen]], [[entities/nvidia-dgx-spark]], [[entities/openclaw]], [[entities/hermes-agent]], [[concepts/local-llm]], [[concepts/local-llm-inference-hardware]], [[concepts/mac-studio-local-ai]], [[concepts/dgx-spark-local-llm-server]], [[concepts/ollama]], [[concepts/vllm]], [[concepts/model-quantization-for-local-llms]]
+
 ## [2026-05-08] active-crawl | Enterprise AI JVs, IBM Think 2026 AI Operating Model, China Agentic Coding Sprint
 
 **Action**: Researched trending AI/ML topics and ingested 3 major themes into wiki.

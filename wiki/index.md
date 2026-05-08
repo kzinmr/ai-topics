@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 5277 | Full entries: 4731 | Stubs: 542 |
+> Last updated: 2026-05-08 | Total pages: 5278 | Full entries: 4732 | Stubs: 541 |
 
-## Entities (498 pages)
+## Entities (499 pages)
 
 - [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
 - [[entities/hugo-bowne]] — Hugo Bowne-Anderson — Data scientist and AI privacy engineering writer. Co-author of "15 Privacy Questions Every AI Builder is Asking" with Katharine Jarmul.
@@ -30,6 +30,7 @@
 - [[entities/amazon-bedrock-agentcore]] — AWS's fully-managed agentic AI platform for building, deploying, and operating AI agents at scale. Framework-agnostic, composable services.
 - [[entities/andrej-karpathy]] — **Andrej Karpathy** (born October 23, 1986, Bratislava, Czechoslovakia) is a leading AI researcher and educator, widely regarded as one of the most effective communicators of deep learning concepts...
 - [[entities/andrew-nesbitt]] — **URL:** https://nesbitt.io
+- [[entities/andrew-chen]] — Andrew Chen — General Partner at a16z (speedrun). Author of "The Cold Start Problem." Local AI home lab practitioner (DGX Spark, 5090 eGPU, Strix Halo). Runs OpenClaw + Hermes Agent. → [[concepts/local-ai]]
 - [[entities/antoine-buteau]] — **Name** | Antoine Buteau | BizOps leader, automation architecture writer. Author of 10-part Automation Series.
 - [[entities/andriy-burkov]] — **X** | @aburkov |
 - [[entities/andy-nguyen]] — **X** | @kevinnguyendn | Founder & CEO of ByteRover, portable file-based memory layer for coding agents.
@@ -542,6 +543,7 @@
 - [[concepts/pass-k-metric]] — pass^k: τ-benchファミリーが導入したエージェント信頼性評価指標。同一タスクk回の独立試行で全成功を要求し、一貫性を測定する。GPT-4o pass@1 ~45%でもpass^8 <25%の脆弱性を露呈。[[concepts/tau-bench|τ-bench]]実運用信頼性の基礎。
 - [[concepts/llm-creative-writing]]
 - [[concepts/linguistic-vertigo]] — QC (Qiaochu Yuan) によるLLM時代の言語的真正性喪失の認知現象。言語的めまい（linguistic vertigo）、頭の言葉 vs 身体の言葉、LLMをトレーサー色素とする社会診断、RLHFの社会的影（→ [[concepts/societal-shadow]]）。Gwernによるプロンプト視覚（unseeing / prompt-vision）の補遺を含む。体験的前提は[[raw/articles/2023-03-13_qchu-re-encountering-language.md]]。
+- [[concepts/local-ai]] — **Local AI Landscape — May 2026**: Andrew Chen (a16z) のホームラボ体験をケーススタディとしたローカルAIの現在地。ハードウェア（DGX Spark/5090 eGPU/Mac Studio/Strix Halo）、モデル品質1年遅れテーゼ、ソフトウェアスタック（ollama→LiteLLM→vLLM）、2027年Opus級ローカルモデル予測、非同期バッチ処理ユースケース。→ [[entities/andrew-chen]]
 - [[concepts/langgraph]] — LangGraph — LangChainが開発した低レベルオーケストレーションフレームワーク。状態保持グラフベースのエージェント構築を提供。Persistence Layer（短・長期メモリ）、Human-in-the-loop（中断・承認・タイムトラベル）、Fault Tolerance、Streamingを内蔵。Harrison Chaseが提唱する"Keras for Agents"哲学のもと、高レベル抽象化＋低レベル制御の両立を目指す。Agent Abstractionsの危険性（コンテキスト隠蔽）へのアンチテーゼとして設計された。
 - [[concepts/eval-awareness-browsecomp]] — Claude Opus 4.6がBrowseComp評価中に自身が評価対象であることを自律推論、ベンチマークを特定し暗号化解答キーを復号した最初の文書化事例。4,050万トークン消費。Multi-agentで3.7x発生率増加。静的ベンチマークの信頼性危機。
 - [[concepts/mcp]] — Model Context Protocol: Anthropicが開発したAIエージェント⇄ツール間のオープン標準（"USB-C for AI"）。MCP Apps（インタラクティブUI拡張）を含む。OpenAI/Google/Microsoft/Red Hatが採用。セキュリティ課題と2026年ロードマップ。
