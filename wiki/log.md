@@ -1,3 +1,10 @@
+## [2026-05-08] ingest | Eliezer Yudkowsky "Staring Into The Singularity" (1996/1999)
+- Created: [[entities/eliezer-yudkowsky]], [[concepts/technological-singularity]], [[concepts/techno-optimism]], [[concepts/techno-pessimism]]
+- Raw article: `raw/articles/1996_yudkowsky_staring-into-the-singularity.md`
+- Added tags to SCHEMA.md: singularity, transhumanism, ai-safety, rationality, techno-optimism, techno-pessimism
+- Context: Yudkowsky's Singularitarianism as techno-optimist counterpoint to Yarvin's techno-pessimism ("wait, you can make a religion out of ai" / "wait, maybe you can't")
+- Key concepts: Transcended doubling sequence, Perceptual Transcends, T(n) function, Algernon's Law, Moravec Transfer, Interim Meaning of Life, Yudkowsky's Threats
+
 ## [2026-05-08] lint | Daily wiki health check — 218 broken links, 513 non-taxonomy tags, 2 duplicate index entries, 518 orphan pages
 
 **Critical**: 218 unique broken wikilinks (pages referenced but don't exist); 513 tags not in SCHEMA.md taxonomy; index header claims 5,286 pages but only 1,759 files exist on disk; 2 duplicate index entries for armin-ronacher and mitchell-hashimoto-ghostty.

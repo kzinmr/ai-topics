@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 699 | Full entries: 699 | Stubs: 0 |
+> Last updated: 2026-05-08 | Total pages: 703 | Full entries: 703 | Stubs: 0 |
 
-## Entities (523 pages)
+## Entities (524 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/agreement-bug]] — Agreement is a Bug
@@ -140,6 +140,7 @@
 - [[entities/eleutherai]] — Grassroots research collective that started the modern open-source AI movement. Creators of GPT-Neo, Pythia, and the LM Evaluation Harness.
 - [[entities/eli-thegreenplace-net]] — **URL:** https://eli.thegreenplace.net
 - [[entities/elie-bakouch]] — ML engineer and researcher at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training.
+- [[entities/eliezer-yudkowsky]] — Eliezer Yudkowsky — AI researcher, MIRI co-founder. Foundational 1996 essay "Staring Into The Singularity." Intelligence explosion, AI safety, Algernon's Law, Perceptual Transcends, Interim Meaning of Life.
 - [[entities/elvis-sun]] — Elvis Sun is an AI researcher and newsletter author operating under the pen name **spicyneuron**. He publishes on Substack covering practical local AI deployment, hardware choices for self-hosted L...
 - [[entities/embeddings]] — Single-vector embedding models — strengths, limitations, and the theoretical constraints of embedding-based retrieval (LIMIT dataset, drowning-in-documents paradox)
 - [[entities/embra]] — AI context engine company acquired by Notion (Jan 2026). Founded by Zach Tratar.
@@ -538,7 +539,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (164 pages)
+## Concepts (167 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -705,6 +706,9 @@
 - [[concepts/unbundled-agents]] — Viv Trivedy's architectural pattern: specialist subagents exposed as Tools within a harness, making the harness a configurable box populated per task.
 - [[concepts/transformer-architecture]] — The Transformer architecture, derived via pedagogical "discovery fiction" from n-grams to QKV self-attention. Self-attention as multiplicative interactions with direct access. Logical progression through embeddings, convolutions, MLP-Mixers, to modern Transformers. Emergence at scale (induction heads, ICL). [[raw/articles/2025-05-25_gwern-invented-transformers.md|Source: Gwern 2025]].
 - [[concepts/turing-completeness-emergence]] — Turing完全性の自然発生: 十分な複雑性を持つシステムではTCが不可避的に出現するというGwernの洞察。CSS、Minecraft、MTGなど「計算機ではない」システムのTCカタログ。Weird Machines、Unseeing（見抜き）、Greenspunの第十法則。[[concepts/ambient-agency|Ambient Agency]]への拡張を含む。セキュリティ・AI安全性への深い含意。
+- [[concepts/technological-singularity]] — The hypothetical point where recursively self-improving AI makes technological progress uncontrollable and irreversible. Per Yudkowsky (1996): Transcended doubling sequence → hyperbolic singularity. Perceptual Transcends, T(n) function, Moravec Transfer, Interim Meaning of Life.
+- [[concepts/techno-optimism]] — Belief that technological progress (AI/nanotech) can solve humanity's deepest problems. Yudkowsky's Singularitarianism as secular eschatology: the Singularity as moral imperative, transcendence of mortality and suffering. Contrasted with Yarvin's techno-pessimism.
+- [[concepts/techno-pessimism]] — Skepticism that technology alone can resolve fundamental human problems. Curtis Yarvin's counter to Yudkowsky: "maybe you can't make a religion out of ai." Governance before transcendence; technology as amplifier, not solver.
 
 
 ## Comparisons (12 pages)

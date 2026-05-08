@@ -31,6 +31,7 @@ sources: [raw/articles/source-name.md]
 ### Primary Categories
 - **Models**: model, multimodal, text-generation, image-generation, local-llm, sglang, reasoning, reinforcement-learning
 - **People/Orgs**: person, company, lab, open-source, anthropic, openai, google, huggingface, nvidia, langchain, pytorch
+- **Philosophy**: singularity, transhumanism, ai-safety, rationality, techno-optimism, techno-pessimism
 - **Products**: product, platform, tool, service, protocol, framework, claude-code, mcp, dspy
 - **Techniques**: inference, fine-tuning, training, optimization, quantization, alignment, benchmark, evaluation, speculative-decoding, diffusion, prompting, rag, kv-cache, testing, sandbox
 - **Engineering**: agentic-engineering, harness-engineering, ai-agent-engineering, context-engineering, context-management, multi-llm, workflow, software-engineering, formal-methods
