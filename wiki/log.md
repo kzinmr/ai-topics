@@ -1,6 +1,23 @@
-## [2026-05-08] Merge claude-code--usage into claude-code.md
+## [2026-05-08] Claude Model Family — 包括的概念ページ作成
 
-**Action**: `claude-code--usage.md`（Usage & Workflows）を親ページ `claude-code.md` に統合し削除。
+**Action**: `https://www.anthropic.com/learn/build-with-claude` をソースとして、Claudeモデルファミリーの包括的概念ページを作成。エンリッチメントまで完了。
+
+**New concept page created (1)**:
+- `concepts/claude-model-family.md` — Claudeモデルファミリーの全体像。Haiku/Sonnet/Opusの3階層設計哲学、Claude 1からOpus 4.7までの全13+モデルタイムライン、Constitutional AI/Extended Thinking/Computer Useのコア技術、APIエコシステム（Tool Use, Prompt Caching, Structured Output, Batch）、価格体系（サブスク+API）、全製品エコシステム（Claude.ai, Claude Code, Claude Design, Managed Agents, MCP, Agent SDK）、開発者リソース一覧、競合比較表を含む。
+
+**New raw article saved (1)**:
+- `raw/articles/2026-05-08_anthropic-build-with-claude.md` — Build with Claudeガイド全文
+
+**Index/log**: `index.md`更新（Concepts 452→453, 全エントリ4654→4655）。
+
+**Existing pages enriched (2)**:
+- `concepts/claude-sonnet-4.6.md` — stub→complete。リリース日、API価格、改善領域、クロスリファレンスを追加。
+- `concepts/claude-opus-4-6.md` — stub→complete。リリース日、API価格、改善領域、クロスリファレンスを追加。
+
+**Cross-links added (1)**:
+- `entities/anthropic.md` — relatedに `[[concepts/claude-model-family]]` を追加。
+
+## [2026-05-08] Merge claude-code--usage into claude-code.md
 - Usage & Workflowsセクションを`claude-code.md`に追加（Parallel Agent Execution, Plan Mode → Auto-Accept, CLAUDE.md as Team Memory, Terminal Environment, Claude Design Integration, Pricing table）
 - `wiki/index.md`から`--usage`エントリを削除
 - ページ削除: `entities/claude-code--usage.md`

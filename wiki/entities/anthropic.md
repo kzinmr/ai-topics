@@ -24,6 +24,7 @@ sources: [
 related: [
   "[[anthropic]]",
   "[[claude-code]]",
+  "[[concepts/claude-model-family]]",
   "[[foundation-capital]]"
 ]
 ---
