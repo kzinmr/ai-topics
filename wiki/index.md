@@ -4,7 +4,7 @@
 > Read this first to find relevant pages for any query.
 > Last updated: 2026-05-08 | Total pages: 5204 | Full entries: 4654 | Stubs: 546 |
 
-## Entities (406 pages)
+## Entities (405 pages)
 
 - [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
 - [[entities/hugo-bowne]] — Hugo Bowne-Anderson — Data scientist and AI privacy engineering writer. Co-author of "15 Privacy Questions Every AI Builder is Asking" with Katharine Jarmul.
@@ -405,7 +405,6 @@
 - [[entities/claude-code--architecture]] — Claude Code architecture and design patterns
 - [[entities/claude-code--capabilities]] — Claude Code capabilities and feature set
 - [[entities/claude-code--history]] — Claude Code development history and evolution
-- [[entities/claude-code--usage]] — Claude Code usage patterns and best practices
 - [[entities/clefourrier--core-ideas]] — Clefourrier core ideas on software development
 - [[entities/clefourrier--influence]] — Clefourrier influence on the developer community
 - [[entities/clefourrier--key-quotes]] — Notable quotes from Clefourrier

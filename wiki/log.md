@@ -1,3 +1,12 @@
+## [2026-05-08] Merge claude-code--usage into claude-code.md
+
+**Action**: `claude-code--usage.md`（Usage & Workflows）を親ページ `claude-code.md` に統合し削除。
+- Usage & Workflowsセクションを`claude-code.md`に追加（Parallel Agent Execution, Plan Mode → Auto-Accept, CLAUDE.md as Team Memory, Terminal Environment, Claude Design Integration, Pricing table）
+- `wiki/index.md`から`--usage`エントリを削除
+- ページ削除: `entities/claude-code--usage.md`
+
+**Index/log**: `index.md`更新、エンティティ数406→405。
+
 ## [2026-05-08] X Accounts Scan — Colossus Deal, ds4.c, Mozilla Mythos, China AI Labs, json-render
 
 **Action**: デイリーXアカウントスキャン。79アカウント中12件の新規ポストを検出、うち5件をWikiに取り込み。
