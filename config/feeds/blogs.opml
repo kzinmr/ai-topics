@@ -138,7 +138,16 @@
       <outline type="rss" text="V8 Blog" title="V8 Blog" xmlUrl="https://v8.dev/features.atom" htmlUrl="https://v8.dev/blog" />
       <outline type="rss" text="Voyage AI Blog" title="Voyage AI Blog" xmlUrl="https://blog.voyageai.com/feed" htmlUrl="https://blog.voyageai.com" />
       <!-- Sitemap-based (no RSS available) -->
+      <outline type="sitemap" text="Adept Blog" title="Adept Blog" xmlUrl="https://www.adept.ai/sitemap.xml" htmlUrl="https://www.adept.ai/blog" />
       <outline type="sitemap" text="Anthropic Engineering" title="Anthropic Engineering" xmlUrl="https://www.anthropic.com/sitemap.xml" htmlUrl="https://www.anthropic.com/engineering" />
+      <outline type="sitemap" text="Cartesia Blog" title="Cartesia Blog" xmlUrl="https://cartesia.ai/sitemap.xml" htmlUrl="https://cartesia.ai/blog" />
+      <outline type="sitemap" text="Cohere Blog" title="Cohere Blog" xmlUrl="https://cohere.com/sitemap.xml" htmlUrl="https://cohere.com/blog" />
+      <outline type="sitemap" text="Decagon Blog" title="Decagon Blog" xmlUrl="https://decagon.ai/sitemap.xml" htmlUrl="https://decagon.ai/blog" />
+      <outline type="sitemap" text="ElevenLabs Blog" title="ElevenLabs Blog" xmlUrl="https://elevenlabs.io/sitemap.xml" htmlUrl="https://elevenlabs.io/blog" />
+      <outline type="sitemap" text="Factory Blog" title="Factory Blog" xmlUrl="https://factory.ai/sitemap.xml" htmlUrl="https://factory.ai/news" />
+      <outline type="sitemap" text="Glean Blog" title="Glean Blog" xmlUrl="https://www.glean.com/sitemap.xml" htmlUrl="https://www.glean.com/blog" />
+      <outline type="sitemap" text="Harvey Blog" title="Harvey Blog" xmlUrl="https://www.harvey.ai/sitemap.xml" htmlUrl="https://www.harvey.ai/blog" />
+      <outline type="sitemap" text="Scale AI Blog" title="Scale AI Blog" xmlUrl="https://scale.com/sitemap.xml" htmlUrl="https://scale.com/blog" />
     </outline>
   </body>
 </opml>

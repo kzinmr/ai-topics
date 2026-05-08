@@ -38,7 +38,91 @@ SOURCES = [
         "url": "https://www.anthropic.com/engineering",
         "sitemap_url": "https://www.anthropic.com/sitemap.xml",
         "url_pattern": "/engineering/",
+        "file_prefix": "anthropic-engineering",
+        "title_suffixes": [" \\ Anthropic", " | Anthropic"],
         "state_file": os.path.expanduser("~/.hermes/processed_anthropic_engineering.json"),
+    },
+    # --- Tier 1: Paraform Talent Density Index companies (no RSS) ---
+    {
+        "name": "Cohere Blog",
+        "url": "https://cohere.com/blog",
+        "sitemap_url": "https://cohere.com/sitemap.xml",
+        "url_pattern": "/blog/",
+        "file_prefix": "cohere",
+        "title_suffixes": [" | Cohere"],
+        "state_file": os.path.expanduser("~/.hermes/processed_cohere_blog.json"),
+    },
+    {
+        "name": "ElevenLabs Blog",
+        "url": "https://elevenlabs.io/blog",
+        "sitemap_url": "https://elevenlabs.io/sitemap.xml",
+        "url_pattern": "/blog/",
+        "file_prefix": "elevenlabs",
+        "title_suffixes": [" | ElevenLabs"],
+        "state_file": os.path.expanduser("~/.hermes/processed_elevenlabs_blog.json"),
+    },
+    {
+        "name": "Harvey Blog",
+        "url": "https://www.harvey.ai/blog",
+        "sitemap_url": "https://www.harvey.ai/sitemap.xml",
+        "url_pattern": "/blog/",
+        "file_prefix": "harvey",
+        "title_suffixes": [" | Harvey", " - Harvey"],
+        "state_file": os.path.expanduser("~/.hermes/processed_harvey_blog.json"),
+    },
+    {
+        "name": "Scale AI Blog",
+        "url": "https://scale.com/blog",
+        "sitemap_url": "https://scale.com/sitemap.xml",
+        "url_pattern": "/blog/",
+        "file_prefix": "scale-ai",
+        "title_suffixes": [" | Scale AI"],
+        "state_file": os.path.expanduser("~/.hermes/processed_scale_ai_blog.json"),
+    },
+    {
+        "name": "Glean Blog",
+        "url": "https://www.glean.com/blog",
+        "sitemap_url": "https://www.glean.com/sitemap.xml",
+        "url_pattern": "/blog/",
+        "file_prefix": "glean",
+        "title_suffixes": [" | Glean"],
+        "state_file": os.path.expanduser("~/.hermes/processed_glean_blog.json"),
+    },
+    {
+        "name": "Factory Blog",
+        "url": "https://factory.ai/news",
+        "sitemap_url": "https://factory.ai/sitemap.xml",
+        "url_pattern": "/news/",
+        "file_prefix": "factory",
+        "title_suffixes": [" | Factory"],
+        "state_file": os.path.expanduser("~/.hermes/processed_factory_blog.json"),
+    },
+    {
+        "name": "Adept Blog",
+        "url": "https://www.adept.ai/blog",
+        "sitemap_url": "https://www.adept.ai/sitemap.xml",
+        "url_pattern": "/blog/",
+        "file_prefix": "adept",
+        "title_suffixes": [" | Adept"],
+        "state_file": os.path.expanduser("~/.hermes/processed_adept_blog.json"),
+    },
+    {
+        "name": "Cartesia Blog",
+        "url": "https://cartesia.ai/blog",
+        "sitemap_url": "https://cartesia.ai/sitemap.xml",
+        "url_pattern": "/blog/",
+        "file_prefix": "cartesia",
+        "title_suffixes": [" | Cartesia"],
+        "state_file": os.path.expanduser("~/.hermes/processed_cartesia_blog.json"),
+    },
+    {
+        "name": "Decagon Blog",
+        "url": "https://decagon.ai/blog",
+        "sitemap_url": "https://decagon.ai/sitemap.xml",
+        "url_pattern": "/blog/",
+        "file_prefix": "decagon",
+        "title_suffixes": [" | Decagon"],
+        "state_file": os.path.expanduser("~/.hermes/processed_decagon_blog.json"),
     },
 ]
 
@@ -97,7 +181,7 @@ def save_state(state_file: str, seen_urls: set):
         json.dump({"seen_urls": sorted(seen_urls), "updated": datetime.now(timezone.utc).isoformat()}, f, indent=2)
 
 
-def scrape_article(url: str) -> dict | None:
+def scrape_article(url: str, title_suffixes: list[str] | None = None) -> dict | None:
     """Scrape an article URL and return {url, title, content_md}."""
     try:
         with httpx.Client(timeout=REQUEST_TIMEOUT, follow_redirects=True) as client:
@@ -109,7 +193,11 @@ def scrape_article(url: str) -> dict | None:
         soup = BeautifulSoup(resp.text, "html.parser")
         
         title = soup.title.string if soup.title else url.rstrip("/").split("/")[-1]
-        title = title.replace(" \\ Anthropic", "").strip()  # Clean Anthropic title suffix
+        # Strip configured suffixes from title
+        if title_suffixes:
+            for suffix in title_suffixes:
+                if title.endswith(suffix):
+                    title = title[:-len(suffix)].strip()
         
         # Try to find main article content
         article = soup.find("article")
@@ -130,13 +218,13 @@ def scrape_article(url: str) -> dict | None:
         return {"url": url, "title": url.rstrip("/").split("/")[-1], "content_md": f"Scrape failed: {e}"}
 
 
-def save_raw_article(article: dict, source_name: str) -> str:
+def save_raw_article(article: dict, source_name: str, file_prefix: str) -> str:
     """Save article as raw markdown file. Returns the file path."""
     os.makedirs(WIKI_RAW_DIR, exist_ok=True)
     
     slug = article["url"].rstrip("/").split("/")[-1]
     date_str = datetime.now().strftime("%Y-%m-%d")
-    filename = f"{date_str}_anthropic-engineering_{slug}.md"
+    filename = f"{date_str}_{file_prefix}_{slug}.md"
     filepath = os.path.join(WIKI_RAW_DIR, filename)
     
     content = f"""---
@@ -198,10 +286,10 @@ def main():
         saved = []
         for article in new_articles:
             print(f"  Scraping: {article['url']}")
-            scraped = scrape_article(article["url"])
+            scraped = scrape_article(article["url"], source.get("title_suffixes"))
             if scraped:
                 scraped["lastmod"] = article.get("lastmod")
-                filepath = save_raw_article(scraped, source["name"])
+                filepath = save_raw_article(scraped, source["name"], source["file_prefix"])
                 saved.append({"url": article["url"], "title": scraped.get("title"), "filepath": filepath})
         
         # Update state
