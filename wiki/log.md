@@ -1,3 +1,16 @@
+## [2026-05-08] Blog Post: モデルの性能と制御性のトレードオフ
+
+**Action**: ユーザーリクエストによるオリジナルブログ記事の執筆。モデルの認識・処理性能と制御性・説明性の間に存在するトレードオフを、Scaling Hypothesis、Bitter Lesson、Structure Paradox、Alignment Paradox、Latent Reasoning vs CoT、Constitutional AI、MSMなどの観点から活写。
+
+**New pages created (1)**:
+- `raw/articles/2026-05-08_hermes_ai-performance-controllability-tradeoff.md` — モデル性能と制御性のトレードオフを巡るブログ記事（日本語、~13,900字）。Hyung Won Chung, Gwern Branwen, Rich Sutton, Anthropic (MSM), Constitutional AI, Omar Khattab, Boaz Barak等を引用。
+
+**Key sources referenced**:
+- concepts/scaling-hypothesis.md — Scaling Hypothesis, It From Byte, Structure Paradox
+- concepts/constitutional-ai.md — Constitutional AI vs Model Spec, Three Poles of Alignment
+- concepts/model-spec-midtraining.md — MSM, Rules vs Values
+- entities/omar-khattab/philosophy.md — Decomposition at the Right Joints
+
 ## [2026-05-08] τ-bench エコシステムの包括的Wiki化 — τ-bench → τ²-bench → τ³-Bench（τ-Knowledge + τ-Voice）
 
 **Action**: ユーザーリクエストによるSierra AI Researchのτ-benchエコシステム（論文5本 + ブログ4本 + taubench.com）の包括的取り込み。AI Agentの強化学習と評価に関する知見を集約。
