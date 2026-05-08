@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 5283 | Full entries: 4737 | Stubs: 541 |
+> Last updated: 2026-05-08 | Total pages: 5283 | Full entries: 4738 | Stubs: 540 |
 
 ## Entities (500 pages)
 
@@ -381,7 +381,7 @@
 - [[entities/wirtzdan]] — **Blog** | danielwirtz.com |
 - [[entities/xania-org]] — **Blog** | xania.org |
 - [[entities/xeiaso-net]] — **Blog** | xeiaso.net |
-- [[entities/xjdr]] — **URL:** https://xjdr.github.io/
+- [[entities/xjdr]] — xjdr (@_xjdr) — AI researcher, founder at Noumena Network. Creator of entropix (entropy-based LLM sampling, 3.4K ⭐) and primary architect of nmoe (B200-first MoE training, RDEP). JAX partisan. "high taste ai sommelier."
 - [[entities/xpeng]] — Chinese electric vehicle manufacturer with integrated robotics and flying vehicle divisions. Builds cars, robots, and flying vehicles on a single AI-powered platform.
 - [[entities/yacine-mahdid]] — **URL:** https://yacine.ca/
 - [[entities/yann-lecun]] — **フルネーム** | Yann André LeCun |

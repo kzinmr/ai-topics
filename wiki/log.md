@@ -1,3 +1,17 @@
+## [2026-05-08] enrich | xjdr (@_xjdr) — Noumena founder/entropix creator → stub → full
+
+**Action**: kzinmrからのリクエストにより、@_xjdrのエンティティページをスタブからフルエントリに拡充。
+
+**Enriched entity page**:
+- `entities/xjdr.md` — 77行のフルエントリ。Noumena Network創設者、entropix（3.4K ⭐）作者、nmoe/RDEPの主要アーキテクト。JAXパルチザン、分散システムのバックグラウンド。
+- `entities/noumena-network.md` — Key Peopleセクション追加、xjdrへのクロスリファレンス
+
+**Stub→Full**: entities/xjdr.md (status upgrade), index entry enriched
+
+**Cross-references**: [[entities/noumena-network]], [[concepts/rdep]], [[concepts/moe-training-noumena-methodology]], [[concepts/mixture-of-experts]]
+
+---
+
 ## [2026-05-08] ingest | Noumena Network Research — 12-Post MoE Training Methodology
 
 **Action**: kzinmrからのリクエストにより、https://noumena.com/research/ の12件の研究ポストを順に理解しwikiに追加。

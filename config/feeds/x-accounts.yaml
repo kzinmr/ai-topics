@@ -259,11 +259,18 @@ accounts:
   notes: ''
 - handle: '@_xjdr'
   name: xjdr
+  blog: https://xjdr.github.io
+  github: https://github.com/xjdr-alt/entropix
+  affiliation: Noumena Network
   topics:
   - ai
   - infrastructure
   - systems
-  notes: ''
+  - moe
+  - jax
+  - inference
+  - entropy
+  notes: 'Founder at Noumena Network. Creator of entropix and primary architect of nmoe/RDEP.'
 - handle: '@ctatedev'
   name: Chris Tate
   blog: https://ctate.dev
