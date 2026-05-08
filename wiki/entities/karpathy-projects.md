@@ -9,7 +9,7 @@ type: entity
 
 # Karpathy: Projects & Open Source
 
-Back to main profile: [[andrej-karpathy]]
+Back to main profile: [[entities/andrej-karpathy]]
 
 ## Eureka Labs (2024–present)
 

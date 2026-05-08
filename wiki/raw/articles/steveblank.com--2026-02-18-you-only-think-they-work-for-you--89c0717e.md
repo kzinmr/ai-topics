@@ -4,6 +4,7 @@ url: "https://steveblank.com/2026/02/18/you-only-think-they-work-for-you/"
 fetched_at: 2026-05-01T07:01:12.426066+00:00
 source: "steveblank.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # You Only Think They Work For You

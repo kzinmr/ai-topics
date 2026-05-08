@@ -186,8 +186,8 @@ Prime Intellect synthesizes both:
 
 - **[[concepts/rlm-recursive-language-models]]** — Zhang's primary contribution
 - **[[concepts/context-folding]]** — Parallel approach (Sun et al., 2025)
-- **[[shunyu-yao]]** — "The Second Half" framework; RL generalization thesis
-- **[[omar-khattab]]** — PhD advisor, ColBERT/DSPy creator
+- **[[entities/shunyu-yao]]** — "The Second Half" framework; RL generalization thesis
+- **[[entities/omar-khattab]]** — PhD advisor, ColBERT/DSPy creator
 - **[[concepts/tim-kraska]]** — PhD co-advisor, MIT DSG, ML systems
 - **[[concepts/gpu-mode]]** — Benchmarking leadership
 - **[[concepts/kernelbench]]** — ICML 2025 Best Paper

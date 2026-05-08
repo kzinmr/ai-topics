@@ -49,9 +49,9 @@ Ryan Lopopolo is the originator of **Harness Engineering** — the systematic pr
 ## Related People
 
 - **[[concepts/karpathy]]** — Shared interest in AI-assisted development; Ryan's work represents the enterprise-scale realization of Karpathy's vision
-- **[[simon-willison]]** — Overlapping focus on agentic engineering patterns and practical AI workflows
-- **[[jason-liu]]** — Complementary perspectives: Jason on structured outputs, Ryan on agent orchestration
-- **[[boris-cherny]]** — Both work on agent workflow optimization at scale; Ryan's enterprise focus vs. Boris's CLI focus
+- **[[entities/simon-willison]]** — Overlapping focus on agentic engineering patterns and practical AI workflows
+- **[[entities/jason-liu]]** — Complementary perspectives: Jason on structured outputs, Ryan on agent orchestration
+- **[[entities/boris-cherny]]** — Both work on agent workflow optimization at scale; Ryan's enterprise focus vs. Boris's CLI focus
 
 ## Related Concepts
 

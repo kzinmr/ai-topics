@@ -4,6 +4,7 @@ url: "http://fastcompression.blogspot.com/2019/01/writing-safer-c-code.html"
 fetched_at: 2026-05-05T07:00:58.763838+00:00
 source: "Yann Collet (LZ4/Zstd)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # RealTime Data Compression

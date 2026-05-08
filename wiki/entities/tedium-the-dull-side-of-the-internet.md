@@ -123,7 +123,7 @@ Smith writes thoughtfully about the business of running Tedium as an independent
 - [[concepts/the-silicon-underground]] — Dave Farquhar's blog; similar focus on technology history and forgotten stories
 -  — Chris's blog; shares the philosophy of publishing to learn and be corrected
 -  — independent developer who also builds and shares technical projects publicly
-- [[bogdanthegeek-s-blog]] — shares Smith's appreciation for the creative potential in discarded technology
+- [[entities/bogdanthegeek-s-blog]] — shares Smith's appreciation for the creative potential in discarded technology
 
 ## Sources
 

@@ -53,8 +53,8 @@ Core conviction: humanoid robots only matter at scale if affordable at scale. Ag
 
 ## Relationships
 
-- [[china-ai-industry]] — Key company in China's robotics ecosystem
+- [[entities/china-ai-industry]] — Key company in China's robotics ecosystem
 - [[dji]] — Founder Wang Xingxing previously worked at DJI
-- [[agi-bot]] — Competitor in humanoid robot market (5,168 units shipped in 2025)
+- [[entities/agi-bot]] — Competitor in humanoid robot market (5,168 units shipped in 2025)
 - [[ubtech-robotics]] — Competitor in humanoid and service robot market
 - [[fourier-intelligence]] — Competitor in humanoid and rehabilitation robotics

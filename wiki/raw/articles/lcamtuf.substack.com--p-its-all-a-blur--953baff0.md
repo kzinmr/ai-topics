@@ -4,6 +4,7 @@ url: "https://lcamtuf.substack.com/p/its-all-a-blur"
 fetched_at: 2026-05-01T07:02:12.207179+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # It's all a blur - lcamtuf’s thing

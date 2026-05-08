@@ -4,6 +4,7 @@ url: "https://substack.com/@simonw"
 fetched_at: 2026-04-18T02:40:11.320231+00:00
 source_date: 2026-04-18
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Simon Willison | Substack

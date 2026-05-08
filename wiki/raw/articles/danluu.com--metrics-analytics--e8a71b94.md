@@ -4,6 +4,7 @@ url: "https://danluu.com/metrics-analytics/"
 fetched_at: 2026-05-05T07:01:31.094641+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # A simple way to get more value from metrics

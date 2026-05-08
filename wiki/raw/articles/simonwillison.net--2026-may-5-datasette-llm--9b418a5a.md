@@ -4,6 +4,7 @@ url: "https://simonwillison.net/2026/May/5/datasette-llm/#atom-everything"
 fetched_at: 2026-05-06T07:01:08.666597+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # datasette-llm 0.1a7

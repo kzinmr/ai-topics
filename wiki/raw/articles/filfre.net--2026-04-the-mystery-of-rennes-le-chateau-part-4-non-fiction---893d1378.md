@@ -4,6 +4,7 @@ url: "https://www.filfre.net/2026/04/the-mystery-of-rennes-le-chateau-part-4-non
 fetched_at: 2026-05-01T07:02:09.163738+00:00
 source: "filfre.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The Mystery of Rennes-le-Château, Part 4: Non-Fiction Meets Fiction

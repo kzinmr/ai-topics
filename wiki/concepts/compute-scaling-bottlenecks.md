@@ -10,7 +10,7 @@ type: concept
 
 **Date:** April 10, 2026
 **Source:** SemiAnalysis — Dylan Patel's AI compute bottleneck analysis
-**Primary Analyst:** [[dylan-patel]] (SemiAnalysis)
+**Primary Analyst:** [[entities/dylan-patel]] (SemiAnalysis)
 **Related:** , [[concepts/space-gpus]], [[concepts/ai-bubble-economics]], [[concepts/cognitive-cost-of-agents]]
 
 ---

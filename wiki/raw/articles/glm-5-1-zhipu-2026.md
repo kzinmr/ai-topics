@@ -3,6 +3,7 @@ title: GLM-5.1 - Zhipu AI's Agentic Open-Source LLM
 date: 2026-05-06
 source: BentoML Open Source LLM Guide
 url: https://www.bentoml.com/blog/navigating-the-world-of-open-source-large-language-models
+updated: 2026-05-08
 ---
 
 # GLM-5.1

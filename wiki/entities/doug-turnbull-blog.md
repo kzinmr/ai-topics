@@ -25,4 +25,4 @@ Turnbull regularly publishes "daily search tips" — concise, practical observat
 
 ## Related
 
-- [[doug-turnbull]] — Main entity page
+- [[entities/doug-turnbull]] — Main entity page

@@ -4,6 +4,7 @@ url: "http://www.strchr.com/dawg_predictive"
 fetched_at: 2026-05-05T07:01:15.960517+00:00
 source: "Peter Kankowski (strchr)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Using DAWG for predictive text input

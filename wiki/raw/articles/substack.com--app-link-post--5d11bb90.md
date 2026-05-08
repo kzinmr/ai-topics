@@ -4,6 +4,7 @@ url: "https://substack.com/app-link/post?publication_id=293154&post_id=194385964
 fetched_at: 2026-04-17T13:10:18.836082+00:00
 source_date: 2026-04-17
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # The illusion of thinking

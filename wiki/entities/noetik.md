@@ -54,9 +54,9 @@ Noetik has figured out how to scale up their model and data, and they claim to s
 
 ## Related
 
-- [[claude-mythos]] — Anthropic's restricted-release frontier model
+- [[entities/claude-mythos]] — Anthropic's restricted-release frontier model
 - [[concepts/reasoning-models]] — Transformer-based reasoning approaches
-- [[gary-marcus]] — Has written extensively on AI in healthcare
+- [[entities/gary-marcus]] — Has written extensively on AI in healthcare
 
 ## Sources
 

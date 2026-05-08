@@ -179,7 +179,7 @@ As decision traces accumulate, enterprises need to monitor, debug, and evaluate 
 - [[concepts/ai-evals]] — Evals measure decision quality; context graphs provide the training data for better future decisions
 - [[concepts/model-context-protocol-mcp]] — MCP enables cross-system context retrieval, a technical prerequisite for context graphs
 - [[concepts/multi-agent-consensus-patterns]] — Multi-agent systems need shared context graphs to maintain decision consistency
-- [[simon-willison]] — Simon Willison has written extensively on AI agent architecture and tools-for-thinking
+- [[entities/simon-willison]] — Simon Willison has written extensively on AI agent architecture and tools-for-thinking
 
 ## Source
 

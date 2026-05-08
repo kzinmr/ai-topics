@@ -15,7 +15,7 @@ An AI-powered system for automating content creation, curation, and distribution
 
 ## Definition / Core Idea
 
-A content engine is the application of [[agentic-engineering]] principles to content production: instead of humans writing, editing, and distributing content manually, AI agents handle the full pipeline from research → drafting → editing → publishing → analytics, with humans in supervisory roles.
+A content engine is the application of [[concepts/agentic-engineering]] principles to content production: instead of humans writing, editing, and distributing content manually, AI agents handle the full pipeline from research → drafting → editing → publishing → analytics, with humans in supervisory roles.
 
 ## Core Components
 
@@ -43,7 +43,7 @@ A content engine is the application of [[agentic-engineering]] principles to con
 
 - [[content-engine]] — the broader discipline of systematic content production
 - [[agentic-workflow-patterns]] — content engines as a specific workflow pattern
-- [[solo-founder-stack]] — solo founders use content engines as force multipliers
+- [[concepts/solo-founder-stack]] — solo founders use content engines as force multipliers
 - [[newsjacking-framework]] — content engines can incorporate rapid-response newsjacking
 
 ## TODO: Research Items

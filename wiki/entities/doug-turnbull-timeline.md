@@ -33,5 +33,5 @@ sources: []
 
 ## Related
 
-- [[doug-turnbull]] — Main entity page
+- [[entities/doug-turnbull]] — Main entity page
 - [[concepts/opensource-connections]] — Search relevance consultancy where he served as CTO

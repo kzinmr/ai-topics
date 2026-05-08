@@ -4,6 +4,7 @@ url: "https://laplab.me/posts/p99-conf-2024/"
 fetched_at: 2026-05-05T07:01:24.240484+00:00
 source: "Nikita Lapkov (laplab)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # P99 Conf 2024 | Nikita Lapkov

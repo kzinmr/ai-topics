@@ -4,6 +4,7 @@ url: "http://cbloomrants.blogspot.com/2023/07/notes-on-float-and-multi-byte-delt
 fetched_at: 2026-05-05T07:01:47.721937+00:00
 source: "Charles Bloom"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Notes on float and multi-byte delta compression

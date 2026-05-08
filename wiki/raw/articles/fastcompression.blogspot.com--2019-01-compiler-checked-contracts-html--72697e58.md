@@ -4,6 +4,7 @@ url: "http://fastcompression.blogspot.com/2019/01/compiler-checked-contracts.htm
 fetched_at: 2026-05-05T07:00:58.202468+00:00
 source: "Yann Collet (LZ4/Zstd)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Compiler-checked contracts

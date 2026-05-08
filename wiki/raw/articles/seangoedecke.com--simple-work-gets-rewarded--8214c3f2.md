@@ -4,6 +4,7 @@ url: "https://seangoedecke.com/simple-work-gets-rewarded/"
 fetched_at: 2026-05-01T07:01:18.471011+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Engineers do get promoted for writing simple code

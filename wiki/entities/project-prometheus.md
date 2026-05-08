@@ -33,7 +33,7 @@ The massive $10B raise and $38B valuation position it among the largest AI start
 
 - [[entities/jeff-bezos]] — Founder background
 - [[concepts/physical-ai]] — The physical AI paradigm
-- [[openai]] — Competing talent and research
+- [[entities/openai]] — Competing talent and research
 - [[entities/google]] — DeepMind talent poaching target
 
 ## Sources

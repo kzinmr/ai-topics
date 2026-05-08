@@ -7,6 +7,7 @@ type: paper
 arxiv: "2508.19205"
 venue: "ICLR 2026 Oral"
 tags: [tts, speech, diffusion, next-token-diffusion, microsoft]
+updated: 2026-05-08
 ---
 
 # VibeVoice Technical Report

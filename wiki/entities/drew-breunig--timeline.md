@@ -13,7 +13,7 @@ sources: []
 
 # Drew Breunig: Timeline & Career History
 
-Back to main profile: [[drew-breunig]]
+Back to main profile: [[entities/drew-breunig]]
 
 ## Education
 
@@ -65,6 +65,6 @@ Back to main profile: [[drew-breunig]]
 
 ## See Also
 
-- [[drew-breunig--projects|Projects]]
-- [[drew-breunig--core-ideas|Core Ideas]]
-- [[drew-breunig--writings|Writings & Speaking]]
+- [[entities/drew-breunig--projects|Projects]]
+- [[entities/drew-breunig--core-ideas|Core Ideas]]
+- [[entities/drew-breunig--writings|Writings & Speaking]]

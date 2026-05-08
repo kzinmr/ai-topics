@@ -7,6 +7,7 @@ tweet_id: 2049136883528011954
 author: Palantir
 url: https://x.com/i/article/2049136883528011954
 bookmark_count: see_metadata
+updated: 2026-05-08
 ---
 
 # Connecting Agents to Decisions

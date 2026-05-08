@@ -11,7 +11,7 @@ tags:
 created: 2026-05-01
 updated: 2026-05-01
 aliases: [Beads (bd), bd, Beads Issue Tracker, Gastown Hall Beads]
-related: [[dolt]], [[claude-code]], [[claude-perfect-memory]], [[concepts/agent-memory-systems]], [[concepts/agent-task-tracking]]
+related: [[dolt]], [[entities/claude-code]], [[claude-perfect-memory]], [[concepts/agent-memory-systems]], [[concepts/agent-task-tracking]]
 sources:
   - https://gastownhall.github.io/beads/
   - https://github.com/steveyegge/beads
@@ -174,7 +174,7 @@ Available via PyPI (`beads-mcp`) — allows any MCP-compatible agent to interact
 ## Related
 
 - [[dolt]] — The version-controlled SQL database that powers Beads
-- [[claude-code]] — Primary target agent for Beads integration
+- [[entities/claude-code]] — Primary target agent for Beads integration
 - [[claude-perfect-memory]] — Filesystem-based persistent memory, alternative approach
 - [[concepts/agent-memory-systems]] — Broader category of agent memory approaches
 - [[concepts/agent-task-tracking]] — How agents track and manage tasks across sessions

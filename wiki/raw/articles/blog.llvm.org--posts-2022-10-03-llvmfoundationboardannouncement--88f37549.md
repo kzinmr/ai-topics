@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/posts/2022-10-03-llvmfoundationboardannouncement/"
 fetched_at: 2026-05-05T07:01:37.051538+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Announcing the LLVM Foundation Board of Directors for the 2022-2024 term

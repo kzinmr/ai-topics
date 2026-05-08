@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/generating-harry-potter-spells-and-kelewan-houses
 fetched_at: 2026-05-05T07:01:59.203669+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Generating Harry Potter Spell Names and Kelewan House Names

@@ -4,6 +4,7 @@ url: "https://boyter.org/2015/07/searchcode-path-profitability/"
 fetched_at: 2026-05-05T07:02:01.926842+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # searchcode the path to profitability

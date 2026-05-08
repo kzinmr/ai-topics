@@ -4,6 +4,7 @@ url: "https://danluu.com/keyboard-v-mouse/"
 fetched_at: 2026-05-05T07:01:31.266772+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The widely cited studies on mouse vs. keyboard efficiency are completely bogus

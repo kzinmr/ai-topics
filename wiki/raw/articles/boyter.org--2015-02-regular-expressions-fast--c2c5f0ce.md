@@ -4,6 +4,7 @@ url: "https://boyter.org/2015/02/regular-expressions-fast/"
 fetched_at: 2026-05-05T07:02:02.854689+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Regular Expressions are Fast, Until they Aren't

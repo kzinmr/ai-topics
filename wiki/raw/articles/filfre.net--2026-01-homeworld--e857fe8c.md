@@ -4,6 +4,7 @@ url: "https://www.filfre.net/2026/01/homeworld/"
 fetched_at: 2026-05-01T07:02:09.615066+00:00
 source: "filfre.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The Digital Antiquarian

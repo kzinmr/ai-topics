@@ -4,6 +4,7 @@ url: "https://boyter.org/2010/09/googles-colossus-explained/"
 fetched_at: 2026-05-05T07:02:07.508894+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Google's “Colossus”

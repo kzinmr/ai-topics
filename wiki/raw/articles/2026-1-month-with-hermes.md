@@ -2,6 +2,7 @@
 title: "1 Month with Hermes"
 created: 
 author_id: ""
+updated: 2026-05-08
 tweet_id: "2048678335950311860"
 source: x_article
 ---

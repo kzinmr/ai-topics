@@ -4,6 +4,7 @@ url: "https://1wwzn.mjt.lu/lnk/AUYAAJZ_u8sAAc7fQ14AA-_j058AAYKJInQAoTMkADFx-wBp5
 fetched_at: 2026-04-20T14:23:32.100245+00:00
 source_date: 2026-04-20
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # A little tool to visualise MoE expert routing

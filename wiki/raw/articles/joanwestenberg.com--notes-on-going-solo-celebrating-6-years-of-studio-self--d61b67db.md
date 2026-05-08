@@ -4,6 +4,7 @@ url: "https://www.joanwestenberg.com/notes-on-going-solo-celebrating-6-years-of-
 fetched_at: 2026-05-01T07:02:06.207961+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Notes on going solo: celebrating 6 years of Studio Self

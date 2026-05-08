@@ -5,6 +5,7 @@ source: "Miguel Grinberg, 'How Bitwarden Encrypts and Decrypts Secrets'"
 url: "https://blog.miguelgrinberg.com/post/how-bitwarden-encrypts-and-decrypts-secrets"
 related: ["concepts/self-hosting-ai-development"]
 created: 2026-04-27
+updated: 2026-05-08
 ---
 
 # Cryptography Patterns — Bitwarden Encryption Architecture

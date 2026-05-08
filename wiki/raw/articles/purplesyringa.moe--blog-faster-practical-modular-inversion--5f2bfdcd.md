@@ -4,6 +4,7 @@ url: "https://purplesyringa.moe/blog/./faster-practical-modular-inversion/"
 fetched_at: 2026-05-05T07:02:09.304969+00:00
 source: "Alisa Sireneva (PurpleSyringa)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Faster practical modular inversion

@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/codespelunker-details/"
 fetched_at: 2026-05-05T07:01:55.829629+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Code Spelunker how it works

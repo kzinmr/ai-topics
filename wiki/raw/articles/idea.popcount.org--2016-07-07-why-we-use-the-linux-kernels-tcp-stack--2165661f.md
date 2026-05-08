@@ -4,6 +4,7 @@ url: "https://idea.popcount.org/2016-07-07-why-we-use-the-linux-kernels-tcp-stac
 fetched_at: 2026-05-05T07:01:10.688400+00:00
 source: "Marek Vavruša (idea.popcount)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Why we use the Linux kernel's TCP stack

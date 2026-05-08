@@ -136,11 +136,11 @@ In early 2026, hackers compromised the Hugging Face platform, distributing Andro
 
 ## Related Entities
 - [[concepts/transformers-library]]
-- [[anthropic]]
-- [[openai]]
+- [[entities/anthropic]]
+- [[entities/openai]]
 - 
-- [[andrej-karpathy]] (Hugging Face contributor)
-- [[simon-willison]] (Hugging Face ecosystem user)
+- [[entities/andrej-karpathy]] (Hugging Face contributor)
+- [[entities/simon-willison]] (Hugging Face ecosystem user)
 - [[concepts/unsloth]] (fine-tuning on Transformers)
 - [[concepts/vllm]] (complementary inference engine)
 -  (acquired 2025)

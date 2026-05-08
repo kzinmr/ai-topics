@@ -125,8 +125,8 @@ Trivedy predicts a future where builders create custom harnesses (like Bolt or C
 
 *   : CEO/Co-founder of LangChain; Deep Agents is a key strategic direction.
 *   : Co-author on Deep Agents evaluation and Harness Engineering posts.
-*   [[ryan-lopopolo]]: Also discusses Harness Engineering; complementary perspectives on agent systems.
-*   [[simon-willison]]: Covers AI engineering and agent tools; often discusses similar themes.
+*   [[entities/ryan-lopopolo]]: Also discusses Harness Engineering; complementary perspectives on agent systems.
+*   [[entities/simon-willison]]: Covers AI engineering and agent tools; often discusses similar themes.
 *   : PhD Advisor at Temple University.
 
 ## X Activity Themes
@@ -223,9 +223,9 @@ Vivが提起した未解決の問い：
 
 *   : CEO/Co-founder of LangChain; Deep Agents is a key strategic direction.
 *   : Co-author on Deep Agents evaluation and Harness Engineering posts.
-*   [[ryan-lopopolo]]: Also discusses Harness Engineering; complementary perspectives on agent systems.
-*   [[simon-willison]]: Covers AI engineering and agent tools; often discusses similar themes.
+*   [[entities/ryan-lopopolo]]: Also discusses Harness Engineering; complementary perspectives on agent systems.
+*   [[entities/simon-willison]]: Covers AI engineering and agent tools; often discusses similar themes.
 *   : PhD Advisor at Temple University.
-*   [[alex-zhang]]: MIT CSAIL PhD, RLM (Recursive Language Models). Context Fragment ideaの源流。
-*   [[dwarkesh-patel]]: Agent memoryのフォーク・蓄積可能性についての議論。
+*   [[entities/alex-zhang]]: MIT CSAIL PhD, RLM (Recursive Language Models). Context Fragment ideaの源流。
+*   [[entities/dwarkesh-patel]]: Agent memoryのフォーク・蓄積可能性についての議論。
 *   [[richard-sutton]]: The Bitter Lesson — computation leveraged search > curated knowledge.

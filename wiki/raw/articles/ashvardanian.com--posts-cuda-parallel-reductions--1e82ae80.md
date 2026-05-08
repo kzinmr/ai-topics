@@ -4,6 +4,7 @@ url: "https://ashvardanian.com/posts/cuda-parallel-reductions/"
 fetched_at: 2026-05-05T07:01:51.800379+00:00
 source: "Ash Vardanyan"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Crushing CPUs with 879 GB/s Reductions in CUDA

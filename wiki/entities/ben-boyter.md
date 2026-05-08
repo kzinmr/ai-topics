@@ -11,6 +11,7 @@ tags:
 status: complete
 description: "Creator of searchcode.com, scc (Sloc Cloc and Code), and cs (Code Spelunker). Author of the 'Marketing to the Machine' B2A thesis."
 created: 2026-04-30
+updated: 2026-05-08
 sources:
   - "https://boyter.org/about/"
   - "https://github.com/boyter"
@@ -26,7 +27,7 @@ related:
 ---
 # Ben Boyter
 
-**Ben E. C. Boyter** (@boyter) is an Australian software engineer and creator of [[searchcode-com|searchcode.com]], [scc](https://github.com/boyter/scc) (Sloc Cloc and Code), and [cs](https://github.com/boyter/cs) (Code Spelunker). He is the author of the **"Marketing to the Machine"** thesis on Business-to-Agent (B2A) — designing services primarily for LLM consumption.
+**Ben E. C. Boyter** (@boyter) is an Australian software engineer and creator of [[entities/searchcode-com|searchcode.com]], [scc](https://github.com/boyter/scc) (Sloc Cloc and Code), and [cs](https://github.com/boyter/cs) (Code Spelunker). He is the author of the **"Marketing to the Machine"** thesis on Business-to-Agent (B2A) — designing services primarily for LLM consumption.
 
 ## About
 
@@ -41,7 +42,7 @@ Professional software engineer with 15+ years experience in development and test
 ## Key Projects
 
 ### searchcode.com
-Source code search engine that indexed 75B+ lines of code, rebooted in 2026 as a **code intelligence MCP server for LLMs**. First website with LLM testimonials and a B2A (Business-to-Agent) design philosophy. See [[searchcode-com]] for full details.
+Source code search engine that indexed 75B+ lines of code, rebooted in 2026 as a **code intelligence MCP server for LLMs**. First website with LLM testimonials and a B2A (Business-to-Agent) design philosophy. See [[entities/searchcode-com]] for full details.
 
 ### scc (Sloc Cloc and Code)
 Ultra-fast code counter with complexity calculations. Go-based, supports 300+ languages, one of the most used code counters in the world. [github.com/boyter/scc](https://github.com/boyter/scc)

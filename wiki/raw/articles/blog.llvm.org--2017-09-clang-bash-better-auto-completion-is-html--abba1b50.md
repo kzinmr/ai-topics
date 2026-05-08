@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2017/09/clang-bash-better-auto-completion-is.html"
 fetched_at: 2026-05-05T07:01:38.263005+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Clang ♥ bash -- better auto completion is coming to bash

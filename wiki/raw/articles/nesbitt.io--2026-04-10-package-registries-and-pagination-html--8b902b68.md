@@ -4,6 +4,7 @@ url: "https://nesbitt.io/2026/04/10/package-registries-and-pagination.html"
 fetched_at: 2026-05-01T07:02:04.417853+00:00
 source: "nesbitt.io"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Package Registries and Pagination

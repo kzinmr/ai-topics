@@ -61,6 +61,6 @@ While primarily focused on traditional software engineering, Orosz's work has be
 
 - [[substack]] — Platform hosting The Pragmatic Engineer newsletter.
 - [[alex-volkov]] — Tech newsletter author and AI commentator.
-- [[simon-willison]] — Software engineer and blogging personality in the tech ecosystem.
+- [[entities/simon-willison]] — Software engineer and blogging personality in the tech ecosystem.
 - [[engineering-management]] — Engineering leadership and management practices.
 - [[newsletter]] — Tech newsletter ecosystem and publishing.

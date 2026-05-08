@@ -11,7 +11,7 @@ type: entity
 
 # Karpathy: Research Contributions
 
-Back to main profile: [[andrej-karpathy]]
+Back to main profile: [[entities/andrej-karpathy]]
 
 ## Multimodal Vision-Language (2014-2015)
 

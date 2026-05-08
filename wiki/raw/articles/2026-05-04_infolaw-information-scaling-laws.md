@@ -6,6 +6,7 @@ scraped: 2026-05-05
 authors: [Fengze Liu, Weidong Zhou, et al.]
 tags: [scaling-laws, data-quality, pretraining, overtraining, icml-2026]
 venue: ICML 2026
+updated: 2026-05-08
 ---
 
 # InfoLaw: Information Scaling Laws for LLMs with Quality-Weighted Data

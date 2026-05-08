@@ -4,6 +4,7 @@ url: "https://krebsonsecurity.com/2026/05/canvas-breach-disrupts-schools-college
 fetched_at: 2026-05-08T07:01:35.554909+00:00
 source: "krebsonsecurity.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Canvas Breach Disrupts Schools & Colleges Nationwide

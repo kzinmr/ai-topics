@@ -2,6 +2,7 @@
 title: An Agentic Alternative to GraphRAG
 category: other
 status: active
+updated: 2026-05-08
 ---
 
 # An Agentic Alternative to GraphRAG

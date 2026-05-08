@@ -16,7 +16,7 @@ sources:
 
 # Drew Breunig: Writings, Speaking & Key Quotes
 
-Back to main profile: [[drew-breunig]]
+Back to main profile: [[entities/drew-breunig]]
 
 ## Writing Themes and Evolution
 
@@ -80,6 +80,6 @@ Since ChatGPT's launch, Breunig's writing shifted intensely toward AI:
 
 ## See Also
 
-- [[drew-breunig--core-ideas|Core Ideas]]
-- [[drew-breunig--projects|Projects]]
-- [[drew-breunig--timeline|Timeline]]
+- [[entities/drew-breunig--core-ideas|Core Ideas]]
+- [[entities/drew-breunig--projects|Projects]]
+- [[entities/drew-breunig--timeline|Timeline]]

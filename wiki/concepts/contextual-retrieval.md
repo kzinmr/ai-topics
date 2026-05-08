@@ -94,5 +94,5 @@ Anthropicは以下の既存手法も評価したが、Contextual Retrievalほど
 
 - [[rag-systems]] — RAG systems overview
 - [[retrieval-augmented-generation]] — RAG fundamentals
-- [[context-engineering]] — Context engineering for AI agents
+- [[concepts/context-engineering]] — Context engineering for AI agents
 - [[contextual-retrieval]] — (self)

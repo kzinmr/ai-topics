@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2015/01/lldb-is-coming-to-windows.html"
 fetched_at: 2026-05-05T07:01:41.021230+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # LLDB is Coming to Windows

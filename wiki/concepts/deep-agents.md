@@ -64,7 +64,7 @@ Deep agents require secure code execution environments. Options include:
 - [[concepts/agent-architecture-decomposition]] — Model/Runtime/Harness three-layer framework
 - [[entities/harrison-chase]] — LangChain CEO, Deep Agents framework originator
 - [[entities/nvidia-openshell]] — Open Runtime reference implementation
-- [[samuel-colvin]] — Pydantic AI creator
+- [[entities/samuel-colvin]] — Pydantic AI creator
 
 ## Harrison Chase's Framework: Deep Agents as Open Harness
 

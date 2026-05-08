@@ -70,7 +70,7 @@ Gary Marcus evaluated the results as finding a middle ground: Mythos is "nowhere
 -  (scraped article)
 
 ## Related
-- [[anthropic]]
+- [[entities/anthropic]]
 - 
 - [[concepts/project-glasswing]]
 - [[concepts/ai-safety]]

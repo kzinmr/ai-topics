@@ -23,7 +23,7 @@ related:
   - [[concepts/ai-observability]]
   - [[entities/hamel-husain]]
   - [[entities/shreya-shankar]]
-  - [[vtrivedy10]]
+  - [[entities/vtrivedy10]]
   - [[concepts/ai-evals-people]]
 sources:
   - raw/articles/2024-03-26_hamel-revenge-data-scientist.md
@@ -194,7 +194,7 @@ The core insight: once you have reliable, task-specific evals, you can treat har
 - Human review identified 2 subtle regressions (the agent was "passing" evals via technically correct but unhelpful strategies)
 - Teams that adopted formal harness hill-climbing processes shipped agent improvements 2-3x more frequently than teams relying on ad-hoc prompt changes
 
-**Practical takeaway:** Treat your harness as a learned system, not a fixed scaffold. Evals provide the signal; hill-climbing provides the optimization process; holdout sets and human review provide the safety rails. This is [[vtrivedy10|Vivek Trivedy]]'s recommended approach for teams that have graduated from ad-hoc prompt engineering to systematic agent development.
+**Practical takeaway:** Treat your harness as a learned system, not a fixed scaffold. Evals provide the signal; hill-climbing provides the optimization process; holdout sets and human review provide the safety rails. This is [[entities/vtrivedy10|Vivek Trivedy]]'s recommended approach for teams that have graduated from ad-hoc prompt engineering to systematic agent development.
 
 ## The "Token Burn" Crisis (May 2026)
 
@@ -263,7 +263,7 @@ Training and inference infrastructure advances enabling better harnesses:
 - [[concepts/rlm-recursive-language-models]] — Recursive decomposition as a harness pattern; RLM's programmatic context management aligns with harness engineering's build-verify loop.
 - [[entities/hamel-husain]] — Primary proponent and popularizer.
 - [[entities/shreya-shankar]] — Co-creator of AI evals course, major contributor to the movement.
-- [[vtrivedy10]] — LangChain contributor; advocates eval-driven harness hill-climbing for production agents.
+- [[entities/vtrivedy10]] — LangChain contributor; advocates eval-driven harness hill-climbing for production agents.
 - [[entities/sierra]] — Enterprise harness-as-a-service at $15B valuation
 - [[concepts/service-as-software]] — Business model thesis behind Sierra
 

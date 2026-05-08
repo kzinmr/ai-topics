@@ -4,6 +4,7 @@ url: "https://mitchellh.com/writing/feel-it"
 fetched_at: 2026-05-01T07:02:02.835805+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # You Have to Feel It

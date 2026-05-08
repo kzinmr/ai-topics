@@ -4,6 +4,7 @@ url: "https://overreacted.io/on-let-vs-const/"
 fetched_at: 2026-05-01T07:02:01.328424+00:00
 source: "overreacted.io"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # On let vs const - overreacted

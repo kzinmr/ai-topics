@@ -4,6 +4,7 @@ url: "https://ashvardanian.com/posts/javascript-ai-vector-search/"
 fetched_at: 2026-05-05T07:01:51.322180+00:00
 source: "Ash Vardanyan"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Accelerating JavaScript arrays by 10x for Vector Search 🏹

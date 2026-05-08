@@ -107,8 +107,8 @@ Jason curated a comprehensive speaker series featuring practitioners from top co
 
 ## See Also
 
-- [[jason-liu--instructor]] — Structured outputs library by Jason Liu using Pydantic validation.
-- [[jason-liu--context-engineering]] — Beyond chunks: context engineering for RAG and agentic systems.
+- [[entities/jason-liu--instructor]] — Structured outputs library by Jason Liu using Pydantic validation.
+- [[entities/jason-liu--context-engineering]] — Beyond chunks: context engineering for RAG and agentic systems.
 - [[retrieval-augmented-generation]] — Core RAG concepts and architecture patterns.
-- [[context-engineering]] — Designing information environments for AI agents.
+- [[concepts/context-engineering]] — Designing information environments for AI agents.
 - [[structured-outputs]] — Schema-first design for LLM integration.

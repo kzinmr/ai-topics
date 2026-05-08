@@ -4,6 +4,7 @@ url: "https://hyperbo.la/w/source-level-polymorphism/"
 fetched_at: 2026-04-29T07:02:15.568441+00:00
 source: "hyperbola :: blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Source-level Polymorphism in Rust

@@ -4,6 +4,7 @@ url: "https://hugotunius.se/2025/10/26/claude-teach-me-something.html"
 fetched_at: 2026-04-29T07:02:13.364073+00:00
 source: "hugotunius.se"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Claude, Teach Me Something

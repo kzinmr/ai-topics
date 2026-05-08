@@ -90,7 +90,7 @@ See [[doug-turnbull-blog]] for summaries of:
 - [[concepts/trey-grainger]] — Co-author of AI-Powered Search
 - [[concepts/john-berryman]] — Co-author of Relevant Search
 - [[concepts/max-irwin]] — Co-author of AI-Powered Search
-- [[jo-kristian-bergum]] — Hornet CEO, fellow search infrastructure veteran
+- [[entities/jo-kristian-bergum]] — Hornet CEO, fellow search infrastructure veteran
 - [[concepts/opensource-connections]] — Search consultancy where he served as CTO
 
 ## Sources

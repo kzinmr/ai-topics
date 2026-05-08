@@ -15,7 +15,7 @@ sources: []
 
 # Boris Cherny: Key Work & Impact
 
-Back to main profile: [[boris-cherny]]
+Back to main profile: [[entities/boris-cherny]]
 
 ## Claude Code (Creator)
 

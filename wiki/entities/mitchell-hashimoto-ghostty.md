@@ -18,7 +18,7 @@ sources: []
 
 # Ghostty Terminal Emulator
 
-[[mitchell-hashimoto]] created Ghostty, a next-generation terminal emulator written from scratch in **Zig**:
+[[entities/mitchell-hashimoto]] created Ghostty, a next-generation terminal emulator written from scratch in **Zig**:
 
 - Native macOS (AppKit) and Linux (GTK/GObject) implementations
 - GPU-accelerated rendering

@@ -5,6 +5,7 @@ author: William Brown (@willccbb)
 url: https://genai-handbook.github.io
 date: 2024-06-05
 tags: [handbook, curriculum, learning-resources, llm, generative-ai, survey]
+updated: 2026-05-08
 ---
 
 # GenAI Handbook

@@ -4,6 +4,7 @@ url: "https://smalldatum.blogspot.com/2026/04/sysbench-vs-mariadb-on-small-serve
 fetched_at: 2026-05-05T07:01:16.575898+00:00
 source: "Mark Callaghan (smalldatum)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Sysbench vs MariaDB on a small server: using the same charset for all versions

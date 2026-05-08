@@ -4,6 +4,7 @@ url: "https://danluu.com/su3su2u1/hpmor/"
 fetched_at: 2026-05-05T07:01:32.069788+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Harry Potter and the Methods of Rationality review by su3su2u1

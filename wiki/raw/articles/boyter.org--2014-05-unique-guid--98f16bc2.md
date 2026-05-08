@@ -4,6 +4,7 @@ url: "https://boyter.org/2014/05/unique-guid/"
 fetched_at: 2026-05-05T07:02:03.469146+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Not so unique GUID

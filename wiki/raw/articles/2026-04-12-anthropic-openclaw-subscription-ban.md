@@ -5,6 +5,7 @@ author: TNW / various
 date_scraped: 2026-04-13
 original_url: https://thenextweb.com/news/anthropic-openclaw-claude-subscription-ban-cost
 tags: [anthropic, openclaw, subscription-policy, peter-steinberger, third-party-tools]
+updated: 2026-05-08
 ---
 
 # Anthropic blocks OpenClaw from Claude subscriptions in cost crackdown

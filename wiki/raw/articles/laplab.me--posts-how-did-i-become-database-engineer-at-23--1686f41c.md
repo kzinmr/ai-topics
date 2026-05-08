@@ -4,6 +4,7 @@ url: "https://laplab.me/posts/how-did-i-become-database-engineer-at-23/"
 fetched_at: 2026-05-05T07:01:24.597926+00:00
 source: "Nikita Lapkov (laplab)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # How Did I Become Database Engineer at 23

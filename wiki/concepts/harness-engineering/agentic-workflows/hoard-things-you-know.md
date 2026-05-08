@@ -90,5 +90,5 @@ Willison自身が多様なプロジェクト（Datasette、sqlite-utils、llmな
 
 ## 参照
 
-- [[simon-willison]] — 概念提唱者
+- [[entities/simon-willison]] — 概念提唱者
 - [Hoard things you know how to do](https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know/)

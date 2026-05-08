@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2014-10-20-llvm-weekly-42-oct-20th-2014.html"
 fetched_at: 2026-05-05T07:01:41.429079+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # LLVM Weekly - #42, Oct 20th 2014

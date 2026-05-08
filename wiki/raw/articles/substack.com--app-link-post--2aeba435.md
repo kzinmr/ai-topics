@@ -4,6 +4,7 @@ url: "https://substack.com/app-link/post?publication_id=1084089&post_id=19519320
 fetched_at: 2026-04-23T05:08:36.077168+00:00
 source_date: 2026-04-23
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # [AINews] Tasteful Tokenmaxxing

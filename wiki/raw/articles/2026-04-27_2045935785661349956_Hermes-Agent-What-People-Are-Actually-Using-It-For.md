@@ -4,6 +4,7 @@ source: x.com
 article_id: 2045935785661349956
 article_url: https://x.com/i/article/
 date: 
+updated: 2026-05-08
 ---
 
 # Hermes Agent: What People Are Actually Using It For (/Last30Days of Reddit, X, and YouTube) 

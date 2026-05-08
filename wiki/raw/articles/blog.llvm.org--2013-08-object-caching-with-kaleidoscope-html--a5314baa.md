@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2013/08/object-caching-with-kaleidoscope.html"
 fetched_at: 2026-05-05T07:01:43.025645+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Object Caching with the Kaleidoscope Example Program

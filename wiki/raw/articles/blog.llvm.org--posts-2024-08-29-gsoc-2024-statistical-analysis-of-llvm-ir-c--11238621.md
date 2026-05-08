@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/posts/2024-08-29-gsoc-2024-statistical_analysis_of_l
 fetched_at: 2026-05-05T07:01:36.696412+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # GSoC 2024: Statistical Analysis of LLVM-IR Compilation

@@ -4,6 +4,7 @@ url: "https://ashvardanian.com/posts/llm-epicycles/"
 fetched_at: 2026-05-05T07:01:49.115126+00:00
 source: "Ash Vardanyan"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Before AI's Kepler Moment - Are LLMs the Epicycles of Intelligence?

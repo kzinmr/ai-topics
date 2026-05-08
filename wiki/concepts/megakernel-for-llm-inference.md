@@ -20,5 +20,6 @@ status: stub
 Stub page for Megakernel for LLM Inference.
 
 ## Related Pages
+- [[concepts/megakernel-inference]]
 
 - [[concepts/_index]]

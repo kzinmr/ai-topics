@@ -4,6 +4,7 @@ url: "http://xania.org/202512/21-vectorising-floats?utm_source=feed&utm_medium=r
 fetched_at: 2026-05-01T07:01:06.880639+00:00
 source: "xania.org"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # When SIMD Fails: Floating Point Associativity

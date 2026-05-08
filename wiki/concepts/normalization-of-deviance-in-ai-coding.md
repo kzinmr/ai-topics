@@ -3,6 +3,7 @@ title: "Normalization of Deviance in AI Coding"
 url: "https://wiki.ai-topics/concepts/normalization-of-deviance-in-ai-coding"
 date: 2026-05-07
 tags: [concept, ai-safety, coding-agents, risk-management]
+updated: 2026-05-08
 ---
 
 # Normalization of Deviance in AI Coding
@@ -44,7 +45,7 @@ Real-world usage over time becomes a more reliable signal than superficial code 
 
 - [[vibe-coding-vs-agentic-engineering]] — the distinction (and blurring) between AI-assisted coding approaches
 - [[ai-safety]] — broader AI safety considerations
-- [[coding-agents]] — AI coding agent tools and their capabilities
+- [[concepts/coding-agents]] — AI coding agent tools and their capabilities
 - [[software-quality-signals]] — how we evaluate software quality in an AI-generated code world
 
 ## Sources

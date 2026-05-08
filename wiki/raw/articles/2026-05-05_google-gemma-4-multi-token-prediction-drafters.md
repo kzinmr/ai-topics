@@ -4,6 +4,7 @@ source: https://blog.google/innovation-and-ai/technology/developers-tools/multi-
 date: 2026-05-05
 scraped: 2026-05-05
 tags: [google, gemma-4, speculative-decoding, inference, multi-token-prediction, mtp]
+updated: 2026-05-08
 ---
 
 # Accelerating Gemma 4: Multi-Token Prediction (MTP) Drafters

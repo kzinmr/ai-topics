@@ -4,6 +4,7 @@ url: "https://susam.net/code/news/hnskins/0.3.0.html"
 fetched_at: 2026-05-01T07:01:05.343762+00:00
 source: "susam.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # HN Skins 0.3.0 - Susam Pal

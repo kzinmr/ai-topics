@@ -268,6 +268,6 @@ DSPy、RLMs、GEPAの共通点は、**特定のプロンプト文本体に依存
 - [[concepts/rlms]] — 再帰的言語モデル
 - [[concepts/gepa]] — 遺伝的プロンプト最適化
 -  — エージェントワークフローパターン
-- [[omar-khattab]] — DSPy/GEPA/RLMsの創作者
-- [[alex-zhang]] — RLMsの第一著者
+- [[entities/omar-khattab]] — DSPy/GEPA/RLMsの創作者
+- [[entities/alex-zhang]] — RLMsの第一著者
 -  — 検索のlate interactionパラダイム

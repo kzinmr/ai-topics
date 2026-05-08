@@ -4,6 +4,7 @@ url: "https://smalldatum.blogspot.com/2026/02/hammerdb-tproc-c-on-small-server.h
 fetched_at: 2026-05-05T07:01:17.280856+00:00
 source: "Mark Callaghan (smalldatum)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # HammerDB tproc-c on a small server, Postgres and MySQL

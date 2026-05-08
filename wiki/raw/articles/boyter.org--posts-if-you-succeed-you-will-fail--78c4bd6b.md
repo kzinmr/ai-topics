@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/if-you-succeed-you-will-fail/"
 fetched_at: 2026-05-05T07:01:56.774805+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # If you succeed, you will fail

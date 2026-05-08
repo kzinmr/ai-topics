@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/2b629bf2-efd1-4444-809d-04569452314e?j=eyJ1I
 fetched_at: 2026-04-18T02:40:19.908927+00:00
 source_date: 2026-04-18
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # AI-Assisted Contributions and Maintainer Load

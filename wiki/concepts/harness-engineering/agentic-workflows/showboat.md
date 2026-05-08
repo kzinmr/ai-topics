@@ -73,4 +73,4 @@ Run `uvx showboat --help` and then create a `notes/api-demo.md` showboat documen
 - [[concepts/harness-engineering/agentic-engineering]] — 上位概念
 
 ## 参照
-- [[simon-willison]] — 開発者
+- [[entities/simon-willison]] — 開発者

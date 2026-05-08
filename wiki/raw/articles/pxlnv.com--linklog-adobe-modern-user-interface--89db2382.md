@@ -4,6 +4,7 @@ url: "https://pxlnv.com/linklog/adobe-modern-user-interface/"
 fetched_at: 2026-05-05T07:00:57.310860+00:00
 source: "daringfireball.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Adobe’s ‘Modern’ User Interface Is Just Webpages

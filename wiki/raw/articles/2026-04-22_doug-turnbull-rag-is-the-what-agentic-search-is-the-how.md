@@ -1,6 +1,7 @@
 ---
 title: "Rag is the What. Agentic search is the How." — Doug Turnbull
 created: 2026-04-22
+updated: 2026-05-08
 author: Doug Turnbull (@softwaredoug)
 source: YouTube
 url: https://www.youtube.com/watch?v=UXQ916WRK0A

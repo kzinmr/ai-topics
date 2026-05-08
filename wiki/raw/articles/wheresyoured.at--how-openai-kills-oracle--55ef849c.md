@@ -4,6 +4,7 @@ url: "https://www.wheresyoured.at/how-openai-kills-oracle/"
 fetched_at: 2026-05-01T07:01:05.737299+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Premium: How OpenAI Kills Oracle

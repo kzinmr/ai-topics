@@ -91,7 +91,7 @@ An experiment published in June 2023 where Hartford discovered that models train
 
 Hartford has worked alongside a notable community of open-source AI engineers:
 - **Wing "Caseus" Lian** and NanoBit of OpenAccess AI Collective
-- **Teknium** (open-source AI researcher, see [[teknium]])
+- **Teknium** (open-source AI researcher, see [[entities/teknium]])
 - **Pankaj Mathur** (Orca paper co-author at Microsoft)
 - **Tom "TheBloke" Jobbins** (quantization specialist)
 
@@ -114,10 +114,10 @@ His work was **sponsored by a16z**, which provided compute resources for Dolphin
 
 ## Related People
 
-- [[teknium]] — Fellow open-source AI researcher; collaborated on Dolphin datasets and models
-- [[georgi-gerganov]] — Creator of llama.cpp; Hartford's models are commonly used with Ggerganov's quantization ecosystem
-- [[peter-steinberger]] — Community figure in open-source AI tools; intersecting interests in local AI
-- [[hamel-husain]] — Open-source AI tooling advocate; shared community spaces
+- [[entities/teknium]] — Fellow open-source AI researcher; collaborated on Dolphin datasets and models
+- [[entities/georgi-gerganov]] — Creator of llama.cpp; Hartford's models are commonly used with Ggerganov's quantization ecosystem
+- [[entities/peter-steinberger]] — Community figure in open-source AI tools; intersecting interests in local AI
+- [[entities/hamel-husain]] — Open-source AI tooling advocate; shared community spaces
 - **Pankaj Mathur** — Microsoft researcher on the Orca paper that inspired Dolphin
 - **Wing "Caseus" Lian** — OpenAccess AI Collective; Dolphin collaborator
 - **Tom "TheBloke" Jobbins** — Quantized Dolphin models for community use

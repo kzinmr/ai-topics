@@ -80,5 +80,5 @@ This confirms [[concepts/cognitive-cost-of-agents]] — agents shift the economi
 - [[concepts/cognitive-cost-of-agents]] — エージェントがテストの経済性を変える
 
 ## 参照
-- [[simon-willison]] — Agentic Engineering Patterns創始者
-- [[martin-alderson]] — Agentic TDD re-evaluation, sysadmin with Claude Code
+- [[entities/simon-willison]] — Agentic Engineering Patterns創始者
+- [[entities/martin-alderson]] — Agentic TDD re-evaluation, sysadmin with Claude Code

@@ -4,6 +4,7 @@ url: "https://steveblank.com/2026/02/24/time-to-move-on-the-reason-relationships
 fetched_at: 2026-05-01T07:01:12.376111+00:00
 source: "steveblank.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Time to Move On - The Reason Relationships End

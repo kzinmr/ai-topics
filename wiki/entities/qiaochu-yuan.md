@@ -31,6 +31,7 @@ related:
   - "[[concepts/societal-shadow]]"
   - "[[entities/gwern]]"
   - "[[concepts/rlhf]]"
+updated: 2026-05-08
 ---
 
 # QC (Qiaochu Yuan)

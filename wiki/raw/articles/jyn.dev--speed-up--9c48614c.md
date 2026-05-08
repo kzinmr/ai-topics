@@ -4,6 +4,7 @@ url: "https://jyn.dev/speed-up/"
 fetched_at: 2026-04-29T07:02:13.064874+00:00
 source: "jyn.dev"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Speed Up!

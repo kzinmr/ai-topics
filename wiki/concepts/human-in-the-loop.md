@@ -42,11 +42,11 @@ Human-in-the-Loop (HITL) is a design pattern where AI agent actions require huma
 
 ## Related Concepts
 
-- [[agent-governance]]
+- [[concepts/agent-governance]]
 - [[ai-autonomy-debate]]
-- [[langgraph]]
-- [[anthropic-managed-agents]]
-- [[building-effective-agents]]
+- [[concepts/langgraph]]
+- [[concepts/anthropic-managed-agents]]
+- [[concepts/building-effective-agents]]
 
 ## Sources
 

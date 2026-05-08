@@ -15,7 +15,7 @@ sources: []
 
 # Ryan Lopopolo: Writings & Speaking
 
-Back to main profile: [[ryan-lopopolo]]
+Back to main profile: [[entities/ryan-lopopolo]]
 
 ## Blog / Key Writings (hyperbo.la)
 

@@ -5,6 +5,7 @@ url: "https://cohere.com/blog/securing-ai-supply-chains-coheres-commitment-to-mo
 scraped: "2026-05-08T07:45:10.716102+00:00"
 lastmod: "2025-11-13"
 type: "sitemap"
+updated: 2026-05-08
 ---
 
 # Our commitment to AI model signing on Hugging Face

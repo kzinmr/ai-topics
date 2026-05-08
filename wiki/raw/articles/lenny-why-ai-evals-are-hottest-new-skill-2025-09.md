@@ -2,6 +2,7 @@
 title: Why AI Evals Are the Hottest New Skill
 category: other
 status: active
+updated: 2026-05-08
 ---
 
 # Why AI Evals Are the Hottest New Skill

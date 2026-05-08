@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2019/11/deterministic-builds-with-clang-and-lld.html
 fetched_at: 2026-05-05T07:01:37.762922+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Deterministic builds with clang and lld

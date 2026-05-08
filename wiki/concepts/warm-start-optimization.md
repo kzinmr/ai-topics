@@ -52,7 +52,7 @@ Two patterns observed in production:
 ## Related Concepts
 
 - [[background-coding-agent]] — warm starts are critical for background agent UX
-- [[modal-sandboxes]] — Modal provides the infrastructure for warm start snapshots
+- [[concepts/modal-sandboxes]] — Modal provides the infrastructure for warm start snapshots
 - [[kv-cache]] — analogous concept in LLM inference (pre-computing KV states)
 
 ## Sources

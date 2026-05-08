@@ -4,6 +4,7 @@ url: "https://preshing.com/20200526/a-new-cross-platform-open-source-cpp-framewo
 fetched_at: 2026-05-05T07:01:02.789901+00:00
 source: "Preshing"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # A New Cross-Platform Open Source C++ Framework

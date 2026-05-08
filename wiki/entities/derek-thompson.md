@@ -130,7 +130,7 @@ This connects to his abundance thinking: the problem isn't lack of good content 
 ## Related
 
 - [[concepts/scaling-without-slop]] — Thompson's bubble analysis intersects with capability ceiling critiques
-- [[gary-marcus]] — both skeptical of AI hype; Marcus from technical/architectural, Thompson from economic/market
+- [[entities/gary-marcus]] — both skeptical of AI hype; Marcus from technical/architectural, Thompson from economic/market
 -  — co-author of *Abundance*- [[paulgraham-com]] — both write about economics, startups, and society
 - [[construction-physics-com]] — related analysis of building, housing, and infrastructure
 

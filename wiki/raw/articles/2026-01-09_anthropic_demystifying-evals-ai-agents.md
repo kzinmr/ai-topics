@@ -6,6 +6,7 @@ authors: ["Anthropic"]
 tags: [evals, ai-agents, evaluation, anthropic, harness-engineering]
 url: "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents"
 type: article
+updated: 2026-05-08
 ---
 
 # Demystifying Evals for AI Agents: A Comprehensive Summary

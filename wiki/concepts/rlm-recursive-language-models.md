@@ -340,6 +340,6 @@ Full analysis in [[concepts/dspy-rlm#RLM × Programmatic Tool Calling: 補完す
 - **[[concepts/context-folding]]** — Parallel approach: branch/return with summarization
 - **[[concepts/inference-time-scaling]]** — RLM scales computation, not parameters
 - **[[concepts/typed-rlm]]** — Typed functional runtime variant (Huawei); formal proofs for termination, cost bounds, optimal partition
-- **[[shunyu-yao]]** — "The Second Half" framework; RL generalization thesis
-- **[[alex-zhang]]** — Primary author, RLM creator
-- **[[omar-khattab]]** — Co-author, DSPy creator, ColBERT lineage
+- **[[entities/shunyu-yao]]** — "The Second Half" framework; RL generalization thesis
+- **[[entities/alex-zhang]]** — Primary author, RLM creator
+- **[[entities/omar-khattab]]** — Co-author, DSPy creator, ColBERT lineage

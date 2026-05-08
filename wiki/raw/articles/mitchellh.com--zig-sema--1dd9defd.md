@@ -4,6 +4,7 @@ url: "https://mitchellh.com/zig/sema"
 fetched_at: 2026-05-01T07:02:03.953523+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Zig Sema: ZIR => AIR

@@ -6,8 +6,9 @@ aliases:
   - jo-bergum
   - jobergum
   - Jo Bergum
+updated: 2026-05-08
 ---
 
 # Jo Kristian Bergum
 
-This page is a redirect. See [[jo-kristian-bergum]] for the comprehensive entity page.
+This page is a redirect. See [[entities/jo-kristian-bergum]] for the comprehensive entity page.

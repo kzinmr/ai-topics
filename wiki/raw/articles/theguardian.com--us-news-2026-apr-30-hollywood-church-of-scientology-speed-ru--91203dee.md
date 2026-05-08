@@ -4,6 +4,7 @@ url: "https://www.theguardian.com/us-news/2026/apr/30/hollywood-church-of-scient
 fetched_at: 2026-05-01T07:13:05.081111+00:00
 source: "daringfireball.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Scientology ‘speed running’ trend has LA abuzz and church unhappy

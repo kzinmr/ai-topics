@@ -109,7 +109,7 @@ Domain-specific priorities:
 
 ## Speaker Series: Systematically Improving RAG Applications
 
-See the full [[jason-liu--key-work]] page for the complete speaker series table featuring practitioners from Zapier, ChromaDB, Glean, LanceDB, Trellis, Cline, and others.
+See the full [[entities/jason-liu--key-work]] page for the complete speaker series table featuring practitioners from Zapier, ChromaDB, Glean, LanceDB, Trellis, Cline, and others.
 
 **Cross-series patterns:**
 1. Data quality examination beats algorithmic sophistication
@@ -120,7 +120,7 @@ See the full [[jason-liu--key-work]] page for the complete speaker series table 
 
 ## RAG Anti-Patterns
 
-See the full anti-patterns analysis on the [[jason-liu--key-work]] page, covering anti-patterns across Data Collection, Extraction, Indexing, Retrieval, and Generation stages.
+See the full anti-patterns analysis on the [[entities/jason-liu--key-work]] page, covering anti-patterns across Data Collection, Extraction, Indexing, Retrieval, and Generation stages.
 
 **Key principles:**
 > *\"The teams who can make that loop go as fast as possible are the ones who win, and that is pretty invariable.\"*

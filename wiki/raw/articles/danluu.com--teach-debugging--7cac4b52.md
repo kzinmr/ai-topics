@@ -4,6 +4,7 @@ url: "https://danluu.com/teach-debugging/"
 fetched_at: 2026-05-05T07:01:35.418631+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Why don't schools teach debugging?

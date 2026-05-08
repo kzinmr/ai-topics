@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/really-cheap-python-chatbot/"
 fetched_at: 2026-05-05T07:01:58.413913+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # A really cheap chatbot in Python

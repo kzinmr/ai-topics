@@ -4,6 +4,7 @@ url: "https://boyter.org/2010/08/mysql-exporting-all-databases/"
 fetched_at: 2026-05-05T07:02:08.224526+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # MySQL Exporting All Databases

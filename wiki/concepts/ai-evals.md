@@ -222,9 +222,9 @@ A prompt fix (adding company policy info) was expected to improve Brand Alignmen
 -  — PBT methodology applied to LLM evaluation (MacIver)
 ## Related People
 
-- [[drmaciver]] — Created `foundational-llm-evals` applying property-based testing to LLM evaluation
-- [[shreya-shankar]] — Co-creator of AI evals course, DocETL/EvalGen/SPADE researcher
-- [[hamel-husain]] — Co-creator of AI evals course, Critique Shadowing methodology pioneer
+- [[entities/drmaciver]] — Created `foundational-llm-evals` applying property-based testing to LLM evaluation
+- [[entities/shreya-shankar]] — Co-creator of AI evals course, DocETL/EvalGen/SPADE researcher
+- [[entities/hamel-husain]] — Co-creator of AI evals course, Critique Shadowing methodology pioneer
 
 ## Sources
 

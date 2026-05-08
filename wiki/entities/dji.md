@@ -17,7 +17,7 @@ Chinese drone manufacturer with an "iron grip" on the global drone market. Despi
 
 - Dominant global share in consumer and professional drone markets
 - U.S. regulators unable to loosen DJI's market position despite security concerns
-- Founded by Wang Xingxing, who later founded [[unitree-robotics]]
+- Founded by Wang Xingxing, who later founded [[entities/unitree-robotics]]
 
 ## Technology
 
@@ -27,8 +27,8 @@ Chinese drone manufacturer with an "iron grip" on the global drone market. Despi
 
 ## Relationships
 
-- [[china-ai-industry]] — Foundation of China's hardware-AI ecosystem
-- [[unitree-robotics]] — Founder Wang Xingxing previously worked at DJI
+- [[entities/china-ai-industry]] — Foundation of China's hardware-AI ecosystem
+- [[entities/unitree-robotics]] — Founder Wang Xingxing previously worked at DJI
 - [[xpeng]] — Related in autonomous systems space
 
 ## Open Questions

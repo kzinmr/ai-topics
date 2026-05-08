@@ -4,6 +4,7 @@ url: "https://danluu.com/bitc-retrospective/"
 fetched_at: 2026-05-05T07:01:36.260871+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Jonathan Shapiro's Retrospective Thoughts on BitC

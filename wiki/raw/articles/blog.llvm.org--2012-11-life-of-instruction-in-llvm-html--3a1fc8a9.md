@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2012/11/life-of-instruction-in-llvm.html"
 fetched_at: 2026-05-05T07:01:43.600816+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Life of an instruction in LLVM

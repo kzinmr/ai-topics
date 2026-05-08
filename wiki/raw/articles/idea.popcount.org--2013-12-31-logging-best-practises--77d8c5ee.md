@@ -4,6 +4,7 @@ url: "https://idea.popcount.org/2013-12-31-logging-best-practises"
 fetched_at: 2026-05-05T07:01:12.567269+00:00
 source: "Marek Vavruša (idea.popcount)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Logging best practices

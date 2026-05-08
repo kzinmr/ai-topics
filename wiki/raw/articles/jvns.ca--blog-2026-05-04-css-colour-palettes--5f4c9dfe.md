@@ -4,6 +4,7 @@ url: "https://jvns.ca/blog/2026/05/04/css-colour-palettes/"
 fetched_at: 2026-05-05T07:01:45.921782+00:00
 source: "Julia Evans (jvns)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Links to CSS colour palettes

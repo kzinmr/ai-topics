@@ -4,6 +4,7 @@ url: "https://dfarq.homeip.net/how-the-vectrex-game-console-sunk-a-124-year-old-
 fetched_at: 2026-05-05T07:00:56.988059+00:00
 source: "dfarq.homeip.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # How the Vectrex game console sunk a 124-year-old company

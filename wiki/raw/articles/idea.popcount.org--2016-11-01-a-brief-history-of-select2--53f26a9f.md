@@ -4,6 +4,7 @@ url: "https://idea.popcount.org/2016-11-01-a-brief-history-of-select2"
 fetched_at: 2026-05-05T07:01:10.679708+00:00
 source: "Marek Vavruša (idea.popcount)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # A brief history of select(2)

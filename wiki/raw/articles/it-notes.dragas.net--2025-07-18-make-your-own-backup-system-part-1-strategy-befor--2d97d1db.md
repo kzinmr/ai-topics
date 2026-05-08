@@ -4,6 +4,7 @@ url: "https://it-notes.dragas.net/2025/07/18/make-your-own-backup-system-part-1-
 fetched_at: 2026-04-29T07:02:10.914163+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Make Your Own Backup System - Part 1: Strategy Before Scripts

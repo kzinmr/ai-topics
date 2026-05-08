@@ -58,4 +58,4 @@ He maintains an active blog at softwaredoug.com with regular "daily search tips"
 
 ## Related
 
-- [[doug-turnbull]] — Main entity page
+- [[entities/doug-turnbull]] — Main entity page

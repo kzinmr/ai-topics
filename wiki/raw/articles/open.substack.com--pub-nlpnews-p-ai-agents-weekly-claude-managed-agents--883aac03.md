@@ -4,6 +4,7 @@ url: "https://open.substack.com/pub/nlpnews/p/ai-agents-weekly-claude-managed-ag
 fetched_at: 2026-04-11T15:03:54.663171+00:00
 source_date: 2026-04-11
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Introducing the Substack app

@@ -4,6 +4,7 @@ url: "https://boyter.org/2015/07/ab-testing/"
 fetched_at: 2026-05-05T07:02:01.762139+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Ben E. C. Boyter

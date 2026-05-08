@@ -4,6 +4,7 @@ url: "https://martinalderson.com/posts/using-agents-and-wine-to-move-off-windows
 fetched_at: 2026-05-01T07:02:07.013479+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Using agents and Wine to move off Windows

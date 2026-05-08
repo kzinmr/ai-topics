@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/bef34f55-aba4-494b-8abc-3dfbefd26ddd?j=eyJ1I
 fetched_at: 2026-04-18T02:40:21.110360+00:00
 source_date: 2026-04-18
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Making African Languages Visible: A Python-Based Guide to Low-Resource Language ID

@@ -4,6 +4,7 @@ url: "https://www.johndcook.com/blog/2026/04/23/solve-an-oblique-triangle/"
 fetched_at: 2026-05-01T07:02:09.717773+00:00
 source: "johndcook.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Approximation to solve an oblique triangle

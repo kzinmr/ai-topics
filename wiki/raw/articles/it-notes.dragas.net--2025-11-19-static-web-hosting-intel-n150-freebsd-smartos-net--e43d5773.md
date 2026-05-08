@@ -4,6 +4,7 @@ url: "https://it-notes.dragas.net/2025/11/19/static-web-hosting-intel-n150-freeb
 fetched_at: 2026-04-30T07:02:04.949716+00:00
 source: "it-notes.dragas.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Static Web Hosting on the Intel N150: FreeBSD, SmartOS, NetBSD, OpenBSD and Linux Compared

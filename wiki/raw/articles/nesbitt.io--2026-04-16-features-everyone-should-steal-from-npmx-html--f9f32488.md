@@ -4,6 +4,7 @@ url: "https://nesbitt.io/2026/04/16/features-everyone-should-steal-from-npmx.htm
 fetched_at: 2026-05-01T07:02:04.309976+00:00
 source: "nesbitt.io"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Features everyone should steal from npmx

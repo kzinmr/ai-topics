@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/d5d98552-d970-4eb8-b0ca-1d16880eb33d?j=eyJ1I
 fetched_at: 2026-04-22T00:25:01.341640+00:00
 source_date: 2026-04-22
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # ChatGPT Images 2.0 - YouTube

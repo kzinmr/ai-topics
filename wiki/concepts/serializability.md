@@ -39,5 +39,5 @@ Pydantic provides:
 
 - [[concepts/pydantic-serializability]] — Pydantic's implementation
 - [[concepts/structured-outputs]] — General pattern
-- [[samuel-colvin]] — Serializability pioneer
+- [[entities/samuel-colvin]] — Serializability pioneer
 - [[concepts/pydantic-ai]] — Framework integration

@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2019/03/fosdem-2019-llvm-developer-room-report.html"
 fetched_at: 2026-05-05T07:01:37.836198+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # FOSDEM 2019 LLVM developer room report

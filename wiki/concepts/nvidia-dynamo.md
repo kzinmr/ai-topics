@@ -50,14 +50,14 @@ Traditional inference wasn't built for agentic coding. Agentic tools make hundre
 
 ## Significance
 
-Dynamo represents a fundamental rethinking of inference architecture for agentic workloads, where context reuse (KV cache awareness) becomes the primary optimization target rather than raw throughput. This connects directly to [[context-engineering]] and [[kv-aware-routing]] as core principles.
+Dynamo represents a fundamental rethinking of inference architecture for agentic workloads, where context reuse (KV cache awareness) becomes the primary optimization target rather than raw throughput. This connects directly to [[concepts/context-engineering]] and [[concepts/kv-aware-routing]] as core principles.
 
 ## Related
 
-- [[agentic-engineering]]
-- [[inference]]
-- [[context-engineering]]
-- [[kv-aware-routing]]
+- [[concepts/agentic-engineering]]
+- [[concepts/inference]]
+- [[concepts/context-engineering]]
+- [[concepts/kv-aware-routing]]
 - [[nvidia]]
 
 ## Sources

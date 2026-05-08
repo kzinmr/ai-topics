@@ -4,6 +4,7 @@ url: "https://idea.popcount.org/2012-11-12-ssl-scanners"
 fetched_at: 2026-05-05T07:01:13.892733+00:00
 source: "Marek Vavruša (idea.popcount)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # SSL scanners - Idea of the day

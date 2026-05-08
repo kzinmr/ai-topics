@@ -39,10 +39,10 @@ China's demographic crisis (record-low births in 2025, projected >50% population
 
 ## Key Companies
 
-### [[deepseek]]
+### [[entities/deepseek]]
 Open-source LLM provider driving cost disruption in AI.
 
-### [[unitree-robotics]]
+### [[entities/unitree-robotics]]
 World's #1 humanoid robot seller, pricing disruption leader.
 
 ### [[xpeng]]
@@ -54,7 +54,7 @@ Global drone market dominance.
 ### [[ubtech-robotics]]
 Service robots and humanoid platforms; Apple and Disney partnerships.
 
-### [[agi-bot]]
+### [[entities/agi-bot]]
 Second-largest Chinese humanoid robot seller (5,168 units, 2025).
 
 ### [[fourier-intelligence]]
@@ -76,8 +76,8 @@ As of April 2026, NVIDIA's B300 AI servers reached **~7 million yuan (~$1M)** ea
 
 ### Key Hardware Players
 
-### [[deepseek]]
-Open-source LLM provider driving cost disruption. V4 deployed on [[google-tpu|Huawei Ascend 950]] for inference.
+### [[entities/deepseek]]
+Open-source LLM provider driving cost disruption. V4 deployed on [[entities/google-tpu|Huawei Ascend 950]] for inference.
 
 ## LLM Lab Culture — Nathan Lambert 現地報告 (May 2026)
 
@@ -135,4 +135,4 @@ Nathan Lambert が **Moonshot AI, Zhipu (Z.ai), Alibaba (Qwen), Meituan, Xiaomi,
 
 ## U.S. vs China Comparison
 
-See: [[ai-competition]] for detailed U.S.-vs-China strategic analysis.
+See: [[comparisons/ai-competition]] for detailed U.S.-vs-China strategic analysis.

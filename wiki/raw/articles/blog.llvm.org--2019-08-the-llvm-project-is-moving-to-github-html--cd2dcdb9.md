@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2019/08/the-llvm-project-is-moving-to-github.html"
 fetched_at: 2026-05-05T07:01:37.821211+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The LLVM Project is Moving to GitHub

@@ -129,7 +129,7 @@ type: entity
 
 ## See Also
 
-- [[yann-lecun]] — CNNのパイオニア。ImageNetの深層学習応用で協力関係。
+- [[entities/yann-lecun]] — CNNのパイオニア。ImageNetの深層学習応用で協力関係。
 - [[ian-goodfellow]] — GANsの発明者。コンピュータビジョンと深層学習で関連研究。
 - [[imageNet]] — Fei-Fei Liが作成した大規模画像データセット。深層学習革命の触媒。
 - [[stanford-hai]] — Liが共同設立したヒューマンセンタードAI研究所。

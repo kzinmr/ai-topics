@@ -63,4 +63,4 @@ This shift means:
 ## See Also
 
 - [[data-engineering]]
-- [[cloud-data-warehouses]]
+- [[concepts/cloud-data-warehouses]]

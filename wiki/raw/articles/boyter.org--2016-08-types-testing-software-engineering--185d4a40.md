@@ -4,6 +4,7 @@ url: "https://boyter.org/2016/08/types-testing-software-engineering/"
 fetched_at: 2026-05-05T07:02:00.791731+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Types of Testing in Software Engineering

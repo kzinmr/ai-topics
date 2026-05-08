@@ -4,6 +4,7 @@ url: "https://jvns.ca/blog/2024/10/31/ascii-control-characters/"
 fetched_at: 2026-05-05T07:01:47.087616+00:00
 source: "Julia Evans (jvns)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # ASCII control characters in my terminal

@@ -4,6 +4,7 @@ source: https://hamel.dev/notes/llm/rag/p5_map.html
 author: Hamel Husain (featuring Bryan Bischof, Ayush Chaurasia)
 date: 2025
 type: article
+updated: 2026-05-08
 ---
 
 # P5: RAG with Multiple Representations

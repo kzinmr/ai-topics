@@ -4,6 +4,7 @@ url: "https://danluu.com/monorepo/"
 fetched_at: 2026-05-05T07:01:32.853787+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Advantages of monorepos

@@ -5,6 +5,7 @@ url: "https://www.anthropic.com/engineering/effective-context-engineering-for-ai
 scraped: "2026-05-08T02:05:18.008377+00:00"
 lastmod: "2026-01-06T15:31:12.000Z"
 type: "sitemap"
+updated: 2026-05-08
 ---
 
 # Effective context engineering for AI agents

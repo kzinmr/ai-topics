@@ -4,6 +4,7 @@ url: "https://boyter.org/2016/07/set-ubuntu-linux-swapfile-python-fabric/"
 fetched_at: 2026-05-05T07:02:01.054577+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Set Ubuntu Linux Swapfile Using Python Fabric

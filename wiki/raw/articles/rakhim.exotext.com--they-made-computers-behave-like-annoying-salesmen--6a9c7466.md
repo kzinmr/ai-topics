@@ -4,6 +4,7 @@ url: "https://rakhim.exotext.com/they-made-computers-behave-like-annoying-salesm
 fetched_at: 2026-05-01T07:01:23.244974+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # They made computers behave like annoying salesmen

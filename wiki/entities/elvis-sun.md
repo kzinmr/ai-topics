@@ -34,9 +34,9 @@ Developed practical sysctl + LaunchDaemon configurations to override macOS's def
 
 ## Relationships
 
-- Collaborates with [[claude-code]] ecosystem (Claude Code router, prompt optimization)
+- Collaborates with [[entities/claude-code]] ecosystem (Claude Code router, prompt optimization)
 - Active in [[concepts/mlx-llm]] ecosystem — publishes quantized models and custom forks
-- Follows [[deepseek]] and [[anthropic]] model developments for local deployment compatibility
+- Follows [[entities/deepseek]] and [[entities/anthropic]] model developments for local deployment compatibility
 - Part of the open-source local AI community including [[concepts/llama-cpp]] users
 
 ## Blog / RSS

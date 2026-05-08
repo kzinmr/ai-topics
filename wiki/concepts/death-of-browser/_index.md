@@ -195,12 +195,12 @@ Stage 1 (2024)     Stage 2 (2025)         Stage 3 (2026)
 
 ## 関連エンティティ
 
-- [[anthropic-computer-use]]
-- [[openai-cua]]
-- [[browser-use]]
-- [[browserbase]]
-- [[webmcp]]
-- [[manus]]
+- [[entities/anthropic-computer-use]]
+- [[entities/openai-cua]]
+- [[entities/browser-use]]
+- [[entities/browserbase]]
+- [[entities/webmcp]]
+- [[entities/manus]]
 - [[perplexity-comet]]
 
 ## Sources

@@ -4,6 +4,7 @@ url: "https://jyn.dev/bootstrapping-rust-in-2023/"
 fetched_at: 2026-04-29T07:02:12.227110+00:00
 source: "jyn.dev"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Why is Rust's build system uniquely hard to use?

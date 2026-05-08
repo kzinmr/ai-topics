@@ -4,6 +4,7 @@ url: "https://substack.com/app-link/post?publication_id=1084089&post_id=19235606
 fetched_at: 2026-04-09T16:28:45.709479+00:00
 source_date: 2026-04-10
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Mistral: Voxtral TTS, Forge, Leanstral, & what's next for Mistral 4 - w/ Pavan Kumar Reddy & Guillaume Lample

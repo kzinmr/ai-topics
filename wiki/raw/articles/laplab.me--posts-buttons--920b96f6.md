@@ -4,6 +4,7 @@ url: "https://laplab.me/posts/buttons/"
 fetched_at: 2026-05-05T07:01:23.778164+00:00
 source: "Nikita Lapkov (laplab)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # This site has buttons!

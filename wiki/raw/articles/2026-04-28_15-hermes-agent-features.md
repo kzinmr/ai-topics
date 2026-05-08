@@ -7,6 +7,7 @@ tweet_id: 2049139067359568032
 author: Hermes Agent
 url: https://x.com/i/article/2049139067359568032
 bookmark_count: see_metadata
+updated: 2026-05-08
 ---
 
 # 15 Hermes Agent features you've never touched

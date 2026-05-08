@@ -103,8 +103,8 @@ The context graph for finance becomes a queryable audit trail and a library of p
 
 ## See Also
 
-- [[regie-ai]] — AI-native sales engagement platform using context graphs.
-- [[playerzero]] — AI agent startup using context graphs for production engineering.
-- [[arize]] — AI observability platform for monitoring agent decision quality.
-- [[ai-agents]] — AI agent infrastructure and frameworks.
+- [[entities/regie-ai]] — AI-native sales engagement platform using context graphs.
+- [[entities/playerzero]] — AI agent startup using context graphs for production engineering.
+- [[entities/arize]] — AI observability platform for monitoring agent decision quality.
+- [[concepts/ai-agents]] — AI agent infrastructure and frameworks.
 - [[enterprise-ai]] — Enterprise AI adoption and integration patterns.

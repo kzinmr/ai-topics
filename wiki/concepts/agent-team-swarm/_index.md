@@ -51,7 +51,7 @@ StrongDMはこのLevel 5を実践し、Anthropic Managed AgentsとOpenAI Symphon
 - SPEC.mdを提供 → 任意の言語で実装可能（参照実装はElixir）
 - Coding Agentを「管理」するのではなく「仕事を管理」するパラダイム
 - Ryan LopopoloがOpenAI Frontierで開発。3-5 PR/日 → 75 PR/週の実績
-- 詳細: [[concepts/openai-symphony]], [[ryan-lopopolo]]
+- 詳細: [[concepts/openai-symphony]], [[entities/ryan-lopopolo]]
 
 ### StrongDM Attractor / Dark Factory
 - 非インタラクティブ開発: 仕様 + シナリオ → Agentがコード作成 → テスト → 収束
@@ -87,7 +87,7 @@ Centralized state store with **optimistic concurrency control** (e.g., Redis Lua
 - [[concepts/harness-engineering]] — 単一Agentの実行環境設計（基礎）
 - [[concepts/multi-agent-autonomy-scale]] — 256Agentスケールの自律協調研究
 - [[concepts/harness-engineering/agentic-engineering-patterns]] — Agentic Engineeringのパターン集
-- [[ryan-lopopolo]] — Symphonyの作者、Harness Engineering提唱者
+- [[entities/ryan-lopopolo]] — Symphonyの作者、Harness Engineering提唱者
 - [[concepts/agent-communication-protocols]] — MCP/A2A/ACP プロトコル比較
 - [[concepts/agentic-conflict-resolution]] — 複数Agent間の競合検出・解決
 - [[concepts/zero-trust-agentic-ai]] — Agentのセキュリティ基盤

@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS
 fetched_at: 2026-04-12T18:01:56.779260+00:00
 source_date: 2026-04-13
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Anthropic's Mythos Lockdown, Meta's Muse Mission, and AI's Digital NATO

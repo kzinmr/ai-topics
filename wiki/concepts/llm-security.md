@@ -85,5 +85,5 @@ AISI uses a **ReAct agent scaffold** with Bash and Python tools inside a **Kali 
 ## Related Entities
 
 - [[entities/aisi]] — UK AI Safety Institute
-- [[openai]] — GPT-5.5 developer
-- [[anthropic]] — Claude Mythos comparison point
+- [[entities/openai]] — GPT-5.5 developer
+- [[entities/anthropic]] — Claude Mythos comparison point

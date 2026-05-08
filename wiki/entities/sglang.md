@@ -17,7 +17,7 @@ updated: 2026-04-27
 | Field | Value |
 |-------|-------|
 | **Type** | LLM Inference Engine / Serving Framework |
-| **Organization** | [[lmsys-org]] |
+| **Organization** | [[entities/lmsys-org]] |
 | **Repository** | https://github.com/sgl-project/sglang |
 | **Documentation** | https://docs.sglang.io |
 | **Language** | Python, CUDA, Triton |
@@ -26,7 +26,7 @@ updated: 2026-04-27
 
 ## Overview
 
-**SGLang** is a high-performance inference engine for large language models (LLMs) and vision-language models (VLMs), developed by [[lmsys-org]]. It was introduced in January 2024 with the novel **RadixAttention** mechanism for efficient prefix caching across multiple generation calls.
+**SGLang** is a high-performance inference engine for large language models (LLMs) and vision-language models (VLMs), developed by [[entities/lmsys-org]]. It was introduced in January 2024 with the novel **RadixAttention** mechanism for efficient prefix caching across multiple generation calls.
 
 SGLang has become one of the most widely deployed open-source LLM inference engines, alongside vLLM and TensorRT-LLM. It provides Day-0 support for major model releases and has deep hardware partnerships with NVIDIA, AMD, and Intel.
 

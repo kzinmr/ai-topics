@@ -4,6 +4,7 @@ url: "https://www.johndcook.com/blog/2026/05/06/category-mythology/"
 fetched_at: 2026-05-07T07:01:37.470548+00:00
 source: "johndcook.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The mythology of category theory

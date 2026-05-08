@@ -4,6 +4,7 @@ url: "https://evanhahn.com/how-i-use-gen-ai-on-this-blog/"
 fetched_at: 2026-04-29T07:02:19.718058+00:00
 source: "evanhahn.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # How I use generative AI on this blog

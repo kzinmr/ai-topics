@@ -4,6 +4,7 @@ url: "https://mitchellh.com/writing/apple-the-key-to-my-success"
 fetched_at: 2026-05-01T07:02:04.234637+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # APPLE: My Key to Success

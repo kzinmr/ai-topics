@@ -4,6 +4,7 @@ url: "https://danluu.com/karajack/"
 fetched_at: 2026-05-05T07:01:36.182610+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Kara Swisher interview of Jack Dorsey

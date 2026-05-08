@@ -4,6 +4,7 @@ url: "http://cbloomrants.blogspot.com/2023/09/patcher-part-3-how-rsync-works.htm
 fetched_at: 2026-05-05T07:01:47.398436+00:00
 source: "Charles Bloom"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Patcher Part 3 : How rsync works

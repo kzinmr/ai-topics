@@ -4,6 +4,7 @@ url: "http://www.paulgraham.com/mean.html"
 fetched_at: 2026-05-01T07:01:38.837511+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Mean People Fail

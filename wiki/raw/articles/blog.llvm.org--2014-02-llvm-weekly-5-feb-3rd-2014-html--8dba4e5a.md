@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2014/02/llvm-weekly-5-feb-3rd-2014.html"
 fetched_at: 2026-05-05T07:01:42.948012+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # LLVM Weekly - #5, Feb 3rd 2014

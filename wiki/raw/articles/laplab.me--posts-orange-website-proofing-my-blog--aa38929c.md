@@ -4,6 +4,7 @@ url: "https://laplab.me/posts/orange-website-proofing-my-blog/"
 fetched_at: 2026-05-05T07:01:24.403799+00:00
 source: "Nikita Lapkov (laplab)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Orange-Website-Proofing My Blog

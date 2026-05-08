@@ -100,8 +100,8 @@ Claudeが誤って `pkill -9 bash` を実行し、自分自身（とループ）
 
 ## See Also
 
-- [[agent-team-swarm]] — Agent team/swarm architecture overview
+- [[concepts/agent-team-swarm]] — Agent team/swarm architecture overview
 - [[multi-agent-orchestration-architecture]] — Multi-agent orchestration patterns
-- [[effective-harnesses-for-long-running-agents]] — Long-running agent harnesses
-- [[building-effective-agents]] — Building effective agents
+- [[concepts/effective-harnesses-for-long-running-agents]] — Long-running agent harnesses
+- [[concepts/building-effective-agents]] — Building effective agents
 - [[harness-design-long-running-apps]] — Harness design for long-running apps

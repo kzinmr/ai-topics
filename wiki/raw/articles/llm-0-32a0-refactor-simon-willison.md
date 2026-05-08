@@ -41,7 +41,7 @@ print(response.text())
 従来の `prompt=` オプションも引き続き機能し、内部的に単一アイテムのメッセージ配列にアップグレードされる。
 
 ## 関連概念
-- [[ai-agents]] — エージェントフレームワーク
+- [[concepts/ai-agents]] — エージェントフレームワーク
 - [[tool-use]] — ツール呼び出し機能
 - [[multimodal-models]] — 複数モーダル入出力
 

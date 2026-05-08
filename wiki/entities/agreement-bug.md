@@ -65,4 +65,4 @@ NYK Builderz (@nyk_builderz) が2026年3月に公開した、**Claude Codeサブ
 - [[back-of-house-multi-agent-patterns]] — マルチエージェントワークフロー
 - [[multi-agent-orchestration-patterns]] — 複数エージェントのオーケストレーション
 - [[subagents]] — サブエージェントのパターン
-- [[excessive-agency]] — エージェントの自律性の限界
+- [[concepts/excessive-agency]] — エージェントの自律性の限界

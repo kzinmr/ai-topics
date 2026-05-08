@@ -2,6 +2,7 @@
 title: Reflexive AI Usage — Shopify's Baseline Expectation
 source_url: https://www.firstround.com/ai/shopify
 scraped_date: 2026-04-26
+updated: 2026-05-08
 ---
 
 # Reflexive AI Usage is Now a Baseline Expectation at Shopify

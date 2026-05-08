@@ -4,6 +4,7 @@ url: "https://ashvardanian.com/posts/understanding-simd-complexity/"
 fetched_at: 2026-05-05T07:01:51.165500+00:00
 source: "Ash Vardanyan"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Understanding SIMD: Infinite Complexity of Trivial Problems 🔥

@@ -7,6 +7,7 @@ tweet_id: 2049159441870717428
 author: NVIDIAAI
 url: https://x.com/NVIDIAAI/status/2049159441870717428
 content_type: metadata_only (video/image tweet)
+updated: 2026-05-08
 ---
 
 # NVIDIA Nemotron 3 Nano Omni

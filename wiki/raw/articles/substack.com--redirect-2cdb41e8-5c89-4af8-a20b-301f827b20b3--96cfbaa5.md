@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/2cdb41e8-5c89-4af8-a20b-301f827b20b3?j=eyJ1I
 fetched_at: 2026-04-17T13:10:21.937690+00:00
 source_date: 2026-04-17
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # The real danger of AI hallucination

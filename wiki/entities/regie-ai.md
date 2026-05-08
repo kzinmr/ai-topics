@@ -100,8 +100,8 @@ The context graph becomes a competitive moat: the more deals processed, the smar
 
 ## See Also
 
-- [[playerzero]] — AI agent startup using context graphs for production engineering.
-- [[maximor]] — AI agent startup automating finance/accounting workflows.
-- [[arize]] — AI observability platform for monitoring agent decision quality.
-- [[ai-agents]] — AI agent infrastructure and frameworks.
+- [[entities/playerzero]] — AI agent startup using context graphs for production engineering.
+- [[entities/maximor]] — AI agent startup automating finance/accounting workflows.
+- [[entities/arize]] — AI observability platform for monitoring agent decision quality.
+- [[concepts/ai-agents]] — AI agent infrastructure and frameworks.
 - [[enterprise-ai]] — Enterprise AI adoption and integration patterns.

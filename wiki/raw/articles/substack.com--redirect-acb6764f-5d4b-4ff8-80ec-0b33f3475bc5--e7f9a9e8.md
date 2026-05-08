@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/acb6764f-5d4b-4ff8-80ec-0b33f3475bc5?j=eyJ1I
 fetched_at: 2026-04-22T00:25:02.527532+00:00
 source_date: 2026-04-22
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # [AINews] OpenAI launches GPT-Image-2

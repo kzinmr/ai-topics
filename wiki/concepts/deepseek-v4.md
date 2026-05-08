@@ -12,7 +12,7 @@ sources:
 
 # DeepSeek-V4
 
-DeepSeek-V4は、**100万トークン（1M）コンテキスト**の超高効率処理を実現したMixture-of-Experts（MoE）モデルシリーズ。DeepSeek-AIが2026年4月に発表。[[deepseek-v3|V3]]アーキテクチャを基盤に、**Hybrid Attention、Manifold-Constrained Hyper-Connections（mHC）、Muon Optimizer**など複数の革新的技術を導入し、1Mコンテキストでの推論コストをV3.2比で**3.7〜10倍削減**。
+DeepSeek-V4は、**100万トークン（1M）コンテキスト**の超高効率処理を実現したMixture-of-Experts（MoE）モデルシリーズ。DeepSeek-AIが2026年4月に発表。[[concepts/deepseek-v3|V3]]アーキテクチャを基盤に、**Hybrid Attention、Manifold-Constrained Hyper-Connections（mHC）、Muon Optimizer**など複数の革新的技術を導入し、1Mコンテキストでの推論コストをV3.2比で**3.7〜10倍削減**。
 
 ## モデルラインナップ
 
@@ -115,7 +115,7 @@ Specialist Training → On-Policy Distillation (OPD)
 
 **Stage 1: Specialist Training（専門家訓練）**
 - 数学・コード・エージェントの各ドメインで個別の専門家モデルを訓練
-- 手法: SFT + [[grpo|GRPO]]
+- 手法: SFT + [[concepts/grpo|GRPO]]
 - 各専門家は特定ドメインで極限まで最適化
 
 **Stage 2: On-Policy Distillation (OPD)**
@@ -238,13 +238,13 @@ DeepSeek-V4は以下の点でマイルストーン的成果：
 ## 関連項目
 
 - [[entities/deepseek]] — DeepSeek企業概要
-- [[deepseek-v3]] — 前世代アーキテクチャ
-- [[deepseek-v3-2]] — 直前世代（DSA、スケーラブルRL、エージェント合成）
-- [[deepseek-r1]] — 推論特化モデル（GRPOの起源）
-- [[grpo]] — ポストトレーニングで使用されるRLアルゴリズム
-- [[mixture-of-experts]] — MoEアーキテクチャ一般
+- [[concepts/deepseek-v3]] — 前世代アーキテクチャ
+- [[concepts/deepseek-v3-2]] — 直前世代（DSA、スケーラブルRL、エージェント合成）
+- [[concepts/deepseek-r1]] — 推論特化モデル（GRPOの起源）
+- [[concepts/grpo]] — ポストトレーニングで使用されるRLアルゴリズム
+- [[concepts/mixture-of-experts]] — MoEアーキテクチャ一般
 - [[long-context]] — 長文コンテキスト処理技術
-- [[speculative-decoding]] — 投機的デコーディング
+- [[concepts/speculative-decoding]] — 投機的デコーディング
 - [[fp4]] — 4ビット量子化
 - [[tilelang]] — カーネル開発DSL
-- [[inference]] — 推論効率化技術
+- [[concepts/inference]] — 推論効率化技術

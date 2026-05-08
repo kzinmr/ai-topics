@@ -5,6 +5,7 @@ author: Nathan VanBenschoten (Chief Architect)
 source_url: https://turbopuffer.com/blog/ann-v3
 type: raw-article
 tags: [turbopuffer, vector-search, ann, spfresh, rabitq, quantization, simd, avx512]
+updated: 2026-05-08
 ---
 
 # ANN v3: 100B Vector Search at 200ms p99

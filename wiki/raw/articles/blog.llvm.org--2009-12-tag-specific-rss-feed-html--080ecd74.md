@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2009/12/tag-specific-rss-feed.html"
 fetched_at: 2026-05-05T07:01:44.518293+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Welcome to the LLVM Blog

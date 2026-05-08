@@ -4,6 +4,7 @@ url: "https://jaykmody.com/blog/attention-intuition/"
 fetched_at: 2026-05-05T07:01:47.025696+00:00
 source: "Jay Mody"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # An Intuition for Attention

@@ -35,7 +35,7 @@ Florian Brand operates at the intersection of AI infrastructure, open model rese
 
 At Prime Intellect, Brand is a key contributor to the open superintelligence stack, working on **PRIME-RL**, a framework for large-scale asynchronous reinforcement learning training, and **INTELLECT-2**, the first globally distributed 32B-parameter RL training run. His work on decentralized training infrastructure addresses the central bottleneck of modern AI development: that frontier models require massive, centralized compute clusters. PRIME-RL's architecture decouples inference rollouts from gradient training, allowing heterogeneous compute contributions from anywhere in the world.
 
-Through Interconnects AI (co-edited with [[nathan-lambert]]), Brand produces the "Latest Open Artifacts" series — a widely-read monthly roundup of significant open model releases. His analytical approach combines hands-on technical evaluation with ecosystem-level trend analysis, making him one of the most influential voices in the open model community. His benchmark analysis posts, particularly "Quo vadis, LLM benchmarks?", have been cited extensively in discussions about how to properly evaluate frontier models.
+Through Interconnects AI (co-edited with [[entities/nathan-lambert]]), Brand produces the "Latest Open Artifacts" series — a widely-read monthly roundup of significant open model releases. His analytical approach combines hands-on technical evaluation with ecosystem-level trend analysis, making him one of the most influential voices in the open model community. His benchmark analysis posts, particularly "Quo vadis, LLM benchmarks?", have been cited extensively in discussions about how to properly evaluate frontier models.
 
 ## Core Ideas
 
@@ -168,9 +168,9 @@ Key message: Benchmarks indicate relative strengths and general progress, not ab
 
 ## Related People
 
-- **[[nathan-lambert]]** — Co-editor at Interconnects AI, collaborator on the Artifacts series
-- **[[varun-trivedy]]** — Both work on agent harness engineering; complementary perspectives on the harness-as-infrastructure concept
-- **[[philipp-schmid]]** — Both write about LLM deployment and evaluation; Brand focuses on benchmark analysis while Schmid focuses on deployment guides
+- **[[entities/nathan-lambert]]** — Co-editor at Interconnects AI, collaborator on the Artifacts series
+- **[[entities/varun-trivedy]]** — Both work on agent harness engineering; complementary perspectives on the harness-as-infrastructure concept
+- **[[entities/philipp-schmid]]** — Both write about LLM deployment and evaluation; Brand focuses on benchmark analysis while Schmid focuses on deployment guides
 - ****, ****, **** — Top contributors to PRIME-RL, colleagues at Prime Intellect
 
 ## X Activity Themes

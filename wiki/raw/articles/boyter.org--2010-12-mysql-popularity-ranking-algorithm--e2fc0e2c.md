@@ -4,6 +4,7 @@ url: "https://boyter.org/2010/12/mysql-popularity-ranking-algorithm/"
 fetched_at: 2026-05-05T07:02:07.155691+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # MySQL Popularity Ranking Algorithm

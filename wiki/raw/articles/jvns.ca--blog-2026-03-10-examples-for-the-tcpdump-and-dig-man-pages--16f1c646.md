@@ -4,6 +4,7 @@ url: "https://jvns.ca/blog/2026/03/10/examples-for-the-tcpdump-and-dig-man-pages
 fetched_at: 2026-05-05T07:01:46.232695+00:00
 source: "Julia Evans (jvns)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Examples for the tcpdump and dig man pages

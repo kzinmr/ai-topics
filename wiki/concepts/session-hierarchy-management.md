@@ -26,7 +26,7 @@ The core insight: **context bloat is inevitable at every scale, but each scale r
 
 ## Level 1: Single-Session Context Hygiene
 
-*Source: [[thariq-shihipar]] (Anthropic Claude Code team), "Claude Code Session Management & 1M Context" (April 2026)*
+*Source: [[entities/thariq-shihipar]] (Anthropic Claude Code team), "Claude Code Session Management & 1M Context" (April 2026)*
 
 At the individual session level, the challenge is **context rot** — performance degradation as the window fills with stale debugging history, failed attempts, and irrelevant tool outputs.
 
@@ -195,7 +195,7 @@ Is the task multi-phase with verifiable milestones?
 
 ## The Filesystem as Universal Interface
 
-Both frameworks converge on the same insight from [[thariq-shihipar]]:
+Both frameworks converge on the same insight from [[entities/thariq-shihipar]]:
 
 > "Your Agent should use a File System. This is a hill I will die on. Every agent can use a file system. The file system is an elegant way of representing state that your agent could read into context & allowing it to verify its work."
 
@@ -218,8 +218,8 @@ This makes the filesystem the **coordination layer** between Head Chef and Line 
 - [[concepts/single-agent-ceiling]] — The problem this framework solves
 - [[concepts/subagents]] — The primitive that bridges Level 1 and Level 2
 - [[concepts/context-engineering]] — Filesystem-as-context methodology
-- [[thariq-shihipar]] — Architect of Claude Code session management
-- [[milksandmatcha]] — Co-author of Back of House patterns
+- [[entities/thariq-shihipar]] — Architect of Claude Code session management
+- [[entities/milksandmatcha]] — Co-author of Back of House patterns
 
 ## Sources
 

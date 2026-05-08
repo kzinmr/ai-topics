@@ -11,6 +11,7 @@ aliases:
   - rl-harness-lifecycle
   - rl-harness-feedback-loop
   - co-evolutionary-harness-cycle
+updated: 2026-05-08
 ---
 
 # RL-Harness Lifecycle
@@ -280,13 +281,13 @@ The RL-harness lifecycle suggests focusing on:
 
 ## Related Concepts
 
-- **[[harness-engineering]]** — The discipline of designing and building agent scaffolding
+- **[[concepts/harness-engineering]]** — The discipline of designing and building agent scaffolding
 - **[[agent-harness]]** — Specific implementations of model-environment interfaces
-- **[[reinforcement-learning]]** — The training paradigm that internalizes harness patterns
-- **[[chain-of-thought]]** — Historical example of harness-to-capability evolution
+- **[[concepts/reinforcement-learning]]** — The training paradigm that internalizes harness patterns
+- **[[concepts/chain-of-thought]]** — Historical example of harness-to-capability evolution
 - **[[react-pattern]]** — Reasoning-acting interleaving as trainable behavior
 - **[[agent-delegation]]** — Subagent patterns and their internalization potential
-- **[[context-management]]** — Compaction, memory, and state preservation challenges
+- **[[concepts/context-management]]** — Compaction, memory, and state preservation challenges
 - **[[agent-environment-design]]** — Creating training worlds for agentic RL
 
 ## Sources

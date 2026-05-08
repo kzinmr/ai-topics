@@ -5,6 +5,7 @@ author: Xavier Denis (Engineer)
 source_url: https://turbopuffer.com/blog/zero-cost
 type: raw-article
 tags: [turbopuffer, rust, simd, performance, iterator, lsm-tree, optimization]
+updated: 2026-05-08
 ---
 
 # Zero-Cost Abstractions: When Rust Iterator Chains Block SIMD Vectorization

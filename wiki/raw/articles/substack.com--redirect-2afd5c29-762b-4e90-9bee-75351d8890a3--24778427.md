@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/2afd5c29-762b-4e90-9bee-75351d8890a3?j=eyJ1I
 fetched_at: 2026-04-23T05:08:29.535438+00:00
 source_date: 2026-04-22
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Tangle: An open-source ML experimentation platform built for scale (2025)

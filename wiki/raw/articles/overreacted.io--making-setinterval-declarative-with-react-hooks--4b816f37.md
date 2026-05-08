@@ -4,6 +4,7 @@ url: "https://overreacted.io/making-setinterval-declarative-with-react-hooks/"
 fetched_at: 2026-05-01T07:02:02.285173+00:00
 source: "overreacted.io"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Making setInterval Declarative with React Hooks

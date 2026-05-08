@@ -4,6 +4,7 @@ source: "https://www.gend.co/blog/claude-web-search-dynamic-filtering"
 authors:
   - GEND (Anthropic partner)
 date: 2026-03-30
+updated: 2026-05-08
 ---
 
 # Dynamic Filtering in Claude Web Search: Faster, Cheaper

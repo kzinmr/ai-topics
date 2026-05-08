@@ -19,7 +19,7 @@ sources:
   - "https://x.com/i/article/2045080054917476451"
 related:
   - "[[concepts/harness-engineering]]"
-  - "[[hermes-agent]]"
+  - "[[entities/hermes-agent]]"
   - "[[self-learning-agents]]"
 ---
 

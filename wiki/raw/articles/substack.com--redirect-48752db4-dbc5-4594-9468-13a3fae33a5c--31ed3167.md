@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/48752db4-dbc5-4594-9468-13a3fae33a5c?j=eyJ1I
 fetched_at: 2026-04-18T06:53:09.599529+00:00
 source_date: 2026-04-18
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # How I created OpenClaw, the breakthrough AI agent

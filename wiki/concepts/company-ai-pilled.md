@@ -36,10 +36,10 @@ There's a difference between "using AI" and being AI-pilled. One uses a chatbot 
 - Still tool-focused, not process-focused
 
 ### Level 3: AI-Pilled
-- AI usage is reflexive and baseline (see [[reflexive-ai]])
+- AI usage is reflexive and baseline (see [[concepts/reflexive-ai]])
 - Workflows redesigned around AI capabilities, not just augmented
 - Hiring and role design assumes AI collaboration
-- [[solo-founder-stack]] patterns applied internally
+- [[concepts/solo-founder-stack]] patterns applied internally
 
 ### Level 4: AI-Native
 - Company structure and operations designed from ground up with AI
@@ -48,9 +48,9 @@ There's a difference between "using AI" and being AI-pilled. One uses a chatbot 
 
 ## Connection to Other Frameworks
 
-- [[reflexive-ai]] — Shopify's Tobi Lütke memo is the canonical example of "AI-pilled" in practice
+- [[concepts/reflexive-ai]] — Shopify's Tobi Lütke memo is the canonical example of "AI-pilled" in practice
 - [[company-ai-pilled]] — broader organizational change theory
-- [[solo-founder-stack]] — AI-pilled companies adopt solo-founder efficiency internally
+- [[concepts/solo-founder-stack]] — AI-pilled companies adopt solo-founder efficiency internally
 
 ## Key Signals of Being AI-Pilled
 

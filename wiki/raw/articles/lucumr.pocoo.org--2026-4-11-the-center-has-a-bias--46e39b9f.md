@@ -4,6 +4,7 @@ url: "https://lucumr.pocoo.org/2026/4/11/the-center-has-a-bias/"
 fetched_at: 2026-05-01T07:02:07.519287+00:00
 source: "lucumr.pocoo.org"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The Center Has a Bias

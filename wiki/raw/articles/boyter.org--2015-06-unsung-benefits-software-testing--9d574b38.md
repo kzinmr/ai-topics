@@ -4,6 +4,7 @@ url: "https://boyter.org/2015/06/unsung-benefits-software-testing/"
 fetched_at: 2026-05-05T07:02:02.481099+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The Unsung Benefits of Software Testing

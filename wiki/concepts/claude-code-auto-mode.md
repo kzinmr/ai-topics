@@ -111,9 +111,9 @@ Claude Codeのauto modeは、手動承認と無ガードレールの中間に位
 
 ## See Also
 
-- [[claude-code]] — Claude Code agent harness
-- [[claude-code-best-practices]] — Best practices for Claude Code
-- [[agent-sandboxing]] — Agent sandboxing patterns
+- [[entities/claude-code]] — Claude Code agent harness
+- [[concepts/claude-code-best-practices]] — Best practices for Claude Code
+- [[concepts/agent-sandboxing]] — Agent sandboxing patterns
 - [[claude-code-sandboxing]] — Claude Code sandboxing implementation
-- [[agent-skills]] — Equipping agents with skills
-- [[code-execution-with-mcp]] — Code execution with MCP
+- [[concepts/agent-skills]] — Equipping agents with skills
+- [[concepts/code-execution-with-mcp]] — Code execution with MCP

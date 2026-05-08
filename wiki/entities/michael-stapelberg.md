@@ -102,7 +102,7 @@ Stapelberg has been running a blog since 2005 — over 20 years of documented te
 -  — Tiling window manager created by Stapelberg
 -  — X11 successor, now mature enough for Stapelberg's adoption
 -  — Another long-running free-software author and blogger
-- [[xeiaso-net]] — Shared interest in Nix/NixOS and practical infrastructure
+- [[entities/xeiaso-net]] — Shared interest in Nix/NixOS and practical infrastructure
 
 ## Sources
 

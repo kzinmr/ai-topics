@@ -168,7 +168,7 @@ Autonomous research pipeline using Firecrawl and Claude for enterprise AI case s
 - [[concepts/ai-persona-embodiment]] — His work on consistent agent personalities
 - [[concepts/personal-os-for-ai-agents]] — His Personal OS vision for AI agents
 - [[defense-in-depth]] — His defense-in-depth approach to agent safety
-- [[langgraph]] — His preferred orchestration framework
+- [[concepts/langgraph]] — His preferred orchestration framework
 - [[clinical-ai]] — His current domain at Sully.ai
 
 ## Sources

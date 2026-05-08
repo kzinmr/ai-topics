@@ -4,6 +4,7 @@ url: "https://open.substack.com/pub/thesignal/p/anthropics-mythos-lockdown-metas
 fetched_at: 2026-04-12T18:01:57.318390+00:00
 source_date: 2026-04-13
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Introducing the Substack app

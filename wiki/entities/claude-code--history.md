@@ -14,10 +14,10 @@ sources:
 
 # Claude Code: Development History
 
-Back to main profile: [[claude-code]]
+Back to main profile: [[entities/claude-code]]
 
 ## Origins (Sep 2024)
-[[boris-cherny]]がAnthropicに入社し、Claude 3.6モデルでプロトタイピングを開始。最初のプロトタイプはAppleScript経由で音楽を特定・変更するCLIツールだった。
+[[entities/boris-cherny]]がAnthropicに入社し、Claude 3.6モデルでプロトタイピングを開始。最初のプロトタイプはAppleScript経由で音楽を特定・変更するCLIツールだった。
 
 ## Internal Dogfooding (Nov 2024)
 - **20%のエンジニア**が初日に採用
@@ -30,7 +30,7 @@ Back to main profile: [[claude-code]]
 - 2025年7月時点ですでに高い成長率を記録
 
 ## OpenAI移管 (Jul 2025)
-[[anthropic]]から[[openai]]へ移管され、Boris ChernyがHead of Claude Codeとして開発を継続。
+[[entities/anthropic]]から[[entities/openai]]へ移管され、Boris ChernyがHead of Claude Codeとして開発を継続。
 
 ## Agent Teams GA (2026)
 マルチエージェント協調機能がGeneral Availabilityに到達。複数のClaude Codeインスタンスが役割分担しながら並行作業を実行可能。

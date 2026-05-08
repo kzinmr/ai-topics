@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/68a08744-2d40-4de3-996d-8e686635b126?j=eyJ1I
 fetched_at: 2026-04-09T15:14:37.590487+00:00
 source_date: 2026-04-10
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # AI Engineer Europe 2026

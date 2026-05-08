@@ -4,6 +4,7 @@ url: "https://substack.com/app-link/post?publication_id=1084089&post_id=19419582
 fetched_at: 2026-04-15T00:31:57.076186+00:00
 source_date: 2026-04-15
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Notion’s Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future - Simon Last & Sarah Sachs of Notion

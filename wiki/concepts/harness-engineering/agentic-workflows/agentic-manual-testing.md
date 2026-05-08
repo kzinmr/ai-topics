@@ -98,5 +98,5 @@ Start a dev server and then use `uvx rodney --help` to test the new homepage, lo
 - [[concepts/agentic-engineering]] — 上位概念
 
 ## 参照
-- [[simon-willison]] — Agentic Engineering Patterns創始者
+- [[entities/simon-willison]] — Agentic Engineering Patterns創始者
 - [[concepts/harness-engineering/agentic-workflows/rodney]] — ブラウザ自動化CLI

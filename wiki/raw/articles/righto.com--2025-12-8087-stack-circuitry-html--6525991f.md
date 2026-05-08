@@ -4,6 +4,7 @@ url: "http://www.righto.com/2025/12/8087-stack-circuitry.html"
 fetched_at: 2026-05-01T07:01:16.507800+00:00
 source: "righto.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The stack circuitry of the Intel 8087 floating point chip, reverse-engineered

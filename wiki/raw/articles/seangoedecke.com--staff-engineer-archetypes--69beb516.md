@@ -4,6 +4,7 @@ url: "https://seangoedecke.com/staff-engineer-archetypes/"
 fetched_at: 2026-05-04T07:01:10.050049+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Why I don't like the "staff engineer archetypes"

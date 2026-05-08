@@ -143,7 +143,7 @@ Several presentations focused on deploying late interaction in production:
 ## Related Concepts
 
 - [[concepts/colbert]] — The foundational late interaction retrieval model
-- [[jo-kristian-bergum]] — Vespa/Hornet researcher and ColBERT advocate
+- [[entities/jo-kristian-bergum]] — Vespa/Hornet researcher and ColBERT advocate
 - [[concepts/information-retrieval]] — The broader field LIR contributes to
 -  — Retrieval-augmented generation, a primary application area- [[concepts/vector-search]] — The broader embedding search paradigm
 -  — The late interaction scoring function-  — Multimodal extension of late interaction to visual documents

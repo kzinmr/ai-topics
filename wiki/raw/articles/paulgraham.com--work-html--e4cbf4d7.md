@@ -4,6 +4,7 @@ url: "http://www.paulgraham.com/work.html"
 fetched_at: 2026-05-01T07:01:37.972488+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # What Doesn't Seem Like Work?

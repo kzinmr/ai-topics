@@ -12,7 +12,7 @@ status: stub
 
 # The AI Consulting Playbook
 
-A comprehensive framework for building and scaling an AI consulting practice, created by **Jason Liu** (@jxnlco), founder of [[jason-liu|567 Studios]] and creator of the Instructor library. The playbook codifies the transition from employee/IC to independent consultant, covering positioning, pricing, sales, and scaling.
+A comprehensive framework for building and scaling an AI consulting practice, created by **Jason Liu** (@jxnlco), founder of [[entities/jason-liu|567 Studios]] and creator of the Instructor library. The playbook codifies the transition from employee/IC to independent consultant, covering positioning, pricing, sales, and scaling.
 
 ## Core Thesis: The Consulting Flywheel
 
@@ -136,7 +136,7 @@ Legal foundations, financial infrastructure, and practical getting-started guida
 
 ## Related Concepts
 
-- [[jason-liu]] — Author and creator
+- [[entities/jason-liu]] — Author and creator
 - [[concepts/evaluation-flywheel]] — Similar iterative improvement pattern applied to AI evaluation
 - [[concepts/ai-organization/ai-org-context-as-moat]] — Context as competitive moat aligns with the consulting positioning framework
 - [[concepts/agentic-workflow-patterns]] — Structural patterns that complement the consulting playbook's systematization approach

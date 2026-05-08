@@ -4,6 +4,7 @@ url: "https://simonwillison.net/2026/May/7/github-repo-stats/#atom-everything"
 fetched_at: 2026-05-08T07:01:35.300836+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # GitHub Repo Stats

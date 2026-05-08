@@ -266,7 +266,7 @@ The Karpathy Loop's core insight — that constraint quality determines autonomy
 - [What Karpathy's autoresearch Actually Does](https://starkslab.com/notes/autoresearch-review-what-it-actually-does) — Hype vs reality review
 - [Autoresearch Complete 2026 Guide](https://o-mega.ai/articles/karpathy-autoresearch-complete-2026-guide) — Technical guide
 -  — Simon Willison's agentic engineering framework- [[concepts/harness-engineering]] — Ryan Lopopolo's harness engineering concept
-- [[andrej-karpathy]] — Andrej Karpathy entity page
+- [[entities/andrej-karpathy]] — Andrej Karpathy entity page
 
 ---
 

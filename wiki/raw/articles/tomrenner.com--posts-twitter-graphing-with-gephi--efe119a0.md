@@ -4,6 +4,7 @@ url: "https://tomrenner.com/posts/twitter-graphing-with-gephi/"
 fetched_at: 2026-05-01T07:01:08.224295+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Twitter network graphing with Gephi

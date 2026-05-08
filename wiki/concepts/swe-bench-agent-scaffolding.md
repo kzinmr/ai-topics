@@ -87,8 +87,8 @@ Your thinking should be thorough and so it's fine if it's very long.
 
 ## See Also
 
-- [[swe-bench]] — SWE-bench benchmark overview
-- [[frontier-swe-benchmark]] — Frontier SWE benchmark
+- [[concepts/swe-bench]] — SWE-bench benchmark overview
+- [[concepts/frontier-swe-benchmark]] — Frontier SWE benchmark
 - [[agent-harnesses]] — Agent harness comparison
-- [[building-effective-agents]] — Building effective agents (Anthropic)
-- [[coding-agents]] — Coding agents overview
+- [[concepts/building-effective-agents]] — Building effective agents (Anthropic)
+- [[concepts/coding-agents]] — Coding agents overview

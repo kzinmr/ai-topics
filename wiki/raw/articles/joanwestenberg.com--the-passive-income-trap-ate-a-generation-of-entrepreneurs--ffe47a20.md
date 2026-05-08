@@ -4,6 +4,7 @@ url: "https://www.joanwestenberg.com/the-passive-income-trap-ate-a-generation-of
 fetched_at: 2026-05-01T07:02:06.226591+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The "Passive Income" trap ate a generation of entrepreneurs

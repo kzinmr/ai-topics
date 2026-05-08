@@ -100,7 +100,7 @@ Created the product and documentation for serverless and dedicated model inferen
 
 ### Zephyr
 
-Contributed to the **Zephyr-β** model family — small, aligned chat models trained with Direct Preference Optimization (DPO) that demonstrated effective alignment without massive compute budgets. (See also: [[nathan-lambert]] who was the RLHF Team Lead at Hugging Face during this period.)
+Contributed to the **Zephyr-β** model family — small, aligned chat models trained with Direct Preference Optimization (DPO) that demonstrated effective alignment without massive compute budgets. (See also: [[entities/nathan-lambert]] who was the RLHF Team Lead at Hugging Face during this period.)
 
 ### SmolLM
 
@@ -134,7 +134,7 @@ Authored works on **context engineering** — the practice of optimizing LLM con
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — RLHF and DPO alignment methods
 - [[concepts/fine-tuning/trl]] — TRL library used in his fine-tuning tutorials
 - [[concepts/pytorch-fsdp-distributed-training]] — Distributed training with FSDP
-- [[nathan-lambert]] — Fellow Hugging Face RLHF researcher, co-contributor to Zephyr
+- [[entities/nathan-lambert]] — Fellow Hugging Face RLHF researcher, co-contributor to Zephyr
 - [[entities/elie-bakouch]] — Hugging Face ML engineer, co-contributor to SmolLM
 - [[entities/zach-mueller]] — Technical Lead for Hugging Face Accelerate
 - [[entities/clefourrier]] — Research scientist at Hugging Face, evaluation lead

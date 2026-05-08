@@ -5,6 +5,7 @@ source_created_at: "2026-01-19T03:27:51.000Z"
 scraped_at: "2026-04-28T23:42:00Z"
 title: "Effective harnesses for long-running agents"
 url: "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents"
+updated: 2026-05-08
 ---
 
 # Effective Harnesses for Long-Running Agents

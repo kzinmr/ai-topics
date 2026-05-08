@@ -4,6 +4,7 @@ url: "http://www.paulgraham.com/5founders.html"
 fetched_at: 2026-05-01T07:01:44.153586+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Five Founders

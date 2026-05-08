@@ -4,6 +4,7 @@ url: "https://rakhim.exotext.com/here-we-go"
 fetched_at: 2026-05-01T07:01:23.717465+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Here we go | exotext

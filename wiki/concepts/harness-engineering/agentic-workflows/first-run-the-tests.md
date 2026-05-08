@@ -70,4 +70,4 @@ Run "uv run pytest"
 - [[concepts/harness-engineering/agentic-engineering]] — 上位概念
 
 ## 参照
-- [[simon-willison]] — このパターンの創始者
+- [[entities/simon-willison]] — このパターンの創始者

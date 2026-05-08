@@ -4,6 +4,7 @@ url: "https://danlark.org/2021/06/11/beyond-malloc-efficiency-to-fleet-efficienc
 fetched_at: 2026-05-05T07:01:52.394694+00:00
 source: "Daniel Kutenin (danlark)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Beyond malloc efficiency to fleet efficiency: a hugepage-aware memory allocator

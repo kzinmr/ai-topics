@@ -117,9 +117,9 @@ These patterns map to agentic engineering concepts:
 
 | Pattern | Agentic Engineering Equivalent |
 |---------|-------------------------------|
-| Supervisor | [[harness-engineering]] + single orchestrator |
-| Hierarchical | [[agent-team-swarm]] Level 4+ orchestration |
+| Supervisor | [[concepts/harness-engineering]] + single orchestrator |
+| Hierarchical | [[concepts/agent-team-swarm]] Level 4+ orchestration |
 | Peer-to-Peer | OpenAI Symphony's agent-to-agent negotiation |
-| Swarm | Emergent [[agent-team-swarm]] behavior |
+| Swarm | Emergent [[concepts/agent-team-swarm]] behavior |
 
 See [[concepts/multi-agent-consensus-patterns]] for the wiki concept page.

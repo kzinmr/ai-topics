@@ -4,6 +4,7 @@ url: "https://pluralistic.net/2026/04/15/artificial-lifeforms/"
 fetched_at: 2026-05-01T07:01:12.869444+00:00
 source: "pluralistic.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Pluralistic: Rights for robots (15 Apr 2026)

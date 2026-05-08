@@ -4,6 +4,7 @@ url: "https://hyperbo.la/w/tool-discovery/"
 fetched_at: 2026-04-29T07:02:15.226121+00:00
 source: "hyperbola :: blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # MCP Solves Tool Discovery for LLMs

@@ -4,6 +4,7 @@ url: "https://laplab.me/posts/handmade-seattle-2023/"
 fetched_at: 2026-05-05T07:01:24.338645+00:00
 source: "Nikita Lapkov (laplab)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Handmade Seattle 2023

@@ -4,6 +4,7 @@ url: "https://chesspeace.app/"
 fetched_at: 2026-05-05T07:00:56.705134+00:00
 source: "daringfireball.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # A Peaceful Chess Puzzle Game for iOS

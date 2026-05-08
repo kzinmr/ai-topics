@@ -96,5 +96,5 @@ Instead of building a static graph, the system:
 
 - [[concepts/knowledge-graph-memory-agents]] — Graph memory approaches; this is the agentic alternative
 - [[concepts/agentic-rag]] — Broader taxonomy of agentic retrieval-augmented generation patterns
-- [[sheshansh-agrawal]] — Author, Contextual AI Director of Research
+- [[entities/sheshansh-agrawal]] — Author, Contextual AI Director of Research
 -  — Traditional RAG precursor pattern

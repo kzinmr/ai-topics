@@ -4,6 +4,7 @@ url: "https://www.johndcook.com/blog/2026/04/21/an-ai-odyssey-part-4-astounding-
 fetched_at: 2026-05-01T07:02:09.570288+00:00
 source: "johndcook.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # An AI Odyssey, Part 4: Astounding Coding Agents

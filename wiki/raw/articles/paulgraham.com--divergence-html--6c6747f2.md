@@ -4,6 +4,7 @@ url: "http://www.paulgraham.com/divergence.html"
 fetched_at: 2026-05-01T07:01:45.117729+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Could VC be a Casualty of the Recession?

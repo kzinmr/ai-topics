@@ -4,6 +4,7 @@ url: "https://smalldatum.blogspot.com/2026/01/io-bound-insert-benchmark-vs-mysql
 fetched_at: 2026-05-05T07:01:17.408587+00:00
 source: "Mark Callaghan (smalldatum)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # IO-bound Insert Benchmark vs MySQL on 24-core and 32-core servers

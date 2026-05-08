@@ -13,7 +13,7 @@ sources:
 
 # Claude Code: Architecture
 
-Back to main profile: [[claude-code]]
+Back to main profile: [[entities/claude-code]]
 
 Based on arXiv:2604.14228v1 (Apr 2026). The source code leak ([[claude-code--history]]) revealed the complete internal architecture.
 

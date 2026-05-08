@@ -28,6 +28,6 @@ Chinese company specializing in rehabilitation robotics and general-purpose huma
 
 ## Relationships
 
-- [[china-ai-industry]] — Part of China's robotics ecosystem
-- [[unitree-robotics]] — Competitor in humanoid robot market
-- [[agi-bot]] — Competitor in humanoid robot market
+- [[entities/china-ai-industry]] — Part of China's robotics ecosystem
+- [[entities/unitree-robotics]] — Competitor in humanoid robot market
+- [[entities/agi-bot]] — Competitor in humanoid robot market

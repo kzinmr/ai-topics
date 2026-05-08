@@ -4,6 +4,7 @@ url: "https://xeiaso.net/notes/2026/claude-code-wins-april-fools/"
 fetched_at: 2026-05-01T07:00:59.077261+00:00
 source: "xeiaso.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Claude Code won April Fools Day this year

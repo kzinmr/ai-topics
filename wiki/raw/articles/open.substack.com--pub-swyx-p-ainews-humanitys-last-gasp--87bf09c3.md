@@ -4,6 +4,7 @@ url: "https://open.substack.com/pub/swyx/p/ainews-humanitys-last-gasp?utm_source
 fetched_at: 2026-04-15T03:06:23.454233+00:00
 source_date: 2026-04-15
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Introducing the Substack app

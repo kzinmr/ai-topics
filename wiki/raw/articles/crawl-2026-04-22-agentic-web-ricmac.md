@@ -2,6 +2,7 @@
 title: The Agentic Web: How AI Systems Will Change Websites
 category: other
 status: active
+updated: 2026-05-08
 ---
 
 # The Agentic Web: How AI Systems Will Change Websites

@@ -65,24 +65,24 @@ With frontier models making code generation cheap, value migrates from *syntax l
 ## Relationship to Other Concepts
 
 ```
-[agentic-coding] ──author──→ [[drew-breunig|Drew Breunig]]
-[agentic-coding] ──extends──→ [[harness-engineering]]
+[agentic-coding] ──author──→ [[entities/drew-breunig|Drew Breunig]]
+[agentic-coding] ──extends──→ [[concepts/harness-engineering]]
 [agentic-coding] ──contrasts──→ traditional-software-development
 [agentic-coding] ──teaches──→ spec-driven-development
 ```
 
-Agentic coding can be seen as the human-side practice layer of [[harness-engineering]] — where "Agent = Model + Harness" meets the developer's workflow, taste, and testing discipline.
+Agentic coding can be seen as the human-side practice layer of [[concepts/harness-engineering]] — where "Agent = Model + Harness" meets the developer's workflow, taste, and testing discipline.
 
 ## Graph Structure Query
 
-This section informs graph queries: authored by [[drew-breunig|Drew Breunig]], extends [[harness-engineering]], teaches spec-driven development methodology.
+This section informs graph queries: authored by [[entities/drew-breunig|Drew Breunig]], extends [[concepts/harness-engineering]], teaches spec-driven development methodology.
 
 ## Related Concepts
 
-- [[harness-engineering]] — The umbrella philosophy: Agent = Model + Harness
+- [[concepts/harness-engineering]] — The umbrella philosophy: Agent = Model + Harness
 - [[ai-agent-engineering]] — System-side build patterns for agent construction
-- [[speculative-decoding]] — Inference optimization that makes coding agents faster
-- [[drew-breunig]] — Author of the 10 Lessons framework
+- [[concepts/speculative-decoding]] — Inference optimization that makes coding agents faster
+- [[entities/drew-breunig]] — Author of the 10 Lessons framework
 
 ## Sources
 

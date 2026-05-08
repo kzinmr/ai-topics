@@ -4,6 +4,7 @@ url: "https://open.substack.com/pub/semianalysis/p/how-much-do-gpu-clusters-real
 fetched_at: 2026-04-20T14:25:30.900946+00:00
 source_date: 2026-04-20
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Introducing the Substack app

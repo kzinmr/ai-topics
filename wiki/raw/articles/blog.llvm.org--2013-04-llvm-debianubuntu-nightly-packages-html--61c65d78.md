@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2013/04/llvm-debianubuntu-nightly-packages.html"
 fetched_at: 2026-05-05T07:01:43.428229+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # LLVM Debian/Ubuntu nightly packages

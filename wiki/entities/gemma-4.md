@@ -146,7 +146,7 @@ Google released specialized **MTP drafters** for the entire Gemma 4 family, achi
 
 The MTP drafters are released under **Apache 2.0** and are available in the [Gemma 4 HuggingFace Collection](https://huggingface.co/collections/google/gemma-4).
 
-See also: [[speculative-decoding]], [Google Blog: Accelerating Gemma 4 with MTP](https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/)
+See also: [[concepts/speculative-decoding]], [Google Blog: Accelerating Gemma 4 with MTP](https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/)
 
 ## Sources
 |- raw/articles/2026-05-05_google-gemma-4-multi-token-prediction-drafters.md
@@ -160,5 +160,5 @@ See also: [[speculative-decoding]], [Google Blog: Accelerating Gemma 4 with MTP]
 - [[pi-coding-agent]] — Minimal coding agent by Mario Zechner that runs with Gemma 4 via LM Studio.
 - [[mistral-ai]] — Competing open-weight model provider with Mistral Medium 3.5.
 - [[open-models]] — Open-weight model ecosystem and licensing landscape.
-- [[coding-agents]] — AI agents for software engineering tasks.
+- [[concepts/coding-agents]] — AI agents for software engineering tasks.
 - [[lmstudio]] — Local model serving tool for running Gemma 4 on consumer hardware.

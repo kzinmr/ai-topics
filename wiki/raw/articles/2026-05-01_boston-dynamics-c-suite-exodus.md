@@ -4,6 +4,7 @@ url: "https://www.semafor.com/article/05/01/2026/c-suite-exodus-at-boston-dynami
 fetched_at: 2026-05-03T12:00:00+00:00
 source: "Semafor"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # C-suite Exodus at Boston Dynamics

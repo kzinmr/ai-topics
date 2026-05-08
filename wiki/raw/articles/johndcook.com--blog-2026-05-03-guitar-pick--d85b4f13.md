@@ -4,6 +4,7 @@ url: "https://www.johndcook.com/blog/2026/05/03/guitar-pick/"
 fetched_at: 2026-05-04T07:01:10.066510+00:00
 source: "johndcook.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The shape of a guitar pick

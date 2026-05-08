@@ -4,6 +4,7 @@ url: "https://martinalderson.com/posts/mcp-support-across-ai-apis/?utm_source=rs
 fetched_at: 2026-05-01T07:02:07.335218+00:00
 source: "martinalderson.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Beyond the Hype: Real-World MCP Support Across Major AI APIs

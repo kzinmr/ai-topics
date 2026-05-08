@@ -90,7 +90,7 @@ The gap between theoretical impossibility and practical utility mirrors other ar
 
 ## Related
 
-- [[shunyu-yao]] — Analyst who provided the critique
+- [[entities/shunyu-yao]] — Analyst who provided the critique
 - [[concepts/coala]] — Framework requiring grounding through external actions
 - [[concepts/neurosymbolic-ai]] — Hybrid approach addressing the grounding problem
 - [[concepts/harness-engineering]] — Practical grounding through tool use

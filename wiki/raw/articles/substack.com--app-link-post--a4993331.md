@@ -4,6 +4,7 @@ url: "https://substack.com/app-link/post?publication_id=1084089&post_id=19347819
 fetched_at: 2026-04-09T15:14:28.278475+00:00
 source_date: 2026-04-10
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Extreme Harness Engineering for Token Billionaires: 1M LOC, 1B toks/day, 0% human code, 0% human review - Ryan Lopopolo, OpenAI Frontier & Symphony

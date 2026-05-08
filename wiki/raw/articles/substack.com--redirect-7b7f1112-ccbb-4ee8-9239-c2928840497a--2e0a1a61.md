@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/7b7f1112-ccbb-4ee8-9239-c2928840497a?j=eyJ1I
 fetched_at: 2026-04-18T03:24:21.053875+00:00
 source_date: 2026-04-18
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Search Our Policies | Windfall Policy Atlas

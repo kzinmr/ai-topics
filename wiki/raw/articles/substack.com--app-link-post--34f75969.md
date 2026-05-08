@@ -4,6 +4,7 @@ url: "https://substack.com/app-link/post?publication_id=1173386&post_id=19379731
 fetched_at: 2026-04-10T14:11:11.723286+00:00
 source_date: 2026-04-10
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Meta’s new model is Muse Spark, and meta.ai chat has interesting new tools

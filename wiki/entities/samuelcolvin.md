@@ -4,8 +4,9 @@ type: entity
 redirect: samuel-colvin
 aliases:
   - samuelcolvin
+updated: 2026-05-08
 ---
 
 # samuelcolvin
 
-This page is a redirect. See [[samuel-colvin]].
+This page is a redirect. See [[entities/samuel-colvin]].

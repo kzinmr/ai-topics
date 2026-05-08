@@ -64,4 +64,4 @@ sources:
 ## 参照
 
 - [OpenAI: Equipping the Responses API with a computer environment](https://openai.com/index/equip-responses-api-computer-environment/)
-- [[openai]] — OpenAI
+- [[entities/openai]] — OpenAI

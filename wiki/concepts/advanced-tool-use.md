@@ -102,7 +102,7 @@ related:
 
 ## See Also
 
-- [[code-execution-with-mcp]] — Code execution with MCP
-- [[mcp]] — Model Context Protocol
-- [[context-engineering]] — Context engineering for AI agents
+- [[concepts/code-execution-with-mcp]] — Code execution with MCP
+- [[concepts/mcp]] — Model Context Protocol
+- [[concepts/context-engineering]] — Context engineering for AI agents
 - [[tool-use-tax]] — Tool calling performance overhead

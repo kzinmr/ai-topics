@@ -4,6 +4,7 @@ url: "http://www.paulgraham.com/laundry.html"
 fetched_at: 2026-05-01T07:01:53.792756+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # A Version 1.0

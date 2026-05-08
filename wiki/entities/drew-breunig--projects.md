@@ -14,7 +14,7 @@ sources: []
 
 # Drew Breunig: Key Projects
 
-Back to main profile: [[drew-breunig]]
+Back to main profile: [[entities/drew-breunig]]
 
 ## Reporter (2014)
 
@@ -78,6 +78,6 @@ As GERS Evangelist at [[concepts/overture-maps-foundation|Overture Maps Foundati
 
 ## See Also
 
-- [[drew-breunig--core-ideas|Core Ideas]]
-- [[drew-breunig--timeline|Timeline]]
-- [[drew-breunig--writings|Writings & Speaking]]
+- [[entities/drew-breunig--core-ideas|Core Ideas]]
+- [[entities/drew-breunig--timeline|Timeline]]
+- [[entities/drew-breunig--writings|Writings & Speaking]]

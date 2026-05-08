@@ -4,6 +4,7 @@ url: "https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/#
 fetched_at: 2026-05-01T07:01:20.756550+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # An update on recent Claude Code quality reports

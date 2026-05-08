@@ -90,7 +90,7 @@ $ llm --plugin llm-linear-walkthrough explain --file src/app.py
 ```
 
 ## 参照
-- [[simon-willison]] — 概念提唱者
+- [[entities/simon-willison]] — 概念提唱者
 - [[concepts/vibe-coding]] — 認知負債の主要発生源
 - [[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]] — 主要な返済ツール
 - [[concepts/interactive-explanations]] — 対話的理解ツール

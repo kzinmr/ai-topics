@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/290c696c-e7a6-4542-a4fe-8a4faf5ce5ac?j=eyJ1I
 fetched_at: 2026-04-09T14:51:20.270961+00:00
 source_date: 2026-04-09
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Google introduces Notebooks in Gemini, a project management tool synced with NotebookLM

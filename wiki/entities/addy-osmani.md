@@ -156,10 +156,10 @@ His posting style is **educational and systematic** — he builds frameworks, cr
 - [[concepts/harness-engineering]]
 - [[concepts/multi-agent-autonomy-scale]]
 - [[concepts/context-engineering]]
-- [[boris-cherny]]
-- [[ryan-lopopolo]]
+- [[entities/boris-cherny]]
+- [[entities/ryan-lopopolo]]
 - [[concepts/karpathy]]
-- [[simon-willison]]
+- [[entities/simon-willison]]
 
 ## Sources
 

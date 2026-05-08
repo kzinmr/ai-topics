@@ -16,7 +16,7 @@ tags:
   - javascriptcore
   - process-isolation
 aliases: ["js-runtime", "javascript-runtime-comparison", "bun-deno-node", "agent-js-runtime"]
-related: [[concepts/harness-engineering/system-architecture/infrastructure-noise]], [[concepts/sandbox/in-process]], [[concepts/harness-engineering]], [[jarred-sumner]], [[ryan-dahl]]
+related: [[concepts/harness-engineering/system-architecture/infrastructure-noise]], [[concepts/sandbox/in-process]], [[concepts/harness-engineering]], [[entities/jarred-sumner]], [[entities/ryan-dahl]]
 depth: L2
 status: complete
 sources: []
@@ -211,8 +211,8 @@ Deno's philosophy — *"secure by default, TypeScript-first, single executable"*
 - [[concepts/harness-engineering/system-architecture/infrastructure-noise]] — Container, microVM, and edge-level isolation
 - [[concepts/sandbox/in-process]] — Monty, capabilities-based security (Python)
 - [[concepts/harness-engineering]] — Runtime as a harness environment
-- [[ryan-dahl]] — Creator of Node.js and Deno
-- [[jarred-sumner]] — Creator of Bun, joined Anthropic
+- [[entities/ryan-dahl]] — Creator of Node.js and Deno
+- [[entities/jarred-sumner]] — Creator of Bun, joined Anthropic
 
 ## Sources
 

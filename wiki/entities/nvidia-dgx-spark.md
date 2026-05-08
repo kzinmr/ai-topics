@@ -149,9 +149,9 @@ Full context: → [[concepts/local-ai]], [[entities/andrew-chen]]
 
 ## Related
 
-- [[nvidia-nemoclaw]] — NemoClaw secure agent framework
+- [[entities/nvidia-nemoclaw]] — NemoClaw secure agent framework
 - [[concepts/local-ai]] — Local AI state snapshot (May 2026)
 - [[entities/andrew-chen]] — a16z GP, DGX Spark practitioner perspective
 - [[concepts/local-llm/server-dgx-spark]] — Setup guide for local LLM server
 - [[concepts/local-llm]] — Local LLM inference overview
-- [[jensen-huang]] — NVIDIA CEO, physical AI advocate
+- [[entities/jensen-huang]] — NVIDIA CEO, physical AI advocate

@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/code-spelunker-a-code-search-command-line-tool-re
 fetched_at: 2026-05-05T07:01:53.667371+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Code Spelunker a Code Search Command Line Tool Redux

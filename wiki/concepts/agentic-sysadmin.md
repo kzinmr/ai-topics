@@ -15,7 +15,7 @@ sources:
 
 # Agentic Sysadmin Pattern
 
-Using Claude Code (or other coding agents) as a systems administration assistant for managing bare-metal servers, cloud infrastructure, and operational tasks. Described by [[martin-alderson]] as an organic pattern developed over months of practical use.
+Using Claude Code (or other coding agents) as a systems administration assistant for managing bare-metal servers, cloud infrastructure, and operational tasks. Described by [[entities/martin-alderson]] as an organic pattern developed over months of practical use.
 
 ## Core Approach: Infrastructure as Markdown
 

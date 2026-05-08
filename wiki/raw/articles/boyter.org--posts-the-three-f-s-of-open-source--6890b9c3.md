@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/the-three-f-s-of-open-source/"
 fetched_at: 2026-05-05T07:01:57.990627+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The Three F's of Open Source Development

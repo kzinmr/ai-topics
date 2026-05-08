@@ -4,6 +4,7 @@ url: "https://substack.com/app-link/post?publication_id=1084089&post_id=19506785
 fetched_at: 2026-04-23T05:08:15.359710+00:00
 source_date: 2026-04-22
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym - with Mikhail Parakhin, Shopify CTO

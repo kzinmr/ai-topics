@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/posts/2025-08-29-gsoc-byte-type/"
 fetched_at: 2026-05-05T07:01:36.420993+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # GSoC 2025 - Byte Type: Supporting Raw Data Copies in the LLVM IR

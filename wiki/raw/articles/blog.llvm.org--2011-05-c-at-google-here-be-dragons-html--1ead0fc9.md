@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2011/05/c-at-google-here-be-dragons.html"
 fetched_at: 2026-05-05T07:01:43.815201+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # C++ at Google: Here Be Dragons

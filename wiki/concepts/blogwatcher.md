@@ -7,7 +7,7 @@ created: 2026-04-27
 updated: 2026-04-28
 tags: [concept, monitoring, rss, cli, automation]
 aliases: [blogwatcher-cli, feed-monitor]
-related: [[hermes-agent]], [[entities/simon-willison]]
+related: [[entities/hermes-agent]], [[entities/simon-willison]]
 sources: [https://github.com/NousResearch/hermes-agent]
 ---
 
@@ -44,7 +44,7 @@ Blogwatcher is part of the Hermes Agent ecosystem, used in cron-based automated 
 
 ## Related Concepts
 
-- [[hermes-agent]] — The AI agent platform that uses blogwatcher for knowledge ingestion
+- [[entities/hermes-agent]] — The AI agent platform that uses blogwatcher for knowledge ingestion
 - [[concepts/rss-monitoring]] — RSS/atom feed monitoring patterns
 - [[concepts/automated-knowledge-crawl]] — Automated crawling pipelines
 

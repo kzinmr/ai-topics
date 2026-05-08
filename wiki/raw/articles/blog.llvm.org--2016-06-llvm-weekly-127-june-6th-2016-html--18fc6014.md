@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2016/06/llvm-weekly-127-june-6th-2016.html"
 fetched_at: 2026-05-05T07:01:38.754686+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # LLVM Weekly - #127, June 6th 2016

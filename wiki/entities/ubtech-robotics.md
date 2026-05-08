@@ -29,9 +29,9 @@ One of China's most valuable AI and robotics companies. Focuses on service robot
 
 ## Relationships
 
-- [[china-ai-industry]] — Key company in China's robotics ecosystem
-- [[unitree-robotics]] — Competitor in humanoid robot market
-- [[agi-bot]] — Competitor in humanoid robot market
+- [[entities/china-ai-industry]] — Key company in China's robotics ecosystem
+- [[entities/unitree-robotics]] — Competitor in humanoid robot market
+- [[entities/agi-bot]] — Competitor in humanoid robot market
 - [[fourier-intelligence]] — Competitor in humanoid and rehabilitation robotics
 
 ## Open Questions

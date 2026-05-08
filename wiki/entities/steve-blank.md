@@ -164,9 +164,9 @@ Notable recent publications include his 2024 essay "A Lasting Model for Change: 
 - [[concepts/harness-engineering]] — Parallels in AI agent configuration as learned failure modes
 -  — Co-creator of the Lean Startup movement- [[concepts/harness-engineering/agentic-engineering]] — Agent-first development workflows changing startup dynamics
 - [[akira-realmcore]] — Random Labs AI engineer; shared focus on agentic-engineering and harness-engineering
-- [[daniel-de-laney]] — Designer/PM; structured AI workflows and tools critique
-- [[drmaciver]] — Hypothesis creator; property-based testing for AI reliability
-- [[mitchell-hashimoto]] — HashiCorp co-founder; harness engineering pioneer
+- [[entities/daniel-de-laney]] — Designer/PM; structured AI workflows and tools critique
+- [[entities/drmaciver]] — Hypothesis creator; property-based testing for AI reliability
+- [[entities/mitchell-hashimoto]] — HashiCorp co-founder; harness engineering pioneer
 
 ## Sources
 

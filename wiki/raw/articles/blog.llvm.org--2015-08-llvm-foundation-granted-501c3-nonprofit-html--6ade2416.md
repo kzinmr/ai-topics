@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2015/08/llvm-foundation-granted-501c3-nonprofit.html
 fetched_at: 2026-05-05T07:01:40.177185+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # LLVM Foundation Granted 501(c)(3) Nonprofit Status

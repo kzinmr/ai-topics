@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS
 fetched_at: 2026-04-11T15:03:54.141708+00:00
 source_date: 2026-04-11
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # 🤖 AI Agents Weekly: Claude Managed Agents, Muse Spark, Project Glasswing, Advisor Strategy, GLM-5.1, Memento, and More

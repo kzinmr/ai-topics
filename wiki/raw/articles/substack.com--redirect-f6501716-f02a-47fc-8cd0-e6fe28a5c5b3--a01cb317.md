@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/f6501716-f02a-47fc-8cd0-e6fe28a5c5b3?j=eyJ1I
 fetched_at: 2026-04-19T13:07:18.431039+00:00
 source_date: 2026-04-19
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # The Gemini App is now available on Mac OS

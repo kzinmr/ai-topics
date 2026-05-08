@@ -23,7 +23,7 @@ related:
 
 # Claude Opus 4.6
 
-**Claude Opus 4.6** は、[[anthropic]] が **2026年2月5日** にリリースした Claude Opus シリーズのプレミアムモデル。それ以前の Opus 4.5 から以下の領域で大幅な改善を実現した。
+**Claude Opus 4.6** は、[[entities/anthropic]] が **2026年2月5日** にリリースした Claude Opus シリーズのプレミアムモデル。それ以前の Opus 4.5 から以下の領域で大幅な改善を実現した。
 
 ## 概要
 

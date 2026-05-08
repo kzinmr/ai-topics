@@ -4,6 +4,7 @@ url: "http://cbloomrants.blogspot.com/2021/04/requantization-to-different-unorm-
 fetched_at: 2026-05-05T07:01:48.013479+00:00
 source: "Charles Bloom"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Requantization to different UNORM bit depths

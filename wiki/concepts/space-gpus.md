@@ -5,7 +5,7 @@ created: 2026-04-10
 updated: 2026-04-10
 tags: [concept, space-compute, ai-infrastructure, satellites, orbital-data-centers]
 aliases: ["orbital-compute", "space-data-centers"]
-related: [[concepts/compute-scaling-bottlenecks]], [[dylan-patel]], 
+related: [[concepts/compute-scaling-bottlenecks]], [[entities/dylan-patel]], 
 sources: []
 ---
 
@@ -153,7 +153,7 @@ Most experts consider this **optimistic**. Brandon Lucia (Carnegie Mellon) calls
 ## Related Concepts
 
 - [[concepts/compute-scaling-bottlenecks]] — The Earth-side constraints driving the search for alternative compute locations
-- [[dylan-patel]] — SemiAnalysis coverage of the semiconductor supply chain and compute economics
+- [[entities/dylan-patel]] — SemiAnalysis coverage of the semiconductor supply chain and compute economics
 -  — The broader landscape of AI compute infrastructure
 ## Sources
 

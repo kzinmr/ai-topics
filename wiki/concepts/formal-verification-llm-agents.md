@@ -97,5 +97,5 @@ For AI coding agents, formal verification is particularly relevant because:
 - [[concepts/neurosymbolic-ai]] — Symbolic reasoning (formal logic) combined with neural networks
 - [[concepts/ai-safety]] — Alignment and oversight for AI agents
 - [[concepts/agent-sandboxing]] — Isolation for untrusted code (complementary safety approach)
-- [[hillel-wayne]] — Formal methods practitioner bridging academic and industry
-- [[john-d-cook-applied-mathematics-consulting]] — Formal verification in high-stakes engineering
+- [[entities/hillel-wayne]] — Formal methods practitioner bridging academic and industry
+- [[entities/john-d-cook-applied-mathematics-consulting]] — Formal verification in high-stakes engineering

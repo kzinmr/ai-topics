@@ -4,6 +4,7 @@ url: "https://purplesyringa.moe/blog/./the-expression-problem-and-rust/"
 fetched_at: 2026-05-05T07:02:09.374220+00:00
 source: "Alisa Sireneva (PurpleSyringa)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The expression problem and Rust

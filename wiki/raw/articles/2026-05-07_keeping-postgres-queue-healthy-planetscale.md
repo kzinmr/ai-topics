@@ -5,6 +5,7 @@ source: planetscale.com
 date: 2026-05-07
 tags: [postgres, queue, mvcc, performance, operations]
 url: https://planetscale.com/blog/keeping-a-postgres-queue-healthy
+updated: 2026-05-08
 ---
 
 # Keeping a Postgres Queue Healthy

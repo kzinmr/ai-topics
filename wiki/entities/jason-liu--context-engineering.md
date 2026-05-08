@@ -66,8 +66,8 @@ Jason's work on the OpenAI Agents SDK sandbox features and \"in distribution\" t
 
 ## See Also
 
-- [[jason-liu--key-work]] — Jason Liu's career, RAG Master Series, and consulting practice.
-- [[jason-liu--instructor]] — Structured outputs library by Jason Liu using Pydantic validation.
+- [[entities/jason-liu--key-work]] — Jason Liu's career, RAG Master Series, and consulting practice.
+- [[entities/jason-liu--instructor]] — Structured outputs library by Jason Liu using Pydantic validation.
 - [[retrieval-augmented-generation]] — Core RAG concepts and architecture patterns.
-- [[context-engineering]] — Designing information environments for AI agents.
-- [[coding-agents]] — AI agents for software engineering tasks.
+- [[concepts/context-engineering]] — Designing information environments for AI agents.
+- [[concepts/coding-agents]] — AI agents for software engineering tasks.

@@ -5,6 +5,7 @@ url: "https://www.anthropic.com/engineering/infrastructure-noise"
 scraped: "2026-05-08T02:05:29.829881+00:00"
 lastmod: "2026-04-24T14:21:28.000Z"
 type: "sitemap"
+updated: 2026-05-08
 ---
 
 # Quantifying infrastructure noise in agentic coding evals

@@ -4,6 +4,7 @@ url: "https://mitchellh.com/writing/tripwire"
 fetched_at: 2026-05-01T07:02:02.831588+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Don't Trip[wire] Yourself: Testing Error Recovery in Zig

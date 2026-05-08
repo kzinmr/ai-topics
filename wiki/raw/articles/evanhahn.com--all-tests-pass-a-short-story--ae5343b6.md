@@ -4,6 +4,7 @@ url: "https://evanhahn.com/all-tests-pass-a-short-story/"
 fetched_at: 2026-04-29T07:02:19.501792+00:00
 source: "evanhahn.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # All tests pass: a short story

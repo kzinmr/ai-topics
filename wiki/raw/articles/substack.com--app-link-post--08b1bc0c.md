@@ -4,6 +4,7 @@ url: "https://substack.com/app-link/post?publication_id=293154&post_id=194680911
 fetched_at: 2026-04-19T13:07:07.316581+00:00
 source_date: 2026-04-19
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Anthropic's Big Swing, Gemini Everywhere All at Once, and OpenAI's Shape-Shift

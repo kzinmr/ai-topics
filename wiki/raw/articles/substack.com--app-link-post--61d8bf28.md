@@ -4,6 +4,7 @@ url: "https://substack.com/app-link/post?publication_id=1084089&post_id=19308294
 fetched_at: 2026-04-09T16:27:19.487780+00:00
 source_date: 2026-04-10
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why "This Time Is Different"

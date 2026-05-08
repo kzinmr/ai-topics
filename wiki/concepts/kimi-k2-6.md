@@ -68,7 +68,7 @@ Active discussions on local deployment viability:
 
 - [[concepts/kimi-k2-5]] — Previous generation (January 2026)
 - [[concepts/kimi-k2-thinking]] — November 2025 variant
-- [[qwen3-6-plus|Qwen3.6 35B MoE]] — Competing open MoE model
+- [[entities/qwen3-6-plus|Qwen3.6 35B MoE]] — Competing open MoE model
 - [[concepts/deepseek-v3]] — Competitor from DeepSeek
 
 ## See Also

@@ -111,8 +111,8 @@ His body of work reflects a pragmatic approach to ML: building tools that solve 
 
 -  — Creator of OLMo, where Bacaj contributes post-training expertise
 -  — Open language model with transparent training pipeline-  — Fine-tuning target for his most popular repository
-- [[anthropic]] — Preferred model provider (Opus 4.1)
-- [[qwen3-6-plus]] — High-quality open model for fine-tuning
+- [[entities/anthropic]] — Preferred model provider (Opus 4.1)
+- [[entities/qwen3-6-plus]] — High-quality open model for fine-tuning
 
 ## Sources
 

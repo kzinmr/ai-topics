@@ -10,7 +10,7 @@ tags:
 created: 2026-04-27
 updated: 2026-04-30
 aliases: [LangChain Framework, LangChain AI]
-related: [[langgraph]], [[langsmith]], [[agent-orchestration-frameworks]], [[dspy]], [[llamaindex]], [[agent-engineering]], [[concepts/harness-engineering]]
+related: [[concepts/langgraph]], [[langsmith]], [[concepts/agent-orchestration-frameworks]], [[entities/dspy]], [[llamaindex]], [[agent-engineering]], [[concepts/harness-engineering]]
 sources: [https://www.langchain.com/, https://github.com/langchain-ai/langchain, https://en.wikipedia.org/wiki/LangChain, raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md]
 ---
 
@@ -122,13 +122,13 @@ The company has evolved beyond the open-source framework into a full **Agent Eng
 - **Revenue model:** Open-source core (MIT) + commercial LangSmith platform + LangGraph Platform hosting
 
 ## Related Concepts
-- [[langgraph]] — Low-level agent orchestration framework
+- [[concepts/langgraph]] — Low-level agent orchestration framework
 - [[langsmith]] — Observability and evaluation platform for LLM apps
-- [[agent-orchestration-frameworks]] — Comparative analysis of agent frameworks
+- [[concepts/agent-orchestration-frameworks]] — Comparative analysis of agent frameworks
 - [[llamaindex]] — Competing data framework for LLM applications
-- [[dspy]] — Declarative LM programming framework (alternative paradigm)
+- [[entities/dspy]] — Declarative LM programming framework (alternative paradigm)
 - [[agent-engineering]] — The discipline of building reliable AI agents
-- [[mcp]] — Model Context Protocol for tool interoperability
+- [[concepts/mcp]] — Model Context Protocol for tool interoperability
 - [[deep-agents]] — Long-running autonomous agent pattern
 
 ## Sources

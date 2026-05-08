@@ -18,7 +18,7 @@ NVIDIA is a semiconductor and AI infrastructure company. In the context of this 
 ### NVIDIA Dynamo
 - Inference architecture designed for agentic coding workloads
 - Three-plane architecture: Request, Control, Storage & Events
-- Key components: Planner, Router, [[kv-aware-routing]], KVBM, NIXL
+- Key components: Planner, Router, [[concepts/kv-aware-routing]], KVBM, NIXL
 - Addresses KV recomputation waste and memory pressure in agentic contexts
 
 ### GPU Hardware
@@ -33,8 +33,8 @@ NVIDIA is a semiconductor and AI infrastructure company. In the context of this 
 
 ## Related
 
-- [[nvidia-dynamo]]
-- [[kv-aware-routing]]
-- [[inference]]
+- [[concepts/nvidia-dynamo]]
+- [[concepts/kv-aware-routing]]
+- [[concepts/inference]]
 - [[inference-hardware]]
 - [[dgx-spark-local-llm-server]]

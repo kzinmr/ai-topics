@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/744882fb-8b32-4033-b787-001ccbfd6884?j=eyJ1I
 fetched_at: 2026-04-10T14:11:19.973780+00:00
 source_date: 2026-04-10
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Simon Willison on code-interpreter

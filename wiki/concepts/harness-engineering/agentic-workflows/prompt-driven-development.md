@@ -85,5 +85,5 @@ Prompt-Driven Developmentでは、エージェントが生成したコードを*
 
 ## 参照
 
-- [[simon-willison]] — 提唱者
+- [[entities/simon-willison]] — 提唱者
 - [Agentic Engineering Patterns — Prompt-Driven Development](https://simonwillison.net/guides/agentic-engineering-patterns/#prompt-driven-development)

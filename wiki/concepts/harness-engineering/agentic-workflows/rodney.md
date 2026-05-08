@@ -131,6 +131,6 @@ Rodneyのコマンドは**コンテキストウィンドウに優しい**:
 
 ## 参照
 
-- [[simon-willison]] — 開発者
+- [[entities/simon-willison]] — 開発者
 - [Rodney v0.4.0 リリースノート](https://simonwillison.net/2026/Feb/17/rodney/)
 - [Introducing Showboat and Rodney](https://simonwillison.net/2026/Feb/10/showboat-and-rodney/)

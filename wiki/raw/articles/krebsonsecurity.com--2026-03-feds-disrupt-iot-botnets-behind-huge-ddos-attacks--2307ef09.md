@@ -4,6 +4,7 @@ url: "https://krebsonsecurity.com/2026/03/feds-disrupt-iot-botnets-behind-huge-d
 fetched_at: 2026-05-01T07:02:09.227044+00:00
 source: "krebsonsecurity.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Feds Disrupt IoT Botnets Behind Huge DDoS Attacks

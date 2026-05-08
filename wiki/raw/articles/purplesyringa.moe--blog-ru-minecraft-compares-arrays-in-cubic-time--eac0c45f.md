@@ -4,6 +4,7 @@ url: "https://purplesyringa.moe/blog/ru/minecraft-compares-arrays-in-cubic-time/
 fetched_at: 2026-05-05T07:02:09.866243+00:00
 source: "Alisa Sireneva (PurpleSyringa)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Minecraft сравнивает массивы за куб

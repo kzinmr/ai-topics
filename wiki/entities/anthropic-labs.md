@@ -32,10 +32,10 @@ Anthropic Labs represents a strategic expansion of Anthropic beyond the single-p
 
 ## Related
 
-- [[anthropic]] — Parent company
+- [[entities/anthropic]] — Parent company
 - [[concepts/claude-design]] — First product from Anthropic Labs
 - [[concepts/claude-opus-4-7]] — Model powering Claude Design
-- [[claude-code]] — Claude's coding product (core, not Labs)
+- [[entities/claude-code]] — Claude's coding product (core, not Labs)
 
 ## Sources
 

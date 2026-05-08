@@ -212,7 +212,7 @@ In his most recent writing, Ronacher has been defending the irreplaceable value 
 ## Related Concepts
 
 - [[concepts/ai-coding-agent-criticism]] — "The Center Has a Bias" thesis on engagement vs. abstract criticism
-|- [[mario-zechner]] (Pi/libGDX), [[concepts/colin]] (Earendil co-founder), [[concepts/flask]], [[concepts/jinja2]], [[concepts/werkzeug]], [[concepts/sentry]], [[concepts/rust]], [[concepts/python-packaging]], [[concepts/polecats]], [[concepts/agentic-coding]], [[concepts/minijinja]], [[concepts/snapshot-testing]], [[charles-frye]], [[concepts/earendil]]
+|- [[entities/mario-zechner]] (Pi/libGDX), [[concepts/colin]] (Earendil co-founder), [[concepts/flask]], [[concepts/jinja2]], [[concepts/werkzeug]], [[concepts/sentry]], [[concepts/rust]], [[concepts/python-packaging]], [[concepts/polecats]], [[concepts/agentic-coding]], [[concepts/minijinja]], [[concepts/snapshot-testing]], [[entities/charles-frye]], [[concepts/earendil]]
 
 ## Sources
 

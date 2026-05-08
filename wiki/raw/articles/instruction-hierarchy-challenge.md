@@ -4,6 +4,7 @@ source: "openai.com"
 url: "https://openai.com/index/instruction-hierarchy-challenge/"
 date: "2026-04-27"
 tags: [llm-safety, prompt-injection, instruction-hierarchy, openai]
+updated: 2026-05-08
 ---
 
 # Improving Instruction Hierarchy in Frontier LLMs

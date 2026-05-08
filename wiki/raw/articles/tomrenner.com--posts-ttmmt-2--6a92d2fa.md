@@ -4,6 +4,7 @@ url: "https://tomrenner.com/posts/ttmmt-2/"
 fetched_at: 2026-05-01T07:01:07.996810+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Things that made me think: Digital gardening, web degradation, and digital ghosts

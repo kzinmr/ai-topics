@@ -5,7 +5,7 @@ handle: "@jim-fan"
 created: 2026-04-10
 updated: 2026-04-10
 related:
-  - [[nvidia-dgx-spark]]
+  - [[entities/nvidia-dgx-spark]]
   - [[concepts/embodied-ai]]
   - [[concepts/robotics]]
   - [[concepts/genie]]
@@ -138,7 +138,7 @@ Fan is active on LinkedIn with 208,000+ followers and 280+ posts, regularly shar
 - **Fei-Fei Li** — Stanford professor; Fan's PhD advisor, pioneer in computer vision and embodied AI
 - **Ilya Sutskever** — Former OpenAI co-founder; Fan was OpenAI's first intern
 - **Benjamin Clavié** () — Though working in different domains (IR vs. robotics), both share NVIDIA/Answer.AI ecosystem connections through Hugging Face and open-source AI advocacy
-- **Scott Wu** ([[scott-wu]]) — Both working on AI agents at different levels: Fan on physical/embodied agents, Wu on software/coding agents
+- **Scott Wu** ([[entities/scott-wu]]) — Both working on AI agents at different levels: Fan on physical/embodied agents, Wu on software/coding agents
 
 ## X Activity Themes
 

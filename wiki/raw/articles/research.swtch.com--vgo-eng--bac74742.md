@@ -4,6 +4,7 @@ url: "https://research.swtch.com/vgo-eng"
 fetched_at: 2026-05-05T07:01:01.606782+00:00
 source: "Russ Cox (research.swtch)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # What is Software Engineering?

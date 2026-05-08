@@ -4,6 +4,7 @@ url: "https://www.gilesthomas.com/2026/04/how-an-llm-becomes-more-coherent-over-
 fetched_at: 2026-05-01T07:02:05.427716+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # How an LLM becomes more coherent as we train it

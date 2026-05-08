@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/sloc-cloc-code-badges/"
 fetched_at: 2026-05-05T07:01:58.362203+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Sloc Cloc and Code Badges for Github/Bitbucket/Gitlab

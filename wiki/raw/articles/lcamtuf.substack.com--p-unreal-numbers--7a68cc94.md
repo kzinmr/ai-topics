@@ -4,6 +4,7 @@ url: "https://lcamtuf.substack.com/p/unreal-numbers"
 fetched_at: 2026-05-01T07:02:12.073247+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Unreal numbers - lcamtuf’s thing

@@ -22,7 +22,7 @@ sources: []
 
 # HashiCorp
 
-[[mitchell-hashimoto]] co-founded **HashiCorp** with Armon Dadgar in 2012. Together they built the foundational infrastructure tools for modern cloud-native development.
+[[entities/mitchell-hashimoto]] co-founded **HashiCorp** with Armon Dadgar in 2012. Together they built the foundational infrastructure tools for modern cloud-native development.
 
 ## The HashiCorp Stack
 

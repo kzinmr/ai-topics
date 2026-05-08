@@ -10,7 +10,7 @@ sources: []
 
 # Single-Agent Ceiling（単一エージェントの限界）
 
-> 提唱: [[milksandmatcha|Sarah Chieng]] (@MilksandMatcha) + [[sero|Sero]] (@0xSero), 2026年4月
+> 提唱: [[entities/milksandmatcha|Sarah Chieng]] (@MilksandMatcha) + [[entities/sero|Sero]] (@0xSero), 2026年4月
 
 AIコーディングエージェントを使用する全ての開発者が直面する限界。プロジェクトが単純なタスク（HTMLの蛇ゲームなど）から実用的な規模に成長した瞬間に顕在化する。
 

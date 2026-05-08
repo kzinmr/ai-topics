@@ -18,7 +18,7 @@ sources:
 
 # Claude Code: Capabilities & Features
 
-Back to main profile: [[claude-code]]
+Back to main profile: [[entities/claude-code]]
 
 ## Key Metrics (2026)
 

@@ -15,6 +15,7 @@ tags:
   - synthetic-data
   - test-time-scaling
   - data-wall
+updated: 2026-05-08
 ---
 
 # My Take on the Post-Pretraining World — Daniel Han on Ilya's Talk

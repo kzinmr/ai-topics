@@ -22,10 +22,10 @@ Farhan Thawar is a technology writer and commentator known for viral takes on AI
 - 5,792 bookmarks, 2.83M impressions
 - Argues that traditional experience/seniority in knowledge work is becoming a liability in the AI era
 - Experienced workers may be more resistant to AI adoption, locked into legacy patterns
-- Connects to the [[experience-is-a-tax]] concept
+- Connects to the [[concepts/experience-is-a-tax]] concept
 
 ## Related Concepts
 
-- [[experience-is-a-tax]]
-- [[reflexive-ai]]
-- [[solo-founder-stack]]
+- [[concepts/experience-is-a-tax]]
+- [[concepts/reflexive-ai]]
+- [[concepts/solo-founder-stack]]

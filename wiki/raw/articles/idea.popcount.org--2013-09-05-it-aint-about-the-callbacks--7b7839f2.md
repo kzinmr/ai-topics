@@ -4,6 +4,7 @@ url: "https://idea.popcount.org/2013-09-05-it-aint-about-the-callbacks"
 fetched_at: 2026-05-05T07:01:12.799917+00:00
 source: "Marek Vavruša (idea.popcount)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # It ain't about the callbacks...

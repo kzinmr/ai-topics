@@ -4,6 +4,7 @@ url: "https://www.gilesthomas.com/2026/04/llm-from-scratch-33-what-i-learned-fro
 fetched_at: 2026-05-01T07:02:05.878309+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Writing an LLM from scratch, part 33 -- what I learned from finally getting round to the appendices

@@ -4,6 +4,7 @@ url: "https://purplesyringa.moe/blog/./if-i-hear-design-pattern-one-more-time-il
 fetched_at: 2026-05-05T07:02:09.355041+00:00
 source: "Alisa Sireneva (PurpleSyringa)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # If I hear "design pattern" one more time, I'll go mad

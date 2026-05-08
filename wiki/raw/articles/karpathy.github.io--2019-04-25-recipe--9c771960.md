@@ -4,6 +4,7 @@ url: "http://karpathy.github.io/2019/04/25/recipe/"
 fetched_at: 2026-05-05T07:02:10.278423+00:00
 source: "Andrej Karpathy"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # A Recipe for Training Neural Networks

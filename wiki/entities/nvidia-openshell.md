@@ -10,6 +10,7 @@ tags:
 status: complete
 description: "NVIDIA's open-source secure runtime for autonomous AI agents. Provides sandboxed execution with kernel-level isolation and declarative YAML policy enforcement."
 created: 2026-04-30
+updated: 2026-05-08
 sources:
   - "https://github.com/NVIDIA/OpenShell"
   - "https://developer.nvidia.com/blog/run-autonomous-self-evolving-agents-more-safely-with-nvidia-openshell"

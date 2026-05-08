@@ -4,6 +4,7 @@ url: "https://open.substack.com/pub/swyx/p/ainews-moonshot-kimi-k26-the-worlds?u
 fetched_at: 2026-04-21T00:20:01.456912+00:00
 source_date: 2026-04-21
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Introducing the Substack app

@@ -4,6 +4,7 @@ url: "https://minimaxir.com/2026/02/ai-agent-coding/"
 fetched_at: 2026-05-01T07:02:04.600129+00:00
 source: "minimaxir.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # An AI agent coding skeptic tries AI agent coding, in excessive detail

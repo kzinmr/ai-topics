@@ -4,6 +4,7 @@ url: "https://www.johndcook.com/blog/2026/04/25/exact-solution-nonlinear-pendulu
 fetched_at: 2026-05-01T07:00:54.646403+00:00
 source: "johndcook.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Closed-form solution nonlinear pendulum w/ Jacobi functions

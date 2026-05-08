@@ -25,10 +25,10 @@ sources: [
   "raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md"
 ]
 related: [
-  "[[anthropic]]",
-  "[[claude-code]]",
+  "[[entities/anthropic]]",
+  "[[entities/claude-code]]",
   "[[concepts/claude-model-family]]",
-  "[[foundation-capital]]"
+  "[[entities/foundation-capital]]"
 ]
 ---
 
@@ -153,7 +153,7 @@ Anthropic partnered with Blackstone, Hellman & Friedman, and Goldman Sachs to fo
 
 ### Claude Code
 
-Anthropic's CLI coding agent (see [[claude-code]]). A terminal-based agent that can:
+Anthropic's CLI coding agent (see [[entities/claude-code]]). A terminal-based agent that can:
 - Read, write, and edit code
 - Run commands
 - Understand codebases at scale
@@ -205,10 +205,10 @@ Anthropic's research priorities:
 - Interpretability
 
 ## Related
-- [[anthropic]] — The model family
-- [[claude-code]] — Claude Code CLI agent
-- [[claude-mythos]] — Claude Mythos model (used by Claude Security)
-- [[foundation-capital]] — Partner in Claude Managed Agents
+- [[entities/anthropic]] — The model family
+- [[entities/claude-code]] — Claude Code CLI agent
+- [[entities/claude-mythos]] — Claude Mythos model (used by Claude Security)
+- [[entities/foundation-capital]] — Partner in Claude Managed Agents
 - [[concepts/claude-managed-agents]] — Managed Agents platform details
 - [[concepts/project-glasswing]] — Defensive security initiative
 

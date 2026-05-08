@@ -5,6 +5,7 @@ source: The Signal (Alex Banks)
 url: https://open.substack.com/pub/thesignal/p/openai-is-cooking-the-anthropic-sweep
 date: 2026-04-26
 tags: [newsletter, raw]
+updated: 2026-05-08
 ---
 
 # OpenAI Is Cooking, The Anthropic Sweep, and SpaceX Courts Cursor

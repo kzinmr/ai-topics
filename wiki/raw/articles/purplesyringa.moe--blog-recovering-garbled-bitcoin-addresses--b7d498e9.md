@@ -4,6 +4,7 @@ url: "https://purplesyringa.moe/blog/./recovering-garbled-bitcoin-addresses/"
 fetched_at: 2026-05-05T07:02:10.448310+00:00
 source: "Alisa Sireneva (PurpleSyringa)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Recovering garbled Bitcoin addresses

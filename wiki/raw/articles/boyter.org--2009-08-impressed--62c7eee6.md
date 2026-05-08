@@ -4,6 +4,7 @@ url: "https://boyter.org/2009/08/impressed/"
 fetched_at: 2026-05-05T07:02:08.296908+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Ben E. C. Boyter

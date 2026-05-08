@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/58b7ee21-ae26-4ae8-aaaf-1fc1db0817f7?j=eyJ1I
 fetched_at: 2026-04-18T02:40:21.774955+00:00
 source_date: 2026-04-18
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Running Large Language Models on Laptops: Practical Quantization Techniques in Python

@@ -3,6 +3,7 @@ title: "Big Words"
 url: "https://simonwillison.net/2026/May/7/big-words/#atom-everything"
 blog: "simonwillison.net"
 saved_at: "2026-05-08T07:15:00Z"
+updated: 2026-05-08
 ---
 
 Big Words

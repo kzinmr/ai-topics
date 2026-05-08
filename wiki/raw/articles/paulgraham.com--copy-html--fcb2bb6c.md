@@ -4,6 +4,7 @@ url: "http://www.paulgraham.com/copy.html"
 fetched_at: 2026-05-01T07:01:49.662608+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Copy What You Like

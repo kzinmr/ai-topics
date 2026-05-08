@@ -4,6 +4,7 @@ url: "http://cbloomrants.blogspot.com/2023/10/patcher-part-7-patcher-file-io-and
 fetched_at: 2026-05-05T07:01:47.825313+00:00
 source: "Charles Bloom"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Patcher Part 7 : Patcher File IO and Parallelism

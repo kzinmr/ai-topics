@@ -4,6 +4,7 @@ url: "https://smalldatum.blogspot.com/2026/02/mariadb-innovation-vector-index.ht
 fetched_at: 2026-05-05T07:01:17.284875+00:00
 source: "Mark Callaghan (smalldatum)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # MariaDB innovation: vector index performance

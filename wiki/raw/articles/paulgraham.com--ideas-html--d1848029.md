@@ -4,6 +4,7 @@ url: "http://www.paulgraham.com/ideas.html"
 fetched_at: 2026-05-01T07:01:51.621287+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Ideas for Startups

@@ -4,6 +4,7 @@ url: "https://idea.popcount.org/2015-09-25-analysis-of-a-browser-based-ddos"
 fetched_at: 2026-05-05T07:01:11.298324+00:00
 source: "Marek Vavruša (idea.popcount)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Analysis of a browser-based DDoS

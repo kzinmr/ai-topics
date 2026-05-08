@@ -4,6 +4,7 @@ url: "https://steveblank.com/2025/07/01/why-investors-dont-care-about-your-busin
 fetched_at: 2026-05-01T07:01:12.952848+00:00
 source: "steveblank.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Why Investors Don’t Care About Your Business

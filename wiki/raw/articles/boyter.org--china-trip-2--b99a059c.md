@@ -4,6 +4,7 @@ url: "https://boyter.org/china-trip-2/"
 fetched_at: 2026-05-05T07:02:04.368594+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Ben E. C. Boyter

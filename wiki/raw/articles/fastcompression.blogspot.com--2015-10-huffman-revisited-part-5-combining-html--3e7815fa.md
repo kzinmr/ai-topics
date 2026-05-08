@@ -4,6 +4,7 @@ url: "http://fastcompression.blogspot.com/2015/10/huffman-revisited-part-5-combi
 fetched_at: 2026-05-05T07:00:59.888508+00:00
 source: "Yann Collet (LZ4/Zstd)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Huffman revisited part 5 : combining multi-streams with multi-symbols

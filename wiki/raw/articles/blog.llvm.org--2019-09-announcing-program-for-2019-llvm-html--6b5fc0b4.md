@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2019/09/announcing-program-for-2019-llvm.html"
 fetched_at: 2026-05-05T07:01:37.796004+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Announcing the program for the 2019 LLVM Developers' Meeting - Bay Area

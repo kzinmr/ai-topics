@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/7ae07a70-35d4-4031-9e1e-078aeaf2acdc?j=eyJ1I
 fetched_at: 2026-04-09T14:51:02.030613+00:00
 source_date: 2026-04-09
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # - YouTube

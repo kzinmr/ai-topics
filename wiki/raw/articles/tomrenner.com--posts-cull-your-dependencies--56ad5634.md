@@ -4,6 +4,7 @@ url: "https://tomrenner.com/posts/cull-your-dependencies/"
 fetched_at: 2026-05-01T07:01:08.151764+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Cull your dependencies

@@ -4,6 +4,7 @@ url: "https://maskray.me/blog/2026-02-22-bit-field-layout"
 fetched_at: 2026-05-05T07:01:44.890806+00:00
 source: "Fangrui Song (MaskRay)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Bit-field layout

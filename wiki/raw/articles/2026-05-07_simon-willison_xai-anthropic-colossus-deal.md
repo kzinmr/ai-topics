@@ -6,4 +6,5 @@ date: 2026-05-07
 scraped: 2026-05-07
 authors: ["Simon Willison"]
 tags: [infrastructure, data-center, xai, anthropic, colossus, elon-musk, safety]
+updated: 2026-05-08
 ---

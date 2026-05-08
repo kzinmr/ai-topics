@@ -125,7 +125,7 @@ DeepSeek V4 is confirmed to run on **Huawei Ascend 950** chips for inference and
 
 ## Relationships
 
-- [[china-ai-industry]] — Key company driving China's AI competitiveness
+- [[entities/china-ai-industry]] — Key company driving China's AI competitiveness
 - [[nvidia]] — Competitor in AI hardware; DeepSeek reducing dependence on NVIDIA
 - [[open-source-ai]] — Leading open-source AI model provider
 - [[concepts/deepseek-v3]] — Predecessor model series
@@ -134,7 +134,7 @@ DeepSeek V4 is confirmed to run on **Huawei Ascend 950** chips for inference and
 - [[concepts/deepseek-r1]] — Reasoning model (Nature 2025)
 - [[concepts/grpo]] — RL algorithm introduced in R1
 - [[token-economics]] — Pricing disruption context
-- [[inference]] — Efficiency innovations in V4 architecture
+- [[concepts/inference]] — Efficiency innovations in V4 architecture
 - [[entities/simon-willison]] — Covered V4 technical details
 - [[entities/kimi]] — Competitor (K2.6 at 1.1T)
 

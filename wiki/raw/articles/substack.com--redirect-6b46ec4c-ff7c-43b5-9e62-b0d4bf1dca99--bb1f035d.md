@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/6b46ec4c-ff7c-43b5-9e62-b0d4bf1dca99?j=eyJ1I
 fetched_at: 2026-04-15T03:06:24.427406+00:00
 source_date: 2026-04-15
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Every Agent Needs a Box - Aaron Levie, Box

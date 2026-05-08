@@ -4,6 +4,7 @@ url: "https://open.substack.com/pub/swyx/p/noetik?utm_source=email&redirect=app-
 fetched_at: 2026-04-20T16:18:38.506514+00:00
 source_date: 2026-04-20
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Introducing the Substack app

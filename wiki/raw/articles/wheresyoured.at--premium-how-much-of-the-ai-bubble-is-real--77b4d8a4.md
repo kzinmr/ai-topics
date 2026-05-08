@@ -4,6 +4,7 @@ url: "https://www.wheresyoured.at/premium-how-much-of-the-ai-bubble-is-real/"
 fetched_at: 2026-05-01T07:01:06.155255+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Premium: How Much Of The AI Bubble Is Real?

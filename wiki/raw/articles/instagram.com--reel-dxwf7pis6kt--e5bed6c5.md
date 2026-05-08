@@ -4,6 +4,7 @@ url: "https://www.instagram.com/reel/DXwf7pis6KT/"
 fetched_at: 2026-05-01T07:13:06.056671+00:00
 source: "daringfireball.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Instagram

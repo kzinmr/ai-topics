@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/how-to-start-go-project-2023/"
 fetched_at: 2026-05-05T07:01:56.046968+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # How to start a Go project in 2023

@@ -4,6 +4,7 @@ url: "https://boyter.org/2016/09/companies-recruiting/"
 fetched_at: 2026-05-05T07:02:00.595864+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # To all Companies Currently Recruiting

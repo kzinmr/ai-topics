@@ -4,6 +4,7 @@ url: "https://www.johndcook.com/blog/2026/04/09/random-hexagon-fractal/"
 fetched_at: 2026-05-01T07:02:10.281771+00:00
 source: "johndcook.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Random hexagon fractal

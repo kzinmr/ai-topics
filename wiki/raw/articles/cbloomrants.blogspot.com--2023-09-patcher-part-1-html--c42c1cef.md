@@ -4,6 +4,7 @@ url: "http://cbloomrants.blogspot.com/2023/09/patcher-part-1.html"
 fetched_at: 2026-05-05T07:01:47.892533+00:00
 source: "Charles Bloom"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # cbloom rants: Patcher Part 1

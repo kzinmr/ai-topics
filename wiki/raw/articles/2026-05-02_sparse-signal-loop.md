@@ -3,6 +3,7 @@ source_url: https://stochi0.vercel.app/writings/sparse-signal-loop
 author: stochi
 date: 2026-05-02
 topic: AI Agent Harness Design, Feedback Density, Memory Architecture
+updated: 2026-05-08
 ---
 
 # Sparse Signal Loop: Experiment Summary

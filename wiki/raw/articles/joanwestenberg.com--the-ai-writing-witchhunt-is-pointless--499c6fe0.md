@@ -4,6 +4,7 @@ url: "https://www.joanwestenberg.com/the-ai-writing-witchhunt-is-pointless/"
 fetched_at: 2026-05-01T07:02:06.022822+00:00
 source: "joanwestenberg.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The AI writing witchhunt is pointless.

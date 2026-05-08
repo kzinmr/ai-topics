@@ -4,6 +4,7 @@ url: "https://mitchellh.com/writing/ghostty-leaving-github"
 fetched_at: 2026-05-01T07:00:51.361055+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Ghostty Is Leaving GitHub

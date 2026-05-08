@@ -4,6 +4,7 @@ url: "https://danluu.com/linear-hammer/"
 fetched_at: 2026-05-05T07:01:35.540218+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # PCA is not a panacea

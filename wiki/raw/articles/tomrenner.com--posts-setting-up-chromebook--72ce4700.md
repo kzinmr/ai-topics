@@ -4,6 +4,7 @@ url: "https://tomrenner.com/posts/setting-up-chromebook/"
 fetched_at: 2026-05-01T07:01:08.393185+00:00
 source: "tomrenner.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Setting up a bottom-end Chromebook for development

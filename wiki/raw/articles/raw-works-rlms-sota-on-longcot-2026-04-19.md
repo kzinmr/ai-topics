@@ -78,7 +78,7 @@ Result: **15.69% on LongCoT-full** — comfortably SOTA, ~1.6× GPT-5.2's 9.83%.
 
 - [[recursive-language-model]] — RLM
 - [[raw/articles/raw-works-rlms-sota-on-longcot-2026-04-19.md]] — Long Chain-of-Thought benchmark
-- [[dspy]] — DSPy framework
+- [[entities/dspy]] — DSPy framework
 - [[entities/qwen3-6-plus.md]] — Qwen model family
 - [[reasoning-models]] — Reasoning models
 

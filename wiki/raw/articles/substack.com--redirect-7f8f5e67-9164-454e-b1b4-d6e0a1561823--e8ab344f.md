@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/7f8f5e67-9164-454e-b1b4-d6e0a1561823?j=eyJ1I
 fetched_at: 2026-04-18T02:40:17.705778+00:00
 source_date: 2026-04-18
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Trailblazing Python Security

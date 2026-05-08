@@ -5,6 +5,7 @@ source_created_at: "2026-02-21T00:16:02.000Z"
 scraped_at: "2026-04-28T23:42:00Z"
 title: "What is OAuth?"
 url: "https://leaflet.pub/p/did:plc:3vdrgzr2zybocs45yfhcr6ur/3mfd2oxx5v22b"
+updated: 2026-05-08
 ---
 
 # What is OAuth?

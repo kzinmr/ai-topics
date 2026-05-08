@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS
 fetched_at: 2026-04-14T20:42:45.053337+00:00
 source_date: 2026-04-14
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # ATOM Report, post-training course, finishing my book, and research

@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9vcGVuLnN1YnN0YWNrLmNvbS
 fetched_at: 2026-04-09T16:28:20.736193+00:00
 source_date: 2026-04-10
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # [AINews] The Claude Code Source Leak

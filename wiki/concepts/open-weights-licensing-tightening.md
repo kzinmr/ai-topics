@@ -3,6 +3,7 @@ title: "Open Weights Licensing Tightening"
 url: "https://wiki.ai-topics/concepts/open-weights-licensing-tightening"
 date: 2026-05-07
 tags: [concept, open-source-ai, licensing, market-dynamics]
+updated: 2026-05-08
 ---
 
 # Open Weights Licensing Tightening

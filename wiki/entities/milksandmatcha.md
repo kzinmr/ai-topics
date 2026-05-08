@@ -11,7 +11,7 @@ type: entity
 
 ## Overview
 
-Sarah Chieng is an AI agent educator and developer advocate focused on practical multi-agent workflow patterns. She is known for co-authoring the **"Back of House"** framework with [@0xSero]([[sero|0xSero]]), which maps professional kitchen operations to multi-agent coding architectures (Head Chef = Orchestrator, Line Cooks = Subagents).
+Sarah Chieng is an AI agent educator and developer advocate focused on practical multi-agent workflow patterns. She is known for co-authoring the **"Back of House"** framework with [@0xSero]([[entities/sero|0xSero]]), which maps professional kitchen operations to multi-agent coding architectures (Head Chef = Orchestrator, Line Cooks = Subagents).
 
 Her work focuses on helping developers transition from single-agent "sloperator" workflows to structured, verifiable, multi-agent systems. She produces X/Twitter threads, guides, and educational content on AI coding agent best practices.
 
@@ -19,7 +19,7 @@ Her work focuses on helping developers transition from single-agent "sloperator"
 
 ### Back of House Multi-Agent Patterns
 
-Co-authored with [@0xSero]([[sero|0xSero]]), this framework identifies five practical patterns for running multi-agent coding workflows:
+Co-authored with [@0xSero]([[entities/sero|0xSero]]), this framework identifies five practical patterns for running multi-agent coding workflows:
 
 1. **The Prep Line** — Independent parallel exploration (design, test generation). Multiple sub-agents generate options; human curates the best.
 2. **The Dinner Rush** — Swarm-style parallel execution where each sub-agent owns a distinct, non-overlapping task. Requires strict file-scoping to avoid conflicts.
@@ -63,7 +63,7 @@ Sarah advocates for:
 - [[concepts/harness-engineering/agentic-workflows/subagents]] — Technical implementation of delegated agent tasks
 -  — Professional use of coding agents (Simon Willison)- [[concepts/agent-team-swarm]] — Multi-agent orchestration taxonomy
 - [[concepts/single-agent-ceiling]] — Limitations of single-agent workflows
-- [[sero|0xSero]] — Co-author and collaborator
+- [[entities/sero|0xSero]] — Co-author and collaborator
 
 ## Key Links
 

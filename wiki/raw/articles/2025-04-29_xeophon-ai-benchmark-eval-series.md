@@ -12,6 +12,7 @@ tags:
   - evals
   - llm-evaluation
   - ai-metrics
+updated: 2026-05-08
 ---
 
 # AI Benchmarks & Evals Series — @xeophon (All 18 Parts)

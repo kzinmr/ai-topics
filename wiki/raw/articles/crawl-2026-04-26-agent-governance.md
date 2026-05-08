@@ -4,6 +4,7 @@ source_url: "https://zenity.io/blog/security/ai-agent-governance"
 author: "Cinthia Portugal"
 date: "2026-03-12"
 extracted: "2026-04-26"
+updated: 2026-05-08
 ---
 
 # AI Agent Governance: CISO Checklist & Enterprise Framework

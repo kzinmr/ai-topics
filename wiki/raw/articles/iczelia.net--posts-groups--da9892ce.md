@@ -4,6 +4,7 @@ url: "https://iczelia.net/posts/groups/"
 fetched_at: 2026-05-05T07:01:18.984656+00:00
 source: "Kamila Szewczyk (iczelia)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # A no-bullshit introduction to groups: Part 1.

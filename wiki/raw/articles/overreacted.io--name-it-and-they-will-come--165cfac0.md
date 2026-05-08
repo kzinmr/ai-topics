@@ -4,6 +4,7 @@ url: "https://overreacted.io/name-it-and-they-will-come/"
 fetched_at: 2026-05-01T07:02:01.907265+00:00
 source: "overreacted.io"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Name It, and They Will Come

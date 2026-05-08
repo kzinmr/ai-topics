@@ -4,6 +4,7 @@ url: "https://boyter.org/2018/03/collection-favorite-optimization-posts-articles
 fetched_at: 2026-05-05T07:01:59.725372+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Collection of my favorite optimization posts and articles

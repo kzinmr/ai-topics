@@ -4,6 +4,7 @@ url: "https://boyter.org/2017/12/searchcode-plexus/"
 fetched_at: 2026-05-05T07:01:59.948438+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # searchcode plexus

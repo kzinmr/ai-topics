@@ -18,7 +18,7 @@ When an agentic coding session makes multiple API calls:
 1. The router checks which workers have overlapping KV cache entries
 2. Requests are routed to workers that already hold relevant context
 3. This avoids recomputing KV state from scratch on each call
-4. [[nvidia-dynamo]] uses this as a core component of its Request Plane
+4. [[concepts/nvidia-dynamo]] uses this as a core component of its Request Plane
 
 ## Why It Matters
 
@@ -28,11 +28,11 @@ When an agentic coding session makes multiple API calls:
 
 ## Connection to Broader Trends
 
-KV-aware routing is part of the shift from throughput-optimized inference to context-aware inference, which is essential for [[agentic-engineering]] workloads. It connects to [[context-engineering]] as a runtime optimization layer.
+KV-aware routing is part of the shift from throughput-optimized inference to context-aware inference, which is essential for [[concepts/agentic-engineering]] workloads. It connects to [[concepts/context-engineering]] as a runtime optimization layer.
 
 ## Related
 
-- [[nvidia-dynamo]]
-- [[context-engineering]]
-- [[inference]]
-- [[agentic-engineering]]
+- [[concepts/nvidia-dynamo]]
+- [[concepts/context-engineering]]
+- [[concepts/inference]]
+- [[concepts/agentic-engineering]]

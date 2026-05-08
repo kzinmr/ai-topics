@@ -146,7 +146,7 @@ Lambert writes with a distinctive mix of technical rigor and personal candor. He
 - [[concepts/rlhf]] — Core research area, book author
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — Direct Preference Optimization, Zephyr
 - [[concepts/post-training]] — His primary research focus
-- [[teknium]] — Fellow post-training researcher, Nous Research co-founder
+- [[entities/teknium]] — Fellow post-training researcher, Nous Research co-founder
 -  — Co-created reward model evaluation benchmark-  — Advocate for fully open AI development- [[concepts/model-distillation]] — Fundamental ML technique; Lambert's "Distillation Panic" defends it from criminalization
 - [[concepts/ai-api-abuse]] — Term Lambert coined to replace the misleading "distillation attacks" framing
 - [[events/distillation-attacks-2026]] — Anthropic's accusations that prompted Lambert's response

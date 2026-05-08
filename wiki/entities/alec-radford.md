@@ -165,9 +165,9 @@ His **non-traditional path** (no PhD, press-shy, experimentation-first) challeng
 
 ## Related
 
-- [[ilya-sutskever]] — OpenAI co-founder; Radford's senior colleague
-- [[sam-altman]] — OpenAI CEO during Radford's tenure
-- [[greg-brockman]] — OpenAI co-founder; engineering leadership
+- [[entities/ilya-sutskever]] — OpenAI co-founder; Radford's senior colleague
+- [[entities/sam-altman]] — OpenAI CEO during Radford's tenure
+- [[entities/greg-brockman]] — OpenAI co-founder; engineering leadership
 - [[concepts/karpathy]] — Fellow OpenAI researcher (overlapping tenure)
 -  — Radford's work empirically validated these
 -  — CLIP and DALL-E were foundational

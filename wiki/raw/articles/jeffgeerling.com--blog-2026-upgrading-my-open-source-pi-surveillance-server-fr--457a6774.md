@@ -4,6 +4,7 @@ url: "https://www.jeffgeerling.com/blog/2026/upgrading-my-open-source-pi-surveil
 fetched_at: 2026-04-29T07:02:13.981273+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Upgrading my Open Source Pi Surveillance Server with Frigate

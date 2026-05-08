@@ -78,4 +78,4 @@ print(result.data)  # Type-safe CityInfo object
 - [[concepts/structured-outputs]] — Core validation approach
 - [[concepts/ai-observability]] — Logfire integration
 - [[concepts/harness-engineering]] — Type safety as harness constraint
-- [[samuel-colvin]] — Creator/CEO
+- [[entities/samuel-colvin]] — Creator/CEO

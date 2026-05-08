@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/325f35e4-a4da-4e07-980c-1b5b6b7ad66b?j=eyJ1I
 fetched_at: 2026-04-16T19:09:13.896315+00:00
 source_date: 2026-04-16
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Soap Bubbles and Attention Sinks: The Theory and History of the HALO-Loss

@@ -4,6 +4,7 @@ url: "http://cbloomrants.blogspot.com/2023/07/float-to-int-casts-for-data-compre
 fetched_at: 2026-05-05T07:01:48.081235+00:00
 source: "Charles Bloom"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Float to int casts for data compression

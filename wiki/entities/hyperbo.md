@@ -1,6 +1,7 @@
 ---
 title: hyperbo
 status: active
+updated: 2026-05-08
 ---
 
 # hyperbo
@@ -46,5 +47,5 @@ hyperbo domain articles and content.
 ## See Also
 
 - [[substack]] — Newsletter and content publishing platform.
-- [[coding-agents]] — Topics covered in hyperbo's writing on AI and software engineering.
+- [[concepts/coding-agents]] — Topics covered in hyperbo's writing on AI and software engineering.
 - [[software-engineering]] — Software development practices and engineering culture.

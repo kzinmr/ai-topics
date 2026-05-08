@@ -92,10 +92,10 @@ sources:
 
 ## 関連エンティティ
 
-- [[browser-use]] — オープンソースブラウザ自動化
+- [[entities/browser-use]] — オープンソースブラウザ自動化
 - [[concepts/death-of-browser]] — ブラウザの脱人間化潮流
-- [[webmcp]] — 標準化プロトコル
-- [[anthropic-computer-use]] — スクリーンショットベースアプローチ
+- [[entities/webmcp]] — 標準化プロトコル
+- [[entities/anthropic-computer-use]] — スクリーンショットベースアプローチ
 
 ## Sources
 

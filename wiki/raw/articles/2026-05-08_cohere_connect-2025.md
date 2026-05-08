@@ -5,6 +5,7 @@ url: "https://cohere.com/blog/connect-2025"
 scraped: "2026-05-08T07:45:07.043386+00:00"
 lastmod: "2025-12-08"
 type: "sitemap"
+updated: 2026-05-08
 ---
 
 # Connect 2025: Why Collaboration is the Ultimate Research Superpower

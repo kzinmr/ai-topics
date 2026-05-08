@@ -8,7 +8,7 @@ type: entity
 
 # Eugene Yan: Timeline & Career History
 
-Back to main profile: [[eugene-yan]]
+Back to main profile: [[entities/eugene-yan]]
 
 | Date | Event |
 |------|-------|

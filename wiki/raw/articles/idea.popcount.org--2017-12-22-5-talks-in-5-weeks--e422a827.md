@@ -4,6 +4,7 @@ url: "https://idea.popcount.org/2017-12-22-5-talks-in-5-weeks"
 fetched_at: 2026-05-05T07:01:09.194183+00:00
 source: "Marek Vavruša (idea.popcount)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # 5 talks in 5 weeks

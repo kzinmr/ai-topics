@@ -213,7 +213,7 @@ This connects to Bergum's broader thesis that retrieval for agents isn't just ab
 - [[concepts/hornet]] — His new company, a retrieval engine for agents
 - [[concepts/agentic-retrieval]] — The paradigm shift he's building for
 - [[concepts/mutually-assured-distraction]] — His key insight about retrieval-reasoning compounding errors
-- [[doug-turnbull]] — Fellow search relevance engineer, co-author of "AI-Powered Search"
+- [[entities/doug-turnbull]] — Fellow search relevance engineer, co-author of "AI-Powered Search"
 
 ## Sources
 

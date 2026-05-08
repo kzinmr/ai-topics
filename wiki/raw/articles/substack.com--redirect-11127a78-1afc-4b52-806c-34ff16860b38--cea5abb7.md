@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/11127a78-1afc-4b52-806c-34ff16860b38?j=eyJ1I
 fetched_at: 2026-04-15T18:21:44.192989+00:00
 source_date: 2026-04-15
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # What comes next with open models

@@ -86,8 +86,8 @@ Claude Codeのサンドボックス機能。OSレベルの隔離（Linux bubblew
 
 ## See Also
 
-- [[claude-code]] — Claude Code agent harness
+- [[entities/claude-code]] — Claude Code agent harness
 - [[claude-code-auto-mode]] — Auto mode permission classifier
-- [[agent-sandboxing]] — General agent sandboxing patterns
-- [[claude-code-best-practices]] — Claude Code best practices
-- [[code-execution-with-mcp]] — MCPでのコード実行
+- [[concepts/agent-sandboxing]] — General agent sandboxing patterns
+- [[concepts/claude-code-best-practices]] — Claude Code best practices
+- [[concepts/code-execution-with-mcp]] — MCPでのコード実行

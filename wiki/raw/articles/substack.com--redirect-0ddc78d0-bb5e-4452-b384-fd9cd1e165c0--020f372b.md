@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/0ddc78d0-bb5e-4452-b384-fd9cd1e165c0?j=eyJ1I
 fetched_at: 2026-04-18T03:24:25.332606+00:00
 source_date: 2026-04-18
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Ten different ways of thinking about Gradual Disempowerment

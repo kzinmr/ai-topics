@@ -150,7 +150,7 @@ Nuttall's content platform and course business teaching programmatic SEO strateg
 -  — Community he actively participates in
 -  — His 2025–2026 focus area
 - [[concepts/model-context-protocol-mcp]] — Model Context Protocol servers as a new product category
-- [[claude-code]] — His primary AI coding tool
+- [[entities/claude-code]] — His primary AI coding tool
 - [[concepts/harness-engineering/system-architecture/agent-skills]] — Playbooks.com is a skill directory for AI agents
 -  — His approach to agent state management
 ## Sources

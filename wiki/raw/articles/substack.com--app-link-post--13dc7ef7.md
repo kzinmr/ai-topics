@@ -4,6 +4,7 @@ url: "https://substack.com/app-link/post?publication_id=92860&post_id=193000363&
 fetched_at: 2026-04-18T03:22:38.251849+00:00
 source_date: 2026-04-18
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # What PM Hiring Managers Actually Screen For

@@ -4,6 +4,7 @@ url: "https://terriblesoftware.org/2026/04/01/say-the-thing-you-want/"
 fetched_at: 2026-05-01T07:01:10.671244+00:00
 source: "terriblesoftware.org"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Say the Thing You Want

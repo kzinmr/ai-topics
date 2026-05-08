@@ -4,6 +4,7 @@ url: "https://berthub.eu/articles/posts/ft-on-european-cloud/"
 fetched_at: 2026-04-29T07:02:23.081756+00:00
 source: "berthub.eu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Europe's executives need to skill up to solve our total US cloud dependency

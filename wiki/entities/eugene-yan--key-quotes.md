@@ -8,7 +8,7 @@ type: entity
 
 # Eugene Yan: Key Quotes
 
-Back to main profile: [[eugene-yan]]
+Back to main profile: [[entities/eugene-yan]]
 
 > "I work to bridge the field and the frontier, and help build safe, reliable AI systems that serve customers at scale."
 

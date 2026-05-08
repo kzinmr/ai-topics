@@ -10,7 +10,7 @@ sources:
 
 # One-Person Unicorn
 
-A billion-dollar company founded and operated by a single person, enabled by AI agents and the [[solo-founder-stack]].
+A billion-dollar company founded and operated by a single person, enabled by AI agents and the [[concepts/solo-founder-stack]].
 
 ## Market Data
 
@@ -20,15 +20,15 @@ A billion-dollar company founded and operated by a single person, enabled by AI 
 
 ## Enabling Factors
 
-1. **[[managed-agents]]:** No-code agent creation and deployment
-2. **[[context-engineering]]:** Making AI agents reliable and capable
-3. **[[nvidia-dynamo]]:** Affordable agentic inference infrastructure
+1. **[[concepts/managed-agents]]:** No-code agent creation and deployment
+2. **[[concepts/context-engineering]]:** Making AI agents reliable and capable
+3. **[[concepts/nvidia-dynamo]]:** Affordable agentic inference infrastructure
 4. **[[vibe-ceo]]:** New management paradigm for agent orchestration
-5. **[[reflexive-ai]]:** Cultural normalization of AI-as-baseline
+5. **[[concepts/reflexive-ai]]:** Cultural normalization of AI-as-baseline
 
 ## Related
 
-- [[solo-founder-stack]]
+- [[concepts/solo-founder-stack]]
 - [[vibe-ceo]]
-- [[managed-agents]]
-- [[agentic-engineering]]
+- [[concepts/managed-agents]]
+- [[concepts/agentic-engineering]]

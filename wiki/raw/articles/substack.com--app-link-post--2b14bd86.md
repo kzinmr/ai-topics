@@ -4,6 +4,7 @@ url: "https://substack.com/app-link/post?publication_id=1084089&post_id=19481075
 fetched_at: 2026-04-20T16:18:30.378965+00:00
 source_date: 2026-04-20
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # 🔬 Training Transformers to solve 95% failure rate of Cancer Trials - Ron Alfa & Daniel Bear, Noetik

@@ -89,7 +89,7 @@ Claudeの「think」ツールは、複雑なタスク中に構造化された思
 
 ## See Also
 
-- [[claude-code]] — Claude Code agent harness
-- [[agent-skills]] — Equipping agents with skills
+- [[entities/claude-code]] — Claude Code agent harness
+- [[concepts/agent-skills]] — Equipping agents with skills
 - [[advanced-tool-use]] — Advanced tool use patterns
-- [[effective-harnesses-for-long-running-agents]] — Long-running agent harnesses
+- [[concepts/effective-harnesses-for-long-running-agents]] — Long-running agent harnesses

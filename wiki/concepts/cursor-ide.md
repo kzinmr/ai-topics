@@ -43,9 +43,9 @@ Cursor is an AI-first code editor built on a modified VS Code foundation, design
 
 ## Related Concepts
 
-- [[harness-engineering]]
-- [[claude-code]]
-- [[coding-agents]]
+- [[concepts/harness-engineering]]
+- [[entities/claude-code]]
+- [[concepts/coding-agents]]
 - [[entities/cursor-3]]
 
 ## Sources

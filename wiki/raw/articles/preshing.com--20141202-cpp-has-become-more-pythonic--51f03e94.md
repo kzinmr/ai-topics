@@ -4,6 +4,7 @@ url: "https://preshing.com/20141202/cpp-has-become-more-pythonic"
 fetched_at: 2026-05-05T07:01:04.307410+00:00
 source: "Preshing"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # C++ Has Become More Pythonic

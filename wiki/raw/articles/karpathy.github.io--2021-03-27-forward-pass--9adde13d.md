@@ -4,6 +4,7 @@ url: "http://karpathy.github.io/2021/03/27/forward-pass/"
 fetched_at: 2026-05-05T07:02:10.265979+00:00
 source: "Andrej Karpathy"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Short Story on AI: Forward Pass

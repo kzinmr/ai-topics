@@ -131,7 +131,7 @@ See [[concepts/chatgpt-images-2.0]] for GPT Image 2.0.
 ## Related Concepts
 
 - [[concepts/decoder-only-gpt]] — Complete architectural breakdown
-- [[openai]] — OpenAI company and product ecosystem
+- [[entities/openai]] — OpenAI company and product ecosystem
 - [[concepts/fine-tuning/rlhf-dpo-preference]] — Preference optimization methods
 - [[concepts/reasoning-models]] — o-series extended thinking models
 - [[concepts/local-llm]] — Running open-weight alternatives locally

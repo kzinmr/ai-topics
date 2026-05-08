@@ -23,7 +23,7 @@ related:
 
 # Claude Sonnet 4.6
 
-**Claude Sonnet 4.6** は、[[anthropic]] が **2026年2月17日** にリリースした Claude Sonnet シリーズの最新モデル。Opus 4.6 と同時期にリリースされ、コーディング、Computer Use、長文脈推論、エージェント計画、知識業務、デザインの全スキルにおいて大幅なアップグレードが施された。
+**Claude Sonnet 4.6** は、[[entities/anthropic]] が **2026年2月17日** にリリースした Claude Sonnet シリーズの最新モデル。Opus 4.6 と同時期にリリースされ、コーディング、Computer Use、長文脈推論、エージェント計画、知識業務、デザインの全スキルにおいて大幅なアップグレードが施された。
 
 ## 概要
 

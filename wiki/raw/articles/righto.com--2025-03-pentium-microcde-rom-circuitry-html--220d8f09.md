@@ -4,6 +4,7 @@ url: "http://www.righto.com/2025/03/pentium-microcde-rom-circuitry.html"
 fetched_at: 2026-05-01T07:01:17.391450+00:00
 source: "righto.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Notes on the Pentium's microcode circuitry

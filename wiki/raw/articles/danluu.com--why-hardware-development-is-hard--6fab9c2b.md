@@ -4,6 +4,7 @@ url: "https://danluu.com/why-hardware-development-is-hard/"
 fetched_at: 2026-05-05T07:01:35.426556+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Verilog is weird

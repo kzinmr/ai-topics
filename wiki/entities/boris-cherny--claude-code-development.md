@@ -14,7 +14,7 @@ sources: []
 
 # Boris Cherny: Claude Code Development Story
 
-Back to main profile: [[boris-cherny]]
+Back to main profile: [[entities/boris-cherny]]
 
 ## Origins (Sep 2024 – Nov 2024)
 

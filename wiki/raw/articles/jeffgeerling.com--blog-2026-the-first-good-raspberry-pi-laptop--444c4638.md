@@ -4,6 +4,7 @@ url: "https://www.jeffgeerling.com/blog/2026/the-first-good-raspberry-pi-laptop/
 fetched_at: 2026-04-29T07:02:14.120426+00:00
 source: "jeffgeerling.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The first good Raspberry Pi Laptop

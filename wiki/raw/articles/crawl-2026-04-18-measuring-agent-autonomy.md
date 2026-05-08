@@ -3,6 +3,7 @@ title: "Measuring AI Agent Autonomy in Practice"
 url: "https://www.anthropic.com/news/measuring-agent-autonomy/"
 date: 2026-04-18
 source: Anthropic Blog
+updated: 2026-05-08
 ---
 
 # Measuring Agent Autonomy

@@ -4,6 +4,7 @@ url: "https://iczelia.net/posts/rice-shapiro/"
 fetched_at: 2026-05-05T07:01:20.221420+00:00
 source: "Kamila Szewczyk (iczelia)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Rice and Rice-Shapiro theorems.

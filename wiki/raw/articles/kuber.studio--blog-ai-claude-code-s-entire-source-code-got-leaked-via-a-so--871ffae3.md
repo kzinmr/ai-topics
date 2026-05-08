@@ -4,6 +4,7 @@ url: "https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-v
 fetched_at: 2026-04-09T16:28:00.948452+00:00
 source_date: 2026-04-10
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Claude Code's Entire Source Code Got Leaked via a Sourcemap in npm, Let's Talk About it

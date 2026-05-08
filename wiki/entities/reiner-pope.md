@@ -65,8 +65,8 @@ Because of RL, models may be 100× overtrained beyond Chinchilla-optimal. Infere
 
 - [[entities/dwarkesh-patel]] — Host of the blackboard lecture
 - [[entities/matx]] — Pope's chip startup
-- [[openai]] — Referenced in scaling analysis
-- [[anthropic]] — Referenced in scaling analysis
+- [[entities/openai]] — Referenced in scaling analysis
+- [[entities/anthropic]] — Referenced in scaling analysis
 
 ## Related Concepts
 

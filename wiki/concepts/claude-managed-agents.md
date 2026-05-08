@@ -5,7 +5,7 @@ created: 2026-04-27
 updated: 2026-05-07
 tags: [anthropic, managed-agents, memory-stores, file-system-memory, multi-agent-orchestration, outcomes-loop, dreams, webhooks]
 aliases: [claude-managed-agents, claude-platform-agents]
-related: [[entities/anthropic]], [[agent-memory]], [[concepts/filesystem-memory]], [[concepts/anthropic-managed-agents]], [[concepts/multi-agent-orchestration]]
+related: [[entities/anthropic]], [[concepts/agent-memory]], [[concepts/filesystem-memory]], [[concepts/anthropic-managed-agents]], [[concepts/multi-agent-orchestration]]
 sources:
   - https://platform.claude.com/docs/en/managed-agents/multi-agent
   - https://platform.claude.com/docs/en/managed-agents/define-outcomes

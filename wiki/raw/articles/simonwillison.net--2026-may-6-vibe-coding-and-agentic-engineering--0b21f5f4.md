@@ -4,6 +4,7 @@ url: "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/#
 fetched_at: 2026-05-07T07:01:37.203116+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Vibe coding and agentic engineering are getting closer than I’d like

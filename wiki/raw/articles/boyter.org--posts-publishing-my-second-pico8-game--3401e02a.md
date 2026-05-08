@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/publishing-my-second-pico8-game/"
 fetched_at: 2026-05-05T07:01:53.549725+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Publishing a second game using pico-8

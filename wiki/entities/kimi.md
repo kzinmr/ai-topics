@@ -210,7 +210,7 @@ Moonshot has maintained the leading position among **Chinese open-source model l
 - [[concepts/kimi-k2-6]] — Technical deep dive on K2.6 architecture
 - [[concepts/kimi-k2-thinking]] — November 2025 reasoning variant
 - [[concepts/deepseek-v3]] — Competitor from DeepSeek
-- [[qwen3-6-plus|Qwen3.6 35B MoE]] — Competing open MoE model
+- [[entities/qwen3-6-plus|Qwen3.6 35B MoE]] — Competing open MoE model
 - [[concepts/open-model-consortium]]
 - [[concepts/china-agentic-coding-sprint]] — China's agentic coding convergence (Apr 2026)
 

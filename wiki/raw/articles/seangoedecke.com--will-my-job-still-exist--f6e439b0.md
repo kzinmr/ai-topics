@@ -4,6 +4,7 @@ url: "https://seangoedecke.com/will-my-job-still-exist/"
 fetched_at: 2026-05-01T07:01:19.162328+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # I don't know if my job will still exist in ten years

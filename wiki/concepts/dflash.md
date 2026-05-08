@@ -89,10 +89,10 @@ Also available for MLX backend.
 
 ## Related Concepts
 
-- [[speculative-decoding]] — Framework for accelerating LLM inference via draft-verify
+- [[concepts/speculative-decoding]] — Framework for accelerating LLM inference via draft-verify
 - [[recursive-language-models]] — Alternative paradigm for unbounded context management
-- [[turboquant]] — Complementary optimization for KV cache memory reduction
-- [[memory-architecture]] — KV cache management and memory optimization
+- [[concepts/turboquant]] — Complementary optimization for KV cache memory reduction
+- [[concepts/memory-architecture]] — KV cache management and memory optimization
 
 ## Open Questions
 

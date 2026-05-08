@@ -27,6 +27,7 @@ related:
   - "[[concepts/linguistic-vertigo]]"
   - "[[concepts/rlhf]]"
   - "[[entities/qiaochu-yuan]]"
+updated: 2026-05-08
 ---
 
 # ワルイージ効果 (Waluigi Effect)

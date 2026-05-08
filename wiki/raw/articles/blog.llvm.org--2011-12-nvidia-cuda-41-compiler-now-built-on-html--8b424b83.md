@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2011/12/nvidia-cuda-41-compiler-now-built-on.html"
 fetched_at: 2026-05-05T07:01:43.663596+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # NVIDIA CUDA 4.1 Compiler Now Built on LLVM

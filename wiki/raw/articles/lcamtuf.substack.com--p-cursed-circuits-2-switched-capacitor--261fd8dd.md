@@ -4,6 +4,7 @@ url: "https://lcamtuf.substack.com/p/cursed-circuits-2-switched-capacitor"
 fetched_at: 2026-04-30T07:02:02.607367+00:00
 source: "lcamtuf.substack.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Cursed circuits #2: switched capacitor lowpass

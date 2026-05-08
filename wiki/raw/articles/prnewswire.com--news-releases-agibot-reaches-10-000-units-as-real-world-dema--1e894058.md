@@ -4,6 +4,7 @@ url: "https://www.prnewswire.com/news-releases/agibot-reaches-10-000-units-as-re
 fetched_at: 2026-04-09T16:29:00.879919+00:00
 source_date: 2026-04-10
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # AGIBOT Reaches 10,000 Units as Real-World Demand for Robots Accelerates

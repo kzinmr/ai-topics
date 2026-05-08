@@ -4,6 +4,7 @@ url: "https://ashvardanian.com/posts/apple-m1/"
 fetched_at: 2026-05-05T07:01:51.819778+00:00
 source: "Ash Vardanyan"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Apple to Apple Comparison: M1 Max vs Intel 🍏

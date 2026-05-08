@@ -13,7 +13,7 @@ sources: []
 
 # Clémentine Fourrier: Sources
 
-Back to main profile: [[clefourrier]]
+Back to main profile: [[entities/clefourrier]]
 
 - clefourrier.github.io — Personal website and timeline
 - Hugging Face profile: huggingface.co/clefourrier (883 followers, 42 articles, 10 papers)

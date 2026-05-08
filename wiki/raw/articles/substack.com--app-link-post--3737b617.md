@@ -4,6 +4,7 @@ url: "https://substack.com/app-link/post?publication_id=10845&post_id=193130101&
 fetched_at: 2026-04-19T12:47:27.977928+00:00
 source_date: 2026-04-19
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Why half of product managers are in trouble | Nikhyl Singhal (Meta, Google)

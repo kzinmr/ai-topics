@@ -4,6 +4,7 @@ url: "https://boyter.org/2013/01/code-for-a-search-engine-in-php-part-2/"
 fetched_at: 2026-05-05T07:02:05.238274+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Code a Search Engine in PHP Part 2

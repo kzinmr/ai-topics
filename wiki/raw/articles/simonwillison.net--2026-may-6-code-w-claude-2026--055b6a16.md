@@ -4,6 +4,7 @@ url: "https://simonwillison.net/2026/May/6/code-w-claude-2026/#atom-everything"
 fetched_at: 2026-05-07T07:01:37.214662+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Live blog: Code w/ Claude 2026

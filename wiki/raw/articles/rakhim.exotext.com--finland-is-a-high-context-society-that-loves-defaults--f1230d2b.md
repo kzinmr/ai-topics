@@ -4,6 +4,7 @@ url: "https://rakhim.exotext.com/finland-is-a-high-context-society-that-loves-de
 fetched_at: 2026-05-01T07:01:22.937156+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Finland is a high-context society that loves defaults

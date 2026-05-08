@@ -4,6 +4,7 @@ url: "https://simonwillison.net/2026/May/5/datasette-referrer-policy/#atom-every
 fetched_at: 2026-05-06T07:01:08.674700+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # datasette-referrer-policy 0.1

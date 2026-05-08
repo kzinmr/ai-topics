@@ -86,8 +86,8 @@ Managed Agentsは**メタハーネス** — 特定のハーネス実装に依存
 
 ## See Also
 
-- [[building-effective-agents]] — Building effective agents
-- [[effective-harnesses-for-long-running-agents]] — Long-running agent harnesses
+- [[concepts/building-effective-agents]] — Building effective agents
+- [[concepts/effective-harnesses-for-long-running-agents]] — Long-running agent harnesses
 - [[multi-agent-research-system]] — Multi-agent research system
-- [[agent-team-swarm]] — Agent team/swarm architecture
-- [[carlini-c-compiler-agents]] — Carlini's parallel agent experiment
+- [[concepts/agent-team-swarm]] — Agent team/swarm architecture
+- [[concepts/carlini-c-compiler-agents]] — Carlini's parallel agent experiment

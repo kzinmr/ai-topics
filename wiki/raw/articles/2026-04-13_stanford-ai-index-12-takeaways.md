@@ -9,6 +9,7 @@ tags:
   - stanford
   - ai-trends
   - analysis
+updated: 2026-05-08
 ---
 
 # Inside the AI Index: 12 Takeaways from the 2026 Report

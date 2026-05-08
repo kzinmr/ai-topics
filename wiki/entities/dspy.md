@@ -92,7 +92,7 @@ Skylar Payne (March 2026) introduced **"Khattab's Law"** — named after DSPy cr
 - [[concepts/gepa]] — Genetic prompt optimization built on DSPy
 - [[concepts/recursive-language-models]] — RLM approach can complement DSPy
 - [[concepts/rlms]] — Recursive Language Models
-- [[omar-khattab]] — Creator of DSPy
+- [[entities/omar-khattab]] — Creator of DSPy
 
 ## Key Papers
 

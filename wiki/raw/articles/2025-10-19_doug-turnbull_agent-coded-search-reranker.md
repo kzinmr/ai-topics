@@ -53,7 +53,7 @@ Strict validation within `apply_patch`:
 
 ## Connection to Karpathy Loop (Autoresearch)
 
-This article is a textbook example of the [[karpathy-loop]] applied to the **search domain**:
+This article is a textbook example of the [[concepts/karpathy-loop]] applied to the **search domain**:
 
 | Dimension | Karpathy's Autoresearch | Turnbull's Search Reranker |
 |-----------|------------------------|----------------------------|

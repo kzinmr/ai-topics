@@ -4,6 +4,7 @@ url: "https://mitchellh.com/writing/ghostty-devlog-006"
 fetched_at: 2026-05-01T07:02:03.345926+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Ghostty Devlog 006

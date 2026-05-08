@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2018/09/integration-of-libc-and-openmp-packages.html
 fetched_at: 2026-05-05T07:01:37.993506+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Integration of libc++ and OpenMP packages into llvm-toolchain

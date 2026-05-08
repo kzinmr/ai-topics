@@ -4,6 +4,7 @@ url: "https://danluu.com/programming-books/"
 fetched_at: 2026-05-05T07:01:32.109587+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Programming book recommendations and anti-recommendations

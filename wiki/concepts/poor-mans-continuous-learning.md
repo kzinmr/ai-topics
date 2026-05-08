@@ -1,3 +1,12 @@
+---
+title: "Poor Man's Continuous Learning"
+created: 2026-05-08
+updated: 2026-05-08
+type: concept
+tags: [ai-agents, data-analysis, knowledge-management, prompt-engineering]
+status: active
+---
+
 # Poor Man's Continuous Learning
 
 > **Knowledge-based continuous improvement for LLM agents, without model fine-tuning.**

@@ -4,6 +4,7 @@ url: "https://email.beehiivstatus.com/a201af524cdc2d4e93bca0e6854943bd6e0b5c35/h
 fetched_at: 2026-04-18T15:52:54.827773+00:00
 source_date: 2026-04-18
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Hidden tracker

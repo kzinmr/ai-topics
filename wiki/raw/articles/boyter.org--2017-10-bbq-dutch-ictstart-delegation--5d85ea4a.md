@@ -4,6 +4,7 @@ url: "https://boyter.org/2017/10/bbq-dutch-ictstart-delegation/"
 fetched_at: 2026-05-05T07:01:59.933429+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # BBQ with a Dutch ICT/start up Delegation

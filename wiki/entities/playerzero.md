@@ -120,8 +120,8 @@ Featured as the exemplar of Path 3 startups. Foundation Capital argues:
 
 ## See Also
 
-- [[regie-ai]] — AI-native sales engagement platform using context graphs.
-- [[maximor]] — AI agent startup automating finance/accounting workflows with decision traces.
-- [[arize]] — AI observability platform for monitoring agent decision quality.
-- [[ai-agents]] — AI agent infrastructure and frameworks.
+- [[entities/regie-ai]] — AI-native sales engagement platform using context graphs.
+- [[entities/maximor]] — AI agent startup automating finance/accounting workflows with decision traces.
+- [[entities/arize]] — AI observability platform for monitoring agent decision quality.
+- [[concepts/ai-agents]] — AI agent infrastructure and frameworks.
 - [[context-graphs]] — Decision trace capture and reasoning lineage.

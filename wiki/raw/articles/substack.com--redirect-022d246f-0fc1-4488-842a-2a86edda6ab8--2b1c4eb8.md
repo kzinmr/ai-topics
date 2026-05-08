@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/022d246f-0fc1-4488-842a-2a86edda6ab8?j=eyJ1I
 fetched_at: 2026-04-21T00:20:06.625416+00:00
 source_date: 2026-04-21
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # [AINews] Moonshot Kimi K2.5 - Beats Sonnet 4.5 at half the cost, SOTA Open Model, first Native Image+Video, 100 parallel Agent Swarm manager

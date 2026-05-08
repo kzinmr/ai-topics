@@ -12,7 +12,7 @@ sources:
 
 # UltraWorkers
 
-UltraWorkers (ULW) is the GitHub organization that hosts the canonical **[[claw-code]]** repository. The organization was created to house the Rust implementation of the `claw` CLI agent harness, which is the primary product surface of the Claw Code project.
+UltraWorkers (ULW) is the GitHub organization that hosts the canonical **[[concepts/claw-code]]** repository. The organization was created to house the Rust implementation of the `claw` CLI agent harness, which is the primary product surface of the Claw Code project.
 
 ## Repository
 
@@ -26,6 +26,6 @@ The UltraWorkers organization serves as the official home for the Rust port of C
 
 ## People
 
-- [[sigrid-jin]] — Creator of Claw Code
+- [[entities/sigrid-jin]] — Creator of Claw Code
 - [[yeachan-heo]] — Lead collaborator, creator of OmX ecosystem
 - **code-yeongyu** — Creator of oh-my-openagent

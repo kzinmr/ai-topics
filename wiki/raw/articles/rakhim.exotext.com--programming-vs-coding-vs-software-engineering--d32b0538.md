@@ -4,6 +4,7 @@ url: "https://rakhim.exotext.com/programming-vs-coding-vs-software-engineering"
 fetched_at: 2026-05-01T07:01:23.842967+00:00
 source: "rakhim.exotext.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Programming vs. Coding vs. Software Engineering

@@ -4,6 +4,7 @@ url: "https://smalldatum.blogspot.com/2026/04/mysql-970-vs-sysbench-on-small-ser
 fetched_at: 2026-05-05T07:01:15.731291+00:00
 source: "Mark Callaghan (smalldatum)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # MySQL 9.7.0 vs sysbench on a small server

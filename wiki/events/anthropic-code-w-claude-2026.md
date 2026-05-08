@@ -3,6 +3,7 @@ title: "Anthropic Code w/ Claude 2026"
 url: "https://wiki.ai-topics/events/anthropic-code-w-claude-2026"
 date: 2026-05-06
 tags: [event, anthropic, claude-code, coding-agents, product-announcements]
+updated: 2026-05-08
 ---
 
 # Anthropic Code w/ Claude 2026
@@ -92,6 +93,6 @@ Three new features announced:
 
 ## Related Concepts
 
-- [[claude-code]] — Anthropic's AI coding assistant
+- [[entities/claude-code]] — Anthropic's AI coding assistant
 - [[multi-agent-systems]] — orchestration of multiple AI agents
 - [[asynchronous-development]] — async coding workflows with AI agents

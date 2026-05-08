@@ -52,7 +52,7 @@ The through-line across all three: **architectural flexibility over brute-force 
 
 ## Connection to "The Second Half"
 
-Both Khattab/Zhang's RLM framework and [[shunyu-yao]]'s RL generalization thesis converge on the same insight: **how we structure the interaction** matters more than the raw capability of the model. Khattab's RLM makes the **environment** (the REPL, the context-as-data) the focus; Yao's work makes the **environment design** (Agent-Computer Interfaces) the focus.
+Both Khattab/Zhang's RLM framework and [[entities/shunyu-yao]]'s RL generalization thesis converge on the same insight: **how we structure the interaction** matters more than the raw capability of the model. Khattab's RLM makes the **environment** (the REPL, the context-as-data) the focus; Yao's work makes the **environment design** (Agent-Computer Interfaces) the focus.
 
 ## Related
 

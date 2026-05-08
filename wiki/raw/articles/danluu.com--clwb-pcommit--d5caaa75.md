@@ -4,6 +4,7 @@ url: "https://danluu.com/clwb-pcommit/"
 fetched_at: 2026-05-05T07:01:34.500849+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # CLWB and PCOMMIT

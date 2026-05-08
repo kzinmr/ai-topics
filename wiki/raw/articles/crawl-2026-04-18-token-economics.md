@@ -7,6 +7,7 @@ published: "2025-12-01"
 crawled: "2026-04-18"
 type: "article"
 tags: [inference, cost, token-economics, optimization]
+updated: 2026-05-08
 ---
 
 # Inference Unit Economics: The True Cost Per Million Tokens

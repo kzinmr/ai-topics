@@ -4,6 +4,7 @@ url: "https://danluu.com/pl-troll/"
 fetched_at: 2026-05-05T07:01:35.663359+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Writing safe Verilog

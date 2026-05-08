@@ -7,6 +7,7 @@ tweet_id: 2048920495165210685
 author: gm8xx8
 url: https://x.com/gm8xx8/status/2048920495165210685
 content_type: metadata_only (video/image tweet)
+updated: 2026-05-08
 ---
 
 # MiMo-V2.5-Pro (Xiaomi) 1.02T MoE

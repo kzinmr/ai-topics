@@ -101,8 +101,8 @@ See full details: [[boris-cherny--key-work|Key Work & Impact]]
 ## Related
 
 - [[concepts/harness-engineering]]
-- [[ryan-lopopolo]]
-- [[simon-willison]]
+- [[entities/ryan-lopopolo]]
+- [[entities/simon-willison]]
 - [[concepts/karpathy]]
 
 ## Sources

@@ -4,6 +4,7 @@ url: "https://berthub.eu/articles/nevenfuncties/"
 fetched_at: 2026-04-29T07:02:22.095178+00:00
 source: "berthub.eu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Nevenfuncties / secondary positions

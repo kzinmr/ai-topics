@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/decompiling-java-excel-and-the-vista-tcpip-stack/
 fetched_at: 2026-05-05T07:01:56.566462+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Decompiling Java, Excel and the Vista TCP/IP stack

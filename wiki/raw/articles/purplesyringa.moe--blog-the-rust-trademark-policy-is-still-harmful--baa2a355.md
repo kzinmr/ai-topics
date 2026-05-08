@@ -4,6 +4,7 @@ url: "https://purplesyringa.moe/blog/./the-rust-trademark-policy-is-still-harmfu
 fetched_at: 2026-05-05T07:02:09.753932+00:00
 source: "Alisa Sireneva (PurpleSyringa)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The Rust Trademark Policy is still harmful

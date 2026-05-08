@@ -16,7 +16,7 @@ sources: []
 
 # Ryan Lopopolo: Core Ideas & Philosophy
 
-Back to main profile: [[ryan-lopopolo]]
+Back to main profile: [[entities/ryan-lopopolo]]
 
 ## Harness Engineering — The System, Not the Prompt
 

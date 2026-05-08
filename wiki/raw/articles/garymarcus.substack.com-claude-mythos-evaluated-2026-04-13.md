@@ -2,6 +2,7 @@
 title: Claude Mythos, Evaluated - Gary Marcus
 category: other
 status: active
+updated: 2026-05-08
 ---
 
 # Claude Mythos, Evaluated - Gary Marcus

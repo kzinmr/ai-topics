@@ -8,6 +8,7 @@ tweet_id: "2050968031493550202"
 bookmarks: 1196
 likes: 491
 retweets: 79
+updated: 2026-05-08
 ---
 
 # How to Think Using AI

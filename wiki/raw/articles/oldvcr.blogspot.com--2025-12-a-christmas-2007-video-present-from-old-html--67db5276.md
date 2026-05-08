@@ -4,6 +4,7 @@ url: "https://oldvcr.blogspot.com/2025/12/a-christmas-2007-video-present-from-ol
 fetched_at: 2026-05-01T07:01:26.546907+00:00
 source: "oldvcr.blogspot.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # A Christmas 2007 video present from Old VCR with Jack Tramiel et al

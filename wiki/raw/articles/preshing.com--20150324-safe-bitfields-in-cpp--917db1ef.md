@@ -4,6 +4,7 @@ url: "https://preshing.com/20150324/safe-bitfields-in-cpp"
 fetched_at: 2026-05-05T07:01:04.244279+00:00
 source: "Preshing"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Safe Bitfields in C++

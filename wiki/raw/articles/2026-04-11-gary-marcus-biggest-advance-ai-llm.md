@@ -2,6 +2,7 @@
 title: Gary Marcus: The biggest advance in AI since the LLM
 category: other
 status: active
+updated: 2026-05-08
 ---
 
 # Gary Marcus: The biggest advance in AI since the LLM

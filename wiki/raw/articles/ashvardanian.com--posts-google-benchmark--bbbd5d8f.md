@@ -4,6 +4,7 @@ url: "https://ashvardanian.com/posts/google-benchmark/"
 fetched_at: 2026-05-05T07:01:51.896880+00:00
 source: "Ash Vardanyan"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Mastering C++ with Google Benchmark ⏱️

@@ -4,6 +4,7 @@ url: "https://preshing.com/20141124/fixing-gccs-implementation-of-memory_order_c
 fetched_at: 2026-05-05T07:01:04.319786+00:00
 source: "Preshing"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Fixing GCC's Implementation of memory_order_consume

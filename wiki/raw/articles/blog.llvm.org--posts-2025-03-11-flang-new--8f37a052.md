@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/posts/2025-03-11-flang-new/"
 fetched_at: 2026-05-05T07:01:36.507923+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # LLVM Fortran Levels Up: Goodbye flang-new, Hello flang!

@@ -4,6 +4,7 @@ url: "https://overreacted.io/my-wishlist-for-hot-reloading/"
 fetched_at: 2026-05-01T07:02:02.647998+00:00
 source: "overreacted.io"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # My Wishlist for Hot Reloading

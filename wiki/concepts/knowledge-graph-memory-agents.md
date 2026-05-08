@@ -98,4 +98,4 @@ This shifts the decision from "which graph DB?" to "do I need graph traversal at
 - [[concepts/vector-db-agent-memory]] — Semantic memory via embeddings; complementary to graph
 - [[concepts/harness-engineering/system-architecture/ai-memory-systems]] — Design philosophy comparison across AI platforms
 - [[concepts/ai-agent-memory-two-camps]] — Two camps taxonomy: memory backends vs context substrates
-- [[sheshansh-agrawal]] — Contextual AI researcher, agentic retrieval, BlitzRank reranker
+- [[entities/sheshansh-agrawal]] — Contextual AI researcher, agentic retrieval, BlitzRank reranker

@@ -38,11 +38,11 @@ Tobi Lütke is the CEO of Shopify and a prominent advocate for organizational AI
 
 ## Impact
 
-Lütke's approach became a reference case for [[reflexive-ai]] and is connected to the [[solo-founder-stack]] movement and the [[experience-is-a-tax]] debate.
+Lütke's approach became a reference case for [[concepts/reflexive-ai]] and is connected to the [[concepts/solo-founder-stack]] movement and the [[concepts/experience-is-a-tax]] debate.
 
 ## Related
 
-- [[reflexive-ai]]
+- [[concepts/reflexive-ai]]
 - [[shopify]]
-- [[experience-is-a-tax]]
-- [[solo-founder-stack]]
+- [[concepts/experience-is-a-tax]]
+- [[concepts/solo-founder-stack]]

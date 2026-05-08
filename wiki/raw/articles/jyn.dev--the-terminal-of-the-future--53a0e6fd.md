@@ -4,6 +4,7 @@ url: "https://jyn.dev/the-terminal-of-the-future/"
 fetched_at: 2026-04-29T07:02:11.511006+00:00
 source: "jyn.dev"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # the terminal of the future

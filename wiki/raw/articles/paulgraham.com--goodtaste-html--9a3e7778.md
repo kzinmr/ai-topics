@@ -4,6 +4,7 @@ url: "http://www.paulgraham.com/goodtaste.html"
 fetched_at: 2026-05-01T07:01:33.066005+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Is There Such a Thing as Good Taste?

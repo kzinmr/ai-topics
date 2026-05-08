@@ -214,10 +214,10 @@ Key tenets:
 
 ## See Also
 
-- [[scott-wu]] — Cognition CEO and co-founder
-- [[walden-yan]] — Cognition CPO ("Don't Build Multi-Agents")
-- [[nader-dabit]] — Cognition Growth Engineer
-- [[claude-code]] — Primary competitor (Anthropic/OpenAI)
+- [[entities/scott-wu]] — Cognition CEO and co-founder
+- [[entities/walden-yan]] — Cognition CPO ("Don't Build Multi-Agents")
+- [[entities/nader-dabit]] — Cognition Growth Engineer
+- [[entities/claude-code]] — Primary competitor (Anthropic/OpenAI)
 - [[windsurf]] — Acquired by Cognition (Jul 2025); agentic AI IDE
 - [[concepts/cognition-devin-philosophy]] — Core philosophy: context continuity, 100x capability growth, closing the loop
 - [[concepts/cognition-devin-memory-tool-claude-code-competitive-analysis-context-management]] — Competitive analysis with Claude Code

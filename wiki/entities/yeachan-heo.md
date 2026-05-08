@@ -13,7 +13,7 @@ sources:
 
 # Yeachan Heo (Bellman)
 
-Yeachan Heo (@bellman_ych) is a developer and algorithmic trader based in Seoul, South Korea. Known for creating the **OmX ecosystem** — workflow and orchestration layers for AI coding agents. He is a primary collaborator on the **[[claw-code]]** project and serves as a key maintainer of its Rust implementation.
+Yeachan Heo (@bellman_ych) is a developer and algorithmic trader based in Seoul, South Korea. Known for creating the **OmX ecosystem** — workflow and orchestration layers for AI coding agents. He is a primary collaborator on the **[[concepts/claw-code]]** project and serves as a key maintainer of its Rust implementation.
 
 ## Key Projects
 
@@ -47,6 +47,6 @@ Heo's work follows the same "humans set direction, agents execute" paradigm as S
 - The bottleneck is human judgment, not coding speed
 
 ## Related
-- [[claw-code]] — Rust implementation co-developed with Heo
-- [[sigrid-jin]] — Creator of claw-code and collaborator
+- [[concepts/claw-code]] — Rust implementation co-developed with Heo
+- [[entities/sigrid-jin]] — Creator of claw-code and collaborator
 - [[ultraworkers]] — GitHub organization

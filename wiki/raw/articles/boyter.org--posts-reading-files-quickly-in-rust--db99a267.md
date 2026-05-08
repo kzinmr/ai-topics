@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/reading-files-quickly-in-rust/"
 fetched_at: 2026-05-05T07:01:59.325856+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Reading files quickly in Rust

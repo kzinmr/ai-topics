@@ -4,6 +4,7 @@ url: "https://www.wheresyoured.at/the-ai-industry-is-lying-to-you/"
 fetched_at: 2026-05-01T07:01:06.208352+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The AI Industry Is Lying To You

@@ -11,7 +11,7 @@ sources:
 
 # GRPO (Group Relative Policy Optimization)
 
-GRPOは、[[deepseek-r1|DeepSeek-R1]]で導入された強化学習アルゴリズム。**PPO（Proximal Policy Optimization）の最大の計算ボトルネックであったクリティックモデル（価値関数）を不要にした**ことが最大の革新。
+GRPOは、[[concepts/deepseek-r1|DeepSeek-R1]]で導入された強化学習アルゴリズム。**PPO（Proximal Policy Optimization）の最大の計算ボトルネックであったクリティックモデル（価値関数）を不要にした**ことが最大の革新。
 
 ## 背景: PPOの問題点
 
@@ -81,7 +81,7 @@ DeepSeek-R1でのGRPO実装の重要な特徴は、**ニューラル報酬モデ
 
 ### DeepSeek-V3 ポストトレーニング
 
-[[deepseek-v3|DeepSeek-V3]]のポストトレーニングでもGRPOが使用され、R1から蒸留された推論パターンの最適化に貢献。
+[[concepts/deepseek-v3|DeepSeek-V3]]のポストトレーニングでもGRPOが使用され、R1から蒸留された推論パターンの最適化に貢献。
 
 ## GRPOの現代的意義
 
@@ -98,9 +98,9 @@ DeepSeek-R1でのGRPO実装の重要な特徴は、**ニューラル報酬モデ
 
 ## 関連項目
 
-- [[deepseek-r1]] — GRPOが導入された原論文
-- [[deepseek-v3]] — GRPOをポストトレーニングに採用
-- [[reinforcement-learning]] — 強化学習全般
-- [[rlhf]] — RLHF（Reinforcement Learning from Human Feedback）
+- [[concepts/deepseek-r1]] — GRPOが導入された原論文
+- [[concepts/deepseek-v3]] — GRPOをポストトレーニングに採用
+- [[concepts/reinforcement-learning]] — 強化学習全般
+- [[concepts/rlhf]] — RLHF（Reinforcement Learning from Human Feedback）
 - [[ppo]] — Proximal Policy Optimization（GRPOの前身）
 - [[reasoning]] — 推論能力

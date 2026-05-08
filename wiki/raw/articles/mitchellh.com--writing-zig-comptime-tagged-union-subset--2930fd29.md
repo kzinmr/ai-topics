@@ -4,6 +4,7 @@ url: "https://mitchellh.com/writing/zig-comptime-tagged-union-subset"
 fetched_at: 2026-05-01T07:02:03.011694+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Tagged Union Subsets with Comptime in Zig

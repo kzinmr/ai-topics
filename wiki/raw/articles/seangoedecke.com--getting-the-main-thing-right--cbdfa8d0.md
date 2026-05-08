@@ -4,6 +4,7 @@ url: "https://seangoedecke.com/getting-the-main-thing-right/"
 fetched_at: 2026-05-01T07:01:19.933822+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Getting the main thing right

@@ -4,6 +4,7 @@ url: "http://fastcompression.blogspot.com/2019/01/the-type-system_19.html"
 fetched_at: 2026-05-05T07:00:58.807844+00:00
 source: "Yann Collet (LZ4/Zstd)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # RealTime Data Compression

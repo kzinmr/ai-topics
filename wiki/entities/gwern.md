@@ -171,7 +171,7 @@ Gwern challenges the Whiggish "expanding circle" narrative of moral progress, ar
 - [[concepts/scaling-hypothesis]] — Gwern's formalization of the theory that scale alone drives AI capability emergence
 - [[concepts/turing-completeness-emergence]] — Turing完全性が複雑性から不可避的に出現するという洞察
 - [[concepts/ambient-agency]] — エージェンシーもTCと同様に自然発生するという拡張
-- [[dwarkesh-patel]] — Interviewed Gwern on his AI predictions and research methodology
+- [[entities/dwarkesh-patel]] — Interviewed Gwern on his AI predictions and research methodology
 - [[concepts/ordinary-incompetence]] — Gwern's analysis of why most people fail to improve despite experience
 -  — The irreducible noise floor in human survey responses
 -  — Gwern's theory of "seeing through" abstractions to underlying reality

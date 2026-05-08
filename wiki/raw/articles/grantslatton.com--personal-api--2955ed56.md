@@ -4,6 +4,7 @@ url: "https://grantslatton.com/personal-api"
 fetched_at: 2026-04-29T07:02:16.557605+00:00
 source: "grantslatton.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Every Man his own API

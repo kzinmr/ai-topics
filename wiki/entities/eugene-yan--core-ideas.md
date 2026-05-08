@@ -8,7 +8,7 @@ type: entity
 
 # Eugene Yan: Core Ideas & Frameworks
 
-Back to main profile: [[eugene-yan]]
+Back to main profile: [[entities/eugene-yan]]
 
 ## Bridging the Field and the Frontier
 

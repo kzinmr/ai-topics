@@ -6,6 +6,7 @@ tweet_id: 2043609541477044439
 tweet_url: https://x.com/noisyb0y1/status/2043609541477044439
 article_url: http://x.com/i/article/2043574857867120640
 date: 2026-04-27
+updated: 2026-05-08
 ---
 
 # Google engineer automated 80% of his work with Claude Code. here's the exact system he built.

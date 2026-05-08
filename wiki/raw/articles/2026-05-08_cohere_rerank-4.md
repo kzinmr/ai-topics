@@ -5,6 +5,7 @@ url: "https://cohere.com/blog/rerank-4"
 scraped: "2026-05-08T07:45:05.148142+00:00"
 lastmod: "2025-12-11"
 type: "sitemap"
+updated: 2026-05-08
 ---
 
 # Introducing Rerank 4: Cohere’s most powerful reranker yet

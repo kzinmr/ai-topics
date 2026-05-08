@@ -4,6 +4,7 @@ url: "https://open.substack.com/pub/robotic/p/what-ive-been-building-atom-report
 fetched_at: 2026-04-14T20:42:45.541074+00:00
 source_date: 2026-04-14
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Introducing the Substack app

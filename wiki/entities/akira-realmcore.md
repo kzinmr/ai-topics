@@ -161,17 +161,17 @@ Slateは[[concepts/agentic-engineering]]における「swarm orchestration」パ
 |---|---|---|
 | [[concepts/kiran-random-labs]] | Random Labs co-founder | — |
 |  | Random Labs co-founder, CTO | — |
-| (@a1zhang) | RLM開発者。SlateはRLMを改良して適用 | [[alex-zhang]] |
-| [[andrej-karpathy]] | LLM OS concept — SlateのOSアナロジーの源流 | [[andrej-karpathy]] |
-| [[peter-steinberger]](@steipete) | OpenClaw開発者。並列エージェントアプローチで関連 | [[peter-steinberger]] |
-| [[nader-dabit]](@dabit3) | Cloud agents / agent fleet — 長時間実行エージェントの文脈で関連 | — |
+| (@a1zhang) | RLM開発者。SlateはRLMを改良して適用 | [[entities/alex-zhang]] |
+| [[entities/andrej-karpathy]] | LLM OS concept — SlateのOSアナロジーの源流 | [[entities/andrej-karpathy]] |
+| [[entities/peter-steinberger]](@steipete) | OpenClaw開発者。並列エージェントアプローチで関連 | [[entities/peter-steinberger]] |
+| [[entities/nader-dabit]](@dabit3) | Cloud agents / agent fleet — 長時間実行エージェントの文脈で関連 | — |
 
 ## Related
 
-- [[steve-blank]] — Lean Startup methodologist; shared focus on agentic-engineering and harness-engineering patterns
-- [[drmaciver]] — Hypothesis creator; PBT and AI evaluation methodology
-- [[mitchell-hashimoto]] — HashiCorp co-founder; harness engineering pioneer
-- [[daniel-de-laney]] — Designer/PM; structured AI development critique
+- [[entities/steve-blank]] — Lean Startup methodologist; shared focus on agentic-engineering and harness-engineering patterns
+- [[entities/drmaciver]] — Hypothesis creator; PBT and AI evaluation methodology
+- [[entities/mitchell-hashimoto]] — HashiCorp co-founder; harness engineering pioneer
+- [[entities/daniel-de-laney]] — Designer/PM; structured AI development critique
 
 ## X Activity Themes
 

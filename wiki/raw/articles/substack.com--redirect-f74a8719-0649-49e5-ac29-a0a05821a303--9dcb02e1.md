@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/f74a8719-0649-49e5-ac29-a0a05821a303?j=eyJ1I
 fetched_at: 2026-04-16T06:42:04.141287+00:00
 source_date: 2026-04-16
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # AINews | AINews

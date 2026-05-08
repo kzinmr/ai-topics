@@ -77,4 +77,4 @@ Inspired by that, build animated-word-cloud.html - a page that accepts pasted te
 - [[concepts/harness-engineering/agentic-engineering]] — 上位概念
 
 ## 参照
-- [[simon-willison]] — パターン創始者
+- [[entities/simon-willison]] — パターン創始者

@@ -51,6 +51,6 @@ He describes himself as available as a "fractional search team lead" for organiz
 
 ## Related
 
-- [[doug-turnbull]] — Main entity page
+- [[entities/doug-turnbull]] — Main entity page
 - [[concepts/quepid]] — Search relevance testing workbench
 - [[concepts/searcharray]] — Pandas-based BM25 search library

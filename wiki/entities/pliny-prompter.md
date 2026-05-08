@@ -127,3 +127,7 @@ Pliny.ggが募集する4つの貢献領域（2026年5月時点）:
 4. **Community（コミュニティ）**: DiscordでのオープンソースAI研究と共同リベレーション活動
 
 参加は [BASI Discord](https://discord.gg/basi) から。
+
+## See Also
+
+- [[concepts/ai-red-teaming-careers]]

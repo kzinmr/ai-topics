@@ -127,11 +127,11 @@ navigator.modelContext.registerTool({
 
 ## 関連エンティティ
 
-- [[anthropic-computer-use]] — スクリーンショットベースアプローチ
-- [[openai-cua]] — OpenAIのComputer-Using Agent
-- [[browser-use]] — DOMベース自動化
+- [[entities/anthropic-computer-use]] — スクリーンショットベースアプローチ
+- [[entities/openai-cua]] — OpenAIのComputer-Using Agent
+- [[entities/browser-use]] — DOMベース自動化
 - [[concepts/death-of-browser]] — ブラウザの脱人間化潮流
-- [[browserbase]] — ブラウザインフラ
+- [[entities/browserbase]] — ブラウザインフラ
 
 ## Sources
 

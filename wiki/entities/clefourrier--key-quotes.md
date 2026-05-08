@@ -13,7 +13,7 @@ sources: []
 
 # Clémentine Fourrier: Key Quotes
 
-Back to main profile: [[clefourrier]]
+Back to main profile: [[entities/clefourrier]]
 
 > *"Any kind of model score, provided without an evaluation script for reproducibility, is basically bullshit."*
 

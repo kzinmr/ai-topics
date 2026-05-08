@@ -21,11 +21,11 @@ The thesis that traditional experience and seniority in knowledge work is becomi
 
 ## Evidence
 
-The concept went viral in April 2026 (5,792 bookmarks, 2.83M impressions), indicating strong resonance with current debates about AI's impact on professional skill valuation. This aligns with [[reflexive-ai]] at Shopify, where Tobi Lütke advocates for "beginner's mindset" and hiring more beginners.
+The concept went viral in April 2026 (5,792 bookmarks, 2.83M impressions), indicating strong resonance with current debates about AI's impact on professional skill valuation. This aligns with [[concepts/reflexive-ai]] at Shopify, where Tobi Lütke advocates for "beginner's mindset" and hiring more beginners.
 
 ## Relationship to Reflexive AI
 
-The "experience tax" is the individual-level manifestation of the organizational-level shift toward [[reflexive-ai]]. When AI becomes the baseline, those with the most to unlearn (senior workers) face the highest adoption cost.
+The "experience tax" is the individual-level manifestation of the organizational-level shift toward [[concepts/reflexive-ai]]. When AI becomes the baseline, those with the most to unlearn (senior workers) face the highest adoption cost.
 
 ## Critiques
 
@@ -35,7 +35,7 @@ The "experience tax" is the individual-level manifestation of the organizational
 
 ## Related
 
-- [[reflexive-ai]]
-- [[solo-founder-stack]]
+- [[concepts/reflexive-ai]]
+- [[concepts/solo-founder-stack]]
 - [[vibe-coding]]
 - [[ai-coding-reliability]]

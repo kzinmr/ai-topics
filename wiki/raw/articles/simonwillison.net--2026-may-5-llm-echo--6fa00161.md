@@ -4,6 +4,7 @@ url: "https://simonwillison.net/2026/May/5/llm-echo/#atom-everything"
 fetched_at: 2026-05-06T07:01:08.673136+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Release: llm-echo 0.5a0

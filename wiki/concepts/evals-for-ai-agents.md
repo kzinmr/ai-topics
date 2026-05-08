@@ -93,7 +93,7 @@ Anthropicによる、AIエージェント評価の体系的ガイド。「評価
 
 ## See Also
 
-- [[building-effective-agents]] — Building effective agents (redirects to harness-engineering)
-- [[swe-bench]] — SWE-bench coding benchmark
-- [[ai-resistant-evaluations]] — AI-resistant evaluation design
-- [[infrastructure-noise-agent-evals]] — Infrastructure noise in evals
+- [[concepts/building-effective-agents]] — Building effective agents (redirects to harness-engineering)
+- [[concepts/swe-bench]] — SWE-bench coding benchmark
+- [[concepts/ai-resistant-evaluations]] — AI-resistant evaluation design
+- [[concepts/infrastructure-noise-agent-evals]] — Infrastructure noise in evals

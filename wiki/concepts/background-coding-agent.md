@@ -52,7 +52,7 @@ Background agents excel when:
 
 ## Related Concepts
 
-- [[modal-sandboxes]] — cloud execution environments for background agents
+- [[concepts/modal-sandboxes]] — cloud execution environments for background agents
 - [[warm-start-optimization]] — pre-warming technique for reducing latency
 - [[s3-first-architecture]] — persistent storage pattern for agent state
 - [[opencode]] — agent framework used by Ramp Inspect

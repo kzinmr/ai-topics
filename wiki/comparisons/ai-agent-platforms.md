@@ -59,6 +59,6 @@ This mirrors the broader AI industry tension: open developer frameworks vs. mana
 
 ## Related Pages
 
-- [[claude-code]] — Anthropic's agentic coding system
-- [[openai]] — OpenAI's agentic coding platform (Codex)
-- [[ai-competition]] — U.S. vs China strategic divergence
+- [[entities/claude-code]] — Anthropic's agentic coding system
+- [[entities/openai]] — OpenAI's agentic coding platform (Codex)
+- [[comparisons/ai-competition]] — U.S. vs China strategic divergence

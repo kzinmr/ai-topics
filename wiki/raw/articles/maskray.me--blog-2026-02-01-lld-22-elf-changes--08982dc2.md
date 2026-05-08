@@ -4,6 +4,7 @@ url: "https://maskray.me/blog/2026-02-01-lld-22-elf-changes"
 fetched_at: 2026-05-05T07:01:44.833429+00:00
 source: "Fangrui Song (MaskRay)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # lld 22 ELF changes

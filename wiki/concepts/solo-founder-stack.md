@@ -22,7 +22,7 @@ The set of tools, practices, and organizational models that enable a single foun
 
 ### 1. Context Engineering
 Replaces prompt engineering by architecting the entire information environment:
-- [[context-engineering]] as the foundational skill
+- [[concepts/context-engineering]] as the foundational skill
 - CLAUDE.md files, MCP servers, [[ai-agent-memory]] pipelines
 - Structured memory and knowledge graphs
 
@@ -36,21 +36,21 @@ Replaces prompt engineering by architecting the entire information environment:
 - Purpose-driven agent orchestration
 - Explicit structure over agent sprawl
 - Organizational memory as critical infrastructure
-- Connects to [[agent-governance]] and [[reflexive-ai]]
+- Connects to [[concepts/agent-governance]] and [[concepts/reflexive-ai]]
 
 ## Connection to Other Trends
 
 The solo founder stack emerges from the intersection of:
-- [[nvidia-dynamo]] making agentic inference affordable
-- [[reflexive-ai]] normalizing AI-as-baseline in organizations
-- [[experience-is-a-tax]] reducing the advantage of senior teams
-- [[managed-agents]] (Telegram, Claude) lowering the barrier to entry
+- [[concepts/nvidia-dynamo]] making agentic inference affordable
+- [[concepts/reflexive-ai]] normalizing AI-as-baseline in organizations
+- [[concepts/experience-is-a-tax]] reducing the advantage of senior teams
+- [[concepts/managed-agents]] (Telegram, Claude) lowering the barrier to entry
 
 ## Related
 
 - [[vibe-ceo]]
-- [[context-engineering]]
-- [[agent-governance]]
-- [[reflexive-ai]]
-- [[experience-is-a-tax]]
+- [[concepts/context-engineering]]
+- [[concepts/agent-governance]]
+- [[concepts/reflexive-ai]]
+- [[concepts/experience-is-a-tax]]
 - [[one-person-unicorn]]

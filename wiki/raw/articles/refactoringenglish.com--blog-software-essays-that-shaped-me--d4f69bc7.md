@@ -4,6 +4,7 @@ url: "https://refactoringenglish.com/blog/software-essays-that-shaped-me/"
 fetched_at: 2026-05-01T07:01:24.729895+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The Software Essays that Shaped Me

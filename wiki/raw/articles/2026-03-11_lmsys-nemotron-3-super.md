@@ -6,6 +6,7 @@ author: "NVIDIA Nemotron Team"
 date: "March 11, 2026"
 category: "llm-infrastructure"
 tags: [sglang, lmsys, inference, llm-serving]
+updated: 2026-05-08
 ---
 
 # SGLang Adds Day-0 Support for NVIDIA Nemotron 3 Super for building High-Efficiency Multi-Agent Systems

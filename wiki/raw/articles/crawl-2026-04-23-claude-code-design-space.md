@@ -2,6 +2,7 @@
 title: Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems
 category: other
 status: active
+updated: 2026-05-08
 ---
 
 # Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems

@@ -4,6 +4,7 @@ url: "https://databasearchitects.blogspot.com/2023/02/five-decades-of-database-r
 fetched_at: 2026-05-05T07:01:28.403224+00:00
 source: "Database Architects"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Five Decades of Database Research

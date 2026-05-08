@@ -4,6 +4,7 @@ url: "https://boyter.org/2011/03/list-of-mysql-sql-server-2008-and-apache-direct
 fetched_at: 2026-05-05T07:02:06.833967+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # List of MySQL, SQL Server 2008 and Apache Directives

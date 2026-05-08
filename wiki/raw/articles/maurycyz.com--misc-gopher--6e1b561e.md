@@ -4,6 +4,7 @@ url: "https://maurycyz.com/misc/gopher/"
 fetched_at: 2026-05-01T07:01:59.200899+00:00
 source: "maurycyz.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # My ramblings are available over gopher

@@ -136,12 +136,12 @@ sources: [raw/articles/crawl-2026-04-26-browser-landscape-2026.md]
 ## Related Concepts
 
 - [[concepts/harness-engineering]] — エージェント環境設計
-- [[webmcp]] — ブラウザネイティブのMCP標準
-- [[anthropic-computer-use]] — AnthropicのComputer Use API
-- [[openai-cua]] — OpenAIのComputer-Using Agent
-- [[browser-use]] — オープンソースブラウザ自動化
-- [[browserbase]] — 信頼性の高いブラウザ自動化インフラ
-- [[manus]] — ローカルブラウザ統合型エージェント
+- [[entities/webmcp]] — ブラウザネイティブのMCP標準
+- [[entities/anthropic-computer-use]] — AnthropicのComputer Use API
+- [[entities/openai-cua]] — OpenAIのComputer-Using Agent
+- [[entities/browser-use]] — オープンソースブラウザ自動化
+- [[entities/browserbase]] — 信頼性の高いブラウザ自動化インフラ
+- [[entities/manus]] — ローカルブラウザ統合型エージェント
 
 ## Sources
 

@@ -4,6 +4,7 @@ url: "https://refactoringenglish.com/blog/crafting-interpreters-intro/"
 fetched_at: 2026-05-01T07:01:24.599719+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # What Makes the Intro to Crafting Interpreters so Good?

@@ -4,6 +4,7 @@ url: "https://databasearchitects.blogspot.com/2024/12/advent-of-code-2024-in-pur
 fetched_at: 2026-05-05T07:01:27.597794+00:00
 source: "Database Architects"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Advent of Code 2024 in pure SQL

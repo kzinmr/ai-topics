@@ -4,6 +4,7 @@ url: "https://xeiaso.net/notes/2026/homelab-is-down/"
 fetched_at: 2026-05-01T07:00:59.269532+00:00
 source: "xeiaso.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # My homelab will be down for at least 20 days

@@ -4,6 +4,7 @@ url: "https://danluu.com/look-stupid/"
 fetched_at: 2026-05-05T07:01:30.334827+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Willingness to look stupid

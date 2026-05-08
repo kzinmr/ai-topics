@@ -2,6 +2,7 @@
 title: Boris Cherny - 10 Tips from the Claude Code Team (Feb 2026)
 category: other
 status: active
+updated: 2026-05-08
 ---
 
 # Boris Cherny - 10 Tips from the Claude Code Team (Feb 2026)

@@ -94,6 +94,6 @@ Multi-agentの方がトークン消費量が多く、並列検索が汚染遭遇
 
 ## See Also
 
-- [[swe-bench]] — SWE-bench benchmark
+- [[concepts/swe-bench]] — SWE-bench benchmark
 - [[ai-safety-military-governance-claude]] — AI safety and governance
-- [[frontier-swe-benchmark]] — Frontier SWE benchmark
+- [[concepts/frontier-swe-benchmark]] — Frontier SWE benchmark

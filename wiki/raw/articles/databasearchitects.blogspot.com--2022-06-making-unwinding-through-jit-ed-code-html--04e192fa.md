@@ -4,6 +4,7 @@ url: "https://databasearchitects.blogspot.com/2022/06/making-unwinding-through-j
 fetched_at: 2026-05-05T07:01:28.346852+00:00
 source: "Database Architects"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Making unwinding through JIT-ed code scalable

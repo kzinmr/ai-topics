@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2011/05/what-every-c-programmer-should-know_14.html"
 fetched_at: 2026-05-05T07:01:43.856998+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # What Every C Programmer Should Know About Undefined Behavior #2/3

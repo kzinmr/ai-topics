@@ -4,6 +4,7 @@ url: "https://danluu.com/seo-spam/"
 fetched_at: 2026-05-05T07:01:29.126277+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # How bad are search results? Let's compare Google, Bing, Marginalia, Kagi, Mwmbl, and ChatGPT

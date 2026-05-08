@@ -4,6 +4,7 @@ url: "https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/#atom-everyt
 fetched_at: 2026-05-01T07:01:20.577368+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # GPT-5.5 prompting guide

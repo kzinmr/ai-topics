@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2010/02/clang-successfully-self-hosts.html"
 fetched_at: 2026-05-05T07:01:44.321585+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Clang Successfully Self-Hosts!

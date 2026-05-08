@@ -11,6 +11,7 @@ tags:
   - incident
   - supabase
   - ai-agents
+updated: 2026-05-08
 ---
 
 # Exposed Moltbook Database Let Anyone Take Control of Any AI Agent on the Site

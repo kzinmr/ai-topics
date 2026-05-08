@@ -4,6 +4,7 @@ url: "http://cbloomrants.blogspot.com/2020/11/oodle-2813-release.html"
 fetched_at: 2026-05-05T07:01:48.618938+00:00
 source: "Charles Bloom"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Oodle 2.8.13 Release

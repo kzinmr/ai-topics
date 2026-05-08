@@ -99,7 +99,7 @@ This aligns with Google's broader strategy of "100% local browser agent" using G
 ## Relationships
 - [[concepts/gemini]] — Google's multimodal model family (detailed entity)
 - [[concepts/nano-banana-2]] — Google's NB2 image generation model
-- [[openai]] — Primary competitor in AI/ML
+- [[entities/openai]] — Primary competitor in AI/ML
 - [[concepts/chatgpt-images-2.0]] — OpenAI's GPT Image 2
 
 ## Sources

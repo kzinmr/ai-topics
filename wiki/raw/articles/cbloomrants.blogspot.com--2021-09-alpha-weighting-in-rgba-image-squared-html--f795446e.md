@@ -4,6 +4,7 @@ url: "http://cbloomrants.blogspot.com/2021/09/alpha-weighting-in-rgba-image-squa
 fetched_at: 2026-05-05T07:01:47.638895+00:00
 source: "Charles Bloom"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Alpha Weighting in RGBA Image Squared Distortion Measure

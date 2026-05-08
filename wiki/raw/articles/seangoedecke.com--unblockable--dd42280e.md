@@ -4,6 +4,7 @@ url: "https://seangoedecke.com/unblockable/"
 fetched_at: 2026-05-01T07:01:21.490206+00:00
 source: "seangoedecke.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Becoming unblockable

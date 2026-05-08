@@ -16,7 +16,7 @@ sources: []
 
 # Ryan Lopopolo: Timeline & Career
 
-Back to main profile: [[ryan-lopopolo]]
+Back to main profile: [[entities/ryan-lopopolo]]
 
 ## Career History
 

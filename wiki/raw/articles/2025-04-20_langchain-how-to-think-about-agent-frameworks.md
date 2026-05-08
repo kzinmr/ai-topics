@@ -12,6 +12,7 @@ tags:
   - orchestration
   - agent-abstractions
   - workflows-vs-agents
+updated: 2026-05-08
 ---
 
 # How to Think About Agent Frameworks

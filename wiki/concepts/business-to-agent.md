@@ -15,6 +15,7 @@ tags:
 status: active
 description: "A business paradigm where the primary user of a service is an AI agent/LLM rather than a human. Services optimize for token efficiency, structured data output, and machine-readable interfaces over human UI/UX."
 created: 2026-04-30
+updated: 2026-05-08
 sources:
   - "https://boyter.org/posts/searchcode-has-been-rebooted/"
   - "https://searchcode.com/"
@@ -27,7 +28,7 @@ related:
 ---
 # Business-to-Agent (B2A)
 
-**Business-to-Agent (B2A)** is a business model and design philosophy where the primary consumer of a digital service is an AI agent/LLM rather than a human. Coined by [[ben-boyter|Ben Boyter]] in his March 2026 blog post "Marketing to the Machine" about the [[searchcode-com|searchcode.com]] reboot.
+**Business-to-Agent (B2A)** is a business model and design philosophy where the primary consumer of a digital service is an AI agent/LLM rather than a human. Coined by [[entities/ben-boyter|Ben Boyter]] in his March 2026 blog post "Marketing to the Machine" about the [[entities/searchcode-com|searchcode.com]] reboot.
 
 ## Core Thesis
 
@@ -56,7 +57,7 @@ Key tenets:
 ## Examples
 
 ### searchcode.com (Canonical Example)
-The first and most prominent B2A service. Provides code intelligence via MCP tools. Features LLM testimonials from Claude Opus 4.6, Qwen 3.5, and Gemini. Optimizes for 99% token reduction over traditional code reading approaches. See [[searchcode-com]].
+The first and most prominent B2A service. Provides code intelligence via MCP tools. Features LLM testimonials from Claude Opus 4.6, Qwen 3.5, and Gemini. Optimizes for 99% token reduction over traditional code reading approaches. See [[entities/searchcode-com]].
 
 ### Other Emerging B2A Patterns
 - **llms.txt files**: Human-readable instructions for LLMs accessing a website

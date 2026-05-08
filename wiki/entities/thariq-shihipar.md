@@ -66,7 +66,7 @@ Shihipar's work on the Claude Agent SDK is grounded in the idea that **agents ne
 
 > *"Agents build their own context, like decide their own trajectories, are working very very autonomously."*
 
-This framing aligns closely with [[varun-trivedy]]'s "Agent = Model + Harness" equation and [[philipp-schmid]]'s analysis of agent harnesses as the key infrastructure layer for 2026.
+This framing aligns closely with [[entities/varun-trivedy]]'s "Agent = Model + Harness" equation and [[entities/philipp-schmid]]'s analysis of agent harnesses as the key infrastructure layer for 2026.
 
 ### The Power of the Bash Tool
 
@@ -194,9 +194,9 @@ An accessible explanation of XJDR's uncertainty detection technique:
 
 ## Related People
 
-- **[[varun-trivedy]]** — Both work on agent harness engineering; Trivedy's "Agent = Model + Harness" framework parallels Shihipar's SDK architecture
-- **[[philipp-schmid]]** — Both write about agent infrastructure; Schmid's "2026 will be around Agent Harnesses" aligns with Shihipar's Claude Agent SDK work
-- **[[florian-brand]]** — Both interested in interpretability and understanding how AI systems work under the hood
+- **[[entities/varun-trivedy]]** — Both work on agent harness engineering; Trivedy's "Agent = Model + Harness" framework parallels Shihipar's SDK architecture
+- **[[entities/philipp-schmid]]** — Both write about agent infrastructure; Schmid's "2026 will be around Agent Harnesses" aligns with Shihipar's Claude Agent SDK work
+- **[[entities/florian-brand]]** — Both interested in interpretability and understanding how AI systems work under the hood
 
 ## X Activity Themes
 

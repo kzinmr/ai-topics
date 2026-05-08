@@ -5,6 +5,7 @@ source_created_at: "2026-02-27T04:32:06.000Z"
 scraped_at: "2026-04-28T23:42:00Z"
 title: "Doc-to-LoRA and Text-to-LoRA: Instant LLM Updates"
 url: "https://pub.sakana.ai/doc-to-lora/"
+updated: 2026-05-08
 ---
 
 # Doc-to-LoRA and Text-to-LoRA: Instant LLM Updates with Hypernetworks

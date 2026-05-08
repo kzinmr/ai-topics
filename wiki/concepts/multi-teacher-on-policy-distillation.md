@@ -15,7 +15,7 @@ aliases:
   - On-Policy Distillation
   - OPD
   - Multi-Teacher Distillation
-related: [[grpo-rl-training]], [[model-distillation]], [[reinforcement-fine-tuning]], [[rlhf]]
+related: [[concepts/grpo-rl-training]], [[model-distillation]], [[reinforcement-fine-tuning]], [[concepts/rlhf]]
 sources:
   - raw/articles/2026-05-04_multi-teacher-on-policy-distillation.md
   - https://yumoxu.notion.site/multi-teacher-on-policy-distillation
@@ -28,7 +28,7 @@ sources:
 ## Core Concept: From GRPO to OPD
 
 ### The Mathematical Shift
-In standard [[grpo-rl-training|GRPO]], the advantage $A_{i,t}$ is calculated relative to a group mean. In **On-Policy Distillation (OPD)**, the advantage is replaced by the log-ratio between student and teacher:
+In standard [[concepts/grpo-rl-training|GRPO]], the advantage $A_{i,t}$ is calculated relative to a group mean. In **On-Policy Distillation (OPD)**, the advantage is replaced by the log-ratio between student and teacher:
 
 $$A_{i,t} = \text{sg} \left[ \log \frac{\pi_{\text{train}}(y_{i,t} | x, y_{i,<t}; \theta)}{\pi_{\text{infer}}(y_{i,t} | x, y_{i,<t}; \theta_{\text{teacher}})} \right]$$
 
@@ -84,7 +84,7 @@ Standard RL recovery causes **length bias** (short completions finish, long ones
 - **Future:** **Black-box distillation** (API-only teachers) and **Teacher-student co-evolution** (iterative loops where student becomes next generation's teacher)
 
 ## Related Concepts
-- [[grpo-rl-training]] — the RL framework OPD evolved from
+- [[concepts/grpo-rl-training]] — the RL framework OPD evolved from
 - [[model-distillation]] — broader category of distillation techniques
 - [[reinforcement-fine-tuning]] — alternative post-training approach using production traces
-- [[rlhf]] — earlier preference-based alignment paradigm
+- [[concepts/rlhf]] — earlier preference-based alignment paradigm

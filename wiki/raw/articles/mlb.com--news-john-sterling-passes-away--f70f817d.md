@@ -4,6 +4,7 @@ url: "https://www.mlb.com/news/john-sterling-passes-away"
 fetched_at: 2026-05-05T07:00:58.300405+00:00
 source: "daringfireball.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # John Sterling passes away

@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/go-sqlite-database-is-locked/"
 fetched_at: 2026-05-05T07:01:55.123154+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Resolve "database is locked" with Go and SQLite

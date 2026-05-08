@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2014/05/llvm-341-release.html"
 fetched_at: 2026-05-05T07:01:42.298054+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The LLVM Project Blog

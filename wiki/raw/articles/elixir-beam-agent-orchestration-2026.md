@@ -134,7 +134,7 @@ OpenAI Symphony uses Elixir/BEAM to orchestrate multiple coding agents:
 
 ## Relevance to Harness Engineering
 
-Harness Engineering ([[harness-engineering]]) builds agent execution environments. Elixir/BEAM provides the **orchestration layer** for managing multiple harnesses:
+Harness Engineering ([[concepts/harness-engineering]]) builds agent execution environments. Elixir/BEAM provides the **orchestration layer** for managing multiple harnesses:
 
 | Concern | Harness Engineering | Elixir/BEAM Solution |
 |---------|---------------------|--------------------|
@@ -146,7 +146,7 @@ Harness Engineering ([[harness-engineering]]) builds agent execution environment
 
 ## See Also
 
-- [[ryan-lopopolo]] — Symphony author, Harness Engineering proponent
+- [[entities/ryan-lopopolo]] — Symphony author, Harness Engineering proponent
 - [[concepts/openai-symphony]] — Symphony project details
 - [[concepts/harness-engineering]] — Agent execution environment design
 - [[concepts/agent-team-swarm]] — Multi-agent team patterns

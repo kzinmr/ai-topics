@@ -22,15 +22,15 @@ A management model where a solo founder (the "Vibe CEO") orchestrates AI agents 
 ## Connection to Broader Trends
 
 The Vibe CEO model emerges from:
-- [[solo-founder-stack]] — the enabling infrastructure
-- [[context-engineering]] — the core skill for directing agents effectively
-- [[reflexive-ai]] — the organizational culture of AI-as-baseline
-- [[managed-agents]] — the tooling that makes it accessible
+- [[concepts/solo-founder-stack]] — the enabling infrastructure
+- [[concepts/context-engineering]] — the core skill for directing agents effectively
+- [[concepts/reflexive-ai]] — the organizational culture of AI-as-baseline
+- [[concepts/managed-agents]] — the tooling that makes it accessible
 
 ## Related
 
-- [[solo-founder-stack]]
+- [[concepts/solo-founder-stack]]
 - [[vibe-coding]]
-- [[context-engineering]]
-- [[agentic-engineering]]
-- [[agent-governance]]
+- [[concepts/context-engineering]]
+- [[concepts/agentic-engineering]]
+- [[concepts/agent-governance]]

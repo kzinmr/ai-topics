@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/searchcode.com-vibe-coding/"
 fetched_at: 2026-05-05T07:01:54.570751+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Vibe coding searchcode a new UI and saving myself 40+ hours of work

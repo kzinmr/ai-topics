@@ -117,9 +117,9 @@ Xe's recent writing in early-mid 2026 covers AI-assisted development and abstrac
 - [[concepts/web-security]] — Proof-of-work challenges, bot filtering
 - [[concepts/nixos]] — Declarative, reproducible infrastructure
 -  — The social dynamics of maintaining popular projects
--  — Security-first thinking for open-source developers-  — Xe's organization- [[peter-steinberger]] — AI-native developer; parallel agent workflows
-- [[simon-willison]] — Django co-creator; agentic engineering patterns
-- [[anildash]] — Tech commentator; AI policy and web culture
+-  — Security-first thinking for open-source developers-  — Xe's organization- [[entities/peter-steinberger]] — AI-native developer; parallel agent workflows
+- [[entities/simon-willison]] — Django co-creator; agentic engineering patterns
+- [[entities/anildash]] — Tech commentator; AI policy and web culture
 
 ## Sources
 

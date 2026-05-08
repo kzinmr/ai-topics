@@ -4,6 +4,7 @@ url: "http://cbloomrants.blogspot.com/2020/08/oodle-2811-with-rdo-for.html"
 fetched_at: 2026-05-05T07:01:48.710492+00:00
 source: "Charles Bloom"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Oodle 2.8.11 with RDO for BC1_WithTransparency

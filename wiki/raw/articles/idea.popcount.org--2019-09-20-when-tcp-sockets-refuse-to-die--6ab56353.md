@@ -4,6 +4,7 @@ url: "https://idea.popcount.org/2019-09-20-when-tcp-sockets-refuse-to-die"
 fetched_at: 2026-05-05T07:01:06.606248+00:00
 source: "Marek Vavruša (idea.popcount)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # When TCP sockets refuse to die

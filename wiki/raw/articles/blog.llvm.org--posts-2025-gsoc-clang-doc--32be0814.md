@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/posts/2025-gsoc-clang-doc/"
 fetched_at: 2026-05-05T07:01:36.296225+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # GSoC 2025: Improving Core Clang-Doc Functionality

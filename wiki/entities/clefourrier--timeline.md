@@ -14,7 +14,7 @@ sources: []
 
 # Clémentine Fourrier: Timeline
 
-Back to main profile: [[clefourrier]]
+Back to main profile: [[entities/clefourrier]]
 
 | Date | Event |
 |------|-------|

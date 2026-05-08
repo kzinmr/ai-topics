@@ -4,6 +4,7 @@ url: "https://iczelia.net/posts/poly-root-apl/"
 fetched_at: 2026-05-05T07:01:22.593740+00:00
 source: "Kamila Szewczyk (iczelia)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Finding roots of a polynomial - numerical methods in APL

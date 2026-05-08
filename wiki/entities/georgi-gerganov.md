@@ -100,8 +100,8 @@ In February 2026, ggml.ai (Gerganov, Xuan-Son Nguyen, Aleksander Grygier) joined
 ## Related People
 
 - **** — Spiritual predecessor; GGML was inspired by Bellard's `gpt2tc` and `libnc`.
-- **[[simon-willison]]** — Willison has extensively covered llama.cpp and praised the "death of the browser" potential via local agents.
-- **[[andrej-karpathy]]** — Shared philosophy of minimalism; Karpathy's `nanoGPT` influenced the C++ rewrite culture.
+- **[[entities/simon-willison]]** — Willison has extensively covered llama.cpp and praised the "death of the browser" potential via local agents.
+- **[[entities/andrej-karpathy]]** — Shared philosophy of minimalism; Karpathy's `nanoGPT` influenced the C++ rewrite culture.
 - **Xuan-Son Nguyen** — Co-founder of ggml.ai, core contributor to llama.cpp.
 - **Aleksander Grygier** — Co-founder of ggml.ai, core contributor.
 - **Julien Chaumond** — Hugging Face CTO, co-authored the GGML integration post.

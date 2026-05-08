@@ -78,5 +78,5 @@ Logfire is the recommended observability backend for Pydantic AI agents:
 
 - [[concepts/ai-observability]] — Broader observability landscape
 - [[concepts/pydantic-ai]] — Primary integration target
-- [[samuel-colvin]] — Creator
+- [[entities/samuel-colvin]] — Creator
 - [[concepts/capabilities-based-security]] — Transparency philosophy

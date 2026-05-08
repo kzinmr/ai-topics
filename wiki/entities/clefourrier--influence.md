@@ -14,7 +14,7 @@ sources: []
 
 # Clémentine Fourrier: Influence & Impact
 
-Back to main profile: [[clefourrier]]
+Back to main profile: [[entities/clefourrier]]
 
 ## Influence
 

@@ -21,8 +21,8 @@ Chinese humanoid robot manufacturer. Second-largest Chinese humanoid robot selle
 
 ## Relationships
 
-- [[china-ai-industry]] — Part of China's humanoid robot dominance
-- [[unitree-robotics]] — Market leader (5,500 units, 2025)
+- [[entities/china-ai-industry]] — Part of China's humanoid robot dominance
+- [[entities/unitree-robotics]] — Market leader (5,500 units, 2025)
 
 ## Open Questions
 

@@ -4,6 +4,7 @@ url: "https://purplesyringa.moe/blog/./falsehoods-programmers-believe-about-null
 fetched_at: 2026-05-05T07:02:09.637958+00:00
 source: "Alisa Sireneva (PurpleSyringa)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Falsehoods programmers believe about null pointers

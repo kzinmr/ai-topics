@@ -4,6 +4,7 @@ url: "http://www.paulgraham.com/useful.html"
 fetched_at: 2026-05-01T07:01:35.265323+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # How to Write Usefully

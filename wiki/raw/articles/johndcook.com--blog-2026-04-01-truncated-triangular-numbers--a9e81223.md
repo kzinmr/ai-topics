@@ -4,6 +4,7 @@ url: "https://www.johndcook.com/blog/2026/04/01/truncated-triangular-numbers/"
 fetched_at: 2026-05-01T07:02:11.848836+00:00
 source: "johndcook.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Pentagonal numbers are truncated triangular numbers

@@ -46,13 +46,13 @@ The term gained prominence from [[tobi-lutke]]'s internal memo at [[shopify]] in
 ## Connection to Other Concepts
 
 Reflexive AI connects to:
-- [[experience-is-a-tax]] — experienced workers may resist AI adoption more
-- [[solo-founder-stack]] — reflexive AI enables one-person companies
+- [[concepts/experience-is-a-tax]] — experienced workers may resist AI adoption more
+- [[concepts/solo-founder-stack]] — reflexive AI enables one-person companies
 - [[ai-organization]] — represents a shift from hierarchical to intelligence-driven orgs
 
 ## Related
 
-- [[experience-is-a-tax]]
-- [[solo-founder-stack]]
+- [[concepts/experience-is-a-tax]]
+- [[concepts/solo-founder-stack]]
 - [[ai-organization]]
 - [[ai-economics]]

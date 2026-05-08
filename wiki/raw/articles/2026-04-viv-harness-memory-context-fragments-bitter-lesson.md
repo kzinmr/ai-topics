@@ -6,6 +6,7 @@ author: Vivek Trivedy (@vtrivedy10)
 type: social-media-post
 tags: [harness-engineering, memory, context-management, bitter-lesson, agent-design]
 processed: true
+updated: 2026-05-08
 ---
 
 # Harness, Memory, Context Fragments, & the Bitter Lesson

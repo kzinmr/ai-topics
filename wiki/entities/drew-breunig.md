@@ -33,10 +33,10 @@ Breunig's career spans advertising, location intelligence, geospatial data, and 
 
 ## Content
 
-- [[drew-breunig--timeline|Full Timeline & Career History]] — Complete career chronology from 2002 to present
-- [[drew-breunig--core-ideas|Core Ideas & Philosophy]] — Context engineering, Gods/Interns/Cogs, Sober AI, Spec-Driven Development, RLMs, coding agents, GERS, and anthropological lens
-- [[drew-breunig--projects|Key Projects]] — Reporter, StepList, whenwords, plumb, DSPy integration, foggy-bot, and Overture Maps/GERS work
-- [[drew-breunig--writings|Writings, Speaking & Key Quotes]] — Writing evolution across three periods, speaking engagements, and notable quotes
+- [[entities/drew-breunig--timeline|Full Timeline & Career History]] — Complete career chronology from 2002 to present
+- [[entities/drew-breunig--core-ideas|Core Ideas & Philosophy]] — Context engineering, Gods/Interns/Cogs, Sober AI, Spec-Driven Development, RLMs, coding agents, GERS, and anthropological lens
+- [[entities/drew-breunig--projects|Key Projects]] — Reporter, StepList, whenwords, plumb, DSPy integration, foggy-bot, and Overture Maps/GERS work
+- [[entities/drew-breunig--writings|Writings, Speaking & Key Quotes]] — Writing evolution across three periods, speaking engagements, and notable quotes
 
 ## Technical Approach
 

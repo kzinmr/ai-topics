@@ -4,6 +4,7 @@ url: "https://mitchellh.com/writing/the-tao-of-vagrant"
 fetched_at: 2026-05-01T07:02:03.972242+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # The Tao of Vagrant

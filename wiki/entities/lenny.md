@@ -68,7 +68,7 @@ Lenny's Podcast has become an important platform for discussions about **AI eval
 
 ### "Why AI Evals Are the Hottest New Skill for Product Builders" (September 2025)
 
-**Guests:** [[hamel-husain]] and [[shreya-shankar]] — co-creators of the world's most popular AI evals course on Maven (trained 2,000+ PMs and engineers, including teams at OpenAI and Anthropic)
+**Guests:** [[entities/hamel-husain]] and [[entities/shreya-shankar]] — co-creators of the world's most popular AI evals course on Maven (trained 2,000+ PMs and engineers, including teams at OpenAI and Anthropic)
 
 **Episode Details:**
 - **Views:** 101.5K+ on YouTube, 1.6K+ likes
@@ -142,8 +142,8 @@ The following raw articles in the wiki reference Lenny Rachitsky or Lenny's Podc
 
 ## Related Entities
 
-- [[hamel-husain]] — Guest on Lenny's Podcast for the AI evals episode; expert on AI engineering and evaluation methodology
-- [[shreya-shankar]] — Guest on Lenny's Podcast for the AI evals episode; Berkeley PhD researcher on AI evaluation and DocETL creator
+- [[entities/hamel-husain]] — Guest on Lenny's Podcast for the AI evals episode; expert on AI engineering and evaluation methodology
+- [[entities/shreya-shankar]] — Guest on Lenny's Podcast for the AI evals episode; Berkeley PhD researcher on AI evaluation and DocETL creator
 - [[concepts/ai-evals]] — Core topic covered on Lenny's Podcast, the evaluation framework for AI products
 - [[concepts/llm-as-judge]] — Evaluation technique discussed in the AI evals episode
 

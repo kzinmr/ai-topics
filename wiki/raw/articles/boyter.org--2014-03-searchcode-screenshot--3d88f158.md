@@ -4,6 +4,7 @@ url: "https://boyter.org/2014/03/searchcode-screenshot/"
 fetched_at: 2026-05-05T07:02:03.672580+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # searchcode screenshot

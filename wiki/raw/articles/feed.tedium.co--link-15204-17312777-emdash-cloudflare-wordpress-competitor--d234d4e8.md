@@ -4,6 +4,7 @@ url: "https://feed.tedium.co/link/15204/17312777/emdash-cloudflare-wordpress-com
 fetched_at: 2026-05-01T07:01:03.396133+00:00
 source: "tedium.co"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # A Clever WordPress Revamp, Hold The PHP

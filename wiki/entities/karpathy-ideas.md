@@ -9,7 +9,7 @@ type: entity
 
 # Karpathy: Ideas & Social Influence
 
-Back to main profile: [[andrej-karpathy]]
+Back to main profile: [[entities/andrej-karpathy]]
 
 ## X/Twitter Activity
 

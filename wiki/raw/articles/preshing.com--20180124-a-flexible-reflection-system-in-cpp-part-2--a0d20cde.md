@@ -4,6 +4,7 @@ url: "https://preshing.com/20180124/a-flexible-reflection-system-in-cpp-part-2"
 fetched_at: 2026-05-05T07:01:02.817599+00:00
 source: "Preshing"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # A Flexible Reflection System in C++: Part 2

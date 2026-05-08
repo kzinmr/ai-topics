@@ -4,6 +4,7 @@ url: "http://www.paulgraham.com/head.html"
 fetched_at: 2026-05-01T07:01:47.767083+00:00
 source: "paulgraham.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Holding a Program in One's Head

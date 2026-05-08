@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/dd96a4a5-7c7e-4a9c-8b15-7b1e601211e0?j=eyJ1I
 fetched_at: 2026-04-17T01:36:59.031942+00:00
 source_date: 2026-04-17
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Scaling without Slop

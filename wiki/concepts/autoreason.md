@@ -17,7 +17,7 @@ status: complete
 
 # Autoreason
 
-A self-refinement framework for AI reasoning that extends [[karpathy-loop]] (Karpathy's AutoResearch) into the subjective reasoning domain. Addresses three structural failures in iterative self-refinement: prompt bias, scope creep, and lack of restraint.
+A self-refinement framework for AI reasoning that extends [[concepts/karpathy-loop]] (Karpathy's AutoResearch) into the subjective reasoning domain. Addresses three structural failures in iterative self-refinement: prompt bias, scope creep, and lack of restraint.
 
 ## Definition / Core Idea
 
@@ -42,13 +42,13 @@ These are judged by **fresh agents with no shared context** via blind **Borda co
 
 ## Connection to Karpathy's AutoResearch
 
-- [[karpathy-loop]] focuses on autonomous ML research execution (630 lines of code running experiments overnight)
+- [[concepts/karpathy-loop]] focuses on autonomous ML research execution (630 lines of code running experiments overnight)
 - **Autoreason** extends this into the *subjective reasoning* domain — not just running experiments, but improving the quality of reasoning itself
 - Both share the philosophy of removing human bottlenecks from research/improvement loops
 
 ## Connection to Other Concepts
 
-- [[karpathy-loop]] — AutoResearch as the precursor for autonomous research loops
+- [[concepts/karpathy-loop]] — AutoResearch as the precursor for autonomous research loops
 - [[agentic-scaffolding]] — Autoreason provides scaffolding around reasoning itself
 - [[gepa]] — Both use multi-candidate evaluation and Pareto-style optimization
 

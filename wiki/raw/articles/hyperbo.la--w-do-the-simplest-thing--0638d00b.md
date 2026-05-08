@@ -4,6 +4,7 @@ url: "https://hyperbo.la/w/do-the-simplest-thing/"
 fetched_at: 2026-04-29T07:02:15.410722+00:00
 source: "hyperbola :: blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Do the Simplest Thing That Could Possibly Work

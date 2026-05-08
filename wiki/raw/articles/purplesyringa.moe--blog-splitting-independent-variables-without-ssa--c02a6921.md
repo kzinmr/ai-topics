@@ -4,6 +4,7 @@ url: "https://purplesyringa.moe/blog/./splitting-independent-variables-without-s
 fetched_at: 2026-05-05T07:02:09.525531+00:00
 source: "Alisa Sireneva (PurpleSyringa)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Splitting independent variables without SSA

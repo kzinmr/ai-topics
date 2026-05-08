@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2015/11/llvm-weekly-99-nov-23rd-2015.html"
 fetched_at: 2026-05-05T07:01:39.760562+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # LLVM Weekly - #99, Nov 23rd 2015

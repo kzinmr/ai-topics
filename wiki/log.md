@@ -443,7 +443,7 @@ Group C (14): anyscale, vannevar-labs, abridge, the-browser-company, reevo, chal
 **Action**: ユーザーリクエストによるDeepSeek V3.2テクニカルレポートのWiki取り込み。V4以前のマイルストーン論文。
 
 **New pages created (1)**:
-- `concepts/deepseek-v3-2.md` — DeepSeek-V3.2（685B）。3つの革新：DSA（DeepSeek Sparse Attention：学習可能スパースアテンション $O(L^2)→O(Lk)$）、スケーラブルRL（GRPO強化：Unbiased KL推定 + Off-Policy Sequence Masking + Keep Routing Mask）、大規模エージェントタスク合成（1,827環境・85Kプロンプト）。Thinking in Tool-Useコンテキスト管理（3 discard戦略）。V3.2-SpecialeはIMO 2025・IOI 2025金メダル、ICPC World Finals 2025世界2位。GPT-5/Gemini-3.0-Proに迫るベンチマーク性能。既存のdangling wikilink（entities/deepseek.md, concepts/deepseek-v3.mdからの[[deepseek-v3-2]]参照）を解決。
+- `concepts/deepseek-v3-2.md` — DeepSeek-V3.2（685B）。3つの革新：DSA（DeepSeek Sparse Attention：学習可能スパースアテンション $O(L^2)→O(Lk)$）、スケーラブルRL（GRPO強化：Unbiased KL推定 + Off-Policy Sequence Masking + Keep Routing Mask）、大規模エージェントタスク合成（1,827環境・85Kプロンプト）。Thinking in Tool-Useコンテキスト管理（3 discard戦略）。V3.2-SpecialeはIMO 2025・IOI 2025金メダル、ICPC World Finals 2025世界2位。GPT-5/Gemini-3.0-Proに迫るベンチマーク性能。既存のdangling wikilink（entities/deepseek.md, concepts/deepseek-v3.mdからの[[concepts/deepseek-v3-2]]参照）を解決。
 
 **Raw papers saved (1)**:
 - `raw/papers/2025-12-02_2512.02556_deepseek-v3.2-technical-report.md`
@@ -630,8 +630,8 @@ Group C (14): anyscale, vannevar-labs, abridge, the-browser-company, reevo, chal
 - `concepts/altman-three-observations.md` — 包括的概念ページ（~120行）。3つの観察の詳細説明、AIエージェントビジョン、社会的影響（人間の主体性、科学進歩、財価格）、受容と分析、他フレームワークとの比較表（Scaling Laws/Moore's Law/Jevons Paradox/Eroom's Law）。フロントマターにaliases（three-observations, ai-economic-observations, altman-scaling-laws）を含む。
 
 **Pages enriched**:
-- `entities/sam-altman.md` — 「Three Observations (February 2025)」セクションを新設。3つの観察の要約表＋2035年ビジョンの引用＋概念的接続（[[altman-three-observations]]）。
-- `concepts/scaling-laws.md` — Related Conceptsに[[altman-three-observations]]を追加。
+- `entities/sam-altman.md` — 「Three Observations (February 2025)」セクションを新設。3つの観察の要約表＋2035年ビジョンの引用＋概念的接続（[[concepts/altman-three-observations]]）。
+- `concepts/scaling-laws.md` — Related Conceptsに[[concepts/altman-three-observations]]を追加。
 
 **Index/log**: index.mdにconcepts/altman-three-observations追加。総ページ数: 5187→5188、Full entries: 4638→4639。
 
@@ -646,8 +646,8 @@ Group C (14): anyscale, vannevar-labs, abridge, the-browser-company, reevo, chal
 - `concepts/altman-three-observations.md` — 包括的概念ページ（~120行）。3つの観察の詳細説明、AIエージェントビジョン、社会的影響（人間の主体性、科学進歩、財価格）、受容と分析、他フレームワークとの比較表（Scaling Laws/Moore's Law/Jevons Paradox/Eroom's Law）。フロントマターにaliases（three-observations, ai-economic-observations, altman-scaling-laws）を含む。
 
 **Pages enriched**:
-- `entities/sam-altman.md` — 「Three Observations (February 2025)」セクションを新設。3つの観察の要約表＋2035年ビジョンの引用＋概念的接続（[[altman-three-observations]]）。
-- `concepts/scaling-laws.md` — Related Conceptsに[[altman-three-observations]]を追加。
+- `entities/sam-altman.md` — 「Three Observations (February 2025)」セクションを新設。3つの観察の要約表＋2035年ビジョンの引用＋概念的接続（[[concepts/altman-three-observations]]）。
+- `concepts/scaling-laws.md` — Related Conceptsに[[concepts/altman-three-observations]]を追加。
 
 **Index/log**: index.mdにconcepts/altman-three-observations追加。総ページ数: 5187→5188、Full entries: 4638→4639。
 

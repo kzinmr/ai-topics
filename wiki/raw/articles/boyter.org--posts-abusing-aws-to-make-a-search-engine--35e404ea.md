@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/abusing-aws-to-make-a-search-engine/"
 fetched_at: 2026-05-05T07:01:57.375477+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Abusing AWS Lambda to make an Aussie Search Engine

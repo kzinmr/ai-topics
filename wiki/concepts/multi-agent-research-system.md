@@ -112,8 +112,8 @@ User Query → Lead Agent (計画・戦略)
 ## See Also
 
 - [[multi-agent-orchestration-architecture]] — Multi-agent orchestration patterns
-- [[agent-team-swarm]] — Agent team/swarm architecture
-- [[managed-agents]] — Managed Agents platform
-- [[building-effective-agents]] — Building effective agents
-- [[carlini-c-compiler-agents]] — Carlini's parallel agent experiment
-- [[eval-awareness-browsecomp]] — BrowseComp eval awareness
+- [[concepts/agent-team-swarm]] — Agent team/swarm architecture
+- [[concepts/managed-agents]] — Managed Agents platform
+- [[concepts/building-effective-agents]] — Building effective agents
+- [[concepts/carlini-c-compiler-agents]] — Carlini's parallel agent experiment
+- [[concepts/eval-awareness-browsecomp]] — BrowseComp eval awareness

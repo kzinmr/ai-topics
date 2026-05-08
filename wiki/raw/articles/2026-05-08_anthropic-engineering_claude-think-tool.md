@@ -5,6 +5,7 @@ url: "https://www.anthropic.com/engineering/claude-think-tool"
 scraped: "2026-05-08T02:05:09.026839+00:00"
 lastmod: "2025-12-15T18:02:25.000Z"
 type: "sitemap"
+updated: 2026-05-08
 ---
 
 # The "think" tool: Enabling Claude to stop and think

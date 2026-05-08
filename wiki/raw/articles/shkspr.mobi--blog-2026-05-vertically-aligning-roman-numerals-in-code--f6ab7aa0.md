@@ -4,6 +4,7 @@ url: "https://shkspr.mobi/blog/2026/05/vertically-aligning-roman-numerals-in-cod
 fetched_at: 2026-05-04T07:01:10.039223+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Vertically Aligning Roman Numerals in Code

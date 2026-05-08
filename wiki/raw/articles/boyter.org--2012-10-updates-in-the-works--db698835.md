@@ -4,6 +4,7 @@ url: "https://boyter.org/2012/10/updates-in-the-works/"
 fetched_at: 2026-05-05T07:02:05.387976+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Updates in the Works

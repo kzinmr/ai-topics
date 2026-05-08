@@ -15,7 +15,7 @@ sources: []
 
 # Drew Breunig: Core Ideas & Philosophy
 
-Back to main profile: [[drew-breunig]]
+Back to main profile: [[entities/drew-breunig]]
 
 ## Context Engineering as a Discipline
 
@@ -114,6 +114,6 @@ Breunig's background in cultural anthropology shapes his approach to technology 
 
 ## See Also
 
-- [[drew-breunig--projects|Projects]]
-- [[drew-breunig--timeline|Timeline]]
-- [[drew-breunig--writings|Writings & Speaking]]
+- [[entities/drew-breunig--projects|Projects]]
+- [[entities/drew-breunig--timeline|Timeline]]
+- [[entities/drew-breunig--writings|Writings & Speaking]]

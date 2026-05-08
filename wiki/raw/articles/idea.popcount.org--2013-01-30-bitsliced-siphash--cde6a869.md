@@ -4,6 +4,7 @@ url: "https://idea.popcount.org/2013-01-30-bitsliced-siphash"
 fetched_at: 2026-05-05T07:01:13.550908+00:00
 source: "Marek Vavruša (idea.popcount)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Bitsliced SipHash

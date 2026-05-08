@@ -4,6 +4,7 @@ url: "https://ashvardanian.com/posts/porting-cpp-library-to-ten-languages/"
 fetched_at: 2026-05-05T07:01:50.810829+00:00
 source: "Ash Vardanyan"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Binding a C++ Library to 10 Programming Languages 🔟

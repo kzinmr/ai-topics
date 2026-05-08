@@ -4,6 +4,7 @@ url: "https://simonwillison.net/2026/Apr/17/pycon-us-2026/#atom-everything"
 fetched_at: 2026-05-01T07:01:22.610868+00:00
 source: "simonwillison.net"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Join us at PyCon US 2026 in Long Beach-we have new AI and security tracks this year

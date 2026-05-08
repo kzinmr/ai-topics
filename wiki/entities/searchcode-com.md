@@ -12,6 +12,7 @@ tags:
 status: complete
 description: "Code intelligence MCP server for LLMs. Provides 6 specialized tools for code analysis, search, and retrieval from any public git repository. Previously a source code search engine indexing 75B+ lines of code."
 created: 2026-04-30
+updated: 2026-05-08
 sources:
   - "https://searchcode.com/"
   - "https://boyter.org/posts/searchcode-is-being-rebooted/"
@@ -27,7 +28,7 @@ related:
 ---
 # searchcode.com
 
-**searchcode.com** is a code intelligence service purpose-built for LLMs, providing structured code analysis, search, and retrieval from any public git repository via the Model Context Protocol (MCP) and REST API. Created by [[ben-boyter|Ben Boyter]].
+**searchcode.com** is a code intelligence service purpose-built for LLMs, providing structured code analysis, search, and retrieval from any public git repository via the Model Context Protocol (MCP) and REST API. Created by [[entities/ben-boyter|Ben Boyter]].
 
 ## History
 

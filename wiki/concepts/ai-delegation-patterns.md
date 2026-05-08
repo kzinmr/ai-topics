@@ -5,6 +5,7 @@ date: 2026-05-07
 tags: [concept, ai-agents, human-ai-interaction, delegation, productivity]
 sources:
   - https://open.substack.com/pub/thesignal/p/the-art-of-delegation-in-the-age
+updated: 2026-05-08
 ---
 
 # AI Delegation Patterns
@@ -79,8 +80,8 @@ The ultimate goal is to move from "chatting" with AI to **orchestrating** multip
 
 ## Related Concepts
 
-- [[agent-orchestration-frameworks]] — Technical infrastructure for multi-agent coordination
-- [[claude-code]] — AI coding agent where delegation patterns apply directly
+- [[concepts/agent-orchestration-frameworks]] — Technical infrastructure for multi-agent coordination
+- [[entities/claude-code]] — AI coding agent where delegation patterns apply directly
 - [[multi-agent-systems]] — Architectures for coordinated AI agent teams
 - [[concepts/service-as-software]] — Selling outcomes rather than tools
 - [[hermes-agent-architecture]] — Hermes Agent's subagent delegation patterns

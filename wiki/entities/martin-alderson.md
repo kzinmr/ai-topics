@@ -114,7 +114,7 @@ This post extends his earlier writing on Anthropic's red team finding [500+ crit
 - [[concepts/ai-economics]] — Martin's analysis of AI cost structures and compute constraints
 -  — The "$285 billion markdown files" thesis
 -  — Two kinds of AI users
--  — Open source vulnerability cascades- [[anthropic]] — Claude Code, Cowork, and the knowledge-work-plugin
+-  — Open source vulnerability cascades- [[entities/anthropic]] — Claude Code, Cowork, and the knowledge-work-plugin
 
 ## Sources
 

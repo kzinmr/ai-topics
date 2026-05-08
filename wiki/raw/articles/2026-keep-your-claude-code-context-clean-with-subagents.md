@@ -2,6 +2,7 @@
 title: "Keep your Claude Code context clean with Subagents"
 created: 
 author_id: ""
+updated: 2026-05-08
 tweet_id: "2048486242321662189"
 source: x_article
 ---

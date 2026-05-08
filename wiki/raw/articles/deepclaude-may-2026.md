@@ -3,6 +3,7 @@ title: DeepClaude - Claude Code Agent Loop with DeepSeek V4 Pro
 date: 2026-05-04
 source: Hacker News / TLDL AI News
 url: https://www.tldl.io/blog/ai-news-updates-2026
+updated: 2026-05-08
 ---
 
 # DeepClaude

@@ -4,6 +4,7 @@ url: "https://feed.tedium.co/link/15204/17308221/self-hosting-platform-tools-gui
 fetched_at: 2026-05-01T07:01:05.380599+00:00
 source: "tedium.co"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Still Worth Trying In 2026?

@@ -4,6 +4,7 @@ url: "https://lucumr.pocoo.org/2026/1/27/earendil/"
 fetched_at: 2026-05-01T07:02:07.708542+00:00
 source: "lucumr.pocoo.org"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Colin and Earendil

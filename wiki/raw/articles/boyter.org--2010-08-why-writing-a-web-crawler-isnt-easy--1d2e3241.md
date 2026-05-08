@@ -4,6 +4,7 @@ url: "https://boyter.org/2010/08/why-writing-a-web-crawler-isnt-easy/"
 fetched_at: 2026-05-05T07:02:08.217060+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Why Writing a Web Crawler isn't Easy

@@ -247,3 +247,8 @@ Andrew Chenのおすすめエントリーパス：
 
 ### 生記事
 - [[raw/articles/2026-05-07_x-andrewchen-local-ai-home-lab-state]] — Andrew Chenのフルポスト
+
+## See Also
+
+- [[concepts/nvidia-egpu-macos]]
+- [[concepts/megakernel-inference]]

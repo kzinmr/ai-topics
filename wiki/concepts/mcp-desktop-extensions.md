@@ -69,6 +69,6 @@ Desktop Extensionsはこれらすべてを抽象化する。
 
 ## See Also
 
-- [[mcp]] — Model Context Protocol overview
+- [[concepts/mcp]] — Model Context Protocol overview
 - [[model-context-protocol-mcp]] — Detailed MCP specification
-- [[claude-code]] — Claude Code agent harness
+- [[entities/claude-code]] — Claude Code agent harness

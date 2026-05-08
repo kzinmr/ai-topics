@@ -4,6 +4,7 @@ url: "https://evanhahn.com/llm-eliza/"
 fetched_at: 2026-04-29T07:02:20.008441+00:00
 source: "evanhahn.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Introducing llm-eliza

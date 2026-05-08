@@ -64,4 +64,4 @@ type: concept
 - [[concepts/dspy-modules]] — Module reference
 - [[concepts/rlms]] — Recursive Language Models (detailed page)
 - [[concepts/gepa]] — Genetic Prompt Evolution (detailed page)
-- [[omar-khattab]] — Creator of DSPy
+- [[entities/omar-khattab]] — Creator of DSPy

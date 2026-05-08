@@ -4,6 +4,7 @@ url: "https://michael.stapelberg.ch/posts/2025-03-19-intel-core-ultra-9-285k-on-
 fetched_at: 2026-05-01T07:01:15.864979+00:00
 source: "michael.stapelberg.ch"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Intel 9 285K on ASUS Z890: not stable! (2025)

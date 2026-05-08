@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2015/01/llvm-weekly-53-jan-5th-2015.html"
 fetched_at: 2026-05-05T07:01:41.156633+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # LLVM Weekly - #53, Jan 5th 2015

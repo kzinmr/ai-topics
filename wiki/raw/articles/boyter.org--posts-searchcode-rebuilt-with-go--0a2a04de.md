@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/searchcode-rebuilt-with-go/"
 fetched_at: 2026-05-05T07:01:57.893133+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # searchcode Rebuilt with Go

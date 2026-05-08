@@ -62,4 +62,4 @@ Vibe Coding → Linear Walkthrough で**学習機会に変換**できる。
 - [[concepts/harness-engineering/agentic-engineering]] — 上位概念
 
 ## 参照
-- [[simon-willison]] — パターン創始者
+- [[entities/simon-willison]] — パターン創始者

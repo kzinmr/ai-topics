@@ -4,6 +4,7 @@ title: "Automation Series #6: State, Idempotency, Retries, and Queues"
 author: Antoine Buteau
 date: 2026-05-02
 tags: [automation, idempotency, state-management, queues, retries]
+updated: 2026-05-08
 ---
 
 # Automation Series #6: State, Idempotency, Retries, and Queues

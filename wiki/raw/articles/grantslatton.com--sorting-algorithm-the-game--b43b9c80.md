@@ -4,6 +4,7 @@ url: "https://grantslatton.com/sorting-algorithm-the-game"
 fetched_at: 2026-04-29T07:02:15.973182+00:00
 source: "grantslatton.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Sorting Algorithm: The Game

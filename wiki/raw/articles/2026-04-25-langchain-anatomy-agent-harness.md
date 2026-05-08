@@ -27,6 +27,6 @@
 
 ## Related to Wiki
 
-- [[harness-engineering]] — Ryan Lopopolo's broader thesis
-- [[context-engineering]] — Previous paradigm layer
-- [[openai-symphony]] — Symphony orchestrates many coding agents via harness
+- [[concepts/harness-engineering]] — Ryan Lopopolo's broader thesis
+- [[concepts/context-engineering]] — Previous paradigm layer
+- [[concepts/openai-symphony]] — Symphony orchestrates many coding agents via harness

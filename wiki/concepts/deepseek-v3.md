@@ -104,7 +104,7 @@ DeepSeek-V3の革新的アプローチ：
 
 ### DeepSeek-R1からの蒸留
 
-推論能力（検証・内省パターン）を[[deepseek-r1|DeepSeek-R1]]シリーズからV3に蒸留。これにより、ベースモデルでありながら強力なreasoning能力を獲得。
+推論能力（検証・内省パターン）を[[concepts/deepseek-r1|DeepSeek-R1]]シリーズからV3に蒸留。これにより、ベースモデルでありながら強力なreasoning能力を獲得。
 
 ### GRPO（Group Relative Policy Optimization）
 
@@ -155,8 +155,8 @@ DeepSeek-V3は、以下の複数の理由からLLM発展史におけるマイル
 
 ## 後継モデル
 
-- **[[deepseek-v3-2|DeepSeek V3.2 / V3.2 Speciale]]**（2025年12月） — 685B params。3つの革新を導入：DeepSeek Sparse Attention（DSA：$O(L^2)→O(Lk)$）、スケーラブルRL（GRPO強化、ポストトレーニング予算が事前学習の10%超）、大規模エージェントタスク合成（1,827環境・85Kプロンプト）。V3.2-SpecialeはIMO 2025、IOI 2025で金メダル、ICPC World Finals世界2位。GPT-5/Gemini-3.0-Proに迫る性能。技術レポート（arXiv:2512.02556）。
-- **[[deepseek-v4|DeepSeek V4]] シリーズ**（2026年4月） — 1.6T Pro / 284B Flash、1Mコンテキスト、MITライセンス
+- **[[concepts/deepseek-v3-2|DeepSeek V3.2 / V3.2 Speciale]]**（2025年12月） — 685B params。3つの革新を導入：DeepSeek Sparse Attention（DSA：$O(L^2)→O(Lk)$）、スケーラブルRL（GRPO強化、ポストトレーニング予算が事前学習の10%超）、大規模エージェントタスク合成（1,827環境・85Kプロンプト）。V3.2-SpecialeはIMO 2025、IOI 2025で金メダル、ICPC World Finals世界2位。GPT-5/Gemini-3.0-Proに迫る性能。技術レポート（arXiv:2512.02556）。
+- **[[concepts/deepseek-v4|DeepSeek V4]] シリーズ**（2026年4月） — 1.6T Pro / 284B Flash、1Mコンテキスト、MITライセンス
 
 ## ハードウェア設計への提言
 
@@ -171,11 +171,11 @@ DeepSeek-V3は、以下の複数の理由からLLM発展史におけるマイル
 
 - [[entities/deepseek]] — DeepSeek企業概要
 - [[deepseek-v2]] — 前世代アーキテクチャ（MLA/DeepSeekMoEの原点）
-- [[deepseek-v3-2]] — 後継モデル（DSA + GRPO強化 + エージェント合成）
-- [[mixture-of-experts]] — MoEアーキテクチャ一般
-- [[speculative-decoding]] — 投機的デコーディング技術
+- [[concepts/deepseek-v3-2]] — 後継モデル（DSA + GRPO強化 + エージェント合成）
+- [[concepts/mixture-of-experts]] — MoEアーキテクチャ一般
+- [[concepts/speculative-decoding]] — 投機的デコーディング技術
 - [[fp8-training]] — FP8混合精度訓練
-- [[grpo]] — Group Relative Policy Optimization
+- [[concepts/grpo]] — Group Relative Policy Optimization
 - [[yaRN]] — コンテキスト拡張手法
-- [[inference]] — 推論効率化技術全般
+- [[concepts/inference]] — 推論効率化技術全般
 - [[training]] — 大規模訓練技術

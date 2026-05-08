@@ -47,8 +47,8 @@ The breakthrough insight is that **MSE-optimal quantizers introduce bias in inne
 
 ## Related Concepts
 
-- [[gguf]] — General technique of reducing numerical precision
-- [[memory-architecture]] — KV cache as the internal memory bottleneck for LLM inference
+- [[concepts/gguf]] — General technique of reducing numerical precision
+- [[concepts/memory-architecture]] — KV cache as the internal memory bottleneck for LLM inference
 - [[recursive-language-models]] — Another approach to managing unbounded context
 - [[gapa]] — Reflection-based optimization that complements quantization approaches
 

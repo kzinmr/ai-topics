@@ -125,12 +125,12 @@ See also: [[concepts/open-source-vs-closed]]
 - [[concepts/ranking-engineer-agent]] — Autonomous ML lifecycle management
 - [[concepts/anthropic-openclaw-conflict]] — Platform control vs open access
 - [[concepts/inference/llama-cpp]]
-- [[anthropic]]
-- [[openai]]
-- [[google-tpu]]
+- [[entities/anthropic]]
+- [[entities/openai]]
+- [[entities/google-tpu]]
 - 
-- [[mario-zechner]] — local AI engineering (contrasting approach)
-- [[shlok-khemani]] — filesystem-first personal AI (contrasting approach)
+- [[entities/mario-zechner]] — local AI engineering (contrasting approach)
+- [[entities/shlok-khemani]] — filesystem-first personal AI (contrasting approach)
 
 ## Sources
 

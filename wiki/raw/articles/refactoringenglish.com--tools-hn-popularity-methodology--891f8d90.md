@@ -4,6 +4,7 @@ url: "https://refactoringenglish.com/tools/hn-popularity/methodology/"
 fetched_at: 2026-05-01T07:01:25.060045+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # HN Popularity Contest

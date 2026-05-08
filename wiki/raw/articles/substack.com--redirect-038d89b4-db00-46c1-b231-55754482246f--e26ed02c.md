@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/038d89b4-db00-46c1-b231-55754482246f?j=eyJ1I
 fetched_at: 2026-04-20T18:27:31.881082+00:00
 source_date: 2026-04-20
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # WeirdML | Håvard Tveit Ihle

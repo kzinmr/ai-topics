@@ -5,6 +5,7 @@ author: Unknown
 date: 2026-05-04
 url: https://yumoxu.notion.site/multi-teacher-on-policy-distillation
 tags: [distillation, post-training, llm-training, grpo, reverse-kl]
+updated: 2026-05-08
 ---
 
 # Multi-Teacher On-Policy Distillation (MOPD): A New Post-Training Primitive

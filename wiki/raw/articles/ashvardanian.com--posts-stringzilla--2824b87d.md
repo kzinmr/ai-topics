@@ -4,6 +4,7 @@ url: "https://ashvardanian.com/posts/stringzilla/"
 fetched_at: 2026-05-05T07:01:51.514685+00:00
 source: "Ash Vardanyan"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # StringZilla: 5x faster strings with SIMD & SWAR 🦖

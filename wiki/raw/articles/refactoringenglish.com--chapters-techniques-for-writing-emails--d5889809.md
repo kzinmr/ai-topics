@@ -4,6 +4,7 @@ url: "https://refactoringenglish.com/chapters/techniques-for-writing-emails/"
 fetched_at: 2026-05-01T07:01:24.955542+00:00
 source: "refactoringenglish.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Underused Techniques for Effective Emails

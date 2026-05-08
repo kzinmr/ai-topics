@@ -5,6 +5,7 @@ source_url: "https://www.thariq.io/blog/fast/"
 date: "2026-01-20"
 theme: "Minimalism, wanting less"
 ingested: "2026-04-14"
+updated: 2026-05-08
 ---
 
 # I can think. I can wait. I can fast.

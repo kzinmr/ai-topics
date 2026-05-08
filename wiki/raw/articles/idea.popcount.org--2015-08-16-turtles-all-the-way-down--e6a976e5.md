@@ -4,6 +4,7 @@ url: "https://idea.popcount.org/2015-08-16-turtles-all-the-way-down"
 fetched_at: 2026-05-05T07:01:11.764539+00:00
 source: "Marek Vavruša (idea.popcount)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Turtles all the way down

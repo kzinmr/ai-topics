@@ -6,6 +6,7 @@ author: Artem Zakirullin (@zakirullin)
 date: 2025-10 (last update)
 scraped: 2026-04-16
 stars: 12000+
+updated: 2026-05-08
 ---
 
 # Cognitive Load is What Matters — Artem Zakirullin

@@ -113,5 +113,5 @@ OpenClawの哲学は[[concepts/local-first-software]]運動と深く関連：
 - [[concepts/openclaw/five-tier-precedence]] — Five-Tier Skill Precedence
 - [[concepts/skill-architecture-patterns]] — Hermesとの比較
 - [[concepts/local-first-software]] — ローカルファーストソフトウェア
-- [[peter-steinberger]] — 設計者
+- [[entities/peter-steinberger]] — 設計者
 - [[comparisons/hermes-vs-openclaw-architecture]] — 詳細アーキテクチャ比較

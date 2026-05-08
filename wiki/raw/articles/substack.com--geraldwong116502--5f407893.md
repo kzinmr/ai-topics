@@ -4,6 +4,7 @@ url: "https://substack.com/@geraldwong116502"
 fetched_at: 2026-04-18T03:21:32.962451+00:00
 source_date: 2026-04-18
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Gerald Wong | Substack

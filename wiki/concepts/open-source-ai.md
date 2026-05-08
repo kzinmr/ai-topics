@@ -62,6 +62,6 @@ China has adopted open-source AI as a core strategic pillar:
 
 ## Related Pages
 
-- [[china-ai-industry]] — China's open-source AI as strategic pillar
-- [[deepseek]] — Open-source cost disruption example
-- [[ai-competition]] — U.S. vs. China strategic divergence
+- [[entities/china-ai-industry]] — China's open-source AI as strategic pillar
+- [[entities/deepseek]] — Open-source cost disruption example
+- [[comparisons/ai-competition]] — U.S. vs. China strategic divergence

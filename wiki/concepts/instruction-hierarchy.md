@@ -64,7 +64,7 @@ OpenAI が 2026年4月に公開した RL 訓練用データセット。設計原
 - [[concepts/prompt-injection]]
 - [[concepts/rlhf]]
 - [[concepts/chain-of-thought]]
-- [[openai]] — 開発元
+- [[entities/openai]] — 開発元
 - [[concepts/gandalf]] — 脆弱性ベンチマーク
 
 ## Sources

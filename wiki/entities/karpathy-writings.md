@@ -9,7 +9,7 @@ type: entity
 
 # Karpathy: Writings & Blog Posts
 
-Back to main profile: [[andrej-karpathy]]
+Back to main profile: [[entities/andrej-karpathy]]
 
 ## Bearblog (2024–present)
 

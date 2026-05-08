@@ -4,6 +4,7 @@ url: "https://danlark.org/2021/03/08/how-a-bug-in-the-linux-crc-32-checksum-turn
 fetched_at: 2026-05-05T07:01:53.317558+00:00
 source: "Daniel Kutenin (danlark)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # How a Bug(?) in the Linux CRC-32 Checksum Turned out not to be a Bug

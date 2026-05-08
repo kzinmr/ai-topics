@@ -48,8 +48,8 @@ The manager bot acts as an orchestrator layer, receiving user intent through its
 
 ## Connection to Other Concepts
 
-- [[managed-agents]] — Telegram's managed bots are a concrete implementation of the broader managed agent pattern
-- [[agentic-engineering]] — no-code agent creation as infrastructure
+- [[concepts/managed-agents]] — Telegram's managed bots are a concrete implementation of the broader managed agent pattern
+- [[concepts/agentic-engineering]] — no-code agent creation as infrastructure
 - [[death-of-browser]] — bots as the new application interface layer
 
 ## TODO: Research Items

@@ -67,8 +67,8 @@ aliases:
 ## Related Concepts
 
 - [[concepts/death-of-browser]] — ブラウザのパラダイムシフト
-- [[webmcp]] — ブラウザネイティブのMCP標準
-- [[anthropic-computer-use]] — Anthropic Computer Use
-- [[openai-cua]] — OpenAI CUA
-- [[browser-use]] — オープンソースブラウザ自動化
-- [[browserbase]] — 信頼性の高いブラウザ自動化インフラ
+- [[entities/webmcp]] — ブラウザネイティブのMCP標準
+- [[entities/anthropic-computer-use]] — Anthropic Computer Use
+- [[entities/openai-cua]] — OpenAI CUA
+- [[entities/browser-use]] — オープンソースブラウザ自動化
+- [[entities/browserbase]] — 信頼性の高いブラウザ自動化インフラ

@@ -19,7 +19,7 @@ sources:
 
 ## Background: The Claude Code Leak
 
-On March 31, 2026, Anthropic accidentally shipped a `.map` file in their Claude Code npm package, exposing **512,000 lines of TypeScript across 1,906 files** — the entire internal architecture of their flagship AI coding agent. Within hours, developer [[sigrid-jin]] ported the core architecture to Python from scratch, then (with [[yeachan-heo]]) rewrote it in Rust for performance.
+On March 31, 2026, Anthropic accidentally shipped a `.map` file in their Claude Code npm package, exposing **512,000 lines of TypeScript across 1,906 files** — the entire internal architecture of their flagship AI coding agent. Within hours, developer [[entities/sigrid-jin]] ported the core architecture to Python from scratch, then (with [[yeachan-heo]]) rewrote it in Rust for performance.
 
 The project is now hosted under the **[[ultraworkers]]** GitHub organization.
 

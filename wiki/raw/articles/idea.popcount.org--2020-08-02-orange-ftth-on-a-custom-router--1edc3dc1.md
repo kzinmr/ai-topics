@@ -4,6 +4,7 @@ url: "https://idea.popcount.org/2020-08-02-orange-ftth-on-a-custom-router"
 fetched_at: 2026-05-05T07:01:05.942349+00:00
 source: "Marek Vavruša (idea.popcount)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Orange FTTH on a custom router

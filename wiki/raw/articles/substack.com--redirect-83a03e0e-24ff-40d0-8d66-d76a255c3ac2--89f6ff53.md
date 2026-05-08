@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/83a03e0e-24ff-40d0-8d66-d76a255c3ac2?j=eyJ1I
 fetched_at: 2026-04-18T03:24:24.751141+00:00
 source_date: 2026-04-18
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # AIs can now often do massive easy-to-verify SWE tasks and I've updated towards shorter timelines

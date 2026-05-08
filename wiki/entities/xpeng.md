@@ -28,5 +28,5 @@ Leverages automotive AI expertise (self-driving, sensor fusion, real-world data)
 
 ## Relationships
 
-- [[china-ai-industry]] — Key company in China's full-stack AI ecosystem
-- [[unitree-robotics]] — Related in robotics space (different product focus)
+- [[entities/china-ai-industry]] — Key company in China's full-stack AI ecosystem
+- [[entities/unitree-robotics]] — Related in robotics space (different product focus)

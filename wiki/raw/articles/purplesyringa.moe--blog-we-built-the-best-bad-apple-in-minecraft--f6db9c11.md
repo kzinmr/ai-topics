@@ -4,6 +4,7 @@ url: "https://purplesyringa.moe/blog/./we-built-the-best-bad-apple-in-minecraft/
 fetched_at: 2026-05-05T07:02:09.858362+00:00
 source: "Alisa Sireneva (PurpleSyringa)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # We built the best "Bad Apple!!" in Minecraft

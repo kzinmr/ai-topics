@@ -15,7 +15,7 @@ sources: []
 
 # Back of House Multi-Agent Patterns
 
-> 共著: [[milksandmatcha|Sarah Chieng]] (@MilksandMatcha) + [[sero|Sero]] (@0xSero)
+> 共著: [[entities/milksandmatcha|Sarah Chieng]] (@MilksandMatcha) + [[entities/sero|Sero]] (@0xSero)
 > 初出: Xスレッド「Single-agent AI coding is a nightmare for engineers」(2026年4月)
 
 プロの厨房（Back of House）のメタファーを用いたマルチエージェント・ワークフローパターン。単一エージェントの限界（[[concepts/single-agent-ceiling]]）を解決するための実践的フレームワーク。

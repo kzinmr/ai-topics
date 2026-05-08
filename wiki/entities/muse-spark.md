@@ -40,7 +40,7 @@ Announced following a year of silence from Meta on model development, and after 
 -  (Ben's Bites, 2026-04-09)
 
 ## Related
-- [[meta]]
+- [[entities/meta]]
 - [[concepts/inference/llama-cpp]]
 - 
 -

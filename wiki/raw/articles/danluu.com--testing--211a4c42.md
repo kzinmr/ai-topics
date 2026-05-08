@@ -4,6 +4,7 @@ url: "https://danluu.com/testing/"
 fetched_at: 2026-05-05T07:01:33.657311+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Given that we spend little effort on testing, how should we test software?

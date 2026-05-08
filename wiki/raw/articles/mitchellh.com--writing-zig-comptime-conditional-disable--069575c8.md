@@ -4,6 +4,7 @@ url: "https://mitchellh.com/writing/zig-comptime-conditional-disable"
 fetched_at: 2026-05-01T07:02:03.021809+00:00
 source: "mitchellh.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Conditionally Disabling Code with Comptime in Zig

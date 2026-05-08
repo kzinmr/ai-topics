@@ -4,6 +4,7 @@ url: "https://idea.popcount.org/2019-12-06-addressing"
 fetched_at: 2026-05-05T07:01:07.465826+00:00
 source: "Marek Vavruša (idea.popcount)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Addressing - Idea of the day

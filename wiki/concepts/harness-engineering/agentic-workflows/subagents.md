@@ -148,6 +148,6 @@ delegate_task:
 
 ## 参照
 
-- [[simon-willison]] — 概念提唱者、Hermesでの実装者
+- [[entities/simon-willison]] — 概念提唱者、Hermesでの実装者
 - [Subagents guide](https://simonwillison.net/guides/agentic-engineering-patterns/subagents/)
 - [Hermes delegate_task documentation](~/wiki/concepts/harness-engineering/)

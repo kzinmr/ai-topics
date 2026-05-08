@@ -253,9 +253,9 @@ His Substack "Overthinking Everything" is unified by a theme of **empirical curi
 
 ## Related Concepts
 
-- [[steve-blank]] — Lean Startup creator; AI-driven startup methodology
-- [[mitchell-hashimoto]] — HashiCorp co-founder; coined harness engineering
-- [[daniel-de-laney]] — Designer and developer; AI tools UX critique
+- [[entities/steve-blank]] — Lean Startup creator; AI-driven startup methodology
+- [[entities/mitchell-hashimoto]] — HashiCorp co-founder; coined harness engineering
+- [[entities/daniel-de-laney]] — Designer and developer; AI tools UX critique
 -  — His primary domain of expertise
 - [[concepts/ai-evals]] — Foundational LLM evaluations using PBT methodology
 - [[concepts/ai-evals-people]] — drmaciver, shreya-shankar, hamel-husain collaborate on eval frameworks

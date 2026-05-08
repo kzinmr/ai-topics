@@ -87,8 +87,8 @@ Claudeの文書編集機能を支えるSkill:
 
 ## See Also
 
-- [[building-effective-agents]] — Building effective agents
-- [[effective-harnesses-for-long-running-agents]] — Long-running agent harnesses
-- [[mcp]] — Model Context Protocol
-- [[claude-code-best-practices]] — Claude Code best practices
+- [[concepts/building-effective-agents]] — Building effective agents
+- [[concepts/effective-harnesses-for-long-running-agents]] — Long-running agent harnesses
+- [[concepts/mcp]] — Model Context Protocol
+- [[concepts/claude-code-best-practices]] — Claude Code best practices
 - [[agent-skills-skillmd]] — SKILL.md format details

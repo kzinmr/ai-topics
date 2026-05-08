@@ -214,8 +214,8 @@ This aligns with the industry-wide [[concepts/inference#the-inference-inflection
 - [[concepts/tuomas-sandholm]] — PhD advisor; co-developer of Libratus and Pluribus
 - [[mark-chen]] — OpenAI colleague; o1 reasoning model
 - [[concepts/hunter-lightman]] — OpenAI colleague; Project Strawberry
-- [[ilya-sutskever]] — OpenAI co-founder; Q* project (related to reasoning)
-- [[sam-altman]] — OpenAI CEO
+- [[entities/ilya-sutskever]] — OpenAI co-founder; Q* project (related to reasoning)
+- [[entities/sam-altman]] — OpenAI CEO
 -  — Brown's theoretical foundation
 -  — o1/o3 models represent this paradigm-  — CICERO and Pluribus
 

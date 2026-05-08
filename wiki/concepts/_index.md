@@ -280,7 +280,7 @@
    279|
    280|## Attention-Mechanism-Variants.Md
    281|
-   282|- [[concepts/attention-mechanism-variants]] — Modern transformer architectures use different attention mechanisms to optimize the trade-off between modeling capacity, compute efficiency, and context length. A prerequisite concept for [[context-engineering]]
+   282|- [[concepts/attention-mechanism-variants]] — Modern transformer architectures use different attention mechanisms to optimize the trade-off between modeling capacity, compute efficiency, and context length. A prerequisite concept for [[concepts/context-engineering]]
    283|
    284|## Back-Of-House-Multi-Agent-Patterns.Md
    285|
@@ -388,7 +388,7 @@
    387|
    388|## Cognitive-Cost-Of-Agents.Md
    389|
-   390|- [[concepts/cognitive-cost-of-agents]] — In April 2026, [[simon-willison]] published a deeply personal reflection after using Claude Code intensively for a full month. The post, "The cognitive impact of coding agents," challenged the prevail
+   390|- [[concepts/cognitive-cost-of-agents]] — In April 2026, [[entities/simon-willison]] published a deeply personal reflection after using Claude Code intensively for a full month. The post, "The cognitive impact of coding agents," challenged the prevail
    391|
    392|## Cognitive-Debt.Md
    393|

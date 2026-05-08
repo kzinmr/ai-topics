@@ -12,6 +12,7 @@ tags:
   - software-engineering
   - agent-infrastructure
 type: article
+updated: 2026-05-08
 ---
 
 # The End of Programming as We Know It

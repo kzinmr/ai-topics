@@ -4,6 +4,7 @@ url: "https://www.wheresyoured.at/openai-projects-chatgpt-plus-subscriptions-to-
 fetched_at: 2026-05-01T07:00:51.105467+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # OpenAI Projects ChatGPT Plus subscriptions to drop by 80% from 44 Million in 2025 to 9 Million In 2026, Made Up Using Cheaper Subscriptions (Somehow)

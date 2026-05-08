@@ -106,6 +106,7 @@ Sherratt's research goes beyond technical access to ask **who gets to access and
 - "The multiplication of contexts" (2017) — how digital tools change what heritage means
 
 ## Related
+- [[concepts/speed-vs-legitimacy-in-ai-institutions]]
 
 - [[concepts/open-data]] — Open cultural data movement
 - [[concepts/digital-humanities]] — Jupyter for humanities research

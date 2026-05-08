@@ -114,5 +114,5 @@ Willisonはこれを**sub-agents**パターンと呼ぶ。各タスクを独立�
 
 ## 参照
 
-- [[simon-willison]] — Agentic Engineering Patterns創始者
+- [[entities/simon-willison]] — Agentic Engineering Patterns創始者
 - [Drew Breunig — How to Fix Your Context](https://simonwillison.net/2025/Jun/29/how-to-fix-your-context/)

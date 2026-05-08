@@ -15,6 +15,7 @@ tags:
 status: active
 description: "The practice of providing LLMs with structured, pre-computed code analysis data rather than raw source files. Cuts token usage by 99% by replacing dozens of file reads with a single structured API call."
 created: 2026-04-30
+updated: 2026-05-08
 sources:
   - "https://searchcode.com/"
   - "https://boyter.org/posts/searchcode-has-been-rebooted/"
@@ -48,7 +49,7 @@ Code intelligence services reduce this to **1 API call** and **~500 tokens** by 
 ## Key Players
 
 ### searchcode.com
-The most prominent dedicated code intelligence service for LLMs. Provides 6 MCP tools (code_analyze, code_search, code_get_file, code_get_files, code_file_tree, code_get_findings). Built on 10 years of indexing 75B+ lines of code. Free during beta. See [[searchcode-com]].
+The most prominent dedicated code intelligence service for LLMs. Provides 6 MCP tools (code_analyze, code_search, code_get_file, code_get_files, code_file_tree, code_get_findings). Built on 10 years of indexing 75B+ lines of code. Free during beta. See [[entities/searchcode-com]].
 
 ### Sourcegraph Code Search
 Enterprise-grade code search supporting 1M+ repositories. While not purpose-built for LLMs, it provides code search, symbol search, and diff search that can be leveraged by agents. See [sourcegraph.com/code-search](https://sourcegraph.com/code-search).
@@ -58,7 +59,7 @@ Several open-source MCP servers for local code analysis exist, such as [saiprash
 
 ## B2A: Business-to-Agent Connection
 
-Code intelligence for LLMs is a canonical example of the **B2A (Business-to-Agent)** paradigm (articulated by [[ben-boyter|Ben Boyter]]). In this model:
+Code intelligence for LLMs is a canonical example of the **B2A (Business-to-Agent)** paradigm (articulated by [[entities/ben-boyter|Ben Boyter]]). In this model:
 
 - The **end user** is an LLM, not a human
 - **Efficiency** (token density, low latency) replaces UI/UX as the measure of quality

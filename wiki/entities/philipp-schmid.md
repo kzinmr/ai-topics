@@ -60,7 +60,7 @@ He argues that harnesses provide three critical functions:
 
 > *"Harnesses often act as the set of opinions that turns a model into a product."*
 
-This framing directly parallels work by [[varun-trivedy]] (DeepAgents harness engineering) and [[thariq-shihipar]] (Claude Agent SDK architecture), establishing a consensus view across the AI engineering community.
+This framing directly parallels work by [[entities/varun-trivedy]] (DeepAgents harness engineering) and [[entities/thariq-shihipar]] (Claude Agent SDK architecture), establishing a consensus view across the AI engineering community.
 
 ### MCP Server Best Practices
 
@@ -172,11 +172,11 @@ Schmid was recognized as the **first German AWS Machine Learning Hero** in 2021,
 
 ## Related People
 
-- **[[varun-trivedy]]** — Both work on agent harness engineering; Schmid's "2026 will be around Agent Harnesses" framing aligns with Trivedy's DeepAgents work
-- **[[thariq-shihipar]]** — Both contribute to the Claude Agent SDK ecosystem; complementary perspectives on harness design and agent architecture
-- **[[florian-brand]]** — Both focus on open model deployment and evaluation; Brand on benchmark analysis, Schmid on deployment optimization
+- **[[entities/varun-trivedy]]** — Both work on agent harness engineering; Schmid's "2026 will be around Agent Harnesses" framing aligns with Trivedy's DeepAgents work
+- **[[entities/thariq-shihipar]]** — Both contribute to the Claude Agent SDK ecosystem; complementary perspectives on harness design and agent architecture
+- **[[entities/florian-brand]]** — Both focus on open model deployment and evaluation; Brand on benchmark analysis, Schmid on deployment optimization
 - **[[concepts/logan-kilpatrick]]**, ****, ****, **** — Colleagues on the Google DeepMind AI DevRel team
-- **[[nathan-lambert]]** — Both active in the open model ecosystem; Lambert at Ai2, Schmid at DeepMind
+- **[[entities/nathan-lambert]]** — Both active in the open model ecosystem; Lambert at Ai2, Schmid at DeepMind
 
 ## X Activity Themes
 

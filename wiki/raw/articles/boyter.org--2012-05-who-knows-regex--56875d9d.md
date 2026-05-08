@@ -4,6 +4,7 @@ url: "https://boyter.org/2012/05/who-knows-regex/"
 fetched_at: 2026-05-05T07:02:05.607408+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Who Knows Regex | Ben E. C. Boyter

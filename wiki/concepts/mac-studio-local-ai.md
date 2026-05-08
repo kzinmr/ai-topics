@@ -39,7 +39,7 @@ Using Apple Mac Studio (M3 with 512GB unified memory) as a local inference platf
 
 ### MLX Framework
 Apple's native ML framework for AI inference. As of 2026:
-- [[mlx]] for language models, [[mlx]] for multimodal
+- [[concepts/mlx]] for language models, [[concepts/mlx]] for multimodal
 - **10–25% faster than llama.cpp** on Apple Silicon
 - Uses `uvx --from mlx-lm mlx_lm.server` for quick deployment
 - Model registry: HuggingFace (e.g., `spicyneuron/Qwen3.5-35B-A3B-MLX-4.8bit`)
@@ -82,9 +82,11 @@ Mixture-of-Experts models keep all weights in memory but activate only a subset 
 - What's the energy efficiency comparison vs cloud GPU inference per token?
 
 ## Related Concepts
+- [[concepts/nvidia-egpu-macos]]
+- [[concepts/dflash-ggml]]
 
 - [[concepts/mlx-llm]] — MLX framework for language model inference
-- [[gguf]] — 4-bit and dynamic quantization techniques
-- [[claude-code]] — Local Claude Code deployment patterns
+- [[concepts/gguf]] — 4-bit and dynamic quantization techniques
+- [[entities/claude-code]] — Local Claude Code deployment patterns
 - [[concepts/llama-cpp]] — Alternative inference engine (llama.cpp vs MLX)
-- [[mixture-of-experts]] — Mixture-of-Experts model design
+- [[concepts/mixture-of-experts]] — Mixture-of-Experts model design

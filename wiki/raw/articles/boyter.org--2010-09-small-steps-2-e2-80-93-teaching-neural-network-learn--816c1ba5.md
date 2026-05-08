@@ -4,6 +4,7 @@ url: "https://boyter.org/2010/09/small-steps-2-%E2%80%93-teaching-neural-network
 fetched_at: 2026-05-05T07:02:07.574430+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Small Steps 2 - Teaching a Neural Network to Learn the Letter A from B-Z

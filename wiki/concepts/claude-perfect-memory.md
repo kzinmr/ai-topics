@@ -50,7 +50,7 @@ Three architectural advantages over embedding-based systems:
 - [[claude-memory]] — Anthropic's filesystem-based memory design philosophy
 - [[claude-memory-tool]] — Cognition's adoption of Claude's memory approach
 - [[ai-agent-memory-two-camps]] — File-based memory as the "Context Substrate" camp
-- [[memory-architecture]] — Production AI memory layer design
+- [[concepts/memory-architecture]] — Production AI memory layer design
 
 ## TODO: Research Items
 - [ ] Document the 8 design rules for preventing memory rot

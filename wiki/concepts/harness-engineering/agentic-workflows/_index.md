@@ -35,9 +35,9 @@ AI Agentを「活用してソフトウェアを開発する」実践的ワーク
 
 | リーダー | コアコンセプト | 関連ページ |
 |---------|--------------|-----------|
-| [[simon-willison]] | Agentic Engineering Patterns, Red/Green TDD, Cognitive Debt | 以下のWillisonパターン群 |
-| [[andrej-karpathy]] | Software 2.0, RLによるエージェント学習, データ中心AI | [[concepts/karpathy-rl-agents]] |
-| [[sankalp-sinha]] | Claude Code 2.0実用ガイド、サブエージェントのlossiness、Throw-Away Draft、コンテキスト60%ルール | 以下のSankalpパターン群 |
+| [[entities/simon-willison]] | Agentic Engineering Patterns, Red/Green TDD, Cognitive Debt | 以下のWillisonパターン群 |
+| [[entities/andrej-karpathy]] | Software 2.0, RLによるエージェント学習, データ中心AI | [[concepts/karpathy-rl-agents]] |
+| [[entities/sankalp-sinha]] | Claude Code 2.0実用ガイド、サブエージェントのlossiness、Throw-Away Draft、コンテキスト60%ルール | 以下のSankalpパターン群 |
 |  | Agent-First Design, CLI-First Development, Plan Mode不要論, inference-speed bottleneck | 以下のSteipeteパターン群 |
 
 ## Simon Willisonの開発パターン

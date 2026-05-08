@@ -4,6 +4,7 @@ url: "https://ashvardanian.com/posts/stringwars-on-gpus/"
 fetched_at: 2026-05-05T07:01:49.698393+00:00
 source: "Ash Vardanyan"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Processing Strings 109x Faster than Nvidia on H100

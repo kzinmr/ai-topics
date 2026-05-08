@@ -4,6 +4,7 @@ url: "https://www.wheresyoured.at/premium-the-ai-compute-demand-story-is-a-lie/"
 fetched_at: 2026-05-05T07:00:55.849280+00:00
 source: "wheresyoured.at"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Premium: The AI Compute Demand Story Is A Lie

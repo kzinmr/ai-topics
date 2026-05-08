@@ -6,6 +6,7 @@ aliases:
   - moonshot-ai
   - moonshotai
   - 月之暗面
+updated: 2026-05-08
 ---
 
 # Moonshot AI

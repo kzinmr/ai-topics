@@ -60,7 +60,7 @@ Only delays of 20+ minutes would justify reconsidering the trade-off.
 ## Related
 - [[concepts/chatgpt-images-2.0]] — GPT Image 2 details
 - [[concepts/nano-banana-2]] — NB2 details
-- [[openai]] — OpenAI company page
+- [[entities/openai]] — OpenAI company page
 - [[google]] — Google AI/ML company page
 - [[concepts/ai-image-generation]] — AI image generation overview
 

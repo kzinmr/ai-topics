@@ -4,6 +4,7 @@ url: "https://www.gilesthomas.com/2026/04/llm-from-scratch-32l-interventions-ins
 fetched_at: 2026-05-01T07:02:05.687543+00:00
 source: "gilesthomas.com"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Writing an LLM from scratch, part 32l -- Interventions: updated instruction fine-tuning results

@@ -5,6 +5,7 @@ source_created_at: "2026-04-03T13:50:42.000Z"
 scraped_at: "2026-04-28T23:42:00Z"
 title: "On merge-models"
 url: "https://arxiv.org/abs/2603.26570"
+updated: 2026-05-08
 ---
 
 # On merge-models

@@ -15,8 +15,8 @@ related:
 - "[[concepts/local-llm/gguf]]"
 - "[[concepts/inference/llama-cpp]]"
 - "[[concepts/inference/vllm]]"
-- "[[georgi-gerganov]]"
-  - "[[nvidia-dgx-spark]]"
+- "[[entities/georgi-gerganov]]"
+  - "[[entities/nvidia-dgx-spark]]"
   - ""
 sources: []
 ---
@@ -148,8 +148,8 @@ The **Unsloth** and **llama.cpp** ecosystems have made step 3 nearly automated �
 
 - [[concepts/local-llm]] — GGUF format deep-dive
 - [[concepts/local-llm]] — llama.cpp inference engine
-- [[georgi-gerganov]] — GGUF/K-Quants creator
-- [[nvidia-dgx-spark]] — Hardware supporting NVFP4/FP4
+- [[entities/georgi-gerganov]] — GGUF/K-Quants creator
+- [[entities/nvidia-dgx-spark]] — Hardware supporting NVFP4/FP4
 -  — Inference optimization techniques
 ## Sources
 

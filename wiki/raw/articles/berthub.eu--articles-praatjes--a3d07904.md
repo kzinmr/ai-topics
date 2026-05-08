@@ -4,6 +4,7 @@ url: "https://berthub.eu/articles/praatjes/"
 fetched_at: 2026-04-29T07:02:21.290411+00:00
 source: "berthub.eu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Bert Hubert's writings

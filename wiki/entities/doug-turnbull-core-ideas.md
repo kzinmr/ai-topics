@@ -272,4 +272,4 @@ He advocates building a professional network through genuine service and deep ex
 
 ## Related
 
-- [[doug-turnbull]] — Main entity page
+- [[entities/doug-turnbull]] — Main entity page

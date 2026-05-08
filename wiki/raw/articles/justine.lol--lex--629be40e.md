@@ -4,6 +4,7 @@ url: "https://justine.lol/lex/"
 fetched_at: 2026-05-05T07:01:27.282930+00:00
 source: "Justine Tunney"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Weird Lexical Syntax

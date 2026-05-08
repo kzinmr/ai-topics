@@ -110,7 +110,7 @@ type: entity
 
 ## See Also
 
-- [[yann-lecun]] — CNNの発明者。深層学習とコンピュータビジョンのパイオニア。
+- [[entities/yann-lecun]] — CNNの発明者。深層学習とコンピュータビジョンのパイオニア。
 - [[fei-fei-li]] — ImageNetの作成者。データ駆動型AIの先駆者。
 - [[yoshua-bengio]] — GoodfellowのPhD指導者。深層学習のパイオニア。
 - [[generative-adversarial-networks]] — Goodfellowが発明した生成的モデルの基盤技術。

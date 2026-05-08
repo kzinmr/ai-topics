@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/cb58dc0e-fdea-477a-a6b4-b9d000c8f410?j=eyJ1I
 fetched_at: 2026-04-14T08:44:12.737941+00:00
 source_date: 2026-04-14
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # DeepSeek V3.2 & 3.2-Speciale: GPT5-High Open Weights, Context Management, Plans for Compute Scaling

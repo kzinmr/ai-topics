@@ -13,7 +13,7 @@ sources:
 
 # Sigrid Jin
 
-Sigrid Jin (@realsigridjin) is the creator of **[[claw-code]]**, the open-source clean-room reimplementation of Claude Code's agent harness that became the fastest repository in GitHub history to surpass 100K stars (March 2026).
+Sigrid Jin (@realsigridjin) is the creator of **[[concepts/claw-code]]**, the open-source clean-room reimplementation of Claude Code's agent harness that became the fastest repository in GitHub history to surpass 100K stars (March 2026).
 
 ## Background
 
@@ -40,6 +40,6 @@ Jin's core thesis (expressed in Claw Code's PHILOSOPHY.md):
 - The bottleneck has shifted from typing speed to architectural clarity, task decomposition, and judgment
 
 ## Related
-- [[claw-code]] — Claw Code concept page
+- [[concepts/claw-code]] — Claw Code concept page
 - [[yeachan-heo]] — Bellman, collaborator and creator of oh-my-codex
 - [[ultraworkers]] — GitHub organization hosting claw-code

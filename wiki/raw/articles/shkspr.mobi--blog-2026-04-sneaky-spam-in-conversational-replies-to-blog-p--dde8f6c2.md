@@ -4,6 +4,7 @@ url: "https://shkspr.mobi/blog/2026/04/sneaky-spam-in-conversational-replies-to-
 fetched_at: 2026-05-01T07:01:09.404588+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Sneaky spam in conversational replies to blog posts

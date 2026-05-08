@@ -79,4 +79,4 @@ A skill encodes a process that works across domains. The same investigative skil
 - [[concepts/agent-harness]] — The harness layer that skills sit above
 - [[concepts/harness-engineering]] — Principles of agent harness design
 - [[concepts/personal-os-for-ai-agents]] — File-based personal OS using skills
-- [[context-management]] — Managing context windows and attention
+- [[concepts/context-management]] — Managing context windows and attention

@@ -4,6 +4,7 @@ url: "https://jvns.ca/blog/2024/11/26/terminal-rules/"
 fetched_at: 2026-05-05T07:01:46.466309+00:00
 source: "Julia Evans (jvns)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # "Rules" that terminal programs follow

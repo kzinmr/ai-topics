@@ -11,7 +11,7 @@ sources:
 
 # DeepSeek-V3.2
 
-DeepSeek-V3.2は、**685Bパラメータ**の高効率推論モデル。DeepSeek-AIが2025年12月に発表。[[deepseek-v3|V3]]を進化させ、**DeepSeek Sparse Attention（DSA）**、**スケーラブルRL（GRPO）**、**大規模エージェントタスク合成**の3つの革新により、オープンソースと商用フロンティアモデル（GPT-5、Gemini-3.0-Pro）の性能ギャップを埋めることを狙った。ハイコンピュート版**V3.2-Speciale**はIMO 2025およびIOI 2025で金メダルを獲得。
+DeepSeek-V3.2は、**685Bパラメータ**の高効率推論モデル。DeepSeek-AIが2025年12月に発表。[[concepts/deepseek-v3|V3]]を進化させ、**DeepSeek Sparse Attention（DSA）**、**スケーラブルRL（GRPO）**、**大規模エージェントタスク合成**の3つの革新により、オープンソースと商用フロンティアモデル（GPT-5、Gemini-3.0-Pro）の性能ギャップを埋めることを狙った。ハイコンピュート版**V3.2-Speciale**はIMO 2025およびIOI 2025で金メダルを獲得。
 
 ## アーキテクチャ革新
 
@@ -29,11 +29,11 @@ DeepSeek-V3.2は、**685Bパラメータ**の高効率推論モデル。DeepSeek
 - 長コンテキストシナリオ（最大128K）での推論コストを大幅削減
 - 性能劣化なしに効率を実現
 
-DSAは後継の[[deepseek-v4|V4]]（CSA: Compressed Sparse Attention）や [[glm-5-1|GLM-5.1]] にも採用され、オープンソースLLMの長コンテキスト効率化の標準手法となった。既存の技法との比較は[[attention-mechanism-variants]]を参照。
+DSAは後継の[[concepts/deepseek-v4|V4]]（CSA: Compressed Sparse Attention）や [[glm-5-1|GLM-5.1]] にも採用され、オープンソースLLMの長コンテキスト効率化の標準手法となった。既存の技法との比較は[[attention-mechanism-variants]]を参照。
 
 ### スケーラブルRLフレームワーク（GRPO強化）
 
-[[deepseek-r1|R1]]で導入された[[grpo|GRPO]]（Group Relative Policy Optimization）を3つの点で強化。ポストトレーニング予算は事前学習コストの**10%超**。
+[[concepts/deepseek-r1|R1]]で導入された[[concepts/grpo|GRPO]]（Group Relative Policy Optimization）を3つの点で強化。ポストトレーニング予算は事前学習コストの**10%超**。
 
 | 改良点 | 内容 | 効果 |
 |--------|------|------|
@@ -118,12 +118,12 @@ V3.2の位置づけは、**V3の効率アーキテクチャを基盤に、DSAに
 ## 関連項目
 
 - [[entities/deepseek]] — DeepSeek企業概要
-- [[deepseek-v3]] — 前世代（V3アーキテクチャ）
-- [[deepseek-v4]] — 後継モデル（1Mコンテキスト、Hybrid Attention）
-- [[deepseek-r1]] — 推論特化モデル（GRPOの原点）
-- [[grpo]] — Group Relative Policy Optimization
+- [[concepts/deepseek-v3]] — 前世代（V3アーキテクチャ）
+- [[concepts/deepseek-v4]] — 後継モデル（1Mコンテキスト、Hybrid Attention）
+- [[concepts/deepseek-r1]] — 推論特化モデル（GRPOの原点）
+- [[concepts/grpo]] — Group Relative Policy Optimization
 - [[attention-mechanism-variants]] — DSAを含むアテンション技法の比較
 - [[glm-5-1]] — DSAを採用した後続モデル
 - [[agent-training]] — エージェントタスク合成の文脈
-- [[speculative-decoding]] — 推論効率化技術
-- [[mixture-of-experts]] — MoEアーキテクチャ
+- [[concepts/speculative-decoding]] — 推論効率化技術
+- [[concepts/mixture-of-experts]] — MoEアーキテクチャ

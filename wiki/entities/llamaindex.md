@@ -9,7 +9,7 @@ tags:
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [LlamaIndex Framework, GPT Index, Llama Hub]
-related: [[langchain]], [[agent-orchestration-frameworks]], [[rags]], [[context-engineering]], [[llamaparse]], [[llamacloud]]
+related: [[langchain]], [[concepts/agent-orchestration-frameworks]], [[concepts/rags]], [[concepts/context-engineering]], [[llamaparse]], [[llamacloud]]
 sources: [https://www.llamaindex.ai/, https://github.com/run-llama/llama_index, https://developers.llamaindex.ai/]
 ---
 
@@ -138,13 +138,13 @@ LlamaIndex extends beyond passive retrieval into autonomous reasoning and action
 
 ## Related Concepts
 - [[langchain]] — Competing general-purpose LLM application framework
-- [[rags]] — Retrieval-Augmented Generation patterns and techniques
-- [[agent-orchestration-frameworks]] — Comparative analysis of agent frameworks
-- [[context-engineering]] — Discipline popularized by LlamaIndex
+- [[concepts/rags]] — Retrieval-Augmented Generation patterns and techniques
+- [[concepts/agent-orchestration-frameworks]] — Comparative analysis of agent frameworks
+- [[concepts/context-engineering]] — Discipline popularized by LlamaIndex
 - [[llamaparse]] — Enterprise document parsing
 - [[llamacloud]] — Managed deployment platform
-- [[mcp]] — Model Context Protocol (natively supported in LlamaIndex)
-- [[dspy]] — Declarative LM programming framework (alternative paradigm)
+- [[concepts/mcp]] — Model Context Protocol (natively supported in LlamaIndex)
+- [[entities/dspy]] — Declarative LM programming framework (alternative paradigm)
 
 ## Sources
 - [LlamaIndex Official Site](https://www.llamaindex.ai/)

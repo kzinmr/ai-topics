@@ -4,6 +4,7 @@ url: "https://substack.com/redirect/86361df2-a45f-439b-a327-3a73b9dc2d28?j=eyJ1I
 fetched_at: 2026-04-16T06:41:47.642542+00:00
 source_date: 2026-04-16
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # How to Kill the Code Review

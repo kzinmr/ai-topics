@@ -5,6 +5,7 @@ url: "https://cohere.com/blog/cohere-signs-world-chess-champion-magnus-carlsen"
 scraped: "2026-05-08T07:45:01.447619+00:00"
 lastmod: "2026-03-13"
 type: "sitemap"
+updated: 2026-05-08
 ---
 
 # Cohere signs world chess champion Magnus Carlsen as brand ambassador

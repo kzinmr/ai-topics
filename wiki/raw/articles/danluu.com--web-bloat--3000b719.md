@@ -4,6 +4,7 @@ url: "https://danluu.com/web-bloat/"
 fetched_at: 2026-05-05T07:01:31.929936+00:00
 source: "Dan Luu"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # How web bloat impacts users with slow connections

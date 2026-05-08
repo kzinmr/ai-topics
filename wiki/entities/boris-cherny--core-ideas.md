@@ -14,7 +14,7 @@ sources: []
 
 # Boris Cherny: Core Ideas & Philosophy
 
-Back to main profile: [[boris-cherny]]
+Back to main profile: [[entities/boris-cherny]]
 
 ## Model Choice: Opus 4.5 with Thinking
 

@@ -4,6 +4,7 @@ url: "https://shkspr.mobi/blog/2026/04/book-review-superintelligence-paths-dange
 fetched_at: 2026-05-01T07:01:11.433397+00:00
 source: "shkspr.mobi"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Book Review: Superintelligence - Paths, Dangers, Strategies by Nick Bostrom

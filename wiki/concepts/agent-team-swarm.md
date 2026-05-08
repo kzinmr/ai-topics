@@ -35,13 +35,13 @@ sources: [
 - **Architecture**: Task board → Agent spawn → Isolated workspace → PR submission → Human review
 - **Philosophy**: "Manage work, not agents" — humans define workflows, agents execute
 - **Status**: Open source (Apache 2.0), multiple community implementations
-- **Details**: See [[openai-symphony]]
+- **Details**: See [[concepts/openai-symphony]]
 
 ### Anthropic Managed Agents
 
 - **Architecture**: Brain/Hands/Session separation with persistent memory stores
 - **Features**: Real-time sync between agents, file-based memory, enterprise security
-- **Details**: See [[anthropic-managed-agents]]
+- **Details**: See [[concepts/anthropic-managed-agents]]
 
 ### Sakana AI Conductor
 
@@ -92,15 +92,15 @@ The emergence of multi-agent systems creates new economic patterns:
 - **Token Consumption**: Autonomous agents consume 1000x more tokens than chat interfaces
 - **Cost Structure**: L4/L5 systems require significant compute budgets
 - **Value Proposition**: ROI comes from eliminating human supervision time
-- **Infrastructure Demand**: Drives need for specialized agent hosting (see [[harness-engineering]])
+- **Infrastructure Demand**: Drives need for specialized agent hosting (see [[concepts/harness-engineering]])
 
 ## Related Pages
 
-- [[openai-symphony]] — OpenAI's orchestration platform
-- [[anthropic-managed-agents]] — Anthropic's enterprise agent platform
-- [[harness-engineering]] — Safety and constraint patterns for agents
+- [[concepts/openai-symphony]] — OpenAI's orchestration platform
+- [[concepts/anthropic-managed-agents]] — Anthropic's enterprise agent platform
+- [[concepts/harness-engineering]] — Safety and constraint patterns for agents
 - [[dark-factory-software-factory]] — Fully autonomous development
-- [[agentic-engineering]] — Developer patterns for working with agents
+- [[concepts/agentic-engineering]] — Developer patterns for working with agents
 - [[physical-ai]] — Physical AI systems also use orchestration patterns
 
 ## Sources

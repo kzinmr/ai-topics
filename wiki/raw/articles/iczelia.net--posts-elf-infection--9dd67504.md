@@ -4,6 +4,7 @@ url: "https://iczelia.net/posts/elf-infection/"
 fetched_at: 2026-05-05T07:01:21.723563+00:00
 source: "Kamila Szewczyk (iczelia)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # A technique for ELF file infection.

@@ -124,9 +124,9 @@ Burkov's Substack archives contain 140+ weekly issues covering ML education, AI 
 
 ## Related People
 
-- **Scott Wu** ([[scott-wu]]) — Both working to democratize AI; Burkov through education and accessible writing, Wu through autonomous coding agents.
+- **Scott Wu** ([[entities/scott-wu]]) — Both working to democratize AI; Burkov through education and accessible writing, Wu through autonomous coding agents.
 - **Benjamin Clavié** () — Fellow ML practitioner focused on making advanced techniques accessible; Clavié in retrieval/IR, Burkov in education.
-- **Clémentine Fourrier** ([[clefourrier]]) — Both advocate for rigorous evaluation methodology and transparency in ML; Burkov through educational writing, Fourrier through benchmark research.
+- **Clémentine Fourrier** ([[entities/clefourrier]]) — Both advocate for rigorous evaluation methodology and transparency in ML; Burkov through educational writing, Fourrier through benchmark research.
 - **Yann LeCun** — Influential figure whose work Burkov frequently references and analyzes in his newsletter.
 - **Andrej Karpathy** — Fellow ML educator whose clear, practical teaching style aligns with Burkov's educational philosophy.
 

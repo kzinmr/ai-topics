@@ -4,6 +4,7 @@ url: "https://mail-settings.google.com/mail/uf-%5BANGjdJ-Tz1KqiSSCqeA7P2H9oHAeqO
 fetched_at: 2026-04-09T15:08:35.775182+00:00
 source_date: 2026-04-10
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Confirmation

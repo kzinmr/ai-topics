@@ -4,6 +4,7 @@ url: "https://boyter.org/2014/02/python-pep8-git-commit-check/"
 fetched_at: 2026-05-05T07:02:03.839985+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Python pep8 git commit check

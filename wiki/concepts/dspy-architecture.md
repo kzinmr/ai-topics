@@ -109,4 +109,4 @@ This paradigm mirrors what **PyTorch did for neural networks**:
 - [[concepts/dspy-modules]] — Module reference and pipeline patterns
 - [[concepts/dspy-optimization]] — Optimization techniques (Assertions, Fine-Tuning)
 - [[concepts/dspy-comparisons]] — DSPy vs LangChain, RLMs, GEPA
-- [[omar-khattab]] — Creator of DSPy
+- [[entities/omar-khattab]] — Creator of DSPy

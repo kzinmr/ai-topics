@@ -4,6 +4,7 @@ url: "https://iczelia.net/posts/cg-explanation/"
 fetched_at: 2026-05-05T07:01:23.036371+00:00
 source: "Kamila Szewczyk (iczelia)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Explanation of my Code Guessing entry (round 6)

@@ -2,6 +2,7 @@
 title: George Hotz (geohot): OpenAI is nothing without its people
 category: other
 status: active
+updated: 2026-05-08
 ---
 
 # George Hotz (geohot): OpenAI is nothing without its people

@@ -87,8 +87,8 @@ Terminal-Bench 2.0を6段階のリソース設定で実行:
 
 ## See Also
 
-- [[swe-bench]] — SWE-bench benchmark
-- [[frontier-swe-benchmark]] — Frontier SWE benchmark
-- [[ai-resistant-evaluations]] — AI-resistant evaluation design
-- [[eval-awareness-browsecomp]] — Eval awareness and contamination
+- [[concepts/swe-bench]] — SWE-bench benchmark
+- [[concepts/frontier-swe-benchmark]] — Frontier SWE benchmark
+- [[concepts/ai-resistant-evaluations]] — AI-resistant evaluation design
+- [[concepts/eval-awareness-browsecomp]] — Eval awareness and contamination
 - [[swe-bench-agent-scaffolding]] — Agent scaffolding for SWE-bench

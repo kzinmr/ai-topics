@@ -111,4 +111,4 @@ skilled_container = client.containers.create(
 ## 参照
 
 - [OpenAI: From model to agent](https://openai.com/index/equip-responses-api-computer-environment/)
-- [[openai]] — OpenAI
+- [[entities/openai]] — OpenAI

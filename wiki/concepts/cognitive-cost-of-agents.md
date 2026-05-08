@@ -17,14 +17,14 @@ type: concept
 **Date:** April 3, 2026
 **Updated:** April 13, 2026
 **Source:** Simon Willison's Weblog — "The cognitive impact of coding agents"
-**Author:** [[simon-willison]] (simonw)
+**Author:** [[entities/simon-willison]] (simonw)
 **Related:** [[concepts/agentic-engineering]], [[concepts/vibe-coding]], [[concepts/anthropic-managed-agents]], [[concepts/agent-orchestration-frameworks]]
 
 ---
 
 ## Overview
 
-In April 2026, [[simon-willison]] published a deeply personal reflection after using Claude Code intensively for a full month. The post, "The cognitive impact of coding agents," challenged the prevailing narrative that AI coding agents **reduce developer workload**. Instead, Willison argued that agents fundamentally **shift** the cognitive load — from writing code to reviewing, directing, and debugging agent output — and that this shift carries hidden costs that the industry has not yet reckoned with.
+In April 2026, [[entities/simon-willison]] published a deeply personal reflection after using Claude Code intensively for a full month. The post, "The cognitive impact of coding agents," challenged the prevailing narrative that AI coding agents **reduce developer workload**. Instead, Willison argued that agents fundamentally **shift** the cognitive load — from writing code to reviewing, directing, and debugging agent output — and that this shift carries hidden costs that the industry has not yet reckoned with.
 
 The central thesis: **AI doesn't reduce work; it intensifies it.** The nature of the work changes, but the mental energy required may actually increase.
 

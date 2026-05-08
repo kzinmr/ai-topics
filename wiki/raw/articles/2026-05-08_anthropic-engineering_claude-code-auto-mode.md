@@ -5,6 +5,7 @@ url: "https://www.anthropic.com/engineering/claude-code-auto-mode"
 scraped: "2026-05-08T02:04:59.040744+00:00"
 lastmod: "2026-03-25T23:13:37.000Z"
 type: "sitemap"
+updated: 2026-05-08
 ---
 
 # Claude Code auto mode: a safer way to skip permissions

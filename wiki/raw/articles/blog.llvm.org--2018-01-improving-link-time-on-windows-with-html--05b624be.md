@@ -4,6 +4,7 @@ url: "https://blog.llvm.org/2018/01/improving-link-time-on-windows-with.html"
 fetched_at: 2026-05-05T07:01:38.259575+00:00
 source: "LLVM Blog"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Improving Link Time on Windows with clang-cl and lld

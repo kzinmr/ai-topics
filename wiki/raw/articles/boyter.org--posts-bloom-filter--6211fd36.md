@@ -4,6 +4,7 @@ url: "https://boyter.org/posts/bloom-filter/"
 fetched_at: 2026-05-05T07:01:57.541308+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Bloom Filters - Much, much more than a space efficient hashmap!

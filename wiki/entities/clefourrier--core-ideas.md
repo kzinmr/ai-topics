@@ -15,7 +15,7 @@ sources: []
 
 # Clémentine Fourrier: Core Ideas & Philosophy
 
-Back to main profile: [[clefourrier]]
+Back to main profile: [[entities/clefourrier]]
 
 ## Reproducible Evaluation Is Non-Negotiable
 

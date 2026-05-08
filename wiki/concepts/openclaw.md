@@ -45,9 +45,9 @@ OpenClaw (originally "Clawdbot") is an open-source, always-on AI assistant frame
 
 ## Related Concepts
 
-- [[agent-harness-primitives]]
-- [[agent-sandboxing]]
-- [[hermes-agent]]
+- [[concepts/agent-harness-primitives]]
+- [[concepts/agent-sandboxing]]
+- [[entities/hermes-agent]]
 - [[entities/peter-steinberger]]
 - [[entities/nvidia-nemoclaw]]
 

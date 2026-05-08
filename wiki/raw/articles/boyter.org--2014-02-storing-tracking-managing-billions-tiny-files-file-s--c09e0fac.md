@@ -4,6 +4,7 @@ url: "https://boyter.org/2014/02/storing-tracking-managing-billions-tiny-files-f
 fetched_at: 2026-05-05T07:02:04.022670+00:00
 source: "Ben Boyter"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Why is storing, tracking and managing billions of tiny files directly on a file system a nightmare?

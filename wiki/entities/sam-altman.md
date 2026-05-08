@@ -174,7 +174,7 @@ The post also laid out Altman's vision of AI agents as virtual co-workers (junio
 
 > *"Anyone in 2035 should be able to marshall the intellectual capacity equivalent to everyone in 2025; everyone should have access to unlimited genius to direct however they can imagine."*
 
-See [[altman-three-observations]] for full analysis.
+See [[concepts/altman-three-observations]] for full analysis.
 
 ## Core Philosophy
 
@@ -224,11 +224,11 @@ The 2023 board crisis revealed deep tensions between safety-focused board member
 
 ## Related
 
-- [[greg-brockman]] — OpenAI co-founder and President
-- [[ilya-sutskever]] — OpenAI co-founder; former Chief Scientist
-- [[john-schulman]] — OpenAI co-founder; RL researcher
-- [[dario-amodei]] — Anthropic CEO; competitor
-- [[openai]] — Company Altman leads
+- [[entities/greg-brockman]] — OpenAI co-founder and President
+- [[entities/ilya-sutskever]] — OpenAI co-founder; former Chief Scientist
+- [[entities/john-schulman]] — OpenAI co-founder; RL researcher
+- [[entities/dario-amodei]] — Anthropic CEO; competitor
+- [[entities/openai]] — Company Altman leads
 -  — Altman's proof-of-personhood project-  — Altman's stated long-term goal
 
 ## Sources

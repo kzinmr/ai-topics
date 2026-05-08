@@ -4,6 +4,7 @@ url: "https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-
 fetched_at: 2026-04-09T16:29:01.371711+00:00
 source_date: 2026-04-10
 tags: [newsletter, auto-ingested]
+updated: 2026-05-08
 ---
 
 # Exclusive: Anthropic ‘Mythos’ AI model representing ‘step change’ in power revealed in data leak

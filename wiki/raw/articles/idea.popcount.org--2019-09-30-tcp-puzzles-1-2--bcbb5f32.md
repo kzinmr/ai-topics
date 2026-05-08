@@ -4,6 +4,7 @@ url: "https://idea.popcount.org/2019-09-30-tcp-puzzles-1-2"
 fetched_at: 2026-05-05T07:01:07.175625+00:00
 source: "Marek Vavruša (idea.popcount)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # TCP Puzzles 1-2 - Idea of the day

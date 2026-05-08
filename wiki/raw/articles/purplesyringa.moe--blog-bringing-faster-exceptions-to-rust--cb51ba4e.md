@@ -4,6 +4,7 @@ url: "https://purplesyringa.moe/blog/./bringing-faster-exceptions-to-rust/"
 fetched_at: 2026-05-05T07:02:09.784862+00:00
 source: "Alisa Sireneva (PurpleSyringa)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Bringing faster exceptions to Rust

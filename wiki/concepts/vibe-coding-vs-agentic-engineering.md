@@ -3,6 +3,7 @@ title: "Vibe Coding vs Agentic Engineering"
 url: "https://wiki.ai-topics/concepts/vibe-coding-vs-agentic-engineering"
 date: 2026-05-07
 tags: [concept, coding-agents, software-development, ai-tools]
+updated: 2026-05-08
 ---
 
 # Vibe Coding vs Agentic Engineering
@@ -64,5 +65,5 @@ This reflects the enterprise preference for proven, reliable software over DIY a
 ## Related Concepts
 
 - [[normalization-of-deviance-in-ai-coding]] — risk of trusting AI outputs without review
-- [[coding-agents]] — AI coding agent tools and capabilities
+- [[concepts/coding-agents]] — AI coding agent tools and capabilities
 - [[software-development-lifecycle]] — how SDLC adapts to AI-generated code

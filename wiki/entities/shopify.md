@@ -30,7 +30,7 @@ Shopify is an e-commerce platform and a reference case for organizational AI ado
 ### Results
 - Case study documented by First Round Capital
 - 6,482 bookmarks, 2.50M impressions on announcement
-- Referenced as a model for [[reflexive-ai]] implementation
+- Referenced as a model for [[concepts/reflexive-ai]] implementation
 
 ## Entrepreneurship & Ecommerce Trends (Shopify Data Science, Apr 2026)
 
@@ -57,14 +57,14 @@ The traditional 9-to-5 "safe bet" is under pressure from AI automation and corpo
 Drivers include AI "exoskeletons" (tools like *Tinker*), improved logistics infrastructure, and growing consumer preference for independent brands.
 
 ### Implications for AI & Solopreneurship
-This data directly supports the [[solo-founder-stack]] thesis: as AI lowers operational barriers, the risk-reward calculus shifts toward entrepreneurship. Shopify's data provides empirical grounding for the "Vibe CEO" and [[concepts/ai-organization/ai-org-solo-founder-and-super-ic|Solo Founder & Super IC]] paradigm — showing that the trend is measurable, not anecdotal.
+This data directly supports the [[concepts/solo-founder-stack]] thesis: as AI lowers operational barriers, the risk-reward calculus shifts toward entrepreneurship. Shopify's data provides empirical grounding for the "Vibe CEO" and [[concepts/ai-organization/ai-org-solo-founder-and-super-ic|Solo Founder & Super IC]] paradigm — showing that the trend is measurable, not anecdotal.
 
 ## Related
 
-- [[reflexive-ai]]
+- [[concepts/reflexive-ai]]
 - [[tobi-lutke]]
-- [[experience-is-a-tax]]
-- [[solo-founder-stack]]
+- [[concepts/experience-is-a-tax]]
+- [[concepts/solo-founder-stack]]
 
 ## References
 

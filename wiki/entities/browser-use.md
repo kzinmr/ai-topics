@@ -111,11 +111,11 @@ Anthropic/OpenAIのスクリーンショットベースとは対照的に、**DO
 
 ## 関連エンティティ
 
-- [[anthropic-computer-use]] — スクリーンショットベースアプローチ
-- [[openai-cua]] — OpenAIのComputer-Using Agent
-- [[browserbase]] — 信頼性の高いブラウザ自動化インフラ
+- [[entities/anthropic-computer-use]] — スクリーンショットベースアプローチ
+- [[entities/openai-cua]] — OpenAIのComputer-Using Agent
+- [[entities/browserbase]] — 信頼性の高いブラウザ自動化インフラ
 - [[concepts/death-of-browser]] — ブラウザの脱人間化潮流
-- [[webmcp]] — 標準化されたエージェント-ブラウザ対話
+- [[entities/webmcp]] — 標準化されたエージェント-ブラウザ対話
 
 ## Sources
 

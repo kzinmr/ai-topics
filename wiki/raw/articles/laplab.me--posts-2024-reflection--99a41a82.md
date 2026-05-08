@@ -4,6 +4,7 @@ url: "https://laplab.me/posts/2024-reflection/"
 fetched_at: 2026-05-05T07:01:24.291509+00:00
 source: "Nikita Lapkov (laplab)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # 2024 Reflection | Nikita Lapkov

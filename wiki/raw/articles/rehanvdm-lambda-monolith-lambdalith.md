@@ -2,6 +2,7 @@
 title: Should you use a Lambda Monolith, aka Lambdalith, for your API?
 category: other
 status: active
+updated: 2026-05-08
 ---
 
 # Should you use a Lambda Monolith, aka Lambdalith, for your API?

@@ -127,8 +127,8 @@ Together they enable:
 
 ## See Also
 
-- [[playerzero]] — AI agent startup using context graphs for production engineering.
-- [[regie-ai]] — AI-native sales engagement platform using context graphs.
-- [[maximor]] — AI agent startup automating finance/accounting workflows.
-- [[ai-agents]] — AI agent infrastructure and frameworks.
+- [[entities/playerzero]] — AI agent startup using context graphs for production engineering.
+- [[entities/regie-ai]] — AI-native sales engagement platform using context graphs.
+- [[entities/maximor]] — AI agent startup automating finance/accounting workflows.
+- [[concepts/ai-agents]] — AI agent infrastructure and frameworks.
 - [[observability]] — Monitoring and evaluation of AI agent decision quality.

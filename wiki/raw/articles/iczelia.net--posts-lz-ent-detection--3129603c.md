@@ -4,6 +4,7 @@ url: "https://iczelia.net/posts/lz-ent-detection/"
 fetched_at: 2026-05-05T07:01:19.767521+00:00
 source: "Kamila Szewczyk (iczelia)"
 tags: [blog, raw]
+updated: 2026-05-08
 ---
 
 # Lempel-Ziv factorisation for file type detection.
