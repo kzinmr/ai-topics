@@ -10,8 +10,9 @@ tags:
   - china
   - open-source
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-08
 type: entity
+sources: ["raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md"]
 ---
 
 # Moonshot AI / Kimi
@@ -211,6 +212,7 @@ Moonshot has maintained the leading position among **Chinese open-source model l
 - [[concepts/deepseek-v3]] — Competitor from DeepSeek
 - [[qwen3-6-plus|Qwen3.6 35B MoE]] — Competing open MoE model
 - [[concepts/open-model-consortium]]
+- [[concepts/china-agentic-coding-sprint]] — China's agentic coding convergence (Apr 2026)
 
 ---
 

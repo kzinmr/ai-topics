@@ -1,3 +1,34 @@
+## [2026-05-08] active-crawl | Enterprise AI JVs, IBM Think 2026 AI Operating Model, China Agentic Coding Sprint
+
+**Action**: Researched trending AI/ML topics and ingested 3 major themes into wiki.
+
+**Raw articles created (5):**
+- `raw/articles/2026-05-04_techcrunch-anthropic-openai-jv.md`
+- `raw/articles/2026-05-04_anthropic-enterprise-ai-services.md`
+- `raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md`
+- `raw/articles/2026-05-05_ibm-think-2026-ai-operating-model.md`
+- `raw/articles/2026-05-04_nathanbenaich-state-of-ai-may-2026.md`
+
+**New concept pages (3):**
+- `concepts/enterprise-ai-deployment-jv.md` — Both OpenAI ($4B "The Deployment Company") and Anthropic ($1.5B JV) forming deployment services arms
+- `concepts/ai-operating-model.md` — IBM's four-system blueprint: Agents + Data + Automation + Hybrid
+- `concepts/china-agentic-coding-sprint.md` — China's rapid SWE-Bench Pro convergence (Kimi K2.6, MiniMax M2.7, Z.ai GLM-5.1)
+
+**New entity pages (2):**
+- `entities/ibm-watsonx-orchestrate.md` — IBM's multi-agent "agentic control plane"
+- `entities/minimax.md` — Chinese AI company, M2.7 coding model
+
+**Enriched stub:**
+- `concepts/multi-agent-orchestration.md` — From stub to full page with IBM watsonx Orchestrate content
+
+**Updated pages (3):**
+- `entities/anthropic.md` — JV sources/wikilinks, updated to 2026-05-08
+- `entities/openai.md` — Deployment Company sources/wikilinks, updated to 2026-05-08
+- `entities/kimi.md` — China coding sprint reference, sources, updated to 2026-05-08
+
+**Index**: +5 entries (ibm-watsonx-orchestrate, minimax, ai-operating-model, china-agentic-coding-sprint, enterprise-ai-deployment-jv)
+**Page count**: 5272 → 5277 | **Entities**: 496 → 498 | **Concepts**: 463 → 466
+
 ## [2026-05-08] concept-enrich | turing-completeness-emergence: Goal-Completenessセクション追加
 
 **Action**: LessWrong記事「Goal-Completeness is like Turing-Completeness for AGI」(Liron, 2023) をwikiに取り込み、既存の `concepts/turing-completeness-emergence.md` を大幅強化。

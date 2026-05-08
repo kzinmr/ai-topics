@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-05-06
+updated: 2026-05-08
 sources: [
   "https://x.com/RLanceMartin/status/2041927992986009773",
   "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
@@ -19,7 +19,10 @@ sources: [
   "raw/articles/2026-04-28-anthropic-claude-creative-coalition.md",
   "raw/articles/2026-04-30-anthropic-claude-security-public-beta.md",
   "raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md",
-  "raw/articles/2026-05-01_pentagon-seven-ai-deals-anthropic-excluded.md"
+  "raw/articles/2026-05-01_pentagon-seven-ai-deals-anthropic-excluded.md",
+  "raw/articles/2026-05-04_techcrunch-anthropic-openai-jv.md",
+  "raw/articles/2026-05-04_anthropic-enterprise-ai-services.md",
+  "raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md"
 ]
 related: [
   "[[anthropic]]",
@@ -137,7 +140,7 @@ Anthropic partnered with Blackstone, Hellman & Friedman, and Goldman Sachs to fo
 | **Total Raise** | $1.5B ($300M each from main participants) |
 | **Focus** | Claude-powered enterprise deployment systems |
 | **Significance** | Part of broader industry shift from model APIs to service delivery |
-| **Context** | See [[concepts/ai-services-joint-ventures]] for full comparison with OpenAI's $4B Deployment Company |
+| **Context** | See [[concepts/enterprise-ai-deployment-jv]] for full comparison with OpenAI's $4B Deployment Company |
 
 ### Anthropic Orbit (Leaked, May 2026)
 

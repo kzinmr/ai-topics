@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-05-06
+updated: 2026-05-08
 tags:
   - company
   - model
@@ -18,6 +18,8 @@ sources:
   - raw/articles/simonwillison.net--2026-apr-25-romain-huet--fea00393.md
   - raw/articles/2026-04-28-openai-aws-bedrock-partnership.md
   - raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md
+  - raw/articles/2026-05-04_techcrunch-anthropic-openai-jv.md
+  - raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md
 ---
 
 # OpenAI
@@ -72,7 +74,7 @@ OpenAI is a leading AI research and product company known for developing the GPT
 - **Sora** — Video generation
 
 ### Strategic Initiatives (OpenAI Ecosystem)
-- **"The Deployment Company" JV (May 2026)** — OpenAI raised ~$4B at $10B pre-money valuation for a dedicated deployment company. Backed by 19 investors (TPG, Bain Capital, SoftBank, etc.). COO Brad Lightcap is shifting to lead "special projects" and this JV. Represents the shift from model API sales to enterprise service delivery. See [[concepts/ai-services-joint-ventures]].
+- **"The Deployment Company" JV (May 2026)** — OpenAI raised ~$4B at $10B pre-money valuation for a dedicated deployment company. Backed by 19 investors (TPG, Bain Capital, SoftBank, etc.). COO Brad Lightcap is shifting to lead "special projects" and this JV. Represents the shift from model API sales to enterprise service delivery. See [[concepts/enterprise-ai-deployment-jv]].
 - **World ID 4.0 / AgentKit** — Sam Altman's Worldcoin project reached 18M verified users across 160 countries. AgentKit enables AI agents to carry cryptographic proof they act for verified humans. Vercel has "human in the loop" authentication live; Okta planning "Human Principal" for API policies. New integrations include Tinder (verified-human badges), Zoom ("Deep Face" iris+live selfie cross-checks), and DocuSign (proof-of-human signatures).
 - **SpaceX-Cursor Deal** — SpaceX has right to acquire Cursor for $60B or pay $10B for collaborative compute credits (likely Colossus H100 equivalents). Signals industry trend: top coding labs need to own both model and product.
 - **Microsoft Partnership Renegotiation (Apr 2026)** — OpenAI ended exclusive distribution agreement with Microsoft, allowing multi-cloud deployment on AWS, Google Cloud, and Oracle. Microsoft retains nonexclusive IP license through 2032 with capped 20% revenue share through 2030. AGI escape clause replaced with fixed timelines. See [[entities/microsoft]] for Microsoft perspective.
