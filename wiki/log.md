@@ -1,3 +1,50 @@
+## [2026-05-08] sitemap-monitor → Block 1: Anthropic Engineering 4件をconcept化
+
+sitemap-monitorが収集したAnthropic Engineering Blogの24件のうち、第1ブロック（4件）をconceptページとしてwiki化。いずれも既存ページと重複のない新規トピック。
+
+**新規作成 (4 pages):**
+- `concepts/claude-think-tool.md` — Claudeの「think」ツール。τ-Benchでbaseline比+54%。Extended Thinkingとの使い分け。2025年12月時点ではExtended Thinking推奨にシフト。
+- `concepts/contextual-retrieval.md` — RAG改善手法。Contextual Embeddings + BM25で検索失敗率-49%、rerankingで-67%。Claudeで文脈自動付加。Prompt Cachingで$1.02/1M doc tokens。
+- `concepts/claude-code-auto-mode.md` — 2層防御（prompt injection probe + transcript classifier）で許可プロンプト最小化。FPR 0.4%、実overeager行動83%捕捉。Deny-and-continue設計。
+- `concepts/claude-code-sandboxing.md` — OSレベルサンドボックス（bubblewrap/seatbelt）。許可プロンプト84%削減。Claude Code on the Web + オープンソース化。
+
+**Sources**: 全件 `raw/articles/2026-05-08_anthropic-engineering_*.md`（sitemap-monitor経由）
+
+**Index**: +4 entries（claude-code-auto-mode, claude-code-sandboxing, claude-think-tool, contextual-retrieval）
+**Page count**: 5259 → 5263
+## [2026-05-08] ingest | Blog ingest: AI coding reliability, xAI/Anthropic deal, Firefox security hardening
+
+235 new articles found from blog scan. 18 saved as raw articles. 2 unsaved articles from Simon Willison's blog saved manually.
+
+**New Concept Pages Created (2):**
+- `concepts/ai-progress-dynamics.md` — Sean Goedecke's analysis: why longer-horizon AI training hasn't slowed progress despite efficiency concerns. Capability compounding, architectural shifts (MoE, RL), emergent capabilities, data quality over quantity.
+- `concepts/mozilla-firefox-ai-hardening.md` — Mozilla used Claude Mythos Preview to find 423 security bugs in Firefox (April 2026), exceeding the entire 2025 total. AI as focused analysis tool vs. AI as code generation tool — contrasting reliability profiles.
+
+**Entity Pages Updated:**
+- `entities/openai.md` — Added Broadcom acquisition section ($73B, June 2026). Implications: infrastructure lock-in, VMware integration challenges, enterprise AI strategy shift, competitive dynamics with Cisco/Microsoft.
+
+**Raw Articles Processed:**
+- `simonwillison.net--2026-may-7-xai-anthropic--9d6f9f29.md` → Updated `concepts/xai-anthropic-colossus-deal.md` (supply chain risk, Musk's control clause, Colossus 2 retention)
+- `simonwillison.net--2026-may-7-firefox-claude-mythos--7d5ece52.md` → New concept page created
+- `seangoedecke.com--why-hasnt-longer-horizon-training-slowed-ai-progress--6cc7ecad.md` → New concept page created
+- `garymarcus.substack.com--p-breaking-news-they-hadnt-figured--c43b3f09.md` → Referenced in ai-coding-reliability
+- `nesbitt.io--2026-05-07-free-as-in-tribbles-html--0097e74f.md` → Andrew Nesbitt entity updated
+- `krebsonsecurity.com--2026-05-canvas-breach-disrupts-schools-colleges-nationwide--3360143f.md` → Not directly AI-relevant (Canvas LMS breach, ShinyHunters group)
+- `xeiaso.net--blog-2026-abstain-from-install--537c535d.md` → Blocked by Anubis bot protection
+- `matduggan.com--the-intolerable-hypocrisy-of-cyberlibertarianism--a57674e0.md` → Tech culture commentary, not directly AI-relevant
+- `simonwillison.net--2026-may-7-llm-gemini--0837d9f9.md` → llm-gemini 0.31 release (gemini-3.1-flash-lite GA)
+- `simonwillison.net--2026-may-7-big-words--bd7f824a.md` → Big Words tool (vibe-coded presentation slide generator)
+- `simonwillison.net--2026-may-7-github-repo-stats--eddef6d3.md` → GitHub Repo Stats tool
+
+**Other Notable Articles (not AI-relevant):**
+- Tedium: Ted Turner CEO bets
+- shkspr.mobi: Paper for Bottom Hole problem
+- johndcook.com: Smoothed polygons
+- entropicthoughts.com: Article previews in RSS
+- dfarq.homeip.net: Intel Pentium II anniversary
+- daringfireball.net: Prolost Watches, cinematic match cut
+- pluralistic.net: Bubbles are REALLY evil
+
 ## [2026-05-08] research | Gwern: Turing完全性の自然発生 → Ambient Agency 理論のwiki化
 
 Gwern Branwen の「Surprisingly Turing-Complete」(2012) と「The Scaling Hypothesis §Ambient Agency」(2020) の思想的連関を wiki に体系化。
