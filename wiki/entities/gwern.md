@@ -14,7 +14,7 @@ tags:
   - forecasting
   - turing-completeness
   - emergence
-  - ai-safety
+  - agent-safety
 sources: []
 ---
 

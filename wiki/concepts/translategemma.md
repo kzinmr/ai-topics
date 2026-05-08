@@ -8,7 +8,7 @@ tags:
   - translation
   - offline-ai
   - google
-  - ollama
+  - local-llm
   - gemma
 aliases:
   - translate-gemma

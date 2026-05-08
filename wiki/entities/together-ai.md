@@ -5,11 +5,10 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - cloud
   - infrastructure
   - open-source
   - inference
-  - gpu
+  - hardware
 aliases: ["Together Compute", "Together Computer Inc."]
 sources:
   - https://www.together.ai/

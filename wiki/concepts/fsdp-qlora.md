@@ -6,9 +6,8 @@ updated: 2026-05-04
 tags:
   - concept
   - fine-tuning
-  - distributed-training
+  - training
   - memory-efficiency
-  - peft
   - quantization
 aliases:
   - FSDP+Q-LoRA

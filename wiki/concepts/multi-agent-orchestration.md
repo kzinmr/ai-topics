@@ -3,7 +3,13 @@ title: Multi-Agent Orchestration
 created: 2026-04-25
 updated: 2026-05-08
 type: concept
-tags: [concept, multi-agent, orchestration, ai-agents, enterprise, governance]
+tags:
+  - concept
+  - multi-agent
+  - orchestration
+  - ai-agents
+  - company
+  - governance
 sources: [raw/articles/2026-05-05_ibm-think-2026-ai-operating-model.md]
 status: complete
 ---

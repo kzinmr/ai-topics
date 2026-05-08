@@ -6,7 +6,7 @@ type: concept
 tags:
   - model
   - openai
-  - api
+  - developer-tooling
   - product
   - multimodal
 aliases:

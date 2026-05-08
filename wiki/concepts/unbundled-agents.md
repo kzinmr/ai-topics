@@ -8,9 +8,9 @@ aliases:
   - agent-unbundling
 tags:
   - concept
-  - agent-architecture
+  - architecture
   - harness-engineering
-  - subagents
+  - ai-agents
   - orchestration
 status: complete
 description: "Architectural pattern where specialist subagents are exposed as Tools within a harness, and the harness becomes a configurable box populated with the exact set of tools, skills, and subagents needed for a task."

@@ -6,8 +6,6 @@ updated: 2026-05-01
 tags:
   - concept
   - training
-  - fsdp
-  - deepspeed
   - ddp
   - infrastructure
 status: L1

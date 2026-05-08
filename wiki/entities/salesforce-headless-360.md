@@ -3,7 +3,13 @@ title: Salesforce Headless 360
 created: 2026-05-05
 updated: 2026-05-05
 type: entity
-tags: [platform, headless-saas, agentic-engineering, mcp, enterprise, product]
+tags:
+  - platform
+  - headless-saas
+  - agentic-engineering
+  - mcp
+  - company
+  - product
 sources: [raw/articles/2026-05-01_salesforce-8-ways-ai-agents-evolving-2026.md, raw/articles/2026-05-05_ai-agent-news-weekly-apr28-may4.md]
 ---
 

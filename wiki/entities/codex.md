@@ -10,7 +10,7 @@ tags:
   - coding-agent
   - openai
   - open-source
-  - cli
+  - developer-tooling
   - ai-agents
 sources:
   - https://github.com/openai/codex

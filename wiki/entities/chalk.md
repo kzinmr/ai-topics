@@ -5,9 +5,8 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - ml-infrastructure
+  - infrastructure
   - feature-platform
-  - real-time
 aliases: ["Chalk AI", "chalk.ai"]
 sources:
   - https://chalk.ai

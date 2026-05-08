@@ -4,7 +4,14 @@ type: concept
 created: 2026-05-08
 updated: 2026-05-08
 status: L2
-tags: [agentic-search, coding-agents, MCP, search-tool, rust, ripgrep, tool-calls]
+tags:
+  - search
+  - coding-agents
+  - MCP
+  - search-tool
+  - developer-tooling
+  - ripgrep
+  - tool-calls
 sources:
   - "[[raw/articles/2026-05-06_entire-improving-agentic-search-in-coding-agents]]"
   - https://github.com/entireio/pgr

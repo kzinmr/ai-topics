@@ -9,7 +9,7 @@ updated: 2026-04-12
 tags:
   - tool
   - agentic-engineering
-  - browser-automation
+  - browser-agent
   - testing
 status: draft
 sources:

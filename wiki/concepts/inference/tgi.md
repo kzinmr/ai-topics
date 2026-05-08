@@ -6,9 +6,8 @@ updated: 2026-05-04
 tags:
   - concept
   - inference
-  - serving
   - huggingface
-  - lora
+  - fine-tuning
   - multi-lora
   - tgi
 aliases:

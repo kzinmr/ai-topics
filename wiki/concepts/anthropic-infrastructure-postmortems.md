@@ -7,7 +7,6 @@ tags:
   - anthropic
   - infrastructure
   - postmortem
-  - reliability
   - incident-analysis
 aliases:
   - Claude quality degradation

@@ -3,7 +3,13 @@ title: Microsoft Agent 365
 created: 2026-05-03
 updated: 2026-05-03
 type: concept
-tags: [agent-governance, enterprise, platform, security, microsoft, ai-agents]
+tags:
+  - agent-governance
+  - company
+  - platform
+  - security
+  - microsoft
+  - ai-agents
 sources: [raw/articles/2026-05-03_microsoft-agent-365-launch.md]
 ---
 

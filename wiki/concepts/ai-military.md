@@ -1,6 +1,12 @@
 ---
 title: "AI in Military Wargames"
-tags: [ai-safety, military, governance, claude, pentagon, mythos]
+tags:
+  - agent-safety
+  - military
+  - governance
+  - anthropic
+  - pentagon
+  - mythos
 created: 2026-04-24
 updated: 2026-05-04
 type: concept

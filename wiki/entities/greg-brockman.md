@@ -9,7 +9,7 @@ tags:
   - openai
   - model
   - coding-agents
-  - ai-infrastructure
+  - infrastructure
 sources: []
 ---
 

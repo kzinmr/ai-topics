@@ -8,7 +8,6 @@ tags:
   - ai
   - local-llm
   - inference
-  - speculative-decoding
   - company
 sources:
   - https://x.com/pupposandro

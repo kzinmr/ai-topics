@@ -3,7 +3,13 @@ title: "entropix"
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [inference, sampling, entropy, llm, reasoning, chain-of-thought, open-source]
+tags:
+  - inference
+  - sampling
+  - entropy
+  - model
+  - reasoning
+  - open-source
 sources: [raw/articles/2024-10-11_thariq-entropix-explained.md]
 ---
 

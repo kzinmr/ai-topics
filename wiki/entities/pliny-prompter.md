@@ -8,10 +8,8 @@ aliases:
 created: 2026-05-08
 updated: 2026-05-08
 tags:
-  - ai-safety
-  - red-teaming
+  - agent-safety
   - jailbreak
-  - prompt-injection
   - adversarial-ml
 related:
   - concepts/ai-red-teaming-careers

@@ -6,7 +6,7 @@ updated: 2026-04-10
 tags:
   - concept
   - security
-  - leak
+  - agent-safety
   - anthropic
 related: [ai-security, open-source, anthropic]
 sources: []

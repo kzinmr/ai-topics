@@ -3,7 +3,15 @@ title: "Claude Managed Agents"
 type: concept
 created: 2026-04-27
 updated: 2026-05-07
-tags: [anthropic, managed-agents, memory-stores, file-system-memory, multi-agent-orchestration, outcomes-loop, dreams, webhooks]
+tags:
+  - anthropic
+  - ai-agents
+  - memory-stores
+  - file-system-memory
+  - orchestration
+  - outcomes-loop
+  - dreams
+  - webhooks
 aliases: [claude-managed-agents, claude-platform-agents]
 related: [[entities/anthropic]], [[concepts/agent-memory]], [[concepts/filesystem-memory]], [[concepts/anthropic-managed-agents]], [[concepts/multi-agent-orchestration]]
 sources:

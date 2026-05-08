@@ -10,7 +10,7 @@ tags:
   - coding-agent
   - open-source
   - minimal
-  - cli
+  - developer-tooling
   - ai-agents
 sources:
   - https://github.com/badlogic/pi-mono

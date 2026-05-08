@@ -3,8 +3,6 @@ title: "Speech AI"
 type: concept
 tags:
   - multimodal
-  - tts
-  - voice
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

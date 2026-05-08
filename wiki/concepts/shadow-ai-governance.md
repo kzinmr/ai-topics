@@ -3,7 +3,12 @@ title: Shadow AI Governance
 created: 2026-05-05
 updated: 2026-05-05
 type: concept
-tags: [governance, ai-agents, security, agent-safety, enterprise]
+tags:
+  - governance
+  - ai-agents
+  - security
+  - agent-safety
+  - company
 sources: [raw/articles/2026-05-04_shadow-ai-governance-crisis.md]
 ---
 

@@ -3,7 +3,14 @@ title: Federated Tiny Training Engine (FTTE)
 created: 2026-05-02
 updated: 2026-05-02
 type: concept
-tags: [training, optimization, inference, edge-computing, privacy, research, distributed]
+tags:
+  - training
+  - optimization
+  - inference
+  - infrastructure
+  - privacy
+  - lab
+  - distributed
 sources:
   - raw/articles/2026-04-29_mit-ftte-federated-learning-edge-devices.md
 ---

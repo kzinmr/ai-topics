@@ -3,7 +3,11 @@ title: KV Cache — Key-Value Caching in Transformer Inference
 created: 2026-04-28
 updated: 2026-04-28
 type: concept
-tags: [architecture, inference, optimization, technique]
+tags:
+  - architecture
+  - inference
+  - optimization
+  - methodology
 sources:
   - raw/articles/crawl-2026-04-28-kv-cache.md
 ---

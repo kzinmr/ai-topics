@@ -4,7 +4,6 @@ type: concept
 tags:
   - model
   - openai
-  - transformer
   - history
 status: active
 created: 2026-04-27

@@ -3,7 +3,13 @@ title: Nemotron Cascade 2
 created: 2026-05-01
 updated: 2026-05-01
 type: entity
-tags: [model, open-source, nvidia, moe, local-llm, coding-agents, reasoning]
+tags:
+  - model
+  - open-source
+  - nvidia
+  - local-llm
+  - coding-agents
+  - reasoning
 sources: [raw/articles/2026-03-16_nvidia-nemotron-cascade-2.md]
 ---
 

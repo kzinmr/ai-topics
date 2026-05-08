@@ -3,7 +3,14 @@ title: Enterprise AI Deployment Joint Ventures
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [concept, enterprise, deployment, ai-agents, openai, anthropic, comparison]
+tags:
+  - concept
+  - company
+  - deployment
+  - ai-agents
+  - openai
+  - anthropic
+  - comparison
 sources: [raw/articles/2026-05-04_techcrunch-anthropic-openai-jv.md, raw/articles/2026-05-04_anthropic-enterprise-ai-services.md, raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md]
 ---
 

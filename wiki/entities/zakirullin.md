@@ -10,7 +10,7 @@ tags:
   - person
   - software-engineering
   - methodology
-  - cognitive-load
+  - context-management
 aliases:
   - Artem Zakirullin
   - zakirullin

@@ -5,10 +5,9 @@ status: draft
 created: 2026-04-23
 updated: 2026-04-23
 tags:
-  - speculative-decoding
-  - local-llm
   - inference
-  - ggml
+  - local-llm
+  - quantization
   - optimization
 sources:
   - https://www.lucebox.com/blog/dflash27b

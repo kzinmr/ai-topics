@@ -1,7 +1,11 @@
 ---
 title: "Sandbox (Agent Sandboxing)"
 type: concept
-tags: [sandbox, agent-security, isolation, mcp]
+tags:
+  - sandbox
+  - agent-safety
+  - isolation
+  - mcp
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

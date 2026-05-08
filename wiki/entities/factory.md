@@ -5,8 +5,8 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - ai-coding
-  - developer-tools
+  - coding-agents
+  - developer-tooling
   - ai-agents
   - software-engineering
 aliases: ["Factory AI", "Factory.ai"]

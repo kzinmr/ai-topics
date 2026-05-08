@@ -10,7 +10,7 @@ tags:
   - harness-engineering
   - agentic-engineering
   - MCP
-  - memory
+  - memory-systems
   - coding-agents
 aliases:
   - capability-layer

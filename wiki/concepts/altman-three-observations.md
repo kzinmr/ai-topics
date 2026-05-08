@@ -10,7 +10,7 @@ updated: 2026-05-07
 tags:
   - concept
   - ai-economics
-  - scaling
+  - optimization
   - cost-deflation
   - agi
   - openai

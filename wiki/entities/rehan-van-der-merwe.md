@@ -3,7 +3,11 @@ title: "Rehan van der Merwe"
 created: 2026-04-16
 updated: 2026-04-16
 type: entity
-tags: [person, ai-agents, devops, architecture]
+tags:
+  - person
+  - ai-agents
+  - developer-tooling
+  - architecture
 aliases: ["rehanvdm", "Rehan van der Merwe"]
 sources:
   - raw/articles/rehanvdm-lambda-monolith-lambdalith-2023.md

@@ -7,8 +7,6 @@ tags:
   - entity
   - model
   - mistral
-  - tts
-  - audio
   - multimodal
 - entity
 - model

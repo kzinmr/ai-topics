@@ -3,7 +3,11 @@ title: "Long-Context via Coding Agents"
 type: concept
 created: 2026-04-09
 updated: 2026-04-09
-tags: [concept, long-context, coding-agents, file-system]
+tags:
+  - concept
+  - context-management
+  - coding-agents
+  - file-system
 related: [coding-agents, context-windows, retrieval-augmented-generation]
 sources: []
 ---

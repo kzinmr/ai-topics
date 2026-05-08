@@ -12,7 +12,7 @@ tags:
   - blogger
   - ai-engineer
   - harness-engineering
-  - agent-architecture
+  - architecture
   - microsoft
 aliases:
   - atalupadhyay

@@ -13,7 +13,7 @@ category: concepts
 sub_category: AI Agent Architecture
 tags:
   - ai-agents
-  - serverless
+  - infrastructure
   - managed-services
   - saas-integration
   - security

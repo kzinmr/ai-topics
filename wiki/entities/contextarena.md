@@ -6,7 +6,7 @@ updated: 2026-05-08
 tags:
   - benchmark
   - evaluation
-  - long-context
+  - context-management
 aliases:
   - contextarena-ai
   - context-arena

@@ -1,6 +1,6 @@
 ---
 title: "Claude Code Source Patterns — Leaked Source Analysis"
-tags: [claude-code-prompt-engineering-context-management-caching-agent-architecture]
+tags: [claude-code, prompting, context-management, agent-architecture]
 created: 2026-04-13
 updated: 2026-04-24
 type: concept

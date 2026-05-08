@@ -1,6 +1,6 @@
 ---
 title: "Speech Models — Overview"
-tags: [speech-audio-asr-tts-voice]
+tags: [multimodal]
 created: 2026-04-19
 updated: 2026-04-19
 ---

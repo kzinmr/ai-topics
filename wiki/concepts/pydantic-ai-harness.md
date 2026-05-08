@@ -5,7 +5,7 @@ description: "Official batteries-included capability library for Pydantic AI age
 category: concepts
 sub_category: AI Agent Architectures
 tags:
-  - pydantic
+  - developer-tooling
   - ai-agents
   - harness-engineering
   - sandbox

@@ -5,10 +5,8 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - cloud
   - infrastructure
-  - serverless
-  - gpu
+  - hardware
 aliases: ["Modal", "Modal Labs, Inc."]
 sources:
   - https://modal.com/

@@ -3,7 +3,13 @@ title: "Noetik"
 type: entity
 created: 2026-04-20
 updated: 2026-04-20
-tags: [company, biotech-ai, cancer-ai, multimodal, transformer, gsk]
+tags:
+  - company
+  - biotech-ai
+  - cancer-ai
+  - multimodal
+  - model
+  - gsk
 aliases: ["ron-alfa", "daniel-bear"]
 related:
  - entities/gary-marcus

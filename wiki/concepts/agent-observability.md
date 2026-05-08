@@ -5,7 +5,7 @@ updated: 2026-05-06
 type: concept
 tags:
   - concept
-  - observability
+  - infrastructure
   - agent-monitoring
   - evaluation
   - ai-agents

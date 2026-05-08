@@ -3,7 +3,12 @@ title: "Daytona"
 type: entity
 created: 2026-04-30
 updated: 2026-04-30
-tags: [entity, company, ai-infra, sandbox, agent-infra]
+tags:
+  - entity
+  - company
+  - infrastructure
+  - sandbox
+  - agent-infra
 related: [ivan-burazin, headless-saas, agent-sandboxing, agent-serverless]
 sources:
   - https://www.daytona.io/

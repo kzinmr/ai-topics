@@ -8,10 +8,8 @@ tags:
   - developer
   - ai
   - search
-  - information-retrieval
   - relevance
   - open-source
-  - author
   - consultant
 sources: []
 ---

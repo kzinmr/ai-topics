@@ -9,7 +9,7 @@ updated: 2026-04-12
 tags:
   - concept
   - agentic-engineering
-  - git
+  - developer-tooling
 status: draft
 sources:
   - "https://simonwillison.net/guides/agentic-engineering-patterns/using-git-with-coding-agents/"

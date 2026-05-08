@@ -5,9 +5,8 @@ created: 2026-05-04
 updated: 2026-05-04
 tags:
   - person
-  - venture-capital
+  - company
   - sequoia
-  - investor
   - service-as-software
 aliases:
   - "@JulienBek"

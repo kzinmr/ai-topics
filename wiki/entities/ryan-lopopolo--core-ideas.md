@@ -9,7 +9,7 @@ tags:
   - harness-engineering
   - ai-agents
   - agentic-engineering
-  - elixir
+  - developer-tooling
   - symphony
 sources: []
 ---

@@ -6,12 +6,11 @@ updated: 2026-04-27
 tags:
   - memory-systems
   - agentic-engineering
-  - chatgpt
+  - openai
   - anthropic
   - cognition
-  - devin
-  - openai
-  - managed-agents
+  - coding-agents
+  - ai-agents
 sources:
   - url: "https://www.shloked.com/writing/chatgpt-memory-bitter-lesson"
     author: "Shlok Khemani"

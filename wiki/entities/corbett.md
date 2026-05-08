@@ -10,7 +10,7 @@ tags:
   - fine-tuning
   - training
   - openpipe
-  - coreweave
+  - infrastructure
 - x-account
 - ai
 - startups

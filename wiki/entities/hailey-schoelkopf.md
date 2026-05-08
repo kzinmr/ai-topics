@@ -16,7 +16,6 @@ tags:
   - evaluation
   - lm-eval
   - eleutherai
-  - ml-researcher
 sources:
   - https://haileyschoelkopf.github.io/
   - https://scholar.google.com/citations?user=XLahYIYAAAAJ

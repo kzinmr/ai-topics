@@ -3,7 +3,14 @@ title: "GLiClass"
 type: concept
 created: 2026-05-01
 updated: 2026-05-01
-tags: [zero-shot-classification, text-classification, encoder-only, efficiency, open-source, multilingual, knowledgator]
+tags:
+  - zero-shot-classification
+  - text-classification
+  - encoder-only
+  - optimization
+  - open-source
+  - multilingual
+  - knowledgator
 aliases: ["GLiClass-V3", "GLiClass-Instruct", "GLiClass-Multilang", "gliclass"]
 sources:
   - https://arxiv.org/abs/2508.07662

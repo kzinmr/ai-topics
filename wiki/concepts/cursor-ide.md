@@ -1,7 +1,11 @@
 ---
 title: "Cursor IDE"
 type: concept
-tags: [cursor, ide, coding-agent, ai-development]
+tags:
+  - coding-agents
+  - developer-tooling
+  - coding-agent
+  - ai-development
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

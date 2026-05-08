@@ -6,7 +6,7 @@ updated: 2026-04-16
 tags:
   - concept
   - evaluation
-  - agents
+  - ai-agents
   - benchmark
   - pvp
 - concept

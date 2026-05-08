@@ -5,11 +5,10 @@ created: 2026-05-04
 updated: 2026-05-06
 tags:
   - person
-  - researcher
   - ai-skeptic
   - healthcare
   - cognitive-science
-  - autonomous-agents
+  - ai-agents
   - ai-governance
 sources:
   - https://garymarcus.substack.com/

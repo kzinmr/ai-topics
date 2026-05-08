@@ -3,7 +3,16 @@ title: "ds4.c — DeepSeek V4 Flash Metal 推論エンジン"
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [local-llm, apple-silicon, metal, inference, deepseek-v4, quantization, coding-agent, tool, open-source]
+tags:
+  - local-llm
+  - hardware
+  - metal
+  - inference
+  - deepseek-v4
+  - quantization
+  - coding-agent
+  - tool
+  - open-source
 aliases: [ds4, ds4-deepseek-flash-metal, deepseek-v4-flash-metal]
 related:
   - concepts/deepseek-v4

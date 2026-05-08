@@ -3,7 +3,16 @@ title: DeepSeek-V3
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [model, mixture-of-experts, multi-token-prediction, fp8-training, speculative-decoding, load-balancing, training, benchmark, open-source, deepseek]
+tags:
+  - model
+  - multi-token-prediction
+  - fp8-training
+  - inference
+  - infrastructure
+  - training
+  - benchmark
+  - open-source
+  - deepseek
 sources:
   - raw/papers/2024-12-27_2412.19437_deepseek-v3-technical-report.md
   - https://arxiv.org/abs/2412.19437

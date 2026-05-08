@@ -2,7 +2,11 @@
 title: "KV Cache Compaction"
 created: 2026-04-27
 updated: 2026-04-27
-tags: [multi-agent, kv-cache, token-efficiency, attention]
+tags:
+  - multi-agent
+  - kv-cache
+  - token-efficiency
+  - model
 aliases: [kv-cache-compaction, attention-matching-compaction]
 related: [[concepts/latent-briefing]], [[concepts/multi-agent-systems]], [[concepts/context-management]], [[entities/ramp-labs]]
 sources: [

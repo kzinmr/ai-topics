@@ -3,7 +3,12 @@ title: GRPO (Group Relative Policy Optimization)
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [reinforcement-learning, grpo, reasoning, training, alignment, deepseek]
+tags:
+  - reinforcement-learning
+  - training
+  - reasoning
+  - alignment
+  - deepseek
 sources:
   - raw/papers/2025-01-22_2501.12948_deepseek-r1.md
   - https://arxiv.org/abs/2501.12948

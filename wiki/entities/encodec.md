@@ -3,7 +3,7 @@ title: EnCodec
 type: entity
 tags:
   - entity
-  - audio-codec
+  - multimodal
   - neural-audio
   - model
   - meta

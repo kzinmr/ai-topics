@@ -7,7 +7,7 @@ tags:
   - entity
   - company
   - coding-agents
-  - devtools
+  - developer-tooling
   - ai-agents
 aliases:
   - "Cursor"

@@ -8,9 +8,8 @@ status: L2
 tags:
   - entity
   - coding-agent
-  - enterprise
-  - cli
-  - ide
+  - company
+  - developer-tooling
   - ci-cd
   - ai-agents
 sources:

@@ -5,7 +5,12 @@ status: incomplete
 description: "Agentic security encompasses the security patterns, protocols, and tools for protecting AI agents, MCP servers, and the agent-to-API communication layer."
 created: 2026-04-27
 updated: 2026-04-28
-tags: [concept, security, agents, mcp, api-security]
+tags:
+  - concept
+  - security
+  - ai-agents
+  - mcp
+  - api-security
 aliases: [AI agent security, MCP security, agent stack security]
 related: [[concepts/model-context-protocol-mcp]], [[entities/salt-security]], [[concepts/sandbox]], [[concepts/ai-agent-traps]]
 ---

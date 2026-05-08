@@ -8,7 +8,7 @@ tags:
   - llm-tools
   - datasette
   - data-analysis
-  - simon-willison
+  - person
 sources:
   - https://simonwillison.net/2026/May/5/datasette-llm/
 ---

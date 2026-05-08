@@ -10,7 +10,7 @@ tags:
   - coding-agent
   - harness
   - open-source
-  - typescript
+  - developer-tooling
 aliases: [pi-coding-agent, pi-agent]
 ---
 This page has been consolidated into [[entities/pi]]. See that page for the comprehensive Pi entity page.

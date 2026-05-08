@@ -3,7 +3,13 @@ title: Amazon Bedrock AgentCore
 created: 2026-05-03
 updated: 2026-05-03
 type: entity
-tags: [platform, aws, enterprise, ai-agents, agent-harness, infrastructure, serverless]
+tags:
+  - platform
+  - aws
+  - company
+  - ai-agents
+  - harness-engineering
+  - infrastructure
 sources: [raw/articles/2026-05-03_amazon-bedrock-agentcore.md]
 ---
 

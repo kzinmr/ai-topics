@@ -3,7 +3,12 @@ title: "Speculative Decoding"
 created: 2026-04-18
 updated: 2026-05-05
 type: concept
-tags: [inference, optimization, technique, architecture, speculative-decoding, multi-token-prediction]
+tags:
+  - inference
+  - optimization
+  - methodology
+  - architecture
+  - multi-token-prediction
 aliases: [speculative-sampling, assisted-generation, drafter-verifier, mtp-drafters]
 sources:
   - raw/articles/2025-10-09_vllm-speculative-decoding-blog.md

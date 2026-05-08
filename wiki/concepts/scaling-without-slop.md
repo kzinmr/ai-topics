@@ -3,7 +3,12 @@ title: "Scaling without Slop"
 type: concept
 created: 2026-04-10
 updated: 2026-04-10
-tags: [concept, scaling, training, data-quality, model-quality]
+tags:
+  - concept
+  - optimization
+  - training
+  - data-quality
+  - model-quality
 related: [model-training, data-curation, quality-over-quantity]
 sources: []
 ---

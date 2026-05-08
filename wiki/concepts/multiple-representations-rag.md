@@ -6,7 +6,7 @@ updated: 2026-04-30
 tags:
   - concept
   - rag
-  - information-retrieval
+  - search
   - architecture
 aliases:
   - multiple-representations-rag

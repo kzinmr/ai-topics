@@ -6,7 +6,7 @@ updated: 2026-05-08
 tags:
   - evaluation
   - infrastructure
-  - benchmarking
+  - benchmark
   - coding-agents
 aliases:
   - infra noise evals

@@ -3,7 +3,7 @@ title: Descript Audio Codec (DAC)
 type: entity
 tags:
   - entity
-  - audio-codec
+  - multimodal
   - neural-audio
   - model
   - descriptive

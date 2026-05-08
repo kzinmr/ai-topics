@@ -11,7 +11,7 @@ tags:
   - concept
   - philosophy
   - language
-  - rlhf
+  - fine-tuning
   - cognition
 status: complete
 description: "LLMとの日常的な対話が人間の言語認識に与える認知現象と、QC（Qiaochu Yuan）が提唱した言語の真正性に関する概念群。言語的めまい、頭の言葉と身体の言葉の二元論、LLMをトレーサー色素とする社会診断法など。"

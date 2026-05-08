@@ -29,15 +29,14 @@ sources: [raw/articles/source-name.md]
 - `concept`, `entity`, `comparison`, `query`, `summary`, `coding-agent`, `memory-system`
 
 ### Primary Categories
-- **Models**: model, multimodal, text-generation, image-generation, local-llm, sglang, reasoning, reinforcement-learning
-- **People/Orgs**: person, company, lab, open-source, anthropic, openai, google, huggingface, nvidia, langchain, pytorch
-- **Philosophy**: singularity, transhumanism, ai-safety, rationality, techno-optimism, techno-pessimism
-- **Products**: product, platform, tool, service, protocol, framework, claude-code, mcp, dspy
-- **Techniques**: inference, fine-tuning, training, optimization, quantization, alignment, benchmark, evaluation, speculative-decoding, diffusion, prompting, rag, kv-cache, testing, sandbox
-- **Engineering**: agentic-engineering, harness-engineering, ai-agent-engineering, context-engineering, context-management, multi-llm, workflow, software-engineering, formal-methods
-- **AI Agents**: ai-agents, multi-agent, orchestration, agents, coding-agents, memory-systems, agent-safety, openclaw
-- **Infrastructure**: platform, protocol, security, architecture, infrastructure, hardware, aws, database, serverless, isolation, nlp
-| **Meta**: comparison, timeline, controversy, prediction, review, safety, blogger, developer-tooling, ecosystem, search, methodology, governance, reliability, automation
+- **Models**: model, multimodal, text-generation, image-generation, local-llm, sglang, reasoning, reinforcement-learning, mixture-of-experts, moe, rlm, long-context, neurosymbolic, interpretability
+- **People/Orgs**: person, company, lab, open-source, anthropic, openai, google, huggingface, nvidia, langchain, pytorch, microsoft, deepseek, mistral, qwen, alibaba, xai, databricks, ibm, eleutherai, nous-research
+- **Products**: product, platform, tool, service, protocol, framework, claude-code, mcp, dspy, browser-agent, managed-agents, ai-native, browser-automation
+- **Techniques**: inference, fine-tuning, training, optimization, quantization, alignment, benchmark, evaluation, speculative-decoding, diffusion, prompting, rag, kv-cache, testing, sandbox, synthetic-data, distillation, post-training, distributed-training, grpo, rlhf, dpo, lora, peft, chain-of-thought, scaling, embeddings, data-science, information-retrieval
+- **Engineering**: agentic-engineering, harness-engineering, ai-agent-engineering, context-engineering, context-management, multi-llm, workflow, software-engineering, formal-methods, developer-tooling, cli, ide, api, git, filesystem, docker, pydantic, observability, monitoring, reliability, devops, mlops, ml-engineering, cloud, serverless, ai-infrastructure
+- **AI Agents**: ai-agents, multi-agent, orchestration, agents, coding-agents, memory-systems, agent-safety, openclaw, agent-harness, agent-architecture, agent-evaluation, agent-security, agent-communication, autonomous-agents, subagents, computer-use, human-in-the-loop, tool-use, cognition, durable-execution
+- **Infrastructure**: platform, protocol, security, architecture, infrastructure, hardware, aws, database, isolation, nlp, networking, gpu, vram, apple-silicon
+- **Meta**: comparison, timeline, controversy, prediction, review, safety, blogger, developer-tooling, ecosystem, search, methodology, governance, reliability, automation, hn-popular, x-account, education, philosophy, economics, privacy, regulation, policy, ethics, ai-adoption, ai-governance, agi, career, writing, blog, robotics, fintech, china, reverse-engineering, emerging, curriculum, product-management, ai-native
 
 ### Guidelines
 - Every tag must be a useful category — avoid one-off tags that just restate the page title

@@ -3,7 +3,10 @@ title: DFlash
 created: 2026-04-26
 updated: 2026-04-26
 type: concept
-tags: [inference, optimization, speculative-decoding, diffusion]
+tags:
+  - inference
+  - optimization
+  - diffusion
 sources: [raw/articles/dflash-z-lab-arxiv-2602-06036.md]
 ---
 # DFlash

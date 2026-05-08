@@ -4,7 +4,14 @@ type: concept
 created: 2026-05-04
 updated: 2026-05-04
 status: Level2
-tags: [course, curriculum, implementation, llm-training, triton, scaling-laws, alignment]
+tags:
+  - course
+  - curriculum
+  - implementation
+  - training
+  - triton
+  - scaling-laws
+  - alignment
 aliases: [cs336, language-modeling-from-scratch, hashimoto-liang-course]
 sources:
   - https://stanford-cs336.github.io/spring2025/

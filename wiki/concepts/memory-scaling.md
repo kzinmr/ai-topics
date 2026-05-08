@@ -6,7 +6,7 @@ type: concept
 tags:
   - concept
   - memory-systems
-  - scaling
+  - optimization
   - ai-agents
   - architecture
   - inference

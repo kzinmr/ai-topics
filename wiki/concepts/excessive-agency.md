@@ -3,7 +3,11 @@ title: "Excessive Agency in AI Agents"
 created: 2026-04-24
 updated: 2026-04-24
 type: concept
-tags: [agent-security, owasp, excessive-agency, vulnerability, zero-trust]
+tags:
+  - agent-safety
+  - owasp
+  - vulnerability
+  - security
 sources:
   - raw/articles/crawl-2026-04-24-zero-trust-agent-security-auth0.md
 ---

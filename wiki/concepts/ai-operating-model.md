@@ -3,7 +3,13 @@ title: AI Operating Model
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [concept, enterprise, infrastructure, governance, ai-agents, architecture]
+tags:
+  - concept
+  - company
+  - infrastructure
+  - governance
+  - ai-agents
+  - architecture
 sources: [raw/articles/2026-05-05_ibm-think-2026-ai-operating-model.md]
 ---
 

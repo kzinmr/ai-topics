@@ -3,7 +3,12 @@ title: "Tool-Use Tax"
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [ai-agents, inference, evaluation, prompting, agent-harness]
+tags:
+  - ai-agents
+  - inference
+  - evaluation
+  - prompting
+  - harness-engineering
 sources: [raw/articles/2026-04-30_arxiv-tool-use-tax-llm-agents.md]
 ---
 

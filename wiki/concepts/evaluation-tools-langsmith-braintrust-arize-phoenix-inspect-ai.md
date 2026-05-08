@@ -10,7 +10,7 @@ tags:
   - tools
   - comparison
   - braintrust
-  - langsmith
+  - langchain
   - arize-phoenix
   - inspect-ai
 status: enrichment

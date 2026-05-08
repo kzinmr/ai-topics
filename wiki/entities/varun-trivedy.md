@@ -7,8 +7,8 @@ updated: 2026-04-10
 tags:
   - person
   - ai
-  - ml-engineering
-  - agents
+  - infrastructure
+  - ai-agents
   - langchain
   - harness-engineering
   - evaluation

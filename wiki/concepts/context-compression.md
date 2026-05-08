@@ -3,7 +3,11 @@ title: "Context Compression Techniques"
 created: 2026-04-18
 updated: 2026-04-18
 type: concept
-tags: [context-management, optimization, technique, inference]
+tags:
+  - context-management
+  - optimization
+  - methodology
+  - inference
 sources: [raw/articles/crawl-2026-04-18-context-compression.md]
 ---
 

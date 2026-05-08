@@ -10,7 +10,7 @@ tags:
   - one-person-unicorn
   - context-engineering
   - vibe-ceo
-  - startup
+  - company
 aliases: [solopreneur-stack, solo-founder-ai-stack, one-person-unicorn]
 ---
 

@@ -4,7 +4,12 @@ type: concept
 created: 2026-05-04
 updated: 2026-05-04
 status: Level2
-tags: [curriculum, meta-knowledge, roadmap, llm-education, generative-ai]
+tags:
+  - curriculum
+  - meta-knowledge
+  - roadmap
+  - llm-education
+  - model
 aliases: [willccbb-handbook, genai-roadmap]
 sources:
   - https://genai-handbook.github.io

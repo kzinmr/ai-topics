@@ -7,9 +7,9 @@ tags:
   - concept
   - quantization
   - library
-  - cuda
+  - inference
   - nf4
-  - qlora
+  - fine-tuning
 status: L2
 sources:
   - https://huggingface.co/docs/bitsandbytes/en/reference/nn/linear4bit

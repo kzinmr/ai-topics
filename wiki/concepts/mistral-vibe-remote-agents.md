@@ -3,7 +3,12 @@ title: "Mistral Medium 3.5 and Vibe Remote Agents"
 created: 2026-05-06
 updated: 2026-05-06
 type: concept
-tags: [model, coding-agents, mistral, cloud, orchestration]
+tags:
+  - model
+  - coding-agents
+  - mistral
+  - infrastructure
+  - orchestration
 sources:
   - raw/articles/mistral-medium-3-5-vibe-remote-agents.md
   - https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5

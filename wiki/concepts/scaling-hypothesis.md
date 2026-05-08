@@ -11,9 +11,9 @@ created: 2026-04-25
 updated: 2026-05-07
 tags:
   - concept
-  - scaling
+  - optimization
   - agi-theory
-  - gwern
+  - person
   - bitter-lesson
   - emergent-abilities
   - pretraining-thesis

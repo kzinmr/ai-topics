@@ -10,7 +10,7 @@ updated: 2026-04-12
 tags:
   - concept
   - agentic-engineering
-  - karpathy
+  - person
   - autonomous-research
 status: draft
 sources:

@@ -5,11 +5,10 @@ updated: 2026-05-06
 type: entity
 tags:
   - entity
-  - devtools
+  - developer-tooling
   - framework
   - ai-agents
   - open-source
-  - typescript
 aliases:
   - "Flue.js"
 related:

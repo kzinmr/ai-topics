@@ -14,7 +14,7 @@ tags:
   - datasets
   - huggingface
   - digital-humanities
-  - synthetic-data
+  - training
   - open-source
 sources:
   - https://danielvanstrien.xyz/ai-patterns-for-glam/

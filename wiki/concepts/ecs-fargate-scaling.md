@@ -3,7 +3,13 @@ title: "ECS Fargate Scaling"
 type: concept
 created: "2026-04-16"
 updated: "2026-04-16"
-tags: [aws, ecs, fargate, lambda, scaling, container-orchestration]
+tags:
+  - aws
+  - ecs
+  - fargate
+  - lambda
+  - optimization
+  - container-orchestration
 aliases: ["ECS scaling", "Fargate auto-scaling", "Container scaling"]
 sources: ["https://rehanvdm.com/blog/scaling-ecs-fargate-like-lambda/"]
 status: "draft"

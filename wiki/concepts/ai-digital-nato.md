@@ -3,7 +3,15 @@ title: "AI Digital NATO — Frontier Model Forum Distillation Alliance"
 type: concept
 created: 2026-04-13
 updated: 2026-04-24
-tags: [concept, geopolitics, model-distillation, frontier-model-forum, china, openai, anthropic, google]
+tags:
+  - concept
+  - geopolitics
+  - training
+  - frontier-model-forum
+  - china
+  - openai
+  - anthropic
+  - google
 aliases: ["AI Digital NATO", "Frontier Model Forum distillation alliance", "adversarial distillation", "US labs cooperation against China AI"]
 related:
   - concepts/anthropic-openclaw-conflict

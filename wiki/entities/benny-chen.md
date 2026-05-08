@@ -6,10 +6,9 @@ updated: 2026-05-02
 tags:
   - entity
   - person
-  - ml-infrastructure
+  - infrastructure
   - inference
   - open-weight-models
-  - entrepreneur
 aliases:
   - Benny Chen
   - @bennychen  # speculative handle

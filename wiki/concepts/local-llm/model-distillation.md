@@ -9,7 +9,6 @@ tags:
   - concept
   - local-llm
   - model-compression
-  - distillation
   - training
   - open-source
 related:

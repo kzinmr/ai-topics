@@ -9,9 +9,8 @@ tags:
   - person
   - x-account
   - ai
-  - ml-engineering
-  - inference
   - infrastructure
+  - inference
   - developer-advocacy
 
 ---

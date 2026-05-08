@@ -3,7 +3,10 @@ title: Palo Alto Networks
 created: 2026-05-05
 updated: 2026-05-05
 type: entity
-tags: [company, security, enterprise, agent-safety]
+tags:
+  - company
+  - security
+  - agent-safety
 sources: [raw/articles/2026-05-05_ai-agent-news-weekly-apr28-may4.md]
 ---
 

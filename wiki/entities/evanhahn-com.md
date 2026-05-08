@@ -4,6 +4,14 @@ type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
+  - person
+  - blogger
+  - open-source-maintainer
+  - web-security
+  - node-js
+  - developer-tooling
+  - helmet-js
+  - ghost
 - person
 - blogger
 - open-source-maintainer

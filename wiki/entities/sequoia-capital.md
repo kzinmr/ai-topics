@@ -5,8 +5,7 @@ created: 2026-05-04
 updated: 2026-05-04
 tags:
   - entity
-  - venture-capital
-  - investor
+  - company
   - ai-investment
 aliases:
   - sequoia

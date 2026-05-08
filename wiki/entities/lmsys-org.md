@@ -2,7 +2,7 @@
 title: "LMSYS Org"
 type: entity
 tags:
-  - organization
+  - company
   - lab
   - uc-berkeley
   - sglang

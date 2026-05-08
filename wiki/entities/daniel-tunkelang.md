@@ -6,13 +6,11 @@ updated: 2026-05-05
 tags:
   - person
   - search
-  - information-retrieval
   - query-understanding
   - e-commerce
   - faceted-search
   - hcir
   - data-science
-  - author
 aliases:
   - dtunkelang
 sources:

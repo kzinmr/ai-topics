@@ -3,7 +3,14 @@ title: "Noumena Network"
 created: 2026-05-08
 updated: 2026-05-08
 type: entity
-tags: [company, lab, moe, training, infrastructure, agents, open-source]
+tags:
+  - company
+  - lab
+  - model
+  - training
+  - infrastructure
+  - ai-agents
+  - open-source
 sources: [raw/articles/2026-03-14_noumena-research-12-posts.md]
 ---
 

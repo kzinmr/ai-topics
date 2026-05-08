@@ -3,7 +3,14 @@ title: "SQS Lambda ESM Scaling"
 type: concept
 created: "2026-04-16"
 updated: "2026-04-16"
-tags: [aws, sqs, lambda, esm, scaling, backpressure, task-queue]
+tags:
+  - aws
+  - sqs
+  - lambda
+  - esm
+  - optimization
+  - infrastructure
+  - task-queue
 aliases: ["ESM scaling", "Lambda Event Source Mapping", "SQS scaling behavior"]
 sources: ["https://rehanvdm.com/blog/sqs-lambda-esm-scaling-behaviour/"]
 status: "draft"

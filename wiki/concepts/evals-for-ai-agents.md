@@ -5,7 +5,7 @@ created: 2026-04-25
 updated: 2026-05-08
 tags:
   - evaluation
-  - agent-architecture
+  - architecture
   - methodology
   - testing
 aliases:

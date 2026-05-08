@@ -9,7 +9,7 @@ tags:
   - non-human-identity
   - security
   - authorization
-  - saas
+  - product
   - oauth
 status: complete
 created: 2026-04-30

@@ -3,7 +3,12 @@ title: Google Project Mariner Shutdown
 created: 2026-05-06
 updated: 2026-05-06
 type: concept
-tags: [agent, google, browser-automation, shutdown, controversy]
+tags:
+  - ai-agents
+  - google
+  - browser-agent
+  - shutdown
+  - controversy
 sources:
   - raw/articles/2026-05-06_wired-google-project-mariner-shakeup.md
   - raw/articles/google-project-mariner-shutdown.md

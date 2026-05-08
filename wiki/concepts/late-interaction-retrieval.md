@@ -7,7 +7,7 @@ tags:
   - concept
   - rag
   - colbert
-  - information-retrieval
+  - search
 aliases:
   - late-interaction-retrieval
   - p4-late-interaction

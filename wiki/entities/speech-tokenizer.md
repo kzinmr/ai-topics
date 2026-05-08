@@ -3,7 +3,7 @@ title: SpeechTokenizer
 type: entity
 tags:
   - entity
-  - audio-codec
+  - multimodal
   - speech-tokenizer
   - model
   - speech-llm

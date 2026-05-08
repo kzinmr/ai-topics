@@ -11,7 +11,7 @@ tags:
   - knowledge-retrieval
   - banking
   - fintech
-  - agent-evaluation
+  - evaluation
   - sierra
 sources:
   - raw/papers/2026-03-04_2603.04370_tau-knowledge-unstructured-knowledge.md

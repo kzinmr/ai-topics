@@ -6,7 +6,7 @@ type: concept
 tags:
   - concept
   - ai-business-model
-  - venture-capital
+  - company
   - service-as-software
   - ai-economics
 aliases:

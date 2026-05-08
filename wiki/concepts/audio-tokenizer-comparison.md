@@ -10,7 +10,6 @@ created: 2026-05-01
 updated: 2026-05-01
 tags:
   - concept
-  - audio
   - multimodal
   - model
   - codec

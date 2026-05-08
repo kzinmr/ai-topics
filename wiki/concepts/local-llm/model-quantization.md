@@ -9,7 +9,6 @@ tags:
   - concept
   - local-llm
   - quantization
-  - gptq
   - optimization
 related:
 - "[[concepts/local-llm/gguf]]"

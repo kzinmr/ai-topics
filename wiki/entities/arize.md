@@ -3,10 +3,9 @@ title: "Arize AI"
 tags:
   - company
   - ai-observability
-  - llm-evaluation
+  - evaluation
   - agent-monitoring
   - open-source
-  - enterprise-ai
 created: 2026-04-20
 updated: 2026-05-02
 type: entity

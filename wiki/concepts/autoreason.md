@@ -7,7 +7,7 @@ tags:
   - reasoning
   - lab
   - nous-research
-  - karpathy
+  - person
 aliases: ["AutoReason", "Autoreasoning"]
 sources:
   - https://github.com/NousResearch/autoreason

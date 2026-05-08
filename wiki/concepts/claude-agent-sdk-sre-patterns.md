@@ -1,6 +1,6 @@
 ---
 title: "Claude Agent SDK — SRE Agent Pattern"
-tags: [claude-agent-sdk-mcp-sre-automation-safety-guardrails]
+tags: [claude-code, mcp, automation, agent-safety]
 created: 2026-04-24
 updated: 2026-04-24
 type: concept

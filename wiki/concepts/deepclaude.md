@@ -3,7 +3,12 @@ title: DeepClaude - Claude Code Agent Loop with DeepSeek V4 Pro
 created: 2026-05-06
 updated: 2026-05-06
 type: concept
-tags: [agent, interoperability, deepseek, claude-code, orchestration]
+tags:
+  - ai-agents
+  - interoperability
+  - deepseek
+  - claude-code
+  - orchestration
 sources:
   - raw/articles/deepclaude-may-2026.md
 ---

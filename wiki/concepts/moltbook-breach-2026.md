@@ -15,7 +15,7 @@ tags:
   - openclaw
   - moltbook
   - supabase
-  - agent-security
+  - agent-safety
   - real-world-exploit
 related:
   - entities/openclaw

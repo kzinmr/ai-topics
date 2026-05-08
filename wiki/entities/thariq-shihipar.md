@@ -10,7 +10,7 @@ tags:
   - company
   - tech
   - anthropic
-  - agents
+  - ai-agents
   - mit-media-lab
   - interpretability
 sources: []

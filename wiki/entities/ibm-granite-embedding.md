@@ -10,7 +10,7 @@ tags:
   - embedding
   - multilingual
   - open-source
-  - retrieval
+  - rag
 aliases:
   - granite-embedding
   - ibm-granite-embedding

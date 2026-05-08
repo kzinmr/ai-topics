@@ -13,10 +13,8 @@ tags:
   - x-account
   - ai
   - structured-outputs
-  - pydantic
-  - instructor
-  - model
   - developer-tooling
+  - model
   - rag
   - context-engineering
   - evaluation

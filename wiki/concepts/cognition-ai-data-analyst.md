@@ -10,7 +10,7 @@ updated: 2026-05-07
 tags:
   - concept
   - cognition
-  - devin
+  - coding-agents
   - dana
   - data-analysis
   - mcp

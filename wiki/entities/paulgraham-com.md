@@ -8,7 +8,7 @@ tags:
   - blogger
   - hn-popular
   - company
-  - lisp
+  - developer-tooling
   - essayist
 - person
 - blogger

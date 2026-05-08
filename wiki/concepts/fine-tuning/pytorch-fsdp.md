@@ -7,10 +7,7 @@ tags:
   - fine-tuning
   - training
   - pytorch
-  - fsdp
   - sharding
-  - distributed-training
-  - peft
 related:
   - concepts/fine-tuning/_index
   - concepts/fine-tuning/axolotl

@@ -8,7 +8,7 @@ tags:
   - safety
   - formal-methods
   - model
-  - reliability
+  - infrastructure
 aliases: ["vericoding", "llm-formal-verification", "proof-assistants-llm"]
 sources:
  - path: raw/articles/crawl-2026-04-21-kleppmann-formal-verification-ai.md

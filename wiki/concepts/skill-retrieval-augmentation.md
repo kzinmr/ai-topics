@@ -6,7 +6,7 @@ updated: 2026-04-30
 tags:
   - ai-agents
   - skill-retrieval
-  - information-retrieval
+  - search
   - harness-engineering
   - sra
 aliases:

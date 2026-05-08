@@ -1,6 +1,11 @@
 ---
 title: "turbopuffer"
-tags: [entity, service, vector-database, search, object-storage]
+tags:
+  - entity
+  - service
+  - vector-database
+  - search
+  - protocol
 created: 2026-05-07
 updated: 2026-05-07
 team:

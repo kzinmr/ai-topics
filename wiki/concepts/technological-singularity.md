@@ -3,7 +3,12 @@ title: Technological Singularity
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [singularity, ai-safety, prediction, transhumanism, intelligence]
+tags:
+  - singularity
+  - agent-safety
+  - prediction
+  - transhumanism
+  - intelligence
 sources: [raw/articles/1996_yudkowsky_staring-into-the-singularity.md]
 ---
 

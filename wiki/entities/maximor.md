@@ -2,10 +2,9 @@
 title: "Maximor"
 tags:
   - company
-  - ai-agent
+  - ai-agents
   - fintech
   - finance-automation
-  - enterprise-ai
 created: 2026-04-20
 updated: 2026-05-02
 type: entity

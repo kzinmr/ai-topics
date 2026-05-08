@@ -8,8 +8,7 @@ tags:
   - anthropic
   - model
   - security
-  - red-team
-  - dual-use
+  - agent-safety
   - agentic-harness
   - firefox
 aliases: ["mythos preview", "anthropic frontier red team 2026"]

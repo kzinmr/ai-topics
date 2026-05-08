@@ -4,7 +4,15 @@ type: concept
 created: 2026-05-04
 updated: 2026-05-04
 status: Level2
-tags: [course, curriculum, llm-applications, prompt-engineering, rag, agents, multimodal, safety]
+tags:
+  - course
+  - curriculum
+  - llm-applications
+  - prompting
+  - rag
+  - ai-agents
+  - multimodal
+  - safety
 aliases: [cmu-llms, llm-methods-applications]
 sources:
   - https://cmu-llms.org/schedule/

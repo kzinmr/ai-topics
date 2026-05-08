@@ -4,6 +4,10 @@ type: concept
 created: 2026-04-16
 updated: 2026-04-16
 tags:
+  - concept
+  - safety
+  - alignment
+  - training
 - concept
 - safety
 - alignment

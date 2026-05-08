@@ -10,7 +10,7 @@ tags:
   - profiling
   - debugging
   - oom
-  - vram
+  - hardware
   - infrastructure
 status: L1
 aliases:

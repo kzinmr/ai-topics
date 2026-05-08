@@ -6,8 +6,6 @@ type: concept
 tags:
   - evaluation
   - agent-safety
-  - adversarial
-  - agent-security
   - testing
 sources:
   - raw/articles/crawl-2026-04-24-microsoft-red-teaming-agents.md

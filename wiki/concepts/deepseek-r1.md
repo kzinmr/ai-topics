@@ -3,7 +3,14 @@ title: DeepSeek-R1
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [model, reasoning, reinforcement-learning, grpo, distillation, chain-of-thought, benchmark, deepseek, nature]
+tags:
+  - model
+  - reasoning
+  - reinforcement-learning
+  - training
+  - benchmark
+  - deepseek
+  - nature
 sources:
   - raw/papers/2025-01-22_2501.12948_deepseek-r1.md
   - https://arxiv.org/abs/2501.12948

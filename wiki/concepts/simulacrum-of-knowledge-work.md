@@ -5,7 +5,7 @@ updated: 2026-05-02
 tags:
   - concept
   - ai-in-workplace
-  - llm-evaluation
+  - evaluation
   - incentive-design
 aliases:
   - simulacrum-of-knowledge-work

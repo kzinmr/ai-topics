@@ -7,7 +7,7 @@ tags:
   - entity
   - company
   - platform
-  - devtools
+  - developer-tooling
   - open-source
   - security
 aliases:

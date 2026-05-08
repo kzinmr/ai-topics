@@ -5,10 +5,9 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - claude-code
-  - sandboxing
+  - sandbox
   - agent-safety
   - security
-  - prompt-injection
 aliases:
   - Claude Code sandbox
   - Claude sandboxed bash

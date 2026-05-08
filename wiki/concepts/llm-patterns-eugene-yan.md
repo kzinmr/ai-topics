@@ -6,7 +6,7 @@ updated: 2026-05-04
 tags:
   - concept
   - llm-patterns
-  - evals
+  - evaluation
   - rag
   - fine-tuning
   - production-llm

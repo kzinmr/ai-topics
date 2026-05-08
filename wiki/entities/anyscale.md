@@ -5,7 +5,7 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - ai-infrastructure
+  - infrastructure
   - distributed-computing
   - open-source
 aliases: ["Anyscale"]

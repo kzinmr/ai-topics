@@ -9,7 +9,7 @@ tags:
   - policy-gradient
   - kl-regularization
   - reasoning
-  - rlhf
+  - fine-tuning
 aliases:
   - RPG
   - Regularized Policy Gradient

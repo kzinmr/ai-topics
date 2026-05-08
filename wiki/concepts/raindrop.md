@@ -5,7 +5,7 @@ created: 2026-05-03
 updated: 2026-05-03
 tags:
   - agent-observability
-  - monitoring
+  - infrastructure
   - evaluation
   - agent-platform
   - comparison

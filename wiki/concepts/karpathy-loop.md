@@ -6,10 +6,10 @@ status: complete
 tags:
   - ai
   - lab
-  - agents
+  - ai-agents
   - autonomous-experimentation
   - constraint-design
-  - karpathy
+  - person
 created: 2026-04-14
 updated: 2026-04-14
 source:

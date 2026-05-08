@@ -9,7 +9,7 @@ tags:
   - benchmark
   - voice-agents
   - full-duplex
-  - agent-evaluation
+  - evaluation
   - sierra
 related:
   - "[[concepts/tau-bench]]"

@@ -8,7 +8,7 @@ tags:
   - datasette
   - web-security
   - privacy
-  - simon-willison
+  - person
 sources:
   - https://simonwillison.net/2026/May/5/datasette-referrer-policy/
 ---

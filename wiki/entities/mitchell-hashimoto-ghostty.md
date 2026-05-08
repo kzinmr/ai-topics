@@ -8,7 +8,7 @@ depth: 22000
 status: L3
 tags:
   - ghostty
-  - zig
+  - developer-tooling
   - terminal-emulator
   - libghostty
   - gtk

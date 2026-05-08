@@ -3,7 +3,12 @@ title: GPT-OSS (OpenAI Open Models)
 created: 2026-05-01
 updated: 2026-05-01
 type: entity
-tags: [model, open-source, openai, text-generation, moe, local-llm]
+tags:
+  - model
+  - open-source
+  - openai
+  - text-generation
+  - local-llm
 sources: [raw/articles/2025-08-05_openai-gpt-oss-open-weight-models.md]
 ---
 

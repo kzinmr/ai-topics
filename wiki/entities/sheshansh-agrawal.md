@@ -5,9 +5,7 @@ created: 2026-04-17
 updated: 2026-04-3004-17
 tags:
   - person
-  - engineer
   - search
-  - information-retrieval
   - rag
   - reranking
   - training

@@ -9,8 +9,7 @@ updated: 2026-05-04
 tags:
   - concept
   - evaluation
-  - benchmarking
-  - leaderboard
+  - benchmark
   - huggingface
 sources:
   - https://huggingface.co/open-llm-leaderboard

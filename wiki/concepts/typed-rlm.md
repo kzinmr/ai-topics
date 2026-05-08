@@ -7,8 +7,8 @@ tags:
   - concept
   - rlm
   - lambda-calculus
-  - long-context
-  - inference-time-scaling
+  - context-management
+  - inference
   - typed-functional-runtime
   - formal-guarantees
 aliases:

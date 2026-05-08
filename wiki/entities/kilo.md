@@ -9,8 +9,7 @@ tags:
   - entity
   - coding-agent
   - open-source
-  - ide
-  - cli
+  - developer-tooling
   - ai-agents
 sources:
   - https://kilo.ai/

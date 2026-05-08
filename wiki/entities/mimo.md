@@ -3,7 +3,11 @@ title: "MiMo (Xiaomi)"
 type: entity
 created: 2026-04-30
 updated: 2026-04-30
-tags: [model, open-source, long-context, xiaomi]
+tags:
+  - model
+  - open-source
+  - context-management
+  - xiaomi
 sources:
   - raw/articles/2026-04-28_mimo-v25-pro.md
 related:

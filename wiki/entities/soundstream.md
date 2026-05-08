@@ -3,7 +3,7 @@ title: SoundStream
 type: entity
 tags:
   - entity
-  - audio-codec
+  - multimodal
   - neural-audio
   - model
 created: 2026-05-01

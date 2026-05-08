@@ -5,7 +5,7 @@ created: 2026-04-30
 updated: 2026-04-30
 tags:
   - concept
-  - filesystem
+  - developer-tooling
   - ai-agents
   - company
 sources:

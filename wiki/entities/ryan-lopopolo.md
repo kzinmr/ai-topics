@@ -15,10 +15,10 @@ tags:
   - ai
   - harness-engineering
   - openai
-  - codex
+  - coding-agents
   - ai-agents
   - agentic-engineering
-  - elixir
+  - developer-tooling
   - symphony
 sources: []
 ---

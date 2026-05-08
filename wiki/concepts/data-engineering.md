@@ -1,7 +1,9 @@
 ---
 title: "Data Engineering"
 type: concept
-tags: [data-engineering, data-pipeline, etl, data-infrastructure]
+tags:
+  - infrastructure
+  - data-infrastructure
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

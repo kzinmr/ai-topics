@@ -6,9 +6,6 @@ updated: 2026-04-16
 tags:
   - person
   - developer-tooling
-  - javascript
-  - nodejs
-  - deno
   - jsr
   - ai-agents
   - infrastructure

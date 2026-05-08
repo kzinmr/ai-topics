@@ -7,7 +7,6 @@ tags:
   - concept
   - fine-tuning
   - quantization
-  - peft
   - memory-efficiency
 aliases:
   - QLoRA

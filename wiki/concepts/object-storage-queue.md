@@ -3,7 +3,7 @@ title: "Object Storage Queue Pattern"
 tags:
   - concept
   - queue
-  - object-storage
+  - protocol
   - zero-disk
   - async-processing
   - architecture-pattern

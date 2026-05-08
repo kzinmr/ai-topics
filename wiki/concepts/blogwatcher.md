@@ -5,7 +5,12 @@ status: incomplete
 description: "CLI-based blog and RSS feed monitoring tool for tracking technical blogs and newsletters."
 created: 2026-04-27
 updated: 2026-04-28
-tags: [concept, monitoring, rss, cli, automation]
+tags:
+  - concept
+  - infrastructure
+  - rss
+  - developer-tooling
+  - automation
 aliases: [blogwatcher-cli, feed-monitor]
 related: [[entities/hermes-agent]], [[entities/simon-willison]]
 sources: [https://github.com/NousResearch/hermes-agent]

@@ -5,8 +5,8 @@ created: 2026-05-01
 updated: 2026-05-01
 tags:
   - concept
-  - synthetic-data
-  - agents
+  - training
+  - ai-agents
   - meta
   - data-science
   - meta-optimization

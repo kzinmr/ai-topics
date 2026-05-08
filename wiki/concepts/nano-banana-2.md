@@ -11,7 +11,6 @@ tags:
   - concept
   - image-generation
   - google
-  - gemini
 status: complete
 sources:
   - url: "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana"

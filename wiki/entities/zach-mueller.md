@@ -8,7 +8,6 @@ tags:
   - person
   - ai
   - huggingface
-  - accelerate
   - training
   - pytorch
   - optimization

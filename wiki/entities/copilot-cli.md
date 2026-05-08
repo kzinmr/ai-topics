@@ -10,7 +10,7 @@ tags:
   - coding-agent
   - github
   - microsoft
-  - cli
+  - developer-tooling
   - ai-agents
 sources:
   - https://github.com/github/copilot-cli

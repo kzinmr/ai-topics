@@ -8,7 +8,7 @@ tags:
   - open-source
   - agentic-engineering
   - self-improvement
-  - rl
+  - training
 aliases:
   - "MiniMax-M2.7"
   - "M2.7"

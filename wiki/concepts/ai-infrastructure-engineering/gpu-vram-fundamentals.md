@@ -6,9 +6,8 @@ updated: 2026-05-01
 tags:
   - concept
   - inference
-  - vram
-  - memory-bandwidth
   - hardware
+  - memory-bandwidth
   - infrastructure
 status: L1
 aliases:

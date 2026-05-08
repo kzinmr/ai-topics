@@ -7,8 +7,6 @@ updated: 2026-04-30
 aliases: [gpjt, Giles Thomas]
 tags:
   - person
-  - ml-researcher
-  - educator
   - python-developer
   - smolagents
   - huggingface

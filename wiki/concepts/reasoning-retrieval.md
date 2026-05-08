@@ -7,7 +7,7 @@ tags:
   - concept
   - rag
   - reasoning
-  - information-retrieval
+  - search
 aliases:
   - reasoning-retrieval
   - promptriever

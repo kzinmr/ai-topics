@@ -4,7 +4,12 @@ type: concept
 created: 2026-04-15
 updated: 2026-04-29
 status: complete
-tags: [local-llm, runner, model-management, cli, api, open-source]
+tags:
+  - local-llm
+  - runner
+  - model-management
+  - developer-tooling
+  - open-source
 aliases: [ollama-runner, ollama-cli]
 related: [[concepts/inference/llama-cpp]], [[concepts/local-llm]], [[concepts/local-llm/inference-hardware]]
 sources:

@@ -6,7 +6,7 @@ updated: 2026-04-12
 tags:
   - anthropic
   - cognition
-  - devin
+  - coding-agents
   - memory-tool
   - competitive-analysis
   - agentic-engineering

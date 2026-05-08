@@ -6,7 +6,7 @@ tags:
   - concept
   - database
   - workflow
-  - filesystem
+  - developer-tooling
   - postgresql
   - sql
 aliases: ["db9", "fs9", "db9-fs-sql-patterns"]

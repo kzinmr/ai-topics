@@ -3,7 +3,6 @@ title: "Reasoning Models"
 tags:
   - reasoning
   - model
-  - thinking
   - coherence
   - hallucination
 created: 2026-04-14

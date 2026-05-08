@@ -8,7 +8,7 @@ tags:
   - person
   - llm-research
   - agent-safety
-  - agents
+  - ai-agents
   - openai
 sources: []
 ---

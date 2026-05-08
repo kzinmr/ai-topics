@@ -4,7 +4,15 @@ type: concept
 created: 2026-05-04
 updated: 2026-05-04
 status: Level2
-tags: [course, curriculum, research, llm-papers, scaling, alignment, reasoning, interpretability]
+tags:
+  - course
+  - curriculum
+  - lab
+  - llm-papers
+  - optimization
+  - alignment
+  - reasoning
+  - interpretability
 aliases: [cos597r, princeton-llm, deep-dive-llm]
 sources:
   - https://princeton-cos597r.github.io/

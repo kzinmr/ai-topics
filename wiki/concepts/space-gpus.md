@@ -3,7 +3,12 @@ title: "Space GPUs"
 type: concept
 created: 2026-04-10
 updated: 2026-04-10
-tags: [concept, space-compute, ai-infrastructure, satellites, orbital-data-centers]
+tags:
+  - concept
+  - space-compute
+  - infrastructure
+  - satellites
+  - orbital-data-centers
 aliases: ["orbital-compute", "space-data-centers"]
 related: [[concepts/compute-scaling-bottlenecks]], [[entities/dylan-patel]], 
 sources: []

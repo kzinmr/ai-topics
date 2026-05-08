@@ -7,8 +7,6 @@ updated: 2026-05-04
 aliases: [jaykmody, Jay Mody]
 tags:
   - person
-  - educator
-  - ml-researcher
   - python-developer
 sources:
   - https://jaykmody.com/

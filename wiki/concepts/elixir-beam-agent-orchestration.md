@@ -4,11 +4,11 @@ type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags:
-  - elixir
+  - developer-tooling
   - beam
   - otp
   - orchestration
-  - fault-tolerance
+  - infrastructure
   - concurrency
   - openai-symphony
 sources:

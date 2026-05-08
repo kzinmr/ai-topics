@@ -9,7 +9,6 @@ tags:
   - infrastructure
   - research-framework
   - path-dependency
-  - ai-infra
 aliases:
   - hardware lottery
   - hookers-law

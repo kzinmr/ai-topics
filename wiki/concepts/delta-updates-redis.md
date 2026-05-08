@@ -3,7 +3,10 @@ title: Delta Updates via Redis
 created: 2026-04-30
 updated: 2026-04-30
 type: concept
-tags: [architecture, infrastructure, ai-agents, real-time]
+tags:
+  - architecture
+  - infrastructure
+  - ai-agents
 sources: [raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md]
 ---
 

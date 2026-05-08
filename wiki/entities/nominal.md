@@ -7,7 +7,7 @@ tags:
   - company
   - erp
   - finance-ai
-  - agentic-ai
+  - ai-agents
 aliases: ["Nominal AI", "nominal.so"]
 sources:
   - https://www.nominal.so

@@ -10,8 +10,6 @@ tags:
   - developer-tooling
   - compiler-tools
   - language-server
-  - rust
-  - zig
   - systems-programming
 - person
 - blogger

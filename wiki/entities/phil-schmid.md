@@ -4,10 +4,9 @@ tags:
   - person
   - developer-relations
   - fine-tuning
-  - rlhf
-  - distributed-training
-  - hugging-face
-  - google-deepmind
+  - training
+  - huggingface
+  - google
 created: 2026-05-04
 updated: 2026-05-06
 type: entity

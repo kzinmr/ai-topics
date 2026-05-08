@@ -9,7 +9,6 @@ tags:
   - infrastructure
   - inference
   - sglang
-  - venture-capital
 aliases:
   - "RadixArk AI"
 related:

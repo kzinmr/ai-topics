@@ -3,7 +3,16 @@ title: DeepSeek-V4
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [model, mixture-of-experts, long-context, hybrid-attention, fp4, speculative-decoding, agent, training, benchmark, deepseek]
+tags:
+  - model
+  - context-management
+  - hybrid-attention
+  - fp4
+  - inference
+  - ai-agents
+  - training
+  - benchmark
+  - deepseek
 sources:
   - raw/papers/2026-04-xx_deepseek-v4-technical-report.md
   - raw/articles/2026-05-08_hn-deepseek-v4-discussion.md

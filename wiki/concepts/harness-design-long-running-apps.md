@@ -1,6 +1,6 @@
 ---
 title: "Harness Design for Long-Running Apps — Anthropic's Multi-Agent Architecture"
-tags: [harness-design-multi-agent-gan-loop-context-reset-sprint-contracts-evaluator-pattern]
+tags: [harness-engineering, multi-agent, agentic-engineering]
 created: 2026-04-13
 updated: 2026-04-24
 type: concept

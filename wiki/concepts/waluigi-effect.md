@@ -8,9 +8,9 @@ aliases:
   - simulacra-inversion
 tags:
   - concept
-  - rlhf
+  - fine-tuning
   - alignment
-  - ai-safety
+  - agent-safety
   - simulator-theory
   - jailbreaking
   - narratology

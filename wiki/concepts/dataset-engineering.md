@@ -10,10 +10,10 @@ created: 2026-05-04
 updated: 2026-05-04
 tags:
   - concept
-  - data-engineering
+  - infrastructure
   - mlops
   - data-curation
-  - synthetic-data
+  - training
 related:
   - [[concepts/synthetic-data]]
   - [[concepts/autodata-agentic-data-creation]]

@@ -3,7 +3,13 @@ title: Agent Development Lifecycle (ADLC)
 created: 2026-05-05
 updated: 2026-05-05
 type: concept
-tags: [ai-agents, governance, operations, testing, enterprise, workflow]
+tags:
+  - ai-agents
+  - governance
+  - operations
+  - testing
+  - company
+  - workflow
 sources: [raw/articles/2026-05-01_salesforce-8-ways-ai-agents-evolving-2026.md]
 ---
 

@@ -9,10 +9,8 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - career
-  - ai-safety
+  - agent-safety
   - adversarial-ml
-  - prompt-injection
-  - red-teaming
   - jailbreak
   - security
 related:

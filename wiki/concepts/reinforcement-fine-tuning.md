@@ -8,8 +8,7 @@ tags:
   - fine-tuning
   - reinforcement-learning
   - rft
-  - post-training
-  - rl
+  - training
 aliases:
   - RFT
   - Reinforcement Fine-Tuning

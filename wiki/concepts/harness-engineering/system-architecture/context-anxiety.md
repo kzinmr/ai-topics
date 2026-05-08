@@ -1,6 +1,6 @@
 ---
 title: "Context Anxiety"
-tags: [context-management-cognition-claude-models]
+tags: [context-management, anthropic, model]
 created: 2026-04-23
 updated: 2026-04-24
 type: concept

@@ -7,10 +7,7 @@ tags:
   - concept
   - ai-agents
   - sandbox
-  - javascript
-  - bun
-  - deno
-  - nodejs
+  - developer-tooling
   - runtime
   - v8
   - javascriptcore

@@ -10,7 +10,6 @@ tags:
   - x-account
   - ai
   - local-llm
-  - ggml
   - quantization
   - whisper.cpp
   - huggingface

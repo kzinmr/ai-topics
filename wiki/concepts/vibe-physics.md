@@ -6,7 +6,7 @@ type: concept
 tags:
   - concept
   - scientific-discovery
-  - frontier-models
+  - model
   - ai-agents
   - reasoning
 aliases:

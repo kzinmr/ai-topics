@@ -3,7 +3,14 @@ title: "Lambda Monolith (Lambdalith)"
 created: 2026-04-16
 updated: 2026-04-16
 type: concept
-tags: [architecture, devops, aws, lambda, serverless, microservices, ai-agents]
+tags:
+  - architecture
+  - developer-tooling
+  - aws
+  - lambda
+  - infrastructure
+  - microservices
+  - ai-agents
 aliases: ["lambdalith", "lambda-monolith"]
 sources:
   - raw/articles/rehanvdm-lambda-monolith-lambdalith-2023.md

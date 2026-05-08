@@ -9,7 +9,7 @@ tags:
   - ai
   - engineering
   - workflows
-  - agents
+  - ai-agents
 aliases:
   - ai-coding-agents
   - agentic-workflow

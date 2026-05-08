@@ -6,7 +6,7 @@ updated: 2026-04-23
 tags:
   - ai-agents
   - optimization
-  - technique
+  - methodology
   - company
   - emerging
 aliases: ["tokenmaxxing", "tasteful-tokenmaxxing"]

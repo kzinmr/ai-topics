@@ -6,7 +6,7 @@ tags:
   - entity
   - model
   - anthropic
-  - managed-agents
+  - ai-agents
   - safety-research
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."

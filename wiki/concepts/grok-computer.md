@@ -3,7 +3,12 @@ title: Grok Computer
 created: 2026-05-02
 updated: 2026-05-02
 type: concept
-tags: [ai-agents, computer-use, automation, grok, desktop-agent, inference]
+tags:
+  - ai-agents
+  - automation
+  - grok
+  - desktop-agent
+  - inference
 sources:
   - raw/articles/2026-05-01_xai-grok-4-3-launch.md
 ---

@@ -7,7 +7,7 @@ tags:
   - company
   - voice-ai
   - state-space-models
-  - tts
+  - multimodal
   - ai-models
 aliases: ["Cartesia AI"]
 sources:

@@ -9,7 +9,7 @@ aliases:
   - EleutherAI
   - EAI
 tags:
-  - organization
+  - company
   - open-source
   - evaluation
   - lm-eval

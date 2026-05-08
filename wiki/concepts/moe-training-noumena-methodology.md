@@ -3,7 +3,14 @@ title: "MoE Training Methodology (Noumena)"
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [moe, training, methodology, speedrun, evaluation, infrastructure, fp8]
+tags:
+  - model
+  - training
+  - methodology
+  - speedrun
+  - evaluation
+  - infrastructure
+  - fp8
 sources: [raw/articles/2026-03-14_noumena-research-12-posts.md]
 ---
 

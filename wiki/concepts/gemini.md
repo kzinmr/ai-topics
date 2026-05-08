@@ -3,7 +3,11 @@ title: "Google Gemini"
 type: concept
 created: 2026-04-19
 updated: 2026-04-24
-tags: [concept, gemini, google, model, multimodal]
+tags:
+  - concept
+  - google
+  - model
+  - multimodal
 aliases: ["gemini", "google gemini", "gemini 3", "gemini pro"]
 related:
   - concepts/frontier-models-2026-04

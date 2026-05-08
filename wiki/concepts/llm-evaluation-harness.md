@@ -5,7 +5,7 @@ created: 2026-04-12
 updated: 2026-05-04
 tags:
   - evaluation
-  - benchmarking
+  - benchmark
   - reproducibility
   - eleutherai
   - open-source

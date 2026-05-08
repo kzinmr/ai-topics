@@ -8,9 +8,8 @@ updated: 2026-04-30
 tags:
   - entity
   - model
-  - information-retrieval
-  - nlp
   - search
+  - nlp
 aliases:
   - Single-Vector Embeddings
   - Embedding Models

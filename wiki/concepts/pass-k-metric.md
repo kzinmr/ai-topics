@@ -9,10 +9,9 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - benchmark
-  - reliability
+  - infrastructure
   - evaluation
   - metric
-  - agent-evaluation
 related:
   - "[[concepts/tau-bench]]"
   - "[[concepts/tau-squared-bench]]"

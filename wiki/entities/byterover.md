@@ -6,10 +6,10 @@ updated: 2026-05-03
 tags:
   - entity
   - product
-  - memory
-  - ai-agent
+  - memory-systems
+  - ai-agents
   - open-source
-  - devtools
+  - developer-tooling
 aliases:
   - brv
   - byterover-cli

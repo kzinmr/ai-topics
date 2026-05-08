@@ -14,11 +14,10 @@ tags:
   - agentic-engineering
   - coding-agents
   - anthropic
-  - codex
   - testing
-  - git
+  - developer-tooling
   - patterns
-  - simon-willison
+  - person
 source: https://simonwillison.net/guides/agentic-engineering-patterns/
 sources: []
 ---

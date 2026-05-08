@@ -5,7 +5,6 @@ created: 2026-04-09
 updated: 2026-04-10
 tags:
   - person
-  - designer
   - developer
   - web-design
   - writing

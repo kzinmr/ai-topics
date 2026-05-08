@@ -8,7 +8,7 @@ tags:
   - context-management
   - tool
   - multi-agent
-  - subagents
+  - ai-agents
 sources:
   - raw/articles/2026-context-providers-the-missing-layer-between-agents-and-tools.md
 related:

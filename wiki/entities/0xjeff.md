@@ -7,7 +7,7 @@ tags:
   - person
   - crypto
   - defi
-  - investor
+  - company
   - hermes-agent
   - x-account
 aliases:

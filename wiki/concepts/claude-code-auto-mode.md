@@ -6,8 +6,7 @@ updated: 2026-05-08
 tags:
   - claude-code
   - agent-safety
-  - sandboxing
-  - prompt-injection
+  - sandbox
   - security
 aliases:
   - auto mode

@@ -3,7 +3,11 @@ title: "Zero Trust for Agentic AI"
 created: 2026-04-24
 updated: 2026-04-24
 type: concept
-tags: [agent-security, zero-trust, excessive-agency, governance, identity]
+tags:
+  - agent-safety
+  - security
+  - governance
+  - identity
 sources:
   - raw/articles/crawl-2026-04-24-zero-trust-agent-security-auth0.md
   - raw/articles/crawl-2026-04-24-cisco-zero-trust-agentic-ai.md

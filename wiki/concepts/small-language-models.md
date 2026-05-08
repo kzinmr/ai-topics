@@ -13,7 +13,7 @@ tags:
   - model
   - inference
   - edge
-  - efficiency
+  - optimization
 status: complete
 sources:
   - url: "https://arxiv.org/abs/2511.22334"

@@ -10,7 +10,7 @@ tags:
   - y-combinator
   - loopt
   - worldcoin
-  - ai-infrastructure
+  - infrastructure
   - agi
 sources: []
 ---

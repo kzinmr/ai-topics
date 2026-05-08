@@ -9,7 +9,7 @@ tags:
   - anthropic
   - multi-agent
   - disagreement
-  - subagents
+  - ai-agents
   - architecture-evaluation
   - diversity-of-perspective
 aliases: [structured-disagreement, claude-code-subagent-disagreement]

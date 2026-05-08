@@ -5,7 +5,7 @@ created: 2026-04-27
 updated: 2026-04-27
 tags:
   - ai-agents
-  - agent-harness
+  - harness-engineering
   - memory-systems
   - open-source
 aliases: ["Letta AI", "Letta Code"]

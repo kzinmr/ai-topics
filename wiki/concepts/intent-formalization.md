@@ -8,7 +8,7 @@ tags:
   - safety
   - formal-methods
   - model
-  - reliability
+  - infrastructure
   - prompting
 aliases: ["intent-specification", "program-specification-llm", "formal-spec-llm"]
 sources:

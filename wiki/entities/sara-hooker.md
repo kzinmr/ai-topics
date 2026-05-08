@@ -3,7 +3,12 @@ title: "Sara Hooker"
 type: entity
 created: 2026-05-04
 updated: 2026-05-04
-tags: [person, researcher, google, hardware, ai-safety, interpretability]
+tags:
+  - person
+  - google
+  - hardware
+  - agent-safety
+  - interpretability
 aliases: ["Dr. Sara Hooker"]
 sources:
   - raw/papers/2020-09-14_2009-06489_hardware-lottery.md

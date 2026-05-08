@@ -8,13 +8,12 @@ tags:
   - person
   - ai
   - huggingface
-  - google-deepmind
+  - google
   - deployment
   - llm-ops
   - fine-tuning
   - agent-harnesses
   - mcp
-  - gemini
 sources: []
 ---
 

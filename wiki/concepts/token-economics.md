@@ -3,7 +3,11 @@ title: "Token Economics — LLM Inference Cost & Optimization"
 type: concept
 created: 2026-04-18
 updated: 2026-04-18
-tags: [inference, optimization, cost, technique]
+tags:
+  - inference
+  - optimization
+  - cost
+  - methodology
 aliases: ["cost-per-token", "inference-unit-economics"]
 sources: []
 ---

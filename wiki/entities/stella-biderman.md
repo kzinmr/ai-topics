@@ -17,7 +17,6 @@ tags:
   - person
   - eleutherai
   - open-source
-  - ml-researcher
   - evaluation
   - lm-eval
 sources:

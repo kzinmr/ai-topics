@@ -9,7 +9,6 @@ tags:
   - podcaster
   - blogger
   - hn-popular
-  - author
 
 ---
 

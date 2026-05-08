@@ -7,8 +7,6 @@ tags:
   - person
   - blogger
   - hn-popular
-  - programmer
-  - writer
 sources: []
 ---
 

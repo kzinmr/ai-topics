@@ -8,8 +8,6 @@ tags:
   - openai
   - coding-agents
   - developer-tooling
-  - chatgpt
-  - codex
 aliases: ["Codex Superapp"]
 sources:
   - "raw/newsletters/2026-04-30-ainews-the-inference-inflection.md"

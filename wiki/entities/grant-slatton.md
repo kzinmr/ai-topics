@@ -8,13 +8,13 @@ tags:
   - x-account
   - ai
   - aws
-  - s3
+  - protocol
   - row-zero
   - shardstore
   - formal-methods
   - spreadsheets
   - systems-engineering
-  - rust
+  - developer-tooling
 sources:
   - https://grantslatton.com/
   - https://x.com/GrantSlatton

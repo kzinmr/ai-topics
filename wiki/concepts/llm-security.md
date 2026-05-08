@@ -8,7 +8,6 @@ tags:
   - security
   - agent-safety
   - evaluation
-  - adversarial
 status: L2
 sources:
   - "raw/articles/simonwillison.net--2026-apr-30-gpt-55-cyber-capabilities.md"

@@ -8,7 +8,7 @@ status: L1
 tags:
   - entity
   - coding-agent
-  - browser-automation
+  - browser-agent
   - chrome-extension
   - firefox-extension
   - local-models

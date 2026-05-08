@@ -8,7 +8,7 @@ depth: 22000
 status: L3
 tags:
   - hashicorp
-  - terraform
+  - developer-tooling
   - vagrant
   - packer
   - vault

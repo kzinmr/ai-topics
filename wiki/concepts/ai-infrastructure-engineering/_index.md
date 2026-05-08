@@ -8,7 +8,6 @@ tags:
   - infrastructure
   - inference
   - training
-  - observability
 status: L1
 aliases:
   - ai-infra

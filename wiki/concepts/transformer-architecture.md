@@ -10,7 +10,7 @@ updated: 2026-05-07
 tags:
   - concept
   - architecture
-  - attention
+  - model
   - sequence-modeling
 sources:
   - raw/articles/2025-05-25_gwern-invented-transformers.md

@@ -3,7 +3,12 @@ title: "CLI Over MCP Pattern"
 type: concept
 created: 2026-04-13
 updated: 2026-04-13
-tags: [cli, mcp, tool-design, context-efficiency, agentic-engineering]
+tags:
+  - developer-tooling
+  - mcp
+  - tool-design
+  - context-efficiency
+  - agentic-engineering
 aliases: ["cli-first-development", "mcp-skepticism", "tool-agnostic-agents", "minimal-tooling-pattern"]
 related: [[concepts/direct-prompting-philosophy]], [[concepts/claude-code-best-practices]], [[concepts/context-window-management]], 
 sources:

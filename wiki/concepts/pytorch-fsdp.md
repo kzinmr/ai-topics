@@ -4,9 +4,8 @@ type: concept
 created: 2026-05-04
 updated: 2026-05-04
 tags:
-  - distributed-training
+  - training
   - pytorch
-  - fsdp
   - sharding
   - memory-optimization
 aliases: [fsdp, fully-sharded-data-parallel, zero3, zero-redundancy-optimizer]

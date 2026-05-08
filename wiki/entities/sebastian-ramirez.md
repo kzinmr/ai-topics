@@ -13,8 +13,8 @@ tags:
   - python-developer
   - open-source
   - web-framework
-  - api
-  - ml-infrastructure
+  - developer-tooling
+  - infrastructure
 sources:
   - https://tiangolo.com/
   - https://tiangolo.com/projects/

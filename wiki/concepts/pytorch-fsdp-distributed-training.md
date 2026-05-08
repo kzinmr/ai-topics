@@ -6,7 +6,6 @@ updated: 2026-05-01
 tags:
   - concept
   - training
-  - fsdp
   - pytorch
   - infrastructure
 status: L1

@@ -11,8 +11,8 @@ tags:
   - agency
   - emergence
   - turing-completeness
-  - gwern
-  - ai-safety
+  - person
+  - agent-safety
   - tool-ai
   - convergence
 sources:

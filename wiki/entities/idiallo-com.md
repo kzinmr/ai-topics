@@ -6,7 +6,6 @@ updated: 2026-05-02
 tags:
   - person
   - developer
-  - writer
   - ai-writing-workflows
 aliases:
   - Ibrahim Diallo

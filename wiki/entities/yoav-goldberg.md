@@ -3,7 +3,12 @@ title: Yoav Goldberg
 type: entity
 created: 2026-05-04
 updated: 2026-05-04
-tags: [nlp, researcher, academic, curriculum, llm-education]
+tags:
+  - nlp
+  - person
+  - academic
+  - curriculum
+  - llm-education
 aliases: ["yoavg"]
 url: https://www.cs.bgu.ac.il/~yoavg/
 affiliation: Bar-Ilan University, Allen Institute for AI (AI2) (formerly)

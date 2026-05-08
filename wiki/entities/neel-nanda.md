@@ -4,7 +4,12 @@ type: entity
 created: 2026-05-04
 updated: 2026-05-04
 status: complete
-tags: [person, ai-safety, interpretability, mechanistic-interpretability, research]
+tags:
+  - person
+  - agent-safety
+  - interpretability
+  - mechanistic-interpretability
+  - lab
 aliases: [neel-nanda-mechanistic-interpretability]
 sources:
   - https://www.neelnanda.io

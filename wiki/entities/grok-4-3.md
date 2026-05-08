@@ -3,7 +3,14 @@ title: Grok 4.3
 created: 2026-05-02
 updated: 2026-05-02
 type: entity
-tags: [model, grok, text-generation, reasoning, multimodal, voice, inference, pricing]
+tags:
+  - model
+  - grok
+  - text-generation
+  - reasoning
+  - multimodal
+  - inference
+  - pricing
 sources:
   - raw/articles/2026-05-01_xai-grok-4-3-launch.md
 ---

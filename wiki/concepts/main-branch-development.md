@@ -3,7 +3,12 @@ title: "Main-Branch Development"
 type: concept
 created: 2026-04-13
 updated: 2026-04-13
-tags: [git, main-branch, branching-strategy, agentic-engineering, atomic-commits]
+tags:
+  - developer-tooling
+  - main-branch
+  - branching-strategy
+  - agentic-engineering
+  - atomic-commits
 aliases: ["main-branch-ai-development", "worktree-anti-pattern", "atomic-commits-with-agents", "steipete-git-patterns"]
 related: , [[concepts/inference-speed-development]], [[concepts/direct-prompting-philosophy]], [[concepts/claude-code-best-practices]]
 sources:

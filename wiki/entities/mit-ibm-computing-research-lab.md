@@ -5,7 +5,7 @@ aliases: [mit-ibm-computing-lab, mit-ibm-lab]
 tags:
   - entity
   - company
-  - research
+  - lab
   - infrastructure
   - model
   - quantum

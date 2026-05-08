@@ -6,7 +6,6 @@ type: concept
 tags:
   - search
   - ai-agents
-  - information-retrieval
   - deep-research
   - reranking
   - coding-agents

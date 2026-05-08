@@ -3,7 +3,10 @@ title: Process Supervision for AI Agent Runtimes
 created: 2026-04-28
 updated: 2026-04-28
 type: concept
-tags: [infrastructure, architecture, technique, reliability]
+tags:
+  - infrastructure
+  - architecture
+  - methodology
 sources:
   - raw/articles/crawl-2026-04-28-process-supervision.md
 ---

@@ -8,7 +8,7 @@ tags:
   - agentic-engineering
   - anthropic
   - dev-tooling
-  - docker
+  - developer-tooling
   - security
 aliases: ["claude-code-best-practices", "claude-code-docker"]
 sources:

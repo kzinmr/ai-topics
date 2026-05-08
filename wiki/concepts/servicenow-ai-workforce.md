@@ -3,7 +3,12 @@ title: "ServiceNow AI Workforce - Autonomous Enterprise Agents"
 created: 2026-05-06
 updated: 2026-05-06
 type: concept
-tags: [agent, enterprise, automation, servicenow, multi-agent]
+tags:
+  - ai-agents
+  - company
+  - automation
+  - servicenow
+  - multi-agent
 sources:
   - raw/articles/servicenow-ai-workforce-2026.md
 ---

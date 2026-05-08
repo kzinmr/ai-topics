@@ -3,7 +3,13 @@ title: "April 2026 OpenAI Launch Wave — GPT-5.5, ChatGPT Images 2.0, Qwen3"
 type: concept
 created: 2026-04-25
 updated: 2026-05-05
-tags: [model, openai, multimodal, image-generation, chatgpt, comparison, benchmark]
+tags:
+  - model
+  - openai
+  - multimodal
+  - image-generation
+  - comparison
+  - benchmark
 aliases: ["GPT-5.5 Launch Wave", "April 2026 OpenAI Release"]
 status: enriched
 sources:

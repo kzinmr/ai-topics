@@ -13,7 +13,7 @@ tags:
   - evaluation
   - prime-intellect
   - interconnects
-  - benchmarks
+  - benchmark
 sources: []
 ---
 

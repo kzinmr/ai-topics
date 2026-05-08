@@ -3,7 +3,14 @@ title: IBM watsonx Orchestrate
 created: 2026-05-08
 updated: 2026-05-08
 type: entity
-tags: [entity, product, platform, multi-agent, orchestration, enterprise, ibm]
+tags:
+  - entity
+  - product
+  - platform
+  - multi-agent
+  - orchestration
+  - company
+  - ibm
 sources: [raw/articles/2026-05-05_ibm-think-2026-ai-operating-model.md]
 ---
 

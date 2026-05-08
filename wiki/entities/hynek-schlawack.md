@@ -5,9 +5,8 @@ created: 2026-04-10
 updated: 2026-04-10
 tags:
   - person
-  - python
+  - developer-tooling
   - open-source
-  - devops
   - software-engineering
   - attrs
   - structlog

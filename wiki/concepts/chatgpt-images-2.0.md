@@ -3,7 +3,11 @@ title: "ChatGPT Images 2.0"
 type: concept
 created: 2026-04-24
 updated: 2026-04-28
-tags: [product, openai, multimodal, image-generation, chatgpt]
+tags:
+  - product
+  - openai
+  - multimodal
+  - image-generation
 aliases: ["ChatGPT Images v2", "GPT Image 2"]
 sources:
   - raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md

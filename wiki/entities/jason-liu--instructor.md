@@ -5,9 +5,8 @@ parent: jason-liu
 created: 2026-04-27
 updated: 2026-04-27
 tags:
-  - instructor
+  - developer-tooling
   - structured-outputs
-  - pydantic
   - model
 
 ---

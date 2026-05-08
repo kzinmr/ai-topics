@@ -6,7 +6,7 @@ tags:
   - governance
   - ai-agents
   - security
-  - enterprise
+  - company
   - safety
 status: complete
 description: "Frameworks for governing autonomous AI agents in enterprise — identity-based access, three-tiered guardrails, HITL/HOTL patterns, and regulatory alignment."

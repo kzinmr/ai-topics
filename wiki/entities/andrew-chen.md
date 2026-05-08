@@ -5,7 +5,14 @@ aliases: [andrew-chen, andrewchen]
 created: 2026-05-08
 updated: 2026-05-08
 status: L2
-tags: [entity, person, investor, a16z, vc, local-ai, growth]
+tags:
+  - entity
+  - person
+  - company
+  - a16z
+  - vc
+  - local-ai
+  - growth
 sources:
   - "https://andrewchen.com/about/"
   - "https://a16z.com/author/andrew-chen/"

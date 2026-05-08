@@ -1,6 +1,10 @@
 ---
 title: "Intent-Based Engineering"
-tags: [articulation-gap, prompt-engineering, evals, ai-engineering]
+tags:
+  - articulation-gap
+  - prompting
+  - evaluation
+  - agentic-engineering
 created: 2026-05-03
 updated: 2026-05-03
 type: concept

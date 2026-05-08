@@ -2,7 +2,7 @@
 title: "PlayerZero"
 tags:
   - company
-  - ai-agent
+  - ai-agents
   - production-engineering
   - sre
   - context-graphs

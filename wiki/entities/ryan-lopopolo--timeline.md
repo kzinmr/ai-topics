@@ -10,7 +10,7 @@ tags:
   - career
   - openai
   - stripe
-  - elixir
+  - developer-tooling
 sources: []
 ---
 

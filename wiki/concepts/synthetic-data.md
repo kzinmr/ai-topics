@@ -13,11 +13,11 @@ updated: 2026-05-04
 tags:
   - concept
   - pretraining
-  - data-engineering
-  - scaling
+  - infrastructure
+  - optimization
   - alignment
   - sft
-  - rlhf
+  - fine-tuning
 related:
   - [[concepts/autodata-agentic-data-creation]]
   - [[concepts/llm-training-coherence-evolution]]

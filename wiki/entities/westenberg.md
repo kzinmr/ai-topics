@@ -9,7 +9,7 @@ tags:
   - hn-popular
   - culture
   - philosophy
-  - technology
+  - developer-tooling
   - economics
 sources: []
 ---

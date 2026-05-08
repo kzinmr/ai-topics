@@ -7,7 +7,7 @@ updated: 2026-04-23
 tags:
   - inference
   - local-llm
-  - apple-silicon
+  - hardware
   - nvidia
   - optimization
 sources:

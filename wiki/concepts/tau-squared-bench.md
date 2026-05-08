@@ -9,7 +9,7 @@ updated: 2026-05-08
 tags:
   - benchmark
   - dual-control
-  - agent-evaluation
+  - evaluation
   - coordination
   - telecom
   - sierra

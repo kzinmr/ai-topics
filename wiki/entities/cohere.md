@@ -5,8 +5,7 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - llm
-  - enterprise
+  - model
   - nlp
   - embedding
 aliases: ["Cohere Inc.", "Cohere AI"]

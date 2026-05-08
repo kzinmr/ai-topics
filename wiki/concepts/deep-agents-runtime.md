@@ -10,7 +10,6 @@ tags:
   - agent-runtime
   - durable-execution
   - langchain
-  - langsmith
   - orchestration
 status: complete
 description: "Production runtime primitives for deep AI agents — durable execution, memory, multi-tenancy, HITL, guardrails, observability, sandbox, and cron."

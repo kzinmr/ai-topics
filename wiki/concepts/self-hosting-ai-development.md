@@ -8,7 +8,7 @@ updated: 2026-04-27
 tags:
   - concept
   - self-hosting
-  - devops
+  - developer-tooling
   - vibe-coding
   - infrastructure
 status: enriched

@@ -8,7 +8,6 @@ tags:
   - ai-agents
   - customer-support
   - conversational-ai
-  - enterprise
 aliases: ["Decagon AI"]
 sources:
   - https://decagon.ai/

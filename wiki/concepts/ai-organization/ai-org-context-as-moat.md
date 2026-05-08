@@ -10,7 +10,7 @@ created: 2026-04-13
 updated: 2026-04-15
 tags:
   - concept
-  - organization
+  - company
   - governance
   - ai-native
   - mckinsey

@@ -5,8 +5,8 @@ created: 2026-05-06
 updated: 2026-05-06
 status: L1
 tags:
-  - autonomous-agents
-  - ai-safety
+  - ai-agents
+  - agent-safety
   - real-world-agents
   - ethics
 sources:

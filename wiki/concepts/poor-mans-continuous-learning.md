@@ -3,7 +3,11 @@ title: "Poor Man's Continuous Learning"
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [ai-agents, data-analysis, knowledge-management, prompt-engineering]
+tags:
+  - ai-agents
+  - data-analysis
+  - knowledge-management
+  - prompting
 status: active
 ---
 

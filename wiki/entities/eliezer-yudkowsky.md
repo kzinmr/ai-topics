@@ -3,7 +3,12 @@ title: Eliezer Yudkowsky
 created: 2026-05-08
 updated: 2026-05-08
 type: entity
-tags: [person, ai-safety, singularity, transhumanism, rationality]
+tags:
+  - person
+  - agent-safety
+  - singularity
+  - transhumanism
+  - rationality
 sources: [raw/articles/1996_yudkowsky_staring-into-the-singularity.md]
 ---
 

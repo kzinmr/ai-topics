@@ -4,7 +4,7 @@ created: 2026-04-13
 updated: 2026-04-26
 type: concept
 tags:
-  - browser-automation
+  - browser-agent
   - ai-agents
   - web-infrastructure
   - cross-cutting

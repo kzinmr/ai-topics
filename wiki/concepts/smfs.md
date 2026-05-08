@@ -3,7 +3,12 @@ title: "Supermemory Filesystem (SMFS)"
 type: concept
 created: 2026-04-30
 updated: 2026-04-30
-tags: [concept, memory-systems, ai-agents, filesystem, rag]
+tags:
+  - concept
+  - memory-systems
+  - ai-agents
+  - developer-tooling
+  - rag
 sources:
   - raw/articles/2026-04-29_introducing-smfs.md
 ---

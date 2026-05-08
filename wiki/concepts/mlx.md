@@ -3,7 +3,7 @@ title: "MLX"
 type: concept
 tags:
   - mlx
-  - apple-silicon
+  - hardware
   - inference
   - model
 status: L3

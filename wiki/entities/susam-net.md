@@ -4,6 +4,13 @@ type: entity
 created: 2026-04-10
 updated: 2026-04-10
 tags:
+  - person
+  - blogger
+  - mathematician
+  - puzzles
+  - common-lisp
+  - free-software
+  - indie-web
 - person
 - blogger
 - mathematician

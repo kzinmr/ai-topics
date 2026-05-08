@@ -10,7 +10,7 @@ updated: 2026-05-08
 tags:
   - interpretability
   - steering
-  - llm
+  - model
   - inference
   - safety
   - rlhf-alternative

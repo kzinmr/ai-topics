@@ -4,11 +4,8 @@ type: concept
 created: 2026-05-04
 updated: 2026-05-04
 tags:
-  - distributed-training
+  - training
   - huggingface
-  - accelerate
-  - fsdp
-  - deepspeed
   - launcher
 aliases:
   - accelerate

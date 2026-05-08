@@ -10,7 +10,7 @@ tags:
   - ai-agents
   - company
   - workspace
-  - codex
+  - coding-agents
 aliases: ["Workspace Agents", "OpenAI Business Agents"]
 sources:
   - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md

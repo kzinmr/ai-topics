@@ -12,14 +12,14 @@ tags:
   - turing-completeness
   - emergence
   - complexity
-  - gwern
+  - person
   - computation
   - security
   - weird-machines
   - philosophy-of-computation
   - goal-completeness
   - agi
-  - ai-safety
+  - agent-safety
   - analogy
 sources:
   - raw/articles/2012-12-09_gwern-surprisingly-turing-complete.md

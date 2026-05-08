@@ -9,7 +9,7 @@ created: 2026-04-13
 updated: 2026-05-06
 tags:
   - entity
-  - technology
+  - developer-tooling
   - browser-agent
   - general-purpose-agent
   - company

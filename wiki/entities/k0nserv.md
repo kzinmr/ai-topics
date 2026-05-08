@@ -7,9 +7,7 @@ tags:
   - person
   - blogger
   - hn-popular
-  - devops
-  - kubernetes
-  - rust
+  - developer-tooling
   - web-development
 sources: []
 ---

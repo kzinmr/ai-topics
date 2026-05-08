@@ -5,7 +5,11 @@ status: incomplete
 description: "AI Organization explores how human organizations transform when AI agents gain autonomous execution capabilities — from hierarchy to intelligence, context as moat, and the rise of solo founders."
 created: 2026-04-27
 updated: 2026-04-28
-tags: [concept, organization, governance, workflow-design]
+tags:
+  - concept
+  - company
+  - governance
+  - workflow-design
 aliases: [AI org, agentic organization, ai-org]
 related: [[concepts/ai-organization/_index]], [[concepts/ai-organization/ai-org-context-as-moat]], [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]], [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]]
 ---

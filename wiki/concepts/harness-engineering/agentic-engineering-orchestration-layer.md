@@ -9,7 +9,7 @@ tags:
   - concept
   - harness-engineering
   - agentic-engineering
-  - subagents
+  - ai-agents
   - orchestration
   - coding-agents
 aliases:

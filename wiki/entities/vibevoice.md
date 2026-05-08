@@ -7,10 +7,8 @@ tags:
   - entity
   - model
   - microsoft
-  - tts
   - multimodal
   - diffusion
-  - audio
   - open-source
 related:
   - mistral-voxtral-tts

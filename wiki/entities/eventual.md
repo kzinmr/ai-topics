@@ -8,7 +8,7 @@ tags:
   - data-platform
   - multimodal
   - open-source
-  - ml-infrastructure
+  - infrastructure
 aliases: ["Eventual AI", "Daft"]
 sources:
   - https://www.eventual.ai

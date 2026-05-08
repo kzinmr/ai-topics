@@ -1,6 +1,11 @@
 ---
 title: "gm8xx8"
-tags: [person, curator, paper-curation, ai-research, community-signal]
+tags:
+  - person
+  - curator
+  - paper-curation
+  - lab
+  - community-signal
 created: 2026-04-24
 updated: 2026-05-04
 type: entity

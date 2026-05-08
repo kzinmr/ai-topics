@@ -6,8 +6,6 @@ updated: 2026-05-01
 tags:
   - concept
   - inference
-  - autoscaling
-  - load-balancing
   - infrastructure
   - deployment
 status: L1

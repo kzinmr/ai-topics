@@ -6,7 +6,6 @@ updated: 2026-04-14
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': False}
 tags:
   - person
-  - deepmind
   - google
   - microsoft
   - inflection-ai

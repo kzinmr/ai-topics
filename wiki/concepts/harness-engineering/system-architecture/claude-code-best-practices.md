@@ -17,7 +17,7 @@ tags:
   - anthropic
   - prompting
   - mcp
-  - subagents
+  - ai-agents
   - workflow-patterns
   - agentic-engineering
 sources:

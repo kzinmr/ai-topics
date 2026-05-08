@@ -9,7 +9,7 @@ tags:
   - blog
   - harness-engineering
   - aec
-  - agent-evaluation
+  - evaluation
 aliases:
   - theharness.blog
   - The Harness

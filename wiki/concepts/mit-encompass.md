@@ -3,7 +3,12 @@ title: MIT EnCompass - AI Agent Search Framework
 created: 2026-05-06
 updated: 2026-05-06
 type: concept
-tags: [agent, search, mit, orchestration, backtracking]
+tags:
+  - ai-agents
+  - search
+  - mit
+  - orchestration
+  - backtracking
 sources:
   - raw/articles/mit-encompass-feb-2026.md
 ---

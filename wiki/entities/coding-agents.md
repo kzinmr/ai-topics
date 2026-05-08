@@ -9,7 +9,6 @@ tags:
   - developer-tooling
   - coding-agents
   - ai-agents
-  - ide
   - ecosystem
 aliases:
   - AI Coding Agents

@@ -9,10 +9,9 @@ aliases:
   - stochi0
 tags:
   - person
-  - ml-researcher
   - agent-research
   - harness-engineering
-  - post-training
+  - training
 sources:
   - https://stochi0.vercel.app
   - https://stochi0.vercel.app/writings

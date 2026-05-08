@@ -9,7 +9,7 @@ tags:
   - entity
   - coding-agent
   - vscode-extension
-  - cli
+  - developer-tooling
   - local-models
   - ai-agents
 sources:

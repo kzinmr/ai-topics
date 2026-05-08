@@ -3,7 +3,12 @@ title: "Claw Code"
 type: concept
 created: 2026-05-03
 updated: 2026-05-03
-tags: [coding-agents, harness-engineering, open-source, agent-harness, multi-agent, rust]
+tags:
+  - coding-agents
+  - harness-engineering
+  - open-source
+  - multi-agent
+  - developer-tooling
 aliases: ["claw-code", "claw CLI", "UltraWorkers claw"]
 sources:
   - raw/articles/2026-05-03_claw-code-overview.md

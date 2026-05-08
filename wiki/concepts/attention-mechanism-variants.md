@@ -3,7 +3,11 @@ title: "Attention Mechanism Variants in Modern LLMs"
 type: concept
 created: 2026-04-18
 updated: 2026-04-18
-tags: [architecture, technique, inference, optimization]
+tags:
+  - architecture
+  - methodology
+  - inference
+  - optimization
 aliases: ["attention-mechanisms", "transformer-attention", "GQA", "MLA", "SWA", "scaled-dot-product-attention"]
 sources:
   - raw/articles/2022-10-22_jaymody-attention-intuition.md

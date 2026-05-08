@@ -7,10 +7,9 @@ tags:
   - person
   - blogger
   - hn-popular
-  - rust
+  - developer-tooling
   - compiler
   - build-systems
-  - developer-tooling
   - documentation
 sources: []
 ---

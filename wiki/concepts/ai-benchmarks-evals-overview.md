@@ -6,9 +6,9 @@ updated: 2026-05-08
 status: active
 featured: true
 tags:
-  - benchmarks
+  - benchmark
   - evaluation
-  - llm
+  - model
   - ai-metrics
   - model-comparison
   - coding-benchmarks

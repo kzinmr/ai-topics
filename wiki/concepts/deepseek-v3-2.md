@@ -3,7 +3,14 @@ title: DeepSeek-V3.2
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [model, mixture-of-experts, reasoning, sparse-attention, grpo, agent, synthetic-data, training, benchmark, deepseek]
+tags:
+  - model
+  - reasoning
+  - sparse-attention
+  - training
+  - ai-agents
+  - benchmark
+  - deepseek
 sources:
   - raw/papers/2025-12-02_2512.02556_deepseek-v3.2-technical-report.md
   - https://arxiv.org/abs/2512.02556

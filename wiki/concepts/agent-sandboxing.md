@@ -9,7 +9,7 @@ depth_tracking:
  created: 2026-04-20
  target_depth: concept-level
 tags:
-  - agent-security
+  - agent-safety
   - sandbox
   - isolation
   - firecracker

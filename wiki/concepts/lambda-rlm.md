@@ -8,7 +8,7 @@ tags:
   - rlm
   - harness-engineering
   - aec
-  - agent-architecture
+  - architecture
 aliases:
   - Lambda Recursive Language Model
   - Lambda RLM

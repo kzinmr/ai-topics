@@ -7,7 +7,7 @@ tags:
   - company
   - legal-ai
   - vertical-ai
-  - llm
+  - model
   - professional-services
 aliases: ["Harvey AI", "Counsel AI Corporation"]
 sources:

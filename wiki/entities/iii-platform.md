@@ -8,8 +8,8 @@ tags:
   - open-source
   - ai-agents
   - backend
-  - agent-harness
-  - rust
+  - harness-engineering
+  - developer-tooling
 aliases:
   - iii
   - iii.dev

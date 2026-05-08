@@ -6,7 +6,6 @@ updated: 2026-04-10
 tags:
   - person
   - blogger
-  - designer
   - product-management
   - macos
   - hn-popular

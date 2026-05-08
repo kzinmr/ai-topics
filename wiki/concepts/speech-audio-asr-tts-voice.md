@@ -7,9 +7,7 @@ created: 2026-04-25
 updated: 2026-04-28
 tags:
   - concept
-  - audio
   - multimodal
-  - tts
   - asr
   - voice-agents
 status: L3

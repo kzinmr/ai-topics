@@ -4,7 +4,12 @@ type: entity
 created: 2026-05-08
 updated: 2026-05-08
 status: L2
-tags: [person, coding-agents, agentic-search, observability, benchmarking]
+tags:
+  - person
+  - coding-agents
+  - search
+  - infrastructure
+  - benchmark
 sources:
   - [[raw/articles/2026-05-06_entire-improving-agentic-search-in-coding-agents]]
 aliases: [@evisdrenova]

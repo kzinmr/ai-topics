@@ -5,7 +5,11 @@ status: incomplete
 description: "Agentic browsing refers to AI agents that autonomously navigate websites, click buttons, fill forms, and execute multi-step web workflows on behalf of users."
 created: 2026-04-27
 updated: 2026-04-28
-tags: [concept, browser-automation, web-agents, agentic]
+tags:
+  - concept
+  - browser-agent
+  - web-agents
+  - agentic
 aliases: [browser agents, web navigation agents, autonomous browsing]
 related: [[entities/browser-use]], [[entities/browserbase]], [[entities/anthropic-computer-use]], [[concepts/model-context-protocol-mcp]], [[entities/perplexity-comet]]
 ---

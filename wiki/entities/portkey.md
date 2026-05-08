@@ -3,7 +3,13 @@ title: Portkey
 created: 2026-05-05
 updated: 2026-05-05
 type: entity
-tags: [security, ai-agents, platform, enterprise, agent-safety, product]
+tags:
+  - security
+  - ai-agents
+  - platform
+  - company
+  - agent-safety
+  - product
 sources: [raw/articles/2026-05-05_ai-agent-news-weekly-apr28-may4.md]
 ---
 

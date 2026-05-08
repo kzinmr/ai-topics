@@ -6,8 +6,6 @@ updated: 2026-05-04
 tags:
   - person
   - hacker
-  - ai-researcher
-  - entrepreneur
   - tinygrad
 sources:
   - https://geohot.github.io/

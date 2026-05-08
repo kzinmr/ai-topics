@@ -7,7 +7,6 @@ updated: 2026-04-10
 tags:
   - person
   - x-account
-  - python
   - developer-tooling
   - open-source
   - ai

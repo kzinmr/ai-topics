@@ -7,7 +7,6 @@ updated: 2026-04-23
 tags:
   - local-llm
   - inference
-  - speculative-decoding
   - hardware
 sources:
   - https://www.lucebox.com

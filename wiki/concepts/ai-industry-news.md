@@ -9,8 +9,8 @@ tags:
   - openai
   - anthropic
   - spacex
-  - cursor
-  - agents
+  - coding-agents
+  - ai-agents
   - company
 aliases: ["The Signal Apr 26 2026", "OpenAI Is Cooking", "Anthropic Sweep", "SpaceX Courts Cursor"]
 sources:

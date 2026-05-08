@@ -6,8 +6,8 @@ updated: 2026-05-08
 tags:
   - company
   - evaluation
-  - benchmarking
-  - llm
+  - benchmark
+  - model
   - model-comparison
 aliases:
   - "Arena"

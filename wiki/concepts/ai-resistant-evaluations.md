@@ -6,7 +6,7 @@ updated: 2026-05-08
 tags:
   - evaluation
   - hiring
-  - ai-safety
+  - agent-safety
   - benchmark-contamination
 aliases:
   - AI-resistant take-home tests

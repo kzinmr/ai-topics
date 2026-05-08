@@ -8,7 +8,7 @@ updated: 2026-04-28
 tags:
   - concept
   - methodology
-  - cognitive-load
+  - context-management
   - agentic-engineering
 sources:
   - "raw/articles/xeiaso.net--blog-2026-ai-abstraction--744b692b.md"

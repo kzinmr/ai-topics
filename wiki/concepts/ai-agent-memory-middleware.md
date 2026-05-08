@@ -13,9 +13,8 @@ sources:
 tags:
   - memory-middleware
   - cloud-storage
-  - s3
+  - protocol
   - ai-agents
-  - posix
   - multi-agent
   - shared-state
   - virtual-filesystem

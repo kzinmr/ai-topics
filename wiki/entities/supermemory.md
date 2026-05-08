@@ -6,7 +6,7 @@ updated: 2026-04-30
 tags:
   - company
   - memory-systems
-  - filesystem
+  - developer-tooling
   - ai-agents
 sources:
   - raw/articles/2026-04-29_introducing-smfs.md

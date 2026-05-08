@@ -10,7 +10,7 @@ tags:
   - harness-engineering
   - aec
   - rlm
-  - agent-evaluation
+  - evaluation
 aliases:
   - Theodore Galanos
   - "@TheodoreGalanos"

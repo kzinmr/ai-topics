@@ -5,8 +5,7 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - rag
-  - retrieval
-  - embeddings
+  - model
   - search
   - anthropic
 aliases:

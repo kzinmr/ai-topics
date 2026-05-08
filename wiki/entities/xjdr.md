@@ -3,7 +3,15 @@ title: "xjdr"
 created: 2026-05-08
 updated: 2026-05-08
 type: entity
-tags: [person, moe, training, infrastructure, open-source, jax, inference, entropy]
+tags:
+  - person
+  - model
+  - training
+  - infrastructure
+  - open-source
+  - jax
+  - inference
+  - entropy
 sources: []
 x_account: "@_xjdr"
 github: xjdr

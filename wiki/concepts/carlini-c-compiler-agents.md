@@ -5,7 +5,7 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - multi-agent
-  - agent-architecture
+  - architecture
   - claude-code
   - harness-engineering
   - case-study

@@ -4,6 +4,12 @@ type: entity
 created: 2026-04-10
 updated: 2026-05-01
 tags:
+  - entity
+  - developer-tooling
+  - coding-agent
+  - coding-agents
+  - spacex
+  - partnership
 - entity
 - ide
 - coding-agent

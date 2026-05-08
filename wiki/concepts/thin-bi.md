@@ -3,7 +3,11 @@ title: "Thin BI (薄くなるBIツール)"
 type: concept
 created: 2026-04-27
 updated: 2026-04-27
-tags: [bi-tools, data-engineering, cloud-dwh, data-visualization]
+tags:
+  - bi-tools
+  - infrastructure
+  - cloud-dwh
+  - data-visualization
 aliases: ["thin-bi", "light-bi", "modern-bi"]
 sources:
   - "https://stable.co.jp/blog/introduction-lightdash"

@@ -8,7 +8,6 @@ tags:
   - platform
   - developer-tooling
   - editor
-  - rust
   - coding-agents
   - acp
 aliases:

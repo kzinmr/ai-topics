@@ -5,8 +5,8 @@ updated: 2026-05-04
 tags:
   - concept
   - ai-business-model
-  - saas
-  - venture-capital
+  - product
+  - company
   - ai-economics
 aliases:
   - "Services: The New Software"

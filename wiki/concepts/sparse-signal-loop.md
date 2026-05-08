@@ -3,7 +3,7 @@ title: "Sparse Signal Loop"
 tags:
   - concept
   - harness-engineering
-  - agent-evaluation
+  - evaluation
   - feedback-density
   - memory-architecture
   - rlm

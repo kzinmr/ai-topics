@@ -11,7 +11,7 @@ tags:
   - open-source-models
   - ml-systems
   - cuda-kernels
-  - unsloth
+  - fine-tuning
 sources: []
 ---
 

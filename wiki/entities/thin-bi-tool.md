@@ -9,7 +9,7 @@ tags:
   - entity
   - bi
   - data-visualization
-  - data-engineering
+  - infrastructure
   - dwh
 aliases:
   - 薄くなるBIツール

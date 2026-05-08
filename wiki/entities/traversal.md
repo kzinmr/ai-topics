@@ -6,7 +6,7 @@ updated: 2026-05-08
 tags:
   - company
   - ai-ops
-  - observability
+  - infrastructure
   - incident-management
   - sre
 aliases: ["Traversal AI"]

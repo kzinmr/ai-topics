@@ -7,7 +7,7 @@ updated: 2026-04-28
 tags:
   - person
   - anthropic
-  - typescript
+  - developer-tooling
   - flow
   - open-source
 sources: []

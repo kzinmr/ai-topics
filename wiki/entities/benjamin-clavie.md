@@ -35,12 +35,13 @@ related:
 tags:
   - person
   - nlp-researcher
-  - information-retrieval
+  - search
   - colbert
   - ragatouille
   - modernbert
   - open-source
   - japan-based
+
 ---
 
 

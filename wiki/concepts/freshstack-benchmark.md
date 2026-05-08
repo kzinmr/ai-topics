@@ -8,7 +8,7 @@ tags:
   - rag
   - evaluation
   - benchmark
-  - information-retrieval
+  - search
 aliases:
   - freshstack-benchmark
   - freshstack

@@ -8,7 +8,6 @@ tags:
   - finance-ai
   - vertical-ai
   - fintech
-  - enterprise
 aliases: ["Rogo AI", "Rogo Technologies Inc.", "RogoData"]
 sources:
   - https://rogo.ai/

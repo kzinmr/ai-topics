@@ -5,11 +5,8 @@ created: 2026-05-01
 updated: 2026-05-01
 tags:
   - concept
-  - observability
-  - monitoring
-  - tracing
-  - evaluation
   - infrastructure
+  - evaluation
 status: L1
 aliases:
   - llm-observability

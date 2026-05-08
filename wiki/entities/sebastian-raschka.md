@@ -4,7 +4,12 @@ type: entity
 created: 2026-05-04
 updated: 2026-05-04
 status: complete
-tags: [person, ml-engineering, fine-tuning, lora, llm, education]
+tags:
+  - person
+  - infrastructure
+  - fine-tuning
+  - model
+  - education
 aliases: [raschka]
 sources:
   - https://sebastianraschka.com

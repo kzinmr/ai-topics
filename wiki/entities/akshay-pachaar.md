@@ -10,8 +10,7 @@ tags:
   - person
   - ai-engineer
   - data-science
-  - educator
-  - agent-harness
+  - harness-engineering
   - lightning-ai
 aliases:
   - patchy631

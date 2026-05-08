@@ -3,7 +3,15 @@ title: Microsoft Copilot Wave 3
 created: 2026-05-02
 updated: 2026-05-02
 type: concept
-tags: [product, platform, ai-agents, enterprise, microsoft, anthropic, multi-model, governance]
+tags:
+  - product
+  - platform
+  - ai-agents
+  - company
+  - microsoft
+  - anthropic
+  - multi-model
+  - governance
 sources:
   - raw/articles/2026-03-09_microsoft-copilot-wave-3-frontier-transformation.md
 ---

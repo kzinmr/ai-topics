@@ -7,7 +7,7 @@ updated: 2026-04-24
 status: active
 tags:
   - company
-  - ai-infrastructure
+  - infrastructure
   - open-source
   - model
   - ml-platform

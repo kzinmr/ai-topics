@@ -3,7 +3,12 @@ title: China AI Industry
 created: 2026-04-26
 updated: 2026-05-08
 type: entity
-tags: [company, china, llm, ai-labs, comparison]
+tags:
+  - company
+  - china
+  - model
+  - ai-labs
+  - comparison
 sources: [raw/articles/2026-04-25-china-ai-robotics-industry-competitive-landscape.md, raw/articles/2026-05-03_nvidia-b300-china-1m-pricing.md, raw/articles/2026-05-07_nathan-lambert_notes-from-inside-chinas-ai-labs.md]
 ---
 

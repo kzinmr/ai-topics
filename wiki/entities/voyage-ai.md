@@ -7,7 +7,6 @@ tags:
   - company
   - embedding-models
   - rerankers
-  - retrieval
   - rag
 aliases: ["Voyage", "Voyage AI by MongoDB"]
 sources:

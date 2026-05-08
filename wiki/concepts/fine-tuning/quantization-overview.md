@@ -7,7 +7,6 @@ tags:
   - fine-tuning
   - quantization
   - inference
-  - gptq
   - fp8
 related:
   - concepts/fine-tuning/_index

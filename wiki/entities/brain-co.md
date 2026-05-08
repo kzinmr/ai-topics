@@ -6,7 +6,6 @@ updated: 2026-05-08
 tags:
   - company
   - ai-platform
-  - enterprise-ai
   - institutional-ai
 aliases: ["Brain Co", "Brain"]
 sources:

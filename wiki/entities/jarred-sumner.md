@@ -6,8 +6,6 @@ updated: 2026-04-16
 tags:
   - person
   - developer-tooling
-  - javascript
-  - bun
   - anthropic
   - ai-agents
   - infrastructure

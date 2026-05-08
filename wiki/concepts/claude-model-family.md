@@ -14,11 +14,11 @@ tags:
   - concept
   - anthropic
   - model-family
-  - llm
+  - model
   - large-language-model
-  - ai-agent
+  - ai-agents
   - developer-guide
-  - api
+  - developer-tooling
 status: complete
 sources:
   - url: "https://www.anthropic.com/learn/build-with-claude"

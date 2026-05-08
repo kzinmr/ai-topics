@@ -5,7 +5,14 @@ created: 2026-04-27
 updated: 2026-04-27
 status: L2
 sources: [https://github.com/NousResearch/autoreason, https://x.com/SHL0MS/status/2043415274196435325]
-tags: [reasoning, self-refinement, multi-agent, karpathy, nousresearch, subjective-domains, auto-research]
+tags:
+  - reasoning
+  - self-refinement
+  - multi-agent
+  - person
+  - nousresearch
+  - subjective-domains
+  - auto-research
 aliases: [auto-reason]
 ---
 

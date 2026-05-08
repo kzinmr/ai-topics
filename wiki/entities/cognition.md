@@ -7,7 +7,7 @@ tags:
   - company
   - ai-agents
   - coding-agent
-  - developer-tools
+  - developer-tooling
   - applied-ai-lab
 aliases: ["Cognition AI", "Cognition Labs", "Cognition AI, Inc."]
 sources:

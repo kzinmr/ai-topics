@@ -5,7 +5,7 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - ml-infrastructure
+  - infrastructure
   - inference
   - model-deployment
 aliases: ["Baseten"]

@@ -5,7 +5,13 @@ created: 2026-04-27
 updated: 2026-04-27
 status: L2
 sources: [https://spicyneuron.substack.com/p/a-mac-studio-for-local-ai-6-months, https://www.jeffgeerling.com/blog/2025/15-tb-vram-on-mac-studio-rdma-over-thunderbolt-5]
-tags: [local-llm, mac-studio, apple-silicon, unified-memory, mlx, ollama, llama-cpp, hardware]
+tags:
+  - local-llm
+  - mac-studio
+  - hardware
+  - unified-memory
+  - mlx
+  - llama-cpp
 aliases: [mac-studio-ai, apple-silicon-ai, mac-studio-local-inference]
 ---
 

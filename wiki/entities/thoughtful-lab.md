@@ -6,8 +6,8 @@ updated: 2026-05-04
 tags:
   - entity
   - ml-research
-  - post-training
-  - ai-safety
+  - training
+  - agent-safety
   - training-infrastructure
 aliases:
   - Thoughtful Lab

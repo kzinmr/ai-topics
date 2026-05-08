@@ -7,7 +7,7 @@ sub_category: AI Agent Architecture
 tags:
   - db9
   - postgresql
-  - filesystem
+  - developer-tooling
   - agent-workflows
   - rag
   - data-architecture

@@ -6,10 +6,10 @@ created: 2026-05-04
 updated: 2026-05-04
 tags:
   - entity
-  - researcher
+  - person
   - quantization
   - llm-int8
-  - qlora
+  - fine-tuning
   - bitsandbytes
   - uw
 status: current

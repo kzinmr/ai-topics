@@ -5,14 +5,11 @@ created: 2026-04-17
 updated: 2026-04-17
 tags:
   - person
-  - engineer
   - search
-  - information-retrieval
   - rag
   - ai-agents
   - infrastructure
   - ml-serving
-  - author
   - ai
 related:
   - doug-turnbull

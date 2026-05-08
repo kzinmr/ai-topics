@@ -12,10 +12,8 @@ aliases:
   - Kevin Nguyen
 tags:
   - person
-  - entrepreneur
-  - founder
-  - memory
-  - ai-agent
+  - memory-systems
+  - ai-agents
 sources:
   - https://x.com/kevinnguyendn
   - https://www.linkedin.com/in/anhnd/

@@ -6,7 +6,6 @@ updated: 2026-05-02
 tags:
   - entity
   - person
-  - researcher
 aliases:
   - Malika Aubakirova
 related:

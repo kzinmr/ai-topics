@@ -5,8 +5,8 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - evaluation
-  - ai-safety
-  - claude
+  - agent-safety
+  - anthropic
   - benchmark-contamination
   - agent-behavior
 aliases:

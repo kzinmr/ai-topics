@@ -8,8 +8,7 @@ tags:
   - training
   - memory-estimation
   - compute-estimation
-  - gpu
-  - lora
+  - hardware
   - quantization
   - gradient-checkpointing
   - cpu-offloading

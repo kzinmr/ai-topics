@@ -10,7 +10,7 @@ tags:
   - coding-agents
   - anthropic
   - openai
-  - typescript
+  - developer-tooling
   - meta
 sources: []
 ---

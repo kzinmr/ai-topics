@@ -8,7 +8,7 @@ tags:
   - person
   - openai
   - dall-e
-  - codex
+  - coding-agents
   - o1
   - multimodal
   - reasoning

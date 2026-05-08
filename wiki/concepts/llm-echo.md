@@ -7,7 +7,7 @@ status: L1
 tags:
   - llm-tools
   - echo
-  - simon-willison
+  - person
 sources:
   - https://simonwillison.net/2026/May/5/llm-echo/
 ---

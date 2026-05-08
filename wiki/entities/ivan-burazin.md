@@ -6,7 +6,7 @@ updated: 2026-04-30
 tags:
   - entity
   - person
-  - ai-infra
+  - infrastructure
   - daytona
 related: [headless-saas, headless-ai-services, agent-serverless]
 sources:

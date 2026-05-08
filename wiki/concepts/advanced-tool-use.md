@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-25
 updated: 2026-05-08
 tags:
-  - tool-use
+  - tool
   - mcp
   - context-engineering
   - developer-tooling

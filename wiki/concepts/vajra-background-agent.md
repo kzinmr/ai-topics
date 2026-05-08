@@ -1,6 +1,6 @@
 ---
 title: "Vajra — Open-Source Background Coding Agent"
-tags: [background-agent-orchestration-linear-github-workflow-automation-graph-based]
+tags: [ai-agents, orchestration, workflow, automation, developer-tooling]
 created: 2026-04-13
 updated: 2026-04-24
 type: concept

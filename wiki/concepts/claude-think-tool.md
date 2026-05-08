@@ -4,9 +4,9 @@ type: concept
 created: 2026-05-08
 updated: 2026-05-08
 tags:
-  - claude
-  - tool-use
-  - agent-architecture
+  - anthropic
+  - tool
+  - architecture
   - reasoning
   - evaluation
 aliases:

@@ -2,7 +2,10 @@
 title: "Avi Kivity"
 created: 2026-04-30
 updated: 2026-04-30
-tags: [person, infrastructure, virtualization, cloud]
+tags:
+  - person
+  - infrastructure
+  - virtualization
 aliases: ["avi.im", "iavins"]
 related: [[concepts/zero-disk-architecture]]
 sources: ["https://avi.im"]

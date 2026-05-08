@@ -10,7 +10,7 @@ updated: 2026-04-13
 tags:
   - concept
   - agentic-engineering
-  - simon-willison
+  - person
 status: complete
 sources:
   - "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/"

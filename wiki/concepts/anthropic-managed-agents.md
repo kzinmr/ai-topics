@@ -8,7 +8,7 @@ tags:
   - multi-agent
   - anthropic
   - platform
-  - managed-agents
+  - ai-agents
 related: [agent-team-swarm, harness-engineering, ai-agent-engineering, managed-agents, telegram]
 sources:
   - https://claude.com/blog/claude-managed-agents

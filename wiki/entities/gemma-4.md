@@ -4,6 +4,13 @@ type: entity
 created: 2026-04-10
 updated: 2026-05-05
 tags:
+  - entity
+  - model
+  - google
+  - open-weight
+  - gemma
+  - inference
+  - mtp
 - entity
 - model
 - google

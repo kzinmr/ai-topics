@@ -3,7 +3,13 @@ title: "RDEP (Research Dispatch/Expert Parallelism)"
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [moe, infrastructure, training, parallelism, nvidia, gpu]
+tags:
+  - model
+  - infrastructure
+  - training
+  - parallelism
+  - nvidia
+  - hardware
 sources: [raw/articles/2026-03-14_noumena-research-12-posts.md]
 ---
 

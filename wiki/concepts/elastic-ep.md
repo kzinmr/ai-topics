@@ -1,7 +1,12 @@
 ---
 title: "Elastic EP (Expert Parallelism)"
 type: concept
-tags: [expert-parallelism, fault-tolerance, inference, sglang, moe]
+tags:
+  - expert-parallelism
+  - infrastructure
+  - inference
+  - sglang
+  - model
 status: active
 created: 2026-04-27
 updated: 2026-04-27

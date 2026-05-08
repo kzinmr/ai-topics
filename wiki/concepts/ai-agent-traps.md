@@ -3,7 +3,11 @@ title: "AI Agent Traps"
 type: concept
 created: 2026-04-09
 updated: 2026-04-19
-tags: [concept, security, adversarial-attacks, agents]
+tags:
+  - concept
+  - security
+  - adversarial-attacks
+  - ai-agents
 related: [prompt-injection, ai-safety, multi-agent-systems]
 sources: []
 ---
