@@ -1,3 +1,13 @@
+## 2026-05-08 18:15 — near.blog/links curation (Richard Ngo entity + raw articles)
+
+- **New entity**: [[entities/richard-ngo]] — Independent AI researcher & philosopher. Former DeepMind AGI Safety and OpenAI Governance. Creator of AGI Safety from First Principles. Writes at mindthefuture.info.
+- **Raw articles saved**: 
+  - `2025-03-22_richard-ngo-scale-free-theory-intelligent-agency.md` — Coalitional agency: scale-free theory of intelligent agency bridging EUM, active inference, and multi-agent dynamics
+  - `2022-03-06_gwern-clippy-hard-takeoff.md` — Gwern's Clippy AI hard takeoff fiction, grounded in contemporary ML scaling literature
+- **Index**: Added entities/richard-ngo entry, bumped count 703→704
+- **Source**: near.blog/links/ curated link list — vast majority of 244 links are general interest (rationality, psychiatry, longevity, finance); only Richard Ngo and Gwern's Clippy were net-new AI-relevant additions
+- **Pre-existing coverage**: Gwern's scaling hypothesis (concepts/scaling-hypothesis.md), Karpathy (entities/andrej-karpathy.md + 4 sub-pages), Sam Altman (entities/sam-altman.md) all already well-documented
+
 ## [2026-05-08] ingest | Eliezer Yudkowsky "Staring Into The Singularity" (1996/1999)
 - Created: [[entities/eliezer-yudkowsky]], [[concepts/technological-singularity]], [[concepts/techno-optimism]], [[concepts/techno-pessimism]]
 - Raw article: `raw/articles/1996_yudkowsky_staring-into-the-singularity.md`

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 703 | Full entries: 703 | Stubs: 0 |
+> Last updated: 2026-05-08 | Total pages: 704 | Full entries: 704 | Stubs: 0 |
 
 ## Entities (524 pages)
 
@@ -332,6 +332,7 @@
 - [[entities/regie-ai]] — AI-native sales engagement platform (SEP) replacing Outreach/SalesLoft. RegieOne platform. $50M total funding ($30M Series B Feb 2025). Backed by Khosla Ventures, Scale Venture Partners.
 - [[entities/rehan-van-der-merwe]] — Cloud-native architect and blogger. Writes at rehanvdm.com.
 - [[entities/reiner-pope]] — CEO of MatX, former Google TPU architect. Expert on full-stack AI from chip design to model architecture. Known for roofline analysis framework for LLM inference economics.
+- [[entities/richard-ngo]] — Independent AI researcher & philosopher. Former DeepMind AGI Safety and OpenAI Governance. Creator of AGI Safety from First Principles. Writes at mindthefuture.info.
 - [[entities/richard-sutton]] — **Role** | Professor, University of Alberta; Research Scientist, Keen Technologies; Former Distinguished Research Scientist, Google DeepMind |
 - [[entities/rivet-dev]] — AI agent infrastructure company. Products: agentOS (WASM/V8 isolate runtime), Sandbox Agent SDK (universal coding agent API), Docker Sandbox MicroVM research. CTO: Nathan Flurry.
 - [[entities/righto-com]] — **Blog** | righto.com |
