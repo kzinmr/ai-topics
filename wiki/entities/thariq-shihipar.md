@@ -3,7 +3,7 @@ title: Thariq Shihipar
 type: entity
 handle: "@trq212"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-09
 tags:
   - person
   - anthropic
@@ -173,12 +173,27 @@ An accessible explanation of XJDR's uncertainty detection technique:
 
 ### HTML Artifacts Advocacy (May 2026)
 
-Shihipar has been advocating for **HTML as the primary output format for AI agents** rather than Markdown, as noted by Simon Willison in "The Unreasonable Effectiveness of HTML" (May 2026). His key arguments include:
+Shihipar has been advocating for **HTML as the primary output format for AI agents** rather than Markdown, with his May 2026 X article "The Unreasonable Effectiveness of HTML" and a companion site ([thariqs.github.io/html-effectiveness/](https://thariqs.github.io/html-effectiveness/)) featuring 20 self-contained `.html` files organized into 8 categories:
+
+| # | Category | Demos | Key Insight |
+|---|----------|-------|-------------|
+| 1 | **Exploration & Planning** | 3 | Side-by-side code approach comparisons, visual design directions, implementation plans with timelines — point at one instead of juggling three walls of text |
+| 2 | **Code Review & Understanding** | 3 | Annotated PRs with severity tags, PR writeups for reviewers, module maps as boxes-and-arrows — spatial information needs spatial rendering |
+| 3 | **Design** | 2 | Living design system swatches, component variant contact sheets — HTML is the medium design ships in |
+| 4 | **Prototyping** | 2 | Animation sandboxes with sliders, clickable interaction flows — motion can't be described, only felt |
+| 5 | **Illustrations & Diagrams** | 2 | SVG figure sheets, annotated flowcharts — inline SVG gives the agent a real pen |
+| 6 | **Decks** | 1 | Arrow-key slide decks from `<section>` tags + 20 lines of JS — no Keynote, no export step |
+| 7 | **Research & Learning** | 2 | Feature explainers with collapsible sections, concept explainers with live interactive rings |
+| 8 | **Reports** | 2 | Weekly status with charts, incident timelines with color-coded severity |
+
+His key arguments:
 
 - **Rich, self-contained outputs**: HTML allows LLMs to embed SVG diagrams, interactive widgets, in-page navigation, and color-coded severity annotations directly in their responses
 - **Token efficiency is less relevant now**: With modern large context windows, the token cost difference between HTML and Markdown is negligible compared to the expressive benefits
 - **Better for code review and technical explanations**: HTML artifacts can render actual diffs with inline margin annotations, making complex technical concepts clearer
-- **Practical examples**: His approach has been demonstrated through PR review artifacts, security exploit explanations (copy.fail), and interactive technical documentation
+- **Spatial information needs spatial rendering**: Diffs and call-graphs are spatial; Markdown flattens them — HTML preserves the shape of the code
+
+Simon Willison noted this caused him to reconsider his default Markdown preference (from the GPT-4/8K context era), and demonstrated the approach with a `curl https://copy.fail/exp | llm -m gpt-5.5 -s 'Explain this code... Output HTML...'` experiment on a Linux security exploit, producing an [interactive HTML explanation](https://gisthost.github.io/?ae53e3461ffdbfd0826156aacf025c7e).
 
 This represents a broader shift in AI engineering toward richer output formats, challenging the default assumption that Markdown is always optimal for LLM responses. The approach complements his earlier work on **Skills** and **Context Engineering** by providing a more expressive medium for agent outputs.
 
@@ -231,3 +246,5 @@ Shihipar's X activity (@trq212) typically covers:
 - thariq-shihipar-sparse-rewards
 - thariq-shihipar-spiritual-technology
 - thariq-shihipar-the-thing
+- trq212_unreasonable-effectiveness-html
+- simonwillison_unreasonable-effectiveness-html

@@ -1,3 +1,18 @@
+## 2026-05-09 — X bookmarks ingest | Thariq Shihipar "The Unreasonable Effectiveness of HTML"
+
+**Action**: Processed X bookmark for Thariq Shihipar's X Article advocating HTML over Markdown for Claude/LLM output formats.
+
+### Files Created
+- `raw/articles/2026-05-08_trq212_unreasonable-effectiveness-html.md` — Metadata-only X Article record (auth-walled)
+- `raw/articles/2026-05-08_simonwillison_unreasonable-effectiveness-html.md` — Simon Willison's commentary + copy.fail experiment
+
+### Files Updated
+- `entities/thariq-shihipar.md` — Enriched HTML Artifacts Advocacy section with 8-category table from companion site (20 demos), Simon Willison's copy.fail experiment, spatial-information argument
+
+### Key Insights
+- 20 self-contained `.html` demos across 8 categories: Exploration, Code Review, Design, Prototyping, Diagrams, Decks, Research, Reports
+- Simon Willison reconsiders his default Markdown preference from GPT-4/8K era
+- "Spatial information needs spatial rendering" — diffs and call-graphs flattened by Markdown, preserved by HTML
 ## 2026-05-09 — ingest | Matt Van Horn "Hermes Agent: What People Are Actually Using It For"
 
 **Action**: Ingested X Article analyzing 30-day community usage of Hermes Agent across Reddit, X, and YouTube.
