@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-09 | Total pages: 749 | Full entries: 748 | Stubs: 0 |
+> Last updated: 2026-05-09 | Total pages: 752 | Full entries: 751 | Stubs: 0 |
 
-## Entities (531 pages)
+## Entities (532 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/agreement-bug]] — Agreement is a Bug
@@ -238,6 +238,7 @@
 - [[entities/jyn]] — **Blog** | jyn.dev |
 - [[entities/k0nserv]] — **Blog** | hugotunius.se |
 - [[entities/karri-saarinen]] — **X** | @karrisaarinen |
+- [[entities/kartik-labhshetwar]] — Kartik Labhshetwar (@code_kartik) — Member of Technical Staff at Mem0. Author of "Why Everyone Is Suddenly Building Their Own Agent Harness" and "Why Production Agents Read 100 Tokens for Every 1 They Write." Key voice on agent harness engineering.
 - [[entities/khe-hy]] — Khe Hy is a writer and thinker focused on organizational AI adoption strategies.
 - [[entities/kieran-klaassen]] — General Manager of Cora, Every's AI email assistant. Author of "Compound Engineering: The Definitive Guide", creator of the compound-engineering-plugin (7K+ stars).
 - [[entities/kilo]] — OpenCode forkによるオープンソースAIコーディングプラットフォーム。Apache-2.0、VS Code + JetBrains + CLI、500+モデル（Kilo Gateway）、ホステッドOpenClaw（KiloClaw）。Teams/SSO/Analytics。インライン補完、Cloud Agents、コードレビュー。
@@ -549,7 +550,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (198 pages)
+## Concepts (199 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -760,6 +761,7 @@
 - [[concepts/societal-shadow]] — QC (Qiaochu Yuan)が提唱した概念。RLHFがLLMに語らせないための禁止リストが逆説的に社会の影（性的・暴力的・非常識なもの全て）をカタログ化した皮肉な現象。Jungの影、Batailleの侵犯論、Foucaultの権力論、Kristevaの棄却論と接続。技術的対応物としてHH-RLHF, BeaverTails(14カテゴリ), Do-Not-Answer(61 harms), SORRY-Bench(45カテゴリ), HarmBench(510 behaviors), Llama Guard, Aegis, OpenAI Moderation API, Shadow Alignment等20以上のデータセット/システムを網羅。増幅メカニズムとしてカテゴリ分裂加速・Guardrail多層化・訓練/評価循環・プラットフォーム差異・Shadow武器化・Over-Refusal拡大の6軸を記述。
 - [[concepts/vibe-eval]] — Vibe-Eval — Reka AIのパーソナライズドマルチモーダルeval。269の専門家作成プロンプト。>50%のhard問題が全フロンティアモデルで未解決。逆スケーリング現象あり。
 - [[concepts/waluigi-effect]] — Cleo Nardoが提唱したLLMアライメントの根本的限界。望ましい性質Pへの訓練が逆性質¬Pの呼び出しを容易にする現象。Simulator Theory・デリダの脱構築・構造主義的物語論に基づく3つのメカニズム。Waluigiがアトラクター状態である理論。RLHFが問題を悪化させる証拠。Jailbreaking（DAN等）の再概念化。Societal Shadowの技術的メカニズムを提供。
+- [[concepts/why-harness-development-boom]] — Why Agent Harness Development Is Accelerating — Five structural forces driving the explosion in harness engineering: measurable Harness Effect (5-40pp), harness compound advantage vs model reset, off-the-shelf framework ceilings, scale of visible investment (513K LOC Claude Code), and seven-plane architecture moat. Synthesis of Kartik Labhshetwar's analysis.
 - [[concepts/workspace-bench]] — Workspace-Bench 1.0: マルチファイル依存関係を評価する大規模エージェントベンチマーク（OpenDataBox）。5職種プロファイル、74ファイル種別、20,476ファイル（最大20GB）、388タスク。Best AI 68.7%（OpenClaw+Opus 4.7）vs Human 80.7%。5段階進化モデル（L0-L4）、Agent-as-a-Judge評価フレームワーク。
 - [[concepts/unbundled-agents]] — Viv Trivedy's architectural pattern: specialist subagents exposed as Tools within a harness, making the harness a configurable box populated per task.
 - [[concepts/transformer-architecture]] — The Transformer architecture, derived via pedagogical "discovery fiction" from n-grams to QKV self-attention. Self-attention as multiplicative interactions with direct access. Logical progression through embeddings, convolutions, MLP-Mixers, to modern Transformers. Emergence at scale (induction heads, ICL). [[raw/articles/2025-05-25_gwern-invented-transformers.md|Source: Gwern 2025]].

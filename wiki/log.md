@@ -1,3 +1,23 @@
+## 2026-05-09 — ingest | Kartik "Why Everyone Is Suddenly Building Their Own Agent Harness"
+
+**Action**: Ingested Kartik Labhshetwar's X article analyzing the structural forces behind the acceleration of agent harness development. Core evidence: LangChain's deepagents-cli jumped from 52.8%→66.5% on Terminal-Bench 2.0 by changing only the harness (same GPT-5.2-Codex model).
+
+### Files Created
+- `raw/articles/2026-05-02_codekartik-why-everyone-building-agent-harness.md` — Full article content (164K views, 1,076 likes)
+- `entities/kartik-labhshetwar.md` — Person entity: Member of Technical Staff at Mem0, 22, key voice on agent harness engineering
+- `concepts/why-harness-development-boom.md` — Five structural forces: harness effect magnitude (5-40pp), compound advantage vs model reset, framework ceilings, scale of investment (513K LOC Claude Code), seven-plane architecture moat. Includes decision framework for when to build your own harness
+
+### Files Updated
+- `concepts/agent-harness.md` — Added Seven-Plane Production Harness section (Kartik, May 2026), scale evidence (513K LOC), Mitchell Hashimoto coinage, updated sources and See Also
+- `concepts/harness-commoditization.md` — Added deepagents-cli data point as counter-evidence (+13.7pp on frontier model), new timeline entries, Related section
+- `index.md` — Added 2 new pages, updated counts (Entities: 531→532, Concepts: 198→199, Total: 749→752)
+
+### Key Insights
+- Mitchell Hashimoto coined "agent harness" early 2026: "Anytime an agent makes a mistake, you engineer a solution so it never makes that mistake again"
+- Claude Code harness: ~513,000 lines of TypeScript. Model API call: a few lines. 500,000:1 ratio
+- Shared pattern across all successful harnesses: trust the LLM at the reasoning layer, enforce strictly at the tool boundary
+- Frontier labs have structural conflict with harness optimization — efficient harnesses use fewer tokens, hurting their unit economics
+
 ## 2026-05-09 — X bookmarks ingest | Thariq Shihipar "The Unreasonable Effectiveness of HTML"
 
 **Action**: Processed X bookmark for Thariq Shihipar's X Article advocating HTML over Markdown for Claude/LLM output formats.

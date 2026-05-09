@@ -7,7 +7,7 @@ tags:
   - architecture
   - ai-agents
 aliases: [agent-harness, harness-anatomy, agent-scaffolding]
-related: [[concepts/harness-engineering]], [[concepts/deep-agents-runtime]], [[concepts/agent-loop-orchestration]], [[concepts/context-engineering]], [[concepts/bitter-lesson-harnessing]], [[entities/atal-upadhyay]]
+related: [[concepts/harness-engineering]], [[concepts/deep-agents-runtime]], [[concepts/agent-loop-orchestration]], [[concepts/context-engineering]], [[concepts/bitter-lesson-harnessing]], [[entities/atal-upadhyay]], [[entities/kartik-labhshetwar]], [[entities/mitchell-hashimoto]], [[concepts/why-harness-development-boom]]
 sources: [
   "https://x.com/akshay_pachaar/status/2041146899319971922",
   "https://x.com/i/article/2041146899319971922",
@@ -18,8 +18,10 @@ sources: [
   "raw/articles/crawl-2026-04-18-token-economics.md",
   "raw/articles/2026-is-s3-faster-than-a-file-system.md",
   "raw/articles/2026-05-02_atalupadhyay-agent-harness.md",
-  "raw/articles/2026-05-06_vtrivedy10_strong-opinions-agent-harness-engineering.md",
-  "https://x.com/vtrivedy10/status/2052100726608781363"
+  - "raw/articles/2026-05-06_vtrivedy10_strong-opinions-agent-harness-engineering.md",
+  - "https://x.com/vtrivedy10/status/2052100726608781363",
+  - "raw/articles/2026-05-02_codekartik-why-everyone-building-agent-harness.md",
+  - "https://x.com/code_kartik/status/2050631735529095575"
 ]
 ---
 
@@ -223,6 +225,30 @@ The field is moving toward thinner harnesses as models improve. But the harness 
 
 These points extend the framework's core argument: the harness determines agency, not the model. As harnesses evolve toward skill-based composition and subagent-as-tool architectures, the design challenge shifts from "how do I run this agent" to "what tools/subagents do I configure for this task."
 
+## The Seven-Plane Production Harness (Kartik, May 2026)
+
+[[entities/kartik-labhshetwar|Kartik Labhshetwar]] proposed an alternative decomposition of a production harness into seven architectural planes in his essay "[Why Everyone Is Suddenly Building Their Own Agent Harness](https://x.com/code_kartik/status/2050631735529095575)":
+
+| # | Plane | Function | Key Insight |
+|---|-------|----------|-------------|
+| 1 | **Agent Loop** | ReAct, plan-execute, generate-test-repair | The heartbeat; all intelligence lives in the model |
+| 2 | **Tool Layer** | Purpose-built for LLMs, not humans | Replit switched from function calling to a restricted Python DSL → 90%+ valid call rate |
+| 3 | **Context & Memory** | Progressive disclosure with multi-timescale memory | Cursor spends weeks tuning per-model context behavior |
+| 4 | **Sandbox** | Permission-gated execution | Strict enforcement at the tool boundary |
+| 5 | **Multi-Agent** | Coordination and sub-agent orchestration | Each subagent returns condensed 1-2K token summaries |
+| 6 | **Evals & Tracing** | Product-specific evaluation and observability | Generic benchmarks (SWE-bench) miss product-specific failures |
+| 7 | **Prompt & Model Routing** | Dynamic model selection and prompt assembly | Frontier labs have structural conflict with efficiency optimizations |
+
+**The shared design pattern**: trust the LLM at the reasoning layer, enforce strictly at the tool boundary.
+
+This seven-plane view complements Upadhyay's 9-component framework (above) by focusing on the **production deployment** concerns — sandboxing, multi-agent coordination, and model routing — that become critical at scale but are often absent in reference implementations.
+
+### Scale Evidence
+
+When Claude Code's source map briefly leaked in March 2026, the harness (everything around the model) came to **~513,000 lines of TypeScript**. The actual model API call: a few lines. This 500,000:1 ratio of harness to model invocation is the clearest evidence that the harness — not the model — is where the engineering weight lives.
+
+The term "agent harness" was coined by [[entities/mitchell-hashimoto|Mitchell Hashimoto]] in early 2026. His definition: "Anytime an agent makes a mistake, you engineer a solution so it never makes that mistake again. That fix lives in the harness." See [[concepts/why-harness-development-boom]] for a synthesis of the structural forces driving harness development.
+
 ## The Harness Is the Backend (iii Paradigm)
 
 A radical alternative view emerged in April 2026 from the [[entities/iii-platform|iii platform]]: the harness should not be separate from the backend — it should **be** the backend.
@@ -245,5 +271,8 @@ This paradigm connects to the [[concepts/bitter-lesson-harnessing|Bitter Lesson 
 - [[concepts/agentic-ai-skills]] — Design principles for reusable agent capabilities
 - [[concepts/bitter-lesson-harnessing]] — How model intelligence affects harness complexity
 - [[concepts/context-engineering]] — Managing what the model sees and when
+- [[concepts/why-harness-development-boom]] — Why harness engineering is accelerating (five structural forces)
+- [[entities/kartik-labhshetwar]] — Author of "Why Everyone Is Suddenly Building Their Own Agent Harness"
+- [[entities/mitchell-hashimoto]] — Coined the term "agent harness"
 - [[concepts/unbundled-agents]] — Viv Trivedy's subagents-as-Tools pattern
 - [[entities/akshay-pachaar]] — Author of "The Anatomy of an Agent Harness"
