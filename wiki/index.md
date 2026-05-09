@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-09 | Total pages: 746 | Full entries: 745 | Stubs: 0 |
+> Last updated: 2026-05-09 | Total pages: 749 | Full entries: 748 | Stubs: 0 |
 
-## Entities (529 pages)
+## Entities (531 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/agreement-bug]] — Agreement is a Bug
@@ -16,6 +16,7 @@
 - [[entities/evis-drenova]] — Evis Drenova
 - [[entities/fintool]] — Fintool
 - [[entities/george-hotz]] — George Hotz (geohot)
+- [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
 - [[entities/grant-slatton]] — Grant Slatton
 - [[entities/hugo-bowne]] — Hugo Bowne-Anderson — Data scientist and AI privacy engineering writer. Co-author of "15 Privacy Questions Every AI Builder is Asking" with Katharine Jarmul.
 - [[entities/inspect]] — Inspect (Ramp)
@@ -264,6 +265,7 @@
 - [[entities/matduggan-com]] — **URL:** https://matduggan.com
 - [[entities/mathematical-methods]] — Philosophical paper by Terence Tao and Tanya Klowden on the impact of AI on mathematical practice and human thought (arXiv:2603.26524)
 - [[entities/matklad-github-io]] — **Blog** | matklad.github.io |
+- [[entities/matt-van-horn]] — Matt Van Horn — Hermes Agent community researcher. Author of "What People Are Actually Using It For" 30-day analysis.
 - [[entities/matx]] — AI chip startup founded by Reiner Pope, focusing on next-gen hardware for LLM training and inference.
 - [[entities/maurycyz-com]] — **Blog** | maurycyz.com |
 - [[entities/max-bernstein]] — **URL:** https://bernsteinbear.com
@@ -547,7 +549,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (197 pages)
+## Concepts (198 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -684,6 +686,7 @@
 - [[concepts/agent-harness-comparison]] — 8大AIエージェントハーネス（Claude Code/OpenCode/Pi/Codex/Copilot CLI/Droid/OpenClaw/Hermes Agent）の包括的比較ポータル。機能比較表、モデル互換性マトリクス、価格比較、ユースケースレコメンデーション、Harness Effect分析。
 - [[concepts/agent-harnesses]] — > **Core Thesis:** The less you build in your agent framework, the more it works. All the value is in the RL'd model, not your 10,000 lines of abstractions.
 - [[concepts/hermes-agent-architecture]] — Hermes Agent（v0.9.0）のアーキテクチャ詳細。AIAgent中心設計、3つのAPI実行モード、キャッシュ対応プロンプトアセンブリ、SQLite+FTS5永続状態、自己登録型ツールレジストリ、subagent delegation vs execute_code、14+プラットフォームGateway、共有プロバイダランタイム。agent-core-firstの能力蓄積システム。
+- [[concepts/hermes-agent-use-cases]] — Hermes Agentの7つの標準ユースケース（30日間コミュニティ分析）。3 Shared Properties（Scheduled/File-based/Push to messenger）、Self-Evolving Skill Loop。
 
 - [[concepts/agent-iam]]
 - [[concepts/agent-patterns]] — AIエージェントの一般的な設計パターンと実装プラクティス

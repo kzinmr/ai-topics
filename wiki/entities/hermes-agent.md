@@ -13,13 +13,14 @@ tags:
 status: complete
 description: "Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawから移行中のユーザーが増加。"
 created: 2026-04-27
-updated: 2026-04-30
+updated: 2026-05-09
 sources:
   - "https://x.com/i/article/2045080054917476451"
   - "raw/articles/2026-04-28_15-hermes-agent-features.md"
   - "https://x.com/i/article/2045935785661349956"
 related:
   - "[[concepts/harness-engineering]]"
+  - "[[concepts/hermes-agent-use-cases]]"
   - "[[concepts/polymarket-trading-agents]]"
   - "[[entities/openclaw]]"
   - "[[nous-research]]"

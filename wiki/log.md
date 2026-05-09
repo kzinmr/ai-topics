@@ -1,3 +1,23 @@
+## 2026-05-09 — ingest | Matt Van Horn "Hermes Agent: What People Are Actually Using It For"
+
+**Action**: Ingested X Article analyzing 30-day community usage of Hermes Agent across Reddit, X, and YouTube.
+
+### Files Created
+- `raw/articles/2026-04-19_mvanhorn_hermes-agent-use-cases-30days.md` — Full article content
+- `concepts/hermes-agent-use-cases.md` — 7 canonical workflows, 3 Shared Properties, Self-Evolving Skill Loop
+- `entities/matt-van-horn.md` — Author entity (stub)
+- `entities/gkisokay.md` — Key voice entity (stub)
+
+### Files Updated
+- `entities/hermes-agent.md` — Added cross-reference to use-cases concept; bumped updated date
+- `index.md` — Added 3 new pages, updated counts (Entities: 529→531, Concepts: 197→198, Total: 746→749)
+
+### Key Insights
+- 7 canonical Hermes workflows identified across 355+ community sources
+- All successful workflows share: Scheduled + File-based + Push to messenger
+- Self-evolving skill loop: 23 tool calls (1st run) → 6 (3rd run)
+- Our newsletter/blog cron pipelines map to Use Case #4/#5
+
 ## 2026-05-09 — active-crawl | Nemotron 3 Nano Omni, MiMo-V2.5-Pro, Qwen 3.6-35B-A3B, Sitecove SHIP
 
 **Action**: Active crawl researched trending AI topics and created pages for 4 major developments not yet covered.
