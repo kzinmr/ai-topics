@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-08 | Total pages: 733 | Full entries: 733 | Stubs: 0 |
+> Last updated: 2026-05-09 | Total pages: 735 | Full entries: 735 | Stubs: 0 |
 
 ## Entities (526 pages)
 
@@ -288,6 +288,7 @@
 - [[entities/nathan-lambert]] — Nathan Lambert is a Senior Research Scientist and **Post-Training Lead** at the **Allen Institute for AI (AI2)**. He previously worked at **HuggingFace** as a Research Scientist and RLHF Team Lead ...
 - [[entities/neel-nanda]] — **Website** | neelnanda.io | Mechanistic Interpretability researcher. MI Glossary, Quickstart Guide, Favourite Papers — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
 - [[entities/nemotron-cascade-2]] — NVIDIA's open-weight 30B MoE (3B active). Gold medal at IMO/IOI/ICPC 2025 via Cascade RL + Multi-Domain On-Policy Distillation. 24GB VRAM, 256K context, thinking/non-thinking modes, structured tool calling.
+- [[entities/niplav]] — niplav — LessWrong contributor, AI alignment researcher. Author of the [[concepts/glut-of-circuits|GLUT-of-circuits]] model of LLMs (2026). Agent structure problem, computation in superposition, circuit-level alignment.
 - [[entities/noam-brown]] — **Role** | Research Scientist, OpenAI |
 - [[entities/noetik]] — Noetik is a biotech AI company applying transformer models to oncology, specifically addressing the 95% clinical trial failure rate in cancer drug development. The company's core thesis: many "fail...
 - [[entities/nvidia-dgx-spark]] — Personal AI supercomputer powered by the NVIDIA GB10 Grace Blackwell Superchip. Designed for developers, data scientists, and researchers to prototype, fine-tune, and deploy AI models locally. Offi...
@@ -567,6 +568,7 @@
 - [[concepts/back-of-house-patterns]] — Back of House Multi-Agent Patterns
 - [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
 - [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling
+- [[concepts/coding-agents-complexity-budgets]] — Lee Robinson (Cursor) on abstraction costs in the AI agent era. Migrated cursor.com from CMS to raw code in 3 days with $260 in tokens. Complexity budget concept.
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst — Devinをデータ分析エージェントにする設計
 - [[concepts/context-graph]] — Context Graph
 - [[concepts/context-window-management]] — Context Window Management
@@ -576,12 +578,14 @@
 - [[concepts/dspy-tutorial]] — Hands-on DSPy getting started tutorial (Maxime Rivest): Signature → gold set → MIPROv2 optimization in ~50 lines yielding 20% precision improvement
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/gliclass]] — GLiClass
+- [[concepts/glut-of-circuits]] — niplav (2026) の GLUT-of-Circuits モデル：LLMは重ね合わせで計算される、深さ制限のある合成可能な誤り訂正回路の巨大ルックアップテーブル的コレクション。Agent構造問題・AIアライメント・トークンボトルネック・CoTへの含意。
 - [[concepts/harness-engineering]] — Harness Engineering
 - [[concepts/karpathy-loop]] — The Karpathy Loop — Autonomous Experiment Design
 - [[concepts/knowledge-shields]] — Knowledge Shields and Systems Understanding
 - [[concepts/korean-ai]] — Korean AI Ecosystem
 - [[concepts/learning-llms-in-2025]] — Learning LLMs in 2025 (Yoav Goldberg)
 - [[concepts/livecodebench]] — LiveCodeBench — LeetCode/AtCoder/CodeForcesから定期収集する汚染のないコーディングeval。コード生成・自己修復・実行予測の4シナリオ。ICLR 2025 Poster。
+- [[concepts/llm-as-judge-skills]] — Murat Can Koylan's reusable skills for LLM output evaluation. Part of Agent-Skills-for-Context-Engineering (15.5k stars). Context engineering approach to eval.
 - [[concepts/llm-course-roadmap]] — LLM Course Roadmap (Maxime Labonne)
 - [[concepts/llm-memory-architecture]] — LLM Memory Architecture
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
@@ -594,6 +598,7 @@
 - [[concepts/object-storage-queue]] — Object Storage Queue: S3のCASを利用した分散キュー実装パターン。Group Commit、Stateless Broker、HeartbeatによるJob Recovery。ゼロディスクアーキテクチャの応用。Absurd（PG Queue）との比較を含む。 — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/open-source-ai-destruction]] — Open Source AI Destruction
 - [[concepts/openclaw-architecture]] — OpenClawのアーキテクチャ詳細
+- [[concepts/openenv]] — Meta+HF partnership: open standard for agent environments (sandboxed tools, APIs, credentials). Integrates with TRL, TorchForge, verl, SkyRL. Environment Hub on Hugging Face.
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information（予測的V-情報）：観測者の計算制約を考慮したShannon情報理論の変分拡張。DPI違反、高次元でのPAC推定保証、構造学習・公平表現学習への応用（Xu et al., ICLR 2020）。
 - [[concepts/openrlhf]] — OpenRLHF: 最も初期のOSS RLHFライブラリの一つ。DeepSpeedベース、報酬モデルサポート充実。非同期訓練対応（--async_train）。
 - [[concepts/ifeval]] — IFEval — 指示追従評価。25種の検証可能な指示タイプ、~500プロンプト。決定論的評価。Qwen3.5-27Bが95.0%でリード。上位モデルで飽和傾向。
@@ -609,9 +614,11 @@
 - [[concepts/cloudflare-llm-infrastructure]] — Cloudflare's custom LLM inference stack — PD disaggregation, Infire Rust engine, Mooncake KV-cache, speculative decoding. 3x latency improvement, 80% cache hit ratio.
 - [[concepts/claude-code-auto-mode]] — Claude Codeのauto mode。Sonnet 4.6ベースの2段階transcript分類器（Stage 1: 高速シングルトークンフィルタ → Stage 2: CoT推論）が人間承認者を代替。prompt injection probeとの2層防御で、危険行動をブロックしつつ許可プロンプトを最小化。FPR 0.4%、実overeager行動の83%捕捉。Deny-and-continue設計。
 - [[concepts/claude-code-sandboxing]] — Claude CodeのOSレベルサンドボックス。Linux bubblewrap/macOS seatbeltでファイルシステム+ネットワーク隔離。許可プロンプト84%削減。Claude Code on the Web（クラウド隔離実行）を含む。オープンソース化。
+- [[concepts/claude-diary]] — Lance Martin's Claude Code plugin for agent continual learning. Diary entries → reflection → CLAUDE.md updates. Implements CoALA/Generative Agents memory patterns.
 - [[concepts/claude-managed-agents]] — Anthropic's Managed Agents platform: memory stores (file-as-memory), multi-agent orchestration (coordinator + 20 sub-agents), outcomes loop (rubric-driven grader), Dreams (memory curation), webhooks (push notifications). GA with Dreams in Research Preview.
 - [[concepts/claude-model-family]] — Build with Claude — Developer Guide — Anthropic開発者ガイドの4本柱（Quick Start / Advanced Capabilities / Architectural Patterns / Optimization）に従った実践的リファレンス。Extended Thinking / Vision / Computer Useの使いどころ、Tool Use / MCP / Agents & Skills / RAGの設計指針、Prompt Engineering / Caching / Evalsの最適化技法。モデルタイムライン・3階層リファレンス・エコシステム概要はAppendixに集約。
 - [[concepts/claude-think-tool]] — Claudeの「think」ツール。複雑なツールチェーン中に専用の思考スペースを提供。Extended Thinking（応答前の深い事前検討）とは異なり、応答生成中の外部情報処理に焦点。τ-Bench Airline domainでbaseline比+54%（pass^1: 0.332→0.584）。2025年12月時点ではExtended Thinkingの改善により推奨度低下。
+- [[concepts/closing-the-software-loop]] — Benedict Brady on automated software improvement loops. From user feedback → agent implementation → deployment, inspired by Karpathy's "operation vacation". Three phases of dev loop evolution.
 - [[concepts/coalitional-agency]] — Richard Ngo の提唱する「スケールフリーな知的エージェンシー理論」。知性は競争と協調を行うサブエージェントの連合体（coalition）として成立し、この原理はニューロンから文明まで普遍的に適用される。EUM と Active Inference の両方を批判的に統合。予測市場・オークション・投票による内部調整メカニズムを提案。
 - [[concepts/accelerate]]
 - [[concepts/deepclaude]] — Open-source tool enabling Claude Code's agent loop with DeepSeek V4 Pro, demonstrating agent framework interoperability.
@@ -642,12 +649,14 @@
 - [[concepts/moe-training-noumena-methodology]] — Noumena Network's 12-post MoE training research program. Speedrun loop, eval-gated autoresearch, routing collapse ≠ quality collapse, per-expert LR tuning, RDEP.
 - [[concepts/moloch-multipolar-trap]] — Scott Alexander's concept: competitive dynamics that force all agents to sacrifice shared values, resulting in outcomes everyone hates but no one can escape. 14 real-world examples (prisoner's dilemma, capitalism, arms races, cancer). Central to AI existential risk discourse — technology erodes the four restraining factors (excess resources, physical limits, utility maximization, coordination), making superintelligence the ultimate multipolar trap.
 - [[concepts/programmatic-tool-calling]] — Programmatic Tool Calling — LLM Writing Code that Calls Tools
+- [[concepts/prompt-caching]] — How prompt caching works under the hood: paged attention, automatic prefix caching (APC), KV-cache reuse. Practical tips for maximizing cache hits with LLM providers. Based on vLLM internals.
 - [[concepts/pydantic-ai-harness]] — pydantic-ai-harness — Official Capability Library for Pydantic AI
 - [[concepts/pytorch-fsdp]] — PyTorch FSDP (Fully Sharded Data Parallel)
 - [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation)
 - [[concepts/rag-not-dead-series]] — RAG Is Not Dead — 7-Part Series
 - [[concepts/rag-systems]] — RAG Systems
 - [[concepts/raindrop]] — Raindrop — AI Agent Monitoring & Observability Platform
+- [[concepts/ramp-inspect]] — Ramp Inspect: background coding agent with autonomous verification loop. ~30% of Ramp PRs. Modal sandbox VMs, multi-modal interface (Slack, Chrome ext, web, VS Code, PR).
 - [[concepts/ragen]] — RAGEN: veRLベースのエージェントRL拡張。明示的な環境インターフェースを追加し、カスタム環境でのマルチターンRLを容易に。
 - [[concepts/recursive-self-improvement]] — AI systems autonomously designing and training successor models. Jack Clark's 60% probability by end 2028. Compounding alignment risk, SWE-Bench 93.9% evidence.
 - [[concepts/rdep]] — Research Dispatch/Expert Parallelism — direct CUDA IPC dispatch/return replacing NCCL all-to-all for single-node MoE training. B200-first.
@@ -683,6 +692,7 @@
 - [[concepts/chartqa]] — ChartQA — チャート理解QAベンチマーク。Statista/Pew/OECD等から収集した実チャート。32.7K QAペア。ノイジーなテストデータが問題。
 - [[concepts/china-agentic-coding-sprint]] — China's rapid convergence on SWE-Bench Pro: Kimi K2.6, MiniMax M2.7, Z.ai GLM-5.1 all scoring 56-59 in 12-day window. Open weights, below Western pricing. "China is 6-9 months behind" framing no longer holds.
 - [[concepts/context-providers]] — エージェントとツールの間にあるコンテキスト供給レイヤーの設計パターン
+- [[concepts/context-repositories]] — Letta's git-based agent memory: local filesystem + git versioning. Progressive disclosure via file hierarchy + YAML frontmatter. Multi-subagent concurrent memory via git worktrees.
 - [[concepts/contextual-retrieval]] — AnthropicのRAG改善手法。チャンクembedding/BM25インデックス化前にClaudeで文書全体の文脈を自動付加。Contextual Embeddings + Contextual BM25の組み合わせで検索失敗率49%削減、reranking追加で67%削減。Prompt Caching活用で100万ドキュメントトークンあたり$1.02。
 - [[concepts/enterprise-ai-deployment-jv]] — Both OpenAI ($4B "The Deployment Company") and Anthropic ($1.5B with Blackstone/Goldman Sachs) forming JVs with PE firms to build deployment services arms. Model competition expanding to deployment competition.
 - [[concepts/entropix]] — xjdr's entropy-based adaptive LLM sampling (3.4K ⭐). Uses entropy/varentropy quadrant to select sampling strategy at inference time. Training-free CoT simulation.
@@ -691,6 +701,7 @@
 - [[concepts/mrcr]] — MRCR — Multi-Round Coreference Resolution。複数needleの長文コンテキストeval。Google DeepMindのLSQフレームワーク発。OpenAIがOSS版を公開。Claude Opus 4.6が8-needle 1Mで93%。
 - [[concepts/multi-turn-tool-use-rl]] — Multi-Turn Tool Use with RL: GRPOを用いてLLMエージェントにマルチターンツールオーケストレーションを教える手法。Bespoke LabsがBFCL v3で+23%達成（Qwen2.5-7B, 100サンプル）。報酬設計のLess is More、過長フィルタリング+KL 0.001。
 - [[concepts/normalization-of-deviance-in-ai-coding]] — Risk of gradually trusting AI-generated code without review, coined from Diane Vaughan's Challenger disaster framework. Each successful unreviewed deployment reinforces trust, creating security/quality risk. AI agents lack professional reputation/accountability.
+- [[concepts/notion-mcp]] — Notion MCP: official Notion MCP server (https://mcp.notion.com/mcp). Setup guides for Claude Code, Cursor, VS Code, Windsurf, ChatGPT, Codex. OAuth 2.0 authentication.
 - [[concepts/nemo-rl]] — NeMo-RL (NVIDIA): クリーンなインターフェースとモジュラー設計のRLフレームワーク。マルチターンRL対応、SFT+DPO+GRPO、FSDP/Megatron。
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
@@ -712,6 +723,7 @@
 - [[concepts/verifiers-rl]] — Verifiers: TRLベースのマルチターンRLフレームワーク。HuggingFace Trainer上のGRPOで、環境・マルチターンツール使用に対応。研究用途に人気。
 - [[concepts/constitutional-ai]] — Anthropic's methodology for aligning AI via explicit principles (Constitution). Compared with OpenAI Model Spec by Boaz Barak (Jan 2026). Three poles of alignment: Principles, Policies, Personality.
 - [[concepts/countbenchqa]] — CountBenchQA — 超シンプルなオブジェクトカウンティングベンチマーク。LAION-400Mから手動検証。2-10個の物体。データ品質は最高。
+- [[concepts/craft-agents]] — Craft Agents: open-source agent interface. Works with Claude, ChatGPT, OpenRouter, local models. Built-in Chromium browser, MCP support, Claude Code skill import. Multi-provider via Vercel AI SDK.
 - [[concepts/data-analysis-agents]] — AIデータ分析エージェントの包括的概念。データ探索→スキーマ理解→クエリ生成→実行→検証→可視化→報告のパイプライン。OpenAI社内データエージェント（GPT-5.2）とCognition DANA/Devinの2大アプローチを比較。DWHセマンティックレイヤー・ゴールデンクエリとの関係性も含む。
 - [[concepts/db9-filesystem-sql]]
 - [[concepts/factorio-learning-environment]] — Factorio Learning Environment (FLE) — Factorioゲームを模したエージェントeval。コード+REPLで操作、ビジョン不要。24のlab-playタスク。NeurIPS 2025。

@@ -1,150 +1,88 @@
 ---
-title: "Prompt Caching Strategies"
-tags: [caching-performance-cost-optimization]
-created: 2026-04-13
-updated: 2026-04-24
+title: "Prompt Caching (Paged Attention & Automatic Prefix Caching)"
 type: concept
+created: 2026-05-09
+updated: 2026-05-09
+status: L2
+tags: [kv-cache, inference, optimization, ai-infrastructure]
+sources:
+  - "[[raw/articles/2025-11-30_sankalp_prompt-caching-internals]]"
+related:
+  - "[[concepts/kv-cache]]"
+  - "[[concepts/vllm]]"
+  - "[[concepts/speculative-decoding]]"
+  - "[[concepts/llm-inference]]"
 ---
 
-# Prompt Caching Strategies
+# Prompt Caching (Paged Attention & Automatic Prefix Caching)
 
-LLM API呼び出しにおけるキャッシングの設計パターン。コスト削減とレイテンシ改善のために、どの部分をキャッシュし、いつ無効化するかを体系的に扱う。
+Prompt caching（プロンプトキャッシング）は、LLMプロバイダーが同一のプロンプトプレフィックスに対して事前計算されたKVキャッシュを再利用し、冗長な計算をスキップする最適化技術。
 
-## Core Concept
+## なぜ重要なのか
 
-LLMのAPI呼び出しには**静的部分**と**動的部分**が存在する：
+- **コスト削減**: キャッシュヒット時はprefill計算が不要 → トークンあたりのコストが大幅に低下（Anthropicではキャッシュ書き込みは25%増、読み取りは90%減）
+- **レイテンシ低減**: prefillフェーズをスキップ → 初回トークンまでの時間（TTFT）が短縮
+- **エージェントのシステムプロンプト最適化**: 長いシステムプロンプト + ツール定義をキャッシュさせることで、エージェントのセッション全体で高速化
 
-```
-[Static: システムプロンプト, few-shot例, ドメイン知識]
-+
-[Dynamic: ユーザー入力, 最新コンテキスト]
-→
-キャッシュ可能な部分 = Static
-```
+## 内部動作
 
-## Caching Levels
+### KVキャッシュの基本
 
-### Level 1: Static Prefix Caching
-
-システムプロンプトやテンプレートをキャッシュ：
-- 同一プロンプトの再利用
-- バージョン管理で更新検知
-- TTL（Time To Live）で鮮度管理
-
-### Level 2: Semantic Caching
-
-意味的に類似した入力をキャッシュ：
-- 埋め込みベースの類似度検索
-- 閾値（例: 0.9以上）でキャッシュヒット判定
-- 微妙な違いでも別のキャッシュエントリ
-
-### Level 3: Partial Response Caching
-
-応答の一部を再利用：
-- 共通の出力的構造をキャッシュ
-- 動的部分のみ再生成
-- テンプレート+穴埋めパターン
-
-### Level 4: Tool Call Caching
-
-ツールの実行結果をキャッシュ：
-- 同一パラメータの呼び出し結果
-- 外部APIの応答キャッシュ
-- ファイルI/Oの結果保持
-
-## Invalidation Strategies
-
-| Strategy | When to Use | Trade-off |
-|----------|-------------|-----------|
-| TTLベース | 時間経過で陳腐化するデータ | 期限前に更新される可能性 |
-| バージョンベース | プロンプト変更時 | 厳密だが管理コスト |
-| LRU | メモリ制限がある場合 | 古い有用なデータが消える |
-| 意味的変更検知 | ドリフトが重要な場合 | 検知アルゴリズムが必要 |
-
-## Implementation Patterns
-
-### Cache Key Design
+デコーダートランスフォーマーでは、各トークン生成時に過去の全トークンのKey/Valueテンソルを再利用する。これがKVキャッシュ。
 
 ```
-cache_key = hash(
-    prompt_template_version +
-    system_prompt_hash +
-    few_shot_examples_hash +
-    tool_definitions_hash
-)
+prefill phase: 全プロンプトトークンを並列処理 → KVキャッシュ生成 (compute-bound)
+decode phase:   1トークンずつ自己回帰生成 → KVキャッシュ参照 (memory-bound)
 ```
 
-### Cache Storage
+### Paged Attention (vLLM)
 
-- **インメモリ**: 高速だが永続化されない
-- **ディスク**: 永続化だが遅い
-- **Redis/外部ストア**: 分散環境向け
-- **階層キャッシュ**: ホットはメモリ、コールドはディスク
+従来のKVキャッシュ割り当ての問題:
+- 各シーケンスに最大長分の連続メモリを事前確保 → **断片化と無駄**
+- 可変長シーケンスに非効率
 
-### Cache Hit Optimization
-
-- プロンプトの正規化（空白・改行の統一）
-- 意味的等価性の判定
-- キャッシュウォーミング（事前ロード）
-
-## Metrics to Track
-
-1. **Cache Hit Rate**: どの程度キャッシュが再利用されているか
-2. **Cost Savings**: キャッシングによる費用削減額
-3. **Latency Reduction**: 応答時間の改善
-4. **Stale Cache Rate**: 古いキャッシュが使用された割合
-
-## Related
-
-- [[concepts/evaluation-flywheel]] — Evaluation Flywheel
-- [[concepts/context-window-management]] — Context Window Management
-- [[concepts/inference-speed-development]] — Inference Speed Development
-- [[concepts/agentic-scaffolding]] — Agentic Scaffolding
-
-## Claude Code Production Caching Lessons (Anthropic, 2026)
-
-Claude Code builds its entire harness around prompt caching. A high cache hit rate decreases costs and enables generous rate limits — they run alerts on cache hit rate and declare SEVs if it's too low. Key production lessons:
-
-### Static First, Dynamic Last — Order Is Everything
-
-Prompt caching works by prefix matching — the API caches everything from the start of the request up to each `cache_control` breakpoint. For Claude Code:
+Paged Attentionの解決策（OSの仮想メモリに着想）:
+- KVキャッシュを**固定サイズのブロック**に分割
+- **ブロックテーブル**で論理→物理ブロックをマッピング
+- 必要に応じてブロックを動的割り当て → メモリ無駄ゼロ
 
 ```
-Static system prompt & Tools (globally cached)
-→ Claude.MD (cached within a project)
-→ Session context (cached within a session)
-→ Conversation messages (dynamic)
+シーケンス: [tok1, tok2, tok3, tok4, tok5]
+ブロック (size=2): [Block A: tok1-2] [Block B: tok3-4] [Block C: tok5]
+ブロックテーブル: [A, B, C]
 ```
 
-**Fragility alert**: This ordering can break from: putting a timestamp in the static system prompt, shuffling tool order non-deterministically, updating tool parameter definitions, etc.
+### Automatic Prefix Caching (APC)
 
-### Use Messages for Updates, Not Prompt Changes
+Paged Attentionのブロック構造を活用:
+1. 各ブロックの内容をハッシュ化
+2. 新しいリクエストのプレフィックスブロックを既存キャッシュと照合
+3. **最長共通プレフィックス（Longest Common Prefix）**までキャッシュヒット
+4. 残りのみprefill
 
-When information becomes stale (time changes, user edits a file), do NOT update the prompt — that causes a cache miss. Instead, insert `<system-reminder>` tags in the next user message or tool result (e.g., "it is now Wednesday"). This preserves the cache.
+```
+Request 1: [sys prompt] [user: "translate A"] [assistant: "翻訳A"]
+Request 2: [sys prompt] [user: "translate B"]
+→ sys prompt部分がキャッシュヒット
+```
 
-### Never Change Models Mid-Session
+## 最適化のヒント
 
-Prompt caches are unique to models. If you're 100K tokens into a conversation with Opus and want a simple question answered, switching to Haiku is **more expensive** because the cache must be rebuilt. If you need model switching, use subagents with handoff messages.
+1. **静的な部分を前方に**: システムプロンプト、ツール定義、静的コンテキストは常にメッセージ配列の先頭に配置
+2. **動的コンテンツを後方に**: ユーザー固有データ、検索結果など変動する部分は末尾に
+3. **同じシステムプロンプトを全セッションで共有**: 異なるユーザー間でもキャッシュが共有される
+4. **画像/ファイルはキャッシュを破壊**: マルチモーダルコンテンツはプレフィックスに配置しない
 
-### Never Add or Remove Tools Mid-Session
+## 主要プロバイダーの対応
 
-Changing the tool set invalidates the cache for the entire conversation — one of the most common cache-breaking mistakes.
+| プロバイダー | 方式 | 特徴 |
+|-------------|------|------|
+| Anthropic | 独自実装 | キャッシュ書き込み25%増/読み取り90%減、最小1024トークン |
+| OpenAI | 自動キャッシュ | 直近のリクエストと重複するプレフィックスを自動検出、50%割引 |
+| DeepSeek | ディスクキャッシュ | KVキャッシュをSSDにオフロード、超長コンテキスト対応 |
+| GoogleGemini | コンテキストキャッシュ | 明示的なキャッシュ作成API、TTLベース |
 
-### Plan Mode — Design Around the Cache
+## 参照
 
-Instead of swapping tool sets when entering plan mode (which breaks cache), Claude Code keeps ALL tools in the request at all times and uses `EnterPlanMode`/`ExitPlanMode` as tools themselves. The model can autonomously enter plan mode when it detects a hard problem — no cache break.
-
-### Tool Search — Defer Instead of Remove
-
-For dozens of MCP tools: send lightweight stubs (`defer_loading: true`) that stay in the prefix. The model discovers full schemas via a `ToolSearch` tool when needed. Same stubs, same order → stable cache.
-
-### Cache-Safe Forking (Compaction)
-
-When compacting the context window, use the **exact same system prompt, tools, and history** as the parent conversation. Append the compaction prompt as a new user message at the end. From the API's perspective, this looks nearly identical to the parent's last request — cached prefix is reused. The only new tokens are the compaction prompt itself.
-
-### Monitor Cache Hit Rate Like Uptime
-
-Claude Code treats cache breaks as incidents. A few percentage points of cache miss rate can dramatically affect cost and latency. **Build your agent around prompt caching from day one.**
-
-Source: [[entities/claude-code]] engineering team, "Lessons from Building Claude Code: Prompt Caching Is Everything" (April 2026)
-
+- [How prompt caching works — sankalp's blog](https://sankalp.bearblog.dev/how-prompt-caching-works/) (2025-11-30) — Paged Attention + APCの詳細解説
+- vLLM論文: [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180) (Kwon et al., 2023)

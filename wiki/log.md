@@ -1,3 +1,38 @@
+## 2026-05-09 | GLUT-of-Circuits 概念ページ + niplav エンティティページ作成
+
+**Action**: LessWrong 記事「LLMs as Giant Lookup-Tables of Shallow Circuits」(niplav, 2026-03-17, 95 points) を wiki に取り込み。
+
+**New concept page**:
+- [[concepts/glut-of-circuits]] — niplavの「GLUT-of-Circuits」モデル: LLMは重ね合わせで計算される、深さ制限(≤20,000シリアルステップ)・合成可能・誤り訂正回路の巨大ルックアップテーブル的コレクション。7本柱 (lookup-table-like, circuits, comp-in-sup, superlinear, depth-limited, composeable, error-correcting)。アライメント含意 (Category I→II問題への転換、whac-a-mole有効性)、Token Bottleneck (~8-10 bits)、CoTの危険性。Hänni et al. 2024定理に基づく理論的基盤。
+
+**New entity page**:
+- [[entities/niplav]] — LessWrong contributor、AIアライメント研究者。GLUT-of-circuitsモデル提唱者。Agent構造問題・重ね合わせ計算・回路レベルアライメントを研究。
+
+**Raw article**: `raw/articles/2026-03-17_lesswrong_giant-lookup-tables-of-shallow-circuits.md`
+
+**Cross-references**: [[concepts/rlhf]], [[concepts/constitutional-ai]], [[concepts/chain-of-thought]], [[concepts/reward-hacking]]
+
+## 2026-05-09 02:41 (x-bookmarks-ingest recovery)
+
+**X Bookmarks Batch Recovery** — 89 bookmarks recovered from failed x-bookmarks-ingest cron run (blocked by U+200B in bookmark text). 14 had external URLs and were processed; 75 are X-native posts saved as metadata.
+
+### Pages Created (10 concept pages)
+- `[[concepts/prompt-caching]]` — Paged attention, automatic prefix caching, vLLM internals
+- `[[concepts/context-repositories]]` — Letta's git-based agent memory architecture
+- `[[concepts/claude-diary]]` — Lance Martin's Claude Code plugin for agent continual learning
+- `[[concepts/coding-agents-complexity-budgets]]` — Lee Robinson on abstraction costs in AI agent era
+- `[[concepts/closing-the-software-loop]]` — Benedict Brady on automated dev loop evolution
+- `[[concepts/ramp-inspect]]` — Ramp's background coding agent (~30% PRs)
+- `[[concepts/openenv]]` — Meta+HF open standard for agent environments
+- `[[concepts/craft-agents]]` — Open-source multi-model agent interface
+- `[[concepts/notion-mcp]]` — Official Notion MCP server setup guide
+- `[[concepts/llm-as-judge-skills]]` — Context engineering approach to LLM evaluation
+
+### Raw Articles Saved
+14 scraped articles + 1 metadata dump (89 bookmarks) saved to `wiki/raw/articles/`.
+
+### Fix
+`fetch_x_bookmarks.py`: Added `_sanitize_text()` + `_sanitize_bookmark()` to strip invisible Unicode (U+200B etc.) from bookmark text before JSON output. Root cause: X API returns zero-width spaces in copied text.
 ## 2026-05-08 | Open Source RL Libraries — 9概念ページ + 比較ポータル作成
 
 **Action**: Anyscaleブログ「Open Source RL Libraries for LLMs」(Tyler Griggs + Philipp Moritz, 2025-07-01)をwikiに取り込み。10のRLライブラリを網羅的にカバー。
