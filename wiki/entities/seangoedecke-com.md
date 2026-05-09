@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-08
+updated: 2026-05-09
 type: entity
 ---
 
@@ -172,6 +172,10 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 
 ## Recent Articles
 
+- **AI makes weak engineers less harmful** (2026-05-08): Argues that frontier LLMs have raised the floor for weak engineers — instead of producing completely broken PRs, they now produce "standard LLM pull requests: wrong in some ways, baffling in others, but at least functional on the line-by-line level." Notes the phenomenon of engineers becoming "thin wrappers around Claude Code," communicating via Slack rather than direct interaction. Predicts a future push to measure "what value engineers are adding to AI" rather than just AI's value to engineers. Crucially observes that "no strong engineers use AI tools like this" — the wrapper phenomenon is limited to those for whom it represents an improvement.
+
+- **Notes on incidents** (2026-05-08): Practical wisdom from incident response experience. Key insights: (1) Most incidents resolve on their own — well-designed systems self-heal via Kubernetes restarts, circuit breakers, and queue buffering. (2) Most incident-resolving actions make incidents worse — engineers jump too quickly to "fix" things, often creating secondary incidents. (3) The first thing you should do in an incident is **nothing** — take time to understand before acting. (4) Effective incident-resolving actions are often dull — typically disabling a feature flag or reverting a change. (5) Knowledge of the system beats raw intelligence — one familiar engineer outperforms five strangers. (6) Resolving incidents buys political credit but isn't a durable power position — executives can't claim incident successes as their own.
+
 - **Many anti-AI arguments are conservative arguments** (2026-04-18): Argues that the substance of most anti-AI rhetoric aligns with conservative/right-wing worldviews despite being framed in progressive language. Political coding inversion analysis with implications for AI policy coalitions.
 
 
@@ -221,5 +225,7 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 - seangoedecke.com--working-on-products-people-hate--9dead82f
 - seangoedecke.com--you-cant-design-software-you-dont-work-on--1c498a63
 
-- seangoedecke-anti-ai-conservative-2026-04-18
-- seangoedecke.com--why-hasnt-longer-horizon-training-slowed-ai-progress--6cc7ecad
+|- seangoedecke-anti-ai-conservative-2026-04-18
+|- seangoedecke.com--ai-makes-weak-engineers-less-harmful--e25ee659
+|- seangoedecke.com--notes-on-incidents--f92d1b32
+|- seangoedecke.com--why-hasnt-longer-horizon-training-slowed-ai-progress--6cc7ecad

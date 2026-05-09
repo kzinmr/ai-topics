@@ -1,3 +1,38 @@
+## 2026-05-09 | Blog Ingest — 36 new articles collected, wiki pages updated
+
+**Action**: Scheduled blog ingest collected 36 new articles from 20 blogs. 20 articles saved as raw files. Key AI-relevant articles processed and wiki entities updated.
+
+### Pages Created (1 entity page)
+- `[[entities/luke-curley]]` — Discord/Twitch engineer, MoQ Working Group participant. WebRTC criticism for voice AI, advocates Media over QUIC. Key insight: WebRTC drops packets to maintain latency, but LLM voice prompts benefit from accuracy over sub-millisecond delay.
+
+### Pages Updated (2 entity pages)
+- `[[entities/thariq-shihipar]]` — Added HTML Artifacts Advocacy section (May 2026). Arguments for HTML over Markdown as AI agent output format: SVG diagrams, interactive widgets, color-coded annotations. Updated blog table with new entry.
+- `[[entities/seangoedecke-com]]` — Added two new articles: "AI makes weak engineers less harmful" (engineers as thin Claude Code wrappers, raised floor for weak engineers) and "Notes on incidents" (most incidents resolve themselves, first action should be nothing, system knowledge beats raw intelligence).
+
+### Raw Articles Saved (20 files)
+- `simonwillison.net--2026-may-9-luke-curley--642b0f39.md` — Luke Curley quote on WebRTC dropping prompts
+- `simonwillison.net--2026-may-8-unreasonable-effectiveness-of-html--182ffaf8.md` — Thariq Shihipar's HTML advocacy
+- `wheresyoured.at--premium-ais-circular-psychosis--51c035f1.md` — AI's Circular Psychosis (premium)
+- `seangoedecke.com--ai-makes-weak-engineers-less-harmful--e25ee659.md` — Weak engineers, AI wrappers
+- `seangoedecke.com--notes-on-incidents--f92d1b32.md` — Incident response wisdom
+- `lucumr.pocoo.org--2026-5-8-local-models--ebab17f3.md` — Armin Ronacher on local models
+- `garymarcus.substack.com--p-agents-and-roi--dfad7c8d.md` — Gary Marcus on agents and ROI
+- `matklad.github.io--2026-05-08-steering-zig-fmt-html--0c396db9.md` — Zig fmt steering
+- `nesbitt.io--2026-05-08-weekend-at-bernies-html--d8395bd1.md` — Weekend at Bernie's
+- `johndcook.com--blog-2026-05-08-calculating-curvature--e75e8622.md` — Calculating curvature
+- `jeffgeerling.com--blog-2026-homepod-mini-feels-like-magic--7a56a8a5.md` — HomePod mini timing
+- `susam.net--no-query-strings-html--075697c6.md` — No query strings in URLs
+- `susam.net--code-news-wander-0-6-0-html--284ffba8.md` — Wander Console 0.6.0
+- `pluralistic.net--2026-05-08-gung-gung--513d2f35.md` — Lee Lai's Cannon
+- `dwarkesh.com--p-david-reich-2--6c65332c.md` — David Reich on Bronze Age
+- `filfre.net--2026-05-this-week-on-the-analog-antiquarian--cc92f97d.md` — Analog Antiquarian
+- `idiallo.com--blog-hi--a1457119.md` — Hi stranger
+- `jyn.dev--talks-flower--f23f5136.md` — Flower SSG Clojure talk
+- `dfarq.homeip.net--dell-buys-alienware-may-8-2006--97e178aa.md` — Dell buys Alienware 2006
+- `berthub.eu--articles-posts-orwell-review-bertrand-russells-power--ec61443d.md` — Orwell on Russell's Power
+
+**Cross-references**: [[concepts/webrtc]], [[entities/luke-curley]], [[concepts/moq-transport]], [[entities/thariq-shihipar]], [[entities/seangoedecke-com]], [[entities/armin-ronacher]], [[entities/gary-marcus]]
+
 ## 2026-05-09 | GLUT-of-Circuits 概念ページ + niplav エンティティページ作成
 
 **Action**: LessWrong 記事「LLMs as Giant Lookup-Tables of Shallow Circuits」(niplav, 2026-03-17, 95 points) を wiki に取り込み。

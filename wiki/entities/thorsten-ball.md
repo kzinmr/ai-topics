@@ -22,7 +22,7 @@ Thorsten Ball is a software engineer, technical author, and newsletter writer ba
 
 - **Books**: *Writing An Interpreter In Go* (2016) and *Writing A Compiler In Go* — self-published, widely praised for clarity and hands-on approach
 - **Newsletter**: [Register Spill](https://registerspill.thorstenball.com) — weekly digest of software engineering insights (8,000+ subscribers)
-- **Current**: Works remotely at [[entities/sourcegraph]] on [Amp](https://ampcode.com)
+- **Current**: Works remotely at [[entities/sourcegraph]] on [[entities/amp|Amp]] (ampcode.com), where he leads the coding agent product. Authored the influential "[[concepts/harness-commoditization|The Coding Agent Is Dead]]" manifesto (Feb 2026) and architected the [[concepts/amp-neo|Amp Neo]] rebuild (May 2026).
 - **Previous**: Worked at [[entities/zed|Zed]] on the Zed code editor
 - **Social**: [@thorstenball](https://twitter.com/thorstenball) on X/Twitter, @mrnugget on GitHub/Mastodon
 

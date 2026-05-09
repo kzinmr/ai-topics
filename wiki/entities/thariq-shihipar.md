@@ -6,14 +6,11 @@ created: 2026-04-10
 updated: 2026-04-10
 tags:
   - person
-  - ai
-  - company
-  - tech
   - anthropic
   - ai-agents
-  - mit-media-lab
   - interpretability
-sources: []
+  - company
+---
 ---
 
 
@@ -174,10 +171,22 @@ An accessible explanation of XJDR's uncertainty detection technique:
 | **Pubpub.org** | Non-profit academic publishing platform (co-founded) |
 | **LLM-Powered Sorting with TrueSkill** | Sorting large datasets using LLMs and TrueSkill ranking |
 
+### HTML Artifacts Advocacy (May 2026)
+
+Shihipar has been advocating for **HTML as the primary output format for AI agents** rather than Markdown, as noted by Simon Willison in "The Unreasonable Effectiveness of HTML" (May 2026). His key arguments include:
+
+- **Rich, self-contained outputs**: HTML allows LLMs to embed SVG diagrams, interactive widgets, in-page navigation, and color-coded severity annotations directly in their responses
+- **Token efficiency is less relevant now**: With modern large context windows, the token cost difference between HTML and Markdown is negligible compared to the expressive benefits
+- **Better for code review and technical explanations**: HTML artifacts can render actual diffs with inline margin annotations, making complex technical concepts clearer
+- **Practical examples**: His approach has been demonstrated through PR review artifacts, security exploit explanations (copy.fail), and interactive technical documentation
+
+This represents a broader shift in AI engineering toward richer output formats, challenging the default assumption that Markdown is always optimal for LLM responses. The approach complements his earlier work on **Skills** and **Context Engineering** by providing a more expressive medium for agent outputs.
+
 ## Blog / Recent Posts
 
 | Date | Title | Theme |
 |------|-------|-------|
+| 2026-05-08 | The Unreasonable Effectiveness of HTML (via Simon Willison) | Technical — Advocating for HTML over Markdown for rich AI agent outputs |
 | 2026-03-28 | ✦ Clay and Light | Spiritual — Two modes of being: driven by desire or moved by inexplicability |
 | 2026-02-22 | A Lovely Autumn Night | Reflection — How ambition changes shape from climbing towers to caring for people |
 | 2026-02-14 | The Thing | Courage — We're all bottlenecked by courage; being smart rarely helps |
