@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-09 | Total pages: 739 | Full entries: 738 | Stubs: 0 |
+> Last updated: 2026-05-09 | Total pages: 746 | Full entries: 745 | Stubs: 0 |
 
-## Entities (526 pages)
+## Entities (529 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/agreement-bug]] — Agreement is a Bug
@@ -295,6 +295,7 @@
 - [[entities/nvidia-dgx-spark]] — Personal AI supercomputer powered by the NVIDIA GB10 Grace Blackwell Superchip. Designed for developers, data scientists, and researchers to prototype, fine-tune, and deploy AI models locally. Offi...
 - [[entities/nvidia-nemoclaw]] — NVIDIA NemoClaw is a secure AI agent development framework designed for running AI agents with enterprise-grade isolation. It bundles **OpenShell** (sandbox runtime), **OpenClaw** (agent framework)...
 - [[entities/nvidia-openshell]] — NVIDIA OpenShell: secure agent execution environment providing OS-level sandboxing, deny-by-default security policies, YAML-based access control. Reference implementation of the "Open Runtime" layer in Harrison Chase's framework.
+- [[entities/nvidia-nemotron-3-nano-omni]] — NVIDIA Nemotron 3 Nano Omni: fully open-source multimodal MoE model (30B-A3B) unifying video, audio, image, and text. Functions as perception sub-agent in agentic systems.
 - [[entities/nvidia]] — NVIDIA is a semiconductor and AI infrastructure company. In the context of this wiki, NVIDIA is significant for:
 - [[entities/microsoft]] — **Type** | AI Research & Product Company | Cloud infrastructure leader with Azure, GitHub Copilot, and OpenAI partnership renegotiated April 2026.
 - [[entities/mit-ibm-computing-research-lab]] — Joint MIT-IBM research lab (Apr 2026) exploring convergence of AI, algorithms, and quantum computing. Successor to MIT-IBM Watson AI Lab.
@@ -414,6 +415,8 @@
 - [[entities/will-mcgugan]] — **X** | @willmcgugan |
 - [[entities/wirtzdan]] — **Blog** | danielwirtz.com |
 - [[entities/xania-org]] — **Blog** | xania.org |
+- [[entities/xiaomi]] — Xiaomi (MiMo AI): Chinese tech company, emerged as significant open-source AI model developer. MiMo family spans multimodal to trillion-parameter agentic coding models under MIT license.
+- [[entities/xiaomi-mimo]] — Xiaomi MiMo model family: open-source MoE models (MIT license). V2.5-Pro flagship (1.02T/42B active) comparable to Claude Opus 4.6 on SWE-bench Pro. MOPD post-training.
 - [[entities/xeiaso-net]] — **Blog** | xeiaso.net |
 - [[entities/xjdr]] — xjdr (@_xjdr) — AI researcher, founder at Noumena Network. Creator of entropix (entropy-based LLM sampling, 3.4K ⭐) and primary architect of nmoe (B200-first MoE training, RDEP). JAX partisan. "high taste ai sommelier."
 - [[entities/xpeng]] — Chinese electric vehicle manufacturer with integrated robotics and flying vehicle divisions. Builds cars, robots, and flying vehicles on a single AI-powered platform.
@@ -657,6 +660,8 @@
 - [[concepts/pydantic-ai-harness]] — pydantic-ai-harness — Official Capability Library for Pydantic AI
 - [[concepts/pytorch-fsdp]] — PyTorch FSDP (Fully Sharded Data Parallel)
 - [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation)
+- [[concepts/qwen]] — Qwen model family: Alibaba's open-source LLM series (Apache 2.0). MoE variants achieve frontier-adjacent performance on consumer GPUs. Qwen3.6-35B-A3B flagship with thinking preservation.
+- [[concepts/qwen-3-6-35b]] — Qwen 3.6-35B-A3B: Sparse MoE (35B total, 3B active). 73.4% SWE-bench Verified, runs on single RTX 4090. Introduces thinking preservation for iterative coding workflows.
 - [[concepts/rag-not-dead-series]] — RAG Is Not Dead — 7-Part Series
 - [[concepts/rag-systems]] — RAG Systems
 - [[concepts/raindrop]] — Raindrop — AI Agent Monitoring & Observability Platform
@@ -710,6 +715,7 @@
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
+- [[concepts/sitecove-ship]] — Sitecove HyperCache Inference Protocol (SHIP): System-level LLM inference optimization. 91% GPU reduction, 12× speedup, $49→$4 per 1M tokens. Developed by Australian web infra team.
 - [[concepts/roll-rl]] — ROLL (Alibaba): 多様なユーザー向けRLフレームワーク。豊富なインターフェースと高い設定自由度。DeepSpeed/Megatron、GRPO+PPO、Rayオーケストレーション。
 - [[concepts/space-gpus]] — Space GPUs
 - [[concepts/slime-rl]] — slime (Z.ai/清華大学): シンプルさと高性能を両立するRLライブラリ。Megatron+SGLangに固定、中央データバッファ、非同期RL向け。MoEモデルに最適。

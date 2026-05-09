@@ -1,3 +1,30 @@
+## 2026-05-09 — active-crawl | Nemotron 3 Nano Omni, MiMo-V2.5-Pro, Qwen 3.6-35B-A3B, Sitecove SHIP
+
+**Action**: Active crawl researched trending AI topics and created pages for 4 major developments not yet covered.
+
+### New Pages Created
+- `entities/nvidia-nemotron-3-nano-omni.md` — NVIDIA Nemotron 3 Nano Omni: fully open-source multimodal MoE model (30B-A3B) unifying video/audio/image/text. Perception sub-agent for agentic systems. Best-in-class on MMlongbench-Doc, OCRBenchV2, WorldSense, DailyOmni.
+- `entities/xiaomi.md` — Xiaomi entity page (stub → enriched). Chinese tech company's MiMo AI division. MiMo model family under MIT license.
+- `entities/xiaomi-mimo.md` — Xiaomi MiMo model family: V2.5-Pro flagship (1.02T/42B active) comparable to Claude Opus 4.6 on SWE-bench Pro. MOPD post-training methodology. Cross-referenced to MoE, coding-agents, GLM-5.1, DeepSeek.
+- `concepts/sitecove-ship.md` — Sitecove HyperCache Inference Protocol: system-level LLM inference optimization. 91% GPU reduction, 12× speedup, $49→$4 per 1M tokens. Developed by Australian web infra team outside AI establishment.
+- `concepts/qwen-3-6-35b.md` — Qwen 3.6-35B-A3B: Sparse MoE (35B total, 3B active). Apache 2.0. 73.4% SWE-bench Verified, runs on single RTX 4090. Introduces thinking preservation.
+
+### Pages Enriched
+- `concepts/qwen.md` — Stub → full page. Qwen model family overview, model generations, key characteristics, ecosystem.
+
+### Index Changes
+- Added 3 entity entries: nvidia-nemotron-3-nano-omni, xiaomi, xiaomi-mimo
+- Added 3 concept entries: qwen (newly indexed), qwen-3-6-35b, sitecove-ship
+- Updated counts: Total 739→746, Entities 526→529
+
+### Raw Articles
+- `raw/articles/2026-04-28_nvidia-nemotron-3-nano-omni.md`
+- `raw/articles/2026-04-08_sitecove-ship-inference.md`
+- `raw/articles/2026-04-23_xiaomi-mimo-v2.5-pro.md`
+- `raw/articles/2026-04-15_qwen-3.6-35b-a3b.md`
+
+---
+
 ## 2026-05-09 — blog-wiki-ingest | Ed Zitron + Armin Ronacher entity pages created
 
 **Action**: Blog triage identified two ★★★★★ (take) articles from the 2026-05-09 blog ingest batch.

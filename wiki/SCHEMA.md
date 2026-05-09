@@ -30,7 +30,7 @@ sources: [raw/articles/source-name.md]
 
 ### Primary Categories
 - **Models**: model, multimodal, text-generation, image-generation, local-llm, sglang, reasoning, reinforcement-learning, mixture-of-experts, moe, rlm, long-context, neurosymbolic, interpretability
-- **People/Orgs**: company, lab, open-source, anthropic, openai, google, huggingface, nvidia, langchain, pytorch, microsoft, deepseek, mistral, qwen, alibaba, xai, databricks, ibm, eleutherai, nous-research, discord, sourcegraph
+- **People/Orgs**: company, lab, open-source, anthropic, openai, google, huggingface, nvidia, langchain, pytorch, microsoft, deepseek, mistral, qwen, alibaba, xai, databricks, ibm, eleutherai, nous-research, discord, sourcegraph, xiaomi
 - **Products**: product, platform, tool, service, protocol, framework, claude-code, mcp, dspy, browser-agent, managed-agents, ai-native, browser-automation, gemini
 - **Techniques**: inference, fine-tuning, training, optimization, quantization, alignment, benchmark, evaluation, speculative-decoding, diffusion, prompting, rag, kv-cache, testing, sandbox, synthetic-data, distillation, post-training, distributed-training, grpo, rlhf, dpo, lora, peft, chain-of-thought, scaling, embeddings, data-science, information-retrieval, voice-ai, evolutionary-algorithms
 - **Engineering**: agentic-engineering, harness-engineering, ai-agent-engineering, context-engineering, context-management, multi-llm, workflow, software-engineering, formal-methods, developer-tooling, cli, ide, api, git, filesystem, docker, pydantic, observability, monitoring, reliability, devops, mlops, ml-engineering, cloud, serverless, ai-infrastructure
