@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-09 | Total pages: 752 | Full entries: 751 | Stubs: 0 |
+> Last updated: 2026-05-09 | Total pages: 757 | Full entries: 756 | Stubs: 0 |
 
-## Entities (532 pages)
+## Entities (533 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/agreement-bug]] — Agreement is a Bug
@@ -80,6 +80,7 @@
 - [[entities/benjamin-clavie]] — French ML researcher specializing in NLP and IR, creator of RAGatouille, co-author of ModernBERT. Co-hosted the "RAG Is Not Dead" series with Hamel Husain.
 - [[entities/benny-chen]] — Co-Founder of Fireworks AI. Former Meta ML infrastructure. Pioneered Reinforcement Fine-Tuning (RFT) and Eval Protocol for open-weight model customization.
 - [[entities/berthub-eu]] — **Blog** | berthub.eu |
+- [[entities/bernstein]] — Deterministic orchestrator for 40+ CLI AI agents. Git worktree isolation, HMAC audit trail, MCP server mode. Zero LLM tokens on coordination.
 - [[entities/bespoke-labs]] — AI research company focused on agent optimization. Creators of Curator (synthetic data), OpenThoughts (open reasoning datasets), Evalchemy. ICLR 2026. Multi-turn tool-use RL training with GRPO.
 - [[entities/block-ai]] — Block, Inc. (formerly Square) — Jack Dorsey's AI-native organizational transformation from hierarchy to intelligence-driven coordination
 - [[entities/boaz-barak]] — **X** | @boazbaraktcs | OpenAI alignment researcher, Harvard CS professor. Analyzed Claude Constitution vs. OpenAI Model Spec (Jan 2026).
@@ -550,12 +551,13 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (199 pages)
+## Concepts (203 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
 - [[concepts/adam-optimizer]] — Adam（Adaptive Moment Estimation）: 深層学習で最も広く使われる適応的最適化アルゴリズム。1次・2次モーメントの指数移動平均で学習率を適応制御。AdamWはWeight Decayを分離し汎化性能を改善。LLM学習の標準。→ [[raw/articles/2024-02-08_linkedin-processsense-adam-adamw.md]]
 - [[concepts/agentic-search]] — Agentic Search
+- [[concepts/agentic-identity]] — Modeling AI agents as financial actors. Ramp's OBOU (On Behalf Of User) framework for enterprise agent identity, compliance, and audit.
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
 - [[concepts/ai-autonomy-debate]] — AI Autonomy Debate
@@ -573,9 +575,10 @@
 - [[concepts/amp-neo]] — Amp Neo — May 2026 rebuild of the Amp coding agent CLI. Remote-controllable, compaction-first (auto-compaction at 90% context fill), TypeScript Plugin API, queuing with steering. 79% less CPU, 70% less memory vs old CLI. Represents the thin-harness philosophy for model-native agents.
 - [[concepts/anthropic-infrastructure-postmortems]] — Anthropicの2つの大規模品質低下ポストモーテム（2025年8-9月: コンテキストウィンドウ誤ルーティング・出力破損・XLA:TPU誤コンパイル / 2026年3-4月: 推論努力誤設定・推論履歴消失バグ・冗長性削減プロンプト）。検出の遅れ・社内評価限界・プライバシー制約の共通パターン。
 - [[concepts/automation-series]] — Antoine Buteau's Automation Series
-- [[concepts/back-of-house-multi-agent-patterns]] — Back of House Multi-Agent Patterns
-- [[concepts/back-of-house-patterns]] — Back of House Multi-Agent Patterns
-- [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
+- [[[concepts/back-of-house-multi-agent-patterns]] — Back of House Multi-Agent Patterns
+- [[[concepts/back-of-house-patterns]] — Back of House Multi-Agent Patterns
+- [[[concepts/bernstein]] — Deterministic multi-agent orchestrator. Python scheduler, zero LLM tokens on coordination, Git worktree isolation, 40+ agent adapters.
+- [[[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
 - [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling
 - [[concepts/coding-agents-complexity-budgets]] — Lee Robinson (Cursor) on abstraction costs in the AI agent era. Migrated cursor.com from CMS to raw code in 3 days with $260 in tokens. Complexity budget concept.
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst — Devinをデータ分析エージェントにする設計
@@ -601,11 +604,13 @@
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
 - [[concepts/local-first-software]] — Local-First Software
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
-- [[concepts/mmmu]] — MMMU — 11.5Kのマルチモーダル質問。大学試験・教科書から収集。6分野30科目183サブフィールド。30種類以上の画像タイプ。GPT-4V 56%、Gemini Ultra 59%。CVPR 2024 Oral。
-- [[concepts/mmlu-pro]] — MMLU Pro — MMLUの改良版。10択MC、12K+問、14ドメイン。43%がオリジナルMMLUにない新規問題。LLM支援フィルタリング。16-33%の精度低下。NeurIPS Spotlight。
-- [[concepts/model-distillation]] — Model Distillation
-- [[concepts/model-quantization]] — Model Quantization
-- [[concepts/object-storage-queue]] — Object Storage Queue: S3のCASを利用した分散キュー実装パターン。Group Commit、Stateless Broker、HeartbeatによるJob Recovery。ゼロディスクアーキテクチャの応用。Absurd（PG Queue）との比較を含む。 — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
+- [[[concepts/mmmu]] — MMMU — 11.5Kのマルチモーダル質問。大学試験・教科書から収集。6分野30科目183サブフィールド。30種類以上の画像タイプ。GPT-4V 56%、Gemini Ultra 59%。CVPR 2024 Oral。
+- [[[concepts/mmlu-pro]] — MMLU Pro — MMLUの改良版。10択MC、12K+問、14ドメイン。43%がオリジナルMMLUにない新規問題。LLM支援フィルタリング。16-33%の精度低下。NeurIPS Spotlight。
+- [[[concepts/ml-intern]] — HuggingFace's open-source autonomous ML engineer. Reads papers, trains models, ships code. Qwen3-1.7B 10%→32% GPQA in 10h (beats Claude Code).
+- [[[concepts/model-distillation]] — Model Distillation
+- [[[concepts/model-quantization]] — Model Quantization
+- [[[concepts/model-routing]] — Per-turn model routing for AI coding agents. Augment Prism: 20-30% cost reduction at similar quality. Cache-aware routing decisions.
+- [[[concepts/object-storage-queue]] — Object Storage Queue: S3のCASを利用した分散キュー実装パターン。Group Commit、Stateless Broker、HeartbeatによるJob Recovery。ゼロディスクアーキテクチャの応用。Absurd（PG Queue）との比較を含む。 — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/open-source-ai-destruction]] — Open Source AI Destruction
 - [[concepts/openclaw-architecture]] — OpenClawのアーキテクチャ詳細
 - [[concepts/openenv]] — Meta+HF partnership: open standard for agent environments (sandboxed tools, APIs, credentials). Integrates with TRL, TorchForge, verl, SkyRL. Environment Hub on Hugging Face.

@@ -1,4 +1,32 @@
-## 2026-05-09 — ingest | Kartik "Why Everyone Is Suddenly Building Their Own Agent Harness"
+## 2026-05-09 — trending-topics | Top 8 AI/ML trends + 5 new wiki pages
+
+**Action**: Cron job scanned 1,822 RSS articles and web search results for trending AI/ML topics. Created 5 new wiki pages (4 concepts + 1 entity stub) for uncovered topics.
+
+### Files Created
+- `concepts/bernstein.md` — Deterministic multi-agent orchestrator, zero-LLM-token coordination
+- `concepts/ml-intern.md` — HuggingFace autonomous ML engineer agent
+- `concepts/model-routing.md` — Per-turn model routing (Augment Prism)
+- `concepts/agentic-identity.md` — OBOU framework for AI agents as financial actors
+- `entities/bernstein.md` — Entity stub
+
+### Files Updated
+- `index.md` — Added 5 entries, updated counts (Entities: 532→533, Concepts: 199→203, Total: 752→757)
+
+### Key Trending Topics (Top 8)
+1. **Bernstein** — Deterministic orchestrator, 34K monthly DL, zero-token coordination
+2. **HF ml-intern** — Autonomous ML engineer, Qwen3-1.7B 10%→32% GPQA in 10h
+3. **Augment Prism** — Per-turn model routing, 20-30% cost reduction
+4. **Ramp Agentic Identity** — OBOU framework for enterprise agent compliance
+5. **Broadcom/OpenAI $18B chip financing snag** — Microsoft may need to buy 40%
+6. **ML-Master 2.0 HCC** — 56.44% MLE-Bench, Hierarchical Cognitive Caching
+7. **Pragmatic Engineer 2026 Survey** — Claude Code 46% most loved, 95% weekly AI use
+8. **GitHub Spec Kit** — Spec-driven development toolkit (already in wiki)
+
+### Report Saved
+- `inbox/trending-reports/2026-05-09.md`
+
+---
+
 
 **Action**: Ingested Kartik Labhshetwar's X article analyzing the structural forces behind the acceleration of agent harness development. Core evidence: LangChain's deepagents-cli jumped from 52.8%→66.5% on Terminal-Bench 2.0 by changing only the harness (same GPT-5.2-Codex model).
 
