@@ -1,3 +1,18 @@
+## 2026-05-09 — Amp articles ingestion
+
+**Pages created:**
+- `entities/amp.md` — Amp coding agent CLI entity page (product, created by Thorsten Ball at Sourcegraph). Covers evolution from editor extensions → Neo CLI rebuild.
+- `concepts/harness-commoditization.md` — New concept page for the thesis that frontier model capability is commoditizing agent harnesses (from "The Coding Agent Is Dead").
+- `concepts/amp-neo.md` — Concept page for the Amp Neo rebuild: auto-compaction, Plugin API, remote control, queuing/steering, performance improvements.
+
+**Pages enriched:**
+- `entities/thorsten-ball.md` — Updated Current role, added Amp & Coding Agent Philosophy section, added new sources.
+
+**Raw articles saved:**
+- `raw/articles/2026-02-19_ampcode-coding-agent-is-dead.md` — Amp's "The Coding Agent Is Dead" manifesto
+- `raw/articles/2026-05-06_ampcode-neo-rebuilt.md` — Amp Neo rebuild announcement
+
+**Index changes:** Added 3 entries to index.md (amp entity, amp-neo concept, harness-commoditization concept). Total: 736 → 739. Also updated entities/_index.md.
 ## 2026-05-09 | Blog Ingest — 36 new articles collected, wiki pages updated
 
 **Action**: Scheduled blog ingest collected 36 new articles from 20 blogs. 20 articles saved as raw files. Key AI-relevant articles processed and wiki entities updated.

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-09 | Total pages: 736 | Full entries: 736 | Stubs: 0 |
+> Last updated: 2026-05-09 | Total pages: 739 | Full entries: 736 | Stubs: 0 |
 
 ## Entities (527 pages)
 
@@ -54,6 +54,7 @@
 - [[entities/ali-farhadi]] — Computer vision pioneer, co-creator of **YOLO** (You Only Look Once) object detection, founder of **Xnor.ai** (acquired by Apple), former CEO of Allen Institute for AI (Ai2). In March 2026 stepped ...
 - [[entities/amazon-rivr]] — March 2026 acquisition of Zurich-based autonomous robotics startup Rivr by Amazon.
 - [[entities/amazon-bedrock-agentcore]] — AWS's fully-managed agentic AI platform for building, deploying, and operating AI agents at scale. Framework-agnostic, composable services.
+- [[entities/amp]] — **Amp** — Coding agent CLI developed at Sourcegraph by Thorsten Ball. Frontier-chasing philosophy: editor extensions killed Feb 2026, CLI rebuilt as Neo (May 2026) with auto-compaction, Plugin API, remote control. Author of "The Coding Agent Is Dead" manifesto.
 - [[entities/andrej-karpathy]] — **Andrej Karpathy** (born October 23, 1986, Bratislava, Czechoslovakia) is a leading AI researcher and educator, widely regarded as one of the most effective communicators of deep learning concepts...
 - [[entities/andrew-nesbitt]] — **URL:** https://nesbitt.io
 - [[entities/andrew-chen]] — Andrew Chen — General Partner at a16z (speedrun). Author of "The Cold Start Problem." Local AI home lab practitioner (DGX Spark, 5090 eGPU, Strix Halo). Runs OpenClaw + Hermes Agent. → [[concepts/local-ai]]
@@ -563,6 +564,7 @@
 - [[concepts/aider-polyglot]] — Aider Polyglot — 6言語対応コーディングベンチマーク。Exercismの225問をC++/Go/Java/JS/Python/Rustでテスト。GPT-5が88%でリード。
 - [[concepts/altman-three-observations]] — Altman's Three Observations: 対数スケーリング（intelligence ≈ log(resources)）、超デフレコスト（10x/年）、超指数関数的価値の3つの経済観察枠組み。GPT-4→GPT-4oで150xのコスト低下、2035年ビジョン、AIエージェント経済学。
 - [[concepts/ambient-agency]] — Ambient Agency（環境的エージェンシー）: エージェンシーがTuring完全性と同様に、複雑なシステムから不可避的に自然発生するというGwernの洞察。明示的な設計・選択なしに収斂する「あまりに有用な能力」。Tool AI幻想への根本的異議。
+- [[concepts/amp-neo]] — Amp Neo — May 2026 rebuild of the Amp coding agent CLI. Remote-controllable, compaction-first (auto-compaction at 90% context fill), TypeScript Plugin API, queuing with steering. 79% less CPU, 70% less memory vs old CLI. Represents the thin-harness philosophy for model-native agents.
 - [[concepts/anthropic-infrastructure-postmortems]] — Anthropicの2つの大規模品質低下ポストモーテム（2025年8-9月: コンテキストウィンドウ誤ルーティング・出力破損・XLA:TPU誤コンパイル / 2026年3-4月: 推論努力誤設定・推論履歴消失バグ・冗長性削減プロンプト）。検出の遅れ・社内評価限界・プライバシー制約の共通パターン。
 - [[concepts/automation-series]] — Antoine Buteau's Automation Series
 - [[concepts/back-of-house-multi-agent-patterns]] — Back of House Multi-Agent Patterns
@@ -580,6 +582,7 @@
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/gliclass]] — GLiClass
 - [[concepts/glut-of-circuits]] — niplav (2026) の GLUT-of-Circuits モデル：LLMは重ね合わせで計算される、深さ制限のある合成可能な誤り訂正回路の巨大ルックアップテーブル的コレクション。Agent構造問題・AIアライメント・トークンボトルネック・CoTへの含意。
+- [[concepts/harness-commoditization]] — Harness Commoditization — Thesis that frontier model capability is commoditizing agent harnesses. As models become natively agentic, harness architecture ceases to be a meaningful differentiator — codebase organization becomes the bottleneck. Articulated by Amp in "The Coding Agent Is Dead" (Feb 2026).
 - [[concepts/harness-engineering]] — Harness Engineering
 - [[concepts/karpathy-loop]] — The Karpathy Loop — Autonomous Experiment Design
 - [[concepts/knowledge-shields]] — Knowledge Shields and Systems Understanding

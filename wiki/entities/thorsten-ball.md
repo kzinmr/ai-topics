@@ -2,7 +2,7 @@
 title: Thorsten Ball
 type: entity
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-09
 tags:
   - person
   - developer-tooling
@@ -12,6 +12,9 @@ aliases:
   - mrnugget
 sources:
   - raw/articles/2026-05-04_thorsten-ball-joy-and-curiosity-84.md
+  - raw/articles/2026-02-19_ampcode-coding-agent-is-dead.md
+  - raw/articles/2026-05-06_ampcode-neo-rebuilt.md
+  - raw/articles/2025-04-15_ampcode-how-to-build-a-code-editing-agent.md
 ---
 
 # Thorsten Ball
@@ -44,6 +47,14 @@ Weekly newsletter covering:
 
 Notable issues:
 - **Joy & Curiosity #84** (May 2026) — Covered software degradation, Mitchell Hashimoto leaving GitHub, AI-mediated competence loss, Mistral's strategy, Zed 1.0, and Daniel Lemire's SIMD algorithm
+
+## Amp and Coding Agent Philosophy
+
+Thorsten Ball is the primary author of Amp's strategic communications and technical direction. His writings have shaped the coding agent discourse:
+
+- **"How to Build a Code-Editing Agent"** (April 2025) — [[concepts/minimal-coding-agent]] pattern: 400 lines of Go, three tools, heartbeat loop. Demonstrated agent harness simplicity.
+- **"The Coding Agent Is Dead"** (February 2026) — Articulated the [[concepts/harness-commoditization]] thesis: frontier models have become so capable that harness differentiation is shrinking. Announced Amp's pivot from editor extensions to CLI-only.
+- **"Amp, Rebuilt"** (May 2026) — Launched [[concepts/amp-neo|Amp Neo]]: remote-controllable, auto-compaction, Plugin API, 79% less CPU.
 
 ## Related
 
