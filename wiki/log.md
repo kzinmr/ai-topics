@@ -43,3 +43,15 @@
 - Most common missing tags: coding-agents, software-development, workflow, testing
 - Composite tags detected: agentic-engineering-patterns, context-window-management, fine-grained-authorization
 - 349 unique tags not in SCHEMA.md taxonomy need reconciliation
+
+## [2026-05-09] ingest | X accounts scan — 11 accounts, 4 new posts, 3 pages created
+- **Scanned**: 11/79 accounts (68 skipped — budget)
+- **New posts**: 4 (from @gm8xx8, @rlancemartin, @milksandmatcha)
+- **Pages created**: 3
+  - Created: entities/zyphra.md — Zyphra company entity (MoE models on AMD, $110M Series A)
+  - Created: concepts/zaya1-vl-8b.md — ZAYA1-VL-8B: vision-language MoE (700M/8B), vision-specific LoRA, bidirectional image attention
+  - Created: concepts/zaya1-74b-preview.md — ZAYA1-74B-preview: reasoning-base MoE (4B/74B), Mamba/CCA hybrid
+- **Raw articles saved**: 2
+  - raw/articles/2026-05-08-zyphra-zaya1-vl-8b.md
+  - raw/articles/2026-05-08-zyphra-zaya1-74b-preview.md
+- **Index updated**: Entities 541→542, Concepts 1272→1274, Total 1828→1831
