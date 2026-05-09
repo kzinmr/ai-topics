@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-09 | Total pages: 740 | Full entries: 737 | Stubs: 0 |
+> Last updated: 2026-05-09 | Total pages: 739 | Full entries: 738 | Stubs: 0 |
 
-## Entities (527 pages)
+## Entities (526 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/agreement-bug]] — Agreement is a Bug
@@ -139,7 +139,7 @@
 - [[entities/dwarkesh-patel]] — **Born** | August 19, 2000, United States |
 - [[entities/dylan-patel]] — **Role** | Founder, CEO, and Chief Analyst at SemiAnalysis |
 - [[entities/dynomight-net]] — **URL:** https://dynomight.net
-- [[entities/ed-zitron-s-where-s-your-ed-at]] — **Blog** | wheresyoured.at |
+- [[entities/ed-zitron]] — Ed Zitron — Tech columnist and AI industry critic. Author of Where's Your Ed At (~80K subscribers). Argues the AI economy is a circular dependency where 95%+ of compute demand flows through unprofitable OpenAI and Anthropic.
 - [[entities/eleutherai]] — Grassroots research collective that started the modern open-source AI movement. Creators of GPT-Neo, Pythia, and the LM Evaluation Harness.
 - [[entities/eli-thegreenplace-net]] — **URL:** https://eli.thegreenplace.net
 - [[entities/elie-bakouch]] — ML engineer and researcher at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training.
@@ -281,7 +281,6 @@
 - [[entities/mistral-voxtral-tts]] — Mistral AI's open-weights text-to-speech model, announced April 2026. Combines autoregressive semantic token generation with flow-matching acoustic token synthesis.
 - [[entities/mitchell-hashimoto]] — HashiCorp co-founder (Vagrant, Terraform, Vault), Ghostty creator. Left GitHub in 2026 citing instability from AI agent scale.
 - [[entities/mitchell-hashimoto-ghostty]] — **Blog** | mitchellh.com |
-- [[entities/armin-ronacher]] — **URL:** https://lucumr.pocoo.org
 - [[entities/mobius-labs]] — AI research company specializing in model compression, quantization (HQQ), and multimodal understanding (Aana). Acquired by Dropbox. Creators of GemLite GPU kernels.
 - [[entities/muse-spark]] — Meta's latest language model, announced April 2026.
 - [[entities/mustafa-suleyman]] — **Role** | CEO, Microsoft AI; Co-founder, DeepMind; Co-founder, Inflection AI |

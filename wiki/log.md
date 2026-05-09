@@ -1,3 +1,24 @@
+## 2026-05-09 — blog-wiki-ingest | Ed Zitron + Armin Ronacher entity pages created
+
+**Action**: Blog triage identified two ★★★★★ (take) articles from the 2026-05-09 blog ingest batch.
+
+### New Pages Created
+- `entities/ed-zitron.md` — Ed Zitron entity page. Tech columnist, author of Where's Your Ed At (~80K subscribers). Core thesis: AI economy is circular — 95%+ of compute demand flows through OpenAI and Anthropic, who can't afford their bills without constant VC infusions. Documents the $748B hyperscaler revenue backlog dependency, data center overbuild thesis, and xAI→Anthropic Colossus-1 handover. Cross-referenced to [[entities/anthropic]], [[entities/openai]], [[concepts/ai-bubble-thesis]], [[entities/meta]], [[concepts/neocloud]].
+- `entities/armin-ronacher.md` — Armin Ronacher (mitsuhiko) entity page. Austrian open-source programmer (b. 1989), creator of Flask (71.5K stars), Jinja2, Click, Werkzeug, Pygments. Founder of Earendil, 10-year Sentry veteran. Recent focus: AI coding agents and local model inference. Author of Pi coding agent, pi-ds4 extension for DeepSeek V4 Flash on Macs. Key philosophy: "pick a winner hard" — focus on one model+engine+agent combo and polish it. Cross-referenced to [[entities/salvatore-sanfilippo]], [[entities/ds4-c]], [[concepts/local-ai]], [[entities/pi]], [[concepts/tool-parameter-streaming]].
+
+### Index Changes
+- Fixed `ed-zitron-s-where-s-your-ed-at` → `ed-zitron` slug (line 142) with enriched summary
+- Removed duplicate `armin-ronacher` stub entry (line 284, duplicate of line 72)
+- Updated counts: Total 740→739, Entities 527→526, Full entries 737→738
+
+### Reference Decision (not actioned)
+- `nesbitt.io--weekend-at-bernies` — Open-source maintenance crisis + AI vulnerability discovery. Existing concept pages [[concepts/ai-supply-chain-security]] can reference it; no standalone page created.
+
+### Raw Articles
+- `wheresyoured.at--premium-ais-circular-psychosis--51c035f1.md`
+- `lucumr.pocoo.org--2026-5-8-local-models--ebab17f3.md`
+
+---
 ## 2026-05-09 — newsletter-wiki-ingest | 3 newsletters triaged, 3 articles taken
 - **Triage summary**: getsuperintel.com (AlphaEvolve production use), Simon Willison's Newsletter (vibe coding convergence + Code w/ Claude 2026 live blog)
 - **Triage failure recovery**: newsletter-triage JSON parse failed, but `triage_latest.json` was valid — used directly for recovery
