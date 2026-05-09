@@ -9,18 +9,9 @@
 - Previous entries archived to log-2026.md
 - Fresh log.md initialized
 
----
-
-# Wiki Log
-
-> Chronological record of all wiki actions. Append-only.
-> Format: `## [YYYY-MM-DD] action | subject`
-> Actions: ingest, update, query, lint, create, archive, delete
-> When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
-
-## [2026-05-09] rotate | Rotated log-2026.md (1158 lines → log-2026.md appended)
-- Previous entries archived to log-2026.md
-- Fresh log.md initialized
+## [2026-05-09] watch | Watchdog fix — log.md duplicate header removed
+- Removed duplicate header section (13 lines) from log.md rotation artifact
+- Fixed extra blank line
 
 ## [2026-05-09] lint | Wiki health check — 3 CRITICAL, 12 WARNING issues found
 
