@@ -7,11 +7,11 @@ tags:
   - model
   - anthropic
   - ai-agents
-  - safety-research
+  - safety
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-05-08
+updated: 2026-05-09
 sources: [
   "https://x.com/RLanceMartin/status/2041927992986009773",
   "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
@@ -22,7 +22,8 @@ sources: [
   "raw/articles/2026-05-01_pentagon-seven-ai-deals-anthropic-excluded.md",
   "raw/articles/2026-05-04_techcrunch-anthropic-openai-jv.md",
   "raw/articles/2026-05-04_anthropic-enterprise-ai-services.md",
-  "raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md"
+  "raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md",
+  "raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md"
 ]
 related: [
   "[[entities/anthropic]]",
@@ -150,6 +151,24 @@ Anthropic partnered with Blackstone, Hellman & Friedman, and Goldman Sachs to fo
 - **Proactive mode**: Auto-generates briefings and summaries from ingested data
 - **Positioning**: Counter to ChatGPT Pulse (OpenAI's proactive assistant)
 - **Status**: Leaked/discussed in Superintel newsletter (May 2026); not officially announced
+
+### Code w/ Claude 2026 (May 2026)
+
+At Anthropic's Code w/ Claude 2026 event, several Managed Agents features were announced:
+
+| Feature | Status | Description |
+|---------|--------|-------------|
+| **Multi-agent orchestration** | Public beta | Create fleets of agents to solve complex tasks in parallel |
+| **Outcomes** | Public beta | Define success criteria; Claude iterates autonomously until achieved ("Ralph loop" style) |
+| **Dreaming** | Research preview | Claude inspects past sessions, identifies missed opportunities, self-improves overnight |
+
+**Other announcements**:
+- **Adviser strategy**: Opus provides advice on demand to smaller models (Sonnet) — "frontier model quality at 5x lower cost"
+- **Rate limits**: Doubled Claude Code 5-hour limit for Pro, Max, Enterprise customers
+- **API volume**: 17x year-on-year growth
+- Dianne Na Penn emphasized "design for the next model" — build things that don't quite work today
+
+Source: Simon Willison's [live blog](https://simonwillison.net/2026/May/6/code-w-claude-2026/)
 
 ### Claude Code
 

@@ -2,10 +2,10 @@
 title: "Google (AI/ML)"
 type: entity
 created: 2026-04-25
-updated: 2026-05-04
-tags: [company, lab, product, platform, ai, infrastructure]
+updated: 2026-05-09
+tags: [company, lab, product, platform, infrastructure]
 aliases: ["Google DeepMind", "Google Research"]
-sources: [raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md, raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md]
+sources: [raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md, raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md, raw/articles/2025-12-10_google-cloud_alphaevolve.md]
 ---
 # Google (AI/ML)
 
@@ -96,9 +96,20 @@ Google announced its 8th-generation TPU, codenamed **Ironwood**, marking a strat
 
 This aligns with Google's broader strategy of "100% local browser agent" using Gemma 4 + WebGPU for edge inference, demonstrating a full-stack approach from silicon to application.
 
+## AlphaEvolve (May 2026)
+
+AlphaEvolve, Google DeepMind's Gemini-powered evolutionary coding agent, has moved from experimental to production use:
+
+- Optimizing **next-generation TPU design** — first Gemini contribution to TPU arithmetic circuits
+- **Data center scheduling**: Recovering 0.7% of global compute resources
+- **Gemini training**: 23% kernel speedup → 1% total training time reduction
+- Available on Google Cloud in private preview since Dec 2025
+- See [[concepts/alphaevolve]] for full details
+
 ## Relationships
 - [[concepts/gemini]] — Google's multimodal model family (detailed entity)
 - [[concepts/nano-banana-2]] — Google's NB2 image generation model
+- [[concepts/alphaevolve]] — Evolutionary coding agent for algorithm discovery
 - [[entities/openai]] — Primary competitor in AI/ML
 - [[concepts/chatgpt-images-2.0]] — OpenAI's GPT Image 2
 

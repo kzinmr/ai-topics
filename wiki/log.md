@@ -1,3 +1,30 @@
+## 2026-05-09 — newsletter-wiki-ingest | 3 newsletters triaged, 3 articles taken
+- **Triage summary**: getsuperintel.com (AlphaEvolve production use), Simon Willison's Newsletter (vibe coding convergence + Code w/ Claude 2026 live blog)
+- **Triage failure recovery**: newsletter-triage JSON parse failed, but `triage_latest.json` was valid — used directly for recovery
+
+### New Pages Created
+- `concepts/alphaevolve.md` — AlphaEvolve: Gemini-powered evolutionary coding agent. Mutation→Evolution→Evaluation loop. Proven impact: TPU circuit design, data center 0.7% recovery, Gemini kernel 23% speedup, FlashAttention 32.5% speedup, first matrix mult improvement in 56 years.
+
+### Pages Enriched
+- `entities/google.md` — Added AlphaEvolve section with TPU design, data center, Gemini training impacts. Links to `concepts/alphaevolve`.
+- `entities/simon-willison.md` — Added two sections:
+  - **Vibe Coding Convergence (May 2026)**: Realization that vibe coding/agentic engineering boundaries are blurring. "Trust as a team" analogy. Guilt about not reviewing every line.
+  - **Code w/ Claude 2026 Live Blog**: Multi-agent orchestration, Outcomes, Dreaming (research preview), adviser strategy, Colossus partnership, 17x API growth.
+- `entities/anthropic.md` — Added Code w/ Claude 2026 section: Managed Agents multi-agent orchestration (public beta), Outcomes (public beta), Dreaming (research preview), adviser strategy (5x cost reduction).
+
+### Raw Articles Saved
+- `raw/articles/2025-12-10_google-cloud_alphaevolve.md`
+- `raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md`
+- `raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md`
+
+### Decisions Not Taken (reference/skip)
+- 4 reference decisions (xAI/Anthropic data center, GPT-Realtime-2, Mozilla Mythos detail, AINews paywalled)
+- 4 skip decisions (Jack Clark 2028 prediction already covered, Ethan Mollick X post, Google Health Coach, Masterworks ad)
+
+### Index/Log
+- index.md: Added `concepts/alphaevolve` entry, updated counts (Total: 739→740, Concepts: 196→197)
+
+---
 ## 2026-05-09 — Amp articles ingestion
 
 **Pages created:**

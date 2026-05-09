@@ -3,10 +3,10 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-05-08
+updated: 2026-05-09
 status: L3
-sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/]
-tags: [person, opinion-leader]
+sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md]
+tags: [person, blogger]
 ---
 
 
@@ -103,6 +103,43 @@ LLMのコンテキストウィンドウは**限られたリソース**として�
 - エージェントが生成したコードを盲目的にマージしない
 - **Readability first**: エージェントに「読みやすいコード」を明示的に要求
 - **Documentation as part of the loop**: コード生成と同時にドキュメントも生成させる
+
+### Vibe Coding and Agentic Engineering Convergence (May 2026)
+
+On Heavybit's High Leverage podcast (Ep.9, with Joseph Ruscio), Simon made a "disturbing realization":
+
+> "As the coding agents get more reliable, I'm not reviewing every line of code that they write anymore, even for my production level stuff."
+
+**The Convergence**:
+- Originally: vibe coding = no code review, agentic engineering = professional standards
+- Now: agents are reliable enough that Simon trusts them for production code without line-by-line review
+- The guilt: "if I haven't reviewed the code, is it really responsible for me to use this in production?"
+
+**Resolution — "Trust as a Team" Analogy**:
+- Compares to trusting another engineering team's service: doesn't read every line of their code, trusts based on reputation
+- Treats agents as semi-black boxes until problems arise
+- "Claude Code does not have a professional reputation! It can't take accountability for what it's done. But it's been proving itself anyway."
+
+This represents a significant evolution in Simon's agentic engineering philosophy — moving from strict verification to calibrated trust. Source: [Vibe coding and agentic engineering are getting closer than I'd like](https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/)
+
+### Code w/ Claude 2026 Live Blog (May 2026)
+
+Simon live-blogged Anthropic's Code w/ Claude 2026 event. Key announcements:
+
+| Announcement | Detail |
+|-------------|--------|
+| **No new model** | Focus on making existing products work better |
+| **API volume** | 17x year-on-year growth |
+| **Colossus partnership** | SpaceX data center deal (see [[#xAI/Anthropic データセンター取引分析]]) |
+| **Rate limits** | Doubled Claude Code 5-hour limit for Pro/Max/Enterprise |
+| **Adviser strategy** | Opus advising Sonnet → frontier model quality at 5x lower cost |
+
+**Managed Agents Updates**:
+- **Multi-agent orchestration** (public beta): Fleets of agents for complex tasks
+- **Outcomes** (public beta): Define success criteria, Claude iterates until achieved — "Ralph loop" style
+- **Dreaming** (research preview): Claude inspects past sessions, identifies gaps, self-improves overnight
+
+Source: [Live blog: Code w/ Claude 2026](https://simonwillison.net/2026/May/6/code-w-claude-2026/)
 
 ### AI Ethics Commentary: Stockholm AI Cafe Experiment (May 2026)
 
