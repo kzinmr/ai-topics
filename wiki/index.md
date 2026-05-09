@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-09 | Total pages: 757 | Full entries: 756 | Stubs: 0 |
+> Last updated: 2026-05-09 | Total pages: 1828 | Full entries: 1828 | Stubs: 0 |
 
-## Entities (533 pages)
+## Entities (541 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/agreement-bug]] — Agreement is a Bug
@@ -480,12 +480,10 @@
 - [[entities/knowledgator]] — Open-Source ML research company focused on encoder-based models for information extraction (GLiNER, GLiClass, GLiREL)
 - [[entities/langchain]] — LangChain — framework for building applications with LLMs via composable chains
 - [[entities/llamaindex]] — LlamaIndex — data framework for connecting custom data sources to LLMs
- - [[entities/mitchell-hashimoto-ghostty]] — Mitchell Hashimoto on Ghostty terminal emulator
- - [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto on HashiCorp and infrastructure tools
- - [[entities/omar-khattab/baleen]] — Omar Khattab — Baleen multi-hop retrieval system
- - [[entities/omar-khattab/colbert]] — Omar Khattab — ColBERT late-interaction retrieval model
- - [[entities/omar-khattab/collaborations]] — Omar Khattab research collaborations
- - [[entities/omar-khattab/gepa]] — Omar Khattab — GEPA genetic Pareto prompt evolution
+- [[entities/omar-khattab/baleen]] — Omar Khattab — Baleen multi-hop retrieval system
+- [[entities/omar-khattab/colbert]] — Omar Khattab — ColBERT late-interaction retrieval model
+- [[entities/omar-khattab/collaborations]] — Omar Khattab research collaborations
+- [[entities/omar-khattab/gepa]] — Omar Khattab — GEPA genetic Pareto prompt evolution
 - [[entities/omar-khattab/impact-metrics]] — Omar Khattab impact metrics and citations
 - [[entities/omar-khattab/philosophy]] — Omar Khattab philosophy on AI research
 - [[entities/omar-khattab/publications]] — Omar Khattab academic publications
@@ -551,7 +549,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (203 pages)
+## Concepts (1272 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -775,6 +773,8 @@
 - [[concepts/techno-optimism]] — Belief that technological progress (AI/nanotech) can solve humanity's deepest problems. Yudkowsky's Singularitarianism as secular eschatology: the Singularity as moral imperative, transcendence of mortality and suffering. Contrasted with Yarvin's techno-pessimism.
 - [[concepts/techno-pessimism]] — Skepticism that technology alone can resolve fundamental human problems. Curtis Yarvin's counter to Yudkowsky: "maybe you can't make a religion out of ai." Governance before transcendence; technology as amplifier, not solver.
 
+
+## Events (2 pages)
 
 ## Comparisons (13 pages)
 
