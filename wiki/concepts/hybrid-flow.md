@@ -237,7 +237,7 @@ Anyscaleの10ライブラリ比較では、Verlは「成熟度・パフォーマ
 
 **VeRLベースの派生**: [[concepts/ragen|RAGEN]]（環境インターフェース追加）、hybrid-flowの制御/計算分離パターンは他ライブラリの設計にも影響。
 
-→ 全RLライブラリ比較: [[concepts/open-source-rl-libraries-comparison]]
+→ 全RLライブラリ比較: [[comparisons/open-source-rl-libraries-comparison]]
 
 ## 関連ページ
 

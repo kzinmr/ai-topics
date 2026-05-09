@@ -1,6 +1,6 @@
 ---
 title: "Open Source RL Libraries for LLMs — Comparison Portal"
-type: concept
+type: comparison
 aliases:
   - "RL Libraries Comparison"
   - "Open Source RL Frameworks"

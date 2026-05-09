@@ -542,7 +542,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (197 pages)
+## Concepts (196 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -593,8 +593,7 @@
 - [[concepts/model-quantization]] — Model Quantization
 - [[concepts/object-storage-queue]] — Object Storage Queue: S3のCASを利用した分散キュー実装パターン。Group Commit、Stateless Broker、HeartbeatによるJob Recovery。ゼロディスクアーキテクチャの応用。Absurd（PG Queue）との比較を含む。 — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/open-source-ai-destruction]] — Open Source AI Destruction
-- [[concepts/openclaw-architecture]] — OpenClawのアーキテクチャ詳細。Gateway-firstなassistant control planeの全容：長寿命Gateway、typed WebSocket protocol、埋め込みagent runtime、二層セッション永続化、sandbox/tool-policy/elevatedの3軸分離、ノードcapability surface、キューイング、サブエージェント、4層プラグインシステム、索引注入スキル。単一trust boundaryモデル。
-- [[concepts/open-source-rl-libraries-comparison]] — Open Source RL Libraries比較ポータル: TRL/Verl/OpenRLHF/RAGEN/NeMo-RL/ROLL/AReaL/slime/Verifiers/SkyRLの10ライブラリ比較。Anyscale 2025。
+- [[concepts/openclaw-architecture]] — OpenClawのアーキテクチャ詳細
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information（予測的V-情報）：観測者の計算制約を考慮したShannon情報理論の変分拡張。DPI違反、高次元でのPAC推定保証、構造学習・公平表現学習への応用（Xu et al., ICLR 2020）。
 - [[concepts/openrlhf]] — OpenRLHF: 最も初期のOSS RLHFライブラリの一つ。DeepSpeedベース、報酬モデルサポート充実。非同期訓練対応（--async_train）。
 - [[concepts/ifeval]] — IFEval — 指示追従評価。25種の検証可能な指示タイプ、~500プロンプト。決定論的評価。Qwen3.5-27Bが95.0%でリード。上位モデルで飽和傾向。
@@ -745,7 +744,7 @@
 - [[concepts/techno-pessimism]] — Skepticism that technology alone can resolve fundamental human problems. Curtis Yarvin's counter to Yudkowsky: "maybe you can't make a religion out of ai." Governance before transcendence; technology as amplifier, not solver.
 
 
-## Comparisons (12 pages)
+## Comparisons (13 pages)
 
 - [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
 - [[comparisons/ai-agent-platforms]] — Ai Agent Platforms
@@ -759,6 +758,7 @@
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Vs Openclaw Architecture
 - [[comparisons/llm-integration-patterns]] — Llm Integration Patterns
 - [[comparisons/local-llm-models-april-2026]] — Local Llm Models April 2026
+- [[comparisons/open-source-rl-libraries-comparison]] — Open Source RL Libraries比較ポータル: TRL/Verl/OpenRLHF/RAGEN/NeMo-RL/ROLL/AReaL/slime/Verifiers/SkyRLの10ライブラリ比較。Anyscale 2025。
 
 ## Queries (0 pages)
 

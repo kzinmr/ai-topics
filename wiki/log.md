@@ -13,7 +13,7 @@
 - [[concepts/skyrl]] — SkyRL (UC Berkeley): 最大柔軟性、sync/async/colocated/disaggregated対応。
 
 **New comparison portal**:
-- [[concepts/open-source-rl-libraries-comparison]] — 10ライブラリのアーキテクチャ比較表、次元別評価、選択ガイドライン。
+- [[comparisons/open-source-rl-libraries-comparison]] — 10ライブラリのアーキテクチャ比較表、次元別評価、選択ガイドライン。
 
 **Enriched existing pages**:
 - [[concepts/fine-tuning/trl]] — Ecosystem Positionセクション追加、全RLライブラリ比較リンク。
