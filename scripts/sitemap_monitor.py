@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/opt/data/.hermes/venv/bin/python3
 """
 Sitemap-based blog monitor for company tech blogs without RSS feeds.
 Currently monitors Anthropic Engineering. Extensible to other sitemap-based sources.
@@ -24,6 +24,7 @@ import json
 import os
 import sys
 import time
+import concurrent.futures
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
@@ -55,7 +56,7 @@ SOURCES = [
     {
         "name": "ElevenLabs Blog",
         "url": "https://elevenlabs.io/blog",
-        "sitemap_url": "https://elevenlabs.io/sitemap.xml",
+        "sitemap_url": "https://elevenlabs.io/sitemap/articles__en.xml",
         "url_pattern": "/blog/",
         "file_prefix": "elevenlabs",
         "title_suffixes": [" | ElevenLabs"],
@@ -69,15 +70,6 @@ SOURCES = [
         "file_prefix": "harvey",
         "title_suffixes": [" | Harvey", " - Harvey"],
         "state_file": os.path.expanduser("~/.hermes/processed_harvey_blog.json"),
-    },
-    {
-        "name": "Scale AI Blog",
-        "url": "https://scale.com/blog",
-        "sitemap_url": "https://scale.com/sitemap.xml",
-        "url_pattern": "/blog/",
-        "file_prefix": "scale-ai",
-        "title_suffixes": [" | Scale AI"],
-        "state_file": os.path.expanduser("~/.hermes/processed_scale_ai_blog.json"),
     },
     {
         "name": "Glean Blog",
@@ -96,15 +88,6 @@ SOURCES = [
         "file_prefix": "factory",
         "title_suffixes": [" | Factory"],
         "state_file": os.path.expanduser("~/.hermes/processed_factory_blog.json"),
-    },
-    {
-        "name": "Adept Blog",
-        "url": "https://www.adept.ai/blog",
-        "sitemap_url": "https://www.adept.ai/sitemap.xml",
-        "url_pattern": "/blog/",
-        "file_prefix": "adept",
-        "title_suffixes": [" | Adept"],
-        "state_file": os.path.expanduser("~/.hermes/processed_adept_blog.json"),
     },
     {
         "name": "Cartesia Blog",
@@ -165,7 +148,7 @@ SOURCES = [
         "name": "The Browser Company Blog",
         "url": "https://arc.net/blog",
         "sitemap_url": "https://arc.net/sitemap.xml",
-        "url_pattern": "/blog/",
+        "url_pattern": "/blog",
         "file_prefix": "the-browser-company",
         "title_suffixes": [" | Arc", " | Arc Browser"],
         "state_file": os.path.expanduser("~/.hermes/processed_the_browser_company_blog.json"),
@@ -211,15 +194,49 @@ SOURCES = [
 
 WIKI_RAW_DIR = os.path.expanduser("~/wiki/raw/articles")
 CHECKPOINT_DIR = os.path.expanduser("~/.hermes/cron/data/sitemap_monitor")
-REQUEST_TIMEOUT = 30
+REQUEST_TIMEOUT = 15
+MAX_ARTICLES_PER_SOURCE = 10  # Limit on first run; state files track seen URLs thereafter
 
 
 def fetch_sitemap(url: str) -> str:
-    """Fetch sitemap XML content."""
+    """Fetch sitemap XML content, following sitemap index files if needed."""
     with httpx.Client(timeout=REQUEST_TIMEOUT, follow_redirects=True) as client:
         resp = client.get(url)
         resp.raise_for_status()
-        return resp.text
+        xml_text = resp.text
+    
+    # Check if this is a sitemap index (points to sub-sitemaps)
+    if "<sitemapindex" in xml_text[:500]:
+        ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+        root = ET.fromstring(xml_text)
+        sub_sitemaps = []
+        for sm_elem in root.findall("sm:sitemap", ns):
+            loc = sm_elem.find("sm:loc", ns)
+            if loc is not None and loc.text:
+                sub_sitemaps.append(loc.text.strip())
+        
+        # Fetch all sub-sitemaps and combine
+        combined_urls = []
+        for sub_url in sub_sitemaps:
+            try:
+                with httpx.Client(timeout=REQUEST_TIMEOUT, follow_redirects=True) as client:
+                    sub_resp = client.get(sub_url)
+                    sub_resp.raise_for_status()
+                sub_root = ET.fromstring(sub_resp.text)
+                # Extract <url> elements and add to combined XML
+                for url_elem in sub_root.findall("sm:url", ns):
+                    combined_urls.append(url_elem)
+            except Exception as e:
+                print(f"  [!] Failed to fetch sub-sitemap {sub_url}: {e}", file=sys.stderr)
+        
+        # Reconstruct as a single sitemap XML
+        combined = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        for url_elem in combined_urls:
+            combined += ET.tostring(url_elem, encoding="unicode") + "\n"
+        combined += "</urlset>"
+        return combined
+    
+    return xml_text
 
 
 def parse_sitemap(xml_content: str, url_pattern: str) -> list[dict]:
@@ -331,62 +348,84 @@ type: "sitemap"
     return filepath
 
 
+def process_source(source: dict) -> dict:
+    """Process a single sitemap source. Returns result entry dict."""
+    print(f"\n[{source['name']}] Fetching sitemap: {source['sitemap_url']}")
+    
+    try:
+        xml_content = fetch_sitemap(source["sitemap_url"])
+    except Exception as e:
+        print(f"  [!] [{source['name']}] Failed to fetch sitemap: {e}", file=sys.stderr)
+        return {
+            "name": source["name"],
+            "error": str(e),
+            "new_articles": [],
+            "saved_articles": [],
+        }
+    
+    articles = parse_sitemap(xml_content, source["url_pattern"])
+    print(f"  [{source['name']}] Found {len(articles)} matching articles in sitemap")
+    
+    seen_urls = load_state(source["state_file"])
+    new_articles = [a for a in articles if a["url"] not in seen_urls]
+    
+    print(f"  [{source['name']}] New: {len(new_articles)}, Previously seen: {len(seen_urls) - len(new_articles)}")
+    
+    saved = []
+    to_scrape = new_articles[:MAX_ARTICLES_PER_SOURCE] if len(new_articles) > MAX_ARTICLES_PER_SOURCE else new_articles
+    skipped = len(new_articles) - len(to_scrape)
+    if skipped > 0:
+        print(f"  [{source['name']}] Limiting to {MAX_ARTICLES_PER_SOURCE} scrapes (skipping {skipped}) — remainder tracked in state for future runs")
+    for article in to_scrape:
+        print(f"  [{source['name']}] Scraping: {article['url']}")
+        scraped = scrape_article(article["url"], source.get("title_suffixes"))
+        if scraped:
+            scraped["lastmod"] = article.get("lastmod")
+            filepath = save_raw_article(scraped, source["name"], source["file_prefix"])
+            saved.append({"url": article["url"], "title": scraped.get("title"), "filepath": filepath})
+    
+    # Update state
+    all_urls = seen_urls | {a["url"] for a in articles}
+    save_state(source["state_file"], all_urls)
+    
+    return {
+        "name": source["name"],
+        "url": source["url"],
+        "total_in_sitemap": len(articles),
+        "new_articles": [{"url": a["url"], "lastmod": a.get("lastmod")} for a in new_articles],
+        "saved_articles": saved,
+    }
+
+
 def main():
     start_time = datetime.now(timezone.utc)
     os.makedirs(CHECKPOINT_DIR, exist_ok=True)
     
+    # Process sources in parallel (8 workers to stay within 120s cron limit)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
+        future_to_source = {executor.submit(process_source, s): s for s in SOURCES}
+        source_results = []
+        for future in concurrent.futures.as_completed(future_to_source):
+            source = future_to_source[future]
+            try:
+                entry = future.result()
+            except Exception as e:
+                print(f"  [!] [{source['name']}] Unhandled error: {e}", file=sys.stderr)
+                entry = {
+                    "name": source["name"],
+                    "error": str(e),
+                    "new_articles": [],
+                    "saved_articles": [],
+                }
+            source_results.append(entry)
+    
+    total_new = sum(len(r.get("new_articles", [])) for r in source_results)
+    
     result = {
         "source": "sitemap",
         "timestamp": start_time.isoformat(),
-        "sources": [],
+        "sources": source_results,
     }
-    
-    total_new = 0
-    
-    for source in SOURCES:
-        print(f"\n[{source['name']}] Fetching sitemap: {source['sitemap_url']}")
-        
-        try:
-            xml_content = fetch_sitemap(source["sitemap_url"])
-        except Exception as e:
-            print(f"  [!] Failed to fetch sitemap: {e}", file=sys.stderr)
-            result["sources"].append({
-                "name": source["name"],
-                "error": str(e),
-                "new_articles": [],
-                "saved_articles": [],
-            })
-            continue
-        
-        articles = parse_sitemap(xml_content, source["url_pattern"])
-        print(f"  Found {len(articles)} matching articles in sitemap")
-        
-        seen_urls = load_state(source["state_file"])
-        new_articles = [a for a in articles if a["url"] not in seen_urls]
-        
-        print(f"  New: {len(new_articles)}, Previously seen: {len(seen_urls) - len(new_articles)}")
-        
-        saved = []
-        for article in new_articles:
-            print(f"  Scraping: {article['url']}")
-            scraped = scrape_article(article["url"], source.get("title_suffixes"))
-            if scraped:
-                scraped["lastmod"] = article.get("lastmod")
-                filepath = save_raw_article(scraped, source["name"], source["file_prefix"])
-                saved.append({"url": article["url"], "title": scraped.get("title"), "filepath": filepath})
-        
-        # Update state
-        all_urls = seen_urls | {a["url"] for a in articles}
-        save_state(source["state_file"], all_urls)
-        
-        result["sources"].append({
-            "name": source["name"],
-            "url": source["url"],
-            "total_in_sitemap": len(articles),
-            "new_articles": [{"url": a["url"], "lastmod": a.get("lastmod")} for a in new_articles],
-            "saved_articles": saved,
-        })
-        total_new += len(new_articles)
     
     # Write checkpoint
     timestamp = start_time.strftime("%Y%m%d_%H%M%S")
