@@ -1,3 +1,9 @@
+## [2026-05-10] ingest | Dreaming — Addy Osmani Agent Harness Engineering + entity page
+- **Raw article**: raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md
+- **Updated**: [[concepts/harness-engineering]] — Added Addy Osmani's Agent = Model + Harness framework section (The Ratchet, Working Backwards from Behavior, Context Rot, Long-Horizon Execution, Harnesses Don't Shrink, They Move, Claude Code architecture)
+- **Created**: [[entities/addy-osmani]] — Google Cloud AI director, Chrome DevTools lead, open-source author
+- **Note**: dreaming-group pre-run script failed JSON parse; recovered via blog_ingest triage. deepseek-v4 (Together AI), nvidia-dynamo, agent-development-lifecycle already covered by other pipelines.
+
 ## [2026-05-10] watch | Watchdog fix — SCHEMA.md pipe-table corruption
 - **SCHEMA.md line 36**: `|- **Engineering**:...` → `- **Engineering**:...` (pipe prefix removed)
 - **Root cause**: Previous agent patch introduced `|-` prefix when editing SCHEMA.md tag section

@@ -2,11 +2,12 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-10 | Total pages: 1725 | Indexed entries: 784 | Not in index: 941 |
+> Last updated: 2026-05-10 | Total pages: 1727 | Indexed entries: 785 | Not in index: 942 |
 
-## Entities (544 pages)
+## Entities (545 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
+- [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
 - [[entities/agreement-bug]] — Agreement is a Bug
 - [[entities/autoreason]] — Autoreason
 - [[entities/claude-perfect-memory]] — Claude Perfect Memory

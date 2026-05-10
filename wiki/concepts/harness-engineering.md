@@ -1,7 +1,7 @@
 ---
 title: "Harness Engineering"
 created: 2026-04-30
-updated: 2026-05-05
+updated: 2026-05-10
 tags:
   - concept
   - evaluation
@@ -10,12 +10,12 @@ tags:
   - langchain
   - coding-agents
   - middleware
-  - evals-optimization
 aliases:
   - harness
   - evals-harness
   - evaluation-harness
   - better-harness
+  - agent-harness-engineering
 related:
   - [[concepts/ai-evals]]
   - [[concepts/critique-shadowing]]
@@ -24,16 +24,18 @@ related:
   - [[entities/hamel-husain]]
   - [[entities/shreya-shankar]]
   - [[entities/vtrivedy10]]
+  - [[entities/addy-osmani]]
   - [[concepts/ai-evals-people]]
 sources:
   - raw/articles/2024-03-26_hamel-revenge-data-scientist.md
   - raw/articles/2026-02-17_langchain-improving-deep-agents-harness-engineering.md
   - raw/articles/2026-04-08_langchain-better-harness-hill-climbing-evals.md
   - raw/articles/2026-05-06_vtrivedy10_strong-opinions-agent-harness-engineering.md
+  - raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md
   - https://x.com/vtrivedy10/status/2052100726608781363
   - https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering
   - https://blog.langchain.com/better-harness-a-recipe-for-harness-hill-climbing-with-evals/
-description: "The practice of building evaluation and constraint systems around LLMs for production reliability. Includes production case studies from LangChain and others."
+description: "The practice of building evaluation and constraint systems around LLMs for production reliability. Includes production case studies from LangChain, Addy Osmani's Agent = Model + Harness framework, and the Agent Harness Engineering discipline."
 ---
 
 # Harness Engineering
@@ -215,6 +217,66 @@ From swyx's AINews analysis (May 2026), the "product boundary" is shifting from 
 - **Open harness ecosystem momentum**: Hermes Agent Kanban (visual multi-agent coordination), deepagents, Flue-style systems
 - **Cost efficiency**: Teams achieving **>20x cheaper agents** by tuning open models inside high-quality harnesses rather than using frontier APIs
 - **LangGraph improvements**: Model-specific harness configs, schema migrations, node-level error handlers
+
+## Addy Osmani's Agent Harness Engineering Framework (May 2026)
+
+On May 9, 2026, [[entities/addy-osmani|Addy Osmani]] published a comprehensive synthesis of the agent harness engineering movement, framing coding agents as **Model + Harness** and codifying the disciplines that differentiate production harnesses from ad-hoc scaffolding.
+
+### The Ratchet: Every Mistake Becomes a Rule
+
+The core operational pattern: treat every agent mistake as a permanent signal, not a one-off fluke. When an agent ships a commented-out test, the response is not "retry and hope" but a systematic chain:
+
+1. **Update AGENTS.md** — "Never comment out tests; delete or fix them."
+2. **Add a pre-commit hook** — Automatically flag `.skip(` in the diff.
+3. **Update the reviewer subagent** — Block commented-out tests at review time.
+
+**Constraints should only be added when you observe a real failure, and removed only when a capable model renders them redundant.** Every line in a good system prompt should trace back to a specific, historical failure. This makes harness engineering inherently codebase-specific — the right harness is entirely shaped by its unique failure history.
+
+### Working Backwards from Behavior
+
+The design methodology: start with the desired behavior and build the component that delivers it. Each harness component must have a distinct, nameable job:
+
+| Component | Function |
+|-----------|----------|
+| **Filesystem + Git** | Durable state, versioning, coordination surface |
+| **Bash + Code Execution** | General-purpose tooling via ReAct loop |
+| **Sandboxes** | Isolated runtime with pre-installed defaults |
+| **Memory + Search** | Continual learning (AGENTS.md, web search, MCP) |
+| **Context Management** | Compaction, tool-call offloading, progressive disclosure |
+| **Hooks** | Enforcement layer — silent success, verbose failure |
+| **Rulebook** | Flat markdown file as pilot's checklist, earned through past failures |
+
+### Battling Context Rot
+
+Three primary techniques for managing context window scarcity:
+
+- **Compaction** — Intelligently summarizing and offloading older context.
+- **Tool-call offloading** — Storing massive outputs in the filesystem, keeping only headers/footers in context.
+- **Progressive disclosure** — Revealing instructions and tools only when a task requires them.
+
+### Long-Horizon Execution Patterns
+
+Autonomous work patterns that prevent early stopping and poor decomposition:
+
+- **Loops** — Intercepting model exit attempts, forcing continuation against a completion goal in a fresh context window.
+- **Planning** — Decomposing goals into step-by-step plans with self-verification hooks.
+- **Splits** — Separating generation and evaluation into distinct agents to avoid self-grading bias.
+
+### Harnesses Don't Shrink, They Move
+
+A key systems insight: as models improve, the need for harnesses does not disappear — it shifts. Better models make old scaffolding redundant but unlock new, harder tasks with entirely new failure modes. Every harness component encodes an assumption about what the model cannot do alone. When the model improves, outdated scaffolding is removed, and new scaffolding is built for the next horizon.
+
+There is also an active feedback loop: today's models are post-trained with specific harnesses in the loop, creating a degree of **overfitting** — the model gets exceptionally good at the specific harness actions its designers prioritized.
+
+### Claude Code Architecture (Fareed Khan)
+
+The clearest public picture of a mature production harness: almost every concept maps to a named component — context injection as the knowledge layer, loop state in the memory store, destructive-action hooks behind the permission gate, subagent context firewalls as the multi-agent layer, and MCP servers + bash plugged into the tool dispatch registry. Claude Code's trajectory is about the harness at least as much as the model beneath it.
+
+### Industry Convergence
+
+The top coding agents today look more like each other than their underlying models do. Harness patterns are converging across platforms. The open frontier: orchestrating multiple agents in parallel, enabling agents to analyze their own traces, and building environments that dynamically assemble tools just-in-time.
+
+**Sources**: Addy Osmani's X Article (May 9, 2026), Fareed Khan's Claude Code architecture breakdown, HumanLayer "skill issue" framing, Anthropic Engineering long-running app guides, Birgitta Böckeler on user-side experience.
 
 ## Viv Trivedy's "Strong Opinions, Loosely Held" (May 2026)
 
