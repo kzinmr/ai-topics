@@ -9,6 +9,18 @@
   - `concepts/agent-development-lifecycle.md` — Merged Harrison Chase's Build→Test→Deploy→Monitor framework (authoritative source) with existing Salesforce operational roles. Added Governance layer, three-layer Build taxonomy (frameworks/runtimes/harnesses), Test/Deploy/Monitor/Iterate details.
   - `entities/harrison-chase.md` — Added ADLC article source, updated description to credit ADLC framework, bumped updated date to 2026-05-10
 - **Bookmarks**: 2 X native articles → both found public mirrors (adityabawankule.io, langchain.com)
+## [2026-05-10] lint | Daily health check — fixed triple brackets, case mismatches, header counts; 941 pages missing from index
+- **CRITICAL**: Triple bracket `[[[` corruption on 11 index entries (lines 580-583, 610-616) — FIXED
+- **CRITICAL**: Index entry `[[concepts/claris-filemaker-agentic-coding]]` pointed to wrong directory (file is in entities/) — FIXED
+- **FIXED**: Case mismatch `[[concepts/mooncake]]` in meta-capacity-efficiency-agents.md → `[[concepts/Mooncake]]`
+- **WARNING**: 941 out of 1725 pages (54.6%) NOT indexed in index.md — critical gap
+- **WARNING**: 1314 broken wikilinks (file not found), 250 non-canonical tags, 73 pages with missing frontmatter
+- **WARNING**: 385 orphan pages (133 stubs, 252 non-stubs)
+- **WARNING**: 3 date-prefixed filenames in concepts/ violate naming convention
+- **WARNING**: Header count discrepancy fixed: was 1844 reported, 1725 actual
+- **INFO**: Index corruption (line-number, pipe-table): CLEAN
+- **INFO**: Log structure: CLEAN (9 entries, no duplicate headers)
+
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.

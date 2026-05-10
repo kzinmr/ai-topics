@@ -3,7 +3,7 @@ title: "Meta Capacity Efficiency: Unified AI Agents at Hyperscale"
 created: "2026-05-06"
 updated: "2026-05-06"
 type: concept
-tags: [ai-agents, infrastructure, benchmark, meta, automation]
+tags: [ai-agents, infrastructure, benchmark, company, automation]
 sources: [raw/articles/2026-05-06_meta-capacity-efficiency-unified-ai-agents.md]
 ---
 
@@ -70,4 +70,4 @@ The same foundation now powers:
 - [[concepts/kernel-evolve]] — agentic kernel optimization
 - [[concepts/ranking-engineer-agent]] — autonomous ads ranking
 - [[concepts/agent-harness-primitives]] — harness architecture patterns
-- [[concepts/mooncake]] — KV-cache infrastructure (Moonshot AI technology adopted by Cloudflare)
+- [[concepts/Mooncake]] — KV-cache infrastructure (Moonshot AI technology adopted by Cloudflare)
