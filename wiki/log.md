@@ -1,3 +1,14 @@
+## [2026-05-10] watch | Watchdog fix — SCHEMA.md pipe-table corruption
+- **SCHEMA.md line 36**: `|- **Engineering**:...` → `- **Engineering**:...` (pipe prefix removed)
+- **Root cause**: Previous agent patch introduced `|-` prefix when editing SCHEMA.md tag section
+- **Remaining issues** (not auto-fixable):
+  - 941 pages (54.6%) not indexed in index.md
+  - 1,314 broken wikilinks (many raw/articles/ refs, missing entities/concepts)
+  - 250 non-canonical tags (needs tag normalization batch)
+  - 73 pages with missing frontmatter
+  - 385 orphan pages (133 stubs, 252 non-stubs)
+  - 3 date-prefixed filenames in concepts/
+
 ## [2026-05-10] ingest | X bookmarks — ADLC (Harrison Chase) + Codex /goal meta-prompting
 - **Raw articles**: 2 new
   - `raw/articles/2026-05-04_adityabawankule-codex-goal-meta-prompting.md` — Aditya Bawankule on meta-prompting Codex /goal for days of autonomous work
