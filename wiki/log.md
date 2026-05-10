@@ -1,3 +1,14 @@
+## [2026-05-10] ingest | X bookmarks — ADLC (Harrison Chase) + Codex /goal meta-prompting
+- **Raw articles**: 2 new
+  - `raw/articles/2026-05-04_adityabawankule-codex-goal-meta-prompting.md` — Aditya Bawankule on meta-prompting Codex /goal for days of autonomous work
+  - `raw/articles/2026-05-09_langchain-agent-development-lifecycle.md` — Harrison Chase (LangChain) canonical ADLC framework
+- **New pages**:
+  - `concepts/codex-goal-meta-prompting.md` — technique for using a second AI to generate high-quality /goal prompts for Codex CLI v0.128.0
+  - `entities/aditya-bawankule.md` — stub entity for the technical blogger
+- **Enriched pages**:
+  - `concepts/agent-development-lifecycle.md` — Merged Harrison Chase's Build→Test→Deploy→Monitor framework (authoritative source) with existing Salesforce operational roles. Added Governance layer, three-layer Build taxonomy (frameworks/runtimes/harnesses), Test/Deploy/Monitor/Iterate details.
+  - `entities/harrison-chase.md` — Added ADLC article source, updated description to credit ADLC framework, bumped updated date to 2026-05-10
+- **Bookmarks**: 2 X native articles → both found public mirrors (adityabawankule.io, langchain.com)
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.

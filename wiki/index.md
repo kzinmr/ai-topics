@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-10 | Total pages: 1842 | Full entries: 1842 | Stubs: 0 |
+> Last updated: 2026-05-10 | Total pages: 1844 | Full entries: 1844 | Stubs: 0 |
 
 ## Entities (544 pages)
 
@@ -512,6 +512,7 @@
 - [[entities/pinecone]] — Pinecone — Vector database company (pinecone.io). Managed vector search for AI/LLM embeddings. $138M Series B at $750M valuation. Founded 2019 by Edo Liberty.
 - [[entities/abridge]] — Abridge — AI for healthcare clinical conversations. Automates medical documentation.
 - [[entities/adept]] — Adept — AI agent company. Founded by Transformer co-inventors. $350M Series B.
+- [[entities/aditya-bawankule]] — Aditya Bawankule — technical blogger covering AI coding agents, Codex, meta-prompting, and developer tooling
 - [[entities/anyscale]] — Anyscale — Ray framework for scalable AI/ML compute. Founded by UC Berkeley RISELab creators.
 - [[entities/applied-intuition]] — Applied Intuition — Physical AI autonomy platform. $15B valuation. Serves 18 of top 20 OEMs and U.S. Army.
 - [[entities/augment]] — Augment Code — AI coding assistant. $227M raised at $977M valuation. CEO Scott Dietzen.
@@ -581,6 +582,7 @@
 - [[[concepts/bernstein]] — Deterministic multi-agent orchestrator. Python scheduler, zero LLM tokens on coordination, Git worktree isolation, 40+ agent adapters.
 - [[[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
 - [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling
+- [[concepts/codex-goal-meta-prompting]] — Codex /goal Meta-Prompting — technique for using a second AI to generate high-quality /goal prompts for OpenAI Codex's long-horizon autonomous agent mode
 - [[concepts/coding-agents-complexity-budgets]] — Lee Robinson (Cursor) on abstraction costs in the AI agent era. Migrated cursor.com from CMS to raw code in 3 days with $260 in tokens. Complexity budget concept.
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst — Devinをデータ分析エージェントにする設計
 - [[concepts/context-graph]] — Context Graph
@@ -623,7 +625,7 @@
 - [[concepts/information-theory-and-agent-communication]] — Shannon (1948) の通信の数学的理論をAIエージェント間コミュニケーションの観点から再解釈。V-Information (Xu et al., 2020) との統合によるエージェント通信3層モデル。ハーネス効果の情報理論的基礎、コンテキストウィンドウのShannon容量アナロジー。
 - [[concepts/infrastructure-noise-agent-evals]] — エージェント型コーディング評価におけるインフラノイズの定量分析。Terminal-Bench 2.0でリソース1x→uncapped間で6pp差（p<0.01）。3pp未満のリーダーボード差は懐疑的に。時刻・並列度・帯域幅も隠れた交絡因子。
 - [[concepts/interpretability]] — Interpretability（機械的解釈可能性）: LLM内部の特徴と回路を可視化する研究分野。AnthropicのScaling Monosemanticity、Golden Gate Claude、Entropix。RLHF代替としての推論時steering、性能と制御性のトレードオフに対応。
-- [[concepts/agent-development-lifecycle]] — Agent Development Lifecycle (ADLC) — formalized framework for AI agent lifecycle: planning, deployment, operation, iteration. New operational roles: Agent Supervisor, QA Lead, AI Ops Manager, Chief AI Officer.
+- [[concepts/agent-development-lifecycle]] — Agent Development Lifecycle (ADLC) — Build→Test→Deploy→Monitor framework by Harrison Chase (LangChain). Governance layer for cost, tool access, discoverability. Operational roles: Agent Supervisor, QA Lead, AI Ops Manager, Chief AI Officer.
 - [[concepts/carlini-c-compiler-agents]] — Nicholas Carliniの実験: 16体のClaudeエージェントを2,000セッション並列稼働、$20Kで100K行のRust Cコンパイラを構築しLinux 6.9カーネルをコンパイル成功。Infinite Agent Loop、Gitベースタスクロック、並列エージェント設計の実践的教訓。
 - [[concepts/caisi-federal-ai-review]] — CAISI連邦AI事前審査: NIST商務省傘下のCenter for AI Standards and Innovation。2026年5月、Google DeepMind/Microsoft/xAIがOpenAI/Anthropicに続きモデル事前公開前評価契約に参加。40件以上の評価完了、TRAINS Taskforce、国家安全保障（サイバー・バイオ・化学）評価。Mythosを契機に制度化。
 - [[concepts/cloudflare-agents]] — Cloudflare's iMARS (Internal MCP Agent/Server Rollout Squad) AI engineering stack. 3,683 internal users, 93% R&D coverage, 2x MR velocity increase. AI Code Reviewer multi-agent review, Engineering Codex.

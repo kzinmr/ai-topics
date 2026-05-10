@@ -11,13 +11,14 @@ tags:
   - open-source
   - harness-engineering
 status: complete
-description: "Co-founder and CEO of LangChain. Pioneer of the Open Models / Open Runtime / Open Harness agent architecture framework."
-updated: 2026-05-06
+description: "Co-founder and CEO of LangChain. Pioneer of the Open Models / Open Runtime / Open Harness agent architecture framework and the Agent Development Lifecycle (ADLC)."
+updated: 2026-05-10
 sources:
   - "https://x.com/hwchase17/status/2034297125417460044"
   - "https://www.langchain.com/blog/nvidia-enterprise"
   - "https://www.langchain.com/blog/your-harness-your-memory"
   - "https://www.langchain.com/blog/agent-observability-needs-feedback-to-power-learning"
+  - "https://www.langchain.com/blog/the-agent-development-lifecycle"
   - "https://github.com/langchain-ai/langchain"
   - "https://www.linkedin.com/in/harrison-chase-961287118"
 related:
