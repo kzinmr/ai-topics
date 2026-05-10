@@ -2,7 +2,7 @@
 title: "Execute work in Glean with MCP Apps in Assistant"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/mcp-apps-assistant-apr-drop-2026"
-scraped: "2026-05-10T01:20:53.870909+00:00"
+scraped: "2026-05-10T01:27:50.125993+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

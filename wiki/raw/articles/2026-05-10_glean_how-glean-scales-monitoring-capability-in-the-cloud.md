@@ -2,7 +2,7 @@
 title: "How Glean scales monitoring capability in the cloud"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/how-glean-scales-monitoring-capability-in-the-cloud"
-scraped: "2026-05-10T01:20:37.907534+00:00"
+scraped: "2026-05-10T01:27:41.964319+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

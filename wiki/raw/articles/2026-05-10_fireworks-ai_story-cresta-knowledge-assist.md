@@ -2,7 +2,7 @@
 title: "How Cresta drives millions of real-time, AI-powered contact center interactions with Fireworks"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/story-cresta-knowledge-assist"
-scraped: "2026-05-10T01:21:00.412254+00:00"
+scraped: "2026-05-10T01:27:52.257039+00:00"
 lastmod: "2026-02-12T18:52:37.000Z"
 type: "sitemap"
 ---

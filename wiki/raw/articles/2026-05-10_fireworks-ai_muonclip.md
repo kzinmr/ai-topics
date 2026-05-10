@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/muonclip"
-scraped: "2026-05-10T01:20:49.238487+00:00"
+scraped: "2026-05-10T01:27:43.087327+00:00"
 lastmod: "2026-02-12T18:51:52.000Z"
 type: "sitemap"
 ---

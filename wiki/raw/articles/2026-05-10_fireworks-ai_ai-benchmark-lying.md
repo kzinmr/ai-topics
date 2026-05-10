@@ -2,7 +2,7 @@
 title: "Your AI Benchmark is Lying to You. Here's How We Caught It"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/ai-benchmark-lying"
-scraped: "2026-05-10T01:21:09.216698+00:00"
+scraped: "2026-05-10T01:27:58.792573+00:00"
 lastmod: "2026-02-12T18:51:32.000Z"
 type: "sitemap"
 ---

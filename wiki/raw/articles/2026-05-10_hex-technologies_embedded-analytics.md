@@ -2,7 +2,7 @@
 title: "What is embedded analytics? Types, architecture & uses | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/embedded-analytics/"
-scraped: "2026-05-10T01:27:11.662042+00:00"
+scraped: "2026-05-10T01:28:52.254454+00:00"
 lastmod: "2025-12-12"
 type: "sitemap"
 ---

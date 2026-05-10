@@ -2,7 +2,7 @@
 title: "Glean skills: A new way to package and reuse enterprise expertise"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-skills-launch-2026"
-scraped: "2026-05-10T01:20:26.370972+00:00"
+scraped: "2026-05-10T01:27:37.094223+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

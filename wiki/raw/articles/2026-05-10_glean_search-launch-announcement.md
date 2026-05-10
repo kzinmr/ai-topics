@@ -2,7 +2,7 @@
 title: "Enterprise-grade generative AI search capabilities"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/search-launch-announcement"
-scraped: "2026-05-10T01:21:07.811219+00:00"
+scraped: "2026-05-10T01:27:57.682539+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

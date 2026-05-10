@@ -2,7 +2,7 @@
 title: "World summit AI: Glean, igniting interest in workplace LLMs"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-sparks-curiosities-around-generative-llms-for-the-workplace-at-world-summit-ai-2023"
-scraped: "2026-05-10T01:20:27.963029+00:00"
+scraped: "2026-05-10T01:27:37.592238+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

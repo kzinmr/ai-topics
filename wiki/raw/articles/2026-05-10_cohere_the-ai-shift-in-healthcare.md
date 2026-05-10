@@ -2,7 +2,7 @@
 title: "The AI shift in healthcare: A 6-step playbook"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/the-ai-shift-in-healthcare"
-scraped: "2026-05-10T01:20:35.573259+00:00"
+scraped: "2026-05-10T01:30:04.626980+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Why Your Business Needs an AI Scheduling Assistant"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-scheduling-assistant"
-scraped: "2026-05-10T01:20:15.521076+00:00"
+scraped: "2026-05-10T01:29:45.172670+00:00"
 lastmod: "2025-07-16"
 type: "sitemap"
 ---

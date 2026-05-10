@@ -2,7 +2,7 @@
 title: "Top 7 examples of retrieval-augmented generation"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/rag-examples"
-scraped: "2026-05-10T01:20:58.737987+00:00"
+scraped: "2026-05-10T01:27:52.636200+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

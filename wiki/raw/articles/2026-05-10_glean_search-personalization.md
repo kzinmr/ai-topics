@@ -2,7 +2,7 @@
 title: "A Complete Guide to Search Personalization in 2025"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/search-personalization"
-scraped: "2026-05-10T01:21:08.100441+00:00"
+scraped: "2026-05-10T01:27:57.816601+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

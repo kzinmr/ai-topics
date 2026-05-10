@@ -2,7 +2,7 @@
 title: "Glean is coming to Google Cloud Next 2024!"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/glean-gcn-2024"
-scraped: "2026-05-10T01:20:14.434218+00:00"
+scraped: "2026-05-10T01:27:30.921931+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

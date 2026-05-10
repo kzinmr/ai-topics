@@ -2,7 +2,7 @@
 title: "Work Without Boundaries: The AI Platform for Legal Work"
 source: "Harvey Blog"
 url: "https://www.harvey.ai/blog/work-without-boundaries-ai-platform-for-legal-work"
-scraped: "2026-05-10T01:21:09.762557+00:00"
+scraped: "2026-05-10T01:27:25.408535+00:00"
 lastmod: "2025-10-15T07:00:00.000Z"
 type: "sitemap"
 ---

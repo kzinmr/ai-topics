@@ -2,7 +2,7 @@
 title: "What Is Generative AI? GenAI and How It Works"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/what-is-generative-ai"
-scraped: "2026-05-10T01:20:49.608779+00:00"
+scraped: "2026-05-10T01:30:17.252940+00:00"
 lastmod: "2025-11-17"
 type: "sitemap"
 ---

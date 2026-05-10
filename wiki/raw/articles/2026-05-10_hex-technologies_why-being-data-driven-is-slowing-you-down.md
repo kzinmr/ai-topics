@@ -2,7 +2,7 @@
 title: "Why Being Data-Driven is Slowing You Down | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/why-being-data-driven-is-slowing-you-down/"
-scraped: "2026-05-10T01:27:09.090213+00:00"
+scraped: "2026-05-10T01:28:51.779281+00:00"
 lastmod: "2025-10-17"
 type: "sitemap"
 ---

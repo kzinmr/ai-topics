@@ -7,7 +7,7 @@ separately for progressive disclosure when deeper inspection is needed.
 import json, os, subprocess, sys
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlencode, urlparse
 
 try:
     import yaml
@@ -25,11 +25,17 @@ DB = HERMES_HOME / "processed_x_accounts.json"
 DETAIL_DIR = HERMES_HOME / "cron" / "data"
 DETAIL_FILE = DETAIL_DIR / "x_accounts_latest_full.json"
 ARCHIVE_DIR = DETAIL_DIR / "x_accounts_archive"
-PROCESSED_TTL_DAYS = int(os.environ.get("HERMES_X_ACCOUNTS_TTL_DAYS", "14"))
+USER_ID_CACHE = DETAIL_DIR / "x_accounts_user_ids.json"
+SCAN_STATE = DETAIL_DIR / "x_accounts_scan_state.json"
+PROCESSED_TTL_DAYS = int(os.environ.get("HERMES_X_ACCOUNTS_TTL_DAYS", "90"))
 MAX_CANDIDATES = int(os.environ.get("HERMES_X_ACCOUNTS_MAX_CANDIDATES", "12"))
-RECENT_DAYS = int(os.environ.get("HERMES_X_ACCOUNTS_RECENT_DAYS", "7"))
+RECENT_DAYS = int(os.environ.get("HERMES_X_ACCOUNTS_RECENT_DAYS", "45"))
+REQUEST_BUDGET = int(os.environ.get("HERMES_X_ACCOUNTS_REQUEST_BUDGET", "12"))
+USER_CACHE_TTL_DAYS = int(os.environ.get("HERMES_X_ACCOUNTS_USER_CACHE_TTL_DAYS", "90"))
+TWEETS_PER_ACCOUNT = int(os.environ.get("HERMES_X_ACCOUNTS_TWEETS_PER_ACCOUNT", "10"))
 SOURCE_FILE = os.environ.get("FETCH_X_ACCOUNTS_SOURCE_FILE", "").strip()
 REPLAY_NO_WRITE = os.environ.get("FETCH_X_ACCOUNTS_REPLAY_NO_WRITE", "1").strip().lower() not in ("0", "false", "no")
+REQUESTS_ATTEMPTED = 0
 
 HIGH_SIGNAL_DOMAINS = (
     "github.com",
@@ -58,25 +64,127 @@ LOW_SIGNAL_DOMAINS = (
 )
 
 def run(*args):
+    global REQUESTS_ATTEMPTED
+    REQUESTS_ATTEMPTED += 1
     r = subprocess.run([XURL, "--auth", "oauth2", *args], capture_output=True, text=True)
     if r.returncode != 0:
-        print(f"xurl error: {r.stderr}", file=sys.stderr)
+        detail = (r.stderr or r.stdout or "").strip()
+        print(f"xurl error: {detail}", file=sys.stderr)
         return None
     return r.stdout
 
-def get_user_id(handle):
-    handle_clean = handle.lstrip("@")
-    out = run("user", handle_clean)
+
+def normalize_handle(handle):
+    return str(handle).strip().lstrip("@").lower()
+
+
+def load_json_file(path, default):
+    if not path.exists():
+        return default
+    try:
+        return json.loads(path.read_text())
+    except json.JSONDecodeError:
+        return default
+
+
+def load_scan_state(path):
+    data = load_json_file(path, {})
+    try:
+        cursor = int(data.get("cursor", 0))
+    except (TypeError, ValueError):
+        cursor = 0
+    return {"cursor": max(0, cursor)}
+
+
+def save_scan_state(path, cursor):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({
+        "cursor": cursor,
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+    }, indent=2))
+
+
+def load_user_cache(path, now):
+    data = load_json_file(path, {})
+    users = data.get("users", {})
+    if not isinstance(users, dict):
+        users = {}
+
+    valid = {}
+    for handle, entry in users.items():
+        if not isinstance(entry, dict) or not entry.get("id"):
+            continue
+        resolved_at = entry.get("resolved_at")
+        if USER_CACHE_TTL_DAYS > 0 and resolved_at:
+            try:
+                resolved_dt = datetime.fromisoformat(str(resolved_at).replace("Z", "+00:00"))
+                age_days = (now - resolved_dt).total_seconds() / 86400
+                if age_days > USER_CACHE_TTL_DAYS:
+                    continue
+            except ValueError:
+                continue
+        valid[normalize_handle(handle)] = entry
+    return valid
+
+
+def save_user_cache(path, users):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+        "ttl_days": USER_CACHE_TTL_DAYS,
+        "users": dict(sorted(users.items())),
+    }, indent=2, ensure_ascii=False))
+
+
+def get_cached_user_id(user_cache, handle):
+    entry = user_cache.get(normalize_handle(handle), {})
+    return str(entry.get("id") or "").strip() or None
+
+
+def resolve_user_ids(handles):
+    clean = []
+    seen = set()
+    for handle in handles:
+        normalized = normalize_handle(handle)
+        if normalized and normalized not in seen:
+            clean.append(normalized)
+            seen.add(normalized)
+    if not clean:
+        return {}
+
+    params = urlencode({
+        "usernames": ",".join(clean),
+        "user.fields": "username,name",
+    })
+    out = run(f"/2/users/by?{params}")
     if not out:
         return None
     try:
         data = json.loads(out)
-        return data.get("data", data).get("id")
     except json.JSONDecodeError:
         return None
 
-def get_recent_tweets(user_id, max_results=10):
-    out = run("/2/users/{}/tweets?max_results={}&tweet.fields=created_at,entities,referenced_tweets".format(user_id, max_results))
+    resolved = {}
+    resolved_at = datetime.now(timezone.utc).isoformat()
+    for user in data.get("data", []) or []:
+        username = normalize_handle(user.get("username"))
+        user_id = str(user.get("id") or "").strip()
+        if username and user_id:
+            resolved[username] = {
+                "id": user_id,
+                "username": user.get("username", username),
+                "name": user.get("name", ""),
+                "resolved_at": resolved_at,
+            }
+    return resolved
+
+
+def get_recent_tweets(user_id, max_results=TWEETS_PER_ACCOUNT):
+    params = urlencode({
+        "max_results": max_results,
+        "tweet.fields": "created_at,entities,referenced_tweets",
+    })
+    out = run(f"/2/users/{user_id}/tweets?{params}")
     if not out:
         return []
     try:
@@ -282,6 +390,17 @@ processed = set(processed_map)
 all_new = []
 all_raw = []
 errors = []
+scan_meta = {
+    "request_budget": REQUEST_BUDGET,
+    "x_api_requests_attempted": 0,
+    "tracked_accounts": len(accounts),
+    "accounts_selected": 0,
+    "accounts_scanned": 0,
+    "accounts_skipped_budget": 0,
+    "user_cache_size": 0,
+    "cursor_start": 0,
+    "cursor_next": 0,
+}
 source_posts = load_source_posts(SOURCE_FILE)
 if source_posts is not None:
     for t in source_posts:
@@ -297,15 +416,43 @@ if source_posts is not None:
         all_raw.append(t)
         all_new.append(compact_post(t, external_url_entries))
 else:
-    for acct in accounts:
-        handle = acct["handle"].lstrip("@")
-        user_id = get_user_id(handle)
+    user_cache = load_user_cache(USER_ID_CACHE, now)
+    scan_state = load_scan_state(SCAN_STATE)
+    cursor = scan_state["cursor"] % len(accounts) if accounts else 0
+    ordered_accounts = accounts[cursor:] + accounts[:cursor]
+    scan_meta["cursor_start"] = cursor
+
+    missing_handles = [
+        acct["handle"]
+        for acct in accounts
+        if not get_cached_user_id(user_cache, acct.get("handle"))
+    ]
+    if missing_handles and REQUESTS_ATTEMPTED < REQUEST_BUDGET:
+        resolved = resolve_user_ids(missing_handles)
+        if resolved is None:
+            errors.append({
+                "handle": "*",
+                "error": "could not batch resolve user ids",
+            })
+        else:
+            user_cache.update(resolved)
+
+    remaining_budget = max(0, REQUEST_BUDGET - REQUESTS_ATTEMPTED)
+    accounts_to_scan = ordered_accounts[:remaining_budget]
+    scan_meta["accounts_selected"] = len(accounts_to_scan)
+    scan_meta["accounts_skipped_budget"] = max(0, len(accounts) - len(accounts_to_scan))
+
+    for acct in accounts_to_scan:
+        handle = normalize_handle(acct["handle"])
+        user_id = get_cached_user_id(user_cache, handle)
         if not user_id:
             errors.append({"handle": handle, "error": "could not resolve user_id"})
             continue
-        tweets = get_recent_tweets(user_id, max_results=10)
+        tweets = get_recent_tweets(user_id, max_results=TWEETS_PER_ACCOUNT)
+        scan_meta["accounts_scanned"] += 1
         for t in tweets:
-            if t["id"] in processed:
+            tweet_id = str(t.get("id", ""))
+            if not tweet_id or tweet_id in processed:
                 continue
             refs = t.get("referenced_tweets", [])
             if any(r.get("type") == "retweeted" for r in refs):
@@ -321,6 +468,10 @@ else:
             all_raw.append(t)
             all_new.append(compact_post(t, external_url_entries))
 
+    next_cursor = (cursor + len(accounts_to_scan)) % len(accounts) if accounts else 0
+    scan_meta["cursor_next"] = next_cursor
+    scan_meta["user_cache_size"] = len(user_cache)
+
 ranked = sorted(
     zip(all_raw, all_new),
     key=lambda pair: (
@@ -333,6 +484,7 @@ if MAX_CANDIDATES > 0:
     ranked = ranked[:MAX_CANDIDATES]
 all_raw = [raw for raw, _ in ranked]
 all_new = [compact for _, compact in ranked]
+scan_meta["x_api_requests_attempted"] = REQUESTS_ATTEMPTED
 
 archive_file = None
 if not (source_posts is not None and REPLAY_NO_WRITE):
@@ -344,16 +496,23 @@ if not (source_posts is not None and REPLAY_NO_WRITE):
         "generated_at": now.isoformat(),
         "new_posts": all_raw,
         "errors": errors,
+        "scan_meta": scan_meta,
     }
     detail_json = json.dumps(detail_payload, indent=2, ensure_ascii=False)
     DETAIL_FILE.write_text(detail_json)
     archive_file = ARCHIVE_DIR / f"x_accounts_{now.strftime('%Y%m%dT%H%M%SZ')}.json"
     archive_file.write_text(detail_json)
+    if source_posts is None:
+        save_user_cache(USER_ID_CACHE, user_cache)
+        save_scan_state(SCAN_STATE, scan_meta["cursor_next"])
 
 output = {
     "generated_at": now.isoformat(),
     "summary": {
-        "accounts_scanned": len(accounts),
+        "tracked_accounts": len(accounts),
+        "accounts_scanned": scan_meta["accounts_scanned"],
+        "accounts_selected": scan_meta["accounts_selected"],
+        "accounts_skipped_budget": scan_meta["accounts_skipped_budget"],
         "source_posts": len(source_posts or []),
         "substantive_candidates": len(ranked),
         "new_posts": len(all_new),
@@ -363,6 +522,11 @@ output = {
         "max_candidates": MAX_CANDIDATES,
         "recent_days": RECENT_DAYS,
         "replay_mode": bool(source_posts is not None),
+        "request_budget": REQUEST_BUDGET,
+        "x_api_requests_attempted": REQUESTS_ATTEMPTED,
+        "cursor_start": scan_meta["cursor_start"],
+        "cursor_next": scan_meta["cursor_next"],
+        "user_cache_size": scan_meta["user_cache_size"],
     },
     "detail_file": str(DETAIL_FILE),
     "new_posts": all_new,
@@ -377,7 +541,7 @@ print(json.dumps(output, indent=2, ensure_ascii=False))
 if not (source_posts is not None and REPLAY_NO_WRITE):
     seen_at = now.isoformat()
     for tweet in all_raw:
-        processed_map[tweet["id"]] = seen_at
+        processed_map[str(tweet["id"])] = seen_at
     DB.parent.mkdir(parents=True, exist_ok=True)
     DB.write_text(
         json.dumps(

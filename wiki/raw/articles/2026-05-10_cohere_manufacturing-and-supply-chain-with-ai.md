@@ -2,7 +2,7 @@
 title: "Manufacturing and AI: Challenges & Solutions"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/manufacturing-and-supply-chain-with-ai"
-scraped: "2026-05-10T01:20:03.625353+00:00"
+scraped: "2026-05-10T01:29:34.857977+00:00"
 lastmod: "2025-07-16"
 type: "sitemap"
 ---

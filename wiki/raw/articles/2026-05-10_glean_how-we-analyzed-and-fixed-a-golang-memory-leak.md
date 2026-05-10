@@ -2,7 +2,7 @@
 title: "How we analyzed and fixed a golang memory leak"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/how-we-analyzed-and-fixed-a-golang-memory-leak"
-scraped: "2026-05-10T01:20:45.459877+00:00"
+scraped: "2026-05-10T01:27:46.295730+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

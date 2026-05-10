@@ -2,7 +2,7 @@
 title: "安全な生成AI: エンタープライズ向けの適切な権限管理"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/secure-generative-ai-for-the-enterprise-requires-the-right-permissions-structure"
-scraped: "2026-05-10T01:21:08.275492+00:00"
+scraped: "2026-05-10T01:27:58.033512+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "More access, better outcomes – GenAI is coming to healthcare"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/genai-is-coming-to-healthcare"
-scraped: "2026-05-10T01:21:13.485574+00:00"
+scraped: "2026-05-10T01:30:37.702795+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

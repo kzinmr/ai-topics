@@ -2,7 +2,7 @@
 title: "What is Intelligent Search and why does it matter?"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/intelligent-search-glean"
-scraped: "2026-05-10T01:20:49.002186+00:00"
+scraped: "2026-05-10T01:27:47.545333+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Glean introduces Glean Agents and advances Work AI platform with the most comprehensive access to work and world knowledge"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-agents-launch-blog"
-scraped: "2026-05-10T01:20:06.368556+00:00"
+scraped: "2026-05-10T01:27:26.774046+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

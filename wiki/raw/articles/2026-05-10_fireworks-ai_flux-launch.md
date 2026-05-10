@@ -2,7 +2,7 @@
 title: "FLUX.1 on Fireworks: Fast, frugal, and flexible"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/flux-launch"
-scraped: "2026-05-10T01:21:04.395686+00:00"
+scraped: "2026-05-10T01:27:57.762798+00:00"
 lastmod: "2026-02-12T18:52:40.000Z"
 type: "sitemap"
 ---

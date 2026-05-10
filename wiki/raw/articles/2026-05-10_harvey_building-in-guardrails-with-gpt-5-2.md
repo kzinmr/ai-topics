@@ -2,7 +2,7 @@
 title: "Building in Active Guardrails With GPT-5.2"
 source: "Harvey Blog"
 url: "https://www.harvey.ai/blog/building-in-guardrails-with-gpt-5-2"
-scraped: "2026-05-10T01:21:10.505002+00:00"
+scraped: "2026-05-10T01:27:25.591435+00:00"
 lastmod: "2025-12-11T18:15:00.000Z"
 type: "sitemap"
 ---

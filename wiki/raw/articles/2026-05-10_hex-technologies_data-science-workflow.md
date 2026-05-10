@@ -2,7 +2,7 @@
 title: "Your ultimate guide to modern data science workflows  | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/data-science-workflow/"
-scraped: "2026-05-10T01:27:22.319352+00:00"
+scraped: "2026-05-10T01:28:54.650430+00:00"
 lastmod: "2025-07-30"
 type: "sitemap"
 ---

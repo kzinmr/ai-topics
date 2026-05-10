@@ -2,7 +2,7 @@
 title: "Nextdoor customer story | Glean work AI"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/nextdoor-work-ai-learning-loop"
-scraped: "2026-05-10T01:20:55.155585+00:00"
+scraped: "2026-05-10T01:27:51.005359+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

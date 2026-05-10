@@ -2,7 +2,7 @@
 title: "Harvey Academy: Shaping the Future of Legal AI Literacy"
 source: "Harvey Blog"
 url: "https://www.harvey.ai/blog/introducing-harvey-academy"
-scraped: "2026-05-10T01:21:08.820395+00:00"
+scraped: "2026-05-10T01:27:25.055318+00:00"
 lastmod: "2026-01-27T13:00:00.000Z"
 type: "sitemap"
 ---

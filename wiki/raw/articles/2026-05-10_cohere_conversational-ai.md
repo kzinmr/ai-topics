@@ -2,7 +2,7 @@
 title: "What Is Conversational AI? Use Cases, Examples, and More"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/conversational-ai"
-scraped: "2026-05-10T01:21:03.757515+00:00"
+scraped: "2026-05-10T01:30:31.432200+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

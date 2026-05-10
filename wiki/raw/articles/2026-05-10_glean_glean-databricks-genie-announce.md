@@ -2,7 +2,7 @@
 title: "Glean & Databricks Genie: A New Era of AI-Powered Data Integration"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-databricks-genie-announce"
-scraped: "2026-05-10T01:20:12.875024+00:00"
+scraped: "2026-05-10T01:27:30.453011+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

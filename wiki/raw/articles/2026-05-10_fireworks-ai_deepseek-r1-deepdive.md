@@ -2,7 +2,7 @@
 title: "DeepSeek-R1 Overview: Features, Capabilities, Parameters"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/deepseek-r1-deepdive"
-scraped: "2026-05-10T01:20:59.835474+00:00"
+scraped: "2026-05-10T01:27:51.896094+00:00"
 lastmod: "2026-04-21T21:27:29.000Z"
 type: "sitemap"
 ---

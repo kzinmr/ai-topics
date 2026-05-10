@@ -2,7 +2,7 @@
 title: "Reinforcement Fine Tuning: Train expert open models to surpass closed frontier models"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/reinforcement-fine-tuning"
-scraped: "2026-05-10T01:20:31.018753+00:00"
+scraped: "2026-05-10T01:27:30.757051+00:00"
 lastmod: "2026-02-12T18:52:06.000Z"
 type: "sitemap"
 ---

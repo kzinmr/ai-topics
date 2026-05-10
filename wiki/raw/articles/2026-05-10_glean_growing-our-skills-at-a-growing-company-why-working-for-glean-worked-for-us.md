@@ -2,7 +2,7 @@
 title: "Growing your skills at a growing company"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/growing-our-skills-at-a-growing-company-why-working-for-glean-worked-for-us"
-scraped: "2026-05-10T01:20:33.909312+00:00"
+scraped: "2026-05-10T01:27:39.544541+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

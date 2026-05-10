@@ -2,7 +2,7 @@
 title: "Enabling Function Calling in DeepSeek v3: Bridging the Gap Between Text and Action"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/function-calling-deepseekv3"
-scraped: "2026-05-10T01:20:47.166674+00:00"
+scraped: "2026-05-10T01:27:41.926356+00:00"
 lastmod: "2026-02-12T18:52:22.000Z"
 type: "sitemap"
 ---

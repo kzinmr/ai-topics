@@ -2,7 +2,7 @@
 title: "構造化データと非構造化データの違い"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/structured-unstructured-data-differences"
-scraped: "2026-05-10T01:21:13.185890+00:00"
+scraped: "2026-05-10T01:27:59.950208+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

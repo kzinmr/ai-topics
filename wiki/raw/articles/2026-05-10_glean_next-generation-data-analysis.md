@@ -2,7 +2,7 @@
 title: "Glean’s next-generation data analysis: making real-time insights across files, applications, and databases accessible to all"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/next-generation-data-analysis"
-scraped: "2026-05-10T01:20:54.984937+00:00"
+scraped: "2026-05-10T01:27:50.888425+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

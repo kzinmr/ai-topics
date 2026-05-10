@@ -2,7 +2,7 @@
 title: "Marketing Apps & Actions from Glean: Streamlining Campaign Management"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-marketing-apps-actions"
-scraped: "2026-05-10T01:20:19.864895+00:00"
+scraped: "2026-05-10T01:27:32.666214+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

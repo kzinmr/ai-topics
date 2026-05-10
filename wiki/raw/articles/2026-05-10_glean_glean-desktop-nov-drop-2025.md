@@ -2,7 +2,7 @@
 title: "The all-new Glean desktop app: Frictionless, instant answers anywhere you work"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-desktop-nov-drop-2025"
-scraped: "2026-05-10T01:20:13.526039+00:00"
+scraped: "2026-05-10T01:27:30.715456+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

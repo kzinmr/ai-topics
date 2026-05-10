@@ -2,7 +2,7 @@
 title: "De-risking AI in financial services: From pilots to profit"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/de-risking-ai-in-financial-services"
-scraped: "2026-05-10T01:21:07.632560+00:00"
+scraped: "2026-05-10T01:30:32.123413+00:00"
 lastmod: "2025-07-14"
 type: "sitemap"
 ---

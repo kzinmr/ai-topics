@@ -2,7 +2,7 @@
 title: "The Benchmark Gap: What It Takes to Ship Kimi K2.5"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/quality-first-with-kimi-k2p5"
-scraped: "2026-05-10T01:20:28.720107+00:00"
+scraped: "2026-05-10T01:27:27.463548+00:00"
 lastmod: "2026-02-09T23:14:43.000Z"
 type: "sitemap"
 ---

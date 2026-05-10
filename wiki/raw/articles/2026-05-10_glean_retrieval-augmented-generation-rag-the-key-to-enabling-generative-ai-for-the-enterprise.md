@@ -2,7 +2,7 @@
 title: "Retrieval augmented generation(RAG): unlocking generative AI"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/retrieval-augmented-generation-rag-the-key-to-enabling-generative-ai-for-the-enterprise"
-scraped: "2026-05-10T01:21:03.791778+00:00"
+scraped: "2026-05-10T01:27:57.261014+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

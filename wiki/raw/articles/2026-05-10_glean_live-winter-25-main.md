@@ -2,7 +2,7 @@
 title: "Glean Autonomous Agents: Self-evaluating with the context and security you need to automate at scale"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/live-winter-25-main"
-scraped: "2026-05-10T01:20:51.871499+00:00"
+scraped: "2026-05-10T01:27:49.153201+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

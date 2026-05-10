@@ -2,7 +2,7 @@
 title: "Comprehensive Guide to Visualizing Data with Matplotlib, Plotly, and Seaborn | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/visualizing-data-in-jupyter/"
-scraped: "2026-05-10T01:27:24.261082+00:00"
+scraped: "2026-05-10T01:28:54.903906+00:00"
 lastmod: "2023-09-08"
 type: "sitemap"
 ---

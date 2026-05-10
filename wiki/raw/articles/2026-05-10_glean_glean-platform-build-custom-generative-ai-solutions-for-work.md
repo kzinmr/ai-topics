@@ -2,7 +2,7 @@
 title: "Glean Platform: custom generative AI solutions for work"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-platform-build-custom-generative-ai-solutions-for-work"
-scraped: "2026-05-10T01:20:24.459736+00:00"
+scraped: "2026-05-10T01:27:34.257135+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "How input token count impacts the latency of AI chat tools"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-input-token-llm-latency"
-scraped: "2026-05-10T01:20:17.724541+00:00"
+scraped: "2026-05-10T01:27:31.998443+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

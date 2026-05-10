@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/llm-judge-eval-protocol-ollama"
-scraped: "2026-05-10T01:21:02.826546+00:00"
+scraped: "2026-05-10T01:27:56.809791+00:00"
 lastmod: "2026-02-12T18:51:20.000Z"
 type: "sitemap"
 ---

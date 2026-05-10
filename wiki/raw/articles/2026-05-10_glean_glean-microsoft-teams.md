@@ -2,7 +2,7 @@
 title: "Glean in Microsoft Teams: Bringing contextual knowledge to where you work"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-microsoft-teams"
-scraped: "2026-05-10T01:20:20.500273+00:00"
+scraped: "2026-05-10T01:27:33.032844+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

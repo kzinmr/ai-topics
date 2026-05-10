@@ -2,7 +2,7 @@
 title: "Finding your people easily with Glean enterprise search"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/finding-your-people-with-glean"
-scraped: "2026-05-10T01:20:03.659914+00:00"
+scraped: "2026-05-10T01:27:25.337528+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

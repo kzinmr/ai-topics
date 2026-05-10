@@ -2,7 +2,7 @@
 title: "Glean is recognized as one of the Emerging Leaders in the 2025 Gartner® Innovation Guide for Generative AI Technologies report"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-positioned-emerging-leader-gartner-innovation-guide-gen-ai"
-scraped: "2026-05-10T01:20:25.012280+00:00"
+scraped: "2026-05-10T01:27:34.459778+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

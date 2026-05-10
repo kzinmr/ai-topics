@@ -2,7 +2,7 @@
 title: "Enterprise AI Governance Framework for Data Teams | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/enterprise-ai-governance/"
-scraped: "2026-05-10T01:27:16.756910+00:00"
+scraped: "2026-05-10T01:28:53.368739+00:00"
 lastmod: "2026-01-09"
 type: "sitemap"
 ---

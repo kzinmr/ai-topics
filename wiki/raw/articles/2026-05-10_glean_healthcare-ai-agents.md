@@ -2,7 +2,7 @@
 title: "10 AI agents transforming healthcare workflows"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/healthcare-ai-agents"
-scraped: "2026-05-10T01:20:36.762559+00:00"
+scraped: "2026-05-10T01:27:41.404684+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

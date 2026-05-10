@@ -2,7 +2,7 @@
 title: "What is Multimodal AI? A Comprehensive Guide"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/multimodal-ai"
-scraped: "2026-05-10T01:20:45.748405+00:00"
+scraped: "2026-05-10T01:30:13.338076+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

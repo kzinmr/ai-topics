@@ -2,7 +2,7 @@
 title: "Tamar Yehoshua氏がGleanの製品・技術担当VPに就任"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/tamar-yehoshua-vp-product-tech"
-scraped: "2026-05-10T01:21:13.418077+00:00"
+scraped: "2026-05-10T01:28:00.119792+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "How to Boost Collaboration between Product and Data teams | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/boost-collaboration-between-product-and-data/"
-scraped: "2026-05-10T01:27:14.201056+00:00"
+scraped: "2026-05-10T01:28:52.771670+00:00"
 lastmod: "2024-02-16"
 type: "sitemap"
 ---

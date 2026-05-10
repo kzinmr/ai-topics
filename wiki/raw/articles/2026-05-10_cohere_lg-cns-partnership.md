@@ -2,7 +2,7 @@
 title: "Cohere and LG CNS partner for Korean enterprise AI services | Cohere Blog"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/lg-cns-partnership"
-scraped: "2026-05-10T01:20:42.477285+00:00"
+scraped: "2026-05-10T01:30:11.420714+00:00"
 lastmod: "2025-07-10"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Gleanプロンプト製品: AIで生産性を革新"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/glean-prompting-product"
-scraped: "2026-05-10T01:20:25.409991+00:00"
+scraped: "2026-05-10T01:27:34.566265+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

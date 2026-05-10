@@ -2,7 +2,7 @@
 title: "OpenAI GPT-5 outperforms o3 with 83% correctness, and Glean customers can put it to work today"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/open-ai-gpt-5"
-scraped: "2026-05-10T01:20:56.258688+00:00"
+scraped: "2026-05-10T01:27:51.551988+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

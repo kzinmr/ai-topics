@@ -2,7 +2,7 @@
 title: "A comprehensive guide to information retrieval in 2024"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-information-retrieval-2024"
-scraped: "2026-05-10T01:20:16.980226+00:00"
+scraped: "2026-05-10T01:27:31.781399+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

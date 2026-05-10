@@ -2,7 +2,7 @@
 title: "Know how Glean helps search load instantly"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/how-glean-loads-instantly"
-scraped: "2026-05-10T01:20:37.247908+00:00"
+scraped: "2026-05-10T01:27:41.682420+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Modernizing Jupyter workflows with Hex + Snowflake | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/modernizing-jupyter-notebooks-snowflake/"
-scraped: "2026-05-10T01:27:07.509053+00:00"
+scraped: "2026-05-10T01:28:51.333589+00:00"
 lastmod: "2024-02-15"
 type: "sitemap"
 ---

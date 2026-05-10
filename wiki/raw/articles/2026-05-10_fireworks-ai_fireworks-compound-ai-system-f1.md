@@ -2,7 +2,7 @@
 title: "Fireworks f1: A breakthrough in complex reasoning with Compound AI"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/fireworks-compound-ai-system-f1"
-scraped: "2026-05-10T01:20:38.264988+00:00"
+scraped: "2026-05-10T01:27:37.557348+00:00"
 lastmod: "2026-02-12T18:52:38.000Z"
 type: "sitemap"
 ---

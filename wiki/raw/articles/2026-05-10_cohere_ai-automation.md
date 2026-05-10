@@ -2,7 +2,7 @@
 title: "Defining AI automation: A new kind of workplace"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-automation"
-scraped: "2026-05-10T01:19:56.168987+00:00"
+scraped: "2026-05-10T01:29:26.758947+00:00"
 lastmod: "2026-02-03"
 type: "sitemap"
 ---

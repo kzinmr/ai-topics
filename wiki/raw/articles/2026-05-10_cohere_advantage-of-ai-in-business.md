@@ -2,7 +2,7 @@
 title: "Advantage of AI in Business: How Enterprises Win with AI in 2026"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/advantage-of-ai-in-business"
-scraped: "2026-05-10T01:27:02.624389+00:00"
+scraped: "2026-05-10T01:30:14.042361+00:00"
 lastmod: "2026-03-03"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "LLM Security: Top 10 Risks & Best Practices to Mitigate Them"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/llm-security"
-scraped: "2026-05-10T01:21:02.787419+00:00"
+scraped: "2026-05-10T01:30:30.467776+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

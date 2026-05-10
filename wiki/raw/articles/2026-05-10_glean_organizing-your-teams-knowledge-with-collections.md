@@ -2,7 +2,7 @@
 title: "Organizing your team’s knowledge with collections"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/organizing-your-teams-knowledge-with-collections"
-scraped: "2026-05-10T01:20:57.250069+00:00"
+scraped: "2026-05-10T01:27:51.977066+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

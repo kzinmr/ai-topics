@@ -2,7 +2,7 @@
 title: "Stop using so many CTEs - Blog | Hex  | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/stop-using-so-many-ctes/"
-scraped: "2026-05-10T01:27:12.599716+00:00"
+scraped: "2026-05-10T01:28:52.349058+00:00"
 lastmod: "2022-07-21"
 type: "sitemap"
 ---

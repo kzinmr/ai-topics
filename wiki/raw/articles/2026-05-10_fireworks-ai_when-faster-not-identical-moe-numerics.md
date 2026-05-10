@@ -2,7 +2,7 @@
 title: "Training-Inference Parity in MoE Models: Where Numerics Drift"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/when-faster-not-identical-moe-numerics"
-scraped: "2026-05-10T01:20:33.117077+00:00"
+scraped: "2026-05-10T01:27:32.100847+00:00"
 lastmod: "2026-04-10T18:08:52.000Z"
 type: "sitemap"
 ---

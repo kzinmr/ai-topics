@@ -2,7 +2,7 @@
 title: "How Semantic Search Boosts Productivity in the Workplace"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/semantic-search-productivity"
-scraped: "2026-05-10T01:21:09.069648+00:00"
+scraped: "2026-05-10T01:27:58.260152+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "FireAttention — Serving Open Source Models 4x faster than vLLM by quantizing with ~no tradeoffs"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/fire-attention-serving-open-source-models-4x-faster-than-vllm-by-quantizing-with-no-tradeoffs"
-scraped: "2026-05-10T01:20:59.527114+00:00"
+scraped: "2026-05-10T01:27:51.516826+00:00"
 lastmod: "2026-02-12T18:53:17.000Z"
 type: "sitemap"
 ---

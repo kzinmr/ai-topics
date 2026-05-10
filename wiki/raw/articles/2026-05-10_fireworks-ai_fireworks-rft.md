@@ -2,7 +2,7 @@
 title: "Fireworks RFT: Build AI agents with fine-tuned open models that outperform frontier closed models "
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/fireworks-rft"
-scraped: "2026-05-10T01:20:50.788094+00:00"
+scraped: "2026-05-10T01:27:46.067461+00:00"
 lastmod: "2026-02-12T18:51:10.000Z"
 type: "sitemap"
 ---

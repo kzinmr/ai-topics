@@ -2,7 +2,7 @@
 title: "Get alerts for metrics you care about | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/native-alerts-for-metrics/"
-scraped: "2026-05-10T01:27:21.961237+00:00"
+scraped: "2026-05-10T01:28:54.545585+00:00"
 lastmod: "2024-11-13"
 type: "sitemap"
 ---

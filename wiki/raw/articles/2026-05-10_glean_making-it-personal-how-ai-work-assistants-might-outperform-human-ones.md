@@ -2,7 +2,7 @@
 title: "Personalizing AI work assistants: outperforming humans?"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/making-it-personal-how-ai-work-assistants-might-outperform-human-ones"
-scraped: "2026-05-10T01:20:52.854662+00:00"
+scraped: "2026-05-10T01:27:49.683844+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

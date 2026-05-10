@@ -2,7 +2,7 @@
 title: "Glean Platform Apps Launch: Powering Workplace Efficiency with AI"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-platform-appslaunch"
-scraped: "2026-05-10T01:20:22.199280+00:00"
+scraped: "2026-05-10T01:27:34.010106+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

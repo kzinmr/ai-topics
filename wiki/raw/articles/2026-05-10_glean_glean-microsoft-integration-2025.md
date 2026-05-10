@@ -2,7 +2,7 @@
 title: "Glean integrates with Microsoft Agent 365, bringing enterprise context to Microsoft Word, Outlook, and Teams"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-microsoft-integration-2025"
-scraped: "2026-05-10T01:20:19.948963+00:00"
+scraped: "2026-05-10T01:27:32.827473+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

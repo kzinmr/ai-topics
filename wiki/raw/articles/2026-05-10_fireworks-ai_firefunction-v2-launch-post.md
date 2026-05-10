@@ -2,7 +2,7 @@
 title: "Firefunction-v2: Function calling capability on par with GPT4o at 2.5x the speed and 10% of the cost="
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/firefunction-v2-launch-post"
-scraped: "2026-05-10T01:20:53.332161+00:00"
+scraped: "2026-05-10T01:27:48.260497+00:00"
 lastmod: "2026-02-12T18:53:00.000Z"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "How enablement at Sigma democratizes content through Glean"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/sigma-content-management"
-scraped: "2026-05-10T01:21:10.150720+00:00"
+scraped: "2026-05-10T01:27:58.827854+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

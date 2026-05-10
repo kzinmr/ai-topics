@@ -2,7 +2,7 @@
 title: "GPUs on-demand: Not serverless, not reserved, but some third thing"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/why-gpus-on-demand"
-scraped: "2026-05-10T01:21:01.822323+00:00"
+scraped: "2026-05-10T01:27:53.251389+00:00"
 lastmod: "2026-02-12T18:53:02.000Z"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "AI Customer Experience: Shaping Engagement With Businesses"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-customer-experience"
-scraped: "2026-05-10T01:20:00.775417+00:00"
+scraped: "2026-05-10T01:29:31.212918+00:00"
 lastmod: "2025-07-11"
 type: "sitemap"
 ---

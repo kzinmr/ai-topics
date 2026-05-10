@@ -2,7 +2,7 @@
 title: "Distillation with Reasoning: Can DeepSeek R1 Teach Better Than Humans?"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/deepseek-r1-distillation-reasoning"
-scraped: "2026-05-10T01:20:36.774638+00:00"
+scraped: "2026-05-10T01:27:34.592971+00:00"
 lastmod: "2026-02-12T18:52:27.000Z"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "How manufacturing companies can leverage AI to achieve Industry 4.0"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/manufacturing-ai-industry-4-0"
-scraped: "2026-05-10T01:20:53.297142+00:00"
+scraped: "2026-05-10T01:27:49.776681+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

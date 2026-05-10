@@ -2,7 +2,7 @@
 title: "The AI Advantage: How Financial Institutions Win With AI"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/how-financial-institutions-win-with-ai-infographic"
-scraped: "2026-05-10T01:19:50.784666+00:00"
+scraped: "2026-05-10T01:29:21.720068+00:00"
 lastmod: "2026-02-26"
 type: "sitemap"
 ---

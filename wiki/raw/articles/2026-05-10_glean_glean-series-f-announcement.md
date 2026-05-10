@@ -2,7 +2,7 @@
 title: "Glean raises $150M Series F at $7.2B valuation to transform how companies use AI to accelerate innovation"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-series-f-announcement"
-scraped: "2026-05-10T01:20:26.205211+00:00"
+scraped: "2026-05-10T01:27:36.996156+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

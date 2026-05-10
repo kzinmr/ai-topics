@@ -2,7 +2,7 @@
 title: "Introducing Command R7B Arabic"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/command-r7b-arabic"
-scraped: "2026-05-10T01:20:52.505988+00:00"
+scraped: "2026-05-10T01:30:20.222849+00:00"
 lastmod: "2025-03-06"
 type: "sitemap"
 ---

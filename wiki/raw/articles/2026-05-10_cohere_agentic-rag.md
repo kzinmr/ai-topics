@@ -2,7 +2,7 @@
 title: "Agentic RAG: A Practical Guide for Enterprises"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/agentic-rag"
-scraped: "2026-05-10T01:20:26.272922+00:00"
+scraped: "2026-05-10T01:29:55.259733+00:00"
 lastmod: "2026-04-16"
 type: "sitemap"
 ---

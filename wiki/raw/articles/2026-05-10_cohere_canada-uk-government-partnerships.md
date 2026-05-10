@@ -2,7 +2,7 @@
 title: "Cohere Partners with Canada and UK Governments on Secure AI "
 source: "Cohere Blog"
 url: "https://cohere.com/blog/canada-uk-government-partnerships"
-scraped: "2026-05-10T01:19:54.863542+00:00"
+scraped: "2026-05-10T01:29:25.878988+00:00"
 lastmod: "2025-06-16"
 type: "sitemap"
 ---

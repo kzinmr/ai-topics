@@ -2,7 +2,7 @@
 title: "What Is Vector Search? How It Works, Use Cases, and More"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/vector-search"
-scraped: "2026-05-10T01:20:50.566520+00:00"
+scraped: "2026-05-10T01:30:18.227203+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

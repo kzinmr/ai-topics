@@ -2,7 +2,7 @@
 title: "Glean's AI-Powered Support: Empowering Enterprise Efficiency"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-support-enterprise-ai"
-scraped: "2026-05-10T01:20:30.095368+00:00"
+scraped: "2026-05-10T01:27:38.098725+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

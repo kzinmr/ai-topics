@@ -2,7 +2,7 @@
 title: "Track customer retention metrics that matter | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/customer-retention-analytics/"
-scraped: "2026-05-10T01:27:15.952257+00:00"
+scraped: "2026-05-10T01:28:53.135627+00:00"
 lastmod: "2025-09-04"
 type: "sitemap"
 ---

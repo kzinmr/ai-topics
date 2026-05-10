@@ -2,7 +2,7 @@
 title: "FireLLaVA: the first commercially permissive OSS LLaVA model"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/firellava-the-first-commercially-permissive-oss-llava-model"
-scraped: "2026-05-10T01:20:36.435116+00:00"
+scraped: "2026-05-10T01:27:34.273567+00:00"
 lastmod: "2026-02-12T18:53:16.000Z"
 type: "sitemap"
 ---

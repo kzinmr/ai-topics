@@ -2,7 +2,7 @@
 title: "How to prepare for sales calls in 2026"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/how-to-prepare-for-sales-calls"
-scraped: "2026-05-10T01:20:42.304441+00:00"
+scraped: "2026-05-10T01:27:45.930225+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

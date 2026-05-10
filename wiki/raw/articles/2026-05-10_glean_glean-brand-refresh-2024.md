@@ -2,7 +2,7 @@
 title: "Upleveling Glean’s identity: Bringing clarity to life"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-brand-refresh-2024"
-scraped: "2026-05-10T01:20:10.780931+00:00"
+scraped: "2026-05-10T01:27:29.667914+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

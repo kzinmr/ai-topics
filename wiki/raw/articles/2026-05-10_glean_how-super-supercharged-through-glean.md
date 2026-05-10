@@ -2,7 +2,7 @@
 title: "Case study: super.com supercharging productivity with Glean"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/how-super-supercharged-through-glean"
-scraped: "2026-05-10T01:20:40.033785+00:00"
+scraped: "2026-05-10T01:27:42.725821+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

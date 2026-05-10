@@ -2,7 +2,7 @@
 title: "Introducing: Dataframe SQL | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/dataframe-sql/"
-scraped: "2026-05-10T01:27:16.342611+00:00"
+scraped: "2026-05-10T01:28:53.259149+00:00"
 lastmod: "2021-08-18"
 type: "sitemap"
 ---

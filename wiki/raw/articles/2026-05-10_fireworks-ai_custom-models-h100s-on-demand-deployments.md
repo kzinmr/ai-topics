@@ -2,7 +2,7 @@
 title: "Announcing custom models and on-demand H100s with 50%+ lower costs and latency than  vLLM"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/custom-models-h100s-on-demand-deployments"
-scraped: "2026-05-10T01:20:26.449101+00:00"
+scraped: "2026-05-10T01:27:26.385337+00:00"
 lastmod: "2026-02-12T18:53:01.000Z"
 type: "sitemap"
 ---

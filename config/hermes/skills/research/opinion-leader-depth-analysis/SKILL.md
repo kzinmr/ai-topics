@@ -104,3 +104,4 @@ research_depth:
 - **Don't leave stale monitoring**: Update L4 status when feeds change
 - **L3 auto-check must not rely on specific header names**: Many completed pages use `## Core Ideas`, `## Philosophy`, `## Thought Framework` etc. Check for substance, not exact header match
 - **Do NOT track "which sources have been read"** as a binary flag: the same source yields different insights at different analytical depths. Track depth level and last_review date instead.
+- **web_extract timeouts on long pages**: Gwern.net and similar long-form essays (30k+ chars) will cause web_extract to time out. Use `browser_navigate` + `browser_console` JS DOM extraction instead. See [references/long-page-extraction.md](references/long-page-extraction.md) for the pattern.

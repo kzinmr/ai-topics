@@ -2,7 +2,7 @@
 title: "Cohere opens Paris office as EMEA hub"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/paris-office"
-scraped: "2026-05-10T01:27:20.111897+00:00"
+scraped: "2026-05-10T01:29:05.025698+00:00"
 lastmod: "2025-09-15"
 type: "sitemap"
 ---

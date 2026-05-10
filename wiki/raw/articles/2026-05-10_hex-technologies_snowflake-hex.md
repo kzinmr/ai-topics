@@ -2,7 +2,7 @@
 title: "Six Reasons Hex and Snowflake Work Great Together | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/snowflake-hex/"
-scraped: "2026-05-10T01:27:19.845703+00:00"
+scraped: "2026-05-10T01:28:54.014659+00:00"
 lastmod: "2024-01-10"
 type: "sitemap"
 ---

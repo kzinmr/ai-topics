@@ -2,7 +2,7 @@
 title: "Building a RAG with Astro, FastAPI, SurrealDB and Llama 3.1"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/rag-with-astro-fastapi-surrealdb-tailwind"
-scraped: "2026-05-10T01:20:56.500320+00:00"
+scraped: "2026-05-10T01:27:49.930981+00:00"
 lastmod: "2026-02-12T18:52:51.000Z"
 type: "sitemap"
 ---

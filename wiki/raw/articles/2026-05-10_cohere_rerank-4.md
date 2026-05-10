@@ -2,7 +2,7 @@
 title: "Introducing Rerank 4: Cohere’s most powerful reranker yet"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/rerank-4"
-scraped: "2026-05-10T01:27:08.955302+00:00"
+scraped: "2026-05-10T01:30:19.796442+00:00"
 lastmod: "2025-12-11"
 type: "sitemap"
 ---

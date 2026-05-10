@@ -2,7 +2,7 @@
 title: "What is vector search? A complete guide for developers 2024"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/guide-to-vector-search"
-scraped: "2026-05-10T01:20:35.609400+00:00"
+scraped: "2026-05-10T01:27:40.893398+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

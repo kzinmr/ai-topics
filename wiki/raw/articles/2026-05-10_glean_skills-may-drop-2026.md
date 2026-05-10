@@ -2,7 +2,7 @@
 title: "Glean Skills know how your business works"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/skills-may-drop-2026"
-scraped: "2026-05-10T01:21:10.315863+00:00"
+scraped: "2026-05-10T01:27:58.944199+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

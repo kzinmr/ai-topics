@@ -2,7 +2,7 @@
 title: "From text to task: Constrained generation for structured extraction in R1"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/constrained-generation-with-reasoning"
-scraped: "2026-05-10T01:20:41.470732+00:00"
+scraped: "2026-05-10T01:27:39.741480+00:00"
 lastmod: "2026-02-12T18:52:26.000Z"
 type: "sitemap"
 ---

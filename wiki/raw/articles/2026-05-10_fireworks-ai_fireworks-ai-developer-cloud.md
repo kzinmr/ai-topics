@@ -2,7 +2,7 @@
 title: "Faster, more efficient DeepSeek on the Fireworks AI Developer Cloud"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/fireworks-ai-developer-cloud"
-scraped: "2026-05-10T01:20:29.364722+00:00"
+scraped: "2026-05-10T01:27:29.389694+00:00"
 lastmod: "2026-02-12T18:52:19.000Z"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "What does it mean to build a self-service analytics infrastructure? | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/humaninterest-self-service/"
-scraped: "2026-05-10T01:27:09.475727+00:00"
+scraped: "2026-05-10T01:28:51.870443+00:00"
 lastmod: "2022-12-02"
 type: "sitemap"
 ---

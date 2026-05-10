@@ -2,7 +2,7 @@
 title: "AI Agents and Workplace Productivity"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/enterprise-ai-agents-infographic"
-scraped: "2026-05-10T01:20:01.616840+00:00"
+scraped: "2026-05-10T01:29:32.105690+00:00"
 lastmod: "2025-07-16"
 type: "sitemap"
 ---

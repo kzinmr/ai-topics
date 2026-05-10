@@ -2,7 +2,7 @@
 title: "Command A Translate: Secure translation for global enterprises"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/command-a-translate"
-scraped: "2026-05-10T01:27:22.072517+00:00"
+scraped: "2026-05-10T01:29:06.792253+00:00"
 lastmod: "2025-08-28"
 type: "sitemap"
 ---

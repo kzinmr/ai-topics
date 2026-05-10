@@ -2,7 +2,7 @@
 title: "코히어, 서울에 APAC 허브 설립 발표"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/seoul-office"
-scraped: "2026-05-10T01:19:47.800196+00:00"
+scraped: "2026-05-10T01:29:19.044556+00:00"
 lastmod: "2025-07-14"
 type: "sitemap"
 ---

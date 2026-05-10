@@ -2,7 +2,7 @@
 title: "What Is a Neural Network and How Does It Work?"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/what-is-a-neural-network"
-scraped: "2026-05-10T01:20:57.084798+00:00"
+scraped: "2026-05-10T01:30:24.485390+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

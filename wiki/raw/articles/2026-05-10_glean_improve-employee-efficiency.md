@@ -2,7 +2,7 @@
 title: "How to improve employee efficiency and productivity"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/improve-employee-efficiency"
-scraped: "2026-05-10T01:20:47.089099+00:00"
+scraped: "2026-05-10T01:27:46.918766+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

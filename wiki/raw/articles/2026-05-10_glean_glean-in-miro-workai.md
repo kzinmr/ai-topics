@@ -2,7 +2,7 @@
 title: "Glean and Miro partner to bring contextual enterprise knowledge directly into Miro’s Innovation Workspace"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-in-miro-workai"
-scraped: "2026-05-10T01:20:16.175503+00:00"
+scraped: "2026-05-10T01:27:31.610462+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

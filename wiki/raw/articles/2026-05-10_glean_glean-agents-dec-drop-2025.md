@@ -2,7 +2,7 @@
 title: "8 Glean sales agents to speed up prep, coaching, and deal execution"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-agents-dec-drop-2025"
-scraped: "2026-05-10T01:20:05.813393+00:00"
+scraped: "2026-05-10T01:27:26.476915+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

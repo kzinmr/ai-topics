@@ -2,7 +2,7 @@
 title: "What is FLUX.1 Kontext? Pro vs Max, Capabilities & Examples"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/flux-kontext-launch"
-scraped: "2026-05-10T01:20:33.731639+00:00"
+scraped: "2026-05-10T01:27:32.391581+00:00"
 lastmod: "2026-02-12T18:51:57.000Z"
 type: "sitemap"
 ---

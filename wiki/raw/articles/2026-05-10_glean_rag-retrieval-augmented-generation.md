@@ -2,7 +2,7 @@
 title: "What is Retrieval Augmented Generation(RAG) in 2025?"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/rag-retrieval-augmented-generation"
-scraped: "2026-05-10T01:21:01.575950+00:00"
+scraped: "2026-05-10T01:27:53.218273+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

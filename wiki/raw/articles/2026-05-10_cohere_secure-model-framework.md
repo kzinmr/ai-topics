@@ -2,7 +2,7 @@
 title: "Introducing Cohere’s Secure AI Frontier Model Framework"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/secure-model-framework"
-scraped: "2026-05-10T01:21:01.752870+00:00"
+scraped: "2026-05-10T01:30:29.525339+00:00"
 lastmod: "2025-06-24"
 type: "sitemap"
 ---

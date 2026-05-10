@@ -2,7 +2,7 @@
 title: "AI is changing how our data team works, and that’s great | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/lessons-running-a-data-team-with-ai/"
-scraped: "2026-05-10T01:27:04.847133+00:00"
+scraped: "2026-05-10T01:28:50.658506+00:00"
 lastmod: "2025-09-03"
 type: "sitemap"
 ---

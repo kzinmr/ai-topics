@@ -2,7 +2,7 @@
 title: "Glean expands horizontal, agent platform with open agent interoperability, dozens of personal and business agents, and comprehensive AI security"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/go-agents-launch"
-scraped: "2026-05-10T01:20:32.439757+00:00"
+scraped: "2026-05-10T01:27:38.674470+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

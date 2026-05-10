@@ -2,7 +2,7 @@
 title: "What is Predictive Modeling? A Deep Dive"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/predictive-modeling"
-scraped: "2026-05-10T01:20:41.493315+00:00"
+scraped: "2026-05-10T01:30:10.443499+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

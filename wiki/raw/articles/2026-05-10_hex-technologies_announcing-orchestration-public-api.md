@@ -2,7 +2,7 @@
 title: "Announcing: Orchestration integrations and the Hex public API | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/announcing-orchestration-public-api/"
-scraped: "2026-05-10T01:27:17.636611+00:00"
+scraped: "2026-05-10T01:28:53.601291+00:00"
 lastmod: "2022-09-22"
 type: "sitemap"
 ---

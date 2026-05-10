@@ -2,7 +2,7 @@
 title: "RAGとLLMの微調整：企業に最適なものを見つける"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/rag-vs-llm"
-scraped: "2026-05-10T01:21:01.863597+00:00"
+scraped: "2026-05-10T01:27:53.402494+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

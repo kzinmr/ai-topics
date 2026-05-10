@@ -2,7 +2,7 @@
 title: "Support Apps & Actions: Boosting Efficiency with AI Integration"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-support-apps-actions"
-scraped: "2026-05-10T01:20:29.434886+00:00"
+scraped: "2026-05-10T01:27:37.902106+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

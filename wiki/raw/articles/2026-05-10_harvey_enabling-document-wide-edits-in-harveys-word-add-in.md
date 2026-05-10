@@ -2,7 +2,7 @@
 title: "Enabling Document-Wide Edits in Harvey’s Word Add-In"
 source: "Harvey Blog"
 url: "https://www.harvey.ai/blog/enabling-document-wide-edits-in-harveys-word-add-in"
-scraped: "2026-05-10T01:21:09.409277+00:00"
+scraped: "2026-05-10T01:27:25.353568+00:00"
 lastmod: "2025-09-11T13:00:00.000Z"
 type: "sitemap"
 ---

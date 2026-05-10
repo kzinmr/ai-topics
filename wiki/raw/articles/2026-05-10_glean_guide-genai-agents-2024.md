@@ -2,7 +2,7 @@
 title: "A complete guide to generative AI agents in 2025"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/guide-genai-agents-2024"
-scraped: "2026-05-10T01:20:35.151814+00:00"
+scraped: "2026-05-10T01:27:40.454646+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

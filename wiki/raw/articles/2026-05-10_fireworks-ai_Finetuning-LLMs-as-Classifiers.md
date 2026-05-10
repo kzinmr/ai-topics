@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/Finetuning-LLMs-as-Classifiers"
-scraped: "2026-05-10T01:20:42.525031+00:00"
+scraped: "2026-05-10T01:27:40.085908+00:00"
 lastmod: "2026-01-16T21:11:43.000Z"
 type: "sitemap"
 ---

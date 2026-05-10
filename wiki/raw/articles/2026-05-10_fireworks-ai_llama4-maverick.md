@@ -2,7 +2,7 @@
 title: "Optimizing Llama 4 Maverick on Fireworks AI"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/llama4-maverick"
-scraped: "2026-05-10T01:21:01.185664+00:00"
+scraped: "2026-05-10T01:27:52.602029+00:00"
 lastmod: "2026-02-12T18:52:15.000Z"
 type: "sitemap"
 ---

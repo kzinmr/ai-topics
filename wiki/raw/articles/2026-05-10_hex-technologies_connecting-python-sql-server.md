@@ -2,7 +2,7 @@
 title: "Connecting to and querying SQL Server with Python | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/connecting-python-sql-server/"
-scraped: "2026-05-10T01:27:19.265474+00:00"
+scraped: "2026-05-10T01:28:53.793843+00:00"
 lastmod: "2023-04-28"
 type: "sitemap"
 ---

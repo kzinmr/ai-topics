@@ -2,7 +2,7 @@
 title: "From school to silicon valley: building great careers"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/from-school-to-silicon-valley-building-great-careers"
-scraped: "2026-05-10T01:20:04.381361+00:00"
+scraped: "2026-05-10T01:27:25.571021+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "How to do Funnel Analysis with SQL and Python | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/funnel-analysis/"
-scraped: "2026-05-10T01:27:05.258369+00:00"
+scraped: "2026-05-10T01:28:50.764486+00:00"
 lastmod: "2022-11-17"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Understanding Multi-Agent Systems: Key Concepts Explained"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/multi-agent-systems"
-scraped: "2026-05-10T01:20:33.931612+00:00"
+scraped: "2026-05-10T01:30:02.723362+00:00"
 lastmod: "2025-06-27"
 type: "sitemap"
 ---

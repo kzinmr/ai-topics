@@ -2,7 +2,7 @@
 title: "A complete guide to RAG vs fine-tuning"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/retrieval-augemented-generation-vs-fine-tuning"
-scraped: "2026-05-10T01:21:03.270464+00:00"
+scraped: "2026-05-10T01:27:57.058688+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

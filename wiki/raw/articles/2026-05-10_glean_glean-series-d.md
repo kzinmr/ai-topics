@@ -2,7 +2,7 @@
 title: "Glean raises $200m to accelerate generative AI deployment"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-series-d"
-scraped: "2026-05-10T01:20:25.956864+00:00"
+scraped: "2026-05-10T01:27:36.836152+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

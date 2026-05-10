@@ -2,7 +2,7 @@
 title: "Exploring Data in Jupyter with Python and Pandas | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/explore-data-with-python-and-pandas/"
-scraped: "2026-05-10T01:27:20.616746+00:00"
+scraped: "2026-05-10T01:28:54.240477+00:00"
 lastmod: "2023-09-23"
 type: "sitemap"
 ---

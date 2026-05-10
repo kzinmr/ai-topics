@@ -2,7 +2,7 @@
 title: "How to Work with Hex's Notebook Agent: A Prompting Guide | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/notebook-agent-prompting-guide-agentic-analytics/"
-scraped: "2026-05-10T01:27:06.604903+00:00"
+scraped: "2026-05-10T01:28:51.134688+00:00"
 lastmod: "2025-09-24"
 type: "sitemap"
 ---

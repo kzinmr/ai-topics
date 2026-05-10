@@ -2,7 +2,7 @@
 title: "Using Model-as-a-Judge for Reward in Reinforcement Finetuning"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/model-as-judge"
-scraped: "2026-05-10T01:20:34.857623+00:00"
+scraped: "2026-05-10T01:27:33.216769+00:00"
 lastmod: "2026-02-12T18:51:56.000Z"
 type: "sitemap"
 ---

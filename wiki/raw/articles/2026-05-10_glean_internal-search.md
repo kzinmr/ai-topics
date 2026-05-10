@@ -2,7 +2,7 @@
 title: "What is internal search? A Complete Guide in 2025"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/internal-search"
-scraped: "2026-05-10T01:20:49.371335+00:00"
+scraped: "2026-05-10T01:27:47.981140+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Introducing Hex Embedded Analytics | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/introducing-embedded-analytics/"
-scraped: "2026-05-10T01:27:14.711981+00:00"
+scraped: "2026-05-10T01:28:53.029922+00:00"
 lastmod: "2025-04-09"
 type: "sitemap"
 ---

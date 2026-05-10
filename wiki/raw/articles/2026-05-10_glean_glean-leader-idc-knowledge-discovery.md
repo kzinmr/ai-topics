@@ -2,7 +2,7 @@
 title: "Glean: IDC marketscape leader in knowledge discovery"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-leader-idc-knowledge-discovery"
-scraped: "2026-05-10T01:20:19.187187+00:00"
+scraped: "2026-05-10T01:27:32.455245+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

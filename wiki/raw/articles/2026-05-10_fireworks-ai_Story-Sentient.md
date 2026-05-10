@@ -2,7 +2,7 @@
 title: "Sentient & Fireworks Powers Decentralized AI At Viral Scale"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/Story-Sentient"
-scraped: "2026-05-10T01:21:12.077792+00:00"
+scraped: "2026-05-10T01:28:01.143104+00:00"
 lastmod: "2026-02-12T18:51:54.000Z"
 type: "sitemap"
 ---

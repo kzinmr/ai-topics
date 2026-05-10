@@ -2,7 +2,7 @@
 title: "Introducing Supervised Fine-tuning V2"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/supervised-finetuning-v2"
-scraped: "2026-05-10T01:20:57.273612+00:00"
+scraped: "2026-05-10T01:27:50.288964+00:00"
 lastmod: "2026-02-12T18:52:03.000Z"
 type: "sitemap"
 ---

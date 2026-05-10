@@ -2,7 +2,7 @@
 title: "Glean’s Agentic Engine 2 achieves 94% completeness, excelling at challenging enterprise debugging, writing, and enumeration tasks"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/live-fall-25-agentic-engine2-performance"
-scraped: "2026-05-10T01:20:51.260913+00:00"
+scraped: "2026-05-10T01:27:48.669072+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

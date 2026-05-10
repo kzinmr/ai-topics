@@ -2,7 +2,7 @@
 title: "How AI builds customer loyalty in financial services"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/personalized-finance-how-ai-drives-customer-loyalty"
-scraped: "2026-05-10T01:20:58.372296+00:00"
+scraped: "2026-05-10T01:27:52.344875+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

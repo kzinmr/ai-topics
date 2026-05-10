@@ -2,7 +2,7 @@
 title: "Generative vs Predictive AI: Whats the Difference?"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/generative-predictive-differences-applications"
-scraped: "2026-05-10T01:20:05.329585+00:00"
+scraped: "2026-05-10T01:27:26.251403+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Is MCP dead? When to use MCP for enterprise AI"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/mcp-enterprise-ai"
-scraped: "2026-05-10T01:20:53.951669+00:00"
+scraped: "2026-05-10T01:27:50.232531+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

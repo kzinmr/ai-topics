@@ -2,7 +2,7 @@
 title: "Agentic workflows: How AI automation boosts productivity"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/agentic-workflows"
-scraped: "2026-05-10T01:20:46.541474+00:00"
+scraped: "2026-05-10T01:30:14.324948+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

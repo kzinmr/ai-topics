@@ -2,7 +2,7 @@
 title: "Q&A with Bluecore’s Data Team: Part 2 | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/bluecore-qa-pt2/"
-scraped: "2026-05-10T01:27:18.097540+00:00"
+scraped: "2026-05-10T01:28:53.709979+00:00"
 lastmod: "2022-10-25"
 type: "sitemap"
 ---

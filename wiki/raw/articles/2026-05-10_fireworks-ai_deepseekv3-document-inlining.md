@@ -2,7 +2,7 @@
 title: "DeepSeek V3 just got vision capabilities!"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/deepseekv3-document-inlining"
-scraped: "2026-05-10T01:21:12.341104+00:00"
+scraped: "2026-05-10T01:28:01.207378+00:00"
 lastmod: "2026-02-12T18:52:34.000Z"
 type: "sitemap"
 ---

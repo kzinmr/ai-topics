@@ -2,7 +2,7 @@
 title: "Harvey Raises $300M Series D Led by Sequoia"
 source: "Harvey Blog"
 url: "https://www.harvey.ai/blog/harvey-raises-series-d"
-scraped: "2026-05-10T01:21:09.815761+00:00"
+scraped: "2026-05-10T01:27:25.486289+00:00"
 lastmod: "2025-02-12T16:15:00.000Z"
 type: "sitemap"
 ---

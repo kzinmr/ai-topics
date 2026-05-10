@@ -2,7 +2,7 @@
 title: "HIPAA Business Associate agreements"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/hipaa-business-associate-agreements-for-custom-model-development"
-scraped: "2026-05-10T01:27:13.454934+00:00"
+scraped: "2026-05-10T01:28:59.375993+00:00"
 lastmod: "2025-11-13"
 type: "sitemap"
 ---

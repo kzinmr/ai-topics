@@ -2,7 +2,7 @@
 title: "Glean's open agent platform: because while not all agents will be built on Glean, all agents should be connected to enterprise data"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/open-agent-platform"
-scraped: "2026-05-10T01:20:55.916399+00:00"
+scraped: "2026-05-10T01:27:51.355562+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

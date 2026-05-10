@@ -2,7 +2,7 @@
 title: "What Are AI Benchmarks? A Business Guide for Evaluations"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-benchmarks-for-business"
-scraped: "2026-05-10T01:19:48.769410+00:00"
+scraped: "2026-05-10T01:29:19.847383+00:00"
 lastmod: "2025-07-08"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "2025年にサポートチケットの未処理分を減らすには？"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/how-to-reduce-support-ticket-backlogs"
-scraped: "2026-05-10T01:20:45.037092+00:00"
+scraped: "2026-05-10T01:27:46.128011+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

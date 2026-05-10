@@ -2,7 +2,7 @@
 title: "Glean & Google Cloud: efficiently scaling enterprise search"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-google-cloud-partnership"
-scraped: "2026-05-10T01:20:15.272455+00:00"
+scraped: "2026-05-10T01:27:31.372620+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

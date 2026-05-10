@@ -2,7 +2,7 @@
 title: "Blog"
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/"
-scraped: "2026-05-10T01:27:04.130112+00:00"
+scraped: "2026-05-10T01:28:50.554461+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

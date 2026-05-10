@@ -2,7 +2,7 @@
 title: "What Is a Multimodal LLM?"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/multimodal-llm"
-scraped: "2026-05-10T01:20:16.551876+00:00"
+scraped: "2026-05-10T01:29:45.978706+00:00"
 lastmod: "2025-07-16"
 type: "sitemap"
 ---

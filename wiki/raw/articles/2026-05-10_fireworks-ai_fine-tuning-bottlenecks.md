@@ -2,7 +2,7 @@
 title: "The Fine-Tuning Bottleneck Isn't the Algorithm"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/fine-tuning-bottlenecks"
-scraped: "2026-05-10T01:20:25.164288+00:00"
+scraped: "2026-05-10T01:27:25.688599+00:00"
 lastmod: "2026-04-08T03:57:21.000Z"
 type: "sitemap"
 ---

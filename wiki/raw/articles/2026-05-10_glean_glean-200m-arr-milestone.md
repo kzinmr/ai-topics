@@ -2,7 +2,7 @@
 title: "Glean surpasses $200M ARR as enterprises operationalize AI"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-200m-arr-milestone"
-scraped: "2026-05-10T01:20:05.483769+00:00"
+scraped: "2026-05-10T01:27:26.372490+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

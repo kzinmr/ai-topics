@@ -2,7 +2,7 @@
 title: "Glean: efficiently reading MySQL with Apache Beam streaming"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/how-glean-uses-apache-beam-streaming-to-efficiently-read-a-large-corpus-from-mysql"
-scraped: "2026-05-10T01:20:38.739251+00:00"
+scraped: "2026-05-10T01:27:42.122593+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

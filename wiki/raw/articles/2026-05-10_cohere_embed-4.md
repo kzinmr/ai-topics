@@ -2,7 +2,7 @@
 title: "Introducing Embed 4: Multimodal search for business | Cohere Blog"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/embed-4"
-scraped: "2026-05-10T01:20:27.081776+00:00"
+scraped: "2026-05-10T01:29:56.215950+00:00"
 lastmod: "2025-07-10"
 type: "sitemap"
 ---

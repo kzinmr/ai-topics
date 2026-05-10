@@ -2,7 +2,7 @@
 title: "On Software, Ships, and Shipping Incrementally | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/incremental-shipping/"
-scraped: "2026-05-10T01:27:20.203969+00:00"
+scraped: "2026-05-10T01:28:54.123544+00:00"
 lastmod: "2020-09-16"
 type: "sitemap"
 ---

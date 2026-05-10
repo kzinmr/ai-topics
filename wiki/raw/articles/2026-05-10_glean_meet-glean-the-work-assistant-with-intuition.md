@@ -2,7 +2,7 @@
 title: "Meet Glean. The work assistant with intuition."
 source: "Glean Blog"
 url: "https://www.glean.com/blog/meet-glean-the-work-assistant-with-intuition"
-scraped: "2026-05-10T01:20:54.439741+00:00"
+scraped: "2026-05-10T01:27:50.686258+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

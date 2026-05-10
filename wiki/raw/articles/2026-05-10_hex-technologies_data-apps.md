@@ -2,7 +2,7 @@
 title: "What are data apps? Types, uses, and how they work | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/data-apps/"
-scraped: "2026-05-10T01:27:11.215113+00:00"
+scraped: "2026-05-10T01:28:52.172121+00:00"
 lastmod: "2026-01-05"
 type: "sitemap"
 ---

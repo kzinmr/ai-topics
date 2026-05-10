@@ -2,7 +2,7 @@
 title: "From GraphRAG to agentic search: Boost AI retrieval"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-retrieval-graphrag-and-agentic-search"
-scraped: "2026-05-10T01:20:20.323067+00:00"
+scraped: "2026-05-10T01:29:49.735785+00:00"
 lastmod: "2025-07-16"
 type: "sitemap"
 ---

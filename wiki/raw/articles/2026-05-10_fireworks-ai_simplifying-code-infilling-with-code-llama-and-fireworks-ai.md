@@ -2,7 +2,7 @@
 title: "Simplifying Code Infilling with Code Llama and Fireworks.ai"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/simplifying-code-infilling-with-code-llama-and-fireworks-ai"
-scraped: "2026-05-10T01:20:40.362568+00:00"
+scraped: "2026-05-10T01:27:38.868944+00:00"
 lastmod: "2026-02-12T18:53:28.000Z"
 type: "sitemap"
 ---

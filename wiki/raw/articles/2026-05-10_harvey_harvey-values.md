@@ -2,7 +2,7 @@
 title: "Harvey's Values: Defining how we operate"
 source: "Harvey Blog"
 url: "https://www.harvey.ai/blog/harvey-values"
-scraped: "2026-05-10T01:21:12.316958+00:00"
+scraped: "2026-05-10T01:27:26.115970+00:00"
 lastmod: "2025-03-06T17:00:00.000Z"
 type: "sitemap"
 ---

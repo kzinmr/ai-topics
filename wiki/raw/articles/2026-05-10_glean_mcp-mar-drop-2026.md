@@ -2,7 +2,7 @@
 title: "MCP for the Enterprise: Safe, Reliable AI Actions"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/mcp-mar-drop-2026"
-scraped: "2026-05-10T01:20:54.047644+00:00"
+scraped: "2026-05-10T01:27:50.340610+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

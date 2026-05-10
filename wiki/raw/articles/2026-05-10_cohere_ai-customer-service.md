@@ -2,7 +2,7 @@
 title: "AI Customer Service: Everything You Need to Know"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-customer-service"
-scraped: "2026-05-10T01:20:54.291180+00:00"
+scraped: "2026-05-10T01:30:22.221234+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "How Glean's profiles make work more personal"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/how-gleans-profiles-make-work-more-personal"
-scraped: "2026-05-10T01:20:39.235599+00:00"
+scraped: "2026-05-10T01:27:42.314647+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

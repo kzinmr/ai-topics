@@ -2,7 +2,7 @@
 title: "Writing prompts that generate great results from AI"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/glean-ai-prompting-guide"
-scraped: "2026-05-10T01:20:08.599109+00:00"
+scraped: "2026-05-10T01:27:27.300179+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

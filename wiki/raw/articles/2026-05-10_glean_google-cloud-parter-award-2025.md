@@ -2,7 +2,7 @@
 title: "Glean 2025 年の Google Cloud テクノロジーパートナーオブザイヤーにマーケットプレイスビジネスアプリケーション部門で選ばれました"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/google-cloud-parter-award-2025"
-scraped: "2026-05-10T01:20:32.844595+00:00"
+scraped: "2026-05-10T01:27:39.108589+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "How we fixed prompt injection for all models on Fireworks"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/safe-tokenization-preventing-prompt-injection-on-fireworks"
-scraped: "2026-05-10T01:20:27.175934+00:00"
+scraped: "2026-05-10T01:27:26.803200+00:00"
 lastmod: "2026-04-30T23:59:44.000Z"
 type: "sitemap"
 ---

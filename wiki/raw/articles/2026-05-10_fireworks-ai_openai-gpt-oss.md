@@ -2,7 +2,7 @@
 title: "OpenAI gpt-oss 20b & 120b: Overview & Benchmarking Info"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/openai-gpt-oss"
-scraped: "2026-05-10T01:21:12.653871+00:00"
+scraped: "2026-05-10T01:28:01.487397+00:00"
 lastmod: "2026-02-12T18:51:37.000Z"
 type: "sitemap"
 ---

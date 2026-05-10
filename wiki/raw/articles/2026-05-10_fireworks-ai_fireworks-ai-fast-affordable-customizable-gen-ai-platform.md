@@ -2,7 +2,7 @@
 title: "Fireworks.ai: Fast, Affordable, Customizable Gen AI Platform"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/fireworks-ai-fast-affordable-customizable-gen-ai-platform"
-scraped: "2026-05-10T01:20:52.372716+00:00"
+scraped: "2026-05-10T01:27:47.144639+00:00"
 lastmod: "2026-02-12T18:53:31.000Z"
 type: "sitemap"
 ---

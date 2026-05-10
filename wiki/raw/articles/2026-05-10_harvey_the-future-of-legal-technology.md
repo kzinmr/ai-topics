@@ -2,7 +2,7 @@
 title: "The Future of Legal Technology"
 source: "Harvey Blog"
 url: "https://www.harvey.ai/blog/the-future-of-legal-technology"
-scraped: "2026-05-10T01:21:10.557478+00:00"
+scraped: "2026-05-10T01:27:25.639466+00:00"
 lastmod: "2025-08-04T16:00:00.000Z"
 type: "sitemap"
 ---

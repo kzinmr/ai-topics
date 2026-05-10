@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/ai-agents-with-aws-agentcore"
-scraped: "2026-05-10T01:21:11.772703+00:00"
+scraped: "2026-05-10T01:28:00.810439+00:00"
 lastmod: "2026-02-12T18:51:24.000Z"
 type: "sitemap"
 ---

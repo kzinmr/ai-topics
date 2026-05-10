@@ -2,7 +2,7 @@
 title: "Accelerating the journey to the superintelligent enterprise: New Enterprise Graph, Third-generation Assistant, and Agent superpowers in Glean"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/live-fall-25-main"
-scraped: "2026-05-10T01:20:51.339891+00:00"
+scraped: "2026-05-10T01:27:48.748672+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

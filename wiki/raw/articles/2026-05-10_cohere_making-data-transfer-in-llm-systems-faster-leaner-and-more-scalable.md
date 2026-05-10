@@ -2,7 +2,7 @@
 title: "Making data transfer in LLM systems faster"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/making-data-transfer-in-llm-systems-faster-leaner-and-more-scalable"
-scraped: "2026-05-10T01:27:14.443066+00:00"
+scraped: "2026-05-10T01:29:00.202419+00:00"
 lastmod: "2025-11-12"
 type: "sitemap"
 ---

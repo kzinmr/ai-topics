@@ -2,7 +2,7 @@
 title: "DeepSeek Models: V3.2, R1, Distills, and Production Caveats"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/deepseek-models"
-scraped: "2026-05-10T01:21:13.252601+00:00"
+scraped: "2026-05-10T01:28:02.151064+00:00"
 lastmod: "2026-04-20T15:18:17.000Z"
 type: "sitemap"
 ---

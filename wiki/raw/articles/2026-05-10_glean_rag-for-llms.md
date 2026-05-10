@@ -2,7 +2,7 @@
 title: "LLM向けRAG: 検索拡張生成によるよりスマートなAI"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/rag-for-llms"
-scraped: "2026-05-10T01:21:00.547029+00:00"
+scraped: "2026-05-10T01:27:52.823111+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

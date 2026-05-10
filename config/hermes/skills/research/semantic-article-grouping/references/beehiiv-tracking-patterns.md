@@ -1,6 +1,6 @@
 # Beehiiv Tracking URL Patterns (Session Discovery)
 
-Discovered during newsletter-triage sessions on 2026-05-03 and 2026-05-06 for Superintel+ (getsuperintel.com) newsletters by Kim "Chubby" Isenberg (@kimmonismus).
+Discovered during newsletter-triage sessions on 2026-05-03, 2026-05-06, and 2026-05-07 for Superintel+ (getsuperintel.com) newsletters by Kim "Chubby" Isenberg (@kimmonismus).
 
 ## Resolved URL Behaviors (2026-05-06 Session: "Claude Is Coming for Your Company")
 
@@ -12,6 +12,37 @@ Discovered during newsletter-triage sessions on 2026-05-03 and 2026-05-06 for Su
 | 4 | **Wispr Flow** (voice dictation product, $81M raised) | Separate external article | Evaluate independently |
 | 5-20 | (not resolved — sample pattern established) | Unknown | Sample-resolve to detect more distinct articles |
 
+## Resolved URL Behaviors (2026-05-07 Session: "GPT-5.5 Instant: Less Fluff, More Facts")
+
+| # | Resolved To | Content Type | Action |
+|---|-------------|-------------|--------|
+| 1 | GPT-5.5 Instant article (getsuperintel.com) | Article (main) | Take — returned `http_error` on 1st attempt, succeeded on retry |
+| 2 | `http_error` (never resolved) | Dead/auth link | Skip — possibly Link 1 duplicate that expired |
+| 3 | @kimmonismus X profile | Social profile | Skip |
+| 4 | **Wispr Flow** (voice dictation) | External product | Skip |
+| 5 | WSJ: Google/MS/xAI share models with U.S. | News article (paywalled preview) | Reference |
+| 6 | Anthropic Financial Services page | Platform product page | Reference |
+| 7 | FT: Meta plans agentic AI assistant (paywalled) | News article (fully paywalled) | Skip |
+| 8 | Chamath Stanford AI Club talk (YouTube) | Video/talk | Reference |
+| 9 | Same as 8 (Chamath talk, different tracking ID) | Duplicate | Skip — dedup |
+| 10 | Ming-Chi Kuo X post: OpenAI AI agent phone 2027 | X post | Reference |
+| 11 | Same as 8 (Chamath talk, 3rd tracking ID) | Duplicate | Skip — dedup |
+| 12 | **Wispr Flow** (duplicate of Link 4) | Duplicate | Skip — dedup |
+| 13 | **Wispr Flow** (duplicate of Link 4) | Duplicate | Skip — dedup |
+| 14 | **FrontierSWE Benchmark** (GitHub) | Benchmark page | **TAKE** |
+| 15 | **Workspace-Bench 1.0** (GitHub) | Benchmark page | **TAKE** |
+| 16 | Harmonic Security (Claude governance product) | Product LP | Skip |
+| 17 | Same as 16 (Harmonic Security) | Duplicate | Skip |
+| 18 | getsuperintel.com account/referrals page | Account page | Skip |
+| 19 | getsuperintel.com account/referrals page (dup) | Account page | Skip |
+| 20 | getsuperintel.site/subscribe | Subscribe page | Skip |
+
+### Key Observations from 2026-05-07
+- **Main article at Link 1 failed first try**: The `http_error` was transient — retry succeeded. Beehiiv tracking tokens may expire or be rate-limited.
+- **Deduplication density**: 3 different tracking IDs for Wispr Flow (Links 4, 12, 13), 3 for Chamath talk (Links 8, 9, 11), 2 for Harmonic Security (Links 16, 17). ~37% of links were duplicates.
+- **New article type discovered**: GitHub benchmark repositories (FrontierSWE, Workspace-Bench) resolved from beehiiv links — previously only saw product pages and news articles.
+- **Source diversity**: Of 19 links, only 5 unique content destinations were wiki-worthy (main article, WSJ, Chamath talk, FrontierSWE, Workspace-Bench). The rest were duplicates, social profiles, product LPs, or account pages.
+
 ## Corrected Pattern: Not All Links Are Duplicates
 
 **Correction from 2026-05-03 session**: The previous version of this reference assumed links 4+ were all "same article dedup". The 2026-05-06 session proved this is WRONG — beehiiv newsletters contain **genuinely different external articles** at different tracking URL positions. Pattern:
@@ -22,10 +53,13 @@ Discovered during newsletter-triage sessions on 2026-05-03 and 2026-05-06 for Su
 - **Link 4+**: Other curated articles within the newsletter (may resolve to anything — product pages, other Substack posts, news articles, etc.)
 
 ### Recommended Strategy
-1. Resolve Links 1-4 to establish the pattern
-2. If Link 4 resolves to a DIFFERENT article than Link 1, resolve a few more (5, 6, 7) to enumerate all distinct articles
-3. Once you've identified all unique article URLs, skip the remaining tracking links
-4. Typical yield: 1 main article + 1-3 additional curated articles per beehiiv newsletter
+1. Resolve Link 1 — if `http_error`, **retry once** (transient auth failures are common). If still error, assume it's the main article behind auth and reconstruct from the newsletter subject/`source_name`.
+2. Resolve Link 3 to detect author X profile (skip)
+3. Sample Links 4-7 to establish the distinct-article pattern
+4. If a sample resolves to a new distinct article type (benchmark, news, video, GitHub), continue sampling until you've found all significant targets
+5. Once you confirm the pattern (e.g., "link 4 = product, link 5 = news, link 6 = Anthropic page..."), approximate the rest — don't resolve every remaining link
+6. **Catch duplicates aggressively**: if the same title/content appears again, skip immediately. Expect ~30-37% duplicate rate
+7. Typical yield: 1 main article + 3-5 distinct external articles per beehiiv newsletter of 19-20 links
 
 ## Efficiency Comparison: Substack vs Beehiiv
 

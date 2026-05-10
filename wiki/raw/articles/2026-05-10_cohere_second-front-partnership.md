@@ -2,7 +2,7 @@
 title: "Cohere and Second Front bring secure AI to the public sector | Cohere Blog"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/second-front-partnership"
-scraped: "2026-05-10T01:19:58.812056+00:00"
+scraped: "2026-05-10T01:29:29.413593+00:00"
 lastmod: "2025-07-10"
 type: "sitemap"
 ---

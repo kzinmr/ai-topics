@@ -2,7 +2,7 @@
 title: "企業チーム向け小売ナレッジマネジメント"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/retail-knowledge-management"
-scraped: "2026-05-10T01:21:03.038854+00:00"
+scraped: "2026-05-10T01:27:56.866339+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

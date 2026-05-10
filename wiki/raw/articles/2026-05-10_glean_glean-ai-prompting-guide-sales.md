@@ -2,7 +2,7 @@
 title: "Leverage AI’s full potential for sales workflows with better prompts"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/glean-ai-prompting-guide-sales"
-scraped: "2026-05-10T01:20:09.407733+00:00"
+scraped: "2026-05-10T01:27:27.499858+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Rajiv Pratap joins Glean - Head of Strategic Verticals"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/rajiv-joined-glean-enterprise-search"
-scraped: "2026-05-10T01:21:02.429392+00:00"
+scraped: "2026-05-10T01:27:53.587595+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

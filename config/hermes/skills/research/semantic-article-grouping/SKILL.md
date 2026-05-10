@@ -44,7 +44,8 @@ A `candidates` array injected from `${HERMES_HOME}/cron/data/newsletter/latest.j
 | `play_card_progress_bar`, `play_card_duration`, `play_card_play_button` | Player chrome | Skip |
 | `redirect/app-store` | App download page | Skip |
 | `@username` (e.g., `@lenny`) | Author profile | Skip |
-| `redirect/2/eyJ...` or `redirect/<uuid>` | Obfuscated redirect | Try web_extract or skip |
+| `redirect/2/eyJ...` | OAuth redirect (sometimes resolvable) | **Try web_extract once** — may resolve to external article, or fail. Retry once if http_error, then skip. |
+| `redirect/<uuid>` (e.g., `substack.com/redirect/5c77d884-...`) | UUID tracking link (requires email session auth) | **Skip** — requires email session auth. web_extract WILL fail. Post body already contains all curated content. |
 | `utm_campaign=email-read-in-app` | Read-in-app prompt | Skip |
 
 After filtering, what remains is the **newsletter subject/title URL only** — NOT the actual article links the newsletter curator shared. The real content links are inside the newsletter post body on substack and must be extracted separately (see Workflow Step 1).
@@ -58,10 +59,28 @@ After filtering, what remains is the **newsletter subject/title URL only** — N
 | `link.mail.beehiiv.com/v1/c/...` | Beehiiv tracking (generic) | Call web_extract — resolves to actual article, author profile, or interstitial (e.g., login page, subscribe prompt) |
 | `hp.beehiiv.com/<uuid>` | Beehiiv hosted page | **Skip** — almost always resolves to Terms of Service or other boilerplate, NOT newsletter content |
 | `email.beehiivstatus.com/<hash>/hclick` | Status tracking pixel | **Skip** — zero content value |
-| `getsuperintel.com` / `substack.com` / similar publication domain | Actual article content | Take — this is where substantive articles live |
+| `substack.com` / similar publication domain | Actual article content | Take — this is where substantive articles live |
 | `@handle` domain (e.g., `@kimmonismus` on x.com) | Author X/Twitter profile | **Skip** — low wiki value unless the author is a major figure |
 
+> **⚠️ getsuperintel.com exception**: Direct URLs to `getsuperintel.com/p/...` return a **404 on Framer** (the site is hosted on Framer, not a proper CMS). The actual article content is ONLY accessible through the beehiiv tracking URL redirect chain. Do NOT attempt direct `getsuperintel.com` URL resolution — use the beehiiv link instead.
+
 **Deduplication pitfall**: Multiple beehiiv tracking URLs in the same checkpoint may all resolve to the **same article** with different auth states (e.g., Link 1 → full article, Link 2 → same article with login interstitial). After calling web_extract, compare resolved page titles and content to detect duplicates. Flag all-but-one as noise.
+
+**Duplicate density finding**: In a May 2026 Superintel newsletter with 19 beehiiv tracking URLs, Wispr Flow appeared under 3 different tracking links (positions 4, 12, 13) and the Chamath Stanford talk appeared under 2 (positions 8, 9). Expect ~30% duplication rate among beehiiv links — many are share/like/referral variants of the same destination.
+
+**Intermittent HTTP error pitfall**: Beehiiv tracking links may return `http_error` on first attempt but succeed on retry. This happened with the main GPT-5.5 Instant article (Link 1 returned error, then resolved to full article on second `web_extract` call). If a link returns http_error, retry once before skipping. The cause is likely time-sensitive tracking tokens or rate-limiting on the redirect chain, not a dead link.
+
+**Batch sampling strategy**: For beehiiv newsletters with 19+ tracking URLs, do NOT resolve all of them — it's expensive and wasteful. Use this sampling strategy:
+1. Resolve Link 1 (main article — the newsletter post itself)
+2. Resolve Link 3 (often author X/Twitter profile → skip)
+3. Sample Links 4-7 to find distinct external articles
+4. If all samples resolve to the same known targets, stop. Approximate unresolved links based on the pattern
+5. Break the pattern only when web_extract returns a notably different content type (GitHub repo, benchmark page, paywalled news, X post, YouTube video)
+6. Typical yield: 1 main article + 3-5 distinct external articles per beehiiv newsletter
+
+**Substack UUID redirect links**: In AINews and other substack newsletters, links 8-20 often follow the pattern `substack.com/redirect/<uuid>` (e.g., `substack.com/redirect/5c77d884-...`). These are NOT the same as `redirect/2/eyJ...` OAuth-style links. UUID redirect links require authentication to resolve (they work only if the recipient's email session is live). web_extract will fail on these. **Do not attempt to resolve them** — the newsletter post body (obtained via the post URL at Link 2) already contains all the curated content. The UUID links are purely for email tracking and add no content value beyond what's in the post body.
+
+> 📖 See `references/substack-publication-patterns.md` for known publication-specific URL behaviors (AINews/latent.space redirect, The Signal, paywall detection, and post URL construction strategies).
 
 **Source name trap**: The `source_name` in the checkpoint (e.g. "NVIDIA Blackwell vs. Huawei Ascend") is often the **article title**, not the newsletter/publication name. The actual publication name lives inside the resolved content (e.g., "Superintel+ / getsuperintel.com"). Do not trust `source_name` as the canonical publication — extract it from the article content or the domain.
 
@@ -101,6 +120,20 @@ For each substantive article:
 - Search the web for context if URL is obfuscated/unclear
 - Match against existing wiki topics
 
+### 0. Check Same-Day Processing First (CRITICAL)
+Before any analysis, always check `wiki/log.md` for recent **same-day** processing history. The blog ingestion pipeline may have already triaged and wiki-processed articles earlier in the same day — re-analyzing them wastes time and risks duplicate decisions.
+
+```bash
+# Check for same-day entries — look for "2026-05-09" or today's date marker
+grep "2026-05-09" wiki/log.md | head -20
+# Also grep for specific blog source names
+grep -i "seangoedecke\|simonwillison\|wheresyoured" wiki/log.md
+```
+
+Read the `log.md` entries to identify which candidates have already been processed. Mark those as `skip (already captured)` before proceeding to full analysis.
+
+**Same-day processing pattern**: Blog-ingest pipeline can run `blog-ingest -> blog-triage -> blog-wiki-ingest` as a chained pipeline. If `blog-wiki-ingest` already ran for today's batch, the triage was consumed and the articles are already in wiki entity pages. The log will show this with lines like `"Pages Updated"` referencing the same article dates.
+
 ### 3. Coverage Gap Analysis
 Before deciding what to create/update, cross-reference against existing wiki pages. **Check entity pages first** — entity pages (people, companies, organizations) frequently get enriched with full article content. Many articles that appear "new" are actually already summarized in the entity page of the author or platform:
 
@@ -114,6 +147,15 @@ search_files "topic-keyword" path=~/wiki/log.md target=content
 ```
 
 Read existing pages to determine if content is already covered. Key question: "Does the existing wiki already capture this information?" Don't create duplicates.
+
+**Pitfall: `search_files` may return false negatives**. The `search_files` tool with `target=files` can return `total_count: 0` even when the file exists on disk (observed in production — `entities/luke-curley.md`, `entities/thariq-shihipar.md` all returned 0 from `search_files` but were present on the filesystem). If `search_files` returns 0 but you strongly suspect the page exists (e.g., you saw it in `log.md` or `index.md`), use a terminal fallback:
+
+```bash
+# Fallback: find files directly via terminal
+find ~/ai-topics/wiki/entities -name "*keyword*"
+# Or list recent additions
+ls -lt ~/ai-topics/wiki/entities/ | head -20
+```
 
 **Example pitfall (already covered)**: Martin Alderson's "29th August 2026: a scenario" appeared to be a new article, but `entities/martin-alderson.md` already had a complete "AI-Cybersecurity Scenarios" section summarizing the CopyFail/CVE centralization thesis. Similarly, George Hotz's philosophical essays are accumulated under `entities/george-hotz.md` in the "Philosophy and Commentary" section. Always check the author's entity page — that's where blog post summaries accumulate.
 
@@ -280,6 +322,9 @@ with open(path, 'w') as f:
 
 ### Pitfall: `None` Star Ratings in JSON Builders
 When building the triage JSON with a `make()` helper function, passing `stars=None` (e.g., for skip items) instead of an integer raises `TypeError: can't multiply sequence by non-int of type 'NoneType'`. Always use `stars=1` for skip, `stars=3` for reference, `stars=4` for existing-page update, `stars=5` for new page. Never pass None for star count.
+
+### Pitfall: Python `null` vs `None` (JS-ism errors)
+When building the triage JSON dict literals directly in Python, using JavaScript-style `null` instead of Python's `None` raises `NameError: name 'null' is not defined`. This commonly happens with `"candidate_wiki_path": null` — must be `None` in Python. The error surfaces during the `json.dump()` call so the full output is lost. Always use `None` (Python) or just omit the key if Optional. If building dicts in a bash heredoc that feeds `python3 -c`, the same applies — `null` in JSON string literals is fine, but `null` as bare Python identifier is not.
 
 ### Pitfall: Triage JSON Verification After Saving
 After saving the triage JSON with `execute_code`, verifying it via `cat file | python3 -c "..."` is **blocked by the `tirith:pipe_to_interpreter` security scanner**. Use one of these workarounds:

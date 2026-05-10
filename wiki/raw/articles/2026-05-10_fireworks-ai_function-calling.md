@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/function-calling"
-scraped: "2026-05-10T01:20:55.324760+00:00"
+scraped: "2026-05-10T01:27:49.245032+00:00"
 lastmod: "2026-02-12T18:51:53.000Z"
 type: "sitemap"
 ---

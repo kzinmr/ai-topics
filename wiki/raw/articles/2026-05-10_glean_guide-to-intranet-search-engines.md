@@ -2,7 +2,7 @@
 title: "What is an intranet search engine, and what should modern enterprise search actually do?"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/guide-to-intranet-search-engines"
-scraped: "2026-05-10T01:20:35.391674+00:00"
+scraped: "2026-05-10T01:27:40.691901+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

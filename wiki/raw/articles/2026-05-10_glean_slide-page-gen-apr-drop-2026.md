@@ -2,7 +2,7 @@
 title: "Glean Assistant’s new slide and interactive page generation feature turns ideas into results"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/slide-page-gen-apr-drop-2026"
-scraped: "2026-05-10T01:21:10.665452+00:00"
+scraped: "2026-05-10T01:27:59.116350+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

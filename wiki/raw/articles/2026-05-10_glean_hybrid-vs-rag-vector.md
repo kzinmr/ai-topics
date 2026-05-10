@@ -2,7 +2,7 @@
 title: "Hybrid Search vs. RAG and Vector Search: Key Differences"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/hybrid-vs-rag-vector"
-scraped: "2026-05-10T01:20:46.238033+00:00"
+scraped: "2026-05-10T01:27:46.728336+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

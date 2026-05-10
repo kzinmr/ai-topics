@@ -2,7 +2,7 @@
 title: "Data, magic, and some more money stuff | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/funding-round-march-2023/"
-scraped: "2026-05-10T01:27:21.029783+00:00"
+scraped: "2026-05-10T01:28:54.339888+00:00"
 lastmod: "2023-03-23"
 type: "sitemap"
 ---

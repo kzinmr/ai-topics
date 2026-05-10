@@ -2,7 +2,7 @@
 title: "Glean Assistant closes the adoption gap with contextual AI, enabling true workforce transformation"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/live-spring-26-main"
-scraped: "2026-05-10T01:20:51.602267+00:00"
+scraped: "2026-05-10T01:27:48.963409+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

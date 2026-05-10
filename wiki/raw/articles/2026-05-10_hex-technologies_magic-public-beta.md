@@ -2,7 +2,7 @@
 title: "Magic, for everyone | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/magic-public-beta/"
-scraped: "2026-05-10T01:27:13.816568+00:00"
+scraped: "2026-05-10T01:28:52.666661+00:00"
 lastmod: "2023-05-04"
 type: "sitemap"
 ---

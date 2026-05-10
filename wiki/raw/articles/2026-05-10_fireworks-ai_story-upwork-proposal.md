@@ -2,7 +2,7 @@
 title: "How Upwork and Fireworks deliver faster, smarter proposals for freelancers"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/story-upwork-proposal"
-scraped: "2026-05-10T01:20:58.051215+00:00"
+scraped: "2026-05-10T01:27:50.612472+00:00"
 lastmod: "2026-02-12T18:52:39.000Z"
 type: "sitemap"
 ---

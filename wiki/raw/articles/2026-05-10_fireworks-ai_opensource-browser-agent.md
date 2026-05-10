@@ -2,7 +2,7 @@
 title: "Building an open-source Browser Agent on Fireworks AI"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/opensource-browser-agent"
-scraped: "2026-05-10T01:20:34.194174+00:00"
+scraped: "2026-05-10T01:27:32.793648+00:00"
 lastmod: "2026-02-12T18:52:09.000Z"
 type: "sitemap"
 ---

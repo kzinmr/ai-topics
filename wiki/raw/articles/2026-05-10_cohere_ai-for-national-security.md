@@ -2,7 +2,7 @@
 title: "AI Adoption for National Security"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-for-national-security"
-scraped: "2026-05-10T01:27:21.219365+00:00"
+scraped: "2026-05-10T01:29:05.959710+00:00"
 lastmod: "2025-09-09"
 type: "sitemap"
 ---

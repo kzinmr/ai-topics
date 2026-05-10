@@ -2,7 +2,7 @@
 title: "Glean raises $100m Series C: powering enterprise search"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/series-c-announcement"
-scraped: "2026-05-10T01:21:09.493367+00:00"
+scraped: "2026-05-10T01:27:58.584802+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

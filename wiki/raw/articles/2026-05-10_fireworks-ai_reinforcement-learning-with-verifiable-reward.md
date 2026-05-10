@@ -2,7 +2,7 @@
 title: "Beyond Supervised Fine Tuning: How Reinforcement Learning Empowers AI with Minimal Labels"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/reinforcement-learning-with-verifiable-reward"
-scraped: "2026-05-10T01:20:37.399068+00:00"
+scraped: "2026-05-10T01:27:37.277446+00:00"
 lastmod: "2026-02-12T18:52:30.000Z"
 type: "sitemap"
 ---

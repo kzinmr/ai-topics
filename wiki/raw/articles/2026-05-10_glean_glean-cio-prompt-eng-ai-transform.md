@@ -2,7 +2,7 @@
 title: "Why prompt engineering is essential for CIOs to deliver AI transformation"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/glean-cio-prompt-eng-ai-transform"
-scraped: "2026-05-10T01:20:12.526857+00:00"
+scraped: "2026-05-10T01:27:30.249438+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

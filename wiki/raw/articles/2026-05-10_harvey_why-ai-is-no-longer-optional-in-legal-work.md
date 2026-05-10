@@ -2,7 +2,7 @@
 title: "Why AI is No Longer Optional in Legal Work"
 source: "Harvey Blog"
 url: "https://www.harvey.ai/blog/why-ai-is-no-longer-optional-in-legal-work"
-scraped: "2026-05-10T01:21:10.768717+00:00"
+scraped: "2026-05-10T01:27:25.909818+00:00"
 lastmod: "2026-04-03T15:00:00.000Z"
 type: "sitemap"
 ---

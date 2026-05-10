@@ -2,7 +2,7 @@
 title: "Accelerating Code Completion with Fireworks Fast LLM Inference"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/accelerating-code-completion-with-fireworks-fast-llm-inference"
-scraped: "2026-05-10T01:20:54.083390+00:00"
+scraped: "2026-05-10T01:27:48.513507+00:00"
 lastmod: "2026-02-12T18:53:26.000Z"
 type: "sitemap"
 ---

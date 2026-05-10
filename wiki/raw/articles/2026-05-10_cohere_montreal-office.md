@@ -2,7 +2,7 @@
 title: "Cohere ouvre un bureau à Montréal"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/montreal-office"
-scraped: "2026-05-10T01:19:49.740845+00:00"
+scraped: "2026-05-10T01:29:20.857871+00:00"
 lastmod: "2025-07-03"
 type: "sitemap"
 ---

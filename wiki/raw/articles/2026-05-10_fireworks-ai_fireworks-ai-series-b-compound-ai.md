@@ -2,7 +2,7 @@
 title: "Fireworks AI Raises $52M Series B to Lead Industry Shift to Compound AI Systems"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/fireworks-ai-series-b-compound-ai"
-scraped: "2026-05-10T01:20:39.309655+00:00"
+scraped: "2026-05-10T01:27:38.247165+00:00"
 lastmod: "2026-02-12T18:52:55.000Z"
 type: "sitemap"
 ---

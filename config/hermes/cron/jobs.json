@@ -340,10 +340,10 @@
       "script": "fetch_x_bookmarks.py",
       "schedule": {
         "kind": "cron",
-        "expr": "30 23 * * *",
-        "display": "30 23 * * *"
+        "expr": "30 11,23 * * *",
+        "display": "30 11,23 * * *"
       },
-      "schedule_display": "30 23 * * *",
+      "schedule_display": "30 11,23 * * *",
       "repeat": {
         "times": null,
         "completed": 0
@@ -373,10 +373,10 @@
       "script": "fetch_x_accounts.py",
       "schedule": {
         "kind": "cron",
-        "expr": "0 9 * * *",
-        "display": "daily 09:00"
+        "expr": "30 22 */2 * *",
+        "display": "30 22 */2 * *"
       },
-      "schedule_display": "daily 09:00",
+      "schedule_display": "30 22 */2 * *",
       "repeat": {
         "times": null,
         "completed": 0

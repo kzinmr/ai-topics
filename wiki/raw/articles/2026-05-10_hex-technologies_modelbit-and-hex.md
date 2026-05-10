@@ -2,7 +2,7 @@
 title: "Using On-Demand GPUs to Build and Deploy ML Models with Hex and Modelbit | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/modelbit-and-hex/"
-scraped: "2026-05-10T01:27:13.020364+00:00"
+scraped: "2026-05-10T01:28:52.459265+00:00"
 lastmod: "2023-10-31"
 type: "sitemap"
 ---

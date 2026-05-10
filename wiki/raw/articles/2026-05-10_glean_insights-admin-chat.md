@@ -2,7 +2,7 @@
 title: "Introducing Glean Insights Chat and Admin Chat"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/insights-admin-chat"
-scraped: "2026-05-10T01:20:48.547424+00:00"
+scraped: "2026-05-10T01:27:47.347926+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

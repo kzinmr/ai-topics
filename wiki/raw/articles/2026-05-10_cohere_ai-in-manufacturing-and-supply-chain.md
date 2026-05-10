@@ -2,7 +2,7 @@
 title: "AI in Manufacturing: Transforming Production Systems"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-in-manufacturing-and-supply-chain"
-scraped: "2026-05-10T01:20:25.281014+00:00"
+scraped: "2026-05-10T01:29:54.302166+00:00"
 lastmod: "2025-07-16"
 type: "sitemap"
 ---

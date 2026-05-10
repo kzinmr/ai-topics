@@ -2,7 +2,7 @@
 title: "MCPs: What they are and how you can use them with Hex's API | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/mcps-with-hex/"
-scraped: "2026-05-10T01:27:10.247372+00:00"
+scraped: "2026-05-10T01:28:51.960168+00:00"
 lastmod: "2025-03-20"
 type: "sitemap"
 ---

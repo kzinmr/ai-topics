@@ -2,7 +2,7 @@
 title: "AI Strategy for Business: A Template & Step-by-Step Guide"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-strategy"
-scraped: "2026-05-10T01:20:28.114591+00:00"
+scraped: "2026-05-10T01:29:57.160584+00:00"
 lastmod: "2025-11-13"
 type: "sitemap"
 ---

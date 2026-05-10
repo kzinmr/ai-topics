@@ -2,7 +2,7 @@
 title: "Cohere expands partnership with SAP to provide Europe sovereign AI solutions"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/cohere-expands-partnership-with-sap"
-scraped: "2026-05-10T01:27:12.545744+00:00"
+scraped: "2026-05-10T01:28:58.692955+00:00"
 lastmod: "2026-02-13"
 type: "sitemap"
 ---

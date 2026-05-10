@@ -2,7 +2,7 @@
 title: "6 reasons banks opt for private AI deployments"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/private-ai-deployments-for-banks"
-scraped: "2026-05-10T01:20:53.487134+00:00"
+scraped: "2026-05-10T01:30:21.270217+00:00"
 lastmod: "2025-07-14"
 type: "sitemap"
 ---

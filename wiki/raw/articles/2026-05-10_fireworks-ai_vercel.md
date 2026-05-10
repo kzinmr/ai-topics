@@ -2,7 +2,7 @@
 title: "40X Faster, and Smarter Outputs: How Vercel Turbocharged their Code Fixing Model with Open Models, Speculative Decoding and Reinforcement Fine Tuning on Fireworks"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/vercel"
-scraped: "2026-05-10T01:21:01.532407+00:00"
+scraped: "2026-05-10T01:27:52.919799+00:00"
 lastmod: "2026-02-12T18:51:13.000Z"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Enterprise AI Search: What It Is, How It Works, and Business Benefits"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/enterprise-search"
-scraped: "2026-05-10T01:20:39.336593+00:00"
+scraped: "2026-05-10T01:30:08.621311+00:00"
 lastmod: "2026-04-16"
 type: "sitemap"
 ---

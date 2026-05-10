@@ -2,7 +2,7 @@
 title: "Learning lessons from building an enterprise AI assistant"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/how-to-build-an-ai-assistant-for-the-enterprise"
-scraped: "2026-05-10T01:20:40.534186+00:00"
+scraped: "2026-05-10T01:27:42.926553+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "What Is Synthetic Data? Uses, Benefits, Challenges and More"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/what-is-synthetic-data"
-scraped: "2026-05-10T01:20:58.038554+00:00"
+scraped: "2026-05-10T01:30:25.554123+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

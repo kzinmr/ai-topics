@@ -2,7 +2,7 @@
 title: "7 AI agents for marketing teams"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-agents-jan-drop-2026"
-scraped: "2026-05-10T01:20:06.004793+00:00"
+scraped: "2026-05-10T01:27:26.578178+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

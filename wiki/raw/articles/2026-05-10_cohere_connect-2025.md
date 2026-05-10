@@ -2,7 +2,7 @@
 title: "Connect 2025: Why Collaboration is the Ultimate Research Superpower"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/connect-2025"
-scraped: "2026-05-10T01:27:11.294071+00:00"
+scraped: "2026-05-10T01:30:21.693102+00:00"
 lastmod: "2025-12-08"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: " 7 Data Analysis Techniques: A Practical Guide | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/data-analysis-techniques/"
-scraped: "2026-05-10T01:27:13.425168+00:00"
+scraped: "2026-05-10T01:28:52.563538+00:00"
 lastmod: "2026-02-06"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "LLM knowledge base: How does it increase employee productivity?"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/llm-knowledge-base-productivity"
-scraped: "2026-05-10T01:20:52.480725+00:00"
+scraped: "2026-05-10T01:27:49.482868+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

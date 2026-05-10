@@ -2,7 +2,7 @@
 title: "Doomed to Code: How we Teamed Up with Fireworks AI at MistralAI Hackathon to Conquer the Shores of Hell"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/playing-doom-using-llm"
-scraped: "2026-05-10T01:20:48.241026+00:00"
+scraped: "2026-05-10T01:27:42.278382+00:00"
 lastmod: "2026-02-12T18:53:05.000Z"
 type: "sitemap"
 ---

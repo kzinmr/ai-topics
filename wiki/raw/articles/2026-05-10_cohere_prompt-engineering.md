@@ -2,7 +2,7 @@
 title: "Prompt Engineering for AI: Definition and Use Cases"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/prompt-engineering"
-scraped: "2026-05-10T01:21:10.699693+00:00"
+scraped: "2026-05-10T01:30:34.879259+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

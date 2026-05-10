@@ -2,7 +2,7 @@
 title: "Why an Integrated AI Platform Matters for Mid-Sized Law Firms"
 source: "Harvey Blog"
 url: "https://www.harvey.ai/blog/integrated-ai-platform-for-mid-sized-law-firms"
-scraped: "2026-05-10T01:21:10.628045+00:00"
+scraped: "2026-05-10T01:27:25.726410+00:00"
 lastmod: "2026-03-18T17:00:00.000Z"
 type: "sitemap"
 ---

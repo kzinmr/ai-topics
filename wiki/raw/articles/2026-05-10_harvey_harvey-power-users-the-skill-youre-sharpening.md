@@ -2,7 +2,7 @@
 title: "Harvey Power Users: Bryan Dressler at Markel"
 source: "Harvey Blog"
 url: "https://www.harvey.ai/blog/harvey-power-users-the-skill-youre-sharpening"
-scraped: "2026-05-10T01:21:09.106092+00:00"
+scraped: "2026-05-10T01:27:25.240831+00:00"
 lastmod: "2026-05-08T09:00:00.000Z"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Master citations to build trustworthy AI | Cohere Blog"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/master-citations-to-build-trustworthy-ai"
-scraped: "2026-05-10T01:21:14.457625+00:00"
+scraped: "2026-05-10T01:30:38.677845+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

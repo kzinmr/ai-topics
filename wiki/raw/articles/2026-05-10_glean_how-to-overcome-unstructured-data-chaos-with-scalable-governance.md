@@ -2,7 +2,7 @@
 title: "How to overcome unstructured data chaos with scalable governance"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/how-to-overcome-unstructured-data-chaos-with-scalable-governance"
-scraped: "2026-05-10T01:20:41.581314+00:00"
+scraped: "2026-05-10T01:27:45.755469+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

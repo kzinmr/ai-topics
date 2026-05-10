@@ -2,7 +2,7 @@
 title: "Glean Named as one the Emerging Leaders in the 2025 Gartner® Emerging Market Quadrant of the 2025 Innovation Guide for Generative AI Knowledge Management Apps and General Productivity"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/gartner-innovation-guide-gen-ai-knowledge-management-2025"
-scraped: "2026-05-10T01:20:04.727398+00:00"
+scraped: "2026-05-10T01:27:25.772843+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

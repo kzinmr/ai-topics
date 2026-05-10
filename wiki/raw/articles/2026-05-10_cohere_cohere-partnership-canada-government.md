@@ -2,7 +2,7 @@
 title: "Cohere deepens partnership with Government of Canada"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/cohere-partnership-canada-government"
-scraped: "2026-05-10T01:27:24.753781+00:00"
+scraped: "2026-05-10T01:29:08.257463+00:00"
 lastmod: "2025-08-19"
 type: "sitemap"
 ---

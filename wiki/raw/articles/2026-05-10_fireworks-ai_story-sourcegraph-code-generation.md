@@ -2,7 +2,7 @@
 title: "Real-time, performant code assistance: How Sourcegraph scaled with Fireworks AI"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/story-sourcegraph-code-generation"
-scraped: "2026-05-10T01:20:35.348973+00:00"
+scraped: "2026-05-10T01:27:33.494703+00:00"
 lastmod: "2026-02-12T18:52:33.000Z"
 type: "sitemap"
 ---

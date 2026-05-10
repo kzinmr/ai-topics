@@ -2,7 +2,7 @@
 title: "Glean’s Slack AI App Container: Enhancing Team Collaboration"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/glean-slack-ai-app-container"
-scraped: "2026-05-10T01:20:27.234416+00:00"
+scraped: "2026-05-10T01:27:37.325134+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

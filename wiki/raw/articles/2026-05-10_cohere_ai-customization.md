@@ -2,7 +2,7 @@
 title: "AI Customization: Benefits for Business"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-customization"
-scraped: "2026-05-10T01:20:08.994769+00:00"
+scraped: "2026-05-10T01:29:38.677483+00:00"
 lastmod: "2025-07-16"
 type: "sitemap"
 ---

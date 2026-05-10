@@ -2,7 +2,7 @@
 title: "How CINOs Are Reshaping Law Firm AI Strategy"
 source: "Harvey Blog"
 url: "https://www.harvey.ai/blog/how-cinos-are-reshaping-law-firm-ai-strategy"
-scraped: "2026-05-10T01:21:14.021206+00:00"
+scraped: "2026-05-10T01:27:26.267572+00:00"
 lastmod: "2025-07-16T13:00:00.000Z"
 type: "sitemap"
 ---

@@ -1,0 +1,71 @@
+---
+title: "Pinecone sponsors the 45th annual SIGIR conference"
+source: "Pinecone Blog"
+url: "https://www.pinecone.io/blog/sigit-2022/"
+scraped: "2026-05-10T01:27:45.898250+00:00"
+lastmod: "2023-08-14T11:01:12Z"
+type: "sitemap"
+---
+
+# Pinecone sponsors the 45th annual SIGIR conference
+
+**Source**: [https://www.pinecone.io/blog/sigit-2022/](https://www.pinecone.io/blog/sigit-2022/)
+
+←
+Blog
+Pinecone sponsors the 45th annual SIGIR conference
+Gibbs Cullen
+Jul 22, 2022
+Company
+Share:
+Jump to section:
+Conference themes
+ReNeuIR Workshop
+Share:
+Subscribe to Pinecone
+Get the latest updates via email when they're published:
+Get Updates
+The 45th annual
+SIGIR Conference
+on research and development in information retrieval (IR) took place in Madrid, Spain and online last week from July 11-15. Attendance was at capacity as this was the first time attendees were able to gather in person since the start of the pandemic. There was a co-located event
+ICTIR
+on the theory of IR that took place on July 11-12.
+Pinecone was a proud sponsor for the conference and for the
+Reaching Efficiency in Neural Information Retrieval (ReNeuIR) workshop
+, co-led by our very own Sebastian Bruch, Staff Research Scientist at Pinecone. Below is a recap of some notable themes we took away from the event as well as a summary of the ReNeuIR workshop.
+Conference themes
+The five day conference was broken out into tutorials, paper presentations, and workshops. The various sessions focused on the latest research and development in IR including recommendation engines, semantic search, and deep learning. There were also some notable talks introducing newer concepts around reinforcement learning and the use of knowledge graphs alongside typical IR systems.
+Increasing interest in vector search and vector databases
+In addition to more traditional IR topics, this year’s event had a larger focus around vector search and databases. As the industry moves more towards deep learning applications, the need for vector search is growing. This increased interest was notable at SIGIR with a number of papers on dense retrieval and a panel on “
+Applications and Future of Dense Retrieval in Industry
+.” In order to support this level of similarity search, vector databases like
+Pinecone
+are needed.
+Focus on more sustainable research
+In general, discussions around sustainability and environmental impact within technology have been on the rise. So naturally, this was a topic of conversation at SIGIR, as well as the motivation behind the ReNeuIR workshop which we’ll cover more below. A notable paper on this topic was “
+Reduce, Reuse, Recycle: Green Information Retrieval Research
+“, which won Best Paper Honorable Mention. Developments in this space have even sparked internal discussions amongst Pinecone’s engineering teams.
+Retrieval-enhanced machine learning
+Finally, there was a focus on a newer notion of retrieval-enhanced machine learning (REML). This theme was highlighted in a conference paper titled “
+Retrieval-Enhanced Machine Learning
+”. Using the REML framework broadens the scope of conventional IR methods to include task-driven machines, such as machine learning (ML) models. And when a user of a retrieval system is an ML model or system, requirements are introduced such as continual index updates and stricter efficiency constraints, both of which Pinecone strives to deliver. This talk helped to lay the foundation for this new style of information access research with the hope of advancing ML and artificial intelligence (AI) efforts.
+ReNeuIR Workshop
+The ReNeurIR workshop facilitated discussion and collaboration about methods in the new age of neural information retrieval (NIR), specifically around efficiency. NIR models achieve a greater effectiveness than the previous wave of machine learning models (e.g. decision forests on many IR tasks), but with orders of magnitude more learnable parameters and much greater amounts of data.
+In a world where large organizations at the forefront of research in ML and IR have enormous amounts of resources, it is easy for them to deprioritize efficiency and sustainability concerns. This workshop focused on ways to promote more sustainable research by identifying best practices in the development and evaluation of neural models for IR.
+The full day workshop included
+two keynotes and a panel
+by experts from leading IR research organizations such as HuggingFace, Microsoft, Georgetown University, and University of Queensland. The event had roughly fifty in-person and twenty virtual attendees. In terms of next steps, the workshop’s organizing committee will be publishing guidelines on how to measure and report the environmental impact of research within IR. Follow the
+workshop’s Twitter
+for updates.
+About Pinecone:
+The Pinecone vector database makes it easy to build high-performance vector search applications. Developer-friendly, fully managed, and easily scalable without infrastructure hassles. Visit our
+website
+to create a free account or
+contact
+us to learn more. We hope to see you next year in Taipei for SIGIR 2023!
+Share:
+Was this article helpful?
+Yes
+No
+Recommended for you
+Further Reading

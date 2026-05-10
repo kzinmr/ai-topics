@@ -2,7 +2,7 @@
 title: "Bring trusted data to your Miro boards with Glean"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/partner-miro-embed"
-scraped: "2026-05-10T01:20:57.412965+00:00"
+scraped: "2026-05-10T01:27:52.055531+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

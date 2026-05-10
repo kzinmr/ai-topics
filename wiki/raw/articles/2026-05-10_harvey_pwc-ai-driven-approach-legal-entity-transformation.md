@@ -2,7 +2,7 @@
 title: "PwC’s AI-Driven Approach to Legal Entity Transformation"
 source: "Harvey Blog"
 url: "https://www.harvey.ai/blog/pwc-ai-driven-approach-legal-entity-transformation"
-scraped: "2026-05-10T01:21:13.200644+00:00"
+scraped: "2026-05-10T01:27:26.192607+00:00"
 lastmod: "2025-12-19T13:00:00.000Z"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Fireworks Platform Spring 2024 Updates"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/spring-update-faster-models-dedicated-deployments-postpaid-pricing"
-scraped: "2026-05-10T01:20:29.673446+00:00"
+scraped: "2026-05-10T01:27:29.762524+00:00"
 lastmod: "2026-02-12T18:53:12.000Z"
 type: "sitemap"
 ---

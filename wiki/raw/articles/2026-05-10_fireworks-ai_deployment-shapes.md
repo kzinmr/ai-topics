@@ -2,7 +2,7 @@
 title: "Deployment Shapes: One Click Deployment Configured for You"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/deployment-shapes"
-scraped: "2026-05-10T01:20:46.074377+00:00"
+scraped: "2026-05-10T01:27:40.844804+00:00"
 lastmod: "2026-02-12T18:51:18.000Z"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "RAG モデルとは何ですか?2025年のエンタープライズAIガイド"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/rag-models-enterprise-ai"
-scraped: "2026-05-10T01:21:01.048126+00:00"
+scraped: "2026-05-10T01:27:52.992403+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

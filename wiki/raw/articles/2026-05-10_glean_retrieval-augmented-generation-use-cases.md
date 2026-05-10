@@ -2,7 +2,7 @@
 title: "Top Use Cases of Retrieval-Augmented Generation (RAG) in AI"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/retrieval-augmented-generation-use-cases"
-scraped: "2026-05-10T01:21:04.342341+00:00"
+scraped: "2026-05-10T01:27:57.468908+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

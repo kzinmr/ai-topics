@@ -2,7 +2,7 @@
 title: "Glean Agents adapt to real-world complexity and are built to scale safely across your enterprise"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-agents-nov-drop-2025"
-scraped: "2026-05-10T01:20:06.518678+00:00"
+scraped: "2026-05-10T01:27:26.894726+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Improve AI Search and Retrieval"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-search-and-retrieval"
-scraped: "2026-05-10T01:20:18.466822+00:00"
+scraped: "2026-05-10T01:29:48.006964+00:00"
 lastmod: "2025-07-16"
 type: "sitemap"
 ---

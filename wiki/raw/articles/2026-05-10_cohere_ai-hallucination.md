@@ -2,7 +2,7 @@
 title: "AI Hallucination: Causes, Examples, and Solutions"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-hallucination"
-scraped: "2026-05-10T01:20:11.846622+00:00"
+scraped: "2026-05-10T01:29:41.561328+00:00"
 lastmod: "2025-07-16"
 type: "sitemap"
 ---

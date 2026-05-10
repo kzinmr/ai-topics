@@ -2,7 +2,7 @@
 title: "The definitive guide to enterprise search solutions for modern HR departments"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/the-definitive-guide-to-enterprise-search-solutions-for-modern-hr-departments"
-scraped: "2026-05-10T01:21:14.253492+00:00"
+scraped: "2026-05-10T01:28:00.595567+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

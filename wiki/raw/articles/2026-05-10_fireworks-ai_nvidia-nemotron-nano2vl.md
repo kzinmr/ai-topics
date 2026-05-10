@@ -2,7 +2,7 @@
 title: "Accelerate your Vision Pipelines with the new NVIDIA Nemotron Nano 2 VL Model on Fireworks AI"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/nvidia-nemotron-nano2vl"
-scraped: "2026-05-10T01:21:02.151212+00:00"
+scraped: "2026-05-10T01:27:53.525831+00:00"
 lastmod: "2026-02-12T18:51:16.000Z"
 type: "sitemap"
 ---

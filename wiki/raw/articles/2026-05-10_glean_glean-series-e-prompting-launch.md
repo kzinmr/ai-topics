@@ -2,7 +2,7 @@
 title: "Series E Funding & Glean Prompting Launch: What You Need to Know"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-series-e-prompting-launch"
-scraped: "2026-05-10T01:20:26.093193+00:00"
+scraped: "2026-05-10T01:27:36.911531+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

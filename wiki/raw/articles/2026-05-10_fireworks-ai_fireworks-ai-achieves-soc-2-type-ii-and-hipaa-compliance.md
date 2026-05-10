@@ -2,7 +2,7 @@
 title: "Fireworks.ai Achieves SOC 2 Type II and HIPAA Compliance"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/fireworks-ai-achieves-soc-2-type-ii-and-hipaa-compliance"
-scraped: "2026-05-10T01:21:03.686663+00:00"
+scraped: "2026-05-10T01:27:57.478104+00:00"
 lastmod: "2026-02-12T18:53:24.000Z"
 type: "sitemap"
 ---

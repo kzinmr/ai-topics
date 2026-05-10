@@ -2,7 +2,7 @@
 title: "Kimi K2.5 Is Live on Fireworks: Vibe Coding, Agents, and Full-Parameter RFT"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/kimi-k2p5"
-scraped: "2026-05-10T01:20:39.705948+00:00"
+scraped: "2026-05-10T01:27:38.564107+00:00"
 lastmod: "2026-02-12T18:51:00.000Z"
 type: "sitemap"
 ---

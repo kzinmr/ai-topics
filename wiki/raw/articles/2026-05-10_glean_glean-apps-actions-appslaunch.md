@@ -2,7 +2,7 @@
 title: "GleanアプリとGleanアクションのローンチ: 職場の生産性を大幅向上"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/glean-apps-actions-appslaunch"
-scraped: "2026-05-10T01:20:10.400729+00:00"
+scraped: "2026-05-10T01:27:29.496802+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

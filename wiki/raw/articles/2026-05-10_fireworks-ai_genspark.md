@@ -2,7 +2,7 @@
 title: "Genspark’s Deep Research Agent Outperforms a Frontier Closed Model in Quality and Tool Calls using Fireworks Reinforcement Fine Tuning, Achieving a 50% Cost Reduction "
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/genspark"
-scraped: "2026-05-10T01:20:35.674141+00:00"
+scraped: "2026-05-10T01:27:33.777459+00:00"
 lastmod: "2026-02-12T18:51:14.000Z"
 type: "sitemap"
 ---

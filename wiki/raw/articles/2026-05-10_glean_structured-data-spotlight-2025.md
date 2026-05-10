@@ -2,7 +2,7 @@
 title: "Unlock rich insights across your entire business and BigQuery environments with Glean’s new structured query agents"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/structured-data-spotlight-2025"
-scraped: "2026-05-10T01:21:12.301633+00:00"
+scraped: "2026-05-10T01:27:59.753669+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

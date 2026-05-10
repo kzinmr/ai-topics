@@ -2,7 +2,7 @@
 title: "How the Cohere Labs open research community turns early-career researchers into global leaders"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/how-the-cohere-labs-open-research-community-turns-early-career-researchers-into-global-leaders"
-scraped: "2026-05-10T01:27:06.683577+00:00"
+scraped: "2026-05-10T01:30:17.887468+00:00"
 lastmod: "2026-01-15"
 type: "sitemap"
 ---

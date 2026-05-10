@@ -2,7 +2,7 @@
 title: "Learning, building, and growing together in the Gleaniverse"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/learning-in-the-gleaniverse-trevor-gile"
-scraped: "2026-05-10T01:20:50.858801+00:00"
+scraped: "2026-05-10T01:27:48.565899+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

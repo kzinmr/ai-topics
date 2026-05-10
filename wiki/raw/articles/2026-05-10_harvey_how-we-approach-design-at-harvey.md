@@ -2,7 +2,7 @@
 title: "How We Approach Design at Harvey"
 source: "Harvey Blog"
 url: "https://www.harvey.ai/blog/how-we-approach-design-at-harvey"
-scraped: "2026-05-10T01:21:11.605415+00:00"
+scraped: "2026-05-10T01:27:25.988328+00:00"
 lastmod: "2025-11-14T14:00:00.000Z"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Automating Reporting at Algolia | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/automating-reporting-at-algolia/"
-scraped: "2026-05-10T01:27:06.473331+00:00"
+scraped: "2026-05-10T01:28:51.036519+00:00"
 lastmod: "2023-09-01"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Incrementally deploying ranking code at Glean"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/incrementally-deploying-ranking-code-at-glean"
-scraped: "2026-05-10T01:20:47.649703+00:00"
+scraped: "2026-05-10T01:27:47.100316+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

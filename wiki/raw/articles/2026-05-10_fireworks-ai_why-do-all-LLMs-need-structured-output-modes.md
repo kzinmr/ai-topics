@@ -2,7 +2,7 @@
 title: "Why do all LLMs need structured output modes?"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/why-do-all-LLMs-need-structured-output-modes"
-scraped: "2026-05-10T01:21:11.036881+00:00"
+scraped: "2026-05-10T01:28:00.497285+00:00"
 lastmod: "2026-02-12T18:53:15.000Z"
 type: "sitemap"
 ---

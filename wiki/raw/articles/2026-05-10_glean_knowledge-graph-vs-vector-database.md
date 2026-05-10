@@ -2,7 +2,7 @@
 title: "Knowledge graph vs vector database: how to choose your AI foundation"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/knowledge-graph-vs-vector-database"
-scraped: "2026-05-10T01:20:50.473856+00:00"
+scraped: "2026-05-10T01:27:48.486738+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

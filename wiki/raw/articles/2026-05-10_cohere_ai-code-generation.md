@@ -2,7 +2,7 @@
 title: "The Future of Coding: AI Code Generation Explained"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-code-generation"
-scraped: "2026-05-10T01:20:14.676994+00:00"
+scraped: "2026-05-10T01:29:44.215497+00:00"
 lastmod: "2025-07-16"
 type: "sitemap"
 ---

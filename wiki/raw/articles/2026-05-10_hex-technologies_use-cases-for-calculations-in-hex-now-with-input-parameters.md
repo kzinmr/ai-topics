@@ -2,7 +2,7 @@
 title: "Unleashing the Power of Calculations in Hex: New Use Cases and Input Parameters | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/use-cases-for-calculations-in-hex-now-with-input-parameters/"
-scraped: "2026-05-10T01:27:14.359674+00:00"
+scraped: "2026-05-10T01:28:52.927830+00:00"
 lastmod: "2024-07-31"
 type: "sitemap"
 ---

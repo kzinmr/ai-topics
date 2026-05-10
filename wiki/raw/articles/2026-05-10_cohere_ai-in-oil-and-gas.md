@@ -2,7 +2,7 @@
 title: "AI in oil and gas: Transforming safety and efficiency"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-in-oil-and-gas"
-scraped: "2026-05-10T01:21:09.691612+00:00"
+scraped: "2026-05-10T01:30:33.947348+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

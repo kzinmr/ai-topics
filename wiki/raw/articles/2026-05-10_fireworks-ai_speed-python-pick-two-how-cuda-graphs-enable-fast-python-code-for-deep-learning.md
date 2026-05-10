@@ -2,7 +2,7 @@
 title: "Speed, Python: Pick Two. How CUDA Graphs Enable Fast Python Code for Deep Learning"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/speed-python-pick-two-how-cuda-graphs-enable-fast-python-code-for-deep-learning"
-scraped: "2026-05-10T01:21:10.611902+00:00"
+scraped: "2026-05-10T01:28:00.174442+00:00"
 lastmod: "2026-02-12T18:53:30.000Z"
 type: "sitemap"
 ---

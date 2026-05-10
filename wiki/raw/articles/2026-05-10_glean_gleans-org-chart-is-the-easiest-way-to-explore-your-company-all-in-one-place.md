@@ -2,7 +2,7 @@
 title: "Glean's org chart: understand your company resources better"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/gleans-org-chart-is-the-easiest-way-to-explore-your-company-all-in-one-place"
-scraped: "2026-05-10T01:20:31.753499+00:00"
+scraped: "2026-05-10T01:27:38.483646+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

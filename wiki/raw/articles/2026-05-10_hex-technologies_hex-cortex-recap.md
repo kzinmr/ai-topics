@@ -2,7 +2,7 @@
 title: "hex cortex overview, all your questions answered | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/hex-cortex-recap/"
-scraped: "2026-05-10T01:27:05.817595+00:00"
+scraped: "2026-05-10T01:28:50.928795+00:00"
 lastmod: "2025-01-30"
 type: "sitemap"
 ---

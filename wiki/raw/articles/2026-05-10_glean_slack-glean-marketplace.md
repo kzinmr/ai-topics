@@ -2,7 +2,7 @@
 title: "Glean joins the Slack Marketplace, making it easy to get all your enterprise context in Slack—and bring your Slack data into Glean"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/slack-glean-marketplace"
-scraped: "2026-05-10T01:21:10.462151+00:00"
+scraped: "2026-05-10T01:27:59.033739+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Glean’s structured data analytics makes data analysis quick, personalized, and automated for everyone"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-structured-data-analytics"
-scraped: "2026-05-10T01:20:28.643540+00:00"
+scraped: "2026-05-10T01:27:37.728117+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

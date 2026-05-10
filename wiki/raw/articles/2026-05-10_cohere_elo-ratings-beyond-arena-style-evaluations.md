@@ -2,7 +2,7 @@
 title: "Elo ratings beyond arena-style evaluations"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/elo-ratings-beyond-arena-style-evaluations"
-scraped: "2026-05-10T01:19:38.017828+00:00"
+scraped: "2026-05-10T01:29:10.379780+00:00"
 lastmod: "2025-08-15"
 type: "sitemap"
 ---

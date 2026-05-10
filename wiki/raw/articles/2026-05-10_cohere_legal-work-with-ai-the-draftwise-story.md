@@ -2,7 +2,7 @@
 title: "Legal Work With AI: The DraftWise Story"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/legal-work-with-ai-the-draftwise-story"
-scraped: "2026-05-10T01:19:46.446073+00:00"
+scraped: "2026-05-10T01:29:17.812793+00:00"
 lastmod: "2025-07-23"
 type: "sitemap"
 ---

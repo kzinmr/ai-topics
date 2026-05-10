@@ -2,7 +2,7 @@
 title: "Build Your Own Flight Recommendation System using FastAPI, SerpAPI, and Firefunction"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/function-call-vercel-fastapi-serp"
-scraped: "2026-05-10T01:20:46.499954+00:00"
+scraped: "2026-05-10T01:27:41.281354+00:00"
 lastmod: "2026-02-12T18:52:50.000Z"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Gleanの新しいWorkRampコネクター:よりスマートな学習、シームレスなアクセス"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/glean-workramp-lms-connector"
-scraped: "2026-05-10T01:20:31.163345+00:00"
+scraped: "2026-05-10T01:27:38.299069+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

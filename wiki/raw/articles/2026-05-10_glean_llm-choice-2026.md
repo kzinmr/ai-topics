@@ -2,7 +2,7 @@
 title: "LLM choice in Assistant: A better agentic coworker sourcing deep proficiencies from your models of choice"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/llm-choice-2026"
-scraped: "2026-05-10T01:20:51.956733+00:00"
+scraped: "2026-05-10T01:27:49.231580+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

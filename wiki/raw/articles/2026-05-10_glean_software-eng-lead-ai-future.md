@@ -2,7 +2,7 @@
 title: "AI 時代のソフトウェアエンジニアリングリーダーシップの未来を形作る"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/software-eng-lead-ai-future"
-scraped: "2026-05-10T01:21:11.923214+00:00"
+scraped: "2026-05-10T01:27:59.655612+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Cohere adds $100M in second close to latest round as it scales security-first enterprise AI"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/september-2025-funding-round"
-scraped: "2026-05-10T01:27:17.716479+00:00"
+scraped: "2026-05-10T01:29:03.085080+00:00"
 lastmod: "2025-09-24"
 type: "sitemap"
 ---

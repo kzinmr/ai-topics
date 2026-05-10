@@ -2,7 +2,7 @@
 title: "Secure AI in Government: Top uses cases and benefits"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/secure-ai-in-government-use-cases"
-scraped: "2026-05-10T01:20:29.908948+00:00"
+scraped: "2026-05-10T01:29:59.044310+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

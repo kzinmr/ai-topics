@@ -2,7 +2,7 @@
 title: "Vision Model Platform Updates: Enhanced Capabilities and New Features"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/vision-model-platform-updates"
-scraped: "2026-05-10T01:21:12.964838+00:00"
+scraped: "2026-05-10T01:28:01.768777+00:00"
 lastmod: "2025-06-23T18:47:37.000Z"
 type: "sitemap"
 ---

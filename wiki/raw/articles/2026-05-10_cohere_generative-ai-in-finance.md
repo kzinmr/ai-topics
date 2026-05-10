@@ -2,7 +2,7 @@
 title: "Generative AI in Finance | Use Cases, Benefits & the Future"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/generative-ai-in-finance"
-scraped: "2026-05-10T01:21:01.008901+00:00"
+scraped: "2026-05-10T01:30:28.550507+00:00"
 lastmod: "2026-02-26"
 type: "sitemap"
 ---

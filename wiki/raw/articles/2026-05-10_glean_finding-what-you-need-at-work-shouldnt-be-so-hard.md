@@ -2,7 +2,7 @@
 title: "Finding what you need at work shouldn’t be so hard - Glean"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/finding-what-you-need-at-work-shouldnt-be-so-hard"
-scraped: "2026-05-10T01:20:03.177968+00:00"
+scraped: "2026-05-10T01:27:25.092886+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

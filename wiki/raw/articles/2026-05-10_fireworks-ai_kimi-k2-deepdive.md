@@ -2,7 +2,7 @@
 title: "Kimi K2: Architecture, Capabilities & Benchmarks"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/kimi-k2-deepdive"
-scraped: "2026-05-10T01:20:29.974234+00:00"
+scraped: "2026-05-10T01:27:30.030855+00:00"
 lastmod: "2026-02-12T18:51:41.000Z"
 type: "sitemap"
 ---

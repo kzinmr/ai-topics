@@ -2,7 +2,7 @@
 title: "Glean:GO 2025 recap: What we launched and learned"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/glean-go-2025-recap"
-scraped: "2026-05-10T01:20:14.715962+00:00"
+scraped: "2026-05-10T01:27:31.180794+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

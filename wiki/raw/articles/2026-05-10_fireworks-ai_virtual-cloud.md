@@ -2,7 +2,7 @@
 title: "Build for Scale with Fireworks Virtual Cloud (GA)"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/virtual-cloud"
-scraped: "2026-05-10T01:20:44.938955+00:00"
+scraped: "2026-05-10T01:27:40.499420+00:00"
 lastmod: "2026-02-12T18:52:00.000Z"
 type: "sitemap"
 ---

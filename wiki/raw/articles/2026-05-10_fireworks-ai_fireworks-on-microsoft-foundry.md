@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/fireworks-on-microsoft-foundry"
-scraped: "2026-05-10T01:20:46.796155+00:00"
+scraped: "2026-05-10T01:27:41.606671+00:00"
 lastmod: "2026-04-08T04:50:10.000Z"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Our commitment to AI model signing on Hugging Face"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/securing-ai-supply-chains-coheres-commitment-to-model-signing"
-scraped: "2026-05-10T01:27:15.639681+00:00"
+scraped: "2026-05-10T01:29:01.177542+00:00"
 lastmod: "2025-11-13"
 type: "sitemap"
 ---

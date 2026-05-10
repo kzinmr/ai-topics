@@ -2,7 +2,7 @@
 title: "How go links can save you headaches at work"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/how-go-links-can-save-you-headaches-at-work"
-scraped: "2026-05-10T01:20:39.448722+00:00"
+scraped: "2026-05-10T01:27:42.510306+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

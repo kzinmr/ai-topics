@@ -2,7 +2,7 @@
 title: "Secure and Responsible AI for Europe"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/secure-and-responsible-ai-for-europe"
-scraped: "2026-05-10T01:19:45.422298+00:00"
+scraped: "2026-05-10T01:29:16.856672+00:00"
 lastmod: "2025-07-24"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "Fireworks AI"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/gpt-oss-on-fireworks-ai"
-scraped: "2026-05-10T01:20:51.381828+00:00"
+scraped: "2026-05-10T01:27:46.828561+00:00"
 lastmod: "2026-02-12T18:51:35.000Z"
 type: "sitemap"
 ---

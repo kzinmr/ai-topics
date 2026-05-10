@@ -2,7 +2,7 @@
 title: "Mixtral 8x7B on Fireworks: faster, cheaper, even before the official release"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/mixtral-8x7b-on-fireworks-faster-cheaper-even-before-the-official-release"
-scraped: "2026-05-10T01:21:07.658803+00:00"
+scraped: "2026-05-10T01:27:58.063355+00:00"
 lastmod: "2026-02-12T18:53:20.000Z"
 type: "sitemap"
 ---

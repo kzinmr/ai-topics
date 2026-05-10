@@ -2,7 +2,7 @@
 title: "Towards fair and comprehensive multilingual LLM benchmarking"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/towards-fair-and-comprehensive-multilingual-and-multicultural-llm-benchmarking"
-scraped: "2026-05-10T01:21:12.400334+00:00"
+scraped: "2026-05-10T01:30:36.696698+00:00"
 lastmod: "2025-01-27"
 type: "sitemap"
 ---

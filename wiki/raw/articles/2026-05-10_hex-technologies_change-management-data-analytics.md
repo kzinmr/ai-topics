@@ -2,7 +2,7 @@
 title: "Data-Driven Change Management Guide | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/change-management-data-analytics/"
-scraped: "2026-05-10T01:27:07.016127+00:00"
+scraped: "2026-05-10T01:28:51.225835+00:00"
 lastmod: "2026-05-05"
 type: "sitemap"
 ---

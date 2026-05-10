@@ -2,7 +2,7 @@
 title: "Introducing Context Suggestions | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/introducing-context-suggestions/"
-scraped: "2026-05-10T01:27:08.652787+00:00"
+scraped: "2026-05-10T01:28:51.667108+00:00"
 lastmod: "2026-04-23"
 type: "sitemap"
 ---

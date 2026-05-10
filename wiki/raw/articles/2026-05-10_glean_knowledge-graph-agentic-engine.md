@@ -2,7 +2,7 @@
 title: "ナレッジグラフの仕組みと、ナレッジグラフがエンタープライズAIのコンテキストの鍵となる理由"
 source: "Glean Blog"
 url: "https://www.glean.com/jp/blog/knowledge-graph-agentic-engine"
-scraped: "2026-05-10T01:20:50.376613+00:00"
+scraped: "2026-05-10T01:27:48.355958+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

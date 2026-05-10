@@ -2,7 +2,7 @@
 title: "Understanding RAG vs Fine-Tuning "
 source: "Cohere Blog"
 url: "https://cohere.com/blog/rag-vs-fine-tuning"
-scraped: "2026-05-10T01:21:00.018282+00:00"
+scraped: "2026-05-10T01:30:27.580978+00:00"
 lastmod: "2025-07-17"
 type: "sitemap"
 ---

@@ -2,7 +2,7 @@
 title: "5 metrics to measure AI-generated answers' decision-making impact"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/metrics-ai-decision-impact"
-scraped: "2026-05-10T01:20:54.581178+00:00"
+scraped: "2026-05-10T01:27:50.785237+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

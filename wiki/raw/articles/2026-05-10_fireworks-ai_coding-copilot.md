@@ -2,7 +2,7 @@
 title: "Code Generation with Large Language Models - Fireworks AI Take"
 source: "Fireworks AI Blog"
 url: "https://fireworks.ai/blog/coding-copilot"
-scraped: "2026-05-10T01:20:28.386523+00:00"
+scraped: "2026-05-10T01:27:27.116705+00:00"
 lastmod: "2026-02-12T18:53:04.000Z"
 type: "sitemap"
 ---

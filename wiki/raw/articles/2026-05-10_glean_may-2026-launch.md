@@ -2,7 +2,7 @@
 title: "The enterprise AI coworker: Proactively manage tasks, execute multiple workstreams, and collaborate on your terms"
 source: "Glean Blog"
 url: "https://www.glean.com/blog/may-2026-launch"
-scraped: "2026-05-10T01:20:53.461251+00:00"
+scraped: "2026-05-10T01:27:50.027755+00:00"
 lastmod: "None"
 type: "sitemap"
 ---

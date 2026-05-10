@@ -2,7 +2,7 @@
 title: "The AI Efficiency Paradigm"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/ai-efficiency"
-scraped: "2026-05-10T01:20:04.628264+00:00"
+scraped: "2026-05-10T01:29:35.855545+00:00"
 lastmod: "2025-07-16"
 type: "sitemap"
 ---

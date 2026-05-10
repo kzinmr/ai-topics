@@ -2,7 +2,7 @@
 title: "A complete guide to cloud modern data architecture  | Hex "
 source: "Hex Technologies Blog"
 url: "https://hex.tech/blog/modern-data-architecture/"
-scraped: "2026-05-10T01:27:17.287579+00:00"
+scraped: "2026-05-10T01:28:53.475590+00:00"
 lastmod: "2025-06-30"
 type: "sitemap"
 ---

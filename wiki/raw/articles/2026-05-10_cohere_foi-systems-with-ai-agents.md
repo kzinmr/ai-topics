@@ -2,7 +2,7 @@
 title: "Modernizing FOI Systems with AI Agents"
 source: "Cohere Blog"
 url: "https://cohere.com/blog/foi-systems-with-ai-agents"
-scraped: "2026-05-10T01:19:39.939990+00:00"
+scraped: "2026-05-10T01:29:12.080449+00:00"
 lastmod: "2025-08-22"
 type: "sitemap"
 ---
