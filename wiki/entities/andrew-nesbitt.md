@@ -225,3 +225,4 @@ His blogging cadence accelerated dramatically in 2025–2026, with 25 posts in J
 - nesbitt.io--2026-04-21-brief-html--7ba936c4
 - nesbitt.io--2026-04-27-the-stages-of-package-installation-html--50f05a11
 - nesbitt.io--2026-04-28-github-actions-is-the-weakest-link-html--0c77c59b
+- nesbitt.io--2026-05-09-the-mismeasure-of-open-source-html--ab1e120e

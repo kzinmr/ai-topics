@@ -5,6 +5,11 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-10] ingest | Superintel newsletter — Alex Karp/Palantir Q1 2026 article
+- **Raw article**: raw/newsletters/2026-05-09-the-man-who-studied-power-and-then-built-it-alex-karp-palantir-and-the-technolog.md
+- **Source**: Superintel newsletter (Kim "Chubby" Isenberg), beehiiv platform
+- **Updated**: [[entities/palantir]] — Added Q1 2026 financial performance section ($1.63B revenue, +84% U.S. government growth, Maven elevated to permanent Pentagon program), founding history with In-Q-Tel/CIA seed connection, Alex Karp's Frankfurt School critical theory academic background
+- **Triage decision**: ★★★☆☆ (reference) — existing page had architecture coverage but lacked financial/leadership context
 ## [2026-05-09] rotate | Rotated log-2026.md (1158 lines → log-2026.md appended)
 - Previous entries archived to log-2026.md
 - Fresh log.md initialized

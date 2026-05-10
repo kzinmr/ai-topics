@@ -96,6 +96,44 @@ OpenAI's stance: *"We want people to be able to use Codex, and their ChatGPT sub
 | 🥇 Local | Ollama, LM Studio, MLX | Local endpoint configuration |
 | 🥇 Codex-mini | o4-mini tuned for Codex CLI | Faster, low-latency, default model |
 
+## Running Codex Safely (May 2026)
+
+OpenAI published detailed guidance on deploying Codex safely within enterprise environments, covering **sandboxing, approval policies, managed network access, and agent-native telemetry**.
+
+### Core Security Principles
+
+1. **Bounded execution**: Codex operates within clear technical boundaries (sandbox defines where it can write, whether it can reach network, which paths are protected)
+2. **Frictionless low-risk actions**: Routine engineering tasks proceed without interruption
+3. **Explicit higher-risk actions**: Dangerous commands require human approval
+4. **Agent-native telemetry**: Detailed logs of agent intent and actions, not just "what happened"
+
+### Key Security Features
+
+- **Auto-review mode**: Sub-agent automatically approves low-risk actions, reduces user interruptions while maintaining safety
+- **Managed network policy**: Allows known-good destinations, blocks unfamiliar domains, requires approval for new network access
+- **Command-level rules**: Not all shell commands treated equally — benign commands allowed, dangerous ones blocked/requiring approval
+- **OAuth credential management**: CLI and MCP OAuth credentials stored in secure OS keyring, login forced through ChatGPT, access pinned to enterprise workspace
+
+### Telemetry & Audit
+
+Codex provides **OpenTelemetry log export** for:
+- User prompts and tool approval decisions
+- Tool execution results and MCP server usage
+- Network proxy allow/deny events
+- Agent intent and context (beyond traditional security logs)
+
+These logs feed into OpenAI's **Compliance API** and can be centralized in SIEM/compliance systems. OpenAI uses these logs with an AI-powered security triage agent to distinguish between expected agent behavior, benign mistakes, and genuine security concerns.
+
+### Deployment Configuration
+
+Security policies applied through:
+- Cloud-managed requirements (admin-enforced, user cannot override)
+- macOS managed preferences
+- Local requirements files
+- Consistent baselines with team/user/environment-specific tuning
+
+> Source: [Running Codex safely at OpenAI](https://openai.com/index/running-codex-safely) (May 2026)
+
 ## Pricing
 
 - **ChatGPT Free/Go**: Codex included (limited)

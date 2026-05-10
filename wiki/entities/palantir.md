@@ -2,15 +2,15 @@
 title: "Palantir Technologies"
 type: entity
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-10
 tags:
   - company
   - decision-centric
-  - ontology
   - ai-agents
 sources:
   - raw/articles/2026-04-28_connecting-agents-to-decisions.md
   - https://x.com/i/article/2049136883528011954
+  - raw/newsletters/2026-05-09-the-man-who-studied-power-and-then-built-it-alex-karp-palantir-and-the-technolog.md
 related:
   - concepts/agent-ontology
   - concepts/decision-centric-architecture
@@ -75,6 +75,22 @@ Palantir's hands-on onboarding program where customers achieve operational AI ou
 - **Novartis**: Agentic R&D for drug discovery
 - **Andretti Global**: Human-agent teaming for IndyCar operations
 
+
+## Financial Performance & Market Position (Q1 2026)
+
+- **Q1 2026 Revenue**: $1.63 billion
+- **U.S. Government Growth**: +84% year-over-year
+- **U.S. Commercial Revenue Growth**: +133% year-over-year
+- **Maven AI System**: Elevated from experimental program to permanent Pentagon program of record
+- **CEO Commentary**: Alex Karp stated bad times are "incredibly good for us" — instability drives demand for decision-centric AI infrastructure
+
+## Founding History
+
+- **2003**: Founded with seed money from In-Q-Tel (CIA's venture capital arm)
+- **Name Origin**: Named after the Palantíri (all-seeing stones) from Tolkien's Lord of the Rings
+- **Co-founders**: Alex Karp (CEO), Peter Thiel, Stephen Cohen, Joe Lonsdale, Nathan Gettings
+- **Alex Karp Background**: PhD in philosophy from University of Frankfurt, studied critical theory (Frankfurt School) — wrote about how language legitimizes power before building a data analytics platform
+
 ## Comparison to Other Approaches
 
 | Dimension | Palantir Ontology | Traditional RAG | Harness Engineering |
@@ -101,3 +117,4 @@ Palantir's hands-on onboarding program where customers achieve operational AI ou
 ## References
 
 - 2026-04-28_x-article-connecting-agents-to-decisions-palantir
+- 2026-05-09_superintel-alex-karp-palantir-q1-2026-financials

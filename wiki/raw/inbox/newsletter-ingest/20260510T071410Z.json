@@ -1,0 +1,66 @@
+{
+  "run_id": "20260510T071410Z",
+  "triaged_at": "2026-05-10T07:14:10+00:00",
+  "newsletters": [
+    {
+      "message_id": "<20260509092510.3.cb7a68791c8eb295@mg2.substack.com>",
+      "source": "Ben's Bites (Ben's Builds #3)",
+      "subject": "Ben's Builds #3 - an email app",
+      "date": "2026-05-09",
+      "importance": "high",
+      "relevance_reason": "Detailed case study of building a local email app using AI coding agents (Codex for initial pass, Factory for iteration between Claude Opus and GPT-5.5). Covers agent-friendly UI design, iterative agent-driven development workflow, practical challenges (lag, caching, rule sync with Gmail API). Directly relevant to coding agents, agent UX design, and AI-assisted development workflows.",
+      "wiki_actions": [
+        {
+          "action": "enrich",
+          "target": "wiki/entities/ben-bites.md",
+          "details": "Update Ben's Bites entity with details about Ben's Builds series and his approach to agent-driven development"
+        },
+        {
+          "action": "create_or_update",
+          "target": "wiki/concepts/agent-friendly-app-design.md",
+          "details": "Extract patterns: hidden selectors/state/debug endpoints for agents, optimistic UI with agent-readable state, local-first app with Gmail API backend"
+        },
+        {
+          "action": "cross_reference",
+          "target": "wiki/concepts/coding-agent-workflows.md",
+          "details": "Add real-world example of Codex → Factory handoff pattern for multi-agent development"
+        }
+      ],
+      "article_links_scraped": true,
+      "article_count": 20
+    },
+    {
+      "message_id": "<20260509.155146.f51a3399@mta12>",
+      "source": "Unknown (Beehiiv newsletter)",
+      "subject": "The Man Who Studied Power and Then Built It: Alex Karp, Palantir, and The Technological Republic",
+      "date": "2026-05-09",
+      "importance": "low",
+      "relevance_reason": "Profile/interview piece about Alex Karp and Palantir's book 'The Technological Republic'. Primarily business/philosophy content about Palantir's company culture, defense AI, and Western values. Limited direct relevance to LLM/Agent technology wiki. Some tangential mentions of LLMs as 'management of resources' but not technical depth.",
+      "wiki_actions": [
+        {
+          "action": "create_or_update",
+          "target": "wiki/entities/alex-karp.md",
+          "details": "Create/update entity page for Alex Karp with focus on his views on AI/ML in defense and enterprise, LLM-as-management-layer thesis"
+        },
+        {
+          "action": "cross_reference",
+          "target": "wiki/entities/palantir-technologies.md",
+          "details": "Reference Karp's stated views on LLMs and AI strategy at Palantir"
+        }
+      ],
+      "article_links_scraped": true,
+      "article_count": 17
+    }
+  ],
+  "summary": {
+    "total_newsletters": 2,
+    "high_importance": 1,
+    "low_importance": 1,
+    "critical_importance": 0,
+    "recommended_next_steps": [
+      "Process Ben's Builds article into wiki pages on agent-driven development workflows",
+      "Scrape the Palantir/Karp article for any technical AI content to enrich entity pages",
+      "Consider tracking Ben's Bites as a recurring source for coding agent case studies"
+    ]
+  }
+}

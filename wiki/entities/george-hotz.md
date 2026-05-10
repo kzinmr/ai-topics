@@ -5,8 +5,7 @@ created: 2026-05-04
 updated: 2026-05-04
 tags:
   - person
-  - hacker
-  - tinygrad
+  - open-source
 sources:
   - https://geohot.github.io/
   - https://geohot.github.io//blog/jekyll/update/2026/05/03/punk-or-why-i-dont-stream.html
@@ -51,11 +50,24 @@ This post reflects Hotz's broader skepticism about passive AI consumption and th
 - [[concepts/ai-coding-reliability]] — Hotz's views on AI capability and limitations
 - [[concepts/open-source-ai-destruction]] — Tensions between open-source and commercialization
 
+### "The Real Singularity is the Friends We Made Along the Way" (May 2026)
+
+In a May 2026 blog post, Hotz argues against the popular "Singularity" narrative in AI — the idea of an abrupt, god-like intelligence explosion. His key arguments:
+
+- **AI as a long grind, not a singular event**: The real "singularity" isn't a moment — it's the slow, compounding accumulation of improvements across millions of small interactions, tools, and integrations. Like the steam engine or the internet, it's a **distributed technological shift** rather than a single breakthrough.
+- **The "friends we made along the way"**: The real value isn't the AGI endpoint — it's the entire ecosystem of tools, workflows, and collaborations that emerge as AI capability scales incrementally.
+- **ROI skepticism**: Questions the economics of scaling toward "human-level" training runs (estimated ~$100M for 1e26 FLOPs), suggesting the marginal returns diminish sharply.
+- **Anti-hype**: Criticizes the SF/Twitter "cult" of singularity prediction, preferring to focus on concrete, incremental engineering progress.
+
+This post is consistent with Hotz's broader engineering pragmatism: measure what matters, ship working code, and ignore the apocalyptic narratives.
+
 ## Sources
 
 - [geohot.github.io](https://geohot.github.io/)
 - [Punk, or why I don't stream anymore](https://geohot.github.io//blog/jekyll/update/2026/05/03/punk-or-why-i-dont-stream.html) (May 2026)
+- [The Real Singularity is the Friends We Made Along the Way](https://geohot.github.io//blog/jekyll/update/2026/05/09/real-singularity.html) (May 2026)
 
 ## References
 
 - geohot.github.io--blog-jekyll-update-2026-05-03-punk-or-why-i-dont-stream-html--3d6cc46d
+- geohot.github.io--blog-jekyll-update-2026-05-09-real-singularity-html--0dc737c4

@@ -6,8 +6,8 @@ type: concept
 tags:
   - model
   - context-management
-  - hybrid-attention
-  - fp4
+  - mixture-of-experts
+  - quantization
   - inference
   - ai-agents
   - training
@@ -194,6 +194,36 @@ FP4はFP8のさらに半分のビット幅。ただし活性化はFP8/BF16を維
 | **量子化** | FP8 | **FP4 QAT (重みのみ)** |
 | **エージェント** | — | Interleaved Thinking, Quick Instruction |
 | **コード** | Codeforces 1134 | **Codeforces 3206** |
+
+## Serving DeepSeek-V4 (Together AI, May 2026)
+
+Together AI published early bring-up experience serving V4 on NVIDIA HGX B200 GPUs. Key findings:
+
+### KV Cache Policy Determines Real-World Capacity
+
+- **Naive SWA storage**: 3.8KB per token (higher than V3's 3.4KB)
+- **Optimized cache policy**: Single HGX B200 node capacity increased from ~1.2M to ~3.7M tokens
+- **Lesson**: V4's architecture creates the *opportunity* for long-context efficiency, but realized capacity depends on how the engine manages different cache types
+
+### Three Cache Layouts Must Be Managed Simultaneously
+
+| Cache Type | Size per Token | Storage Strategy |
+|-----------|---------------|-----------------|
+| CSA (stride 4) | Compressed | Store compressed state, efficient prefix caching |
+| HCA (stride 128) | ~8K entries total | Dense attention over compressed global context |
+| SWA (window ~128) | Exact local state | Full store, periodic checkpoints, or recompute-on-hit |
+
+### Regime-Dependent Performance
+
+- **Long-context decode-heavy workloads**: Benefit immediately from KV cache compression
+- **Short-context prefill-heavy workloads**: Sensitive to kernel maturity, MXFP4 vs NVFP4 performance differences
+- **Coding agents**: Benefit from both long-context and prefix-heavy workloads (shared repo state)
+
+### Endpoint Profiles Matter
+
+The same V4 weights need different serving configurations for different workloads. Long-context agents, short chat, and RL rollouts each have distinct optimization targets (cost per trajectory vs latency vs throughput).
+
+> Full analysis: [[concepts/deepseek-v4-serving]]
 
 ## Community Reception & Independent Benchmarks (HN)
 
