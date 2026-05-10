@@ -115,10 +115,28 @@ Osmani identified a hidden cost of AI-generated code:
 
 > "The high-leverage developer of 2026 is an async-first manager running parallel AI agents. The developers who will be most productive aren't the ones who write the most code — they're the ones who best decompose problems, specify intent, and verify outcomes."
 
+## Agent Harness Engineering (April 2026)
+
+Osmani published a comprehensive synthesis of the harness engineering movement in "[Agent Harness Engineering](https://addyosmani.com/blog/agent-harness-engineering/)" (April 2026), pulling together threads from multiple voices (Vivek Trivedy, Dex Horthy, HumanLayer, Anthropic Engineering, Birgitta Böckeler) into a unified framework.
+
+Key contributions from this article:
+
+| Concept | Description |
+|---------|-------------|
+| **The Ratchet** | Every agent mistake becomes a permanent fix — constraints are added on real failures, removed when models internalize the capability |
+| **Working Backwards from Behavior** | Design methodology: "Behavior we want → Harness design to achieve it" — every component must trace to a specific behavioral requirement |
+| **Hooks as Enforcement Layer** | Before-tool-call, after-file-edit, and before-commit hooks that block destructive actions silently but inject errors verbosely |
+| **Tool Discipline** | Ten focused tools beat fifty overlapping ones — sloppy external integrations (unverified MCP servers) inject bad prompts before the agent starts |
+| **Harness-as-a-Service (HaaS)** | Industry transition from LLM APIs (completions) to Harness APIs (runtimes) — select, configure, focus on domain logic |
+| **Convergence Dynamic** | Top coding agents look more like each other than their underlying models do — harness patterns are converging on load-bearing scaffolding |
+| **Harnesses Don't Shrink, They Move** | Better models don't eliminate scaffolding — outdated complexity is replaced with new scaffolding for newly-reachable tasks |
+| **Post-Training Feedback Loop** | Models are post-trained with specific harnesses, creating tight coupling between model and harness design |
+
 ## Key Publications
 
 | Title | Date | Platform |
 |-------|------|----------|
+| Agent Harness Engineering | Apr 2026 | addyosmani.com |
 | The Future of Agentic Coding: Conductors to Orchestrators | Nov 2025 | O'Reilly Radar + addyosmani.com |
 | Claude Code Swarms | Feb 2026 | addyosmani.com |
 | The Code Agent Orchestra | Mar 2026 | O'Reilly CodeCon + addyosmani.com |

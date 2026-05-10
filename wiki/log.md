@@ -66,3 +66,10 @@
   - raw/articles/2026-05-08-zyphra-zaya1-vl-8b.md
   - raw/articles/2026-05-08-zyphra-zaya1-74b-preview.md
 - **Index updated**: Entities 541→542, Concepts 1272→1274, Total 1828→1831
+
+## [2026-05-10] ingest | NVIDIA Dynamo article — Streaming Tokens and Tools
+- **Raw article**: raw/articles/2026-05-08_nvidia-dynamo-streaming-tokens-tools.md
+- **Source**: https://developer.nvidia.com/blog/streaming-tokens-and-tools-multi-turn-agentic-harness-support-in-nvidia-dynamo/
+- **Updated**: [[concepts/nvidia-dynamo]] — Added agentic harness support section covering streaming tool dispatch, reasoning parsing, prompt stability/KV cache reuse, Anthropic API fidelity, Codex/Responses API parity
+- **SCHEMA.md**: Added `streaming` tag to Techniques category
+- **Index updated**: Concepts 1274→1275, Total 1831→1832

@@ -1,13 +1,13 @@
 ---
 title: "Agent Harness"
 created: 2026-04-27
-updated: 2026-05-04
+updated: 2026-05-10
 tags:
   - harness-engineering
   - architecture
   - ai-agents
 aliases: [agent-harness, harness-anatomy, agent-scaffolding]
-related: [[concepts/harness-engineering]], [[concepts/deep-agents-runtime]], [[concepts/agent-loop-orchestration]], [[concepts/context-engineering]], [[concepts/bitter-lesson-harnessing]], [[entities/atal-upadhyay]], [[entities/kartik-labhshetwar]], [[entities/mitchell-hashimoto]], [[concepts/why-harness-development-boom]]
+related: [[concepts/harness-engineering]], [[concepts/deep-agents-runtime]], [[concepts/agent-loop-orchestration]], [[concepts/context-engineering]], [[concepts/bitter-lesson-harnessing]], [[entities/atal-upadhyay]], [[entities/kartik-labhshetwar]], [[entities/mitchell-hashimoto]], [[entities/addy-osmani]], [[entities/fred-schott]], [[entities/dex-horthy]], [[concepts/why-harness-development-boom]]
 sources: [
   "https://x.com/akshay_pachaar/status/2041146899319971922",
   "https://x.com/i/article/2041146899319971922",
@@ -21,7 +21,9 @@ sources: [
   - "raw/articles/2026-05-06_vtrivedy10_strong-opinions-agent-harness-engineering.md",
   - "https://x.com/vtrivedy10/status/2052100726608781363",
   - "raw/articles/2026-05-02_codekartik-why-everyone-building-agent-harness.md",
-  - "https://x.com/code_kartik/status/2050631735529095575"
+  - "https://x.com/code_kartik/status/2050631735529095575",
+  - "raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md",
+  - "https://x.com/addyosmani/status/2053231239721885918"
 ]
 ---
 
@@ -263,6 +265,68 @@ A radical alternative view emerged in April 2026 from the [[entities/iii-platfor
 - Categories collapse: "Queues have broker semantics, HTTP has routing semantics, agents have orchestration semantics. In iii, they are all the same thing: a process that registers functions and triggers."
 
 This paradigm connects to the [[concepts/bitter-lesson-harnessing|Bitter Lesson of Harnessing]] — as models improve, infrastructure should collapse categories rather than add new ones. See [[entities/iii-platform]] for full details.
+
+## The Ratchet: Every Mistake Becomes a Rule (*Addy Osmani, May 2026*)
+
+The most vital habit in harness engineering, as articulated by [[entities/addy-osmani|Addy Osmani]] in "[Agent Harness Engineering](https://addyosmani.com/blog/agent-harness-engineering/)" (April 2026), is treating agent mistakes as **permanent signals** — not one-off flukes to retry and forget. This is the **Ratchet pattern**:
+
+> If an agent ships a PR with a commented-out test that gets merged by accident, that is an input. The next iteration of AGENTS.md must state: "Never comment out tests; delete or fix them." The next pre-commit hook should automatically flag `.skip(` in the diff. The reviewer subagent must be updated to block commented-out tests.
+
+**Core principles**:
+- Constraints are only added when you observe a **real failure** — never preemptively
+- Constraints are removed only when a **capable model renders them redundant**
+- Every line in a good system prompt should trace back to a **specific, historical failure**
+- Harness engineering is a **discipline**, not a one-size-fits-all framework — the right harness for a specific codebase is shaped by its **unique failure history**
+
+This sharpens Mitchell Hashimoto's original definition ("Anytime an agent makes a mistake, you engineer a solution") by specifying that **removal is as important as addition** — outdated scaffolding must be pruned when models internalize the capability it addressed.
+
+## Working Backwards from Behavior
+
+Osmani proposes a design methodology: **start with the desired behavior and build the component that delivers it**.
+
+> Behavior we want → Harness design to achieve it.
+
+Every piece of the harness must have a distinct, nameable job. If you cannot articulate the specific behavior a component exists to deliver, it should be removed. This cleanly connects to the thick vs thin harness debate: the question isn't absolute thickness, but whether each component traces to a real behavioral requirement.
+
+## Hooks as the Enforcement Layer
+
+Hooks bridge the gap between **requesting** an action and **enforcing** it. They operate at specific lifecycles:
+
+| Hook Point | What It Enforces | Example |
+|------------|-----------------|---------|
+| **Before tool call** | Destructive command blocking | Block `rm -rf /` in sandbox |
+| **After file edit** | Auto-formatting, lint-on-save | Run `prettier` after every `.ts` edit |
+| **Before commit** | Test suite gate, type checking | Block commit if `tsc --noEmit` fails |
+
+**Design principle**: Success is silent, failures are verbose. If a typecheck passes, the agent hears nothing. If it fails, the error is injected directly back into the loop for self-correction.
+
+## Tool Discipline: Ten Focused Beats Fifty Overlapping
+
+- **Ten highly focused tools always outperform fifty overlapping ones**
+- Tool descriptions populate the agent's prompt — **malicious or sloppy external integrations** (unverified MCP servers) can inject bad prompts before the agent even starts working
+- Every tool must have a distinct job that traces back to a behavioral requirement
+
+## Harness-as-a-Service (HaaS)
+
+Osmani identifies a fundamental industry transition: from building on **LLM APIs** (completions) to building on **Harness APIs** (runtimes).
+
+SDKs now offer the loop, tools, context management, hooks, and sandboxes out of the box. The modern default:
+1. **Select** a harness framework (Claude Code, Codex, OpenCode, Flue)
+2. **Configure** its core pillars (prompts, hooks, tools)
+3. **Focus** purely on domain-specific prompt and tool design
+
+This makes troubleshooting scalable: tuning a well-factored configuration surface rather than reinventing the entire agent architecture. Frameworks like [[entities/fred-schott|Flue]] (TypeScript-native harness framework) and LangChain's Deep Agents CLI exemplify the HaaS transition.
+
+## The Convergence Dynamic
+
+Top coding agents look **more like each other than their underlying models do**. The models differ significantly, but harness patterns converge on load-bearing scaffolding: loops with self-verification, filesystem-as-state, sandboxed execution, subagent delegation, context compaction, hook-based enforcement.
+
+Osmani predicts the next phase: harnesses stop being static configuration files and start acting like **compilers**. Open problems:
+- **Multi-agent orchestration** in parallel
+- **Self-analytic agents** that inspect their own traces to fix harness-level failures
+- **Just-in-time tool assembly** — dynamically composing tools based on task requirements
+
+Fareed Khan's ([estimated] breakdown of Claude Code's architecture)[https://levelup.gitconnected.com/building-claude-code-with-harness-engineering-d2e8c0da85f0] maps every concept to a named architectural component: context injection = knowledge layer, loop state = memory store + worktree isolator, hooks = permission gate, subagent firewalls = multi-agent layer, tool dispatch = MCP + bash registry.
 
 ## See Also
 
