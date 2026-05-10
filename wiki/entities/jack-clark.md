@@ -1,7 +1,7 @@
 ---
 title: "Jack Clark"
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-10
 type: entity
 tags: [person, company, anthropic, safety, prediction, governance]
 sources: [raw/articles/2026-05-04_import-ai-455-automating-ai-research.md]

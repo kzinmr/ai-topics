@@ -3,10 +3,11 @@ title: "AlphaEvolve"
 type: concept
 aliases: ["AlphaEvolve", "alphaevolve"]
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-10
 tags: [coding-agents, gemini, google, evolutionary-algorithms, optimization, ai-agents, neurosymbolic]
 sources:
   - raw/articles/2025-12-10_google-cloud_alphaevolve.md
+  - raw/articles/2026-05-07_google-alphaevolve-real-world.md
   - https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms
   - https://arxiv.org/abs/2506.13131
 related:

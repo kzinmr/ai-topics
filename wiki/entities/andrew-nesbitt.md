@@ -2,7 +2,7 @@
 title: "Andrew Nesbitt"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-10
 type: entity
 ---
 
@@ -192,6 +192,52 @@ His blogging cadence accelerated dramatically in 2025–2026, with 25 posts in J
 - Conference speaker at FOSDEM, EasyBuild, OSS Summit NA, Brighton Ruby, Bath Ruby, Full Frontal, LXJS, jQuery UK, Hackference
 
 ---
+
+### "The Mismeasure of Open Source"
+
+In May 2026, Nesbitt published a comprehensive critique of how open source projects are scored for criticality, risk, and funding. The article identifies several systemic problems:
+
+- **Missing read as zero**: The most consequential mistake in OSS scoring models. When signals are absent (no download counts for Go modules, no GitHub issues for projects using Bugzilla/mailing lists, no FUNDING.yml for salaried maintainers), models write zeros instead of "unknown." This silently excludes entire ecosystems from consideration.
+- **Streetlight effect**: Metrics are used because APIs return them, not because they're meaningful. Download counts are dominated by CI runners, mirror traffic, and bot scans. GitHub stars measure a narrow demographic and are purchasable (~6M suspected fake stars 2019-2024). CVE count measures audit attention received, not vulnerabilities present.
+- **GitHub as visible universe**: Projects on mailing lists, cgit, Gerrit, or Savannah (PostgreSQL, SQLite, GnuPG, glibc, FFmpeg) are disproportionately the old low-level infrastructure that models exist to find. GitHub mirrors return numbers for pull requests that go nowhere.
+- **Identity problem**: The same code appears under different names across ecosystems (libcurl = curl on Homebrew, libcurl4 on Debian, pycurl on PyPI, curl-sys on crates.io, curl/curl on GitHub). Models either count them as separate entries or pick one and ignore the rest.
+- **Weekend at Bernie's**: Claude Code and similar agents now support scheduled tasks, so repositories can accumulate plausible-looking maintenance commits authored under human names with no human in the loop. Commit frequency stops distinguishing maintained from automated.
+- **Funding you can't see**: The most common funding arrangement for critical infrastructure is invisible to crawlers — maintainers employed by Red Hat, Google, Intel, Canonical, with the project as some or all of their job.
+
+> "The compound case: Individually, each of these mismeasures some projects in some direction, and for the bulk of modern, registry-published, GitHub-hosted packages the errors roughly cancel out. The trouble is that the errors correlate, because a project old enough to predate GitHub is disproportionately likely to be written in C, distributed by vendoring rather than a manifest dependency, developed over a mailing list, funded through someone's salary, and low-churn because the format it implements stopped changing years ago."
+
+This work extends Nesbitt's broader thesis about **observational rigor** — identifying patterns in the hidden infrastructure of open source that challenge conventional wisdom about project health and sustainability.
+
+
+### The Mismeasure of Open Source (May 2026)
+
+Nesbitt published a comprehensive critique of how open source projects are scored for criticality, risk, and funding. The article identifies several systemic problems with current OSS measurement approaches:
+
+- **Missing read as zero**: When signals are absent (no download counts for Go modules, no GitHub issues for projects using Bugzilla/mailing lists), scoring models write zeros instead of "unknown." This silently excludes entire ecosystems from consideration.
+- **Streetlight effect**: Metrics are used because APIs return them, not because they're meaningful. Download counts are dominated by CI runners, mirror traffic, and bot scans. GitHub stars measure a narrow demographic and are purchasable (~6M suspected fake stars 2019-2024). CVE count measures audit attention received, not vulnerabilities present.
+- **GitHub as visible universe**: Projects on mailing lists, cgit, Gerrit, or Savannah (PostgreSQL, SQLite, GnuPG, glibc, FFmpeg) are disproportionately the old low-level infrastructure that models exist to find.
+- **Identity problem**: The same code appears under different names across ecosystems (libcurl = curl on Homebrew, libcurl4 on Debian, pycurl on PyPI, curl-sys on crates.io). Models either count them as separate entries or pick one and ignore the rest.
+- **Weekend at Bernie's**: Claude Code and similar agents now support scheduled tasks, so repositories can accumulate plausible-looking maintenance commits authored under human names with no human in the loop.
+- **Funding you can't see**: The most common funding arrangement for critical infrastructure is invisible to crawlers — maintainers employed by Red Hat, Google, Intel, Canonical, with the project as some or all of their job.
+- **Compound case**: Errors correlate because a project old enough to predate GitHub is disproportionately likely to be written in C, distributed by vendoring rather than a manifest dependency, developed over a mailing list, funded through someone's salary, and low-churn because the format it implements stopped changing years ago.
+
+This work extends Nesbitt's broader thesis about **observational rigor** — identifying patterns in the hidden infrastructure of open source that challenge conventional wisdom about project health and sustainability.
+
+
+### The Mismeasure of Open Source (May 2026)
+
+Nesbitt published a comprehensive critique of how open source projects are scored for criticality, risk, and funding. The article identifies several systemic problems with current OSS measurement approaches:
+
+- **Missing read as zero**: When signals are absent (no download counts for Go modules, no GitHub issues for projects using Bugzilla/mailing lists), scoring models write zeros instead of "unknown." This silently excludes entire ecosystems from consideration.
+- **Streetlight effect**: Metrics are used because APIs return them, not because they're meaningful. Download counts are dominated by CI runners, mirror traffic, and bot scans. GitHub stars measure a narrow demographic and are purchasable (~6M suspected fake stars 2019-2024). CVE count measures audit attention received, not vulnerabilities present.
+- **GitHub as visible universe**: Projects on mailing lists, cgit, Gerrit, or Savannah (PostgreSQL, SQLite, GnuPG, glibc, FFmpeg) are disproportionately the old low-level infrastructure that models exist to find.
+- **Identity problem**: The same code appears under different names across ecosystems (libcurl = curl on Homebrew, libcurl4 on Debian, pycurl on PyPI, curl-sys on crates.io). Models either count them as separate entries or pick one and ignore the rest.
+- **Weekend at Bernie's**: Claude Code and similar agents now support scheduled tasks, so repositories can accumulate plausible-looking maintenance commits authored under human names with no human in the loop.
+- **Funding you can't see**: The most common funding arrangement for critical infrastructure is invisible to crawlers — maintainers employed by Red Hat, Google, Intel, Canonical, with the project as some or all of their job.
+- **Compound case**: Errors correlate because a project old enough to predate GitHub is disproportionately likely to be written in C, distributed by vendoring rather than a manifest dependency, developed over a mailing list, funded through someone's salary, and low-churn because the format it implements stopped changing years ago.
+
+This work extends Nesbitt's broader thesis about **observational rigor** — identifying patterns in the hidden infrastructure of open source that challenge conventional wisdom about project health and sustainability.
+
 
 ## Sources
 

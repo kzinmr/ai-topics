@@ -5,6 +5,22 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-10] ingest | Active crawl — 5 topics from trending AI/ML (May 2026)
+- **Raw articles**: 5 new
+  - `raw/articles/2026-05-07_arxiv-federation-of-experts.md` — FoE: distributed MoE inference (arXiv:2605.06206)
+  - `raw/articles/2026-05-04_importai-automating-ai-research.md` — Jack Clark's Import AI 455
+  - `raw/articles/2026-05-06_google-flow-music-believe.md` — Google Flow Music + Believe partnership
+  - `raw/articles/2026-05-07_google-alphaevolve-real-world.md` — AlphaEvolve real-world impact
+  - `raw/articles/2026-05-06_coder-self-hosted-agents-beta.md` — Coder Agents beta press release
+- **New pages**:
+  - `concepts/federation-of-experts.md` — FoE architecture for communication-efficient distributed MoE inference
+  - `entities/coder.md` — Coder Technologies, self-hosted model-agnostic coding agent platform
+  - `concepts/google-flow-music.md` — Google Labs AI music creation (Lyria 3 Pro + Believe)
+- **Updated pages**:
+  - `concepts/alphaevolve.md` — Added May 2026 real-world deployment blog source, bumped updated date
+  - `entities/jack-clark.md` — Bumped updated date (Import AI 455 content already present)
+- **Topics**: Federation of Experts (distributed MoE inference), Coder Agents (self-hosted enterprise), Google Flow Music (AI music), AlphaEvolve update, Import AI 455 (automated AI R&D forecast)
+
 ## [2026-05-10] ingest | Superintel newsletter — Alex Karp/Palantir Q1 2026 article
 - **Raw article**: raw/newsletters/2026-05-09-the-man-who-studied-power-and-then-built-it-alex-karp-palantir-and-the-technolog.md
 - **Source**: Superintel newsletter (Kim "Chubby" Isenberg), beehiiv platform

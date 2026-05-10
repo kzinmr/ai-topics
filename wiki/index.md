@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-10 | Total pages: 1839 | Full entries: 1839 | Stubs: 0 |
+> Last updated: 2026-05-10 | Total pages: 1842 | Full entries: 1842 | Stubs: 0 |
 
-## Entities (543 pages)
+## Entities (544 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/agreement-bug]] — Agreement is a Bug
@@ -109,6 +109,7 @@
 - [[entities/claris-filemaker-agentic-coding]] — Claris (Apple subsidiary) low-code platform. May 2026: announced as first-class target for agentic coding tools (Claude Code, Cursor, Codex). Ryan McCann (CEO). Opening to external AI agents rather than building proprietary AI.
 - [[entities/codex]] — OpenAI製のオープンソースAIコーディングエージェント。Apache-2.0、Rust製、79.3K GitHub Stars。GPT-5.5/5.4ネイティブ＋カスタムプロバイダ＋ローカルモデル対応。CLI/Desktop/IDE/Webのマルチサーフェス。ChatGPT Plus/Proに含まれ、サブスクリプション壁なし。
 - [[entities/cloudflare]] — Global cloud platform repositioning as "agentic cloud" infrastructure. Agents SDK, Project Think, autonomous account provisioning via Stripe Projects, Registrar API.
+- [[entities/coder]] — Coder Technologies — self-hosted, model-agnostic AI coding agent platform for enterprise. Coder Agents beta released May 2026. Supports Anthropic, OpenAI, Google, AWS Bedrock, self-hosted models. Air-gapped ready.
 - [[entities/coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
 - [[entities/construction-physics-com]] — **URL:** https://constructionphysics.substack.com
 - [[entities/copilot-cli]] — GitHub製ターミナルネイティブAIコーディングエージェント。6種類のビルトインサブエージェント（explore/code-review/research等）、`/fleet`並列実行、MCP拡張、BYOK/ローカルモデル対応（2026年4月+）。Copilot Free/Pro/Pro+/Business/Enterpriseに含まれる。
@@ -551,7 +552,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1275 pages)
+## Concepts (1277 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -644,6 +645,7 @@
 - [[concepts/deepseek-v4-serving]] — DeepSeek-V4 production serving on B200 GPUs: prefix caching, KV cache policy, KV cache eviction, multi-turn latency, memory bandwidth, token-per-second optimization.
 - [[concepts/defenseclaw]] — Cisco's open-source agentic governance layer for OpenClaw. Pre-run scanning (5 scanners), runtime threat detection, non-advisory enforcement. Built on NVIDIA OpenShell. Announced RSAC 2026.
 - [[concepts/good-regulator-theorem]] — Good Regulator Theorem (Gooder Regulator): Conant & Ashby (1970) の「あらゆる良いレギュレータはシステムのモデルでなければならない」を John Wentworth (2021) が情報ボトルネック制約を加えて修正した選択定理。AIエージェントの世界モデル・評価設計・ハーネス効果の理論的基盤。tailcalled の [[concepts/causal-backbone-conjecture]] が批判的応答。
+- [[concepts/google-flow-music]] — Google Flow Music — Google Labs AI music creation tool powered by Lyria 3 Pro. May 2026 partnership with Believe/TuneCore for artist distribution. AI-assisted lyrics, melodies, instruments. Artist retains ownership.
 - [[concepts/google-project-mariner-shutdown]] — Google's shutdown of Project Mariner browser agent in May 2026 due to poor performance and high costs.
 - [[concepts/gpqa]] — GPQA — 大学院レベルのGoogle-proof Q&A。生物学・物理学・化学の448問（Diamond set 198問）。PhD専門家65-74%、非専門家34%。フロンティアモデルは~94%で飽和しつつある。
 - [[concepts/grpo]] — Group Relative Policy Optimization: DeepSeek-R1で導入されたRLアルゴリズム。PPOのクリティックモデルを不要にし、大規模モデルのRL訓練の計算ボトルネックを解消。グループ内相対比較でアドバンテージ推定。
@@ -748,6 +750,7 @@
 - [[concepts/data-analysis-agents]] — AIデータ分析エージェントの包括的概念。データ探索→スキーマ理解→クエリ生成→実行→検証→可視化→報告のパイプライン。OpenAI社内データエージェント（GPT-5.2）とCognition DANA/Devinの2大アプローチを比較。DWHセマンティックレイヤー・ゴールデンクエリとの関係性も含む。
 - [[concepts/db9-filesystem-sql]]
 - [[concepts/factorio-learning-environment]] — Factorio Learning Environment (FLE) — Factorioゲームを模したエージェントeval。コード+REPLで操作、ビジョン不要。24のlab-playタスク。NeurIPS 2025。
+- [[concepts/federation-of-experts]] — Federation of Experts (FoE) — communication-efficient distributed inference for MoE LLMs. Clusters experts by KV head, eliminates cross-node all-to-all. 5.2x latency reduction, 3.62x TTFT improvement.
 - [[concepts/frontier-swe-benchmark]] — FrontierSWE: 超高難度コーディングエージェントベンチマーク（Proximal Labs）。20時間制限、Implementation/Performance/Researchの3カテゴリ17タスク。GPT-5.5+Codexが平均ランク2.35（Dominance 83%）で首位。保守（GPT-5.4）vs攻撃的（Opus 4.6）の行動比較、overconfidence/cheating行動を記録。
 - [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.
 - [[concepts/agent-serverless]] — Serverless deployment pattern for AI agents with built-in SaaS integration, permissions, security, and log persistence tiers. Enterprise monetization via persistent logs and audit trails.

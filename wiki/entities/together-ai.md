@@ -2,7 +2,7 @@
 title: "Together AI"
 type: entity
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-10
 tags:
   - company
   - infrastructure
@@ -38,6 +38,22 @@ Together AI is a research-driven AI cloud platform offering a full stack for inf
 ## Products & Technology
 
 Together AI offers serverless and dedicated model inference APIs, self-service GPU clusters (H100, B200, GB200), a fine-tuning platform for open-source models, and batch inference at 50% cost reduction. Its research arm produces breakthroughs like FlashAttention-4 (1.3x faster than cuDNN on Blackwell) and ATLAS (4x faster LLM inference). Supports all major open-source models.
+
+
+### Deploy and Inference Any Model (DCI) — May 2026
+
+Together AI launched **DCI**, a feature that lets developers deploy and inference **any model from HuggingFace** with one command. Key innovations:
+
+- **No pre-integration needed** — Unlike traditional cloud providers, DCI doesn't require models to be pre-approved or pre-integrated
+- **Automatic containerization** — Handles Docker image building, dependency resolution, and GPU provisioning automatically
+- **HuggingFace-native workflow** — Developers specify a HuggingFace model repo (e.g., `meta-llama/Llama-4-Maverick`) and DCI handles the rest
+- **Cost-effective** — Eliminates the need for dedicated infrastructure teams or complex deployment pipelines
+- **Fast deployment** — Models are typically available within minutes, not days
+
+This represents a significant **democratization of model deployment** — lowering the barrier from specialized MLOps teams to individual developers. It positions Together AI as the most accessible platform for custom model serving.
+
+**Competitive context**: This is similar to what providers like [Replicate](https://replicate.com/) and [Baseten](https://baseten.co/) offer, but Together AI's integration with their existing GPU cluster infrastructure gives it a performance edge.
+
 
 ## Related
 
