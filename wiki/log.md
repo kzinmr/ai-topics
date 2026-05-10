@@ -44,6 +44,17 @@
 - Composite tags detected: agentic-engineering-patterns, context-window-management, fine-grained-authorization
 - 349 unique tags not in SCHEMA.md taxonomy need reconciliation
 
+## [2026-05-10] enrich | Daily skeleton enrichment — 3 stubs enriched, 1 new entity created
+- **Status**: No `status: skeleton` entities found. Processed 3 `status: stub` entities as fallback.
+- **Enriched:**
+  - [[entities/matt-van-horn]] — Matt Van Horn (@mvanhorn): American entrepreneur, co-founder of Zimride (→Lyft) and June (AI oven, acquired by Weber). Enriched with Wikipedia bio, career timeline, key contributions section (Hermes Agent analysis, Reflexive AI docs).
+  - [[entities/gkisokay]] — gkisokay (Graeme): AI agent practitioner, founder of Amplifi. Enriched with "Building AGI for my Hermes Agent" series detail, structured research pipeline thesis, agent watchdog architecture.
+  - [[entities/bernstein]] — Bernstein: Open-source deterministic multi-agent orchestrator. Enriched with full features (44 adapters, HMAC audit chain, 4-stage pipeline, comparison table, architecture diagram, community metrics, creator info).
+- **Created:**
+  - [[entities/alex-chernysh]] — Alex Chernysh: Applied AI engineer, creator and solo maintainer of Bernstein. Includes career background, key projects (Bernstein, HireEx, RightLayout), engineering philosophy.
+- **Index updated**: Entities 542→543, Total 1831→1832
+- **Raw articles**: None (pure-web enrichment from website scraping + X/Twitter research + GitHub/PyPI sources)
+
 ## [2026-05-09] ingest | X accounts scan — 11 accounts, 4 new posts, 3 pages created
 - **Scanned**: 11/79 accounts (68 skipped — budget)
 - **New posts**: 4 (from @gm8xx8, @rlancemartin, @milksandmatcha)

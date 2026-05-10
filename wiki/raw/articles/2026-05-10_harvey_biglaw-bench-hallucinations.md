@@ -1,0 +1,265 @@
+---
+title: "BigLaw Bench: Hallucinations"
+source: "Harvey Blog"
+url: "https://www.harvey.ai/blog/biglaw-bench-hallucinations"
+scraped: "2026-05-10T01:27:21.631526+00:00"
+lastmod: "2024-10-07T17:00:00.000Z"
+type: "sitemap"
+---
+
+# BigLaw Bench: Hallucinations
+
+**Source**: [https://www.harvey.ai/blog/biglaw-bench-hallucinations](https://www.harvey.ai/blog/biglaw-bench-hallucinations)
+
+Harvey Agents execute legal work end-to-end
+Learn more
+Harvey Agents execute legal work end-to-end
+Learn more
+Harvey Agents execute legal work end-to-end
+Learn more
+→
+:Harvey:
+Platform
+Solutions
+Customers
+Security
+Resources
+About
+Overview
+→
+A unified view of how Harvey's products work together to support your entire practice.
+Assistant
+→
+Ask questions, analyze documents, and draft faster with domain-specific AI.
+Vault
+→
+Securely store, organize, and bulk-analyze legal documents.
+Knowledge
+→
+Research complex legal, regulatory, and tax questions across domains.
+Workflow Agents
+→
+Run pre-built Workflow agents or build your own, tailored to your firm's needs.
+Harvey Mobile
+→
+Get up to speed, capture new information, and keep work moving from anywhere.
+Ecosystem
+→
+Access Harvey where you already work and ground every answer in sources you trust.
+Harvey Agents
+→
+Harvey Agents execute legal work end-to-end, so you can focus on what only lawyers can do.
+Innovation
+→
+Scale expertise and impact to drive firmwide transformation.
+In-House
+→
+Streamline work and shift focus to strategy and speed.
+Transactional
+→
+Accelerate due diligence, contract analysis, and review with precision and control.
+Litigation
+→
+Reduce manual effort, prioritize strategy, and drive stronger outcomes in litigation.
+Mid-Sized Firms
+→
+Drive outsize impact with tools built for lean teams.
+Collaboration
+→
+Work with legal teams across organizations in secure, shared spaces.
+A New Era of Collaboration for Legal and Professional Services
+→
+Law firms and professional service networks have been using Harvey to build new service models and add value collaboratively.
+Blog
+→
+Product updates, insights, and behind-the-scenes from the Harvey team.
+Resources Hub
+→
+The latest videos, webinars, guides, and reports from Harvey.
+Press Kit
+→
+Resources for maintaining a uniform and professional presentation of the Harvey brand.
+ROI Calculator Law Firm
+→
+See Harvey's Impact on Your Firm.
+ROI Calculator In House
+→
+See Harvey's Impact on Your Business.
+Harvey Academy
+→
+Introducing Harvey Academy: on-demand training, expert workflows, and step-by-step guidance to help legal teams get the most out of Harvey.
+Company
+→
+About Harvey, our leadership, and career opportunities.
+Newsroom
+→
+Press releases and partnership announcements.
+2025 Year in Review
+→
+In 2025, we celebrated major customer wins, introduced product breakthroughs, and expanded our global presence. Most importantly, we continued to deepen our commitment to building the best AI solutions for our customers.
+Login
+Request a Demo
+Platform
+Overview
+A unified view of how Harvey's products work together to support your entire practice.
+Assistant
+Ask questions, analyze documents, and draft faster with domain-specific AI.
+Vault
+Securely store, organize, and bulk-analyze legal documents.
+Knowledge
+Research complex legal, regulatory, and tax questions across domains.
+Workflow Agents
+Run pre-built Workflow agents or build your own, tailored to your firm's needs.
+Harvey Mobile
+Get up to speed, capture new information, and keep work moving from anywhere.
+Ecosystem
+Access Harvey where you already work and ground every answer in sources you trust.
+Harvey Agents
+Harvey Agents execute legal work end-to-end, so you can focus on what only lawyers can do.
+Solutions
+Innovation
+Scale expertise and impact to drive firmwide transformation.
+In-House
+Streamline work and shift focus to strategy and speed.
+Transactional
+Accelerate due diligence, contract analysis, and review with precision and control.
+Litigation
+Reduce manual effort, prioritize strategy, and drive stronger outcomes in litigation.
+Mid-Sized Firms
+Drive outsize impact with tools built for lean teams.
+Collaboration
+Work with legal teams across organizations in secure, shared spaces.
+A New Era of Collaboration for Legal and Professional Services
+Law firms and professional service networks have been using Harvey to build new service models and add value collaboratively.
+Customers
+Security
+Resources
+Blog
+Product updates, insights, and behind-the-scenes from the Harvey team.
+Resources Hub
+The latest videos, webinars, guides, and reports from Harvey.
+Press Kit
+Resources for maintaining a uniform and professional presentation of the Harvey brand.
+ROI Calculator Law Firm
+See Harvey's Impact on Your Firm.
+ROI Calculator In House
+See Harvey's Impact on Your Business.
+Harvey Academy
+Introducing Harvey Academy: on-demand training, expert workflows, and step-by-step guidance to help legal teams get the most out of Harvey.
+About
+Company
+About Harvey, our leadership, and career opportunities.
+Newsroom
+Press releases and partnership announcements.
+2025 Year in Review
+In 2025, we celebrated major customer wins, introduced product breakthroughs, and expanded our global presence. Most importantly, we continued to deepen our commitment to building the best AI solutions for our customers.
+Request a Demo
+Login
+US
+EU
+AU
+Insights
+BigLaw Bench: Hallucinations
+On legal tasks, Harvey's models hallucinate at a lower rate than the foundation models despite providing longer and more detailed answers.
+by
+Harvey Team
+•
+Oct 7, 2024
+Hallucinations are one of the most common concerns with Large Language Models (LLMs). LLMs’ ability to invent spurious but credible sounding content creates trust issues, even if hallucinated content is rare as compared to valid analysis and insights. In this post, we discuss how we define hallucinations, how we detect them, and how our systems for reducing hallucinations perform on BigLaw Bench. On BigLaw Bench tasks, Harvey’s Assistant model hallucinates around 1 in 500 claims (.2%). Foundation models hallucinate more frequently, with rates between 1 in 150 (.7%, Claude) and 1 in 110 (1.9%, Gemini). Notably, Harvey’s models hallucinate at a lower rate than the foundation models despite providing longer and more detailed answers.
+Defining Hallucinations
+Although hallucinations are commonly discussed, there does not appear to be a universally accepted definition for the term. At Harvey, we define hallucinations as: a factual claim made by an LLM that can be demonstrably disproven by reference to a source of truth. We do not count as hallucinations related failure modes that may also lead models to produce irrelevant or unhelpful information such as errors in understanding or reasoning. These failure modes are measured in other ways in BigLaw Bench and internal evaluations.
+The most common way to reduce factual hallucinations is through retrieval-augmented generation (RAG), which grounds model answers in document(s) or other sources of data that provide factually accurate and up-to-date information. However, even when models are provided with source of truth documents or datasets, hallucinations are still possible. Tuning model systems to mitigate these document-based hallucinations is a critical research effort at Harvey.
+Measuring Hallucinations
+The first step to reducing hallucinations is identifying when a model answer contains hallucinated content. To do so, we deploy a system of models that perform two main tasks. First, models break down an answer into all of its relevant factual claims. Second, models consider whether each factual claim made in the answer is true based on the information in the source of truth documents. This system is optimized by our research teams to confirm that model judgments are closely aligned with human hallucination review.
+We deploy this system on the answers to a subset of BigLaw Bench tasks that require reasoning over multiple, long documents. These types of tasks are cases we have found most vulnerable to hallucinations even when models are provided grounding information. We then performed human review of all model judgments to confirm system alignment.
+After human review, we compute the hallucination rate for each model. Hallucination rates are computed as the number of sentences containing a hallucinated claim divided by the total number of sentences in a response. The below tables show total response sentences and hallucination rates for Harvey and leading foundation models on the evaluated tasks.
+Models
+Total Response Sentences
+Hallucination Rate
+Harvey Assistant
+1688
+0.2%
+Claude
+1140
+0.7%
+ChatGPT
+1176
+1.3%
+Gemini
+1067
+1.9%
+Correcting Hallucinations
+The next step beyond detecting and minimizing hallucinations are agents that can proactively correct hallucinations in their own workflows. Currently, catching anything beyond the most obvious or significant hallucinations is too slow for copilot-style interactions, with models spending many minutes checking and correcting work that took seconds to generate. But as model work becomes more substantial and comprehensive, the value of these self-review processes increase exponentially. Agents performing more complicated tasks will be able to check their work to do further research, eliminate hallucinations, and raise true ambiguities to experts to confirm understanding. These well-aligned agents will create more human interaction at the limits of hard problems, stating what they don’t know and asking for clarification or additional context rather than attempting to fill in understanding gaps.
+Next Steps
+At Harvey, we are committed to building agents that deeply understand the information they know and clearly understand the information they don’t. These well-grounded agents are essential to supporting experts on complex workflows where auditable factuality is critically necessary. In the near future, we plan to deploy systems to detect and correct hallucinations in our more complex workflows. We also plan to make tracing model reasoning on these workflows more transparent to users, providing a combination of citations and model reasoning that establish the validity of hallucination-checked analyses. These systems are the first steps towards additional ways to build trust that complex LLM reasoning is hallucination-free and reliable for the most sophisticated legal work.
+Next Up
+Harvey Power Users: The Skill You're Sharpening
+How we Built Image Understanding for Legal Documents
+Open-Sourcing Harvey’s Long Horizon Legal Agent Benchmark
+Unlock Professional Class AI for Your Firm
+Request a Demo
+Copyright © 2026 Harvey AI Corporation. All rights reserved.
+Platform
+Assistant
+→
+Vault
+→
+Knowledge
+→
+Workflow Agents
+→
+Ecosystem
+→
+Partnerships
+→
+Solutions
+Innovation
+→
+In-House
+→
+Transactional
+→
+Litigation
+→
+Mid-Sized Firms
+→
+Collaboration
+→
+About
+Customers
+→
+Security
+→
+Company
+→
+Newsroom
+→
+Careers
+→
+Law Schools
+→
+Resources
+Blog
+→
+Resources Hub
+→
+Harvey Academy
+→
+Help Center
+→
+Legal
+→
+Privacy Policy
+→
+Press Kit
+→
+Your Privacy Choices
+→
+Follow
+X
+→
+LinkedIn
+→
+YouTube
+→
+Copyright © 2026 Harvey AI Corporation. All rights reserved.

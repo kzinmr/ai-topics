@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-09 | Total pages: 1831 | Full entries: 1831 | Stubs: 0 |
+> Last updated: 2026-05-10 | Total pages: 1832 | Full entries: 1832 | Stubs: 0 |
 
-## Entities (542 pages)
+## Entities (543 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/agreement-bug]] — Agreement is a Bug
@@ -51,6 +51,7 @@
 - [[entities/akshay-pachaar]] — Senior AI Engineer at Lightning AI, Co-Founder of Daily Dose of Data Science, author of "The Anatomy of an Agent Harness" synthesis
 - [[entities/alec-radford]] — **Role** | AI Researcher (former OpenAI); Advisor, Thinking Machines Lab |
 - [[entities/alex-banks]] — **Name** | Alex Banks |
+- [[entities/alex-chernysh]] — **Name** | Alex Chernysh | Applied AI engineer, creator of Bernstein — open-source deterministic orchestrator for 40+ CLI coding agents.
 - [[entities/alex-zhang]] — **Name:** Alex L. Zhang
 - [[entities/ali-farhadi]] — Computer vision pioneer, co-creator of **YOLO** (You Only Look Once) object detection, founder of **Xnor.ai** (acquired by Apple), former CEO of Allen Institute for AI (Ai2). In March 2026 stepped ...
 - [[entities/amazon-rivr]] — March 2026 acquisition of Zurich-based autonomous robotics startup Rivr by Amazon.
