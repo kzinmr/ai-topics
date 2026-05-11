@@ -40,7 +40,8 @@ His writing philosophy is evident in his book's distribution model: **print at c
 | 2025 | Publishes multiple popular posts on AI sycophancy, coding agents, and tech industry analysis |
 | 2025 | Book published: "Software Engineering After the Vibe Shift" |
 | 2025 | Featured on 99% Invisible (em-dash analysis), ABC News (AI sycophancy), Grammar Girl Podcast |
-| 2026 | Active through at least April 2026; continuing to publish on AI, career development, and system design |
+| 2026 | Active through at least May 2026; continuing to publish on AI, career development, and left-wing pro-AI arguments |
+| 2026-05-10 | Publishes "The left-wing case for AI" — outlines progressive arguments for AI adoption across disability rights, healthcare, class mobility, education, and utopian tech optimism |
 
 ## Core Ideas
 
@@ -112,6 +113,22 @@ Many traits other than raw intelligence determine model capabilities: **working 
 
 **Key Insight**: AI development is dominated by "lightning strikes" — silly bugs that make training 100× worse, clever ideas that make models 100× more useful, and spiky capabilities. A general theory like "RL takes more FLOPs-per-reward as tasks get longer" sounds good but is overwhelmed by implementation reality.
 
+### The Left-Wing Case for AI (May 2026)
+
+Goedecke outlines explicitly left-wing arguments for AI adoption across five dimensions:
+
+**1. Disability Rights**: LLMs as powerful accessibility tools — automatic video captioning, brain fog and chronic pain mitigation, neurodivergent "code switching" for professional communication, voice controls for mobility/vision-impaired users. Highlights the irony that left-wing AI critics often dogpile disabled people who describe AI as genuinely helpful.
+
+**2. Healthcare Access**: LLMs empower patients with chronic illnesses to research conditions and advocate for themselves against dismissive medical establishments. Notes that the "just trust your doctor" framing is itself a conservative position; the left-wing position is sympathetic to patients who can't or don't trust institutional medical authority.
+
+**3. Class Mobility and Code-Switching**: LLMs democratize access to "dangerous professional" communication — the formal, bureaucratic register traditionally gatekept by elite education. Working-class users can now write compelling regulatory complaints, legal petitions, and professional correspondence without needing to have absorbed the cultural norms of the professional class.
+
+**4. Educational Equity**: LLMs as universal private tutors. While acknowledging the cheating risk for unmotivated students, argues that motivated students without access to tutoring can now learn at high-school level or above through LLM dialogue. Notes that teachers "hallucinate all the time" — citing a 2016 study finding 42% of math lessons contained content errors.
+
+**5. Techno-Utopianism**: The 2000s-era vision of "fully automated luxury gay space communism" assumed technological progress would create post-scarcity. If left-wing premises are correct, and you're technologically optimistic, then a super-smart AI should inherently be left-leaning. Points out that all current frontier models do profess left-wing views, and attempts to train right-wing alternatives (like Musk's Grok) have so far failed.
+
+**Key Quote from Reader Matt**: "If similar reasoning had been applied to outright reject computers as fascist and unethical in the 80s and onward, my own life would have been quite different, and arguably worse. I have enough usable vision to handwrite, uncomfortably, with my head against the page... Computers saved me from having to do even more... And now that AI helps at least one group of disabled people (of which I'm more or less a part), do I want to deny that benefit?"
+
 ## Key Quotes
 
 > "If you are good at code review, you will be good at using AI agents."
@@ -178,6 +195,8 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 
 - **Many anti-AI arguments are conservative arguments** (2026-04-18): Argues that the substance of most anti-AI rhetoric aligns with conservative/right-wing worldviews despite being framed in progressive language. Political coding inversion analysis with implications for AI policy coalitions.
 
+- **The left-wing case for AI** (2026-05-10): Outlines explicitly left-wing pro-AI arguments across five dimensions: (1) **Disability** — LLMs as powerful accessibility aids for neurodivergent, chronically ill, and mobility/vision-impaired users; (2) **Chronic illness and medical care** — LLMs enable patients to research conditions and advocate for themselves against dismissive medical establishments; (3) **Class and code-switching** — LLMs democratize access to "dangerous professional" communication styles that were previously gatekept by elite educational pipelines; (4) **Education** — LLMs provide private-tutor-level access to every motivated student, reducing educational inequality; (5) **Utopia** — if left-wing views are correct and you're technologically optimistic, super-smart AI inherently trends left-wing (all current frontier models profess left-leaning views, and attempts to train right-wing alternatives have failed). Includes a powerful reader testimonial from a disabled person describing how computers transformed their life in the 1980s-90s and how AI is now extending similar benefits to those with communication barriers.
+
 
 ## Sources
 
@@ -229,3 +248,4 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 |- seangoedecke.com--ai-makes-weak-engineers-less-harmful--e25ee659
 |- seangoedecke.com--notes-on-incidents--f92d1b32
 |- seangoedecke.com--why-hasnt-longer-horizon-training-slowed-ai-progress--6cc7ecad
+|- seangoedecke.com--the-left-wing-case-for-ai--363b6e35

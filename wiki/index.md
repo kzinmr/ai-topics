@@ -16,6 +16,7 @@
 - [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
 - [[entities/evis-drenova]] — Evis Drenova
 - [[entities/fintool]] — Fintool
+- [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs. Author of "Misplaced panic over AI progress" (May 2026) critiquing METR's 50%-time-horizon methodology.
 - [[entities/george-hotz]] — George Hotz (geohot)
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
 - [[entities/grant-slatton]] — Grant Slatton

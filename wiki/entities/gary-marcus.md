@@ -1,85 +1,79 @@
 ---
-title: Gary Marcus
+title: "Gary Marcus"
 type: entity
-created: 2026-05-04
-updated: 2026-05-06
-tags:
-  - person
-  - ai-skeptic
-  - healthcare
-  - cognitive-science
-  - ai-agents
-  - ai-governance
+created: 2026-05-11
+updated: 2026-05-11
+tags: [ai-research, benchmark, evaluation, reliability, controversy, philosophy]
 sources:
-  - https://garymarcus.substack.com/
-  - https://garymarcus.substack.com/p/have-llms-improved-patient-outcomes
-  - https://garymarcus.substack.com/p/breaking-autonomous-agents-are-a
-  - https://garymarcus.substack.com/p/what-matters-or-should-matter-at
+  - raw/articles/garymarcus.substack.com--p-misplaced-panic-over-ai-progress--7aa50278.md
 ---
 
 # Gary Marcus
 
-| | |
-|---|---|
-| **Blog** | [garymarcus.substack.com](https://garymarcus.substack.com/) |
-| **Role** | Cognitive scientist, AI researcher, author, AI safety critic |
-| **Bio** | Gary Marcus is a cognitive scientist, author, and prominent critic of the prevailing approaches to artificial intelligence. He has written extensively about the limitations of deep learning and LLMs, advocating for hybrid systems that combine neural networks with symbolic reasoning. He is a frequent commentator on AI safety, reliability, and the gap between AI hype and real-world capability. |
+**Blog:** [Marcus on AI (Substack)](https://garymarcus.substack.com/)
+**X/Twitter:** [@garymarcus](https://x.com/garymarcus)
+**Identity:** Cognitive scientist, AI researcher, author, critic
+**Affiliations:** NYU Professor Emeritus, founder of Geometric Intelligence (acquired by Uber)
+**Themes:** AI benchmark criticism, deep learning limitations, reliability vs capability, neurosymbolic AI
+
+## Overview
+
+Gary Marcus is a cognitive scientist and prominent critic of AI progress narratives, particularly the assumption that current deep learning approaches will lead to artificial general intelligence (AGI). He advocates for hybrid neurosymbolic AI approaches and emphasizes the importance of reliability over raw capability in AI systems.
 
 ## Core Positions
 
-### LLMs Have Not Improved Patient Outcomes (May 2026)
+### Critique of AI Progress Narratives
 
-In "[Have LLMs improved patient outcomes?](https://garymarcus.substack.com/p/have-llms-improved-patient-outcomes)" (May 2026), Marcus reviewed the evidence for LLMs in healthcare and concluded — aligned with cardiologist **Eric Topol**'s assessment — that there is "very little evidence for LLMs benefiting patients or doctors for health outcomes" beyond administrative assistance.
+Marcus has been consistently skeptical of claims about AI progress, particularly:
 
-Key points:
-- **Nature Medicine editorial** (early 2026) reached the same conclusion: domain-general chatbots are not up to the job of clinical decision-making
-- Marcus's own prior piece, "[Please don't trust your chatbot for medical advice](https://garymarcus.substack.com/)", focused on the dangers of unsupervised patient use of LLMs
-- The gap: LLMs may help with paperwork and administrative burden, but **no demonstrated improvement in patient health outcomes** as of May 2026
-- "AI will surely someday be a major boon for medicine, but current tools such as domain-general chatbots may not be up to the job"
+- **"Trillion-pound baby fallacy"**: The assumption that exponential trends will continue indefinitely. Marcus uses this metaphor to argue that just because AI capabilities have been doubling, it doesn't mean they will continue to do so forever.
 
-This is consistent with Marcus's broader skepticism about deploying LLMs in high-stakes domains without rigorous evidence of safety and efficacy.
+- **METR Time Horizon Graph Critique (May 2026)**: When METR reported that Claude Mythos Preview achieved a 50%-time-horizon of 16+ hours on software development tasks, Marcus argued this was "misplaced panic" because:
+  - 50% success rate is insufficient for reliable performance
+  - The graph only measures software development tasks, not general intelligence
+  - Real engineering involves months-long projects with oversight
+  - The 80% version of the graph shows much less impressive results
+  - Improvements likely come from symbolic tool integration (code interpreters, verification), not pure model scaling
 
-### Autonomous Agents are a Shitshow (May 2026)
+- **Benchmark gaming**: Marcus argues that AI progress is often overstated because benchmarks can be gamed through tool integration rather than genuine capability improvements.
 
-In "[Breaking: Autonomous Agents are a Shitshow](https://garymarcus.substack.com/p/breaking-autonomous-agents-are-a)" (May 2026), Marcus delivered a sharp critique of the autonomous agent movement:
+### Reliability vs Capability
 
-- **Security concerns**: Autonomous agents operating without proper safeguards pose significant risks
-- **Reliability gap**: Despite hype, agents consistently fail on real-world tasks requiring common sense
-- **Evaluation crisis**: Lack of rigorous benchmarks for autonomous behavior makes claims hard to verify
-- **Premature deployment**: Companies are shipping agent products before solving fundamental safety and reliability problems
-- **Economic reality**: The "agents will replace workers" narrative ignores the complexity of real-world work
+A central theme in Marcus's work is that **reliability matters more than raw capability**. He argues that:
+- 50% success rates are fundamentally different from 90%+ reliability
+- Real-world applications require near-perfect performance
+- Current AI systems still struggle with basic reasoning tasks
 
-Key argument: The autonomous agent space is moving too fast without adequate guardrails, echoing Marcus's long-standing position on AI safety and the gap between benchmark performance and real-world capability.
+### Neurosymbolic AI Advocacy
 
-### Musk-OpenAI Trial Commentary (May 2026)
+Marcus has long advocated for combining neural networks with symbolic reasoning systems. He argues that pure deep learning lacks the compositional structure needed for robust reasoning.
 
-In "[What matters (or should matter), at the Musk-OpenAI trial](https://garymarcus.substack.com/p/what-matters-or-should-matter-at)" (May 2026), Marcus analyzed the legal battle between Elon Musk and OpenAI:
+## Key Works
 
-- **Governance implications**: The trial highlights fundamental questions about AI lab governance structures
-- **OpenAI's mission drift**: Evidence of departure from original non-profit, safety-first mission
-- **Legal precedent**: Potential implications for how AI companies are regulated and held accountable
-- **Transparency concerns**: What the trial reveals (and doesn't reveal) about AI development practices
+### Newsletter: Marcus on AI
 
-## Broader AI Criticism
+Marcus's Substack newsletter covers AI developments with a critical eye, focusing on:
+- Benchmark methodology and reliability
+- The gap between hype and actual capability
+- Policy and governance implications
 
-Marcus has been a consistent voice pointing out:
-- **Hallucination and reliability problems** in LLMs for factual domains
-- **The gap between benchmark performance and real-world utility**
-- **The need for hybrid architectures** combining neural and symbolic approaches
-- **Safety concerns** in deploying AI in healthcare, law, and other critical domains
+### Research and Publications
 
-## Related
+Marcus has published extensively on AI limitations and the need for hybrid approaches combining neural and symbolic methods.
 
-- [[entities/eric-topol]] — Cardiologist and AI-in-medicine researcher whose assessments align with Marcus
-- [[concepts/ai-safety]] — Broader safety landscape Marcus advocates for
-- [[concepts/ai-healthcare]] — Domain where Marcus argues evidence of benefit remains thin
+## Notable Quotes
 
-## Sources
+> "The key problem with GenAI has been reliability; a graph that demands only 50% success does not address reliable performance. At all."
 
-- [Have LLMs improved patient outcomes?](https://garymarcus.substack.com/p/have-llms-improved-patient-outcomes) (May 2026)
-- [Please don't trust your chatbot for medical advice](https://garymarcus.substack.com/) (prior)
-- [garymarcus.substack.com](https://garymarcus.substack.com/)
+> "Deep learning is hitting a wall" — Marcus's position on the limits of pure scaling approaches
+
+## Related Entities
+
+- [[entities/ernest-davis]] — NYU collaborator on AI evaluation criticism
+- [[entities/metr]] — Think tank whose benchmark methodology Marcus critiques
+- [[entities/claude-mythos]] — Anthropic model central to the 50% vs 80% success debate
 
 ## References
 
-- garymarcus.substack.com--p-have-llms-improved-patient-outcomes--6c5cec8e
+- [Misplaced panic over AI progress](https://garymarcus.substack.com/p/misplaced-panic-over-ai-progress) (May 2026)
+- Marcus on AI Substack newsletter
