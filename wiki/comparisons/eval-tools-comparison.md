@@ -2,8 +2,11 @@
 title: "AI Eval Tools Comparison"
 tags: [evaluation]
 created: 2026-04-12
-updated: 2026-04-24
+updated: 2026-05-11
 type: comparison
+moved_from:
+  - concepts/ai-eval-tools-comparison.md
+  - concepts/eval-tools-comparison.md
 ---
 
 # AI Eval Tools Comparison

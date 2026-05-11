@@ -1,3 +1,10 @@
+## [2026-05-11] cleanup | 6 stub/低品質ページを削除、2つの統合先に集約
+
+- **eval-tools-comparison 統合:** `concepts/ai-eval-tools-comparison.md` + `concepts/eval-tools-comparison.md` (両方スタブ) → `comparisons/eval-tools-comparison.md` に moved_from 追加、参照4件修正
+- **hermes-vs-openclaw 統合:** `concepts/openclaw-vs-hermes-architecture-comparison.md` + `concepts/hermes-agent-vs-openclaw-architecture-comparison.md` (両方スタブ) → `comparisons/hermes-vs-openclaw-architecture.md` に moved_from 追加
+- **削除:** `concepts/local-llm-models-comparison-open-weights-moe-hardware-vram.md` (スタブ、異常なタイトル)
+- **削除:** `concepts/dspy-comparisons.md` (低品質、参照5件→ `concepts/dspy.md` に振替)
+
 ## [2026-05-11] merge | concepts/agent-harness-comparison.md + comparisons/coding-agent-harnesses.md → comparisons/agent-harnesses.md
 
 - **統合:** `concepts/agent-harness-comparison.md` (404行, 本文) + `comparisons/coding-agent-harnesses.md` (22行, リダイレクト) → `comparisons/agent-harnesses.md`

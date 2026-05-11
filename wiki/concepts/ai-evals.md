@@ -217,7 +217,7 @@ A prompt fix (adding company policy info) was expected to improve Brand Alignmen
 - [[concepts/critique-shadowing]] — 7-step process for building aligned LLM judges
 -  — Systematic categorization of failure modes
 - [[concepts/harness-engineering]] — OpenAI's approach to AI-assisted development
-- [[concepts/eval-tools-comparison]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI
+- [[comparisons/eval-tools-comparison]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI
 - [[concepts/evals-skills]] — Evals skills for coding agents
 -  — PBT methodology applied to LLM evaluation (MacIver)
 ## Related People

@@ -71,7 +71,7 @@ A free course teaching practical eval methodology. See [[concepts/ai-evals#Brain
 ## See Also
 - [[concepts/ai-evals]] — AI evaluation general concept
 - [[concepts/evaluation-flywheel]] — Iterative eval improvement cycle
-- [[concepts/eval-tools-comparison]] — Alternative stub comparison page
-- [[concepts/ai-eval-tools-comparison]] — Alternative stub comparison page
+- [[comparisons/eval-tools-comparison]] — Alternative stub comparison page
+- [[comparisons/eval-tools-comparison]] — Alternative stub comparison page
 - [[concepts/arize]] — Arize AI entity page
 - [[entities/anthropic]] — Anthropic (Promptfoo)

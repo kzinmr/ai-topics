@@ -71,4 +71,4 @@ class Debate(dspy.Module):
 - [[concepts/dspy]] — Main DSPy concept page
 - [[concepts/dspy-architecture]] — Signatures, Modules, Teleprompters overview
 - [[concepts/dspy-optimization]] — How optimizers tune module behavior
-- [[concepts/dspy-comparisons]] — How DSPy modules compare to LangChain/LangGraph chains
+- [[concepts/dspy]] — Main DSPy concept page

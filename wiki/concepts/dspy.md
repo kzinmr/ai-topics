@@ -131,7 +131,7 @@ DSPy's declarative approach aligns with agentic engineering principles:
 - [[concepts/dspy-modules]] — DSPy's composable building blocks connecting Signatures to execution
 - [[concepts/dspy-architecture]] — Signatures, Modules, Teleprompters overview
 - [[concepts/dspy-optimization]] — How optimizers tune module behavior
-- [[concepts/dspy-comparisons]] — How DSPy modules compare to LangChain/LangGraph chains
+- [[concepts/dspy-architecture]] — DSPy architecture deep dive
 - [[concepts/overture-maps-foundation]] — Open-source geospatial data foundation by Drew Breunig
 - [[concepts/spec-driven-development]] — Drew Breunig's spec-driven development framework
 - [[concepts/harness-engineering]] — DSPy represents harness engineering applied to prompt optimization

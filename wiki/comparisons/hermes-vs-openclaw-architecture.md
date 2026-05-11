@@ -1,9 +1,12 @@
 ---
 title: "Hermes Agent vs OpenClaw Architecture Comparison"
 created: 2026-04-18
-updated: 2026-05-07
+updated: 2026-05-11
 type: comparison
 tags: [ai-agents, architecture, comparison, hermes-agent, openclaw]
+moved_from:
+  - concepts/openclaw-vs-hermes-architecture-comparison.md
+  - concepts/hermes-agent-vs-openclaw-architecture-comparison.md
 sources:
   - "elvis analysis (April 2026) — 9-hour side-by-side source code study"
   - "ChatGPT deep research analysis of official docs (May 2026)"

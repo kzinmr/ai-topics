@@ -94,7 +94,7 @@ For a practical, hands-on tutorial that takes ~1 hour: [[concepts/dspy-tutorial]
 - [[concepts/dspy-tutorial]] — Hands-on getting started tutorial (Maxime Rivest)
 - [[concepts/dspy-architecture]] — Architecture deep-dive
 - [[concepts/dspy-optimization]] — Teleprompters, Assertions, Fine-Tuning
-- [[concepts/dspy-comparisons]] — DSPy vs LangChain, RLMs, GEPA
+- [[concepts/dspy]] — Main DSPy concept page
 - [[concepts/gepa]] — Genetic prompt optimization built on DSPy
 - [[concepts/recursive-language-models]] — RLM approach can complement DSPy
 - [[concepts/rlms]] — Recursive Language Models

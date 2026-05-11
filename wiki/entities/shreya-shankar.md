@@ -192,7 +192,7 @@ Her research has been adopted by **OpenAI and Anthropic teams** for their evalua
 - [[concepts/ai-evals]] — The evaluation framework they teach
 - [[concepts/llm-as-judge]] — Core evaluation technique
 -  — Foundational practice- [[concepts/harness-engineering]] — Connected philosophy
-- [[concepts/eval-tools-comparison]] — Tool selection framework
+- [[comparisons/eval-tools-comparison]] — Tool selection framework
 - [[concepts/critique-shadowing]] — Husain's methodology (complementary)
 - [[entities/drmaciver]] — Property-based testing applied to LLM evaluation (`foundational-llm-evals`); PBT methodology for eval design
 
