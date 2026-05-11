@@ -1,3 +1,9 @@
+## 2026-05-11 15:45 — Tambo と Buildy の新規エンティティページ作成
+
+- 🆕 `entities/tambo.md` 作成 (L2) — オープンソース Generative UI ツールキット for React。Michael Magán & Michael Milstead (Seattle, 2024設立)。Zapier/Rocket Money/Solink 採用。SCHEMA.md に `generative-ui` タグ追加。
+- 🆕 `entities/buildy.md` 作成 (L2) — AIエージェントがパーソナルWebアプリを構築・永続化するプラットフォーム。ES module POST → 公開URL + KVストレージ。MCP経由で全エージェント対応。llms.txt/llms-full.txt でAI向けドキュメント完備。
+- `SCHEMA.md`: Products カテゴリに `generative-ui` タグ追加
+- `index.md`: Entities (551→553), Total pages (1749→1751)
 ## 2026-05-11 14:53 UTC — Claude Certified Architect 5-Domain Knowledge ingested from @hooeem X Article
 
 **Source**: X Article by @hooeem — "I want to become a Claude architect (full course)" (60K bookmarks, 16.7K likes)

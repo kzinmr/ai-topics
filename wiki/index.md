@@ -2,14 +2,15 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-11 | Total pages: 1749 | Indexed entries: 804 | Not in index: 944 |
+> Last updated: 2026-05-11 | Total pages: 1751 | Indexed entries: 806 | Not in index: 944 |
 
-## Entities (551 pages)
+## Entities (553 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
 - [[entities/agreement-bug]] — Agreement is a Bug
 - [[entities/autoreason]] — Autoreason
+- [[entities/buildy]] — Buildy (buildy.so) — AIエージェントが構築・永続化するパーソナルWebアプリプラットフォーム
 - [[entities/claude-perfect-memory]] — Claude Perfect Memory
 - [[entities/company-ai-pilled]] — Company AI Pilled
 - [[entities/content-engine]] — Content Engine
@@ -46,6 +47,7 @@
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka
 - [[entities/sierra]] — Sierra — AI customer service platform ($15B valuation, $200M+ ARR). Enterprise conversational AI agents. Service-as-Software.
+- [[entities/tambo]] — Tambo (tambo.co) — オープンソースGenerative UIツールキットfor React。AIエージェントが既存コンポーネントで応答
 - [[entities/tobi-lutke]] — Tobi Lutke — Shopify CEO. Revealed River: internal Slack-native AI coding agent built on apprenticeship model. Self-taught programmer, dropped out at 16.
 - [[entities/0xjeff]] — 0xJeff — Crypto/DeFi analyst and Hermes Agent power user. 8 years PE/VC/IB. Known for documenting Hermes as personal analyst pipeline.
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
