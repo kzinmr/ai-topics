@@ -1,3 +1,8 @@
+## 2026-05-11 17:35 — Wiki watchdog auto-fix (index header correction)
+- 📝 `index.md`: Concepts header count corrected (1306→1238) to match actual filesystem count
+- 📊 Verifications: pipe corruption (0), triple bracket (0), line-number corruption (0) — all clean
+- ⚠️ Needs attention: x_accounts stale alert (26h), 148 non-standard tags, 275 orphan pages
+
 ## 2026-05-11 15:45 — Tambo と Buildy の新規エンティティページ作成
 
 - 🆕 `entities/tambo.md` 作成 (L2) — オープンソース Generative UI ツールキット for React。Michael Magán & Michael Milstead (Seattle, 2024設立)。Zapier/Rocket Money/Solink 採用。SCHEMA.md に `generative-ui` タグ追加。
