@@ -1,3 +1,27 @@
+## 2026-05-11 22:30 UTC — X Accounts Scan: FlashAttention-4, Delphi scaling laws, Interaction Models, folk
+
+**Scan summary**: 79 tracked accounts, 12 scanned, 7 new posts detected. 4 major wiki actions taken.
+
+**New pages created**:
+- `concepts/flash-attention-4.md` — FA4: Blackwell B200 optimized CUDA kernel. 1605 TFLOPs/s (71% util), 1.3x vs cuDNN. Async pipeline, hybrid exp, conditional softmax rescaling. Tri Dao (Together AI/Princeton).
+- `concepts/delphi-scaling-laws.md` — Open Athena (Marin) scaling suite. 300x extrapolation (3e20→1e23 FLOPs) within 0.2%. Token-horizon LR correction, AdamH optimizer. Open checkpoints + recipe.
+- `concepts/interaction-models.md` — Thinking Machines Lab research preview. 200ms micro-turn, multi-modal native interaction (audio/video/text). Two-model split architecture (real-time + async background).
+- `entities/folk-app.md` — Nozomio Labs personal AI agent. iMessage/Telegram/Discord. 24/7, persistent memory. $20-100/mo.
+
+**Enriched existing pages**:
+- `entities/charles-frye.md` — Added FA4 reverse-engineering blog post (Modal, Sept 2025, HN front page, GPU MODE presentation)
+- `entities/elie-bakouch.md` — Updated to "formerly at Hugging Face" (per X post); added scaling/open-source/training tags
+
+**Raw articles saved** (6):
+- `2026-04-14_openathena_delphi-scaling-laws.md`
+- `2026-05-11_thinkingmachines_interaction-models.md`
+- `2026-03-05_togetherai_flashattention-4.md`
+- `2025-09-26_modal_reverse-engineer-flashattention-4.md`
+- `2026-05-11_getfolk_folk-app.md`
+- `2026-05-06_anthropic_higher-limits-spacex.md`
+
+**Skipped**: Elie Bakouch alphaxiv.org reply (no article), Eugene Yan Anthropic+SpaceX (minor news, saved raw only)
+
 ## 2026-05-11 19:00 UTC — Daily Skeleton Enrichment Run (no skeleton pages found; enriched 2 stubs)
 
 **Status**: No `status: skeleton` entity pages found. Enriched 2 `status: stub` entity pages as fallback.

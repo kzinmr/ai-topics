@@ -2,11 +2,11 @@
 title: Elie Bakouch
 type: entity
 created: 2025-11-17 16:10:46
-updated: 2026-04-10 10:00:00
+updated: 2026-05-11 10:00:00
 aliases: [eliebak, eliebakouch]
 status: active
-description: "ML engineer and researcher at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training."
-tags: [person]
+description: "ML engineer and researcher, formerly at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training."
+tags: [person, scaling, open-source, training]
 sources: []
 ---
 
@@ -20,7 +20,7 @@ sources: []
 
 ## Overview
 
-Elie Bakouch (known online as **eliebak** on Hugging Face and **@eliebakouch** on X) is an ML engineer and researcher at **Hugging Face**, where he works on the pretraining and optimization of language models. He is a key contributor to the **SmolLM** family of small language models and has published influential research on **Mixture-of-Experts (MoE) scaling laws**, **data-centric training methodologies**, and **synthetic data pipelines**.
+Elie Bakouch (known online as **eliebak** on Hugging Face and **@eliebakouch** on X) is an ML engineer and researcher, formerly at **Hugging Face**, where he worked on the pretraining and optimization of language models. He is a key contributor to the **SmolLM** family of small language models and has published influential research on **Mixture-of-Experts (MoE) scaling laws**, **data-centric training methodologies**, and **synthetic data pipelines**.
 
 Bakouch's work sits at the intersection of practical model training and theoretical understanding. He has co-authored papers on μ-Parametrization for MoE architectures, optimal sparsity in Mixture-of-Experts language models, and compute-optimal training beyond fixed durations. His Hugging Face profile documents active contributions to the open-source ML ecosystem, including model releases, dataset curation, and community engagement through AMAs and public discussions.
 

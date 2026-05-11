@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-11 | Total pages: 1755 | Indexed entries: 808 | Not in index: 944 |
+> Last updated: 2026-05-11 | Total pages: 1759 | Indexed entries: 812 | Not in index: 944 |
 
 ## Entities (553 pages)
 
@@ -156,7 +156,7 @@
 - [[entities/ed-zitron]] — Ed Zitron — Tech columnist and AI industry critic. Author of Where's Your Ed At (~80K subscribers). Argues the AI economy is a circular dependency where 95%+ of compute demand flows through unprofitable OpenAI and Anthropic.
 - [[entities/eleutherai]] — Grassroots research collective that started the modern open-source AI movement. Creators of GPT-Neo, Pythia, and the LM Evaluation Harness.
 - [[entities/eli-thegreenplace-net]] — **URL:** https://eli.thegreenplace.net
-- [[entities/elie-bakouch]] — ML engineer and researcher at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training.
+- [[entities/elie-bakouch]] — ML engineer and researcher, formerly at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training.
 - [[entities/eliezer-yudkowsky]] — Eliezer Yudkowsky — AI researcher, MIRI co-founder. Foundational 1996 essay "Staring Into The Singularity." Intelligence explosion, AI safety, Algernon's Law, Perceptual Transcends, Interim Meaning of Life.
 - [[entities/elvis-sun]] — Elvis Sun is an AI researcher and newsletter author operating under the pen name **spicyneuron**. He publishes on Substack covering practical local AI deployment, hardware choices for self-hosted L...
 - [[entities/embeddings]] — Single-vector embedding models — strengths, limitations, and the theoretical constraints of embedding-based retrieval (LIMIT dataset, drowning-in-documents paradox)
@@ -182,6 +182,7 @@
 - [[entities/filfre-net]] — **Blog** | filfre.net (The Digital Antiquarian) |
 - [[entities/fireworks-ai]] — AI inference and model customization platform. 13T+ tokens/day. Multi-hardware (NVIDIA+AMD), FireAttention, custom speculator training, RFT capabilities.
 - [[entities/florian-brand]] — **X** | @xeophon |
+- [[entities/folk-app]] — Nozomio Labs のパーソナル AI エージェント。iMessage/Telegram/Discord内で常駐。レストラン予約・航空券監視・アパート検索など。24/7稼働、永続メモリ。Pro $20/月、Max $100/月。
 - [[entities/forrest-chang]] — Creator of the andrej-karpathy-skills repo — fastest-growing single-file repo of 2026 (120K+ stars). Converted Karpathy's LLM coding observations into 4 behavioral CLAUDE.md rules.
 - [[entities/foundation-capital]] — AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents.
 - [[entities/fourier-intelligence]] — Chinese company specializing in rehabilitation robotics and general-purpose humanoid robots. Combines medical expertise with advanced robotics technology.
@@ -654,6 +655,7 @@
 - [[concepts/hybrid-flow]] — HybridFlow (veRL): RLHF/GRPOのための制御フローと計算フローを分離するアーキテクチャ。volcengine/veRL実装。Ray上の単一プロセスコントローラがWorkerGroupを通じてマルチGPUワーカーを透過制御。@registerデコレータで分散実行を隠蔽。FSDP/Megatron/TorchTitan/vLLM/SGLangのマルチバックエンド対応。
 - [[concepts/information-theory-and-agent-communication]] — Shannon (1948) の通信の数学的理論をAIエージェント間コミュニケーションの観点から再解釈。V-Information (Xu et al., 2020) との統合によるエージェント通信3層モデル。ハーネス効果の情報理論的基礎、コンテキストウィンドウのShannon容量アナロジー。
 - [[concepts/infrastructure-noise-agent-evals]] — エージェント型コーディング評価におけるインフラノイズの定量分析。Terminal-Bench 2.0でリソース1x→uncapped間で6pp差（p<0.01）。3pp未満のリーダーボード差は懐疑的に。時刻・並列度・帯域幅も隠れた交絡因子。
+- [[concepts/interaction-models]] — Thinking Machines Lab の研究プレビュー。200msマイクロターンでマルチモーダル・リアルタイムインタラクションをネイティブ処理。音声・映像・テキストを同時入出力。非同期バックグラウンドモデルと連携。
 - [[concepts/interpretability]] — Interpretability（機械的解釈可能性）: LLM内部の特徴と回路を可視化する研究分野。AnthropicのScaling Monosemanticity、Golden Gate Claude、Entropix。RLHF代替としての推論時steering、性能と制御性のトレードオフに対応。
 - [[concepts/agent-development-lifecycle]] — Agent Development Lifecycle (ADLC) — Build→Test→Deploy→Monitor framework by Harrison Chase (LangChain). Governance layer for cost, tool access, discoverability. Operational roles: Agent Supervisor, QA Lead, AI Ops Manager, Chief AI Officer.
 - [[concepts/carlini-c-compiler-agents]] — Nicholas Carliniの実験: 16体のClaudeエージェントを2,000セッション並列稼働、$20Kで100K行のRust Cコンパイラを構築しLinux 6.9カーネルをコンパイル成功。Infinite Agent Loop、Gitベースタスクロック、並列エージェント設計の実践的教訓。
@@ -678,6 +680,7 @@
 - [[concepts/deepseek-v4]] — DeepSeek-V4: 1.6T Pro/284B Flash、1MコンテキストMoE。Hybrid Attention（CSA+HCA+SWA）、mHC、Muon Optimizer、MegaMoE、TileLang DSL、On-Policy Distillation、FP4 QAT。V3.2比FLOPs 3.7-10x削減、KVキャッシュ10-14x削減。Codeforces 3206（人間23位相当）。
 - [[concepts/deepseek-v4-serving]] — DeepSeek-V4 production serving on B200 GPUs: prefix caching, KV cache policy, KV cache eviction, multi-turn latency, memory bandwidth, token-per-second optimization.
 - [[concepts/defenseclaw]] — Cisco's open-source agentic governance layer for OpenClaw. Pre-run scanning (5 scanners), runtime threat detection, non-advisory enforcement. Built on NVIDIA OpenShell. Announced RSAC 2026.
+- [[concepts/delphi-scaling-laws]] — Open Athena (Marin) の公開スケーリングスイート。3e20 FLOPs のフィットから 1e23 FLOPs を 0.2% の誤差で予測（300× extrapolation）。IsoFLOP sweep、token-horizon LR correction、AdamH。
 - [[concepts/good-regulator-theorem]] — Good Regulator Theorem (Gooder Regulator): Conant & Ashby (1970) の「あらゆる良いレギュレータはシステムのモデルでなければならない」を John Wentworth (2021) が情報ボトルネック制約を加えて修正した選択定理。AIエージェントの世界モデル・評価設計・ハーネス効果の理論的基盤。tailcalled の [[concepts/causal-backbone-conjecture]] が批判的応答。
 - [[concepts/google-flow-music]] — Google Flow Music — Google Labs AI music creation tool powered by Lyria 3 Pro. May 2026 partnership with Believe/TuneCore for artist distribution. AI-assisted lyrics, melodies, instruments. Artist retains ownership.
 - [[concepts/google-project-mariner-shutdown]] — Google's shutdown of Project Mariner browser agent in May 2026 due to poor performance and high costs.
@@ -794,6 +797,7 @@
 - [[concepts/db9-filesystem-sql]]
 - [[concepts/factorio-learning-environment]] — Factorio Learning Environment (FLE) — Factorioゲームを模したエージェントeval。コード+REPLで操作、ビジョン不要。24のlab-playタスク。NeurIPS 2025。
 - [[concepts/federation-of-experts]] — Federation of Experts (FoE) — communication-efficient distributed inference for MoE LLMs. Clusters experts by KV head, eliminates cross-node all-to-all. 5.2x latency reduction, 3.62x TTFT improvement.
+- [[concepts/flash-attention-4]] — FA4: Blackwell B200最適化のCUDAカーネル。1,605 TFLOPs/s（71%利用率）、cuDNN比1.3×高速。非同期パイプライン・ハイブリッドexp・条件的softmax rescaling。Tri Dao (Together AI/Princeton) ら。
 - [[concepts/frontier-swe-benchmark]] — FrontierSWE: 超高難度コーディングエージェントベンチマーク（Proximal Labs）。20時間制限、Implementation/Performance/Researchの3カテゴリ17タスク。GPT-5.5+Codexが平均ランク2.35（Dominance 83%）で首位。保守（GPT-5.4）vs攻撃的（Opus 4.6）の行動比較、overconfidence/cheating行動を記録。
 - [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.
 - [[concepts/agent-serverless]] — Serverless deployment pattern for AI agents with built-in SaaS integration, permissions, security, and log persistence tiers. Enterprise monetization via persistent logs and audit trails.

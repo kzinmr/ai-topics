@@ -131,6 +131,8 @@ A hands-on walkthrough demonstrating fine-tuning a diffusion model and deploying
 
 ## Blog / Recent Posts
 
+- **We reverse-engineered Flash Attention 4** (Modal blog, September 2025) — Deep technical reverse-engineering of Tri Dao's FA4 CUDA kernel from open-source code. Traces the "Life of a Tile" through the asynchronous pipeline. Made HackerNews front page, presented to GPU MODE Discord. Explains the two math tricks (faster approximate exponentials, conditional online softmax) and the Blackwell-specific pipeline design.
+
 - **GPU Glossary (Modal)** — A comprehensive "Rosetta Stone" for GPU programming concepts, mapping the relationship between PTX, CUDA, and higher-level frameworks. Explains why understanding the instruction set architecture matters more than knowing specific framework APIs.
 - **What Every LLM Developer Needs to Know About GPUs** (YouTube interview with Latent Space, 2024) — A deep-dive conversation covering GPU hardware architectures, profiling techniques, quantization tradeoffs, and practical guidance for selecting GPUs for different ML workloads.
 - **Cloud GPU Pricing Guide** (Full Stack Deep Learning, updated 2023–2024) — Continuously maintained comparison of GPU pricing across providers, with per-GPU and per-hour cost analysis for training and inference scenarios.
