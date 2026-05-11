@@ -62,7 +62,7 @@ related:
 
 | Harness | Creator | License | Stars | Language | Core Philosophy |
 |---------|---------|---------|-------|----------|----------------|
-| **Claude Code** | Anthropic → OpenAI | Proprietary | N/A | TypeScript | Full-featured, multi-surface, sub-agents |
+| **Claude Code** | Anthropic | Proprietary | N/A | TypeScript | Full-featured, multi-surface, sub-agents |
 | **OpenCode** | Anomaly (SST) | MIT | **155K** | TypeScript | Provider-agnostic, open source, 75+ providers |
 | **Pi** | Mario Zechner (libGDX) | MIT | 45.5K | TypeScript | Radical minimalism (<1K prompt), 4 tools |
 | **Codex** | OpenAI | **Apache-2.0** | 79.3K | **Rust** | Universal agent, superapp vision, multi-model |

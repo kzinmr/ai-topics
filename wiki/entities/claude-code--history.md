@@ -29,8 +29,8 @@ Back to main profile: [[entities/claude-code]]
 - チームは約10人のエンジニアに拡大
 - 2025年7月時点ですでに高い成長率を記録
 
-## OpenAI移管 (Jul 2025)
-[[entities/anthropic]]から[[entities/openai]]へ移管され、Boris ChernyがHead of Claude Codeとして開発を継続。
+## Team Growth (Jul 2025)
+チームは10人規模に拡大。Boris ChernyがHead of Claude CodeとしてAnthropicで開発を継続。
 
 ## Agent Teams GA (2026)
 マルチエージェント協調機能がGeneral Availabilityに到達。複数のClaude Codeインスタンスが役割分担しながら並行作業を実行可能。

@@ -22,7 +22,7 @@ sources: []
 | **X/Twitter** | [@bcherny__](https://x.com/bcherny__) |
 | **GitHub** | [bcherny](https://github.com/bcherny) |
 | **Blog** | [borischerny.com](https://borischerny.com/) |
-| **Role** | Creator of Claude Code, OpenAI |
+| **Role** | Creator of Claude Code, Anthropic |
 
 ## Bio
 
@@ -38,9 +38,7 @@ A self-taught programmer who studied economics at UCSD (2009–2011) but dropped
 | Nov 2017–2021 | Engineer IC4→IC5 | Meta (Facebook) | "Chats in Groups" project — integrated Messenger into FB Groups |
 | 2021–2023 | Staff Engineer IC6 | Meta (Facebook) | Led Facebook Groups → Comet platform migration; managed 30+ engineers; relay mutations for UI state |
 | 2023–Aug 2024 | Senior Staff IC7→IC8 | Meta / Instagram | "Public Groups" initiative; scoped work for 100s of engineers; Instagram Python→Hack migration |
-| Sep 2024–Jul 2025 | Founding Engineer | Anthropic | Prototyped and built Claude Code; drove 67% PR throughput increase |
-| Jul 2025 | Brief departure | Anysphere (Cursor) | Senior role |
-| Jul 2025–present | Head of Claude Code | OpenAI (acquired from Anthropic) | Leading Claude Code development |
+| Sep 2024–present | Head of Claude Code | Anthropic | Prototyped and built Claude Code; drove 67% PR throughput increase; leading Claude Code development |
 
 ## Early Career & Open Source
 
@@ -52,7 +50,7 @@ A self-taught programmer who studied economics at UCSD (2009–2011) but dropped
 
 See full story: [[boris-cherny--claude-code-development|Claude Code Development Story]]
 
-Boris joined Anthropic in September 2024, prototyping a CLI tool that evolved into Claude Code. By November 2024, an internal release saw **50% engineering adoption in 5 days**. The tool reached general availability in May 2025 and later moved to OpenAI when Boris became Head of Claude Code.
+Boris joined Anthropic in September 2024, prototyping a CLI tool that evolved into Claude Code. By November 2024, an internal release saw **50% engineering adoption in 5 days**. The tool reached general availability in May 2025. Boris continues to lead Claude Code at Anthropic as its Head of Product.
 
 ## Core Ideas & Philosophy
 
