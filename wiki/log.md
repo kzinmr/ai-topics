@@ -1,3 +1,25 @@
+## 2026-05-11 23:30 UTC — X Bookmarks Ingest: Browser Use production architecture, KV Caching, 0xJeff Part V
+
+**Bookmarks processed**: 5 total | 2 scraped from mirrors | 1 enriched existing | 1 saved raw-only | 1 metadata-only
+
+**New pages created**:
+- `concepts/browser-use-production-architecture.md` — SQS-to-Lambda architecture for running Browser Use agents at scale (Larsen Cundric, 4,000+ commits)
+
+**Enriched existing pages**:
+- `concepts/kv-cache.md` — Added Avi Chawla source ("KV Caching in LLMs, Explained Visually", Feb 2025), "first token is slow" explanation, memory cost table per model
+- `entities/0xjeff.md` — Added Part V: Three-Layer Agent Stack (Identity/Knowledge/Tools) + Model Configuration (Opencode Go, DeepSeek API, config.yaml/.env)
+- `entities/browser-use.md` — Added Larsen Cundric as key person, production architecture blog post, cross-link to new concept page
+
+**Raw articles saved** (5):
+- `2026-05-09_browser-use_production-architecture.md` (browser-use.com mirror)
+- `2025-02-14_dailydoseofds_kv-caching-explained.md` (Daily Dose of Data Science mirror)
+- `2026-05-08_nanothoughts_memory-is-state.md` (Ashwin Gopinath, memory architecture)
+- `2026-05-11_defi0xjeff_hermes-analyst-workflow.md` (0xJeff Part V mirror)
+- `2026-05-08_shannholmberg_ai-content-system.md` (metadata-only, content marketing)
+
+**Skipped**:
+- Shann³ content system article — content marketing, not core AI/LLM scope → metadata-only
+- Ashwin Gopinath "Contextmaxxing > Tokenmaxxing" — X article mirrors to "Memory Is State, Not a Service" (May 8), saved raw only
 ## 2026-05-11 22:45 UTC — Reuters Article: OpenAI/Anthropic JVs adopt Palantir Model
 
 **Article**: [Reuters: OpenAI, Anthropic ventures in talks to buy AI services firms](https://www.reuters.com/world/openai-anthropic-ventures-talks-buy-ai-services-firms-sources-say-2026-05-05/) — Milana Vinn, May 5, 2026. Already ingested as `raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md`.

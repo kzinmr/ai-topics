@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-11 | Total pages: 1759 | Indexed entries: 812 | Not in index: 944 |
+> Last updated: 2026-05-11 | Total pages: 1759 | Indexed entries: 813 | Not in index: 944 |
 
 ## Entities (553 pages)
 
