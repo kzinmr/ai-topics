@@ -561,6 +561,7 @@
 - [[entities/parsagon]] — Parsagon
 - [[entities/reevo]] — Reevo — AI platform.
 - [[entities/rogo]] — Rogo — AI for financial services. $750M valuation. 25K+ users across 150 firms.
+- [[entities/ronin-deronin]] — Ronin (@DeRonin_) — 19-year-old AI entrepreneur, Skill Graph architecture creator, CEO CloseAI_hq, Advisor MindoAI
 - [[entities/scale-ai]] — Scale AI — Data labeling and AI infrastructure. Founded 2016. Key supplier to major AI labs.
 - [[entities/the-browser-company]] — The Browser Company — Maker of Arc browser, reimagining web browsing with AI integration.
 - [[entities/thinking-machines-lab]] — Thinking Machines Lab — AI research lab founded by ex-OpenAI CTO Mira Murati. Tinker fine-tuning API. $2B seed at $12B valuation.
@@ -716,6 +717,7 @@
 - [[concepts/rdep]] — Research Dispatch/Expert Parallelism — direct CUDA IPC dispatch/return replacing NCCL all-to-all for single-node MoE training. B200-first.
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-memory-engineering]] — Agent Memory Engineering: Nicolas Bustamante (Microsoft) によるClaude Code/Codex/Hermesのメモリアーキテクチャ比較。「巧妙なアーキテクチャはすべて負けた。勝ったのはLLM + Markdown + bash」。モデルはハーネス上でポストトレーニングされるため、メモリはハーネス間で移植不可。
+- [[concepts/agent-media]] — Agent Media — WikiからマルチチャネルAutoresearch Deskへの進化。KhairallahのContext Engineering + RoninのSkill Graphの統合による、audience-aware知識配信システムの設計思想。
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
 - [[concepts/agent-communication-standards]] — ACP, A2A, BeeAIなど、マルチエージェント通信のための標準プロトコル群
@@ -765,6 +767,7 @@
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
+- [[concepts/skill-graph]] — Skill Graph — 相互接続MarkdownファイルによるAIエージェントプレイブック。Roninの17ファイル4フォルダアーキテクチャ。Wikilinks遷移、Platform-Native Repurposing、Litmus Test。
 - [[concepts/sitecove-ship]] — Sitecove HyperCache Inference Protocol (SHIP): System-level LLM inference optimization. 91% GPU reduction, 12× speedup, $49→$4 per 1M tokens. Developed by Australian web infra team.
 - [[concepts/roll-rl]] — ROLL (Alibaba): 多様なユーザー向けRLフレームワーク。豊富なインターフェースと高い設定自由度。DeepSpeed/Megatron、GRPO+PPO、Rayオーケストレーション。
 - [[concepts/space-gpus]] — Space GPUs
