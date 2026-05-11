@@ -1,3 +1,10 @@
+## [2026-05-11] create | concepts/rao-recursive-agent-optimization + entities/apurva-gandhi
+
+- **作成:** `wiki/concepts/rao-recursive-agent-optimization.md` — RAO (Recursive Agent Optimization): CMU × Amazon AGI Labs による再帰的エージェントの end-to-end RL 訓練手法。Qwen3-4B-Instruct を75ステップ訓練するだけで deep research タスクで単一エージェント比 +16% SR。
+- **作成:** `wiki/entities/apurva-gandhi.md` — Apurva Gandhi: CMU PhD 学生（Graham Neubig 指導）。元 Microsoft Copilot 基盤設計。RAO、Go-Browse、SkillWeaver の著者。
+- **保存:** `wiki/raw/papers/2026-05-07_2605.06639_recursive-agent-optimization.md` — RAO 論文 (arXiv:2605.06639)
+- **保存:** `wiki/raw/articles/2026-05-08_x-thread_apurva-gandhi-rao-recursive-agent-optimization.md` — Apurva Gandhi の X スレッド (1/10〜10/10)
+- **参照:** [[concepts/recursive-language-models]], [[concepts/grpo]], [[concepts/rlm-recursive-language-models]]
 ## [2026-05-11] create | concepts/baudrillard-and-ai — ボードリヤールとAI
 
 - **作成:** `wiki/concepts/baudrillard-and-ai.md` — ボードリヤールの『シミュラークルとシミュレーション』の概念枠組み（イマージュの4段階、ハイパーリアリティ、シミュラークルの先行）をLLM時代のAI現象に適用した概念ページ。AIは模倣の失敗ではなくシミュラークルの完成形であるという視点。

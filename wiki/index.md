@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-11 | Total pages: 1728 | Indexed entries: 786 | Not in index: 942 |
+> Last updated: 2026-05-11 | Total pages: 1730 | Indexed entries: 788 | Not in index: 942 |
 
 ## Entities (545 pages)
 
@@ -70,6 +70,7 @@
 - [[entities/anthropic-labs]] — Anthropic's experimental product division, responsible for launching products outside the core Claude AI assistant.
 - [[entities/anthropic]] — AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing.
 - [[entities/antirez-com]] — **URL:** https://antirez.com
+- [[entities/apurva-gandhi]] — Apurva Gandhi — CMU PhD student, RAO (Recursive Agent Optimization), ex-Microsoft Copilot
 - [[entities/arize]] — AI observability & LLM evaluation platform. Built Phoenix OSS (2M+ monthly downloads). $131M raised. "Datadog for agents." Enterprise customers: Uber, Chime, eBay, Spotify.
 - [[entities/arlan-r]] — **Name** | Arlan Rakhmetzhanov |
 - [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko, born 10 May 1989, Austria) is a software engineer, open-source developer, and entrepreneur who has profoundly shaped the Python ecosystem and is now building the next ge...
@@ -682,6 +683,7 @@
 - [[concepts/raindrop]] — Raindrop — AI Agent Monitoring & Observability Platform
 - [[concepts/ramp-inspect]] — Ramp Inspect: background coding agent with autonomous verification loop. ~30% of Ramp PRs. Modal sandbox VMs, multi-modal interface (Slack, Chrome ext, web, VS Code, PR).
 - [[concepts/ragen]] — RAGEN: veRLベースのエージェントRL拡張。明示的な環境インターフェースを追加し、カスタム環境でのマルチターンRLを容易に。
+- [[concepts/rao-recursive-agent-optimization]] — RAO (Recursive Agent Optimization) — RL training for recursive agents that spawn/delegate to copies of themselves. CMU × Amazon AGI Labs 2026
 - [[concepts/recursive-self-improvement]] — AI systems autonomously designing and training successor models. Jack Clark's 60% probability by end 2028. Compounding alignment risk, SWE-Bench 93.9% evidence.
 - [[concepts/rdep]] — Research Dispatch/Expert Parallelism — direct CUDA IPC dispatch/return replacing NCCL all-to-all for single-node MoE training. B200-first.
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
