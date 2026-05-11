@@ -52,6 +52,7 @@ Proprietary web-scale index (billions of pages, millions added daily). Returns d
 
 - [Bing API alternatives: top solutions for 2026](https://parallel.ai/articles/bing-api-comparison) (2026-02-16)
 - [The best Google Alerts alternatives in 2026](https://parallel.ai/articles/the-best-google-alerts-alternatives-in-2026-including-one-built-for-developers) (2026-04-17)
+- [How to automate competitor analysis with AI agents](https://parallel.ai/articles/how-to-automate-competitor-analysis-with-ai-agents) (2026-04-17)
 - [How to automate market mapping with AI](https://parallel.ai/articles/how-to-automate-market-mapping-with-ai-a-developers-guide-to-competitive-landscape-analysis)
 - [13 AI agent ideas organized by what they actually need to work](https://parallel.ai/articles/13-ai-agent-ideas-organized-by-what-they-actually-need-to-work)
 

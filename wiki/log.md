@@ -1,3 +1,10 @@
+## [2026-05-11] manual | Parallel Web Systems — Automated Competitor Analysis with AI Agents
+
+- **新規:** `wiki/raw/articles/2026-04-17_parallel_automated-competitor-analysis.md` — How to automate competitor analysis with AI agents: Discover → Extract → Monitor パイプライン
+- **新規:** `wiki/concepts/automated-competitor-analysis.md` — 競合分析自動化の概念ページ。3段階パイプライン、シグナル分類、Build vs Buy判断
+- **更新:** `wiki/entities/parallel-web-systems.md` — Key Articlesに追加
+- **ソース:** parallel.ai/articles/how-to-automate-competitor-analysis-with-ai-agents
+
 ## [2026-05-11] manual | Postman 2025 State of the API Report — AI-Ready APIs concept
 
 - **新規:** `wiki/raw/articles/2025-10-08_postman-state-of-api-2025-report.md` — Postman第7回年次APIレポート。5,700人以上の開発者・アーキテクト・エグゼクティブ対象。AI-APIギャップ（89%がAI使用、24%のみがAIエージェント向けAPI設計）、MCP認知度（70%）と採用（10%）のギャップ、API収益化（65%の組織がAPIから収益）を分析。
