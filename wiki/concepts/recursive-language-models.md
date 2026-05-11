@@ -4,7 +4,7 @@ created: 2026-04-25
 updated: 2026-04-26
 type: concept
 tags: [inference, optimization]
-sources: [raw/articles/crawl-2026-04-25-recursive-language-models-rlm.md, raw/articles/2026-04-25-rlm-gepa-prompt-evolution.md]
+sources: [raw/papers/2025-12-31_2512.24601_recursive-language-models.md, raw/articles/2026-04-25-rlm-gepa-prompt-evolution.md]
 ---
 
 # Recursive Language Models (RLM)

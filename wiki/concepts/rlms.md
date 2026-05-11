@@ -14,8 +14,8 @@ tags:
   - self-optimization
   - context-management
 sources:
- - raw/articles/rlms-recursive-language-models-2026-04-20.md
- - raw/articles/gepa-iclr2026-2026-04-20.md
+ - raw/papers/2025-12-31_2512.24601_recursive-language-models.md
+ - raw/papers/2025-07-25_2507.19457_gepa-reflective-prompt-evolution.md
 related:
  - dspy
  - gepa

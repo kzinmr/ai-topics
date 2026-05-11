@@ -1,3 +1,12 @@
+## [2026-05-11] dedup | wiki/raw/papers/ 重複除去・命名統一・dedup 機構導入
+
+- **重複除去:**
+  - `2512.24601-recursive-language-models-{rlms,rlm,mit}.md` → unified to `2025-12-31_2512.24601_recursive-language-models.md`
+  - `2507.19457-gepa-{iclr2026,reflective-prompt-evolution}.md` → unified to `2025-07-25_2507.19457_gepa-reflective-prompt-evolution.md`
+- **参照先修正:** `wiki/concepts/gepa.md`, `wiki/concepts/rlms.md`, `wiki/concepts/recursive-language-models.md` の sources を canonical path に統一
+- **Dedup 機構:** `scripts/papers_index.py` 導入（`.papers_index.json` で arXiv ID → ファイル名マッピング。`--check` / `--add` / `--build`）
+- **命名規則明文化:** `raw-article-filename-policy` skill に `{YYYY-MM-DD}_{arxiv-id}_{short-title}.md` ルール追加
+
 ## [2026-05-10] ingest | Dreaming — Addy Osmani Agent Harness Engineering + entity page
 - **Raw article**: raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md
 - **Updated**: [[concepts/harness-engineering]] — Added Addy Osmani's Agent = Model + Harness framework section (The Ratchet, Working Backwards from Behavior, Context Rot, Long-Horizon Execution, Harnesses Don't Shrink, They Move, Claude Code architecture)
