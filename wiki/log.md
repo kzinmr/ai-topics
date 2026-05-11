@@ -1,3 +1,20 @@
+## [2026-05-11] create | X bookmarks ingest — 3 concept pages, 2 entity pages, 6 raw articles
+
+- 🆕 [[concepts/claude-md-rules]] — Karpathy's CLAUDE.md behavioral guidelines for AI coding agents (4→12 rules, 41%→3% mistake rate). 120K+ GitHub stars. Behavioral constraints over feature checklists.
+- 🆕 [[concepts/probabilistic-engineering]] — Tim Davis (Modular) on the paradigm shift from deterministic to probabilistic software engineering. Core asymmetry: generation is cheap, validation is not. 24-7 employee concept, role fragmentation, Jevons paradox applied to code.
+- 🆕 [[concepts/open-swe]] — LangChain's open-source internal coding agent framework (MIT). Distills Stripe Minions/Ramp Inspect/Coinbase Cloudbot convergent architecture. Deep Agents + LangGraph, AGENTS.md context engineering, cloud sandboxes.
+- 🆕 [[entities/tim-davis]] — Modular executive, Compound Loop creator, probabilistic engineering concept originator.
+- 🆕 [[entities/forrest-chang]] — Creator of andrej-karpathy-skills repo — converted Karpathy's LLM coding observations into 4 CLAUDE.md rules.
+
+**Raw articles saved** (6):
+- 2026-04-16_timdavis_probabilistic-engineering-24-7-employee.md (full mirror, 10K chars)
+- 2026-03-17_langchain_open-swe-framework.md (full mirror)
+- 2026-05-09_mnilax_claude-md-12-rules.md (X Article, metadata-only — auth-walled)
+- 2026-05-09_unknown_learning-on-the-shop-floor.md (metadata-only)
+- 2026-05-08_unknown_next-biggest-moat-in-ai.md (metadata-only)
+- 2026-05-10_unknown_sft-rl-on-policy-distillation.md (metadata-only)
+
+- [[index]] — Added 3 concepts (claude-md-rules, open-swe, probabilistic-engineering) and 2 entities (tim-davis, forrest-chang). Total 1743→1748.
 ## [2026-05-11] manual | Parallel Web Systems — Automated Competitor Analysis with AI Agents
 
 - **新規:** `wiki/raw/articles/2026-04-17_parallel_automated-competitor-analysis.md` — How to automate competitor analysis with AI agents: Discover → Extract → Monitor パイプライン

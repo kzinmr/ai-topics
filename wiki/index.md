@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-11 | Total pages: 1743 | Indexed entries: 799 | Not in index: 942 |
+> Last updated: 2026-05-11 | Total pages: 1748 | Indexed entries: 804 | Not in index: 944 |
 
 ## Entities (548 pages)
 
@@ -177,6 +177,7 @@
 - [[entities/filfre-net]] — **Blog** | filfre.net (The Digital Antiquarian) |
 - [[entities/fireworks-ai]] — AI inference and model customization platform. 13T+ tokens/day. Multi-hardware (NVIDIA+AMD), FireAttention, custom speculator training, RFT capabilities.
 - [[entities/florian-brand]] — **X** | @xeophon |
+- [[entities/forrest-chang]] — Creator of the andrej-karpathy-skills repo — fastest-growing single-file repo of 2026 (120K+ stars). Converted Karpathy's LLM coding observations into 4 behavioral CLAUDE.md rules.
 - [[entities/foundation-capital]] — AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents.
 - [[entities/fourier-intelligence]] — Chinese company specializing in rehabilitation robotics and general-purpose humanoid robots. Combines medical expertise with advanced robotics technology.
 - [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs.
@@ -403,6 +404,7 @@
 - [[entities/theodoros-galanos]] — AI researcher and harness engineering practitioner. Chief Science Officer at infrared.city, author of The Harness blog, creator of Lambda-RLM and AEC-Bench. @TheodoreGalanos.
 - [[entities/thin-bi-tool]] — 薄くなるBIツール — BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
 - [[entities/thorsten-ball]] — **Thorsten Ball** — Software engineer, author of Writing An Interpreter In Go and Writing A Compiler In Go, works on Amp at Sourcegraph. Wrote "How to Build a Code-Editing Agent: The Emperor Has No Clothes Guide."
+- [[entities/tim-davis]] — Tim Davis — Modular executive, Compound Loop creator. Originated "probabilistic engineering" and "24-7 employee" concepts. Key thinker on AI-native team restructuring and agent fleet orchestration.
 - [[entities/tim-dettmers]] — Researcher (UW), creator of bitsandbytes, LLM.int8() (zero-degradation 8-bit inference), and QLoRA (4-bit fine-tuning). Discovered 6.7B parameter phase shift for emergent outlier features.
 - [[entities/tim-oreilly]] — O'Reilly Media founder, technology thinker. Coined "Web 2.0", framed Vibe Coding/CHOP in historical abstraction context, articulated Agent Engineer role and need for agent infrastructure protocols.
 - [[entities/tim-sh]] — **Blog** | timsh.org | AI coding practitioner, PM, Multi-LLM workflow pioneer |
@@ -630,7 +632,9 @@
 - [[concepts/open-source-ai-destruction]] — Open Source AI Destruction
 - [[concepts/openclaw-architecture]] — OpenClawのアーキテクチャ詳細
 - [[concepts/openenv]] — Meta+HF partnership: open standard for agent environments (sandboxed tools, APIs, credentials). Integrates with TRL, TorchForge, verl, SkyRL. Environment Hub on Hugging Face.
+- [[concepts/open-swe]] — Open SWE: LangChainのオープンソース社内コーディングエージェントフレームワーク。Deep Agents + LangGraphベース。Stripe Minions/Ramp Inspect/Coinbase Cloudbotの収束アーキテクチャをMITライセンスで実装。AGENTS.md、サンドボックス、Slack/Linear/GitHub統合。
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information（予測的V-情報）：観測者の計算制約を考慮したShannon情報理論の変分拡張。DPI違反、高次元でのPAC推定保証、構造学習・公平表現学習への応用（Xu et al., ICLR 2020）。
+- [[concepts/probabilistic-engineering]] — 確率的エンジニアリング: Tim Davis (Modular) が提唱。AIエージェントによるコード生成が支配的になる中、コードベースの正当性が「知っている」から「信じている」に変わるパラダイムシフト。生成は安価だが検証は高価。24-7従業員、役割分裂、Jevonsの逆説のコード応用を含む。
 - [[concepts/openrlhf]] — OpenRLHF: 最も初期のOSS RLHFライブラリの一つ。DeepSpeedベース、報酬モデルサポート充実。非同期訓練対応（--async_train）。
 - [[concepts/ifeval]] — IFEval — 指示追従評価。25種の検証可能な指示タイプ、~500プロンプト。決定論的評価。Qwen3.5-27Bが95.0%でリード。上位モデルで飽和傾向。
 - [[concepts/hle]] — Humanity's Last Exam (HLE) — 人類最後の試験。100以上の分野から2,500問。$500Kの賞金プール。厳格なフィルタリングパイプライン。3%→65%へのスコア進化。Nature掲載。
