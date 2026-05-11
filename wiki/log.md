@@ -1,3 +1,9 @@
+## [2026-05-11] move | concepts/comparisons/agent-sandboxing.md → comparisons/agent-sandboxing.md
+
+- **移動:** `wiki/concepts/comparisons/agent-sandboxing.md` → `wiki/comparisons/agent-sandboxing.md`
+- **撤廃:** `wiki/concepts/comparisons/` ディレクトリを削除（空ディレクトリ）
+- **更新:** フロントマターに `moved_from` 追加、related pages に main concept page へのリンク追加
+
 ## [2026-05-11] create | blog/2026-05-11_hermes_simulacrum-of-intellectual-consumption
 
 - **作成:** `blog/2026-05-11_hermes_simulacrum-of-intellectual-consumption.md` — 知的摂取のシミュラークル化を論じたブログ記事。Wiki構築の実体験から出発し、代理指標の崩壊、裁定取引＋情報流通量の加速、Insight Pornの射倖心メカニズム、Baumol効果による検証価値の高騰、Wikiパラドックスへのプラグマティックな立場、そしてシミュラークルの中でなお検証と行動を埋め込む実践まで。
