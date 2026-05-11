@@ -1,3 +1,13 @@
+## 2026-05-11 19:00 UTC — Daily Skeleton Enrichment Run (no skeleton pages found; enriched 2 stubs)
+
+**Status**: No `status: skeleton` entity pages found. Enriched 2 `status: stub` entity pages as fallback.
+
+**Pages enriched**:
+- `entities/aditya-bawankule.md` — Expanded from stub (960B) to full entity page (6.3KB). Added: professional background (UIUC CompE, Meta/Supernatural VR, AIdea Hub founder, Certivo), projects (VibeCoder, DreamPixelForge, NeuroNav), writing style analysis, detailed blog post summaries (Codex /goal meta-prompting, Claude Code vs Codex vs Cursor comparison), cross-references. Sources added from website, resume, LinkedIn, GitHub. Removed `status: stub`.
+- `entities/hoeem.md` — Expanded from stub (1.2KB) to enriched entity page (2.8KB). Added: platform details (169K followers, Seven c Newsletter on crypto), content domains (crypto trading + Claude education), professional context (primarily crypto-focused with a viral Claude Architect guide). Sources added from X profile and Substack. Retained `status: stub` due to limited non-crypto content available.
+
+**Index updates**: Both entities already present in index.md and entities/_index.md — no description changes needed.
+
 ## 2026-05-11 17:51 UTC — Cloudflare Email Sending wiki ingestion (levelsio posts)
 
 **Pages created**:
