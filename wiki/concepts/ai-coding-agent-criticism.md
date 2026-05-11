@@ -6,9 +6,6 @@ updated: 2026-04-13
 tags:
   - concept
   - coding-agents
-  - criticism
-  - debate
-  - engagement-bias
 aliases: ["coding agent debate", "center bias"]
 related:
   - entities/armin-ronacher

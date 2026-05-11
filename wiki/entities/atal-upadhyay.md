@@ -10,7 +10,6 @@ updated: 2026-05-04
 tags:
   - person
   - blogger
-  - ai-engineer
   - harness-engineering
   - architecture
   - microsoft

@@ -4,10 +4,7 @@ created: 2026-05-02
 updated: 2026-05-02
 tags:
   - concept
-  - ai-writing
   - human-in-the-loop
-  - llm-usage-patterns
-  - content-creation
 aliases:
   - AI-assisted writing
   - LLM drafting

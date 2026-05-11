@@ -20,7 +20,6 @@ tags:
   - coding-agents
   - prompting
   - memory-systems
-  - background-agents
   - orchestration
   - personal-ai
 

@@ -7,8 +7,7 @@ tags:
   - company
   - model
   - open-source
-  - military
-  - pentagon
+  - ai-adoption
 status: complete
 description: "AI startup building open-weight models to counter Chinese AI. Pentagon defense partner. Backed by Nvidia and 1789 Capital. No public model yet."
 created: 2026-05-04

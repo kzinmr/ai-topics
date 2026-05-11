@@ -6,8 +6,6 @@ type: entity
 tags:
   - person
   - agent-safety
-  - selection-theorems
-  - lesswrong
 sources:
   - https://www.lesswrong.com/users/tailcalled
   - https://www.lesswrong.com/posts/BcrPdMipzqecg4JdQ/the-causal-backbone-conjecture

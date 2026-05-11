@@ -11,9 +11,7 @@ status: complete
 tags:
   - person
   - education
-  - math
   - developer-tooling
-  - youtube
 aliases: [3blue1brown]
 sources: []
 ---

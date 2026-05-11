@@ -6,9 +6,7 @@ updated: 2026-04-10
 tags:
   - coding-agents
   - infrastructure
-  - production-failures
   - software-engineering
-  - code-quality
 aliases: ["ai-code-outages", "ai-generated-code-bugs", "ai-coding-reliability-crisis"]
 related: , [[concepts/cognitive-cost-of-agents]], [[concepts/claude-mythos-glasswing]], [[concepts/ai-bubble-economics]]
 sources: []

@@ -7,10 +7,7 @@ tags:
   - person
   - blogger
   - hn-popular
-  - psychology
   - writing
-  - experimental-history
-  - science-communication
 sources: []
 ---
 

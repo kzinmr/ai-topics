@@ -5,10 +5,9 @@ updated: 2026-05-06
 type: concept
 tags:
   - concept
-  - ai-business-model
-  - company
-  - service-as-software
   - economics
+  - company
+  - ai-adoption
 aliases:
   - "AI Services JVs"
   - "AI Deployment Companies"

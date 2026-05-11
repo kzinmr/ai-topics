@@ -12,7 +12,6 @@ tags:
   - concept
   - infrastructure
   - mlops
-  - data-curation
   - training
 related:
   - [[concepts/synthetic-data]]

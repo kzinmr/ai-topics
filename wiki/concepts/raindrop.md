@@ -6,9 +6,7 @@ updated: 2026-05-03
 tags:
   - infrastructure
   - evaluation
-  - agent-platform
   - comparison
-  - sentry-for-agents
 aliases:
   - raindrop-ai
   - raindrop-monitoring

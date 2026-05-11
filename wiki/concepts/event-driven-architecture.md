@@ -6,7 +6,6 @@ updated: 2026-04-16
 tags:
   - architecture
   - aws
-  - eventbridge
 aliases:
   - EDA
   - event-driven design

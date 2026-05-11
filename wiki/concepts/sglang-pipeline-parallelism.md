@@ -2,7 +2,6 @@
 title: "SGLang Pipeline Parallelism"
 type: concept
 tags:
-  - pipeline-parallelism
   - inference
   - sglang
   - optimization

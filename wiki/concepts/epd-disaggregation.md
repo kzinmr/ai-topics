@@ -2,9 +2,7 @@
 title: "EPD Disaggregation"
 type: concept
 tags:
-  - inference-architecture
   - vlm
-  - disaggregation
   - sglang
   - multimodal
 status: active

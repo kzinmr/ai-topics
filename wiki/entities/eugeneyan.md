@@ -7,9 +7,6 @@ updated: 2026-04-10
 tags:
   - person
   - infrastructure
-  - recsys
-  - llm-systems
-  - production-ai
 sources: []
 ---
 

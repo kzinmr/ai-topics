@@ -12,9 +12,8 @@ tags:
   - agentic-engineering
   - openclaw
   - developer-tooling
-  - ios
   - mcp
-  - vibe-coding
+  - coding-agents
 
 ---
 

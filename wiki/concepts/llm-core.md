@@ -6,7 +6,6 @@ updated: 2026-04-30
 tags:
   - concept
   - model
-  - language-models
 status: complete
 description: "Large language model architecture, training, and research."
 ---

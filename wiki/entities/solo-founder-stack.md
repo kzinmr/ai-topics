@@ -7,9 +7,7 @@ status: L2
 sources: [https://x.com/i/article/2047678896959893504, https://www.nytimes.com/2026/04/02/technology/ai-billion-dollar-company-medvi.html, https://www.businessinsider.com/solo-founder-runs-company-with-15-ai-agents-heres-how-2026-2]
 tags:
   - person
-  - one-person-unicorn
   - context-engineering
-  - vibe-ceo
   - company
 aliases: [solopreneur-stack, solo-founder-ai-stack, one-person-unicorn]
 ---

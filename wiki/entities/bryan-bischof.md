@@ -11,7 +11,6 @@ tags:
   - data-science
   - infrastructure
   - company
-  - analytics
 sources: []
 ---
 

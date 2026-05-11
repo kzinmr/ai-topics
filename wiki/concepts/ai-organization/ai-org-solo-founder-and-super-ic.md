@@ -11,7 +11,6 @@ tags:
   - concept
   - company
   - person
-  - super-ic
 status: draft
 depth_tracking:
   target: 10KB+

@@ -8,10 +8,7 @@ tags:
   - entity
   - person
   - quantization
-  - llm-int8
   - fine-tuning
-  - bitsandbytes
-  - uw
 status: current
 related:
   - "[[concepts/model-quantization]]"

@@ -6,8 +6,6 @@ tags:
   - benchmark
   - multimodal
   - evaluation
-  - hard-eval
-  - personalized-eval
 related_concepts:
   - concepts/ai-benchmarks-evals-overview
   - concepts/mmmu

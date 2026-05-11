@@ -12,8 +12,6 @@ tags:
   - optimization
   - prompting
   - dspy
-  - genetic-algorithms
-  - irl-2026
 sources:
  - raw/papers/2025-07-25_2507.19457_gepa-reflective-prompt-evolution.md
  - raw/articles/2026-04-25-rlm-gepa-prompt-evolution.md

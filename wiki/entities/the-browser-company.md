@@ -5,9 +5,6 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - browser
-  - web-platform
-  - acquired
 aliases: ["Browser Company", "Arc Browser", "Dia"]
 sources:
   - https://thebrowser.company

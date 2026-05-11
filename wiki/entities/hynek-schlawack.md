@@ -8,10 +8,7 @@ tags:
   - developer-tooling
   - open-source
   - software-engineering
-  - attrs
-  - structlog
   - testing
-  - packaging
 sources: []
 ---
 

@@ -9,9 +9,7 @@ depth_tracking:
  created: 2026-04-20
  target_depth: concept-level
 tags:
-  - llm-architecture
   - inference
-  - self-optimization
   - context-management
 sources:
  - raw/papers/2025-12-31_2512.24601_recursive-language-models.md

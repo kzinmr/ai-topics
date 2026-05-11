@@ -7,12 +7,8 @@ updated: 2026-04-10
 tags:
   - person
   - model
-  - end-user-programming
-  - malleable-software
-  - dynamic-documents
-  - local-first
-  - crdt
-  - notion
+  - developer-tooling
+  - company
 sources: []
 ---
 

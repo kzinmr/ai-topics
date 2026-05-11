@@ -10,9 +10,6 @@ tags:
   - developer-tooling
   - open-source
   - model
-  - terminal-ui
-  - rich
-  - textual
 sources: []
 ---
 

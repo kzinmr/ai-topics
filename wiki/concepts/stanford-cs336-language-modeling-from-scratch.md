@@ -7,10 +7,7 @@ status: Level2
 tags:
   - education
   - curriculum
-  - implementation
   - training
-  - triton
-  - scaling-laws
   - alignment
 aliases: [cs336, language-modeling-from-scratch, hashimoto-liang-course]
 sources:

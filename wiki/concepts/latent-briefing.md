@@ -6,7 +6,6 @@ tags:
   - multi-agent
   - kv-cache
   - optimization
-  - ramp-labs
 aliases: [latent-briefing]
 related: [[concepts/kv-cache-compaction]], [[concepts/multi-agent-systems]], [[concepts/recursive-language-models]], [[entities/ramp-labs]]
 sources: [

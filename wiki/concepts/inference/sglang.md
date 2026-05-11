@@ -6,9 +6,8 @@ updated: 2026-04-15
 status: complete
 tags:
   - inference
-  - structured-generation
   - sglang
-  - lmsys
+  - lab
   - pytorch
 aliases: ["sglang-serving", "radix-attention", "xgrammar"]
 related: [[concepts/inference/vllm]], [[concepts/inference/llama-cpp]], [[concepts/structured-outputs]], [[concepts/inference-speed-development]]

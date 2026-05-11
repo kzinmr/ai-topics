@@ -9,14 +9,7 @@ status: L3
 tags:
   - company
   - developer-tooling
-  - vagrant
-  - packer
-  - vault
-  - consul
-  - nomad
   - infrastructure
-  - iaC
-  - cloud-native
 sources: []
 ---
 

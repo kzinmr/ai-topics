@@ -5,7 +5,6 @@ updated: 2026-04-24
 type: concept
 tags:
   - multi-agent
-  - conflict-resolution
   - governance
   - orchestration
 sources:

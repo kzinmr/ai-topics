@@ -6,11 +6,6 @@ category: concepts
 sub_category: AI Ecosystem
 tags:
   - openai
-  - Astral
-  - Codex
-  - uv
-  - Ruff
-  - Python
   - developer-tooling
   - company
 status: complete

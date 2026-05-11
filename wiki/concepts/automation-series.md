@@ -12,9 +12,6 @@ tags:
   - automation
   - architecture
   - workflow
-  - deterministic
-  - probabilistic
-  - ai-automation
   - human-in-the-loop
 status: complete
 sources:

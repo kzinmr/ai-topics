@@ -8,10 +8,7 @@ sources: [https://x.com/nyk_builderz/status/2041091619848634661, https://x.com/n
 tags:
   - anthropic
   - multi-agent
-  - disagreement
   - ai-agents
-  - architecture-evaluation
-  - diversity-of-perspective
 aliases: [structured-disagreement, claude-code-subagent-disagreement]
 ---
 

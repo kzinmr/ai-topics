@@ -6,7 +6,6 @@ updated: 2026-04-16
 tags:
   - person
   - developer-tooling
-  - jsr
   - ai-agents
   - infrastructure
 aliases: ["ryan-dahl", "node-js-creator", "deno-creator"]

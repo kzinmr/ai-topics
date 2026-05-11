@@ -7,7 +7,6 @@ tags:
   - person
   - blogger
   - product-management
-  - macos
   - hn-popular
 sources: []
 ---

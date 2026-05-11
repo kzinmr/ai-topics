@@ -10,9 +10,6 @@ tags:
   - model
   - evaluation
   - rag
-  - llm-as-a-judge
-  - galileo
-  - maxpool
 sources: []
 ---
 

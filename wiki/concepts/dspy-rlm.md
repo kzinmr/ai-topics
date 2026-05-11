@@ -10,9 +10,8 @@ tags:
   - context-management
   - inference
   - sandbox
-  - python-repl
-  - pydantic-ai
-  - code-mode
+  - developer-tooling
+  - coding-agents
   - company
 status: complete
 related:

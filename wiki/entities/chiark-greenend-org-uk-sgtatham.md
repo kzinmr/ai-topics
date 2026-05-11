@@ -9,7 +9,6 @@ tags:
   - hn-popular
   - developer-tooling
   - open-source
-  - unix-philosophy
 sources: []
 ---
 

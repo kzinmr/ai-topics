@@ -9,11 +9,7 @@ tags:
   - model
   - aws
   - protocol
-  - row-zero
-  - shardstore
   - formal-methods
-  - spreadsheets
-  - systems-engineering
   - developer-tooling
 sources:
   - https://grantslatton.com/

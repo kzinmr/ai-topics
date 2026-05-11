@@ -6,9 +6,7 @@ type: concept
 tags:
   - local-llm
   - hardware
-  - metal
   - inference
-  - deepseek-v4
   - quantization
   - coding-agent
   - tool

@@ -6,9 +6,6 @@ category: concepts
 sub_category: AI Agent Architecture
 tags:
   - developer-tooling
-  - generative-app
-  - stateless
-  - stateful
   - architecture
   - ai-agents
 status: complete

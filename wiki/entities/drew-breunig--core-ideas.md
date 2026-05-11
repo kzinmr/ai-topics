@@ -7,7 +7,6 @@ updated: 2026-04-10
 tags:
   - person
   - context-engineering
-  - spec-driven-development
   - model
   - philosophy
 sources: []

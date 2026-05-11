@@ -12,7 +12,6 @@ tags:
   - openclaw
   - philosophy
   - agentic-engineering
-  - primitives
 related:
   - concepts/openclaw/_index
   - concepts/skill-architecture-patterns

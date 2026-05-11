@@ -5,9 +5,7 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - ai-recruiting
-  - hiring
-  - data-labeling
+  - training
 aliases: ["Mercor.io"]
 sources:
   - https://mercor.com

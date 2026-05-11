@@ -9,8 +9,6 @@ tags:
   - person
   - blogger
   - x-account
-  - ai-observer
-  - china-watch
 sources: []
 ---
 

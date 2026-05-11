@@ -9,8 +9,6 @@ tags:
   - entity
   - coding-agent
   - browser-agent
-  - chrome-extension
-  - firefox-extension
   - local-llm
   - ai-agents
 sources:

@@ -7,11 +7,8 @@ tags:
   - person
   - blogger
   - hn-popular
-  - debian
-  - nixos
   - developer-tooling
   - infrastructure
-  - i3-wm
 sources: []
 ---
 

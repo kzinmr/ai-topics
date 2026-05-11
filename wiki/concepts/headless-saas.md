@@ -7,9 +7,7 @@ tags:
   - concept
   - ai-agents
   - product
-  - api-first
-  - headless
-  - agent-first
+  - developer-tooling
 related: [headless-ai-services, agent-first-design, agent-serverless, ai-agent-memory-middleware]
 sources:
   - https://x.com/ivanburazin/status/2034042095548187072

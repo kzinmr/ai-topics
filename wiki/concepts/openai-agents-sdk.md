@@ -9,8 +9,7 @@ tags:
   - openai
   - sandbox
   - harness-engineering
-  - compute
-  - tooling
+  - tool
 aliases: ["OpenAI Agent SDK", "openai-agents"]
 sources: []
 ---

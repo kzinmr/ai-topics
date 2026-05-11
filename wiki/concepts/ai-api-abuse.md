@@ -11,8 +11,8 @@ updated: 2026-05-04
 tags:
   - concept
   - agent-safety
-  - ai-policy
-  - api-security
+  - policy
+  - security
 status: active
 
 ---

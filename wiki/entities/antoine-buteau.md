@@ -6,10 +6,6 @@ updated: 2026-05-02
 status: L2
 tags:
   - person
-  - bizops
-  - automation-architecture
-  - strategy-execution
-  - technical-literacy
 aliases:
   - anbuteau
   - Antoine Buteau

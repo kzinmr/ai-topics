@@ -2,9 +2,8 @@
 title: "Arize AI"
 tags:
   - company
-  - ai-observability
   - evaluation
-  - agent-monitoring
+  - infrastructure
   - open-source
 created: 2026-04-20
 updated: 2026-05-02

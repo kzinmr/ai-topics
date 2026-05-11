@@ -9,7 +9,6 @@ tags:
   - ai-agents
   - methodology
   - data-science
-  - meta-optimization
   - self-improving
 aliases:
   - autodata

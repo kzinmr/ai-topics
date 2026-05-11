@@ -6,7 +6,6 @@ updated: 2026-05-08
 tags:
   - company
   - ai-agents
-  - foundation-models
 aliases: ["Adept", "Adept AI Labs"]
 sources:
   - https://www.adept.ai

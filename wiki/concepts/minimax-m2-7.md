@@ -7,7 +7,6 @@ tags:
   - model
   - open-source
   - agentic-engineering
-  - self-improvement
   - training
 aliases:
   - "MiniMax-M2.7"

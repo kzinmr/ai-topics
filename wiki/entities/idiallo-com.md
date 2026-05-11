@@ -6,7 +6,6 @@ updated: 2026-05-02
 tags:
   - person
   - developer-tooling
-  - ai-writing-workflows
 aliases:
   - Ibrahim Diallo
   - idiallo

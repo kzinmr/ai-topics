@@ -5,8 +5,6 @@ updated: 2026-05-08
 type: concept
 tags:
   - model
-  - multi-token-prediction
-  - fp8-training
   - inference
   - infrastructure
   - training

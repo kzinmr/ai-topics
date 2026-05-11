@@ -11,9 +11,8 @@ updated: 2026-05-04
 tags:
   - person
   - model
-  - datasets
   - huggingface
-  - digital-humanities
+  - education
   - training
   - open-source
 sources:

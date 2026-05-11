@@ -5,8 +5,6 @@ updated: 2026-04-28
 type: concept
 tags:
   - economics
-  - tokens
-  - cost
   - ai-agents
   - infrastructure
 sources:

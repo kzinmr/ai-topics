@@ -14,11 +14,7 @@ sub_category: AI Agent Architecture
 tags:
   - ai-agents
   - infrastructure
-  - managed-services
-  - saas-integration
   - security
-  - permissions
-  - logs
   - company
 status: complete
 created: 2026-04-30

@@ -8,8 +8,6 @@ tags:
   - benchmark
   - evaluation
   - coding-agents
-  - code-generation
-  - contamination-free
   - developer-tooling
 aliases:
   - livecodebench

@@ -4,7 +4,6 @@ tags:
   - company
   - ai-agents
   - fintech
-  - finance-automation
 created: 2026-04-20
 updated: 2026-05-02
 type: entity

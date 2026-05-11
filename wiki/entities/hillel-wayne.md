@@ -8,9 +8,7 @@ tags:
   - person
   - blogger
   - formal-methods
-  - tla+
   - software-engineering
-  - empirical-research
   - testing
 sources: []
 ---

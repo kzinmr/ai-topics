@@ -5,7 +5,6 @@ created: 2026-04-19
 updated: 2026-04-19
 tags:
   - multi-agent
-  - consensus
   - architecture
   - orchestration
   - ai-agents

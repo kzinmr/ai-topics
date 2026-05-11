@@ -7,7 +7,6 @@ tags:
   - company
   - infrastructure
   - inference
-  - model-deployment
 aliases: ["Baseten"]
 sources:
   - https://www.baseten.co

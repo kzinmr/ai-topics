@@ -12,7 +12,6 @@ tags:
   - concept
   - multimodal
   - model
-  - codec
 status: L3
 related:
   - concepts/speech-audio-asr-tts-voice

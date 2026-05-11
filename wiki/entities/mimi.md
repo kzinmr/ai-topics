@@ -4,10 +4,8 @@ type: entity
 tags:
   - entity
   - multimodal
-  - speech-tokenizer
   - model
   - streaming
-  - kyutai
 created: 2026-05-01
 updated: 2026-05-01
 status: full

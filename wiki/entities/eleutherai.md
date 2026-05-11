@@ -12,7 +12,6 @@ tags:
   - company
   - open-source
   - evaluation
-  - research-collective
 sources:
   - https://www.eleuther.ai/
   - https://github.com/EleutherAI

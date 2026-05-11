@@ -12,7 +12,6 @@ tags:
   - person
   - developer-tooling
   - open-source
-  - web-framework
   - infrastructure
 sources:
   - https://tiangolo.com/

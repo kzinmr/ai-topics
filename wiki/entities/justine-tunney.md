@@ -6,12 +6,8 @@ updated: 2026-05-04
 tags:
   - entity
   - person
-  - software-engineer
   - open-source
-  - cpp
-  - cpu-inference
-  - llamafile
-  - mozilla
+  - company
 aliases:
   - Justine Tunney
   - jart

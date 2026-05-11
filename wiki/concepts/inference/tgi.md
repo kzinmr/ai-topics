@@ -8,8 +8,6 @@ tags:
   - inference
   - huggingface
   - fine-tuning
-  - multi-lora
-  - tgi
 aliases:
   - TGI
   - Text Generation Inference

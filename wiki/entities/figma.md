@@ -5,10 +5,8 @@ created: 2026-04-20
 updated: 2026-04-20
 tags:
   - entity
-  - figma
   - product
   - anthropic
-  - claude-design
   - methodology
 related: [anthropic, saas-apocalypse, claude-design]
 sources: []

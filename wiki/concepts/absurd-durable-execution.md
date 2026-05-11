@@ -2,11 +2,8 @@
 title: "Absurd (Postgres-Native Durable Execution)"
 tags:
   - concept
-  - ai-agent-pattern
-  - async-processing
+  - infrastructure
   - durable-execution
-  - postgres
-  - workflow-engine
 created: 2026-05-07
 updated: 2026-05-07
 type: concept

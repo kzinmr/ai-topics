@@ -4,12 +4,11 @@ type: entity
 created: 2026-04-09
 updated: 2026-04-16
 tags:
-- person
-- blogger
-- hn-popular
-- tech-policy
-- copyright
-- enshittification
+  - person
+  - blogger
+  - hn-popular
+  - policy
+  - methodology
 aliases:
 - pluralistic.net
 - cory doctorow

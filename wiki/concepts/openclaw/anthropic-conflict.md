@@ -12,8 +12,6 @@ tags:
   - concept
   - openclaw
   - anthropic
-  - platform-risk
-  - subscription-economics
 related:
   - concepts/openclaw/_index
   - concepts/openclaw/philosophy

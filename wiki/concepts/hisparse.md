@@ -2,9 +2,8 @@
 title: "HiSparse"
 type: concept
 tags:
-  - memory-management
   - optimization
-  - sparse-attention
+  - model
   - sglang
   - kv-cache
 status: active

@@ -5,7 +5,6 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - data-platform
   - multimodal
   - open-source
   - infrastructure

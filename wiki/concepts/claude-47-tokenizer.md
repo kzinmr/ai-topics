@@ -7,7 +7,6 @@ tags:
   - concept
   - anthropic
   - model
-  - cost-analysis
 related: [context-window-management, context-compaction, claude-opus]
 sources: []
 ---

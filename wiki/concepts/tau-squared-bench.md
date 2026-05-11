@@ -8,10 +8,8 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - benchmark
-  - dual-control
   - evaluation
   - coordination
-  - telecom
   - company
 related:
   - "[[concepts/tau-bench]]"

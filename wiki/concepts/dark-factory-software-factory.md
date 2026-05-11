@@ -7,7 +7,6 @@ tags:
   - concept
   - multi-agent
   - automation
-  - strongdm
 related: [agent-team-swarm, openai-symphony, anthropic-managed-agents]
 sources:
   - https://simonwillison.net/2026/Feb/7/software-factory/

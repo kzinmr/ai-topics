@@ -6,9 +6,7 @@ updated: 2026-05-04
 tags:
   - concept
   - quantization
-  - library
   - inference
-  - nf4
   - fine-tuning
 status: L2
 sources:

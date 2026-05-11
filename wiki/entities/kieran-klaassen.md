@@ -6,7 +6,6 @@ type: entity
 tags:
   - entity
   - person
-  - compound-engineering
   - company
 sources:
   - raw/articles/2026-05-02_guide-to-agent-native-product-management.md

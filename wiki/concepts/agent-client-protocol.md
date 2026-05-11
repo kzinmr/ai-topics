@@ -4,12 +4,9 @@ created: 2026-04-30
 updated: 2026-04-30
 type: concept
 tags:
-  - agent-client-protocol
   - protocol
   - mcp
   - coding-agents
-  - editor-integration
-  - json-rpc
 aliases: [Agent Client Protocol, ACP]
 related: [[concepts/agent-communication-protocols]], [[concepts/mcp]], [[concepts/ai-coding-agent-criticism]]
 sources:

@@ -6,7 +6,6 @@ updated: 2026-05-06
 status: L1
 tags:
   - tool
-  - echo
   - person
 sources:
   - https://simonwillison.net/2026/May/5/llm-echo/

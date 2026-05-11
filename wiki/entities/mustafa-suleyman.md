@@ -8,10 +8,9 @@ tags:
   - person
   - google
   - microsoft
-  - inflection-ai
   - anthropic
   - agent-safety
-  - ai-ethics
+  - ethics
 sources: []
 ---
 

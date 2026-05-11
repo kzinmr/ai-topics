@@ -8,7 +8,6 @@ tags:
   - inference
   - optimization
   - local-llm
-  - kernel-fusion
 sources:
   - https://www.lucebox.com/blog/megakernel
 related:

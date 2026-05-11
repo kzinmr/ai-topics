@@ -7,7 +7,6 @@ tags:
   - company
   - model
   - nlp
-  - embedding
 aliases: ["Cohere Inc.", "Cohere AI"]
 sources:
   - https://cohere.com/

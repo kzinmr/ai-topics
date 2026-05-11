@@ -8,7 +8,6 @@ tags:
   - ai-agents
   - agentic-engineering
   - multi-agent
-  - subagent-patterns
 status: complete
 description: "Patterns and practices for building and deploying AI agents — harnesses, workflows, and multi-agent orchestration."
 ---

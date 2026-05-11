@@ -6,9 +6,7 @@ updated: 2026-04-14
 tags:
   - concept
   - security
-  - llm-economics
   - anthropic
-  - aisafety
 related:
   - concepts/claude-mythos-preview
   - concepts/ai-digital-nato

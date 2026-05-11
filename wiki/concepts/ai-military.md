@@ -2,11 +2,9 @@
 title: "AI in Military Wargames"
 tags:
   - agent-safety
-  - military
+  - ai-adoption
   - governance
   - anthropic
-  - pentagon
-  - mythos
 created: 2026-04-24
 updated: 2026-05-04
 type: concept

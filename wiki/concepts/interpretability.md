@@ -10,8 +10,6 @@ tags:
   - interpretability
   - model
   - agent-safety
-  - steering
-  - activation-engineering
 related:
   - concepts/activation-steering
   - concepts/monosemanticity

@@ -5,7 +5,6 @@ updated: 2026-05-05
 type: entity
 tags:
   - platform
-  - headless-saas
   - agentic-engineering
   - mcp
   - company

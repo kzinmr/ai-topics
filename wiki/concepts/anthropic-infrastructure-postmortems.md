@@ -6,8 +6,6 @@ updated: 2026-05-08
 tags:
   - anthropic
   - infrastructure
-  - postmortem
-  - incident-analysis
 aliases:
   - Claude quality degradation
   - Anthropic postmortem

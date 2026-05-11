@@ -4,9 +4,7 @@ created: 2026-05-02
 updated: 2026-05-02
 tags:
   - concept
-  - ai-in-workplace
   - evaluation
-  - incentive-design
 aliases:
   - simulacrum-of-knowledge-work
   - Goodhart's Law in AI

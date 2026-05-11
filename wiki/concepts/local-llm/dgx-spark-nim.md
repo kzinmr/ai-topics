@@ -8,8 +8,6 @@ tags:
   - hardware
   - nvidia
   - inference
-  - nemo-claw
-  - openshell
   - infrastructure
 aliases: ["nvidia-dgx-spark", "local-llm-server", "gb10-superchip", "nim-on-spark"]
 related: [[concepts/self-hosting-ai-development]], [[concepts/ollama]], [[concepts/llama-cpp]], [[concepts/inference/vllm]], [[concepts/openclaw]]

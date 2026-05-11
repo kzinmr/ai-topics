@@ -13,9 +13,7 @@ sources: [https://martin.kleppmann.com, https://martin.kleppmann.com/papers/loca
 tags:
   - person
   - architecture
-  - CRDT
-  - local-first
-  - databases
+  - developer-tooling
   - open-source
 
 ---

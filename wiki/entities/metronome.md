@@ -5,9 +5,6 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - billing
-  - monetization
-  - usage-based-pricing
 aliases: ["Metronome"]
 sources:
   - https://metronome.com

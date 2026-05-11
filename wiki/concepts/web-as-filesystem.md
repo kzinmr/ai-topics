@@ -2,15 +2,12 @@
 title: "Web-as-Filesystem (Nia Docs)"
 type: concept
 aliases:
-  - web-filesystem
   - agentsearch
   - nia-docs
   - documentation-shell
 tags:
   - concept
-  - web-filesystem
   - developer-tooling
-  - rags
   - tool
 status: complete
 description: "Webの全ドキュメントをUnixファイルシステムとしてマウントする抽象化。エージェントにtree/grep/cat/findを自然に使い、コード幻覚を解消。"

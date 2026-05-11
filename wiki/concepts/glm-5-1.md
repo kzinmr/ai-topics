@@ -7,7 +7,6 @@ tags:
   - model
   - open-source
   - agentic-engineering
-  - mmo
 aliases:
   - "GLM-5.1 (Zhipu AI)"
   - "Zhipu GLM-5.1"

@@ -6,8 +6,6 @@ updated: 2026-05-08
 tags:
   - harness-engineering
   - architecture
-  - claude-agent-sdk
-  - long-running
 aliases:
   - long-running agent harness
   - multi-context-window agent

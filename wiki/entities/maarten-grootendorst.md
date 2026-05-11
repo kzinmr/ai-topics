@@ -9,7 +9,6 @@ tags:
   - person
   - data-science
   - quantization
-  - visual-guide
 status: current
 related:
   - "[[concepts/model-quantization]]"

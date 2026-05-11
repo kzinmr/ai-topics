@@ -7,7 +7,6 @@ tags:
   - entity
   - person
   - infrastructure
-  - daytona
 related: [headless-saas, headless-ai-services, agent-serverless]
 sources:
   - https://x.com/ivanburazin

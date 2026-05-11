@@ -6,7 +6,6 @@ updated: 2026-04-30
 tags:
   - model
   - open-source
-  - historical-data
 sources:
   - raw/articles/2026-04-28_talkie-historical-llm.md
 related:

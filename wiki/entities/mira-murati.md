@@ -5,9 +5,8 @@ created: 2026-04-13
 updated: 2026-04-13
 tags:
   - person
-  - ai-executive
   - openai
-  - thinking-machines-lab
+  - lab
   - agent-safety
 sources: []
 ---

@@ -7,7 +7,6 @@ updated: 2026-04-28
 tags:
   - product
   - ai-agents
-  - features
 sources:
   - https://code.claude.com/en/whats-new/2026-w15
   - https://code.claude.com/en/whats-new/2026-w14

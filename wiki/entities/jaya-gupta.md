@@ -5,7 +5,6 @@ aliases: [jaya-gupta, foundation-capital-partner]
 tags:
   - entity
   - company
-  - partner
   - search
   - ai-agents
 status: complete

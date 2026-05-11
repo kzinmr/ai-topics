@@ -6,7 +6,6 @@ updated: 2026-05-04
 tags:
   - concept
   - training
-  - automated-ml
   - ai-agents
 aliases:
   - modelcrafting

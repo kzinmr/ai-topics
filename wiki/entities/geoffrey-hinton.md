@@ -7,11 +7,8 @@ depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_though
 tags:
   - person
   - model
-  - neural-networks
   - agent-safety
   - google
-  - backpropagation
-  - boltzmann-machine
 sources: []
 ---
 

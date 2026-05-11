@@ -8,12 +8,9 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - concept
-  - agency
   - model
   - person
   - agent-safety
-  - tool-ai
-  - convergence
 sources:
   - raw/articles/2020-05-28_gwern-ambient-agency.md
   - raw/articles/2012-12-09_gwern-surprisingly-turing-complete.md

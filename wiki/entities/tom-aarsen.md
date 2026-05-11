@@ -7,7 +7,6 @@ updated: 2026-04-10
 tags:
   - person
   - model
-  - sentence-transformers
   - nlp
   - huggingface
   - search

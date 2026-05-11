@@ -7,12 +7,9 @@ tags:
   - person
   - blogger
   - hn-popular
-  - powerdns
   - open-source
   - security
-  - digital-sovereignty
-  - tech-policy
-  - lean-software
+  - policy
 sources: []
 ---
 

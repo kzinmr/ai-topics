@@ -3,7 +3,6 @@ title: "Data Engineering"
 type: concept
 tags:
   - infrastructure
-  - data-infrastructure
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

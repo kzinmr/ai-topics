@@ -6,10 +6,8 @@ updated: 2026-04-10
 tags:
   - person
   - developer-tooling
-  - web-design
   - writing
   - hn-popular
-  - ui-ux
 sources: []
 ---
 

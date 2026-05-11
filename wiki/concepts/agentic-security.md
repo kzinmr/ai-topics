@@ -10,7 +10,6 @@ tags:
   - security
   - ai-agents
   - mcp
-  - api-security
 aliases: [AI agent security, MCP security, agent stack security]
 related: [[concepts/model-context-protocol-mcp]], [[entities/salt-security]], [[concepts/sandbox]], [[concepts/ai-agent-traps]]
 ---

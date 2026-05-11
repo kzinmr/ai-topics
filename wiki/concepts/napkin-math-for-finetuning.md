@@ -6,12 +6,8 @@ updated: 2026-05-07
 tags:
   - fine-tuning
   - training
-  - memory-estimation
-  - compute-estimation
   - hardware
   - quantization
-  - gradient-checkpointing
-  - cpu-offloading
 related_concepts:
   - fine-tuning/peft-lora-qlora
   - qlora

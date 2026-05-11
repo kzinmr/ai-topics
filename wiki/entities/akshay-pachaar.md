@@ -8,10 +8,8 @@ updated: 2026-04-30
 tags:
   - entity
   - person
-  - ai-engineer
   - data-science
   - harness-engineering
-  - lightning-ai
 aliases:
   - patchy631
   - akshay_pachaar

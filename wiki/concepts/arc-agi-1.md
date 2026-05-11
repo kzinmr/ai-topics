@@ -4,11 +4,7 @@ type: concept
 created: 2026-05-08
 tags:
   - benchmark
-  - abstract-reasoning
-  - fluid-intelligence
-  - agi-research
-  - visual-reasoning
-  - program-synthesis
+  - reasoning
   - evaluation
 aliases:
   - arc-agi

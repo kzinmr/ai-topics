@@ -5,11 +5,8 @@ created: 2026-05-03
 updated: 2026-05-03
 tags:
   - concept
-  - epistemology
+  - philosophy
   - developer-tooling
-  - system-understanding
-  - learning
-  - meta-cognition
 aliases: ["knowledge-shields", "hypothesis-invalidation-loop", "debugging-as-tutoring", "self-verification-skills"]
 sources:
   - raw/articles/entropicthoughts.com--understanding-systems--149e6399.md

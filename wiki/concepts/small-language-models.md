@@ -12,7 +12,7 @@ tags:
   - concept
   - model
   - inference
-  - edge
+  - infrastructure
   - optimization
 status: complete
 sources:

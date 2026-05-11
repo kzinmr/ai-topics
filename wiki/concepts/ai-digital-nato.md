@@ -5,9 +5,7 @@ created: 2026-04-13
 updated: 2026-04-24
 tags:
   - concept
-  - geopolitics
   - training
-  - frontier-model-forum
   - china
   - openai
   - anthropic

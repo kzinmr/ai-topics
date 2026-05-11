@@ -7,7 +7,6 @@ created: 2026-04-25
 updated: 2026-04-27
 tags:
   - concept
-  - redirect
 status: redirect
 sources:
   - "https://simonwillison.net/tags/agentic-engineering/"

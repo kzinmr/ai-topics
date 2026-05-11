@@ -9,7 +9,6 @@ aliases:
   - stochi0
 tags:
   - person
-  - agent-research
   - harness-engineering
   - training
 sources:

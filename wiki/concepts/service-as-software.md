@@ -4,10 +4,9 @@ created: 2026-05-04
 updated: 2026-05-04
 tags:
   - concept
-  - ai-business-model
+  - economics
   - product
   - company
-  - economics
 aliases:
   - "Services: The New Software"
   - "Service as Software"

@@ -6,9 +6,6 @@ updated: 2026-05-07
 source: "wiki-article-ingest"
 tags:
   - person
-  - publisher
-  - technology-thinker
-  - web-2.0
   - open-source
   - developer-tooling
 sources:

@@ -7,12 +7,7 @@ updated: 2026-04-27
 depth: 22000
 status: L3
 tags:
-  - ghostty
   - developer-tooling
-  - terminal-emulator
-  - libghostty
-  - gtk
-  - gpu-rendering
 sources: []
 ---
 

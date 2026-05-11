@@ -5,9 +5,7 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - revenue-platform
   - ai-native
-  - gtm
 aliases: ["Reevo AI", "reevo.ai"]
 sources:
   - https://reevo.ai

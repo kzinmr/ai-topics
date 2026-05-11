@@ -6,9 +6,7 @@ updated: 2026-05-08
 tags:
   - concept
   - security
-  - ai-assisted-development
-  - firefox
-  - mozilla
+  - company
   - anthropic
 aliases: ["firefox ai security audit", "mozilla mythos preview hardening"]
 related:

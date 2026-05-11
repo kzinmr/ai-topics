@@ -7,7 +7,6 @@ tags:
   - person
   - methodology
   - writing
-  - tech-leadership
 sources:
   - https://open.substack.com/users/30107029-gergely-orosz
   - https://newsletter.pragmaticengineer.com

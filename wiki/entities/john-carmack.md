@@ -6,11 +6,8 @@ updated: 2026-04-13
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': False}
 tags:
   - person
-  - game-engineer
-  - vr
   - agi
-  - keen-technologies
-  - id-software
+  - company
 sources: []
 ---
 

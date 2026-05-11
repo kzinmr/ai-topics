@@ -4,9 +4,6 @@ type: concept
 created: 2026-05-08
 tags:
   - benchmark
-  - instruction-following
-  - verifiable-instructions
-  - deterministic-evaluation
   - evaluation
 related_concepts:
   - concepts/ai-benchmarks-evals-overview

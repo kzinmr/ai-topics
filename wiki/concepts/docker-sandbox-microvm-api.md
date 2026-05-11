@@ -5,7 +5,6 @@ updated: 2026-04-30
 tags:
   - sandbox
   - developer-tooling
-  - microvm
   - ai-agents
   - security
 aliases: ["docker-sandbox-microvm", "sandboxd-api", "docker-sandboxes"]

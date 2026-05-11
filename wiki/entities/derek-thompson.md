@@ -6,9 +6,7 @@ updated: 2026-04-10
 tags:
   - person
   - blogger
-  - journalist
   - economics
-  - ai-analysis
   - hn-popular
 sources: []
 ---

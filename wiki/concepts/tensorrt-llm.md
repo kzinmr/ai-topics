@@ -7,7 +7,6 @@ tags:
   - concept
   - inference
   - nvidia
-  - tensorrt
   - optimization
 status: L1
 aliases:

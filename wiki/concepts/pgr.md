@@ -8,15 +8,11 @@ tags:
   - search
   - coding-agents
   - protocol
-  - search-tool
   - developer-tooling
-  - ripgrep
-  - tool-calls
 sources:
   - "[[raw/articles/2026-05-06_entire-improving-agentic-search-in-coding-agents]]"
   - https://github.com/entireio/pgr
 related:
-  - ripgrep
   - fff
   - MCP
 ---

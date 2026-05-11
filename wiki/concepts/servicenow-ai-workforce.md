@@ -7,7 +7,6 @@ tags:
   - ai-agents
   - company
   - automation
-  - servicenow
   - multi-agent
 sources:
   - raw/articles/servicenow-ai-workforce-2026.md

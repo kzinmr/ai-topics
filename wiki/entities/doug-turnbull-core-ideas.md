@@ -8,7 +8,6 @@ tags:
   - person
   - philosophy
   - search
-  - relevance
 sources: []
 ---
 

@@ -7,7 +7,6 @@ tags:
   - company
   - model
   - person
-  - elon-musk
 sources:
   - raw/articles/2026-05-01_xai-grok-4-3-launch.md
   - raw/articles/2026-02-02_spacex-acquires-xai-merger.md

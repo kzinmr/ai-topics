@@ -8,8 +8,6 @@ updated: 2026-04-30
 tags:
   - entity
   - fintech
-  - ai-organization
-  - payments
   - ai-native
 aliases:
   - Square

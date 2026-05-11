@@ -8,10 +8,6 @@ tags:
   - blogger
   - hn-popular
   - developer-tooling
-  - facilitation
-  - cohort-based-courses
-  - note-taking
-  - effective-altruism
 sources: []
 ---
 

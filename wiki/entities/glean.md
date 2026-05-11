@@ -5,9 +5,8 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - enterprise-search
+  - search
   - ai-agents
-  - work-assistant
   - rag
 aliases: ["Glean Work", "Gleanwork"]
 sources:

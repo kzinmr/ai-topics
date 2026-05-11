@@ -12,7 +12,6 @@ tags:
   - open-source
   - evaluation
   - company
-  - interconnects
   - benchmark
 sources: []
 ---

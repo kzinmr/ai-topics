@@ -10,7 +10,6 @@ tags:
   - concept
   - anthropic
   - model
-  - claude-opus
 status: complete
 sources:
   - url: "https://www.anthropic.com/news"

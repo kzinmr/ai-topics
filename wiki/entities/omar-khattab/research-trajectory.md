@@ -2,7 +2,6 @@
 title: "Omar Khattab — Research Trajectory"
 tags:
   - lab
-  - overview
 created: 2026-04-24
 updated: 2026-04-24
 type: sub-entity

@@ -4,11 +4,8 @@ type: concept
 created: 2026-05-08
 tags:
   - benchmark
-  - factuality
-  - hallucination
-  - methodology
-  - calibration
   - evaluation
+  - methodology
 related_concepts:
   - concepts/ai-benchmarks-evals-overview
   - concepts/triviaqa

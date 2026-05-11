@@ -2,9 +2,7 @@
 title: "Tool Orchestration"
 type: concept
 tags:
-  - tool-orchestration
   - mcp
-  - function-calling
   - tool
 status: L3
 created: 2026-04-27

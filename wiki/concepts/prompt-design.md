@@ -6,7 +6,6 @@ updated: 2026-04-30
 tags:
   - concept
   - prompting
-  - instruction
 status: complete
 description: "Prompt design, instruction fine-tuning, and system prompt engineering."
 ---

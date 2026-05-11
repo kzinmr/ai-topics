@@ -4,16 +4,12 @@ type: concept
 aliases:
   - block-hierarchy-to-intelligence
   - jack-dorsey-org-model
-  - ai-native-organization
 created: 2026-04-13
 updated: 2026-04-15
 tags:
   - concept
   - company
-  - block
-  - jack-dorsey
   - ai-native
-  - ai-native-organization
 status: draft
 depth_tracking:
   target: 10KB+

@@ -10,7 +10,6 @@ updated: 2026-04-12
 tags:
   - concept
   - agentic-engineering
-  - development-pattern
 status: draft
 sources:
   - "https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/"

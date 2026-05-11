@@ -6,7 +6,6 @@ updated: 2026-05-01
 tags:
   - concept
   - training
-  - ddp
   - infrastructure
 status: L1
 aliases:

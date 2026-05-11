@@ -8,7 +8,6 @@ status: L1
 tags:
   - entity
   - coding-agent
-  - vscode-extension
   - developer-tooling
   - local-llm
   - ai-agents

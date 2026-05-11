@@ -9,7 +9,7 @@ tags:
   - reasoning
   - multimodal
   - inference
-  - pricing
+  - economics
 sources:
   - raw/articles/2026-05-01_xai-grok-4-3-launch.md
 ---

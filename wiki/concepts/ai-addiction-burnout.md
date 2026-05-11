@@ -4,11 +4,7 @@ type: concept
 created: 2026-04-13
 updated: 2026-04-13
 tags:
-  - burnout
   - developer-tooling
-  - ai-addiction
-  - developer-wellness
-  - work-culture
 aliases: ["ai-burnout", "developer-addiction-patterns", "black-eye-club", "slot-machine-development"]
 related: [[concepts/inference-speed-development]], [[concepts/direct-prompting-philosophy]], 
 sources:

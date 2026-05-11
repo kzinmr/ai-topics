@@ -10,7 +10,7 @@ tags:
   - x-account
   - model
   - developer-tooling
-  - vercel
+  - company
 sources: []
 ---
 

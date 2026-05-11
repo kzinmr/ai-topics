@@ -8,7 +8,6 @@ tags:
   - person
   - rlm
   - dspy
-  - reasoning-models
   - lab
 status: complete
 website: https://raw.works

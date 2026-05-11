@@ -5,12 +5,8 @@ created: 2026-04-30
 updated: 2026-04-30
 tags:
   - developer-tooling
-  - beam
-  - otp
   - orchestration
   - infrastructure
-  - concurrency
-  - openai-symphony
 sources:
   - raw/articles/elixir-beam-agent-orchestration-2026.md
   - raw/articles/openai-symphony-codex-orchestration.md

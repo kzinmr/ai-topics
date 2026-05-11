@@ -11,7 +11,6 @@ tags:
   - benchmark
   - infrastructure
   - evaluation
-  - metric
 related:
   - "[[concepts/tau-bench]]"
   - "[[concepts/tau-squared-bench]]"

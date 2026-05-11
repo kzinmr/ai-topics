@@ -11,7 +11,7 @@ tags:
   - methodology
   - software-engineering
   - agentic-engineering
-  - tooling
+  - tool
 status: active
 ---
 

@@ -7,9 +7,7 @@ tags:
   - concept
   - open-source
   - model
-  - consortium
   - nvidia
-  - allen-institute
 aliases: ["open-model lab", "open foundation models"]
 related:
   - entities/nathan-lambert

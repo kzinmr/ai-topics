@@ -8,7 +8,6 @@ tags:
   - person
   - model
   - langchain
-  - langgraph
   - rag
   - ai-agents
   - context-engineering

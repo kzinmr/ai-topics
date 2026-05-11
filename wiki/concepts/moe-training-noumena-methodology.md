@@ -7,10 +7,9 @@ tags:
   - model
   - training
   - methodology
-  - speedrun
   - evaluation
   - infrastructure
-  - fp8
+  - quantization
 sources: [raw/articles/2026-03-14_noumena-research-12-posts.md]
 ---
 

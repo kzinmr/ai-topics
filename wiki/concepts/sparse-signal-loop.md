@@ -4,8 +4,6 @@ tags:
   - concept
   - harness-engineering
   - evaluation
-  - feedback-density
-  - memory-architecture
   - rlm
 created: 2026-05-02
 updated: 2026-05-02

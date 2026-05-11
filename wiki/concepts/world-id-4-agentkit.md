@@ -9,7 +9,6 @@ tags:
   - methodology
   - security
   - ai-agents
-  - verification
 aliases: ["World ID 4.0", "AgentKit", "Proof of Human", "Worldcoin"]
 sources:
   - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md

@@ -13,7 +13,6 @@ tags:
   - local-llm
   - hardware
   - inference
-  - snapshot
 status: enriched
 sources:
   - "raw/articles/2026-05-07_x-andrewchen-local-ai-home-lab-state.md"

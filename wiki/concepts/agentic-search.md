@@ -6,7 +6,6 @@ type: concept
 tags:
   - search
   - ai-agents
-  - deep-research
   - coding-agents
   - training
 aliases:

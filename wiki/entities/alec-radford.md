@@ -8,8 +8,6 @@ tags:
   - person
   - openai
   - model
-  - whisper
-  - clip
   - multimodal
 sources: []
 ---

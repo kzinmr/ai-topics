@@ -13,10 +13,7 @@ status: complete
 tags:
   - person
   - coding-agents
-  - swarm-orchestration
-  - thread-weaving
   - rlm
-  - slate
 sources: []
 ---
 

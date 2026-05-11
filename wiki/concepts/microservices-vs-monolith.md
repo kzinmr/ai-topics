@@ -5,10 +5,8 @@ created: 2026-04-16
 updated: 2026-04-16
 tags:
   - architecture
-  - monolith
 aliases:
   - monolith-vs-microservices
-  - monolith
   - microservices
   - distributed monolith
   - modular monolith

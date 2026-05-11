@@ -7,8 +7,6 @@ tags:
   - orchestration
   - ai-agents
   - langchain
-  - stateful-agents
-  - graph-based
 aliases:
   - LangGraph Framework
   - LangGraph Platform

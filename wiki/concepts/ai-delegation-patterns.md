@@ -5,8 +5,6 @@ date: 2026-05-07
 tags:
   - concept
   - ai-agents
-  - human-ai-interaction
-  - delegation
   - developer-tooling
 sources:
   - https://open.substack.com/pub/thesignal/p/the-art-of-delegation-in-the-age

@@ -8,8 +8,6 @@ tags:
   - quantization
   - inference
   - optimization
-  - llm-int8
-  - bitnet
 status: L1
 sources:
   - https://timdettmers.com/2022/08/17/llm-int8-and-emergent-features/

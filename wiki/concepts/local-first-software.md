@@ -6,11 +6,7 @@ updated: 2026-04-13
 status: draft
 tags:
   - architecture
-  - CRDT
-  - data-ownership
-  - offline-first
-  - collaboration
-  - event-sourcing
+  - developer-tooling
 related:
   - martin-kleppmann
   - automerge

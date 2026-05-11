@@ -7,10 +7,7 @@ tags:
   - developer-tooling
   - framework
   - ai-agents
-  - vercel
-  - react
-  - vue
-  - svelte
+  - company
   - open-source
   - tool
 aliases: [json-render, vercel-json-render]

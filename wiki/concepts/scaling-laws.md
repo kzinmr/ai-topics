@@ -10,9 +10,6 @@ updated: 2026-05-05
 tags:
   - concept
   - training
-  - pretraining
-  - data-quality
-  - compute-optimal
 sources:
   - raw/articles/2026-05-04_infolaw-information-scaling-laws.md
   - https://arxiv.org/abs/2605.02364

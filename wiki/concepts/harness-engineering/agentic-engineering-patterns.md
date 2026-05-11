@@ -16,7 +16,6 @@ tags:
   - anthropic
   - testing
   - developer-tooling
-  - patterns
   - person
 source: https://simonwillison.net/guides/agentic-engineering-patterns/
 sources: []

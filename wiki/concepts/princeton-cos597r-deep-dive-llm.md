@@ -8,7 +8,6 @@ tags:
   - education
   - curriculum
   - lab
-  - llm-papers
   - optimization
   - alignment
   - reasoning

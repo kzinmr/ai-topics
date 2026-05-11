@@ -3,7 +3,7 @@ title: "RLM — Recursive Language Models"
 tags:
   - lab
   - inference
-  - context
+  - context-management
 created: 2026-04-24
 updated: 2026-05-04
 type: sub-entity

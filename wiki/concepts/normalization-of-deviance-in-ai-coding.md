@@ -6,7 +6,6 @@ tags:
   - concept
   - agent-safety
   - coding-agents
-  - risk-management
 updated: 2026-05-08
 ---
 

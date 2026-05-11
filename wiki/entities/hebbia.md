@@ -5,8 +5,7 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - enterprise-search
-  - knowledge-work
+  - search
   - ai-agents
   - fintech
 aliases: ["Hebbia Inc.", "Hebbia AI"]

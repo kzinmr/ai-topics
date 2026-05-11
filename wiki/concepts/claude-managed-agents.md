@@ -6,12 +6,8 @@ updated: 2026-05-07
 tags:
   - anthropic
   - ai-agents
-  - memory-stores
-  - file-system-memory
+  - memory-systems
   - orchestration
-  - outcomes-loop
-  - dreams
-  - webhooks
 aliases: [claude-managed-agents, claude-platform-agents]
 related: [[entities/anthropic]], [[concepts/agent-memory]], [[concepts/filesystem-memory]], [[concepts/anthropic-managed-agents]], [[concepts/multi-agent-orchestration]]
 sources:

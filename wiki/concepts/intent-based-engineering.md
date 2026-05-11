@@ -1,7 +1,6 @@
 ---
 title: "Intent-Based Engineering"
 tags:
-  - articulation-gap
   - prompting
   - evaluation
   - agentic-engineering

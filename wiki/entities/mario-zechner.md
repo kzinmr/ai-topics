@@ -7,12 +7,10 @@ updated: 2026-04-10
 tags:
   - person
   - x-account
-  - game-development
   - model
   - local-llm
   - open-source
   - developer-tooling
-  - kotlin
 sources: []
 ---
 

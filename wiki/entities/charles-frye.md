@@ -11,7 +11,6 @@ tags:
   - model
   - infrastructure
   - inference
-  - developer-advocacy
 
 ---
 

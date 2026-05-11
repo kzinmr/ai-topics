@@ -5,9 +5,7 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - healthcare-ai
   - ai-adoption
-  - medical-documentation
 aliases: ["Abridge"]
 sources:
   - https://www.abridge.com

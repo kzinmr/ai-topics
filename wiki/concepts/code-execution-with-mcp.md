@@ -6,7 +6,6 @@ tags:
   - mcp
   - anthropic
   - tool
-  - progressive-disclosure
   - harness-engineering
   - sandbox
 created: 2026-04-25

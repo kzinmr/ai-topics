@@ -6,9 +6,8 @@ updated: 2026-05-08
 tags:
   - company
   - voice-ai
-  - state-space-models
   - multimodal
-  - ai-models
+  - model
 aliases: ["Cartesia AI"]
 sources:
   - https://cartesia.ai

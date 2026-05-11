@@ -4,11 +4,7 @@ type: concept
 created: 2026-05-08
 tags:
   - benchmark
-  - game-based-agent
   - coding-agents
-  - long-term-planning
-  - spatial-reasoning
-  - resource-optimization
   - evaluation
 aliases:
   - fle

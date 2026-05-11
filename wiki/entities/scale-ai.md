@@ -5,9 +5,9 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - data-labeling
+  - training
   - infrastructure
-  - ai-platform
+  - platform
   - ai-adoption
 aliases: ["Scale", "Scale AI, Inc."]
 sources:

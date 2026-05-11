@@ -8,10 +8,6 @@ sources: [https://www.firstround.com/ai/shopify, https://x.com/tobi/status/17412
 tags:
   - ai-adoption
   - company
-  - shopify
-  - reflexive-ai
-  - organizational-change
-  - hiring-policy
 aliases: [reflexive-ai-usage, shopify-ai-policy]
 ---
 

@@ -6,7 +6,6 @@ updated: 2026-05-08
 tags:
   - company
   - robotics
-  - construction
 aliases: ["Bedrock Robotics"]
 sources:
   - https://bedrockrobotics.com

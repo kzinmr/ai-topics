@@ -7,8 +7,7 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - benchmark
-  - voice-agents
-  - full-duplex
+  - ai-agents
   - evaluation
   - company
 related:

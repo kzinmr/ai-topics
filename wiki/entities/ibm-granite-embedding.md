@@ -7,8 +7,6 @@ tags:
   - entity
   - model
   - ibm
-  - embedding
-  - multilingual
   - open-source
   - rag
 aliases:

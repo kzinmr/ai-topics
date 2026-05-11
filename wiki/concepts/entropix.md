@@ -5,8 +5,7 @@ updated: 2026-05-08
 type: concept
 tags:
   - inference
-  - sampling
-  - entropy
+  - methodology
   - model
   - reasoning
   - open-source

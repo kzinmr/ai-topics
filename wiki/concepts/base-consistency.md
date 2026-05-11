@@ -6,8 +6,6 @@ updated: 2026-04-16
 tags:
   - database
   - architecture
-  - consistency
-  - cap-theorem
 aliases:
   - BASE
   - Basic Availability Soft State Eventual consistency

@@ -8,7 +8,6 @@ tags:
   - ai-agents
   - harness-engineering
   - methodology
-  - model-evolution
   - architecture
 status: complete
 created: 2026-04-30

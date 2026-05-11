@@ -10,7 +10,7 @@ aliases:
 tags:
   - concept
   - philosophy
-  - language
+  - nlp
   - fine-tuning
   - cognition
 status: complete

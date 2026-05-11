@@ -8,8 +8,7 @@ updated: 2026-04-28
 tags:
   - concept
   - multimodal
-  - asr
-  - voice-agents
+  - ai-agents
 status: L3
 ---
 

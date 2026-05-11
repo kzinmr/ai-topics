@@ -8,7 +8,6 @@ status: complete
 tags:
   - model
   - methodology
-  - workflows
   - ai-agents
 aliases:
   - ai-coding-agents

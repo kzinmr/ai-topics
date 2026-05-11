@@ -10,7 +10,6 @@ updated: 2026-04-12
 tags:
   - concept
   - architecture
-  - reusable-workflows
 status: draft
 sources:
   - "https://openai.com/index/equip-responses-api-computer-environment/"

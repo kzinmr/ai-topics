@@ -6,7 +6,6 @@ updated: 2026-05-08
 tags:
   - company
   - security
-  - trust-management
 aliases: ["Vanta"]
 sources:
   - https://www.vanta.com

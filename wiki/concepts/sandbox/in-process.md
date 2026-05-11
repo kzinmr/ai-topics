@@ -9,7 +9,6 @@ tags:
   - security
   - sandbox
   - company
-  - in-process
 aliases: ["monty-sandbox", "capabilities-based-security", "monty", "capability-sandbox"]
 related: [[concepts/harness-engineering/system-architecture/infrastructure-noise]], [[concepts/harness-engineering]], [[entities/samuel-colvin]]
 depth: L2

@@ -9,9 +9,7 @@ tags:
   - entity
   - education
   - philosophy
-  - ai-impact
   - benchmark
-  - terence-tao
 aliases:
   - Mathematical Methods and Human Thought in the Age of AI
   - Tao-Klowden 2026

@@ -10,7 +10,6 @@ tags:
   - inference
   - kv-cache
   - architecture
-  - moonshot
 aliases: [Mooncake Architecture, Mooncake KVCache]
 related: [[concepts/inference/vllm]], [[concepts/inference/sglang]], [[concepts/kvcache]], [[entities/moonshot-ai]]
 sources: [https://arxiv.org/abs/2407.00079]

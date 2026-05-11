@@ -6,7 +6,6 @@ updated: 2026-05-01
 sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/]
 tags:
   - person
-  - podcaster
   - blogger
   - hn-popular
 

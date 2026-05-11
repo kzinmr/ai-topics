@@ -6,7 +6,6 @@ type: concept
 tags:
   - concept
   - infrastructure
-  - agent-monitoring
   - evaluation
   - ai-agents
 aliases: [agent-traces, agent-evaluation, trace-powered-learning]

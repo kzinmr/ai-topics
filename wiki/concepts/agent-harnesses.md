@@ -6,8 +6,6 @@ updated: 2026-04-24
 tags:
   - ai-agents
   - training
-  - minimalism
-  - browser-agents
 aliases: ["The Bitter Lesson of Agent Harnesses", "Agent Frameworks Philosophy"]
 sources: []
 ---

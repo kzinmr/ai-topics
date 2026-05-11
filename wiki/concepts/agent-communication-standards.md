@@ -6,9 +6,6 @@ updated: 2026-04-30
 tags:
   - agent-communication
   - protocol
-  - standards
-  - linux-foundation
-  - beeai
 sources:
   - raw/articles/2025-08-25_i-am-bee_acp-joins-a2a.md
   - raw/articles/2026-02-01_philschmid_acp-overview.md

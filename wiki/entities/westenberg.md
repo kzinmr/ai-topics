@@ -7,7 +7,6 @@ tags:
   - person
   - blogger
   - hn-popular
-  - culture
   - philosophy
   - developer-tooling
   - economics

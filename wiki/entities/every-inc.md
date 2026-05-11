@@ -6,7 +6,6 @@ type: entity
 tags:
   - entity
   - company
-  - media
   - ai-native
   - product-management
 sources:

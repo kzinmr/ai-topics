@@ -10,7 +10,6 @@ tags:
   - concept
   - methodology
   - software-engineering
-  - anti-patterns
 status: active
 ---
 

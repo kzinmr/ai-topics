@@ -6,13 +6,10 @@ updated: 2026-05-04
 tags:
   - training
   - microsoft
-  - zeRO
-  - memory-optimization
-  - model-parallelism
+  - optimization
   - model
 aliases:
   - deepspeed
-  - zeRO
   - zero-redundancy-optimizer
   - deepspeed-zeRO
   - zeRO-infinity

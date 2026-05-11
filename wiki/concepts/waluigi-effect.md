@@ -11,10 +11,6 @@ tags:
   - fine-tuning
   - alignment
   - agent-safety
-  - simulator-theory
-  - jailbreaking
-  - narratology
-  - semiotics
 status: complete
 description: "LLMに望ましい性質Pを訓練した後、その正反対の性質¬Pを呼び出しやすくなる現象。Cleo Nardoが2023年3月にLessWrong/AI Alignment Forumで提唱。Simulator Theory、デリダの脱構築、構造主義的物語論を基盤に、Waluigi固有シミュラクラがLLMのアトラクター状態であることを示す。RLHFの根本的限界を暴露した概念として、後のSocietal ShadowやJailbreaking研究に影響を与えた。"
 created: 2026-05-08

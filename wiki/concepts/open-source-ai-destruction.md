@@ -10,9 +10,6 @@ sources:
 tags:
   - concept
   - open-source
-  - ai-slop
-  - maintainer-burnout
-  - code-review-crisis
   - developer-tooling
 aliases: ["ai-slop-crisis", "open-source-maintainer-burnout", "ai-pr-flood"]
 related: [[concepts/gnu-ai-reimplementations]], [[concepts/ai-bubble-economics]], , 

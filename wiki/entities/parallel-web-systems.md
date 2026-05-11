@@ -6,7 +6,6 @@ updated: 2026-05-08
 tags:
   - company
   - infrastructure
-  - web-search
   - tool
 aliases: ["Parallel", "Parallel.ai"]
 sources:

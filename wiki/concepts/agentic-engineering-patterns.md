@@ -7,11 +7,6 @@ created: 2026-04-25
 updated: 2026-04-30
 tags:
   - concept
-  - engineering-discipline
-  - tdd
-  - specification-driven-development
-  - paul-duvall
-  - paul-stack
 status: active
 sources:
   - https://www.infoq.com/news/2026/03/agentic-engineering-patterns

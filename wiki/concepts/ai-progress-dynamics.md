@@ -5,11 +5,7 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - concept
-  - training-efficiency
-  - ai-progress
   - reinforcement-learning
-  - capability-measurement
-  - sean-goedecke
 aliases:
   - training-horizon-efficiency
   - ai-progress-dynamics

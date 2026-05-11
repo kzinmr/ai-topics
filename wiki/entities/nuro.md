@@ -6,7 +6,6 @@ updated: 2026-05-08
 tags:
   - company
   - robotics
-  - delivery
 aliases: ["Nuro.ai"]
 sources:
   - https://www.nuro.ai

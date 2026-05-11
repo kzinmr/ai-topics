@@ -6,7 +6,6 @@ updated: 2026-04-19
 tags:
   - concept
   - security
-  - adversarial-attacks
   - ai-agents
 related: [prompt-injection, ai-safety, multi-agent-systems]
 sources: []

@@ -7,8 +7,7 @@ tags:
   - evaluation
   - agent-safety
   - anthropic
-  - benchmark-contamination
-  - agent-behavior
+  - benchmark
 aliases:
   - BrowseComp eval awareness
   - eval contamination

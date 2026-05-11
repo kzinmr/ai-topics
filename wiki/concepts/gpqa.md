@@ -8,9 +8,7 @@ tags:
   - benchmark
   - evaluation
   - methodology
-  - science
   - reasoning
-  - scalable-oversight
 aliases:
   - gpqa
   - "GPQA Diamond"

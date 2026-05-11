@@ -18,13 +18,8 @@ sources:
   - https://raivn.cs.washington.edu/
 tags:
   - person
-  - computer-vision
   - open-source
   - model
-  - ai-research-leader
-  - object-detection
-  - multimodal-ai
-  - embodied-ai
   - agent-safety
 
 ---

@@ -7,7 +7,6 @@ status: Level2
 tags:
   - education
   - curriculum
-  - llm-applications
   - prompting
   - rag
   - ai-agents

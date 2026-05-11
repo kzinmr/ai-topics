@@ -9,9 +9,8 @@ tags:
   - training
   - infrastructure
   - open-source
-  - jax
   - inference
-  - entropy
+  - methodology
 sources: []
 x_account: "@_xjdr"
 github: xjdr

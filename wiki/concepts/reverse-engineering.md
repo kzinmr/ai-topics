@@ -10,7 +10,7 @@ tags:
   - concept
   - reverse-engineering
   - security
-  - analysis
+  - methodology
 status: complete
 sources:
   - url: "https://github.com/pydantic/monty"

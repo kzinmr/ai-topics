@@ -5,8 +5,6 @@ tags:
   - ai-agents
   - architecture
   - open-source
-  - open-runtime
-  - open-harness
   - mcp
 created: 2026-04-30
 updated: 2026-04-30

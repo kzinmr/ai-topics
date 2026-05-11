@@ -6,8 +6,6 @@ type: concept
 tags:
   - browser-agent
   - ai-agents
-  - web-infrastructure
-  - cross-cutting
 sources: [raw/articles/crawl-2026-04-26-browser-landscape-2026.md]
 ---
 

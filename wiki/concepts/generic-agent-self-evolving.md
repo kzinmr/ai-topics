@@ -5,7 +5,6 @@ updated: 2026-04-27
 type: concept
 tags:
   - model
-  - self-evolving
   - optimization
   - architecture
   - memory-systems

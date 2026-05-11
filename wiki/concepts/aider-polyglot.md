@@ -8,8 +8,6 @@ tags:
   - benchmark
   - evaluation
   - coding-agents
-  - multi-language
-  - code-editing
   - developer-tooling
 aliases:
   - aider-polyglot

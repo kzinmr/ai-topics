@@ -7,11 +7,7 @@ tags:
   - person
   - blogger
   - hn-popular
-  - ai-scaling
-  - rationalist
-  - epistemology
-  - self-experimentation
-  - forecasting
+  - philosophy
   - model
   - agent-safety
 sources: []

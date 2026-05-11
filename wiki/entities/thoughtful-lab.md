@@ -8,7 +8,6 @@ tags:
   - lab
   - training
   - agent-safety
-  - training-infrastructure
 aliases:
   - Thoughtful Lab
   - thoughtfullab.com

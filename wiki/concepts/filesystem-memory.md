@@ -5,9 +5,8 @@ created: 2026-04-27
 updated: 2026-04-27
 tags:
   - ai-agents
-  - file-system-memory
+  - memory-systems
   - context-engineering
-  - persistency
 aliases: [filesystem-memory, agent-filesystem-memory]
 related: [[concepts/claude-managed-agents]], [[concepts/agent-memory]], [[concepts/context-engineering]]
 ---

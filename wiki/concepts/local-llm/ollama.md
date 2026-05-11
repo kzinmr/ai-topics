@@ -6,8 +6,6 @@ updated: 2026-04-29
 status: complete
 tags:
   - local-llm
-  - runner
-  - model-management
   - developer-tooling
   - open-source
 aliases: [ollama-runner, ollama-cli]

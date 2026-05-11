@@ -8,8 +8,6 @@ tags:
   - person
   - model
   - context-engineering
-  - geospatial
-  - quantified-self
   - blog
 sources: []
 ---

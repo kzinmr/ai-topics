@@ -7,8 +7,6 @@ tags:
   - model
   - lab
   - ai-agents
-  - autonomous-experimentation
-  - constraint-design
   - person
 created: 2026-04-14
 updated: 2026-04-14

@@ -10,9 +10,8 @@ created: 2026-04-13
 updated: 2026-04-13
 tags:
   - concept
-  - front-page
+  - methodology
   - browser-agent
-  - synthesis
 status: active
 sources: []
 ---

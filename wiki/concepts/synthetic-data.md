@@ -12,11 +12,10 @@ created: 2026-04-25
 updated: 2026-05-04
 tags:
   - concept
-  - pretraining
+  - training
   - infrastructure
   - optimization
   - alignment
-  - sft
   - fine-tuning
 related:
   - [[concepts/autodata-agentic-data-creation]]

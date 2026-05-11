@@ -5,16 +5,10 @@ created: 2026-05-04
 updated: 2026-05-04
 status: Level1
 tags:
-  - GLAM
   - methodology
-  - boring-ai
-  - structured-extraction
-  - cultural-heritage
-  - information-professionals
   - huggingface
   - evaluation
 aliases:
-  - boring-ai
   - ai-patterns-for-glam
   - GLAM AI patterns
 sources:

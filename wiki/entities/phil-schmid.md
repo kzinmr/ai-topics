@@ -2,7 +2,6 @@
 title: "Philipp (Phil) Schmid"
 tags:
   - person
-  - developer-relations
   - fine-tuning
   - training
   - huggingface

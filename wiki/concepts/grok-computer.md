@@ -7,7 +7,6 @@ tags:
   - ai-agents
   - automation
   - model
-  - desktop-agent
   - inference
 sources:
   - raw/articles/2026-05-01_xai-grok-4-3-launch.md

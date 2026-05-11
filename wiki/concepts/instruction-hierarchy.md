@@ -4,9 +4,7 @@ type: concept
 created: 2026-04-30
 updated: 2026-04-30
 tags:
-  - llm-safety
   - agent-safety
-  - instruction-hierarchy
   - openai
 sources: []
 ---

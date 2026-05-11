@@ -6,9 +6,7 @@ type: concept
 tags:
   - ai-agents
   - search
-  - mit
   - orchestration
-  - backtracking
 sources:
   - raw/articles/mit-encompass-feb-2026.md
 ---

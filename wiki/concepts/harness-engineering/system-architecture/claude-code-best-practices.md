@@ -18,7 +18,6 @@ tags:
   - prompting
   - mcp
   - ai-agents
-  - workflow-patterns
   - agentic-engineering
 sources:
   - "https://www.anthropic.com/engineering/claude-code-best-practices"

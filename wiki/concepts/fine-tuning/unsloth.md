@@ -6,7 +6,6 @@ updated: 2026-04-19
 tags:
   - fine-tuning
   - optimization
-  - speed
 related:
   - concepts/fine-tuning/_index
   - concepts/fine-tuning/axolotl

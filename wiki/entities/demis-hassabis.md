@@ -7,10 +7,7 @@ depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_though
 tags:
   - person
   - google
-  - alphafold
-  - alphago
   - agi
-  - nobel-prize
 sources: []
 ---
 

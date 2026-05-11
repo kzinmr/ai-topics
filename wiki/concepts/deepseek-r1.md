@@ -10,7 +10,6 @@ tags:
   - training
   - benchmark
   - deepseek
-  - nature
 sources:
   - raw/papers/2025-01-22_2501.12948_deepseek-r1.md
   - https://arxiv.org/abs/2501.12948

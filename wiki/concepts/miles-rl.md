@@ -5,8 +5,7 @@ tags:
   - reinforcement-learning
   - training
   - sglang
-  - lmsys
-  - rl-framework
+  - lab
 status: active
 created: 2026-04-27
 updated: 2026-04-27

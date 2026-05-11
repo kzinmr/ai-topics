@@ -13,8 +13,6 @@ tags:
   - blogger
   - hn-popular
   - company
-  - lean-startup
-  - customer-development
   - ai-agents
 sources: []
 ---

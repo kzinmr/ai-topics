@@ -7,7 +7,6 @@ tags:
   - company
   - lab
   - open-source
-  - classification
   - nlp
 aliases: ["knowledgator", "Knowledgator Engineering"]
 sources:

@@ -10,7 +10,6 @@ tags:
   - infrastructure
   - privacy
   - lab
-  - distributed
 sources:
   - raw/articles/2026-04-29_mit-ftte-federated-learning-edge-devices.md
 ---

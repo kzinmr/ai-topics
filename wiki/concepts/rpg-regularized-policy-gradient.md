@@ -6,8 +6,6 @@ updated: 2026-05-04
 tags:
   - concept
   - reinforcement-learning
-  - policy-gradient
-  - kl-regularization
   - reasoning
   - fine-tuning
 aliases:

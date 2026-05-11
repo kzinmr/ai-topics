@@ -5,11 +5,9 @@ created: 2026-05-04
 updated: 2026-05-04
 tags:
   - concept
-  - llm-patterns
   - evaluation
   - rag
   - fine-tuning
-  - production-llm
 aliases:
   - "7 patterns for building LLM systems"
   - "yan-llm-patterns"

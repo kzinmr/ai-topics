@@ -7,7 +7,7 @@ tags:
   - fine-tuning
   - training
   - pytorch
-  - sharding
+  - infrastructure
 related:
   - concepts/fine-tuning/_index
   - concepts/fine-tuning/axolotl

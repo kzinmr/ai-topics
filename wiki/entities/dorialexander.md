@@ -8,11 +8,7 @@ tags:
   - person
   - open-source
   - model
-  - digital-humanities
-  - wikipedia
-  - french-tech
-  - pleias
-  - small-language-models
+  - education
 sources: []
 ---
 

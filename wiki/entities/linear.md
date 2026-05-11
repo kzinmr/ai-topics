@@ -5,7 +5,6 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - project-management
   - developer-tooling
   - product-management
 aliases: ["Linear.app"]

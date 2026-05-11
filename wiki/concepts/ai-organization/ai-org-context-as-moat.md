@@ -13,7 +13,6 @@ tags:
   - company
   - governance
   - ai-native
-  - mckinsey
 status: draft
 depth_tracking:
   target: 12KB+

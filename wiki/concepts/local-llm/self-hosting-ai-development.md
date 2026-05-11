@@ -7,7 +7,6 @@ tags:
   - infrastructure
   - local-llm
   - qwen
-  - opencode
   - optimization
   - comparison
 aliases: ["self-hosted-coding-agents", "local-ai-development", "qwen-coder-workflow", "ai-inference-economics"]

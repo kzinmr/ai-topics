@@ -6,8 +6,6 @@ updated: 2026-04-29
 tags:
   - company
   - infrastructure
-  - ai-partnership
-  - azure
 aliases: ["Microsoft Corporation", "MSFT"]
 sources:
   - raw/newsletters/2026-04-28-openai-breaks-free-from-microsoft.md

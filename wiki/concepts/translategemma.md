@@ -5,8 +5,6 @@ created: 2026-05-02
 updated: 2026-05-02
 tags:
   - model
-  - translation
-  - offline-ai
   - google
   - local-llm
 aliases:

@@ -7,7 +7,6 @@ tags:
   - concept
   - rag
   - evaluation
-  - series
 aliases:
   - rag-not-dead-series
   - stop-saying-rag-is-dead

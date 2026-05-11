@@ -5,8 +5,6 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - embedding-models
-  - rerankers
   - rag
 aliases: ["Voyage", "Voyage AI by MongoDB"]
 sources:

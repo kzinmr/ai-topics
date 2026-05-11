@@ -27,8 +27,6 @@ tags:
   - evaluation
   - huggingface
   - benchmark
-  - lighteval
-  - gaia
 sources: []
 ---
 

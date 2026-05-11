@@ -7,9 +7,6 @@ tags:
   - concept
   - methodology
   - model
-  - closed-source
-  - muse
-  - alexandr-wang
 aliases: ["muse spark", "meta superintelligence labs", "meta avocado"]
 related:
   - concepts/anthropic-openclaw-conflict

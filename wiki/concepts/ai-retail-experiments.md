@@ -7,7 +7,6 @@ status: L1
 tags:
   - ai-agents
   - agent-safety
-  - real-world-agents
   - ethics
 sources:
   - https://simonwillison.net/2026/May/5/our-ai-started-a-cafe-in-stockholm/

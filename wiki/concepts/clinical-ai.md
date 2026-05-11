@@ -3,9 +3,6 @@ title: "Clinical AI"
 type: concept
 tags:
   - ai-adoption
-  - healthcare
-  - medical-ai
-  - diagnostic-ai
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

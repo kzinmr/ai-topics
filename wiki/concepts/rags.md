@@ -4,7 +4,6 @@ type: concept
 tags:
   - rag
   - model
-  - knowledge-base
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

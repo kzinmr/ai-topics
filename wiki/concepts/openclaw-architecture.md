@@ -14,7 +14,6 @@ tags:
   - sandbox
   - isolation
   - multi-agent
-  - gateway
   - protocol
 sources:
   - raw/articles/2026-05-07_chatgpt-openclaw-architecture-deep-dive.md

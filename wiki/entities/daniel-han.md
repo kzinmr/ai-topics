@@ -6,11 +6,9 @@ updated: 2026-04-10
 source: "x-account"
 tags:
   - person
-  - ai-fine-tuning
   - reinforcement-learning
-  - open-source-models
-  - ml-systems
-  - cuda-kernels
+  - open-source
+  - infrastructure
   - fine-tuning
 sources: []
 ---

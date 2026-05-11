@@ -8,8 +8,7 @@ tags:
   - local-llm
   - hardware
   - inference
-  - consumer
-  - edge
+  - infrastructure
 aliases: [inference-hardware, consumer-gpu-llm, local-llm-hardware]
 related: [[concepts/local-llm]], [[concepts/local-llm/ollama]], [[concepts/inference/sglang]]
 sources:

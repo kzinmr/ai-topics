@@ -6,7 +6,6 @@ type: concept
 tags:
   - model
   - reasoning
-  - sparse-attention
   - training
   - ai-agents
   - benchmark

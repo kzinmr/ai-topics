@@ -6,7 +6,6 @@ updated: 2026-05-04
 tags:
   - training
   - huggingface
-  - launcher
 aliases:
   - accelerate
   - hf-accelerate

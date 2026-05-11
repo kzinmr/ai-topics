@@ -9,7 +9,6 @@ tags:
   - timeline
   - career
   - openai
-  - stripe
   - developer-tooling
 sources: []
 ---

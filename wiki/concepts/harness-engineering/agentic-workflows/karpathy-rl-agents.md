@@ -11,7 +11,6 @@ tags:
   - concept
   - agentic-engineering
   - person
-  - autonomous-research
 status: draft
 sources:
   - "https://www.sahmcapital.com/news/content/andrej-karpathy-says-ai-agents-are-rewriting-how-software-gets-built-adds-he-hasnt-typed-a-line-of-code-probably-since-december-2026-03-22"

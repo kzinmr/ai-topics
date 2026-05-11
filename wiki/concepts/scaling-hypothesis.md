@@ -12,11 +12,8 @@ updated: 2026-05-07
 tags:
   - concept
   - optimization
-  - agi-theory
   - person
   - methodology
-  - emergent-abilities
-  - pretraining-thesis
 sources:
   - raw/articles/2020-05-28_gwern-scaling-hypothesis.md
   - raw/articles/2024-04-11_hyungwonchung-shaping-future-ai-transformer.md
@@ -35,7 +32,6 @@ sources:
 related:
   - scaling-laws
   - bitter-lesson
-  - emergent-abilities
   - inference-time-scaling
   - pretraining
 ---

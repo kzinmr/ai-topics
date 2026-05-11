@@ -6,8 +6,6 @@ updated: 2026-05-08
 tags:
   - company
   - ai-agents
-  - customer-support
-  - conversational-ai
 aliases: ["Decagon AI"]
 sources:
   - https://decagon.ai/

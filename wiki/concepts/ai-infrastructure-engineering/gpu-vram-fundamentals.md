@@ -7,7 +7,6 @@ tags:
   - concept
   - inference
   - hardware
-  - memory-bandwidth
   - infrastructure
 status: L1
 aliases:

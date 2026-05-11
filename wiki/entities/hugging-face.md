@@ -10,7 +10,6 @@ tags:
   - infrastructure
   - open-source
   - model
-  - ml-platform
   - nlp
 url: https://huggingface.co/
 linkedin: https://www.linkedin.com/company/hugging-face

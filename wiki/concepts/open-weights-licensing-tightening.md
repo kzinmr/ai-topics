@@ -5,8 +5,6 @@ date: 2026-05-07
 tags:
   - concept
   - open-source
-  - licensing
-  - market-dynamics
 updated: 2026-05-08
 ---
 

@@ -7,10 +7,8 @@ created: 2026-04-25
 updated: 2026-04-30
 tags:
   - entity
-  - bi
-  - data-visualization
+  - developer-tooling
   - infrastructure
-  - dwh
 aliases:
   - 薄くなるBIツール
   - Thin BI Tool

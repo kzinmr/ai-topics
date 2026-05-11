@@ -9,14 +9,8 @@ aliases:
   - qchu
 tags:
   - entity
-  - philosopher
   - education
-  - ai-critic
-  - language
-  - rlhf-critic
-  - substack
-  - rationalist-community
-  - ex-miri
+  - nlp
 status: complete
 description: "QC (Qiaochu Yuan) is a mathematician, philosopher, and writer. Former MIRI researcher, PhD student in mathematics at UC Berkeley, now writing the Thicket Forte Substack. Known for his essay 'Core dump' which introduced the concepts of linguistic vertigo, head words vs body words, and the societal shadow of RLHF. His work bridges AI criticism, somatic language theory, and philosophical psychology."
 created: 2026-05-08

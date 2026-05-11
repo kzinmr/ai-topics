@@ -8,11 +8,7 @@ created: 2026-05-04
 updated: 2026-05-04
 tags:
   - concept
-  - agentic-software
-  - software-paradigm
   - infrastructure
-  - runtime
-  - non-determinism
 status: complete
 description: "The paradigm shift from static (deterministic, hard-coded) software to dynamic (model-driven, non-deterministic, agentic) software — breaking 50-year-old assumptions about determinism, state, sessions, and observability."
 sources:

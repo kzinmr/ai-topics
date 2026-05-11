@@ -10,7 +10,6 @@ updated: 2026-04-12
 tags:
   - concept
   - agentic-engineering
-  - development-workflow
 status: draft
 sources:
   - "https://steipete.me/posts/2025/shipping-at-inference-speed"

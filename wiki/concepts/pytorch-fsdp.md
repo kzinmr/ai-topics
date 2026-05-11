@@ -6,8 +6,8 @@ updated: 2026-05-04
 tags:
   - training
   - pytorch
-  - sharding
-  - memory-optimization
+  - infrastructure
+  - optimization
 aliases: [fsdp, fully-sharded-data-parallel, zero3, zero-redundancy-optimizer]
 related:
   - concepts/fine-tuning/pytorch-fsdp

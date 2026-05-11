@@ -8,9 +8,7 @@ tags:
   - developer-tooling
   - model
   - search
-  - relevance
   - open-source
-  - consultant
 sources: []
 ---
 

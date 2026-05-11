@@ -17,7 +17,6 @@ tags:
   - context-engineering
   - methodology
   - multi-agent
-  - file-based-memory
 related: [claude-memory, chatgpt-memory-bitter-lesson, context-engineering, harness-design-long-running-apps, claude-code-source-patterns, vajra-background-agent]
 ---
 

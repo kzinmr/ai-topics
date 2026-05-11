@@ -6,10 +6,9 @@ updated: 2026-05-08
 tags:
   - entity
   - company
-  - inference-provider
-  - open-weight-models
+  - open-source
   - fine-tuning
-  - rft
+  - training
 aliases:
   - Fireworks
   - Fireworks AI Inc.

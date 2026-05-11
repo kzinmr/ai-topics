@@ -13,11 +13,8 @@ updated: 2026-05-08
 tags:
   - concept
   - anthropic
-  - model-family
   - model
-  - large-language-model
   - ai-agents
-  - developer-guide
   - developer-tooling
 status: complete
 sources:

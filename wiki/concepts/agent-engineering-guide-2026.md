@@ -5,7 +5,6 @@ updated: 2026-04-30
 type: concept
 tags:
   - agentic-engineering
-  - career-development
   - context-engineering
   - tool
   - evaluation

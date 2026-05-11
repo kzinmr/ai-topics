@@ -7,8 +7,7 @@ tags:
   - person
   - blogger
   - writing
-  - ai-policy
-  - web-culture
+  - policy
   - coding-agents
 sources: []
 ---

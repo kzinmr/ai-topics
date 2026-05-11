@@ -3,11 +3,9 @@ title: "Ben Boyter"
 type: entity
 tags:
   - person
-  - code-search
-  - open-source
-  - go
-  - mcp
   - search
+  - open-source
+  - mcp
 status: complete
 description: "Creator of searchcode.com, scc (Sloc Cloc and Code), and cs (Code Spelunker). Author of the 'Marketing to the Machine' B2A thesis."
 created: 2026-04-30

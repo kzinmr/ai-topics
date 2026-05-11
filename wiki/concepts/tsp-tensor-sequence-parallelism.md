@@ -13,7 +13,7 @@ tags:
   - inference
   - optimization
   - context-management
-  - gpu-memory
+  - hardware
 sources:
   - raw/articles/2026-05-05_zyphra-tsp-tensor-sequence-parallelism.md
   - https://www.zyphra.com/post/tsp

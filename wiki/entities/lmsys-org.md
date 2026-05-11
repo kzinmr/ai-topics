@@ -4,7 +4,6 @@ type: entity
 tags:
   - company
   - lab
-  - uc-berkeley
   - sglang
   - evaluation
 status: active

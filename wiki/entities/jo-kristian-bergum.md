@@ -10,10 +10,7 @@ updated: 2026-04-27
 tags:
   - entity
   - person
-  - search-engine
-  - vespa
   - search
-  - norway
 
 ---
 

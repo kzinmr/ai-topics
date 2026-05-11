@@ -8,8 +8,6 @@ sources: [https://x.com/i/article/2044531930671288320, https://code.claude.com/d
 tags:
   - anthropic
   - memory-systems
-  - claude-md
-  - auto-memory
   - context-engineering
   - architecture
 aliases: [claude-memory, claude-code-memory]

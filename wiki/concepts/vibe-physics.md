@@ -5,7 +5,6 @@ updated: 2026-05-06
 type: concept
 tags:
   - concept
-  - scientific-discovery
   - model
   - ai-agents
   - reasoning

@@ -3,9 +3,6 @@ title: "情報理論とAIエージェントコミュニケーション"
 tags:
   - methodology
   - agent-communication
-  - shannon
-  - v-information
-  - agent-protocols
 created: 2026-05-07
 updated: 2026-05-07
 type: concept

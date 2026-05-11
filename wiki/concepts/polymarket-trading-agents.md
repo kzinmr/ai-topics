@@ -7,8 +7,6 @@ aliases:
   - weather-trading-bots
 tags:
   - concept
-  - polymarket
-  - trading-agents
   - ai-agents
   - automation
 status: complete

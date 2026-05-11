@@ -6,7 +6,6 @@ type: concept
 tags:
   - multi-agent
   - agentic-engineering
-  - context-window-management
   - coding-agents
 sources:
   - raw/articles/2026-04-22-multi-agents-whats-actually-working.md

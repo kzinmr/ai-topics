@@ -11,7 +11,6 @@ tags:
   - concept
   - cognition
   - coding-agents
-  - dana
   - data-science
   - mcp
   - ai-agent-engineering

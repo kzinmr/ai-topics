@@ -12,9 +12,6 @@ tags:
   - agent-safety
   - sandbox
   - isolation
-  - firecracker
-  - gvisor
-  - capability-security
 sources:
  - raw/articles/agent-sandboxing-2026-northflank.md
 related:

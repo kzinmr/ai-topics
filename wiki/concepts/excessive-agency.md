@@ -5,8 +5,6 @@ updated: 2026-04-24
 type: concept
 tags:
   - agent-safety
-  - owasp
-  - vulnerability
   - security
 sources:
   - raw/articles/crawl-2026-04-24-zero-trust-agent-security-auth0.md

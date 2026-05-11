@@ -9,8 +9,6 @@ tags:
   - evaluation
   - methodology
   - reasoning
-  - multi-domain
-  - language-understanding
 aliases:
   - mmlu-pro
   - "MMLU-Pro"

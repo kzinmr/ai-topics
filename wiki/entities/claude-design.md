@@ -6,7 +6,6 @@ updated: 2026-04-25
 tags:
   - product
   - anthropic
-  - design
   - multimodal
   - lab
 aliases: ["Claude Design by Anthropic Labs"]

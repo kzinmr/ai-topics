@@ -10,9 +10,6 @@ depth_tracking:
  target_depth: concept-level
 tags:
   - evaluation
-  - offline-testing
-  - regression-testing
-  - eval-pipeline
 sources:
  - raw/articles/dspy-rlm-2026-04-20.md
  - raw/articles/llm-as-judge-scoring-bias-2026-04-20.md

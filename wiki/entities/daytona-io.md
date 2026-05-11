@@ -8,7 +8,6 @@ tags:
   - company
   - infrastructure
   - sandbox
-  - agent-infra
 related: [ivan-burazin, headless-saas, agent-sandboxing, agent-serverless]
 sources:
   - https://www.daytona.io/

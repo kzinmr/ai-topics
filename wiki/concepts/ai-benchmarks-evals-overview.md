@@ -9,14 +9,7 @@ tags:
   - benchmark
   - evaluation
   - model
-  - ai-metrics
   - comparison
-  - coding-benchmarks
-  - knowledge-benchmarks
-  - reasoning-benchmarks
-  - multimodal-benchmarks
-  - agent-benchmarks
-  - game-based-benchmarks
 sources:
   - https://x.com/xeophon/status/1917175899948020203
   - https://x.com/xeophon/status/1925513059281305612

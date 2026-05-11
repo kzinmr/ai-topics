@@ -9,7 +9,6 @@ tags:
   - model
   - agent-safety
   - openai
-  - safe-superintelligence-inc
 sources: []
 ---
 

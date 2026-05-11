@@ -5,11 +5,7 @@ created: 2026-04-30
 updated: 2026-04-30
 tags:
   - company
-  - ai-business
-  - pricing
-  - content-marketing
-  - client-engagement
-  - jason-liu
+  - economics
 aliases: ["ai-consulting-playbook", "content-flywheel", "value-based-pricing-ai"]
 sources:
   - https://567-labs.github.io/consulting/

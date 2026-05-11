@@ -6,8 +6,6 @@ updated: 2026-05-08
 tags:
   - company
   - fintech
-  - marketplace
-  - wholesale
 aliases: ["Faire Wholesale"]
 sources:
   - https://www.faire.com

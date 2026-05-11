@@ -5,10 +5,8 @@ created: 2026-04-13
 updated: 2026-04-13
 tags:
   - prompting
-  - intuition
   - agentic-engineering
   - workflow
-  - anti-overengineering
 aliases: ["just-talk-to-it", "intuition-driven-development", "direct-prompting", "no-bs-agentic"]
 related: , [[concepts/claude-code-best-practices]], [[concepts/cli-over-mcp-pattern]], [[concepts/inference-speed-development]]
 sources:

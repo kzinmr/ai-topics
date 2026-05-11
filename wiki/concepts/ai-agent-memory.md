@@ -4,8 +4,7 @@ type: concept
 tags:
   - ai-agents
   - memory-systems
-  - context
-  - persistent-memory
+  - context-management
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

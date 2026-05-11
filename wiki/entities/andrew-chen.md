@@ -9,9 +9,7 @@ tags:
   - entity
   - person
   - company
-  - a16z
   - local-llm
-  - growth
 sources:
   - "https://andrewchen.com/about/"
   - "https://a16z.com/author/andrew-chen/"

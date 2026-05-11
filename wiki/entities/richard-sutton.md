@@ -8,7 +8,7 @@ tags:
   - person
   - reinforcement-learning
   - agi
-  - keen-technologies
+  - company
   - methodology
 sources: []
 ---

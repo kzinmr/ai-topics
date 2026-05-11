@@ -11,7 +11,6 @@ tags:
   - agent-safety
   - alignment
   - anthropic
-  - rlaif
   - model
 sources:
   - "https://windowsontheory.org/2026/01/27/thoughts-on-claudes-constitution/"

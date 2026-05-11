@@ -7,12 +7,8 @@ created: 2026-04-25
 updated: 2026-05-02
 tags:
   - evaluation
-  - tools
   - comparison
-  - braintrust
   - langchain
-  - arize-phoenix
-  - inspect-ai
 status: enrichment
 sources:
   - raw/articles/2026-05-02_braintrust-evals-101-why-are-evals-important.md

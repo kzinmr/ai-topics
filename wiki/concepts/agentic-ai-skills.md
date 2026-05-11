@@ -3,7 +3,6 @@ title: "Agentic AI Skills Design"
 created: 2026-04-27
 updated: 2026-04-27
 tags:
-  - skills
   - ai-agents
   - prompting
   - harness-engineering

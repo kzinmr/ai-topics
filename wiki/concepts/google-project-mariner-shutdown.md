@@ -7,7 +7,6 @@ tags:
   - ai-agents
   - google
   - browser-agent
-  - shutdown
   - controversy
 sources:
   - raw/articles/2026-05-06_wired-google-project-mariner-shakeup.md

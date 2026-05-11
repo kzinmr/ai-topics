@@ -5,10 +5,6 @@ created: 2026-04-13
 updated: 2026-04-13
 tags:
   - coding-agents
-  - development-cadence
-  - shipping-speed
-  - test-driven-ai
-  - ui-development
   - agentic-engineering
 aliases: ["shipping-at-inference-speed", "inference-speed-shipping", "ai-development-cadence"]
 related: , [[concepts/claude-code-best-practices]], [[concepts/cognitive-cost-of-agents]], [[concepts/ai-coding-reliability]]

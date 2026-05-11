@@ -7,8 +7,6 @@ aliases:
 tags:
   - ai-agents
   - harness-engineering
-  - agent-sdk
-  - browser-use
 status: complete
 description: "Gregor Zunic (Browser Use founder) の提唱する 'The less you build, the more it works' — 最小限のエージェントアーキテクチャ哲学。"
 created: 2026-04-30

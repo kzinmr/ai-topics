@@ -7,7 +7,6 @@ tags:
   - company
   - model
   - open-source
-  - europe
 aliases:
   - Mistral
   - Mistral AI SAS

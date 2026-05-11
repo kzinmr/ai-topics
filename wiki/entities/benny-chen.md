@@ -8,7 +8,7 @@ tags:
   - person
   - infrastructure
   - inference
-  - open-weight-models
+  - open-source
 aliases:
   - Benny Chen
   - @bennychen  # speculative handle

@@ -8,7 +8,6 @@ tags:
   - person
   - model
   - education
-  - fastai
   - diffusion
   - open-source
 sources:

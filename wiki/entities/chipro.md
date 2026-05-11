@@ -6,9 +6,8 @@ created: 2026-04-10
 updated: 2026-04-10
 tags:
   - person
-  - ml-systems
+  - infrastructure
   - agentic-engineering
-  - production-ml
   - education
 sources: []
 ---

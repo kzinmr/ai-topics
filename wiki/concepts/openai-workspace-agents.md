@@ -9,7 +9,6 @@ tags:
   - openai
   - ai-agents
   - company
-  - workspace
   - coding-agents
 aliases: ["Workspace Agents", "OpenAI Business Agents"]
 sources:

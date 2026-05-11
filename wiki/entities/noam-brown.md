@@ -7,12 +7,9 @@ depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_though
 tags:
   - person
   - openai
-  - meta-fair
   - education
-  - poker-ai
   - reasoning
   - multi-agent
-  - diplomacy
 sources:
   - "raw/newsletters/2026-04-30-ainews-the-inference-inflection.md"
 ---

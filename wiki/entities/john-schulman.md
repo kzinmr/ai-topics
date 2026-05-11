@@ -10,7 +10,7 @@ tags:
   - fine-tuning
   - openai
   - anthropic
-  - thinking-machines-lab
+  - lab
   - agent-safety
 sources: []
 ---

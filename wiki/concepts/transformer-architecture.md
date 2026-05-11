@@ -11,7 +11,6 @@ tags:
   - concept
   - architecture
   - model
-  - sequence-modeling
 sources:
   - raw/articles/2025-05-25_gwern-invented-transformers.md
 ---

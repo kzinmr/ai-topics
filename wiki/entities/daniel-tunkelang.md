@@ -6,10 +6,7 @@ updated: 2026-05-05
 tags:
   - person
   - search
-  - query-understanding
   - fintech
-  - faceted-search
-  - hcir
   - data-science
 aliases:
   - dtunkelang

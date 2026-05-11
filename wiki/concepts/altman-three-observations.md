@@ -11,7 +11,6 @@ tags:
   - concept
   - economics
   - optimization
-  - cost-deflation
   - agi
   - openai
 sources:

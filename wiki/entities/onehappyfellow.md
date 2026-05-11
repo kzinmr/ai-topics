@@ -11,7 +11,6 @@ aliases:
 tags:
   - person
   - blogger
-  - ocaml
 related:
   - [[concepts/simulacrum-of-knowledge-work]]
 sources:

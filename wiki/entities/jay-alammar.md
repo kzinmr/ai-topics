@@ -13,7 +13,6 @@ tags:
   - education
   - developer-tooling
   - nlp
-  - transformers
 aliases: [jalammar]
 sources:
   - https://jalammar.github.io

@@ -11,10 +11,8 @@ tags:
   - model
   - local-llm
   - quantization
-  - whisper.cpp
   - huggingface
   - open-source
-  - fabrice-bellard-lineage
 sources: []
 ---
 

@@ -12,8 +12,6 @@ tags:
   - methodology
   - openclaw
   - ai-agents
-  - personal-agents
-  - peter-steinberger
 status: active
 sources: []
 ---

@@ -6,7 +6,7 @@ updated: 2026-04-18
 tags:
   - inference
   - optimization
-  - cost
+  - economics
   - methodology
 aliases: ["cost-per-token", "inference-unit-economics"]
 sources: []

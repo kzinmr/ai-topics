@@ -8,7 +8,6 @@ tags:
   - agent-safety
   - prediction
   - transhumanism
-  - intelligence
 sources: [raw/articles/1996_yudkowsky_staring-into-the-singularity.md]
 ---
 

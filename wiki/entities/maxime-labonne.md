@@ -7,7 +7,6 @@ updated: 2026-05-04
 tags:
   - person
   - open-source
-  - llm-post-training
 sources:
   - https://mlabonne.github.io/blog/
   - https://github.com/mlabonne

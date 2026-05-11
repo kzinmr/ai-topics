@@ -7,7 +7,6 @@ tags:
   - concept
   - fine-tuning
   - reinforcement-learning
-  - rft
   - training
 aliases:
   - RFT

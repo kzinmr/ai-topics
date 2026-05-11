@@ -5,11 +5,7 @@ created: 2026-05-07
 updated: 2026-05-07
 tags:
   - prompting
-  - creative-writing
-  - style-transfer
-  - personalization
   - person
-  - anti-examples
 sources:
   - raw/articles/2025-05-29_gwern-better-llm-writing.md
 ---

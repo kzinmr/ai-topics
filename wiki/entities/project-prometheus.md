@@ -6,8 +6,6 @@ updated: 2026-04-28
 tags:
   - company
   - model
-  - funding
-  - bezos
   - robotics
 sources:
   - https://link.mail.beehiiv.com/v1/c/egncq%2F2JvG3z1SRwrF0XP8BPezQ9BLFjerV54xwhPQyA03y3HxxhODtzfafS

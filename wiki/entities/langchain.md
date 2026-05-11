@@ -6,7 +6,6 @@ tags:
   - orchestration
   - framework
   - agentic-engineering
-  - llm-framework
 created: 2026-04-27
 updated: 2026-04-30
 aliases: [LangChain Framework, LangChain AI]

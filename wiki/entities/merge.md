@@ -6,8 +6,6 @@ updated: 2026-05-08
 tags:
   - company
   - developer-tooling
-  - integrations
-  - unified-api
 aliases: ["Merge API", "Merge.dev"]
 sources:
   - https://merge.dev

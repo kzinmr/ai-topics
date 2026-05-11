@@ -8,8 +8,6 @@ tags:
   - blogger
   - hn-popular
   - developer-tooling
-  - compiler
-  - build-systems
 sources: []
 ---
 

@@ -5,7 +5,6 @@ updated: 2026-04-27
 type: concept
 tags:
   - ai-adoption
-  - organizational-culture
   - company
 aliases: ["AI-pilled", "Getting AI-pilled"]
 sources:

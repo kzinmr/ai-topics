@@ -9,7 +9,6 @@ tags:
   - quantization
   - multimodal
   - inference
-  - dropbox
   - open-source
 aliases:
   - Mobius Labs GmbH

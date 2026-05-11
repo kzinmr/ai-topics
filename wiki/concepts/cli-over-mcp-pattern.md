@@ -7,7 +7,6 @@ tags:
   - developer-tooling
   - mcp
   - tool
-  - context-efficiency
   - agentic-engineering
 aliases: ["cli-first-development", "mcp-skepticism", "tool-agnostic-agents", "minimal-tooling-pattern"]
 related: [[concepts/direct-prompting-philosophy]], [[concepts/claude-code-best-practices]], [[concepts/context-window-management]], 

@@ -9,7 +9,6 @@ updated: 2026-04-13
 tags:
   - concept
   - agentic-engineering
-  - anti-pattern
 status: draft
 sources:
   - "https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/"

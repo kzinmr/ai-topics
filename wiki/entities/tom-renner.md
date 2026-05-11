@@ -7,9 +7,7 @@ tags:
   - person
   - blogger
   - software-engineering
-  - leadership
   - ethics
-  - team-culture
 sources: []
 ---
 

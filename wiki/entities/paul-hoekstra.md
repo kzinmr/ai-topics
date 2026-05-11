@@ -6,7 +6,6 @@ updated: 2026-05-02
 status: L2
 tags:
   - person
-  - data-engineer
   - agentic-engineering
   - claude-code
 aliases:

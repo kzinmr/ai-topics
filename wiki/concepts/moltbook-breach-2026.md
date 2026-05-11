@@ -10,13 +10,9 @@ created: 2026-05-07
 updated: 2026-05-07
 tags:
   - concept
-  - security-incident
   - ai-agents
   - openclaw
-  - moltbook
-  - supabase
   - agent-safety
-  - real-world-exploit
 related:
   - entities/openclaw
   - concepts/openclaw

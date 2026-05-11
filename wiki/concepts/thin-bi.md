@@ -4,10 +4,8 @@ type: concept
 created: 2026-04-27
 updated: 2026-04-27
 tags:
-  - bi-tools
   - infrastructure
-  - cloud-dwh
-  - data-visualization
+  - developer-tooling
 aliases: ["thin-bi", "light-bi", "modern-bi"]
 sources:
   - "https://stable.co.jp/blog/introduction-lightdash"

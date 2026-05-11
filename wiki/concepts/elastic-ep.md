@@ -2,7 +2,6 @@
 title: "Elastic EP (Expert Parallelism)"
 type: concept
 tags:
-  - expert-parallelism
   - infrastructure
   - inference
   - sglang

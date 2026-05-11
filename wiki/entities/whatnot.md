@@ -6,8 +6,6 @@ updated: 2026-05-08
 tags:
   - company
   - fintech
-  - live-shopping
-  - marketplace
 aliases: ["Whatnot"]
 sources:
   - https://www.whatnot.com

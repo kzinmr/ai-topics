@@ -8,7 +8,6 @@ updated: 2026-04-28
 tags:
   - concept
   - infrastructure
-  - rss
   - developer-tooling
   - automation
 aliases: [blogwatcher-cli, feed-monitor]

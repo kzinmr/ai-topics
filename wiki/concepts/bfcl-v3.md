@@ -4,10 +4,7 @@ type: concept
 created: 2026-05-08
 tags:
   - benchmark
-  - function-calling
   - tool
-  - agentic-evaluation
-  - multi-turn
   - evaluation
 related_concepts:
   - concepts/ai-benchmarks-evals-overview

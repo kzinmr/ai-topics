@@ -6,7 +6,6 @@ updated: 2026-05-02
 tags:
   - concept
   - economics
-  - user-behavior
   - ecosystem
 aliases:
   - Cinderella Effect

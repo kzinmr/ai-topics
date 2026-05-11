@@ -7,8 +7,6 @@ tags:
   - concept
   - hardware
   - infrastructure
-  - research-framework
-  - path-dependency
 aliases:
   - hardware lottery
   - hookers-law

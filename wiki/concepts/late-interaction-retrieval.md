@@ -6,7 +6,6 @@ updated: 2026-04-30
 tags:
   - concept
   - rag
-  - colbert
   - search
 aliases:
   - late-interaction-retrieval

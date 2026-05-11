@@ -9,7 +9,6 @@ tags:
   - software-engineering
   - evaluation
   - ai-agents
-  - github-issues
 aliases:
   - swe-bench
   - swe-bench-verified

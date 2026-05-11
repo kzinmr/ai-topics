@@ -7,7 +7,6 @@ tags:
   - entity
   - open-source
   - ai-agents
-  - backend
   - harness-engineering
   - developer-tooling
 aliases:

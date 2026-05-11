@@ -8,7 +8,6 @@ aliases: [gpjt, Giles Thomas]
 tags:
   - person
   - developer-tooling
-  - smolagents
   - huggingface
   - model
 sources:

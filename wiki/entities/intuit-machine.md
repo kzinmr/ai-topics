@@ -5,7 +5,6 @@ aliases: [intuit-machine]
 tags:
   - entity
   - ai-agents
-  - skills-design
   - harness-engineering
 status: complete
 description: "AI agent framework company focused on agentic AI skills design. Published 'Ten Design Principles of Agentic AI Skills Design' — structural insights about how AI systems achieve 10x-100x effectiveness."

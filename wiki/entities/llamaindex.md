@@ -2,9 +2,7 @@
 title: "LlamaIndex"
 type: entity
 tags:
-  - llamaindex
   - rag
-  - data-framework
   - ai-agents
 created: 2026-04-27
 updated: 2026-04-28

@@ -5,9 +5,8 @@ created: 2026-05-08
 tags:
   - benchmark
   - multimodal
-  - chart-understanding
   - evaluation
-  - visual-reasoning
+  - reasoning
 aliases:
   - chart-qa
   - chart-question-answering

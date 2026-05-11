@@ -9,11 +9,9 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - interpretability
-  - steering
   - model
   - inference
   - safety
-  - rlhf-alternative
 related:
   - concepts/interpretability
   - concepts/monosemanticity

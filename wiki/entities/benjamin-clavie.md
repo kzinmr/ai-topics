@@ -20,8 +20,6 @@ sources:
   - https://parlance-labs.com/education/rag/ben.html
 related:
   - colbert
-  - ragatouille
-  - modernbert
   - information-retrieval
   - late-interaction
   - token-pooling
@@ -34,13 +32,8 @@ related:
   - entities/griffin-adams
 tags:
   - person
-  - nlp-researcher
   - search
-  - colbert
-  - ragatouille
-  - modernbert
   - open-source
-  - japan-based
 
 ---
 

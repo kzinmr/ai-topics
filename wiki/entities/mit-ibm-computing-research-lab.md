@@ -8,7 +8,6 @@ tags:
   - lab
   - infrastructure
   - model
-  - quantum
 status: complete
 description: "Joint MIT-IBM research lab (est. April 2026) exploring convergence of AI, algorithms, and quantum computing. Successor to MIT-IBM Watson AI Lab (2017)."
 created: 2026-05-04

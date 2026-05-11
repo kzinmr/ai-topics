@@ -6,8 +6,7 @@ updated: 2026-05-04
 tags:
   - person
   - company
-  - sequoia
-  - service-as-software
+  - ai-adoption
 aliases:
   - "@JulienBek"
 sources:

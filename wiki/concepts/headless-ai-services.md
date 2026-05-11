@@ -6,7 +6,7 @@ updated: 2026-04-30
 tags:
   - concept
   - ai-agents
-  - api-first
+  - developer-tooling
   - product
   - agentic-engineering
 related: [agentic-engineering, api-first-development, mcp, headless-saas]

@@ -7,8 +7,6 @@ tags:
   - concept
   - optimization
   - training
-  - data-quality
-  - model-quality
 related: [model-training, data-curation, quality-over-quantity]
 sources: []
 ---

@@ -5,9 +5,7 @@ created: 2026-05-08
 tags:
   - benchmark
   - multimodal
-  - counting
   - evaluation
-  - simple-eval
 aliases:
   - countbench-qa
   - countbench

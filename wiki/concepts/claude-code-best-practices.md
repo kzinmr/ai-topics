@@ -9,7 +9,6 @@ updated: 2026-04-29
 tags:
   - concept
   - anthropic
-  - best-practices
 status: complete
 sources:
   - url: "https://code.claude.com/docs/en/best-practices"

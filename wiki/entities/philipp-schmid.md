@@ -10,9 +10,7 @@ tags:
   - huggingface
   - google
   - developer-tooling
-  - llm-ops
   - fine-tuning
-  - agent-harnesses
   - mcp
 sources: []
 ---

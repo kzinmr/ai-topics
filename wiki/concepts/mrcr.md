@@ -5,8 +5,6 @@ created: 2026-05-08
 tags:
   - benchmark
   - context-management
-  - needle-in-haystack
-  - synthetic-evaluation
   - evaluation
 related_concepts:
   - concepts/ai-benchmarks-evals-overview

@@ -5,8 +5,7 @@ created: 2026-05-02
 updated: 2026-05-02
 tags:
   - concept
-  - study
-  - analysis
+  - methodology
   - ecosystem
   - benchmark
 aliases:

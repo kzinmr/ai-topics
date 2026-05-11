@@ -6,7 +6,6 @@ updated: 2026-05-08
 tags:
   - company
   - infrastructure
-  - feature-platform
 aliases: ["Chalk AI", "chalk.ai"]
 sources:
   - https://chalk.ai

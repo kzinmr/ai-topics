@@ -7,7 +7,6 @@ tags:
   - concept
   - context-management
   - coding-agents
-  - file-system
 related: [coding-agents, context-windows, retrieval-augmented-generation]
 sources: []
 ---

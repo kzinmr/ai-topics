@@ -5,9 +5,7 @@ updated: 2026-04-28
 type: concept
 tags:
   - robotics
-  - autonomous-systems
   - company
-  - screen-vs-physical
 sources:
   - raw/newsletters/2026-04-27-physical-ai-that-moves-the-world-qasar-younis-peter-ludwig-applied-intuition.md
 ---

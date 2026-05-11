@@ -7,7 +7,6 @@ tags:
   - anthropic
   - cognition
   - coding-agents
-  - memory-tool
   - methodology
   - agentic-engineering
 sources:

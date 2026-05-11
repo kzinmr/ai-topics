@@ -2,12 +2,8 @@
 title: "Beads"
 type: entity
 tags:
-  - beads
-  - issue-tracker
   - ai-agents
-  - steve-yegge
-  - dolt
-  - gastown-hall
+  - database
 created: 2026-05-01
 updated: 2026-05-01
 aliases: [Beads (bd), bd, Beads Issue Tracker, Gastown Hall Beads]

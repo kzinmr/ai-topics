@@ -6,8 +6,6 @@ updated: 2026-05-08
 tags:
   - mcp
   - developer-tooling
-  - desktop
-  - packaging
 aliases:
   - MCP Desktop Extensions
   - .mcpb

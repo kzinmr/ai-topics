@@ -6,11 +6,8 @@ type: concept
 tags:
   - concept
   - rlm
-  - lambda-calculus
   - context-management
   - inference
-  - typed-functional-runtime
-  - formal-guarantees
 aliases:
   - λ-RLM
   - Lambda-Recursive Language Model

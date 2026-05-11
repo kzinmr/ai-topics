@@ -9,7 +9,6 @@ tags:
   - entity
   - coding-agent
   - open-source
-  - minimal
   - developer-tooling
   - ai-agents
 sources:

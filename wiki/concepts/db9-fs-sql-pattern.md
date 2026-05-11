@@ -7,8 +7,6 @@ tags:
   - database
   - workflow
   - developer-tooling
-  - postgresql
-  - sql
 aliases: ["db9", "fs9", "db9-fs-sql-patterns"]
 related: [[concepts/ai-agent-memory-middleware]], [[concepts/zero-disk-architecture]], [[concepts/disaggregated-storage]], [[concepts/agent-loop-orchestration]]
 sources: ["https://me.0xffff.me/db9-fs-sql-patterns.html"]

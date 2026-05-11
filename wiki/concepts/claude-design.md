@@ -6,7 +6,6 @@ updated: 2026-04-26
 tags:
   - product
   - anthropic
-  - visual-design
   - multimodal
 aliases: ["claude-design-labs", "anthropic-design-tool"]
 ---

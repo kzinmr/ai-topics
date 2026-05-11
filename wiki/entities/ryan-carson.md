@@ -8,7 +8,6 @@ tags:
   - person
   - x-account
   - education
-  - tech-education
   - model
   - company
 sources: []

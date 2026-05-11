@@ -7,7 +7,6 @@ tags:
   - concept
   - training
   - reinforcement-learning
-  - on-policy
 aliases:
   - MOPD
   - On-Policy Distillation

@@ -7,7 +7,6 @@ tags:
   - architecture
   - anthropic
   - infrastructure
-  - meta-harness
 aliases:
   - Claude Managed Agents
   - decoupled agent architecture

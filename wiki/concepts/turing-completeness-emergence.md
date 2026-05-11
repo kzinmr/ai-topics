@@ -10,16 +10,10 @@ updated: 2026-05-08
 tags:
   - concept
   - model
-  - complexity
   - person
-  - computation
   - security
-  - weird-machines
-  - philosophy-of-computation
-  - goal-completeness
   - agi
   - agent-safety
-  - analogy
 sources:
   - raw/articles/2012-12-09_gwern-surprisingly-turing-complete.md
   - raw/articles/2020-05-28_gwern-ambient-agency.md

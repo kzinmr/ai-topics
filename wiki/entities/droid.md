@@ -10,7 +10,6 @@ tags:
   - coding-agent
   - company
   - developer-tooling
-  - ci-cd
   - ai-agents
 sources:
   - https://github.com/Factory-AI/factory

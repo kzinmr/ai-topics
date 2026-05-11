@@ -7,7 +7,6 @@ tags:
   - dspy
   - optimization
   - model
-  - declarative-programming
   - evaluation
 sources:
   - raw/articles/crawl-2026-04-29-dspy-adoption-gap-khattabs-law.md

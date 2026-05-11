@@ -5,12 +5,9 @@ description: "Agent workflow architecture pattern using PostgreSQL with filesyst
 category: concepts
 sub_category: AI Agent Architecture
 tags:
-  - db9
-  - postgresql
+  - database
   - developer-tooling
-  - agent-workflows
   - rag
-  - data-architecture
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

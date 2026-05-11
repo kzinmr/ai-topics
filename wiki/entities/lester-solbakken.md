@@ -9,7 +9,6 @@ tags:
   - rag
   - ai-agents
   - infrastructure
-  - ml-serving
   - model
 related:
   - doug-turnbull

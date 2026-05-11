@@ -8,7 +8,6 @@ tags:
   - orchestration
   - coding-agents
   - agentic-engineering
-  - kitchen-metaphor
 aliases: ["kitchen-metaphor", "head-chef-pattern", "line-cook-pattern", "multi-agent-kitchen"]
 sources: []
 ---

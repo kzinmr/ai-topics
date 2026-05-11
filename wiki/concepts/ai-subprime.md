@@ -3,9 +3,7 @@ title: "AI Subprime Crisis"
 tags:
   - concept
   - economics
-  - ai-bubble
   - company
-  - ai-subsidies
   - writing
 created: 2026-04-24
 updated: 2026-04-30

@@ -9,8 +9,7 @@ tags:
   - model
   - security
   - agent-safety
-  - agentic-harness
-  - firefox
+  - company
 aliases: ["mythos preview", "anthropic frontier red team 2026"]
 related:
   - concepts/anthropic-openclaw-conflict

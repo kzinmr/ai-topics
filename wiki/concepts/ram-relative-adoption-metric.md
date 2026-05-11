@@ -7,9 +7,6 @@ tags:
   - concept
   - open-source
   - evaluation
-  - nathan-lambert
-  - atom-project
-  - ai-ecosystem-metrics
 related:
   - entities/nathan-lambert
   - concepts/atom-project

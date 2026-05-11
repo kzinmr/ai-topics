@@ -6,8 +6,6 @@ updated: 2026-05-08
 tags:
   - company
   - voice-ai
-  - speech-synthesis
-  - audio-ai
   - ai-agents
 aliases: ["11labs", "Eleven Labs"]
 sources:

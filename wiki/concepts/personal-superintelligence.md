@@ -10,11 +10,8 @@ created: 2026-04-15
 updated: 2026-04-15
 tags:
   - concept
-  - front-page
+  - methodology
   - personal-ai
-  - synthesis
-  - ambient-computing
-  - data-sovereignty
 status: active
 sources: []
 ---

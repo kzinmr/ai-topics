@@ -7,7 +7,6 @@ tags:
   - fine-tuning
   - quantization
   - inference
-  - fp8
 related:
   - concepts/fine-tuning/_index
   - concepts/fine-tuning/peft-lora-qlora

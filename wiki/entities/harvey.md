@@ -5,10 +5,8 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - legal-ai
   - ai-adoption
   - model
-  - professional-services
 aliases: ["Harvey AI", "Counsel AI Corporation"]
 sources:
   - https://www.harvey.ai/

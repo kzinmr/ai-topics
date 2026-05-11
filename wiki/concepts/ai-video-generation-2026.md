@@ -5,10 +5,8 @@ created: 2026-04-30
 updated: 2026-04-30
 tags:
   - concept
-  - video-generation
   - multimodal
   - model
-  - text-to-video
 status: complete
 sources:
   - url: "https://www.atlascloud.ai/blog/guides/best-ai-video-generation-models-2026"

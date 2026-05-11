@@ -7,7 +7,7 @@ tags:
   - entity
   - person
   - model
-  - notion
+  - company
   - context-engineering
 related: [headless-saas, ai-agent-memory-middleware, context-graph]
 sources:

@@ -4,12 +4,9 @@ created: 2026-05-02
 updated: 2026-05-02
 tags:
   - concept
-  - ai-ethics
-  - content-moderation
+  - ethics
   - privacy
   - methodology
-  - smart-glasses
-  - human-reviewers
 aliases:
   - Meta AI glasses privacy controversy
   - Kenyan content moderators Meta

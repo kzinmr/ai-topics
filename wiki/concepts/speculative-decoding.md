@@ -8,7 +8,6 @@ tags:
   - optimization
   - methodology
   - architecture
-  - multi-token-prediction
 aliases: [speculative-sampling, assisted-generation, drafter-verifier, mtp-drafters]
 sources:
   - raw/articles/2025-10-09_vllm-speculative-decoding-blog.md

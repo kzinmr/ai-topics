@@ -9,7 +9,6 @@ tags:
   - entity
   - fine-tuning
   - model
-  - sakana-ai
 aliases:
   - Low-Rank Adaptation
   - Doc-to-LoRA

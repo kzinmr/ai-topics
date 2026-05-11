@@ -2,11 +2,8 @@
 title: "Object Storage Queue Pattern"
 tags:
   - concept
-  - queue
   - protocol
-  - zero-disk
-  - async-processing
-  - architecture-pattern
+  - infrastructure
 created: 2026-05-07
 updated: 2026-05-07
 type: concept

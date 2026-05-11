@@ -3,7 +3,7 @@ title: "CodeMode — LLM Code Execution Over Sequential Tool Calling"
 tags:
   - coding-agents
   - company
-  - pydantic-ai
+  - developer-tooling
   - tool
   - sandbox
   - rlm

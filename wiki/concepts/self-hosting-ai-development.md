@@ -9,7 +9,7 @@ tags:
   - concept
   - infrastructure
   - developer-tooling
-  - vibe-coding
+  - coding-agents
 status: enriched
 sources:
   - raw/articles/timsh.org--why-you-should-self-host--bff25172.md

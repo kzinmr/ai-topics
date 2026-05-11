@@ -5,12 +5,9 @@ aliases:
   - business-to-agent
   - b2a
   - marketing-to-the-machine
-  - agentic-web
 tags:
   - concept
-  - business-model
   - tool
-  - agentic-web
   - search
 status: active
 description: "A business paradigm where the primary user of a service is an AI agent/LLM rather than a human. Services optimize for token efficiency, structured data output, and machine-readable interfaces over human UI/UX."

@@ -7,7 +7,6 @@ tags:
   - product
   - platform
   - developer-tooling
-  - editor
   - coding-agents
   - protocol
 aliases:

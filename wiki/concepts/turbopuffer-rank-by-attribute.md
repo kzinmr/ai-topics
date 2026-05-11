@@ -5,14 +5,9 @@ description: "TurboPuffer's rank-by-attribute feature enables mixing numeric and
 category: concepts
 sub_category: Vector Search
 tags:
-  - turbopuffer
   - search
-  - bm25
-  - relevance-ranking
-  - search-infrastructure
 status: complete
 related:
-  - bm25
   - vector-databases
   - reranking
 created: 2026-04-30

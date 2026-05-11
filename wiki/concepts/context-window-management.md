@@ -5,7 +5,6 @@ created: 2026-04-13
 updated: 2026-04-16
 tags:
   - context-management
-  - token-management
   - prompting
   - anthropic
   - optimization

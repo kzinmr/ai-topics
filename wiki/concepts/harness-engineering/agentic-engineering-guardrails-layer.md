@@ -10,7 +10,6 @@ tags:
   - harness-engineering
   - agentic-engineering
   - security
-  - guardrails
   - coding-agents
 aliases:
   - guardrails-layer
