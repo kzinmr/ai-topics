@@ -478,6 +478,7 @@
 - [[entities/jason-liu--instructor]] — Jason Liu — Creator of Instructor library for structured LLM outputs
 - [[entities/jason-liu--key-work]] — Jason Liu key contributions and projects
 - [[entities/jason-liu--rag-framework]] — Jason Liu RAG framework and patterns
+- [[entities/khairallah-al-awady]] — Khairallah AL-Awady — AI educator, context engineering practitioner framework (4-file architecture), X Articles courses
 - [[entities/karpathy-ideas]] — Andrej Karpathy ideas and perspectives on AI
 - [[entities/karpathy-projects]] — Andrej Karpathy projects and code
 - [[entities/karpathy-research]] — Andrej Karpathy research contributions
