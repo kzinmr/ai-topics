@@ -1,0 +1,79 @@
+{
+  "triage_timestamp": "2026-05-11T07:19:09Z",
+  "run_id": "20260511T071909Z",
+  "newsletters": [
+    {
+      "message_id": "<20260510120333.3.2da6cae932c7414c@mg2.substack.com>",
+      "subject": "How to build a company that withstands any era | Eric Ries, Lean Startup author",
+      "date": "2026-05-10",
+      "source": "Lenny's Newsletter (lennysnewsletter.com)",
+      "author": "Lenny Rachitsky",
+      "classification": "low",
+      "relevance_reason": "General business/startup methodology podcast with Eric Ries. Covers corporate governance, founder dynamics, and company building principles. Tangential to AI/LLM/Agent topics.",
+      "recommended_action": "archive",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-10-how-to-build-a-company-that-withstands-any-era-eric-ries-lean-startup-author.md",
+      "article_links_resolved": [
+        "https://open.substack.com/pub/lenny/p/how-to-build-a-company-that-withstands"
+      ]
+    },
+    {
+      "message_id": "<20260510130504.3.d02b994ac2b08aa0@mg-d0.substack.com>",
+      "subject": "SpaceXAI's Spice Trade, Anthropic Targets the Trillion, and OpenAI's Stack Sweep",
+      "date": "2026-05-10",
+      "source": "The Signal (thesignal.substack.com)",
+      "author": "Alex Banks",
+      "classification": "critical",
+      "relevance_reason": "Covers major AI industry developments: Anthropic/SpaceX compute deal (300+ MW at Colossus data center, space computing interest), SpaceXAI merger (xAI dissolved into SpaceX), OpenAI IPO targeting $1T valuation, Anthropic at $380B valuation. Directly impacts AI ecosystem landscape.",
+      "recommended_action": "ingest",
+      "suggested_wiki_pages": [
+        "entities/spacex.md - update with SpaceXAI merger and compute deal",
+        "entities/anthropic.md - update with valuation and infrastructure expansion",
+        "entities/openai.md - update with IPO preparations and enterprise stack",
+        "concepts/ai-compute-infrastructure.md - new page on data center deals and space computing"
+      ],
+      "key_topics": [
+        "SpaceXAI merger (xAI + SpaceX)",
+        "Anthropic-SpaceX compute deal (300+ MW)",
+        "OpenAI $1T IPO preparations",
+        "Anthropic $380B valuation",
+        "AI compute infrastructure expansion",
+        "Space-based computing development"
+      ],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-10-spacexai-s-spice-trade-anthropic-targets-the-trillion-and-openai-s-stack-sweep.md",
+      "article_links_resolved": [
+        "https://open.substack.com/pub/thesignal/p/spacexais-spice-trade-anthropic-targets"
+      ]
+    },
+    {
+      "message_id": "<20260510.155156.fd7fe11c@mta19>",
+      "subject": "Trustworthy AI Is Really About Delegated Agency",
+      "date": "2026-05-10",
+      "source": "AI-focused newsletter (beehiiv platform)",
+      "classification": "high",
+      "relevance_reason": "Discusses AI agent identity, delegated authority, and trust frameworks for autonomous agents. Core topics for the AI agents wiki - covers the POP Framework (Permissions, Obligations, Prohibitions) for AI governance, NIST-cataloged BX-AI OS architecture, and the critical distinction between data access and action authority for AI agents.",
+      "recommended_action": "ingest",
+      "suggested_wiki_pages": [
+        "concepts/ai-agent-identity.md - new page on agent identity and delegated authority",
+        "concepts/ai-trustworthiness.md - update with POP framework and governance layers",
+        "entities/allen-martinez.md - new entity for BX-AI OS creator (NIST-cataloged)"
+      ],
+      "key_topics": [
+        "AI agent identity and trust",
+        "Delegated authority for autonomous agents",
+        "POP Framework (Permissions, Obligations, Prohibitions)",
+        "AI governance architecture",
+        "BX-AI OS (NIST Informative Reference)",
+        "Agent commerce and authorization"
+      ],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-10-trustworthy-ai-is-really-about-delegated-agency.md"
+    }
+  ],
+  "summary": {
+    "total_newsletters": 3,
+    "critical": 1,
+    "high": 1,
+    "low": 1,
+    "recommended_ingest": 2,
+    "recommended_archive": 1
+  }
+}

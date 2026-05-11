@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-05-09
+updated: 2026-05-11
 sources: [
   "https://x.com/RLanceMartin/status/2041927992986009773",
   "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
@@ -222,6 +222,56 @@ Anthropic's research priorities:
 - Constitutional AI
 - Scalable oversight
 - Interpretability
+
+## Code w/ Claude 2026 — Product Launches (May 2026)
+
+Anthropic は Code w/ Claude 2026 イベントで複数の新製品・機能を発表した：
+
+### Microsoft 365 GA
+
+Claude の Microsoft 365 統合が大幅に進展：
+
+- **Excel, PowerPoint, Word**: 一般提供（GA）開始
+- **Outlook**: パブリックベータ公開
+- Microsoft アプリ間で Claude が会話コンテキストを保持
+
+### Dreaming — Managed Agents 研究プレビュー
+
+「Dreaming（夢想）」機能が研究プレビューとしてローンチ。Managed Agents プラットフォーム上で動作し、以下がパブリックベータに移行：
+
+- **Outcomes**: エージェントの成果物管理
+- **Multi-agent orchestration**: 複数エージェントの協調実行
+- **Webhooks**: 外部サービス連携
+
+### 金融サービス向けテンプレート
+
+Cowork / Claude Code のプラグインとして、または Managed Agents として本番実行可能な金融サービス用エージェントテンプレートを提供：
+
+- 投資ピッチ作成
+- バリュエーションレビュー
+- 月末決算処理
+
+### 資金調達と評価額
+
+Financial Times 報道（2026年5月）：
+
+- **最大$50Bの資金調達**を協議中
+- **評価額$1T近辺**を目標 — OpenAI の $852B を上回る
+- 調達資金はほぼ全額**計算資源の拡大**に充当予定（供給制約が顧客サービスに影響を与えている）
+
+### 計算資源パートナーシップの全体像
+
+Anthropic は複数の大規模計算資源契約を締結：
+
+| パートナー | 規模 | 状況 |
+|-----------|------|------|
+| **SpaceXAI (Colossus 1)** | 300MW / 220K+ GPU | 2026年5月発効 |
+| **Amazon** | 最大5GW（2026年末までに~1GW新規） | 契約締結済み |
+| **Google + Broadcom** | 5GW | 2027年稼働開始予定 |
+| **Microsoft + NVIDIA** | $30B Azure容量 | 戦略的パートナーシップ |
+| **Fluidstack** | $50B 米国AIインフラ投資 | 発表済み |
+
+Claude は **AWS Trainium、Google TPU、NVIDIA GPU** の複数ハードウェアで訓練・実行されている。
 
 ## Related
 - [[entities/anthropic]] — The model family

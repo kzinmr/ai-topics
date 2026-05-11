@@ -3,7 +3,7 @@ title: Jim Fan
 type: entity
 handle: "@jim-fan"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-11
 related:
   - [[entities/nvidia-dgx-spark]]
   - [[concepts/embodied-ai]]
@@ -15,9 +15,7 @@ tags:
   - person
   - ai
   - robotics
-  - embodied-ai
   - nvidia
-  - simulation
   - world-models
 sources: []
 ---
@@ -117,6 +115,30 @@ A blog article exploring how foundation models are evolving beyond language into
 
 ### AI Ascent 2025 Talk
 "The Physical Turing Test: Jim Fan on Nvidia's Roadmap for Embodied AI" — a comprehensive presentation outlining NVIDIA's vision for physical AI, from current robot limitations to future simulation capabilities.
+
+## Sequoia Talk (May 2026) — Dexterity Scaling Laws
+
+Sequoia Capital 主催の講演で、Jim Fan はロボティクスの新たなスケーリング則を発表：
+
+### 巧緻性（Dexterity）にスケーリング則が存在
+
+言語モデルやビジョンモデルと同様に、**ロボットの巧緻性にもスケーリング則が適用される**ことを実証：
+
+- **訓練データ**: 2.1万時間の人間視点映像（first-person human footage）を使用
+- **ロボットデータの割合**: 全訓練データの **0.1%未満** のみがロボットの実データ
+- **含意**: 人間の動作データからロボットの巧緻性が学習可能であることを示唆
+
+### ロボティクスのインターネット規模データ不足
+
+- LLM はインターネット全体のテキスト（数兆トークン）で訓練可能
+- ロボットには同等規模の訓練データが**存在しない**
+- シミュレーション（Simulation 1.0 → 2.0）がこのギャップを埋める鍵
+
+### ビジョン
+
+> 「ロボットの最大のボトルネックはデータだ。インターネットはテキストについては豊富だが、物理的インタラクションのデータは極めて希少である。」
+
+この講演は Fan の **Physical AI** ビジョンをさらに具体化し、データ不足をシミュレーションで克服する道筋を示した。
 
 ## Blog / Recent Posts
 

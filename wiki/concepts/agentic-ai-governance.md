@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "Frameworks for governing autonomous AI agents in enterprise — identity-based access, three-tiered guardrails, HITL/HOTL patterns, and regulatory alignment."
 created: 2026-05-04
-updated: 2026-05-08
+updated: 2026-05-11
 sources:
   - raw/articles/2026-05-02_yale-celi-agentic-ai-governance-framework.md
 related:
@@ -43,6 +43,42 @@ Malicious instructions hidden in web content can manipulate agents into exfiltra
 
 ### Regulatory Tension
 The **EU AI Act** mandates "effective human oversight" for high-risk systems, creating friction with full autonomy goals.
+
+## Trustworthy AI as Delegated Agency
+
+A reframing of the AI governance problem: **Trustworthy AI is fundamentally about delegated agency, not control.**
+
+### The Shift: Control → Delegation
+
+Traditional governance frameworks focus on **restricting and controlling** agent actions — guardrails, permissions, rate limits. The delegated agency perspective reframes the problem:
+
+- **Delegated agency**: Granting AI systems the authority to act on our behalf within defined boundaries, analogous to how humans delegate tasks to trusted colleagues
+- **Trust as the foundation**: Like human delegation, AI delegation requires trust in the agent's judgment, capabilities, and alignment with organizational values
+- **Governance ≠ Restriction**: Effective governance is about designing delegation structures that enable autonomy while maintaining accountability
+
+### Key Implications
+
+| Traditional View | Delegated Agency View |
+|-----------------|----------------------|
+| AI as a tool to control | AI as an agent to trust |
+| Guardrails as barriers | Guardrails as enabling constraints |
+| Human oversight at every step | Human oversight at boundary conditions |
+| Minimize AI autonomy | Optimize delegation scope |
+| Compliance-driven | Trust-and-verify |
+
+### Connection to Industry Trends
+
+This framework aligns with emerging industry patterns:
+
+- **Anthropic Managed Agents**: Filesystem-as-memory, multi-agent orchestration, and Dreaming — all built on trust in agent competence
+- **OpenAI Symphony**: WORKFLOW.md-driven autonomous execution with critique shadowing — delegation with verification
+- **StrongDM Dark Factory**: Fully autonomous development pipeline — the logical endpoint of delegated agency
+
+### Open Questions
+
+- At what delegation level does liability shift from human to system?
+- Can "trust" be engineered, or does it require operational track records?
+- How do regulatory frameworks (EU AI Act) reconcile mandatory human oversight with delegated agency?
 
 ## Governance Frameworks
 

@@ -1,3 +1,12 @@
+## [2026-05-11] newsletter-wiki-ingest | The Signal + Superintel — Colossus deal, Anthropic/OpenAI updates, Jim Fan + AI governance
+
+- **更新:** `concepts/xai-anthropic-colossus-deal.md` — Colossus 2 詳細（1.5GW/550K GPUs）、経済分析（$5B→$15B）、Anthropic 利用者への直接恩恵（レート制限2倍/ピーク時制限撤廃）、軌道コンピュート計画 の4セクション追加
+- **更新:** `entities/anthropic.md` — Code w/ Claude 2026 新発表: M365 GA（Excel/PPT/Word GA, Outlook beta）、Dreaming research preview、金融テンプレート、$50B調達/$1T評価額、計算資源パートナーシップ全体像（SpaceXAI/Amazon/Google/Microsoft/Fluidstack）を追加
+- **更新:** `entities/openai.md` — May 2026 新製品: GPT-Realtime-2（音声推論/70+言語翻訳/ストリーミング文字起こし）、Codex ブラウザプラグイン（Chrome/macOS/Windows）、MRC オープンソース化（OCP経由、NVIDIA/AMD/Broadcom/Intel/Microsoft共同開発）を追加
+- **更新:** `entities/jim-fan.md` — Sequoia講演（May 2026）: Dexterity scaling laws、2.1万時間人間視点映像、ロボットデータ0.1%未満、Internet-scaleデータ不足課題 を追加
+- **更新:** `concepts/agentic-ai-governance.md` — 「Trustworthy AI = Delegated Agency」フレームワーク: Control→Delegationパラダイムシフト、5次元対比表、業界動向との接続（Anthropic/OpenAI/StrongDM）、Open Questions を追加
+- **作成:** `raw/articles/2026-05-06_xai_anthropic-compute-partnership.md`, `raw/articles/2026-05-06_anthropic_higher-limits-spacex.md`
+- **ソース:** x.ai/news, anthropic.com/news, The Signal (Alex Banks), Superintel+ (getsuperintel.com)
 ## [2026-05-11] blog-ingest | Gary Marcus entity, Sean Goedecke enrichment, Enterprise AI Scaling concept, Simon Willison updates
 
 - **作成:** `wiki/entities/gary-marcus.md` — Cognitive scientist, AI critic. METR 50%-time-horizon critique, "Misplaced panic over AI progress" (May 2026). Reliability vs capability, neurosymbolic AI advocacy.

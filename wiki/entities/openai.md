@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-05-10
+updated: 2026-05-11
 tags:
   - company
   - model
@@ -121,6 +121,32 @@ OpenAI published guidance on how ChatGPT handles user data in model training:
 
 This reflects OpenAI's shift toward transparency as models become more capable and handle increasingly personal tasks.
 
+## May 2026 Product Launches
+
+### GPT-Realtime-2
+
+次世代音声AIモデル。主要機能：
+
+- **音声推論（Speech Reasoning）**: 話し言葉を理解し推論する能力
+- **70+言語翻訳**: リアルタイム多言語翻訳
+- **ストリーミング文字起こし**: 音声のリアルタイムテキスト変換
+- 音声インタラクションの新たな基盤モデルとして位置づけ
+
+### Codex ブラウザプラグイン
+
+OpenAI のコーディングエージェント **Codex** がブラウザ上で直接動作するプラグインをリリース：
+
+- **Chrome** 拡張機能
+- **macOS / Windows** デスクトップ統合
+- 開発環境を問わず、ブラウザベースで Codex のコード生成・編集機能を利用可能に
+
+### Multipath Reliable Connection（MRC）— OCP 経由でオープンソース化
+
+OpenAI は **MRC（Multipath Reliable Connection）** ネットワークプロトコルを **Open Compute Project（OCP）** を通じてオープンソース化：
+
+- **共同開発パートナー**: NVIDIA、AMD、Broadcom、Intel、Microsoft
+- AI データセンターのネットワーク信頼性を向上させる技術
+- 業界全体の標準化を目指す取り組み
 
 ## Security Architecture
 
