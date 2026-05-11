@@ -5,22 +5,19 @@ aliases:
 - browseruse
 - browser-use-oss
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-05-11
 tags:
   - entity
   - developer-tooling
   - browser-agent
   - open-source
-- entity
-- technology
-- browser-agent
-- open-source
-- dom-based
+  - browser-automation
 status: active
 sources:
 - https://github.com/browser-use/browser-use
 - https://browser-use.com
 - https://www.fastaijobs.com/companies/browser-use
+- raw/articles/2026-05-09_browser-use_production-architecture.md
 ---
 
 # browser-use
@@ -86,6 +83,19 @@ await agent.run()
 | agent-sdk | ミニマルエージェントアーキテクチャSDK | 661 |
 | browser-harness | 自己修復型ブラウザハーネス | 4,200 |
 | video-use | ビデオ操作エージェント | 2,200 |
+
+## 主要人物
+
+- **Larsen Cundric** (@larsencc) — Founding Engineer。4,000+コミットの経験から本番アーキテクチャ（[[concepts/browser-use-production-architecture]]）を設計。SQS-to-Lambda、継続メカニズム、S3状態管理を考案。
+- **Gregor Zunic** — 創設者。「The Bitter Lesson of Agent Frameworks」の著者。
+
+## 主要ブログ記事
+
+- [A Production Architecture for the Browser Use Open-Source Library](https://browser-use.com/posts/production-architecture-browser-use) (2026-05-09) — SQS-to-Lambda本番アーキテクチャ。→ [[concepts/browser-use-production-architecture]]
+- [Everything I Got Wrong in the Last 4,000 Commits](https://browser-use.com/posts/everything-i-got-wrong)
+- [The Bitter Lesson of Agent Harnesses](https://browser-use.com/posts/bitter-lesson-agent-harnesses)
+- [BUX: Your 24/7 Remote Agent](https://browser-use.com/posts/bux-launch-blog)
+- [How We Built Secure, Scalable Agent Sandbox Infrastructure](https://browser-use.com/posts/two-ways-to-sandbox-agents)
 
 ## 哲学: 「エージェントハーネスの苦い教訓」
 

@@ -456,7 +456,7 @@
 - [[entities/zed]] — High-performance Rust code editor from former Atom team (Nathan Sobo, Antonio Scandurra, Max Brunsfeld). Reached 1.0 on April 29, 2026. AI-native with parallel agent orchestration, Zeta LLM, GPUI framework.
 - [[entities/zyphra]] — Open superintelligence research/cloud company. ZAYA1 MoE model family (VL-8B, 74B) trained on AMD. $110M Series A at $1B valuation. Apache 2.0 open-source models.
 
-- [[entities/palantir]] — AI-powered decision infrastructure company. The Palantir Ontology contextualizes computation within "lived reality" for enterprise agent workflows. Q1 2026: $1.63B revenue (+84% gov), Maven elevated to permanent Pentagon program. CEO Alex Karp: Frankfurt School critical theory background → decision-centric platform architecture.
+- [[entities/palantir]] — AI-powered decision infrastructure company. The Palantir Ontology contextualizes computation within "lived reality" for enterprise agent workflows. Q1 2026: $1.63B revenue (+84% gov), Maven elevated to permanent Pentagon program. **May 2026: The Palantir Model goes global** — OpenAI ($4B Deployment Company) and Anthropic ($1.5B JV) both replicate Palantir's embed-engineers-in-customer-operations playbook. See [[concepts/ai-services-joint-ventures]].
 - [[entities/mistral-ai]] — French AI company. Released Mistral Workflows (enterprise orchestration layer) and Voxtral TTS in April 2026.
 - [[entities/talkie]] — Open-weight 13B historical LLM trained exclusively on pre-1930 data. By David Duvenaud, Alec Radford, and @status_effects.
 - [[entities/david-duvenaud]] — AI researcher. Co-announced Talkie, a 13B LLM trained exclusively on pre-1930 data.
@@ -574,7 +574,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1238 pages)
+## Concepts (1239 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -590,6 +590,7 @@
 - [[concepts/ai-evals]] — AI Evals (AI Evaluation Systems)
 - [[concepts/ai-index-report-2026]] — 2026 AI Index Report
 - [[concepts/ai-ready-apis]] — AI-Ready APIs（AIエージェント向けAPI設計）。AIエージェントをAPI消費者として想定したAPI設計の概念。機械可読スキーマ、エージェント認識セキュリティ、コントラクトテストの重要性。Postman 2025調査（5,700人対象）のAI-APIギャップ分析を含む。
+- [[concepts/ai-services-joint-ventures]] — **AI Services JVs (May 2026)**: OpenAI ($4B "The Deployment Company") and Anthropic ($1.5B Blackstone/Goldman JV) create PE-backed ventures to buy engineering services/consulting firms. Explicitly mirrors Palantir's embed-engineers-in-customer-ops model. Marks the shift from API-first to full-stack services enterprise AI. → Reuters scoop.
 - [[concepts/ai-memory-systems]] — AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較
 - [[concepts/ai-output-format-progression]] — AI出力フォーマット進化（Karpathy）: raw text → markdown → HTML → interactive neural videos/simulations。Audio in, Vision out。HTMLが次期デフォルト出力形式に。Thariq Shihiparの8カテゴリのHTMLアーティファクトユースケースを含む。
 - [[concepts/ai-privacy-tools]] — AI Privacy Tools
@@ -830,6 +831,7 @@
 - [[concepts/zaya1-74b-preview]] — Zyphra MoE reasoning-base LLM (4B active / 74B total). Not chat-tuned. Mamba/CCA hybrid, AMD-trained, Apache 2.0 preview.
 - [[concepts/advanced-tool-use]] — Advanced Tool Use
 - [[concepts/agent-skills]] — Agent Skills
+- [[concepts/browser-use-production-architecture]] — Browser Use Production Architecture — SQS-to-Lambda architecture for running browser agents at scale
 - [[concepts/building-effective-agents]] — Building Effective Agents
 - [[concepts/chain-of-thought]] — Chain of Thought
 - [[concepts/context-engineering]] — Context Engineering

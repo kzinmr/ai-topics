@@ -1,7 +1,7 @@
 ---
 title: KV Cache — Key-Value Caching in Transformer Inference
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-11
 type: concept
 tags:
   - architecture
@@ -10,6 +10,7 @@ tags:
   - methodology
 sources:
   - raw/articles/crawl-2026-04-28-kv-cache.md
+  - raw/articles/2025-02-14_dailydoseofds_kv-caching-explained.md
 ---
 
 # KV Cache: Key-Value Caching in Transformer Inference
@@ -75,9 +76,22 @@ def reset_cache(self):
 
 ## 重要な注意点
 
+- **最初のトークンが遅い理由**: ChatGPT等で最初のトークン生成に時間がかかるのは、プロンプト全体のKVキャッシュを計算しているため。以降のトークンはほぼ瞬時に生成される。
 - **訓練 vs 推論:** KV Cacheは推論時のみ使用。訓練時は全トークンを並列処理するため不要。
 - **正当性:** 正しいKV Cache実装は非キャッシュモデルと**完全に同一の出力**を生成する。差異がある場合は位置エンコーディングの不整合を示す。
 - **メモリ消費:** Llama 3 (131k context) の場合、フルキャッシュで約8GBのVRAMを消費。
+
+### メモリ消費の実例
+
+| モデル | 1KトークンあたりのKVキャッシュ | 4Kトークン |
+|--------|------------------------------|-----------|
+| Qwen 2.5 R1 1.5B | 28 MiB | 112 MiB |
+| Qwen 2.5 R1 7B | 56 MiB | 224 MiB |
+| Llama 3.1 8B | 128 MiB | 512 MiB |
+| Mistral NeMo 12B | 160 MiB | 640 MiB |
+| Llama 3.3 70B Instruct | 320 MiB | 1.25 GiB |
+
+参考: Avi Chawla, "KV Caching in LLMs, Explained Visually" (Feb 2025)
 
 ## 関連概念
 

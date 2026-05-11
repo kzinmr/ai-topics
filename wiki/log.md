@@ -1,3 +1,15 @@
+## 2026-05-11 22:45 UTC — Reuters Article: OpenAI/Anthropic JVs adopt Palantir Model
+
+**Article**: [Reuters: OpenAI, Anthropic ventures in talks to buy AI services firms](https://www.reuters.com/world/openai-anthropic-ventures-talks-buy-ai-services-firms-sources-say-2026-05-05/) — Milana Vinn, May 5, 2026. Already ingested as `raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md`.
+
+**Pages updated**:
+- `concepts/ai-services-joint-ventures.md` — Major expansion: added "The Palantir Playbook" section with 3-way comparison table (Palantir vs OpenAI DC vs Anthropic JV), Reuters M&A details (3 acquisitions in advanced stages), Jon Gray quotes, explicit Palantir model framing. Tags: palantir-model, m-and-a.
+- `entities/palantir.md` — New section "The Palantir Model Goes Global (May 2026)": Reuters quote validating Palantir's embed-engineers playbook as industry standard. Competitive positioning analysis. Cross-referenced to `concepts/ai-services-joint-ventures`.
+- `entities/openai.md` — Fixed broken ref `enterprise-ai-deployment-jv` → `ai-services-joint-ventures`.
+- `entities/anthropic.md` — Fixed broken ref `enterprise-ai-deployment-jv` → `ai-services-joint-ventures`.
+
+**Key insight**: The approach "mirrors Palantir's model of embedding engineers inside customers' operations" — the AI industry spent 2023–2025 pursuing API-first, and is now capitulating to the labor-intensive, high-touch services model Palantir has been practicing for 20 years.
+
 ## 2026-05-11 22:30 UTC — X Accounts Scan: FlashAttention-4, Delphi scaling laws, Interaction Models, folk
 
 **Scan summary**: 79 tracked accounts, 12 scanned, 7 new posts detected. 4 major wiki actions taken.

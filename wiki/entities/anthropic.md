@@ -141,7 +141,7 @@ Anthropic partnered with Blackstone, Hellman & Friedman, and Goldman Sachs to fo
 | **Total Raise** | $1.5B ($300M each from main participants) |
 | **Focus** | Claude-powered enterprise deployment systems |
 | **Significance** | Part of broader industry shift from model APIs to service delivery |
-| **Context** | See [[concepts/enterprise-ai-deployment-jv]] for full comparison with OpenAI's $4B Deployment Company |
+| **Context** | See [[concepts/ai-services-joint-ventures]] for full comparison with OpenAI's $4B Deployment Company |
 
 ### Anthropic Orbit (Leaked, May 2026)
 

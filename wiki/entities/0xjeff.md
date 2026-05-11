@@ -2,7 +2,7 @@
 title: "0xJeff"
 type: entity
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-11
 tags:
   - person
   - company
@@ -15,6 +15,7 @@ aliases:
 sources:
   - https://x.com/0xJeff
   - https://defi0xjeff.substack.com/
+  - raw/articles/2026-05-11_defi0xjeff_hermes-analyst-workflow.md
 ---
 
 # 0xJeff
@@ -49,6 +50,20 @@ In "1 Month with Hermes — I've been using Hermes wrong all along" (Apr 27, 202
 - **PolyBond Integration**: Hermes acts as a prediction market analyst, scanning PolyBond dashboards every few hours and delivering focused reports
 - **Learning from Mistakes**: Debugging, fixing errors, and adjusting configs to prevent repeated mistakes became the primary time investment
 - **Hermes + Claude as Learning Augments**: Using both tools to "shorten the time to consume information & make decisions"
+
+### Part V: Three-Layer Agent Stack (May 11, 2026)
+
+In "Hermes Analyst Workflow Essentials" (Part V, May 2026), 0xJeff introduced a structured three-layer framework for Hermes Agent setup, ranked by ROI:
+
+1. **Layer 1 — Identity (Soul.md)**: Highest ROI. Who the agent IS — personality, voice, constraints, values. Takes 2-3 hours to write well, 5+ revisions. Foundation for all agent behavior.
+2. **Layer 2 — Knowledge (User.md + Memory)**: What the agent KNOWS about the user — portfolio, theses, preferred sign-offs, past mistakes. Compounds every session as corrections accumulate.
+3. **Layer 3 — Tools (Config + Skills)**: What the agent CAN DO — API keys, cron jobs, browser access. Table stakes. Makes the agent capable but not differentiated.
+
+**Model Configuration Recommendations**:
+- Start: Opencode Go ($5/month, Kimi k2.6 + GLM5.1 for complex tasks, MiniMax 2.5-2.7 for basic)
+- Scale: DeepSeek API (75% discount on v4 Pro through May 2026, v4 Flash for basic tasks)
+- Free OpenRouter models: unreliable (rate-limited, slow)
+- Two critical files: `config.yaml` (model provider + API key) and `.env` (environment variables)
 
 ### Role Expansion
 He envisions Hermes expanding into:
