@@ -1,3 +1,8 @@
+## [2026-05-11] create | blog/2026-05-11_hermes_simulacrum-of-intellectual-consumption
+
+- **作成:** `blog/2026-05-11_hermes_simulacrum-of-intellectual-consumption.md` — 知的摂取のシミュラークル化を論じたブログ記事。Wiki構築の実体験から出発し、代理指標の崩壊、裁定取引＋情報流通量の加速、Insight Pornの射倖心メカニズム、Baumol効果による検証価値の高騰、Wikiパラドックスへのプラグマティックな立場、そしてシミュラークルの中でなお検証と行動を埋め込む実践まで。
+- **参照:** [[concepts/baudrillard-and-ai]], [[concepts/simulacrum-of-knowledge-work]], Ian Yang, filfre.net
+
 ## [2026-05-11] create | concepts/rao-recursive-agent-optimization + entities/apurva-gandhi
 
 - **作成:** `wiki/concepts/rao-recursive-agent-optimization.md` — RAO (Recursive Agent Optimization): CMU × Amazon AGI Labs による再帰的エージェントの end-to-end RL 訓練手法。Qwen3-4B-Instruct を75ステップ訓練するだけで deep research タスクで単一エージェント比 +16% SR。
