@@ -9,7 +9,7 @@ docs: https://docs.parallel.ai
 github: https://github.com/parallel-web
 x_handle: p0
 linkedin: https://www.linkedin.com/company/parallel-web/
-tags: [search, api, observability, ai-infrastructure, security, governance]
+tags: [search, monitoring, ai-infrastructure, security]
 ---
 
 # Parallel Web Systems Inc.

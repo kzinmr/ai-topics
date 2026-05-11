@@ -548,7 +548,8 @@
 - [[entities/nominal]] — Nominal — AI and analytics platform.
 - [[entities/nuro]] — Nuro — Autonomous delivery vehicles. Pivoted to Nuro Driver licensing platform in 2024.
 - [[entities/noumena-network]] — Noumena Network — AI research lab and product company. MoE training infrastructure (nmoe, RDEP) and agent systems. "Engineered for Experts // Built for Mastery."
-- [[entities/parallel-web-systems]] — Parallel Web Systems — Web infrastructure for AI agents. Founded by ex-Twitter CEO Parag Agrawal. $2B+ valuation.
+- [[entities/parallel-web-systems]] — Parallel Web Systems Inc. — AI agent infrastructure (Search, Extract, Monitor APIs). SOC 2 Type 2, ZDR. Founded 2023.
+- [[entities/parsagon]] — Parsagon
 - [[entities/reevo]] — Reevo — AI platform.
 - [[entities/rogo]] — Rogo — AI for financial services. $750M valuation. 25K+ users across 150 firms.
 - [[entities/scale-ai]] — Scale AI — Data labeling and AI infrastructure. Founded 2016. Key supplier to major AI labs.
