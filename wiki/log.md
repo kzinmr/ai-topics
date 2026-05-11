@@ -1,3 +1,21 @@
+## 2026-05-11 14:45 UTC — Agent Ergonomics (Wes McKinney) ingested
+
+**Source**: Wes McKinney blog (wesmckinney.com, Jan 2026)
+
+### Pages Created
+- `entities/wes-mckinney.md` — pandas creator, Apache Arrow co-creator, Principal Architect at Posit. Creator of roborev.
+- `concepts/agent-ergonomics.md` — Programming language design principles optimized for AI coding agents. Go/Rust > Python for agentic loops.
+
+### Raw Articles Saved
+- `raw/articles/2026-01-20_wesmckinney_agent-ergonomics.md`
+
+### Key Insights
+- **Human ergonomics matters less**: When agents are primary authors, compile speed, distribution, and runtime > readability
+- **Go has edge over Rust**: Ultrafast compile times for agentic iteration loops (agents compile 10-100x more than humans)
+- **Four-layer stack model**: Durable value in compute/data layers (1-2), not language bindings (3-4)
+- **roborev as force multiplier**: Automated code review essential when agents write in languages humans don't know well
+- **Python not dying, era ending**: Python transitions to exploration/orchestration layer
+
 ## 2026-05-11 14:15 UTC — Agent Memory Engineering ingested
 
 **Source**: Nicolas Bustamante blog (nicolasbustamante.com, 34 min read)
