@@ -1,3 +1,10 @@
+## [2026-05-11] manual | Garry Tan Meta-Meta-Prompting X Article 取り込み
+
+- **新規:** `wiki/raw/articles/2026-05-09_garrytan_meta-meta-prompting.md` — Garry Tan (YC CEO) の X Article。ABMedia の中国語要約から再構成。Fat Skills, Fat Code, Thin Harness、Skillify、100+ skills + 100K pages personal AI OS。
+- **新規:** `wiki/concepts/meta-meta-prompting.md` — AI agent 設計哲学の概念ページ。複利効果、マルチモデルルーティング、Hermes Agent との対応関係を含む。
+- **新規:** `wiki/entities/garry-tan.md` — YC CEO の人物ページ。Posterous、Initialized Capital、G Stack、AI builder としての側面。
+- **ソース:** ABMedia (https://abmedia.io/garry-tan-meta-meta-prompting), xurl メタデータ, web_extract プレビュー
+
 ## [2026-05-11] blog-wiki-ingest | Meta employee keystroke data collection (ATA/MCI)
 
 - **更新:** `wiki/entities/meta.md` — Agent Transformation Accelerator (ATA) / Model Capability Initiative (MCI) セクション追加。2026年4月より米国従業員のマウス操作・キーストローク・スクリーンショットをAIエージェント訓練用に収集。Andrew Bosworth CTO のビジョン、プライバシー懸念、組織的文脈（10%レイオフ）を含む。

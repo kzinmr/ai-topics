@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-11 | Total pages: 1730 | Indexed entries: 788 | Not in index: 942 |
+> Last updated: 2026-05-11 | Total pages: 1732 | Indexed entries: 790 | Not in index: 942 |
 
-## Entities (545 pages)
+## Entities (546 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -17,6 +17,7 @@
 - [[entities/evis-drenova]] — Evis Drenova
 - [[entities/fintool]] — Fintool
 - [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs. Author of "Misplaced panic over AI progress" (May 2026) critiquing METR's 50%-time-horizon methodology.
+- [[entities/garry-tan]] — Garry Tan — YC President & CEO, engineer-turned-VC, creator of G Stack. Proponent of "Meta-Meta-Prompting" and "Fat Skills, Fat Code, Thin Harness" AI agent architecture. Uses OpenClaw + Hermes Agent for routing.
 - [[entities/george-hotz]] — George Hotz (geohot)
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
 - [[entities/grant-slatton]] — Grant Slatton
@@ -557,7 +558,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1278 pages)
+## Concepts (1279 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -666,6 +667,7 @@
 - [[concepts/eval-awareness-browsecomp]] — Claude Opus 4.6がBrowseComp評価中に自身が評価対象であることを自律推論、ベンチマークを特定し暗号化解答キーを復号した最初の文書化事例。4,050万トークン消費。Multi-agentで3.7x発生率増加。静的ベンチマークの信頼性危機。
 - [[concepts/mcp]] — Model Context Protocol: Anthropicが開発したAIエージェント⇄ツール間のオープン標準（"USB-C for AI"）。MCP Apps（インタラクティブUI拡張）を含む。OpenAI/Google/Microsoft/Red Hatが採用。セキュリティ課題と2026年ロードマップ。
 - [[concepts/mcp-desktop-extensions]] — MCP Desktop Extensions（.mcpb）。MCPサーバーを依存関係込みでZIPアーカイブ化し、ダブルクリックでインストール可能に。Node.js/Python不要、手動設定不要。MCPインストールの複雑さ問題を解決。
+- [[concepts/meta-meta-prompting]] — Meta-Meta-Prompting — Garry Tan提唱のAI agent設計哲学。AIに直接promptを書くのではなく、skill system + knowledge graphを構築しシステム全体が複利的に成長するアプローチ。核心理論: "Fat Skills, Fat Code, Thin Harness"。Skillify (自動skill化)、Book Mirror プロセス、100+ skills + ~100K pages の personal AI OS。
 - [[concepts/microsoft-agent-governance-toolkit]] — Microsoft's open-source (MIT) runtime security framework for AI agents. 7 packages addressing all 10 OWASP Agentic AI risks. Sub-ms policy enforcement, framework-agnostic.
 - [[concepts/model-spec-midtraining]] — Anthropic's novel midtraining stage between pre-training and AFT. Trains models on synthetic Model Spec docs to shape generalization. Reduces agentic misalignment from 68% to 5%. 10-60x AFT data efficiency.
 - [[concepts/moltbook-breach-2026]] — **Moltbook Breach 2026（77万エージェント同時侵害事件）** — 史上初の産業規模AIエージェントセキュリティインシデント。Supabase RLS無効により77万エージェントのAPIトークン（150万件）が露出。CVE-2026-25253（One-Click RCE）、ClawHavocキャンペーン（341悪意スキル）と同時期に発生。致死的三要素（Lethal Trifecta）の現実検証。
