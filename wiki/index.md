@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-11 | Total pages: 1740 | Indexed entries: 798 | Not in index: 942 |
+> Last updated: 2026-05-11 | Total pages: 1742 | Indexed entries: 799 | Not in index: 943 |
 
 ## Entities (548 pages)
 
@@ -562,7 +562,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1282 pages)
+## Concepts (1283 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -576,6 +576,7 @@
 - [[concepts/ai-coding-reliability]] — AI Coding Reliability
 - [[concepts/ai-evals]] — AI Evals (AI Evaluation Systems)
 - [[concepts/ai-index-report-2026]] — 2026 AI Index Report
+- [[concepts/ai-ready-apis]] — AI-Ready APIs（AIエージェント向けAPI設計）。AIエージェントをAPI消費者として想定したAPI設計の概念。機械可読スキーマ、エージェント認識セキュリティ、コントラクトテストの重要性。Postman 2025調査（5,700人対象）のAI-APIギャップ分析を含む。
 - [[concepts/ai-memory-systems]] — AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較
 - [[concepts/ai-privacy-tools]] — AI Privacy Tools
 - [[concepts/ai-subprime]] — AI Subprime Crisis

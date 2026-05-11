@@ -1,10 +1,10 @@
 ---
 title: MCP (Model Context Protocol)
 created: 2026-04-26
-updated: 2026-05-07
+updated: 2026-05-11
 type: concept
-tags: [protocol, agentic-engineering, tool, mcp-apps]
-sources: [raw/articles/troyhunt.com--heres-what-agentic-ai-can-do-with-have-i-been-pwneds-apis--7eefad3f.md, raw/articles/2026-04-25-langchain-anatomy-agent-harness.md, raw/articles/gemini-deep-research-agent.md, raw/articles/2026-01-26_anthropic-interactive-tools-claude.md, raw/articles/2025-11-21_mcp-apps-proposal.md, raw/articles/2026-01-26_mcp-apps-official-release.md, raw/articles/2026-01-01_mcpui-dev-landing-page.md]
+tags: [protocol, agentic-engineering, tool, mcp]
+sources: [raw/articles/troyhunt.com--heres-what-agentic-ai-can-do-with-have-i-been-pwneds-apis--7eefad3f.md, raw/articles/2026-04-25-langchain-anatomy-agent-harness.md, raw/articles/gemini-deep-research-agent.md, raw/articles/2026-01-26_anthropic-interactive-tools-claude.md, raw/articles/2025-11-21_mcp-apps-proposal.md, raw/articles/2026-01-26_mcp-apps-official-release.md, raw/articles/2026-01-01_mcpui-dev-landing-page.md, raw/articles/2025-10-08_postman-state-of-api-2025-report.md]
 ---
 
 # MCP (Model Context Protocol)
@@ -47,6 +47,26 @@ Gemini Deep Research Agent adds MCP integration, enabling custom tool and data s
 - **Red Hat OpenShift AI 3**: Adds MCP support directly to the platform with guided server creation, containerization, and deployment
 - **VS Code, Cursor, Windsurf**: MCP servers can be configured as tool integrations
 - **Gemini-CLI**: MCP tool integration support
+
+### Developer Awareness vs Adoption (Postman 2025 Survey)
+
+Postmanの2025年State of the APIレポート（5,700人以上の開発者対象）がMCPの認知度と採用ギャップを明らかにした：
+
+| 指標 | 割合 |
+|---|---|
+| MCPを認知している開発者 | **70%** |
+| 日常的にMCPを使用 | **10%** |
+| 今後の探索を計画 | **24%** |
+
+公開からわずか9ヶ月で70%の認知度は、AIエージェント向け「ユニバーサル言語」としてのMCPへの強い関心を示す。しかし認知と実装のギャップ（10%のみが日常使用）は、MCPがまだアーリーアダプター段階であることを示している。
+
+Postmanプラットフォーム上のAI APIトラフィック分析：
+- OpenAIが全体の**56%**を占める（過去12ヶ月で420万コール）
+- Gemini: 前年比**3.1倍**成長
+- Llama: 前年比**6.9倍**成長
+- 総AI APIコール数: **753万**（前年比40%増）
+
+重要な洞察：「エージェントはすでにあなたのAPIを呼び出している。MCPがあろうとなかろうと」— MCP普及を待つのではなく、今すぐAPIをエージェント消費可能にすることが優先課題。
 
 ### Security Concerns
 OX Security identified serious vulnerabilities in MCP implementations — specifically **Remote Code Execution (RCE) across the AI agent ecosystem**. MCP's universal tool access model means a compromised MCP server can execute arbitrary code in the agent's context. Thousands of community-published MCP servers increase the attack surface.

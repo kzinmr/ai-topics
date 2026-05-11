@@ -1,3 +1,10 @@
+## [2026-05-11] manual | Postman 2025 State of the API Report — AI-Ready APIs concept
+
+- **新規:** `wiki/raw/articles/2025-10-08_postman-state-of-api-2025-report.md` — Postman第7回年次APIレポート。5,700人以上の開発者・アーキテクト・エグゼクティブ対象。AI-APIギャップ（89%がAI使用、24%のみがAIエージェント向けAPI設計）、MCP認知度（70%）と採用（10%）のギャップ、API収益化（65%の組織がAPIから収益）を分析。
+- **新規:** `wiki/concepts/ai-ready-apis.md` — AI-Ready APIs概念ページ。AIエージェントをAPI消費者として想定した設計原則：機械可読スキーマ、エージェント認識セキュリティ、コントラクトテスト。API-Firstと収益の相関分析を含む。
+- **更新:** `wiki/concepts/mcp.md` — MCPページにPostman調査の認知度・採用ギャップデータ（70%認知/10%日常使用）とPostmanプラットフォームのAIトラフィック分析（OpenAI 56%, Llama 6.9x成長）を追加。
+- **ソース:** postman.com/state-of-api/2025/
+
 ## [2026-05-11] manual | Parallel Web Systems articles — Bing API & Google Alerts alternatives
 
 - **新規:** `wiki/raw/articles/2026-02-16_parallel_bing-api-alternatives.md` — Bing API alternatives comparison (Parallel Search, Exa AI, SerpAPI, Tavily)
