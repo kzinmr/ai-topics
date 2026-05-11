@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-11 | Total pages: 1732 | Indexed entries: 790 | Not in index: 942 |
+> Last updated: 2026-05-11 | Total pages: 1740 | Indexed entries: 798 | Not in index: 942 |
 
-## Entities (546 pages)
+## Entities (548 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -32,6 +32,7 @@
 - [[entities/moonshot-ai]] — Moonshot AI
 - [[entities/nicolas-bustamante]] — Nicolas Bustamante
 - [[entities/palo-alto-networks]] — Global cybersecurity company. Acquired Portkey (May 2026) for AI agent security.
+- [[entities/parallel-web-systems]] — Parallel Web Systems Inc. — AI agent infrastructure (Search, Extract, Monitor APIs). SOC 2 Type 2, ZDR. Founded 2023.
 - [[entities/parchi]] — Parchi
 - [[entities/pi-coding-agent]] — pi (Coding Agent) [redirected to entities/pi]
 - [[entities/portkey]] — AI agent security platform — inspects actions, stops risky behavior, 99.99% uptime. Acquired by Palo Alto Networks (Q4 2026).
@@ -181,7 +182,7 @@
 - [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs.
 - [[entities/gemini]] — **Type** | Multimodal AI Model Family |
 - [[entities/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform announced at Cloud Next 2026. Evolves Vertex AI into full-stack agent build/scale/govern/optimize platform with 200+ models, Agent Studio, ADK, Memory Bank, Agent Sandbox.
-- [[entities/gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind designed for on-device frontier intelligence.
+- [[entities/gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind. 60M+ downloads. MTP drafters (May 2026) deliver 3x faster inference with no quality degradation.
 - [[entities/geoffrey-hinton]] — **Full Name** | Geoffrey Everest Hinton |
 - [[entities/geoffrey-litt]] — **X** | @geoffreylitt |
 - [[entities/geoffreylitt-com]] — **URL:** https://geoffreylitt.com
@@ -194,6 +195,7 @@
 - [[entities/gm8xx8]] — High-taste AI research curator on X/Twitter and HuggingFace (89K+ HF followers, 17K+ posts). Bio: "HIGH-TASTE AI | OPEN MODELS." Curates across proof theory, scaling laws, multimodal systems, and robotics. X account since 2010; AI curation since 2022.
 - [[entities/google-tpu]] — Google's custom ASIC for ML workloads, now split into specialized **TPU 8t** (training) and **TPU 8i** (inference) chips at the 8th generation. Designed for agentic AI, world models, Mixture-of-Exp...
 - [[entities/gpt-5.5]] — OpenAI's April 2026 model release; outperforms Opus 4.7, 40% more token efficient than GPT-5.4
+- [[entities/gpt-5-5-instant]] — OpenAI's updated default ChatGPT model (May 2026). 52.5% fewer hallucinations, improved STEM/vision, self-correction capability.
 - [[entities/gpt-oss]] — OpenAI's first open-weight model release since GPT-2 (Apache 2.0). Two MoE variants: 120B (5.1B active) and 20B (3.6B active). Near-o4-mini reasoning with configurable effort levels, native MXFP4 quantization.
 - [[entities/google]] — **Type** | AI Research & Product Company |
 - [[entities/gpjt]] — Giles Thomas is a software engineer and blogger known for his detailed, hands-on series **"Writing an LLM from scratch"** — a comprehensive, iterative exploration of building and training large lan...
@@ -279,6 +281,7 @@
 - [[entities/max-bernstein]] — **URL:** https://bernsteinbear.com
 - [[entities/maxime-labonne]] — Head of Post-Training @ Liquid AI. Creator of the LLM Course (78.9k ⭐), abliteration technique, and best-selling author of "LLM Engineer's Handbook" and "Hands-On Graph Neural Networks."
 - [[entities/maximor]] — AI-native finance automation platform. ERP-agnostic Audit-Ready Agents for close/cash/revenue/reporting. Founded by former Microsoft execs. $9M seed from Foundation Capital.
+- [[entities/meridian-labs]] — Independent AI evaluation nonprofit. Steward of Anthropic's Petri alignment testing tool (May 2026), ensuring industry-neutral safety evaluation.
 - [[entities/meta]] — Social media and technology company, developer of the LLaMA model family, Ray-Ban AI collaboration, and the **Personal Superintelligence** vision articulated by Mark Zuckerberg.
 - [[entities/micahflee]] — **Micah Lee** (he/him, pronounced "my-kah") is a security researcher, investigative data journalist, software engineer, and author. He is best known for building practical open-source privacy tools...
 - [[entities/michael-stapelberg]] — **Blog** | michael.stapelberg.ch |
@@ -558,7 +561,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1279 pages)
+## Concepts (1282 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -660,6 +663,7 @@
 - [[concepts/pgr]] — pgr: Entire製のRust MCPエージェント指向コード検索ツール。definitions-first・パス認識ランキングでfirst-query MRR 0.32→0.41、Hit@1 26%→34%。検索速度よりもランキング品質がエージェント性能を改善することを実証。
 - [[concepts/poor-mans-continuous-learning]] — Poor Man's Continuous Learning: LLMエージェントがモデル重みを更新せずに、成功した出力・ユーザーの修正・ドメイン知識を外部ナレッジベースに蓄積して改善する設計パターン。Text-to-SQL文脈でAshpreet Bediが提唱。BQ Golden Queries、dbt Semantic Layer、LPE-SQLと同種のアプローチ。
 - [[concepts/pass-k-metric]] — pass^k: τ-benchファミリーが導入したエージェント信頼性評価指標。同一タスクk回の独立試行で全成功を要求し、一貫性を測定する。GPT-4o pass@1 ~45%でもpass^8 <25%の脆弱性を露呈。[[concepts/tau-bench|τ-bench]]実運用信頼性の基礎。
+- [[concepts/petri-alignment]] — Anthropic's open-source AI safety evaluation tool. Petri 3.0 donated to Meridian Labs (May 2026) for independent stewardship. "Dish" real-system-prompt testing, Bloom behavior assessments.
 - [[concepts/llm-creative-writing]]
 - [[concepts/linguistic-vertigo]] — QC (Qiaochu Yuan) によるLLM時代の言語的真正性喪失の認知現象。言語的めまい（linguistic vertigo）、頭の言葉 vs 身体の言葉、LLMをトレーサー色素とする社会診断、RLHFの社会的影（→ [[concepts/societal-shadow]]）。Gwernによるプロンプト視覚（unseeing / prompt-vision）の補遺を含む。体験的前提は[[raw/articles/2023-03-13_qchu-re-encountering-language.md]]。
 - [[concepts/local-ai]] — **Local AI Landscape — May 2026**: Andrew Chen (a16z) のホームラボ体験をケーススタディとしたローカルAIの現在地。ハードウェア（DGX Spark/5090 eGPU/Mac Studio/Strix Halo）、モデル品質1年遅れテーゼ、ソフトウェアスタック（ollama→LiteLLM→vLLM）、2027年Opus級ローカルモデル予測、非同期バッチ処理ユースケース。→ [[entities/andrew-chen]]
@@ -726,11 +730,13 @@
 - [[concepts/context-repositories]] — Letta's git-based agent memory: local filesystem + git versioning. Progressive disclosure via file hierarchy + YAML frontmatter. Multi-subagent concurrent memory via git worktrees.
 - [[concepts/contextual-retrieval]] — AnthropicのRAG改善手法。チャンクembedding/BM25インデックス化前にClaudeで文書全体の文脈を自動付加。Contextual Embeddings + Contextual BM25の組み合わせで検索失敗率49%削減、reranking追加で67%削減。Prompt Caching活用で100万ドキュメントトークンあたり$1.02。
 - [[concepts/enterprise-ai-deployment-jv]] — Both OpenAI ($4B "The Deployment Company") and Anthropic ($1.5B with Blackstone/Goldman Sachs) forming JVs with PE firms to build deployment services arms. Model competition expanding to deployment competition.
+- [[concepts/enterprise-ai-operating-model]] — IBM's four-pillar framework (Think 2026): Agents, Data, Automation, Hybrid. watsonx Orchestrate multi-agent control plane, IBM Confluent real-time data, IBM Sovereign Core governance.
 - [[concepts/entropix]] — xjdr's entropy-based adaptive LLM sampling (3.4K ⭐). Uses entropy/varentropy quadrant to select sampling strategy at inference time. Training-free CoT simulation.
 - [[entities/claris-filemaker-agentic-coding]] — Claris (Apple) making FileMaker a first-class target for agentic coding tools (Claude Code, Cursor, Codex). Natural language → production scripts, modern web-native UI, independent shipping model. Ryan McCann (CEO).
 - [[concepts/open-weights-licensing-tightening]] — Trend of leading open weights AI model providers tightening license terms in 2026. Meta dropped open weights, Alibaba Qwen API-first, Mistral commercial restrictions, Kimi attribution clause. DeepSeek exception. Contestable markets theory, oligopoly risk.
 - [[concepts/mrcr]] — MRCR — Multi-Round Coreference Resolution。複数needleの長文コンテキストeval。Google DeepMindのLSQフレームワーク発。OpenAIがOSS版を公開。Claude Opus 4.6が8-needle 1Mで93%。
 - [[concepts/multi-turn-tool-use-rl]] — Multi-Turn Tool Use with RL: GRPOを用いてLLMエージェントにマルチターンツールオーケストレーションを教える手法。Bespoke LabsがBFCL v3で+23%達成（Qwen2.5-7B, 100サンプル）。報酬設計のLess is More、過長フィルタリング+KL 0.001。
+- [[concepts/natural-language-autoencoders]] — Anthropic's interpretability technique (May 2026): converts model activations into human-readable text. Round-trip reconstruction scoring. Used to understand Claude's internal behavior, safety testing, and debugging.
 - [[concepts/normalization-of-deviance-in-ai-coding]] — Risk of gradually trusting AI-generated code without review, coined from Diane Vaughan's Challenger disaster framework. Each successful unreviewed deployment reinforces trust, creating security/quality risk. AI agents lack professional reputation/accountability.
 - [[concepts/notion-mcp]] — Notion MCP: official Notion MCP server (https://mcp.notion.com/mcp). Setup guides for Claude Code, Cursor, VS Code, Windsurf, ChatGPT, Codex. OAuth 2.0 authentication.
 - [[concepts/nemo-rl]] — NeMo-RL (NVIDIA): クリーンなインターフェースとモジュラー設計のRLフレームワーク。マルチターンRL対応、SFT+DPO+GRPO、FSDP/Megatron.
@@ -794,7 +800,7 @@
 
 ## Events (2 pages)
 
-## Comparisons (13 pages)
+## Comparisons (15 pages)
 
 - [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
 - [[comparisons/ai-agent-platforms]] — Ai Agent Platforms
@@ -808,6 +814,8 @@
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Vs Openclaw Architecture
 - [[comparisons/llm-integration-patterns]] — Llm Integration Patterns
 - [[comparisons/local-llm-models-april-2026]] — Local Llm Models April 2026
+- [[comparisons/bing-api-alternatives-2026]] — Bing Search API alternatives comparison: Parallel Search, Exa AI, SerpAPI, Tavily (2026)
+- [[comparisons/google-alerts-alternatives-2026]] — Google Alerts alternatives for developers & marketers: 10 tools compared (2026)
 - [[comparisons/open-source-rl-libraries-comparison]] — Open Source RL Libraries比較ポータル: TRL/Verl/OpenRLHF/RAGEN/NeMo-RL/ROLL/AReaL/slime/Verifiers/SkyRLの10ライブラリ比較。Anyscale 2025。
 
 ## Queries (0 pages)

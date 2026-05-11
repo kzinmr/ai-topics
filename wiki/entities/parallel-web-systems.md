@@ -1,42 +1,61 @@
 ---
-title: "Parallel Web Systems"
 type: entity
-created: 2026-05-08
-updated: 2026-05-08
-tags:
-  - company
-  - infrastructure
-  - tool
-aliases: ["Parallel", "Parallel.ai"]
-sources:
-  - https://parallel.ai
+entity_type: company
+name: "Parallel Web Systems Inc."
+aliases: [Parallel, parallel.ai]
+founded: 2023
+website: https://parallel.ai
+docs: https://docs.parallel.ai
+github: https://github.com/parallel-web
+x_handle: p0
+linkedin: https://www.linkedin.com/company/parallel-web/
+tags: [search, api, observability, ai-infrastructure, security, governance]
 ---
 
-# Parallel Web Systems
+# Parallel Web Systems Inc.
 
-Web infrastructure company building APIs that connect AI agents to the open web. Parallel provides structured, grounded access to web data via a proprietary internet index, serving as the web search layer for AI agents.
+**Infrastructure for intelligence on the web.** Develops a suite of agent and tool APIs for building AI with powerful access to the open web.
 
-| | |
-|---|---|
-| **Type** | Private (VC-backed) |
-| **Founded** | 2023 |
-| **Leadership** | Parag Agrawal (Founder & CEO) |
-| **Key Products** | Task API, Deep Research API, Parallel MCP Server |
-| **Website** | [parallel.ai](https://parallel.ai) |
-| **Tech Blog** | [parallel.ai/blog](https://parallel.ai/blog) |
+## Overview
 
-## Key Facts
-- Raised Series A at $2B+ valuation; backed by Sequoia, Kleiner Perkins, Index Ventures, Khosla Ventures, Spark Capital
-- Serves Fortune 500 enterprises and AI companies including Harvey, Attio, Modal, Rogo
-- 100,000+ developers; headquartered in Palo Alto, CA with offices in San Francisco
-- Mission: build infrastructure for "the web's second user" — AI agents
+Founded in 2023, Parallel builds search, extraction, monitoring, and task APIs purpose-built for AI agents. SOC 2 Type 2 certified with Zero Data Retention (ZDR) available for enterprises.
 
-## Products & Technology
-- **Task API**: Structured web search, data extraction, and monitoring for AI agents
-- **Deep Research API**: Enterprise-grade deep research with up to 48% accuracy vs GPT-4's 1%
-- Proprietary index of the global internet with declarative interfaces for AI consumption
+Unlike traditional search APIs retrofitted for AI use, Parallel's products are designed from the ground up for agentic workloads — dense token-efficient excerpts, structured JSON output, composable API chains, and webhook-native event delivery.
 
-## Related
-- [[entities/openai]] — ChatGPT uses web search for agent capabilities
-- [[entities/anthropic]] — Claude uses web access for research tasks
-- [[entities/browserbase]] — Competitor in AI agent browser infrastructure
+## Products
+
+| Product | Description | Key Feature |
+|---|---|---|
+| **Search API** | Web-scale search with dense excerpts | Proprietary index, token-efficient LLM-ready outputs |
+| **Extract API** | Full page content extraction | Structured content from any URL |
+| **Monitor API** | Programmatic web monitoring | NL queries, webhook delivery, auto-deduplication |
+| **Task API** | Structured enrichment | Run custom enrichment on detected items |
+| **FindAll API** | Bulk search/discovery | High-volume parallel queries |
+| **Chat API** | Conversational search | Web-search chatbot with source citations |
+
+### Monitor API (flagship developer product)
+
+Natural language query → schedule → structured JSON at webhook. $3/1,000 executions. Designed for ambient sub-agents and continuous intelligence pipelines. Composable with Search and Extract APIs.
+
+### Search API (flagship AI agent product)
+
+Proprietary web-scale index (billions of pages, millions added daily). Returns dense webpage excerpts (vs. typical snippet-based alternatives). Designed for multi-hop reasoning agents and long-horizon research tasks.
+
+## Security & Compliance
+
+- **SOC 2 Type 2** certified
+- **Zero Data Retention (ZDR)** available for enterprises
+- **GDPR** compliant
+- Status page: https://trust.parallel.ai/
+
+## Key Articles
+
+- [Bing API alternatives: top solutions for 2026](https://parallel.ai/articles/bing-api-comparison) (2026-02-16)
+- [The best Google Alerts alternatives in 2026](https://parallel.ai/articles/the-best-google-alerts-alternatives-in-2026-including-one-built-for-developers) (2026-04-17)
+- [How to automate market mapping with AI](https://parallel.ai/articles/how-to-automate-market-mapping-with-ai-a-developers-guide-to-competitive-landscape-analysis)
+- [13 AI agent ideas organized by what they actually need to work](https://parallel.ai/articles/13-ai-agent-ideas-organized-by-what-they-actually-need-to-work)
+
+## Wiki References
+
+- [Bing API alternatives comparison](../comparisons/bing-api-alternatives-2026.md)
+- [Google Alerts alternatives comparison](../comparisons/google-alerts-alternatives-2026.md)

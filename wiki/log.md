@@ -1,3 +1,29 @@
+## [2026-05-11] manual | Parallel Web Systems articles — Bing API & Google Alerts alternatives
+
+- **新規:** `wiki/raw/articles/2026-02-16_parallel_bing-api-alternatives.md` — Bing API alternatives comparison (Parallel Search, Exa AI, SerpAPI, Tavily)
+- **新規:** `wiki/raw/articles/2026-04-17_parallel_google-alerts-alternatives.md` — Google Alerts alternatives guide for developers & marketers
+- **新規:** `wiki/comparisons/bing-api-alternatives-2026.md` — Comparison page: 4 Bing Search API alternatives
+- **新規:** `wiki/comparisons/google-alerts-alternatives-2026.md` — Comparison page: 10 Google Alerts alternatives across 2 categories
+- **新規:** `wiki/entities/parallel-web-systems.md` — Company entity page (Search/Monitor/Extract APIs, SOC 2, ZDR, founded 2023)
+- **ソース:** parallel.ai/articles/bing-api-comparison, parallel.ai/articles/the-best-google-alerts-alternatives-in-2026-including-one-built-for-developers
+
+## [2026-05-11] active-crawl | NVIDIA Nemotron 3 Nano Omni, GPT-5.5 Instant, Gemma 4 MTP, Anthropic Petri/NLA/Meridian Labs, IBM Think 2026
+
+- **作成:** `wiki/raw/articles/2026-04-28_nvidia_nemotron-3-nano-omni.md` — NVIDIA unified multimodal MoE model (30B-A3B), video/audio/image/text, open-source
+- **作成:** `wiki/raw/articles/2026-05-05_openai_gpt-5-5-instant.md` — Updated ChatGPT default model, 52.5% fewer hallucinations, self-correction
+- **作成:** `wiki/raw/articles/2026-05-05_google_gemma-4-mtp.md` — Multi-Token Prediction drafters for 3x faster Gemma 4 inference
+- **作成:** `wiki/raw/articles/2026-05-08_anthropic_petri-nla-interpretability.md` — Natural Language Autoencoders + Petri 3.0 donation to Meridian Labs
+- **作成:** `wiki/raw/articles/2026-05-05_ibm_think-2026-ai-operating-model.md` — IBM's four-pillar enterprise AI operating model
+- **作成:** `wiki/entities/gpt-5-5-instant.md` — OpenAI GPT-5.5 Instant entity page
+- **作成:** `wiki/entities/gemma-4.md` — Google Gemma 4 entity page with MTP speedup details
+- **作成:** `wiki/entities/meridian-labs.md` — Independent AI evaluation nonprofit, Petri steward
+- **更新:** `wiki/entities/gemma-4.md` — MTP drafter section, 60M+ downloads, speculative decoding context
+- **作成:** `wiki/concepts/natural-language-autoencoders.md` — Anthropic interpretability technique, activation→text→reconstruction
+- **作成:** `wiki/concepts/petri-alignment.md` — Anthropic's open-source safety evaluation tool, donated to Meridian Labs
+- **作成:** `wiki/concepts/enterprise-ai-operating-model.md` — IBM Think 2026 four-pillar framework (Agents/Data/Automation/Hybrid)
+- **ソース:** developer.nvidia.com, openai.com, blog.google, hipther.com (AI Dispatch), newsroom.ibm.com
+- **重複除去:** `entities/nvidia-nemotron-3.md` 削除（既存の `entities/nvidia-nemotron-3-nano-omni.md` と重複）
+
 ## [2026-05-11] manual | Garry Tan Meta-Meta-Prompting X Article 取り込み
 
 - **新規:** `wiki/raw/articles/2026-05-09_garrytan_meta-meta-prompting.md` — Garry Tan (YC CEO) の X Article。ABMedia の中国語要約から再構成。Fat Skills, Fat Code, Thin Harness、Skillify、100+ skills + 100K pages personal AI OS。
