@@ -4,7 +4,7 @@
 > Read this first to find relevant pages for any query.
 > Last updated: 2026-05-11 | Total pages: 1748 | Indexed entries: 804 | Not in index: 944 |
 
-## Entities (548 pages)
+## Entities (551 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -24,6 +24,7 @@
 - [[entities/hugo-bowne]] — Hugo Bowne-Anderson — Data scientist and AI privacy engineering writer. Co-author of "15 Privacy Questions Every AI Builder is Asking" with Katharine Jarmul.
 - [[entities/inspect]] — Inspect (Ramp)
 - [[entities/jack-clark]] — Jack Clark — Anthropic co-founder, Import AI newsletter. 60%+ probability of autonomous AI R&D by end 2028. Recursive self-improvement forecast.
+- [[entities/jaya-gupta]] — Jaya Gupta — Foundation Capital partner. Organizational moat theory, Context Graphs. Argues company shape is the last durable moat in AI. 3.2M-view X Article author.
 - [[entities/jo-bergum]] — Jo Kristian Bergum
 - [[entities/lucebox]] — Lucebox
 - [[entities/luke-curley]] — Luke Curley (@lukeslhz) — Software Engineer at Discord, formerly Twitch. MoQ Working Group participant. Advocates for Media over QUIC over WebRTC for AI voice applications. Argues that WebRTC's packet dropping degrades LLM prompts, and users would prefer 200ms extra latency for accuracy.
@@ -31,6 +32,7 @@
 - [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto — HashiCorp
 - [[entities/moonshot-ai]] — Moonshot AI
 - [[entities/nicolas-bustamante]] — Nicolas Bustamante
+- [[entities/nrehiew]] — wh (@nrehiew_) — AI/ML researcher. Distributional lens on post-training: SFT vs RL vs On-Policy Distillation. 181K-view X post author.
 - [[entities/palo-alto-networks]] — Global cybersecurity company. Acquired Portkey (May 2026) for AI agent security.
 - [[entities/parallel-web-systems]] — Parallel Web Systems Inc. — AI agent infrastructure (Search, Extract, Monitor APIs). SOC 2 Type 2, ZDR. Founded 2023.
 - [[entities/parchi]] — Parchi
@@ -44,6 +46,7 @@
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka
 - [[entities/sierra]] — Sierra — AI customer service platform ($15B valuation, $200M+ ARR). Enterprise conversational AI agents. Service-as-Software.
+- [[entities/tobi-lutke]] — Tobi Lutke — Shopify CEO. Revealed River: internal Slack-native AI coding agent built on apprenticeship model. Self-taught programmer, dropped out at 16.
 - [[entities/0xjeff]] — 0xJeff — Crypto/DeFi analyst and Hermes Agent power user. 8 years PE/VC/IB. Known for documenting Hermes as personal analyst pipeline.
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
@@ -564,7 +567,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1283 pages)
+## Concepts (1285 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -633,6 +636,7 @@
 - [[concepts/openclaw-architecture]] — OpenClawのアーキテクチャ詳細
 - [[concepts/openenv]] — Meta+HF partnership: open standard for agent environments (sandboxed tools, APIs, credentials). Integrates with TRL, TorchForge, verl, SkyRL. Environment Hub on Hugging Face.
 - [[concepts/open-swe]] — Open SWE: LangChainのオープンソース社内コーディングエージェントフレームワーク。Deep Agents + LangGraphベース。Stripe Minions/Ramp Inspect/Coinbase Cloudbotの収束アーキテクチャをMITライセンスで実装。AGENTS.md、サンドボックス、Slack/Linear/GitHub統合。
+- [[concepts/organizational-moat]] — 組織モート: Jaya Gupta (Foundation Capital) が提唱。AI時代において製品・コード・カテゴリはすべて模倣可能であり、会社の「形」（採用・権力分配・ステータス階層）だけが最後の競争優位になると主張。5つの構造的検証テスト。3.2M views。
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information（予測的V-情報）：観測者の計算制約を考慮したShannon情報理論の変分拡張。DPI違反、高次元でのPAC推定保証、構造学習・公平表現学習への応用（Xu et al., ICLR 2020）。
 - [[concepts/probabilistic-engineering]] — 確率的エンジニアリング: Tim Davis (Modular) が提唱。AIエージェントによるコード生成が支配的になる中、コードベースの正当性が「知っている」から「信じている」に変わるパラダイムシフト。生成は安価だが検証は高価。24-7従業員、役割分裂、Jevonsの逆説のコード応用を含む。
 - [[concepts/openrlhf]] — OpenRLHF: 最も初期のOSS RLHFライブラリの一つ。DeepSpeedベース、報酬モデルサポート充実。非同期訓練対応（--async_train）。
@@ -670,6 +674,7 @@
 - [[concepts/grpo]] — Group Relative Policy Optimization: DeepSeek-R1で導入されたRLアルゴリズム。PPOのクリティックモデルを不要にし、大規模モデルのRL訓練の計算ボトルネックを解消。グループ内相対比較でアドバンテージ推定。
 - [[concepts/pgr]] — pgr: Entire製のRust MCPエージェント指向コード検索ツール。definitions-first・パス認識ランキングでfirst-query MRR 0.32→0.41、Hit@1 26%→34%。検索速度よりもランキング品質がエージェント性能を改善することを実証。
 - [[concepts/poor-mans-continuous-learning]] — Poor Man's Continuous Learning: LLMエージェントがモデル重みを更新せずに、成功した出力・ユーザーの修正・ドメイン知識を外部ナレッジベースに蓄積して改善する設計パターン。Text-to-SQL文脈でAshpreet Bediが提唱。BQ Golden Queries、dbt Semantic Layer、LPE-SQLと同種のアプローチ。
+- [[concepts/post-training-distributional-view]] — ポストトレーニング分布論: wh (@nrehiew_) による分布論的視点からのSFT/RL/On-Policy Distillationの比較。言語モデル=系列上の分布、ポストトレーニング=分布再形成。SFT（モード追従）、RL（報酬形成）、OPD（直接分布マッチング）の質的差異。181K views。
 - [[concepts/pass-k-metric]] — pass^k: τ-benchファミリーが導入したエージェント信頼性評価指標。同一タスクk回の独立試行で全成功を要求し、一貫性を測定する。GPT-4o pass@1 ~45%でもpass^8 <25%の脆弱性を露呈。[[concepts/tau-bench|τ-bench]]実運用信頼性の基礎。
 - [[concepts/petri-alignment]] — Anthropic's open-source AI safety evaluation tool. Petri 3.0 donated to Meridian Labs (May 2026) for independent stewardship. "Dish" real-system-prompt testing, Bloom behavior assessments.
 - [[concepts/llm-creative-writing]]

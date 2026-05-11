@@ -1,40 +1,58 @@
 ---
 title: "Jaya Gupta"
+created: 2026-05-11
+updated: 2026-05-11
 type: entity
-aliases: [jaya-gupta, foundation-capital-partner]
-tags:
-  - entity
-  - company
-  - search
-  - ai-agents
-status: complete
-description: "Partner at Foundation Capital, thought leader on context graphs and enterprise AI. Published influential thesis on Context Graphs as AI's trillion-dollar opportunity."
-updated: 2026-05-08
+status: L2
+tags: [person, blogger, x-account, ai-adoption, governance]
+aliases: ["@JayaGup10"]
+sources: [raw/articles/2026-05-08_jaya-gupta_next-biggest-moat-in-ai.md]
+related: [concepts/organizational-moat, concepts/context-graphs]
 ---
 
 # Jaya Gupta
 
-**Jaya Gupta** is a Partner at [[entities/foundation-capital]] and a thought leader on enterprise AI adoption, context graphs, and managed agents.
+Partner at **Foundation Capital**, leading early-stage investments across the enterprise software stack. Known for influential essays on AI business strategy, organizational design, and competitive dynamics.
 
-## Key Publications
+## Key Facts
+| Field | Value |
+|-------|-------|
+| Role | Partner, Foundation Capital |
+| X Handle | [@JayaGup10](https://x.com/JayaGup10) |
+| Education | Georgia Tech |
+| Previous | McKinsey (technology practice) |
+| Followers | ~29K |
 
-### Context Graphs — AI's Trillion-Dollar Opportunity (April 2026)
+## Notable Contributions
 
-Published the influential thesis ["AI's Trillion-Dollar Opportunity: Context Graphs"](https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity) arguing that:
-- Context (relationships, history, tacit knowledge, organizational norms) is the new strategic data layer
-- Context graphs will become critical infrastructure for enterprise AI agents
-- This represents a trillion-dollar market opportunity
+### Context Graphs (Jan 2026)
+Co-authored with Ashu Garg: *"AI's trillion-dollar opportunity: Context Graphs"* — introduced the concept that decision traces (the "why" behind the "what") form the structural advantage for next-generation AI agent companies. Widely cited across the AI industry.
 
-### Anthropic Managed Agents Analysis
+### Organizational Moat Theory (May 2026)
+Wrote *"The next biggest moat in AI"* — argued that in an era where products, interfaces, and technology converge and become copyable, **the shape of the company itself** (who you hire, who has power, how work is organized, what is high/low status) becomes the only durable competitive advantage. 3.2M views, 7K bookmarks within 24 hours.
 
-Analyzed Anthropic's [[concepts/anthropic-managed-agents]] — enterprise-grade AI agents running continuously with governance, observability, and guardrails.
+### Service-as-Software (2025)
+Co-authored *"The $4.6T Services-as-Software opportunity: Lessons from year one"* — analysis of the services-to-software transformation opportunity.
 
-## Platform
+## Core Ideas
 
-- [[entities/foundation-capital]] — Foundation Capital's AI investment thesis
+1. **Organizational Moat**: Products, code, categories, and pitch language are all imitable in AI. The institution — how you organize people, distribute power, and compound judgment — is the last true moat.
+
+2. **Identity Competition**: The best companies don't compete on compensation; they compete on identity. A great company gives people a language for their own ambition.
+
+3. **Five Structural Tests**: Every claimed moat must be verified by organizational structure — if "customer proximity" is the moat but customer-facing roles are low-status, the claim is false.
+
+4. **Great Companies as Organizational Inventions**: OpenAI and Palantir created new kinds of institutions that made new kinds of people possible — researchers who operate at the edge of science, product, and geopolitics; operators who sit with customers and translate institutional mess into product.
+
+## Quotes
+
+> "The shape of the company itself is becoming the moat."
+
+> "Great companies are not just places where talented people go. They are structures that let a certain kind of talent finally express themselves."
+
+> "People are not an input to the company. They are the company."
 
 ## See Also
-
-- [[entities/foundation-capital]]
-- [[concepts/context-graph]]
-- [[concepts/anthropic-managed-agents]]
+- [[concepts/organizational-moat]]
+- [[concepts/context-graphs]]
+- Foundation Capital

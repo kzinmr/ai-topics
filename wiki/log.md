@@ -1,3 +1,23 @@
+## 2026-05-11 13:30 UTC — X Bookmarks Ingest Recovery (3 failed articles retried)
+
+**Source**: x-bookmark-ingest retry — 3 articles from 2026-05-11 run that failed mirror discovery
+
+### Pages Created (5 new)
+- `entities/jaya-gupta.md` — Foundation Capital partner, organizational moat theory, Context Graphs
+- `entities/tobi-lutke.md` — Shopify CEO, River AI agent (Slack-native coding agent)
+- `entities/nrehiew.md` — wh (@nrehiew_), distributional view of post-training
+- `concepts/organizational-moat.md` — Jaya Gupta's theory: company shape as last durable AI moat
+- `concepts/post-training-distributional-view.md` — Distributional comparison of SFT vs RL vs OPD
+
+### Raw Articles Saved (3)
+- `2026-05-10_nrehiew_sft-rl-opd-distributional-lens.md`
+- `2026-05-09_tobi-lutke_learning-on-the-shop-floor.md`
+- `2026-05-08_jaya-gupta_next-biggest-moat-in-ai.md`
+
+### Key Discoveries
+- Jaya Gupta: 3.2M-view X Article on organizational moat — company structure as un-copyable advantage
+- Tobi Lutke: Shopify's River — internal AI agent in Slack built on apprenticeship model (2M views)
+- wh/nrehiew: Distributional lens on post-training — elegant mental model for SFT/RL/OPD tradeoffs (181K views)
 ## [2026-05-11] create | X bookmarks ingest — 3 concept pages, 2 entity pages, 6 raw articles
 
 - 🆕 [[concepts/claude-md-rules]] — Karpathy's CLAUDE.md behavioral guidelines for AI coding agents (4→12 rules, 41%→3% mistake rate). 120K+ GitHub stars. Behavioral constraints over feature checklists.

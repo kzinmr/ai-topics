@@ -1,48 +1,41 @@
 ---
-
-## Related Entities
-
-- [[entities/farhan-thawar]]
-title: Tobi Lütke
-created: 2026-04-26
-updated: 2026-04-26
+title: "Tobi Lütke"
+created: 2026-05-11
+updated: 2026-05-11
 type: entity
-tags: [person]
-sources:
-  - raw/articles/2025-04-07-shopify-reflexive-ai-baseline.md
+status: L2
+tags: [person, ai-agents, coding-agents, company]
+aliases: ["@tobi", "Tobias Lütke"]
+sources: [raw/articles/2026-05-09_tobi-lutke_learning-on-the-shop-floor.md]
+related: [entities/jaya-gupta, concepts/river-ai-agent]
 ---
 
 # Tobi Lütke
 
-Tobi Lütke is the CEO of Shopify and a prominent advocate for organizational AI adoption.
+CEO and co-founder of **Shopify**. Known for technical leadership and apprenticeship-model approach to engineering culture. Active voice on AI agents and software craftsmanship.
 
-## Key Actions & Statements
+## Key Facts
+| Field | Value |
+|-------|-------|
+| Role | CEO, Shopify |
+| X Handle | [@tobi](https://x.com/tobi) |
+| Background | Self-taught programmer, dropped out at 16 |
+| Apprenticeship | Siemens subsidiary (Germany) |
 
-### "Reflexive AI Usage is a Baseline Expectation" (April 2025)
-- Declared that at Shopify, AI usage is now the baseline expectation for all roles
-- "Before hiring anyone new, managers must prove AI can't do the job better"
-- "Using AI well is a skill that needs to be carefully learned" — best learned "by using it a lot"
+## River: Shopify's Internal AI Agent (May 2026)
 
-### Shopify AI Implementation
-- Ordered 3,000 Cursor licenses total (1,500 + 1,500)
-- Achieved 80% GitHub Copilot adoption
-- Fastest-growing AI users: support and revenue teams, not engineering
-- Default to "yes" with legal on AI tool adoption
-- Unlimited AI tool spend policy
-- Internal token usage leaderboard
+Lütke revealed that Shopify built **River**, an AI agent that lives in the company's Slack. River is designed around the **apprenticeship model** — the same principle Lütke experienced as a 16-year-old programmer:
 
-### Philosophy
-- Foster "beginner's mindset" in hiring
-- Value adaptability over entrenched expertise
-- Make AI "show its work" — transparency in decision-making
+> "I learned to be a programmer by watching them. By making them coffee. By hanging around long enough that their judgment seeped into mine."
 
-## Impact
+River is mentioned in Slack like a teammate. She can perform engineering tasks, answer questions, and assist with development workflows. The design philosophy emphasizes learning through observation and proximity — an AI agent that absorbs institutional knowledge the way apprentices absorb craft knowledge.
 
-Lütke's approach became a reference case for [[concepts/reflexive-ai]] and is connected to the [[concepts/solo-founder-stack]] movement and the [[concepts/experience-is-a-tax]] debate.
+## Philosophy
 
-## Related
+- **Shop floor apprenticeship**: The best way to learn engineering is by proximity to masters, not formal education. This philosophy now extends to how AI agents should integrate into organizations.
+- **AI as teammate, not tool**: River represents a model where AI agents participate in existing communication channels (Slack) as peers rather than external tools.
 
-- [[concepts/reflexive-ai]]
-- [[shopify]]
-- [[concepts/experience-is-a-tax]]
-- [[concepts/solo-founder-stack]]
+## See Also
+- [[concepts/river-ai-agent]]
+- Shopify
+- [[entities/jaya-gupta]] (organizational moat theory — Shopify as institutional invention)
