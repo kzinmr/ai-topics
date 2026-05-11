@@ -1,24 +1,43 @@
 ---
 title: Nicolas Bustamante
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-11
 type: entity
 tags:
   - person
   - ai-agents
   - fintech
-sources: [raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md]
+  - harness-engineering
+  - microsoft
+aliases: ["@nicbstme"]
+sources:
+  - raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md
+  - raw/articles/2026-05-01_nicolas-bustamante_agent-memory-engineering.md
+description: "AI for knowledge workers at Microsoft. Previously CEO of Fintool (acq. Microsoft), CEO of Doctrine (acq. Summit Partners). Authored comprehensive Agent Memory Engineering analysis comparing Claude Code, Codex, and Hermes memory architectures."
 ---
 
 # Nicolas Bustamante
 
 ## Overview
 
-**Nicolas Bustamante** is a technical leader at [[entities/fintool]] who has shared detailed architectural insights on building production AI agents for financial services. His LinkedIn article (April 2026) is one of the most comprehensive public accounts of AI agent infrastructure in a regulated, high-precision domain.
+**Nicolas Bustamante** (@nicbstme) is an AI entrepreneur now working on agentic AI experiences for Microsoft Office (Word, Excel, PowerPoint). Previously CEO of **Fintool** (YC-backed, acquired by Microsoft, March 2026) and CEO of **Doctrine** (Europe's largest legal information platform, acquired by Summit Partners, 2023). Dropped out of École Normale Supérieure at 21.
+
+Author of two influential 2026 analyses: "Lessons from Building AI Agents for Financial Services" (April) and **"Agent Memory Engineering"** (May) — a deep comparison of how Claude Code, Codex CLI, and Hermes handle memory, which concluded that simple markdown + bash beats every clever architecture.
 
 ## Key Contributions
 
-### AI Agent Architecture in Financial Services
+### Agent Memory Engineering (May 2026)
+
+Comprehensive analysis of three production agent memory architectures. Key findings:
+- **Models are post-trained on their harness**: memory behavior is inseparable from the agent
+- **Every clever architecture lost**: vector DBs, knowledge graphs, dedicated memory agents all lost to markdown + bash
+- **Three architectures identified**: Bounded Snapshot (Hermes), Two-Phase Async Pipeline, Typed Live Writes (Claude Code)
+- **Five design questions** every memory system must answer: storage format, load strategy, write discipline, signal gate, cold start
+- **Cold start is unsolved**: no standard for bootstrapping agent memory from existing user data
+
+→ See [[concepts/agent-memory-engineering]]
+
+### AI Agent Architecture in Financial Services (April 2026)
 
 Bustamante articulated several foundational patterns:
 

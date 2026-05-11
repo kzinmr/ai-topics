@@ -1,3 +1,22 @@
+## 2026-05-11 14:15 UTC — Agent Memory Engineering ingested
+
+**Source**: Nicolas Bustamante blog (nicolasbustamante.com, 34 min read)
+
+### Pages Created
+- `concepts/agent-memory-engineering.md` — Comprehensive analysis of Claude Code/Codex/Hermes memory architectures
+
+### Pages Enriched
+- `entities/nicolas-bustamante.md` — Updated with Microsoft role, Agent Memory Engineering analysis, Fintool/Doctrine background
+
+### Raw Articles Saved
+- `raw/articles/2026-05-01_nicolas-bustamante_agent-memory-engineering.md`
+
+### Key Insights
+- **Every clever architecture lost**: vector DBs, knowledge graphs, dedicated memory agents — all lost to LLM + markdown + bash
+- **Models are post-trained on their harness**: memory is not portable between agents
+- **Three architectures**: Bounded Snapshot (Hermes), Two-Phase Async Pipeline, Typed Live Writes (Claude Code)
+- **Five design questions**: storage format, load strategy, write discipline, signal gate, cold start
+- **Cold start is unsolved**: no standard for bootstrapping agent memory from user data
 ## 2026-05-11 13:30 UTC — X Bookmarks Ingest Recovery (3 failed articles retried)
 
 **Source**: x-bookmark-ingest retry — 3 articles from 2026-05-11 run that failed mirror discovery

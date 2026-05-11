@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-11 | Total pages: 1748 | Indexed entries: 804 | Not in index: 944 |
+> Last updated: 2026-05-11 | Total pages: 1749 | Indexed entries: 804 | Not in index: 944 |
 
 ## Entities (551 pages)
 
@@ -567,7 +567,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1285 pages)
+## Concepts (1286 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -708,6 +708,7 @@
 - [[concepts/recursive-self-improvement]] — AI systems autonomously designing and training successor models. Jack Clark's 60% probability by end 2028. Compounding alignment risk, SWE-Bench 93.9% evidence.
 - [[concepts/rdep]] — Research Dispatch/Expert Parallelism — direct CUDA IPC dispatch/return replacing NCCL all-to-all for single-node MoE training. B200-first.
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
+- [[concepts/agent-memory-engineering]] — Agent Memory Engineering: Nicolas Bustamante (Microsoft) によるClaude Code/Codex/Hermesのメモリアーキテクチャ比較。「巧妙なアーキテクチャはすべて負けた。勝ったのはLLM + Markdown + bash」。モデルはハーネス上でポストトレーニングされるため、メモリはハーネス間で移植不可。
 - [[concepts/agent-client-protocol]] — Open standard (JSON-RPC 2.0) for editors/IDEs to interact with AI coding agents. ACP enables any ACP-compliant editor to work with any ACP-compliant agent (Claude Code, Gemini CLI, OpenCode, etc.)
 - [[concepts/agent-communication-protocols]] — Three competing protocols are emerging as the standard for multi-agent communication in 2026. Understanding when to use each is critical for building scalable agent swarms.
 - [[concepts/agent-communication-standards]] — ACP, A2A, BeeAIなど、マルチエージェント通信のための標準プロトコル群
