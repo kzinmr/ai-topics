@@ -572,7 +572,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1286 pages)
+## Concepts (1306 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -821,6 +821,26 @@
 - [[concepts/techno-pessimism]] — Skepticism that technology alone can resolve fundamental human problems. Curtis Yarvin's counter to Yudkowsky: "maybe you can't make a religion out of ai." Governance before transcendence; technology as amplifier, not solver.
 - [[concepts/zaya1-vl-8b]] — Zyphra's first VLM (MoE, 700M active / 8B total). Vision-specific LoRA + bidirectional image attention. SOTA for size, trained on AMD, Apache 2.0.
 - [[concepts/zaya1-74b-preview]] — Zyphra MoE reasoning-base LLM (4B active / 74B total). Not chat-tuned. Mamba/CCA hybrid, AMD-trained, Apache 2.0 preview.
+- [[concepts/advanced-tool-use]] — Advanced Tool Use
+- [[concepts/agent-skills]] — Agent Skills
+- [[concepts/building-effective-agents]] — Building Effective Agents
+- [[concepts/chain-of-thought]] — Chain of Thought
+- [[concepts/context-engineering]] — Context Engineering
+- [[concepts/fine-tuning]] — Fine-Tuning
+- [[concepts/gguf-quantization]] — GGUF Quantization
+- [[concepts/grpo-rl-training]] — GRPO RL Training
+- [[concepts/kv-cache]] — KV Cache
+- [[concepts/llm-evaluation]] — LLM Evaluation
+- [[concepts/mcp-protocol]] — MCP Protocol
+- [[concepts/mixture-of-experts]] — Mixture of Experts
+- [[concepts/model-context-protocol-mcp]] — Model Context Protocol (MCP)
+- [[concepts/multi-agent-orchestration]] — Multi-Agent Orchestration
+- [[concepts/ollama]] — Ollama
+- [[concepts/reasoning-models]] — Reasoning Models
+- [[concepts/retrieval-augmented-generation]] — Retrieval Augmented Generation
+- [[concepts/rlhf]] — RLHF
+- [[concepts/speculative-decoding]] — Speculative Decoding
+- [[concepts/structured-outputs]] — Structured Outputs
 
 ## Events (2 pages)
 
