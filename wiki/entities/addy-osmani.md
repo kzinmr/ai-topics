@@ -1,7 +1,7 @@
 ---
 title: Addy Osmani
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-05-11
 type: entity
 tags:
   - person
@@ -14,8 +14,9 @@ aliases:
   - addyosmani
 sources:
   - raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md
+  - raw/articles/2026-05-05_addyosmani_cognitive-surrender.md
   - https://addyosmani.com/bio/
-description: "Director at Google Cloud AI, formerly Chrome Developer Experience lead. Published comprehensive Agent Harness Engineering framework (May 2026), author of several books on software engineering and AI."
+description: "Director at Google Cloud AI, formerly Chrome Developer Experience lead. Published comprehensive Agent Harness Engineering framework (May 2026) and Cognitive Surrender concept (May 2026). Author of several books on software engineering and AI."
 ---
 
 # Addy Osmani
@@ -74,6 +75,7 @@ His post synthesized contributions from @Vtrivedy10 (term coiner), @dexhorthy (e
 ## Related Pages
 
 - [[concepts/harness-engineering]] — The discipline he helped codify
+- [[concepts/cognitive-surrender]] — Concept he explored based on Wharton research (May 2026)
 - [[entities/vtrivedy10]] — Vivek Trivedy, who coined the term "harness engineering"
 - [[entities/hamel-husain]] — Early popularizer of harness engineering from evals perspective
 - [[concepts/agentic-engineering]] — Related engineering practice
