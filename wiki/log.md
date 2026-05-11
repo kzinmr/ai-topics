@@ -1,3 +1,10 @@
+## [2026-05-11] create | concepts/baudrillard-and-ai — ボードリヤールとAI
+
+- **作成:** `wiki/concepts/baudrillard-and-ai.md` — ボードリヤールの『シミュラークルとシミュレーション』の概念枠組み（イマージュの4段階、ハイパーリアリティ、シミュラークルの先行）をLLM時代のAI現象に適用した概念ページ。AIは模倣の失敗ではなくシミュラークルの完成形であるという視点。
+- **保存:** `wiki/raw/articles/2025-05-10_ian-yang-welcome-to-the-token-of-the-real.md` — Ian YangのLLM記号論分析
+- **参照:** filfre.net（直接のボードリヤール言及）, onehappyfellow (Simulacrum of Knowledge Work), 関連概念: waluigi-effect, linguistic-vertigo, illusion-of-thinking, societal-shadow, cognitive-debt
+- **更新:** `wiki/index.md` — Concepts セクションに baudrillard-and-ai を追加、カウント更新
+
 ## [2026-05-11] dedup | wiki/raw/papers/ 重複除去・命名統一・dedup 機構導入
 
 - **重複除去:**

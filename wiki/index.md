@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-10 | Total pages: 1727 | Indexed entries: 785 | Not in index: 942 |
+> Last updated: 2026-05-11 | Total pages: 1728 | Indexed entries: 786 | Not in index: 942 |
 
 ## Entities (545 pages)
 
@@ -554,7 +554,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1277 pages)
+## Concepts (1278 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -580,6 +580,7 @@
 - [[concepts/automation-series]] — Antoine Buteau's Automation Series
 - [[concepts/back-of-house-multi-agent-patterns]] — Back of House Multi-Agent Patterns
 - [[concepts/back-of-house-patterns]] — Back of House Multi-Agent Patterns
+- [[concepts/baudrillard-and-ai]] — ボードリヤールとAI — シミュラークルとシミュレーションのAI時代における現れ。ボードリヤールの4段階のイマージュ理論、ハイパーリアリティ、地図が領域に先行する「シミュラークルの先行」概念をLLM時代に適用。AIは模倣の失敗ではなくシミュラークルの完成形である。
 - [[concepts/bernstein]] — Deterministic multi-agent orchestrator. Python scheduler, zero LLM tokens on coordination, Git worktree isolation, 40+ agent adapters.
 - [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
 - [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling
