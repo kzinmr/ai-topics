@@ -22,7 +22,7 @@ related:
   - "[[entities/pi]]"
   - "[[entities/opencode]]"
   - "[[entities/claude-code]]"
-  - "[[concepts/agent-harness-comparison]]"
+  - "[[comparisons/agent-harnesses]]"
   - "[[entities/0xsero]]"
 ---
 

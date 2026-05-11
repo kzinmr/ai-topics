@@ -21,7 +21,7 @@ related:
   - "[[entities/browser-use]]"
   - "[[entities/browserbase]]"
   - "[[entities/0xsero]]"
-  - "[[concepts/agent-harness-comparison]]"
+  - "[[comparisons/agent-harnesses]]"
 ---
 
 # Parchi

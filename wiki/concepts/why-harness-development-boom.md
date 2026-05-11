@@ -155,7 +155,7 @@ The model gives you intelligence. The harness gives you a product.
 
 - [[concepts/agent-harness]] — Complete harness architecture reference (12 components, 7 decisions)
 - [[concepts/harness-commoditization]] — The counter-argument and why evidence favors harness differentiation
-- [[concepts/agent-harness-comparison]] — 9 major harnesses compared
+- [[comparisons/agent-harnesses]] — 9 major harnesses compared
 - [[entities/kartik-labhshetwar]] — Author of the foundational article
 - [[entities/mitchell-hashimoto]] — Coined the term "agent harness"
 - [[concepts/harness-engineering]] — The broader discipline

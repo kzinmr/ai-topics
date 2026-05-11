@@ -26,7 +26,7 @@ related:
   - "[[entities/copilot-cli]]"
   - "[[entities/opencode]]"
   - "[[entities/codex]]"
-  - "[[concepts/agent-harness-comparison]]"
+  - "[[comparisons/agent-harnesses]]"
 ---
 
 # Droid (Factory)

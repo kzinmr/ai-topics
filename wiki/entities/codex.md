@@ -28,7 +28,7 @@ related:
   - "[[entities/opencode]]"
   - "[[entities/pi]]"
   - "[[entities/openai]]"
-  - "[[concepts/agent-harness-comparison]]"
+  - "[[comparisons/agent-harnesses]]"
   - "[[concepts/gpt-models]]"
 ---
 

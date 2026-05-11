@@ -699,7 +699,7 @@
 - [[concepts/ai-benchmarks-evals-overview]] — Florian Brand (@xeophon)によるAIベンチマーク・評価指標18部構成シリーズの包括的まとめ。GPQA、LiveCodeBench、Aider Polyglot、MMLU Pro、MMMU、MRCR、SimpleQA、Vibe-Eval、BFCL V3、IFEval、ChartQA、Tau-Bench、HLE、CountBenchQA、ARC-AGI等の設計思想・データソーシング・強みと弱点を解説。
 - [[concepts/ai-delegation-patterns]] — AI delegation patterns (Cyborgs/Centaurs/Self-Automators), process-based delegation, orchestration vs chat. BCG/Harvard/MIT research on human-AI collaboration.
 - [[concepts/ai-operating-model]] — IBM's four-system blueprint for enterprise AI: Agents + Data + Automation + Hybrid. Coordinated, governed, auditable agent ecosystems at scale. Announced Think 2026.
-- [[concepts/agent-harness-comparison]] — 8大AIエージェントハーネス（Claude Code/OpenCode/Pi/Codex/Copilot CLI/Droid/OpenClaw/Hermes Agent）の包括的比較ポータル。機能比較表、モデル互換性マトリクス、価格比較、ユースケースレコメンデーション、Harness Effect分析。
+- [[comparisons/agent-harnesses]] — 8大AIエージェントハーネス（Claude Code/OpenCode/Pi/Codex/Copilot CLI/Droid/OpenClaw/Hermes Agent）の包括的比較ポータル。機能比較表、モデル互換性マトリクス、価格比較、ユースケースレコメンデーション、Harness Effect分析。
 - [[concepts/agent-harnesses]] — > **Core Thesis:** The less you build in your agent framework, the more it works. All the value is in the RL'd model, not your 10,000 lines of abstractions.
 - [[concepts/hermes-agent-architecture]] — Hermes Agent（v0.9.0）のアーキテクチャ詳細。AIAgent中心設計、3つのAPI実行モード、キャッシュ対応プロンプトアセンブリ、SQLite+FTS5永続状態、自己登録型ツールレジストリ、subagent delegation vs execute_code、14+プラットフォームGateway、共有プロバイダランタイム。agent-core-firstの能力蓄積システム。
 - [[concepts/hermes-agent-use-cases]] — Hermes Agentの7つの標準ユースケース（30日間コミュニティ分析）。3 Shared Properties（Scheduled/File-based/Push to messenger）、Self-Evolving Skill Loop。
@@ -797,7 +797,7 @@
 - [[comparisons/ai-agent-platforms]] — Ai Agent Platforms
 - [[comparisons/ai-competition]] — Ai Competition
 - [[comparisons/aposd-vs-clean-code]] — Aposd Vs Clean Code
-- [[comparisons/coding-agent-harnesses]] — Coding Agent Harnesses
+- [[comparisons/agent-harnesses]] — Coding Agent Harnesses
 - [[comparisons/eval-tools-comparison]] — Eval Tools Comparison
 - [[comparisons/evals-skills]] — Evals Skills
 - [[comparisons/frontier-models-2026-04]] — Frontier Models 2026 04

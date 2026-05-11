@@ -1,8 +1,8 @@
 ---
 title: "AI Agent Harness Comparison — 9 Major Harnesses"
-type: concept
+type: comparison
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-11
 tags:
   - coding-agents
   - ai-agents
@@ -12,6 +12,7 @@ aliases:
   - "Harness Comparison"
   - "Agent Harness Comparison Portal"
   - "Coding Agent Harness Comparison"
+  - "Coding Agent Harnesses Comparison"
 sources:
   - https://thoughts.jock.pl/p/ai-coding-harness-agents-2026
   - https://prowe214.medium.com/agentic-coding-harnesses-a-comparison-4db34b87fd5c
@@ -31,6 +32,9 @@ sources:
   - https://opencode.ai
   - https://openai.com/codex/
   - https://medium.com/superagentic-ai/codex-cli-running-gpt-oss-and-local-coding-models-with-ollama-lm-studio-and-mlx-4b796e39404b
+moved_from:
+  - concepts/agent-harness-comparison.md
+  - comparisons/coding-agent-harnesses.md
 related:
   - "[[entities/claude-code]]"
   - "[[entities/opencode]]"
@@ -49,8 +53,8 @@ related:
 # AI Agent Harness Comparison — 9 Major Harnesses
 
 > Complete comparison of the 9 major AI agent harnesses (May 2026): Claude Code, OpenCode, Pi, Codex, Copilot CLI, Droid, Kilo, OpenClaw, Hermes Agent. Features, model compatibility, architecture, pricing, and the Harness Effect.
-
-> **This page is the single canonical comparison.** See [[comparisons/coding-agent-harnesses]] for the archived original.
+>
+> **This is the single canonical comparison.** Previously split across `concepts/agent-harness-comparison.md` and `comparisons/coding-agent-harnesses.md` — merged 2026-05-11.
 
 ---
 
@@ -380,13 +384,13 @@ Notable absences from 0xSero's local model ranking:
 
 | Date | Change |
 |------|--------|
-| 2026-05-08 | Added 0xSero's local model harness ranking (section 13). Added [[entities/roocode]], [[entities/parchi]], [[entities/zed]] to related pages. Added RooCode + Parchi to relationship map.
+| 2026-05-11 | Merged from `concepts/agent-harness-comparison.md` + `comparisons/coding-agent-harnesses.md` into `comparisons/agent-harnesses.md` |
+| 2026-05-08 | Added 0xSero's local model harness ranking (section 13). Added [[entities/roocode]], [[entities/parchi]], [[entities/zed]] to related pages. Added RooCode + Parchi to relationship map. |
 
 ---
 
 ## 12. Related Comparisons & Pages
 
-- **[[comparisons/coding-agent-harnesses]]** — Original version (archived)
 - **[[concepts/harness-engineering]]** — The broader field of harness engineering
 - **[[concepts/agent-harnesses]]** — The Bitter Lesson applied to agent architecture
 - **[[concepts/bitter-lesson-agent-harnesses]]** — Less abstraction = more performance

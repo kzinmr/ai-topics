@@ -1,3 +1,11 @@
+## [2026-05-11] merge | concepts/agent-harness-comparison.md + comparisons/coding-agent-harnesses.md → comparisons/agent-harnesses.md
+
+- **統合:** `concepts/agent-harness-comparison.md` (404行, 本文) + `comparisons/coding-agent-harnesses.md` (22行, リダイレクト) → `comparisons/agent-harnesses.md`
+- **削除:** 元の2ファイルを削除
+- **参照修正:** `[[concepts/agent-harness-comparison]]` 全参照 → `[[comparisons/agent-harnesses]]` (entities x8, concepts x2, index.md)
+- **参照修正:** `[[comparisons/coding-agent-harnesses]]` → `[[comparisons/agent-harnesses]]` (index.md)
+- **更新:** frontmatter に `moved_from` 追加、`type: comparison`、内部の循環参照を除去
+
 ## [2026-05-11] move | concepts/comparisons/agent-sandboxing.md → comparisons/agent-sandboxing.md
 
 - **移動:** `wiki/concepts/comparisons/agent-sandboxing.md` → `wiki/comparisons/agent-sandboxing.md`

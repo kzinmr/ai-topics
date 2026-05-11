@@ -23,7 +23,7 @@ related:
   - "[[entities/openclaw]]"
   - "[[entities/codex]]"
   - "[[entities/claude-code]]"
-  - "[[concepts/agent-harness-comparison]]"
+  - "[[comparisons/agent-harnesses]]"
 ---
 
 # Kilo (Kilo Code)
