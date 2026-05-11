@@ -1,9 +1,10 @@
-## [2026-05-11] blog-ingest | Gary Marcus entity, Sean Goedecke enrichment, Enterprise AI Scaling concept
+## [2026-05-11] blog-ingest | Gary Marcus entity, Sean Goedecke enrichment, Enterprise AI Scaling concept, Simon Willison updates
 
 - **作成:** `wiki/entities/gary-marcus.md` — Cognitive scientist, AI critic. METR 50%-time-horizon critique, "Misplaced panic over AI progress" (May 2026). Reliability vs capability, neurosymbolic AI advocacy.
 - **更新:** `wiki/entities/seangoedecke-com.md` — "The left-wing case for AI" 記事追加。Disability rights, healthcare access, class mobility, educational equity, techno-utopianism の5つの論点。
 - **作成:** `wiki/concepts/enterprise-ai-scaling-patterns.md` — OpenAI 企業インタビューに基づく5つのパターン: Culture Before Tooling, Governance as Enabler, Ownership Over Consumption, Evaluation Rigor, Protecting Judgment Work.
-- **ソース:** garymarcus.substack.com, seangoedecke.com, openai.com
+- **更新:** `wiki/entities/simon-willison.md` — 2026-05-10 記事追加 (NYT AI-generated quote incident, Andrew Quinn wheel-reinvention quote)
+- **ソース:** garymarcus.substack.com, seangoedecke.com, openai.com, simonwillison.net
 
 ## [2026-05-11] cleanup | 6 stub/低品質ページを削除、2つの統合先に集約
 

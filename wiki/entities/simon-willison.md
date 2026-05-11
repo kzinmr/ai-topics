@@ -3,7 +3,7 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-05-09
+updated: 2026-05-11
 status: L3
 sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md]
 tags: [person, blogger]
@@ -249,6 +249,8 @@ Willisonはこれを新たな形の**サプライチェーンリスク**と見�
 - [simonwillison.net--2026-may-5-llm-echo--6fa00161](simonwillison.net--2026-may-5-llm-echo--6fa00161.md)
 - [simonwillison.net--2026-may-5-datasette-referrer-policy--47e367af](simonwillison.net--2026-may-5-datasette-referrer-policy--47e367af.md)
 - [simonwillison.net--2026-may-5-our-ai-started-a-cafe-in-stockholm--0a8c7878](simonwillison.net--2026-may-5-our-ai-started-a-cafe-in-stockholm--0a8c7878.md)
+- [simonwillison.net--2026-may-10-andrew-quinn--460f60ed](simonwillison.net--2026-may-10-andrew-quinn--460f60ed.md)
+- [simonwillison.net--2026-may-10-new-york-times-editors-note--130da68e](simonwillison.net--2026-may-10-new-york-times-editors-note--130da68e.md)
 - [substack.com--simonw--bba9b315](substack.com--simonw--bba9b315.md)
 
 ### LLM 0.32a0 — Major Backwards-Compatible Refactor (April 2026)
