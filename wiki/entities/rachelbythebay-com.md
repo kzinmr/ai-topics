@@ -7,11 +7,8 @@ tags:
   - person
   - blogger
   - hn-popular
-  - sysadmin
+  - developer-tooling
   - infrastructure
-  - unix
-  - operations
-  - feed-readers
 - person
 - blogger
 - hn-popular

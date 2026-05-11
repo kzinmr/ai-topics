@@ -9,7 +9,6 @@ tags:
   - hn-popular
   - company
   - developer-tooling
-  - essayist
 - person
 - blogger
 - hn-popular

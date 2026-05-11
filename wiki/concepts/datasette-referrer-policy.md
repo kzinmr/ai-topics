@@ -6,7 +6,7 @@ updated: 2026-05-06
 status: L1
 tags:
   - datasette
-  - web-security
+  - security
   - privacy
   - person
 sources:

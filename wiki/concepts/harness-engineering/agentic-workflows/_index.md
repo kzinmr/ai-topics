@@ -10,7 +10,6 @@ updated: 2026-04-19
 tags:
   - concept
   - methodology
-  - index
   - harness-engineering
   - workflow
 status: active

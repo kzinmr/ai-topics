@@ -5,9 +5,8 @@ created: 2026-04-10
 updated: 2026-04-10
 tags:
   - entity
-  - autonomous-vehicles
+  - robotics
   - aws
-  - robotaxi
 - entity
 - autonomous-vehicles
 - amazon

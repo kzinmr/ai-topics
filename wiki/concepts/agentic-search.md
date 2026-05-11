@@ -7,7 +7,6 @@ tags:
   - search
   - ai-agents
   - deep-research
-  - reranking
   - coding-agents
   - training
 aliases:

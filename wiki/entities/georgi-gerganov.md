@@ -8,7 +8,7 @@ status: L3
 tags:
   - person
   - x-account
-  - ai
+  - model
   - local-llm
   - quantization
   - whisper.cpp

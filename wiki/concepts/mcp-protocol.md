@@ -8,7 +8,7 @@ tags:
   - testing
   - security
   - ai-agents
-  - tool-use
+  - tool
 sources:
   - raw/articles/merge.dev--blog-testing-ai-agents--8daf268c.md
 ---

@@ -8,7 +8,7 @@ tags:
   - benchmark
   - evaluation
   - coding-agents
-  - meta
+  - methodology
 aliases:
   - "ProgramBench (Meta)"
 related:

@@ -11,10 +11,10 @@ updated: 2026-04-18
 tags:
   - concept
   - openclaw
-  - hermes-agent
+  - ai-agents
   - architecture
   - comparison
-  - skill-management
+  - developer-tooling
 related:
   - concepts/openclaw/_index
   - concepts/openclaw/five-tier-precedence

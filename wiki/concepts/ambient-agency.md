@@ -9,8 +9,7 @@ updated: 2026-05-08
 tags:
   - concept
   - agency
-  - emergence
-  - turing-completeness
+  - model
   - person
   - agent-safety
   - tool-ai

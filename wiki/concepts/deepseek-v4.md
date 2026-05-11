@@ -6,7 +6,6 @@ type: concept
 tags:
   - model
   - context-management
-  - mixture-of-experts
   - quantization
   - inference
   - ai-agents

@@ -3,7 +3,14 @@ title: Qwen 3.6-35B-A3B
 created: 2026-05-09
 updated: 2026-05-09
 type: concept
-tags: [model, open-source, mixture-of-experts, coding-agents, local-llm, multimodal, qwen, alibaba]
+tags:
+  - model
+  - open-source
+  - coding-agents
+  - local-llm
+  - multimodal
+  - qwen
+  - alibaba
 sources: [raw/articles/2026-04-15_qwen-3.6-35b-a3b.md]
 ---
 

@@ -7,7 +7,7 @@ tags:
   - deepseek
   - inference
   - kv-cache
-  - mixture-of-experts
+  - model
   - quantization
 sources:
   - https://www.together.ai/blog/serving-deepseek-v4-why-million-token-context-is-an-inference-systems-problem

@@ -7,9 +7,8 @@ tags:
   - person
   - search
   - rag
-  - reranking
   - training
-  - ai
+  - model
 related:
   - agentic-retrieval
   - graphrag

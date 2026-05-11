@@ -2,7 +2,15 @@
 title: Zyphra
 type: entity
 category: company
-tags: [ai-research, open-source, ai-infrastructure, amd, mixture-of-experts, vlm, ai-agents, zyphra]
+tags:
+  - lab
+  - open-source
+  - infrastructure
+  - amd
+  - model
+  - vlm
+  - ai-agents
+  - zyphra
 status: active
 aliases: [ZyphraAI]
 sources:

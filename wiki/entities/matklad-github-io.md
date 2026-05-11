@@ -10,7 +10,6 @@ tags:
   - developer-tooling
   - compiler-tools
   - language-server
-  - systems-programming
 - person
 - blogger
 - hn-popular

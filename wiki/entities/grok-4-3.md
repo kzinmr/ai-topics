@@ -5,7 +5,6 @@ updated: 2026-05-02
 type: entity
 tags:
   - model
-  - grok
   - text-generation
   - reasoning
   - multimodal

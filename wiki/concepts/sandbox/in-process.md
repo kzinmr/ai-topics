@@ -8,8 +8,7 @@ tags:
   - ai-agents
   - security
   - sandbox
-  - capabilities
-  - monty
+  - company
   - in-process
 aliases: ["monty-sandbox", "capabilities-based-security", "monty", "capability-sandbox"]
 related: [[concepts/harness-engineering/system-architecture/infrastructure-noise]], [[concepts/harness-engineering]], [[entities/samuel-colvin]]

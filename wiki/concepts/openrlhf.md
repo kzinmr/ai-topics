@@ -5,11 +5,8 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - reinforcement-learning
-  - rlhf
-  - grpo
-  - dpo
+  - fine-tuning
   - training
-  - distributed-training
   - framework
   - comparison
   - huggingface

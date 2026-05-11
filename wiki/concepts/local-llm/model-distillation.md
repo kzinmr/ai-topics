@@ -8,7 +8,7 @@ status: L2
 tags:
   - concept
   - local-llm
-  - model-compression
+  - quantization
   - training
   - open-source
 related:

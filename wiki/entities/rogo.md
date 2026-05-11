@@ -5,9 +5,8 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - finance-ai
-  - vertical-ai
   - fintech
+  - ai-adoption
 aliases: ["Rogo AI", "Rogo Technologies Inc.", "RogoData"]
 sources:
   - https://rogo.ai/

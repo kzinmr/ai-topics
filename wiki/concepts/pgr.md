@@ -7,7 +7,7 @@ status: L2
 tags:
   - search
   - coding-agents
-  - MCP
+  - protocol
   - search-tool
   - developer-tooling
   - ripgrep

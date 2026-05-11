@@ -7,7 +7,7 @@ tags:
   - product
   - anthropic
   - design
-  - vision
+  - multimodal
   - lab
 aliases: ["Claude Design by Anthropic Labs"]
 sources: []

@@ -3,7 +3,10 @@ title: Fintool
 created: 2026-04-30
 updated: 2026-04-30
 type: entity
-tags: [company, ai-agents, financial-services]
+tags:
+  - company
+  - ai-agents
+  - fintech
 sources: [raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md]
 ---
 

@@ -13,7 +13,7 @@ tags:
   - alignment
   - philosophy
   - cognition
-  - agent-architecture
+  - architecture
 sources:
   - https://www.mindthefuture.info/p/towards-a-scale-free-theory-of-intelligent
   - https://www.lesswrong.com/posts/5tYTKX4pNpiG4vzYg/towards-a-scale-free-theory-of-intelligent-agency

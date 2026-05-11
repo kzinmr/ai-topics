@@ -10,7 +10,7 @@ tags:
   - evaluation
   - model
   - ai-metrics
-  - model-comparison
+  - comparison
   - coding-benchmarks
   - knowledge-benchmarks
   - reasoning-benchmarks

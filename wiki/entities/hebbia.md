@@ -8,7 +8,7 @@ tags:
   - enterprise-search
   - knowledge-work
   - ai-agents
-  - financial-services
+  - fintech
 aliases: ["Hebbia Inc.", "Hebbia AI"]
 sources:
   - https://www.hebbia.ai/

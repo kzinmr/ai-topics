@@ -8,7 +8,7 @@ tags:
   - data-labeling
   - infrastructure
   - ai-platform
-  - defense
+  - ai-adoption
 aliases: ["Scale", "Scale AI, Inc."]
 sources:
   - https://scale.com/

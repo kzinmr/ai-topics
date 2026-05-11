@@ -14,7 +14,7 @@ tags:
   - harness-engineering
   - anthropic
   - mcp
-  - tool-design
+  - tool
 status: draft
 sources:
   - "https://www.anthropic.com/engineering/writing-tools-for-agents"

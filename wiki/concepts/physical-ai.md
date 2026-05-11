@@ -6,7 +6,6 @@ type: concept
 tags:
   - robotics
   - autonomous-systems
-  - simulation
   - company
   - screen-vs-physical
 sources:

@@ -6,9 +6,7 @@ updated: 2026-05-08
 tags:
   - company
   - robotics
-  - autonomous-vehicles
   - construction
-  - physical-ai
 aliases: ["Bedrock Robotics"]
 sources:
   - https://bedrockrobotics.com

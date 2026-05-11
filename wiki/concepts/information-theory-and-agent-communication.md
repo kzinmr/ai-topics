@@ -1,7 +1,7 @@
 ---
 title: "情報理論とAIエージェントコミュニケーション"
 tags:
-  - information-theory
+  - methodology
   - agent-communication
   - shannon
   - v-information

@@ -10,7 +10,6 @@ tags:
   - ai-agents
   - agentic-engineering
   - developer-tooling
-  - symphony
 sources: []
 ---
 

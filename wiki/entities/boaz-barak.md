@@ -6,16 +6,15 @@ created: 2026-04-10
 updated: 2026-05-04
 tags:
   - person
-  - ai
+  - model
   - theoretical-cs
   - agent-safety
   - computational-complexity
-  - cryptography
+  - security
   - education
   - harvard
   - openai
   - constitutional-ai
-  - model-spec
   - alignment
 sources: 
   - "https://windowsontheory.org/2026/01/27/thoughts-on-claudes-constitution/"

@@ -5,7 +5,7 @@ created: 2026-05-09
 updated: 2026-05-09
 tags:
   - person
-  - agent-harness
+  - harness-engineering
   - ai-agents
   - coding-agents
 aliases:

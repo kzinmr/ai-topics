@@ -9,7 +9,7 @@ tags:
   - mathematician
   - puzzles
   - common-lisp
-  - free-software
+  - open-source
   - indie-web
 - person
 - blogger

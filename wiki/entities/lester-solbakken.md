@@ -10,7 +10,7 @@ tags:
   - ai-agents
   - infrastructure
   - ml-serving
-  - ai
+  - model
 related:
   - doug-turnbull
   - jo-bergum

@@ -3,7 +3,12 @@ title: "KernelEvolve: Meta's Agentic Kernel Authoring System"
 created: "2026-05-06"
 updated: "2026-05-06"
 type: concept
-tags: [ai-agents, infrastructure, optimization, meta, reinforcement-learning]
+tags:
+  - ai-agents
+  - infrastructure
+  - optimization
+  - methodology
+  - reinforcement-learning
 sources: [raw/articles/2026-05-06_meta-kernelevolve-agentic-kernel-coding.md]
 ---
 

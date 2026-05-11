@@ -9,7 +9,7 @@ tags:
   - ai-assisted-development
   - firefox
   - mozilla
-  - claude-mythos
+  - anthropic
 aliases: ["firefox ai security audit", "mozilla mythos preview hardening"]
 related:
   - concepts/claude-mythos-preview

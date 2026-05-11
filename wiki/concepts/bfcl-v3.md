@@ -3,12 +3,12 @@ title: "BFCL V3 (Berkeley Function Calling Leaderboard V3)"
 type: concept
 created: 2026-05-08
 tags:
-  - ai-benchmarks
+  - benchmark
   - function-calling
-  - tool-use
+  - tool
   - agentic-evaluation
   - multi-turn
-  - llm-evaluation
+  - evaluation
 related_concepts:
   - concepts/ai-benchmarks-evals-overview
   - concepts/bfcl-v1

@@ -6,7 +6,7 @@ updated: 2026-05-08
 tags:
   - company
   - legal-ai
-  - vertical-ai
+  - ai-adoption
   - model
   - professional-services
 aliases: ["Harvey AI", "Counsel AI Corporation"]

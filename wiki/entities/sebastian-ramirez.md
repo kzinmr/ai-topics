@@ -10,10 +10,9 @@ updated: 2026-05-03
 tags:
   - entity
   - person
-  - python-developer
+  - developer-tooling
   - open-source
   - web-framework
-  - developer-tooling
   - infrastructure
 sources:
   - https://tiangolo.com/

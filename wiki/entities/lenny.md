@@ -3,7 +3,7 @@ title: "Lenny Rachitsky"
 aliases: ["lenny-rachitsky", "lennys-podcast"]
 tags:
   - person
-  - podcast
+  - writing
   - product-management
   - evaluation
 created: 2026-04-30

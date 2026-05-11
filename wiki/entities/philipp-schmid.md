@@ -6,10 +6,10 @@ created: 2026-04-10
 updated: 2026-04-10
 tags:
   - person
-  - ai
+  - model
   - huggingface
   - google
-  - deployment
+  - developer-tooling
   - llm-ops
   - fine-tuning
   - agent-harnesses

@@ -6,7 +6,7 @@ created: 2026-04-28
 updated: 2026-04-28
 tags:
   - person
-  - ai
+  - model
   - coding-agents
   - anthropic
 sources: []

@@ -7,7 +7,7 @@ tags:
   - ai-ethics
   - content-moderation
   - privacy
-  - meta
+  - methodology
   - smart-glasses
   - human-reviewers
 aliases:

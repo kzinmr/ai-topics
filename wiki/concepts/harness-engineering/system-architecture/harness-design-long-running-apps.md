@@ -13,7 +13,6 @@ tags:
   - architecture
   - harness-engineering
   - anthropic
-  - harness
 status: draft
 sources:
   - "https://www.anthropic.com/engineering/harness-design-long-running-apps"

@@ -7,7 +7,7 @@ status: active
 tags:
   - benchmark
   - evaluation
-  - knowledge
+  - methodology
   - reasoning
   - multi-domain
   - language-understanding

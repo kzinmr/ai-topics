@@ -5,8 +5,8 @@ created: 2026-04-10
 updated: 2026-04-10
 tags:
   - person
-  - developer
-  - ai
+  - developer-tooling
+  - model
   - search
   - relevance
   - open-source

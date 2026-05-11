@@ -3,7 +3,10 @@ title: Nicolas Bustamante
 created: 2026-04-30
 updated: 2026-04-30
 type: entity
-tags: [person, ai-agents, financial-services]
+tags:
+  - person
+  - ai-agents
+  - fintech
 sources: [raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md]
 ---
 

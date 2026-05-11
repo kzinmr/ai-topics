@@ -3,7 +3,11 @@ title: Ramp
 created: 2026-04-30
 updated: 2026-05-08
 type: entity
-tags: [company, ai-agents, coding-agents, financial-services]
+tags:
+  - company
+  - ai-agents
+  - coding-agents
+  - fintech
 sources:
   - raw/articles/2026-04-30_ramp-inspect-background-agent.md
   - https://builders.ramp.com

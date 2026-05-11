@@ -5,7 +5,7 @@ tags:
   - pipeline-parallelism
   - inference
   - sglang
-  - parallelism
+  - optimization
   - context-management
 status: active
 created: 2026-04-27

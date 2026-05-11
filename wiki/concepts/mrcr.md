@@ -3,11 +3,11 @@ title: "MRCR (Multi-Round Coreference Resolution)"
 type: concept
 created: 2026-05-08
 tags:
-  - ai-benchmarks
-  - long-context
+  - benchmark
+  - context-management
   - needle-in-haystack
   - synthetic-evaluation
-  - llm-evaluation
+  - evaluation
 related_concepts:
   - concepts/ai-benchmarks-evals-overview
   - concepts/niah

@@ -4,7 +4,11 @@ type: concept
 created: 2026-05-09
 updated: 2026-05-09
 status: L2
-tags: [kv-cache, inference, optimization, ai-infrastructure]
+tags:
+  - kv-cache
+  - inference
+  - optimization
+  - infrastructure
 sources:
   - "[[raw/articles/2025-11-30_sankalp_prompt-caching-internals]]"
 related:

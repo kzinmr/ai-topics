@@ -3,7 +3,11 @@ title: "AI Autonomy Debate"
 type: concept
 created: 2026-04-10
 updated: 2026-04-10
-tags: [concept, ai-agents, autonomy, human-in-the-loop, safety]
+tags:
+  - concept
+  - ai-agents
+  - human-in-the-loop
+  - safety
 aliases: ["autonomy-obsession", "hitl-vs-autonomous"]
 related: , [[concepts/anthropic-managed-agents]], [[concepts/ai-agent-traps]]
 sources: []

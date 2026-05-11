@@ -10,7 +10,6 @@ tags:
   - mac-studio
   - hardware
   - unified-memory
-  - mlx
   - llama-cpp
 aliases: [mac-studio-ai, apple-silicon-ai, mac-studio-local-inference]
 ---

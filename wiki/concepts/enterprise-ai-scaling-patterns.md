@@ -3,7 +3,12 @@ title: "Enterprise AI Scaling Patterns"
 type: concept
 created: 2026-05-11
 updated: 2026-05-11
-tags: [ai-adoption, governance, workflow, evaluation, reliability]
+tags:
+  - ai-adoption
+  - governance
+  - workflow
+  - evaluation
+  - infrastructure
 sources:
   - raw/articles/openai.com--business-guides-and-resources-how-enterprises-are-scaling-ai--e3d1e8ca.md
 status: L2

@@ -7,7 +7,7 @@ tags:
   - person
   - search
   - query-understanding
-  - e-commerce
+  - fintech
   - faceted-search
   - hcir
   - data-science

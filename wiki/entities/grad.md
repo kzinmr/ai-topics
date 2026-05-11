@@ -8,7 +8,7 @@ tags:
   - transformer-architecture
   - optimization
   - rwkv
-  - prime-intellect
+  - company
   - eleutherai
   - nanogpt-speedrun
 - ml-researcher

@@ -3,7 +3,13 @@ title: Xiaomi MiMo (Model Family)
 created: 2026-05-09
 updated: 2026-05-09
 type: entity
-tags: [model, open-source, mixture-of-experts, coding-agents, multimodal, china, xiaomi]
+tags:
+  - model
+  - open-source
+  - coding-agents
+  - multimodal
+  - china
+  - xiaomi
 sources: [raw/articles/2026-04-23_xiaomi-mimo-v2.5-pro.md]
 ---
 

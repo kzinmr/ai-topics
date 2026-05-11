@@ -8,9 +8,8 @@ related: [entities/simonw, entities/antirez-com, entities/geoffreylitt-com, enti
 tags:
   - person
   - x-account
-  - ai
+  - model
   - developer-tooling
-  - generative-ui
   - vercel
 sources: []
 ---

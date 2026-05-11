@@ -6,10 +6,9 @@ updated: 2026-05-09
 tags:
   - entity
   - product
-  - cli
   - developer-tooling
   - coding-agents
-  - agent-harness
+  - harness-engineering
   - sourcegraph
 aliases:
   - ampcode

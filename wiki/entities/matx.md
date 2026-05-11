@@ -3,7 +3,11 @@ title: "MatX"
 type: entity
 created: 2026-05-01
 updated: 2026-05-01
-tags: [company, hardware, inference, training, chip-design]
+tags:
+  - company
+  - hardware
+  - inference
+  - training
 sources:
   - "raw/articles/dwarkesh.com--p-reiner-pope--11ee10e4.md"
 ---

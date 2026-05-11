@@ -14,9 +14,8 @@ sources:
 tags:
   - concept
   - coding-agents
-  - property-based-testing
+  - developer-tooling
   - evaluation
-  - software-correctness
 
 ---
 

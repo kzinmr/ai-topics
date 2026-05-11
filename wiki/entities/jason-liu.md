@@ -11,10 +11,9 @@ updated: 2026-04-27
 tags:
   - person
   - x-account
-  - ai
+  - model
   - structured-outputs
   - developer-tooling
-  - model
   - rag
   - context-engineering
   - evaluation

@@ -3,7 +3,12 @@ title: Bespoke Labs
 created: 2026-05-08
 updated: 2026-05-08
 type: entity
-tags: [company, open-source, synthetic-data, ai-agents, reinforcement-learning, post-training]
+tags:
+  - company
+  - open-source
+  - training
+  - ai-agents
+  - reinforcement-learning
 aliases: [bespokelabs, BespokeLabs.AI]
 sources: [raw/articles/2026-05-08_bespokelabs_multi-turn-tool-use-rl.md]
 related:

@@ -10,7 +10,6 @@ created: 2026-04-25
 updated: 2026-05-08
 tags:
   - concept
-  - local-ai
   - local-llm
   - hardware
   - inference

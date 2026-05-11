@@ -12,7 +12,6 @@ tags:
   - company
   - open-source
   - evaluation
-  - lm-eval
   - research-collective
 sources:
   - https://www.eleuther.ai/

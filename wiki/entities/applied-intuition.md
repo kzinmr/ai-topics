@@ -5,10 +5,8 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - company
-  - physical-ai
-  - autonomous-vehicles
-  - simulation
-  - defense
+  - robotics
+  - ai-adoption
 aliases: ["Applied Intuition, Inc."]
 sources:
   - https://www.appliedintuition.com/

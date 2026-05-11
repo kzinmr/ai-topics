@@ -1,6 +1,7 @@
 ---
 title: "Pydantic — Data Validation Using Python Type Hints"
-tags: [developer-tooling, python, rust]
+tags:
+  - developer-tooling
 created: 2026-04-16
 updated: 2026-04-24
 type: concept

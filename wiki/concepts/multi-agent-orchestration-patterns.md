@@ -6,7 +6,7 @@ type: concept
 tags:
   - multi-agent
   - orchestration
-  - design-patterns
+  - methodology
   - architecture
 sources:
   - raw/articles/crawl-2026-04-24-multi-agent-production-architecture-2026.md

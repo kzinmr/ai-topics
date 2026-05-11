@@ -14,7 +14,7 @@ tags:
   - optimization
   - agi-theory
   - person
-  - bitter-lesson
+  - methodology
   - emergent-abilities
   - pretraining-thesis
 sources:

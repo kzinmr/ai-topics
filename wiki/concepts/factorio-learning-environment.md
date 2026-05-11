@@ -9,7 +9,6 @@ tags:
   - long-term-planning
   - spatial-reasoning
   - resource-optimization
-  - agent-evaluation
   - evaluation
 aliases:
   - fle

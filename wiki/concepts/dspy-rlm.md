@@ -13,7 +13,7 @@ tags:
   - python-repl
   - pydantic-ai
   - code-mode
-  - monty
+  - company
 status: complete
 related:
   - dspy

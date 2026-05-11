@@ -5,7 +5,7 @@ updated: 2026-04-27
 tags:
   - multi-agent
   - kv-cache
-  - token-efficiency
+  - optimization
   - model
 aliases: [kv-cache-compaction, attention-matching-compaction]
 related: [[concepts/latent-briefing]], [[concepts/multi-agent-systems]], [[concepts/context-management]], [[entities/ramp-labs]]

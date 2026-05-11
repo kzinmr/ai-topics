@@ -8,7 +8,7 @@ tags:
   - evaluation
   - benchmark
   - model
-  - model-comparison
+  - comparison
 aliases:
   - "Arena"
   - "arena.ai"

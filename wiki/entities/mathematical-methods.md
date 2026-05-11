@@ -7,7 +7,7 @@ created: 2026-04-25
 updated: 2026-04-30
 tags:
   - entity
-  - mathematics
+  - education
   - philosophy
   - ai-impact
   - benchmark

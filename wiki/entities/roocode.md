@@ -10,7 +10,7 @@ tags:
   - coding-agent
   - vscode-extension
   - developer-tooling
-  - local-models
+  - local-llm
   - ai-agents
 sources:
   - https://github.com/RooCodeInc/Roo-Code

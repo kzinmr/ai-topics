@@ -12,7 +12,12 @@ sources:
   - "https://www.shloked.com/writing/claude-memory-tool"
   - "https://www.shloked.com/writing/claude-code-source-patterns"
   - "https://www.shloked.com/writing/vajra"
-tags: [memory-systems, context-engineering, design-patterns, multi-agent, file-based-memory, competitive-analysis]
+tags:
+  - memory-systems
+  - context-engineering
+  - methodology
+  - multi-agent
+  - file-based-memory
 related: [claude-memory, chatgpt-memory-bitter-lesson, context-engineering, harness-design-long-running-apps, claude-code-source-patterns, vajra-background-agent]
 ---
 

@@ -7,7 +7,7 @@ updated: 2026-05-04
 aliases: [jaykmody, Jay Mody]
 tags:
   - person
-  - python-developer
+  - developer-tooling
 sources:
   - https://jaykmody.com/
   - https://github.com/jaymody

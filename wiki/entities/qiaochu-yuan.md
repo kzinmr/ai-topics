@@ -10,7 +10,7 @@ aliases:
 tags:
   - entity
   - philosopher
-  - mathematics
+  - education
   - ai-critic
   - language
   - rlhf-critic

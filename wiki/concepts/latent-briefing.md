@@ -2,7 +2,11 @@
 title: "Latent Briefing"
 created: 2026-04-27
 updated: 2026-04-27
-tags: [multi-agent, kv-cache, token-efficiency, ramp-labs]
+tags:
+  - multi-agent
+  - kv-cache
+  - optimization
+  - ramp-labs
 aliases: [latent-briefing]
 related: [[concepts/kv-cache-compaction]], [[concepts/multi-agent-systems]], [[concepts/recursive-language-models]], [[entities/ramp-labs]]
 sources: [

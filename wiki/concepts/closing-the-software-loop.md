@@ -4,7 +4,13 @@ type: concept
 created: 2026-05-09
 updated: 2026-05-09
 status: L2
-tags: [agentic-engineering, coding-agents, autonomous-agents, workflow, software-engineering, ai-adoption]
+tags:
+  - agentic-engineering
+  - coding-agents
+  - ai-agents
+  - workflow
+  - software-engineering
+  - ai-adoption
 sources:
   - "[[raw/articles/2026-01-25_benedict_closing-software-loop]]"
 related:

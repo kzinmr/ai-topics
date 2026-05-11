@@ -7,7 +7,7 @@ tags:
   - concept
   - rlm
   - harness-engineering
-  - aec
+  - industry
   - architecture
 aliases:
   - Lambda Recursive Language Model

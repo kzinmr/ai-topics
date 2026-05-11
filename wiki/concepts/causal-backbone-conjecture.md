@@ -7,7 +7,7 @@ tags:
   - architecture
   - selection-theorem
   - resource-allocation
-  - information-theory
+  - methodology
   - causal-reasoning
 sources:
   - https://www.lesswrong.com/posts/BcrPdMipzqecg4JdQ/the-causal-backbone-conjecture

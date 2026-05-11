@@ -9,7 +9,6 @@ tags:
   - offline-ai
   - google
   - local-llm
-  - gemma
 aliases:
   - translate-gemma
   - TranslateGemma model

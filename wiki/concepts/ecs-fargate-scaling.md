@@ -7,7 +7,7 @@ tags:
   - aws
   - ecs
   - fargate
-  - lambda
+  - infrastructure
   - optimization
   - container-orchestration
 aliases: ["ECS scaling", "Fargate auto-scaling", "Container scaling"]

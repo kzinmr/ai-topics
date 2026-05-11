@@ -8,7 +8,7 @@ tags:
   - entity
   - blog
   - harness-engineering
-  - aec
+  - industry
   - evaluation
 aliases:
   - theharness.blog

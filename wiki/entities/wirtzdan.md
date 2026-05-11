@@ -7,7 +7,7 @@ tags:
   - person
   - blogger
   - hn-popular
-  - productivity
+  - developer-tooling
   - facilitation
   - cohort-based-courses
   - note-taking

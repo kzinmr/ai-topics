@@ -8,7 +8,7 @@ tags:
   - blogger
   - hn-popular
   - developer-tooling
-  - free-software
+  - open-source
   - unix-philosophy
 sources: []
 ---

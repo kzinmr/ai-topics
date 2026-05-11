@@ -6,9 +6,9 @@ created: 2026-04-10
 updated: 2026-05-02
 tags:
   - person
-  - speaking
+  - writing
   - community
-  - quotes
+  - methodology
 sources: []
 ---
 

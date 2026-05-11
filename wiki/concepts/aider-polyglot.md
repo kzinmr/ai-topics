@@ -7,10 +7,10 @@ status: active
 tags:
   - benchmark
   - evaluation
-  - coding
+  - coding-agents
   - multi-language
   - code-editing
-  - programming
+  - developer-tooling
 aliases:
   - aider-polyglot
   - "Aider Polyglot"

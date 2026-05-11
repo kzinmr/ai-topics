@@ -9,7 +9,7 @@ tags:
   - reinforcement-learning
   - agi
   - keen-technologies
-  - bitter-lesson
+  - methodology
 sources: []
 ---
 

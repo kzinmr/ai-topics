@@ -1,6 +1,12 @@
 ---
 title: "Cognition's Memory Tool — Copying Claude's Approach"
-tags: [cognition, coding-agents, memory-systems, tool, competitive-analysis, context-management]
+tags:
+  - cognition
+  - coding-agents
+  - memory-systems
+  - tool
+  - methodology
+  - context-management
 created: 2026-04-13
 updated: 2026-04-24
 type: concept

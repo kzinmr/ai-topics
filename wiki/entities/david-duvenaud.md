@@ -5,7 +5,7 @@ created: 2026-04-30
 updated: 2026-04-30
 tags:
   - person
-  - ai
+  - model
 sources:
   - raw/articles/2026-04-28_talkie-historical-llm.md
 ---

@@ -6,7 +6,7 @@ tags:
   - entity
   - lab
   - company
-  - context-graphs
+  - search
   - ai-agents
 status: complete
 description: "AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents."

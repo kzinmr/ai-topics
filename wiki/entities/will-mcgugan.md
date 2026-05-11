@@ -9,7 +9,7 @@ tags:
   - x-account
   - developer-tooling
   - open-source
-  - ai
+  - model
   - terminal-ui
   - rich
   - textual

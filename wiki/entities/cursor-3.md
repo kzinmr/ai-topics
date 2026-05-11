@@ -8,7 +8,7 @@ tags:
   - developer-tooling
   - coding-agent
   - coding-agents
-  - spacex
+  - company
   - partnership
 - entity
 - ide

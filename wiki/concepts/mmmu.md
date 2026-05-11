@@ -8,9 +8,8 @@ tags:
   - benchmark
   - evaluation
   - multimodal
-  - vision
   - reasoning
-  - knowledge
+  - methodology
 aliases:
   - mmmu
   - "MMMU"

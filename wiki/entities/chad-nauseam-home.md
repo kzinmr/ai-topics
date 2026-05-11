@@ -11,7 +11,7 @@ tags:
   - functional-programming
   - game-dev
   - cryptocurrency
-  - tech-commentary
+  - writing
 - person
 - blogger
 - hn-popular

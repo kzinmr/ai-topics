@@ -3,7 +3,13 @@ title: "Federation of Experts (FoE)"
 created: 2026-05-10
 updated: 2026-05-10
 type: concept
-tags: [mixture-of-experts, inference, optimization, architecture, kv-cache, distributed-training]
+tags:
+  - model
+  - inference
+  - optimization
+  - architecture
+  - kv-cache
+  - training
 sources:
   - raw/articles/2026-05-07_arxiv-federation-of-experts.md
   - https://arxiv.org/abs/2605.06206

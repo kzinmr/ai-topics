@@ -6,7 +6,7 @@ updated: 2026-04-30
 tags:
   - entity
   - person
-  - ai
+  - model
   - notion
   - context-engineering
 related: [headless-saas, ai-agent-memory-middleware, context-graph]

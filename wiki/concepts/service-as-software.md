@@ -7,7 +7,7 @@ tags:
   - ai-business-model
   - product
   - company
-  - ai-economics
+  - economics
 aliases:
   - "Services: The New Software"
   - "Service as Software"

@@ -4,7 +4,10 @@ type: concept
 created: 2026-05-04
 updated: 2026-05-04
 status: Level2
-tags: [curriculum, meta-knowledge, roadmap, llm-education]
+tags:
+  - curriculum
+  - methodology
+  - education
 aliases: [mlabonne-llm-course, llm-curriculum]
 sources:
   - https://github.com/mlabonne/llm-course

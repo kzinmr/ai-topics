@@ -3,7 +3,7 @@ title: "Memory Systems and the Bitter Lesson"
 type: concept
 tags:
   - memory-systems
-  - bitter-lesson
+  - methodology
   - architecture
   - ai-agents
 status: complete

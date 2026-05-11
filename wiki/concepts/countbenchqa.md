@@ -4,10 +4,9 @@ type: concept
 created: 2026-05-08
 tags:
   - benchmark
-  - vision-language
+  - multimodal
   - counting
   - evaluation
-  - multimodal
   - simple-eval
 aliases:
   - countbench-qa

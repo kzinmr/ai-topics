@@ -6,7 +6,7 @@ updated: 2026-05-04
 status: Level1
 tags:
   - GLAM
-  - design-patterns
+  - methodology
   - boring-ai
   - structured-extraction
   - cultural-heritage

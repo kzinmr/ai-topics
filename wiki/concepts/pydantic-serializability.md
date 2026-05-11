@@ -1,6 +1,8 @@
 ---
 title: "Pydantic Serializability"
-tags: [developer-tooling, python, pydantic, inference]
+tags:
+  - developer-tooling
+  - inference
 created: 2026-04-15
 updated: 2026-04-24
 type: concept

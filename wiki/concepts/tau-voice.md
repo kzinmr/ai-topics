@@ -10,7 +10,7 @@ tags:
   - voice-agents
   - full-duplex
   - evaluation
-  - sierra
+  - company
 related:
   - "[[concepts/tau-bench]]"
   - "[[concepts/tau-squared-bench]]"

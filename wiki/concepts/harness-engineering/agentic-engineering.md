@@ -6,8 +6,8 @@ created: 2026-04-12
 updated: 2026-05-02
 status: complete
 tags:
-  - ai
-  - engineering
+  - model
+  - methodology
   - workflows
   - ai-agents
 aliases:

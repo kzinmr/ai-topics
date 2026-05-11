@@ -6,10 +6,10 @@ type: concept
 tags:
   - ai-agents
   - governance
-  - observability
-  - devops
+  - infrastructure
+  - developer-tooling
   - agentic-engineering
-  - agent-evaluation
+  - evaluation
 aliases: [ADLC, Agent Lifecycle]
 sources:
   - raw/articles/2026-05-09_langchain-agent-development-lifecycle.md

@@ -3,7 +3,12 @@ title: "Google Photo Scanning AI"
 type: concept
 created: 2026-04-28
 updated: 2026-04-28
-tags: [google, privacy, photo-scanning, ai, personal-intelligence]
+tags:
+  - google
+  - privacy
+  - photo-scanning
+  - model
+  - personal-intelligence
 sources:
   - https://link.mail.beehiiv.com/v1/c/YHaYtM4tOL%2FDENtWekzMSfVk2R8xs3nf7yM%2FPKDC%2F9NfoJs0l9%2BaUyiWLw%2FG
 ---

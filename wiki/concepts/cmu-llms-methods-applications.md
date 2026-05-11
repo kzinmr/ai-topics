@@ -5,7 +5,7 @@ created: 2026-05-04
 updated: 2026-05-04
 status: Level2
 tags:
-  - course
+  - education
   - curriculum
   - llm-applications
   - prompting

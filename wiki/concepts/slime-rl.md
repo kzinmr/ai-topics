@@ -9,9 +9,7 @@ aliases:
   - slime-framework
 tags:
   - reinforcement-learning
-  - rlhf
-  - grpo
-  - distributed-training
+  - fine-tuning
   - training
   - framework
   - agentic-engineering

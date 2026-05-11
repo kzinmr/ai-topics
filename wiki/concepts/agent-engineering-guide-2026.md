@@ -7,7 +7,7 @@ tags:
   - agentic-engineering
   - career-development
   - context-engineering
-  - tool-design
+  - tool
   - evaluation
   - harness-engineering
   - mcp

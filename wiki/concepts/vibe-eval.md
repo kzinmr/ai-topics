@@ -3,10 +3,9 @@ title: "Vibe-Eval"
 type: concept
 created: 2026-05-08
 tags:
-  - ai-benchmarks
+  - benchmark
   - multimodal
-  - vision
-  - llm-evaluation
+  - evaluation
   - hard-eval
   - personalized-eval
 related_concepts:

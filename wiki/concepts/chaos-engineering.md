@@ -5,7 +5,7 @@ created: 2026-04-16
 updated: 2026-04-16
 tags:
   - infrastructure
-  - microservices
+  - architecture
   - testing
   - aws
 aliases:

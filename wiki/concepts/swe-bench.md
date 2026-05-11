@@ -8,7 +8,7 @@ tags:
   - coding-agents
   - software-engineering
   - evaluation
-  - agentic-ai
+  - ai-agents
   - github-issues
 aliases:
   - swe-bench

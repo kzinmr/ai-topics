@@ -8,7 +8,6 @@ tags:
   - model
   - google
   - open-weight
-  - gemma
   - inference
   - mtp
 - entity

@@ -8,7 +8,7 @@ tags:
   - cognition
   - coding-agents
   - memory-tool
-  - competitive-analysis
+  - methodology
   - agentic-engineering
 sources:
   - url: "https://www.shloked.com/writing/claude-memory-tool"

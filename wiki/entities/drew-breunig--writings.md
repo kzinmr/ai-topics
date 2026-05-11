@@ -7,7 +7,6 @@ updated: 2026-05-05
 tags:
   - person
   - writing
-  - speaking
   - blog
 sources:
   - raw/articles/2026-05-04_drew-breunig-10-lessons-agentic-coding.md

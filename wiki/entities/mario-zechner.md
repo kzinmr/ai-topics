@@ -8,10 +8,10 @@ tags:
   - person
   - x-account
   - game-development
-  - ai
+  - model
   - local-llm
   - open-source
-  - systems-programming
+  - developer-tooling
   - kotlin
 sources: []
 ---

@@ -4,7 +4,12 @@ type: concept
 description: "How model intelligence evolution affects the importance of harness engineering — as models get smarter, harness complexity becomes less critical"
 category: concepts
 sub_category: AI Agent Architecture
-tags: [ai-agents, harness-engineering, bitter-lesson, model-evolution, architecture]
+tags:
+  - ai-agents
+  - harness-engineering
+  - methodology
+  - model-evolution
+  - architecture
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

@@ -6,8 +6,7 @@ type: entity
 tags:
   - person
   - agentic-engineering
-  - newsletter
-  - podcast
+  - writing
 sources:
   - https://open.substack.com/users/152216110-alex-volkov
   - https://substack.com/app-link/post?publication_id=1084089&post_id=195193203

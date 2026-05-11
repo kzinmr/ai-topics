@@ -7,7 +7,6 @@ tags:
   - concept
   - memory-systems
   - rag
-  - agentic-rag
   - model
 aliases: ["graph-memory", "kg-memory", "graph-rag-agentic-memory"]
 sources:

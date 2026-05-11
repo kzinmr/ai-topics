@@ -9,8 +9,6 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - agent-safety
-  - jailbreak
-  - adversarial-ml
 related:
   - concepts/ai-red-teaming-careers
   - concepts/prompt-injection

@@ -3,7 +3,13 @@ title: "Gary Marcus"
 type: entity
 created: 2026-05-11
 updated: 2026-05-11
-tags: [ai-research, benchmark, evaluation, reliability, controversy, philosophy]
+tags:
+  - lab
+  - benchmark
+  - evaluation
+  - infrastructure
+  - controversy
+  - philosophy
 sources:
   - raw/articles/garymarcus.substack.com--p-misplaced-panic-over-ai-progress--7aa50278.md
 ---

@@ -7,7 +7,6 @@ updated: 2026-04-13
 tags:
   - person
   - x-account
-  - ai
   - model
   - evaluation
   - rag

@@ -6,7 +6,7 @@ updated: 2026-05-08
 tags:
   - company
   - healthcare-ai
-  - clinical-ai
+  - ai-adoption
   - medical-documentation
 aliases: ["Abridge"]
 sources:

@@ -8,7 +8,7 @@ sources: [https://grokipedia.com/page/Charles_Frye]
 tags:
   - person
   - x-account
-  - ai
+  - model
   - infrastructure
   - inference
   - developer-advocacy

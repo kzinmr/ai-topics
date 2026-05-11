@@ -3,7 +3,13 @@ title: "Raymond Weitekamp (@raw_works)"
 type: entity
 created: 2026-04-21
 updated: 2026-04-21
-tags: [entity, person, rlm, dspy, reasoning-models, ml-research]
+tags:
+  - entity
+  - person
+  - rlm
+  - dspy
+  - reasoning-models
+  - lab
 status: complete
 website: https://raw.works
 handle: "@raw_works"

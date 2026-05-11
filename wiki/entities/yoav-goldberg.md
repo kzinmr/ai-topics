@@ -8,7 +8,7 @@ tags:
   - person
   - academic
   - curriculum
-  - llm-education
+  - education
 aliases: ["yoavg"]
 url: https://www.cs.bgu.ac.il/~yoavg/
 affiliation: Bar-Ilan University, Allen Institute for AI (AI2) (formerly)

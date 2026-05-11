@@ -1,6 +1,7 @@
 ---
 title: "Omar Khattab — Key Quotes"
-tags: [quotes]
+tags:
+  - methodology
 created: 2026-04-24
 updated: 2026-04-24
 type: sub-entity

@@ -6,10 +6,9 @@ updated: "2026-04-16"
 tags:
   - aws
   - sqs
-  - lambda
+  - infrastructure
   - esm
   - optimization
-  - infrastructure
   - task-queue
 aliases: ["ESM scaling", "Lambda Event Source Mapping", "SQS scaling behavior"]
 sources: ["https://rehanvdm.com/blog/sqs-lambda-esm-scaling-behaviour/"]

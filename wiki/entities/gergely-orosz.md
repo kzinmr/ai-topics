@@ -3,7 +3,11 @@ title: "Gergely Orosz — The Pragmatic Engineer"
 created: 2026-04-29
 updated: 2026-04-29
 type: entity
-tags: [person, engineering, newsletter, tech-leadership]
+tags:
+  - person
+  - methodology
+  - writing
+  - tech-leadership
 sources:
   - https://open.substack.com/users/30107029-gergely-orosz
   - https://newsletter.pragmaticengineer.com

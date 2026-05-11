@@ -12,7 +12,7 @@ tags:
   - alignment
   - anthropic
   - rlaif
-  - model-spec
+  - model
 sources:
   - "https://windowsontheory.org/2026/01/27/thoughts-on-claudes-constitution/"
   - "https://www.anthropic.com/news/claudes-constitution"

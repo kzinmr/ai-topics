@@ -3,12 +3,12 @@ title: "SimpleQA"
 type: concept
 created: 2026-05-08
 tags:
-  - ai-benchmarks
+  - benchmark
   - factuality
   - hallucination
-  - knowledge
+  - methodology
   - calibration
-  - llm-evaluation
+  - evaluation
 related_concepts:
   - concepts/ai-benchmarks-evals-overview
   - concepts/triviaqa

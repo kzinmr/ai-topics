@@ -8,7 +8,12 @@ type: entity
 created: 2026-05-04
 updated: 2026-05-04
 status: complete
-tags: [person, education, math, visualization, youtube]
+tags:
+  - person
+  - education
+  - math
+  - developer-tooling
+  - youtube
 aliases: [3blue1brown]
 sources: []
 ---

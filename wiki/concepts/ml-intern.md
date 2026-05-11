@@ -3,7 +3,13 @@ title: HuggingFace ml-intern — Autonomous ML Engineer Agent
 created: 2026-05-09
 updated: 2026-05-09
 type: concept
-tags: [open-source, huggingface, fine-tuning, training, synthetic-data, grpo, automation, agents]
+tags:
+  - open-source
+  - huggingface
+  - fine-tuning
+  - training
+  - automation
+  - ai-agents
 sources: []
 ---
 

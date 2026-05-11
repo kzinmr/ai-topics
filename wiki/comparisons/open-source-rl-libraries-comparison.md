@@ -8,7 +8,7 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - reinforcement-learning
-  - rlhf
+  - fine-tuning
   - comparison
   - framework
   - training

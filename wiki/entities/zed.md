@@ -9,7 +9,7 @@ tags:
   - developer-tooling
   - editor
   - coding-agents
-  - acp
+  - protocol
 aliases:
   - Zed editor
   - Zed Industries

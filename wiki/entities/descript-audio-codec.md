@@ -4,7 +4,6 @@ type: entity
 tags:
   - entity
   - multimodal
-  - neural-audio
   - model
   - descriptive
 created: 2026-05-01

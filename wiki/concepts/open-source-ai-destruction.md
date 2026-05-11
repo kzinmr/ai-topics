@@ -7,7 +7,13 @@ sources:
   - "https://www.jeffgeerling.com/blog/2026/ai-is-destroying-open-source/"
   - "https://www.youtube.com/watch?v=bZJ7A1QoUEI"
   - "https://machineherald.io/article/2026-02/22-ai-generated-slop-is-overwhelming-open-source-projects-forcing-emergency-countermeasures"
-tags: [concept, open-source, ai-slop, maintainer-burnout, code-review-crisis, github]
+tags:
+  - concept
+  - open-source
+  - ai-slop
+  - maintainer-burnout
+  - code-review-crisis
+  - developer-tooling
 aliases: ["ai-slop-crisis", "open-source-maintainer-burnout", "ai-pr-flood"]
 related: [[concepts/gnu-ai-reimplementations]], [[concepts/ai-bubble-economics]], , 
 ---

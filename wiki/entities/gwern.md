@@ -12,8 +12,7 @@ tags:
   - epistemology
   - self-experimentation
   - forecasting
-  - turing-completeness
-  - emergence
+  - model
   - agent-safety
 sources: []
 ---

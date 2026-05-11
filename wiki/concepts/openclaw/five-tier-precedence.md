@@ -10,7 +10,7 @@ updated: 2026-04-18
 tags:
   - concept
   - openclaw
-  - skill-management
+  - developer-tooling
   - architecture
   - governance
 related:

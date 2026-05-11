@@ -12,14 +12,13 @@ depth: 22000
 tags:
   - person
   - x-account
-  - ai
+  - model
   - harness-engineering
   - openai
   - coding-agents
   - ai-agents
   - agentic-engineering
   - developer-tooling
-  - symphony
 sources: []
 ---
 

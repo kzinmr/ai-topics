@@ -1,6 +1,10 @@
 ---
 title: "The Mismanaged Geniuses Hypothesis (MGH)"
-tags: [ai-agents, inference, scaling, methodology]
+tags:
+  - ai-agents
+  - inference
+  - optimization
+  - methodology
 created: 2026-04-19
 updated: 2026-05-04
 type: concept

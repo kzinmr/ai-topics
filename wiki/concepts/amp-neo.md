@@ -6,10 +6,9 @@ updated: 2026-05-09
 tags:
   - concept
   - coding-agents
-  - agent-harness
+  - harness-engineering
   - context-management
   - developer-tooling
-  - cli
 aliases:
   - neo
   - amp-neo

@@ -9,8 +9,8 @@ tags:
   - concept
   - mcp
   - code-analysis
-  - llm-tools
-  - searchcode
+  - tool
+  - search
   - b2a
 status: active
 description: "The practice of providing LLMs with structured, pre-computed code analysis data rather than raw source files. Cuts token usage by 99% by replacing dozens of file reads with a single structured API call."

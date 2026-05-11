@@ -5,10 +5,8 @@ created: 2026-05-08
 updated: 2026-05-08
 tags:
   - reinforcement-learning
-  - rlhf
-  - grpo
+  - fine-tuning
   - training
-  - distributed-training
   - framework
   - agentic-engineering
   - ai-agents

@@ -3,7 +3,14 @@ title: Multi-Turn Tool Use with Reinforcement Learning
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [tool-use, reinforcement-learning, grpo, ai-agents, fine-tuning, post-training, agent-evaluation, coding-agents]
+tags:
+  - tool
+  - reinforcement-learning
+  - training
+  - ai-agents
+  - fine-tuning
+  - evaluation
+  - coding-agents
 aliases: [Tool Use RL, Multi-Turn Tool Use RL]
 sources: [raw/articles/2026-05-08_bespokelabs_multi-turn-tool-use-rl.md]
 related:

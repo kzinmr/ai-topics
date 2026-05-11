@@ -18,7 +18,6 @@ tags:
   - eleutherai
   - open-source
   - evaluation
-  - lm-eval
 sources:
   - https://www.stellabiderman.ai/
   - https://scholar.google.com/citations?user=bO7H0DAAAAAJ

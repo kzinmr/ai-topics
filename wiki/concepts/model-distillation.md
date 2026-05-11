@@ -10,7 +10,7 @@ updated: 2026-05-05
 tags:
   - concept
   - training
-  - model-compression
+  - quantization
   - policy
 status: active
 

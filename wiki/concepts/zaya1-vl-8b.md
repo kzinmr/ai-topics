@@ -2,7 +2,13 @@
 title: ZAYA1-VL-8B
 type: concept
 category: model
-tags: [vlm, mixture-of-experts, open-source, multimodal, amd, zyphra]
+tags:
+  - vlm
+  - model
+  - open-source
+  - multimodal
+  - amd
+  - zyphra
 aliases: [ZAYA1-VL]
 sources:
   - https://www.zyphra.com/post/zaya1-vl-8b

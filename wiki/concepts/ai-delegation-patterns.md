@@ -2,7 +2,12 @@
 title: "AI Delegation Patterns"
 url: "https://wiki.ai-topics/concepts/ai-delegation-patterns"
 date: 2026-05-07
-tags: [concept, ai-agents, human-ai-interaction, delegation, productivity]
+tags:
+  - concept
+  - ai-agents
+  - human-ai-interaction
+  - delegation
+  - developer-tooling
 sources:
   - https://open.substack.com/pub/thesignal/p/the-art-of-delegation-in-the-age
 updated: 2026-05-08

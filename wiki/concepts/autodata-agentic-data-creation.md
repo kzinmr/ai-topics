@@ -7,7 +7,7 @@ tags:
   - concept
   - training
   - ai-agents
-  - meta
+  - methodology
   - data-science
   - meta-optimization
   - self-improving

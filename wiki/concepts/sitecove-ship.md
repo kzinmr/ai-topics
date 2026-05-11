@@ -3,7 +3,12 @@ title: Sitecove HyperCache Inference Protocol (SHIP)
 created: 2026-05-09
 updated: 2026-05-09
 type: concept
-tags: [inference, optimization, gpu, infrastructure, emerging]
+tags:
+  - inference
+  - optimization
+  - hardware
+  - infrastructure
+  - emerging
 sources: [raw/articles/2026-04-08_sitecove-ship-inference.md]
 ---
 

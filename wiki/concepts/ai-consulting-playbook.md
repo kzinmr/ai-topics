@@ -3,7 +3,13 @@ title: "AI Consulting Playbook"
 type: concept
 created: 2026-04-30
 updated: 2026-04-30
-tags: [consulting, ai-business, pricing, content-marketing, client-engagement, jason-liu]
+tags:
+  - company
+  - ai-business
+  - pricing
+  - content-marketing
+  - client-engagement
+  - jason-liu
 aliases: ["ai-consulting-playbook", "content-flywheel", "value-based-pricing-ai"]
 sources:
   - https://567-labs.github.io/consulting/

@@ -6,7 +6,7 @@ updated: 2026-04-10
 tags:
   - person
   - blogger
-  - tech-commentary
+  - writing
   - ai-policy
   - web-culture
   - coding-agents

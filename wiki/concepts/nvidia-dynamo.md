@@ -3,7 +3,15 @@ title: NVIDIA Dynamo
 created: 2026-04-26
 updated: 2026-05-10
 type: concept
-tags: [inference, optimization, agentic-engineering, platform, streaming, tool-use, reasoning, kv-cache]
+tags:
+  - inference
+  - optimization
+  - agentic-engineering
+  - platform
+  - streaming
+  - tool
+  - reasoning
+  - kv-cache
 sources:
   - raw/articles/2026-04-25-nvidia-dynamo-agentic-inference.md
   - raw/articles/2026-05-08_nvidia-dynamo-streaming-tokens-tools.md

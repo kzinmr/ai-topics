@@ -9,7 +9,7 @@ created: 2026-04-12
 updated: 2026-04-19
 tags:
   - concept
-  - index
+  - methodology
   - harness-engineering
   - architecture
 status: active

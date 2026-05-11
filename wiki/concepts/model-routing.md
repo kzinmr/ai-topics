@@ -3,7 +3,14 @@ title: Model Routing — Per-Turn Cost Optimization for AI Coding
 created: 2026-05-09
 updated: 2026-05-09
 type: concept
-tags: [inference, optimization, coding-agents, economics, claude-code, openai, gemini]
+tags:
+  - inference
+  - optimization
+  - coding-agents
+  - economics
+  - claude-code
+  - openai
+  - google
 sources: []
 ---
 

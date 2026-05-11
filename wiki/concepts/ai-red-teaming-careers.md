@@ -10,8 +10,6 @@ updated: 2026-05-08
 tags:
   - career
   - agent-safety
-  - adversarial-ml
-  - jailbreak
   - security
 related:
   - concepts/prompt-injection

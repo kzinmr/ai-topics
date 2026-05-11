@@ -3,7 +3,12 @@ title: "Agent Identity & Verification (A2A Signed Agent Cards)"
 created: 2026-04-27
 updated: 2026-04-27
 type: concept
-tags: [agent-communication, security, protocol, identity, multi-agent]
+tags:
+  - agent-communication
+  - security
+  - protocol
+  - methodology
+  - multi-agent
 sources:
   - raw/articles/crawl-2026-04-27-sigstore-a2a-keyless-signing.md
   - raw/articles/crawl-2026-04-27-agent-identity-verification-a2a-signed-agent-cards.md

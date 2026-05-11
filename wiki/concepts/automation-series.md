@@ -11,7 +11,7 @@ tags:
   - concept
   - automation
   - architecture
-  - workflow-design
+  - workflow
   - deterministic
   - probabilistic
   - ai-automation

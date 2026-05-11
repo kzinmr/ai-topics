@@ -8,7 +8,12 @@ type: entity
 created: 2026-05-04
 updated: 2026-05-04
 status: complete
-tags: [person, education, visualization, nlp, transformers]
+tags:
+  - person
+  - education
+  - developer-tooling
+  - nlp
+  - transformers
 aliases: [jalammar]
 sources:
   - https://jalammar.github.io

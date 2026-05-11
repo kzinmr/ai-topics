@@ -4,7 +4,11 @@ type: concept
 created: 2026-05-04
 updated: 2026-05-04
 status: Level2
-tags: [curriculum, meta-knowledge, roadmap, llm-education, yoav-goldberg]
+tags:
+  - curriculum
+  - methodology
+  - education
+  - yoav-goldberg
 aliases: [yoavg-llm-guide, llm-learning-guide-2025]
 sources:
   - https://gist.githubusercontent.com/yoavg/95bbc5768cacd2bf07187779fada4867/raw/bcb8ff287e03a7e49f7ae5daedc03d04c11d8a71/llm-materials-2025.md

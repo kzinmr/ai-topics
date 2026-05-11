@@ -7,7 +7,7 @@ tags:
   - company
   - defense-tech
   - national-security
-  - ai
+  - model
 aliases: ["Vannevar"]
 sources:
   - https://vannevarlabs.com

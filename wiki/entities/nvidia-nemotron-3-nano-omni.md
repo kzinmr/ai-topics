@@ -3,7 +3,13 @@ title: NVIDIA Nemotron 3 Nano Omni
 created: 2026-05-09
 updated: 2026-05-09
 type: entity
-tags: [model, multimodal, open-source, nvidia, mixture-of-experts, ai-agents, inference]
+tags:
+  - model
+  - multimodal
+  - open-source
+  - nvidia
+  - ai-agents
+  - inference
 sources: [raw/articles/2026-04-28_nvidia-nemotron-3-nano-omni.md]
 ---
 

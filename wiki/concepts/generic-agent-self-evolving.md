@@ -6,7 +6,7 @@ type: concept
 tags:
   - model
   - self-evolving
-  - token-efficiency
+  - optimization
   - architecture
   - memory-systems
 sources:

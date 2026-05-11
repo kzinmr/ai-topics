@@ -6,7 +6,7 @@ aliases:
   - 予測的V-情報
   - Usable Information Under Computational Constraints
 tags:
-  - information-theory
+  - methodology
   - representation-learning
   - fairness
   - structure-learning

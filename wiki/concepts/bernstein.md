@@ -3,7 +3,15 @@ title: Bernstein — Deterministic Multi-Agent Orchestrator
 created: 2026-05-09
 updated: 2026-05-09
 type: concept
-tags: [ai-agents, multi-agent, orchestration, coding-agents, claude-code, git, automation, open-source]
+tags:
+  - ai-agents
+  - multi-agent
+  - orchestration
+  - coding-agents
+  - claude-code
+  - developer-tooling
+  - automation
+  - open-source
 sources: []
 ---
 

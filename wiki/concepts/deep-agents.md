@@ -1,6 +1,8 @@
 ---
 title: "Deep Agents — Autonomous Multi-Step AI Agents"
-tags: [ai-agents, autonomy, sandbox]
+tags:
+  - ai-agents
+  - sandbox
 created: 2026-04-15
 updated: 2026-04-30
 type: concept

@@ -5,7 +5,7 @@ updated: 2026-05-08
 type: concept
 tags:
   - ai-agents
-  - data-analysis
+  - data-science
   - knowledge-management
   - prompting
 status: active

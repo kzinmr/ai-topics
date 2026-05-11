@@ -3,7 +3,11 @@ title: "Embra"
 type: entity
 created: 2026-04-30
 updated: 2026-04-30
-tags: [entity, company, ai, context-engineering]
+tags:
+  - entity
+  - company
+  - model
+  - context-engineering
 related: [zach-tratar, notion, context-graph, ai-agent-memory-middleware]
 sources:
   - https://embra.ai/

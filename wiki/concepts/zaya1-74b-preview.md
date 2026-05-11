@@ -2,7 +2,12 @@
 title: ZAYA1-74B-Preview
 type: concept
 category: model
-tags: [model, mixture-of-experts, open-source, amd, reasoning, zyphra]
+tags:
+  - model
+  - open-source
+  - amd
+  - reasoning
+  - zyphra
 aliases: [ZAYA1-74B]
 sources:
   - https://huggingface.co/Zyphra/ZAYA1-74B-preview

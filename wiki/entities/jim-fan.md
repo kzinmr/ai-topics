@@ -13,7 +13,7 @@ related:
   - 
 tags:
   - person
-  - ai
+  - model
   - robotics
   - nvidia
   - world-models

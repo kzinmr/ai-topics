@@ -6,7 +6,7 @@ created: 2026-04-10
 updated: 2026-05-04
 tags:
   - person
-  - ai
+  - model
   - huggingface
   - training
   - pytorch

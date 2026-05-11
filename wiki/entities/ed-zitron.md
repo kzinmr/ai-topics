@@ -10,7 +10,7 @@ tags:
   - person
   - blogger
   - economics
-  - ai-infrastructure
+  - infrastructure
   - prediction
   - controversy
   - techno-pessimism

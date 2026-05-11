@@ -6,7 +6,7 @@ type: concept
 tags:
   - concept
   - company
-  - deployment
+  - developer-tooling
   - ai-agents
   - openai
   - anthropic

@@ -6,9 +6,9 @@ created: 2026-04-10
 updated: 2026-04-10
 tags:
   - person
-  - ml-research
+  - lab
   - model
-  - information-theory
+  - methodology
   - nlp
 sources: []
 ---

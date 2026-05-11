@@ -5,7 +5,7 @@ description: "The evolutionary staircase of generative applications: from genera
 category: concepts
 sub_category: AI Agent Architecture
 tags:
-  - generative-ui
+  - developer-tooling
   - generative-app
   - stateless
   - stateful

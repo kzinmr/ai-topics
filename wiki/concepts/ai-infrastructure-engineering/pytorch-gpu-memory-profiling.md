@@ -8,7 +8,7 @@ tags:
   - pytorch
   - gpu-memory
   - profiling
-  - debugging
+  - developer-tooling
   - oom
   - hardware
   - infrastructure

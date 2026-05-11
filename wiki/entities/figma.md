@@ -9,7 +9,7 @@ tags:
   - product
   - anthropic
   - claude-design
-  - competitive-analysis
+  - methodology
 related: [anthropic, saas-apocalypse, claude-design]
 sources: []
 ---

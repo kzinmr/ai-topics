@@ -4,7 +4,12 @@ created: 2026-05-09
 updated: 2026-05-09
 type: entity
 status: l2
-tags: [person, alignment, ai-safety, writing, blog]
+tags:
+  - person
+  - alignment
+  - agent-safety
+  - writing
+  - blog
 aliases: ["niplav LessWrong"]
 sources: [raw/articles/2026-03-17_lesswrong_giant-lookup-tables-of-shallow-circuits.md]
 related: [concepts/glut-of-circuits, concepts/rlhf, concepts/constitutional-ai, concepts/chain-of-thought]

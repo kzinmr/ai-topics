@@ -3,7 +3,11 @@ title: "Agent Communication Protocols (MCP vs A2A)"
 created: 2026-04-24
 updated: 2026-04-30
 type: concept
-tags: [agent-communication, protocol, mcp, a2a, multi-agent]
+tags:
+  - agent-communication
+  - protocol
+  - mcp
+  - multi-agent
 sources:
   - raw/articles/crawl-2026-04-24-multi-agent-production-architecture-2026.md
   - raw/articles/crawl-2026-04-24-agentic-conflict-resolution-playbook.md

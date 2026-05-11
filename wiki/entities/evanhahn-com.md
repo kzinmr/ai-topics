@@ -7,7 +7,7 @@ tags:
   - person
   - blogger
   - open-source-maintainer
-  - web-security
+  - security
   - node-js
   - developer-tooling
   - helmet-js

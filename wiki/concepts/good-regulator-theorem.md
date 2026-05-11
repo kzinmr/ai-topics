@@ -6,7 +6,7 @@ type: concept
 tags:
   - selection-theorem
   - agent-foundations
-  - information-theory
+  - methodology
   - world-models
   - alignment
 aliases:

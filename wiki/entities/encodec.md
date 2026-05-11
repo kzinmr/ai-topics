@@ -4,9 +4,8 @@ type: entity
 tags:
   - entity
   - multimodal
-  - neural-audio
   - model
-  - meta
+  - methodology
 created: 2026-05-01
 updated: 2026-05-01
 status: full

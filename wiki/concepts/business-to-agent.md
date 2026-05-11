@@ -9,9 +9,9 @@ aliases:
 tags:
   - concept
   - business-model
-  - llm-tools
+  - tool
   - agentic-web
-  - searchcode
+  - search
 status: active
 description: "A business paradigm where the primary user of a service is an AI agent/LLM rather than a human. Services optimize for token efficiency, structured data output, and machine-readable interfaces over human UI/UX."
 created: 2026-04-30

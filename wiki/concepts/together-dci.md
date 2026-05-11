@@ -3,7 +3,11 @@ title: "Together DCI (Deploy and Inference)"
 created: 2026-05-10
 updated: 2026-05-10
 type: concept
-tags: [inference, devops, huggingface, company]
+tags:
+  - inference
+  - developer-tooling
+  - huggingface
+  - company
 sources:
   - raw/articles/together.ai--blog-deploy-and-inference-any-model-from-huggingface--6d3cfbd9.md
 ---

@@ -4,7 +4,7 @@ type: concept
 slug: karpathy-loop
 status: complete
 tags:
-  - ai
+  - model
   - lab
   - ai-agents
   - autonomous-experimentation

@@ -11,7 +11,7 @@ tags:
   - browser-agent
   - chrome-extension
   - firefox-extension
-  - local-models
+  - local-llm
   - ai-agents
 sources:
   - https://github.com/0xSero/parchi

@@ -8,7 +8,7 @@ tags:
   - entity
   - tool
   - coding-agent
-  - harness
+  - harness-engineering
   - open-source
   - developer-tooling
 aliases: [pi-coding-agent, pi-agent]

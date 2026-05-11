@@ -6,7 +6,6 @@ tags:
   - benchmark
   - multimodal
   - chart-understanding
-  - vision-language
   - evaluation
   - visual-reasoning
 aliases:

@@ -7,7 +7,7 @@ tags:
   - infrastructure
   - inference
   - platform
-  - cloudflare
+  - company
   - kv-cache
   - agentic-engineering
 sources: [raw/articles/2026-05-05_cloudflare-high-performance-llms.md]

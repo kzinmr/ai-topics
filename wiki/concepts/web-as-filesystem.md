@@ -9,7 +9,7 @@ aliases:
 tags:
   - concept
   - web-filesystem
-  - documentation
+  - developer-tooling
   - rags
   - tool
 status: complete

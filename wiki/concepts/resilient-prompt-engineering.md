@@ -1,6 +1,9 @@
 ---
 title: "Resilient Prompt Engineering"
-tags: [prompting, reliability, design-patterns]
+tags:
+  - prompting
+  - infrastructure
+  - methodology
 created: 2026-04-13
 updated: 2026-04-24
 type: concept

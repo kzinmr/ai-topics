@@ -12,7 +12,7 @@ tags:
   - cognition
   - coding-agents
   - dana
-  - data-analysis
+  - data-science
   - mcp
   - ai-agent-engineering
 status: complete

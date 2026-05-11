@@ -3,7 +3,11 @@ title: "Hermes Agent vs OpenClaw Architecture Comparison"
 created: 2026-04-18
 updated: 2026-05-11
 type: comparison
-tags: [ai-agents, architecture, comparison, hermes-agent, openclaw]
+tags:
+  - ai-agents
+  - architecture
+  - comparison
+  - openclaw
 moved_from:
   - concepts/openclaw-vs-hermes-architecture-comparison.md
   - concepts/hermes-agent-vs-openclaw-architecture-comparison.md

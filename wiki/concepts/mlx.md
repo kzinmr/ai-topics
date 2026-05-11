@@ -2,7 +2,6 @@
 title: "MLX"
 type: concept
 tags:
-  - mlx
   - hardware
   - inference
   - model

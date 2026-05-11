@@ -7,7 +7,7 @@ tags:
   - concept
   - multi-agent
   - coding-agents
-  - cmu
+  - education
   - coordination
 related: [multi-agent-systems, coding-agents, parallelism]
 sources: []

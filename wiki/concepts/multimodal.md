@@ -1,7 +1,9 @@
 ---
 title: "Multimodal AI"
 type: concept
-tags: [multimodal, vision-language, ai-models]
+tags:
+  - multimodal
+  - ai-models
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

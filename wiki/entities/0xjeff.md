@@ -8,7 +8,7 @@ tags:
   - crypto
   - defi
   - company
-  - hermes-agent
+  - ai-agents
   - x-account
 aliases:
   - "@0xJeff"

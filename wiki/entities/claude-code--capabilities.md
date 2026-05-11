@@ -6,7 +6,7 @@ created: 2026-04-28
 updated: 2026-04-28
 tags:
   - product
-  - capabilities
+  - ai-agents
   - features
 sources:
   - https://code.claude.com/en/whats-new/2026-w15

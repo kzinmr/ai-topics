@@ -8,7 +8,6 @@ tags:
   - quantization
   - inference
   - optimization
-  - model-compression
   - llm-int8
   - bitnet
 status: L1

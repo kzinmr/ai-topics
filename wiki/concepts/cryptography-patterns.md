@@ -1,6 +1,8 @@
 ---
 type: concept
-tags: [concept, security, cryptography]
+tags:
+  - concept
+  - security
 source: "Miguel Grinberg, 'How Bitwarden Encrypts and Decrypts Secrets'"
 url: "https://blog.miguelgrinberg.com/post/how-bitwarden-encrypts-and-decrypts-secrets"
 related: ["concepts/self-hosting-ai-development"]

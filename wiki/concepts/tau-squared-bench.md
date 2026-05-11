@@ -12,7 +12,7 @@ tags:
   - evaluation
   - coordination
   - telecom
-  - sierra
+  - company
 related:
   - "[[concepts/tau-bench]]"
   - "[[concepts/tau-knowledge]]"

@@ -10,7 +10,7 @@ created: 2026-04-09
 updated: 2026-04-19
 tags:
   - concept
-  - index
+  - methodology
   - harness-engineering
   - ai-agents
   - orchestration

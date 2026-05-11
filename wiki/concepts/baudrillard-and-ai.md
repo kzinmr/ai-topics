@@ -6,7 +6,7 @@ updated: 2026-05-11
 tags:
   - concept
   - philosophy
-  - ai
+  - model
   - memetics
   - controversy
 aliases:

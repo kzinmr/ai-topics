@@ -3,7 +3,11 @@ title: "Skill Architecture Patterns: Self-Authored vs Governed"
 created: 2026-04-18
 updated: 2026-04-18
 type: concept
-tags: [ai-agents, skill-management, hermes-agent, openclaw, architecture]
+tags:
+  - ai-agents
+  - developer-tooling
+  - openclaw
+  - architecture
 sources:
   - "https://x.com/elvis_/status/..."
 ---

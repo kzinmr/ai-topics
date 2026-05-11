@@ -7,10 +7,11 @@ updated: 2026-04-27
 tags:
   - career
   - stitch-fix
-  - meta
-  - consulting
+  - methodology
+  - company
   - rag
   - maven
+
 ---
 
 # Jason Liu: Career & RAG Master Series

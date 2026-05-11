@@ -4,7 +4,12 @@ type: concept
 created: 2026-05-09
 updated: 2026-05-09
 status: L2
-tags: [coding-agents, autonomous-agents, sandbox, ai-infrastructure, developer-tooling]
+tags:
+  - coding-agents
+  - ai-agents
+  - sandbox
+  - infrastructure
+  - developer-tooling
 sources:
   - "[[raw/articles/2026-05-xx_ramp_background-agent-inspect]]"
 related:

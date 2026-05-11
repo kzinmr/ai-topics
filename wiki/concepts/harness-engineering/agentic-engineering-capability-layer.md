@@ -9,7 +9,7 @@ tags:
   - concept
   - harness-engineering
   - agentic-engineering
-  - MCP
+  - protocol
   - memory-systems
   - coding-agents
 aliases:

@@ -7,10 +7,9 @@ created: 2026-04-25
 updated: 2026-04-27
 tags:
   - concept
-  - self-hosting
+  - infrastructure
   - developer-tooling
   - vibe-coding
-  - infrastructure
 status: enriched
 sources:
   - raw/articles/timsh.org--why-you-should-self-host--bff25172.md

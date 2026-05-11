@@ -14,7 +14,6 @@ aliases:
 tags:
   - person
   - evaluation
-  - lm-eval
   - eleutherai
 sources:
   - https://haileyschoelkopf.github.io/

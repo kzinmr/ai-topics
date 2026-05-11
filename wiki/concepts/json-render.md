@@ -3,7 +3,16 @@ title: "json-render — Generative UI フレームワーク"
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [generative-ui, framework, ai-agents, vercel, react, vue, svelte, open-source, tool]
+tags:
+  - developer-tooling
+  - framework
+  - ai-agents
+  - vercel
+  - react
+  - vue
+  - svelte
+  - open-source
+  - tool
 aliases: [json-render, vercel-json-render]
 related:
   - concepts/ai-agent-engineering

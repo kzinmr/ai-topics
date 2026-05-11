@@ -7,7 +7,7 @@ tags:
   - person
   - ai-agents
   - agentic-engineering
-  - agent-architecture
+  - architecture
   - x-account
 aliases:
   - Graeme

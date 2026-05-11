@@ -5,7 +5,7 @@ tags:
   - ai-agents
   - production-engineering
   - sre
-  - context-graphs
+  - search
 created: 2026-04-20
 updated: 2026-05-02
 type: entity

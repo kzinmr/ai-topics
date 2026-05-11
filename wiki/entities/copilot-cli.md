@@ -8,9 +8,8 @@ status: L2
 tags:
   - entity
   - coding-agent
-  - github
-  - microsoft
   - developer-tooling
+  - microsoft
   - ai-agents
 sources:
   - https://github.com/github/copilot-cli

@@ -5,7 +5,7 @@ created: 2026-05-04
 updated: 2026-05-04
 tags:
   - entity
-  - ml-research
+  - lab
   - training
   - agent-safety
   - training-infrastructure

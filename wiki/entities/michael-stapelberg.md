@@ -9,7 +9,7 @@ tags:
   - hn-popular
   - debian
   - nixos
-  - linux
+  - developer-tooling
   - infrastructure
   - i3-wm
 sources: []

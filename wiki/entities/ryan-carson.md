@@ -9,7 +9,7 @@ tags:
   - x-account
   - education
   - tech-education
-  - ai
+  - model
   - company
 sources: []
 ---

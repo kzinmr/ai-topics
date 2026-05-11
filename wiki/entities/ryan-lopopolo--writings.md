@@ -8,8 +8,7 @@ tags:
   - person
   - writings
   - blog
-  - podcast
-  - speaking
+  - writing
 sources: []
 ---
 

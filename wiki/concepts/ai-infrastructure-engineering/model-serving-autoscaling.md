@@ -7,7 +7,7 @@ tags:
   - concept
   - inference
   - infrastructure
-  - deployment
+  - developer-tooling
 status: L1
 aliases:
   - model-serving

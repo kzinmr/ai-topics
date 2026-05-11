@@ -7,7 +7,7 @@ tags:
   - concept
   - security
   - llm-economics
-  - claude-mythos
+  - anthropic
   - aisafety
 related:
   - concepts/claude-mythos-preview

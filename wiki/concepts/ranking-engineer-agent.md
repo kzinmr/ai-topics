@@ -3,7 +3,12 @@ title: "Ranking Engineer Agent (REA): Meta's Autonomous AI for Ads Ranking"
 created: "2026-05-06"
 updated: "2026-05-06"
 type: concept
-tags: [ai-agents, meta, automation, fine-tuning, evaluation]
+tags:
+  - ai-agents
+  - methodology
+  - automation
+  - fine-tuning
+  - evaluation
 sources: [raw/articles/2026-05-06_meta-ranking-engineer-agent-rea.md]
 ---
 

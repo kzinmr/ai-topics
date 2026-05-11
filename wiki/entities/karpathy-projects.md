@@ -1,6 +1,8 @@
 ---
 title: "Karpathy Projects & Open Source"
-tags: [person, projects]
+tags:
+  - person
+  - methodology
 created: 2026-04-27
 updated: 2026-04-27
 type: entity

@@ -7,7 +7,7 @@ tags:
   - person
   - blogger
   - hn-popular
-  - ai
+  - model
   - product
   - developer-tooling
   - economics

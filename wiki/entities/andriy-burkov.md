@@ -7,11 +7,10 @@ updated: 2026-04-10
 related: [[concepts/hundred-page-ml-book]], [[concepts/hundred-page-nlp-book]], , ]
 tags:
   - person
-  - ai
   - model
   - nlp
   - education
-  - books
+  - writing
 sources: []
 ---
 

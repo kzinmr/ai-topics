@@ -6,7 +6,7 @@ updated: 2026-04-10
 source: blog
 tags:
   - person
-  - ai
+  - model
   - context-engineering
   - geospatial
   - quantified-self

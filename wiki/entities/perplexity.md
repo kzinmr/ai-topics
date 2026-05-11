@@ -9,7 +9,7 @@ tags:
   - search
   - ai-agents
   - product
-  - vertical-ai
+  - ai-adoption
 aliases:
   - "Perplexity AI"
   - "perplexity.ai"

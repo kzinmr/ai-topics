@@ -4,10 +4,9 @@ type: entity
 aliases: [jaya-gupta, foundation-capital-partner]
 tags:
   - entity
-  - vc
-  - partner
   - company
-  - context-graphs
+  - partner
+  - search
   - ai-agents
 status: complete
 description: "Partner at Foundation Capital, thought leader on context graphs and enterprise AI. Published influential thesis on Context Graphs as AI's trillion-dollar opportunity."

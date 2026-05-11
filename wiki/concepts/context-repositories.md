@@ -4,7 +4,13 @@ type: concept
 created: 2026-05-09
 updated: 2026-05-09
 status: L2
-tags: [context-management, context-engineering, memory-systems, coding-agents, git, filesystem, subagents]
+tags:
+  - context-management
+  - context-engineering
+  - memory-systems
+  - coding-agents
+  - developer-tooling
+  - ai-agents
 sources:
   - "[[raw/articles/2026-02-12_letta_context-repositories]]"
 related:

@@ -7,10 +7,10 @@ status: active
 tags:
   - benchmark
   - evaluation
-  - coding
+  - coding-agents
   - code-generation
   - contamination-free
-  - programming
+  - developer-tooling
 aliases:
   - livecodebench
   - lcb

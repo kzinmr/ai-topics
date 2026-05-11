@@ -10,7 +10,7 @@ tags:
   - technology-thinker
   - web-2.0
   - open-source
-  - programming
+  - developer-tooling
 sources:
   - "https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it/"
 ---

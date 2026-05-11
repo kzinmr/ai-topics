@@ -6,12 +6,12 @@ created: 2026-04-10
 updated: 2026-05-08
 tags:
   - person
-  - ai
+  - model
   - reinforcement-learning
   - training
   - open-source
   - evaluation
-  - prime-intellect
+  - company
   - interconnects
   - benchmark
 sources: []

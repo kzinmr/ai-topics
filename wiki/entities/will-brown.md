@@ -7,8 +7,8 @@ source: "x-account"
 tags:
   - person
   - x-account
-  - ai
-  - ml-research
+  - model
+  - lab
   - fine-tuning
   - reinforcement-learning
   - open-source

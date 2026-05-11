@@ -23,9 +23,8 @@ quote_count: 11
 status: complete
 tags:
   - person
-  - ai
-  - evaluation
   - model
+  - evaluation
   - huggingface
   - benchmark
   - lighteval

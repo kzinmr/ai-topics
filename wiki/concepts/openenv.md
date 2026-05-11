@@ -4,7 +4,13 @@ type: concept
 created: 2026-05-09
 updated: 2026-05-09
 status: L2
-tags: [ai-agents, reinforcement-learning, sandbox, open-source, huggingface, agent-evaluation]
+tags:
+  - ai-agents
+  - reinforcement-learning
+  - sandbox
+  - open-source
+  - huggingface
+  - evaluation
 sources:
   - "[[raw/articles/2025-10-23_huggingface_openenv]]"
 related:

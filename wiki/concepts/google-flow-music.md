@@ -3,7 +3,12 @@ title: "Google Flow Music"
 created: 2026-05-10
 updated: 2026-05-10
 type: concept
-tags: [google, product, ai-research, multimodal, voice-ai]
+tags:
+  - google
+  - product
+  - lab
+  - multimodal
+  - voice-ai
 sources:
   - raw/articles/2026-05-06_google-flow-music-believe.md
   - https://blog.google/innovation-and-ai/models-and-research/google-labs/believe-flow-music-partnership/

@@ -4,7 +4,7 @@ tags:
   - local-llm
   - inference
   - open-source
-  - performance
+  - optimization
 created: 2026-04-14
 updated: 2026-04-27
 type: concept

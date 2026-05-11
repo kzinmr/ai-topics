@@ -13,7 +13,7 @@ updated: 2026-04-16
 depth: L2
 tags:
   - person
-  - ai
+  - model
   - coding-agents
   - developer-tooling
   - company

@@ -5,7 +5,7 @@ updated: 2026-05-10
 type: entity
 tags:
   - person
-  - ai-research
+  - lab
   - multi-agent
   - open-source
   - orchestration

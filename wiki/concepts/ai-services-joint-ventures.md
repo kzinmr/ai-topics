@@ -8,7 +8,7 @@ tags:
   - ai-business-model
   - company
   - service-as-software
-  - ai-economics
+  - economics
 aliases:
   - "AI Services JVs"
   - "AI Deployment Companies"

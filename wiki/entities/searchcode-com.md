@@ -6,7 +6,7 @@ tags:
   - code-search
   - mcp-server
   - code-intelligence
-  - llm-tools
+  - tool
   - open-source
   - ben-boyter
 status: complete

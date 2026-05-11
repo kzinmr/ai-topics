@@ -9,7 +9,7 @@ created: 2026-04-18
 updated: 2026-04-19
 tags:
   - concept
-  - index
+  - methodology
   - openclaw
   - ai-agents
   - personal-agents

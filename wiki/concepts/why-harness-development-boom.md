@@ -7,7 +7,7 @@ tags:
   - harness-engineering
   - ai-agents
   - coding-agents
-  - agent-architecture
+  - architecture
 aliases:
   - "why harness boom"
   - "harness development acceleration"

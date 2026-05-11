@@ -11,8 +11,7 @@ tags:
   - entity
   - developer-tooling
   - browser-agent
-  - standard
-  - w3c
+  - methodology
   - protocol
 - entity
 - technology

@@ -3,7 +3,12 @@ title: Agentic Identity — Modeling AI Agents as Financial Actors
 created: 2026-05-09
 updated: 2026-05-09
 type: concept
-tags: [agents, security, ai-agents, governance, company, safety]
+tags:
+  - ai-agents
+  - security
+  - governance
+  - company
+  - safety
 sources: []
 ---
 

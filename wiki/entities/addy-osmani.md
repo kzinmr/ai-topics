@@ -8,7 +8,7 @@ tags:
   - google
   - web-development
   - coding-agents
-  - agent-harness
+  - harness-engineering
 aliases:
   - Addy Osmani
   - addyosmani

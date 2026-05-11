@@ -6,8 +6,8 @@ updated: 2026-05-09
 tags:
   - concept
   - coding-agents
-  - agent-harness
-  - agent-architecture
+  - harness-engineering
+  - architecture
   - emerging
 aliases:
   - coding-agent-is-dead-thesis

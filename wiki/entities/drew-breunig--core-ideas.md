@@ -8,7 +8,7 @@ tags:
   - person
   - context-engineering
   - spec-driven-development
-  - ai
+  - model
   - philosophy
 sources: []
 ---

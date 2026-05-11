@@ -8,13 +8,13 @@ updated: 2026-04-14
 depth_tracking: {'current': 'L3', 'target': 'L3', 'last_reviewed': datetime.date(2026, 4, 14), 'notes': "Core philosophy documented with >30% quote rate from O'Reilly articles and Vanishing Gradients podcast"}
 tags:
   - person
-  - ai
+  - model
   - data-science
   - mlops
   - evaluation
   - workflow
   - human-centered-ai
-  - ai-education
+  - education
 sources: []
 ---
 

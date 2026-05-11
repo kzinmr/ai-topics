@@ -4,11 +4,11 @@ type: concept
 created: 2026-05-08
 tags:
   - benchmark
-  - knowledge
+  - methodology
   - reasoning
   - academic
   - multimodal
-  - frontier-models
+  - model
   - evaluation
 aliases:
   - hle

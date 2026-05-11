@@ -10,8 +10,7 @@ tags:
   - person
   - company
   - a16z
-  - vc
-  - local-ai
+  - local-llm
   - growth
 sources:
   - "https://andrewchen.com/about/"

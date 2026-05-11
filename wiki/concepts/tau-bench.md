@@ -13,7 +13,7 @@ tags:
   - tool
   - policy-following
   - infrastructure
-  - sierra
+  - company
 related:
   - "[[entities/shunyu-yao]]"
   - "[[concepts/tau-squared-bench]]"

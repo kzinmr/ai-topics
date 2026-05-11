@@ -6,7 +6,7 @@ type: concept
 tags:
   - ai-agents
   - automation
-  - grok
+  - model
   - desktop-agent
   - inference
 sources:

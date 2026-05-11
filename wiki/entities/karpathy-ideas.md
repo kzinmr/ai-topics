@@ -1,6 +1,8 @@
 ---
 title: "Karpathy Ideas & Social Influence"
-tags: [person, ideas]
+tags:
+  - person
+  - methodology
 created: 2026-04-27
 updated: 2026-05-03
 type: entity

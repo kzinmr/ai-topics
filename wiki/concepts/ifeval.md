@@ -3,11 +3,11 @@ title: "IFEval (Instruction-Following Evaluation)"
 type: concept
 created: 2026-05-08
 tags:
-  - ai-benchmarks
+  - benchmark
   - instruction-following
   - verifiable-instructions
   - deterministic-evaluation
-  - llm-evaluation
+  - evaluation
 related_concepts:
   - concepts/ai-benchmarks-evals-overview
   - concepts/codeif-bench

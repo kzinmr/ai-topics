@@ -4,7 +4,12 @@ type: entity
 created: 2026-05-08
 updated: 2026-05-08
 status: L2
-tags: [company, coding-agents, agent-observability, search, MCP]
+tags:
+  - company
+  - coding-agents
+  - infrastructure
+  - search
+  - protocol
 website: https://entire.io
 github: https://github.com/entireio
 sources:

@@ -3,7 +3,12 @@ title: "Testing AI Agents"
 created: 2026-05-10
 updated: 2026-05-10
 type: concept
-tags: [testing, ai-agents, mcp, tool-use, evaluation]
+tags:
+  - testing
+  - ai-agents
+  - mcp
+  - tool
+  - evaluation
 sources:
   - raw/articles/merge.dev--blog-testing-ai-agents--8daf268c.md
 ---

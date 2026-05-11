@@ -7,7 +7,7 @@ updated: 2026-04-30
 aliases: [gpjt, Giles Thomas]
 tags:
   - person
-  - python-developer
+  - developer-tooling
   - smolagents
   - huggingface
   - model

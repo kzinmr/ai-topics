@@ -3,7 +3,11 @@ title: "Multi-Agent Autonomy Scale"
 type: concept
 created: 2026-04-09
 updated: 2026-04-09
-tags: [concept, multi-agent, autonomy, coordination]
+tags:
+  - concept
+  - multi-agent
+  - ai-agents
+  - coordination
 related: [multi-agent-systems, emergent-behavior, agent-coordination]
 sources: []
 ---

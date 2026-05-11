@@ -11,7 +11,6 @@ tags:
   - developer-tooling
   - browser-agent
   - open-source
-  - dom-based
 - entity
 - technology
 - browser-agent

@@ -4,9 +4,8 @@ type: concept
 created: 2026-04-10
 updated: 2026-04-24
 tags:
-  - claude-mythos
-  - project-glasswing
   - anthropic
+  - project-glasswing
   - security
   - frontier-ai
   - agent-safety

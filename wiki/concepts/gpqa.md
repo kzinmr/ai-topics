@@ -7,7 +7,7 @@ status: active
 tags:
   - benchmark
   - evaluation
-  - knowledge
+  - methodology
   - science
   - reasoning
   - scalable-oversight

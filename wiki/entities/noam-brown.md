@@ -8,7 +8,7 @@ tags:
   - person
   - openai
   - meta-fair
-  - cmu
+  - education
   - poker-ai
   - reasoning
   - multi-agent

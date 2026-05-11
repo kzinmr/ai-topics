@@ -7,7 +7,7 @@ tags:
   - security
   - company
   - sandbox
-  - observability
+  - infrastructure
   - governance
   - openai
 sources:

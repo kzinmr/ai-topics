@@ -3,7 +3,14 @@ title: "OpenAI Agents SDK"
 type: concept
 created: 2026-04-16
 updated: 2026-04-16
-tags: [framework, ai-agents, openai, sandbox, harness, compute, tooling]
+tags:
+  - framework
+  - ai-agents
+  - openai
+  - sandbox
+  - harness-engineering
+  - compute
+  - tooling
 aliases: ["OpenAI Agent SDK", "openai-agents"]
 sources: []
 ---

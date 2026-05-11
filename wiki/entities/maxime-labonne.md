@@ -4,7 +4,10 @@ type: entity
 aliases: [mlabonne, maximelabonne]
 created: 2026-05-04
 updated: 2026-05-04
-tags: [person, opinion-leader, open-source, llm-post-training]
+tags:
+  - person
+  - open-source
+  - llm-post-training
 sources:
   - https://mlabonne.github.io/blog/
   - https://github.com/mlabonne

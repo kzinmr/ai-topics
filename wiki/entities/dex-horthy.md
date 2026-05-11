@@ -6,7 +6,7 @@ created: 2026-05-10
 updated: 2026-05-10
 tags:
   - person
-  - agent-harness
+  - harness-engineering
   - ai-agents
 aliases:
   - "dex-horthy"

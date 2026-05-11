@@ -8,7 +8,7 @@ tags:
   - agentic-engineering
   - harness-engineering
   - product-management
-  - every-inc
+  - company
 aliases:
   - compound-engineering-every
   - every-compound-engineering

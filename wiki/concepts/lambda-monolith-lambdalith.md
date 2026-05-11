@@ -7,9 +7,7 @@ tags:
   - architecture
   - developer-tooling
   - aws
-  - lambda
   - infrastructure
-  - microservices
   - ai-agents
 aliases: ["lambdalith", "lambda-monolith"]
 sources:

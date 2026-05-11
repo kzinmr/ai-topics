@@ -6,9 +6,8 @@ updated: 2026-05-04
 status: Level2
 tags:
   - curriculum
-  - meta-knowledge
-  - roadmap
-  - llm-education
+  - methodology
+  - education
   - model
 aliases: [willccbb-handbook, genai-roadmap]
 sources:

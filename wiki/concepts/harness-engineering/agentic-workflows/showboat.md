@@ -9,7 +9,7 @@ updated: 2026-04-12
 tags:
   - tool
   - agentic-engineering
-  - documentation
+  - developer-tooling
 status: draft
 sources:
   - "https://simonwillison.net/guides/agentic-engineering-patterns/agentic-manual-testing/"

@@ -6,12 +6,11 @@ created: 2026-04-10
 updated: 2026-04-10
 tags:
   - person
-  - ai
+  - model
   - sentence-transformers
   - nlp
   - huggingface
   - search
-  - model
   - open-source
 sources: []
 ---

@@ -11,7 +11,7 @@ tags:
   - concept
   - training
   - inference
-  - parallelism
+  - optimization
   - context-management
   - gpu-memory
 sources:

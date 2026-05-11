@@ -5,7 +5,13 @@ aliases: ["Recursive Agent Optimization", "RAO"]
 created: 2026-05-11
 updated: 2026-05-11
 status: L2
-tags: [ai-agents, reinforcement-learning, inference, scaling, multi-agent, grpo]
+tags:
+  - ai-agents
+  - reinforcement-learning
+  - inference
+  - optimization
+  - multi-agent
+  - training
 sources:
   - "[[papers/2026-05-07_2605.06639_recursive-agent-optimization]]"
   - "[[articles/2026-05-08_x-thread_apurva-gandhi-rao-recursive-agent-optimization]]"

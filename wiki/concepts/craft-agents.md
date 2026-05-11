@@ -4,7 +4,13 @@ type: concept
 created: 2026-05-09
 updated: 2026-05-09
 status: L2
-tags: [agent-harness, ai-agents, mcp, open-source, claude-code, browser-automation]
+tags:
+  - harness-engineering
+  - ai-agents
+  - mcp
+  - open-source
+  - claude-code
+  - browser-agent
 sources:
   - "[[raw/articles/2026-05-xx_craft_agents-interface]]"
 related:

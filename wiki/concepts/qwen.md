@@ -3,7 +3,13 @@ title: Qwen Model Family
 created: 2026-04-25
 updated: 2026-05-09
 type: concept
-tags: [model, open-source, alibaba, coding-agents, multimodal, mixture-of-experts, local-llm]
+tags:
+  - model
+  - open-source
+  - alibaba
+  - coding-agents
+  - multimodal
+  - local-llm
 sources: [raw/articles/2026-04-15_qwen-3.6-35b-a3b.md]
 ---
 
