@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-11 | Total pages: 1753 | Indexed entries: 806 | Not in index: 944 |
+> Last updated: 2026-05-11 | Total pages: 1755 | Indexed entries: 808 | Not in index: 944 |
 
 ## Entities (553 pages)
 
@@ -266,6 +266,7 @@
 - [[entities/larsen-cundric]] — **X** | @larsencc | **Company** | Browser Use Founding Engineer | Agent sandboxing architecture (Pattern 2: isolate the agent with control plane)
 - [[entities/lester-solbakken]] — **X/Twitter** | @lestersolbakken |
 - [[entities/letta]] — > **Core Thesis:** Memory is the key to self-improving AI. Letta builds open, model-agnostic agent harnesses with persistent memory systems.
+- [[entities/levelsio]] — Pieter Levels (@levelsio) — indie maker, 12 Startups in 12 Months, $250K+/mo portfolio (PhotoAI, InteriorAI, RemoteOK, Nomads). Cloudflare Email Sending price comparison. Build-in-public pioneer.
 - [[entities/lilian-weng]] — **URL:** https://lilianweng.github.io
 - [[entities/lilianweng]] — **X** | @lilianweng |
 - [[entities/lmsys-org]] — **URL** | https://lmsys.org |
@@ -658,6 +659,7 @@
 - [[concepts/carlini-c-compiler-agents]] — Nicholas Carliniの実験: 16体のClaudeエージェントを2,000セッション並列稼働、$20Kで100K行のRust Cコンパイラを構築しLinux 6.9カーネルをコンパイル成功。Infinite Agent Loop、Gitベースタスクロック、並列エージェント設計の実践的教訓。
 - [[concepts/caisi-federal-ai-review]] — CAISI連邦AI事前審査: NIST商務省傘下のCenter for AI Standards and Innovation。2026年5月、Google DeepMind/Microsoft/xAIがOpenAI/Anthropicに続きモデル事前公開前評価契約に参加。40件以上の評価完了、TRAINS Taskforce、国家安全保障（サイバー・バイオ・化学）評価。Mythosを契機に制度化。
 - [[concepts/cloudflare-agents]] — Cloudflare's iMARS (Internal MCP Agent/Server Rollout Squad) AI engineering stack. 3,683 internal users, 93% R&D coverage, 2x MR velocity increase. AI Code Reviewer multi-agent review, Engineering Codex.
+- [[concepts/cloudflare-email-sending]] — Cloudflare Email Service (beta, April 2026) — transactional email API via REST or Workers bindings. $354/mo at 1M emails, 3.4× cheaper than Postmark. Auto-managed SPF/DKIM/DMARC, suppression lists.
 - [[concepts/cloudflare-llm-infrastructure]] — Cloudflare's custom LLM inference stack — PD disaggregation, Infire Rust engine, Mooncake KV-cache, speculative decoding. 3x latency improvement, 80% cache hit ratio.
 - [[concepts/claude-code-auto-mode]] — Claude Codeのauto mode。Sonnet 4.6ベースの2段階transcript分類器（Stage 1: 高速シングルトークンフィルタ → Stage 2: CoT推論）が人間承認者を代替。prompt injection probeとの2層防御で、危険行動をブロックしつつ許可プロンプトを最小化。FPR 0.4%、実overeager行動の83%捕捉。Deny-and-continue設計。
 - [[concepts/claude-certified-architect-domains]] — Claude認定アーキテクト全5ドメイン包括知識（@hooeem記事に基づく）。Domain 1: Agentic Architecture & Orchestration (27%) — stop_reason、hub-and-spoke、hooks、タスク分解。Domain 2: Tool Design & MCP (18%) — ツール説明設計、tool_choice。Domain 3: Claude Code Configuration (20%) — CLAUDE.md階層、パス固有ルール、plan mode。Domain 4: Prompt Engineering (20%) — 明示性、few-shot、JSON schemas、Batches API。Domain 5: Context Management (15%) — プログレッシブサマライゼーション罠、lost in middle、エスカレーショントリガー、エラー伝播、情報来歴。

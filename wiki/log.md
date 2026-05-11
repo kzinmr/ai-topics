@@ -1,3 +1,16 @@
+## 2026-05-11 17:51 UTC — Cloudflare Email Sending wiki ingestion (levelsio posts)
+
+**Pages created**:
+- `entities/levelsio.md` — Pieter Levels (@levelsio), indie maker ($250K+/mo portfolio), build-in-public pioneer. Cloudflare Email Sending price comparison, migration prompt.
+- `concepts/cloudflare-email-sending.md` — Cloudflare Email Service (beta, April 2026). REST API + Workers bindings. Pricing comparison (Postmark $1,206 → Cloudflare $354/mo at 1M emails). Domain setup, limitations, AI agent relevance.
+
+**Raw articles saved**:
+- `wiki/raw/articles/2026-05-10_levelsio_cloudflare-email-sending-feature.md`
+- `wiki/raw/articles/2026-05-10_levelsio_cloudflare-email-migration-prompt.md`
+
+**SCHEMA.md**: Added `cloudflare`, `indie-maker`, `email` tags to canonical taxonomy.
+
+**Source**: User request via Discord to ingest Cloudflare Email Sending knowledge + assess Hermes email integration feasibility.
 ## 2026-05-11 17:35 — Wiki watchdog auto-fix (index header correction)
 - 📝 `index.md`: Concepts header count corrected (1306→1238) to match actual filesystem count
 - 📊 Verifications: pipe corruption (0), triple bracket (0), line-number corruption (0) — all clean
