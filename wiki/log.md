@@ -1,3 +1,9 @@
+## [2026-05-11] blog-wiki-ingest | Meta employee keystroke data collection (ATA/MCI)
+
+- **更新:** `wiki/entities/meta.md` — Agent Transformation Accelerator (ATA) / Model Capability Initiative (MCI) セクション追加。2026年4月より米国従業員のマウス操作・キーストローク・スクリーンショットをAIエージェント訓練用に収集。Andrew Bosworth CTO のビジョン、プライバシー懸念、組織的文脈（10%レイオフ）を含む。
+- **ソース:** Reuters (Katie Paul, Jeff Horwitz), 2026-04-21
+- **全14件中:** take=0, skip=13（同日早朝blog-ingestで既処理5件、AI非関連8件）, reference=1（Meta記事→entities/meta.md更新）
+
 ## [2026-05-11] newsletter-wiki-ingest | The Signal + Superintel — Colossus deal, Anthropic/OpenAI updates, Jim Fan + AI governance
 
 - **更新:** `concepts/xai-anthropic-colossus-deal.md` — Colossus 2 詳細（1.5GW/550K GPUs）、経済分析（$5B→$15B）、Anthropic 利用者への直接恩恵（レート制限2倍/ピーク時制限撤廃）、軌道コンピュート計画 の4セクション追加

@@ -2,7 +2,7 @@
 title: Meta
 type: entity
 created: 2026-04-09
-updated: 2026-05-06
+updated: 2026-05-11
 tags:
   - company
   - model
@@ -100,6 +100,17 @@ See: [[concepts/kernel-evolve]]
 
 See: [[concepts/ranking-engineer-agent]]
 
+### Agent Transformation Accelerator (ATA) / Model Capability Initiative (MCI)
+- **April 2026**: Meta began installing tracking software on U.S. employee computers to capture **mouse movements, clicks, and keystrokes** for AI agent training
+- **Model Capability Initiative (MCI)**: Runs on work-related apps/websites; takes occasional screenshots to improve AI models in areas they struggle with — dropdown menus, keyboard shortcuts, human-computer interaction patterns
+- **Agent Transformation Accelerator (ATA)**: Broader initiative (rebranded from "AI for Work") to build AI agents that can perform work tasks autonomously
+- **CTO Andrew Bosworth's vision**: *"The vision we are building towards is one where our agents primarily do the work and our role is to direct, review and help them improve."*
+- **Organizational context**: Employees urged to use AI agents for daily tasks; 10% global layoffs announced; MCI memo posted by Meta SuperIntelligence Labs staff
+- **Privacy concerns**: Experts warn employee surveillance raises privacy concerns; Meta says safeguards in place and data will not be used for performance reviews
+- Part of broader industry trend: companies using employee data as training material for autonomous AI agents
+
+See: [[concepts/agent-transformation-accelerator]]
+
 ## Open Source History
 
 Meta pioneered open-source frontier models with the LLaMA series, creating the entire ecosystem of fine-tuned open models (Llama 2, Llama 3, Llama 4). However, **Muse Spark (April 2026)** is closed-source, suggesting a strategic shift. Community concerns:
@@ -143,3 +154,4 @@ See also: [[concepts/open-source-vs-closed]]
 ## References
 
 - 2025-07-30-meta-personal-superintelligence
+- [Meta to start capturing employee mouse movements, keystrokes for AI training data (Reuters, 2026-04-21)](https://www.reuters.com/sustainability/boards-policy-regulation/meta-start-capturing-employee-mouse-movements-keystrokes-ai-training-data-2026-04-21/)
