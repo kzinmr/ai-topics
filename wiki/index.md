@@ -213,6 +213,7 @@
 - [[entities/hamel-husain]] — **Role** | Independent Consultant (Parlance Labs), R&D at AnswerAI, Scout at Bain Capital |
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
 - [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawから移行中のユーザーが増加。
+- [[entities/hoeem]] — X/Twitter クリエイター（@hooeem, 169K+ フォロワー）。Claude Certified Architect 試験の全5ドメインを解説したX Articleが60Kブックマーク。Claude Code・Agent SDK・MCPの実践的教育コンテンツを発信。
 - [[entities/hillel-wayne]] — **Blog** | hillelwayne.com |
 - [[entities/hugging-face]] — **The GitHub of AI** — the central open-source infrastructure layer for machine learning. Platform for sharing, discovering, and deploying ML models, datasets, and demos.
 - [[entities/hugo-bowne-anderson]] — **Data scientist, educator, podcaster, consultant.** Independent AI & data science educator based in Sydney, Australia. Host of the **Vanishing Gradients** podcast. Former Head of Developer Relatio...
@@ -654,6 +655,7 @@
 - [[concepts/cloudflare-agents]] — Cloudflare's iMARS (Internal MCP Agent/Server Rollout Squad) AI engineering stack. 3,683 internal users, 93% R&D coverage, 2x MR velocity increase. AI Code Reviewer multi-agent review, Engineering Codex.
 - [[concepts/cloudflare-llm-infrastructure]] — Cloudflare's custom LLM inference stack — PD disaggregation, Infire Rust engine, Mooncake KV-cache, speculative decoding. 3x latency improvement, 80% cache hit ratio.
 - [[concepts/claude-code-auto-mode]] — Claude Codeのauto mode。Sonnet 4.6ベースの2段階transcript分類器（Stage 1: 高速シングルトークンフィルタ → Stage 2: CoT推論）が人間承認者を代替。prompt injection probeとの2層防御で、危険行動をブロックしつつ許可プロンプトを最小化。FPR 0.4%、実overeager行動の83%捕捉。Deny-and-continue設計。
+- [[concepts/claude-certified-architect-domains]] — Claude認定アーキテクト全5ドメイン包括知識（@hooeem記事に基づく）。Domain 1: Agentic Architecture & Orchestration (27%) — stop_reason、hub-and-spoke、hooks、タスク分解。Domain 2: Tool Design & MCP (18%) — ツール説明設計、tool_choice。Domain 3: Claude Code Configuration (20%) — CLAUDE.md階層、パス固有ルール、plan mode。Domain 4: Prompt Engineering (20%) — 明示性、few-shot、JSON schemas、Batches API。Domain 5: Context Management (15%) — プログレッシブサマライゼーション罠、lost in middle、エスカレーショントリガー、エラー伝播、情報来歴。
 - [[concepts/claude-code-sandboxing]] — Claude CodeのOSレベルサンドボックス。Linux bubblewrap/macOS seatbeltでファイルシステム+ネットワーク隔離。許可プロンプト84%削減。Claude Code on the Web（クラウド隔離実行）を含む。オープンソース化。
 - [[concepts/claude-diary]] — Lance Martin's Claude Code plugin for agent continual learning. Diary entries → reflection → CLAUDE.md updates. Implements CoALA/Generative Agents memory patterns.
 - [[concepts/claude-managed-agents]] — Anthropic's Managed Agents platform: memory stores (file-as-memory), multi-agent orchestration (coordinator + 20 sub-agents), outcomes loop (rubric-driven grader), Dreams (memory curation), webhooks (push notifications). GA with Dreams in Research Preview.

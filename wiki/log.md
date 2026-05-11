@@ -1,3 +1,28 @@
+## 2026-05-11 14:53 UTC — Claude Certified Architect 5-Domain Knowledge ingested from @hooeem X Article
+
+**Source**: X Article by @hooeem — "I want to become a Claude architect (full course)" (60K bookmarks, 16.7K likes)
+
+### Created
+- [[concepts/claude-certified-architect-domains]] — Comprehensive exam knowledge for all 5 domains
+- [[entities/hoeem]] — Author entity (stub, 169K+ followers)
+- `raw/articles/2026-03-15_hooeem_claude-certified-architect-full-course.md` — Raw article saved
+
+### Updated
+- [[concepts/subagents]] — Added Claude Agent SDK hub-and-spoke orchestration, isolation principle, Task tool, fork_session, narrow decomposition failure
+- [[concepts/claude-code-best-practices]] — Added CLAUDE.md 3-level hierarchy, path-specific rules (.claude/rules/), cross-reference to exam domains
+
+### Key Knowledge Diffs from Existing Wiki
+- **Agentic loop stop_reason mechanics** & 3 exam anti-patterns — not previously covered at API level
+- **Hub-and-spoke isolation principle** — subagents don't inherit coordinator context
+- **PostToolUse hooks vs tool call interception hooks** — distinct SDK mechanisms
+- **Programmatic enforcement decision rule**: financial/security/compliance → hooks (not prompts)
+- **Task decomposition**: sequential vs adaptive, attention dilution problem
+- **Session management**: --resume, fork_session, fresh start with stale context problem
+- **Tool descriptions** as primary selection mechanism, tool_choice options (auto/any/forced)
+- **CLAUDE.md 3-level hierarchy**: user/project/directory, path-specific rules with glob patterns
+- **Prompt engineering**: "be explicit" principle, few-shot with reasoning, nullable schemas, Batches API
+- **Context management**: progressive summarisation trap, lost in middle, escalation triggers (valid vs unreliable), structured error propagation, information provenance
+---
 ## 2026-05-11 14:45 UTC — Agent Ergonomics (Wes McKinney) ingested
 
 **Source**: Wes McKinney blog (wesmckinney.com, Jan 2026)

@@ -41,6 +41,20 @@ sources:
 ```
 **重要**: 200行以内に抑える。肥大化は逆効果。
 
+#### CLAUDE.md 階層（3レベル）
+Claude Certified Architect 試験では CLAUDE.md の3レベル階層が頻出（Domain 3, 20%）:
+
+| レベル | 場所 | 特性 |
+|--------|------|------|
+| ユーザーレベル | `~/.claude/CLAUDE.md` | バージョン管理されない、共有されない |
+| プロジェクトレベル | `.claude/CLAUDE.md` | バージョン管理、チーム共有 |
+| ディレクトリレベル | サブディレクトリ内のファイル | ディレクトリバインド |
+
+**試験の罠**: チームメンバーが指示を見逃す → ユーザーレベル設定に含まれているため（バージョン管理されず、共有されない）。
+
+#### パス固有ルール（`.claude/rules/`）
+YAML frontmatter の glob パターン（例: `**/*.test.tsx`）で**コードベース全体**に規約を適用。ディレクトリレベルの CLAUDE.md ではこれができない（ディレクトリバインド）。試験で問われる重要概念。
+
 #### .claudeignore
 `.gitignore` と同様に、Claude Code がスキップするファイルを指定：
 ```
@@ -103,6 +117,7 @@ coverage/
 - [[concepts/claude-perfect-memory]] — Claude Code の永続メモリ設計
 - [[concepts/agent-loop-orchestration]] — エージェントループパターン
 - [[concepts/monty-sandbox]] — コード実行サンドボックス
+- [[concepts/claude-certified-architect-domains]] — Claude認定アーキテクト5ドメイン知識（agentic loop, hooks, hub-and-spoke, コンテキスト管理）
 
 ## ソース
 
