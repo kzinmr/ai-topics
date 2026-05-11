@@ -79,6 +79,7 @@ See [[karpathy-ideas]] for full details on Karpathy's influential posts, coined 
 - **AGI Timeline** — steady incremental diffusion, ~10 years
 - **The "Slopacolypse"** — flood of low-quality AI-generated content
 - **Verifiability Over Raw Capability** — verification > capability
+- **Human-AI I/O Progression** — raw text → markdown → HTML → interactive neural videos; audio in, vision out; the "10-lane superhighway" framing (May 2026, in response to @trq212)
 - **Minimalism in Education** — micrograd → makemore → nanoGPT → microgpt
 
 ## Key Links
@@ -108,3 +109,5 @@ See [[karpathy-ideas]] for full details on Karpathy's influential posts, coined 
 - [[concepts/deep-learning]] — Core research area
 - [[entities/simon-willison]] — Fellow AI educator and blogger
 - [[concepts/decoder-only-gpt]] — Complete GPT architecture explanation from microgpt
+- [[raw/articles/2026-05-11_karpathy_html-and-vision-progression]] — Karpathy's commentary on AI output format progression (May 2026)
+- [[concepts/ai-output-format-progression]] — Raw text → Markdown → HTML → Neural video progression framework

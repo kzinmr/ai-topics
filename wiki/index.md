@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-11 | Total pages: 1751 | Indexed entries: 806 | Not in index: 944 |
+> Last updated: 2026-05-11 | Total pages: 1753 | Indexed entries: 806 | Not in index: 944 |
 
 ## Entities (553 pages)
 
@@ -589,6 +589,7 @@
 - [[concepts/ai-index-report-2026]] — 2026 AI Index Report
 - [[concepts/ai-ready-apis]] — AI-Ready APIs（AIエージェント向けAPI設計）。AIエージェントをAPI消費者として想定したAPI設計の概念。機械可読スキーマ、エージェント認識セキュリティ、コントラクトテストの重要性。Postman 2025調査（5,700人対象）のAI-APIギャップ分析を含む。
 - [[concepts/ai-memory-systems]] — AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較
+- [[concepts/ai-output-format-progression]] — AI出力フォーマット進化（Karpathy）: raw text → markdown → HTML → interactive neural videos/simulations。Audio in, Vision out。HTMLが次期デフォルト出力形式に。Thariq Shihiparの8カテゴリのHTMLアーティファクトユースケースを含む。
 - [[concepts/ai-privacy-tools]] — AI Privacy Tools
 - [[concepts/ai-subprime]] — AI Subprime Crisis
 - [[concepts/aider-polyglot]] — Aider Polyglot — 6言語対応コーディングベンチマーク。Exercismの225問をC++/Go/Java/JS/Python/Rustでテスト。GPT-5が88%でリード。

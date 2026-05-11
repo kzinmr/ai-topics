@@ -195,7 +195,9 @@ His key arguments:
 
 Simon Willison noted this caused him to reconsider his default Markdown preference (from the GPT-4/8K context era), and demonstrated the approach with a `curl https://copy.fail/exp | llm -m gpt-5.5 -s 'Explain this code... Output HTML...'` experiment on a Linux security exploit, producing an [interactive HTML explanation](https://gisthost.github.io/?ae53e3461ffdbfd0826156aacf025c7e).
 
-This represents a broader shift in AI engineering toward richer output formats, challenging the default assumption that Markdown is always optimal for LLM responses. The approach complements his earlier work on **Skills** and **Context Engineering** by providing a more expressive medium for agent outputs.
+**Andrej Karpathy** endorsed the article (May 11, 2026) with a broader framework: he positioned HTML as step 3 in a progression from raw text → markdown → HTML → interactive neural videos/simulations. Karpathy argues vision is the "10-lane superhighway" of information into the brain, and that the "input/output mind meld" between humans and AIs is still in early stages — with significant progress possible well before neuralink-style BCIs. His simple advice: "hot tip try ask for HTML." (3,350 likes, 3,339 bookmarks). [[raw/articles/2026-05-11_karpathy_html-and-vision-progression]]
+
+This represents a broader shift in AI engineering toward richer output formats, challenging the default assumption that Markdown is always optimal for LLM responses. The approach complements his earlier work on **Skills** and **Context Engineering** by providing a more expressive medium for agent outputs. The progression framework (Karpathy) and practical use cases (Shihipar's 8 categories) together form a comprehensive case for [[concepts/ai-output-format-progression|HTML as the next default output modality for AI agents]].
 
 ## Blog / Recent Posts
 
