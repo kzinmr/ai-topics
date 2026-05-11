@@ -2,7 +2,7 @@
 title: Mistral AI
 type: entity
 created: 2026-05-04
-updated: 2026-05-08
+updated: 2026-05-11
 tags:
   - company
   - model
@@ -55,6 +55,8 @@ Mistral differentiates through three pillars:
 | **Mistral Small/Medium** | Tiered model sizes for cost-efficiency |
 | **Pixtral Large** | Multimodal model (November 2024) |
 | **Mistral API** | Cloud and on-premise deployment platform |
+| **Mistral Workflows** | Enterprise AI orchestration layer (public preview, April 2026). Temporal-based durable execution, human-in-the-loop, multi-surface triggers (API/Studio/Le Chat). See [[concepts/mistral-workflows]] |
+| **Voxtral TTS** | Text-to-speech model (April 2026). See [[entities/mistral-voxtral-tts]] |
 
 ## Infrastructure
 
@@ -84,3 +86,4 @@ Mistral AI ranks **#27** on Paraform's Talent Density Index (score: 0.700), refl
 - [[entities/thinking-machines-lab]] — Recruited 30+ senior staff from OpenAI, Meta, and Mistral (per Paraform data)
 - [[entities/paraform]] — Ranked #27 on Paraform Talent Density Index; recruiting context
 - [[entities/cohere]] — Peer as enterprise-focused model provider outside US hyperscalers
+- [[concepts/mistral-workflows]] — Enterprise AI orchestration layer (public preview, April 2026)

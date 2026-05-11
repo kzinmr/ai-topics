@@ -630,6 +630,7 @@
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
 - [[concepts/local-first-software]] — Local-First Software
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
+- [[concepts/mistral-workflows]] — Mistral Workflows: enterprise AI orchestration layer. Temporal-based durable execution, human-in-the-loop (wait_for_input), multi-surface triggers (API/Studio/Le Chat). Public preview April 2026.
 - [[concepts/mmmu]] — MMMU — 11.5Kのマルチモーダル質問。大学試験・教科書から収集。6分野30科目183サブフィールド。30種類以上の画像タイプ。GPT-4V 56%、Gemini Ultra 59%。CVPR 2024 Oral。
 - [[concepts/mmlu-pro]] — MMLU Pro — MMLUの改良版。10択MC、12K+問、14ドメイン。43%がオリジナルMMLUにない新規問題。LLM支援フィルタリング。16-33%の精度低下。NeurIPS Spotlight。
 - [[concepts/ml-intern]] — HuggingFace's open-source autonomous ML engineer. Reads papers, trains models, ships code. Qwen3-1.7B 10%→32% GPQA in 10h (beats Claude Code).
