@@ -1,3 +1,19 @@
+## 2026-05-12 01:00 UTC — Manual ingest: contextmaxxing concept + Ashwin Gopinath + Sentra.app entity pages
+
+**From**: X bookmark ingest pipeline (missed article). Original article ID: 2053533334949728256
+**Source**: Ashwin Gopinath's Nanothoughts post "Memory Is State, Not a Service" (May 8, 2026)
+
+**New pages created**:
+- `concepts/contextmaxxing.md` — Better memory over burning more tokens. Counterpart to tokenmaxxing.
+- `entities/ashwingop.md` — Ashwin Gopinath: CEO/Co-founder Sentra.app, former MIT prof, Reflexion co-author
+- `entities/sentra-app.md` — $5M seed EGI platform (a16z Speedrun, Together Fund)
+
+**Pages updated**:
+- `concepts/tokenmaxxing.md` — Added cross-reference to contextmaxxing in Related Concepts
+- `index.md` — 3 new entries added
+
+**Cross-references**: contextmaxxing ↔ tokenmaxxing, ashwingop ↔ sentra-app, both ↔ contextmaxxing
+
 ## 2026-05-11 23:30 UTC — X Bookmarks Ingest: Browser Use production architecture, KV Caching, 0xJeff Part V
 
 **Bookmarks processed**: 5 total | 2 scraped from mirrors | 1 enriched existing | 1 saved raw-only | 1 metadata-only

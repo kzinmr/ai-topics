@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-11 | Total pages: 1759 | Indexed entries: 813 | Not in index: 944 |
+> Last updated: 2026-05-12 | Total pages: 1762 | Indexed entries: 816 | Not in index: 944 |
 
 ## Entities (553 pages)
 
@@ -85,6 +85,7 @@
 - [[entities/atal-upadhyay]] — Atal Upadhyay — AI/ML engineer and technical blogger specializing in agent harness architecture, MCP, RAG, Agentic AI. Author of 9-component agent harness framework.
 - [[entities/avi-im]] — **Blog** | avi.im | Creator of **KVM**, author of [[concepts/zero-disk-architecture]]
 - [[entities/ashpreet-bedi]] — **Name** | Ashpreet Bedi |
+- [[entities/ashwingop]] — Ashwin Gopinath — CEO/Co-founder of Sentra.app, former MIT professor, Reflexion paper co-author. Introduced [[concepts/contextmaxxing]] (contextmaxxing > tokenmaxxing). Company Brain architecture: memory as shared state.
 - [[entities/beads]] — Distributed graph issue tracker for AI coding agents. Created by Steve Yegge (Gastown Hall), powered by Dolt. Agent-optimized with dependency tracking, memory compaction, and MCP integration.
 - [[entities/beej-us]] — **URL:** https://beej.us
 - [[entities/ben-boyter]] — Creator of searchcode.com, scc (Sloc Cloc and Code), cs (Code Spelunker). Author of 'Marketing to the Machine' B2A thesis on Business-to-Agent design.
@@ -374,6 +375,7 @@
 - [[entities/scott-alexander]] — Scott Alexander (Scott Alexander Siskind) — Psychiatrist and blogger. Slate Star Codex / Astral Codex Ten. Author of "Meditations On Moloch" (2014), popularizing the concept of multipolar traps. Central figure in rationalist community and AI safety discourse.
 - [[entities/seangoedecke-com]] — **URL:** https://www.seangoedecke.com
 - [[entities/searchcode-com]] — Code intelligence MCP server for LLMs. 6 specialized tools for code analysis/search/retrieval from any public git repo. Previously indexed 75B+ lines of code. Built by [[entities/ben-boyter]]. Free beta, no API key needed.
+- [[entities/sentra-app]] — Enterprise General Intelligence (EGI) platform. $5M seed (a16z Speedrun, Together Fund). Builds collective company memory via knowledge graphs. Co-founded by [[entities/ashwingop]]. Implements [[concepts/contextmaxxing]] architecture.
 - [[entities/sequoia-capital]] — Sequoia Capital — Leading VC firm. Published the Service-as-Software thesis (2026) via partner Julien Bek. Backs AI-native service companies like Rillet, Magentic, Harvey.
 - [[entities/sero]] — Sero (known online as **0xSero**) is an open-source developer, AI infrastructure builder, and founder of **Sybil Solutions**. He operates at the intersection of AI agents, blockchain infrastructure...
 - [[entities/sigrid-jin]] — Creator of **[[concepts/claw-code]]**, the clean-room Rust/Python reimplementation of Claude Code's agent harness. Fastest repo in GitHub history to surpass 100K stars. Featured in WSJ for 25B Claude Code tokens. Korean-Canadian, UBC.
@@ -614,6 +616,7 @@
 - [[concepts/coding-agents-complexity-budgets]] — Lee Robinson (Cursor) on abstraction costs in the AI agent era. Migrated cursor.com from CMS to raw code in 3 days with $260 in tokens. Complexity budget concept.
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst — Devinをデータ分析エージェントにする設計
 - [[concepts/context-graph]] — Context Graph
+- [[concepts/contextmaxxing]] — Better memory over burning more tokens. Counterpart to [[concepts/tokenmaxxing]]. Memory as shared state, not as a service. Three memories (factual, interaction, action) as one substrate. Ontology + context graphs. Coined by [[entities/ashwingop]].
 - [[concepts/context-window-management]] — Context Window Management
 - [[concepts/decoder-only-gpt]] — Decoder-Only GPT Architecture
 - [[concepts/deepspeed]] — Microsoft DeepSpeed

@@ -2,7 +2,7 @@
 title: "Tasteful Tokenmaxxing — Quality-Over-Quantity AI Adoption"
 type: concept
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-05-12
 tags:
   - ai-agents
   - optimization
@@ -62,6 +62,7 @@ Key connection: Tasteful tokenmaxxing achieves the **FinOps layer** of  through 
 
 ## Related Concepts
 
+- [[concepts/contextmaxxing]] — Counterpart concept: optimizing context/memory quality over token quantity. Argues fragmented per-tool memory is the real bottleneck, not token cost
 - [[concepts/token-economics]] — Cost framework underlying tokenmaxxing decisions
 - [[concepts/context-engineering]] — Token-efficient context management techniques
 - [[concepts/context-compression]] — Reducing context window waste
