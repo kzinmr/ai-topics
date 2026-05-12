@@ -1,23 +1,26 @@
 ---
-
-## Related Entities
-
-- [[entities/daniel-van-strien]]
 title: Martin Kleppmann
 type: entity
 created: 2026-04-13
-updated: 2026-04-13
-status: draft
-related: [local-first-software, automerge, bluesky-at-protocol]
-sources: [https://martin.kleppmann.com, https://martin.kleppmann.com/papers/local-first.pdf]
+updated: 2026-05-12
+aliases:
+  - martin.kleppmann
 tags:
   - person
+  - distributed-systems
   - architecture
-  - developer-tooling
+  - local-first
+  - research
   - open-source
-
+related:
+  - concepts/local-first-software
+  - entities/automerge
+  - entities/bluesky-at-protocol
+sources:
+  - https://martin.kleppmann.com
+  - https://martin.kleppmann.com/papers/local-first.pdf
+  - https://github.com/automerge/automerge
 ---
-
 
 # Dr. Martin Kleppmann
 
@@ -155,6 +158,7 @@ CRDTs の未解決問題（全キーストローク保存 → メモリ劣化）
 
 ## See Also
 
+- [[entities/daniel-van-strien]] — Co-author on local-first papers and related CRDT research
 - [[entities/_index]]
 - [[lance-martin]]
 - [[entities/martin-alderson]]

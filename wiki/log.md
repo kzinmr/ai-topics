@@ -1,3 +1,16 @@
+## 2026-05-12 19:00 UTC — Daily Skeleton Enrichment Run
+
+**Status**: No `status: skeleton` entity pages found. Enriched 2 entities as fallback.
+
+### Enriched Entity Pages
+
+| Page | Change | Detail |
+|------|--------|--------|
+| `entities/martin-kleppmann.md` | Frontmatter repair + enrichment | Fixed corrupted YAML frontmatter (leaked content lines removed). Added `aliases`, proper `related:` with wikilinks, updated `sources:` array. Restored [[entities/daniel-van-strien]] cross-reference that was embedded in corrupted frontmatter. Removed `status: draft`. |
+| `entities/hoeem.md` | STUB→full enrichment | Removed `status: stub`. Expanded from 69→92 lines. Added: newsletter history (167+ issues, ~3 years), Feb 2026 AI expansion, dual-tier model details, Claude Session Extension Guide, LLM Knowledge Base Course, AI Learning Resources Curation. Expanded Content Domains with crypto+PredictIt/Kalshi details and AI developer tooling subsection. Added `crypto`, `defi`, `sevenc` tags/aliases. |
+
+**Key findings**: hoeem's newsletter (sevenc.substack.com) is a long-running weekly publication that pivoted from pure crypto to crypto+AI in Feb 2026; martin-kleppmann page already had excellent content but corrupted frontmatter needed structural repair.
+
 ## 2026-05-12 17:35 — Watchdog: cross-reference fixes + graph analysis update
 - **Fixed cross-reference gaps** (from graph analysis):
   - `entities/chip-huyen.md` — Added [[entities/will-brown]]
