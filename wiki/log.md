@@ -1,3 +1,13 @@
+## 2026-05-12 17:35 — Watchdog: cross-reference fixes + graph analysis update
+- **Fixed cross-reference gaps** (from graph analysis):
+  - `entities/chip-huyen.md` — Added [[entities/will-brown]]
+  - `entities/lilian-weng.md` — Added [[entities/will-brown]]
+  - `entities/will-brown.md` — Added [[entities/chip-huyen]] + [[entities/lilian-weng]]
+- **Verified structural health**: 0 pipe corruption, 0 triple bracket, 0 line-number corruption
+- **Graph analysis**: 165 persons, 1242 concepts; all concept pairs already linked (✅); 2 person pairs now linked
+- **Index coverage gap**: 909 concept pages not indexed (known persistent issue)
+- **Pipeline health**: All jobs healthy, no alerts
+
 ## 2026-05-12 11:00 — Active Crawl: Microsoft MAI Models, Gemma 4 MTP, Anthropic Revenue, Bayesian Agents, Pentagon AI
 
 **Raw articles collected (5):**

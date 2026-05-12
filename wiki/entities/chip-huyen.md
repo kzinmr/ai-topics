@@ -3,6 +3,7 @@
 ## Related Entities
 
 - [[entities/lilian-weng]]
+- [[entities/will-brown]]
 title: "Chip Huyen (@chipro)"
 tags: [person]
 created: 2026-04-24

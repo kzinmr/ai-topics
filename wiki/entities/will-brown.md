@@ -183,6 +183,8 @@ See [[concepts/rl-harness-lifecycle]] for the full analysis.
 - [[concepts/agent-harness]] — Agent execution frameworks that verifiers supports
 - [[entities/nathan-lambert]] — Interconnects newsletter author, fellow open-source RL researcher
 - [[entities/teknium]] — Nous Research co-founder, open-source AI community leader
+- [[entities/chip-huyen]] — ML/AI engineering author, shared concept: GenAI Handbook, RLHF
+- [[entities/lilian-weng]] — AI safety leader, Thinking Machines Lab co-founder, shared concept: RLHF
 - [[entities/prime-intellect]] — Brown's current organization
 - [[entities/morgan-stanley]] — Brown's previous employer
 
