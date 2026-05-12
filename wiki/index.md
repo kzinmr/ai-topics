@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-12 | Total pages: 1764 | Indexed entries: 818 | Not in index: 946 |
+> Last updated: 2026-05-12 | Total pages: 1767 | Indexed entries: 821 | Not in index: 946 |
 
-## Entities (554 pages)
+## Entities (556 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -581,7 +581,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1240 pages)
+## Concepts (1241 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -839,6 +839,7 @@
 - [[concepts/techno-pessimism]] — Skepticism that technology alone can resolve fundamental human problems. Curtis Yarvin's counter to Yudkowsky: "maybe you can't make a religion out of ai." Governance before transcendence; technology as amplifier, not solver.
 - [[concepts/zaya1-vl-8b]] — Zyphra's first VLM (MoE, 700M active / 8B total). Vision-specific LoRA + bidirectional image attention. SOTA for size, trained on AMD, Apache 2.0.
 - [[concepts/zaya1-74b-preview]] — Zyphra MoE reasoning-base LLM (4B active / 74B total). Not chat-tuned. Mamba/CCA hybrid, AMD-trained, Apache 2.0 preview.
+- [[concepts/zombie-internet]] — Zombie Internet: AI-contaminated web where humans and bots coexist in complex interaction patterns, causing cognitive overload and writing style distortion. Coined by Jason Koebler, highlighted by Simon Willison (May 2026).
 - [[concepts/advanced-tool-use]] — Advanced Tool Use
 - [[concepts/agent-skills]] — Agent Skills
 - [[concepts/browser-use-production-architecture]] — Browser Use Production Architecture — SQS-to-Lambda architecture for running browser agents at scale

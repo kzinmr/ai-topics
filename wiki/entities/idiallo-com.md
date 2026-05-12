@@ -57,7 +57,25 @@ Diallo's writing is characterized by:
 - **[[concepts/llm-assisted-writing]]** - Concept page documenting his LLM writing workflow and insights
 - **[[concepts/harness-engineering/agentic-workflows/vibe-coding]]** - Related pattern in code generation
 
+### "We Are Not Going to Agree on AI" (May 2026)
+
+In a May 2026 essay, Diallo articulated his pragmatic stance on AI adoption:
+
+- **AI as a tool, not a solution**: Frames AI as "a capable tool" — rejecting both utopian and dystopian narratives. The key question is "What can I do with this tool?" not "What can it do for me?"
+- **The Home Depot metaphor**: Compares AI tools to a stud finder — two employees argued over whether the simple or expensive multi-sensor model was right. His conclusion: pick the simple tool that gets the job done.
+- **Critique of feature bloat**: Dismisses tooltips, Jira feature updates, and AI rewriting of already-written tickets as distractions. "The only thing that matters to me is what I can do with a tool."
+- **Pragmatic adoption**: "When I have a goal, I reach for whatever helps me get there. If you're waiting for a tool to do the work for you, you're going to be disappointed."
+
+This connects to his broader theme of maintaining human agency in AI-augmented workflows — a consistent thread from his LLM-assisted writing experiments to his commentary on enterprise AI adoption.
+
+## Cross-References
+
+- **[[concepts/llm-assisted-writing]]** - Concept page documenting his LLM writing workflow and insights
+- **[[concepts/service-as-software]]** - The thesis that AI companies sell outcomes, not tools (Diallo's "what can I do with this" aligns)
+- **[[concepts/zombie-internet]]** - Diallo's pragmatic AI tool stance is a counterpoint to the Zombie Internet problem
+
 ## References
 
+- [We Are Not Going to Agree on AI](https://idiallo.com/blog/we-are-not-going-to-agree-on-ai) (May 2026)
 - [Editing my LLM assisted Articles](https://idiallo.com/byte-size/editing-llm-assisted-articles) (May 2026)
 - [Disable Auto-Update](https://idiallo.com/blog/disable-auto-update) (May 2026)

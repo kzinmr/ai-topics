@@ -1,3 +1,27 @@
+## 2026-05-12 07:18 — Blog Ingest: OpenAI DeployCo, Zombie Internet, GitLab layoffs, Interaction Models
+
+**Created:**
+- `concepts/zombie-internet.md` — Zombie Internet: AI-contaminated web ecosystem where humans and bots coexist in complex interaction patterns. Coined by Jason Koebler (May 2026), highlighted by Simon Willison. Cognitive burden of filtering AI content, writing style distortion, economic drivers (content farms, synthetic reviews).
+- `raw/articles/openai.com--index-openai-launches-the-deployment-company.md` — OpenAI Deployment Company article (Forward Deployed Engineers, $4B+ investment, standalone business unit)
+
+**Enriched:**
+- `entities/idiallo-com.md` — Ibrahim Diallo: Added "We Are Not Going to Agree on AI" section, Home Depot metaphor, pragmatic AI tool stance, cross-references to service-as-software and zombie-internet concepts
+- `concepts/ai-services-joint-ventures.md` — Already contains OpenAI DeployCo coverage (Tomoro acquisition, FDE model, $4B+ investment from 19 partners including TPG, Bain Capital, SoftBank, McKinsey, Goldman Sachs)
+- `concepts/interaction-models.md` — Already comprehensive; Sean Goedecke's analysis of Thinking Machines Lab's two-model architecture (real-time interaction model + background reasoning model) noted
+
+**Raw articles collected (39 new, 20 processed):**
+- Simon Willison: GitLab workforce reduction, James Shore quote, Zombie Internet, LLM shebang, Learning on the Shop floor
+- OpenAI: 2026 Q1 ChatGPT adoption research, DeployCo launch
+- Sean Goedecke: Thinking Machines interaction models
+- Ibrahim Diallo: "We Are Not Going to Agree on AI"
+- Troy Hunt: Bangladesh Government joins Have I Been Pwned
+- Xe Iaso: GitLab layoffs frustration
+- Pluralistic: 2024 postmortem
+- John D Cook: Euler function, Inverse shift, Random binary matrices
+- Susam.net: Advanced mathematics pedagogy
+- Various: MCU website hosting, blog image/alt text detection, proxy patterns, regatta starting stations
+
+**Key themes:** Forward Deployed Engineer model becoming mainstream (OpenAI DeployCo), AI content contamination of the web (Zombie Internet), pragmatic AI adoption vs hype (Diallo), real-time multimodal AI interfaces (Thinking Machines Interaction Models), enterprise AI deployment as differentiator.
 ## 2026-05-12 07:00 — Added SOC Episode #6 (The End of Subsidies)
 
 **Created:**
