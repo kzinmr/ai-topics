@@ -5,7 +5,7 @@ entity_type: person
 aliases:
   - DeRonin_
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-12
 tags:
   - person
   - education
@@ -13,11 +13,17 @@ tags:
   - skill-graph
   - content-engine
   - agent-media
+  - ai-coding
+  - cost-optimization
+  - token-economics
+  - model-routing
 status: active
-description: "19-year-old AI entrepreneur, CEO of CloseAI_hq, Advisor at MindoAI. Creator of the Skill Graph architecture for AI-powered content engines."
+description: "19-year-old AI entrepreneur, CEO of CloseAI_hq, Advisor at MindoAI. Creator of the Skill Graph architecture for AI-powered content engines. Documented a complete AI coding cost optimization system ($4,200→$312/month)."
 sources:
   - "https://x.com/DeRonin_"
   - "https://x.com/deronin_/status/2042604279077237170"
+  - "https://x.com/deronin_/status/2054255152555545079"
+  - "https://x.com/i/article/2053183959341711361"
 ---
 
 # Ronin
@@ -67,6 +73,23 @@ The problem: giving an AI a single prompt is like hiring a freelancer with no br
 | Article | Impressions | Bookmarks | Topic |
 |---------|-------------|-----------|-------|
 | [Skill Graph Content Engine (FULL COURSE)](https://x.com/deronin_/status/2042604279077237170) | 1.08M | 8,077 | Complete AI content production system |
+| [10 Things Senior AI Engineers Stopped Wasting Tokens On](https://x.com/deronin_/status/2054255152555545079) | 47K | 1,012 | Token waste checklist (Note Tweet, quotes full guide) |
+| [How To Cut Your AI Coding Bill by 80% (FULL GUIDE)](https://x.com/i/article/2053183959341711361) | 64K | 264 | Complete system: router config, benchmarks, 30-day plan |
+
+## AI Coding Cost Optimization System
+
+Ronin documented his complete system for cutting AI coding bills from $4,200/month to $312/month (92.6% reduction), achieving viral reach with 1,012 bookmarks on the summary Note Tweet alone. The system covers:
+
+- **Token economics**: Input/output/cached/reasoning token pricing across all major models
+- **5 token traps**: Re-sending unchanged context, tool call spirals, premium models on cheap tasks, streaming defeating caching, "just in case" includes
+- **Router architecture**: Static keyword-triggered routing across 4 tiers (Opus → Kimi 2.6 → Haiku → Ollama/Qwen 3 local)
+- **7 practical techniques**: Prompt caching, grep-before-fetching, tool call profiling, graduated skills (SKILL.md), local models, aggressive summarisation, request batching
+- **Cost benchmarks**: Per-task costs across Opus/GPT-5/Sonnet/Kimi with quality ratings
+- **30-day rollout plan**: Week-by-week actions with cumulative savings projections
+
+The core insight: Kimi 2.6 matches Sonnet 4.6 on shipped code quality at 1/6 the cost, making Sonnet a poor default in 2026. Premium models (Opus, GPT-5) should be reserved for the 10% of decisions that truly compound.
+
+See: [[concepts/ai-coding-cost-optimization]] for the full synthesis.
 
 ## Relevance to Wiki
 

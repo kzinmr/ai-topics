@@ -1,3 +1,14 @@
+## 2026-05-13
+
+- **Hot-topics 追加**: `autoresearch`, `agentic-loop`, `codex-goal` の3トピッククラスタを追加
+- **新規ページ作成**:
+  - `concepts/pi-autoresearch.md` — ShopifyがKarpathyのAutoresearchをMLトレーニング以外の任意メトリクス最適化に一般化。Tobi Lütkeが32コミットPR。40以上のメトリクス改善（build time 65%高速化、テスト300倍等）。3,600+ GitHub stars。
+  - `concepts/agentic-loop.md` — 全エージェントフレームワークが収束する中核パターン（decide → act → observe）。ReAct論文(2022)、Ralph Wiggum Loop、Steve Kinney分析
+  - `concepts/codex-goal.md` — OpenAI Codex CLI v0.128.0のビルトインRalph Loop（/goal）。永続化ゴール、runtime continuation、model-side audit、TUIコントロール
+  - `entities/chris-hayduk.md` — OpenAI FDE (Life Sciences)、AIエージェントループ論者。A Tale of Two Futures 著者
+  - `raw/articles/2026-04-15_shopify-autoresearch-david-cortes.md` — Shopify EngineeringのAutoresearch記事
+- **SCHEMA.md**: `agent-loop`, `autoresearch`, `ralph-loop` タグをAI Agentsカテゴリに追加
+- **hot-topics.yaml**: 3トピック（autoresearch, agentic-loop, codex-goal）をYAMLに追加。pages, hints, notes完備
 ## 2026-05-12 19:00 UTC — Daily Skeleton Enrichment Run
 
 **Status**: No `status: skeleton` entity pages found. Enriched 2 entities as fallback.

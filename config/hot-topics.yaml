@@ -201,3 +201,48 @@ topics:
   notes: 関心はあるが積極的に取り込むほどではない
   added: 2026-04-14
   last_crawled: null
+- slug: autoresearch
+  title: Autoresearch（自律的最適化ループ）
+  crawl_policy: deepdive
+  priority: high
+  search_hints:
+  - "autoresearch loop optimization 2026"
+  - "pi-autoresearch shopify"
+  - "Karpathy autoresearch generalized"
+  wiki_pages:
+  - concepts/karpathy-loop
+  - concepts/pi-autoresearch
+  - concepts/autonomous-component-optimization
+  notes: KarpathyのautoresearchからShopifyのpi-autoresearch（40+メトリクス改善）まで。モデル学習を超えた自律的最適化ループの進化を追跡。
+  added: 2026-05-13
+  last_crawled: null
+- slug: agentic-loop
+  title: Agentic Loop（エージェント実行サイクル）
+  crawl_policy: prerequisites
+  priority: high
+  search_hints:
+  - "agentic loop agent execution cycle"
+  - "ReAct loop Ralph Wiggum agentic AI"
+  - "decide act observe agent architecture"
+  wiki_pages:
+  - concepts/agentic-loop
+  - concepts/codex-goal
+  - concepts/codex-goal-meta-prompting
+  notes: すべてのエージェントフレームワークが収束する中核パターン。ReAct論文(2022)、Ralph Wiggum Loop、Codex /goal の最新動向。前提としてtool-use, agent-architecture等。
+  added: 2026-05-13
+  last_crawled: null
+- slug: codex-goal
+  title: Codex /goal（ビルトインRalph Loop）
+  crawl_policy: deepdive
+  priority: high
+  search_hints:
+  - "Codex /goal command Ralph loop 2026"
+  - "codex-goal autonomous coding agent"
+  - "OpenAI built-in agent loop"
+  wiki_pages:
+  - concepts/codex-goal
+  - concepts/codex-goal-meta-prompting
+  - concepts/agentic-loop
+  notes: OpenAI Codex CLI v0.128.0のビルトインRalph Loop。Greg Brockman "Ralph loop++"。メタプロンプティング、トークン予算設計、app-server API等の最新機能を深掘り。
+  added: 2026-05-13
+  last_crawled: null

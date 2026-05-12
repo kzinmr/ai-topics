@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-12 | Total pages: 1772 | Indexed entries: 826 | Not in index: 946 |
+> Last updated: 2026-05-12 | Total pages: 1776 | Indexed entries: 830 | Not in index: 946 |
 
-## Entities (556 pages)
+## Entities (557 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -116,6 +116,7 @@
 - [[entities/chip-huyen]] — **URL:** https://huyenchip.com/
 - [[entities/chipro]] — **X** | @chipro |
 - [[entities/chris-tate]] — **X/Twitter** | @ctatedev |
+- [[entities/chris-hayduk]] — Chris Hayduk — FDE at OpenAI (Life Sciences), cross-disciplinary AI writer, agent loops and agentic AI thought leader. Author of "A Tale of Two Futures."
 - [[entities/claude-code]] — AnthropicのAIコーディングエージェント。CLI、デスクトップアプリ、VS Code/JetBrains拡張、Web、iOS、Slackマルチサーフェスで動作。Boris Chernyによって開発され、2025年7月にAnthropicからOpenAIへ移管された。
 - [[entities/claude-design]] — Anthropic Labs product for collaborative visual design, powered by Claude Opus 4.7's vision model. Released April 17, 2026 in research preview.
 - [[entities/claude-mythos]] — Anthropic's next-generation model, developed after . Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
@@ -581,7 +582,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1241 pages)
+## Concepts (1244 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -589,6 +590,7 @@
 - [[concepts/agentic-search]] — Agentic Search
 - [[concepts/agent-ergonomics]] — Programming language design principles optimized for AI coding agents (compile speed, distribution, runtime) over human readability. Wes McKinney's thesis: Go/Rust > Python for agentic loops.
 - [[concepts/agentic-identity]] — Modeling AI agents as financial actors. Ramp's OBOU (On Behalf Of User) framework for enterprise agent identity, compliance, and audit.
+- [[concepts/agentic-loop]] — Agentic Loop — The canonical AI agent execution pattern: decide → act → observe. Every major agent framework converges on this same loop. ReAct, Ralph Wiggum, /goal variants.
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
 - [[concepts/ai-autonomy-debate]] — AI Autonomy Debate
@@ -619,7 +621,7 @@
 - [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
 - [[concepts/claude-md-rules]] — Karpathy's CLAUDE.md behavioral guidelines for AI coding agents (4→12 rules, 41%→3% mistake rate). 120K+ GitHub stars. Most-starred single-file repo of 2026.
 - [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling
-- [[concepts/codex-goal-meta-prompting]] — Codex /goal Meta-Prompting — technique for using a second AI to generate high-quality /goal prompts for OpenAI Codex's long-horizon autonomous agent mode
+- [[concepts/codex-goal]] — Codex /goal Command — OpenAI's built-in Ralph loop (Codex CLI v0.128.0). Persisted goal with runtime continuation, model-side audit, TUI controls. Turns Codex into hours-long autonomous agent.- [[concepts/codex-goal-meta-prompting]] — Codex /goal Meta-Prompting — technique for using a second AI to generate high-quality /goal prompts for OpenAI Codex's long-horizon autonomous agent mode
 - [[concepts/codex-prompting]] — Codex向けプロンプト設計パターン。行動優先（Bias for Action）、メタプロンプティング、標準システムプロンプト構造、アンチパターン。OpenAI Cookbook公式ガイド準拠。
 - [[concepts/coding-agents-complexity-budgets]] — Lee Robinson (Cursor) on abstraction costs in the AI agent era. Migrated cursor.com from CMS to raw code in 3 days with $260 in tokens. Complexity budget concept.
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst — Devinをデータ分析エージェントにする設計
@@ -704,7 +706,7 @@
 - [[concepts/pass-k-metric]] — pass^k: τ-benchファミリーが導入したエージェント信頼性評価指標。同一タスクk回の独立試行で全成功を要求し、一貫性を測定する。GPT-4o pass@1 ~45%でもpass^8 <25%の脆弱性を露呈。[[concepts/tau-bench|τ-bench]]実運用信頼性の基礎。
 - [[concepts/pentagon-ai-contracts-2026]] — Pentagon signs AI deals with 8 companies (May 2026): SpaceX, OpenAI, Google, Microsoft, NVIDIA, AWS, Oracle, Reflection. Anthropic excluded over AI safety stance — under litigation. Google DeepMind UK staff 98% unionize over Pentagon contract.
 - [[concepts/petri-alignment]] — Anthropic's open-source AI safety evaluation tool. Petri 3.0 donated to Meridian Labs (May 2026) for independent stewardship. "Dish" real-system-prompt testing, Bloom behavior assessments.
-- [[concepts/llm-creative-writing]]
+- [[concepts/pi-autoresearch]] — pi-autoresearch (Shopify) — Generalizes Karpathy's Autoresearch from ML training to arbitrary metric optimization. 3,600+ GitHub stars. 65% faster builds, 300x faster tests, 40+ metrics improved.- [[concepts/llm-creative-writing]]
 - [[concepts/linguistic-vertigo]] — QC (Qiaochu Yuan) によるLLM時代の言語的真正性喪失の認知現象。言語的めまい（linguistic vertigo）、頭の言葉 vs 身体の言葉、LLMをトレーサー色素とする社会診断、RLHFの社会的影（→ [[concepts/societal-shadow]]）。Gwernによるプロンプト視覚（unseeing / prompt-vision）の補遺を含む。体験的前提は[[raw/articles/2023-03-13_qchu-re-encountering-language.md]]。
 - [[concepts/local-ai]] — **Local AI Landscape — May 2026**: Andrew Chen (a16z) のホームラボ体験をケーススタディとしたローカルAIの現在地。ハードウェア（DGX Spark/5090 eGPU/Mac Studio/Strix Halo）、モデル品質1年遅れテーゼ、ソフトウェアスタック（ollama→LiteLLM→vLLM）、2027年Opus級ローカルモデル予測、非同期バッチ処理ユースケース。→ [[entities/andrew-chen]]
 - [[concepts/langgraph]] — LangGraph — LangChainが開発した低レベルオーケストレーションフレームワーク。状態保持グラフベースのエージェント構築を提供。Persistence Layer（短・長期メモリ）、Human-in-the-loop（中断・承認・タイムトラベル）、Fault Tolerance、Streamingを内蔵。Harrison Chaseが提唱する"Keras for Agents"哲学のもと、高レベル抽象化＋低レベル制御の両立を目指す。Agent Abstractionsの危険性（コンテキスト隠蔽）へのアンチテーゼとして設計された。
