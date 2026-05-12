@@ -54,6 +54,7 @@ Monthly YouTube podcast co-hosted with **Ben Vinegar** ([@bentlegen](https://x.c
 | 3 | 2026-02-16 | 59:01 | OpenClaw, agent-built browser/compiler, Opus 4.6, death of the IDE, detox from over-vibing |
 | 4 | 2026-03-12 | 40:33 | Newfound powers problem, slop forks, software quality decline, GPL licensing in LLM era |
 | 5 | 2026-04-10 | 98:48 | Quality crisis, Cloudflare slop forks, AI psychosis, token substance abuse, slow-down movement, tech disparity |
+| 6 | 2026-05-11 | 98:22 | End of subsidies, Pi acquisition, xAI/Cursor $10B deal, coding traces as training gold, GitHub exodus |
 
 **Recurring Ronacher themes across the series**: context management (manual compaction > auto-compaction), model lock-in as deepening risk, the "slow the f*** down" ethos, test-driven agent development with win conditions, and handcrafting foundations before letting agents loose.
 

@@ -40,6 +40,7 @@ The podcast distinguishes itself from typical AI influencer content by:
 | 3 | 2026-02-16 | 59:01 | Personal Agents, Model Wars & Death of the IDE | OpenClaw phenomenon, agent-built browser/compiler, Opus 4.6, fast mode, test-driven agent development, IDE obsolescence discourse |
 | 4 | 2026-03-12 | 40:33 | Newfound Powers, Side Projects & Slop Forks | Model plateau as bottleneck, parallel creative output, slop fork definition and legal implications, software quality decline |
 | 5 | 2026-04-10 | 98:48 | Quality Crisis, AI Psychosis & Tech Disparity | Cloudflare slop forks, non-engineer PRs, AI vulnerability finding, token substance abuse, slow-down movement, $500/mo token spend table stakes |
+| 6 | 2026-05-11 | 98:22 | The End of Subsidies, the Pi Acquisition & Why GitHub Is Cracking | Pricing correction, Earendil acquires Pi, xAI acquires Cursor for ~$10B, coding traces as training gold, GitHub exodus and alternatives, principled products plea |
 
 ## Recurring Themes Across Episodes
 
@@ -67,6 +68,12 @@ The series tracks the evolution from interchangeable API endpoints to differenti
 - Ep #4: First introduced — LLM reimplementations against test suites, threatening GPL economics
 - Ep #5: Cloudflare as "slop fork kings" — V8-isolate architecture incentivizing OSS rewrites
 
+### 5. End of Subsidies & Pricing Correction
+- Ep #6: Subsidized token costs ending, per-seat models breaking, bills multiplying 5x, downstream AI companies squeezed
+
+### 6. Coding Traces as Strategic Asset
+- Ep #6: xAI acquires Cursor ($10B) for traces — the best RL training data with mechanically verifiable reward signals. Concentration risk: traces default to Anthropic/OpenAI unless intentionally shared.
+
 ## Key Predictions Tracker
 
 | Episode | Date | Prediction | Status (May 12, 2026) |
@@ -77,6 +84,9 @@ The series tracks the evolution from interchangeable API endpoints to differenti
 | #3 | Feb 2026 | Discourse shifts to "death of the IDE" | ⬜ Developing |
 | #3 | Feb 2026 | Google won't change approach to agentic coding | ⬜ Holding |
 | #5 | Apr 2026 | Model discrimination in code review will intensify | ⬜ Early signal |
+| #6 | May 2026 | GitHub will face serious competition within 18 months (Mitchell Hashimoto leaving, former CEO fundraising) | 🔮 New |
+| #6 | May 2026 | Open-source LLMs will gain ground if coding traces are shared publicly | 🔮 New |
+| #6 | May 2026 | The end of subsidies will kill many AI SaaS startups within 12 months | 🔮 New |
 
 ## Connection to Other Wiki Concepts
 
@@ -97,4 +107,5 @@ The series tracks the evolution from interchangeable API endpoints to differenti
 - [[raw/articles/2026-02-16_state-of-agentic-coding-ep3]] — Episode 3
 - [[raw/articles/2026-03-12_state-of-agentic-coding-ep4]] — Episode 4
 - [[raw/articles/2026-04-10_state-of-agentic-coding-ep5]] — Episode 5
+- [[raw/articles/2026-05-11_state-of-agentic-coding-ep6]] — Episode 6
 - [Armin Ronacher YouTube](https://youtube.com/@ArminRonacher)

@@ -1,3 +1,13 @@
+## 2026-05-12 07:00 — Added SOC Episode #6 (The End of Subsidies)
+
+**Created:**
+- `raw/articles/2026-05-11_state-of-agentic-coding-ep6.md` — #6: The End of Subsidies, the Pi Acquisition & Why GitHub Is Cracking
+
+**Enriched:**
+- `concepts/state-of-agentic-coding.md` — Added episode #6 to table, new recurring themes (end of subsidies, coding traces as strategic asset), new predictions
+- `entities/armin-ronacher.md` — Added episode #6 to SOC table
+
+**Key topics:** AI pricing correction, Earendil acquires Pi, xAI acquires Cursor for ~$10B, coding traces as training gold, GitHub exodus movement, plea for principled products.
 ## 2026-05-12 06:30 — Added State of Agentic Coding series (5 episodes)
 
 **Created:**
