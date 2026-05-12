@@ -1,7 +1,7 @@
 ---
 title: xAI
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-12
 type: entity
 tags:
   - company
@@ -60,6 +60,7 @@ xAI operates the world's largest single AI training facility — **Colossus** in
 - **Target**: xAI aims for 50% utilization, no timeline given
 - **Context**: Industry-wide problem — GPU-rich does not mean GPU-efficient. The Colossus cluster represents 4x the power of the next-largest dedicated AI training site (Meta's ~500 MW).
 - **Plans**: Software stack optimization; potential GPU rental services for underutilized capacity
+- **Anthropic Compute Deal (May 2026)**: Signed multi-billion-dollar agreement with Anthropic, handing over full Colossus 1 compute capacity (220K+ GPU, 300MW) for Claude inference. Colossus 1 was idle after training moved to Colossus 2 (1.5GW). Jamin Ball (Altimeter) modeled ~$5B annual revenue at standard rental rates; Anthropic could turn that into ~$15B inference revenue at 60-70% margins. See [[concepts/xai-anthropic-colossus-deal]]
 
 ## Pricing Strategy
 

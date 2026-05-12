@@ -1,0 +1,108 @@
+{
+  "run_id": "20260512T072505Z",
+  "triage_at": "2026-05-12T07:26:00+00:00",
+  "newsletters": [
+    {
+      "message_id": "<20260511124612.3.3e31d512e8b81bdf@mg2.substack.com>",
+      "source": "Import AI 456",
+      "author": "Jack Clark",
+      "date": "2026-05-11",
+      "subject": "Import AI 456: RSI and economic growth; radical optionality for AI regulation; and a neural computer",
+      "priority": "critical",
+      "reason": "Jack Clark's Import AI is a cornerstone source. This issue covers radical optionality for AI regulation (new governance framework from Institute for Law & AI), RSI/economic growth analysis, and neural computer hardware. Multiple arXiv paper links requiring further scraping.",
+      "topics": ["AI governance", "AI regulation", "radical optionality", "AI economics", "neural computing", "frontier AI safety"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-11-import-ai-456-rsi-and-economic-growth-radical-optionality-for-ai-regulation-and-.md",
+      "actions": [
+        "Scrape external URLs for arXiv papers and blog posts",
+        "Create wiki concept page on 'radical optionality' AI governance framework",
+        "Update Import AI entity page with this issue reference"
+      ]
+    },
+    {
+      "message_id": "<20260511160249.3.16bea9b955054785@mg-d0.substack.com>",
+      "source": "Lenny's Newsletter - How I AI",
+      "author": "Lenny Rachitsky",
+      "date": "2026-05-11",
+      "subject": "How I AI: Quests, token leaderboards, and the elite AI adoption playbook & Notion's spec-driven development",
+      "priority": "high",
+      "reason": "Sendbird CEO John Kim's AI adoption playbook covers enterprise AI transformation patterns: gamified internal tooling marketplace, token usage tiering system (Beginner to AI God), cross-functional AI task forces, and 24/7 AI partner workflows. Notion spec-driven development segment. Highly actionable for enterprise AI wiki pages.",
+      "topics": ["AI adoption", "enterprise AI", "token economy", "developer tooling", "Notion", "organizational AI strategy"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-11-how-i-ai-quests-token-leaderboards-and-the-elite-ai-adoption-playbook-notion-s-s.md",
+      "actions": [
+        "Extract Sendbird AI adoption playbook patterns",
+        "Create or update wiki page on enterprise AI transformation frameworks",
+        "Research token leaderboards concept for wiki"
+      ]
+    },
+    {
+      "message_id": "<20260511.180320.110b4ed0@mta12>",
+      "source": "Beehiiv Newsletter",
+      "author": "Unknown (Beehiiv platform)",
+      "date": "2026-05-11",
+      "subject": "USA/ China: Nuclear Playbook Meets Artificial Intelligence",
+      "priority": "high",
+      "reason": "Covers US-China AI geopolitical competition, nuclear energy for AI compute infrastructure, and China's token economy outpacing US models. China Daily reports Chinese AI models at 12.96T tokens/week vs US 3.03T. CNNC exploring SMRs for AI power. Critical for AI geopolitics and infrastructure wiki sections.",
+      "topics": ["AI geopolitics", "US-China competition", "nuclear energy for AI", "token economy", "AI infrastructure", "AI electricity demand"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-11-usa-china-nuclear-playbook-meets-artificial-intelligence.md",
+      "actions": [
+        "Scrape beehiiv links for detailed article content",
+        "Create or update wiki page on AI energy infrastructure",
+        "Update US-China AI competition analysis with latest data"
+      ]
+    },
+    {
+      "message_id": "<20260512023214.3.e48119e4f1b63bc3@mg2.substack.com>",
+      "source": "SemiAnalysis",
+      "author": "Gerald Wong, Sravan Kundojjala (SemiAnalysis)",
+      "date": "2026-05-12",
+      "subject": "The EDA Primer: From RTL to Silicon",
+      "priority": "low",
+      "reason": "EDA (Electronic Design Automation) primer covering RTL to silicon chip design pipeline. Indirectly relevant to AI hardware infrastructure (chip design for AI accelerators), but primarily semiconductor engineering content. SemiAnalysis is a quality source for AI chip analysis. Paywalled - limited scrape access.",
+      "topics": ["EDA", "chip design", "RTL", "semiconductors", "AI hardware"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-12-the-eda-primer-from-rtl-to-silicon.md",
+      "actions": [
+        "Note for future AI accelerator hardware wiki page context",
+        "No immediate wiki action needed - too hardware-focused for current AI agent wiki scope"
+      ]
+    },
+    {
+      "message_id": "<20260512043346.3.4ae1c5ad579adbd9@mg-d0.substack.com>",
+      "source": "AINews (swyx)",
+      "author": "swyx",
+      "date": "2026-05-12",
+      "subject": "[AINews] Thinking Machines' Native Interaction Models - TML-Interaction-Small 276B-A12B - advances SOTA Realtime Voice",
+      "priority": "high",
+      "reason": "swyx's AINews is a key weekly digest of AI developments. This issue covers Thinking Machines Lab's new TML-Interaction-Small 276B-A12B model advancing SOTA in real-time voice interaction. Multiple linked articles requiring scraping. swyx is a tracked entity in our wiki.",
+      "topics": ["Thinking Machines Lab", "real-time voice AI", "interaction models", "TML-Interaction-Small", "276B-A12B MoE", "multimodal AI"],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-12-ainews-thinking-machines-native-interaction-models-tml-interaction-small-276b-a1.md",
+      "actions": [
+        "Scrape external URLs for TML model details and benchmark data",
+        "Update Thinking Machines Lab entity page with new model info",
+        "Create or update wiki concept on native interaction models for AI agents"
+      ]
+    }
+  ],
+  "summary": {
+    "total_newsletters": 5,
+    "total_articles_linked": 100,
+    "critical": 1,
+    "high": 3,
+    "low": 1,
+    "recommended_scraping_targets": [
+      "Import AI 456 arXiv and blog links (~10 external URLs)",
+      "How I AI podcast/show links",
+      "Beehiiv newsletter article links",
+      "AINews/swyx TML model announcement links"
+    ],
+    "skip_scraping": [
+      "SemiAnalysis EDA Primer (paywalled, hardware-focused, low wiki relevance)"
+    ],
+    "wiki_actions_pending": [
+      "Create concept page: 'Radical Optionality' AI governance framework",
+      "Create/update: Enterprise AI adoption playbook patterns",
+      "Create/update: AI energy infrastructure (nuclear + compute)",
+      "Update: Thinking Machines Lab entity page",
+      "Create concept: Native interaction models for AI agents"
+    ]
+  }
+}

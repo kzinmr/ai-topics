@@ -1,13 +1,14 @@
 ---
 title: DeepSeek
 created: 2026-04-26
-updated: 2026-05-08
+updated: 2026-05-12
 type: entity
 tags: [company, open-source, model, inference, training, benchmark]
 sources:
   - raw/articles/2026-04-25-china-ai-robotics-industry-competitive-landscape.md
   - raw/articles/simonwillison.net--2026-apr-24-deepseek-v4--d443e33a.md
   - raw/newsletters/2026-05-02-nvidia-blackwell-vs-huawei-ascend.md
+  - raw/newsletters/2026-05-10-spacexai-s-spice-trade-anthropic-targets-the-trillion-and-openai-s-stack-sweep.md
   - raw/articles/2026-05-01_nist-caisi-deepseek-v4-evaluation.md
   - raw/papers/2024-12-27_2412.19437_deepseek-v3-technical-report.md
   - raw/papers/2025-01-22_2501.12948_deepseek-r1.md
@@ -90,6 +91,15 @@ DeepSeek-V4  (Apr 2026)           フロンティア規模
 | **V4-Pro** | $1.74 | $3.48 |
 
 V4-Flash is cheaper than GPT-5.4 Nano ($0.20/$1.25) and Gemini 3.1 Flash-Lite ($0.25/$1.50). V4-Pro is the cheapest large frontier model, undercutting all Western competitors.
+
+### GPT-5.5 Cost Comparison (May 2026)
+
+Following DeepSeek V4's release, the **South China Morning Post** reported that the cost per conversation on GPT-5.5 is roughly **32x that of DeepSeek-V4**. However, price and cost are not the same thing:
+
+- **Energy cost asymmetry**: SemiAnalysis found that Huawei's CloudMatrix 384 (powering most Chinese AI workloads) draws **4.1x the electricity** of NVIDIA's GB200 NVL72 to deliver the same compute. Every token on Chinese hardware costs more in energy.
+- **Subsidy-driven pricing**: The cheap consumer pricing is propped up by state subsidies and near-zero margins
+- **Capacity gap**: The Institute for Progress projects US production at **6.89M B300-equivalents in 2026**, while Huawei stays between **62K–160K** — China's chip stack operates at roughly **1% of American output**
+- **Market strategy**: China's aggressive pricing reflects operating as a smaller producer with incentives to gain market share quickly, especially in the Global South, Middle East, and Southeast Asia
 
 ### Hardware: Huawei Ascend 950 Deployment
 

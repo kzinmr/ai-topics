@@ -1,3 +1,24 @@
+## 2026-05-12 11:00 — Active Crawl: Microsoft MAI Models, Gemma 4 MTP, Anthropic Revenue, Bayesian Agents, Pentagon AI
+
+**Raw articles collected (5):**
+- `raw/articles/2026-04-02_geekwire-microsoft-mai-models.md` — Microsoft MAI-Transcribe-1, MAI-Voice-1, MAI-Image-2
+- `raw/articles/2026-05-05_google-gemma-4-multi-token-prediction.md` — Gemma 4 MTP drafters (3x speedup)
+- `raw/articles/2026-05-01_arxiv-bayesian-agent-orchestration.md` — ICML 2026: Bayesian decision theory for agent orchestration
+- `raw/articles/2026-05-07_anthropic-q1-2026-revenue-44b-arr.md` — Anthropic Q1 2026: 80x YoY, $44B ARR
+- `raw/articles/2026-05-05_pentagon-ai-contracts-may-2026.md` — Pentagon AI deals exclude Anthropic
+
+**Created:**
+- `concepts/microsoft-mai-models.md` — Microsoft's in-house MAI model family (speech-to-text, voice, image)
+- `concepts/multi-token-prediction.md` — MTP drafters for speculative decoding (Gemma 4, 3x speedup)
+- `concepts/bayesian-agent-orchestration.md` — Bayesian decision theory at agent orchestration layer (ICML 2026)
+- `concepts/anthropic-2026-revenue-growth.md` — $44B ARR, 80x YoY growth, 6-week doubling period
+- `concepts/pentagon-ai-contracts-2026.md` — 8 companies signed, Anthropic excluded over AI safety stance
+
+**Enriched:**
+- `entities/anthropic.md` — Added Q1 2026 $44B ARR confirmation, 80x YoY growth, $96M/day ARR addition
+
+**Key themes:** Microsoft building independent AI model capability beyond OpenAI; speculative decoding maturing with MTP drafters; Bayesian decision theory emerging as principled framework for agent orchestration; Anthropic's unprecedented enterprise revenue growth ($44B ARR); AI safety stance creating tangible business consequences through Pentagon exclusion.
+
 ## 2026-05-12 07:18 — Blog Ingest: OpenAI DeployCo, Zombie Internet, GitLab layoffs, Interaction Models
 
 **Created:**

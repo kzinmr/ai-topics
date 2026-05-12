@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-05-11
+updated: 2026-05-12
 sources: [
   "https://x.com/RLanceMartin/status/2041927992986009773",
   "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
@@ -128,8 +128,11 @@ Anthropic launched **Claude Security** in public beta for Enterprise customers, 
 Anthropic leads enterprise AI adoption with strong market metrics:
 - **40%** of enterprise LLM spend (surpassing OpenAI)
 - **54%** of enterprise coding market share
-- **$30B ARR** (annual recurring revenue)
-- **IPO target**: October 2026 at $400–500B valuation
+- **$44B ARR confirmed (Q1 2026)** — 80x YoY revenue growth disclosed May 7, 2026. Doubling every ~6 weeks. $96M ARR added per day. See [[concepts/anthropic-2026-revenue-growth]].
+- **$45B ARR expected** — 5x jump from $9B run-rate at end of 2025 (Financial Times, May 2026)
+- **$50B raise at ~$1T valuation** in talks — would surpass OpenAI's $852B mark
+- **IPO target**: October 2026 at $400–500B valuation (pre-$1T talks)
+- Revenue growth driven by enterprise Claude adoption and Code with Claude 2026 launches (M365 GA, Dreaming, Managed Agents)
 - Cleaner unit economics than OpenAI; focused on enterprise over consumer scale
 
 ### $1.5B Services Joint Venture (May 2026)

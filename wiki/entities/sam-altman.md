@@ -2,14 +2,17 @@
 title: Sam Altman
 type: entity
 created: 2026-04-13
-updated: 2026-04-28
+updated: 2026-05-12
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
 tags:
   - person
   - openai
   - infrastructure
   - agi
-sources: []
+  - economics
+  - policy
+sources:
+  - raw/newsletters/2026-05-10-spacexai-s-spice-trade-anthropic-targets-the-trillion-and-openai-s-stack-sweep.md
 ---
 
 
@@ -145,6 +148,35 @@ Co-founded OpenAI with **Elon Musk**, **Greg Brockman**, **Ilya Sutskever**, **W
 - **WLD Token**: Highly volatile
 - **Regulatory Pushback**: Banned/halted in Spain, Indonesia, Kenya, Thailand, Philippines, Germany over biometric privacy, consent coercion, and data sovereignty violations
 - **Philosophy**: Altman believes that as AI displaces labor, society will need new mechanisms for identity verification and distribution
+
+### UBI Pivot and Collective Ownership (May 2026)
+
+In May 2026, Altman publicly reversed his long-standing support for Universal Basic Income (UBI). In an interview with *The Atlantic*'s Nicholas Thompson, he stated: **"I no longer believe in universal basic income as much as I once did."**
+
+#### The UBI Experiment ($14M / 3 Years / 1,000 People)
+
+Altman personally funded a $14M study (with $60M total raised) — the largest UBI experiment of its kind: $1,000/month for 3 years to low-income Americans. The results:
+
+- **No measurable improvement** in physical or mental health
+- **No direct evidence** of better healthcare access
+- Recipients spent more overall, but wellbeing metrics were flat
+- Three years of guaranteed income produced **no measurable lift in wellbeing**
+
+#### The Shift: Collective Ownership
+
+Altman now advocates for **collective ownership** instead of cash transfers:
+
+- **AI compute stakes**: Rather than fixed cash, people would hold shares of AI compute they could use, sell, or trade
+- **Public Wealth Fund**: OpenAI's industrial policy white paper proposes a fund giving every citizen a stake in AI-driven economic growth
+- **Rationale**: AI is shifting the balance between labor and capital. A fixed check only addresses one side of that shift. Ownership addresses both.
+
+#### Work, Identity, and Meaning
+
+Altman acknowledged a deeper finding from his own data: **work delivers structure, identity, and the feeling of being needed** — a check cannot replicate any of that. AI displacement is expected to hit white-collar and blue-collar work simultaneously, faster than any prior shift. The harder question is "what fills the hours when work no longer does, and where meaning comes from once a job stops providing it."
+
+#### Contrast: Elon Musk's "Universal HIGH Income"
+
+In April 2026, Elon Musk called for **"universal HIGH income via checks issued by the Federal government"**, arguing inflation won't follow because AI and robotics will produce goods and services far in excess of any new money supply. Musk's framing is one of abundance — productivity so high that "money becomes like oxygen." Altman's approach is structural ownership rather than passive distribution.
 
 ### Energy and Fusion
 - **Helion Energy**: Led $500M Series E (2021) and $425M Series F (2025). Target: 50MW commercial fusion plant by 2028 (Microsoft Power Purchase Agreement)

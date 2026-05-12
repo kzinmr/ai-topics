@@ -11,15 +11,17 @@ tags:
 status: complete
 description: "Frameworks for governing autonomous AI agents in enterprise — identity-based access, three-tiered guardrails, HITL/HOTL patterns, and regulatory alignment."
 created: 2026-05-04
-updated: 2026-05-11
+updated: 2026-05-12
 sources:
   - raw/articles/2026-05-02_yale-celi-agentic-ai-governance-framework.md
+  - raw/newsletters/2026-05-10-trustworthy-ai-is-really-about-delegated-agency.md
 related:
   - "[[concepts/agent-governance]]"
   - "[[concepts/ai-safety]]"
   - "[[concepts/agentic-security]]"
   - "[[concepts/agent-iam]]"
   - "[[entities/anthropic]]"
+  - "[[entities/kim-isenberg]]"
 ---
 
 # Agentic AI Governance
@@ -80,7 +82,49 @@ This framework aligns with emerging industry patterns:
 - Can "trust" be engineered, or does it require operational track records?
 - How do regulatory frameworks (EU AI Act) reconcile mandatory human oversight with delegated agency?
 
-## Governance Frameworks
+### The Cognitive Light Cone (Kim Isenberg / Michael Levin)
+
+A framework for understanding AI risk introduced by Kim Isenberg in May 2026, drawing on biologist **Michael Levin**'s concept of the cognitive light cone.
+
+#### The Metaphor
+
+In physics, a light cone marks the boundary of what can be affected across space and time. Levin adapts this to cognition: within what horizon can an agent sense, remember, model, and influence outcomes?
+
+- **Bacterium**: Tiny horizon — purely local sensing and response
+- **Dog**: Wider horizon — memory, anticipation, broader behavioral repertoire
+- **Human**: Broadest natural horizon — plans for distant futures, acts through institutions, produces consequences far from decisions
+- **AI systems**: Potentially unbounded — connected to company data, equipped with memory, linked to business systems, granted tool access, woven into workflows
+
+The key insight: **AI systems differ not just in intelligence, but in the scope of consequences they can produce.** We are not just improving a model — we are increasing its jurisdiction.
+
+#### Competence + Reach
+
+Risk does not arise from model capability alone. It arises from the **interaction between capability and delegated reach.** A highly capable model with no access, no memory, and no ability to act may be of limited consequence. A less capable one, given broad access and allowed to operate across critical workflows, may become far more dangerous.
+
+### The Six Levers of Delegated Agency
+
+Kim Isenberg's framework identifies six practical levers that determine how wide an AI system's sphere of influence has become:
+
+| Lever | Definition | Risk When Expanded |
+|-------|-----------|-------------------|
+| **Sensors** | What the system can see | Broad access across contracts, emails, calendars, transaction records creates an informational world |
+| **Memory** | What the system remembers | Persistent context across interactions changes the relationship — retention, correction, deletion questions arise |
+| **Effectors** | What the system can change | The distance between drafting and sending, suggesting and posting, is the distance between advice and consequence |
+| **Autonomy** | Whether the system initiates or only responds | Mistakes can repeat automatically; weak judgments propagate faster than supervision can catch them |
+| **Coordination** | What the system can orchestrate | Small acts of orchestration add up to substantial consequences when no single human sees the whole sequence |
+| **Embedding** | How load-bearing the system has become | When there is no tested manual fallback, the organization has made AI part of its operating infrastructure |
+
+### The Quiet Delegation Problem
+
+Delegated agency often arrives without announcement. Copilots embedded across email, documents, meetings, and chat do not need formal authority to alter how work is done. Through habit, speed, and convenience, delegation happens through the quiet transfer of cognitive labor:
+
+- People stop writing the first draft themselves
+- People stop reading the whole thread
+- People stop making the first pass before seeing the system's version
+
+None of this looks dramatic, but the sphere of agency has widened. What appears to be a simple productivity layer may become an important site of delegated judgment.
+
+### Connection to Industry Trends
 
 ### Three-Tiered Guardrail System (EWSolutions / Yale CELI)
 
