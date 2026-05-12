@@ -1,3 +1,18 @@
+## 2026-05-12 06:30 — Added State of Agentic Coding series (5 episodes)
+
+**Created:**
+- `concepts/state-of-agentic-coding.md` — Monthly podcast series overview (Armin Ronacher & Ben Vinegar, Dec 2025–Apr 2026)
+- `entities/ben-vinegar.md` — Entity page for Ben Vinegar (@bentlegen), Modem co-founder, podcast co-host
+- `raw/articles/2025-12-15_state-of-agentic-coding-ep1.md` — #1: Model Fatigue, Context Windows & LLM x86 Wars
+- `raw/articles/2026-01-22_state-of-agentic-coding-ep2.md` — #2: Holiday Surge, Pricing Wars & Meta-Agentic Programming
+- `raw/articles/2026-02-16_state-of-agentic-coding-ep3.md` — #3: Personal Agents, Model Wars & Death of the IDE
+- `raw/articles/2026-03-12_state-of-agentic-coding-ep4.md` — #4: Newfound Powers, Side Projects & Slop Forks
+- `raw/articles/2026-04-10_state-of-agentic-coding-ep5.md` — #5: Quality Crisis, AI Psychosis & Tech Disparity
+
+**Enriched:**
+- `entities/armin-ronacher.md` — Added SOC podcast section with episode table and cross-references
+
+**Key themes documented:** model lock-in (x86 wars analogy), context window degradation, slop fork phenomenon, meta-agentic programming, subscription economics, slow-down movement, tech disparity.
 ## 2026-05-12 01:40 UTC — Ingest: Builders Unscripted Ep. 2 (Ashe Magalhaes)
 
 **From**: User request (Discord). YouTube video.

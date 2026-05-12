@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-12 | Total pages: 1762 | Indexed entries: 816 | Not in index: 944 |
+> Last updated: 2026-05-12 | Total pages: 1764 | Indexed entries: 818 | Not in index: 946 |
 
-## Entities (553 pages)
+## Entities (554 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -91,6 +91,7 @@
 - [[entities/beads]] — Distributed graph issue tracker for AI coding agents. Created by Steve Yegge (Gastown Hall), powered by Dolt. Agent-optimized with dependency tracking, memory compaction, and MCP integration.
 - [[entities/beej-us]] — **URL:** https://beej.us
 - [[entities/ben-boyter]] — Creator of searchcode.com, scc (Sloc Cloc and Code), cs (Code Spelunker). Author of 'Marketing to the Machine' B2A thesis on Business-to-Agent design.
+- [[entities/ben-vinegar]] — Ben Vinegar (@bentlegen), co-founder of Modem (agentic PM), former Sentry engineer (10 years). Co-host of State of Agentic Coding podcast with Armin Ronacher. Author of "Third Party JavaScript" (2013).
 - [[entities/benjamin-clavie]] — French ML researcher specializing in NLP and IR, creator of RAGatouille, co-author of ModernBERT. Co-hosted the "RAG Is Not Dead" series with Hamel Husain.
 - [[entities/benny-chen]] — Co-Founder of Fireworks AI. Former Meta ML infrastructure. Pioneered Reinforcement Fine-Tuning (RFT) and Eval Protocol for open-weight model customization.
 - [[entities/berthub-eu]] — **Blog** | berthub.eu |
@@ -580,7 +581,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1239 pages)
+## Concepts (1240 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -790,6 +791,7 @@
 - [[concepts/skyrl]] — SkyRL (UC Berkeley/NovaSky): マルチターンエージェントRLのための柔軟フレームワーク。sync/async、colocated/disaggregated、外部推論API全て対応。FSDP/DeepSpeed。
 - [[concepts/speed-vs-legitimacy-in-ai-institutions]] — Core tension: fast institutions (AI labs, tech) move at tech speed but lack trust; slow institutions (regulators, courts) have legitimacy but can't keep pace. Two-tier civilization risk. Historical parallel: late medieval Church vs new money/press/science.
 - [[concepts/ssm-mamba]] — SSM / Mamba — State Space Models for Sequence Modeling
+- [[concepts/state-of-agentic-coding]] — Monthly podcast by Armin Ronacher & Ben Vinegar (5 episodes, Dec 2025–Apr 2026). Covers model dynamics, context management, slop forks, quality crisis, meta-agentic programming.
 - [[concepts/swe-bench-agent-scaffolding]] — Claude 3.5 SonnetがSWE-bench Verified 49%達成時のエージェント設計。哲学は「可能な限りモデルに制御を委ね、scaffoldingを最小限に」。Bash Tool + Edit Tool + 最小限プロンプト。同一モデル×scaffolding最適化の重要性を実証。
 - [[concepts/tool-use-tax]] — Performance degradation in LLM agents caused by tool-calling protocol overhead. In noisy environments, native CoT can outperform tool-augmented reasoning. G-STEP partial mitigation.
 - [[concepts/tau-bench]] — τ-bench: Sierra AI ResearchのAIエージェント評価ベンチマークスイート。複数ターン対話・ドメインポリシー遵守・pass^k信頼性の3軸で評価。τ-bench（2024/航空・小売）→τ²-bench（2025/Telecomデュアルコントロール）→τ³-Bench（2026/τ-Knowledge+τ-Voice）へ進化。GPT-4o<50%、pass^8<25%、音声エージェント26-38%の現実を定量化。業界標準のデファクト評価基盤。

@@ -4,7 +4,7 @@ description: Austrian open-source programmer (b. 1989). Creator of Flask, Jinja2
 url: https://lucumr.pocoo.org/
 type: entity
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-12
 aliases: [mitsuhiko, "Armin Ronacher"]
 tags:
   - person
@@ -42,6 +42,20 @@ sources:
 | **insta** | Snapshot testing library for Rust | 2.8K |
 | **MiniJinja** | Minimal Jinja-compatible template engine for Rust | 2.6K |
 | **agent-stuff** | Claude Code commands and configurations | 2.3K |
+
+## State of Agentic Coding Podcast (Dec 2025–Apr 2026)
+
+Monthly YouTube podcast co-hosted with **Ben Vinegar** ([@bentlegen](https://x.com/bentlegen)). Five episodes covering the fast-moving AI coding landscape — see [[concepts/state-of-agentic-coding|full series overview]].
+
+| # | Date | Duration | Key Topics |
+|---|------|----------|------------|
+| 1 | 2025-12-15 | 49:05 | Model fatigue, AMP, context windows, Anthropic soul document, x86 wars analogy |
+| 2 | 2026-01-22 | 51:44 | Claude Code holiday surge, subscription economics, meta-agentic programming, sub-agent voting |
+| 3 | 2026-02-16 | 59:01 | OpenClaw, agent-built browser/compiler, Opus 4.6, death of the IDE, detox from over-vibing |
+| 4 | 2026-03-12 | 40:33 | Newfound powers problem, slop forks, software quality decline, GPL licensing in LLM era |
+| 5 | 2026-04-10 | 98:48 | Quality crisis, Cloudflare slop forks, AI psychosis, token substance abuse, slow-down movement, tech disparity |
+
+**Recurring Ronacher themes across the series**: context management (manual compaction > auto-compaction), model lock-in as deepening risk, the "slow the f*** down" ethos, test-driven agent development with win conditions, and handcrafting foundations before letting agents loose.
 
 ## AI Coding Agent Philosophy
 
@@ -98,6 +112,8 @@ His writing is pragmatic, deeply technical, and often critical of "vibeslopped" 
 - [[entities/pi]] — Pi coding agent created by Ronacher
 - [[concepts/fragmentation]] — Local model stack fragmentation problem Ronacher critiques
 - [[concepts/tool-parameter-streaming]] — Missing feature Ronacher identifies as critical for local coding agents
+- [[concepts/state-of-agentic-coding]] — Podcast series co-hosted with Ben Vinegar (5 episodes, Dec 2025–Apr 2026)
+- [[entities/ben-vinegar]] — Podcast co-host and Modem co-founder
 
 ## References
 
