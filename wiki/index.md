@@ -327,6 +327,7 @@
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml programmer and technology writer.
 - [[entities/openai-cua]] — OpenAIの**CUA（Computer-Using Agent）**モデルは、GPT-4oのビジョン機能と強化学習を組み合わせて、スクリーンショットを見てGUIを操作するエージェント。2025年1月に「Operator」として公開され、2025年7月にChatGPTエージェントに完全統合された。
 - [[entities/openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
+- [[entities/openai-codex]] — OpenAIのAIコーディングエージェント。CLIベースの完全OSS。モデルはgpt-5.3-codex。自律実行、コンパクション、Windows対応。プロンプト設計は[[concepts/codex-prompting]]参照。
 - [[entities/openai]] — **Type** | AI Research & Product Company |
 - [[entities/openclaw]] — Open-source always-on AI assistant framework created by **Peter Steinberger** (former PSPDFKit CEO). Deploys autonomous agents that run continuously, self-evolve through interaction, and integrate ...
 - [[entities/opencode]] — 最も人気のあるオープンソースAIコーディングエージェント。155K GitHub Stars、MITライセンス、850+コントリビューター。75+ LLMプロバイダ対応、マルチサーフェス（TUI/Desktop/IDE）。Plan/Build/Generalの3エージェント、LSP統合、GitHubネイティブ統合。
@@ -613,6 +614,7 @@
 - [[concepts/claude-md-rules]] — Karpathy's CLAUDE.md behavioral guidelines for AI coding agents (4→12 rules, 41%→3% mistake rate). 120K+ GitHub stars. Most-starred single-file repo of 2026.
 - [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling
 - [[concepts/codex-goal-meta-prompting]] — Codex /goal Meta-Prompting — technique for using a second AI to generate high-quality /goal prompts for OpenAI Codex's long-horizon autonomous agent mode
+- [[concepts/codex-prompting]] — Codex向けプロンプト設計パターン。行動優先（Bias for Action）、メタプロンプティング、標準システムプロンプト構造、アンチパターン。OpenAI Cookbook公式ガイド準拠。
 - [[concepts/coding-agents-complexity-budgets]] — Lee Robinson (Cursor) on abstraction costs in the AI agent era. Migrated cursor.com from CMS to raw code in 3 days with $260 in tokens. Complexity budget concept.
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst — Devinをデータ分析エージェントにする設計
 - [[concepts/context-graph]] — Context Graph

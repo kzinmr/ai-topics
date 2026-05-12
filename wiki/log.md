@@ -3,6 +3,16 @@
 **From**: X bookmark ingest pipeline (missed article). Original article ID: 2053533334949728256
 **Source**: Ashwin Gopinath's Nanothoughts post "Memory Is State, Not a Service" (May 8, 2026)
 
+## 2026-05-12 01:35 UTC — Ingest: OpenAI Codex Prompting Guide
+
+**From**: User request (Discord). OpenAI Cookbook article.
+**Source**: https://developers.openai.com/cookbook/examples/gpt-5/codex_prompting_guide
+**Created**:
+- `entities/openai-codex.md` — OpenAI Codex entity page (CLI coding agent, gpt-5.3-codex)
+- `concepts/codex-prompting.md` — Codex prompting patterns (Bias for Action, metaprompting, anti-patterns)
+- `raw/articles/2026-01-14_openai-codex-prompting-guide.md` — Raw article
+**Modified**: `index.md` (added 2 entries), `log.md`
+
 **New pages created**:
 - `concepts/contextmaxxing.md` — Better memory over burning more tokens. Counterpart to tokenmaxxing.
 - `entities/ashwingop.md` — Ashwin Gopinath: CEO/Co-founder Sentra.app, former MIT prof, Reflexion co-author
