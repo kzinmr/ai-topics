@@ -27,6 +27,7 @@ Each episode features an unscripted conversation between Huet and a builder who 
 | # | Title | Guest | Date | Duration | Key Topics |
 |---|-------|-------|------|----------|------------|
 | 1 | Peter Steinberger, Creator of OpenClaw | **Peter Steinberger** (@steipete) | Feb 24, 2026 | 31:28 | OpenClaw's viral growth, building with Codex, "vibe coding" critique, open source philosophy, AI-native solo development |
+| 2 | Ashe Magalhaes, Founder of Hearth AI | **Ashe Magalhaes** | Apr 10, 2026 | 33:38 | First agentic CRM, builder-as-artist, solar car racing, AI and human connection, build in public, agentic personal OS |
 
 ### Ep. 1 — Peter Steinberger, Creator of OpenClaw
 
@@ -42,6 +43,21 @@ Romain Huet interviews Peter Steinberger, creator of OpenClaw, prior to Steinber
 - **2026 prediction**: "2026 will be an interesting one"
 
 Full article: [[raw/articles/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]]
+
+### Ep. 2 — Ashe Magalhaes, Founder of Hearth AI
+
+Romain Huet interviews Ashe Magalhaes, founder of Hearth AI (first agentic CRM). Key themes:
+
+- **Builder as artist**: Ashe frames engineering as a creative act — a "conduit for creativity" across code, hardware, poetry, and video
+- **First agentic CRM**: Built Hearth AI in 2022 on GPT-3.5 when the infrastructure was "fragile" — pushed OpenAI for structured outputs and JSON schemas before they existed
+- **Solar car to NASA to Airbnb**: Built and raced a solar-powered car in the Australian outback, worked on satellites at NASA, rode the deep learning wave at Airbnb
+- **Frontier rigor**: The solar car experience instilled a visceral understanding of safety-critical engineering — "how do you make safe decisions and push the bounds of what's possible?"
+- **AI and human connection**: Agents as tools for being more present, connected, and intentional — not replacing human relationships but enhancing them
+- **Build in public**: Share work early; let it "go out into the world, breathe, and allow surprise"
+- **Agentic personal OS**: Running multiple agents as a personal operating system for presence and intentionality
+- **Curiosity as pillar**: "Curiosity is such a magical part of the history of being an engineer"
+
+Full article: [[raw/articles/2026-04-10_openai_builders-unscripted-ep2-ashe-magalhaes]]
 
 ## Themes Across the Series
 

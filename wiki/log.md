@@ -1,3 +1,13 @@
+## 2026-05-12 01:40 UTC — Ingest: Builders Unscripted Ep. 2 (Ashe Magalhaes)
+
+**From**: User request (Discord). YouTube video.
+**Source**: https://www.youtube.com/watch?v=flweA_I-VKE
+**Created**:
+- `entities/ashe-magalhaes.md` — Ashe Magalhaes entity page (Hearth AI founder, solar car racer, NASA, Airbnb ML)
+- `entities/hearth-ai.md` — Hearth AI entity page (first agentic CRM, founded 2022)
+- `raw/articles/2026-04-10_openai_builders-unscripted-ep2-ashe-magalhaes.md` — Raw transcript article
+**Modified**: `concepts/builders-unscripted.md` (added Ep.2), `entities/romain-huet.md` (added Ep.2), `index.md`, `log.md`
+
 ## 2026-05-12 01:35 UTC — Ingest: Builders Unscripted Ep. 1 (Peter Steinberger)
 
 **From**: User request (Discord). YouTube video.

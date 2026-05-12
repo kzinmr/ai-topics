@@ -85,6 +85,7 @@
 - [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko, born 10 May 1989, Austria) is a software engineer, open-source developer, and entrepreneur who has profoundly shaped the Python ecosystem and is now building the next ge...
 - [[entities/atal-upadhyay]] — Atal Upadhyay — AI/ML engineer and technical blogger specializing in agent harness architecture, MCP, RAG, Agentic AI. Author of 9-component agent harness framework.
 - [[entities/avi-im]] — **Blog** | avi.im | Creator of **KVM**, author of [[concepts/zero-disk-architecture]]
+- [[entities/ashe-magalhaes]] — Ashe Magalhaes — Founder of Hearth AI (first agentic CRM), builder-as-artist philosophy, solar car racer, NASA satellite engineer
 - [[entities/ashpreet-bedi]] — **Name** | Ashpreet Bedi |
 - [[entities/ashwingop]] — Ashwin Gopinath — CEO/Co-founder of Sentra.app, former MIT professor, Reflexion paper co-author. Introduced [[concepts/contextmaxxing]] (contextmaxxing > tokenmaxxing). Company Brain architecture: memory as shared state.
 - [[entities/beads]] — Distributed graph issue tracker for AI coding agents. Created by Steve Yegge (Gastown Hall), powered by Dolt. Agent-optimized with dependency tracking, memory compaction, and MCP integration.
@@ -216,6 +217,7 @@
 - [[entities/gwern]] — **Blog** | gwern.net |
 - [[entities/hailey-schoelkopf]] — Research Scientist at EleutherAI, primary maintainer of the LM Evaluation Harness (lm-eval). Co-author of Pythia (ICML 2023).
 - [[entities/hamel-husain]] — **Role** | Independent Consultant (Parlance Labs), R&D at AnswerAI, Scout at Bain Capital |
+- [[entities/hearth-ai]] — Hearth AI — First agentic CRM (founded 2022), built on GPT-3.5. Evolved toward agentic personal OS.
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
 - [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawから移行中のユーザーが増加。
 - [[entities/hoeem]] — X/Twitter クリエイター（@hooeem, 169K+ フォロワー）。Claude Certified Architect 試験の全5ドメインを解説したX Articleが60Kブックマーク。Claude Code・Agent SDK・MCPの実践的教育コンテンツを発信。

@@ -31,6 +31,7 @@ Huet created and hosts **[[concepts/builders-unscripted|Builders Unscripted]]**,
 ### Episodes
 
 - **Ep. 1 — Peter Steinberger, Creator of OpenClaw** (Feb 2026): Interview with Peter Steinberger prior to his joining OpenAI. Covers OpenClaw's viral growth, building with Codex, and the philosophy of AI-native development. [[raw/articles/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]]
+- **Ep. 2 — Ashe Magalhaes, Founder of Hearth AI** (Apr 2026): Interview with Ashe Magalhaes, founder of the first agentic CRM. Covers solar car racing, builder-as-artist philosophy, AI and human connection, and agentic personal OS. [[raw/articles/2026-04-10_openai_builders-unscripted-ep2-ashe-magalhaes]]
 
 ## Key Ideas
 
