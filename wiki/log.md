@@ -1,6 +1,12 @@
 ## 2026-05-13
 
 - **Hot-topics 追加**: `autoresearch`, `agentic-loop`, `codex-goal` の3トピッククラスタを追加
+- **[[entities/ronin-deronin]] 更新**: AI Coding Cost Optimization記事取り込み
+  - `raw/articles/2026-05-12_deronin_10-things-senior-ai-engineers-stopped-wasting-tokens.md` — Note Tweet: 10 token waste checklist (1,012 bookmarks)。Karpathy引用。"90% of your AI coding bill is paying for context you didn't need to send"
+  - `raw/articles/2026-05-12_deronin_how-to-cut-ai-coding-bill-80-percent.md` — X Article: $4,200→$312/monthの完全システム。ルーターconfig、コストベンチマーク、7技法、30日間ロールアウト計画
+  - `concepts/ai-coding-cost-optimization.md` (NEW) — Roninの完全システムを総合。トークンエコノミクス、5 token traps、ルーターアーキテクチャ（Opus→Kimi 2.6→Haiku→Ollama/Qwen 3）、7 practical techniques、30-day rollout
+  - `concepts/model-routing.md` — 更新：Roninの手動configベースルーター vs Augment Prismの自動ルーティングを比較追加
+  - Key insight: Kimi 2.6 matches Sonnet 4.6 on shipped code quality at 1/6 cost
 - **新規ページ作成**:
   - `concepts/pi-autoresearch.md` — ShopifyがKarpathyのAutoresearchをMLトレーニング以外の任意メトリクス最適化に一般化。Tobi Lütkeが32コミットPR。40以上のメトリクス改善（build time 65%高速化、テスト300倍等）。3,600+ GitHub stars。
   - `concepts/agentic-loop.md` — 全エージェントフレームワークが収束する中核パターン（decide → act → observe）。ReAct論文(2022)、Ralph Wiggum Loop、Steve Kinney分析

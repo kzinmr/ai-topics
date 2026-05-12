@@ -571,7 +571,7 @@
 - [[entities/parsagon]] — Parsagon
 - [[entities/reevo]] — Reevo — AI platform.
 - [[entities/rogo]] — Rogo — AI for financial services. $750M valuation. 25K+ users across 150 firms.
-- [[entities/ronin-deronin]] — Ronin (@DeRonin_) — 19-year-old AI entrepreneur, Skill Graph architecture creator, CEO CloseAI_hq, Advisor MindoAI
+- [[entities/ronin-deronin]] — Ronin (@DeRonin_) — 19-year-old AI entrepreneur, Skill Graph architecture creator, AI coding cost optimization system ($4,200→$312/mo). CEO CloseAI_hq, Advisor MindoAI
 - [[entities/scale-ai]] — Scale AI — Data labeling and AI infrastructure. Founded 2016. Key supplier to major AI labs.
 - [[entities/the-browser-company]] — The Browser Company — Maker of Arc browser, reimagining web browsing with AI integration.
 - [[entities/thinking-machines-lab]] — Thinking Machines Lab — AI research lab founded by ex-OpenAI CTO Mira Murati. Tinker fine-tuning API. $2B seed at $12B valuation.
@@ -596,6 +596,7 @@
 - [[concepts/ai-autonomy-debate]] — AI Autonomy Debate
 - [[concepts/ai-bubble-economics]] — AI Bubble Economics
 - [[concepts/ai-coding-reliability]] — AI Coding Reliability
+- [[concepts/ai-coding-cost-optimization]] — AI Coding Cost Optimization (Ronin's Complete System) — $4,200→$312/month through context discipline, multi-model routing, prompt caching, and 7 practical techniques. Router config, benchmarks, 30-day rollout plan.
 - [[concepts/ai-evals]] — AI Evals (AI Evaluation Systems)
 - [[concepts/ai-index-report-2026]] — 2026 AI Index Report
 - [[concepts/ai-ready-apis]] — AI-Ready APIs（AIエージェント向けAPI設計）。AIエージェントをAPI消費者として想定したAPI設計の概念。機械可読スキーマ、エージェント認識セキュリティ、コントラクトテストの重要性。Postman 2025調査（5,700人対象）のAI-APIギャップ分析を含む。
