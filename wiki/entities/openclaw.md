@@ -10,7 +10,7 @@ sources:
   - https://build.nvidia.com/spark
   - https://nemoclawai.io/blog/getting-started-nemoclaw-dgx-spark/
   - https://docs.nvidia.com/nemoclaw/latest/get-started/quickstart.html
-tags: [entity, framework, local-llm, open-source, telegram]
+tags: [entity, framework, local-llm, open-source, agent-communication]
 ---
 
 # OpenClaw
@@ -146,3 +146,8 @@ http://127.0.0.1:18789/#token=<your-gateway-token>
 ## References
 
 - docs.openclaw.ai--pi-integration-architecture
+- [[raw/articles/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]] — OpenAI Builders Unscripted interview with Peter Steinberger (Feb 2026)
+
+## Media & Press
+
+- **Builders Unscripted Ep. 1** (OpenAI, Feb 2026): Romain Huet interviews Peter Steinberger about OpenClaw's origin, building with Codex, and open source philosophy. [[raw/articles/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]]

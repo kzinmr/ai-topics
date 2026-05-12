@@ -1,3 +1,13 @@
+## 2026-05-12 01:35 UTC — Ingest: Builders Unscripted Ep. 1 (Peter Steinberger)
+
+**From**: User request (Discord). YouTube video.
+**Source**: https://www.youtube.com/watch?v=9jgcT0Fqt7U
+**Created**:
+- `entities/romain-huet.md` — Romain Huet entity page (Head of Developer Experience, OpenAI; Builders Unscripted host)
+- `concepts/builders-unscripted.md` — OpenAI interview series concept page
+- `raw/articles/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger.md` — Raw transcript article
+**Modified**: `entities/peter-steinberger.md` (added Media Appearances), `entities/openclaw.md` (added Media & Press), `index.md`, `log.md`
+
 ## 2026-05-12 01:00 UTC — Manual ingest: contextmaxxing concept + Ashwin Gopinath + Sentra.app entity pages
 
 **From**: X bookmark ingest pipeline (missed article). Original article ID: 2053533334949728256

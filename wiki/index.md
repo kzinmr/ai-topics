@@ -41,6 +41,7 @@
 - [[entities/portkey]] — AI agent security platform — inspects actions, stops risky behavior, 99.99% uptime. Acquired by Palo Alto Networks (Q4 2026).
 - [[entities/ramp]] — Ramp
 - [[entities/reflexive-ai]] — Reflexive AI Usage
+- [[entities/romain-huet]] — Romain Huet — Head of Developer Experience at OpenAI, host of Builders Unscripted
 - [[entities/roocode]] — RooCode
 - [[entities/salesforce-headless-360]] — Salesforce's agent-first platform restructuring. Exposes full CRM via APIs, MCP, CLI. Browser UI is now optional.
 - [[entities/samuelcolvin]] — samuelcolvin
@@ -837,6 +838,7 @@
 - [[concepts/advanced-tool-use]] — Advanced Tool Use
 - [[concepts/agent-skills]] — Agent Skills
 - [[concepts/browser-use-production-architecture]] — Browser Use Production Architecture — SQS-to-Lambda architecture for running browser agents at scale
+- [[concepts/builders-unscripted]] — Builders Unscripted — OpenAI interview series hosted by Romain Huet, spotlighting AI builder stories
 - [[concepts/building-effective-agents]] — Building Effective Agents
 - [[concepts/chain-of-thought]] — Chain of Thought
 - [[concepts/context-engineering]] — Context Engineering

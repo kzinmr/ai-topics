@@ -1,0 +1,61 @@
+---
+title: Builders Unscripted
+type: concept
+created: 2026-05-12
+updated: 2026-05-12
+status: L1
+sources:
+  - https://www.youtube.com/watch?v=9jgcT0Fqt7U
+tags:
+  - developer-experience
+  - openai
+  - agentic-engineering
+  - coding-agents
+  - developer-experience
+---
+
+# Builders Unscripted
+
+**Builders Unscripted** is an interview series produced by **OpenAI**, hosted by **Romain Huet** (Head of Developer Experience). The series spotlights the stories behind real AI projects and the mindset that makes them possible. Tagline: *"You can just build things."*
+
+## Format
+
+Each episode features an unscripted conversation between Huet and a builder who is pushing the boundaries of AI-assisted software development. The format emphasizes authentic, builder-to-builder dialogue over polished presentations — revealing the real workflows, failures, and breakthroughs behind notable AI projects.
+
+## Episodes
+
+| # | Title | Guest | Date | Duration | Key Topics |
+|---|-------|-------|------|----------|------------|
+| 1 | Peter Steinberger, Creator of OpenClaw | **Peter Steinberger** (@steipete) | Feb 24, 2026 | 31:28 | OpenClaw's viral growth, building with Codex, "vibe coding" critique, open source philosophy, AI-native solo development |
+
+### Ep. 1 — Peter Steinberger, Creator of OpenClaw
+
+Romain Huet interviews Peter Steinberger, creator of OpenClaw, prior to Steinberger joining OpenAI. Key themes:
+
+- **OpenClaw's viral moment**: From a personal playground to a global phenomenon with WSJ coverage, 1,000-person community events, and worldwide meetups
+- **The dopamine hit of AI building**: Steinberger describes his first Claude Code experience as mind-blowing — a 30-40% hit rate that still felt revolutionary
+- **"Vibe coding is a slur"**: Steinberger pushes back on dismissive terminology, arguing that effective AI use is a practiced skill
+- **Building with Codex**: How Steinberger used Codex to build OpenClaw itself — shifting from writing code to expressing intention
+- **Most code is boring**: The insight that most software is CRUD/boilerplate, making it a perfect fit for AI automation
+- **Open source as serendipity engine**: Community contributions create use cases the original builder never imagined
+- **Playful approach**: Advice for developers — start by building something you've always wanted to build
+- **2026 prediction**: "2026 will be an interesting one"
+
+Full article: [[raw/articles/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]]
+
+## Themes Across the Series
+
+As the series grows, recurring themes include:
+
+- **AI-native development**: How builders are rethinking software creation with AI agents
+- **Toolchain evolution**: The shift from IDE-centric to agent-centric development environments
+- **Builder mindset**: The psychological and philosophical dimensions of building in the AI era
+- **Open source dynamics**: How AI tools interact with open-source communities and philosophies
+
+## Related
+
+- [[entities/romain-huet]] — Series host; Head of Developer Experience at OpenAI
+- [[entities/peter-steinberger]] — Ep. 1 guest; creator of OpenClaw
+- [[entities/openai-codex]] — The coding agent frequently discussed in the series
+- [[concepts/agentic-engineering]] — Central paradigm explored across episodes
+- [[concepts/openclaw]] — The framework at the center of Ep. 1

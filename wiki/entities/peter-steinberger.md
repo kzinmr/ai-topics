@@ -138,6 +138,12 @@ This conflict validated his core thesis: **open-source tooling should not depend
 
 Steinberger maintains a live blurb at **whatmodelispeterusing.com** — tracking which models he's currently using for different tasks. This reflects his **evaluation-first** approach: he doesn't commit to a single model, but chooses based on the task.
 
+## Media Appearances
+
+### Talks & Interviews
+
+- **"Builders Unscripted: Ep. 1 — Peter Steinberger, Creator of OpenClaw"** (Feb 2026): 31-min interview with Romain Huet (OpenAI). Covers OpenClaw's viral growth, building with Codex, "vibe coding" critique, and open source philosophy. Recorded prior to joining OpenAI. [[raw/articles/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]]
+
 ## Related
 
 - [[concepts/openclaw-ecosystem]] — The framework he created
