@@ -1,3 +1,9 @@
+## [2026-05-13] enrich | Agentic Search: In-Prompt RL section + Hugo Bowne-Anderson annotated talk
+- id: concept-agentic-search-in-prompt-rl-2026-05-13
+- summary: Saved Hugo Bowne-Anderson's annotated Substack transcript of Doug Turnbull's "How To Build Your First Agentic Search Application" talk as raw article `2026-02-21_hugobowne_how-to-build-first-agentic-search.md`. Added new "In-Prompt Reinforcement Learning" section to [[concepts/agentic-search]] covering the validator-as-dissatisfied-user pattern, RLHF vs in-prompt RL comparison table, validator taxonomy (LLM-as-Judge, reranker, rule-based, domain model), and connection to the broader harness architecture. Updated concept page sources and date.
+- touched:
+  - [[concepts/agentic-search]]
+  - raw/articles/2026-02-21_hugobowne_how-to-build-first-agentic-search.md
 ## [2026-05-13] update | John Berryman entity + Unharnessed Agents concept + Arcturus Labs blog tracking
 - id: entity-john-berryman-unharnessed-agents-2026-05-13
 - summary: Created [[entities/john-berryman]] entity page (L2, Arcturus Labs founder, ex-GitHub Copilot engineer, author). Created [[concepts/unharnessed-agents]] concept page documenting Berryman's anti-harness thesis ("agent harness" is wrong frame, agents should leave the IDE, skills are new programs). Updated [[concepts/harness-commoditization]] with comparative analysis table (Amp vs Berryman). Saved raw article `2026-04-24_arcturus-labs_unharnessed-agents.md`. Added Arcturus Labs to blogwatcher DB + OPML with RSS feed. Moved from concepts/john-berryman.md stub. Fixed Doug Turnbull entity wikilink.

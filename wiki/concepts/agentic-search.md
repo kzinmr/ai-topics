@@ -1,7 +1,7 @@
 ---
 title: Agentic Search
 created: 2026-04-30
-updated: 2026-05-05
+updated: 2026-05-13
 type: concept
 tags:
   - search
@@ -22,6 +22,7 @@ sources:
   - raw/articles/2026-04-06_softwaredoug-agentic-search-grep-moment.md
   - raw/articles/2026-03-30_claude-web-search-dynamic-filtering.md
   - raw/articles/2026-04-28_softwaredoug-can-agents-replace-search-stack.md
+  - raw/articles/2026-02-21_hugobowne_how-to-build-first-agentic-search.md
   - https://arxiv.org/abs/2602.21456
   - https://arxiv.org/abs/2603.20432
   - https://www.sid.ai/research/sid-1-technical-report
@@ -348,6 +349,58 @@ Turnbull warns that the "grep moment" has diminishing returns:
 > *"While `grep` is having a moment, high-quality retrieval still matters. Eventually, the most appropriate tool for an agent is a well-tuned `search` function."*
 
 This mirrors the Level 1 finding (SID-1: RL-trained retrieval outperforms both vector search and pure grep-based approaches) and the Level 3 finding (retrieval tools can harm file-system exploration). The article suggests the optimal path is a **well-tuned search harness**, not an either/or choice.
+
+### In-Prompt Reinforcement Learning (February 2026)
+
+In his February 2026 Vanishing Gradients interview [[raw/articles/2026-02-21_hugobowne_how-to-build-first-agentic-search]], Turnbull introduced a concrete technique for improving agentic search quality: **in-prompt reinforcement learning** — simulating reward signals within the prompt itself to guide the agent without manual human intervention.
+
+#### The Problem: Domain Blindness
+
+Agents lack domain-specific knowledge. Example from the talk: a user searching for a "bistro table" for a restaurant may get results for patio furniture because the LLM associates the term with outdoor settings. Without feedback, the agent **assumes its results are correct** and terminates the search.
+
+#### The Solution: Validator-as-Dissatisfied-User
+
+The core insight: **wrap the agentic loop in a Harness that simulates an unhappy user**:
+
+```
+1. Agent produces results via standard tool-calling loop
+2. Harness validator (LLM-as-judge, reranker, or classifier) inspects each result
+3. If relevant → validator appends "Great work!" to context
+4. If irrelevant → validator appends "This doesn't make me happy! Sorry!"
+5. Agent re-enters the loop with negative feedback → reformulates query
+6. Loop continues until all results pass validation
+```
+
+This exploits the LLM's **sycophantic nature** — the model's deep desire to please — to align it with user goals. Negative feedback functions as a **reward signal** that pushes the agent away from bad search spaces.
+
+#### What Makes It "In-Prompt RL"
+
+Unlike traditional RLHF (which requires training runs, human raters, and model weight updates), in-prompt RL operates entirely within the **inference context**:
+
+| Dimension | RLHF | In-Prompt RL |
+|-----------|------|-------------|
+| Training required | Yes (reward model + PPO/DPO) | No (inference only) |
+| Feedback source | Human raters | Automated validator (LLM/rules) |
+| Weight modification | Yes | No — pure context manipulation |
+| Iteration speed | Hours/days (training runs) | Seconds (same inference loop) |
+| Adaptability | Requires retraining for new domains | Prompt-level changes only |
+
+#### What to Use as Validators
+
+Components previously discarded from the traditional search stack find new purpose here — not as retrieval middleware, but as **validation functions** in the outer harness:
+
+| Validator Type | Use Case | Example |
+|----------------|----------|---------|
+| **LLM-as-Judge** | Semantic relevance assessment | "Does this result answer the user's question?" |
+| **Reranker/Classifier** | Objective relevance scoring | Cross-encoder scores, metadata checks |
+| **Rule-Based** | Hard business constraints | "Must have review ≥ 4.0", "Must be in-stock" |
+| **Domain Model** | Specialized knowledge | Detecting "bistro table ≠ patio furniture" |
+
+#### Connection to the Harness Architecture
+
+In-prompt RL is a specific **implementation pattern** within the broader two-loop harness architecture. The harness (outer loop) doesn't just validate — it provides **reinforcement signals** that actively shape the agent's search trajectory. This is distinct from simpler harness patterns that only check a final binary pass/fail.
+
+Sources: [[raw/articles/2026-02-21_hugobowne_how-to-build-first-agentic-search]], [[raw/articles/2026-02-20_doug-turnbull-build-first-agentic-search-app]]
 
 ### Discussion: "Will Agents Replace Search Teams?" (January 2026)
 
