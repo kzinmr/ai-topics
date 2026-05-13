@@ -19,6 +19,20 @@
   - `concepts/societal-shadow.md` — missing closing --- frontmatter separator
   - `concepts/ai-coding-workflows.md` — corrupted frontmatter line (truncated source entry)
 
+---
+
+## [2026-05-13] index | Added 20 orphan concept pages to index.md
+
+- Added 20 high-quality concept pages (not previously listed) to the Concepts section:
+  - ai-infrastructure-engineering/distributed-training, ai-infrastructure-engineering/hardware-lottery, ai-infrastructure-engineering/pytorch-gpu-memory-profiling
+  - ai-organization/ai-org-context-as-moat, ai-organization/ai-org-from-hierarchy-to-intelligence, ai-organization/ai-org-solo-founder-and-super-ic
+  - ai-regulation-2026, ai-safety, ai-video-generation-2026, anthropic-managed-agents
+  - bitsandbytes, chatgpt-images-2.0, chief-of-staff-agent-patterns, claude-mythos-preview, cmu-llms-methods-applications
+- Updated header counts: Concepts 1253→1273, Total 1834→1854, Indexed 900→920
+- No index corruption found (pipe_prefix: 0, line_number_prefix: 0, triple_brackets: 0, space_prefix: 0)
+- Wiki-health: 980 orphans remain (not auto-applied — max 20 per run), 125 stale pages (31-34d), 5,405 unprocessed raw articles
+
+
 ## [2026-05-13] lint | Index audit — orphan entries identified
 - 21 orphan index entries found (pointing to non-existent files):
   - `entities/_index` — index files don't need separate entries, remove from index
