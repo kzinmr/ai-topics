@@ -67,8 +67,12 @@ Collaborating with NVIDIA, vLLM, and SGLang to make `renderers` a reference stan
 
 ## Key People
 
-- **Johannes Hagemann** — Co-founder
-- **Vincent Weisser** — Co-founder & CEO
+- **[[vincent-weisser|Vincent Weisser]]** ([@vincentweisser](https://x.com/vincentweisser)) — Co-founder & CEO. Building open superintelligence stack.
+- **Johannes Hagemann** — Co-founder.
+- **[[will-brown|Will Brown]]** ([@willccbb](https://x.com/willccbb)) — Research. "Reward hacking." PhD Columbia (2024). Leads [[verifiers-rl|verifiers]] and [[prime-rl]]. COLT 2024.
+- **[[florian-brand|Florian Brand]]** ([@xeophon](https://x.com/xeophon)) — Research Engineer, Evals. Editor at Interconnects (open models).
+- **[[elie-bakouch|Elie Bakouch]]** ([@eliebakouch](https://x.com/eliebakouch)) — Training LLMs. Previously HuggingFace (SmolLM, FineWeb).
+- **[[grad62304977|Grad]]** ([@Grad62304977](https://x.com/Grad62304977)) — Pseudonymous RL researcher. GRPO, reward engineering.
 
 ## Related Pages
 
@@ -78,3 +82,8 @@ Collaborating with NVIDIA, vLLM, and SGLang to make `renderers` a reference stan
 - [[grpo]]
 - [[trl-transformer-reinforcement-learning]]
 - [[open-source-rl-libraries-comparison]]
+- [[vincent-weisser]] — Co-founder & CEO
+- [[will-brown]] — RL research
+- [[florian-brand]] — evals research
+- [[elie-bakouch]] — LLM training
+- [[grad62304977]] — RL researcher

@@ -1,3 +1,14 @@
+## 2026-05-13 09:15 UTC — Prime Intellect people entity pages + cross-links
+
+- **📄 エンティティページ新規作成**: 5名のPrime Intellect関係者ページを新規作成し、[[entities/prime-intellect]]にクロスリンク。
+  - `[[entities/vincent-weisser]]` — Co-founder & CEO (@vincentweisser, 29K followers)
+  - `[[entities/will-brown]]` — Research, "reward hacking" (@willccbb, 43.5K followers). PhD Columbia. prime-rl/verifiers creator.
+  - `[[entities/florian-brand]]` — Research Engineer, evals (@xeophon, 13.2K followers). Interconnects editor.
+  - `[[entities/elie-bakouch]]` — Training LLMs (@eliebakouch, 15K followers). Previously HuggingFace (SmolLM, FineWeb).
+  - `[[entities/grad62304977]]` — Pseudonymous RL researcher (@Grad62304977, 9K followers). GRPO, reward engineering.
+- **📋 Prime Intellectページ更新**: Key Peopleセクションを全文クロスリンクにアップグレード。Related Pagesに全5名を追加。
+- **📋 Index更新**: 5エンティティをindex.mdに追加。
+
 ## 2026-05-13 11:00 UTC — Active Crawl | GNAP + AEM + InclusionAI Ring-2.6-1T (4 wiki pages + 3 raw articles)
 
 - **📄 概念ページ新規作成**: `[[concepts/gnap-git-native-agent-protocol]]` — Git-Native Agent Protocol: farol-teamの軽量オープンソースプロトコル。git repoを共有する4つのJSONファイルでAIエージェントチームを調整。ゼロサーバー、ゼロデータベース。MCP/A2Aと補完的。

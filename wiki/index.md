@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-13 | Total pages: 1795 | Indexed entries: 849 | Not in index: 946 |
+> Last updated: 2026-05-13 | Total pages: 1796 | Indexed entries: 850 | Not in index: 946 |
 
 ## Entities (580 pages)
 
@@ -15,12 +15,15 @@
 - [[entities/company-ai-pilled]] — Company AI Pilled
 - [[entities/content-engine]] — Content Engine
 - [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
+- [[entities/elie-bakouch]] — Elie Bakouch — Training LLMs at Prime Intellect, previously HuggingFace (SmolLM, FineWeb, FinePDF). Latent Space podcast guest.
 - [[entities/evis-drenova]] — Evis Drenova
 - [[entities/fintool]] — Fintool
+- [[entities/florian-brand]] — Florian Brand (@xeophon) — Research Engineer at Prime Intellect (evals). Editor at Interconnects (open models). OSWorld critique.
 - [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs. Author of "Misplaced panic over AI progress" (May 2026) critiquing METR's 50%-time-horizon methodology.
 - [[entities/garry-tan]] — Garry Tan — YC President & CEO, engineer-turned-VC, creator of G Stack. Proponent of "Meta-Meta-Prompting" and "Fat Skills, Fat Code, Thin Harness" AI agent architecture. Uses OpenClaw + Hermes Agent for routing.
 - [[entities/george-hotz]] — George Hotz (geohot)
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
+- [[entities/grad62304977]] — Grad (@Grad62304977) — Pseudonymous RL researcher in Prime Intellect ecosystem. GRPO, reward engineering, effort control.
 - [[entities/grant-slatton]] — Grant Slatton
 - [[entities/inspect]] — Inspect (Ramp)
 - [[entities/jack-clark]] — Jack Clark — Anthropic co-founder, Import AI newsletter. 60%+ probability of autonomous AI R&D by end 2028. Recursive self-improvement forecast.
@@ -443,6 +446,7 @@
 - [[entities/ultraworkers]] — GitHub organization hosting **[[concepts/claw-code]]**, the Rust implementation of the `claw` CLI agent harness. Fastest repo in history to surpass 100K stars. Home of Sigrid Jin and Yeachan Heo's autonomous development demo.
 - [[entities/utcc-utoronto-ca-cks]] — **Blog** | Wandering Thoughts |
 - [[entities/varun-trivedy]] — **X** | @Vtrivedy10 |
+- [[entities/vincent-weisser]] — Vincent Weisser — Co-founder & CEO of Prime Intellect. Building open superintelligence stack. $20.5M raised.
 - [[entities/vtrivedy10]] — **X** | @vtrivedy10 |
 - [[entities/vibevoice]] — Microsoft Research's next-token diffusion TTS model for long-form, multi-speaker conversational audio (up to 90 min, 4 speakers). ICLR 2026 Oral. Open-source (MIT). [[entities/vibevoice|→詳細]]
 - [[entities/walden-yan]] — **Role** | Co-Founder & Chief Product Officer (CPO), Cognition AI |
@@ -451,6 +455,7 @@
 - [[entities/wes-mckinney]] — Wes McKinney — pandas creator, Apache Arrow co-creator, Principal Architect at Posit. Agent Ergonomics thesis: Go/Rust > Python for agentic engineering. Creator of roborev.
 - [[entities/westenberg]] — **Blog** | joanwestenberg.com |
 - [[entities/will-brown]] — **X/Twitter** | @willccbb |
+- [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."
 - [[entities/will-mcgugan]] — **X** | @willmcgugan |
 - [[entities/wirtzdan]] — **Blog** | danielwirtz.com |
 - [[entities/xania-org]] — **Blog** | xania.org |
@@ -588,6 +593,7 @@
 - [[entities/vanta]] — Vanta — Security and compliance automation. $300M+ ARR. YC W18.
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
+- [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."
 
 ## Concepts (1252 pages)
 
