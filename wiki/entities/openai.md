@@ -19,6 +19,7 @@ sources:
   - raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md
   - raw/articles/2026-05-04_techcrunch-anthropic-openai-jv.md
   - raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md
+  - raw/articles/openai.com--signals-research-2026q1-update--45f994a1.md
 ---
 
 # OpenAI
@@ -120,6 +121,20 @@ OpenAI published guidance on how ChatGPT handles user data in model training:
 - **Canadian compliance**: Bilingual (English/French) privacy guide published to meet Canadian regulatory requirements for clear language model training documentation.
 
 This reflects OpenAI's shift toward transparency as models become more capable and handle increasingly personal tasks.
+
+### ChatGPT Adoption Metrics (Q1 2026)
+
+In May 2026, OpenAI published consumer ChatGPT usage data for Q1 2026 via OpenAI Signals:
+
+| Metric | Finding |
+|--------|---------|
+| **Gender parity** | Users with typically feminine names now account for over 50% of usage (among gender-inferred users). Approximate parity was reached in 2025. |
+| **Age diversification** | Users 35+ gained share in Q1, though under-35 users still account for the largest share of total messages. |
+| **Geographic spread** | Fastest-rising countries by messages-per-capita: Latin America & Caribbean, Asia-Pacific, and Africa. Adoption expanding beyond established markets. |
+| **Workplace tasks** | Content creation, health-related documentation, and information retrieval were the fastest-growing use cases. More specialized tasks gaining share over general writing. |
+| **Scope note** | Consumer plans only (Free, Go, Plus, Pro). **Excludes Codex** and enterprise/education — understates total workplace and educational usage. |
+
+Source: [How ChatGPT adoption broadened in early 2026](https://openai.com/signals/research/2026q1-update) (OpenAI Signals). See also [[raw/articles/openai.com--signals-research-2026q1-update--45f994a1.md]].
 
 ## May 2026 Product Launches
 

@@ -3,7 +3,7 @@ title: Agentic Engineering
 type: concept
 slug: agentic-engineering
 created: 2026-04-12
-updated: 2026-05-02
+updated: 2026-05-12
 status: complete
 tags:
   - model
@@ -18,6 +18,9 @@ sources:
   - https://paulhoekstra.substack.com/p/agentic-engineering-the-interface
   - https://paulhoekstra.substack.com/p/agentic-engineering-the-orchestration
   - https://paulhoekstra.substack.com/p/agentic-engineering-the-guardrails
+  - raw/articles/simonwillison.net--2026-may-11-james-shore--ec8c78b4.md
+  - raw/articles/simonwillison.net--2026-may-11-learning-on-the-shop-floor--4f735c2f.md
+  - raw/articles/simonwillison.net--2026-may-11-llm-shebang--34efae05.md
 ---
 
 # Agentic Engineering
@@ -180,6 +183,41 @@ AIによるコミュニケーションが一般化すると、**人間らしい�
 - **スキルの空洞化** — 抽象化に依存しすぎると、低レベルの問題を自力で解決できなくなる
 
 Agentic Engineeringの文脈では、このトレードオフを意識し、抽象化と理解のバランスを取ることが持続可能なエンジニアリングの鍵となる。[[concepts/harness-engineering/agentic-workflows/linear-walkthroughs]]（コード解説の生成）は、この問題への一つの対処法である。
+
+---
+
+## Emerging Practices (May 2026)
+
+### Maintenance Cost Economics — James Shore
+
+Software design expert [James Shore](https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-maintenance-costs) identifies a fundamental economic tension in agentic engineering: **the maintenance-cost multiplier**.
+
+> "Your AI coding agent needs to reduce your maintenance costs. Not by a little bit, either. If you double your output and your cost of maintaining that output stays the same, two times one means you've still doubled your maintenance costs."
+
+This reframes agentic engineering's quality imperative as pure economics — not just "produce better code" but "produce code that's cheaper to maintain." The math is unforgiving: velocity gains must be matched by inverse maintenance cost reductions, or the total cost of ownership increases exponentially ([You Need AI That Reduces Maintenance Costs](https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-maintenance-costs), via [[entities/simon-willison|Simon Willison]]).
+
+### Case Study: Shopify River (Lehrwerkstatt)
+
+CEO [Tobias Lütke](https://x.com/tobi) describes Shopify's internal coding agent **River**, which operates with a radical public-by-default model in Slack:
+
+- **Public by default**: River refuses DMs. All agent interactions happen in public channels, searchable by any Shopify employee.
+- **Lehrwerkstatt (Teaching Workshop)**: The entire shop floor becomes a classroom. 100+ people follow active coding sessions, reacting, adding context, and learning by observation.
+- **Osmosis learning**: No curriculum, training plan, or manager needed — just maximum visibility into how colleagues work with AI agents.
+
+This extends agentic engineering to **public agent interactions** — not just sharing code, but sharing the process. [[entities/simon-willison|Simon Willison]] compares it to Midjourney's early success via public Discord channels, where shared prompts compensated for finicky tool interfaces.
+
+### LLM Shebang: Plain-Text as Executable Agent Scripts
+
+A lightweight agentic engineering pattern using `llm` CLI with shebang lines:
+
+```
+#!/usr/bin/env -S llm -f
+Generate an SVG of a pelican riding a bicycle
+```
+
+With tool integration (`-T` flag) and YAML templates defining Python functions inline, plain English text files become executable agent scripts. This represents the simplest possible agentic interface — no harness, no loop, just a natural language prompt as executable code.
+
+Source: [Using LLM in the shebang line of a script](https://simonwillison.net/2026/May/11/llm-shebang/) ([[entities/simon-willison|Simon Willison]])
 
 ---
 

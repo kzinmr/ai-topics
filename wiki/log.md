@@ -1,3 +1,8 @@
+## 2026-05-12 07:50 UTC — Blog Wiki Ingest | 4 reference updates from blog triage
+
+- Updated `concepts/harness-engineering/agentic-engineering.md`: Added "Emerging Practices (May 2026)" section with 3 subsections — James Shore maintenance cost economics (velocity gains must match inverse maintenance cost reductions), Shopify River Lehrwerkstatt case study (public-by-default agent interactions in Slack), LLM shebang pattern (plain-text as executable agent scripts). Added 3 raw article sources.
+- Updated `entities/openai.md`: Added "ChatGPT Adoption Metrics (Q1 2026)" section — gender parity reached, 35+ age group gaining share, geographic spread into LatAm/APAC/Africa, health documentation as fastest-growing workplace task. Scope note: excludes Codex and enterprise. Added 1 raw article source.
+
 - **2026-05-13**: Cross-synthesis enrichment — integrated Armin Ronacher's "Agents Built for Agents Building Agents" Pi philosophy (lucumr.pocoo.org, Jan 2026) with the Hugo+Ivan workshop pages. **Enriched concepts/agents-that-build-themselves.md**: added "Armin Ronacher's Perspective" section — session trees, extension state in sessions, no-MCP philosophy, write→reload→test→loop pipeline, Software Building Software lived experience. **Enriched entities/pi.md**: added "Agents Built for Agents Building Agents" section with session trees, extension state persistence, no-MCP philosophy, Armin quotes. **Enriched entities/armin-ronacher.md**: added "Pi Experience" section bridging Pi philosophy to Hugo+Ivan's Pure Python workshop. Source: raw article `lucumr.pocoo.org--2026-1-31-pi--0eb410a7.md` (already ingested).
 ## 2026-05-13 07:45 UTC — Lance Martin「Learning the Bitter Lesson」取り込み
 
