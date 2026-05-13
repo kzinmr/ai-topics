@@ -1,7 +1,8 @@
-## 2026-05-13 04:50 UTC — Lance Martin Context Engineering for Agents 生記事保存 + 概念ページ拡充 + ブログ監視追加
+## 2026-05-13 04:50 UTC — Lance Martin Context Engineering for Agents 生記事保存 + 概念ページ拡充 + ブログ監視追加 + 相互リンク
 
 - **Raw記事保存**: `wiki/raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents.md` — Lance Martin による Context Engineering のマイルストン記事。4バケット分類（Write/Select/Compress/Isolate）を提唱。Anthropic/Claude Code/Manus/Cognition/Windsurf/ChatGPT等の実例を交えた包括的フレームワーク。
-- **✏️ 概念ページ拡充**: `[[concepts/harness-engineering/context-engineering]]` — Lance Martin の Write / Select / Compress / Isolate 4バケット分類セクションを新設。各バケットの詳細（Write: スクラッチパッド+長期記憶、Select: ツール選択RAG+メモリ検索+知識選択、Compress: 要約+トリミング、Isolate: マルチエージェント+サンドボックス+State分離）と Anthropic 3戦略との対応表を含む。source: `raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents.md`
+- **✏️ 概念ページ拡充**: `[[concepts/harness-engineering/context-engineering]]` — Lance Martin の Write / Select / Compress / Isolate 4バケット分類セクションを新設。各バケットの詳細（Write: スクラッチパッド+長期記憶、Select: ツール選択RAG+メモリ検索+知識選択、Compress: 要約+トリミング、Isolate: マルチエージェント+サンドボックス+State分離）と Anthropic 3戦略との対応表を含む。さらに Reduce/Offload/Isolate への進化マッピングを追加。source: `raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents.md`
+- **🔗 相互リンク**: `[[concepts/reduce-offload-isolate]]` ↔ `[[concepts/harness-engineering/context-engineering]]` — 4バケット→3原則の進化マッピングを双方向に追加
 - **🔧 エンティティページ更新**: `[[entities/lance-martin]]` — sourcesに生記事を追加、updatedを2026-05-13に更新
 - **📡 ブログ監視追加**: Lance Martin (`rlancemartin.github.io`) を OPML + blogwatcher DB に追加。RSSフィード: `http://rlancemartin.github.io/feed.xml`。初回スキャン: 10記事（既読化済み）
 

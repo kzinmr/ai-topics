@@ -24,6 +24,7 @@ related:
   - concepts/agent-harness-comparison
   - concepts/harness-commoditization
   - concepts/unharnessed-agents
+  - concepts/harness-engineering/context-engineering
   - entities/claude-code
   - entities/manus
   - entities/lance-martin
@@ -146,6 +147,7 @@ See [[entities/jeff-huber]] for Huber's full framework and background.
 - [[concepts/harness-commoditization]] — Thorsten Ball's thesis: harness differentiation is dying as models absorb features
 - [[concepts/unharnessed-agents]] — John Berryman's anti-harness thesis
 - [[concepts/harness-effect]] — Same model, different harness = 5-40pp performance difference
+- [[concepts/harness-engineering/context-engineering]] — Martin's comprehensive 4-bucket taxonomy (Write/Select/Compress/Isolate)
 
 ## See Also
 

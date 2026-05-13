@@ -195,6 +195,18 @@ Lance Martin（[[entities/lance-martin]]）はAnthropicの3戦略を拡張し、
 
 Martinのフレームワークの革新性は、**WriteとSelectの分離** — 保存と検索を独立した関心事として扱い、それぞれに固有の技術スタックが存在することを明確化した点にある。
 
+### Reduce/Offload/Isolate への進化
+
+Martinは本記事（June 2025）の半年後、High Signalポッドキャスト（Dec 2025）でフレームワークを **Reduce / Offload / Isolate** の3原則に凝縮・再編成した。4バケット→3原則へのマッピングと詳細は [[concepts/reduce-offload-isolate]] を参照。
+
+| 4バケット (Jun 2025) | 3原則 (Dec 2025) | 変化 |
+|---------------------|-----------------|------|
+| Write + Select | → **Offload** | 保存と検索を統合。ファイルシステムを外部記憶として、選択的読み出しを行うパターンに一本化 |
+| Compress | → **Reduce** | 軌跡要約・コンパクションを「縮小」として再定義。cache hit rateを最重要指標に |
+| Isolate | → **Isolate** | 不変だが、Ralph Wiggumループ・fresh contextの重要性が強化された |
+
+この進化は、実運用経験から得た **「コンテキストは最も稀少なリソース」** という深まった理解を反映している。
+
 ## Just-in-Time (JIT) コンテキスト
 
 事前計算された埋め込み検索から、実行時のJIT読み込みへのパラダイムシフト。
@@ -303,6 +315,7 @@ Khairallahの実践者フレームワークは、既存の技術的知見（Anth
 ## 関連概念
 
 - [[concepts/context-engineering]] — 上位概念: Harness Engineering
+- [[concepts/reduce-offload-isolate]] — Lance Martinの4バケット→3原則への進化形
 - [[concepts/harness-engineering/agentic-workflows/context-window-management]] — Willisonのコンテキスト管理パターン
 - [[concepts/harness-engineering/system-architecture/context-compaction]] — OpenAI Responses APIの圧縮メカニズム
 - [[concepts/harness-engineering/system-architecture/context-anxiety]] — Claude Sonnet 4.5のコンテキスト不安現象
