@@ -1,3 +1,20 @@
+## [2026-05-13] update | Hugo Bowne-Anderson entity enrichment + duplicate merge + x-accounts
+- id: entity-hugo-bowne-anderson-enrichment-2026-05-13
+- summary: Enriched [[entities/hugo-bowne-anderson]] (L3) with Privacy Engineering section (from "15 Privacy Questions" with Katharine Jarmul) and Agent Harness Engineering section (Harness Reading List, Lance Martin's Reduce/Offload/Isolate, Jeff Huber context engineering, Ivan Leo self-extending agents, Doug Turnbull agentic search). Added 5 new Related People. Merged and deleted duplicate [[entities/hugo-bowne]] stub. Added @hugobowne to x-accounts.yaml. Fixed wikilink in concepts/ai-safety.md.
+- touched:
+  - [[entities/hugo-bowne-anderson]]
+  - [[entities/hugo-bowne]] (deleted)
+  - [[concepts/ai-safety]]
+  - [[config/feeds/x-accounts.yaml]]
+
+## [2026-05-13] update | Max Rumpf エンティティページ + SID-1 コンセプトページ作成
+- id: entity-max-rumpf-sid-1-2026-05-13
+- summary: Created [[entities/max-rumpf]] (L2, CEO/Co-founder SID.ai, SID-1 developer) and [[concepts/sid-1]] (L2, first RL-trained agentic retrieval model). Added @maxrumpf to x-accounts.yaml. Web-sourced from maxrumpf.com, sid.ai, X, LinkedIn, YC, podcasts.
+- touched:
+  - [[entities/max-rumpf]]
+  - [[concepts/sid-1]]
+  - [[config/feeds/x-accounts.yaml]]
+
 ## [2026-05-13] update | Harness Engineering blog survey expansion
 - id: blog-harness-engineering-survey-expansion-2026-05-13
 - summary: Expanded the Harness Engineering blog into a survey covering pre-2025 precursors, trace-based open evals, Agent-as-OS framing, RL-harness lifecycle, MGH, and practical harness adjustment layers.

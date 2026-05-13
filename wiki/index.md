@@ -22,7 +22,6 @@
 - [[entities/george-hotz]] — George Hotz (geohot)
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
 - [[entities/grant-slatton]] — Grant Slatton
-- [[entities/hugo-bowne]] — Hugo Bowne-Anderson — Data scientist and AI privacy engineering writer. Co-author of "15 Privacy Questions Every AI Builder is Asking" with Katharine Jarmul.
 - [[entities/inspect]] — Inspect (Ramp)
 - [[entities/jack-clark]] — Jack Clark — Anthropic co-founder, Import AI newsletter. 60%+ probability of autonomous AI R&D by end 2028. Recursive self-improvement forecast.
 - [[entities/jaya-gupta]] — Jaya Gupta — Foundation Capital partner. Organizational moat theory, Context Graphs. Argues company shape is the last durable moat in AI. 3.2M-view X Article author.
@@ -225,7 +224,7 @@
 - [[entities/hoeem]] — X/Twitter クリエイター（@hooeem, 169K+ フォロワー）。Claude Certified Architect 試験の全5ドメインを解説したX Articleが60Kブックマーク。Claude Code・Agent SDK・MCPの実践的教育コンテンツを発信。
 - [[entities/hillel-wayne]] — **Blog** | hillelwayne.com |
 - [[entities/hugging-face]] — **The GitHub of AI** — the central open-source infrastructure layer for machine learning. Platform for sharing, discovering, and deploying ML models, datasets, and demos.
-- [[entities/hugo-bowne-anderson]] — **Data scientist, educator, podcaster, consultant.** Independent AI & data science educator based in Sydney, Australia. Host of the **Vanishing Gradients** podcast. Former Head of Developer Relatio...
+- [[entities/hugo-bowne-anderson]] — **Data scientist, educator, podcaster, consultant.** Independent AI & data science educator. Host of **Vanishing Gradients** podcast. Central voice in agent harness engineering (Reduce/Offload/Isolate with Lance Martin/Anthropic; context engineering with Jeff Huber/Chroma; self-extending agents with Ivan Leo). Agentic search breakthroughs (15-30% NDCG). Privacy engineering framework author. O'Reilly author, ex-DataCamp/Outerbounds/Coiled.
 - [[entities/harrison-chase]] — CEO & Co-founder of LangChain. Articulated the "Open Models / Open Runtime / Open Harness" three-layer agent architecture framework. LangChain Deep Agents is the reference implementation of an Open Harness.
 - [[entities/hynek-schlawack]] — **X** | @hynek |
 - [[entities/hyperbo]] — hyperboドメインのAIエージェント記事・コンテンツ
@@ -294,6 +293,7 @@
 - [[entities/matx]] — AI chip startup founded by Reiner Pope, focusing on next-gen hardware for LLM training and inference.
 - [[entities/maurycyz-com]] — **Blog** | maurycyz.com |
 - [[entities/max-bernstein]] — **URL:** https://bernsteinbear.com
+- [[entities/max-rumpf]] — Max Rumpf — CEO/Co-founder of SID.ai (YC S23). Developed SID-1, first model trained end-to-end with RL (GRPO) for agentic retrieval. Previously ETH Zürich researcher on AI accelerator design. Writer on JIT Coding, n-of-1 Software, Amdahl's Argument for AI.
 - [[entities/maxime-labonne]] — Head of Post-Training @ Liquid AI. Creator of the LLM Course (78.9k ⭐), abliteration technique, and best-selling author of "LLM Engineer's Handbook" and "Hands-On Graph Neural Networks."
 - [[entities/maximor]] — AI-native finance automation platform. ERP-agnostic Audit-Ready Agents for close/cash/revenue/reporting. Founded by former Microsoft execs. $9M seed from Foundation Capital.
 - [[entities/meridian-labs]] — Independent AI evaluation nonprofit. Steward of Anthropic's Petri alignment testing tool (May 2026), ensuring industry-neutral safety evaluation.
@@ -839,6 +839,7 @@
 - [[concepts/areal]] — AReaL: Ant GroupのRLライブラリ。非同期トレーニングに特化し、interruptible rolloutsとPPO staleness対応で最大スループットを追求。DeepSpeed/Megatron対応、vLLM/SGLang推論。
 - [[concepts/simpleqa]] — SimpleQA — 事実知識のサニティチェック。4,326問の敵対的収集質問。RL学習後の知識喪失検出に重要。SimpleQA Verified（DeepMind 2025）ではトップスコア55.6%。
 - [[concepts/societal-shadow]] — QC (Qiaochu Yuan)が提唱した概念。RLHFがLLMに語らせないための禁止リストが逆説的に社会の影（性的・暴力的・非常識なもの全て）をカタログ化した皮肉な現象。Jungの影、Batailleの侵犯論、Foucaultの権力論、Kristevaの棄却論と接続。技術的対応物としてHH-RLHF, BeaverTails(14カテゴリ), Do-Not-Answer(61 harms), SORRY-Bench(45カテゴリ), HarmBench(510 behaviors), Llama Guard, Aegis, OpenAI Moderation API, Shadow Alignment等20以上のデータセット/システムを網羅。増幅メカニズムとしてカテゴリ分裂加速・Guardrail多層化・訓練/評価循環・プラットフォーム差異・Shadow武器化・Over-Refusal拡大の6軸を記述。
+- [[concepts/sid-1]] — SID-1 (SID.ai, Dec 2025): first model trained end-to-end with RL (GRPO) for agentic retrieval. Recall 0.84, beats GPT-5.1/Sonnet 4.5/Gemini 3 Pro. 24x faster, 3-4 orders of magnitude cheaper than frontier models. Drop-in compatible subagent for RAG replacement.
 - [[concepts/vibe-eval]] — Vibe-Eval — Reka AIのパーソナライズドマルチモーダルeval。269の専門家作成プロンプト。>50%のhard問題が全フロンティアモデルで未解決。逆スケーリング現象あり。
 - [[concepts/waluigi-effect]] — Cleo Nardoが提唱したLLMアライメントの根本的限界。望ましい性質Pへの訓練が逆性質¬Pの呼び出しを容易にする現象。Simulator Theory・デリダの脱構築・構造主義的物語論に基づく3つのメカニズム。Waluigiがアトラクター状態である理論。RLHFが問題を悪化させる証拠。Jailbreaking（DAN等）の再概念化。Societal Shadowの技術的メカニズムを提供。
 - [[concepts/why-harness-development-boom]] — Why Agent Harness Development Is Accelerating — Five structural forces driving the explosion in harness engineering: measurable Harness Effect (5-40pp), harness compound advantage vs model reset, off-the-shelf framework ceilings, scale of visible investment (513K LOC Claude Code), and seven-plane architecture moat. Synthesis of Kartik Labhshetwar's analysis.

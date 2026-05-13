@@ -364,6 +364,16 @@ accounts:
   - devops
   - software-engineering
   notes: attrs/structlog creator, Python packaging, DevOps
+- handle: '@hugobowne'
+  name: Hugo Bowne-Anderson
+  blog: https://hugobowne.substack.com
+  topics:
+  - ai
+  - agent-harness
+  - harness-engineering
+  - data-science
+  - education
+  notes: Vanishing Gradients host, agent harness educator, O'Reilly author, ex-DataCamp/Outerbounds
 - handle: '@karrisaarinen'
   name: Karri Saarinen
   topics:
@@ -681,3 +691,16 @@ accounts:
   - egpu
   - startup
   notes: 'Co-founder of Cua (YC X25, trycua/cua) — open-source computer-use agent framework. Co-founder of Lucebox — building personal computers for local AI agents with custom CUDA kernels. Collaborates with @davideciffa on speculative decoding (DFlash), megakernel optimization, and eGPU benchmarking. Focus: making consumer GPUs competitive for local LLM inference through software-level optimization.'
+- handle: '@maxrumpf'
+  name: Max Rumpf
+  personal_site: https://maxrumpf.com
+  topics:
+  - ai
+  - ai-research
+  - information-retrieval
+  - reinforcement-learning
+  - grpo
+  - rag
+  - coding-agents
+  - ycombinator
+  notes: 'CEO/Co-founder of SID.ai (YC S23) — AI research lab for retrieval. Developed SID-1, first model trained end-to-end with RL (GRPO) for agentic retrieval. Previously researcher at ETH Zürich on AI accelerator design. Writer on JIT Coding, n-of-1 Software, Amdahl''s Argument for AI.'

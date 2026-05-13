@@ -4,17 +4,22 @@ type: entity
 aliases: [hugobowne, Hugo Bowne Anderson]
 status: complete
 created: 2026-04-14
-updated: 2026-04-14
-depth_tracking: {'current': 'L3', 'target': 'L3', 'last_reviewed': datetime.date(2026, 4, 14), 'notes': "Core philosophy documented with >30% quote rate from O'Reilly articles and Vanishing Gradients podcast"}
+updated: 2026-05-13
+depth_tracking: {'current': 'L3', 'target': 'L3', 'last_reviewed': datetime.date(2026, 5, 13), 'notes': "Added Privacy Engineering + Agent Harness Engineering sections from 2026 content"}
 tags:
   - person
-  - model
+  - agent-harness
+  - harness-engineering
   - data-science
   - mlops
   - evaluation
   - workflow
   - education
-sources: []
+  - privacy
+  - blogger
+sources:
+  - raw/articles/2026-05-04_15-privacy-questions-ai-builder.md
+  - https://open-racer-a67.notion.site/The-agent-harness-reading-list-35e14bb7e4a2805d881ae261573ff76f
 ---
 
 
@@ -186,8 +191,73 @@ From Episode 66 with Eric J. Ma (Moderna): The most productive AI systems in ent
 | **Duncan Gilchrist** | Co-author on Human-Centered AI articles | AI policy, human-centered design |
 | **Ryan Lopopolo** | Indirect: Harness Engineering ↔ Structured Automation | Control vs. autonomy, eval-first |
 | **Andrej Karpathy** | Wiki entity; "agentic engineering" | Building with AI, education |
+| **Ivan Leo** | Co-author "Building Agents That Build Themselves" | Google DeepMind, ex-Manus, self-extending agents |
+| **Jeff Huber** | Podcast guest (Ep. 65); co-author harness engineering | Chroma CEO, context engineering |
+| **Lance Martin** | Co-author harness engineering article | Anthropic, Reduce/Offload/Isolate playbook |
+| **Katharine Jarmul** | Co-author "15 Privacy Questions" | Privacy engineering, *Practical Data Privacy* author |
+| **John Berryman** | Podcast guest (Ep. 68) | Agentic search maturity model, Arcturus Labs |
 
 ---
+
+## Privacy Engineering for AI (2026)
+
+In May 2026, Hugo co-authored ["15 Privacy Questions Every AI Builder Is Asking"](https://hugobowne.substack.com/p/15-privacy-questions-every-ai-builder) with **Katharine Jarmul** (author of *Practical Data Privacy*), outlining a comprehensive framework for AI privacy engineering:
+
+- **Privacy is engineering, not just policy** — requires translation of legal/cultural norms into mathematical and architectural implementation
+- **System prompts are public** — anything in a system prompt should be treated as if published on a public website
+- **Agent harness vulnerability** — all information fed through RAG, memory, and context should be treated as potentially exposed (Q4: "Your harness can be exfiltrated")
+
+### Three-Layer Guardrail Architecture
+
+1. **External Deterministic**: Fast regex/hash filters for PII and copyright blocks
+2. **External Algorithmic**: Secondary classifier models (Llama Guard) judging prompt/output safety
+3. **Internal Alignment**: RLHF-trained refusal capabilities
+
+### Privacy Observability
+
+Before complex math, builders should focus on:
+- Mapping data flows — where sensitive data lives and travels
+- Auditing traces — PII in chat logs is the first fix
+- Designating privacy champions rather than collective responsibility
+
+### Tools
+- **Microsoft Presidio** — Open-source NLP for redacting names, addresses, credit cards
+- **Privacy Routing** — API gateway that routes sensitive queries to local open-weight models
+- **Federated Learning + Differential Privacy + Homomorphic Encryption** — For keeping raw data localized
+
+## Agent Harness Engineering (2026)
+
+Hugo emerged as a central voice in the agent harness engineering discourse through a series of high-profile collaborations in 2026:
+
+### The Agent Harness Reading List (May 2026)
+
+Curated as a lightning lesson with **Doug Turnbull**, establishing the foundational framing: *"An agent is just an LLM calling tools in a loop. A harness is everything around it: tools, context, hooks, sandboxes, memory, the loop itself. The LLM is the brain and the harness is the body."* The list provides a progressive curriculum from 131-line Python agents to self-extending agents to production harness engineering.
+
+### Key Collaborations
+
+| Article | Collaborator | Core Insight |
+|---|---|---|
+| [Harness Engineering: Why Agent Context Isn't Enough](https://hugobowne.substack.com/p/harness-engineering-why-agent-context) | **Jeff Huber** (Chroma CEO) | Large context windows aren't a silver bullet; code-writing unlocks emergent reasoning; inner vs outer loop of context engineering |
+| [AI Agent Harness, 3 Principles for Context Engineering, and the Bitter Lesson Revisited](https://hugobowne.substack.com/p/ai-agent-harness-3-principles-for) | **Lance Martin** (Anthropic) | Manus re-architected 5 times. Anthropic rips out Claude Code's harness as models improve. **The 3 Principles: Reduce, Offload, Isolate** |
+| [Building Agents That Build Themselves](https://hugobowne.substack.com/p/building-agents-that-build-themselves) | **Ivan Leo** (Google DeepMind, ex-Manus) | Rebuilds [[entities/pi|Pi]] and [[entities/openclaw|OpenClaw]] ideas in pure Python: agent writes and hot-reloads its own tools, markdown memory compaction, Telegram via FastAPI, Modal sandboxing |
+| [Build Your Own Deep Research Agent](https://youtube.com/live/LUfqQgz1-Os) | Ivan Leo | From raw Gemini API call → clarifying questions → plan → subagents running parallel Exa searches → cited report |
+
+### Agentic Search
+
+With **Doug Turnbull** and **John Berryman**, Hugo explored how agentic loops transform search:
+
+- [How To Build Your First Agentic Search Application](https://hugobowne.substack.com/p/how-to-build-your-first-agentic-search): A dumb keyword tool + agentic loop beats traditional search baselines by **15-30% NDCG** on Wayfair WANDS and Amazon ESCI, with no training
+- [Episode 68: A Builder's Guide to Agentic Search & Retrieval](https://hugobowne.substack.com/p/episode-68-a-builders-guide-to-agentic): John's 5-level maturity model; why LLM-as-judge isn't the shortcut you think
+
+### The Harness Engineering Philosophy
+
+Hugo's harness engineering work bridges two critical tensions in the field:
+
+1. **Minimal tools, maximum capability** — Following Armin Ronacher's [[entities/pi|Pi]] philosophy: four tools (read/write/edit/bash) are sufficient for general computer use. The agent extends itself when needed.
+2. **Context engineering over context dumping** — The Lance Martin interview crystallized the **Reduce, Offload, Isolate** playbook: strip non-essential context, move computation outside the prompt, isolate sensitive operations
+3. **Harness as body, not accessory** — The harness is not optional scaffolding; it's the physical form that lets the LLM brain act in the world
+
+> *"Anthropic rips out Claude Code's harness as models improve"* — Lance Martin on Vanishing Gradients, illustrating the Bitter Lesson in harness design: as models get smarter, harness complexity should decrease, not increase.
 
 ## Key Quotes
 
@@ -224,8 +294,16 @@ From Episode 66 with Eric J. Ma (Moderna): The most productive AI systems in ent
 
 ## Log
 
+- **2026-05-13**: Major enrichment — Added Privacy Engineering section (from "15 Privacy Questions" with Katharine Jarmul), Agent Harness Engineering section (Harness Reading List, Lance Martin's Reduce/Offload/Isolate, Jeff Huber context engineering, Ivan Leo self-extending agents, Doug Turnbull agentic search). Added 5 new Related People entries. Merged duplicate `hugo-bowne.md` stub. Added `@hugobowne` to x-accounts.yaml.
 - **2026-04-14**: Initial entity page creation (L3 depth). Core philosophy, career timeline, podcast episodes, O'Reilly articles, conceptual frameworks, related people mapping.
 
 ## See Also
 
 - [[entities/_index]]
+- [[concepts/agent-harness-comparison]]
+- [[concepts/harness-commoditization]]
+- [[entities/katharine-jarmul]]
+- [[entities/doug-turnbull]]
+- [[entities/pi]]
+- [[entities/openclaw]]
+- [[concepts/guardrails]]

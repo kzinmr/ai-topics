@@ -158,7 +158,7 @@ Before implementing complex math, builders should focus on:
 - **Federated Learning + Differential Privacy**: Keeping raw data localized while training
 - **Red Teaming for Privacy**: Hack days where teams try to extract system prompts and RAG context
 
-See: [[entities/hugo-bowne]], [[entities/katharine-jarmul]]
+See: [[entities/hugo-bowne-anderson]], [[entities/katharine-jarmul]]
 
 ## Sources
 
