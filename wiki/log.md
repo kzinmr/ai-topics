@@ -6,6 +6,14 @@
 - **📋 Entity更新**: `[[entities/lance-martin]]` — sourcesに新規raw記事を追加。
 - **📋 Index更新**: `wiki/index.md` に `rich-suttons-bitter-lesson` を追加。
 
+## 2026-05-13 08:00 UTC — Lance MartinのAIE 2025まとめを取り込み + ambient-agents概念ページ作成
+
+- **Raw記事保存**: `[[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025]]` — AI Engineer World's Fair 2025現地レポート。5大テーマ: Ambient Agents, Agent UX/Bitter Lesson論争, Agent Training (RLVR, Art-E $80), Agent Tools (MCP起源), Agent Evaluation。
+- **📄 概念ページ新規作成**: `[[concepts/ambient-agents]]` — チャットUIなしの非同期的自律実行AIエージェントパラダイム。Devin, Codex, Windsurf, Claude Code事例、Solomon Hykes 4要件、AIE 2025主要テーマ。
+- **✏️ エンティティページ拡充**: `[[entities/ai-engineer-youtube]]` — Flagship Eventsセクション新設（World's Fair 2025の5テーマ表 + 2026予告）、sources/tags更新。
+- **✏️ エンティティページ更新**: `[[entities/lance-martin]]` — Blog/Recent PostsにAIE 2025記事追加、tags/sources更新。
+- **🏷️ SCHEMA更新**: `ambient-agents`, `agent-training` をAI Agentsタグ分類に追加。
+
 ## 2026-05-13 07:40 UTC — AI Engineer YouTubeチャンネルを監視対象に追加
 
 - **🔧 監視設定**: `config/feeds/blogs.opml` に YouTube Channels セクションを新設し、AI Engineer (@aiDotEngineer) のRSSフィードを追加。`blogwatcher-cli add` でDB登録、初回15件を既読化。

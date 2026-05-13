@@ -13,11 +13,12 @@ tags:
   - ai-agents
   - context-engineering
   - open-source
+  - ambient-agents
+  - agent-training
 sources:
   - "[[raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents]]"
-  - "[[raw/articles/2025-07-30_rlancemartin_bitter-lesson-ai-engineering]]"
-  - "[[raw/articles/2025-12-01_rlancemartin_claude-diary]]"
   - "[[raw/articles/2026-01-09_rlancemartin_agent-design-patterns]]"
+  - "[[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025]]"
 ---
 
 
@@ -125,6 +126,7 @@ On the High Signal podcast (Dec 2025), Martin articulated a three-part playbook 
 |---|---|---|
 | Jan 2026 | [Agent design patterns](https://rlancemartin.github.io/2026/01/09/agent_design) | Synthesizes 7 design patterns across production agents (Claude Code, Manus, Cognition); covers context offloading, caching, isolation, and evolution |
 | Jul 2025 | [Learning the Bitter Lesson in AI Engineering](https://rlancemartin.github.io/2025/07/30/bitter_lesson/) | Applies Rich Sutton's "Bitter Lesson" to AI agent design; argues that compute scaling will eventually overtake hand-crafted context management |
+| Jun 2025 | [The state of AI agents — AIE 2025 takeaways](https://rlancemartin.github.io/2025/06/10/aie/) | Conference summary from AI Engineer World's Fair 2025: ambient agents, agent UX (Bitter Lesson debate), agent training (RLVR, Art-E $80 email agent), agent tools (MCP origins), agent evaluation | [[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025]]
 | Jun 2025 | [Context Engineering for Agents](https://rlancemartin.github.io/2025/06/23/context_engineering/) | Foundational framework organizing context management into write, select, compress, and isolate strategies |
 | Apr 2025 | [RAG benchmarking](https://rlancemartin.github.io/2025/04/03/vibe-code/) | Analysis of retrieval strategies and their impact on agent QA performance |
 | Mar 2025 | [How to think about agent frameworks](https://blog.langchain.com/how-to-think-about-agent-frameworks/) | Philosophical post on when and why to use agent orchestration frameworks vs. building from scratch |
