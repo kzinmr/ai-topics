@@ -31,6 +31,13 @@
 | `entities/hoeem.md` | STUB→full enrichment | Removed `status: stub`. Expanded from 69→92 lines. Added: newsletter history (167+ issues, ~3 years), Feb 2026 AI expansion, dual-tier model details, Claude Session Extension Guide, LLM Knowledge Base Course, AI Learning Resources Curation. Expanded Content Domains with crypto+PredictIt/Kalshi details and AI developer tooling subsection. Added `crypto`, `defi`, `sevenc` tags/aliases. |
 
 **Key findings**: hoeem's newsletter (sevenc.substack.com) is a long-running weekly publication that pivoted from pure crypto to crypto+AI in Feb 2026; martin-kleppmann page already had excellent content but corrupted frontmatter needed structural repair.
+## 2026-05-12 18:00 create | Harness Engineering blog article
+- id: blog-harness-engineering-2026
+- summary: Created a blog article synthesizing Harness Engineering from 2025 coding agent loops through May 2026 general-agent harn$
+- touched:
+  - [[blog/2026-05-12_hermes_harness-engineering-from-coding-agents-to-general-agents]]
+  - [[concepts/harness-engineering]]
+  - [[concepts/agent-harness]]
 
 ## 2026-05-12 17:35 — Watchdog: cross-reference fixes + graph analysis update
 - **Fixed cross-reference gaps** (from graph analysis):
