@@ -1,3 +1,12 @@
+## 2026-05-13 09:30 UTC — FIX: Restore overwritten Prime Intellect people pages
+
+- **🔄 上書き復元**: 3名の既存エンティティページをgit履歴から復元し、Prime Intellectクロスリンクのみ追加。
+  - `[[entities/will-brown]]` — 203→206行に復元。vincent-weisser, florian-brand, elie-bakouch へのクロスリンク追加。
+  - `[[entities/florian-brand]]` — 183行に復元。空白のRelated Peopleスロットをvincent-weisser, will-brown, elie-bakouch で埋める。
+  - `[[entities/elie-bakouch]]` — 140→144行に復元。Prime Intellectへの移籍を反映（formerly HuggingFace）。Related WikilinksにPrime Intellect同僚追加。
+- **⚠️ 教訓**: ページ作成前に `search_files` で既存ページの有無を必ず確認。ファイル名だけでなくindex.mdのエントリもチェック。
+- **📋 SCHEMA更新**: `researcher`, `pseudonymous` タグ追加（前回コミットから継続）。
+
 ## 2026-05-13 09:15 UTC — Prime Intellect people entity pages + cross-links
 
 - **📄 エンティティページ新規作成**: 5名のPrime Intellect関係者ページを新規作成し、[[entities/prime-intellect]]にクロスリンク。
