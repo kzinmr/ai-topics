@@ -23,6 +23,9 @@ sources:
   - raw/articles/2026-03-30_claude-web-search-dynamic-filtering.md
   - raw/articles/2026-04-28_softwaredoug-can-agents-replace-search-stack.md
   - raw/articles/2026-02-21_hugobowne_how-to-build-first-agentic-search.md
+  - raw/articles/2026-01-18_arcturus-labs_incremental-ai-adoption-ecommerce-5level.md
+  - raw/articles/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search.md
+  - raw/articles/2025-11-02_softwaredoug_llm-judges-arent-the-shortcut.md
   - https://arxiv.org/abs/2602.21456
   - https://arxiv.org/abs/2603.20432
   - https://www.sid.ai/research/sid-1-technical-report
@@ -450,6 +453,111 @@ Turnbull's framing pushes the RLM concept to its logical conclusion for search:
 This directly connects to the [[concepts/code-mode|CodeMode]] pattern and [[concepts/context-fragments|Context Fragments]] — both of which treat context not as a passive input but as a structured artifact the agent actively queries and mutates.
 
 Sources: [[raw/articles/2026-02-21_hugobowne_how-to-build-first-agentic-search]], [[concepts/rlm-recursive-language-models]], [[concepts/recursive-language-models]]
+
+### Berryman's 5-Level Agentic Search Maturity Model (January 2026)
+
+In Vanishing Gradients Ep. 68 [[raw/articles/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search]], John Berryman ([[entities/john-berryman]]) presented a **practical maturity model** for incrementally adopting AI in search applications. Published in full detail on the Arcturus Labs blog [[raw/articles/2026-01-18_arcturus-labs_incremental-ai-adoption-ecommerce-5level]], the model provides a low-risk roadmap from traditional search to conversational AI agents.
+
+#### Core Philosophy
+
+Berryman's framing demystifies the AI hype:
+
+> *"RAG isn't anything special; it's just an LLM with access to a well-described product search tool. Agentic AI is really, literally, just a couple of for-loops."*
+
+The key insight: **nothing is magical**. A request to Gen AI is just an HTTP request — text in, text out. Build an agent by wrapping that with for-loops. Make it a RAG agent by giving it your current search endpoint as a tool. This *demystification* is the foundation for incremental adoption: existing infrastructure (Elasticsearch, Algolia) stays in place; AI is a thin, decoupled layer that thickens over time.
+
+#### The Five Levels
+
+| Level | Name | User Experience | Key Change | Risk | Implementation Cost |
+|:-----:|------|----------------|------------|------|---------------------|
+| **0** | Traditional Search | Keyword box + filters; user does all the work | Baseline | — | Existing system |
+| **1** | Beginner AI | "Did you mean?" suggestion bar (50px) | AI interprets natural language into proper queries; async, no latency impact | Zero UX risk | Thin endpoint |
+| **2** | Intermediate AI | Auto-executed AI queries + results summary + recommended next queries | "Did you mean?" → "Interpreted as"; adds contextual summary and next-query suggestions | Latency (10ms→2-3s), but saves user's cognitive effort | Moderate |
+| **3** | Advanced AI | Full conversational assistant; chat replaces search box | Stateful conversation; agent remembers context; clarifies intent; talks *about* results | UX paradigm shift | Significant |
+| **4** | Async Research Agent | Agent performs research on user's behalf asynchronously | Agent digs through inventory once it understands user needs; works while user is away | Trust, accuracy | Major |
+
+#### Level-by-Level Detail
+
+**Level 0 — Traditional Search (Your Current Reality):**
+The burden is entirely on users to know product terminology, understand filters, and manually iterate through result pages. Most users type one query, scan the first page, and leave. High bounce rates, confused usage patterns ("4BR" typed as keyword instead of filter).
+
+**Level 1 — Beginner AI (Test the Waters):**
+A baby step: keep traditional search unchanged, add a small "Did you mean?" suggestion bar. AI interprets natural language into structured queries — "4BR under $750K" → "Property Type: Condo, Search Terms: 'Downtown'". Implemented asynchronously → zero latency impact. Users can ignore or click to apply. **Risk-free UX** — the only concession is 50 pixels of vertical real estate. Track click-through rate and conversion lift.
+
+**Level 2 — Intermediate AI (Let AI Take the Wheel):**
+AI automatically executes recommended searches. Adds two new UI elements: (a) a results summary giving holistic understanding, and (b) recommended next queries to keep users engaged. **Key tradeoff**: latency increases from 10ms to 2-3 seconds, but if users take 5 seconds to formulate a good query, AI actually saves 3 seconds. A/B test conversion impact.
+
+**Level 3 — Advanced AI (Full Conversational Assistant):**
+The search box is replaced by a stateful chat window. Berryman's thesis: **conversation is the original UX** — humans have been conversing for 50,000 years; clicking glowing rectangles is only a 30-year-old adaptation to technical limitations. Users lean into model intuition: "Show me some big ass houses!" instead of structured queries. The agent clarifies intent through multi-turn dialogue, can talk *about* results ("which one is more modern?"), and can perform aggregate analysis ("what's the typical price distribution?").
+
+**Level 4 — Async Research Agent (Future):**
+The agent performs asynchronous research — really digging through inventory once it understands the user's needs. "The agent searches while you sleep." This connects to Turnbull's long-running agent and RLM discussion (above) — the same context management challenges apply at scale.
+
+#### Connection to the Broader Agentic Search Landscape
+
+Berryman's model is a **practitioner adoption roadmap**, not an architectural taxonomy. It complements — rather than replaces — the three-level framework (IR / Harness / Externalized Processing) documented above:
+
+| Dimension | 3-Level Framework (This Page) | Berryman's 5-Level Model |
+|-----------|------------------------------|--------------------------|
+| Focus | *What* the technology does | *How* to adopt it incrementally |
+| Audience | ML/IR researchers, harness engineers | E-commerce teams, product managers |
+| Risk model | Architectural complexity | Business UX risk |
+| Key metric | NDCG, recall, accuracy | Click-through rate, conversion, bounce rate |
+
+Sources: [[raw/articles/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search]], [[raw/articles/2026-01-18_arcturus-labs_incremental-ai-adoption-ecommerce-5level]]
+
+### Revealed Preferences: The Fundamental Limit of LLM-as-Judge (November 2025 — January 2026)
+
+A recurring theme across Turnbull's and Berryman's work — crystallized in Vanishing Gradients Ep. 68 and Turnbull's blog post [[raw/articles/2025-11-02_softwaredoug_llm-judges-arent-the-shortcut]] — is the fundamental limitation of using LLMs to evaluate search quality.
+
+#### The Core Problem
+
+LLMs approximate **explicit judgments** — topical relevance ("is this document about Harry Potter?"). But real search quality depends on **revealed preferences** — what users actually click, buy, or engage with. These are systematically different:
+
+| Signal Type | What LLMs Capture | What They Miss |
+|-------------|-------------------|----------------|
+| **Explicit Judgments** | ✅ Topical relevance, factual accuracy, authority | — |
+| **Revealed Preferences** | ❌ Engagement, emotional resonance, social proof, user oddities | Clicks, purchases, dwell time, conversion |
+
+> *"LLMs live in a world of facts and knowledge. But LLMs don't have limbic systems. So their evaluations come with limitations."*
+> — Doug Turnbull
+
+#### Concrete Examples of the Gap
+
+- **Reddit**: A search for "harry potter" may mean memes, drama about JK Rowling, spicy controversies — not factual articles. An LLM judge sees the factual articles as "most relevant."
+- **Shopify**: Users preferred plain/black clothing over flashy items based on clickstream data. Unless explicitly told, an LLM won't catch this.
+- **Bistro table**: In US furniture e-commerce, "bistro table" means outdoor furniture. An LLM assumes restaurant context and rates irrelevant results as relevant.
+
+#### The 90% Trap
+
+> *"Many teams get excited when they immediately see 70-90% agreement with human labelers. In my experience, that last bit of human-LLM disagreement matters. Those are the non-obvious cases."*
+
+Simple algorithms already capture the first 80-90%. The **last 10-20% — the hard negatives and edge cases — are where search quality improvement actually lives**. An LLM judge with 90% agreement may be adequate for regression testing but useless for pushing beyond easier wins.
+
+#### Three Core LLM-as-Judge Failure Modes
+
+1. **Engagement Blindness** — LLMs don't know what users find engaging; optimizing for LLM-judge scores can decrease real user satisfaction
+2. **Hard Negative Blindness** — The last 10% of disagreement contains the non-obvious cases that matter most; LLMs systematically miss domain-specific nuances
+3. **Sneaky Overfitting** — Filling prompts with examples for edge cases creates brittle systems; every new rule pushes attention away from the general problem
+
+#### What LLMs SHOULD Do: Exploratory Analysis, Not Final Judgment
+
+Turnbull's recommendation: reposition LLMs from *judges* to *analysts*:
+
+| ❌ Don't Use LLMs For | ✅ Use LLMs For |
+|-----------------------|-----------------|
+| Final relevance scores | Finding interesting query clusters |
+| Replacing human labelers | Comparing result sets ("these look different from those") |
+| Automated quality gates | Surfacing anomalies ("this query's results look unusual") |
+| Regression testing alone | Educating the team about search behavior |
+
+> *"LLMs are better at describing differences between result sets than judging relevance. They should generate hypotheses for humans to investigate, not replace human evaluation."*
+
+#### Connection to LLM-as-Judge Best Practices
+
+This practitioner critique complements the academic best practices documented in [[concepts/llm-as-judge]]. Where the academic literature focuses on *how* to do LLM-as-judge well (rubric design, bias mitigation, inter-rater reliability), Turnbull and Berryman question *whether* LLM-as-judge is appropriate for search evaluation at all — arguing that behavioral signals (clicks, purchases, dwell time) are the only reliable measure of what users actually want.
+
+Sources: [[raw/articles/2025-11-02_softwaredoug_llm-judges-arent-the-shortcut]], [[raw/articles/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search]], [[concepts/llm-as-judge]]
 
 ### Discussion: "Will Agents Replace Search Teams?" (January 2026)
 

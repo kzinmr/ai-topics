@@ -1,3 +1,12 @@
+## [2026-05-13] enrich | Agentic Search: Berryman 5-Level Model + Revealed Preferences + Ep.68
+- id: concept-agentic-search-berryman-ep68-2026-05-13
+- summary: Saved 3 raw articles (Berryman's 5-level maturity model blog, Turnbull's LLM-judges critique, Ep.68 show notes). Added two major sections to [[concepts/agentic-search]]: "Berryman's 5-Level Agentic Search Maturity Model" (Level 0-4: Trad Search → Beginner AI → Intermediate AI → Conversational Assistant → Async Research Agent) with comparison table vs 3-level framework, and "Revealed Preferences: The Fundamental Limit of LLM-as-Judge" (engagement blindness, hard negative blindness, sneaky overfitting, LLMs-as-analysts-not-judges). Added Jan 2026 blog post entry to [[entities/john-berryman]]. Cross-linked with [[concepts/llm-as-judge]].
+- touched:
+  - [[concepts/agentic-search]]
+  - [[entities/john-berryman]]
+  - raw/articles/2026-01-18_arcturus-labs_incremental-ai-adoption-ecommerce-5level.md
+  - raw/articles/2026-01-23_vanishing-gradients_ep68-builders-guide-agentic-search.md
+  - raw/articles/2025-11-02_softwaredoug_llm-judges-arent-the-shortcut.md
 ## 2026-05-13 04:30 UTC — Lance Martin Reduce/Offload/Isolate フレームワーク取り込み
 
 - **Raw記事保存**: `wiki/raw/articles/2025-12-12_hugobowne_agent-harness-context-engineering.md` — Hugo Bowne-Anderson + Duncan Gilchrist による Vanishing Gradients 記事。Lance Martin (LangChain) が High Signal ポッドキャストで語ったコンテキストエンジニアリング3原則、Bitter Lessonのハーネス設計への適用、Manus 5回再設計・AnthropicのClaude Code ハーネス削減の証言。
