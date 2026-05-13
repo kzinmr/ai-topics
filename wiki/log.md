@@ -1,3 +1,10 @@
+## 2026-05-13 04:50 UTC — Lance Martin Context Engineering for Agents 生記事保存 + 概念ページ拡充 + ブログ監視追加
+
+- **Raw記事保存**: `wiki/raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents.md` — Lance Martin による Context Engineering のマイルストン記事。4バケット分類（Write/Select/Compress/Isolate）を提唱。Anthropic/Claude Code/Manus/Cognition/Windsurf/ChatGPT等の実例を交えた包括的フレームワーク。
+- **✏️ 概念ページ拡充**: `[[concepts/harness-engineering/context-engineering]]` — Lance Martin の Write / Select / Compress / Isolate 4バケット分類セクションを新設。各バケットの詳細（Write: スクラッチパッド+長期記憶、Select: ツール選択RAG+メモリ検索+知識選択、Compress: 要約+トリミング、Isolate: マルチエージェント+サンドボックス+State分離）と Anthropic 3戦略との対応表を含む。source: `raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents.md`
+- **🔧 エンティティページ更新**: `[[entities/lance-martin]]` — sourcesに生記事を追加、updatedを2026-05-13に更新
+- **📡 ブログ監視追加**: Lance Martin (`rlancemartin.github.io`) を OPML + blogwatcher DB に追加。RSSフィード: `http://rlancemartin.github.io/feed.xml`。初回スキャン: 10記事（既読化済み）
+
 ## 2026-05-13 04:55 UTC — Jeff Huber / Harness Engineering 対談取り込み + Inner/Outer Loop 拡張
 
 - **Raw記事保存**: `wiki/raw/articles/2026-03-04_hugobowne_harness-engineering-agent-context.md` — Hugo Bowne-Anderson による Vanishing Gradients 記事。Jeff Huber (Chroma CEO) が語る context engineering > prompt engineering、大規模コンテキストウィンドウの限界、エージェントハーネス = tools+sub-agents+workflows、コード記述が創発的推論を解放する、Inner Loop / Outer Loop フレームワーク。

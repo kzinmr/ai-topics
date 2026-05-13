@@ -13,7 +13,8 @@ tags:
   - ai-agents
   - context-engineering
   - open-source
-sources: []
+sources:
+  - "[[raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents]]"
 ---
 
 
