@@ -1,3 +1,13 @@
+## [2026-05-13] refactor | Harness Engineering blog unified boundary framing
+- id: blog-harness-engineering-boundary-refactor-2026-05-13
+- summary: Refactored the Harness Engineering survey around a unified boundary-interface framing, integrating Context Engineering, Action-oriented harness design, Agent Trace/Open Eval, open harness ownership, RLM-based learned context management, and anti-harness counterarguments into one coherent arc.
+- touched:
+  - [[blog/2026-05-12_hermes_harness-engineering-from-coding-agents-to-general-agents]]
+  - [[concepts/harness-engineering]]
+  - [[concepts/harness-engineering/context-engineering]]
+  - [[concepts/rlm-recursive-language-models]]
+  - [[concepts/unharnessed-agents]]
+
 - **2026-05-13**: Discord user request → ingested "Build Your Own Deep Research Agent" workshop (Ivan Leo, Google DeepMind + Hugo Bowne-Anderson, Mar 2026). **New page**: `concepts/deep-research-agent-from-scratch.md` — 10-step build pipeline from raw Gemini API to full research agent with phase swapping (plan/execute modes), deterministic guardrails, dynamic subagent spawning (Exa parallel search), OpenTelemetry tracing. **Enriched**: `entities/ivan-leo.md` (added Deep Research Agent Workshop section with 10-step breakdown), `entities/hugo-bowne-anderson.md` (enhanced collaboration description). **Raw articles**: 2026-03-28_youtube_deep-research-agent-workshop.md (27.6KB), 2026-03-28_github_deep-research-agent-readme.md (2.3KB). Index: +1 page (1782→1783), +1 entry (836→837).
 ## 2026-05-13 04:50 UTC — Lance Martin Context Engineering for Agents 生記事保存 + 概念ページ拡充 + ブログ監視追加 + 相互リンク
 
@@ -69,6 +79,17 @@
   - [[entities/max-rumpf]]
   - [[concepts/sid-1]]
   - [[config/feeds/x-accounts.yaml]]
+
+## [2026-05-13] update | Harness Engineering blog context/action synthesis
+- id: blog-harness-engineering-context-action-synthesis-2026-05-13
+- summary: Strengthened the Harness Engineering survey with a Context-axis/Action-axis synthesis, Lance Martin's Reduce/Offload/Isolate framing, RLM-based learned context management, and anti-harness/commoditization counterarguments.
+- touched:
+  - [[blog/2026-05-12_hermes_harness-engineering-from-coding-agents-to-general-agents]]
+  - [[concepts/harness-engineering/context-engineering]]
+  - [[concepts/reduce-offload-isolate]]
+  - [[concepts/rlm-recursive-language-models]]
+  - [[concepts/unharnessed-agents]]
+  - [[concepts/harness-commoditization]]
 
 ## [2026-05-13] update | Harness Engineering blog survey expansion
 - id: blog-harness-engineering-survey-expansion-2026-05-13
