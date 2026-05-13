@@ -1,3 +1,11 @@
+## 2026-05-13 09:00 UTC — Prime Intellect entity + renderers concept pages
+
+- **📄 エンティティページ新規作成**: `[[entities/prime-intellect]]` — Prime Intellect社の包括的エンティティページ。2023年創業、$20.5M資金調達（Founders Fund, Andrej Karpathy, Clem Delangue, Tri Dao）。Lab（RLポストトレーニングプラットフォーム）、Environment Hub（2,500+ RL環境）、Compute（分散GPUマーケットプレイス）。オープンソース: renderers, verifiers, prime-rl。INTELLECT-1/2/3モデルシリーズ。
+- **📄 概念ページ新規作成**: `[[concepts/renderers-token-level-templating]]` — Prime Intellectがオープンソース化したtoken-level templatingライブラリの詳細概念ページ。MITO→Generic TITO→renderersの3段階進化、bridge_to_next_turn、3x training efficiency、Token-In/Token-Outパラダイム、harness境界との相互作用。
+- **📄 生記事保存**: `wiki/raw/articles/2026-05-12_primeintellect_renderers-token-level-templating.md` — Prime Intellectブログ記事全文（22KB）。
+- **📋 SCHEMA更新**: `chat-template` タグをTechniquesカテゴリに追加。
+- **📋 Index更新**: エンティティと概念をindex.mdに追加。
+
 ## 2026-05-13 08:15 UTC — RLM v3 paper update and wiki refresh
 
 - **Updated:** `wiki/raw/papers/2025-12-31_2512.24601_recursive-language-models.md` — Replaced v2 with v3 (May 11, 2026). Added: depth>1 experiments (depth=0-3), OpenCode & Claude Code baseline comparisons, MRCRv2 length generalization results, OOLONG prompting case study, expanded error analysis (§5 — syntax errors, decomposition mistakes, first-decomposition importance), 6-appendix summary, and full results tables for GPT-5 and Qwen3-Coder-480B-A35B.

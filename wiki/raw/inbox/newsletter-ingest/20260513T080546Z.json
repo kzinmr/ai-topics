@@ -1,0 +1,128 @@
+{
+  "triage_timestamp": "2026-05-13T08:05:46Z",
+  "run_id": "20260513T080546Z",
+  "newsletters": [
+    {
+      "message_id": "<20260513024722.3.de5fdff7ac7a33e4@mg2.substack.com>",
+      "subject": "[AINews] The End of Finetuning",
+      "source": "swyx/Latent.Space",
+      "date": "2026-05-13",
+      "importance": "critical",
+      "relevance": "high",
+      "rationale": "OpenAI deprecating finetuning APIs — major industry shift. swyx argues finetuning is a casualty of the 2026 side quest massacre, referencing Jeremy Howard's 2023 prediction that most use cases don't need finetuning. Directly impacts MLOps/Training wiki pages (TRL, Axolotl, PEFT). Also covers Anthropic's valuation surpassing OpenAI for the first time.",
+      "suggested_actions": [
+        "Update wiki/concepts/finetuning.md with deprecation context",
+        "Create/更新 wiki/events/openai-finetuning-deprecation.md",
+        "Cross-reference with wiki concepts on context engineering vs finetuning",
+        "Link to Jeremy Howard 2023 podcast episode reference",
+        "Update wiki/entities/swyx.md with latest Latent Space coverage"
+      ],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-13-ainews-the-end-of-finetuning.md",
+      "canonical_url": "https://www.latent.space/p/ainews-the-end-of-finetuning"
+    },
+    {
+      "message_id": "<20260512080922.3.9367e3761008d2ac@mg-d1.substack.com>",
+      "subject": "Agentic Engineering and the Lost Art of Verification",
+      "source": "hugobowne/Vanishing Gradients",
+      "date": "2026-05-12",
+      "importance": "high",
+      "relevance": "high",
+      "rationale": "Features Wes McKinney (pandas creator), Jeremiah Lowin (Prefect), and Randy Olson (Good Eye Labs) discussing their actual agent workflows. Key themes: RoboRev background code reviewer, skills as thin drivers, progressive disclosure, managing context rot, ephemeral 'just for me' software. Directly relevant to autonomous-ai-agents and coding agent wiki.",
+      "suggested_actions": [
+        "Update wiki/entities/wes-mckinney.md with agent workflow insights",
+        "Create/更新 wiki/concepts/agentic-engineering.md",
+        "Update wiki/concepts/context-engineering.md with progressive disclosure patterns",
+        "Link to Superpowers skills framework mentioned by Wes McKinney",
+        "Add to wiki/entities/jeremiah-lowin.md and wiki/entities/randy-olson.md"
+      ],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-12-agentic-engineering-and-the-lost-art-of-verification.md",
+      "canonical_url": "https://hugobowne.substack.com/p/agentic-engineering-and-the-lost"
+    },
+    {
+      "message_id": "<20260512130751.3.0dc7a2f527984115@mg-d0.substack.com>",
+      "subject": "Learn the system",
+      "source": "bensbites/Ben's Bites",
+      "date": "2026-05-12",
+      "importance": "high",
+      "relevance": "medium",
+      "rationale": "Ben Tossell reacts to 'Agentic coding is a trap — and we all fell for it' video. Discusses live models making a comeback, AI infrastructure memory bottlenecks (Coatue analysis on 5x memory demand in 5 years). Also covers Lightfield AI-native CRM with Skills feature, AGENTS.md patterns.",
+      "suggested_actions": [
+        "Update wiki/concepts/agentic-coding.md with 'trap' debate perspective",
+        "Cross-reference with Coatue memory infrastructure analysis",
+        "Link to AGENTS.md pattern discussion",
+        "Update wiki/entities/ben-tossell.md with latest coverage"
+      ],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-12-learn-the-system.md",
+      "canonical_url": "https://www.bensbites.com/p/learn-the-system"
+    },
+    {
+      "message_id": "<20260512155447.3.0afddb6f4acada66@mg2.substack.com>",
+      "subject": "How open model ecosystems compound",
+      "source": "natolambert/Robotic (Interconnects AI)",
+      "date": "2026-05-12",
+      "importance": "high",
+      "relevance": "high",
+      "rationale": "Nathan Lambert (ex-Meta, DeepMind, HuggingFace) discusses open model ecosystem funding sustainability. Key thesis: in 5-10 years, as models get more expensive and capable, funding structures for open models may break down. Relates to broader open vs closed AI dynamics, talent concentration in robotics/physical AI, and whether open-source can democratize access to physical AI capability like it did for LLMs.",
+      "suggested_actions": [
+        "Update wiki/entities/nathan-lambert.md with latest thesis",
+        "Create/更新 wiki/concepts/open-model-ecosystems.md",
+        "Cross-reference with Bessement robotics predictions on open vs closed dynamics",
+        "Link to LeRobot, Genesis, Isaac Lab open-source ecosystem analysis"
+      ],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-12-how-open-model-ecosystems-compound.md",
+      "canonical_url": "https://substack.com/@natolambert"
+    },
+    {
+      "message_id": "<20260512214332.3.d648e96021b0b7b1@mg-d0.substack.com>",
+      "subject": "I Ran 75 Tests on Claude Skills. Here's What Broke.",
+      "source": "aibyaakash/Product Growth",
+      "date": "2026-05-12",
+      "importance": "high",
+      "relevance": "high",
+      "rationale": "Aakash Gupta shares results from 75+ Claude Skills tests over 6 months of daily use. Claims Skills are 'highest alpha technique in AI right now.' Covers skill design patterns, what works, what breaks. Directly relevant to Hermes skills architecture and the broader Claude Skills ecosystem.",
+      "suggested_actions": [
+        "Update wiki/concepts/claude-skills.md with 7-law framework",
+        "Cross-reference with Hermes agent skills design patterns",
+        "Compare with Ruben Hassid's 'Claude Skills' coverage and Ilia Karelin's Skills Playbook",
+        "Update wiki/entities/aakash-gupta.md"
+      ],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-12-i-ran-75-tests-on-claude-skills-here-s-what-broke.md",
+      "canonical_url": "https://www.news.aakashg.com/p/10-laws-claude-skills"
+    },
+    {
+      "message_id": "<20260512162943.262afa35@mta28>",
+      "subject": "The End of Turn-Based Voice-AI",
+      "source": "Beehiiv newsletter",
+      "date": "2026-05-12",
+      "importance": "low",
+      "relevance": "medium",
+      "rationale": "Discusses evolution beyond turn-based voice AI architectures. The Beehiiv link structure suggests this is from an infrastructure/voice AI focused newsletter. Topic is adjacent to core LLM/Agent wiki scope but relevant for multimodal AI coverage. Less critical than other items this batch.",
+      "suggested_actions": [
+        "Monitor for follow-up coverage before creating wiki pages",
+        "Potentially link to existing voice AI or multimodal concept pages if they exist",
+        "Low priority — defer detailed wiki integration until more context available"
+      ],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-12-the-end-of-turn-based-voice-ai.md",
+      "canonical_url": "unknown-beehiiv"
+    }
+  ],
+  "summary": {
+    "total_newsletters": 6,
+    "critical": 1,
+    "high": 4,
+    "low": 1,
+    "key_themes": [
+      "Finetuning API deprecation by OpenAI — industry inflection point",
+      "Agentic engineering workflows — real-world patterns from pandas/Prefect creators",
+      "Claude Skills ecosystem — 75+ tests, design patterns, what works/breaks",
+      "Open model sustainability — funding concerns as models scale",
+      "Voice AI evolution — beyond turn-based architectures"
+    ],
+    "top_priority_actions": [
+      "Update/create wiki pages on finetuning deprecation (CRITICAL)",
+      "Enrich agentic engineering concept pages with Wes McKinney/Jeremiah Lowins patterns",
+      "Cross-reference Claude Skills coverage across Aakash, Ruben, and Ilia sources",
+      "Track Nathan Lambert's open model ecosystem thesis"
+    ]
+  }
+}

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-13 | Total pages: 1789 | Indexed entries: 843 | Not in index: 946 |
+> Last updated: 2026-05-13 | Total pages: 1791 | Indexed entries: 845 | Not in index: 946 |
 
 ## Entities (578 pages)
 
@@ -39,6 +39,7 @@
 - [[entities/parchi]] — Parchi
 - [[entities/pi-coding-agent]] — pi (Coding Agent) [redirected to entities/pi]
 - [[entities/portkey]] — AI agent security platform — inspects actions, stops risky behavior, 99.99% uptime. Acquired by Palo Alto Networks (Q4 2026).
+- [[entities/prime-intellect]] — Prime Intellect — "The Open Stack for Self-Improving Agents": decentralized AI platform, RL post-training (Lab), open-source renderers/verifiers/prime-rl. $20.5M funding. INTELLECT model series.
 - [[entities/ramp]] — Ramp
 - [[entities/reflexive-ai]] — Reflexive AI Usage
 - [[entities/romain-huet]] — Romain Huet — Head of Developer Experience at OpenAI, host of Builders Unscripted
@@ -751,6 +752,7 @@
 - [[concepts/rao-recursive-agent-optimization]] — RAO (Recursive Agent Optimization) — RL training for recursive agents that spawn/delegate to copies of themselves. CMU × Amazon AGI Labs 2026
 - [[concepts/recursive-self-improvement]] — AI systems autonomously designing and training successor models. Jack Clark's 60% probability by end 2028. Compounding alignment risk, SWE-Bench 93.9% evidence.
 - [[concepts/reduce-offload-isolate]] — **Reduce, Offload, Isolate** — Lance Martin (Anthropic) が High Signal ポッドキャストで提唱したエージェントコンテキストエンジニアリングの3原則。Reduce（コンテキスト圧縮）、Offload（プロンプト外への情報移動）、Isolate（サブエージェントへの委譲）。Manusは5回再設計、Anthropicはモデル改善に伴いClaude Codeのハーネスを削ぎ落とす。Bitter Lessonをハーネス設計に適用。- [[concepts/rdep]] — Research Dispatch/Expert Parallelism — direct CUDA IPC dispatch/return replacing NCCL all-to-all for single-node MoE training. B200-first.
+- [[concepts/renderers-token-level-templating]] — renderers: Token-Level Templating — Prime IntellectのオープンソースPythonライブラリ。チャットテンプレートをプログラム可能にし、マルチターンRLのトークン同一性保持、3xトレーニング効率化。Token-In, Token-Outパラダイム。
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-memory-engineering]] — Agent Memory Engineering: Nicolas Bustamante (Microsoft) によるClaude Code/Codex/Hermesのメモリアーキテクチャ比較。「巧妙なアーキテクチャはすべて負けた。勝ったのはLLM + Markdown + bash」。モデルはハーネス上でポストトレーニングされるため、メモリはハーネス間で移植不可。
 - [[concepts/agent-media]] — Agent Media — WikiからマルチチャネルAutoresearch Deskへの進化。KhairallahのContext Engineering + RoninのSkill Graphの統合による、audience-aware知識配信システムの設計思想。
