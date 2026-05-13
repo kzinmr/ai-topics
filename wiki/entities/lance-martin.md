@@ -15,6 +15,8 @@ tags:
   - open-source
 sources:
   - "[[raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents]]"
+  - "[[raw/articles/2025-07-30_rlancemartin_bitter-lesson-ai-engineering]]"
+  - "[[raw/articles/2025-12-01_rlancemartin_claude-diary]]"
   - "[[raw/articles/2026-01-09_rlancemartin_agent-design-patterns]]"
 ---
 

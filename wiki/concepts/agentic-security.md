@@ -61,6 +61,20 @@ Recommended mitigations:
 - **Human-in-the-loop** — require approval for new package installations
 - **Package signature verification** — verify publisher identity before install
 
+### 6. "Not a Security Issue" Policy Failures (Nesbitt.io, May 2026)
+
+[[bradford-morgan-white]] published a follow-up analysis identifying a critical organizational failure pattern: **"Not a Security Issue" as a threat model blind spot**.
+
+The core argument: **the most dangerous vulnerabilities are the ones your threat model tells you to ignore**. Key points:
+
+- Organizations routinely classify certain attack vectors as "not a security issue" — often because they fall outside traditional security boundaries
+- This creates **systematic blind spots** where attackers exploit exactly the things defenders decided weren't worth protecting
+- Example: supply chain attacks, social engineering of AI agents, and infrastructure misconfigurations are often dismissed because they don't fit neat CVE categories
+- The "not a security issue" label becomes self-fulfilling: no budget, no monitoring, no response plan
+- **AI agents amplify this risk**: they operate across traditional security boundaries (code, data, APIs, infrastructure) and can trigger cascading failures from a single misclassified vector
+
+This is particularly relevant for agentic security because **agents routinely perform actions that span multiple security domains** — reading files, making API calls, executing code, accessing databases. A vulnerability in any one of these is trivially exploitable if the agent's threat model treats them as separate concerns rather than a unified attack surface.
+
 ## Industry Response
 
 | Organization | Contribution |

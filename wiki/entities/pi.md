@@ -125,3 +125,42 @@ Extensions, skills, prompt templates, and themes can be packaged and shared via 
 - **Cost-efficient**: No subscription wall (unlike Anthropic on third-party harnesses) — BYOK for all providers
 - **Learning curve**: Minimal out of box but requires developer investment in context engineering for best results
 - **Best for**: Developers who want full control over prompt engineering and are willing to curate their own context
+
+## Agents Built for Agents Building Agents
+
+Armin Ronacher（[[entities/armin-ronacher|Flask作者]]、Pi の主要推進者）による Pi の核心哲学（[2026年1月](https://lucumr.pocoo.org/2026/1/31/pi/)）：
+
+> *"Agents Built for Agents Building Agents — software that is malleable like clay. The agent maintains its own functionality."*
+
+### Session Trees（セッションツリー）
+
+Pi のセッションはツリー構造を持ち、ブランチ作成とナビゲーションが可能：
+
+```
+Main session
+  ├── Branch: broken tool fix (isolated context)
+  │   └── Agent rewrites → tests → rewind to main
+  └── Branch: code review (fresh context)
+```
+
+- サイドクエストのためにメインのコンテキストを**浪費しない**
+- ブランチから戻ると Pi が変更を要約
+- Armin の `/review` 拡張はこの仕組みで実装 — ブランチでコードレビュー → 結果をメインに持ち帰る
+
+### Extension State Persistence（拡張状態の永続化）
+
+Pi の AI SDK はモデルメッセージに加えて**カスタムメッセージ**をセッションファイルに保持。拡張機能が状態を永続化でき、複数プロバイダ間のセッション可搬性も維持される。
+
+### No MCP — By Philosophy
+
+MCP 非搭載は意図的。Pi の哲学は「エージェントに自分自身を拡張させる」こと：
+
+> *"If you want the agent to do something that it doesn't do yet, you don't download an extension. You ask the agent to extend itself."*
+
+### Software Building Software — Lived Experience
+
+Armin の全 Pi 拡張（ブラウザ自動化、コードレビュー、TODO管理、コミット整形）は**エージェント自身が作成**：
+
+> *"None of this was written by me, it was created by the agent to my specifications. I told Pi to make an extension and it did."*
+
+ワークショップでの Hugo+Ivan の Pure Python 再構築（[[concepts/agents-that-build-themselves]]）は、この Pi 哲学をコードで実証した形。

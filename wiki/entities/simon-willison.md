@@ -3,7 +3,7 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-05-11
+updated: 2026-05-13
 status: L3
 sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md]
 tags: [person, blogger]
@@ -284,3 +284,20 @@ These changes make LLM future-proof for the diversity of input/output capabiliti
 - simonwillison.net--2026-may-7-xai-anthropic--9d6f9f29
 - simonwillison.net--2026-may-7-firefox-claude-mythos--7d5ece52
 - simonwillison.net--2026-may-7-github-repo-stats--eddef6d3
+- simonwillison.net--2026-may-12-csp-allow--5f0cf46b
+- simonwillison.net--2026-may-12-datasette--e4091f56
+- simonwillison.net--2026-may-12-llm--bace7b08
+- simonwillison.net--2026-may-12-mitchell-hashimoto--f38a3588
+- simonwillison.net--2026-may-12-mo-bitar--e8d59825
+
+### May 2026 Updates
+
+**CSP Allow-list Experiment** (May 13, 2026): Simon published an experiment with Content Security Policy allow-listing, testing approaches for securing web applications against XSS and injection attacks.
+
+**datasette 1.0a29** (May 12, 2026): Continued progress on Datasette alpha releases toward 1.0.
+
+**llm 0.32a2** (May 12, 2026): Release of the `llm` CLI tool version 0.32a2, continuing the architectural refactoring started in 0.32a0 with messages-based input and streaming typed parts.
+
+**Mitchell Hashimoto on TDM Motivations** (May 12, 2026): Simon quoted Mitchell Hashimoto (HashiCorp co-founder, Redis Labs CTO) on the psychology of Technical Decision Makers: "90% of TDMs are motivated primarily by NOT GETTING FIRED." Hashimoto argues that corporate tech buyers follow analyst trends (Gartner, McKinsey) rather than deep technical evaluation, making "defensible" buzzword products like "Context Engine for AI Apps" easy sells. This aligns with Simon's broader skepticism about enterprise AI vendor claims and reinforces his "agentic engineering" thesis — real practitioners verify, they don't just buy trends.
+
+**Mo Bitar's "Ralph Loop" Satire** (May 12, 2026): Simon highlighted Mo Bitar's satirical take on AI corporate climbing — the "Ralph Loop" strategy of promising automation to executives, using $18K in API credits to demonstrate "value," and getting promoted before anyone realizes nothing actually works. This satire captures a real pattern in enterprise AI adoption: the gap between promised automation and delivered value.

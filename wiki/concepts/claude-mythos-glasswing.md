@@ -98,6 +98,28 @@ Anthropic's warning: The model *"presages an upcoming wave of models that can ex
 
 ---
 
+## Real-World Impact: May 2026 Patch Data
+
+Project Glasswing's impact on the broader software ecosystem became visible in May 2026 patch data, as reported by [Krebs on Security](https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/):
+
+| Vendor | May 2026 Fixes | Glasswing-Related | Notes |
+|--------|---------------|-------------------|-------|
+| **Microsoft** | 118 vulnerabilities (16 critical) | Indirect | First Patch Tuesday in ~2 years with zero actively-exploited zero-days |
+| **Mozilla Firefox** | 271 vulnerabilities (v150) | **Direct** | Discovered during Glasswing evaluation; triggered aggressive weekly cadence (v150.0.1, .0.2, .0.3) |
+| **Apple iOS** | 52 vulnerabilities (iOS 15) | Indirect | Backported to iPhone 6s; 2.6× typical patch volume |
+| **Google Chrome** | 127 vulnerabilities | Indirect | Up from 30 the previous month; 4.2× increase |
+| **Oracle** | 450+ flaws (300+ remotely exploitable) | Direct | Switched to monthly critical update cycle in response to Glasswing findings |
+
+### Significance
+
+The May 2026 data validates the Glasswing thesis: AI-assisted vulnerability discovery is dramatically increasing the **volume** and **velocity** of security patches across the industry. Mozilla Firefox's 271 vulnerabilities — discovered during Glasswing evaluation — is the most direct evidence. The resulting "aggressive weekly cadence" of security updates (Firefox 150.0.1 through 150.0.3) suggests Glasswing findings are creating a **permanent increase in patch frequency** for affected projects.
+
+Krebs observed: *"Artificial intelligence platforms may be just as susceptible to social engineering as human beings, but they are proving remarkably good at finding security vulnerabilities in human-made computer code."*
+
+Notably, May 2026 was the first Microsoft Patch Tuesday in nearly two years with **zero actively-exploited zero-day vulnerabilities**, suggesting that proactive AI-assisted scanning may be closing the window between vulnerability discovery and patching.
+
+---
+
 ## Expert Reactions & Debate
 
 ### NBC News: "Too Powerful to Release to Public"

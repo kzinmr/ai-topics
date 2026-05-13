@@ -213,6 +213,59 @@ calls_since_user_message = 0
 4. **Markdown追記で十分なメモリになる** — ベクトルDBや埋め込みは不要
 5. **モデルへの「共感」が設計を変える** — 200個のツールを一度に渡すのではなく、段階的に開示する
 
+## Armin Ronacher's Perspective: Agents Built for Agents Building Agents
+
+Armin Ronacher（Flask作者、[[entities/pi|Pi]] の主要ユーザー・推進者）による Pi の設計哲学の解説（[2026年1月](https://lucumr.pocoo.org/2026/1/31/pi/)）は、Hugo+Ivan のワークショップが実装した原則の**前提となる世界観**を提示している：
+
+> *"Agents Built for Agents Building Agents — software that is malleable like clay. The agent maintains its own functionality."*
+
+### Session Trees（セッションツリー）
+
+Pi のセッションは**ツリー構造**を持ち、ブランチとナビゲーションが可能：
+
+```
+Main session (building feature X)
+  ├── Branch: fix broken extension tool (side-quest)
+  │   └── Agent rewrites tool → test → rewind to main
+  └── Branch: code review context (fresh, isolated)
+```
+
+- サイドクエストのためにメインセッションのコンテキストを**浪費しない**
+- ツール修正後、メインセッションに戻ると Pi がブランチでの変更を要約
+- Hugo+Ivan の `RunState` 分離とは異なるアプローチだが、同じ「コンテキスト汚染の防止」という目標
+
+### Extension State in Sessions（セッション内拡張状態）
+
+Pi の AI SDK は、モデルメッセージに加えて**カスタムメッセージ**をセッションファイルに保持する：
+
+- 拡張機能が状態を永続化（モデルには送信されない）
+- 複数プロバイダ間のセッション可搬性を維持（特定プロバイダの機能に依存しない）
+- Hugo+Ivan の `AgentContext`（外部依存注入）と `RunState`（可変状態）の分離に通じる設計
+
+### No MCP — By Philosophy, Not Laziness
+
+> *"Pi's entire idea is that if you want the agent to do something that it doesn't do yet, you don't go and download an extension or a skill. You ask the agent to extend itself."*
+
+- MCP は意図的な**非搭載** — 怠惰ではなく哲学
+- エージェントが自分でツールを書くことを**祝福**する設計
+- ダウンロードした拡張ではなく、エージェントに「あの拡張を見て、こう変更して」と指示する
+
+### Software Building Software — The Lived Experience
+
+> *"None of this was written by me, it was created by the agent to my specifications. I told Pi to make an extension and it did. There is no MCP, there are no community skills, nothing. They are hand-crafted by my clanker."*
+
+Armin の全拡張（ブラウザ自動化、コードレビュー、TODO管理、コミットメッセージ整形）は**エージェント自身が作成**したもの。この「ソフトウェアがソフトウェアを構築する」体験が、Pi への没頭を生んだ。
+
+### The Pipeline: Write → Reload → Test → Loop
+
+Pi のホットリロードは Hugo+Ivan の `importlib.reload()` と同じパターンだが、**テスト駆動**の要素が加わる：
+
+```
+Agent writes extension code → hot reload → agent tests it → fails → rewrites → reloads → passes
+```
+
+これにより、エージェントが「動くまで繰り返す」自律的な改善ループが成立する。Hugo+Ivan のワークショップ（Step 5のフック + Step 6のエージェントループ）と補完的。
+
 ## References
 
 - [Building Agents That Build Themselves (Substack)](https://hugobowne.substack.com/p/building-agents-that-build-themselves) — Hugo Bowne-Anderson, Feb 2026

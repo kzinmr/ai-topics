@@ -781,6 +781,7 @@
 - [[concepts/audio-tokenizer-comparison]] — 비교/Comparison of 5 neural audio tokenizers: SoundStream, EnCodec, DAC, SpeechTokenizer, Mimi. RVQ-based, differing in codec quality vs. speech LLM readiness, semantic/acoustic separation, token rate, and domain.
 - [[concepts/bfcl-v3]] — BFCL V3 — Berkeley Function Calling Leaderboard V3。マルチターン・マルチステップ関数呼び出し評価。状態ベース検証。GLM 4.5が76.7%でリード。
 - [[concepts/bitter-lesson-agent-harnesses]] — モデル能力のスケール向上に伴い、ハーネスの役割は論理実装からモデル行動のオーケストレーションへ移行する
+- [[concepts/rich-suttons-bitter-lesson]] — Rich SuttonのBitter Lesson（2019）。計算資源を活用する汎用手法が手作りの構造に最終的に勝つ。AIエンジニアリングへの応用、Hyung Won Chungの「構造を加えて後で取り除く」フレームワーク、Lance Martinのopen-deep-research事例研究
 - [[concepts/chartqa]] — ChartQA — チャート理解QAベンチマーク。Statista/Pew/OECD等から収集した実チャート。32.7K QAペア。ノイジーなテストデータが問題。
 - [[concepts/china-agentic-coding-sprint]] — China's rapid convergence on SWE-Bench Pro: Kimi K2.6, MiniMax M2.7, Z.ai GLM-5.1 all scoring 56-59 in 12-day window. Open weights, below Western pricing. "China is 6-9 months behind" framing no longer holds.
 - [[concepts/context-providers]] — エージェントとツールの間にあるコンテキスト供給レイヤーの設計パターン

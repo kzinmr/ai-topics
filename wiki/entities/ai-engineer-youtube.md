@@ -3,8 +3,8 @@ title: "AI Engineer (YouTube Channel)"
 created: 2026-05-13
 updated: 2026-05-13
 type: entity
-tags: [youtube, ai-agents, community, developer-experience, agentic-engineering, ai-infrastructure, ai-coding]
-sources: [https://www.youtube.com/@aidotengineer, https://ai.engineer]
+tags: [youtube, ai-agents, community, developer-experience, agentic-engineering, ai-infrastructure, ai-coding, ambient-agents, agent-training]
+sources: [https://www.youtube.com/@aidotengineer, https://ai.engineer, "[[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025]]"]
 ---
 
 # AI Engineer (YouTube Channel)
@@ -12,6 +12,26 @@ sources: [https://www.youtube.com/@aidotengineer, https://ai.engineer]
 **AI Engineer** (@aiDotEngineer) is the official YouTube channel of the [AI Engineer](https://ai.engineer) conference series — the largest technical AI conference community in the world. With **466K subscribers** and **700+ videos**, it publishes talks, workshops, and training sessions from AI Engineer events (World's Fair, Summit, Code) and partner conferences globally.
 
 The channel is the primary free distribution platform for AI Engineer conference content, making high-signal technical talks from frontier AI labs and startups accessible to a global audience of AI engineers.
+
+## Flagship Events
+
+### World's Fair 2025 (San Francisco, June 2025)
+
+The 2025 World's Fair crystallized several major themes in AI agent development. [[Lance Martin]]'s [[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025|conference takeaways]] identified five key threads:
+
+| Theme | Key Talks | Significance |
+|-------|-----------|-------------|
+| **Ambient Agents** | Scott Wu (Cognition), Kevin Hou (Windsurf), Solomon Hykes | Shift from chat-based to background-autonomous agents. Task length doubling every ~7 months. |
+| **Agent UX / Bitter Lesson** | Boris Cherny (Anthropic/Claude Code), Kevin Hou (Windsurf) | General minimal (terminal) vs opinionated IDE approaches. Claude Code predicted IDE-less future by end of year. |
+| **Agent Training (RLVR)** | Nathan Lambert, Will Brown, Kyle Corbitt (Open Pipe) | RL with Verifiable Rewards scaling (10x from o1 to o3). Art-E: RLVR-trained email agent for $80. |
+| **Agent Tools (MCP)** | John Walsch (Anthropic) | MCP origins: anti-duplication standard for tool calling coordination. |
+| **Agent Evaluation** | — | Multi-step failure attribution challenges. SWE-bench limitations driving real-world testing. |
+
+The overarching takeaway: the future of AI agents looks less like improved chatbots and more like autonomous assistants handling complex work.
+
+### World's Fair 2026 (San Francisco, June 29 – July 2, 2026)
+
+The 2026 edition expands to Moscone Center with 29 tracks, 300 speakers, 100 expo partners, and 6,000+ attendees. *Coverage to be added post-event.*
 
 ## Key Facts
 

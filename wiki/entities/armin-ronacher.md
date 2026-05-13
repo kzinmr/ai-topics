@@ -94,6 +94,22 @@ pi install https://github.com/mitsuhiko/pi-ds4
 
 Ronacher advocates for slowing the AI tooling development pace to build quality into specific configurations rather than constantly chasing new models. His philosophy mirrors [[entities/salvatore-sanfilippo|antirez]]'s approach with ds4.c: deliberate narrowness over general frameworks.
 
+### Pi Experience: Agents Built for Agents Building Agents (Jan 2026)
+
+Ronacher's [deep-dive on Pi](https://lucumr.pocoo.org/2026/1/31/pi/) crystallized the philosophy of self-extending agents from a practitioner's perspective:
+
+> *"Agents Built for Agents Building Agents — software that is malleable like clay. The agent maintains its own functionality."*
+
+Key insights from his Pi usage:
+
+- **Session trees**: Pi sessions are tree-structured, allowing branching for side-quests (e.g., fixing a broken tool in isolation) without wasting main session context. After the fix, rewind and Pi summarizes what changed.
+- **No MCP by philosophy**: *"If you want the agent to do something it doesn't do yet, you don't download an extension. You ask the agent to extend itself."*
+- **Software building software**: All of Ronacher's Pi extensions — browser automation, code review, TODO management, commit message formatting — were created by the agent, not by Ronacher himself.
+- **Write → reload → test → loop**: The agent writes extension code, hot-reloads, tests it, and iterates until functional — a self-correcting development loop.
+- **Extension state in sessions**: Custom messages in session files store extension state without sending it to the model — preserving provider-agnostic portability.
+
+This Pi experience provided the philosophical foundation for Hugo Bowne-Anderson and Ivan Leo's "Building Agents That Build Themselves" workshop ([[concepts/agents-that-build-themselves]]), which reconstructed these patterns in Pure Python.
+
 ## Writing Style & Philosophy
 
 Ronacher's blog (lucumr.pocoo.org) covers:
