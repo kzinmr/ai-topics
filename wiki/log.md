@@ -1,3 +1,10 @@
+## 2026-05-13 04:30 UTC — Lance Martin Reduce/Offload/Isolate フレームワーク取り込み
+
+- **Raw記事保存**: `wiki/raw/articles/2025-12-12_hugobowne_agent-harness-context-engineering.md` — Hugo Bowne-Anderson + Duncan Gilchrist による Vanishing Gradients 記事。Lance Martin (LangChain) が High Signal ポッドキャストで語ったコンテキストエンジニアリング3原則、Bitter Lessonのハーネス設計への適用、Manus 5回再設計・AnthropicのClaude Code ハーネス削減の証言。
+- **🆕 概念ページ作成**: `[[concepts/reduce-offload-isolate]]` (L2) — Reduce（コンテキスト圧縮）/ Offload（プロンプト外移動）/ Isolate（サブエージェント委譲）の詳細フレームワーク。Bitter Lessonとの接続、Write-Select-Compress-Isolateからの進化、Manus/Claude Code/Open Deep Researchの実例、ハーネス設計への含意を含む。
+- **✏️ エンティティ強化**: `[[entities/lance-martin]]` — High Signal ポッドキャスト出演を Podcast Appearances に追加。Reduce/Offload/Isolateフレームワークの専用セクションを新設。updated: 2026-05-13。
+- **✏️ 相互リンク**: `[[entities/hugo-bowne-anderson]]` — Harness Engineering Philosophy セクションの "Reduce, Offload, Isolate" を [[concepts/reduce-offload-isolate]] へのwikilink化。
+- **Index更新**: concepts/reduce-offload-isolate を追加。Total pages: 1782→1783, Indexed entries: 836→837, Concepts: 1249→1250。
 - **2026-05-13**: Discord user request → ingested "Agents That Build Themselves" (自己拡張エージェント) content from 3 sources: Substack article (Hugo Bowne-Anderson, Feb 2026), YouTube workshop (96min live build with Ivan Leo), GitHub repo (build-your-own-ai-assistant). **New pages**: `concepts/agents-that-build-themselves.md` (Level 5: Self-Modification pattern — factory + hot reload + hooks + markdown memory), `entities/ivan-leo.md` (Ivan Leo — Google DeepMind, ex-Manus). **Enriched**: `concepts/self-evolving-agents.md` (added Level 5: Self-Modification with code example), `entities/openclaw.md` (added Core Architecture Patterns: hooks, memory compaction, tool factory + self-extension), `entities/hugo-bowne-anderson.md` (added build-your-own-ai-assistant repo). **Raw articles**: 2026-02-28_substack_agents-that-build-themselves.md (18KB), 2026-02-28_youtube_openclaw-from-scratch-workshop.md (33KB). Index: +2 pages (1780→1782), +2 entries (834→836).
 ## [2026-05-13] enrich | Agentic Search: Long-Running Agents & RLM practitioner perspective
 - id: concept-agentic-search-rlm-practitioner-2026-05-13
