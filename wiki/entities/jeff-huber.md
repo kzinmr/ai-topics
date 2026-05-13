@@ -11,7 +11,7 @@ tags:
   - person
   - entrepreneur
   - chroma
-  - vector-database
+  - database
   - search
   - context-engineering
   - agent-harness

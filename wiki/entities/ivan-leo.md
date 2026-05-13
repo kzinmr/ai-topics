@@ -46,6 +46,21 @@ Co-hosted a 96-minute live build session with Hugo Bowne-Anderson, reconstructin
 
 Co-hosted a separate workshop on building deep research agents from raw Gemini API calls: clarifying questions → plan → subagents running parallel Exa searches → cited report.
 
+### Deep Research Agent Workshop
+
+Co-hosted a separate 89-minute workshop with Hugo Bowne-Anderson, building a deep research agent from raw Gemini API calls through 10 progressive steps:
+
+1. Raw API call → 2. Single tool → 3. Tool runtime → 4. State & context → 5. Hooks → 6. Agent loop → 7. Subagents (parallel Exa search) → 8. Beautiful outputs → 9. Plan generation (phase swapping) → 10. OpenTelemetry
+
+Key patterns introduced:
+- **Phase swapping** — `mode: "plan" | "execute"` in RunState. Plan mode restricts tools to `generate_plan` only; execute mode unlocks the full tool set
+- **Deterministic guardrails** — `state.is_incomplete()` check forces the agent to finish todos before responding
+- **Dynamic subagent spawning** — parent agent spawns arbitrary child agents with independent RunState and iteration budgets
+
+> *"Manus had no choice but to build their own runtime. When you're shipping to millions of users, you need control over every layer."*
+
+See [[concepts/deep-research-agent-from-scratch]] for the full 10-step pipeline.
+
 ### Blog (ivanleo.com)
 
 Technical deep-dives on agent architecture published at [ivanleo.com](https://ivanleo.com):

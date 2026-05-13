@@ -241,7 +241,7 @@ Curated as a lightning lesson with **Doug Turnbull**, establishing the foundatio
 | [Harness Engineering: Why Agent Context Isn't Enough](https://hugobowne.substack.com/p/harness-engineering-why-agent-context) | **[[entities/jeff-huber|Jeff Huber]]** (Chroma CEO) | Large context windows aren't a silver bullet; code-writing unlocks emergent reasoning; inner vs outer loop of context engineering |
 | [AI Agent Harness, 3 Principles for Context Engineering, and the Bitter Lesson Revisited](https://hugobowne.substack.com/p/ai-agent-harness-3-principles-for) | **Lance Martin** (Anthropic) | Manus re-architected 5 times. Anthropic rips out Claude Code's harness as models improve. **The 3 Principles: Reduce, Offload, Isolate** |
 | [Building Agents That Build Themselves](https://hugobowne.substack.com/p/building-agents-that-build-themselves) | **Ivan Leo** (Google DeepMind, ex-Manus) | Rebuilds [[entities/pi|Pi]] and [[entities/openclaw|OpenClaw]] ideas in pure Python: agent writes and hot-reloads its own tools, markdown memory compaction, Telegram via FastAPI, Modal sandboxing |
-| [Build Your Own Deep Research Agent](https://youtube.com/live/LUfqQgz1-Os) | Ivan Leo | From raw Gemini API call → clarifying questions → plan → subagents running parallel Exa searches → cited report |
+| [Build Your Own Deep Research Agent](https://youtube.com/live/LUfqQgz1-Os) | Ivan Leo | From raw Gemini API call → clarifying questions → plan → subagents running parallel Exa searches → cited report. 10-step build pipeline with phase swapping, deterministic guardrails, dynamic subagent spawning. |
 
 ### Agentic Search
 
