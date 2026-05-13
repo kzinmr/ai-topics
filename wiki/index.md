@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-13 | Total pages: 1778 | Indexed entries: 832 | Not in index: 946 |
+> Last updated: 2026-05-13 | Total pages: 1780 | Indexed entries: 834 | Not in index: 946 |
 
 ## Entities (557 pages)
 
@@ -582,7 +582,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1246 pages)
+## Concepts (1248 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -634,6 +634,7 @@
 - [[concepts/deepspeed]] — Microsoft DeepSpeed
 - [[concepts/dspy-rlm]] — DSPy.RLM
 - [[concepts/dspy-tutorial]] — Hands-on DSPy getting started tutorial (Maxime Rivest): Signature → gold set → MIPROv2 optimization in ~50 lines yielding 20% precision improvement
+- [[concepts/embeddings]] — Dense vector representations encoding entities as coordinates. Triples training (anchor/similar/dissimilar), dot product + sigmoid + contrastive loss, Two-Tower architecture for cold-start, transformer sentence embeddings (BERT CLS). Doug Turnbull's Maven course module.
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/gliclass]] — GLiClass
 - [[concepts/glut-of-circuits]] — niplav (2026) の GLUT-of-Circuits モデル：LLMは重ね合わせで計算される、深さ制限のある合成可能な誤り訂正回路の巨大ルックアップテーブル的コレクション。Agent構造問題・AIアライメント・トークンボトルネック・CoTへの含意。
@@ -811,6 +812,7 @@
 - [[concepts/typed-rlm]] — λ-RLM (Typed Recursive Reasoning)
 - [[concepts/vibe-coding-vs-agentic-engineering]] — Distinction between vibe coding (natural language → code, no review) vs agentic engineering (professional judgment, security, production quality). Blurring boundary as agents improve. Bottleneck shifts: ~200 lines/day → ~2000 lines/day. Real-world usage as quality signal.
 - [[concepts/verifiers-rl]] — Verifiers: TRLベースのマルチターンRLフレームワーク。HuggingFace Trainer上のGRPOで、環境・マルチターンツール使用に対応。研究用途に人気。
+- [[concepts/vector-search]] — Approximate Nearest Neighbor (ANN) search in high-dimensional embedding space. HNSW hierarchical graphs, k-means clustering, ScANN/DiskANN, filtered similarity (ACORN1/turbopuffer), hybrid BM25+vector strategies. Doug Turnbull's Maven course.
 - [[concepts/constitutional-ai]] — Anthropic's methodology for aligning AI via explicit principles (Constitution). Compared with OpenAI Model Spec by Boaz Barak (Jan 2026). Three poles of alignment: Principles, Policies, Personality.
 - [[concepts/countbenchqa]] — CountBenchQA — 超シンプルなオブジェクトカウンティングベンチマーク。LAION-400Mから手動検証。2-10個の物体。データ品質は最高。
 - [[concepts/craft-agents]] — Craft Agents: open-source agent interface. Works with Claude, ChatGPT, OpenRouter, local models. Built-in Chromium browser, MCP support, Claude Code skill import. Multi-provider via Vercel AI SDK.

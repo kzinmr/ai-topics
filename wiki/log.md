@@ -35,6 +35,12 @@
   - `concepts/bm25.md` (NEW) — TF→TF-IDF→BM25→BM25Fの進化。k1/bパラメータ、BM25Fの統合TF+IDF、ターボパッファのスケーリング、Dumb Retriever + Smart Agentの設計論
   - `entities/doug-turnbull-speaking.md` — 本トーク追加（Maven course, 割引コード: bm25rocks）
 - **SCHEMA.md**: `lexical-search`, `bm25`, `tokenization` タグをTechniquesカテゴリに追加
+- **Doug Turnbull スライド取り込み②**: 「Vector Search & Embedding Retrieval — Cheat at Search Essentials」(Maven course Day 3, May 2026)
+  - `raw/articles/2026-05-13_softwaredoug_vector-search-embeddings.md` — Google Slide text export (1111行)。p1-8テンプレ、p9+本編
+  - `concepts/embeddings.md` (NEW) — 埋め込みの基礎（triples学習、dot product + sigmoid + contrastive loss、backpropagation）、Two-Towerアーキテクチャ（cold-start対策）、Transformer文埋め込み（BERT CLS）、正規化・コサイン類似度、次元数と精度のトレードオフ、Hubness/圧縮損失/Similarity≠Relevanceの3つの落とし穴
+  - `concepts/vector-search.md` (NEW) — ANNアルゴリズム（k-meansクラスタリング、HNSW階層グラフ、ScANN/DiskANN）、次元の呪い、Filtered Similarity（pre/post/nativeフィルタリング、ACORN1）、Hybrid Search（BM25+vectorの複数retrieval arm戦略）、LLMオーケストレータパターン
+  - `entities/doug-turnbull-speaking.md` — 本トーク追加（Maven Day 3, 割引コード: vectorsrock）
+- **SCHEMA.md**: `vector-search`, `hnsw` タグをTechniquesカテゴリに追加
 ## 2026-05-12 19:00 UTC — Daily Skeleton Enrichment Run
 
 **Status**: No `status: skeleton` entity pages found. Enriched 2 entities as fallback.
