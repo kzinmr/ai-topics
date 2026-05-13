@@ -8,6 +8,8 @@
   - [[concepts/rlm-recursive-language-models]]
   - [[concepts/unharnessed-agents]]
 
+- **2026-05-13**: Discord user request → ingested Claude Code `/goal` documentation page. **New page**: `concepts/claude-code-goal.md` — Goal-driven autonomous workflow via prompt-based Stop hook + evaluator model (Haiku). Architecture comparison with Codex /goal, /loop, Stop hooks. Condition writing best practices. Lifecycle diagram. Non-interactive mode support. **Enriched**: `concepts/agentic-loop.md` — added Claude Code /goal as named variant in comparison table + Related Concepts link. **Raw articles**: `2026-05-13_anthropic_claude-code-goal.md` (6.2KB). Index: +1 entry. Tags: claude-code, coding-agents, agent-loop, autonomous-agents, anthropic, prompt-caching, tool-use.
+
 - **2026-05-13**: Discord user request → ingested "Build Your Own Deep Research Agent" workshop (Ivan Leo, Google DeepMind + Hugo Bowne-Anderson, Mar 2026). **New page**: `concepts/deep-research-agent-from-scratch.md` — 10-step build pipeline from raw Gemini API to full research agent with phase swapping (plan/execute modes), deterministic guardrails, dynamic subagent spawning (Exa parallel search), OpenTelemetry tracing. **Enriched**: `entities/ivan-leo.md` (added Deep Research Agent Workshop section with 10-step breakdown), `entities/hugo-bowne-anderson.md` (enhanced collaboration description). **Raw articles**: 2026-03-28_youtube_deep-research-agent-workshop.md (27.6KB), 2026-03-28_github_deep-research-agent-readme.md (2.3KB). Index: +1 page (1782→1783), +1 entry (836→837).
 ## 2026-05-13 04:50 UTC — Lance Martin Context Engineering for Agents 生記事保存 + 概念ページ拡充 + ブログ監視追加 + 相互リンク
 

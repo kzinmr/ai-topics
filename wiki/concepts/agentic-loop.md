@@ -57,7 +57,8 @@ This is sometimes called the **Perceive → Reason → Act → Observe** cycle i
 | **ReAct Loop** | Academic (2022) | Formal reasoning + acting interleaving |
 | **Ralph Wiggum Loop** | Coding agents | Named after Simpsons character; "keep running, keep trying, never give up" |
 | **Karpathy Loop** | ML research | Fixed time budget, single metric, indefinite iteration |
-| **/goal Loop** | Codex CLI | Persisted goal with runtime continuation prompts |
+| **/goal Loop (Claude Code)** | Claude Code | Condition-driven; evaluator model (Haiku) judges completion from transcript |
+| **/goal Loop (Codex)** | Codex CLI | Persisted goal with runtime continuation prompts + `update_goal` tool |
 | **Autoresearch Loop** | General optimization | Continuous improvement against a measurable target |
 
 ## What Separates Agents from Chatbots
@@ -100,6 +101,7 @@ The real engineering challenges are around the loop:
 - [[concepts/karpathy-loop]] — Autonomous ML research variant
 - [[concepts/pi-autoresearch]] — Generalized metric optimization variant
 - [[concepts/codex-goal]] — Codex built-in Ralph loop (`/goal`)
+- [[concepts/claude-code-goal]] — Claude Code goal-driven autonomous workflow (`/goal`)
 - [[concepts/self-improving-agents]] — Agents that improve themselves over runs
 - [[concepts/agentic-engineering/_index]] — Broader agentic engineering cluster
 - [[concepts/reasoning-models]] — Chain-of-thought, tree-of-thought reasoning
