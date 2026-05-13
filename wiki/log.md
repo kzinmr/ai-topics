@@ -1,3 +1,9 @@
+## 2026-05-13 07:40 UTC — AI Engineer YouTubeチャンネルを監視対象に追加
+
+- **🔧 監視設定**: `config/feeds/blogs.opml` に YouTube Channels セクションを新設し、AI Engineer (@aiDotEngineer) のRSSフィードを追加。`blogwatcher-cli add` でDB登録、初回15件を既読化。
+- **📄 エンティティページ新規作成**: `[[entities/ai-engineer-youtube]]` — 466K登録者、700+ talks。AI Engineerカンファレンスシリーズ（World's Fair, Summit, Code）の公式YouTubeチャンネル。主要トーク、コンテンツテーマ、Wiki関連性を記載。
+- **📋 Index更新**: `wiki/index.md` にエンティティ追加。
+
 ## 2026-05-13 05:15 UTC — Claude Code Agent SDK セッション管理 + Context Engineering 実装分析
 
 - **Raw記事保存**: `wiki/raw/articles/2026-05-13_anthropic_claude-code-agent-sdk-sessions.md` — Anthropic公式ドキュメント「Work with sessions」。continue/resume/fork の3操作による会話履歴の永続化・復元・分岐。`~/.claude/projects/<encoded-cwd>/*.jsonl` への自動永続化、`ClaudeSDKClient`（Python）、`continue: true`（TypeScript）、クロスホストセッション復元。

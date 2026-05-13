@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-13 | Total pages: 1785 | Indexed entries: 839 | Not in index: 946 |
+> Last updated: 2026-05-13 | Total pages: 1789 | Indexed entries: 843 | Not in index: 946 |
 
-## Entities (559 pages)
+## Entities (578 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -26,6 +26,7 @@
 - [[entities/jack-clark]] — Jack Clark — Anthropic co-founder, Import AI newsletter. 60%+ probability of autonomous AI R&D by end 2028. Recursive self-improvement forecast.
 - [[entities/jaya-gupta]] — Jaya Gupta — Foundation Capital partner. Organizational moat theory, Context Graphs. Argues company shape is the last durable moat in AI. 3.2M-view X Article author.
 - [[entities/jo-bergum]] — Jo Kristian Bergum
+- [[entities/joan-westenberg]] — Joan Westenberg — Strategy and positioning consultant. "Position or Perish" narrative framework, messaging spine methodology.
 - [[entities/lucebox]] — Lucebox
 - [[entities/luke-curley]] — Luke Curley (@lukeslhz) — Software Engineer at Discord, formerly Twitch. MoQ Working Group participant. Advocates for Media over QUIC over WebRTC for AI voice applications. Argues that WebRTC's packet dropping degrades LLM prompts, and users would prefer 200ms extra latency for accuracy.
 - [[entities/mac-studio-local-ai]] — Mac Studio Local AI
@@ -56,6 +57,7 @@
 - [[entities/agentcraft]] — Open-source AI agent orchestrator with RTS game interface. Supports Claude Code, OpenCode, Cursor.
 - [[entities/agi-bot]] — Chinese humanoid robot manufacturer. Second-largest Chinese humanoid robot seller after Unitree.
 - [[entities/agibot-10000-units]] — Real-world demand for humanoid robots accelerates as AGIBot ships 10,000 units.
+- [[entities/ai-engineer-youtube]] — AI Engineer YouTubeチャンネル (@aiDotEngineer) — 466K登録者、700+ talks。AI Engineerカンファレンスシリーズの公式チャンネル。エージェント設計、AIコーディング、インフラ、フロンティアモデル。RSS監視対象。
 - [[entities/akira-realmcore]] — **X** | @realmcore_ |
 - [[entities/akshay-pachaar]] — Senior AI Engineer at Lightning AI, Co-Founder of Daily Dose of Data Science, author of "The Anatomy of an Agent Harness" synthesis
 - [[entities/alec-radford]] — **Role** | AI Researcher (former OpenAI); Advisor, Thinking Machines Lab |
@@ -309,6 +311,7 @@
 - [[entities/mira-murati]] — **Role** | CEO & Co-founder, Thinking Machines Lab; Former CTO, OpenAI |
 - [[entities/mistral-voxtral-tts]] — Mistral AI's open-weights text-to-speech model, announced April 2026. Combines autoregressive semantic token generation with flow-matching acoustic token synthesis.
 - [[entities/mitchell-hashimoto]] — HashiCorp co-founder (Vagrant, Terraform, Vault), Ghostty creator. Left GitHub in 2026 citing instability from AI agent scale.
+- [[entities/mo-bitar]] — Mo Bitar (@mobitar) — Satirical commentator on corporate AI adoption. "Ralph Loop" phenomenon analyst.
 - [[entities/mitchell-hashimoto-ghostty]] — **Blog** | mitchellh.com |
 - [[entities/mobius-labs]] — AI research company specializing in model compression, quantization (HQQ), and multimodal understanding (Aana). Acquired by Dropbox. Creators of GemLite GPU kernels.
 - [[entities/muse-spark]] — Meta's latest language model, announced April 2026.
@@ -589,7 +592,8 @@
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
 - [[concepts/adam-optimizer]] — Adam（Adaptive Moment Estimation）: 深層学習で最も広く使われる適応的最適化アルゴリズム。1次・2次モーメントの指数移動平均で学習率を適応制御。AdamWはWeight Decayを分離し汎化性能を改善。LLM学習の標準。→ [[raw/articles/2024-02-08_linkedin-processsense-adam-adamw.md]]
 - [[concepts/agentic-search]] — Agentic Search
-- [[concepts/agent-ergonomics]] — Programming language design principles optimized for AI coding agents (compile speed, distribution, runtime) over human readability. Wes McKinney's thesis: Go/Rust > Python for agentic loops.
+- [[concepts/agent-ergonomics]]
+- [[concepts/agentic-security]] — Security considerations for AI agents: supply chain attacks, package installation risks, threat model blind spots, cross-domain vulnerability amplification. — Programming language design principles optimized for AI coding agents (compile speed, distribution, runtime) over human readability. Wes McKinney's thesis: Go/Rust > Python for agentic loops.
 - [[concepts/agentic-identity]] — Modeling AI agents as financial actors. Ramp's OBOU (On Behalf Of User) framework for enterprise agent identity, compliance, and audit.
 - [[concepts/agentic-loop]] — Agentic Loop — The canonical AI agent execution pattern: decide → act → observe. Every major agent framework converges on this same loop. ReAct, Ralph Wiggum, /goal variants.
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
@@ -791,7 +795,8 @@
 - [[concepts/multi-turn-tool-use-rl]] — Multi-Turn Tool Use with RL: GRPOを用いてLLMエージェントにマルチターンツールオーケストレーションを教える手法。Bespoke LabsがBFCL v3で+23%達成（Qwen2.5-7B, 100サンプル）。報酬設計のLess is More、過長フィルタリング+KL 0.001。
 - [[concepts/multi-token-prediction]] — Google Gemma 4 MTP drafters (May 2026): speculative decoding delivering up to 3x speedup. Lightweight drafter model predicts multiple tokens, main model verifies in single pass.
 - [[concepts/natural-language-autoencoders]] — Anthropic's interpretability technique (May 2026): converts model activations into human-readable text. Round-trip reconstruction scoring. Used to understand Claude's internal behavior, safety testing, and debugging.
-- [[concepts/normalization-of-deviance-in-ai-coding]] — Risk of gradually trusting AI-generated code without review, coined from Diane Vaughan's Challenger disaster framework. Each successful unreviewed deployment reinforces trust, creating security/quality risk. AI agents lack professional reputation/accountability.
+- [[concepts/normalization-of-deviance-in-ai-coding]]
+- [[concepts/nextpad-ai-development]] — Nextpad++ case study: AI multi-agent development quality challenges, "uncanny valley" of functional but poor UX software. — Risk of gradually trusting AI-generated code without review, coined from Diane Vaughan's Challenger disaster framework. Each successful unreviewed deployment reinforces trust, creating security/quality risk. AI agents lack professional reputation/accountability.
 - [[concepts/notion-mcp]] — Notion MCP: official Notion MCP server (https://mcp.notion.com/mcp). Setup guides for Claude Code, Cursor, VS Code, Windsurf, ChatGPT, Codex. OAuth 2.0 authentication.
 - [[concepts/nemo-rl]] — NeMo-RL (NVIDIA): クリーンなインターフェースとモジュラー設計のRLフレームワーク。マルチターンRL対応、SFT+DPO+GRPO、FSDP/Megatron.
 - [[concepts/nvidia-dynamo]] — NVIDIA Dynamo: agentic codingワークロード向け推論アーキテクチャ。KVキャッシュ最適化、ストリーミングツールディスパッチ、マルチターン推論解析。Claude Code/Codex/OpenClaw対応。TTFT 5x改善。

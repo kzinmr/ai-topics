@@ -162,5 +162,8 @@
       <outline type="sitemap" text="The Browser Company Blog" title="The Browser Company Blog" xmlUrl="https://arc.net/sitemap.xml" htmlUrl="https://arc.net/blog" />
       <outline type="sitemap" text="Warp Blog" title="Warp Blog" xmlUrl="https://www.warp.dev/sitemap.xml" htmlUrl="https://www.warp.dev/blog" />
     </outline>
+    <outline text="YouTube Channels" title="YouTube Channels">
+      <outline type="rss" text="AI Engineer" title="AI Engineer" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCLKPca3kwwd-B59HNr-_lvA" htmlUrl="https://www.youtube.com/@aidotengineer" />
+    </outline>
   </body>
 </opml>
