@@ -1,3 +1,10 @@
+## 2026-05-13 04:55 UTC — Jeff Huber / Harness Engineering 対談取り込み + Inner/Outer Loop 拡張
+
+- **Raw記事保存**: `wiki/raw/articles/2026-03-04_hugobowne_harness-engineering-agent-context.md` — Hugo Bowne-Anderson による Vanishing Gradients 記事。Jeff Huber (Chroma CEO) が語る context engineering > prompt engineering、大規模コンテキストウィンドウの限界、エージェントハーネス = tools+sub-agents+workflows、コード記述が創発的推論を解放する、Inner Loop / Outer Loop フレームワーク。
+- **🆕 エンティティページ作成**: `[[entities/jeff-huber]]` (L2) — Chroma CEO & Co-founder の包括的ページ。Standard Cyborg (YC W15) → Chroma ($18M seed) の背景、Context Engineering > Prompt Engineering の再定義、Inner/Outer Loop フレームワーク、コード記述による創発的推論テーゼ、実践的ビルダーアドバイス（Hybrid Search / Golden Dataset / Cluster Analysis / Tool Engineering）。
+- **✏️ 概念ページ強化**: `[[concepts/reduce-offload-isolate]]` — Jeff Huber の **Inner Loop vs Outer Loop** 拡張セクションを新設。Inner Loop = Reduce/Offload/Isolateをタスク単位で適用、Outer Loop = コンテキスト充填を時間と共に改善するシステム（"machine that builds the machines"）。評価の未解決問題にも言及。
+- **✏️ 相互リンク**: `[[entities/hugo-bowne-anderson]]` — Key Collaborations テーブルの Jeff Huber を [[entities/jeff-huber]] へのwikilink化。
+- **Index更新**: jeff-huber を entities セクションに追加（jeff-geerling と jensen-huang の間）。Total pages: 1783→1784, Indexed entries: 837→838, Entities: 558→559。
 ## [2026-05-13] enrich | Agentic Search: Berryman 5-Level Model + Revealed Preferences + Ep.68
 - id: concept-agentic-search-berryman-ep68-2026-05-13
 - summary: Saved 3 raw articles (Berryman's 5-level maturity model blog, Turnbull's LLM-judges critique, Ep.68 show notes). Added two major sections to [[concepts/agentic-search]]: "Berryman's 5-Level Agentic Search Maturity Model" (Level 0-4: Trad Search → Beginner AI → Intermediate AI → Conversational Assistant → Async Research Agent) with comparison table vs 3-level framework, and "Revealed Preferences: The Fundamental Limit of LLM-as-Judge" (engagement blindness, hard negative blindness, sneaky overfitting, LLMs-as-analysts-not-judges). Added Jan 2026 blog post entry to [[entities/john-berryman]]. Cross-linked with [[concepts/llm-as-judge]].

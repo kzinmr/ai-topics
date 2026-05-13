@@ -121,6 +121,24 @@ The evolution reflects the deepening understanding that **context is the scarces
 3. **Test against model generations** — A harness should show performance improvement when tested against progressively more capable models. If not, the harness is a bottleneck.
 4. **Context budget as first-class constraint** — Treat context tokens like memory in embedded systems. Profiling tools should track context utilization per agent step.
 
+## Inner Loop vs Outer Loop (Jeff Huber's Extension)
+
+**Jeff Huber** (Chroma CEO) extended the context engineering framework with a temporal dimension in his Vanishing Gradients conversation with Hugo Bowne-Anderson (Mar 2026):
+
+- **Inner Loop**: What information to put into context for a **single task, right now**. This is the tactical, per-request curation problem — Reduce/Offload/Isolate applied at the level of each agent step.
+- **Outer Loop**: Building systems that get **better at filling context over time**. The strategic, learning-oriented problem. The "machine that builds the machines."
+
+> *"It's both figuring out what do I put into context this time. That's the inner loop. And then it's how do I get better at context filling over time. And that is the outer loop."* — Jeff Huber
+
+The outer loop implies:
+- **Continuous improvement**: Systems that learn from feedback and adjust their context engineering strategies
+- **From 90% to 99.9%**: Moving from internal-tool reliability to user-facing product reliability
+- **Unsolved evaluation**: Agent evaluation remains the bottleneck — LLM-as-judge is not a panacea; manual labeling is brittle
+
+This framework is complementary to Reduce/Offload/Isolate: the 3 principles are *how* you engineer context; the inner/outer loop distinction is *when and how you improve* that engineering over time.
+
+See [[entities/jeff-huber]] for Huber's full framework and background.
+
 ## Related Concepts
 
 - [[concepts/context-rot]] — The degradation of LLM instruction-following as context grows

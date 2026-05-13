@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-13 | Total pages: 1783 | Indexed entries: 837 | Not in index: 946 |
+> Last updated: 2026-05-13 | Total pages: 1784 | Indexed entries: 838 | Not in index: 946 |
 
-## Entities (558 pages)
+## Entities (559 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -247,7 +247,7 @@
 - [[entities/jayden-milne]] — **Blog:** thejaymo.net
 - [[entities/jay-mody]] — **Blog:** jaykmody.com | Educator known for picoGPT (GPT-2 in 60 lines of NumPy) and clear LLM internals explanations |
 - [[entities/jeff-geerling]] — **URL:** https://www.jeffgeerling.com
-- [[entities/jensen-huang]] — **Role** | Co-founder, CEO, and President of Nvidia Corporation |
+- [[entities/jeff-huber]] — **Jeff Huber (@jeffchuber)** — Co-founder & CEO, Chroma (open-source vector database, $18M seed). Context engineering thought leader: "prompt engineering is script kitty; context engineering is software engineering." Inner Loop / Outer Loop framework. Code-writing unlocks emergent reasoning thesis.- [[entities/jensen-huang]] — **Role** | Co-founder, CEO, and President of Nvidia Corporation |
 - [[entities/jim-fan]] — **X** | @jim-fan |
 - [[entities/jim-nielsen]] — **Blog** | Jim Nielsen's Blog |
 - [[entities/jo-kristian-bergum]] — **URL:** https://hornet.dev
