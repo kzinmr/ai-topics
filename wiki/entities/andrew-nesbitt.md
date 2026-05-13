@@ -2,7 +2,7 @@
 title: "Andrew Nesbitt"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-10
+updated: 2026-05-13
 type: entity
 ---
 
@@ -208,36 +208,25 @@ In May 2026, Nesbitt published a comprehensive critique of how open source proje
 
 This work extends Nesbitt's broader thesis about **observational rigor** — identifying patterns in the hidden infrastructure of open source that challenge conventional wisdom about project health and sustainability.
 
+### "Not a Security Issue: AI Scanner Policy Engineering"
 
-### The Mismeasure of Open Source (May 2026)
+In May 2026, Nesbitt published a post documenting how AI/agentic vulnerability scanners read a project's **VULN-DISCLOSURE-POLICY.md** and self-triage findings against its published exclusions — before any human sees them. This inverts the typical security-tool discourse from "what to do with a flood of reports" to "how to shape what the scanner reports in the first place."
 
-Nesbitt published a comprehensive critique of how open source projects are scored for criticality, risk, and funding. The article identifies several systemic problems with current OSS measurement approaches:
+#### Key Findings from the curl Scan Experiment
 
-- **Missing read as zero**: When signals are absent (no download counts for Go modules, no GitHub issues for projects using Bugzilla/mailing lists), scoring models write zeros instead of "unknown." This silently excludes entire ecosystems from consideration.
-- **Streetlight effect**: Metrics are used because APIs return them, not because they're meaningful. Download counts are dominated by CI runners, mirror traffic, and bot scans. GitHub stars measure a narrow demographic and are purchasable (~6M suspected fake stars 2019-2024). CVE count measures audit attention received, not vulnerabilities present.
-- **GitHub as visible universe**: Projects on mailing lists, cgit, Gerrit, or Savannah (PostgreSQL, SQLite, GnuPG, glibc, FFmpeg) are disproportionately the old low-level infrastructure that models exist to find.
-- **Identity problem**: The same code appears under different names across ecosystems (libcurl = curl on Homebrew, libcurl4 on Debian, pycurl on PyPI, curl-sys on crates.io). Models either count them as separate entries or pick one and ignore the rest.
-- **Weekend at Bernie's**: Claude Code and similar agents now support scheduled tasks, so repositories can accumulate plausible-looking maintenance commits authored under human names with no human in the loop.
-- **Funding you can't see**: The most common funding arrangement for critical infrastructure is invisible to crawlers — maintainers employed by Red Hat, Google, Intel, Canonical, with the project as some or all of their job.
-- **Compound case**: Errors correlate because a project old enough to predate GitHub is disproportionately likely to be written in C, distributed by vendoring rather than a manifest dependency, developed over a mailing list, funded through someone's salary, and low-churn because the format it implements stopped changing years ago.
+- **Policy-driven self-triage**: Scanners scanning curl (already heavily audited) applied curl's "Not security issues" list — 16 named categories including server-triggered NULL dereferences, small leaks, never-ending transfers, and anything requiring command-line control — and demoted those findings automatically.
+- **Concrete example**: Found `tool_formparse.c` recursing linked-list form parts with no depth limit, built a 150K-line config file to prove it, got an ASan stack-overflow trace — then wrote "trigger requires user to run curl with attacker-supplied config or args, so excluded by policy" and filed it under quality bugs.
+- **Node.js prior art**: Embeds a full threat model in SECURITY.md with explicit trust boundaries — what the runtime does NOT trust (inbound network data, file content via API) vs. what it does (the OS, the developer's code).
+- **Django's policy**: Gives worked examples of reports "not considered valid" and asks reporters to skip CVSS scores, severity assessments, and "lengthy background sections" — a near-direct description of LLM default output.
+- **Chrome's security FAQ**: Source of the most-borrowed exclusion: a physically-local attacker who can already run code as you is out of scope.
 
-This work extends Nesbitt's broader thesis about **observational rigor** — identifying patterns in the hidden infrastructure of open source that challenge conventional wisdom about project health and sustainability.
+#### The Actionable Takeaway
 
+Writing a good exclusion list is **cheaper and more effective** than training a classifier to filter false positives. Each exclusion needs: the pattern name, a flat statement that it doesn't qualify, and enough reasoning to generalize. Nesbitt collected ~500 repositories shipping a threat model file — but filenames are scattered (THREAT-MODEL.md, threat_model.md, ThreatModel.md), and tooling hasn't converged on a standard path.
 
-### The Mismeasure of Open Source (May 2026)
+> *"The better-built tools, the ones that read the repo before reporting, are the ones a policy file can steer, and those are increasingly the ones doing the scanning. Writing the threat model down was always good practice for human reporters, and it turns out the new readers take it more literally than the old ones ever did."*
 
-Nesbitt published a comprehensive critique of how open source projects are scored for criticality, risk, and funding. The article identifies several systemic problems with current OSS measurement approaches:
-
-- **Missing read as zero**: When signals are absent (no download counts for Go modules, no GitHub issues for projects using Bugzilla/mailing lists), scoring models write zeros instead of "unknown." This silently excludes entire ecosystems from consideration.
-- **Streetlight effect**: Metrics are used because APIs return them, not because they're meaningful. Download counts are dominated by CI runners, mirror traffic, and bot scans. GitHub stars measure a narrow demographic and are purchasable (~6M suspected fake stars 2019-2024). CVE count measures audit attention received, not vulnerabilities present.
-- **GitHub as visible universe**: Projects on mailing lists, cgit, Gerrit, or Savannah (PostgreSQL, SQLite, GnuPG, glibc, FFmpeg) are disproportionately the old low-level infrastructure that models exist to find.
-- **Identity problem**: The same code appears under different names across ecosystems (libcurl = curl on Homebrew, libcurl4 on Debian, pycurl on PyPI, curl-sys on crates.io). Models either count them as separate entries or pick one and ignore the rest.
-- **Weekend at Bernie's**: Claude Code and similar agents now support scheduled tasks, so repositories can accumulate plausible-looking maintenance commits authored under human names with no human in the loop.
-- **Funding you can't see**: The most common funding arrangement for critical infrastructure is invisible to crawlers — maintainers employed by Red Hat, Google, Intel, Canonical, with the project as some or all of their job.
-- **Compound case**: Errors correlate because a project old enough to predate GitHub is disproportionately likely to be written in C, distributed by vendoring rather than a manifest dependency, developed over a mailing list, funded through someone's salary, and low-churn because the format it implements stopped changing years ago.
-
-This work extends Nesbitt's broader thesis about **observational rigor** — identifying patterns in the hidden infrastructure of open source that challenge conventional wisdom about project health and sustainability.
-
+Related: [[concepts/agent-safety]], [[concepts/project-glasswing]]
 
 ## Sources
 
@@ -246,6 +235,7 @@ This work extends Nesbitt's broader thesis about **observational rigor** — ide
 - The Manifest podcast (manifest.fm)
 - "Why I'm Fascinated by Package Management" (2024)
 - "How I Assess Open Source Libraries" (2024)
+- "Not a Security Issue: AI Scanner Policy Engineering" (2026)
 - "Guided Meditation for Developers" (2026)
 - "Package Manager Magic Files" (2026)
 - "Introducing Package Chaos Monkey" (2026)
@@ -272,3 +262,4 @@ This work extends Nesbitt's broader thesis about **observational rigor** — ide
 - nesbitt.io--2026-04-27-the-stages-of-package-installation-html--50f05a11
 - nesbitt.io--2026-04-28-github-actions-is-the-weakest-link-html--0c77c59b
 - nesbitt.io--2026-05-09-the-mismeasure-of-open-source-html--ab1e120e
+- nesbitt.io--2026-05-12-not-a-security-issue-html--c464f9c9

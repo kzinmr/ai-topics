@@ -59,3 +59,20 @@
 - Duplicates: 0 (was 11)
 - Pipe corruption: 0 ✅ | Triple bracket: 0 ✅ | Line-number corruption: 0 ✅
 
+## [2026-05-13] dreaming-wiki-ingest | entities/andrew-nesbitt.md enriched
+### Context
+- Dreaming pre-run failed (JSON parse error) — cross-pipeline check performed
+- newsletter-ingest: 0 candidates | sitemap-monitor: 0 saved | blog-ingest: 1 take consumed
+- All other recent raw articles (GNAP, InclusionAI Ring-2.6-1T, AEM, Firecracker, David Fowler, Prime Intellect renderers) already processed by other pipelines
+
+### Changes
+- `entities/andrew-nesbitt.md`:
+  - ✅ Removed triplicated "The Mismeasure of Open Source" sections (removed 2 duplicate copies)
+  - ✅ Added "Not a Security Issue: AI Scanner Policy Engineering" section documenting AI scanner self-triage via policy files
+  - ✅ Updated `updated` date to 2026-05-13
+  - ✅ Added source entry and raw article reference (nesbitt.io--2026-05-12-not-a-security-issue-html--c464f9c9)
+
+### Files affected
+- `~/wiki/entities/andrew-nesbitt.md` — updated (265 lines, up from 274 with duplicates)
+- `~/wiki/log.md` — updated
+- `~/wiki/index.md` — no change (entry already exists)
