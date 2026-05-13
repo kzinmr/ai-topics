@@ -3,7 +3,7 @@ title: Doug Turnbull - Speaking & Community
 type: entity-sub
 parent: doug-turnbull
 created: 2026-04-10
-updated: 2026-05-02
+updated: 2026-05-13
 tags:
   - person
   - writing
@@ -18,7 +18,9 @@ sources: []
 
 Turnbull is a regular speaker at search industry conferences:
 
-- **\"How To Build Your First Agentic Search Application\"** (Feb 2026, Vanishing Gradients podcast): 35-minute interview covering the practical implementation side of agentic search — passive vs active search spectrum, core tool-calling loop in code, the harness validation loop with LLM-as-Judge, long-running agents/memory compaction, and build-vs-buy decisions (Pydantic AI vs hand-rolling). [[raw/articles/2026-02-20_doug-turnbull-build-first-agentic-search-app]]
+- **\\\"Lexical Search & BM25\\\" — Cheat at Search Essentials** (May 2026, Maven course): Live training course on the fundamentals of lexical search. Covers tokenization (whitespace → intelligent tokenizers with stemming/synonyms/entities), query processing (AND/OR matching, Elasticsearch DSLs), scoring evolution (TF → TF\*IDF → BM25), multi-field search (naive sum vs. DisMax), BM25 parameters (k1 saturation, b length bias), and BM25F for combining fields. Key insight: \"BM25 ≈ Relevance Given Match\" — and agents handle the semantics when matching fails. Course discount code: `bm25rocks`. Uses [[entities/jxmo|searcharray]] educational library. [[raw/articles/2026-05-13_softwaredoug_lexical-search-bm25]]
+
+- **\\\"How To Build Your First Agentic Search Application\\\"** (Feb 2026, Vanishing Gradients podcast): 35-minute interview covering the practical implementation side of agentic search — passive vs active search spectrum, core tool-calling loop in code, the harness validation loop with LLM-as-Judge, long-running agents/memory compaction, and build-vs-buy decisions (Pydantic AI vs hand-rolling). [[raw/articles/2026-02-20_doug-turnbull-build-first-agentic-search-app]]
 
 - **\"Rag is the What. Agentic search is the How.\"** (April 2026): 54-minute talk tracking the paradigm shift from classical RAG to agentic search — arguing that complexity moves from retrieval to the agent+harness, and that "dumb retrievers" (BM25, grep) work best with agent reasoning. Explicitly connects to SID-1, semantic grep, and scaffold+tool design. [[raw/articles/2026-04-22_doug-turnbull-rag-is-the-what-agentic-search-is-the-how]]
 

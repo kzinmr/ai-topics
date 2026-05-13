@@ -29,6 +29,12 @@
   - `raw/articles/2026-04-15_shopify-autoresearch-david-cortes.md` — Shopify EngineeringのAutoresearch記事
 - **SCHEMA.md**: `agent-loop`, `autoresearch`, `ralph-loop` タグをAI Agentsカテゴリに追加
 - **hot-topics.yaml**: 3トピック（autoresearch, agentic-loop, codex-goal）をYAMLに追加。pages, hints, notes完備
+- **Doug Turnbull スライド取り込み**: 「Lexical Search & BM25 — Cheat at Search Essentials」(Maven course, May 2026)
+  - `raw/articles/2026-05-13_softwaredoug_lexical-search-bm25.md` — Google Slide text export (726行)。p1-6テンプレ、p7+本編
+  - `concepts/lexical-search.md` (NEW) — Tokenization・Query処理(AND/OR)・Multi-field search (DisMax)・エージェント時代の位置づけ
+  - `concepts/bm25.md` (NEW) — TF→TF-IDF→BM25→BM25Fの進化。k1/bパラメータ、BM25Fの統合TF+IDF、ターボパッファのスケーリング、Dumb Retriever + Smart Agentの設計論
+  - `entities/doug-turnbull-speaking.md` — 本トーク追加（Maven course, 割引コード: bm25rocks）
+- **SCHEMA.md**: `lexical-search`, `bm25`, `tokenization` タグをTechniquesカテゴリに追加
 ## 2026-05-12 19:00 UTC — Daily Skeleton Enrichment Run
 
 **Status**: No `status: skeleton` entity pages found. Enriched 2 entities as fallback.
