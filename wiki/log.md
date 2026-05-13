@@ -1,3 +1,13 @@
+## 2026-05-13 11:00 UTC — Active Crawl | GNAP + AEM + InclusionAI Ring-2.6-1T (4 wiki pages + 3 raw articles)
+
+- **📄 概念ページ新規作成**: `[[concepts/gnap-git-native-agent-protocol]]` — Git-Native Agent Protocol: farol-teamの軽量オープンソースプロトコル。git repoを共有する4つのJSONファイルでAIエージェントチームを調整。ゼロサーバー、ゼロデータベース。MCP/A2Aと補完的。
+- **📄 概念ページ新規作成**: `[[concepts/aem-adaptive-entropy-modulation]]` — Baidu/Tsinghua 2026: マルチターンエージェントRLのための教師なしクレジット割当手法。応答レベルのエントロピー変調で探索/活用トレードオフを適応制御。SWE-bench-Verifiedで+1.4%。
+- **📄 エンティティページ新規作成**: `[[entities/inclusionai]]` — AI企業。エージェント最適化LLMを開発。RingモデルシリーズをOpenRouterで無料提供。
+- **📄 エンティティページ新規作成**: `[[entities/ring-2-6-1t]]` — 1T MoE思考モデル（63B活性化）。コーディングエージェント、ツール使用、長時間タスク用。2026年5月8日リリース。OpenRouter無料。
+- **📄 生記事保存**: `raw/articles/2026-05-13_gnap-git-native-agent-protocol.md`, `raw/articles/2026-05-13_aem-adaptive-entropy-modulation.md`, `raw/articles/2026-05-13_inclusionai-ring-2-6-1t.md`
+- **📋 Index更新**: 4ページをindex.mdに追加。セクションカウント更新（Entities: 580, Concepts: 1252）。
+- **🔍 ソース**: arXiv:2605.00425, github.com/farol-team/gnap, openrouter.ai/inclusionai/ring-2.6-1t:free
+
 ## 2026-05-13 09:00 UTC — Prime Intellect entity + renderers concept pages
 
 - **📄 エンティティページ新規作成**: `[[entities/prime-intellect]]` — Prime Intellect社の包括的エンティティページ。2023年創業、$20.5M資金調達（Founders Fund, Andrej Karpathy, Clem Delangue, Tri Dao）。Lab（RLポストトレーニングプラットフォーム）、Environment Hub（2,500+ RL環境）、Compute（分散GPUマーケットプレイス）。オープンソース: renderers, verifiers, prime-rl。INTELLECT-1/2/3モデルシリーズ。

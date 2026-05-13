@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-13 | Total pages: 1791 | Indexed entries: 845 | Not in index: 946 |
+> Last updated: 2026-05-13 | Total pages: 1795 | Indexed entries: 849 | Not in index: 946 |
 
-## Entities (578 pages)
+## Entities (580 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -238,6 +238,7 @@
 - [[entities/ilya-sutskever]] — **Full Name** | Ilya Sutskever
 - [[entities/ibm-granite-embedding]] — IBM's dense embedding models (311M params, 32K context, ModernBERT architecture). Matryoshka Representation Learning support. Apache 2.0. 200+ languages, 9 programming languages.
 - [[entities/ibm-watsonx-orchestrate]] — IBM's multi-agent "agentic control plane" for enterprise — unified governance, policy enforcement, auditability across thousands of agents. Announced Think 2026.
+- [[entities/inclusionai]] — AI company developing agent-optimized LLMs. Flagship model: Ring-2.6-1T (1T MoE, 63B active). Free on OpenRouter for coding agents, tool use, long-horizon tasks.
 - [[entities/intuit-machine]] — AI agent framework company focused on agentic AI skills design. Published 'Ten Design Principles of Agentic AI Skills Design' — structural insights about how AI systems achieve 10x-100x effectiveness.
 - [[entities/ivan-burazin]] — CEO of Daytona. Coined "Headless SaaS" — SaaS rebuilt with agent-first APIs, no GUI.
 - [[entities/jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of **Bun** — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining...
@@ -372,6 +373,7 @@
 - [[entities/reiner-pope]] — CEO of MatX, former Google TPU architect. Expert on full-stack AI from chip design to model architecture. Known for roofline analysis framework for LLM inference economics.
 - [[entities/richard-ngo]] — Independent AI researcher & philosopher. Former DeepMind AGI Safety and OpenAI Governance. Creator of AGI Safety from First Principles. Writes at mindthefuture.info.
 - [[entities/richard-sutton]] — **Role** | Professor, University of Alberta; Research Scientist, Keen Technologies; Former Distinguished Research Scientist, Google DeepMind |
+- [[entities/ring-2-6-1t]] — 1T MoE thinking model (63B active) by InclusionAI. Optimized for coding agents, tool use. Free on OpenRouter. Released May 2026.
 - [[entities/rivet-dev]] — AI agent infrastructure company. Products: agentOS (WASM/V8 isolate runtime), Sandbox Agent SDK (universal coding agent API), Docker Sandbox MicroVM research. CTO: Nathan Flurry.
 - [[entities/righto-com]] — **Blog** | righto.com |
 - [[entities/ryan-carson]] — **X** | @ryancarson |
@@ -587,11 +589,12 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1250 pages)
+## Concepts (1252 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
 - [[concepts/adam-optimizer]] — Adam（Adaptive Moment Estimation）: 深層学習で最も広く使われる適応的最適化アルゴリズム。1次・2次モーメントの指数移動平均で学習率を適応制御。AdamWはWeight Decayを分離し汎化性能を改善。LLM学習の標準。→ [[raw/articles/2024-02-08_linkedin-processsense-adam-adamw.md]]
+- [[concepts/aem-adaptive-entropy-modulation]] — AEM: Baidu/Tsinghua 2026 — supervision-free credit assignment for agentic RL. Response-level entropy modulation, adaptive exploration/exploitation transition. +1.4% on SWE-bench-Verified. arXiv:2605.00425.
 - [[concepts/agentic-search]] — Agentic Search
 - [[concepts/agent-ergonomics]]
 - [[concepts/agentic-security]] — Security considerations for AI agents: supply chain attacks, package installation risks, threat model blind spots, cross-domain vulnerability amplification. — Programming language design principles optimized for AI coding agents (compile speed, distribution, runtime) over human readability. Wes McKinney's thesis: Go/Rust > Python for agentic loops.
@@ -710,6 +713,7 @@
 - [[concepts/deepseek-v4-serving]] — DeepSeek-V4 production serving on B200 GPUs: prefix caching, KV cache policy, KV cache eviction, multi-turn latency, memory bandwidth, token-per-second optimization.
 - [[concepts/defenseclaw]] — Cisco's open-source agentic governance layer for OpenClaw. Pre-run scanning (5 scanners), runtime threat detection, non-advisory enforcement. Built on NVIDIA OpenShell. Announced RSAC 2026.
 - [[concepts/delphi-scaling-laws]] — Open Athena (Marin) の公開スケーリングスイート。3e20 FLOPs のフィットから 1e23 FLOPs を 0.2% の誤差で予測（300× extrapolation）。IsoFLOP sweep、token-horizon LR correction、AdamH。
+- [[concepts/gnap-git-native-agent-protocol]] — GNAP: Git-Native Agent Protocol — coordinate AI agent teams via git repo. 4 JSON files, zero servers. MIT licensed (farol-team). Complements MCP/A2A.
 - [[concepts/good-regulator-theorem]] — Good Regulator Theorem (Gooder Regulator): Conant & Ashby (1970) の「あらゆる良いレギュレータはシステムのモデルでなければならない」を John Wentworth (2021) が情報ボトルネック制約を加えて修正した選択定理。AIエージェントの世界モデル・評価設計・ハーネス効果の理論的基盤。tailcalled の [[concepts/causal-backbone-conjecture]] が批判的応答。
 - [[concepts/google-flow-music]] — Google Flow Music — Google Labs AI music creation tool powered by Lyria 3 Pro. May 2026 partnership with Believe/TuneCore for artist distribution. AI-assisted lyrics, melodies, instruments. Artist retains ownership.
 - [[concepts/google-project-mariner-shutdown]] — Google's shutdown of Project Mariner browser agent in May 2026 due to poor performance and high costs.
