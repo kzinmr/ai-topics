@@ -19,6 +19,7 @@ sources:
   - https://alexzhang13.github.io/blog/2025/rlm/
   - https://dspy.ai/api/modules/RLM/
   - https://github.com/alexzhang13/rlm
+updated: 2026-05-13
 ---
 
 # RLM (Recursive Language Models)
@@ -27,7 +28,7 @@ sources:
 
 Recursive Language Models (RLMs) are a task-agnostic inference paradigm proposed by **Alex Zhang, Tim Kraska, and Omar Khattab** (MIT CSAIL/OASYS Lab) that allows language models to handle **near-infinite length contexts** by programmatically examining, decomposing, and recursively calling themselves over input snippets.
 
-- **Paper:** arXiv:2512.24601 (Dec 2025, revised Jan 2026)
+- **Paper:** arXiv:2512.24601 (Dec 2025, revised Jan 2026, **v3 May 2026**)
 - **Blog:** [alexzhang13.github.io/blog/2025/rlm](https://alexzhang13.github.io/blog/2025/rlm/)
 - **Code:** [github.com/alexzhang13/rlm](https://github.com/alexzhang13/rlm) (3,296 stars)
 - **Minimal:** [github.com/alexzhang13/rlm-minimal](https://github.com/alexzhang13/rlm-minimal) (749 stars)
@@ -99,21 +100,47 @@ Sources:
 
 Source: [[raw/articles/2026-04-26_alex-zhang-longcot-rlm-mgh.md]] | [alexzhang13.github.io/blog/2026/longcot-rlm/](https://alexzhang13.github.io/blog/2026/longcot-rlm/)
 
-### Benchmark Performance
+### Benchmark Performance (v3, Table 1)
 
-| Benchmark | GPT-5 Baseline | RLM (GPT-5-mini) | Improvement |
-|-----------|----------------|-------------------|-------------|
-| CodeQA | 24% | 62% | +38pp |
-| OOLONG | collapses at 1M+ | maintains accuracy | catastrophic→stable |
-| OOLONG Pairs | fails | succeeds | — |
-| S-NIAH | — | strong | — |
-| BrowseComp-Plus | — | improved | — |
+#### GPT-5 Results
+
+| Method | CodeQA | BrowseComp+ (1K) | OOLONG | OOLONG-Pairs |
+|--------|--------|-------------------|--------|--------------|
+| Base Model | 24.0* | 0.0* | 44.0 | 0.1 |
+| CodeAct (+ BM25) | 22.0* | 51.0 | 38.0 | 24.7 |
+| CodeAct (+ sub-calls) | 24.0* | 0.0* | 40.0 | 28.4 |
+| Compaction agent | 58.0 | 70.5 | 46.0 | 0.1 |
+| OpenCode | 18.0* | 0.0* | 32.0 | 3.1 |
+| OpenCode (+ context offloading) | 64.0 | 94.0 | 52.0 | 4.8 |
+| Claude Code (Opus 4.1) | 12.0* | 0.0* | 40.2 | 0.1 |
+| Claude Code (+ context offloading) | 62.0 | 84.0 | 48.0 | 6.5 |
+| RLM (depth=0) | 58.0 | 88.0 | 36.0 | 43.9 |
+| RLM (depth=1) | 62.0 | 91.3 | 56.0 | 58.0 |
+| **RLM (depth=2)** | **66.0** | **92.0** | **56.5** | **65.5** |
+| **RLM (depth=3)** | 58.0 | **92.0** | **58.0** | **76.0** |
+
+**Key insight:** On OOLONG-Pairs (the hardest, quadratic-complexity task), RLM(depth=3) achieves **76.0%** vs depth=1's 58.0% — demonstrating that deeper recursion dramatically improves performance on information-dense tasks. Higher-depth RLMs outperform all methods including Claude Code and OpenCode by a large margin.
+
+#### Qwen3-Coder-480B-A35B Results
+
+| Method | CodeQA | BrowseComp+ | OOLONG | OOLONG-Pairs |
+|--------|--------|-------------|--------|--------------|
+| Base Model | 20.0* | 0.0* | 36.0 | 0.1 |
+| OpenCode (+ offloading) | 40.0 | 58.0 | 24.0 | 2.1 |
+| RLM (depth=0) | 66.0 | 46.0 | 43.5 | 17.3 |
+| RLM (depth=1) | 56.0 | 44.7 | 48.0 | 23.1 |
+| RLM (depth=2) | 54.0 | 68.0 | 26.0 | 19.0 |
+| RLM (depth=3) | 44.0 | 68.7 | 32.0 | 21.1 |
+
+*Note: On CodeQA, RLM(depth=0) — REPL-only without sub-calls — outperforms ALL sub-calling variants for Qwen3-Coder, showing that offloading context as a variable alone provides strong benefits. On information-dense tasks, depth helps (BrowseComp+: 46.0→68.7 from depth 0→3).*
 
 ### RLM-Qwen3-8B (First Post-Trained Native RLM)
 
-- Outperforms underlying Qwen3-8B by **28.3%** on average
+- Outperforms underlying Qwen3-8B by **28%** on average
 - Approaches vanilla GPT-5 quality on three long-context tasks
-- Demonstrates that RLM-native training yields significant gains
+- **Training method:** Rejection fine-tuning on 1,000 filtered RLM(Qwen3-Coder-480B-A35B) trajectories from LongBenchPro
+- **Efficiency:** 3× faster and cheaper than base model as RLM — better decision making, fewer syntax errors
+- Demonstrates that RLM-native training yields significant cross-domain gains
 
 ### Scale & Cost
 
@@ -121,6 +148,72 @@ Source: [[raw/articles/2026-04-26_alex-zhang-longcot-rlm-mgh.md]] | [alexzhang13
 - **2-3x reduction** in main model token consumption
 - Cost comparable to or cheaper than vanilla single-pass inference
 - Sequential REPL operations add 40-80% latency vs single-pass
+
+## V3 New Findings (May 2026)
+
+### Recursion Depth Scaling
+
+v3 introduces **depth>1 experiments** where RLMs have access to recursive RLM calls (not just LLM sub-calls):
+
+| Depth | Behavior | Best For |
+|-------|----------|----------|
+| 0 | REPL-only, no sub-calls | Code-heavy tasks where context offloading suffices |
+| 1 | Sub-calling LLMs (original RLM) | Balanced tasks with moderate information density |
+| 2 | Sub-calling RLMs (recursive RLM calls) | Information-dense tasks requiring multi-level decomposition |
+| 3 | Deeper recursion | Quadratic-complexity tasks (OOLONG-Pairs) |
+
+**Key findings:**
+- **OOLONG-Pairs (quadratic complexity):** GPT-5 depth=3 hits **76.0%** vs depth=1's 58.0% — a 31% relative improvement
+- **BrowseComp+:** depth=3 achieves 92.0% for GPT-5, 68.7% for Qwen3-Coder
+- On CodeQA with Qwen3-Coder, depth=0 (no sub-calls) outperforms all sub-calling variants — context offloading alone provides strong benefits
+- Open source `rlm` repo supports `max_depth` parameter
+
+### OpenCode & Claude Code Comparisons
+
+v3 adds coding agent baselines per popular request:
+
+| Agent | Model | Context Strategy | OOLONG-Pairs (GPT-5) |
+|-------|-------|------------------|----------------------|
+| OpenCode | GPT-5 | Standard | 3.1% |
+| OpenCode | GPT-5 | Context offloading to file | 4.8% |
+| Claude Code | Claude Opus 4.1 | Standard | 0.1% |
+| Claude Code | Claude Opus 4.1 | Context offloading to file | 6.5% |
+| **RLM (depth=3)** | GPT-5 | REPL + recursive sub-calls | **76.0%** |
+
+**Key finding:** Context offloading (writing to file) dramatically improves coding agents (OpenCode: 3.1%→4.8%, Claude Code: 0.1%→6.5%) but still lags far behind RLMs on information-dense tasks. RLMs outperform all coding agents by a large margin on OOLONG-Pairs.
+
+### MRCRv2 Length Generalization
+
+A new training experiment demonstrating **length generalization**:
+
+- **Setup:** Qwen3-4B-Instruct-0527 trained as RLM(depth=1) on MRCRv2 via RLVR (reinforcement learning with verifiable rewards)
+- **Training split:** 32K-64K tokens, 2-needle configuration (150 steps, batch 128, 4 rollouts/example)
+- **Test split:** 1M tokens, 8-needle configuration
+- **Result:** RLM generalizes to the longer, more difficult split — approaches Gemini 3.1 Pro (native 1M context frontier model)
+- **Implication:** RLM-native RL training produces **context-length generalization** — models learn the scaffolding, not just the context
+
+### Error Analysis (§5, expanded)
+
+v3 significantly expands trajectory analysis:
+
+**First Decomposition & Errors:**
+- RLMs defer unbounded-length reasoning chains to sub-LM calls
+- First decomposition attempt is critical — while RLMs frequently recover from incorrect initial decomposition, it significantly impacts overall performance
+- In-context RLM trajectory examples in system prompt improve **both** overall performance and initial decomposition quality
+
+**Syntax Errors (Figure 4b):**
+- Percentage of trajectories with ≥1 syntax error, bucketed by correct/incorrect rollouts
+- RLM-native training (post-training) significantly reduces syntax errors — RLM-Qwen3-8B has 3× fewer mistakes
+
+**Prompting Case Study (Figure 4a):**
+- On OOLONG, ablation of in-context decomposition examples in system prompt
+- In-context examples improve performance even if unrelated to actual task
+- First decomposition attempt categorized per rollout
+
+**General Observations:**
+- Models probe context → decompose into sub-tasks → recursive sub-calls
+- On BrowseComp-Plus: LM uses model priors to programmatically narrow search space
+- On OOLONG-Pairs: output beyond context window by stitching sub-LM calls in REPL
 
 ## Comparison with Other Long-Context Approaches
 
@@ -207,11 +300,12 @@ Source: [arXiv:2603.20105](https://arxiv.org/abs/2603.20105) (Huawei Noah's Ark 
 ## Limitations & Open Problems
 
 1. **Sequential execution:** RLM calls are synchronous; no parallel sub-call execution
-2. **Recursion depth:** Currently limited; not truly unbounded in practice
-3. **Cost distribution:** Heavy tails due to very long trajectories
-4. **Model underutilization:** Current models not trained for RLM scaffolding show "significant performance being left untapped"
-5. **Mathematical reasoning:** RLMs struggle on math-heavy tasks without specialized training
-6. **Latency:** 40-80% overhead from REPL operations vs single-pass
+2. **Recursion depth:** Explored up to depth=3 in v3; diminishing returns observed for some model/task combinations (e.g., Qwen3-Coder on CodeQA)
+3. **Cost distribution:** Heavy tails due to very long trajectories; median RLM run cheaper than base model but mean higher
+4. **Model underutilization:** Current models not trained for RLM scaffolding show "significant performance being left untapped" — v3 shows training partly addresses this
+5. **Mathematical reasoning:** RLMs struggle on math-heavy tasks without specialized training (LongCoT-mini MATH subscore dropped from 26.0 to 5.6 without decomposition hints)
+6. **Latency:** 40-80% overhead from REPL operations vs single-pass; v3 shows 3× speed improvement after training
+7. **Syntax errors:** v3 quantifies this — percentage of trajectories with ≥1 syntax error; training significantly reduces this
 
 ## Future Directions
 

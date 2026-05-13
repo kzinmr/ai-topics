@@ -1,3 +1,10 @@
+## 2026-05-13 08:15 UTC — RLM v3 paper update and wiki refresh
+
+- **Updated:** `wiki/raw/papers/2025-12-31_2512.24601_recursive-language-models.md` — Replaced v2 with v3 (May 11, 2026). Added: depth>1 experiments (depth=0-3), OpenCode & Claude Code baseline comparisons, MRCRv2 length generalization results, OOLONG prompting case study, expanded error analysis (§5 — syntax errors, decomposition mistakes, first-decomposition importance), 6-appendix summary, and full results tables for GPT-5 and Qwen3-Coder-480B-A35B.
+- **Updated:** `wiki/concepts/rlm-recursive-language-models.md` — Version bumped to v3. Added: V3 New Findings section (Recursion Depth Scaling, OpenCode & Claude Code Comparisons, MRCRv2 Length Generalization, Error Analysis & Prompting Case Study), updated Benchmark Performance with full v3 tables (depth=0-3, OpenCode, Claude Code), updated RLM-Qwen3-8B training details, expanded Limitations (7 items with v3 context).
+- **Key v3 findings:** Depth=3 achieves 76.0% on OOLONG-Pairs (31% improvement over depth=1); RLM training generalizes from 64K→1M context on MRCRv2; coding agents (OpenCode/Claude Code) lag far behind RLMs on information-dense tasks despite context offloading.
+- **Sources:** arXiv:2512.24601v3
+
 ## 2026-05-12 07:50 UTC — Blog Wiki Ingest | 4 reference updates from blog triage
 
 - Updated `concepts/harness-engineering/agentic-engineering.md`: Added "Emerging Practices (May 2026)" section with 3 subsections — James Shore maintenance cost economics (velocity gains must match inverse maintenance cost reductions), Shopify River Lehrwerkstatt case study (public-by-default agent interactions in Slack), LLM shebang pattern (plain-text as executable agent scripts). Added 3 raw article sources.
