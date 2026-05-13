@@ -1,3 +1,8 @@
+## [2026-05-13] enrich | Agentic Search: Long-Running Agents & RLM practitioner perspective
+- id: concept-agentic-search-rlm-practitioner-2026-05-13
+- summary: Added "Long-Running Agents and Recursive Language Models" section to [[concepts/agentic-search]] from Doug Turnbull's Feb 2026 Vanishing Gradients interview. Documents the practitioner's RLM vision: context-as-variable, context-as-search-index, 4-stage evolution (linear history → compaction → context-as-variable → context-as-world). Includes comparison table (Academic RLM vs Turnbull's Practitioner Framing), OpenClaw self-extending loop example, and cross-links to [[concepts/rlm-recursive-language-models]], [[concepts/code-mode]], [[concepts/context-fragments]].
+- touched:
+  - [[concepts/agentic-search]]
 ## [2026-05-13] enrich | Agentic Search: In-Prompt RL section + Hugo Bowne-Anderson annotated talk
 - id: concept-agentic-search-in-prompt-rl-2026-05-13
 - summary: Saved Hugo Bowne-Anderson's annotated Substack transcript of Doug Turnbull's "How To Build Your First Agentic Search Application" talk as raw article `2026-02-21_hugobowne_how-to-build-first-agentic-search.md`. Added new "In-Prompt Reinforcement Learning" section to [[concepts/agentic-search]] covering the validator-as-dissatisfied-user pattern, RLHF vs in-prompt RL comparison table, validator taxonomy (LLM-as-Judge, reranker, rule-based, domain model), and connection to the broader harness architecture. Updated concept page sources and date.

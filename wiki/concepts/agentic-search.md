@@ -402,6 +402,55 @@ In-prompt RL is a specific **implementation pattern** within the broader two-loo
 
 Sources: [[raw/articles/2026-02-21_hugobowne_how-to-build-first-agentic-search]], [[raw/articles/2026-02-20_doug-turnbull-build-first-agentic-search-app]]
 
+### Long-Running Agents and Recursive Language Models (February 2026)
+
+In the same Vanishing Gradients interview [[raw/articles/2026-02-21_hugobowne_how-to-build-first-agentic-search]], Turnbull outlined an emerging direction for agentic search at scale: **long-running agents** that persist across hours or days, and the **Recursive Language Model (RLM)** paradigm for managing unbounded context.
+
+#### The Problem: Context Rot in Long-Running Agents
+
+When search agents run for extended periods (hours to days), they face a critical failure mode:
+
+1. **Context accumulation** — Every tool call, result, and reasoning step adds to the linear chat history
+2. **Context rot** — The agent loses coherence as the context window fills with stale/irrelevant history
+3. **Repetition** — Without structured memory, agents re-visit the same search spaces and repeat work
+4. **Loss of creativity** — Exhausted context windows constrain the agent's ability to explore new directions
+
+Turnbull's immediate solution is **compaction**: periodically summarizing "here's what you've tried, here's what you haven't" so the agent can reason about what's useful without holding the full history in context.
+
+#### The Practitioner's RLM Vision: "Throw Away Context Entirely"
+
+Turnbull then introduces a more radical shift — one he describes as a direction that "will definitely lose you" but represents where the field is heading:
+
+> *"What if we got rid of this idea of context entirely, and all of the information that had happened so far in this agent's life lived in a Python variable? The only tool — one of the tools the agent had — was the ability to run Python code to look and inspect that variable for what it needed. It's a way of searching within its own context."*
+> — Doug Turnbull, Vanishing Gradients (Feb 2026)
+
+This vision maps directly to the academic **[[concepts/rlm-recursive-language-models|RLM (Recursive Language Models)]]** framework (Zhang et al., MIT, 2025), but from a **search engineer's perspective** rather than an ML researcher's:
+
+| Dimension | Academic RLM (Zhang et al.) | Turnbull's Practitioner Framing |
+|-----------|---------------------------|-------------------------------|
+| **Problem statement** | Near-infinite length context processing | "Context rot" in long-running search agents |
+| **Core mechanism** | REPL environment, `rlm.completion()`, recursive sub-calls | Python variable as agent memory, code execution to inspect it |
+| **Key affordance** | LLM writes code to slice/transform context variable | Agent "searches within its own context" via code |
+| **Analogy** | Context as environment, not input | Context as a search index the agent queries |
+| **Ultimate vision** | Task-agnostic inference paradigm | "Context just becomes the entire world — including my search index" |
+
+#### Concrete Example: OpenClaw's Self-Extending Loop
+
+Turnbull uses **[[entities/openclaw|OpenClaw]]** as a concrete example of RLM-like behavior in the wild. OpenClaw can generate its own code and execute it — in one case, it acquired a skill for making voice calls, wrote code implementing that skill, and **called its creator over voice**. This demonstrates the same pattern: the agent uses code execution to extend its own capabilities and inspect/modify its state, escaping the linear chat history constraint.
+
+#### From Context-as-History to Context-as-Search-Index
+
+Turnbull's framing pushes the RLM concept to its logical conclusion for search:
+
+1. **Today**: Agent has a linear chat history it reads sequentially
+2. **Compaction**: Agent summarizes history periodically to manage context
+3. **RLM (context-as-variable)**: Agent's entire life lives in a Python variable; agent writes code to query it
+4. **RLM (context-as-world)**: The distinction between "agent memory" and "search index" dissolves — searching the web and searching your own history are the same operation
+
+This directly connects to the [[concepts/code-mode|CodeMode]] pattern and [[concepts/context-fragments|Context Fragments]] — both of which treat context not as a passive input but as a structured artifact the agent actively queries and mutates.
+
+Sources: [[raw/articles/2026-02-21_hugobowne_how-to-build-first-agentic-search]], [[concepts/rlm-recursive-language-models]], [[concepts/recursive-language-models]]
+
 ### Discussion: "Will Agents Replace Search Teams?" (January 2026)
 
 A 55-minute fireside chat between Doug Turnbull and search veteran **Daniel Tunkelang** (Endeca co-founder, query understanding specialist). [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
