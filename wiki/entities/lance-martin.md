@@ -3,7 +3,7 @@ title: Lance Martin
 type: entity
 handle: "@RLanceMartin"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-05-13
 tags:
   - person
   - model
@@ -96,8 +96,23 @@ Martin has deep expertise in **Retrieval-Augmented Generation**, having authored
 
 ### Podcast Appearances
 
+- **High Signal with Hugo Bowne-Anderson** (Dec 2025) — "Context Engineering to AI Agent Harnesses" — Articulated the **Reduce, Offload, Isolate** playbook, the Bitter Lesson applied to harness design, and production evidence from Claude Code and Manus. Covered the shift from model training to orchestration, context rot, and the agentic spectrum (workflows vs agents). [[concepts/reduce-offload-isolate|Full concept page]].
 - **Latent Space: The AI Engineer Podcast** (Sep 2025) — "Context Engineering for Agents" — 57-minute deep-dive covering context management, multi-agent coordination, the bitter lesson, and framework abstractions
 - Multiple appearances on AI engineering podcasts discussing RAG benchmarking, LangGraph patterns, and agent observability
+
+## The Reduce, Offload, Isolate Framework
+
+On the High Signal podcast (Dec 2025), Martin articulated a three-part playbook used by leading agentic systems — Claude Code and Manus — to manage context effectively. This became one of the most cited frameworks in agent harness engineering. See [[concepts/reduce-offload-isolate]] for the full treatment.
+
+**The 3 principles:**
+1. **Reduce** — Actively shrink the context passed to the model. Compacting older tool calls, trajectory summarization.
+2. **Offload** — Move information and complexity OUT of the prompt. Save full tool results to filesystem. Give agents few atomic tools (bash terminal) instead of 100 specialized ones.
+3. **Isolate** — Multi-agent architectures to delegate token-heavy sub-tasks. Sub-agents work in their own isolated context, returning only concise results.
+
+**Key production observations Martin shared:**
+- **Manus** has been re-architected **5 times** since March 2024, driven by improving models
+- **LangChain's Open Deep Research** was rebuilt multiple times in a year to keep pace
+- **Anthropic strips features from Claude Code's harness** as models get smarter — the Bitter Lesson applied to harness design: complexity should *decrease* as models improve
 
 ## Blog / Recent Posts
 

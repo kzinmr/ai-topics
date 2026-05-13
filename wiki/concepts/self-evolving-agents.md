@@ -1,6 +1,6 @@
 ---
 title: "Self-Evolving Agents"
-tags: [agents-self-improvement-learning]
+tags: [self-improving, agent-harness, agent-architecture, harness-engineering]
 created: 2026-04-13
 updated: 2026-04-24
 type: concept
@@ -44,6 +44,25 @@ Execute → Observe → Analyze → Adapt → Execute...
 - オーケストレーションパターンの最適化
 - システム設計の自己改善
 
+### Level 5: Self-Modification（自己書き換え）
+
+- **エージェントが自身のツール定義ファイルを読み取り、新しいツールクラスを追記する**
+- ファクトリーパターンにより、ツール定義がクラスとして分離されていることが前提
+- ランタイムが `st_mtime` でファイル変更を検知 → `importlib.reload()` でホットリロード
+- エージェントは**書いた直後のターンで**新しいツールを呼び出せる
+- 双方向：ツールの**作成**だけでなく**削除**も可能
+
+**実装パターン**: [[concepts/agents-that-build-themselves]] を参照。Hugo Bowne-Anderson + Ivan Leo のワークショップで実証された「software building software」パラダイム。
+
+```python
+# Hot reload mechanism
+def _check_reload(self):
+    current_mtime = os.path.getmtime("agent_tools.py")
+    if current_mtime > self._tools_mtime:
+        importlib.reload(agent_tools)
+        self._load_tools()
+```
+
 ## Key Mechanisms
 
 ### Feedback Loops
@@ -75,7 +94,9 @@ Execute → Observe → Analyze → Adapt → Execute...
 
 ## Related
 
+- [[concepts/agents-that-build-themselves]] — Agents That Build Themselves (concrete implementation of Level 5)
 - [[concepts/memory-systems-design-patterns]] — Memory Systems Design Patterns
 - [[concepts/agent-team-swarm]] — Agent Team / Swarm
 - [[concepts/harness-engineering]] — Harness Engineering
 - [[concepts/evaluation-flywheel]] — Evaluation Flywheel
+- [[entities/ivan-leo]] — Ivan Leo (co-creator of self-extending agent workshop)

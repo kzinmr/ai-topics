@@ -116,6 +116,43 @@ http://127.0.0.1:18789/#token=<your-gateway-token>
 3. Messages to the bot are forwarded to your agent
 4. Agent responses are sent back to the user
 
+## Core Architecture Patterns
+
+OpenClaw のアーキテクチャは Hugo Bowne-Anderson + Ivan Leo の2026年2月ワークショップ "Building Your Own OpenClaw from Scratch" で Pure Python 再構築を通じて詳細に解説された。
+
+### Hooks System（フックシステム）
+
+エージェントのライフサイクルイベントに合成可能な副作用を追加：
+
+```
+on_model_response → Telegram送信 / Richターミナル出力
+on_tool_call      → ビジュアルdiff表示 / ロギング
+on_tool_result    → データベース記録 / 観測可能性
+```
+
+コアループはフックの存在を**一切知らない** — `emit()` を呼ぶだけ。Telegram連携もロギングも、コアループに1行も変更を加えずに追加できる。
+
+### Memory Compaction（Markdownメモリ圧縮）
+
+ベクトルDBや埋め込みを使わないシンプルなアプローチ：
+
+1. 会話が閾値（~8K tokens）を超えたら、別の LLM コールで要約
+2. タイムスタンプ付き Markdown ファイルとして `memory/` に追記
+3. エージェントは起動時・必要時にこのファイルを読み返す
+4. 生の会話トレース（JSON）も SQLite に保存されるが、**主要な検索メカニズムは Markdown ファイル**
+
+> *"People are so surprised that something simple like appending summaries to a markdown file works so well for memories."*
+
+### Tool Factory & Self-Extension（ツールファクトリーと自己拡張）
+
+ツールは `AgentTool` を継承した Pydantic クラスとして定義され、エージェント自身が新しいツールを書いて追加できる：
+
+```
+Agent reads agent_tools.py → writes new tool class → runtime detects via st_mtime → importlib.reload() → tool usable immediately
+```
+
+完全な解説は [[concepts/agents-that-build-themselves]] を参照。
+
 ## Lifecycle Management
 
 | Operation | Command |

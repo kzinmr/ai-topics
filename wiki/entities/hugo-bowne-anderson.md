@@ -134,6 +134,7 @@ The podcast consistently connects **theoretical research** with **production pra
 | [build-your-own-deep-research-agent](https://github.com/hugobowne/build-your-own-deep-research-agent) | 64 | Deep research agent implementation |
 | [AI-for-SWEs](https://github.com/hugobowne/AI-for-SWEs) | 44 | AI for Software Engineers workshop materials |
 | [genai-first-principles](https://github.com/hugobowne/genai-first-principles) | 31 | Building generative AI from first principles |
+| [build-your-own-ai-assistant](https://github.com/hugobowne/build-your-own-ai-assistant) | 23 | Companion code for "Building Your Own OpenClaw from Scratch" workshop with Ivan Leo — Pure Python agent with factory pattern, hot reload, hooks, markdown memory, Modal sandbox |
 
 ---
 
@@ -254,7 +255,7 @@ With **Doug Turnbull** and **John Berryman**, Hugo explored how agentic loops tr
 Hugo's harness engineering work bridges two critical tensions in the field:
 
 1. **Minimal tools, maximum capability** — Following Armin Ronacher's [[entities/pi|Pi]] philosophy: four tools (read/write/edit/bash) are sufficient for general computer use. The agent extends itself when needed.
-2. **Context engineering over context dumping** — The Lance Martin interview crystallized the **Reduce, Offload, Isolate** playbook: strip non-essential context, move computation outside the prompt, isolate sensitive operations
+2. **Context engineering over context dumping** — The Lance Martin interview crystallized the **[[concepts/reduce-offload-isolate|Reduce, Offload, Isolate]]** playbook: strip non-essential context, move computation outside the prompt, isolate sensitive operations
 3. **Harness as body, not accessory** — The harness is not optional scaffolding; it's the physical form that lets the LLM brain act in the world
 
 > *"Anthropic rips out Claude Code's harness as models improve"* — Lance Martin on Vanishing Gradients, illustrating the Bitter Lesson in harness design: as models get smarter, harness complexity should decrease, not increase.

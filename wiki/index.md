@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-13 | Total pages: 1780 | Indexed entries: 834 | Not in index: 946 |
+> Last updated: 2026-05-13 | Total pages: 1782 | Indexed entries: 836 | Not in index: 946 |
 
-## Entities (557 pages)
+## Entities (558 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -238,6 +238,7 @@
 - [[entities/intuit-machine]] — AI agent framework company focused on agentic AI skills design. Published 'Ten Design Principles of Agentic AI Skills Design' — structural insights about how AI systems achieve 10x-100x effectiveness.
 - [[entities/ivan-burazin]] — CEO of Daytona. Coined "Headless SaaS" — SaaS rebuilt with agent-first APIs, no GUI.
 - [[entities/jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of **Bun** — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining...
+- [[entities/ivan-leo]] — Ivan Leo — Google DeepMind, ex-Manus. Co-hosted "Building Your Own OpenClaw from Scratch" workshop with Hugo Bowne-Anderson. Self-extending agents, agent architecture, live coding education. [[raw/articles/2026-02-28_substack_agents-that-build-themselves]]
 - [[entities/jason-liu]] — **X** | @jxnlco |
 - [[entities/jay-alammar]] — **Blog** | jalammar.github.io | Visual ML explainer. "The Illustrated Transformer", "The Illustrated Word2Vec" — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
 - [[entities/flue]] — Flue — TypeScript framework for building Claude Code-style coding agents. Announced May 2026.
@@ -582,7 +583,7 @@
 - [[entities/voyage-ai]] — Voyage AI — Embedding models by Stanford researchers. Acquired by MongoDB. Anthropic-recommended embeddings.
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 
-## Concepts (1248 pages)
+## Concepts (1249 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -592,6 +593,7 @@
 - [[concepts/agentic-identity]] — Modeling AI agents as financial actors. Ramp's OBOU (On Behalf Of User) framework for enterprise agent identity, compliance, and audit.
 - [[concepts/agentic-loop]] — Agentic Loop — The canonical AI agent execution pattern: decide → act → observe. Every major agent framework converges on this same loop. ReAct, Ralph Wiggum, /goal variants.
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
+- [[concepts/agents-that-build-themselves]] — Agents That Build Themselves（自己拡張エージェント） — エージェントが自身のツールを書き、ホットリロードで即座に実行するパラダイム。Hugo Bowne-Anderson + Ivan Leo の2026年2月ワークショップで体系化。Factory pattern + hot reload + hooks + markdown memory compaction。 [[raw/articles/2026-02-28_substack_agents-that-build-themselves]]
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
 - [[concepts/ai-autonomy-debate]] — AI Autonomy Debate
 - [[concepts/ai-bubble-economics]] — AI Bubble Economics
