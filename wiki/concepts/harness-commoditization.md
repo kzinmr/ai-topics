@@ -2,13 +2,14 @@
 title: "Harness Commoditization"
 type: concept
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-13
 tags:
   - concept
   - coding-agents
   - harness-engineering
   - architecture
   - emerging
+  - ai-agents
 aliases:
   - coding-agent-is-dead-thesis
   - harness-commoditization-thesis
@@ -16,6 +17,7 @@ aliases:
 related:
   - "[[concepts/minimal-coding-agent]]"
   - "[[concepts/agent-harness]]"
+  - "[[concepts/unharnessed-agents]]"
   - "[[concepts/harness-engineering]]"
   - "[[entities/amp]]"
   - "[[entities/thorsten-ball]]"
@@ -79,6 +81,23 @@ The truth likely depends on the **model capability tier**: for frontier models (
 
 - [[concepts/why-harness-development-boom]] — Five structural forces driving harness investment
 - [[entities/kartik-labhshetwar]] — Key voice on harness engineering
+- [[concepts/unharnessed-agents]] — Berryman's complementary thesis: "harness" is wrong frame, call them agents
+
+## Relationship to Unharnessed Agents
+
+John Berryman's [[concepts/unharnessed-agents|"Unharnessed Agents"]] thesis (April 2026) forms a complementary tension with harness commoditization:
+
+| Dimension | Amp / Thorsten Ball | Berryman / Arcturus Labs |
+|---|---|---|
+| **Core claim** | Harness differentiation is dead — models absorb harness functionality | "Harness" is the wrong frame — call them agents and let them leave the IDE |
+| **Direction** | Harness → Model (models eat harnesses from above) | Harness → Agent (rename and expand scope horizontally) |
+| **What dies** | The harness as competitive moat | The term "harness" and IDE-centric mindset |
+| **What comes next** | Codebase organization, model-native features | Standardized agent primitives (Lego blocks), agents as universal runtime |
+| **Agreement** | ✓ Current "harness" framing is limiting | ✓ Current "harness" framing is limiting |
+| **Agreement** | ✓ Harnesses are too opinionated/opaque | ✓ Harnesses are too opinionated/opaque |
+| **Disagreement** | Less harness complexity over time | More agent capability, call it something else, standardize it |
+
+Both theses converge on a key insight: **the 2025-era "agent harness" — an opaque, provider-specific coding wrapper — is not the end state.** Amp sees models absorbing harness features. Berryman sees agents expanding beyond coding into universal personal assistance. Both imply that today's harness products (Claude Code, Cursor, Codex, OpenCode) are transitional forms.
 
 ## Hermes Agent Relevance
 

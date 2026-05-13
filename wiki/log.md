@@ -1,3 +1,13 @@
+## [2026-05-13] update | John Berryman entity + Unharnessed Agents concept + Arcturus Labs blog tracking
+- id: entity-john-berryman-unharnessed-agents-2026-05-13
+- summary: Created [[entities/john-berryman]] entity page (L2, Arcturus Labs founder, ex-GitHub Copilot engineer, author). Created [[concepts/unharnessed-agents]] concept page documenting Berryman's anti-harness thesis ("agent harness" is wrong frame, agents should leave the IDE, skills are new programs). Updated [[concepts/harness-commoditization]] with comparative analysis table (Amp vs Berryman). Saved raw article `2026-04-24_arcturus-labs_unharnessed-agents.md`. Added Arcturus Labs to blogwatcher DB + OPML with RSS feed. Moved from concepts/john-berryman.md stub. Fixed Doug Turnbull entity wikilink.
+- touched:
+  - [[entities/john-berryman]]
+  - [[concepts/unharnessed-agents]]
+  - [[concepts/harness-commoditization]]
+  - [[entities/doug-turnbull]]
+  - [[config/feeds/blogs.opml]]
+
 ## [2026-05-13] update | Hugo Bowne-Anderson entity enrichment + duplicate merge + x-accounts
 - id: entity-hugo-bowne-anderson-enrichment-2026-05-13
 - summary: Enriched [[entities/hugo-bowne-anderson]] (L3) with Privacy Engineering section (from "15 Privacy Questions" with Katharine Jarmul) and Agent Harness Engineering section (Harness Reading List, Lance Martin's Reduce/Offload/Isolate, Jeff Huber context engineering, Ivan Leo self-extending agents, Doug Turnbull agentic search). Added 5 new Related People. Merged and deleted duplicate [[entities/hugo-bowne]] stub. Added @hugobowne to x-accounts.yaml. Fixed wikilink in concepts/ai-safety.md.

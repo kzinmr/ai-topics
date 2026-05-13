@@ -875,6 +875,7 @@
 - [[concepts/rlhf]] — RLHF
 - [[concepts/speculative-decoding]] — Speculative Decoding
 - [[concepts/structured-outputs]] — Structured Outputs
+- [[concepts/unharnessed-agents]] — Unharnessed Agents — John Berryman's thesis that "agent harness" is the wrong frame; agents should leave the IDE. Complementary to [[concepts/harness-commoditization|Harness Commoditization]].
 
 ## Events (2 pages)
 

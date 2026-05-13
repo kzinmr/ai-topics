@@ -127,6 +127,7 @@
       <outline type="rss" text="Database Architects" title="Database Architects" xmlUrl="https://databasearchitects.blogspot.com/feeds/posts/default" htmlUrl="https://databasearchitects.blogspot.com/" />
       <outline type="rss" text="LangChain Blog" title="LangChain Blog" xmlUrl="https://www.langchain.com/blog/rss.xml" htmlUrl="https://www.langchain.com/blog" />
       <outline type="rss" text="LMSYS Org Blog" title="LMSYS Org Blog" xmlUrl="https://www.lmsys.org/blog/feed.xml" htmlUrl="https://www.lmsys.org/blog/" />
+      <outline type="rss" text="Arcturus Labs" title="Arcturus Labs" xmlUrl="https://arcturus-labs.com/feed_rss_created.xml" htmlUrl="https://arcturus-labs.com/blog" />
       <outline type="rss" text="LWN.net" title="LWN.net" xmlUrl="https://lwn.net/headlines/rss" htmlUrl="https://lwn.net/" />
       <outline type="rss" text="Merge Blog" title="Merge Blog" xmlUrl="https://merge.dev/blog/rss.xml" htmlUrl="https://merge.dev/blog" />
       <outline type="rss" text="Modal Blog" title="Modal Blog" xmlUrl="https://modal.com/blog/atom.xml" htmlUrl="https://modal.com/blog" />
