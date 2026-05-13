@@ -20,6 +20,7 @@ sources:
   - "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines (Khattab et al., 2023)"
   - "Khairallah AL-Awady — How to Master Context Engineering & Build AI Systems That Actually Understand You (Full Course), May 2026"
   - "[[raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents]] — Lance Martin, Context Engineering for Agents (Write/Select/Compress/Isolate), June 2025"
+  - "[[raw/articles/2026-01-09_rlancemartin_agent-design-patterns]] — Lance Martin, Agent design patterns (7 patterns extending context engineering), Jan 2026"
 ---
 
 # Context Engineering

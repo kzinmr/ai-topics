@@ -6,6 +6,7 @@
 - **🔗 相互リンク**: `[[concepts/reduce-offload-isolate]]` ↔ `[[concepts/harness-engineering/context-engineering]]` — 4バケット→3原則の進化マッピングを双方向に追加
 - **🔧 エンティティページ更新**: `[[entities/lance-martin]]` — sourcesに生記事を追加、updatedを2026-05-13に更新
 - **📡 ブログ監視追加**: Lance Martin (`rlancemartin.github.io`) を OPML + blogwatcher DB に追加。RSSフィード: `http://rlancemartin.github.io/feed.xml`。初回スキャン: 10記事（既読化済み）
+- **Raw記事保存**: `wiki/raw/articles/2026-01-09_rlancemartin_agent-design-patterns.md` — Lance Martin による Agent Design Patterns。Context Engineering の拡張として7つのデザインパターン（Give Agents A Computer, Multi-Layer Action Space, Progressive Disclosure, Offload Context, Cache Context, Isolate Context, Evolve Context）を体系化。Manusのcache hit rate最重要指標、Ralph Wiggum loop、RLMによるcontext management吸収予測などを含む。source追加: `[[concepts/harness-engineering/context-engineering]]`, `[[concepts/reduce-offload-isolate]]`, `[[entities/lance-martin]]`
 
 ## 2026-05-13 04:55 UTC — Jeff Huber / Harness Engineering 対談取り込み + Inner/Outer Loop 拡張
 

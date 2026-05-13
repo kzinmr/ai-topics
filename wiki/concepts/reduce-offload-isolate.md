@@ -18,6 +18,7 @@ tags:
 sources:
   - https://hugobowne.substack.com/p/ai-agent-harness-3-principles-for
   - https://rlancemartin.github.io/2025/06/23/context_engineering/
+  - https://rlancemartin.github.io/2026/01/09/agent_design/
   - wiki/raw/articles/2025-12-12_hugobowne_agent-harness-context-engineering.md
 related:
   - concepts/context-rot
