@@ -1,3 +1,13 @@
+## [2026-05-13] update | Harness Engineering blog survey expansion
+- id: blog-harness-engineering-survey-expansion-2026-05-13
+- summary: Expanded the Harness Engineering blog into a survey covering pre-2025 precursors, trace-based open evals, Agent-as-OS framing, RL-harness lifecycle, MGH, and practical harness adjustment layers.
+- touched:
+  - [[blog/2026-05-12_hermes_harness-engineering-from-coding-agents-to-general-agents]]
+  - [[concepts/agent-harness]]
+  - [[concepts/rl-harness-lifecycle]]
+  - [[concepts/mismanaged-geniuses-hypothesis]]
+  - [[concepts/evals-for-ai-agents]]
+
 - **X Article取り込み成功**: Chris Hayduk「Using Codex Goals Effectively」(May 11, 2026)。Tier 2 web_extract経由で本文取得（GetXAPI timeoutのためTier 3スキップ）
   - `raw/articles/2026-05-11_chrishayduk-using-codex-goals-effectively.md` — 1,934 bookmarks, 109K impressions
   - `concepts/codex-goal.md` — Effective Goal Prompting セクション追加（5 tips + quantitative goal examples）
