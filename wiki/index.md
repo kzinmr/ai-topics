@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-13 | Total pages: 1797 | Indexed entries: 853 | Not in index: 944 |
+> Last updated: 2026-05-13 | Total pages: 1834 | Indexed entries: 894 | Not in index: 940 |
 
 ## Entities (582 pages)
 
@@ -57,7 +57,6 @@
 - [[entities/0xjeff]] — 0xJeff — Crypto/DeFi analyst and Hermes Agent power user. 8 years PE/VC/IB. Known for documenting Hermes as personal analyst pipeline.
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
-- [[entities/addy-osmani]] — **X/Twitter** | @addyosmani |
 - [[entities/agentcraft]] — Open-source AI agent orchestrator with RTS game interface. Supports Claude Code, OpenCode, Cursor.
 - [[entities/agi-bot]] — Chinese humanoid robot manufacturer. Second-largest Chinese humanoid robot seller after Unitree.
 - [[entities/agibot-10000-units]] — Real-world demand for humanoid robots accelerates as AGIBot ships 10,000 units.
@@ -167,7 +166,6 @@
 - [[entities/ed-zitron]] — Ed Zitron — Tech columnist and AI industry critic. Author of Where's Your Ed At (~80K subscribers). Argues the AI economy is a circular dependency where 95%+ of compute demand flows through unprofitable OpenAI and Anthropic.
 - [[entities/eleutherai]] — Grassroots research collective that started the modern open-source AI movement. Creators of GPT-Neo, Pythia, and the LM Evaluation Harness.
 - [[entities/eli-thegreenplace-net]] — **URL:** https://eli.thegreenplace.net
-- [[entities/elie-bakouch]] — ML engineer and researcher, formerly at Hugging Face, known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training.
 - [[entities/eliezer-yudkowsky]] — Eliezer Yudkowsky — AI researcher, MIRI co-founder. Foundational 1996 essay "Staring Into The Singularity." Intelligence explosion, AI safety, Algernon's Law, Perceptual Transcends, Interim Meaning of Life.
 - [[entities/elvis-sun]] — Elvis Sun is an AI researcher and newsletter author operating under the pen name **spicyneuron**. He publishes on Substack covering practical local AI deployment, hardware choices for self-hosted L...
 - [[entities/embeddings]] — Single-vector embedding models — strengths, limitations, and the theoretical constraints of embedding-based retrieval (LIMIT dataset, drowning-in-documents paradox)
@@ -192,12 +190,10 @@
 - [[entities/figma]] — FigmaはClaude Designの登場により、**SaaS AI時代の脆弱性を示すケーススタディ**となっている。
 - [[entities/filfre-net]] — **Blog** | filfre.net (The Digital Antiquarian) |
 - [[entities/fireworks-ai]] — AI inference and model customization platform. 13T+ tokens/day. Multi-hardware (NVIDIA+AMD), FireAttention, custom speculator training, RFT capabilities.
-- [[entities/florian-brand]] — **X** | @xeophon |
 - [[entities/folk-app]] — Nozomio Labs のパーソナル AI エージェント。iMessage/Telegram/Discord内で常駐。レストラン予約・航空券監視・アパート検索など。24/7稼働、永続メモリ。Pro $20/月、Max $100/月。
 - [[entities/forrest-chang]] — Creator of the andrej-karpathy-skills repo — fastest-growing single-file repo of 2026 (120K+ stars). Converted Karpathy's LLM coding observations into 4 behavioral CLAUDE.md rules.
 - [[entities/foundation-capital]] — AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents.
 - [[entities/fourier-intelligence]] — Chinese company specializing in rehabilitation robotics and general-purpose humanoid robots. Combines medical expertise with advanced robotics technology.
-- [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs.
 - [[entities/gemini]] — **Type** | Multimodal AI Model Family |
 - [[entities/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform announced at Cloud Next 2026. Evolves Vertex AI into full-stack agent build/scale/govern/optimize platform with 200+ models, Agent Studio, ADK, Memory Bank, Agent Sandbox.
 - [[entities/gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind. 60M+ downloads. MTP drafters (May 2026) deliver 3x faster inference with no quality degradation.
@@ -251,7 +247,6 @@
 - [[entities/jay-alammar]] — **Blog** | jalammar.github.io | Visual ML explainer. "The Illustrated Transformer", "The Illustrated Word2Vec" — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
 - [[entities/flue]] — Flue — TypeScript framework for building Claude Code-style coding agents. Announced May 2026.
 - [[entities/cursor-ai]] — Cursor AI — AI-powered code editor and coding agent platform. CI-fix agents monitor GitHub and auto-fix CI failures. SpaceX holds acquisition right for $60B.
-- [[entities/jaya-gupta]] — Partner at Foundation Capital, thought leader on context graphs and enterprise AI. Published influential thesis on Context Graphs as AI's trillion-dollar opportunity.
 - [[entities/jayden-milne]] — **Blog:** thejaymo.net
 - [[entities/jay-mody]] — **Blog:** jaykmody.com | Educator known for picoGPT (GPT-2 in 60 lines of NumPy) and clear LLM internals explanations |
 - [[entities/jeff-geerling]] — **URL:** https://www.jeffgeerling.com
@@ -437,7 +432,6 @@
 - [[entities/tim-oreilly]] — O'Reilly Media founder, technology thinker. Coined "Web 2.0", framed Vibe Coding/CHOP in historical abstraction context, articulated Agent Engineer role and need for agent infrastructure protocols.
 - [[entities/tim-sh]] — **Blog** | timsh.org | AI coding practitioner, PM, Multi-LLM workflow pioneer |
 - [[entities/tim-sherratt]] — **Blog** | timsherratt.au | Historian, GLAM hacker, creator of GLAM Workbench |
-- [[entities/tobi-lutke]] — Tobi Lütke is the CEO of Shopify and a prominent advocate for organizational AI adoption.
 - [[entities/tom-aarsen]] — **X** | @tomaarsen |
 - [[entities/tom-renner]] — **Blog** | tomrenner.com |
 - [[entities/troy-hunt]] — **URL:** https://www.troyhunt.com
@@ -456,8 +450,6 @@
 - [[entities/webmcp]] — **WebMCP**は、W3C Web Machine Learning Community Groupで開発されているブラウザ標準。GoogleとMicrosoftが共同で策定し、AIエージェントがWebアプリケーションと構造的に対話するための`navigator.modelContext` APIを定義する。2026年2月にChrome 146で早期プレビューが開始された。
 - [[entities/wes-mckinney]] — Wes McKinney — pandas creator, Apache Arrow co-creator, Principal Architect at Posit. Agent Ergonomics thesis: Go/Rust > Python for agentic engineering. Creator of roborev.
 - [[entities/westenberg]] — **Blog** | joanwestenberg.com |
-- [[entities/will-brown]] — **X/Twitter** | @willccbb |
-- [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."
 - [[entities/will-mcgugan]] — **X** | @willmcgugan |
 - [[entities/wirtzdan]] — **Blog** | danielwirtz.com |
 - [[entities/xania-org]] — **Blog** | xania.org |
@@ -581,7 +573,6 @@
 - [[entities/nominal]] — Nominal — AI and analytics platform.
 - [[entities/nuro]] — Nuro — Autonomous delivery vehicles. Pivoted to Nuro Driver licensing platform in 2024.
 - [[entities/noumena-network]] — Noumena Network — AI research lab and product company. MoE training infrastructure (nmoe, RDEP) and agent systems. "Engineered for Experts // Built for Mastery."
-- [[entities/parallel-web-systems]] — Parallel Web Systems Inc. — AI agent infrastructure (Search, Extract, Monitor APIs). SOC 2 Type 2, ZDR. Founded 2023.
 - [[entities/parsagon]] — Parsagon
 - [[entities/reevo]] — Reevo — AI platform.
 - [[entities/rogo]] — Rogo — AI for financial services. $750M valuation. 25K+ users across 150 firms.
@@ -806,7 +797,6 @@
 - [[concepts/enterprise-ai-deployment-jv]] — Both OpenAI ($4B "The Deployment Company") and Anthropic ($1.5B with Blackstone/Goldman Sachs) forming JVs with PE firms to build deployment services arms. Model competition expanding to deployment competition.
 - [[concepts/enterprise-ai-operating-model]] — IBM's four-pillar framework (Think 2026): Agents, Data, Automation, Hybrid. watsonx Orchestrate multi-agent control plane, IBM Confluent real-time data, IBM Sovereign Core governance.
 - [[concepts/entropix]] — xjdr's entropy-based adaptive LLM sampling (3.4K ⭐). Uses entropy/varentropy quadrant to select sampling strategy at inference time. Training-free CoT simulation.
-- [[entities/claris-filemaker-agentic-coding]] — Claris (Apple) making FileMaker a first-class target for agentic coding tools (Claude Code, Cursor, Codex). Natural language → production scripts, modern web-native UI, independent shipping model. Ryan McCann (CEO).
 - [[concepts/open-weights-licensing-tightening]] — Trend of leading open weights AI model providers tightening license terms in 2026. Meta dropped open weights, Alibaba Qwen API-first, Mistral commercial restrictions, Kimi attribution clause. DeepSeek exception. Contestable markets theory, oligopoly risk.
 - [[concepts/mrcr]] — MRCR — Multi-Round Coreference Resolution。複数needleの長文コンテキストeval。Google DeepMindのLSQフレームワーク発。OpenAIがOSS版を公開。Claude Opus 4.6が8-needle 1Mで93%。
 - [[concepts/multi-turn-tool-use-rl]] — Multi-Turn Tool Use with RL: GRPOを用いてLLMエージェントにマルチターンツールオーケストレーションを教える手法。Bespoke LabsがBFCL v3で+23%達成（Qwen2.5-7B, 100サンプル）。報酬設計のLess is More、過長フィルタリング+KL 0.001。
@@ -893,7 +883,6 @@
 - [[concepts/grpo-rl-training]] — GRPO RL Training
 - [[concepts/kv-cache]] — KV Cache
 - [[concepts/llm-evaluation]] — LLM Evaluation
-- [[concepts/mcp]] — MCP (Model Context Protocol): Anthropic発のLLMツール呼び出し標準プロトコル。David Soria Parraの個人フラストレーション（copy-paste地獄）+ John Welshの組織カオス（integration chaos）から誕生。LSPに触発、JSON-RPC 2.0。2024年11月OSS化。Tools/Resources/Promptsの3プリミティブ。
 - [[concepts/mixture-of-experts]] — Mixture of Experts
 - [[concepts/multi-agent-orchestration]] — Multi-Agent Orchestration
 - [[concepts/ollama]] — Ollama
@@ -912,7 +901,6 @@
 - [[comparisons/ai-agent-platforms]] — Ai Agent Platforms
 - [[comparisons/ai-competition]] — Ai Competition
 - [[comparisons/aposd-vs-clean-code]] — Aposd Vs Clean Code
-- [[comparisons/agent-harnesses]] — Coding Agent Harnesses
 - [[comparisons/eval-tools-comparison]] — Eval Tools Comparison
 - [[comparisons/evals-skills]] — Evals Skills
 - [[comparisons/frontier-models-2026-04]] — Frontier Models 2026 04
