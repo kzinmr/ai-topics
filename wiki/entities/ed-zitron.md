@@ -66,6 +66,35 @@ Microsoft/Google/Amazon → re-invest via equity → Anthropic/OpenAI (circle co
 | Apr 2026 | AI's Economics Don't Make Sense | Fundamental economic incoherence |
 | May 2026 | AI's Circular Psychosis | Comprehensive circular dependency analysis |
 | May 2026 | The AI Compute Demand Story Is A Lie | Data center capacity myths |
+| May 2026 | Where Are All The Data Centers? | Investigates claims vs. reality of hyperscaler data center construction |
+
+## Data Center Construction Investigation (May 2026)
+
+In "Where Are All The Data Centers?" (May 2026), Zitron conducted an investigative analysis of hyperscaler data center construction claims, finding significant discrepancies between announced capacity and verified operational infrastructure:
+
+### Key Findings
+
+- **No 1GW data center has actually been built yet** — despite announcements of gigawatt-scale campuses, the largest facilities remain well below claimed capacity
+- **Microsoft's 4GW claim over 2 years**: Zitron traced every publicly announced Microsoft data center project and found most are still under construction, in permitting, or at "concrete slab" stage. The Fairwater Atlanta and Wisconsin sites combined deliver ~342MW (not IT load), far below the 4GW claimed
+- **Phase deception**: Companies declare campuses "operational" when only one phase or building is complete, inflating perceived capacity. Amazon's Project Rainier was declared "operational" with only 7 of 30 buildings active
+- **Construction timelines**: A modest 1MW data center took 11 months from groundbreaking to ribbon-cutting. A 36MW facility took 20 months. A 60MW facility took 26 months. Gigawatt-scale campuses would logically require many years, not quarters
+- **Fairwater Wisconsin**: Designed for 117MW (per permitting), not the 400MW claimed by some sources. As of April 2026, satellite footage showed one building operational, one under construction
+- **Fairwater Atlanta**: ~225MW estimated across phases, with buildings still under construction as of late 2025/early 2026
+- **Microsoft's "multiple identical Fairwater data centers"**: Zitron could find no evidence of additional Fairwater sites beyond Atlanta and Wisconsin
+- **OpenAI's Stargate Abilene**: Two buildings at ~103MW each, with a third building fully constructed but "barely any gear inside it" — far from the 1.2GW promised
+- **Nscale Loughton, England**: Effectively nothing built after nearly a year; OpenAI backed out
+- **Microsoft's silence**: Zitron sent specific questions to Microsoft on May 4, 2026 asking for clarification on capacity claims. A representative promised to "circle back" but never responded
+
+### The "Contracted vs. Operational" Obfuscation
+
+Zitron identified a pattern where companies conflate **contracted power** (signed deals, future capacity) with **active, revenue-generating capacity**:
+- CoreWeave claims 3.1GW of "total contracted power" but only added 260MW of active capacity in Q4 2025, and 150MW in Q1 2026
+- Microsoft's "added another gigawatt of capacity" language is ambiguous — could mean contracted, could mean built
+- This allows hyperscalers to report massive numbers while actual operational infrastructure lags far behind
+
+### Why It Matters for AI
+
+Zitron connects this to the broader AI bubble thesis: if data centers aren't being built at the claimed pace, the compute capacity required to deliver on AI promises doesn't exist. The gap between announced and operational capacity suggests the AI infrastructure buildout may be significantly behind the narrative.
 
 > Many articles are paywalled (Premium tier). Free previews contain substantive technical claims.
 

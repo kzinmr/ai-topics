@@ -273,6 +273,8 @@ Hermes Agent のコードベースを理解するための推奨探索順序（v
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes vs OpenClaw アーキテクチャ比較
 - [[concepts/openclaw-architecture]] — OpenClaw アーキテクチャ詳細（Hermes の agent-core-first との対比）
 - [[concepts/openclaw/_index]] — OpenClaw コンセプトクラスターインデックス
+- [[concepts/self-evolving-agents]] — 自己進化エージェントの5段階分類（Hermes は Level 3–4: Capability Expansion, Pi は Level 5: Self-Modification）
+- [[concepts/agents-that-build-themselves]] — Hugo+Ivan ワークショップ：自己拡張エージェントの Pure Python 再構築
 - [[concepts/agent-loop-orchestration]] — エージェントループオーケストレーションの一般的パターン
 - [[concepts/agent-harness-primitives]] — エージェントハーネスの6つの基本プリミティブ
 - [[concepts/ai-memory-systems]] — AIメモリシステムの設計哲学比較（OpenAI/Anthropic/Cognition）

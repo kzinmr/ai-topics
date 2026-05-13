@@ -101,3 +101,5 @@ def _check_reload(self):
 - [[concepts/evaluation-flywheel]] — Evaluation Flywheel
 - [[entities/ivan-leo]] — Ivan Leo (co-creator of self-extending agent workshop)
 - [[entities/pi]] — Pi coding agent — concrete implementation of Level 5 self-modification with session trees, hot reload, extension state
+- [[entities/openclaw]] — OpenClaw — always-on self-evolving agent with markdown memory compaction
+- [[concepts/hermes-agent-architecture]] — Hermes Agent — capability accumulation system that grows stronger over time through skill/memory accumulation

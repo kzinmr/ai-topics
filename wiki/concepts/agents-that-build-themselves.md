@@ -275,5 +275,6 @@ Agent writes extension code → hot reload → agent tests it → fails → rewr
 - [[concepts/agent-harness]] — Agent harness fundamentals
 - [[entities/pi]] — Pi coding agent (Mario Zechner)
 - [[entities/openclaw]] — OpenClaw (Peter Steinberger)
+- [[concepts/hermes-agent-architecture]] — Hermes Agent architecture (capability accumulation, self-generating skills)
 - [[entities/hugo-bowne-anderson]] — Hugo Bowne-Anderson
 - [[entities/ivan-leo]] — Ivan Leo

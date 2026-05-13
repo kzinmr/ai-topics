@@ -2,8 +2,10 @@
 title: "Jeff Geerling"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-13
 type: entity
+sources:
+  - raw/articles/jeffgeerling.com--blog-2026-bambu-lab-abusing-open-source-social-contract--4053bfcc.md
 ---
 
 
@@ -161,6 +163,24 @@ Geerling's product reviews are distinguished by their willingness to deliver neg
 - **Hardware experimentation**: FireWire digitization, PTP clocks, PCIe testing, capacitor plague diagnosis
 - **Honest benchmarking**: Publishing negative results alongside positive ones
 - **Community giving**: The 480-Pi giveaway, free educational content, open-source project maintenance
+
+### Bambu Lab and Open Source Social Contract (May 2026)
+
+In May 2026, Geerling published a detailed critique of **Bambu Lab** for "abusing the open source social contract" after the company threatened a developer of an **OrcaSlicer** fork (`OrcaSlicer-bambulab`) with legal action.
+
+**The incident**: The fork allowed power users to bypass Bambu's mandatory cloud connectivity for printing, using only the AGPLv3-licensed upstream code from Bambu Studio. Bambu Lab accused the developer of "impersonation attacks" and threatening legal action, despite the fork using the code verbatim as permitted by the license.
+
+**Geerling's analysis**:
+- Bambu Lab published a one-sided statement accusing the developer of creating "structural vulnerability" if the method were widely adopted.
+- Geerling pointed out the irony: "I love how they frame this as a developer trying to impersonate their app, when he's literally using the same AGPL-licensed code their Linux app uses."
+- He noted that in 2022, Bambu's own fork caused user telemetry to hit **Prusa's** servers, and Prusa did not respond with a C&D.
+- Concluded that Bambu Lab "doesn't understand open source culture. Security either, if a public user agent string is their only protection against DDoS attacks..."
+- Highlighted **Louis Rossmann's** $10,000 pledge to help the open source developer fight the legal threats.
+- Reiterated his earlier stance that he would no longer recommend Bambu Lab printers and had already moved to running his own **WireGuard VPN** and using **Developer mode** to maintain local control.
+
+> "Instead of finding solutions to ecosystem problems and building a more secure platform, Bambu is putting devoted power users like the fork's developer on blast."
+
+Source: [Bambu Lab is abusing the open source social contract](https://www.jeffgeerling.com/blog/2026/bambu-lab-abusing-open-source-social-contract/)
 
 ## Related Concepts
 

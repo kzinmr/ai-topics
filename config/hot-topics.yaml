@@ -246,3 +246,25 @@ topics:
   notes: OpenAI Codex CLI v0.128.0のビルトインRalph Loop。Greg Brockman "Ralph loop++"。メタプロンプティング、トークン予算設計、app-server API等の最新機能を深掘り。
   added: 2026-05-13
   last_crawled: null
+- slug: self-evolving-agents
+  title: Self-Evolving Agents（自己進化・自己拡張エージェント）
+  crawl_policy: deepdive
+  priority: high
+  search_hints:
+  - "self-evolving agents self-modification 2026"
+  - "agents that build themselves hot reload tool factory"
+  - "Pi OpenClaw Hermes self-extending agent architecture"
+  - "agent session trees branching self-modification"
+  - "self-writing tools agent harness engineering"
+  wiki_pages:
+  - concepts/self-evolving-agents
+  - concepts/agents-that-build-themselves
+  - concepts/self-learning-agents
+  - concepts/generic-agent-self-evolving
+  - concepts/deep-research-agent-from-scratch
+  - entities/pi
+  - entities/openclaw
+  - concepts/hermes-agent-architecture
+  notes: 重点追跡トピック。Pi（セッションツリー＋ホットリロード）、OpenClaw（Markdownメモリ圧縮＋常時稼働）、Hermes Agent（スキル蓄積による能力成長）の3大実装を中心に、自己進化エージェントの理論（5段階分類）と実践（Hugo+IvanワークショップのPure Python再構築）の両面を追跡。Armin Ronacher「Agents Built for Agents Building Agents」哲学、Mario Zechnerのミニマリズム、Peter Steinbergerのalways-on設計を含む。
+  added: 2026-05-13
+  last_crawled: null

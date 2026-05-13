@@ -179,6 +179,8 @@ Agent reads agent_tools.py → writes new tool class → runtime detects via st_
 - [[entities/nvidia-dgx-spark]] — DGX Spark hardware platform
 - [[concepts/local-llm/server-dgx-spark]] — Setup guide
 - [[concepts/harness-engineering/system-architecture/agent-security-patterns]] — Security patterns
+- [[concepts/self-evolving-agents]] — Self-evolving agents taxonomy (OpenClaw = Level 4: Architectural Evolution)
+- [[concepts/agents-that-build-themselves]] — Hugo+Ivan workshop: self-extending agents in Pure Python
 
 ## References
 

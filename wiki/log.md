@@ -1,6 +1,13 @@
 - **2026-05-13**: Cross-synthesis enrichment — integrated Armin Ronacher's "Agents Built for Agents Building Agents" Pi philosophy (lucumr.pocoo.org, Jan 2026) with the Hugo+Ivan workshop pages. **Enriched concepts/agents-that-build-themselves.md**: added "Armin Ronacher's Perspective" section — session trees, extension state in sessions, no-MCP philosophy, write→reload→test→loop pipeline, Software Building Software lived experience. **Enriched entities/pi.md**: added "Agents Built for Agents Building Agents" section with session trees, extension state persistence, no-MCP philosophy, Armin quotes. **Enriched entities/armin-ronacher.md**: added "Pi Experience" section bridging Pi philosophy to Hugo+Ivan's Pure Python workshop. Source: raw article `lucumr.pocoo.org--2026-1-31-pi--0eb410a7.md` (already ingested).
 ## 2026-05-13 07:45 UTC — Lance Martin「Learning the Bitter Lesson」取り込み
 
+## 2026-05-13 - Blog Ingest
+
+### Updated Entity Pages
+- **[ed-zitron](entities/ed-zitron.md)**: Added "Data Center Construction Investigation (May 2026)" section covering Zitron's investigative analysis of hyperscaler data center claims, finding significant discrepancies between announced and operational capacity. Microsoft's 4GW claim traced to only ~342MW verified. Stargate Abilene far below 1.2GW promised. CoreWeave contracted vs. operational power obfuscation pattern identified.
+- **[jeff-geerling](entities/jeff-geerling.md)**: Added "Bambu Lab and Open Source Social Contract (May 2026)" section documenting Geerling's critique of Bambu Lab threatening an OrcaSlicer fork developer with legal action over AGPLv3-compliant code use. Louis Rossmann pledged $10K to defend the developer.
+- **[simon-willison](entities/simon-willison.md)**: Expanded May 2026 Updates with Mitchell Hashimoto's TDM motivations analysis ("90% motivated by NOT GETTING FIRED") and Mo Bitar's "Ralph Loop" satire on enterprise AI adoption patterns.
+
 - **Raw記事保存**: `wiki/raw/articles/2025-07-30_rlancemartin_bitter-lesson-ai-engineering.md` — Lance Martinのブログ記事。Rich SuttonのBitter LessonをAIエンジニアリングに応用。open-deep-researchの事例研究（構造の追加→ボトルネック→削除のサイクル）。Hyung Won Chungの「構造を加えて後で取り除く」フレームワーク。
 - **📄 概念ページ拡充**: `[[concepts/rich-suttons-bitter-lesson]]` — stub→complete。Rich Suttonの原典（2019）、各ドメインでの歴史的事例表、Hyung Won Chungのフレームワーク、Lance MartinのAIエンジニアリング応用（open-deep-researchケーススタディ）、3つの実践的教訓、エージェントハーネスへの含意。
 - **📋 Entity更新**: `[[entities/lance-martin]]` — sourcesに新規raw記事を追加。
