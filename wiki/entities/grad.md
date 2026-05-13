@@ -2,7 +2,7 @@
 title: Fares Obeid (@Grad62304977)
 type: entity
 created: 2026-04-10
-updated: 2026-04-14
+updated: 2026-05-13
 tags:
   - person
   - transformer-architecture
@@ -11,13 +11,10 @@ tags:
   - company
   - eleutherai
   - nanogpt-speedrun
-- ml-researcher
-- transformer-architecture
-- optimization
-- rwkv
-- prime-intellect
-- eleutherai
-- nanogpt-speedrun
+  - researcher
+  - pseudonymous
+  - reinforcement-learning
+  - prime-intellect
 aliases:
 - '@Grad62304977'
 - Grad
@@ -179,6 +176,10 @@ From the GoldFinch abstract:
 ## Related People
 
 - [[entities/andrej-karpathy]] — Karpathy's llm.c was the baseline for the NanoGPT speedrun
+- [[entities/vincent-weisser]] — Prime Intellect Co-founder & CEO
+- [[entities/will-brown]] — Prime Intellect colleague, verifiers/prime-rl
+- [[entities/florian-brand]] — Prime Intellect colleague, evals
+- [[entities/elie-bakouch]] — Prime Intellect colleague, LLM training
 - [[concepts/keller-jordan]] — Speedrun organizer and frequent collaborator
 - [[concepts/zhanchao-zhou]] — Value Residual Learning co-author
 - [[concepts/jxbz]] — Jeremy Bernstein, speedrun contributor (Newton-Schulz iteration)

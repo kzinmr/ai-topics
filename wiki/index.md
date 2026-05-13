@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-13 | Total pages: 1796 | Indexed entries: 850 | Not in index: 946 |
+> Last updated: 2026-05-13 | Total pages: 1794 | Indexed entries: 849 | Not in index: 945 |
 
-## Entities (580 pages)
+## Entities (579 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -23,7 +23,6 @@
 - [[entities/garry-tan]] — Garry Tan — YC President & CEO, engineer-turned-VC, creator of G Stack. Proponent of "Meta-Meta-Prompting" and "Fat Skills, Fat Code, Thin Harness" AI agent architecture. Uses OpenClaw + Hermes Agent for routing.
 - [[entities/george-hotz]] — George Hotz (geohot)
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
-- [[entities/grad62304977]] — Grad (@Grad62304977) — Pseudonymous RL researcher in Prime Intellect ecosystem. GRPO, reward engineering, effort control.
 - [[entities/grant-slatton]] — Grant Slatton
 - [[entities/inspect]] — Inspect (Ramp)
 - [[entities/jack-clark]] — Jack Clark — Anthropic co-founder, Import AI newsletter. 60%+ probability of autonomous AI R&D by end 2028. Recursive self-improvement forecast.
@@ -595,7 +594,7 @@
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 - [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."
 
-## Concepts (1252 pages)
+## Concepts (1249 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。

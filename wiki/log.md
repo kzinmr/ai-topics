@@ -1,3 +1,13 @@
+## 2026-05-13 09:45 UTC — Grad page consolidation: merge duplicate into entities/grad
+
+- **🔄 統合**: `@Grad62304977` の重複ページを整理。
+  - **削除**: `entities/grad62304977.md`（33行の劣化複製）→ `entities/grad.md`（200行の既存決定版）に統合
+  - **削除**: `concepts/fares-obeid-grad62304977.md`（24行スタブ）→ entities/grad.md に本名情報を統合済み
+  - **更新**: `entities/grad.md` — `updated`日付、`researcher`/`pseudonymous`/`reinforcement-learning`タグ追加、Prime Intellect同僚クロスリンク追加
+  - **修正**: `entities/prime-intellect.md` — grad参照を `[[entities/grad|Fares Obeid (Grad)]]` に修正
+- **📋 Index**: grad62304977エントリ削除、カウント調整（-2ページ、-1エントリ）
+- **教訓**: wiki作成前に `search_files` で重複チェック必須。entities/grad.md は `grad` というファイル名で存在していた。
+
 ## 2026-05-13 09:30 UTC — FIX: Restore overwritten Prime Intellect people pages
 
 - **🔄 上書き復元**: 3名の既存エンティティページをgit履歴から復元し、Prime Intellectクロスリンクのみ追加。

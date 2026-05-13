@@ -72,7 +72,7 @@ Collaborating with NVIDIA, vLLM, and SGLang to make `renderers` a reference stan
 - **[[will-brown|Will Brown]]** ([@willccbb](https://x.com/willccbb)) — Research. "Reward hacking." PhD Columbia (2024). Leads [[verifiers-rl|verifiers]] and [[prime-rl]]. COLT 2024.
 - **[[florian-brand|Florian Brand]]** ([@xeophon](https://x.com/xeophon)) — Research Engineer, Evals. Editor at Interconnects (open models).
 - **[[elie-bakouch|Elie Bakouch]]** ([@eliebakouch](https://x.com/eliebakouch)) — Training LLMs. Previously HuggingFace (SmolLM, FineWeb).
-- **[[grad62304977|Grad]]** ([@Grad62304977](https://x.com/Grad62304977)) — Pseudonymous RL researcher. GRPO, reward engineering.
+- **[[entities/grad|Fares Obeid (Grad)]]** ([@Grad62304977](https://x.com/Grad62304977)) — Research Engineer. NanoGPT speedrun records, Value Residual Learning (ACL 2025), INTELLECT-3, GoldFinch.
 
 ## Related Pages
 
@@ -86,4 +86,4 @@ Collaborating with NVIDIA, vLLM, and SGLang to make `renderers` a reference stan
 - [[will-brown]] — RL research
 - [[florian-brand]] — evals research
 - [[elie-bakouch]] — LLM training
-- [[grad62304977]] — RL researcher
+- [[entities/grad|Fares Obeid (Grad)]] — Research Engineer
