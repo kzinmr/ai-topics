@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-13 | Total pages: 1794 | Indexed entries: 849 | Not in index: 945 |
+> Last updated: 2026-05-13 | Total pages: 1795 | Indexed entries: 850 | Not in index: 945 |
 
-## Entities (579 pages)
+## Entities (580 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -25,6 +25,7 @@
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
 - [[entities/grant-slatton]] — Grant Slatton
 - [[entities/inspect]] — Inspect (Ramp)
+- [[entities/intellect-2]] — INTELLECT-2 — 32B reasoning model by Prime Intellect. First globally distributed RL training run (GRPO, async). Outperforms QwQ-32B. Apache 2.0.
 - [[entities/jack-clark]] — Jack Clark — Anthropic co-founder, Import AI newsletter. 60%+ probability of autonomous AI R&D by end 2028. Recursive self-improvement forecast.
 - [[entities/jaya-gupta]] — Jaya Gupta — Foundation Capital partner. Organizational moat theory, Context Graphs. Argues company shape is the last durable moat in AI. 3.2M-view X Article author.
 - [[entities/jo-bergum]] — Jo Kristian Bergum

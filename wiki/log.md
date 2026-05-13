@@ -1,3 +1,10 @@
+## 2026-05-13 10:00 UTC — INTELLECT-2 paper ingestion + model entity page
+
+- **📄 論文保存**: `wiki/raw/papers/2025-05-12_2505.07291_intellect-2-decentralized-rl.md` — arXiv:2505.07291 (May 12, 2025), 26 pages
+- **📄 モデルエンティティ新規作成**: `[[entities/intellect-2]]` — 32B reasoning model, first globally distributed RL training run. GRPO with two-sided clipping. Infrastructure: PRIME-RL + SHARDCAST + TOPLOC. 285K verifiable tasks (NuminaMath-1.5, Deepscaler, SYNTHETIC-1). Outperforms QwQ-32B. Apache 2.0. 14 co-authors including Fares Obeid (Grad).
+- **📋 Prime Intellectページ更新**: ModelsセクションをINTELLECT-2/3の論文準拠の詳細にアップグレード。Related Pagesにintellect-2追加。
+- **📋 Index更新**: intellect-2エンティティ追加（+1ページ、+580 entities）。
+
 ## 2026-05-13 09:45 UTC — Grad page consolidation: merge duplicate into entities/grad
 
 - **🔄 統合**: `@Grad62304977` の重複ページを整理。
