@@ -163,4 +163,4 @@ Armin の全 Pi 拡張（ブラウザ自動化、コードレビュー、TODO管
 
 > *"None of this was written by me, it was created by the agent to my specifications. I told Pi to make an extension and it did."*
 
-ワークショップでの Hugo+Ivan の Pure Python 再構築（[[concepts/agents-that-build-themselves]]）は、この Pi 哲学をコードで実証した形。
+ワークショップでの Hugo+Ivan の Pure Python 再構築（[[concepts/agents-that-build-themselves]]）は、この Pi 哲学をコードで実証した形。Pi は [[concepts/self-evolving-agents]] の Level 5（Self-Modification）の最も成熟した実装例でもある。

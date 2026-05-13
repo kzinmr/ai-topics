@@ -100,3 +100,4 @@ def _check_reload(self):
 - [[concepts/harness-engineering]] — Harness Engineering
 - [[concepts/evaluation-flywheel]] — Evaluation Flywheel
 - [[entities/ivan-leo]] — Ivan Leo (co-creator of self-extending agent workshop)
+- [[entities/pi]] — Pi coding agent — concrete implementation of Level 5 self-modification with session trees, hot reload, extension state
