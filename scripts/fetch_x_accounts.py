@@ -425,7 +425,7 @@ else:
     missing_handles = [
         acct["handle"]
         for acct in accounts
-        if not get_cached_user_id(user_cache, acct.get("handle"))
+        if isinstance(acct, dict) and not get_cached_user_id(user_cache, acct.get("handle"))
     ]
     if missing_handles and REQUESTS_ATTEMPTED < REQUEST_BUDGET:
         resolved = resolve_user_ids(missing_handles)
@@ -443,6 +443,8 @@ else:
     scan_meta["accounts_skipped_budget"] = max(0, len(accounts) - len(accounts_to_scan))
 
     for acct in accounts_to_scan:
+        if not isinstance(acct, dict) or "handle" not in acct:
+            continue
         handle = normalize_handle(acct["handle"])
         user_id = get_cached_user_id(user_cache, handle)
         if not user_id:

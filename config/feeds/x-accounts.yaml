@@ -704,4 +704,17 @@ accounts:
   - coding-agents
   - ycombinator
   notes: 'CEO/Co-founder of SID.ai (YC S23) — AI research lab for retrieval. Developed SID-1, first model trained end-to-end with RL (GRPO) for agentic retrieval. Previously researcher at ETH Zürich on AI accelerator design. Writer on JIT Coding, n-of-1 Software, Amdahl''s Argument for AI.'
-- vincentweisser
+- handle: '@vincentweisser'
+  name: Vincent Weisser
+  personal_site: https://vincentweisser.com
+  topics:
+  - ai
+  - ai-agents
+  - rl
+  - rlhf
+  - open-source-models
+  - decentralized-compute
+  - desci
+  - training-infra
+  - grpo
+  notes: 'CEO/Co-founder of Prime Intellect — building open superintelligence & self-improving agents, decentralized AI compute. Launched Prime Intellect Lab (full-stack RL training platform). Released INTELLECT-3 (100B+ MoE, open-source). Co-founder of VitaDAO, Bio Protocol, CryoDAO (DeSci).'
