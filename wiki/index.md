@@ -672,6 +672,7 @@
 - [[concepts/openclaw-architecture]] — OpenClawのアーキテクチャ詳細
 - [[concepts/openenv]] — Meta+HF partnership: open standard for agent environments (sandboxed tools, APIs, credentials). Integrates with TRL, TorchForge, verl, SkyRL. Environment Hub on Hugging Face.
 - [[concepts/open-swe]] — Open SWE: LangChainのオープンソース社内コーディングエージェントフレームワーク。Deep Agents + LangGraphベース。Stripe Minions/Ramp Inspect/Coinbase Cloudbotの収束アーキテクチャをMITライセンスで実装。AGENTS.md、サンドボックス、Slack/Linear/GitHub統合。
+- [[concepts/openai-o-series-gpt5-unification]] — OpenAI o1/o3→GPT-5統合 (2024-2025): o1 (Sep 2024)→o3発表 (Dec 2024)→Altmanロードマップ転換でo3キャンセル (Feb 2025)→GPT-5にThinkingモードとして吸収 (Aug 2025)。3コンポーネント統合アーキテクチャ（Main+Thinking+Router）。
 - [[concepts/organizational-moat]] — 組織モート: Jaya Gupta (Foundation Capital) が提唱。AI時代において製品・コード・カテゴリはすべて模倣可能であり、会社の「形」（採用・権力分配・ステータス階層）だけが最後の競争優位になると主張。5つの構造的検証テスト。3.2M views。
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information（予測的V-情報）：観測者の計算制約を考慮したShannon情報理論の変分拡張。DPI違反、高次元でのPAC推定保証、構造学習・公平表現学習への応用（Xu et al., ICLR 2020）。
 - [[concepts/probabilistic-engineering]] — 確率的エンジニアリング: Tim Davis (Modular) が提唱。AIエージェントによるコード生成が支配的になる中、コードベースの正当性が「知っている」から「信じている」に変わるパラダイムシフト。生成は安価だが検証は高価。24-7従業員、役割分裂、Jevonsの逆説のコード応用を含む。
@@ -804,6 +805,7 @@
 - [[concepts/nvidia-dynamo]] — NVIDIA Dynamo: agentic codingワークロード向け推論アーキテクチャ。KVキャッシュ最適化、ストリーミングツールディスパッチ、マルチターン推論解析。Claude Code/Codex/OpenClaw対応。TTFT 5x改善。
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
+- [[concepts/rlvr]] — RLVR (Reinforcement Learning with Verifiable Rewards): 決定論的検証器からの外部報酬によるRL訓練パラダイム。GRPOと組み合わせて報酬モデルもクリティックモデルも排除。o1→o3で10x RL compute。ART·E ($80でo3超え)。Tülu 3で命名、DeepSeek-R1で普及。
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
 - [[concepts/skill-graph]] — Skill Graph — 相互接続MarkdownファイルによるAIエージェントプレイブック。Roninの17ファイル4フォルダアーキテクチャ。Wikilinks遷移、Platform-Native Repurposing、Litmus Test。
 - [[concepts/sitecove-ship]] — Sitecove HyperCache Inference Protocol (SHIP): System-level LLM inference optimization. 91% GPU reduction, 12× speedup, $49→$4 per 1M tokens. Developed by Australian web infra team.
@@ -876,9 +878,8 @@
 - [[concepts/grpo-rl-training]] — GRPO RL Training
 - [[concepts/kv-cache]] — KV Cache
 - [[concepts/llm-evaluation]] — LLM Evaluation
-- [[concepts/mcp-protocol]] — MCP Protocol
+- [[concepts/mcp]] — MCP (Model Context Protocol): Anthropic発のLLMツール呼び出し標準プロトコル。David Soria Parraの個人フラストレーション（copy-paste地獄）+ John Welshの組織カオス（integration chaos）から誕生。LSPに触発、JSON-RPC 2.0。2024年11月OSS化。Tools/Resources/Promptsの3プリミティブ。
 - [[concepts/mixture-of-experts]] — Mixture of Experts
-- [[concepts/model-context-protocol-mcp]] — Model Context Protocol (MCP)
 - [[concepts/multi-agent-orchestration]] — Multi-Agent Orchestration
 - [[concepts/ollama]] — Ollama
 - [[concepts/reasoning-models]] — Reasoning Models

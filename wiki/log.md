@@ -13,6 +13,14 @@
 - **📋 Entity更新**: `[[entities/lance-martin]]` — sourcesに新規raw記事を追加。
 - **📋 Index更新**: `wiki/index.md` に `rich-suttons-bitter-lesson` を追加。
 
+## 2026-05-13 08:15 UTC — RLVR概念ページ + o1/o3→GPT-5統合タイムライン + MCP実用的起源 (3ページ新規作成)
+
+- **📄 概念ページ新規作成**: `[[concepts/rlvr]]` — RLVR (Reinforcement Learning with Verifiable Rewards) の包括的概念ページ。GRPOとの標準ペアリング、test-time-scaling連関、検証器の設計空間（3類型）、ART·E $80ケーススタディ、o1→o3 10x RL compute scaling、RLHF/DPOとの比較。27KB調査ベース。
+- **📄 概念ページ新規作成**: `[[concepts/openai-o-series-gpt5-unification]]` — o1 (Sep 2024)→o3 (Dec 2024)→Altmanロードマップ転換でo3キャンセル (Feb 2025)→GPT-5統合 (Aug 2025)の完全タイムライン。GPT-5の3コンポーネントアーキテクチャ、戦略的理由（モデルピッカー複雑化+DeepSeek R1競合）。
+- **📄 概念ページ新規作成**: `[[concepts/mcp]]` — MCP (Model Context Protocol) の包括的概念ページ。David Soria Parraの個人フラストレーション起源（copy-paste地獄）とJohn Welshの組織カオス（integration chaos）の2層起源ストーリー。M×N問題、3プリミティブ、業界タイムライン。
+- **🏷️ SCHEMA更新**: `rlvr`, `test-time-scaling` をTechniquesタグ分類に追加。
+- **📋 Index更新**: 3エントリ追加、staleな `mcp-protocol` + `model-context-protocol-mcp` を統合置換。
+
 ## 2026-05-13 08:00 UTC — Lance MartinのAIE 2025まとめを取り込み + ambient-agents概念ページ作成
 
 - **Raw記事保存**: `[[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025]]` — AI Engineer World's Fair 2025現地レポート。5大テーマ: Ambient Agents, Agent UX/Bitter Lesson論争, Agent Training (RLVR, Art-E $80), Agent Tools (MCP起源), Agent Evaluation。
