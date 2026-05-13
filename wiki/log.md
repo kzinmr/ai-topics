@@ -1,3 +1,7 @@
+- **X Article取り込み成功**: Chris Hayduk「Using Codex Goals Effectively」(May 11, 2026)。Tier 2 web_extract経由で本文取得（GetXAPI timeoutのためTier 3スキップ）
+  - `raw/articles/2026-05-11_chrishayduk-using-codex-goals-effectively.md` — 1,934 bookmarks, 109K impressions
+  - `concepts/codex-goal.md` — Effective Goal Prompting セクション追加（5 tips + quantitative goal examples）
+  - `entities/chris-hayduk.md` — 記事追加 + protein language models 記事追記
 ## 2026-05-13
 
 - **Hot-topics 追加**: `autoresearch`, `agentic-loop`, `codex-goal` の3トピッククラスタを追加

@@ -32,8 +32,9 @@ Previously: Machine Learning Engineer at Meta (ads ranking models, graph neural 
 
 Writes cross-disciplinary analysis on AI and society at [chrishayduk.com](https://www.chrishayduk.com):
 
+- **"Using Codex Goals Effectively"** (May 2026, X Article) — Practical guide for `/goal` prompts: quantitative goals, constraints, meta-prompting workflow. 1,934 bookmarks, 109K impressions. → [[raw/articles/2026-05-11_chrishayduk-using-codex-goals-effectively.md]]
 - **"A Tale of Two Futures"** (Jan 2026) — America building Skynet vs. China building The Jetsons
-- **X Articles** on AI agent loops, /goal workflows, protein language models
+- **"Understanding Protein Language Models"** (Apr 2026) — Deep dive into protein language models
 
 ### AI Agent / Loop Commentary
 
