@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-13 | Total pages: 1795 | Indexed entries: 850 | Not in index: 945 |
+> Last updated: 2026-05-13 | Total pages: 1797 | Indexed entries: 853 | Not in index: 944 |
 
-## Entities (580 pages)
+## Entities (582 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -143,6 +143,7 @@
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
 - [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.
 - [[entities/dario-amodei]] — **Role** | Co-founder & CEO, Anthropic |
+- [[entities/david-fowler]] — David Fowler (@davidfowl) — Distinguished Engineer at Microsoft. Creator of NuGet, SignalR, ASP.NET Core, Aspire (agent-ready DevOps). Tally (AI bank tx classifier). "AI Made Us Faster. That Was the Problem" (May 2026).
 - [[entities/dax-raad]] — **X** | @thdxr |
 - [[entities/daytona-io]] — CEO: Ivan Burazin. Composable computing environments (sandboxes) for AI agents.
 - [[entities/deepseek]] — Chinese open-source LLM provider driving **cost disruption**. DeepSeek V4 (1.6T Pro / 284B Flash, MoE, 1M context, MIT license) confirmed running on Huawei Ascend 950 for inference — partial decoupling from Western hardware.
@@ -274,6 +275,7 @@
 - [[entities/kilo]] — OpenCode forkによるオープンソースAIコーディングプラットフォーム。Apache-2.0、VS Code + JetBrains + CLI、500+モデル（Kilo Gateway）、ホステッドOpenClaw（KiloClaw）。Teams/SSO/Analytics。インライン補完、Cloud Agents、コードレビュー。
 - [[entities/koylan-ai]] — **URL:** https://muratcankoylan.com
 - [[entities/krebsonsecurity-com]] — **URL:** https://krebsonsecurity.com
+- [[entities/kyle-jeong]] — Kyle Jeong (@kylejeong) — Growth Engineer at Browserbase, UCLA CS/Math student. KP Fellow. Writes about AI infra: Firecracker microVMs, agent sandboxing, browser automation, Kubernetes, Transformers.
 - [[entities/lance-martin]] — **X** | @RLanceMartin |
 - [[entities/late-interaction]] — **URL:** https://www.lateinteraction.com
 - [[entities/lcamtuf]] — **URL:** https://lcamtuf.coredump.cx
@@ -886,6 +888,7 @@
 - [[concepts/chain-of-thought]] — Chain of Thought
 - [[concepts/context-engineering]] — Context Engineering
 - [[concepts/fine-tuning]] — Fine-Tuning
+- [[concepts/firecracker]] — Firecracker microVM: AWSのRust製軽量VMM（~50K行）。KVMハードウェア仮想化で~125ms起動。AWS Lambda/Fargateを支え、Browserbase/E2B/Daytona/Modal等のAIエージェント企業がコード実行サンドボックスに採用。VM分離＋コンテナ起動速度の両立。
 - [[concepts/gguf-quantization]] — GGUF Quantization
 - [[concepts/grpo-rl-training]] — GRPO RL Training
 - [[concepts/kv-cache]] — KV Cache

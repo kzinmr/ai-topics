@@ -1,3 +1,28 @@
+
+## 2026-05-13 11:30 UTC — X Bookmarks Ingest
+
+**Source**: X bookmarks pipeline (2 bookmarks, x-bookmarks-ingest cron)
+
+### Pages Created
+- 🆕 `entities/kyle-jeong.md` — Kyle Jeong entity page (Growth Engineer at Browserbase, writes about AI infra: Firecracker, agent sandboxing, Kubernetes)
+- 🆕 `entities/david-fowler.md` — David Fowler entity page (Distinguished Engineer at Microsoft, Aspire, NuGet, SignalR)
+
+### Pages Enriched
+- ✏️ `concepts/firecracker.md` — Upgraded from stub (24 lines) to full page (~100 lines). Added architecture details, isolation problem analysis, agent infra company usage, Firecracker vs gVisor comparison table, history. Source: Kyle Jeong's X Article.
+
+### Raw Articles Saved
+- `raw/articles/2026-05-11_kylejeong_firecracker-agent-infra.md` — metadata-only (X Article behind auth wall, blog mirror not found)
+- `raw/articles/2026-05-12_davidfowl_ai-made-us-faster.md` — metadata-only (X Article behind auth wall, no mirror found)
+
+### Index Updates
+- index.md: +3 indexed entries (firecracker concept, kyle-jeong entity, david-fowler entity)
+- Concepts: firecracker added
+- Entities: kyle-jeong, david-fowler added
+
+### Notes
+- Both bookmarks were X native articles (x.com/i/article/...) with no external URLs. Blog mirror for Kyle's article could not be resolved (403/404). David Fowler's article has no mirror.
+- Firecracker stub was already present (created 2026-04-25) — enriched rather than duplicated.
+
 ## 2026-05-13 10:00 UTC — INTELLECT-2 paper ingestion + model entity page
 
 - **📄 論文保存**: `wiki/raw/papers/2025-05-12_2505.07291_intellect-2-decentralized-rl.md` — arXiv:2505.07291 (May 12, 2025), 26 pages
