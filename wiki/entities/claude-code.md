@@ -2,7 +2,7 @@
 title: Claude Code
 type: entity
 created: 2026-04-24
-updated: 2026-04-27
+updated: 2026-05-13
 tags:
   - product
   - coding-agent
@@ -19,7 +19,7 @@ sources:
   - https://www.getaiperks.com/en/articles/claude-code-updates
   - https://arxiv.org/html/2604.14228v1
   - https://claude.com/blog/introducing-routines-in-claude-code
-  - https://claude.com/blog/auto-mode
+  - "[[raw/articles/2026-05-13_anthropic_claude-code-agent-sdk-sessions]]"
 ---
 
 # Claude Code
@@ -174,4 +174,40 @@ Claude Code is built around prompt caching from day one. The team runs alerts on
 Sources: "Lessons from Building Claude Code: Prompt Caching Is Everything" (April 2026), "Prompt auto-caching with Claude" (@RLanceMartin)
 
 See also: [[concepts/prompt-caching]], [[concepts/context-engineering]]
+
+## Session Management (Agent SDK)
+
+Claude Code Agent SDKは、Context Engineering の抽象概念を**型付きAPIプリミティブ**として実装している。セッション管理（[Work with sessions](https://code.claude.com/docs/en/agent-sdk/sessions)）は、MartinのWrite/Select/Compress/IsolateフレームワークのSDKレベルでの具現化である。
+
+### セッションの基本構造
+
+セッションは「プロンプト + 全ツール呼び出し + 全ツール結果 + 全応答」を含む完全な会話履歴。`~/.claude/projects/<encoded-cwd>/*.jsonl` に自動永続化される。セッションは**会話**を永続化し、**ファイルシステム変更**はFile Checkpointingが別途管理する（関心の分離）。
+
+### 3つの操作: Continue / Resume / Fork
+
+| 操作 | API | 機能 | Context Engineering 対応 |
+|------|-----|------|------------------------|
+| **Continue** | Python: `ClaudeSDKClient` / TS: `continue: true` | カレントディレクトリの最新セッションを自動検出・追記 | **Write + Select** — 透過的なコンテキスト永続化と復元 |
+| **Resume** | `resume=<session_id>` | 指定IDのセッションを復元。全過去コンテキストにアクセス | **Select** — 精密なコンテキスト検索。プロセス再起動・マルチユーザー対応 |
+| **Fork** | `resume=<id>, fork_session=True` | 元セッションをコピーした新規セッション。元は不変 | **Isolate** — 会話履歴の分岐。別アプローチの安全な試行 |
+
+### Context Engineering フレームワークとのアーキテクチャ対応
+
+```
+Context Engineering 抽象          Claude Code SDK 実装
+─────────────────────────        ──────────────────────
+Write（外部保存）               自動セッション永続化（JSONL）
+Select（選択的取り込み）         Resume by session_id
+Compress（圧縮）                auto-compact（95%しきい値）
+Isolate（分離）                 Fork + Sub-agents（独立セッション）
+Offload（ファイルシステム分離）   File Checkpointing（会話状態 ≠ ファイル状態）
+```
+
+**クロスホスト**: JSONLファイルの移動または `SessionStore` アダプターでCI/サーバーレス環境間のセッション復元が可能。セッションの列挙・リネーム・タグ付け用ユーティリティ（`list_sessions()`, `tag_session()` 等）も提供。
+
+### 設計上の含意
+
+Context Engineeringはアドホックなプロンプト設計から、**SDKの型付きAPIとして標準化**されつつある。MartinのBitter Lesson — 「モデル改善に伴いハーネスは削ぎ落とされる」 — の対極として、セッション管理のような**基盤プリミティブ**はSDKに吸収される方向に進化している。
+
+Source: [[raw/articles/2026-05-13_anthropic_claude-code-agent-sdk-sessions]]
 

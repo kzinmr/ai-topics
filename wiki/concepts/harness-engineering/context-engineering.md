@@ -21,6 +21,7 @@ sources:
   - "Khairallah AL-Awady — How to Master Context Engineering & Build AI Systems That Actually Understand You (Full Course), May 2026"
   - "[[raw/articles/2025-06-23_rlancemartin_context-engineering-for-agents]] — Lance Martin, Context Engineering for Agents (Write/Select/Compress/Isolate), June 2025"
   - "[[raw/articles/2026-01-09_rlancemartin_agent-design-patterns]] — Lance Martin, Agent design patterns (7 patterns extending context engineering), Jan 2026"
+  - "[[raw/articles/2026-05-13_anthropic_claude-code-agent-sdk-sessions]] — Anthropic, Work with sessions (Claude Code Agent SDK), 2026"
 ---
 
 # Context Engineering
@@ -207,6 +208,43 @@ Martinは本記事（June 2025）の半年後、High Signalポッドキャスト
 | Isolate | → **Isolate** | 不変だが、Ralph Wiggumループ・fresh contextの重要性が強化された |
 
 この進化は、実運用経験から得た **「コンテキストは最も稀少なリソース」** という深まった理解を反映している。
+
+### Claude Code Agent SDK: Context Engineering の SDK 実装
+
+Lance Martinの4バケット分類とReduce/Offload/Isolateは、Anthropic自身の**Claude Code Agent SDK**（[[entities/claude-code]]）においてSDKプリミティブとして具現化されている。特に**セッション管理**（[Work with sessions](https://code.claude.com/docs/en/agent-sdk/sessions)）は、Context Engineeringの各パターンを開発者が直接呼び出せるAPIに落とし込んだ設計である。
+
+**セッション**は「プロンプト + 全ツール呼び出し + 全ツール結果 + 全応答」を含む会話履歴であり、`~/.claude/projects/<encoded-cwd>/*.jsonl` に自動的に永続化される。これはMartinの **Write** パターンそのものであり、Claude Codeの `auto-compact` が **Compress** として働く前に、生の会話状態を外部保存する仕組みを提供する。
+
+#### Continue / Resume / Fork — 3つのセッション操作
+
+| 操作 | 動作 | Martin分類での対応 | 用途 |
+|------|------|-----------------|------|
+| **Continue** | カレントディレクトリの最新セッションを自動検出し追記 | **Write + Select** | シングルプロセス内のマルチターン会話。`ClaudeSDKClient`（Python）または `continue: true`（TypeScript）で透過的に管理 |
+| **Resume** | 指定されたセッションIDの会話を再開 | **Select**（精密検索） | プロセス再起動後の復旧、特定セッションへの復帰、マルチユーザーアプリでのセッション分離 |
+| **Fork** | 元セッションをコピーした新規セッションを作成。元は不変 | **Isolate**（分岐） | 別アプローチの試行。JWT実装を維持したままOAuth2を試す、など |
+
+#### Context Engineering フレームワークとの対応
+
+```
+Martin 4バケット              Claude Code Session API
+─────────────────────────────────────────────────
+Write（外部保存）          →  自動セッション永続化（JSONL）
+Select（選択的取り込み）    →  Resume: セッションIDによる精密なコンテキスト復元
+Compress（圧縮）           →  auto-compact: 95%しきい値での自動要約
+Isolate（分離）            →  Fork: 会話履歴の分岐 + Sub-agents: 独立セッション
+
+Martin 3原則 (Dec 2025)
+──────────────────────
+Reduce                    →  Compaction + セッションサイズ管理
+Offload                   →  セッション永続化 + File Checkpointing（ファイル変更の分離管理）
+Isolate                   →  Fork + Sub-agents（Ralph Wiggum loop）
+```
+
+**重要な設計判断**: セッションは**会話**を永続化し、**ファイルシステム**は永続化しない。ファイル変更の追跡とロールバックは **File Checkpointing** が別途担当する。この「会話状態」と「ファイル状態」の**関心の分離**は、Martinの **Offload**（ファイルシステムを外部記憶として使うが、会話コンテキストとは分離する）パターンのSDKレベルでの実装である。
+
+**クロスホストセッション**: `~/.claude/projects/` 下のJSONLファイルを移動するか、`SessionStore` アダプターで共有ストレージにミラーリングすることで、CIワーカーやサーバーレス環境間でのセッション復元が可能。これは Martin の「Give Agents A Computer」パターン（[Agent design patterns](https://rlancemartin.github.io/2026/01/09/agent_design/), Jan 2026）のインフラ的裏付けである。
+
+**含意**: Context Engineeringはもはやアドホックなプロンプト設計ではなく、SDKの型付きAPIとして **プログラマティックに管理可能** になりつつある。Martinが予見した Bitter Lesson — 「モデルが賢くなるにつれハーネスは削ぎ落とされる」 — の対極として、セッション管理のような**基盤プリミティブ**は逆にSDKに吸収され、標準化されていく。
 
 ## Just-in-Time (JIT) コンテキスト
 

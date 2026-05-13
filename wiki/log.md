@@ -1,3 +1,9 @@
+## 2026-05-13 05:15 UTC — Claude Code Agent SDK セッション管理 + Context Engineering 実装分析
+
+- **Raw記事保存**: `wiki/raw/articles/2026-05-13_anthropic_claude-code-agent-sdk-sessions.md` — Anthropic公式ドキュメント「Work with sessions」。continue/resume/fork の3操作による会話履歴の永続化・復元・分岐。`~/.claude/projects/<encoded-cwd>/*.jsonl` への自動永続化、`ClaudeSDKClient`（Python）、`continue: true`（TypeScript）、クロスホストセッション復元。
+- **✏️ 概念ページ拡充**: `[[concepts/harness-engineering/context-engineering]]` — 「Claude Code Agent SDK: Context Engineering の SDK 実装」セクションを新設。Continue/Resume/Fork を Martin の Write/Select/Compress/Isolate フレームワークに対応付け。会話状態とファイル状態の関心の分離（Offload）、Bitter Lesson の対極としての基盤プリミティブのSDK吸収を分析。
+- **🔧 エンティティページ更新**: `[[entities/claude-code]]` — Session Management セクションを新設（Continue/Resume/Fork 操作の詳細、Context Engineering フレームワークとのアーキテクチャ対応表、クロスホスト運用、設計上の含意）。sources と updated を更新。
+
 ## [2026-05-13] refactor | Harness Engineering blog unified boundary framing
 - id: blog-harness-engineering-boundary-refactor-2026-05-13
 - summary: Refactored the Harness Engineering survey around a unified boundary-interface framing, integrating Context Engineering, Action-oriented harness design, Agent Trace/Open Eval, open harness ownership, RLM-based learned context management, and anti-harness counterarguments into one coherent arc.
