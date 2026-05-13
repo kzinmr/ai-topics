@@ -32,7 +32,7 @@ related:
 
 # Reduce, Offload, Isolate
 
-**The 3 Principles** is a context engineering playbook articulated by **Lance Martin** (LangChain) on the **High Signal** podcast with Hugo Bowne-Anderson (Dec 2025). It captures the battle-tested strategies used by leading agentic systems — including **Claude Code** and **Manus** — to manage the fundamental tension between growing context windows and degrading model performance ("[[context-rot|context rot]]").
+**The 3 Principles** is a context engineering playbook articulated by **Lance Martin** (Anthropic, prev. LangChain) on the **High Signal** podcast with Hugo Bowne-Anderson (Dec 2025). It captures the battle-tested strategies used by leading agentic systems — including **Claude Code** and **Manus** — to manage the fundamental tension between growing context windows and degrading model performance ("[[context-rot|context rot]]").
 
 ## The Core Problem: Context Rot
 

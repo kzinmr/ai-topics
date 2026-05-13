@@ -16,7 +16,7 @@
   - raw/articles/2025-11-02_softwaredoug_llm-judges-arent-the-shortcut.md
 ## 2026-05-13 04:30 UTC — Lance Martin Reduce/Offload/Isolate フレームワーク取り込み
 
-- **Raw記事保存**: `wiki/raw/articles/2025-12-12_hugobowne_agent-harness-context-engineering.md` — Hugo Bowne-Anderson + Duncan Gilchrist による Vanishing Gradients 記事。Lance Martin (LangChain) が High Signal ポッドキャストで語ったコンテキストエンジニアリング3原則、Bitter Lessonのハーネス設計への適用、Manus 5回再設計・AnthropicのClaude Code ハーネス削減の証言。
+- **Raw記事保存**: `wiki/raw/articles/2025-12-12_hugobowne_agent-harness-context-engineering.md` — Hugo Bowne-Anderson + Duncan Gilchrist による Vanishing Gradients 記事。Lance Martin (Anthropic, 出演時はLangChain) が High Signal ポッドキャストで語ったコンテキストエンジニアリング3原則、Bitter Lessonのハーネス設計への適用、Manus 5回再設計・AnthropicのClaude Code ハーネス削減の証言。
 - **🆕 概念ページ作成**: `[[concepts/reduce-offload-isolate]]` (L2) — Reduce（コンテキスト圧縮）/ Offload（プロンプト外移動）/ Isolate（サブエージェント委譲）の詳細フレームワーク。Bitter Lessonとの接続、Write-Select-Compress-Isolateからの進化、Manus/Claude Code/Open Deep Researchの実例、ハーネス設計への含意を含む。
 - **✏️ エンティティ強化**: `[[entities/lance-martin]]` — High Signal ポッドキャスト出演を Podcast Appearances に追加。Reduce/Offload/Isolateフレームワークの専用セクションを新設。updated: 2026-05-13。
 - **✏️ 相互リンク**: `[[entities/hugo-bowne-anderson]]` — Harness Engineering Philosophy セクションの "Reduce, Offload, Isolate" を [[concepts/reduce-offload-isolate]] へのwikilink化。

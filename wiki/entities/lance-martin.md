@@ -7,6 +7,7 @@ updated: 2026-05-13
 tags:
   - person
   - model
+  - anthropic
   - langchain
   - rag
   - ai-agents
@@ -25,13 +26,13 @@ sources: []
 | **GitHub** | [rlancemartin](https://github.com/rlancemartin) |
 | **LangChain Blog** | [blog.langchain.com/author/lance](https://blog.langchain.com/author/lance/) |
 | **LinkedIn** | [Lance Martin](https://www.linkedin.com/in/lance-martin-64a33b5/) |
-| **Role** | AI Engineer & Researcher, LangChain / LangGraph |
+| **Role** | AI Engineer & Researcher, Anthropic (prev. LangChain / LangGraph) |
 | **Known for** | Context engineering for agents, RAG systems, LangGraph agent design, multi-agent orchestration |
-| **Bio** | Lance Martin is a key contributor to the LangChain and LangGraph ecosystems, specializing in agent architecture, retrieval-augmented generation (RAG), and context engineering. His blog posts and podcast appearances have made him one of the most cited voices on how to build effective, long-running AI agents. He has contributed core documentation to the LangChain framework and created influential open-source projects including auto-evaluator and claude-diary. |
+| **Bio** | Lance Martin is an AI engineer at Anthropic, previously a key contributor to the LangChain and LangGraph ecosystems. He specializes in agent architecture, retrieval-augmented generation (RAG), and context engineering. His blog posts and podcast appearances have made him one of the most cited voices on how to build effective, long-running AI agents. He has contributed core documentation to the LangChain framework and created influential open-source projects including auto-evaluator and claude-diary. |
 
 ## Overview
 
-Lance Martin has established himself as one of the leading thinkers in **AI agent engineering**, particularly around the challenge of **context engineering** — the art and science of filling an LLM's context window with just the right information at each step of an agent's trajectory. Working within the **LangChain** and **LangGraph** ecosystems, Martin has produced foundational research, blog posts, and open-source tools that shape how developers build production-grade AI agents.
+Lance Martin has established himself as one of the leading thinkers in **AI agent engineering**, particularly around the challenge of **context engineering** — the art and science of filling an LLM's context window with just the right information at each step of an agent's trajectory. Now at **Anthropic**, Martin previously worked within the **LangChain** and **LangGraph** ecosystems, where he produced foundational research, blog posts, and open-source tools that shape how developers build production-grade AI agents.
 
 His influence extends across the broader AI engineering community. Martin was a featured guest on the **Latent Space: The AI Engineer Podcast** (Sep 2025) for an episode entirely dedicated to "Context Engineering for Agents," where he laid out a comprehensive framework that has since been widely adopted. His blog at  consistently produces some of the most-read technical content in the space, with posts on agent design patterns, the "bitter lesson" applied to AI engineering, and RAG benchmarking.
 
