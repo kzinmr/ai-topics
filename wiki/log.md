@@ -8,6 +8,8 @@
 ## [2026-05-13] rotate | Log rotated (638 lines → log-2026.md)
 - Previous log archived to `log-2026.md` for historical reference
 
+## [2026-05-13] index | Added 6 orphan pages to index.md (entities: dex-horthy, merge-dev; concepts: agentic-rag, agentic-retrieval, claude-opus-4-7, death-of-browser). Fixed merge-dev alphabetical position. Updated section counts.
+
 ## [2026-05-13] lint | Frontmatter validation fixes
 - Fixed 6 wiki pages with YAML frontmatter syntax errors:
   - `entities/ramp-labs.md` — related block invalid YAML (flow/block mix)
