@@ -10,7 +10,7 @@
 このリポジトリは **LLM / AI Agent 技術の wiki 知識ベース** です。Andrej Karpathy の [LLM Wiki パターン](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) に基づき、AI/ML エコシステムのモデル・ツール・フレームワーク・人物・概念を継続的にドキュメント化しています。
 
 - **GitHub**: `kzinmr/ai-topics`
-- **Canonical root**: `~/ai-topics` (実パス: `/opt/data/ai-topics`)
+- **Canonical root**: `~/ai-topics`
 - **Wiki root**: `~/wiki` → symlink to `~/ai-topics/wiki`
 
 ---
@@ -30,7 +30,9 @@
 │   │   └── newsletters/             ← ニュースレターダイジェスト
 │   ├── entities/                    ← Layer 2: 人物・組織・製品ページ
 │   ├── concepts/                    ← Layer 2: 概念・トピックページ
-│   └── comparisons/                 ← Layer 2: 横断比較ページ
+│   ├── comparisons/                 ← Layer 2: 横断比較ページ
+│   ├── queries/                     ← Layer 2: 再利用可能な調査・回答
+│   └── events/                      ← Layer 2: 重要イベント・リリース
 ├── config/
 │   ├── feeds/
 │   │   ├── x-accounts.yaml          ← 追跡対象X/Twitterアカウント一覧
@@ -51,7 +53,7 @@
 | 層 | ディレクトリ | 変更可能？ | 内容 |
 |---|---|---|---|
 | **Layer 1** | `raw/` | ❌ 不変 | ソース記事・論文・トランスクリプト |
-| **Layer 2** | `entities/` `concepts/` `comparisons/` | ✅ Agentが管理 | 構造化Wikiページ |
+| **Layer 2** | `entities/` `concepts/` `comparisons/` `queries/` `events/` | ✅ Agentが管理 | 構造化Wikiページ |
 | **Layer 3** | `SCHEMA.md` `index.md` | ✅ 規約更新時のみ | スキーマ・ナビゲーション |
 
 ### 重要規約
@@ -62,6 +64,48 @@
 - **log.md 即時追記**: 全操作をappend-onlyで記録
 - **`raw/` 内のファイルを編集しない**: ソース素材は不変
 - **200行以上で分割**: 長大ページはサブページに分割
+- **既存ページ優先**: 重複ページを作る前に `index.md` と関連ページを確認し、原則として既存ページへ統合
+- **矛盾を消さない**: 新情報が旧情報と衝突する場合は、古い解釈を削除せず日付・出典つきで contested / superseded として残す
+
+---
+
+## 知識ベース運用原則
+
+セットアップ時ドラフトにあった抽象的な運用憲章は、現行 `SCHEMA.md` と upstream 版 `AGENTS.md` に合わせて以下のルールとして統合する。
+
+### Primary Objective
+このWikiは、raw source と最終回答のあいだにある **durable, inspectable synthesis layer** である。作業の目的は、一回限りの回答ではなく、あとから検証・再利用できる知識として残すこと。
+
+### Manual Wiki Workflow
+1. `wiki/SCHEMA.md`、`wiki/index.md`、関連する既存ページを先に読む
+2. `wiki/raw/` のソースを参照するが、編集しない
+3. 新規ページより既存ページ更新を優先する
+4. ページ作成時は `SCHEMA.md` の Page Thresholds を満たすか確認する
+5. frontmatter の `updated`、`tags`、`sources`、本文中の `[[wikilinks]]` を同時に更新する
+6. `wiki/index.md` と `wiki/log.md` を同じ作業単位で更新する
+7. 新旧情報が矛盾する場合は、出典・日付・不確実性を本文に明示する
+
+### Query / Analysis Workflow
+1. 調査回答はまず `wiki/index.md` から関連ページを探す
+2. Wikiページだけで根拠が薄い場合は、ページの `sources` から raw source も確認する
+3. 回答が再利用可能な調査・比較・判断なら、`wiki/queries/` か該当する `concepts/` / `comparisons/` に保存する
+4. 新しい query / summary ページを作った場合は、`type: query` または `type: summary` を使い、`index.md` と `log.md` に反映する
+
+### Generated Artifact Governance
+- 生成されたツール、ワークフロー、UI、スクリプトの仕様・検証結果は、必要に応じて `wiki/queries/` または関連 `concepts/` ページへ記録する
+- `wiki/workflows/` や `factory/` のような未定義ディレクトリは、`SCHEMA.md` と `index.md` の構造を更新するまでは新設しない
+- 外部副作用を持つ処理（投稿、通知、cron変更、push、deploy）は、既存ポリシーかユーザー明示依頼がある場合のみ実行する
+- 検証なしで生成物を production 相当に昇格しない。最低限、実行条件・検証結果・残リスクを記録する
+
+### Quality Checks
+編集後は必要に応じて以下を確認する:
+- orphan pages
+- duplicate pages
+- missing or broken wikilinks
+- stale pages
+- unsupported claims
+- contradictions without source/date context
+- generated artifacts without owning spec or validation notes
 
 ---
 
