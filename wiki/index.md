@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-14 | Total pages: 1860 | Indexed entries: 926 | Not in index: 914 |
+> Last updated: 2026-05-14 | Total pages: 1860 | Indexed entries: 946 | Not in index: 894 |
 
 ## Entities (586 pages)
 
@@ -596,7 +596,7 @@
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 - [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."
 
-## Concepts (1278 pages)
+## Concepts (1298 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -936,6 +936,26 @@
 - [[concepts/chief-of-staff-agent-patterns]] — Chief of Staff Agent Patterns: AIエージェントによるChief of Staff業務パターン。
 - [[concepts/claude-mythos-preview]] — Claude Mythos Preview: Claudeのサイバーセキュリティ能力評価プレビュー。
 - [[concepts/cmu-llms-methods-applications]] — CMU LLMs: Methods and Applications: CMU大学院LLM講義（GRPO/Deep Research/Multi-agent等最新含む）。
+- [[concepts/dark-factory-software-factory]] — Dark Factory Software Factory: AIエージェントによる完全自動ソフトウェア工場。Simon Willisonのビジョン。
+- [[concepts/data-engineering]] — Data Engineering: データパイプライン設計・構築・保守の実践的エンジニアリング分野。
+- [[concepts/data-engineering-for-ml]] — Data Engineering for ML
+- [[concepts/data-validation-python-type-hints-rust-web-frameworks-fastapi]] — Data Validation, Python Type Hints, Rust Web Frameworks, FastAPI
+- [[concepts/dataset-engineering]] — Dataset Engineering: AI学習用データセットの系統的キュレーションと品質管理の新興分野。
+- [[concepts/datasette-llm]] — datasette-llm: Simon Willison作のDatasette LLM統合プラグイン。
+- [[concepts/datasette-referrer-policy]] — datasette-referrer-policy: Datasetteリファラーポリシープラグイン。
+- [[concepts/db9-fs-sql-pattern]] — db9: Filesystem + Postgres for Agent Workflows: ファイルシステムとPostgreSQLを統合したAIエージェントワークフロー基盤。
+- [[concepts/decoder-only-gpt-architecture]] — Decoder-Only GPT Architecture
+- [[concepts/deep-agents]] — Deep Agents: 複数のアーキテクチャパターンを組み合わせた自律型AIエージェント。
+- [[concepts/deep-agents-runtime]] — Deep Agents Runtime: ディープエージェントのための本番実行基盤（durable execution, memory, multi-agent）。
+- [[concepts/defense-in-depth]] — Defense in Depth (AI Security): 多層防御のセキュリティアーキテクチャ原則。AIシステムへの応用。
+- [[concepts/delta-updates-redis]] — Delta Updates via Redis: エージェント間でインクリメンタル更新をRedis経由でリアルタイム配信するパターン。
+- [[concepts/designing-ml-systems]] — Designing ML Systems
+- [[concepts/dflash]] — DFlash: 軽量ブロック拡散モデルによるフラッシュ投機的デコード。
+- [[concepts/dflash-ggml]] — DFlash on ggml: DFlash投機的デコードのggml移植実装。
+- [[concepts/dgx-spark-local-llm-server]] — DGX Spark Local LLM Server
+- [[concepts/differential-symbolic-modules]] — Differential Symbolic Modules: シンボリック計算層と微分可能コンポーネントを組み合わせたハイブリッドアーキテクチャ。
+- [[concepts/direct-prompting-philosophy]] — Direct Prompting Philosophy: 「Just Talk To It」— 複雑なフレームワークより直接プロンプトを優先する哲学。
+- [[concepts/docker-sandbox-microvm-api]] — Docker Sandbox MicroVM API: AIコーディングエージェントを安全に実行するDocker Sandbox API。
 
 ## Events (2 pages)
 

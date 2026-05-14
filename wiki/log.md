@@ -1,3 +1,25 @@
+## [2026-05-14] health | Wiki health auto-fix — 20 orphan concepts indexed
+
+### Changes
+- `wiki/index.md` — Added 20 d-range concept pages to Concepts section:
+  dark-factory-software-factory, data-engineering, data-engineering-for-ml,
+  data-validation-python-type-hints-rust-web-frameworks-fastapi, dataset-engineering,
+  datasette-llm, datasette-referrer-policy, db9-fs-sql-pattern,
+  decoder-only-gpt-architecture, deep-agents, deep-agents-runtime,
+  defense-in-depth, delta-updates-redis, designing-ml-systems, dflash,
+  dflash-ggml, dgx-spark-local-llm-server, differential-symbolic-modules,
+  direct-prompting-philosophy, docker-sandbox-microvm-api
+- Updated section counts: Concepts (1278→1298), Indexed entries (926→946)
+
+### Health Status
+- ✅ Index corruption: Clean (0 pipe, 0 line-number, 0 triple bracket issues)
+- ✅ Ghost entries: 0 (all 3 raw article refs resolve correctly)
+- ✅ validate_index.py: Clean (982 lines)
+- ✅ Orphan pages: 20 added to index (~874 remaining)
+- ✅ Stale pages: 174 (31-35 days old) — no auto-fix
+
+---
+
 ## [2026-05-14] ingest + update | Kilo Blog: Hermes vs OpenClaw Comparison (Orchestrator + Execution Specialist Architecture)
 
 ### Pages Updated
