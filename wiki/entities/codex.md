@@ -134,6 +134,23 @@ Security policies applied through:
 
 > Source: [Running Codex safely at OpenAI](https://openai.com/index/running-codex-safely) (May 2026)
 
+### Windows Sandbox Architecture (May 2026)
+
+OpenAI published a detailed technical post on building the Codex Windows sandbox, revealing the evolution from a simple prototype to a multi-binary elevated sandbox:
+
+**Prototype 1 — "Unelevated sandbox"**: Used restricted tokens + synthetic SIDs + environment variable proxy suppression. Rejected because:
+- ACL application was expensive on large workspace directories
+- Network protection was only "advisory" (environment variables) — easily circumvented
+- Difficult to change semantics without slow ACL operations
+
+**Prototype 2 — "Elevated sandbox"** (current implementation): Requires admin permissions at setup, creates dedicated local users (`CodexSandboxOffline` / `CodexSandboxOnline`), and uses Windows Firewall for true network isolation. Key architectural decisions:
+- `codex.exe` (main harness, unelevated) → `codex-windows-sandbox-setup.exe` (elevated setup) → `codex-command-runner.exe` (runs as sandbox user, creates restricted tokens) → child process
+- Split across 3 binaries to cross the UAC boundary cleanly and keep Windows-specific machinery out of the main `codex.exe`
+- Uses `CreateProcessWithLogonW` to launch the command runner as the sandbox user, then `CreateRestrictedToken` + `CreateProcessAsUserW` inside the runner
+- Asynchronous ACL setup for read access to user profile directories (Windows doesn't grant cross-user read by default)
+
+> Source: [Building a safe, effective sandbox to enable Codex on Windows](https://openai.com/index/building-codex-windows-sandbox) (May 2026)
+
 ## Pricing
 
 - **ChatGPT Free/Go**: Codex included (limited)

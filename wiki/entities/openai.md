@@ -209,6 +209,10 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 - [wheresyoured.at--openai-cfo-news--6d149a3a](wheresyoured.at--openai-cfo-news--6d149a3a.md)
 - [wheresyoured.at--openai-projects-chatgpt-plus-subscriptions-to-drop-by-80-fro--4a94de93](wheresyoured.at--openai-projects-chatgpt-plus-subscriptions-to-drop-by-80-fro--4a94de93.md)
 
+### TanStack npm Supply Chain Attack — Mini Shai-Hulud (May 2026)
+
+OpenAI disclosed its response to the **Mini Shai-Hulud** supply chain attack targeting the npm ecosystem (May 2026). Two employee corporate devices downloaded a malicious TanStack npm package, resulting in unauthorized access to internal source code repositories and exfiltration of limited credential material including code-signing certificates for iOS, macOS, Windows, and Android products. No customer data or production systems were compromised. All certificates were rotated; macOS users must update apps by June 12, 2026. See [[concepts/openai-tanstack-supply-chain-2026]] for full details.
+
 ## Sources
 - **OpenAI Agents SDK Blog (2026-04-15)** — [openai.com](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
 - **OpenAI API Sandbox Docs** — [developers.openai.com](https://developers.openai.com/api/docs/guides/agents/sandboxes)

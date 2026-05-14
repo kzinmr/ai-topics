@@ -188,3 +188,4 @@ His **Memex Method** — maintaining 50,000+ public notes in a searchable databa
 - pluralistic.net--2026-04-25-machiavellian--6f8b9f50
 - pluralistic.net--2026-04-27-analogs-and-analogies--36a28626
 - pluralistic.net--2026-04-27-mouseketeers--c9e41011
+- pluralistic.net--2026-05-13-vibe-governance--8ea39949

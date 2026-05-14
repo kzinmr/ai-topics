@@ -594,7 +594,7 @@
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 - [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."
 
-## Concepts (1273 pages)
+## Concepts (1274 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -682,6 +682,7 @@
 - [[concepts/model-quantization]] — Model Quantization
 - [[concepts/model-routing]] — Per-turn model routing for AI coding agents. Augment Prism: 20-30% cost reduction at similar quality. Cache-aware routing decisions.
 - [[concepts/object-storage-queue]] — Object Storage Queue: S3のCASを利用した分散キュー実装パターン。Group Commit、Stateless Broker、HeartbeatによるJob Recovery。ゼロディスクアーキテクチャの応用。Absurd（PG Queue）との比較を含む。 — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
+- [[concepts/openai-tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security hardening measures.
 - [[concepts/open-source-ai-destruction]] — Open Source AI Destruction
 - [[concepts/openclaw-architecture]] — OpenClawのアーキテクチャ詳細
 - [[concepts/openenv]] — Meta+HF partnership: open standard for agent environments (sandboxed tools, APIs, credentials). Integrates with TRL, TorchForge, verl, SkyRL. Environment Hub on Hugging Face.

@@ -5,6 +5,41 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-14] ingest | Blog scan: 36 articles (20 saved, 16 skipped)
+
+### Major AI articles processed:
+
+1. **Sierra τ-knowledge leaderboard update (May 2026)** — Updated concepts/tau-knowledge.md with GPT-5.5 pass^1/pass^4 results (37.4%/20.6%), behavioral analysis of search patterns, and pass^1 metric clarification. GPT-5.5 achieved 2x improvement in pass^4 over GPT-5.2 but still ~63pt from saturation. Key insight: stronger agents search smarter (fewer, more surgical queries) not more.
+
+2. **OpenAI Codex Windows Sandbox** — Updated entities/codex.md with Windows sandbox architecture details. Two-prototype evolution from unelevated to elevated sandbox using dedicated local users, Windows Firewall for network isolation, 3-binary architecture (codex.exe → setup.exe → command-runner.exe) to cross UAC boundary.
+
+3. **OpenAI TanStack Supply Chain Attack (Mini Shai-Hulud, May 2026)** — Created concepts/openai-tanstack-supply-chain-2026.md. Two infected corporate devices, code-signing cert compromise, 108 internal source repos accessed, limited credential exfiltration, full certificate rotation. Updated entities/openai.md.
+
+4. **Sierra τ-knowledge blog** — Referenced as primary source for tau-knowledge.md updates. Key finding: strongest model (GPT-5.5 xhigh reasoning) gets 37.4% pass^1 on realistic customer service tasks with full documentation access — agent capabilities still far from production-ready for knowledge work.
+
+### Other articles saved (not AI-relevant):
+- pluralistic.net: "vibe governance" — Cory Doctorow on AI solipsism and fascist paradigm (noted, pluralistic-net.md entity updated)
+- danieldelaney.net: "Ideal failures" — UI design philosophy (Daniel De Laney entity exists)
+- nesbitt.io: "Showing Our Work" — Open source dependency validation research
+- susam.net: commenting guidelines
+- shkspr.mobi: SVG sparklines
+- troyhunt.com: Have I Been Pwned Bahamian Government
+- rachelbythebay.com: HTML generation
+- devblogs.microsoft.com/oldnewthing: Windows keyboard layout hang
+- dfarq.homeip.net: Kevin O'Leary Shark Tank
+- buttondown.com/hillelwayne: measurement units
+- tedium.co: BuzzFeed Byron Allen analysis
+- seangoedecke.com: space AI datacenters cooling
+- dynomight.net: slide decks
+- idiallo.com: "Software Engineers are Obsolete"
+- simonwillison.net: Datasette blog launch + Boris Mann quote
+- evanhahn.com: Firefox extension (not saved — not AI-relevant)
+
+- Updated: tau-knowledge.md, codex.md, openai.md, pluralistic-net.md
+- Created: openai-tanstack-supply-chain-2026.md
+- Updated: index.md (+1 concept, +2 entity references)
+- Updated: log.md
+
 ## [2026-05-14] ingest | Show Us Your Agent Skills Ep.1 + Agentic Engineering article
 - Ingested Hugo Bowne-Anderson's Substack article "Agentic Engineering and the Lost Art of Verification" (2026-05-12)
 - Ingested YouTube transcript for "Show Us Your (Agent) Skills Episode 1" with Wes McKinney, Jeremiah Lowin, Randy Olson (2026-05-08)
