@@ -12,6 +12,12 @@
 - Created concept page: concepts/agentic-engineering.md — from vibe coding to verified agent workflows, generator-evaluator patterns
 - Updated index.md with new entries
 
+## [2026-05-14] create | comparisons/open-harness-vs-agent-framework + enrich concepts/agent-harness
+- Saved raw analysis: `raw/articles/2026-05-14_kzinmr_open-harness-vs-agent-framework.md` — kzinmr による Open Harness 対 Agent Framework/SDK の包括比較レポート
+- Created comparison page: `comparisons/open-harness-vs-agent-framework.md` (16 pages) — Open Harness（OpenClaw, Hermes Agent, OpenCode, Pi）と Agent Framework/Runtime（Claude Agent SDK, OpenAI Agents SDK, Google ADK, Strands Agents, LangGraph, Pydantic AI）の本質的差異を投資対象として整理。Operator Workbench Readiness vs Untrusted Product Runtime Readiness の2軸評価、4種類のロックイン分析、推奨分離アーキテクチャ、実務選定指針を含む
+- Enriched `concepts/agent-harness.md` — 「Agent Harness と Agent Framework/SDK の本質的差異」セクション追加（2つの投資対象、Operator Workbench vs Product Runtimeの2軸評価、4種類のロックイン、推奨分離アーキテクチャ、選定指針）
+- Updated index.md: Comparisons 15→16, added new entry
+
 ## [2026-05-13] rotate | Log rotated (638 lines → log-2026.md)
 - Previous log archived to `log-2026.md` for historical reference
 

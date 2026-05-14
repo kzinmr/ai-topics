@@ -928,7 +928,7 @@
 
 ## Events (2 pages)
 
-## Comparisons (15 pages)
+## Comparisons (16 pages)
 
 - [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
 - [[comparisons/ai-agent-platforms]] — Ai Agent Platforms
@@ -944,6 +944,7 @@
 - [[comparisons/bing-api-alternatives-2026]] — Bing Search API alternatives comparison: Parallel Search, Exa AI, SerpAPI, Tavily (2026)
 - [[comparisons/google-alerts-alternatives-2026]] — Google Alerts alternatives for developers & marketers: 10 tools compared (2026)
 - [[comparisons/open-source-rl-libraries-comparison]] — Open Source RL Libraries比較ポータル: TRL/Verl/OpenRLHF/RAGEN/NeMo-RL/ROLL/AReaL/slime/Verifiers/SkyRLの10ライブラリ比較。Anyscale 2025。
+- [[comparisons/open-harness-vs-agent-framework]] — Open Harness 対 Agent Framework/SDK — 投資対象としての本質的差異（2026-05-14）
 
 ## Queries (0 pages)
 
