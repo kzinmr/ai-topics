@@ -1,3 +1,25 @@
+## [2026-05-14] create | Concept: Prime-RL Post-Training for Subagents (Ramp Labs Fast Ask)
+
+### Pages Created
+- `concepts/prime-rl-post-training.md` — Ramp Labs Fast Ask case study: RL post-training (GRPO) for specialized retrieval subagents using Qwen3.5-35B-A3B + Prime Intellect platform. Beats Claude Opus 4.6 by 4pp at Haiku 4.5 latency. Covers adversarial workbook design, reward function design, async off-policy RL.
+
+### Pages Updated
+- `wiki/index.md` — Added prime-rl-post-training to Concepts section.
+
+### Raw Source
+- `raw/articles/2026-05-07_RampLabs_building-fast-accurate-agents-with-prime-rl-post-t.md`
+
+## [2026-05-14] create | Concept: The 2026 AI Engineer Roadmap
+
+### Pages Created
+- `concepts/ai-engineer-roadmap-2026.md` — The 2026 AI Engineer Roadmap by Rohit (@rohit4verse): 5 production-grade projects to bridge the $150K gap between prompt engineers and systems architects.
+
+### Pages Updated
+- `wiki/index.md` — Added ai-engineer-roadmap-2026 to Concepts section.
+
+### Raw Source
+- `raw/articles/2026-01-09_rohit4verse_the-2026-ai-engineer-roadmap.md`
+
 ## [2026-05-14] ingest | X Bookmarks: ntn (Notion CLI) + Codex Memory Pipeline
 
 ### Pages Created

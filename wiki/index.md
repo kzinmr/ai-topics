@@ -758,6 +758,7 @@
 - [[concepts/mit-encompass]] — MIT CSAIL framework for AI agent search with automatic backtracking and parallel cloning, 15-40% accuracy boost.
 - [[concepts/moe-training-noumena-methodology]] — Noumena Network's 12-post MoE training research program. Speedrun loop, eval-gated autoresearch, routing collapse ≠ quality collapse, per-expert LR tuning, RDEP.
 - [[concepts/moloch-multipolar-trap]] — Scott Alexander's concept: competitive dynamics that force all agents to sacrifice shared values, resulting in outcomes everyone hates but no one can escape. 14 real-world examples (prisoner's dilemma, capitalism, arms races, cancer). Central to AI existential risk discourse — technology erodes the four restraining factors (excess resources, physical limits, utility maximization, coordination), making superintelligence the ultimate multipolar trap.
+- [[concepts/prime-rl-post-training]] — Prime-RL Post-Training for Subagents: Ramp Labs Fast Ask case study — RL post-training (GRPO) for specialized retrieval subagents using Qwen3.5 + Prime Intellect. Beats Opus 4.6 at Haiku latency.
 - [[concepts/programmatic-tool-calling]] — Programmatic Tool Calling — LLM Writing Code that Calls Tools
 - [[concepts/prompt-caching]] — How prompt caching works under the hood: paged attention, automatic prefix caching (APC), KV-cache reuse. Practical tips for maximizing cache hits with LLM providers. Based on vLLM internals.
 - [[concepts/pydantic-ai-harness]] — pydantic-ai-harness — Official Capability Library for Pydantic AI
@@ -787,6 +788,7 @@
 - [[concepts/agent-harness]] — An agent harness is the infrastructure layer that sits between an LLM API and the agent's execution environment. It manages tool routing, context management, session lifecycle, and error recovery. ...
 - [[concepts/ai-benchmarks-evals-overview]] — Florian Brand (@xeophon)によるAIベンチマーク・評価指標18部構成シリーズの包括的まとめ。GPQA、LiveCodeBench、Aider Polyglot、MMLU Pro、MMMU、MRCR、SimpleQA、Vibe-Eval、BFCL V3、IFEval、ChartQA、Tau-Bench、HLE、CountBenchQA、ARC-AGI等の設計思想・データソーシング・強みと弱点を解説。
 - [[concepts/ai-delegation-patterns]] — AI delegation patterns (Cyborgs/Centaurs/Self-Automators), process-based delegation, orchestration vs chat. BCG/Harvard/MIT research on human-AI collaboration.
+- [[concepts/ai-engineer-roadmap-2026]] — The 2026 AI Engineer Roadmap by Rohit (@rohit4verse): 5 production-grade projects (SLM mobile app → self-improving coding agent → multimodal video editor → personal Life OS → enterprise workflow agent) to bridge the $150K gap between prompt engineers and systems architects.
 - [[concepts/ai-operating-model]] — IBM's four-system blueprint for enterprise AI: Agents + Data + Automation + Hybrid. Coordinated, governed, auditable agent ecosystems at scale. Announced Think 2026.
 - [[comparisons/agent-harnesses]] — 8大AIエージェントハーネス（Claude Code/OpenCode/Pi/Codex/Copilot CLI/Droid/OpenClaw/Hermes Agent）の包括的比較ポータル。機能比較表、モデル互換性マトリクス、価格比較、ユースケースレコメンデーション、Harness Effect分析。
 - [[concepts/agent-harnesses]] — > **Core Thesis:** The less you build in your agent framework, the more it works. All the value is in the RL'd model, not your 10,000 lines of abstractions.

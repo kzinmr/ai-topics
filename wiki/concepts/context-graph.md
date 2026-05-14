@@ -2,7 +2,7 @@
 title: "Context Graph"
 tags: [context-management, methodology]
 created: 2026-04-20
-updated: 2026-04-24
+updated: 2026-05-14
 type: concept
 ---
 
@@ -167,6 +167,44 @@ As decision traces accumulate, enterprises need to monitor, debug, and evaluate 
 - **Execution path advantage** — Being in the orchestration layer at decision time is structurally different from bolting on governance post-hoc
 - **Identification of "glue functions" as greenfield** — RevOps, DevOps, etc. as indicators of unowned cross-functional workflows is a sharp observation
 
+## Operational Context vs. Decision Context (Graphlit's Two-Layer Model)
+
+[Kirk Marple](https://x.com/KirkMarple/status/2003944353342149021) of [Graphlit](https://graphlit.com) extends the Foundation Capital thesis by distinguishing two layers:
+
+### Layer 1: Operational Context — The Foundation
+
+Before capturing decision traces, agents need to understand organizational reality:
+
+- **Identity resolution** — Is "Sarah Chen" in the email the same person as the Slack mention and meeting transcript? Agents can't reason across fragmented entity references.
+- **Ownership and relationships** — Who owns the Acme account? Which engineer is responsible for the payments service? These relationships exist in people's heads but are rarely modeled as queryable data.
+- **Temporal state** — What did the contract say when the decision was made? Agents need to understand state evolution, not just current snapshots.
+- **Cross-system synthesis** — The support lead checks CRM, sees Zendesk escalations, reads a Slack thread, and decides to escalate. That synthesis happens in their head—no system captures it.
+
+### Layer 2: Decision Context — Built on Top
+
+Once operational context exists, you can build the decision layer:
+- Decision traces: what inputs, which policy, what exception, who approved
+- Precedent as artifact: "How did we handle this before?"
+- Full auditability with preserved context
+
+**Key insight**: "You can't capture meaningful decision traces if agents don't know who the actors are, how entities relate, or what state the world was in when the decision occurred." Most enterprises lack both layers.
+
+### Why RAG and AI Memory Fall Short
+
+- **RAG** retrieves text chunks, not organizational understanding. It stores similarity, not meaning.
+- **AI memory platforms** store chat transcripts, not organizational reality. "User discussed Acme pricing" ≠ understanding Acme as an account with relationship history, stakeholder map, and decision trail.
+
+Organizational knowledge is a **graph** (people → accounts → projects → decisions → outcomes, evolving over time), not a document collection. Without that graph, agents are context-blind.
+
+### Decision Trace Standards
+
+Marple draws a parallel to OpenTelemetry: if decision traces become a new category of system of record, the schema can't be proprietary. Graphlit models entities using Schema.org and JSON-LD as canonical representations—positioning for industry-standard decision trace formats.
+
+### Source
+
+- **Kirk Marple, "The Context Layer AI Agents Actually Need"** — X Article, December 24, 2025 ([raw article](raw/articles/2025-12-24_KirkMarple_the-context-layer-ai-agents-actually-need.md))
+- Graphlit platform: https://graphlit.com
+
 ### Where to Be Skeptical
 
 - **Incumbent response underweighted** — Salesforce (Agentforce), ServiceNow (Now Assist), Snowflake (Cortex Agents), Databricks (Agent Bricks) are all actively moving into agent runtime, policy, and data access. They're not standing still
@@ -185,3 +223,4 @@ As decision traces accumulate, enterprises need to monitor, debug, and evaluate 
 
 - [Foundation Capital: AI's Trillion-Dollar Opportunity: Context Graphs](https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity) (December 22, 2025)
 - [PlayerZero: Context Graphs — Building Engineering World Models for the Age of AI Agents](https://playerzero.ai/resources/context-graphs-building-engineering-world-models-for-the-age-of-ai-agents)
+- [Kirk Marple (Graphlit): The Context Layer AI Agents Actually Need](https://x.com/KirkMarple/status/2003944353342149021) — X Article, December 24, 2025 ([raw](raw/articles/2025-12-24_KirkMarple_the-context-layer-ai-agents-actually-need.md))
