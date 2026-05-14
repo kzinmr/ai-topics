@@ -92,3 +92,22 @@
 - `~/wiki/entities/andrew-nesbitt.md` — updated (265 lines, up from 274 with duplicates)
 - `~/wiki/log.md` — updated
 - `~/wiki/index.md` — no change (entry already exists)
+
+## [2026-05-14] ingest | NVIDIA Vera Rubin platform technical blog
+- Saved raw article: `raw/articles/2026-01-05_nvidia_vera-rubin-platform.md` (92,829 chars, 1,319 lines)
+- Source: https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/
+- Author: Kyle Aubrey, published 2026-01-05, updated 2026-03-16
+
+## [2026-05-14] create | concepts/nvidia-vera-rubin
+- Created comprehensive concept page: `concepts/nvidia-vera-rubin.md` (12,989 chars)
+- Covers: 6-chip architecture (Vera CPU, Rubin GPU, NVLink 6, ConnectX-9, BlueField-4 DPU, Spectrum-6), extreme co-design philosophy, bottleneck shift from FLOPS → bandwidth/interconnect/integration, ICMS KV-cache tier, NVL72 rack → DGX SuperPOD scaling, software stack, RAS, security, energy efficiency, performance (10T MoE training, reasoning inference)
+
+## [2026-05-14] update | entities/nvidia
+- Updated `entities/nvidia.md`: Added Vera Rubin Platform section, added source reference, added wikilink to [[concepts/nvidia-vera-rubin]], bumped `updated` date
+
+### Files affected
+- `~/wiki/raw/articles/2026-01-05_nvidia_vera-rubin-platform.md` — new (1328 lines)
+- `~/wiki/concepts/nvidia-vera-rubin.md` — new
+- `~/wiki/entities/nvidia.md` — updated
+- `~/wiki/index.md` — updated (added nvidia-vera-rubin entry)
+- `~/wiki/log.md` — updated
