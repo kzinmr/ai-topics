@@ -19,12 +19,14 @@ sources:
   - "raw/articles/2026-04-28_15-hermes-agent-features.md"
   - "https://x.com/i/article/2045935785661349956"
   - "raw/articles/2026-05-13_nvidia_rtx-ai-garage-hermes-agent-dgx-spark.md"
+  - "raw/articles/2026-05-06_kilo_hermes-vs-openclaw-when-to-reach.md"
 related:
   - "[[concepts/harness-engineering]]"
   - "[[concepts/hermes-agent-use-cases]]"
   - "[[concepts/polymarket-trading-agents]]"
   - "[[concepts/nvidia-rtx-ai-garage]]"
   - "[[entities/openclaw]]"
+  - "[[comparisons/hermes-vs-openclaw-architecture]]"
   - "[[entities/qwen]]"
   - "[[entities/nvidia-dgx-spark]]"
   - "[[nous-research]]"
@@ -125,6 +127,34 @@ The article "15 Hermes Agent features you've never touched" (2791 bookmarks, 913
 - Entity and concept wiki management
 - Multi-agent orchestration patterns
 - Filesystem and terminal integration
+
+## Execution Specialist Role (Dual-Agent Architecture)
+
+Hermes Agent is increasingly used as an **execution specialist** in a dual-agent architecture where OpenClaw serves as the orchestrator and Hermes handles fast, repeatable task execution. They communicate via the **Agent Client Protocol (ACP)**.
+
+This architecture pattern is validated by:
+- **Kilo blog analysis** (Brendan O'Leary, May 2026): "OpenClaw as orchestrator (planning, decomposition, multi-step coordination, scheduling) and Hermes as execution specialist (fast, repeatable task loops)"
+- **Kilo Reddit analysis** (1,300+ comments): ~20% of users run both tools together with this pattern
+- **popularaitools.ai**: "Hermes is significantly faster than OpenClaw on the same model and more lightweight"
+
+### Why Hermes as Execution Specialist
+
+| Strength | Mechanism |
+|----------|-----------|
+| **Speed** | "Noticeably faster" than OpenClaw on same model — lightweight agent loop |
+| **Learning loop** | Self-improving skills get faster/more accurate on repeatable task types |
+| **Sandbox backends** | 5 isolated environments (Local, Docker, SSH, Singularity, Modal) |
+| **Subagent delegation** | `delegate_task` spawns child agents with isolated contexts for parallel work |
+| **Checkpoint/rollback** | Filesystem snapshots before file operations; `/rollback` on failure |
+| **execute_code sandbox** | Mechanical pipelines separated from reasoning-heavy subagent delegation |
+
+### ACP Communication
+
+Hermes communicates with OpenClaw via ACP (Agent Client Protocol), the open standard for agent-to-agent communication. OpenClaw spawns Hermes as an ACP session via `sessions_spawn({ runtime: "acp", agentId: "hermes" })`, treating Hermes as an interchangeable execution backend.
+
+**Key limitation:** Hermes's self-evaluation always passes, so external validation is needed. The dual-agent architecture mitigates this — OpenClaw (orchestrator) validates Hermes (executor) output quality.
+
+See [[comparisons/hermes-vs-openclaw-architecture]] for the full comparison.
 
 ## Sources
 - [Hermes Agent: What People Are Actually Using It For](https://x.com/i/article/2045935785661349956) (2026-04-26, X article) — usage patterns from Reddit/X/YouTube

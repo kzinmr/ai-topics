@@ -225,7 +225,7 @@
 - [[entities/hamel-husain]] — **Role** | Independent Consultant (Parlance Labs), R&D at AnswerAI, Scout at Bain Capital |
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM (founded 2022), built on GPT-3.5. Evolved toward agentic personal OS.
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
-- [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawから移行中のユーザーが増加。
+- [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawのorchestratorとのACP連携によるdual-agent architectureでexecution specialistとして機能。→ [[comparisons/hermes-vs-openclaw-architecture]]
 - [[entities/hoeem]] — X/Twitter クリエイター（@hooeem, 169K+ フォロワー）。Claude Certified Architect 試験の全5ドメインを解説したX Articleが60Kブックマーク。Claude Code・Agent SDK・MCPの実践的教育コンテンツを発信。
 - [[entities/hillel-wayne]] — **Blog** | hillelwayne.com |
 - [[entities/hugging-face]] — **The GitHub of AI** — the central open-source infrastructure layer for machine learning. Platform for sharing, discovering, and deploying ML models, datasets, and demos.
@@ -344,7 +344,7 @@
 - [[entities/openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
 - [[entities/openai-codex]] — OpenAIのAIコーディングエージェント。CLIベースの完全OSS。モデルはgpt-5.3-codex。自律実行、コンパクション、Windows対応。プロンプト設計は[[concepts/codex-prompting]]参照。
 - [[entities/openai]] — **Type** | AI Research & Product Company |
-- [[entities/openclaw]] — Open-source always-on AI assistant framework created by **Peter Steinberger** (former PSPDFKit CEO). Deploys autonomous agents that run continuously, self-evolve through interaction, and integrate ...
+- [[entities/openclaw]] — Open-source always-on AI agent framework created by **Peter Steinberger**。Gateway-first architectureでmulti-agent routing、ACP sub-agent spawning、cron/webhook schedulingを備え、orchestratorとしてHermes Agent等のexecution specialistを統括。→ [[comparisons/hermes-vs-openclaw-architecture]]
 - [[entities/opencode]] — 最も人気のあるオープンソースAIコーディングエージェント。155K GitHub Stars、MITライセンス、850+コントリビューター。75+ LLMプロバイダ対応、マルチサーフェス（TUI/Desktop/IDE）。Plan/Build/Generalの3エージェント、LSP統合、GitHubネイティブ統合。
 - [[entities/openrouter]] — Unified API gateway for 300+ LLMs from multiple providers. Published the State of AI 2025 study analyzing 100T tokens of real-world LLM usage.
 - [[entities/overreacted-io]] — **URL:** https://overreacted.io
@@ -949,7 +949,7 @@
 - [[comparisons/evals-skills]] — Evals Skills
 - [[comparisons/frontier-models-2026-04]] — Frontier Models 2026 04
 - [[comparisons/gpt-image-2-vs-nano-banana-2]] — Gpt Image 2 Vs Nano Banana 2
-- [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Vs Openclaw Architecture
+- [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison。elvisの9時間ソースコード分析 + OpenAI/Anthropicドキュメント分析 + Kilo blog (Brendan O'Leary, 2026-05)。Dual-Agent Architecture (Orchestrator + Execution Specialist via ACP) セクション追加。
 - [[comparisons/llm-integration-patterns]] — Llm Integration Patterns
 - [[comparisons/local-llm-models-april-2026]] — Local Llm Models April 2026
 - [[comparisons/bing-api-alternatives-2026]] — Bing Search API alternatives comparison: Parallel Search, Exa AI, SerpAPI, Tavily (2026)

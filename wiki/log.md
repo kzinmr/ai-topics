@@ -1,3 +1,21 @@
+## [2026-05-14] ingest + update | Kilo Blog: Hermes vs OpenClaw Comparison (Orchestrator + Execution Specialist Architecture)
+
+### Pages Updated
+- `comparisons/hermes-vs-openclaw-architecture.md` — Added comprehensive "Dual-Agent Architecture: Orchestrator + Execution Specialist" section with evidence from 8+ sources: Kilo blog/Reddit analysis, OpenClaw architecture docs, ACP protocol docs, community consensus (~20% running both)
+- `entities/openclaw.md` — Added "Orchestration Capabilities" section: gateway-first hub-and-spoke architecture, multi-agent routing, ACP sub-agent spawning, cron/webhook scheduling
+- `entities/hermes-agent.md` — Added "Execution Specialist Role (Dual-Agent Architecture)" section: speed advantage, learning loop, sandbox backends, ACP communication with OpenClaw
+- `wiki/index.md` — Updated descriptions for all three pages
+
+### Raw Source
+- `raw/articles/2026-05-06_kilo_hermes-vs-openclaw-when-to-reach.md` — Brendan O'Leary, Kilo Blog (May 6, 2026)
+
+### Key Finding
+Evidence strongly supports OpenClaw as orchestrator and Hermes as execution specialist:
+- OpenClaw's gateway-first architecture = central control plane, multi-agent routing, ACP sub-agent spawning (`sessions_spawn({runtime:"acp"})`), cron/webhook scheduling, agent-to-agent communication
+- Hermes's learning loop + sandbox backends + checkpoint/rollback + speed advantage = ideal execution specialist
+- ACP protocol = standardized bridge (akin to LSP for agents)
+- Community validation: ~20% of users already run both (Kilo Reddit analysis, 1,300+ comments)
+
 ## [2026-05-14] create | Concept: Prime-RL Post-Training for Subagents (Ramp Labs Fast Ask)
 
 ### Pages Created

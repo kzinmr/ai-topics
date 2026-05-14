@@ -3,14 +3,17 @@ title: OpenClaw
 type: entity
 aliases: [openclaw, open-claw, peter-steinberger-openclaw]
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-05-14
 status: L2
 sources:
   - https://github.com/NVIDIA/OpenClaw
   - https://build.nvidia.com/spark
   - https://nemoclawai.io/blog/getting-started-nemoclaw-dgx-spark/
   - https://docs.nvidia.com/nemoclaw/latest/get-started/quickstart.html
-tags: [entity, framework, local-llm, open-source, agent-communication]
+  - https://blog.kilo.ai/p/hermes-vs-openclaw-when-to-reach
+  - https://kilo.ai/openclaw/vs-hermes
+  - https://docs.openclaw.ai/tools/acp-agents
+tags: [entity, framework, local-llm, open-source, agent-communication, agent-architecture, orchestration]
 ---
 
 # OpenClaw
@@ -152,6 +155,32 @@ Agent reads agent_tools.py → writes new tool class → runtime detects via st_
 ```
 
 完全な解説は [[concepts/agents-that-build-themselves]] を参照。
+
+## Orchestration Capabilities
+
+OpenClaw is fundamentally a **gateway-first architecture** — the Gateway serves as the single control plane for routing, sessions, and channel connections. This design makes it naturally suited as an **orchestrator** in multi-agent architectures. The Kilo blog analysis (Brendan O'Leary, May 2026) and community consensus confirm OpenClaw's role as orchestrator when paired with execution specialists like Hermes Agent.
+
+### Core Orchestration Mechanisms
+
+| Mechanism | Description |
+|-----------|-------------|
+| **Multi-agent routing** | Isolated agent instances with separate workspaces, models, and personas through one Gateway |
+| **ACP sub-agent spawning** | `sessions_spawn({ runtime: "acp" })` launches external harnesses (Claude Code, Codex, Gemini CLI, Pi, Hermes Agent) as interchangeable execution backends |
+| **Sub-agent lifecycle** | `/acp spawn`, `/acp steer`, `/acp cancel`, `/acp close`, `/acp status` — full orchestration control |
+| **Cron scheduling** | Built-in deterministic job scheduling for repeatable coordination |
+| **Webhook triggers** | External event-driven agent activation |
+| **Agent-to-agent communication** | Session tools for inter-agent messaging |
+| **Completion announce channel** | Parent-owned ACP sessions with structured result channel back to parent |
+
+### Hub-and-Spoke Architecture
+
+> "OpenClaw is not a chatbot wrapper around an API for AI models. It's an **operating system for AI agents**. OpenClaw treats AI as an infrastructure problem: sessions, memory, tool sandboxing, access control, and orchestration." — [OpenClaw Architecture Overview](https://ppaolo.substack.com/p/openclaw-system-architecture-overview)
+
+### Orchestrator + Execution Specialist Pattern
+
+A growing architecture pattern (~20% of users in Kilo Reddit analysis) treats OpenClaw as **orchestrator** (planning, decomposition, multi-step coordination, scheduling) and Hermes Agent as **execution specialist** (fast, repeatable task loops). They communicate via the **Agent Client Protocol (ACP)** — a standardized protocol akin to LSP for code editors.
+
+See [[comparisons/hermes-vs-openclaw-architecture]] for the full comparison.
 
 ## Lifecycle Management
 
