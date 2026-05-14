@@ -290,4 +290,24 @@
 - `~/wiki/SCHEMA.md` — added `prefect` to tag taxonomy
 - `~/wiki/log.md` — updated
 
+## [2026-05-14] ingest | NVIDIA RTX AI Garage: Hermes Agent on DGX Spark
 
+### Ingested
+- Raw article: `wiki/raw/articles/2026-05-13_nvidia_rtx-ai-garage-hermes-agent-dgx-spark.md`
+- NVIDIA blog post (May 13, 2026) by Abhishek Gore: Hermes Agent endorsed as RTX AI Garage's centerpiece agent framework
+- Key data points: 140K+ GitHub stars, #1 on OpenRouter, Qwen 3.6 model recommendation, "Same model, better results" harness engineering claim
+
+### Entities enriched
+- `entities/hermes-agent.md` — Added "Milestones (May 2026)" section (140K stars, OpenRouter #1, NVIDIA endorsement), "Harness Engineering: Same Model Better Results" subsection, "NVIDIA DGX Spark 統合" section, updated sources and related links
+- `entities/nvidia-dgx-spark.md` — Added "Hermes Agent Integration" section (5 synergy points: always-on, large model compatibility, Qwen 3.6 optimization, official playbook, harness engineering), updated timeline with May 2026 milestone, added related links
+
+### Concepts created
+- `concepts/nvidia-rtx-ai-garage.md` — New concept page (~125 lines): NVIDIA's program for curating/optimizing AI tools on RTX hardware. Covers positioning (curation, playbooks, optimization verification, hands-on sessions), recommended agents (Hermes, NemoClaw, OpenClaw), supported models/optimizations, added value over DIY setup (model selection, NVFP4 optimization, hardware-software integration verification), information channels
+
+### Files affected
+- `wiki/raw/articles/2026-05-13_nvidia_rtx-ai-garage-hermes-agent-dgx-spark.md` — new
+- `wiki/entities/hermes-agent.md` — enriched (added Milestones, Harness Engineering, DGX Spark sections)
+- `wiki/entities/nvidia-dgx-spark.md` — enriched (added Hermes Agent Integration section, timeline entry)
+- `wiki/concepts/nvidia-rtx-ai-garage.md` — new
+- `wiki/index.md` — updated (added nvidia-rtx-ai-garage concept entry)
+- `wiki/log.md` — updated

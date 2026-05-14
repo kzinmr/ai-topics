@@ -3,7 +3,7 @@ title: NVIDIA DGX Spark
 type: entity
 aliases: [dgx-spark, project-digits, gb10-spark, nvidia-dgx-spark]
 created: 2026-04-15
-updated: 2026-05-08
+updated: 2026-05-14
 status: L2
 sources:
   - https://www.nvidia.com/en-us/products/workstations/dgx-spark
@@ -11,6 +11,7 @@ sources:
   - https://build.nvidia.com/spark
   - https://github.com/NVIDIA/dgx-spark-playbooks
   - "raw/articles/2026-05-07_x-andrewchen-local-ai-home-lab-state.md"
+  - "raw/articles/2026-05-13_nvidia_rtx-ai-garage-hermes-agent-dgx-spark.md"
 tags: [entity, hardware, local-llm, nvidia, inference]
 ---
 
@@ -109,6 +110,25 @@ DGX Spark is the **reference platform** for NemoClaw — NVIDIA's secure agent d
 
 See [[concepts/local-llm/server-dgx-spark]] for the complete setup guide.
 
+## Hermes Agent Integration
+
+DGX Spark is positioned by NVIDIA as the **ideal companion for Hermes Agent** — a compact, efficient standalone machine built for sustained, all-day agentic workflows. In NVIDIA's May 2026 RTX AI Garage feature, the company endorsed Hermes as the latest breakthrough in open source agentic frameworks.
+
+**Key synergy points:**
+
+- **Always-On Agent**: DGX Sparkの24/7連続稼働設計が、Hermesの常時実行モデル（cron, gateway, self-improving loop）と整合
+- **Large Model Compatibility**: 128GB unified memoryで120B MoEモデル（Hermesの高度な推論タスクに必要）を終日実行可能
+- **Qwen 3.6 Optimization**: Qwen 3.6 35B（20GBで120B級知能）がDGX Spark上で推奨モデル。Qwen 3.6 27B（400B級に匹敵）も高性能
+- **Official Playbook**: NVIDIA公式の[Hermes DGX Spark playbook](https://github.com/NVIDIA/dgx-spark-playbooks)でセットアップ手順を提供
+- **Harness Engineering**: NVIDIAブログで「同一モデルでHermesが優れた結果を出す」ことが明示 — active orchestration layerとしてのフレームワーク設計がDGX Sparkのハードウェア性能を最大限活用
+
+**Recommended local runtimes** with Hermes on DGX Spark:
+- **llama.cpp** — CPU/GPU hybrid inference
+- **Ollama** — 最もシンプルなパス（Hermesがout of the boxでサポート）
+- **LM Studio** — GUIベースのモデル管理（Hermesがout of the boxでサポート）
+
+→ [[entities/hermes-agent]], [[concepts/harness-engineering]], [[concepts/nvidia-rtx-ai-garage]]
+
 ## Market Positioning
 
 | Aspect | DGX Spark | Consumer GPU (RTX 4090) | Cloud API |
@@ -130,6 +150,7 @@ See [[concepts/local-llm/server-dgx-spark]] for the complete setup guide.
 | Feb 2026 | AI Photo Booth demo at CES (Reachy Mini + Hugging Face) |
 | Mar 2026 | NemoClaw alpha released with DGX Spark support |
 | Apr 2026 | DGX Spark Playbooks repo reaches 40+ recipes |
+| May 2026 | NVIDIA RTX AI Garage features Hermes Agent on DGX Spark |
 
 ## Real-world Practitioner Perspectives
 
@@ -150,8 +171,10 @@ Full context: → [[concepts/local-ai]], [[entities/andrew-chen]]
 ## Related
 
 - [[entities/nvidia-nemoclaw]] — NemoClaw secure agent framework
+- [[entities/hermes-agent]] — Hermes Agent, self-improving AI agent by Nous Research
 - [[concepts/local-ai]] — Local AI state snapshot (May 2026)
 - [[entities/andrew-chen]] — a16z GP, DGX Spark practitioner perspective
 - [[concepts/local-llm/server-dgx-spark]] — Setup guide for local LLM server
 - [[concepts/local-llm]] — Local LLM inference overview
+- [[concepts/nvidia-rtx-ai-garage]] — NVIDIA's RTX AI Garage program
 - [[entities/jensen-huang]] — NVIDIA CEO, physical AI advocate

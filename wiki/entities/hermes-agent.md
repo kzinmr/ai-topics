@@ -13,16 +13,20 @@ tags:
 status: complete
 description: "Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawから移行中のユーザーが増加。"
 created: 2026-04-27
-updated: 2026-05-09
+updated: 2026-05-14
 sources:
   - "https://x.com/i/article/2045080054917476451"
   - "raw/articles/2026-04-28_15-hermes-agent-features.md"
   - "https://x.com/i/article/2045935785661349956"
+  - "raw/articles/2026-05-13_nvidia_rtx-ai-garage-hermes-agent-dgx-spark.md"
 related:
   - "[[concepts/harness-engineering]]"
   - "[[concepts/hermes-agent-use-cases]]"
   - "[[concepts/polymarket-trading-agents]]"
+  - "[[concepts/nvidia-rtx-ai-garage]]"
   - "[[entities/openclaw]]"
+  - "[[entities/qwen]]"
+  - "[[entities/nvidia-dgx-spark]]"
   - "[[nous-research]]"
 ---
 
@@ -81,6 +85,26 @@ related:
 | Self-improvement | なし | あり（使用ほど賢くなる） |
 | Platform統合 | 50+（広範） | 15+（主要すべて） |
 | セキュリティ | 標準 | 強い |
+
+## Milestones (May 2026)
+
+- **140,000+ GitHub Stars**: 3ヶ月未満で達成（2026年5月時点）
+- **Most Used Agent on OpenRouter**: OpenRouterのアプリ利用統計で世界1位（2026年5月第2週）
+- **NVIDIA RTX AI Garage Endorsement**: NVIDIA公式ブログでHermes AgentがRTX AI Garageプログラムの中心的エージェントフレームワークとして紹介（2026-05-13）
+
+### Harness Engineering: "Same Model, Better Results"
+
+NVIDIAブログで明示的に言及された重要な特徴：**同一モデルを異なるフレームワークで比較した際、Hermesが一貫して優れた結果を出す**。これはHermesが単なるthin wrapperではなく、active orchestration layerとして機能するため。→ [[concepts/harness-engineering]]
+
+### NVIDIA DGX Spark 統合
+
+DGX SparkはHermes Agentの理想的なハードウェアとして位置づけられている：
+- **128GB unified memory**で120BクラスのMoEモデルを終日稼働
+- **Qwen 3.6 35B**（20GBメモリで120B級の知能）がDGX Spark上で推奨
+- **Hermes DGX Spark Playbook**: NVIDIA公式のセットアップガイドが利用可能
+- 常時稼働エージェント（always-on agent）としての設計がDGX Sparkの24/7運用と整合
+
+→ [[entities/nvidia-dgx-spark]], [[concepts/nvidia-rtx-ai-garage]]
 
 ## 実際の使用例（Reddit/X/YouTube調査）
 

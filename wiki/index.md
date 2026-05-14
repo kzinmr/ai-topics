@@ -821,6 +821,7 @@
 - [[concepts/notion-mcp]] — Notion MCP: official Notion MCP server (https://mcp.notion.com/mcp). Setup guides for Claude Code, Cursor, VS Code, Windsurf, ChatGPT, Codex. OAuth 2.0 authentication.
 - [[concepts/nemo-rl]] — NeMo-RL (NVIDIA): クリーンなインターフェースとモジュラー設計のRLフレームワーク。マルチターンRL対応、SFT+DPO+GRPO、FSDP/Megatron.
 - [[concepts/nvidia-dynamo]] — NVIDIA Dynamo: agentic codingワークロード向け推論アーキテクチャ。KVキャッシュ最適化、ストリーミングツールディスパッチ、マルチターン推論解析。Claude Code/Codex/OpenClaw対応。TTFT 5x改善。
+- [[concepts/nvidia-rtx-ai-garage]] — NVIDIA RTX AI Garage: RTXハードウェア向けAIツール・モデル・エージェントの最適化・キュレーション・推奨プログラム。Hermes Agent、NemoClaw、OpenClaw等のエージェントフレームワークをRTX PC/ワークステーション/DGX Spark向けに検証・推奨。NVFP4量子化、Playbookレシピ、ハンズオンセッションを提供。
 - [[concepts/nvidia-vera-rubin]] — NVIDIA Vera Rubin platform: ラックスケールAIスーパーコンピュータ。6チップ（GPU/CPU/Switch/NIC/DPU/Fabric）のエクストリーム共同設計。ボトルネックがFLOPSから帯域幅・相互接続・システム統合へシフト。NVLink 6、BlueField-4 DPU、ICMS（KV-cache専用G3.5層）。10T MoEをBlackwellの1/4 GPUで訓練、推論10xコスト削減。
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
