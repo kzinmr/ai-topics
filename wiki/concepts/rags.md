@@ -8,9 +8,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [RAG, Retrieval-Augmented Generation, RAG Architecture, GraphRAG]
-related: [[concepts/agentic-rag]], [[concepts/agentic-alternative-to-graphrag]], [[concepts/context-engineering]], [[concepts/knowledge-graph-memory-agents]]
 sources: [https://www.glean.com/blog/triaging-the-future-of-retrieval-augmented-generation, https://arxiv.org/abs/2504.17472]
 ---
+
 
 # RAGs (Retrieval-Augmented Generation)
 

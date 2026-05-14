@@ -10,12 +10,6 @@ tags:
   - ai-skeptic
   - marketing
   - company
-- person
-- blogger
-- tech-criticism
-- ai-skeptic
-- marketing
-- venture-capital
 aliases:
 - wheresyoured.at
 - ed-zitron

@@ -7,9 +7,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [Data Engineering, Data Pipeline, ETL, ELT, Modern Data Stack]
-related: [[concepts/cloud-data-warehouses]], [[concepts/event-driven-architecture]], [[concepts/ai-observability]], [[concepts/durable-execution]]
 sources: [https://www.dagster.io/, https://airbyte.com/, https://www.dbtlabs.com/]
 ---
+
 
 # Data Engineering
 

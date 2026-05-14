@@ -1,4 +1,5 @@
 ---
+
 title: Browserbase
 type: entity
 aliases:
@@ -11,17 +12,12 @@ tags:
   - developer-tooling
   - browser-agent
   - infrastructure
-- entity
-- technology
-- browser-agent
-- infrastructure
-- dom-based
-status: active
 sources:
 - https://www.browserbase.com/
 - https://www.browserbase.com/blog/stagehand-v3
 - https://docs.browserbase.com/introduction/stagehand
 - https://www.browserbase.com/blog/introducing-the-stagehand-api
+
 ---
 
 # Browserbase

@@ -8,11 +8,6 @@ tags:
   - model
   - training
   - loss-function
-- concept
-- transformer
-- attention
-- training
-- loss-function
 related:
 - decoder-only-gpt
 - context-window-management

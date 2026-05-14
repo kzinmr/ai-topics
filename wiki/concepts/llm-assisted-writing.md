@@ -10,13 +10,14 @@ aliases:
   - LLM drafting
   - AI voice preservation
 related:
-  - [[entities/idiallo-com]]
-  - [[concepts/harness-engineering/agentic-workflows/vibe-coding]]
-  - [[concepts/coding-agents]]
+  - "entities/idiallo-com]]"
+  - "concepts/harness-engineering/agentic-workflows/vibe-coding]]"
+  - "concepts/coding-agents]]"
 sources:
   - raw/articles/idiallo.com--byte-size-editing-llm-assisted-articles--5e32cb82.md
   - https://idiallo.com/byte-size/editing-llm-assisted-articles?src=feed
 ---
+
 
 # LLM-Assisted Writing
 

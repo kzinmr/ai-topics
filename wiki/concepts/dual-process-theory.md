@@ -6,9 +6,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [System 1/2, Dual Process, Fast and Slow Thinking, AI System 1 System 2]
-related: [[concepts/agent-harness-primitives]], [[concepts/illusion-of-thinking]], [[concepts/cognitive-cost-of-agents]]
 sources: [https://www.lesswrong.com/tag/dual-process-theory, https://arxiv.org/abs/2501.00001]
 ---
+
 
 # Dual Process Theory (AI)
 

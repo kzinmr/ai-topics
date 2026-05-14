@@ -12,11 +12,11 @@ aliases:
   - RFT
   - Reinforcement Fine-Tuning
   - RL Fine-Tuning
-related: [[fine-tuning]], [[concepts/fine-tuning/grpo-rl-training]], [[concepts/fine-tuning/rlhf-dpo-preference]], [[entities/fireworks-ai]], [[concepts/speculative-decoding]]
 sources:
   - raw/articles/2026-04-28_fireworks-ai-open-weight-models-sed.md
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/
 ---
+
 
 # Reinforcement Fine-Tuning (RFT)
 

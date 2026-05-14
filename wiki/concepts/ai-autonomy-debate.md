@@ -9,7 +9,6 @@ tags:
   - human-in-the-loop
   - safety
 aliases: ["autonomy-obsession", "hitl-vs-autonomous"]
-related: , [[concepts/anthropic-managed-agents]], [[concepts/ai-agent-traps]]
 sources: []
 ---
 

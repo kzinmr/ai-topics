@@ -8,11 +8,11 @@ tags:
   - optimization
   - model
 aliases: [kv-cache-compaction, attention-matching-compaction]
-related: [[concepts/latent-briefing]], [[concepts/multi-agent-systems]], [[concepts/context-management]], [[entities/ramp-labs]]
 sources: [
   "https://x.com/RampLabs/status/2042660310851449223"
 ]
 ---
+
 
 # KV Cache Compaction
 

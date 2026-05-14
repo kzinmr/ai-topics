@@ -8,11 +8,6 @@ tags:
   - training
   - reinforcement-learning
   - coding-agents
-- concept
-- training
-- distillation
-- reinforcement-learning
-- coding-agents
 related:
 - model-distillation
 - trl-fine-tuning

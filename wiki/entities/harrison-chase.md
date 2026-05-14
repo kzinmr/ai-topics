@@ -1,8 +1,4 @@
 ---
-
-## Related Entities
-
-- [[entities/samuel-colvin]]
 title: "Harrison Chase"
 type: entity
 tags:
@@ -27,6 +23,11 @@ related:
   - "[[concepts/harness-engineering]]"
   - "[[entities/nvidia]]"
   - "[[entities/nvidia-nemoclaw]]"
+---
+
+## Related Entities
+
+- [[entities/samuel-colvin]]
 ---
 
 # Harrison Chase

@@ -10,13 +10,13 @@ tags:
   - optimization
   - comparison
 aliases: ["self-hosted-coding-agents", "local-ai-development", "qwen-coder-workflow", "ai-inference-economics"]
-related: [[concepts/claude-code-best-practices]], [[concepts/cli-over-mcp-pattern]], [[concepts/inference-speed-development]], [[concepts/openclaw]]
 sources:
   - url: "https://steipete.me/posts/2025/self-hosting-ai-models/"
     author: "Peter Steinberger (@steipete)"
     date: "2025-07-31"
     title: "Self-Hosting AI Models After Claude's Usage Limits"
 ---
+
 
 # Self-Hosting AI for Development
 

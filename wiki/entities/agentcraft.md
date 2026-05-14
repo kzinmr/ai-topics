@@ -10,7 +10,7 @@ tags:
 aliases:
   - getagentcraft
   - agent-craft
-  - @idosal/agentcraft
+  - '@idosal/agentcraft'
 sources:
   - raw/articles/2026-04-25-agentcraft-rts-agent-orchestration.md
   - https://www.getagentcraft.com/

@@ -14,12 +14,13 @@ aliases:
   - "Vercel Inc."
   - "vercel.com"
 related:
-  - [[concepts/harness-engineering]]
-  - [[entities/openai]]
+  - "concepts/harness-engineering]]"
+  - "entities/openai]]"
 sources:
   - raw/newsletters/2026-05-05-codex-is-gaining-steam.md
   - https://open.substack.com/pub/bensbites/p/codex-is-gaining-steam
 ---
+
 
 # Vercel
 

@@ -6,7 +6,7 @@ status: complete
 tags: [person, openai, blogger, ai-agents, agent-loop, autoresearch]
 created: 2026-05-13
 updated: 2026-05-13
-aliases: [@ChrisHayduk, ChrisHayduk, Chris Hayduk OpenAI]
+aliases: ['@ChrisHayduk', 'ChrisHayduk', 'Chris Hayduk OpenAI']
 sources:
   - https://www.chrishayduk.com/about
   - https://x.com/ChrisHayduk
@@ -49,7 +49,7 @@ Active in the AI agent and agentic coding community. Posts on X about agent loop
 
 ## Social Links
 
-- X: [@ChrisHayduk](https://x.com/ChrisHayduk)
+- X: ['@ChrisHayduk'](https://x.com/ChrisHayduk)
 - Blog: [chrishayduk.com](https://www.chrishayduk.com)
 - GitHub: [ChrisHayduk](https://github.com/ChrisHayduk)
 - LinkedIn: [chrishayduk](https://www.linkedin.com/in/chrishayduk/)

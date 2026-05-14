@@ -25,13 +25,9 @@ sources: [
   "raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md",
   "raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md"
 ]
-related: [
-  "[[entities/anthropic]]",
-  "[[entities/claude-code]]",
-  "[[concepts/claude-model-family]]",
-  "[[entities/foundation-capital]]"
-]
+related: []
 ---
+
 
 # Anthropic
 

@@ -9,15 +9,6 @@ tags:
   - hn-popular
   - developer-tooling
   - infrastructure
-- person
-- blogger
-- hn-popular
-- sysadmin
-- infrastructure
-- unix
-- monitoring
-- operations
-- feed-readers
 aliases:
 - rachelbythebay.com
 - rachelbythebay

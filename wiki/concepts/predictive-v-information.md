@@ -1,5 +1,5 @@
 ---
-title: "Predictive $\mathcal{V}$-Information"
+title: 'Predictive \mathcal{V}-Information'
 aliases:
   - V-Information
   - Predictive V-Information
@@ -11,9 +11,6 @@ created: 2026-05-08
 updated: 2026-05-08
 sources:
   - "raw/papers/2020-02-25_2002.10689_predictive-v-information.md"
-related:
-  - "concepts/representation-learning"
-  - "concepts/fairness"
 ---
 
 # Predictive $\mathcal{V}$-Information

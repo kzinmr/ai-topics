@@ -9,11 +9,6 @@ tags:
   - ai-agents
   - benchmark
   - pvp
-- concept
-- evals
-- agents
-- benchmark
-- pvp
 related:
 - evals-for-ai-agents
 - multi-agent-autonomy-scale

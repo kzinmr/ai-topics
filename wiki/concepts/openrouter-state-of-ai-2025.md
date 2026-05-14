@@ -13,14 +13,15 @@ aliases:
   - 100T Token LLM Usage Study
   - OpenRouter/a16z Study
 related:
-  - [[entities/openrouter]]
-  - [[entities/malika-aubakirova]]
-  - [[concepts/glass-slipper-effect]]
-  - [[concepts/ai-market-economics]]
+  - "entities/openrouter]]"
+  - "entities/malika-aubakirova]]"
+  - "concepts/glass-slipper-effect]]"
+  - "concepts/ai-market-economics]]"
 sources:
   - raw/articles/2025-12-01_openrouter-state-of-ai-2025.md
   - https://openrouter.ai/state-of-ai
 ---
+
 
 # OpenRouter State of AI 2025
 

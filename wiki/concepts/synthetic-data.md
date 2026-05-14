@@ -18,14 +18,15 @@ tags:
   - alignment
   - fine-tuning
 related:
-  - [[concepts/autodata-agentic-data-creation]]
-  - [[concepts/llm-training-coherence-evolution]]
-  - [[concepts/dataset-engineering]]
+  - "concepts/autodata-agentic-data-creation]]"
+  - "concepts/llm-training-coherence-evolution]]"
+  - "concepts/dataset-engineering]]"
 sources:
   - raw/articles/2026-03-19_megadocs-synthetic-pretraining.md
   - https://arxiv.org/abs/2603.18534
   - raw/articles/2023-11-29_interconnects-llm-synthetic-data.md
 ---
+
 
 # synthetic-data
 

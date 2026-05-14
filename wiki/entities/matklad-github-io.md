@@ -10,15 +10,6 @@ tags:
   - developer-tooling
   - compiler-tools
   - language-server
-- person
-- blogger
-- hn-popular
-- developer-tools
-- compiler-tools
-- language-server
-- rust
-- zig
-- systems-programming
 aliases:
 - matklad
 - matklad.github.io

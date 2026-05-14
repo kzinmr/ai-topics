@@ -12,12 +12,13 @@ tags:
   - person
   - blogger
 related:
-  - [[concepts/simulacrum-of-knowledge-work]]
+  - "concepts/simulacrum-of-knowledge-work]]"
 sources:
   - https://blog.happyfellow.dev/about/
   - https://blog.happyfellow.dev/simulacrum-of-knowledge-work/
   - raw/articles/2026-04-25_onehappyfellow-simulacrum-of-knowledge-work.md
 ---
+
 
 # One Happy Fellow (@onehappyfellow)
 

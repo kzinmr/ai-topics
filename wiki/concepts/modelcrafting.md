@@ -12,14 +12,15 @@ aliases:
   - AI post-training automation
   - automated model improvement
 related:
-  - [[concepts/post-training]]
-  - [[entities/thoughtful-lab]]
-  - [[concepts/llm-fine-tuning]]
-  - [[concepts/research-intuition]]
+  - "concepts/post-training]]"
+  - "entities/thoughtful-lab]]"
+  - "concepts/llm-fine-tuning]]"
+  - "concepts/research-intuition]]"
 sources:
   - https://www.thoughtfullab.com/letting-ai-posttrain-ai.html
   - raw/articles/2026-04_thoughtfullab-letting-ai-posttrain-ai.md
 ---
+
 
 # Modelcrafting
 

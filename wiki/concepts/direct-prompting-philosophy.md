@@ -8,7 +8,6 @@ tags:
   - agentic-engineering
   - workflow
 aliases: ["just-talk-to-it", "intuition-driven-development", "direct-prompting", "no-bs-agentic"]
-related: , [[concepts/claude-code-best-practices]], [[concepts/cli-over-mcp-pattern]], [[concepts/inference-speed-development]]
 sources:
   - url: "https://steipete.me/posts/2025/just-talk-to-it"
     author: "Peter Steinberger (@steipete)"

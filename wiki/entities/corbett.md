@@ -11,13 +11,6 @@ tags:
   - training
   - openpipe
   - infrastructure
-- x-account
-- ai
-- startups
-- fine-tuning
-- rl
-- openpipe
-- coreweave
 aliases:
 - '@corbtt'
 - kcorbitt

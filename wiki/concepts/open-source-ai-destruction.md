@@ -12,8 +12,8 @@ tags:
   - open-source
   - developer-tooling
 aliases: ["ai-slop-crisis", "open-source-maintainer-burnout", "ai-pr-flood"]
-related: [[concepts/gnu-ai-reimplementations]], [[concepts/ai-bubble-economics]], , 
 ---
+
 
 # Open Source AI Destruction
 

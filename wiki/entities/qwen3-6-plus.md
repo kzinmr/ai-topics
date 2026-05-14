@@ -9,11 +9,6 @@ tags:
   - alibaba
   - qwen
   - ai-agents
-- entity
-- model
-- alibaba
-- qwen
-- agent
 related:
 - alibaba
 - agent-models

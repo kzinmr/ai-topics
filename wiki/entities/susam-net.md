@@ -11,14 +11,6 @@ tags:
   - common-lisp
   - open-source
   - indie-web
-- person
-- blogger
-- mathematician
-- programmer
-- puzzles
-- common-lisp
-- free-software
-- indie-web
 aliases:
 - susam.net
 sources: []

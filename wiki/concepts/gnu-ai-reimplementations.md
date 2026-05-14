@@ -9,7 +9,6 @@ sources:
   - "http://antirez.com/news/160"
 tags: [concept, ai-reimplementations, gnu, clean-room, automatic-programming, open-source]
 aliases: ["clean-room-ai-reimplementations", "ai-driven-reimplementations"]
-related: , [[concepts/harness-engineering]], , [[concepts/harness-engineering/agentic-workflows/vibe-coding]], [[concepts/open-source-ai-destruction]]
 ---
 
 # GNU AI Reimplementations

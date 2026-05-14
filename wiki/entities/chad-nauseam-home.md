@@ -1,4 +1,5 @@
 ---
+
 title: Chad Nauseam
 type: entity
 created: 2026-04-10
@@ -12,19 +13,12 @@ tags:
   - game-dev
   - cryptocurrency
   - writing
-- person
-- blogger
-- hn-popular
-- rust
-- functional-programming
-- game-dev
-- cryptocurrency
-- tech-commentary
 aliases:
 - chadnauseam.com
 - chadnauseam
 - chad nauseam
 sources: []
+
 ---
 
 # Chad Nauseam

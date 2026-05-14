@@ -6,11 +6,11 @@ tags:
   - person
   - ai-agents
 aliases: ["nathanflurry"]
-related: [[entities/rivet-dev]], [[concepts/docker-sandbox-microvm-api]], [[concepts/agent-sandboxing]]
 sources:
   - "https://github.com/NathanFlurry"
   - "https://www.rivet.dev/blog/2026-02-04-we-reverse-engineered-docker-sandbox-undocumented-microvm-api/"
 ---
+
 
 # Nathan Flurry
 

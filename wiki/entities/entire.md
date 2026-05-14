@@ -14,9 +14,10 @@ website: https://entire.io
 github: https://github.com/entireio
 sources:
   - https://entire.io
-  - [[raw/articles/2026-05-06_entire-improving-agentic-search-in-coding-agents]]
+  - "raw/articles/2026-05-06_entire-improving-agentic-search-in-coding-agents]]"
 aliases: [entire.io, Entire Inc, entireio]
 ---
+
 
 # Entire — AI Agent Observability & Search
 

@@ -13,12 +13,13 @@ aliases:
   - Boomerang Effect
   - workload-model fit
 related:
-  - [[concepts/openrouter-state-of-ai-2025]]
-  - [[entities/openrouter]]
+  - "concepts/openrouter-state-of-ai-2025]]"
+  - "entities/openrouter]]"
 sources:
   - raw/articles/2025-12-01_openrouter-state-of-ai-2025.md
   - https://openrouter.ai/state-of-ai
 ---
+
 
 # Glass Slipper Effect
 

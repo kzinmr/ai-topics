@@ -10,7 +10,6 @@ tags:
   - inference
   - infrastructure
 aliases: [inference-hardware, consumer-gpu-llm, local-llm-hardware]
-related: [[concepts/local-llm]], [[concepts/local-llm/ollama]], [[concepts/inference/sglang]]
 sources:
   - url: "https://localllm.in/blog/ollama-vram-requirements-for-local-llms"
     title: "Ollama VRAM Requirements: Complete 2026 Guide"
@@ -21,6 +20,7 @@ sources:
   - url: "https://vrlatech.com/llm-quantization-explained-int4-int8-fp8-awq-and-gptq-in-2026"
     title: "LLM Quantization Explained: INT4, INT8, FP8, AWQ, GPTQ in 2026"
 ---
+
 
 # Local LLM Inference Hardware
 

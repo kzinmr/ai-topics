@@ -7,9 +7,9 @@ created: 2026-04-27
 updated: 2026-04-28
 tags: [concept, neurosymbolic, logic, tensor, differentiable-reasoning]
 aliases: [LTN, Real Logic, Logic Tensor Network]
-related: [[concepts/neurosymbolic-ai]], [[concepts/formal-verification-llm-agents]], [[concepts/illusion-of-thinking]]
 sources: [https://arxiv.org/abs/2012.13635]
 ---
+
 
 # Logic Tensor Networks
 

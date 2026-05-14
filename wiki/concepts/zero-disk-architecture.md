@@ -7,9 +7,9 @@ tags:
   - architecture
   - infrastructure
   - database
-related: [[concepts/disaggregated-storage]], [[concepts/lambda-monolith-lambdalith]], [[concepts/event-driven-architecture]]
 sources: ["https://avi.im/blag/2024/zero-disk-architecture/"]
 ---
+
 
 # Zero Disk Architecture
 

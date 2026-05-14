@@ -13,15 +13,16 @@ aliases:
   - SaS
   - "Autopilot business model"
 related:
-  - [[entities/julien-bek]]
-  - [[entities/sequoia-capital]]
-  - [[concepts/harness-engineering]]
-  - [[concepts/agent-harness]]
+  - "entities/julien-bek]]"
+  - "entities/sequoia-capital]]"
+  - "concepts/harness-engineering]]"
+  - "concepts/agent-harness]]"
 sources:
   - raw/articles/2026-03-05_sequoia-services-the-new-software.md
   - https://sequoiacap.com/article/services-the-new-software/
 description: "AI business model where companies sell completed outcomes (the work itself) rather than productivity tools. For every $1 spent on software, $6 is spent on services — service-as-software captures the larger budget by replacing outsourced intelligence tasks."
 ---
+
 
 # Service-as-Software
 

@@ -4,7 +4,7 @@ type: concept
 created: 2026-04-27
 updated: 2026-04-27
 status: L2
-sources: [https://www.firstround.com/ai/shopify, https://x.com/tobi/status/1741234567890123457](status: pending)
+sources: ["https://www.firstround.com/ai/shopify (status: pending)", "https://x.com/tobi/status/1741234567890123457"]
 tags:
   - ai-adoption
   - company

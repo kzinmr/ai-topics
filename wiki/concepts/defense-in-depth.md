@@ -6,9 +6,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [Defense in Depth, Layered Security, Security Layering]
-related: [[concepts/agentic-security]], [[concepts/agent-sandboxing]], [[concepts/capability-based-security]], [[concepts/excessive-agency]]
 sources: [https://www.nist.gov/cyberframework, https://www.ncsc.gov.uk/collection/cyber-security-design-principles]
 ---
+
 
 # Defense in Depth (AI Security)
 

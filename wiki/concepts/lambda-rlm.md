@@ -15,16 +15,17 @@ aliases:
   - deterministic RLM pipeline
   - Galanos Lambda-RLM
 related:
-  - [[concepts/rlm-recursive-language-models]]
-  - [[concepts/recursive-language-models]]
-  - [[concepts/typed-rlm]]
-  - [[concepts/harness-engineering]]
-  - [[entities/theodoros-galanos]]
-  - [[entities/the-harness-blog]]
+  - "concepts/rlm-recursive-language-models]]"
+  - "concepts/recursive-language-models]]"
+  - "concepts/typed-rlm]]"
+  - "concepts/harness-engineering]]"
+  - "entities/theodoros-galanos]]"
+  - "entities/the-harness-blog]]"
 sources:
   - https://theharness.blog/blog/recursive-by-design/
   - raw/articles/2026-05-02_the-harness-blog_recursive-by-design.md
 ---
+
 
 # Lambda-RLM
 

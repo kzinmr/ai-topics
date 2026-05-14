@@ -10,11 +10,11 @@ tags:
   - developer-experience
   - multi-agent
 aliases: ["nextpad-plus-plus", "ai-vibe-coding-quality"]
-related: [[concepts/vibe-coding-vs-agentic-engineering]], [[concepts/normalization-of-deviance-in-ai-coding]], [[concepts/cognitive-debt]]
 sources:
   - https://daringfireball.net/2026/05/nextpad
   - https://simonwillison.net/2026/May/12/mo-bitar/
 ---
+
 
 # Nextpad++ and AI Development Quality
 

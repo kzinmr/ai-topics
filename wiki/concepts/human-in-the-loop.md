@@ -6,9 +6,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [HITL, Human-in-the-Loop AI, Human Oversight, Human-in-the-Loop Agents]
-related: [[concepts/agent-governance]], [[concepts/ai-autonomy-debate]], [[concepts/langgraph]], [[concepts/anthropic-managed-agents]]
 sources: [https://www.anthropic.com/engineering/building-effective-agents, https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/security]
 ---
+
 
 # Human-in-the-Loop (HITL)
 

@@ -11,9 +11,10 @@ tags:
   - infrastructure
   - benchmark
 sources:
-  - [[raw/articles/2026-05-06_entire-improving-agentic-search-in-coding-agents]]
-aliases: [@evisdrenova]
+  - "raw/articles/2026-05-06_entire-improving-agentic-search-in-coding-agents]]"
+aliases: ['@evisdrenova']
 ---
+
 
 # Evis Drenova
 

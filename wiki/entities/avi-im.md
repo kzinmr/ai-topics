@@ -6,9 +6,9 @@ tags:
   - person
   - infrastructure
 aliases: ["avi.im", "iavins"]
-related: [[concepts/zero-disk-architecture]]
 sources: ["https://avi.im"]
 ---
+
 
 # Avi Kivity
 

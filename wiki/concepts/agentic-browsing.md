@@ -9,8 +9,8 @@ tags:
   - concept
   - browser-agent
 aliases: [browser agents, web navigation agents, autonomous browsing]
-related: [[entities/browser-use]], [[entities/browserbase]], [[entities/anthropic-computer-use]], [[concepts/model-context-protocol-mcp]], [[entities/perplexity-comet]]
 ---
+
 
 # Agentic Browsing
 

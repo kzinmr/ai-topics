@@ -11,13 +11,6 @@ tags:
   - reverse-engineering
   - optimization
   - computer-history
-- person
-- blogger
-- hn-popular
-- game-engines
-- reverse-engineering
-- performance
-- computer-history
 aliases:
 - fabiensanglard.net
 - fabien-sanglard

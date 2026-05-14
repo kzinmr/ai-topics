@@ -1,4 +1,5 @@
 ---
+
 title: Cursor 3
 type: entity
 created: 2026-04-10
@@ -10,12 +11,6 @@ tags:
   - coding-agents
   - company
   - partnership
-- entity
-- ide
-- coding-agent
-- cursor
-- spacex
-- partnership
 related:
 - coding-agents
 - ide-tools
@@ -23,6 +18,7 @@ related:
 - spacex
 sources:
   - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md
+
 ---
 
 # Cursor 3

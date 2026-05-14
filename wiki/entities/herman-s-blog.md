@@ -10,13 +10,6 @@ tags:
   - bear-blog
   - web-philosophy
   - indie-hacker
-- person
-- blogger
-- hn-popular
-- solo-founder
-- bear-blog
-- web-philosophy
-- indie-hacker
 aliases:
 - herman.bearblog.dev
 - herman

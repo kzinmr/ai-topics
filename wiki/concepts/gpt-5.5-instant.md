@@ -14,13 +14,14 @@ aliases:
   - "GPT-5.5 Default"
   - "GPT-5.5 Instant API"
 related:
-  - [[entities/openai]]
-  - [[concepts/chatgpt-images-2.0]]
-  - [[concepts/vibe-physics]]
+  - "entities/openai]]"
+  - "concepts/chatgpt-images-2.0]]"
+  - "concepts/vibe-physics]]"
 sources:
   - raw/newsletters/2026-05-06-ainews-silicon-valley-gets-serious-about-services.md
   - https://open.substack.com/pub/swyx/p/ainews-silicon-valley-gets-serious
 ---
+
 
 # GPT-5.5 Instant
 

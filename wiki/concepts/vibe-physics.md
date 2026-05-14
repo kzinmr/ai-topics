@@ -11,13 +11,14 @@ tags:
 aliases:
   - "Vibe Physics (Lupsasca)"
 related:
-  - [[concepts/vibe-coding]]
-  - [[entities/openai]]
-  - [[concepts/jagged-frontier]]
+  - "concepts/vibe-coding]]"
+  - "entities/openai]]"
+  - "concepts/jagged-frontier]]"
 sources:
   - raw/newsletters/2026-05-05-doing-vibe-physics-alex-lupsasca-openai.md
   - https://open.substack.com/pub/swyx/p/lupsasca
 ---
+
 
 # Vibe Physics
 

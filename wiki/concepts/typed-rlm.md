@@ -14,17 +14,18 @@ aliases:
   - Y-Combinator RLM
   - Typed Recursive Reasoning
 related:
-  - [[concepts/rlm-recursive-language-models]]
-  - [[concepts/lambda-rlm]]
-  - [[concepts/recursive-language-models]]
-  - [[concepts/context-folding]]
-  - [[concepts/harness-engineering]]
+  - "concepts/rlm-recursive-language-models]]"
+  - "concepts/lambda-rlm]]"
+  - "concepts/recursive-language-models]]"
+  - "concepts/context-folding]]"
+  - "concepts/harness-engineering]]"
 sources:
   - raw/papers/2026-03-20_2603.20105_y-combinator-for-llms.md
   - https://arxiv.org/abs/2603.20105
   - https://lambda-calculus-llm.github.io/rlms/
   - https://github.com/lambda-calculus-LLM/lambda-RLM
 ---
+
 
 # λ-RLM: Typed Recursive Reasoning for LLMs
 

@@ -17,15 +17,15 @@ aliases:
   - better-harness
   - agent-harness-engineering
 related:
-  - [[concepts/ai-evals]]
-  - [[concepts/critique-shadowing]]
-  - [[concepts/llm-as-judge]]
-  - [[concepts/ai-observability]]
-  - [[entities/hamel-husain]]
-  - [[entities/shreya-shankar]]
-  - [[entities/vtrivedy10]]
-  - [[entities/addy-osmani]]
-  - [[concepts/ai-evals-people]]
+  - "concepts/ai-evals]]"
+  - "concepts/critique-shadowing]]"
+  - "concepts/llm-as-judge]]"
+  - "concepts/ai-observability]]"
+  - "entities/hamel-husain]]"
+  - "entities/shreya-shankar]]"
+  - "entities/vtrivedy10]]"
+  - "entities/addy-osmani]]"
+  - "concepts/ai-evals-people]]"
 sources:
   - raw/articles/2024-03-26_hamel-revenge-data-scientist.md
   - raw/articles/2026-02-17_langchain-improving-deep-agents-harness-engineering.md
@@ -37,6 +37,7 @@ sources:
   - https://blog.langchain.com/better-harness-a-recipe-for-harness-hill-climbing-with-evals/
 description: "The practice of building evaluation and constraint systems around LLMs for production reliability. Includes production case studies from LangChain, Addy Osmani's Agent = Model + Harness framework, and the Agent Harness Engineering discipline."
 ---
+
 
 # Harness Engineering
 

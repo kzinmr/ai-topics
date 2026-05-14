@@ -10,11 +10,11 @@ tags:
   - ai-agents
   - infrastructure
 aliases: ["jarred-sumner", "oven-sh"]
-related: [[concepts/sandbox/js-runtime]], [[entities/ryan-dahl]]
 depth: L2
 status: complete
 sources: []
 ---
+
 
 # Jarred Sumner
 

@@ -5,8 +5,22 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-14] ingest | Show Us Your Agent Skills Ep.1 + Agentic Engineering article
+- Ingested Hugo Bowne-Anderson's Substack article "Agentic Engineering and the Lost Art of Verification" (2026-05-12)
+- Ingested YouTube transcript for "Show Us Your (Agent) Skills Episode 1" with Wes McKinney, Jeremiah Lowin, Randy Olson (2026-05-08)
+- Created entity pages: hugo-bowne-anderson.md, thomas-wiecki.md (completed; wes-mckinney, jeremiah-lowin, randy-olson created by subagents)
+- Created concept page: concepts/agentic-engineering.md — from vibe coding to verified agent workflows, generator-evaluator patterns
+- Updated index.md with new entries
+
 ## [2026-05-13] rotate | Log rotated (638 lines → log-2026.md)
 - Previous log archived to `log-2026.md` for historical reference
+
+## [2026-05-14] create | entities/randy-olson.md
+- Created comprehensive person entity page for Randy Olson (Randal S. Olson)
+- Co-Founder & CTO of Goodeye Labs, data visualization legend, r/DataIsBeautiful moderator
+- Documented Tufte Test, Truesight MCP agent skills, generator-evaluator workflow, reflect-and-improve pattern, digital twin concept
+- Added tags: agent-skills, data-visualization, verification to SCHEMA.md taxonomy
+- Updated index.md with new entry
 
 ## [2026-05-13] index | Added 6 orphan pages to index.md (entities: dex-horthy, merge-dev; concepts: agentic-rag, agentic-retrieval, claude-opus-4-7, death-of-browser). Fixed merge-dev alphabetical position. Updated section counts.
 
@@ -153,6 +167,47 @@
 - `~/wiki/concepts/inference-time-scaling.md` — rewrote as redirect (312 bytes → 503 bytes)
 - `~/wiki/concepts/scaling-hypothesis.md` — updated references
 - `~/wiki/index.md` — updated (added test-time-scaling, enriched chain-of-thought)
+- `~/wiki/log.md` — updated
+
+## [2026-05-14] update | entities/wes-mckinney.md — major expansion
+
+### Changes
+- Expanded from skeleton (92 lines, 5 KB) to comprehensive entity page (~210 lines, 15 KB)
+- Added: Quick Facts table, full Bio with all career milestones
+- Added: Agentic Engineering philosophy section with key quotes ("I almost don't read code now"), adversarial agent review approach, Agent Ergonomics thesis, Four-Layer Stack model, "The Mythical Agent Month" framework, vibe coding vs agentic engineering distinction
+- Added: Current Projects section covering RoboRev (Go, 55+ releases, post-commit hook), Agents View (session DB), Middleman (GitHub dashboard), Kata, msgvault (DuckDB-powered), spicytakes.org (1M+ lines, 93 posts, 679 quotes over 16 years)
+- Added: Skills Framework section documenting Superpowers (Jesse Vincent) usage
+- Added: Professional Timeline table, Key Projects table with languages, Key Quotes section (7 quotes)
+- Updated: tags to [person, ai-agents, agent-skills, code-review, developer-tooling, harness-engineering, open-source]
+- Updated: sources linking to raw articles 2026-05-12 and 2026-05-08
+- Updated: frontmatter dates to 2026-05-14
+
+### Sources consulted
+- Web research: Wes McKinney pandas creator, agentic engineering, RoboRev, spicytakes.org, POSIT
+- Raw articles: vanishing-gradients show-us-your-agent-skills ep1, hugobowne agentic-engineering-verification
+- External: wesmckinney.com, Wikipedia, Posit blog (Rich Iannone), spicytakes.org, X/Twitter, Joe Reis Podcast transcript, Rill Data Podcast transcript, Data Renegades transcript
+
+### Files affected
+- `~/wiki/entities/wes-mckinney.md` — major expansion (92 → ~210 lines, 5 KB → 15 KB)
+- `~/wiki/index.md` — updated summary line
+- `~/wiki/log.md` — updated
+
+## [2026-05-14] create | entities/jeremiah-lowin.md — new entity page
+
+### Created
+- Jeremiah Lowin entity page: Founder & CEO of Prefect, creator of FastMCP, Prefab, Cardboard
+- Documented: career (Prefect, Apache Airflow PMC, Marvin, ControlFlow), agent philosophy ("second brain" with voice memo pipeline, explain skill), key projects (FastMCP ~25K stars, Prefab generative UI DSL), strategic advisory roles (Spotify, Positive Sum, OSV), Compass Coffee Global Ambassador
+- Tags: [person, ai-agents, agent-skills, context-engineering, developer-tooling, open-source, entrepreneur, mcp, generative-ui, prefect]
+- Added `prefect` tag to SCHEMA.md taxonomy (People/Orgs section)
+
+### Sources consulted
+- Web research: jlowin.dev/about, GitHub, FastMCP v2.6/v3.0/GA launch posts, Prefab announcement, Compass Coffee 10-year post, Prefect origin story, Vanishing Gradients podcast (Show Us Your Agent Skills Ep. 1), Hacker News Prefab Show HN, YouTube (First Commit with Nina)
+- External: LinkedIn, Crunchbase, X/Twitter (@jlowin)
+
+### Files affected
+- `~/wiki/entities/jeremiah-lowin.md` — new (~210 lines)
+- `~/wiki/index.md` — added entry between jeff-huber and jensen-huang; fixed merged-line bug
+- `~/wiki/SCHEMA.md` — added `prefect` to tag taxonomy
 - `~/wiki/log.md` — updated
 
 

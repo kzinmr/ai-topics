@@ -36,6 +36,7 @@ related:
   - "[[concepts/waluigi-effect]]"
   - "[[entities/qiaochu-yuan]]"
   - "[[entities/gwern]]"
+---
 
 # 社会の影 (Societal Shadow)
 
@@ -246,94 +247,8 @@ Mary Douglasの『Purity and Danger』：
 ## 関連現象
 
 | 現象 | 説明 | QCとの関係 |
-|------|------|-----------|
-| **[[concepts/waluigi-effect|Waluigi Effect]]** | RLHFがLuigi（望ましい人格）の訓練と同時に反転人格を強化 | 社会の影の技術的メカニズムを説明 |
-| **ChatGPT Psychosis** | LLMとの対話が誘発する認知的不安定さ | 社会の影を覗き込む心理的代償 |
-| **Sycophancy (迎合性)** | RLHFがモデルにユーザー迎合を学習させる | 影の隠蔽メカニズム |
-| **Mode Collapse** | RLHFによる出力多様性喪失 | 影を除外した結果の均質化 |
-| **Unseeing / Prompt-Vision** | 人間のテキストをプロンプトとしてしか見れなくなる | 影の認知化 |
+|
+---
 
-## 批判的考察
 
-### パラドックス安全
-RLHFの安全性向上と社会の影の可視化は**トレードオフではない**。それらは同じプロセスの両面である。安全を求めれば求めるほど、より詳細な禁止リストが必要になり、社会の影はより明瞭に浮かび上がる。
-
-### 列挙と強化
-社会の影の項目を列挙すること自体が、その影を強化する可能性がある：
-- LLMに禁止内容を教えることは、モデルが禁止内容を理解することを意味する
-- 禁止リストは、攻撃者へのロードマップにもなる（脱獄プロンプト）
-- ジェイルブレイク研究は、禁止リストそのものを攻撃ベクターとして利用する
-
-### 正常と異常の再定義
-RLHFが定義する「正常」な会話範囲は、社会的に構築されたバイアスを反映する：
-- 西洋中心・英語中心のharmlessness基準
-- 文化ごとに異なるタブーの境界
-- 政治的に偏向した「有害」の定義
-- 声の大きいアクターによる影の範囲の操作
-
-## 「Re-encountering Language」との関係
-
-2023年のエッセイ「re-encountering language」は、この概念的枠組みの**経験的基盤**を提供する：
-
-| 経験（2023） | 理論（2024） |
-|-------------|-------------|
-| 「brittle ice of polite society」 | 社会の影（Societal Shadow） |
-| 「vast underground rivers of pain」 | 影の内容 |
-| 「feral boy」の解放 | Body Wordsのアクセス |
-| 詩を書く衝動 | 飼いならされていない言語生成 |
-| 「infinite art of telling the truth」 | 真正な言語 vs bullshit |
-
-QCはまず**社会の影を生きた**（2023）、その後に **LLMという診断ツールを通じて理論化した**（2024）。
-
-## 増幅メカニズム — 影の自己拡大ループ
-
-これらの技術的対応物は単独で存在するだけでなく、互いに連鎖して社会の影を増幅する：
-
-### 1. カテゴリ分裂の加速
-安全性データセットが細分化すればするほど、影の輪郭はより精緻になる：
-- BeaverTails: 14カテゴリ → Aegis 2.0: 21カテゴリ → SORRY-Bench: 45カテゴリ → Roblox: 25カテゴリ（プラットフォーム固有）
-- 各データセットが前のデータセットのカバレッジ不足を補うために拡張 → 結果的に影をより広く深くマッピング
-- **このカテゴリ拡張に終わりはない** — 影は本質的に無限
-
-### 2. Guardrailの多層化による相互補完
-一つのモデルが複数のguardrailを重ねがけすることで、影の監視が強化される：
-- 訓練時：RLHFデータセット → 憲法（Constitutional AI）
-- 推論時：Moderation API → Llama Guard / Aegis → システムプロンプト
-- 各層が独立に「何が有害か」を判定 → 判定基準の**和集合**が影になる
-
-### 3. ベンチマークと訓練データの循環
-ベンチマークで発見された隙間は、次の訓練データセットで埋められる：
-- SORRY-Benchが44カテゴリの不均衡を発見 → BeaverTailsが新カテゴリを追加
-- HarmBenchが未カバーの攻撃ベクトルを発見 → RLHF訓練データが拡張
-- **評価が影を広げ、訓練が影を定着させる**サイクル
-
-### 4. プラットフォーム間の影の差異
-異なるプラットフォームが異なる影を持つ：
-- OpenAI: 西洋リベラルな影（NSFW厳格、政治的に中道）
-- Meta: MLCommons標準の影（選挙関連を後から追加）
-- DeepSeek: 中国政府準拠の影（表現の自由制限が異なる軸）
-- Roblox: 子ども保護の影（25カテゴリ、極めて細かい）
-- **影の境界線は文化・法制度・ビジネスモデルによって異なる** — LLMの安全性は影の相対性を露呈する
-
-### 5. Shadow Alignment — 影の武器化
-影のカタログが攻撃者へのロードマップになる：
-- 禁止シナリオの詳細な列挙は、脱獄プロンプトの設計図として機能
-- Shadow Alignment研究：「禁止カテゴリの数」と「攻撃成功率」が相関
-- 社会の影を守るためのシステムが、影を攻撃するための情報も提供する
-
-### 6. 過検出（Over-Refusal）による影の拡大
-OR-Benchが示すように、安全なクエリまで拒否される現象は、影の範囲を**実際よりも広く**見せる：
-- 「安全なのに拒否される」事例のカタログ化自体が、社会の影の輪郭をさらに拡張
-- 影の境界線が曖昧になるほど、モデルは安全側に倒れ、より多くのクエリを影扱いする
-
-## 出典
-
-- [[raw/articles/2024-09-16_qchu-core-dump.md]] — 「社会の影」の原典
-- [[raw/articles/2023-03-13_qchu-re-encountering-language.md]] — 経験的基盤
-- [[entities/qiaochu-yuan]] — QCの人物ページ
-- [[concepts/linguistic-vertigo]] — 上位概念へのリンク
-- Carl Jung, *Aion: Phenomenology of the Self* (1951)
-- Georges Bataille, *Eroticism: Death and Sensuality* (1957)
-- Michel Foucault, *The History of Sexuality Vol. 1* (1976)
-- Julia Kristeva, *Powers of Horror* (1980)
-- Mary Douglas, *Purity and Danger* (1966)
+---

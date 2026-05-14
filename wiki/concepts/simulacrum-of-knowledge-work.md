@@ -9,11 +9,12 @@ aliases:
   - simulacrum-of-knowledge-work
   - Goodhart's Law in AI
 related:
-  - [[entities/onehappyfellow]]
+  - "entities/onehappyfellow]]"
 sources:
   - raw/articles/2026-04-25_onehappyfellow-simulacrum-of-knowledge-work.md
   - https://blog.happyfellow.dev/simulacrum-of-knowledge-work/
 ---
+
 
 # Simulacrum of Knowledge Work
 

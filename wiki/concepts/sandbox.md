@@ -10,9 +10,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [Agent Sandboxing, AI Sandbox, Code Sandbox]
-related: [[concepts/agent-sandboxing]], [[concepts/agentic-security]], [[concepts/capability-based-security]], [[concepts/excessive-agency]]
 sources: [https://firecracker-microvm.github.io/, https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/security]
 ---
+
 
 # Sandbox (Agent Sandboxing)
 

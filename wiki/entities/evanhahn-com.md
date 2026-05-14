@@ -12,14 +12,6 @@ tags:
   - developer-tooling
   - helmet-js
   - ghost
-- person
-- blogger
-- open-source-maintainer
-- web-security
-- node-js
-- javascript
-- helmet-js
-- ghost
 aliases:
 - evanhahn.com
 - evan-hahn

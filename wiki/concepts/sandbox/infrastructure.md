@@ -12,11 +12,11 @@ tags:
   - coding-agents
   - infrastructure
 aliases: ["agent-isolation", "ai-sandbox-technologies", "infrastructure-sandbox"]
-related: [[concepts/sandbox/in-process]], [[concepts/anthropic-managed-agents]], [[concepts/ai-coding-reliability]], 
 depth: L2
 status: complete
 sources: []
 ---
+
 
 # Infrastructure-Level Sandbox
 

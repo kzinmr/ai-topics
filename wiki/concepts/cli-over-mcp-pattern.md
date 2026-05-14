@@ -9,7 +9,6 @@ tags:
   - tool
   - agentic-engineering
 aliases: ["cli-first-development", "mcp-skepticism", "tool-agnostic-agents", "minimal-tooling-pattern"]
-related: [[concepts/direct-prompting-philosophy]], [[concepts/claude-code-best-practices]], [[concepts/context-window-management]], 
 sources:
   - url: "https://steipete.me/posts/2025/optimal-ai-development-workflow/"
     author: "Peter Steinberger (@steipete)"
@@ -20,6 +19,7 @@ sources:
     date: "2025-10"
     title: "Just Talk To It - the no-bs Way of Agentic Engineering"
 ---
+
 
 # CLI Over MCP Pattern
 

@@ -9,7 +9,7 @@ tags:
   - ai-agents
   - agent-harness
   - coding-agents
-aliases: [ivan-leo, @ivanleomk]
+aliases: [ivan-leo,'@ivanleomk']
 sources:
   - raw/articles/2026-02-28_substack_agents-that-build-themselves.md
   - raw/articles/2026-02-28_youtube_openclaw-from-scratch-workshop.md

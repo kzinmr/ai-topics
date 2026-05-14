@@ -7,11 +7,11 @@ tags:
   - memory-systems
   - architecture
 aliases: [llm-memory, agent-memory-architecture]
-related: [[concepts/ai-agent-memory-middleware]], [[concepts/ai-agent-memory-two-camps]], [[concepts/ai-memory-systems]], [[concepts/context-engineering]], [[concepts/claude-memory]]
 sources: [
   "https://grantslatton.com/llm-memory"
 ]
 ---
+
 
 # LLM Memory Architecture
 

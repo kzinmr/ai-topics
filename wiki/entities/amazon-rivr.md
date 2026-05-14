@@ -1,4 +1,5 @@
 ---
+
 title: Amazon Acquires Rivr
 type: entity
 created: 2026-04-10
@@ -9,17 +10,13 @@ tags:
   - aws
   - robotics
   - rivr
-- entity
-- acquisition
-- amazon
-- robotics
-- rivr
 related:
 - amazon
 - robotics
 - delivery
 - autonomous-vehicles
 sources: []
+
 ---
 
 # Amazon Acquires Rivr

@@ -11,12 +11,13 @@ tags:
 aliases:
   - openrouter.ai
 related:
-  - [[concepts/openrouter-state-of-ai-2025]]
-  - [[entities/malika-aubakirova]]
+  - "concepts/openrouter-state-of-ai-2025]]"
+  - "entities/malika-aubakirova]]"
 sources:
   - raw/articles/2025-12-01_openrouter-state-of-ai-2025.md
   - https://openrouter.ai/
 ---
+
 
 # OpenRouter
 

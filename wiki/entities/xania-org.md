@@ -12,14 +12,6 @@ tags:
   - assembly
   - open-source
   - developer-tooling
-- person
-- blogger
-- hn-popular
-- c++
-- compiler-explorer
-- assembly
-- open-source
-- systems-programming
 aliases:
 - xania.org
 - compiler-explorer

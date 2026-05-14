@@ -7,8 +7,8 @@ created: 2026-04-27
 updated: 2026-04-28
 tags: [concept, redirect]
 aliases: [GAPA]
-related: [[concepts/gepa]]
 ---
+
 
 # GAPA
 

@@ -7,7 +7,6 @@ tags:
   - developer-tooling
   - agentic-engineering
 aliases: ["main-branch-ai-development", "worktree-anti-pattern", "atomic-commits-with-agents", "steipete-git-patterns"]
-related: , [[concepts/inference-speed-development]], [[concepts/direct-prompting-philosophy]], [[concepts/claude-code-best-practices]]
 sources:
   - url: "https://steipete.me/posts/2025/live-coding-session-building-arena"
     author: "Peter Steinberger (@steipete)"

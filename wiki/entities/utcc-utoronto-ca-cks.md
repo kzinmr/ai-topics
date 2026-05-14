@@ -9,13 +9,6 @@ tags:
   - hn-popular
   - developer-tooling
   - open-source
-- person
-- blogger
-- hn-popular
-- sysadmin
-- unix
-- linux
-- free-software
 aliases:
 - utcc.utoronto.ca/~cks
 - Chris Siebenmann Wandering Thoughts

@@ -6,9 +6,6 @@ updated: 2026-04-09
 tags:
   - model
   - emerging
-- model
-- llm
-- emerging
 aliases:
 - Meta Muse Spark
 sources: []

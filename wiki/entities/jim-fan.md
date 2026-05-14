@@ -5,10 +5,10 @@ handle: "@jim-fan"
 created: 2026-04-10
 updated: 2026-05-11
 related:
-  - [[entities/nvidia-dgx-spark]]
-  - [[concepts/embodied-ai]]
-  - [[concepts/robotics]]
-  - [[concepts/genie]]
+  - "entities/nvidia-dgx-spark]]"
+  - "concepts/embodied-ai]]"
+  - "concepts/robotics]]"
+  - "concepts/genie]]"
   - 
   - 
 tags:
@@ -19,6 +19,7 @@ tags:
   - world-models
 sources: []
 ---
+
 
 
 # Jim Fan (@jim-fan)

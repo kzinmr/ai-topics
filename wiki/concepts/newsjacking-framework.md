@@ -9,10 +9,11 @@ sources:
   - "https://www.elvis.so/p/5-viral-tweets-in-one-day"
   - "https://www.elvis.so/p/the-game-of-attention"
 related:
-  - [[elvis-sun]]
+  - "elvis-sun]]"
   - 
-  - 
+  -
 ---
+
 
 # Newsjacking Framework
 

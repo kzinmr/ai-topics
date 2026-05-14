@@ -11,13 +11,14 @@ aliases:
   - "GLM-5.1 (Zhipu AI)"
   - "Zhipu GLM-5.1"
 related:
-  - [[entities/zhipu-ai]]
-  - [[concepts/agent-harness-primitives]]
-  - [[concepts/agentic-engineering]]
+  - "entities/zhipu-ai]]"
+  - "concepts/agent-harness-primitives]]"
+  - "concepts/agentic-engineering]]"
 sources:
   - raw/articles/glm-5-1-zhipu-2026.md
   - https://www.bentoml.com/blog/navigating-the-world-of-open-source-large-language-models
 ---
+
 
 # GLM-5.1
 

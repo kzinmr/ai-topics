@@ -11,9 +11,9 @@ tags:
   - developer-tooling
   - automation
 aliases: [blogwatcher-cli, feed-monitor]
-related: [[entities/hermes-agent]], [[entities/simon-willison]]
 sources: [https://github.com/NousResearch/hermes-agent]
 ---
+
 
 # Blogwatcher
 

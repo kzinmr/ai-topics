@@ -1,4 +1,5 @@
 ---
+
 title: Anthropic Computer Use
 type: entity
 aliases:
@@ -14,16 +15,11 @@ tags:
   - ai-agents
   - browser-agent
   - anthropic
-- entity
-- technology
-- computer-use
-- browser-agent
-- anthropic
-status: active
 sources:
 - https://www.anthropic.com/news/claude-sonnet-4-6
 - https://www.anthropic.com/news/acquires-vercept
 - https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/
+
 ---
 
 # Anthropic Computer Use

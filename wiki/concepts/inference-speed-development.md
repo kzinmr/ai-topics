@@ -7,7 +7,6 @@ tags:
   - coding-agents
   - agentic-engineering
 aliases: ["shipping-at-inference-speed", "inference-speed-shipping", "ai-development-cadence"]
-related: , [[concepts/claude-code-best-practices]], [[concepts/cognitive-cost-of-agents]], [[concepts/ai-coding-reliability]]
 sources:
   - url: "https://steipete.me/posts/2025/shipping-at-inference-speed"
     author: "Peter Steinberger (@steipete)"

@@ -4,7 +4,6 @@ type: entity
 handle: "@andriy-burkov"
 created: 2026-04-10
 updated: 2026-04-10
-related: [[concepts/hundred-page-ml-book]], [[concepts/hundred-page-nlp-book]], , ]
 tags:
   - person
   - model
@@ -13,6 +12,7 @@ tags:
   - writing
 sources: []
 ---
+
 
 
 # Andriy Burkov (@andriy-burkov)

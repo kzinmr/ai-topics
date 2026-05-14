@@ -11,16 +11,9 @@ sources: [
   "https://x.com/RampLabs/status/2042660310851449223",
   "https://builders.ramp.com/post/why-we-built-our-background-agent"
 ]
-related: [
-  "[[concepts/latent-briefing]]",
-  "[[concepts/kv-cache-compaction]]",
-  "[[concepts/multi-agent-systems]]",
-  "[[concepts/recursive-language-models]]",
-  "[[concepts/background-coding-agent]]",
-  "[[concepts/modal-sandboxes]]",
-  "[[entities/inspect]]"
-]
+related: []
 ---
+
 
 # Ramp
 

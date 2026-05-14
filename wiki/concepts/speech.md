@@ -7,9 +7,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [Speech AI, Text-to-Speech, Voice AI, TTS]
-related: [[concepts/multimodal]], [[concepts/gemini]], [[concepts/gpt-models]], [[entities/mistral-voxtral-tts]]
 sources: [https://www.elevenlabs.com/, https://openai.com/index/chatgpt-voice/]
 ---
+
 
 # Speech AI
 

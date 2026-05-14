@@ -5,9 +5,9 @@ updated: 2026-05-13
 type: concept
 tags: [concept, openai, model, reasoning, rlvr, timeline]
 aliases: [o1-to-gpt5, o3-cancellation, gpt5-unification]
-related: [[rlvr]], [[gpt-5]], [[openai]], [[deepseek-r1]]
 sources: ["https://openai.com/index/introducing-gpt-5/", "https://x.com/sama/status/1889755723078443244", "https://openai.com/index/introducing-o3-and-o4-mini/"]
 ---
+
 
 # OpenAI o-series → GPT-5 統合 (2024-2025)
 

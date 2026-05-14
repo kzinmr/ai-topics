@@ -7,9 +7,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [Self-Improving Agents, Self-Learning AI Agents, Autonomous Learning]
-related: [[concepts/continual-learning]], [[concepts/agent-harness-primitives]], [[concepts/generic-agent-self-evolving]], [[entities/hermes-agent]]
 sources: [https://arxiv.org/abs/2504.17091, https://www.anthropic.com/engineering/agent-self-improvement]
 ---
+
 
 # Self-Learning Agents
 

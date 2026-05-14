@@ -8,9 +8,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [Tool Orchestration, Tool Use, Agent Tool Orchestration]
-related: [[concepts/agent-harness-primitives]], [[concepts/agent-communication-protocols]], [[concepts/cli-over-mcp-pattern]], [[concepts/agentic-scaffolding]]
 sources: [https://modelcontextprotocol.io/, https://docs.anthropic.com/en/docs/agents-and-tools/]
 ---
+
 
 # Tool Orchestration
 

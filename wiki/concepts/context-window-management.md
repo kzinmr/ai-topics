@@ -9,10 +9,10 @@ tags:
   - anthropic
   - optimization
 aliases: ["context-window-optimization", "token-budget-management", "conversation-hygiene"]
-related: [[concepts/claude-code-best-practices]], [[concepts/claude-code-source-patterns]], [[concepts/inference-speed-development]], 
 sources:
   - raw/articles/anthropic-claude-code-session-management-1m-context.md
 ---
+
 
 # Context Window Management
 

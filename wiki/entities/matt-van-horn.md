@@ -11,7 +11,7 @@ tags:
   - company
 aliases:
   - mvanhorn
-  - @mvanhorn
+  - '@mvanhorn'
   - Matt Van Horn
 sources:
   - raw/articles/2026-04-19_mvanhorn_hermes-agent-use-cases-30days.md

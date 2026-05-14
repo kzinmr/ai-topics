@@ -9,13 +9,6 @@ tags:
   - hn-popular
   - company
   - developer-tooling
-- person
-- blogger
-- hn-popular
-- startups
-- venture-capital
-- lisp
-- essayist
 aliases:
 - paulgraham.com
 - pg

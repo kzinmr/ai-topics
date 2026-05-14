@@ -11,13 +11,6 @@ tags:
   - hardware
   - computer-history
   - microcode
-- person
-- blogger
-- hn-popular
-- reverse-engineering
-- chip-design
-- computer-history
-- microcode
 aliases:
 - righto.com
 - kenshirriff

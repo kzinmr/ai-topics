@@ -13,12 +13,9 @@ updated: 2026-04-27
 sources: [
   "https://x.com/IntuitMachine/status/2043071219667480853"
 ]
-related: [
-  "[[concepts/agentic-ai-skills]]",
-  "[[concepts/agent-harness]]",
-  "[[concepts/harness-engineering]]"
-]
+related: []
 ---
+
 
 # Intuit Machine
 

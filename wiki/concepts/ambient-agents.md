@@ -4,9 +4,9 @@ created: 2026-05-13
 updated: 2026-05-13
 type: concept
 tags: [concept, ai-agents, ambient-agents, agent-architecture, autonomous-agents]
-related: [[ai-agents]], [[agent-architecture]], [[autonomous-agents]], [[human-in-the-loop]]
 sources: ["[[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025]]"]
 ---
+
 
 # Ambient Agents
 

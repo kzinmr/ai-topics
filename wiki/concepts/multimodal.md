@@ -8,9 +8,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [Multi-Modal AI, Multimodal Models, VLMs]
-related: [[concepts/gemini]], [[concepts/gpt-models]], [[concepts/claude-design]]
 sources: [https://www.ibm.com/think/topics/multimodal-ai]
 ---
+
 
 # Multimodal AI
 

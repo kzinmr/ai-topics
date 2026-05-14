@@ -12,12 +12,13 @@ tags:
 aliases:
   - "Flue.js"
 related:
-  - [[entities/anthropic]]
-  - [[concepts/harness-engineering]]
+  - "entities/anthropic]]"
+  - "concepts/harness-engineering]]"
 sources:
   - raw/newsletters/2026-05-05-codex-is-gaining-steam.md
   - https://open.substack.com/pub/bensbites/p/codex-is-gaining-steam
 ---
+
 
 # Flue
 

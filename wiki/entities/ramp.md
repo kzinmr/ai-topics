@@ -13,9 +13,10 @@ sources:
   - https://builders.ramp.com
   - https://techcrunch.com/2026/05/07/ramp-in-talks-to-hit-40b-valuation-6-months-after-reaching-32b/
 related:
-  - [[entities/openai]]
-  - [[entities/anthropic]]
+  - "entities/openai]]"
+  - "entities/anthropic]]"
 ---
+
 
 # Ramp
 

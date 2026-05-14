@@ -14,17 +14,18 @@ aliases:
   - "Service-as-Software JVs"
   - "The Palantir Playbook"
 related:
-  - [[concepts/service-as-software]]
-  - [[entities/openai]]
-  - [[entities/anthropic]]
-  - [[entities/sierra]]
-  - [[entities/palantir]]
+  - "concepts/service-as-software]]"
+  - "entities/openai]]"
+  - "entities/anthropic]]"
+  - "entities/sierra]]"
+  - "entities/palantir]]"
 sources:
   - raw/newsletters/2026-05-06-ainews-silicon-valley-gets-serious-about-services.md
   - https://open.substack.com/pub/swyx/p/ainews-silicon-valley-gets-serious
   - raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md
   - https://www.reuters.com/world/openai-anthropic-ventures-talks-buy-ai-services-firms-sources-say-2026-05-05/
 ---
+
 
 # AI Services Joint Ventures
 

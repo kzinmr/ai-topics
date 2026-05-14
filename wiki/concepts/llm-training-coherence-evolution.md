@@ -5,7 +5,6 @@ created: 2026-04-24
 updated: 2026-04-24
 tags: [training, coherence, fine-tuning, instruction-tuning, Giles-Thomas]
 aliases: ["ift-training-evolution", "llm-training-coherence"]
-related: , , [[gpjt]]
 sources:
   - url: "https://www.gilesthomas.com/2026/04/how-an-llm-becomes-more-coherent-over-training"
     author: "Giles Thomas"

@@ -1,8 +1,4 @@
 ---
-
-## Related Entities
-
-- [[entities/clefourrier]]
 title: Hailey Schoelkopf
 description: Research Scientist at EleutherAI, maintainer of LM Evaluation Harness
 url: https://haileyschoelkopf.github.io/
@@ -21,6 +17,11 @@ sources:
   - https://github.com/EleutherAI/lm-evaluation-harness
   - raw/papers/2024-05-23_2405.14782_lessons-from-the-trenches.md
   - raw/articles/2024-06-11_hailey-schoelkopf-lm-evaluation-deep-dive.md
+---
+
+## Related Entities
+
+- [[entities/clefourrier]]
 ---
 
 # Hailey Schoelkopf
@@ -48,21 +49,4 @@ Engineering for continued pretraining of the Llemma base models for mathematics.
 ## Selected Publications
 
 | Year | Title | Venue |
-|------|-------|-------|
-| 2023 | Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling | ICML 2023 |
-| 2024 | Lessons from the Trenches on Reproducible Evaluation of Language Models | arXiv (EleutherAI tech report) |
-| 2024 | Llemma: An Open Language Model For Mathematics | — |
-| 2024 | Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive? | — |
-
-## Cross-References
-
-- **[[entities/stella-biderman]]** — Co-author and EleutherAI colleague
-- **[[concepts/llm-evaluation-harness]]** — Primary maintained project
-- **[[concepts/open-llm-leaderboard]]** — Uses lm-eval as its evaluation backend
-- **[[entities/eleutherai]]** — Research collective
-
-## Sources
-
-- [Personal website](https://haileyschoelkopf.github.io/)
-- [Google Scholar](https://scholar.google.com/citations?user=XLahYIYAAAAJ)
-- [LM Evaluation Harness GitHub](https://github.com/EleutherAI/lm-evaluation-harness)
+|

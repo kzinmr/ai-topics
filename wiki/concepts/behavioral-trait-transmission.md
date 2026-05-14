@@ -8,11 +8,6 @@ tags:
   - safety
   - alignment
   - training
-- concept
-- safety
-- alignment
-- distillation
-- training
 related:
 - model-distillation
 - trl-fine-tuning

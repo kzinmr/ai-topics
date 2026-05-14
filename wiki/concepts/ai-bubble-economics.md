@@ -7,9 +7,9 @@ tags:
   - economics
   - company
 aliases: ["subprime-ai-crisis", "ai-economics-2026", "ai-bubble-burst"]
-related: [[concepts/claude-mythos-glasswing]], , [[concepts/cognitive-cost-of-agents]], [[concepts/ai-coding-reliability]]
 sources: []
 ---
+
 
 # AI Bubble Economics
 

@@ -9,7 +9,6 @@ tags:
   - memory-systems
   - orchestration
 aliases: [claude-managed-agents, claude-platform-agents]
-related: [[entities/anthropic]], [[concepts/agent-memory]], [[concepts/filesystem-memory]], [[concepts/anthropic-managed-agents]], [[concepts/multi-agent-orchestration]]
 sources:
   - https://platform.claude.com/docs/en/managed-agents/multi-agent
   - https://platform.claude.com/docs/en/managed-agents/define-outcomes
@@ -20,6 +19,7 @@ sources:
   - raw/articles/2026-05-07_claude-managed-agents-webhooks.md
   - raw/articles/2026-05-07_claude-managed-agents-dreams.md
 ---
+
 
 # Claude Managed Agents
 

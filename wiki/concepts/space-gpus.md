@@ -7,9 +7,9 @@ tags:
   - concept
   - infrastructure
 aliases: ["orbital-compute", "space-data-centers"]
-related: [[concepts/compute-scaling-bottlenecks]], [[entities/dylan-patel]], 
 sources: []
 ---
+
 
 # Space GPUs
 

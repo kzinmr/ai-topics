@@ -13,11 +13,6 @@ tags:
   - browser-agent
   - general-purpose-agent
   - company
-- entity
-- technology
-- browser-agent
-- general-purpose-agent
-- startup
 status: active
 sources:
 - https://manus.ai/features/manus-browser-operator

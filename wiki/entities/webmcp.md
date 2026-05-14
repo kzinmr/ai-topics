@@ -13,12 +13,6 @@ tags:
   - browser-agent
   - methodology
   - protocol
-- entity
-- technology
-- browser-agent
-- standard
-- w3c
-- protocol
 status: active
 sources:
 - https://webmcp.link/

@@ -11,7 +11,7 @@ tags:
   - x-account
 aliases:
   - Graeme
-  - @gkisokay
+  - '@gkisokay'
 sources:
   - raw/articles/2026-04-19_mvanhorn_hermes-agent-use-cases-30days.md
   - https://x.com/gkisokay

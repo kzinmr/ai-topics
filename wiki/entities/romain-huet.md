@@ -5,7 +5,7 @@ entity_type: person
 status: L1
 created: 2026-05-12
 updated: 2026-05-12
-sources: [https://x.com/romainhuet, https://www.youtube.com/watch?v=9jgcT0Fqt7U]
+sources: ["https://x.com/romainhuet", "https://www.youtube.com/watch?v=9jgcT0Fqt7U"]
 tags:
   - person
   - openai

@@ -252,7 +252,9 @@
 - [[entities/jayden-milne]] — **Blog:** thejaymo.net
 - [[entities/jay-mody]] — **Blog:** jaykmody.com | Educator known for picoGPT (GPT-2 in 60 lines of NumPy) and clear LLM internals explanations |
 - [[entities/jeff-geerling]] — **URL:** https://www.jeffgeerling.com
-- [[entities/jeff-huber]] — **Jeff Huber (@jeffchuber)** — Co-founder & CEO, Chroma (open-source vector database, $18M seed). Context engineering thought leader: "prompt engineering is script kitty; context engineering is software engineering." Inner Loop / Outer Loop framework. Code-writing unlocks emergent reasoning thesis.- [[entities/jensen-huang]] — **Role** | Co-founder, CEO, and President of Nvidia Corporation |
+- [[entities/jeff-huber]] — **Jeff Huber (@jeffchuber)** — Co-founder & CEO, Chroma (open-source vector database, $18M seed). Context engineering thought leader: "prompt engineering is script kitty; context engineering is software engineering." Inner Loop / Outer Loop framework. Code-writing unlocks emergent reasoning thesis.
+- [[entities/jeremiah-lowin]] — Jeremiah Lowin — Founder & CEO of Prefect, creator of FastMCP. Agent skills/context engineering thought leader. "Second brain" agent philosophy with voice memo pipeline and OpenCode+OpenClaw workflow. Creator of Prefab (generative UI DSL) and Cardboard.
+- [[entities/jensen-huang]] — **Role** | Co-founder, CEO, and President of Nvidia Corporation |
 - [[entities/jim-fan]] — **X** | @jim-fan |
 - [[entities/jim-nielsen]] — **Blog** | Jim Nielsen's Blog |
 - [[entities/jo-kristian-bergum]] — **URL:** https://hornet.dev
@@ -367,6 +369,7 @@
 - [[entities/rahul]] — **URL:** https://rahul.gs/
 - [[entities/rakhim-exotext-com]] — **Rakhim Davletkaliyev** is a staff engineer at concepts/iqm-quantum-computers, a programming educator, author, and philosophical tech writer. He blogs at concepts/rakhim.exotext.com (with a web lo...
 - [[entities/ramp-labs]] — AI research company focused on multi-agent system efficiency. Created Latent Briefing — KV cache compaction for efficient memory sharing between agents.
+- [[entities/randy-olson]] — Randy Olson (Randal S. Olson) — Co-Founder & CTO of Goodeye Labs. 15+ years AI/ML. Data visualization legend, r/DataIsBeautiful moderator. Creator of TPOT AutoML, Tufte Test (LLM-as-judge for data viz), Truesight MCP agent skills, generator-evaluator workflow pattern.
 - [[entities/raw-works]] — **Role:** ML researcher, RLM (Recursive Language Model) practitioner
 - [[entities/refactoring-english]] — ソフトウェアエンジニアリング、AI vs人間の文章品質。refactoringenglish.com
 - [[entities/reflection-ai]] — AI startup building open-weight models to counter Chinese AI. Pentagon defense partner, backed by Nvidia and 1789 Capital. No public model yet.
@@ -428,6 +431,7 @@
 - [[entities/thoughtful-lab]] — AI research lab exploring modelcrafting: autonomous AI agents improving other AI models. Landmark experiment "Letting AI Posttrain AI" (Apr 2026).
 - [[entities/theodoros-galanos]] — AI researcher and harness engineering practitioner. Chief Science Officer at infrared.city, author of The Harness blog, creator of Lambda-RLM and AEC-Bench. @TheodoreGalanos.
 - [[entities/thin-bi-tool]] — 薄くなるBIツール — BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
+- [[entities/thomas-wiecki]] — Thomas Wiecki — CEO of PyMC Labs, PyMC core developer, co-host of Show Us Your Agent Skills. Bayesian statistics expert.
 - [[entities/thorsten-ball]] — **Thorsten Ball** — Software engineer, author of Writing An Interpreter In Go and Writing A Compiler In Go, works on Amp at Sourcegraph. Wrote "How to Build a Code-Editing Agent: The Emperor Has No Clothes Guide."
 - [[entities/tim-davis]] — Tim Davis — Modular executive, Compound Loop creator. Originated "probabilistic engineering" and "24-7 employee" concepts. Key thinker on AI-native team restructuring and agent fleet orchestration.
 - [[entities/tim-dettmers]] — Researcher (UW), creator of bitsandbytes, LLM.int8() (zero-degradation 8-bit inference), and QLoRA (4-bit fine-tuning). Discovered 6.7B parameter phase shift for emergent outlier features.
@@ -450,7 +454,7 @@
 - [[entities/walden-yan]] — **Role** | Co-Founder & Chief Product Officer (CPO), Cognition AI |
 - [[entities/warp-terminal]] — AI-native terminal and Agentic Development Environment (ADE). Open-sourced April 2026 under AGPLv3 with OpenAI as founding sponsor. Oz orchestration platform.
 - [[entities/webmcp]] — **WebMCP**は、W3C Web Machine Learning Community Groupで開発されているブラウザ標準。GoogleとMicrosoftが共同で策定し、AIエージェントがWebアプリケーションと構造的に対話するための`navigator.modelContext` APIを定義する。2026年2月にChrome 146で早期プレビューが開始された。
-- [[entities/wes-mckinney]] — Wes McKinney — pandas creator, Apache Arrow co-creator, Principal Architect at Posit. Agent Ergonomics thesis: Go/Rust > Python for agentic engineering. Creator of roborev.
+- [[entities/wes-mckinney]] — Wes McKinney — pandas creator, Apache Arrow/Ibis co-creator, Principal Architect at Posit. Agentic engineering pioneer: RoboRev continuous code review daemon, Agents View session DB, Middleman dashboard, spicytakes.org (1M+ lines agentically). "I almost don't read code now." Superpowers skills framework (Jesse Vincent). Agent Ergonomics thesis. GP at Composed Ventures.
 - [[entities/westenberg]] — **Blog** | joanwestenberg.com |
 - [[entities/will-mcgugan]] — **X** | @willmcgugan |
 - [[entities/wirtzdan]] — **Blog** | danielwirtz.com |
@@ -600,6 +604,7 @@
 - [[concepts/agentic-rag]] — Agentic RAG: AIエージェントによる動的Retrieval-Augmented Generation
 - [[concepts/agentic-retrieval]] — Agentic Retrieval: エージェント駆動の検索パターン
 - [[concepts/agent-ergonomics]]
+- [[concepts/agentic-engineering]] — Agentic Engineering: disciplined software development using AI agents, where verification not code reading is the critical skill. Wes McKinney's software factory, RoboRev continuous review, generator-evaluator workflows. Evolution from vibe coding.
 - [[concepts/agentic-security]] — Security considerations for AI agents: supply chain attacks, package installation risks, threat model blind spots, cross-domain vulnerability amplification. — Programming language design principles optimized for AI coding agents (compile speed, distribution, runtime) over human readability. Wes McKinney's thesis: Go/Rust > Python for agentic loops.
 - [[concepts/agentic-identity]] — Modeling AI agents as financial actors. Ramp's OBOU (On Behalf Of User) framework for enterprise agent identity, compliance, and audit.
 - [[concepts/agentic-loop]] — Agentic Loop — The canonical AI agent execution pattern: decide → act → observe. Every major agent framework converges on this same loop. ReAct, Ralph Wiggum, /goal variants.

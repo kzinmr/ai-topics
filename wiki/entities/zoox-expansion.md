@@ -7,10 +7,6 @@ tags:
   - entity
   - robotics
   - aws
-- entity
-- autonomous-vehicles
-- amazon
-- robotaxi
 related:
 - amazon
 - autonomous-driving

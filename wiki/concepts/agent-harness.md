@@ -7,7 +7,6 @@ tags:
   - architecture
   - ai-agents
 aliases: [agent-harness, harness-anatomy, agent-scaffolding]
-related: [[concepts/harness-engineering]], [[concepts/deep-agents-runtime]], [[concepts/agent-loop-orchestration]], [[concepts/context-engineering]], [[concepts/bitter-lesson-harnessing]], [[entities/atal-upadhyay]], [[entities/kartik-labhshetwar]], [[entities/mitchell-hashimoto]], [[entities/addy-osmani]], [[entities/fred-schott]], [[entities/dex-horthy]], [[concepts/why-harness-development-boom]]
 sources: [
   "https://x.com/akshay_pachaar/status/2041146899319971922",
   "https://x.com/i/article/2041146899319971922",
@@ -18,14 +17,15 @@ sources: [
   "raw/articles/crawl-2026-04-18-token-economics.md",
   "raw/articles/2026-is-s3-faster-than-a-file-system.md",
   "raw/articles/2026-05-02_atalupadhyay-agent-harness.md",
-  - "raw/articles/2026-05-06_vtrivedy10_strong-opinions-agent-harness-engineering.md",
-  - "https://x.com/vtrivedy10/status/2052100726608781363",
-  - "raw/articles/2026-05-02_codekartik-why-everyone-building-agent-harness.md",
-  - "https://x.com/code_kartik/status/2050631735529095575",
-  - "raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md",
-  - "https://x.com/addyosmani/status/2053231239721885918"
+  "raw/articles/2026-05-06_vtrivedy10_strong-opinions-agent-harness-engineering.md",
+  "https://x.com/vtrivedy10/status/2052100726608781363",
+  "raw/articles/2026-05-02_codekartik-why-everyone-building-agent-harness.md",
+  "https://x.com/code_kartik/status/2050631735529095575",
+  "raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md",
+  "https://x.com/addyosmani/status/2053231239721885918"
 ]
 ---
+
 
 # Agent Harness
 

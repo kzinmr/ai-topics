@@ -14,11 +14,6 @@ tags:
   - ai-agents
   - browser-agent
   - openai
-- entity
-- technology
-- computer-use
-- browser-agent
-- openai
 status: active
 sources:
 - https://openai.com/blog/introducing-operator

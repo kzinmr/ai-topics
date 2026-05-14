@@ -8,9 +8,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [Clawdbot, OpenClaw Agent Framework]
-related: [[entities/openclaw]], [[entities/peter-steinberger]], [[entities/hermes-agent]], [[concepts/agent-harness-primitives]], [[concepts/agent-sandboxing]]
 sources: [https://github.com/OpenClaw/OpenClaw, https://blog.owulveryck.info/2025/10/11/openclaw-demystify-the-ai-agent-that-runs-on-your-machine.html]
 ---
+
 
 # OpenClaw
 

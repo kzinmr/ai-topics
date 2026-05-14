@@ -12,7 +12,6 @@ tags:
   - multi-llm
 sources:
   - "raw/articles/timsh.org--claude-inside-docker--6842418e.md"
-  - "raw/articles/timsh.org--how-i-created-an-ethereum-proof-of-stake-demo-entirely-with---3d132b24.md"
 ---
 
 # AI Coding Workflows

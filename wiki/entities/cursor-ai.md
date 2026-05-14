@@ -13,9 +13,9 @@ aliases:
   - "Cursor"
   - "cursor.com"
 related:
-  - [[concepts/programbench]]
-  - [[entities/openai]]
-  - [[entities/anthropic]]
+  - "concepts/programbench]]"
+  - "entities/openai]]"
+  - "entities/anthropic]]"
 sources:
   - raw/newsletters/2026-05-06-ainews-silicon-valley-gets-serious-about-services.md
   - https://open.substack.com/pub/swyx/p/ainews-silicon-valley-gets-serious
@@ -23,6 +23,7 @@ sources:
   - https://cursor.com/blog/series-d
   - https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html
 ---
+
 
 # Cursor AI
 

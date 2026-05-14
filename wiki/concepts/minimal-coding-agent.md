@@ -15,14 +15,15 @@ aliases:
   - heartbeat-loop-agent
   - 400-line-agent
 related:
-  - [[concepts/agent-loop-orchestration]]
-  - [[concepts/agent-harness]]
-  - [[concepts/harness-engineering]]
-  - [[concepts/building-effective-agents]]
+  - "concepts/agent-loop-orchestration]]"
+  - "concepts/agent-harness]]"
+  - "concepts/harness-engineering]]"
+  - "concepts/building-effective-agents]]"
 sources:
   - raw/articles/2025-04-15_ampcode-how-to-build-a-code-editing-agent.md
   - https://ampcode.com/notes/how-to-build-an-agent
 ---
+
 
 # Minimal Coding Agent
 

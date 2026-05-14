@@ -12,13 +12,14 @@ aliases:
   - "MiniMax-M2.7"
   - "M2.7"
 related:
-  - [[entities/minimax]]
-  - [[concepts/agent-harness-primitives]]
-  - [[concepts/agentic-engineering]]
+  - "entities/minimax]]"
+  - "concepts/agent-harness-primitives]]"
+  - "concepts/agentic-engineering]]"
 sources:
   - raw/articles/minimax-m27-self-improving-2026.md
   - https://www.bentoml.com/blog/navigating-the-world-of-open-source-large-language-models
 ---
+
 
 # MiniMax M2.7
 

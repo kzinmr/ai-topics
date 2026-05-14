@@ -15,14 +15,15 @@ aliases:
   - akshay_pachaar
   - Daily Dose of Data Science
 related:
-  - [[concepts/agent-harness]]
-  - [[concepts/harness-engineering]]
-  - [[entities/intuit-machine]]
+  - "concepts/agent-harness]]"
+  - "concepts/harness-engineering]]"
+  - "entities/intuit-machine]]"
 sources:
   - "https://x.com/akshay_pachaar"
   - "https://github.com/patchy631"
   - "https://in.linkedin.com/in/akshay-pachaar"
 ---
+
 
 # Akshay Pachaar
 

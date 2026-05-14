@@ -5,9 +5,9 @@ created: 2026-04-10
 updated: 2026-04-10
 tags: [concept, privacy, cors, browser-security, ai-agents, web-scraping]
 aliases: ["ai-privacy-techniques", "cors-bypass", "agent-browser-security"]
-related: [[concepts/claude-mythos-glasswing]], [[concepts/ai-agent-traps]], [[concepts/agent-sandboxing]], [[concepts/anthropic-managed-agents]]
 sources: []
 ---
+
 
 # AI Privacy Tools
 

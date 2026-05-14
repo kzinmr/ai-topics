@@ -7,10 +7,6 @@ tags:
   - entity
   - model
   - openai
-- entity
-- model
-- openai
-- gpt
 related:
 - openai
 - gpt-5

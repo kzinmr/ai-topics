@@ -9,9 +9,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [Apple MLX, MLX Framework, MLX Community]
-related: [[concepts/inference/llama-cpp]], [[concepts/local-llm]], [[concepts/fine-tuning]], [[concepts/mac-studio-local-ai]]
 sources: [https://github.com/ml-explore/mlx, https://ml-explore.github.io/mlx/build/html/index.html]
 ---
+
 
 # MLX
 

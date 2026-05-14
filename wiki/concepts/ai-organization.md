@@ -11,8 +11,8 @@ tags:
   - governance
   - workflow
 aliases: [AI org, agentic organization, ai-org]
-related: [[concepts/ai-organization/_index]], [[concepts/ai-organization/ai-org-context-as-moat]], [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]], [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]]
 ---
+
 
 # AI Organization
 

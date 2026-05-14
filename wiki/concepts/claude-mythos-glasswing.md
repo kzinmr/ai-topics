@@ -8,7 +8,6 @@ tags:
   - security
   - agent-safety
 aliases: ["project-glasswing", "mythos-preview"]
-related: , , [[concepts/cognitive-cost-of-agents]], 
 sources: []
 ---
 

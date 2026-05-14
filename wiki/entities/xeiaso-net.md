@@ -11,13 +11,6 @@ tags:
   - nix
   - security
   - open-source
-- person
-- blogger
-- hn-popular
-- infrastructure-engineering
-- nix
-- web-security
-- free-software
 aliases:
 - xeiaso.net
 - Cadey

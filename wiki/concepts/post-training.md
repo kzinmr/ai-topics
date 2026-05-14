@@ -19,16 +19,17 @@ tags:
   - model-training
   - modelcrafting
 related:
-  - [[concepts/modelcrafting]]
-  - [[concepts/fine-tuning-post-training-overview]]
-  - [[concepts/rlhf-reinforcement-learning-from-human-feedback]]
-  - [[concepts/rlhf-dpo-orpo-kto-preference-optimization]]
-  - [[concepts/llm-fine-tuning]]
-  - [[entities/thoughtful-lab]]
+  - "concepts/modelcrafting]]"
+  - "concepts/fine-tuning-post-training-overview]]"
+  - "concepts/rlhf-reinforcement-learning-from-human-feedback]]"
+  - "concepts/rlhf-dpo-orpo-kto-preference-optimization]]"
+  - "concepts/llm-fine-tuning]]"
+  - "entities/thoughtful-lab]]"
 sources:
   - https://www.thoughtfullab.com/letting-ai-posttrain-ai.html
   - raw/articles/2026-04_thoughtfullab-letting-ai-posttrain-ai.md
 ---
+
 
 # Post-Training
 

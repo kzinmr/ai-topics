@@ -7,9 +7,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [Clinical AI, Healthcare AI, Medical AI, Clinical Decision Support]
-related: [[concepts/multimodal]], [[concepts/rags]], [[entities/noetik]]
 sources: [https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices, https://www.nature.com/articles/s41591-025-03746-5]
 ---
+
 
 # Clinical AI
 

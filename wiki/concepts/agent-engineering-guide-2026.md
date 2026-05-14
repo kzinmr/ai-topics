@@ -16,18 +16,19 @@ aliases:
   - 2026 agent guide
   - what to learn in AI agents
 related:
-  - [[concepts/context-engineering]]
-  - [[concepts/harness-engineering]]
-  - [[concepts/prompt-caching]]
-  - [[concepts/evals-for-ai-agents]]
-  - [[concepts/mcp]]
-  - [[concepts/agent-sandboxing]]
-  - [[concepts/agent-memory]]
-  - [[entities/claude-code]]
+  - "concepts/context-engineering]]"
+  - "concepts/harness-engineering]]"
+  - "concepts/prompt-caching]]"
+  - "concepts/evals-for-ai-agents]]"
+  - "concepts/mcp]]"
+  - "concepts/agent-sandboxing]]"
+  - "concepts/agent-memory]]"
+  - "entities/claude-code]]"
 sources:
   - raw/articles/2026-04-30_x--what-to-learn-build-skip-ai-agents.md
   - https://x.com/i/article/2049548305408131349
 ---
+
 
 # Agent Engineering Guide 2026: What to Learn, Build, and Skip
 

@@ -8,8 +8,8 @@ tags:
   - memory-systems
   - context-engineering
 aliases: [filesystem-memory, agent-filesystem-memory]
-related: [[concepts/claude-managed-agents]], [[concepts/agent-memory]], [[concepts/context-engineering]]
 ---
+
 
 # Filesystem as Agent Memory
 

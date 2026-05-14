@@ -8,12 +8,6 @@ tags:
   - model
   - mistral
   - multimodal
-- entity
-- model
-- mistral
-- tts
-- audio
-- speech
 related:
 - mistral
 - text-to-speech

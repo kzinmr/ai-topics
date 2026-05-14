@@ -10,13 +10,6 @@ tags:
   - local-llm
   - quantization
   - optimization
-related:
-- "[[concepts/local-llm/gguf]]"
-- "[[concepts/inference/llama-cpp]]"
-- "[[concepts/inference/vllm]]"
-- "[[entities/georgi-gerganov]]"
-  - "[[entities/nvidia-dgx-spark]]"
-  - ""
 sources: []
 ---
 

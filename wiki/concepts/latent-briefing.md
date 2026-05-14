@@ -7,11 +7,11 @@ tags:
   - kv-cache
   - optimization
 aliases: [latent-briefing]
-related: [[concepts/kv-cache-compaction]], [[concepts/multi-agent-systems]], [[concepts/recursive-language-models]], [[entities/ramp-labs]]
 sources: [
   "https://x.com/RampLabs/status/2042660310851449223"
 ]
 ---
+
 
 # Latent Briefing
 

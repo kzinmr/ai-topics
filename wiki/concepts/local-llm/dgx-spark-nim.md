@@ -10,7 +10,6 @@ tags:
   - inference
   - infrastructure
 aliases: ["nvidia-dgx-spark", "local-llm-server", "gb10-superchip", "nim-on-spark"]
-related: [[concepts/self-hosting-ai-development]], [[concepts/ollama]], [[concepts/llama-cpp]], [[concepts/inference/vllm]], [[concepts/openclaw]]
 sources:
   - url: "https://docs.nvidia.com/dgx/dgx-spark/dgx-spark.pdf"
     author: "NVIDIA"
@@ -25,6 +24,7 @@ sources:
     author: "Michael Hart"
     title: "The Ultimate Guide to Local LLM Deployment on NVIDIA DGX Spark (2026)"
 ---
+
 
 # DGX Spark: Local LLM Server & NemoClaw Setup
 

@@ -8,11 +8,11 @@ tags:
   - mcp
   - coding-agents
 aliases: [Agent Client Protocol, ACP]
-related: [[concepts/agent-communication-protocols]], [[concepts/mcp]], [[concepts/ai-coding-agent-criticism]]
 sources:
   - "https://www.philschmid.de/acp-overview"
   - "https://agentclientprotocol.com/get-started/introduction"
 ---
+
 
 # Agent Client Protocol (ACP)
 

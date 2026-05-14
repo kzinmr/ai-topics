@@ -9,9 +9,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [Cursor, Cursor Editor, Cursor AI]
-related: [[entities/cursor-3]], [[concepts/harness-engineering]], [[concepts/claude-code]], [[concepts/coding-agents]]
 sources: [https://cursor.com/, https://docs.cursor.com/]
 ---
+
 
 # Cursor IDE
 

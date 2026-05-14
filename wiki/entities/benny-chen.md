@@ -11,7 +11,7 @@ tags:
   - open-source
 aliases:
   - Benny Chen
-  - @bennychen  # speculative handle
+  - '@bennychen'  # speculative handle
 sources:
   - raw/articles/2026-04-28_fireworks-ai-open-weight-models-sed.md
   - https://softwareengineeringdaily.com/2026/04/28/open-weight-ai-models/

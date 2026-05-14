@@ -10,7 +10,6 @@ tags:
   - lab
   - pytorch
 aliases: ["sglang-serving", "radix-attention", "xgrammar"]
-related: [[concepts/inference/vllm]], [[concepts/inference/llama-cpp]], [[concepts/structured-outputs]], [[concepts/inference-speed-development]]
 sources:
   - url: "https://github.com/sgl-project/sglang"
     author: "LMSYS Org"
@@ -25,6 +24,7 @@ sources:
     author: "Hugging Face"
     title: "SGLang on HF Inference Endpoints"
 ---
+
 
 # SGLang (Structured Generation Language)
 

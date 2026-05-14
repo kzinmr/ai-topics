@@ -9,12 +9,13 @@ tags:
 aliases:
   - Malika Aubakirova
 related:
-  - [[entities/openrouter]]
-  - [[concepts/openrouter-state-of-ai-2025]]
+  - "entities/openrouter]]"
+  - "concepts/openrouter-state-of-ai-2025]]"
 sources:
   - raw/articles/2025-12-01_openrouter-state-of-ai-2025.md
   - https://openrouter.ai/state-of-ai
 ---
+
 
 # Malika Aubakirova
 

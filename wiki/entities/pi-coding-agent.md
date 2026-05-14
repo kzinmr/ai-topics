@@ -1,7 +1,7 @@
 ---
 title: pi (Coding Agent) [redirected to entities/pi]
 type: redirect
-redirect: "[[entities/pi]]"
+redirect: "pi"
 created: 2026-04-28
 updated: 2026-05-07
 tags:

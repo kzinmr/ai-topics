@@ -1,5 +1,5 @@
 ---
-title: "system-architecture/_index\"
+title: "system-architecture/_index"
 type: concept
 aliases:
   - system-architecture-_index
@@ -8,7 +8,6 @@ updated: 2026-04-25
 tags:
   - concept
 status: stub
-
 ---
 
 # system-architecture/_index\

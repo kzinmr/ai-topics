@@ -8,12 +8,12 @@ tags:
   - sandbox
   - open-source
 aliases: ["rivet-dev", "rivet.gg"]
-related: [[concepts/agent-sandboxing]], [[concepts/docker-sandbox-microvm-api]], [[entities/nathan-flurry]], [[concepts/agent-sandboxing-patterns]]
 sources:
   - "https://www.rivet.dev"
   - "https://github.com/rivet-dev"
   - "https://www.rivet.dev/blog/2026-02-04-we-reverse-engineered-docker-sandbox-undocumented-microvm-api/"
 ---
+
 
 # Rivet (rivet.dev)
 

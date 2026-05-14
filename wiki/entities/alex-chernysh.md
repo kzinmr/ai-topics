@@ -11,7 +11,7 @@ tags:
   - orchestration
 aliases:
   - alex-chernysh
-  - @alex_chernysh
+  - '@alex_chernysh'
   - chernistry
 sources:
   - https://alexchernysh.com/

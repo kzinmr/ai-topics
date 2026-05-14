@@ -14,7 +14,7 @@ tags:
 aliases:
   - Artem Zakirullin
   - zakirullin
-  - @zakirullin
+  - '@zakirullin'
 sources:
   - https://minds.md/zakirullin
   - https://github.com/zakirullin/cognitive-load

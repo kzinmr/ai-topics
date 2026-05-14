@@ -9,11 +9,11 @@ tags:
   - orchestration
   - anthropic
 aliases: ["session-hierarchy", "context-hierarchy", "multi-level-session-management"]
-related: [[concepts/context-window-management]], [[concepts/back-of-house-patterns]], [[concepts/single-agent-ceiling]], [[concepts/subagents]]
 sources:
   - raw/articles/anthropic-claude-code-session-management-1m-context.md
   - raw/articles/milksandmatcha-0xsero-single-agent-nightmare-2026.md
 ---
+
 
 # Session Hierarchy Management
 

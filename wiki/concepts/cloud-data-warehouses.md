@@ -6,9 +6,9 @@ status: L3
 created: 2026-04-27
 updated: 2026-04-28
 aliases: [Cloud DW, Cloud Data Warehouse, Modern Data Warehouse, CDW]
-related: [[concepts/data-engineering]], [[concepts/event-driven-architecture]], [[concepts/ai-observability]]
 sources: [https://www.snowflake.com/en/, https://cloud.google.com/bigquery, https://www.databricks.com/product/data-warehouse]
 ---
+
 
 # Cloud Data Warehouses
 

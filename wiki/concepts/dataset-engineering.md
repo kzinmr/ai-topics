@@ -14,13 +14,14 @@ tags:
   - mlops
   - training
 related:
-  - [[concepts/synthetic-data]]
-  - [[concepts/autodata-agentic-data-creation]]
-  - [[concepts/harness-engineering]]
+  - "concepts/synthetic-data]]"
+  - "concepts/autodata-agentic-data-creation]]"
+  - "concepts/harness-engineering]]"
 sources:
   - raw/articles/2025-01-16_pelayoarbues-dataset-engineer.md
   - https://www.pelayoarbues.com/notes/The-Rise-of-the-Dataset-Engineer
 ---
+
 
 # Dataset Engineering
 

@@ -7,7 +7,6 @@ tags:
 created: 2026-05-01
 updated: 2026-05-01
 aliases: [Beads (bd), bd, Beads Issue Tracker, Gastown Hall Beads]
-related: [[dolt]], [[entities/claude-code]], [[claude-perfect-memory]], [[concepts/agent-memory-systems]], [[concepts/agent-task-tracking]]
 sources:
   - https://gastownhall.github.io/beads/
   - https://github.com/steveyegge/beads
@@ -15,6 +14,7 @@ sources:
   - https://www.npmjs.com/package/@beads/bd
   - https://pypi.org/project/beads-mcp/
 ---
+
 
 # Beads (bd)
 

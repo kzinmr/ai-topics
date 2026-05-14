@@ -6,13 +6,13 @@ updated: 2026-04-13
 tags:
   - developer-tooling
 aliases: ["ai-burnout", "developer-addiction-patterns", "black-eye-club", "slot-machine-development"]
-related: [[concepts/inference-speed-development]], [[concepts/direct-prompting-philosophy]], 
 sources:
   - url: "https://steipete.me/posts/2025/just-one-more-prompt"
     author: "Peter Steinberger (@steipete)"
     date: "2025-08-19"
     title: "Just One More Prompt"
 ---
+
 
 # AI Addiction and Burnout Patterns
 

@@ -1,8 +1,4 @@
 ---
-
-## Related Entities
-
-- [[entities/tobi-lutke]]
 title: Farhan Thawar
 created: 2026-04-26
 updated: 2026-04-26
@@ -10,6 +6,11 @@ type: entity
 tags: [person]
 sources:
   - raw/articles/2026-04-24-experience-is-now-a-tax.md
+---
+
+## Related Entities
+
+- [[entities/tobi-lutke]]
 ---
 
 # Farhan Thawar

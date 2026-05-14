@@ -9,7 +9,6 @@ tags:
   - developer-tooling
   - open-source
 aliases: [ollama-runner, ollama-cli]
-related: [[concepts/inference/llama-cpp]], [[concepts/local-llm]], [[concepts/local-llm/inference-hardware]]
 sources:
   - url: "https://ollama.com/"
     title: "Ollama — Official Site"
@@ -18,6 +17,7 @@ sources:
   - url: "https://myaiguide.co/repos/ollama-ollama"
     title: "Ollama: Run AI Models Locally (2026 Guide)"
 ---
+
 
 # Ollama — Local LLM Runner
 

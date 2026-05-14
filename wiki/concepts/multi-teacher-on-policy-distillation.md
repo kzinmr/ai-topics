@@ -12,11 +12,11 @@ aliases:
   - On-Policy Distillation
   - OPD
   - Multi-Teacher Distillation
-related: [[concepts/grpo-rl-training]], [[model-distillation]], [[reinforcement-fine-tuning]], [[concepts/rlhf]]
 sources:
   - raw/articles/2026-05-04_multi-teacher-on-policy-distillation.md
   - https://yumoxu.notion.site/multi-teacher-on-policy-distillation
 ---
+
 
 # Multi-Teacher On-Policy Distillation (MOPD)
 

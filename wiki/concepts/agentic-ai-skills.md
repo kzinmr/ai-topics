@@ -7,11 +7,11 @@ tags:
   - prompting
   - harness-engineering
 aliases: [ai-skills, agent-skills]
-related: [[concepts/agent-harness]], [[concepts/harness-engineering]], [[concepts/personal-os-for-ai-agents]], [[tool-orchestration]]
 sources: [
   "https://x.com/IntuitMachine/status/2043071219667480853"
 ]
 ---
+
 
 # Agentic AI Skills Design
 
