@@ -5,6 +5,21 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-14] ingest | Newsletter Wiki Ingest: AINews "Codex Rises, Claude Meters Programmatic Usage"
+
+### Pages Created
+- `concepts/mandate-equinox.md` — Mandate Equinox: OpenAI-Anthropic 6ヶ月交代サイクル概念。DanB (@irl_danB) 提唱。
+
+### Pages Updated
+- `entities/claude-code.md` — Added "Programmatic Usage Metering (May 2026)" section. Anthropicが$200サブスクリプションに$200 APIクレジットを付与。Claude Agent SDK/claude -p/サードパーティハーネス利用が正式メータリング対象に。
+- `entities/openai-codex.md` — Added "Growth Metrics" section. Codex 300万WAU (April 8)、400万WAU (April 22) の成長データ。
+
+### Sources
+- AINews "Codex Rises, Claude Meters Programmatic Usage" (May 14, 2026)
+- @ClaudeDevs pricing announcement (May 13, 2026)
+- Sam Altman Codex 3M WAU announcement (April 8, 2026)
+- WSJ Codex 4M WAU report (April 22, 2026)
+
 ## [2026-05-14] ingest | Blog scan: 36 articles (20 saved, 16 skipped)
 
 ### Major AI articles processed:

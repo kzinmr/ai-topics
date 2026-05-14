@@ -2,16 +2,19 @@
 title: Claude Code
 type: entity
 created: 2026-04-24
-updated: 2026-05-13
+updated: 2026-05-14
 tags:
   - product
   - coding-agent
   - anthropic
+  - economics
 aliases:
   - Claude Code CLI
   - Anthropic Coding Agent
   - Claude Code Desktop
 sources:
+  - https://x.com/ClaudeDevs/status/2054610152817619388
+  - https://www.latent.space/p/ainews-codex-rises-claude-meters
   - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md
   - https://code.claude.com/en/whats-new/2026-w15
   - https://code.claude.com/en/whats-new/2026-w14
@@ -148,7 +151,22 @@ Claude Design (April 2026) creates a direct handoff pipeline to Claude Code. Whe
 ### Pricing (April 2026)
 
 | Plan | Price | Details |
-|------|-------|---------|
+|
+
+### Programmatic Usage Metering (May 2026)
+
+On May 13, 2026, Anthropic announced a major pricing change via [@ClaudeDevs](https://x.com/ClaudeDevs/status/2054610152817619388), effective June 15, 2026:
+
+- **Every paid Claude subscription now includes a dedicated monthly credit for programmatic usage**, equal to the dollar amount of the plan (e.g., $200/mo plan = $200 API credits)
+- **Programmatic usage** covers: Claude Agent SDK, `claude -p`, Claude Code GitHub Actions, and third-party apps built on the Agent SDK
+- **Interactive usage** (Claude.ai, Claude Code CLI/Desktop) retains its own limits separate from the API credit pool
+- Previously, programmatic usage via OpenClaw, OpenCode, and other third-party harnesses was effectively subsidized at 70-90% below API pricing — this change formalizes and meters it
+
+The announcement was met with mixed reactions: framed as a "rug pull" by some users who relied on the historical subsidy, but viewed by Anthropic as rationalizing a pricing model that was never sustainable for third-party harness usage. OpenClaw and OpenCode had already been selectively targeted; the new policy makes metering universal and transparent.
+
+**Context**: This coincides with OpenAI's launch of an [enterprise switch promo](https://x.com/OpenAIDevs/status/2054586214112780518) the same day. Anthropic is consolidating its most favorable pricing behind its own tools (Claude Code, Claude.ai) now that its brand is established, while OpenAI Codex as the challenger maintains more liberal usage policies. See [[concepts/mandate-equinox]] for the broader competitive cycle.
+
+Sources: [@ClaudeDevs — May 13, 2026](https://x.com/ClaudeDevs/status/2054610152817619388), [AINews: Codex Rises, Claude Meters Programmatic Usage](https://www.latent.space/p/ainews-codex-rises-claude-meters)------|-------|---------|
 | **Pro** | $17/mo annual or $20/mo monthly | Claude Code included; Sonnet 4.6 + Opus 4.7 |
 | **Max 5x** | $100/mo | Larger codebases, more usage |
 | **Max 20x** | $200/mo | Maximum access, power users |
