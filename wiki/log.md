@@ -111,3 +111,24 @@
 - `~/wiki/entities/nvidia.md` — updated
 - `~/wiki/index.md` — updated (added nvidia-vera-rubin entry)
 - `~/wiki/log.md` — updated
+
+## [2026-05-14] ingest | NVIDIA Rubin comprehensive research report
+- Saved raw article: `raw/articles/2026-05-14_kzinmr_nvidia-rubin-comprehensive-report.md` (108 lines)
+
+## [2026-05-14] enrich | concepts/nvidia-vera-rubin
+- Major enrichment from comprehensive research report (340 lines, ~24 KB):
+- Added: Scaling law shift analysis (Pre-Training → Post-Training → Test-Time), MFU 35-50% utilization, compute 4.4×/yr vs bandwidth 2×/2-3yr growth gap
+- Added: HBM4 supply chain dynamics (NVIDIA 11-13 Gbps pin speed requirements, SK Hynix shifting to TSMC 3nm, Samsung 4nm + 3D hybrid bonding, CoWoS-L packaging, Intel ZAM competition)
+- Added: DGX Rubin NVL8 enterprise air-cooled variant (8 GPU, Intel Xeon 6776P, ~24 kW, 400 PFLOPS NVFP4)
+- Added: Groq 3 LPX detailed architecture (500MB SRAM/chip, 80 TB/s/chip, 256-chip LPX rack, 40 PB/s SRAM fabric, joint decode computation)
+- Added: Co-Packaged Optics (CPO) physics deep dive (<5 pJ/bit vs 20-30 pJ/bit, 6× optical density gap)
+- Added: Physical infrastructure impact (190-230 kW/rack, 45°C DLC forcing chiller elimination, HVAC market impact)
+- Added: NVL72 detailed performance specs table (all precision modes: NVFP4 through FP64)
+- Added: Market deployment timeline (Q1 2026 mass production, H2 2026 shipments)
+- Added: Blackwell → Rubin generation comparison table
+
+### Files affected
+- `~/wiki/raw/articles/2026-05-14_kzinmr_nvidia-rubin-comprehensive-report.md` — new
+- `~/wiki/concepts/nvidia-vera-rubin.md` — enriched (196 → 340 lines)
+- `~/wiki/log.md` — updated
+
