@@ -5,6 +5,13 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-14] enrich | Blog Wiki Ingest: Sierra τ-knowledge benchmark
+
+### Pages Updated
+- `entities/sierra.md` — Added "Research & Benchmarks" section covering τ-Knowledge / τ-Banking benchmark. Key data: GPT-5.5 xhigh leads at 37.4% pass^1 (up 11.9pt from GPT-5.2), ~63pt headroom remains, behavioral insights on smarter search patterns (9.1 vs 19.4 queries/task). Added sources, benchmark/evaluation/research tags, and cross-references to concepts/tau-knowledge and concepts/tau-bench.
+
+---
+
 ## [2026-05-14] ingest | Newsletter Wiki Ingest: AINews "Codex Rises, Claude Meters Programmatic Usage"
 
 ### Pages Created

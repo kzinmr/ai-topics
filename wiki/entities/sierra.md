@@ -1,13 +1,14 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-14
 type: entity
-tags: [company, ai-agents, product, platform, valuation]
+tags: [company, ai-agents, product, platform, valuation, benchmark, evaluation, research]
 sources:
   - raw/newsletters/2026-05-04-ainews-the-other-vs-the-utility.md
   - https://www.cnbc.com/2026/05/04/bret-taylor-sierra-fundraise-openai.html
   - https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/
+  - raw/articles/sierra.ai--blog-tau-knowledge--5dda7a09.md
 ---
 
 # Sierra
@@ -43,6 +44,22 @@ Sierra operates in the rapidly growing **AI customer service agent** space:
 - Part of the broader "Service-as-Software" thesis — selling outcomes, not tools
 - Represents the enterprise AI agent deployment model: specialized agents with clear business metrics
 
+## Research & Benchmarks
+
+Sierra develops and maintains evaluation benchmarks for conversational AI agents, notably **[[concepts/tau-knowledge|τ-Knowledge]]**, an extension of [[concepts/tau-bench|τ-Bench]] that evaluates agents on realistic knowledge work.
+
+### τ-Knowledge / τ-Banking
+
+τ-Knowledge evaluates agents on their ability to search a realistic knowledge base (698 documents, ~195K tokens across 21 product categories), reason over findings, and execute multi-step tool calls — all while handling live customer conversations in a fintech-inspired **τ-Banking** domain.
+
+Key findings (May 2026 leaderboard):
+- **GPT-5.5 + xhigh reasoning** leads at **37.4% pass^1**, **20.6% pass^4** — up 11.9pt pass^1 from GPT-5.2 (25.5%)
+- ~63 percentage points of pass^1 headroom remain → not close to saturation
+- Strong agents search **smarter, not harder**: GPT-5.5 issues 9.1 queries/task vs 19.4 for GPT-5.2, with more surgical targeting
+- Agents must self-discover tools from documents (no explicit API specs given) — a fundamentally harder setting than traditional benchmarks
+
+Sierra open-sources τ-Knowledge and invites model providers to evaluate against it as a measure of real-world knowledge-grounded agent capability.
+
 ## Significance
 
 Sierra's valuation ($15B) and ARR growth ($200M+) make it one of the highest-valued AI application companies, demonstrating that the enterprise AI agent market has reached material scale. Its 50-75x revenue multiple reflects investor expectations that AI agents will capture significant market share from traditional SaaS and human-staffed services.
@@ -52,6 +69,8 @@ Sierra's valuation ($15B) and ARR growth ($200M+) make it one of the highest-val
 - [[entities/bret-taylor]] — Co-founder, former Salesforce co-CEO
 - [[concepts/service-as-software]] — Business model thesis
 - [[concepts/ai-agents]] — Core technology
+- [[concepts/tau-knowledge]] — Sierra's knowledge-grounded agent benchmark
+- [[concepts/tau-bench]] — Sierra's conversational agent benchmark
 - [[concepts/agent-team-swarm]] — Related agent deployment patterns
 - [[entities/anthropic]] — Claude powers enterprise agent deployments in the same market
 
