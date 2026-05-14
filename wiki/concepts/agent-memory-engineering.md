@@ -1,12 +1,12 @@
 ---
 title: "Agent Memory Engineering"
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-14
 type: concept
 status: L2
 tags: [agent-memory, memory-systems, harness-engineering, claude-code, codex, agents]
 aliases: ["Agent Memory", "Memory Layer Design"]
-sources: [raw/articles/2026-05-01_nicolas-bustamante_agent-memory-engineering.md]
+sources: [raw/articles/2026-05-01_nicolas-bustamante_agent-memory-engineering.md, raw/articles/2026-05-08_mem0-how-memory-works-in-codex-cli.md]
 related: [entities/nicolas-bustamante, concepts/harness-engineering, concepts/model-harness-fit]
 ---
 
@@ -82,6 +82,64 @@ One of the most important but least discussed aspects. Without a signal gate, th
 | Claude Code | No hard cap — age-aware, natural decay |
 | Codex | Character cap on `memory_summary.md` |
 | Hermes | Snapshot size bounded by context window |
+
+## Codex Memory Pipeline (Deep Dive)
+
+Based on Mem0's detailed analysis (Himanshu Sangshetti, May 2026), Codex's memory subsystem operates as a **two-phase async pipeline**:
+
+### Phase 1: Per-Rollout Extraction
+- Claims a startup job when Codex launches
+- Samples conversation against a **strict-schema extraction prompt**
+- Redacts secrets before anything hits disk
+- Only idle sessions (≥6 hours since last activity) are eligible
+
+### Phase 2: Consolidation
+- Acquires a global lock
+- Prepares a workspace
+- Runs a **consolidation sub-agent** (separate model, configurable)
+- Writes the diff to `~/.codex/memories/`
+
+### Storage Format
+Surprisingly simple: **markdown files** — no vector DB, no embeddings:
+- `memory_summary.md` — consolidated view loaded at session start
+- `MEMORY.md` — long-form merged memory file
+- `raw_memories.md` — pre-consolidation extraction output
+- `skills/<name>/SKILL.md` — skill-specific memories
+- `rollout_summaries/<slug>.md` — per-session summaries
+
+### Recall Mechanism
+NOT vector search. At session start, Codex reads `memory_summary.md` whole (token-truncated), then instructs the agent to **`grep` over `MEMORY.md`** when it needs more detail. This is the same "markdown + bash tool" pattern that won across all harnesses.
+
+### Caps & Sweeps
+- **256 rollouts max** (configurable, hard ceiling)
+- Rollouts unused for 30 days → aged out
+- Individual memories unrecalled for 30 days → pruned
+- **Rate-limit-aware**: consolidation won't run when user API quota is below configurable threshold
+
+### Configuration
+Two independent switches in `~/.codex/config.toml`:
+- `memories.generate_memories` — allow new memories to be written
+- `memories.use_memories` — inject existing memories into sessions
+- This allows asymmetric setups: read-only (debugging) or write-only (onboarding)
+
+### Geographic Constraint
+**Not available in EEA, UK, or Switzerland** at launch. Users in those regions get the AGENTS.md layer only.
+
+### Two-Model Architecture
+Separate models for extraction (`memories.extract_model`) and consolidation (`memories.consolidation_model`). Both configurable, enabling cost/quality trade-offs.
+
+## Where Codex Memory Stops
+
+The two-layer model works well for one developer on one machine, but has clear gaps:
+
+| Limitation | Detail |
+|-----------|--------|
+| **No cross-machine sync** | `~/.codex/memories/` is local generated state; a second machine starts from zero |
+| **No team sharing** | Per-user only; cannot pool memories across teammates |
+| **Generated state only** | User can inspect but hand-editing isn't the supported path |
+| **AGENTS.md fills gaps** | Team conventions, cross-machine sharing → use AGENTS.md instead |
+
+The Mem0 article positions Mem0 itself as filling these gaps: persistent cloud memory, team sharing, editable memories, and cross-session portability beyond what Codex natively provides.
 
 ## Verification Discipline
 

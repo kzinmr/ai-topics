@@ -1,3 +1,18 @@
+## [2026-05-14] ingest | X Bookmarks: ntn (Notion CLI) + Codex Memory Pipeline
+
+### Pages Created
+- `concepts/notion-cli.md` — Notion CLI (ntn): official CLI for Notion API, Workers, file uploads. Announced May 2026 by @NotionDevs. Designed for devs and AI coding agents.
+
+### Pages Updated
+- `concepts/agent-memory-engineering.md` — Added Codex Memory Pipeline deep dive (Mem0, May 2026): two-phase async pipeline, markdown storage format, grep-based recall, caps & sweeps, geographic constraints, "where it stops" analysis.
+
+### Raw Articles Saved
+- `raw/articles/2026-05-13_notion-cli-ntn-developer-docs.md` — developers.notion.com overview
+- `raw/articles/2026-05-08_mem0-how-memory-works-in-codex-cli.md` — mem0.ai blog by Himanshu Sangshetti
+
+### SCHEMA.md
+- Added canonical tags: `notion-cli`, `notion-mcp`
+
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
