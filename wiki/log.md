@@ -401,3 +401,27 @@ Evidence strongly supports OpenClaw as orchestrator and Hermes as execution spec
 - `wiki/concepts/nvidia-rtx-ai-garage.md` — new
 - `wiki/index.md` — updated (added nvidia-rtx-ai-garage concept entry)
 - `wiki/log.md` — updated
+
+## [2026-05-14] watchdog | Auto-fix: added missing `title` frontmatter to 3 pages
+
+### Auto-fixed
+- `entities/parallel-web-systems.md` — Added `title: "Parallel Web Systems Inc."`
+- `entities/qiaochu-yuan.md` — Added `title: "QC (Qiaochu Yuan)"`
+- `concepts/cryptography-patterns.md` — Added `title: "Cryptography Patterns — Bitwarden Encryption Architecture"`
+
+### Watchdog Assessment
+- ✅ Index corruption: Clean (0 pipe, 0 triple bracket, 0 line-number issues)
+- ✅ Ghost entries: 0 (all resolved)
+- ✅ Log health: Clean (403 lines, 0 pipe corruption, 1 header)
+- ✅ Pipeline watchdog: No alerts
+- ✅ Pre-commit hooks: Active (.githooks)
+- ⚠️ 1005 pages not in index.md — needs human-level batch population
+- ⚠️ 809 pages missing frontmatter fields (776 missing `sources`, 31 `type`, 22 `created`, 15 `updated`, 11 `tags`, 3 `title` now fixed)
+- ⚠️ Index header count: 1860 vs 1835 actual — minor drift
+
+### Recommendation
+Both remaining issues are too large for watchdog auto-fix (>10 files each). 
+Recommend dedicated batch passes:
+1. `sources: []` bulk-add to 776 pages (Section L procedure)
+2. Batch index population for 1005 unregistered pages
+---

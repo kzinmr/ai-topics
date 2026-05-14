@@ -1,4 +1,5 @@
 ---
+title: "QC (Qiaochu Yuan)"
 name: "QC (Qiaochu Yuan)"
 name_jp: "QC（Qiaochu Yuan）"
 type: entity

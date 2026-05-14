@@ -1,5 +1,6 @@
 ---
 type: concept
+title: "Cryptography Patterns — Bitwarden Encryption Architecture"
 tags:
   - concept
   - security

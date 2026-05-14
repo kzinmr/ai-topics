@@ -1,5 +1,6 @@
 ---
 type: entity
+title: "Parallel Web Systems Inc."
 entity_type: company
 name: "Parallel Web Systems Inc."
 aliases: [Parallel, parallel.ai]
