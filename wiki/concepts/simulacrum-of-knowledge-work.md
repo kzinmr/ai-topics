@@ -91,6 +91,7 @@ Authored by [[entities/onehappyfellow]]. Relates to the broader [[concepts/goodh
 - [[concepts/vibe-coding]] — A style of AI-assisted development that prioritizes throughput over code quality, exemplifying the simulacrum pattern in software engineering.
 - [[concepts/compound-engineering-loop]] — A contrasting paradigm that emphasizes careful verification and human oversight.
 - [[concepts/cognitive-debt]] — The cognitive cost of not understanding AI-generated code, a direct consequence of the simulacrum dynamic.
+- [[concepts/cognitive-surrender]] — The individual psychological mechanism that produces the simulacrum at scale: engineers stop forming independent views, accept surface plausibility as correctness.
 
 ## Sources
 

@@ -5,6 +5,23 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-14] create | Concept: Cognitive Surrender
+
+### Pages Created
+- `concepts/cognitive-surrender.md` — 認知的サレンダー概念ページ。Addy Osmani (May 2026) + Shaw & Nave (Wharton 2026) の実証研究に基づく。AIの出力を無検証で自分の出力として受け入れる心理的メカニズム。[[concepts/simulacrum-of-knowledge-work]]（組織レベルのシミュラークル化）と[[concepts/cognitive-debt]]（個人レベルの認知負債蓄積）の両方に深く接続。
+
+### Pages Updated
+- `entities/addy-osmani.md` — Cognitive Surrenderコンセプトへのリンク説明を詳細化。シミュラークルと認知負債の話と接続。
+- `concepts/simulacrum-of-knowledge-work.md` — Related Conceptsにcognitive-surrenderを追加。「シミュラークルは組織現象、cognitive surrenderはそれを生む個人の心理的失敗モード」という接続。
+- `concepts/cognitive-debt.md` — Related Conceptsにcognitive-surrenderを追加。cognitive surrender が cognitive debt の蓄積メカニズムであることを明示。
+- `raw/articles/2026-05-05_addyosmani_cognitive-surrender.md` — サマリーから完全版に置換（41行→フル記事）。
+
+### Sources
+- https://addyosmani.com/blog/cognitive-surrender/
+- https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6097646 (Shaw & Nave, Wharton 2026)
+
+---
+
 ## [2026-05-14] enrich | Blog Wiki Ingest: Sierra τ-knowledge benchmark
 
 ### Pages Updated

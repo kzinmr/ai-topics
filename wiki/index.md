@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-14 | Total pages: 1855 | Indexed entries: 921 | Not in index: 914 |
+> Last updated: 2026-05-14 | Total pages: 1856 | Indexed entries: 922 | Not in index: 914 |
 
 ## Entities (584 pages)
 
@@ -648,6 +648,7 @@
 - [[concepts/codex-prompting]] — Codex向けプロンプト設計パターン。行動優先（Bias for Action）、メタプロンプティング、標準システムプロンプト構造、アンチパターン。OpenAI Cookbook公式ガイド準拠。
 - [[concepts/coding-agents-complexity-budgets]] — Lee Robinson (Cursor) on abstraction costs in the AI agent era. Migrated cursor.com from CMS to raw code in 3 days with $260 in tokens. Complexity budget concept.
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst — Devinをデータ分析エージェントにする設計
+- [[concepts/cognitive-surrender]] — 認知的サレンダー: AIの出力が無検証で自分の出力になる心理的メカニズム。Shaw & Nave (Wharton 2026) + Addy Osmani。シミュラークル化と認知負債の個人レベルの発生機構。
 - [[concepts/context-graph]] — Context Graph
 - [[concepts/contextmaxxing]] — Better memory over burning more tokens. Counterpart to [[concepts/tokenmaxxing]]. Memory as shared state, not as a service. Three memories (factual, interaction, action) as one substrate. Ontology + context graphs. Coined by [[entities/ashwingop]].
 - [[concepts/context-window-management]] — Context Window Management

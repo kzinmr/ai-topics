@@ -1,7 +1,7 @@
 ---
 title: Addy Osmani
 created: 2026-05-10
-updated: 2026-05-11
+updated: 2026-05-14
 type: entity
 tags:
   - person
@@ -75,7 +75,7 @@ His post synthesized contributions from @Vtrivedy10 (term coiner), @dexhorthy (e
 ## Related Pages
 
 - [[concepts/harness-engineering]] — The discipline he helped codify
-- [[concepts/cognitive-surrender]] — Concept he explored based on Wharton research (May 2026)
+- [[concepts/cognitive-surrender]] — Concept he explored in depth (May 2026): individual mechanism behind simulacrum and comprehension debt
 - [[entities/vtrivedy10]] — Vivek Trivedy, who coined the term "harness engineering"
 - [[entities/hamel-husain]] — Early popularizer of harness engineering from evals perspective
 - [[concepts/agentic-engineering]] — Related engineering practice

@@ -63,4 +63,5 @@ Cognitive debt explains several observed phenomena in agent-assisted development
 - [[concepts/harness-engineering/agentic-workflows/vibe-coding]] — high-abstraction workflow
 - [[concepts/harness-engineering/agentic-workflows/red-green-tdd]] — debt mitigation pattern
 - [[concepts/harness-engineering/agentic-engineering]] — parent concept
+- [[concepts/cognitive-surrender]] — The mechanism by which cognitive debt accumulates (Addy Osmani, May 2026)
 - [[entities/xeiaso-net]] — source of the abstraction cost framing
