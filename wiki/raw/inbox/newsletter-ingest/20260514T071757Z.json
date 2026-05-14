@@ -1,0 +1,123 @@
+{
+  "run_id": "20260514T071757Z",
+  "triaged_at": "2026-05-14T07:30:00Z",
+  "newsletters": [
+    {
+      "message_id": "<20260513.155203.484301e8@mta7>",
+      "subject": "The AI Cursor Arrives!",
+      "date": "2026-05-13",
+      "source_label": "uid=87",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-13-the-ai-cursor-arrives.md",
+      "article_count": 20,
+      "canonical_url": null,
+      "importance": "high",
+      "status": "links_unresolved",
+      "reason": "All 20 links are beeHiiv opaque redirects (link.mail.beehiiv.com). Cannot resolve destination URLs without browser. Subject 'The AI Cursor Arrives!' strongly suggests coverage of Cursor IDE (the AI coding editor), likely related to Cursor's 2.0 release push (per Pragmatic Engineer visit coverage), Wispr Flow, and the broader AI devtools ecosystem. Cursor has ~80 developers, 500K agent sessions in 30 days, and is a core wiki topic.",
+      "estimated_topics": ["Cursor IDE", "AI coding agents", "developer tools", "Wispr Flow", "agentic coding workflows"],
+      "wiki_relevance": "HIGH - Cursor is already a major entity in the wiki. Any substantial article about Cursor 2.0, their AI workflows, or the competitive landscape with Claude Code/Codex is valuable.",
+      "action_required": "resolve_redirects"
+    },
+    {
+      "message_id": "<20260513181817.3.971c7872742d4a46@mg2.substack.com>",
+      "subject": "Cerebras — Faster Tokens Please",
+      "date": "2026-05-13",
+      "source_label": "uid=88",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-13-cerebras-faster-tokens-please.md",
+      "article_count": 20,
+      "canonical_url": "https://newsletter.semianalysis.com/p/cerebras-faster-tokens-please",
+      "importance": "critical",
+      "status": "content_extracted",
+      "reason": "SemiAnalysis deep-dive by Dylan Patel on Cerebras WSE-3 wafer-scale chip, CS-3 system, and the $24.6B OpenAI inference compute deal (750MW over 2026-2028). Covers fast inference economics, token pricing, BOM cost analysis, Cerebras IPO readiness, and the OpenAI-Cerebras MRA. Dylan Patel is already a documented entity in the wiki. No standalone Cerebras entity page exists yet — this is a major gap to fill.",
+      "key_articles_identified": [
+        {
+          "title": "Cerebras — Faster Tokens Please (main SemiAnalysis article)",
+          "canonical_url": "https://newsletter.semianalysis.com/p/cerebras-faster-tokens-please",
+          "topics": ["Cerebras WSE-3", "wafer-scale computing", "inference economics", "OpenAI partnership", "AI infrastructure", "token pricing", "SRAM vs HBM"]
+        },
+        {
+          "title": "Cerebras CS-3 vs. Nvidia DGX B200 Blackwell",
+          "canonical_url": "https://www.cerebras.ai/blog/cerebras-cs-3-vs-nvidia-dgx-b200-blackwell",
+          "topics": ["Cerebras CS-3", "Nvidia Blackwell", "inference benchmark", "price-performance comparison"]
+        }
+      ],
+      "wiki_actions": [
+        "Create entity page for Cerebras Systems (cerebras.md)",
+        "Update dylan-patel.md with Cerebras analysis reference",
+        "Update concepts/compute-scaling-bottlenecks.md with SRAM vs HBM angle",
+        "Update entities/openai.md with Cerebras MRA deal ($24.6B RPO)",
+        "Add concept page on fast inference economics / token pricing"
+      ],
+      "wiki_relevance": "CRITICAL - Major AI infrastructure story: Cerebras IPO, $24.6B OpenAI deal, inference speed economics."
+    },
+    {
+      "message_id": "<20260514035326.3.7e64c73a714f8ddd@mg-d0.substack.com>",
+      "subject": "[AINews] Codex Rises, Claude Meters Programmatic Usage",
+      "date": "2026-05-14",
+      "source_label": "uid=89",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-14-ainews-codex-rises-claude-meters-programmatic-usage.md",
+      "article_count": 20,
+      "canonical_url": "https://www.latent.space/p/ainews-codex-rises-claude-meters",
+      "importance": "high",
+      "status": "content_partially_extracted",
+      "reason": "swyx's AINews digest (Latent.Space) covering major coding agent ecosystem developments: (1) OpenAI Codex surpassed 3M weekly active users (up from 2M a month ago), (2) Anthropic 'declawing' — every Claude subscription now gets a monthly credit of API tokens equal to the dollar amount of the plan ($200 sub = $200 API credits for programmatic usage), effectively metering third-party tool use, (3) OpenAI programmatic tool calling for Claude API, (4) the broader competitive landscape with Cursor, Claude Code, and Codex merging into a composable stack.",
+      "key_articles_identified": [
+        {
+          "title": "[AINews] Codex Rises, Claude Meters Programmatic Usage",
+          "canonical_url": "https://www.latent.space/p/ainews-codex-rises-claude-meters",
+          "topics": ["Codex adoption", "Claude subscription changes", "programmatic tool calling", "AI agent CLIs", "coding agent economics", "Anthropic IPO"]
+        },
+        {
+          "title": "Claude Code to Codex Migration Guide 2026",
+          "canonical_url": "https://blakecrosley.com/blog/claude-code-to-codex-migration",
+          "topics": ["migration patterns", "AGENTS.md", "Codex skills", "hooks", "agent configuration"]
+        },
+        {
+          "title": "Cursor, Claude Code, and Codex are merging into one AI coding stack",
+          "canonical_url": "https://thenewstack.io/ai-coding-tool-stack/",
+          "topics": ["composable coding stack", "orchestration layers", "codex-plugin-cc", "Claude Code + Codex interop"]
+        }
+      ],
+      "wiki_actions": [
+        "Update entities/codex.md with 3M weekly users milestone",
+        "Update entities/claude-code.md with subscription/usage changes ('declawing', programmatic usage metering)",
+        "Create/update concept page on programmatic tool calling vs interactive usage",
+        "Update entities/anthropic.md with IPO timeline (October 2026 likely) and $2.5B annualized revenue estimate",
+        "Update entities/cursor-ai.md with 2.0 release details (80 devs, 500K agent sessions/30 days)"
+      ],
+      "wiki_relevance": "HIGH - Timely coverage of the AI coding agent ecosystem: usage economics, subscription changes, adoption metrics."
+    }
+  ],
+  "summary": {
+    "total_newsletters": 3,
+    "critical": 1,
+    "high": 2,
+    "low": 0,
+    "total_articles_estimated": 60,
+    "resolved_articles": 5,
+    "unresolved_articles": 55,
+    "note": "20 beeHiiv links in 'The AI Cursor Arrives!' could not be resolved due to opaque redirect URLs. All Substack articles partially resolved via search and canonical URL extraction."
+  },
+  "priority_actions": [
+    {
+      "priority": 1,
+      "action": "Create Cerebras entity page + inference economics concept",
+      "reason": "CRITICAL: SemiAnalysis Cerebras article covers $24.6B OpenAI deal, IPO readiness, wafer-scale computing. No Cerebras entity exists in wiki.",
+      "newsletter": "Cerebras — Faster Tokens Please",
+      "estimated_effort": "2-3 wiki pages"
+    },
+    {
+      "priority": 2,
+      "action": "Update coding agent entity pages (Codex, Claude Code, Cursor, Anthropic)",
+      "reason": "HIGH: Codex hit 3M users, Anthropic metering changes, Cursor 2.0 push, composable stack convergence.",
+      "newsletter": "[AINews] Codex Rises, Claude Meters Programmatic Usage",
+      "estimated_effort": "4-5 entity updates + 1 concept page"
+    },
+    {
+      "priority": 3,
+      "action": "Resolve beeHiiv redirects for 'The AI Cursor Arrives!'",
+      "reason": "HIGH: Likely Cursor 2.0 / AI devtools coverage. Requires browser or redirect resolution.",
+      "newsletter": "The AI Cursor Arrives!",
+      "estimated_effort": "1-3 wiki pages depending on content"
+    }
+  ]
+}
