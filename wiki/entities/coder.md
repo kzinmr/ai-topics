@@ -1,11 +1,12 @@
 ---
 title: "Coder (Coder Technologies)"
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-05-14
 type: entity
 tags: [company, coding-agents, developer-tooling, infrastructure, security, platform]
 sources:
   - raw/articles/2026-05-06_coder-self-hosted-agents-beta.md
+  - raw/articles/2026-05-06_coder-agents-beta-enterprise.md
   - https://coder.com
 ---
 
@@ -42,6 +43,12 @@ Coder Agents is a **native AI coding agent** built directly into the Coder platf
 ### Enterprise Rationale
 
 Coder Agents addresses a key gap in enterprise AI adoption: **regulated industries cannot send source code to third-party AI services**. By keeping everything on self-hosted infrastructure, Coder enables AI-driven development for defense, finance, healthcare, and other compliance-heavy sectors.
+
+### Market Context & Adoption
+
+- **61% of engineering teams** already running AI agents
+- **70% of companies** deploy agents on infrastructure never designed to support them (Coder research)
+- Beta available with **full feature access and no usage-based limits** through September 2026
 
 ## Comparison to Other Coding Agents
 

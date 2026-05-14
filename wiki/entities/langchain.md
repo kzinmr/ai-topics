@@ -6,10 +6,12 @@ tags:
   - orchestration
   - framework
   - agentic-engineering
+  - deep-agents
+  - state-management
 created: 2026-04-27
-updated: 2026-04-30
+updated: 2026-05-14
 aliases: [LangChain Framework, LangChain AI]
-sources: [https://www.langchain.com/, https://github.com/langchain-ai/langchain, https://en.wikipedia.org/wiki/LangChain, raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md]
+sources: [https://www.langchain.com/, https://github.com/langchain-ai/langchain, https://en.wikipedia.org/wiki/LangChain, raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md, raw/articles/2026-04-29_langchain-harness-profiles.md, raw/articles/2026-05-12_langchain-delta-channels.md]
 ---
 
 
@@ -36,6 +38,8 @@ LangChain is an open-source software framework for developing applications power
 | May 2025 | **LangGraph Platform** launched GA for managing long-running, stateful AI agents |
 | Apr 2025 | Featured in the **Forbes AI 50** list |
 | 2025-2026 | Introduced **Deep Agents**, **Insights Agent**, and no-code agent builder |
+| Apr 2026 | Launched **Harness Profiles** for Deep Agents — model-specific prompt/tool/middleware tuning (+10-20pt benchmark gains) |
+| May 2026 | Released **DeltaChannel** (LangGraph v1.2 beta) — incremental checkpoint storage for long-running agents |
 
 ## Core Architecture
 
@@ -119,6 +123,20 @@ The company has evolved beyond the open-source framework into a full **Agent Eng
 - **Key investors:** IVP, Sequoia Capital, Benchmark, Amplify, CapitalG, Sapphire Ventures
 - **Notable customers:** Replit, Clay, Harvey, Rippling, Cloudflare, Workday, Cisco
 - **Revenue model:** Open-source core (MIT) + commercial LangSmith platform + LangGraph Platform hosting
+
+## Harness Profiles (Apr 2026)
+
+LangChain introduced **harness profiles** for Deep Agents — model-specific configurations that tune prompts, tools, and middleware for optimal performance with each LLM family. Profiles ship out of the box for OpenAI, Anthropic, and Google models.
+
+On tau2-bench: GPT 5.3 Codex jumped from 33% → 53% (+20pt), Claude Opus 4.7 from 43% → 53% (+10pt). This builds on earlier work where gpt-5.2-codex went from 52.8% to 66.5% on Terminal-Bench 2.0 through harness-layer changes alone.
+
+See [[concepts/harness-profiles|Harness Profiles]] for details.
+
+## Delta Channels (May 2026)
+
+**DeltaChannel** is a new LangGraph channel type (beta v1.2) that writes only incremental updates at each checkpoint, with full snapshots every K steps. This bounds resume costs for agents running thousands of steps — enabling production-grade, long-running agents.
+
+See [[concepts/delta-channels|Delta Channels]] for details.
 
 ## Related Concepts
 - [[concepts/langgraph]] — Low-level agent orchestration framework

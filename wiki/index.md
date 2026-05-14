@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-14 | Total pages: 1856 | Indexed entries: 922 | Not in index: 914 |
+> Last updated: 2026-05-14 | Total pages: 1860 | Indexed entries: 926 | Not in index: 914 |
 
-## Entities (584 pages)
+## Entities (586 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -396,6 +396,7 @@
 - [[entities/sentra-app]] — Enterprise General Intelligence (EGI) platform. $5M seed (a16z Speedrun, Together Fund). Builds collective company memory via knowledge graphs. Co-founded by [[entities/ashwingop]]. Implements [[concepts/contextmaxxing]] architecture.
 - [[entities/sequoia-capital]] — Sequoia Capital — Leading VC firm. Published the Service-as-Software thesis (2026) via partner Julien Bek. Backs AI-native service companies like Rillet, Magentic, Harvey.
 - [[entities/sero]] — Sero (known online as **0xSero**) is an open-source developer, AI infrastructure builder, and founder of **Sybil Solutions**. He operates at the intersection of AI agents, blockchain infrastructure...
+- [[entities/servicenow]] — ServiceNow — enterprise software platform ($92.3B). Build Agent (May 2026) enables natural language app creation with Anthropic-powered AI. Multi-IDE support, governed by default.
 - [[entities/sigrid-jin]] — Creator of **[[concepts/claw-code]]**, the clean-room Rust/Python reimplementation of Claude Code's agent harness. Fastest repo in GitHub history to surpass 100K stars. Featured in WSJ for 25B Claude Code tokens. Korean-Canadian, UBC.
 - [[entities/sglang]] — **Type** | LLM Inference Engine / Serving Framework |
 - [[entities/sheshansh-agrawal]] — **X/Twitter** | @sheshansh_agrawal |
@@ -407,6 +408,7 @@
 - [[entities/simon-willison]] — Django co-creator, open-source advocate, and leading voice in AI-assisted software development. Founder of Datasette and prolific blogger at simonwillison.net.
 - [[entities/simone-salis]] — **URL:** https://simone.org
 - [[entities/skyfall-dev]] — **URL:** https://skyfall.dev
+- [[entities/snyk]] — Snyk — developer security platform. Integrated Anthropic Claude into AI Security Platform (May 2026) for vulnerability discovery and automated remediation.
 - [[entities/solo-founder-stack]] — Solo Founder Stack
 - [[entities/soundstream]] — **SoundStream (Google)** | Foundational neural audio codec. Fully convolutional encoder-decoder + RVQ, 3–18 kbps variable bitrate. Prototype for EnCodec, DAC, and later tokenizers.
 - [[entities/speech-tokenizer]] — **SpeechTokenizer (Fudan)** | Unified semantic + acoustic speech tokenizer. HuBERT-distilled layer 1 for semantic, remaining layers for acoustic. ~50 Hz, ~4 kbps. Designed for speech LLMs.
@@ -594,7 +596,7 @@
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 - [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."
 
-## Concepts (1275 pages)
+## Concepts (1277 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -655,6 +657,7 @@
 - [[concepts/death-of-browser]] — ブラウザの終焉: AIエージェント時代のWebアクセスパラダイムシフト
 - [[concepts/decoder-only-gpt]] — Decoder-Only GPT Architecture
 - [[concepts/deepspeed]] — Microsoft DeepSpeed
+- [[concepts/delta-channels]] — LangGraph DeltaChannel (beta v1.2, May 2026) — incremental checkpoint storage for long-running agents. Writes only deltas per step, full snapshots every K steps. Bounds resume cost for production agents running thousands of steps.
 - [[concepts/dspy-rlm]] — DSPy.RLM
 - [[concepts/dspy-tutorial]] — Hands-on DSPy getting started tutorial (Maxime Rivest): Signature → gold set → MIPROv2 optimization in ~50 lines yielding 20% precision improvement
 - [[concepts/embeddings]] — Dense vector representations encoding entities as coordinates. Triples training (anchor/similar/dissimilar), dot product + sigmoid + contrastive loss, Two-Tower architecture for cold-start, transformer sentence embeddings (BERT CLS). Doug Turnbull's Maven course module.
@@ -663,6 +666,7 @@
 - [[concepts/glut-of-circuits]] — niplav (2026) の GLUT-of-Circuits モデル：LLMは重ね合わせで計算される、深さ制限のある合成可能な誤り訂正回路の巨大ルックアップテーブル的コレクション。Agent構造問題・AIアライメント・トークンボトルネック・CoTへの含意。
 - [[concepts/harness-commoditization]] — Harness Commoditization — Thesis that frontier model capability is commoditizing agent harnesses. As models become natively agentic, harness architecture ceases to be a meaningful differentiator — codebase organization becomes the bottleneck. Articulated by Amp in "The Coding Agent Is Dead" (Feb 2026).
 - [[concepts/harness-engineering]] — Harness Engineering
+- [[concepts/harness-profiles]] — Harness Profiles — model-specific tuning of agent prompts, tools, and middleware per LLM family. LangChain Deep Agents feature (Apr 2026). 10-20pt benchmark gains on tau2-bench.
 - [[concepts/karpathy-loop]] — The Karpathy Loop — Autonomous Experiment Design
 - [[concepts/knowledge-shields]] — Knowledge Shields and Systems Understanding
 - [[concepts/korean-ai]] — Korean AI Ecosystem

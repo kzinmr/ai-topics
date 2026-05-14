@@ -5,6 +5,34 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-14] active-crawl | LangChain Harness Profiles, Delta Channels, ServiceNow Build Agent, Coder Agents Update, Snyk-Claude Security
+
+### Pages Created
+- `concepts/harness-profiles.md` — Model-specific agent tuning (prompts, tools, middleware) per LLM family. LangChain Deep Agents feature, 10-20pt tau2-bench gains.
+- `concepts/delta-channels.md` — LangGraph DeltaChannel (beta v1.2) — incremental checkpoint storage for long-running agents. Bounds resume costs for production agents.
+- `entities/servicenow.md` — ServiceNow enterprise platform. Build Agent (May 2026): natural language app creation with Anthropic models, multi-IDE support, governed by default.
+- `entities/snyk.md` — Snyk developer security platform. Claude integration (May 2026) for AI-powered vulnerability discovery and automated remediation.
+
+### Pages Updated
+- `entities/langchain.md` — Added Harness Profiles and Delta Channels sections to history and architecture. Updated tags (deep-agents, state-management). Added tau2-bench benchmark data.
+- `entities/coder.md` — Updated Coder Agents section with market stats (61% adoption, 70% infra mismatch) and beta pricing details.
+
+### Raw Articles Saved
+- `raw/articles/2026-04-29_langchain-harness-profiles.md` — LangChain blog: Tuning Deep Agents for Different Models
+- `raw/articles/2026-05-12_langchain-delta-channels.md` — LangChain blog: Delta Channels for Long-Running Agents
+- `raw/articles/2026-05-06_servicenow-build-agent.md` — BusinessWire: ServiceNow Build Agent launch
+- `raw/articles/2026-05-06_coder-agents-beta-enterprise.md` — CityBiz: Coder self-hosted AI coding agents
+- `raw/articles/2026-05-08_snyk-claude-security-partnership.md` — Booboone: Snyk-Claude Security integration
+
+### Sources
+- https://blog.langchain.dev/tuning-deep-agents-different-models/
+- https://www.langchain.com/blog/delta-channels-evolving-agent-runtime
+- https://www.businesswire.com/news/home/20260506008934/en/
+- https://www.citybiz.co/article/842905/coder-launches-self-hosted-ai-coding-agents-for-enterprise-development-teams
+- https://booboone.com/may-8-2026-ai-updates-from-the-past-week-coder-agents-launch-snyk-claude-partnership-opsera-cursor-partnership-and-more/
+
+---
+
 ## [2026-05-14] create | Concept: Cognitive Surrender
 
 ### Pages Created
