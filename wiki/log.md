@@ -157,6 +157,13 @@
 - Enriched `concepts/agent-harness.md` — 「Agent Harness と Agent Framework/SDK の本質的差異」セクション追加（2つの投資対象、Operator Workbench vs Product Runtimeの2軸評価、4種類のロックイン、推奨分離アーキテクチャ、選定指針）
 - Updated index.md: Comparisons 15→16, added new entry
 
+## [2026-05-14] query | queries/data-analysis-open-harness
+- Created query page: `queries/data-analysis-open-harness.md` — kzinmr の質問「データ分析に適したOpen Harnessはあるか？」に対する回答をWiki化
+- 回答要旨: データ分析専用の真のOpen Harnessはまだ発展途上。現状は汎用coding harness（OpenCode/Pi）にDB MCP connectorを付けて使うのが最もOpenな選択肢。Cognition DANAは強力だがClosed Harness
+- 選択肢マトリクス: 汎用coding harness転用（OpenCode/Pi/Claude Code/Codex/Aider）、データ分析特化製品（Cognition DANA/OpenAI社内Data Agent/Hex）、Frameworkからの進化（OpenAI Agents SDK）
+- Karpathyの「良い回答はWikiにファイリングすべき」パターンに従い、チャット履歴に埋もれさせずqueryページとして資産化
+- Updated index.md: Queries 0→1
+
 ## [2026-05-13] rotate | Log rotated (638 lines → log-2026.md)
 - Previous log archived to `log-2026.md` for historical reference
 
