@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-14 | Total pages: 1860 | Indexed entries: 946 | Not in index: 894 |
+> Last updated: 2026-05-14 | Total pages: 1863 | Indexed entries: 949 | Not in index: 894 |
 
-## Entities (586 pages)
+## Entities (588 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -53,6 +53,7 @@
 - [[entities/samuelcolvin]] — samuelcolvin
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka
+- [[entities/seth-karten]] — Seth Karten — CS PhD at Princeton, creator of PokeChamp/PokeAgent, lead author of Continual Harness framework.
 - [[entities/sierra]] — Sierra — AI customer service platform ($15B valuation, $200M+ ARR). Enterprise conversational AI agents; τ-Knowledge benchmark for knowledge-grounded agent evaluation.
 - [[entities/tambo]] — Tambo (tambo.co) — オープンソースGenerative UIツールキットfor React。AIエージェントが既存コンポーネントで応答
 - [[entities/tobi-lutke]] — Tobi Lutke — Shopify CEO. Revealed River: internal Slack-native AI coding agent built on apprenticeship model. Self-taught programmer, dropped out at 16.
@@ -352,6 +353,7 @@
 - [[entities/paulgraham-com]] — **Blog** | paulgraham.com |
 - [[entities/perplexity-comet]] — Perplexity Cometは、Perplexity AIが開発したAIネイティブブラウザ。2025年7月にWindows/macOSでリリースされ、同年11月にAndroid、2026年3月にiOSに対応。「ブラウザをAIエージェントにする」戦略の最前線に位置する製品。
 - [[entities/peter-steinberger]] — Austrian software developer, creator of **OpenClaw** (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as **@steipete** on GitHub/Twitter. A pioneer of **AI-native dev...
+- [[entities/petra-donka]] — Petra Donka — Head of DevEx at Warp. Argues agents need feedback loops, not perfect prompts.
 - [[entities/pi]] — Mario Zechner（libGDX開発者）製ミニマルAIコーディングハーネス。~1K token system prompt、4ツールのみ（read/write/edit/bash）、45.5K GitHub Stars、MITライセンス。TypeScript拡張/スキル/テーマによる拡張。OpenClawの基盤。ローカルモデルに最適。
 - [[entities/cory-doctorow]] — Canadian-British sci-fi author and digital rights activist. Coined "enshittification." Blogs at pluralistic.net. Critical voice on AI policy and corporate personhood.
 - [[entities/philiplaine-com]] — **URL:** https://philiplaine.com
@@ -596,7 +598,7 @@
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 - [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."
 
-## Concepts (1298 pages)
+## Concepts (1299 pages)
 
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
@@ -901,6 +903,7 @@
 - [[concepts/building-effective-agents]] — Building Effective Agents
 - [[concepts/chain-of-thought]] — Chain-of-Thought推論: 最終回答前に中間推論ステップを生成するプロンプト技法。Wei et al. (2022) 提唱。大規模モデルでの創発能力。自己無撞着・Best-of-N・ビームサーチ・RL訓練型CoT (o1/R1) などtest-time-scaling全技法の基盤。Few-Shot/Zero-Shot/Auto-CoT/Long CoTの変種。
 - [[concepts/context-engineering]] — Context Engineering
+- [[concepts/continual-harness]] — Online adaptation framework for self-improving agent harnesses. From GPP (first AI to complete Pokemon). Removes human from harness refinement loop. arXiv:2605.09998.
 - [[concepts/fine-tuning]] — Fine-Tuning
 - [[concepts/firecracker]] — Firecracker microVM: AWSのRust製軽量VMM（~50K行）。KVMハードウェア仮想化で~125ms起動。AWS Lambda/Fargateを支え、Browserbase/E2B/Daytona/Modal等のAIエージェント企業がコード実行サンドボックスに採用。VM分離＋コンテナ起動速度の両立。
 - [[concepts/gguf-quantization]] — GGUF Quantization

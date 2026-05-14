@@ -1,3 +1,24 @@
+
+## 2026-05-14 23:30 UTC — X Bookmarks Ingest
+
+**Pipeline**: x-bookmarks-ingest (cron)
+**Bookmarks processed**: 5 (all X Articles, no external URLs)
+**Pages created**: 3
+**Raw articles saved**: 2
+
+### Pages Created
+- `concepts/continual-harness.md` — Continual Harness framework: online, reset-free self-improvement for agent harnesses. From GPP (first AI to complete Pokemon). Removes human from harness refinement loop. By Seth Karten et al. (arXiv:2605.09998).
+- `entities/seth-karten.md` — Seth Karten, CS PhD @ Princeton, creator of PokeChamp/PokeAgent, lead author of Continual Harness.
+- `entities/petra-donka.md` — Petra Donka, Head of DevEx @ Warp. "Agents Need Feedback Loops, Not Perfect Prompts."
+
+### Raw Articles Saved
+- `raw/articles/2026-05-14_petradonka_agents-need-feedback-loops.md` — Petra Donka's X Article on agent feedback loops vs prompt engineering
+- `raw/articles/2026-05-13_sethkarten_continual-harness.md` — Seth Karten's X Article companion to Continual Harness paper
+
+### Skipped / Metadata-Only
+- Akshay Pachaar "Hermes Agent Masterclass" (X Article, no body retrieved) — saved metadata only
+- LakshyAAAgrawal GEPA quote tweet — informational, no new concept
+- 0xSero "Open Source must win" (March 2026) — old, minimal content
 ## [2026-05-14] health | Wiki health auto-fix — 20 orphan concepts indexed
 
 ### Changes
