@@ -100,6 +100,30 @@ def fetch_bookmarks_page(user_id, pagination_token=None):
     return json.loads(run(f"/2/users/{user_id}/bookmarks?{urlencode(params)}"))
 
 
+def fetch_article_body(tweet_id):
+    """Fetch full X Article body via tweet.fields=article.
+    
+    Returns (article_dict, None) on success, or (None, error_msg) on failure.
+    article_dict has keys: title, plain_text, preview_text, cover_media, entities.
+    """
+    try:
+        resp = json.loads(
+            run(f"/2/tweets/{tweet_id}?tweet.fields=article")
+        )
+        article = resp.get("data", {}).get("article")
+        if article and article.get("plain_text"):
+            return article, None
+        return None, "no article.plain_text in response"
+    except (XurlError, json.JSONDecodeError) as e:
+        return None, str(e)
+
+
+def _is_x_article(tweet):
+    """Check if a tweet is an X Article (has article title but no body yet)."""
+    article = tweet.get("article") or {}
+    return bool(article.get("title")) and not bool(article.get("plain_text"))
+
+
 state, processed = load_state(DB)
 
 try:
@@ -111,6 +135,8 @@ try:
     seen_this_run = set()
     pagination_token = None
     pages_fetched = 0
+    article_fetches = 0
+    article_failures = 0
     stop_reason = "end"
 
     while True:
@@ -152,6 +178,19 @@ try:
             stop_reason = "no_next_token"
             break
 
+    # ── Post-processing: fetch X Article bodies ──
+    for t in new:
+        if _is_x_article(t):
+            tweet_id = str(t.get("id"))
+            article_data, err = fetch_article_body(tweet_id)
+            if article_data:
+                t["article"] = article_data
+                article_fetches += 1
+            else:
+                # Keep the partial article (title only); log the failure
+                t.setdefault("_article_fetch_error", err)
+                article_failures += 1
+
 except (XurlError, json.JSONDecodeError) as e:
     print(json.dumps({
         "error": str(e),
@@ -175,6 +214,8 @@ payload = {
         "stop_reason": stop_reason,
         "max_pages": MAX_PAGES,
         "possibly_more_unseen": stop_reason == "max_pages",
+        "x_articles_fetched": article_fetches,
+        "x_articles_failed": article_failures,
     },
 }
 
