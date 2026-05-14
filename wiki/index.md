@@ -860,6 +860,7 @@
 - [[concepts/agent-architecture-decomposition]] — Three-layer framework for production AI agents: Open Models (intelligence), Open Runtime (execution environment), Open Harness (orchestration). Covers Agent on bash vs Agent on Python REPL (RLM, Pydantic AI), Micro-VM interpreters (Pydantic Monty), and MCP as universal adapter for heterogeneous agents.
 - [[concepts/agentic-ai-skills]] — Agentic AI Skills Design is the discipline of writing reusable documents that teach AI systems how to approach entire categories of tasks — not what to do in one specific situation, but the process...
 - [[concepts/scaling-hypothesis]] — Gwern Branwen's formalization of the theory that scale alone drives AI capability emergence. Contrasts strong scaling hypothesis (OpenAI) vs weak scaling hypothesis (DeepMind). Covers blessings of scale, emergent agency ("It From Byte"), the pretraining thesis/last bits theory, and the hardware overhang argument.
+- [[concepts/test-time-scaling]] — 推論時に追加計算を割り当てて出力品質を向上させるパラダイム。CoT→自己無撞着→Best-of-N→PRMビームサーチ→Tree-of-Thought→RL訓練型推論（o1/o3/R1）の技法階層。Snell et al. (2024) の計算最適配分。モデルパラメータ14倍のスケーリングより効果的な場合がある。GRPO/RLVRとの訓練連関。
 - [[concepts/areal]] — AReaL: Ant GroupのRLライブラリ。非同期トレーニングに特化し、interruptible rolloutsとPPO staleness対応で最大スループットを追求。DeepSpeed/Megatron対応、vLLM/SGLang推論。
 - [[concepts/simpleqa]] — SimpleQA — 事実知識のサニティチェック。4,326問の敵対的収集質問。RL学習後の知識喪失検出に重要。SimpleQA Verified（DeepMind 2025）ではトップスコア55.6%。
 - [[concepts/societal-shadow]] — QC (Qiaochu Yuan)が提唱した概念。RLHFがLLMに語らせないための禁止リストが逆説的に社会の影（性的・暴力的・非常識なもの全て）をカタログ化した皮肉な現象。Jungの影、Batailleの侵犯論、Foucaultの権力論、Kristevaの棄却論と接続。技術的対応物としてHH-RLHF, BeaverTails(14カテゴリ), Do-Not-Answer(61 harms), SORRY-Bench(45カテゴリ), HarmBench(510 behaviors), Llama Guard, Aegis, OpenAI Moderation API, Shadow Alignment等20以上のデータセット/システムを網羅。増幅メカニズムとしてカテゴリ分裂加速・Guardrail多層化・訓練/評価循環・プラットフォーム差異・Shadow武器化・Over-Refusal拡大の6軸を記述。
@@ -882,7 +883,7 @@
 - [[concepts/browser-use-production-architecture]] — Browser Use Production Architecture — SQS-to-Lambda architecture for running browser agents at scale
 - [[concepts/builders-unscripted]] — Builders Unscripted — OpenAI interview series hosted by Romain Huet, spotlighting AI builder stories
 - [[concepts/building-effective-agents]] — Building Effective Agents
-- [[concepts/chain-of-thought]] — Chain of Thought
+- [[concepts/chain-of-thought]] — Chain-of-Thought推論: 最終回答前に中間推論ステップを生成するプロンプト技法。Wei et al. (2022) 提唱。大規模モデルでの創発能力。自己無撞着・Best-of-N・ビームサーチ・RL訓練型CoT (o1/R1) などtest-time-scaling全技法の基盤。Few-Shot/Zero-Shot/Auto-CoT/Long CoTの変種。
 - [[concepts/context-engineering]] — Context Engineering
 - [[concepts/fine-tuning]] — Fine-Tuning
 - [[concepts/firecracker]] — Firecracker microVM: AWSのRust製軽量VMM（~50K行）。KVMハードウェア仮想化で~125ms起動。AWS Lambda/Fargateを支え、Browserbase/E2B/Daytona/Modal等のAIエージェント企業がコード実行サンドボックスに採用。VM分離＋コンテナ起動速度の両立。

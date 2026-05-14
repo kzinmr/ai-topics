@@ -1,24 +1,17 @@
 ---
 title: "Inference-Time Scaling"
-type: concept
 aliases:
   - inference-time-scaling
 created: 2026-04-25
-updated: 2026-04-25
-tags:
-  - concept
-status: stub
-
+updated: 2026-05-14
+type: concept
+tags: [concept, test-time-scaling]
+status: redirect
+redirect: test-time-scaling
 ---
 
-# Inference-Time Scaling
+# Inference-Time Scaling → Test-Time Scaling
 
-> **TODO**: Enrich this page.
-
-## Overview
-
-Stub page for Inference-Time Scaling.
-
-## Related Pages
-
-- [[concepts/_index]]
+> This page has been merged into **[[test-time-scaling]]**, the canonical page for this concept.
+> 
+> "Inference-time scaling" and "test-time scaling" are synonymous terms. Please refer to [[test-time-scaling]] for the comprehensive treatment.

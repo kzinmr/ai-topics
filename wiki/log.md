@@ -132,3 +132,27 @@
 - `~/wiki/concepts/nvidia-vera-rubin.md` — enriched (196 → 340 lines)
 - `~/wiki/log.md` — updated
 
+## [2026-05-14] create | concepts/test-time-scaling
+- Created comprehensive concept page (14 KB, 250+ lines) from scratch
+- Covers: Three axes of AI scaling (pre-training → post-training → test-time), Snell et al. compute-optimal allocation, 7 core techniques (CoT, Self-Consistency, Best-of-N with ORM/PRM, Beam Search, Tree/Forest-of-Thought, Sequential Refinement, RL-trained reasoning o1/o3/R1), compute-optimal strategy, thinking-optimal scaling caveat, comparison with model scaling/speculative decoding/post-training, practical implications, open questions
+- Cross-references: scaling-hypothesis, chain-of-thought, rlvr, grpo, post-training, reasoning, rlm, speculative-decoding, nvidia-vera-rubin
+
+## [2026-05-14] enrich | concepts/chain-of-thought
+- Replaced stub (24 lines, 288 bytes) with comprehensive page (5.5 KB, 130+ lines)
+- Covers: Emergent behavior property, domain effectiveness, variants (Few-Shot/Zero-Shot/Auto-CoT/Long CoT/RL-trained CoT), comparison table with other reasoning methods, faithfulness/error propagation limitations, relationship to test-time scaling
+
+## [2026-05-14] redirect | concepts/inference-time-scaling → test-time-scaling
+- Replaced stub with redirect page pointing to [[test-time-scaling]] as canonical
+
+## [2026-05-14] update | concepts/scaling-hypothesis
+- Updated related links and internal references from inference-time-scaling → test-time-scaling
+
+### Files affected
+- `~/wiki/concepts/test-time-scaling.md` — new (14 KB)
+- `~/wiki/concepts/chain-of-thought.md` — enriched (288 bytes → 5.5 KB)
+- `~/wiki/concepts/inference-time-scaling.md` — rewrote as redirect (312 bytes → 503 bytes)
+- `~/wiki/concepts/scaling-hypothesis.md` — updated references
+- `~/wiki/index.md` — updated (added test-time-scaling, enriched chain-of-thought)
+- `~/wiki/log.md` — updated
+
+

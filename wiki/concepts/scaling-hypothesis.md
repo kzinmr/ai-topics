@@ -32,7 +32,7 @@ sources:
 related:
   - scaling-laws
   - bitter-lesson
-  - inference-time-scaling
+  - test-time-scaling
   - pretraining
 ---
 
@@ -388,7 +388,7 @@ Sources:
 
 - **[[concepts/scaling-laws|Scaling Laws]]**: The empirical mathematical framework for predicting loss given compute/data/parameters
 - **[[concepts/bitter-lesson-harnessing|Bitter Lesson]]**: Precursor concept — "the biggest lesson that can be read from 70 years of AI research is that general methods that leverage computation are ultimately the most effective"
-- **[[concepts/inference-time-scaling|Inference-Time Scaling]]**: Modern extension — spending more compute at inference time (chains of thought, search) produces reasoning improvements, analogous to training-time scaling
+- **[[concepts/test-time-scaling|Test-Time Scaling]]**: Modern extension — spending more compute at inference time (chains of thought, search) produces reasoning improvements, analogous to training-time scaling
 - **[[concepts/inference-scaling-hypothesis|Agents, Scaffolding, Composition, Inference-Scaling Hypothesis]]**: Related stub page about inference-scaling in agent contexts
 
 ## Sources
