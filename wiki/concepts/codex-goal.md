@@ -140,12 +140,17 @@ The Ralphable blog recommends **token budget over iteration count**:
 - [[concepts/karpathy-loop]] — Autonomous ML research variant
 - [[concepts/pi-autoresearch]] — Generalized metric optimization (Shopify)
 - [[concepts/codex-goal-meta-prompting]] — Using AI to generate better /goal prompts
+- [[concepts/claude-code-goal]] — Claude Code's /goal implemention (evaluator model architecture)
 - [[concepts/ralph-loop]] — The Ralph Wiggum loop pattern (if exists)
 - [[concepts/self-improving-agents]] — Agents that improve over multiple runs
+- [[entities/hermes-agent]] — Nous Research's Hermes Agent also adopted /goal mode in May 2026
 
 ## References
 
 - [Codex /goal Command: Deep Dive](https://ralphable.com/blog/codex-goal-command-ralph-loop-openai-built-in-autonomous-coding-agent-2026) — Ralphable Blog, May 2026
+- [The /goal Command: Cross-Platform Guide (Apidog)](https://apidog.com/blog/goal-command-codex-claude-code-autonomous-agents/) — Covers /goal across Codex, Claude Code, and Hermes (May 2026)
+- [Goal Mode for AI Agents (explainx.ai)](https://explainx.ai/blog/goal-mode-ai-agents-complete-guide-2026) — Complete guide covering OpenClaw, Hermes, and Codex adoption
 - [Codex CLI v0.128.0 Release Notes](https://github.com/openai/codex/releases)
 - [Greg Brockman's X post](https://x.com/gdb/status/1915497181795295268) — "codex now has a built in Ralph loop++"
 - [[raw/articles/2026-05-04_adityabawankule-codex-goal-meta-prompting.md]]
+- [[raw/articles/2026-05-14_apidog_goal-command-autonomous-agents.md]]

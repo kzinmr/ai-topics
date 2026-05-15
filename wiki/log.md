@@ -1,3 +1,29 @@
+## 2026-05-15 23:30 — X bookmarks ingest (3 bookmarks, 1 new page, 3 enriched)
+
+### Bookmark 1: AI Edge "/goal - Ultimate Guide" (X Article)
+- **Raw article saved**: `raw/articles/2026-05-14_apidog_goal-command-autonomous-agents.md` — Full Apidog mirror article covering /goal across Codex, Claude Code, and Hermes
+- **Enriched**: `concepts/codex-goal.md` — Added Hermes Agent /goal reference, Claude Code cross-link, Apidog and explainx.ai source references
+- **Status**: Existing goal pages (claude-code-goal.md 170 lines, codex-goal.md 151 lines) already thorough; cross-references enriched
+
+### Bookmark 2: Matt Van Horn "Every Claude Code Hack I Know" (X Article, metadata-only)
+- **Raw article saved**: `raw/articles/2026-03-22_mvanhorn_claude-code-hacks.md` — Metadata from X status page (auth-walled). Key themes: plan-first workflow, voice-driven dev, no-IDE philosophy, parallel sessions
+- **Enriched**: `entities/matt-van-horn.md` — Added Claude Code Workflow Philosophy section, new source reference, claude-code tag, claude-code-goal related link
+
+### Bookmark 3: Karri Saarinen "Code Intelligence for Linear Agent" (X Article → changelog)
+- **Raw article saved**: `raw/articles/2026-05-14_linear_code-intelligence-linear-agent.md` — Full Linear changelog extraction
+- **New concept page**: `concepts/linear-agent-code-intelligence.md` — Complete page with adoption metrics (1,055→5,200+ queries/month), architecture, setup, and strategic significance
+- **Enriched**: `entities/linear.md` — Updated with Code Intelligence feature, source, tags
+- **SCHEMA.md**: Added `code-intelligence` tag to AI Agents taxonomy
+
+### Index Changes
+- Added `concepts/linear-agent-code-intelligence` to concepts section (alphabetical, after lexical-search)
+- Updated concept count: 1322→1323, total pages: 1892→1893
+
+### Source URLs
+- https://apidog.com/blog/goal-command-codex-claude-code-autonomous-agents/
+- https://linear.app/changelog/2026-05-14-code-intelligence
+- https://x.com/i/article/2035834194065281024 (auth-walled)
+
 ## [2026-05-15] fix | wiki-health auto-repair
 
 ### Phase 1 — Index corruption check

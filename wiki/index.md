@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-15 | Total pages: 1892 | Indexed entries: 957 | Not in index: 876 |
+> Last updated: 2026-05-15 | Total pages: 1893 | Indexed entries: 957 | Not in index: 876 |
 
 ## Entities (591 pages)
 
@@ -602,7 +602,7 @@
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 - [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."
 
-## Concepts (1322 pages)
+## Concepts (1323 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -701,6 +701,7 @@
 - [[concepts/korean-ai]] — Korean AI Ecosystem
 - [[concepts/learning-llms-in-2025]] — Learning LLMs in 2025 (Yoav Goldberg)
 - [[concepts/lexical-search]] — Lexical Search: token-based matching against inverted index. Tokenization, query processing (AND/OR), multi-field search (DisMax). Foundation for BM25 scoring. Doug Turnbull's "Cheat at Search Essentials" course.
+- [[concepts/linear-agent-code-intelligence]] — Linear Agent Code Intelligence — Codebase-aware reasoning for Linear Agent (May 2026). Read-only GitHub integration enabling PMs, Support, and Engineering to query codebase context directly.
 - [[concepts/livecodebench]] — LiveCodeBench — LeetCode/AtCoder/CodeForcesから定期収集する汚染のないコーディングeval。コード生成・自己修復・実行予測の4シナリオ。ICLR 2025 Poster。
 - [[concepts/llm-as-judge-skills]] — Murat Can Koylan's reusable skills for LLM output evaluation. Part of Agent-Skills-for-Context-Engineering (15.5k stars). Context engineering approach to eval.
 - [[concepts/llm-course-roadmap]] — LLM Course Roadmap (Maxime Labonne)
