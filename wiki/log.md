@@ -1,4 +1,14 @@
 
+## 2026-05-14 23:57 UTC — 0xSero「Open Source must win.」Wiki取り込み
+
+**Action**: ユーザーリクエスト（Discord）により @0xSero の X Article「Open Source must win.」(2026-03-20) をwikiに取り込み。
+
+**Raw article saved**: `raw/articles/2026-03-20_0xsero_open-source-must-win.md` — 全文（type: x_article）
+**Entity enriched**: `entities/sero.md` — 「Mission Statement: Open Source Must Win (March 2026)」セクション追加（約30行）。10年ミッション、REAP Expert Swap、非中央集権的学習、AI教育の3本柱を詳述。
+**Index updated**: `wiki/index.md` — seroエントリの説明を拡充（REAP Expert Swap、マニフェスト言及追加）
+
+このマニフェストは Sero の "Freedom Tech" 哲学を10年ロードマップとして結晶化したもの。
+
 ## 2026-05-14 23:30 UTC — X Bookmarks Ingest
 
 **Pipeline**: x-bookmarks-ingest (cron)

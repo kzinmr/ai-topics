@@ -2,7 +2,7 @@
 title: "Sero (0xSero)"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-06
+updated: 2026-05-14
 type: entity
 ---
 
@@ -162,6 +162,35 @@ His AI Data Extraction toolkit was born from realizing that developers don't own
 
 He argues that wrapper/ADE businesses should focus on building polished applications rather than competing on inference pricing against subsidized model providers.
 
+### Mission Statement: "Open Source Must Win" (March 2026)
+
+On March 20, 2026, Sero published [**"Open Source must win."**](https://x.com/0xsero/status/2035022588439581076) — a comprehensive X Article manifesto and public commitment for the next decade of his life. The article lays out his worldview on AI's trajectory, its societal risks, and his personal mission to democratize AI access.
+
+**Core beliefs stated in the manifesto:**
+1. LLMs are not conscious and won't ever be — they are inaccurate statistical machines
+2. Open Source AI is good but **must get better**
+3. No hatred or malice for closed-source labs; respects peers at OpenAI, Anthropic, xAI
+
+**Analysis of the current AI landscape:**
+
+- **57% of internet content is AI-generated** (likely an understatement) — drowning in synthetic content, even when published by humans
+- **People can no longer distinguish reality from fiction** — AI-generated political propaganda, fake death videos, non-consensual pornography
+- **25% of Americans depend on driving jobs** — self-driving cars now entering global markets (Czech Republic already)
+- **Governments conducting hostile takeovers of AI companies** — forcing mass surveillance and autonomous weapons; Claude model blamed for bombing 150+ children
+- **Global chip crisis + compute centralization** — Nvidia Rubin x Groq chips reduce inference cost 10x, but cost $6M/rack and are sold out 2 years in advance. China's open-weight AI business model crushed by export controls.
+
+**The asymmetry problem**: Sero argues that centralized AI labs now hold overwhelming power — models embedded in governments, militaries, and enterprises — while open-source alternatives are being economically choked through compute scarcity. The "gun vs. knife" dynamic means open-source may lose by default if not deliberately defended.
+
+**10-year mission commitment** — making AI education, data procurement, training, distribution, self-hosting, and inference available to everyone at any budget tier:
+
+1. **MoE model compression techniques** — REAP Expert Swap (shrunk GLM-4.7 to ~15% size while maintaining coding ability, 20% CPU offloading speedup). Repo: [reap-expert-swap](https://github.com/0xSero/reap-expert-swap)
+2. **Decentralized LLM training & data procurement** — like Covenant-72B, a system where anyone can contribute data or compute to training frontier models
+3. **AI education** — making his podcast and YouTube content on hardware, models, and compression accessible to the masses
+
+**Funding ask**: Open call for donations at [donate.sybilsolutions.ai](https://donate.sybilsolutions.ai) — all funds go to compute for local AI research. Everything stays open source, no exceptions. Also seeking research collaborators and signal boosters.
+
+This manifesto crystallizes his "Freedom Tech" philosophy into a concrete decade-long roadmap.
+
 ### Digital Wellness
 > "YouTube shorts and short in general are a cancer... @YouTube add a feature to disable this, it's genuine garbage that destroys the mind and soul."
 
@@ -217,3 +246,6 @@ Before AI, Sero built significant infrastructure in the Web3 space:
 - **Farcaster**: [@0xsero](https://warpcast.com/0xsero)
 - **Blog**: [sybilsolutions.ai/blog](https://www.sybilsolutions.ai/blog/)
 - **Thrive Protocol**: [thriveprotocol.com](https://blog.thriveprotocol.com/about)
+- **REAP Expert Swap**: [github.com/0xSero/reap-expert-swap](https://github.com/0xSero/reap-expert-swap)
+- **Donate**: [donate.sybilsolutions.ai](https://donate.sybilsolutions.ai)
+- **YouTube**: [youtube.com/@0xSero](https://www.youtube.com/@0xSero)
