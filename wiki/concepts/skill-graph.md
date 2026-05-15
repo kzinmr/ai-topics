@@ -139,6 +139,7 @@ Autoresearch Desk化に必要な追加：
 
 ## 関連概念
 
+- [[concepts/agent-skills-overview]] — Agent Skills 概念クラスターマップ（親ページ）
 - [[concepts/harness-engineering/context-engineering]] — Context Engineeringの技術的基盤
 - [[concepts/agent-media]] — Autoresearch Desk: Wikiからマルチチャネル配信エンジンへ
 - [[entities/ronin-deronin]] — Ronin: スキルグラフアーキテクチャの提唱者

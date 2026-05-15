@@ -41,6 +41,22 @@
 - Wikilinks: [[hermes-agent]], [[nous-research]], [[gepa]], [[hermes-vs-openclaw-architecture]]
 - Updated `index.md`: added comparisons entry, updated hermes-agent and openclaw entity cross-references
 
+## 2026-05-15 00:35 UTC — Agent Skills Overview 親ページ作成＋クラスター相互参照整備
+
+**Action**: Created `concepts/agent-skills-overview.md` as the parent hub page for all Skills-related concepts. Added back-links from 6 key pages. Redirected stub duplicate `agent-skills-skillmd.md` → `agent-skills.md`. Updated `index.md` and `log.md`.
+
+**New pages**:
+- `concepts/agent-skills-overview.md` — Agent Skills 概念クラスターマップ。全Skills関連14ページを4層（Format & Standard / Design Philosophy / Implementation & Architecture / Research & Scaling）に分類。各層の相互関係・重複・読み筋（初心者/実践者/アーキテクト向け）を含む。
+
+**Updated pages (back-links added)**:
+- `concepts/agent-skills.md` — agent-skills-overviewへのSee Alsoリンク追加
+- `concepts/claude-code-skills.md` — agent-skills-overviewへのSee Alsoリンク追加
+- `concepts/skill-architecture-patterns.md` — agent-skills-overviewへのRelatedリンク追加
+- `concepts/agentic-ai-skills.md` — agent-skills-overviewへのRelated Conceptsリンク追加
+- `concepts/skill-graph.md` — agent-skills-overviewへの関連概念リンク追加
+- `concepts/skill-retrieval-augmentation.md` — agent-skills-overviewへのRelated Worksリンク追加
+- `concepts/agent-skills-skillmd.md` — stub → redirected（agent-skills.mdへのリダイレクトに変更）
+
 ## 2026-05-15 00:20 UTC — Claude Code Skills concept page created from Thariq X Article
 
 **Action**: Saved raw article `raw/articles/2026-03-17_trq212_lessons-building-claude-code-skills.md` (via GetXAPI), created concept page `concepts/claude-code-skills.md`, updated Thariq Shihipar entity page with source reference and cross-link. Updated `index.md` and `log.md`.

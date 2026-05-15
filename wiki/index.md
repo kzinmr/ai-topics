@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-15 | Total pages: 1865 | Indexed entries: 950 | Not in index: 895 |
+> Last updated: 2026-05-15 | Total pages: 1866 | Indexed entries: 951 | Not in index: 896 |
 
 ## Entities (589 pages)
 
@@ -904,6 +904,7 @@
 - [[concepts/zombie-internet]] — Zombie Internet: AI-contaminated web where humans and bots coexist in complex interaction patterns, causing cognitive overload and writing style distortion. Coined by Jason Koebler, highlighted by Simon Willison (May 2026).
 - [[concepts/advanced-tool-use]] — Advanced Tool Use
 - [[concepts/agent-skills]] — Agent Skills
+- [[concepts/agent-skills-overview]] — Agent Skills Overview — 概念クラスターマップ。全Skills関連ページをFormat/Design Philosophy/Implementation/Researchの4層に分類し相互関係をマッピングする親ページ。
 - [[concepts/browser-use-production-architecture]] — Browser Use Production Architecture — SQS-to-Lambda architecture for running browser agents at scale
 - [[concepts/builders-unscripted]] — Builders Unscripted — OpenAI interview series hosted by Romain Huet, spotlighting AI builder stories
 - [[concepts/building-effective-agents]] — Building Effective Agents
