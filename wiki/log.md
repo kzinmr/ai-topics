@@ -1,3 +1,29 @@
+## [2026-05-15] fix | wiki-health auto-repair
+
+### Phase 1 — Index corruption check
+- Index corruption: 0 issues ✅ (pipe_corruption=0, triple_bracket=0, line_number=0)
+- SCHEMA.md: healthy
+- validate_index.py: pass ✅
+
+### Phase 2 — Orphan page registration (20 of 936)
+- **Added 20 orphan pages to index.md** (19 concepts + 1 comparison)
+- Concepts added: aaron-swartz, a-philosophy-of-software-design-vs-clean-code, activitypub, adversarial-interoperability, agent-documentation, agent-first-codebase-design, agent-first-design, agentic-alternative-to-graphrag, agentic-browsing, agentic-coding, agentic-commerce, agentic-conflict-resolution, agentic-design-patterns, agentic-engineering-cognition-devin-multi-agents-orchestration, agentic-engineering-cognition-devin-workflow, agentic-engineering-patterns, agentic-manual-testing, agent-security-patterns, agent-skills-skillmd
+- Comparison added: agent-sandboxing
+- Updated section counts: Concepts (1303→1322), Comparisons (16→17)
+- Updated Total pages: 1872→1892, Not in index: 896→876
+
+### Phase 3 — Script path issue detected
+- cron job expects wiki_health_json.py at `/opt/data/.hermes/scripts/wiki_health_json.py`
+- Actual location: `/opt/data/ai-topics/scripts/wiki_health_json.py`
+- Script ran successfully from canonical path despite cron config error
+
+### Health overview
+- Entities: 598 / Concepts: 1,350 / Comparisons: 18 / Total L2: 1,966
+- Raw articles: 5,968 / Stale pages: 242 (oldest: 36 days)
+- Remaining orphan pages: 916 (not auto-processed — batch limit)
+
+---
+
 ## [2026-05-15] watchdog | No auto-fixes applied — all issues exceed 10-file threshold
 
 ### Health Summary
