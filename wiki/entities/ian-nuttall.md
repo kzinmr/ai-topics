@@ -2,7 +2,7 @@
 title: "Ian Nuttall"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-10
+updated: 2026-05-15
 type: entity
 ---
 
@@ -152,6 +152,7 @@ Nuttall's content platform and course business teaching programmatic SEO strateg
 - [[concepts/model-context-protocol-mcp]] — Model Context Protocol servers as a new product category
 - [[entities/claude-code]] — His primary AI coding tool
 - [[concepts/harness-engineering/system-architecture/agent-skills]] — Playbooks.com is a skill directory for AI agents
+- [[entities/randy-olson]] — Shared focus on agent-skills, MCP ecosystems, and AI agent evaluation
 -  — His approach to agent state management
 ## Sources
 

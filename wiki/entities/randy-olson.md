@@ -1,7 +1,7 @@
 ---
 title: Randy Olson (Randal S. Olson)
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-15
 type: person
 tags:
   - person
@@ -199,6 +199,7 @@ Olson's visualization of gender distribution across U.S. college majors from 197
 - [[concepts/evolutionary-algorithms|Evolutionary Algorithms]] — Olson's Ph.D. focus area; genetic algorithms for AutoML
 - [[concepts/agent-evaluation|Agent Evaluation]] — Multi-step decision chain quality assessment
 - [[concepts/mcp|Model Context Protocol (MCP)]] — Protocol enabling AI agents to connect to Truesight quality standards
+- [[entities/ian-nuttall]] — MCP server tooling, Claude Code agent-skills, open-source developer tools
 - [[entities/ege-altan|Ege Altan]] — Co-Founder & CEO of Goodeye Labs
 
 ## X Activity Themes
