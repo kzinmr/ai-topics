@@ -2,7 +2,7 @@
 title: "Managed Agents (Anthropic)"
 type: concept
 created: 2026-04-25
-updated: 2026-05-08
+updated: 2026-05-15
 tags:
   - architecture
   - anthropic
@@ -14,6 +14,8 @@ status: active
 sources:
   - raw/articles/2026-05-08_anthropic-engineering_managed-agents.md
   - https://www.anthropic.com/engineering/managed-agents
+  - raw/articles/martinalderson.com--posts-managed-agents-are-the-new-lambda--f9db9fb9.md
+  - https://martinalderson.com/posts/managed-agents-are-the-new-lambda/
 related:
   - building-effective-agents
   - effective-harnesses-for-long-running-agents
@@ -83,7 +85,44 @@ Managed Agentsは**メタハーネス** — 特定のハーネス実装に依存
 
 > "We're opinionated about the shape of these interfaces, not about what runs behind them."
 
+
+## ベンダーロックインと自己ホスティング戦略 (Martin Alderson, May 2026)
+
+[[entities/martin-alderson|Martin Alderson]] は管理エージェントを **AWS Lambda のアナロジー** で分析。Lambda がサーバーレス革命だったように、管理エージェントは強力だが「スティッキー（移行困難）」だと警告。
+
+### エージェントハーネスの交換可能性
+
+すべてのエージェントハーネス（Claude Code, Codex, OpenCode, Pi）は同じプリミティブを持つ：
+- プロンプト + コンテキスト + ツール → 出力 + ログ
+
+この基本構造の共通性により、ハーネス間の切り替えは比較的容易。しかし管理エージェント製品にデータとワークフローが埋め込まれると、その容易さは失われる。
+
+### Anthropic 料金変更の影響 (May 2026)
+
+Anthropic は 2026年5月、**非対話モード**の Claude Code 利用（管理エージェント・CI/CD パイプラインを含む）をサブスクリプショントークン枠から除外。実質 **5-20倍の値上げ** となり：
+- **OpenAI Codex への移行圧力**が発生（OpenAI は現状、全ツール・全モードでサブスクリプション枠使用を許可）
+- 開発者の価格感応性が企業の大規模購買決定に波及するパターンに注目
+
+### 自己ホスティングの実践
+
+```bash
+# 本質的には Docker コンテナでハーネスを実行するだけ
+docker run ... opencode --model <any-provider> --prompt "..."
+```
+
+利点:
+- **モデルプロバイダ非依存**: 数分で Anthropic → OpenAI → Google → DeepSeek に切り替え可能
+- **既存インフラ内でセキュア**: 自社 VPC・IAM・監査ログの枠内で運用
+- **組織的コンピテンス構築**: エージェントプリミティブの知識を外部委託しない
+
+### フロンティアラボの独占戦略リスク
+
+> *"I have a strong gut feeling the frontier labs are going to start introducing new models and capabilities that are ONLY available on their managed agent platforms."*
+
+新モデル・新機能が管理エージェントプラットフォーム限定で提供され始めた場合、セルフホスティング戦略は根本的に揺らぐ。現時点では様子見が賢明だが、動向を注視する必要がある。
+
 ## See Also
+
 
 - [[concepts/building-effective-agents]] — Building effective agents
 - [[concepts/effective-harnesses-for-long-running-agents]] — Long-running agent harnesses

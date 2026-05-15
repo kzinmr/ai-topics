@@ -1,6 +1,31 @@
 
 
 
+## 2026-05-15 07:50 UTC — blog-wiki-ingest | DS4, M5 Mythos Exploit, Managed Agents
+
+**Action**: Processed blog triage from blog-ingest checkpoint (20 candidates). 3 takes, 6 references, 11 skips.
+
+### Pages Created
+- `concepts/ds4-dwarfstar-4.md` — DS4 (DwarfStar 4): antirezのローカルAI推論プロジェクト。DeepSeek V4 Flash in 2/8-bit asymmetric quantization. Source: antirez.com/news/165.
+
+### Pages Updated
+- `entities/antirez-com.md` — Added DS4 section with timeline entry, technical details (2/8-bit asymmetric quantization, vector steering), future plans (distributed inference, coding agent, model variants). Source: antirez.com/news/165.
+- `concepts/ai-vulnerability-discovery.md` — Full rewrite from stub: M5 MIE kernel exploit case study, Mozilla Firefox hardening, antirez's intelligence-vs-compute framework, Mythos Preview generalization capabilities.
+- `concepts/claude-mythos-preview.md` — Added Apple M5 MIE Kernel Exploit section (May 2026): Calif team breached M5 MIE in 1 week with Mythos Preview. Data-only kernel LPE, 2-vuln chain, root shell on bare-metal M5.
+- `entities/martin-alderson.md` — Added "Managed Agents Analysis" section: Lambda analogy, Anthropic pricing change (5-20x increase), self-hosting strategy, OpenCode as multi-provider harness, frontier lab exclusive-platform risk.
+- `concepts/managed-agents.md` — Added generic vendor lock-in analysis section: harness swapability, Anthropic pricing impact, self-hosting pattern, multi-provider platform landscape (Cloudflare, Vercel, AWS AgentCore, Azure, GCP).
+
+### Index Updated
+- Added `concepts/ds4-dwarfstar-4` under Concepts section (1300 pages)
+- Total pages: 1868 | Indexed entries: 953
+
+### Sources
+- blog-18: `raw/articles/antirez.com--news-165--a8668e18.md`
+- blog-14: `raw/articles/blog.calif.io--p-first-public-kernel-memory-corruption--8fd5d832.md`
+- blog-4: `raw/articles/martinalderson.com--posts-managed-agents-are-the-new-lambda--f9db9fb9.md`
+
+---
+
 ## 2026-05-15 07:40 UTC — newsletter-wiki-ingest | The AI Cursor Arrives! + Isomorphic Labs $2.1B
 
 **Action**: Processed newsletter triage from getsuperintel.com "The AI Cursor Arrives!" (May 13, 2026). Created Google DeepMind entity page, enriched Demis Hassabis and Ilya Sutskever pages.
