@@ -25,7 +25,8 @@ sources: [
   "https://x.com/addyosmani/status/2053231239721885918",
   "raw/articles/2026-05-14_kzinmr_open-harness-vs-agent-framework.md",
   "raw/articles/2026-05-15_kzinmr_agent-runtime-execution-semantics.md",
-  "raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis.md"
+  "raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis.md",
+  "raw/articles/2026-05-15_kzinmr_why-runtime-centric-now-control-flow-ownership.md"
 ]
 ---
 
@@ -50,6 +51,8 @@ A subtle but essential architectural distinction, formalized by kzinmr (2026-05-
 | **Analogy** | The program logic | The operating system kernel |
 
 The harness decides which tools to call and in what order. The runtime manages whether those calls are allowed, how they execute, what state persists across them, and how execution recovers from failure. In Han Lee's formulation: "The agent is the harness plus the model, running inside the runtime."
+
+**The deeper distinction (kzinmr, 2026-05-15)**: This is not merely a layering question — it's a question of **who owns control flow**. In the workflow-centric era, the developer held control flow authority because models were unreliable primitives (tool misuse, context drift, loop collapse). In the runtime-centric era, models can *maintain execution semantics* — tool continuation, long-horizon tasks, retry adaptation — which means the runtime can shift from "constraining an unreliable model" to "mediating a capable model's execution." The harness still decides *what to attempt*, but the model now safely owns *what happens next*, and the runtime mediates *how it happens safely*. See [[concepts/agent-runtime#why-now-control-flow-ownership-and-the-real-shift]].
 
 > **Workflow framework vs runtime**: LangGraph is closer to a **workflow framework** — it describes *execution topology* (what should happen). Claude Agent SDK and PI are closer to **runtimes** — they maintain *execution continuity* (how execution proceeds). See [[concepts/agent-runtime]] §"Execution Semantics: The Control System Layer" for the full analysis.
 

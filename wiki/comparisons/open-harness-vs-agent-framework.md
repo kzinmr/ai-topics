@@ -13,6 +13,7 @@ aliases: ["harness-vs-framework", "harness-vs-sdk"]
 sources:
   - "raw/articles/2026-05-14_kzinmr_open-harness-vs-agent-framework.md"
   - "raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis.md"
+  - "raw/articles/2026-05-15_kzinmr_why-runtime-centric-now-control-flow-ownership.md"
 related:
   - concepts/agent-harness
   - concepts/harness-engineering
@@ -369,5 +370,25 @@ This is closer to an **"Agent OS"** than an orchestration library. PI is not in 
 | **Mental model** | Agent OS / application runtime | Orchestration library / topology DSL |
 
 This distinction matters because it changes the evaluation criteria. PI should not be compared to LangGraph on "workflow modeling capability" — that's not what it's trying to do. PI should be evaluated as a **runtime substrate**: how well does it manage execution, mediate the environment, and provide a programmable foundation for agent behavior?
+
+### Why the Shift Now: Control Flow Ownership
+
+The runtime-centric shift is not simply "models got smarter." The deeper structural change (kzinmr, 2026-05-15) is **who can safely own control flow**:
+
+- **Workflow-centric era (2023)**: Models were unreliable primitives — tool misuse, context drift, loop collapse. Developers had to hold control flow authority via explicit graphs. LangGraph's worldview was correct for its time.
+- **Runtime-centric era (2025+)**: Models can now *maintain execution semantics* — tool continuation, long-horizon tasks, retry adaptation, context tracking, subtask decomposition, failure recovery. When the model can safely own control flow, the bottleneck shifts from "how do we constrain flow?" to "how do we execute safely?"
+
+The ReAct loop always existed — even LangChain could do `while True: thought=llm(...); result=tool(action)`. The presence of a loop is not the structural difference. The difference is that the loop is no longer an unreliable primitive that needs a developer-authored graph to contain it; it's a reliable execution substrate that the runtime can mediate.
+
+#### The Framework Irrelevance Thesis: Half Right, Half Wrong
+
+> "As models improve, frameworks become irrelevant."
+
+- **Half right**: Workflow-centric abstraction (graph topology, explicit routing, structured transitions) declines as models internalize decomposition, planning, and recovery.
+- **Half wrong**: Runtime abstraction (observability, state management, permissions, scheduling, isolation, memory, policies) becomes **more** important — the bottleneck shifts from orchestration logic to execution runtime design.
+
+The future is not a "workflow compiler" but an **agent operating runtime**. ClaudeCode and Codex's advantage is not just model quality — it's **model × runtime co-design**.
+
+See [[concepts/agent-runtime#why-now-control-flow-ownership-and-the-real-shift]] and [[concepts/agent-runtime#what-dies-and-what-survives-the-future-of-agent-infrastructure]] for the full analysis.
 
 **Source**: kzinmr, "Agent Stack Architecture & Comparative Analysis" (2026-05-15), [[raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis]].

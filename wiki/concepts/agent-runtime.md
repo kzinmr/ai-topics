@@ -22,6 +22,7 @@ sources:
   - "https://northflank.com/blog/top-modal-sandboxes-alternatives-for-secure-ai-code-execution"
   - "raw/articles/2026-05-15_kzinmr_agent-runtime-execution-semantics.md"
   - "raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis.md"
+  - "raw/articles/2026-05-15_kzinmr_why-runtime-centric-now-control-flow-ownership.md"
 aliases: [agent-serving-infrastructure, agent-sandbox, agent-execution-environment]
 ---
 
@@ -74,7 +75,17 @@ The agent stack's center of gravity has shifted dramatically over three years, t
 
 Agent value has migrated: **Prompt → Workflow → Runtime**. This is not a rejection of frameworks or workflows — it's a recognition that as models become more capable, the bottleneck shifts from *what to describe* to *how to execute continuously and safely*. The runtime becomes the primary source of differentiation, not the orchestration DSL.
 
-> **Core message**: Model quality alone no longer determines agent capability. Runtime design increasingly dominates real-world performance.
+A more precise periodization (kzinmr, 2026-05-15):
+
+```
+2023: Weak model → explicit workflows dominate
+     (framework compensates for weak models)
+2024: Stronger models → hybrid orchestration
+2025+: Runtime-mediated execution → runtime-centric systems dominate
+     (runtime amplifies strong models)
+```
+
+> **Core message**: As models become capable of owning control flow, the bottleneck shifts from orchestration logic to execution runtime design. Model quality alone no longer determines agent capability. Runtime design increasingly dominates real-world performance.
 
 See [[concepts/agent-runtime#execution-semantics-the-control-system-layer|§Execution Semantics]] for the detailed analysis of what makes the runtime layer architecturally distinct from workflow frameworks.
 
@@ -173,18 +184,115 @@ This is one of the most consequential architectural distinctions:
  Browser         Shell         GUI/OS
 ```
 
-### Why This Distinction Matters Now
+### Why Now: Control Flow Ownership and the Real Shift
 
-The transition from **completion-centric** to **agent-centric** computing is what makes the runtime layer necessary:
+The transition from **completion-centric** to **agent-centric** computing is the surface explanation. But a deeper question remains: ReAct loops existed in the LangChain era — why did they not drive a runtime-centric architecture shift until now?
 
-- **Old world**: `LLM call = atomic operation` — a single request/response with no continuity. A completion API was sufficient.
-- **New world**: `LLM execution = long-lived process` — spanning minutes to hours, with tool calls, sub-agent delegation, interruptions, and recovery. A completion API cannot handle state continuity, interruption, environment interaction, delegation, or recovery.
+**The loop was always possible.** Developers have been able to write `while True: thought = llm(...); action = parse(thought); result = tool(action)` since the first tool-calling API. The presence of a loop is **not** the structural difference.
 
-The runtime is the architectural answer to this shift. Every major agent platform (PI, OpenAI Agents SDK, Claude Agent SDK, LangGraph) is converging on the same realization: agents need an execution substrate that treats them as **persistent execution entities**, not stateless completions.
+#### Who Owns Control Flow?
+
+The real shift is about **who can safely hold control flow authority** (kzinmr, 2026-05-15):
+
+| Era | Model Capability | Control Flow Authority | Architecture |
+|---|---|---|---|
+| **Workflow-centric (2023)** | Model is an *unreliable primitive* — tool misuse, context drift, hallucinated routing, loop collapse, inconsistent planning | **Developer** holds authority via graphs, constraints, explicit routing, structured transitions | LLM embedded inside developer-authored workflow |
+| **Runtime-centric (2025+)** | Model can *maintain execution semantics* — tool continuation, long-horizon tasks, retry adaptation, context tracking, subtask decomposition, failure recovery | **Model** drives what happens next; **runtime** mediates how it happens safely | Runtime loop is primary; workflow emerges from execution |
+
+The LangGraph worldview was correct *for its time*: when models could not safely own control flow, developers needed to hold control flow authority through explicit graphs. What changed in 2024-2025 was not that loops became possible — it was that **models became reliable enough to maintain execution semantics across long, open-ended trajectories**.
+
+#### The Question Shift
+
+This capability shift transforms the central engineering question:
+
+| Era | Core Question | Primary Concern |
+|---|---|---|
+| **Workflow-centric** | "How do we constrain flow?" | Developer-authored topology, explicit routing, structured transitions |
+| **Runtime-centric** | "How do we execute safely?" | Lifecycle management, tool sandboxing, interruption, retries, observability, approval boundaries |
+
+When the model can participate in orchestration, the bottleneck shifts from *orchestration logic* to *execution runtime design*. This is the deepest architectural implication of the runtime-centric shift.
+
+#### Why Browser/Computer-Use Forced the Shift
+
+The single biggest forcing function was **open-ended environments**. Coding tasks are comparatively deterministic, symbolic, and replayable — a developer-authored graph can enumerate valid paths. But browser and computer-use environments are dynamic, stateful, partially observable, and failure-prone:
+
+- You cannot pre-author **all valid paths** in a graph for a GUI interaction — the DOM changes, selectors break, rendering is asynchronous
+- You cannot predict what the model will see next — every screenshot is a new observation with no symbolic representation
+- You cannot hardcode recovery strategies — failures take novel forms that require model-level reasoning
+
+In these environments, **developer-authored graphs break down**. The runtime must handle retries, replanning, interruption, adaptive tool use, and opportunistic delegation — not as pre-scripted graph branches, but as emergent execution behaviors. Runtime-centric systems are fundamentally an adaptation to **open-world agent execution**.
+
+> **As models become capable of owning control flow, the bottleneck shifts from orchestration logic to execution runtime design.** — kzinmr (2026-05-15)
+
+### The Structural Inversion: Graph Primary vs Loop Primary
+
+At the deepest architectural level, the shift from workflow-centric to runtime-centric is a **structural inversion** of what is primary and what is emergent:
+
+| | Workflow-Centric | Runtime-Centric |
+|---|---|---|
+| **What is primary?** | Graph — developer-authored topology | Runtime loop — model-driven execution |
+| **What is emergent?** | LLM behavior constrained by graph edges | Workflow emerges from execution trajectory |
+| **Who decides what's next?** | Developer (via graph structure) | Model (via reasoning); runtime mediates |
+| **System character** | Predictable, constrained | Adaptive, open-world |
+| **Analogy** | Railroad tracks — the path is laid before the train moves | Autonomous navigation — the path is discovered in real time |
+| **Best for** | Deterministic business logic, audit trails, compliance | Unpredictable environments, exploration, creative problem-solving |
+
+#### The "PydanticAI Can Do ReAct" Question
+
+A natural objection: PydanticAI and other workflow-centric frameworks can implement ReAct loops. Doesn't that mean they can achieve the same runtime-centric behavior?
+
+The answer is no — because **architecture is about what is primary, not what is possible**. In a workflow-centric framework, even a ReAct loop is *embedded inside a developer-authored graph*. The graph owns the lifecycle; the loop is a component. In a runtime-centric system, the loop owns the lifecycle; the graph (if it exists at all) is an emergent description of what happened, not a prescriptive description of what must happen.
+
+| | PydanticAI + ReAct | PI / ClaudeCode / OpenClaw |
+|---|---|---|
+| **Loop status** | Component inside graph | Primary execution substrate |
+| **Graph status** | Primary (prescriptive) | Emergent (descriptive) or absent |
+| **Control flow ownership** | Developer (via graph edges) | Model (via runtime mediation) |
+| **What happens when the model does something unexpected** | Constrained by graph topology | Runtime mediates, adapts, recovers |
+
+The difference is not capability — both can execute tool-calling loops. The difference is **who holds the architecture's center of gravity**: the developer's pre-authored topology, or the model's runtime-mediated execution.
+
+### What Dies and What Survives: The Future of Agent Infrastructure
+
+If the shift is real, what parts of today's agent infrastructure become more important and what parts decline?
+
+#### Declining: Explicit Orchestration DSL
+
+As models internalize decomposition, routing, planning, and recovery, the value of developer-authored orchestration decreases:
+
+- `graph.add_edge(...)` — explicit routing rules
+- Hand-coded state transitions
+- Pre-scripted retry/recovery branches
+- Developer-authored planning decompositions
+
+These are not going to zero — deterministic business logic still needs explicit structure. But their relative importance declines as models become more capable of owning control flow.
+
+#### Growing: Execution Semantics
+
+The runtime layer becomes **more** important, not less:
+
+| Growing Concern | Why It Matters More |
+|---|---|
+| **Observability** | When the model owns control flow, you need traces, spans, and replayability to understand what happened |
+| **State management** | Runtime-managed state across turns, sessions, and interruptions becomes the backbone |
+| **Permissions & safety** | The runtime must enforce what the model is *allowed* to do, independent of what it *decides* to do |
+| **Scheduling & delegation** | Sub-agent spawning, concurrency, prioritization — OS-like scheduling becomes critical |
+| **Isolation & sandboxing** | Every tool execution, every sub-agent, every environment interaction needs runtime-enforced boundaries |
+| **Memory continuity** | Across turns, sessions, and interruptions — the runtime holds the agent's identity |
+| **Runtime policies** | Approval boundaries, quotas, rate limits — enforced at the runtime level, not in application code |
+
+#### The Half-Right, Half-Wrong Thesis
+
+> "As models improve, frameworks become irrelevant."
+
+- **Half right**: workflow-centric abstraction shrinks. Explicit orchestration DSLs decline in relative importance.
+- **Half wrong**: runtime abstraction becomes **more** important. The bottleneck shifts from orchestration logic to execution runtime design.
+
+The future is not a "workflow compiler" — it's an **agent operating runtime**. This is why ClaudeCode and Codex's advantage is not just model quality but **model × runtime co-design**: the model is trained on the runtime's trajectories, and the runtime is optimized for the model's failure modes.
 
 > **Shortest definition**: The agent runtime is the control system that makes an agent a **persistent, stateful execution entity** — not a series of stateless completions.
 
-**Source**: kzinmr, "Agent Runtime as Execution Control System" (2026-05-15), [[raw/articles/2026-05-15_kzinmr_agent-runtime-execution-semantics]].
+**Source**: kzinmr, "Why Runtime-Centric Now — Control Flow Ownership" (2026-05-15), [[raw/articles/2026-05-15_kzinmr_why-runtime-centric-now-control-flow-ownership]].
 
 ## Why Sandboxing Is Not Optional
 

@@ -1,5 +1,20 @@
 
 
+## 2026-05-15 02:50 UTC — Control flow ownership: why runtime-centric now, structural inversion, what dies and survives
+
+**Action**: Enriched `concepts/agent-runtime.md` with the deepest layer of the runtime-centric analysis — why the shift happened now, what structurally changed, and what the future of agent infrastructure looks like. Also updated `comparisons/open-harness-vs-agent-framework.md` §9 and `concepts/agent-harness.md`.
+
+**New pages**:
+- `raw/articles/2026-05-15_kzinmr_why-runtime-centric-now-control-flow-ownership.md` — Full analysis: control flow ownership as the real shift, structural inversion (graph primary vs loop primary), what dies (explicit orchestration DSL) and what survives (execution semantics), browser/computer-use as the forcing function, the half-right/half-wrong framework irrelevance thesis
+
+**Enriched sections in `concepts/agent-runtime.md`**:
+- §"Why Now: Control Flow Ownership and the Real Shift" — The loop was always possible; the real difference is who can safely hold control flow authority. 3-era table (model capability → control flow authority → architecture). The question shift: "how do we constrain flow?" → "how do we execute safely?" Why browser/computer-use forced the shift (open-ended environments break developer-authored graphs).
+- §"The Structural Inversion: Graph Primary vs Loop Primary" — Workflow-centric: graph is primary, LLM is a component, developer decides what's next. Runtime-centric: loop is primary, workflow emerges from execution, model decides what's next, runtime mediates. Railroad tracks vs autonomous navigation analogy. The "PydanticAI Can Do ReAct" question — architecture is about what is primary, not what is possible.
+- §"What Dies and What Survives: The Future of Agent Infrastructure" — Declining: explicit orchestration DSL (graph.add_edge, hand-coded state transitions). Growing: execution semantics (observability, state, permissions, scheduling, isolation, memory, runtime policies). The half-right/half-wrong thesis: workflow abstraction shrinks, runtime abstraction becomes MORE important.
+- Updated Historical Arc with 3-era model (weak model → hybrid → runtime-mediated)
+
+**Key insight**: The ReAct loop existed in the LangChain era — the loop is not the structural difference. The real shift is that models became reliable enough to *maintain execution semantics* (tool continuation, long-horizon tasks, retry adaptation), which means the runtime can shift from "constraining an unreliable model" to "mediating a capable model's execution." The bottleneck shifts from orchestration logic to execution runtime design.
+
 ## 2026-05-15 02:30 UTC — Agent stack architecture: 5-layer model, Closed/Open Harness, Harness Type comparison, PI as Runtime Substrate
 
 **Action**: Enriched 5 wiki pages with kzinmr's comprehensive agent stack architecture analysis — the 5-layer agent stack model, Closed vs Open Harness comparison, Harness Type comparison (coding/browser/computer-use/general + environment entropy gradient), Harness vs SDK/Framework "user vs builder" distinction, runtime-centric vs workflow-centric taxonomy, PI as Runtime Substrate, and the historical arc (Framework→Workflow→Runtime-centric).
