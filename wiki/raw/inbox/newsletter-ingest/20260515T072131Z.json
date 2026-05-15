@@ -1,0 +1,135 @@
+{
+  "run_id": "20260515T072131Z",
+  "triage_date": "2026-05-15T07:26:00Z",
+  "total_newsletters": 7,
+  "newsletters": [
+    {
+      "subject": "[AINews] Everything is Conductor",
+      "source": "swyx / Latent.Space (Substack)",
+      "date": "2026-05-15",
+      "canonical_url": "https://open.substack.com/pub/swyx/p/ainews-everything-is-conductor",
+      "importance": "critical",
+      "reason": "Core AI coding agent content: GitHub Copilot App announcement, Codex in ChatGPT mobile app, Remote SSH GA, VS Code multi-agent UX, Conductor.build analysis, agent-first tooling convergence. Directly relevant to LLM/AI Agent wiki.",
+      "topics": [
+        "coding-agents",
+        "github-copilot",
+        "openai-codex",
+        "conductor",
+        "agent-ux",
+        "mcp"
+      ],
+      "action": "wiki-ingest",
+      "suggested_pages": [
+        "entities/github-copilot-app",
+        "concepts/agent-first-ide-ux",
+        "concepts/carcinisation-in-ai-tooling"
+      ]
+    },
+    {
+      "subject": "How to build a voice agent in Claude",
+      "source": "Alex Banks / The Signal (Substack)",
+      "date": "2026-05-14",
+      "canonical_url": "https://open.substack.com/pub/thesignal/p/how-to-build-a-voice-agent-in-claude",
+      "importance": "high",
+      "reason": "Detailed tutorial on building voice agents using ElevenLabs Agents MCP App + Claude Desktop. Covers STT (Scribe v2), LLM (Claude Haiku 4.5), TTS (Eleven Flash v2.5) pipeline. Directly relevant to agent tooling and MCP ecosystem.",
+      "topics": [
+        "voice-agents",
+        "mcp",
+        "elevenlabs",
+        "claude-desktop",
+        "agent-orchestration"
+      ],
+      "action": "wiki-ingest",
+      "suggested_pages": [
+        "concepts/voice-agent-architecture",
+        "entities/elevenlabs-agents-mcp"
+      ]
+    },
+    {
+      "subject": "Agents feedback tip",
+      "source": "Ben's Bites (Substack)",
+      "date": "2026-05-14",
+      "canonical_url": "https://open.substack.com/pub/bensbites/p/agents-feedback-tip",
+      "importance": "high",
+      "reason": "Agent workflow innovation (video-to-HTML feedback loop) plus major headlines: Claude plan changes for third-party agent tools (Conductor, Zed, Openclaw, T3 Code), Gemini Intelligence on Android, Notion developer platform with agent support, Vercel AI Gateway production index showing 59% agentic workloads, Cursor cloud agents. Rich signal for wiki.",
+      "topics": [
+        "agent-workflows",
+        "claude-pricing",
+        "notion-dev-platform",
+        "vercel-ai-gateway",
+        "gemini-android",
+        "cursor"
+      ],
+      "action": "wiki-ingest",
+      "suggested_pages": [
+        "concepts/agent-feedback-loops",
+        "concepts/vercel-ai-gateway-production-index",
+        "entities/notion-developer-platform"
+      ]
+    },
+    {
+      "subject": "True Positive Weekly #161",
+      "source": "AI Weekly (Substack)",
+      "date": "2026-05-14",
+      "canonical_url": "https://open.substack.com/pub/aiweekly/p/true-positive-weekly-161",
+      "importance": "high",
+      "reason": "Curated AI weekly digest (issue #161). Likely contains multiple AI/LLM developments worth scanning for wiki-relevant items. Publication name and history suggest consistent AI coverage.",
+      "topics": [
+        "ai-news",
+        "weekly-digest"
+      ],
+      "action": "wiki-ingest"
+    },
+    {
+      "subject": "Frontier AI beats the cyber trend",
+      "source": "Unknown (Beehiiv)",
+      "date": "2026-05-14",
+      "canonical_url": null,
+      "importance": "low",
+      "reason": "All 20 URLs are Beehiiv email tracking links \u2014 cannot resolve to actual article URLs without additional scraping. Title suggests AI + cybersecurity intersection. Lower priority until actual content can be verified.",
+      "topics": [
+        "ai-security",
+        "frontier-ai"
+      ],
+      "action": "defer",
+      "notes": "Beehiiv tracking URLs prevent content extraction. Consider resolving redirects via browser if needed."
+    },
+    {
+      "subject": "IC work is the new career flex",
+      "source": "Elena Verna (Substack)",
+      "date": "2026-05-14",
+      "canonical_url": "https://open.substack.com/pub/elenaverna/p/ic-work-is-the-new-career-flex",
+      "importance": "low",
+      "reason": "Career/product growth content about individual contributor roles. Not directly related to LLM/AI Agent technologies. Peripheral relevance at best \u2014 may mention AI's impact on IC work but primary focus is career advice.",
+      "topics": [
+        "career",
+        "individual-contributor"
+      ],
+      "action": "skip",
+      "notes": "Outside wiki scope. No AI agent technical content expected."
+    },
+    {
+      "subject": "AI-Native Healthcare: 100M Doctor Visits, 10\u201320 Hours Saved, Prior Auth in Minutes \u2014 Janie Lee & Chai Asawa, Abridge\u2026",
+      "source": "swyx / Latent.Space (Substack)",
+      "date": "2026-05-14",
+      "canonical_url": "https://open.substack.com/pub/swyx/p/abridge",
+      "importance": "low",
+      "reason": "Podcast episode about Abridge healthcare AI application. Vertical-specific (healthcare) rather than general AI agent infrastructure. Moderate relevance as an AI application case study.",
+      "topics": [
+        "healthcare-ai",
+        "abridge",
+        "vertical-agents"
+      ],
+      "action": "defer",
+      "notes": "Could be worth a brief mention in a 'vertical AI applications' section if one exists. Not core agent infrastructure."
+    }
+  ],
+  "summary": {
+    "critical": 1,
+    "high": 3,
+    "low": 3,
+    "recommended_for_wiki_ingest": 4,
+    "recommended_defer": 2,
+    "recommended_skip": 1
+  }
+}

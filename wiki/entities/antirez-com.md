@@ -2,7 +2,7 @@
 title: "Salvatore Sanfilippo (antirez)"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-15
 type: entity
 ---
 
@@ -131,6 +131,35 @@ Sanfilippo crafts his own data structures (SDS for strings, Rax for radix trees)
 - **Historical consciousness**: Drawing parallels between GNU's clean-room rewrites and AI-generated reimplementations
 - **LLM sampling research**: Investigating token probability distributions, critiquing nucleus sampling, and proposing first-token cutoff methods to reduce hallucination risk
 - **Joy-driven development**: Left and returned to Redis based on whether the work brought fulfillment
+- **Local AI frontier**: DS4 proves that quasi-frontier models can run on consumer hardware, challenging the cloud-only paradigm
+
+### DS4 (DwarfStar 4) — ローカル推論フロンティア (May 2026)
+
+2026年5月、antirez は **DS4 (DwarfStar 4)** をリリース。DeepSeek V4 Flash を 2/8-bit 非対称量子化で Mac（96-128GB RAM）上で実行するローカル推論プロジェクト。
+
+#### 技術的ブレークスルー
+- **非対称量子化 (2/8-bit)**: ほとんどの層を 2-bit、重要な層のみ 8-bit で量子化 — 品質を維持しながらメモリ使用量を劇的削減
+- **ベクトルステアリング**: モデル挙動の制御機能を内蔵、クラウド API では不可能な自由度
+- **1週間で構築**: GPT-5.5 をコーディングパートナーとして活用、ただし「LLM と穏やかに話す方法を知っている必要がある」
+
+#### 意義
+> "It is the first time since I play with local inference that I find myself using a local model for serious stuff that I would normally ask to Claude / GPT."
+
+antirez にとって、これはローカル AI の転換点。DS4 の体験は「フロンティアモデル (B)」に圧倒的に近く、従来の「小さなローカルモデル (A)」とは質的に異なる。
+
+#### 将来計画
+- 品質ベンチマークの体系的実施
+- コーディングエージェントのプロジェクト内蔵
+- 自宅 CI 用ハードウェア設置
+- 分散推論（シリアル・パラレル両対応）
+- ds4-coding, ds4-legal, ds4-medical などドメイン特化バリアント
+
+> "AI is too critical to be just a provided service."
+
+#### 影響
+- [[concepts/ds4-dwarfstar-4]] — プロジェクト詳細
+- [[concepts/ds4-deepseek-flash-metal]] — Armin Ronacher の Metal 最適化フォーク
+- DS4 はローカル AI コミュニティで爆発的成長、antirez 曰く「Redis 初期以来の 14 時間/日体制」
 
 ## Related Concepts
 

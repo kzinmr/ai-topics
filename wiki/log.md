@@ -1,5 +1,72 @@
 
 
+
+## 2026-05-15 20:00 UTC — active-crawl | AKOOL, AntAngelMed, DeerFlow, IBM Granite 4.1
+
+**Action**: Active crawl — researched trending AI topics, extracted original sources, created wiki pages for 4 new entities/concepts not previously covered.
+
+### Pages Created
+- `entities/akool.md` — AKOOL: AI video generation suite. 10-20× faster real-time video inference engine (sub-30ms/frame), full-stack optimization. Source: PRNewswire May 11, 2026.
+- `concepts/antangelmed.md` — AntAngelMed: 103B open-source medical MoE model (1/32 activation, 6.1B active). GRPO-trained on Ling-flash-2.0 base. 7× efficiency over dense. Source: MarkTechPost May 12, 2026.
+- `concepts/deerflow.md` — DeerFlow: ByteDance open-source SuperAgent harness (67.5K stars, MIT license). Sub-agents, memory, sandboxes, skills. #1 GitHub Trending Feb 2026. Source: GitHub.
+- `concepts/granite-4-1.md` — IBM Granite 4.1: Apache 2.0 dense LLM family (3B/8B/30B). 15T tokens, 512K context. 8B matches previous 32B MoE. GRPO+DAPO RL. Source: IBM Research/HF Blog April 29, 2026.
+
+### Raw Articles Saved
+- `raw/articles/2026-05-11_akool-video-inference-engine.md`
+- `raw/articles/2026-05-12_antangelmed-103b-medical-moe.md`
+- `raw/articles/2026-05-15_deerflow-bytedance-superagent.md`
+- `raw/articles/2026-04-29_ibm-granite-4-1.md`
+
+### Index Updated
+- Added `entities/akool` under Entities section (591)
+- Added `concepts/antangelmed`, `concepts/deerflow`, `concepts/granite-4-1` under Concepts section (1303)
+- Total pages: 1872 | Indexed entries: 957
+
+---
+
+## 2026-05-15 07:50 UTC — blog-wiki-ingest | DS4, M5 Mythos Exploit, Managed Agents
+
+**Action**: Processed blog triage from blog-ingest checkpoint (20 candidates). 3 takes, 6 references, 11 skips.
+
+### Pages Created
+- `concepts/ds4-dwarfstar-4.md` — DS4 (DwarfStar 4): antirezのローカルAI推論プロジェクト。DeepSeek V4 Flash in 2/8-bit asymmetric quantization. Source: antirez.com/news/165.
+
+### Pages Updated
+- `entities/antirez-com.md` — Added DS4 section with timeline entry, technical details (2/8-bit asymmetric quantization, vector steering), future plans (distributed inference, coding agent, model variants). Source: antirez.com/news/165.
+- `concepts/ai-vulnerability-discovery.md` — Full rewrite from stub: M5 MIE kernel exploit case study, Mozilla Firefox hardening, antirez's intelligence-vs-compute framework, Mythos Preview generalization capabilities.
+- `concepts/claude-mythos-preview.md` — Added Apple M5 MIE Kernel Exploit section (May 2026): Calif team breached M5 MIE in 1 week with Mythos Preview. Data-only kernel LPE, 2-vuln chain, root shell on bare-metal M5.
+- `entities/martin-alderson.md` — Added "Managed Agents Analysis" section: Lambda analogy, Anthropic pricing change (5-20x increase), self-hosting strategy, OpenCode as multi-provider harness, frontier lab exclusive-platform risk.
+- `concepts/managed-agents.md` — Added generic vendor lock-in analysis section: harness swapability, Anthropic pricing impact, self-hosting pattern, multi-provider platform landscape (Cloudflare, Vercel, AWS AgentCore, Azure, GCP).
+
+### Index Updated
+- Added `concepts/ds4-dwarfstar-4` under Concepts section (1300 pages)
+- Total pages: 1868 | Indexed entries: 953
+
+### Sources
+- blog-18: `raw/articles/antirez.com--news-165--a8668e18.md`
+- blog-14: `raw/articles/blog.calif.io--p-first-public-kernel-memory-corruption--8fd5d832.md`
+- blog-4: `raw/articles/martinalderson.com--posts-managed-agents-are-the-new-lambda--f9db9fb9.md`
+
+---
+
+## 2026-05-15 07:40 UTC — newsletter-wiki-ingest | The AI Cursor Arrives! + Isomorphic Labs $2.1B
+
+**Action**: Processed newsletter triage from getsuperintel.com "The AI Cursor Arrives!" (May 13, 2026). Created Google DeepMind entity page, enriched Demis Hassabis and Ilya Sutskever pages.
+
+### Pages Created
+- `entities/deepmind.md` — Google DeepMind entity page covering history (AlphaGo, AlphaFold, Gemini) and the May 2026 AI Pointer / Magic Pointer announcement (context-aware cursor powered by Gemini, 4 interaction principles, product integrations with Chrome, Googlebook, AI Studio). Source: deepmind.google/blog/ai-pointer/ + getsuperintel newsletter.
+
+### Pages Updated
+- `entities/demis-hassabis.md` — Added Isomorphic Labs section: $2.1B Series B (May 2026) led by Thrive Capital with Alphabet/GV/MGX/Temasek/CapitalG/UK Sovereign AI Fund participation. Added AI Pointer reference in Recent Work section. Updated sources.
+- `entities/ilya-sutskever.md` — Added SSI valuation pressure note (May 2026) to Funding table. Updated sources.
+
+### Sources
+- `raw/newsletters/2026-05-13-the-ai-cursor-arrives.md` — getsuperintel.com newsletter by Kim Isenberg
+- https://deepmind.google/blog/ai-pointer/ — DeepMind official blog: AI Pointer
+- https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round — Isomorphic Labs Series B announcement
+
+---
+
 ## 2026-05-15 03:10 UTC — runtime-opinionated-sdk concept page created + cross-references
 
 **Action**: Created `concepts/runtime-opinionated-sdk.md` — a new concept page capturing kzinmr's analysis of Claude/OpenAI Agents SDKs as **mini runtimes** that embed a specific execution model. Added `agent-sdk` tag to SCHEMA.md taxonomy.

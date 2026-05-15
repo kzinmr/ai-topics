@@ -2,13 +2,15 @@
 title: Demis Hassabis
 type: entity
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-05-15
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
 tags:
   - person
   - google
   - agi
-sources: []
+sources:
+  - raw/newsletters/2026-05-13-the-ai-cursor-arrives.md
+  - https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round
 ---
 
 
@@ -143,6 +145,8 @@ Co-founded with **Shane Legg** (ML researcher) and **Mustafa Suleyman** (entrepr
 - Integrated reasoning with action capabilities for agentic workflows
 - **2024-2026**: Continued AlphaFold applications in drug discovery and enzyme engineering
 
+- **AI Pointer / Magic Pointer** (May 2026): DeepMind unveiled context-aware AI cursor powered by Gemini — see [[entities/deepmind]]
+
 ## AI Philosophy and Views
 
 ### AGI Timelines
@@ -172,6 +176,20 @@ Co-founded with **Shane Legg** (ML researcher) and **Mustafa Suleyman** (entrepr
   - No evidence of DeepMind data misuse, but highlighted NHS governance failures
 - **Resource consumption**: AI training energy demands escalate rapidly; criticism of data center power usage
 - **Ethics board transparency**: DeepMind's internal ethics board kept confidential; criticized for lacking public accountability
+
+
+## Isomorphic Labs
+
+Isomorphic Labs is an **AI drug discovery company** spun out of DeepMind, founded and led by Hassabis. It applies DeepMind's AI breakthroughs (particularly AlphaFold) to reimagine and accelerate drug design.
+
+### Series B Funding (May 2026)
+- **$2.1 billion Series B** led by **Thrive Capital**
+- Participants: Alphabet, GV, MGX, Temasek, CapitalG, and the **UK Sovereign AI Fund**
+- Significantly expands Isomorphic Labs' global capital base
+- Funds will scale the **AI drug design engine (IsoDDE)** and advance drug candidate pipeline across multiple therapeutic areas and drug modalities
+- Represents a capital-heavy race to build pipelines, partnerships, and clinical proof in AI drug discovery
+
+See: [[entities/isomorphic-labs]] (entity page pending)
 
 ## Awards and Honors
 
