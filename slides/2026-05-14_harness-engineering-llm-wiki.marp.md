@@ -119,138 +119,125 @@ style: |
 
 # Harness Engineering と AI Agent
 
-## Coding agentsから、知識管理エージェントへ
+## LLM Wikiを回すruntime境界の設計
 
-Hermes Agent & `llm-wiki`によるAI Topics自動追跡の事例
+Hermes Agent & LLM Wiki によるAI Topics自動追跡の事例
 
 ---
 
 # 今日の主張
 
-1. **Harness / Runtimeは、モデルが実行を続ける制御層** として見る
-2. Coding agentは、汎用エージェントのための実験場だった
-3. Open harnessは、モデル・記憶・trace・runtimeの所有権を争点にした
-4. AI Topicsは、KarpathyのLLM wikiをHermes Agentで運用した **Agentic ETL** の事例
+私は **AI Topics** というLLM Wikiを、Hermes Agentで運用している。
 
-> 20分の配分: Harness概要 11分 / AI Topics事例 7分 / 研究トピック 2分
+- 毎日source streamを取り込む
+- raw sourceを保存し、wiki pageへ合成する
+- schema / index / tag / link を検証する
+- Slack / Discord / Telegramへ配信する
 
----
+この知識管理を成立させている外側の実行境界を、ここでは **Harness** と呼ぶ。
 
-# Why Harness?
-
-| 時期 | 中心語彙 | 主な問い | キラー応用 |
-|---|---|---|---|
-| 2023-2024 | Prompt Engineering | 指示補完/RAG | ChatGPT / NotebookLM |
-| 2024-2025 | Workflow-centric | 強い制御設計/ReActを補強 | LangChain / LangGraph |
-| 2025 | Context Engineering | Tool密統合/長期実行の安定 | Claude Code / Codex |
-| 2025-2026 | Harness Engineering | Coding能力の普及/汎用化や自律進化へ | Pi / OpenClaw / Hermes Agent |
-
-Coding agentで先に起きたのは、**生成** から **実行と検証の閉ループ化** へのジャンプ
-
-タスク実行の主導権が、開発者(workflow-centric)からエージェント(Runtime-centric)へ推移
-
-- [Dec 19, 2024] Building effective agents (Anthropic)
-- [Jun 23, 2025] Context Engineering for Agents (Lance Martin)
-- [Nov 26, 2025] Effective harnesses for long-running agents (Anthropic)
-- [Feb 11, 2026] Harness engineering: leveraging Codex in an agent-first world (OpenAI)
+> 20分の配分: AI Topics事例 8分 / Harness抽象化 7分 / Scaffoldと含意 5分
 
 ---
 
-# 2025後半: OpenClaw の中国における爆発的普及
+# Why Harness: OpenClaw / Hermes が示したこと
 
-OpenClawは、coding assistantというより **personal agent gateway** として受容
+2025-2026に、HarnessはIDE/terminalの外へ広がった。
 
-- 「チャットから常駐agentを呼ぶ」体験が中心 (always-on / multi message channels)
-- cloud / model providerがagent runtimeをdistribution layerとして展開
-  - NVIDIAやAlibaba, Tencent, ByteDance, MiniMax, Moonshot.ai, Z.AI, etc.
-- 不注意なホスティングによるセキュリティインシデントも同時に発生
-
----
-
-# 2026前半: Hermes Agent は OpenRouter #1　に
-
-OpenRouter (apps) で、Hermes Agent (Nous Research) が **#1 Daily global rank** に
-(26/5/15時点)
-- Total tokens: 6.98T
-- #Models used: 354
-- Category ranks: Productivity / Coding Agents / Personal Agents / CLI Agents で#1
-
-**persistent memory + skills + scheduled execution** を持つ実行環境が大量利用され始めたシグナル。
-
-- https://openrouter.ai/apps/hermes-agent
-
----
-
-# What is an Agent Harness?
-
-Harness とは Agent の仕事を成立させる部品とユーザー公開面を差した概念。
-
-モデルの進化に伴い、Agent価値の重心は **Prompt → Workflow → Runtime** へと推移:
-
-- Workflow-centric Framework   <- LangGraph, Pydantic AI
-- Agent Harness / Runtime 製品  <- Claude Code, Codex, Pi, OpenClaw, Hermes　Agent
-- Task Environment             <- Shell, Browser, Computer, Filesystem
-- Model API                    <- Claude, GPT, Gemini
-
-| 層 | Core question | 例 |
+| Signal | 何が起きたか | 含意 |
 |---|---|---|
-| **Workflow Framework** | 実行を明示的に制御 | graph, state machine, nodes, edges, HITL |
-| **Harness** | agentは何を試みるか | prompt, tool choice, memory, skills, verification loop |
-| **Runtime** | executionはどう継続するか | lifecycle, tool mediation, state continuity, scheduling, safety, observability |
-| **Task Environment** | actionが作用する世界は何か | repo, browser, GUI, wiki graph, eval sandbox |
+| OpenClaw | 中国でpersonal agent gatewayとして普及 | chatから常駐agentを呼ぶ体験が広がった |
+| OpenClaw ecosystem | model provider がruntime distributionに注力 | modelだけでなくharness適合が競争軸に |
+| Hermes Agent | OpenRouter appsで#1 Daily global rank | memory + skills + scheduled executionが大規模利用 |
+| Security incidents | 不注意なagent hostingで情報流出 | runtime governanceがより重要に |
+
+Harnessは「coding assistant」から、**personal / organizational runtime** へ移動している。
 
 ---
 
-# Runtime-centric shift: 制御フローの所有者が変わる
+# 個人的な課題: AI関連情報のキャッチアップコスト
 
-Agent loopは昔から書けた(ReAct)。差分は **誰がcontrol flowの正当性を担保するか**。
+AI/Agent領域のsource streamは、人手の管理だけではもはや追いつかない。
 
-| | Workflow-centric | Runtime-centric |
+| 作業 | 人間だけでやると何が起きるか |
+|---|---|
+| Collect | SNS / blog / paper / newsletter が流れて消える |
+| Synthesize | 読んだ断片が再利用可能な概念にならない |
+| Retrieve | 「前に読んだ話」が都度再発見になる |
+| Maintain | stale claim / duplicate / tag sprawl が蓄積する |
+| Deliver | 価値ある更新が人間の手作業待ちになる |
+
+必要なのは、Chatbotではなく **source streamを研究可能なwikiへ変換し続ける仕組み**。
+
+---
+
+# 事例: AI Topics = LLM Wiki + Hermes Agent
+
+AI Topicsでは、KarpathyのLLM Wiki patternをAI/Agent領域の追跡に適用している。
+
+```
+SNS / RSS / newsletter / paper
+  -> raw/            不変のsource material
+  -> wiki/           concepts, entities, comparisons, queries
+  -> validation      schema, tags, links, duplicate, stale claims
+  -> delivery        reports, Slack, Discord, Telegram
+```
+
+ポイントは、回答を毎回生成することではなく、**知識がファイルシステム上で複利的に育つ**こと。
+
+---
+
+# Karpathy の LLM WikiとRAG
+
+- RAG
+  - `q -> documents(chunks) -> synthesized answer`
+  - 回答は都度再発見され、知識はステートレスに近い
+
+- LLM Wiki
+  - `document -> raw/ -> wiki` (Agentic ETL)
+  - `q -> wiki -> answer` (Cached Agentic RAG)
+  - 有用回答や頻出質問は `queries/` 以下に保存して再利用
+
+rawは不変。wikiはAgentが編集する。schemaは人間とAgentの共有契約になる。
+
+---
+
+# Hermes Agent が足している実行層
+
+Karpathyのpatternは抽象的な設計。Hermes Agentはそれを運用に落とす。
+
+| パターン | AI Topicsでの効き方 |
+|---|---|
+| Scheduled | 人間の依頼待ちではなく、定期的にsource streamを処理 |
+| File-based | Markdown / Code / Config をAgentが自己修正し、人間もreview可能 |
+| Skill-backed | 成功手順と落とし穴を `llm-wiki` / ingestion skills に戻す |
+| Validated | schema / index / tag / link / duplicate を継続検査 |
+| Push Delivery | server側実行結果をmessage channelへ届ける |
+| Git-backed | 差分管理、rollback、review、監査を備える |
+
+Harness により、LLM Wikiは **作業が回り続ける runtime 環境** になる。
+
+---
+
+# What is Harness?
+
+Harnessとは、モデルの外側で **観測→実行→検証→記憶** を閉じるruntime境界。
+
+| 層 | 役割 | 例 |
 |---|---|---|
-| Primary | developer-authored graph | model-driven runtime loop |
-| Control | developer decides what happens next | model decides; runtime mediates |
-| State | graph-managed, explicit | runtime-managed, across turns/sessions |
-| Best for | deterministic business logic, audit | open-world execution, exploration |
+| Model | 次に何を試すかを判断する | Claude, GPT, Gemini, local models |
+| Harness | agentの作業を成立させる | prompt, tools, memory, skills, verification loop |
+| Runtime | executionを継続・仲介する | lifecycle, scheduling, safety, observability |
+| Environment | actionが作用する世界 | repo, browser, GUI, wiki graph, sandbox |
 
-モデルが tool continuation, retry adaptation, context tracking, failure recovery を維持可能に
-
-orchestration DSL から execution semantics の整備へ
-
----
-
-# Harness types: Environment entropy で難度が変わる
-
-Harnessは「どの世界を操作するか」で信頼性が大きく変わる。
-
-| Type | Primary environment | Entropy | 例 |
-|---|---|---|---|
-| Coding | filesystem / shell / git | Low | Claude Code, Codex, OpenCode, Pi |
-| Browser | DOM / Web session | Medium | Browser Use, OpenClawの一部 |
-| Computer use | GUI / OS / pixels | High | Operator, GUI agents |
-| General | mixed environment | Variable | OpenClaw, Hermes Agent |
-
-Coding agentが先に実用化した理由は、モデルだけでなく **環境がsymbolic, stable, replayable, verifiable** だったから。
+Workflow-centric framework は制御フローを人間が明示的に書く。
+Runtime-centric framework (Harness) では、モデルが探索し、runtimeが継続・制約・検証する。
 
 ---
 
-# Open harness: Runtime ownershipの問題
+# Effective Harness
 
-Open harnessの価値は **runtime portability**
-
-| 軸 | Closed Harness | Open Harness |
-|---|---|---|
-| 例 | Claude Code, Codex | OpenCode, Pi, OpenClaw, Hermes |
-| 強み | model × runtimeのco-design / co-training | runtime visibility, portability, BYOK/local |
-| 弱み | hidden orchestration, provider lock-in | safety & governance は利用者責任 |
-| 資産 | vendor 側の trace, memory, tuning | user 側の full-trace, skills, memory, ... |
-
-※ Claude/OpenAI Agents SDKは単なるLLM call abstractionではなく、reactive tool loopやevent streamを内蔵した **opinionated mini runtime** と見るのが近い。
-
----
-
-# Effective Harness: 実行境界が閉じることの意味
-
-「観測→実行→検証→記憶」が同じruntime境界でつながると、Agentのタスク遂行能力に効く。
+「観測→実行→検証→記憶」が同じruntimeでつながると、Agentのタスク遂行能力に効く。
 
 | 意義 | 何が可能になるか |
 |---|---|
@@ -260,105 +247,76 @@ Open harnessの価値は **runtime portability**
 | Continuity | memory/skills/file state/session が次回へ残る |
 | Ownership | Open harness では trace/memory/policy がユーザー所有 |
 
-実行境界が閉じることで、モデルの一貫した能力獲得へも寄与する。
+Harnessの有無で著しい能力向上が確認される: [TODO] 事例
 
 ---
 
-# Model Scaffold: モデルに能力を取り込む役割
+# Harness and Environment
 
-Bitter Lesson的には、Harness価値の多くは最終的にモデル側へ吸収される。
-Harness で誘導したエージェントの使用履歴から、能力をモデルに取り込むことができる。
+Harnessは「どの世界を操作するか」で信頼性が大きく変わる。
 
-```
-runtime上で半分うまく動くscaffold(harness)を作る
-  -> trace / eval / rewardが集まる
-  -> RLやpost-trainingで内在化される
-  -> 古いscaffoldを削り、新たなscaffold、そしてモデル能力を強化する
-```
+| Task Type | Environment | 複雑性 | なぜ効く/難しいか |
+|---|---|---|---|
+| Coding | filesystem / shell / git | Low | symbolic, stable, replayable, verifiable |
+| Wiki | markdown / graph / schema | Low-Mid | file-basedだが、意味の検証が難しい |
+| Browser | DOM / Web session | Medium | UI変化、ログイン、外部状態が絡む |
+| Computer use | GUI / OS / pixels | High | action spaceが広く、検証も難しい |
+| General | mixed environment | Variable | 複数環境を一貫して作業継続する困難 |
 
-LLMプロバイダーの狙い(Moat)はここだと考えられるし、中華AIがOpenClawへの調整をサポートする背景でもある。
-
----
-
-# 事例: LLM Wiki + Hermes Agent による知識管理
-
-- 日々のSNSなどに流入する膨大なAI知見: 読む・書く・取り出す、の労力がやばい
-- => Karpathy の LLM wiki pattern により、 **persistent, compounding wiki** を作る
-- => Hermes Agent により、継続的に実行・保守可能な基盤を整備
-
-ai-topics/ project ではこのpatternを、LLM / AI Agent領域の追跡に適用している。
+Coding agentが先に実用化した理由は、モデルだけでなく **環境が検証しやすかった** から。
+LLM Wikiもこの性質を利用している。
 
 ---
 
-# Karpathyの3層: raw / wiki / schema
+# Open harness と Runtime ownership
 
-- RAG: q -> documents (chunks) -> synthesized answer
-  - 回答は都度再発見し、ステートレス
-  - documents の設計は固定的・保守はプログラム的
-- LLM Wiki
-  - document -> raw/ -> wiki (LLMが合成: concepts/entities/ etc.)
-  - q -> wiki -> answer (有用回答・頻出質問なら queries/ 以下に回答を保存・再利用)
+Open harnessの争点は、単なるモデル差し替えではない。
+**trace / memory / skills / policy をユーザーが所有し、次の改善に使える点**。
 
-rawは不変。wikiはAgentが編集する。
+| 観点 | Closed harness | Open harness |
+|---|---|---|
+| 例 | Claude Code, Codex | OpenCode, Pi, OpenClaw, Hermes |
+| 学習 | vendorがtraceを集め、model/runtimeをco-design | userがfull-trace, skills, memoryを保持 |
+| 強み | モデル適合が速い、UXが一貫 | portability, BYOK/local, 監査可能 |
+| リスク | hidden orchestration, lock-in | safety/governanceを利用者が背負う |
 
----
-
-# Hermes Agent が足している実行層
-
-Karpathyのpatternは抽象的な設計。Hermes Agentはそれを運用に落とす。
-
-| LLM Wiki operation | Hermes / AI Topicsでの支援 |
-|---|---|
-| Ingest | cron, scripts, checkpoints, raw保存 |
-| Query | `index.md`起点の探索、関連page読み、再利用可能なら`queries/`へ保存 |
-| Lint | wiki health, duplicate/orphan/broken-link/stale-claim検査 |
-| Maintenance | `llm-wiki`, `wiki-ingestion-pipelines`, `wiki-graph-health` skills |
-| Delivery | daily report, Slack/Discord/Telegram push |
-
-LLM Wikiに、**scheduler, tools, skills, validation, delivery** が重なる形。
-
----
-
-# Hermes Agent が効いているアーキテクチャパターン
-
-| パターン | なぜ効くか |
-|---|---|
-| Scheduled | 人間の依頼待ちではなく、定期的に処理できる |
-| File-based | Markdown/Code/Config を自己拡張修正可能・人手管理も可能 |
-| Push Delivery | server側実行結果をmessage channel (mobile) へ届ける  |
-| Skill-backed | 抽象的要件でも成功手順と落とし穴を改善可能/モデル学習の迂回 |
-| Git-backed | 差分管理、rollback、review、監査を備える (filesystemベースでも) |
-
-"RAG-based chatbot" ではなく、**作業が回り続けるランタイム環境 （Harness）** として設計。
-
----
-
-# Coding agentとknowledge workflowは同型
-
-| Coding agent | Knowledge workflow |
-|---|---|
-| repoを読む | raw sourceと既存wikiを読む |
-| code diffを書く | wiki diffを書く |
-| test/lintを回す | schema/index/tag/linkを検証する |
-| PR / commitで残す | log / git / reportで残す |
-| 失敗からskillを書く | ingest失敗や重複回避をskillへ戻す |
-
-違うのは対象物だけ。
-**閉ループで作業し、traceから次の手順を改善する** という構造は同じ。
+Open harnessでは、失敗ログ・skill・validation ruleがユーザー側に残る。
 
 ---
 
 # 失敗モードを改善資産にする
 
-| AI Topicsでの失敗 | 具体の修正 |
+Harnessは成功を増やすだけでなく、失敗を次回の実行条件へ変換する。
+
+| AI Topicsでの失敗 | Harness側の改善 |
 |---|---|
 | duplicate page | `index.md`と`log.md`を先に読む、既存page優先 |
 | unsupported claim | raw source pathをfrontmatterと本文に残す |
 | tag sprawl | `SCHEMA.md` taxonomy、pre-commit validator |
-| stale checkpoint | checkpoint recovery skill、直接script再実行手順 |
+| stale checkpoint | checkpoint recovery skill、script再実行手順 |
 | skill explosion | skill dedup、invocation metrics、consolidation pass |
 
-将来的には、これらのtraceは単なる運用ログではなく、**reward設計・eval set・RL/post-training data** になり得る。
+この意味で、traceは単なるログではない。
+**eval set / reward設計 / skill更新 / post-training data** の候補になる。
+
+---
+
+# Model Scaffold: モデルに能力を取り込む役割
+
+LLM ProviderにとってのHarness Engineeringの戦略的な核心はここにある。
+
+Bitter Lesson的には、Harness価値の一部は最終的にモデル側へ吸収される。
+
+```
+runtime上で半分うまく動くscaffoldを作る
+  -> 成功/失敗trace, eval, rewardが集まる
+  -> skill / guardrail / validation ruleに戻す
+  -> あるいはRL/post-trainingでモデル側に能力が内在化される
+  -> 古いscaffoldを削り、より難しいscaffoldを足す
+```
+
+AI Topicsでの運用改善も、RLは任意だが同じ小さなループ:
+失敗をtraceに残し、skillやschemaに戻し、次回のAgentを少し賢くする。
 
 ---
 
@@ -367,11 +325,11 @@ LLM Wikiに、**scheduler, tools, skills, validation, delivery** が重なる形
 Harness Engineeringは、LLMの外側にある雑多な周辺機能ではない。
 **モデルが実行を継続し、失敗し、検証され、次回へ持ち越すruntime境界** の設計である。
 
-Coding agentは、そのruntime境界が最も見えやすい領域だった。
-OpenClawやHermesは、その構造をIDE/terminalの外へ広げた。
+AI Topicsでは、KarpathyのLLM wiki patternをHermes Agent(+git)で継続自律実行可能な形に運用している。
+これはRAG chatbotではなく、**source streamを研究可能なwikiへ変換し続けるAgentic ETL**。
 
-AI Topicsでは、KarpathyのLLM wiki patternをHermes Agentのscheduler、skills、memory、validationで運用している。
-これはRAGではなく、**継続的にsource streamを研究可能なwikiへ変換するAgentic ETL**。
+Harness Engineeringは、coding agentから一般の知識業務に広がりつつある。
+失敗traceを改善資産に変えられる任意の領域が、Harness Engineeringの対象になる。
 
 ---
 
