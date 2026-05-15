@@ -2,14 +2,15 @@
 title: Ilya Sutskever
 type: entity
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-05-15
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
 tags:
   - person
   - model
   - agent-safety
   - openai
-sources: []
+sources:
+  - raw/newsletters/2026-05-13-the-ai-cursor-arrives.md
 ---
 
 
