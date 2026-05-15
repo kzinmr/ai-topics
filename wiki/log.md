@@ -1,6 +1,29 @@
 
 
 
+## 2026-05-15 20:00 UTC — active-crawl | AKOOL, AntAngelMed, DeerFlow, IBM Granite 4.1
+
+**Action**: Active crawl — researched trending AI topics, extracted original sources, created wiki pages for 4 new entities/concepts not previously covered.
+
+### Pages Created
+- `entities/akool.md` — AKOOL: AI video generation suite. 10-20× faster real-time video inference engine (sub-30ms/frame), full-stack optimization. Source: PRNewswire May 11, 2026.
+- `concepts/antangelmed.md` — AntAngelMed: 103B open-source medical MoE model (1/32 activation, 6.1B active). GRPO-trained on Ling-flash-2.0 base. 7× efficiency over dense. Source: MarkTechPost May 12, 2026.
+- `concepts/deerflow.md` — DeerFlow: ByteDance open-source SuperAgent harness (67.5K stars, MIT license). Sub-agents, memory, sandboxes, skills. #1 GitHub Trending Feb 2026. Source: GitHub.
+- `concepts/granite-4-1.md` — IBM Granite 4.1: Apache 2.0 dense LLM family (3B/8B/30B). 15T tokens, 512K context. 8B matches previous 32B MoE. GRPO+DAPO RL. Source: IBM Research/HF Blog April 29, 2026.
+
+### Raw Articles Saved
+- `raw/articles/2026-05-11_akool-video-inference-engine.md`
+- `raw/articles/2026-05-12_antangelmed-103b-medical-moe.md`
+- `raw/articles/2026-05-15_deerflow-bytedance-superagent.md`
+- `raw/articles/2026-04-29_ibm-granite-4-1.md`
+
+### Index Updated
+- Added `entities/akool` under Entities section (591)
+- Added `concepts/antangelmed`, `concepts/deerflow`, `concepts/granite-4-1` under Concepts section (1303)
+- Total pages: 1872 | Indexed entries: 957
+
+---
+
 ## 2026-05-15 07:50 UTC — blog-wiki-ingest | DS4, M5 Mythos Exploit, Managed Agents
 
 **Action**: Processed blog triage from blog-ingest checkpoint (20 candidates). 3 takes, 6 references, 11 skips.
