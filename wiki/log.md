@@ -1,3 +1,13 @@
+## [2026-05-15] fix | Wiki graph analysis cross-link
+
+### Changes
+- Added [[entities/randy-olson]] to [[entities/ian-nuttall]] Related Concepts
+- Added [[entities/ian-nuttall]] to [[entities/randy-olson]] Related Entities and Concepts
+- Both share: agent-skills, MCP ecosystems
+- Fixed all graph gap recommendations (0 remaining)
+
+---
+
 
 
 
