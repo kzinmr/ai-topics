@@ -1,3 +1,12 @@
+## [2026-05-15] wiki | antirez.com/news/165 — DS4 follow-up article ingested
+
+### Changes
+- **[[entities/antirez-com]]**: Timeline entry for DS4 release (May 2026). Added "モデル非依存設計" subsection: model-agnostic philosophy, DGX Spark mention, "just load what you need" domain-variant approach. Expanded future plans with distributed inference emphasis.
+- **[[concepts/ds4-dwarfstar-4]]**: Added Model-Agnostic Philosophy section clarifying DS4 is not tied to V4 Flash forever. Expanded future plans with "just load what you need" variant philosophy. Added A-vs-B spectrum metaphor (DS4 is "a lot more B than A"). Emphasized distributed inference as top priority.
+- Source: [[raw/articles/antirez.com--news-165--a8668e18]]
+
+---
+
 ## [2026-05-15] fix | Wiki graph analysis cross-link
 
 ### Changes

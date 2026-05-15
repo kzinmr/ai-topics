@@ -43,6 +43,7 @@ His 2025 project voxtral.c — a bare-metal, pure-C implementation of a multimod
 | 2026 | Published "GNU and the AI reimplementations" — drawing parallels between GNU's clean-room UNIX rewrites and today's AI-generated code |
 | 2026 | Published "AI cybersecurity is not proof of work" — argues model intelligence, not GPU scale, wins in cybersecurity
 | 2026 | Published "First Token Cutoff LLM sampling" — critiques nucleus sampling (top-p) and proposes a new algorithm to avoid selecting suboptimal tokens that push generation toward hallucination |
+| 2026-05 | Released DS4 (DwarfStar 4) — local AI inference project running DeepSeek V4 Flash with asymmetric 2/8-bit quantization on consumer Macs. Achieved viral growth in first week. |
 
 ## Core Ideas
 
@@ -147,11 +148,17 @@ Sanfilippo crafts his own data structures (SDS for strings, Rax for radix trees)
 
 antirez にとって、これはローカル AI の転換点。DS4 の体験は「フロンティアモデル (B)」に圧倒的に近く、従来の「小さなローカルモデル (A)」とは質的に異なる。
 
+#### モデル非依存設計
+antirez は DS4 が DeepSeek V4 Flash 専用で終わるプロジェクトではないと明言している：「その時点でベストなオープンウェイトモデルで、かつハイエンド Mac や DGX Spark 級の"GPU in a box"で実用的に速いもの」が DS4 のエンジンになる。V4 Flash の次期チェックポイント、特にコーディング特化版への期待が表明されている。
+
+ドメイン特化バリアント（ds4-coding, ds4-legal, ds4-medical）の構想では「質問に応じて必要なモデルをロードするだけ (you just load what you need depending on the question)」というプラグイン的な運用が想定されている。
+
 #### 将来計画
 - 品質ベンチマークの体系的実施
 - コーディングエージェントのプロジェクト内蔵
-- 自宅 CI 用ハードウェア設置
-- 分散推論（シリアル・パラレル両対応）
+- 自宅 CI 用ハードウェア設置（長期的な品質保証のため）
+- より多くのポート・プラットフォーム対応
+- **分散推論（シリアル・パラレル両対応）** — 最重要ポイントの一つ
 - ds4-coding, ds4-legal, ds4-medical などドメイン特化バリアント
 
 > "AI is too critical to be just a provided service."
