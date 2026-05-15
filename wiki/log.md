@@ -1,5 +1,21 @@
 
 
+## 2026-05-15 02:30 UTC — Agent stack architecture: 5-layer model, Closed/Open Harness, Harness Type comparison, PI as Runtime Substrate
+
+**Action**: Enriched 5 wiki pages with kzinmr's comprehensive agent stack architecture analysis — the 5-layer agent stack model, Closed vs Open Harness comparison, Harness Type comparison (coding/browser/computer-use/general + environment entropy gradient), Harness vs SDK/Framework "user vs builder" distinction, runtime-centric vs workflow-centric taxonomy, PI as Runtime Substrate, and the historical arc (Framework→Workflow→Runtime-centric).
+
+**New pages**:
+- `raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis.md` — Full analysis: 5-layer stack, Closed/Open Harness, Harness Types, Harness vs SDK/Framework, runtime-centric vs workflow-centric, PI as Runtime Substrate, historical arc
+
+**Enriched pages**:
+- `concepts/agent-runtime.md` — Added §"The 5-Layer Agent Stack" with architecture diagram and §"The Historical Arc" (2023: Framework-centric → 2024: Workflow-centric → 2025-: Runtime-centric). Core message: "Model quality alone no longer determines agent capability. Runtime design increasingly dominates."
+- `concepts/agent-harness.md` — Added 3 new sections: §"Closed Harness vs Open Harness: Runtime Ownership" (co-training/co-design vs runtime portability), §"Harness Type Comparison: Environment Abstraction" (coding/browser/computer-use/general + environment entropy gradient), §"Harness vs Runtime: The Critical Distinction". Key insight: Entropy gradient explains why coding harnesses reach production first.
+- `comparisons/open-harness-vs-agent-framework.md` — Added §9 "Runtime-Centric vs Workflow-Centric: The Fundamental Axis" — introduces the runtime-centric family (ClaudeCode/Codex/PI/OpenClaw/Hermes) vs workflow-centric (LangGraph/PydanticAI). Includes PI as Runtime Substrate analysis with comparison table vs LangGraph/PydanticAI. Mental model: "Agent OS" vs "orchestration library".
+- `entities/pi.md` — Added §"PI as Runtime Substrate: Beyond a Coding Harness" — maps PI's architecture to 7 runtime responsibilities (execution loop, state management, task runtime, tool orchestration, environment mediation, event handling, interruption/recovery). Positions PI in the runtime-centric family. Key implication: evaluate PI as runtime substrate, not as workflow framework.
+- `wiki/index.md` — Updated entries for agent-runtime, agent-harness, pi, and open-harness-vs-agent-framework
+
+**Key insight across all pages**: The agent stack's center of gravity has shifted Framework→Workflow→Runtime. ClaudeCode, Codex, PI, OpenClaw, Hermes are all in the same architectural family (runtime-centric systems). The key distinction is not "harness vs framework" but "runtime-centric vs workflow-centric" — the former manages *how execution proceeds*, the latter describes *what execution topology should be*.
+
 ## 2026-05-15 02:11 UTC — agent-runtime.md enriched with "Execution Semantics" control system layer
 
 **Action**: Enriched `concepts/agent-runtime.md` with a major new section — "Execution Semantics: The Control System Layer" — based on kzinmr's analysis distinguishing agent runtime from language runtimes, workflow frameworks, and the model itself. Also added a "Harness vs Runtime: The Critical Distinction" section to `concepts/agent-harness.md`.

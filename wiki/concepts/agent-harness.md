@@ -1,7 +1,7 @@
 ---
 title: "Agent Harness"
 created: 2026-04-27
-updated: 2026-05-14
+updated: 2026-05-15
 tags:
   - harness-engineering
   - architecture
@@ -24,7 +24,8 @@ sources: [
   "raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md",
   "https://x.com/addyosmani/status/2053231239721885918",
   "raw/articles/2026-05-14_kzinmr_open-harness-vs-agent-framework.md",
-  "raw/articles/2026-05-15_kzinmr_agent-runtime-execution-semantics.md"
+  "raw/articles/2026-05-15_kzinmr_agent-runtime-execution-semantics.md",
+  "raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis.md"
 ]
 ---
 
@@ -51,6 +52,84 @@ A subtle but essential architectural distinction, formalized by kzinmr (2026-05-
 The harness decides which tools to call and in what order. The runtime manages whether those calls are allowed, how they execute, what state persists across them, and how execution recovers from failure. In Han Lee's formulation: "The agent is the harness plus the model, running inside the runtime."
 
 > **Workflow framework vs runtime**: LangGraph is closer to a **workflow framework** — it describes *execution topology* (what should happen). Claude Agent SDK and PI are closer to **runtimes** — they maintain *execution continuity* (how execution proceeds). See [[concepts/agent-runtime]] §"Execution Semantics: The Control System Layer" for the full analysis.
+
+### Closed Harness vs Open Harness: Runtime Ownership
+
+The first-order architectural divide in the harness landscape is **who owns the runtime** — the model vendor or the developer community. This distinction (kzinmr, 2026-05-15) cuts across individual harness comparisons and explains fundamental differences in extensibility, reliability, and optimization strategy.
+
+| Axis | Closed Harness | Open Harness |
+|---|---|---|
+| **Examples** | ClaudeCode, Codex CLI | OpenClaw, Hermes Agent, PI |
+| **Control body** | Model vendor | Developer / community |
+| **Runtime visibility** | Black box | Fully visible |
+| **Extensibility** | Limited (vendor-gated) | High (any model/tool/planner) |
+| **Reliability** | High (vendor QA) | Implementation-dependent |
+| **Optimization** | Vendor-tuned (model-specific) | Generic (portable) |
+| **Safety model** | Strong (vendor-enforced) | User responsibility |
+| **Infra coupling** | Strong (vendor cloud) | Weak (BYOK, local, self-hosted) |
+
+#### The Closed Harness Advantage: Co-Training / Co-Design
+
+The closed harness's strength is not merely engineering quality — it's **co-optimization**. ClaudeCode is powerful because:
+
+- Claude Sonnet has been trained on ClaudeCode trajectories — the model has learned the specific tool call patterns, error recovery strategies, and interaction rhythms of its native harness
+- Tool call style is alignment-tuned — the model and harness share an implicit contract about how tools should be invoked and how results should be interpreted
+- Hidden orchestration exists — the harness can make decisions the developer never sees, informed by model-internal priors
+
+> **Model ↔ Harness is co-trained / co-designed.** This is the closed harness's moat — and its lock-in mechanism.
+
+#### The Open Harness Advantage: Runtime Portability
+
+The open harness's strength is **substitutability**. Any model, any browser, any toolchain, any planner can be swapped in. This means:
+
+- No vendor lock-in on model selection
+- Can optimize for cost (local, cheapest provider) without changing workflow
+- Can adopt new models immediately without waiting for vendor integration
+- The harness asset (AGENTS.md, memory, skills, gateway routing) is portable across infrastructure
+
+> **Open Harness = runtime portability as a first-class property.**
+
+### Harness Type Comparison: Environment Abstraction
+
+Harnesses differ not only in ownership but in **which world they operate on**. This is the environment abstraction dimension (kzinmr, 2026-05-15).
+
+| Harness Type | Primary Environment | Environment Entropy | Key Characteristics |
+|---|---|---|---|
+| **Coding Harness** | filesystem / shell / git | Low (symbolic, stable) | Deterministic tool outputs, structured data, version-controlled state |
+| **Browser Harness** | DOM / Web | Medium (semi-structured) | Dynamic pages, async rendering, CDP protocol, session state |
+| **Computer Use Harness** | GUI / OS | High (pixel-level chaotic) | Screenshot-based observation, coordinate-based action, fragile selectors |
+| **General Harness** | Mixed environment | Variable | Switches between environments, must handle all entropy levels |
+
+#### System Mapping
+
+| System | Category |
+|---|---|
+| ClaudeCode | Coding harness |
+| Codex CLI | Coding harness |
+| PI | Coding harness (with extension to browser/computer via extensions) |
+| OpenClaw | Browser / Computer / General |
+| Hermes Agent | General (coding + browser + system) |
+| OpenAI Operator | Computer use |
+| Browser Use | Browser harness |
+
+#### The Environment Entropy Gradient
+
+This is the critical insight for harness design: **as environment entropy increases, reliability decreases, and both autonomy cost and observation cost increase.**
+
+```
+Low Entropy ─────────────────────────────────────── High Entropy
+Code CLI  →  Browser DOM  →  Full GUI
+
+Entropy ↑  →  Reliability ↓  →  Autonomy cost ↑  →  Observation cost ↑
+```
+
+- **Coding harnesses** operate in the lowest-entropy environment: files are deterministic, shell commands have predictable outputs, git provides version history. This is why coding agents consistently score highest on benchmarks — the environment is the most amenable to reliable automation.
+- **Browser harnesses** face semi-structured chaos: pages change, selectors break, JavaScript renders asynchronously. Reliability drops but remains manageable with CDP-level control.
+- **Computer use harnesses** face the highest entropy: pixel-level observation, coordinate-based action, no symbolic representation of UI state. Every screenshot is a new problem. This is why computer-use agents remain the least reliable category.
+
+This entropy gradient explains why **coding harnesses reach production first** — not because the problems are easier, but because the environment is more tractable. The same harness engineering principles apply across the gradient, but the cost of reliability scales with entropy.
+
+**Source**: kzinmr, "Agent Stack Architecture & Comparative Analysis" (2026-05-15), [[raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis]].
 
 ## The Von Neumann Analogy
 

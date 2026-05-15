@@ -21,6 +21,7 @@ sources:
   - "https://modal.com/blog/how-ramp-built-a-full-context-background-coding-agent-on-modal"
   - "https://northflank.com/blog/top-modal-sandboxes-alternatives-for-secure-ai-code-execution"
   - "raw/articles/2026-05-15_kzinmr_agent-runtime-execution-semantics.md"
+  - "raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis.md"
 aliases: [agent-serving-infrastructure, agent-sandbox, agent-execution-environment]
 ---
 
@@ -37,6 +38,47 @@ The runtime decides whether your agent finishes in eight seconds or eight minute
 However, "runtime" in the agent context also carries a **higher-level meaning**: it is the **execution control system** that manages the agent's lifecycle, mediates tool interactions, maintains state continuity, schedules subtasks, enforces safety policies, and emits events — the layer that makes an agent a **persistent execution entity** rather than a series of stateless completions. This dual nature of runtime — **infrastructure substrate** (Han Lee's framing) and **execution semantics** (the control system framing) — is explored throughout this page.
 
 ## Anatomy
+
+### The 5-Layer Agent Stack
+
+Before examining the runtime's internal anatomy, it helps to locate the runtime within the broader agent software stack. kzinmr (2026-05-15) proposes a 5-layer model that clarifies the separation of concerns:
+
+```
+┌────────────────────────────────┐
+│  Application / Product Layer   │  ← End-user-facing product
+├────────────────────────────────┤
+│  Agent Framework / Workflow    │  ← LangGraph, PydanticAI
+├────────────────────────────────┤
+│  Harness / Runtime             │  ← ClaudeCode, Codex, OpenClaw, PI
+├────────────────────────────────┤
+│  Tool / Environment Layer      │  ← Browser, Computer, Shell
+├────────────────────────────────┤
+│  Model API                     │  ← Claude, GPT, Gemini
+└────────────────────────────────┘
+```
+
+This stack structure reveals that the **Harness / Runtime** layer is the architectural center of gravity — it sits between the model's raw intelligence and the developer's application logic, mediating both. All agent stack comparisons can be organized as:
+- **Runtime comparison** — how execution is managed (Harness/Runtime layer)
+- **Workflow framework comparison** — how orchestration is described (Framework/Workflow layer)
+- **Vendor-controlled vs developer-controlled abstraction** — who owns each layer's design decisions
+
+### The Historical Arc: Where the Center of Gravity Moves
+
+The agent stack's center of gravity has shifted dramatically over three years, tracing a trajectory from *description* to *execution*:
+
+```
+2023  →  Framework-centric (LangChain)
+2024  →  Workflow-centric (LangGraph)
+2025- →  Harness/Runtime-centric (ClaudeCode, Codex, OpenClaw, PI)
+```
+
+Agent value has migrated: **Prompt → Workflow → Runtime**. This is not a rejection of frameworks or workflows — it's a recognition that as models become more capable, the bottleneck shifts from *what to describe* to *how to execute continuously and safely*. The runtime becomes the primary source of differentiation, not the orchestration DSL.
+
+> **Core message**: Model quality alone no longer determines agent capability. Runtime design increasingly dominates real-world performance.
+
+See [[concepts/agent-runtime#execution-semantics-the-control-system-layer|§Execution Semantics]] for the detailed analysis of what makes the runtime layer architecturally distinct from workflow frameworks.
+
+### Internal Anatomy: The Six Infrastructure Components
 
 An agent runtime is the union of six components:
 

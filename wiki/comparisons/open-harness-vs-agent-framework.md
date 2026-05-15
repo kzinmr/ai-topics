@@ -1,7 +1,7 @@
 ---
 title: "Open Harness 対 Agent Framework/SDK — 投資対象としての本質的差異"
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-15
 type: comparison
 tags:
   - comparison
@@ -12,6 +12,7 @@ tags:
 aliases: ["harness-vs-framework", "harness-vs-sdk"]
 sources:
   - "raw/articles/2026-05-14_kzinmr_open-harness-vs-agent-framework.md"
+  - "raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis.md"
 related:
   - concepts/agent-harness
   - concepts/harness-engineering
@@ -311,3 +312,62 @@ Execution Layer
 - この分離ができれば、Open Harnessのスピードと柔軟性、Framework / Runtimeの信頼性と再現性を両方取れる
 
 Harness系のControl/Security/Opsを低く見すぎるのも、Framework系と同じ意味で高く見るのも誤り。正しくは、**何を守るSecurityなのか**を分けて評価すべきである。
+
+---
+
+## 9. Runtime-Centric vs Workflow-Centric: The Fundamental Axis
+
+Beyond the Operator Workbench vs Product Runtime axis (§4), there is an even more fundamental architectural distinction (kzinmr, 2026-05-15): **runtime-centric systems** vs **workflow-centric systems**.
+
+| Axis | Runtime-Centric (Harness) | Workflow-Centric (Framework) |
+|---|---|---|
+| **Core abstraction** | Runtime — manages *execution* | Workflow — describes *orchestration* |
+| **Primary concern** | How execution proceeds continuously and safely | What execution topology should be |
+| **Control center** | Runtime (autonomous) | Developer (explicit) |
+| **State model** | Runtime-managed (implicit, across turns) | Graph-managed (explicit, designed) |
+| **Environment coupling** | Strong (direct mediation of browser/shell/GUI) | Weak (abstracted through tool layer) |
+| **Opinionatedness** | High (runtime makes decisions) | Medium (developer makes decisions) |
+| **Extensibility** | Runtime extension (hooks, plugins, custom tools) | Workflow composition (nodes, edges, state transitions) |
+| **Mental model** | Agent OS | Orchestration library |
+| **Determinism** | Low (model-driven autonomy) | High (explicit state machine) |
+| **Best for** | Autonomous execution, exploration, operator workbench | Production workflows, audit, deterministic business logic |
+
+### The Runtime-Centric Family
+
+A key insight: ClaudeCode, Codex CLI, PI, OpenClaw, and Hermes Agent are **all in the same architectural family** — they are runtime-centric systems despite their differences in openness and environment type.
+
+| System | Nature |
+|---|---|
+| **ClaudeCode** | Closed runtime (vendor-optimized, co-trained with model) |
+| **Codex CLI** | Closed runtime (vendor-optimized, multi-model) |
+| **PI** | Programmable runtime substrate (minimal core, extension-based) |
+| **OpenClaw** | Open runtime (multi-channel gateway + control plane) |
+| **Hermes Agent** | Open runtime (persistent, self-improving, multi-backend) |
+
+LangGraph and PydanticAI are **workflow-centric systems** — their primary abstraction is the orchestration topology, not the execution substrate.
+
+### The PI Distinction: Runtime Substrate, Not an Agent SDK
+
+PI occupies a unique position in this taxonomy. Unlike LangGraph/PydanticAI — which are developer-centric orchestration libraries (graph construction, node orchestration, deterministic workflow composition) — PI is doing **runtime system work**:
+
+- Execution loop management
+- State management across turns
+- Task runtime with tool orchestration
+- Environment mediation (filesystem, shell, browser via extensions)
+- Event handling and streaming
+- Interruption and recovery
+
+This is closer to an **"Agent OS"** than an orchestration library. PI is not in the Harness↔Framework middle ground — it is firmly on the harness/runtime side. PI is trying to build an **application runtime**; LangGraph/PydanticAI are closer to **agent topology DSLs**.
+
+| Axis | PI | LangGraph / PydanticAI |
+|---|---|---|
+| **Core abstraction** | Runtime | Workflow |
+| **Primary concern** | Execution | Orchestration |
+| **State model** | Runtime-managed | Graph-managed |
+| **Environment coupling** | Strong | Weak |
+| **Extension model** | Runtime extensions (TypeScript SDK) | Workflow composition (nodes, edges) |
+| **Mental model** | Agent OS / application runtime | Orchestration library / topology DSL |
+
+This distinction matters because it changes the evaluation criteria. PI should not be compared to LangGraph on "workflow modeling capability" — that's not what it's trying to do. PI should be evaluated as a **runtime substrate**: how well does it manage execution, mediate the environment, and provide a programmable foundation for agent behavior?
+
+**Source**: kzinmr, "Agent Stack Architecture & Comparative Analysis" (2026-05-15), [[raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis]].

@@ -3,7 +3,7 @@ title: Pi (pi-coding-agent)
 type: entity
 aliases: [pi-coding-agent, pi-dev, pi-mono, mario-zechner-pi]
 created: 2026-05-07
-updated: 2026-05-08
+updated: 2026-05-15
 status: L3
 tags:
   - entity
@@ -20,6 +20,7 @@ sources:
   - https://prowe214.medium.com/agentic-coding-harnesses-a-comparison-4db34b87fd5c
   - https://shittycodingagent.ai/
   - raw/newsletters/2026-04-30-ainews-the-inference-inflection.md
+  - raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis.md
 related:
   - "[[entities/openclaw]]"
   - "[[entities/claude-code]]"
@@ -125,6 +126,40 @@ Extensions, skills, prompt templates, and themes can be packaged and shared via 
 - **Cost-efficient**: No subscription wall (unlike Anthropic on third-party harnesses) — BYOK for all providers
 - **Learning curve**: Minimal out of box but requires developer investment in context engineering for best results
 - **Best for**: Developers who want full control over prompt engineering and are willing to curate their own context
+
+## PI as Runtime Substrate: Beyond a Coding Harness
+
+While Pi is most commonly categorized as a coding harness, its architecture reveals a deeper ambition: **PI is a programmable runtime substrate** — not merely an agent SDK or a workflow framework (kzinmr, 2026-05-15).
+
+Unlike LangGraph/PydanticAI's developer-centric orchestration model (graph construction, node orchestration, deterministic workflow composition), Pi performs **runtime system work**:
+
+| Runtime Responsibility | Pi's Implementation |
+|---|---|
+| **Execution loop** | `pi-agent-core` — manages the Decide→Act→Observe cycle with event streaming |
+| **State management** | Session trees with branching, state persistence, custom message types |
+| **Task runtime** | Interactive/Print/RPC/SDK modes — agents run as managed processes |
+| **Tool orchestration** | TypeBox-validated tool execution with multi-provider tool calling |
+| **Environment mediation** | Filesystem, shell, browser (via extensions), git — the agent's "world interface" |
+| **Event handling** | Streaming event system, cross-provider context handoffs |
+| **Interruption/recovery** | Session trees enable isolated branches; rewind to main on failure |
+
+This is closer to an **"Agent OS"** than an orchestration library. Pi is not in the Harness↔Framework middle ground — it is firmly on the **runtime-centric** side of the agent stack. While LangGraph and PydanticAI describe *what execution topology should be* (agent topology DSLs), Pi manages *how execution proceeds continuously*.
+
+### The Runtime-Centric Family
+
+Pi belongs to the same architectural family as ClaudeCode, Codex CLI, OpenClaw, and Hermes Agent — all runtime-centric systems, differentiated by openness and environment type:
+
+| System | Nature |
+|---|---|
+| ClaudeCode | Closed runtime (co-trained with model) |
+| Codex CLI | Closed runtime (multi-model) |
+| **PI** | **Programmable runtime substrate (minimal core, extension-based)** |
+| OpenClaw | Open runtime (gateway + control plane) |
+| Hermes Agent | Open runtime (persistent, self-improving) |
+
+**Key implication**: Pi should not be evaluated primarily on "workflow modeling capability" — that's LangGraph's domain. Pi should be evaluated as a **runtime substrate**: how well does it manage execution, mediate the environment, and provide a programmable foundation for agent behavior?
+
+See [[comparisons/open-harness-vs-agent-framework]] §9 for the full runtime-centric vs workflow-centric analysis.
 
 ## Agents Built for Agents Building Agents
 

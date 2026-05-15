@@ -355,7 +355,7 @@
 - [[entities/perplexity-comet]] — Perplexity Cometは、Perplexity AIが開発したAIネイティブブラウザ。2025年7月にWindows/macOSでリリースされ、同年11月にAndroid、2026年3月にiOSに対応。「ブラウザをAIエージェントにする」戦略の最前線に位置する製品。
 - [[entities/peter-steinberger]] — Austrian software developer, creator of **OpenClaw** (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as **@steipete** on GitHub/Twitter. A pioneer of **AI-native dev...
 - [[entities/petra-donka]] — Petra Donka — Head of DevEx at Warp. Argues agents need feedback loops, not perfect prompts.
-- [[entities/pi]] — Mario Zechner（libGDX開発者）製ミニマルAIコーディングハーネス。~1K token system prompt、4ツールのみ（read/write/edit/bash）、45.5K GitHub Stars、MITライセンス。TypeScript拡張/スキル/テーマによる拡張。OpenClawの基盤。ローカルモデルに最適。
+- [[entities/pi]] — Mario Zechner（libGDX開発者）製ミニマルAIコーディングハーネス。~1K token system prompt、4ツールのみ（read/write/edit/bash）、45.5K GitHub Stars、MITライセンス。TypeScript拡張/スキル/テーマによる拡張。OpenClawの基盤。ローカルモデルに最適。**Runtime SubstrateとしてのPI**: 実行ループ、状態管理、タスクランタイム、ツールオーケストレーション、環境仲介、イベント処理、中断/復旧を担うプログラム可能なランタイム基盤。LangGraph/PydanticAIのオーケストレーションライブラリとは異なり、エージェントOSに近い。Source: kzinmr (2026-05-15)。
 - [[entities/cory-doctorow]] — Canadian-British sci-fi author and digital rights activist. Coined "enshittification." Blogs at pluralistic.net. Critical voice on AI policy and corporate personhood.
 - [[entities/philiplaine-com]] — **URL:** https://philiplaine.com
 - [[entities/phil-schmid]] — Staff Engineer (AI DevX/DevRel) at Google DeepMind, ex-Hugging Face Tech Lead (revenue $0→$100M). Author of FSDP+Q-LoRA guide, RLHF tutorials, Inference Endpoints.
@@ -791,7 +791,7 @@
 - [[concepts/agentic-ai-governance]] — Frameworks for governing autonomous AI agents in enterprise — identity-based access, three-tiered guardrails (Yale CELI, 2026), HITL/HOTL patterns, regulatory alignment.
 - [[concepts/agent-governance]] — Agent governance is the structured approach enterprises use to define how autonomous AI systems operate, what they can access, and how their actions are monitored. It encompasses policy, identity, ...
 - [[concepts/agent-harness-primitives]] — A harness is every piece of code, configuration, and execution logic that wraps a raw model to turn it into a work engine. Agent = Model + Harness. The bottleneck has shifted from **model capabilit...
-- [[concepts/agent-harness]] — An agent harness is the infrastructure layer that sits between an LLM API and the agent's execution environment. It manages tool routing, context management, session lifecycle, and error recovery. ...
+- [[concepts/agent-harness]] — An agent harness is the infrastructure layer that sits between an LLM API and the agent's execution environment. It manages tool routing, context management, session lifecycle, and error recovery. **Expanded with**: Closed vs Open Harness analysis (co-training/co-design vs runtime portability), Harness Type Comparison (coding/browser/computer-use/general + environment entropy gradient), Harness vs Runtime distinction. ...
 - [[concepts/ai-benchmarks-evals-overview]] — Florian Brand (@xeophon)によるAIベンチマーク・評価指標18部構成シリーズの包括的まとめ。GPQA、LiveCodeBench、Aider Polyglot、MMLU Pro、MMMU、MRCR、SimpleQA、Vibe-Eval、BFCL V3、IFEval、ChartQA、Tau-Bench、HLE、CountBenchQA、ARC-AGI等の設計思想・データソーシング・強みと弱点を解説。
 - [[concepts/ai-delegation-patterns]] — AI delegation patterns (Cyborgs/Centaurs/Self-Automators), process-based delegation, orchestration vs chat. BCG/Harvard/MIT research on human-AI collaboration.
 - [[concepts/ai-engineer-roadmap-2026]] — The 2026 AI Engineer Roadmap by Rohit (@rohit4verse): 5 production-grade projects (SLM mobile app → self-improving coding agent → multimodal video editor → personal Life OS → enterprise workflow agent) to bridge the $150K gap between prompt engineers and systems architects.
@@ -986,7 +986,7 @@
 - [[comparisons/bing-api-alternatives-2026]] — Bing Search API alternatives comparison: Parallel Search, Exa AI, SerpAPI, Tavily (2026)
 - [[comparisons/google-alerts-alternatives-2026]] — Google Alerts alternatives for developers & marketers: 10 tools compared (2026)
 - [[comparisons/open-source-rl-libraries-comparison]] — Open Source RL Libraries比較ポータル: TRL/Verl/OpenRLHF/RAGEN/NeMo-RL/ROLL/AReaL/slime/Verifiers/SkyRLの10ライブラリ比較。Anyscale 2025。
-- [[comparisons/open-harness-vs-agent-framework]] — Open Harness 対 Agent Framework/SDK — 投資対象としての本質的差異（2026-05-14）
+- [[comparisons/open-harness-vs-agent-framework]] — Open Harness 対 Agent Framework/SDK — 投資対象としての本質的差異（2026-05-14）。**§9 Runtime-Centric vs Workflow-Centric追加**: runtime-centric family (ClaudeCode/Codex/PI/OpenClaw/Hermes) vs workflow-centric (LangGraph/PydanticAI)。PI as Runtime Substrate分析。Source: kzinmr (2026-05-15)。
 
 ## Queries (1 page)
 
