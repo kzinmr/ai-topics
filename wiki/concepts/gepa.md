@@ -1,145 +1,82 @@
 ---
-title: "GEPA: Genetic-Pareto Prompt Evolution"
-description: "GEPAはDSPyに統合された遺伝的アルゴリズムベースのプロンプト最適化手法。Pareto最適化により品質とコストを同時に最適化し、GRPOより35倍少ないサンプルで6%高い性能を達成。ICLR 2026 Oral。"
-created: 2026-04-20
-updated: 2026-04-26
+title: "GEPA (Genetic-Pareto Prompt Evolution)"
+created: 2026-05-14
+updated: 2026-05-14
 type: concept
-status: complete
-depth_tracking:
- created: 2026-04-20
- target_depth: concept-level
-tags:
-  - optimization
-  - prompting
-  - dspy
+tags: [gepa, evolutionary-algorithms, prompting, optimization, self-improving, agent-skills, hermes-agent, nous-research, evaluation]
 sources:
- - raw/papers/2025-07-25_2507.19457_gepa-reflective-prompt-evolution.md
- - raw/articles/2026-04-25-rlm-gepa-prompt-evolution.md
-related:
- - dspy
- - rlms
- - agentic-engineering
- - mismanaged-geniuses-hypothesis
- - recursive-language-models
+  - raw/articles/2026-05-13_akshaypachaar_hermes-agent-masterclass.md
+  - raw/papers/2025-07-25_2507.19457_gepa-reflective-prompt-evolution.md
+  - https://arxiv.org/abs/2507.19457
+aliases: [genetic-pareto, gepa-optimizer]
 ---
 
-# GEPA: Genetic-Pareto Prompt Evolution
+# GEPA (Genetic-Pareto Prompt Evolution)
 
-**GEPA** (Genetic-Pareto Prompt Evolution) は、DSPyに統合された遺伝的アルゴリズムベースのプロンプト最適化手法。Omar Khattab率いるStanford/MITの研究グループにより開発され、**ICLR 2026 Oral**として受賞。
+> **TL;DR:** A reflective, sample-efficient prompt optimizer that uses natural language reflection + evolutionary search instead of reinforcement learning. Outperforms GRPO by 6% on average (up to 20%) using **35× fewer rollouts**. ICLR 2026 Oral. MIT licensed.
 
-## Core Principles
+GEPA (Genetic-Pareto) is a prompt optimizer for compound AI systems that merges **textual reflection** with **multi-objective evolutionary search**. Developed by a multi-institution collaboration (UC Berkeley, Stanford, Databricks, MIT), it iteratively mutates prompts using LLM-generated natural language feedback from execution traces. Unlike RL methods (GRPO) that collapse complex trajectories into scalar rewards, GEPA treats those trajectories as rich textual artifacts to diagnose, reflect on, and evolve.
 
-GEPAは3つの核心原理に基づく：
+## How It Works
 
-1. **Genetic Prompt Evolution** — プロンプトが突然変異・交叉を通じて「新種」のプロンプトを生成
-2. **Pareto Optimality** — 品質（metrics）とコスト（トークン数）を同時に最適化
-3. **Reflective Evaluation** — 自身生成したプロンプトを自己評価
+The core pipeline:
 
-## Key Results
+1. **Read current skill/prompt** from the target system (e.g., a Hermes Agent skill)
+2. **Generate evaluation dataset** — synthetic test cases (via Claude Opus), real session history (from SQLite), or hand-curated golden sets
+3. **GEPA optimization loop:**
+   - **Execution traces** → Run candidate prompts on minibatches, capture full trajectories (reasoning, tool calls, outputs)
+   - **Failure analysis** → LLM reflects on traces in natural language to diagnose *why* things failed, not just *that* they failed
+   - **Candidate generation** → Propose targeted prompt mutations informed by accumulated ancestral lessons
+   - **LLM-as-judge scoring** → Score candidates with rubrics (not binary pass/fail), using **Actionable Side Information (ASI)** — error messages, profiling data, reasoning logs
+4. **Constraint gates:** 100% test suite pass, skills under 15KB, caching compatibility preserved, semantic purpose doesn't drift
+5. **Best variant** goes out as a **PR**, never a direct commit — human oversight retains final control
 
-| Metric | GEPA | GRPO (RL baseline) | Improvement |
-|--------|------|--------------------| ------------|
-| Average performance | — | baseline | **+6%** |
-| Best task performance | — | baseline | **+20%** |
-| Sample efficiency (rollouts) | 1x | 35x | **35x fewer** |
+GEPA maintains a **Pareto front** of top-performing prompts and stochastically explores across it, preventing the local optima that plague greedy prompt optimizers.
 
-> GRPO（Reinforcement Learning最適化）を**6%上回り**、计算資源を**35分の1**に削減
+## Key Innovations
 
-## How It Works: Genetic Algorithm for Prompts
+- **Execution-trace-based evaluation vs self-report:** Instead of asking an agent "did you do well?" (which invites self-congratulation), GEPA reads what actually happened in the execution trace — which tool calls failed, where the reasoning diverged, what outputs were produced
+- **Pareto optimization:** Maintains a diverse population of high-performing prompts rather than converging on a single "best" — crucial for robust generalization across diverse problem instances
+- **Constraint gates:** Hard enforcement of correctness (100% test pass), size limits, caching compatibility, and semantic preservation — preventing optimization from producing prompts that score well but break in practice
 
-### Population & Fitness
-- **Population:** 異なる品質/コストトレードオフを持つ候補プロンプト集合
-- **Fitness:** Pareto支配関係 — 品質 우수かつコスト低いプロンプトが生き残る
-- **Selection:** 非支配的個人（Paretoフロント）を維持
+## Relationship to Hermes Agent
 
-### Genetic Operations
-```
-Parent Prompt A ──mutation──► Child Prompt A' (paraphrase, specificity)
-Parent Prompt B ──mutation──► Child Prompt B' (format change, scope)
-Parent A + Parent B ──crossover──► Hybrid Prompt AB
-```
+GEPA is **not built into the Hermes Agent runtime**. It lives in a companion repository: **`NousResearch/hermes-agent-self-evolution`** (MIT licensed). It operates as an **offline optimization pipeline** that:
 
-### Mutations:
-- **Paraphrase** — 同義表現に置換
-- **Specificity adjustment** — 曖昧さ・具体性の増減
-- **Format changes** — 出力フォーマットの変更
-- **Example reordering** — few-shot例の順序変更
+- Reads skills from a Hermes repo
+- Generates evaluation datasets from session history or synthetic data
+- Runs the GEPA optimizer to produce improved skill variants
+- Submits the best variant as a PR against the Hermes repo for human review
 
-## DSPy Integration
+This addresses a known weakness of Hermes Agent's in-agent learning loop: agents tend toward self-congratulation and can overwrite manual customizations with worse versions. GEPA provides objective, execution-trace-grounded quality assurance.
 
-```python
-import dspy
+## Cost & GPU Requirements
 
-# GEPAはDSPyから直接利用可能
-gepa = dspy.GEPA(
-    metric=my_metric,
-    num_candidates=8,      # 候補数
-    population_size=16     # 集団サイズ
-)
+| Resource | Requirement |
+|----------|-------------|
+| **GPU** | **None required** — everything runs via API calls |
+| **Cost per optimization run** | ~$2–10 |
+| **Rollouts for major benchmarks** | 400–1,200 (vs 24,000+ for GRPO) |
+| **Licensing** | MIT |
 
-# コンパイル
-optimized_module = gepa.compile(
-    my_module,
-    trainset=train_examples
-)
-```
+## ICLR 2026 Oral Paper
 
-## Comparison with Other DSPy Optimizers
+- **arXiv:** [2507.19457](https://arxiv.org/abs/2507.19457)
+- **Title:** *GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning*
+- **Venue:** ICLR 2026 (Oral), presented April 24, 2026 — Oral Session 3A: Agents
+- **Primary Area:** Foundation or frontier models, including LLMs
+- **Keywords:** prompt optimization, natural language reflection, evolutionary algorithms, Pareto front
+- **Key results:** +6% average over GRPO across 6 tasks (HotpotQA, AIME, LiveBench-Math, IFBench, and more), +12% on AIME-2025 over MIPROv2, 35× fewer rollouts
+- **Code:** https://github.com/gepa-ai/gepa
 
-| Optimizer | アルゴリズム | サンプル効率 | 品質 | 計算コスト |
-|-----------|-------------|-------------|------|------------|
-| BootstrapFewShot | デモンブーストラップ | **高** | 中 | 低 |
-| MIPROv2 | Bayesian + CoT | 中 | **高** | 中 |
-| COPRO | 勾配ベース進化 | 中 | 中 | 中 |
-| GRPO | 強化学習 | **低 (35x GEPA)** | 中-高 | 高 |
-| **GEPA** | **Genetic + Pareto** | **高** | **最高** | 中 |
+## Ecosystem Adoption
 
-## GEPA vs GRPO: Why Genetic Beats RL
-
-| Dimension | GRPO | GEPA |
-|-----------|------|------|
-| **Sample efficiency** | 35x rollout | 1x (35x fewer) |
-| **Algorithm complexity** | RL infrastructure | Simple genetic ops |
-| **Prompt exploration** | Gradient-based | Population-based |
-| **Multi-objective** | Single metric | Quality + Cost (Pareto) |
-| **Stability** | High variance | More stable |
-
-GEPA的核心的な利点は**プロンプトテキストそのものを进化**させること。GRPOが内部表現（logits）を最適化しようとするのに対し、GEPAはinterpretableなプロンプト空間を探索する。
-
-## Relationship to Other Khattab Research
-
-GEPAはOmar Khattabの研究スタックの中の1コンポーネント：
-
-| システム | タイプ | ステータス |
-|---------|-------|-----------|
-| ColBERT | Late-interaction検索 | 商用 (SIGIR 2025 Best Paper) |
-| DSPy | 宣言的LMプログラミング | 商用 ( millions downloads) |
-| **GEPA** | 遺伝的プロンプト最適化 | **ICLR 2026 Oral** |
-| RLMs | 再帰的コンテキスト処理 | Preprint 2025 |
-| Multi-module GRPO | RL + プロンプト最適化統合 | Tech Report 2025 |
-| WARP | 多次元ベクトル検索エンジン | SIGIR 2025 Best Paper |
-
-## When to Use GEPA
-
-**Best for:**
-- 複雑なパイプラインでプロンプト最適化余地が大きい場合
-- 品質とコストのバランスを最適化したい場合
-- 計算資源が限られている場合
-- DSPyユーザーでMIPROv2より良い結果を出したい場合
-
-**Not necessary when:**
-- プロンプトがすでに最適化済みの場合
-- 単純なタスク（プロンプト変える余地が小さい）
-- 高速に反復する必要がある場合（MIPROv2より遅い）
+Used in production by Shopify, Databricks, Dropbox, Pydantic, Nous Research, OpenAI, and others. Integrated into DSPy as `dspy.GEPA` and available standalone via `pip install gepa`.
 
 ## See Also
 
-- [[concepts/dspy]] — GEPAが統合された宣言的LMプログラミングフレームワーク
-- [[concepts/rlms]] — Khattabの別研究方向（推論時自己最適化）
-- [[concepts/recursive-language-models]] — RLMとの統合（2026-04-25: RLM×GEPAでLongCoT-mini 38.7%→65.6%）
-- [[concepts/mismanaged-geniuses-hypothesis]] — RLM性能向上の解釈仮説
-- [[concepts/harness-engineering/agentic-engineering]] — GEPA可用于 エージェントパイプラインの最適化
-
-## RLM × GEPA Integration (April 2025)
-
-Alex Zhangらによる最新のミニ実験で、GEPAをRLM（Recursive Language Models）に適用し、**訓練なしで** LongCoT-mini の性能を38.7%から65.6%に倍増させた。これは「Mismanaged Geniuses Hypothesis」（MGH）の実証例であり、RLMが持つ潜在能力をGEPAのPareto最適化によって引き出すことに成功した。
+- [[hermes-agent]] — The agent framework GEPA optimizes skills for
+- [[nous-research]] — Creator of Hermes Agent and the self-evolution companion repo
+- [[agent-skills]] — The skill files GEPA optimizes: Markdown playbooks with YAML frontmatter
+- [[concepts/dspy]] — DSPy framework with built-in GEPA optimizer (`dspy.GEPA`)
+- [[entities/omar-khattab]] — Lead author and principal investigator

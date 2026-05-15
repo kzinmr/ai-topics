@@ -1,84 +1,74 @@
 ---
 title: "Akshay Pachaar"
-description: "Senior AI Engineer at Lightning AI, Co-Founder of Daily Dose of Data Science, and author of the influential 'Anatomy of an Agent Harness' synthesis piece"
-url: https://x.com/akshay_pachaar
+created: 2026-05-14
+updated: 2026-05-14
 type: entity
-created: 2026-04-30
-updated: 2026-04-30
-tags:
-  - entity
-  - person
-  - data-science
-  - harness-engineering
+tags: [person, educator, blogger, x-account, ai-agents, hermes-agent, content-creator]
 aliases:
-  - patchy631
-  - akshay_pachaar
-  - Daily Dose of Data Science
-related:
-  - "concepts/agent-harness]]"
-  - "concepts/harness-engineering]]"
-  - "entities/intuit-machine]]"
+  - "@akshay_pachaar"
+  - "patchy631"
 sources:
-  - "https://x.com/akshay_pachaar"
-  - "https://github.com/patchy631"
-  - "https://in.linkedin.com/in/akshay-pachaar"
+  - raw/articles/2026-05-13_akshaypachaar_hermes-agent-masterclass.md
+  - https://x.com/akshay_pachaar
+  - https://www.dailydoseofds.com/author/akshay/
+  - https://www.linkedin.com/in/akshay-pachaar/
+  - https://www.youtube.com/@akshay_pachaar
+description: "AI/ML educator, co-founder of DailyDoseOfDS. 270K+ followers on X. BITS Pilani graduate, 3 patents, ex-AI Engineer at LightningAI. Creates educational content on LLMs, AI Agents, RAG, and Machine Learning."
 ---
-
 
 # Akshay Pachaar
 
-**Akshay Pachaar** (@akshay_pachaar, GitHub: @patchy631) is a Senior AI Engineer and Developer Advocate at **Lightning AI** ⚡️, and Co-Founder of **Daily Dose of Data Science**. He has 6+ years of experience in classical Machine Learning, Computer Vision, and Reinforcement Learning, holds 3 patents, and has ~187K followers on X/Twitter and ~173K on LinkedIn.
+**Akshay Pachaar** (@akshay_pachaar, GitHub: @patchy631) is an AI/ML educator and co-founder of **Daily Dose of Data Science** (DailyDoseOfDS). As of May 2026, he has **270,693 followers** on X/Twitter and ~173K on LinkedIn. He educates a community of 500K+ across X, LinkedIn, his newsletter, and YouTube on LLMs, AI Agents, RAG, and Machine Learning.
 
-## Overview
+## Key Facts
 
-Akshay Pachaar is a prominent AI educator and engineer who bridges the gap between academic ML concepts and production AI agent engineering. His signature contribution is **"The Anatomy of an Agent Harness"** (April 2026) — a comprehensive X/Twitter native article that synthesizes how Anthropic, OpenAI, LangChain, CrewAI, and AutoGen implement agent harnesses into a unified framework.
+- **Education**: Integrated Masters in Mathematics + B.Eng in Electrical & Electronics Engineering from **BITS Pilani**
+- **Patents**: Holds **3 patents**
+- **Current Role**: Co-Founder of **Daily Dose of Data Science** (Oct 2024–present)
+- **Previous Roles**:
+  - Sr. AI Research Engineer at **Lightning AI** (Feb–Oct 2024) — creators of PyTorch Lightning
+  - Founder of **ML Spring** (Jun 2023–Oct 2024)
+  - Lead Data Scientist / Senior Data Scientist at **TomTom** (Nov 2020–Mar 2023) — ML for Maps and ADAS systems
+  - Earlier roles at HERE Technologies (owned by Audi, BMW & Daimler consortium)
+- **Location**: New Delhi, India
+- **X Handle**: [@akshay_pachaar](https://x.com/akshay_pachaar)
+- **X Bio**: "Simplifying LLMs, AI Agents, RAG, and Machine Learning for you!"
 
-Previously worked at **TomTom** (ML for Maps and ADAS systems) and **HERE Technologies** (owned by Audi, BMW & Daimler consortium). Holds an integrated Masters in Mathematics and Bachelor of Engineering in EEE from **BITS Pilani**.
+## Notable Content
 
-## Key Contributions
+### Hermes Agent Masterclass (May 13, 2026)
 
-### "The Anatomy of an Agent Harness" (April 2026)
+A comprehensive X Article guide covering everything needed to understand and customize [[hermes-agent]]. Covers self-evolving skills, three-tier memory, [[concepts/gepa|GEPA]] optimization, and running 1 to 10 agents 24/7. Performance:
+- **2,691 likes**, **9,572 bookmarks**, **308 retweets**
+- **1.3M impressions**, 49 replies
+- Practical walkthrough: install, Telegram integration, multi-agent profiles (programmer/designer/researcher), cron scheduling, Claude Code integration
 
-A comprehensive deep-dive that formalized the concept of the **agent harness** as a distinct engineering discipline. Key insights:
+### The Anatomy of an Agent Harness (April 2026)
 
-- **Formalized "agent harness"** — The complete software infrastructure wrapping an LLM to make it functional in production
-- **The Von Neumann analogy** — LLM = CPU, context window = RAM, external DB = disk, tools = I/O, harness = OS
-- **12 components of a production harness**: orchestration loop, tools, memory, context management, prompt construction, output parsing, state management, error handling, guardrails, verification loops, subagent orchestration, termination conditions
-- **The Ralph Loop pattern** — For long-running tasks across context windows
-- **Seven architectural decisions** every harness designer faces
-- **TerminalBench evidence** — LangChain changed only the harness (same model, same weights) and jumped from outside top 30 to rank 5
+A synthesis piece formalizing the **agent harness** as a distinct engineering discipline. Mapped how Anthropic, OpenAI, LangChain, CrewAI, and AutoGen implement agent harnesses into a unified 12-component framework. Key concepts: the Von Neumann analogy for agents, the Ralph Loop pattern, and TerminalBench evidence that harness improvements alone can dramatically boost agent performance. → [[concepts/harness-engineering]]
 
 ### Daily Dose of Data Science
-Co-founded and runs a popular educational newsletter covering ML/AI topics with a practical, hands-on focus. Regular content on LLMs, agent systems, data science workflows, and MLOps.
 
-### Lightning AI Advocacy
-As a Developer Advocate at Lightning AI (creators of PyTorch Lightning, Lit-GPT, and related tools), he creates educational content on practical ML/AI development, fine-tuning, and agent infrastructure.
+Co-founded and runs a popular educational platform covering AI/ML topics with a practical, hands-on focus. Offers:
+- **Free courses**: AI Agents, RAG Systems, MLOps/LLMOps, MCP, Reinforcement Learning, LLM Fine-tuning
+- **Guidebooks**: MCP Guidebook, Agents Guidebook, AI Engineering Guidebook, DS Guidebook
+- **Newsletter**: Regular deep-dives on LLMs, AI agents, and data science workflows
 
-## Core Philosophy
+### YouTube Channel
 
-Akshay's work is characterized by:
-- **Synthesis thinking** — Rather than advocating for one framework, he maps the entire landscape (Anthropic vs OpenAI vs LangChain vs CrewAI vs AutoGen) into structured frameworks
-- **Accessible complexity** — Takes deeply technical topics (agent harness architecture) and makes them digestible for a broad engineering audience
-- **Evidence-based** — Uses benchmarks like TerminalBench to ground claims about harness importance vs model capability
+Runs [@akshay_pachaar](https://www.youtube.com/@akshay_pachaar) with tutorials on LLMs, AI agents, RAG, and ML — complementing his written content with video walkthroughs.
 
 ## Writing Style & Philosophy
-- **Comparative analysis** — Side-by-side framework evaluations
-- **Architectural thinking** — Focus on system design patterns rather than code snippets
-- **Educator's voice** — Explains "why" before "how"
-- **Data-driven claims** — References benchmarks and empirical results
 
-## Related Entities
-- [[entities/atal-upadhyay]]
-- [[entities/intuit-machine]] — Also written extensively on agent skills/harness patterns
-- [[entities/boris-cherny]] — Creator of Claude Code, another key voice on agent infrastructure
-- [[entities/harrison-chase]] — LangChain CEO, articulated the three-layer agent architecture framework
+- **Synthesis thinking** — Maps entire landscapes into structured, comparative frameworks
+- **Accessible complexity** — Makes deeply technical topics (agent architecture, memory systems) digestible for broad engineering audiences
+- **Evidence-based** — References benchmarks (TerminalBench, [[concepts/gepa|GEPA]] results) to ground claims
+- **Educator's voice** — Explains "why" before "how"; progressive disclosure
 
-## Related Concepts
-- [[concepts/agent-harness]] — Comprehensive concept page based on his article
-- [[concepts/harness-engineering]] — The broader discipline
-- [[concepts/bitter-lesson-harnessing]] — How harness role shifts as models improve
+## Related Pages
 
-## References
-- [X/Twitter: @akshay_pachaar](https://x.com/akshay_pachaar)
-- [GitHub: patchy631](https://github.com/patchy631)
-- [LinkedIn](https://in.linkedin.com/in/akshay-pachaar)
+- [[hermes-agent]] — Subject of his 1.3M-impression masterclass (May 2026)
+- [[concepts/nous-research]] — Creators of Hermes Agent, which features prominently in his content
+- [[concepts/gepa]] — Genetic-Pareto Prompt Evolution, covered in his Hermes masterclass as offline skill optimization
+- [[concepts/harness-engineering]] — The discipline he helped popularize through "The Anatomy of an Agent Harness"
+- [[entities/addy-osmani]] — Fellow AI/ML educator who published the definitive Agent Harness Engineering framework

@@ -1,4 +1,31 @@
 
+
+## 2026-05-15 00:11 UTC — GEPA concept page rewritten with Hermes Agent integration
+
+**Action**: Rewrote `concepts/gepa.md` to be a comprehensive concept page integrating GEPA's academic foundation (2507.19457, ICLR 2026 Oral) with its Hermes Agent self-evolution pipeline role from the raw masterclass article.
+
+**Changes**:
+- Frontmatter updated: tags [gepa, evolutionary-algorithms, prompting, optimization, self-improving, agent-skills, hermes-agent, nous-research, evaluation], sources include raw article + arXiv paper
+- Added Hermes Agent pipeline section: companion repo `NousResearch/hermes-agent-self-evolution`, offline optimization, PR-based delivery
+- Key innovations section: execution-trace-based evaluation vs self-report, Pareto optimization, constraint gates
+- Cost/GPU table, ICLR 2026 Oral details, ecosystem adoption section
+- Wikilinks: [[hermes-agent]], [[nous-research]], [[agent-skills]] plus DSPy/RLM cross-links
+- Final: 82 lines, under 120-line limit
+- Updated `index.md` with concepts/gepa entry
+
+## 2026-05-15 00:15 UTC — Created Hermes Agent vs OpenClaw comparison page
+
+**Action**: Created `comparisons/hermes-vs-openclaw.md` — a concise comparison page at 62 lines framed by the Kilo blog quote.
+
+**Changes**:
+- Frontmatter: title "Hermes Agent vs OpenClaw", type comparison, 8 sources including Kilo blog, GitHub repos, official docs
+- Kilo blog framing quote: "Hermes packages a gateway around a learning agent. OpenClaw packages an agent around a messaging gateway."
+- 9-dimension comparison table: architecture philosophy, memory system, skill/learning system, identity layer, execution backends, model support, messaging platforms, scheduling, GitHub stars/community
+- Architecture diagram: Hermes (agent-first) vs OpenClaw (gateway-first) data flow
+- Verdict/synthesis: when to choose each, when to use both (orchestrator + executor via ACP)
+- Wikilinks: [[hermes-agent]], [[nous-research]], [[gepa]], [[hermes-vs-openclaw-architecture]]
+- Updated `index.md`: added comparisons entry, updated hermes-agent and openclaw entity cross-references
+
 ## 2026-05-15 00:20 UTC — Claude Code Skills concept page created from Thariq X Article
 
 **Action**: Saved raw article `raw/articles/2026-03-17_trq212_lessons-building-claude-code-skills.md` (via GetXAPI), created concept page `concepts/claude-code-skills.md`, updated Thariq Shihipar entity page with source reference and cross-link. Updated `index.md` and `log.md`.

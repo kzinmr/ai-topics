@@ -226,7 +226,7 @@
 - [[entities/hamel-husain]] — **Role** | Independent Consultant (Parlance Labs), R&D at AnswerAI, Scout at Bain Capital |
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM (founded 2022), built on GPT-3.5. Evolved toward agentic personal OS.
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
-- [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawのorchestratorとのACP連携によるdual-agent architectureでexecution specialistとして機能。→ [[comparisons/hermes-vs-openclaw-architecture]]
+- [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawのorchestratorとのACP連携によるdual-agent architectureでexecution specialistとして機能。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
 - [[entities/hoeem]] — X/Twitter クリエイター（@hooeem, 169K+ フォロワー）。Claude Certified Architect 試験の全5ドメインを解説したX Articleが60Kブックマーク。Claude Code・Agent SDK・MCPの実践的教育コンテンツを発信。
 - [[entities/hillel-wayne]] — **Blog** | hillelwayne.com |
 - [[entities/hugging-face]] — **The GitHub of AI** — the central open-source infrastructure layer for machine learning. Platform for sharing, discovering, and deploying ML models, datasets, and demos.
@@ -345,7 +345,7 @@
 - [[entities/openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
 - [[entities/openai-codex]] — OpenAIのAIコーディングエージェント。CLIベースの完全OSS。モデルはgpt-5.3-codex。自律実行、コンパクション、Windows対応。プロンプト設計は[[concepts/codex-prompting]]参照。
 - [[entities/openai]] — **Type** | AI Research & Product Company |
-- [[entities/openclaw]] — Open-source always-on AI agent framework created by **Peter Steinberger**。Gateway-first architectureでmulti-agent routing、ACP sub-agent spawning、cron/webhook schedulingを備え、orchestratorとしてHermes Agent等のexecution specialistを統括。→ [[comparisons/hermes-vs-openclaw-architecture]]
+- [[entities/openclaw]] — Open-source always-on AI agent framework created by **Peter Steinberger**。Gateway-first architectureでmulti-agent routing、ACP sub-agent spawning、cron/webhook schedulingを備え、orchestratorとしてHermes Agent等のexecution specialistを統括。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
 - [[entities/opencode]] — 最も人気のあるオープンソースAIコーディングエージェント。155K GitHub Stars、MITライセンス、850+コントリビューター。75+ LLMプロバイダ対応、マルチサーフェス（TUI/Desktop/IDE）。Plan/Build/Generalの3エージェント、LSP統合、GitHubネイティブ統合。
 - [[entities/openrouter]] — Unified API gateway for 300+ LLMs from multiple providers. Published the State of AI 2025 study analyzing 100T tokens of real-world LLM usage.
 - [[entities/overreacted-io]] — **URL:** https://overreacted.io
@@ -665,6 +665,7 @@
 - [[concepts/dspy-tutorial]] — Hands-on DSPy getting started tutorial (Maxime Rivest): Signature → gold set → MIPROv2 optimization in ~50 lines yielding 20% precision improvement
 - [[concepts/embeddings]] — Dense vector representations encoding entities as coordinates. Triples training (anchor/similar/dissimilar), dot product + sigmoid + contrastive loss, Two-Tower architecture for cold-start, transformer sentence embeddings (BERT CLS). Doug Turnbull's Maven course module.
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
+- [[concepts/gepa]] — GEPA (Genetic-Pareto Prompt Evolution): reflective prompt optimizer using execution traces + evolutionary search. 35× fewer rollouts than GRPO, ICLR 2026 Oral. Offline skill optimization pipeline for Hermes Agent via NousResearch/hermes-agent-self-evolution.
 - [[concepts/gliclass]] — GLiClass
 - [[concepts/glut-of-circuits]] — niplav (2026) の GLUT-of-Circuits モデル：LLMは重ね合わせで計算される、深さ制限のある合成可能な誤り訂正回路の巨大ルックアップテーブル的コレクション。Agent構造問題・AIアライメント・トークンボトルネック・CoTへの含意。
 - [[concepts/harness-commoditization]] — Harness Commoditization — Thesis that frontier model capability is commoditizing agent harnesses. As models become natively agentic, harness architecture ceases to be a meaningful differentiator — codebase organization becomes the bottleneck. Articulated by Amp in "The Coding Agent Is Dead" (Feb 2026).
@@ -976,6 +977,7 @@
 - [[comparisons/frontier-models-2026-04]] — Frontier Models 2026 04
 - [[comparisons/gpt-image-2-vs-nano-banana-2]] — Gpt Image 2 Vs Nano Banana 2
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison。elvisの9時間ソースコード分析 + OpenAI/Anthropicドキュメント分析 + Kilo blog (Brendan O'Leary, 2026-05)。Dual-Agent Architecture (Orchestrator + Execution Specialist via ACP) セクション追加。
+- [[comparisons/hermes-vs-openclaw]] — Hermes Agent vs OpenClaw。Kilo blog framing quote中心の俯瞰比較。9次元比較表（architecture philosophy, memory, skills, identity, backends, models, platforms, scheduling, stars/community）+ verdict/synthesis。
 - [[comparisons/llm-integration-patterns]] — Llm Integration Patterns
 - [[comparisons/local-llm-models-april-2026]] — Local Llm Models April 2026
 - [[comparisons/bing-api-alternatives-2026]] — Bing Search API alternatives comparison: Parallel Search, Exa AI, SerpAPI, Tavily (2026)

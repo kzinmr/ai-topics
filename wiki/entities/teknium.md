@@ -164,7 +164,7 @@ Nous Research's decentralized training infrastructure (DiStrO) and Psyche Networ
 
 ## Related
 
-- [[concepts/nous-research]] — Co-founder and Head of Post-Training
+- [[entities/nous-research]] — Co-founder and Head of Post-Training
 - [[concepts/hermes-models]] — Lead architect of Hermes 2/3/4
 - [[entities/hermes-agent]] — Creator and lead maintainer (68K+ stars)
 - [[concepts/post-training]] — His primary area of expertise
