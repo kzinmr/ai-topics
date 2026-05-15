@@ -159,7 +159,7 @@ Pi belongs to the same architectural family as ClaudeCode, Codex CLI, OpenClaw, 
 
 **Key implication**: Pi should not be evaluated primarily on "workflow modeling capability" — that's LangGraph's domain. Pi should be evaluated as a **runtime substrate**: how well does it manage execution, mediate the environment, and provide a programmable foundation for agent behavior?
 
-See [[comparisons/open-harness-vs-agent-framework]] §9 for the full runtime-centric vs workflow-centric analysis.
+See [[comparisons/open-harness-vs-agent-framework]] §9 for the full runtime-centric vs workflow-centric analysis. See also [[concepts/runtime-opinionated-sdk]] for the comparison between PI and Claude/OpenAI Agents SDKs — both are runtime-first, but PI goes further in scheduling, execution ownership, and lifecycle semantics (closer to an agent OS; Agents SDKs are mini runtimes).
 
 ## Agents Built for Agents Building Agents
 

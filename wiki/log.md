@@ -1,5 +1,22 @@
 
 
+## 2026-05-15 03:10 UTC — runtime-opinionated-sdk concept page created + cross-references
+
+**Action**: Created `concepts/runtime-opinionated-sdk.md` — a new concept page capturing kzinmr's analysis of Claude/OpenAI Agents SDKs as **mini runtimes** that embed a specific execution model. Added `agent-sdk` tag to SCHEMA.md taxonomy.
+
+**New pages**:
+- `concepts/runtime-opinionated-sdk.md` — Defines "runtime-opinionated": SDKs that give freedom to write code but embed strong assumptions about the execution model. Covers 5 implicit runtime opinions (reactive tool loop, runtime-owned tool orchestration, composable actors, state continuity, native observability), 5 implicit worldview points, LangGraph vs Agents SDK comparison (developer authors orchestration vs developer configures runtime behavior), PI vs Agents SDK comparison (both runtime-first, PI goes further in scheduler/lifecycle semantics).
+- `raw/articles/2026-05-15_kzinmr_runtime-opinionated-sdk.md` — Source analysis
+
+**Cross-references added to**:
+- `comparisons/open-harness-vs-agent-framework.md` §9 — Runtime-opinionated SDKs as mini runtimes
+- `entities/pi.md` — PI vs Agents SDK comparison (both runtime-first, different depth)
+- `concepts/agent-runtime.md` — Relationship to Other Concepts section
+
+**SCHEMA.md**: Added `agent-sdk` tag to AI Agents category
+
+**Key insight**: Claude/OpenAI Agents SDKs are not generic orchestration toolkits — they're **mini runtimes** that provide an *agent execution abstraction* (not an LLM call abstraction). The critical distinction from workflow frameworks: in a workflow framework, the developer writes orchestration; in a runtime-opinionated SDK, the developer configures runtime behavior.
+
 ## 2026-05-15 02:50 UTC — Control flow ownership: why runtime-centric now, structural inversion, what dies and survives
 
 **Action**: Enriched `concepts/agent-runtime.md` with the deepest layer of the runtime-centric analysis — why the shift happened now, what structurally changed, and what the future of agent infrastructure looks like. Also updated `comparisons/open-harness-vs-agent-framework.md` §9 and `concepts/agent-harness.md`.

@@ -923,6 +923,7 @@
 - [[concepts/reasoning-models]] — Reasoning Models
 - [[concepts/retrieval-augmented-generation]] — Retrieval Augmented Generation
 - [[concepts/rlhf]] — RLHF
+- [[concepts/runtime-opinionated-sdk]] — Claude/OpenAI Agents SDK を mini runtime として捉える概念。SDKが単なるユーティリティライブラリではなく「agent execution はこうあるべき」という実行モデル（reactive tool loop、runtime-owned tool orchestration、composable actors、native observability）を埋め込んでいる状態を runtime-opinionated と定義。LangGraph（developer authors orchestration）との本質差、PIとの比較（PIはより深いscheduler/lifecycle semanticsを持つ）。Source: kzinmr (2026-05-15)。
 - [[concepts/speculative-decoding]] — Speculative Decoding
 - [[concepts/structured-outputs]] — Structured Outputs
 - [[concepts/unharnessed-agents]] — Unharnessed Agents — John Berryman's thesis that "agent harness" is the wrong frame; agents should leave the IDE. Complementary to [[concepts/harness-commoditization|Harness Commoditization]].

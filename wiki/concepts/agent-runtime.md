@@ -417,6 +417,7 @@ This is the direct agent-systems analog of the technical debt patterns described
 - **[[concepts/harness-commoditization]]** — As models absorb harness features, the runtime (not the harness) may become the durable differentiator.
 - **[[concepts/workflow-orchestration-frameworks]]** — Workflow frameworks describe *execution topology* (what should happen); the runtime maintains *execution continuity* (how execution proceeds). LangGraph is closer to a workflow framework; Claude Agent SDK and PI are closer to runtimes.
 - **[[entities/han-lee]]** — Original source of the infrastructure-centric runtime framing and the runtime debt concept.
+- **[[concepts/runtime-opinionated-sdk]]** — Claude/OpenAI Agents SDKs as mini runtimes that embed a specific execution model (reactive tool loop, runtime-owned tool orchestration, composable actors, native observability). These SDKs provide an *agent execution abstraction*, not an *LLM call abstraction* — developers configure behavior, not control flow.
 
 ## References
 

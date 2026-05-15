@@ -389,6 +389,6 @@ The ReAct loop always existed — even LangChain could do `while True: thought=l
 
 The future is not a "workflow compiler" but an **agent operating runtime**. ClaudeCode and Codex's advantage is not just model quality — it's **model × runtime co-design**.
 
-See [[concepts/agent-runtime#why-now-control-flow-ownership-and-the-real-shift]] and [[concepts/agent-runtime#what-dies-and-what-survives-the-future-of-agent-infrastructure]] for the full analysis.
+See [[concepts/agent-runtime#why-now-control-flow-ownership-and-the-real-shift]] and [[concepts/agent-runtime#what-dies-and-what-survives-the-future-of-agent-infrastructure]] for the full analysis. See also [[concepts/runtime-opinionated-sdk]] for the analysis of Claude/OpenAI Agents SDKs as **mini runtimes** that embed a specific execution model (reactive tool loop, runtime-owned tool orchestration, composable actors, native observability).
 
 **Source**: kzinmr, "Agent Stack Architecture & Comparative Analysis" (2026-05-15), [[raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis]].
