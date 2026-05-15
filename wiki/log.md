@@ -1,3 +1,30 @@
+## [2026-05-15] watchdog | No auto-fixes applied — all issues exceed 10-file threshold
+
+### Health Summary
+| Metric | Value |
+|---|---|
+| Total L2 pages | 1,952 |
+| Index entries | 1,013 |
+| Not in index | 939 (47.5%) |
+| Missing `sources` frontmatter | 776 (39.7%) |
+| Ghost entries (true) | 0 — all 25 detected resolve to subdirectory files |
+| Index corruption | 0 — clean (`validate_index.py` ✅) |
+| Stale pages (>30d) | 182 |
+| Pipeline alerts | x_accounts stale (26h) |
+
+### Issues Requiring Human Attention
+
+1. **939 pages not in index** — ~875 concept pages + entity subdir pages + 2 events missing. Needs batch reconciliation (50-100 per batch).
+2. **776 pages missing `sources` field** — Systemic gap from pipeline-created pages.
+3. **182 stale pages (>30d)** — Low priority, but growing.
+4. **x_accounts pipeline stale (26h)** — x-accounts-scan cron job may need restart.
+
+### Previously Reported Issues (Verified False Positives)
+- **21 ghost entries** → All resolve to existing subdirectory files. Zero true ghosts.
+- **Index corruption = 0** — validated by `validate_index.py` ✅. Pipeline working.
+
+---
+
 ## [2026-05-15] wiki | antirez.com/news/165 — DS4 follow-up article ingested
 
 ### Changes
