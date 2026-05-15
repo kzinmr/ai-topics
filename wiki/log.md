@@ -1,5 +1,29 @@
 
 
+## 2026-05-15 02:11 UTC — agent-runtime.md enriched with "Execution Semantics" control system layer
+
+**Action**: Enriched `concepts/agent-runtime.md` with a major new section — "Execution Semantics: The Control System Layer" — based on kzinmr's analysis distinguishing agent runtime from language runtimes, workflow frameworks, and the model itself. Also added a "Harness vs Runtime: The Critical Distinction" section to `concepts/agent-harness.md`.
+
+**New pages**:
+- `raw/articles/2026-05-15_kzinmr_agent-runtime-execution-semantics.md` — kzinmr's analysis: agent runtime as execution control system, 8 responsibilities, Model↔Runtime separation, workflow framework vs runtime distinction
+
+**New sections added to `concepts/agent-runtime.md`**:
+- §"Execution Semantics: The Control System Layer" — Runtime as execution semantics vs infrastructure substrate; 8 responsibilities (lifecycle, tool mediation, state continuity, environment mediation, scheduling, event system, safety/policy, observability); Model↔Runtime separation table; Workflow Framework vs Runtime System comparison; the architecture diagram; completion-centric vs agent-centric transition
+- Updated Summary to acknowledge dual nature of runtime (infrastructure + execution semantics)
+- Updated "Relationship to Other Concepts" with harness/runtime distinction and workflow framework cross-reference
+
+**New section added to `concepts/agent-harness.md`**:
+- §"Harness vs Runtime: The Critical Distinction" — Harness owns behavior/capabilities; Runtime owns continuity/safety. Workflow framework vs runtime clarification.
+
+**Updated pages**:
+- `concepts/agent-runtime.md` — Frontmatter updated: added source, `updated` date; ~100 new lines
+- `concepts/agent-harness.md` — Frontmatter updated: added source; §Harness vs Runtime section added
+- `wiki/index.md` — Updated agent-runtime entry description to reflect dual perspective
+
+**Raw article**: `raw/articles/2026-05-15_kzinmr_agent-runtime-execution-semantics.md`
+
+**Key insight**: The existing `agent-runtime.md` focused on Han Lee's infrastructure-centric framing (containers, sandboxing, isolation primitives). kzinmr's analysis adds the complementary execution semantics layer — the runtime as a *control system* that manages lifecycle, mediates tools, maintains state, enforces safety, and makes agents persistent execution entities rather than stateless completions. This dual perspective (infrastructure + control system) is now the page's organizing framework.
+
 ## 2026-05-15 01:06 UTC — Agent Runtime concept page + Han Lee entity page created from Harness article
 
 **Action**: Created `concepts/agent-runtime.md` and `entities/han-lee.md` from Han Lee's "Hidden Technical Debt of AI Systems: Agent Runtime" article. Added new tags `agent-runtime` and `technical-debt` to SCHEMA.md.

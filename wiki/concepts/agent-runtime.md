@@ -20,6 +20,7 @@ sources:
   - "https://cognition.ai/blog/what-we-learned-building-cloud-agents"
   - "https://modal.com/blog/how-ramp-built-a-full-context-background-coding-agent-on-modal"
   - "https://northflank.com/blog/top-modal-sandboxes-alternatives-for-secure-ai-code-execution"
+  - "raw/articles/2026-05-15_kzinmr_agent-runtime-execution-semantics.md"
 aliases: [agent-serving-infrastructure, agent-sandbox, agent-execution-environment]
 ---
 
@@ -32,6 +33,8 @@ The **agent runtime** is the execution environment where an AI agent operates �
 > The agent is not the model. The agent is the harness plus the model, running inside the runtime. — Han Lee (2026)
 
 The runtime decides whether your agent finishes in eight seconds or eight minutes, whether two users can share an environment safely, and whether a malicious prompt can read your secrets. Almost all teams shipping agents today have **not** built this layer — they have rented it, glued it together from cloud primitives designed for different workloads, or simply not thought about it yet.
+
+However, "runtime" in the agent context also carries a **higher-level meaning**: it is the **execution control system** that manages the agent's lifecycle, mediates tool interactions, maintains state continuity, schedules subtasks, enforces safety policies, and emits events — the layer that makes an agent a **persistent execution entity** rather than a series of stateless completions. This dual nature of runtime — **infrastructure substrate** (Han Lee's framing) and **execution semantics** (the control system framing) — is explored throughout this page.
 
 ## Anatomy
 
@@ -47,6 +50,99 @@ An agent runtime is the union of six components:
 | **Lifecycle controller** | Starts, suspends, snapshots, resumes, and tears down environments |
 
 In Han Lee's [[concepts/rl-environments-for-llm-agents|taxonomy of RL environments]], these correspond to the $H$ (harness) and $S$ (state) components.
+
+## Execution Semantics: The Control System Layer
+
+While the anatomy above describes the runtime as **infrastructure** — what machines, containers, and filesystems the agent runs on — there is a complementary view: runtime as the **execution semantics** layer. This is the software control system that sits between the model (which decides *what to do*) and the environment (where actions take effect), managing *how execution proceeds safely and continuously*.
+
+> **Agent runtime is the execution control system that makes an agent a persistent, stateful execution entity — not a series of stateless completions.**
+
+This framing distinguishes agent runtime from three things it is often confused with:
+
+| What It Is NOT | What It IS | Why the Distinction Matters |
+|---|---|---|
+| **Language runtime** (Python, Node.js, asyncio, containers, VMs) | An **execution semantics** layer above the OS — closer to browser runtime, game engine runtime, or actor runtime | The language runtime provides processes and threads; the agent runtime provides lifecycle, tool mediation, and state continuity on top of them |
+| **Workflow framework** (LangGraph, Temporal) | An **execution continuity** system | Workflow frameworks describe *what should happen* (execution topology); the runtime maintains *how execution continues* (lifecycle, recovery, state) |
+| **The model** (LLM) | The **complement** to the model | The model owns *reasoning* ("what to do"); the runtime owns *execution semantics* ("how to proceed safely") |
+
+### The Eight Responsibilities of an Agent Runtime (Execution Semantics View)
+
+| # | Responsibility | What It Does |
+|---|---|---|
+| **1** | **Execution Lifecycle Management** | Manages `agent run` as a first-class entity: start, pause, resume, cancel, retry, checkpoint, terminate. This is the runtime's most fundamental job — treating an agent execution as a managed lifecycle, not a fire-and-forget API call. |
+| **2** | **Tool Mediation** | Intermediates between LLM and tools. The runtime owns: tool schema registration, argument validation, execution, timeout enforcement, retries, sandboxing, auth, and rate limits. A "tool" is not a simple function call — it has runtime semantics. |
+| **3** | **State Continuity** | Maintains *execution identity* across turns: message history, scratchpad, memory, intermediate observations, browser state, filesystem state. The agent is treated as a **persistent execution entity**, not a stateless completion. |
+| **4** | **Environment Mediation** | Mediates interaction with the external world: browser session, shell session, GUI control, DOM, screenshots, filesystem. Critical for browser-use and computer-use agents. The runtime is the **"world interface"** — the single point through which the agent perceives and acts upon its environment. |
+| **5** | **Scheduling** | Manages subtask spawning, delegation, concurrency, prioritization, and interruption. The most OS-like responsibility — the runtime decides what runs when, with what priority, and whether it can be preempted. |
+| **6** | **Event System** | Emits a stream of execution events: token stream, tool start, tool end, approval request, delegation, retry, failure, completion. Because execution is an *ongoing process*, not a single atomic operation, the event stream is the primary observability surface. |
+| **7** | **Safety / Policy Enforcement** | Enforces permissions, approval boundaries, sandbox quotas, and tenant isolation. For tools like Claude Code, this is architecturally critical — the model decides *what to attempt*; the runtime decides *what is allowed*. |
+| **8** | **Observability** | Provides traces, spans, event logs, and replayability. A runtime that cannot be observed cannot be debugged; a runtime that cannot replay trajectories cannot be improved. |
+
+### Model ↔ Runtime Separation
+
+The runtime does **not** own reasoning. That belongs to the model.
+
+| | Model | Runtime |
+|---|---|---|
+| **Owns** | Reasoning: *what to do* | Execution: *how to proceed safely and continuously* |
+| **Example** | "Open the file, find the bug, edit the function" | Start session → spawn shell → validate file path → execute edit → run tests → emit completion event |
+| **Intelligence** | Yes | No — execution semantics only |
+| **State** | Stateless (by default) | Maintains all execution state |
+
+This separation explains why the OS metaphor is apt: the runtime manages process lifecycle, scheduling, I/O mediation, permissions, eventing, and state — exactly the responsibilities of an operating system's kernel, but at the agent execution layer rather than the hardware layer.
+
+### Workflow Framework vs Runtime System
+
+This is one of the most consequential architectural distinctions:
+
+| | Workflow Framework | Runtime System |
+|---|---|---|
+| **Core question** | *What should happen?* | *How does execution continue?* |
+| **Primary concern** | Describe execution topology (DAG, state machine, graph) | Maintain execution continuity (lifecycle, recovery, state) |
+| **Example** | LangGraph — defines nodes, edges, conditional routing | Claude Code's loop — manages tool mediation, safety gates, event emission |
+| **State model** | Explicit, graph-structured, designed by the developer | Implicit, maintained by the runtime across turns |
+| **Relationship** | A workflow framework can be *implemented on top of* a runtime | A runtime can *execute* a workflow framework's topology |
+
+**Concrete difference**: PI, OpenAI Agents SDK, and Claude Agent SDK are all building **agent execution substrates** (runtimes) to varying degrees. LangGraph is closer to an **orchestration description layer** (workflow framework). The former maintains *how execution continues*; the latter describes *what should happen*.
+
+### The Diagram
+
+```
+           ┌─────────────────┐
+           │     Model        │  ← "what to do" (reasoning)
+           └────────┬────────┘
+                    │
+          reasoning/tool intent
+                    │
+           ┌────────▼────────┐
+           │     Runtime      │  ← "how execution proceeds"
+           │──────────────────│
+           │ lifecycle         │
+           │ tool mediation    │
+           │ state continuity  │
+           │ scheduling        │
+           │ safety/policy     │
+           │ event system      │
+           │ observability     │
+           └────────┬────────┘
+                    │
+      ┌─────────────┼─────────────┐
+      ▼             ▼             ▼
+ Browser         Shell         GUI/OS
+```
+
+### Why This Distinction Matters Now
+
+The transition from **completion-centric** to **agent-centric** computing is what makes the runtime layer necessary:
+
+- **Old world**: `LLM call = atomic operation` — a single request/response with no continuity. A completion API was sufficient.
+- **New world**: `LLM execution = long-lived process` — spanning minutes to hours, with tool calls, sub-agent delegation, interruptions, and recovery. A completion API cannot handle state continuity, interruption, environment interaction, delegation, or recovery.
+
+The runtime is the architectural answer to this shift. Every major agent platform (PI, OpenAI Agents SDK, Claude Agent SDK, LangGraph) is converging on the same realization: agents need an execution substrate that treats them as **persistent execution entities**, not stateless completions.
+
+> **Shortest definition**: The agent runtime is the control system that makes an agent a **persistent, stateful execution entity** — not a series of stateless completions.
+
+**Source**: kzinmr, "Agent Runtime as Execution Control System" (2026-05-15), [[raw/articles/2026-05-15_kzinmr_agent-runtime-execution-semantics]].
 
 ## Why Sandboxing Is Not Optional
 
@@ -165,10 +261,12 @@ This is the direct agent-systems analog of the technical debt patterns described
 
 ## Relationship to Other Concepts
 
-- **[[concepts/agent-harness]]** — The harness + model run inside the runtime. The runtime is the execution environment; the harness is the orchestration layer within it. Han Lee's taxonomy: $H$ (harness) and $S$ (state) are runtime components.
+- **[[concepts/agent-harness]]** — The harness + model run inside the runtime. The runtime is the execution environment; the harness is the orchestration layer within it. Han Lee's taxonomy: $H$ (harness) and $S$ (state) are runtime components. **Distinction from the execution semantics view**: the harness decides *what the agent attempts*; the runtime (as control system) decides *how execution proceeds* — managing lifecycle, tool mediation, state continuity, scheduling, events, safety, and observability independent of the harness's orchestration choices.
 - **[[concepts/context-engineering]]** — Context engineering manages what the model sees; the runtime defines where and how the model executes. The runtime's network boundary and filesystem shape what context is even available.
 - **[[concepts/reduce-offload-isolate]]** — Anthropic/Lance Martin's three principles for stripping harness complexity. The runtime's isolation model directly impacts how well you can "isolate" sub-agent contexts.
 - **[[concepts/harness-commoditization]]** — As models absorb harness features, the runtime (not the harness) may become the durable differentiator.
+- **[[concepts/workflow-orchestration-frameworks]]** — Workflow frameworks describe *execution topology* (what should happen); the runtime maintains *execution continuity* (how execution proceeds). LangGraph is closer to a workflow framework; Claude Agent SDK and PI are closer to runtimes.
+- **[[entities/han-lee]]** — Original source of the infrastructure-centric runtime framing and the runtime debt concept.
 
 ## References
 

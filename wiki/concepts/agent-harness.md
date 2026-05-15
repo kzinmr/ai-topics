@@ -23,7 +23,8 @@ sources: [
   "https://x.com/code_kartik/status/2050631735529095575",
   "raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md",
   "https://x.com/addyosmani/status/2053231239721885918",
-  "raw/articles/2026-05-14_kzinmr_open-harness-vs-agent-framework.md"
+  "raw/articles/2026-05-14_kzinmr_open-harness-vs-agent-framework.md",
+  "raw/articles/2026-05-15_kzinmr_agent-runtime-execution-semantics.md"
 ]
 ---
 
@@ -35,6 +36,21 @@ sources: [
 The **agent harness** is the complete software infrastructure wrapping an LLM: orchestration loop, tools, memory, context management, state persistence, error handling, and guardrails. The term was formalized in early 2026. As LangChain's Vivek Trivedy put it: "If you're not the model, you're the harness."
 
 The harness is not the agent itself — it's the machinery that produces agentic behavior. When someone says "I built an agent," they mean they built a harness and pointed it at a model.
+
+### Harness vs Runtime: The Critical Distinction
+
+A subtle but essential architectural distinction, formalized by kzinmr (2026-05-15): the **harness** and the **runtime** are different layers, though the boundary is often blurred in practice.
+
+| | Harness | Runtime |
+|---|---|---|
+| **Core question** | *What does the agent attempt?* | *How does execution proceed?* |
+| **Primary concern** | Orchestration: tools, prompts, loops, context, memory, verification | Execution control: lifecycle, tool mediation, state continuity, scheduling, events, safety, observability |
+| **Owns** | The agent's behavior and capabilities | The agent's continuity and safety as a persistent execution entity |
+| **Analogy** | The program logic | The operating system kernel |
+
+The harness decides which tools to call and in what order. The runtime manages whether those calls are allowed, how they execute, what state persists across them, and how execution recovers from failure. In Han Lee's formulation: "The agent is the harness plus the model, running inside the runtime."
+
+> **Workflow framework vs runtime**: LangGraph is closer to a **workflow framework** — it describes *execution topology* (what should happen). Claude Agent SDK and PI are closer to **runtimes** — they maintain *execution continuity* (how execution proceeds). See [[concepts/agent-runtime]] §"Execution Semantics: The Control System Layer" for the full analysis.
 
 ## The Von Neumann Analogy
 
