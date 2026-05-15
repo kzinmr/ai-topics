@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-14 | Total pages: 1863 | Indexed entries: 949 | Not in index: 894 |
+> Last updated: 2026-05-15 | Total pages: 1865 | Indexed entries: 950 | Not in index: 895 |
 
-## Entities (588 pages)
+## Entities (589 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -65,7 +65,7 @@
 - [[entities/agibot-10000-units]] — Real-world demand for humanoid robots accelerates as AGIBot ships 10,000 units.
 - [[entities/ai-engineer-youtube]] — AI Engineer YouTubeチャンネル (@aiDotEngineer) — 466K登録者、700+ talks。AI Engineerカンファレンスシリーズの公式チャンネル。エージェント設計、AIコーディング、インフラ、フロンティアモデル。RSS監視対象。
 - [[entities/akira-realmcore]] — **X** | @realmcore_ |
-- [[entities/akshay-pachaar]] — Senior AI Engineer at Lightning AI, Co-Founder of Daily Dose of Data Science, author of "The Anatomy of an Agent Harness" synthesis
+- [[entities/akshay-pachaar]] — AI/ML educator, co-founder of DailyDoseOfDS, 270K X followers. Hermes Agent masterclass (1.3M impressions), "The Anatomy of an Agent Harness" author
 - [[entities/alec-radford]] — **Role** | AI Researcher (former OpenAI); Advisor, Thinking Machines Lab |
 - [[entities/alex-banks]] — **Name** | Alex Banks |
 - [[entities/alex-chernysh]] — **Name** | Alex Chernysh | Applied AI engineer, creator of Bernstein — open-source deterministic orchestrator for 40+ CLI coding agents.
@@ -583,6 +583,7 @@
 - [[entities/nominal]] — Nominal — AI and analytics platform.
 - [[entities/nuro]] — Nuro — Autonomous delivery vehicles. Pivoted to Nuro Driver licensing platform in 2024.
 - [[entities/noumena-network]] — Noumena Network — AI research lab and product company. MoE training infrastructure (nmoe, RDEP) and agent systems. "Engineered for Experts // Built for Mastery."
+- [[entities/nous-research]] — Nous Research — NYC-based open-source AI lab (founded 2023). Creator of [[hermes-agent]], GEPA (ICLR 2026 Oral), Skills Hub (687 skills). $65M funding.
 - [[entities/parsagon]] — Parsagon
 - [[entities/reevo]] — Reevo — AI platform.
 - [[entities/rogo]] — Rogo — AI for financial services. $750M valuation. 25K+ users across 150 firms.
@@ -716,6 +717,7 @@
 - [[concepts/claude-code-auto-mode]] — Claude Codeのauto mode。Sonnet 4.6ベースの2段階transcript分類器（Stage 1: 高速シングルトークンフィルタ → Stage 2: CoT推論）が人間承認者を代替。prompt injection probeとの2層防御で、危険行動をブロックしつつ許可プロンプトを最小化。FPR 0.4%、実overeager行動の83%捕捉。Deny-and-continue設計。
 - [[concepts/claude-certified-architect-domains]] — Claude認定アーキテクト全5ドメイン包括知識（@hooeem記事に基づく）。Domain 1: Agentic Architecture & Orchestration (27%) — stop_reason、hub-and-spoke、hooks、タスク分解。Domain 2: Tool Design & MCP (18%) — ツール説明設計、tool_choice。Domain 3: Claude Code Configuration (20%) — CLAUDE.md階層、パス固有ルール、plan mode。Domain 4: Prompt Engineering (20%) — 明示性、few-shot、JSON schemas、Batches API。Domain 5: Context Management (15%) — プログレッシブサマライゼーション罠、lost in middle、エスカレーショントリガー、エラー伝播、情報来歴。
 - [[concepts/claude-code-sandboxing]] — Claude CodeのOSレベルサンドボックス。Linux bubblewrap/macOS seatbeltでファイルシステム+ネットワーク隔離。許可プロンプト84%削減。Claude Code on the Web（クラウド隔離実行）を含む。オープンソース化。
+- [[concepts/claude-code-skills]] — Claude Code Skills — 機序と役割パターン。Skillsはフォルダであり、Progressive Disclosure・動的Hooks・メモリ永続化の機序をもつ。9つの役割パターン: Library/API Reference, Product Verification, Data Fetching, Business Process, Code Scaffolding, Code Quality, CI/CD, Runbooks, Infrastructure Ops。Thariq ShihiparによるAnthropic社内実践知。
 - [[concepts/claude-diary]] — Lance Martin's Claude Code plugin for agent continual learning. Diary entries → reflection → CLAUDE.md updates. Implements CoALA/Generative Agents memory patterns.
 - [[concepts/claude-managed-agents]] — Anthropic's Managed Agents platform: memory stores (file-as-memory), multi-agent orchestration (coordinator + 20 sub-agents), outcomes loop (rubric-driven grader), Dreams (memory curation), webhooks (push notifications). GA with Dreams in Research Preview.
 - [[concepts/claude-model-family]] — Build with Claude — Developer Guide — Anthropic開発者ガイドの4本柱（Quick Start / Advanced Capabilities / Architectural Patterns / Optimization）に従った実践的リファレンス。Extended Thinking / Vision / Computer Useの使いどころ、Tool Use / MCP / Agents & Skills / RAGの設計指針、Prompt Engineering / Caching / Evalsの最適化技法。モデルタイムライン・3階層リファレンス・エコシステム概要はAppendixに集約。
@@ -794,6 +796,7 @@
 - [[concepts/ai-operating-model]] — IBM's four-system blueprint for enterprise AI: Agents + Data + Automation + Hybrid. Coordinated, governed, auditable agent ecosystems at scale. Announced Think 2026.
 - [[comparisons/agent-harnesses]] — 8大AIエージェントハーネス（Claude Code/OpenCode/Pi/Codex/Copilot CLI/Droid/OpenClaw/Hermes Agent）の包括的比較ポータル。機能比較表、モデル互換性マトリクス、価格比較、ユースケースレコメンデーション、Harness Effect分析。
 - [[concepts/agent-harnesses]] — > **Core Thesis:** The less you build in your agent framework, the more it works. All the value is in the RL'd model, not your 10,000 lines of abstractions.
+- [[concepts/hermes-agent]] — Hermes Agent by Nous Research: self-evolving personal AI agent with three-tier memory, self-improving skills, GEPA optimization, multi-profile isolation, and plain-English cron. 140K+ GitHub stars. Comparison with OpenClaw.
 - [[concepts/hermes-agent-architecture]] — Hermes Agent（v0.9.0）のアーキテクチャ詳細。AIAgent中心設計、3つのAPI実行モード、キャッシュ対応プロンプトアセンブリ、SQLite+FTS5永続状態、自己登録型ツールレジストリ、subagent delegation vs execute_code、14+プラットフォームGateway、共有プロバイダランタイム。agent-core-firstの能力蓄積システム。
 - [[concepts/hermes-agent-use-cases]] — Hermes Agentの7つの標準ユースケース（30日間コミュニティ分析）。3 Shared Properties（Scheduled/File-based/Push to messenger）、Self-Evolving Skill Loop。
 

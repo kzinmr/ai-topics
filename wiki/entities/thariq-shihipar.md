@@ -3,7 +3,7 @@ title: Thariq Shihipar
 type: entity
 handle: "@trq212"
 created: 2026-04-10
-updated: 2026-05-09
+updated: 2026-05-15
 tags:
   - person
   - anthropic
@@ -136,13 +136,17 @@ A comprehensive 1h53m workshop that became one of the most-viewed technical tuto
 - Showed how the Bash tool enables general-purpose computer use
 - Explained the evolution from LLM features to LLM agents
 
-### "Lessons from Building Claude Code: How We Use Skills" (Feb 2026)
+### "Lessons from Building Claude Code: How We Use Skills" (Mar 2026)
 
-A viral article (6M+ views, 15K+ likes on X) detailing:
+A viral article (16K+ likes, 6.8M+ views on X) detailing the **9 role patterns** of Skills and the mechanism design principles:
+
+- [[concepts/claude-code-skills]] — 機序（フォルダ構造・Progressive Disclosure・Hooks・メモリ永続化）と9つの役割パターンへの構造化
 - 9 real-world application scenarios for Skills
 - High-level design principles for modular AI capabilities
 - Common pitfalls and how to avoid them
 - How Skills became the most flexible and shareable AI tooling mechanism at Anthropic
+
+Source: [[raw/articles/2026-03-17_trq212_lessons-building-claude-code-skills.md]]
 
 ### Multiverse (YC W20)
 
@@ -250,3 +254,4 @@ Shihipar's X activity (@trq212) typically covers:
 - thariq-shihipar-the-thing
 - trq212_unreasonable-effectiveness-html
 - simonwillison_unreasonable-effectiveness-html
+- raw/articles/2026-03-17_trq212_lessons-building-claude-code-skills.md

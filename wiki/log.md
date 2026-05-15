@@ -1,4 +1,35 @@
 
+## 2026-05-15 00:20 UTC — Claude Code Skills concept page created from Thariq X Article
+
+**Action**: Saved raw article `raw/articles/2026-03-17_trq212_lessons-building-claude-code-skills.md` (via GetXAPI), created concept page `concepts/claude-code-skills.md`, updated Thariq Shihipar entity page with source reference and cross-link. Updated `index.md` and `log.md`.
+
+**New pages**:
+- `raw/articles/2026-03-17_trq212_lessons-building-claude-code-skills.md` — Thariq Shihipar's \"Lessons from Building Claude Code: How We Use Skills\" X Article (Mar 17, 2026, 16K+ likes, 6.8M+ views). Full body via GetXAPI.
+- `concepts/claude-code-skills.md` — 機序（フォルダ構造・Progressive Disclosure・動的Hooks・メモリ永続化）と9つの役割パターン（Library/API Reference, Product Verification, Data Fetching, Business Process, Code Scaffolding, Code Quality, CI/CD, Runbooks, Infrastructure Operations）。設計原則（Gotchasセクション、ファイルシステムProgressive Disclosure、オンデマンドHooks、配布パターン、マーケットプレイス運用、Skills合成・計測）を含む総合ページ。
+
+**Updated pages**:
+- `entities/thariq-shihipar.md` — Skills記事のraw article source追加、新conceptページへのクロスリンク、月表記修正（Feb→Mar）、エンゲージメント数値更新（15K→16K, 6M→6.8M）
+
+## 2026-05-15 00:06 UTC — Akshay Pachaar entity page updated
+
+**Action**: Updated `entities/akshay-pachaar.md` with current information from his Hermes Agent Masterclass X Article (May 13, 2026) and web research.
+**Changes**:
+- Follower count updated: 187K → 270,693 (X)
+- Role updated: Sr. AI Research Engineer at LightningAI → Co-Founder DailyDoseOfDS, ex-AI Engineer at LightningAI
+- Added Notable Content section: Hermes Agent Masterclass (1.3M impressions, 9,572 bookmarks), DailyDoseOfDS courses/guidebooks, YouTube channel
+- Added wikilinks: [[hermes-agent]], [[concepts/nous-research]], [[concepts/gepa]], [[concepts/harness-engineering]], [[entities/addy-osmani]]
+- Tags updated: [person, educator, blogger, x-account, ai-agents, hermes-agent, content-creator]
+- Sources added: raw article + LinkedIn + DailyDoseOfDS + YouTube + X profile
+- Index updated: `wiki/index.md` — akshay-pachaar entry description updated
+
+## 2026-05-15 00:06 UTC — Create [[entities/nous-research]] entity page
+
+**Action**: Created entity page for Nous Research at `entities/nous-research.md`. Research via web (nousresearch.com, Crunchbase, GitHub) and raw article `raw/articles/2026-05-13_akshaypachaar_hermes-agent-masterclass.md`. Moved stale stub from `concepts/nous-research.md` to `_archive/`. Updated wikilink in `entities/teknium.md` from `[[concepts/nous-research]]` to `[[entities/nous-research]]`.
+
+**Details**: 72-line entity page covering: founding (2023, NYC), founders (Quesnelle, Malhotra, Teknium, Mitra), $65M funding, key projects ([[hermes-agent]], [[gepa]] ICLR 2026 Oral, Skills Hub 687 skills), architecture philosophy. 7 outbound wikilinks.
+
+**Updated**: `wiki/index.md` (added entry), `wiki/entities/teknium.md` (fixed wikilink), `wiki/_archive/nous-research.md` (archived stale stub).
+
 ## 2026-05-14 23:57 UTC — 0xSero「Open Source must win.」Wiki取り込み
 
 **Action**: ユーザーリクエスト（Discord）により @0xSero の X Article「Open Source must win.」(2026-03-20) をwikiに取り込み。
@@ -453,6 +484,16 @@ Evidence strongly supports OpenClaw as orchestrator and Hermes as execution spec
 - `wiki/entities/nvidia-dgx-spark.md` — enriched (added Hermes Agent Integration section, timeline entry)
 - `wiki/concepts/nvidia-rtx-ai-garage.md` — new
 - `wiki/index.md` — updated (added nvidia-rtx-ai-garage concept entry)
+- `wiki/log.md` — updated
+
+## [2026-05-14] wiki | Created concept page for Hermes Agent
+
+### Concepts created
+- `concepts/hermes-agent.md` — Dense reference page (134 lines) covering architecture (single AIAgent class, ReAct loop, 90-turn cap, 6 execution backends, multi-model), identity layer (SOUL.md), three-tier memory (MEMORY.md + USER.md, SQLite FTS5, 8 external providers), self-evolving skills (skill_manage tool, progressive disclosure, creation triggers), the Curator (30-day stale / 90-day archive), GEPA integration, profiles (multi-agent isolation), cron scheduler (plain English), and comparison with OpenClaw. Source: raw/article by [[entities/akshay-pachaar]] (May 13, 2026).
+
+### Files affected
+- `wiki/concepts/hermes-agent.md` — new
+- `wiki/index.md` — updated (added concept entry)
 - `wiki/log.md` — updated
 
 ## [2026-05-14] watchdog | Auto-fix: added missing `title` frontmatter to 3 pages
