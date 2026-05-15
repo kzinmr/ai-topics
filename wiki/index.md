@@ -224,6 +224,7 @@
 - [[entities/gwern]] — **Blog** | gwern.net |
 - [[entities/hailey-schoelkopf]] — Research Scientist at EleutherAI, primary maintainer of the LM Evaluation Harness (lm-eval). Co-author of Pythia (ICML 2023).
 - [[entities/hamel-husain]] — **Role** | Independent Consultant (Parlance Labs), R&D at AnswerAI, Scout at Bain Capital |
+- [[entities/han-lee]] — Han Lee (Hanchung Lee) — Senior Director of Data + AI at Moody's Analytics. Author of "Han, Not Solo" blog. Wrote foundational articles on agent runtime infrastructure, runtime shift, and the isolation primitive stack. Key work: [[raw/articles/2026-04-24_leehanchung_hidden-technical-debt-agent-runtime|Hidden Technical Debt of AI Systems: Agent Runtime]] (Apr 2026), A Taxonomy of RL Environments for LLM Agents.
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM (founded 2022), built on GPT-3.5. Evolved toward agentic personal OS.
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
 - [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawのorchestratorとのACP連携によるdual-agent architectureでexecution specialistとして機能。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
@@ -875,6 +876,7 @@
 - [[concepts/agent-observability]] — AIエージェントの可観測性とフィードバック駆動学習ループ。LangChain CEO Harrison Chaseが提唱する、トレース収集→評価→改善のサイクル。
 - [[concepts/agent-native-product-management]] — AIエージェント（特にClaude Code, Codex）をPM業務の主要インターフェースとして活用する手法
 - [[concepts/agent-orchestration-frameworks]] — Comparative analysis of major AI agent orchestration frameworks as of 2026: LangGraph, CrewAI, AutoGen, Semantic Kernel, Pydantic AI, and OpenAI Agents SDK. Frameworks differ on multi-agent topology (linear DAG vs graph-based vs hierarchical), state management, and human-in-the-loop support.
+- [[concepts/agent-runtime]] — The execution environment where AI agents operate: compute substrate, filesystem, tools, network boundary, state model, lifecycle controller. Covers isolation primitive stack (containers/Firecracker/gVisor/Kata/V8 isolates), sandbox-as-a-service landscape (Modal, E2B, Daytona, etc.), hyperscaler offerings (AWS/Azure/GCP), experimentation-vs-production runtime divergence, runtime shift (new distributional shift), and runtime debt. Source: Han Lee's Hidden Technical Debt of AI Systems: Agent Runtime.
 - [[concepts/agent-sandboxing]]
 - [[concepts/agent-sandboxing-patterns]] — Browser Use's production agent sandboxing architecture (millions of concurrent web agents). Two patterns: isolate the tool (simpler) vs. isolate the agent (control plane architecture with zero-secret sandboxes, scalable independently). Core philosophy: "your agent should have nothing worth stealing and nothing worth preserving."
 - [[concepts/agent-survival-benchmark]]

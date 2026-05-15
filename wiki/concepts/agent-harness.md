@@ -387,6 +387,7 @@ Execution Layer  (containers / sandbox / serverless / Kubernetes)
 
 - [[concepts/harness-engineering]] — The broader discipline of engineering around LLMs
 - [[concepts/deep-agents-runtime]] — Production runtime primitives for deep agents
+- [[concepts/agent-runtime]] — The execution environment where harness + model operate: isolation primitives, sandbox landscape, runtime shift, runtime debt
 - [[concepts/agentic-ai-skills]] — Design principles for reusable agent capabilities
 - [[concepts/bitter-lesson-harnessing]] — How model intelligence affects harness complexity
 - [[concepts/context-engineering]] — Managing what the model sees and when

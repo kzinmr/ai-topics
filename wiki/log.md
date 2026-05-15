@@ -1,5 +1,20 @@
 
 
+## 2026-05-15 01:06 UTC — Agent Runtime concept page + Han Lee entity page created from Harness article
+
+**Action**: Created `concepts/agent-runtime.md` and `entities/han-lee.md` from Han Lee's "Hidden Technical Debt of AI Systems: Agent Runtime" article. Added new tags `agent-runtime` and `technical-debt` to SCHEMA.md.
+
+**New pages**:
+- `concepts/agent-runtime.md` — Comprehensive concept page covering: agent runtime anatomy (6 components), isolation primitive stack (containers/Firecracker/gVisor/Kata/V8 isolates), sandbox-as-a-service landscape (Modal/E2B/Daytona/etc.), hyperscaler offerings (AWS/Azure/GCP), experimentation-vs-production runtime divergence, runtime shift (new distributional shift), and runtime debt. Cross-linked to agent-harness, context-engineering, reduce-offload-isolate, harness-commoditization.
+- `entities/han-lee.md` — Han Lee (Hanchung Lee), Senior Director of Data + AI at Moody's Analytics. Blog "Han, Not Solo." Technical reviewer for Chip Huyen's "AI Engineering." Authored key articles on agent runtime, RL environments taxonomy, and the AI Great Leap Forward.
+
+**Raw article**: `raw/articles/2026-04-24_leehanchung_hidden-technical-debt-agent-runtime.md`
+
+**Updated pages**:
+- `concepts/agent-harness.md` — Added cross-reference to agent-runtime in See Also
+- `wiki/index.md` — Added both new page entries
+- `wiki/SCHEMA.md` — Added `agent-runtime` (AI Agents) and `technical-debt` (Engineering) tags
+
 ## 2026-05-15 00:11 UTC — GEPA concept page rewritten with Hermes Agent integration
 
 **Action**: Rewrote `concepts/gepa.md` to be a comprehensive concept page integrating GEPA's academic foundation (2507.19457, ICLR 2026 Oral) with its Hermes Agent self-evolution pipeline role from the raw masterclass article.
