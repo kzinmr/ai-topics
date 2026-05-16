@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-16 | Total pages: 1901 | Indexed entries: 963 | Not in index: 878 |
+> Last updated: 2026-05-16 | Total pages: 1982 | Indexed entries: 1035 | Not in index: 947 |
 
-## Entities (595 pages)
+## Entities (606 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -609,7 +609,7 @@
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 - [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."
 
-## Concepts (1327 pages)
+## Concepts (1341 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -1006,10 +1006,31 @@
 - [[concepts/differential-symbolic-modules]] — Differential Symbolic Modules: シンボリック計算層と微分可能コンポーネントを組み合わせたハイブリッドアーキテクチャ。
 - [[concepts/direct-prompting-philosophy]] — Direct Prompting Philosophy: 「Just Talk To It」— 複雑なフレームワークより直接プロンプトを優先する哲学。
 - [[concepts/docker-sandbox-microvm-api]] — Docker Sandbox MicroVM API: AIコーディングエージェントを安全に実行するDocker Sandbox API。
+- [[concepts/agent-memory]] — Agent Memory (Redirect)
+- [[concepts/agent-team-swarm]] — Agent Team / Swarm
+- [[concepts/agentic-pbt]] — Agentic Property-Based Testing (Anthropic + Hypothesis)
+- [[concepts/agentic-scaffolding]] — Agentic Scaffolding
+- [[concepts/agentic-sysadmin]] — Agentic Sysadmin Pattern
+- [[concepts/agentic-theory]] — AI Programming as Theory Building
+- [[concepts/agentic-web]] — Agentic Web — 人間向けからエージェント向けへWebのパラダイムシフト
+- [[concepts/agentic-workflow-patterns]] — Agentic Workflow Patterns — 3 Levels, 4 Components, Archi...
+- [[concepts/agents-architecture-scaffolding]] — agents, architecture, scaffolding
+- [[concepts/agents-planning-orchestration]] — agents, planning, orchestration
+- [[concepts/agents-scaffolding-composition-inference-scaling-hypothesis]] — agents, scaffolding, composition, inference-scaling, hypo...
+- [[concepts/agents-self-improvement-learning]] — agents, self-improvement, learning
+- [[concepts/agno]] — agno
+- [[concepts/agreement-is-a-bug]] — Agreement is a Bug
+- [[concepts/ai-addiction-burnout]] — AI Addiction and Burnout Patterns
+- [[concepts/ai-agent-architecture]] — AI Agent Architecture
+- [[concepts/ai-agent-memory]] — AI Agent Memory
+- [[concepts/ai-agent-security]] — AI Agent Security
+- [[concepts/ai-agent-traps]] — AI Agent Traps
+- [[concepts/ai-agents]] — AI Agents
 
 ## Events (3 pages)
-
 - [[events/openai-may-2026-reorg]] — OpenAIの2026年5月製品再編。Greg Brockmanが全製品を統括、ChatGPTとCodexを統合、Thibault Sottiauxがコア製品責任者に。Fidji Simoは病欠。
+- [[events/anthropic-code-w-claude-2026]] — Anthropic Code w/ Claude 2026 — AnthropicがClaude Codeを強化する新製品発表（2026-05-06）
+- [[events/distillation-attacks-2026]] — Anthropic Accuses Chinese Labs of Industrial-Scale Distillation Attacks（2026-04-24）
 
 ## Comparisons (17 pages)
 

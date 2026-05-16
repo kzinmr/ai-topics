@@ -1,3 +1,27 @@
+## 2026-05-16 17:50 — Health fix: index registration + header correction
+
+### Index Registration
+- Added 20 concept pages to index.md: agent-memory through ai-agents (alphabetical)
+- Added 2 event pages to index.md: anthropic-code-w-claude-2026, distillation-attacks-2026
+
+### Header Correction
+- Total pages: 1901 → 1982 (actual filesystem count)
+- Indexed entries: 963 → 1035
+- Entities: 595 → 606
+- Concepts: 1327 → 1341
+- Index entries per section: entities=600, concepts=413, comparisons=18, events=3, queries=1
+
+### Auto-fix scope
+- 1 file modified: `wiki/index.md`
+
+### Known issues (not auto-fixed)
+- 947 files still not in index (gap too large for auto-apply limit of 20)
+- 938 orphan pages (0 inbound wikilinks) — requires human review
+- 150+ stale pages (32-37 days)
+- 4 entity duplicates confirmed: deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, lilian-weng/lilianweng, samuel-colvin/samuelcolvin
+
+---
+
 ## 2026-05-16 17:35 — Watchdog auto-fix: index dedup + header correction
 
 ### Index Dedup
