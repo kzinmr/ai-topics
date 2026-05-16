@@ -58,6 +58,7 @@
 - [[entities/seth-karten]] — Seth Karten — CS PhD at Princeton, creator of PokeChamp/PokeAgent, lead author of Continual Harness framework.
 - [[entities/sierra]] — Sierra — AI customer service platform ($15B valuation, $200M+ ARR). Enterprise conversational AI agents; τ-Knowledge benchmark for knowledge-grounded agent evaluation.
 - [[entities/tambo]] — Tambo (tambo.co) — オープンソースGenerative UIツールキットfor React。AIエージェントが既存コンポーネントで応答
+- [[entities/thibault-sottiaux]] — OpenAI executive. Led Codex development; May 2026 promoted to lead core product and platform teams (ChatGPT + Codex + API). Overseeing "super app" development.
 - [[entities/tobi-lutke]] — Tobi Lutke — Shopify CEO. Revealed River: internal Slack-native AI coding agent built on apprenticeship model. Self-taught programmer, dropped out at 16.
 - [[entities/0xjeff]] — 0xJeff — Crypto/DeFi analyst and Hermes Agent power user. 8 years PE/VC/IB. Known for documenting Hermes as personal analyst pipeline.
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
@@ -167,7 +168,8 @@
 - [[entities/dspy]] — DSPy (Declare + Optimize) is an open-source framework developed by Stanford's NLP group for building systems that use large language models. Instead of writing hand-crafted prompts, developers decl...
 - [[entities/dwarkesh-patel]] — **Born** | August 19, 2000, United States |
 - [[entities/dylan-patel]] — **Role** | Founder, CEO, and Chief Analyst at SemiAnalysis |
-- [[entities/dynomight-net]] — **URL:** https://dynomight.net
+- [[entities/eric-jang]] — Former VP of AI at 1X Technologies, Google Brain researcher. Reinforcement learning and robotics expert. AlphaGo analysis, automated AI research.
+- [[entities/eric-hartford]] — **X** | @QuixiAI |
 - [[entities/ed-zitron]] — Ed Zitron — Tech columnist and AI industry critic. Author of Where's Your Ed At (~80K subscribers). Argues the AI economy is a circular dependency where 95%+ of compute demand flows through unprofitable OpenAI and Anthropic.
 - [[entities/eleutherai]] — Grassroots research collective that started the modern open-source AI movement. Creators of GPT-Neo, Pythia, and the LM Evaluation Harness.
 - [[entities/eli-thegreenplace-net]] — **URL:** https://eli.thegreenplace.net
@@ -181,6 +183,7 @@
 - [[entities/entire]] — Entire — AI agent observability & search infrastructure. Captures agent traces (checkpoints). Creator of pgr (agent-oriented code search). Published landmark agentic search benchmark study.
 - [[entities/entropicthoughts-com]] — **URL:** https://entropicthoughts.com (formerly two-wrongs.com)
 - [[entities/eric-hartford]] — **X** | @QuixiAI |
+- [[entities/eric-jang]] — Former VP of AI at 1X Technologies, Google Brain researcher. Reinforcement learning and robotics expert. AlphaGo analysis, automated AI research.
 - [[entities/eric-zhang]] — Systems hacker and designer. Creator of bore, sshx, rustpad, and Percival. Former founding engineer at Modal, now at Thinking Machines Lab.
 - [[entities/ericmigi]] — **URL:** https://ericmigi.com
 - [[entities/ethan-mollick]] — **URL:** https://www.oneusefulthing.org
@@ -191,6 +194,7 @@
 - [[entities/fabiensanglard-net]] — **Blog** | fabiensanglard.net |
 - [[entities/farhan-thawar]] — Farhan Thawar is a technology writer and commentator known for viral takes on AI industry trends.
 - [[entities/fei-fei-li]] — **フルネーム** | Fei-Fei Li（李飞飞） |
+- [[entities/fidji-simo]] — CEO, OpenAI AGI Deployment (May 2026: medical leave); ex-AppLovin CEO, Meta VP. Key figure in OpenAI's product reorganization.
 - [[entities/fernando-borretti]] — **URL:** https://borretti.me
 - [[entities/figma]] — FigmaはClaude Designの登場により、**SaaS AI時代の脆弱性を示すケーススタディ**となっている。
 - [[entities/filfre-net]] — **Blog** | filfre.net (The Digital Antiquarian) |
@@ -343,6 +347,7 @@
 - [[entities/mit-ibm-computing-research-lab]] — Joint MIT-IBM research lab (Apr 2026) exploring convergence of AI, algorithms, and quantum computing. Successor to MIT-IBM Watson AI Lab.
 - [[entities/oldvcr-blogspot-com]] — **Cameron Kaiser** (blogging as **ClassicHasClass**) is a vintage computing researcher, software engineer, and open-source developer based at concepts/floodgap-systems. He runs the blog **Old Vinta...
 - [[entities/omar-khattab]] — **Position:** Assistant Professor, MIT EECS (TIBCO Founders' Career Development Professor)
+- [[entities/omri-weinstein]] — Co-founder & CEO, Pearl Research Labs. Creator of Pearl Network (Proof of Useful Work protocol). Together AI partnership for AI inference cost reduction.
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml programmer and technology writer.
 - [[entities/openai-cua]] — OpenAIの**CUA（Computer-Using Agent）**モデルは、GPT-4oのビジョン機能と強化学習を組み合わせて、スクリーンショットを見てGUIを操作するエージェント。2025年1月に「Operator」として公開され、2025年7月にChatGPTエージェントに完全統合された。
 - [[entities/openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
@@ -639,6 +644,7 @@
 - [[concepts/agents-that-build-themselves]] — Agents That Build Themselves（自己拡張エージェント） — エージェントが自身のツールを書き、ホットリロードで即座に実行するパラダイム。Hugo Bowne-Anderson + Ivan Leo の2026年2月ワークショップで体系化。Factory pattern + hot reload + hooks + markdown memory compaction。 [[raw/articles/2026-02-28_substack_agents-that-build-themselves]]
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
 - [[concepts/ai-autonomy-debate]] — AI Autonomy Debate
+- [[concepts/ai-bubble]] — The AI Bubble thesis: speculative investment disconnected from fundamentals. Circular revenue dependencies (OpenAI-hyperscaler), unrealistic projections, infrastructure misalignment. Ed Zitron's primary chronicler role.
 - [[concepts/ai-bubble-economics]] — AI Bubble Economics
 - [[concepts/ai-coding-reliability]] — AI Coding Reliability
 - [[concepts/ai-coding-cost-optimization]] — AI Coding Cost Optimization (Ronin's Complete System) — $4,200→$312/month through context discipline, multi-model routing, prompt caching, and 7 practical techniques. Router config, benchmarks, 30-day rollout plan.
@@ -725,6 +731,7 @@
 - [[concepts/open-swe]] — Open SWE: LangChainのオープンソース社内コーディングエージェントフレームワーク。Deep Agents + LangGraphベース。Stripe Minions/Ramp Inspect/Coinbase Cloudbotの収束アーキテクチャをMITライセンスで実装。AGENTS.md、サンドボックス、Slack/Linear/GitHub統合。
 - [[concepts/openai-o-series-gpt5-unification]] — OpenAI o1/o3→GPT-5統合 (2024-2025): o1 (Sep 2024)→o3発表 (Dec 2024)→Altmanロードマップ転換でo3キャンセル (Feb 2025)→GPT-5にThinkingモードとして吸収 (Aug 2025)。3コンポーネント統合アーキテクチャ（Main+Thinking+Router）。
 - [[concepts/organizational-moat]] — 組織モート: Jaya Gupta (Foundation Capital) が提唱。AI時代において製品・コード・カテゴリはすべて模倣可能であり、会社の「形」（採用・権力分配・ステータス階層）だけが最後の競争優位になると主張。5つの構造的検証テスト。3.2M views。
+- [[concepts/proof-of-useful-work]] — Proof of Useful Work (PoUW): blockchain consensus using AI inference instead of hash puzzles. Pearl Network + Together AI partnership (May 2026).
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information（予測的V-情報）：観測者の計算制約を考慮したShannon情報理論の変分拡張。DPI違反、高次元でのPAC推定保証、構造学習・公平表現学習への応用（Xu et al., ICLR 2020）。
 - [[concepts/probabilistic-engineering]] — 確率的エンジニアリング: Tim Davis (Modular) が提唱。AIエージェントによるコード生成が支配的になる中、コードベースの正当性が「知っている」から「信じている」に変わるパラダイムシフト。生成は安価だが検証は高価。24-7従業員、役割分裂、Jevonsの逆説のコード応用を含む。
 - [[concepts/openrlhf]] — OpenRLHF: 最も初期のOSS RLHFライブラリの一つ。DeepSpeedベース、報酬モデルサポート充実。非同期訓練対応（--async_train）。
@@ -994,7 +1001,9 @@
 - [[concepts/direct-prompting-philosophy]] — Direct Prompting Philosophy: 「Just Talk To It」— 複雑なフレームワークより直接プロンプトを優先する哲学。
 - [[concepts/docker-sandbox-microvm-api]] — Docker Sandbox MicroVM API: AIコーディングエージェントを安全に実行するDocker Sandbox API。
 
-## Events (2 pages)
+## Events (3 pages)
+
+- [[events/openai-may-2026-reorg]] — OpenAIの2026年5月製品再編。Greg Brockmanが全製品を統括、ChatGPTとCodexを統合、Thibault Sottiauxがコア製品責任者に。Fidji Simoは病欠。
 
 ## Comparisons (17 pages)
 

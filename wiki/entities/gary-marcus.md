@@ -54,6 +54,15 @@ A central theme in Marcus's work is that **reliability matters more than raw cap
 
 Marcus has long advocated for combining neural networks with symbolic reasoning systems. He argues that pure deep learning lacks the compositional structure needed for robust reasoning.
 
+### US AI Policy Framework (May 2026)
+
+In May 2026, Marcus co-authored an essay in **Fortune** with Jeffrey Sonnenfeld and Stephen Henriques critiquing the current state of US AI policy:
+
+- **1,200 AI bills** introduced across US states (~150 enacted), but **no coherent national AI policy**
+- Proposed a **framework** "to ensure that the questions before state legislators, members of Congress, and federal agencies are the right questions, asked in the right order"
+- Warned against a "patchwork" of poorly coordinated legislation that "no one designed and few defend"
+- The essay aimed to provide structure rather than favor specific bills
+
 ## Key Works
 
 ### Newsletter: Marcus on AI

@@ -1,3 +1,68 @@
+## 2026-05-16 07:00 — Blog ingest (34 new articles, 7 new pages, 3 enriched)
+
+### AI/LLM Articles Processed
+
+**1. OpenAI May 2026 Product Reorganization (Wired)**
+- **Raw article saved**: `raw/articles/wired.com--story-openai-reorg-greg-brockman-product--16e3b9d6.md`
+- **New event page**: `events/openai-may-2026-reorg.md` — Complete page covering ChatGPT+Codex merger, "super app" strategy, leadership changes
+- **Enriched**: `entities/greg-brockman.md` — Added May 2026 Product Reorganization section
+- **Enriched**: `entities/gary-marcus.md` — Added May 2026 US AI Policy Framework section (Fortune essay)
+
+**2. Eric Jang on AlphaGo (Dwarkesh Podcast)**
+- **Raw article saved**: `raw/articles/dwarkesh.com--p-eric-jang--44c9439c.md`
+- **New entity page**: `entities/eric-jang.md` — Former VP of AI at 1X Technologies, Google Brain researcher. Covers MCTS vs RL, automated AI research, robotics
+
+**3. Together AI + Pearl Research Labs (PoUW)**
+- **Raw article saved**: `raw/articles/together.ai--blog-together-ai-partners-with-pearl-research-labs--8b21a91f.md`
+- **New concept page**: `concepts/proof-of-useful-work.md` — Blockchain consensus using AI inference instead of hash puzzles
+- **New entity page**: `entities/omri-weinstein.md` — Pearl Research Labs co-founder & CEO
+
+**4. AI Bubble Analysis (Where's Your Ed At)**
+- **Raw article saved**: `raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-1--6e9bc8ba.md`
+- **New concept page**: `concepts/ai-bubble.md` — The AI Bubble debate (Zitron vs Patel), circular revenue dependencies, May 2026 context
+
+**5. datasette-llm-limits (Simon Willison)**
+- **Raw article saved**: `raw/articles/simonwillison.net--2026-may-15-datasette-llm-limits--c4c541c4.md`
+- **New entity page**: `entities/datasette-llm-limits.md` — Datasette plugin for LLM spending limits and cost tracking
+
+### Entity Pages Created
+- `entities/fidji-simo.md` — OpenAI CEO AGI Deployment, ex-AppLovin CEO
+- `entities/thibault-sottiaux.md` — OpenAI Head of Core Product + Platform
+- `entities/eric-jang.md` — 1X Technologies VP AI, Google Brain
+- `entities/omri-weinstein.md` — Pearl Research Labs CEO
+- `entities/datasette-llm-limits.md` — Simon Willison's Datasette plugin
+
+### Concept Pages Created
+- `concepts/proof-of-useful-work.md` — PoUW blockchain consensus
+- `concepts/ai-bubble.md` — AI Bubble debate (2025–2026)
+
+### Event Pages Created
+- `events/openai-may-2026-reorg.md` — OpenAI product consolidation
+
+### Index Changes
+- Added 7 new entity entries (eric-jang, fidji-simo, thibault-sottiaux, omri-weinstein, datasette-llm-limits)
+- Added 2 new concept entries (proof-of-useful-work, ai-bubble)
+- Added 1 new event entry (openai-may-2026-reorg)
+- Updated concept count: 1323→1325, event count: 2→3, entity count: 591→596, total pages: 1893→1900
+
+### Other Articles Saved (not wiki-processed)
+- `raw/articles/nesbitt.io--2026-05-15-language-registries-are-unstable-by-default-html--e4c19a2c.md` — Language registries instability
+- `raw/articles/maurycyz.com--misc-search--6b5086f1.md` — Search engine quality critique
+- `raw/articles/devblogs.microsoft.com--oldnewthing-20260515-00--cd3fbf93.md` — Windows CreateFileMapping debugging
+- `raw/articles/daringfireball.net--thetalkshow-2026-05-15-ep-447--fbb37638.md` — The Talk Show podcast
+- `raw/articles/dropoverapp.com----3f92450c.md` — Mac shelf utility app
+- `raw/articles/aluminium-os.com----daa0c921.md` — Google PC OS
+- `raw/articles/dfarq.homeip.net--processor-technology-corporation-and-the-sol-20--b9ebf890.md` — Retro computing
+- `raw/articles/pluralistic.net--2026-05-15-not-ok-boomer--f0a121dc.md` — Cory Doctorow gerontocracy critique
+- `raw/articles/johndcook.com--blog-2026-05-15-xorshift128-state--6f20c18e.md` — xorshift128 RNG
+- `raw/articles/simonwillison.net--2026-may-15-qr-code-generator--16a8fee0.md` — QR code tool
+- `raw/articles/simonwillison.net--2026-may-15-sighting-361818285--22492976.md` — Bird sighting
+
+### Unsaved Articles
+- `https://simonwillison.net/2026/May/15/inaturalist-clumper/#atom-everything` — iNaturalist clumper tool
+- `https://openai.com/index/personal-finance-chatgpt` — ChatGPT personal finance
+- `https://www.youtube.com/watch?v=eBKWKu2Rqxc` — YouTube video (CBS property)
+
 ## 2026-05-15 23:30 — X bookmarks ingest (3 bookmarks, 1 new page, 3 enriched)
 
 ### Bookmark 1: AI Edge "/goal - Ultimate Guide" (X Article)
