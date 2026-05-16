@@ -1,3 +1,26 @@
+## 2026-05-16 17:35 — Watchdog auto-fix: index dedup + header correction
+
+### Index Dedup
+- Removed duplicate `[[entities/eric-jang]]` entry (line 187)
+- Removed duplicate `[[entities/eric-hartford]]` entry (line 186)
+
+### Index Header Update
+- Indexed entries: 965 → 963
+- Not in index: 876 → 878
+
+### Auto-fix scope
+- 1 file modified: `wiki/index.md`
+- 0 new pages created, 0 pages deleted
+
+### Issues not auto-fixed
+- 4 entity duplicates confirmed (need human review for merge): deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, lilian-weng/lilianweng, samuel-colvin/samuelcolvin
+- 878 files not in index (index-to-filesystem gap) — requires batch reconciliation strategy
+- 938 orphan pages (0 inbound wikilinks) — requires human review
+- ~150 stale pages (32-37 days since last update)
+- 2 unindexed event files (distillation-attacks-2026, anthropic-code-w-claude-2026)
+
+---
+
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.

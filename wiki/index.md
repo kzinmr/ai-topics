@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-16 | Total pages: 1901 | Indexed entries: 965 | Not in index: 876 |
+> Last updated: 2026-05-16 | Total pages: 1901 | Indexed entries: 963 | Not in index: 878 |
 
 ## Entities (595 pages)
 
@@ -183,8 +183,6 @@
 - [[entities/encodec]] — **EnCodec** | Meta's production-standard neural audio codec. 24/48 kHz, 1.5–24 kbps, streaming, with Transformer entropy coding. De facto standard for codec-style tokenizers.
 - [[entities/entire]] — Entire — AI agent observability & search infrastructure. Captures agent traces (checkpoints). Creator of pgr (agent-oriented code search). Published landmark agentic search benchmark study.
 - [[entities/entropicthoughts-com]] — **URL:** https://entropicthoughts.com (formerly two-wrongs.com)
-- [[entities/eric-hartford]] — **X** | @QuixiAI |
-- [[entities/eric-jang]] — Former VP of AI at 1X Technologies, Google Brain researcher. Reinforcement learning and robotics expert. AlphaGo analysis, automated AI research.
 - [[entities/eric-zhang]] — Systems hacker and designer. Creator of bore, sshx, rustpad, and Percival. Former founding engineer at Modal, now at Thinking Machines Lab.
 - [[entities/ericmigi]] — **URL:** https://ericmigi.com
 - [[entities/ethan-mollick]] — **URL:** https://www.oneusefulthing.org
