@@ -1,3 +1,7 @@
+# Wiki Log
+
+> Chronological record of all wiki actions. Append-only.
+
 ## 2026-05-16 07:50 — Blog wiki ingest (no-op: all 17 articles already processed at 07:00)
 
 - All 17 blog candidates already captured by the 07:00 UTC blog-wiki-ingest run
@@ -6,6 +10,40 @@
 
 
 ---
+## 2026-05-16 11:00 — Active crawl (5 topics: SubQ, Baidu Ernie 5.1, IBM Think, DeployCo, ZAYA1-8B)
+
+### Raw Articles Saved
+- `raw/articles/whatllm.org--new-ai-models-may-2026-subq-subquadratic--2026-05-16.md`
+- `raw/articles/the-decoder.com--baidu-ernie-5-1-94-percent-cost-reduction--2026-05-16.md`
+- `raw/articles/ibm.com--think-2026-ai-operating-model-agent-orchestration--2026-05-16.md`
+- `raw/articles/openai.com--launches-deployment-company-deployco--2026-05-16.md`
+- `raw/articles/zyphra.com--zaya1-8b-moe-amd-reasoning--2026-05-16.md`
+
+### Pages Created (8)
+- **entities/subquadratic.md** — Subquadratic (SubQ): first commercial subquadratic LLM, 12M context, $29M seed
+- **entities/baidu.md** — Baidu (Ernie 5.1): 94% pre-training cost reduction via Once-For-All elastic training
+- **entities/ibm.md** — IBM (Think 2026): watsonx Orchestrate agentic control plane, IBM Bob, AI Operating Model
+- **entities/openai-deployment-company.md** — DeployCo: $4B OpenAI enterprise deployment JV, 19 investors, Tomoro acquisition
+- **concepts/subquadratic-attention.md** — Subquadratic attention: O(n²) alternatives, Mamba/RWKV/Hyena/SubQ comparison
+- **concepts/elastic-training.md** — Once-For-All elastic training: single-run multi-model optimization
+- **concepts/agent-orchestration.md** — Agent orchestration: governing thousands of agents at enterprise scale
+- **concepts/zaya1-8b.md** — ZAYA1-8B: 760M active MoE, AMD-trained, competitive with DeepSeek-R1/Gemini-2.5-Pro
+
+### Pages Updated (1)
+- **entities/zyphra.md** — Updated with ZAYA1-8B source, bumped date
+
+### Index Changes
+- Updated header counts (1893→1901 total, 591→595 entities, 1323→1327 concepts)
+
+### Sources
+- WhatLLM.org: New AI Models May 2026 (SubQ, ZAYA1-8B, GPT-5.5 Instant, Grok 4.3, Gemini 3.1 Flash Lite)
+- The Decoder: Baidu Ernie 5.1 94% cost reduction
+- IBM Newsroom: Think 2026 AI Operating Model
+- OpenAI Blog: DeployCo launch
+- Zyphra PR Newswire + arXiv 2605.05365: ZAYA1-8B technical report
+
+---
+
 
 ## 2026-05-16 07:40 — Newsletter wiki ingest (Codex mobile, Apple dispute, Cerebras IPO)
 

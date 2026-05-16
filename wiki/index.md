@@ -2,15 +2,16 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-16 | Total pages: 1893 | Indexed entries: 957 | Not in index: 876 |
+> Last updated: 2026-05-16 | Total pages: 1901 | Indexed entries: 965 | Not in index: 876 |
 
-## Entities (591 pages)
+## Entities (595 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
 - [[entities/agreement-bug]] — Agreement is a Bug
 - [[entities/akool]] — AKOOL — AI video generation suite. 10-20× faster real-time video inference engine, sub-30ms per frame latency. Palo Alto.
 - [[entities/autoreason]] — Autoreason
+- [[entities/baidu]] — Baidu (Ernie) — Ernie 5.1: 94% pre-training cost reduction via Once-For-All elastic training. 4th Search Arena. Closed weights. May 2026.
 - [[entities/buildy]] — Buildy (buildy.so) — AIエージェントが構築・永続化するパーソナルWebアプリプラットフォーム
 - [[entities/claude-perfect-memory]] — Claude Perfect Memory
 - [[entities/company-ai-pilled]] — Company AI Pilled
@@ -246,6 +247,7 @@
 - [[entities/idiallo-com]] — **Ibrahim Diallo** (idiallo.com) — Software developer and technical writer known for reflective writing on AI-assisted workflows, LLM-assisted writing challenges, and the tension between AI efficiency and authentic human voice.
 - [[entities/iii-platform]] — Open-source backend engine that collapses distributed infrastructure into three primitives: Function, Trigger, Worker. Core thesis: the agent harness should BE the backend.
 - [[entities/ilya-sutskever]] — **Full Name** | Ilya Sutskever
+- [[entities/ibm]] — IBM (AI / watsonx) — Think 2026: watsonx Orchestrate agentic control plane, IBM Bob agentic dev partner, AI Operating Model (Agents/Data/Automation/Hybrid). Enterprise multi-agent governance.
 - [[entities/ibm-granite-embedding]] — IBM's dense embedding models (311M params, 32K context, ModernBERT architecture). Matryoshka Representation Learning support. Apache 2.0. 200+ languages, 9 programming languages.
 - [[entities/ibm-watsonx-orchestrate]] — IBM's multi-agent "agentic control plane" for enterprise — unified governance, policy enforcement, auditability across thousands of agents. Announced Think 2026.
 - [[entities/inclusionai]] — AI company developing agent-optimized LLMs. Flagship model: Ring-2.6-1T (1T MoE, 63B active). Free on OpenRouter for coding agents, tool use, long-horizon tasks.
@@ -353,6 +355,7 @@
 - [[entities/openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
 - [[entities/openai-codex]] — OpenAIのAIコーディングエージェント。CLIベースの完全OSS。モデルはgpt-5.3-codex。自律実行、コンパクション、Windows対応。プロンプト設計は[[concepts/codex-prompting]]参照。
 - [[entities/openai]] — **Type** | AI Research & Product Company |
+- [[entities/openai-deployment-company]] — OpenAI Deployment Company (DeployCo) — $4B enterprise AI deployment JV. Majority OpenAI-owned. 19 global investors including TPG, Bain Capital, Goldman Sachs, McKinsey. Acquired Tomoro (~150 FDEs). Launched May 2026.
 - [[entities/openclaw]] — Open-source always-on AI agent framework created by **Peter Steinberger**。Gateway-first architectureでmulti-agent routing、ACP sub-agent spawning、cron/webhook schedulingを備え、orchestratorとしてHermes Agent等のexecution specialistを統括。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
 - [[entities/opencode]] — 最も人気のあるオープンソースAIコーディングエージェント。155K GitHub Stars、MITライセンス、850+コントリビューター。75+ LLMプロバイダ対応、マルチサーフェス（TUI/Desktop/IDE）。Plan/Build/Generalの3エージェント、LSP統合、GitHubネイティブ統合。
 - [[entities/openrouter]] — Unified API gateway for 300+ LLMs from multiple providers. Published the State of AI 2025 study analyzing 100T tokens of real-world LLM usage.
@@ -426,6 +429,7 @@
 - [[entities/stefano-marinelli]] — **Blog:** it-notes.dragas.net — "Scattered IT Notes"
 - [[entities/stella-biderman]] — Executive Director of EleutherAI. Mathematician and AI researcher leading open-source AI. Co-author of Pythia, GPT-Neo, BLOOM.
 - [[entities/steve-blank]] — **Blog** | steveblank.com |
+- [[entities/subquadratic]] — Subquadratic (SubQ) — First commercial subquadratic LLM, 12M context, $29M seed. Sparse subquadratic attention, not a standard transformer. May 2026.
 - [[entities/substack]] — Substackプラットフォーム。ドメイン別AI記事
 - [[entities/stochi]] — Independent AI researcher focused on post-training, agents, RL, model architectures. Author of the [[concepts/sparse-signal-loop]] experiment. Previously shipped AI at QX Labs and Unsiloed AI (YC F25).
 - [[entities/susam-net]] — **Blog** | susam.net |
@@ -607,7 +611,7 @@
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 - [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."
 
-## Concepts (1323 pages)
+## Concepts (1327 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -695,6 +699,7 @@
 - [[concepts/dspy-tutorial]] — Hands-on DSPy getting started tutorial (Maxime Rivest): Signature → gold set → MIPROv2 optimization in ~50 lines yielding 20% precision improvement
 - [[concepts/ds4-dwarfstar-4]] — DS4 (DwarfStar 4): antirezのローカルAI推論プロジェクト。DeepSeek V4 Flashを2/8bit非対称量子化で96-128GB Macに搭載。分散推論・コーディングエージェント統合を計画。初めてローカルモデルを本格作業に使用。
 - [[concepts/embeddings]] — Dense vector representations encoding entities as coordinates. Triples training (anchor/similar/dissimilar), dot product + sigmoid + contrastive loss, Two-Tower architecture for cold-start, transformer sentence embeddings (BERT CLS). Doug Turnbull's Maven course module.
+- [[concepts/elastic-training]] — Elastic Training (Once-For-All) — Optimize entire model family in single training run. Baidu's Ernie 5.1 achieved 94% pre-training cost reduction. Varies depth, width, sparsity simultaneously. Industry implications for training economics.
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/gepa]] — GEPA (Genetic-Pareto Prompt Evolution): reflective prompt optimizer using execution traces + evolutionary search. 35× fewer rollouts than GRPO, ICLR 2026 Oral. Offline skill optimization pipeline for Hermes Agent via NousResearch/hermes-agent-self-evolution.
 - [[concepts/gliclass]] — GLiClass
@@ -883,6 +888,7 @@
 - [[concepts/speed-vs-legitimacy-in-ai-institutions]] — Core tension: fast institutions (AI labs, tech) move at tech speed but lack trust; slow institutions (regulators, courts) have legitimacy but can't keep pace. Two-tier civilization risk. Historical parallel: late medieval Church vs new money/press/science.
 - [[concepts/ssm-mamba]] — SSM / Mamba — State Space Models for Sequence Modeling
 - [[concepts/state-of-agentic-coding]] — Monthly podcast by Armin Ronacher & Ben Vinegar (5 episodes, Dec 2025–Apr 2026). Covers model dynamics, context management, slop forks, quality crisis, meta-agentic programming.
+- [[concepts/subquadratic-attention]] — Subquadratic Attention — Attention mechanisms scaling sub-quadratically (better than O(n²)). Mamba, RWKV, Hyena, and SubQ's first commercial attempt (12M context, $29M seed). Open questions about frontier-scale quality.
 - [[concepts/swe-bench-agent-scaffolding]] — Claude 3.5 SonnetがSWE-bench Verified 49%達成時のエージェント設計。哲学は「可能な限りモデルに制御を委ね、scaffoldingを最小限に」。Bash Tool + Edit Tool + 最小限プロンプト。同一モデル×scaffolding最適化の重要性を実証。
 - [[concepts/tool-use-tax]] — Performance degradation in LLM agents caused by tool-calling protocol overhead. In noisy environments, native CoT can outperform tool-augmented reasoning. G-STEP partial mitigation.
 - [[concepts/tau-bench]] — τ-bench: Sierra AI ResearchのAIエージェント評価ベンチマークスイート。複数ターン対話・ドメインポリシー遵守・pass^k信頼性の3軸で評価。τ-bench（2024/航空・小売）→τ²-bench（2025/Telecomデュアルコントロール）→τ³-Bench（2026/τ-Knowledge+τ-Voice）へ進化。GPT-4o<50%、pass^8<25%、音声エージェント26-38%の現実を定量化。業界標準のデファクト評価基盤。
@@ -908,6 +914,7 @@
 - [[concepts/agent-loop-orchestration]]
 - [[concepts/agent-observability]] — AIエージェントの可観測性とフィードバック駆動学習ループ。LangChain CEO Harrison Chaseが提唱する、トレース収集→評価→改善のサイクル。
 - [[concepts/agent-native-product-management]] — AIエージェント（特にClaude Code, Codex）をPM業務の主要インターフェースとして活用する手法
+- [[concepts/agent-orchestration]] — Agent Orchestration — Coordinating and governing multiple AI agents at enterprise scale. IBM watsonx Orchestrate as agentic control plane. Shift from building agents to governing thousands across platforms. Policy enforcement, auditability, interoperability.
 - [[concepts/agent-orchestration-frameworks]] — Comparative analysis of major AI agent orchestration frameworks as of 2026: LangGraph, CrewAI, AutoGen, Semantic Kernel, Pydantic AI, and OpenAI Agents SDK. Frameworks differ on multi-agent topology (linear DAG vs graph-based vs hierarchical), state management, and human-in-the-loop support.
 - [[concepts/agent-runtime]] — The execution environment where AI agents operate: dual perspective covering **infrastructure substrate** (compute, filesystem, sandboxing, isolation primitives) and **execution semantics** (lifecycle management, tool mediation, state continuity, scheduling, events, safety, observability — the control system that makes agents persistent execution entities). Covers isolation primitive stack, sandbox-as-a-service landscape, hyperscaler offerings, runtime shift, runtime debt, 5-layer agent stack, historical arc (Framework→Workflow→Runtime), **control flow ownership shift** (why runtime-centric now), structural inversion (graph primary vs loop primary), what dies/survives in agent infrastructure, and the Model↔Runtime separation. Sources: Han Lee's Hidden Technical Debt, kzinmr's 3-part analysis (2026-05-15).
 - [[concepts/agent-sandboxing]]
@@ -934,6 +941,7 @@
 - [[concepts/techno-pessimism]] — Skepticism that technology alone can resolve fundamental human problems. Curtis Yarvin's counter to Yudkowsky: "maybe you can't make a religion out of ai." Governance before transcendence; technology as amplifier, not solver.
 - [[concepts/zaya1-vl-8b]] — Zyphra's first VLM (MoE, 700M active / 8B total). Vision-specific LoRA + bidirectional image attention. SOTA for size, trained on AMD, Apache 2.0.
 - [[concepts/zaya1-74b-preview]] — Zyphra MoE reasoning-base LLM (4B active / 74B total). Not chat-tuned. Mamba/CCA hybrid, AMD-trained, Apache 2.0 preview.
+- [[concepts/zaya1-8b]] — Zyphra MoE reasoning model (760M active / 8.4B total). AMD-trained end-to-end. Competitive with DeepSeek-R1, Gemini-2.5-Pro. Markovian-RSA test-time compute. Apache 2.0. May 2026.
 - [[concepts/zombie-internet]] — Zombie Internet: AI-contaminated web where humans and bots coexist in complex interaction patterns, causing cognitive overload and writing style distortion. Coined by Jason Koebler, highlighted by Simon Willison (May 2026).
 - [[concepts/advanced-tool-use]] — Advanced Tool Use
 - [[concepts/agent-skills]] — Agent Skills
