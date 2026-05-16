@@ -3,7 +3,7 @@ title: OpenAI Codex (AI coding agent)
 type: entity
 aliases: [codex-cli, openai-codex, codex-agent]
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-16
 status: L3
 tags:
   - entity
@@ -21,6 +21,7 @@ sources:
   - https://openai.com/index/introducing-codex/
   - raw/articles/simonwillison.net--2026-apr-28-openai-codex--558b4b74.md
   - raw/articles/2026-04-30_codex-cli-0-128-0-goal.md
+  - raw/articles/openai.com--index-work-with-codex-from-anywhere--2026-05-16.md
   - raw/concepts/openai-codex-superapp.md
 related:
   - "[[concepts/openai-codex-superapp]]"
@@ -69,6 +70,18 @@ related:
 - **Thread automations** — Scheduled wake-up of same thread preserving context
 - **Handoff** — Transfer context between CLI and desktop
 - **Computer use** — Operate macOS apps by seeing, clicking, typing
+
+### Mobile Launch (May 2026)
+
+Codex launched in the **ChatGPT mobile app** (preview, May 14, 2026), making it the first major coding agent available on both iOS and Android. The mobile app connects to machines where Codex is running — laptops, devboxes, or managed remote environments — and loads their live state for fluid cross-device work.
+
+- **Secure relay layer**: Keeps trusted machines reachable across devices without exposing them to the public internet. Active session state and context sync anywhere signed in with ChatGPT.
+- **4M+ weekly active users** (WAU) milestone confirmed with launch.
+- **Full feature parity on mobile**: Work across all threads, review outputs, approve commands, change models, start new work. Files, credentials, and permissions stay on the host machine; updates (screenshots, terminal output, diffs, test results) flow back in real-time.
+- **Enterprise environments**: Connects to managed remote environments with approved dependencies, credentials, and compliance controls.
+- **Key use cases**: Bug investigation from phone, decision-making mid-commute, customer conversation preparation, capturing new ideas as they arise.
+
+> Source: [Work with Codex from anywhere](https://openai.com/index/work-with-codex-from-anywhere/) (OpenAI Blog, May 14, 2026)
 
 ### Multi-Agent Features
 - **Sub-agents** — Parallel worktrees for weeks of work in days

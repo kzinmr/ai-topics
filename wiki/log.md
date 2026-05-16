@@ -1,3 +1,26 @@
+## 2026-05-16 07:40 — Newsletter wiki ingest (Codex mobile, Apple dispute, Cerebras IPO)
+
+### Pages Updated
+- **entities/codex.md** — Mobile Launch (May 2026) section: ChatGPT mobile app preview, 4M WAU, secure relay layer, enterprise support
+- **entities/openai.md** — Apple Partnership Dispute section (legal action over Siri deal); TanStack section enhanced with TechCrunch details (84 packages, 6-min window, self-propagation)
+- **entities/cerebras-systems.md** — IPO outcome ($280/share, $60B market cap, 2x+ expected); OpenAI 5.4/5.5 on Cerebras; TSMC wafer constraints through 2028
+- **entities/anthropic.md** — Gates Foundation $200M/4yr partnership reference
+- **concepts/openai-tanstack-supply-chain-2026.md** — Enhanced with TechCrunch attack details (84 malicious versions, 6-min window, 20-min detection, self-propagation)
+
+### Raw Articles Saved
+- `raw/articles/openai.com--index-work-with-codex-from-anywhere--2026-05-16.md`
+- `raw/articles/9to5mac.com--openai-preparing-legal-action-against-apple--2026-05-16.md`
+- `raw/articles/techcrunch.com--openai-says-hackers-stole-some-data-tanstack--2026-05-16.md`
+
+### Index Changes
+- Updated last-updated date in index header (2026-05-15 → 2026-05-16)
+
+### Sources
+- Newsletter: `raw/newsletters/2026-05-15-codex-goes-everywhere.md` (Superintel)
+- Newsletter: `raw/newsletters/2026-05-16-ainews-cerebras-60b-ipo-slowly-then-all-at-once.md` (AINews/Latent Space)
+
+---
+
 ## 2026-05-16 07:00 — Blog ingest (34 new articles, 7 new pages, 3 enriched)
 
 ### AI/LLM Articles Processed

@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-05-12
+updated: 2026-05-16
 sources: [
   "https://x.com/RLanceMartin/status/2041927992986009773",
   "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
@@ -23,7 +23,8 @@ sources: [
   "raw/articles/2026-05-04_techcrunch-anthropic-openai-jv.md",
   "raw/articles/2026-05-04_anthropic-enterprise-ai-services.md",
   "raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md",
-  "raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md"
+  - raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md
+  - raw/newsletters/2026-05-15-codex-goes-everywhere.md
 ]
 related: []
 ---
@@ -130,6 +131,12 @@ Anthropic leads enterprise AI adoption with strong market metrics:
 - **IPO target**: October 2026 at $400–500B valuation (pre-$1T talks)
 - Revenue growth driven by enterprise Claude adoption and Code with Claude 2026 launches (M365 GA, Dreaming, Managed Agents)
 - Cleaner unit economics than OpenAI; focused on enterprise over consumer scale
+
+### Gates Foundation Partnership (May 2026)
+
+Anthropic and the **Bill & Melinda Gates Foundation** announced a **4-year, $200 million** partnership to develop AI solutions for global health, education, and agriculture. The collaboration focuses on public-interest AI applications in low-resource settings. While significant for AI-for-good narrative, the direct technical wiki value is limited — reference-level addition.
+
+> Source: [Gates Foundation press release](https://www.gatesfoundation.org/ideas/media-center/press-releases/2026/05/ai-anthropic-partnership) (May 2026)
 
 ### $1.5B Services Joint Venture (May 2026)
 
