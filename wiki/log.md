@@ -1,3 +1,17 @@
+## 2026-05-17 07:05 — Ingest On-Policy Distillation (Thinking Machines primary literature)
+
+### Created
+- **concept: on-policy-distillation.md** — On-Policy Distillation (OPD): post-training technique combining on-policy sampling with dense token-level teacher supervision via reverse KL divergence. Primary literature from Kevin Lu / Thinking Machines Lab (Oct 2025, DOI: 10.64434/tml.20251026). 9-30× compute reduction vs SFT, 50-100× vs RL. Math reasoning (AIME'24), personalization, continual learning applications. Differentiation from MOPD.
+- **raw article: 2025-10-27_thinkingmachines_on-policy-distillation.md** — Full 40,668-char article from thinkingmachines.ai
+
+### Updated
+- **entity: thinking-machines-lab.md** — Added Publications & Research section with OPD, LoRA Without Regret, and Defeating Nondeterminism entries. Updated Tinker product description.
+- **concept: multi-teacher-on-policy-distillation.md** — Added cross-reference note linking to foundational OPD concept page.
+- **wiki/index.md** — Added concepts/on-policy-distillation entry; Concepts count 1341→1342
+
+### Dangling Links Resolved
+- `[[concepts/on-policy-distillation]]` was referenced in `entities/nrehiew.md` and `concepts/post-training-distributional-view.md` — now fulfilled.
+
 ## 2026-05-17 01:30 — Ingest Anthropic 2028 AI Leadership scenarios
 
 ### Created

@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-09
+updated: 2026-05-17
 type: entity
 ---
 

@@ -1,0 +1,20 @@
+---
+title: "The mistake of conflating intelligence and power"
+url: "https://www.dwarkesh.com/p/the-mistake-of-conflating-intelligence"
+fetched_at: 2026-05-17T07:01:24.550380+00:00
+source: "dwarkesh.com"
+tags: [blog, raw]
+---
+
+# The mistake of conflating intelligence and power
+
+Source: https://www.dwarkesh.com/p/the-mistake-of-conflating-intelligence
+
+I had an interesting discussion recently. Someone asked me, what is intelligence? I said, the ability to achieve your goals across a wide range of domains. Okay, he says, then by that definition isn’t Donald Trump the intelligent person in the person, followed quickly by Xi Jinping and Vladimir Putin?
+To be clear, these people are obviously very competent in certain ways. But when you think of ASI, you don’t think of Trump, but more so. The person who kept pressing this question was correctly pointing out that my definition of intelligence was basically power (after all, what is power if not the ability to achieve your goals across a wide range of domains?). If this is your definition of intelligence, then Stalin was the most intelligent person who ever lived.
+Now, of course, you could change the definition of intelligence to something more like, comprehend and build atop abstract concepts. But notice that the most powerful people in the world do not max out this quantity. They’re above average in shape-rotation, but the correlation between extreme power and this kind of intelligence might be even weaker than the correlation between extreme power and height. The physicists are not running the world.
+We tend to conflate power-seeking AI and superintelligent (in science and tech) AI. I’m not denying that AI can be power-seeking. Whatever skills and drives Donald Trump has could be embodied in a digital mind. I’m simply pointing out that the way we’re currently making AI systems smarter (training them to be really good coders, thought partners, and general coworkers) is not that strongly correlated with power.
+We often talk about power in this way that misunderstands how it is actually derived in our world. Our intuitions are primed by games like Diplomacy or Go, which are designed to isolate and reward a g loaded kind of strategic reasoning. But in the real world, power is more the product of having the authority and trust to get lots of people to collaborate with you, rather than some galaxy brain scheming capability. Trump is not powerful because his brain, considered in isolation, is the most effective optimization engine on Earth. He is powerful because the government which hundreds of millions of people consider legitimate gives him a lot of power.
+A group versus individual level analysis is useful here. As
+Garett Jones has written
+a lot about, individual IQ is only modestly correlated with individual income, but national IQ is strongly correlated with national outcomes. This is because intelligence has a lot of spillover effects - smarter societies cooperate more, save more, and can coordinate to build things like space shuttles and semiconductors. Richard Trevithick, who pioneered the high-pressure steam engine, died in poverty, buried in an unmarked pauper’s grave. But the fact that 18th and 19th century Britain had lots and lots of people like Trevithick contributed to Britain being able to set up a global empire and defeat lots of random kings and emperors around the world. George III himself didn’t need to be a genius — in fact he went mad halfway through his reign — but the country he sat atop still defeated Napoleon, conquered India, and built the world’s dominant navy. Similarly, even if some company’s AIs are just super obedient superintelligent coders and scientists, they could help the totally pedestrian human intelligences who have their reins (lab leaders, Presidents, some harder to imagine configuration of control) gain a lot of power. It seems to me that the right mental model is that more effective AI firms and countries will outcompete everyone else in normal capitalist ways, rather than a single AI outthinking everyone else.

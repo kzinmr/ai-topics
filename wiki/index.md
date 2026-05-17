@@ -609,7 +609,7 @@
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 - [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."
 
-## Concepts (1341 pages)
+## Concepts (1342 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -733,6 +733,7 @@
 - [[concepts/openenv]] — Meta+HF partnership: open standard for agent environments (sandboxed tools, APIs, credentials). Integrates with TRL, TorchForge, verl, SkyRL. Environment Hub on Hugging Face.
 - [[concepts/open-swe]] — Open SWE: LangChainのオープンソース社内コーディングエージェントフレームワーク。Deep Agents + LangGraphベース。Stripe Minions/Ramp Inspect/Coinbase Cloudbotの収束アーキテクチャをMITライセンスで実装。AGENTS.md、サンドボックス、Slack/Linear/GitHub統合。
 - [[concepts/openai-o-series-gpt5-unification]] — OpenAI o1/o3→GPT-5統合 (2024-2025): o1 (Sep 2024)→o3発表 (Dec 2024)→Altmanロードマップ転換でo3キャンセル (Feb 2025)→GPT-5にThinkingモードとして吸収 (Aug 2025)。3コンポーネント統合アーキテクチャ（Main+Thinking+Router）。
+- [[concepts/on-policy-distillation]] — On-Policy Distillation (OPD) — Post-training technique combining on-policy sampling with dense token-level teacher supervision via reverse KL. Introduced by Kevin Lu / Thinking Machines Lab (Oct 2025). 9-30× compute reduction vs SFT, 50-100× vs RL.
 - [[concepts/organizational-moat]] — 組織モート: Jaya Gupta (Foundation Capital) が提唱。AI時代において製品・コード・カテゴリはすべて模倣可能であり、会社の「形」（採用・権力分配・ステータス階層）だけが最後の競争優位になると主張。5つの構造的検証テスト。3.2M views。
 - [[concepts/proof-of-useful-work]] — Proof of Useful Work (PoUW): blockchain consensus using AI inference instead of hash puzzles. Pearl Network + Together AI partnership (May 2026).
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information（予測的V-情報）：観測者の計算制約を考慮したShannon情報理論の変分拡張。DPI違反、高次元でのPAC推定保証、構造学習・公平表現学習への応用（Xu et al., ICLR 2020）。

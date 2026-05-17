@@ -20,6 +20,8 @@ sources:
 
 # Multi-Teacher On-Policy Distillation (MOPD)
 
+> **Note**: This page covers the multi-teacher, production-scale evolution of OPD used by 2026 frontier models. For the foundational single-teacher technique introduced by Thinking Machines Lab in Oct 2025, see [[concepts/on-policy-distillation]].
+
 **Multi-Teacher On-Policy Distillation (MOPD)** is a post-training primitive that emerged in 2026 as the standard solution to the *"see-saw problem"* in LLM post-training — where specializing in one area (e.g., Math RL) degrades performance in others (e.g., open-ended writing). It samples trajectories from the student model and matches one or more teacher distributions via **reverse KL divergence**, providing dense, token-level supervision within a GRPO-like training loop.
 
 ## Core Concept: From GRPO to OPD
