@@ -1,0 +1,123 @@
+{
+  "run_id": "20260517T082446Z",
+  "triaged_at": "2026-05-17T08:35:25.528442Z",
+  "newsletters": [
+    {
+      "source_label": "uid=99",
+      "subject": "The Compute-to-Cash Race: Who Has the Better IPO Story, Anthropic or OpenAI?",
+      "date": "2026-05-16",
+      "article_count": 16,
+      "importance": "high",
+      "reasoning": "Financial/business analysis of Anthropic vs OpenAI IPO trajectories. Contains significant factual content about ARR ($44B Anthropic), compute commitments ($200B Google Cloud, 300MW SpaceX), monetization efficiency ($211/user vs $25/user), and revenue projections. Relevant for [[Anthropic]], [[OpenAI]] entity pages and AI economics/commercialization concept pages. Links appear to be beehiiv tracking URLs that redirect to actual articles (Forbes, Bloomberg, Reuters, WSJ coverage).",
+      "wiki_actions": [
+        "Update [[anthropic]] entity page with latest financial data (ARR $44B, compute deals with Google Cloud and SpaceX)",
+        "Update [[openai]] entity page with latest funding round ($122B at $852B valuation)",
+        "Consider new comparison page: [[anthropic-vs-openai-ipo-comparison]] if enough source material emerges",
+        "Add [[valuation]] tag to SCHEMA.md if not present (it is present)"
+      ],
+      "extracted_urls": [
+        "https://www.forbes.com/sites/drewbernstein/2026/05/12/handicapping-the-ai-ipo-race/",
+        "https://www.nytimes.com/2026/01/14/technology/ai-ipo-openai-anthropic-spacex.html",
+        "https://www.reuters.com/technology/artificial-intelligence/openai-versus-anthropic-what-revenue-race-means-their-ipos-2026-04-08/",
+        "https://www.wsj.com/tech/ai/openai-anthropic-ipo-finances-04b3cfb9"
+      ],
+      "entities_mentioned": [
+        "anthropic",
+        "openai",
+        "google",
+        "microsoft",
+        "amazon",
+        "spacex",
+        "xai",
+        "alphabet"
+      ],
+      "topics": [
+        "ai-ipo",
+        "compute-economics",
+        "enterprise-ai",
+        "valuation",
+        "ai-adoption",
+        "inference-costs"
+      ],
+      "status": "ready_for_ingest"
+    },
+    {
+      "source_label": "uid=100",
+      "subject": "Latest open artifacts (#21): Open model bonanza! Gemma 4, DeepSeek V4, Kimi K2.6, MiMo 2.5, GLM-5.1 & others. On CAISI's V4 assessment.",
+      "date": "2026-05-16",
+      "article_count": 20,
+      "importance": "critical",
+      "reasoning": "Extremely high-value content from Interconnects.ai (Florian Brand + Nathan Lambert). Covers major open model releases: Gemma 4 (Google), DeepSeek V4, Kimi K2.6 (Moonshot), MiMo 2.5 (Xiaomi), GLM-5.1 (Zhipu). Includes CAISI evaluation of DeepSeek V4 Pro, benchmark comparisons, real-world coding tests, and discussion of open vs closed model gap. Directly relevant to wiki's core LLM/AI Agent knowledge base. Covers 6+ major model releases in a single digest. Includes practical insights on local inference (llama.cpp, Ollama issues, GGUF quantization), agentic capabilities, and reasoning model architectures.",
+      "wiki_actions": [
+        "Update [[gemma]] entity page for Gemma 4 release details",
+        "Update [[deepseek]] entity page for DeepSeek V4 release + CAISI evaluation",
+        "Create/update [[kimi-k2]] entity page for Kimi K2.6",
+        "Create/update [[mimo]] entity page for Xiaomi MiMo 2.5 Pro (1T params, MoE, 42B active)",
+        "Update [[glm]] entity page for GLM-5.1",
+        "Update [[open-source-llms]] concept page with current landscape summary",
+        "Update [[llm-benchmarks]] or create [[caiisi-evaluation]] concept page",
+        "Add note about CAISI (Center for AI Standards and Innovation) - NIST-affiliated org",
+        "Consider updating [[local-llm]] pages with Ollama/llama.cpp practical issues documented"
+      ],
+      "extracted_urls": [
+        "https://www.interconnects.ai/p/latest-open-artifacts-21-open-model",
+        "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+        "https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro",
+        "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+        "https://huggingface.co/moonshotai/Kimi-K2.6"
+      ],
+      "entities_mentioned": [
+        "google",
+        "deepseek",
+        "moonshot-ai",
+        "xiaomi",
+        "zhipu-ai",
+        "openai",
+        "anthropic",
+        "caisi",
+        "nist"
+      ],
+      "topics": [
+        "open-source-llms",
+        "model-releases",
+        "benchmark",
+        "evaluation",
+        "local-llm",
+        "reasoning",
+        "mixture-of-experts",
+        "quantization",
+        "agentic-capabilities"
+      ],
+      "status": "ready_for_ingest"
+    }
+  ],
+  "summary": {
+    "total_newsletters": 2,
+    "critical": 1,
+    "high": 1,
+    "low": 0,
+    "total_extracted_articles": 36,
+    "key_entities_to_update": [
+      "anthropic",
+      "openai",
+      "gemma",
+      "deepseek",
+      "kimi",
+      "mimo",
+      "glm"
+    ],
+    "key_concepts_to_create_or_update": [
+      "open-source-llms",
+      "local-llm",
+      "llm-benchmarks",
+      "caiisi-evaluation",
+      "ai-ipo",
+      "compute-economics"
+    ],
+    "priority_ingest_order": [
+      "uid=100 (Open Artifacts #21)",
+      "uid=99 (Compute-to-Cash IPO Race)"
+    ]
+  }
+}

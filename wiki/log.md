@@ -1,3 +1,35 @@
+# Wiki Log
+
+> Chronological record of all wiki actions. Append-only.
+
+---
+
+## [2026-05-17] dreaming | Knowledge consolidation — 5 entity enrichments from raw articles
+
+**Pipeline**: dreaming-wiki-ingest (failed parsing → raw article fallback)
+
+### Sources
+- raw/articles/2026-05-16_harvey_building-an-agentic-security-operations-center.md — Harvey Agentic SOC
+- raw/articles/2026-05-15_glean_cowork-mcp-eval.md — Glean MCP vs Cowork benchmark
+- raw/articles/2026-05-14_petradonka_agents-need-feedback-loops.md — Warp Buzz agent deep dive
+- raw/articles/2026-05-16_hex-technologies_repos-as-agent-context.md — Hex repos as context
+- raw/articles/2026-05-15_decagon_inside-agent-engineering-at-decagon.md — Decagon agent engineering
+
+### Pages Enriched
+- `entities/harvey.md` — Added Agentic SOC section (world model, MCP via RunReveal, 400+ detections, 95% alert reduction, Mike Parowski)
+- `entities/petra-donka.md` — Added Buzz agent architecture (principles over rules, 5-step learning, daily PR workflow, Oz orchestration, skill-as-code)
+- `entities/glean.md` — Added MCP vs Cowork benchmark (2.5x preference, 30% fewer tokens, federated search token tax)
+- `entities/hex-technologies.md` — Added repos as agent context (dbt repo, application repo, compounding context)
+- `entities/decagon.md` — Added agent engineering at Decagon (ASWE role, customer outcomes, cross-functional work)
+
+### Cross-pipeline Status
+- blog-triage: 1 take (Sean Goedecke, already processed by downstream)
+- newsletter-triage: 40 decisions, all skip (0 takes)
+- active-crawl: Already ran today (GPT-Realtime Voice, Claude Orbit, Gemini Flash-Lite)
+- dreaming-group: JSON parse failure; no themes available (19 days stale)
+
+---
+
 ## [2026-05-17] health-fix | Index orphan registration (20 pages added to index.md)
 
 ### Changes
@@ -159,7 +191,6 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 
 ---
 
-# Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
 

@@ -2,7 +2,7 @@
 title: "Hex Technologies"
 type: entity
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-17
 tags:
   - company
 aliases: ["Hex", "Hex Tech"]
@@ -35,6 +35,20 @@ Hex is an AI analytics platform that combines collaborative notebooks, conversat
 - **Context Studio**: AI governance and semantic models for trusted, consistent answers.
 - **Hex CLI**: Terminal-based analytics control.
 - Graph-based execution model for reproducibility at scale.
+
+
+
+### Repos as Agent Context (May 2026)
+
+Hex added the ability to attach Git repos to workspaces, enabling the Hex Agent to analyze dbt models and application code. This bridges the gap between data warehouse context and code-level understanding.
+
+- **dbt repo use case**: Self-service users can query high-level tables while the agent crawls upstream dbt logic to understand filtering, collapsing, and category definitions
+- **Application repo use case**: Answers questions about tracking implementation, untracked events, and how features relate in the codebase
+- **Compounding context**: Repos, projects, warehouse metadata, guides, and semantic models are synthesized by the agent to answer questions that previously only the data team could address
+- **Customers**: Underdog (Camden Willeford), Stubhub (Alan Peters) report significantly improved ability to handle "nebulous" queries
+
+Authored by Andrew Lee (May 15, 2026).
+
 
 ## Related
 - [[entities/anthropic]] — customer using Hex for data analytics

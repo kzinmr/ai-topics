@@ -41,7 +41,9 @@ His writing philosophy is evident in his book's distribution model: **print at c
 | 2025 | Book published: "Software Engineering After the Vibe Shift" |
 | 2025 | Featured on 99% Invisible (em-dash analysis), ABC News (AI sycophancy), Grammar Girl Podcast |
 | 2026 | Active through at least May 2026; continuing to publish on AI, career development, and left-wing pro-AI arguments |
-| 2026-05-10 | Publishes "The left-wing case for AI" — outlines progressive arguments for AI adoption across disability rights, healthcare, class mobility, education, and utopian tech optimism |
+| **2026-05-10** | Publishes "The left-wing case for AI" — outlines progressive arguments for AI adoption across disability rights, healthcare, class mobility, education, and utopian tech optimism |
+| **2026-05-17** | Publishes "How I use LLMs as a staff engineer in 2026" — updated workflow: agents now produce entire PRs, 80% bug diagnosis rate, skimming vs. editing mental model shift |
+| **2026-05-17** | Publishes "DeepSeek-V4-Flash means LLM steering is interesting again" — explores activation engineering and steering vectors for influencing model behavior |
 
 ## Core Ideas
 
@@ -188,6 +190,8 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 - Regular podcast guest on engineering and AI topics
 
 ## Recent Articles
+
+- **How I use LLMs as a staff engineer in 2026** (2026-05-17): Documents the evolution from his February 2025 post. Key changes: agents now reliably produce entire PRs (he starts every change with an agent and pushes after a single editing pass); shifted from open VSCode windows to terminal-based Copilot CLI sessions; uses agents tens of times per day; 80% bug diagnosis rate autonomously. Notable: he still writes his own PR descriptions because LLMs over-communicate and miss the "core idea"; still doesn't use LLMs for Slack messages or ADRs to signal human thinking; uses agents for local config troubleshooting (nvm, node version switching). Core thesis: "the current core AI skill is shifting as much work onto AI agents as possible, without going too far."
 
 - **AI makes weak engineers less harmful** (2026-05-08): Argues that frontier LLMs have raised the floor for weak engineers — instead of producing completely broken PRs, they now produce "standard LLM pull requests: wrong in some ways, baffling in others, but at least functional on the line-by-line level." Notes the phenomenon of engineers becoming "thin wrappers around Claude Code," communicating via Slack rather than direct interaction. Predicts a future push to measure "what value engineers are adding to AI" rather than just AI's value to engineers. Crucially observes that "no strong engineers use AI tools like this" — the wrapper phenomenon is limited to those for whom it represents an improvement.
 

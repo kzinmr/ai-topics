@@ -2,7 +2,7 @@
 title: Dwarkesh Patel
 type: entity
 created: 2026-04-09
-updated: 2026-05-01
+updated: 2026-05-17
 sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/]
 tags:
   - person
@@ -52,6 +52,9 @@ As of early 2026, the Dwarkesh Podcast has published approximately 115 episodes 
 | **Apr 2026** | Interviewed Jensen Huang: "TPU competition, why we should sell chips to China, & Nvidia's supply chain moat" |
 | **Apr 2026** | Published "The most important question nobody's asking about AI" |
 | **Apr 2026** | Blackboard Lecture with Reiner Pope: "The math behind how LLMs are trained and served" — roofline analysis, batch size economics, MoE parallelism |
+| **May 2026** | Interview with Michael Nielsen: "How do we recognize scientific progress?" — RLVR limitations for science, parallel discovery patterns |
+| **May 2026** | Published "The mistake of conflating intelligence and power" — critiques AI safety's definition of intelligence |
+| **May 2026** | Published "Notes on pretraining parallelisms and failed training runs" — FSDP, pipeline parallelism, causality-breaking bugs |
 
 ## Key Projects
 
@@ -76,6 +79,9 @@ Production features video recordings integrated with audio releases, distributed
 - **"Notes on Space GPUs" (Feb 2026)** — Orbital datacenter economics analysis prepared for Elon Musk interview. Explores energy-per-watt tradeoffs, Starship launch economics, and the long-term inevitability of space-based compute.
 - **"The Most Important Question Nobody's Asking About AI" (Mar 2026)** — "Preface to the highest stakes negotiations in history." 355 likes.
 - **"Hiring scouts to help me find guests" (Jan 2026)** — $100/hour, fully remote. Ideal candidates: grad students/post docs in bio, history, econ, math/physics, AI/hardware.
+- **"Notes on Pretraining Parallelisms" (May 2026)** — Deep technical analysis of FSDP, pipeline parallelism, causality-breaking bugs in MoE routing (Llama 4 underperformance). Emphasizes that bias compounds while variance averages out; FP16 collective bugs during GPT-4 training; pretraining flops equation (6ND).
+- **"RLVR Might Be Disproportionately Bad at Science" (May 2026)** — From interview with Michael Nielsen. Argues that scientific verification loops span decades/centuries, making RL reward signals inadequate. Historical examples: Copernicus less accurate than Ptolemy initially; Mercury anomaly → Einstein GR; Prout's atomic weight hypothesis.
+- **"The Mistake of Conflating Intelligence and Power" (May 2026)** — Critiques the AI safety definition of intelligence. Argues that current AI development (training better coders/coworkers) is not strongly correlated with power-seeking. Uses Garett Jones's individual vs. national IQ analysis; historical examples (Trevithick died poor, George III went mad but Britain thrived).
 
 ## Core Ideas
 
@@ -166,6 +172,8 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 ## Related
 
 - [[concepts/scaling-without-slop]] — Related analysis of AI capability limits
+- [[concepts/rlvr-science-limitations]] — Dwarkesh's thesis on RLVR's inability to handle scientific verification loops
+- [[concepts/intelligence-conflation]] — Dwarkesh's critique of conflating intelligence with power
 - [[concepts/world-models-science]] — Dwarkesh frequently explores world models and reasoning with guests
 - [[concepts/multi-agent-autonomy-scale]] — His vision of future AI architecture
 - [[entities/gary-marcus]] — Both critique current AI approaches from different angles
@@ -192,6 +200,9 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [Dylan Patel — "3 big bottlenecks to scaling AI compute" (Mar 2026)](https://www.dwarkeshpatel.com/p/dylan-patel-deep-dive-on-the-3-big-bottlenecks-to-scaling-ai-compute)
 - [Elon Musk — "Cheapest AI will be in space" (Feb 2026)](https://www.dwarkesh.com/p/elon-musk)
 - [Jensen Huang — "TPU competition, China, supply chain moat" (Apr 2026)](https://www.dwarkesh.com/p/jensen-huang)
+- [RLVR might be disproportionately bad at science (May 2026)](https://www.dwarkesh.com/p/rlvr-might-be-disproportionately)
+- [Notes on pretraining parallelisms and failed training runs (May 2026)](https://www.dwarkesh.com/p/notes-on-pretraining-parallelisms)
+- [The mistake of conflating intelligence and power (May 2026)](https://www.dwarkesh.com/p/the-mistake-of-conflating-intelligence)
 
 ## References
 

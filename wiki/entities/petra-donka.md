@@ -1,10 +1,10 @@
 ---
 title: Petra Donka
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-17
 type: entity
 status: active
-tags: [person, ai-agents, agent-loop, developer-experience, warp]
+tags: [person, ai-agents, agent-loop, developer-experience, warp, orchestration]
 sources: [raw/articles/2026-05-14_petradonka_agents-need-feedback-loops.md]
 aliases: ["@petradonka"]
 related: [entities/warp, concepts/harness-engineering, entities/ryan-lopopolo, entities/lester-solbakken]
@@ -40,6 +40,20 @@ This reframes the problem from static prompt optimization to dynamic feedback in
 | Static quality | Continuous improvement |
 
 The article draws from Donka's experience building agent features at Warp, where the team encountered the limitations of static prompts when agents needed to exercise judgement and taste.
+
+### Buzz Agent Architecture (May 2026)
+
+Donka built **Buzz**, an agent that monitors mentions of Warp across Twitter, LinkedIn, Reddit, Bluesky, and other platforms. Buzz decides whether to reply, like, note, or skip each mention, and drafts replies posted as suggestions in Slack.
+
+**Key design decisions:**
+- **Principles over rules**: First version used brittle if-then rules. Shifted to durable principles (e.g., "Be helpful, not defensive", "Sound like someone who builds the product") — smaller skill file, better generalization.
+- **5-step learning process**: (1) Identify what went wrong concretely, (2) Ask why (symptom vs cause), (3) Zoom out to the pattern, (4) Check against existing principles, (5) Write as a principle, not a rule.
+- **Feedback loop where the team works**: Buzz posts each mention to Slack with draft + recommendation. Team reacts with emoji (one-click signal) or adds thread notes. Daily PR shows what feedback was reviewed, what principle changed, and the exact diff.
+- **Skill-as-code**: Agent skills live in a repo with version history, review, and rollbacks. Buzz proposes improvements via PR — durable changes go through human review.
+- **Orchestration**: Buzz runs on ~15 skills across triage, drafting, learning, analytics, and reporting. Uses **Oz** for agent management and orchestration, enabling background runs triggered by schedules or incoming mentions.
+
+**Results**: Processes thousands of mentions/month. ~50% don't need a reply, saving the team massive time.
+
 
 ## Connection to Wiki Themes
 
