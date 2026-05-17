@@ -719,6 +719,27 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - Akshay Pachaar "Hermes Agent Masterclass" (X Article, no body retrieved) — saved metadata only
 - LakshyAAAgrawal GEPA quote tweet — informational, no new concept
 - 0xSero "Open Source must win" (March 2026) — old, minimal content
+## [2026-05-17] ingest | OpenClaw Memory System Deep Dive → wiki enrichment + comparison
+
+### Changes
+- `wiki/raw/articles/2026-01-25_snowan-gitbook_openclaw-memory-system-deep-dive.md` — Raw article saved (full deep dive on OpenClaw memory system, commit f99e3dd)
+- `wiki/entities/openclaw.md` — **Memory System section fully rewritten**: 3-tier memory architecture (Ephemeral/Durable/Session), chunking algorithm (sliding window + overlap), hybrid BM25+vector search (SQLite FTS5 + sqlite-vec), embedding provider auto-selection (Local→OpenAI→Gemini), cache-first SHA-256 dedup, Pre-Compaction Flush mechanism, performance benchmarks. Added memory-systems tag, snowan source, cross-link to comparison page.
+- `wiki/concepts/agent-memory-systems-comparison.md` — **NEW**: Comprehensive 3-harness memory system comparison (OpenClaw vs Claude Code vs Codex CLI). 6 comparison tables covering memory hierarchy, search/recall methods, embedding strategy, memory generation, context retention, design philosophy. Selection guide and common limitations documented.
+- `wiki/concepts/context-compaction.md` — **Enriched from stub**: Full concept page with basic mechanism, Pre-Compaction Flush detailed description (trigger conditions, behavior, design intent), harness-by-harness comparison table.
+- `wiki/index.md` — Added agent-memory-systems-comparison and context-compaction entries
+- Cross-references: OpenClaw entity → agent-memory-systems-comparison, context-compaction → agent-memory-systems-comparison
+
+### Key findings from article
+- **File-first convergence**: All three harnesses (OpenClaw/Claude Code/Codex) use Markdown files as memory source of truth
+- **OpenClaw uniquely uses vector search** (sqlite-vec) — Claude Code and Codex only use file reading/grep
+- **Pre-Compaction Flush** is OpenClaw's most innovative feature: silent agentic turn before context window truncation
+- **Hybrid search** (70% vector + 30% BM25) provides balanced precision/recall not found in other harnesses
+- **Embedding provider auto-selection** with graceful degradation (Local→OpenAI→Gemini) allows offline operation
+
+### Cross-references
+- [[entities/openclaw]] → [[concepts/agent-memory-systems-comparison]]
+- [[concepts/context-compaction]] → [[concepts/agent-memory-systems-comparison]]
+- [[concepts/ai-memory-systems]] → linked concepts
 ## [2026-05-14] health | Wiki health auto-fix — 20 orphan concepts indexed
 
 ### Changes
