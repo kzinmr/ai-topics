@@ -4,6 +4,23 @@
 
 ---
 
+## [2026-05-17] skeleton-enrich-daily | Daily skeleton enrichment — no skeletons found, enriched 2 stub entities
+
+**Status**: No `status: skeleton` entity pages found. Enriched 2 `status: stub` entity pages as fallback.
+
+### Pages Enriched
+- `entities/steve-blank.md` — Full enrichment: biography, career timeline (USAF → E.piphany → Lean Startup → Stanford professor), books, Customer Development methodology, Lean Startup movement, Hacking for Defense, Secret History of Silicon Valley. Removed empty table; added proper sources, tags, cross-references.
+- `entities/jason-liu.md` — Full enrichment: biography, career timeline (567 Studios → OpenAI Codex → Stitch Fix → Meta), Instructor library (6M+ monthly downloads, cited by OpenAI), training programs (Maven), angel investing (a16z scout), key theses, publications (CSCW 2017, AAAI 2016). Added proper sources, aliases, cross-references.
+
+### Index Updates
+- `wiki/index.md` — Updated descriptions for both entries (line 265: [[entities/jason-liu]], line 439: [[entities/steve-blank]])
+
+### Sources Used
+- Wikipedia (Steve Blank), steveblank.com, CXOTalk, Computer History Museum
+- jxnl.co, github.com/jxnl, python.useinstructor.com
+
+---
+
 ## [2026-05-17] dreaming | Knowledge consolidation — 5 entity enrichments from raw articles
 
 **Pipeline**: dreaming-wiki-ingest (failed parsing → raw article fallback)

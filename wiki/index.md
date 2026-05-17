@@ -262,7 +262,7 @@
 - [[entities/ivan-burazin]] — CEO of Daytona. Coined "Headless SaaS" — SaaS rebuilt with agent-first APIs, no GUI.
 - [[entities/jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of **Bun** — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining...
 - [[entities/ivan-leo]] — Ivan Leo — Google DeepMind, ex-Manus. Co-hosted "Building Your Own OpenClaw from Scratch" workshop with Hugo Bowne-Anderson. Self-extending agents, agent architecture, live coding education. [[raw/articles/2026-02-28_substack_agents-that-build-themselves]]
-- [[entities/jason-liu]] — **X** | @jxnlco |
+- [[entities/jason-liu]] — Jason Liu (@jxnlco) — Creator of Instructor library (6M+ monthly downloads, cited by OpenAI). DX Engineer at OpenAI (Codex team). Former Staff ML Engineer at Stitch Fix. Context engineering, RAG systems, structured outputs.
 - [[entities/jay-alammar]] — **Blog** | jalammar.github.io | Visual ML explainer. "The Illustrated Transformer", "The Illustrated Word2Vec" — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
 - [[entities/flue]] — Flue — TypeScript framework for building Claude Code-style coding agents. Announced May 2026.
 - [[entities/cursor-ai]] — Cursor AI — AI-powered code editor and coding agent platform. CI-fix agents monitor GitHub and auto-fix CI failures. SpaceX holds acquisition right for $60B.
@@ -436,7 +436,7 @@
 - [[entities/spike]] — **URL:** https://supaiku.com
 - [[entities/stefano-marinelli]] — **Blog:** it-notes.dragas.net — "Scattered IT Notes"
 - [[entities/stella-biderman]] — Executive Director of EleutherAI. Mathematician and AI researcher leading open-source AI. Co-author of Pythia, GPT-Neo, BLOOM.
-- [[entities/steve-blank]] — **Blog** | steveblank.com |
+- [[entities/steve-blank]] — Steve Blank — Creator of Customer Development methodology, launched Lean Startup movement. 30+ year Silicon Valley entrepreneur (4 IPOs). Stanford professor. Author of The Four Steps to the Epiphany.
 - [[entities/subquadratic]] — Subquadratic (SubQ) — First commercial subquadratic LLM, 12M context, $29M seed. Sparse subquadratic attention, not a standard transformer. May 2026.
 - [[entities/substack]] — Substackプラットフォーム。ドメイン別AI記事
 - [[entities/stochi]] — Independent AI researcher focused on post-training, agents, RL, model architectures. Author of the [[concepts/sparse-signal-loop]] experiment. Previously shipped AI at QX Labs and Unsiloed AI (YC F25).
