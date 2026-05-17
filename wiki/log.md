@@ -4,6 +4,28 @@
 
 ---
 
+## [2026-05-17] x-accounts-scan | X account scan — 3 new posts → 4 wiki pages created
+
+**Pipeline**: x-accounts-scan (cron, 22:30 UTC)
+
+### Posts Processed
+- @koylanai: 2 posts about peoplereadmes (open-source persona context systems, first persona: Riley Walz)
+- @ekzhang1: 1 post about Harvard Math Department documentary (not directly AI-relevant, noted)
+
+### Pages Created
+- `entities/riley-walz.md` — Riley Walz (@rtwlz): Software engineer and internet artist, OAI Labs at OpenAI (2026–). Bop Spotter, Jmail, IMG_0001, Find My Parking Cops. 7,248 bytes.
+- `entities/muratcan-koylan.md` — Muratcan Koylan (@koylanai): Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. 6,882 bytes.
+- `concepts/peoplereadmes.md` — Open-source framework for persona context systems to study how exceptional technical builders operate. Pipeline: public evidence → source map → project analysis → tacit-knowledge extraction → technical model → prompt system → eval rubric. 5,634 bytes.
+- `entities/eric-zhang.md` — Eric Zhang (@ekzhang1): MTS at Thinking Machines Lab. Creator of sshx. Status: skeleton. 1,977 bytes.
+
+### Index Updates
+- `wiki/index.md` — Added muratcan-koylan and eric-zhang entities; peoplereadmes concept. Entity count: 618→620, Concept count: 1361→1362.
+
+### Sources Used
+- GitHub (muratcankoylan/peoplereadmes), Wikipedia (Riley Walz), Wired (Riley Walz profile), muratcankoylan.com, ekzhang.com, X/Twitter profiles
+
+---
+
 ## [2026-05-17] skeleton-enrich-daily | Daily skeleton enrichment — no skeletons found, enriched 2 stub entities
 
 **Status**: No `status: skeleton` entity pages found. Enriched 2 `status: stub` entity pages as fallback.
@@ -746,3 +768,16 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - `wiki/index.md` — Added 20 d-range concept pages to Concepts section:
  dark-factory-software-factory, data-engineering, data-engineering-for-ml,
  data-validation-python-type-hints-rust-web-frameworks-fastapi, dataset-engineering,
+
+## [2026-05-17] enrich | Dynamic Filtering section enriched with official Anthropic blog
+
+### Changes
+- `wiki/raw/articles/2026-02-17_anthropic_dynamic-filtering-web-search.md` — New raw article from official Anthropic blog (Feb 17, 2026). BrowseComp + DeepsearchQA benchmarks, Quora/Poe validation, GA tools context.
+- `wiki/concepts/agentic-search.md` — Dynamic Filtering section expanded with:
+  - Full BrowseComp + DeepsearchQA per-model breakdown (Sonnet 4.6: 33.3%→46.6%, Opus 4.6: 45.3%→61.6%)
+  - Quora/Poe production validation case study
+  - "Filter-Before-Reasoning" architectural pattern analysis across 5 GA tools
+  - Agentic Search Implications: convergence of IR Research, Harness Engineering, Externalized Processing
+  - Open Questions: cost asymmetry, generality, eval contamination risk, RLM relationship
+  - Sources updated: official Anthropic URL added alongside GEND partner summary
+- `wiki/concepts/claude-agent-sdk-research-stateless-stateful-web-search.md` — Deleted orphaned empty stub (not in index.md, no incoming links)

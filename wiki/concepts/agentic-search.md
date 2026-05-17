@@ -1,7 +1,7 @@
 ---
 title: Agentic Search
 created: 2026-04-30
-updated: 2026-05-13
+updated: 2026-05-17
 type: concept
 tags:
   - search
@@ -20,6 +20,7 @@ sources:
   - raw/papers/2026-03-20_2603.20432_coding-agents-effective-long-context-processors.md
   - raw/articles/2025-12-04_sid-1-agentic-retrieval.md
   - raw/articles/2026-04-06_softwaredoug-agentic-search-grep-moment.md
+  - raw/articles/2026-02-17_anthropic_dynamic-filtering-web-search.md
   - raw/articles/2026-03-30_claude-web-search-dynamic-filtering.md
   - raw/articles/2026-04-28_softwaredoug-can-agents-replace-search-stack.md
   - raw/articles/2026-02-21_hugobowne_how-to-build-first-agentic-search.md
@@ -30,6 +31,7 @@ sources:
   - https://arxiv.org/abs/2603.20432
   - https://www.sid.ai/research/sid-1-technical-report
   - https://softwaredoug.com/blog/2026/04/06/agentic-search-is-having-a-grep-moment
+  - https://claude.com/blog/improved-web-search-with-dynamic-filtering
   - https://www.gend.co/blog/claude-web-search-dynamic-filtering
   - https://softwaredoug.com/blog/2026/04/28/search-apis-replaced-by-agents.html
   - https://www.youtube.com/watch?v=OGnW2Pu2uVE
@@ -686,12 +688,18 @@ User query
 
 #### Performance Gains
 
-| Metric | Improvement |
-|--------|-------------|
-| Search accuracy | ~11% average |
-| Input tokens used | ~24% fewer |
-| DeepsearchQA F1 (Sonnet 4.6) | 52.6% → 59.4% |
-| DeepsearchQA F1 (Opus 4.6) | 69.8% → 77.3% |
+| Benchmark | Model | Without Filtering | With Filtering | Δ |
+|-----------|-------|-------------------|----------------|----|
+| BrowseComp | Sonnet 4.6 | 33.3% | **46.6%** | +13.3pp |
+| BrowseComp | Opus 4.6 | 45.3% | **61.6%** | +16.3pp |
+| DeepsearchQA F1 | Sonnet 4.6 | 52.6% | **59.4%** | +6.8pp |
+| DeepsearchQA F1 | Opus 4.6 | 69.8% | **77.3%** | +7.5pp |
+| **Average** | — | — | — | **~11% accuracy** |
+| **Input tokens** | — | — | — | **~24% fewer** |
+
+#### Quora (Poe) — Production Validation
+
+Poe by Quora, one of the largest multi-model AI platforms (200+ models), validated dynamic filtering in production. Gareth Jones, Product and Research Lead: *"Opus 4.6 with dynamic filtering achieved the highest accuracy on our internal evals when tested against other frontier models. The model behaves like an actual researcher, writing Python to parse, filter, and cross-reference results rather than reasoning over raw HTML in context."*
 
 #### Technical Requirements
 
@@ -704,11 +712,44 @@ User query
 
 This implementation validates patterns from all three levels:
 
-- **Level 1 (IR)**: The code execution acts as a just-in-time filter, mirroring the re-ranking stage but at the code level rather than with a separate ranker model
-- **Level 2 (Harness)**: The harness (Claude API infrastructure) orchestrates the tool flow — search → script → sandbox → context — without the agent needing to manage each step
-- **Level 3 (Externalized Processing)**: This is the most direct validation — Claude replaces latent attention (internal HTML parsing) with explicit code execution (script-based extraction), exactly as the Cao et al. paper prescribes, but at the web search layer rather than the file system layer
+- **Level 1 (IR)**: The code execution acts as a just-in-time filter, mirroring the re-ranking stage but at the code level rather than with a separate ranker model. Unlike the BM25→monoT5 pipeline (Level 1), dynamic filtering is **task-specific** — Claude generates custom Python extraction scripts per query, adapting its filtering strategy to the information need rather than applying a fixed re-ranking model.
+- **Level 2 (Harness)**: The harness (Claude API infrastructure) orchestrates the tool flow — search → script → sandbox → context — without the agent needing to manage each step. This mirrors Turnbull's outer loop pattern but **integrated into the API layer** rather than requiring custom harness code.
+- **Level 3 (Externalized Processing)**: This is the most direct validation — Claude replaces latent attention (internal HTML parsing) with explicit code execution (script-based extraction), exactly as the Cao et al. paper prescribes, but at the web search layer rather than the file system layer. Claude writes `grep`-like Python to extract structured data from unstructured HTML.
 
 The key difference from the Cao et al. approach: instead of organizing text in filesystems, Claude uses code execution as an ephemeral processing pipeline for each web fetch. Both externalize processing from the model's internal attention to executable code.
+
+#### The Broader GA Ecosystem: Filter-Before-Reasoning as Architectural Pattern
+
+Dynamic filtering is not an isolated feature — it's part of a **filter-before-reasoning** architectural pattern that Anthropic is systematically building out. All five tools graduating to GA alongside dynamic filtering share the same premise: **reduce context window pressure by filtering, summarizing, or externalizing information before it enters the model's reasoning context**:
+
+| Tool | Filter-Before-Reasoning Mechanism | Problem It Solves |
+|------|----------------------------------|-------------------|
+| **Dynamic Filtering** | Write code to extract only relevant HTML sections | Raw HTML noise in web search |
+| **Code Execution** | Run sandboxed code; only results enter context | Multi-step computation in context |
+| **Memory** | Store/retrieve from persistent file directory | Long-conversation context accumulation |
+| **Programmatic Tool Calling** | Multi-tool workflows in code; intermediate results stay out | Tool call chain bloat |
+| **Tool Search** | Dynamically discover tools without loading all definitions | Large tool library context overhead |
+
+This is a **systematic architectural thesis**: the model's context window should contain only what's immediately relevant to reasoning. Everything else — HTML parsing, computation, memory retrieval, tool discovery — should happen **outside** the context window, with only the processed result loaded in.
+
+#### Agentic Search Implications
+
+Dynamic filtering represents a **convergence point** for the three research threads in agentic search:
+
+1. **IR Research → Production**: The Level 1 finding that BM25+re-ranking outperforms dense retrieval for agents finds its production counterpart in dynamic filtering — not as a separate pipeline but as **model-authored, query-specific filtering code**. The model becomes both the retriever and the re-ranker, writing bespoke extraction rather than relying on a generic ranker.
+
+2. **Harness Engineering → API Integration**: Turnbull's outer loop (validator → "try harder" → re-search) is now partially **absorbed into the API**. Instead of the harness telling the agent to re-query, Claude filters out irrelevant results before they reach the reasoning step — preventing the need for corrective feedback loops in the first place.
+
+3. **Externalized Processing → Default Behavior**: What Cao et al. demonstrated as an emergent capability (coding agents using file systems for text processing) is now **productized as default behavior** for web search. This validates that externalized processing is not just for niche long-context problems — it's the right default for all token-intensive agent tasks.
+
+#### Open Questions
+
+Despite the clear gains, several questions remain:
+
+- **Cost asymmetry**: Price-weighted tokens decreased for Sonnet 4.6 but **increased for Opus 4.6** — the stronger model writes more elaborate filtering code, partially offsetting context savings. This suggests a model-size-dependent sweet spot.
+- **Generality vs. specialization**: Dynamic filtering is tuned for web search. Can the same approach generalize to other token-heavy agent tasks (codebase exploration, document analysis)?
+- **The eval contamination risk**: Dynamic filtering runs in the same BrowseComp evaluation where [[concepts/eval-awareness-browsecomp|eval awareness]] was discovered — the model's ability to write and execute code during web search creates new attack surfaces for benchmark contamination that static retrieval pipelines don't have.
+- **Relationship to RLM**: The code execution inside context mirrors [[concepts/rlm-recursive-language-models|RLM]]'s "context as variable" pattern — but ephemerally rather than persistently. A natural next step would be persistent code execution across turns, blurring the line between search filtering and agent memory.
 
 ---
 
@@ -739,7 +780,8 @@ The IR-layer findings are based on:
 ## Sources
 
 - [Can Agents Replace the Search Stack?](https://softwaredoug.com/blog/2026/04/28/search-apis-replaced-by-agents.html) — Doug Turnbull (2026). Agentic search benchmark on Amazon ESCI: GPT-5 + BM25 + embeddings achieves 0.453 NDCG (+56.7% vs BM25 baseline). Key limitation: agentic search works for "finding things" but not "deep research."
-- [Dynamic Filtering in Claude Web Search](https://www.gend.co/blog/claude-web-search-dynamic-filtering) — Anthropic (2026). Production implementation of externalized processing: Claude writes code to filter web results before context loading. ~11% accuracy gain, ~24% token reduction.
+- [Improved Web Search with Dynamic Filtering](https://claude.com/blog/improved-web-search-with-dynamic-filtering) — Anthropic (2026). Official announcement: dynamic filtering uses code execution to pre-process web results. BrowseComp: Sonnet 33.3%→46.6%, Opus 45.3%→61.6%. DeepsearchQA F1: Opus 69.8%→77.3%. ~11% accuracy gain, ~24% token reduction. GA alongside code execution, memory, programmatic tool calling, tool search.
+- [Dynamic Filtering in Claude Web Search (GEND)](https://www.gend.co/blog/claude-web-search-dynamic-filtering) — GEND/Anthropic partner (2026). Third-party summary and implementation guide.
 - [SID-1 Technical Report: Test-Time Compute for Retrieval](https://www.sid.ai/research/sid-1-technical-report) — SID Research (2025). First RL-trained agentic retrieval model. Qwen3-14B + GRPO, 0.84 recall, TI/TO pipeline insight.
 - [Revisiting Text Ranking in Deep Research](https://arxiv.org/abs/2602.21456) — Meng, Ou, MacAvaney, Dalton (2026). Systematic evaluation of IR methods in deep research contexts.
 - [Coding Agents are Effective Long-Context Processors](https://arxiv.org/abs/2603.20432) — Cao, Yin, Dhingra, Zhou (2026). Coding agents as retrieval/processing interface outperforming traditional IR on long-context tasks.
