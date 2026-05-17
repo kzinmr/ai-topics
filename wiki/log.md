@@ -1,3 +1,14 @@
+## 2026-05-17 01:30 — Ingest Anthropic 2028 AI Leadership scenarios
+
+### Created
+- **concept: us-china-ai-competition.md** — Anthropic's framework for US-China AI competition: four fronts (Intelligence, Domestic adoption, Global distribution, Resilience), compute gap analysis, export controls, distillation attacks as workarounds, two 2028 scenarios, and policy recommendations. Source: Anthropic Research (May 14, 2026)
+- **raw article: 2026-05-14_anthropic_2028-ai-leadership-scenarios.md** — Full policy paper on US-China AI competition
+
+### Updated
+- **event: distillation-attacks-2026.md** — Added cross-link to us-china-ai-competition, updated tags (china, geopolitics, distillation), added sources, fixed broken wikilinks
+- **SCHEMA.md** — Added `geopolitics` tag to Meta category
+- **index.md** — Registered us-china-ai-competition in Concepts section
+
 ## 2026-05-16 17:50 — Health fix: index registration + header correction
 
 ### Index Registration
