@@ -1,3 +1,14 @@
+## [2026-05-17] health-fix | Index orphan registration (20 pages added to index.md)
+
+### Changes
+- Added 7 orphan entity pages to index.md: cerebras-systems, datasette-llm-limits, dynomight-net, ed-zitron-s-where-s-your-ed-at, fred-schott, john-berryman, kim-isenberg
+- Added 13 orphan concept pages to index.md: ai-and-authenticity, ai-and-software-engineering, ai-api-abuse, ai-assisted-development, ai-coding-agent-criticism, ai-image-generation, ai-observability, ai-programming-as-theory-building, ai-vulnerability-discovery, blogging-as-infrastructure, boring-technology, coding-agents, cognition-devin-philosophy
+- Index corruption check: CLEAN (no pipe/line-number/triple-bracket/space-prefix corruption)
+- Ghost entries: NONE
+- validate_index.py: PASS
+
+---
+
 ## [2026-05-17] active-crawl | OpenAI GPT-Realtime Voice Models, Claude Orbit, Gemini Flash-Lite/3.2 Flash, CAISI AI Testing
 
 ### Created (Concepts)

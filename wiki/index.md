@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-17 | Total pages: 1990 | Indexed entries: 1043 | Not in index: 947 |
+> Last updated: 2026-05-17 | Total pages: 2010 | Indexed entries: 1063 | Not in index: 927 |
 
-## Entities (609 pages)
+## Entities (616 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -13,20 +13,25 @@
 - [[entities/autoreason]] — Autoreason
 - [[entities/baidu]] — Baidu (Ernie) — Ernie 5.1: 94% pre-training cost reduction via Once-For-All elastic training. 4th Search Arena. Closed weights. May 2026.
 - [[entities/buildy]] — Buildy (buildy.so) — AIエージェントが構築・永続化するパーソナルWebアプリプラットフォーム
+- [[entities/cerebras-systems]] — Cerebras Systems — Wafer-scale AI chips, CS-3 system, 1.2M cores on single wafer
 - [[entities/claude-perfect-memory]] — Claude Perfect Memory
 - [[entities/company-ai-pilled]] — Company AI Pilled
 - [[entities/content-engine]] — Content Engine
 - [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
+- [[entities/datasette-llm-limits]] — Datasette LLM Limits
 - [[entities/deepmind]] — Google DeepMind — Alphabet's central AI research lab (AlphaGo, AlphaFold, Gemini). May 2026: AI Pointer / Magic Pointer — context-aware cursor powered by Gemini, reimagining the 50-year-old mouse pointer.
 - [[entities/dex-horthy]] — Dex Horthy (@dexhorthy): AIエージェントハーネスエンジニアリングの研究者
 - [[entities/elie-bakouch]] — Elie Bakouch — Training LLMs at Prime Intellect, previously HuggingFace (SmolLM, FineWeb, FinePDF). Latent Space podcast guest.
 - [[entities/evis-drenova]] — Evis Drenova
+- [[entities/dynomight-net]] — Dynomight — Data science & society blog
 - [[entities/fintool]] — Fintool
+- [[entities/ed-zitron-s-where-s-your-ed-at]] — Ed Zitron (Where’s Your Ed At) — AI industry, business critique
 - [[entities/florian-brand]] — Florian Brand (@xeophon) — Research Engineer at Prime Intellect (evals). Editor at Interconnects (open models). OSWorld critique.
 - [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs. Author of "Misplaced panic over AI progress" (May 2026) critiquing METR's 50%-time-horizon methodology.
 - [[entities/garry-tan]] — Garry Tan — YC President & CEO, engineer-turned-VC, creator of G Stack. Proponent of "Meta-Meta-Prompting" and "Fat Skills, Fat Code, Thin Harness" AI agent architecture. Uses OpenClaw + Hermes Agent for routing.
 - [[entities/george-hotz]] — George Hotz (geohot)
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
+- [[entities/fred-schott]] — Fred K. Schott — Creator of Astro, open source developer
 - [[entities/grant-slatton]] — Grant Slatton
 - [[entities/inspect]] — Inspect (Ramp)
 - [[entities/intellect-2]] — INTELLECT-2 — 32B reasoning model by Prime Intellect. First globally distributed RL training run (GRPO, async). Outperforms QwQ-32B. Apache 2.0.
@@ -39,7 +44,9 @@
 - [[entities/mac-studio-local-ai]] — Mac Studio Local AI
 - [[entities/merge-dev]] — Merge.dev: AIエージェントテスト統合プラットフォーム
 - [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto — HashiCorp
+- [[entities/john-berryman]] — John Berryman — AI/ML researcher
 - [[entities/moonshot-ai]] — Moonshot AI
+- [[entities/kim-isenberg]] — Kim ‘Chubby’ Isenberg — Tech blogger, developer
 - [[entities/nicolas-bustamante]] — Nicolas Bustamante
 - [[entities/nrehiew]] — wh (@nrehiew_) — AI/ML researcher. Distributional lens on post-training: SFT vs RL vs On-Policy Distillation. 181K-view X post author.
 - [[entities/palo-alto-networks]] — Global cybersecurity company. Acquired Portkey (May 2026) for AI agent security.
@@ -612,7 +619,7 @@
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 - [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."
 
-## Concepts (1347 pages)
+## Concepts (1360 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -648,20 +655,28 @@
 - [[concepts/ai-agent-memory-middleware]] — AI Agent Memory Middleware — Storage Infrastructure for Agentic AI
 - [[concepts/agents-that-build-themselves]] — Agents That Build Themselves（自己拡張エージェント） — エージェントが自身のツールを書き、ホットリロードで即座に実行するパラダイム。Hugo Bowne-Anderson + Ivan Leo の2026年2月ワークショップで体系化。Factory pattern + hot reload + hooks + markdown memory compaction。 [[raw/articles/2026-02-28_substack_agents-that-build-themselves]]
 - [[concepts/ai-agent-memory-two-camps]] — AI Memory Systems: Two Camps Taxonomy
+- [[concepts/ai-and-authenticity]] — AI and Authenticity
 - [[concepts/ai-autonomy-debate]] — AI Autonomy Debate
+- [[concepts/ai-and-software-engineering]] — AI and Software Engineering
 - [[concepts/ai-bubble]] — The AI Bubble thesis: speculative investment disconnected from fundamentals. Circular revenue dependencies (OpenAI-hyperscaler), unrealistic projections, infrastructure misalignment. Ed Zitron's primary chronicler role.
+- [[concepts/ai-api-abuse]] — AI API Abuse
 - [[concepts/ai-bubble-economics]] — AI Bubble Economics
+- [[concepts/ai-assisted-development]] — AI-Assisted Development
 - [[concepts/ai-coding-reliability]] — AI Coding Reliability
 - [[concepts/ai-coding-cost-optimization]] — AI Coding Cost Optimization (Ronin's Complete System) — $4,200→$312/month through context discipline, multi-model routing, prompt caching, and 7 practical techniques. Router config, benchmarks, 30-day rollout plan.
 - [[concepts/ai-evals]] — AI Evals (AI Evaluation Systems)
 - [[concepts/ai-index-report-2026]] — 2026 AI Index Report
+- [[concepts/ai-coding-agent-criticism]] — AI Coding Agent Criticism
 - [[concepts/ai-ready-apis]] — AI-Ready APIs（AIエージェント向けAPI設計）。AIエージェントをAPI消費者として想定したAPI設計の概念。機械可読スキーマ、エージェント認識セキュリティ、コントラクトテストの重要性。Postman 2025調査（5,700人対象）のAI-APIギャップ分析を含む。
 - [[concepts/ai-services-joint-ventures]] — **AI Services JVs (May 2026)**: OpenAI ($4B "The Deployment Company") and Anthropic ($1.5B Blackstone/Goldman JV) create PE-backed ventures to buy engineering services/consulting firms. Explicitly mirrors Palantir's embed-engineers-in-customer-ops model. Marks the shift from API-first to full-stack services enterprise AI. → Reuters scoop.
 - [[concepts/ai-memory-systems]] — AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較
 - [[concepts/ai-output-format-progression]] — AI出力フォーマット進化（Karpathy）: raw text → markdown → HTML → interactive neural videos/simulations。Audio in, Vision out。HTMLが次期デフォルト出力形式に。Thariq Shihiparの8カテゴリのHTMLアーティファクトユースケースを含む。
+- [[concepts/ai-image-generation]] — AI Image Generation
 - [[concepts/ai-pre-release-testing]] — AI Pre-Release Government Testing — US government framework for evaluating frontier AI models for national security risks before public release. CAISI agreements with Microsoft, Google, xAI (May 2026). Triggered by Claude Mythos cybersecurity concerns.
 - [[concepts/ai-privacy-tools]] — AI Privacy Tools
+- [[concepts/ai-observability]] — AI Observability — Monitoring and Debugging LLM Applications
 - [[concepts/ai-subprime]] — AI Subprime Crisis
+- [[concepts/ai-programming-as-theory-building]] — AI Programming as Theory Building
 - [[concepts/aider-polyglot]] — Aider Polyglot — 6言語対応コーディングベンチマーク。Exercismの225問をC++/Go/Java/JS/Python/Rustでテスト。GPT-5が88%でリード。
 - [[concepts/alphaevolve]] — AlphaEvolve — Google DeepMind's Gemini-powered evolutionary coding agent for algorithm discovery and optimization. TPU circuit design, data center scheduling (0.7% recovery), Gemini kernel 23% speedup. Mutation→Evolution→Evaluation loop.
 - [[concepts/altman-three-observations]] — Altman's Three Observations: 対数スケーリング（intelligence ≈ log(resources)）、超デフレコスト（10x/年）、超指数関数的価値の3つの経済観察枠組み。GPT-4→GPT-4oで150xのコスト低下、2035年ビジョン、AIエージェント経済学。
@@ -670,6 +685,7 @@
 - [[concepts/amp-neo]] — Amp Neo — May 2026 rebuild of the Amp coding agent CLI. Remote-controllable, compaction-first (auto-compaction at 90% context fill), TypeScript Plugin API, queuing with steering. 79% less CPU, 70% less memory vs old CLI. Represents the thin-harness philosophy for model-native agents.
 - [[concepts/anthropic-infrastructure-postmortems]] — Anthropicの2つの大規模品質低下ポストモーテム（2025年8-9月: コンテキストウィンドウ誤ルーティング・出力破損・XLA:TPU誤コンパイル / 2026年3-4月: 推論努力誤設定・推論履歴消失バグ・冗長性削減プロンプト）。検出の遅れ・社内評価限界・プライバシー制約の共通パターン。
 - [[concepts/anthropic-2026-revenue-growth]] — Anthropic Q1 2026: 80x YoY revenue growth, $44B ARR. Doubling every 6 weeks. 1,000+ enterprise customers spending >$1M/yr. $200B Google Cloud deal, SpaceX Colossus 1 GPU deal.
+- [[concepts/ai-vulnerability-discovery]] — AI Vulnerability Discovery
 - [[concepts/antangelmed]] — 103B-parameter open-source medical MoE model. 1/32 activation ratio (6.1B active). GRPO-trained. 7× efficiency over dense architectures.
 - [[concepts/automated-competitor-analysis]] — Automated competitor analysis with AI agents: Discover → Extract → Monitor pipeline, signal taxonomy
 - [[concepts/automation-series]] — Antoine Buteau's Automation Series
@@ -687,8 +703,10 @@
 - [[concepts/claude-code-goal]] — Claude Code /goal Command — Goal-driven autonomous workflow via prompt-based Stop hook + evaluator model (Haiku). Condition-driven multi-turn execution: set a completion condition, Claude works until evaluator confirms it is met. Complementary to /loop and auto mode.
 - [[concepts/codex-prompting]] — Codex向けプロンプト設計パターン。行動優先（Bias for Action）、メタプロンプティング、標準システムプロンプト構造、アンチパターン。OpenAI Cookbook公式ガイド準拠。
 - [[concepts/coding-agents-complexity-budgets]] — Lee Robinson (Cursor) on abstraction costs in the AI agent era. Migrated cursor.com from CMS to raw code in 3 days with $260 in tokens. Complexity budget concept.
+- [[concepts/blogging-as-infrastructure]] — Blogging as Infrastructure
 - [[concepts/cognition-ai-data-analyst]] — Cognition AI Data Analyst — Devinをデータ分析エージェントにする設計
 - [[concepts/cognitive-surrender]] — 認知的サレンダー: AIの出力が無検証で自分の出力になる心理的メカニズム。Shaw & Nave (Wharton 2026) + Addy Osmani。シミュラークル化と認知負債の個人レベルの発生機構。
+- [[concepts/boring-technology]] — Boring Technology
 - [[concepts/context-graph]] — Context Graph
 - [[concepts/contextmaxxing]] — Better memory over burning more tokens. Counterpart to [[concepts/tokenmaxxing]]. Memory as shared state, not as a service. Three memories (factual, interaction, action) as one substrate. Ontology + context graphs. Coined by [[entities/ashwingop]].
 - [[concepts/context-window-management]] — Context Window Management
@@ -697,9 +715,11 @@
 - [[concepts/decoder-only-gpt]] — Decoder-Only GPT Architecture
 - [[concepts/deepspeed]] — Microsoft DeepSpeed
 - [[concepts/delta-channels]] — LangGraph DeltaChannel (beta v1.2, May 2026) — incremental checkpoint storage for long-running agents. Writes only deltas per step, full snapshots every K steps. Bounds resume cost for production agents running thousands of steps.
+- [[concepts/coding-agents]] — Coding Agents
 - [[concepts/dspy-rlm]] — DSPy.RLM
 - [[concepts/dspy-tutorial]] — Hands-on DSPy getting started tutorial (Maxime Rivest): Signature → gold set → MIPROv2 optimization in ~50 lines yielding 20% precision improvement
 - [[concepts/ds4-dwarfstar-4]] — DS4 (DwarfStar 4): antirezのローカルAI推論プロジェクト。DeepSeek V4 Flashを2/8bit非対称量子化で96-128GB Macに搭載。分散推論・コーディングエージェント統合を計画。初めてローカルモデルを本格作業に使用。
+- [[concepts/cognition-devin-philosophy]] — Cognition/Devin Philosophy
 - [[concepts/embeddings]] — Dense vector representations encoding entities as coordinates. Triples training (anchor/similar/dissimilar), dot product + sigmoid + contrastive loss, Two-Tower architecture for cold-start, transformer sentence embeddings (BERT CLS). Doug Turnbull's Maven course module.
 - [[concepts/elastic-training]] — Elastic Training (Once-For-All) — Optimize entire model family in single training run. Baidu's Ernie 5.1 achieved 94% pre-training cost reduction. Varies depth, width, sparsity simultaneously. Industry implications for training economics.
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
