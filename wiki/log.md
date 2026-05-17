@@ -1,3 +1,16 @@
+## 2026-05-17 07:15 — Deep integration: Will Brown's OPD geometric analysis
+
+### Updated
+- **concept: on-policy-distillation.md** — Major enrichment: added Will Brown's deep analysis (~2,400 words new content). New sections: Same-Family vs Different-Family Teachers, Gradient Geometry (Sparse/Dense × Biased/Unbiased taxonomy), Self-Distillation and the Concentration Problem, Unified Meta-Algorithm (α/λ/π_T framework), Optimal Teacher Problem (Lagrangian formulation, Pareto curve). Added Will Brown's X article as source.
+- **entity: will-brown.md** — Added [[concepts/on-policy-distillation]] to Related section
+
+### Existing Links on OPD Concept
+- `entities/nrehiew.md` → `[[concepts/on-policy-distillation]]` ✅
+- `concepts/post-training-distributional-view.md` → `[[concepts/on-policy-distillation]]` (both frontmatter `related` + inline wikilink) ✅
+- `concepts/multi-teacher-on-policy-distillation.md` → cross-reference note to `[[concepts/on-policy-distillation]]` ✅
+- `concepts/model-distillation.md` → sources lists will-brown's article ✅
+- `entities/thinking-machines-lab.md` → Publications section links to `[[concepts/on-policy-distillation]]` ✅
+
 ## 2026-05-17 07:05 — Ingest On-Policy Distillation (Thinking Machines primary literature)
 
 ### Created

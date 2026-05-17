@@ -16,13 +16,16 @@ aliases:
 sources:
   - raw/articles/2025-10-27_thinkingmachines_on-policy-distillation.md
   - https://thinkingmachines.ai/blog/on-policy-distillation/
+  - raw/articles/2026-05-01_willccbb-sft-rl-on-policy-distillation.md
+  - https://x.com/willccbb/status/2050038277454143918
 related:
   - concepts/multi-teacher-on-policy-distillation
   - concepts/model-distillation
   - concepts/post-training-distributional-view
   - concepts/grpo-rl-training
   - entities/thinking-machines-lab
-  - entities/kevin-lu
+  - entities/will-brown
+  - entities/nrehiew
 ---
 
 # On-Policy Distillation (OPD)
@@ -156,11 +159,100 @@ OPD can train effectively on the *same* prompt across multiple epochs — unlike
 
 OPD always stays on-policy (samples from current student, grades against fixed teacher). This prevents the "off-policy creep" that degrades performance when SFT trains on its own samples.
 
+## Will Brown's Deep Analysis (May 2026)
+
+**Will Brown** (@willccbb, Research Lead at Prime Intellect) published a comprehensive analysis of OPD in his widely-bookmarked X article ["On SFT, RL, and on-policy distillation"](https://x.com/willccbb/status/2050038277454143918) (May 2026, 1,800+ likes, 3,300+ bookmarks). His analysis extends the Thinking Machines' empirical work with a geometric and theoretical framework that explains *why* OPD works and *where* it fails.
+
+### Same-Family vs Different-Family Teachers
+
+Brown identifies a critical constraint that determines OPD's applicability:
+
+| Teacher Type | Tokenizer | Recipe | OPD Feasible? | Key Cost |
+|-------------|-----------|--------|---------------|----------|
+| **Same-Family** (e.g., Qwen3-32B → Qwen3-8B) | ✅ Shared | ✅ Matched | **Yes** | — |
+| **Different-Family** (e.g., cross-lab distillation) | ❌ Mismatch | ❌ Different | **No** | Re-tokenization loses per-position comparability |
+
+**Why same-family matters for OPD**:
+- **Tokenizer match** is required to compute per-token KL — teacher and student logprobs must be over the same token positions
+- **Recipe match** ensures the reverse-KL signal is about *capability*, not stylistic differences. Without it, the gradient is dominated by "the teacher would have phrased this differently" rather than "the teacher would have reasoned differently here"
+- SFT with a different-family teacher loses a nontrivial fraction of bits to learning surface form rather than competence
+
+> "OPD is essentially only available in the same-family setting." — Will Brown
+
+This explains why OPD's canonical demonstrations (Thinking Machines, Qwen3) all use same-family pairs.
+
+### Gradient Geometry: The Sparse/Dense × Biased/Unbiased Taxonomy
+
+Brown's central theoretical contribution is a geometric analysis of the gradient updates produced by each post-training method. The key axes:
+
+| Method | Sparse/Dense | Biased/Unbiased | Concentration | Stability Mechanism |
+|--------|-------------|-----------------|---------------|---------------------|
+| **RL (GRPO)** | Sparse (1 bit/episode) | Unbiased | Diffuse (by cancellation) | **Destructive interference**: noise vectors cancel, consistent component survives |
+| **SFT** | Dense (per-token) | Biased (toward data) | Diffuse | Bias spread across many diverse examples → soft PCA toward data manifold |
+| **OPD (Same-Family)** | Dense (per-token) | Biased (toward teacher) | Diffuse | Teacher distribution is calibrated to student's family → naturally diffuse gradient |
+| **OPSD (Self-Distill w/ Hint)** | Dense (per-token) | Biased (toward self+hint) | **Concentrated** | Requires KL clipping — without it, collapses within ~100 steps |
+
+**RL's Destructive Interference**: In GRPO, most per-token advantage vectors are noise — tokens that happened to share a trajectory with a reward but weren't causally responsible. In large-batch, low-LR RL, these noise vectors **cancel**, leaving only the small consistent component along directions that actually correlate with reward. This is why RL feels "safe but slow."
+
+**SFT's Diffuseness**: SFT's dense gradient is biased toward the data distribution, but the bias points in many slightly different directions across examples. Most of an SFT step reinforces things the model already half-knew — the gradient is spread thin. This is why SFT is forgiving of messy data.
+
+**OPSD's Concentration Problem**: When the teacher is the student itself conditioned on privileged info (e.g., the answer), the reverse-KL signal concentrates on **pivot tokens** — the rare tokens where the student (blind) assigns near-zero probability but the teacher (informed) assigns high probability. A single pivot token can contribute 100× more to the loss than a typical token, producing a concentrated tug in parameter space that deviates from the manifold. KL clipping (per-vocabulary-entry divergence capping) is necessary to prevent collapse.
+
+### Self-Distillation Variants
+
+When same-family external teachers aren't available, two self-distillation approaches exist:
+
+| Method | Teacher = | Privileged Info | Paper |
+|--------|----------|-----------------|-------|
+| **SDFT** | Student itself | Expert demonstration (possibly for different task) | Shenfeld et al. 2026 |
+| **OPSD** | Student itself | Ground-truth answer | Zhao et al. 2026 |
+
+Both sit at identical algorithmic dial settings to OPD — the only difference is the teacher policy choice. The trade: automatic tokenizer/recipe match in exchange for a distributionally more aggressive teacher.
+
+### Unified Meta-Algorithm
+
+Brown proposes that SFT, RL, OPD, and OPSD are all special cases of a single token-level policy gradient with two knobs:
+
+$$\nabla_\theta J = \mathbb{E}_{x \sim \pi_\theta^\alpha} \left[ \lambda \cdot A^{\text{KL}}(x) + (1-\lambda) \cdot A^{\text{outcome}}(x) \right]$$
+
+- **α ∈ [0,1]** — how on-policy the sampling distribution is (α=1: fully on-policy; α=0: off-policy)
+- **λ ∈ [0,1]** — how much of the per-token advantage comes from teacher KL vs sequence-level outcome reward
+- **π_T** — the teacher policy: which model, conditioned on what context
+
+| Method | α | λ | π_T |
+|--------|---|---|-----|
+| SFT | 0 | 1 | Degenerate (δ on data token) |
+| RL (GRPO) | 1 | 0 | None (broadcast outcome reward) |
+| OPD | 1 | 1 | Same-family external teacher |
+| OPSD | 1 | 1 | Self + privileged info |
+
+Once α and λ are fixed, almost everything that matters — bias, concentration, stability — is a function of how π_T differs from π_θ at the per-token level on the student's rollouts.
+
+### The Optimal Teacher Problem
+
+The geometry analysis reframes OPD's teacher selection as an optimization problem:
+
+$$\max_{\pi_T} \mathbb{E}_{x \sim \pi_\theta} \left[ R(\pi_\theta(x)) \right] \quad \text{s.t.} \quad \text{KL}(\pi_\theta \lvert\rvert \pi_T) \leq \beta$$
+
+In Lagrangian form: **maximize reward improvement per step, subject to a hard KL constraint that keeps updates stable.**
+
+This traces a **Pareto curve** as β varies. Different methods are different points on it:
+- **RL** (λ=0): ceiling bounded by verifier quality, infinite-compute optimal for heavy-tail problems
+- **OPD** (λ=1, same-family π_T): bounded by teacher, but much faster convergence
+- **Future methods**: "Construct" a locally optimal teacher per task/distribution that maximizes reward improvement while minimizing KL shift
+
+**Proposed approaches to the optimal teacher problem**:
+- **Per-task prompt optimization** via GEPA over the Lagrangian — search for hints that maximize E[Δreward] − β·KL
+- **Distribution-level hint rewriting** — train a model to convert large privileged-info hints into minimal ones
+- **Online co-evolution** — hint-writer and student improve together via RL
+- **Expert RL + OPD** (DeepSeek V4 approach) — layer teacher KL on top of outcome reward simultaneously
+
 ## Related Pages
 
 - [[concepts/multi-teacher-on-policy-distillation]] — Multi-teacher production-scale evolution (2026)
 - [[concepts/model-distillation]] — Broader category of distillation techniques
 - [[concepts/post-training-distributional-view]] — SFT vs RL vs OPD through a distributional lens
 - [[concepts/grpo-rl-training]] — The RL framework OPD was implemented on top of
-- [[entities/thinking-machines-lab]] — Research lab that authored this work
-- [[entities/kevin-lu]] — Primary author
+- [[entities/thinking-machines-lab]] — Research lab that authored the foundational OPD paper
+- [[entities/will-brown]] — Author of gradient-geometric analysis of OPD vs SFT vs RL
+- [[entities/nrehiew]] — Author of the post-training distributional view (SFT/RL/OPD comparison)
