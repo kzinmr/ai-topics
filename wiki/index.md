@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-16 | Total pages: 1982 | Indexed entries: 1035 | Not in index: 947 |
+> Last updated: 2026-05-17 | Total pages: 1984 | Indexed entries: 1037 | Not in index: 947 |
 
-## Entities (606 pages)
+## Entities (607 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -420,6 +420,7 @@
 - [[entities/simone-salis]] — **URL:** https://simone.org
 - [[entities/skyfall-dev]] — **URL:** https://skyfall.dev
 - [[entities/snyk]] — Snyk — developer security platform. Integrated Anthropic Claude into AI Security Platform (May 2026) for vulnerability discovery and automated remediation.
+- [[entities/softwaredoug]] — Doug Turnbull (softwaredoug) — Search and relevance engineering expert, Principal Engineer at Daydream. Co-author of "Relevant Search" and "AI-Powered Search". Creator of Cheat at Search Essentials, Elasticsearch LTR plugin.
 - [[entities/solo-founder-stack]] — Solo Founder Stack
 - [[entities/soundstream]] — **SoundStream (Google)** | Foundational neural audio codec. Fully convolutional encoder-decoder + RVQ, 3–18 kbps variable bitrate. Prototype for EnCodec, DAC, and later tokenizers.
 - [[entities/speech-tokenizer]] — **SpeechTokenizer (Fudan)** | Unified semantic + acoustic speech tokenizer. HuBERT-distilled layer 1 for semantic, remaining layers for acoustic. ~50 Hz, ~4 kbps. Designed for speech LLMs.
@@ -609,7 +610,7 @@
 - [[entities/whatnot]] — Whatnot — Live shopping marketplace. Social commerce platform.
 - [[entities/will-brown]] — Will Brown (@willccbb) — Research at Prime Intellect. PhD Columbia (2024). Leads verifiers & prime-rl. COLT 2024. "Reward hacking."
 
-## Concepts (1342 pages)
+## Concepts (1343 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -866,6 +867,7 @@
 - [[concepts/multi-turn-tool-use-rl]] — Multi-Turn Tool Use with RL: GRPOを用いてLLMエージェントにマルチターンツールオーケストレーションを教える手法。Bespoke LabsがBFCL v3で+23%達成（Qwen2.5-7B, 100サンプル）。報酬設計のLess is More、過長フィルタリング+KL 0.001。
 - [[concepts/multi-token-prediction]] — Google Gemma 4 MTP drafters (May 2026): speculative decoding delivering up to 3x speedup. Lightweight drafter model predicts multiple tokens, main model verifies in single pass.
 - [[concepts/natural-language-autoencoders]] — Anthropic's interpretability technique (May 2026): converts model activations into human-readable text. Round-trip reconstruction scoring. Used to understand Claude's internal behavior, safety testing, and debugging.
+- [[concepts/ndcg]] — NDCG (Normalized Discounted Cumulative Gain): de facto search relevance metric. Measures ranked result quality against human judgments. Covers DCG, iDCG, judgment sources (human/clickstream/LLM), limitations, and the "grug-brained" evaluation philosophy.
 - [[concepts/normalization-of-deviance-in-ai-coding]]
 - [[concepts/nextpad-ai-development]] — Nextpad++ case study: AI multi-agent development quality challenges, "uncanny valley" of functional but poor UX software. — Risk of gradually trusting AI-generated code without review, coined from Diane Vaughan's Challenger disaster framework. Each successful unreviewed deployment reinforces trust, creating security/quality risk. AI agents lack professional reputation/accountability.
 - [[concepts/notion-cli]] — Notion CLI (ntn): official command-line tool for Notion API, Workers management, and file uploads. Designed for human developers and AI coding agents. Free on all plans.
