@@ -762,6 +762,10 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - [[entities/openclaw]] → [[concepts/agent-memory-systems-comparison]]
 - [[concepts/context-compaction]] → [[concepts/agent-memory-systems-comparison]]
 - [[concepts/ai-memory-systems]] → linked concepts
+
+### Follow-up: Hermes Agent added to comparison (same session)
+- `wiki/concepts/agent-memory-systems-comparison.md` — **Expanded from 3 to 4 harnesses**: Added Hermes Agent columns to all comparison tables (memory hierarchy, search/recall, embedding, generation, compaction, design philosophy). Added Hermes selection guide, Bustamante's "Bounded Snapshot" classification, SOUL.md identity layer, 3-Tier memory details, Curator/GEPA integration, prefix cache optimization analysis.
+- `wiki/index.md` — Updated comparison entry description to reflect 4 harnesses
 ## [2026-05-14] health | Wiki health auto-fix — 20 orphan concepts indexed
 
 ### Changes
