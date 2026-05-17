@@ -1,3 +1,14 @@
+## [2026-05-16] no-op | Newsletter wiki ingest — all 5 items already captured in entity pages
+
+Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Codex mobile, Cerebras IPO, Apple dispute, TanStack attack, and Gates Foundation partnership from RSS/blog sources before newsletter pipeline. All 19 verification checks passed.
+
+### Already Captured
+- **entities/codex.md** — Mobile Launch section (Codex in ChatGPT mobile app, secure relay, 4M+ WAU)
+- **entities/openai.md** — Apple Partnership Dispute + TanStack Supply Chain Attack sections
+- **entities/cerebras-systems.md** — IPO results ($280/share, $60B cap) + OpenAI 5.4/5.5
+- **entities/anthropic.md** — Gates Foundation $200M partnership
+
+---
 ## 2026-05-17 08:15 — Ingest "Search Evaluation (NDCG and pals)" slides by Doug Turnbull
 
 ### Created
