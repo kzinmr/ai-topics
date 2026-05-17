@@ -5,6 +5,14 @@
 - **concept: ndcg.md** — NDCG (Normalized Discounted Cumulative Gain): de facto search relevance metric. Full pipeline: Judgment List → DCG → iDCG → NDCG. Three judgment sources compared: human raters, clickstream (COEC model), LLM-as-judge (Umbrella prompt pattern). Six common failure modes: sparse ratings, bad iDCG, diversity blindness, UI quality blindness, data work overhead, intent interpretation. Beyond NDCG: side-by-sides, A/B tests, the "ship behind feature flag" philosophy.
 - **raw article: 2026-05-17_softwaredoug_search-evaluation-ndcg.md** — Google Slides text export from "Cheat at Search Essentials" (73 slides). Source: https://docs.google.com/presentation/d/1WJknXxaim_Z8aiVuQx6wr7W6MAWeaUJK0-NrgcEVQfQ
 
+## 2026-05-16 08:25 — Blog wiki ingest (no-op: all 17 articles already processed at 07:00)
+
+- All 17 blog candidates already captured by the 07:00 and 07:50 UTC blog-wiki-ingest runs
+- 0 takes, 0 references, 17 skips
+- Triage JSON read directly from `/opt/data/.hermes/cron/data/blog_ingest/triage_latest.json` (output file parse fallback)
+- Verified all claimed pages exist: entities/datasette-llm-limits.md, concepts/ai-bubble.md, entities/eric-jang.md, events/openai-may-2026-reorg.md, concepts/proof-of-useful-work.md, entities/omri-weinstein.md, entities/gary-marcus.md (updated), entities/greg-brockman.md (updated)
+
+
 ### Updated
 - **index.md** — Added entity (softwaredoug) and concept (ndcg) entries; updated counts (Entities 606→607, Concepts 1342→1343, Total 1982→1984, Indexed 1035→1037)
 - **concept: ndcg.md** — Cross-linked to [[entities/softwaredoug]]
