@@ -1,3 +1,38 @@
+## [2026-05-17] active-crawl | OpenAI GPT-Realtime Voice Models, Claude Orbit, Gemini Flash-Lite/3.2 Flash, CAISI AI Testing
+
+### Created (Concepts)
+- **concept: gpt-realtime-voice-models.md** — OpenAI's second-gen Realtime API voice models (May 7, 2026): GPT-Realtime-2 (GPT-5-class reasoning), GPT-Realtime-Translate (70→13 languages), GPT-Realtime-Whisper (streaming STT). Three voice AI patterns.
+- **concept: gemini-3-1-flash-lite.md** — Google's fastest/cost-efficient Gemini 3 series model, GA May 8, 2026. Enterprise adoption: JetBrains, Gladly (~60% lower cost, 99.6% success rate), Astrocade, krea.ai, Ramp.
+- **concept: gemini-3-2-flash.md** — Google's next-gen Flash model, leaked May 5, 2026. $0.25/$2.00 per 1M tokens. "Liquid Glass" UI. Expected at Google I/O 2026 (May 19-20).
+- **concept: ai-pre-release-testing.md** — US government framework for pre-deployment AI model evaluation. CAISI agreements with Microsoft, Google, xAI (May 5, 2026). Triggered by Claude Mythos cybersecurity concerns.
+
+### Created (Entities)
+- **entity: claude-orbit.md** — Anthropic's proactive assistant, leaked in Claude Cowork (May 5, 2026). Auto-generates briefings from Gmail, Slack, GitHub, Calendar, Drive, Figma. Roots in Claude Code leak's KAIROS/DREAM/ULTRAPLAN features.
+- **entity: caisi.md** — Center for AI Standards and Innovation (NIST/Commerce). Signed pre-release testing agreements with Microsoft, Google, xAI. Director: Chris Fall. 40+ model evaluations. Evaluated DeepSeek V4 Pro.
+
+### Raw Articles Saved
+- raw/articles/2026-05-07_openai_gpt-realtime-voice-models.md (OpenAI blog)
+- raw/articles/2026-05-05_anthropic_claude-orbit-leak.md (TestingCatalog via X)
+- raw/articles/2026-05-08_google_gemini-3-1-flash-lite-ga.md (Google Cloud Blog)
+- raw/articles/2026-05-05_caisi-ai-pre-release-testing.md (NIST / news aggregation)
+- raw/articles/2026-05-06_gemini-3-2-flash-leak.md (BuildFastWithAI)
+
+### Updated
+- **index.md** — Added 6 entries (Entities 607→609, Concepts 1343→1347, Total 1984→1990, Indexed 1037→1043)
+
+### Cross-References
+- gpt-realtime-voice-models ↔ entities/openai, concepts/voice-ai, concepts/gpt-realtime
+- gemini-3-1-flash-lite ↔ entities/google, concepts/gemini-3-flash, concepts/gemini-3-1-pro
+- gemini-3-2-flash ↔ entities/google, concepts/gemini-3-1-flash-lite, concepts/gemini-3-1-pro
+- ai-pre-release-testing ↔ entities/caisi, entities/anthropic, concepts/claude-mythos
+- claude-orbit ↔ entities/anthropic, concepts/claude-code, concepts/autonomous-agents
+- caisi ↔ concepts/ai-pre-release-testing, concepts/claude-mythos, entities/nist
+
+### Skipped
+- DeepSeek V4 (Pro/Flash) — already covered by concepts/deepseek-v4.md
+
+---
+
 ## [2026-05-16] no-op | Newsletter wiki ingest — all 5 items already captured in entity pages
 
 Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Codex mobile, Cerebras IPO, Apple dispute, TanStack attack, and Gates Foundation partnership from RSS/blog sources before newsletter pipeline. All 19 verification checks passed.
