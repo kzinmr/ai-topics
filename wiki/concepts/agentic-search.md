@@ -1,7 +1,7 @@
 ---
 title: Agentic Search
 created: 2026-04-30
-updated: 2026-05-17
+updated: 2026-05-18
 type: concept
 tags:
   - search
@@ -20,6 +20,7 @@ sources:
   - raw/papers/2026-03-20_2603.20432_coding-agents-effective-long-context-processors.md
   - raw/articles/2025-12-04_sid-1-agentic-retrieval.md
   - raw/articles/2026-04-06_softwaredoug-agentic-search-grep-moment.md
+  - raw/articles/2026-04-21_softwaredoug_dont-waste-time-on-rag-paradigm.md
   - raw/articles/2026-02-17_anthropic_dynamic-filtering-web-search.md
   - raw/articles/2026-03-30_claude-web-search-dynamic-filtering.md
   - raw/articles/2026-04-28_softwaredoug-can-agents-replace-search-stack.md
@@ -51,6 +52,24 @@ How agents query web search engines or fixed corpora to find relevant documents.
 
 ### Level 2: Skill/Tool Discovery (Agent Harness Layer)
 How agents discover which capabilities, skills, or tools are relevant to the current task — loading only what's needed into context to avoid token waste.
+
+---
+
+### Entry Point: The Paradigm Shift Manifesto (Turnbull, April 2026)
+
+Doug Turnbull's LinkedIn post *\"Don't waste too much time on the original RAG paradigm\"* [[raw/articles/2026-04-21_softwaredoug_dont-waste-time-on-rag-paradigm]] serves as a concise entry point to understand the **paradigm shift from RAG to agentic search**. It distills the key argument into a condensed manifesto:
+
+1. **RAG was retrieval-centric** — complexity lived in query understanding, routing, multi-strategy retrieval, combining+reranking, and statistics aggregation. This grew into a monolithic "thicc daddy" search system — exactly what the industry has built for decades.
+2. **Agentic search is harness-centric** — complexity moves to the agent+harness, which reasons about search results, reflects on irrelevance, and iteratively reformulates queries. The retrieval backends can be "dumb" (BM25, grep).
+3. **The progression**: structured attributes → tool calling → reasoning → scaffold+tools (SID-1, semantic grep). Each step reduces the need for complex retrieval infrastructure.
+4. **Practical advice**: Start with the dumbest thing that can work, with the simplest data system. Don't overbuild until you have data that shows where an agent cannot cope.
+
+The post's notable comments capture key tensions:
+- **Efficiency concern** (Gayhart): Dumb retrievers mean more tool calls — isn't that wasteful? Turnbull's response: fastest path to value is simple tools → user-driven roadmap.
+- **Retrieval quality still matters** (Boytsov): Core retrieval value remains high — not an either/or.
+- **User behavior** (Pickens): If users won't enter queries longer than 2.3 keywords, does agentic search help? Raises the question of human agency in agentic search.
+
+This framing is developed in greater depth across Turnbull's blog series ([[raw/articles/2026-04-06_softwaredoug-agentic-search-grep-moment]], [[raw/articles/2026-04-28_softwaredoug-can-agents-replace-search-stack]]), the Amazon ESCI benchmark results below, and Berryman's 5-level maturity model.
 
 ---
 

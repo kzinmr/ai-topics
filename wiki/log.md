@@ -773,7 +773,11 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
  dark-factory-software-factory, data-engineering, data-engineering-for-ml,
  data-validation-python-type-hints-rust-web-frameworks-fastapi, dataset-engineering,
 
-## [2026-05-17] enrich | Dynamic Filtering section enriched with official Anthropic blog
+## [2026-05-18] ingest | LinkedIn post: Doug Turnbull's RAG→Agentic Search paradigm shift manifesto
+
+### Changes
+- `wiki/raw/articles/2026-04-21_softwaredoug_dont-waste-time-on-rag-paradigm.md` — New raw article: Doug Turnbull LinkedIn post "Don't waste too much time on the original RAG paradigm" (Apr 21, 2026). Condensed manifesto on RAG→agentic search paradigm shift + notable comments from Gayhart, Boytsov, Pickens.
+- `wiki/concepts/agentic-search.md` — "Entry Point: The Paradigm Shift Manifesto" section added after Definition. Concise distillation of Turnbull's 4-point argument (retrieval-centric → harness-centric progression), practical advice, and comment tensions. Sources updated.
 
 ### Changes
 - `wiki/raw/articles/2026-02-17_anthropic_dynamic-filtering-web-search.md` — New raw article from official Anthropic blog (Feb 17, 2026). BrowseComp + DeepsearchQA benchmarks, Quora/Poe validation, GA tools context.
