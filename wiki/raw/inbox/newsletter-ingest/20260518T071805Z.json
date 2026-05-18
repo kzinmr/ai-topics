@@ -1,0 +1,167 @@
+{
+  "triage_timestamp": "2026-05-18T07:18:05.589278+00:00",
+  "run_id": "20260518T071428Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletters": [
+    {
+      "message_id": "<20260517123158.3.47c157f556e9b2cd@mg2.substack.com>",
+      "subject": "Why we're at the beginning of the AI hardware boom | Caitlin Kalinowski (ex-OpenAI, Meta, Apple)",
+      "source": "Lenny's Podcast (Substack)",
+      "source_label": "uid=101",
+      "date": "2026-05-17",
+      "author": "Lenny Rachitsky",
+      "author_handle": "lennysan",
+      "publication": "lenny",
+      "canonical_url": "https://open.substack.com/pub/lenny/p/why-were-at-the-beginning-of-the",
+      "canonical_url_resolved": true,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-17-why-we-re-at-the-beginning-of-the-ai-hardware-boom-caitlin-kalinowski-ex-openai-.md",
+      "classification": "high",
+      "importance": "★★★☆☆",
+      "relevance_score": 0.72,
+      "wiki_relevance": "AI hardware/infrastructure boom featuring Caitlin Kalinowski, a key hardware executive with experience at OpenAI (leading robotics & hardware), Meta (VR/AR hardware), and Apple (Mac Pro). Directly relevant to LLM inference/training infrastructure and the AI hardware ecosystem.",
+      "summary": "Podcast interview with Caitlin Kalinowski discussing why we're at the beginning of an AI hardware boom. Covers hardware challenges in AI training/inference, supply chain dynamics, and the hardware-software co-design imperative for next-gen AI systems.",
+      "recommended_action": "take",
+      "action_items": [
+        "Create entity page for Caitlin Kalinowski (ex-OpenAI/Meta/Apple hardware executive)",
+        "Consider creating concept page for AI Hardware Infrastructure if not already existing",
+        "Enrich existing inference-hardware or training-infrastructure concept pages"
+      ],
+      "tags": [
+        "ai-hardware",
+        "infrastructure",
+        "inference",
+        "training",
+        "hardware-software-co-design"
+      ],
+      "featured_entities": [
+        "Caitlin Kalinowski",
+        "OpenAI",
+        "Meta",
+        "Apple",
+        "Lenny Rachitsky"
+      ]
+    },
+    {
+      "message_id": "<20260517131433.3.607742a6acf874db@mg2.substack.com>",
+      "subject": "Anthropic Pulls Away, OpenAI Strikes Back, and Google's Gemini Rising",
+      "source": "The Signal by Alex Banks (Substack)",
+      "source_label": "uid=102",
+      "date": "2026-05-17",
+      "author": "Alex Banks",
+      "author_handle": "alexbanks",
+      "publication": "thesignal",
+      "canonical_url": "https://open.substack.com/pub/thesignal/p/anthropic-pulls-away-openai-strikes",
+      "canonical_url_resolved": true,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
+      "classification": "critical",
+      "importance": "★★★★★",
+      "relevance_score": 0.95,
+      "wiki_relevance": "Direct coverage of competitive dynamics between the three major LLM providers: Anthropic, OpenAI, and Google (Gemini). Core wiki territory — LLM ecosystem, model comparison, competitive landscape. High actionability for existing entity and concept pages.",
+      "summary": "Analysis of the current state of competition between Anthropic, OpenAI, and Google in the LLM space. Covers Anthropic's recent advances pulling ahead, OpenAI's counter-moves, and Google Gemini's rising position. Likely covers model capabilities, benchmarks, pricing, and strategic positioning.",
+      "recommended_action": "take",
+      "action_items": [
+        "Update Anthropic entity page with latest competitive positioning",
+        "Update OpenAI entity page with counter-moves",
+        "Update Google/Gemini entity page with rising trends",
+        "Create/update concept page for LLM Competitive Landscape or Model Comparison 2026",
+        "Extract specific model/capability claims for benchmark comparison pages",
+        "Create entity page for Alex Banks (The Signal newsletter author) if not existing"
+      ],
+      "tags": [
+        "llm",
+        "anthropic",
+        "openai",
+        "google",
+        "gemini",
+        "competitive-landscape",
+        "model-comparison"
+      ],
+      "featured_entities": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Gemini",
+        "Claude",
+        "ChatGPT",
+        "Alex Banks"
+      ]
+    },
+    {
+      "message_id": "<20260517.165233.e5223808@mta29>",
+      "subject": "The Agentic Economy Has No Black Box",
+      "source": "Beehiiv Newsletter (uid=103)",
+      "source_label": "uid=103",
+      "date": "2026-05-17",
+      "author": "Unknown (Beehiiv — need canonical URL to identify)",
+      "author_handle": null,
+      "publication": "unknown (uid=103)",
+      "canonical_url": null,
+      "canonical_url_resolved": false,
+      "canonical_url_notes": "Beehiiv tracking links only (link.mail.beehiiv.com). Web search found similar articles on agentic economy/observability themes: Tim O'Reilly's 'The Missing Mechanisms of the Agentic Economy' (oreillyradar.substack.com), 'The Black Box Problem' (digitalworkforce.work), and others. Exact canonical URL requires further resolution — possible digest format linking to multiple articles.",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-17-the-agentic-economy-has-no-black-box.md",
+      "classification": "critical",
+      "importance": "★★★★★",
+      "relevance_score": 0.9,
+      "wiki_relevance": "Directly addresses AI agent observability, the 'black box' problem in agentic AI, and the missing infrastructure for the agentic economy. Highly relevant to AI agent technologies, MCP ecosystem, agent payments/economics. Touches on key themes: agent observability, MCP extension architectures, agent payments (x402, Stripe), organic search for agents, and quality/governance of agent skills.",
+      "summary": "Explores the critical missing infrastructure for the agentic economy — primarily the observability and transparency gap ('no black box'). Likely covers agent tracing, payment/financial rails for agents (MCP payments, x402 protocol), organic search/discovery for agent services, and governance mechanisms. Appears to be a comprehensive survey of the infrastructure layer needed for autonomous AI agents to participate in the real economy.",
+      "recommended_action": "take",
+      "action_items": [
+        "NEEDS URL RESOLUTION: Resolve canonical URL via web_search with subject + date or by reading newsletter raw file for publication metadata",
+        "Create/update concept page for Agentic Economy or Agent Observability",
+        "Enrich existing MCP-related concept pages with payment/extension architecture details",
+        "Create/update concept page for AI Agent Payments/Economics (x402, Stripe agent payments)",
+        "Consider creating concept page for Agent Discovery/Search",
+        "Update existing agent-observability concept pages"
+      ],
+      "tags": [
+        "ai-agents",
+        "agentic-economy",
+        "observability",
+        "mcp",
+        "agent-payments",
+        "agent-discovery",
+        "agent-governance"
+      ],
+      "featured_entities": [
+        "MCP",
+        "Stripe",
+        "OpenAI",
+        "Vercel",
+        "Coinbase"
+      ]
+    }
+  ],
+  "summary": {
+    "total_newsletters": 3,
+    "by_classification": {
+      "critical": 2,
+      "high": 1,
+      "medium": 0,
+      "low": 0
+    },
+    "by_action": {
+      "take": 3,
+      "skip": 0,
+      "needs_investigation": 0
+    },
+    "key_themes": [
+      "LLM Competitive Landscape: Anthropic vs OpenAI vs Google intensifying",
+      "AI Hardware Infrastructure boom — training/inference hardware ecosystem",
+      "Agentic Economy Infrastructure — observability, payments, discovery, governance",
+      "MCP Ecosystem expansion — extension architectures, payment layers",
+      "Agent Observability gap — black box problem in production AI agents"
+    ],
+    "recommended_wiki_updates": [
+      "NEW ENTITY: Caitlin Kalinowski (hardware executive, ex-OpenAI/Meta/Apple)",
+      "NEW ENTITY: Alex Banks (author, The Signal newsletter)",
+      "UPDATE: Anthropic, OpenAI, Google/Gemini entity pages with competitive positioning",
+      "NEW/UPDATE CONCEPT: LLM Competitive Landscape Q2 2026",
+      "NEW/UPDATE CONCEPT: Agentic Economy Infrastructure",
+      "UPDATE: MCP concept page with payment/extension architecture",
+      "NEW CONCEPT: AI Agent Payments & Economics (x402, agent-to-agent payments)",
+      "UPDATE: Agent Observability concept pages"
+    ],
+    "unresolved_urls": 1,
+    "notes": "Newsletter #3 (Beehiiv) has unresolved canonical URL — 20 tracking links only. Web search found thematically related articles but exact source unidentified. Needs further resolution before wiki ingestion. Possible sources: Tim O'Reilly's oreillyradar.substack.com, or a curated digest from an AI-focused newsletter."
+  }
+}
