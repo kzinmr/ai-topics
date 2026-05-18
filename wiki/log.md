@@ -4,6 +4,24 @@
 
 ---
 
+### 2026-05-18 12:45 UTC — RecSys Newsletter Vol.156: BM25 + Agentic Deep Research
+## [2026-05-18] manual | BM25/PI-SERINI concept + entity pages from RecSys newsletter
+
+### Pages Created (2)
+- [[concepts/bm25]] — BM25 lexical retrieval algorithm: PI-SERINI shows BM25 + LLM agentic loop beats dense retrievers (83.1% BrowseComp-Plus accuracy, 3.3x–10x cheaper via prefix caching)
+- [[entities/pi-serini]] — Minimal search agent: BM25 + LLM in agentic loop. Tuned BM25 (k1=25, b=1), wall-clock budget (300s), prefix-cache-friendly (82-90% cache hit rate). Hsu et al., arXiv:2605.10848
+
+### Pages Updated (1)
+- [[concepts/bm25]] — Enriched with PI-SERINI architecture details, BrowseComp-Plus benchmark results, failure mode analysis, and cost efficiency data
+
+### Raw Articles (1)
+- raw/articles/2026-05-15_recsys_bm25-agentic-deep-research.md
+
+### Sources
+- https://recsys.substack.com/p/is-bm25-enough-for-agentic-deep-research
+- https://arxiv.org/abs/2605.10848
+- https://github.com/justram/pi-serini
+
 ### 2026-05-18 06:30 UTC — OPSD Article Ingestion (Siyan Zhao)
 ## [2026-05-18] active-crawl | AWS-OpenAI, Perceptron AI, SAP/Anthropic, AWS Agent Toolkit, Google AI Pointer
 

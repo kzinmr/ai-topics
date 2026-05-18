@@ -381,6 +381,7 @@
 - [[entities/peter-steinberger]] — Austrian software developer, creator of **OpenClaw** (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as **@steipete** on GitHub/Twitter. A pioneer of **AI-native dev...
 - [[entities/petra-donka]] — Petra Donka — Head of DevEx at Warp. Argues agents need feedback loops, not perfect prompts.
 - [[entities/pi]] — Mario Zechner（libGDX開発者）製ミニマルAIコーディングハーネス。~1K token system prompt、4ツールのみ（read/write/edit/bash）、45.5K GitHub Stars、MITライセンス。TypeScript拡張/スキル/テーマによる拡張。OpenClawの基盤。ローカルモデルに最適。**Runtime SubstrateとしてのPI**: 実行ループ、状態管理、タスクランタイム、ツールオーケストレーション、環境仲介、イベント処理、中断/復旧を担うプログラム可能なランタイム基盤。LangGraph/PydanticAIのオーケストレーションライブラリとは異なり、エージェントOSに近い。Source: kzinmr (2026-05-15)。
+- [[entities/pi-serini]] — Minimal search agent: BM25 + LLM agentic loop. 83.1% BrowseComp-Plus accuracy with gpt-5.5, beats dense retrievers at 3.3x–10x lower cost via prefix caching (82–90% cache hit rate). Hsu et al., arXiv:2605.10848.
 - [[entities/cory-doctorow]] — Canadian-British sci-fi author and digital rights activist. Coined "enshittification." Blogs at pluralistic.net. Critical voice on AI policy and corporate personhood.
 - [[entities/philiplaine-com]] — **URL:** https://philiplaine.com
 - [[entities/phil-schmid]] — Staff Engineer (AI DevX/DevRel) at Google DeepMind, ex-Hugging Face Tech Lead (revenue $0→$100M). Author of FSDP+Q-LoRA guide, RLHF tutorials, Inference Endpoints.
@@ -709,7 +710,7 @@
 - [[concepts/bayesian-agent-orchestration]] — ICML 2026 position paper: agentic AI orchestration should use Bayesian decision theory at the control layer. Maintain calibrated beliefs, update from human feedback, choose utility-maximizing actions. Addresses the "when to escalate to human" problem.
 - [[concepts/baudrillard-and-ai]] — ボードリヤールとAI — シミュラークルとシミュレーションのAI時代における現れ。ボードリヤールの4段階のイマージュ理論、ハイパーリアリティ、地図が領域に先行する「シミュラークルの先行」概念をLLM時代に適用。AIは模倣の失敗ではなくシミュラークルの完成形である。
 - [[concepts/bernstein]] — Deterministic multi-agent orchestrator. Python scheduler, zero LLM tokens on coordination, Git worktree isolation, 40+ agent adapters.
-- [[concepts/bm25]] — BM25 (Best Match 25): dominant lexical search scoring function. Evolved from TF-IDF with saturated term frequency, logarithmic IDF, and length normalization. BM25F for multi-field. Doug Turnbull's "BM25 ≈ Relevance Given Match" thesis and agentic search renaissance.
+- [[concepts/bm25]] — BM25 (Best Match 25): classical lexical retrieval algorithm (TF-IDF variant with saturation + length normalization). PI-SERINI (May 2026) demonstrated BM25 + capable LLM in agentic loop beats dense retrievers on BrowseComp-Plus (83.1% accuracy, 3.3x–10x cheaper). Tuned parameters: k1=25, b=1 for long documents. Key insight: agent reasoning about search results matters more than retrieval quality.
 - [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
 - [[concepts/claude-md-rules]] — Karpathy's CLAUDE.md behavioral guidelines for AI coding agents (4→12 rules, 41%→3% mistake rate). 120K+ GitHub stars. Most-starred single-file repo of 2026.
 - [[concepts/claude-opus-4-7]] — Claude Opus 4.7: AnthropicのフロンティアLLM（2026年4月リリース）
