@@ -4,6 +4,25 @@
 
 ---
 
+---
+## [2026-05-18] ingest | The Signal + Superintel newsletters (May 17)
+
+### Pages Created (3)
+- [[entities/figure-ai]] — Figure AI humanoid robotics, Helix-02 VLA model
+- [[entities/isomorphic-labs]] — AI drug discovery, $2.1B Series B
+- [[concepts/forward-deployed-engineering]] — FDE paradigm: deployment as moat
+
+### Pages Updated (5)
+- [[concepts/agent-governance]] — Added multi-owner agent economy & governance gaps (Superintel analysis)
+- [[concepts/model-context-protocol-mcp]] — Added security vulnerabilities & OX Security findings
+- [[entities/google]] — Added Gemini Intelligence, Magic Pointer, Project Suncatcher
+- [[entities/openai]] — Added Daybreak cybersecurity, Codex Mobile, Plaid integration
+- [[entities/anthropic]] — Added PwC certification, Ramp AI Index, 4 fronts paper, Colossus 1
+
+### Sources
+- raw/newsletters/2026-05-17-the-agentic-economy-has-no-black-box.md
+- raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md
+
 ## [2026-05-18] blog-ingest | Gary Marcus neurosymbolic AI, Sean Goedecke ZIRP engineer, OpenAI Codex for Work
 
 - **Updated**: `wiki/entities/gary-marcus.md` — Added "The illusion of Generative AI" (May 2026): neurosymbolic AI advocacy, world models case, hyperscaling critique. Three interviews: Brian Greene (World Science Festival), Zachary Karabell (Web Summit), Will Wilson/Antithesis (Bug Bash 2026). Added tags: neurosymbolic, world-models, ai-safety.

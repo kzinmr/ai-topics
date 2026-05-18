@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-05-16
+updated: 2026-05-18
 tags:
   - company
   - model
@@ -11,6 +11,7 @@ tags:
   - openai
 aliases: ["OpenAI Inc."]
 sources:
+  - raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md
   - raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md
   - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md
   - raw/newsletters/2026-04-28-openai-breaks-free-from-microsoft.md
@@ -147,6 +148,24 @@ Source: [How ChatGPT adoption broadened in early 2026](https://openai.com/signal
 - **70+言語翻訳**: リアルタイム多言語翻訳
 - **ストリーミング文字起こし**: 音声のリアルタイムテキスト変換
 - 音声インタラクションの新たな基盤モデルとして位置づけ
+
+
+### Daybreak — Cybersecurity Initiative (May 2026)
+
+OpenAI launched **Daybreak**, a cybersecurity initiative combining frontier models with Codex as an agentic harness:
+
+- **GPT-5.5-Cyber**: Specialized model with permissive behavior for authorized defensive workflows, paired with stronger verification and account-level controls
+- **Trusted Access for Cyber**: Mid-tier access with precise safeguards for verified defensive work (secure code review, vulnerability triage, malware analysis, detection engineering, patch validation)
+- **Ecosystem partners**: Cloudflare, CrowdStrike, Palo Alto Networks, and 8 major security vendors
+- **Philosophy**: "Safer software, resilient by design" — AI should find and patch vulnerabilities, and software should be resilient to them from the start
+- **Positioning**: Direct competitor to Anthropic's Claude Security / Project Glasswing
+- **Codex Security**: Agentic harness for security workflows — secure code review, threat modeling, patch validation, dependency risk analysis
+
+### Codex Mobile & ChatGPT Personal Finance (May 2026)
+
+- **Codex in ChatGPT mobile app**: Codex now runs on mobile with a Dispatch-like flow — start on phone, approve on laptop. Enables coding from anywhere.
+- **ChatGPT Pro + Plaid integration**: Personal finance features via Plaid connection to 12,000+ financial institutions. Positioned as AI-powered financial management.
+
 
 ### Codex ブラウザプラグイン
 

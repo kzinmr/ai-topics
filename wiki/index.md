@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-18 | Total pages: 2013 | Indexed entries: 1066 | Not in index: 927 |
+> Last updated: 2026-05-18 | Total pages: 2016 | Indexed entries: 1066 | Not in index: 927 |
 
-## Entities (622 pages)
+## Entities (624 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -208,6 +208,7 @@
 - [[entities/fidji-simo]] — CEO, OpenAI AGI Deployment (May 2026: medical leave); ex-AppLovin CEO, Meta VP. Key figure in OpenAI's product reorganization.
 - [[entities/fernando-borretti]] — **URL:** https://borretti.me
 - [[entities/figma]] — FigmaはClaude Designの登場により、**SaaS AI時代の脆弱性を示すケーススタディ**となっている。
+- [[entities/figure-ai]] — Figure AI — Humanoid robotics company. F.03 robot with Helix-02 VLA model autonomously sorted 100K+ packages. Onboard AI processing.
 - [[entities/filfre-net]] — **Blog** | filfre.net (The Digital Antiquarian) |
 - [[entities/fireworks-ai]] — AI inference and model customization platform. 13T+ tokens/day. Multi-hardware (NVIDIA+AMD), FireAttention, custom speculator training, RFT capabilities.
 - [[entities/folk-app]] — Nozomio Labs のパーソナル AI エージェント。iMessage/Telegram/Discord内で常駐。レストラン予約・航空券監視・アパート検索など。24/7稼働、永続メモリ。Pro $20/月、Max $100/月。
@@ -262,6 +263,7 @@
 - [[entities/ibm-watsonx-orchestrate]] — IBM's multi-agent "agentic control plane" for enterprise — unified governance, policy enforcement, auditability across thousands of agents. Announced Think 2026.
 - [[entities/inclusionai]] — AI company developing agent-optimized LLMs. Flagship model: Ring-2.6-1T (1T MoE, 63B active). Free on OpenRouter for coding agents, tool use, long-horizon tasks.
 - [[entities/intuit-machine]] — AI agent framework company focused on agentic AI skills design. Published 'Ten Design Principles of Agentic AI Skills Design' — structural insights about how AI systems achieve 10x-100x effectiveness.
+- [[entities/isomorphic-labs]] — Isomorphic Labs — Alphabet/DeepMind AI drug discovery spinout. $2.1B Series B (May 2026) led by Thrive Capital. Partnerships with Lilly, Novartis, J&J.
 - [[entities/ivan-burazin]] — CEO of Daytona. Coined "Headless SaaS" — SaaS rebuilt with agent-first APIs, no GUI.
 - [[entities/jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of **Bun** — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining...
 - [[entities/ivan-leo]] — Ivan Leo — Google DeepMind, ex-Manus. Co-hosted "Building Your Own OpenClaw from Scratch" workshop with Hugo Bowne-Anderson. Self-extending agents, agent architecture, live coding education. [[raw/articles/2026-02-28_substack_agents-that-build-themselves]]
@@ -626,7 +628,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1365 pages)
+## Concepts (1366 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -943,6 +945,7 @@
 - [[concepts/factorio-learning-environment]] — Factorio Learning Environment (FLE) — Factorioゲームを模したエージェントeval。コード+REPLで操作、ビジョン不要。24のlab-playタスク。NeurIPS 2025。
 - [[concepts/federation-of-experts]] — Federation of Experts (FoE) — communication-efficient distributed inference for MoE LLMs. Clusters experts by KV head, eliminates cross-node all-to-all. 5.2x latency reduction, 3.62x TTFT improvement.
 - [[concepts/flash-attention-4]] — FA4: Blackwell B200最適化のCUDAカーネル。1,605 TFLOPs/s（71%利用率）、cuDNN比1.3×高速。非同期パイプライン・ハイブリッドexp・条件的softmax rescaling。Tri Dao (Together AI/Princeton) ら。
+- [[concepts/forward-deployed-engineering]] — FDE: Frontier AI labs embedding engineers into enterprise customers. Models commoditize → deployment layer becomes the new moat. OpenAI $4B Deployment Co., Anthropic $1.5B JV, Google hiring hundreds.
 - [[concepts/frontier-swe-benchmark]] — FrontierSWE: 超高難度コーディングエージェントベンチマーク（Proximal Labs）。20時間制限、Implementation/Performance/Researchの3カテゴリ17タスク。GPT-5.5+Codexが平均ランク2.35（Dominance 83%）で首位。保守（GPT-5.4）vs攻撃的（Opus 4.6）の行動比較、overconfidence/cheating行動を記録。
 - [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.
 - [[concepts/agent-serverless]] — Serverless deployment pattern for AI agents with built-in SaaS integration, permissions, security, and log persistence tiers. Enterprise monetization via persistent logs and audit trails.

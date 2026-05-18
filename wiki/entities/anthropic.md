@@ -11,8 +11,9 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-05-16
+updated: 2026-05-18
 sources: [
+  "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
   "https://x.com/RLanceMartin/status/2041927992986009773",
   "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
   "raw/newsletters/2026-04-26-openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
@@ -131,6 +132,18 @@ Anthropic leads enterprise AI adoption with strong market metrics:
 - **IPO target**: October 2026 at $400–500B valuation (pre-$1T talks)
 - Revenue growth driven by enterprise Claude adoption and Code with Claude 2026 launches (M365 GA, Dreaming, Managed Agents)
 - Cleaner unit economics than OpenAI; focused on enterprise over consumer scale
+
+
+### Enterprise Adoption Milestones (May 2026)
+
+- **PwC Certification**: 30,000 PwC staff certified on Claude — one of the largest single-organization AI training programs
+- **Ramp AI Index**: Anthropic-powered businesses show 34.4% AI adoption vs. 32.3% for non-Anthropic — indicating measurable productivity advantage
+- **Four Fronts of AI Competition**: Anthropic published a paper identifying the 4 dimensions of AI competition (models, deployment, trust, economics)
+
+### Colossus 1 — Memphis 300MW Deployment
+
+Anthropic's **Colossus 1** compute cluster in Memphis provides 300MW / 220K+ GPU capacity, operational as of May 2026. This is part of the SpaceXAI partnership and represents Anthropic's largest dedicated training infrastructure.
+
 
 ### Gates Foundation Partnership (May 2026)
 

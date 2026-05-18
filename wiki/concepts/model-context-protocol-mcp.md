@@ -2,15 +2,16 @@
 title: "Model Context Protocol (MCP)"
 type: concept
 created: 2026-04-19
-updated: 2026-04-19
-tags: [concept, mcp, agent-tooling, protocol, anthropic]
+updated: 2026-05-18
+tags: [concept, mcp, developer-tooling, protocol, anthropic]
 aliases: ["mcp", "model context protocol", "MCP protocol"]
 related:
   - concepts/cli-over-mcp-pattern
   - concepts/structured-outputs
   - concepts/code-mode
   - concepts/harness-engineering/system-architecture/code-execution-with-mcp
-sources: []
+sources:
+  - raw/newsletters/2026-05-17-the-agentic-economy-has-no-black-box.md
 ---
 
 # Model Context Protocol (MCP)
@@ -136,6 +137,27 @@ Some developers (notably @steipete) argue that **standard CLI tools are often su
 - No server management — single binary vs. MCP server lifecycle
 
 MCP excels for structured data access and real-time integrations, while CLIs are better for one-off data retrieval and system operations.
+
+
+## Security Vulnerabilities & Governance Risks (May 2026)
+
+As of May 2026, MCP has reached **150M+ downloads** and become the de facto connective tissue of the agentic web. This scale has surfaced critical security concerns:
+
+### OX Security Findings
+- **Trust-boundary risks** in MCP's STDIO execution model affected thousands of publicly accessible servers
+- Up to **200,000 vulnerable instances** identified
+- 10+ high/critical CVEs in downstream projects
+- Researchers successfully **poisoned 9 of 11 public MCP registries**
+
+### Exposure & Authorization Gaps
+- Bitsight found ~**1,000 MCP servers exposed** to the internet with **no authorization controls**
+- No shared public place to report or track infrastructure-level failures
+- Systemic stress fractures reported at scale
+
+### Governance Implications
+MCP's rapid adoption as agent infrastructure creates a governance gap: the protocol is open and decentralized, but security responsibility is diffused across server operators, registry maintainers, and agent developers. See [[concepts/agent-governance]] for the broader multi-owner economy framework.
+
+Source: [Superintel — "The Agentic Economy Has No Black Box"](https://getsuperintel.site/p/the-agentic-economy-has-no-black-box) (Patrick Hussey, May 17, 2026), citing OX Security research
 
 ## Related Concepts
 
