@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-18 | Total pages: 2016 | Indexed entries: 1066 | Not in index: 927 |
+> Last updated: 2026-05-18 | Total pages: 2022 | Indexed entries: 1072 | Not in index: 927 |
 
-## Entities (624 pages)
+## Entities (626 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -376,6 +376,7 @@
 - [[entities/overreacted-io]] — **URL:** https://overreacted.io
 - [[entities/paul-hoekstra]] — Data engineer and author of Paul's Pipeline (Substack). Defined the 4-layer Agentic Engineering framework (Configuration → Capability → Orchestration → Guardrails) for coding agents like Claude Code and Codex.
 - [[entities/paulgraham-com]] — **Blog** | paulgraham.com |
+- [[entities/perceptron-ai]] — Perceptron AI — Physical AI research lab. Perceptron Mk1: video understanding + embodied reasoning model matching frontier labs at lower cost. Founded Nov 2024 by Armen Aghajanyan & Akshat Shrivastava (ex-FAIR).
 - [[entities/perplexity-comet]] — Perplexity Cometは、Perplexity AIが開発したAIネイティブブラウザ。2025年7月にWindows/macOSでリリースされ、同年11月にAndroid、2026年3月にiOSに対応。「ブラウザをAIエージェントにする」戦略の最前線に位置する製品。
 - [[entities/peter-steinberger]] — Austrian software developer, creator of **OpenClaw** (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as **@steipete** on GitHub/Twitter. A pioneer of **AI-native dev...
 - [[entities/petra-donka]] — Petra Donka — Head of DevEx at Warp. Argues agents need feedback loops, not perfect prompts.
@@ -416,6 +417,7 @@
 - [[entities/samuel-colvin]] — **Name** | Samuel Colvin |
 - [[entities/sandro-puppo]] — Co-founder of Cua (YC X25) and Lucebox. Focus on local LLM inference optimization and computer-use agent infrastructure.
 - [[entities/sankalp-sinha]] — **Sankalp Sinha**, known online as **dejavucoder** (@dejavucoder), is an **AI engineer** and applied LLM researcher based in India. He focuses on AI-assisted coding, agentic workflows, LLM evaluati...
+- [[entities/sap-business-ai-platform]] — SAP Business AI Platform — Unified enterprise AI foundation announced at SAP Sapphire 2026. SAP Knowledge Graph, Joule Studio, Autonomous Suite. Anthropic Claude as primary reasoning engine for Joule agents.
 - [[entities/sara-hooker]] — Researcher at Google DeepMind. Author of **"The Hardware Lottery"** — foundational framework on how hardware availability determines AI research direction. Advocate for cross-disciplinary hardware/software/ML collaboration.
 - [[entities/scott-wu]] — CEO and co-founder of **Cognition AI**, the company behind **Devin** — the world's first autonomous AI software engineer. Former competitive programming champion (3× IOI gold medals, 1st place in 2...
 - [[entities/scott-alexander]] — Scott Alexander (Scott Alexander Siskind) — Psychiatrist and blogger. Slate Star Codex / Astral Codex Ten. Author of "Meditations On Moloch" (2014), popularizing the concept of multipolar traps. Central figure in rationalist community and AI safety discourse.
@@ -629,7 +631,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1366 pages)
+## Concepts (1370 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -699,6 +701,8 @@
 - [[concepts/antangelmed]] — 103B-parameter open-source medical MoE model. 1/32 activation ratio (6.1B active). GRPO-trained. 7× efficiency over dense architectures.
 - [[concepts/automated-competitor-analysis]] — Automated competitor analysis with AI agents: Discover → Extract → Monitor pipeline, signal taxonomy
 - [[concepts/automation-series]] — Antoine Buteau's Automation Series
+- [[concepts/aws-agent-toolkit]] — AWS Agent Toolkit — Production-ready suite (May 2026) for AI coding agents on AWS: 40+ agent skills, managed MCP server (GA), 3 plugins (Core, Data Analytics, Agents). Successor to AWS Labs.
+- [[concepts/aws-openai-bedrock-partnership]] — AWS-OpenAI Bedrock Partnership — OpenAI models on Bedrock, Codex on Bedrock, Bedrock Managed Agents (all limited preview, May 2026). Enterprise-grade security + AWS commitments.
 - [[concepts/back-of-house-multi-agent-patterns]] — Back of House Multi-Agent Patterns
 - [[concepts/back-of-house-patterns]] — Back of House Multi-Agent Patterns
 - [[concepts/bayesian-agent-orchestration]] — ICML 2026 position paper: agentic AI orchestration should use Bayesian decision theory at the control layer. Maintain calibrated beliefs, update from human feedback, choose utility-maximizing actions. Addresses the "when to escalate to human" problem.
@@ -814,6 +818,7 @@
 - [[concepts/gnap-git-native-agent-protocol]] — GNAP: Git-Native Agent Protocol — coordinate AI agent teams via git repo. 4 JSON files, zero servers. MIT licensed (farol-team). Complements MCP/A2A.
 - [[concepts/granite-4-1]] — IBMのApache 2.0オープンソースLLMファミリー（3B/8B/30B）。15T token訓練、512Kコンテキスト。8Bが前世代32B MoEに匹敵。GRPO+DAPOのRL訓練。
 - [[concepts/good-regulator-theorem]] — Good Regulator Theorem (Gooder Regulator): Conant & Ashby (1970) の「あらゆる良いレギュレータはシステムのモデルでなければならない」を John Wentworth (2021) が情報ボトルネック制約を加えて修正した選択定理。AIエージェントの世界モデル・評価設計・ハーネス効果の理論的基盤。tailcalled の [[concepts/causal-backbone-conjecture]] が批判的応答。
+- [[concepts/google-ai-pointer]] — Google AI Pointer (Magic Pointer) — DeepMind's reimagined mouse pointer powered by Gemini (May 2026). Four principles: maintain flow, show-and-tell, embrace "this/that", pixels→entities. Integrated into Chrome and Googlebook.
 - [[concepts/google-flow-music]] — Google Flow Music — Google Labs AI music creation tool powered by Lyria 3 Pro. May 2026 partnership with Believe/TuneCore for artist distribution. AI-assisted lyrics, melodies, instruments. Artist retains ownership.
 - [[concepts/google-project-mariner-shutdown]] — Google's shutdown of Project Mariner browser agent in May 2026 due to poor performance and high costs.
 - [[concepts/gpqa]] — GPQA — 大学院レベルのGoogle-proof Q&A。生物学・物理学・化学の448問（Diamond set 198問）。PhD専門家65-74%、非専門家34%。フロンティアモデルは~94%で飽和しつつある。
@@ -825,6 +830,7 @@
 - [[concepts/pentagon-ai-contracts-2026]] — Pentagon signs AI deals with 8 companies (May 2026): SpaceX, OpenAI, Google, Microsoft, NVIDIA, AWS, Oracle, Reflection. Anthropic excluded over AI safety stance — under litigation. Google DeepMind UK staff 98% unionize over Pentagon contract.
 - [[concepts/petri-alignment]] — Anthropic's open-source AI safety evaluation tool. Petri 3.0 donated to Meridian Labs (May 2026) for independent stewardship. "Dish" real-system-prompt testing, Bloom behavior assessments.
 - [[concepts/peoplereadmes]] — Open-source framework by Muratcan Koylan for creating persona context systems to study how exceptional technical builders operate. Pipeline: public evidence → source map → project analysis → tacit-knowledge extraction → technical model → prompt system → eval rubric. First persona: Riley Walz.
+- [[concepts/perceptron-mk1]] — Perceptron Mk1 — Physical AI model for video understanding + embodied reasoning (May 2026). Matches frontier labs (Google, Anthropic, OpenAI, Qwen) at lower cost. API + OpenRouter.
 - [[concepts/pi-autoresearch]] — pi-autoresearch (Shopify) — Generalizes Karpathy's Autoresearch from ML training to arbitrary metric optimization. 3,600+ GitHub stars. 65% faster builds, 300x faster tests, 40+ metrics improved.- [[concepts/llm-creative-writing]]
 - [[concepts/linguistic-vertigo]] — QC (Qiaochu Yuan) によるLLM時代の言語的真正性喪失の認知現象。言語的めまい（linguistic vertigo）、頭の言葉 vs 身体の言葉、LLMをトレーサー色素とする社会診断、RLHFの社会的影（→ [[concepts/societal-shadow]]）。Gwernによるプロンプト視覚（unseeing / prompt-vision）の補遺を含む。体験的前提は[[raw/articles/2023-03-13_qchu-re-encountering-language.md]]。
 - [[concepts/local-ai]] — **Local AI Landscape — May 2026**: Andrew Chen (a16z) のホームラボ体験をケーススタディとしたローカルAIの現在地。ハードウェア（DGX Spark/5090 eGPU/Mac Studio/Strix Halo）、モデル品質1年遅れテーゼ、ソフトウェアスタック（ollama→LiteLLM→vLLM）、2027年Opus級ローカルモデル予測、非同期バッチ処理ユースケース。→ [[entities/andrew-chen]]

@@ -5,6 +5,32 @@
 ---
 
 ### 2026-05-18 06:30 UTC — OPSD Article Ingestion (Siyan Zhao)
+## [2026-05-18] active-crawl | AWS-OpenAI, Perceptron AI, SAP/Anthropic, AWS Agent Toolkit, Google AI Pointer
+
+### Pages Created (6)
+- [[entities/perceptron-ai]] — Physical AI research lab, Perceptron Mk1 model
+- [[concepts/perceptron-mk1]] — Video understanding + embodied reasoning model
+- [[entities/sap-business-ai-platform]] — SAP's unified enterprise AI platform
+- [[concepts/aws-openai-bedrock-partnership]] — OpenAI models on Bedrock, Bedrock Managed Agents
+- [[concepts/aws-agent-toolkit]] — 40+ agent skills, managed MCP server for AWS
+- [[concepts/google-ai-pointer]] — DeepMind's AI-enabled pointer (Magic Pointer)
+
+### Raw Articles (5)
+- raw/articles/2026-05-18_aws-openai-bedrock-partnership.md
+- raw/articles/2026-05-18_perceptron-ai-mk1.md
+- raw/articles/2026-05-18_sap-anthropic-claude-business-ai-platform.md
+- raw/articles/2026-05-18_aws-agent-toolkit.md
+- raw/articles/2026-05-18_google-deepmind-ai-pointer.md
+
+### Sources
+- https://www.aboutamazon.com/news/aws/bedrock-openai-models
+- https://finance.yahoo.com/sectors/technology/articles/perceptron-ai-launches-physical-ai-153000413.html
+- https://news.sap.com/2026/05/sap-anthropic-to-bring-claude-sap-business-ai-platform/
+- https://aws.amazon.com/about-aws/whats-new/2026/05/agent-toolkit/
+- https://deepmind.google/blog/ai-pointer/
+
+---
+
 
 Ingested "Self-Distilled Reasoner: On-Policy Self-Distillation" by Siyan Zhao et al. (UCLA/Meta Superintelligence Labs, 2026) from siyan-zhao.github.io.
 

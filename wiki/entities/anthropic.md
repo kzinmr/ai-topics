@@ -26,6 +26,7 @@ sources: [
   "raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md",
   - raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md
   - raw/newsletters/2026-05-15-codex-goes-everywhere.md
+  - raw/articles/2026-05-18_sap-anthropic-claude-business-ai-platform.md
 ]
 related: []
 ---
@@ -292,11 +293,19 @@ Anthropic は複数の大規模計算資源契約を締結：
 
 Claude は **AWS Trainium、Google TPU、NVIDIA GPU** の複数ハードウェアで訓練・実行されている。
 
+
+### SAP Business AI Platform (May 2026)
+
+At SAP Sapphire 2026, Anthropic and SAP announced plans to embed Claude as a primary reasoning and agentic engine across SAP's AI-enabled portfolio, powering Joule and Joule agents via the [[entities/sap-business-ai-platform]]. Claude connects to the platform to coordinate tasks across SAP S/4HANA, SuccessFactors, and Ariba via MCP. Christian Klein (SAP CEO) and Daniela Amodei (Anthropic president) jointly announced the partnership.
+
+Key focus industries: public sector, healthcare, education, life sciences, utilities.
+
 ## Related
 - [[entities/anthropic]] — The model family
 - [[entities/claude-code]] — Claude Code CLI agent
 - [[entities/claude-mythos]] — Claude Mythos model (used by Claude Security)
 - [[entities/foundation-capital]] — Partner in Claude Managed Agents
+- [[entities/sap-business-ai-platform]] — SAP partnership (May 2026)
 - [[concepts/claude-managed-agents]] — Managed Agents platform details
 - [[concepts/project-glasswing]] — Defensive security initiative
 
