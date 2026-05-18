@@ -3,7 +3,11 @@ title: Claude Orbit
 created: 2026-05-17
 updated: 2026-05-17
 type: entity
-tags: [anthropic, product, ai-agents, autonomous-agents, proactive]
+tags:
+  - anthropic
+  - product
+  - ai-agents
+  - proactive
 sources: [raw/articles/2026-05-05_anthropic_claude-orbit-leak.md]
 ---
 

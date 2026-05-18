@@ -3,7 +3,15 @@ title: "Interaction Models"
 created: 2026-05-11
 updated: 2026-05-11
 type: concept
-tags: [multimodal, real-time, human-in-the-loop, streaming, voice-ai, ai-native, tool-use, research]
+tags:
+  - multimodal
+  - infrastructure
+  - human-in-the-loop
+  - streaming
+  - voice-ai
+  - ai-native
+  - tool
+  - lab
 sources:
   - raw/articles/2026-05-11_thinkingmachines_interaction-models.md
 aliases: ["interaction model", "native interaction models"]

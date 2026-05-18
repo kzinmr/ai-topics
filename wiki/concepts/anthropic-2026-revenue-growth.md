@@ -3,7 +3,11 @@ title: "Anthropic 2026 Revenue Growth ($44B ARR)"
 created: 2026-05-12
 updated: 2026-05-12
 type: concept
-tags: [anthropic, company, economics, enterprise-ai, ai-adoption]
+tags:
+  - anthropic
+  - company
+  - economics
+  - ai-adoption
 sources: [raw/articles/2026-05-07_anthropic-q1-2026-revenue-44b-arr.md]
 ---
 

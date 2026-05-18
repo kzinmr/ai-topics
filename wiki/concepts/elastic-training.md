@@ -3,7 +3,10 @@ title: Elastic Training (Once-For-All)
 created: 2026-05-16
 updated: 2026-05-16
 type: concept
-tags: [training, optimization, model, mixture-of-experts, distillation]
+tags:
+  - training
+  - optimization
+  - model
 sources: [raw/articles/the-decoder.com--baidu-ernie-5-1-94-percent-cost-reduction--2026-05-16.md]
 ---
 

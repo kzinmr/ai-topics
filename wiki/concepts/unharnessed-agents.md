@@ -8,9 +8,9 @@ created: 2026-05-13
 updated: 2026-05-13
 tags:
   - concept
-  - agent-harness
+  - harness-engineering
   - ai-agents
-  - agent-architecture
+  - architecture
   - ai-product
 sources:
   - raw/articles/2026-04-24_arcturus-labs_unharnessed-agents.md

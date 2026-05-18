@@ -1,7 +1,11 @@
 ---
 title: "Automated Competitor Analysis with AI Agents"
 type: concept
-tags: [ai-agents, automation, search, monitoring]
+tags:
+  - ai-agents
+  - automation
+  - search
+  - infrastructure
 created: 2026-04-17
 updated: 2026-05-11
 source: https://parallel.ai/articles/how-to-automate-competitor-analysis-with-ai-agents

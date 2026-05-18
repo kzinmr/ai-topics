@@ -6,7 +6,7 @@ type: concept
 tags:
   - ai-agents
   - data-science
-  - knowledge-management
+  - information-retrieval
   - prompting
 status: active
 ---

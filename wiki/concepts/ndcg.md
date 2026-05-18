@@ -3,7 +3,10 @@ title: NDCG (Normalized Discounted Cumulative Gain)
 created: 2026-05-17
 updated: 2026-05-17
 type: concept
-tags: [evaluation, information-retrieval, search, benchmark]
+tags:
+  - evaluation
+  - search
+  - benchmark
 sources: [raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg.md]
 ---
 

@@ -3,7 +3,11 @@ title: Vector Search
 created: 2026-05-13
 updated: 2026-05-13
 type: concept
-tags: [vector-search, information-retrieval, search, embeddings, hnsw, ai-agents]
+tags:
+  - search
+  - model
+  - hnsw
+  - ai-agents
 sources: [raw/articles/2026-05-13_softwaredoug_vector-search-embeddings.md]
 ---
 

@@ -3,7 +3,13 @@ title: "RLVR (Reinforcement Learning with Verifiable Rewards)"
 created: 2026-05-13
 updated: 2026-05-13
 type: concept
-tags: [concept, rlvr, grpo, training, post-training, reasoning, test-time-scaling, agent-training]
+tags:
+  - concept
+  - rlvr
+  - training
+  - reasoning
+  - test-time-scaling
+  - agent-training
 aliases: [Reinforcement Fine-Tuning, RFT, outcome-only RL]
 sources: ["[[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025]]", "https://arxiv.org/abs/2411.15124", "https://arxiv.org/abs/2501.12948"]
 ---

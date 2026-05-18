@@ -7,7 +7,7 @@ tags:
   - orchestration
   - durable-execution
   - workflow
-  - agents
+  - ai-agents
 aliases:
   - Mistral Workflows
   - Workflows (Mistral AI)

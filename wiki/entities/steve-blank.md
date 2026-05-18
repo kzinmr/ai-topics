@@ -7,8 +7,6 @@ created: 2026-04-09
 updated: 2026-05-17
 tags:
   - person
-  - entrepreneur
-  - educator
   - lean-startup
   - customer-development
   - writing

@@ -4,7 +4,15 @@ created: 2026-05-18
 updated: 2026-05-18
 type: entity
 entity_type: tool
-tags: [memory-systems, coding-agents, agent-memory, ai-agents, agent-harness, agent-architecture, open-source, mcp, bm25]
+tags:
+  - memory-systems
+  - coding-agents
+  - ai-agents
+  - harness-engineering
+  - architecture
+  - open-source
+  - mcp
+  - bm25
 sources:
   - https://github.com/rohitg00/agentmemory
   - https://alphasignalai.substack.com/p/how-agentmemory-works-and-how-to

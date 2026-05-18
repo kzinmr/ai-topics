@@ -3,7 +3,13 @@ title: Center for AI Standards and Innovation (CAISI)
 created: 2026-05-17
 updated: 2026-05-17
 type: entity
-tags: [nist, governance, ai-safety, security, policy, evaluation]
+tags:
+  - nist
+  - governance
+  - agent-safety
+  - security
+  - policy
+  - evaluation
 sources: [raw/articles/2026-05-05_caisi-ai-pre-release-testing.md]
 ---
 

@@ -4,7 +4,7 @@ type: concept
 tags:
   - model
   - openai
-  - history
+  - timeline
 status: active
 created: 2026-04-27
 updated: 2026-04-27

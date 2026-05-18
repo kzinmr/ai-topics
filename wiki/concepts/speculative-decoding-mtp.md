@@ -3,7 +3,11 @@ title: "Speculative Decoding and Multi-Token Prediction"
 created: 2026-05-06
 updated: 2026-05-06
 type: concept
-tags: [inference, optimization, speculative-decoding, mtp, performance, google]
+tags:
+  - inference
+  - optimization
+  - mtp
+  - google
 aliases:
   - multi-token-prediction
   - mtp

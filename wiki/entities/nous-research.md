@@ -8,7 +8,6 @@ tags:
   - lab
   - open-source
   - nous-research
-  - hermes-agent
   - ai-agents
   - self-improving
   - gepa

@@ -3,7 +3,17 @@ title: "Zombie Internet"
 created: 2026-05-12
 updated: 2026-05-12
 type: concept
-tags: [ai-safety, ai-governance, ethics, philosophy, ai-adoption, community, ecosystem, controversy, memetics, existential-risk]
+tags:
+  - agent-safety
+  - ai-governance
+  - ethics
+  - philosophy
+  - ai-adoption
+  - community
+  - ecosystem
+  - controversy
+  - memetics
+  - existential-risk
 aliases: ["zombie internet", "dead internet"]
 related:
   - concepts/ai-slop

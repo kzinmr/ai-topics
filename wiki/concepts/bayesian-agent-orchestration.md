@@ -3,7 +3,12 @@ title: "Bayesian Agent Orchestration"
 created: 2026-05-12
 updated: 2026-05-12
 type: concept
-tags: [ai-agents, orchestration, rationality, research, human-in-the-loop]
+tags:
+  - ai-agents
+  - orchestration
+  - rationality
+  - lab
+  - human-in-the-loop
 sources: [raw/articles/2026-05-01_arxiv-bayesian-agent-orchestration.md]
 ---
 

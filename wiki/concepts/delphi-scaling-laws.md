@@ -3,7 +3,13 @@ title: "Delphi Scaling Laws"
 created: 2026-05-11
 updated: 2026-05-11
 type: concept
-tags: [scaling, training, research, open-source, benchmark, optimization, ai-research, data-science]
+tags:
+  - optimization
+  - training
+  - lab
+  - open-source
+  - benchmark
+  - data-science
 sources:
   - raw/articles/2026-04-14_openathena_delphi-scaling-laws.md
 aliases: ["Delphi", "Delphi scaling suite", "Marin Delphi"]

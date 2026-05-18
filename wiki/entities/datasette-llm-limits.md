@@ -5,9 +5,8 @@ created: 2026-05-16
 updated: 2026-05-16
 tags:
   - tool
-  - llm
-  - tool
-  - cost-optimization
+  - model
+  - optimization
 sources:
   - raw/articles/simonwillison.net--2026-may-15-datasette-llm-limits--c4c541c4.md
 ---

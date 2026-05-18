@@ -3,7 +3,13 @@ title: "NVIDIA Vera Rubin Platform"
 created: 2026-05-14
 updated: 2026-05-14
 type: concept
-tags: [nvidia, platform, hardware, gpu, infrastructure, networking, ai-infrastructure, architecture]
+tags:
+  - nvidia
+  - platform
+  - hardware
+  - infrastructure
+  - networking
+  - architecture
 sources:
   - raw/articles/2026-01-05_nvidia_vera-rubin-platform.md
   - raw/articles/2026-05-14_kzinmr_nvidia-rubin-comprehensive-report.md

@@ -9,7 +9,7 @@ updated: 2026-05-13
 tags:
   - person
   - microsoft
-  - ai-coding
+  - coding-agents
   - developer-tooling
   - open-source
 status: L2

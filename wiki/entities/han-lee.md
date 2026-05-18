@@ -5,10 +5,8 @@ updated: 2026-05-15
 type: person
 tags:
   - person
-  - researcher
-  - ai-infrastructure
+  - infrastructure
   - agent-runtime
-  - ml-engineering
   - technical-debt
 aliases: [Hanchung Lee, Han-chung Lee, leehanchung]
 sources:

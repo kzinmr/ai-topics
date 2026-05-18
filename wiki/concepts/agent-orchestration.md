@@ -3,7 +3,13 @@ title: Agent Orchestration
 created: 2026-05-16
 updated: 2026-05-16
 type: concept
-tags: [ai-agents, multi-agent, orchestration, enterprise-ai, governance, agent-architecture]
+tags:
+  - ai-agents
+  - multi-agent
+  - orchestration
+  - company
+  - governance
+  - architecture
 sources: [raw/articles/ibm.com--think-2026-ai-operating-model-agent-orchestration--2026-05-16.md]
 ---
 

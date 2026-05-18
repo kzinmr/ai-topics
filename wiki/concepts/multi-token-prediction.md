@@ -3,7 +3,11 @@ title: "Multi-Token Prediction (MTP) Drafters"
 created: 2026-05-12
 updated: 2026-05-12
 type: concept
-tags: [inference, optimization, speculative-decoding, google, open-source]
+tags:
+  - inference
+  - optimization
+  - google
+  - open-source
 sources: [raw/articles/2026-05-05_google-gemma-4-multi-token-prediction.md]
 ---
 

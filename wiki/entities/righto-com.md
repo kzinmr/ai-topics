@@ -9,7 +9,7 @@ tags:
   - hn-popular
   - reverse-engineering
   - hardware
-  - computer-history
+  - timeline
   - microcode
 aliases:
 - righto.com

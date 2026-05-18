@@ -3,7 +3,16 @@ title: AWS-OpenAI Bedrock Partnership
 created: 2026-05-18
 updated: 2026-05-18
 type: concept
-tags: [concept, aws, openai, platform, ai-infrastructure, ai-agents, coding-agents, mcp, enterprise-ai, cloud]
+tags:
+  - concept
+  - aws
+  - openai
+  - platform
+  - infrastructure
+  - ai-agents
+  - coding-agents
+  - mcp
+  - company
 sources: [raw/articles/2026-05-18_aws-openai-bedrock-partnership.md, https://www.aboutamazon.com/news/aws/bedrock-openai-models]
 ---
 

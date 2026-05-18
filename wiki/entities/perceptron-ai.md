@@ -3,7 +3,13 @@ title: Perceptron AI
 created: 2026-05-18
 updated: 2026-05-18
 type: entity
-tags: [company, model, multimodal, vlm, robotics, ai-research, startup]
+tags:
+  - company
+  - model
+  - multimodal
+  - vlm
+  - robotics
+  - lab
 sources: [raw/articles/2026-05-18_perceptron-ai-mk1.md, https://finance.yahoo.com/sectors/technology/articles/perceptron-ai-launches-physical-ai-153000413.html]
 ---
 

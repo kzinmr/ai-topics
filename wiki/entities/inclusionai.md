@@ -7,7 +7,6 @@ tags:
   - company
   - model
   - open-source
-  - mixture-of-experts
   - coding-agents
 sources:
   - raw/articles/2026-05-13_inclusionai-ring-2-6-1t.md

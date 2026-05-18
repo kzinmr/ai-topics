@@ -9,7 +9,7 @@ updated: 2026-05-17
 tags:
   - concept
   - memory-systems
-  - agent-architecture
+  - architecture
   - context-engineering
   - comparison
 sources:

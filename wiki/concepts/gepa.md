@@ -3,7 +3,16 @@ title: "GEPA (Genetic-Pareto Prompt Evolution)"
 created: 2026-05-14
 updated: 2026-05-14
 type: concept
-tags: [gepa, evolutionary-algorithms, prompting, optimization, self-improving, agent-skills, hermes-agent, nous-research, evaluation]
+tags:
+  - gepa
+  - evolutionary-algorithms
+  - prompting
+  - optimization
+  - self-improving
+  - agent-skills
+  - ai-agents
+  - nous-research
+  - evaluation
 sources:
   - raw/articles/2026-05-13_akshaypachaar_hermes-agent-masterclass.md
   - raw/papers/2025-07-25_2507.19457_gepa-reflective-prompt-evolution.md

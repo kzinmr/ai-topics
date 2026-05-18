@@ -3,7 +3,13 @@ title: AI Pre-Release Government Testing
 created: 2026-05-17
 updated: 2026-05-17
 type: concept
-tags: [ai-safety, governance, policy, security, regulation, nist]
+tags:
+  - agent-safety
+  - governance
+  - policy
+  - security
+  - regulation
+  - nist
 sources: [raw/articles/2026-05-05_caisi-ai-pre-release-testing.md]
 ---
 

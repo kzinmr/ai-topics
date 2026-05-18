@@ -8,7 +8,7 @@ tags:
   - blogger
   - developer-tooling
   - coding-agents
-  - meta
+  - methodology
 aliases:
   - legorobotdude
   - Aditya Bawankule

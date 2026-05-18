@@ -3,7 +3,12 @@ title: Browser Use Production Architecture
 created: 2026-05-11
 updated: 2026-05-11
 type: concept
-tags: [browser-automation, ai-agents, architecture, aws, serverless, cloud, infrastructure]
+tags:
+  - browser-agent
+  - ai-agents
+  - architecture
+  - aws
+  - infrastructure
 sources: [raw/articles/2026-05-09_browser-use_production-architecture.md]
 aliases: ["Browser Use at Scale", "Production Browser Agent Infrastructure"]
 ---

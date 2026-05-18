@@ -4,10 +4,8 @@ created: 2026-05-18
 updated: 2026-05-18
 type: concept
 tags:
-  - enterprise-ai
   - company
   - strategy
-  - enterprise-ai
   - ecosystem
 sources:
   - raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md

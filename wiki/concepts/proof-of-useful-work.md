@@ -6,7 +6,7 @@ updated: 2026-05-16
 tags:
   - crypto
   - inference
-  - distributed-systems
+  - architecture
   - economics
 sources:
   - "https://www.together.ai/blog/together-ai-partners-with-pearl-research-labs"

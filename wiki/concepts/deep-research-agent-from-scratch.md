@@ -5,11 +5,10 @@ updated: 2026-05-13
 type: concept
 tags:
   - deep-research
-  - subagents
+  - ai-agents
   - planning-agent
   - agent-loop
-  - agent-architecture
-  - ai-agents
+  - architecture
   - research-agent
 aliases: [build-your-own-deep-research-agent, deep-research-from-scratch, research-agent-pipeline]
 sources:

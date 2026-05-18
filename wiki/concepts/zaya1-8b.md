@@ -3,7 +3,13 @@ title: ZAYA1-8B
 created: 2026-05-16
 updated: 2026-05-16
 type: concept
-tags: [model, open-source, amd, mixture-of-experts, reasoning, inference, training]
+tags:
+  - model
+  - open-source
+  - amd
+  - reasoning
+  - inference
+  - training
 sources: [raw/articles/zyphra.com--zaya1-8b-moe-amd-reasoning--2026-05-16.md]
 ---
 

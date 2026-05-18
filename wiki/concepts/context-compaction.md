@@ -10,7 +10,7 @@ tags:
   - concept
   - context-engineering
   - memory-systems
-  - agent-architecture
+  - architecture
 status: complete
 sources:
   - https://snowan.gitbook.io/study-notes/ai-blogs/openclaw-memory-system-deep-dive

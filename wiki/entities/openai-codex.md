@@ -7,9 +7,9 @@ tags:
   - product
   - coding-agent
   - openai
-  - codex
-  - agent-harness
-  - autonomous-agents
+  - coding-agents
+  - harness-engineering
+  - ai-agents
   - data-science
   - bizops
 aliases:

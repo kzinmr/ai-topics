@@ -3,7 +3,11 @@ title: Subquadratic (SubQ)
 created: 2026-05-16
 updated: 2026-05-16
 type: entity
-tags: [company, model, long-context, inference, ai]
+tags:
+  - company
+  - model
+  - context-management
+  - inference
 sources: [raw/articles/whatllm.org--new-ai-models-may-2026-subq-subquadratic--2026-05-16.md]
 ---
 

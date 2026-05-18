@@ -7,10 +7,9 @@ aliases:
   - martin.kleppmann
 tags:
   - person
-  - distributed-systems
   - architecture
-  - local-first
-  - research
+  - developer-tooling
+  - lab
   - open-source
 related:
   - concepts/local-first-software

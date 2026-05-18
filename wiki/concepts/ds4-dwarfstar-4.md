@@ -11,7 +11,7 @@ tags:
   - open-source
   - tool
   - coding-agent
-  - apple-silicon
+  - hardware
   - model
 aliases: [ds4, dwarfstar-4, antirez-ds4]
 sources:

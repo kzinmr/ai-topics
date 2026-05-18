@@ -3,7 +3,14 @@ title: Doug Turnbull (softwaredoug)
 created: 2026-05-17
 updated: 2026-05-17
 type: entity
-tags: [person, search, information-retrieval, blogger, educator, consulting, open-source, rag, evaluation]
+tags:
+  - person
+  - search
+  - blogger
+  - company
+  - open-source
+  - rag
+  - evaluation
 sources: [raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg.md]
 ---
 

@@ -11,7 +11,7 @@ sources:
   - https://github.com/NVIDIA/NemoClaw/blob/main/spark-install.md
   - https://nemoclawai.io/blog/getting-started-nemoclaw-dgx-spark/
   - https://build.nvidia.com/spark/nemoclaw/instructions
-tags: [concept, setup-guide, local-llm, dgx-spark, nemoclaw, nvidia]
+tags: [concept, setup-guide, local-llm, hardware, nemoclaw, nvidia]
 ---
 
 # Local LLM Server Setup on DGX Spark

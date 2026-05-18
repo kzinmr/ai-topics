@@ -3,7 +3,12 @@ title: Subquadratic Attention
 created: 2026-05-16
 updated: 2026-05-16
 type: concept
-tags: [transformer-architecture, inference, optimization, long-context, training]
+tags:
+  - transformer-architecture
+  - inference
+  - optimization
+  - context-management
+  - training
 sources: [raw/articles/whatllm.org--new-ai-models-may-2026-subq-subquadratic--2026-05-16.md]
 ---
 

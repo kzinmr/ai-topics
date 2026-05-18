@@ -3,7 +3,10 @@ title: OpenAI Deployment Company (DeployCo)
 created: 2026-05-16
 updated: 2026-05-16
 type: entity
-tags: [company, openai, enterprise-ai, consulting, ai-adoption]
+tags:
+  - company
+  - openai
+  - ai-adoption
 sources: [raw/articles/openai.com--launches-deployment-company-deployco--2026-05-16.md]
 ---
 

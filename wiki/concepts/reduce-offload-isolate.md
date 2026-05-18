@@ -11,9 +11,9 @@ status: l2
 tags:
   - context-engineering
   - ai-agents
-  - agent-harness
+  - harness-engineering
   - anthropic
-  - llm
+  - model
   - langchain
 sources:
   - https://hugobowne.substack.com/p/ai-agent-harness-3-principles-for

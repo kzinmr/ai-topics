@@ -4,7 +4,14 @@ type: entity
 aliases: [mitsuhiko]
 created: 2026-05-18
 updated: 2026-05-18
-tags: [person, open-source, python, blogger, developer-tooling, ai, agentic-engineering, sentry]
+tags:
+  - person
+  - open-source
+  - developer-tooling
+  - blogger
+  - model
+  - agentic-engineering
+  - infrastructure
 sources: [raw/articles/2026-05-18_armin-ronacher_a-language-for-agents.md, https://lucumr.pocoo.org/about/]
 ---
 

@@ -9,7 +9,7 @@ tags:
   - personal-ai
   - workflow
   - multi-agent
-  - agent-architecture
+  - architecture
 related:
   - concepts/harness-engineering
   - concepts/agent-sandboxing

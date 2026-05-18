@@ -7,7 +7,7 @@ tags:
   - person
   - reinforcement-learning
   - robotics
-  - research
+  - lab
 sources:
   - raw/articles/dwarkesh.com--p-eric-jang--44c9439c.md
 ---

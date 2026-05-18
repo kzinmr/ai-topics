@@ -3,7 +3,13 @@ title: Gemini 3.1 Flash-Lite
 created: 2026-05-17
 updated: 2026-05-17
 type: concept
-tags: [google, gemini, model, inference, optimization, enterprise-ai, product]
+tags:
+  - google
+  - model
+  - inference
+  - optimization
+  - company
+  - product
 sources: [raw/articles/2026-05-08_google_gemini-3-1-flash-lite-ga.md]
 ---
 

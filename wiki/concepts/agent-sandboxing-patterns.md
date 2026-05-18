@@ -6,7 +6,7 @@ updated: 2026-05-02
 tags:
   - concept
   - ai-agents
-  - agent-sandboxing
+  - sandbox
   - infrastructure
   - security
 status: active

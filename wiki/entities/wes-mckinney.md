@@ -5,7 +5,14 @@ aliases: [wesm, wesmckinn]
 created: 2026-05-14
 updated: 2026-05-14
 status: L2
-tags: [person, ai-agents, agent-skills, code-review, developer-tooling, harness-engineering, open-source]
+tags:
+  - person
+  - ai-agents
+  - agent-skills
+  - coding-agents
+  - developer-tooling
+  - harness-engineering
+  - open-source
 sources:
   - raw/articles/2026-05-12_hugobowne_agentic-engineering-verification.md
   - raw/articles/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md

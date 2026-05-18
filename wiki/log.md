@@ -1,3 +1,22 @@
+## [2026-05-18] tag-audit | Weekly tag taxonomy audit & auto-fix
+
+### Changes
+- Added `psychology` to SCHEMA.md Domain Concepts taxonomy (new canonical tag)
+- Added 19 new mappings to TAG_NORMALIZATION dict (pipeline→devops, swe-bench→benchmark, logic→reasoning, symbolic-ai→neurosymbolic, history→timeline, agent-sandboxing→sandbox, datasette→tool, pattern→design-patterns, cognitive-science→psychology, academic→research, case-study→methodology, instruction-tuning→fine-tuning, memory-efficiency→optimization, knowledge-management→information-retrieval, understanding-code→code-intelligence, vector-database→vector-search, computer-history→timeline)
+- Deleted one-off tag `modules` from concepts/dspy-modules.md
+- Fixed dgx-spark→hardware in entities/nvidia-nemoclaw.md + concepts/local-llm/server-dgx-spark.md (missed by script due to inline format bug)
+- Fixed regex bug in tag_normalization.py: tags on last frontmatter line not matched (no trailing \n)
+- Added content-comparison guard to prevent phantom modifications
+
+### Results
+- 193 pages modified by normalization script
+- Coverage improved: 62.6% → 72.3%
+- Non-SCHEMA tags: 227 → 207
+- Unique tags: 553 → 480
+- Composite kebab-case tags: 0 (unchanged)
+
+---
+
 ## [2026-05-18] health-fix | Wiki health auto-fix
 
 ### Fixes Applied

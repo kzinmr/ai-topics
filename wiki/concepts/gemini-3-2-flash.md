@@ -3,7 +3,12 @@ title: Gemini 3.2 Flash
 created: 2026-05-17
 updated: 2026-05-17
 type: concept
-tags: [google, gemini, model, inference, optimization, product]
+tags:
+  - google
+  - model
+  - inference
+  - optimization
+  - product
 sources: [raw/articles/2026-05-06_gemini-3-2-flash-leak.md]
 ---
 

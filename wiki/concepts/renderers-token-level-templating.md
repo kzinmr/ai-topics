@@ -3,7 +3,15 @@ title: "renderers: Token-Level Templating for Agentic RL"
 created: 2026-05-13
 updated: 2026-05-13
 type: concept
-tags: [tokenization, reinforcement-learning, grpo, training, open-source, tool, chat-template, agent-training, ai-infrastructure]
+tags:
+  - tokenization
+  - reinforcement-learning
+  - training
+  - open-source
+  - tool
+  - chat-template
+  - agent-training
+  - infrastructure
 sources:
   - raw/articles/2026-05-12_primeintellect_renderers-token-level-templating.md
   - https://github.com/PrimeIntellect-ai/renderers

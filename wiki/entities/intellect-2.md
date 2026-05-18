@@ -3,7 +3,15 @@ title: "INTELLECT-2"
 created: 2026-05-13
 updated: 2026-05-13
 type: entity
-tags: [model, reasoning, reinforcement-learning, grpo, open-source, distributed-training, text-generation, qwen, prime-intellect]
+tags:
+  - model
+  - reasoning
+  - reinforcement-learning
+  - training
+  - open-source
+  - text-generation
+  - qwen
+  - company
 sources:
   - raw/papers/2025-05-12_2505.07291_intellect-2-decentralized-rl.md
   - https://huggingface.co/PrimeIntellect/INTELLECT-2

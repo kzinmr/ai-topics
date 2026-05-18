@@ -3,7 +3,16 @@ title: Hermes Agent
 created: 2026-05-14
 updated: 2026-05-14
 type: concept
-tags: [hermes-agent, nous-research, ai-agents, self-improving, agent-skills, memory-systems, agent-architecture, agent-harness, personal-ai, open-source]
+tags:
+  - ai-agents
+  - nous-research
+  - self-improving
+  - agent-skills
+  - memory-systems
+  - architecture
+  - harness-engineering
+  - personal-ai
+  - open-source
 sources:
   - raw/articles/2026-05-13_akshaypachaar_hermes-agent-masterclass.md
   - https://hermes-agent.nousresearch.com/docs/

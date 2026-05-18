@@ -3,7 +3,13 @@ title: "Richard Susskind"
 created: 2026-05-06
 updated: 2026-05-06
 type: entity
-tags: [person, writing, ethics, policy, law, consulting]
+tags:
+  - person
+  - writing
+  - ethics
+  - policy
+  - law
+  - company
 aliases:
   - richard-e-susskind
   - prof-susskind

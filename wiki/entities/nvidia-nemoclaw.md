@@ -9,7 +9,7 @@ sources:
   - https://github.com/NVIDIA/NemoClaw
   - https://nemoclawai.io/blog/getting-started-nemoclaw-dgx-spark/
   - https://build.nvidia.com/spark/nemoclaw/instructions
-tags: [entity, ai-agents, local-llm, nvidia, security, dgx-spark]
+tags: [entity, ai-agents, local-llm, nvidia, security, hardware]
 ---
 
 # NVIDIA NemoClaw

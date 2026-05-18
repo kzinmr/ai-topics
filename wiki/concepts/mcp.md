@@ -3,7 +3,13 @@ title: "MCP (Model Context Protocol)"
 created: 2026-05-13
 updated: 2026-05-13
 type: concept
-tags: [concept, mcp, protocol, anthropic, tool-use, open-source]
+tags:
+  - concept
+  - mcp
+  - protocol
+  - anthropic
+  - tool
+  - open-source
 aliases: [Model Context Protocol]
 sources: ["https://www.anthropic.com/news/model-context-protocol", "https://www.youtube.com/watch?v=0NHCyq8bBcM", "https://www.latent.space/p/mcp", "[[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025]]"]
 ---

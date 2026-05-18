@@ -3,7 +3,13 @@ title: SAP Business AI Platform
 created: 2026-05-18
 updated: 2026-05-18
 type: entity
-tags: [platform, company, enterprise-ai, ai-agents, multi-agent, orchestration, anthropic]
+tags:
+  - platform
+  - company
+  - ai-agents
+  - multi-agent
+  - orchestration
+  - anthropic
 sources: [raw/articles/2026-05-18_sap-anthropic-claude-business-ai-platform.md, https://news.sap.com/2026/05/sap-anthropic-to-bring-claude-sap-business-ai-platform/]
 ---
 

@@ -6,7 +6,7 @@ type: concept
 tags:
   - rlvr
   - reinforcement-learning
-  - ai-research
+  - lab
   - philosophy-of-science
   - reasoning
 sources:

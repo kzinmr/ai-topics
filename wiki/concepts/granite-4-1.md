@@ -3,7 +3,15 @@ title: Granite 4.1
 created: 2026-05-15
 updated: 2026-05-15
 type: concept
-tags: [model, open-source, ibm, training, fine-tuning, grpo, quantization, enterprise-ai, benchmark]
+tags:
+  - model
+  - open-source
+  - ibm
+  - training
+  - fine-tuning
+  - quantization
+  - company
+  - benchmark
 sources: [raw/articles/2026-04-29_ibm-granite-4-1.md]
 ---
 

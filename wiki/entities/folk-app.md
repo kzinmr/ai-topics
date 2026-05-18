@@ -3,7 +3,13 @@ title: "folk"
 created: 2026-05-11
 updated: 2026-05-11
 type: entity
-tags: [ai-agents, personal-ai, tool, platform, memory-systems, agent-memory, ai-native]
+tags:
+  - ai-agents
+  - personal-ai
+  - tool
+  - platform
+  - memory-systems
+  - ai-native
 sources:
   - raw/articles/2026-05-11_getfolk_folk-app.md
 aliases: ["folk app", "getfolk", "folk AI"]

@@ -8,7 +8,7 @@ tags:
   - architecture
   - claude-code
   - harness-engineering
-  - case-study
+  - methodology
 aliases:
   - C compiler agent team
   - parallel Claude agents

@@ -11,7 +11,6 @@ tags:
   - developer-tooling
   - browser-agent
   - open-source
-  - browser-automation
 status: active
 sources:
 - https://github.com/browser-use/browser-use

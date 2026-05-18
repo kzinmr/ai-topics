@@ -6,8 +6,7 @@ type: entity
 tags:
   - company
   - google
-  - research
-  - research
+  - lab
   - ai-adoption
 aliases: ["Isomorphic"]
 sources:

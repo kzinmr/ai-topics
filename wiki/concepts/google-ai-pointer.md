@@ -3,7 +3,12 @@ title: Google AI Pointer (Magic Pointer)
 created: 2026-05-18
 updated: 2026-05-18
 type: concept
-tags: [concept, google, gemini, generative-ui, multimodal, ai-native]
+tags:
+  - concept
+  - google
+  - developer-tooling
+  - multimodal
+  - ai-native
 sources: [raw/articles/2026-05-18_google-deepmind-ai-pointer.md, https://deepmind.google/blog/ai-pointer/]
 ---
 

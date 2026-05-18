@@ -3,7 +3,11 @@ title: Embeddings
 created: 2026-05-13
 updated: 2026-05-13
 type: concept
-tags: [embeddings, information-retrieval, search, vector-search, training, transformers]
+tags:
+  - model
+  - search
+  - training
+  - transformers
 sources: [raw/articles/2026-05-13_softwaredoug_vector-search-embeddings.md]
 ---
 

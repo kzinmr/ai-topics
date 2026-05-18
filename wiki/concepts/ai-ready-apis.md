@@ -4,7 +4,11 @@ created: 2026-05-11
 updated: 2026-05-11
 type: concept
 aliases: [ai-ready-api, machine-consumable-api, agent-ready-api]
-tags: [api, ai-agents, agent-security, mcp]
+tags:
+  - developer-tooling
+  - ai-agents
+  - agent-safety
+  - mcp
 sources: [raw/articles/2025-10-08_postman-state-of-api-2025-report.md]
 related: [concepts/mcp, concepts/mcp-desktop-extensions, entities/webmcp, concepts/agentic-security, concepts/agent-governance, concepts/cli-over-mcp-pattern]
 ---

@@ -7,16 +7,12 @@ tags:
   - person
   - ai-agents
   - agent-skills
-  - data-visualization
-  - verification
   - developer-tooling
-  - agent-evaluation
-  - evolutionary-algorithms
+  - verification
   - evaluation
-  - entrepreneur
+  - evolutionary-algorithms
   - open-source
   - data-science
-  - researcher
 aliases:
   - Randy Olson
   - Randal Olson

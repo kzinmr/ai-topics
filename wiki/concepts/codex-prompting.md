@@ -5,9 +5,8 @@ created: 2026-05-12
 updated: 2026-05-12
 tags:
   - prompting
-  - codex
   - coding-agents
-  - agent-harness
+  - harness-engineering
   - metaprompting
   - openai
 sources:

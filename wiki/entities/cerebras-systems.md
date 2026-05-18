@@ -3,7 +3,13 @@ title: Cerebras Systems
 created: 2026-05-14
 updated: 2026-05-16
 type: entity
-tags: [entity, company, hardware, gpu, ai-infrastructure, inference, mlops]
+tags:
+  - entity
+  - company
+  - hardware
+  - infrastructure
+  - inference
+  - mlops
 sources: [raw/newsletters/2026-05-13-cerebras-faster-tokens-please.md, raw/articles/2026-05-10_parallel-web-systems_cerebras-fact-checker.md, raw/newsletters/2026-05-16-ainews-cerebras-60b-ipo-slowly-then-all-at-once.md]
 ---
 

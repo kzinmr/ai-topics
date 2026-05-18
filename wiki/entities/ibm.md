@@ -3,7 +3,12 @@ title: IBM (AI / watsonx)
 created: 2026-05-16
 updated: 2026-05-16
 type: entity
-tags: [company, enterprise-ai, agent-orchestration, ai-infrastructure, platform, governance]
+tags:
+  - company
+  - orchestration
+  - infrastructure
+  - platform
+  - governance
 sources: [raw/articles/ibm.com--think-2026-ai-operating-model-agent-orchestration--2026-05-16.md]
 ---
 

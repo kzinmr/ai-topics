@@ -4,7 +4,13 @@ created: 2026-05-18
 updated: 2026-05-18
 type: entity
 entity_type: tool
-tags: [bm25, information-retrieval, lexical-search, agentic-search, agentic-engineering, open-source, benchmark, search]
+tags:
+  - bm25
+  - search
+  - lexical-search
+  - agentic-engineering
+  - open-source
+  - benchmark
 sources: [raw/articles/2026-05-15_recsys_bm25-agentic-deep-research.md]
 ---
 

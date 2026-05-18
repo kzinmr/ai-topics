@@ -1,6 +1,9 @@
 ---
 title: "Self-Evolving Agents"
-tags: [self-improving, agent-harness, agent-architecture, harness-engineering]
+tags:
+  - self-improving
+  - harness-engineering
+  - architecture
 created: 2026-04-13
 updated: 2026-04-24
 type: concept

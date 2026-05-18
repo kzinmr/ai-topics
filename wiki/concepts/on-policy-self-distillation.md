@@ -4,11 +4,8 @@ type: concept
 created: 2026-05-18
 updated: 2026-05-18
 tags:
-  - distillation
-  - reasoning
-  - post-training
   - training
-  - grpo
+  - reasoning
 aliases:
   - OPSD
   - On-Policy Self-Distillation

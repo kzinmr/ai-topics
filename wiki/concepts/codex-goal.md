@@ -3,7 +3,14 @@ title: "Codex /goal — OpenAI's Built-in Ralph Loop"
 type: concept
 slug: codex-goal
 status: complete
-tags: [coding-agents, codex, openai, cli, agent-loop, ralph-loop, autonomous-agents, self-improving]
+tags:
+  - coding-agents
+  - openai
+  - developer-tooling
+  - agent-loop
+  - ralph-loop
+  - ai-agents
+  - self-improving
 created: 2026-05-13
 updated: 2026-05-13
 aliases: [/goal, codex-goal-command, openai-goal-loop]

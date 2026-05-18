@@ -8,7 +8,14 @@ aliases:
 created: 2026-05-14
 updated: 2026-05-14
 type: concept
-tags: [concept, test-time-scaling, reasoning, inference, chain-of-thought, scaling, optimization, grpo, rlvr]
+tags:
+  - concept
+  - test-time-scaling
+  - reasoning
+  - inference
+  - optimization
+  - training
+  - rlvr
 sources:
   - https://arxiv.org/abs/2408.03314
   - https://arxiv.org/abs/2408.00724

@@ -3,7 +3,12 @@ title: "Agent Observability and Feedback Loops"
 created: 2026-05-06
 updated: 2026-05-06
 type: concept
-tags: [observability, evaluation, feedback-loop, ai-agent-engineering, langsmith, langchain]
+tags:
+  - infrastructure
+  - evaluation
+  - feedback-loop
+  - ai-agent-engineering
+  - langchain
 aliases:
   - agent-feedback-loop
   - llm-observability

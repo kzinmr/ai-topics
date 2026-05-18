@@ -4,7 +4,12 @@ created: 2026-05-14
 updated: 2026-05-14
 type: concept
 status: L2
-tags: [cli, tool, developer-tooling, api, mcp, notion-mcp, notion-cli]
+tags:
+  - developer-tooling
+  - tool
+  - mcp
+  - notion-mcp
+  - notion-cli
 aliases: ["ntn", "Notion CLI"]
 sources: [raw/articles/2026-05-13_notion-cli-ntn-developer-docs.md]
 related: [concepts/notion-mcp]

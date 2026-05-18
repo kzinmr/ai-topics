@@ -10,9 +10,9 @@ sources:
 tags:
   - company
   - ai-agents
-  - enterprise-ai
   - agentic-engineering
   - personal-ai
+
 ---
 
 # Hearth AI

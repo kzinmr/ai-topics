@@ -5,9 +5,7 @@ created: 2026-05-18
 updated: 2026-05-18
 tags:
   - person
-  - researcher
-  - distillation
-  - post-training
+  - training
 sources:
   - https://siyan-zhao.github.io/blog/2026/opsd/
   - https://siyan-zhao.github.io/

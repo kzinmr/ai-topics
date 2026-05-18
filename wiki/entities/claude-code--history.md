@@ -6,7 +6,7 @@ created: 2026-04-28
 updated: 2026-04-28
 tags:
   - product
-  - history
+  - timeline
 sources:
   - https://www.claudecodecamp.com/p/how-the-claude-code-team-really-works
   - https://www.theregister.com/2026/03/31/anthropic_claude_code_source_code/

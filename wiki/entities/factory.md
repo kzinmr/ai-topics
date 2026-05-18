@@ -6,11 +6,8 @@ updated: 2026-05-18
 tags:
   - company
   - coding-agents
-  - enterprise-ai
-  - startup
-  - autonomous-agents
-  - developer-tooling
   - ai-agents
+  - developer-tooling
   - software-engineering
 aliases: ["Factory AI", "Factory.ai", "droids"]
 sources:

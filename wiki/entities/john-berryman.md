@@ -7,10 +7,9 @@ created: 2026-05-13
 updated: 2026-05-13
 tags:
   - person
-  - agent-harness
+  - harness-engineering
   - ai-agents
   - search
-  - information-retrieval
   - blogger
   - ai-product
 sources:

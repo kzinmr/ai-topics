@@ -12,7 +12,7 @@ tags:
   - philosophy
   - neurosymbolic
   - world-models
-  - ai-safety
+  - agent-safety
 sources:
   - raw/articles/garymarcus.substack.com--p-misplaced-panic-over-ai-progress--7aa50278.md
   - raw/articles/garymarcus.substack.com--p-the-illusion-of-generative-ai-the--9225b4e4.md

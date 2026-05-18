@@ -7,7 +7,7 @@ tags:
   - concept
   - fine-tuning
   - quantization
-  - memory-efficiency
+  - optimization
 aliases:
   - QLoRA
   - Quantized LoRA

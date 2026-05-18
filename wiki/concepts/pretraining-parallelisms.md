@@ -3,7 +3,11 @@ title: Pretraining Parallelisms
 created: 2026-05-17
 updated: 2026-05-17
 type: concept
-tags: [concept, distributed-training, ml-engineering, mixture-of-experts, moe]
+tags:
+  - concept
+  - training
+  - infrastructure
+  - model
 sources:
   - wiki/raw/articles/dwarkesh.com--p-notes-on-pretraining-parallelisms--162a08b5.md
 ---

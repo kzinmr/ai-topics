@@ -3,7 +3,12 @@ title: "Subagent Patterns"
 created: 2026-05-06
 updated: 2026-05-06
 type: concept
-tags: [agents, orchestration, multi-agent, architecture, design-patterns]
+tags:
+  - ai-agents
+  - orchestration
+  - multi-agent
+  - architecture
+  - methodology
 aliases:
   - subagent-architecture
   - agent-orchestration-patterns

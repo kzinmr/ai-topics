@@ -4,10 +4,8 @@ type: concept
 created: 2026-05-17
 updated: 2026-05-17
 tags:
-  - distillation
-  - post-training
-  - reinforcement-learning
   - training
+  - reinforcement-learning
   - fine-tuning
 aliases:
   - OPD

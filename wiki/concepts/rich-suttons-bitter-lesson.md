@@ -10,7 +10,7 @@ tags:
   - concept
   - methodology
   - architecture
-  - scaling
+  - optimization
   - ai-agents
   - ai-agent-engineering
   - harness-engineering

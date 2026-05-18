@@ -12,9 +12,7 @@ tags:
   - context-engineering
   - developer-tooling
   - open-source
-  - entrepreneur
   - mcp
-  - generative-ui
   - prefect
 sources:
   - https://www.jlowin.dev/about

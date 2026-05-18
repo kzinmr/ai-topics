@@ -3,7 +3,12 @@ title: Baidu (Ernie)
 created: 2026-05-16
 updated: 2026-05-16
 type: entity
-tags: [company, model, training, optimization, china, ai]
+tags:
+  - company
+  - model
+  - training
+  - optimization
+  - china
 sources: [raw/articles/the-decoder.com--baidu-ernie-5-1-94-percent-cost-reduction--2026-05-16.md]
 ---
 

@@ -3,7 +3,13 @@ title: AWS Agent Toolkit
 created: 2026-05-18
 updated: 2026-05-18
 type: concept
-tags: [concept, aws, developer-tooling, ai-coding, mcp, ai-infrastructure, coding-agents]
+tags:
+  - concept
+  - aws
+  - developer-tooling
+  - coding-agents
+  - mcp
+  - infrastructure
 sources: [raw/articles/2026-05-18_aws-agent-toolkit.md, https://aws.amazon.com/about-aws/whats-new/2026/05/agent-toolkit/]
 ---
 

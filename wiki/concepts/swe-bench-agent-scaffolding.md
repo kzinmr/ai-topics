@@ -4,7 +4,7 @@ type: concept
 created: 2026-05-08
 updated: 2026-05-08
 tags:
-  - swe-bench
+  - benchmark
   - architecture
   - anthropic
   - evaluation

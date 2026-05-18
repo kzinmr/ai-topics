@@ -3,7 +3,12 @@ title: Meridian Labs
 created: 2026-05-11
 updated: 2026-05-11
 type: entity
-tags: [company, safety, evaluation, open-source, ai-safety]
+tags:
+  - company
+  - safety
+  - evaluation
+  - open-source
+  - agent-safety
 sources: [raw/articles/2026-05-08_anthropic_petri-nla-interpretability.md]
 ---
 

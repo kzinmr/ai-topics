@@ -4,7 +4,15 @@ type: entity
 aliases: [zerolang, zero-lang]
 created: 2026-05-18
 updated: 2026-05-18
-tags: [programming-language, open-source, vercel, agentic-engineering, agent-ergonomics, ai-coding, tool, developer-tooling]
+tags:
+  - programming-language
+  - open-source
+  - company
+  - agentic-engineering
+  - agent-ergonomics
+  - coding-agents
+  - tool
+  - developer-tooling
 sources: [raw/articles/2026-05-18_vercel-labs_zero-language-for-agents.md, https://github.com/vercel-labs/zero, https://zerolang.ai]
 ---
 

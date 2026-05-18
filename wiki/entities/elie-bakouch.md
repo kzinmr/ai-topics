@@ -6,7 +6,11 @@ updated: 2026-05-13
 aliases: [eliebak, eliebakouch]
 status: active
 description: "ML engineer and researcher at Prime Intellect (formerly Hugging Face), known for work on SmolLM, pretraining optimization, MoE scaling laws, and data-centric model training."
-tags: [person, scaling, open-source, training, researcher]
+tags:
+  - person
+  - optimization
+  - open-source
+  - training
 sources: []
 ---
 

@@ -3,7 +3,13 @@ title: AKOOL
 created: 2026-05-15
 updated: 2026-05-15
 type: entity
-tags: [company, product, multimodal, inference, streaming, ai-infrastructure, real-time]
+tags:
+  - company
+  - product
+  - multimodal
+  - inference
+  - streaming
+  - infrastructure
 sources: [raw/articles/2026-05-11_akool-video-inference-engine.md]
 ---
 

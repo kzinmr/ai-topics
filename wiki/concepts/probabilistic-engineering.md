@@ -3,7 +3,12 @@ title: "Probabilistic Engineering"
 created: 2026-05-11
 updated: 2026-05-11
 type: concept
-tags: [agentic-engineering, software-engineering, ai-agents, reliability, career]
+tags:
+  - agentic-engineering
+  - software-engineering
+  - ai-agents
+  - infrastructure
+  - career
 sources: [raw/articles/2026-04-16_timdavis_probabilistic-engineering-24-7-employee.md]
 aliases: ["probabilistic software engineering", "probabilistic codebase", "the 24-7 employee"]
 ---
