@@ -918,6 +918,14 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - `wiki/index.md` — Updated entity entry for armin-ronacher; added description to agent-ergonomics concept entry.
 - `wiki/concepts/claude-agent-sdk-research-stateless-stateful-web-search.md` — Deleted orphaned empty stub (not in index.md, no incoming links)
 
+## [2026-05-18] ingest | Vercel Labs Zero — agent-oriented programming language
+
+### Changes
+- `wiki/raw/articles/2026-05-18_vercel-labs_zero-language-for-agents.md` — New raw article: Vercel Labs' Zero programming language (github.com/vercel-labs/zero, zerolang.ai). Launched May 15, 2026. Systems language with explicit effects, capability-based I/O, JSON-native diagnostics, repair metadata. 2,045★.
+- `wiki/entities/zero-language.md` — New entity page: Zero — Vercel's agent-oriented systems language. Covers design philosophy, agent-first tooling, language features (World capability, raises, shape/enum/choice, generics, static interfaces), mapping to Ronacher's 8 principles.
+- `wiki/concepts/agent-ergonomics.md` — Added "Concrete Implementation: Zero by Vercel Labs" section with principle-by-principle mapping table. Frontmatter updated with Zero source.
+- `wiki/index.md` — Added zero-language entity entry.
+
 ## 2026-05-18 11:30 — X Bookmarks Ingest
 
 - `wiki/raw/articles/2026-05-17_DeRonin_agentic-project-setup-security.md` — Saved raw article: @DeRonin_ tweet about direnv + secrets manager setup for agentic projects (truncated thread)

@@ -508,6 +508,7 @@
 - [[entities/zakirullin]] — Artem Zakirullin — Software Architect, author of "Cognitive load is what matters" (12K+ GitHub stars), a framework on minimizing cognitive complexity in software design
 - [[entities/zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.
 - [[entities/zed]] — High-performance Rust code editor from former Atom team (Nathan Sobo, Antonio Scandurra, Max Brunsfeld). Reached 1.0 on April 29, 2026. AI-native with parallel agent orchestration, Zeta LLM, GPUI framework.
+- [[entities/zero-language]] — Zero — Vercel Labs' programming language for AI agents (May 2026). Systems language with explicit effects, capability-based I/O, JSON-native diagnostics, no GC. Implements Ronacher's 8 agent-language design principles.
 - [[entities/zyphra]] — Open superintelligence research/cloud company. ZAYA1 MoE model family (VL-8B, 74B) trained on AMD. $110M Series A at $1B valuation. Apache 2.0 open-source models.
 
 - [[entities/palantir]] — AI-powered decision infrastructure company. The Palantir Ontology contextualizes computation within "lived reality" for enterprise agent workflows. Q1 2026: $1.63B revenue (+84% gov), Maven elevated to permanent Pentagon program. **May 2026: The Palantir Model goes global** — OpenAI ($4B Deployment Company) and Anthropic ($1.5B JV) both replicate Palantir's embed-engineers-in-customer-operations playbook. See [[concepts/ai-services-joint-ventures]].

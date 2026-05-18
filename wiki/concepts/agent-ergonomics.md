@@ -5,7 +5,7 @@ aliases: [agent-oriented-language-design]
 created: 2026-05-11
 updated: 2026-05-18
 status: L2
-sources: [raw/articles/2026-01-20_wesmckinney_agent-ergonomics.md, https://wesmckinney.com/blog/agent-ergonomics/, raw/articles/2026-05-18_armin-ronacher_a-language-for-agents.md, https://lucumr.pocoo.org/2026/2/9/a-language-for-agents/]
+sources: [raw/articles/2026-01-20_wesmckinney_agent-ergonomics.md, https://wesmckinney.com/blog/agent-ergonomics/, raw/articles/2026-05-18_armin-ronacher_a-language-for-agents.md, https://lucumr.pocoo.org/2026/2/9/a-language-for-agents/, raw/articles/2026-05-18_vercel-labs_zero-language-for-agents.md, https://github.com/vercel-labs/zero]
 tags: [agentic-engineering, software-engineering, developer-tooling, programming-language, ai-coding]
 ---
 
@@ -156,6 +156,25 @@ Go's model is ideal: no circular imports, clear package layout, cached test resu
 > *"We are slowly getting to the point where facts matter more, because you can actually measure what works by seeing how well agents perform with it. No human wants to be subject to surveys, but agents don't care. We can see how successful they are and where they are struggling."*
 
 He calls for: (1) **outsider art** — people who haven't built languages before trying their hand, and (2) **deliberate documentation** of what works from first principles, moving beyond opinion wars.
+
+## Concrete Implementation: Zero by Vercel Labs (May 2026)
+
+Three months after Ronacher's essay, Vercel Labs shipped **[[entities/zero-language|Zero]]** — a language that implements nearly all eight design principles in a single coherent package:
+
+| Ronacher Principle | Zero Implementation |
+|---------------------|----------------------|
+| Context without LSP | JSON diagnostics with repair metadata work without editor tooling |
+| Braced syntax | `{}` blocks, no significant whitespace |
+| Explicit effects | `World` capability + `raises` keyword |
+| Results over exceptions | `check` + `raises` + `choice` types |
+| Minimal diffs | Braced syntax, explicit types → stable formatting |
+| Grep-ability | `use std.codec` — package-qualified imports |
+| Local reasoning | Signature declares all effects and capabilities |
+| Dependency-aware builds | Package manifests (`zero.json`), explicit targets |
+
+Zero's **agent-first tooling** goes beyond Ronacher's principles: its `--json` flag on `check`, `graph`, `size`, `routes`, and `doctor` produces structured output that agents consume programmatically. Diagnostics include **repair metadata** (`{"repair": {"id": "declare-missing-symbol"}}`) giving agents fix plans, not just error messages.
+
+Key differentiator vs McKinney's Go/Rust framing: Zero is a **new language**, not a repurposed existing one. It validates Ronacher's thesis that the agent era creates space for language innovation. Launched May 15, 2026 — 2,045 GitHub stars in 3 days.
 
 ## Related Concepts
 
