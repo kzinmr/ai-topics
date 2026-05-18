@@ -136,7 +136,7 @@ on_tool_result    → データベース記録 / 観測可能性
 
 コアループはフックの存在を**一切知らない** — `emit()` を呼ぶだけ。Telegram連携もロギングも、コアループに1行も変更を加えずに追加できる。
 
-### Memory System（ファイルファースト・ハイブリッド検索メモリ） [[concepts/agent-memory-systems-comparison]]
+### Memory System（ファイルファースト・ハイブリッド検索メモリ） [[comparisons/agent-memory-systems-comparison]]
 
 OpenClawは **ファイルを唯一の真実源（source of truth）** とするMarkdown駆動メモリシステムを採用。従来のRAGのようなベクトルDB依存を排し、**ハイブリッド検索（BM25 + ベクトル）** と **埋め込みプロバイダーの自動選択** を特徴とする。
 
@@ -263,7 +263,7 @@ See [[comparisons/hermes-vs-openclaw-architecture]] for the full comparison.
 
 ## Related
 - [[concepts/openclaw]]
-- [[concepts/agent-memory-systems-comparison]] — OpenClaw/Claude Code/Codex メモリシステム比較
+- [[comparisons/agent-memory-systems-comparison]] — OpenClaw/Claude Code/Codex メモリシステム比較
 - [[entities/telegram-managed-bots]]
 
 - [[entities/nvidia-nemoclaw]] — NemoClaw secure wrapper for OpenClaw

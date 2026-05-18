@@ -1,6 +1,6 @@
 ---
 title: "Agent Memory Systems Comparison — OpenClaw vs Claude Code vs Codex vs Hermes"
-type: concept
+type: comparison
 aliases:
   - agent-memory-systems-comparison
   - harness-memory-comparison

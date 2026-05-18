@@ -70,7 +70,7 @@ OpenClawが実装する革新的なアプローチ。会話がコンテキスト
 
 ## Related
 
-- [[concepts/agent-memory-systems-comparison]] — OpenClaw/Claude Code/Codexメモリシステム比較
+- [[comparisons/agent-memory-systems-comparison]] — OpenClaw/Claude Code/Codexメモリシステム比較
 - [[entities/openclaw]] — OpenClaw entity（Memory SystemセクションにPre-Compaction Flush詳細あり）
 - [[entities/claude-code--architecture]] — Claude Code 5層コンパクションパイプライン
 - [[concepts/claude-perfect-memory]] — Claude Codeのメモリ設計哲学
