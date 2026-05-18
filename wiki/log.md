@@ -907,4 +907,13 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
   - Agentic Search Implications: convergence of IR Research, Harness Engineering, Externalized Processing
   - Open Questions: cost asymmetry, generality, eval contamination risk, RLM relationship
   - Sources updated: official Anthropic URL added alongside GEND partner summary
+
+## [2026-05-18] ingest | Armin Ronacher: "A Language For Agents" — agent-oriented programming language design
+
+### Changes
+- `wiki/raw/articles/2026-05-18_armin-ronacher_a-language-for-agents.md` — New raw article: Armin Ronacher's essay on designing programming languages for AI agents (lucumr.pocoo.org, Feb 9, 2026). Covers: why new languages will succeed, 8 design principles (no-LSP context, braced syntax, explicit effects, results vs exceptions, line-friendly syntax, grep-ability, local reasoning, dependency-aware builds), what agents hate (macros, barrel files, aliasing, flaky tests).
+- `wiki/entities/armin-ronacher.md` — Entity page created/updated: Austrian software engineer, creator of Flask/Jinja2/Werkzeug, Principal Architect at Sentry. Detailed section on his AI & agentic programming contributions, including the "A Language For Agents" essay.
+- `wiki/concepts/agent-ergonomics.md` — Major enrichment: added "Armin Ronacher's Language Design Principles (2026)" section covering the 8 design principles, "What Agents Hate" antipatterns, and his meta-argument about measuring language success via agent performance. Frontmatter updated (new source, tags: +programming-language +ai-coding). Related concepts expanded.
+- `wiki/SCHEMA.md` — Tag taxonomy: added `programming-language` to Engineering category.
+- `wiki/index.md` — Updated entity entry for armin-ronacher; added description to agent-ergonomics concept entry.
 - `wiki/concepts/claude-agent-sdk-research-stateless-stateful-web-search.md` — Deleted orphaned empty stub (not in index.md, no incoming links)
