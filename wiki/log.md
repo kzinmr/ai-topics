@@ -1,3 +1,19 @@
+### 2026-05-18 18:05 UTC — Watchdog: index header count correction
+
+## [2026-05-18] watchdog | Index header count correction
+
+### Auto-fixed
+- wiki/index.md — Corrected header counts from 2023/1073/927 to 2005/1096/909 (verified via os.walk)
+
+### Findings (needs human review)
+- **4 duplicate entity pairs**: deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, 
+  lilian-weng/lilianweng, samuel-colvin/samuelcolvin — non-canonical slugs have more content in 3/4 cases
+- **665 bare wikilinks** (no namespace prefix) — 1083 total occurrences
+- **386 broken wikilinks** pointing to non-existent pages — 580 total occurrences
+- **909 unindexed pages** (45% of L2) — mostly concepts/ subdirectory files
+
+---
+
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.

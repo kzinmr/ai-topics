@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-18 | Total pages: 2023 | Indexed entries: 1073 | Not in index: 927 |
+> Last updated: 2026-05-18 | Total pages: 2005 | Indexed entries: 1096 | Not in index: 909 |
 
 ## Entities (627 pages)
 
@@ -521,7 +521,7 @@
 - [[entities/mimo]] — Xiaomi's open-source LLM family. MiMo-V2.5-Pro: 1.02T MoE (42B active), 1M context, hybrid attention with learnable sink bias.
 - [[entities/supermemory]] — Company building SMFS (Supermemory Filesystem) — a mountable filesystem designed for AI agents, replacing RAG pipelines.
 
-- [[entities/_index]] — Entities directory index page
+ — Entities directory index page
 - [[entities/alex-volkov]] — Alexander Volkov — AI researcher and contributor
 - [[entities/boris-cherny--claude-code-development]] — Boris Cherny on Claude Code development history
 - [[entities/boris-cherny--core-ideas]] — Boris Cherny core ideas on AI coding agents
@@ -1083,8 +1083,26 @@
 - [[concepts/ai-agent-security]] — AI Agent Security
 - [[concepts/ai-agent-traps]] — AI Agent Traps
 - [[concepts/ai-agents]] — AI Agents
-
-## Events (3 pages)
+- [[concepts/ai-agents-autonomy-planning-file-operations-delegation-sandbox]] — "ai-agents, autonomy, planning, file-operations, delegation, sandbox"
+- [[concepts/ai-agents-framework-python-type-safety-structured-outputs-pydantic]] — "ai-agents, framework, python, type-safety, structured-outputs, pydantic"
+- [[concepts/ai-alignment]] — "AI Alignment"
+- [[concepts/ai-alliance]] — "AI Alliance"
+- [[concepts/ai-as-abstraction-layer]] — "ai-as-abstraction-layer"
+- [[concepts/ai-code-quality]] — "AI Code Quality"
+- [[concepts/ai-coding-tools]] — "AI Coding Tools"
+- [[concepts/ai-criticism-politics]] — Anti-AI Arguments Are Conservative Arguments
+- [[concepts/ai-digital-nato-frontier-model-forum-distillation-alliance]] — "AI Digital NATO — Frontier Model Forum Distillation Alliance"
+- [[concepts/ai-economics]] — "ai-economics"
+- [[concepts/ai-economics-bubble-venture-capital-subprime]] — "ai-economics, bubble, venture-capital, subprime"
+- [[concepts/ai-education]] — "ai-education"
+- [[concepts/ai-engineering]] — "AI Engineering"
+- [[concepts/ai-evals-people]] — "ai-evals-people"
+- [[concepts/ai-evaluation]] — "AI Evaluation"
+- [[concepts/ai-in-military-wargames]] — "AI in Military Wargames"
+- [[concepts/ai-industry-news]] — "AI Industry News (The Signal — Apr 26)"
+- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — "GPU / VRAM Fundamentals"
+- [[concepts/ai-infrastructure-engineering/llm-observability]] — "LLM Observability"
+- [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — "Model Serving & Autoscaling"
 - [[events/openai-may-2026-reorg]] — OpenAIの2026年5月製品再編。Greg Brockmanが全製品を統括、ChatGPTとCodexを統合、Thibault Sottiauxがコア製品責任者に。Fidji Simoは病欠。
 - [[events/anthropic-code-w-claude-2026]] — Anthropic Code w/ Claude 2026 — AnthropicがClaude Codeを強化する新製品発表（2026-05-06）
 - [[events/distillation-attacks-2026]] — Anthropic Accuses Chinese Labs of Industrial-Scale Distillation Attacks（2026-04-24）
