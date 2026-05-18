@@ -10,8 +10,9 @@
 このリポジトリは **LLM / AI Agent 技術の wiki 知識ベース** です。Andrej Karpathy の [LLM Wiki パターン](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) に基づき、AI/ML エコシステムのモデル・ツール・フレームワーク・人物・概念を継続的にドキュメント化しています。
 
 - **GitHub**: `kzinmr/ai-topics`
-- **Canonical root**: `~/ai-topics`
-- **Wiki root**: `~/wiki` → symlink to `~/ai-topics/wiki`
+- **Canonical root**: `~/ai-topics` (= `/opt/data/ai-topics`)
+- **Wiki root**: `~/wiki` → symlink to `~/ai-topics/wiki` (= `/opt/data/ai-topics/wiki`)
+- **⚠️ PATH TRAP**: `/opt/data/home/` is a DOCKER CONTAINER HOME. Never write wiki content there. Symlinks exist (wiki→ai-topics/wiki, ai-topics→ai-topics, .hermes→.hermes) as defense-in-depth, but always use explicit `/opt/data/wiki/` or `/opt/data/ai-topics/wiki/` paths. `delegate_task` subagents default to this directory — always include explicit path instructions in the context field.
 
 ---
 
