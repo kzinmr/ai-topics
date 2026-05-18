@@ -4,6 +4,42 @@
 
 ---
 
+## [2026-05-18] Stale directory cleanup — /opt/data/home/ → canonical merge
+
+**Context**: Subagents wrote to `/opt/data/home/wiki/` instead of canonical `/opt/data/wiki/`. Manual merge operation.
+
+### New pages created (copy from stale)
+- **concepts/agent-observability-feedback.md** — Agent observability feedback loops (Arize, Aaron Kaplowitz)
+- **concepts/speculative-decoding-mtp.md** — MTP drafter heads in Gemma 4, speculative decoding comparison
+- **concepts/subagent-patterns.md** — 4 subagent coordination patterns (Sarah Chieng @MilksandMatcha)
+- **entities/brian-armstrong.md** — Coinbase CEO, AI-driven restructuring letter (May 2026)
+- **entities/richard-susskind.md** — Legal technology expert, AI in law
+
+### Pages enriched (merge)
+- **concepts/automation-series.md** — Added tags: workflow-design, deterministic, probabilistic, ai-automation
+- **entities/antoine-buteau.md** — Added tags: bizops, automation-architecture, strategy-execution, technical-literacy
+- **entities/factory.md** — Major enrichment: merged comprehensive 113-line stale version with canonical. Added Droids platform details, products, enterprise customers, competitive landscape, SWE-Bench debate, strategic outlook, founders background (Eno Reyes as CTO), McKinsey partnership.
+
+### Raw articles migrated (17 files)
+- 10× Antoine Buteau Automation Series articles
+- 5× agent/LLM articles (agent-observability, gemma-4-drafter, subagent-patterns, layoffs-ai)
+- 2× other articles (how-to-think-using-ai)
+
+### Skipped (canonical richer, stale outdated)
+- concepts/peoplereadmes.md (canon 152 > stale 119)
+- entities/eric-zhang.md (canon 204 >> stale 48)
+- entities/harrison-chase.md (canon 141 > stale 91)
+- entities/muratcan-koylan.md (canon 162 > stale 92)
+- entities/philipp-schmid.md (canon 188 >> stale 70)
+- entities/riley-walz.md (canon 107 > stale 87, better structure)
+- entities/0xsero.md → sero.md (canon 251 >> stale 35)
+
+### Index updated
+- Entities: 620 → 622, Concepts: 1362 → 1365
+- New index entries for all new + enriched pages
+
+---
+
 ## [2026-05-17] x-accounts-scan | X account scan — 3 new posts → 4 wiki pages created
 
 **Pipeline**: x-accounts-scan (cron, 22:30 UTC)

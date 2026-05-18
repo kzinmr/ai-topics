@@ -4,7 +4,7 @@
 > Read this first to find relevant pages for any query.
 > Last updated: 2026-05-17 | Total pages: 2013 | Indexed entries: 1066 | Not in index: 927 |
 
-## Entities (620 pages)
+## Entities (622 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -121,6 +121,7 @@
 - [[entities/bogdanthegeek-s-blog]] — **URL:** https://bogdanthegeek.github.io/blog/
 - [[entities/boris-cherny]] — **X/Twitter** | @bcherny__ |
 - [[entities/bradford-morgan-white]] — **URL:** https://abortretry.fail (Substack), https://bradford.la (technology blog)
+- [[entities/brian-armstrong]] — Brian Armstrong — Coinbase CEO. In May 2026 letter, announced AI-driven restructuring: "aggressive, practical, and swift" AI adoption, shifting from operations-heavy to AI-first workforce.
 - [[entities/browser-use]] — **browser-use**は、ETH Zurich出身者によって開発されたオープンソースのブラウザ自動化フレームワーク。AIエージェントがPlaywright経由でWebサイトを操作できるようにする。「Make websites accessible for AI agents」をミッションに掲げる。
 - [[entities/browserbase]] — **Browserbase**は、AIエージェント向けの信頼性の高いブラウザ自動化インフラを提供するプラットフォーム。「the where（どこで実行するか）」を担当し、Stagehand（the what）とStagehand API（the how）と統合された3層アーキテクチャを構築している。
 - [[entities/brutecat-com]] — **Blog** | brutecat.com |
@@ -201,6 +202,7 @@
 - [[entities/every-inc]] — AI-native media & software company. Publishers of the daily newsletter, creators of Compound Engineering plugin (7K+ stars). 5 products (Spiral, Cora, Sparkle, Monologue, Lex) with single-person teams. CEO: Dan Shipper.
 - [[entities/evanhahn-com]] — **Blog** | evanhahn.com |
 - [[entities/fabiensanglard-net]] — **Blog** | fabiensanglard.net |
+- [[entities/factory]] — Factory (Factory AI) — Autonomous coding agents ("Droids") for enterprise. $1.5B valuation ($150M Series C, April 2026). Founded 2023 by Matan Grinberg and Eno Reyes. Model-agnostic routing, deep CI/CD integration. Free Droid tier launched April 2026.
 - [[entities/farhan-thawar]] — Farhan Thawar is a technology writer and commentator known for viral takes on AI industry trends.
 - [[entities/fei-fei-li]] — **フルネーム** | Fei-Fei Li（李飞飞） |
 - [[entities/fidji-simo]] — CEO, OpenAI AGI Deployment (May 2026: medical leave); ex-AppLovin CEO, Meta VP. Key figure in OpenAI's product reorganization.
@@ -399,6 +401,7 @@
 - [[entities/rehan-van-der-merwe]] — Cloud-native architect and blogger. Writes at rehanvdm.com.
 - [[entities/reiner-pope]] — CEO of MatX, former Google TPU architect. Expert on full-stack AI from chip design to model architecture. Known for roofline analysis framework for LLM inference economics.
 - [[entities/richard-ngo]] — Independent AI researcher & philosopher. Former DeepMind AGI Safety and OpenAI Governance. Creator of AGI Safety from First Principles. Writes at mindthefuture.info.
+- [[entities/richard-susskind]] — Richard Susskind — Legal technology expert, author, advisor on AI in law. Author of "The Future of the Professions" and "Online Courts and the Future of Justice."
 - [[entities/richard-sutton]] — **Role** | Professor, University of Alberta; Research Scientist, Keen Technologies; Former Distinguished Research Scientist, Google DeepMind |
 - [[entities/ring-2-6-1t]] — 1T MoE thinking model (63B active) by InclusionAI. Optimized for coding agents, tool use. Free on OpenRouter. Released May 2026.
 - [[entities/rivet-dev]] — AI agent infrastructure company. Products: agentOS (WASM/V8 isolate runtime), Sandbox Agent SDK (universal coding agent API), Docker Sandbox MicroVM research. CTO: Nathan Flurry.
@@ -623,7 +626,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1362 pages)
+## Concepts (1365 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -946,6 +949,7 @@
 - [[concepts/agent-identity-verification]]
 - [[concepts/agent-loop-orchestration]]
 - [[concepts/agent-observability]] — AIエージェントの可観測性とフィードバック駆動学習ループ。LangChain CEO Harrison Chaseが提唱する、トレース収集→評価→改善のサイクル。
+- [[concepts/agent-observability-feedback]] — Agent Observability Needs Feedback to Power Learning — Aaron Kaplowitz (Arize) argues that agent observability without feedback loops is incomplete. Traces → evals → improvements cycle. Feedback as the missing link between monitoring and agent learning.
 - [[concepts/agent-native-product-management]] — AIエージェント（特にClaude Code, Codex）をPM業務の主要インターフェースとして活用する手法
 - [[concepts/agent-orchestration]] — Agent Orchestration — Coordinating and governing multiple AI agents at enterprise scale. IBM watsonx Orchestrate as agentic control plane. Shift from building agents to governing thousands across platforms. Policy enforcement, auditability, interoperability.
 - [[concepts/agent-orchestration-frameworks]] — Comparative analysis of major AI agent orchestration frameworks as of 2026: LangGraph, CrewAI, AutoGen, Semantic Kernel, Pydantic AI, and OpenAI Agents SDK. Frameworks differ on multi-agent topology (linear DAG vs graph-based vs hierarchical), state management, and human-in-the-loop support.
@@ -1000,7 +1004,9 @@
 - [[concepts/rlhf]] — RLHF
 - [[concepts/runtime-opinionated-sdk]] — Claude/OpenAI Agents SDK を mini runtime として捉える概念。SDKが単なるユーティリティライブラリではなく「agent execution はこうあるべき」という実行モデル（reactive tool loop、runtime-owned tool orchestration、composable actors、native observability）を埋め込んでいる状態を runtime-opinionated と定義。LangGraph（developer authors orchestration）との本質差、PIとの比較（PIはより深いscheduler/lifecycle semanticsを持つ）。Source: kzinmr (2026-05-15)。
 - [[concepts/speculative-decoding]] — Speculative Decoding
+- [[concepts/speculative-decoding-mtp]] — Speculative Decoding and Multi-Token Prediction — Google DeepMind's Gemma 4 introduces MTP (Multi-Token Prediction) drafter heads for faster inference. Comparison of speculative decoding approaches: draft models vs MTP heads vs Medusa. Performance tradeoffs and hardware implications.
 - [[concepts/structured-outputs]] — Structured Outputs
+- [[concepts/subagent-patterns]] — How Agents Manage Other Agents: Four Subagent Patterns in 2026 — Survey of 4 dominant subagent coordination patterns: hierarchical, peer-to-peer, swarm, and manager-worker. Analysis by Sarah Chieng (@MilksandMatcha). Practical patterns from Claude Code, Codex, Devin, and OpenCode.
 - [[concepts/unharnessed-agents]] — Unharnessed Agents — John Berryman's thesis that "agent harness" is the wrong frame; agents should leave the IDE. Complementary to [[concepts/harness-commoditization|Harness Commoditization]].
 - [[concepts/agent-swarms]] — Agent Swarms: 自律分散型エージェント群の創発的行動パターン。生物学的スワームから着想。
 - [[concepts/ai-agent-engineering]] — AI Agent Engineering: エージェント実行基盤の構築原則と設計パターン。

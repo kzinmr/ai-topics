@@ -4,7 +4,6 @@ title: "Automation Series #7: Observability, Auditability, and Replay"
 author: Antoine Buteau
 date: 2026-05-02
 tags: [automation, observability, audit-trail, replayability]
-updated: 2026-05-08
 ---
 
 # Automation Series #7: Observability, Auditability, and Replay
