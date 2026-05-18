@@ -17,9 +17,12 @@ sources:
   - raw/papers/2026-05-18_2605.15155_sdar-self-distilled-agentic-rl.md
   - https://arxiv.org/abs/2605.15155
   - https://github.com/ZJU-REAL/SDAR
+  - raw/articles/2026-05-18_siyan-zhao_opsd-self-distilled-reasoner.md
+  - https://siyan-zhao.github.io/blog/2026/opsd/
 related:
   - concepts/grpo-rl-training
   - concepts/on-policy-distillation
+  - concepts/on-policy-self-distillation
   - concepts/multi-teacher-on-policy-distillation
   - concepts/model-distillation
   - concepts/rlhf
@@ -141,6 +144,7 @@ See [[concepts/multi-teacher-on-policy-distillation]] for MOPD, the 2026 product
 ## Related Pages
 
 - [[concepts/grpo-rl-training]] — GRPO algorithm, the RL backbone
+- [[concepts/on-policy-self-distillation]] — OPSD: the foundational same-model self-distillation technique SDAR builds on
 - [[concepts/on-policy-distillation]] — Foundational OPD technique (Thinking Machines Lab, 2025)
 - [[concepts/multi-teacher-on-policy-distillation]] — Multi-teacher production OPD (2026)
 - [[concepts/model-distillation]] — General category of knowledge distillation

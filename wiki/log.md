@@ -4,6 +4,19 @@
 
 ---
 
+### 2026-05-18 06:30 UTC — OPSD Article Ingestion (Siyan Zhao)
+
+Ingested "Self-Distilled Reasoner: On-Policy Self-Distillation" by Siyan Zhao et al. (UCLA/Meta Superintelligence Labs, 2026) from siyan-zhao.github.io.
+
+### Changes
+- `wiki/raw/articles/2026-05-18_siyan-zhao_opsd-self-distilled-reasoner.md` — New raw article. OPSD uses same model as student + teacher (with ground-truth as privileged context), JSD_β divergence, full-vocabulary distribution matching. ≥ GRPO at 1/64 token cost.
+- `wiki/concepts/on-policy-self-distillation.md` — **New concept page** (status: complete). Full coverage: OPSD mechanism (3-step training, JSD_β loss, KL clipping), policy-gradient interpretation (comparison with STaR), experimental results, relationship to OPD and SDAR.
+- `wiki/entities/siyan-zhao.md` — **New entity page** (status: stub). UCLA/Meta researcher, lead author of OPSD.
+- `wiki/concepts/on-policy-distillation.md` — Replaced "OPSD" section with comprehensive **OPD vs OPSD comparison table**: origin, teacher type, divergence, domain, key insight. Added cross-references to both OPSD and SDAR.
+- `wiki/concepts/sdar-self-distilled-agentic-rl.md` — Added OPSD paper to sources, added `on-policy-self-distillation` to related pages, added OPSD as foundational technique in Related Pages section.
+- `wiki/index.md` — Added OPSD concept entry + Siyan Zhao entity entry.
+- `wiki/log.md` — This entry.
+
 ---
 ## [2026-05-18] ingest | The Signal + Superintel newsletters (May 17)
 

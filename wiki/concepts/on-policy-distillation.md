@@ -250,6 +250,7 @@ This traces a **Pareto curve** as β varies. Different methods are different poi
 ## Related Pages
 
 - [[concepts/multi-teacher-on-policy-distillation]] — Multi-teacher production-scale evolution (2026)
+- [[concepts/on-policy-self-distillation]] — OPSD: same-model self-distillation for reasoning (Zhao et al., 2026)
 - [[concepts/sdar-self-distilled-agentic-rl]] — SDAR: gated OPSD + GRPO for multi-turn agent training (2026)
 - [[concepts/model-distillation]] — Broader category of distillation techniques
 - [[concepts/post-training-distributional-view]] — SFT vs RL vs OPD through a distributional lens
@@ -258,6 +259,26 @@ This traces a **Pareto curve** as β varies. Different methods are different poi
 - [[entities/will-brown]] — Author of gradient-geometric analysis of OPD vs SFT vs RL
 - [[entities/nrehiew]] — Author of the post-training distributional view (SFT/RL/OPD comparison)
 
-## OPSD: On-Policy Self-Distillation
+## OPD vs OPSD: Terminology
 
-**OPSD** is a variant of OPD where the teacher is the **same model** augmented with privileged context (e.g., retrieved skills for agent tasks), rather than a separate stronger model. This is the distillation paradigm used in [[concepts/sdar-self-distilled-agentic-rl|SDAR]] (Lu et al., 2026) for multi-turn agent training. Unlike standard OPD which assumes the teacher is generally stronger, OPSD must handle **asymmetric trust** — positive teacher endorsements are reliable, but negative rejections may stem from poor skill retrieval or utilization rather than genuine errors. SDAR solves this with a sigmoid gate that amplifies positive gaps and attenuates negative ones at the token level.
+The OPD family has two major branches:
+
+| | OPD (On-Policy Distillation) | OPSD (On-Policy **Self**-Distillation) |
+|---|---|---|
+| **Origin** | Thinking Machines Lab (Oct 2025) | Zhao et al., UCLA/Meta (2026) |
+| **Teacher** | Separate model or same-family | **Same model** + privileged context (e.g., ground-truth solution) |
+| **Divergence** | Reverse-KL | JSD_β (generalized Jensen-Shannon) |
+| **Domain** | General post-training | Math reasoning (foundational); agent tasks (SDAR adaptation) |
+| **Key insight** | RL explores strategy space, OPD cheaply learns discovered strategies | Evaluation > generation: model rationalizes answers better than it generates them |
+
+Both are "on-policy distillation" — the critical shared trait is that the student's own trajectories (not expert demonstrations) are the distillation targets.
+
+### OPSD Variant in SDAR
+
+[[concepts/sdar-self-distilled-agentic-rl|SDAR]] (Lu et al., 2026) adapts OPSD for multi-turn agent training by:
+- Using **retrieved skills** (not ground-truth solutions) as privileged context
+- Switching to **reverse-KL** divergence (mode-seeking)
+- Adding a **sigmoid gate** to handle asymmetric trust in teacher signals
+
+See [[concepts/on-policy-self-distillation]] for the foundational reasoning-focused OPSD.
+See [[concepts/sdar-self-distilled-agentic-rl]] for the gated agent-training adaptation.
