@@ -1,3 +1,19 @@
+## [2026-05-18] health-fix | Wiki health auto-fix
+
+### Fixes Applied
+- Removed ghost entry `[[entities/_index]]` from index.md (no file exists)
+- Added 20 orphan concept pages to index.md (first alphabetically: `ai-agents-autonomy-*` through `ai-infrastructure-engineering/model-serving-autoscaling`)
+- Restored missing `## Events (3 pages)` section header
+- Updated header counts: Entities: 627→621, Concepts: 1370→1361
+
+### Index Stats (Post-Fix)
+- Total pages: 2005
+- Indexed entries: 1148
+- Not in index: 857 (908 orphans minus 20 added minus 1 ghost removed)
+- validate_index.py: clean ✅
+
+---
+
 ### 2026-05-18 18:05 UTC — Watchdog: index header count correction
 
 ## [2026-05-18] watchdog | Index header count correction
