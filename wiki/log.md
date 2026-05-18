@@ -1,3 +1,10 @@
+## [2026-05-18] ingest | Raw article: Doug Turnbull "Can Agents Replace the Search Stack?"
+
+- `raw/articles/2026-04-28_softwaredoug_search-apis-replaced-by-agents.md` — New raw article: Doug Turnbull's comprehensive experiment showing LLM agents (GPT-5-mini + BM25 + E5) achieve 0.453 NDCG on Amazon ESCI (+56.7% vs BM25 0.289), with no data-specific tuning. Covers agent exploration constraints (min 4 calls, similarity filtering), SID-1 agentic search models, and the critical distinction between "finding things" vs "deep research."
+- [[concepts/agentic-search]] — Updated source link from external URL to raw article wikilink.
+
+---
+
 ## [2026-05-18] dreaming | Nightly knowledge consolidation
 
 ### Pages Created

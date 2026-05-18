@@ -798,7 +798,7 @@ The IR-layer findings are based on:
 
 ## Sources
 
-- [Can Agents Replace the Search Stack?](https://softwaredoug.com/blog/2026/04/28/search-apis-replaced-by-agents.html) — Doug Turnbull (2026). Agentic search benchmark on Amazon ESCI: GPT-5 + BM25 + embeddings achieves 0.453 NDCG (+56.7% vs BM25 baseline). Key limitation: agentic search works for "finding things" but not "deep research."
+- [[raw/articles/2026-04-28_softwaredoug_search-apis-replaced-by-agents]] — Doug Turnbull (2026). Agentic search benchmark on Amazon ESCI: GPT-5 + BM25 + embeddings achieves 0.453 NDCG (+56.7% vs BM25 baseline). Key limitation: agentic search works for "finding things" but not "deep research."
 - [Improved Web Search with Dynamic Filtering](https://claude.com/blog/improved-web-search-with-dynamic-filtering) — Anthropic (2026). Official announcement: dynamic filtering uses code execution to pre-process web results. BrowseComp: Sonnet 33.3%→46.6%, Opus 45.3%→61.6%. DeepsearchQA F1: Opus 69.8%→77.3%. ~11% accuracy gain, ~24% token reduction. GA alongside code execution, memory, programmatic tool calling, tool search.
 - [Dynamic Filtering in Claude Web Search (GEND)](https://www.gend.co/blog/claude-web-search-dynamic-filtering) — GEND/Anthropic partner (2026). Third-party summary and implementation guide.
 - [SID-1 Technical Report: Test-Time Compute for Retrieval](https://www.sid.ai/research/sid-1-technical-report) — SID Research (2025). First RL-trained agentic retrieval model. Qwen3-14B + GRPO, 0.84 recall, TI/TO pipeline insight.
