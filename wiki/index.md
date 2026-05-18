@@ -2,12 +2,13 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-18 | Total pages: 2022 | Indexed entries: 1072 | Not in index: 927 |
+> Last updated: 2026-05-18 | Total pages: 2023 | Indexed entries: 1073 | Not in index: 927 |
 
-## Entities (626 pages)
+## Entities (627 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
+- [[entities/agentmemory]] — Persistent memory for AI coding agents built on iii-engine. 12 hooks auto-capture, BM25+vector+graph retrieval (R@5: 95.2%), 4-tier memory consolidation. Works with Claude Code, Codex, Cursor, Hermes, any MCP client.
 - [[entities/agreement-bug]] — Agreement is a Bug
 - [[entities/akool]] — AKOOL — AI video generation suite. 10-20× faster real-time video inference engine, sub-30ms per frame latency. Palo Alto.
 - [[entities/autoreason]] — Autoreason

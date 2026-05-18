@@ -114,6 +114,7 @@ This aligns with the **[[concepts/bitter-lesson-harnessing|Bitter Lesson of Harn
 - [[concepts/bitter-lesson-harnessing]] — Why harnesses should simplify over time
 - [[concepts/pydantic-ai-harness]] — Another open harness approach (Pydantic's capability library)
 - [[entities/ben-boyter|Ben Boyter]] — Another "B2A" thinker who questions traditional architecture assumptions
+- [[entities/agentmemory]] — Persistent memory for AI coding agents, the most prominent application built on iii-engine
 
 ## Sources
 

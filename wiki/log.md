@@ -4,6 +4,18 @@
 
 ---
 
+### 2026-05-18 13:15 UTC — agentmemory: persistent memory system for AI coding agents
+## [2026-05-18] manual | agentmemory entity page + iii-platform update
+
+### Pages Created (2)
+- [[entities/agentmemory]] — Persistent memory for AI coding agents built on iii-engine. 12 lifecycle hooks, BM25+vector+graph RRF retrieval (R@5: 95.2%), 4-tier Ebbinghaus-style memory consolidation. 51 MCP tools, works with Claude Code/Codex/Cursor/Hermes/OpenClaw/pi/OpenCode. 12K GitHub stars, Apache-2.0.
+- `wiki/raw/articles/2026-05-18_agentmemory-persistent-memory-for-coding-agents.md` — Raw article from GitHub README + AlphaSignal deep-dive
+
+### Pages Updated (1)
+- [[entities/iii-platform]] — Added [[entities/agentmemory]] to Related section as the most prominent application built on iii-engine
+
+---
+
 ### 2026-05-18 12:45 UTC — RecSys Newsletter Vol.156: BM25 + Agentic Deep Research
 ## [2026-05-18] manual | BM25/PI-SERINI concept + entity pages from RecSys newsletter
 
