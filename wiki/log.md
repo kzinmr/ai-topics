@@ -917,3 +917,12 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - `wiki/SCHEMA.md` — Tag taxonomy: added `programming-language` to Engineering category.
 - `wiki/index.md` — Updated entity entry for armin-ronacher; added description to agent-ergonomics concept entry.
 - `wiki/concepts/claude-agent-sdk-research-stateless-stateful-web-search.md` — Deleted orphaned empty stub (not in index.md, no incoming links)
+
+## 2026-05-18 11:30 — X Bookmarks Ingest
+
+- `wiki/raw/articles/2026-05-17_DeRonin_agentic-project-setup-security.md` — Saved raw article: @DeRonin_ tweet about direnv + secrets manager setup for agentic projects (truncated thread)
+- `wiki/raw/articles/2026-05-17_addy-osmani_dont-outsource-learning.md` — Saved raw article: Addy Osmani "Don't Outsource the Learning" (May 2026). Follow-up to cognitive surrender thesis with new research: Anthropic 2026 randomized trial (50% vs 67% comprehension), MIT EEG study (83% couldn't quote their own output), CHI 2026 anchoring effect. Advocates Learning Mode features and treating "ship" vs "learn" as separate metrics.
+- `wiki/raw/articles/2026-05-16_Jouhatsu-ai_anthropic-claude-agent-training.md` — Saved raw article: @Jouhatsu_ai tweet reporting Anthropic's 2-hour comprehensive training on building Claude agents, led by the Claude Code engineer. Links to Anthropic Skilljar courses (Claude Code in Action, Agent Skills, Subagents) and certification programs.
+- `wiki/entities/addy-osmani.md` — Enriched: added "Don't Outsource the Learning" (May 2026) section with research findings. Updated sources list. Bumped updated date.
+- `wiki/concepts/cognitive-debt.md` — Enriched: added "2026 Research on AI-Assisted Learning vs. Comprehension" section covering Anthropic randomized trial, MIT EEG study, CHI 2026 anchoring effect, and Learning Mode mitigation. Updated sources list, bumped updated date. Added related page link to Addy Osmani entity.
+

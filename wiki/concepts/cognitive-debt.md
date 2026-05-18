@@ -4,7 +4,7 @@ type: concept
 aliases:
   - cognitive-debt
 created: 2026-04-25
-updated: 2026-04-28
+updated: 2026-05-18
 tags:
   - concept
   - methodology
@@ -12,6 +12,7 @@ tags:
   - agentic-engineering
 sources:
   - "raw/articles/xeiaso.net--blog-2026-ai-abstraction--744b692b.md"
+  - "raw/articles/2026-05-17_addy-osmani_dont-outsource-learning.md"
 ---
 
 # Cognitive Debt
@@ -40,6 +41,31 @@ When working with AI coding assistants, you operate at a higher level — closer
 
 This applies directly to vibe coding and agent-assisted development — the convenience of not writing every line of code comes at the cost of not *understanding* every line of code.
 
+## 2026 Research on AI-Assisted Learning vs. Comprehension
+
+In "Don't Outsource the Learning" (May 2026), Addy Osmani compiled converging research evidence on cognitive debt in AI-assisted development:
+
+### Anthropic Randomized Trial (Early 2026)
+- Engineers learned a new Python library with or without AI assistance
+- Both groups finished tasks at the same speed
+- Comprehension quiz: AI group 50% vs manual group 67% — gap widened on debugging
+- Critical finding: engineers who used AI for **conceptual questions** scored >65%; those who **copy-pasted** scored <40%
+- **"The tool didn't determine the outcome. The posture did."**
+
+### MIT "Your Brain on ChatGPT"
+- EEG measurements showed brain connectivity declining with each layer of external support
+- LLM group showed weakest neural coupling
+- 83% of LLM users couldn't quote a single line of what they had just produced
+- Term coined: **"cognitive debt"** — short-term mental effort savings, long-term critical thinking cost
+
+### CHI 2026 Anchoring Effect
+- LLM access at task start → model framed the entire problem
+- Even when humans did the rest independently, initial framing produced **measurably worse decisions**
+- **Order of operations matters more than total AI usage** — when the AI frames the problem, it constrains solution space
+
+### Mitigation: Learning Mode Features
+Anthropic, OpenAI, and Google have shipped Learning/Study/Guided modes that use Socratic questioning and request user code before continuing. Near-zero adoption in production work — filed under "for students" — but equally valuable for senior engineers learning new domains.
+
 ## Relationship to Agentic Engineering
 
 Cognitive debt explains several observed phenomena in agent-assisted development:
@@ -64,4 +90,6 @@ Cognitive debt explains several observed phenomena in agent-assisted development
 - [[concepts/harness-engineering/agentic-workflows/red-green-tdd]] — debt mitigation pattern
 - [[concepts/harness-engineering/agentic-engineering]] — parent concept
 - [[concepts/cognitive-surrender]] — The mechanism by which cognitive debt accumulates (Addy Osmani, May 2026)
+- [[entities/addy-osmani]] — Author of Don't Outsource the Learning, compiled 2026 research on AI/learning tradeoffs
 - [[entities/xeiaso-net]] — source of the abstraction cost framing
+- raw/articles/2026-05-17_addy-osmani_dont-outsource-learning.md — Don't Outsource the Learning (May 2026)
