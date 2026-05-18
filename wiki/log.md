@@ -4,6 +4,15 @@
 
 ---
 
+## [2026-05-18] blog-ingest | Gary Marcus neurosymbolic AI, Sean Goedecke ZIRP engineer, OpenAI Codex for Work
+
+- **Updated**: `wiki/entities/gary-marcus.md` — Added "The illusion of Generative AI" (May 2026): neurosymbolic AI advocacy, world models case, hyperscaling critique. Three interviews: Brian Greene (World Science Festival), Zachary Karabell (Web Summit), Will Wilson/Antithesis (Bug Bash 2026). Added tags: neurosymbolic, world-models, ai-safety.
+- **Updated**: `wiki/entities/seangoedecke-com.md` — Added "The just-say-no engineer was a ZIRP phenomenon" (May 2026). Analysis of the senior engineer archetype that thrived under zero-interest rates and is now threatened; AI is a red herring — the real cause is the end of ZIRP. Pure vs. impure engineering distinction.
+- **Updated**: `wiki/entities/openai-codex.md` — Added "Codex for Work" section (May 2026): team use cases for data science (KPI root-cause analysis, business impact readouts, analytics request agent, executive KPI memos, dashboard builder), business operations, and sales teams. Plugin-based architecture (Google Workspace, Slack). Added tags: data-science, bizops.
+- **Updated**: `wiki/index.md` — Refreshed summaries for gary-marcus, openai-codex entries. Bumped date to 2026-05-18.
+- **Skipped**: 13 non-AI-relevant articles (LWN kernel updates, Star Wars essay, NHS open-source politics, Joan Westenberg creativity essay, Troy Hunt weekly update)
+- **Raw articles**: 10 saved (3 processed into wiki)
+
 ### 2026-05-18 06:15 UTC — SDAR Paper Ingestion
 
 Ingested arXiv:2605.15155 "Self-Distilled Agentic Reinforcement Learning (SDAR)" by Zhengxi Lu et al. (ZJU/Meituan/Tsinghua).
