@@ -83,6 +83,7 @@ See [[doug-turnbull-blog]] for summaries of:
 - [[concepts/ndcg]] — Normalized Discounted Cumulative Gain
 - [[concepts/quepid]] — Open-source search relevance testing workbench
 - [[concepts/searcharray]] — Pandas-based BM25 search library
+- **[Don't waste too much time on the original RAG paradigm](https://www.linkedin.com/posts/softwaredoug_dont-waste-too-much-time-on-the-original-share-7452177290798686208-HRC-)** (Apr 2026) — Argues the RAG paradigm has moved on from embedding+chunking to agentic search where complexity lives in the agent+harness. Starting point: build simplest search tools and evolve based on where agents actually fail. Reverse of the classic RAG approach — "the dumbest thing that can work" with simple data systems.
 - [[concepts/trey-grainger]] — Co-author of AI-Powered Search
 - [[concepts/john-berryman]] — Co-author of Relevant Search
 - [[concepts/max-irwin]] — Co-author of AI-Powered Search

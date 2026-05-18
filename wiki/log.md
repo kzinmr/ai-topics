@@ -1,3 +1,27 @@
+## [2026-05-18] dreaming | Nightly knowledge consolidation
+
+### Pages Created
+- [[concepts/agent-first-design]] — Full concept page replacing stub. Covers Armin Ronacher's "A Language For Agents" thesis (8 design principles) and Vercel Zero as concrete implementation.
+- [[entities/vercel-labs]] — New entity page for Vercel Labs R&D division and its Zero programming language.
+
+### Pages Updated
+- [[entities/doug-turnbull]] — Added "Don't waste too much time on the original RAG paradigm" blog post (Apr 2026) to Recent Blog Posts.
+- [[entities/daringfireball-net]] — Added "AI Is Technology, Not a Product" (May 2026) to Recent Themes and References.
+
+### Sources
+- raw/articles/2026-05-18_armin-ronacher_a-language-for-agents.md
+- raw/articles/2026-05-18_vercel-labs_zero-language-for-agents.md
+- raw/articles/2026-04-21_softwaredoug_dont-waste-time-on-rag-paradigm.md
+- raw/articles/daringfireball.net--2026-05-ai-is-technology-not-a-product--d7845d6d.md
+
+### Notes
+- Triaged from dreaming pipeline (collect reported 0 articles but scanned 97 untriaged raw articles). Existing triage at dreaming/triage_latest.json was consumed.
+- Entities/seangoedecke-com.md, entities/dwarkesh-patel.md, entities/armin-ronacher.md already had substantive coverage of their respective articles — no enrichment needed.
+- 2 source articles skipped per triage (OpenClaw naming, non-AI articles).
+- Index counts updated.
+
+---
+
 ## [2026-05-18] tag-audit | Weekly tag taxonomy audit & auto-fix
 
 ### Changes

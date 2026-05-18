@@ -582,6 +582,7 @@
 - [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
 - [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
 - [[entities/vercel]] — Vercel — Frontend cloud platform (Next.js). Released deepsec open-source security harness using coding agents for vulnerability discovery and remediation (May 2026).
+- [[entities/vercel-labs]] — Vercel Labs — R&D division of Vercel. Creator of Zero, a systems language built for agent-first development (May 2026).
 - [[entities/radixark]] — RadixArk — AI inference infrastructure startup. $100M seed (May 2026), built on SGLang inference + Miles (large-scale RL).
 - [[entities/perplexity]] — Perplexity — AI search platform expanding into vertical products: Professional Finance Computer (35 analyst workflows), NEJM/BMJ premium medical access.
 - [[entities/arena-ai]] — Arena (arena.ai) — AI model evaluation and comparison platform. Chatbot Arena leaderboard with blind pairwise comparisons across text, vision, code, and search.
@@ -642,7 +643,7 @@
 - [[concepts/adversarial-interoperability]] — Adversarial Interoperability — Theory and practice of interoperating with platforms against their wishes. Cory Doctorow's framework for competitive tech policy
 - [[concepts/agent-documentation]] — Agent Documentation — Writing documentation optimized for AI coding agents: structured specs, clear interfaces, docstrings as semantic contracts
 - [[concepts/agent-first-codebase-design]] — Agent-First Codebase Design — Structuring repositories and codebases for maximum AI agent comprehension and effectiveness
-- [[concepts/agent-first-design]] — Agent-First Design — Design philosophy prioritizing AI agent readability and navigability over human conventions
+- [[concepts/agent-first-design]] — Agent-First Design — Programming languages designed for AI agents as first-class users. Ronacher's framework + Vercel Zero implementation.
 - [[concepts/agentic-alternative-to-graphrag]] — Agentic Alternative to GraphRAG — Moving beyond GraphRAG to agent-based retrieval patterns
 - [[concepts/agentic-browsing]] — Agentic Browsing — AI agents that navigate websites, interact with web applications, and extract information autonomously
 - [[concepts/agentic-coding]] — Agentic Coding — AI agents writing and modifying code autonomously. The paradigm shift from copilot to autonomous coding

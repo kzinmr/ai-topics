@@ -138,6 +138,7 @@ Daring Fireball has operated as an independent publication for over two decades.
 - **Developer relations decline**: Five consecutive years of "D" grades for Apple's treatment of developers
 - **Independent media model**: Continued operation of Daring Fireball as an independently owned, sponsorship-funded publication
 - **Markdown's expanding influence**: Observing how the format he created has become the universal input language for AI systems
+- **[AI Is Technology, Not a Product](https://daringfireball.net/2026/05/ai_is_technology_not_a_product)** (May 2026) — Counterpoint to Steven Levy's Wired article urging Apple to launch a "killer AI product." Gruber argues AI is pervasive technology like wireless networking, not a discrete product category. Critiques Levy's vision of always-on AI agents replacing phones as fever-dream hype. Defends John Ternus's stance that Apple ships products, not technologies — just as the iPod was about music, not MP3 files. Predicts phones remain the primary computing device through 2030.
 
 ## Related
 
@@ -164,4 +165,5 @@ Daring Fireball has operated as an independent publication for over two decades.
 ## References
 
 - daringfireball.net--2026-04-nyt-wrong-crossword-grid--f77c4b38
+- daringfireball.net--2026-05-ai-is-technology-not-a-product--d7845d6d
 - daringfireball.net--feeds-sponsors--a706ab2f
