@@ -17,6 +17,7 @@
 ### Notes
 - Triaged from dreaming pipeline (collect reported 0 articles but scanned 97 untriaged raw articles). Existing triage at dreaming/triage_latest.json was consumed.
 - Entities/seangoedecke-com.md, entities/dwarkesh-patel.md, entities/armin-ronacher.md already had substantive coverage of their respective articles — no enrichment needed.
+- Entity date bumps: entities/doug-turnbull.md (2026-04-10→2026-05-18), entities/daringfireball-net.md (2026-04-24→2026-05-18).
 - 2 source articles skipped per triage (OpenClaw naming, non-AI articles).
 - Index counts updated.
 
