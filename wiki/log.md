@@ -1,3 +1,18 @@
+## [2026-05-18] ingest | X bookmarks — Pi Coding Agent metadata-only record
+
+### Summary
+- 2 new bookmarks processed from X. 1 skipped (startup accelerators, not AI-aligned).
+- [[entities/pi]] — X article "Pi Coding Agent 最全面指南（完美支持/goal）" could not be fetched (HTTP 500). Saved metadata-only record.
+
+### Changes
+- `raw/articles/x-article-2056043868077096960-pi-coding-agent-guide.md` — Metadata-only record: X article about Pi Coding Agent comprehensive guide with `/goal` support. Content inaccessible due to X API HTTP 500 error. Records title, URL, and fetch failure details for later retrieval.
+- `entities/pi.md` already has comprehensive coverage — no enrichment needed from inaccessible source.
+
+### Notes
+- Bookmark 2/2 skipped: tweet about startup accelerators (YC, a16z Speedrun, Techstars, Founders Inc) — not AI/LLM aligned per SCHEMA.md.
+
+---
+
 ## [2026-05-18] ingest | Raw article: Doug Turnbull "Can Agents Replace the Search Stack?"
 
 - `raw/articles/2026-04-28_softwaredoug_search-apis-replaced-by-agents.md` — New raw article: Doug Turnbull's comprehensive experiment showing LLM agents (GPT-5-mini + BM25 + E5) achieve 0.453 NDCG on Amazon ESCI (+56.7% vs BM25 0.289), with no data-specific tuning. Covers agent exploration constraints (min 4 calls, similarity filtering), SID-1 agentic search models, and the critical distinction between "finding things" vs "deep research."
