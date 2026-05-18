@@ -250,9 +250,14 @@ This traces a **Pareto curve** as β varies. Different methods are different poi
 ## Related Pages
 
 - [[concepts/multi-teacher-on-policy-distillation]] — Multi-teacher production-scale evolution (2026)
+- [[concepts/sdar-self-distilled-agentic-rl]] — SDAR: gated OPSD + GRPO for multi-turn agent training (2026)
 - [[concepts/model-distillation]] — Broader category of distillation techniques
 - [[concepts/post-training-distributional-view]] — SFT vs RL vs OPD through a distributional lens
 - [[concepts/grpo-rl-training]] — The RL framework OPD was implemented on top of
 - [[entities/thinking-machines-lab]] — Research lab that authored the foundational OPD paper
 - [[entities/will-brown]] — Author of gradient-geometric analysis of OPD vs SFT vs RL
 - [[entities/nrehiew]] — Author of the post-training distributional view (SFT/RL/OPD comparison)
+
+## OPSD: On-Policy Self-Distillation
+
+**OPSD** is a variant of OPD where the teacher is the **same model** augmented with privileged context (e.g., retrieved skills for agent tasks), rather than a separate stronger model. This is the distillation paradigm used in [[concepts/sdar-self-distilled-agentic-rl|SDAR]] (Lu et al., 2026) for multi-turn agent training. Unlike standard OPD which assumes the teacher is generally stronger, OPSD must handle **asymmetric trust** — positive teacher endorsements are reliable, but negative rejections may stem from poor skill retrieval or utilization rather than genuine errors. SDAR solves this with a sigmoid gate that amplifies positive gaps and attenuates negative ones at the token level.

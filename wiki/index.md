@@ -993,7 +993,7 @@
 - [[concepts/fine-tuning]] — Fine-Tuning
 - [[concepts/firecracker]] — Firecracker microVM: AWSのRust製軽量VMM（~50K行）。KVMハードウェア仮想化で~125ms起動。AWS Lambda/Fargateを支え、Browserbase/E2B/Daytona/Modal等のAIエージェント企業がコード実行サンドボックスに採用。VM分離＋コンテナ起動速度の両立。
 - [[concepts/gguf-quantization]] — GGUF Quantization
-- [[concepts/grpo-rl-training]] — GRPO RL Training
+- [[concepts/grpo-rl-training]] — GRPO (Group Relative Policy Optimization) — DeepSeek考案のRLアルゴリズム。critic不要、グループ内相対advantage計算。DeepSeek-R1で普及し、推論・エージェント訓練の標準RLバックボーンに。SDARやMOPDの基盤。
 - [[concepts/kv-cache]] — KV Cache
 - [[concepts/llm-evaluation]] — LLM Evaluation
 - [[concepts/mixture-of-experts]] — Mixture of Experts
@@ -1003,6 +1003,7 @@
 - [[concepts/retrieval-augmented-generation]] — Retrieval Augmented Generation
 - [[concepts/rlhf]] — RLHF
 - [[concepts/runtime-opinionated-sdk]] — Claude/OpenAI Agents SDK を mini runtime として捉える概念。SDKが単なるユーティリティライブラリではなく「agent execution はこうあるべき」という実行モデル（reactive tool loop、runtime-owned tool orchestration、composable actors、native observability）を埋め込んでいる状態を runtime-opinionated と定義。LangGraph（developer authors orchestration）との本質差、PIとの比較（PIはより深いscheduler/lifecycle semanticsを持つ）。Source: kzinmr (2026-05-15)。
+- [[concepts/sdar-self-distilled-agentic-rl]] — Self-Distilled Agentic Reinforcement Learning (SDAR) — マルチターンLLMエージェントの安定したpost-training手法。GRPOを主最適化に据え、token-levelのsigmoid gateでOPSD（On-Policy Self-Distillation）を制御。教師のpositive endorsementsを増幅、negative rejectionsを減衰。ALFWorld +9.4%、Search-QA +7.0%、WebShop Acc +10.2%（ZJU/Meituan/Tsinghua, 2026）。
 - [[concepts/speculative-decoding]] — Speculative Decoding
 - [[concepts/speculative-decoding-mtp]] — Speculative Decoding and Multi-Token Prediction — Google DeepMind's Gemma 4 introduces MTP (Multi-Token Prediction) drafter heads for faster inference. Comparison of speculative decoding approaches: draft models vs MTP heads vs Medusa. Performance tradeoffs and hardware implications.
 - [[concepts/structured-outputs]] — Structured Outputs

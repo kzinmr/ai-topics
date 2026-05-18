@@ -4,6 +4,19 @@
 
 ---
 
+### 2026-05-18 06:15 UTC — SDAR Paper Ingestion
+
+Ingested arXiv:2605.15155 "Self-Distilled Agentic Reinforcement Learning (SDAR)" by Zhengxi Lu et al. (ZJU/Meituan/Tsinghua).
+
+### Changes
+- `wiki/raw/papers/2026-05-18_2605.15155_sdar-self-distilled-agentic-rl.md` — New raw paper. SDAR combines GRPO with gated OPSD for stable multi-turn agent training. +9.4% ALFWorld, +7.0% Search-QA, +10.2% WebShop Acc over GRPO.
+- `wiki/concepts/sdar-self-distilled-agentic-rl.md` — **New concept page** (status: complete). Full coverage: motivation (2 critical observations), method (sigmoid gating, 3 strategies, theoretical properties), results table (3 models × 3 benchmarks), relationship matrix (GRPO/OPD/MOPD/SDAR comparison), implementation details.
+- `wiki/concepts/grpo-rl-training.md` — **Enriched from stub to complete**. Added: GRPO mechanism (advantage computation, advantages/limitations), GRPO as RL backbone table (vanilla/MOPD/SDAR/Skill-GRPO), SDAR relationship section. Updated tags, sources, related pages. Status: stub → complete.
+- `wiki/concepts/on-policy-distillation.md` — Added SDAR reference in Related Pages + new "OPSD: On-Policy Self-Distillation" section explaining the difference between OPD (stronger teacher) and OPSD (same-policy teacher with privileged context).
+- `wiki/index.md` — Updated GRPO entry with full description. Added SDAR entry.
+- `wiki/log.md` — This entry.
+- `scripts/papers_index.py` — Registered arXiv:2605.15155.
+
 ## [2026-05-18] Stale directory cleanup — /opt/data/home/ → canonical merge
 
 **Context**: Subagents wrote to `/opt/data/home/wiki/` instead of canonical `/opt/data/wiki/`. Manual merge operation.
