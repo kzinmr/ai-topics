@@ -1,0 +1,104 @@
+---
+title: "Yohei Nakajima"
+created: 2026-05-19
+updated: 2026-05-19
+type: entity
+tags:
+  - person
+  - ai-agents
+  - autonomous-agents
+  - agent-architecture
+  - agent-memory
+  - open-source
+  - entrepreneur
+  - self-improving
+  - x-account
+sources:
+  - "https://yoheinakajima.com/"
+  - "https://github.com/yoheinakajima"
+  - "raw/articles/2026-05-19_yoheinakajima_state-of-statefulness-ai-agents.md"
+  - "https://yoheinakajima.com/the-future-of-autonomous-agents/"
+  - "https://yoheinakajima.com/better-ways-to-build-self-improving-ai-agents/"
+  - "https://github.com/yoheinakajima/babyagi3"
+aliases: [@yoheinakajima, BabyAGI creator]
+---
+
+# Yohei Nakajima
+
+> Creator of [[concepts/babyagi|BabyAGI]], the first popular open-source autonomous agent. General Partner at Untapped Capital. Prolific builder-in-public focused on the evolution of autonomous agents, agent memory systems, and self-improving AI.
+
+## Who
+
+Yohei Nakajima (@yoheinakajima) is a venture capitalist (General Partner at Untapped Capital) and one of the most influential open-source contributors to autonomous agent development. He created BabyAGI in April 2023 as a ~100-line Python proof-of-concept — a minimalist task-driven agent that established the decomposition-prioritization-execution loop as the canonical pattern for autonomous agents. BabyAGI became the conceptual reference for the next generation of agents, earning 20k+ GitHub stars and 70+ academic citations.
+
+## Key Contributions
+
+### BabyAGI Series (2023-2026)
+
+| Project | Released | Concept |
+|---|---|---|
+| **BabyAGI (OG)** | Apr 2023 | ~100 lines: task creation → prioritization → execution loop. GPT-3, Pinecone, LangChain. MIT license. |
+| **BabyBeeAGI** | 2023 | Combined task manager + dependencies + tools. |
+| **BabyCatAGI** | 2023 | Restructured loop for speed. GPT-4 task creation upfront (not inside loop). Mini-agent as web-search tool. |
+| **BabyAGI 2** | 2024 | Stored and executed functions from a database for persistence. |
+| **BabyAGI 2o** | 2024 | Self-building agent: dynamically creates/registers Python functions as tools. Simplest self-building autonomous agent. |
+| **BabyAGI 3** | 2025-2026 | Three-layer memory (events → knowledge graph → summaries), multi-channel (CLI, email, voice, SMS), scheduling, self-improvement via learning subsystem. |
+
+### Agent Taxonomy (May 2024)
+
+In "The Future of Autonomous Agents," Nakajima introduced a three-category taxonomy:
+
+1. **Hand-crafted agents**: Chained prompts and API calls. Making money today.
+2. **Specialized agents**: Dynamic decision-making within narrow fields (e.g., Devin). Good demos, not super reliable.
+3. **General agents**: Can do anything. Far from reality.
+
+**Practical GTM advice**: Build and sell high-value hand-crafted agents while building them modularly. Test the ability to dynamically tackle other tasks using the same skills and tools.
+
+### Memory Systems Architecture
+
+BabyAGI 3's three-layer memory system is Nakajima's most mature contribution to agent architecture:
+
+1. **Event Log (Ground Truth)**: Every interaction stored as immutable event with timestamps, channel, direction. SQLite-backed.
+2. **Knowledge Graph**: Background LLM pipeline extracts entities (people, orgs, concepts), edges (relationships with strength scores), and topics.
+3. **Hierarchical Summaries**: Pre-computed summary tree with staleness tracking. `user_preferences` node always in context.
+
+**Self-improvement**: `FeedbackExtractor` captures owner feedback; `ObjectiveEvaluator` assesses completed/failed objectives; learnings are retrieved when relevant and aggregated into user_preferences.
+
+### Self-Improving Agents Synthesis (Dec 2025)
+
+Synthesized NeurIPS 2025 papers into six mechanisms for agent self-improvement:
+
+1. Self-reflection and in-loop feedback (prompt-level, no weight changes)
+2. Self-generated data and curricula (agents create their own training data)
+3. Self-adapting models (fine-tuning or self-editing)
+4. Self-improving code agents (modifying own code, policies, architecture)
+5. Embodied self-improvement (learning by acting in environments)
+6. Verification, safety, and control
+
+**Key thesis**: "The bottleneck is increasingly not model size, but feedback quality and control."
+
+### Statefulness Research (May 2026)
+
+"The State of Statefulness in AI Agents" (X Article, 2026-05-19) — engages with the industry-wide shift from stateless LLM calls to persistent agent state via filesystems, memory layers, and knowledge graphs. Fits within the Gen 2→Gen 3 transition documented in [[concepts/agent-statefulness]].
+
+### Other Projects
+
+- **Pippin**: AI-powered SVG unicorn. Fully autonomous digital being with activity selection, memory, and state management. Demonstrates agent statefulness for non-technical use cases.
+- **MCP Client Analysis**: Surveyed the MCP client ecosystem, noting context window blowout as a key failure mode for long chains of tool use.
+
+## Thought Leadership Positions
+
+- **Experimentation → Consolidation**: "When new technology is introduced, there is a period of rapid experimentation — followed by eventual consolidation." Predicts only a few agent approaches will survive.
+- **Single agent, many tools**: Survey showed users want one agent that communicates with and leverages agents/tools from other people.
+- **Memory is the differentiator**: Consistent focus on memory layers as the key to persistent, improving agents.
+- **Build modularly**: Even hand-crafted agents should be built with skills/tools that can later be used dynamically by specialized agents.
+
+## Related Pages
+
+- [[concepts/agent-statefulness]] — The evolution of state management in AI agents
+- [[concepts/babyagi]] — BabyAGI concept page
+- [[concepts/memory-systems-design-patterns]] — Anthropic vs OpenAI vs Cognition memory patterns
+- [[concepts/agent-runtime]] — Agent execution environment
+- [[concepts/agent-harness-primitives]] — Harness as stateful control layer
+- [[entities/supermemory]] — SMFS: mountable filesystem for AI agents
+- [[concepts/context-repositories]] — Letta's git-based agent memory approach

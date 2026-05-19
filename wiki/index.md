@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-19 | Total pages: 2023 | Indexed entries: 1165 | Not in index: 857 |
+> Last updated: 2026-05-19 | Total pages: 2025 | Indexed entries: 1167 | Not in index: 857 |
 
-## Entities (627 pages)
+## Entities (628 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -508,6 +508,7 @@
 - [[entities/yacine-mahdid]] — **URL:** https://yacine.ca/
 - [[entities/yann-lecun]] — **フルネーム** | Yann André LeCun |
 - [[entities/yeachan-heo]] — Creator of **Oh-My-Codex (OmX)** workflow layer for Codex CLI and **Oh-My-Claudecode (OMC)**. Algorithmic trader in Seoul. Primary collaborator on **[[concepts/claw-code]]** Rust implementation.
+- [[entities/yohei-nakajima]] — Creator of BabyAGI (first popular open-source autonomous agent, 20k+ GitHub stars, 70+ citations). General Partner at Untapped Capital. Three-category agent taxonomy (hand-crafted/specialized/general), BabyAGI evolutionary series (OG→Bee→Cat→2→2o→3), three-layer memory architecture (event log→knowledge graph→hierarchical summaries), self-improving agents synthesis (NeurIPS 2025 review), and "The State of Statefulness in AI Agents" (May 2026).
 - [[entities/yoav-goldberg]] — NLP researcher, author of 'Neural Network Methods for NLP', curator of 'Learning LLMs in 2025' guide. Formerly at Bar-Ilan University and AI2.
 - [[entities/ysymyth]] — YSYMYTH（スケルトンページ）
 - [[entities/zach-mueller]] — **Zach Mueller** (@TheZachMueller, muellerzr). Lead developer of Hugging Face Accelerate. ML Engineer at 🤗. fastai educator, OSS author (AdaptNLP, fastdebug). Distributed training infrastructure expert.
@@ -641,7 +642,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1369 pages)
+## Concepts (1370 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -984,6 +985,7 @@
 - [[concepts/agent-native-product-management]] — AIエージェント（特にClaude Code, Codex）をPM業務の主要インターフェースとして活用する手法
 - [[concepts/agent-orchestration]] — Agent Orchestration — Coordinating and governing multiple AI agents at enterprise scale. IBM watsonx Orchestrate as agentic control plane. Shift from building agents to governing thousands across platforms. Policy enforcement, auditability, interoperability.
 - [[concepts/agent-orchestration-frameworks]] — Comparative analysis of major AI agent orchestration frameworks as of 2026: LangGraph, CrewAI, AutoGen, Semantic Kernel, Pydantic AI, and OpenAI Agents SDK. Frameworks differ on multi-agent topology (linear DAG vs graph-based vs hierarchical), state management, and human-in-the-loop support.
+- [[concepts/agent-statefulness]] — The evolutionary shift from stateless model calls through vector memory to filesystem-as-context for AI agent state management. Three generations (Raw Context → Memory Systems → Filesystem as Context), driven by context economics. Covers Anthropic's progressive disclosure, Manus's three-pronged context budget, Turso/AgentFS POSIX+SQLite hybrid, Vercel's radical simplicity, BabyAGI 3's three-layer memory, and research frontiers (StatePlane, InfiAgent, StateAct). Blind spots: semantic resilience, garbage collection, security, verification. Key thesis: when context cost is the binding constraint, architectures that reduce it win.
 - [[concepts/agent-runtime]] — The execution environment where AI agents operate: dual perspective covering **infrastructure substrate** (compute, filesystem, sandboxing, isolation primitives) and **execution semantics** (lifecycle management, tool mediation, state continuity, scheduling, events, safety, observability — the control system that makes agents persistent execution entities). Covers isolation primitive stack, sandbox-as-a-service landscape, hyperscaler offerings, runtime shift, runtime debt, 5-layer agent stack, historical arc (Framework→Workflow→Runtime), **control flow ownership shift** (why runtime-centric now), structural inversion (graph primary vs loop primary), what dies/survives in agent infrastructure, and the Model↔Runtime separation. Sources: Han Lee's Hidden Technical Debt, kzinmr's 3-part analysis (2026-05-15).
 - [[concepts/agent-sandboxing]]
 - [[concepts/agent-sandboxing-patterns]] — Browser Use's production agent sandboxing architecture (millions of concurrent web agents). Two patterns: isolate the tool (simpler) vs. isolate the agent (control plane architecture with zero-secret sandboxes, scalable independently). Core philosophy: "your agent should have nothing worth stealing and nothing worth preserving."
