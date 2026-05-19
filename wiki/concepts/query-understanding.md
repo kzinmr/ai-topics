@@ -286,6 +286,7 @@ Tunkelang has observed that LLM-based systems can over-personalize, sharing an e
 
 ## Distinction from Related Concepts
 
+- **[[concepts/content-understanding]]**: CU is the document/index-side counterpart to query understanding. While QU interprets the searcher's intent from the query, CU enriches content in the index to make it findable. The two form a virtuous cycle: engagement data maps queries to content, enabling mutual inference. CU handles varied formats (long-form, images); QU handles short text.
 - **[[concepts/agentic-search]]**: Agentic search is about *how* search is executed (agent-driven loops). Query understanding is about *interpreting what the searcher wants*. QU is an input into agentic search — the agent uses QU to understand the task before deciding how to fulfill it.
 - **[[concepts/bm25]]**: BM25 is a specific ranking function for lexical retrieval. Query understanding operates before ranking — it rewrites the query so that BM25 (or any ranker) has a better input.
 - **Information Retrieval (IR)**: IR is the broader field encompassing retrieval, ranking, and evaluation. Query understanding is the front-end discipline within IR focused specifically on query interpretation.

@@ -1288,3 +1288,13 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - `wiki/raw/articles/2022-10-24_daniel-tunkelang_query-similarity.md` — New raw article: Query similarity via embeddings and bag-of-documents (Oct 2022). Superficial vs. semantic variation, head/torso→tail transfer learning.
 - `wiki/index.md` — Added [[concepts/query-understanding]]; updated daniel-tunkelang entry; bumped counts (2032/1170/862).
 
+## 2026-05-19 — Create | Content Understanding concept page (systematized from Tunkelang's 8-article series)
+
+- `wiki/concepts/content-understanding.md` — New concept page: Comprehensive systematization of Content Understanding as the document/index-side counterpart to query understanding. Based on Daniel Tunkelang's 8-article series on medium.com/content-understanding (2021–2022). Covers the stack: classification → annotation → similarity → structure → quality → moderation + information extraction. CU vs QU comparison, virtuous cycle, 8 articles with source links.
+- `wiki/entities/daniel-tunkelang.md` — Enriched: Added "Content Understanding Publication Series" section with full 8-article table (numbered, dated, focused).
+- `wiki/concepts/query-understanding.md` — Cross-referenced: Added `[[concepts/content-understanding]]` to "Distinction from Related Concepts" section with explanation of CU as document-side counterpart.
+- `wiki/raw/articles/2021-11-01_daniel-tunkelang_what-is-content-understanding.md` — New raw article: Introduction (Nov 2021). Defines CU as foundation of search, places it in search process, introduces virtuous cycle with QU.
+- `wiki/raw/articles/2022-03-17_daniel-tunkelang_content-annotation.md` — New raw article: Reductionist approach — entity recognition, string matching, regex, POS tagging, LSTM-CRF.
+- `wiki/raw/articles/2022-04-25_daniel-tunkelang_content-structure.md` — New raw article: Summarization (extractive/abstractive) + segmentation (heuristic/ML/snippets).
+- `wiki/index.md` — Added [[concepts/content-understanding]]; bumped counts (2036/1171/865).
+

@@ -118,6 +118,23 @@ Tunkelang authored a systematic 24-article series on query understanding publish
 
 The series has been systematized in the wiki's [[concepts/query-understanding]] page.
 
+## Content Understanding Publication Series (2021–2022)
+
+Tunkelang also authored an 8-article companion series on **content understanding** — the document/index-side counterpart to query understanding — published under the *[Content Understanding](https://medium.com/content-understanding)* publication:
+
+| # | Article | Date | Focus |
+|---|---|---|---|
+| 1 | [What is Content Understanding?](https://medium.com/content-understanding/what-is-content-understanding-4da20e925974) [[raw/articles/2021-11-01_daniel-tunkelang_what-is-content-understanding.md]] | Nov 2021 | Introduction; CU as search foundation |
+| 2 | [Content Classification](https://medium.com/content-understanding/content-classification-6abd028cae5) | Nov 2021 | Holistic: rules vs ML, training data, category design |
+| 3 | [Content Annotation](https://medium.com/content-understanding/content-annotation-13b7c43ee5c7) [[raw/articles/2022-03-17_daniel-tunkelang_content-annotation.md]] | Mar 2022 | Reductionist: entity recognition, spans |
+| 4 | [Content Similarity](https://medium.com/content-understanding/content-similarity-d3c7a9cd7d44) | Mar 2022 | Embeddings: BoW→LSI→LDA→Word2Vec→BERT |
+| 5 | [Content Structure](https://medium.com/content-understanding/content-structure-34aa2bd9d134) [[raw/articles/2022-04-25_daniel-tunkelang_content-structure.md]] | Apr 2022 | Summarization + segmentation |
+| 6 | [Content Quality](https://medium.com/content-understanding/content-quality-d3db1a4dd450) | Aug 2022 | Need-independent quality for ranking |
+| 7 | [Content Moderation](https://medium.com/content-understanding/content-moderation-4cae7f3ae03) | Sep 2022 | Policy enforcement |
+| 8 | [Information Extraction](https://medium.com/content-understanding/information-extraction-ab50b0fbf18d) | Oct 2022 | Entity/relationship/sentiment extraction, aggregation |
+
+The series has been systematized in the wiki's [[concepts/content-understanding]] page.
+
 ## Core Philosophy
 
 ### Query Understanding Over Ranking
