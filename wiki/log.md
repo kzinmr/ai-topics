@@ -1,3 +1,13 @@
+## [2026-05-19] ingest | Llama 3 Herd of Models (arXiv:2407.21783) — landmark paper
+
+### Summary
+- Discord user request (kzinmr): arXiv:2407.21783 as landmark paper of LLM development stage in 2024
+- Saved raw paper: `wiki/raw/papers/2024-07-23_2407.21783_llama-3-herd-of-models.md`
+- Created entity page: `wiki/entities/llama-3.md` — Llama 3/3.1 model family, 405B dense Transformer, GPT-4 competitive
+- Created concept page: `wiki/concepts/llm-development-paradigm.md` — two-stage development paradigm (pre-training → SFT+RS+DPO)
+- china-briefing.com article ingestion was canceled per user request
+- Updated `wiki/index.md` (+2 entries, Entities 622, Concepts 1362)
+
 ## [2026-05-19] ingest | China OpenClaw Agentic AI Boom (China Briefing article)
 
 ### Summary
