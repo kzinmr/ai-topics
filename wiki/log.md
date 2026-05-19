@@ -63,6 +63,40 @@
 
 ---
 
+## [2026-05-19] newsletter ingest | Import AI 457 + Lenny's Podcast
+
+### Summary
+- Newsletter wiki-ingest pipeline: 4 take, 1 reference, 4 skip from triage checkpoint
+- ★★★★★ Thariq Shihipar: "HTML is the new Markdown" — Lenny's Podcast live at Anthropic → enriched [[entities/thariq-shihipar]], [[concepts/ai-output-format-progression]]
+- ★★★★☆ Aurora Optimizer (Tilde Research): fixes Muon neuron death, 1.1B scale, MMLU +10pts → [[concepts/aurora-optimizer]]
+- ★★★★☆ Prime Intellect autonomous speedrunning: Codex + Claude Code beat human baseline on nanoGPT → enriched [[entities/prime-intellect]]
+- ★★★☆☆ Positive Alignment (Oxford/DeepMind/OpenAI/Anthropic/Stanford): from stub → [[concepts/ai-alignment]]
+- Reference: fast16 AI Stuxnet analogy → [[concepts/ai-safety]]
+
+### Pages Created
+- [[concepts/aurora-optimizer]] — Leverage-aware optimizer for rectangular matrices. Fixes Muon's hidden neuron death problem.
+
+### Pages Enriched
+- [[entities/thariq-shihipar]] — Lenny's Podcast section: "HTML is the new Markdown", compute allocator paradigm, 9 key takeaways
+- [[concepts/ai-output-format-progression]] — Compute allocator shift subsection
+- [[concepts/ai-alignment]] — Enriched from stub: Positive vs Negative Alignment, flourishing science, governance design
+- [[entities/prime-intellect]] — Autonomous speedrunning experiment section (Codex/Claude Code, 10k runs, 14k H200 hours)
+- [[concepts/ai-safety]] — fast16 virus as AI-generated sabotage scenario blueprint
+
+### Pages Updated (index)
+- Index: new entry for aurora-optimizer, updated ai-alignment description, total pages 2014→2015
+
+### Sources
+- Import AI 457 (Jack Clark): [[raw/newsletters/2026-05-18-import-ai-457-ai-stuxnet-cursed-muon-optimizer-and-positive-alignment.md]]
+- Lenny's Podcast: [[raw/newsletters/2026-05-18-how-i-ai-html-is-the-new-markdown-how-anthropic-engineers-are-building-with-clau.md]]
+- Aurora blog: https://blog.tilderesearch.com/blog/aurora
+- Positive Alignment: https://arxiv.org/abs/2605.10310
+- Prime Intellect speedrun: https://github.com/PrimeIntellect-ai/experiments-autonomous-speedrunning
+
+---
+
+
+
 ## [2026-05-19] ingest | Llama 3 Herd of Models (arXiv:2407.21783) — landmark paper
 
 ### Summary

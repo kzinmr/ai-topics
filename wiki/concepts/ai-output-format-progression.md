@@ -6,7 +6,7 @@ tags:
   - developer-tooling
   - human-in-the-loop
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-19
 type: concept
 parent_concepts: [agent-communication, human-ai-interaction]
 ---
@@ -64,6 +64,20 @@ Key open question: how to weave together exact/procedural elements with neural/d
 ## Input Gap
 
 Karpathy notes that current input modalities (audio, text, video) are insufficient alone — pointing, gesturing, and screen-sharing are natural human collaboration behaviors that haven't been well-integrated into AI interfaces yet. Addressing these gaps is achievable well before neuralink-style BCIs.
+
+
+
+## The Compute Allocator Shift
+
+Thariq Shihipar's Lenny's Podcast appearance (May 2026) introduced a new framing: **engineers are evolving from code writers into "compute allocators"** — deciding how to spend hundreds of dollars of compute across hours of agent work. Key implications:
+
+- **Planning is the new coding**: The critical skill is defining what's worth building and staying in sync during the spec/planning phase
+- **~1% of generated tokens reach production code**: The other 99% go to dashboards, custom planning interfaces, status updates, and tools for understanding what to build
+- **Disposable micro-apps**: Custom throwaway HTML UIs for editing specific plan sections — "micro software on top of micro software"
+- **Living HTML design systems**: A single HTML file encoding colors, typography, spacing, and components that can be passed to any project
+- **Rich process → better products**: When tokens are cheap, making every interaction beautiful and tailored translates into better final outputs
+
+This pairs with Karpathy's progression framework: as output formats become richer (text → markdown → HTML → interactive), the human role shifts from writing to directing — allocating compute and making taste judgments.
 
 ## Practical Adoption
 

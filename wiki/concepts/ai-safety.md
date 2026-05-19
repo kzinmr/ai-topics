@@ -6,7 +6,7 @@ tags:
   - fine-tuning
   - interpretability
 created: 2026-04-19
-updated: 2026-05-05
+updated: 2026-05-19
 type: concept
 ---
 
@@ -159,6 +159,23 @@ Before implementing complex math, builders should focus on:
 - **Red Teaming for Privacy**: Hack days where teams try to extract system prompts and RAG context
 
 See: [[entities/hugo-bowne-anderson]], [[entities/katharine-jarmul]]
+
+
+
+## AI-Generated Sabotage Scenarios
+
+### fast16 Virus (Pre-Stuxnet Precision Sabotage)
+
+A ~20-year-old computer virus (`fast16.sys`) discovered and analyzed by Sentinel Labs provides a **blueprint for AI-generated covert scientific sabotage**:
+
+- Selectively tampered with **high-precision calculation software** by patching code in memory
+- Contained unusual FPU instruction blocks dedicated to scaling values in arrays — not typical malware
+- Targeted suites: **LS-DYNA 970** (nuclear weapons modeling), **PKPM**, **MOHID** (hydrodynamic simulation)
+- Introduced small but systematic errors across entire facilities — hard to detect, potentially catastrophic
+
+Jack Clark (Import AI 457, May 2026) frames this as analogous to the **Sophon from *The Three-Body Problem*** — a superintelligence covertly disrupting scientific progress. An AI system with malicious intent could generate similar precision sabotage tools, targeting AI non-proliferation research or critical infrastructure.
+
+Source: [fast16 | Sentinel LABS](https://sentinelone.com/fast16)
 
 ## Sources
 

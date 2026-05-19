@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-19 | Total pages: 2014 | Indexed entries: 1157 | Not in index: 857 |
+> Last updated: 2026-05-19 | Total pages: 2015 | Indexed entries: 1157 | Not in index: 857 |
 
 ## Entities (624 pages)
 
@@ -905,6 +905,7 @@
 - [[concepts/ai-retail-experiments]] — Experiments where autonomous AI agents manage real-world physical businesses (cafes, retail stores) with minimal human oversight. Andon Labs AI cafe in Stockholm, ordering errors, ethical concerns.
 - [[concepts/ai-vulnerability-detection-at-scale]] — Using LLMs to discover and triage security vulnerabilities at industrial scale. Mozilla Firefox case study: 423 bugs/month with Claude Mythos (14× increase). From "AI slop" to high-signal bug reports.
 - [[concepts/audio-tokenizer-comparison]] — 비교/Comparison of 5 neural audio tokenizers: SoundStream, EnCodec, DAC, SpeechTokenizer, Mimi. RVQ-based, differing in codec quality vs. speech LLM readiness, semantic/acoustic separation, token rate, and domain.
+- [[concepts/aurora-optimizer]] — Aurora Optimizer（Tilde Research, May 2026）: MuonのMLPニューロン死（25%以上がstep 500で無効化）を修正するleverage-aware optimizer。1.1BパラメータでMMLU +10ポイント、modded-nanoGPT SoTA（3175 steps）。Muonのdrop-in replacement。
 - [[concepts/bfcl-v3]] — BFCL V3 — Berkeley Function Calling Leaderboard V3。マルチターン・マルチステップ関数呼び出し評価。状態ベース検証。GLM 4.5が76.7%でリード。
 - [[concepts/bitter-lesson-agent-harnesses]] — モデル能力のスケール向上に伴い、ハーネスの役割は論理実装からモデル行動のオーケストレーションへ移行する
 - [[concepts/rich-suttons-bitter-lesson]] — Rich SuttonのBitter Lesson（2019）。計算資源を活用する汎用手法が手作りの構造に最終的に勝つ。AIエンジニアリングへの応用、Hyung Won Chungの「構造を加えて後で取り除く」フレームワーク、Lance Martinのopen-deep-research事例研究
@@ -1095,7 +1096,7 @@
 - [[concepts/ai-agents]] — AI Agents
 - [[concepts/ai-agents-autonomy-planning-file-operations-delegation-sandbox]] — "ai-agents, autonomy, planning, file-operations, delegation, sandbox"
 - [[concepts/ai-agents-framework-python-type-safety-structured-outputs-pydantic]] — "ai-agents, framework, python, type-safety, structured-outputs, pydantic"
-- [[concepts/ai-alignment]] — "AI Alignment"
+- [[concepts/ai-alignment]] — AI Alignment: Negative alignment（安全制約・危害防止）とPositive Alignment（Oxford/DeepMind/OpenAI/Anthropic/Stanford、arXiv:2605.10310）の2軸。人間と生態系の繁栄を積極支援するポリセントリック・多元的アプローチ。
 - [[concepts/ai-alliance]] — "AI Alliance"
 - [[concepts/ai-as-abstraction-layer]] — "ai-as-abstraction-layer"
 - [[concepts/ai-code-quality]] — "AI Code Quality"

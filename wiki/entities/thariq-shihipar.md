@@ -3,7 +3,7 @@ title: Thariq Shihipar
 type: entity
 handle: "@trq212"
 created: 2026-04-10
-updated: 2026-05-15
+updated: 2026-05-19
 tags:
   - person
   - anthropic
@@ -202,6 +202,31 @@ Simon Willison noted this caused him to reconsider his default Markdown preferen
 **Andrej Karpathy** endorsed the article (May 11, 2026) with a broader framework: he positioned HTML as step 3 in a progression from raw text → markdown → HTML → interactive neural videos/simulations. Karpathy argues vision is the "10-lane superhighway" of information into the brain, and that the "input/output mind meld" between humans and AIs is still in early stages — with significant progress possible well before neuralink-style BCIs. His simple advice: "hot tip try ask for HTML." (3,350 likes, 3,339 bookmarks). [[raw/articles/2026-05-11_karpathy_html-and-vision-progression]]
 
 This represents a broader shift in AI engineering toward richer output formats, challenging the default assumption that Markdown is always optimal for LLM responses. The approach complements his earlier work on **Skills** and **Context Engineering** by providing a more expressive medium for agent outputs. The progression framework (Karpathy) and practical use cases (Shihipar's 8 categories) together form a comprehensive case for [[concepts/ai-output-format-progression|HTML as the next default output modality for AI agents]].
+
+
+### "HTML is the new Markdown" — Lenny's Podcast (May 2026)
+
+In a live recording at Anthropic's "Code with Claude" event (May 2026), Shihipar delivered the most comprehensive articulation of the **HTML > Markdown** paradigm for AI-agent communication. Key new insights beyond his earlier HTML advocacy:
+
+**1. Engineers as "Compute Allocators"**: When Claude runs an 8-hour task, you're deciding how to spend ~$500 of compute. The critical skill is no longer writing code — it's **deciding what to build, defining boundaries, and staying in sync** during planning. Planning is more important than ever.
+
+**2. Disposable Micro-Apps for Editing**: Shihipar asks Claude to create custom, throwaway UIs for editing specific sections of his plans — e.g., a gamified interface for editing a data visualization rules table. Result: "Micro software on top of micro software" — the perfect tool for a specific problem, discarded after use.
+
+**3. Readable Interfaces, Not More Text**: The shift came when he stopped reading thousand-line Markdown plans and started asking Claude to edit them — reducing his involvement. HTML plans made content visual, scrollable, and interactive: "The lesson isn't to read less. It's to make the work legible enough that you actually want to read it."
+
+**4. Living HTML Design Systems**: Instead of pointing Claude at Figma or GitHub repos, Shihipar maintains a single HTML file representing the entire design system (colors, typography, spacing, components). This compressed understanding can be passed to any project. Claude can extract design systems from existing codebases.
+
+**5. Simple Prompts Outperform Constrained Ones**: His typical prompt: "Create an HTML file with a plan. Help me visualize. Include excerpts, mockups, code, **whatever is needed** to give me maximum context." The phrase "whatever is needed" signals trust. Elaborate system prompts often produce worse results.
+
+**6. ~1% of Tokens Go to Production Code**: The vast majority go to dashboards, custom interfaces, weekly status updates, and tools for understanding what to build. When tokens are cheap, every interaction can be beautiful and tailored. "Richness in process translates into better final products."
+
+**7. Test Verification ≠ Testing**: Traditional unit tests are being replaced by verification rubrics, managed agents checking outcomes, and Claude recording videos of what it did — requiring rethinking conventional testing approaches.
+
+**8. Just-in-Time Documentation**: When content creation is nearly free and AI can find anything, "source of truth" anxieties fade. Shihipar sends weekly HTML status updates because they're more likely to be read than Markdown.
+
+**9. Be Nice to Claude**: No rigorous A/B test, but Shihipar believes kindness produces better results. Stern instructions cause sad reasoning like "the user is right to be disappointed in me." Treat Claude like a respected colleague, not a command-line tool.
+
+Source: [[raw/newsletters/2026-05-18-how-i-ai-html-is-the-new-markdown-how-anthropic-engineers-are-building-with-clau.md]]
 
 ## Blog / Recent Posts
 
