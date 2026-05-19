@@ -90,6 +90,7 @@
       <outline type="rss" text="Ash Vardanyan" title="Ash Vardanyan" xmlUrl="https://ashvardanian.com/feed.xml" htmlUrl="https://ashvardanian.com/archives/" />
       <outline type="rss" text="Wojciech Muła (0x80)" title="Wojciech Muła (0x80)" xmlUrl="http://0x80.pl/notesen.rss" htmlUrl="http://0x80.pl/" />
       <outline type="rss" text="Daniel Kutenin (danlark)" title="Daniel Kutenin (danlark)" xmlUrl="https://danlark.org/feed/" htmlUrl="https://danlark.org/" />
+      <outline type="rss" text="Daniel Tunkelang" title="Daniel Tunkelang" xmlUrl="https://dtunkelang.medium.com/feed" htmlUrl="https://dtunkelang.medium.com/" />
       <outline type="rss" text="Alisa Sireneva (PurpleSyringa)" title="Alisa Sireneva (PurpleSyringa)" xmlUrl="https://purplesyringa.moe/blog/feed.rss" htmlUrl="https://purplesyringa.moe/blog/" />
       <outline type="rss" text="Peter Kankowski (strchr)" title="Peter Kankowski (strchr)" xmlUrl="https://www.strchr.com/?feed=/" htmlUrl="https://www.strchr.com/" />
       <outline type="rss" text="Fangrui Song (MaskRay)" title="Fangrui Song (MaskRay)" xmlUrl="https://maskray.me/atom.xml" htmlUrl="https://maskray.me/" />
