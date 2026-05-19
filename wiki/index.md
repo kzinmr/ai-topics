@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-19 | Total pages: 2028 | Indexed entries: 1169 | Not in index: 859 |
+> Last updated: 2026-05-19 | Total pages: 2032 | Indexed entries: 1170 | Not in index: 862 |
 
 ## Entities (628 pages)
 
@@ -160,7 +160,7 @@
 - [[entities/daniel-de-laney]] — **Blog** | danieldelaney.net |
 - [[entities/daniel-han]] — **X/Twitter** | @danielhanchen |
 - [[entities/daniel-miessler]] — Cybersecurity and AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ GitHub stars), SecLists, PAI. Author of Autonomous Component Optimization and Intent-Based Engineering concepts.
-- [[entities/daniel-tunkelang]] — **X/Twitter** | @dtunkelang | Search consultant, Endeca co-founder (faceted search pioneer). PhD CS (CMU), MIT. Founded HCIR symposium. 24 US patents. Book: Faceted Search (Springer). Advises Etsy, Flipkart. Query understanding specialist. [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
+- [[entities/daniel-tunkelang]] — **X/Twitter** | @dtunkelang | Search consultant, Endeca co-founder (faceted search pioneer). PhD CS (CMU), MIT. Founded HCIR symposium. 24 US patents. Author: [Query Understanding series](https://queryunderstanding.com/) (24 articles, 2016–2024), *Faceted Search* (Springer). Advises Etsy, Flipkart. [[concepts/query-understanding]] [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
 - [[entities/daniel-van-strien]] — **X** | @vanstriendaniel |
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
 - [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.
@@ -873,6 +873,7 @@
 - [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation)
 - [[concepts/qwen]] — Qwen model family: Alibaba's open-source LLM series (Apache 2.0). MoE variants achieve frontier-adjacent performance on consumer GPUs. Qwen3.6-35B-A3B flagship with thinking preservation.
 - [[concepts/qwen-3-6-35b]] — Qwen 3.6-35B-A3B: Sparse MoE (35B total, 3B active). 73.4% SWE-bench Verified, runs on single RTX 4090. Introduces thinking preservation for iterative coding workflows.
+- [[concepts/query-understanding]] — Query Understanding: 検索クエリ解釈の体系的学問。Daniel Tunkelangによる24記事シリーズ（2016-2024）で体系化。文字正規化→トークン化→クエリ書き換え→文脈→会話的検索の6層スタック。
 - [[concepts/rag-not-dead-series]] — RAG Is Not Dead — 7-Part Series
 - [[concepts/rag-systems]] — RAG Systems
 - [[concepts/raindrop]] — Raindrop — AI Agent Monitoring & Observability Platform

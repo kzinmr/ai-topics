@@ -85,6 +85,39 @@ Selected SlideShare presentations (available at [slideshare.net/dtunkelang](http
 - **"MMM, Search!"** (45 slides, 4.5K views) — Multi-modal search
 - **"Data Science: A Mindset for Productivity"** (28 slides, 11.9K views)
 
+## Query Understanding Publication Series (2016–2024)
+
+Tunkelang authored a systematic 24-article series on query understanding published on Medium under the *[Query Understanding](https://queryunderstanding.com/)* publication. The series traces a bottom-up curriculum from character-level processing to conversational search:
+
+| # | Article | Date | Layer |
+|---|---|---|---|
+| 1 | [A Manifesto](https://queryunderstanding.com/query-understanding-a-manifesto-367dc0be6745) | Jun 2016 | Philosophy |
+| 2 | [An Introduction](https://queryunderstanding.com/introduction-c98740502103) [[raw/articles/2016-10-28_daniel-tunkelang_query-understanding-introduction.md]] | Oct 2016 | Overview |
+| 3 | Language Identification | 2016 | Layer 0: Characters |
+| 4 | Character Normalization | 2016 | Layer 0 |
+| 5 | [Spelling Correction](https://queryunderstanding.com/spelling-correction-471f71b19880) | Jan 2017 | Layer 0 |
+| 6 | [Tokenization](https://queryunderstanding.com/tokenization-c8cdd6aef7ff) | Dec 2016 | Layer 1: Tokens |
+| 7 | [Stemming and Lemmatization](https://queryunderstanding.com/stemming-and-lemmatization-6c086742fe45) | Feb 2017 | Layer 1 |
+| 8 | [Query Rewriting: Overview](https://queryunderstanding.com/query-rewriting-an-overview-d7916eb94b83) [[raw/articles/2017-02-16_daniel-tunkelang_query-rewriting-overview.md]] | Feb 2017 | Layer 2: Rewriting |
+| 9 | [Query Expansion](https://queryunderstanding.com/query-expansion-2d68d47cf9c8) | Mar 2017 | Layer 2 |
+| 10 | [Query Relaxation](https://queryunderstanding.com/query-relaxation-342bc37ad425) | Mar 2017 | Layer 2 |
+| 11 | [Query Segmentation](https://queryunderstanding.com/query-segmentation-2cf860ade503) | Apr 2017 | Layer 2 |
+| 12 | [Query Scoping](https://queryunderstanding.com/query-scoping-ed61b5ec8753) | May 2017 | Layer 2 |
+| 13 | [Autocomplete](https://queryunderstanding.com/autocomplete-69ed81bba245) | 2017 | Cross-cutting |
+| 14 | [Location as Context](https://queryunderstanding.com/geographical-context-77ce4c773dc7) | Oct 2017 | Layer 4: Context |
+| 15 | [Seasonality](https://queryunderstanding.com/seasonality-5eef79d8bf1c) | 2017 | Layer 4 |
+| 16 | [Personalization](https://queryunderstanding.com/personalization-3ed715e05ef) | Nov 2017 | Layer 4 |
+| 17 | [Search as a Conversation](https://queryunderstanding.com/search-as-a-conversation-bafa7cd0c9a5) | Nov 2017 | Layer 5: Conversation |
+| 18 | [Clarification Dialogues](https://queryunderstanding.com/clarification-dialogues-69420432f451) | Dec 2017 | Layer 5 |
+| 19 | [Faceted Search](https://queryunderstanding.com/faceted-search-7d053cc4fada) | Jan 2018 | Layer 5 |
+| 20 | [Search Results Presentation](https://queryunderstanding.com/search-results-presentation-7d6c6c384ec1) | Feb 2018 | Layer 6: Results |
+| 21 | [Question Answering](https://queryunderstanding.com/question-answering-94984185c203) | May 2018 | Layer 6 |
+| 22 | [Search Results Clustering](https://queryunderstanding.com/search-results-clustering-b2fa64c6c809) | 2018 | Layer 6 |
+| 23 | [Query Similarity](https://queryunderstanding.com/query-similarity-49dde9f78043) [[raw/articles/2022-10-24_daniel-tunkelang_query-similarity.md]] | Oct 2022 | Layer 3: Query-Level |
+| 24 | [Query Specificity](https://queryunderstanding.com/query-specificity-a6156f4043eb) | Jan 2024 | Layer 3 |
+
+The series has been systematized in the wiki's [[concepts/query-understanding]] page.
+
 ## Core Philosophy
 
 ### Query Understanding Over Ranking
