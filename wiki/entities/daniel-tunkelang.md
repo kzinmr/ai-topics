@@ -13,6 +13,11 @@ aliases:
   - dtunkelang
 sources:
   - raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams
+  - raw/articles/2026-04-20_daniel-tunkelang_distilling-retrieval-pipelines.md
+  - raw/articles/2025-03-27_daniel-tunkelang_precision-recall-desirability.md
+  - raw/articles/2024-12-02_daniel-tunkelang_bag-of-documents.md
+  - raw/articles/2024-04-08_daniel-tunkelang_embedding-based-retrieval-rag.md
+  - raw/articles/2023-08-07_daniel-tunkelang_semantic-equivalence-ecommerce.md
   - https://www.oreilly.com/people/daniel-tunkelang/
   - https://link.springer.com/book/10.1007/978-3-031-02262-3
   - https://www.linkedin.com/in/dtunkelang
@@ -238,7 +243,7 @@ In his January 2026 discussion with Doug Turnbull [[raw/articles/2026-01-29_doug
 - [[concepts/faceted-search]] — His pioneering contribution to e-commerce search
 - [[concepts/e-commerce-search]] — Domain where his work has been most impactful
 - [[concepts/hcir]] — Human-Computer Information Retrieval symposium he founded
-- [[concepts/information-retrieval]] — Bag-of-documents model as amortized pseudo-relevance feedback
+- [[concepts/information-retrieval]] — Bag-of-documents model as amortized pseudo-relevance feedback; precision-recall-desirability framework
 
 ## Sources
 

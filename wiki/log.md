@@ -1,3 +1,19 @@
+## [2026-05-19] ingest | Daniel Tunkelang pinned articles — 5 raw articles + IR concept page
+
+### Created
+- `wiki/raw/articles/2026-04-20_daniel-tunkelang_distilling-retrieval-pipelines.md` — Distilling Retrieval Pipelines to a Single Embedding Model (Apr 2026). Pretrained bag-of-documents model, hybrid retrieval + cross-encoder, FAISS, 16GB MacBook Air M4. Key results table (cosine sim 0.914, recall@10 0.506).
+- `wiki/raw/articles/2025-03-27_daniel-tunkelang_precision-recall-desirability.md` — Precision, Recall, and Desirability: A Deep Dive (Mar 2025). Three-dimensional framework with measurement, detection, and fix strategies for each.
+- `wiki/raw/articles/2024-12-02_daniel-tunkelang_bag-of-documents.md` — Modeling Queries as Bags of Documents (Dec 2024). Search Solutions 2024 presentation with Aritra Mandal. Query-document alignment via aggregated click vectors.
+- `wiki/raw/articles/2024-04-08_daniel-tunkelang_embedding-based-retrieval-rag.md` — AI-Powered Search: Embedding-Based Retrieval and RAG (Apr 2024). Bag-of-words → embeddings, query-document alignment challenge, chunking, ranking pitfalls.
+- `wiki/raw/articles/2023-08-07_daniel-tunkelang_semantic-equivalence-ecommerce.md` — Semantic Equivalence of e-Commerce Queries (Aug 2023). KDD 2023 ECNLP workshop. Behavior-driven query equivalence via sentence transformer. arXiv 2308.03869.
+- `wiki/concepts/information-retrieval.md` — Enriched from stub: Precision-Recall-Desirability framework, retrieval paradigms (lexical/embedding/hybrid), bag-of-documents model (full results table + resources), query similarity & semantic equivalence, RAG overview. Cross-linked to 9 related concepts.
+
+### Updated
+- `wiki/entities/daniel-tunkelang.md` — Frontmatter sources: added 5 new raw article references. Related: updated information-retrieval description.
+- `wiki/index.md` — Added Concepts entry for information-retrieval (alphabetical insertion), updated header counts (1370→1371, 2056→2057, 1171→1172).
+
+---
+
 ## [2026-05-19] config+enrich | Add Daniel Tunkelang Medium RSS + entity enrichment
 
 ### Changes
