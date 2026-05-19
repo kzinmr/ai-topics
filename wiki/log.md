@@ -1,3 +1,15 @@
+## [2026-05-19] skeleton-enrich-daily | Enriched siyan-zhao (stub→full) + romain-huet (L1→L2)
+
+### Enriched
+- `wiki/entities/siyan-zhao.md` — stub→full: Added bio (UCLA PhD candidate, Meta Superintelligence Labs), 9 publications with venues (ICML 2026, NeurIPS 2025 Spotlight, ICLR 2025/2026, NeurIPS 2024 Best Paper), research focus areas (diffusion LLM reasoning, preference alignment, inference efficiency), full OPSD methodology, publication record table. 43→115 lines.
+- `wiki/entities/romain-huet.md` — L1→L2: Added career timeline (OpenAI→Stripe→Twitter→Jolicloud), Codex CLI demo activities (GPT-5-Codex launch, code review with Maja Trębacz), philosophy section, GitHub profile info. 47→97 lines.
+
+### Status
+- No `status: skeleton` entity pages found. All 621 entity pages are skeleton-free.
+- 8 lowest-status pages remain: 1 stub (siyan-zhao → now enriched), 4 L1 (roocode, jeremiah-lowin, parchi), 2 lowercase-l2 (niplav, jeff-huber), 1 needs-identification (adam-rosenthal).
+
+---
+
 ## [2026-05-19] ingest | Daniel Tunkelang pinned articles — 5 raw articles + IR concept page
 
 ### Created
