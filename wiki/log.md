@@ -1,3 +1,35 @@
+# Wiki Log
+
+> Chronological record of all wiki actions. Append-only.
+> Format: `## [YYYY-MM-DD] action | subject`
+> Actions: ingest, update, query, lint, create, archive, delete
+
+## [2026-05-19] active-crawl | Starchild-1, HRM-Text, SANA-WM, Mastra ACP
+
+### Summary
+- Active crawl discovered 4 trending AI/ML topics not yet in the wiki
+- ★★★★★ Odyssey ML: Starchild-1 — first real-time multimodal world model (audio+video)
+- ★★★★★ Sapient Intelligence: HRM-Text — 1B non-Transformer reasoning model, $1K training
+- ★★★★☆ NVIDIA SANA-WM — 2.6B open-source world model, single-GPU 60s 720p
+- ★★★☆☆ Mastra @mastra/acp — ACP-compatible coding agents as tools/subagents
+
+### Pages Created
+- [[entities/odyssey-ml]] — Odyssey ML company
+- [[entities/sapient-intelligence]] — Sapient Intelligence company
+- [[entities/mastra]] — Mastra AI agent framework
+- [[concepts/starchild-1]] — Real-time multimodal world model
+- [[concepts/hrm-text]] — Hierarchical reasoning model
+- [[concepts/sana-vm]] — NVIDIA open-source world model
+- [[concepts/mastra-acp-agents]] — ACP agents in Mastra
+
+### Raw Articles Saved
+- raw/articles/2026-05-17_odyssey-starchild-1.md
+- raw/articles/2026-05-18_sapient-intelligence-hrm-text.md
+- raw/articles/2026-05-16_nvidia-sana-wm.md
+- raw/articles/2026-05-14_mastra-acp-agents.md
+
+---
+
 ## [2026-05-19] blog ingest | Simon Willison PyCon lightning talk + OpenAI trial verdict + Dr. Manhattan Syndrome
 
 ### Summary

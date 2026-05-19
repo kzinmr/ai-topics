@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-19 | Total pages: 2015 | Indexed entries: 1157 | Not in index: 857 |
+> Last updated: 2026-05-19 | Total pages: 2022 | Indexed entries: 1164 | Not in index: 857 |
 
-## Entities (624 pages)
+## Entities (627 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -43,6 +43,7 @@
 - [[entities/lucebox]] — Lucebox
 - [[entities/luke-curley]] — Luke Curley (@lukeslhz) — Software Engineer at Discord, formerly Twitch. MoQ Working Group participant. Advocates for Media over QUIC over WebRTC for AI voice applications. Argues that WebRTC's packet dropping degrades LLM prompts, and users would prefer 200ms extra latency for accuracy.
 - [[entities/mac-studio-local-ai]] — Mac Studio Local AI
+- [[entities/mastra]] — Mastra — Open-source TypeScript AI agent framework (Gatsby team, 24K ⭐). ACP-compatible coding agents, workflows, voice AI providers, enterprise RBAC.
 - [[entities/merge-dev]] — Merge.dev: AIエージェントテスト統合プラットフォーム
 - [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto — HashiCorp
 - [[entities/john-berryman]] — John Berryman — AI/ML researcher
@@ -50,6 +51,7 @@
 - [[entities/kim-isenberg]] — Kim ‘Chubby’ Isenberg — Tech blogger, developer
 - [[entities/nicolas-bustamante]] — Nicolas Bustamante
 - [[entities/nrehiew]] — wh (@nrehiew_) — AI/ML researcher. Distributional lens on post-training: SFT vs RL vs On-Policy Distillation. 181K-view X post author.
+- [[entities/odyssey-ml]] — Odyssey ML — Multimodal world model company. Starchild-1 (real-time audio+video), Odyssey-2, Agora-1 (multi-agent simulation). Led by Oliver Cameron.
 - [[entities/palo-alto-networks]] — Global cybersecurity company. Acquired Portkey (May 2026) for AI agent security.
 - [[entities/parallel-web-systems]] — Parallel Web Systems Inc. — AI agent infrastructure (Search, Extract, Monitor APIs). SOC 2 Type 2, ZDR. Founded 2023.
 - [[entities/parchi]] — Parchi
@@ -62,6 +64,7 @@
 - [[entities/romain-huet]] — Romain Huet — Head of Developer Experience at OpenAI, host of Builders Unscripted
 - [[entities/roocode]] — RooCode
 - [[entities/salesforce-headless-360]] — Salesforce's agent-first platform restructuring. Exposes full CRM via APIs, MCP, CLI. Browser UI is now optional.
+- [[entities/sapient-intelligence]] — Sapient Intelligence — Brain-inspired AGI company (Singapore/Beijing/PA). HRM-Text: 1B non-Transformer reasoning model trained for ~$1,000. HRM beat DeepSeek R1/o3 on ARC-AGI.
 - [[entities/samuelcolvin]] — samuelcolvin
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka
@@ -638,7 +641,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1364 pages)
+## Concepts (1368 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -768,6 +771,7 @@
 - [[concepts/llm-memory-architecture]] — LLM Memory Architecture
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
 - [[concepts/local-first-software]] — Local-First Software
+- [[concepts/mastra-acp-agents]] — Mastra ACP Agents — ACP互換コーディングエージェントをMastraツール/サブエージェントとして実行。スーパーバイザー委任・ワークフローステップ対応。@mastra/acp@0.1.0 (May 2026)。
 - [[concepts/mandate-equinox]] — Mandate Equinox — OpenAIとAnthropicが約6ヶ月周期で優位性を交代するコーディングエージェント市場の競合サイクル概念。DanB（@irl_danB）が提唱。
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
 - [[concepts/mistral-workflows]] — Mistral Workflows: enterprise AI orchestration layer. Temporal-based durable execution, human-in-the-loop (wait_for_input), multi-surface triggers (API/Studio/Le Chat). Public preview April 2026.
@@ -793,6 +797,7 @@
 - [[concepts/openrlhf]] — OpenRLHF: 最も初期のOSS RLHFライブラリの一つ。DeepSpeedベース、報酬モデルサポート充実。非同期訓練対応（--async_train）。
 - [[concepts/ifeval]] — IFEval — 指示追従評価。25種の検証可能な指示タイプ、~500プロンプト。決定論的評価。Qwen3.5-27Bが95.0%でリード。上位モデルで飽和傾向。
 - [[concepts/hle]] — Humanity's Last Exam (HLE) — 人類最後の試験。100以上の分野から2,500問。$500Kの賞金プール。厳格なフィルタリングパイプライン。3%→65%へのスコア進化。Nature掲載。
+- [[concepts/hrm-text]] — HRM-Text — Sapient Intelligenceの1Bパラメータ階層的推論モデル。非Transformer、~40Bトークンで$1,000トレーニング。MATH 56.2%、ARC-C 81.9%。スマホ級サイズ（int4: 0.6 GiB）。
 - [[concepts/hybrid-flow]] — HybridFlow (veRL): RLHF/GRPOのための制御フローと計算フローを分離するアーキテクチャ。volcengine/veRL実装。Ray上の単一プロセスコントローラがWorkerGroupを通じてマルチGPUワーカーを透過制御。@registerデコレータで分散実行を隠蔽。FSDP/Megatron/TorchTitan/vLLM/SGLangのマルチバックエンド対応。
 - [[concepts/information-theory-and-agent-communication]] — Shannon (1948) の通信の数学的理論をAIエージェント間コミュニケーションの観点から再解釈。V-Information (Xu et al., 2020) との統合によるエージェント通信3層モデル。ハーネス効果の情報理論的基礎、コンテキストウィンドウのShannon容量アナロジー。
 - [[concepts/infrastructure-noise-agent-evals]] — エージェント型コーディング評価におけるインフラノイズの定量分析。Terminal-Bench 2.0でリソース1x→uncapped間で6pp差（p<0.01）。3pp未満のリーダーボード差は懐疑的に。時刻・並列度・帯域幅も隠れた交絡因子。
@@ -935,6 +940,7 @@
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
 - [[concepts/rlvr]] — RLVR (Reinforcement Learning with Verifiable Rewards): 決定論的検証器からの外部報酬によるRL訓練パラダイム。GRPOと組み合わせて報酬モデルもクリティックモデルも排除。o1→o3で10x RL compute。ART·E ($80でo3超え)。Tülu 3で命名、DeepSeek-R1で普及。
+- [[concepts/sana-vm]] — SANA-WM — NVIDIAの2.6Bパラメータオープンソース世界モデル。単一GPUで60秒720p動画生成。Gated DeltaNet + Softmaxハイブリッド。Apache 2.0。
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
 - [[concepts/skill-graph]] — Skill Graph — 相互接続MarkdownファイルによるAIエージェントプレイブック。Roninの17ファイル4フォルダアーキテクチャ。Wikilinks遷移、Platform-Native Repurposing、Litmus Test。
 - [[concepts/sitecove-ship]] — Sitecove HyperCache Inference Protocol (SHIP): System-level LLM inference optimization. 91% GPU reduction, 12× speedup, $49→$4 per 1M tokens. Developed by Australian web infra team.
@@ -944,6 +950,7 @@
 - [[concepts/skyrl]] — SkyRL (UC Berkeley/NovaSky): マルチターンエージェントRLのための柔軟フレームワーク。sync/async、colocated/disaggregated、外部推論API全て対応。FSDP/DeepSpeed。
 - [[concepts/speed-vs-legitimacy-in-ai-institutions]] — Core tension: fast institutions (AI labs, tech) move at tech speed but lack trust; slow institutions (regulators, courts) have legitimacy but can't keep pace. Two-tier civilization risk. Historical parallel: late medieval Church vs new money/press/science.
 - [[concepts/ssm-mamba]] — SSM / Mamba — State Space Models for Sequence Modeling
+- [[concepts/starchild-1]] — Starchild-1 — Odyssey MLのリアルタイムマルチモーダル世界モデル。同期音声+動画を自動回帰生成。ストリーミング対話操作。因果的蒸留パイプライン。
 - [[concepts/state-of-agentic-coding]] — Monthly podcast by Armin Ronacher & Ben Vinegar (5 episodes, Dec 2025–Apr 2026). Covers model dynamics, context management, slop forks, quality crisis, meta-agentic programming.
 - [[concepts/subquadratic-attention]] — Subquadratic Attention — Attention mechanisms scaling sub-quadratically (better than O(n²)). Mamba, RWKV, Hyena, and SubQ's first commercial attempt (12M context, $29M seed). Open questions about frontier-scale quality.
 - [[concepts/swe-bench-agent-scaffolding]] — Claude 3.5 SonnetがSWE-bench Verified 49%達成時のエージェント設計。哲学は「可能な限りモデルに制御を委ね、scaffoldingを最小限に」。Bash Tool + Edit Tool + 最小限プロンプト。同一モデル×scaffolding最適化の重要性を実証。
