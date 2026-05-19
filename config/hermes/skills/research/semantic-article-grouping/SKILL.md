@@ -123,9 +123,27 @@ A `candidates` array injected from `${HERMES_HOME}/cron/data/blog_ingest/latest.
 
 The raw newsletter file (in `wiki/raw/newsletters/`) contains only extracted tracking/redirect URLs and will NOT reveal the actual article links. You MUST access the newsletter post page to find curated links. Blog articles have no such limitation.
 
+### 1.5 BODY-READING MANDATE ⚠️ (DO NOT SKIP)
+
+**Every triage decision MUST be based on the article's actual body content, not just its title.** Titles can be misleading, ambiguous, or deliberately provocative. A title like "AI Is Coming for Junior Jobs First" could be a 3000-word analysis with concrete data OR a 200-word blogspam — only the body reveals which.
+
+**BEFORE making any `recommended_action` decision:**
+1. Read at minimum the **first 50 lines of the article body** (via `read_file` for blog articles, or `web_extract` for newsletter-resolved URLs). For short articles (<50 lines), read the entire file.
+2. If the article passes initial relevance screening, read more to confirm.
+3. In the decision's `reason_ja`, reference **specific body content** (e.g., "本文でMiniMax-M2スコアを報告" not just "タイトルにAIとある").
+
+**Anti-patterns to avoid:**
+- ❌ Deciding based on title alone ("title sounds like AI → take")
+- ❌ Skipping based on source name alone ("Dan Luu → always skip")
+- ❌ Assuming a known author's article is already captured without reading it
+- ✅ Read body → check entity page's actual content → then decide
+
+**For newsletter triage**: After resolving the newsletter post URL and extracting curated links, the actual article content (not the newsletter summary) must be read before the final decision. A newsletter's 2-sentence summary may miss technical depth that would change the rating.
+
 ### 2. Extract Content Metadata
 For each substantive article:
 - Read title, URL, key phrases
+- **Read body content (first 50+ lines)** — MANDATORY per §1.5
 - Identify mentioned entities (people, companies, models, concepts)
 - Search the web for context if URL is obfuscated/unclear
 - Match against existing wiki topics
@@ -220,8 +238,9 @@ When running as a cron job that feeds into `newsletter-wiki-ingest`, output JSON
       "url": "https://...",
       "raw_path": "~/wiki/raw/newsletters/...",
       "recommended_action": "take|reference|skip",
-      "reason_ja": "★★★★★ 日本語での理由",
-      "candidate_wiki_path": "concepts/... or entities/... or null"
+      "reason_ja": "★★★★★ 日本語での理由（本文の具体的言及を含む）",
+      "candidate_wiki_path": "concepts/... or entities/... or null",
+      "body_excerpt": "本文冒頭200〜300文字（全decision必須）"
     }
   ]
 }
@@ -229,6 +248,7 @@ When running as a cron job that feeds into `newsletter-wiki-ingest`, output JSON
 
 Rules for cron output:
 - Limit `decisions` to at most 20 entries, with `take` items first
+- **`body_excerpt` is REQUIRED for every decision** — read the article body (§1.5) and include the opening 200-300 chars. If the article body cannot be read, note the reason.
 - No markdown outside the JSON
 - If nothing is wiki-worthy, respond with exactly `[SILENT]`
 - No asking questions — make reasonable autonomous decisions
@@ -252,6 +272,25 @@ When working interactively with a user:
 - **Take**: Create new concept/entity pages for ★★★★★, or update existing pages for ★★★★☆
 - **Reference**: ★★★☆☆ content can be mentioned but doesn't need page changes
 - **Skip**: Low-value content (non-AI business/news, substack UI noise)
+
+### 8. Archive Output (CRITICAL — SKIP/REFERENCE ITEMS MUST BE SAVED)
+
+All `skip` and `reference` decisions MUST be persisted to the archive directory so they can be re-evaluated later. Never discard them silently.
+
+**Archive save path**: `~/wiki/raw/archived/triage/{source}/{YYYY-MM-DD}_{run_id}.json`
+
+**After producing triage JSON**, save the skip+reference subset:
+```bash
+python3 ~/ai-topics/scripts/archive_triage.py {blog|newsletter|dreaming} --keep-reference
+```
+
+This script:
+- Extracts all `skip` and `reference` items from the triage JSON
+- Adds `body_excerpt` from the raw article files
+- Saves to the date-stamped archive file
+- Maintains `archive_index.json` for URL deduplication
+
+**In the cron output**, after the main triage JSON, save the archive explicitly. The archive preserves the full context of why each article was skipped, including the body excerpt that informed the decision.
 
 ## Key Patterns to Recognize
 
@@ -450,6 +489,63 @@ This reveals the full set of external links embedded in the newsletter post — 
 **Alternative URL formats to try**: See `references/substack-publication-patterns.md` for the `substack.com/home/post/p-{post_id}` fallback when `open.substack.com` and custom domains (e.g., `latent.space`) both fail.
 
 **Limitation**: The HTML may contain links from the Substack UI chrome, not just the newsletter content. Discard obvious UI links (header nav, footer, subscribe buttons). Focus on links in the main content area — typically `*.com/*` URLs that aren't Substack infrastructure. Also filter out `/i/{post_id}/...` section anchor links (internal navigation within the same post).
+
+### Substack JSON-LD Article Body Extraction (Preferred Fallback)
+
+When `web_extract` truncates content or returns truncated markdown for a Substack post, the **most reliable** technique is extracting the article body from the page's JSON-LD structured data embedded in the HTML. This works for free/accessible (i.e., `isAccessibleForFree: true`) Substack posts even when `web_extract` truncates them, because the JSON-LD contains the full `body_html` field.
+
+**How it works**: Substack includes `<script type="application/ld+json">` in every post page. This JSON-LD block contains:
+- `body_html` — the full article body (HTML, not truncated)
+- `headline`, `description` — article metadata
+- `datePublished`, `dateModified` — publication dates
+- `isAccessibleForFree` — boolean paywall status (true = fully readable)
+- `author[].name`, `author[].url` — author details
+- `image`, `publisher` — media metadata
+
+**Implementation** (scanner-safe, execute_code preferred):
+
+```python
+import subprocess, json, re
+
+result = subprocess.run(
+    ["curl", "-sL", "https://open.substack.com/pub/{handle}/p/{slug}"],
+    capture_output=True, text=True, timeout=15
+)
+html = result.stdout
+
+# Extract the JSON-LD block
+jsonld_matches = re.findall(
+    r'<script type="application/ld\+json">(.*?)</script>',
+    html, re.DOTALL
+)
+for match in jsonld_matches:
+    try:
+        data = json.loads(match)
+        if isinstance(data, dict) and data.get('headline'):
+            headline = data.get('headline')
+            is_free = data.get('isAccessibleForFree', False)
+            body_html = data.get('body_html', '')
+            print(f"Headline: {headline}")
+            print(f"Free access: {is_free}")
+            links = re.findall(r'href="(https?://[^"]*)"', body_html)
+            print(f"External links in body: {len(links)}")
+    except json.JSONDecodeError:
+        pass
+```
+
+**Advantages over pure HTML scraping**:
+1. Gets the **actual article body text**, not just external links — read the full curated content
+2. Handles HTML escaping properly (JSON parser vs regex on raw HTML)
+3. Provides `isAccessibleForFree` for paywall detection — no need to guess
+4. Extracts author info, publisher, and publication date in structured form
+5. The JSON-LD is compact (~2-10KB) vs the full HTML which can be 200K+ of UI framework code
+
+**When to use vs other fallbacks**:
+- `web_extract` returns truncated content AND the truncation is at ~5K chars → try JSON-LD
+- Pure HTML fallback needed when JSON-LD lacks `body_html` (paywalled posts with `isAccessibleForFree: false`)
+- The JSON-LD approach is always **lower overhead** — smaller curl payload, no HTML regex complexity
+
+**Limitation**: JSON-LD `body_html` only present for **free/accessible** articles. For paywalled posts, fall back to the section-heading extraction technique or curl regex on raw HTML.
 
 ### Truncated Newsletter Content — Section-Heading Extraction Technique
 
