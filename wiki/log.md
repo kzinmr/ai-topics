@@ -1,3 +1,32 @@
+## [2026-05-19] ingest | ECHO: Terminal Agents Learn World Models for Free (X Article)
+
+### Summary
+- Discord user request (kzinmr): X Article by @DimitrisPapail on ECHO RL training method → created entity pages + concept pages + raw article.
+- Source: https://x.com/DimitrisPapail/status/2056368948870811746
+
+### Pages Created
+- [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos, MSR AI Frontiers / UW-Madison researcher, co-author of ECHO
+- [[entities/vaishnavi-shrivastava]] — Vaishnavi Shrivastava (@VaishShrivas), MSR AI Frontiers researcher, lead author of ECHO
+- [[concepts/echo-rl]] — ECHO: hybrid GRPO + environment-prediction training for CLI agents, learns world models from terminal responses
+- [[concepts/world-models-for-agents]] — World models for AI agents: learning environment dynamics through response prediction
+- [[raw/articles/2026-05-18_dimitris-papailiopoulos_echo-terminal-agents-world-models]] — raw X Article
+
+### Key Findings from ECHO
+- TerminalBench-2.0 pass@1 nearly doubles (8B: 2.7→5.2, 14B: 5.2→10.8) at zero extra cost
+- Training 2.3× faster to same performance
+- Can substitute for expert SFT (recovers up to 104% of SFT gain)
+- Enables verifier-free self-improvement (+3.8-10.0 pp without reward signal)
+
+### Index
+- `index.md`: +2 entities (624 pages), +2 concepts (1364 pages), Total 2011 pages
+- Papers index: arxiv:2510.16907 registered
+
+### Cross-references
+- [[echo-rl]] → [[entities/dimitris-papailiopoulos]], [[entities/vaishnavi-shrivastava]], [[world-models-for-agents]]
+- [[world-models-for-agents]] → [[echo-rl]], [[entities/dimitris-papailiopoulos]], [[entities/vaishnavi-shrivastava]]
+
+---
+
 ## [2026-05-19] ingest | Llama 3 Herd of Models (arXiv:2407.21783) — landmark paper
 
 ### Summary

@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-19 | Total pages: 2007 | Indexed entries: 1150 | Not in index: 857 |
+> Last updated: 2026-05-19 | Total pages: 2011 | Indexed entries: 1154 | Not in index: 857 |
 
-## Entities (622 pages)
+## Entities (624 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -172,6 +172,7 @@
 - [[entities/derek-thompson]] — **Blog** | Derek Thompson on Substack |
 - [[entities/descript-audio-codec]] — **DAC** | High-fidelity universal neural audio codec by Descript. 44.1 kHz, 8 kbps, ~90× compression, single model for speech/music/environment. Improved RVQGAN.
 - [[entities/dialloibu]] — **Ibrahim Diallo** (idiallo.com) — Software developer and technical writer known for reflective writing on AI-assisted workflows, LLM-assisted writing challenges, and the tension between AI efficiency and authentic human voice. Advocates for multi-stage writing process using AI for structure then human editing for voice.
+- [[entities/dimitris-papailiopoulos]] — Dimitris Papailiopoulos — Researcher at Microsoft Research AI Frontiers and professor at UW-Madison (on leave). Co-author of [[echo-rl|ECHO]], a hybrid GRPO + environment-prediction training method for CLI agents that learns world models "for free."
 - [[entities/dji]] — Chinese drone manufacturer with an "iron grip" on the global drone market. Despite U.S. regulatory efforts, DJI's market dominance remains largely intact.
 - [[entities/dorialexander]] — **X/Twitter** | @Dorialexander (~16K followers, joined March 2011) |
 - [[entities/doug-turnbull]] — **X/Twitter** | @softwaredoug |
@@ -483,6 +484,7 @@
 - [[entities/unitree-robotics]] — Hangzhou-based humanoid and quadruped robot manufacturer. Founded 2016 by Wang Xingxing (former DJI engineer, age 26 at founding). World's #1 humanoid robot seller in 2025.
 - [[entities/ultraworkers]] — GitHub organization hosting **[[concepts/claw-code]]**, the Rust implementation of the `claw` CLI agent harness. Fastest repo in history to surpass 100K stars. Home of Sigrid Jin and Yeachan Heo's autonomous development demo.
 - [[entities/utcc-utoronto-ca-cks]] — **Blog** | Wandering Thoughts |
+- [[entities/vaishnavi-shrivastava]] — Vaishnavi Shrivastava (@VaishShrivas) — Researcher at Microsoft Research AI Frontiers. Lead author of [[echo-rl|ECHO]], a method for training CLI agents that learns world models from terminal responses during RL.
 - [[entities/varun-trivedy]] — **X** | @Vtrivedy10 |
 - [[entities/vincent-weisser]] — Vincent Weisser — Co-founder & CEO of Prime Intellect. Building open superintelligence stack. $20.5M raised.
 - [[entities/vtrivedy10]] — **X** | @vtrivedy10 |
@@ -636,7 +638,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1362 pages)
+## Concepts (1364 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -741,6 +743,7 @@
 - [[concepts/ds4-dwarfstar-4]] — DS4 (DwarfStar 4): antirezのローカルAI推論プロジェクト。DeepSeek V4 Flashを2/8bit非対称量子化で96-128GB Macに搭載。分散推論・コーディングエージェント統合を計画。初めてローカルモデルを本格作業に使用。
 - [[concepts/cognition-devin-philosophy]] — Cognition/Devin Philosophy
 - [[concepts/embeddings]] — Dense vector representations encoding entities as coordinates. Triples training (anchor/similar/dissimilar), dot product + sigmoid + contrastive loss, Two-Tower architecture for cold-start, transformer sentence embeddings (BERT CLS). Doug Turnbull's Maven course module.
+- [[concepts/echo-rl]] — ECHO: hybrid GRPO + environment-prediction training objective for CLI agents. Learns world models "for free" from terminal response tokens already in the rollout. Nearly doubles TerminalBench-2.0 pass@1 at zero extra cost. By Vaishnavi Shrivastava & Dimitris Papailiopoulos (MSR AI Frontiers, 2026-05).
 - [[concepts/elastic-training]] — Elastic Training (Once-For-All) — Optimize entire model family in single training run. Baidu's Ernie 5.1 achieved 94% pre-training cost reduction. Varies depth, width, sparsity simultaneously. Industry implications for training economics.
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/gepa]] — GEPA (Genetic-Pareto Prompt Evolution): reflective prompt optimizer using execution traces + evolutionary search. 35× fewer rollouts than GRPO, ICLR 2026 Oral. Offline skill optimization pipeline for Hermes Agent via NousResearch/hermes-agent-self-evolution.
@@ -988,6 +991,7 @@
 - [[concepts/waluigi-effect]] — Cleo Nardoが提唱したLLMアライメントの根本的限界。望ましい性質Pへの訓練が逆性質¬Pの呼び出しを容易にする現象。Simulator Theory・デリダの脱構築・構造主義的物語論に基づく3つのメカニズム。Waluigiがアトラクター状態である理論。RLHFが問題を悪化させる証拠。Jailbreaking（DAN等）の再概念化。Societal Shadowの技術的メカニズムを提供。
 - [[concepts/why-harness-development-boom]] — Why Agent Harness Development Is Accelerating — Five structural forces driving the explosion in harness engineering: measurable Harness Effect (5-40pp), harness compound advantage vs model reset, off-the-shelf framework ceilings, scale of visible investment (513K LOC Claude Code), and seven-plane architecture moat. Synthesis of Kartik Labhshetwar's analysis.
 - [[concepts/workspace-bench]] — Workspace-Bench 1.0: マルチファイル依存関係を評価する大規模エージェントベンチマーク（OpenDataBox）。5職種プロファイル、74ファイル種別、20,476ファイル（最大20GB）、388タスク。Best AI 68.7%（OpenClaw+Opus 4.7）vs Human 80.7%。5段階進化モデル（L0-L4）、Agent-as-a-Judge評価フレームワーク。
+- [[concepts/world-models-for-agents]] — World Models for AI Agents — Learning environment dynamics by predicting terminal/action responses. ECHO, VAGEN, RWML, CWM approaches. Key bet: environment-response tokens should be part of the training signal for any agent RL.
 - [[concepts/us-china-ai-competition]] — US-China AI Competition — Anthropic's framework: four fronts (Intelligence, Domestic adoption, Global distribution, Resilience), compute as central battleground, export controls, distillation attacks, and two 2028 scenarios
 - [[concepts/unbundled-agents]] — Viv Trivedy's architectural pattern: specialist subagents exposed as Tools within a harness, making the harness a configurable box populated per task.
 - [[concepts/transformer-architecture]] — The Transformer architecture, derived via pedagogical "discovery fiction" from n-grams to QKV self-attention. Self-attention as multiplicative interactions with direct access. Logical progression through embeddings, convolutions, MLP-Mixers, to modern Transformers. Emergence at scale (induction heads, ICL). [[raw/articles/2025-05-25_gwern-invented-transformers.md|Source: Gwern 2025]].
