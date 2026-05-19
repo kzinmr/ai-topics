@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-19 | Total pages: 2011 | Indexed entries: 1154 | Not in index: 857 |
+> Last updated: 2026-05-19 | Total pages: 2014 | Indexed entries: 1157 | Not in index: 857 |
 
 ## Entities (624 pages)
 
@@ -1018,6 +1018,7 @@
 - [[concepts/grpo-rl-training]] — GRPO (Group Relative Policy Optimization) — DeepSeek考案のRLアルゴリズム。critic不要、グループ内相対advantage計算。DeepSeek-R1で普及し、推論・エージェント訓練の標準RLバックボーンに。SDARやMOPDの基盤。
 - [[concepts/kv-cache]] — KV Cache
 - [[concepts/llm-evaluation]] — LLM Evaluation
+- [[concepts/llm-landscape-nov-2025-to-may-2026]] — LLM Landscape Nov 2025–May 2026: Simon WillisonのPyCon US 2026ライトニングトーク。モデル王座争い、コーディングエージェントの品質ブレイクスルー（RLVR）、OpenClaw生態系、オープンウェイトモデル（Gemma 4, GLM-5.1）、ペリカン自転車ベンチマーク。
 - [[concepts/mixture-of-experts]] — Mixture of Experts
 - [[concepts/multi-agent-orchestration]] — Multi-Agent Orchestration
 - [[concepts/ollama]] — Ollama
@@ -1071,6 +1072,7 @@
 - [[concepts/differential-symbolic-modules]] — Differential Symbolic Modules: シンボリック計算層と微分可能コンポーネントを組み合わせたハイブリッドアーキテクチャ。
 - [[concepts/direct-prompting-philosophy]] — Direct Prompting Philosophy: 「Just Talk To It」— 複雑なフレームワークより直接プロンプトを優先する哲学。
 - [[concepts/docker-sandbox-microvm-api]] — Docker Sandbox MicroVM API: AIコーディングエージェントを安全に実行するDocker Sandbox API。
+- [[concepts/dr-manhattan-syndrome-ai]] — Dr. Manhattan Syndrome in AI Leadership: AI業界リーダーが「人類(Humanity)」という抽象概念で語り、実際の人間の懸念と接続できなくなるコミュニケーション病理。Person Familiarの命名概念。
 - [[concepts/agent-memory]] — Agent Memory (Redirect)
 - [[concepts/agent-team-swarm]] — Agent Team / Swarm
 - [[concepts/agentic-pbt]] — Agentic Property-Based Testing (Anthropic + Hypothesis)
@@ -1111,11 +1113,12 @@
 - [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — "GPU / VRAM Fundamentals"
 - [[concepts/ai-infrastructure-engineering/llm-observability]] — "LLM Observability"
 - [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — "Model Serving & Autoscaling"
-## Events (3 pages)
+## Events (4 pages)
 
 - [[events/openai-may-2026-reorg]] — OpenAIの2026年5月製品再編。Greg Brockmanが全製品を統括、ChatGPTとCodexを統合、Thibault Sottiauxがコア製品責任者に。Fidji Simoは病欠。
 - [[events/anthropic-code-w-claude-2026]] — Anthropic Code w/ Claude 2026 — AnthropicがClaude Codeを強化する新製品発表（2026-05-06）
 - [[events/distillation-attacks-2026]] — Anthropic Accuses Chinese Labs of Industrial-Scale Distillation Attacks（2026-04-24）
+- [[events/openai-musk-trial-verdict-2026]] — OpenAI vs Musk裁判評決（2026-05-18）— 陪審員満場一致でMuskの請求棄却。時効が理由で、OpenAIの正当性には踏み込まず。Gary Marcus「世紀のAI裁判、竜頭蛇尾に終わる」
 
 ## Comparisons (17 pages)
 

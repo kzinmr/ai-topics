@@ -3,9 +3,9 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-05-13
+updated: 2026-05-19
 status: L3
-sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md]
+sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md]
 tags: [person, blogger]
 ---
 
@@ -301,3 +301,5 @@ These changes make LLM future-proof for the diversity of input/output capabiliti
 **Mitchell Hashimoto on TDM Motivations** (May 12, 2026): Simon quoted Mitchell Hashimoto (HashiCorp co-founder, Redis Labs CTO) on the psychology of Technical Decision Makers: "90% of TDMs are motivated primarily by NOT GETTING FIRED." Hashimoto argues that corporate tech buyers follow analyst trends (Gartner, McKinsey) rather than deep technical evaluation, making "defensible" buzzword products like "Context Engine for AI Apps" easy sells. This aligns with Simon's broader skepticism about enterprise AI vendor claims and reinforces his "agentic engineering" thesis — real practitioners verify, they don't just buy trends.
 
 **Mo Bitar's "Ralph Loop" Satire** (May 12, 2026): Simon highlighted Mo Bitar's satirical take on AI corporate climbing — the "Ralph Loop" strategy of promising automation to executives, using $18K in API credits to demonstrate "value," and getting promoted before anyone realizes nothing actually works. This satire captures a real pattern in enterprise AI adoption: the gap between promised automation and delivered value.
+
+**PyCon US 2026 Lightning Talk: "The Last Six Months in LLMs in Five Minutes"** (May 19, 2026): Simon delivered a lightning talk summarizing the LLM landscape from November 2025 to May 2026. Key themes: the November 2025 inflection point (coding agents crossing the quality barrier via RLVR), the model crown changing hands five times in one month (Sonnet 4.5 → GPT-5.1 → Gemini 3 → GPT-5.1 Codex Max → Opus 4.5), the rise of OpenClaw and the "Claws" ecosystem, open-weight models (Gemma 4, GLM-5.1) exceeding expectations, and his signature pelican-on-bicycle SVG benchmark. See [[concepts/llm-landscape-nov-2025-to-may-2026|LLM Landscape Nov 2025–May 2026]].

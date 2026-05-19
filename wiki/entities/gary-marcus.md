@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-05-18
+updated: 2026-05-19
 tags:
   - lab
   - benchmark
@@ -16,6 +16,7 @@ tags:
 sources:
   - raw/articles/garymarcus.substack.com--p-misplaced-panic-over-ai-progress--7aa50278.md
   - raw/articles/garymarcus.substack.com--p-the-illusion-of-generative-ai-the--9225b4e4.md
+  - raw/articles/garymarcus.substack.com--p-the-ai-trial-of-the-century-ends--dfc0b54e.md
 ---
 
 # Gary Marcus
@@ -112,4 +113,5 @@ Marcus has published extensively on AI limitations and the need for hybrid appro
 
 - [Misplaced panic over AI progress](https://garymarcus.substack.com/p/misplaced-panic-over-ai-progress) (May 2026)
 - [The illusion of Generative AI, the insanity of massive bets on hyperscaling, and the case for world models and neurosymbolic AI](https://garymarcus.substack.com/p/the-illusion-of-generative-ai-the) (May 2026)
+- [The AI trial of the century ends with a whimper](https://garymarcus.substack.com/p/the-ai-trial-of-the-century-ends) (May 19, 2026) — On the OpenAI vs Musk trial verdict: jury rejected Musk's claims on statute of limitations grounds, never weighed in on OpenAI's legitimacy. See [[events/openai-musk-trial-verdict-2026|OpenAI vs Musk Trial Verdict]].
 - Marcus on AI Substack newsletter

@@ -1,3 +1,39 @@
+## [2026-05-19] blog ingest | Simon Willison PyCon lightning talk + OpenAI trial verdict + Dr. Manhattan Syndrome
+
+### Summary
+- Blog ingest pipeline: 36 new articles detected, 16 saved to raw, 4 unsaved (paywalled/video)
+- ★★★★★ Simon Willison: "The last six months in LLMs in five minutes" (PyCon US 2026) → [[concepts/llm-landscape-nov-2025-to-may-2026]]
+- ★★★★☆ Gary Marcus: "The AI trial of the century ends with a whimper" → [[events/openai-musk-trial-verdict-2026]], enriched [[entities/gary-marcus]]
+- ★★★★☆ Person Familiar: "AI, Humanity, and Dr. Manhattan Syndrome" → [[concepts/dr-manhattan-syndrome-ai]]
+- Enriched [[entities/simon-willison]] with lightning talk entry
+
+### Pages Created
+- [[concepts/llm-landscape-nov-2025-to-may-2026]] — Six-month LLM landscape review: model race, RLVR coding agents, OpenClaw ecosystem, Gemma 4, GLM-5.1
+- [[concepts/dr-manhattan-syndrome-ai]] — AI leadership communication pathology: abstract "Humanity" rhetoric disconnected from actual people
+- [[events/openai-musk-trial-verdict-2026]] — Jury unanimously rejects Musk's claims; statute of limitations, no ruling on OpenAI legitimacy
+
+### Pages Enriched
+- [[entities/simon-willison]] — Added PyCon 2026 lightning talk, updated sources
+- [[entities/gary-marcus]] — Added trial verdict piece, updated sources
+
+### Non-AI Raw Articles Saved
+- it-notes.dragas.net: FediMeteo/HAProxy/snac threading
+- krebsonsecurity.com: CISA AWS GovCloud key leak
+- ericmigi.com: Index 01 hardware production update
+- gilesthomas.com: 10Gb Ethernet SFP+ heatsinks
+- entropicthoughts.com: Pythagorean Addition
+- dfarq.homeip.net: Cyberrebate.com dotcom history
+- devblogs.microsoft.com: parity flag debugging
+- daringfireball.net linked: Gallup AI data center poll, NYT Apple/OpenAI articles
+- om.co: John Appleseed
+- workos.com: Sponsor content (Pipes API)
+
+### Unsaved Articles (4)
+- NYT: Jury Rejects Elon Musk's Claim (paywalled)
+- NYT: How Apple Became a $4T Company (paywalled)
+- YouTube: Ted Turner's Apartment (video)
+- Wikipedia: Alaska Permanent Fund (encyclopedia)
+
 ## [2026-05-19] ingest | ECHO: Terminal Agents Learn World Models for Free (X Article)
 
 ### Summary
