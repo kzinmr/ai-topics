@@ -608,7 +608,7 @@
 - [[entities/cognition]] — Cognition — Maker of Devin, the first autonomous AI coding agent. Also makes Windsurf IDE.
 - [[entities/cohere]] — Cohere — Enterprise AI platform. Founded by Transformer paper co-author Aidan Gomez. $6.8B valuation.
 - [[entities/decagon]] — Decagon — AI customer support agents. $4.5B valuation. 10M+ customers served.
-- [[entities/elevenlabs]] — ElevenLabs — AI voice and speech synthesis. $11B valuation. $500M+ ARR.
+- [[entities/elevenlabs]] — ElevenLabs — AI voice and speech synthesis. $11B valuation. $500M+ ARR. Claude Code integration for ElevenAgents (May 2026).
 - [[entities/eventual]] — Eventual — Data and AI platform.
 - [[entities/factory]] — Factory — AI coding agents ("Droids") for enterprise legacy code migrations. $1.5B valuation.
 - [[entities/faire]] — Faire — Wholesale marketplace connecting independent brands with retailers.

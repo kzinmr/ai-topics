@@ -171,6 +171,22 @@
 
 ---
 
+## [2026-05-19] dreaming | ElevenLabs Claude Code integration enrichment + triage JSON
+
+### Pages Enriched
+- [[entities/elevenlabs]] — Added Claude Code Integration (May 2026) section: Skill-based setup, KB RAG, workflow routing, tool categories, guardrails, testing framework, telephony integrations, 75ms latency. Full tutorial coverage.
+- `wiki/index.md` — Updated elevenlabs entry with Claude Code integration info
+
+### Raw Articles Referenced
+- `raw/articles/2026-05-19_elevenlabs_building-elevenagents-with-claude-code.md`
+
+### Notes
+- dreaming-group pre-run failed (JSON parse error) — triage performed autonomously
+- dreaming-collect reported collected_articles=0 (all today's content consumed by other pipelines)
+- Only genuine gap: ElevenLabs entity enrichment (was 44 lines, now enriched with Claude Code section)
+
+---
+
 ## [2026-05-19] newsletter ingest | Import AI 457 + Lenny's Podcast
 
 ### Summary
