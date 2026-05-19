@@ -9,7 +9,6 @@ tags:
   - vendor-lock-in
   - platform-economics
   - ai-agents
-  - contextmaxxing
 aliases:
   - "context-lock-in"
   - "文脈ロックイン"

@@ -9,7 +9,6 @@ tags:
   - ai-agents
   - rag
   - enterprise-ai
-  - context-lock-in
 aliases: ["Sentra", "sentra-app"]
 sources:
   - https://sentra.app

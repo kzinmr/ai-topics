@@ -1225,6 +1225,14 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - `wiki/concepts/agent-ergonomics.md` — Added "Concrete Implementation: Zero by Vercel Labs" section with principle-by-principle mapping table. Frontmatter updated with Zero source.
 - `wiki/index.md` — Added zero-language entity entry.
 
+## 2026-05-19 — Ingest | Autoresearching BM25 on MSMarco (Doug Turnbull)
+
+- `wiki/raw/articles/2026-05-17_softwaredoug-com_autoresearching-better-msmarco-bm25.md` — New raw article: Doug Turnbull's lab notes on using a coding agent to iteratively improve BM25 on MSMarco passage retrieval. Dual-gate evaluation (training sandbox + validation gate), 8 rounds on minimarco, stopword removal/phrase boost/constant term boost, overfitting through validation data leakage.
+- `wiki/concepts/autoresearch-bm25-msmarco.md` — New concept page: concrete case study of autoresearch applied to search ranking. Covers method (dual-gate agentic optimization), results (plateau on full MSMarco), overfitting trap (idiosyncratic stopwords), and relationship to Karpathy's autoresearch and Shopify's pi-autoresearch.
+- `wiki/entities/softwaredoug.md` — Updated: added "Autoresearching BM25 on MSMarco" to Notable Blog Posts, added new raw article source, added [[autoresearch-bm25-msmarco]] to See Also, bumped updated date.
+- `wiki/concepts/bm25.md` — Updated: added [[autoresearch-bm25-msmarco]] to Related Concepts, bumped updated date, added new raw article source.
+- `wiki/index.md` — Added [[concepts/autoresearch-bm25-msmarco]] entry.
+
 ## 2026-05-18 11:30 — X Bookmarks Ingest
 
 - `wiki/raw/articles/2026-05-17_DeRonin_agentic-project-setup-security.md` — Saved raw article: @DeRonin_ tweet about direnv + secrets manager setup for agentic projects (truncated thread)

@@ -1,7 +1,7 @@
 ---
 title: Doug Turnbull (softwaredoug)
 created: 2026-05-17
-updated: 2026-05-17
+updated: 2026-05-19
 type: entity
 tags:
   - person
@@ -11,7 +11,9 @@ tags:
   - open-source
   - rag
   - evaluation
-sources: [raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg.md]
+sources:
+  - raw/articles/2026-05-17_softwaredoug_search-evaluation-ndcg.md
+  - raw/articles/2026-05-17_softwaredoug-com_autoresearching-better-msmarco-bm25.md
 ---
 
 # Doug Turnbull (softwaredoug)
@@ -72,6 +74,7 @@ Doug advocates for a pragmatic, "grug-brained" approach to search evaluation:
 
 ## Notable Blog Posts (2026)
 
+- "Autoresearching BM25 on MSMarco" (2026-05-17) — Agent-driven BM25 tuning on passage retrieval, dual-gate evaluation, overfitting lessons
 - "Agentic search models" (2026-05-11) — Agents, not APIs, as the future of search
 - "Can agents replace the search stack?" (2026-04-28)
 - "Stop evaluating search with queries" (2026-03-30)
@@ -92,4 +95,5 @@ Doug's recent work increasingly focuses on the intersection of search and AI age
 ## See Also
 
 - [[ndcg]] — Detailed concept page on NDCG and search evaluation metrics
+- [[autoresearch-bm25-msmarco]] — Case study of autoresearch applied to BM25 optimization
 - [Doug Turnbull's Blog](http://softwaredoug.com) — Regular posts on search, BM25, RAG, and agents
