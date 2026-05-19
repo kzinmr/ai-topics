@@ -2,12 +2,13 @@
 title: Daniel Tunkelang
 type: entity
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-19
 tags:
   - person
   - search
-  - fintech
+  - information-retrieval
   - data-science
+  - query-understanding
 aliases:
   - dtunkelang
 sources:
@@ -16,6 +17,8 @@ sources:
   - https://link.springer.com/book/10.1007/978-3-031-02262-3
   - https://www.linkedin.com/in/dtunkelang
   - https://www.slideshare.net/dtunkelang
+  - https://dtunkelang.medium.com/distilling-retrieval-pipelines-to-a-single-embedding-model-606f3ecf0c91
+  - https://arxiv.org/abs/2308.03869
 ---
 
 # Daniel Tunkelang
@@ -24,7 +27,7 @@ sources:
 |---|---|
 | **X/Twitter** | [@dtunkelang](https://x.com/dtunkelang) |
 | **LinkedIn** | [linkedin.com/in/dtunkelang](https://www.linkedin.com/in/dtunkelang) |
-| **Blog** | The Noisy Channel (dtunkelang.wordpress.com, now deleted) |
+| **Blog** | [dtunkelang.medium.com](https://dtunkelang.medium.com/) (active); The Noisy Channel (wordpress.com, now deleted) |
 | **Role** | Search Consultant — Query Understanding & E-Commerce Search |
 | **Known For** | Faceted search (Endeca co-founder), query understanding, HCIR symposium founder |
 | **Education** | BS Mathematics & CS, MIT; PhD Computer Science, Carnegie Mellon University |
@@ -135,6 +138,44 @@ Tunkelang also authored an 8-article companion series on **content understanding
 
 The series has been systematized in the wiki's [[concepts/content-understanding]] page.
 
+## Bag-of-Documents Model (2023–2026)
+
+Tunkelang's recent research explores representing queries as distributions over relevant documents rather than text strings. Co-authored with Aritra Mandal, the **bag-of-documents model** was introduced at the KDD 2023 Workshop on e-Commerce and NLP and later developed into a practical pretrained system.
+
+### Key Papers & Posts
+
+| Date | Title | Venue | Contribution |
+|------|-------|-------|-------------|
+| Sep 2023 | [Modeling Queries as Bags of Documents](https://dtunkelang.medium.com/modeling-queries-as-bags-of-documents-b7d79d0916ab) | Medium / KDD 2023 | Introduces the core idea: queries map to result distributions, not text |
+| 2023 | Bag-of-Documents Model | [arXiv 2308.03869](https://arxiv.org/abs/2308.03869) | Academic paper co-authored with Aritra Mandal |
+| Apr 2026 | [Distilling Retrieval Pipelines to a Single Embedding Model](https://dtunkelang.medium.com/distilling-retrieval-pipelines-to-a-single-embedding-model-606f3ecf0c91) | Medium | Pretrained version: distills hybrid retrieval + cross-encoder reranking into a single MiniLM encoder; 6M-product Amazon dataset; runs on 16GB MacBook Air M4 |
+
+### Core Insight
+
+The bag-of-documents model reframes query understanding as **predicting result distributions rather than encoding text directly**. A query like "wireless keyboard" is not fundamentally about the words — it corresponds to a set of relevant products. The model learns to map query text directly to the centroid of its result bag, effectively distilling a multi-stage retrieval pipeline (hybrid retrieval → cross-encoder reranking → relevance filtering) into a single embedding step at inference time.
+
+**Key results** (pretrained MiniLM, Amazon 6M-product subset):
+- Cosine similarity to centroid: 0.787 → **0.914**
+- Recall@10: 0.367 → **0.506**
+- ESCI precision: 96.0% → **97.0%**
+- Complement retrieval rate: 14.2% → **7.7%** (lower is better)
+
+**Resources** (all MIT-licensed):
+- Model & data: [huggingface.co/datasets/dtunkelang/bag-of-documents](https://huggingface.co/datasets/dtunkelang/bag-of-documents)
+- Live demo: [huggingface.co/spaces/dtunkelang/bag-of-documents-demo](https://huggingface.co/spaces/dtunkelang/bag-of-documents-demo)
+- Code: [github.com/dtunkelang/bag-of-documents](https://github.com/dtunkelang/bag-of-documents)
+
+### Relation to Prior Work
+
+The model can be understood as a **learned, amortized form of pseudo-relevance feedback** — it uses retrieved documents during training but eliminates the feedback loop at inference time. It is also a form of **knowledge distillation**: a complex retrieval pipeline is compressed into a single encoder.
+
+## Monitoring
+
+| Source | Method | Status |
+|--------|--------|--------|
+| RSS Feed | [dtunkelang.medium.com/feed](https://dtunkelang.medium.com/feed) | ✅ Active (added 2026-05-19; RSS → blogwatcher → daily `blog-ingest` pipeline) |
+| X/Twitter | [@dtunkelang](https://x.com/dtunkelang) | Tracked in `x-accounts.yaml` (X accounts scan, 2日毎) |
+
 ## Core Philosophy
 
 ### Query Understanding Over Ranking
@@ -197,6 +238,7 @@ In his January 2026 discussion with Doug Turnbull [[raw/articles/2026-01-29_doug
 - [[concepts/faceted-search]] — His pioneering contribution to e-commerce search
 - [[concepts/e-commerce-search]] — Domain where his work has been most impactful
 - [[concepts/hcir]] — Human-Computer Information Retrieval symposium he founded
+- [[concepts/information-retrieval]] — Bag-of-documents model as amortized pseudo-relevance feedback
 
 ## Sources
 
@@ -208,3 +250,6 @@ In his January 2026 discussion with Doug Turnbull [[raw/articles/2026-01-29_doug
 - [HCIR Symposium](https://sites.google.com/site/hcirworkshop/) — Annual symposium he founded
 - [The Noisy Channel](https://dtunkelang.wordpress.com) — Former blog (now deleted)
 - [dblp: Daniel Tunkelang](https://dblp.org/pers/hd/t/Tunkelang:Daniel) — Publication record
+- [Distilling Retrieval Pipelines to a Single Embedding Model](https://dtunkelang.medium.com/distilling-retrieval-pipelines-to-a-single-embedding-model-606f3ecf0c91) — Bag-of-documents pretrained model, Apr 2026
+- [Bag-of-Documents Model (arXiv 2308.03869)](https://arxiv.org/abs/2308.03869) — Academic paper with Aritra Mandal, KDD 2023
+- [dtunkelang.medium.com RSS](https://dtunkelang.medium.com/feed) — RSS feed tracked via blogwatcher → daily `blog-ingest` pipeline

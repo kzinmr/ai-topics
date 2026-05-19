@@ -1,3 +1,13 @@
+## [2026-05-19] config+enrich | Add Daniel Tunkelang Medium RSS + entity enrichment
+
+### Changes
+- `config/feeds/blogs.opml` — Added Daniel Tunkelang (dtunkelang.medium.com) to RSS monitoring via blogwatcher
+- `wiki/entities/daniel-tunkelang.md` — Enriched: Added Bag-of-Documents Model (2023–2026) section with arXiv 2308.03869 paper, Apr 2026 "Distilling Retrieval Pipelines" post, key results table, resources. Added Monitoring section (RSS + X). Updated frontmatter (tags: information-retrieval, query-understanding; sources: Medium + arXiv). Updated Related, Sources, career info, blog URL (active Medium blog).
+- `wiki/SCHEMA.md` — Added `query-understanding` tag to Techniques taxonomy
+- `wiki/index.md` — Updated daniel-tunkelang entry with Medium blog link, bag-of-documents work, RSS monitoring status
+
+---
+
 ## [2026-05-19] watchdog | Log duplicate header fix + orphan timestamp cleanup
 
 ### Auto-fixed

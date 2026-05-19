@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-19 | Total pages: 2036 | Indexed entries: 1171 | Not in index: 865 |
+> Last updated: 2026-05-19 | Total pages: 2056 | Indexed entries: 1171 | Not in index: 865 |
 
 ## Entities (628 pages)
 
@@ -160,7 +160,7 @@
 - [[entities/daniel-de-laney]] — **Blog** | danieldelaney.net |
 - [[entities/daniel-han]] — **X/Twitter** | @danielhanchen |
 - [[entities/daniel-miessler]] — Cybersecurity and AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ GitHub stars), SecLists, PAI. Author of Autonomous Component Optimization and Intent-Based Engineering concepts.
-- [[entities/daniel-tunkelang]] — **X/Twitter** | @dtunkelang | Search consultant, Endeca co-founder (faceted search pioneer). PhD CS (CMU), MIT. Founded HCIR symposium. 24 US patents. Author: [Query Understanding series](https://queryunderstanding.com/) (24 articles, 2016–2024), *Faceted Search* (Springer). Advises Etsy, Flipkart. [[concepts/query-understanding]] [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
+- [[entities/daniel-tunkelang]] — **X/Twitter** | @dtunkelang | **Medium** | [dtunkelang.medium.com](https://dtunkelang.medium.com/) | Search consultant, Endeca co-founder (faceted search pioneer). PhD CS (CMU), MIT. Founded HCIR symposium. 24 US patents. Author: [Query Understanding series](https://queryunderstanding.com/) (24 articles, 2016–2024), *Faceted Search* (Springer). Bag-of-documents model (2023–2026): distills retrieval pipelines into single embedding model. Advises Etsy, Flipkart. RSS monitored via blogwatcher. [[concepts/query-understanding]] [[concepts/information-retrieval]] [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
 - [[entities/daniel-van-strien]] — **X** | @vanstriendaniel |
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
 - [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.
@@ -1127,6 +1127,26 @@
 - [[concepts/ai-in-military-wargames]] — "AI in Military Wargames"
 - [[concepts/ai-industry-news]] — "AI Industry News (The Signal — Apr 26)"
 - [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — "GPU / VRAM Fundamentals"
+- [[concepts/ai-memory-systems-chatgpt-vs-claude-vs-cognition]] — AI Memory Systems: ChatGPT vs Claude vs Cognitionの設計比較
+- [[concepts/ai-memory-systems-チャット-vs-コーディングエージェントの設計哲学比較]] — AI Memory Systems: チャットvsコーディングエージェントの設計哲学比較
+- [[concepts/ai-organization]] — AI Organization
+- [[concepts/ai-persona-embodiment]] — AI-Persona-Embodiment
+- [[concepts/ai-progress-dynamics]] — AI Progress Dynamics: 訓練効率が地平線予測に逆らう理由
+- [[concepts/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] — AI Safety, Alignment, RLHF, Scalable Oversight, Interpretability
+- [[concepts/ai-safety-and-alignment]] — AI Safety and Alignment
+- [[concepts/ai-safety-military-governance-claude]] — AI Safety, Military, Governance, Claude
+- [[concepts/anthropic-openclaw-conflict]] — Anthropic-OpenClaw Conflict
+- [[concepts/anthropics-memory-tool-cognitionの戦略的追随]] — Anthropic's Memory Tool: Cognitionの戦略的追随
+- [[concepts/anti-ai-arguments-are-conservative-arguments]] — Anti-AI Arguments Are Conservative Arguments
+- [[concepts/anti-patterns-in-agentic-engineering]] — Anti-patterns in Agentic Engineering
+- [[concepts/anti-sycophancy]] — Anti-Sycophancy
+- [[concepts/application-compatibility]] — Application Compatibility
+- [[concepts/arc-agi-2-benchmark]] — ARC-AGI-2 Benchmark
+- [[concepts/assembly-optimization]] — Assembly Optimization
+- [[concepts/autodata-agentic-data-creation]] — Autodata: Agentic Data Creation
+- [[concepts/autonomous-component-optimization]] — Autonomous Component Optimization
+- [[concepts/autoreason]] — Autoreason
+- [[concepts/axolotl-fine-tuning-framework]] — Axolotl Fine-Tuning Framework
 - [[concepts/ai-infrastructure-engineering/llm-observability]] — "LLM Observability"
 - [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — "Model Serving & Autoscaling"
 ## Events (4 pages)
