@@ -4,6 +4,16 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-05-19] ingest | Cloudflare Project Glasswing article → entities/cloudflare, concepts/cyber-frontier-models, enrich glasswing + vuln-detection pages
+
+### Summary
+- **Raw article ingested**: `blog.cloudflare.com--2026-05-18_cyber-frontier-models--9cce0b5a.md` — Cloudflare CSO Grant Bourzikas: Project Glasswing experience with Mythos Preview on 50+ internal repos
+- **NEW entity page**: [[entities/cloudflare]] — Global cloud platform, Project Glasswing participant, published definitive harness architecture (Recon→Hunt→Validate→Gapfill→Dedupe→Trace→Feedback→Report)
+- **NEW concept page**: [[concepts/cyber-frontier-models]] — Class of security-focused frontier LLMs with exploit chain construction + PoC generation; coined by Cloudflare
+- **Enriched**: [[concepts/claude-mythos-glasswing]] — Added Cloudflare Testing Results (May 2026) section: key findings, organic refusals inconsistency, signal-to-noise problem, harness architecture, why generic coding agents fail
+- **Enriched**: [[concepts/ai-vulnerability-detection-at-scale]] — Added Cloudflare Case Study (May 2026): 8-stage harness design, 4 core harness principles, "patch faster isn't enough" argument
+- **Wiki index**: +2 pages (2025→2028 total), updated cloudflare description
+
 ## [2026-05-19] x-bookmarks-ingest | context-lock-in concept, ashwingop + sentra-app enrichment
 
 ### Summary

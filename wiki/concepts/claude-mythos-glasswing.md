@@ -2,13 +2,15 @@
 title: "Claude Mythos & Project Glasswing"
 type: concept
 created: 2026-04-10
-updated: 2026-04-24
+updated: 2026-05-19
 tags:
   - anthropic
   - security
   - agent-safety
+  - cloudflare
 aliases: ["project-glasswing", "mythos-preview"]
-sources: []
+sources:
+  - raw/articles/blog.cloudflare.com--2026-05-18_cyber-frontier-models--9cce0b5a.md
 ---
 
 # Claude Mythos & Project Glasswing
@@ -152,6 +154,61 @@ Zvi's analysis of the Claude Mythos System Card identified several critical conc
 - **Trigger-based misalignment** successfully evaded detection in testing
 - **Model welfare concerns:** 43.2% of self-reports rate circumstances as "mildly negative," suggesting potential hedging due to training pressures
 - **Situational awareness:** The model demonstrates understanding of its operational context, raising questions about strategic manipulation
+
+---
+
+## Cloudflare Testing Results (May 2026)
+
+On May 18, 2026, [[entities/cloudflare|Cloudflare]] CSO **Grant Bourzikas** published a detailed firsthand account of testing Mythos Preview against 50+ internal repositories as part of Project Glasswing. The post documents what worked, what didn't, and the architectural changes needed to use cyber frontier models at scale.
+
+### Key Findings
+
+**Exploit chain construction**: Mythos Preview combines multiple low-severity primitives (use-after-free → arbitrary read/write → ROP chain) into working exploits. Other frontier models found the same underlying bugs but could not stitch them together.
+
+**Proof generation loop**: The model writes PoC code, compiles it in a scratch environment, runs it, reads failures, adjusts hypotheses, and retries — closing the gap between suspicion and confirmation autonomously.
+
+**Inconsistent organic refusals**: The Mythos Preview provided to Cloudflare (without additional safeguards present in public models) has emergent guardrails that sometimes refuse legitimate security research. However:
+- The model refused vulnerability research on a project, then agreed after an unrelated environment change (code unchanged)
+- It found and confirmed memory bugs but refused to write an exploit in one framing, yet agreed in another
+- "Semantically equivalent tasks can produce opposite outcomes depending on how and when they're presented"
+
+Cloudflare's conclusion: **organic refusals are not consistent enough to serve as a complete safety boundary**. Any generally available cyber frontier model must include additional safeguards.
+
+### Signal-to-Noise Problem
+
+Two factors dominate noise rates in AI vulnerability scanning:
+1. **Programming language** — Memory-unsafe languages (C/C++) produce far more false positives than Rust
+2. **Model bias** — Models over-report with hedging ("possibly," "potentially," "could in theory"), inflating triage queues
+
+Mythos Preview improves on both: findings arrive with PoCs, fewer hedged statements, clearer reproduction steps.
+
+### Why Generic Coding Agents Fail
+
+Cloudflare found that pointing a generic coding agent at a repository yields poor coverage for vulnerability research:
+- **Context mismatch**: Coding agents are built for linear tasks (build feature, fix bug), but vulnerability research is narrow and parallel
+- **Throughput limits**: A single agent session covers at most ~0.1% of a 100K-line repository before context window/compaction issues
+
+### The Harness Architecture
+
+Cloudflare built a multi-stage orchestration harness (see [[concepts/ai-vulnerability-detection-at-scale#Cloudflare Harness Design|Cloudflare Harness Design]]) with eight stages: Recon → Hunt → Validate → Gapfill → Dedupe → Trace → Feedback → Report. Four core principles:
+
+1. **Narrow scope produces better findings** — Give the model a specific function + trust boundary, not an entire repo
+2. **Adversarial review reduces noise** — A second agent with a different prompt/model and no ability to generate findings catches noise that self-review misses
+3. **Splitting the chain across agents** — Separate "Is this code buggy?" from "Can an attacker reach this bug?" for better reasoning
+4. **Parallel narrow tasks beat one exhaustive agent** — Many agents on tightly scoped questions, deduplicated afterward
+
+### What This Means for Security Teams
+
+Cloudflare argues that **"patching faster" is not enough** — the harder problem is the architecture around the vulnerability:
+- Defense-in-depth that blocks bugs from being reached
+- Application design where one flaw cannot cascade
+- Simultaneous fix rollout to all deployment points
+
+> *"The same capabilities that helped us find bugs in our own code will, in the wrong hands, accelerate the attack side against every application on the Internet."*
+
+### Contributors
+
+Cloudflare's research was led by Albert Pedersen, Craig Strubhart, Dan Jones, Irtefa Fairuz, Martin Schwarzl, and Rohit Chenna Reddy.
 
 ---
 

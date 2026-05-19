@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-19 | Total pages: 2025 | Indexed entries: 1167 | Not in index: 857 |
+> Last updated: 2026-05-19 | Total pages: 2028 | Indexed entries: 1169 | Not in index: 859 |
 
 ## Entities (628 pages)
 
@@ -150,7 +150,7 @@
 - [[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
 - [[entities/claris-filemaker-agentic-coding]] — Claris (Apple subsidiary) low-code platform. May 2026: announced as first-class target for agentic coding tools (Claude Code, Cursor, Codex). Ryan McCann (CEO). Opening to external AI agents rather than building proprietary AI.
 - [[entities/codex]] — OpenAI製のオープンソースAIコーディングエージェント。Apache-2.0、Rust製、79.3K GitHub Stars。GPT-5.5/5.4ネイティブ＋カスタムプロバイダ＋ローカルモデル対応。CLI/Desktop/IDE/Webのマルチサーフェス。ChatGPT Plus/Proに含まれ、サブスクリプション壁なし。
-- [[entities/cloudflare]] — Global cloud platform repositioning as "agentic cloud" infrastructure. Agents SDK, Project Think, autonomous account provisioning via Stripe Projects, Registrar API.
+- [[entities/cloudflare]] — Global cloud platform; Project Glasswing participant. Published Mythos Preview harness architecture (May 2026): Recon→Hunt→Validate→Gapfill→Dedupe→Trace→Feedback→Report. Also repositioning as "agentic cloud" with Agents SDK, Project Think.
 - [[entities/coder]] — Coder Technologies — self-hosted, model-agnostic AI coding agent platform for enterprise. Coder Agents beta released May 2026. Supports Anthropic, OpenAI, Google, AWS Bedrock, self-hosted models. Air-gapped ready.
 - [[entities/coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
 - [[entities/construction-physics-com]] — **URL:** https://constructionphysics.substack.com
@@ -721,6 +721,7 @@
 - [[concepts/baudrillard-and-ai]] — ボードリヤールとAI — シミュラークルとシミュレーションのAI時代における現れ。ボードリヤールの4段階のイマージュ理論、ハイパーリアリティ、地図が領域に先行する「シミュラークルの先行」概念をLLM時代に適用。AIは模倣の失敗ではなくシミュラークルの完成形である。
 - [[concepts/bernstein]] — Deterministic multi-agent orchestrator. Python scheduler, zero LLM tokens on coordination, Git worktree isolation, 40+ agent adapters.
 - [[concepts/bm25]] — BM25 (Best Match 25): classical lexical retrieval algorithm (TF-IDF variant with saturation + length normalization). PI-SERINI (May 2026) demonstrated BM25 + capable LLM in agentic loop beats dense retrievers on BrowseComp-Plus (83.1% accuracy, 3.3x–10x cheaper). Tuned parameters: k1=25, b=1 for long documents. Key insight: agent reasoning about search results matters more than retrieval quality.
+- [[concepts/cyber-frontier-models]] — Cyber Frontier Models: LLMs specifically excelling at cybersecurity tasks (exploit chain construction, PoC generation). Coined by Cloudflare CSO Grant Bourzikas (May 2026). Characterized by step-change capabilities over general-purpose models.
 - [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
 - [[concepts/claude-md-rules]] — Karpathy's CLAUDE.md behavioral guidelines for AI coding agents (4→12 rules, 41%→3% mistake rate). 120K+ GitHub stars. Most-starred single-file repo of 2026.
 - [[concepts/claude-opus-4-7]] — Claude Opus 4.7: AnthropicのフロンティアLLM（2026年4月リリース）
