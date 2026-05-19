@@ -1,3 +1,22 @@
+## [2026-05-19] watchdog | Log duplicate header fix + orphan timestamp cleanup
+
+### Auto-fixed
+- wiki/log.md — Removed duplicate `# Wiki Log` header at line 280 (second occurrence)
+- wiki/log.md — Removed 2 orphaned `###` timestamp lines that duplicated `## [YYYY-MM-DD]` entries
+- wiki/log.md — Removed 1 orphaned orphan `###` timestamp line (OPSD article ingestion)
+
+### Verified (no issues)
+- validate_index.py: clean ✓
+- Index corruption: 0 pipe prefix, 0 triple bracket, 0 line-number prefix
+- All 5 section headers present: Entities, Concepts, Events, Comparisons, Queries
+
+### Findings (needs human review)
+- **Index header count mismatch**: Entities reported 628 (actual 620), Concepts 1370 (actual 1285), Comparisons 17 (actual 19) — stale header math
+- **862 pages not indexed** (per header claim): 75.3% of unindexed are in concepts/
+- **Pipeline**: x_accounts reported stale (26h) but runs every 48h — within normal cycle
+
+---
+
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
@@ -277,13 +296,6 @@
 
 ---
 
-# Wiki Log
-
-> Chronological record of all wiki actions. Append-only.
-
----
-
-### 2026-05-18 13:15 UTC — agentmemory: persistent memory system for AI coding agents
 ## [2026-05-18] manual | agentmemory entity page + iii-platform update
 
 ### Pages Created (2)
@@ -295,7 +307,6 @@
 
 ---
 
-### 2026-05-18 12:45 UTC — RecSys Newsletter Vol.156: BM25 + Agentic Deep Research
 ## [2026-05-18] manual | BM25/PI-SERINI concept + entity pages from RecSys newsletter
 
 ### Pages Created (2)
@@ -312,8 +323,6 @@
 - https://recsys.substack.com/p/is-bm25-enough-for-agentic-deep-research
 - https://arxiv.org/abs/2605.10848
 - https://github.com/justram/pi-serini
-
-### 2026-05-18 06:30 UTC — OPSD Article Ingestion (Siyan Zhao)
 ## [2026-05-18] active-crawl | AWS-OpenAI, Perceptron AI, SAP/Anthropic, AWS Agent Toolkit, Google AI Pointer
 
 ### Pages Created (6)
