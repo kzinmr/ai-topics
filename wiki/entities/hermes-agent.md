@@ -13,13 +13,14 @@ tags:
 status: complete
 description: "Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawから移行中のユーザーが増加。"
 created: 2026-04-27
-updated: 2026-05-14
+updated: 2026-05-19
 sources:
   - "https://x.com/i/article/2045080054917476451"
   - "raw/articles/2026-04-28_15-hermes-agent-features.md"
   - "https://x.com/i/article/2045935785661349956"
   - "raw/articles/2026-05-13_nvidia_rtx-ai-garage-hermes-agent-dgx-spark.md"
   - "raw/articles/2026-05-06_kilo_hermes-vs-openclaw-when-to-reach.md"
+  - "raw/articles/2026-05-15_shann_hermes-agent-operator.md"
 related:
   - "[[concepts/harness-engineering]]"
   - "[[concepts/hermes-agent-use-cases]]"
@@ -90,9 +91,12 @@ related:
 
 ## Milestones (May 2026)
 
-- **140,000+ GitHub Stars**: 3ヶ月未満で達成（2026年5月時点）
-- **Most Used Agent on OpenRouter**: OpenRouterのアプリ利用統計で世界1位（2026年5月第2週）
+- **150,000 GitHub Stars**: 3ヶ月未満で達成（2026年5月19日時点）。Shann (@shannhk) の記事で確認
+- **Most Used Agent on OpenRouter**: OpenRouterのアプリ利用統計で世界1位（2026年5月第2週）。全モデル・フレームワーク中でグローバルトークン使用量最大
 - **NVIDIA RTX AI Garage Endorsement**: NVIDIA公式ブログでHermes AgentがRTX AI Garageプログラムの中心的エージェントフレームワークとして紹介（2026-05-13）
+- **123 Bundled Skills**: 出荷時点で123のスキルを内蔵。GitHub PRs、Obsidian、Google Workspace、Linear、Notion、Typefully、Perplexity、Deep Research等
+- **6 Deployment Targets**: Local、Docker、SSH、Daytona、Singularity、Modal
+- **20+ Messaging Surfaces**: Telegram、Discord、Slack、Email、Voice、CLI
 
 ### Harness Engineering: "Same Model, Better Results"
 
@@ -156,9 +160,67 @@ Hermes communicates with OpenClaw via ACP (Agent Client Protocol), the open stan
 
 See [[comparisons/hermes-vs-openclaw-architecture]] for the full comparison.
 
+## Shann's 4-Level Fleet Operation Model (May 2026)
+
+Shann (@shannhk)、EspressioのAIマーケターでHermesエージェントを全面的に運用している実践者によるマルチエージェント運用ガイド（[How to Become a Hermes Agent Operator](https://x.com/i/article/2055317817658900480), 2026-05-15）。
+
+### 3つのコアコンポーネント
+- **Brain** — `~/.hermes/memories/` にMEMORY.md（ビジネス事実）とUSER.md（ユーザー設定）。全セッション開始時に注入。SQLite+FTS5でセッション横断検索
+- **Personality** — `soul.md` でトーン定義。簡潔・皮肉・率直・フォーマル等、1つの基盤で6エージェントに異なる人格を付与可能
+- **Skillset** — 123の既製スキル + 自己改善ループ。エージェントが働く過程で新スキルを自動生成
+
+### 4段階セットアップモデル
+
+| Level | 構成 | ユースケース |
+|-------|------|-------------|
+| **Level 1** | 単一エージェント + コントロールルーム | 個人アシスタント、初期セットアップ |
+| **Level 2** | 複数スペシャリスト（直接対話） | 役割分離、認証情報スコープ分割 |
+| **Level 3** | Orchestrator + Specialists + Task Bus | 部門横断ワークフロー、委任と統合 |
+| **Level 4** | Level 3 + Cron自動化 | 週次SEOレポート、サーバーヘルスチェック、完全自律運用 |
+
+### Control Room パターン
+```
+/root/vps-agents/          → コントロールプレーン（ドキュメント、ルール、ランbook）
+                             生のシークレットは一切置かない
+
+/srv/<agent-name>/data/    → ライブランタイム（シークレット、メモリ、スキル、セッション、cron）
+                             各Hermesエージェントの実体
+```
+
+### SEO Agent 21-Step Pipeline（実運用ケーススタディ）
+
+全工程を1つのDockerコンテナで実行。3つのサブエージェントがフェーズごとにコンテキストを切り替え：
+
+| Phase | Steps | 内容 |
+|-------|-------|------|
+| Research + Ideate | 01-07 | キーワードシード→SERPスナップショット→競合抽出→意図分析→コンテンツギャップ→内部/外部検証 |
+| Production | 08-15 | アングルブリーフ→ビジュアル戦略→アウトライン→ドラフト→画像生成→フローチャート→QA |
+| Distribution | 16-21 | 公開準備→スキーマ→内部リンク→シンジケーション→分析→モニタリング |
+
+### Prototype → Production 方法論
+
+```
+Prototype (Hermes上) → 2-3回実運用テスト → 専用WorkspaceでFine-tune → VPSにデプロイ + Cron
+```
+
+Shann曰く: 「production agentをゼロから書くことはできない。育てるしかない。Hermesはその育成を高速化する。」
+
+### Rails vs Linux フレーミング
+ShannによるHermesとOpenClawの哲学的対比：
+- **Hermes = Rails**: 意見の強いデフォルト、バッテリー同梱、エージェントがより多くの判断を行う
+- **OpenClaw = Linux**: プリミティブ、保証、明示的制御、エージェントは言われたことだけを行う
+
+### モデル運用戦略
+- **Claude Opus 4.7**: クリエイティブ作業（コピーライティング、ボイス、フック生成）
+- **Codex (GPT 5.5)**: 構造化作業（コーディング、計画、マルチステップワークフロー、ブラウザ自動化）
+- 両方併用。Tool Gateway経由でエージェント・タスク単位でモデル切替
+
+→ [[entities/shannhk]], [[concepts/hermes-agent-use-cases]]
+
 ## Sources
 - [Hermes Agent: What People Are Actually Using It For](https://x.com/i/article/2045935785661349956) (2026-04-26, X article) — usage patterns from Reddit/X/YouTube
 - [Hermes Agent + Polymarket - weather trading guide](https://x.com/i/article/2045080054917476451) (2026-04-25, X article) — installation + Polymarket trading
+- [How to Become a Hermes Agent Operator](https://x.com/i/article/2055317817658900480) (2026-05-15, Shann/@shannhk, X article) — 4-level fleet operation model, SEO agent 21-step pipeline, prototype-to-production methodology
 
 ## References
 

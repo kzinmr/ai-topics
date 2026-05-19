@@ -2,7 +2,7 @@
 title: "Claude Managed Agents"
 type: concept
 created: 2026-04-27
-updated: 2026-05-07
+updated: 2026-05-19
 tags:
   - anthropic
   - ai-agents
@@ -18,6 +18,7 @@ sources:
   - raw/articles/2026-05-07_claude-managed-agents-outcomes.md
   - raw/articles/2026-05-07_claude-managed-agents-webhooks.md
   - raw/articles/2026-05-07_claude-managed-agents-dreams.md
+  - raw/articles/2026-05-19_claude-managed-agents-sandbox-mcp-tunnels.md
 ---
 
 
@@ -339,6 +340,36 @@ Anthropic launched Managed Agents in **public beta** in April 2026, marking the 
 
 This represents a significant shift toward **platform-provided agent infrastructure** rather than developers building custom harnesses. Compare with OpenAI's Symphony approach.
 
+## Self-Hosted Sandboxes (Public Beta) + MCP Tunnels (Research Preview) — May 2026
+
+Announced live at **Code with Claude London** on May 19, 2026, these two features address enterprise security and connectivity requirements:
+
+### Self-Hosted Sandboxes (Public Beta)
+Agents can now run inside the **user's own infrastructure perimeter**, with the user's security controls applied by default. Key implications:
+- **Security-first enterprise deployment**: Organizations can run agents without sending code/data to Anthropic-managed cloud sandboxes
+- **Data residency compliance**: Addresses regulatory requirements where data must stay within customer-controlled infrastructure
+- **Authentication boundary**: Sandboxes inherit the customer's existing IAM, network policies, and security controls
+- **No trust boundary change**: Agents execute where the rest of the enterprise workload already runs
+
+This is a significant differentiator vs. competitors that require all agent execution in vendor-managed cloud environments.
+
+### MCP Tunnels (Research Preview)
+Allows Claude Managed Agents to connect to **local MCP servers** behind firewalls/NAT via secure tunnels:
+- **Expanded tool surface**: Agents can access internal APIs, databases, and services that are not exposed to the public internet
+- **Secure connectivity**: Tunnel-based approach maintains enterprise network security posture without requiring port forwarding or VPN configuration
+- **Local development workflows**: Developers can connect agents to local MCP servers running on their development machines
+- **MCP ecosystem growth**: Lowers the barrier for enterprises to integrate existing internal tools as MCP servers
+
+### Combined Impact
+Together, these features transform Claude Managed Agents from a cloud-only platform into a **hybrid deployment model** where:
+- **Compute** runs in customer-controlled sandboxes (not Anthropic cloud)
+- **Tools** connect via MCP Tunnels into private networks
+- **Security controls** are applied at the customer perimeter, not at Anthropic's boundary
+
+This addresses the #1 enterprise objection to agent platforms — "we can't send our code/data to a third-party sandbox."
+
+→ Source: [@claudeai announcement](https://x.com/claudeai/status/2056645485696315581), Code with Claude London, May 19, 2026
+
 ## Significance & Harness Engineering Context
 
 Claude Managed Agents represents Anthropic's answer to the **Harness Effect** (same model, 5-40pp performance difference by harness architecture). Key differentiators:
@@ -361,3 +392,4 @@ Claude Managed Agents represents Anthropic's answer to the **Harness Effect** (s
 - [Memory in Claude Managed Agents](https://x.com/RLanceMartin/status/2047720067107033525) — Lance Martin (@RLanceMartin), April 2026
 - [Claude Plays Pokémon](https://x.com/DavidSHershey) — David Hershey's memory experiment
 - [Anthropic Managed Agents announcement](https://www.anthropic.com/managed-agents) — Jaya Gupta analysis
+- [Self-hosted sandboxes + MCP tunnels](https://x.com/claudeai/status/2056645485696315581) — @claudeai, Code with Claude London, May 19, 2026

@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-19 | Total pages: 2057 | Indexed entries: 1172 | Not in index: 865 |
+> Last updated: 2026-05-19 | Total pages: 2058 | Indexed entries: 1173 | Not in index: 865 |
 
-## Entities (628 pages)
+## Entities (629 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -251,7 +251,7 @@
 - [[entities/han-lee]] — Han Lee (Hanchung Lee) — Senior Director of Data + AI at Moody's Analytics. Author of "Han, Not Solo" blog. Wrote foundational articles on agent runtime infrastructure, runtime shift, and the isolation primitive stack. Key work: [[raw/articles/2026-04-24_leehanchung_hidden-technical-debt-agent-runtime|Hidden Technical Debt of AI Systems: Agent Runtime]] (Apr 2026), A Taxonomy of RL Environments for LLM Agents.
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM (founded 2022), built on GPT-3.5. Evolved toward agentic personal OS.
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
-- [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawのorchestratorとのACP連携によるdual-agent architectureでexecution specialistとして機能。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
+- [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent（150K GitHub stars, #1 OpenRouter global token usage）。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawのorchestratorとのACP連携によるdual-agent architectureでexecution specialistとして機能。Shann (@shannhk) の4-level fleet operation model、21-step SEO pipelineを収録。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
 - [[entities/hoeem]] — X/Twitter クリエイター（@hooeem, 169K+ フォロワー）。Claude Certified Architect 試験の全5ドメインを解説したX Articleが60Kブックマーク。Claude Code・Agent SDK・MCPの実践的教育コンテンツを発信。
 - [[entities/hillel-wayne]] — **Blog** | hillelwayne.com |
 - [[entities/hugging-face]] — **The GitHub of AI** — the central open-source infrastructure layer for machine learning. Platform for sharing, discovering, and deploying ML models, datasets, and demos.
@@ -440,6 +440,7 @@
 - [[entities/shlok-khemani]] — Writer and programmer based in Gurgaon, India. Currently researching **personal AI** and **memory systems for AI agents**. Previously at Decentralised.co, building products for the crypto space. Au...
 - [[entities/shopify]] — Shopify is an e-commerce platform and a reference case for organizational AI adoption. Its data science team also publishes entrepreneurship trend research.
 - [[entities/shreya-shankar]] — **Role** | PhD Candidate, UC Berkeley EECS (Aditya Parameswaran lab) |
+- [[entities/shannhk]] — Shann Holmberg — Head of Product at Espressio AI, Hermes Agent operator. Creator of hermes-agent-control-room template (4-level fleet operation model). Co-founder of Lunar Strategy (250+ projects). Co-author of Master Web3 Marketing.
 - [[entities/shunyu-yao]] — **Name:** Shunyu Yao (姚顺雨)
 - [[entities/simon-willison]] — Django co-creator, open-source advocate, and leading voice in AI-assisted software development. Founder of Datasette and prolific blogger at simonwillison.net.
 - [[entities/simone-salis]] — **URL:** https://simone.org
@@ -820,7 +821,7 @@
 - [[concepts/claude-code-sandboxing]] — Claude CodeのOSレベルサンドボックス。Linux bubblewrap/macOS seatbeltでファイルシステム+ネットワーク隔離。許可プロンプト84%削減。Claude Code on the Web（クラウド隔離実行）を含む。オープンソース化。
 - [[concepts/claude-code-skills]] — Claude Code Skills — 機序と役割パターン。Skillsはフォルダであり、Progressive Disclosure・動的Hooks・メモリ永続化の機序をもつ。9つの役割パターン: Library/API Reference, Product Verification, Data Fetching, Business Process, Code Scaffolding, Code Quality, CI/CD, Runbooks, Infrastructure Ops。Thariq ShihiparによるAnthropic社内実践知。
 - [[concepts/claude-diary]] — Lance Martin's Claude Code plugin for agent continual learning. Diary entries → reflection → CLAUDE.md updates. Implements CoALA/Generative Agents memory patterns.
-- [[concepts/claude-managed-agents]] — Anthropic's Managed Agents platform: memory stores (file-as-memory), multi-agent orchestration (coordinator + 20 sub-agents), outcomes loop (rubric-driven grader), Dreams (memory curation), webhooks (push notifications). GA with Dreams in Research Preview.
+- [[concepts/claude-managed-agents]] — Anthropic's Managed Agents platform: memory stores (file-as-memory), multi-agent orchestration (coordinator + 20 sub-agents), outcomes loop (rubric-driven grader), Dreams (memory curation), webhooks (push notifications). May 2026: Self-hosted sandboxes (public beta) + MCP tunnels (research preview) for enterprise deployment. GA with Dreams in Research Preview.
 - [[concepts/claude-model-family]] — Build with Claude — Developer Guide — Anthropic開発者ガイドの4本柱（Quick Start / Advanced Capabilities / Architectural Patterns / Optimization）に従った実践的リファレンス。Extended Thinking / Vision / Computer Useの使いどころ、Tool Use / MCP / Agents & Skills / RAGの設計指針、Prompt Engineering / Caching / Evalsの最適化技法。モデルタイムライン・3階層リファレンス・エコシステム概要はAppendixに集約。
 - [[concepts/claude-think-tool]] — Claudeの「think」ツール。複雑なツールチェーン中に専用の思考スペースを提供。Extended Thinking（応答前の深い事前検討）とは異なり、応答生成中の外部情報処理に焦点。τ-Bench Airline domainでbaseline比+54%（pass^1: 0.332→0.584）。2025年12月時点ではExtended Thinkingの改善により推奨度低下。
 - [[concepts/closing-the-software-loop]] — Benedict Brady on automated software improvement loops. From user feedback → agent implementation → deployment, inspired by Karpathy's "operation vacation". Three phases of dev loop evolution.

@@ -1,3 +1,19 @@
+## [2026-05-19] x-bookmarks-ingest (23:30) | Hermes Agent operator guide + Claude sandboxes/MCP tunnels
+
+### Created
+- `wiki/entities/shannhk.md` — Shann Holmberg (@shannhk): Head of Product at Espressio AI, Hermes Agent operator. Creator of hermes-agent-control-room template (4-level fleet model). Co-founder of Lunar Strategy (250+ projects). Co-author of Master Web3 Marketing. Based in Lisbon.
+
+### Enriched
+- `wiki/entities/hermes-agent.md` — Added Shann's 4-Level Fleet Operation Model (Level 1→4), Control Room pattern, SEO Agent 21-step pipeline case study, Prototype → Production methodology, Rails vs Linux framing, model strategy (Opus 4.7 creative / Codex GPT 5.5 structured). Updated milestones: 150K stars, 123 bundled skills, 6 deployment targets, 20+ messaging surfaces.
+- `wiki/concepts/claude-managed-agents.md` — Added Self-Hosted Sandboxes (public beta) + MCP Tunnels (research preview) section, announced at Code with Claude London (May 19, 2026). Covers enterprise security perimeter, data residency compliance, MCP tunnel connectivity for private network tools, and hybrid deployment model.
+
+### Raw Articles
+- `wiki/raw/articles/2026-05-15_shann_hermes-agent-operator.md` — Shann Holmberg "How to Become a Hermes Agent Operator" (X article, full body via bookmark fetch)
+- `wiki/raw/articles/2026-05-19_claude-managed-agents-sandbox-mcp-tunnels.md` — @claudeai announcement at Code with Claude London
+
+### Index
+- index.md: entities 628→629, total pages 2057→2058, indexed entries 1172→1173
+
 ## [2026-05-19] skeleton-enrich-daily | Enriched siyan-zhao (stub→full) + romain-huet (L1→L2)
 
 ### Enriched
