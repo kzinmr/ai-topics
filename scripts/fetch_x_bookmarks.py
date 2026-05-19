@@ -103,8 +103,10 @@ def fetch_bookmarks_page(user_id, pagination_token=None):
 def fetch_article_body(tweet_id):
     """Fetch full X Article body via tweet.fields=article.
     
-    Returns (article_dict, None) on success, or (None, error_msg) on failure.
+    Returns (article_dict, error_category, error_detail) on success/failure.
     article_dict has keys: title, plain_text, preview_text, cover_media, entities.
+    error_category is one of: None (success), "http_5xx", "timeout", "no_plain_text",
+    "no_article_field", "xurl_error", "parse_error".
     """
     try:
         resp = json.loads(
@@ -112,10 +114,88 @@ def fetch_article_body(tweet_id):
         )
         article = resp.get("data", {}).get("article")
         if article and article.get("plain_text"):
-            return article, None
-        return None, "no article.plain_text in response"
-    except (XurlError, json.JSONDecodeError) as e:
-        return None, str(e)
+            return article, None, None
+        if article:
+            return None, "no_plain_text", "article field present but plain_text missing"
+        return None, "no_article_field", "response has no article field at all"
+    except XurlError as e:
+        msg = str(e)
+        if "500" in msg:
+            return None, "http_5xx", msg
+        if "timeout" in msg.lower() or "timed out" in msg.lower():
+            return None, "timeout", msg
+        return None, "xurl_error", msg
+    except json.JSONDecodeError as e:
+        return None, "parse_error", str(e)
+
+
+def _extract_article_id(tweet):
+    """Extract X Article ID from bookmark tweet entities.
+    
+    Looks for URLs matching x.com/i/article/<id> in entities.urls.
+    Returns the article ID string, or None if not found.
+    """
+    for u in tweet.get("entities", {}).get("urls", []):
+        expanded = u.get("expanded_url", "") or u.get("unwound_url", "")
+        if "/i/article/" in expanded:
+            import re
+            m = re.search(r"/i/article/(\d+)", expanded)
+            if m:
+                return m.group(1)
+    return None
+
+
+def _build_retrieval_hints(tweet, error_category):
+    """Build retrieval hints for the agent based on the failure category.
+    
+    Guides the agent on which fallback tiers to try for X Article body retrieval.
+    """
+    tweet_id = str(tweet.get("id"))
+    article_id = tweet.get("_article_id", "")
+    author_handle = tweet.get("article", {}).get("author", {}).get("userName", "") if isinstance(tweet.get("article"), dict) else ""
+    title = (tweet.get("article", {}) or {}).get("title", "")
+    
+    tiers = []
+    if error_category in ("http_5xx", "timeout", "xurl_error"):
+        # xurl endpoint failed — suggest web_extract as Tier 2
+        tiers.append({
+            "tier": 2,
+            "method": "web_extract",
+            "url": f"https://x.com/i/status/{tweet_id}",
+            "note": "web_extract on tweet URL for partial body"
+        })
+    elif error_category == "no_plain_text":
+        tiers.append({
+            "tier": 2,
+            "method": "web_extract",
+            "url": f"https://x.com/i/status/{tweet_id}",
+            "note": "article metadata present but plain_text missing; try web_extract"
+        })
+    
+    # Tier 3: GetXAPI (available to agent via skill x-article-getxapi-fallback)
+    tiers.append({
+        "tier": 3,
+        "method": "getxapi",
+        "url": f"https://api.getxapi.com/twitter/tweet/article?id={tweet_id}",
+        "note": "Full structured article body via GetXAPI (requires GETXAPI_KEY)"
+    })
+    
+    # Tier 4: Secondary source discovery (web_search for mirrors/summaries)
+    if title:
+        tiers.append({
+            "tier": 4,
+            "method": "web_search",
+            "query": f"'{title}' {author_handle}",
+            "note": "Search for secondary sources, mirrors, or translated summaries"
+        })
+    
+    return {
+        "error_category": error_category,
+        "tweet_id": tweet_id,
+        "article_id": article_id,
+        "tiers": tiers
+    }
+    return None
 
 
 def _is_x_article(tweet):
@@ -180,15 +260,24 @@ try:
 
     # ── Post-processing: fetch X Article bodies ──
     for t in new:
+        # Extract X Article ID from bookmark URLs for fallback retrieval
+        article_id = _extract_article_id(t)
+        if article_id:
+            t["_article_id"] = article_id
+            t["_article_url"] = f"https://x.com/i/article/{article_id}"
+
         if _is_x_article(t):
             tweet_id = str(t.get("id"))
-            article_data, err = fetch_article_body(tweet_id)
+            article_data, err_cat, err_detail = fetch_article_body(tweet_id)
             if article_data:
                 t["article"] = article_data
                 article_fetches += 1
             else:
-                # Keep the partial article (title only); log the failure
-                t.setdefault("_article_fetch_error", err)
+                # Keep the partial article (title only); log the failure with category
+                t.setdefault("_article_fetch_error", err_detail)
+                t["_article_fetch_error_category"] = err_cat
+                # Provide retrieval hints for the agent
+                t["_retrieval_hints"] = _build_retrieval_hints(t, err_cat)
                 article_failures += 1
 
 except (XurlError, json.JSONDecodeError) as e:
