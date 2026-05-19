@@ -207,6 +207,8 @@ Mark the article with `getxapi: true` and `source_fallback: false` (to indicate 
 
 ## Pitfalls
 
+- **GetXAPI endpoint may be unavailable** — As of 2026-05-19, `api.getxapi.com/twitter/tweet/article` returned 404 for both tweet IDs and article IDs. The API may have changed. If GetXAPI is down, skip directly to Tier 4 (secondary source discovery). The GitHub repo `xhuisme/getxapi` may have updates.
+- **HTTP 500 from X servers** — When the X article itself returns HTTP 500 (X server-side error), ALL direct retrieval methods (xurl, web_extract, GetXAPI, browser) will fail. Go straight to Tier 4 (secondary source discovery via web_search).
 - **GetXAPI KEY must be in environment** — Use `$GETXAPI_KEY` which is stored in `${HERMES_HOME}/.env`. Verify it's set before calling: `echo ${GETXAPI_KEY:-(not set)}`. If not set, skip Tier 3 and go directly to Tier 4 (secondary source discovery).
 - **`execute_code` does NOT inherit `.env` variables** — `os.environ.get("GETXAPI_KEY")` in Python returns `""` because the `execute_code` sandbox has a clean environment. Always use `terminal` with shell variable expansion (`$GETXAPI_KEY`) for API calls. Save the JSON output to a temp file, then process it with `execute_code` for the conversion step.
 - **Secondary sources vary in quality** — Machine-translated summaries may miss nuance. Prefer English-language tech media or bilingual outlets. Always note `summary_source` and `source_fallback: secondary` in frontmatter.
@@ -220,6 +222,7 @@ Mark the article with `getxapi: true` and `source_fallback: false` (to indicate 
 
 ## Supporting References
 
+- `references/canonical-blog-url-fallback.md` — When an X Article bookmark links to content originally published on the author's blog (Substack, personal site, Medium), skip the X article wrapper and web_search → web_extract the canonical URL instead.
 - `references/garry-tan-case-study.md` — Full walkthrough of the 8-step retrieval chain that succeeded via Tier 4 secondary source discovery, with the Garry Tan "Meta-Meta-Prompting" article as a worked example.
 - `references/mem0-secondary-source-case-study.md` — Mem0 as a secondary source mirror for coding-agent memory X Articles, with the Codex Memory Pipeline article as a worked example.
 - `references/thariq-claude-code-skills-case-study.md` — Clean Tier 3 GetXAPI success path: web_extract → GetXAPI full body → raw article → concept page with mechanism + role taxonomy. Thariq Shihipar's "Lessons from Building Claude Code: How We Use Skills" as a worked example.
