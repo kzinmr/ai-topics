@@ -1,0 +1,124 @@
+{
+  "triage_id": "20260519T071406Z",
+  "generated_at": "2026-05-19T07:14:06Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletters": [
+    {
+      "message_id": "<20260518133117.3.caab0b2744b8d1b8@mg2.substack.com>",
+      "subject": "Import AI 457: AI stuxnet; cursed Muon optimizer; and positive alignment",
+      "date": "2026-05-18",
+      "source": "Import AI (Jack Clark)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-18-import-ai-457-ai-stuxnet-cursed-muon-optimizer-and-positive-alignment.md",
+      "post_url": "https://open.substack.com/pub/importai/p/import-ai-457-ai-stuxnet-cursed-muon",
+      "relevance": "critical",
+      "reason": "Covers 3 high-priority AI/LLM topics: (1) AI security — fast16 as metaphor for AI supply-chain sabotage, (2) Muon optimizer silently killing neurons + Aurora fix — direct relevance to LLM training infrastructure, (3) Positive alignment paper from Oxford/DeepMind/OpenAI/Anthropic/Stanford — core AI safety concept",
+      "wiki_topics": [
+        "ai-safety",
+        "training-optimizers",
+        "model-training",
+        "positive-alignment",
+        "muon-optimizer",
+        "aurora-optimizer"
+      ],
+      "linked_articles": {
+        "aurora_paper": "Aurora: A Leverage-Aware Optimizer for Rectangular Matrices (Tilde Research)",
+        "aurora_code": "https://github.com/tilderesearch/aurora",
+        "positive_alignment_paper": "Positive Alignment paper (multi-institution)",
+        "sentinel_labs_report": "fast16 analysis (Sentinel LABS)"
+      }
+    },
+    {
+      "message_id": "<20260518134532.3.d3bf427afef007a1@mg-d0.substack.com>",
+      "subject": "The Next War Is Already Here. The West Isn't Ready. — Yaroslav Azhnyuk, The Fourth Law & Guest Host Noah Smith",
+      "date": "2026-05-18",
+      "source": "Latent Space (swyx) — podcast episode",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-18-the-next-war-is-already-here-the-west-isn-t-ready-yaroslav-azhnyuk-the-fourth-la.md",
+      "post_url": "https://open.substack.com/pub/swyx/p/the-fourth-law",
+      "relevance": "low",
+      "reason": "Primarily geopolitics and military drone autonomy. While AI-powered drone autonomy (5 levels) is discussed, the content is about warfare tactics and defense industry, not LLM/Agent technology. Marginal overlap with AI safety (dual-use AI, autonomous weapons) but not core wiki territory.",
+      "wiki_topics": [],
+      "linked_articles": {}
+    },
+    {
+      "message_id": "<20260518150052.3.fba3560247f8a936@mg-d0.substack.com>",
+      "subject": "🎙️ How I AI: HTML is the new Markdown: How Anthropic engineers are building with Claude Code",
+      "date": "2026-05-18",
+      "source": "Lenny's Newsletter (Lenny Rachitsky)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-18-how-i-ai-html-is-the-new-markdown-how-anthropic-engineers-are-building-with-clau.md",
+      "post_url": "https://open.substack.com/pub/lenny/p/how-i-ai-html-is-the-new-markdown",
+      "relevance": "high",
+      "reason": "Interview with Thariq Shihipar (Anthropic Claude Code engineer) on practical coding agent workflows. Key insights: HTML replacing Markdown for AI output, compute allocation mindset, disposable micro-apps, living design systems in HTML, effective prompting patterns, 99% token usage on process not production. Directly relevant to coding agents, developer tooling, and prompt engineering.",
+      "wiki_topics": [
+        "coding-agents",
+        "claude-code",
+        "prompt-engineering",
+        "developer-tooling",
+        "html-for-ai-output",
+        "compute-allocation",
+        "anthropic"
+      ],
+      "linked_articles": {
+        "thariq_shihipar_profile": "Anthropic engineer, Claude Code team",
+        "code_with_claude_event": "Live recording at Code with Claude event"
+      }
+    },
+    {
+      "message_id": "<20260518.163638.da3fe2a5@mta7>",
+      "subject": "AI Is Coming for Junior Jobs First",
+      "date": "2026-05-18",
+      "source": "Unknown (beehiiv-hosted newsletter)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-18-ai-is-coming-for-junior-jobs-first.md",
+      "post_url": null,
+      "relevance": "low",
+      "reason": "Labor market/societal impact of AI on junior positions. Not technical AI/LLM content. Marginal overlap with broader AI impact discourse but not core wiki territory.",
+      "wiki_topics": [],
+      "linked_articles": {}
+    },
+    {
+      "message_id": "<20260519043021.3.6fed3ed2aae5dfe1@mg2.substack.com>",
+      "subject": "The last six months in LLMs in five minutes",
+      "date": "2026-05-19",
+      "source": "Simon Willison's Newsletter",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-19-the-last-six-months-in-llms-in-five-minutes.md",
+      "post_url": "https://open.substack.com/pub/simonw/p/the-last-six-months-in-llms-in-five",
+      "relevance": "critical",
+      "reason": "Comprehensive LLM landscape summary Nov 2025–May 2026 covering: model crown changes (Claude Sonnet 4.5 → GPT-5.1 → Gemini 3 → GPT-5.1 Codex Max → Claude Opus 4.5), coding agents crossing quality barrier, OpenClaw emergence, open-weight model surge (Gemma 4, GLM-5.1, Qwen3.6-35B-A3B), HTML-over-Markdown debate, Shopify's River coding agent, LLM shebang lines. Dense with wiki-relevant entities and concepts.",
+      "wiki_topics": [
+        "language-models",
+        "coding-agents",
+        "openclaw",
+        "gemma-4",
+        "glm-5.1",
+        "qwen3.6",
+        "shopify-river",
+        "llm-tools",
+        "html-for-ai-output",
+        "model-landscape"
+      ],
+      "linked_articles": {
+        "openclaw": "OpenClaw personal AI assistant — evolution from Warelay",
+        "shopify_river": "Shopify's public Slack coding agent",
+        "thariq_html_markdown": "HTML over Markdown for AI output (cross-ref with Lenny's Newsletter)",
+        "llm_tool": "Simon Willison's llm CLI tool with shebang support",
+        "pelican_test": "Pelican-on-a-bicycle benchmark for model capability"
+      }
+    }
+  ],
+  "summary": {
+    "total": 5,
+    "critical": 2,
+    "high": 1,
+    "low": 2,
+    "critical_items": [
+      "Import AI 457 — AI stuxnet, Muon optimizer, positive alignment",
+      "Simon Willison — Last 6 months in LLMs landscape"
+    ],
+    "high_items": [
+      "Lenny's Newsletter — HTML is new Markdown, Claude Code engineering practices"
+    ],
+    "low_items": [
+      "swyx/Latent Space — Drone warfare (geopolitics)",
+      "Unknown — AI coming for junior jobs (labor economics)"
+    ]
+  }
+}
