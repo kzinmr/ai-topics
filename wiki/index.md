@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-19 | Total pages: 2022 | Indexed entries: 1164 | Not in index: 857 |
+> Last updated: 2026-05-19 | Total pages: 2023 | Indexed entries: 1165 | Not in index: 857 |
 
 ## Entities (627 pages)
 
@@ -641,7 +641,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1368 pages)
+## Concepts (1369 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -733,6 +733,7 @@
 - [[concepts/boring-technology]] — Boring Technology
 - [[concepts/context-compaction]] — Context Compaction — AIエージェントのコンテキストウィンドウ圧縮プロセス。Pre-Compaction Flush (OpenClaw) の革新的アプローチを含む。OpenClaw/Claude Code/Codexのコンパクション戦略比較。
 - [[concepts/context-graph]] — Context Graph
+- [[concepts/context-lock-in]] — Context Lock-In — AI競争の第三フェーズ。モデルロックイン（乗換可能）より危険な文脈ロックイン：企業の作業記憶を単一ベンダーが支配する構造的依存。Gopinathの三フェーズモデル (Model→Agent→Context)。「知能はレンタル、コンテキストは所有」。SentraのCompany Brainが参照実装。
 - [[concepts/contextmaxxing]] — Better memory over burning more tokens. Counterpart to [[concepts/tokenmaxxing]]. Memory as shared state, not as a service. Three memories (factual, interaction, action) as one substrate. Ontology + context graphs. Coined by [[entities/ashwingop]].
 - [[concepts/context-window-management]] — Context Window Management
 - [[concepts/death-of-browser]] — ブラウザの終焉: AIエージェント時代のWebアクセスパラダイムシフト

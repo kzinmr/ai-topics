@@ -4,6 +4,16 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-05-19] x-bookmarks-ingest | context-lock-in concept, ashwingop + sentra-app enrichment
+
+### Summary
+- **X Article ingested**: "Rent the Intelligence. Own the Context." by Ashwin Gopinath (@ashwingop), May 17, 2026. Full body fetched via xurl `tweet.fields=article`. → [[raw/articles/2026-05-17_rent-intelligence-own-context.md]]
+- **NEW concept page**: [[concepts/context-lock-in]] — AIの第三フェーズ競争（Model→Agent→Context）。モデルロックインより危険な文脈ロックイン。Gopinathの三フェーズモデル、Microsoft構造的アナロジー、MCPの両義性分析、フォワードデプロイメントの依存性分析。「知能はレンタル、コンテキストは所有」。
+- **Enriched**: [[concepts/contextmaxxing]] — Added Context Lock-In section as competitive consequence, updated sources/related/tags
+- **Enriched**: [[entities/ashwingop]] — Added blog post entry, Three-Phase Model of AI Competition section, updated sources/tags/X Activity Themes
+- **Enriched**: [[entities/sentra-app]] — Added context-lock-in as related concept + framing as neutral context layer, updated sources/tags
+- **Wiki index**: +1 concept page (2022→2023 total, 1368→1369 concepts)
+
 ## [2026-05-19] active-crawl | Starchild-1, HRM-Text, SANA-WM, Mastra ACP
 
 ### Summary

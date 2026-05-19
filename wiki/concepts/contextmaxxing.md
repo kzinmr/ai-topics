@@ -2,7 +2,7 @@
 title: "Contextmaxxing — Better Memory Over Burning More Tokens"
 type: concept
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-05-19
 tags:
   - context-management
   - memory-systems
@@ -13,10 +13,12 @@ aliases: ["contextmaxxing", "context-maxxing"]
 sources:
   - https://nanothoughts.substack.com/p/memory-is-state-not-a-service
   - https://x.com/i/article/2053533334949728256
+  - raw/articles/2026-05-17_rent-intelligence-own-context.md
 related:
   - "[[concepts/tokenmaxxing]]"
   - "[[concepts/context-engineering]]"
   - "[[concepts/context-compression]]"
+  - "[[concepts/context-lock-in]]"
 ---
 
 # Contextmaxxing — Better Memory Over Burning More Tokens
@@ -109,10 +111,28 @@ The concept is being operationalized by [[entities/sentra-app]], the $5M seed-fu
 - [[concepts/tokenmaxxing]] — The complementary "how much to burn" question
 - [[concepts/context-engineering]] — Techniques for context window optimization (harness-level)
 - [[concepts/context-compression]] — Reducing context window waste
+- [[concepts/context-lock-in]] — The strategic risk when context layer ownership is ceded to model vendors. **Contextmaxxing is the architectural answer; context lock-in is what happens when you don't.** See Gopinath's "Rent the Intelligence. Own the Context." (May 2026)
 - [[concepts/agent-loop-orchestration]] — Execution patterns affecting context usage
 - [[concepts/neural-garbage-collection]] — RL-optimized cache eviction for context management
+
+## Context Lock-In: The Competitive Consequence
+
+Contextmaxxing and [[concepts/context-lock-in]] are two sides of the same coin. **Contextmaxxing is the architectural imperative** (build shared, persistent state). **Context lock-in is the competitive risk** when that imperative is ceded to a single vendor who also controls the model and agent layers.
+
+Gopinath (May 2026) frames this through a three-phase model of AI competition:
+
+1. **Phase 1 (Model Quality)** — Converging. All frontier models approach parity for most enterprise tasks.
+2. **Phase 2 (Agent Layer)** — Will converge. Good patterns (planning, tool use, evals, permissions, UI) are copied by all vendors.
+3. **Phase 3 (Context)** — Will NOT converge. Customer promises, roadmap fights, support escalations, Slack debates, pricing exceptions, failed migrations, meeting rationale, owner history, and decision scars are unique to each company.
+
+> *"A decent model with a decent agent and excellent company context will beat a frontier model with a better agent and shallow context."*
+
+The practical implication: an enterprise that contextmaxxes (owns its own context graph as neutral infrastructure) can freely rent intelligence from any model provider. An enterprise that outsources context to the same vendor providing models and agents has locked itself into something far harder to reverse than an API migration.
+
+See [[concepts/context-lock-in]] for the full competitive dynamics, Microsoft structural analogy, MCP dual-nature analysis, and the forward-deployment dependency analysis.
 
 ## Sources
 
 - [Memory Is State, Not a Service](https://nanothoughts.substack.com/p/memory-is-state-not-a-service) — Ashwin Gopinath, Nanothoughts (May 8, 2026)
 - [Company Brain, Part 2: Factual Memory](https://nanothoughts.substack.com/p/company-brain-part-2-factual-memory) — Ashwin Gopinath, Nanothoughts (May 5, 2026)
+- [Rent the Intelligence. Own the Context.](https://x.com/i/article/2056142316713472000) — Ashwin Gopinath, X Article (May 17, 2026) — Introduces context lock-in as the third phase of AI competition. Full raw: [[raw/articles/2026-05-17_rent-intelligence-own-context.md]]

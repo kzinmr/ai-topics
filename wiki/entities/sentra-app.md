@@ -2,13 +2,18 @@
 title: "Sentra.app"
 type: entity
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-05-19
 tags:
   - company
   - memory-systems
   - ai-agents
   - rag
+  - enterprise-ai
+  - context-lock-in
 aliases: ["Sentra", "sentra-app"]
+sources:
+  - https://sentra.app
+  - raw/articles/2026-05-17_rent-intelligence-own-context.md
 ---
 
 # Sentra.app
@@ -58,6 +63,7 @@ The platform implements:
 ## Related Concepts
 
 - [[concepts/contextmaxxing]] — The architectural philosophy behind Sentra's memory design
+- [[concepts/context-lock-in]] — The competitive risk Sentra solves: enterprises that outsource context to model vendors face irreversible lock-in. Sentra provides the neutral, owned context layer. [[entities/ashwingop]]'s thesis: "Rent the Intelligence. Own the Context."
 - [[concepts/tokenmaxxing]] — The approach Sentra explicitly counters with shared state
 - [[entities/ashwingop]] — Co-founder and architectural visionary
 
@@ -65,3 +71,4 @@ The platform implements:
 
 - [Sentra.app](https://sentra.app) — Official website
 - [Sentra.app Raises $5M](https://finance.yahoo.com/news/sentra-app-raises-5m-build-170000454.html) — Yahoo Finance (2026)
+- [Rent the Intelligence. Own the Context.](https://x.com/i/article/2056142316713472000) — Ashwin Gopinath, X Article (May 17, 2026). Framing of Sentra as the neutral context layer: "A company brain, like the one we are building at Sentra, is the memory infrastructure that lets humans and agents act from the same organizational state." [[raw/articles/2026-05-17_rent-intelligence-own-context.md|Raw article]]
