@@ -3,7 +3,11 @@ title: "Sentra.app"
 type: entity
 created: 2026-05-12
 updated: 2026-05-12
-tags: [company, enterprise-ai, memory-systems, ai-agents, knowledge-graph]
+tags:
+  - company
+  - memory-systems
+  - ai-agents
+  - rag
 aliases: ["Sentra", "sentra-app"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Addy Osmani
 created: 2026-05-10
-updated: 2026-05-14
+updated: 2026-05-18
 type: entity
 tags:
   - person
@@ -15,6 +15,7 @@ aliases:
 sources:
   - raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md
   - raw/articles/2026-05-05_addyosmani_cognitive-surrender.md
+  - raw/articles/2026-05-17_addy-osmani_dont-outsource-learning.md
   - https://addyosmani.com/bio/
 description: "Director at Google Cloud AI, formerly Chrome Developer Experience lead. Published comprehensive Agent Harness Engineering framework (May 2026) and Cognitive Surrender concept (May 2026). Author of several books on software engineering and AI."
 ---
@@ -71,6 +72,16 @@ On May 9, 2026, Osmani published a comprehensive synthesis codifying **Agent Har
 - **HaaS (Harness-as-a-Service)** — Industry shift from LLM APIs to Harness APIs providing runtime
 
 His post synthesized contributions from @Vtrivedy10 (term coiner), @dexhorthy (emergent patterns), HumanLayer ("skill issue"), Anthropic Engineering (long-running apps), and Birgitta Böckeler (user-side experience).
+
+## "Don't Outsource the Learning" (May 2026)
+
+On May 17, 2026, Osmani published a follow-up piece expanding the cognitive surrender thesis with fresh research findings and practical countermeasures:
+
+- **Anthropic 2026 Randomized Trial** — Engineers learning a new Python library showed AI users scored 50% vs 67% on comprehension quizzes, despite equal task completion speed. Conceptual questioners scored >65%; copy-pasters scored <40%.
+- **MIT "Your Brain on ChatGPT"** — EEG showed reduced brain connectivity with LLM use; 83% of LLM users couldn't quote a single line of what they produced.
+- **CHI 2026 Anchoring Effect** — LLM framing at task start produced measurably worse decisions even when humans did the rest independently.
+
+Osmani advocated for **Learning Mode** features (Anthropic, OpenAI, Google have shipped them but adoption is near-zero for production work) and proposed concrete strategies: form a hypothesis before asking, request explanation before code, and treat "ship" and "learn" as separate metrics.
 
 ## Related Pages
 

@@ -3,7 +3,12 @@ title: "Vincent Weisser"
 created: 2026-05-13
 updated: 2026-05-13
 type: entity
-tags: [person, entrepreneur, open-source, reinforcement-learning, ai-infrastructure, x-account]
+tags:
+  - person
+  - open-source
+  - reinforcement-learning
+  - infrastructure
+  - x-account
 sources:
   - https://www.vincentweisser.com/
   - https://x.com/vincentweisser

@@ -3,7 +3,14 @@ title: "Hermes Agent vs OpenClaw"
 created: 2026-05-14
 updated: 2026-05-14
 type: comparison
-tags: [comparison, hermes-agent, openclaw, ai-agents, agent-architecture, agent-harness, open-source, personal-ai]
+tags:
+  - comparison
+  - ai-agents
+  - openclaw
+  - architecture
+  - harness-engineering
+  - open-source
+  - personal-ai
 sources:
   - raw/articles/2026-05-13_akshaypachaar_hermes-agent-masterclass.md
   - raw/articles/2026-05-06_kilo_hermes-vs-openclaw-when-to-reach.md

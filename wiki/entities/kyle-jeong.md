@@ -9,8 +9,8 @@ updated: 2026-05-13
 tags:
   - person
   - browserbase
-  - browser-automation
-  - ai-infrastructure
+  - browser-agent
+  - infrastructure
   - sandbox
 status: L2
 sources:

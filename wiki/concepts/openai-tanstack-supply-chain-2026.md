@@ -3,7 +3,7 @@ title: "OpenAI TanStack npm Supply Chain Attack Response (May 2026)"
 type: concept
 status: complete
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-16
 tags:
   - security
   - openai
@@ -14,6 +14,7 @@ related:
   - entities/codex
 sources:
   - raw/articles/openai.com--index-our-response-to-the-tanstack-npm-supply-chain-attack--7e8d14b0.md
+  - raw/articles/techcrunch.com--openai-says-hackers-stole-some-data-tanstack--2026-05-16.md
 ---
 
 # OpenAI TanStack npm Supply Chain Attack Response (May 2026)
@@ -22,7 +23,8 @@ In May 2026, OpenAI disclosed its response to the **Mini Shai-Hulud** supply cha
 
 ## What Happened
 
-- **Attack vector**: Compromised TanStack npm package (part of the broader "Mini Shai-Hulud" campaign)
+- **Attack vector**: Compromised TanStack npm package (part of the broader "Mini Shai-Hulud" / "Shai-Hulud" campaign). Hackers published **84 malicious versions** across a **six-minute window** before the attack was detected by a researcher within 20 minutes.
+- **Malware design**: Credential theft + **self-propagation** to spread to other systems on the network
 - **Impact on OpenAI**: Two employee devices in the corporate environment downloaded and executed the malicious package
 - **Data accessed**: Limited unauthorized access to internal source code repositories to which the two impacted employees had access
 - **Credentials**: Limited credential material was successfully exfiltrated from these repositories, including signing certificates for iOS, macOS, Windows, and Android products

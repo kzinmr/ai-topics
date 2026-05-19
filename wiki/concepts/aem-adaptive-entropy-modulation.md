@@ -4,7 +4,7 @@ created: 2026-05-13
 updated: 2026-05-13
 type: concept
 tags:
-  - research
+  - lab
   - reinforcement-learning
   - agent-training
   - optimization

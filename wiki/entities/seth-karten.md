@@ -4,7 +4,10 @@ created: 2026-05-14
 updated: 2026-05-14
 type: entity
 status: active
-tags: [person, researcher, ai-agents, agent-harness]
+tags:
+  - person
+  - ai-agents
+  - harness-engineering
 sources: [raw/articles/2026-05-13_sethkarten_continual-harness.md]
 aliases: ["@sethkarten"]
 related: [concepts/continual-harness, entities/ryan-lopopolo, entities/princeton-university]

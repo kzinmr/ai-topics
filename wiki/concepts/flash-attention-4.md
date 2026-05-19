@@ -3,7 +3,15 @@ title: "FlashAttention-4"
 created: 2026-05-11
 updated: 2026-05-11
 type: concept
-tags: [training, optimization, inference, gpu, nvidia, hardware, kv-cache, scaling, benchmark, research]
+tags:
+  - training
+  - optimization
+  - inference
+  - hardware
+  - nvidia
+  - kv-cache
+  - benchmark
+  - lab
 sources:
   - raw/articles/2026-03-05_togetherai_flashattention-4.md
   - raw/articles/2025-09-26_modal_reverse-engineer-flashattention-4.md

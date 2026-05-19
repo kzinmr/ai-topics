@@ -3,7 +3,14 @@ title: Hugo Bowne-Anderson
 created: 2026-05-14
 updated: 2026-05-14
 type: person
-tags: [person, ai-agents, agent-skills, data-science, podcast, blogger, education]
+tags:
+  - person
+  - ai-agents
+  - agent-skills
+  - data-science
+  - writing
+  - blogger
+  - education
 sources:
   - raw/articles/2026-05-12_hugobowne_agentic-engineering-verification.md
   - raw/articles/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md

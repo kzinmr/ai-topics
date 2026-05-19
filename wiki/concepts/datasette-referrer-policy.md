@@ -5,7 +5,7 @@ created: 2026-05-06
 updated: 2026-05-06
 status: L1
 tags:
-  - datasette
+  - tool
   - security
   - privacy
   - person

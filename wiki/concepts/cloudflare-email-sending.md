@@ -5,7 +5,11 @@ aliases: ["Cloudflare Email Service", "Cloudflare transactional email"]
 created: 2026-05-11
 updated: 2026-05-11
 status: L2
-tags: [cloudflare, email, infrastructure, api, serverless]
+tags:
+  - company
+  - email
+  - infrastructure
+  - developer-tooling
 sources:
   - https://developers.cloudflare.com/email-service/
   - https://developers.cloudflare.com/email-service/api/send-emails/rest-api/

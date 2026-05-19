@@ -1,7 +1,13 @@
 ---
 type: comparison
 title: "Google Alerts Alternatives — 2026 Developer & Marketer Guide"
-tags: [comparison, search, google, automation, ai-agents, observability]
+tags:
+  - comparison
+  - search
+  - google
+  - automation
+  - ai-agents
+  - infrastructure
 date: 2026-04-17
 source: https://parallel.ai/articles/the-best-google-alerts-alternatives-in-2026-including-one-built-for-developers
 aliases: [google-alerts-alternatives, web-monitoring-tools-comparison]

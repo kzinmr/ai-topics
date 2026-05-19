@@ -8,10 +8,10 @@ aliases:
   - social-repression-catalog
 tags:
   - concept
-  - rlhf
+  - fine-tuning
   - psychology
   - philosophy
-  - language
+  - nlp
   - censorship
   - taboo
   - jung

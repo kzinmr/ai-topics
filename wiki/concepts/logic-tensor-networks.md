@@ -5,7 +5,12 @@ status: incomplete
 description: "Logic Tensor Networks (LTN) is a neurosymbolic framework that combines neural networks with first-order logic reasoning through a differentiable logic called Real Logic."
 created: 2026-04-27
 updated: 2026-04-28
-tags: [concept, neurosymbolic, logic, tensor, differentiable-reasoning]
+tags:
+  - concept
+  - neurosymbolic
+  - reasoning
+  - tensor
+  - differentiable-reasoning
 aliases: [LTN, Real Logic, Logic Tensor Network]
 sources: [https://arxiv.org/abs/2012.13635]
 ---

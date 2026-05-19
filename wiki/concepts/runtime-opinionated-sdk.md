@@ -5,9 +5,9 @@ updated: 2026-05-15
 type: concept
 tags:
   - agent-runtime
-  - agent-architecture
-  - agent-framework
-  - agent-harness
+  - architecture
+  - ai-agents
+  - harness-engineering
   - agent-sdk
   - orchestration
 aliases: [opinionated-agent-sdk, runtime-embedded-sdk]

@@ -13,8 +13,8 @@ tags:
   - skill-graph
   - content-engine
   - agent-media
-  - ai-coding
-  - cost-optimization
+  - coding-agents
+  - optimization
   - token-economics
   - model-routing
 status: active

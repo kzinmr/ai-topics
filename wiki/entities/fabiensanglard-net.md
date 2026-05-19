@@ -10,7 +10,7 @@ tags:
   - game-engines
   - reverse-engineering
   - optimization
-  - computer-history
+  - timeline
 aliases:
 - fabiensanglard.net
 - fabien-sanglard

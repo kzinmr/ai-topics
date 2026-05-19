@@ -10,7 +10,6 @@ tags:
   - ai-agents
   - software-engineering
   - optimization
-  - swe-bench
 aliases: ["frontier-swe", "FrontierSWE"]
 sources: [raw/articles/2026-05-06_proximal-frontier-swe-blog.md]
 ---

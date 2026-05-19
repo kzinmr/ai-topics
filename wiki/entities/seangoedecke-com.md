@@ -2,8 +2,10 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-09
+updated: 2026-05-18
 type: entity
+sources:
+  - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
 ---
 
 # Sean Goedecke
@@ -41,7 +43,10 @@ His writing philosophy is evident in his book's distribution model: **print at c
 | 2025 | Book published: "Software Engineering After the Vibe Shift" |
 | 2025 | Featured on 99% Invisible (em-dash analysis), ABC News (AI sycophancy), Grammar Girl Podcast |
 | 2026 | Active through at least May 2026; continuing to publish on AI, career development, and left-wing pro-AI arguments |
-| 2026-05-10 | Publishes "The left-wing case for AI" — outlines progressive arguments for AI adoption across disability rights, healthcare, class mobility, education, and utopian tech optimism |
+| **2026-05-10** | Publishes "The left-wing case for AI" — outlines progressive arguments for AI adoption across disability rights, healthcare, class mobility, education, and utopian tech optimism |
+| **2026-05-17** | Publishes "How I use LLMs as a staff engineer in 2026" — updated workflow: agents now produce entire PRs, 80% bug diagnosis rate, skimming vs. editing mental model shift |
+| **2026-05-17** | Publishes "DeepSeek-V4-Flash means LLM steering is interesting again" — explores activation engineering and steering vectors for influencing model behavior |
+| **2026-05-17** | Publishes "The just-say-no engineer was a ZIRP phenomenon" — argues the "just-say-no" engineering archetype thrived under zero-interest-rate conditions and is now endangered by AI, but AI is not the root cause |
 
 ## Core Ideas
 
@@ -129,6 +134,20 @@ Goedecke outlines explicitly left-wing arguments for AI adoption across five dim
 
 **Key Quote from Reader Matt**: "If similar reasoning had been applied to outright reject computers as fascist and unethical in the 80s and onward, my own life would have been quite different, and arguably worse. I have enough usable vision to handwrite, uncomfortably, with my head against the page... Computers saved me from having to do even more... And now that AI helps at least one group of disabled people (of which I'm more or less a part), do I want to deny that benefit?"
 
+### The Just-Say-No Engineer Was a ZIRP Phenomenon (May 2026)
+
+Goedecke identifies and analyzes the **"just-say-no engineer" archetype** — senior/staff engineers whose role is to slow things down, block feature development that adds complexity, and ensure as little code gets written as possible (since "code is a liability"). He argues this archetype was a product of the **zero-interest-rate policy (ZIRP) era (2008–2022)** and is now endangered.
+
+**The ZIRP dynamic**: During the ZIRP era, cheap capital meant tech companies were incentivized to hire aggressively — teams grew from tens to thousands of engineers, many working on tangential projects. The just-say-no engineer was valuable because: (1) having half the company's engineers in endless propose-and-block loops was fine since they didn't need to be productive; (2) it prevented the 5% of engineers who'd "get drunk on their technical freedom" from making wild proposals; (3) a reputation for high technical bar was good for hiring.
+
+**The post-ZIRP reality**: When rates rose and companies flipped to efficiency mode, the just-say-no engineer lost institutional support. Management that once deferred to their judgment now overrules them, and they get bad reviews for the same behavior that was rewarded pre-2022.
+
+**The AI red herring**: Goedecke argues AI is NOT the cause of this shift — companies blamed layoffs on AI because "with this transformative technology, we're able to deliver 10× the value with half the engineers" sounds better than "we were paying hundreds of engineers to do unprofitable work." If ZIRP hadn't ended, AI would have been a boon for just-say-no engineers, creating even more code to gatekeep.
+
+**Irony**: AI coding tools mostly **work** and haven't yet caused a catastrophe. The code is less clean and less well-understood, but it's good enough. The just-say-no engineer now faces an identity crisis: either insist the apocalypse is right around the corner, or accept their role was contingent on a historically unusual economic environment.
+
+**Pure vs. impure engineering**: Goedecke draws a distinction between "pure" engineering (well-scoped, technical goals like compilers and runtimes) where the just-say-no engineer thrives, and "impure" engineering (poorly-scoped, customer-driven features) where they don't. The ZIRP era allowed companies to treat even impure work like pure work. Now, just-say-no engineers should move into core infrastructure roles where quality standards remain high, accepting a more limited scope than in the 2010s.
+
 ## Key Quotes
 
 > "If you are good at code review, you will be good at using AI agents."
@@ -188,6 +207,10 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 - Regular podcast guest on engineering and AI topics
 
 ## Recent Articles
+
+- **The just-say-no engineer was a ZIRP phenomenon** (2026-05-17): Identifies the "just-say-no" senior engineer archetype as a product of the zero-interest-rate era. Argues that AI coding tools are not the cause of this archetype's decline — the end of cheap capital is. Distinguishes between "pure" (compilers, runtimes) and "impure" (customer-driven features) engineering domains, recommending just-say-no engineers migrate to core infrastructure roles.
+
+- **How I use LLMs as a staff engineer in 2026** (2026-05-17): Documents the evolution from his February 2025 post. Key changes: agents now reliably produce entire PRs (he starts every change with an agent and pushes after a single editing pass); shifted from open VSCode windows to terminal-based Copilot CLI sessions; uses agents tens of times per day; 80% bug diagnosis rate autonomously. Notable: he still writes his own PR descriptions because LLMs over-communicate and miss the "core idea"; still doesn't use LLMs for Slack messages or ADRs to signal human thinking; uses agents for local config troubleshooting (nvm, node version switching). Core thesis: "the current core AI skill is shifting as much work onto AI agents as possible, without going too far."
 
 - **AI makes weak engineers less harmful** (2026-05-08): Argues that frontier LLMs have raised the floor for weak engineers — instead of producing completely broken PRs, they now produce "standard LLM pull requests: wrong in some ways, baffling in others, but at least functional on the line-by-line level." Notes the phenomenon of engineers becoming "thin wrappers around Claude Code," communicating via Slack rather than direct interaction. Predicts a future push to measure "what value engineers are adding to AI" rather than just AI's value to engineers. Crucially observes that "no strong engineers use AI tools like this" — the wrapper phenomenon is limited to those for whom it represents an improvement.
 

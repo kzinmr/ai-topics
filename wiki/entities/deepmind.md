@@ -8,10 +8,9 @@ tags:
   - google
   - lab
   - agi
-  - research
   - agentic-engineering
   - ai-agents
-  - tool-use
+  - tool
 sources:
   - raw/newsletters/2026-05-13-the-ai-cursor-arrives.md
   - https://deepmind.google/blog/ai-pointer/

@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-05-12
+updated: 2026-05-18
 tags:
   - company
   - model
@@ -11,6 +11,7 @@ tags:
   - openai
 aliases: ["OpenAI Inc."]
 sources:
+  - raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md
   - raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md
   - raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md
   - raw/newsletters/2026-04-28-openai-breaks-free-from-microsoft.md
@@ -20,6 +21,7 @@ sources:
   - raw/articles/2026-05-04_techcrunch-anthropic-openai-jv.md
   - raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md
   - raw/articles/openai.com--signals-research-2026q1-update--45f994a1.md
+  - raw/newsletters/2026-05-15-codex-goes-everywhere.md
 ---
 
 # OpenAI
@@ -147,6 +149,24 @@ Source: [How ChatGPT adoption broadened in early 2026](https://openai.com/signal
 - **ストリーミング文字起こし**: 音声のリアルタイムテキスト変換
 - 音声インタラクションの新たな基盤モデルとして位置づけ
 
+
+### Daybreak — Cybersecurity Initiative (May 2026)
+
+OpenAI launched **Daybreak**, a cybersecurity initiative combining frontier models with Codex as an agentic harness:
+
+- **GPT-5.5-Cyber**: Specialized model with permissive behavior for authorized defensive workflows, paired with stronger verification and account-level controls
+- **Trusted Access for Cyber**: Mid-tier access with precise safeguards for verified defensive work (secure code review, vulnerability triage, malware analysis, detection engineering, patch validation)
+- **Ecosystem partners**: Cloudflare, CrowdStrike, Palo Alto Networks, and 8 major security vendors
+- **Philosophy**: "Safer software, resilient by design" — AI should find and patch vulnerabilities, and software should be resilient to them from the start
+- **Positioning**: Direct competitor to Anthropic's Claude Security / Project Glasswing
+- **Codex Security**: Agentic harness for security workflows — secure code review, threat modeling, patch validation, dependency risk analysis
+
+### Codex Mobile & ChatGPT Personal Finance (May 2026)
+
+- **Codex in ChatGPT mobile app**: Codex now runs on mobile with a Dispatch-like flow — start on phone, approve on laptop. Enables coding from anywhere.
+- **ChatGPT Pro + Plaid integration**: Personal finance features via Plaid connection to 12,000+ financial institutions. Positioned as AI-powered financial management.
+
+
 ### Codex ブラウザプラグイン
 
 OpenAI のコーディングエージェント **Codex** がブラウザ上で直接動作するプラグインをリリース：
@@ -163,6 +183,20 @@ OpenAI は **MRC（Multipath Reliable Connection）** ネットワークプロ�
 - GPUトラフィックを**数百経路に分散**し、障害時は**マイクロ秒単位で再ルーティング** — 数千GPUのロックステップ同期を維持し、トレーニングストールを防止
 - **戦略的意義**: ハードウェアベンダー間のポータビリティを確保し、NVIDIAのネットワーキング層支配を弱める狙い。NVIDIAは依然ハードウェアで勝つが、OpenAIはフロンティア訓練の依存レイヤーを単一サプライヤーに握らせない
 - 業界全体の標準化を目指す取り組み。関連: [[concepts/multipath-reliable-connection]]
+
+### Apple Partnership Dispute (May 2026)
+
+OpenAI is preparing **legal action against Apple** over the ChatGPT-Siri integration deal from 2024 (iOS 18). OpenAI lawyers are working with an outside firm on breach-of-contract claims.
+
+Key developments:
+- OpenAI expected the in-Settings ChatGPT subscription signup (Apple taking a cut) "could generate billions of dollars per year" — actual subscriptions "haven't come close"
+- An unnamed OpenAI executive: *"We have done everything from a product perspective. They have not, and worse, they haven't even made an honest effort."*
+- Apple withheld product details during deal negotiations: *"They basically said, 'OpenAI needs to take a leap of faith and trust us'"*
+- No money changed hands — Apple doesn't pay OpenAI, only takes a cut of subscriptions
+- Apple now opening Siri to **Google Gemini** (WWDC 2026) and iOS 27 will allow **Anthropic Claude** and other AI models to integrate
+- OpenAI was not interested in working with Apple on the new models because "it felt burned by the initial relationship"
+
+> Sources: [9to5Mac](https://9to5mac.com/2026/05/14/openai-preparing-legal-action-against-apple/), [Bloomberg](https://www.bloomberg.com/news/articles/2026-05-14/openai-apple-partnership-frays-setting-up-possible-legal-fight) (May 14, 2026)
 
 ## Security Architecture
 
@@ -211,7 +245,7 @@ This separation mitigates prompt-injection/exfiltration risks and isolates crede
 
 ### TanStack npm Supply Chain Attack — Mini Shai-Hulud (May 2026)
 
-OpenAI disclosed its response to the **Mini Shai-Hulud** supply chain attack targeting the npm ecosystem (May 2026). Two employee corporate devices downloaded a malicious TanStack npm package, resulting in unauthorized access to internal source code repositories and exfiltration of limited credential material including code-signing certificates for iOS, macOS, Windows, and Android products. No customer data or production systems were compromised. All certificates were rotated; macOS users must update apps by June 12, 2026. See [[concepts/openai-tanstack-supply-chain-2026]] for full details.
+OpenAI disclosed its response to the **Mini Shai-Hulud** supply chain attack targeting the npm ecosystem (May 2026). Hackers published **84 malicious versions** of TanStack packages during a **six-minute window**; a researcher detected the attack within 20 minutes. The malware was designed to steal credentials from infected computers and **self-propagate** to other systems. Two employee corporate devices downloaded a malicious TanStack npm package, resulting in unauthorized access to internal source code repositories and exfiltration of limited credential material including code-signing certificates for iOS, macOS, Windows, and Android products. No customer data or production systems were compromised. All certificates were rotated; macOS users must update apps by June 12, 2026. See [[concepts/openai-tanstack-supply-chain-2026]] for full details.
 
 ## Sources
 - **OpenAI Agents SDK Blog (2026-04-15)** — [openai.com](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)

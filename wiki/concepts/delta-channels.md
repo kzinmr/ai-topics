@@ -3,7 +3,12 @@ title: "Delta Channels"
 created: 2026-05-14
 updated: 2026-05-14
 type: concept
-tags: [agentic-engineering, infrastructure, langchain, state-management, optimization, scaling]
+tags:
+  - agentic-engineering
+  - infrastructure
+  - langchain
+  - state-management
+  - optimization
 sources: [raw/articles/2026-05-12_langchain-delta-channels.md]
 ---
 

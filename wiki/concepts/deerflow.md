@@ -3,7 +3,14 @@ title: DeerFlow
 created: 2026-05-15
 updated: 2026-05-15
 type: concept
-tags: [ai-agents, multi-agent, agent-framework, agent-harness, open-source, sandbox, skill-graph, deep-research]
+tags:
+  - ai-agents
+  - multi-agent
+  - harness-engineering
+  - open-source
+  - sandbox
+  - skill-graph
+  - deep-research
 sources: [raw/articles/2026-05-15_deerflow-bytedance-superagent.md]
 ---
 

@@ -3,7 +3,15 @@ title: "Pentagon AI Contracts (May 2026)"
 created: 2026-05-12
 updated: 2026-05-12
 type: concept
-tags: [governance, policy, security, ai-safety, anthropic, openai, google, controversy]
+tags:
+  - governance
+  - policy
+  - security
+  - agent-safety
+  - anthropic
+  - openai
+  - google
+  - controversy
 sources: [raw/articles/2026-05-05_pentagon-ai-contracts-may-2026.md]
 ---
 

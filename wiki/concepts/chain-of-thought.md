@@ -6,7 +6,11 @@ aliases:
 created: 2026-04-25
 updated: 2026-05-14
 type: concept
-tags: [concept, chain-of-thought, reasoning, prompting, test-time-scaling]
+tags:
+  - concept
+  - reasoning
+  - prompting
+  - test-time-scaling
 sources:
   - https://arxiv.org/abs/2201.11903
   - https://arxiv.org/abs/2408.03314

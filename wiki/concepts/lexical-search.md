@@ -3,7 +3,11 @@ title: Lexical Search
 created: 2026-05-13
 updated: 2026-05-13
 type: concept
-tags: [information-retrieval, search, lexical-search, tokenization, bm25]
+tags:
+  - search
+  - lexical-search
+  - tokenization
+  - bm25
 sources: [raw/articles/2026-05-13_softwaredoug_lexical-search-bm25.md]
 ---
 

@@ -9,12 +9,11 @@ updated: 2026-05-13
 status: l2
 tags:
   - person
-  - entrepreneur
   - chroma
   - database
   - search
   - context-engineering
-  - agent-harness
+  - harness-engineering
   - ai-agents
   - open-source
 sources:

@@ -4,7 +4,11 @@ created: 2026-05-11
 updated: 2026-05-11
 type: entity
 status: L2
-tags: [person, blogger, x-account, post-training, distillation]
+tags:
+  - person
+  - blogger
+  - x-account
+  - training
 aliases: ["@nrehiew_", "nrehiew"]
 sources: [raw/articles/2026-05-10_nrehiew_sft-rl-opd-distributional-lens.md]
 related: [concepts/on-policy-distillation, concepts/post-training-distributional-view]

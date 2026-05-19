@@ -5,10 +5,9 @@ updated: 2026-05-13
 type: concept
 tags:
   - self-improving
-  - agent-harness
-  - agent-architecture
-  - coding-agents
   - harness-engineering
+  - architecture
+  - coding-agents
   - ai-agents
 sources:
   - raw/articles/2026-02-28_substack_agents-that-build-themselves.md

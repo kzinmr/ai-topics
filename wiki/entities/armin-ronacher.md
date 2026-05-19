@@ -1,141 +1,83 @@
 ---
 title: Armin Ronacher
-description: Austrian open-source programmer (b. 1989). Creator of Flask, Jinja2, Click, Pygments, and Werkzeug. Founder of Earendil, former Sentry engineer. Author of Pi coding agent, ds4.c contributor, leading local-model-first AI tooling movement.
-url: https://lucumr.pocoo.org/
 type: entity
-created: 2026-05-09
-updated: 2026-05-12
-aliases: [mitsuhiko, "Armin Ronacher"]
+aliases: [mitsuhiko]
+created: 2026-05-18
+updated: 2026-05-18
 tags:
   - person
   - open-source
-  - coding-agents
-  - local-llm
   - developer-tooling
-sources:
-  - raw/articles/lucumr.pocoo.org--2026-5-8-local-models--ebab17f3.md
-  - https://lucumr.pocoo.org/2026/5/8/local-models/
-  - https://en.wikipedia.org/wiki/Armin_Ronacher
-  - https://github.com/mitsuhiko
-  - https://lucumr.pocoo.org/about/
+  - blogger
+  - model
+  - agentic-engineering
+  - infrastructure
+sources: [raw/articles/2026-05-18_armin-ronacher_a-language-for-agents.md, https://lucumr.pocoo.org/about/]
 ---
 
-# Armin Ronacher
+# Armin Ronacher (@mitsuhiko)
 
-**Armin Ronacher** (born May 10, 1989, Graz, Austria) is an Austrian open-source software developer. Known online as **mitsuhiko**, he created the **Flask** web framework, **Jinja2** templating engine, **Click** CLI toolkit, **Pygments** syntax highlighter, and **Werkzeug** WSGI library — collectively forming the foundation of much of the Python web ecosystem. He founded [Earendil](https://earendil.com/) and spent a decade at Sentry as one of its first engineers. In 2025–2026, his focus shifted to AI coding agents and local model inference, authoring the **Pi** coding agent and contributing to **ds4.c**.
-
-## Professional Background
-
-- **2005–2012**: Built the Pocoo umbrella of Python libraries (Pygments, Jinja2, Sphinx, Werkzeug, Flask) while working on the German Ubuntu community portal
-- **2010**: Created Flask as an April Fool's joke — it became one of Python's most popular web frameworks (71.5K GitHub stars)
-- **~2014–2025**: Sentry engineer — joined as first engineer, led event ingestion, SDK development, and internal developer platform teams; built one of Sentry's regional offices
-- **2023**: Founded Earendil
-- **2025–2026**: Transitioned to AI coding agents and local inference; created Pi coding agent
+Austrian software engineer, creator of the **Flask** web framework, **Jinja2** templating engine, **Werkzeug** WSGI toolkit, and many other foundational Python libraries. Currently Principal Architect at **Sentry**, where he works on observability infrastructure. Writes at [lucumr.pocoo.org](https://lucumr.pocoo.org/).
 
 ## Key Projects
 
-| Project | Description | Stars |
-|---------|-------------|-------|
-| **Flask** (pallets/flask) | Python micro web framework | 71.5K |
-| **Click** (pallets/click) | Python composable CLI toolkit | 17.5K |
-| **Jinja** (pallets/jinja) | Fast expressive template engine | 11.6K |
-| **insta** | Snapshot testing library for Rust | 2.8K |
-| **MiniJinja** | Minimal Jinja-compatible template engine for Rust | 2.6K |
-| **agent-stuff** | Claude Code commands and configurations | 2.3K |
+- **[Flask](https://flask.palletsprojects.com/)** — Micro web framework; one of the most popular Python web frameworks alongside Django
+- **[Jinja2](https://jinja.palletsprojects.com/)** — Templating engine used widely across the Python ecosystem (Ansible, Salt, Pelican, etc.)
+- **[Werkzeug](https://werkzeug.palletsprojects.com/)** — WSGI utility library that underpins Flask
+- **[Click](https://click.palletsprojects.com/)** — Command-line interface creation toolkit
+- **[Sentry](https://sentry.io/)** — Principal Architect; observability and error tracking platform
+- **[Rye](https://github.com/astral-sh/rye)** — Python package manager (later merged into Astral's `uv`)
 
-## State of Agentic Coding Podcast (Dec 2025–Apr 2026)
+## AI & Agentic Programming
 
-Monthly YouTube podcast co-hosted with **Ben Vinegar** ([@bentlegen](https://x.com/bentlegen)). Five episodes covering the fast-moving AI coding landscape — see [[concepts/state-of-agentic-coding|full series overview]].
+In February 2026, Ronacher published a landmark essay *"A Language For Agents"* arguing that the rise of AI coding agents will drive the creation of **new programming languages** optimized for agentic workflows. Key observations:
 
-| # | Date | Duration | Key Topics |
-|---|------|----------|------------|
-| 1 | 2025-12-15 | 49:05 | Model fatigue, AMP, context windows, Anthropic soul document, x86 wars analogy |
-| 2 | 2026-01-22 | 51:44 | Claude Code holiday surge, subscription economics, meta-agentic programming, sub-agent voting |
-| 3 | 2026-02-16 | 59:01 | OpenClaw, agent-built browser/compiler, Opus 4.6, death of the IDE, detox from over-vibing |
-| 4 | 2026-03-12 | 40:33 | Newfound powers problem, slop forks, software quality decline, GPL licensing in LLM era |
-| 5 | 2026-04-10 | 98:48 | Quality crisis, Cloudflare slop forks, AI psychosis, token substance abuse, slow-down movement, tech disparity |
-| 6 | 2026-05-11 | 98:22 | End of subsidies, Pi acquisition, xAI/Cursor $10B deal, coding traces as training gold, GitHub exodus |
+### Why New Languages Can Succeed
+- **Cost of writing code is dropping** → breadth of ecosystem matters less. Ronacher now uses TypeScript/JavaScript where he'd have used Python because agents perform better.
+- Missing functionality can be **reimplemented by the agent** from another language's library.
+- **Agent performance depends more on tooling and language stability** than on presence in training data.
+- Languages with rapid churn (Zig) or painful tooling (Swift) degrade agent success, even with good training data representation.
 
-**Recurring Ronacher themes across the series**: context management (manual compaction > auto-compaction), model lock-in as deepening risk, the "slow the f*** down" ethos, test-driven agent development with win conditions, and handcrafting foundations before letting agents loose.
+### What Agents Need from a Language
+Detailed design principles explored in [[concepts/agent-ergonomics#armin-ronachers-language-design-principles]]:
 
-## AI Coding Agent Philosophy
+1. **Context without LSP** — A single coherent experience with and without language server protocol
+2. **Braced syntax** — Significant whitespace (Python) causes token inefficiency and surgical edit errors
+3. **Explicit flow context (effect markers)** — Declare required effects (time, rng, db) in function signatures, auto-propagated by formatter
+4. **Results over exceptions** — Agents fear exceptions; typed result types preferred
+5. **Minimal diffs & line-friendly syntax** — Agents read files line-by-line; multi-line strings confuse them
+6. **Grep-ability** — Go-style package-qualified symbols, discouraged aliasing
+7. **Local reasoning** — Code must be understandable in isolation, without hidden global deps
+8. **Dependency-aware build tools** — Clear package structure, forbidding circular imports, cached test results
 
-### "Pushing Local Models With Focus And Polish" (May 2026)
+### What Agents Hate
+- **Macros** — Confusing for both humans and agents
+- **Re-exports & barrel files** — Break the one-to-one mapping between declaration and import location
+- **Aliasing** — Agents complain about many aliases; encourage good naming instead
+- **Flaky tests & dev env divergence** — Agents both create and suffer from flaky tests
 
-Ronacher's core thesis: **local models need focused, polished integration with coding agents**, not just "runnable" weights. The local inference stack is fragmented across engines (llama.cpp, Ollama, LM Studio, MLX, vLLM) and configuration decisions (chat template, quantization, context window, KV cache, tool-call format) that most developers can't navigate.
+## Philosophy
 
-**Key pain points identified:**
-- **Tool parameter streaming is missing** in most local setups — means no visibility into bash invocations being generated, dead connections indistinguishable from slow inference
-- **Too little critical mass** behind any one model+engine+agent combo — constant model churn prevents polishing
-- **"Pick a winner hard"** — advocate for selecting one model, one serving path, and polishing the entire stack until it's excellent
+Ronacher argues we're entering an era where facts about language design matter more than ever because **agents don't care about surveys** — we can measure what works by seeing how well agents perform. He calls for:
 
-### The DS4 Bet
+1. **Outsider art** — People who haven't built languages before trying their hand, bringing fresh perspectives
+2. **Deliberate documentation** — A systematic effort to document what works from first principles, moving beyond opinion wars to hard facts
 
-Ronacher is excited about [[entities/ds4-c|ds4.c]], Salvatore Sanfilippo's deliberately narrow inference engine for DeepSeek V4 Flash on Macs (128GB+ RAM only). ds4.c is:
-- Model-specific (NOT a generic GGUF runner)
-- Metal-only with SSD-backed KV caches
-- Self-contained — no MLX, Ollama, or other dependencies needed
-- Designed specifically for coding agent workloads
+> *"The cost of writing code is going down, but because we are also producing more of it, understanding what the code does is becoming more important."*
 
-### pi-ds4 Extension
+## Blog
+- **URL:** [lucumr.pocoo.org](https://lucumr.pocoo.org/)
+- **RSS:** [Atom](https://lucumr.pocoo.org/feed.atom) | [RSS](https://lucumr.pocoo.org/feed.xml)
+- **Topics:** Programming languages, Python, Rust, observability, AI agents, software engineering
 
-Ronacher built **pi-ds4**, a Pi extension that directly embeds ds4.c into the coding agent. It:
-- Registers `ds4/deepseek-v4-flash` as a first-class provider
-- Compiles and starts `ds4-server` on demand
-- Auto-selects quantization based on machine specs
-- Manages server lifecycle (lease + watchdog shutdown)
-- **Zero configuration** — deliberately no knobs, aiming to auto-discover optimal settings
+## Social
+- **X/Twitter:** [@mitsuhiko](https://x.com/mitsuhiko)
+- **Mastodon:** [@mitsuhiko@hachyderm.io](https://hachyderm.io/@mitsuhiko)
+- **GitHub:** [mitsuhiko](https://github.com/mitsuhiko)
+- **Bluesky:** [@mitsuhiko](https://bsky.app/profile/mitsuhiko.bsky.social)
 
-```
-pi install https://github.com/mitsuhiko/pi-ds4
-```
-
-### "Slow The Fuck Down" Mantra
-
-Ronacher advocates for slowing the AI tooling development pace to build quality into specific configurations rather than constantly chasing new models. His philosophy mirrors [[entities/salvatore-sanfilippo|antirez]]'s approach with ds4.c: deliberate narrowness over general frameworks.
-
-### Pi Experience: Agents Built for Agents Building Agents (Jan 2026)
-
-Ronacher's [deep-dive on Pi](https://lucumr.pocoo.org/2026/1/31/pi/) crystallized the philosophy of self-extending agents from a practitioner's perspective:
-
-> *"Agents Built for Agents Building Agents — software that is malleable like clay. The agent maintains its own functionality."*
-
-Key insights from his Pi usage:
-
-- **Session trees**: Pi sessions are tree-structured, allowing branching for side-quests (e.g., fixing a broken tool in isolation) without wasting main session context. After the fix, rewind and Pi summarizes what changed.
-- **No MCP by philosophy**: *"If you want the agent to do something it doesn't do yet, you don't download an extension. You ask the agent to extend itself."*
-- **Software building software**: All of Ronacher's Pi extensions — browser automation, code review, TODO management, commit message formatting — were created by the agent, not by Ronacher himself.
-- **Write → reload → test → loop**: The agent writes extension code, hot-reloads, tests it, and iterates until functional — a self-correcting development loop.
-- **Extension state in sessions**: Custom messages in session files store extension state without sending it to the model — preserving provider-agnostic portability.
-
-This Pi experience provided the philosophical foundation for Hugo Bowne-Anderson and Ivan Leo's "Building Agents That Build Themselves" workshop ([[concepts/agents-that-build-themselves]]), which reconstructed these patterns in Pure Python.
-
-## Writing Style & Philosophy
-
-Ronacher's blog (lucumr.pocoo.org) covers:
-- **Open-source sustainability** — practical realities of maintaining popular projects
-- **Software engineering craftsmanship** — deep dives into API design, testing, tooling
-- **AI tooling** — recent focus on coding agents and local model inference
-- **Rust advocacy** — increasingly writing infrastructure in Rust (MiniJinja, insta)
-
-His writing is pragmatic, deeply technical, and often critical of "vibeslopped" (vibes-based, sloppy) development practices in the fast-moving AI ecosystem.
-
-## Cross-References
-
-- [[entities/salvatore-sanfilippo]] — Collaborator on ds4.c, similar "deliberate narrowness" philosophy
-- [[entities/ds4-c]] — Salvatore Sanfilippo's DeepSeek V4 Flash inference engine for Macs
-- [[concepts/local-ai]] — Broader local AI inference movement
-- [[concepts/agentic-engineering]] — Developer workflow patterns Ronacher practices and writes about
-- [[entities/pi]] — Pi coding agent created by Ronacher
-- [[concepts/fragmentation]] — Local model stack fragmentation problem Ronacher critiques
-- [[concepts/tool-parameter-streaming]] — Missing feature Ronacher identifies as critical for local coding agents
-- [[concepts/state-of-agentic-coding]] — Podcast series co-hosted with Ben Vinegar (5 episodes, Dec 2025–Apr 2026)
-- [[entities/ben-vinegar]] — Podcast co-host and Modem co-founder
-
-## References
-
-- [Pushing Local Models With Focus And Polish (May 2026)](https://lucumr.pocoo.org/2026/5/8/local-models/) — Primary source for AI coding agent philosophy
-- [About Me](https://lucumr.pocoo.org/about/)
-- [GitHub: mitsuhiko](https://github.com/mitsuhiko) — 24.6K followers, 25 following
-- [Wikipedia: Armin Ronacher](https://en.wikipedia.org/wiki/Armin_Ronacher)
-- [Grokipedia: Armin Ronacher](https://grokipedia.com/page/Armin_Ronacher)
+## Related
+- [[concepts/agent-ergonomics]] — Agent-oriented language design (includes Ronacher's design principles)
+- [[concepts/programming-languages]] — Type systems, compilers, language design
+- [[entities/wes-mckinney]] — Author of the agent ergonomics thesis from the ecosystem/tooling perspective
+- [[concepts/harness-engineering/agentic-engineering]] — Professional patterns for coding agent usage

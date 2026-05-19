@@ -5,8 +5,6 @@ updated: 2026-05-15
 type: comparison
 tags:
   - comparison
-  - agent-harness
-  - agent-framework
   - harness-engineering
   - ai-agents
 aliases: ["harness-vs-framework", "harness-vs-sdk"]

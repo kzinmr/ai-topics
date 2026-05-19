@@ -11,8 +11,9 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-05-12
+updated: 2026-05-18
 sources: [
+  "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
   "https://x.com/RLanceMartin/status/2041927992986009773",
   "raw/articles/openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
   "raw/newsletters/2026-04-26-openai-is-cooking-the-anthropic-sweep-and-spacex-courts-cursor.md",
@@ -23,7 +24,9 @@ sources: [
   "raw/articles/2026-05-04_techcrunch-anthropic-openai-jv.md",
   "raw/articles/2026-05-04_anthropic-enterprise-ai-services.md",
   "raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md",
-  "raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md"
+  - raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md
+  - raw/newsletters/2026-05-15-codex-goes-everywhere.md
+  - raw/articles/2026-05-18_sap-anthropic-claude-business-ai-platform.md
 ]
 related: []
 ---
@@ -130,6 +133,24 @@ Anthropic leads enterprise AI adoption with strong market metrics:
 - **IPO target**: October 2026 at $400–500B valuation (pre-$1T talks)
 - Revenue growth driven by enterprise Claude adoption and Code with Claude 2026 launches (M365 GA, Dreaming, Managed Agents)
 - Cleaner unit economics than OpenAI; focused on enterprise over consumer scale
+
+
+### Enterprise Adoption Milestones (May 2026)
+
+- **PwC Certification**: 30,000 PwC staff certified on Claude — one of the largest single-organization AI training programs
+- **Ramp AI Index**: Anthropic-powered businesses show 34.4% AI adoption vs. 32.3% for non-Anthropic — indicating measurable productivity advantage
+- **Four Fronts of AI Competition**: Anthropic published a paper identifying the 4 dimensions of AI competition (models, deployment, trust, economics)
+
+### Colossus 1 — Memphis 300MW Deployment
+
+Anthropic's **Colossus 1** compute cluster in Memphis provides 300MW / 220K+ GPU capacity, operational as of May 2026. This is part of the SpaceXAI partnership and represents Anthropic's largest dedicated training infrastructure.
+
+
+### Gates Foundation Partnership (May 2026)
+
+Anthropic and the **Bill & Melinda Gates Foundation** announced a **4-year, $200 million** partnership to develop AI solutions for global health, education, and agriculture. The collaboration focuses on public-interest AI applications in low-resource settings. While significant for AI-for-good narrative, the direct technical wiki value is limited — reference-level addition.
+
+> Source: [Gates Foundation press release](https://www.gatesfoundation.org/ideas/media-center/press-releases/2026/05/ai-anthropic-partnership) (May 2026)
 
 ### $1.5B Services Joint Venture (May 2026)
 
@@ -272,11 +293,19 @@ Anthropic は複数の大規模計算資源契約を締結：
 
 Claude は **AWS Trainium、Google TPU、NVIDIA GPU** の複数ハードウェアで訓練・実行されている。
 
+
+### SAP Business AI Platform (May 2026)
+
+At SAP Sapphire 2026, Anthropic and SAP announced plans to embed Claude as a primary reasoning and agentic engine across SAP's AI-enabled portfolio, powering Joule and Joule agents via the [[entities/sap-business-ai-platform]]. Claude connects to the platform to coordinate tasks across SAP S/4HANA, SuccessFactors, and Ariba via MCP. Christian Klein (SAP CEO) and Daniela Amodei (Anthropic president) jointly announced the partnership.
+
+Key focus industries: public sector, healthcare, education, life sciences, utilities.
+
 ## Related
 - [[entities/anthropic]] — The model family
 - [[entities/claude-code]] — Claude Code CLI agent
 - [[entities/claude-mythos]] — Claude Mythos model (used by Claude Security)
 - [[entities/foundation-capital]] — Partner in Claude Managed Agents
+- [[entities/sap-business-ai-platform]] — SAP partnership (May 2026)
 - [[concepts/claude-managed-agents]] — Managed Agents platform details
 - [[concepts/project-glasswing]] — Defensive security initiative
 

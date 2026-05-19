@@ -1,3 +1,731 @@
+## [2026-05-18] ingest | X bookmarks — Pi Coding Agent metadata-only record
+
+### Summary
+- 2 new bookmarks processed from X. 1 skipped (startup accelerators, not AI-aligned).
+- [[entities/pi]] — X article "Pi Coding Agent 最全面指南（完美支持/goal）" could not be fetched (HTTP 500). Saved metadata-only record.
+
+### Changes
+- `raw/articles/x-article-2056043868077096960-pi-coding-agent-guide.md` — Metadata-only record: X article about Pi Coding Agent comprehensive guide with `/goal` support. Content inaccessible due to X API HTTP 500 error. Records title, URL, and fetch failure details for later retrieval.
+- `entities/pi.md` already has comprehensive coverage — no enrichment needed from inaccessible source.
+
+### Notes
+- Bookmark 2/2 skipped: tweet about startup accelerators (YC, a16z Speedrun, Techstars, Founders Inc) — not AI/LLM aligned per SCHEMA.md.
+
+---
+
+## [2026-05-18] ingest | Raw article: Doug Turnbull "Can Agents Replace the Search Stack?"
+
+- `raw/articles/2026-04-28_softwaredoug_search-apis-replaced-by-agents.md` — New raw article: Doug Turnbull's comprehensive experiment showing LLM agents (GPT-5-mini + BM25 + E5) achieve 0.453 NDCG on Amazon ESCI (+56.7% vs BM25 0.289), with no data-specific tuning. Covers agent exploration constraints (min 4 calls, similarity filtering), SID-1 agentic search models, and the critical distinction between "finding things" vs "deep research."
+- [[concepts/agentic-search]] — Updated source link from external URL to raw article wikilink.
+
+---
+
+## [2026-05-18] dreaming | Nightly knowledge consolidation
+
+### Pages Created
+- [[concepts/agent-first-design]] — Full concept page replacing stub. Covers Armin Ronacher's "A Language For Agents" thesis (8 design principles) and Vercel Zero as concrete implementation.
+- [[entities/vercel-labs]] — New entity page for Vercel Labs R&D division and its Zero programming language.
+
+### Pages Updated
+- [[entities/doug-turnbull]] — Added "Don't waste too much time on the original RAG paradigm" blog post (Apr 2026) to Recent Blog Posts.
+- [[entities/daringfireball-net]] — Added "AI Is Technology, Not a Product" (May 2026) to Recent Themes and References.
+
+### Sources
+- raw/articles/2026-05-18_armin-ronacher_a-language-for-agents.md
+- raw/articles/2026-05-18_vercel-labs_zero-language-for-agents.md
+- raw/articles/2026-04-21_softwaredoug_dont-waste-time-on-rag-paradigm.md
+- raw/articles/daringfireball.net--2026-05-ai-is-technology-not-a-product--d7845d6d.md
+
+### Notes
+- Triaged from dreaming pipeline (collect reported 0 articles but scanned 97 untriaged raw articles). Existing triage at dreaming/triage_latest.json was consumed.
+- Entities/seangoedecke-com.md, entities/dwarkesh-patel.md, entities/armin-ronacher.md already had substantive coverage of their respective articles — no enrichment needed.
+- Entity date bumps: entities/doug-turnbull.md (2026-04-10→2026-05-18), entities/daringfireball-net.md (2026-04-24→2026-05-18).
+- 2 source articles skipped per triage (OpenClaw naming, non-AI articles).
+- Index counts updated.
+
+---
+
+## [2026-05-18] tag-audit | Weekly tag taxonomy audit & auto-fix
+
+### Changes
+- Added `psychology` to SCHEMA.md Domain Concepts taxonomy (new canonical tag)
+- Added 19 new mappings to TAG_NORMALIZATION dict (pipeline→devops, swe-bench→benchmark, logic→reasoning, symbolic-ai→neurosymbolic, history→timeline, agent-sandboxing→sandbox, datasette→tool, pattern→design-patterns, cognitive-science→psychology, academic→research, case-study→methodology, instruction-tuning→fine-tuning, memory-efficiency→optimization, knowledge-management→information-retrieval, understanding-code→code-intelligence, vector-database→vector-search, computer-history→timeline)
+- Deleted one-off tag `modules` from concepts/dspy-modules.md
+- Fixed dgx-spark→hardware in entities/nvidia-nemoclaw.md + concepts/local-llm/server-dgx-spark.md (missed by script due to inline format bug)
+- Fixed regex bug in tag_normalization.py: tags on last frontmatter line not matched (no trailing \n)
+- Added content-comparison guard to prevent phantom modifications
+
+### Results
+- 193 pages modified by normalization script
+- Coverage improved: 62.6% → 72.3%
+- Non-SCHEMA tags: 227 → 207
+- Unique tags: 553 → 480
+- Composite kebab-case tags: 0 (unchanged)
+
+---
+
+## [2026-05-18] health-fix | Wiki health auto-fix
+
+### Fixes Applied
+- Removed ghost entry `[[entities/_index]]` from index.md (no file exists)
+- Added 20 orphan concept pages to index.md (first alphabetically: `ai-agents-autonomy-*` through `ai-infrastructure-engineering/model-serving-autoscaling`)
+- Restored missing `## Events (3 pages)` section header
+- Updated header counts: Entities: 627→621, Concepts: 1370→1361
+
+### Index Stats (Post-Fix)
+- Total pages: 2005
+- Indexed entries: 1148
+- Not in index: 857 (908 orphans minus 20 added minus 1 ghost removed)
+- validate_index.py: clean ✅
+
+---
+
+### 2026-05-18 18:05 UTC — Watchdog: index header count correction
+
+## [2026-05-18] watchdog | Index header count correction
+
+### Auto-fixed
+- wiki/index.md — Corrected header counts from 2023/1073/927 to 2005/1096/909 (verified via os.walk)
+
+### Findings (needs human review)
+- **4 duplicate entity pairs**: deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, 
+  lilian-weng/lilianweng, samuel-colvin/samuelcolvin — non-canonical slugs have more content in 3/4 cases
+- **665 bare wikilinks** (no namespace prefix) — 1083 total occurrences
+- **386 broken wikilinks** pointing to non-existent pages — 580 total occurrences
+- **909 unindexed pages** (45% of L2) — mostly concepts/ subdirectory files
+
+---
+
+# Wiki Log
+
+> Chronological record of all wiki actions. Append-only.
+
+---
+
+### 2026-05-18 13:15 UTC — agentmemory: persistent memory system for AI coding agents
+## [2026-05-18] manual | agentmemory entity page + iii-platform update
+
+### Pages Created (2)
+- [[entities/agentmemory]] — Persistent memory for AI coding agents built on iii-engine. 12 lifecycle hooks, BM25+vector+graph RRF retrieval (R@5: 95.2%), 4-tier Ebbinghaus-style memory consolidation. 51 MCP tools, works with Claude Code/Codex/Cursor/Hermes/OpenClaw/pi/OpenCode. 12K GitHub stars, Apache-2.0.
+- `wiki/raw/articles/2026-05-18_agentmemory-persistent-memory-for-coding-agents.md` — Raw article from GitHub README + AlphaSignal deep-dive
+
+### Pages Updated (1)
+- [[entities/iii-platform]] — Added [[entities/agentmemory]] to Related section as the most prominent application built on iii-engine
+
+---
+
+### 2026-05-18 12:45 UTC — RecSys Newsletter Vol.156: BM25 + Agentic Deep Research
+## [2026-05-18] manual | BM25/PI-SERINI concept + entity pages from RecSys newsletter
+
+### Pages Created (2)
+- [[concepts/bm25]] — BM25 lexical retrieval algorithm: PI-SERINI shows BM25 + LLM agentic loop beats dense retrievers (83.1% BrowseComp-Plus accuracy, 3.3x–10x cheaper via prefix caching)
+- [[entities/pi-serini]] — Minimal search agent: BM25 + LLM in agentic loop. Tuned BM25 (k1=25, b=1), wall-clock budget (300s), prefix-cache-friendly (82-90% cache hit rate). Hsu et al., arXiv:2605.10848
+
+### Pages Updated (1)
+- [[concepts/bm25]] — Enriched with PI-SERINI architecture details, BrowseComp-Plus benchmark results, failure mode analysis, and cost efficiency data
+
+### Raw Articles (1)
+- raw/articles/2026-05-15_recsys_bm25-agentic-deep-research.md
+
+### Sources
+- https://recsys.substack.com/p/is-bm25-enough-for-agentic-deep-research
+- https://arxiv.org/abs/2605.10848
+- https://github.com/justram/pi-serini
+
+### 2026-05-18 06:30 UTC — OPSD Article Ingestion (Siyan Zhao)
+## [2026-05-18] active-crawl | AWS-OpenAI, Perceptron AI, SAP/Anthropic, AWS Agent Toolkit, Google AI Pointer
+
+### Pages Created (6)
+- [[entities/perceptron-ai]] — Physical AI research lab, Perceptron Mk1 model
+- [[concepts/perceptron-mk1]] — Video understanding + embodied reasoning model
+- [[entities/sap-business-ai-platform]] — SAP's unified enterprise AI platform
+- [[concepts/aws-openai-bedrock-partnership]] — OpenAI models on Bedrock, Bedrock Managed Agents
+- [[concepts/aws-agent-toolkit]] — 40+ agent skills, managed MCP server for AWS
+- [[concepts/google-ai-pointer]] — DeepMind's AI-enabled pointer (Magic Pointer)
+
+### Raw Articles (5)
+- raw/articles/2026-05-18_aws-openai-bedrock-partnership.md
+- raw/articles/2026-05-18_perceptron-ai-mk1.md
+- raw/articles/2026-05-18_sap-anthropic-claude-business-ai-platform.md
+- raw/articles/2026-05-18_aws-agent-toolkit.md
+- raw/articles/2026-05-18_google-deepmind-ai-pointer.md
+
+### Sources
+- https://www.aboutamazon.com/news/aws/bedrock-openai-models
+- https://finance.yahoo.com/sectors/technology/articles/perceptron-ai-launches-physical-ai-153000413.html
+- https://news.sap.com/2026/05/sap-anthropic-to-bring-claude-sap-business-ai-platform/
+- https://aws.amazon.com/about-aws/whats-new/2026/05/agent-toolkit/
+- https://deepmind.google/blog/ai-pointer/
+
+---
+
+
+Ingested "Self-Distilled Reasoner: On-Policy Self-Distillation" by Siyan Zhao et al. (UCLA/Meta Superintelligence Labs, 2026) from siyan-zhao.github.io.
+
+### Changes
+- `wiki/raw/articles/2026-05-18_siyan-zhao_opsd-self-distilled-reasoner.md` — New raw article. OPSD uses same model as student + teacher (with ground-truth as privileged context), JSD_β divergence, full-vocabulary distribution matching. ≥ GRPO at 1/64 token cost.
+- `wiki/concepts/on-policy-self-distillation.md` — **New concept page** (status: complete). Full coverage: OPSD mechanism (3-step training, JSD_β loss, KL clipping), policy-gradient interpretation (comparison with STaR), experimental results, relationship to OPD and SDAR.
+- `wiki/entities/siyan-zhao.md` — **New entity page** (status: stub). UCLA/Meta researcher, lead author of OPSD.
+- `wiki/concepts/on-policy-distillation.md` — Replaced "OPSD" section with comprehensive **OPD vs OPSD comparison table**: origin, teacher type, divergence, domain, key insight. Added cross-references to both OPSD and SDAR.
+- `wiki/concepts/sdar-self-distilled-agentic-rl.md` — Added OPSD paper to sources, added `on-policy-self-distillation` to related pages, added OPSD as foundational technique in Related Pages section.
+- `wiki/index.md` — Added OPSD concept entry + Siyan Zhao entity entry.
+- `wiki/log.md` — This entry.
+
+---
+## [2026-05-18] ingest | The Signal + Superintel newsletters (May 17)
+
+### Pages Created (3)
+- [[entities/figure-ai]] — Figure AI humanoid robotics, Helix-02 VLA model
+- [[entities/isomorphic-labs]] — AI drug discovery, $2.1B Series B
+- [[concepts/forward-deployed-engineering]] — FDE paradigm: deployment as moat
+
+### Pages Updated (5)
+- [[concepts/agent-governance]] — Added multi-owner agent economy & governance gaps (Superintel analysis)
+- [[concepts/model-context-protocol-mcp]] — Added security vulnerabilities & OX Security findings
+- [[entities/google]] — Added Gemini Intelligence, Magic Pointer, Project Suncatcher
+- [[entities/openai]] — Added Daybreak cybersecurity, Codex Mobile, Plaid integration
+- [[entities/anthropic]] — Added PwC certification, Ramp AI Index, 4 fronts paper, Colossus 1
+
+### Sources
+- raw/newsletters/2026-05-17-the-agentic-economy-has-no-black-box.md
+- raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md
+
+## [2026-05-18] blog-ingest | Gary Marcus neurosymbolic AI, Sean Goedecke ZIRP engineer, OpenAI Codex for Work
+
+- **Updated**: `wiki/entities/gary-marcus.md` — Added "The illusion of Generative AI" (May 2026): neurosymbolic AI advocacy, world models case, hyperscaling critique. Three interviews: Brian Greene (World Science Festival), Zachary Karabell (Web Summit), Will Wilson/Antithesis (Bug Bash 2026). Added tags: neurosymbolic, world-models, ai-safety.
+- **Updated**: `wiki/entities/seangoedecke-com.md` — Added "The just-say-no engineer was a ZIRP phenomenon" (May 2026). Analysis of the senior engineer archetype that thrived under zero-interest rates and is now threatened; AI is a red herring — the real cause is the end of ZIRP. Pure vs. impure engineering distinction.
+- **Updated**: `wiki/entities/openai-codex.md` — Added "Codex for Work" section (May 2026): team use cases for data science (KPI root-cause analysis, business impact readouts, analytics request agent, executive KPI memos, dashboard builder), business operations, and sales teams. Plugin-based architecture (Google Workspace, Slack). Added tags: data-science, bizops.
+- **Updated**: `wiki/index.md` — Refreshed summaries for gary-marcus, openai-codex entries. Bumped date to 2026-05-18.
+- **Skipped**: 13 non-AI-relevant articles (LWN kernel updates, Star Wars essay, NHS open-source politics, Joan Westenberg creativity essay, Troy Hunt weekly update)
+- **Raw articles**: 10 saved (3 processed into wiki)
+
+### 2026-05-18 06:15 UTC — SDAR Paper Ingestion
+
+Ingested arXiv:2605.15155 "Self-Distilled Agentic Reinforcement Learning (SDAR)" by Zhengxi Lu et al. (ZJU/Meituan/Tsinghua).
+
+### Changes
+- `wiki/raw/papers/2026-05-18_2605.15155_sdar-self-distilled-agentic-rl.md` — New raw paper. SDAR combines GRPO with gated OPSD for stable multi-turn agent training. +9.4% ALFWorld, +7.0% Search-QA, +10.2% WebShop Acc over GRPO.
+- `wiki/concepts/sdar-self-distilled-agentic-rl.md` — **New concept page** (status: complete). Full coverage: motivation (2 critical observations), method (sigmoid gating, 3 strategies, theoretical properties), results table (3 models × 3 benchmarks), relationship matrix (GRPO/OPD/MOPD/SDAR comparison), implementation details.
+- `wiki/concepts/grpo-rl-training.md` — **Enriched from stub to complete**. Added: GRPO mechanism (advantage computation, advantages/limitations), GRPO as RL backbone table (vanilla/MOPD/SDAR/Skill-GRPO), SDAR relationship section. Updated tags, sources, related pages. Status: stub → complete.
+- `wiki/concepts/on-policy-distillation.md` — Added SDAR reference in Related Pages + new "OPSD: On-Policy Self-Distillation" section explaining the difference between OPD (stronger teacher) and OPSD (same-policy teacher with privileged context).
+- `wiki/index.md` — Updated GRPO entry with full description. Added SDAR entry.
+- `wiki/log.md` — This entry.
+- `scripts/papers_index.py` — Registered arXiv:2605.15155.
+
+## [2026-05-18] Stale directory cleanup — /opt/data/home/ → canonical merge
+
+**Context**: Subagents wrote to `/opt/data/home/wiki/` instead of canonical `/opt/data/wiki/`. Manual merge operation.
+
+### New pages created (copy from stale)
+- **concepts/agent-observability-feedback.md** — Agent observability feedback loops (Arize, Aaron Kaplowitz)
+- **concepts/speculative-decoding-mtp.md** — MTP drafter heads in Gemma 4, speculative decoding comparison
+- **concepts/subagent-patterns.md** — 4 subagent coordination patterns (Sarah Chieng @MilksandMatcha)
+- **entities/brian-armstrong.md** — Coinbase CEO, AI-driven restructuring letter (May 2026)
+- **entities/richard-susskind.md** — Legal technology expert, AI in law
+
+### Pages enriched (merge)
+- **concepts/automation-series.md** — Added tags: workflow-design, deterministic, probabilistic, ai-automation
+- **entities/antoine-buteau.md** — Added tags: bizops, automation-architecture, strategy-execution, technical-literacy
+- **entities/factory.md** — Major enrichment: merged comprehensive 113-line stale version with canonical. Added Droids platform details, products, enterprise customers, competitive landscape, SWE-Bench debate, strategic outlook, founders background (Eno Reyes as CTO), McKinsey partnership.
+
+### Raw articles migrated (17 files)
+- 10× Antoine Buteau Automation Series articles
+- 5× agent/LLM articles (agent-observability, gemma-4-drafter, subagent-patterns, layoffs-ai)
+- 2× other articles (how-to-think-using-ai)
+
+### Skipped (canonical richer, stale outdated)
+- concepts/peoplereadmes.md (canon 152 > stale 119)
+- entities/eric-zhang.md (canon 204 >> stale 48)
+- entities/harrison-chase.md (canon 141 > stale 91)
+- entities/muratcan-koylan.md (canon 162 > stale 92)
+- entities/philipp-schmid.md (canon 188 >> stale 70)
+- entities/riley-walz.md (canon 107 > stale 87, better structure)
+- entities/0xsero.md → sero.md (canon 251 >> stale 35)
+
+### Index updated
+- Entities: 620 → 622, Concepts: 1362 → 1365
+- New index entries for all new + enriched pages
+
+---
+
+## [2026-05-17] x-accounts-scan | X account scan — 3 new posts → 4 wiki pages created
+
+**Pipeline**: x-accounts-scan (cron, 22:30 UTC)
+
+### Posts Processed
+- @koylanai: 2 posts about peoplereadmes (open-source persona context systems, first persona: Riley Walz)
+- @ekzhang1: 1 post about Harvard Math Department documentary (not directly AI-relevant, noted)
+
+### Pages Created
+- `entities/riley-walz.md` — Riley Walz (@rtwlz): Software engineer and internet artist, OAI Labs at OpenAI (2026–). Bop Spotter, Jmail, IMG_0001, Find My Parking Cops. 7,248 bytes.
+- `entities/muratcan-koylan.md` — Muratcan Koylan (@koylanai): Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. 6,882 bytes.
+- `concepts/peoplereadmes.md` — Open-source framework for persona context systems to study how exceptional technical builders operate. Pipeline: public evidence → source map → project analysis → tacit-knowledge extraction → technical model → prompt system → eval rubric. 5,634 bytes.
+- `entities/eric-zhang.md` — Eric Zhang (@ekzhang1): MTS at Thinking Machines Lab. Creator of sshx. Status: skeleton. 1,977 bytes.
+
+### Index Updates
+- `wiki/index.md` — Added muratcan-koylan and eric-zhang entities; peoplereadmes concept. Entity count: 618→620, Concept count: 1361→1362.
+
+### Sources Used
+- GitHub (muratcankoylan/peoplereadmes), Wikipedia (Riley Walz), Wired (Riley Walz profile), muratcankoylan.com, ekzhang.com, X/Twitter profiles
+
+---
+
+## [2026-05-17] skeleton-enrich-daily | Daily skeleton enrichment — no skeletons found, enriched 2 stub entities
+
+**Status**: No `status: skeleton` entity pages found. Enriched 2 `status: stub` entity pages as fallback.
+
+### Pages Enriched
+- `entities/steve-blank.md` — Full enrichment: biography, career timeline (USAF → E.piphany → Lean Startup → Stanford professor), books, Customer Development methodology, Lean Startup movement, Hacking for Defense, Secret History of Silicon Valley. Removed empty table; added proper sources, tags, cross-references.
+- `entities/jason-liu.md` — Full enrichment: biography, career timeline (567 Studios → OpenAI Codex → Stitch Fix → Meta), Instructor library (6M+ monthly downloads, cited by OpenAI), training programs (Maven), angel investing (a16z scout), key theses, publications (CSCW 2017, AAAI 2016). Added proper sources, aliases, cross-references.
+
+### Index Updates
+- `wiki/index.md` — Updated descriptions for both entries (line 265: [[entities/jason-liu]], line 439: [[entities/steve-blank]])
+
+### Sources Used
+- Wikipedia (Steve Blank), steveblank.com, CXOTalk, Computer History Museum
+- jxnl.co, github.com/jxnl, python.useinstructor.com
+
+---
+
+## [2026-05-17] dreaming | Knowledge consolidation — 5 entity enrichments from raw articles
+
+**Pipeline**: dreaming-wiki-ingest (failed parsing → raw article fallback)
+
+### Sources
+- raw/articles/2026-05-16_harvey_building-an-agentic-security-operations-center.md — Harvey Agentic SOC
+- raw/articles/2026-05-15_glean_cowork-mcp-eval.md — Glean MCP vs Cowork benchmark
+- raw/articles/2026-05-14_petradonka_agents-need-feedback-loops.md — Warp Buzz agent deep dive
+- raw/articles/2026-05-16_hex-technologies_repos-as-agent-context.md — Hex repos as context
+- raw/articles/2026-05-15_decagon_inside-agent-engineering-at-decagon.md — Decagon agent engineering
+
+### Pages Enriched
+- `entities/harvey.md` — Added Agentic SOC section (world model, MCP via RunReveal, 400+ detections, 95% alert reduction, Mike Parowski)
+- `entities/petra-donka.md` — Added Buzz agent architecture (principles over rules, 5-step learning, daily PR workflow, Oz orchestration, skill-as-code)
+- `entities/glean.md` — Added MCP vs Cowork benchmark (2.5x preference, 30% fewer tokens, federated search token tax)
+- `entities/hex-technologies.md` — Added repos as agent context (dbt repo, application repo, compounding context)
+- `entities/decagon.md` — Added agent engineering at Decagon (ASWE role, customer outcomes, cross-functional work)
+
+### Cross-pipeline Status
+- blog-triage: 1 take (Sean Goedecke, already processed by downstream)
+- newsletter-triage: 40 decisions, all skip (0 takes)
+- active-crawl: Already ran today (GPT-Realtime Voice, Claude Orbit, Gemini Flash-Lite)
+- dreaming-group: JSON parse failure; no themes available (19 days stale)
+
+---
+
+## [2026-05-17] health-fix | Index orphan registration (20 pages added to index.md)
+
+### Changes
+- Added 7 orphan entity pages to index.md: cerebras-systems, datasette-llm-limits, dynomight-net, ed-zitron-s-where-s-your-ed-at, fred-schott, john-berryman, kim-isenberg
+- Added 13 orphan concept pages to index.md: ai-and-authenticity, ai-and-software-engineering, ai-api-abuse, ai-assisted-development, ai-coding-agent-criticism, ai-image-generation, ai-observability, ai-programming-as-theory-building, ai-vulnerability-discovery, blogging-as-infrastructure, boring-technology, coding-agents, cognition-devin-philosophy
+- Index corruption check: CLEAN (no pipe/line-number/triple-bracket/space-prefix corruption)
+- Ghost entries: NONE
+- validate_index.py: PASS
+
+---
+
+## [2026-05-17] active-crawl | OpenAI GPT-Realtime Voice Models, Claude Orbit, Gemini Flash-Lite/3.2 Flash, CAISI AI Testing
+
+### Created (Concepts)
+- **concept: gpt-realtime-voice-models.md** — OpenAI's second-gen Realtime API voice models (May 7, 2026): GPT-Realtime-2 (GPT-5-class reasoning), GPT-Realtime-Translate (70→13 languages), GPT-Realtime-Whisper (streaming STT). Three voice AI patterns.
+- **concept: gemini-3-1-flash-lite.md** — Google's fastest/cost-efficient Gemini 3 series model, GA May 8, 2026. Enterprise adoption: JetBrains, Gladly (~60% lower cost, 99.6% success rate), Astrocade, krea.ai, Ramp.
+- **concept: gemini-3-2-flash.md** — Google's next-gen Flash model, leaked May 5, 2026. $0.25/$2.00 per 1M tokens. "Liquid Glass" UI. Expected at Google I/O 2026 (May 19-20).
+- **concept: ai-pre-release-testing.md** — US government framework for pre-deployment AI model evaluation. CAISI agreements with Microsoft, Google, xAI (May 5, 2026). Triggered by Claude Mythos cybersecurity concerns.
+
+### Created (Entities)
+- **entity: claude-orbit.md** — Anthropic's proactive assistant, leaked in Claude Cowork (May 5, 2026). Auto-generates briefings from Gmail, Slack, GitHub, Calendar, Drive, Figma. Roots in Claude Code leak's KAIROS/DREAM/ULTRAPLAN features.
+- **entity: caisi.md** — Center for AI Standards and Innovation (NIST/Commerce). Signed pre-release testing agreements with Microsoft, Google, xAI. Director: Chris Fall. 40+ model evaluations. Evaluated DeepSeek V4 Pro.
+
+### Raw Articles Saved
+- raw/articles/2026-05-07_openai_gpt-realtime-voice-models.md (OpenAI blog)
+- raw/articles/2026-05-05_anthropic_claude-orbit-leak.md (TestingCatalog via X)
+- raw/articles/2026-05-08_google_gemini-3-1-flash-lite-ga.md (Google Cloud Blog)
+- raw/articles/2026-05-05_caisi-ai-pre-release-testing.md (NIST / news aggregation)
+- raw/articles/2026-05-06_gemini-3-2-flash-leak.md (BuildFastWithAI)
+
+### Updated
+- **index.md** — Added 6 entries (Entities 607→609, Concepts 1343→1347, Total 1984→1990, Indexed 1037→1043)
+
+### Cross-References
+- gpt-realtime-voice-models ↔ entities/openai, concepts/voice-ai, concepts/gpt-realtime
+- gemini-3-1-flash-lite ↔ entities/google, concepts/gemini-3-flash, concepts/gemini-3-1-pro
+- gemini-3-2-flash ↔ entities/google, concepts/gemini-3-1-flash-lite, concepts/gemini-3-1-pro
+- ai-pre-release-testing ↔ entities/caisi, entities/anthropic, concepts/claude-mythos
+- claude-orbit ↔ entities/anthropic, concepts/claude-code, concepts/autonomous-agents
+- caisi ↔ concepts/ai-pre-release-testing, concepts/claude-mythos, entities/nist
+
+### Skipped
+- DeepSeek V4 (Pro/Flash) — already covered by concepts/deepseek-v4.md
+
+---
+
+## [2026-05-16] no-op | Newsletter wiki ingest — all 5 items already captured in entity pages
+
+Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Codex mobile, Cerebras IPO, Apple dispute, TanStack attack, and Gates Foundation partnership from RSS/blog sources before newsletter pipeline. All 19 verification checks passed.
+
+### Already Captured
+- **entities/codex.md** — Mobile Launch section (Codex in ChatGPT mobile app, secure relay, 4M+ WAU)
+- **entities/openai.md** — Apple Partnership Dispute + TanStack Supply Chain Attack sections
+- **entities/cerebras-systems.md** — IPO results ($280/share, $60B cap) + OpenAI 5.4/5.5
+- **entities/anthropic.md** — Gates Foundation $200M partnership
+
+---
+## 2026-05-17 08:15 — Ingest "Search Evaluation (NDCG and pals)" slides by Doug Turnbull
+
+### Created
+- **entity: softwaredoug.md** — Doug Turnbull: search relevance expert, Principal Engineer at Daydream (e-commerce search). Previously Reddit, Spotify, Shopify, OpenSource Connections. Co-author of *Relevant Search* (2016) and *AI-Powered Search* (2025). Creator of Elasticsearch LTR plugin, searcharray, Quepid. Runs Maven courses: Cheat at Search Essentials, Relevant Search, Autoresearch. Philosophy: "grug-brained evals", "test in prod or live a lie".
+- **concept: ndcg.md** — NDCG (Normalized Discounted Cumulative Gain): de facto search relevance metric. Full pipeline: Judgment List → DCG → iDCG → NDCG. Three judgment sources compared: human raters, clickstream (COEC model), LLM-as-judge (Umbrella prompt pattern). Six common failure modes: sparse ratings, bad iDCG, diversity blindness, UI quality blindness, data work overhead, intent interpretation. Beyond NDCG: side-by-sides, A/B tests, the "ship behind feature flag" philosophy.
+- **raw article: 2026-05-17_softwaredoug_search-evaluation-ndcg.md** — Google Slides text export from "Cheat at Search Essentials" (73 slides). Source: https://docs.google.com/presentation/d/1WJknXxaim_Z8aiVuQx6wr7W6MAWeaUJK0-NrgcEVQfQ
+
+## 2026-05-16 08:25 — Blog wiki ingest (no-op: all 17 articles already processed at 07:00)
+
+- All 17 blog candidates already captured by the 07:00 and 07:50 UTC blog-wiki-ingest runs
+- 0 takes, 0 references, 17 skips
+- Triage JSON read directly from `/opt/data/.hermes/cron/data/blog_ingest/triage_latest.json` (output file parse fallback)
+- Verified all claimed pages exist: entities/datasette-llm-limits.md, concepts/ai-bubble.md, entities/eric-jang.md, events/openai-may-2026-reorg.md, concepts/proof-of-useful-work.md, entities/omri-weinstein.md, entities/gary-marcus.md (updated), entities/greg-brockman.md (updated)
+
+
+### Updated
+- **index.md** — Added entity (softwaredoug) and concept (ndcg) entries; updated counts (Entities 606→607, Concepts 1342→1343, Total 1982→1984, Indexed 1035→1037)
+- **concept: ndcg.md** — Cross-linked to [[entities/softwaredoug]]
+
+## 2026-05-17 07:15 — Deep integration: Will Brown's OPD geometric analysis
+
+### Updated
+- **concept: on-policy-distillation.md** — Major enrichment: added Will Brown's deep analysis (~2,400 words new content). New sections: Same-Family vs Different-Family Teachers, Gradient Geometry (Sparse/Dense × Biased/Unbiased taxonomy), Self-Distillation and the Concentration Problem, Unified Meta-Algorithm (α/λ/π_T framework), Optimal Teacher Problem (Lagrangian formulation, Pareto curve). Added Will Brown's X article as source.
+- **entity: will-brown.md** — Added [[concepts/on-policy-distillation]] to Related section
+
+### Existing Links on OPD Concept
+- `entities/nrehiew.md` → `[[concepts/on-policy-distillation]]` ✅
+- `concepts/post-training-distributional-view.md` → `[[concepts/on-policy-distillation]]` (both frontmatter `related` + inline wikilink) ✅
+- `concepts/multi-teacher-on-policy-distillation.md` → cross-reference note to `[[concepts/on-policy-distillation]]` ✅
+- `concepts/model-distillation.md` → sources lists will-brown's article ✅
+- `entities/thinking-machines-lab.md` → Publications section links to `[[concepts/on-policy-distillation]]` ✅
+
+## 2026-05-17 07:05 — Ingest On-Policy Distillation (Thinking Machines primary literature)
+
+### Created
+- **concept: on-policy-distillation.md** — On-Policy Distillation (OPD): post-training technique combining on-policy sampling with dense token-level teacher supervision via reverse KL divergence. Primary literature from Kevin Lu / Thinking Machines Lab (Oct 2025, DOI: 10.64434/tml.20251026). 9-30× compute reduction vs SFT, 50-100× vs RL. Math reasoning (AIME'24), personalization, continual learning applications. Differentiation from MOPD.
+- **raw article: 2025-10-27_thinkingmachines_on-policy-distillation.md** — Full 40,668-char article from thinkingmachines.ai
+
+### Updated
+- **entity: thinking-machines-lab.md** — Added Publications & Research section with OPD, LoRA Without Regret, and Defeating Nondeterminism entries. Updated Tinker product description.
+- **concept: multi-teacher-on-policy-distillation.md** — Added cross-reference note linking to foundational OPD concept page.
+- **wiki/index.md** — Added concepts/on-policy-distillation entry; Concepts count 1341→1342
+
+### Dangling Links Resolved
+- `[[concepts/on-policy-distillation]]` was referenced in `entities/nrehiew.md` and `concepts/post-training-distributional-view.md` — now fulfilled.
+
+## 2026-05-17 01:30 — Ingest Anthropic 2028 AI Leadership scenarios
+
+### Created
+- **concept: us-china-ai-competition.md** — Anthropic's framework for US-China AI competition: four fronts (Intelligence, Domestic adoption, Global distribution, Resilience), compute gap analysis, export controls, distillation attacks as workarounds, two 2028 scenarios, and policy recommendations. Source: Anthropic Research (May 14, 2026)
+- **raw article: 2026-05-14_anthropic_2028-ai-leadership-scenarios.md** — Full policy paper on US-China AI competition
+
+### Updated
+- **event: distillation-attacks-2026.md** — Added cross-link to us-china-ai-competition, updated tags (china, geopolitics, distillation), added sources, fixed broken wikilinks
+- **SCHEMA.md** — Added `geopolitics` tag to Meta category
+- **index.md** — Registered us-china-ai-competition in Concepts section
+
+## 2026-05-16 17:50 — Health fix: index registration + header correction
+
+### Index Registration
+- Added 20 concept pages to index.md: agent-memory through ai-agents (alphabetical)
+- Added 2 event pages to index.md: anthropic-code-w-claude-2026, distillation-attacks-2026
+
+### Header Correction
+- Total pages: 1901 → 1982 (actual filesystem count)
+- Indexed entries: 963 → 1035
+- Entities: 595 → 606
+- Concepts: 1327 → 1341
+- Index entries per section: entities=600, concepts=413, comparisons=18, events=3, queries=1
+
+### Auto-fix scope
+- 1 file modified: `wiki/index.md`
+
+### Known issues (not auto-fixed)
+- 947 files still not in index (gap too large for auto-apply limit of 20)
+- 938 orphan pages (0 inbound wikilinks) — requires human review
+- 150+ stale pages (32-37 days)
+- 4 entity duplicates confirmed: deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, lilian-weng/lilianweng, samuel-colvin/samuelcolvin
+
+---
+
+## 2026-05-16 17:35 — Watchdog auto-fix: index dedup + header correction
+
+### Index Dedup
+- Removed duplicate `[[entities/eric-jang]]` entry (line 187)
+- Removed duplicate `[[entities/eric-hartford]]` entry (line 186)
+
+### Index Header Update
+- Indexed entries: 965 → 963
+- Not in index: 876 → 878
+
+### Auto-fix scope
+- 1 file modified: `wiki/index.md`
+- 0 new pages created, 0 pages deleted
+
+### Issues not auto-fixed
+- 4 entity duplicates confirmed (need human review for merge): deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, lilian-weng/lilianweng, samuel-colvin/samuelcolvin
+- 878 files not in index (index-to-filesystem gap) — requires batch reconciliation strategy
+- 938 orphan pages (0 inbound wikilinks) — requires human review
+- ~150 stale pages (32-37 days since last update)
+- 2 unindexed event files (distillation-attacks-2026, anthropic-code-w-claude-2026)
+
+---
+
+
+> Chronological record of all wiki actions. Append-only.
+
+## 2026-05-16 12:00 — Trending topics report (8 new topics found)
+
+- **Grok Build CLI** — xAI初のCLIコーディングエージェント（5/14 beta）、Plan Mode・並列サブエージェント・ACP対応、SuperGrok Heavy ($300/月)向け
+- **Google I/O 2026** — 5/19開催目前、Gemini 4.0 (2M+ context)、Android 17 (端末上Gemini Nano API)、エージェンティックコーディングツール発表予定
+- **Notion AI Agent Platform** — 5/13発表、ワークスペース→AIエージェントハブ、Custom Agents + MCP + 外部連携、100万+エージェント構築済み
+- **Anthropic Claude Agent Meter** — 全サブスクリプションでエージェント使用量測定、Managed Agents: $0.08/セッション時間
+- **IBM Bob GA** — AI開発パートナー（フルSDLC）、80,000+社内利用、45%生産性向上、マルチモデルオーケストレーション
+- **Meta Avocado** — 5月リリースウィンドウ閉塞、複数バリアントテスト中（9B/Thinking/Mango）
+- **AWS Bedrock Advanced Prompt Optimization** — 5/15リリース、自動プロンプト最適化ツール
+- **Spec-Driven Development** — Kiro/SpecKit/Tessl/Zenflow、vibe codingからの揺り戻し
+
+### Raw Articles Saved
+- `inbox/rss-scans/trending-topics-2026-05-16.md` — Full trending topics report
+
+### Sources
+- Web search: Grok Build CLI, Google I/O 2026 preview, Notion platform, Claude agent meter, IBM Bob GA, Meta Avocado, AWS Prompt Optimization, Spec-Driven Dev tools
+
+---
+## 2026-05-16 07:50 — Blog wiki ingest (no-op: all 17 articles already processed at 07:00)
+
+- All 17 blog candidates already captured by the 07:00 UTC blog-wiki-ingest run
+- 0 takes, 0 references, 17 skips
+- Verified: entities/datasette-llm-limits.md, concepts/ai-bubble.md, entities/eric-jang.md, events/openai-may-2026-reorg.md, concepts/proof-of-useful-work.md, entities/omri-weinstein.md, entities/gary-marcus.md (updated), entities/greg-brockman.md (updated)
+
+
+---
+## 2026-05-16 11:00 — Active crawl (5 topics: SubQ, Baidu Ernie 5.1, IBM Think, DeployCo, ZAYA1-8B)
+
+### Raw Articles Saved
+- `raw/articles/whatllm.org--new-ai-models-may-2026-subq-subquadratic--2026-05-16.md`
+- `raw/articles/the-decoder.com--baidu-ernie-5-1-94-percent-cost-reduction--2026-05-16.md`
+- `raw/articles/ibm.com--think-2026-ai-operating-model-agent-orchestration--2026-05-16.md`
+- `raw/articles/openai.com--launches-deployment-company-deployco--2026-05-16.md`
+- `raw/articles/zyphra.com--zaya1-8b-moe-amd-reasoning--2026-05-16.md`
+
+### Pages Created (8)
+- **entities/subquadratic.md** — Subquadratic (SubQ): first commercial subquadratic LLM, 12M context, $29M seed
+- **entities/baidu.md** — Baidu (Ernie 5.1): 94% pre-training cost reduction via Once-For-All elastic training
+- **entities/ibm.md** — IBM (Think 2026): watsonx Orchestrate agentic control plane, IBM Bob, AI Operating Model
+- **entities/openai-deployment-company.md** — DeployCo: $4B OpenAI enterprise deployment JV, 19 investors, Tomoro acquisition
+- **concepts/subquadratic-attention.md** — Subquadratic attention: O(n²) alternatives, Mamba/RWKV/Hyena/SubQ comparison
+- **concepts/elastic-training.md** — Once-For-All elastic training: single-run multi-model optimization
+- **concepts/agent-orchestration.md** — Agent orchestration: governing thousands of agents at enterprise scale
+- **concepts/zaya1-8b.md** — ZAYA1-8B: 760M active MoE, AMD-trained, competitive with DeepSeek-R1/Gemini-2.5-Pro
+
+### Pages Updated (1)
+- **entities/zyphra.md** — Updated with ZAYA1-8B source, bumped date
+
+### Index Changes
+- Updated header counts (1893→1901 total, 591→595 entities, 1323→1327 concepts)
+
+### Sources
+- WhatLLM.org: New AI Models May 2026 (SubQ, ZAYA1-8B, GPT-5.5 Instant, Grok 4.3, Gemini 3.1 Flash Lite)
+- The Decoder: Baidu Ernie 5.1 94% cost reduction
+- IBM Newsroom: Think 2026 AI Operating Model
+- OpenAI Blog: DeployCo launch
+- Zyphra PR Newswire + arXiv 2605.05365: ZAYA1-8B technical report
+
+---
+
+
+## 2026-05-16 07:40 — Newsletter wiki ingest (Codex mobile, Apple dispute, Cerebras IPO)
+
+### Pages Updated
+- **entities/codex.md** — Mobile Launch (May 2026) section: ChatGPT mobile app preview, 4M WAU, secure relay layer, enterprise support
+- **entities/openai.md** — Apple Partnership Dispute section (legal action over Siri deal); TanStack section enhanced with TechCrunch details (84 packages, 6-min window, self-propagation)
+- **entities/cerebras-systems.md** — IPO outcome ($280/share, $60B market cap, 2x+ expected); OpenAI 5.4/5.5 on Cerebras; TSMC wafer constraints through 2028
+- **entities/anthropic.md** — Gates Foundation $200M/4yr partnership reference
+
+- **concepts/openai-tanstack-supply-chain-2026.md** — Enhanced with TechCrunch attack details (84 malicious versions, 6-min window, 20-min detection, self-propagation)
+
+### Raw Articles Saved
+- `raw/articles/openai.com--index-work-with-codex-from-anywhere--2026-05-16.md`
+- `raw/articles/9to5mac.com--openai-preparing-legal-action-against-apple--2026-05-16.md`
+- `raw/articles/techcrunch.com--openai-says-hackers-stole-some-data-tanstack--2026-05-16.md`
+
+### Index Changes
+- Updated last-updated date in index header (2026-05-15 → 2026-05-16)
+
+### Sources
+- Newsletter: `raw/newsletters/2026-05-15-codex-goes-everywhere.md` (Superintel)
+- Newsletter: `raw/newsletters/2026-05-16-ainews-cerebras-60b-ipo-slowly-then-all-at-once.md` (AINews/Latent Space)
+
+
+---
+
+## 2026-05-16 07:00 — Blog ingest (34 new articles, 7 new pages, 3 enriched)
+
+### AI/LLM Articles Processed
+
+**1. OpenAI May 2026 Product Reorganization (Wired)**
+- **Raw article saved**: `raw/articles/wired.com--story-openai-reorg-greg-brockman-product--16e3b9d6.md`
+- **New event page**: `events/openai-may-2026-reorg.md` — Complete page covering ChatGPT+Codex merger, "super app" strategy, leadership changes
+- **Enriched**: `entities/greg-brockman.md` — Added May 2026 Product Reorganization section
+- **Enriched**: `entities/gary-marcus.md` — Added May 2026 US AI Policy Framework section (Fortune essay)
+
+**2. Eric Jang on AlphaGo (Dwarkesh Podcast)**
+- **Raw article saved**: `raw/articles/dwarkesh.com--p-eric-jang--44c9439c.md`
+- **New entity page**: `entities/eric-jang.md` — Former VP of AI at 1X Technologies, Google Brain researcher. Covers MCTS vs RL, automated AI research, robotics
+
+**3. Together AI + Pearl Research Labs (PoUW)**
+- **Raw article saved**: `raw/articles/together.ai--blog-together-ai-partners-with-pearl-research-labs--8b21a91f.md`
+- **New concept page**: `concepts/proof-of-useful-work.md` — Blockchain consensus using AI inference instead of hash puzzles
+- **New entity page**: `entities/omri-weinstein.md` — Pearl Research Labs co-founder & CEO
+
+**4. AI Bubble Analysis (Where's Your Ed At)**
+- **Raw article saved**: `raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-1--6e9bc8ba.md`
+- **New concept page**: `concepts/ai-bubble.md` — The AI Bubble debate (Zitron vs Patel), circular revenue dependencies, May 2026 context
+
+**5. datasette-llm-limits (Simon Willison)**
+- **Raw article saved**: `raw/articles/simonwillison.net--2026-may-15-datasette-llm-limits--c4c541c4.md`
+- **New entity page**: `entities/datasette-llm-limits.md` — Datasette plugin for LLM spending limits and cost tracking
+
+### Entity Pages Created
+- `entities/fidji-simo.md` — OpenAI CEO AGI Deployment, ex-AppLovin CEO
+- `entities/thibault-sottiaux.md` — OpenAI Head of Core Product + Platform
+- `entities/eric-jang.md` — 1X Technologies VP AI, Google Brain
+- `entities/omri-weinstein.md` — Pearl Research Labs CEO
+- `entities/datasette-llm-limits.md` — Simon Willison's Datasette plugin
+
+### Concept Pages Created
+- `concepts/proof-of-useful-work.md` — PoUW blockchain consensus
+- `concepts/ai-bubble.md` — AI Bubble debate (2025–2026)
+
+### Event Pages Created
+- `events/openai-may-2026-reorg.md` — OpenAI product consolidation
+
+### Index Changes
+- Added 7 new entity entries (eric-jang, fidji-simo, thibault-sottiaux, omri-weinstein, datasette-llm-limits)
+- Added 2 new concept entries (proof-of-useful-work, ai-bubble)
+- Added 1 new event entry (openai-may-2026-reorg)
+- Updated concept count: 1323→1325, event count: 2→3, entity count: 591→596, total pages: 1893→1900
+
+### Other Articles Saved (not wiki-processed)
+- `raw/articles/nesbitt.io--2026-05-15-language-registries-are-unstable-by-default-html--e4c19a2c.md` — Language registries instability
+- `raw/articles/maurycyz.com--misc-search--6b5086f1.md` — Search engine quality critique
+- `raw/articles/devblogs.microsoft.com--oldnewthing-20260515-00--cd3fbf93.md` — Windows CreateFileMapping debugging
+- `raw/articles/daringfireball.net--thetalkshow-2026-05-15-ep-447--fbb37638.md` — The Talk Show podcast
+- `raw/articles/dropoverapp.com----3f92450c.md` — Mac shelf utility app
+- `raw/articles/aluminium-os.com----daa0c921.md` — Google PC OS
+- `raw/articles/dfarq.homeip.net--processor-technology-corporation-and-the-sol-20--b9ebf890.md` — Retro computing
+- `raw/articles/pluralistic.net--2026-05-15-not-ok-boomer--f0a121dc.md` — Cory Doctorow gerontocracy critique
+- `raw/articles/johndcook.com--blog-2026-05-15-xorshift128-state--6f20c18e.md` — xorshift128 RNG
+- `raw/articles/simonwillison.net--2026-may-15-qr-code-generator--16a8fee0.md` — QR code tool
+- `raw/articles/simonwillison.net--2026-may-15-sighting-361818285--22492976.md` — Bird sighting
+
+### Unsaved Articles
+- `https://simonwillison.net/2026/May/15/inaturalist-clumper/#atom-everything` — iNaturalist clumper tool
+- `https://openai.com/index/personal-finance-chatgpt` — ChatGPT personal finance
+- `https://www.youtube.com/watch?v=eBKWKu2Rqxc` — YouTube video (CBS property)
+
+## 2026-05-15 23:30 — X bookmarks ingest (3 bookmarks, 1 new page, 3 enriched)
+
+### Bookmark 1: AI Edge "/goal - Ultimate Guide" (X Article)
+- **Raw article saved**: `raw/articles/2026-05-14_apidog_goal-command-autonomous-agents.md` — Full Apidog mirror article covering /goal across Codex, Claude Code, and Hermes
+- **Enriched**: `concepts/codex-goal.md` — Added Hermes Agent /goal reference, Claude Code cross-link, Apidog and explainx.ai source references
+- **Status**: Existing goal pages (claude-code-goal.md 170 lines, codex-goal.md 151 lines) already thorough; cross-references enriched
+
+### Bookmark 2: Matt Van Horn "Every Claude Code Hack I Know" (X Article, metadata-only)
+- **Raw article saved**: `raw/articles/2026-03-22_mvanhorn_claude-code-hacks.md` — Metadata from X status page (auth-walled). Key themes: plan-first workflow, voice-driven dev, no-IDE philosophy, parallel sessions
+- **Enriched**: `entities/matt-van-horn.md` — Added Claude Code Workflow Philosophy section, new source reference, claude-code tag, claude-code-goal related link
+
+### Bookmark 3: Karri Saarinen "Code Intelligence for Linear Agent" (X Article → changelog)
+- **Raw article saved**: `raw/articles/2026-05-14_linear_code-intelligence-linear-agent.md` — Full Linear changelog extraction
+- **New concept page**: `concepts/linear-agent-code-intelligence.md` — Complete page with adoption metrics (1,055→5,200+ queries/month), architecture, setup, and strategic significance
+- **Enriched**: `entities/linear.md` — Updated with Code Intelligence feature, source, tags
+- **SCHEMA.md**: Added `code-intelligence` tag to AI Agents taxonomy
+
+### Index Changes
+- Added `concepts/linear-agent-code-intelligence` to concepts section (alphabetical, after lexical-search)
+- Updated concept count: 1322→1323, total pages: 1892→1893
+
+### Source URLs
+- https://apidog.com/blog/goal-command-codex-claude-code-autonomous-agents/
+- https://linear.app/changelog/2026-05-14-code-intelligence
+- https://x.com/i/article/2035834194065281024 (auth-walled)
+
+## [2026-05-15] fix | wiki-health auto-repair
+
+### Phase 1 — Index corruption check
+- Index corruption: 0 issues ✅ (pipe_corruption=0, triple_bracket=0, line_number=0)
+- SCHEMA.md: healthy
+- validate_index.py: pass ✅
+
+### Phase 2 — Orphan page registration (20 of 936)
+- **Added 20 orphan pages to index.md** (19 concepts + 1 comparison)
+- Concepts added: aaron-swartz, a-philosophy-of-software-design-vs-clean-code, activitypub, adversarial-interoperability, agent-documentation, agent-first-codebase-design, agent-first-design, agentic-alternative-to-graphrag, agentic-browsing, agentic-coding, agentic-commerce, agentic-conflict-resolution, agentic-design-patterns, agentic-engineering-cognition-devin-multi-agents-orchestration, agentic-engineering-cognition-devin-workflow, agentic-engineering-patterns, agentic-manual-testing, agent-security-patterns, agent-skills-skillmd
+- Comparison added: agent-sandboxing
+- Updated section counts: Concepts (1303→1322), Comparisons (16→17)
+- Updated Total pages: 1872→1892, Not in index: 896→876
+
+### Phase 3 — Script path issue detected
+- cron job expects wiki_health_json.py at `/opt/data/.hermes/scripts/wiki_health_json.py`
+- Actual location: `/opt/data/ai-topics/scripts/wiki_health_json.py`
+- Script ran successfully from canonical path despite cron config error
+
+### Health overview
+- Entities: 598 / Concepts: 1,350 / Comparisons: 18 / Total L2: 1,966
+- Raw articles: 5,968 / Stale pages: 242 (oldest: 36 days)
+- Remaining orphan pages: 916 (not auto-processed — batch limit)
+
+---
+
+## [2026-05-15] watchdog | No auto-fixes applied — all issues exceed 10-file threshold
+
+### Health Summary
+| Metric | Value |
+|---|---|
+| Total L2 pages | 1,952 |
+| Index entries | 1,013 |
+| Not in index | 939 (47.5%) |
+| Missing `sources` frontmatter | 776 (39.7%) |
+| Ghost entries (true) | 0 — all 25 detected resolve to subdirectory files |
+| Index corruption | 0 — clean (`validate_index.py` ✅) |
+| Stale pages (>30d) | 182 |
+| Pipeline alerts | x_accounts stale (26h) |
+
+### Issues Requiring Human Attention
+
+1. **939 pages not in index** — ~875 concept pages + entity subdir pages + 2 events missing. Needs batch reconciliation (50-100 per batch).
+2. **776 pages missing `sources` field** — Systemic gap from pipeline-created pages.
+3. **182 stale pages (>30d)** — Low priority, but growing.
+4. **x_accounts pipeline stale (26h)** — x-accounts-scan cron job may need restart.
+
+### Previously Reported Issues (Verified False Positives)
+- **21 ghost entries** → All resolve to existing subdirectory files. Zero true ghosts.
+- **Index corruption = 0** — validated by `validate_index.py` ✅. Pipeline working.
+
+---
+
+## [2026-05-15] wiki | antirez.com/news/165 — DS4 follow-up article ingested
+
+### Changes
+- **[[entities/antirez-com]]**: Timeline entry for DS4 release (May 2026). Added "モデル非依存設計" subsection: model-agnostic philosophy, DGX Spark mention, "just load what you need" domain-variant approach. Expanded future plans with distributed inference emphasis.
+- **[[concepts/ds4-dwarfstar-4]]**: Added Model-Agnostic Philosophy section clarifying DS4 is not tied to V4 Flash forever. Expanded future plans with "just load what you need" variant philosophy. Added A-vs-B spectrum metaphor (DS4 is "a lot more B than A"). Emphasized distributed inference as top priority.
+- Source: [[raw/articles/antirez.com--news-165--a8668e18]]
+
+---
+
+## [2026-05-15] fix | Wiki graph analysis cross-link
+
+### Changes
+- Added [[entities/randy-olson]] to [[entities/ian-nuttall]] Related Concepts
+- Added [[entities/ian-nuttall]] to [[entities/randy-olson]] Related Entities and Concepts
+- Both share: agent-skills, MCP ecosystems
+- Fixed all graph gap recommendations (0 remaining)
+
+---
+
 
 
 
@@ -257,462 +985,80 @@
 - Akshay Pachaar "Hermes Agent Masterclass" (X Article, no body retrieved) — saved metadata only
 - LakshyAAAgrawal GEPA quote tweet — informational, no new concept
 - 0xSero "Open Source must win" (March 2026) — old, minimal content
+## [2026-05-17] ingest | OpenClaw Memory System Deep Dive → wiki enrichment + comparison
+
+### Changes
+- `wiki/raw/articles/2026-01-25_snowan-gitbook_openclaw-memory-system-deep-dive.md` — Raw article saved (full deep dive on OpenClaw memory system, commit f99e3dd)
+- `wiki/entities/openclaw.md` — **Memory System section fully rewritten**: 3-tier memory architecture (Ephemeral/Durable/Session), chunking algorithm (sliding window + overlap), hybrid BM25+vector search (SQLite FTS5 + sqlite-vec), embedding provider auto-selection (Local→OpenAI→Gemini), cache-first SHA-256 dedup, Pre-Compaction Flush mechanism, performance benchmarks. Added memory-systems tag, snowan source, cross-link to comparison page.
+- `wiki/concepts/agent-memory-systems-comparison.md` — **NEW**: Comprehensive 3-harness memory system comparison (OpenClaw vs Claude Code vs Codex CLI). 6 comparison tables covering memory hierarchy, search/recall methods, embedding strategy, memory generation, context retention, design philosophy. Selection guide and common limitations documented.
+- `wiki/concepts/context-compaction.md` — **Enriched from stub**: Full concept page with basic mechanism, Pre-Compaction Flush detailed description (trigger conditions, behavior, design intent), harness-by-harness comparison table.
+- `wiki/index.md` — Added agent-memory-systems-comparison and context-compaction entries
+- Cross-references: OpenClaw entity → agent-memory-systems-comparison, context-compaction → agent-memory-systems-comparison
+
+### Key findings from article
+- **File-first convergence**: All three harnesses (OpenClaw/Claude Code/Codex) use Markdown files as memory source of truth
+- **OpenClaw uniquely uses vector search** (sqlite-vec) — Claude Code and Codex only use file reading/grep
+- **Pre-Compaction Flush** is OpenClaw's most innovative feature: silent agentic turn before context window truncation
+- **Hybrid search** (70% vector + 30% BM25) provides balanced precision/recall not found in other harnesses
+- **Embedding provider auto-selection** with graceful degradation (Local→OpenAI→Gemini) allows offline operation
+
+### Cross-references
+- [[entities/openclaw]] → [[concepts/agent-memory-systems-comparison]]
+- [[concepts/context-compaction]] → [[concepts/agent-memory-systems-comparison]]
+- [[concepts/ai-memory-systems]] → linked concepts
+
+### Follow-up: Hermes Agent added to comparison (same session)
+- `wiki/concepts/agent-memory-systems-comparison.md` — **Expanded from 3 to 4 harnesses**: Added Hermes Agent columns to all comparison tables (memory hierarchy, search/recall, embedding, generation, compaction, design philosophy). Added Hermes selection guide, Bustamante's "Bounded Snapshot" classification, SOUL.md identity layer, 3-Tier memory details, Curator/GEPA integration, prefix cache optimization analysis.
+- `wiki/index.md` — Updated comparison entry description to reflect 4 harnesses
+
+### Move to comparisons/ (same session)
+- `wiki/concepts/agent-memory-systems-comparison.md` → `wiki/comparisons/agent-memory-systems-comparison.md` — Moved from concepts/ to comparisons/ (type: concept → comparison). Updated all wikilinks in openclaw.md, context-compaction.md, index.md.
 ## [2026-05-14] health | Wiki health auto-fix — 20 orphan concepts indexed
 
 ### Changes
 - `wiki/index.md` — Added 20 d-range concept pages to Concepts section:
-  dark-factory-software-factory, data-engineering, data-engineering-for-ml,
-  data-validation-python-type-hints-rust-web-frameworks-fastapi, dataset-engineering,
-  datasette-llm, datasette-referrer-policy, db9-fs-sql-pattern,
-  decoder-only-gpt-architecture, deep-agents, deep-agents-runtime,
-  defense-in-depth, delta-updates-redis, designing-ml-systems, dflash,
-  dflash-ggml, dgx-spark-local-llm-server, differential-symbolic-modules,
-  direct-prompting-philosophy, docker-sandbox-microvm-api
-- Updated section counts: Concepts (1278→1298), Indexed entries (926→946)
+ dark-factory-software-factory, data-engineering, data-engineering-for-ml,
+ data-validation-python-type-hints-rust-web-frameworks-fastapi, dataset-engineering,
 
-### Health Status
-- ✅ Index corruption: Clean (0 pipe, 0 line-number, 0 triple bracket issues)
-- ✅ Ghost entries: 0 (all 3 raw article refs resolve correctly)
-- ✅ validate_index.py: Clean (982 lines)
-- ✅ Orphan pages: 20 added to index (~874 remaining)
-- ✅ Stale pages: 174 (31-35 days old) — no auto-fix
-
----
-
-## [2026-05-14] ingest + update | Kilo Blog: Hermes vs OpenClaw Comparison (Orchestrator + Execution Specialist Architecture)
-
-### Pages Updated
-- `comparisons/hermes-vs-openclaw-architecture.md` — Added comprehensive "Dual-Agent Architecture: Orchestrator + Execution Specialist" section with evidence from 8+ sources: Kilo blog/Reddit analysis, OpenClaw architecture docs, ACP protocol docs, community consensus (~20% running both)
-- `entities/openclaw.md` — Added "Orchestration Capabilities" section: gateway-first hub-and-spoke architecture, multi-agent routing, ACP sub-agent spawning, cron/webhook scheduling
-- `entities/hermes-agent.md` — Added "Execution Specialist Role (Dual-Agent Architecture)" section: speed advantage, learning loop, sandbox backends, ACP communication with OpenClaw
-- `wiki/index.md` — Updated descriptions for all three pages
-
-### Raw Source
-- `raw/articles/2026-05-06_kilo_hermes-vs-openclaw-when-to-reach.md` — Brendan O'Leary, Kilo Blog (May 6, 2026)
-
-### Key Finding
-Evidence strongly supports OpenClaw as orchestrator and Hermes as execution specialist:
-- OpenClaw's gateway-first architecture = central control plane, multi-agent routing, ACP sub-agent spawning (`sessions_spawn({runtime:"acp"})`), cron/webhook scheduling, agent-to-agent communication
-- Hermes's learning loop + sandbox backends + checkpoint/rollback + speed advantage = ideal execution specialist
-- ACP protocol = standardized bridge (akin to LSP for agents)
-- Community validation: ~20% of users already run both (Kilo Reddit analysis, 1,300+ comments)
-
-## [2026-05-14] create | Concept: Prime-RL Post-Training for Subagents (Ramp Labs Fast Ask)
-
-### Pages Created
-- `concepts/prime-rl-post-training.md` — Ramp Labs Fast Ask case study: RL post-training (GRPO) for specialized retrieval subagents using Qwen3.5-35B-A3B + Prime Intellect platform. Beats Claude Opus 4.6 by 4pp at Haiku 4.5 latency. Covers adversarial workbook design, reward function design, async off-policy RL.
-
-### Pages Updated
-- `wiki/index.md` — Added prime-rl-post-training to Concepts section.
-
-### Raw Source
-- `raw/articles/2026-05-07_RampLabs_building-fast-accurate-agents-with-prime-rl-post-t.md`
-
-## [2026-05-14] create | Concept: The 2026 AI Engineer Roadmap
-
-### Pages Created
-- `concepts/ai-engineer-roadmap-2026.md` — The 2026 AI Engineer Roadmap by Rohit (@rohit4verse): 5 production-grade projects to bridge the $150K gap between prompt engineers and systems architects.
-
-### Pages Updated
-- `wiki/index.md` — Added ai-engineer-roadmap-2026 to Concepts section.
-
-### Raw Source
-- `raw/articles/2026-01-09_rohit4verse_the-2026-ai-engineer-roadmap.md`
-
-## [2026-05-14] ingest | X Bookmarks: ntn (Notion CLI) + Codex Memory Pipeline
-
-### Pages Created
-- `concepts/notion-cli.md` — Notion CLI (ntn): official CLI for Notion API, Workers, file uploads. Announced May 2026 by @NotionDevs. Designed for devs and AI coding agents.
-
-### Pages Updated
-- `concepts/agent-memory-engineering.md` — Added Codex Memory Pipeline deep dive (Mem0, May 2026): two-phase async pipeline, markdown storage format, grep-based recall, caps & sweeps, geographic constraints, "where it stops" analysis.
-
-### Raw Articles Saved
-- `raw/articles/2026-05-13_notion-cli-ntn-developer-docs.md` — developers.notion.com overview
-- `raw/articles/2026-05-08_mem0-how-memory-works-in-codex-cli.md` — mem0.ai blog by Himanshu Sangshetti
-
-### SCHEMA.md
-- Added canonical tags: `notion-cli`, `notion-mcp`
-
-# Wiki Log
-
-> Chronological record of all wiki actions. Append-only.
-> Format: `## [YYYY-MM-DD] action | subject`
-> Actions: ingest, update, query, lint, create, archive, delete
-> When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
-
-## [2026-05-14] active-crawl | LangChain Harness Profiles, Delta Channels, ServiceNow Build Agent, Coder Agents Update, Snyk-Claude Security
-
-### Pages Created
-- `concepts/harness-profiles.md` — Model-specific agent tuning (prompts, tools, middleware) per LLM family. LangChain Deep Agents feature, 10-20pt tau2-bench gains.
-- `concepts/delta-channels.md` — LangGraph DeltaChannel (beta v1.2) — incremental checkpoint storage for long-running agents. Bounds resume costs for production agents.
-- `entities/servicenow.md` — ServiceNow enterprise platform. Build Agent (May 2026): natural language app creation with Anthropic models, multi-IDE support, governed by default.
-- `entities/snyk.md` — Snyk developer security platform. Claude integration (May 2026) for AI-powered vulnerability discovery and automated remediation.
-
-### Pages Updated
-- `entities/langchain.md` — Added Harness Profiles and Delta Channels sections to history and architecture. Updated tags (deep-agents, state-management). Added tau2-bench benchmark data.
-- `entities/coder.md` — Updated Coder Agents section with market stats (61% adoption, 70% infra mismatch) and beta pricing details.
-
-### Raw Articles Saved
-- `raw/articles/2026-04-29_langchain-harness-profiles.md` — LangChain blog: Tuning Deep Agents for Different Models
-- `raw/articles/2026-05-12_langchain-delta-channels.md` — LangChain blog: Delta Channels for Long-Running Agents
-- `raw/articles/2026-05-06_servicenow-build-agent.md` — BusinessWire: ServiceNow Build Agent launch
-- `raw/articles/2026-05-06_coder-agents-beta-enterprise.md` — CityBiz: Coder self-hosted AI coding agents
-- `raw/articles/2026-05-08_snyk-claude-security-partnership.md` — Booboone: Snyk-Claude Security integration
-
-### Sources
-- https://blog.langchain.dev/tuning-deep-agents-different-models/
-- https://www.langchain.com/blog/delta-channels-evolving-agent-runtime
-- https://www.businesswire.com/news/home/20260506008934/en/
-- https://www.citybiz.co/article/842905/coder-launches-self-hosted-ai-coding-agents-for-enterprise-development-teams
-- https://booboone.com/may-8-2026-ai-updates-from-the-past-week-coder-agents-launch-snyk-claude-partnership-opsera-cursor-partnership-and-more/
-
----
-
-## [2026-05-14] create | Concept: Cognitive Surrender
-
-### Pages Created
-- `concepts/cognitive-surrender.md` — 認知的サレンダー概念ページ。Addy Osmani (May 2026) + Shaw & Nave (Wharton 2026) の実証研究に基づく。AIの出力を無検証で自分の出力として受け入れる心理的メカニズム。[[concepts/simulacrum-of-knowledge-work]]（組織レベルのシミュラークル化）と[[concepts/cognitive-debt]]（個人レベルの認知負債蓄積）の両方に深く接続。
-
-### Pages Updated
-- `entities/addy-osmani.md` — Cognitive Surrenderコンセプトへのリンク説明を詳細化。シミュラークルと認知負債の話と接続。
-- `concepts/simulacrum-of-knowledge-work.md` — Related Conceptsにcognitive-surrenderを追加。「シミュラークルは組織現象、cognitive surrenderはそれを生む個人の心理的失敗モード」という接続。
-- `concepts/cognitive-debt.md` — Related Conceptsにcognitive-surrenderを追加。cognitive surrender が cognitive debt の蓄積メカニズムであることを明示。
-- `raw/articles/2026-05-05_addyosmani_cognitive-surrender.md` — サマリーから完全版に置換（41行→フル記事）。
-
-### Sources
-- https://addyosmani.com/blog/cognitive-surrender/
-- https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6097646 (Shaw & Nave, Wharton 2026)
-
----
-
-## [2026-05-14] enrich | Blog Wiki Ingest: Sierra τ-knowledge benchmark
-
-### Pages Updated
-- `entities/sierra.md` — Added "Research & Benchmarks" section covering τ-Knowledge / τ-Banking benchmark. Key data: GPT-5.5 xhigh leads at 37.4% pass^1 (up 11.9pt from GPT-5.2), ~63pt headroom remains, behavioral insights on smarter search patterns (9.1 vs 19.4 queries/task). Added sources, benchmark/evaluation/research tags, and cross-references to concepts/tau-knowledge and concepts/tau-bench.
-
----
-
-## [2026-05-14] ingest | Newsletter Wiki Ingest: AINews "Codex Rises, Claude Meters Programmatic Usage"
-
-### Pages Created
-- `concepts/mandate-equinox.md` — Mandate Equinox: OpenAI-Anthropic 6ヶ月交代サイクル概念。DanB (@irl_danB) 提唱。
-
-### Pages Updated
-- `entities/claude-code.md` — Added "Programmatic Usage Metering (May 2026)" section. Anthropicが$200サブスクリプションに$200 APIクレジットを付与。Claude Agent SDK/claude -p/サードパーティハーネス利用が正式メータリング対象に。
-- `entities/openai-codex.md` — Added "Growth Metrics" section. Codex 300万WAU (April 8)、400万WAU (April 22) の成長データ。
-
-### Sources
-- AINews "Codex Rises, Claude Meters Programmatic Usage" (May 14, 2026)
-- @ClaudeDevs pricing announcement (May 13, 2026)
-- Sam Altman Codex 3M WAU announcement (April 8, 2026)
-- WSJ Codex 4M WAU report (April 22, 2026)
-
-## [2026-05-14] ingest | Blog scan: 36 articles (20 saved, 16 skipped)
-
-### Major AI articles processed:
-
-1. **Sierra τ-knowledge leaderboard update (May 2026)** — Updated concepts/tau-knowledge.md with GPT-5.5 pass^1/pass^4 results (37.4%/20.6%), behavioral analysis of search patterns, and pass^1 metric clarification. GPT-5.5 achieved 2x improvement in pass^4 over GPT-5.2 but still ~63pt from saturation. Key insight: stronger agents search smarter (fewer, more surgical queries) not more.
-
-2. **OpenAI Codex Windows Sandbox** — Updated entities/codex.md with Windows sandbox architecture details. Two-prototype evolution from unelevated to elevated sandbox using dedicated local users, Windows Firewall for network isolation, 3-binary architecture (codex.exe → setup.exe → command-runner.exe) to cross UAC boundary.
-
-3. **OpenAI TanStack Supply Chain Attack (Mini Shai-Hulud, May 2026)** — Created concepts/openai-tanstack-supply-chain-2026.md. Two infected corporate devices, code-signing cert compromise, 108 internal source repos accessed, limited credential exfiltration, full certificate rotation. Updated entities/openai.md.
-
-4. **Sierra τ-knowledge blog** — Referenced as primary source for tau-knowledge.md updates. Key finding: strongest model (GPT-5.5 xhigh reasoning) gets 37.4% pass^1 on realistic customer service tasks with full documentation access — agent capabilities still far from production-ready for knowledge work.
-
-### Other articles saved (not AI-relevant):
-- pluralistic.net: "vibe governance" — Cory Doctorow on AI solipsism and fascist paradigm (noted, pluralistic-net.md entity updated)
-- danieldelaney.net: "Ideal failures" — UI design philosophy (Daniel De Laney entity exists)
-- nesbitt.io: "Showing Our Work" — Open source dependency validation research
-- susam.net: commenting guidelines
-- shkspr.mobi: SVG sparklines
-- troyhunt.com: Have I Been Pwned Bahamian Government
-- rachelbythebay.com: HTML generation
-- devblogs.microsoft.com/oldnewthing: Windows keyboard layout hang
-- dfarq.homeip.net: Kevin O'Leary Shark Tank
-- buttondown.com/hillelwayne: measurement units
-- tedium.co: BuzzFeed Byron Allen analysis
-- seangoedecke.com: space AI datacenters cooling
-- dynomight.net: slide decks
-- idiallo.com: "Software Engineers are Obsolete"
-- simonwillison.net: Datasette blog launch + Boris Mann quote
-- evanhahn.com: Firefox extension (not saved — not AI-relevant)
-
-- Updated: tau-knowledge.md, codex.md, openai.md, pluralistic-net.md
-- Created: openai-tanstack-supply-chain-2026.md
-- Updated: index.md (+1 concept, +2 entity references)
-- Updated: log.md
-
-## [2026-05-14] ingest | Show Us Your Agent Skills Ep.1 + Agentic Engineering article
-- Ingested Hugo Bowne-Anderson's Substack article "Agentic Engineering and the Lost Art of Verification" (2026-05-12)
-- Ingested YouTube transcript for "Show Us Your (Agent) Skills Episode 1" with Wes McKinney, Jeremiah Lowin, Randy Olson (2026-05-08)
-- Created entity pages: hugo-bowne-anderson.md, thomas-wiecki.md (completed; wes-mckinney, jeremiah-lowin, randy-olson created by subagents)
-- Created concept page: concepts/agentic-engineering.md — from vibe coding to verified agent workflows, generator-evaluator patterns
-- Updated index.md with new entries
-
-## [2026-05-14] create | comparisons/open-harness-vs-agent-framework + enrich concepts/agent-harness
-- Saved raw analysis: `raw/articles/2026-05-14_kzinmr_open-harness-vs-agent-framework.md` — kzinmr による Open Harness 対 Agent Framework/SDK の包括比較レポート
-- Created comparison page: `comparisons/open-harness-vs-agent-framework.md` (16 pages) — Open Harness（OpenClaw, Hermes Agent, OpenCode, Pi）と Agent Framework/Runtime（Claude Agent SDK, OpenAI Agents SDK, Google ADK, Strands Agents, LangGraph, Pydantic AI）の本質的差異を投資対象として整理。Operator Workbench Readiness vs Untrusted Product Runtime Readiness の2軸評価、4種類のロックイン分析、推奨分離アーキテクチャ、実務選定指針を含む
-- Enriched `concepts/agent-harness.md` — 「Agent Harness と Agent Framework/SDK の本質的差異」セクション追加（2つの投資対象、Operator Workbench vs Product Runtimeの2軸評価、4種類のロックイン、推奨分離アーキテクチャ、選定指針）
-- Updated index.md: Comparisons 15→16, added new entry
-
-## [2026-05-14] query | queries/data-analysis-open-harness
-- Created query page: `queries/data-analysis-open-harness.md` — kzinmr の質問「データ分析に適したOpen Harnessはあるか？」に対する回答をWiki化
-- 回答要旨: データ分析専用の真のOpen Harnessはまだ発展途上。現状は汎用coding harness（OpenCode/Pi）にDB MCP connectorを付けて使うのが最もOpenな選択肢。Cognition DANAは強力だがClosed Harness
-- 選択肢マトリクス: 汎用coding harness転用（OpenCode/Pi/Claude Code/Codex/Aider）、データ分析特化製品（Cognition DANA/OpenAI社内Data Agent/Hex）、Frameworkからの進化（OpenAI Agents SDK）
-- Karpathyの「良い回答はWikiにファイリングすべき」パターンに従い、チャット履歴に埋もれさせずqueryページとして資産化
-- Updated index.md: Queries 0→1
-
-## [2026-05-13] rotate | Log rotated (638 lines → log-2026.md)
-- Previous log archived to `log-2026.md` for historical reference
-
-## [2026-05-14] create | entities/randy-olson.md
-- Created comprehensive person entity page for Randy Olson (Randal S. Olson)
-- Co-Founder & CTO of Goodeye Labs, data visualization legend, r/DataIsBeautiful moderator
-- Documented Tufte Test, Truesight MCP agent skills, generator-evaluator workflow, reflect-and-improve pattern, digital twin concept
-- Added tags: agent-skills, data-visualization, verification to SCHEMA.md taxonomy
-- Updated index.md with new entry
-
-## [2026-05-13] index | Added 6 orphan pages to index.md (entities: dex-horthy, merge-dev; concepts: agentic-rag, agentic-retrieval, claude-opus-4-7, death-of-browser). Fixed merge-dev alphabetical position. Updated section counts.
-
-## [2026-05-13] lint | Frontmatter validation fixes
-- Fixed 6 wiki pages with YAML frontmatter syntax errors:
-  - `entities/ramp-labs.md` — related block invalid YAML (flow/block mix)
-  - `entities/intuit-machine.md` — related block invalid YAML (flow/block mix)
-  - `entities/anthropic.md` — related block invalid YAML (flow/block mix)
-  - `concepts/agent-harness.md` — bulleted list inside [...] flow context
-  - `concepts/societal-shadow.md` — missing closing --- frontmatter separator
-  - `concepts/ai-coding-workflows.md` — corrupted frontmatter line (truncated source entry)
-
----
-
-## [2026-05-13] index | Added 20 orphan concept pages to index.md
-
-- Added 20 high-quality concept pages (not previously listed) to the Concepts section:
-  - ai-infrastructure-engineering/distributed-training, ai-infrastructure-engineering/hardware-lottery, ai-infrastructure-engineering/pytorch-gpu-memory-profiling
-  - ai-organization/ai-org-context-as-moat, ai-organization/ai-org-from-hierarchy-to-intelligence, ai-organization/ai-org-solo-founder-and-super-ic
-  - ai-regulation-2026, ai-safety, ai-video-generation-2026, anthropic-managed-agents
-  - bitsandbytes, chatgpt-images-2.0, chief-of-staff-agent-patterns, claude-mythos-preview, cmu-llms-methods-applications
-- Updated header counts: Concepts 1253→1273, Total 1834→1854, Indexed 900→920
-- No index corruption found (pipe_prefix: 0, line_number_prefix: 0, triple_brackets: 0, space_prefix: 0)
-- Wiki-health: 980 orphans remain (not auto-applied — max 20 per run), 125 stale pages (31-34d), 5,405 unprocessed raw articles
-
-
-## [2026-05-13] lint | Index audit — orphan entries identified
-- 21 orphan index entries found (pointing to non-existent files):
-  - `entities/_index` — index files don't need separate entries, remove from index
-  - 10x `entities/omar-khattab/*` — these are subdirectory pages, not in main entities/ namespace
-  - `concepts/agent-engineering-guide-2026|...` — link text syntax, should be cleaned
-  - `concepts/ai-patterns-for-glam|...` — link text syntax, should be cleaned
-  - `concepts/ambient-agency|...` — link text syntax, should be cleaned
-  - `concepts/genai-handbook` — file doesn't exist
-  - `concepts/glut-of-circuits` — file doesn't exist
-  - `concepts/harness-commoditization` — file doesn't exist
-  - `concepts/tau-bench` — file doesn't exist (concept page exists but may have been renamed)
-  - `entities/theodoros-galanos|...` — link text syntax
-  - `entities/vibevoice|→詳細` — link text syntax
-  - `concepts/agent-team-swarm/managed-devins` — wrong namespace format
-## [2026-05-13] lint | Wiki watchdog auto-fix
-
-### ✅ Fixed: 11 duplicate index entries removed
-- 4 entity skeletons removed (addy-osmani, elie-bakouch, florian-brand, gary-marcus)
-- 4 more entity skeletons removed (jaya-gupta, tobi-lutke, parallel-web-systems, claris-filemaker)
-- 1 will-brown double-entry block removed (2 adjacent lines), kept L589 entry
-- 1 concepts/mcp and 1 comparisons/agent-harnesses stripped of skeleton entries
-- Index header updated: Total pages: 1797 → 1834, Indexed entries: 853 → 894
-
-### 🔍 Verified: All 21 "ghost entries" are false positives
-- All 10 `entities/omar-khattab/*.md` files exist in subdirectory
-- `entities/_index.md` exists and is properly indexed
-- 3 pipe-syntax entries (`agent-engineering-guide-2026|...`, `ai-patterns-for-glam|...`, `ambient-agency|...`) use valid Obsidian display-text wikilinks pointing to existing files
-- 4 `<missing>.md` entries (genai-handbook, glut-of-circuits, harness-commoditization, tau-bench) all exist in `concepts/`
-- `agent-team-swarm/managed-devins.md` exists in subdirectory
-- Root cause: health scanner used non-recursive directory listing
-
-### ⚠️ Needs human review
-- **933 pages not in index.md** — too large to batch-auto-apply (max 20 per policy)
-- **810 pages missing frontmatter fields** (770+ missing `sources`) — needs batch fix strategy
-- **Pipeline watchdog**: x-accounts-scan (26h stale) — normal for `*/2` schedule, next run 22:30 UTC today
-
-### 📊 Post-fix index health
-- Index entries: 894 (was 853 before dedup)
-- Total pages: 1834 (577 entities, 1238 concepts, 16 comparisons, 1 queries, 2 events)
-- Duplicates: 0 (was 11)
-- Pipe corruption: 0 ✅ | Triple bracket: 0 ✅ | Line-number corruption: 0 ✅
-
-## [2026-05-13] dreaming-wiki-ingest | entities/andrew-nesbitt.md enriched
-### Context
-- Dreaming pre-run failed (JSON parse error) — cross-pipeline check performed
-- newsletter-ingest: 0 candidates | sitemap-monitor: 0 saved | blog-ingest: 1 take consumed
-- All other recent raw articles (GNAP, InclusionAI Ring-2.6-1T, AEM, Firecracker, David Fowler, Prime Intellect renderers) already processed by other pipelines
+## [2026-05-18] ingest | LinkedIn post: Doug Turnbull's RAG→Agentic Search paradigm shift manifesto
 
 ### Changes
-- `entities/andrew-nesbitt.md`:
-  - ✅ Removed triplicated "The Mismeasure of Open Source" sections (removed 2 duplicate copies)
-  - ✅ Added "Not a Security Issue: AI Scanner Policy Engineering" section documenting AI scanner self-triage via policy files
-  - ✅ Updated `updated` date to 2026-05-13
-  - ✅ Added source entry and raw article reference (nesbitt.io--2026-05-12-not-a-security-issue-html--c464f9c9)
-
-### Files affected
-- `~/wiki/entities/andrew-nesbitt.md` — updated (265 lines, up from 274 with duplicates)
-- `~/wiki/log.md` — updated
-- `~/wiki/index.md` — no change (entry already exists)
-
-## [2026-05-14] ingest | NVIDIA Vera Rubin platform technical blog
-- Saved raw article: `raw/articles/2026-01-05_nvidia_vera-rubin-platform.md` (92,829 chars, 1,319 lines)
-- Source: https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/
-- Author: Kyle Aubrey, published 2026-01-05, updated 2026-03-16
-
-## [2026-05-14] create | concepts/nvidia-vera-rubin
-- Created comprehensive concept page: `concepts/nvidia-vera-rubin.md` (12,989 chars)
-- Covers: 6-chip architecture (Vera CPU, Rubin GPU, NVLink 6, ConnectX-9, BlueField-4 DPU, Spectrum-6), extreme co-design philosophy, bottleneck shift from FLOPS → bandwidth/interconnect/integration, ICMS KV-cache tier, NVL72 rack → DGX SuperPOD scaling, software stack, RAS, security, energy efficiency, performance (10T MoE training, reasoning inference)
-
-## [2026-05-14] update | entities/nvidia
-- Updated `entities/nvidia.md`: Added Vera Rubin Platform section, added source reference, added wikilink to [[concepts/nvidia-vera-rubin]], bumped `updated` date
-
-### Files affected
-- `~/wiki/raw/articles/2026-01-05_nvidia_vera-rubin-platform.md` — new (1328 lines)
-- `~/wiki/concepts/nvidia-vera-rubin.md` — new
-- `~/wiki/entities/nvidia.md` — updated
-- `~/wiki/index.md` — updated (added nvidia-vera-rubin entry)
-- `~/wiki/log.md` — updated
-
-## [2026-05-14] ingest | NVIDIA Rubin comprehensive research report
-- Saved raw article: `raw/articles/2026-05-14_kzinmr_nvidia-rubin-comprehensive-report.md` (108 lines)
-
-## [2026-05-14] enrich | concepts/nvidia-vera-rubin
-- Major enrichment from comprehensive research report (340 lines, ~24 KB):
-- Added: Scaling law shift analysis (Pre-Training → Post-Training → Test-Time), MFU 35-50% utilization, compute 4.4×/yr vs bandwidth 2×/2-3yr growth gap
-- Added: HBM4 supply chain dynamics (NVIDIA 11-13 Gbps pin speed requirements, SK Hynix shifting to TSMC 3nm, Samsung 4nm + 3D hybrid bonding, CoWoS-L packaging, Intel ZAM competition)
-- Added: DGX Rubin NVL8 enterprise air-cooled variant (8 GPU, Intel Xeon 6776P, ~24 kW, 400 PFLOPS NVFP4)
-- Added: Groq 3 LPX detailed architecture (500MB SRAM/chip, 80 TB/s/chip, 256-chip LPX rack, 40 PB/s SRAM fabric, joint decode computation)
-- Added: Co-Packaged Optics (CPO) physics deep dive (<5 pJ/bit vs 20-30 pJ/bit, 6× optical density gap)
-- Added: Physical infrastructure impact (190-230 kW/rack, 45°C DLC forcing chiller elimination, HVAC market impact)
-- Added: NVL72 detailed performance specs table (all precision modes: NVFP4 through FP64)
-- Added: Market deployment timeline (Q1 2026 mass production, H2 2026 shipments)
-- Added: Blackwell → Rubin generation comparison table
-
-### Files affected
-- `~/wiki/raw/articles/2026-05-14_kzinmr_nvidia-rubin-comprehensive-report.md` — new
-- `~/wiki/concepts/nvidia-vera-rubin.md` — enriched (196 → 340 lines)
-- `~/wiki/log.md` — updated
-
-## [2026-05-14] create | concepts/test-time-scaling
-- Created comprehensive concept page (14 KB, 250+ lines) from scratch
-- Covers: Three axes of AI scaling (pre-training → post-training → test-time), Snell et al. compute-optimal allocation, 7 core techniques (CoT, Self-Consistency, Best-of-N with ORM/PRM, Beam Search, Tree/Forest-of-Thought, Sequential Refinement, RL-trained reasoning o1/o3/R1), compute-optimal strategy, thinking-optimal scaling caveat, comparison with model scaling/speculative decoding/post-training, practical implications, open questions
-- Cross-references: scaling-hypothesis, chain-of-thought, rlvr, grpo, post-training, reasoning, rlm, speculative-decoding, nvidia-vera-rubin
-
-## [2026-05-14] enrich | concepts/chain-of-thought
-- Replaced stub (24 lines, 288 bytes) with comprehensive page (5.5 KB, 130+ lines)
-- Covers: Emergent behavior property, domain effectiveness, variants (Few-Shot/Zero-Shot/Auto-CoT/Long CoT/RL-trained CoT), comparison table with other reasoning methods, faithfulness/error propagation limitations, relationship to test-time scaling
-
-## [2026-05-14] redirect | concepts/inference-time-scaling → test-time-scaling
-- Replaced stub with redirect page pointing to [[test-time-scaling]] as canonical
-
-## [2026-05-14] update | concepts/scaling-hypothesis
-- Updated related links and internal references from inference-time-scaling → test-time-scaling
-
-### Files affected
-- `~/wiki/concepts/test-time-scaling.md` — new (14 KB)
-- `~/wiki/concepts/chain-of-thought.md` — enriched (288 bytes → 5.5 KB)
-- `~/wiki/concepts/inference-time-scaling.md` — rewrote as redirect (312 bytes → 503 bytes)
-- `~/wiki/concepts/scaling-hypothesis.md` — updated references
-- `~/wiki/index.md` — updated (added test-time-scaling, enriched chain-of-thought)
-- `~/wiki/log.md` — updated
-
-## [2026-05-14] update | entities/wes-mckinney.md — major expansion
+- `wiki/raw/articles/2026-04-21_softwaredoug_dont-waste-time-on-rag-paradigm.md` — New raw article: Doug Turnbull LinkedIn post "Don't waste too much time on the original RAG paradigm" (Apr 21, 2026). Condensed manifesto on RAG→agentic search paradigm shift + notable comments from Gayhart, Boytsov, Pickens.
+- `wiki/concepts/agentic-search.md` — "Entry Point: The Paradigm Shift Manifesto" section added after Definition. Concise distillation of Turnbull's 4-point argument (retrieval-centric → harness-centric progression), practical advice, and comment tensions. Sources updated.
 
 ### Changes
-- Expanded from skeleton (92 lines, 5 KB) to comprehensive entity page (~210 lines, 15 KB)
-- Added: Quick Facts table, full Bio with all career milestones
-- Added: Agentic Engineering philosophy section with key quotes ("I almost don't read code now"), adversarial agent review approach, Agent Ergonomics thesis, Four-Layer Stack model, "The Mythical Agent Month" framework, vibe coding vs agentic engineering distinction
-- Added: Current Projects section covering RoboRev (Go, 55+ releases, post-commit hook), Agents View (session DB), Middleman (GitHub dashboard), Kata, msgvault (DuckDB-powered), spicytakes.org (1M+ lines, 93 posts, 679 quotes over 16 years)
-- Added: Skills Framework section documenting Superpowers (Jesse Vincent) usage
-- Added: Professional Timeline table, Key Projects table with languages, Key Quotes section (7 quotes)
-- Updated: tags to [person, ai-agents, agent-skills, code-review, developer-tooling, harness-engineering, open-source]
-- Updated: sources linking to raw articles 2026-05-12 and 2026-05-08
-- Updated: frontmatter dates to 2026-05-14
+- `wiki/raw/articles/2026-02-17_anthropic_dynamic-filtering-web-search.md` — New raw article from official Anthropic blog (Feb 17, 2026). BrowseComp + DeepsearchQA benchmarks, Quora/Poe validation, GA tools context.
+- `wiki/concepts/agentic-search.md` — Dynamic Filtering section expanded with:
+  - Full BrowseComp + DeepsearchQA per-model breakdown (Sonnet 4.6: 33.3%→46.6%, Opus 4.6: 45.3%→61.6%)
+  - Quora/Poe production validation case study
+  - "Filter-Before-Reasoning" architectural pattern analysis across 5 GA tools
+  - Agentic Search Implications: convergence of IR Research, Harness Engineering, Externalized Processing
+  - Open Questions: cost asymmetry, generality, eval contamination risk, RLM relationship
+  - Sources updated: official Anthropic URL added alongside GEND partner summary
 
-### Sources consulted
-- Web research: Wes McKinney pandas creator, agentic engineering, RoboRev, spicytakes.org, POSIT
-- Raw articles: vanishing-gradients show-us-your-agent-skills ep1, hugobowne agentic-engineering-verification
-- External: wesmckinney.com, Wikipedia, Posit blog (Rich Iannone), spicytakes.org, X/Twitter, Joe Reis Podcast transcript, Rill Data Podcast transcript, Data Renegades transcript
+## [2026-05-18] ingest | Armin Ronacher: "A Language For Agents" — agent-oriented programming language design
 
-### Files affected
-- `~/wiki/entities/wes-mckinney.md` — major expansion (92 → ~210 lines, 5 KB → 15 KB)
-- `~/wiki/index.md` — updated summary line
-- `~/wiki/log.md` — updated
+### Changes
+- `wiki/raw/articles/2026-05-18_armin-ronacher_a-language-for-agents.md` — New raw article: Armin Ronacher's essay on designing programming languages for AI agents (lucumr.pocoo.org, Feb 9, 2026). Covers: why new languages will succeed, 8 design principles (no-LSP context, braced syntax, explicit effects, results vs exceptions, line-friendly syntax, grep-ability, local reasoning, dependency-aware builds), what agents hate (macros, barrel files, aliasing, flaky tests).
+- `wiki/entities/armin-ronacher.md` — Entity page created/updated: Austrian software engineer, creator of Flask/Jinja2/Werkzeug, Principal Architect at Sentry. Detailed section on his AI & agentic programming contributions, including the "A Language For Agents" essay.
+- `wiki/concepts/agent-ergonomics.md` — Major enrichment: added "Armin Ronacher's Language Design Principles (2026)" section covering the 8 design principles, "What Agents Hate" antipatterns, and his meta-argument about measuring language success via agent performance. Frontmatter updated (new source, tags: +programming-language +ai-coding). Related concepts expanded.
+- `wiki/SCHEMA.md` — Tag taxonomy: added `programming-language` to Engineering category.
+- `wiki/index.md` — Updated entity entry for armin-ronacher; added description to agent-ergonomics concept entry.
+- `wiki/concepts/claude-agent-sdk-research-stateless-stateful-web-search.md` — Deleted orphaned empty stub (not in index.md, no incoming links)
 
-## [2026-05-14] create | entities/jeremiah-lowin.md — new entity page
+## [2026-05-18] ingest | Vercel Labs Zero — agent-oriented programming language
 
-### Created
-- Jeremiah Lowin entity page: Founder & CEO of Prefect, creator of FastMCP, Prefab, Cardboard
-- Documented: career (Prefect, Apache Airflow PMC, Marvin, ControlFlow), agent philosophy ("second brain" with voice memo pipeline, explain skill), key projects (FastMCP ~25K stars, Prefab generative UI DSL), strategic advisory roles (Spotify, Positive Sum, OSV), Compass Coffee Global Ambassador
-- Tags: [person, ai-agents, agent-skills, context-engineering, developer-tooling, open-source, entrepreneur, mcp, generative-ui, prefect]
-- Added `prefect` tag to SCHEMA.md taxonomy (People/Orgs section)
+### Changes
+- `wiki/raw/articles/2026-05-18_vercel-labs_zero-language-for-agents.md` — New raw article: Vercel Labs' Zero programming language (github.com/vercel-labs/zero, zerolang.ai). Launched May 15, 2026. Systems language with explicit effects, capability-based I/O, JSON-native diagnostics, repair metadata. 2,045★.
+- `wiki/entities/zero-language.md` — New entity page: Zero — Vercel's agent-oriented systems language. Covers design philosophy, agent-first tooling, language features (World capability, raises, shape/enum/choice, generics, static interfaces), mapping to Ronacher's 8 principles.
+- `wiki/concepts/agent-ergonomics.md` — Added "Concrete Implementation: Zero by Vercel Labs" section with principle-by-principle mapping table. Frontmatter updated with Zero source.
+- `wiki/index.md` — Added zero-language entity entry.
 
-### Sources consulted
-- Web research: jlowin.dev/about, GitHub, FastMCP v2.6/v3.0/GA launch posts, Prefab announcement, Compass Coffee 10-year post, Prefect origin story, Vanishing Gradients podcast (Show Us Your Agent Skills Ep. 1), Hacker News Prefab Show HN, YouTube (First Commit with Nina)
-- External: LinkedIn, Crunchbase, X/Twitter (@jlowin)
+## 2026-05-18 11:30 — X Bookmarks Ingest
 
-### Files affected
-- `~/wiki/entities/jeremiah-lowin.md` — new (~210 lines)
-- `~/wiki/index.md` — added entry between jeff-huber and jensen-huang; fixed merged-line bug
-- `~/wiki/SCHEMA.md` — added `prefect` to tag taxonomy
-- `~/wiki/log.md` — updated
+- `wiki/raw/articles/2026-05-17_DeRonin_agentic-project-setup-security.md` — Saved raw article: @DeRonin_ tweet about direnv + secrets manager setup for agentic projects (truncated thread)
+- `wiki/raw/articles/2026-05-17_addy-osmani_dont-outsource-learning.md` — Saved raw article: Addy Osmani "Don't Outsource the Learning" (May 2026). Follow-up to cognitive surrender thesis with new research: Anthropic 2026 randomized trial (50% vs 67% comprehension), MIT EEG study (83% couldn't quote their own output), CHI 2026 anchoring effect. Advocates Learning Mode features and treating "ship" vs "learn" as separate metrics.
+- `wiki/raw/articles/2026-05-16_Jouhatsu-ai_anthropic-claude-agent-training.md` — Saved raw article: @Jouhatsu_ai tweet reporting Anthropic's 2-hour comprehensive training on building Claude agents, led by the Claude Code engineer. Links to Anthropic Skilljar courses (Claude Code in Action, Agent Skills, Subagents) and certification programs.
+- `wiki/entities/addy-osmani.md` — Enriched: added "Don't Outsource the Learning" (May 2026) section with research findings. Updated sources list. Bumped updated date.
+- `wiki/concepts/cognitive-debt.md` — Enriched: added "2026 Research on AI-Assisted Learning vs. Comprehension" section covering Anthropic randomized trial, MIT EEG study, CHI 2026 anchoring effect, and Learning Mode mitigation. Updated sources list, bumped updated date. Added related page link to Addy Osmani entity.
 
-## [2026-05-14] ingest | NVIDIA RTX AI Garage: Hermes Agent on DGX Spark
-
-### Ingested
-- Raw article: `wiki/raw/articles/2026-05-13_nvidia_rtx-ai-garage-hermes-agent-dgx-spark.md`
-- NVIDIA blog post (May 13, 2026) by Abhishek Gore: Hermes Agent endorsed as RTX AI Garage's centerpiece agent framework
-- Key data points: 140K+ GitHub stars, #1 on OpenRouter, Qwen 3.6 model recommendation, "Same model, better results" harness engineering claim
-
-### Entities enriched
-- `entities/hermes-agent.md` — Added "Milestones (May 2026)" section (140K stars, OpenRouter #1, NVIDIA endorsement), "Harness Engineering: Same Model Better Results" subsection, "NVIDIA DGX Spark 統合" section, updated sources and related links
-- `entities/nvidia-dgx-spark.md` — Added "Hermes Agent Integration" section (5 synergy points: always-on, large model compatibility, Qwen 3.6 optimization, official playbook, harness engineering), updated timeline with May 2026 milestone, added related links
-
-### Concepts created
-- `concepts/nvidia-rtx-ai-garage.md` — New concept page (~125 lines): NVIDIA's program for curating/optimizing AI tools on RTX hardware. Covers positioning (curation, playbooks, optimization verification, hands-on sessions), recommended agents (Hermes, NemoClaw, OpenClaw), supported models/optimizations, added value over DIY setup (model selection, NVFP4 optimization, hardware-software integration verification), information channels
-
-### Files affected
-- `wiki/raw/articles/2026-05-13_nvidia_rtx-ai-garage-hermes-agent-dgx-spark.md` — new
-- `wiki/entities/hermes-agent.md` — enriched (added Milestones, Harness Engineering, DGX Spark sections)
-- `wiki/entities/nvidia-dgx-spark.md` — enriched (added Hermes Agent Integration section, timeline entry)
-- `wiki/concepts/nvidia-rtx-ai-garage.md` — new
-- `wiki/index.md` — updated (added nvidia-rtx-ai-garage concept entry)
-- `wiki/log.md` — updated
-
-## [2026-05-14] wiki | Created concept page for Hermes Agent
-
-### Concepts created
-- `concepts/hermes-agent.md` — Dense reference page (134 lines) covering architecture (single AIAgent class, ReAct loop, 90-turn cap, 6 execution backends, multi-model), identity layer (SOUL.md), three-tier memory (MEMORY.md + USER.md, SQLite FTS5, 8 external providers), self-evolving skills (skill_manage tool, progressive disclosure, creation triggers), the Curator (30-day stale / 90-day archive), GEPA integration, profiles (multi-agent isolation), cron scheduler (plain English), and comparison with OpenClaw. Source: raw/article by [[entities/akshay-pachaar]] (May 13, 2026).
-
-### Files affected
-- `wiki/concepts/hermes-agent.md` — new
-- `wiki/index.md` — updated (added concept entry)
-- `wiki/log.md` — updated
-
-## [2026-05-14] watchdog | Auto-fix: added missing `title` frontmatter to 3 pages
-
-### Auto-fixed
-- `entities/parallel-web-systems.md` — Added `title: "Parallel Web Systems Inc."`
-- `entities/qiaochu-yuan.md` — Added `title: "QC (Qiaochu Yuan)"`
-- `concepts/cryptography-patterns.md` — Added `title: "Cryptography Patterns — Bitwarden Encryption Architecture"`
-
-### Watchdog Assessment
-- ✅ Index corruption: Clean (0 pipe, 0 triple bracket, 0 line-number issues)
-- ✅ Ghost entries: 0 (all resolved)
-- ✅ Log health: Clean (403 lines, 0 pipe corruption, 1 header)
-- ✅ Pipeline watchdog: No alerts
-- ✅ Pre-commit hooks: Active (.githooks)
-- ⚠️ 1005 pages not in index.md — needs human-level batch population
-- ⚠️ 809 pages missing frontmatter fields (776 missing `sources`, 31 `type`, 22 `created`, 15 `updated`, 11 `tags`, 3 `title` now fixed)
-- ⚠️ Index header count: 1860 vs 1835 actual — minor drift
-
-### Recommendation
-Both remaining issues are too large for watchdog auto-fix (>10 files each). 
-Recommend dedicated batch passes:
-1. `sources: []` bulk-add to 776 pages (Section L procedure)
-2. Batch index population for 1005 unregistered pages
----

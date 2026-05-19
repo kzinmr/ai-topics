@@ -6,6 +6,13 @@ updated: 2026-05-02
 status: L2
 tags:
   - person
+  - coding-agents
+  - ai-automation
+  - developer-tooling
+  - bizops
+  - architecture
+  - strategy-execution
+  - technical-literacy
 aliases:
   - anbuteau
   - Antoine Buteau

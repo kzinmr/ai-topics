@@ -4,7 +4,15 @@ created: 2026-05-11
 updated: 2026-05-11
 type: entity
 status: L2
-tags: [company, open-source, tool, platform, ai-agents, mcp, developer-tooling, generative-ui, web-development]
+tags:
+  - company
+  - open-source
+  - tool
+  - platform
+  - ai-agents
+  - mcp
+  - developer-tooling
+  - web-development
 aliases: [tambo-ai, tambo.ai, tambo.ai/react]
 sources: [https://tambo.co, https://github.com/tambo-ai/tambo, https://docs.tambo.co]
 related: [mcp, vercel-ai-sdk, ai-agents]

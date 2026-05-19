@@ -11,10 +11,8 @@ tags:
   - company
   - eleutherai
   - nanogpt-speedrun
-  - researcher
   - pseudonymous
   - reinforcement-learning
-  - prime-intellect
 aliases:
 - '@Grad62304977'
 - Grad

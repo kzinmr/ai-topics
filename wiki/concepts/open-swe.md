@@ -3,7 +3,13 @@ title: "Open SWE"
 created: 2026-05-11
 updated: 2026-05-11
 type: concept
-tags: [coding-agents, langchain, agent-harness, open-source, agent-architecture, sandbox]
+tags:
+  - coding-agents
+  - langchain
+  - harness-engineering
+  - open-source
+  - architecture
+  - sandbox
 sources: [raw/articles/2026-03-17_langchain_open-swe-framework.md]
 aliases: ["OpenSWE", "open-swe"]
 ---

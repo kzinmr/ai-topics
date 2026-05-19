@@ -3,7 +3,14 @@ title: "Agentic Engineering"
 created: 2026-05-14
 updated: 2026-05-14
 type: concept
-tags: [concept, agentic-engineering, ai-agents, agent-skills, verification, code-review, developer-tooling]
+tags:
+  - concept
+  - agentic-engineering
+  - ai-agents
+  - agent-skills
+  - verification
+  - coding-agents
+  - developer-tooling
 sources:
   - raw/articles/2026-05-12_hugobowne_agentic-engineering-verification.md
   - raw/articles/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md

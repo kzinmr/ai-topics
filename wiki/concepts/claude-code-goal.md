@@ -3,7 +3,14 @@ title: "Claude Code /goal — Goal-Driven Autonomous Workflow"
 type: concept
 slug: claude-code-goal
 status: complete
-tags: [claude-code, coding-agents, agent-loop, autonomous-agents, anthropic, prompt-caching, tool-use]
+tags:
+  - claude-code
+  - coding-agents
+  - agent-loop
+  - ai-agents
+  - anthropic
+  - prompt-caching
+  - tool
 created: 2026-05-13
 updated: 2026-05-13
 aliases: [/goal, claude-goal, claude-code-autonomous-loop]

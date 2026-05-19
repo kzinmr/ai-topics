@@ -4,7 +4,12 @@ created: 2026-05-11
 updated: 2026-05-14
 type: concept
 status: L2
-tags: [agent-memory, memory-systems, harness-engineering, claude-code, codex, agents]
+tags:
+  - ai-agents
+  - memory-systems
+  - harness-engineering
+  - claude-code
+  - coding-agents
 aliases: ["Agent Memory", "Memory Layer Design"]
 sources: [raw/articles/2026-05-01_nicolas-bustamante_agent-memory-engineering.md, raw/articles/2026-05-08_mem0-how-memory-works-in-codex-cli.md]
 related: [entities/nicolas-bustamante, concepts/harness-engineering, concepts/model-harness-fit]

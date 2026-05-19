@@ -7,7 +7,7 @@ tags:
   - ai-agents
   - multi-agent
   - protocol
-  - git
+  - developer-tooling
   - open-source
   - orchestration
   - agent-communication

@@ -11,9 +11,7 @@ tags:
   - isolation
   - aws
   - infrastructure
-  - ai-infrastructure
   - agent-safety
-  - serverless
   - virtualization
 status: full
 sources:

@@ -3,7 +3,10 @@ title: Formal Logic Foundation
 created: 2026-04-26
 updated: 2026-04-26
 type: concept
-tags: [logic, symbolic-ai, neurosymbolic, formal-methods]
+tags:
+  - reasoning
+  - neurosymbolic
+  - formal-methods
 sources: [raw/articles/crawl-2026-04-26-neurosymbolic-taxonomy.md]
 ---
 

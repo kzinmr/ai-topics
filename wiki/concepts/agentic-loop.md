@@ -3,7 +3,12 @@ title: "Agentic Loop — The Canonical AI Agent Execution Pattern"
 type: concept
 slug: agentic-loop
 status: complete
-tags: [agent-loop, ai-agents, agent-architecture, autonomous-agents, tool-use, cognition]
+tags:
+  - agent-loop
+  - ai-agents
+  - architecture
+  - tool
+  - cognition
 created: 2026-05-13
 updated: 2026-05-13
 aliases: [agent loop, ReAct loop, decide-act-observe, agent execution cycle]

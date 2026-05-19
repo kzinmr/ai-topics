@@ -3,7 +3,12 @@ title: "ServiceNow"
 created: 2026-05-14
 updated: 2026-05-14
 type: entity
-tags: [company, platform, enterprise-ai, ai-agents, developer-tooling, automation]
+tags:
+  - company
+  - platform
+  - ai-agents
+  - developer-tooling
+  - automation
 sources: [raw/articles/2026-05-06_servicenow-build-agent.md, https://www.servicenow.com/]
 ---
 

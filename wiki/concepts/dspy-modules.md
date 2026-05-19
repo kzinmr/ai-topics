@@ -1,6 +1,10 @@
 ---
 title: "DSPy Modules Reference"
-tags: [concept, dspy, modules, pipeline, patterns]
+tags:
+  - concept
+  - dspy
+  - devops
+  - patterns
 created: 2026-04-28
 updated: 2026-04-28
 type: concept

@@ -73,16 +73,86 @@ Discovered during newsletter-triage sessions on 2026-05-03, 2026-05-06, and 2026
 
 **Bottom line**: Beehiiv is the most costly newsletter format to triage. Plan for 3-6 `web_extract` calls vs Substack's 1-2.
 
-## Key Insights
+## 2026-05-16 Session Update: "Codex Goes Everywhere" (Rich Topic Diversity)
 
+**Newsletter**: Superintel+ "Codex Goes Everywhere" (20 beehiiv tracking links, May 15)
+**Triage companion**: Also processed AINews Cerebras $60B IPO (Substack, 20 links, same checkpoint)
+
+**Resolution results**:
+| # | Resolved To | Content Type | Action |
+|---|-------------|-------------|--------|
+| 1 | Full newsletter post body (16KB) — "Codex Goes Everywhere" | Newsletter post (main) | Reference (context) |
+| 2 | @kimmonismus X profile | Social profile | **Skip** — confirms author profile at Link 2 in this session |
+| 3 | Deel IT Strategy Toolkit (gated download) **| Sponsor/ad | **Skip** — gated lead-gen landing page |
+| 4 | Gates Foundation "Making AI work for more people" | Press release | Reference (Anthropic + Gates $200M) |
+| 5 | http_error (retried, still failing) | Dead/auth link | Skip |
+| 6 | TechCrunch: OpenAI TanStack supply-chain attack | News article (full) | **TAKE** |
+| 7 | YouTube: "Codex for Everyday Work: AI Agents Beyond Coding" | Video | Reference |
+| 8 | YouTube: same as Link 7 | Duplicate | Skip — dedup |
+| 9 | 9to5Mac: OpenAI preparing legal action against Apple | News article (full) | **TAKE** |
+| 10 | http_error (retried, still failing) | Dead/auth link | Skip |
+| 11 | OpenAI blog: "Work with Codex from anywhere" | Official blog | **TAKE** — Codex mobile launch, 4M WAU |
+| 12 | TechCrunch: "Codex is coming to your phone" **| News (full) | **Reference** — duplicate topic of Link 11 |
+
+**Key findings from this session**:
+1. **Author profile at Link 2, not Link 3**: In "Codex Goes Everywhere," the @kimmonismus X profile was at Link 2 (vs. Link 3 in previous sessions). The position varies — sample both Links 2 and 3 to detect it.
+2. **First OpenAI official blog post resolved from beehiiv**: Link 11 resolved to `openai.com/index/work-with-codex-from-anywhere/` — beehiiv tracking can point to any source, not just news sites or product pages.
+3. **http_error at Links 5 and 10, no retry success**: Unlike the GPT-5.5 Instant session where a retry succeeded, these stayed dead. These may represent expired share/referral links rather than transient auth failures.
+4. **Topic diversity was high**: This single newsletter covered Codex mobile (OpenAI), OpenAI-Apple legal, supply-chain security (TanStack), Anthropic philanthropy, and YouTube content. Each link resolved to a genuinely different topic, unlike the high-duplication pattern of previous sessions.
+5. **Sponsor/ad detection**: Link 3 (Deel IT toolkit) was a fully gated landing page requiring name/email/company — strong signal for sponsor content. Only 1 of 12 resolved links was sponsor (vs. 25% in May 11 session).
+
+**Beehiiv link position → content type model (updated)**:
+| Link Position | Common Content | Frequency |
+|---|---|---|
+| Link 1 | Full newsletter post body | ~90% |
+| Link 2 | Same as Link 1 (dupe) **or** @author X profile | ~50/50 |
+| Link 3 | @author X profile **or** sponsor/ad | ~50/50 |
+| Links 4-7 | External editorial articles (distinct topics) | ~80% unique |
+| Links 8-10 | Duplicates of 4-7 **or** new distinct articles | ~50/50 |
+| Links 11-13 | Key articles (official blogs, major tech news) | ~75% unique |
+| Links 14-20 | Long tail: duplicates, account pages, subscribe pages | ~90% skip |
+
+**Updated sampling strategy**:
+1. Resolve Link 1 (main newsletter body)
+2. Resolve Link 2 + Link 3 first (detect profile/sponsor positions)
+3. Resolve Links 4, 6, 9, 11 as priority samples if sponsor at Link 3
+4. If Link 11 resolves to a distinct topic, sample Link 12 and 13 too (may hold premium content)
+5. Expected yield per newsletter: 4-6 unique editorial articles from 20 links (not counting duplicates, profiles, sponsors, dead links)
+6. Link 9 consistently yields good content (9to5Mac articles in this session, Chamath talk in previous) — prioritize it
+
+## Newsletter Subject Accuracy Note
+
+In the "Codex Goes Everywhere" session, the subject line **accurately** reflected the newsletter content (Codex mobile launch was indeed the lead story). This contrasts with the May 2026 pitfall where "The AI Cursor Arrives!" was incorrectly estimated as Cursor IDE content. When subject and content align, it's safe to use the subject as a triage heuristic; when they misalign, fall back to section-heading extraction from the truncated newsletter body.
+
+## Key Insights
 1. **Tracking URL ≠ Article URL**: A single beehiiv newsletter can have 16+ tracking URLs pointing to 1-4 unique destinations. Most are redundant tracking links for share buttons, like buttons, subscribe CTAs, etc.
 
 2. **Auth state variation**: The same article URL with different tracking IDs can resolve to different auth states (e.g., public preview vs. login prompt vs. full article if logged in). web_extract may get different results depending on session state — treat the most content-rich result as canonical.
 
-3. **Source identification**: The newsletter subject line (e.g., "NVIDIA Blackwell vs. Huawei Ascend") is NOT the source name — it's the article title. The actual publication (e.g., "Superintel+ / getsuperintel.com") must be extracted from the rendered page content.
+3. **Source identification**: The newsletter subject line is NOT the source name — it's the article title. The actual publication must be extracted from the rendered page content or domain.
 
-4. **Beehiiv hosted pages** (`hp.beehiiv.com/<uuid>`) are dangerous: they look like they might contain newsletter content but always resolve to Terms of Use boilerplate.
+4. **Sponsor/ad links are indistinguishable from editorial links**: Some beehiiv tracking URLs resolve to sponsor landing pages (e.g., Masterworks fine-art investment platform). These look identical to editorial links in the checkpoint — no URL pattern distinguishes them. Only web_extract resolution reveals they are ads. Accept that ~5-10% of resolved beehiiv links will be sponsors with zero wiki value.
+
+5. **Beehiiv hosted pages** (hp.beehiiv.com/<uuid>) are dangerous: they look like they might contain newsletter content but always resolve to Terms of Use boilerplate.
 
 ## Cost: Resolving Trackers vs Post Pages
 
 For 20 candidates, resolving 3-6 tracking URLs costs 3-6 web_extract calls. Strategy: resolve Links 1-3 first to detect the pattern (main article + possible dupe + author profile), then sample Links 4+ to find distinct articles before batch-skipping the rest.
+
+## 2026-05-11 Session Update: Sponsor Detection + Newsletter Body Richness
+
+**Newsletter**: Superintel+ "USA/China: Nuclear Playbook Meets AI" (20 beehiiv tracking links)
+
+**Resolution results**:
+- **Link 1**: Full newsletter post body (18KB) containing all curated article summaries with embedded links
+- **Link 4**: Masterworks fine-art investment landing page — **sponsor/ad**, not editorial content
+- **Link 7**: MacRumors article (Apple iOS 27 AI Extensions) — confirmed the second major topic from the newsletter body
+
+**Key discovery**: The Superintel+ newsletter's Link 1 resolved to the full newsletter post body rendered via beehiiv's web view. This body contained the complete editorial content with embedded external links (Baidu ERNIE 5.1, MacRumors, GlobeNewswire, etc.) — making individual tracking URL resolution largely unnecessary. The newsletter body was accessible without authentication.
+
+**Updated pattern**: Unlike prior sessions where beehiiv links were the only way to access external articles, some beehiiv newsletters now render the full post body at Link 1, similar to Substack's model. Strategy adjustment:
+1. Always resolve Link 1 first — if it returns rich editorial content with embedded links, extract the external article URLs from the HTML (using curl | grep -oP)
+2. Sample Links 4-7 only to confirm no major articles were missed
+3. If Link 1 fails http_error, fall back to individual link resolution
+
+**Sponsor/ad confirmation rate**: 1 of 4 resolved links (25%) was a sponsor. Expect roughly 1 sponsor link per 3-4 editorial links in beehiiv newsletters.

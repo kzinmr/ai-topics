@@ -14,7 +14,7 @@ tags:
   - quantization
   - memory-systems
   - privacy
-  - enterprise-ai
+  - company
   - agentic-engineering
   - context-engineering
   - workflow

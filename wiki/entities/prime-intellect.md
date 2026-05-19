@@ -3,7 +3,14 @@ title: "Prime Intellect"
 created: 2026-05-13
 updated: 2026-05-13
 type: entity
-tags: [company, platform, open-source, reinforcement-learning, distributed-training, training, agent-training, ai-infrastructure, grpo]
+tags:
+  - company
+  - platform
+  - open-source
+  - reinforcement-learning
+  - training
+  - agent-training
+  - infrastructure
 sources:
   - raw/articles/2026-05-12_primeintellect_renderers-token-level-templating.md
   - https://www.primeintellect.ai/

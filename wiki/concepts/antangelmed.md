@@ -3,7 +3,11 @@ title: AntAngelMed
 created: 2026-05-15
 updated: 2026-05-15
 type: concept
-tags: [model, open-source, mixture-of-experts, moe, grpo, fine-tuning, training]
+tags:
+  - model
+  - open-source
+  - training
+  - fine-tuning
 sources: [raw/articles/2026-05-12_antangelmed-103b-medical-moe.md]
 ---
 

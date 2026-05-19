@@ -3,7 +3,12 @@ title: "Akshay Pachaar"
 created: 2026-05-14
 updated: 2026-05-14
 type: entity
-tags: [person, educator, blogger, x-account, ai-agents, hermes-agent, content-creator]
+tags:
+  - person
+  - blogger
+  - x-account
+  - ai-agents
+  - content-creator
 aliases:
   - "@akshay_pachaar"
   - "patchy631"

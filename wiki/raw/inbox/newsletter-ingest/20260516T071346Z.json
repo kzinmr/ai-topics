@@ -1,0 +1,106 @@
+{
+  "run_id": "20260516T071346Z",
+  "triaged_at": "2026-05-16T07:15:00Z",
+  "newsletters": [
+    {
+      "message_id": "<20260515.155135.a5f16679@mta34>",
+      "subject": "Codex Goes Everywhere",
+      "source_label": "uid=97",
+      "date": "2026-05-15",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-15-codex-goes-everywhere.md",
+      "publisher": "The Deep View",
+      "article_count": 20,
+      "classification": "high",
+      "relevance": "high",
+      "summary": "Covers OpenAI's Codex mobile app launch, enabling phone-based agent management. Key topics: Codex going mobile (ChatGPT app integration for monitoring agents, reviewing outputs, approving commands, changing models, seeing screenshots/terminal output), remote SSH, hooks, programmatic access tokens, HIPAA compliance for enterprise. Peter Steinberger (OpenClaw founder) reportedly helping Codex team. Codex CLI is open source and self-writes ~90% of its own code.",
+      "wiki_candidates": [
+        {
+          "page": "entities/openai-codex.md",
+          "action": "update",
+          "fields": [
+            "mobile_capabilities",
+            "enterprise_features",
+            "development_workflow"
+          ]
+        },
+        {
+          "page": "entities/openclaw.md",
+          "action": "update",
+          "note": "Peter Steinberger's collaboration with OpenAI Codex team"
+        }
+      ],
+      "key_topics": [
+        "OpenAI Codex mobile app",
+        "AI coding agents",
+        "Agent management workflows",
+        "Enterprise AI (HIPAA compliance)",
+        "Open source coding tools"
+      ],
+      "top_article_urls": [
+        "https://www.thedeepview.com/newsletter/openai-just-gave-codex-a-mobile-edge-over-rivals",
+        "https://newsletter.pragmaticengineer.com/p/how-codex-is-built"
+      ]
+    },
+    {
+      "message_id": "<20260516043651.3.8251bcb900a2eb4b@mg-d1.substack.com>",
+      "subject": "[AINews] Cerebras' $60B IPO: Slowly, then All at Once",
+      "source_label": "uid=98",
+      "date": "2026-05-16",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-16-ainews-cerebras-60b-ipo-slowly-then-all-at-once.md",
+      "publisher": "swyx / AINews",
+      "article_count": 20,
+      "classification": "critical",
+      "relevance": "high",
+      "summary": "Covers Cerebras Systems IPO (ticker: CBRS) pricing at $185/share, first-day surge to $350 (+89%), $67B market cap. Largest US tech IPO since 2019. WSE-3 wafer-scale chip architecture as NVIDIA alternative for AI inference. Key deals: OpenAI $20B compute agreement, Amazon partnership. 2025 revenue $510M (+76% YoY), $24.6B remaining performance obligation. Multiclass share structure (A: 1 vote, B: 20 votes insiders, N: non-voting warrants for OpenAI/Amazon). Signals broader AI IPO wave with OpenAI, Anthropic, SpaceX expected next.",
+      "wiki_candidates": [
+        {
+          "page": "entities/cerebras.md",
+          "action": "create",
+          "fields": [
+            "ipo_details",
+            "financial_metrics",
+            "wse3_architecture",
+            "customer_relationships",
+            "competitive_positioning"
+          ]
+        },
+        {
+          "page": "concepts/ai-inference-hardware.md",
+          "action": "update",
+          "note": "Cerebras positioning vs NVIDIA in inference market"
+        },
+        {
+          "page": "events/ai-ipo-wave-2026.md",
+          "action": "create",
+          "note": "Cerebras as first major AI IPO, precedent for upcoming OpenAI/Anthropic/SpaceX listings"
+        }
+      ],
+      "key_topics": [
+        "Cerebras IPO",
+        "Wafer-scale AI chips",
+        "AI inference market",
+        "NVIDIA competition",
+        "AI infrastructure economics",
+        "AI IPO wave (OpenAI, Anthropic, SpaceX)"
+      ],
+      "top_article_urls": [
+        "https://open.substack.com/pub/swyx/p/ainews-cerebras-60b-ipo-slowly-then",
+        "https://www.nytimes.com/2026/05/14/technology/cerebras-ipo-ai.html",
+        "https://www.ipox.com/ipo-calendar/cerebras-systems"
+      ]
+    }
+  ],
+  "summary": {
+    "total_newsletters": 2,
+    "critical": 1,
+    "high": 1,
+    "low": 0,
+    "not_relevant": 0,
+    "recommended_actions": [
+      "CRITICAL: Create entities/cerebras.md with IPO details, financial metrics, WSE-3 architecture, and competitive positioning",
+      "HIGH: Update entities/openai-codex.md with mobile capabilities, enterprise features (HIPAA, remote SSH, programmatic access)",
+      "HIGH: Create events/ai-ipo-wave-2026.md as timeline page covering Cerebras IPO and upcoming OpenAI/Anthropic/SpaceX listings",
+      "Fetch and ingest top article URLs from both newsletters for deeper wiki content"
+    ]
+  }
+}

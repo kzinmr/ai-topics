@@ -6,7 +6,7 @@ updated: 2026-05-04
 tags:
   - nlp
   - person
-  - academic
+  - research
   - curriculum
   - education
 aliases: ["yoavg"]

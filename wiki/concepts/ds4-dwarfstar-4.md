@@ -11,7 +11,7 @@ tags:
   - open-source
   - tool
   - coding-agent
-  - apple-silicon
+  - hardware
   - model
 aliases: [ds4, dwarfstar-4, antirez-ds4]
 sources:
@@ -46,14 +46,20 @@ The project represents a significant milestone: antirez describes it as the **fi
 2. **Coding agent integration** — built-in coding agent as part of the DS4 project (not an external harness)
 3. **Dedicated CI hardware** — a home server to run continuous integration for long-term quality
 4. **More ports and platform support**
-5. **Distributed inference** — both serial and parallel modes, enabling larger-than-RAM models across multiple machines
-6. **Model-specific variants** — plans for ds4-coding, ds4-legal, ds4-medical expert variants for domain-specific use
+5. **Distributed inference** — both serial and parallel modes, enabling larger-than-RAM models across multiple machines (antirez describes this as "a very important point")
+6. **Model-specific variants** — plans for ds4-coding, ds4-legal, ds4-medical expert variants. Philosophy: "you just load what you need depending on the question." Not tied to MoE architecture — these are separate fine-tuned checkpoints, not a single model with expert routing.
+
+### Model-Agnostic Philosophy
+
+Antirez explicitly states DS4 is not tied to DeepSeek V4 Flash forever. The project will track "the best current open weights model that is *practically fast* on a high-end Mac or 'GPU in a box' gear (like the DGX Spark)." The next expected contender is V4 Flash's upcoming checkpoint, potentially a coding-tuned version.
 
 ## Key Insight
 
 > "It is the first time since I play with local inference that I find myself using a local model for serious stuff that I would normally ask to Claude / GPT. This, I think, is really a big thing."
 
-The combination of (a) a quasi-frontier open-weights model, (b) asymmetric quantization that works, and (c) sufficient consumer hardware (96-128GB Macs) has created a tipping point for local AI. Antirez's larger point: **"AI is too critical to be just a provided service."**
+> "AI is too critical to be just a provided service."
+
+Antirez frames the local vs. cloud experience as a spectrum: **A** = the traditional small local model experience, **B** = the frontier model you use online. DS4 is "a lot more B than A" — a qualitative shift, not just incremental improvement. The combination of (a) a quasi-frontier open-weights model, (b) asymmetric quantization that works, and (c) sufficient consumer hardware (96-128GB Macs) has created a tipping point for local AI.
 
 ## Related Pages
 

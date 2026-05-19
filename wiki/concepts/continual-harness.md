@@ -4,7 +4,11 @@ created: 2026-05-14
 updated: 2026-05-14
 type: concept
 status: active
-tags: [ai-agents, agent-harness, self-improving, agent-loop, harness-engineering]
+tags:
+  - ai-agents
+  - harness-engineering
+  - self-improving
+  - agent-loop
 sources: [raw/articles/2026-05-13_sethkarten_continual-harness.md]
 aliases: ["Continual Harness Framework", "Online Harness Adaptation"]
 related: [concepts/harness-engineering, concepts/grpo, entities/seth-karten, entities/ryan-lopopolo]

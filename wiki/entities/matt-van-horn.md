@@ -1,7 +1,7 @@
 ---
 title: Matt Van Horn
 created: 2026-05-09
-updated: 2026-05-10
+updated: 2026-05-15
 type: entity
 tags:
   - person
@@ -9,12 +9,14 @@ tags:
   - ai-adoption
   - ai-agents
   - company
+  - claude-code
 aliases:
   - mvanhorn
   - '@mvanhorn'
   - Matt Van Horn
 sources:
   - raw/articles/2026-04-19_mvanhorn_hermes-agent-use-cases-30days.md
+  - raw/articles/2026-03-22_mvanhorn_claude-code-hacks.md
   - https://x.com/mvanhorn/status/2045935785661349956
   - https://en.wikipedia.org/wiki/Matt_Van_Horn
   - https://www.linkedin.com/in/mattvanhorn/
@@ -24,6 +26,7 @@ related:
   - "[[concepts/hermes-agent-use-cases]]"
   - "[[concepts/reflexive-ai]]"
   - "[[entities/tobi-lutke]]"
+  - "[[concepts/claude-code-goal]]"
 ---
 
 # Matt Van Horn
@@ -48,6 +51,17 @@ Based in Seattle, WA, Van Horn now focuses on AI research and tooling. His recen
 | 2025– | Independent | Builder/Researcher | Building again. Runs @slashlast30days research tool. |
 
 ## Key Contributions
+
+### Claude Code Workflow Philosophy (March 2026)
+Authored "Every Claude Code Hack I Know" — a widely-shared X Article documenting his voice-driven, plan-first Claude Code workflow:
+- **Plan-first discipline**: `/ce:plan` for every idea, bug, or error immediately
+- **Voice-driven development**: Using [[entities/monologue|Monologue]] voice app to talk to Claude Code
+- **No-IDE philosophy**: "Just plan.md files and voice" — seven complete rewrites of the article using this method
+- **Parallel sessions**: 4-6 Claude Code sessions running concurrently on a Mac Mini
+- **Granola MCP integration**: Meeting context flows directly into plan.md via MCP
+- **Notable OSS contributions using this workflow**: Python, OpenCV, Vercel Agent Browser, OpenClaw, Zed, Paperclip, Compound Engineering
+
+Related: [[raw/articles/2026-03-22_mvanhorn_claude-code-hacks.md]] (metadata-only, auth-walled X Article)
 
 ### Hermes Agent Community Analysis (April 2026)
 Authored a comprehensive 30-day analysis of Hermes Agent use cases across 7 platforms:

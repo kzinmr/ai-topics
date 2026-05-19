@@ -3,7 +3,15 @@ title: "Sierra"
 created: 2026-05-05
 updated: 2026-05-14
 type: entity
-tags: [company, ai-agents, product, platform, valuation, benchmark, evaluation, research]
+tags:
+  - company
+  - ai-agents
+  - product
+  - platform
+  - valuation
+  - benchmark
+  - evaluation
+  - lab
 sources:
   - raw/newsletters/2026-05-04-ainews-the-other-vs-the-utility.md
   - https://www.cnbc.com/2026/05/04/bret-taylor-sierra-fundraise-openai.html

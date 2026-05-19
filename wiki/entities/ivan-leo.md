@@ -7,7 +7,7 @@ status: L2
 tags:
   - person
   - ai-agents
-  - agent-harness
+  - harness-engineering
   - coding-agents
 aliases: [ivan-leo,'@ivanleomk']
 sources:

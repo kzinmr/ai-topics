@@ -3,7 +3,7 @@ title: OpenClaw
 type: entity
 aliases: [openclaw, open-claw, peter-steinberger-openclaw]
 created: 2026-04-15
-updated: 2026-05-14
+updated: 2026-05-17
 status: L2
 sources:
   - https://github.com/NVIDIA/OpenClaw
@@ -13,7 +13,8 @@ sources:
   - https://blog.kilo.ai/p/hermes-vs-openclaw-when-to-reach
   - https://kilo.ai/openclaw/vs-hermes
   - https://docs.openclaw.ai/tools/acp-agents
-tags: [entity, framework, local-llm, open-source, agent-communication, agent-architecture, orchestration]
+  - https://snowan.gitbook.io/study-notes/ai-blogs/openclaw-memory-system-deep-dive
+tags: [entity, framework, local-llm, open-source, agent-communication, agent-architecture, orchestration, memory-systems]
 ---
 
 # OpenClaw
@@ -135,16 +136,77 @@ on_tool_result    → データベース記録 / 観測可能性
 
 コアループはフックの存在を**一切知らない** — `emit()` を呼ぶだけ。Telegram連携もロギングも、コアループに1行も変更を加えずに追加できる。
 
-### Memory Compaction（Markdownメモリ圧縮）
+### Memory System（ファイルファースト・ハイブリッド検索メモリ） [[comparisons/agent-memory-systems-comparison]]
 
-ベクトルDBや埋め込みを使わないシンプルなアプローチ：
+OpenClawは **ファイルを唯一の真実源（source of truth）** とするMarkdown駆動メモリシステムを採用。従来のRAGのようなベクトルDB依存を排し、**ハイブリッド検索（BM25 + ベクトル）** と **埋め込みプロバイダーの自動選択** を特徴とする。
 
-1. 会話が閾値（~8K tokens）を超えたら、別の LLM コールで要約
-2. タイムスタンプ付き Markdown ファイルとして `memory/` に追記
-3. エージェントは起動時・必要時にこのファイルを読み返す
-4. 生の会話トレース（JSON）も SQLite に保存されるが、**主要な検索メカニズムは Markdown ファイル**
+出典: [[raw/articles/2026-01-25_snowan-gitbook_openclaw-memory-system-deep-dive]] (OpenClaw commit f99e3dd, Jan 2026)
 
-> *"People are so surprised that something simple like appending summaries to a markdown file works so well for memories."*
+#### メモリの3層構造
+
+| 層 | 保存場所 | 内容 | 読み込み条件 |
+|---|---|---|---|
+| **Ephemeral（日次ログ）** | `memory/YYYY-MM-DD.md` | 日々の活動・判断の追記型ログ | 今日＋昨日のログをセッション開始時に自動読み込み |
+| **Durable（永続知識）** | `MEMORY.md` | 重要な決定・プロジェクト規約・長期TODO | **プライベートセッションのみ** — グループコンテキストでは非公開 |
+| **Session（会話履歴）** | `sessions/YYYY-MM-DD-<slug>.md` | LLM生成の説明的スラグ付き会話トランスクリプト | セッション開始時に前回会話を自動保存、全文検索可能 |
+
+#### チャンキングアルゴリズム
+
+スライディングウィンドウ + オーバーラップ方式:
+- **ターゲット**: ~400トークン/チャンク（~1600文字）
+- **オーバーラップ**: 80トークン（~320文字）で境界のコンテキスト切れを防止
+- **行認識**: 行番号付きで正確なソース帰属が可能
+- **SHA-256ハッシュによる重複排除**: 同一コンテンツ → キャッシュヒット → 再埋め込み不要
+
+#### ハイブリッド検索: BM25 + ベクトル
+
+重み付きスコア融合（デフォルト: **70% ベクトル + 30% BM25**）:
+
+| 検索方式 | 得意分野 | 実装 |
+|---|---|---|
+| **ベクトル検索（意味的類似度）** | 概念マッチ（"gateway host" ≈ "machine running gateway"） | SQLite + sqlite-vec拡張 / コサイン類似度 |
+| **BM25検索（語彙マッチ）** | 正確なトークン（エラーコード、関数名、ID） | SQLite FTS5 |
+
+#### 埋め込みプロバイダー自動選択
+
+**Local → OpenAI → Gemini** のフォールバックチェーン:
+1. **Local** (node-llama-cpp): embeddinggemma-300M (~600MB)、プライバシー重視・オフライン可・低速
+2. **OpenAI** (text-embedding-3-small): 1536次元、高速、Batch APIで50%コスト削減
+3. **Gemini** (gemini-embedding-001): 768次元、無料枠あり
+
+#### キャッシュファースト埋め込み + バッチ最適化
+
+- SHA-256ハッシュベースの重複排除: 同一段落が複数ファイルに出現 → 1回だけ埋め込み
+- OpenAI Batch API: 同期API比50%コスト削減
+- 実例: 10,000チャンク → 同期$0.20 → Batch $0.10 → キャッシュ50%ヒットで$0.05
+
+#### Pre-Compaction Flush（コンパクション前自動フラッシュ） [[concepts/context-compaction]]
+
+OpenClawの最も革新的なメモリ機能。会話がコンテキストウィンドウ制限に近づくと、**サイレントなエージェントターン** を発動し、コンテキスト圧縮 **前** に永続メモリへの書き込みを促す。
+
+- 200Kコンテキストの場合、約80%使用時に発動
+- 通常は `NO_REPLY`（保存すべき重要事項がない場合は無言）
+- コンパクションサイクルごとに1回のみ（スパム防止）
+- Read-onlyサンドボックスモードではスキップ
+
+#### セッションインデックス
+
+- JSONL解析でユーザー/アシスタントメッセージを抽出
+- デルタベースの増分インデックス（100KB or 50メッセージ閾値）
+- デバウンス付きバックグラウンド同期
+
+#### メモリ検索ツール
+
+エージェントが利用できる2つのツール:
+- **`memory_search`**: ~700文字のスニペットを返す（ファイルパス、行範囲、関連度スコア付き）
+- **`memory_get`**: 特定のメモリファイルを行範囲フィルタ付きで読み取り
+
+#### 実測パフォーマンス
+
+- Local埋め込み: ~50 tokens/sec（M1 Mac, node-llama-cpp）
+- OpenAI埋め込み: ~1000 tokens/sec（バッチ使用時）
+- 検索レイテンシ: <100ms（10Kチャンク, ハイブリッド検索）
+- インデックスサイズ: ~5KB / 1Kトークン（1536次元埋め込み）
 
 ### Tool Factory & Self-Extension（ツールファクトリーと自己拡張）
 
@@ -201,6 +263,7 @@ See [[comparisons/hermes-vs-openclaw-architecture]] for the full comparison.
 
 ## Related
 - [[concepts/openclaw]]
+- [[comparisons/agent-memory-systems-comparison]] — OpenClaw/Claude Code/Codex メモリシステム比較
 - [[entities/telegram-managed-bots]]
 
 - [[entities/nvidia-nemoclaw]] — NemoClaw secure wrapper for OpenClaw

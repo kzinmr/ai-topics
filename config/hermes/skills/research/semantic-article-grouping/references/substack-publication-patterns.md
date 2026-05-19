@@ -48,6 +48,24 @@ But you need to know the handle. Map known publication_ids to handles:
 
 For unknown publication_ids, extract the handle from any other link in the checkpoint that has a known pattern (e.g., the `/@{handle}` author link).
 
+### Strategy C: substack.com/home/post/p-{post_id} (fallback when custom domain fails)
+
+When both `open.substack.com/pub/{pub}/p/{slug}` AND the custom domain (e.g., `latent.space`) return `http_error`, try the Substack internal post page:
+
+```
+https://substack.com/home/post/p-{post_id}
+```
+
+This uses the **post ID** directly, bypassing slug matching and custom domain DNS resolution. In May 2026, the AINews post "Cerebras' $60B IPO" (`post_id=197953407`) returned `http_error` on both `open.substack.com/pub/swyx/p/...` and `www.latent.space/ainews-...` (404), but `substack.com/home/post/p-197953407` returned HTTP 200 with full HTML content (235KB).
+
+**How to use**: Run `web_extract` on the `substack.com/home/post/p-{post_id}` URL. If `web_extract` fails, use the `curl + subprocess` HTML fallback approach from the main SKILL.md — the HTML response is typically large (200K+) and contains embedded external article links.
+
+**Limitation**: This URL format has no browser JS rendering — content after paywall gate won't be visible. But the HTML will contain:
+- The free preview text
+- All embedded external link `<a>` tags (curated articles, X posts, YouTube embeds)
+- Section anchor links (`/i/{post_id}/...` — filter these out)
+- Sponsor/ad links
+
 ## Paid/Paywalled Detection
 
 | Signal | Meaning |
@@ -81,3 +99,5 @@ Paywalled substack posts still provide value:
 - Heavy use of X/Twitter embeds for source curation
 - Dario Amodei quotes and event recaps are common premium content
 - Free preview typically covers: event summary, headline details, 2-3 embedded X posts with key quotes
+- **Section anchor pattern**: Posts contain anchored sub-sections at paths like `/i/{post_id}/{n}-{slug}` (e.g., `/i/197305557/1-qwen-36-local-inference-advances`, `/i/197305557/ai-twitter-recap`). These are internal anchor links to parts of the same newsletter post, NOT separate articles. When extracting external links from the HTML, these can be filtered out by recognizing the `/i/{post_id}/` prefix pattern.
+- **External link density**: A single AINews post typically contains 30-80 external links (X/Twitter posts, arXiv papers, GitHub repos, Reddit threads, YouTube videos). Most are embedded X posts. Prioritize articles with substantive external content (arXiv papers, blog posts, GitHub repos) over individual X post embeds.

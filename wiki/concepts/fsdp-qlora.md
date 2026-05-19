@@ -7,7 +7,7 @@ tags:
   - concept
   - fine-tuning
   - training
-  - memory-efficiency
+  - optimization
   - quantization
 aliases:
   - FSDP+Q-LoRA

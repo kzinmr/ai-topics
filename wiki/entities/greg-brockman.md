@@ -136,6 +136,38 @@ Musk sued OpenAI, Altman, and Brockman (March 2024, refiled August 2024) allegin
 - Brockman and Altman defended their integrated safety framework
 - Brockman took a sabbatical (August–November 2024) amid talent attrition, returned without reported ties to the safety disputes
 
+## May 2026 Product Reorganization
+
+In May 2026, OpenAI announced a major product reorganization that consolidated its product efforts under Brockman's leadership:
+
+### Product Consolidation
+- **ChatGPT**, **Codex**, and the **developer API** merged into one unified core product team
+- **Fidji Simo** (CEO of AGI Deployment) remained on medical leave; Brockman's interim product oversight became permanent
+- **Thibault Sottiaux** (head of Codex) tapped to lead core product and platform teams
+- **Nick Turley** (head of ChatGPT, 900M+ weekly active users) moved to lead enterprise products
+- **Ashley Alexander** (former Instagram VP) appointed to lead consumer product unit
+
+### Strategic Rationale
+Brockman stated in a staff memo: *"We're consolidating our product efforts to execute with maximum focus toward the agentic future, to win across both consumer and enterprise."* He noted that OpenAI's products are "naturally converging," with Codex increasingly powering both consumer and enterprise offerings.
+
+### The "Super App" Vision
+OpenAI is developing a unified desktop application combining:
+- **Codex** (AI coding agent)
+- **ChatGPT** (conversational AI)
+- **Atlas** (OpenAI's web browser)
+
+### Competitive Context
+The reorganization came as OpenAI faced increasing pressure from:
+- **Anthropic** in coding domains (Claude Code)
+- **Google** in consumer chatbots (Gemini)
+- Leadership aimed to simplify product offerings ahead of a planned **IPO**
+
+### Related Departures
+Other OpenAI executives left the company in the same period:
+- **Kevin Weil** — Head of AI workspace for scientists
+- **Bill Peebles** — Head of Sora
+- **Srinivas Narayanan** — CTO of enterprise applications
+
 ## Key Quotes
 
 > *"We're working to build as much compute as we can."* — October 6, 2025

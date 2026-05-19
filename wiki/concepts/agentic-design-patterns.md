@@ -3,7 +3,10 @@ title: Agentic Design Patterns
 created: 2026-04-25
 updated: 2026-04-25
 type: concept
-tags: [framework, pattern, architecture]
+tags:
+  - framework
+  - design-patterns
+  - architecture
 sources: [raw/articles/2026-04-25-agentic-design-patterns-arxiv.md]
 ---
 

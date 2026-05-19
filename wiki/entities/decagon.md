@@ -2,7 +2,7 @@
 title: "Decagon"
 type: entity
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-17
 tags:
   - company
   - ai-agents
@@ -35,6 +35,20 @@ Decagon is an AI-powered customer support platform that builds, optimizes, and s
 ## Products & Technology
 
 Decagon's platform includes AI agents defined in natural language via Agent Operating Procedures (AOPs), Agent Workbench for debugging, Watchtower for QA monitoring, Proactive Agents for outbound engagement, and Duet for assisted agent building. Supports voice 2.0 with real-time streaming, simulations for testing, and full auditability.
+
+
+
+### Agent Engineering at Decagon
+
+Decagon employs Applied Software Engineers (ASWEs) focused on agent engineering — building at the frontier of AI agent capabilities:
+
+- **Technical scope**: Prompt-to-agents wiring, knowledge bases, tools, multi-channel communication, latency optimization (time-to-first-token benchmarking), reliability infrastructure (retries, failover, monitoring)
+- **Product impact**: Treats customer bespoke requirements as platform improvements (e.g., Block/Square/Cash App voice interaction improvements shipped as product features for all customers)
+- **Customer outcomes**: ASWEs directly influence deals, revenue, and product direction
+- **Cross-functional**: Works with orchestration, research, infrastructure, product, and APM teams
+
+Authored by Kathryn Zhou (May 11, 2026).
+
 
 ## Related
 

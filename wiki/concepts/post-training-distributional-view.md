@@ -4,7 +4,11 @@ created: 2026-05-11
 updated: 2026-05-11
 type: concept
 status: L2
-tags: [post-training, distillation, fine-tuning, reinforcement-learning, inference]
+tags:
+  - training
+  - fine-tuning
+  - reinforcement-learning
+  - inference
 aliases: ["Distributional Lens on Post-Training", "SFT vs RL vs OPD"]
 sources: [raw/articles/2026-05-10_nrehiew_sft-rl-opd-distributional-lens.md]
 related: [entities/nrehiew, concepts/on-policy-distillation, concepts/grpo]

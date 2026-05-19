@@ -3,7 +3,16 @@ title: "AI Engineer (YouTube Channel)"
 created: 2026-05-13
 updated: 2026-05-13
 type: entity
-tags: [youtube, ai-agents, community, developer-experience, agentic-engineering, ai-infrastructure, ai-coding, ambient-agents, agent-training]
+tags:
+  - youtube
+  - ai-agents
+  - community
+  - developer-experience
+  - agentic-engineering
+  - infrastructure
+  - coding-agents
+  - ambient-agents
+  - agent-training
 sources: [https://www.youtube.com/@aidotengineer, https://ai.engineer, "[[raw/articles/2025-06-10_rlancemartin_state-of-ai-agents-aie-2025]]"]
 ---
 

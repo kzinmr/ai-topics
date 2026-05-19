@@ -4,8 +4,7 @@ type: concept
 created: 2026-05-13
 updated: 2026-05-13
 tags:
-  - ai-coding
-  - vibe-coding
+  - coding-agents
   - quality-assurance
   - developer-experience
   - multi-agent

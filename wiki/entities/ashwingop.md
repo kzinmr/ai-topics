@@ -3,7 +3,12 @@ title: "Ashwin Gopinath"
 handle: "@ashwingop"
 created: 2026-05-12
 updated: 2026-05-12
-tags: [person, ai-agents, memory-systems, enterprise-ai, context-management]
+tags:
+  - person
+  - ai-agents
+  - memory-systems
+  - company
+  - context-management
 aliases: ["ashwingop", "Ashwin Gopinath", "AG"]
 ---
 

@@ -6,7 +6,6 @@ updated: 2026-05-06
 status: L1
 tags:
   - tool
-  - datasette
   - data-science
   - person
 sources:

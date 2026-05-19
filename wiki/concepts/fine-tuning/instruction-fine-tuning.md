@@ -3,7 +3,10 @@ title: "Instruction Fine-Tuning (IFT)"
 type: concept
 created: 2026-04-28
 updated: 2026-04-28
-tags: [fine-tuning, training, evaluation, instruction-tuning]
+tags:
+  - fine-tuning
+  - training
+  - evaluation
 sources:
   - https://www.gilesthomas.com/2026/04/llm-from-scratch-32l-interventions-instruction-fine-tuning-tests
   - https://crfm.stanford.edu/2023/03/13/alpaca.html

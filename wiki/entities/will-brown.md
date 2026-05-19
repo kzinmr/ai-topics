@@ -176,6 +176,7 @@ See [[concepts/rl-harness-lifecycle]] for the full analysis.
 
 ## Related
 
+- [[concepts/on-policy-distillation]] — Brown's deep gradient-geometric analysis of OPD vs SFT vs RL
 - [[concepts/fine-tuning/grpo-rl-training]] — Group Relative Policy Optimization, the technique Brown popularized for open-source reasoning model training
 - [[concepts/rl-harness-lifecycle]] — Co-evolutionary cycle of harnesses and RL training, coined by Brown
 - [[concepts/rlhf]] — Reinforcement Learning from Human Feedback, the broader alignment paradigm

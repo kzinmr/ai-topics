@@ -9,7 +9,7 @@ tags:
   - concept
   - methodology
   - software-engineering
-  - cognitive-science
+  - psychology
 status: active
 ---
 

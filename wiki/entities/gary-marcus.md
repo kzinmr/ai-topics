@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-18
 tags:
   - lab
   - benchmark
@@ -10,8 +10,12 @@ tags:
   - infrastructure
   - controversy
   - philosophy
+  - neurosymbolic
+  - world-models
+  - agent-safety
 sources:
   - raw/articles/garymarcus.substack.com--p-misplaced-panic-over-ai-progress--7aa50278.md
+  - raw/articles/garymarcus.substack.com--p-the-illusion-of-generative-ai-the--9225b4e4.md
 ---
 
 # Gary Marcus
@@ -54,7 +58,32 @@ A central theme in Marcus's work is that **reliability matters more than raw cap
 
 Marcus has long advocated for combining neural networks with symbolic reasoning systems. He argues that pure deep learning lacks the compositional structure needed for robust reasoning.
 
-## Key Works
+### US AI Policy Framework (May 2026)
+
+In May 2026, Marcus co-authored an essay in **Fortune** with Jeffrey Sonnenfeld and Stephen Henriques critiquing the current state of US AI policy:
+
+- **1,200 AI bills** introduced across US states (~150 enacted), but **no coherent national AI policy**
+- Proposed a **framework** "to ensure that the questions before state legislators, members of Congress, and federal agencies are the right questions, asked in the right order"
+- Warned against a "patchwork" of poorly coordinated legislation that "no one designed and few defend"
+- The essay aimed to provide structure rather than favor specific bills
+
+### The Illusion of Generative AI and the Case for Neurosymbolic AI (May 2026)
+
+In May 2026, Marcus participated in several high-profile interviews articulating a comprehensive critique of the generative AI paradigm:
+
+**With Brian Greene / World Science Festival**: Marcus argued that generative AI creates an **"illusion" of intelligence** — models produce fluent, convincing outputs without genuine understanding. The fluency masks fundamental unreliability.
+
+**With Zachary Karabell (Web Summit keynote)**: Marcus critiqued the **"insanity of massive bets on hyperscaling"** — the assumption that simply scaling up compute and data will solve AI's core problems. He argued this represents a dangerous concentration of resources on an unproven hypothesis.
+
+**With Will Wilson / Antithesis (Bug Bash 2026)**: Marcus made the technical case for **neurosymbolic AI and world models**, arguing that:
+- Pure neural approaches lack the compositional structure needed for robust reasoning
+- **World models** — internal representations of how the world works — are necessary for reliable AI behavior
+- **Software verification is more important than ever** in the LLM era, especially as companies increasingly rely on AI-generated code without formal correctness guarantees
+- The conference theme — "extracting reliable software from the slop factory" — encapsulates his view of current LLM outputs
+
+These interviews represent Marcus's most comprehensive public argument for why the AI field should diversify beyond pure scaling approaches and invest in hybrid systems combining neural networks with symbolic reasoning and formal verification.
+
+### Key Works
 
 ### Newsletter: Marcus on AI
 
@@ -82,4 +111,5 @@ Marcus has published extensively on AI limitations and the need for hybrid appro
 ## References
 
 - [Misplaced panic over AI progress](https://garymarcus.substack.com/p/misplaced-panic-over-ai-progress) (May 2026)
+- [The illusion of Generative AI, the insanity of massive bets on hyperscaling, and the case for world models and neurosymbolic AI](https://garymarcus.substack.com/p/the-illusion-of-generative-ai-the) (May 2026)
 - Marcus on AI Substack newsletter

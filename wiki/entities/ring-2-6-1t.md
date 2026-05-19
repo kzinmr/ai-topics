@@ -5,8 +5,6 @@ updated: 2026-05-13
 type: entity
 tags:
   - model
-  - mixture-of-experts
-  - moe
   - coding-agents
   - text-generation
 sources:

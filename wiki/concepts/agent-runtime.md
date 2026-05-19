@@ -5,13 +5,12 @@ updated: 2026-05-15
 type: concept
 tags:
   - agent-runtime
-  - agent-architecture
-  - ai-infrastructure
-  - agent-security
+  - architecture
+  - infrastructure
+  - agent-safety
   - isolation
   - sandbox
   - harness-engineering
-  - infrastructure
   - virtualization
   - technical-debt
 sources:

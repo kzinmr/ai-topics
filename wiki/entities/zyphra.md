@@ -19,8 +19,9 @@ sources:
   - https://www.zyphra.com/post/zaya1-vl-8b
   - https://pitchbook.com/profiles/company/437883-40
   - https://startup-seeker.com/company/zyphra~com
+  - raw/articles/zyphra.com--zaya1-8b-moe-amd-reasoning--2026-05-16.md
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-16
 ---
 
 # Zyphra

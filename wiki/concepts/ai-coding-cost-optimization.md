@@ -4,15 +4,13 @@ created: 2026-05-12
 updated: 2026-05-12
 type: concept
 tags:
-  - ai-coding
+  - coding-agents
   - optimization
   - economics
   - token-economics
   - model-routing
   - prompt-caching
   - context-engineering
-  - vibe-coding
-  - cost
 aliases: ["ai-coding-cost-optimization", "cut-ai-coding-bill"]
 sources:
   - "https://x.com/deronin_/status/2054255152555545079"

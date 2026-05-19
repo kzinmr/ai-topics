@@ -1,10 +1,16 @@
 ---
 title: Cerebras Systems
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-16
 type: entity
-tags: [entity, company, hardware, gpu, ai-infrastructure, inference, mlops]
-sources: [raw/newsletters/2026-05-13-cerebras-faster-tokens-please.md, raw/articles/2026-05-10_parallel-web-systems_cerebras-fact-checker.md]
+tags:
+  - entity
+  - company
+  - hardware
+  - infrastructure
+  - inference
+  - mlops
+sources: [raw/newsletters/2026-05-13-cerebras-faster-tokens-please.md, raw/articles/2026-05-10_parallel-web-systems_cerebras-fact-checker.md, raw/newsletters/2026-05-16-ainews-cerebras-60b-ipo-slowly-then-all-at-once.md]
 ---
 
 # Cerebras Systems
@@ -57,6 +63,8 @@ As SemiAnalysis notes, the sparse FLOPs number (125 PFLOPs) is marketed prominen
 
 In January 2026, Cerebras signed a deal with OpenAI to deliver **750 MW of AI compute capacity** through 2028, one of the largest AI infrastructure contracts ever disclosed. Valued at **$24.6B in remaining performance obligations** (RPO), this deal transformed Cerebras's financials and enabled its IPO. The capacity will come online in multiple tranches.
 
+In May 2026, Cerebras CFO **Bob Komin** confirmed that Cerebras is serving **trillion-parameter models**, including internal **OpenAI 5.4 and 5.5** models, and stated there is **"no limit"** to the model sizes Cerebras can serve. This directly links Cerebras's wafer-scale architecture to frontier model inference at OpenAI — not just training. TSMC wafer supply constraints remain a key risk through at least 2028.
+
 OpenAI's stated rationale: "Cerebras adds a dedicated low-latency inference solution to our platform. That means faster responses, more natural interactions, and a stronger foundation to scale real-time AI."
 
 ### Other Notable Customers
@@ -81,7 +89,7 @@ GSK, G42, AstraZeneca, AbbVie, TotalEnergies, Jasper, nference, Argonne National
 - **Sep 2025** — Raised $1.1B Series G at $8.1B valuation
 - **Oct 2025** — Withdrew IPO registration to focus on revenue growth
 - **Jan 2026** — Signed 750MW OpenAI compute deal ($10B+ initially, expanded to $24.6B RPO)
-- **May 2026** — Re-filed for IPO, trading expected May 13–14 at $125–135/share
+- **May 2026** — IPO completed. Stock (CBRS) ended first trading day at **$280/share**, giving Cerebras a **market capitalization of $60 billion** — more than double the expected $125–135/share range and $26–27B valuation. 28M Class A shares offered, raising ~$7.8B (vs planned $3.5–3.8B). One of the largest AI hardware IPOs in history.
 
 ## Strategic Positioning
 

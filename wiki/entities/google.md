@@ -2,10 +2,10 @@
 title: "Google (AI/ML)"
 type: entity
 created: 2026-04-25
-updated: 2026-05-09
+updated: 2026-05-18
 tags: [company, lab, product, platform, infrastructure]
 aliases: ["Google DeepMind", "Google Research"]
-sources: [raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md, raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md, raw/articles/2025-12-10_google-cloud_alphaevolve.md]
+sources: [raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md, raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md, raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md, raw/articles/2025-12-10_google-cloud_alphaevolve.md]
 ---
 # Google (AI/ML)
 
@@ -62,6 +62,36 @@ Google's hardware infrastructure advantage (May 2026):
 - Includes image generation capabilities
 - Loses aspect-ratio control compared to AI Studio
 - Adds watermark in bottom-right corner
+
+
+### Gemini Intelligence — Android Agentic AI (May 2026)
+
+Google is building **Gemini Intelligence**, an agentic AI layer on Android that can execute multi-step tasks across apps:
+
+- **Cross-app workflows**: Generate event flyers → search Expedia → book travel — without manual app switching
+- **Deployment**: Rolling out to Pixel and Samsung Galaxy devices in summer 2026
+- **Positioning**: Android's answer to Apple Intelligence; leverages Gemini's on-device and cloud capabilities
+- **Significance**: Positions Google as a platform-level AI agent provider, competing with assistants from OpenAI and Anthropic
+
+### Magic Pointer — AI-Enabled Cursor (May 2026)
+
+Google DeepMind's experimental reimagining of the mouse pointer for the AI era, powered by Gemini:
+
+- **Four design principles**: Maintain the flow, Show and tell, Embrace "this" and "that", Turn pixels into actionable entities
+- **Use cases**: Point at PDF → get summary → paste into email; hover over table → request chart; select products → compare
+- **Integration**: Rolling out in Chrome (Gemini in Chrome) and Googlebook laptop
+- **Philosophy**: AI that adapts to human behavior rather than forcing users into separate AI windows
+- Available to try in Google AI Studio
+
+### Project Suncatcher — Space-Based AI Infrastructure
+
+Google is in discussions with SpaceX about **Project Suncatcher**, a concept for low-Earth orbit data centers:
+
+- **Target**: Early 2027 launch
+- **Advantage**: Orbital solar power is ~8× more efficient than ground-based solar
+- **Rationale**: Break through terrestrial compute constraints by leveraging SpaceX's launch capacity
+- **Related**: SpaceX holds a $60B option to acquire Cursor (see [[entities/openai]])
+
 
 ## Image Generation Strategy
 
