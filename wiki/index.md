@@ -807,6 +807,7 @@
 - [[concepts/infrastructure-noise-agent-evals]] — エージェント型コーディング評価におけるインフラノイズの定量分析。Terminal-Bench 2.0でリソース1x→uncapped間で6pp差（p<0.01）。3pp未満のリーダーボード差は懐疑的に。時刻・並列度・帯域幅も隠れた交絡因子。
 - [[concepts/interaction-models]] — Thinking Machines Lab の研究プレビュー。200msマイクロターンでマルチモーダル・リアルタイムインタラクションをネイティブ処理。音声・映像・テキストを同時入出力。非同期バックグラウンドモデルと連携。
 - [[concepts/interpretability]] — Interpretability（機械的解釈可能性）: LLM内部の特徴と回路を可視化する研究分野。AnthropicのScaling Monosemanticity、Golden Gate Claude、Entropix。RLHF代替としての推論時steering、性能と制御性のトレードオフに対応。
+- [[concepts/judgment-list]] — Judgment List: 検索関連性評価の基盤ツール。クエリ-文書-適合度グレードの3つ組でテストスイート・訓練データ・品質ゲートを兼ねる。DCG/NDCG計算、implicit/explicit/crowdsourced判断源、LTRとの関係、\"grug-brained evals\"哲学。Doug Turnbullが提唱。
 - [[concepts/agent-development-lifecycle]] — Agent Development Lifecycle (ADLC) — Build→Test→Deploy→Monitor framework by Harrison Chase (LangChain). Governance layer for cost, tool access, discoverability. Operational roles: Agent Supervisor, QA Lead, AI Ops Manager, Chief AI Officer.
 - [[concepts/carlini-c-compiler-agents]] — Nicholas Carliniの実験: 16体のClaudeエージェントを2,000セッション並列稼働、$20Kで100K行のRust Cコンパイラを構築しLinux 6.9カーネルをコンパイル成功。Infinite Agent Loop、Gitベースタスクロック、並列エージェント設計の実践的教訓。
 - [[concepts/caisi-federal-ai-review]] — CAISI連邦AI事前審査: NIST商務省傘下のCenter for AI Standards and Innovation。2026年5月、Google DeepMind/Microsoft/xAIがOpenAI/Anthropicに続きモデル事前公開前評価契約に参加。40件以上の評価完了、TRAINS Taskforce、国家安全保障（サイバー・バイオ・化学）評価。Mythosを契機に制度化。

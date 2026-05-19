@@ -2,7 +2,7 @@
 title: Doug Turnbull
 type: entity
 created: 2026-04-10
-updated: 2026-05-18
+updated: 2026-05-19
 tags:
   - person
   - developer-tooling
@@ -78,6 +78,7 @@ See [[doug-turnbull-blog]] for summaries of:
 
 - [[concepts/elasticsearch]] — Primary search engine in his early work
 - [[concepts/apache-solr]] — Search platform he worked with extensively
+- [[concepts/judgment-list]] — Curated query-document relevance grades as test suites and training data
 - [[concepts/learning-to-rank]] — ML approach to combining ranking signals
 - [[concepts/bm25]] — Probabilistic ranking function
 - [[concepts/ndcg]] — Normalized Discounted Cumulative Gain

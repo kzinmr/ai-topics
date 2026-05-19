@@ -1,7 +1,7 @@
 ---
 title: NDCG (Normalized Discounted Cumulative Gain)
 created: 2026-05-17
-updated: 2026-05-17
+updated: 2026-05-19
 type: concept
 tags:
   - evaluation
@@ -298,6 +298,7 @@ NDCG is the industry-standard metric for search relevance, but it's a tool with 
 
 ## See Also
 
+- [[concepts/judgment-list]] — The foundational data structure that NDCG evaluates against
 - [[entities/softwaredoug]] — Doug Turnbull, author of the "Cheat at Search Essentials" training
 - [Search Evaluation Slides](https://docs.google.com/presentation/d/1WJknXxaim_Z8aiVuQx6wr7W6MAWeaUJK0-NrgcEVQfQ) — Source presentation
 - [Maven: Cheat at Search Essentials](https://maven.com/softwaredoug/cheat-at-search) — Course with promo code `ndcgrocks`

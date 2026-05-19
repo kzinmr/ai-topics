@@ -3,6 +3,17 @@
 ### Auto-fixed
 - wiki/log.md — Removed duplicate `# Wiki Log` header at line 280 (second occurrence)
 - wiki/log.md — Removed 2 orphaned `###` timestamp lines that duplicated `## [YYYY-MM-DD]` entries
+
+## [2026-05-19] hermes | Create judgment-list concept page from Doug Turnbull article
+
+### Created
+- `wiki/raw/articles/2021-02-21_softwaredoug_judgment-list.md` — Saved Doug Turnbull's "What Is a Judgment List?" article (published 2021-02-21)
+- `wiki/concepts/judgment-list.md` — New concept page: Judgment List methodology for search relevance evaluation
+
+### Updated
+- `wiki/index.md` — Added judgment-list entry under Concepts
+- `wiki/entities/doug-turnbull.md` — Added [[concepts/judgment-list]] cross-link in Related section
+- `wiki/concepts/ndcg.md` — Added [[concepts/judgment-list]] cross-link in See Also
 - wiki/log.md — Removed 1 orphaned orphan `###` timestamp line (OPSD article ingestion)
 
 ### Verified (no issues)
