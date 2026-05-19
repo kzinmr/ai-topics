@@ -905,6 +905,7 @@
 - [[concepts/rich-suttons-bitter-lesson]] — Rich SuttonのBitter Lesson（2019）。計算資源を活用する汎用手法が手作りの構造に最終的に勝つ。AIエンジニアリングへの応用、Hyung Won Chungの「構造を加えて後で取り除く」フレームワーク、Lance Martinのopen-deep-research事例研究
 - [[concepts/chartqa]] — ChartQA — チャート理解QAベンチマーク。Statista/Pew/OECD等から収集した実チャート。32.7K QAペア。ノイジーなテストデータが問題。
 - [[concepts/china-agentic-coding-sprint]] — China's rapid convergence on SWE-Bench Pro: Kimi K2.6, MiniMax M2.7, Z.ai GLM-5.1 all scoring 56-59 in 12-day window. Open weights, below Western pricing. "China is 6-9 months behind" framing no longer holds.
+- [[concepts/china-openclaw-agentic-boom]] — 2026年初頭のOpenClaw中国爆発的普及現象。低価格API・DeepSeek効果・政府補助金で構造的転換。クラウド5社同時争奪戦、13.5万露出・42K認証バイパスセキュリティ危機、Taobao/XianyuでRMB 50-700のインストール市場、深センOPC補助金最大$1.4M。→ [[entities/openclaw]], [[concepts/china-agentic-coding-sprint]]
 - [[concepts/context-providers]] — エージェントとツールの間にあるコンテキスト供給レイヤーの設計パターン
 - [[concepts/context-repositories]] — Letta's git-based agent memory: local filesystem + git versioning. Progressive disclosure via file hierarchy + YAML frontmatter. Multi-subagent concurrent memory via git worktrees.
 - [[concepts/contextual-retrieval]] — AnthropicのRAG改善手法。チャンクembedding/BM25インデックス化前にClaudeで文書全体の文脈を自動付加。Contextual Embeddings + Contextual BM25の組み合わせで検索失敗率49%削減、reranking追加で67%削減。Prompt Caching活用で100万ドキュメントトークンあたり$1.02。

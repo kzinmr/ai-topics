@@ -1,3 +1,23 @@
+## [2026-05-19] ingest | China OpenClaw Agentic AI Boom (China Briefing article)
+
+### Summary
+- Discord user request (kzinmr): China Briefing article on OpenClaw's 2026 viral adoption in China → created comprehensive concept page + raw article + enriched existing entity.
+
+### Pages Created
+- [[concepts/china-openclaw-agentic-boom]] — 中国でのOpenClaw爆発的普及現象を包括的にカバー。3つの構造的要因（世界最安API・DeepSeek効果・推論需要シフト）、ClawHub/skills.shスキルエコシステムとセキュリティ危機（13%脆弱性、13.5万露出インスタンス）、クラウド5社同時争奪戦（Tencent QClaw/WorkBuddy/ClawPro、ByteDance公式中国ミラー、Alibaba Qwen統合3億MAU）、政府補助金（深センOPC向け$1.4M）、AIoT収束（Xiaomi/Huawei）、外資系企業への示唆をカバー。
+- [[raw/articles/2026-04-14_china-briefing_china-agentic-ai-openclaw-boom]] — 生記事（Giulia Interesse, April 14, 2026）
+
+### Pages Updated
+- [[entities/openclaw]] — **China Adoption & Market Impact**セクション追加。タグに`china`, `agent-security`追加。Media & PressにChina Briefing記事リンク追加。frontmatter updated, source追加。
+
+### Index
+- `index.md`: +1 conceptsエントリ（china-openclaw-agentic-boom）
+
+### Cross-references
+- [[entities/openclaw]] → [[concepts/china-openclaw-agentic-boom]]
+- [[concepts/china-openclaw-agentic-boom]] → [[entities/openclaw]], [[entities/deepseek]], [[concepts/china-agentic-coding-sprint]], [[concepts/us-china-ai-competition]], [[concepts/zero-trust-agentic-ai]], [[concepts/agentic-ai-governance]], [[entities/minimax]], [[entities/kimi]], [[concepts/local-llm/model-distillation]], [[comparisons/hermes-vs-openclaw-architecture]]
+
+---
 ## [2026-05-18] ingest | X bookmarks — Pi Coding Agent metadata-only record
 
 ### Summary

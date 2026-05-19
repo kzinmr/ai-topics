@@ -3,7 +3,7 @@ title: OpenClaw
 type: entity
 aliases: [openclaw, open-claw, peter-steinberger-openclaw]
 created: 2026-04-15
-updated: 2026-05-17
+updated: 2026-05-19
 status: L2
 sources:
   - https://github.com/NVIDIA/OpenClaw
@@ -14,7 +14,8 @@ sources:
   - https://kilo.ai/openclaw/vs-hermes
   - https://docs.openclaw.ai/tools/acp-agents
   - https://snowan.gitbook.io/study-notes/ai-blogs/openclaw-memory-system-deep-dive
-tags: [entity, framework, local-llm, open-source, agent-communication, agent-architecture, orchestration, memory-systems]
+  - raw/articles/2026-04-14_china-briefing_china-agentic-ai-openclaw-boom.md
+tags: [entity, framework, local-llm, open-source, agent-communication, agent-architecture, orchestration, memory-systems, china, agent-security]
 ---
 
 # OpenClaw
@@ -279,6 +280,37 @@ See [[comparisons/hermes-vs-openclaw-architecture]] for the full comparison.
 - docs.openclaw.ai--pi-integration-architecture
 - [[raw/articles/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]] — OpenAI Builders Unscripted interview with Peter Steinberger (Feb 2026)
 
+## China Adoption & Market Impact (2026)
+
+2026年初頭、OpenClawは中国でウイルス的に普及し、開発者コミュニティからクラウド大手・地方政府・大企業を巻き込む全国的な現象へ発展した。詳細は [[concepts/china-openclaw-agentic-boom]] を参照。
+
+### 普及を可能にした構造的要因
+
+1. **世界最安のAPI推論コスト**: Alibaba・Baidu・ByteDance・MiniMax等の価格競争により、高頻度エージェントワークフローが個人・SMBでも経済的に成立
+2. **DeepSeek効果**: MoE・スパースアテンション・MLAでフロンティア級推論の計算要件を削減
+3. **推論側需要シフト**: 中国の1日あたりAIトークン消費量が100兆→140兆トークン（2025年末→2026年3月、+40%）
+
+### 大手クラウド5社の同時対応
+
+全5社（Alibaba Cloud、Tencent Cloud、ByteDance Volcano Engine、JD Cloud、Baidu Cloud）が数日以内にワンクリックOpenClawデプロイを提供。TencentはQClaw（WeChatミニプログラム、13億ユーザー）、WorkBuddy、ClawPro（エンタープライズ）を展開。ByteDanceは2026年4月1日にOpenClaw公式中国ホストミラーをローンチ。
+
+### 政府支援
+
+- 深セン市龍崗区：「一人会社（OPC）」向け最大RMB 1,000万（約$1.4M）補助金
+- 無錫市：OpenClaw活用ロボティクス向け最大RMB 500万（約$730K）
+- MIIT：エージェント向け国家標準策定中
+
+### セキュリティ露出
+
+- CNCERT: 約23,000ユーザーの資産が公開インターネットに露出
+- Asia Tech Lens: 13.5万以上の露出インスタンス、うち4.2万以上が認証バイパス状態（2026年2月）
+- ClawHub/skills.sh上のスキルの13%がクリティカル脆弱性（Snyk調査）
+
+### サービス市場
+
+Taobao/XianyuでRMB 50〜700（$7〜100）のインストール・設定サービスが出現。Baidu北京本社・Tencent深センオフィスで無料インストール会に数百〜1,000人規模が集結。
+
 ## Media & Press
 
 - **Builders Unscripted Ep. 1** (OpenAI, Feb 2026): Romain Huet interviews Peter Steinberger about OpenClaw's origin, building with Codex, and open source philosophy. [[raw/articles/2026-02-24_openai_builders-unscripted-ep1-peter-steinberger]]
+- **China Briefing** (Apr 2026): Giulia Interesse reports on the OpenClaw viral adoption in China — cloud wars, government subsidies, security risks. [[raw/articles/2026-04-14_china-briefing_china-agentic-ai-openclaw-boom]] → [[concepts/china-openclaw-agentic-boom]]
