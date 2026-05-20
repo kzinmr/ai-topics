@@ -153,9 +153,8 @@
 - [[entities/codex]] — OpenAI製のオープンソースAIコーディングエージェント。Apache-2.0、Rust製、79.3K GitHub Stars。GPT-5.5/5.4ネイティブ＋カスタムプロバイダ＋ローカルモデル対応。CLI/Desktop/IDE/Webのマルチサーフェス。ChatGPT Plus/Proに含まれ、サブスクリプション壁なし。
 - [[entities/cloudflare]] — Global cloud platform; Project Glasswing participant. Published Mythos Preview harness architecture (May 2026): Recon→Hunt→Validate→Gapfill→Dedupe→Trace→Feedback→Report. Also repositioning as "agentic cloud" with Agents SDK, Project Think.
 - [[entities/cloudflare-sandbox]] — Cloudflare's self-hosted sandbox for Claude Managed Agents (May 2026). Dual sandbox primitives (microVM + V8 isolates), proxy-based zero-trust credential brokering, Browser Run, email tools, Workers AI integration.
-- [[entities/coder]] — Coder Technologies — self-hosted, model-agnostic AI coding agent platform for enterprise. Coder Agents beta released May 2026. Supports Anthropic, OpenAI, Google, AWS Bedrock, self-hosted models. Air-gapped ready.
-- [[entities/cognition]] — Cognition AI
-- [[entities/coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
+- [[[entities/coder]] — Coder Technologies — self-hosted, model-agnostic AI coding agent platform for enterprise. Coder Agents beta released May 2026. Supports Anthropic, OpenAI, Google, AWS Bedrock, self-hosted models. Air-gapped ready.
+- [[[entities/coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
 - [[entities/construction-physics-com]] — **URL:** https://constructionphysics.substack.com
 - [[entities/copilot-cli]] — GitHub製ターミナルネイティブAIコーディングエージェント。6種類のビルトインサブエージェント（explore/code-review/research等）、`/fleet`並列実行、MCP拡張、BYOK/ローカルモデル対応（2026年4月+）。Copilot Free/Pro/Pro+/Business/Enterpriseに含まれる。
 - [[entities/corbett]] — **X/Twitter** | @corbtt |
@@ -203,9 +202,8 @@
 - [[entities/emollick]] — **X** | @emollick |
 - [[entities/encodec]] — **EnCodec** | Meta's production-standard neural audio codec. 24/48 kHz, 1.5–24 kbps, streaming, with Transformer entropy coding. De facto standard for codec-style tokenizers.
 - [[entities/entire]] — Entire — AI agent observability & search infrastructure. Captures agent traces (checkpoints). Creator of pgr (agent-oriented code search). Published landmark agentic search benchmark study.
-- [[entities/entropicthoughts-com]] — **URL:** https://entropicthoughts.com (formerly two-wrongs.com)
-- [[entities/eric-zhang]] — Systems hacker and designer. Creator of bore, sshx, rustpad, and Percival. Former founding engineer at Modal, now at Thinking Machines Lab.
-- [[entities/ericmigi]] — **URL:** https://ericmigi.com
+- [[[entities/entropicthoughts-com]] — **URL:** https://entropicthoughts.com (formerly two-wrongs.com)
+- [[[entities/ericmigi]] — **URL:** https://ericmigi.com
 - [[entities/ethan-mollick]] — **URL:** https://www.oneusefulthing.org
 - [[entities/eugene-yan]] — **URL:** https://eugeneyan.com
 - [[entities/eugeneyan]] — **X** | @eugeneyan |
@@ -304,9 +302,8 @@
 - [[entities/khe-hy]] — Khe Hy is a writer and thinker focused on organizational AI adoption strategies.
 - [[entities/kieran-klaassen]] — General Manager of Cora, Every's AI email assistant. Author of "Compound Engineering: The Definitive Guide", creator of the compound-engineering-plugin (7K+ stars).
 - [[entities/kilo]] — OpenCode forkによるオープンソースAIコーディングプラットフォーム。Apache-2.0、VS Code + JetBrains + CLI、500+モデル（Kilo Gateway）、ホステッドOpenClaw（KiloClaw）。Teams/SSO/Analytics。インライン補完、Cloud Agents、コードレビュー。
-- [[entities/koylan-ai]] — **URL:** https://muratcankoylan.com
-- [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6k stars) and peoplereadmes. Personal Brain OS. Toronto-based.
-- [[entities/krebsonsecurity-com]] — **URL:** https://krebsonsecurity.com
+- [[[entities/koylan-ai]] — **URL:** https://muratcankoylan.com
+- [[[entities/krebsonsecurity-com]] — **URL:** https://krebsonsecurity.com
 - [[entities/kyle-jeong]] — Kyle Jeong (@kylejeong) — Growth Engineer at Browserbase, UCLA CS/Math student. KP Fellow. Writes about AI infra: Firecracker microVMs, agent sandboxing, browser automation, Kubernetes, Transformers.
 - [[entities/lance-martin]] — Lance Martin — Anthropic MTS (Applied AI), previously LangChain. Author of context engineering 4-strategy taxonomy (Write/Select/Compress/Isolate), agent design patterns. Co-author of Anthropic's managed agents and context engineering posts. PhD Stanford.
 - [[entities/late-interaction]] — **URL:** https://www.lateinteraction.com
@@ -620,9 +617,8 @@
 - [[entities/cognition]] — Cognition — Maker of Devin, the first autonomous AI coding agent. Also makes Windsurf IDE.
 - [[entities/cohere]] — Cohere — Enterprise AI platform. Founded by Transformer paper co-author Aidan Gomez. $6.8B valuation.
 - [[entities/decagon]] — Decagon — AI customer support agents. $4.5B valuation. 10M+ customers served.
-- [[entities/elevenlabs]] — ElevenLabs — AI voice and speech synthesis. $11B valuation. $500M+ ARR. Claude Code integration for ElevenAgents (May 2026).
-- [[entities/eventual]] — Eventual — Data and AI platform.
-- [[entities/factory]] — Factory — AI coding agents ("Droids") for enterprise legacy code migrations. $1.5B valuation.
+- [[[entities/elevenlabs]] — ElevenLabs — AI voice and speech synthesis. $11B valuation. $500M+ ARR. Claude Code integration for ElevenAgents (May 2026).
+- [[[entities/eventual]] — Eventual — Data and AI platform.
 - [[entities/faire]] — Faire — Wholesale marketplace connecting independent brands with retailers.
 - [[entities/glean]] — Glean — Enterprise AI search and work assistant. Founded by ex-Google search engineers. $600M+ raised.
 - [[entities/harvey]] — Harvey — AI for legal industry. $8B valuation. 100K+ lawyers across 60%+ of AmLaw 100.

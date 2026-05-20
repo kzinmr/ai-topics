@@ -1,3 +1,20 @@
+# Wiki Log
+
+> Chronological record of all wiki actions. Append-only.
+> Format: `## [YYYY-MM-DD] action | subject`
+
+## [2026-05-20] watchdog | Log.md health + index dedup + pipe corruption fix
+
+### Auto-fixed
+- Restored missing `# Wiki Log` header (silent loss pitfall)
+- Removed duplicate orphan `###` timestamp (sub-pattern 1)
+- Converted standalone `###` timestamp to proper `## [YYYY-MM-DD]` format for SDAR Paper entry (sub-pattern 2)
+- Removed 4 duplicate entity index entries: `cognition`, `eric-zhang`, `factory`, `muratcan-koylan`
+- Fixed 8 pipe-prefixed index entries (`|- ` → `- `) introduced during patch operations
+- validate_index.py: clean ✅
+
+---
+
 ## [2026-05-20] raw-backlog-ingest | Notion/Sarah Sachs/Simon Last/Marc Andreessen podcast triage
 - **New entity pages**: `entities/notion.md` (Notion as AI company), `entities/sarah-sachs.md` (Notion AI engineering lead), `entities/simon-last.md` (Notion agent harness architect)
 - **Enriched**: `entities/marc-andreessen.md` (already existed from same podcast)
@@ -329,12 +346,6 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 
 ---
 
-# Wiki Log
-
-> Chronological record of all wiki actions. Append-only.
-> Format: `## [YYYY-MM-DD] action | subject`
-> Actions: ingest, update, query, lint, create, archive, delete
-
 ## [2026-05-19] ingest | Cloudflare Project Glasswing article → entities/cloudflare, concepts/cyber-frontier-models, enrich glasswing + vuln-detection pages
 
 ### Summary
@@ -608,7 +619,6 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 
 ---
 
-### 2026-05-18 18:05 UTC — Watchdog: index header count correction
 
 ## [2026-05-18] watchdog | Index header count correction
 
@@ -717,7 +727,7 @@ Ingested "Self-Distilled Reasoner: On-Policy Self-Distillation" by Siyan Zhao et
 - **Skipped**: 13 non-AI-relevant articles (LWN kernel updates, Star Wars essay, NHS open-source politics, Joan Westenberg creativity essay, Troy Hunt weekly update)
 - **Raw articles**: 10 saved (3 processed into wiki)
 
-### 2026-05-18 06:15 UTC — SDAR Paper Ingestion
+## [2026-05-18] ingest | Self-Distilled Agentic RL (SDAR) Paper
 
 Ingested arXiv:2605.15155 "Self-Distilled Agentic Reinforcement Learning (SDAR)" by Zhengxi Lu et al. (ZJU/Meituan/Tsinghua).
 
