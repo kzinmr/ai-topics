@@ -1,3 +1,15 @@
+## [2026-05-20] create | concepts/agent-operator-patterns.md — Shann HolmbergのHermes Agent運用パターン集
+
+### 変更内容
+- `wiki/concepts/agent-operator-patterns.md` 新規作成: Shann Holmberg "How to Become a Hermes Agent Operator" から抽出した6つの運用パターン
+  - Control Room（サイドコントロールプレーン）、Brain Layers（文脈レイヤー化）、Agent Creation Heuristics（新エージェント作成基準）
+  - 4-Level Fleet Operation Model（単一→複数→Orchestrator→完全自動化）
+  - Prototype → Production Methodology（4ステップ）、Agent Ergonomics（運用快適性）
+  - 各パターンのWiki管理システム（27 cron jobs + Hermes単一エージェント）への具体的応用分析を含む
+  - Storage Split（brain/body分離）の原則、Level 2→3移行判断基準
+- `wiki/index.md`: Conceptsセクションに agent-operator-patterns エントリ追加
+- Sources: raw/articles/2026-05-15_shann_hermes-agent-operator.md
+
 ## [2026-05-20] create | concepts/anthropic-multi-agent-research.md — Anthropic Claude Research マルチエージェントシステム
 - Anthropic Engineering Blog (2025-06-13)「How We Built Our Multi-Agent Research System」と Simon Willisonの注釈記事 (2025-06-14) を完全取り込み
 - 新規conceptページ: Orchestrator-Workerパターン、Memory機構、CitationAgent、並列化戦略、Prompt Engineering 8原則、Tool-Testing Agent（40%時間短縮）、token economics（chat比15×）
@@ -207,6 +219,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - `wiki/entities/shannhk.md` — Shann Holmberg (@shannhk): Head of Product at Espressio AI, Hermes Agent operator. Creator of hermes-agent-control-room template (4-level fleet model). Co-founder of Lunar Strategy (250+ projects). Co-author of Master Web3 Marketing. Based in Lisbon.
 
 ### Enriched
+- `wiki/entities/shannhk.md` — Cross-Referencesに新規conceptページ [[concepts/agent-operator-patterns]] へのリンク追加。updated: 2026-05-20
 - `wiki/entities/hermes-agent.md` — Added Shann's 4-Level Fleet Operation Model (Level 1→4), Control Room pattern, SEO Agent 21-step pipeline case study, Prototype → Production methodology, Rails vs Linux framing, model strategy (Opus 4.7 creative / Codex GPT 5.5 structured). Updated milestones: 150K stars, 123 bundled skills, 6 deployment targets, 20+ messaging surfaces.
 - `wiki/concepts/claude-managed-agents.md` — Added Self-Hosted Sandboxes (public beta) + MCP Tunnels (research preview) section, announced at Code with Claude London (May 19, 2026). Covers enterprise security perimeter, data residency compliance, MCP tunnel connectivity for private network tools, and hybrid deployment model.
 

@@ -4,7 +4,7 @@ description: "Shann Holmberg — Head of Product at Espressio AI, co-founder of 
 url: "https://espressio.ai"
 type: entity
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-05-20
 aliases:
   - shann-holmberg
   - "@shannhk"
@@ -28,6 +28,7 @@ sources:
 related:
   - "[[entities/hermes-agent]]"
   - "[[concepts/hermes-agent-use-cases]]"
+  - "[[concepts/agent-operator-patterns]]"
   - "[[comparisons/hermes-vs-openclaw]]"
 ---
 
@@ -102,6 +103,7 @@ Leading agent product development at Espressio AI, an AI-powered marketing autom
 ## Cross-References
 
 - **[[entities/hermes-agent]]** — Primary agent framework Shann operates at scale. His 4-level fleet model adds operational depth to Hermes Agent documentation
+- **[[concepts/agent-operator-patterns]]** — 6つの運用パターン（Control Room, Brain Layers, Agent Creation Heuristics, 4-Level Fleet Model, Prototype→Production, Agent Ergonomics）を体系化。Wiki管理システムへの応用分析を含む
 - **[[concepts/hermes-agent-use-cases]]** — Shann's 7-agent fleet provides complementary use cases to the 7 canonical workflows
 - **[[comparisons/hermes-vs-openclaw]]** — Shann's "Rails vs Linux" framing captures the philosophical distinction succinctly
 - **Nous Research** — Hosted Nous Research at EspressioAI HQ in Lisbon for a Hermes Agent evening (Q&A with @yeahfortommy)
