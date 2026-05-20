@@ -138,7 +138,7 @@
 - [[entities/cats-with-power-tools]] — **URL:** https://blog.pixelmelt.dev (primary), https://blog.exploit.cat (secondary)
 - [[entities/chad-nauseam-home]] — **Blog** | chadnauseam.com |
 - [[entities/charles-frye]] — **X** | @charles_irl |
-- [[entities/chiark-greenend-org-uk-sgtatham]] — **Born** | 3 May 1977, United Kingdom (via Grokipedia) |
+- [[entities/chiark-greenend-org-uk-sgtatham]] — **Born** | 3 May 1977, United Kingdom (via Grokipedia) | RSS excluded (2026-05-20, AI content rare)
 - [[entities/china-ai-industry]] — China has emerged as the world's dominant force in AI implementation, robotics deployment, and embodied AI. While the U.S. leads in foundational AI models and semiconductor design, China excels at ...
 - [[entities/chip-huyen]] — **URL:** https://huyenchip.com/
 - [[entities/chipro]] — **X** | @chipro |

@@ -80,7 +80,6 @@
       <outline type="rss" text="tomrenner.com" title="tomrenner.com" xmlUrl="https://tomrenner.com/index.xml" htmlUrl="https://tomrenner.com" />
       <outline type="rss" text="blog.pixelmelt.dev" title="blog.pixelmelt.dev" xmlUrl="https://blog.pixelmelt.dev/rss/" htmlUrl="https://blog.pixelmelt.dev" />
       <outline type="rss" text="martinalderson.com" title="martinalderson.com" xmlUrl="https://martinalderson.com/feed.xml" htmlUrl="https://martinalderson.com" />
-      <outline type="rss" text="chiark.greenend.org.uk/~sgtatham" title="chiark.greenend.org.uk/~sgtatham" xmlUrl="https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/feed.xml" htmlUrl="https://chiark.greenend.org.uk/~sgtatham" />
       <outline type="rss" text="grantslatton.com" title="grantslatton.com" xmlUrl="https://grantslatton.com/rss.xml" htmlUrl="https://grantslatton.com" />
       <outline type="rss" text="experimental-history.com" title="experimental-history.com" xmlUrl="https://www.experimental-history.com/feed" htmlUrl="https://experimental-history.com" />
       <outline type="rss" text="anildash.com" title="anildash.com" xmlUrl="https://anildash.com/feed.xml" htmlUrl="https://anildash.com" />
@@ -103,7 +102,6 @@
       <outline type="rss" text="Kamila Szewczyk (iczelia)" title="Kamila Szewczyk (iczelia)" xmlUrl="https://iczelia.net/feed.xml" htmlUrl="https://iczelia.net/posts/" />
       <outline type="rss" text="Charles Bloom" title="Charles Bloom" xmlUrl="https://cbloomrants.blogspot.com/feeds/posts/default" htmlUrl="https://cbloomrants.blogspot.com/" />
       <outline type="rss" text="Brendan Gregg" title="Brendan Gregg" xmlUrl="https://www.brendangregg.com/blog/rss.xml" htmlUrl="https://www.brendangregg.com/blog/index.html" />
-      <outline type="rss" text="Dan Luu" title="Dan Luu" xmlUrl="https://danluu.com/atom.xml" htmlUrl="https://danluu.com/" />
       <outline type="rss" text="Nikita Lapkov (laplab)" title="Nikita Lapkov (laplab)" xmlUrl="https://laplab.me/posts/index.xml" htmlUrl="https://laplab.me/posts/" />
       <outline type="rss" text="Ben Boyter" title="Ben Boyter" xmlUrl="https://boyter.org/index.xml" htmlUrl="https://boyter.org/" />
       <outline type="rss" text="Andrej Karpathy" title="Andrej Karpathy" xmlUrl="https://karpathy.github.io/feed.xml" htmlUrl="https://karpathy.github.io/" />

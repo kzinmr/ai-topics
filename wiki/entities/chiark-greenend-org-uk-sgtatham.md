@@ -2,7 +2,7 @@
 title: Simon Tatham
 type: entity
 created: 2026-04-09
-updated: 2026-04-13
+updated: 2026-05-20
 tags:
   - person
   - blogger
@@ -21,7 +21,6 @@ sources: []
 | **Education** | Mathematics, Trinity College, University of Cambridge (via Grokipedia) |
 | **Employer** | Arm Ltd., Development Solutions Group — compiler developer (via Grokipedia) |
 | **Blog** | [chiark.greenend.org.uk/~sgtatham](https://www.chiark.greenend.org.uk/~sgtatham/) |
-| **RSS** | https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/feed.xml |
 | **Mastodon** | [@simontatham@hachyderm.io](https://hachyderm.io/@simontatham) |
 | **Role** | Software engineer, free-software author |
 | **Known for** | PuTTY SSH client (1999), NASM co-developer, Simon Tatham's Portable Puzzle Collection, spigot (exact real calculator), Halibut documentation system, agedu, xtruss |
@@ -91,6 +90,13 @@ Tatham's series on aperiodic tilings (five parts and counting) and his essay on 
 - [[concepts/unix-philosophy]] — Small tools, clear interfaces, composability
 - [[concepts/code-review]] — Social dynamics of reviewing code
 -  — Using Git without GitHub/GitLab-  — Distributed version control system-  — Building tools for developers- [[entities/armin-ronacher]] — Another free-software author with similar philosophy
+
+## Monitoring
+
+| Source | Method | Status |
+|--------|--------|--------|
+| RSS Feed | — | ❌ Excluded (2026-05-20) — AI content is rare; RSS removed from blogwatcher + OPML to reduce noise |
+| Mastodon | [@simontatham@hachyderm.io](https://hachyderm.io/@simontatham) | Not monitored |
 
 ## Sources
 

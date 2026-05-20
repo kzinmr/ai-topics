@@ -1,3 +1,15 @@
+## [2026-05-20] config | RSS exclusion — Dan Luu + Simon Tatham
+
+### RSS Monitoring Removed
+- `config/feeds/blogs.opml` — Removed Dan Luu (`danluu.com/atom.xml`) and Simon Tatham (`chiark.greenend.org.uk/~sgtatham/quasiblog/feed.xml`) from Individual Blogs group
+- blogwatcher DB — Removed both blogs via `blogwatcher-cli remove`
+
+### Reasoning
+Both blogs have minimal AI/LLM content. Keeping them in RSS monitoring generates noise without actionable wiki material. Wiki entity pages remain — exclusion is at the RSS level only.
+
+### Entity Updated
+- `wiki/entities/chiark-greenend-org-uk-sgtatham.md` — Added Monitoring section with RSS exclusion note; removed RSS URL from infobox
+
 ## [2026-05-19] ingest | Bag-of-Documents Model slides (Tunkelang, SpeakerDeck, May 2026)
 
 ### Created
