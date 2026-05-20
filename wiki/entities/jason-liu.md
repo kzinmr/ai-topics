@@ -24,6 +24,7 @@ sources:
   - https://python.useinstructor.com/
   - https://x.com/jxnlco
   - raw/newsletters/2026-05-19-can-i-get-my-agents-on-the-phone.md
+  - raw/articles/2026-05-18_jxnl-six-levels-codex-morning-brief.md
 ---
 
 # Jason Liu (@jxnlco)
@@ -109,6 +110,27 @@ Liu published his "Codex maxxing" daily primitives, a set of practices for keepi
 | **Daily primitives** | Repeating patterns that keep Codex productive over extended use |
 
 This builds on Liu's broader philosophy of treating AI tools as **infrastructure for daily work** rather than one-off problem solvers — consistent with his context engineering perspective.
+
+### Six Levels of Codex Morning Brief (May 2026)
+
+Liu published a progressive complexity ladder for teaching Codex through a morning brief workflow:
+
+| Level | Capability | What It Teaches |
+|-------|-----------|----------------|
+| **1** | Ask what's going on today | Connectors (Slack, Gmail, Calendar) |
+| **2** | Add an agents file | Persistent defaults and preferences |
+| **3** | "Keep an eye on this" | Recurring automations |
+| **4** | Split into project threads | Durable, project-scoped briefs |
+| **5** | Draft the work, don't send | Trust boundary: draft but don't impersonate |
+| **6** | Memory vault | Durable context that compounds across sessions |
+
+The framework starts with a simple morning brief and ends with a miniature operating system. Key principles:
+- Each level teaches one real capability
+- The thread carries preference forward (improves as you complain about it)
+- Level 6 introduces a file-based vault (`TODO.md`, `people/`, `projects/`, `daily/`, `notes/`, `AGENTS.md`)
+- Subagents can parallelize searches once the brief has enough moving parts
+
+Source: [[raw/articles/2026-05-18_jxnl-six-levels-codex-morning-brief.md]]
 
 ## Cross-References
 

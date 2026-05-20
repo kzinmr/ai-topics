@@ -3,22 +3,101 @@ title: "AI Evaluation"
 type: concept
 aliases:
   - ai-evaluation
+  - llm-evaluation
+  - evaluation-methods
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-05-20
 tags:
   - concept
-status: stub
-
+  - evaluation
+  - agent-evaluation
+  - observability
+  - ml-engineering
+  - testing
+related:
+  - [[concepts/llm-as-judge]]
+  - [[concepts/evaluation-flywheel]]
+  - [[concepts/offline-evaluation]]
+  - [[concepts/ai-benchmarks-evals-overview]]
+sources:
+  - raw/articles/2026-05-19_langfuse-academy-evals-explained.md
+  - https://langfuse.com/academy/evaluate
 ---
 
 # AI Evaluation
 
-> **TODO**: Enrich this page.
+AI evaluation is the systematic process of judging whether an AI system's outputs are good, forming the critical feedback loop between experimentation and shipping in the **AI Engineering Loop**.
 
-## Overview
+## The AI Engineering Loop
 
-Stub page for AI Evaluation.
+The AI Engineering Loop connects production behavior (tracing, monitoring) to structured iteration (datasets, experiments, evaluation). Each shipped improvement produces new data, and teams loop through this process continuously.
 
-## Related Pages
+Evaluation sits between running an experiment and shipping a change: you have a dataset, you've run your application against it, and now you need to judge whether the outputs are good.
 
-- [[concepts/_index]]
+## Evaluation Methods
+
+### Manual Evaluation
+
+The foundational step: manually reviewing outputs to build intuition for what "good" and "bad" look like in your specific application. This produces human labels that serve as ground truth for validating automated evaluators later.
+
+Teams that skip manual review and jump to automated evaluation often measure things that don't matter.
+
+### Code-Based Evaluation
+
+Deterministic checks that are fast, cheap, and produce the same result every time. Ideal for:
+- Valid JSON / schema compliance
+- Keyword or pattern presence/absence
+- Length limits
+- Executable SQL without errors
+
+**Limitation**: Cannot assess meaning. Can check that "refund" appears but not whether the refund policy is correctly explained.
+
+### LLM-as-a-Judge
+
+Uses a language model to score outputs, required for qualities that require understanding language: relevance, tone appropriateness, summary accuracy.
+
+**Critical considerations**:
+- LLMs don't automatically grade as human experts would — they lack expert context
+- Need calibration against human preferences to verify they measure what's intended
+- Can share blind spots with the application's LLM, especially when same model family is used for both
+
+When calibrated against human labels and backed by code-based checks, LLM judges are reliable evaluators.
+
+## Reference-Based vs. Reference-Free
+
+| Type | Description | Advantage |
+|------|-------------|-----------|
+| **Reference-Based** | Compares output against a predefined expected output | Precise, verifiable |
+| **Reference-Free** | Assesses output on its own, without ground truth | Can be applied to unseen production data |
+
+## Practical Guidelines
+
+### When to Set Up Automated Evaluators
+
+Start with manual review. Ask: is this a one-time fix or a generalization problem? If a simple prompt change resolves it, just make the change. If you can clearly identify a failure mode to test repeatedly across different inputs, set up an evaluator.
+
+### What to Evaluate
+
+Prefer **binary scores (pass/fail)** over graded scales (1–5). Binary scores force a clear definition of what separates acceptable from unacceptable. Graded scales introduce ambiguity about what a 3 means vs. a 4.
+
+### Combining Methods
+
+Mature setups use all three methods together. Each quality gets its own evaluator, and together they provide a view on overall application quality.
+
+## Langfuse Academy Framework
+
+Langfuse Academy, launched May 2026, provides an open educational resource walking through the full AI engineering lifecycle: **Trace → Monitor → Build Datasets → Experiment → Evaluate**. The evaluation page covers all three methods and their integration into the broader AI Engineering Loop.
+
+See [[raw/articles/2026-05-19_langfuse-academy-evals-explained.md]] for the full Langfuse Academy evaluation guide.
+
+## Related Concepts
+
+- [[concepts/llm-as-judge]] — Detailed methodology for LLM-based evaluation
+- [[concepts/evaluation-flywheel]] — Evaluation as a continuous improvement loop
+- [[concepts/offline-evaluation]] — Offline evaluation techniques
+- [[concepts/ai-benchmarks-evals-overview]] — Broader benchmarks landscape
+
+## Sources
+
+- [Evals, explained — Langfuse Academy](https://langfuse.com/academy/evaluate) — May 2026
+- [[raw/articles/2026-05-19_langfuse-academy-evals-explained.md]]

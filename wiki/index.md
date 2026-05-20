@@ -652,7 +652,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1375 pages)
+## Concepts (1376 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -1141,7 +1141,7 @@
 - [[concepts/ai-education]] — "ai-education"
 - [[concepts/ai-engineering]] — "AI Engineering"
 - [[concepts/ai-evals-people]] — "ai-evals-people"
-- [[concepts/ai-evaluation]] — "AI Evaluation"
+- [[concepts/ai-evaluation]] — AI Evaluation — systematic methods for judging AI outputs (manual, code-based, LLM-as-judge, reference-based vs reference-free). Langfuse Academy framework (May 2026).
 - [[concepts/ai-in-military-wargames]] — "AI in Military Wargames"
 - [[concepts/ai-industry-news]] — "AI Industry News (The Signal — Apr 26)"
 - [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — "GPU / VRAM Fundamentals"
@@ -1162,6 +1162,7 @@
 - [[concepts/arc-agi-2-benchmark]] — ARC-AGI-2 Benchmark
 - [[concepts/assembly-optimization]] — Assembly Optimization
 - [[concepts/autodata-agentic-data-creation]] — Autodata: Agentic Data Creation
+- [[concepts/autonomous-agent-marketplace-stack]] — Autonomous Agent Marketplace Stack (3 planes, 10 layers) — Infrastructure framework for agents as economic actors: Trust Plane (Identity/Discovery/Reputation), Market Plane (Quoting/Contracting/Settlement/Dispute), Control Plane (Governance/Compliance/Orchestration). ERC-8004 + x402 + governance control planes.
 - [[concepts/autonomous-component-optimization]] — Autonomous Component Optimization
 - [[concepts/autoreason]] — Autoreason
 - [[concepts/axolotl-fine-tuning-framework]] — Axolotl Fine-Tuning Framework

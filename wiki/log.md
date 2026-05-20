@@ -1,3 +1,21 @@
+## [2026-05-20] X bookmarks ingest | Agent Marketplace Stack + Langfuse Evals + Jason Liu Codex Brief
+
+**Source**: X bookmarks cron fetch. 3 new bookmarks processed.
+
+### Raw Articles Created
+- [[raw/articles/2026-05-19_autonomous-agent-technical-stack.md]] — "The Technical Stack for Autonomous Agents" — X Article (30,812 chars). Full body fetched via tweet.fields=article. Three planes (Trust/Market/Control), ten layers framework for autonomous agent marketplaces. ERC-8004, x402, governance control planes.
+- [[raw/articles/2026-05-19_langfuse-academy-evals-explained.md]] — "Evals, explained" — Langfuse Academy X Article. AI Engineering Loop, three evaluation methods (manual/code-based/LLM-as-judge), reference-based vs reference-free.
+- [[raw/articles/2026-05-18_jxnl-six-levels-codex-morning-brief.md]] — Jason Liu (@jxnlco) "Six levels of complexity in a Codex morning brief" — scraped via Jina Reader API.
+
+### Concept Page Created
+- [[concepts/autonomous-agent-marketplace-stack]] — Comprehensive concept page for the 3-plane 10-layer autonomous agent marketplace infrastructure framework. Covers Trust Plane (Identity/Discovery/Reputation), Market Plane (Quoting/Contracting/Settlement/Dispute Resolution), Control Plane (Governance/Compliance/Orchestration & Runtime). ERC-8004, x402, Safe modules, Cordum/Galileo/Microsoft governance vendors.
+
+### Concept Page Enriched
+- [[concepts/ai-evaluation]] — Stub → full page. Enriched with Langfuse Academy evaluation framework: AI Engineering Loop, three evaluation methods, reference-based vs reference-free, practical guidelines, binary scoring preference. Sources: Langfuse Academy.
+
+### Entity Page Enriched
+- [[entities/jason-liu]] — Added "Six Levels of Codex Morning Brief" section with level table, key principles, vault structure. Updated sources.
+
 ## [2026-05-20] active-crawl | Google I/O 2026 + Cursor Composer 2.5 + NVIDIA SANA-WM + OpenAI GPT-Realtime-2
 
 **Source**: Active crawl research. 4 topics discovered from web search (Google I/O 2026, Cursor blog, arXiv, OpenAI blog).
