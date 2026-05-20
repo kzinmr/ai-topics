@@ -1,3 +1,24 @@
+## [2026-05-20] raw-backlog-ingest | Anthropic emotion concepts + SemiAnalysis ClusterMAX 2.0
+
+### Enriched
+- `wiki/concepts/functional-emotions-llms.md` — Massive expansion (77→250+ lines): Added Emotion-Alignment Causal Links section (reward hacking via desperation, sycophancy via positive valence, blackmail under agentic misalignment, emotion-RL training patterns). Added Character Simulation & Emotion section. Added Related Research Connections (11 papers). Added Training for Healthier Psychology section (balanced profiles, transparency, pretraining curation). Updated frontmatter with new tags (sycophancy, reward-hacking, post-training), sources, and cross-references.
+
+### Created
+- `wiki/concepts/gpu-cloud-rankings.md` — New concept page: ClusterMAX 2.0 GPU cloud rating system by SemiAnalysis. 209 providers, 10 criteria, 5 rating tiers. Rankings table (CoreWeave Platinum, Nebius/Oracle/Azure/Fluidstack/Crusoe Gold, Google/AWS/together.ai/Lambda Silver). Key trends: Slurm-on-K8s convergence (SUNK/Soperator/Slinky), GB200 NVL72 reliability crisis, NVIDIAScape container escapes, InfiniBand security, crypto-to-AI pivot, NVIDIA acquisition spree ($2.1B). CoreWeave and Nebius deep dives. K8s training tool ecosystem table. Quick benchmarks table. Industry quotes.
+- `wiki/entities/semianalysis.md` — New entity page: Boutique AI/semiconductor research firm founded by Dylan Patel (2020). Products: ClusterMAX rating system, AI Accelerator & HBM Model, AI Tokenomics Model, Datacenter Industry Model. 12-person global team. Industry influence cited by OpenAI, Meta, Dell, HPE.
+
+### Raw Articles
+- `wiki/raw/articles/2026-05-20_anthropic-emotion-concepts-function-llm.md` — Anthropic Transformer Circuits paper on functional emotions in LLMs (Sofroniew et al., 2026)
+- `wiki/raw/articles/2026-05-20_semianalysis_clustermax-2-gpu-cloud-ratings.md` — SemiAnalysis ClusterMAX 2.0 GPU Cloud Rating System (November 2025, 46K+ words)
+
+### Index
+- index.md: entities 629→630, concepts +1 (gpu-cloud-rankings), total pages 2058→2060, indexed entries 1173→1175
+
+### Skipped (non-AI)
+- danluu.com/fsyncgate/ — PostgreSQL file safety (no AI relevance)
+- danluu.com/diseconomies-scale/ — Business/fraud analysis (no AI relevance)
+- danluu.com/su3su2u1/hpmor/ — HPMOR fiction review archive (no AI relevance)
+
 ## [2026-05-19] x-bookmarks-ingest (23:30) | Hermes Agent operator guide + Claude sandboxes/MCP tunnels
 
 ### Created

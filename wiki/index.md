@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-19 | Total pages: 2058 | Indexed entries: 1173 | Not in index: 865 |
+> Last updated: 2026-05-19 | Total pages: 2060 | Indexed entries: 1175 | Not in index: 865 |
 
 ## Entities (629 pages)
 
@@ -68,6 +68,7 @@
 - [[entities/samuelcolvin]] — samuelcolvin
 - [[entities/sebastian-ramirez]] — Sebastián Ramírez
 - [[entities/sebastian-raschka]] — Sebastian Raschka
+- [[entities/semianalysis]] — SemiAnalysis — Boutique AI/semiconductor research firm. Creator of ClusterMAX GPU cloud ratings (209 providers, 10 criteria, Platinum/Gold/Silver/Bronze tiers). Dylan Patel (CEO). Independent benchmark beyond $/GPU-hr.
 - [[entities/seth-karten]] — Seth Karten — CS PhD at Princeton, creator of PokeChamp/PokeAgent, lead author of Continual Harness framework.
 - [[entities/sierra]] — Sierra — AI customer service platform ($15B valuation, $200M+ ARR). Enterprise conversational AI agents; τ-Knowledge benchmark for knowledge-grounded agent evaluation.
 - [[entities/siyan-zhao]] — Siyan Zhao — UCLA / Meta Superintelligence Labs researcher. Lead author of On-Policy Self-Distillation (OPSD) for LLM reasoning post-training (2026). Same-model self-distillation with privileged ground-truth context.
@@ -758,6 +759,7 @@
 - [[concepts/gemini-3-1-flash-lite]] — Gemini 3.1 Flash-Lite — Google's fastest and most cost-efficient Gemini 3 series model. GA May 8, 2026. Ultra-low latency for agentic tasks (JetBrains, Gladly, Astrocade, Ramp). ~60% lower cost than thinking-tier models.
 - [[concepts/gemini-3-2-flash]] — Gemini 3.2 Flash — Google's next-gen Flash model, leaked May 5, 2026 before I/O 2026 announcement. $0.25/$2.00 per 1M tokens. Near-Pro performance at Flash latency. Discovered in iOS app with "Liquid Glass" UI.
 - [[concepts/gliclass]] — GLiClass
+- [[concepts/gpu-cloud-rankings]] — GPU Cloud Infrastructure Rankings (ClusterMAX). SemiAnalysis rating system for 209 Neoclouds across 10 criteria. CoreWeave Platinum, Nebius/Oracle/Azure/Fluidstack/Crusoe Gold. Slurm-on-K8s, GB200 NVL72 reliability, container security.
 - [[concepts/glut-of-circuits]] — niplav (2026) の GLUT-of-Circuits モデル：LLMは重ね合わせで計算される、深さ制限のある合成可能な誤り訂正回路の巨大ルックアップテーブル的コレクション。Agent構造問題・AIアライメント・トークンボトルネック・CoTへの含意。
 - [[concepts/gpt-realtime-voice-models]] — GPT-Realtime Voice Models — OpenAI's second-gen Realtime API models (May 7, 2026). GPT-Realtime-2 (GPT-5-class reasoning for voice), GPT-Realtime-Translate (70→13 languages), GPT-Realtime-Whisper (streaming speech-to-text). Three voice AI patterns: voice-to-action, systems-to-voice, voice-to-voice.
 - [[concepts/harness-commoditization]] — Harness Commoditization — Thesis that frontier model capability is commoditizing agent harnesses. As models become natively agentic, harness architecture ceases to be a meaningful differentiator — codebase organization becomes the bottleneck. Articulated by Amp in "The Coding Agent Is Dead" (Feb 2026).

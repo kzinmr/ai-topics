@@ -1,0 +1,35 @@
+[
+  {
+    "item_id": "danluu-fsyncgate",
+    "source": "backlog",
+    "title": "errors on fsync are unrecoverable",
+    "url": "https://danluu.com/fsyncgate/",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--fsyncgate--a3db25a4.md",
+    "source_name": "danluu.com",
+    "recommended_action": "skip",
+    "reason_ja": "PostgreSQLファイルセーフティに関する技術的なメールスレッドのアーカイブ。AI/LLM/エージェント関連性なし。",
+    "body_excerpt": "# errors on fsync are unrecovarable\nSource: https://danluu.com/fsyncgate/\nThis is an archive of the original \"fsyncgate\" email thread."
+  },
+  {
+    "item_id": "danluu-diseconomies-scale",
+    "source": "backlog",
+    "title": "Diseconomies of scale in fraud, spam, support, and moderation",
+    "url": "https://danluu.com/diseconomies-scale/",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--diseconomies-scale--f3d3e873.md",
+    "source_name": "danluu.com",
+    "recommended_action": "skip",
+    "reason_ja": "詐欺・スパム・モデレーションにおける規模の不経済に関する一般ビジネス分析。AI/LLM関連性なし。",
+    "body_excerpt": "# Diseconomies of scale in fraud, spam, support, and moderation\nSource: https://danluu.com/diseconomies-scale/"
+  },
+  {
+    "item_id": "danluu-hpmor",
+    "source": "backlog",
+    "title": "Harry Potter and the Methods of Rationality review by su3su2u1",
+    "url": "https://danluu.com/su3su2u1/hpmor/",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--su3su2u1-hpmor--5a2bbcdc.md",
+    "source_name": "danluu.com",
+    "recommended_action": "skip",
+    "reason_ja": "HPMOR（フィクション）のレビューアーカイブ。AI/LLM関連性なし。",
+    "body_excerpt": "# Harry Potter and the Methods of Rationality review by su3su2u1\nSource: https://danluu.com/su3su2u1/hpmor/"
+  }
+]
