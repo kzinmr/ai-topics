@@ -1,69 +1,45 @@
 ---
-title: "Gergely Orosz — The Pragmatic Engineer"
-created: 2026-04-29
-updated: 2026-04-29
+title: "Gergely Orosz"
+created: 2026-05-20
+updated: 2026-05-20
 type: entity
-tags:
-  - person
-  - methodology
-  - writing
-sources:
-  - https://open.substack.com/users/30107029-gergely-orosz
-  - https://newsletter.pragmaticengineer.com
+tags: [person, blogger, content-creator, podcast, youtube, blog, software-engineering, ai-adoption, career, startup, leadership]
+sources: [raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md]
 ---
 
-# Gergely Orosz (The Pragmatic Engineer)
+# Gergely Orosz
 
-## Overview
+Gergely Orosz (@GergelyOrosz) is the author of **The Pragmatic Engineer**, a widely-read newsletter and podcast covering real-world software engineering at big tech and high-growth startups. He is a former Uber engineer and has become one of the most influential voices in engineering culture and AI adoption.
 
-Gergely Orosz is a technology writer, newsletter author, and former engineering leader known for **The Pragmatic Engineer** newsletter. His content focuses on **Big Tech and startups from the inside**, with particular relevance for software engineers and AI engineers navigating organizational and technical challenges.
+## The Pragmatic Engineer
 
-## Key Facts
+The Pragmatic Engineer is a newsletter and podcast that provides deep, practitioner-focused coverage of:
 
-- **Newsletter:** The Pragmatic Engineer (pragmaticengineer.com)
-- **Substack:** [gergely-orosz](https://open.substack.com/users/30107029-gergely-orosz)
-- **Focus:** Engineering management, Big Tech insights, startup experiences, software engineering career advice
-- **Audience:** Software engineers, AI engineers, tech professionals
+- **Real-world engineering at big tech** — how companies like [[entities/shopify]], Uber, Meta, and others actually build software
+- **AI tool adoption in engineering organizations** — detailed case studies of how companies integrate AI coding tools
+- **Engineering culture and management** — leveling systems, hiring practices, project management
+- **Career growth for software engineers** — practical advice rooted in industry experience
 
-## The Pragmatic Engineer Newsletter
+The podcast features in-depth interviews with engineering leaders. The May 2026 episode with [[entities/farhan-thawar]] on Shopify's AI transformation is a representative example of the show's format: hour-long, deeply technical, and focused on operational reality rather than hype.
 
-The Pragmatic Engineer is one of the most influential tech newsletters, covering:
-- Engineering management and leadership
-- Big Tech company internals and culture
-- Startup experiences and practical advice
-- Career development for engineers
-- Technical deep-dives on software architecture
+## Background
 
-### Notable Content Series
-- **Building Mobile Apps at Scale** — Comprehensive guide to mobile engineering at scale
-- **Big Tech comparisons** — Analysis of engineering practices across major companies
-- **Engineering leadership** — Practical advice for tech leads and engineering managers
-- **Startup experiences** — Real-world insights from startup engineering
+- **Ex-Uber**: Worked as a software engineer at Uber, giving him firsthand experience with hypergrowth engineering challenges
+- **Author**: Wrote *The Software Engineer's Guidebook* and *Building Mobile Apps at Scale*
+- **Newsletter**: The Pragmatic Engineer has become one of the most respected engineering publications, known for data-backed analysis and insider perspectives
 
-## Relevance to AI Engineering
+## Coverage of AI in Engineering
 
-While primarily focused on traditional software engineering, Orosz's work has become increasingly relevant to AI engineers because:
-- AI engineering teams face similar organizational challenges as traditional software teams
-- Newsletter covers practical engineering patterns applicable to AI systems
-- Provides career development context for engineers transitioning to AI roles
-- Discusses scaling engineering organizations, which applies to AI team growth
+Orosz has been a leading chronicler of the AI transformation in software engineering:
 
-## Network & Connections
-
-- Active in the tech newsletter ecosystem alongside Alex Volkov, Simon Willison, and others
-- Referenced in discussions about engineering management practices at AI companies
-- His audience includes many AI engineers navigating career transitions
-
-## Sources
-
-- [The Pragmatic Engineer Newsletter](https://newsletter.pragmaticengineer.com)
-- [Substack Profile](https://open.substack.com/users/30107029-gergely-orosz)
-- X/Twitter: @GergelyOrosz
+- Interviewed [[entities/farhan-thawar]] on Shopify's AI-first engineering approach — one of the most detailed public accounts of enterprise AI tool adoption
+- Covers [[entities/claude-code]], [[entities/github-copilot]], [[entities/cursor-ai]], and emerging coding agents
+- Deep dives into "vibe coding," AI tooling infrastructure, and the changing role of software engineers
+- Emphasizes practitioner reality over vendor narratives
 
 ## See Also
 
-- [[substack]] — Platform hosting The Pragmatic Engineer newsletter.
-- [[alex-volkov]] — Tech newsletter author and AI commentator.
-- [[entities/simon-willison]] — Software engineer and blogging personality in the tech ecosystem.
-- [[engineering-management]] — Engineering leadership and management practices.
-- [[newsletter]] — Tech newsletter ecosystem and publishing.
+- [[entities/farhan-thawar]] — Interview guest on The Pragmatic Engineer, Head of Engineering at Shopify
+- [[entities/shopify]] — Subject of a major Pragmatic Engineer episode on AI transformation
+- [[entities/claude-code]] — Frequently covered AI coding tool
+- [[entities/cursor-ai]] — AI code editor covered in engineering deep dives

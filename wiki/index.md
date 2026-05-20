@@ -210,7 +210,7 @@
 - [[entities/evanhahn-com]] — **Blog** | evanhahn.com |
 - [[entities/fabiensanglard-net]] — **Blog** | fabiensanglard.net |
 - [[entities/factory]] — Factory (Factory AI) — Autonomous coding agents ("Droids") for enterprise. $1.5B valuation ($150M Series C, April 2026). Founded 2023 by Matan Grinberg and Eno Reyes. Model-agnostic routing, deep CI/CD integration. Free Droid tier launched April 2026.
-- [[entities/farhan-thawar]] — Farhan Thawar is a technology writer and commentator known for viral takes on AI industry trends.
+- [[entities/farhan-thawar]] — Farhan Thawar — Head of Engineering (VP Engineering) at Shopify. Leads 23,000-engineer AI transformation toward 90% autonomous coding. Philosophy: "pair with smart people on problems." Championed 1,000-intern program and Code Red tech debt elimination.
 - [[entities/fei-fei-li]] — **フルネーム** | Fei-Fei Li（李飞飞） |
 - [[entities/fidji-simo]] — CEO, OpenAI AGI Deployment (May 2026: medical leave); ex-AppLovin CEO, Meta VP. Key figure in OpenAI's product reorganization.
 - [[entities/fernando-borretti]] — **URL:** https://borretti.me
@@ -439,7 +439,7 @@
 - [[entities/sheshansh-agrawal]] — **X/Twitter** | @sheshansh_agrawal |
 - [[entities/shkspr-mobi]] — **Terence Eden** (pronounced "ed-en") is a technology policy expert, open-source advocate, web standards contributor, and blogger. Based in the UK, he has worked at the intersection of government t...
 - [[entities/shlok-khemani]] — Writer and programmer based in Gurgaon, India. Currently researching **personal AI** and **memory systems for AI agents**. Previously at Decentralised.co, building products for the crypto space. Au...
-- [[entities/shopify]] — Shopify is an e-commerce platform and a reference case for organizational AI adoption. Its data science team also publishes entrepreneurship trend research.
+- [[entities/shopify]] — Shopify — Global e-commerce platform and leading case study in enterprise AI adoption. 23,000 engineers targeting 90% autonomous coding by Q3 2026. Built internal LLM proxy, adopted Copilot (2021) → Cursor → Claude Code, runs parallel AI agents, 1,000-intern program. See [[entities/farhan-thawar]], [[entities/tobi-lutke]].
 - [[entities/shreya-shankar]] — **Role** | PhD Candidate, UC Berkeley EECS (Aditya Parameswaran lab) |
 - [[entities/shannhk]] — Shann Holmberg — Head of Product at Espressio AI, Hermes Agent operator. Creator of hermes-agent-control-room template (4-level fleet operation model). Co-founder of Lunar Strategy (250+ projects). Co-author of Master Web3 Marketing.
 - [[entities/shunyu-yao]] — **Name:** Shunyu Yao (姚顺雨)
@@ -520,6 +520,7 @@
 - [[entities/zed]] — High-performance Rust code editor from former Atom team (Nathan Sobo, Antonio Scandurra, Max Brunsfeld). Reached 1.0 on April 29, 2026. AI-native with parallel agent orchestration, Zeta LLM, GPUI framework.
 - [[entities/zero-language]] — Zero — Vercel Labs' programming language for AI agents (May 2026). Systems language with explicit effects, capability-based I/O, JSON-native diagnostics, no GC. Implements Ronacher's 8 agent-language design principles.
 - [[entities/zyphra]] — Open superintelligence research/cloud company. ZAYA1 MoE model family (VL-8B, 74B) trained on AMD. $110M Series A at $1B valuation. Apache 2.0 open-source models.
+- [[entities/zodchiii]] — zodchiii (@zodchiii) — Pseudonymous X/Twitter content creator covering AI coding, finance, and vibe coding. Published viral breakdown of Shopify's Claude Code infrastructure setup. Runs Telegram channel @zodchixquant.
 
 - [[entities/palantir]] — AI-powered decision infrastructure company. The Palantir Ontology contextualizes computation within "lived reality" for enterprise agent workflows. Q1 2026: $1.63B revenue (+84% gov), Maven elevated to permanent Pentagon program. **May 2026: The Palantir Model goes global** — OpenAI ($4B Deployment Company) and Anthropic ($1.5B JV) both replicate Palantir's embed-engineers-in-customer-operations playbook. See [[concepts/ai-services-joint-ventures]].
 - [[entities/mistral-ai]] — French AI company. Released Mistral Workflows (enterprise orchestration layer) and Voxtral TTS in April 2026.
@@ -554,7 +555,7 @@
 - [[entities/eugene-yan--core-ideas]] — Eugene Yan core ideas on ML engineering
 - [[entities/eugene-yan--key-quotes]] — Notable quotes from Eugene Yan
 - [[entities/eugene-yan--timeline]] — Eugene Yan career timeline
-- [[entities/gergely-orosz]] — Gergely Orosz — Engineering leader, author of Pragmatic Engineer newsletter
+- [[entities/gergely-orosz]] — Gergely Orosz — Author of The Pragmatic Engineer newsletter and podcast. Ex-Uber engineer. Covers real-world engineering at big tech and AI tool adoption (Shopify, Claude Code, Copilot, Cursor).
 - [[entities/jason-liu--context-engineering]] — Jason Liu (jxnlco) on context engineering patterns
 - [[entities/jason-liu--instructor]] — Jason Liu — Creator of Instructor library for structured LLM outputs
 - [[entities/jason-liu--key-work]] — Jason Liu key contributions and projects
@@ -820,6 +821,7 @@
 - [[concepts/cloudflare-llm-infrastructure]] — Cloudflare's custom LLM inference stack — PD disaggregation, Infire Rust engine, Mooncake KV-cache, speculative decoding. 3x latency improvement, 80% cache hit ratio.
 - [[concepts/claude-code-auto-mode]] — Claude Codeのauto mode。Sonnet 4.6ベースの2段階transcript分類器（Stage 1: 高速シングルトークンフィルタ → Stage 2: CoT推論）が人間承認者を代替。prompt injection probeとの2層防御で、危険行動をブロックしつつ許可プロンプトを最小化。FPR 0.4%、実overeager行動の83%捕捉。Deny-and-continue設計。
 - [[concepts/claude-certified-architect-domains]] — Claude認定アーキテクト全5ドメイン包括知識（@hooeem記事に基づく）。Domain 1: Agentic Architecture & Orchestration (27%) — stop_reason、hub-and-spoke、hooks、タスク分解。Domain 2: Tool Design & MCP (18%) — ツール説明設計、tool_choice。Domain 3: Claude Code Configuration (20%) — CLAUDE.md階層、パス固有ルール、plan mode。Domain 4: Prompt Engineering (20%) — 明示性、few-shot、JSON schemas、Batches API。Domain 5: Context Management (15%) — プログレッシブサマライゼーション罠、lost in middle、エスカレーショントリガー、エラー伝播、情報来歴。
+- [[concepts/claude-code]] — Claude Code as a coding agent: 6 operational patterns (parallel agents, critique loops, MCP integration, CLAUDE.md team infra, strategy-first validation, guardrails), configuration, prompt patterns.
 - [[concepts/claude-code-sandboxing]] — Claude CodeのOSレベルサンドボックス。Linux bubblewrap/macOS seatbeltでファイルシステム+ネットワーク隔離。許可プロンプト84%削減。Claude Code on the Web（クラウド隔離実行）を含む。オープンソース化。
 - [[concepts/claude-code-skills]] — Claude Code Skills — 機序と役割パターン。Skillsはフォルダであり、Progressive Disclosure・動的Hooks・メモリ永続化の機序をもつ。9つの役割パターン: Library/API Reference, Product Verification, Data Fetching, Business Process, Code Scaffolding, Code Quality, CI/CD, Runbooks, Infrastructure Ops。Thariq ShihiparによるAnthropic社内実践知。
 - [[concepts/claude-diary]] — Lance Martin's Claude Code plugin for agent continual learning. Diary entries → reflection → CLAUDE.md updates. Implements CoALA/Generative Agents memory patterns.
@@ -953,6 +955,7 @@
 - [[concepts/rlvr]] — RLVR (Reinforcement Learning with Verifiable Rewards): 決定論的検証器からの外部報酬によるRL訓練パラダイム。GRPOと組み合わせて報酬モデルもクリティックモデルも排除。o1→o3で10x RL compute。ART·E ($80でo3超え)。Tülu 3で命名、DeepSeek-R1で普及。
 - [[concepts/sana-vm]] — SANA-WM — NVIDIAの2.6Bパラメータオープンソース世界モデル。単一GPUで60秒720p動画生成。Gated DeltaNet + Softmaxハイブリッド。Apache 2.0。
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
+- [[concepts/shopify-ai-engineering]] — Shopify's AI-first engineering approach: LLM proxy, 1,000-intern program, strategy:execution flip, no token limits, GSD tooling, coding interviews for directors.
 - [[concepts/skill-graph]] — Skill Graph — 相互接続MarkdownファイルによるAIエージェントプレイブック。Roninの17ファイル4フォルダアーキテクチャ。Wikilinks遷移、Platform-Native Repurposing、Litmus Test。
 - [[concepts/sitecove-ship]] — Sitecove HyperCache Inference Protocol (SHIP): System-level LLM inference optimization. 91% GPU reduction, 12× speedup, $49→$4 per 1M tokens. Developed by Australian web infra team.
 - [[concepts/roll-rl]] — ROLL (Alibaba): 多様なユーザー向けRLフレームワーク。豊富なインターフェースと高い設定自由度。DeepSpeed/Megatron、GRPO+PPO、Rayオーケストレーション。

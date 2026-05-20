@@ -1,3 +1,13 @@
+## [2026-05-20] create | Claude Code and Shopify AI-First Engineering concept pages
+
+### Created
+- `wiki/concepts/claude-code.md` — Claude Code as a coding agent: 6 operational patterns (parallel agents, extended critique loops, MCP integration, CLAUDE.md as team infrastructure, strategy-first validation, safe autonomy with guardrails), configuration examples, prompt patterns. Source: zodchiii Shopify Claude Code setup article + Pragmatic Engineer Farhan Thawar podcast.
+- `wiki/concepts/shopify-ai-engineering.md` — Shopify's AI-first engineering approach: LLM proxy architecture, tool adoption timeline (Copilot 2021 → Cursor → Claude Code → Devin/Gumloop), 1,000 interns program, GSD project management, coding interviews for directors, strategy:execution ratio flip (30:70 → 70:30), no token spending limits policy. Source: zodchiii Shopify Claude Code setup article + Pragmatic Engineer Farhan Thawar podcast.
+
+### Updated
+- `wiki/SCHEMA.md` — Added `shopify` tag to People/Orgs category and `llm-proxy` tag to Engineering category.
+- `wiki/index.md` — Added both concept pages to Concepts section. Bumped counts (+2 concepts).
+
 ## [2026-05-19] ingest | Agentic Search as an Agile Engineering Process (Tunkelang & Makhani, Mar 2026)
 
 ### Created
@@ -1400,4 +1410,18 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - `wiki/raw/articles/2022-03-17_daniel-tunkelang_content-annotation.md` — New raw article: Reductionist approach — entity recognition, string matching, regex, POS tagging, LSTM-CRF.
 - `wiki/raw/articles/2022-04-25_daniel-tunkelang_content-structure.md` — New raw article: Summarization (extractive/abstractive) + segmentation (heuristic/ML/snippets).
 - `wiki/index.md` — Added [[concepts/content-understanding]]; bumped counts (2036/1171/865).
+
+---
+
+## [2026-05-20] create | Shopify AI transformation entity pages (4 entities from 2 source articles)
+
+### Created / Replaced
+- `wiki/entities/farhan-thawar.md` — Full entity page: Head of Engineering at Shopify, "pair with smart people on problems" philosophy, AI lab pairing, Code Red tech debt elimination (7 months), 1,000-intern champion, AI-first engineering practices.
+- `wiki/entities/shopify.md` — Full entity page: AI-first engineering culture, LLM proxy architecture, tool adoption history (Copilot 2021 → Cursor → Claude Code), parallel agent patterns, MCP toolkit, CLAUDE.md as team infra, guardrails/permissions, 1,000-intern program, GSD project management, coding interviews for directors+.
+- `wiki/entities/gergely-orosz.md` — Full entity page: Author of The Pragmatic Engineer newsletter/podcast, ex-Uber engineer, covers real-world engineering at big tech and AI tool adoption.
+- `wiki/entities/zodchiii.md` — New entity page: Pseudonymous X/Twitter content creator, AI/finance/vibe coding, @zodchixquant Telegram channel, published viral Shopify Claude Code breakdown.
+
+### Updated
+- `wiki/SCHEMA.md` — Added 4 tags: `cursor`, `github-copilot` (Products section); `llm-proxy` (Infrastructure); `internship` (Meta).
+- `wiki/index.md` — Updated entries for farhan-thawar, shopify, gergely-orosz with rich descriptions. Added new zodchiii entry.
 
