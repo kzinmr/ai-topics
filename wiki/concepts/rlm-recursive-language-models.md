@@ -432,6 +432,7 @@ Full analysis in [[concepts/dspy-rlm#RLM × Programmatic Tool Calling: 補完す
 - **[[concepts/code-execution-with-mcp]]** — Middle architectural layer between PTC and CodeMode: MCP as code API with progressive disclosure
 - **[[concepts/code-mode]]** — Specific implementations (Cloudflare V8, Pydantic Monty) of the code-execution-over-tool-calling pattern
 - **[[concepts/context-folding]]** — Parallel approach: branch/return with summarization
+- **[[concepts/anthropic-multi-agent-research]]** — 構造的類似: タスク空間の水平分割によるコンテキスト制約突破 (MapReduceパターン)。RLMが入力の深さ分割なら、マルチエージェントはタスクの並列分割。同一のdivide-and-conquer発想。
 - **[[concepts/inference-time-scaling]]** — RLM scales computation, not parameters
 - **[[concepts/typed-rlm]]** — Typed functional runtime variant (Huawei); formal proofs for termination, cost bounds, optimal partition
 - **[[entities/shunyu-yao]]** — "The Second Half" framework; RL generalization thesis

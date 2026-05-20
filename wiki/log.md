@@ -10,6 +10,12 @@
 - `wiki/index.md`: Conceptsセクションに agent-operator-patterns エントリ追加
 - Sources: raw/articles/2026-05-15_shann_hermes-agent-operator.md
 
+## [2026-05-20] enrich | concepts/anthropic-multi-agent-research.md + concepts/rlm-recursive-language-models.md — Multi-Agent × RLM 構造的類似パターン
+- ユーザーの洞察: Multi-Agentのタスク水平分割（MapReduce）とRLMの入力深さ分割（再帰）は同一のdivide-and-conquer発想
+- anthropic-multi-agent-research.md に「構造的類似パターン」セクションを追加: 分割対象・分割方向・パターン・制約突破・スケーリング・集約方法・本質の7次元比較表
+- rlm-recursive-language-models.md の Related Concepts に相互参照を追加
+- 両者とも「単一コンテキストウィンドウ制約を分割統治で乗り越える」という根本パターンの異なる現れ
+
 ## [2026-05-20] create | concepts/anthropic-multi-agent-research.md — Anthropic Claude Research マルチエージェントシステム
 - Anthropic Engineering Blog (2025-06-13)「How We Built Our Multi-Agent Research System」と Simon Willisonの注釈記事 (2025-06-14) を完全取り込み
 - 新規conceptページ: Orchestrator-Workerパターン、Memory機構、CitationAgent、並列化戦略、Prompt Engineering 8原則、Tool-Testing Agent（40%時間短縮）、token economics（chat比15×）

@@ -210,9 +210,26 @@ Extended thinkingを計画・ツール選択・役割定義のための制御可
 
 - [[concepts/agent-patterns]] — 一般的なエージェントパターン（Inline Tool, Fan-Out, Agent Pool, Teams）
 - [[concepts/agentic-search]] — エージェント検索の包括的ガイド
+- [[concepts/rlm-recursive-language-models]] — RLM: 再帰的分割によるコンテキスト長制約の克服（構造的類似パターン）
 - [[comparisons/agent-orchestration-frameworks]] — LangGraph, CrewAI等のオーケストレーションフレームワーク比較
 - [[concepts/ai-operating-model]] — AI運用モデルとしてのマルチエージェント
 - [[concepts/coding-agents]] — コーディングエージェントの設計パターン
+
+## 構造的類似パターン: Multi-Agent × RLM — 分割統治によるコンテキスト制約の克服
+
+マルチエージェント研究システムと [[concepts/rlm-recursive-language-models|RLM (Recursive Language Models)]] は、**同じ根本問題を異なる軸で解決**している。
+
+| 次元 | Multi-Agent Research (Anthropic) | RLM (Zhang, Kraska, Khattab) |
+|---|---|---|
+| **分割対象** | リサーチ**タスク** | 入力**コンテキスト** |
+| **分割方向** | **水平**（並列Fan-Out） | **深さ**（再帰的ツリー） |
+| **パターン** | MapReduce: 並列サブエージェント → 集約 | 再帰: モデルが自身をチャンク単位で呼び出し |
+| **制約突破** | 複数context windowで情報量をスケール | 再帰処理でコンテキスト長を2桁超越 |
+| **スケーリング** | 15× token消費で90.2%性能向上 | 10M+ token処理で精度劣化なし |
+| **集約方法** | リードエージェントがサブ結果を圧縮統合 | 再帰呼び出し結果を合成 |
+| **本質** | Agentの並列化による**水平スケール** | モデルの自己呼び出しによる**深さスケール** |
+
+> 両者とも「単一のコンテキストウィンドウでは処理できない」という制約を、**分割統治 (divide and conquer)** で乗り越える。Multi-Agentはタスク空間を並列化し、RLMは入力空間を再帰化する。異なる軸だが、アーキテクチャの根本発想は同一。
 
 ## Simon Willisonの評価
 
