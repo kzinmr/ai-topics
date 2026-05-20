@@ -3,6 +3,21 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-20] skeleton-enrich-daily | Daily skeleton enrichment — no skeletons found, enriched 2 L1 entities
+- **Status**: No `status: skeleton` entity pages found. Enriched 2 `status: L1` entity pages to `L2`.
+- **Enriched**: [[entities/roocode]] — Major status update: extension shut down May 15, 2026. Added project timeline, shutdown details (Roomote pivot), community fork (Zoo Code, 453 stars), alternative comparisons (Cline, Kilo Code, Continue.dev), v3.53.0 features (GPT-5.5, Claude Opus 4.7, checkpoint navigation), updated stats (23.9K stars, 3.2K forks, 290 contributors), 3M installs, architecture lineage, and v3.51.0 slash command skills.
+- **Enriched**: [[entities/parchi]] — Expanded from 2.9KB to 8.2KB. Added architecture diagram, CLIProxyAPI integration for using existing AI subscriptions, Relay Daemon & CLI details, Electron desktop automation, pricing (BYOK/Credits), safety notice, multi-model provider table (OpenAI/Anthropic/OpenRouter/Kimi/Local), project status assessment (maintenance mode since April 2026), profiles & skills feature, and vision-native capability.
+- **Index updated**: Added [[entities/parchi]] and [[entities/roocode]] entries to `entities/_index.md` with descriptions. Updated `wiki/index.md` descriptions.
+
+## [2026-05-20] ingest | turbopuffer RL training SID-1 article → entity pages + agentic-search enrichment
+- **Source**: https://turbopuffer.com/blog/reinforcement-learning-sid-ai (Max Rumpf & Sam Dauncey, SID AI, May 20 2026)
+- **Raw article saved**: `raw/articles/2026-05-20_turbopuffer_reinforcement-learning-sid-ai.md`
+- **New entity**: `entities/sid.md` — SID AI research lab, SID-1 model details, training design, emergent capabilities
+- **New entity**: `entities/turbopuffer.md` — turbopuffer search engine (was orphaned in index, now created with full content)
+- **Updated concept**: `concepts/agentic-search.md` — Added RL Training Infrastructure, Search Backend (turbopuffer), and Emergent Tool Preferences sections with details from the turbopuffer article. Added raw article to sources.
+- **Index updated**: Added `entities/sid.md` entry (alphabetical between shunyu-yao and simon-willison)
+- Key new information captured: 256 questions × 16 attempts RL training scale, 1k+ QPS burst pattern, GPU utilization bottleneck, turbopuffer stateless architecture fit for RL workloads, HyDE emergence, parallel tool use as emergent speed behavior, corpus branching for reproducibility
+
 ## [2026-05-20] health-fix | Auto-fix index corruption + orphan registration
 ### Phase 1 — Index corruption (auto-fix)
 - Clean: validate_index.py passed ✅

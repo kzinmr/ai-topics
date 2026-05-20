@@ -54,7 +54,7 @@
 - [[entities/odyssey-ml]] — Odyssey ML — Multimodal world model company. Starchild-1 (real-time audio+video), Odyssey-2, Agora-1 (multi-agent simulation). Led by Oliver Cameron.
 - [[entities/palo-alto-networks]] — Global cybersecurity company. Acquired Portkey (May 2026) for AI agent security.
 - [[entities/parallel-web-systems]] — Parallel Web Systems Inc. — AI agent infrastructure (Search, Extract, Monitor APIs). SOC 2 Type 2, ZDR. Founded 2023.
-- [[entities/parchi]] — Parchi
+- [[entities/parchi]] — Parchi — AI-powered browser copilot (open-source Chrome/Firefox extension). Chat-driven browser automation: navigate, read, click, fill forms. BYOK or credits. MIT license.
 - [[entities/pi-coding-agent]] — pi (Coding Agent) [redirected to entities/pi]
 - [[entities/portkey]] — AI agent security platform — inspects actions, stops risky behavior, 99.99% uptime. Acquired by Palo Alto Networks (Q4 2026).
 - [[entities/prime-intellect]] — Prime Intellect — "The Open Stack for Self-Improving Agents": decentralized AI platform, RL post-training (Lab), open-source renderers/verifiers/prime-rl. $20.5M funding. INTELLECT model series.
@@ -62,7 +62,7 @@
 - [[entities/reflexive-ai]] — Reflexive AI Usage
 - [[entities/riley-walz]] — Riley Walz (@rtwlz) — Software engineer and internet artist. Bop Spotter, Jmail, IMG_0001, Find My Parking Cops. OAI Labs at OpenAI (2026–). First peoplereadmes persona subject.
 - [[entities/romain-huet]] — Romain Huet — Head of Developer Experience at OpenAI, host of Builders Unscripted
-- [[entities/roocode]] — RooCode
+- [[entities/roocode]] — RooCode — AI-powered VS Code extension (shut down May 15, 2026). Community fork Zoo Code continues development. 24K stars, Steer Mode for local models.
 - [[entities/salesforce-headless-360]] — Salesforce's agent-first platform restructuring. Exposes full CRM via APIs, MCP, CLI. Browser UI is now optional.
 - [[entities/sapient-intelligence]] — Sapient Intelligence — Brain-inspired AGI company (Singapore/Beijing/PA). HRM-Text: 1B non-Transformer reasoning model trained for ~$1,000. HRM beat DeepSeek R1/o3 on ARC-AGI.
 - [[entities/samuelcolvin]] — samuelcolvin
@@ -445,6 +445,7 @@
 - [[entities/shreya-shankar]] — **Role** | PhD Candidate, UC Berkeley EECS (Aditya Parameswaran lab) |
 - [[entities/shannhk]] — Shann Holmberg — Head of Product at Espressio AI, Hermes Agent operator. Creator of hermes-agent-control-room template (4-level fleet operation model). Co-founder of Lunar Strategy (250+ projects). Co-author of Master Web3 Marketing.
 - [[entities/shunyu-yao]] — **Name:** Shunyu Yao (姚顺雨)
+- [[entities/sid]] — SID AI — Research lab for search. Creators of SID-1, the first RL-trained agentic retrieval model (Qwen3-14B + modified GRPO). Outperforms GPT-5.1, Gemini 3 Pro, Sonnet 4.5 on recall at ~20x lower latency and dramatically lower cost. Uses [[entities/turbopuffer]] as search backend for RL training. Founders: Max Rumpf, Sam Dauncey.
 - [[entities/simon-willison]] — Django co-creator, open-source advocate, and leading voice in AI-assisted software development. Founder of Datasette and prolific blogger at simonwillison.net.
 - [[entities/simon-last]] — Product/engineering leader at Notion. Led Custom Agents through 4-5 rebuilds. Software factory advocate. CLI over MCP.
 - [[entities/simone-salis]] — **URL:** https://simone.org

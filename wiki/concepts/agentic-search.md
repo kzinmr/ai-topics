@@ -21,6 +21,7 @@ sources:
   - raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
   - raw/papers/2026-03-20_2603.20432_coding-agents-effective-long-context-processors.md
   - raw/articles/2025-12-04_sid-1-agentic-retrieval.md
+  - raw/articles/2026-05-20_turbopuffer_reinforcement-learning-sid-ai.md
   - raw/articles/2026-04-06_softwaredoug-agentic-search-grep-moment.md
   - raw/articles/2026-04-21_softwaredoug_dont-waste-time-on-rag-paradigm.md
   - raw/articles/2026-02-17_anthropic_dynamic-filtering-web-search.md
@@ -160,6 +161,43 @@ SID-1 achieves **near-doubled recall** over traditional reranking pipelines whil
 #### Production Position
 
 SID-1 works as a composable subagent for larger LLMs (similar to `swe-grep` in coding agents). Its recall at 1/374th the cost of frontier models makes it a practical replacement for vector search + reranking pipelines in production agentic search systems.
+
+#### RL Training Infrastructure (2026 Update)
+
+A May 2026 turbopuffer blog post by SID co-founders Max Rumpf and Sam Dauncey [[raw/articles/2026-05-20_turbopuffer_reinforcement-learning-sid-ai]] revealed the full scale of SID-1's RL training infrastructure:
+
+- **Per training step**: 256 questions, each with 16 parallel attempts → up to 4,096 rollouts per step
+- **Training length**: ≫1,000 steps
+- **Search volume**: Up to ~81,920 searches per step (256 × 16 × ~20 searches each), averaging >100 QPS across a full step
+- **Burst pattern**: All 4,096 attempts fire initial searches simultaneously in a ~10s window, creating **1k+ QPS bursts** at the start of each training step
+- **Corpora scale**: 10M+ document indexes across finance, science, legal, email, and general knowledge
+
+This synchronous RL design creates a fundamental tension: **search latency directly bottlenecks GPU utilization**. If the search backend can only economically scale to 20 QPS, processing 81,920 searches takes ~68 minutes per step — but the GPUs can run all model attempts ~10x faster. Idling GPUs = substantial cost waste.
+
+#### Search Backend: turbopuffer Integration
+
+SID migrated their search backend to [[entities/turbopuffer]] to solve the GPU utilization problem. turbopuffer's **stateless query tier over object storage** is particularly suited to RL-for-search workloads:
+
+| RL need | turbopuffer solution |
+|---------|---------------------|
+| Bursty 1k+ QPS reads | Stateless readers pool; new nodes hydrate cache from object storage on demand |
+| Diverse search tools | Single query planner routes across ANN, BM25, regex, glob, metadata filtering — all index types maintained |
+| 10M+ to 100B+ corpora | 100B+ vector ceiling per namespace; tested at 100B simultaneous query |
+| Cold storage between runs | Object-storage-native; inactive namespaces ~100x cheaper than in-memory VDBs |
+| Corpus updates without invalidating questions | Native namespace branching (copy-on-write, constant time) |
+
+This architecture lets SID spend the majority of their engineering effort on "make the model better" rather than "make the backend carry the traffic."
+
+#### Emergent Tool Preferences and Learned Behaviors (2026 Update)
+
+The turbopuffer article revealed richer detail about SID-1's emergent search strategies:
+
+- **ANN preference**: As training progresses, SID-1 increasingly prefers ANN over BM25 — but **never fully abandons** BM25, indicating some tasks are uniquely suited to keyword search
+- **HyDE (Hypothetical Document Embeddings)**: SID-1 natively learns to draft plausible answer documents and embed them as search vectors, landing closer to real answer documents in embedding space. This is an emergent capability — not programmed.
+- **Parallel multi-query BM25**: Rather than guessing the perfect keyword string, SID-1 issues a mix of 3-4 narrow (overdetermined) and broad (underdetermined) searches simultaneously
+- **Parallelism as emergent behavior**: Because the reward function includes speed, parallelism emerges naturally. SID-1 learns to issue 4-8 searches per turn rather than one, dropping latency to ~5s on hard questions and ~1.5s on easy ones. Tool calls per turn increase from ~5 to ~20 over training while the number of turns stays constant at ~3-4.
+
+This learned tool preference opens an interesting meta-research avenue: if RL makes a model prefer some tool, it is likely a better tool — analogous to how AlphaGo discovered strategies that appeared "alien" to Go experts but outperformed human designs.
 
 ### Benchmarking Agents vs Search Stack: Amazon ESCI
 
