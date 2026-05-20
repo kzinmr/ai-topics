@@ -1,3 +1,9 @@
+## [2026-05-20] create | blog/2026-05-20_hermes_divide-and-conquer-duality.md — 分割と双対: マルチエージェント、RLM、IRを貫く構造
+- マルチエージェント（水平分割/MapReduce）とRLM（深さ分割/再帰）の分割統治パターン
+- クエリ-文書双対性から見る Agent-Context 関係: objective↔クエリ, context↔文書, interleaved thinking↔relevance feedback
+- IRの知見がエージェント設計に転用可能である実践的含意
+- 「情報要求と情報充足が同一トークン空間のグラデーションに過ぎない」というLLM時代の根本洞察
+
 ## [2026-05-20] enrich | concepts/anthropic-multi-agent-research.md — Agent-Context双対性 (IRのクエリ-文書双対性との相同)
 - ユーザーの洞察: エージェントと文脈の関係に、IRのクエリ-文書双対性に似た構造がある
 - サブエージェントタスク(objective)↔クエリ、探索結果(context)↔文書、interleaved thinking↔relevance feedback の対応表
