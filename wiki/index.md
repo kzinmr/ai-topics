@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-20 | Total pages: 2093 | Indexed entries: 1187 | Not in index: 845 |
+> Last updated: 2026-05-20 | Total pages: 2094 | Indexed entries: 1187 | Not in index: 846 |
 
 ## Entities (635 pages)
 
@@ -889,7 +889,7 @@
 - [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation)
 - [[concepts/qwen]] — Qwen model family: Alibaba's open-source LLM series (Apache 2.0). MoE variants achieve frontier-adjacent performance on consumer GPUs. Qwen3.6-35B-A3B flagship with thinking preservation.
 - [[concepts/qwen-3-6-35b]] — Qwen 3.6-35B-A3B: Sparse MoE (35B total, 3B active). 73.4% SWE-bench Verified, runs on single RTX 4090. Introduces thinking preservation for iterative coding workflows.
-- [[concepts/query-understanding]] — Query Understanding: 検索クエリ解釈の体系的学問。Daniel Tunkelangによる24記事シリーズ（2016-2024）で体系化。文字正規化→トークン化→クエリ書き換え→文脈→会話的検索の6層スタック。
+- [[concepts/query-understanding]] — Query Understanding: 検索クエリ解釈の体系的学問。Daniel Tunkelangによる24記事シリーズ（2016-2024）で体系化。6層スタック（文字→トークン→書き換え→文脈→会話→結果）。LLM-Powered実践編（Doug Turnbull）：structured QU、embedding collapse対策、synonym抽出+BM25、カテゴリ分類（NDCG +12%）。
 - [[concepts/rag-not-dead-series]] — RAG Is Not Dead — 7-Part Series
 - [[concepts/rag-systems]] — RAG Systems
 - [[concepts/raindrop]] — Raindrop — AI Agent Monitoring & Observability Platform

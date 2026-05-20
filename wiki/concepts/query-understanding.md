@@ -2,7 +2,7 @@
 title: Query Understanding
 type: concept
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-05-20
 tags:
   - search
   - information-retrieval
@@ -10,15 +10,19 @@ tags:
   - lexical-search
   - embeddings
   - agentic-search
+  - llm
 sources:
   - raw/articles/2016-10-28_daniel-tunkelang_query-understanding-introduction.md
   - raw/articles/2017-02-16_daniel-tunkelang_query-rewriting-overview.md
   - raw/articles/2022-10-24_daniel-tunkelang_query-similarity.md
+  - raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search.md
   - https://queryunderstanding.com/
 related:
   - entities/daniel-tunkelang
+  - entities/doug-turnbull
   - concepts/agentic-search
   - concepts/bm25
+  - concepts/content-understanding
 ---
 
 # Query Understanding
@@ -283,6 +287,185 @@ The foundational principles of query understanding are directly relevant to mode
 ### Tunkelang's Caveat on LLM Over-Personalization
 
 Tunkelang has observed that LLM-based systems can over-personalize, sharing an experience where ChatGPT assumed his restaurant queries were for client entertainment rather than personal interest. This echoes his principle that **personalization should be a secondary signal that supplements, not overrides, the query**.
+
+## LLM-Powered Query Understanding in Practice (Doug Turnbull)
+
+While Tunkelang's framework provides the theoretical foundation, **Doug Turnbull** ([Cheat at Search](https://maven.com/softwaredoug/cheatatsearch), May 2026) provides a practical, code-level implementation guide. His core insight: **simple LLMs can reliably perform classical NLP tasks for query understanding when given structured output schemas**, and structured QU solves several critical problems with pure embedding-based search.
+
+> Source: [[raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search.md]]
+
+### Why Structured QU Over Pure Embeddings
+
+#### Embedding Collapse (Hubness)
+
+General-purpose embedding models are trained on vast, diverse data. In a **narrow domain** (e.g., a single retailer's furniture catalog), every item occupies a tiny corner of the embedding space — everything looks similarly similar:
+
+```
+similarity("blue couch", "a couch")      = 0.72
+similarity("blue couch", "a blue chair") = 0.71
+similarity("blue couch", "a blue couch") = 0.75
+```
+
+The difference between a correct result (0.75) and an irrelevant one (0.71) is just 0.04 — **threshold-based filtering becomes practically impossible**. This is an intrinsic property of high-dimensional embedding spaces in narrow domains, not a model quality issue.
+
+#### The Chat Query Problem
+
+Modern conversational interfaces produce long, verbose queries like:
+
+> "Hi I am curious for a couch that would fit into a sunny living room. I actually want a sky blue one. Well my father in law might visit and need a place to sleep."
+
+These generate compound queries (e.g., `"Bright, sky-blue sleeper sofa for living room"`) with **insufficient training data for reliable embedding matching**. Multi-modal embedding models struggle because each long, compound query is essentially unique.
+
+#### Fine-Tuning Costs
+
+Building domain-specific embedding models requires:
+- Gathering domain-specific training data (e.g., furniture CLIP pairs)
+- ML expertise for retraining and evaluation
+- Deployment infrastructure
+
+And even after fine-tuning, you still can't easily "cut off" irrelevant results — the threshold problem remains.
+
+### Five Approaches to Query Understanding
+
+Turnbull categorizes QU into five approaches, from simplest to most sophisticated:
+
+| Approach | Mechanism | Characteristics |
+|---|---|---|
+| **Rules** | PM/merchandiser manually assigns attributes | Human curation; doesn't scale |
+| **Historical** | Aggregate click data → most common attribute for a query | `SELECT query, COUNT(color) … GROUP BY query`; only covers head queries |
+| **ML-Based** | Train classifier on historical data (features → attribute) | Requires labeled training data; traditional approach |
+| **Embedding-Based** | Embed query + candidate attribute values → nearest neighbor | Query vector → compare with color/brand/category embeddings; suffers from hubness |
+| **Prompt-Based** | LLM extracts values via structured output schema | **Recommended modern approach**; reliable, interpretable, cost-effective |
+
+### LLM QU Technique 1: Synonym Extraction
+
+The simplest entry point: use a cheap LLM to extract synonyms, then boost BM25 scores for matching documents.
+
+**Implementation pattern** — structured outputs via Pydantic:
+
+```python
+class SynonymMapping(BaseModel):
+    phrase: str = Field(description="Original phrase from query")
+    synonyms: List[str] = Field(description="Synonyms for the phrase")
+
+class QueryWithSynonyms(BaseModel):
+    synonyms: List[SynonymMapping]
+
+resp = openai.responses.parse(
+    model="gpt-4.1-nano",
+    input=[
+        {"role": "system", "content": "You are a helpful AI assistant extracting synonyms."},
+        {"role": "user", "content": f"Extract synonyms from: {query}"}
+    ],
+    text_output=QueryWithSynonyms
+)
+```
+
+**Example output** for `"rack glass"`:
+- `rack → [shelf, stand, holder]`
+- `glass → [cup, cupware, drinking glass]`
+
+**BM25 integration**: For each generated synonym phrase, tokenize it and add its BM25 score to the overall query score:
+
+```python
+for mapping in synonyms.synonyms:
+    for phrase in mapping.synonyms:
+        tokenized = snowball_tokenizer(phrase)
+        bm25_scores += index['product_name_snowball'].array.score(tokenized)
+        bm25_scores += index['product_description_snowball'].array.score(tokenized)
+```
+
+**Result**: NDCG improved from 0.541 (plain BM25) → 0.546 (synonym-boosted BM25) on Wayfair queries. A modest but measurable lift from a one-line LLM call.
+
+### LLM QU Technique 2: Category Classification
+
+#### Few-Label Classification
+
+When the category set is small (~10–50 labels), a simple `Literal` type works:
+
+```python
+Category = Literal['Furniture', 'Rugs', 'Décor & Pillows', 'Outdoor', 'Lighting', …]
+```
+
+#### Deep Multi-Label Classification (10K+ Labels)
+
+For large category taxonomies like `'Furniture / Living Room Furniture / Console Tables'`, classification becomes a **multi-label selection** problem:
+
+```python
+class QueryClassification(BaseModel):
+    classification: list[FullyQualifiedClassifications] = Field(
+        description="Best matching categories. Use 'No Classification Fits' if unclear."
+    )
+```
+
+**Search boost**: For each returned category, tokenize and add a constant boost to documents whose category field matches:
+
+```python
+for category in classified.categories:
+    tokenized_category = snowball_tokenizer(category)
+    category_match = self.index['category_snowball'].array.score(tokenized_category) > 0
+    bm25_scores[category_match] += self.category_boost
+```
+
+**Cost challenge**: With 10K+ labels in the prompt, initial token usage was 5,998 input tokens per query — expensive at scale.
+
+#### Cost Optimization: Dynamic Pydantic Enums
+
+The key insight: **use BM25 to reduce the label space before calling the LLM**:
+
+1. Run BM25 query → get top 300 candidate results
+2. Extract the 25 most frequent category hierarchies from those results
+3. **Dynamically construct a Pydantic enum** from those 25 labels:
+
+```python
+def make_classifier_model(labels: list[str]) -> type[BaseModel]:
+    LabelEnum = Enum('LabelEnum', {l: l for l in labels})
+    Model = create_model("QueryClassification",
+        __doc__="A classification of the query.",
+        classification=(list[LabelEnum], Field(...)))
+    return Model
+```
+
+4. Classify using cheap model (gpt-4.1-nano) with the reduced label set
+
+**Result**: Input tokens dropped from 5,998 → **~485** — a 12x reduction. The virtuous cycle: **BM25 narrows the label space, enabling cheap LLM classification, which then boosts BM25 scores**.
+
+### The Full QU Pipeline
+
+```
+QUERY
+  ↓
+CACHE LOOKUP → [hit] → CACHED ATTRIBUTES → APPLY BOOSTS → SEARCH
+  ↓ [miss]
+BM25 → TOP 300 → EXTRACT TOP CATEGORIES → DYNAMIC ENUM → LLM CLASSIFY
+  ↓                                                    ↓
+CACHE RESULT ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ←
+```
+
+### Caching Strategy
+
+- **Static tier**: Frequently seen queries cached with pre-computed attributes (head queries)
+- **Dynamic tier**: Unseen (tail) queries → LLM classification → cached for future hits
+- **Economics**: gpt-4.1-nano is cheap enough for 100K+ queries; caching makes it viable for production
+
+### Empirical Results
+
+| Approach | NDCG | Delta |
+|---|---|---|
+| Plain BM25 (baseline) | 0.541 | — |
+| BM25 + LLM Synonym Extraction | 0.546 | +0.005 |
+| BM25 + LLM Category Classification | ~0.608 | +0.067 |
+
+The category classification lift is substantial — **a 12% relative improvement** over plain BM25. This demonstrates that structured LLM-powered QU is not just theoretically elegant but delivers measurable retrieval quality gains at production scale.
+
+### Key Takeaways
+
+1. **Embedding collapse is real** — in narrow domains, pure embedding search struggles to distinguish relevant from irrelevant results
+2. **Structured QU is a practical fix** — extracting structured attributes via LLM gives interpretable, controllable ranking signals
+3. **Cheap LLMs are sufficient** — gpt-4.1-nano handles synonym extraction, category classification, and attribute extraction reliably
+4. **BM25 + LLM QU form a virtuous cycle** — BM25 narrows the label space for LLMs; LLMs improve BM25's ranking quality
+5. **Caching makes it production-viable** — cache frequent queries; LLM only for the long tail
+6. **Agent-native design**: structured QU outputs are tool-usable — agents can reason about extracted attributes, making QU a first-class component of [[concepts/agentic-search]]
 
 ## Distinction from Related Concepts
 

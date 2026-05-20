@@ -3,7 +3,7 @@ title: Doug Turnbull - Speaking & Community
 type: entity-sub
 parent: doug-turnbull
 created: 2026-04-10
-updated: 2026-05-13
+updated: 2026-05-20
 tags:
   - person
   - writing
@@ -28,6 +28,8 @@ Turnbull is a regular speaker at search industry conferences:
 
 - **\"Why 2026 is The Year of Agentic Search\"** (May 2026, YouTube): 65-minute fireside chat with Jo Kristian Bergum (Vespa.ai) on the four pillars of agentic search — LLM Query Understanding at scale, Autoresearch (agents writing ranking code), Agentic Search Harnesses (feedback loops that make dumb retrievers smart), and LLM-as-a-Judge for principled evaluation. References Doug's Maven course starting May 18. [[raw/articles/2026-05-01_doug-turnbull-2026-is-the-year-of-agentic-search]]
 
+- **\"LLM Query Understanding — Cheat at Search\"** (May 2026, guest lecture): Practical code-level guide to using LLMs for query understanding in e-commerce search. Covers embedding collapse (hubness), why structured QU beats pure embeddings for narrow domains, synonym extraction with Pydantic+BM25 boosting, deep multi-label category classification (10K+ labels) with dynamic Pydantic enums for cost optimization, and caching strategies. Demonstrates 12% NDCG improvement (0.541 → 0.608) on Wayfair queries with gpt-4.1-nano. Key insight: \"BM25 narrows the label space, enabling cheap LLM classification, which then boosts BM25 scores\" — a virtuous cycle. Complemented by [[concepts/query-understanding]] concept page enrichment. [[raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search]]
+
 - **"Will Agents Replace Search Teams? (a discussion)"** (Jan 2026, YouTube): 55-minute discussion with Daniel Tunkelang exploring the boundary between what agents can and cannot replace in search teams — covers the latency-feedback tradeoff, domain-specific LLM assumptions, economic disruption (EXA, Reddit), stakes-based error models, and the growing importance of critical thinking. [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
 
 - **Berlin Buzzwords / Haystack EU** (2024): "Learning to Rank for Reddit Search: A Project Retro" with Charles Njoroge
@@ -46,7 +48,9 @@ He maintains an active blog at softwaredoug.com with regular "daily search tips"
 
 > "The tests are the code now."
 
-> "Content understanding IS query understanding."
+"> "Content understanding IS query understanding."
+
+> "Embedding collapse is real. In your tiny domain, everything looks similar. Structured query understanding fixes this."
 
 > "All search is structured now — there's no excuse for unstructured search queries in the age of LLMs."
 

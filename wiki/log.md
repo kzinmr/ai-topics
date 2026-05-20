@@ -1781,4 +1781,11 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 
 ### Raw Articles Archived
 - raw/articles/2026-05-20_cohere_cohere-acquires-reliant-ai-expand-sovereign-enterprise-ai.md
+- Raw articles: raw/articles/2026-05-20_softwaredoug_llm-query-understanding-cheat-at-search.md
 - raw/articles/2026-05-20_warp_multi-harness-cloud-agent-orchestration.md
+- Pages enriched: concepts/query-understanding.md (+185 lines LLM-Powered QU in Practice section)
+  - Added: embedding collapse (hubness), structured QU, synonym extraction, category classification, cost optimization (dynamic Pydantic enums), caching strategy, empirical results (NDCG +12%)
+  - Linked: entities/doug-turnbull, concepts/content-understanding
+- Entities updated:
+  - entities/doug-turnbull-speaking.md: Added LLM QU lecture entry + embedding collapse quote
+  - entities/doug-turnbull.md: Updated date

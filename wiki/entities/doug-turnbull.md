@@ -2,7 +2,7 @@
 title: Doug Turnbull
 type: entity
 created: 2026-04-10
-updated: 2026-05-19
+updated: 2026-05-20
 tags:
   - person
   - developer-tooling
