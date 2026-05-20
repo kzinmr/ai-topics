@@ -1,0 +1,57 @@
+[
+  {
+    "item_id": "smol-deepseek-v32-newsletter",
+    "source": "backlog",
+    "title": "DeepSeek V3.2 & 3.2-Speciale: GPT5-High Open Weights, Context Management, Plans for Compute Scaling",
+    "url": "https://substack.com/redirect/cb58dc0e-fdea-477a-a6b4-b9d000c8f410",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-cb58dc0e-fdea-477a-a6b4-b9d000c8f410--d5a7631a.md",
+    "source_name": "smol.ai newsletter",
+    "recommended_action": "reference",
+    "reason_ja": "smol.aiのAIニュースまとめnewsletter(3221行)。DeepSeek V3.2、Arcee Trinity、Transformers v5、LangChain 1.1など多数のAIトピックを含むが、個別のトピックは既にwikiでカバー済み(concepts/deepseek-v3-2.md等)。Reddit/Twitter要約の集合体であり、独自分析や新しい概念はない。",
+    "body_excerpt": "Whale is all you need. AI News for 11/28/2025-12/1/2025. We checked 12 subreddits, 544 Twitters and 24 Discords..."
+  },
+  {
+    "item_id": "tatham-aperiodic-transducers",
+    "source": "backlog",
+    "title": "Beyond the wall: working with aperiodic tilings using finite-state transducers",
+    "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-transducers/",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-aperiodic-transducers--a60a18f5.md",
+    "source_name": "chiark.greenend.org.uk/~sgtatham",
+    "recommended_action": "skip",
+    "reason_ja": "Simon Tathamによる非周期タイリングと有限状態トランスデューサーに関する純粋数学/アルゴリズム記事。AI/LLM/エージェントの関連性なし。rss除外設定済みブログからの過去記事。",
+    "body_excerpt": "In two articles last year, I described a very convenient recursive algorithm for generating random patches of aperiodic tilings..."
+  },
+  {
+    "item_id": "oldvcr-parisc-powerbook",
+    "source": "backlog",
+    "title": "A real PowerBook: the Macintosh Application Environment on a PA-RISC laptop",
+    "url": "https://oldvcr.blogspot.com/2025/08/a-real-powerbook-macintosh-application.html",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/oldvcr.blogspot.com--2025-08-a-real-powerbook-macintosh-application-html--006125f2.md",
+    "source_name": "oldvcr.blogspot.com",
+    "recommended_action": "skip",
+    "reason_ja": "PA-RISCラップトップとMacintosh Application Environmentに関するレトロコンピュータ記事。AI/LLM無関係。",
+    "body_excerpt": "I like the Power ISA very much, but there's nothing architecturally obvious to say that the next natural step from the Motorola 68000 family must be to PowerPC..."
+  },
+  {
+    "item_id": "dwarkesh-eric-jang-alphago",
+    "source": "backlog",
+    "title": "Eric Jang - Building AlphaGo from scratch",
+    "url": "https://www.dwarkesh.com/p/eric-jang",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dwarkesh.com--p-eric-jang--44c9439c.md",
+    "source_name": "dwarkesh.com",
+    "recommended_action": "reference",
+    "reason_ja": "Eric JangとのAlphaGo構築ポッドキャスト。RL、MCTS、AI研究の自動化など重要なAI概念を含むが、既にentities/eric-jang.mdに全文収録済み。sources frontmatterに本raw_pathも登録済み。",
+    "body_excerpt": "Eric Jang walks through how to build AlphaGo from scratch, but with modern AI tools. Sometimes you understand the future better by stepping backward..."
+  },
+  {
+    "item_id": "oldvcr-alpha-micro",
+    "source": "backlog",
+    "title": "Refurb weekend double header: Alpha Micro AM-1000E and AM-1200",
+    "url": "https://oldvcr.blogspot.com/2026/03/refurb-weekend-double-header-alpha.html",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/oldvcr.blogspot.com--2026-03-refurb-weekend-double-header-alpha-html--9945b2ae.md",
+    "source_name": "oldvcr.blogspot.com",
+    "recommended_action": "skip",
+    "reason_ja": "Alpha Microsystems AM-1000E/AM-1200のレストアに関するレトロコンピュータ記事。68000ベースのマルチユーザーシステム。AI/LLM無関係。",
+    "body_excerpt": "I've mentioned previously my great affection for Alpha Microsystems hardware, which are rather obscure computers nowadays, but back in the 1980s and 1990s were fairly sophisticated 68000-based multiuser systems..."
+  }
+]
