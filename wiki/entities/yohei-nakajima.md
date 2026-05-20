@@ -77,9 +77,13 @@ Synthesized NeurIPS 2025 papers into six mechanisms for agent self-improvement:
 
 **Key thesis**: "The bottleneck is increasingly not model size, but feedback quality and control."
 
-### Statefulness Research (May 2026)
+### Statefulness Research (May 2026) — Two-Part Series
 
-"The State of Statefulness in AI Agents" (X Article, 2026-05-19) — engages with the industry-wide shift from stateless LLM calls to persistent agent state via filesystems, memory layers, and knowledge graphs. Fits within the Gen 2→Gen 3 transition documented in [[concepts/agent-statefulness]].
+**Part 1**: "The State of Statefulness in AI Agents" — diagnosis. Models are stateless between turns; everything else compensates. Memory is six distinct problems. Agents mutate (capability evolution). Events capture what happened, graphs represent what is. The missing primitive: a persistent, reactive, inspectable, evolving state substrate.
+
+**Part 2**: "ActiveGraph: A Continuity Layer for Long-Running Agents" — concrete design response. Positioned as conceptually "BabyAGI 4." Introduces ActiveGraph: a graph that models the *world the computation acts on* (not the computation itself). Five-layer architecture: Events (append-only), Behaviors (reactions), Relations (semantics), Patches (proposal vs acceptance), Traces (not debugging — **the product**). Everything becomes state: tasks, claims, evidence, contradictions, decisions, failures, proposed self-improvements. Self-improvement via trace → evaluate → patch → fork → diff → promote. Closing thesis: "LLMs reason. Agent loops act. Active Graph explores continuity."
+
+Both articles documented in [[concepts/agent-statefulness]].
 
 ### Other Projects
 

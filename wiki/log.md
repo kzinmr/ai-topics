@@ -1401,7 +1401,12 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 
 
 - `wiki/raw/articles/2026-05-19_yoheinakajima_state-of-statefulness-ai-agents.md` — Update: Full article retrieved via xurl --auth oauth2 /2/tweets/ID?tweet.fields=article (tweet.fields=article with OAuth2 user auth). Replaced partial reconstruction with complete plain_text. Key insights: "Models are stateless between turns — everything else exists because of that"; memory is six distinct problems; agents mutate (capability evolution); events capture what happened, graphs represent what is; branching is the hard problem; conversation may not be the correct substrate for persistent intelligence; the missing primitive is a persistent, reactive, inspectable, evolving state substrate.
-- `wiki/concepts/agent-statefulness.md` — Enriched: Added 7 major new sections from Nakajima article: (1) Memory Is Not One Thing — Six Distinct Problems, (2) Agents Don't Just Accumulate Memories. They Mutate., (3) Events and Graphs: Complementary Not Competing, (4) The Branching Problem, (5) The Deepest Shift: From Reactive to Stateful, (6) The Strange Convergence (rediscovery of old systems ideas), (7) The Missing Primitive: Persistent Operational Substrate. Rewrote Architecture Design Implications from 6→10 points incorporating both framings. Updated index.md summary.
+- `wiki/concepts/agent-statefulness.md` — Enriched: Added ActiveGraph section (Nakajima Part 2): concrete continuity layer design, World Graph vs Workflow Graph distinction, 5-layer architecture (Events/Behaviors/Relations/Patches/Traces), everything-as-state, self-improvement with lineage. Added raw article source. Updated index.md summary.
+
+
+- `wiki/raw/articles/2026-05-19_yoheinakajima_activegraph-continuity-layer.md` — Save: Full raw article for Nakajima's sequel "ActiveGraph: A Continuity Layer for Long-Running Agents" (2026-05-19). Fetched via xurl --auth oauth2 /2/tweets/ID?tweet.fields=article.
+- `wiki/entities/yohei-nakajima.md` — Enriched: Expanded Statefulness Research section to two-part series with ActiveGraph (Part 2) summary.
+- `wiki/concepts/agent-statefulness.md` — Enriched: Added ActiveGraph section (Nakajima Part 2): concrete continuity layer design, World Graph vs Workflow Graph distinction, 5-layer architecture (Events/Behaviors/Relations/Patches/Traces), everything-as-state, self-improvement via trace→evaluate→patch→fork→diff→promote. Updated index.md summary.
 
 ## 2026-05-19 — Create | Query Understanding concept page (systematized from Tunkelang's 24-article series)
 

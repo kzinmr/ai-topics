@@ -187,6 +187,59 @@ Nakajima's hypothesis about what's missing:
 
 The ecosystem already understands that memory matters, traces matter, graphs matter. **The missing step may be treating these not as separate systems around an agent loop, but as one evolving operational substrate.**
 
+## ActiveGraph: A Concrete Design Response (Nakajima, Part 2)
+
+The sequel article "ActiveGraph: A Continuity Layer for Long-Running Agents" answers the diagnosis with a concrete architecture. Positioned as conceptually "BabyAGI 4" — the loop stays small; the continuity layer becomes the point.
+
+### The Core Distinction: World Graph vs Workflow Graph
+
+> *"A workflow graph usually models computation: planner → researcher → critic → writer. Active Graph models the world the computation acts on."*
+
+The next step doesn't need to be hardcoded into a process diagram. **It can emerge from what changed in the world.**
+
+### Architecture Layers
+
+| Layer | Role |
+|---|---|
+| **Events** | Record what changed — append-only, replayable |
+| **Behaviors** | React to changes — the active computation |
+| **Relations** | Carry meaning: supports, contradicts, depends_on, derived_from |
+| **Patches** | Separate "the system wants to change something" from "the change is accepted" |
+| **Traces** | Explain how anything came to exist — **"the trace is not a debugging artifact. It is the product."** |
+
+### Everything Becomes State
+
+> *"A task is state. A memory is state. A claim is state. A contradiction is state. A decision is state. A failed behavior is state. A proposed self-improvement is state."*
+
+Once these live together in one graph, emergent behaviors become natural:
+- Claim without evidence → creates research task
+- Two contradictory claims → trigger review
+- Completed dependency → unblocks work
+- Stale source → marks memo stale
+- Risky memory update → stays proposed until approved
+- Repeated failure → suggests change to system's own behavior
+- Run → can pause, resume, fork, and explain itself
+
+### Self-Improvement with Lineage
+
+ActiveGraph's self-improvement path is concrete and auditable:
+
+1. Behavior runs → trace records what happened
+2. Evaluator scores outcome
+3. System notices failure → proposes patch to prompt/rule/policy/behavior
+4. Fork tests the change → diff compares results
+5. Winning change promoted
+
+> *"That is not mystical reflection. It is self-modification with lineage."*
+
+### The Closing Thesis
+
+> *"LLMs gave us powerful inference. Tool use gave models ways to act. Real-time models give them presence. Agent loops gave them persistence of execution. But persistent agency probably needs something else too: continuity of state."*
+
+> *"BabyAGI made tasks persistent. Active Graph asks what happens when the whole operating reality of an agent becomes persistent state. Not as a feature inside the loop. As the substrate the loop runs on."*
+
+> *"LLMs reason. Agent loops act. Active Graph explores continuity."*
+
 ## Research Frontiers
 
 ### StatePlane (arXiv: 2603.13644)
