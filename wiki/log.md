@@ -1,3 +1,19 @@
+## [2026-05-20] entity + raw | Han Lee entity enrichment + RSS monitoring added
+
+**Entity page enriched**: [[entities/han-lee]] — Added Monitoring section (RSS feed tracked via blogwatcher), 4 new notable articles (Agent Harness, Data Aggregation Is Not a Moat, Don't Outsource Your Understanding, Determinism Cope), 3 new contributions (Training vs Production Harness Asymmetry, Cognitive Offloading vs Surrender, Data Moat Deconstruction), updated Related Wiki Pages with Letta link.
+
+**Raw articles created**:
+- [[raw/articles/2026-05-08_leehanchung_hidden-technical-debt-agent-harness]] — Third in Hidden Technical Debt series; deconstructs agent harness layer
+- [[raw/articles/2026-05-10_leehanchung_data-aggregation-is-not-a-moat]] — AI agents collapse data aggregation moats
+- [[raw/articles/2026-05-01_leehanchung_dont-outsource-your-understanding]] — Cognitive offloading vs surrender
+- [[raw/articles/2026-04-07_leehanchung_determinism-biggest-cope-in-ai-adoption]] — Determinism vs evaluation in AI adoption
+
+**RSS monitoring**: Added "Han, Not Solo" to blogwatcher + OPML (Individual Blogs). RSS: `https://leehanchung.github.io/feed.xml` Initial scan: 20 articles found (marked read).
+
+**X/Twitter**: @HanchungLee NOT yet tracked in x-accounts.yaml — noted in Monitoring section as TODO.
+
+**Already ingested (confirmed)**:  (Agent Runtime),  concept page.
+
 ## [2026-05-20] config | RSS exclusion — Dan Luu + Simon Tatham
 
 ### RSS Monitoring Removed
