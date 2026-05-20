@@ -1,0 +1,54 @@
+{
+  "checkpoint_run_id": "20260520T160038Z",
+  "archived_at": "2026-05-20T16:13:43.450182+00:00",
+  "items": [
+    {
+      "item_id": "marc-andreessen-podcast",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why This Time Is Different",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193082940",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--48be8440.md",
+      "recommended_action": "reference",
+      "reason_ja": "Marc Andreessenのポッドキャスト対談。内容は既にentities/marc-andreessen.mdに反映済み。追加の知見はあるが、既存ページでカバーされている範囲内。",
+      "candidate_wiki_path": "entities/marc-andreessen.md",
+      "body_excerpt": "Fresh off raising a monster $15B, Marc Andreessen has lived through multiple computing platform shifts firsthand, from Mosaic and Netscape to cofounding a16z. In this episode, Marc joins swyx and Alessio in a16z's legendary Sand Hill Road office to argue that AI is not just another hype cycle, but the payoff of an 80-year overnight success..."
+    },
+    {
+      "item_id": "marc-andreessen-duplicate-1",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why This Time Is Different",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193082940",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--3824613e.md",
+      "recommended_action": "skip",
+      "reason_ja": "上記と同一コンテンツの重複ファイル（異なるapp-link URLバリエーション）。既に処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why This Time Is Different"
+    },
+    {
+      "item_id": "marc-andreessen-duplicate-2",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why This Time Is Different",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193082940",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--77b6c333.md",
+      "recommended_action": "skip",
+      "reason_ja": "上記と同一コンテンツの重複ファイル。既に処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why This Time Is Different"
+    },
+    {
+      "item_id": "david-reich-dwarkesh",
+      "source": "backlog",
+      "source_name": "Dwarkesh Podcast",
+      "title": "David Reich - Why the Bronze Age was an inflection point in human evolution",
+      "url": "https://www.dwarkesh.com/p/david-reich-2",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dwarkesh.com--p-david-reich-2--6c65332c.md",
+      "recommended_action": "skip",
+      "reason_ja": "古代DNA・青銅器時代的人类進化に関するポッドキャスト。AI/LLM/エージェントとは無関係。wiki価値なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "David Reich is back. He and collaborator Ali Akbari just published a paper that overturns a long-standing consensus about human evolution — that natural selection has been dormant in our species since the agricultural revolution."
+    }
+  ]
+}

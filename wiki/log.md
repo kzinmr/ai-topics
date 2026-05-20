@@ -1,3 +1,9 @@
+## [2026-05-20] raw-backlog-ingest | Notion/Sarah Sachs/Simon Last/Marc Andreessen podcast triage
+- **New entity pages**: `entities/notion.md` (Notion as AI company), `entities/sarah-sachs.md` (Notion AI engineering lead), `entities/simon-last.md` (Notion agent harness architect)
+- **Enriched**: `entities/marc-andreessen.md` (already existed from same podcast)
+- **Enriched concept pages**: `concepts/harness-engineering.md` (Notion's 5-iteration agent harness, progressive disclosure), `concepts/ai-evals.md` (Notion's three-tier eval framework, MBE role, 30% headroom evals), `concepts/agent-architecture-decomposition.md` (Notion's agent composition via shared databases)
+- **Notion eval insights**: Regression tests (CI) → Launch-quality (80-90%) → Frontier/headroom (30% pass rate); Model Behavior Engineer as distinct role; quality variation across providers (Bedrock vs Azure vs first-party)
+- **Sources**: Latent Space Podcast — Notion's Token Town (Simon Last & Sarah Sachs), Marc Andreessen interview
 ## [2026-05-20] update | blog/2026-05-20_hermes_divide-and-conquer-duality.md — ずらした条件付き圧縮の章を追加
 - 新第3章「ずらした条件付き圧縮——素朴な双対モデルの限界」: objective' = compress(context | goal) への定式化修正
 - 残差学習・アドバンテージ関数(GRPO)・能動学習の3つの相同構造で「ずらし」を理論化

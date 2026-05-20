@@ -295,6 +295,37 @@ On May 6, 2026, [[entities/vtrivedy10|Viv Trivedy]] published an 8-point manifes
 
 **Key takeaway**: Viv's manifesto provides a unified framework connecting harness hill-climbing (Point 1), evals as moat (Point 5), and open model cost dynamics (Point 6) — all pointing to harness engineering as the primary differentiator in production AI.
 
+## Notion's Agent Harness Architecture (April 2026)
+
+Notion's Custom Agents, led by Simon Last and Sarah Sachs, represent one of the most mature enterprise agent harness implementations as of 2026. The feature was rebuilt **four or five times** before production launch, evolving through:
+
+| Iteration | Approach | Why it failed |
+|-----------|----------|--------------|
+| v1 (2022) | JavaScript coding agents + custom tool-calling framework | Models too dumb, context windows too short |
+| v2 | Fine-tuned function-calling models (partnership with Frontier Labs & Fireworks) | Pre-function-calling era, unreliable |
+| v3 | Custom XML | Too complex for models to parse reliably |
+| v4 | Markdown and SQL-like abstractions | Better, but still exposed too much complexity |
+| v5 (2026) | Tool definitions with progressive disclosure | Production-ready: agents only see relevant tools |
+
+### Key Harness Patterns from Notion
+
+- **Progressive tool disclosure**: The harness dynamically reveals tools based on context, rather than exposing all capabilities at once
+- **Shared databases as composition primitives**: Agents compose by sharing Notion databases — the filesystem-equivalent for Notion's agent ecosystem
+- **Manager agents**: A supervisor pattern where one agent coordinates dozens of specialized agents
+- **Memory as pages and databases**: Notion's existing data model serves as persistent agent memory, avoiding the need for separate vector stores
+- **Self-configuring agents**: Agents can inspect their own failures and edit their own instructions (with permission guardrails)
+- **Shortened system prompts**: By progressively disclosing tools and context, the system prompt became much shorter and more manageable
+
+### Eval Integration in Notion's Harness
+
+Notion embeds evals directly into the harness lifecycle:
+- Every team maintains their own evals, integrated into CI or run nightly
+- A custom agent triggers alerts to teams when major failures are detected
+- The eval framework is maintained by a dedicated "agent dev velocity" org
+- When models are updated (e.g., Sonnet 3.7 deprecation), evals catch regressions before they reach users
+
+**Source**: [Latent Space Podcast: Notion's Token Town](raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--c27d9b81.md) — Simon Last & Sarah Sachs, April 2026
+
 ## Sierra: Harness-as-a-Service at Scale
 
 [[entities/sierra|Sierra]], the AI customer service platform, demonstrates harness engineering at enterprise scale:

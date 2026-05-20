@@ -368,6 +368,7 @@
 - [[entities/nvidia-openshell]] — NVIDIA OpenShell: secure agent execution environment providing OS-level sandboxing, deny-by-default security policies, YAML-based access control. Reference implementation of the "Open Runtime" layer in Harrison Chase's framework.
 - [[entities/nvidia-nemotron-3-nano-omni]] — NVIDIA Nemotron 3 Nano Omni: fully open-source multimodal MoE model (30B-A3B) unifying video, audio, image, and text. Functions as perception sub-agent in agentic systems.
 - [[entities/nvidia]] — NVIDIA is a semiconductor and AI infrastructure company. In the context of this wiki, NVIDIA is significant for:
+- [[entities/notion]] — Knowledge work decacorn. Custom Agents (4-5 rebuilds), Agent Lab thesis, three-tier evals. Meeting Notes as growth loop. CLI + MCP for agent-native workspace.
 - [[entities/microsoft]] — **Type** | AI Research & Product Company | Cloud infrastructure leader with Azure, GitHub Copilot, and OpenAI partnership renegotiated April 2026.
 - [[entities/mit-ibm-computing-research-lab]] — Joint MIT-IBM research lab (Apr 2026) exploring convergence of AI, algorithms, and quantum computing. Successor to MIT-IBM Watson AI Lab.
 - [[entities/oldvcr-blogspot-com]] — **Cameron Kaiser** (blogging as **ClassicHasClass**) is a vintage computing researcher, software engineer, and open-source developer based at concepts/floodgap-systems. He runs the blog **Old Vinta...
@@ -429,6 +430,7 @@
 - [[entities/sankalp-sinha]] — **Sankalp Sinha**, known online as **dejavucoder** (@dejavucoder), is an **AI engineer** and applied LLM researcher based in India. He focuses on AI-assisted coding, agentic workflows, LLM evaluati...
 - [[entities/sap-business-ai-platform]] — SAP Business AI Platform — Unified enterprise AI foundation announced at SAP Sapphire 2026. SAP Knowledge Graph, Joule Studio, Autonomous Suite. Anthropic Claude as primary reasoning engine for Joule agents.
 - [[entities/sara-hooker]] — Researcher at Google DeepMind. Author of **"The Hardware Lottery"** — foundational framework on how hardware availability determines AI research direction. Advocate for cross-disciplinary hardware/software/ML collaboration.
+- [[entities/sarah-sachs]] — Engineering leader at Notion, Core AI (~50 people). Three-tier eval framework. Model Behavior Engineer role.
 - [[entities/scott-wu]] — CEO and co-founder of **Cognition AI**, the company behind **Devin** — the world's first autonomous AI software engineer. Former competitive programming champion (3× IOI gold medals, 1st place in 2...
 - [[entities/scott-alexander]] — Scott Alexander (Scott Alexander Siskind) — Psychiatrist and blogger. Slate Star Codex / Astral Codex Ten. Author of "Meditations On Moloch" (2014), popularizing the concept of multipolar traps. Central figure in rationalist community and AI safety discourse.
 - [[entities/seangoedecke-com]] — **URL:** https://www.seangoedecke.com
@@ -447,6 +449,7 @@
 - [[entities/shannhk]] — Shann Holmberg — Head of Product at Espressio AI, Hermes Agent operator. Creator of hermes-agent-control-room template (4-level fleet operation model). Co-founder of Lunar Strategy (250+ projects). Co-author of Master Web3 Marketing.
 - [[entities/shunyu-yao]] — **Name:** Shunyu Yao (姚顺雨)
 - [[entities/simon-willison]] — Django co-creator, open-source advocate, and leading voice in AI-assisted software development. Founder of Datasette and prolific blogger at simonwillison.net.
+- [[entities/simon-last]] — Product/engineering leader at Notion. Led Custom Agents through 4-5 rebuilds. Software factory advocate. CLI over MCP.
 - [[entities/simone-salis]] — **URL:** https://simone.org
 - [[entities/skyfall-dev]] — **URL:** https://skyfall.dev
 - [[entities/snyk]] — Snyk — developer security platform. Integrated Anthropic Claude into AI Security Platform (May 2026) for vulnerability discovery and automated remediation.

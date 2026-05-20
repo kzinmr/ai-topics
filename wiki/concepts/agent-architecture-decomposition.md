@@ -196,6 +196,17 @@ The Model/Runtime/Harness decomposition maps to traditional software architectur
 
 This mapping explains why **microservice architecture patterns** (service discovery, routing, circuit breakers, observability) directly apply to multi-agent systems.
 
+### Notion's Agent Composition Patterns (April 2026)
+
+Notion's Custom Agents implement a practical multi-agent orchestration model within a productivity workspace:
+
+- **Shared databases as primitives**: Agents compose by sharing Notion databases — this is the filesystem-equivalent for Notion's agent ecosystem
+- **Agent-to-agent invocation**: Agents can call other agents directly
+- **Manager agents**: A supervisor agent coordinates dozens of specialized agents
+- **Memory as pages and databases**: Notion's existing data model (pages + databases) serves as persistent agent memory without requiring separate vector stores
+
+This demonstrates how **agent composition** can leverage existing product data models rather than requiring specialized infrastructure. The key insight: agents compose through the same shared state mechanisms that humans use (databases, pages, documents).
+
 ## Sources
 
 - [Harrison Chase's post](https://x.com/hwchase17/status/2034297125417460044) (March 2026)

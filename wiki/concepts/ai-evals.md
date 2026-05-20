@@ -220,11 +220,46 @@ A prompt fix (adding company policy info) was expected to improve Brand Alignmen
 - [[comparisons/eval-tools-comparison]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI
 - [[concepts/evals-skills]] — Evals skills for coding agents
 -  — PBT methodology applied to LLM evaluation (MacIver)
+## Notion's Three-Tier Eval Framework (April 2026)
+
+Notion's approach to evals, as described by Sarah Sachs (engineering lead) and Simon Last (product lead), provides a production-tested three-tier evaluation framework:
+
+### Tier 1: Regression Tests in CI
+- Equivalent to unit tests in traditional software development
+- Must pass before deployment
+- Run on every code change to catch regressions
+- Stochastic error rate is accepted and managed
+
+### Tier 2: Launch-Quality Evals
+- Report card format requiring **80-90% pass rate** across user journeys before shipping
+- Each team owns their own evals
+- Eval framework maintained by dedicated "agent dev velocity" org
+- A custom agent triggers alerts to teams when major failures are detected in nightly runs
+
+### Tier 3: Frontier/Headroom Evals
+- **Intentionally designed to pass only ~30%** — the goal is to see where model capabilities are heading
+- Full-time staff dedicated: data scientist, Model Behavior Engineer, evals engineer
+- Partnership with frontier labs (Anthropic, OpenAI) on pre-release model evaluation
+- Labs send multiple model snapshots; Notion provides feedback that influences shipped versions
+
+### Key Insights from Notion's Eval Practice
+
+**Model Behavior Engineer (MBE) role**: A specialized position that started as "data specialist" — people with diverse backgrounds (including linguistics) who analyze model outputs, write evals, and perform failure analysis. This role treats eval writing and model understanding as a distinct function, not just software engineering.
+
+**Quality variation across providers**: Notion observes different quality levels even when companies claim to sell "the same model" through different vendors (first-party vs. Bedrock vs. Azure). Quantization differences affect quality, not just latency.
+
+**Eval saturation problem**: When evals reach ~100% pass rate, they stop providing useful signal. Notion's solution is the frontier/headroom tier — deliberately creating harder evals that only pass ~30% of the time.
+
+**Cross-reference**: See [[concepts/harness-engineering]] for Notion's agent harness architecture, where evals are embedded directly into the harness lifecycle.
+
+**Source**: [Latent Space Podcast: Notion's Token Town](raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--c27d9b81.md) — Simon Last & Sarah Sachs, April 2026
+
 ## Related People
 
 - [[entities/drmaciver]] — Created `foundational-llm-evals` applying property-based testing to LLM evaluation
 - [[entities/shreya-shankar]] — Co-creator of AI evals course, DocETL/EvalGen/SPADE researcher
 - [[entities/hamel-husain]] — Co-creator of AI evals course, Critique Shadowing methodology pioneer
+- [[entities/sarah-sachs]] — Leads Notion's eval framework and Model Behavior Engineer hiring
 
 ## Sources
 
