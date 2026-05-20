@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-20 | Total pages: 2068 | Indexed entries: 1183 | Not in index: 865 |
+> Last updated: 2026-05-20 | Total pages: 2071 | Indexed entries: 1186 | Not in index: 865 |
 
 ## Entities (635 pages)
 
@@ -225,7 +225,7 @@
 - [[entities/forrest-chang]] — Creator of the andrej-karpathy-skills repo — fastest-growing single-file repo of 2026 (120K+ stars). Converted Karpathy's LLM coding observations into 4 behavioral CLAUDE.md rules.
 - [[entities/foundation-capital]] — AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents.
 - [[entities/fourier-intelligence]] — Chinese company specializing in rehabilitation robotics and general-purpose humanoid robots. Combines medical expertise with advanced robotics technology.
-- [[entities/gemini]] — **Type** | Multimodal AI Model Family |
+- [[entities/gemini]] — Google's multimodal AI model family. I/O 2026: Gemini 3.5 Flash, Omni (world model video gen), Spark (24/7 AI agent), Daily Brief. 900M+ monthly users. Powered by Antigravity harness.
 - [[entities/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform announced at Cloud Next 2026. Evolves Vertex AI into full-stack agent build/scale/govern/optimize platform with 200+ models, Agent Studio, ADK, Memory Bank, Agent Sandbox.
 - [[entities/gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind. 60M+ downloads. MTP drafters (May 2026) deliver 3x faster inference with no quality degradation.
 - [[entities/geoffrey-hinton]] — **Full Name** | Geoffrey Everest Hinton |
@@ -652,7 +652,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1372 pages)
+## Concepts (1375 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -798,6 +798,7 @@
 - [[concepts/model-routing]] — Per-turn model routing for AI coding agents. Augment Prism: 20-30% cost reduction at similar quality. Cache-aware routing decisions.
 - [[concepts/object-storage-queue]] — Object Storage Queue: S3のCASを利用した分散キュー実装パターン。Group Commit、Stateless Broker、HeartbeatによるJob Recovery。ゼロディスクアーキテクチャの応用。Absurd（PG Queue）との比較を含む。 — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/openai-tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security hardening measures.
+- [[concepts/openai-gpt-realtime-2]] — OpenAI GPT-Realtime-2: three realtime voice models (May 2026). GPT-5-class reasoning voice, live translation (70+→13 languages), streaming Whisper transcription. 128K context, 5 reasoning levels.
 - [[concepts/open-source-ai-destruction]] — Open Source AI Destruction
 - [[concepts/openclaw-architecture]] — OpenClawのアーキテクチャ詳細
 - [[concepts/openenv]] — Meta+HF partnership: open standard for agent environments (sandboxed tools, APIs, credentials). Integrates with TRL, TorchForge, verl, SkyRL. Environment Hub on Hugging Face.
@@ -956,6 +957,7 @@
 - [[concepts/nemo-rl]] — NeMo-RL (NVIDIA): クリーンなインターフェースとモジュラー設計のRLフレームワーク。マルチターンRL対応、SFT+DPO+GRPO、FSDP/Megatron.
 - [[concepts/nvidia-dynamo]] — NVIDIA Dynamo: agentic codingワークロード向け推論アーキテクチャ。KVキャッシュ最適化、ストリーミングツールディスパッチ、マルチターン推論解析。Claude Code/Codex/OpenClaw対応。TTFT 5x改善。
 - [[concepts/nvidia-rtx-ai-garage]] — NVIDIA RTX AI Garage: RTXハードウェア向けAIツール・モデル・エージェントの最適化・キュレーション・推奨プログラム。Hermes Agent、NemoClaw、OpenClaw等のエージェントフレームワークをRTX PC/ワークステーション/DGX Spark向けに検証・推奨。NVFP4量子化、Playbookレシピ、ハンズオンセッションを提供。
+- [[concepts/nvidia-sana-wm]] — NVIDIA SANA-WM: 2.6B open-source world model (Apache 2.0, May 2026). Minute-long 720p video on single GPU. Hybrid Gated DeltaNet + softmax attention, dual-branch camera control. 15 days on 64 H100s, 36× faster than LingBot-World.
 - [[concepts/nvidia-vera-rubin]] — NVIDIA Vera Rubin platform: ラックスケールAIスーパーコンピュータ。6チップ（GPU/CPU/Switch/NIC/DPU/Fabric）のエクストリーム共同設計。ボトルネックがFLOPSから帯域幅・相互接続・システム統合へシフト。NVLink 6、BlueField-4 DPU、ICMS（KV-cache専用G3.5層）。10T MoEをBlackwellの1/4 GPUで訓練、推論10xコスト削減。
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
@@ -987,6 +989,7 @@
 - [[concepts/constitutional-ai]] — Anthropic's methodology for aligning AI via explicit principles (Constitution). Compared with OpenAI Model Spec by Boaz Barak (Jan 2026). Three poles of alignment: Principles, Policies, Personality.
 - [[concepts/countbenchqa]] — CountBenchQA — 超シンプルなオブジェクトカウンティングベンチマーク。LAION-400Mから手動検証。2-10個の物体。データ品質は最高。
 - [[concepts/craft-agents]] — Craft Agents: open-source agent interface. Works with Claude, ChatGPT, OpenRouter, local models. Built-in Chromium browser, MCP support, Claude Code skill import. Multi-provider via Vercel AI SDK.
+- [[concepts/cursor-composer-2-5]] — Cursor Composer 2.5 (May 2026): agentic coding model built on Kimi K2.5. Targeted RL with textual feedback, 25× synthetic data, Sharded Muon optimizer. SpaceXAI joint training upcoming on Colossus 2.
 - [[concepts/data-analysis-agents]] — AIデータ分析エージェントの包括的概念。データ探索→スキーマ理解→クエリ生成→実行→検証→可視化→報告のパイプライン。OpenAI社内データエージェント（GPT-5.2）とCognition DANA/Devinの2大アプローチを比較。DWHセマンティックレイヤー・ゴールデンクエリとの関係性も含む。
 - [[concepts/db9-filesystem-sql]]
 - [[concepts/factorio-learning-environment]] — Factorio Learning Environment (FLE) — Factorioゲームを模したエージェントeval。コード+REPLで操作、ビジョン不要。24のlab-playタスク。NeurIPS 2025。

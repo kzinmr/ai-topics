@@ -3,11 +3,13 @@ title: "Gemini"
 type: entity
 created: 2026-04-25
 updated: 2026-05-20
-tags: [model, multimodal, text-generation, image-generation, google]
+tags: [model, multimodal, text-generation, image-generation, video-generation, google, world-models, ai-agents]
 aliases: ["Gemini models", "Google Gemini"]
 sources:
   - raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md
   - raw/articles/simonwillison.net--2026-may-19-gemini-35-flash--d5349c1f.md
+  - raw/articles/2026-05-20_google_gemini-app-agentic.md
+  - raw/articles/2026-05-20_google_gemini-omni.md
 ---
 # Gemini
 
@@ -15,8 +17,9 @@ sources:
 |---|---|
 | **Type** | Multimodal AI Model Family |
 | **Company** | Google / Google DeepMind |
-| **Models** | Gemini 1.5, Gemini 2.0, Gemini 3.1 Flash, etc. |
-| **Capabilities** | Text, images, audio, video understanding and generation |
+| **Models** | Gemini 1.5, 2.0, 3.1, 3.5 Flash, Omni Flash |
+| **Capabilities** | Text, images, audio, video understanding/generation; world model; AI agents |
+| **I/O 2026** | Gemini 3.5 Flash, Omni, Spark, Daily Brief |
 
 ## Overview
 
@@ -28,6 +31,9 @@ Gemini is Google's multimodal AI model family, developed by Google DeepMind and 
 - **Gemini 2.0** — Next-generation improvements in reasoning, multimodal understanding, and generation
 - **Gemini 3.1 Flash** — Optimized for speed with TTS (text-to-speech) capabilities
 - **Gemini 3.5 Flash** — Released at Google I/O 2026 (GA, no preview). Designed as the default model across Google's product ecosystem
+- **Gemini Omni (Omni Flash)** — World model for cinematic video generation from text/images/audio/video. Physics-grounded. SynthID watermark.
+- **Gemini Spark** — 24/7 personal AI agent. Cloud-based, Antigravity harness, Workspace integration. Proactive task execution.
+- **Daily Brief** — Personalized morning digest agent. Summarizes and prioritizes across connected apps.
 - **Gemini Everywhere** — Google's push to integrate Gemini across all products
 
 ## Gemini 3.5 Flash
@@ -90,6 +96,51 @@ Google's Gemini models power image generation through multiple channels:
   - Loses aspect-ratio control compared to AI Studio
   - Adds watermark in bottom-right corner
 
+## Gemini Omni (World Model)
+
+Released at Google I/O 2026. A natively multimodal generative model that combines Gemini's reasoning with creative video generation.
+
+**Key capabilities:**
+- **Multi-turn video editing** via natural language conversation
+- **Physics-grounded generation**: improved intuitive physics (gravity, fluid dynamics, kinetic energy)
+- **Reference-based creation**: synchronize text, image, video, and audio inputs into cohesive clips
+- **Digital Avatars**: create videos with your own voice and face
+- **SynthID watermark**: imperceptible digital watermark on all generated videos
+
+**Availability:**
+- **Gemini Omni Flash** — Rolling out to Google AI Plus/Pro/Ultra subscribers globally (Gemini app, Google Flow)
+- YouTube Shorts & YouTube Create App — No cost
+- Developer & enterprise APIs — Coming weeks
+
+See also: [[concepts/nvidia-sana-wm]] (competing open-source world model)
+
+## Gemini Spark (24/7 AI Agent)
+
+A cloud-based personal AI agent that works proactively on users' behalf, under their direction. Represents Google's shift from reactive assistant to active agent.
+
+**Technical foundation:**
+- Powered by Gemini 3.5 + **Antigravity harness**
+- Deep Workspace integration: Gmail, Docs, Slides, Calendar
+- Cloud-based execution: keeps working even when laptop is closed
+
+**Capabilities:**
+- Recurring tasks with triggers (e.g., parse monthly credit card statements)
+- Teachable skills (e.g., extract school deadlines from emails, send daily digest)
+- Complete workflow synthesis (meeting notes → Google Doc → follow-up email)
+
+**MCP ecosystem:** Canva, OpenTable, Instacart connections launching. More partners integrating.
+
+**Upcoming (Summer 2026):**
+- Text and email Spark directly
+- Custom sub-agents
+- Local browser operation via macOS app
+
+**Availability:** Trusted testers this week; US Google AI Ultra subscribers beta next week.
+
+## Daily Brief
+
+Personalized morning digest agent. Opt-in. Works across connected apps (Gmail, Calendar) in background. Gathers urgent emails, upcoming events, follow-ups into skimmable briefing. Prioritizes based on user goals. Learnable via thumbs up/down.
+
 ## Competition with OpenAI
 
 Gemini-powered image generation (NB2) competes directly with OpenAI's GPT Image 2 (ChatGPT Images 2.0):
@@ -107,6 +158,10 @@ Gemini-powered image generation (NB2) competes directly with OpenAI's GPT Image 
 - [[concepts/nano-banana-2]] — NB2 image generation model
 - [[concepts/chatgpt-images-2.0]] — OpenAI's competitor
 - [[concepts/ai-image-generation]] — AI image generation overview
+- [[concepts/nvidia-sana-wm]] — Competing open-source world model
+- [[concepts/openai-gpt-realtime-2]] — Competing voice AI
+- [[concepts/cursor-composer-2-5]] — Coding agent using Antigravity-harness pattern
+- [[concepts/gemini]] — Concept-level overview
 
 ## Sources
 - [Alex Banks, The Signal: "ChatGPT Images 2.0 is genuinely fantastic"](https://thesignal.substack.com/p/chatgpt-images-20-is-genuinely-fantastic) (2026-04-24) — comparative analysis

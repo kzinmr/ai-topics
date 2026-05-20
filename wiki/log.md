@@ -1,3 +1,29 @@
+## [2026-05-20] active-crawl | Google I/O 2026 + Cursor Composer 2.5 + NVIDIA SANA-WM + OpenAI GPT-Realtime-2
+
+**Source**: Active crawl research. 4 topics discovered from web search (Google I/O 2026, Cursor blog, arXiv, OpenAI blog).
+
+### Raw Articles Created
+- [[raw/articles/2026-05-20_google_gemini-app-agentic.md]] — Google I/O 2026: Gemini app becomes agentic (Spark, Daily Brief, Omni, Neural Expressive, macOS app)
+- [[raw/articles/2026-05-20_google_gemini-omni.md]] — Gemini Omni Flash: world model for cinematic video generation from any input modality
+- [[raw/articles/2026-05-20_cursor_composer-2-5.md]] — Cursor Composer 2.5: targeted RL with textual feedback, 25× synthetic data, Sharded Muon
+- [[raw/articles/2026-05-20_nvidia_sana-wm.md]] — NVIDIA SANA-WM: 2.6B open-source world model, minute-scale 720p video on single GPU
+- [[raw/articles/2026-05-20_openai_gpt-realtime-2.md]] — OpenAI GPT-Realtime-2: three realtime voice models with GPT-5-class reasoning
+
+### Entity Page Updated
+- [[entities/gemini]] — Added Gemini Omni (world model), Gemini Spark (24/7 AI agent), Daily Brief sections. Updated infobox, model family list, relationships. Added 2 raw sources.
+
+### Concept Pages Created
+- [[concepts/cursor-composer-2-5]] — Agentic coding model built on Kimi K2.5. Targeted RL, 25× synthetic data, reward hacking, Sharded Muon optimizer
+- [[concepts/nvidia-sana-wm]] — 2.6B open-source world model (Apache 2.0). Hybrid GDN+softmax, dual-branch camera. 36× throughput vs LingBot-World
+- [[concepts/openai-gpt-realtime-2]] — Three realtime voice models: reasoning voice, live translation (70+→13 languages), streaming Whisper
+
+### index.md
+- Updated Entities section: gemini entry now reflects I/O 2026 announcements
+- Added 3 new concept entries (cursor-composer-2-5, nvidia-sana-wm, openai-gpt-realtime-2)
+- Updated header counts: Total pages 2068→2071, Concepts 1372→1375
+
+---
+
 ## [2026-05-20] raw + entity | RL Environments Taxonomy raw article + entity update
 
 **Raw article created**: [[raw/articles/2026-03-21_leehanchung_rl-environments-for-llm-agents]] — Foundational first article in Lee's "Hidden Technical Debt" series. Formally defines  = \{T, H, V, S, C\}$ framework. Task taxonomy (10 types), rollout protocols, tools landscape, verifier types, context management for 600+ turn episodes.
