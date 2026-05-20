@@ -1,3 +1,10 @@
+## [2026-05-20] update | blog/2026-05-20_hermes_divide-and-conquer-duality.md — ずらした条件付き圧縮の章を追加
+- 新第3章「ずらした条件付き圧縮——素朴な双対モデルの限界」: objective' = compress(context | goal) への定式化修正
+- 残差学習・アドバンテージ関数(GRPO)・能動学習の3つの相同構造で「ずらし」を理論化
+- Anthropicの暗黙的解決（タスク境界＋insufficient判定）の分析と残された3つの設計問題（充足度測定・残余クエリ化・変位粒度）
+- クエリ拡張/推薦との区別として「クエリ変位（displacement）」を提案
+- 結論を「分ける・つなぐ・ずらす」の三層構造に更新、次のフロンティアとしてずらしの設計を位置づけ
+
 ## [2026-05-20] create | blog/2026-05-20_hermes_divide-and-conquer-duality.md — 分割と双対: マルチエージェント、RLM、IRを貫く構造
 - マルチエージェント（水平分割/MapReduce）とRLM（深さ分割/再帰）の分割統治パターン
 - クエリ-文書双対性から見る Agent-Context 関係: objective↔クエリ, context↔文書, interleaved thinking↔relevance feedback
