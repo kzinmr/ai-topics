@@ -39,7 +39,7 @@ His 2026 article series **"Hidden Technical Debt of AI Systems"** — grounded i
 | Source | Method | Status |
 |--------|--------|--------|
 | RSS Feed | [feed.xml](https://leehanchung.github.io/feed.xml) | ✅ Active (added 2026-05-20; RSS → blogwatcher → daily `blog-ingest` pipeline) |
-| X/Twitter | [@HanchungLee](https://x.com/HanchungLee) | ❌ Not yet tracked in `x-accounts.yaml` |
+| X/Twitter | [@HanchungLee](https://x.com/HanchungLee) | ✅ Tracked in `x-accounts.yaml` (added 2026-05-20) |
 
 ## Key Articles
 

@@ -718,3 +718,17 @@ accounts:
   - training-infra
   - grpo
   notes: 'CEO/Co-founder of Prime Intellect — building open superintelligence & self-improving agents, decentralized AI compute. Launched Prime Intellect Lab (full-stack RL training platform). Released INTELLECT-3 (100B+ MoE, open-source). Co-founder of VitaDAO, Bio Protocol, CryoDAO (DeSci).'
+- handle: '@HanchungLee'
+  name: Hanchung Lee (Han Lee)
+  blog: https://leehanchung.github.io/blogs
+  rss: https://leehanchung.github.io/feed.xml
+  topics:
+  - agent-infrastructure
+  - agent-runtime
+  - agent-harness
+  - technical-debt
+  - rl-environments
+  - evaluation
+  - ai-adoption
+  - data-moat
+  notes: 'Senior Director of Data + AI at Moody''s Analytics. Author of "Han, Not Solo" blog. Wrote the foundational "Hidden Technical Debt of AI Systems" trilogy: RL Environments Taxonomy → Agent Runtime → Agent Harness. Key concepts: runtime shift, training vs production harness asymmetry, cognitive offloading vs surrender.'
