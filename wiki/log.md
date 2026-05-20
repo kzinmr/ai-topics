@@ -10,6 +10,38 @@ Both blogs have minimal AI/LLM content. Keeping them in RSS monitoring generates
 ### Entity Updated
 - `wiki/entities/chiark-greenend-org-uk-sgtatham.md` — Added Monitoring section with RSS exclusion note; removed RSS URL from infobox
 
+## [2026-05-20] newsletter-wiki-ingest | 6 newsletters batch — Google I/O 2026, Vlad Feinberg, Vincent Warmerdam, Cursor Composer 2.5, Anthropic Stainless, OpenAI reorg, LangSmith, Zero language
+
+### Source
+Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter/triage_latest.json`. 19 candidates → 8 take, 8 reference, 2 skip.
+
+### Created
+- `wiki/entities/vincent-warmerdam.md` — Vincent Warmerdam (@koaning): Engineer at marimo. Agent-Harness.ipynb insights (shared notebook canvas, marimo linter 60% fix rate, incremental generation, calm philosophy).
+- `wiki/entities/langsmith.md` — LangSmith CI/CD for agents platform. LangSmith Engine: auto-detect failures, cluster issues, draft fixes/evals.
+- `wiki/concepts/frontier-lab-job-preparation.md` — Vlad Feinberg's frontier lab job prep guide. Kernel-level optimization bottleneck, Chinchilla derivation, Jax/Pallas skills.
+
+### Enriched
+- `wiki/entities/google.md` — Added Google I/O 2026 section (Gemini 3.5 Flash: TB 76.2%, MMMU-Pro 84%; Gemini Omni multimodal video; Antigravity 2.0 Agent OS w/ 93 sub-agents demo; Spark 24/7 personal AI; 3.2 quadrillion tok/mo; 900M+ MAU).
+- `wiki/entities/cursor-ai.md` — Added Composer 2.5 (Opus 4.7-xhigh parity) + SpaceXAI 10× compute training (1M H100-equiv from Colossus 2).
+- `wiki/entities/anthropic.md` — Added Stainless (SDK/MCP platform) acquisition section. Vertical integration: models → SDKs → sandboxes.
+- `wiki/entities/openai.md` — Added reorganization (Greg Brockman→Products, Thibault Sottiaux→Core Product), Codex Phone Connection, ChatGPT App Directory & SDK.
+- `wiki/entities/jason-liu.md` — Added Codex Maxxing section (durable threads, shared memory, daily primitives).
+- `wiki/entities/zero-language.md` — Bumped updated date, added newsletter source.
+
+### Reference Items (minor, no page changes needed)
+- Cloudflare Mythos testing — already covered in concepts/claude-mythos-glasswing.md Cloudflare Testing section
+- MTP in llama.cpp, Meta AIRA, Training in Imagination — insufficient depth for new pages
+- HTML is the New Markdown — thin reference
+- Zero language concept — already fully covered by entities/zero-language.md
+
+### Index
+- entities: 633→635 (vincent-warmerdam, langsmith)
+- concepts: 1371→1372 (frontier-lab-job-preparation)
+- total pages: 2065→2068
+- indexed entries: 1180→1183
+
+---
+
 ## [2026-05-19] ingest | Bag-of-Documents Model slides (Tunkelang, SpeakerDeck, May 2026)
 
 ### Created

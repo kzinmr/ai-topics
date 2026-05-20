@@ -1,7 +1,7 @@
 ---
 title: "Cursor AI"
 created: 2026-05-06
-updated: 2026-05-08
+updated: 2026-05-20
 type: entity
 tags:
   - entity
@@ -22,6 +22,7 @@ sources:
   - https://www.paraform.com/talent-density-index
   - https://cursor.com/blog/series-d
   - https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html
+  - raw/newsletters/2026-05-19-ainews-how-to-land-a-job-at-a-frontier-lab-on-pretraining.md
 ---
 
 
@@ -95,6 +96,25 @@ In May 2026, Cursor launched **agents that monitor GitHub repositories and autom
 ## SpaceX-Cursor Connection
 
 In April 2026, it was reported that **SpaceX has the right to acquire Cursor for $60 billion** or alternatively pay $10 billion for collaborative compute credits (likely Colossus H100 equivalents). This signals a broader industry trend: top coding labs need to own both model and product.
+
+
+
+### Cursor Composer 2.5 (May 2026)
+
+Cursor released **Composer 2.5**, their strongest coding model to date:
+
+| Metric | Value |
+|--------|-------|
+| **Benchmark parity** | Comparable to Opus 4.7-xhigh and GPT-5.5-high |
+| **Cost** | Fraction of frontier models |
+| **Availability** | GA in Cursor IDE |
+
+### SpaceXAI Training Partnership
+
+Cursor disclosed training a **larger model from scratch** in partnership with **SpaceXAI**:
+- **10× compute** compared to previous training runs
+- **1 million H100-equivalents** from Colossus 2
+- This represents a major escalation in Cursor's compute capacity, moving beyond fine-tuning into foundation model training
 
 ## Related Concepts
 

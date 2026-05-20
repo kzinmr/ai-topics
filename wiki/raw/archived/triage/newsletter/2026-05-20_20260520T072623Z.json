@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-05-20T07:26:30.329302+00:00",
+  "triage_run_id": "20260520T072623Z",
+  "source": "newsletter",
+  "summary_ja": "6通のニュースレターを分析。Google I/O 2026（Gemini 3.5 Flash/Omni/Spark/Antigravity）の主要カバレッジが未処理。Vlad Feinbergのフロンティアラボ就職ガイド、Agent-Harness.ipynb（Vincent Warmerdam/marimo知見）、Cursor Composer 2.5+SpaceXAI、AnthropicのStainless買収が主要な追加候補。Lenny's Summitは非AIイベントでスキップ。",
+  "decisions": [
+    {
+      "item_id": "<20260519130125.3.47066a91867123f0@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "Can I get my agents on the phone?",
+      "title": "Codex Phone Connection + Hooks",
+      "url": "https://open.substack.com/pub/bensbites/p/can-i-get-my-agents-on-the-phone",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-19-can-i-get-my-agents-on-the-phone.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ CodexのPhone Connection（スマホからタスク開始、Mac/Devboxで実行、承認・質問・diff確認をスマホから）とHooks機能。OpenAIエンティティにCodex mobile節があるがHooksは未収録。マイナー更新で対応可能。",
+      "candidate_wiki_path": "entities/openai.md",
+      "body_excerpt": "# Newsletter Digest - 2026-05-19\n**Subject:** Can I get my agents on the phone?\n**Collected:** 2026-05-20T07:10:23.350627+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ2"
+    },
+    {
+      "item_id": "<20260519073141.3.a226f0e89ecc1d39@mg2.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "[AINews] How to land a job at a frontier lab (on Pretraining)",
+      "title": "Meta AIRA: Agentic Neural Architecture Discovery",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-how-to-land-a-job-at-a-frontier",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-19-ainews-how-to-land-a-job-at-a-frontier-lab-on-pretraining.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ MetaのAIRA：エージェント的ニューラルアーキテクチャ探索がLlama 3.2を350M/1B/3Bで24時間以内に凌駕。研究トピックとして概念ページ参照に追加可能。",
+      "candidate_wiki_path": "concepts/agentic-ai-research.md",
+      "body_excerpt": "# Newsletter Digest - 2026-05-19\n**Subject:** [AINews] How to land a job at a frontier lab (on Pretraining)\n**Collected:** 2026-05-20T07:10:22.280814+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cm"
+    },
+    {
+      "item_id": "<20260519152725.3.f93296411b9c02e2@mg-d1.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "The Lenny and Friends Summit is back!",
+      "title": "Summit Event Announcement",
+      "url": "https://open.substack.com/pub/lenny/p/the-lenny-and-friends-summit-is-back",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-19-the-lenny-and-friends-summit-is-back.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Lenny's Summit（9月10日SF）のイベント告知。プロダクトリーダー向けカンファレンスでAI関連コンテンツを含む可能性はあるが、告知ページのみで具体的なAI知見なし。Wiki非対象。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-19\n**Subject:** The Lenny and Friends Summit is back!\n**Collected:** 2026-05-20T07:10:24.602578+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdX"
+    },
+    {
+      "item_id": "<20260519.155117.df06415c@mta30>-1",
+      "source": "newsletter",
+      "source_name": "Google Turns Flash Into the AI Default",
+      "title": "Superintel Google I/O coverage",
+      "url": "https://link.mail.beehiiv.com/v1/c/eYafGo9F38lm487XrQNbTxxgBZZ88CAmHimRvXGo0sZxmSFTSZARSnTTK%2BdO%0Av2Qeh7GKj5bjLGasUSyLrAknZ8lb3g5avDG91U719sqrzzgZcnMIxPSgTvmk%0AIPUYlVkBttmiG6qjjMKy%2BczmGoxW5YPofHPlyZqrmxg6wmKQ8yhpnQQ9DaGS%0AIJNPaaDRz4z62%2FQJQKfOSmFhHqk3wvXpdQ%3D%3D%0A",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-19-google-turns-flash-into-the-ai-default.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Superintelニュースレター。Beehiivトラッキングリンクは403でコンテンツ取得不可。トピックはGemini 3.5 FlashのGoogle I/O発表で、AINews Google I/Oカバレッジ（別途take判定）と内容重複。AINewsの方が詳細なベンチマーク・価格情報を含むため、こちらはスキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-19\n**Subject:** Google Turns Flash Into the AI Default\n**Collected:** 2026-05-20T07:10:25.676150+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/eYafGo9F38lm487XrQNbTxxgBZZ88CAmHimRvXGo0sZxmSFTSZARSnTTK%2BdO%0Av2Qeh7GKj5bjLGasUSyLr"
+    }
+  ]
+}

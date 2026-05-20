@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-19 | Total pages: 2065 | Indexed entries: 1180 | Not in index: 865 |
+> Last updated: 2026-05-20 | Total pages: 2068 | Indexed entries: 1183 | Not in index: 865 |
 
-## Entities (633 pages)
+## Entities (635 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -495,6 +495,7 @@
 - [[entities/vaishnavi-shrivastava]] — Vaishnavi Shrivastava (@VaishShrivas) — Researcher at Microsoft Research AI Frontiers. Lead author of [[echo-rl|ECHO]], a method for training CLI agents that learns world models from terminal responses during RL.
 - [[entities/varun-trivedy]] — **X** | @Vtrivedy10 |
 - [[entities/vincent-weisser]] — Vincent Weisser — Co-founder & CEO of Prime Intellect. Building open superintelligence stack. $20.5M raised.
+- [[entities/vincent-warmerdam]] — Vincent Warmerdam (@koaning) — Engineer at marimo (reactive notebook platform). Author of Agent-Harness.ipynb insights: shared notebook canvas, marimo linter solved 60% of agent errors, incremental generation, calm engineering philosophy. Ex-Rasa.
 - [[entities/vtrivedy10]] — **X** | @vtrivedy10 |
 - [[entities/vibevoice]] — Microsoft Research's next-token diffusion TTS model for long-form, multi-speaker conversational audio (up to 90 min, 4 speakers). ICLR 2026 Oral. Open-source (MIT). [[entities/vibevoice|→詳細]]
 - [[entities/walden-yan]] — **Role** | Co-Founder & Chief Product Officer (CPO), Cognition AI |
@@ -570,6 +571,7 @@
 - [[entities/karpathy-writings]] — Andrej Karpathy writings and blog posts
 - [[entities/knowledgator]] — Open-Source ML research company focused on encoder-based models for information extraction (GLiNER, GLiClass, GLiREL)
 - [[entities/langchain]] — LangChain — framework for building applications with LLMs via composable chains
+- [[entities/langsmith]] — LangSmith — LLM observability & evaluation platform. LangSmith Engine (May 2026): CI/CD for agents — auto-detects failures from traces, clusters issues, drafts fixes/evals.
 - [[entities/llama-3]] — Llama 3 / Llama 3.1 — Meta のオープンソース基盤言語モデルファミリー。405B 密な Transformer で GPT-4 に匹敵。二段階開発パラダイムを確立。
 - [[entities/llamaindex]] — LlamaIndex — data framework for connecting custom data sources to LLMs
 - [[entities/omar-khattab/baleen]] — Omar Khattab — Baleen multi-hop retrieval system
@@ -650,7 +652,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1371 pages)
+## Concepts (1372 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -992,6 +994,7 @@
 - [[concepts/flash-attention-4]] — FA4: Blackwell B200最適化のCUDAカーネル。1,605 TFLOPs/s（71%利用率）、cuDNN比1.3×高速。非同期パイプライン・ハイブリッドexp・条件的softmax rescaling。Tri Dao (Together AI/Princeton) ら。
 - [[concepts/forward-deployed-engineering]] — FDE: Frontier AI labs embedding engineers into enterprise customers. Models commoditize → deployment layer becomes the new moat. OpenAI $4B Deployment Co., Anthropic $1.5B JV, Google hiring hundreds.
 - [[concepts/frontier-swe-benchmark]] — FrontierSWE: 超高難度コーディングエージェントベンチマーク（Proximal Labs）。20時間制限、Implementation/Performance/Researchの3カテゴリ17タスク。GPT-5.5+Codexが平均ランク2.35（Dominance 83%）で首位。保守（GPT-5.4）vs攻撃的（Opus 4.6）の行動比較、overconfidence/cheating行動を記録。
+- [[concepts/frontier-lab-job-preparation]] — Frontier Lab Job Preparation — Vlad Feinberg（Google/TPU）によるフロンティアラボ就職ガイド。カーネルワークが最大のボトルネック、Chinchilla則導出、Jax実装、Pallasカーネル最適化。採用テスト基準。
 - [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.
 - [[concepts/agent-serverless]] — Serverless deployment pattern for AI agents with built-in SaaS integration, permissions, security, and log persistence tiers. Enterprise monetization via persistent logs and audit trails.
 - [[concepts/agent-identity-verification]]

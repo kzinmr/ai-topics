@@ -4,7 +4,7 @@ description: "Creator of Instructor library and Staff ML Engineer; formerly Stit
 url: https://jxnl.co
 type: entity
 created: 2026-04-13
-updated: 2026-05-17
+updated: 2026-05-20
 tags:
   - person
   - open-source
@@ -23,6 +23,7 @@ sources:
   - https://github.com/jxnl
   - https://python.useinstructor.com/
   - https://x.com/jxnlco
+  - raw/newsletters/2026-05-19-can-i-get-my-agents-on-the-phone.md
 ---
 
 # Jason Liu (@jxnlco)
@@ -94,6 +95,20 @@ Liu is an angel investor and a16z scout, backing companies including:
 
 - Liu, J., Weitzman, E.R., & Chunara, R. (2017). Assessing behavior stage progression from social media data. *CSCW 2017*, 1320-1333.
 - Rehman, N., Liu, J., & Chunara, R. (2016). Propensity score matching for vaccination sentiment analysis. *AAAI Spring Symposium*.
+
+
+
+### Codex Maxxing (May 2026)
+
+Liu published his "Codex maxxing" daily primitives, a set of practices for keeping Codex useful across workflows:
+
+| Practice | Description |
+|----------|-------------|
+| **Durable threads** | Maintaining persistent conversation threads that survive across sessions |
+| **Shared memory** | Using Codex's memory capabilities across multiple workflows |
+| **Daily primitives** | Repeating patterns that keep Codex productive over extended use |
+
+This builds on Liu's broader philosophy of treating AI tools as **infrastructure for daily work** rather than one-off problem solvers — consistent with his context engineering perspective.
 
 ## Cross-References
 

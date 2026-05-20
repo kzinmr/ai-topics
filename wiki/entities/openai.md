@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-05-18
+updated: 2026-05-20
 tags:
   - company
   - model
@@ -30,7 +30,7 @@ sources:
 |---|---|
 | **Type** | AI Research & Product Company |
 | **Founded** | 2015 |
-| **Leadership** | Sam Altman (CEO), Greg Brockman (President/CTO), Ilya Sutskever (Chief Scientist, former) |
+| **Leadership** | Sam Altman (CEO), Greg Brockman (Products), Thibault Sottiaux (Core Product), Ilya Sutskever (Chief Scientist, former) |
 | **Key Products** | GPT-4/5 series, ChatGPT, Codex, DALL-E, Whisper, o-series, Agents SDK, Symphony |
 | **Website** | [openai.com](https://openai.com) |
 | **API** | [platform.openai.com](https://platform.openai.com) |
@@ -137,6 +137,48 @@ In May 2026, OpenAI published consumer ChatGPT usage data for Q1 2026 via OpenAI
 | **Scope note** | Consumer plans only (Free, Go, Plus, Pro). **Excludes Codex** and enterprise/education — understates total workplace and educational usage. |
 
 Source: [How ChatGPT adoption broadened in early 2026](https://openai.com/signals/research/2026q1-update) (OpenAI Signals). See also [[raw/articles/openai.com--signals-research-2026q1-update--45f994a1.md]].
+
+
+
+### OpenAI Reorganization — Unifying ChatGPT and Codex (May 2026)
+
+OpenAI announced a major organizational restructuring on May 19, 2026:
+
+| Change | Detail |
+|--------|--------|
+| **Greg Brockman** | Takes over all products — unifying ChatGPT consumer and Codex developer products under single leadership |
+| **Thibault Sottiaux** | Ex-Head of Codex, now leads core product development |
+| **Fidji Simo** | On medical leave |
+| **Goal** | Structural alignment of consumer (ChatGPT) and developer (Codex) products |
+
+This restructuring signals a strategic shift: **ChatGPT and Codex are no longer separate product lines**. The unification means code generation, chat, and agentic features will be developed as a single platform experience, with shared infrastructure and go-to-market.
+
+### Codex Phone Connection (May 2026)
+
+Codex now supports starting tasks from a **mobile device**, with execution happening on desktop/devbox:
+
+| Feature | Description |
+|---------|-------------|
+| **Start on phone** | Initiate code generation/agent tasks from mobile |
+| **Work on Mac/devbox** | Heavy computation runs on preferred machine |
+| **Approve from phone** | Approve commands, answer questions, review diffs |
+| **Use case** | Brainstorming and task initiation on-the-go |
+
+Also introduces **Hooks** to Codex — event-driven triggers for automated workflows.
+
+### ChatGPT App Directory & Apps SDK (May 2026)
+
+OpenAI launched an **App Directory** and **Apps SDK** for ChatGPT:
+
+| Feature | Description |
+|---------|-------------|
+| **App Directory** | Discoverable apps running inside ChatGPT chat UI |
+| **Apps SDK** | Build interactive experiences that run in-chat |
+| **Renamed** | "Connectors" rebranded to "Apps" |
+| **Launch partners** | Spotify, Zillow, Apple Music, DoorDash |
+| **Monetization** | Future monetization hinted but not specified |
+
+This represents ChatGPT's evolution from a chat tool to a platform — developers can build interactive experiences that run directly inside the conversational interface.
 
 ## May 2026 Product Launches
 

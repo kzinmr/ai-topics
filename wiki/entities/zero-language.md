@@ -3,7 +3,7 @@ title: Zero (Programming Language)
 type: entity
 aliases: [zerolang, zero-lang]
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-05-20
 tags:
   - programming-language
   - open-source
@@ -13,7 +13,7 @@ tags:
   - coding-agents
   - tool
   - developer-tooling
-sources: [raw/articles/2026-05-18_vercel-labs_zero-language-for-agents.md, https://github.com/vercel-labs/zero, https://zerolang.ai]
+sources: [raw/articles/2026-05-18_vercel-labs_zero-language-for-agents.md, raw/newsletters/2026-05-19-can-i-get-my-agents-on-the-phone.md, https://github.com/vercel-labs/zero, https://zerolang.ai]
 ---
 
 # Zero — The Programming Language for Agents

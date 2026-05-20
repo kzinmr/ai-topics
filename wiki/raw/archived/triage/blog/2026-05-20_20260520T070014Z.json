@@ -1,0 +1,186 @@
+{
+  "archived_at": "2026-05-20T07:33:39.140583+00:00",
+  "triage_run_id": "20260520T070014Z",
+  "source": "blog",
+  "summary_ja": "20件のブログ候補をトリアージ。4件のtake（Gemini 3.5 Flashエンティティ更新、Ed Zitronエンリッチ（Zillow事例含む）、antirez EDITツール設計、KarpathyのAnthropic加入）、2件のreference、14件のskip。非AI記事14件（純粋数学x3、ハードウェア、ポリシーx4、OS雑学、文学、OSS一般、技術史）およびSimon Willisonの軽微リリース通知x3はskip。",
+  "decisions": [
+    {
+      "item_id": "blog-16",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "llm-gemini 0.32",
+      "url": "https://simonwillison.net/2026/May/19/llm-gemini-2/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-may-19-llm-gemini-2--39646e1d.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ llm-gemini 0.32リリースでgemini-3.5-flashモデル対応。本リリースはblog-1（Gemini 3.5 Flash解説）の内容を補完するもの。entities/gemini.md更新時に併せて言及可能。",
+      "candidate_wiki_path": "entities/gemini.md",
+      "body_excerpt": "# Release: llm-gemini 0.32\n**Date**: 19th May 2026\n**Source**: [Simon Willison's Weblog](https://simonwillison.net/2026/May/19/llm-gemini-2/)\nRelease llm-gemini 0.32 — LLM plugin to access Google's Gemini family of models.\n- New model `gemini-3.5-flash` for Gemini 3.5 Flash.\nSee also Simon's notes o"
+    },
+    {
+      "item_id": "blog-19",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "llm-gemini 0.32a0",
+      "url": "https://simonwillison.net/2026/May/19/llm-gemini/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-may-19-llm-gemini--98da1cc4.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★☆☆☆ llm-gemini 0.32a0アルファ版で推論トークンのストリーミング対応。Gemini 3.5 Flashの技術詳細に関連するが、単独でのwiki価値は低い。entities/gemini.mdの機能一覧に補足可能。",
+      "candidate_wiki_path": "entities/gemini.md",
+      "body_excerpt": "# Release: llm-gemini 0.32a0\n**Date**: 19th May 2026\n**Source**: [Simon Willison's Weblog](https://simonwillison.net/2026/May/19/llm-gemini/)\nRelease llm-gemini 0.32a0 — LLM plugin to access Google's Gemini family of models.\n- Compatible with `llm>=0.32a0` alpha — adds the ability to stream reasonin"
+    },
+    {
+      "item_id": "blog-3",
+      "source": "blog",
+      "source_name": "nesbitt.io",
+      "title": "Dumb Ways for an Open Source Project to Die",
+      "url": "https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/nesbitt.io--2026-05-19-dumb-ways-for-an-open-source-project-to-die-html--ae21fa3d.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ オープンソースプロジェクトが死滅する様々なパターンを分類した一般OSS記事。AI/Agent技術とは無関係。",
+      "body_excerpt": "# Dumb Ways for an Open Source Project to Die\nSource: https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html\nWeekend at Bernie’s\nshowed that a good chunk of the most-depended-on open source packages are dead, and there are a lot of different ways for a project to end up that "
+    },
+    {
+      "item_id": "blog-4",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "Square root of x² − 1",
+      "url": "https://www.johndcook.com/blog/2026/05/19/square-root-of-x-squared-minus-one/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-05-19-square-root-of-x-squared-minus-one--c7a64fd6.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 純粋数学記事。AI/LLM技術との関連性なし。",
+      "body_excerpt": "# Square root of x² − 1\nSource: https://www.johndcook.com/blog/2026/05/19/square-root-of-x-squared-minus-one/\nHow should we define √(\nz\n² − 1)? Well, you could square\nz\n, subtract 1, and take the square root. What else would you do?!\nThe question turns out to be more subtle than it looks.\nWhen\nx\nis "
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "Don Zagier's approximation of Markov's diophantine equation",
+      "url": "https://www.johndcook.com/blog/2026/05/19/zagiers-equation/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-05-19-zagiers-equation--6ef94ce3.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 純粋数学記事。AI/LLM技術との関連性なし。",
+      "body_excerpt": "# Don Zagier's approximation of Markov's diophantine equation\nSource: https://www.johndcook.com/blog/2026/05/19/zagiers-equation/\nMarkov numbers are integer solutions to\nx\n² +\ny\n² +\nz\n² = 3\nxyz\n.\nThe Wikipedia article on Markov numbers mentions that Don Zagier studied Markov numbers by looking the a"
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "A closer look at Cosh[ArcCosh[x] + ArcCosh[y]]",
+      "url": "https://www.johndcook.com/blog/2026/05/19/closer-look-at-an-identity/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-05-19-closer-look-at-an-identity--0778a8ae.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 純粋数学記事。AI/LLM技術との関連性なし。",
+      "body_excerpt": "# A closer look at Cosh[ArcCosh[x] + ArcCosh[y]]\nSource: https://www.johndcook.com/blog/2026/05/19/closer-look-at-an-identity/\nThe previous post derived the identity\nand said in a footnote that the identity holds at least for\nx\n> 1 and\ny\n> 1. That’s true, but let’s see why the footnote is necessary."
+    },
+    {
+      "item_id": "blog-7",
+      "source": "blog",
+      "source_name": "jeffgeerling.com",
+      "title": "Wi-Wi Is Wireless Time Sync at 1 nanosecond",
+      "url": "https://www.jeffgeerling.com/blog/2026/wi-wi-is-wireless-time-sync-less-than-5ns/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/jeffgeerling.com--blog-2026-wi-wi-is-wireless-time-sync-less-than-5ns--cccf797f.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ワイヤレス時刻同期（ハードウェア/ネットワーキング）に関する記事。AI/LLM技術との関連性なし。",
+      "body_excerpt": "# Wi-Wi Is Wireless Time Sync at 1 nanosecond\nSource: https://www.jeffgeerling.com/blog/2026/wi-wi-is-wireless-time-sync-less-than-5ns/\nAt NAB, I found a demo of\nWi-Wi STAMP\n, a wireless time synchronization protocol that\ncame out of Japan's NICT\n.\nWi-Wi stands for Wireless 2Way interferometry, and "
+    },
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "pluralistic.net",
+      "title": "Pluralistic: There’s no such thing as “age verification” (19 May 2026)",
+      "url": "https://pluralistic.net/2026/05/19/shes-dead-of-course/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/pluralistic.net--2026-05-19-shes-dead-of-course--fc4af4e0.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 年齢認証制度の政策批判。Cory Doctorowの社会・政策論。AI/LLM技術との関連性なし。",
+      "body_excerpt": "# Pluralistic: There’s no such thing as “age verification” (19 May 2026)\nSource: https://pluralistic.net/2026/05/19/shes-dead-of-course/\nToday's links\nThere's no such thing as \"age verification\"\n: The foreseeable and foreseen consequences of \"something must be done\"/\"there, I've done something.\"\nHey"
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "shkspr.mobi",
+      "title": "Book Review: Terrible Worlds: Destinations by Adrian Tchaikovsky",
+      "url": "https://shkspr.mobi/blog/2026/05/book-review-terrible-worlds-destinations-by-adrian-tchaikovsky/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/shkspr.mobi--blog-2026-05-book-review-terrible-worlds-destinations-by-adr--d55b4241.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 書評記事。SF文学のレビュー。AI/LLM技術との関連性なし。",
+      "body_excerpt": "# Book Review: Terrible Worlds: Destinations by Adrian Tchaikovsky\nSource: https://shkspr.mobi/blog/2026/05/book-review-terrible-worlds-destinations-by-adrian-tchaikovsky/\nWhat's better than one Adrian Tchaikovsky novella?\nThree\nAdrian Tchaikovsky novellæ! Or is it \"novellii\"? Either way, a delightf"
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "devblogs.microsoft.com/oldnewthing",
+      "title": "What is the history of the ERROR_ARENA_TRASHED error code?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260519-00/?p=112339",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/devblogs.microsoft.com--oldnewthing-20260519-00--d9c27287.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Windowsエラーコードの歴史的雑学。Raymond ChenのThe Old New Thing。AI/LLM技術との関連性なし。",
+      "body_excerpt": "# What is the history of the ERROR_ARENA_TRASHED error code?\nSource: https://devblogs.microsoft.com/oldnewthing/20260519-00/?p=112339\nError code 7 is\nERROR_\nARENA_\nTRASHED\n. What does this mean? It sounds like a heavy metal band ran amok and made a mess of the performance area that they rented.\nThis"
+    },
+    {
+      "item_id": "blog-11",
+      "source": "blog",
+      "source_name": "dfarq.homeip.net",
+      "title": "Microsoft Antitrust case of 1998",
+      "url": "https://dfarq.homeip.net/microsoft-antitrust-case-of-1998/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dfarq.homeip.net--microsoft-antitrust-case-of-1998--20da2f52.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 1998年マイクロソフト反トラスト法裁判の歴史記事。AI/LLM技術との関連性なし。",
+      "body_excerpt": "# Microsoft Antitrust case of 1998\nSource: https://dfarq.homeip.net/microsoft-antitrust-case-of-1998/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-antitrust-case-of-1998\nOn May 18, 1998, the Department of Justice filed an antitrust lawsuit against Microsoft, seeking ultimately to break up th"
+    },
+    {
+      "item_id": "blog-12",
+      "source": "blog",
+      "source_name": "pluralistic.net",
+      "title": "Pluralistic: In praise of (some) compartmentalization (14 Apr 2026)",
+      "url": "https://pluralistic.net/2026/04/14/compartment/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/pluralistic.net--2026-04-14-compartment--afd39aa3.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 情報管理・区画化についての一般論。Cory Doctorowの社会論。AI/LLM技術との関連性なし。",
+      "body_excerpt": "# Pluralistic: In praise of (some) compartmentalization (14 Apr 2026)\nSource: https://pluralistic.net/2026/04/14/compartment/\nToday's links\nIn praise of (some) compartmentalization (\npermalink\n)\nIf there's one FAQ I get Q'ed most F'ly, it's this: \"How do you get so much done?\" The short answer is, \""
+    },
+    {
+      "item_id": "blog-13",
+      "source": "blog",
+      "source_name": "pluralistic.net",
+      "title": "Pluralistic: Austerity creates fascism (13 Apr 2026)",
+      "url": "https://pluralistic.net/2026/04/12/always-great/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/pluralistic.net--2026-04-12-always-great--7e2e475a.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 緊縮財政とファシズムの関係についての政治論。Cory Doctorow。AI/LLM技術との関連性なし。",
+      "body_excerpt": "# Pluralistic: Austerity creates fascism (13 Apr 2026)\nSource: https://pluralistic.net/2026/04/12/always-great/\nToday's links\nAusterity creates fascism\n: We can't afford to not afford nice things.\nHey look at this\n: Delights to delectate.\nObject permanence\n: The Server of Amontillado; Flapper's Dict"
+    },
+    {
+      "item_id": "blog-14",
+      "source": "blog",
+      "source_name": "pluralistic.net",
+      "title": "Pluralistic: Don’t Be Evil (11 Apr 2026)",
+      "url": "https://pluralistic.net/2026/04/11/obvious-terrible-ideas/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/pluralistic.net--2026-04-11-obvious-terrible-ideas--568c136e.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 企業倫理についての一般論。Cory Doctorow。AI/LLM技術との関連性なし。",
+      "body_excerpt": "# Pluralistic: Don’t Be Evil (11 Apr 2026)\nSource: https://pluralistic.net/2026/04/11/obvious-terrible-ideas/\nToday's links\nHow I knew I was officially Old: I stopped being disoriented by the experience of meeting with grown-ass adults who wanted to thank me for the books of mine they'd read in thei"
+    },
+    {
+      "item_id": "blog-17",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "datasette-llm-accountant 0.1a4",
+      "url": "https://simonwillison.net/2026/May/19/datasette-llm-accountant/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-may-19-datasette-llm-accountant--8135f712.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ datasette-llm-accountantのマイナーバグフィックスリリース。チェーン応答追跡のバグ修正のみ。wiki価値なし。",
+      "body_excerpt": "# Release: datasette-llm-accountant 0.1a4\n**Date**: 19th May 2026\n**Source**: [Simon Willison's Weblog](https://simonwillison.net/2026/May/19/datasette-llm-accountant/)\nRelease datasette-llm-accountant 0.1a4 — LLM accounting for Datasette.\n- Fixed bug tracking chains of responses. Refs [datasette-ll"
+    },
+    {
+      "item_id": "blog-18",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "datasette-llm 0.1a8",
+      "url": "https://simonwillison.net/2026/May/19/datasette-llm/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-may-19-datasette-llm--f122cce7.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ datasette-llmのマイナーバグフィックスリリース。llm_prompt_context()フックのバグ修正のみ。wiki価値なし。",
+      "body_excerpt": "# Release: datasette-llm 0.1a8\n**Date**: 19th May 2026\n**Source**: [Simon Willison's Weblog](https://simonwillison.net/2026/May/19/datasette-llm/)\nRelease datasette-llm 0.1a8 — LLM integration plugin for other plugins to depend on.\n- Fix for bug where `llm_prompt_context()` hook did not fully collec"
+    }
+  ]
+}

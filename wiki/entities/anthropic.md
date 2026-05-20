@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-05-18
+updated: 2026-05-20
 sources: [
   "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
   "https://x.com/RLanceMartin/status/2041927992986009773",
@@ -27,6 +27,7 @@ sources: [
   - raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md
   - raw/newsletters/2026-05-15-codex-goes-everywhere.md
   - raw/articles/2026-05-18_sap-anthropic-claude-business-ai-platform.md
+  - raw/newsletters/2026-05-19-can-i-get-my-agents-on-the-phone.md
 ]
 related: []
 ---
@@ -293,6 +294,23 @@ Anthropic は複数の大規模計算資源契約を締結：
 
 Claude は **AWS Trainium、Google TPU、NVIDIA GPU** の複数ハードウェアで訓練・実行されている。
 
+
+
+
+### Stainless Acquisition — SDK/MCP Platform (May 2026)
+
+Anthropic acquired **Stainless**, a SDK/MCP server platform company:
+
+| Detail | Value |
+|--------|-------|
+| **Target** | Stainless — builds SDKs for API-first companies |
+| **Notable customer** | OpenAI also used Stainless SDK |
+| **Post-acquisition** | Stainless service shutting down; technology integrating into Anthropic |
+| **Significance** | Vertical integration: Anthropic now owns the SDK layer for its API ecosystem |
+
+Stainless specialized in generating high-quality SDKs from API specifications. Its acquisition gives Anthropic direct control over the developer experience layer — the tools developers use to interact with Claude's API and MCP servers.
+
+Combined with Claude Managed Agents' **Self-Hosted Sandboxes + MCP Tunnels** (launched same week), this represents a pattern of aggressive vertical integration across the entire agent stack: models → SDKs → sandboxes → deployment.
 
 ### SAP Business AI Platform (May 2026)
 

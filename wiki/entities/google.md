@@ -2,10 +2,16 @@
 title: "Google (AI/ML)"
 type: entity
 created: 2026-04-25
-updated: 2026-05-18
+updated: 2026-05-20
 tags: [company, lab, product, platform, infrastructure]
 aliases: ["Google DeepMind", "Google Research"]
-sources: [raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md, raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md, raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md, raw/articles/2025-12-10_google-cloud_alphaevolve.md]
+sources: [
+  raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md,
+  raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md,
+  raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md,
+  raw/articles/2025-12-10_google-cloud_alphaevolve.md,
+  raw/newsletters/2026-05-20-ainews-google-i-o-2026-gemini-3-5-flash-omni-nanobanana-for-video-spark-backgrou.md
+]
 ---
 # Google (AI/ML)
 
@@ -135,6 +141,44 @@ AlphaEvolve, Google DeepMind's Gemini-powered evolutionary coding agent, has mov
 - **Gemini training**: 23% kernel speedup → 1% total training time reduction
 - Available on Google Cloud in private preview since Dec 2025
 - See [[concepts/alphaevolve]] for full details
+
+
+
+### Google I/O 2026: Gemini Platform Expansion (May 2026)
+
+At Google I/O 2026, Google announced a major expansion of the Gemini platform, positioning it as both a consumer AI surface and a developer/agent platform:
+
+#### Gemini 3.5 Flash (GA)
+- Now **generally available** — strongest agentic/coding model from Google yet
+- **Terminal-Bench 2.0**: 76.2%
+- **MMMU-Pro**: 84%
+- Default model in Gemini app and AI Mode in Search globally
+- Released alongside significant updates to the broader platform
+
+#### Gemini Omni (Multimodal Generation)
+- Multimodal generation/editing starting with video
+- Builds on NanoBanana for video — native video understanding and generation
+- Positioned as Google's answer to GPT-5.5's multistep reasoning
+
+#### Antigravity 2.0 (Agent OS)
+- Full agent stack: **Desktop / CLI / SDK / API**
+- Sub-agent parallel execution — agents spawning and coordinating sub-agents
+- Live demo: **93 sub-agents** collaborating to build an entire operating system
+- Represents Google's platform-level answer to Codex, Claude Code, and Cursor
+
+#### Spark — 24/7 Personal AI Agent
+- Personal AI agent running on cloud VMs
+- Persistent, always-on — works on tasks continuously
+- Available through Google Cloud for consumer and developer use cases
+
+#### Infrastructure Scale
+- **3.2 quadrillion tokens/month** processed (7× year-over-year growth)
+- **900M+ monthly active users** on Gemini app
+- Google's AI compute: ~25% of global AI compute capacity
+
+### Significance
+
+This positions Google as having re-entered the frontier model race after a period of lagging behind OpenAI and Anthropic. The combination of Gemini 3.5 Flash for performance, Omni for multimodal, Antigravity 2.0 for multi-agent orchestration, and Spark for persistent agents creates a full-stack AI platform that competes with both consumer (ChatGPT) and developer (Codex/Symphony) offerings from competitors.
 
 ## Relationships
 - [[concepts/gemini]] — Google's multimodal model family (detailed entity)

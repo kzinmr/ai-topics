@@ -1,0 +1,66 @@
+{
+  "checkpoint_run_id": "20260520T041323Z",
+  "summary_ja": "raw-backlog-ingest バッチ 5件。4件skip（非AIコンテンツ）、1件reference（既存ページでカバー済み）。",
+  "decisions": [
+    {
+      "item_id": "substack-smol-ai-digest",
+      "source": "backlog",
+      "source_name": "smol.ai",
+      "title": "OpenAI's gpt-oss 20B and 120B, Claude Opus 4.1, DeepMind Genie 3",
+      "url": "https://substack.com/redirect/ac2fa23e-f7ad-4d8d-a446-de1668967f28",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-ac2fa23e-f7ad-4d8d-a446-de1668967f28--9ceafa4a.md",
+      "recommended_action": "reference",
+      "reason_ja": "smol.ai AIニュースレター。gpt-oss、Claude Opus 4.1、Genie 3など複合トピック。既存wikiページでほぼカバー済み。Genie 3のstubページ更新に参考利用可能。",
+      "candidate_wiki_path": "concepts/genie.md",
+      "body_excerpt": "OpenAI's gpt-oss 20B and 120B, Claude Opus 4.1, DeepMind Genie 3... AI News digest covering multiple frontier model releases."
+    },
+    {
+      "item_id": "danluu-futurist",
+      "source": "backlog",
+      "source_name": "Dan Luu",
+      "title": "Futurist prediction methods and accuracy",
+      "url": "https://danluu.com/futurist-predictions/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--futurist-predictions--7775e8b3.md",
+      "recommended_action": "skip",
+      "reason_ja": "泛用的な未来予測手法の分析。AI/LLM/Agent技術に関する具体的言及なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Analysis of futurist prediction methods (Kurzweil, Tetlock, Superforecasting). No AI/LLM content."
+    },
+    {
+      "item_id": "danluu-ftc-google",
+      "source": "backlog",
+      "source_name": "Dan Luu",
+      "title": "What the FTC got wrong in the Google antitrust investigation",
+      "url": "https://danluu.com/ftc-google-antitrust/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--ftc-google-antitrust--b7ebd331.md",
+      "recommended_action": "skip",
+      "reason_ja": "FTCのGoogle独占禁止法調査の内部メモ分析。AI/LLMの技術的内容は全く含まれていない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "FTC internal memos on Google antitrust. No AI/LLM technical content."
+    },
+    {
+      "item_id": "boyter-china-trip",
+      "source": "backlog",
+      "source_name": "Ben Boyter",
+      "title": "China Trip (2004 university exchange journal)",
+      "url": "https://boyter.org/china-trip/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/boyter.org--china-trip--1a5990fc.md",
+      "recommended_action": "skip",
+      "reason_ja": "2004年の中国留学体験記。個人的な旅行ログでAI/LLM/技術的コンテンツと一切関係なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Personal travel journal from 2004 university exchange in China. No AI content."
+    },
+    {
+      "item_id": "sgtatham-aperiodic",
+      "source": "backlog",
+      "source_name": "Simon Tatham",
+      "title": "Beyond 'Beyond the wall' - finite-state transducers for aperiodic tilings",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-followup/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-aperiodic-followup--bc73ba2a.md",
+      "recommended_action": "skip",
+      "reason_ja": "Penrose/Spectreタイル張りと有限状態トランスデューサーに関する純粋数学の考察。AI/LLMとの関連性なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Pure mathematics on aperiodic tilings and finite-state transducers. No AI/LLM relevance."
+    }
+  ]
+}
