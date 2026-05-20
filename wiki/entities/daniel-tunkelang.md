@@ -14,6 +14,7 @@ aliases:
 sources:
   - raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams
   - raw/articles/2026-04-20_daniel-tunkelang_distilling-retrieval-pipelines.md
+  - raw/articles/2026-03-26_daniel-tunkelang_agentic-search-agile-engineering.md
   - raw/articles/2025-03-27_daniel-tunkelang_precision-recall-desirability.md
   - raw/articles/2024-12-02_daniel-tunkelang_bag-of-documents.md
   - raw/articles/2024-04-08_daniel-tunkelang_embedding-based-retrieval-rag.md
@@ -224,6 +225,14 @@ In his January 2026 discussion with Doug Turnbull [[raw/articles/2026-01-29_doug
 
 5. **LLM over-personalization is a risk** — shared his experience with ChatGPT assuming his restaurant queries were for client entertainment rather than personal interest.
 
+In his March 2026 article with Asif Makhani (Infino AI) [[raw/articles/2026-03-26_daniel-tunkelang_agentic-search-agile-engineering.md]]:
+
+6. **Agentic search as agile engineering** — frames agentic search as a continuous, adaptive control system for reasoning under uncertainty. Search is "engineering without a specification": queries are partial specs, agents are engineers, searchers are product owners.
+
+7. **Scope–Cost–Quality triangle** — three strategies map to different agentic search modes: narrow+early stop (default), deep research (broad+expensive), quick overview (skim+cheap).
+
+8. **Evaluation replaces predictability** — "done" is not when steps run out, but when further spending won't improve outcome quality. Testing replaces explainability.
+
 ## Career
 
 - **1990s** — IBM T.J. Watson Research Center and AT&T Labs
@@ -238,7 +247,7 @@ In his January 2026 discussion with Doug Turnbull [[raw/articles/2026-01-29_doug
 ## Related
 
 - [[entities/doug-turnbull]] — Frequent collaborator and discussion partner
-- [[concepts/agentic-search]] — His views on the limits and potential of agentic search
+- [[concepts/agentic-search]] — Agile engineering framework for agentic search (Scope–Cost–Quality triangle, evaluation-driven "done"); views on limits and potential
 - [[concepts/query-understanding]] — Central to his philosophy; his "manifesto" presentation formalizes the concept
 - [[concepts/faceted-search]] — His pioneering contribution to e-commerce search
 - [[concepts/e-commerce-search]] — Domain where his work has been most impactful

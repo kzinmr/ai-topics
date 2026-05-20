@@ -1,13 +1,14 @@
 ---
 title: Agentic Search
 created: 2026-04-30
-updated: 2026-05-18
+updated: 2026-05-19
 type: concept
 tags:
   - search
   - ai-agents
   - coding-agents
   - training
+  - methodology
 aliases:
   - deep-research-retrieval
   - agent-query-mismatch
@@ -16,6 +17,7 @@ aliases:
 sources:
   - raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams
   - raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md
+  - raw/articles/2026-03-26_daniel-tunkelang_agentic-search-agile-engineering.md
   - raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
   - raw/papers/2026-03-20_2603.20432_coding-agents-effective-long-context-processors.md
   - raw/articles/2025-12-04_sid-1-agentic-retrieval.md
@@ -784,6 +786,63 @@ The IR-layer findings are based on:
 - **Re-rankers**: monoT5-3B, RankLLaMA-7B, Rank1-7B
 
 ---
+
+## Level 4: Process/Methodology — Agile Engineering Framework
+
+Daniel Tunkelang & Asif Makhani (Infino AI) propose that agentic search is best understood as an **agile engineering process** — not a one-time implementation but a continuous, adaptive control system for reasoning under uncertainty. [[raw/articles/2026-03-26_daniel-tunkelang_agentic-search-agile-engineering.md]]
+
+### Core Analogy: Searchers as Product Owners, Agents as Engineers
+
+| Agile Role | Agentic Search Equivalent |
+|------------|--------------------------|
+| **Product Owner** | Searcher — defines and prioritizes the information need |
+| **Engineers** | Agents — own all aspects of execution (plan, decompose, execute, verify, refine) |
+
+Unlike software iterations measured in days, agentic search iterations are measured in **minutes or seconds** — making the loop tighter, faster, and more volatile.
+
+### The Scope–Cost–Quality Triangle
+
+| Dimension | Definition |
+|-----------|-----------|
+| **Scope** | How much of the problem space the search covers |
+| **Cost** | Aggregate spend on tokens, tool calls, computation |
+| **Quality** | Correctness, completeness, and confidence |
+
+**Three strategies** correspond to different agentic search modes:
+1. **Fixed cost + quality, reduce scope** → narrow focus, high-confidence paths, early stopping (default strategy)
+2. **Fixed scope + quality, increase cost** → broader exploration, aggressive verification ("deep research" mode)
+3. **Fixed scope + cost, sacrifice quality** → skimming, summarization ("quick overview" mode)
+
+### Uncertainty Reduction as the Core Metric
+
+Each step should be evaluated by **how much uncertainty it removes per unit of cost**. This reframes agentic search as a sequence of uncertainty-reducing experiments.
+
+### Evaluation-Driven "Definition of Done"
+
+> "The shift — from execution to evaluation — is what turns search into an engineering problem."
+
+The question is never "How many steps remain?" but **"Is further work worth the cost?"** An agentic system is "done" when spending more is not expected to improve outcome quality.
+
+**What to evaluate:**
+- **Outcome:** correctness, completeness, usefulness
+- **Process:** validation of exploration and verification strategies
+- **Efficiency:** maximization of ROI, minimization of wasted effort
+
+### Task Sizing Tradeoff
+
+A central underexplored design decision: larger tasks increase efficiency by reducing coordination overhead but increase risk. Smaller tasks reduce risk but decrease efficiency. The optimal tradeoff balances coordination cost against the expected cost of errors.
+
+### Predictability vs. Evaluability
+
+Forcing predictability (fixed step count, shallow exploration) leads to worse outcomes. Instead, replace predictability with **evaluability** — the ability to test whether further work is justified. This is the same tradeoff agile development makes.
+
+### Design Principles
+
+1. Prioritize steps that maximize uncertainty reduction per unit of spend
+2. Dynamically adjust scope based on budget and confidence
+3. Size tasks to balance coordination costs against expected costs of errors
+4. Integrate verification into iteration and refinement processes
+5. Define and enforce evaluation-driven stopping criteria
 
 ## Related Concepts
 

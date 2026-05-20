@@ -1,3 +1,15 @@
+## [2026-05-19] ingest | Agentic Search as an Agile Engineering Process (Tunkelang & Makhani, Mar 2026)
+
+### Created
+- `wiki/raw/articles/2026-03-26_daniel-tunkelang_agentic-search-agile-engineering.md` — Agentic Search as an Agile Engineering Process (Mar 26, 2026). Co-authored with Asif Makhani (Infino AI). Frames agentic search as agile engineering: queries as partial specifications, agents as engineers, searchers as product owners. Scope–Cost–Quality triangle → 3 search modes. Uncertainty reduction as core metric. Evaluation-driven "definition of done" (testing replaces explainability). Task sizing tradeoffs. Design principles.
+
+### Updated
+- `wiki/concepts/agentic-search.md` — Added Level 4: Process/Methodology — Agile Engineering Framework (57 lines). Core analogy (searcher=PO, agents=engineers), Scope–Cost–Quality triangle, uncertainty reduction metric, evaluation-driven done, task sizing, predictability vs evaluability, 5 design principles. Frontmatter: added `methodology` tag, added raw article source.
+- `wiki/entities/daniel-tunkelang.md` — Added 3 new points to Views on Agentic Search (agile engineering framing, Scope–Cost–Quality triangle, evaluation replaces predictability). Updated Related section description. Added raw article to sources.
+- `wiki/index.md` — Expanded agentic-search entry to include 4-level framework summary and key contributors.
+
+---
+
 ## [2026-05-20] raw-backlog-ingest | Anthropic emotion concepts + SemiAnalysis ClusterMAX 2.0
 
 ### Enriched

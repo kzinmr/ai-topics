@@ -669,7 +669,7 @@
 - [[concepts/activation-steering]] — Activation Steering（特徴操作）: LLM推論時の特徴活性化強度を操作して振る舞いを制御する技術。RLHFと異なり推論時介入。Goodfire.ai、Golden Gate Claude、Abliteration。スパム分類、スタイル制御、ユーザー嗜好永続化に応用。
 - [[concepts/adam-optimizer]] — Adam（Adaptive Moment Estimation）: 深層学習で最も広く使われる適応的最適化アルゴリズム。1次・2次モーメントの指数移動平均で学習率を適応制御。AdamWはWeight Decayを分離し汎化性能を改善。LLM学習の標準。→ [[raw/articles/2024-02-08_linkedin-processsense-adam-adamw.md]]
 - [[concepts/aem-adaptive-entropy-modulation]] — AEM: Baidu/Tsinghua 2026 — supervision-free credit assignment for agentic RL. Response-level entropy modulation, adaptive exploration/exploitation transition. +1.4% on SWE-bench-Verified. arXiv:2605.00425.
-- [[concepts/agentic-search]] — Agentic Search
+- [[concepts/agentic-search]] — Agentic Search: IR検索層、ハーネスエンジニアリング層、コーディングエージェント層、アジャイルエンジニアリングフレームワーク（Scope–Cost–Qualityトライアングル、評価駆動の"done"定義）。Doug Turnbull、Daniel Tunkelang、Anthropic Dynamic Filteringを含む。
 - [[concepts/agentic-rag]] — Agentic RAG: AIエージェントによる動的Retrieval-Augmented Generation
 - [[concepts/agentic-retrieval]] — Agentic Retrieval: エージェント駆動の検索パターン
 - [[concepts/agent-ergonomics]] — Programming language and toolchain design optimized for AI coding agents. McKinney's framework (compile speed, static binaries) + Ronacher's language syntax/feature design principles (effects, results, grep-ability, etc.)
