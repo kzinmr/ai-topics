@@ -117,6 +117,7 @@
       <outline type="rss" text="johnowhitaker.dev" title="johnowhitaker.dev" xmlUrl="https://johnowhitaker.dev/index.xml" htmlUrl="https://johnowhitaker.dev" />
       <outline type="rss" text="hyperbola :: blog" title="hyperbola :: blog" xmlUrl="https://hyperbo.la/w/feed.xml" htmlUrl="https://hyperbo.la/" />
       <outline type="rss" text="Lance Martin" title="Lance Martin" xmlUrl="http://rlancemartin.github.io/feed.xml" htmlUrl="https://rlancemartin.github.io/" />
+      <outline type="rss" text="Han, Not Solo" title="Han, Not Solo" xmlUrl="https://leehanchung.github.io/feed.xml" htmlUrl="https://leehanchung.github.io/blogs" />
     </outline>
     <outline text="Company Tech Blogs" title="Company Tech Blogs">
       <!-- RSS-based -->
