@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-20 | Total pages: 2071 | Indexed entries: 1186 | Not in index: 865 |
+> Last updated: 2026-05-20 | Total pages: 2073 | Indexed entries: 1187 | Not in index: 865 |
 
 ## Entities (635 pages)
 
@@ -718,6 +718,7 @@
 - [[concepts/amp-neo]] — Amp Neo — May 2026 rebuild of the Amp coding agent CLI. Remote-controllable, compaction-first (auto-compaction at 90% context fill), TypeScript Plugin API, queuing with steering. 79% less CPU, 70% less memory vs old CLI. Represents the thin-harness philosophy for model-native agents.
 - [[concepts/anthropic-infrastructure-postmortems]] — Anthropicの2つの大規模品質低下ポストモーテム（2025年8-9月: コンテキストウィンドウ誤ルーティング・出力破損・XLA:TPU誤コンパイル / 2026年3-4月: 推論努力誤設定・推論履歴消失バグ・冗長性削減プロンプト）。検出の遅れ・社内評価限界・プライバシー制約の共通パターン。
 - [[concepts/anthropic-2026-revenue-growth]] — Anthropic Q1 2026: 80x YoY revenue growth, $44B ARR. Doubling every 6 weeks. 1,000+ enterprise customers spending >$1M/yr. $200B Google Cloud deal, SpaceX Colossus 1 GPU deal.
+- [[concepts/anthropic-multi-agent-research]] — Anthropic Multi-Agent Research System (Claude Research): Orchestrator-Workerパターン、並列サブエージェント、Memory機構、Tool-Testing Agent。単一エージェント比90.2%性能向上、prompt engineering 8原則、token使用量が性能分散の80%を説明。
 - [[concepts/ai-vulnerability-discovery]] — AI Vulnerability Discovery
 - [[concepts/antangelmed]] — 103B-parameter open-source medical MoE model. 1/32 activation ratio (6.1B active). GRPO-trained. 7× efficiency over dense architectures.
 - [[concepts/automated-competitor-analysis]] — Automated competitor analysis with AI agents: Discover → Extract → Monitor pipeline, signal taxonomy

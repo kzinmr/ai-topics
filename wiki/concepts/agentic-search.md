@@ -1,7 +1,7 @@
 ---
 title: Agentic Search
 created: 2026-04-30
-updated: 2026-05-19
+updated: 2026-05-20
 type: concept
 tags:
   - search
@@ -687,6 +687,8 @@ The talk explicitly endorses SID-1 (RL-trained agentic retrieval) and positions 
 This talk is best read as a **live-recorded version** of the same thesis Turnbull published in his "Grep Moment" blog post — but extended from a single insight about grep to a full framework for understanding why and how agentic search replaces classical RAG.
 
 ### Production Implementation: Claude's Dynamic Web Search Filtering (Anthropic)
+
+> **Related**: Anthropic's multi-agent research architecture ([[concepts/anthropic-multi-agent-research]]) extends this further with parallel subagents — see also their orchestrator-worker pattern and 8 prompt engineering principles for production agents.
 
 Anthropic's **Dynamic Filtering** (March 2026) for Claude Web Search is a production-grade embodiment of the externalized processing paradigm. Instead of loading raw HTML into the context window, Claude writes and executes code to pre-process web results *before* they enter the model's reasoning context.
 

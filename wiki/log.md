@@ -1,3 +1,11 @@
+## [2026-05-20] create | concepts/anthropic-multi-agent-research.md — Anthropic Claude Research マルチエージェントシステム
+- Anthropic Engineering Blog (2025-06-13)「How We Built Our Multi-Agent Research System」と Simon Willisonの注釈記事 (2025-06-14) を完全取り込み
+- 新規conceptページ: Orchestrator-Workerパターン、Memory機構、CitationAgent、並列化戦略、Prompt Engineering 8原則、Tool-Testing Agent（40%時間短縮）、token economics（chat比15×）
+- 単一Opus 4を90.2%上回る性能、token使用量が性能分散の80%を説明 などの定量的知見
+- concepts/agent-patterns.md に Orchestrator-Workerパターンを第5のパターンとして追加
+- concepts/agentic-search.md に Anthropicマルチエージェント研究へのクロスリファレンスを追加
+- 生記事: raw/articles/2025-06-13_anthropic_multi-agent-research-system.md, raw/articles/2025-06-14_simonwillison_multi-agent-research-system.md
+
 ## [2026-05-20] create | concepts/context-engineering.md — Anthropic + Lance Martin 結合考察
 - Anthropicの"Effective Context Engineering for AI Agents" (2025-09-29) と Lance Martinの"Context Engineering for Agents" (2025-06-23) および"Agent Design Patterns" (2026-01-09) を統合
 - Anthropicの実装視点（system prompts, just-in-time retrieval, compaction, note-taking, sub-agent delegation）と Lance Martinの4戦略分類（Write/Select/Compress/Isolate）のマッピングを整理
