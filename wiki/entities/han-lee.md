@@ -23,6 +23,7 @@ sources:
   - "raw/articles/2026-05-10_leehanchung_data-aggregation-is-not-a-moat.md"
   - "raw/articles/2026-05-01_leehanchung_dont-outsource-your-understanding.md"
   - "raw/articles/2026-04-07_leehanchung_determinism-biggest-cope-in-ai-adoption.md"
+  - "raw/articles/2026-03-21_leehanchung_rl-environments-for-llm-agents.md"
 ---
 
 # Han Lee
@@ -31,7 +32,7 @@ sources:
 
 Han Lee (Hanchung Lee) is a machine learning engineer and **Senior Director of Data + AI at Moody's Analytics**, based in the San Francisco Bay Area. He leads teams building custom LLMs, generative AI applications, and search/discovery engines for financial data. He writes the blog **"Han, Not Solo"** (leehanchung.github.io), covering ML engineering, compound AI systems, LLM agents, data science, and AI adoption.
 
-His 2026 article series **"Hidden Technical Debt of AI Systems"** — starting with [Agent Runtime](https://leehanchung.github.io/blogs/2026/04/24/hidden-technical-debt-agent-runtime/) and continuing with [Agent Harness](https://leehanchung.github.io/blogs/2026/05/08/hidden-technical-debt-agent-harness/) — has become foundational in the agent infrastructure discourse, drawing direct parallels to Sculley et al.'s classic "Hidden Technical Debt in ML Systems."
+His 2026 article series **"Hidden Technical Debt of AI Systems"** — grounded in the formal $E = \{T, H, V, S, C\}$ framework from [A Taxonomy of RL Environments for LLM Agents](https://leehanchung.github.io/blogs/2026/03/21/rl-environments-for-llm-agents/), then applied to [Agent Runtime](https://leehanchung.github.io/blogs/2026/04/24/hidden-technical-debt-agent-runtime/) and extended to [Agent Harness](https://leehanchung.github.io/blogs/2026/05/08/hidden-technical-debt-agent-harness/) — has become foundational in the agent infrastructure discourse, drawing direct parallels to Sculley et al.'s classic "Hidden Technical Debt in ML Systems."
 
 ## Monitoring
 
@@ -49,7 +50,7 @@ His 2026 article series **"Hidden Technical Debt of AI Systems"** — starting w
 
 ### AI Agent Infrastructure & Theory
 
-- **[A Taxonomy of RL Environments for LLM Agents](https://leehanchung.github.io/blogs/2026/03/21/rl-environments-for-llm-agents/)** (Mar 2026) — Formally defines the $H$ (harness) and $S$ (state) components of agent RL environments. Framework used throughout the agent runtime and harness articles.
+- **[A Taxonomy of RL Environments for LLM Agents](https://leehanchung.github.io/blogs/2026/03/21/rl-environments-for-llm-agents/)** (Mar 2026) — **Foundational first article** in the "Hidden Technical Debt" series. Formally defines the RL environment as $E = \{T, H, V, S, C\}$ — tasks, agent harness, verifier, state management, configuration. Establishes the $H$ (harness) and $S$ (state) framework used throughout the Agent Runtime and Agent Harness articles. Includes task taxonomy (10 types), rollout protocol classification, tools landscape, verifier types (exact match → LLM-as-Judge → execution-based → hybrid), and context management strategies for 600+ turn episodes. Raw: [[raw/articles/2026-03-21_leehanchung_rl-environments-for-llm-agents]].
 
 ### AI Adoption & Evaluation
 

@@ -1,3 +1,11 @@
+## [2026-05-20] raw + entity | RL Environments Taxonomy raw article + entity update
+
+**Raw article created**: [[raw/articles/2026-03-21_leehanchung_rl-environments-for-llm-agents]] — Foundational first article in Lee's "Hidden Technical Debt" series. Formally defines  = \{T, H, V, S, C\}$ framework. Task taxonomy (10 types), rollout protocols, tools landscape, verifier types, context management for 600+ turn episodes.
+
+**Entity page updated**: [[entities/han-lee]] — Updated Overview to reflect trilogy structure: RL Environments → Agent Runtime → Agent Harness. Expanded RL Environments entry with full framework detail. Added raw article to frontmatter sources.
+
+**index.md**: Updated entry to show trilogy with chronological arrows (Mar → Apr → May 2026).
+
 ## [2026-05-20] entity + raw | Han Lee entity enrichment + RSS monitoring added
 
 **Entity page enriched**: [[entities/han-lee]] — Added Monitoring section (RSS feed tracked via blogwatcher), 4 new notable articles (Agent Harness, Data Aggregation Is Not a Moat, Don't Outsource Your Understanding, Determinism Cope), 3 new contributions (Training vs Production Harness Asymmetry, Cognitive Offloading vs Surrender, Data Moat Deconstruction), updated Related Wiki Pages with Letta link.
