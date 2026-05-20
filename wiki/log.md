@@ -12,6 +12,7 @@
 - Removed 4 duplicate entity index entries: `cognition`, `eric-zhang`, `factory`, `muratcan-koylan`
 - Fixed 8 pipe-prefixed index entries (`|- ` → `- `) introduced during patch operations
 - validate_index.py: clean ✅
+- Fixed 8 triple-bracket corruptions (`[[[` → `[[`) in index.md
 
 ---
 
