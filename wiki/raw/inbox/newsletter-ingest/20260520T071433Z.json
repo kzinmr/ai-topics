@@ -1,0 +1,110 @@
+{
+  "triage_timestamp": "2026-05-20T07:20:00Z",
+  "run_id": "20260520T071029Z",
+  "newsletters": [
+    {
+      "message_id": "<20260519073141.3.a226f0e89ecc1d39@mg2.substack.com>",
+      "subject": "[AINews] How to land a job at a frontier lab (on Pretraining)",
+      "source": "swyx (AINews)",
+      "source_label": "uid=109",
+      "date": "2026-05-19",
+      "canonical_url": "https://www.swyx.io/p/ainews-how-to-land-a-job-at-a-frontier",
+      "classification": "medium",
+      "summary": "swyx's weekly AI newsletter covering AI careers at frontier labs and pretraining topics. Contains curated links on getting hired at top AI companies plus pretraining infrastructure discussions.",
+      "wiki_relevance": "Pretraining content is core LLM infrastructure — actionable for enriching training-related concept pages. Career content is tangential but may surface notable people/companies for entity pages.",
+      "recommended_action": "selective",
+      "action_detail": "Extract pretraining-related articles only. Enrich concepts like 'pretraining' and 'frontier-labs' if new content. Skip career advice sections."
+    },
+    {
+      "message_id": "<20260519130125.3.47066a91867123f0@mg-d0.substack.com>",
+      "subject": "Can I get my agents on the phone?",
+      "source": "Ben's Bites",
+      "source_label": "uid=110",
+      "date": "2026-05-19",
+      "canonical_url": "https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone",
+      "classification": "high",
+      "summary": "Ben's Bites daily AI newsletter focused on AI agents with phone/voice integration capabilities. Covers the emerging trend of voice-enabled AI agents and telephony integration.",
+      "wiki_relevance": "Directly relevant to AI agent concepts — voice agents, telephony integration, multimodal agents. Actionable for enriching agent-related concept pages and tracking voice-AI ecosystem tools.",
+      "recommended_action": "take",
+      "action_detail": "Extract articles related to voice agents, phone/telephony AI agents. Enrich or create concept pages for 'voice-agents', 'telephony-ai'. Update entity pages for mentioned companies/products."
+    },
+    {
+      "message_id": "<20260519152725.3.f93296411b9c02e2@mg-d1.substack.com>",
+      "subject": "The Lenny and Friends Summit is back!",
+      "source": "Lenny's Newsletter",
+      "source_label": "uid=111",
+      "date": "2026-05-19",
+      "canonical_url": "https://www.lennysnewsletter.com/p/the-lenny-and-friends-summit-is-back",
+      "classification": "low",
+      "summary": "Lenny Rachitsky's product management newsletter announcing the return of the Lenny and Friends Summit. Focused on product management, startups, and growth — not AI/LLM specific.",
+      "wiki_relevance": "No direct AI/LLM relevance. Product management summit with tangential AI content at best.",
+      "recommended_action": "skip",
+      "action_detail": null
+    },
+    {
+      "message_id": "<20260519.155117.df06415c@mta30>",
+      "subject": "Google Turns Flash Into the AI Default",
+      "source": "Digestibly (beehiiv)",
+      "source_label": "uid=112",
+      "date": "2026-05-19",
+      "canonical_url": "https://digestibly.beehiiv.com/p/google-s-gemini-3-flash-hits-different",
+      "classification": "high",
+      "summary": "Coverage of Google making Gemini 3 Flash the default model in Search AI Mode and Gemini app. Discusses the model's frontier reasoning capabilities at Flash speed, benchmark scores (MMMU-Pro 81.2%, SWE-bench 78%), and pricing ($0.50/M input, $3/M output).",
+      "wiki_relevance": "Core LLM ecosystem event — model default changes, pricing, benchmarks. Actionable for updating Gemini concept pages, model comparison tables, and Google AI strategy tracking.",
+      "recommended_action": "take",
+      "action_detail": "Update Gemini concept pages with Gemini 3 Flash details. Update model comparison pages. Create or update concept page for 'gemini-3-flash'. Enrich 'google-ai-strategy' if it exists."
+    },
+    {
+      "message_id": "<20260520015651.3.0c72568cb0f5b164@mg2.substack.com>",
+      "subject": "Agent-Harness.ipynb*",
+      "source": "Hugo Bowne (The Gradient)",
+      "source_label": "uid=113",
+      "date": "2026-05-20",
+      "canonical_url": "https://www.hugobowne.com/p/agent-harnessipynb",
+      "classification": "critical",
+      "summary": "Hugo Bowne's deep-dive into AI agent harnesses using a Jupyter notebook format. Covers the landscape of agent harnesses — frameworks and tools for building, testing, and orchestrating AI agents. Likely covers LangChain, AutoGen, CrewAI, and similar agent frameworks.",
+      "wiki_relevance": "Directly core to the wiki's AI Agent focus. Agent harnesses are a critical sub-topic. High potential for creating comprehensive concept pages, comparison tables, and enriching existing agent framework entity pages.",
+      "recommended_action": "take",
+      "action_detail": "Create or enrich concept page 'agent-harnesses'. Create comparison page for agent harness frameworks. Enrich entity pages for mentioned frameworks (LangChain, AutoGen, CrewAI, etc.). Extract notebook methodology for reproducibility."
+    },
+    {
+      "message_id": "<20260520033417.3.99314b2f621f72b3@mg-d1.substack.com>",
+      "subject": "[AINews] Google I/O 2026: Gemini 3.5 Flash, Omni (NanoBanana for Video), Spark (background agents), and Antigravity",
+      "source": "swyx (AINews)",
+      "source_label": "uid=114",
+      "date": "2026-05-20",
+      "canonical_url": "https://www.swyx.io/p/ainews-google-io-2026-gemini-35-flash",
+      "classification": "critical",
+      "summary": "swyx's comprehensive coverage of Google I/O 2026 announcements: Gemini 3.5 Flash model, Omni (multimodal AI with NanoBanana for video understanding), Spark (background AI agents), and Antigravity (agentic development platform). Major ecosystem event with multiple product launches spanning models, agents, and developer tools.",
+      "wiki_relevance": "Highest relevance — multiple critical wiki topics covered: new LLM models (Gemini 3.5 Flash), AI agents (Spark background agents), multimodal AI (Omni/NanoBanana), and developer tooling (Antigravity). Requires multiple concept page creations and updates.",
+      "recommended_action": "take",
+      "action_detail": "Create concept pages: 'gemini-3.5-flash', 'google-spark-agents', 'google-omni', 'nanobanana', 'google-antigravity'. Update 'google-io-2026' event page. Update entity page for Google. Update AI agent concept pages. Create comparison against other background agent systems."
+    }
+  ],
+  "summary": {
+    "total_newsletters": 6,
+    "by_classification": {
+      "critical": 2,
+      "high": 2,
+      "medium": 1,
+      "low": 1
+    },
+    "take_actions": 4,
+    "selective_actions": 1,
+    "skip_actions": 1,
+    "key_themes": [
+      "Google I/O 2026 — major ecosystem event: Gemini 3.5 Flash, Spark background agents, Omni multimodal, Antigravity dev platform",
+      "AI Agent harnesses and frameworks — Hugo Bowne's deep-dive (.ipynb format)",
+      "Voice/phone AI agents — telephony integration trend",
+      "Gemini 3 Flash as default model — Google's AI strategy shift",
+      "Frontier lab careers and pretraining infrastructure"
+    ],
+    "recommended_wiki_updates": [
+      "CRITICAL: Create Google I/O 2026 event page + concept pages for Gemini 3.5 Flash, Spark agents, Omni, NanoBanana, Antigravity",
+      "CRITICAL: Create/enrich agent-harnesses concept page with framework comparison table",
+      "HIGH: Update Gemini model pages with Flash 3 details and benchmarks",
+      "HIGH: Create/enrich voice-agents and telephony-ai concept pages",
+      "MEDIUM: Extract pretraining-related content for pretraining concept page enrichment"
+    ]
+  }
+}
