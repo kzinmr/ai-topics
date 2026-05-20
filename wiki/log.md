@@ -1,3 +1,14 @@
+## [2026-05-20] enrich | building-effective-agents — Simon Willisonアノテーション追加
+
+### 変更内容
+- Simon Willisonの注釈ブログ記事 ([simonwillison.net 2024-12-20](https://simonwillison.net/2024/Dec/20/building-effective-agents/)) の内容を取り込み
+- 元Anthropic記事 `concepts/harness-engineering/system-architecture/building-effective-agents.md` に `## Simon Willisonの注釈` セクションを追加
+- Raw記事を `raw/articles/2024-12-20_simon-willison_building-effective-agents.md` として保存
+- キー追加内容: 用語整理への称賛 (augmented LLM), 5パターン所感, 複雑性警告への共鳴, 自律性トレードオフ
+- frontmatter: `updated` → 2026-05-20, `status` → active, `sources` に Simon 記事追加
+
+---
+
 ## [2026-05-20] X bookmarks ingest | Agent Marketplace Stack + Langfuse Evals + Jason Liu Codex Brief
 
 **Source**: X bookmarks cron fetch. 3 new bookmarks processed.
