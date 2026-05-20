@@ -182,7 +182,7 @@ def resolve_user_ids(handles):
 def get_recent_tweets(user_id, max_results=TWEETS_PER_ACCOUNT):
     params = urlencode({
         "max_results": max_results,
-        "tweet.fields": "created_at,entities,referenced_tweets",
+        "tweet.fields": "created_at,entities,referenced_tweets,note_tweet",
     })
     out = run(f"/2/users/{user_id}/tweets?{params}")
     if not out:
@@ -224,7 +224,7 @@ def get_external_url_entries(tweet):
 def is_substantive_post(tweet, external_url_entries):
     if not external_url_entries:
         return False
-    text = " ".join((tweet.get("text") or "").split())
+    text = " ".join((_get_full_tweet_text(tweet) or "").split())
     if not text:
         return False
     refs = tweet.get("referenced_tweets", [])
@@ -243,8 +243,8 @@ def is_substantive_post(tweet, external_url_entries):
 
 
 def compact_post(tweet, external_url_entries):
-    text = " ".join((tweet.get("text") or "").split())
-    return {
+    text = " ".join((_get_full_tweet_text(tweet) or "").split())
+    post = {
         "id": tweet["id"],
         "created_at": tweet.get("created_at"),
         "account_handle": tweet.get("account_handle"),
@@ -256,6 +256,14 @@ def compact_post(tweet, external_url_entries):
             ref.get("type") for ref in tweet.get("referenced_tweets", []) if ref.get("type")
         ],
     }
+    # Tag content type for downstream processing
+    if _has_note_tweet(tweet):
+        post["content_type"] = "note_tweet"
+    elif _is_article_tweet(tweet):
+        post["content_type"] = "x_article"
+    else:
+        post["content_type"] = "tweet"
+    return post
 
 
 def post_priority(tweet, external_url_entries):
@@ -302,6 +310,51 @@ def is_recent_enough(tweet, now, recent_days):
         return True
     age_days = (now - created_dt).total_seconds() / 86400
     return age_days <= recent_days
+
+
+# ── Tweet content type helpers ──
+
+def _has_note_tweet(tweet):
+    """Check if a tweet has a Note Tweet with full text (long-form tweet)."""
+    nt = tweet.get("note_tweet") or {}
+    return bool(nt.get("text"))
+
+
+def _is_article_tweet(tweet):
+    """Check if a tweet is an X Article (has article title in the response)."""
+    article = tweet.get("article") or {}
+    return bool(article.get("title"))
+
+
+def _get_full_tweet_text(tweet):
+    """Return the full tweet text, preferring note_tweet.text over truncated text."""
+    if _has_note_tweet(tweet):
+        return tweet["note_tweet"]["text"]
+    return tweet.get("text", "")
+
+
+def fetch_article_body(tweet_id):
+    """Fetch full X Article body via tweet.fields=article.
+
+    IMPORTANT: tweet.fields=article MUST NOT be mixed with note_tweet in the
+    same request. The two fields interact poorly and article.plain_text may be
+    silently dropped. This function makes a separate API call.
+
+    Returns (article_dict, error_category, error_detail) on success/failure.
+    """
+    try:
+        out = run(f"/2/tweets/{tweet_id}?tweet.fields=article")
+        if out is None:
+            return None, "xurl_error", "run() returned None"
+        resp = json.loads(out)
+        article = resp.get("data", {}).get("article")
+        if article and article.get("plain_text"):
+            return article, None, None
+        if article:
+            return None, "no_plain_text", "article field present but plain_text missing"
+        return None, "no_article_field", "response has no article field at all"
+    except json.JSONDecodeError as e:
+        return None, "parse_error", str(e)
 
 
 def load_processed_map(path):
@@ -400,6 +453,9 @@ scan_meta = {
     "user_cache_size": 0,
     "cursor_start": 0,
     "cursor_next": 0,
+    "note_tweets_found": 0,
+    "articles_fetched": 0,
+    "articles_failed": 0,
 }
 source_posts = load_source_posts(SOURCE_FILE)
 if source_posts is not None:
@@ -486,6 +542,30 @@ if MAX_CANDIDATES > 0:
     ranked = ranked[:MAX_CANDIDATES]
 all_raw = [raw for raw, _ in ranked]
 all_new = [compact for _, compact in ranked]
+
+# ── Post-processing: count Note Tweets + fetch X Article bodies ──
+# Note: note_tweet.text is already in the tweet data (no extra API call needed).
+# X Article plain_text requires a separate API call with tweet.fields=article.
+for raw_tweet in all_raw:
+    if _has_note_tweet(raw_tweet):
+        scan_meta["note_tweets_found"] += 1
+
+    if _is_article_tweet(raw_tweet) and not raw_tweet.get("article", {}).get("plain_text"):
+        tweet_id = str(raw_tweet.get("id"))
+        article_data, err_cat, err_detail = fetch_article_body(tweet_id)
+        if article_data:
+            raw_tweet["article"] = article_data
+            scan_meta["articles_fetched"] += 1
+            # Also update the compact post text to include article body
+            for cp in all_new:
+                if cp["id"] == tweet_id:
+                    cp["article_text"] = article_data.get("plain_text", "")
+                    break
+        else:
+            raw_tweet["_article_fetch_error"] = err_detail
+            raw_tweet["_article_fetch_error_category"] = err_cat
+            scan_meta["articles_failed"] += 1
+
 scan_meta["x_api_requests_attempted"] = REQUESTS_ATTEMPTED
 
 archive_file = None
@@ -519,6 +599,9 @@ output = {
         "substantive_candidates": len(ranked),
         "new_posts": len(all_new),
         "with_errors": len(errors),
+        "note_tweets_found": scan_meta["note_tweets_found"],
+        "articles_fetched": scan_meta["articles_fetched"],
+        "articles_failed": scan_meta["articles_failed"],
         "processed_cache_size": len(processed),
         "processed_ttl_days": PROCESSED_TTL_DAYS,
         "max_candidates": MAX_CANDIDATES,
