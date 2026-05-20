@@ -2,8 +2,10 @@
 title: "Salvatore Sanfilippo (antirez)"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-15
+updated: 2026-05-20
 type: entity
+sources:
+  - raw/articles/antirez.com--news-166--c7f12317.md
 ---
 
 # Salvatore Sanfilippo (antirez)
@@ -168,7 +170,51 @@ antirez は DS4 が DeepSeek V4 Flash 専用で終わるプロジェクトでは
 - [[concepts/ds4-deepseek-flash-metal]] — Armin Ronacher の Metal 最適化フォーク
 - DS4 はローカル AI コミュニティで爆発的成長、antirez 曰く「Redis 初期以来の 14 時間/日体制」
 
-## Related Concepts
+### EDIT Tool Redesign for DS4 (May 2026)
+
+antirez redesigned the EDIT tool for the DS4 agent project, addressing the inefficiency of CAS (Check And Set) mode where the LLM must emit the old version of text verbatim before the new version — wasteful for token-poor local inference.
+
+#### The Problem
+
+The standard EDIT tool used by most coding agents forces the LLM to reproduce the original text in full:
+```
+EDIT old="the old lines of text here verbatim"
+     new="the replacement text"
+```
+
+This wastes tokens and is fragile: special characters and whitespace in the old text are easily hallucinated, causing the edit to fail and requiring retries.
+
+#### antirez's Solution: Line-Tag Format
+
+The READ and SEARCH tools return lines annotated with line numbers and a 4-character checksum tag:
+```
+  10:Q8fA int count = 10;
+  11:rA3_ if (count > limit) {
+  12:Kq9z     count = limit;
+  13:PX0b }
+```
+- Each tag is a CRC32 checksum of the line content (~2.5 LLM tokens on average)
+- The LLM specifies line + tag in its edit:
+  ```json
+  {"tool": "edit", "line": 10, "tag": "Q8fA", "new": "int count = 11;"}
+  ```
+- Multi-line edits use a range with line:tag pairs
+- DeepSeek V4 Flash showed effective and fast usage of this format
+
+#### Tradeoffs
+
+| Approach | Token Efficiency | Collision Safety | Complexity |
+|----------|-----------------|------------------|------------|
+| CAS (standard) | Poor (duplicates old text) | High | Low |
+| Line + tag (antirez) | Good (~2.5 tokens per tag) | Moderate (4-char CRC) | Moderate |
+| Whole-file CRC32 | Best (by offset only) | Low (fails on unrelated changes) | Low |
+
+antirez notes a whole-file CRC32 alternative where the edit only specifies line numbers with a file-level checksum — maximally token-efficient but fails on any unrelated change in the file. He considers a command-line switch between modes the right first step pending empirical comparison.
+
+#### Significance
+
+This is a concrete example of **agentic engineering at the tool level** — optimizing for the specific constraints of local inference (token poverty, latency). It connects the [[concepts/agentic-engineering]] and [[concepts/ai-agent-engineering]] paradigm: the tool surface area directly determines agent efficiency.
+
 
 - [[concepts/redis]] — His defining creation, the in-memory data store
 - [[concepts/systems-programming]] — His domain of expertise: C, memory management, performance

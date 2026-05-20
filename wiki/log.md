@@ -1506,3 +1506,49 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 ### Index & Log
 - `index.md`: +5 indexed entries (4 entities + 1 comparison); entities 629→633, comparisons 17→18, total 2060→2065.
 
+## [2026-05-20] blog-wiki-ingest | Gemini 3.5 Flash, Ed Zitron economics, antirez EDIT tool, Karpathy joins Anthropic
+
+### Source
+- `blog-triage` checkpoint at `${HERMES_HOME}/cron/data/blog_ingest/triage_latest.json`
+- 4 take + 2 reference candidates from 20 blog articles (May 19-20, 2026)
+
+### Enriched Entity Pages
+
+**entities/gemini.md** — Added Gemini 3.5 Flash section:
+- Model specs: `gemini-3.5-flash` ID, 1,048,576 input / 65,536 output tokens, Jan 2025 knowledge cutoff
+- Pricing: $1.50/$9 per M tokens (3x Flash Preview, 6x Flash-Lite)
+- Product deployment: Gemini App, Google Search AI Mode, Antigravity, AI Studio, Enterprise
+- Interactions API (beta) — Google's version of OpenAI Responses
+- llm-gemini 0.32/0.32a0 support (reference candidates blog-16, blog-19)
+
+**entities/ed-zitron.md** — Added "AI Is Too Expensive" section (May 19, 2026):
+- Hyperscaler capex: Microsoft $100B OpenAI investment, $800B+ total, $3T+ break-even
+- Zillow case study: $1M+ Q1 spend, on track for $7-10M/year (20-50% of 2025 net income)
+- Stripe: $94K/day in Anthropic coding tokens
+- ServiceNow CIO: "It's a really hard problem" — may not afford Claude Enterprise through year
+- Goldman Sachs: AI costs approaching 10% of headcount
+- Anthropic enterprise obfuscation: no SLAs, no granular telemetry
+- Token budget accounting crisis: ROI cannot be reliably measured
+- RPO analysis: hyperscaler growth entirely driven by OpenAI/Anthropic commitments
+
+**entities/antirez-com.md** — Added EDIT tool redesign section:
+- CAS mode token waste problem for local inference
+- Line-tag format with 4-char CRC32 checksums (Q8fA, rA3_, Kq9z, PX0b)
+- DeepSeek V4 Flash effective usage confirmed
+- Whole-file CRC32 tradeoff discussion
+- Links to [[concepts/agentic-engineering]] and [[concepts/ai-agent-engineering]]
+
+**entities/andrej-karpathy.md** — Added May 2026 timeline entry:
+- Karpathy joins Anthropic (announced via X, May 19, 2026)
+- First major career move since founding Eureka Labs (2024)
+
+### Raw Article Sources
+- `raw/articles/simonwillison.net--2026-may-19-gemini-35-flash--d5349c1f.md`
+- `raw/articles/wheresyoured.at--ai-is-too-expensive--2387fc59.md`
+- `raw/articles/antirez.com--news-166--c7f12317.md`
+- `raw/articles/daringfireball.net--linked-2026-05-19-karpathy-anthropic--c6d1c3dc.md`
+
+### Reference Items Skipped
+- blog-16 (llm-gemini 0.32) — incorporated into entities/gemini.md tooling support
+- blog-19 (llm-gemini 0.32a0) — incorporated into entities/gemini.md tooling support
+

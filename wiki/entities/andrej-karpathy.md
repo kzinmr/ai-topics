@@ -2,10 +2,11 @@
 title: "Andrej Karpathy"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-20
 type: entity
+sources:
+  - raw/articles/daringfireball.net--linked-2026-05-19-karpathy-anthropic--c6d1c3dc.md
 ---
-
 
 # Andrej Karpathy (@karpathy)
 

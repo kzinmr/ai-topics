@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-20
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -17,7 +17,9 @@ tags:
 sources:
   - raw/articles/wheresyoured.at--premium-ais-circular-psychosis--51c035f1.md
   - https://www.wheresyoured.at/
-  - https://www.wheresyoured.at/premium-ais-circular-psychosis/
+  - raw/articles/wheresyoured.at--ai-is-too-expensive--2387fc59.md
+  - https://www.wheresyoured.at/
+  - raw/articles/wheresyoured.at--ai-is-too-expensive--2387fc59.mdpremium-ais-circular-psychosis/
 ---
 
 # Ed Zitron
@@ -68,7 +70,69 @@ Microsoft/Google/Amazon → re-invest via equity → Anthropic/OpenAI (circle co
 | May 2026 | The AI Compute Demand Story Is A Lie | Data center capacity myths |
 | May 2026 | Where Are All The Data Centers? | Investigates claims vs. reality of hyperscaler data center construction |
 
-## Data Center Construction Investigation (May 2026)
+## AI Is Too Expensive (May 2026)
+
+In "AI Is Too Expensive" (May 19, 2026), Zitron published his most comprehensive data-rich analysis of AI economics, providing concrete enterprise case studies to support his circular dependency thesis.
+
+### Hyperscaler Capex Analysis
+
+- **Microsoft invested ~$100B in OpenAI** (cumulative through FY2026 via testimony in Musk-OpenAI trial) — ~30% of Microsoft's $293.8B capex since FY2023
+- **Hyperscalers invested $800B+ in 3 years**, with plans for $700B more in 2026 and $1T in 2027
+- **Break-even requires $3T+ in AI-specific revenue**; $6T+ for meaningful returns
+- Combined revenue of Microsoft ($281B), Meta ($200B), Amazon ($716B), Google ($402.8B) = $1.599T — none disclose actual AI revenue
+- **Anthropic at $45B annualized revenue** (alleged) still cannot recover a single year of hyperscaler capex
+
+### Customer Cost Crisis
+
+| Organization | AI Spend | Impact |
+|---|---|---|
+| **Zillow** | $1M+ in Q1 2026; $749K in April (Cursor+Anthropic+Bedrock); on track for $7-10M/year | 20-50% of 2025 net income ($23M). Near 75% through $1.1M annual Cursor budget by end of April |
+| **Stripe** | ~$94K/day ($2.8M/month) in tokens on Anthropic coding models | 4.4% of technical headcount costs. 5,000 technical staff burning tokens |
+| **ServiceNow** | CIO Kellie Romack working with CFO to contain costs | "It's a really hard problem" — may not afford Claude Enterprise through rest of year |
+| **Goldman Sachs** | AI costs approaching 10% of total headcount costs | "On track to be on par with headcount costs in next several quarters" |
+| **Salesforce** | $300M committed to Anthropic tokens in 2026 (Marc Benioff) | Largest public token commitment |
+
+### Zillow Case Study
+
+Zillow's AI spending provides Zitron's most detailed enterprise case study:
+- **$1M+ AI spend in Q1 2026**; $749K in April alone across Cursor, Anthropic, and AWS Bedrock
+- **Cursor budget at 85% depletion** by mid-May with 7.5 months remaining in year
+- **Technical leadership pushing "AI-Native Engineering"** — goal: "software engineers to never open a code editor again"
+- **Paradoxical metrics**: Engineering headcount flat, but:
+  - Outputs requiring human review: +50%
+  - Code deployments/PRs: +39%
+  - Software reviewer load: +29,000 hours/month (19 hours/engineer)
+- **Internal chaos**: Blind posts from Zillow engineers describe code as "slowly becoming AI slop"; employees feel "lost in the agentic world"; token burn driven by "hitting internal AI adoption targets" rather than outcomes
+- **"2027: A Tuesday" slide**: Visions of engineers only opening "spec and eval dashboards" with agents handling all code — Zitron describes this as a "hellscape vision"
+- Sources at Zillow report **no actual movement toward this vision** — engineers still open IDEs and review code manually
+
+### Anthropic Enterprise Obfuscation
+
+Zitron reported that Anthropic does not offer:
+- Granular telemetry showing which users consume which tools
+- Service-level agreements (SLAs) standard in enterprise software
+- Transparent breakdown of how tokens are burned across organizations
+
+CIOs from ServiceNow and other organizations confirmed that Anthropic's lack of visibility into cost drivers makes budgeting impossible.
+
+### Token Budget Accounting Crisis
+
+Zitron argues that **no enterprise can reliably measure AI ROI**:
+- LLMs behave non-deterministically — same prompt, different token cost
+- Token cost per task varies with model, context, and random sampling
+- Engineers game metrics: at Amazon and Meta, employees wrote scripts to burn extra tokens
+- Every measurable metric (PRs, velocity, deployments) can be gamed
+- "Every single AI token budget is bullshit because you can't measure how many tokens a task will take"
+
+### Revenue Flow Breakdown
+
+Detailed RPO (Remaining Performance Obligations) analysis:
+- **Microsoft**: $625B RPO driven by $250B OpenAI commitment + $30B Anthropic — without these, RPO effectively flat
+- **Amazon**: $364B RPO driven by $100B+ Anthropic compute deal
+- **Google**: $467.6B RPO driven by $200B Anthropic TPU commitment
+- **Conclusion**: Outside OpenAI and Anthropic, hyperscalers show no significant revenue growth
+
+
 
 In "Where Are All The Data Centers?" (May 2026), Zitron conducted an investigative analysis of hyperscaler data center construction claims, finding significant discrepancies between announced capacity and verified operational infrastructure:
 
