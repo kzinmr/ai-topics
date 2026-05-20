@@ -3,6 +3,40 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-20] health-fix | Auto-fix index corruption + orphan registration
+### Phase 1 — Index corruption (auto-fix)
+- Clean: validate_index.py passed ✅
+- No pipe corruption (0), no triple bracket (0), no line-number prefix (0)
+- Fixed 1 ghost entry: [[concepts/rag]] → [[concepts/rag-systems]] (file didn't exist)
+### Phase 2 — Orphan index registration (20 entries)
+- Added 20 legitimate orphan concept pages to index.md (concepts section)
+- Updated concepts count: 1376 → 1396, Total: 2073 → 2093, Not in index: 865 → 845
+- Entries batch-appended at section boundary (alphabetically drifted)
+### Pages Added to Index
+- concepts/ai-military
+- concepts/arc-agi-2
+- concepts/attention-mechanism-variants
+- concepts/background-agent-orchestration-linear-github-workflow-automation-graph-based
+- concepts/background-coding-agent
+- concepts/base-consistency
+- concepts/base-consistency-model
+- concepts/behavioral-trait-transmission
+- concepts/bitter-lesson-harnessing
+- concepts/blogwatcher
+- concepts/bottom-up-note-taking
+- concepts/business-to-agent
+- concepts/cache-first-engineering
+- concepts/caching-performance-cost-optimization
+- concepts/caid-coordination
+- concepts/capability-based-security
+- concepts/centaurs-and-cyborgs
+- concepts/chain-of-thought-reasoning
+- concepts/chaos-engineering
+- concepts/chaos-engineering-for-microservices
+---
+
+---
+
 ## [2026-05-20] watchdog | Log.md health + index dedup + pipe corruption fix
 
 ### Auto-fixed

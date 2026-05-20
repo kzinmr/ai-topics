@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-20 | Total pages: 2073 | Indexed entries: 1187 | Not in index: 865 |
+> Last updated: 2026-05-20 | Total pages: 2093 | Indexed entries: 1187 | Not in index: 845 |
 
 ## Entities (635 pages)
 
@@ -651,7 +651,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1376 pages)
+## Concepts (1396 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -817,7 +817,7 @@
 - [[concepts/hrm-text]] — HRM-Text — Sapient Intelligenceの1Bパラメータ階層的推論モデル。非Transformer、~40Bトークンで$1,000トレーニング。MATH 56.2%、ARC-C 81.9%。スマホ級サイズ（int4: 0.6 GiB）。
 - [[concepts/hybrid-flow]] — HybridFlow (veRL): RLHF/GRPOのための制御フローと計算フローを分離するアーキテクチャ。volcengine/veRL実装。Ray上の単一プロセスコントローラがWorkerGroupを通じてマルチGPUワーカーを透過制御。@registerデコレータで分散実行を隠蔽。FSDP/Megatron/TorchTitan/vLLM/SGLangのマルチバックエンド対応。
 - [[concepts/information-theory-and-agent-communication]] — Shannon (1948) の通信の数学的理論をAIエージェント間コミュニケーションの観点から再解釈。V-Information (Xu et al., 2020) との統合によるエージェント通信3層モデル。ハーネス効果の情報理論的基礎、コンテキストウィンドウのShannon容量アナロジー。
-- [[concepts/information-retrieval]] — Precision-Recall-Desirabilityフレームワーク、bag-of-documentsモデル（クエリを結果分布として表現）、埋め込みベース検索 vs バッグオブワード、RAG、意味的同値性。Daniel TunkelangのKDD 2023/2024/2026発表を含む。[[concepts/embeddings]] [[concepts/vector-search]] [[concepts/lexical-search]] [[concepts/bm25]] [[concepts/rag]]
+- [[concepts/information-retrieval]] — Precision-Recall-Desirabilityフレームワーク、bag-of-documentsモデル（クエリを結果分布として表現）、埋め込みベース検索 vs バッグオブワード、RAG、意味的同値性。Daniel TunkelangのKDD 2023/2024/2026発表を含む。[[concepts/embeddings]] [[concepts/vector-search]] [[concepts/lexical-search]] [[concepts/bm25]] [[concepts/rag-systems]]
 - [[concepts/infrastructure-noise-agent-evals]] — エージェント型コーディング評価におけるインフラノイズの定量分析。Terminal-Bench 2.0でリソース1x→uncapped間で6pp差（p<0.01）。3pp未満のリーダーボード差は懐疑的に。時刻・並列度・帯域幅も隠れた交絡因子。
 - [[concepts/interaction-models]] — Thinking Machines Lab の研究プレビュー。200msマイクロターンでマルチモーダル・リアルタイムインタラクションをネイティブ処理。音声・映像・テキストを同時入出力。非同期バックグラウンドモデルと連携。
 - [[concepts/interpretability]] — Interpretability（機械的解釈可能性）: LLM内部の特徴と回路を可視化する研究分野。AnthropicのScaling Monosemanticity、Golden Gate Claude、Entropix。RLHF代替としての推論時steering、性能と制御性のトレードオフに対応。
@@ -1169,6 +1169,27 @@
 - [[concepts/axolotl-fine-tuning-framework]] — Axolotl Fine-Tuning Framework
 - [[concepts/ai-infrastructure-engineering/llm-observability]] — "LLM Observability"
 - [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — "Model Serving & Autoscaling"
+- [[concepts/ai-military]] — AI in Military Wargames
+- [[concepts/arc-agi-2]] — ARC-AGI-2 Benchmark
+- [[concepts/attention-mechanism-variants]] — Attention Mechanism Variants in Modern LLMs
+- [[concepts/background-agent-orchestration-linear-github-workflow-automation-graph-based]] — Background Agent: Orchestration, GitHub, Workflow Automation
+- [[concepts/background-coding-agent]] — Background Coding Agent
+- [[concepts/base-consistency]] — BASE Consistency Model
+- [[concepts/base-consistency-model]] — BASE Consistency Model (redirect)
+- [[concepts/behavioral-trait-transmission]] — Subliminal Learning/Self-Reference in LLMs
+- [[concepts/bitter-lesson-harnessing]] — The Bitter Lesson and Harnessing Evolution
+- [[concepts/blogwatcher]] — Blogwatcher — RSS/blog monitoring tool
+- [[concepts/bottom-up-note-taking]] — Bottom-Up Note Taking
+- [[concepts/business-to-agent]] — Business-to-Agent (B2A)
+- [[concepts/cache-first-engineering]] — Cache-First Engineering
+- [[concepts/caching-performance-cost-optimization]] — Caching, Performance, Cost Optimization
+- [[concepts/caid-coordination]] — CAID — Centralized Asynchronous Isolated Delegation
+- [[concepts/capability-based-security]] — Capability-Based Security
+- [[concepts/centaurs-and-cyborgs]] — Centaurs and Cyborgs — Human-AI collaboration models
+- [[concepts/chain-of-thought-reasoning]] — Chain-of-Thought Reasoning
+- [[concepts/chaos-engineering]] — Chaos Engineering for Microservices
+- [[concepts/chaos-engineering-for-microservices]] — Chaos Engineering for Microservices (specific)
+
 ## Events (4 pages)
 
 - [[events/openai-may-2026-reorg]] — OpenAIの2026年5月製品再編。Greg Brockmanが全製品を統括、ChatGPTとCodexを統合、Thibault Sottiauxがコア製品責任者に。Fidji Simoは病欠。
