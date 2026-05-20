@@ -13,6 +13,7 @@ aliases:
   - dtunkelang
 sources:
   - raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams
+  - raw/articles/2026-05-19_daniel-tunkelang_bag-of-documents-slides.md
   - raw/articles/2026-04-20_daniel-tunkelang_distilling-retrieval-pipelines.md
   - raw/articles/2026-03-26_daniel-tunkelang_agentic-search-agile-engineering.md
   - raw/articles/2025-03-27_daniel-tunkelang_precision-recall-desirability.md

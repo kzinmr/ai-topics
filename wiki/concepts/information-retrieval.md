@@ -19,6 +19,7 @@ sources:
   - raw/articles/2026-04-20_daniel-tunkelang_distilling-retrieval-pipelines.md
   - raw/articles/2023-08-07_daniel-tunkelang_semantic-equivalence-ecommerce.md
   - raw/articles/2024-12-02_daniel-tunkelang_bag-of-documents.md
+  - raw/articles/2026-05-19_daniel-tunkelang_bag-of-documents-slides.md
 ---
 
 # Information Retrieval
@@ -103,6 +104,50 @@ A pretrained version built entirely with public data on a 16GB MacBook Air M4:
 **Resources (MIT-licensed):** [HuggingFace](https://huggingface.co/datasets/dtunkelang/bag-of-documents) · [Demo](https://huggingface.co/spaces/dtunkelang/bag-of-documents-demo) · [Code](https://github.com/dtunkelang/bag-of-documents) · [arXiv 2308.03869](https://arxiv.org/abs/2308.03869)
 
 The model can be understood as a **learned, amortized form of pseudo-relevance feedback** — it uses retrieved documents during training but eliminates the feedback loop at inference time.
+
+### Loss Functions
+
+The choice of loss function is critical to BoD training. Tunkelang's May 2026 lecture [[raw/articles/2026-05-19_daniel-tunkelang_bag-of-documents-slides.md]] compares two approaches:
+
+| Loss | Approach | Characteristics |
+|------|----------|----------------|
+| **Centroid Loss** | Minimizes cosine distance between query embedding and its bag centroid | Direct, simple, good baseline |
+| **MultipleNegativesRankingLoss (MNRL)** | Contrastive: treats the query's bag as positive, other queries' bags as negatives | Better retrieval performance in practice |
+
+### Sources for Relevance Judgments
+
+> **"Judgments are the foundation, so invest effort here!"**
+
+| Source | Type | Notes |
+|--------|------|-------|
+| **Implicit** | Engagement (clicks, add-to-carts, purchases) | Conflates desirability with relevance. **Ranking ≠ Relevance!** |
+| **Explicit** | Human raters (traditional qrels) | Topical relevance gold standard, but expensive |
+| **Automated** | LLMs, cross-encoders | Vary widely in quality and cost; useful for scale |
+
+### BoD for Reranking
+
+BoD isn't only for direct retrieval. A powerful hybrid pattern:
+
+1. Retrieve candidates using lexical (BM25) or dense retrieval
+2. Score each candidate with a **BoD-trained encoder**
+3. **BM25 + BoD Reranker** can outperform pure BoD-based retrieval
+
+### Caveats: When BoD Works (and When It Doesn't)
+
+From Tunkelang's lecture slides [[raw/articles/2026-05-19_daniel-tunkelang_bag-of-documents-slides.md]], the approach requires:
+
+1. **Cluster hypothesis** — documents relevant to the same query must form tight clusters under the base encoder
+2. **Encoder quality** — base encoder must produce meaningful document vectors
+3. **Sufficient relevance data** — enough judgments per query to form reliable bags
+4. **Query coverage** — training queries must cover vocabulary/patterns of unseen queries
+5. **Bag quality** — relevance judgments must be accurate; garbage in, garbage out
+6. **No concept drift** — query intent distribution should be stable between training and serving
+7. **Computational budget** — fine-tuning and bag construction require non-trivial compute (though demonstrated on a laptop)
+
+### Resources
+
+- [Best Buy BoD demo](https://huggingface.co/spaces/dtunkelang/bag-of-documents-bestbuy-demo) — Additional live demo (May 2026)
+- [SpeakerDeck slides](https://speakerdeck.com/dtunkelang/the-bag-of-documents-model-for-query-understanding-and-retrieval) — Guest lecture for Turnbull & Grainger's AI search class
 
 See [[entities/daniel-tunkelang]].
 

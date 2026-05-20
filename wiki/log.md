@@ -1,3 +1,14 @@
+## [2026-05-19] ingest | Bag-of-Documents Model slides (Tunkelang, SpeakerDeck, May 2026)
+
+### Created
+- `wiki/raw/articles/2026-05-19_daniel-tunkelang_bag-of-documents-slides.md` — Guest lecture for Doug Turnbull & Trey Grainger's AI-powered search class (May 19, 2026). Covers: BoD architecture, relevance judgment sources (implicit/explicit/automated, "Ranking ≠ Relevance!"), loss functions (Centroid Loss vs MNRL), BoD for reranking (BM25 + BoD strongest hybrid), 7 caveats for when BoD works, try-it-yourself setup, Best Buy demo.
+
+### Updated
+- `wiki/concepts/information-retrieval.md` — Added: Loss Functions section (Centroid Loss vs MNRL comparison), Sources for Relevance Judgments (implicit/explicit/automated table with "Ranking ≠ Relevance!" insight), BoD for Reranking (hybrid pattern), Caveats (7 conditions), Resources (Best Buy demo + SpeakerDeck). Frontmatter: added slides source.
+- `wiki/entities/daniel-tunkelang.md` — Frontmatter sources: added slides reference.
+
+---
+
 ## [2026-05-20] create | Claude Code and Shopify AI-First Engineering concept pages
 
 ### Created
