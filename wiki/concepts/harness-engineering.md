@@ -1,7 +1,7 @@
 ---
 title: "Harness Engineering"
 created: 2026-04-30
-updated: 2026-05-10
+updated: 2026-05-20
 tags:
   - concept
   - evaluation
@@ -33,6 +33,7 @@ sources:
   - raw/articles/2026-05-06_vtrivedy10_strong-opinions-agent-harness-engineering.md
   - raw/articles/2026-05-09_addyosmani-agent-harness-engineering.md
   - https://x.com/vtrivedy10/status/2052100726608781363
+  - raw/articles/2026-05-20_warp_multi-harness-cloud-agent-orchestration.md
   - https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering
   - https://blog.langchain.com/better-harness-a-recipe-for-harness-hill-climbing-with-evals/
 description: "The practice of building evaluation and constraint systems around LLMs for production reliability. Includes production case studies from LangChain, Addy Osmani's Agent = Model + Harness framework, and the Agent Harness Engineering discipline."
@@ -338,6 +339,28 @@ Notion embeds evals directly into the harness lifecycle:
 
 Sierra's value proposition is fundamentally harness engineering: deploying conversational AI agents that integrate with enterprise systems, handle end-to-end customer service, and deliver measurable business outcomes. The company represents the "Service-as-Software" thesis where the harness — not the model — is the product.
 
+
+## Warp Oz: Multi-Harness Control Plane (May 2026)
+
+[[entities/warp-terminal|Warp's Oz]] platform represents a new category in harness engineering: the **multi-harness control plane**. While most harness engineering focuses on optimizing a single harness (Claude Code, Codex, or a custom agent loop), Oz sits a layer above — orchestrating across multiple harnesses simultaneously.
+
+### Key Innovation
+
+Oz treats the harness itself as a swappable component. Teams can launch Claude Code, Codex, or Warp Agent for the same task and compare effectiveness across harnesses. This is the first production system to operationalize the insight that "agent performance is a function of the harness and the model together" (per Zach Lloyd, Warp CEO).
+
+### Harness Engineering Features in Oz
+
+| Feature | Harness Engineering Significance |
+|---------|----------------------------------|
+| **Multi-harness orchestration** | Formalizes harness-as-component: different tasks get different harnesses, with consistent governance across all |
+| **Automatic subagent orchestration** | Implements the [[concepts/unbundled-agents]] pattern — specialist subagents coordinated by a supervisor loop |
+| **Cross-harness Agent Memory** | Solves the context persistence problem across harness boundaries — memories from Claude Code sessions are accessible to Codex sessions |
+| **Least-privilege agent permissions** | Operationalizes the sandbox/containment principle with per-agent granular access control |
+| **Kubernetes self-hosting** | Enterprises control their own harness infrastructure, eliminating cloud dependency for sensitive workloads |
+
+### Industry Positioning
+
+Oz's multi-harness approach is the first product to directly embody [[entities/vtrivedy10|Viv Trivedy's]] thesis that there is **no general-purpose agent** — the optimal harness depends on task, model, and organizational context. By providing a unified control plane across harnesses, Oz moves the optimization problem from "which harness?" to "how to route tasks to the best harness dynamically" — an open research question that Oz is the first production system to attempt.
 ## Infrastructure: Zyphra TSP and DORA (May 2026)
 
 Training and inference infrastructure advances enabling better harnesses:
@@ -360,6 +383,7 @@ Training and inference infrastructure advances enabling better harnesses:
 - [[entities/vtrivedy10]] — LangChain contributor; advocates eval-driven harness hill-climbing for production agents.
 - [[entities/sierra]] — Enterprise harness-as-a-service at $15B valuation
 - [[concepts/service-as-software]] — Business model thesis behind Sierra
+- [[entities/warp-terminal]] — Multi-harness control plane for cloud agents; Oz sits a layer above individual harnesses
 
 ## References
 

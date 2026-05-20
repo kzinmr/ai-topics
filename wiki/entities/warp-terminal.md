@@ -1,12 +1,13 @@
 ---
 title: Warp Terminal
 created: 2026-05-01
-updated: 2026-05-08
+updated: 2026-05-20
 type: entity
 tags: [product, tool, coding-agents, open-source, platform]
 sources:
   - https://www.warp.dev/blog/warp-is-now-open-source
   - https://open.substack.com/pub/bensbites/p/building-gets-easier
+  - raw/articles/2026-05-20_warp_multi-harness-cloud-agent-orchestration.md
 ---
 
 # Warp Terminal
@@ -49,6 +50,22 @@ The core terminal client with:
 - Multi-agent orchestration for code review, testing, and deployment
 - Rules and context management for consistent agent behavior
 
+
+### Oz Upgrade (May 2026)
+
+On May 19, 2026, Warp launched major upgrades to Oz, making it the first truly **multi-harness control plane** for cloud agents. Key capabilities:
+
+| Feature | Description |
+|---------|-------------|
+| **Multi-harness orchestration** | Launch, track, and control Claude Code, Codex, and Warp Agent in a single unified control plane. Oz sits a level above, enabling cross-harness comparison and task-to-harness matching. |
+| **Automatic multi-agent orchestration** | Deploy and track multiple parallel subagents (across harnesses) for long-horizon tasks: large feature builds, code migrations, production deployments. Includes auto-tracking and progress dashboard. |
+| **Cross-harness Agent Memory** | An index over organizational knowledge that Oz pulls into context for any agent task. Supports pluggable data sources (files/skills, MCPs, databases, enterprise apps) and is writable — Oz auto-adds to knowledge as it completes tasks. Agents learn team coding style, deployment topology, data structure across sessions and harnesses. In research preview. |
+| **Kubernetes self-hosting** | Run agents in Kubernetes pods or via direct execution, with or without Docker. No development setup changes required. |
+| **Granular cost controls** | Per-team billing, individual credit caps, visibility into team usage and outcomes. |
+| **Least-privilege permissions** | Individual agents get granular permissions to internal services — production agents have different access than CRM agents. |
+| **API/SDK-first** | Extended API with return values from agent sessions (artifacts, raw conversations); session handoff across local/remote/cloud environments. |
+
+This positions Oz as a **harness-agnostic orchestration layer** — the company's philosophy is that teams shouldn't bet their future on a single model or harness.
 ## Open Source (April 2026)
 
 On April 28, 2026, Warp open-sourced its client at [github.com/warpdotdev/warp](https://github.com/warpdotdev/warp):

@@ -1746,3 +1746,39 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - blog-16 (llm-gemini 0.32) — incorporated into entities/gemini.md tooling support
 - blog-19 (llm-gemini 0.32a0) — incorporated into entities/gemini.md tooling support
 
+
+
+## [2026-05-20] dreaming-wiki-ingest | Nightly knowledge consolidation — Cohere Reliant AI, Warp Oz, Simon Willison PyCon
+
+### Pages Enriched
+**entities/cohere.md** — Added Acquisitions & Expansion section:
+- Reliant AI acquisition (May 2026) — biopharma AI company, North for Pharma announcement
+- Key details: founders Karl Moritz Hermann/VP AI Verticalizations, Marc Bellemare/VP Modelling, customers assumed (GSK, Medicus Pharma, Kyowa Kirin)
+- Raw source: raw/articles/2026-05-20_cohere_cohere-acquires-reliant-ai-expand-sovereign-enterprise-ai.md
+
+**entities/warp-terminal.md** — Added Oz Upgrade (May 2026) section:
+- Multi-harness orchestration: Claude Code + Codex + Warp Agent in single control plane
+- Automatic multi-agent orchestration for long-horizon tasks
+- Cross-harness Agent Memory (research preview) — organizational knowledge index across harnesses
+- Kubernetes self-hosting, granular cost controls, least-privilege permissions
+- Raw source: raw/articles/2026-05-20_warp_multi-harness-cloud-agent-orchestration.md
+
+**concepts/harness-engineering.md** — Added Warp Oz: Multi-Harness Control Plane section:
+- First production multi-harness control plane — harness-as-component paradigm
+- Cross-harness Agent Memory solves context persistence across harness boundaries
+- Embodies Viv Trivedy's "no general-purpose agent" thesis
+- Raw source: raw/articles/2026-05-20_warp_multi-harness-cloud-agent-orchestration.md
+
+### Reference Items Skipped
+- simon-willison.md — PyCon 2026 talk already captured (line 305, updated 2026-05-19)
+- llm-gemini 0.32a0/0.32 — minor plugin releases, no wiki value
+
+### Already Captured (318 of 321 raw articles)
+- Google I/O 2026, Cursor Composer 2.5, Claude Managed Agents, Shopify AI-First Engineering
+- Daniel Tunkelang IR articles, Cloudflare Glasswing, Armin Ronacher agent language design
+- Yohei Nakajima statefulness, Han Lee RL env classification, Anthropic emotion concept
+- SemiAnalysis ClusterMAX 2.0, non-AI content (math/vintage/general tech)
+
+### Raw Articles Archived
+- raw/articles/2026-05-20_cohere_cohere-acquires-reliant-ai-expand-sovereign-enterprise-ai.md
+- raw/articles/2026-05-20_warp_multi-harness-cloud-agent-orchestration.md
