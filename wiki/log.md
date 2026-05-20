@@ -1,3 +1,9 @@
+## [2026-05-20] enrich | concepts/anthropic-multi-agent-research.md — Agent-Context双対性 (IRのクエリ-文書双対性との相同)
+- ユーザーの洞察: エージェントと文脈の関係に、IRのクエリ-文書双対性に似た構造がある
+- サブエージェントタスク(objective)↔クエリ、探索結果(context)↔文書、interleaved thinking↔relevance feedback の対応表
+- 「search is compression」を双対性の観点から再解釈: objective→探索→thinking→objective更新 = クエリ→文書→適合FB→クエリ拡張 と同じループ
+- 同じLLMトークン空間上で、クエリと文書が異なる粒度の同一対象として表現される
+
 ## [2026-05-20] create | concepts/agent-operator-patterns.md — Shann HolmbergのHermes Agent運用パターン集
 
 ### 変更内容
