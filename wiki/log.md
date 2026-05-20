@@ -1,11 +1,29 @@
-## [2026-05-20] enrich | building-effective-agents — Simon Willisonアノテーション追加
+## [2026-05-20] create | concepts/context-engineering.md — Anthropic + Lance Martin 結合考察
+- Anthropicの"Effective Context Engineering for AI Agents" (2025-09-29) と Lance Martinの"Context Engineering for Agents" (2025-06-23) および"Agent Design Patterns" (2026-01-09) を統合
+- Anthropicの実装視点（system prompts, just-in-time retrieval, compaction, note-taking, sub-agent delegation）と Lance Martinの4戦略分類（Write/Select/Compress/Isolate）のマッピングを整理
+- 文脈破綻モード（Poisoning/Distraction/Confusion/Clash/Rot）、attention budget、progressive disclosure、prompt caching、Ralph Wiggum loop、Bitter Lessonもカバー
+- 併せて entities/lance-martin.md を作成（Anthropic/LangChain経歴、4戦略分類の著者、managed agents共著の実績を記載）
+- index.md の両エントリをフル説明に更新
+
+---
+## [2026-05-20] create | concepts/context-engineering.md — Anthropic + Lance Martin synthesis
 
 ### 変更内容
-- Simon Willisonの注釈ブログ記事 ([simonwillison.net 2024-12-20](https://simonwillison.net/2024/Dec/20/building-effective-agents/)) の内容を取り込み
-- 元Anthropic記事 `concepts/harness-engineering/system-architecture/building-effective-agents.md` に `## Simon Willisonの注釈` セクションを追加
-- Raw記事を `raw/articles/2024-12-20_simon-willison_building-effective-agents.md` として保存
-- キー追加内容: 用語整理への称賛 (augmented LLM), 5パターン所感, 複雑性警告への共鳴, 自律性トレードオフ
-- frontmatter: `updated` → 2026-05-20, `status` → active, `sources` に Simon 記事追加
+- 3つのraw記事を保存:
+  - `raw/articles/2025-09-29_anthropic_effective-context-engineering-for-ai-agents.md`
+  - `raw/articles/2025-06-23_lancemartin_context-engineering-for-agents.md`
+  - `raw/articles/2026-01-09_lancemartin_agent-design-patterns.md`
+- `concepts/context-engineering.md` 作成: Anthropicの記事とLance Martinの2記事を合成した包括的なコンテキストエンジニアリング概念ページ
+  - Anthropicフレームワーク: System Prompts, Examples, Tools/MCP, Just-in-Time Retrieval, Compaction, Structured Note-Taking, Sub-Agent Delegation
+  - Lance Martinの4戦略分類: Write (外に保存) / Select (窓に引込) / Compress (必要なものだけ保持) / Isolate (エージェント間分割)
+  - 両フレームワークのマッピング表、文脈破綻モード (Poisoning/Distraction/Confusion/Clash/Rot)、attention budget、n² attentionの説明
+  - 発展パターン: Give Agents a Computer, Progressive Disclosure, Prompt Caching, Ralph Wiggum Loop, Multi-Layer Action Space
+  - The Bitter Lessonの視点: RLMやsleep-time computeで将来的にモデル側に吸収される可能性
+  - 実践チェックリスト（7項目）
+- `entities/lance-martin.md` 作成: Anthropic MTS, 元LangChain, PhD Stanford, 自動運転経歴（Nuro/Ike/Uber ATG）
+  - Context Engineering 4戦略分類の著者としての貢献、Anthropicでのmanaged agents/context engineering記事の共著
+  - 主要著作一覧表、The Bitter Lessonに関する見解
+- `index.md` 更新: lance-martinエントリ（スケルトン→フル説明）, context-engineeringエントリ（最小→フル説明）
 
 ---
 

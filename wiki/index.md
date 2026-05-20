@@ -308,7 +308,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6k stars) and peoplereadmes. Personal Brain OS. Toronto-based.
 - [[entities/krebsonsecurity-com]] — **URL:** https://krebsonsecurity.com
 - [[entities/kyle-jeong]] — Kyle Jeong (@kylejeong) — Growth Engineer at Browserbase, UCLA CS/Math student. KP Fellow. Writes about AI infra: Firecracker microVMs, agent sandboxing, browser automation, Kubernetes, Transformers.
-- [[entities/lance-martin]] — **X** | @RLanceMartin |
+- [[entities/lance-martin]] — Lance Martin — Anthropic MTS (Applied AI), previously LangChain. Author of context engineering 4-strategy taxonomy (Write/Select/Compress/Isolate), agent design patterns. Co-author of Anthropic's managed agents and context engineering posts. PhD Stanford.
 - [[entities/late-interaction]] — **URL:** https://www.lateinteraction.com
 - [[entities/lcamtuf]] — **URL:** https://lcamtuf.coredump.cx
 - [[entities/larsen-cundric]] — **X** | @larsencc | **Company** | Browser Use Founding Engineer | Agent sandboxing architecture (Pattern 2: isolate the agent with control plane)
@@ -1044,7 +1044,7 @@
 - [[concepts/builders-unscripted]] — Builders Unscripted — OpenAI interview series hosted by Romain Huet, spotlighting AI builder stories
 - [[concepts/building-effective-agents]] — Building Effective Agents
 - [[concepts/chain-of-thought]] — Chain-of-Thought推論: 最終回答前に中間推論ステップを生成するプロンプト技法。Wei et al. (2022) 提唱。大規模モデルでの創発能力。自己無撞着・Best-of-N・ビームサーチ・RL訓練型CoT (o1/R1) などtest-time-scaling全技法の基盤。Few-Shot/Zero-Shot/Auto-CoT/Long CoTの変種。
-- [[concepts/context-engineering]] — Context Engineering
+- [[concepts/context-engineering]] — Context Engineering — The art and science of curating the optimal set of tokens in an LLM's context window. Synthesizes Anthropic's implementation framework (system prompts, just-in-time retrieval, compaction, sub-agents) and Lance Martin's 4-strategy taxonomy (Write/Select/Compress/Isolate). Covers context rot, attention budget, progressive disclosure, prompt caching, and the Ralph Wiggum loop.
 - [[concepts/continual-harness]] — Online adaptation framework for self-improving agent harnesses. From GPP (first AI to complete Pokemon). Removes human from harness refinement loop. arXiv:2605.09998.
 - [[concepts/fine-tuning]] — Fine-Tuning
 - [[concepts/firecracker]] — Firecracker microVM: AWSのRust製軽量VMM（~50K行）。KVMハードウェア仮想化で~125ms起動。AWS Lambda/Fargateを支え、Browserbase/E2B/Daytona/Modal等のAIエージェント企業がコード実行サンドボックスに採用。VM分離＋コンテナ起動速度の両立。
