@@ -1422,6 +1422,27 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - `wiki/entities/zodchiii.md` — New entity page: Pseudonymous X/Twitter content creator, AI/finance/vibe coding, @zodchixquant Telegram channel, published viral Shopify Claude Code breakdown.
 
 ### Updated
-- `wiki/SCHEMA.md` — Added 4 tags: `cursor`, `github-copilot` (Products section); `llm-proxy` (Infrastructure); `internship` (Meta).
-- `wiki/index.md` — Updated entries for farhan-thawar, shopify, gergely-orosz with rich descriptions. Added new zodchiii entry.
+- `wiki/SCHEMA.md` — Added 4 tags: `cursor`, `github-copilot` (Products section); `llm-proxy` (Infrastructure); `interns
+- `wiki/index.md` — Updated entries for farhan-thawar, shopify, gergely-orosz with rich descriptions. Added new zodchiii
+
+## [2026-05-20] ingest | CMA self-hosted sandbox providers (4 articles → 1 comparison + 4 entities + CMA enrichment) | kzinmr request
+
+### Raw Articles Saved
+- `wiki/raw/articles/2026-05-19_cloudflare_claude-managed-agents-sandbox.md` — Mike Nomitch, Cloudflare Blog
+- `wiki/raw/articles/2026-05-19_daytona_claude-managed-agents-sandbox.md` — Daytona Documentation
+- `wiki/raw/articles/2026-05-19_modal_claude-managed-agents-sandbox.md` — Modal Blog
+- `wiki/raw/articles/2026-05-19_vercel_claude-managed-agents-sandbox.md` — Vercel Knowledge Base
+
+### Created
+- `wiki/comparisons/claude-managed-agents-sandbox-providers.md` — 4-provider comparison: Cloudflare/Daytona/Modal/Vercel Sandbox. 9-dimension comparison table (architecture, sandbox tech, scale, security, persistence, tools, pricing, strengths, customers), detailed per-provider sections, architecture diagrams, credential brokering spectrum, tooling comparison, verdict/synthesis with decision guidance.
+- `wiki/entities/cloudflare-sandbox.md` — Cloudflare's CMA self-hosted sandbox entity: dual sandbox primitives (microVM + V8 isolates), proxy zero-trust, Browser Run + email tools, Workers AI integration.
+- `wiki/entities/daytona-sandbox.md` — Daytona's CMA self-hosted sandbox entity: three-party architecture, dual orchestrator variants, snapshot-based sandboxes, 30-day lifecycle.
+- `wiki/entities/modal-sandbox.md` — Modal's CMA self-hosted sandbox entity: GPU access (H100), 100K+ concurrent sandboxes, burst pricing, connect tokens, custom images. Including Mason AI/DoorDash/Blend endorsements.
+- `wiki/entities/vercel-sandbox.md` — Vercel's CMA self-hosted sandbox entity: webhook-driven control plane, firewall-level credential brokering, microVM-based, TypeScript-native, OIDC token auth.
+
+### Enriched
+- `wiki/concepts/claude-managed-agents.md` — Added Sandbox Provider Options subsection with provider comparison table + cross-link to comparison page. Added 4 raw article sources.
+
+### Index & Log
+- `index.md`: +5 indexed entries (4 entities + 1 comparison); entities 629→633, comparisons 17→18, total 2060→2065.
 

@@ -19,6 +19,10 @@ sources:
   - raw/articles/2026-05-07_claude-managed-agents-webhooks.md
   - raw/articles/2026-05-07_claude-managed-agents-dreams.md
   - raw/articles/2026-05-19_claude-managed-agents-sandbox-mcp-tunnels.md
+  - raw/articles/2026-05-19_cloudflare_claude-managed-agents-sandbox.md
+  - raw/articles/2026-05-19_daytona_claude-managed-agents-sandbox.md
+  - raw/articles/2026-05-19_modal_claude-managed-agents-sandbox.md
+  - raw/articles/2026-05-19_vercel_claude-managed-agents-sandbox.md
 ---
 
 
@@ -352,6 +356,19 @@ Agents can now run inside the **user's own infrastructure perimeter**, with the 
 - **No trust boundary change**: Agents execute where the rest of the enterprise workload already runs
 
 This is a significant differentiator vs. competitors that require all agent execution in vendor-managed cloud environments.
+
+### Sandbox Provider Options
+
+Four self-hosted sandbox providers announced CMA integration on May 19, 2026:
+
+| Provider | Sandbox Type | Key Differentiator |
+|----------|-------------|-------------------|
+| [[entities/cloudflare-sandbox\|Cloudflare]] | microVM + V8 isolates | Dual sandbox primitives, proxy-based zero-trust, full browser+email suite |
+| [[entities/daytona-sandbox\|Daytona]] | Docker containers | Flexible orchestrator (polling/webhook), snapshot-based, 30-day lifecycle |
+| [[entities/modal-sandbox\|Modal]] | Custom container runtime | GPU access, 100K+ concurrency, burst pricing, memory snapshots |
+| [[entities/vercel-sandbox\|Vercel Sandbox]] | microVM | Firewall-level credential brokering, TypeScript-native, battle-tested scale |
+
+For a detailed comparison across architecture, security, scale, tooling, and pricing, see [[comparisons/claude-managed-agents-sandbox-providers]].
 
 ### MCP Tunnels (Research Preview)
 Allows Claude Managed Agents to connect to **local MCP servers** behind firewalls/NAT via secure tunnels:

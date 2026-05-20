@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-19 | Total pages: 2060 | Indexed entries: 1175 | Not in index: 865 |
+> Last updated: 2026-05-19 | Total pages: 2065 | Indexed entries: 1180 | Not in index: 865 |
 
-## Entities (629 pages)
+## Entities (633 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -152,7 +152,9 @@
 - [[entities/claris-filemaker-agentic-coding]] — Claris (Apple subsidiary) low-code platform. May 2026: announced as first-class target for agentic coding tools (Claude Code, Cursor, Codex). Ryan McCann (CEO). Opening to external AI agents rather than building proprietary AI.
 - [[entities/codex]] — OpenAI製のオープンソースAIコーディングエージェント。Apache-2.0、Rust製、79.3K GitHub Stars。GPT-5.5/5.4ネイティブ＋カスタムプロバイダ＋ローカルモデル対応。CLI/Desktop/IDE/Webのマルチサーフェス。ChatGPT Plus/Proに含まれ、サブスクリプション壁なし。
 - [[entities/cloudflare]] — Global cloud platform; Project Glasswing participant. Published Mythos Preview harness architecture (May 2026): Recon→Hunt→Validate→Gapfill→Dedupe→Trace→Feedback→Report. Also repositioning as "agentic cloud" with Agents SDK, Project Think.
+- [[entities/cloudflare-sandbox]] — Cloudflare's self-hosted sandbox for Claude Managed Agents (May 2026). Dual sandbox primitives (microVM + V8 isolates), proxy-based zero-trust credential brokering, Browser Run, email tools, Workers AI integration.
 - [[entities/coder]] — Coder Technologies — self-hosted, model-agnostic AI coding agent platform for enterprise. Coder Agents beta released May 2026. Supports Anthropic, OpenAI, Google, AWS Bedrock, self-hosted models. Air-gapped ready.
+- [[entities/cognition]] — Cognition AI
 - [[entities/coding-agents]] — LLM-powered coding agents ecosystem — Claude Code, Cursor, GitHub Copilot, and agent-driven development infrastructure
 - [[entities/construction-physics-com]] — **URL:** https://constructionphysics.substack.com
 - [[entities/copilot-cli]] — GitHub製ターミナルネイティブAIコーディングエージェント。6種類のビルトインサブエージェント（explore/code-review/research等）、`/fleet`並列実行、MCP拡張、BYOK/ローカルモデル対応（2026年4月+）。Copilot Free/Pro/Pro+/Business/Enterpriseに含まれる。
@@ -169,6 +171,7 @@
 - [[entities/david-fowler]] — David Fowler (@davidfowl) — Distinguished Engineer at Microsoft. Creator of NuGet, SignalR, ASP.NET Core, Aspire (agent-ready DevOps). Tally (AI bank tx classifier). "AI Made Us Faster. That Was the Problem" (May 2026).
 - [[entities/dax-raad]] — **X** | @thdxr |
 - [[entities/daytona-io]] — CEO: Ivan Burazin. Composable computing environments (sandboxes) for AI agents.
+- [[entities/daytona-sandbox]] — Daytona's self-hosted sandbox for Claude Managed Agents (May 2026). Three-party architecture, dual orchestrator (polling/webhook), snapshot-based sandboxes, 30-day lifecycle.
 - [[entities/deepseek]] — Chinese open-source LLM provider driving **cost disruption**. DeepSeek V4 (1.6T Pro / 284B Flash, MoE, 1M context, MIT license) confirmed running on Huawei Ascend 950 for inference — partial decoupling from Western hardware.
 - [[entities/deliberate-coder]] — **URL:** https://www.benmvp.com (blog), https://github.com/benmvp (GitHub)
 - [[entities/deliberatecoder]] — **URL:** https://deliberate-software.com
@@ -593,6 +596,7 @@
 - [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
 - [[entities/vercel]] — Vercel — Frontend cloud platform (Next.js). Released deepsec open-source security harness using coding agents for vulnerability discovery and remediation (May 2026).
 - [[entities/vercel-labs]] — Vercel Labs — R&D division of Vercel. Creator of Zero, a systems language built for agent-first development (May 2026).
+- [[entities/vercel-sandbox]] — Vercel's self-hosted sandbox for Claude Managed Agents (May 2026). Webhook-driven control plane, firewall-level credential brokering, microVM-based, TypeScript-native (tsx runner), OIDC token auth.
 - [[entities/radixark]] — RadixArk — AI inference infrastructure startup. $100M seed (May 2026), built on SGLang inference + Miles (large-scale RL).
 - [[entities/perplexity]] — Perplexity — AI search platform expanding into vertical products: Professional Finance Computer (35 analyst workflows), NEJM/BMJ premium medical access.
 - [[entities/arena-ai]] — Arena (arena.ai) — AI model evaluation and comparison platform. Chatbot Arena leaderboard with blind pairwise comparisons across text, vision, code, and search.
@@ -624,6 +628,7 @@
 - [[entities/merge]] — Merge — Unified API for integrations. Connect to 200+ platforms through a single API.
 - [[entities/metronome]] — Metronome — Usage-based billing platform. Acquired by Stripe. OpenAI is flagship customer.
 - [[entities/modal-labs]] — Modal Labs — Serverless GPU cloud platform. Founded by Erik Bernhardsson. Python-native containerless execution.
+- [[entities/modal-sandbox]] — Modal's self-hosted sandbox for Claude Managed Agents (May 2026). GPU access (H100), 100K+ concurrent sandboxes, burst pricing, connect tokens, custom images with uv_sync.
 - [[entities/nominal]] — Nominal — AI and analytics platform.
 - [[entities/nuro]] — Nuro — Autonomous delivery vehicles. Pivoted to Nuro Driver licensing platform in 2024.
 - [[entities/noumena-network]] — Noumena Network — AI research lab and product company. MoE training infrastructure (nmoe, RDEP) and agent systems. "Engineered for Experts // Built for Mastery."
@@ -1163,7 +1168,7 @@
 - [[events/distillation-attacks-2026]] — Anthropic Accuses Chinese Labs of Industrial-Scale Distillation Attacks（2026-04-24）
 - [[events/openai-musk-trial-verdict-2026]] — OpenAI vs Musk裁判評決（2026-05-18）— 陪審員満場一致でMuskの請求棄却。時効が理由で、OpenAIの正当性には踏み込まず。Gary Marcus「世紀のAI裁判、竜頭蛇尾に終わる」
 
-## Comparisons (17 pages)
+## Comparisons (18 pages)
 
 - [[comparisons/agent-memory-systems-comparison]] — Agent Memory Systems Comparison — OpenClaw/Claude Code/Codex/Hermes 4ハーネスのメモリアーキテクチャ比較。ファイルファースト共通哲学、ベクトル検索vs全文検索、非同期vs同期vs Bounded Snapshot、Pre-Compaction Flush、Bustamante 3タイプ分類、選択ガイド付き。
 - [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
@@ -1183,6 +1188,7 @@
 - [[comparisons/google-alerts-alternatives-2026]] — Google Alerts alternatives for developers & marketers: 10 tools compared (2026)
 - [[comparisons/open-source-rl-libraries-comparison]] — Open Source RL Libraries比較ポータル: TRL/Verl/OpenRLHF/RAGEN/NeMo-RL/ROLL/AReaL/slime/Verifiers/SkyRLの10ライブラリ比較。Anyscale 2025。
 - [[comparisons/open-harness-vs-agent-framework]] — Open Harness 対 Agent Framework/SDK — 投資対象としての本質的差異（2026-05-14）。**§9 Runtime-Centric vs Workflow-Centric追加**: runtime-centric family (ClaudeCode/Codex/PI/OpenClaw/Hermes) vs workflow-centric (LangGraph/PydanticAI)。PI as Runtime Substrate分析。Source: kzinmr (2026-05-15)。
+- [[comparisons/claude-managed-agents-sandbox-providers]] — Claude Managed Agents Self-Hosted Sandbox Providers — Cloudflare/Daytona/Modal/Vercel Sandboxの4プロバイダ比較。アーキテクチャ、サンドボックス技術、セキュリティ、スケール、ツーリング、価格の9次元比較 + 選択ガイド（2026-05-19）。
 
 ## Queries (1 page)
 
