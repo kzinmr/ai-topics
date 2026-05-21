@@ -3,6 +3,15 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-21] raw-backlog-ingest | 5 articles triaged, 0 takes (all skip/reference)
+
+- **Pipeline**: raw-backlog-ingest (20260521T120026Z) — 5 candidate articles from backlog
+- **4 skip**: Simon Tatham coroutines articles (2x, pure C/C++ content, no AI relevance); Notion Token Town podcast (already captured in entities/notion.md + simon-last.md + sarah-sachs.md); APOSD vs Clean Code debate (general software design, no AI context)
+- **1 reference**: Claude Mythos Preview Anthropic blog — key metrics (181 Firefox exploits, 271 zero-days, Project Glasswing, UK AISI eval) already in entities/claude-mythos.md; additional scaffold/disclosure details noted as secondary
+- **Archive**: `raw/archived/triage/backlog/2026-05-21_20260521T120026Z.json`
+
+---
+
 ## [2026-05-21] trending-topics | 6 topics from web research
 
 - **Pipeline**: trending-topics (20260521T120000Z) — web research + cross-reference + report
