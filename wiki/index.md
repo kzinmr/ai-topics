@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-21 | Total pages: 2070 | Indexed entries: 1212 | Not in index: 858 |
+> Last updated: 2026-05-21 | Total pages: 2072 | Indexed entries: 1214 | Not in index: 858 |
 
-## Entities (649 pages)
+## Entities (650 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -186,7 +186,7 @@
 - [[entities/doug-turnbull]] — **X/Twitter** | @softwaredoug |
 - [[entities/downtowndougbrown-com]] — **Blog** | downtowndougbrown.com |
 - [[entities/drew-breunig]] — **Blog** | dbreunig.com |
-- [[entities/drmaciver]] — **Blog:** drmaciver.com | **Notebook:** notebook.drmaciver.com | **Substack:** Overthinking Everything
+- [[entities/drmaciver]] — David R. MacIver (@DRMacIver) — Creator of Hypothesis (Python property-based testing), Hegel (multi-language PBT protocol), Shrinkray (test-case reduction). Senior Engineer at Antithesis. Rigorous AI-assisted development methodology: design-led, 100% coverage ratchet, two-review PR workflow. ~90% of Hegel code first-drafted by Claude Code.
 - [[entities/droid]] — Factory AI製エンタープライズコーディングエージェント。CLI/IDE/Slack/Linear/CI/CDマルチプラットフォーム。Specification Mode + 3段階Auto-Run。SOC-2準拠、$20-50/mo。専門化サブエージェント（CodeDroid/Review Droid/QA Droid）。
 - [[entities/dspy]] — DSPy (Declare + Optimize) is an open-source framework developed by Stanford's NLP group for building systems that use large language models. Instead of writing hand-crafted prompts, developers decl...
 - [[entities/dwarkesh-patel]] — **Born** | August 19, 2000, United States |
@@ -446,7 +446,8 @@
 - [[entities/sglang]] — **Type** | LLM Inference Engine / Serving Framework |
 - [[entities/sheshansh-agrawal]] — **X/Twitter** | @sheshansh_agrawal |
 - [[entities/shkspr-mobi]] — **Terence Eden** (pronounced "ed-en") is a technology policy expert, open-source advocate, web standards contributor, and blogger. Based in the UK, he has worked at the intersection of government t...
-- [[entities/shlok-khemani]] — Writer and programmer based in Gurgaon, India. Currently researching **personal AI** and **memory systems for AI agents**. Previously at Decentralised.co, building products for the crypto space. Au...
+- [[entities/shlok-khemani]] — Writer and programmer based in Gurgaon, India. Currently researching personal AI and memory systems for AI agents. Previously at Decentralised.co, building products for the crypto space. Author of Ope
+- [[entities/shloked]] — Shlok Khemani (@shloked) — Indie developer, creator of ChatFerry (TypeScript CLI for coding agents to use ChatGPT/Claude without API keys). OpenPoke, Claude Memory Tools, Conjure. Memory systems researcher. See [[entities/shlok-khemani]] for full profile.
 - [[entities/shopify]] — Shopify — Global e-commerce platform and leading case study in enterprise AI adoption. 23,000 engineers targeting 90% autonomous coding by Q3 2026. Built internal LLM proxy, adopted Copilot (2021) → Cursor → Claude Code, runs parallel AI agents, 1,000-intern program. See [[entities/farhan-thawar]], [[entities/tobi-lutke]].
 - [[entities/shreya-shankar]] — **Role** | PhD Candidate, UC Berkeley EECS (Aditya Parameswaran lab) |
 - [[entities/shannhk]] — Shann Holmberg — Head of Product at Espressio AI, Hermes Agent operator. Creator of hermes-agent-control-room template (4-level fleet operation model). Co-founder of Lunar Strategy (250+ projects). Co-author of Master Web3 Marketing.
@@ -658,7 +659,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1396 pages)
+## Concepts (1397 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -926,6 +927,7 @@
 - [[concepts/ai-operating-model]] — IBM's four-system blueprint for enterprise AI: Agents + Data + Automation + Hybrid. Coordinated, governed, auditable agent ecosystems at scale. Announced Think 2026.
 - [[comparisons/agent-harnesses]] — 8大AIエージェントハーネス（Claude Code/OpenCode/Pi/Codex/Copilot CLI/Droid/OpenClaw/Hermes Agent）の包括的比較ポータル。機能比較表、モデル互換性マトリクス、価格比較、ユースケースレコメンデーション、Harness Effect分析。
 - [[concepts/agent-harnesses]] — > **Core Thesis:** The less you build in your agent framework, the more it works. All the value is in the RL'd model, not your 10,000 lines of abstractions.
+- [[concepts/hegel-property-based-testing]] — Hegel: universal property-based testing protocol and family of libraries (Go, Rust, C++, TypeScript), built on Hypothesis engine. Client-server architecture: hegel-core Python backend + language SDKs over Unix socket. MIT license, by DRMacIver & team at Antithesis.
 - [[concepts/hermes-agent]] — Hermes Agent by Nous Research: self-evolving personal AI agent with three-tier memory, self-improving skills, GEPA optimization, multi-profile isolation, and plain-English cron. 140K+ GitHub stars. Comparison with OpenClaw.
 - [[concepts/hermes-agent-architecture]] — Hermes Agent（v0.9.0）のアーキテクチャ詳細。AIAgent中心設計、3つのAPI実行モード、キャッシュ対応プロンプトアセンブリ、SQLite+FTS5永続状態、自己登録型ツールレジストリ、subagent delegation vs execute_code、14+プラットフォームGateway、共有プロバイダランタイム。agent-core-firstの能力蓄積システム。
 - [[concepts/hermes-agent-use-cases]] — Hermes Agentの7つの標準ユースケース（30日間コミュニティ分析）。3 Shared Properties（Scheduled/File-based/Push to messenger）、Self-Evolving Skill Loop。
@@ -946,6 +948,7 @@
 - [[concepts/bitter-lesson-agent-harnesses]] — モデル能力のスケール向上に伴い、ハーネスの役割は論理実装からモデル行動のオーケストレーションへ移行する
 - [[concepts/rich-suttons-bitter-lesson]] — Rich SuttonのBitter Lesson（2019）。計算資源を活用する汎用手法が手作りの構造に最終的に勝つ。AIエンジニアリングへの応用、Hyung Won Chungの「構造を加えて後で取り除く」フレームワーク、Lance Martinのopen-deep-research事例研究
 - [[concepts/chartqa]] — ChartQA — チャート理解QAベンチマーク。Statista/Pew/OECD等から収集した実チャート。32.7K QAペア。ノイジーなテストデータが問題。
+- [[concepts/chatferry]] — ChatFerry — TypeScript CLI for coding agents to prompt ChatGPT/Claude through browser sessions without API keys. Uses Playwright + Chromium, daemon with 3 concurrent prompts per provider, markdown exports. Created by [[entities/shloked]].
 - [[concepts/china-agentic-coding-sprint]] — China's rapid convergence on SWE-Bench Pro: Kimi K2.6, MiniMax M2.7, Z.ai GLM-5.1 all scoring 56-59 in 12-day window. Open weights, below Western pricing. "China is 6-9 months behind" framing no longer holds.
 - [[concepts/china-openclaw-agentic-boom]] — 2026年初頭のOpenClaw中国爆発的普及現象。低価格API・DeepSeek効果・政府補助金で構造的転換。クラウド5社同時争奪戦、13.5万露出・42K認証バイパスセキュリティ危機、Taobao/XianyuでRMB 50-700のインストール市場、深センOPC補助金最大$1.4M。→ [[entities/openclaw]], [[concepts/china-agentic-coding-sprint]]
 - [[concepts/context-providers]] — エージェントとツールの間にあるコンテキスト供給レイヤーの設計パターン

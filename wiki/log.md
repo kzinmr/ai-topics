@@ -12,6 +12,26 @@
 
 ---
 
+## [2026-05-21] create | concepts/hegel-property-based-testing.md
+
+- **Action**: Created concept page for Hegel, the universal property-based testing protocol and family of libraries
+- **Content**: Definition, architecture (client-server via Unix socket with hegel-core Python backend), Go SDK example, supported languages (Go/Rust/C++/TS), relationship to Hypothesis, AI-assisted development philosophy
+- **Tags**: concept, testing, property-based-testing, framework, protocol, formal-methods, go, developer-tooling, open-source
+- **Sources**: GitHub (hegeldev/hegel-go), hegel.dev, pkg.go.dev, drmaciver.com blog post
+- **Index**: Added to Concepts section (alphabetically before hermes-agent)
+
+---
+
+## [2026-05-21] update | entities/drmaciver.md (full page rewrite)
+
+- **Action**: Replaced skeleton stub (39 lines) with full entity page (165 lines)
+- **Content**: Quick facts table, Overview, Core Ideas (PBT as AI guardrail, 100% coverage, not vibe coding, hard problems essay), Key Work (Hypothesis, Hegel, Shrinkray, minithesis, foundational-llm-evals, Agentic PBT), Blog/Recent Posts, Related People, X Activity Themes, Related Concepts
+- **Tags**: person, developer-tooling, testing, formal-methods, python, coding-agents, ai-coding, blogger, researcher
+- **Key sources**: drmaciver.com "How I've been using Claude Code" (2026-04-11), Substack "The hard problem with hard problems" (2026-02-13), Hypothesis docs, Hegel GitHub/hegel.dev
+- **Index**: Updated entity summary line to reflect current work and methodology
+
+---
+
 ## [2026-05-21] trending-topics | 6 topics from web research
 
 - **Pipeline**: trending-topics (20260521T120000Z) — web research + cross-reference + report
@@ -1912,3 +1932,17 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - Entities updated:
   - entities/doug-turnbull-speaking.md: Added LLM QU lecture entry + embedding collapse quote
   - entities/doug-turnbull.md: Updated date
+
+## [2026-05-21] create | entities/shloked.md + concepts/chatferry.md
+
+- **Created entities/shloked.md** — Shlok Khemani (@shloked) entity page focused on indie developer persona and ChatFerry creation
+  - Quick facts table, Overview, Core Ideas (browser-as-API, no-API-key architecture), Key Work, Writing & Activity, X Activity Themes, Related People
+  - Tags: person, tool, indie-maker, open-source, cli, browser-automation, coding-agents, typescript, memory-systems, agent-tooling
+  - Sources: GitHub profile, ChatFerry repo, shloked.com, raw/articles/2026-05-20_shloked_chatferry.md
+  - Wikilinks: concepts/chatferry, entities/shlok-khemani, entities/peter-steinberger, entities/simon-willison, entities/boris-cherny, entities/thariq-shihipar
+- **Created concepts/chatferry.md** — ChatFerry concept page: TypeScript CLI for coding agents to use ChatGPT/Claude without API keys
+  - Definition, Key Features (no API keys, persistent profiles, daemon, markdown exports, multi-provider, async), How It Works (5-step pipeline), Tech Stack, Requirements, Usage/Example, Comparison Table, Limitations, Related Concepts, Sources, Changelog
+  - Tags: tool, cli, browser-automation, coding-agents, typescript, open-source, agent-tooling, ai-agents
+  - Sources: GitHub repo, raw/article stub
+  - Wikilinks: concepts/coding-agents, entities/claude-code, entities/openai-codex, concepts/browser-automation, concepts/agent-tooling, entities/shloked, entities/shlok-khemani
+- **Updated index.md** — Added both pages to index; updated counts (Total: 2070→2072, Indexed: 1212→1214, Entities: 649→650, Concepts: 1396→1397)

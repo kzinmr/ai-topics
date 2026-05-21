@@ -1,0 +1,58 @@
+{
+  "checkpoint_run_id": "20260521T200045Z",
+  "archived_at": "2026-05-21T20:00:45.443067+00:00",
+  "source": "backlog",
+  "summary": "5 articles from raw backlog, all skip",
+  "decisions": [
+    {
+      "item_id": "substack.com--redirect-c88959e9-6efb-4d36-90b6-081c569c822f--43ca92e8",
+      "source": "backlog",
+      "source_name": "SemiAnalysis ClusterMAX",
+      "title": "The GPU Cloud ClusterMAX Rating System",
+      "url": "https://substack.com/redirect/c88959e9-6efb-4d36-90b6-081c569c822f",
+      "recommended_action": "skip",
+      "reason": "Already captured in wiki (gpu-cloud-rankings.md, semianalysis.md, coreweave.md created 2026-05-20)",
+      "candidate_wiki_path": "concepts/gpu-cloud-rankings"
+    },
+    {
+      "item_id": "danluu.com--seo-spam--1e6eb0e1",
+      "source": "backlog",
+      "source_name": "Dan Luu",
+      "title": "How bad are search results? Let's compare Google, Bing, Marginalia, Kagi, Mwmbl, and ChatGPT",
+      "url": "https://danluu.com/seo-spam/",
+      "recommended_action": "skip",
+      "reason": "Non-AI content. Search engine quality comparison (SEO spam vs legitimate results). No LLM/agent relevance.",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "oldvcr.blogspot.com--2025-12-the-texas-instruments-cc-40-invades-html--ac09a89c",
+      "source": "backlog",
+      "source_name": "OldVCR Blog",
+      "title": "The Texas Instruments CC-40 invades Gopherspace",
+      "url": "https://oldvcr.blogspot.com/2025/12/the-texas-instruments-cc-40-invades.html",
+      "recommended_action": "skip",
+      "reason": "Non-AI content. Retro computing history about TI CC-40 pocket computer from 1983.",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "overreacted.io--react-for-two-computers--fe10d36e",
+      "source": "backlog",
+      "source_name": "overreacted.io (Dan Abramov)",
+      "title": "React for Two Computers",
+      "url": "https://overreacted.io/react-for-two-computers/",
+      "recommended_action": "skip",
+      "reason": "Non-AI content. React Server Components presentation notes. Frontend development topic.",
+      "candidate_wiki_path": null
+    },
+    {
+      "item_id": "dwarkesh.com--p-reiner-pope--11ee10e4",
+      "source": "backlog",
+      "source_name": "Dwarkesh Podcast",
+      "title": "Reiner Pope - The math behind how LLMs are trained and served",
+      "url": "https://www.dwarkesh.com/p/reiner-pope",
+      "recommended_action": "skip",
+      "reason": "Already captured in wiki (entities/reiner-pope.md, entities/matx.md, concepts/llm-inference.md)",
+      "candidate_wiki_path": "concepts/llm-inference"
+    }
+  ]
+}
