@@ -1,7 +1,7 @@
 ---
 title: xAI
 created: 2026-05-02
-updated: 2026-05-12
+updated: 2026-05-21
 type: entity
 tags:
   - company
@@ -42,6 +42,28 @@ See [[entities/grok-4-3]] for detailed model specs.
 ## Grok Computer
 
 xAI's autonomous desktop agent (private beta April 13, 2026). Operates computers by reading screen pixels — opens applications, navigates UIs, fills forms, executes multi-step workflows. Works with any software without API access, including legacy programs. See [[concepts/grok-computer]].
+
+
+
+### Grok Build — Terminal Coding Agent (May 2026)
+
+xAI entered the coding agent market with **Grok Build**, a terminal-based AI coding agent:
+
+| Feature | Detail |
+|---------|--------|
+| **Type** | Terminal-based coding agent |
+| **Key Modes** | Plan Mode, parallel subagents |
+| **Context** | 2M token context window |
+| **Availability** | Locked behind SuperGrok Heavy ($300/month) |
+| **Competition** | Competes with [[entities/openai-codex|Codex]], [[entities/claude-code|Claude Code]] |
+
+**Significance for xAI's strategy:**
+- Expands xAI beyond chat-based AI (Grok models) into the agentic coding market
+- Pricing at $300/month positions it as a premium product vs. Codex (included in ChatGPT Plus/Pro) and Claude Code (Pro $17-20/mo)
+- The 2M token context is among the largest available for coding agents
+- Parallel subagent execution indicates architectural maturity comparable to Codex and Claude Code
+
+Source: Aakash's Clicky newsletter (May 2026)
 
 ## SpaceX Acquisition (Feb 2026)
 

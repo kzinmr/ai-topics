@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-05-20
+updated: 2026-05-21
 sources: [
   "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
   "https://x.com/RLanceMartin/status/2041927992986009773",
@@ -206,6 +206,40 @@ Claude is Anthropic's flagship language model series. Key versions referenced in
 - **Claude Sonnet** — Balanced capability and speed
 - **Claude Haiku** — Fast, efficient
 
+
+### Claude for Small Business — 15 Workflows (May 2026)
+
+Anthropic announced **15 ready-to-run workflows** for small business applications inside QuickBooks, PayPal, HubSpot, Canva, and Docusign — at **no extra cost** to existing Claude subscriptions:
+
+| Use Case | Platform | Description |
+|----------|----------|-------------|
+| **Accounting** | QuickBooks | Invoice reconciliation, expense categorization |
+| **Payments** | PayPal | Transaction dispute handling, refund processing |
+| **CRM** | HubSpot | Lead enrichment, pipeline management automation |
+| **Design** | Canva | Brand-consistent asset generation |
+| **Documents** | Docusign | Contract review, signature workflow automation |
+
+- **Market rationale**: Small businesses represent 44% of US GDP — a strategic segment often overlooked by enterprise-first AI companies
+- **Competitive positioning**: Differentiator against OpenAI Codex, which targets enterprise and developer markets
+- **Additional integration**: Claude Cowork + MCP connectors to Westlaw and Everlaw for legal workflows
+
+Source: Aakash's Clicky newsletter (May 2026)
+
+### KPMG x Anthropic Global Alliance (May 2026)
+
+KPMG and Anthropic announced a **global alliance** embedding Claude Cowork and Claude Managed Agents inside **KPMG Digital Gateway**:
+
+| Detail | Value |
+|--------|-------|
+| **Scope** | Global alliance embedding Claude in KPMG's delivery platform |
+| **Initial Focus** | Tax, legal, and private-equity work |
+| **Workforce** | 276,000 KPMG professionals gain access to Claude |
+| **Significance** | Largest single-enterprise AI deployment by workforce size to date |
+
+This represents a major milestone for enterprise AI adoption — KPMG is one of the Big Four accounting firms with global reach across tax, audit, and advisory. The partnership gives Anthropic direct access to enterprise client workflows through the KPMG channel.
+
+Source: Superintel Google I/O newsletter (May 2026)
+
 ## Mythos Breach (Apr 2026)
 
 Anthropic's internal "too dangerous to release" model **Mythos** was accessed on launch day by four individuals in a private Discord. The group:
@@ -286,7 +320,7 @@ Anthropic は複数の大規模計算資源契約を締結：
 
 | パートナー | 規模 | 状況 |
 |-----------|------|------|
-| **SpaceXAI (Colossus 1)** | 300MW / 220K+ GPU | 2026年5月発効 |
+| **SpaceXAI (Colossus 1)** | 300MW / 220K+ GPU; $1.25B/month | 2026年5月発効 |
 | **Amazon** | 最大5GW（2026年末までに~1GW新規） | 契約締結済み |
 | **Google + Broadcom** | 5GW | 2027年稼働開始予定 |
 | **Microsoft + NVIDIA** | $30B Azure容量 | 戦略的パートナーシップ |

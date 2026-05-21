@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-05-21T07:33:32.500665+00:00",
+  "triage_run_id": "20260521T071910Z",
+  "source": "newsletter",
+  "summary_ja": "2026-05-20のニュースレター5件を分析。The Signal（AIツール紹介）とThe Skip（転職ルール）はwiki対象外。RailwayのAgent-Native Cloudインタビュー、AakashのClicky.ニュースレター、SuperintelのGoogle I/O総括から合計13件のtake候補を特定。既存のevents/google-io-2026ページはblog-ingestで作成済みだが、Superintel版にはKPMG-Anthropic提携・SynthID標準化・AIサプライチェーンセキュリティなど追加価値あり。",
+  "decisions": [
+    {
+      "item_id": "<20260520.155241.77bfb118@mta19>-ref1",
+      "source": "newsletter",
+      "source_name": "Everything important from Google I/O 2026",
+      "title": "AI Data Center Local Backlash — Gallup Survey",
+      "url": "https://link.mail.beehiiv.com/v1/c/%2FmbMoR%2FfiinlIm9dRTMYhOA0j%2BgNE6K9l5eMFJ57%2Fdn1aC01zDT8SU61p%2Bfd%0AGlrw3naq6CaeMPARKtb6EW8d7kLU1Vn%2FJvbyW7wXNoyLIZR0jlt1b468zMwR%0AJSHJelFnFlhUUSE1EpoQovJdaGnuGh39lksS1ANRIRmEJUM6D2v2NTevMOd9%0AUAIdeRvcUn0C9zNlDYsbFAMgtTkpaqM%2BrQ%3D%3D%0A/93987741df97f1dc",
+      "raw_path": "~/wiki/raw/newsletters/2026-05-20-everything-important-from-google-i-o-2026.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 米国人の70%が地域へのAIデータセンター建設に反対（水使用・電力・公害）。AIインフラの物理的制約を示すデータとして、concepts/ai-infrastructureやai-data-centerに軽く言及する価値あり。ただし単独ページは不要。",
+      "candidate_wiki_path": "concepts/ai-infrastructure",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "<20260520130307.3.4f9f649fea78ef4d@mg-d1.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "6 AI tools for the people still doing everything in ChatGPT",
+      "title": "The Signal — Consumer AI Tool Roundup",
+      "url": "https://open.substack.com/pub/thesignal/p/6-ai-tools-for-the-people-still-doing",
+      "raw_path": "~/wiki/raw/newsletters/2026-05-20-6-ai-tools-for-the-people-still-doing-everything-in-chatgpt.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 消費者向けAIツール紹介（Claude Opus 4.7, Gemini Live, ChatGPT Images）。一部のプロンプティングパターンには価値があるが（Adaptive Thinking強制プロンプトなど）、全体的にプロダクトレビュー内容で中核AI技術知識ではない。有料ペイウォール後は未読。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "<20260520154014.3.e83ea5b7616d489d@mg-d1.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "10 Job-Search Rules That Just Broke",
+      "title": "The Skip — Career Podcast Transcript",
+      "url": "https://open.substack.com/pub/theskip/p/10-job-search-rules-that-just-broke",
+      "raw_path": "~/wiki/raw/newsletters/2026-05-20-10-job-search-rules-that-just-broke.md",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ キャリア・転職ポッドキャスト（Dana Ingraham/Harvey, Briana Ings/Atlassian, Pei-Chin Wang）。AIツールに言及あり（Harveyのエージェント、Slack統合など）が、AI技術自体の解説ではなく雇用市場の変化の話題。wiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

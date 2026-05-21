@@ -1,0 +1,177 @@
+{
+  "run_id": "20260521T071910Z",
+  "triage_timestamp": "2026-05-21T07:26:26.865389+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "decisions": [
+    {
+      "newsletter_id": "uid=115",
+      "subject": "6 AI tools for the people still doing everything in ChatGPT",
+      "source": "The Signal (thesignal@substack.com)",
+      "canonical_url": "https://open.substack.com/pub/thesignal/p/6-ai-tools-for-the-people-still-doing",
+      "relevance": "low",
+      "recommended_action": "skip",
+      "rationale": "Consumer-focused AI tool roundup (Claude Opus 4.7, Gemini Live, ChatGPT Images). Contains some useful Claude prompting patterns and MCP tool integration notes, but mostly product review, not core AI/LLM technology knowledge. Paywalled after first 3 tools.",
+      "candidates": []
+    },
+    {
+      "newsletter_id": "uid=116",
+      "subject": "10 Job-Search Rules That Just Broke",
+      "source": "The Skip (theskip@substack.com)",
+      "canonical_url": "https://open.substack.com/pub/theskip/p/10-job-search-rules-that-just-broke",
+      "relevance": "skip",
+      "recommended_action": "skip",
+      "rationale": "Career/job search podcast about senior PM job hunting in the AI era. Tangentially mentions AI tools in recruiting context, but not about AI/LLM technology itself. Outside wiki scope.",
+      "candidates": []
+    },
+    {
+      "newsletter_id": "uid=117",
+      "subject": "Everything important from Google I/O 2026",
+      "source": "beehiiv newsletter (uid=117)",
+      "canonical_url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+      "relevance": "critical",
+      "recommended_action": "take",
+      "rationale": "Google I/O 2026 major AI announcements: Gemini 3.5 Flash (4x faster, default model), Gemini Omni (multimodal world model), Gemini Spark (24/7 background AI agent), Googlebook laptop with Magic Pointer AI cursor, Intelligent Search Box redesign, Information Agents in Search, Docs Live, Managed Agents. These are core wiki topics spanning models, agents, and developer tooling.",
+      "candidates": [
+        {
+          "topic": "Gemini 3.5 Flash",
+          "type": "concept",
+          "priority": 5,
+          "note": "New default Gemini model; 4x faster than frontier models, half the cost"
+        },
+        {
+          "topic": "Gemini Spark",
+          "type": "concept",
+          "priority": 5,
+          "note": "24/7 background AI agent; runs while phone locked; US-only beta, AI Ultra $100/mo"
+        },
+        {
+          "topic": "Magic Pointer",
+          "type": "concept",
+          "priority": 5,
+          "note": "AI cursor that acts on what you point at; part of Googlebook intelligence system"
+        },
+        {
+          "topic": "Googlebook",
+          "type": "concept",
+          "priority": 4,
+          "note": "Chromebook successor — Android-based intelligence system with Gemini at core"
+        },
+        {
+          "topic": "Gemini Omni",
+          "type": "concept",
+          "priority": 5,
+          "note": "Multimodal world model; text/image/audio/video input → video output"
+        },
+        {
+          "topic": "Information Agents (Search)",
+          "type": "concept",
+          "priority": 4,
+          "note": "24/7 background agents scanning news/blogs/social media for user-specified topics"
+        },
+        {
+          "topic": "Managed Agents (Google AI Studio)",
+          "type": "concept",
+          "priority": 4,
+          "note": "Developer tooling for building and deploying agents"
+        }
+      ]
+    },
+    {
+      "newsletter_id": "uid=118",
+      "subject": "Railway: The Agent-Native Cloud — Jake Cooper",
+      "source": "Latent Space / swyx (swyx@substack.com)",
+      "canonical_url": "https://open.substack.com/pub/swyx/p/railway",
+      "relevance": "critical",
+      "recommended_action": "take",
+      "rationale": "Deep interview with Railway founder Jake Cooper on building an agent-native cloud platform. Covers: agent infrastructure needs (versioning beyond Git, observability at 1000x scale, CLI-first UX for agents), bare-metal strategy with 70% margins and 3-month payback, multi-cloud bursting, agent-native UX design (CLI vs Canvas, Central Station), and the thesis that agents are the next dominant software species. Highly relevant to AI agent infrastructure, cloud platforms, and agent developer tooling.",
+      "candidates": [
+        {
+          "topic": "Agent-Native Cloud",
+          "type": "concept",
+          "priority": 5,
+          "note": "Cloud platform designed for AI agents as first-class users; Railway's vision"
+        },
+        {
+          "topic": "Railway (platform)",
+          "type": "entity",
+          "priority": 5,
+          "note": "3M+ users, 35-person team, $124M raised; agent-native deployment platform"
+        },
+        {
+          "topic": "Jake Cooper",
+          "type": "entity",
+          "priority": 4,
+          "note": "Founder & Conductor at Railway; ex-Uber/Bloomberg; bare-metal infrastructure philosophy"
+        },
+        {
+          "topic": "Agent Infrastructure Requirements",
+          "type": "concept",
+          "priority": 5,
+          "note": "Versioning, observability, CLI handles, concurrency at 1000x human scale"
+        }
+      ]
+    },
+    {
+      "newsletter_id": "uid=119",
+      "subject": "Clicky.",
+      "source": "AI by Aakash (aibyaakash@substack.com)",
+      "canonical_url": "https://open.substack.com/pub/aibyaakash/p/clicky",
+      "relevance": "critical",
+      "recommended_action": "take",
+      "rationale": "Dense AI news roundup with multiple high-value items: (1) Clicky — Farza's free macOS AI assistant using Claude with screen capture + voice; (2) Google I/O coverage — Googlebook, Magic Pointer, Gemini 3.5 Flash; (3) Claude for Small Business launch; (4) Grok Build — xAI's terminal coding agent at $300/mo; (5) Claude Code agent view research preview; (6) Codex in ChatGPT mobile; (7) Isomorphic Labs $2.1B Series B; (8) Anthropic paying SpaceX $1.25B/month for compute. Multiple distinct wiki-worthy items.",
+      "candidates": [
+        {
+          "topic": "Clicky (app)",
+          "type": "entity",
+          "priority": 5,
+          "note": "Farza's free macOS AI assistant; Ctrl+Option voice + screenshot → Claude; blue triangle UI overlay"
+        },
+        {
+          "topic": "Claude for Small Business",
+          "type": "concept",
+          "priority": 4,
+          "note": "15 ready-to-run workflows in QuickBooks/PayPal/HubSpot/Canva; targets 44% of US GDP"
+        },
+        {
+          "topic": "Grok Build",
+          "type": "entity",
+          "priority": 4,
+          "note": "xAI terminal coding agent; Plan Mode, parallel subagents, 2M context; $300/mo SuperGrok Heavy"
+        },
+        {
+          "topic": "Claude Code Agent View",
+          "type": "concept",
+          "priority": 4,
+          "note": "Research preview: unified list of all active agent sessions for multi-agent management"
+        },
+        {
+          "topic": "Codex mobile",
+          "type": "concept",
+          "priority": 3,
+          "note": "Codex now in ChatGPT mobile app (preview); start/review/steer tasks from phone"
+        },
+        {
+          "topic": "Isomorphic Labs funding",
+          "type": "event",
+          "priority": 4,
+          "note": "$2.1B Series B led by Thrive Capital; AlphaFold-based drug design; clinical trials by end 2026"
+        },
+        {
+          "topic": "Anthropic SpaceX compute deal",
+          "type": "event",
+          "priority": 4,
+          "note": "Anthropic paying $1.25B/month to SpaceX for compute; SpaceX now ~$15B ARR hyperscaler"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total": 5,
+    "critical": 3,
+    "low": 1,
+    "skip": 1,
+    "take_count": 3,
+    "skip_count": 2,
+    "total_candidates": 20
+  }
+}

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-21 | Total pages: 2096 | Indexed entries: 1189 | Not in index: 846 |
+> Last updated: 2026-05-21 | Total pages: 2101 | Indexed entries: 1194 | Not in index: 841 |
 
 ## Entities (635 pages)
 
@@ -148,8 +148,9 @@
 - [[entities/claude-design]] — Anthropic Labs product for collaborative visual design, powered by Claude Opus 4.7's vision model. Released April 17, 2026 in research preview.
 - [[entities/claude-mythos]] — Anthropic's next-generation model, developed after . Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
 - [[entities/claude-orbit]] — Claude Orbit — Anthropic's proactive AI assistant, leaked May 5, 2026 inside Claude Cowork. Auto-generates briefings from Gmail, Slack, GitHub, Calendar, Drive, Figma without prompting. Roots in Claude Code leak's KAIROS/DREAM/ULTRAPLAN features.
-- [[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
-- [[entities/claris-filemaker-agentic-coding]] — Claris (Apple subsidiary) low-code platform. May 2026: announced as first-class target for agentic coding tools (Claude Code, Cursor, Codex). Ryan McCann (CEO). Opening to external AI agents rather than building proprietary AI.
+- [[[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
+- [[[entities/clicky]] — Clicky — Free macOS AI assistant by Farza. Voice + screen capture → Claude → blue triangle pointing. No account/API key needed. Built in 3 weeks. Same approach as Google Magic Pointer (independently discovered same week).
+- [[[entities/claris-filemaker-agentic-coding]] — Claris (Apple subsidiary)
 - [[entities/codex]] — OpenAI製のオープンソースAIコーディングエージェント。Apache-2.0、Rust製、79.3K GitHub Stars。GPT-5.5/5.4ネイティブ＋カスタムプロバイダ＋ローカルモデル対応。CLI/Desktop/IDE/Webのマルチサーフェス。ChatGPT Plus/Proに含まれ、サブスクリプション壁なし。
 - [[entities/cloudflare]] — Global cloud platform; Project Glasswing participant. Published Mythos Preview harness architecture (May 2026): Recon→Hunt→Validate→Gapfill→Dedupe→Trace→Feedback→Report. Also repositioning as "agentic cloud" with Agents SDK, Project Think.
 - [[entities/cloudflare-sandbox]] — Cloudflare's self-hosted sandbox for Claude Managed Agents (May 2026). Dual sandbox primitives (microVM + V8 isolates), proxy-based zero-trust credential brokering, Browser Run, email tools, Workers AI integration.
@@ -402,6 +403,7 @@
 - [[entities/project-mariner]] — Google's autonomous web browsing AI agent (Chrome extension). Shut down in May 2026 due to poor performance and high costs. See: [[concepts/google-project-mariner-shutdown]]
 - [[entities/qwen3-6-plus]] — Alibabaのエージェント指向言語モデル。実世界の自律的ワークフローを対象としている。
 - [[entities/rachelbythebay-com]] — **Blog** | rachelbythebay.com/w |
+- [[entities/railway]] — Railway — Agent-native cloud platform. 3M users, 35-person team, $124M raised. Own-metal data centers with 70% margins. Multi-cloud bursting. Coding agent spend ~$200K/month. Jake Cooper.
 - [[entities/rahul]] — **URL:** https://rahul.gs/
 - [[entities/rakhim-exotext-com]] — **Rakhim Davletkaliyev** is a staff engineer at concepts/iqm-quantum-computers, a programming educator, author, and philosophical tech writer. He blogs at concepts/rakhim.exotext.com (with a web lo...
 - [[entities/ramp-labs]] — AI research company focused on multi-agent system efficiency. Created Latent Briefing — KV cache compaction for efficient memory sharing between agents.
@@ -671,6 +673,7 @@
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Agentic Engineering: Cognition and Devin Workflows — Cognitive architectures for agentic engineering: Devin's approach and alternatives
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns — Design patterns for agentic software engineering: planning, execution, verification loops
 - [[concepts/agentic-manual-testing]] — Agentic Manual Testing — Using AI agents to automate exploratory and manual testing workflows
+- [[concepts/agent-native-cloud]] — Agent-Native Cloud — Infrastructure paradigm designed for AI agents: version control beyond Git, observability at 1000x, orchestration beyond K8s, safe production forks, self-replicating infrastructure. Championed by Railway (Jake Cooper).
 - [[concepts/agent-security-patterns]] — Agent Security Patterns — Security best practices for AI agent deployments: sandboxing, authentication, authorization, threat modeling
 - [[concepts/agent-skills-skillmd]] — Agent Skills/SKILL.md — Agent skill definition and discovery format: SKILL.md frontmatter, skill retrieval, execution architecture
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
@@ -701,7 +704,8 @@
 - [[concepts/ai-evals]] — AI Evals (AI Evaluation Systems)
 - [[concepts/ai-index-report-2026]] — 2026 AI Index Report
 - [[concepts/ai-coding-agent-criticism]] — AI Coding Agent Criticism
-- [[concepts/ai-ready-apis]] — AI-Ready APIs（AIエージェント向けAPI設計）。AIエージェントをAPI消費者として想定したAPI設計の概念。機械可読スキーマ、エージェント認識セキュリティ、コントラクトテストの重要性。Postman 2025調査（5,700人対象）のAI-APIギャップ分析を含む。
+- [[[concepts/ai-ready-apis]] — AI-Ready APIs（AIエージェント向けAPI設計）。AIエージェントをAPI消費者として想定したAPI設計の概念。機械可読スキーマ、エージェント認識セキュリティ、コントラクトテストの重要性。Postman 2025調査（5,700人対象）のAI-APIギャップ分析を含む。
+- [[[concepts/ai-supply-chain-security]] — AI Supply Chain Security — Four supply-chain incidents in 50 days (Apr-May 2026): Codex CI injection, LiteLLM/Mercor breach, Claude Code source map leak, TanStack worm (84 malicious npm packages with valid SLSA L3). Attacks target release pipelines, not models. VentureBeat's 7-class attack surface framework.
 - [[concepts/ai-services-joint-ventures]] — **AI Services JVs (May 2026)**: OpenAI ($4B "The Deployment Company") and Anthropic ($1.5B Blackstone/Goldman JV) create PE-backed ventures to buy engineering services/consulting firms. Explicitly mirrors Palantir's embed-engineers-in-customer-ops model. Marks the shift from API-first to full-stack services enterprise AI. → Reuters scoop.
 - [[concepts/ai-memory-systems]] — AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較
 - [[concepts/ai-output-format-progression]] — AI出力フォーマット進化（Karpathy）: raw text → markdown → HTML → interactive neural videos/simulations。Audio in, Vision out。HTMLが次期デフォルト出力形式に。Thariq Shihiparの8カテゴリのHTMLアーティファクトユースケースを含む。
@@ -1193,13 +1197,14 @@
 - [[concepts/chaos-engineering]] — Chaos Engineering for Microservices
 - [[concepts/chaos-engineering-for-microservices]] — Chaos Engineering for Microservices (specific)
 
-## Events (5 pages)
+## Events (6 pages)
 
 - [[events/openai-may-2026-reorg]] — OpenAIの2026年5月製品再編。Greg Brockmanが全製品を統括、ChatGPTとCodexを統合、Thibault Sottiauxがコア製品責任者に。Fidji Simoは病欠。
 - [[events/anthropic-code-w-claude-2026]] — Anthropic Code w/ Claude 2026 — AnthropicがClaude Codeを強化する新製品発表（2026-05-06）
 - [[events/distillation-attacks-2026]] — Anthropic Accuses Chinese Labs of Industrial-Scale Distillation Attacks（2026-04-24）
 - [[events/openai-musk-trial-verdict-2026]] — OpenAI vs Musk裁判評決（2026-05-18）— 陪審員満場一致でMuskの請求棄却。時効が理由で、OpenAIの正当性には踏み込まず。Gary Marcus「世紀のAI裁判、竜頭蛇尾に終わる」
 - [[events/google-io-2026]] — Google I/O 2026（2026-05-20）— Gemini Spark（個人AIエージェント）、Antigravityプラットフォーム、Gemini 3.5 Flash発表。OpenCLaw対抗。Gemini CLI→Antigravity CLI移行（OSS→プロプライエタリ）。エージェントセキュリティ（prompt injection）懸念。
+- [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B (May 2026) — Thrive Capital-led, AI drug discovery. Targeting human clinical trials by end of 2026. Demis Hassabis.
 
 ## Comparisons (18 pages)
 

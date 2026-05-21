@@ -2,7 +2,7 @@
 title: "Google (AI/ML)"
 type: entity
 created: 2026-04-25
-updated: 2026-05-20
+updated: 2026-05-21
 tags: [company, lab, product, platform, infrastructure]
 aliases: ["Google DeepMind", "Google Research"]
 sources: [
@@ -175,6 +175,27 @@ At Google I/O 2026, Google announced a major expansion of the Gemini platform, p
 - **3.2 quadrillion tokens/month** processed (7× year-over-year growth)
 - **900M+ monthly active users** on Gemini app
 - Google's AI compute: ~25% of global AI compute capacity
+
+
+
+### SynthID — Industry-Wide Provenance Standard (May 2026)
+
+Google's **SynthID** watermarking technology for AI-generated content was adopted by OpenAI, Nvidia, and other major AI companies, moving from a single-lab trust feature toward an **industry-wide provenance layer**:
+
+| Aspect | Detail |
+|--------|--------|
+| **Technology** | Invisible watermarking for AI-generated images, audio, and text |
+| **Adopters** | OpenAI, Nvidia, and others |
+| **Significance** | Provenance moves from one lab's trust feature to a wider ecosystem layer |
+| **Context** | Display-based disclosure (labels, tags) cannot keep pace with generative media volume — SynthID provides machine-readable provenance |
+| **Announced at** | Google I/O 2026 |
+
+**Implications**:
+- **Standardization pressure**: With OpenAI and Nvidia adopting, SynthID has critical mass to become a de facto standard
+- **Regulatory alignment**: Watermarking requirements in the EU AI Act and potential US regulation make SynthID's ecosystem adoption strategically important
+- **Platform accountability**: Machine-readable provenance enables automated content moderation and attribution at scale
+
+Source: Superintel Google I/O 2026 newsletter (May 2026)
 
 ### Significance
 

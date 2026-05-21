@@ -1,0 +1,128 @@
+{
+  "archived_at": "2026-05-21T07:38:11.483397+00:00",
+  "triage_run_id": "20260521T073805Z",
+  "source": "blog",
+  "summary_ja": "blog-ingestチェックポイント（2026-05-21 07:00）から12件の候補をトリアージ。2件のtake（seangoedecke.com新エンティティ作成・agentic-engineering強化、SpaceX S-1のAnthropic $1.25B/月契約でanthropic.md強化）、2件のreference（simonwillison.net Google I/O解説でsimon-willison.md強化、The Verge Google I/O詳細でgoogle.md強化）、8件のskip（garymarcus/geohotは既にエンティティページにcapture済み、残りは非AIトピックまたは空ファイル）。",
+  "decisions": [
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "Google I/O, Gemini Spark, Antigravity",
+      "url": "https://simonwillison.net/2026/May/20/google-io/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-may-20-google-io--933c8dde.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ simon-willison.mdには「May 2026 Updates」節があるがGoogle I/Oの言及なし。Simonの独自視点（Gemini Sparkのプロンプトインジェクションリスク懸念、Antigravity CLIがオープンソースGemini CLIを6月18日に置き換え、Antigravity SDKのGoバイナリ+Pythonラッパー構成）は既存記事からは得られない貴重な解説。gemini.mdとgoogle.mdのI/O 2026節はモデル/プラットフォーム発表をカバー済みだが、Simonのセキュリティ分析はsimon-willison.mdに追加価値あり。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": "# Google I/O, Gemini Spark, Antigravity\nSource: https://simonwillison.net/2026/May/20/google-io/#atom-everything\nIt's hard to find much to write about Google I/O this year because I have a policy of not writing about anything that I can't try out myself, and a lot of the big announcements are \"comin"
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "daringfireball.net (via The Verge)",
+      "title": "The 13 biggest announcements at Google I/O 2026",
+      "url": "https://www.theverge.com/tech/933415/google-io-2026-biggest-announcements-ai-gemini?view_token=eyJhbG...wJL0",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/theverge.com--tech-933415-google-io-2026-biggest-announcements-ai-gemini--e73abf5d.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ google.mdのI/O 2026節はモデル発表（Gemini 3.5 Flash, Omni, Antigravity 2.0, Spark）をカバー済みだが、以下のプロダクト詳細は未収録：Universal Cart（統合ショッピングカート）、Gmail Live（音声駆動検索）、Picsアプリ（画像編集）、Neural Expressiveリデザイン、Project Aura/Xrealスマートグラス（Warby Parker/Gentle Monster）、vibe-coding Androidアプリ→Play Store公開、Search情報エージェント、ジェネレーティブUI/ミニアプリ、AI Ultra価格改定（$100/$200）、Beam/Sophieビデオエージェント。google.md強化に有用。",
+      "candidate_wiki_path": "entities/google.md",
+      "body_excerpt": "# The 13 biggest announcements at Google I/O 2026\nSource: https://www.theverge.com/tech/933415/google-io-2026-biggest-announcements-ai-gemini?view_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6Ik5tNTBSc0hxRXQiLCJwIjoiL3RlY2gvOTMzNDE1L2dvb2dsZS1pby0yMDI2LWJpZ2dlc3QtYW5ub3VuY2VtZW50cy1haS1nZW1pbmkiLCJleHAiOjE3Nz"
+    },
+    {
+      "item_id": "blog-3",
+      "source": "blog",
+      "source_name": "garymarcus.substack.com",
+      "title": "Could generative AI turn out to be the tech industry's Vietnam?",
+      "url": "https://garymarcus.substack.com/p/could-generative-ai-could-turn-out",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/garymarcus.substack.com--p-could-generative-ai-could-turn-out--0880f6f7.md",
+      "recommended_action": "skip",
+      "reason_ja": "gary-marcus.mdエンティティページに既に「Generative AI: The Tech Industry's Vietnam? (May 2026)」節として完全収録済み。記事URLもsourcesに記載。updated: 2026-05-21。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Could generative AI turn out to be the tech industry’s Vietnam? And could public backlash lead AI to a better place?\nSource: https://garymarcus.substack.com/p/could-generative-ai-could-turn-out\nAs I am sure you have heard by now, the\nbacklash against AI\ni keep nattering on about is growing fast. A"
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "geohot.github.io",
+      "title": "the singularity is nearer",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/05/20/what-will-better-mean.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/geohot.github.io--blog-jekyll-update-2026-05-20-what-will-better-mean-html--a09e7f93.md",
+      "recommended_action": "skip",
+      "reason_ja": "george-hotz.mdエンティティページに既に「What Will Better AI Mean? / 'the singularity is nearer' (May 2026)」節として収録済み。Mythos参照、AI has no moat論、効率性と趣味の時代への移行をカバー。updated: 2026-05-21。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# the singularity is nearer\nSource: https://geohot.github.io//blog/jekyll/update/2026/05/20/what-will-better-mean.html\nI thought about posting\nthis paper\nbut rebranding it as the Claude Mythos technical report. As far as I can tell, there’s no secret tricks the US frontier labs have, and that basica"
+    },
+    {
+      "item_id": "blog-2",
+      "source": "blog",
+      "source_name": "joanwestenberg.com",
+      "title": "Nobody is destined for greatness.",
+      "url": "https://www.joanwestenberg.com/nobody-is-destined-for-greatness/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/joanwestenberg.com--nobody-is-destined-for-greatness--6b9e473f.md",
+      "recommended_action": "skip",
+      "reason_ja": "AI関連コンテンツなし。努力と成長マインドセットに関する一般的なエッセイ。Demosthenes、Mozart、Ted Williams、Dysonの例を用いた自己啓発記事。AI/LLM/AI Agentエコシステムに無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Nobody is destined for greatness.\nSource: https://www.joanwestenberg.com/nobody-is-destined-for-greatness/\nDemosthenes lost his first appearance before the Athenian assembly. His voice came out thin and failed him mid-sentence, and the crowd laughed him off the platform. Plutarch tells us he walke"
+    },
+    {
+      "item_id": "blog-4",
+      "source": "blog",
+      "source_name": "micahflee.com",
+      "title": "Read Cindy Cohn's new book, Privacy's Defender: My Thirty-Year Fight Against Digital Surveillance",
+      "url": "https://micahflee.com/read-cindy-cohns-new-book-privacys-defender-my-thirty-year-fight-against-digital-surveillance/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/micahflee.com--read-cindy-cohns-new-book-privacys-defender-my-thirty-year-fight--ef1f622e.md",
+      "recommended_action": "skip",
+      "reason_ja": "ファイルが空（0バイト）。プライバシー監視に関する書籍紹介であり、AI/LLMエージェントトピックに直接的に関連しない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "dfarq.homeip.net",
+      "title": "Kaypro II launched May 20, 1982",
+      "url": "https://dfarq.homeip.net/kaypro-ii-launched-may-20-1982/?utm_source=rss&utm_medium=rss&utm_campaign=kaypro-ii-launched-may-20-1982",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dfarq.homeip.net--kaypro-ii-launched-may-20-1982--d368bbf6.md",
+      "recommended_action": "skip",
+      "reason_ja": "レトロコンピューティング記事。Kaypro II（CP/Mポータブルコンピュータ、1982年発売）の歴史的解説。AI/LLM/AI Agentエコシステムに無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Kaypro II launched May 20, 1982\nSource: https://dfarq.homeip.net/kaypro-ii-launched-may-20-1982/?utm_source=rss&utm_medium=rss&utm_campaign=kaypro-ii-launched-may-20-1982\nOn May 20, 1982, Kaypro shipped its very successful Kaypro II computer, a portable computer that ran CP/M and its associated so"
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "xeiaso.net",
+      "title": "Making sure you're not a bot!",
+      "url": "https://xeiaso.net/shitposts/no-way-to-prevent-this/CVE-2026-45584/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/xeiaso.net--shitposts-no-way-to-prevent-this-cve-2026-45584--b215f807.md",
+      "recommended_action": "skip",
+      "reason_ja": "実質的なコンテンツなし（471バイト）。Anubis/CAPTCHAページがスクレイピングされたのみ。bot検証ページで記事コンテンツが取得不可。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Making sure you're not a bot!\nSource: https://xeiaso.net/shitposts/no-way-to-prevent-this/CVE-2026-45584/\nProtected by\nAnubis\nFrom\nTecharo\n. Made with ❤️ in 🇨🇦.\nMascot design by\nCELPHASE\n.\nThis website is running Anubis version\nv1.25.0-51-gb57508a\n."
+    },
+    {
+      "item_id": "blog-11",
+      "source": "blog",
+      "source_name": "devblogs.microsoft.com/oldnewthing",
+      "title": "The classic TreeView control lets me sort by name or by lParam, but why not both?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260520-00/?p=112343",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/devblogs.microsoft.com--oldnewthing-20260520-00--1868a16d.md",
+      "recommended_action": "skip",
+      "reason_ja": "Win32 TreeViewコントロールのソートに関するWindows APIプログラミング記事。AI/LLM/AI Agentエコシステムに無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# The classic TreeView control lets me sort by name or by lParam, but why not both?\nSource: https://devblogs.microsoft.com/oldnewthing/20260520-00/?p=112343\nThe Win32 TreeView control in the common controls library provides two ways of sorting elements.\nTVM_­SORT­CHILDREN\n: Sorts children alphabetic"
+    },
+    {
+      "item_id": "blog-12",
+      "source": "blog",
+      "source_name": "buttondown.com/hillelwayne",
+      "title": "Assumptions weaken properties",
+      "url": "https://buttondown.com/archive/assumptions-weaken-properties/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/buttondown.com--hillelwayne-archive-assumptions-weaken-properties--f9a57ab2.md",
+      "recommended_action": "skip",
+      "reason_ja": "形式手法/論理に関する記事。表明（assumption）が性質（property）を弱めることの数学的証明。形式的検証（formal verification）に関連するが、AI/LLMエージェントシステムに直接関係せず。Hillel Wayneは形式手法の専門家だが、本記事にはAIトピックは含まれない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Assumptions weaken properties\nSource: https://buttondown.com/hillelwayne/archive/assumptions-weaken-properties/\nIn\nsome tests are stronger than others\n, I defined\nSTRONG => WEAK\nto mean \"any system passing test STRONG is also guaranteed to pass WEAK\". This uses the logical implication operator, de"
+    }
+  ]
+}

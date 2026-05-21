@@ -3,6 +3,24 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-21] newsletter-wiki-ingest | Batch ingest: 5 new pages, 5 entity enrichments
+
+- **Pipeline**: newsletter-wiki-ingest (20260521T074000Z) — 13 take items → 5 new pages + 5 entity enrichments
+- **Sources**: Railway interview (swyx), Clicky newsletter (Aakash), Superintel Google I/O roundup
+- **New pages created** (5):
+  - [[entities/railway]] — Railway platform: 3M users, own-metal DCs, agent-native vision. Source: Jake Cooper interview
+  - [[concepts/agent-native-cloud]] — Infrastructure paradigm for AI agents: beyond Git, beyond K8s, safe production forks
+  - [[entities/clicky]] — Free macOS AI assistant by Farza: voice + screen capture → Claude → blue triangle pointing
+  - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B (Thrive Capital, Demis Hassabis)
+  - [[concepts/ai-supply-chain-security]] — 4 supply-chain incidents in 50 days: Codex CI injection, LiteLLM/Mercor, Claude Code leak, TanStack worm
+- **Entity pages enriched** (5):
+  - [[entities/anthropic]] — Claude for Small Business (15 workflows in QuickBooks/PayPal/HubSpot), KPMG Global Alliance (276K workforce), SpaceX $1.25B/month compute specificity
+  - [[entities/xai]] — Grok Build terminal coding agent ($300/mo SuperGrok Heavy, 2M context, Plan Mode)
+  - [[entities/openai-codex]] — Codex Mobile (ChatGPT mobile app preview)
+  - [[entities/claude-code]] — Agent View (unified session list, /goal, /loop, /schedule)
+  - [[entities/google]] — SynthID adopted by OpenAI/Nvidia as industry provenance standard
+- **Skipped** (5): The Signal (consumer AI tools), The Skip (career podcast — non-AI), 2 reference items (data center backlash, Erdős problem), thariq-shihipar HTML article (already covered in entity page)
+
 ## [2026-05-21] ingest | Blog ingest batch: 4 raw articles saved, 2 new wiki pages, 3 entities enriched
 - **Pipeline**: blog-ingest (20260521T070045Z) — 33 new articles detected, 20 from tracked blogs
 - **Raw articles saved** (4):

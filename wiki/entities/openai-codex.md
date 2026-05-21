@@ -152,6 +152,23 @@ $browser（サイドパネル内ブラウザ：検証・注釈）
 
 Codexモバイルアプリにより、Macで開始したタスクを外出先のスマートフォンから継続可能。ローカル環境（ファイル、権限、セットアップ）はMac上に残り、ユーザーは外出先で次のステップを承認・方向転換できる。
 
+
+
+### Codex Mobile (May 2026)
+
+Codex expanded to the **ChatGPT mobile app** in preview:
+
+| Feature | Detail |
+|---------|--------|
+| **Platform** | ChatGPT mobile app (iOS/Android) |
+| **Functionality** | Start, steer, and review Codex tasks from phone |
+| **Status** | Preview |
+| **Significance** | Expands Codex beyond desktop to mobile form factor for task management on the go |
+
+**Use case**: Start a complex coding task on desktop, then monitor progress, approve steps, or redirect the agent from your phone while commuting. The local environment (files, permissions, setup) remains on the desktop — the mobile app provides remote control and oversight.
+
+Source: Jason Liu X article (May 2026), Aakash's Clicky newsletter
+
 ## プロンプト設計の特徴
 
 [[concepts/codex-prompting]] 参照。主な特徴：
