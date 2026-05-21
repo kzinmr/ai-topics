@@ -1,6 +1,6 @@
 {
-  "checkpoint_run_id": "20260521T000001Z",
-  "summary_ja": "Latent Space Podcastの2つのエピソード（Marc Andreessen回 + Notion Simon Last/Sarah Sachs回）がSubstackの異なる追跡URLパラメータで5ファイルとして取り込まれていた。内容は既に全エンティティページで包括的にカバー済み。全5件をskipとしてアーカイブ。",
+  "checkpoint_run_id": "20260521T080029Z",
+  "summary_ja": "Latent Space PodcastのNotion Token Townエピソード（Simon Last & Sarah Sachs）がSubstackの異なる追跡URLパラメータで複数ファイルとして取り込まれていた。内容は既に全エンティティページ（entities/notion.md, entities/simon-last.md, entities/sarah-sachs.md）で包括的にカバー済み。全件をskipとしてアーカイブ。",
   "decisions": [
     {
       "filename": "substack.com--app-link-post--61d8bf28.md",
@@ -41,6 +41,46 @@
       "recommended_action": "skip",
       "reason": "Identical content to d67e2320. Only play_card_play_button tracking parameter differs.",
       "body_excerpt": "Notion Token Town: 5 Rebuilds, 100+ Tools"
+    },
+    {
+      "filename": "substack.com--app-link-post--ad734959.md",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194195821&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=***&utm_source=substack&utm_medium=email&utm_content=play_card_show_title#play",
+      "topic": "Notion Token Town podcast - Simon Last & Sarah Sachs (duplicate tracking URL - play_card_show_title)",
+      "recommended_action": "skip",
+      "reason": "Already covered in entities/simon-last.md, entities/sarah-sachs.md, entities/notion.md. Duplicate tracking URL variant of same episode.",
+      "body_excerpt": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future - Simon Last & Sarah Sachs of Notion"
+    },
+    {
+      "filename": "substack.com--app-link-post--a0d76832.md",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194195821&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=***&utm_source=substack&utm_medium=email&utm_content=play_card_show_logo#play",
+      "topic": "Notion Token Town podcast (duplicate tracking URL - play_card_show_logo)",
+      "recommended_action": "skip",
+      "reason": "Identical content to ad734959. Only play_card_show_logo tracking parameter differs.",
+      "body_excerpt": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future - Simon Last & Sarah Sachs of Notion"
+    },
+    {
+      "filename": "substack.com--app-link-post--d5ed5d9c.md",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194195821&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=***&utm_source=substack&utm_medium=email&utm_content=play_card#play",
+      "topic": "Notion Token Town podcast (duplicate tracking URL - play_card)",
+      "recommended_action": "skip",
+      "reason": "Identical content to ad734959. Only play_card tracking parameter differs.",
+      "body_excerpt": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future - Simon Last & Sarah Sachs of Notion"
+    },
+    {
+      "filename": "substack.com--app-link-post--a8cd8af3.md",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194195821&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=***&utm_content=listen_now_button",
+      "topic": "Notion Token Town podcast (duplicate tracking URL - listen_now_button)",
+      "recommended_action": "skip",
+      "reason": "Identical content to ad734959. Only listen_now_button tracking parameter differs.",
+      "body_excerpt": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future - Simon Last & Sarah Sachs of Notion"
+    },
+    {
+      "filename": "substack.com--app-link-post--25ef0aa6.md",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194195821&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=***",
+      "topic": "Notion Token Town podcast (duplicate tracking URL - email-post-title)",
+      "recommended_action": "skip",
+      "reason": "Identical content to ad734959. Only email-post-title tracking parameter differs.",
+      "body_excerpt": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future - Simon Last & Sarah Sachs of Notion"
     }
   ]
 }
