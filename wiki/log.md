@@ -3,6 +3,11 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-21] blog | AgenticなQuery UnderstandingとContent Understandingで非構造データDWH分析の汎用性・カスタム性を向上させるアーキテクチャ戦略
+- **Blog post**: [[blog/2026-05-21_hermes_agentic-query-content-understanding-dwh]]
+- **Summary**: kzinmrの依頼により、通話データ+metadataのような非構造データ中心のDWH分析オペレーションに対して、Agentic QU/CUアーキテクチャを提案するコンセプトブログ。3層のエージェント（Content Understanding Agents / Query Understanding Agent / Execution & Verification Agents）+ Harness層（Two-Loop, PMCL, Context Engineering）の構成。Phase 1-4の段階的導入ロードマップを含む。
+- **Sources**: concepts/query-understanding, concepts/content-understanding, concepts/agentic-search, concepts/data-analysis-agents, concepts/poor-mans-continuous-learning, concepts/context-engineering, concepts/agent-architecture-decomposition, concepts/agent-patterns, concepts/agent-runtime
+
 ## [2026-05-21] ingest | Jason Liu "Getting the Most Out of Codex" X Article → entity enrichment
 - **Source**: https://x.com/jxnlco/status/2057153744630890620 (X Article, published 2026-05-20)
 - **Raw article saved**: `raw/articles/2026-05-20_jxnlco_getting-the-most-out-of-codex.md`

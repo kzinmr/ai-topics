@@ -1,0 +1,46 @@
+{
+  "checkpoint_run_id": "20260521T000001Z",
+  "summary_ja": "Latent Space Podcastの2つのエピソード（Marc Andreessen回 + Notion Simon Last/Sarah Sachs回）がSubstackの異なる追跡URLパラメータで5ファイルとして取り込まれていた。内容は既に全エンティティページで包括的にカバー済み。全5件をskipとしてアーカイブ。",
+  "decisions": [
+    {
+      "filename": "substack.com--app-link-post--61d8bf28.md",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193082940",
+      "topic": "Marc Andreessen podcast - Death of Browser, Pi + OpenClaw",
+      "recommended_action": "skip",
+      "reason": "Already covered in entities/marc-andreessen.md, entities/openclaw.md, and concepts/ pages. Duplicate tracking URL variant of same episode.",
+      "body_excerpt": "Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why This Time Is Different"
+    },
+    {
+      "filename": "substack.com--app-link-post--39cab743.md",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193082940",
+      "topic": "Marc Andreessen podcast (duplicate tracking URL)",
+      "recommended_action": "skip",
+      "reason": "Identical content to 61d8bf28. Only play_card_duration tracking parameter differs.",
+      "body_excerpt": "Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw"
+    },
+    {
+      "filename": "substack.com--app-link-post--d67e2320.md",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194195821",
+      "topic": "Notion Token Town podcast - Simon Last & Sarah Sachs",
+      "recommended_action": "skip",
+      "reason": "Already covered in entities/simon-last.md, entities/sarah-sachs.md, entities/notion.md. Duplicate tracking URL variant of same episode.",
+      "body_excerpt": "Notion Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future"
+    },
+    {
+      "filename": "substack.com--app-link-post--4e26d34a.md",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194195821",
+      "topic": "Notion Token Town podcast (duplicate tracking URL)",
+      "recommended_action": "skip",
+      "reason": "Identical content to d67e2320. Only play_card_duration tracking parameter differs.",
+      "body_excerpt": "Notion Token Town: 5 Rebuilds, 100+ Tools"
+    },
+    {
+      "filename": "substack.com--app-link-post--092289ee.md",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194195821",
+      "topic": "Notion Token Town podcast (duplicate tracking URL)",
+      "recommended_action": "skip",
+      "reason": "Identical content to d67e2320. Only play_card_play_button tracking parameter differs.",
+      "body_excerpt": "Notion Token Town: 5 Rebuilds, 100+ Tools"
+    }
+  ]
+}
