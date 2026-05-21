@@ -3,6 +3,13 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-21] ingest | Jason Liu "Getting the Most Out of Codex" X Article → entity enrichment
+- **Source**: https://x.com/jxnlco/status/2057153744630890620 (X Article, published 2026-05-20)
+- **Raw article saved**: `raw/articles/2026-05-20_jxnlco_getting-the-most-out-of-codex.md`
+- **Updated entity**: [[entities/jason-liu]] — Added "Getting the Most Out of Codex (May 2026)" section with capability catalog table (durable threads, voice input, steering, queuing, $browser/@chrome/@computer, MCP+Connectors, Skills, mobile, thread automations, Goals, side panel, shared memory). Added human-in-the-loop architectural insight. New tags: agent-harness, workflow, human-in-the-loop.
+- **Updated entity**: [[entities/openai-codex]] — Added comprehensive "Codex App: Human-in-the-Loop Capabilities" section (64 lines) covering: 制御モデル (Steering/Queuing/Voice input), リーチレイヤー ($browser/@chrome/@computer tool hierarchy + MCP + Skills), 長時間実行と自律性 (Durable threads/Thread automations/Goals), サイドパネル (4 roles + effective surfaces), 共有メモリ (Obsidian vault + AGENTS.md + Codex Memories + Chronicle), モバイル (Work from Anywhere). New tags: human-in-the-loop, workflow, voice-ai. Added [[entities/jason-liu]] and [[concepts/codex-goal]] to 関連トピック.
+- **Index updated**: Updated descriptions for [[entities/jason-liu]] and [[entities/openai-codex]] with new capabilities.
+
 ## [2026-05-20] skeleton-enrich-daily | Daily skeleton enrichment — no skeletons found, enriched 2 L1 entities
 - **Status**: No `status: skeleton` entity pages found. Enriched 2 `status: L1` entity pages to `L2`.
 - **Enriched**: [[entities/roocode]] — Major status update: extension shut down May 15, 2026. Added project timeline, shutdown details (Roomote pivot), community fork (Zoo Code, 453 stars), alternative comparisons (Cline, Kilo Code, Continue.dev), v3.53.0 features (GPT-5.5, Claude Opus 4.7, checkpoint navigation), updated stats (23.9K stars, 3.2K forks, 290 contributors), 3M installs, architecture lineage, and v3.51.0 slash command skills.

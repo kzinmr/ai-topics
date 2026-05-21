@@ -4,7 +4,7 @@ description: "Creator of Instructor library and Staff ML Engineer; formerly Stit
 url: https://jxnl.co
 type: entity
 created: 2026-04-13
-updated: 2026-05-20
+updated: 2026-05-21
 tags:
   - person
   - open-source
@@ -14,6 +14,9 @@ tags:
   - evaluation
   - rag
   - coding-agents
+  - agent-harness
+  - workflow
+  - human-in-the-loop
 aliases:
   - jxnl
   - jxnlco
@@ -25,6 +28,7 @@ sources:
   - https://x.com/jxnlco
   - raw/newsletters/2026-05-19-can-i-get-my-agents-on-the-phone.md
   - raw/articles/2026-05-18_jxnl-six-levels-codex-morning-brief.md
+  - raw/articles/2026-05-20_jxnlco_getting-the-most-out-of-codex.md
 ---
 
 # Jason Liu (@jxnlco)
@@ -131,6 +135,29 @@ The framework starts with a simple morning brief and ends with a miniature opera
 - Subagents can parallelize searches once the brief has enough moving parts
 
 Source: [[raw/articles/2026-05-18_jxnl-six-levels-codex-morning-brief.md]]
+
+### Getting the Most Out of Codex (May 2026)
+
+Liu published a comprehensive guide to Codex's expanding surface area, arguing that Codex is evolving from a narrow coding assistant into **"a system for getting computer work done."** The article catalogs the full Codex app capability set:
+
+| Capability | Description |
+|-----------|-------------|
+| **Durable threads** | Persistent workspaces that survive across sessions; pinned threads with Command-1~9 shortcuts for recurring workflows (Chief of Staff, release, docs review) |
+| **Voice input** | Built-in voice for rough, unpolished thoughts and meeting transcripts that preserve uncertainty and emphasis better than summaries |
+| **Steering** | Interrupting in-flight tasks with corrections before the current step finishes |
+| **Queuing** | Adding next-task instructions without interrupting current work |
+| **$browser / @chrome / @computer** | Layered reach: in-app browser, signed-in Chrome, desktop GUI — extending Codex beyond the repo |
+| **MCP + Connectors** | Slack, Gmail, Calendar integration — tasks often arrive as messages before they become code |
+| **Skills** | Reusable packaged workflows Codex can replay without relearning |
+| **Mobile** | Continue threads from phone while local environment stays on Mac |
+| **Thread automations** | Heartbeat-style recurring wake-up calls returning to the same thread on a schedule |
+| **Goals** | Long-running tasks with measurable finish lines and verifiers (test suites, benchmarks, E2E workflows) |
+| **Side panel** | In-place artifact review for code, decks, PDFs, browser pages, spreadsheets — inspect, annotate, revise without context switch |
+| **Shared memory** | Obsidian vault (file-based durable context) + Codex Memories + Chronicle for recall across threads |
+
+Key architectural insight: **Human-in-the-loop isn't a fallback — it's the design surface.** Steering, queuing, side panel annotation, and "draft but don't send" are all explicit control primitives that keep the user close to the work while it unfolds. Thread automations and Goals provide async execution that continues while the user is away, but always with the human as the final decision-maker.
+
+Source: [[raw/articles/2026-05-20_jxnlco_getting-the-most-out-of-codex.md]]
 
 ## Cross-References
 

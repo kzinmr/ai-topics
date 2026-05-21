@@ -275,7 +275,7 @@
 - [[entities/ivan-burazin]] — CEO of Daytona. Coined "Headless SaaS" — SaaS rebuilt with agent-first APIs, no GUI.
 - [[entities/jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of **Bun** — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining...
 - [[entities/ivan-leo]] — Ivan Leo — Google DeepMind, ex-Manus. Co-hosted "Building Your Own OpenClaw from Scratch" workshop with Hugo Bowne-Anderson. Self-extending agents, agent architecture, live coding education. [[raw/articles/2026-02-28_substack_agents-that-build-themselves]]
-- [[entities/jason-liu]] — Jason Liu (@jxnlco) — Creator of Instructor library (6M+ monthly downloads, cited by OpenAI). DX Engineer at OpenAI (Codex team). Former Staff ML Engineer at Stitch Fix. Context engineering, RAG systems, structured outputs.
+- [[entities/jason-liu]] — Jason Liu (@jxnlco) — Creator of Instructor library (6M+ monthly downloads, cited by OpenAI). DX Engineer at OpenAI (Codex team). Former Staff ML Engineer at Stitch Fix. Context engineering, RAG systems, structured outputs. Published "Getting the Most Out of Codex" (May 2026): cataloging Codex app capabilities — durable threads, voice/steering/queuing, side panel, shared memory, automations.
 - [[entities/jay-alammar]] — **Blog** | jalammar.github.io | Visual ML explainer. "The Illustrated Transformer", "The Illustrated Word2Vec" — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
 - [[entities/flue]] — Flue — TypeScript framework for building Claude Code-style coding agents. Announced May 2026.
 - [[entities/cursor-ai]] — Cursor AI — AI-powered code editor and coding agent platform. CI-fix agents monitor GitHub and auto-fix CI failures. SpaceX holds acquisition right for $60B.
@@ -374,7 +374,7 @@
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml programmer and technology writer.
 - [[entities/openai-cua]] — OpenAIの**CUA（Computer-Using Agent）**モデルは、GPT-4oのビジョン機能と強化学習を組み合わせて、スクリーンショットを見てGUIを操作するエージェント。2025年1月に「Operator」として公開され、2025年7月にChatGPTエージェントに完全統合された。
 - [[entities/openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
-- [[entities/openai-codex]] — OpenAIのAIコーディングエージェント。CLIベースOSS、gpt-5.3-codexモデル。自律実行・コンパクション。Codex for Work: データサイエンス・営業・BizOpsチーム向けユースケース（2026年5月公開）。プロンプト設計は[[concepts/codex-prompting]]参照。
+- [[entities/openai-codex]] — OpenAIのAIコーディングエージェント。CLIベースOSS、gpt-5.3-codexモデル。自律実行・コンパクション。Codex for Work: データサイエンス・営業・BizOpsチーム向けユースケース。Human-in-the-Loop機能: Steering/Queuing/音声入力、Durable Threads、Thread Automations、Goals、サイドパネル、共有メモリ(Obsidian vault)、モバイル対応。プロンプト設計は[[concepts/codex-prompting]]参照。
 - [[entities/openai]] — **Type** | AI Research & Product Company |
 - [[entities/openai-deployment-company]] — OpenAI Deployment Company (DeployCo) — $4B enterprise AI deployment JV. Majority OpenAI-owned. 19 global investors including TPG, Bain Capital, Goldman Sachs, McKinsey. Acquired Tomoro (~150 FDEs). Launched May 2026.
 - [[entities/openclaw]] — Open-source always-on AI agent framework created by **Peter Steinberger**。Gateway-first architectureでmulti-agent routing、ACP sub-agent spawning、cron/webhook schedulingを備え、orchestratorとしてHermes Agent等のexecution specialistを統括。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
