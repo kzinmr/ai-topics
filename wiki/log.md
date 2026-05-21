@@ -3,6 +3,27 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-21] active-crawl | 5 new pages: NVIDIA Nemotron-Labs-Diffusion, SANA-WM, Microsoft Agent Framework, Google ADK 2.0, Seirênes
+
+- **Pipeline**: active-crawl (20260521T110000Z) — research + cross-reference + ingest
+- **Topics researched**: 5 selected from trending AI/ML from web search (10 candidates, 5 missed wiki coverage)
+- **Raw articles saved** (5):
+  - `raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md` — NVIDIA tri-mode LM (AR+diffusion+self-speculation, 3B/8B/14B)
+  - `raw/articles/2026-05-16_nvidia-sana-wm.md` — NVIDIA 2.6B world model (60s 720p video on single GPU)
+  - `raw/articles/2026-04-08_microsoft-agent-framework-v1.md` — Microsoft Agent Framework v1.0 (unified SK+AutoGen)
+  - `raw/articles/2026-05-19_google-adk-v2.md` — Google ADK 2.0 GA (graph-based workflows)
+  - `raw/articles/2026-05-21_seirenes.md` — Seirênes adversarial self-play RL for LLM reasoning
+- **New entity pages** (4):
+  - [[entities/nvidia-nemotron-labs-diffusion]] — Tri-mode LM: 6× tokens/forward, AR+diffusion+self-speculation
+  - [[entities/nvidia-sana-wm]] — 2.6B world model, minute-scale 720p, single GPU
+  - [[entities/microsoft-agent-framework]] — v1.0 production-ready multi-agent SDK (.NET+Python)
+  - [[entities/google-adk]] — ADK 2.0 GA: graph-based Workflow Runtime, 20K ⭐
+- **New concept page** (1):
+  - [[concepts/seirenes]] — Adversarial self-play RL hardening reasoning robustness
+- **Index updated**: +5 entries, header counts updated (Total: 2070, Entities: 649)
+
+---
+
 ## [2026-05-21] blog-wiki-ingest | Batch enrichment: 4 entity pages (Seán Goedecke, Anthropic, Simon Willison, Google)
 
 - **Pipeline**: blog-wiki-ingest (20260521T075000Z) — consumed 12 triage decisions (2 take + 2 reference + 8 skip)

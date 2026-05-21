@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-21 | Total pages: 2101 | Indexed entries: 1194 | Not in index: 841 |
+> Last updated: 2026-05-21 | Total pages: 2070 | Indexed entries: 1212 | Not in index: 858 |
 
-## Entities (635 pages)
+## Entities (649 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -45,6 +45,7 @@
 - [[entities/mac-studio-local-ai]] — Mac Studio Local AI
 - [[entities/mastra]] — Mastra — Open-source TypeScript AI agent framework (Gatsby team, 24K ⭐). ACP-compatible coding agents, workflows, voice AI providers, enterprise RBAC.
 - [[entities/merge-dev]] — Merge.dev: AIエージェントテスト統合プラットフォーム
+- [[entities/microsoft-agent-framework]] — Microsoft Agent Framework v1.0: unified Semantic Kernel + AutoGen SDK for .NET/Python, multi-agent orchestration, MCP/A2A support
 - [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto — HashiCorp
 - [[entities/john-berryman]] — John Berryman — AI/ML researcher
 - [[entities/moonshot-ai]] — Moonshot AI
@@ -237,6 +238,7 @@
 - [[entities/glm-5-zai]] — New state-of-the-art open weights LLM from Z.ai (智谱AI).
 - [[entities/glm-5v-turbo]] — Model that turns designs into code, part of the multimodal AI wave from Chinese labs.
 - [[entities/gm8xx8]] — High-taste AI research curator on X/Twitter and HuggingFace (89K+ HF followers, 17K+ posts). Bio: "HIGH-TASTE AI | OPEN MODELS." Curates across proof theory, scaling laws, multimodal systems, and robotics. X account since 2010; AI curation since 2022.
+- [[entities/google-adk]] — Google Agent Development Kit (ADK) 2.0: graph-based workflow engine for multi-agent AI, GA May 2026, 20K ⭐
 - [[entities/google-tpu]] — Google's custom ASIC for ML workloads, now split into specialized **TPU 8t** (training) and **TPU 8i** (inference) chips at the 8th generation. Designed for agentic AI, world models, Mixture-of-Exp...
 - [[entities/gpt-5.5]] — OpenAI's April 2026 model release; outperforms Opus 4.7, 40% more token efficient than GPT-5.4
 - [[entities/gpt-5-5-instant]] — OpenAI's updated default ChatGPT model (May 2026). 52.5% fewer hallucinations, improved STEM/vision, self-correction capability.
@@ -364,7 +366,9 @@
 - [[entities/nvidia-dgx-spark]] — Personal AI supercomputer powered by the NVIDIA GB10 Grace Blackwell Superchip. Designed for developers, data scientists, and researchers to prototype, fine-tune, and deploy AI models locally. Offi...
 - [[entities/nvidia-nemoclaw]] — NVIDIA NemoClaw is a secure AI agent development framework designed for running AI agents with enterprise-grade isolation. It bundles **OpenShell** (sandbox runtime), **OpenClaw** (agent framework)...
 - [[entities/nvidia-openshell]] — NVIDIA OpenShell: secure agent execution environment providing OS-level sandboxing, deny-by-default security policies, YAML-based access control. Reference implementation of the "Open Runtime" layer in Harrison Chase's framework.
+- [[entities/nvidia-nemotron-labs-diffusion]] — NVIDIA's tri-mode LM (3B/8B/14B): AR + diffusion + self-speculation decoding in one checkpoint, 6× tokens/forward over Qwen3-8B
 - [[entities/nvidia-nemotron-3-nano-omni]] — NVIDIA Nemotron 3 Nano Omni: fully open-source multimodal MoE model (30B-A3B) unifying video, audio, image, and text. Functions as perception sub-agent in agentic systems.
+- [[entities/nvidia-sana-wm]] — NVIDIA's 2.6B open-source world model: 720p 60s video generation on single GPU, hybrid linear attention, precise 6-DoF camera control
 - [[entities/nvidia]] — NVIDIA is a semiconductor and AI infrastructure company. In the context of this wiki, NVIDIA is significant for:
 - [[entities/notion]] — Knowledge work decacorn. Custom Agents (4-5 rebuilds), Agent Lab thesis, three-tier evals. Meeting Notes as growth loop. CLI + MCP for agent-native workspace.
 - [[entities/microsoft]] — **Type** | AI Research & Product Company | Cloud infrastructure leader with Azure, GitHub Copilot, and OpenAI partnership renegotiated April 2026.
@@ -970,6 +974,7 @@
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
 - [[concepts/rlvr]] — RLVR (Reinforcement Learning with Verifiable Rewards): 決定論的検証器からの外部報酬によるRL訓練パラダイム。GRPOと組み合わせて報酬モデルもクリティックモデルも排除。o1→o3で10x RL compute。ART·E ($80でo3超え)。Tülu 3で命名、DeepSeek-R1で普及。
 - [[concepts/sana-vm]] — SANA-WM — NVIDIAの2.6Bパラメータオープンソース世界モデル。単一GPUで60秒720p動画生成。Gated DeltaNet + Softmaxハイブリッド。Apache 2.0。
+- [[concepts/seirenes]] — Self-play RL framework using adversarial distractions to harden LLM reasoning robustness (arXiv May 2026)
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
 - [[concepts/shopify-ai-engineering]] — Shopify's AI-first engineering approach: LLM proxy, 1,000-intern program, strategy:execution flip, no token limits, GSD tooling, coding interviews for directors.
 - [[concepts/skill-graph]] — Skill Graph — 相互接続MarkdownファイルによるAIエージェントプレイブック。Roninの17ファイル4フォルダアーキテクチャ。Wikilinks遷移、Platform-Native Repurposing、Litmus Test。
