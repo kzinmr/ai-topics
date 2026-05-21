@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-05-19
+updated: 2026-05-21
 tags:
   - lab
   - benchmark
@@ -17,6 +17,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-misplaced-panic-over-ai-progress--7aa50278.md
   - raw/articles/garymarcus.substack.com--p-the-illusion-of-generative-ai-the--9225b4e4.md
   - raw/articles/garymarcus.substack.com--p-the-ai-trial-of-the-century-ends--dfc0b54e.md
+  - raw/articles/garymarcus.substack.com--p-could-generative-ai-could-turn-out--0880f6f7.md
 ---
 
 # Gary Marcus
@@ -83,6 +84,15 @@ In May 2026, Marcus participated in several high-profile interviews articulating
 - The conference theme — "extracting reliable software from the slop factory" — encapsulates his view of current LLM outputs
 
 These interviews represent Marcus's most comprehensive public argument for why the AI field should diversify beyond pure scaling approaches and invest in hybrid systems combining neural networks with symbolic reasoning and formal verification.
+
+### "Generative AI: The Tech Industry's Vietnam?" (May 2026)
+
+In a May 20, 2026 post titled "[Could generative AI turn out to be the tech industry's Vietnam?](https://garymarcus.substack.com/p/could-generative-ai-could-turn-out)", Marcus draws a provocative analogy between the generative AI investment boom and the Vietnam War:
+
+- **Escalation without clear objectives**: Like Vietnam, the tech industry keeps pouring billions into generative AI without a clear, achievable end goal — each new model release is justified as "one more push" that will finally deliver ROI
+- **Public backlash as a potential turning point**: Marcus suggests that growing public disillusionment with AI hype, reliability issues, and job displacement could force a reckoning similar to how anti-war sentiment changed Vietnam policy
+- **Could backlash lead AI to a better place?**: The counter-thesis — that public pressure might actually steer AI development toward more reliable, useful applications rather than the current hyperscaling approach
+- Notes the parallel to [[george-hotz]]'s recent argument that scaling is hitting S-curve limits, suggesting an emerging consensus among skeptics
 
 ### Key Works
 

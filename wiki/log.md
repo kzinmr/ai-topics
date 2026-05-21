@@ -3,6 +3,20 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-21] ingest | Blog ingest batch: 4 raw articles saved, 2 new wiki pages, 3 entities enriched
+- **Pipeline**: blog-ingest (20260521T070045Z) — 33 new articles detected, 20 from tracked blogs
+- **Raw articles saved** (4):
+  - `raw/articles/simonwillison.net--2026-may-20-tokens-per-second--a5b4c482.md` — How fast is 10 tokens per second really?
+  - `raw/articles/openai-news--index-model-disproves-discrete-geometry-conjecture--a23c5621.md` — OpenAI model disproves discrete geometry conjecture
+  - `raw/articles/openai-news--index-the-next-phase-of-education-for-countries--ae68796c.md` — OpenAI Education for Countries
+  - `raw/articles/openai-news--index-ramp--95e072c6.md` — How Ramp engineers accelerate code review with Codex
+- **Skipped** (4): WSJ/NYT paywalled, TikTok video, shkspr.mobi (non-AI)
+- **New event**: [[events/google-io-2026]] — Google I/O 2026: Gemini Spark, Antigravity, Gemini 3.5 Flash, Gemini CLI→Antigravity CLI transition, agent security concerns
+- **New concept**: [[concepts/prompts-as-technical-debt]] — Sean Goedecke's argument that prompts are a worse form of technical debt than code (silent decay with model upgrades)
+- **Enriched entity**: [[entities/george-hotz]] — Added "What Will Better AI Mean?" post: scaling S-curve plateau, internet data exhaustion, AI has no moat, taste over scale
+- **Enriched entity**: [[entities/gary-marcus]] — Added "Generative AI: The Tech Industry's Vietnam?" post: escalation without objectives, public backlash thesis
+- **Enriched entity**: [[entities/ramp]] — Added Codex with GPT-5.5 adoption case study: code review acceleration, On-Call Assistant, engineers as orchestrators
+
 ## [2026-05-21] ingest | Linear technical breakdown (performance.dev) → entity + concept pages
 - **Source**: https://performance.dev/how-is-linear-so-fast-a-technical-breakdown
 - **Raw article saved**: `raw/articles/2025-xx-how-is-linear-so-fast-technical-breakdown.md`

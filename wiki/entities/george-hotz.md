@@ -2,7 +2,7 @@
 title: George Hotz (geohot)
 type: entity
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-21
 tags:
   - person
   - open-source
@@ -61,13 +61,25 @@ In a May 2026 blog post, Hotz argues against the popular "Singularity" narrative
 
 This post is consistent with Hotz's broader engineering pragmatism: measure what matters, ship working code, and ignore the apocalyptic narratives.
 
+### "What Will Better AI Mean?" / "the singularity is nearer" (May 2026)
+
+In a May 20, 2026 post titled "[the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/05/20/what-will-better-mean.html)", Hotz argues that the era of scaling-yields-clearly-better-AI is over, and we're entering an era of **efficiency and taste**:
+
+- **AI has no moat**: Hotz claims there are "no secret tricks" at US frontier labs — the training methods described in open papers (referencing what he calls the "Claude Mythos technical report") "just works." He sees Anthropic's push for regulation as "desperate regulatory capture."
+- **Scaling is an S-curve reaching plateau**: "GPT 5.5 is to a point where it's really hard for me to stump it with any problem." Suggests that "superhuman intelligence" becomes undetectable when humans can no longer evaluate it.
+- **Internet data is exhausted**: "The Internet has been fully mined, and it yielded 20T good tokens" — enough for a 1T-parameter Chinchilla-optimal model (500 GB, "all of human knowledge in a simple to query archive").
+- **Taste over scale**: "The era of scaling yields clearly better AI is over, now we enter an era of efficiency and taste." Most things aren't optimization problems — "the whole hard problem is determining what to optimize for."
+- **AI costs**: AI has the property of "exponentially more money for linear returns" — solvable hard problems in theory but very expensive in practice.
+
 ## Sources
 
 - [geohot.github.io](https://geohot.github.io/)
 - [Punk, or why I don't stream anymore](https://geohot.github.io//blog/jekyll/update/2026/05/03/punk-or-why-i-dont-stream.html) (May 2026)
 - [The Real Singularity is the Friends We Made Along the Way](https://geohot.github.io//blog/jekyll/update/2026/05/09/real-singularity.html) (May 2026)
+- [the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/05/20/what-will-better-mean.html) (May 2026)
 
 ## References
 
 - geohot.github.io--blog-jekyll-update-2026-05-03-punk-or-why-i-dont-stream-html--3d6cc46d
 - geohot.github.io--blog-jekyll-update-2026-05-09-real-singularity-html--0dc737c4
+- geohot.github.io--blog-jekyll-update-2026-05-20-what-will-better-mean-html--a09e7f93

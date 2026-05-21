@@ -1,7 +1,7 @@
 ---
 title: Ramp
 created: 2026-04-30
-updated: 2026-05-08
+updated: 2026-05-21
 type: entity
 tags:
   - company
@@ -124,9 +124,22 @@ Ramp's internal AI agent for software development that:
 - [[entities/openai]] — AI model provider (GPT models used in Inspect)
 - [[entities/anthropic]] — AI model provider (Claude models used in Inspect)
 
+## Codex with GPT-5.5 Adoption (May 2026)
+
+In a May 2026 case study, Ramp's AI DevEx lead **Austin Ray** detailed how Ramp uses [[openai-codex-cli|Codex]] with GPT-5.5:
+
+- **Code review acceleration**: Engineers who previously waited hours for reviews now receive "substantive, codebase-aware feedback in minutes." Codex provides a "level of thoroughness that most human reviewers don't have time for."
+- **Industry gold standard**: "Codex code review catches things that I miss and that other engineers miss and that other AI code reviewers definitely miss. [...] It's become a mandatory part of a lot of code review flows."
+- **On-Call Assistant**: Ramp built an agentic tool with Codex that offloads bulk on-call rotation work. Codex with GPT-5.5 handles Ramp's "immense product surface area" effortlessly.
+- **Engineers as orchestrators**: "The skill is no longer writing every line of code yourself. It's knowing how to direct AI tools like Codex, when to trust them, and when to push back."
+- **Adoption advice**: Demonstrate first-hand, build trust through guided sessions, invest in the vendor feedback loop.
+
+This represents a significant endorsement of Codex over [[inspect]] for certain workflows — Ramp uses both its own background agent (Inspect) and OpenAI's Codex for different parts of the development pipeline.
+
 ## Sources
 
 - Ramp Engineering, "Why We Built Our Background Agent", builders.ramp.com, April 2026
 - [TechCrunch: Ramp in talks to hit $40B+ valuation](https://techcrunch.com/2026/05/07/ramp-in-talks-to-hit-40b-valuation-6-months-after-reaching-32b/) — May 7, 2026
 - [Ramp reaches $32B valuation (PR Newswire)](https://finance.yahoo.com/news/ramp-reaches-32-billion-valuation-150000798.html) — November 17, 2025
 - [PYMNTS: Ramp Eyes $40 Billion Valuation](https://www.pymnts.com/back-office/2026/ramp-eyes-40-billion-valuation-in-new-funding-round/) — May 7, 2026
+- [OpenAI: How Ramp engineers accelerate code review with Codex](https://openai.com/index/ramp) — May 20, 2026

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-20 | Total pages: 2094 | Indexed entries: 1187 | Not in index: 846 |
+> Last updated: 2026-05-21 | Total pages: 2096 | Indexed entries: 1189 | Not in index: 846 |
 
 ## Entities (635 pages)
 
@@ -885,6 +885,7 @@
 - [[concepts/prime-rl-post-training]] — Prime-RL Post-Training for Subagents: Ramp Labs Fast Ask case study — RL post-training (GRPO) for specialized retrieval subagents using Qwen3.5 + Prime Intellect. Beats Opus 4.6 at Haiku latency.
 - [[concepts/programmatic-tool-calling]] — Programmatic Tool Calling — LLM Writing Code that Calls Tools
 - [[concepts/prompt-caching]] — How prompt caching works under the hood: paged attention, automatic prefix caching (APC), KV-cache reuse. Practical tips for maximizing cache hits with LLM providers. Based on vLLM internals.
+- [[concepts/prompts-as-technical-debt]] — Prompts as Technical Debt — Prompts decay silently with model upgrades, making them a worse form of technical debt than code. Minimal prompting philosophy vs. harness engineering debate. Sean Goedecke (May 2026).
 - [[concepts/pydantic-ai-harness]] — pydantic-ai-harness — Official Capability Library for Pydantic AI
 - [[concepts/pytorch-fsdp]] — PyTorch FSDP (Fully Sharded Data Parallel)
 - [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation)
@@ -1192,12 +1193,13 @@
 - [[concepts/chaos-engineering]] — Chaos Engineering for Microservices
 - [[concepts/chaos-engineering-for-microservices]] — Chaos Engineering for Microservices (specific)
 
-## Events (4 pages)
+## Events (5 pages)
 
 - [[events/openai-may-2026-reorg]] — OpenAIの2026年5月製品再編。Greg Brockmanが全製品を統括、ChatGPTとCodexを統合、Thibault Sottiauxがコア製品責任者に。Fidji Simoは病欠。
 - [[events/anthropic-code-w-claude-2026]] — Anthropic Code w/ Claude 2026 — AnthropicがClaude Codeを強化する新製品発表（2026-05-06）
 - [[events/distillation-attacks-2026]] — Anthropic Accuses Chinese Labs of Industrial-Scale Distillation Attacks（2026-04-24）
 - [[events/openai-musk-trial-verdict-2026]] — OpenAI vs Musk裁判評決（2026-05-18）— 陪審員満場一致でMuskの請求棄却。時効が理由で、OpenAIの正当性には踏み込まず。Gary Marcus「世紀のAI裁判、竜頭蛇尾に終わる」
+- [[events/google-io-2026]] — Google I/O 2026（2026-05-20）— Gemini Spark（個人AIエージェント）、Antigravityプラットフォーム、Gemini 3.5 Flash発表。OpenCLaw対抗。Gemini CLI→Antigravity CLI移行（OSS→プロプライエタリ）。エージェントセキュリティ（prompt injection）懸念。
 
 ## Comparisons (18 pages)
 
