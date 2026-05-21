@@ -3,6 +3,20 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-21] trending-topics | 6 topics from web research
+
+- **Pipeline**: trending-topics (20260521T120000Z) — web research + cross-reference + report
+- **NJ 5/5**: OpenAI Erdos problem solved — first AI to autonomously solve a prominent open math problem (with mathematician verification)
+- **NJ 4/5**: SynthID coalition expands — OpenAI, ElevenLabs, Nvidia, Kakao adopt Google's SynthID invisible watermarking
+- **NJ 4/5**: Gemini for Science launches — Co-Scientist + ERA, 2 Nature papers, CDC-beating forecasts
+- **NJ 3/5**: Google Search overhaul — information agents, custom GenUI dashboards, 24/7 monitoring
+- **NJ 3/5**: Chrome DevTools for Agents 1.0 — MCP server + CLI + Agent Skills for AI debugging
+- **NJ 3/5**: Gemini 3.5 Flash GA — agent-optimized model, $1.50/$9 per 1M tokens, Antigravity integration
+- **Raw article saved**: `raw/articles/2026-05-21_trending-topics-report.md`
+
+---
+
+
 ## [2026-05-21] active-crawl | 5 new pages: NVIDIA Nemotron-Labs-Diffusion, SANA-WM, Microsoft Agent Framework, Google ADK 2.0, Seirênes
 
 - **Pipeline**: active-crawl (20260521T110000Z) — research + cross-reference + ingest
