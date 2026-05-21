@@ -2,10 +2,11 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-18
+updated: 2026-05-21
 type: entity
 sources:
   - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
+  - raw/articles/seangoedecke.com--prompts-are-technical-debt-too--2bd50f80.md
 ---
 
 # Sean Goedecke
@@ -220,6 +221,8 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 
 - **The left-wing case for AI** (2026-05-10): Outlines explicitly left-wing pro-AI arguments across five dimensions: (1) **Disability** — LLMs as powerful accessibility aids for neurodivergent, chronically ill, and mobility/vision-impaired users; (2) **Chronic illness and medical care** — LLMs enable patients to research conditions and advocate for themselves against dismissive medical establishments; (3) **Class and code-switching** — LLMs democratize access to "dangerous professional" communication styles that were previously gatekept by elite educational pipelines; (4) **Education** — LLMs provide private-tutor-level access to every motivated student, reducing educational inequality; (5) **Utopia** — if left-wing views are correct and you're technologically optimistic, super-smart AI inherently trends left-wing (all current frontier models profess left-leaning views, and attempts to train right-wing alternatives have failed). Includes a powerful reader testimonial from a disabled person describing how computers transformed their life in the 1980s-90s and how AI is now extending similar benefits to those with communication barriers.
 
+
+- **Prompts are technical debt too** (2026-05-20): Argues that prompts are a worse form of technical debt than code — prompts are model-specific and silently degrade with each model update, whereas code is stable when untouched. Recommends using third-party AI coding tools with minimal customization. Core insight: code review skills transfer directly to AI agent evaluation, making code review the meta-skill of the AI era.
 
 ## Sources
 

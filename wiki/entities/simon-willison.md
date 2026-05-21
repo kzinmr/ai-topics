@@ -3,7 +3,7 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-05-19
+updated: 2026-05-21
 status: L3
 sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md]
 tags: [person, blogger]
@@ -289,6 +289,7 @@ These changes make LLM future-proof for the diversity of input/output capabiliti
 - simonwillison.net--2026-may-12-llm--bace7b08
 - simonwillison.net--2026-may-12-mitchell-hashimoto--f38a3588
 - simonwillison.net--2026-may-12-mo-bitar--e8d59825
+- simonwillison.net--2026-may-20-google-io--933c8dde
 
 ### May 2026 Updates
 
@@ -301,5 +302,18 @@ These changes make LLM future-proof for the diversity of input/output capabiliti
 **Mitchell Hashimoto on TDM Motivations** (May 12, 2026): Simon quoted Mitchell Hashimoto (HashiCorp co-founder, Redis Labs CTO) on the psychology of Technical Decision Makers: "90% of TDMs are motivated primarily by NOT GETTING FIRED." Hashimoto argues that corporate tech buyers follow analyst trends (Gartner, McKinsey) rather than deep technical evaluation, making "defensible" buzzword products like "Context Engine for AI Apps" easy sells. This aligns with Simon's broader skepticism about enterprise AI vendor claims and reinforces his "agentic engineering" thesis — real practitioners verify, they don't just buy trends.
 
 **Mo Bitar's "Ralph Loop" Satire** (May 12, 2026): Simon highlighted Mo Bitar's satirical take on AI corporate climbing — the "Ralph Loop" strategy of promising automation to executives, using $18K in API credits to demonstrate "value," and getting promoted before anyone realizes nothing actually works. This satire captures a real pattern in enterprise AI adoption: the gap between promised automation and delivered value.
+
+
+### Google I/O 2026, Gemini Spark & Antigravity CLI (May 20, 2026)
+
+Simon analyzed Google I/O 2026 through his signature policy of "not writing about anything I can't try myself." Key observations:
+
+1. **Gemini Spark prompt injection concerns**: Simon explicitly questions the security of Google's always-on personal AI agent ("your personal AI agent" connecting to Gmail, Calendar, Drive, Docs, Sheets). He notes that the enterprise FAQ describes Spark as running in "fresh, strictly isolated, ephemeral VMs" with "Agent Gateway enforcing DLP policies" — but warns "I hope they've made this bullet-proof, or this could be a top candidate for the agent security challenger disaster that we still haven't seen."
+
+2. **Antigravity CLI replacing Gemini CLI**: Google announced that the open-source Gemini CLI tool (Apache 2.0, TypeScript) will stop working with their AI subscription plans on **June 18th**, replaced by the closed-source Antigravity CLI. The Antigravity ecosystem includes a desktop app, a Go-based CLI agent tool, an open-source Python SDK wrapping a closed-source Go binary, and the Antigravity IDE (VS Code fork).
+
+3. **The curious FAQ answer**: Simon highlights that Google's FAQ states "Gemini Spark runs on Gemini 3.5 Flash and Antigravity" — an unusual answer that suggests Antigravity (the Go binary) plays a foundational role in Spark's architecture.
+
+See full article: [[raw/articles/simonwillison.net--2026-may-20-google-io--933c8dde.md]]
 
 **PyCon US 2026 Lightning Talk: "The Last Six Months in LLMs in Five Minutes"** (May 19, 2026): Simon delivered a lightning talk summarizing the LLM landscape from November 2025 to May 2026. Key themes: the November 2025 inflection point (coding agents crossing the quality barrier via RLVR), the model crown changing hands five times in one month (Sonnet 4.5 → GPT-5.1 → Gemini 3 → GPT-5.1 Codex Max → Opus 4.5), the rise of OpenClaw and the "Claws" ecosystem, open-weight models (Gemma 4, GLM-5.1) exceeding expectations, and his signature pelican-on-bicycle SVG benchmark. See [[concepts/llm-landscape-nov-2025-to-may-2026|LLM Landscape Nov 2025–May 2026]].

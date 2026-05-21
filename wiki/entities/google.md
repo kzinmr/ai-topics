@@ -6,6 +6,8 @@ updated: 2026-05-21
 tags: [company, lab, product, platform, infrastructure]
 aliases: ["Google DeepMind", "Google Research"]
 sources: [
+  raw/articles/theverge.com--tech-933415-google-io-2026-biggest-announcements-ai-gemini--e73abf5d.md,
+  raw/articles/simonwillison.net--2026-may-20-google-io--933c8dde.md,
   raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md,
   raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md,
   raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md,
@@ -97,6 +99,31 @@ Google is in discussions with SpaceX about **Project Suncatcher**, a concept for
 - **Advantage**: Orbital solar power is ~8× more efficient than ground-based solar
 - **Rationale**: Break through terrestrial compute constraints by leveraging SpaceX's launch capacity
 - **Related**: SpaceX holds a $60B option to acquire Cursor (see [[entities/openai]])
+
+
+
+### Google I/O 2026 — Product Launches (May 2026)
+
+Google's I/O 2026 keynote covered a broad range of AI product announcements beyond the core model releases. Key launches:
+
+| Product | Description | Launch |
+|---------|-------------|--------|
+| **Gemini 3.5 Flash** | New default model: faster, improved agentic coding, richer web UIs, better guardrails. | Now default in Gemini app & AI Mode in Search |
+| **Gemini 3.5 Pro** | Larger variant following 3.5 Flash | Next month (June 2026) |
+| **Gemini Omni** | New model family: Omni Flash generates video from text/photos/video/audio. | Rolling out in Gemini app, Flow, YouTube Shorts |
+| **Gemini Spark** | Always-on personal AI agent. Runs 24/7 on ephemeral GCP VMs. Connects to Workspace + third-party apps (Canva, Instacart). | Coming soon |
+| **Antigravity CLI** | Closed-source Go-based CLI replacing open-source Gemini CLI (June 18 sunset) | Available now |
+| **Neural Expressive Redesign** | Gemini app redesign: new animations, color palette, font, haptic feedback | May 19 (web, iOS, Android) |
+| **Universal Cart** | Cross-merchant intelligent shopping cart: add from YouTube/Search/Gemini/Gmail, checkout across merchants (Nike, Target, Walmart, Ulta, Sephora, Wayfair, Shopify) | Summer 2026 |
+| **Gmail Live** | Voice-driven search for inbox: extract info from emails via natural language queries | Beta |
+| **Pics App** | AI image editing via click+comment (Nano Banana 2 + Gemini). Iterative edits without full prompts | New |
+| **Vibe-Coding Android Apps** | Build native Android apps from AI Studio → publish to Play Store. Embedded emulator, Firebase integrations. | Beta |
+| **Project Aura v2** | Updated smart glasses (Xreal collab): redesigned puck, fingerprint sensor, widgets, Gemini calendar/Keep integration. Warby Parker & Gentle Monster audio-only glasses this fall | Fall 2026 |
+| **Search Information Agents** | AI agents that monitor topics and deliver summarized updates from blogs/news/social | Summer 2026 (AI Pro/Ultra) |
+| **Generative UI & Mini Apps** | Search generates interactive simulations, graphs, and custom mini-apps for repeated tasks | Summer 2026 |
+| **AI Ultra Pricing** | New tiers: $100/mo (standard) and $200/mo (includes Project Genie) | Now |
+| **SynthID in Chrome** | AI detection tools: right-click images in Chrome to see provenance via SynthID + C2PA | Expanding |
+| **Beam/Sophie** | Lifelike AI video agents for meetings: Sophie reads documents, handles restaurant recs, group calls via Meet/Zoom | Experimental |
 
 
 ## Image Generation Strategy

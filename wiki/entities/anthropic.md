@@ -328,6 +328,9 @@ Anthropic は複数の大規模計算資源契約を締結：
 
 Claude は **AWS Trainium、Google TPU、NVIDIA GPU** の複数ハードウェアで訓練・実行されている。
 
+**SpaceX S-1 Filing Details (May 2026)**: SpaceX's S-1 registration statement reveals the full terms of the Cloud Services Agreement with Anthropic: $1.25 billion per month through May 2029, with capacity ramping in May and June 2026 at a reduced fee. The agreements may be terminated by either party upon 90 days' notice. Notably, SpaceX also uses this compute capacity for its own AI applications (including Grok 5, training at COLOSSUS II), positioning Anthropic as both a customer and a revenue source for SpaceX's growing AI compute business.
+
+Source: [Simon Willison quoting SpaceX S-1](raw/articles/simonwillison.net--2026-may-20-spacex-s1--48fe0f3d.md)
 
 
 

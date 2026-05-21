@@ -3,6 +3,20 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-21] blog-wiki-ingest | Batch enrichment: 4 entity pages (Seán Goedecke, Anthropic, Simon Willison, Google)
+
+- **Pipeline**: blog-wiki-ingest (20260521T075000Z) — consumed 12 triage decisions (2 take + 2 reference + 8 skip)
+- **Triage source**: blog-triage checkpoint (20260521T073805Z)
+- **Entity pages enriched** (4):
+  - [[entities/seangoedecke-com]] — Added "Prompts are technical debt too" article: prompts are worse debt than code (model-specific, silent decay). Added to Recent Articles + sources.
+  - [[entities/anthropic]] — Added SpaceX S-1 contract specifics: $1.25B/month through May 2029, 90-day termination notice, ramp-up period in May-June 2026.
+  - [[entities/simon-willison]] — Added Google I/O 2026 section: Gemini Spark prompt injection concerns, Antigravity CLI replacing Gemini CLI (June 18), FAQ architecture oddity.
+  - [[entities/google]] — Added comprehensive Google I/O 2026 product section (17-column table): Universal Cart, Gmail Live, Pics App, Project Aura v2, Generative UI, Search Info Agents, Beam/Sophie, Vibe-Coding Android, AI Ultra pricing, etc.
+- **Raw articles sourced**: seangoedecke.com--prompts-are-technical-debt-too, simonwillison.net--2026-may-20-spacex-s1, simonwillison.net--2026-may-20-google-io, theverge.com--tech-933415-google-io-2026
+- **Skipped** (8): garymarcus (already captured), geohot (already captured), joanwestenberg (non-AI), micahflee (empty file), dfarq (non-AI retro), xeiaso (bot-wall), oldnewthing (Win32 API), hillelwayne (formal methods, non-AI)
+
+---
+
 ## [2026-05-21] newsletter-wiki-ingest | Batch ingest: 5 new pages, 5 entity enrichments
 
 - **Pipeline**: newsletter-wiki-ingest (20260521T074000Z) — 13 take items → 5 new pages + 5 entity enrichments
