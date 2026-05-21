@@ -199,6 +199,82 @@ The turbopuffer article revealed richer detail about SID-1's emergent search str
 
 This learned tool preference opens an interesting meta-research avenue: if RL makes a model prefer some tool, it is likely a better tool — analogous to how AlphaGo discovered strategies that appeared "alien" to Go experts but outperformed human designs.
 
+#### Post-Training Design Insights (GRPO Lessons from SID-1)
+
+The SID-1 technical report and turbopuffer infrastructure article contain several design lessons that generalize beyond retrieval to any RL post-training pipeline for agentic models. These are "things to keep in mind" when designing RL fine-tuning for multi-turn tool-using agents.
+
+##### 1. Scaling Laws: Log-Linear, No Ceiling
+
+SID-1's training results reveal two scaling properties:
+
+- **Model size**: Performance improves approximately **logarithmically** with base model size. However, the RL pipeline provides a **>10× effective compute multiplier** — an RL-trained 14B model (Qwen3) can match or exceed the agentic retrieval performance of much larger raw models.
+- **Training compute**: NDCG improves **log-linearly** with the number of training tasks. After a modest budget, SID-1 surpasses frontier models. Critically, **no intrinsic ceiling** was observed — the paper estimates the approach can scale by another **3–6 orders of magnitude** via more environments, questions, or model size.
+
+> **Design implication**: If you're not seeing a ceiling yet, you're not done scaling. Log-linear scaling means doubling compute yields consistent gains — don't plateau prematurely by over-optimizing for a fixed budget.
+
+##### 2. TI/TO Collapse: Why Message Parsing Breaks Multi-Turn RL
+
+The **Tokens-In/Tokens-Out (TI/TO)** pipeline is the most critical infrastructure lesson. Using standard OpenAI-style message abstractions (`messages → text → messages`) in multi-turn RL causes **lossy re-tokenization** that leads to catastrophic model collapse.
+
+**The collapse mechanism:**
+
+1. Tool-call whitespace is stripped during message parsing. For example, the two-token sequence `" \"` (space + tool call marker) becomes a single token with `logprob ≈ -20` after re-tokenization.
+2. Bad rollouts (where the model tried a wrong search strategy) get their tool calls "fixed" by the chat template before being fed into training — they look like correct tool usage to the optimizer.
+3. These "fixed" tokens carry **extremely negative logprobs** because the model genuinely didn't predict them (the template inserted them).
+4. With GRPO's advantage-weighted gradient, these negative-advantage, very-negative-logprob tokens **dominate the gradient** — the model learns to suppress them globally.
+5. Result: reward crashes, format collapses, and the model stops outputting tool calls altogether.
+
+**The fix:** Strict TI/TO — work directly with raw token sequences. No message parsing between rollout and training step. The model sees exactly what it generated, and the template never "fixes" anything.
+
+> **Design implication**: If you're building multi-turn RL for tool-using agents, TI/TO is non-negotiable. Any layer that converts tokens → messages → tokens is a source of collapse risk. Test this before scaling.
+
+##### 3. Format Reward Regression: Don't Skip It
+
+SID-1 initially omitted format reward because the base model (Qwen3-14B) had a **format pass rate >0.95** — tool calls reliably followed the expected schema. The intuition was "if it's already working, don't add noise."
+
+However, **format adherence regressed during prolonged training**. As the model explored more diverse search strategies, it drifted away from the tool-call format. Without a format reward, there was no gradient signal to maintain the schema. The fix was to add a format reward mid-training, but by that point some damage was done.
+
+> **Design implication**: Always include a lightweight format reward, even if initial format adherence is near-perfect. RL exploration will cause drift — the format reward acts as a guardrail that prevents schema degradation, not just a fix for broken formats. Future work: consider starting from SFT models with innate format adherence to reduce this risk.
+
+##### 4. No SFT Cold Start: RL from Base Model
+
+SID-1 was trained on Qwen3-14B **base model** using **modified GRPO without any SFT cold start**. This contradicts the common practice of SFT → RLHF/DPO/GRPO, where SFT provides a "good enough" policy before RL fine-tuning.
+
+The key enabler is the **reward design**: NDCG with partial credit provides a dense enough signal that the model can bootstrap retrieval behavior from pure RL. However, this also means the initial rollouts are extremely noisy — the model has never seen a multi-turn tool-calling interaction before.
+
+> **Design implication**: RL-from-base is viable if the reward signal is sufficiently dense and covers the full task. But expect very long warm-up periods and format instability. For most practical applications, a small amount of SFT on demonstration trajectories is likely more efficient — SID-1's authors note SFT as future work specifically for format adherence.
+
+##### 5. Synthetic Data: Any Corpus, No Human Annotations
+
+SID-1's training corpus spans general knowledge, finance, science, legal, and email — all without human annotation. The fully synthetic pipeline:
+
+1. Take any document corpus
+2. For each document, generate a question that requires that document to answer
+3. The document is the "gold" target; NDCG compares the model's ranked list against it
+4. Noise is introduced by training with public questions (noisy ground truth) → the model learns to over-report; switching to synthetic-only questions fixes this
+
+> **Design implication**: The synthetic question pipeline is the scaling enabler. If you can generate training data programmatically from your domain's document corpus, you can train a domain-specific agentic retriever with zero annotation cost. The key risk is question quality — noisy target documents teach the model bad over-reporting habits (Figure 8 in the report).
+
+##### 6. Length Scheduling: Fixing "Length-Debiased" GRPO
+
+Standard GRPO with length debiasing can cause **logit collapse** when failed rollouts are longer than successful ones. The debiasing term tries to compensate for length, but the gradient interaction is unstable.
+
+SID-1's fix: **Length Scheduling** — start training with short rollouts (limited tool calls), then gradually increase the allowed maximum. Combined with a **soft length penalty** (rather than hard debiasing), this prevents the early-stage collapse where the model associates "long outputs" with "bad rollouts."
+
+> **Design implication**: Length bias in GRPO is nuanced. Hard debiasing creates gradient instability; soft penalties + curriculum scheduling are more robust. Start short, go long — let the model learn to use tools before asking it to be efficient with them.
+
+##### Summary Table: Post-Training Design Checklist
+
+| Design Concern | Pitfall | SID-1 Solution | Generalizable? |
+|---|---|---|---|
+| **Message parsing** | Re-tokenization creates gradient-dominating negative logprobs | Strict TI/TO pipeline | ✅ Yes — any multi-turn tool-use RL |
+| **Format drift** | RL exploration degrades tool-call schema | Always include format reward (even if >0.95 pass rate) | ✅ Yes |
+| **Cold start** | RL from base model is slow and noisy | Dense reward signal (NDCG); future: SFT for format | ⚠️ Viable if reward is dense; SFT preferred |
+| **Length bias** | Hard length debiasing causes logit collapse | Length scheduling + soft length penalty | ✅ Yes |
+| **Synthetic data** | Human annotation can't scale | Fully synthetic Q&A pipeline from document corpus | ✅ Yes — domain-adaptable |
+| **Reward hacking** | Recall-only reward → over-reporting | NDCG penalizes rank position; slight over-reporting preferred to under-reporting | ✅ Yes |
+| **GPU utilization** | Search latency bottlenecks RL training throughput | Stateless turbopuffer query tier; namespace branching | ✅ Yes — RL-for-search needs search infra that scales with GPU speed |
+
 ### Benchmarking Agents vs Search Stack: Amazon ESCI
 
 Search engineer Doug Turnbull ([[entities/doug-turnbull-core-ideas]]) conducted a 2026 benchmark on Amazon ESCI validating that even simple agents with basic retrieval tools outperform traditional search stacks.

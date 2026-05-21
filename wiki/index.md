@@ -625,7 +625,7 @@
 - [[entities/harvey]] — Harvey — AI for legal industry. $8B valuation. 100K+ lawyers across 60%+ of AmLaw 100.
 - [[entities/hebbia]] — Hebbia — AI for knowledge work. Product: Matrix. $700M valuation. 30% of top 50 asset managers.
 - [[entities/hex-technologies]] — Hex Technologies — Collaborative data science and AI notebooks platform.
-- [[entities/linear]] — Linear — Project management software known for exceptional design quality. $1.25B valuation.
+- [[entities/linear]] — Linear — Project management software known for exceptional design quality and local-first performance architecture ($1.25B valuation). See [[concepts/local-first-architecture]].
 - [[entities/mercor]] — Mercor — AI recruiting and hiring platform. $10B valuation. Founded by Brendan Foody (age 22).
 - [[entities/merge]] — Merge — Unified API for integrations. Connect to 200+ platforms through a single API.
 - [[entities/metronome]] — Metronome — Usage-based billing platform. Acquired by Stripe. OpenAI is flagship customer.
@@ -1001,6 +1001,7 @@
 - [[concepts/frontier-swe-benchmark]] — FrontierSWE: 超高難度コーディングエージェントベンチマーク（Proximal Labs）。20時間制限、Implementation/Performance/Researchの3カテゴリ17タスク。GPT-5.5+Codexが平均ランク2.35（Dominance 83%）で首位。保守（GPT-5.4）vs攻撃的（Opus 4.6）の行動比較、overconfidence/cheating行動を記録。
 - [[concepts/frontier-lab-job-preparation]] — Frontier Lab Job Preparation — Vlad Feinberg（Google/TPU）によるフロンティアラボ就職ガイド。カーネルワークが最大のボトルネック、Chinchilla則導出、Jax実装、Pallasカーネル最適化。採用テスト基準。
 - [[concepts/functional-core-imperative-shell]] — Architecture pattern separating deterministic, verifiable processing (functional core) from validation, evaluation, and strategic decision-making (imperative shell). As AI agents improve, more work migrates from shell to core, leaving humans focused on judgment.
+- [[concepts/local-first-architecture]] — Software design paradigm where primary data store lives on client (IndexedDB, SQLite), server acts as sync target. Covers principles (optimistic updates, offline-first, CRDT conflict resolution), Linear's implementation, benefits, challenges, related tech (ElectricSQL, Replicache, Automerge), and case studies.
 - [[concepts/agent-serverless]] — Serverless deployment pattern for AI agents with built-in SaaS integration, permissions, security, and log persistence tiers. Enterprise monetization via persistent logs and audit trails.
 - [[concepts/agent-identity-verification]]
 - [[concepts/agent-loop-orchestration]]

@@ -3,6 +3,12 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-21] ingest | Linear technical breakdown (performance.dev) → entity + concept pages
+- **Source**: https://performance.dev/how-is-linear-so-fast-a-technical-breakdown
+- **Raw article saved**: `raw/articles/2025-xx-how-is-linear-so-fast-technical-breakdown.md`
+- **Updated entity**: [[entities/linear]] — Added comprehensive Performance Architecture section covering: Local-First design philosophy (IndexedDB + MobX), Three Pillars of Sync Engine, Frontend optimizations (Rolldown bundler, esnext, per-package chunking, module preloading, Service Worker precaching, Canvas renderer, virtual scrolling), Render-First-Authenticate-Second pattern, Keyboard-First UX, Backend architecture (GraphQL, delta sync, WebSocket, PostgreSQL, idempotent mutations). New tags: performance, local-first.
+- **New concept**: [[concepts/local-first-architecture]] — Comprehensive concept page covering local-first architecture principles, Linear's implementation (architecture stack diagram, optimistic updates pattern, data-level code splitting, granular re-renders), benefits, challenges, related technologies (CRDTs, RxDB, ElectricSQL, Replicache), and case studies (Linear, Notion, Obsidian, Figma).
+
 ## [2026-05-21] blog | AgenticなQuery UnderstandingとContent Understandingで非構造データDWH分析の汎用性・カスタム性を向上させるアーキテクチャ戦略
 - **Blog post**: [[blog/2026-05-21_hermes_agentic-query-content-understanding-dwh]]
 - **Summary**: kzinmrの依頼により、通話データ+metadataのような非構造データ中心のDWH分析オペレーションに対して、Agentic QU/CUアーキテクチャを提案するコンセプトブログ。3層のエージェント（Content Understanding Agents / Query Understanding Agent / Execution & Verification Agents）+ Harness層（Two-Loop, PMCL, Context Engineering）の構成。Phase 1-4の段階的導入ロードマップを含む。
