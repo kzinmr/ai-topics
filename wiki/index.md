@@ -687,7 +687,7 @@
 - [[concepts/aem-adaptive-entropy-modulation]] — AEM: Baidu/Tsinghua 2026 — supervision-free credit assignment for agentic RL. Response-level entropy modulation, adaptive exploration/exploitation transition. +1.4% on SWE-bench-Verified. arXiv:2605.00425.
 - [[concepts/agentic-search]] — Agentic Search: IR検索層、ハーネスエンジニアリング層、コーディングエージェント層、アジャイルエンジニアリングフレームワーク（Scope–Cost–Qualityトライアングル、評価駆動の"done"定義）。Doug Turnbull、Daniel Tunkelang、Anthropic Dynamic Filteringを含む。
 - [[concepts/agentic-rag]] — Agentic RAG: AIエージェントによる動的Retrieval-Augmented Generation
-- [[concepts/agentic-retrieval]] — Agentic Retrieval: エージェント駆動の検索パターン
+- [[concepts/agentic-retrieval]] — Agentic Retrieval: AI agents as primary search consumers. Median 10-term queries (vs human 2), 24 calls/session, phrase quotes in 98% of sessions. GPT-5 BrowseComp-Plus empirical analysis. Distribution shift from legacy retrievers.
 - [[concepts/agent-ergonomics]] — Programming language and toolchain design optimized for AI coding agents. McKinney's framework (compile speed, static binaries) + Ronacher's language syntax/feature design principles (effects, results, grep-ability, etc.)
 - [[concepts/agent-operator-patterns]] — Agent Operator Patterns: Shann Holmbergによる自律型AIエージェント運用パターン集。Control Room、Brain Layers、Agent Creation Heuristics、4-Level Fleet Operation Model、Prototype→Production Methodology。単一エージェントから完全自動化チームへのスケーリング設計 + Wiki管理システムへの応用分析を含む。
 - [[concepts/agentic-engineering]] — Agentic Engineering: disciplined software development using AI agents, where verification not code reading is the critical skill. Wes McKinney's software factory, RoboRev continuous review, generator-evaluator workflows. Evolution from vibe coding.
@@ -784,6 +784,7 @@
 - [[concepts/harness-commoditization]] — Harness Commoditization — Thesis that frontier model capability is commoditizing agent harnesses. As models become natively agentic, harness architecture ceases to be a meaningful differentiator — codebase organization becomes the bottleneck. Articulated by Amp in "The Coding Agent Is Dead" (Feb 2026).
 - [[concepts/harness-engineering]] — Harness Engineering
 - [[concepts/harness-profiles]] — Harness Profiles — model-specific tuning of agent prompts, tools, and middleware per LLM family. LangChain Deep Agents feature (Apr 2026). 10-20pt benchmark gains on tau2-bench.
+- [[concepts/hornet]] — Hornet: retrieval engine purpose-built for AI agent workloads. Founded by ex-Vespa engineers (Jo Kristian Bergum). Model-agnostic, open-source, schema-first APIs, self-hosted. Addresses agent-specific query patterns: median 10-term queries (vs human 2), phrase quotes in 98% of sessions, 24 calls/session.
 - [[concepts/karpathy-loop]] — The Karpathy Loop — Autonomous Experiment Design
 - [[concepts/knowledge-shields]] — Knowledge Shields and Systems Understanding
 - [[concepts/korean-ai]] — Korean AI Ecosystem

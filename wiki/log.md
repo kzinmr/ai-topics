@@ -3,6 +3,17 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-22] enrich | concepts/hornet.md, concepts/agentic-retrieval.md, entities/jo-kristian-bergum.md
+
+- **Source**: hornet.dev blog — "This is what agentic retrieval looks like" (Jo Kristian Bergum, May 20, 2026)
+- **Raw article**: `raw/articles/2026-05-20_hornet_this-is-what-agentic-retrieval-looks-like.md`
+- **concepts/hornet.md**: Enriched from stub — added architecture philosophy (API as filesystem, agent autonomy levels, verifiable feedback loop), empirical evidence from BrowseComp-Plus, team section, 4 wikilinks
+- **concepts/agentic-retrieval.md**: Enriched from stub — added full empirical characterization (query length distribution vs AOL log, operator usage stats, iterative session patterns), distribution shift analysis, related concepts, open questions
+- **entities/jo-kristian-bergum.md**: Added article to writings list and timeline
+- **index.md**: Added hornet entry; updated agentic-retrieval description
+
+---
+
 ## [2026-05-21] raw-backlog-ingest | 5 articles triaged, 0 takes (all skip/reference)
 
 - **Pipeline**: raw-backlog-ingest (20260521T120026Z) — 5 candidate articles from backlog

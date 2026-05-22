@@ -6,7 +6,7 @@ aliases:
   - jobergum
   - Jo Bergum
 created: 2026-04-25
-updated: 2026-04-27
+updated: 2026-05-22
 tags:
   - entity
   - person
@@ -95,6 +95,7 @@ Bergum's work spans traditional information retrieval, neural search, and large-
 
 ### Hornet Blog
 - *The case for a new retrieval engine for agents* (Oct 2025) — founding manifesto for Hornet
+- *This is what agentic retrieval looks like* (May 2026) — Part 2 of agentic retrieval series; empirical analysis of GPT-5's BrowseComp-Plus query behavior showing agents query like power users: median 10 terms (vs. human median 2), phrase quotes in 98% of sessions, 24 search calls/session, advanced operator usage
 
 ## Current Work: Hornet
 
@@ -118,6 +119,7 @@ Bergum's work spans traditional information retrieval, neural search, and large-
 | Oct 2025 | Publishes "The case for a new retrieval engine for agents" — the founding Hornet blog post |
 | Jan 2026 | Co-authors "What we learned building a 100M-document search engine" with Elisabeth and Janne |
 | Feb 2026 | Publishes "The context window is not your database" — arguing that retrieval still matters for agents |
+| May 2026 | Publishes "This is what agentic retrieval looks like" (Part 2) — empirical analysis of GPT-5 BrowseComp-Plus traces: median 10-term queries, 24 calls/session, phrase quotes in 98% of sessions |
 | 2026 | Launches Hornet as a company with co-founders Henning Baldersheim (CTO), Erik Dyrkoren (COO) |
 
 ## Core Ideas
