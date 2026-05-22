@@ -52,6 +52,11 @@
 
 ---
 ## 2026-05-22 raw-backlog-ingest | 5 articles triaged, 0 takes (3 non-AI skip, 2 already captured)
+- **Archive**: `wiki/raw/archived/triage/backlog/2026-05-22_20260522T120023Z.json`
+
+## 2026-05-22 raw-backlog-ingest | 5 articles triaged, 0 takes (3 non-AI skip, 2 already captured)
+- **Processed**: `danluu.com/fsyncgate` (PostgreSQL internals, non-AI skip), `danluu.com/diseconomies-scale` (platform economics, non-AI skip), `danluu.com/su3su2u1/hpmor` (book review, non-AI skip), Anthropic functional emotions (already captured in `concepts/functional-emotions-llms.md`), ClusterMAX 2.0 (already captured in `concepts/gpu-cloud-rankings.md`)
+- **Archive**: `wiki/raw/archived/triage/backlog/2026-05-22_20260522T200033Z.json`
 - **Skip (non-AI)**: `danluu.com--fsyncgate--a3db25a4.md` (PostgreSQL fsync email thread), `danluu.com--diseconomies-scale--f3d3e873.md` (platform moderation essay), `danluu.com--su3su2u1-hpmor--5a2bbcdc.md` (HPMOR book review)
 - **Skip (already captured)**: `substack.com--redirect-49e1a4a9...` → `concepts/functional-emotions-llms.md` (updated 2026-05-20), `substack.com--redirect-f8601173...` → `concepts/gpu-cloud-rankings.md` (created 2026-05-20)
 - **Archive**: `wiki/raw/archived/triage/backlog/2026-05-22_20260522T120023Z.json`
