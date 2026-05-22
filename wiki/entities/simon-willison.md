@@ -3,7 +3,7 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-05-21
+updated: 2026-05-22
 status: L3
 sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md]
 tags: [person, blogger]
@@ -303,6 +303,8 @@ These changes make LLM future-proof for the diversity of input/output capabiliti
 
 **Mo Bitar's "Ralph Loop" Satire** (May 12, 2026): Simon highlighted Mo Bitar's satirical take on AI corporate climbing — the "Ralph Loop" strategy of promising automation to executives, using $18K in API credits to demonstrate "value," and getting promoted before anyone realizes nothing actually works. This satire captures a real pattern in enterprise AI adoption: the gap between promised automation and delivered value.
 
+
+**FTC Active Listening Enforcement** (May 22, 2026): Simon highlighted FTC's $1M settlement against Cox Media Group, MindSift, and 1010 Digital Works for their bogus "Active Listening" AI-powered marketing service. The service claimed to listen in on consumer conversations via smart devices but actually just resold email lists from data brokers. This confirms Simon's long-standing theory (from September 2024) that "active listening" was a marketing term for "something that sounds fancy but really just means the way ad targeting platforms work already." Source: [FTC press release about "Active Listening" settlement](https://simonwillison.net/2026/May/22/ftc-active-listening/)
 
 ### Google I/O 2026, Gemini Spark & Antigravity CLI (May 20, 2026)
 

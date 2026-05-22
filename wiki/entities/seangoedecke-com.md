@@ -2,11 +2,12 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-21
+updated: 2026-05-22
 type: entity
 sources:
   - raw/articles/seangoedecke.com--the-just-say-no-engineer-was-a-zirp-phenomenon--542e9446.md
   - raw/articles/seangoedecke.com--prompts-are-technical-debt-too--2bd50f80.md
+  - raw/articles/seangoedecke.com--the-o3-geoguessr-prompt-did-not-work--c4335530.md
 ---
 
 # Sean Goedecke
@@ -47,6 +48,7 @@ His writing philosophy is evident in his book's distribution model: **print at c
 | **2026-05-10** | Publishes "The left-wing case for AI" — outlines progressive arguments for AI adoption across disability rights, healthcare, class mobility, education, and utopian tech optimism |
 | **2026-05-17** | Publishes "How I use LLMs as a staff engineer in 2026" — updated workflow: agents now produce entire PRs, 80% bug diagnosis rate, skimming vs. editing mental model shift |
 | **2026-05-17** | Publishes "DeepSeek-V4-Flash means LLM steering is interesting again" — explores activation engineering and steering vectors for influencing model behavior |
+| **2026-05-22** | Publishes "The famous o3 'GeoGuessr' prompt did not work" — constructs a 200-image benchmark to test Kelsey Piper's famous GeoGuessr prompt, finding the elaborate prompt performed worse than the default (median 83.2km vs 102.3km). GPT-5.4/5.5 lack o3's geolocation ability. Demonstrates how easily prompt engineers can fool themselves without benchmarks |
 | **2026-05-17** | Publishes "The just-say-no engineer was a ZIRP phenomenon" — argues the "just-say-no" engineering archetype thrived under zero-interest-rate conditions and is now endangered by AI, but AI is not the root cause |
 
 ## Core Ideas
@@ -149,7 +151,27 @@ Goedecke identifies and analyzes the **"just-say-no engineer" archetype** — se
 
 **Pure vs. impure engineering**: Goedecke draws a distinction between "pure" engineering (well-scoped, technical goals like compilers and runtimes) where the just-say-no engineer thrives, and "impure" engineering (poorly-scoped, customer-driven features) where they don't. The ZIRP era allowed companies to treat even impure work like pure work. Now, just-say-no engineers should move into core infrastructure roles where quality standards remain high, accepting a more limited scope than in the 2010s.
 
-## Key Quotes
+### The o3 GeoGuessr Prompt Illusion (May 2026)
+
+Goedecke constructed a rigorous 200-image benchmark to test whether Kelsey Piper's famous o3 "GeoGuessr" prompt actually improved geolocation performance. The results surprised many in the AI community:
+
+| Prompt | n | Median km | Mean km | ≤25 km | ≤100 km | ≤500 km |
+|--------|---|-----------|---------|--------|---------|---------|
+| **Default** | 200 | **83.2** | **440.7** | 58 | 109 | 176 |
+| GeoGuessr prompt | 200 | 102.3 | 481.9 | 59 | 99 | 172 |
+
+**Key findings:**
+- The elaborate 10×-longer prompt **performed worse** than a simple default prompt
+- o3's geolocation ability **did not transfer** to gpt-5.4 or gpt-5.5 (median 156–163km vs o3's 83km)
+- The benchmark cost only ~$15 and took ~6 hours of distracted work to construct
+
+**Core lesson**: This demonstrates "how easy it is to fool yourself about the quality of prompting." When a model is already good at a task, an elaborate prompt gets credit for performance that was always there. Models are sycophantic about prompt quality — they "will happily make up stories for you about their own reasoning processes."
+
+**Why nobody checked**: Geolocation was only the story for about a week before the discourse moved on. Better AI tooling (GPT-5.5 doing the heavy lifting) now makes rigorous evaluation much cheaper.
+
+[[concepts/prompt-engineering-evaluation]] — Full concept page on the case study and its implications for prompt engineering methodology.
+
+
 
 > "If you are good at code review, you will be good at using AI agents."
 
@@ -194,6 +216,7 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 
 ## Related
 
+- [[concepts/prompt-engineering-evaluation]] — The o3 GeoGuessr prompt illusion and quantitative evaluation methodology
 - [[concepts/ai-coding-tools]] — Code review as the meta-skill for AI-assisted development
 - [[concepts/software-engineering]] — Career progression, system design, tech industry dynamics
 - [[concepts/ai-sycophancy]] — AI models agreeing with users even when wrong
@@ -222,10 +245,13 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 - **The left-wing case for AI** (2026-05-10): Outlines explicitly left-wing pro-AI arguments across five dimensions: (1) **Disability** — LLMs as powerful accessibility aids for neurodivergent, chronically ill, and mobility/vision-impaired users; (2) **Chronic illness and medical care** — LLMs enable patients to research conditions and advocate for themselves against dismissive medical establishments; (3) **Class and code-switching** — LLMs democratize access to "dangerous professional" communication styles that were previously gatekept by elite educational pipelines; (4) **Education** — LLMs provide private-tutor-level access to every motivated student, reducing educational inequality; (5) **Utopia** — if left-wing views are correct and you're technologically optimistic, super-smart AI inherently trends left-wing (all current frontier models profess left-leaning views, and attempts to train right-wing alternatives have failed). Includes a powerful reader testimonial from a disabled person describing how computers transformed their life in the 1980s-90s and how AI is now extending similar benefits to those with communication barriers.
 
 
+- **The famous o3 Geoguessr prompt did not work** (2026-05-22): Built a 200-image benchmark testing Kelsey Piper's elaborate o3 GeoGuessr prompt vs default. The elaborate prompt performed worse (median 102.3km vs 83.2km). GPT-5.4/5.5 lack o3's geolocation ability. Demonstrates the ease of self-deception in prompt engineering without quantitative evaluation.
+
 - **Prompts are technical debt too** (2026-05-20): Argues that prompts are a worse form of technical debt than code — prompts are model-specific and silently degrade with each model update, whereas code is stable when untouched. Recommends using third-party AI coding tools with minimal customization. Core insight: code review skills transfer directly to AI agent evaluation, making code review the meta-skill of the AI era.
 
 ## Sources
 
+- raw/articles/seangoedecke.com--the-o3-geoguessr-prompt-did-not-work--c4335530.md
 - seangoedecke.com — Primary blog
 - "Software Engineering After the Vibe Shift" — Book (self-published, print at cost)
 - "If You Are Good at Code Review, You Will Be Good at Using AI Agents"
@@ -239,6 +265,7 @@ His book is self-published at cost, with the raw PDF freely available on GitHub.
 
 ## References
 
+- seangoedecke.com--the-o3-geoguessr-prompt-did-not-work--c4335530
 - seangoedecke.com--2025-wrapup--17f79aba
 - seangoedecke.com--a-little-bit-cynical--7ba10c9b
 - seangoedecke.com--addicted-to-being-useful--63b6b7ac

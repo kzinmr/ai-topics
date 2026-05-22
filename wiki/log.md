@@ -3,6 +3,21 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-22] blog-wiki-ingest | Triage processed: 1 take + 1 reference
+
+- **Source**: Blog triage (May 22 blogs: seangoedecke.com, simonwillison.net)
+
+### Pages Enriched
+- **entities/seangoedecke-com.md** — Added "The famous o3 GeoGuessr prompt did not work" article: 200-image benchmark, elaborate prompt performed worse than default, o3 geolocation ability not inherited by GPT-5.4/5.5. Added to Timeline, new section "The o3 GeoGuessr Prompt Illusion", Recent Articles, sources, References.
+- **entities/simon-willison.md** — Added FTC Active Listening enforcement entry: $1M settlement, Cox Media Group/MindSift/1010 Digital Works, confirms Simon's September 2024 active listening theory. Added to May 2026 Updates and References.
+
+### Raw Articles Referenced
+- raw/articles/seangoedecke.com--the-o3-geoguessr-prompt-did-not-work--c4335530.md
+- raw/articles/simonwillison.net--2026-may-22-ftc-active-listening--c1209aa4.md
+
+
+---
+
 ## [2026-05-22] newsletter-wiki-ingest | 10 takes + 3 references processed
 
 - **Source**: Newsletter triage (May 21-22 newsletters: AINews, Ben's Bites, True Positive Weekly #162, Superintel)
