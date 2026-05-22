@@ -4,9 +4,9 @@ created: 2026-05-20
 updated: 2026-05-20
 type: concept
 tags:
-  [context-engineering, context-management, ai-agent-engineering, ai-agents, prompting, agent-architecture, memory-systems, agent-memory, subagents, rag, prompt-caching, token-economics, agentic-engineering, progressive-disclosure, agent-design-patterns]
+  [context-engineering, context-management, ai-agent-engineering, ai-agents, prompting, agent-architecture, memory-systems, agent-memory, subagents, rag, prompt-caching, token-economics, agentic-engineering, progressive-disclosure, agent-design-patterns, enterprise-agents, agent-identity, agent-governance]
 sources:
-  [raw/articles/2025-09-29_anthropic_effective-context-engineering-for-ai-agents.md, raw/articles/2025-06-23_lancemartin_context-engineering-for-agents.md, raw/articles/2026-01-09_lancemartin_agent-design-patterns.md]
+  [raw/articles/2025-09-29_anthropic_effective-context-engineering-for-ai-agents.md, raw/articles/2025-06-23_lancemartin_context-engineering-for-agents.md, raw/articles/2026-01-09_lancemartin_agent-design-patterns.md, raw/articles/substack.com--redirect-6b46ec4c-ff7c-43b5-9e62-b0d4bf1dca99--bb1f035d.md]
 ---
 
 # Context Engineering
@@ -150,6 +150,18 @@ Agents direct their own actions. Primitives like a **filesystem** (persistent co
 > "The fundamental coding agent abstraction is the CLI … agents need access to the OS layer." — @rauchg
 
 Claude Code and Manus both give agents a computer. This enables offloading context to files, using CLI tools instead of tool-calling-layer tools, and writing code that processes data without loading it into context.
+
+### Enterprise Context Engineering (Box/Aaron Levie, April 2026)
+
+[[entities/aaron-levie|Aaron Levie]] (Box CEO) articulated the enterprise-scale context engineering challenge from the perspective of a platform serving **67% of the Fortune 500** with $1.1B+ ARR:
+
+- **The 60K-Token Problem**: "I have 10 million documents, which maybe is times five pages per document. I'm at 50 million pages of information and I have 60,000 tokens. How do I bridge the 50 million pages with the couple hundred I get to work with?" This is the fundamental enterprise context engineering challenge — selecting from millions of documents what fits in a single context window.
+
+- **Agent Search Limitations**: Frontier models are "not actually that good at searching" — they lack the explore/exploit tradeoff humans use naturally when navigating information spaces. Agents don't know when to stop searching vs. when to give up, leading to the **"stop searching" problem**: lower-tier models return partial results ("I found 6 of 10 addresses") without knowing they're incomplete.
+
+- **Context Pruning from Enterprise Perspective**: Agents repeat mistakes because failed attempts remain in context, effectively becoming few-shot examples — the "Groundhog's Day inside these models" problem. Levie identifies this as a critical barrier to reliable enterprise agent deployment. Better models (Opus 4.5/4.6, Gemini 3.5 Pro) can "smell something fishy" — detecting contradictions and re-ranking search results — but the fundamental pruning challenge remains unsolved at scale.
+
+- **APEX Eval**: Box partnered with Apex (CoreWork) on agent evaluation that tests both the harness and the model, tracking how different professions structure workspaces and measuring model family improvements across Opus 4.5/4.6 and Sonnet 4.5/4.6.
 
 ### Progressive Disclosure
 

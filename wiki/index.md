@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-21 | Total pages: 2072 | Indexed entries: 1214 | Not in index: 858 |
+> Last updated: 2026-05-22 | Total pages: 2075 | Indexed entries: 1217 | Not in index: 858 |
 
-## Entities (650 pages)
+## Entities (651 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -169,6 +169,7 @@
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
 - [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.
 - [[entities/dario-amodei]] — **Role** | Co-founder & CEO, Anthropic |
+- [[entities/datasette-agent]] — Extensible AI assistant for Datasette/SQLite by Simon Willison (May 2026). Conversational SQL generation, chart plugins, LLM library integration. Live demo at agent.datasette.io.
 - [[entities/david-fowler]] — David Fowler (@davidfowl) — Distinguished Engineer at Microsoft. Creator of NuGet, SignalR, ASP.NET Core, Aspire (agent-ready DevOps). Tally (AI bank tx classifier). "AI Made Us Faster. That Was the Problem" (May 2026).
 - [[entities/dax-raad]] — **X** | @thdxr |
 - [[entities/daytona-io]] — CEO: Ivan Burazin. Composable computing environments (sandboxes) for AI agents.
@@ -659,7 +660,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1397 pages)
+## Concepts (1399 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -896,6 +897,7 @@
 - [[concepts/prime-rl-post-training]] — Prime-RL Post-Training for Subagents: Ramp Labs Fast Ask case study — RL post-training (GRPO) for specialized retrieval subagents using Qwen3.5 + Prime Intellect. Beats Opus 4.6 at Haiku latency.
 - [[concepts/programmatic-tool-calling]] — Programmatic Tool Calling — LLM Writing Code that Calls Tools
 - [[concepts/prompt-caching]] — How prompt caching works under the hood: paged attention, automatic prefix caching (APC), KV-cache reuse. Practical tips for maximizing cache hits with LLM providers. Based on vLLM internals.
+- [[concepts/prompt-engineering-evaluation]] — プロンプトエンジニアリングの定量的評価の必要性。Sean Goedeckeのo3 GeoGuessr実験: 有名な「魔法のプロンプト」がデフォルトのシンプルなプロンプトより劣ることをベンチマーク実証。
 - [[concepts/prompts-as-technical-debt]] — Prompts as Technical Debt — Prompts decay silently with model upgrades, making them a worse form of technical debt than code. Minimal prompting philosophy vs. harness engineering debate. Sean Goedecke (May 2026).
 - [[concepts/pydantic-ai-harness]] — pydantic-ai-harness — Official Capability Library for Pydantic AI
 - [[concepts/pytorch-fsdp]] — PyTorch FSDP (Fully Sharded Data Parallel)
@@ -938,6 +940,7 @@
 - [[concepts/agent-patterns]] — AIエージェントの一般的な設計パターンと実装プラクティス
 - [[concepts/agent-sandbox-patterns]] — Browser Useのエージェントサンドボクシングアーキテクチャ。ツール分離パターンとエージェント分離パターン
 - [[concepts/arc-agi-1]] — ARC-AGI-1 — François Cholletによるfluid intelligenceテスト。グリッドベースの抽象推論。o3が87.5%で初の人間レベル突破。2024年ARC Prize。
+- [[concepts/artificial-contributors-open-source]] — RFC草案 (Andrew Nesbitt, May 2026): AIによるOSS貢献の開示・品質・行動規範を定義。ACは人間を装わず、テストを実行し、メンテナの皮肉を理解すべし。
 - [[concepts/ask-user-question-pattern]] — エージェントがユーザーに確認を求めるためのハーネスパターン
 - [[concepts/ai-patterns-for-glam|AI Design Patterns for Information Professionals]] — Practical "boring AI" design patterns for GLAM and information professionals. Covers discovery, structured extraction, evaluation, and infrastructure. WIP book by [[entities/daniel-van-strien]].
 - [[concepts/ai-red-teaming-careers]] — AIレッドチーミング/プロンプトインジェクション関連キャリアの包括的ガイド。職種（AI Red Teamer $130K-250K、Adversarial ML Researcher、AI PenTester）、雇用企業（OpenAI/Anthropic/DeepMind/Meta/HiddenLayer）、必須スキル、ツール（PyRIT/Garak/Promptfoo）、キャリアパス。

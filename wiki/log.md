@@ -1980,3 +1980,36 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
   - Sources: GitHub repo, raw/article stub
   - Wikilinks: concepts/coding-agents, entities/claude-code, entities/openai-codex, concepts/browser-automation, concepts/agent-tooling, entities/shloked, entities/shlok-khemani
 - **Updated index.md** — Added both pages to index; updated counts (Total: 2070→2072, Indexed: 1212→1214, Entities: 649→650, Concepts: 1396→1397)
+
+## 2026-05-22 created | entities/datasette-agent.md
+- **Created entities/datasette-agent.md** — Extensible AI assistant for Datasette/SQLite by Simon Willison (May 2026)
+  - Overview, How It Works (SQL query generation pipeline, example with pelican sighting query), Live Demo (Gemini 3.1 Flash-Lite, agent.datasette.io), Plugin Architecture (datasette-agent-charts, sprites), Local Model Support (LM Studio + gemma-4-26b-a4b), Relationship to LLM Library (0.32a0 refactor), Future Plans (Claw, Datasette Cloud, more plugins)
+  - Tags: entity, ai-agents, product, tool, sqlite, llm, datasette, plugins, data-science, developer-tooling
+  - Sources: raw/articles/simonwillison.net--2026-may-21-datasette-agent--9fcb051d.md, raw/articles/simonwillison.net--2026-may-21-datasette-agent-2--8297d2dd.md
+  - Wikilinks: concepts/datasette, concepts/sqlite, concepts/llm-python-library, concepts/ai-agents, concepts/tool-use, entities/datasette-llm-limits
+
+## 2026-05-22 created | concepts/artificial-contributors-open-source.md
+- **Created concepts/artificial-contributors-open-source.md** — RFC-style framework for AI contributions to OSS by Andrew Nesbitt (May 2026)
+  - Key Definitions (Artificial Contributor, Operator), Requirements Summary (Disclosure §3, Quality §4, Conduct §5, Rate/Identity §6, Operator Responsibilities §7), Security Considerations (meta-critique), Detection Challenges, Implementation Status, Significance
+  - Tags: concept, ai-agents, open-source, governance, policy, software-engineering, agent-safety, community, ethics
+  - Sources: raw/articles/nesbitt.io--2026-05-21-rfc-artificial-contributors-to-open-source-html--b047a822.md
+  - Wikilinks: entities/openclaw, concepts/ai-coding, concepts/agent-safety, concepts/open-source-ai
+
+## 2026-05-22 created | concepts/prompt-engineering-evaluation.md
+- **Created concepts/prompt-engineering-evaluation.md** — Quantitative evaluation of prompt engineering claims, via Sean Goedecke's o3 GeoGuessr benchmark
+  - Case study: Kelsey Piper's famous elaborate prompt for o3 geolocation actually underperforms default prompt (median 83.2km vs 102.3km) on 200-image benchmark
+  - Cross-model comparison: gpt-5.4/5.5 lack o3's geolocation ability. Key lessons: prompt iteration creates illusions, benchmarks are essential, AI discourse outpaces verification
+  - Tags: concept, prompting, evaluation, benchmark, methodology, chain-of-thought, metaprompting
+  - Sources: raw/articles/seangoedecke.com--the-o3-geoguessr-prompt-did-not-work--c4335530.md
+  - Wikilinks: concepts/chain-of-thought, concepts/metaprompting, concepts/evaluation, concepts/benchmark, concepts/sycophancy
+
+## 2026-05-22 updated | entities/anthropic.md
+- **Updated entities/anthropic.md** — Added 「収益性論争: 「黒字化」の実態 (May 2026)」section
+  - Detailed analysis of WSJ's "first profitable quarter" claim: SpaceX discount matching profitability window, ARR data contradictions across Anthropic's own statements, total compute cost estimates ($45B/year), revenue inflation tactics
+  - Source: raw/articles/wheresyoured.at--anthropics-profitability-swindle--d54ac6ec.md
+  - Bumped updated date to 2026-05-22; added new source to frontmatter
+
+## 2026-05-22 updated | wiki/index.md + wiki/log.md
+- **Updated index.md** — Added datasette-agent (entities), artificial-contributors-open-source (concepts), prompt-engineering-evaluation (concepts)
+  - Updated counts: Total 2072→2075, Indexed 1214→1217, Entities 650→651, Concepts 1397→1399
+- **Updated log.md** — This entry

@@ -30,12 +30,16 @@ Agents operate through delegated identities (API keys, OAuth tokens, service acc
 - Identity rotation and revocation
 - Audit trails for access events
 
+**Enterprise File System Identity** ([[entities/aaron-levie|Aaron Levie]], Box CEO, April 2026): Levie argues that agent identity is fundamentally different from human identity. Unlike humans who have privacy boundaries and legal responsibility, agents lack these properties — the agent creator retains liability. This creates new permission boundaries: "how do I give an agent a subset of my data and somebody else's data, and what parts can I see as the creator?" Box's waterfall permission model (higher-level access grants everything below) works for humans but needs adaptation for multi-agent collaboration.
+
 ### 2. Runtime Guardrails
 Real-time controls preventing unauthorized actions:
 - Data exposure prevention
 - Tool-use constraints
 - Rate limits and throttling
 - Input/output sanitization
+
+**"Easy Mode" vs "Hard Mode" Agent Identity** ([[entities/aaron-levie|Aaron Levie]], Box CEO, April 2026): Current agent platforms (Claude Code, Cursor, Codex) operate in "easy mode" where the agent simply inherits the user's identity and permissions. The "hard mode" — where agents run autonomously with delegated identities, cross-person collaboration, and partial data access — remains unsolved. Levie notes that security incidents from prompt injection agents navigating CRM systems to extract unauthorized data are inevitable.
 
 ### 3. Policy Enforcement at Runtime
 Policy must travel with the agent, not remain confined to a specific platform. Platform-independent governance:
