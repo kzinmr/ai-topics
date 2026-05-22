@@ -1,0 +1,25 @@
+{
+  "run_id": "20260522T180035Z",
+  "date": "2026-05-22",
+  "pipeline": "dreaming",
+  "items": [
+    {
+      "cluster_id": "entity-enrichment-may-2026",
+      "path": "raw/articles/2026-05-22_elevenlabs_elevenreader-launches-premium-audiobooks.md",
+      "title": "200,000 premium audiobooks are now available in ElevenReader",
+      "size": 2973,
+      "status": "reference",
+      "recommended_action": "reference",
+      "reason": "★★★☆☆ ElevenLabs ElevenReaderに20万冊のプレミアムオーディオブック追加。製品発表であり深い技術内容はないが、AI音声→コンテンツ消費のユースケース拡大を示す。entities/elevenlabs.md（updated 2026-05-19）にelevenreader言及ゼロ。軽微な追記で十分。"
+    },
+    {
+      "cluster_id": "entity-enrichment-may-2026",
+      "path": "raw/articles/2026-05-21_glean_health-agents-2026.md",
+      "title": "Health Agents: Designing a multi-agent platform for proactive health monitoring",
+      "size": 17802,
+      "status": "reference",
+      "recommended_action": "reference",
+      "reason": "★★★★☆ Gleanのマルチエージェント健康モニタリングプラットフォーム設計。プロアクティブな健康管理のためのエージェントアーキテクチャ解説。entities/glean.md（updated 2026-05-17）にhealth agent言及ゼロ。AI Agentのヘルスケア応用として価値あるが、wikiのコアフォーカス（LLM/AI Agent技術）からやや外れるためreference扱い。"
+    }
+  ]
+}

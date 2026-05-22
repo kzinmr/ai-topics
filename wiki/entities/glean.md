@@ -2,7 +2,7 @@
 title: "Glean"
 type: entity
 created: 2026-05-08
-updated: 2026-05-17
+updated: 2026-05-22
 tags:
   - company
   - search
@@ -13,6 +13,7 @@ sources:
   - https://www.glean.com/
   - https://www.glean.com/about
   - raw/articles/2026-05-15_glean_cowork-mcp-eval.md
+  - raw/articles/2026-05-21_glean_health-agents-2026.md
 ---
 
 # Glean

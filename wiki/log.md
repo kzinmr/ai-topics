@@ -4,6 +4,30 @@
 > Format: `## [YYYY-MM-DD] action | subject`
 
 
+
+## [2026-05-22] ingest | Nightly dreaming consolidation — Agent Execution Tax + 6 enrichments
+
+### Pages Created
+- [[concepts/agent-execution-tax]] — Fireworks AI概念: 720ブラウザエージェント実行から発見した構造化出力信頼性ボトルネック。Execution Tax定義、Reliability-Adjusted Accuracy、Cost Per Successful Task、Tool-Use Taxとの関係。
+
+### Pages Enriched
+- [[entities/nvidia]] — Nemotron-Labs-Diffusion tri-mode model (AR+拡散+自己投機, 3B/8B/14B, Ministral3ベース)
+- [[entities/ed-zitron]] — Anthropic's 'Profitability' Swindle記事追加。SpaceX割引・収益矛盾・前受金仮説。
+- [[entities/anthropic]] — Ed Zitronの収益性批判セクション追加。SpaceX Colossus discount・ARR矛盾・$45B/年見積もり。
+- [[entities/harvey]] — Contract Intelligence製品追加。契約分析・条項抽出・リスク評価のAIエージェント。
+- [[entities/elevenlabs]] — ElevenReader 20万プレミアムオーディオブック追加（reference）。
+- [[entities/glean]] — Health Agents multi-agent健康モニタリングプラットフォーム追加（reference）。
+
+### Sources
+- Fireworks AI Blog: Agent Execution Tax (May 20, 2026)
+- MarkTechPost: NVIDIA Nemotron-Labs-Diffusion (May 20, 2026)
+- Ed Zitron/WYEA: Anthropic's Profitability Swindle (May 21, 2026)
+- Harvey Blog: Contract Intelligence (May 21, 2026)
+- ElevenLabs Blog: ElevenReader Premium Audiobooks (May 22, 2026)
+- Glean Blog: Health Agents (May 21, 2026)
+
+---
+
 ## [2026-05-22] health-fix | Orphan batch registration (20 pages)
 
 ### Pages Added to Index

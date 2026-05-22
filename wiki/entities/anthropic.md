@@ -65,6 +65,17 @@ The filesystem-as-memory approach was validated through [DavidSHershey's Claude 
 
 See [[concepts/claude-managed-agents]] for full details.
 
+
+### Ed Zitron's Profitability Critique (May 2026)
+
+[[entities/ed-zitron]] critically analyzed WSJ reporting that Anthropic was "about to have its first profitable quarter" (Q2 2026). Key findings in Zitron's analysis:
+
+- **SpaceX discount**: Anthropic's deal with SpaceX for Colossus-1/2 includes a reduced fee during May–June ramp-up, artificially depressing compute costs. Full $1.25B/month payments start July. The "profit" is a temporary artifact of this discount.
+- **Revenue inconsistencies**: Anthropic's ARR claims ($14B Feb → $19B Mar → $30B Apr) are difficult to reconcile with CFO Krishna Rao's sworn testimony (Mar 9) stating revenues "exceeding $5 billion to date."
+- **Prepayment booking**: Zitron argues Anthropic likely books enterprise token prepayments ($50M+ for 12-month deals) as immediate revenue before compute delivery, inflating numbers.
+- **Total compute cost estimate**: With SpaceX ($1.25B/mo) + Google/Amazon/Microsoft deals, estimated compute spend is ~$3.75B/month ($45B/year) — wiping out any real profitability.
+- **Context**: This is consistent with Zitron's broader [[concepts/ai-bubble-thesis]], arguing Anthropic's economics depend on circular capital flows from hyperscaler investors who also bill them for compute.
+
 ### Live Artifacts in Cowork
 
 Anthropic introduced **live artifacts** in Cowork mode (Apr 2026):

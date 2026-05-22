@@ -1,18 +1,35 @@
 ---
 title: NVIDIA
 created: 2026-04-26
-updated: 2026-05-14
+updated: 2026-05-22
 type: entity
 tags: [company, platform]
-sources:
+sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md,
   - raw/articles/2026-04-25-nvidia-dynamo-agentic-inference.md
   - raw/articles/2026-01-05_nvidia_vera-rubin-platform.md
   - https://www.tomshardware.com/tech-industry/artificial-intelligence/jensen-says-nvidia-now-has-zero-percent-market-share-in-china
+  - raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md
 ---
 
 # NVIDIA Corporation
 
 NVIDIA is a semiconductor and AI infrastructure company. In the context of this wiki, NVIDIA is significant for:
+
+### Nemotron-Labs-Diffusion: Tri-Mode Language Model (May 2026)
+
+NVIDIA released Nemotron-Labs-Diffusion, a language model family (3B, 8B, 14B) that unifies **autoregressive (AR) decoding, diffusion-based parallel decoding, and self-speculation decoding** in a single set of weights. The same model switches modes at inference time by changing the attention pattern.
+
+- **Training**: Joint AR-diffusion objective on top of pretrained Ministral3 models, 256 H100 GPUs. Stage 1 (1T tokens pure AR) → Stage 2 (300B tokens joint objective)
+- **Three decoding modes**:
+  1. **AR Decoding**: Standard causal left-to-right, best for high-concurrency cloud serving
+  2. **Diffusion Decoding**: Parallel denoising within fixed-length blocks (32 tokens), bidirectional attention inside block
+  3. **Self-Speculation**: Diffusion pathway drafts k candidates → AR verifies longest contiguous prefix. 5.99× TPF (8B linear) and 6.38× TPF (quadratic)
+- **Performance**: NLD-8B Self-Spec achieves 62.81% avg accuracy at 5.99× tokens/forward vs Qwen3-8B's 62.75% at 1× TPF
+- **License**: NVIDIA Nemotron Open Model License
+- **Availability**: Hugging Face `nvidia/Nemotron-Labs-Diffusion-{size}` (3B, 8B, 14B Base/Instruct/Vision-Language variants)
+
+This complements [[concepts/nvidia-vera-rubin]] by demonstrating NVIDIA's focus on novel inference-time architectures alongside system-level integration.
+
 
 ## Key Products & Initiatives
 

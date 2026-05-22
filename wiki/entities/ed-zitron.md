@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-05-20
+updated: 2026-05-22
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -16,6 +16,7 @@ tags:
   - techno-pessimism
 sources:
   - raw/articles/wheresyoured.at--premium-ais-circular-psychosis--51c035f1.md
+  - raw/articles/wheresyoured.at--anthropics-profitability-swindle--d54ac6ec.md
   - https://www.wheresyoured.at/
   - raw/articles/wheresyoured.at--ai-is-too-expensive--2387fc59.md
   - https://www.wheresyoured.at/
@@ -135,6 +136,15 @@ Detailed RPO (Remaining Performance Obligations) analysis:
 
 
 In "Where Are All The Data Centers?" (May 2026), Zitron conducted an investigative analysis of hyperscaler data center construction claims, finding significant discrepancies between announced capacity and verified operational infrastructure:
+
+### Anthropic's 'Profitability' Swindle (May 2026)
+
+Zitron critically analyzed WSJ reporting that Anthropic was "about to have its first profitable quarter" ($10.9B Q2 revenue, $559M operating profit). He demonstrated the profit was an accounting artifact:
+
+- **SpaceX Colossus discount**: Anthropic's SpaceX deal included a reduced fee during May–June (ramp-up period), artificially depressing compute costs for the exact months needed to show a profit. Full $1.25B/month starts July.
+- **Revenue inconsistencies**: Anthropic claimed $14B ARR in Feb → $19B ARR in Mar → $30B ARR in Apr, but CFO Krishna Rao stated under oath (Mar 9) that Anthropic had revenues "exceeding $5 billion to **date**" — contradictory to the leaked growth figures.
+- **Prepayment hypothesis**: Anthropic likely takes prepayment of tokens from enterprises ($50M+ intended for 12 months) booked as immediate revenue before delivering the compute — inflating revenue while depressing costs.
+- **Overall**: "That operating profit is a result of accountancy rather than any improvements to its business model." If Anthropic paid full-rate compute during those months, economics would revert to the circular dependency pattern Zitron has documented since 2024.
 
 ### Key Findings
 

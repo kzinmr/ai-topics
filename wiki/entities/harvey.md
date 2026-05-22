@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-05-17
+updated: 2026-05-22
 tags:
   - security
   - company
@@ -24,8 +24,9 @@ Harvey is a domain-specific AI platform for the legal and professional services 
 | **Type** | AI Platform / Vertical SaaS (Legal) |
 | **Founded** | 2022 (San Francisco, CA) |
 | **Leadership** | Winston Weinberg (Co-founder & CEO), Gabriel Pereyra (Co-founder & President) |
-| **Key Products** | Harvey Assistant, Harvey Vault, Harvey Knowledge, Harvey Workflow Agents, Harvey Mobile |
+| **Key Products** | Harvey Assistant, Harvey Vault, Harvey Knowledge, Harvey Workflow Agents, Harvey Mobile, Contract Intelligence |
 | **Website** | [harvey.ai](https://www.harvey.ai) |
+| **Blog** | [harvey.ai/blog](https://www.harvey.ai/blog) |
 | **Tech Blog** | [harvey.ai/blog](https://www.harvey.ai/blog) |
 
 ## Key Facts

@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-05-19
+updated: 2026-05-22
 tags:
   - company
   - voice-ai
@@ -11,6 +11,7 @@ aliases: ["11labs", "Eleven Labs"]
 sources:
   - https://elevenlabs.io
   - raw/articles/2026-05-19_elevenlabs_building-elevenagents-with-claude-code.md
+  - raw/articles/2026-05-22_elevenlabs_elevenreader-launches-premium-audiobooks.md
 ---
 
 # ElevenLabs
@@ -22,11 +23,16 @@ Leading AI voice and speech synthesis company developing natural-sounding text-t
 | **Type** | Private (VC-backed) |
 | **Founded** | 2022 |
 | **Leadership** | Mati Staniszewski (Co-Founder & CEO), Piotr Dąbkowski (Co-Founder & CTO) |
-| **Key Products** | ElevenAgents, ElevenCreative, ElevenAPI, Eleven v3 (TTS), Eleven Music, Scribe v2 Realtime |
+| **Key Products** | ElevenAgents, ElevenCreative, ElevenAPI, Eleven v3 (TTS), Eleven Music, Scribe v2 Realtime, ElevenReader |
 | **Website** | [elevenlabs.io](https://elevenlabs.io) |
 | **Tech Blog** | [elevenlabs.io/blog](https://elevenlabs.io/blog) |
 
 ## Key Facts
+
+### ElevenReader Premium Audiobooks (May 2026)
+
+ElevenLabs launched **200,000 premium audiobooks** in ElevenReader, expanding the AI narration platform from user-generated to professionally produced content. This marks a shift in AI voice's role from tool to content distribution platform.
+
 - Founded in 2022 by Polish childhood friends Mati Staniszewski (ex-Palantir) and Piotr Dąbkowski (ex-Google ML)
 - Raised $500M Series D at $11B valuation (Feb 2026); $500M+ ARR
 - 400+ employees; investors include BlackRock, NVIDIA, Andreessen Horowitz, and celebrity investors
