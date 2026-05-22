@@ -1,7 +1,7 @@
 ---
 title: turbopuffer
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-22
 type: entity
 tags:
   - search
@@ -23,6 +23,7 @@ sources:
   - raw/articles/2026-05-20_turbopuffer_reinforcement-learning-sid-ai.md
   - https://turbopuffer.com
   - https://turbopuffer.com/docs
+  - raw/newsletters/2026-05-22-ainews-new-ai-infra-unicorns-exa.md
 ---
 
 # turbopuffer
@@ -107,3 +108,9 @@ Real-world corpora evolve, but training questions reference specific document ve
 - **Documentation**: https://turbopuffer.com/docs
 - **Blog**: https://turbopuffer.com/blog
 - **ANN v3 Post**: https://turbopuffer.com/blog/ann-v3
+
+### $100M ARR Milestone (May 2026)
+
+turbopuffer crossed **$100M annualized run-rate in March 2026**, growing from $1M to $100M ARR in **19 months**. The company is **profitable** with less than $1M in external funding.
+
+This represents one of the fastest growth trajectories in AI infrastructure: bootstrapped-like capital efficiency with hyper-growth ARR.

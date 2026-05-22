@@ -1,7 +1,7 @@
 ---
 title: DeepSeek-V4
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-22
 type: concept
 tags:
   - model
@@ -16,6 +16,7 @@ sources:
   - raw/papers/2026-04-xx_deepseek-v4-technical-report.md
   - raw/articles/2026-05-08_hn-deepseek-v4-discussion.md
   - https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf
+  - raw/newsletters/2026-05-22-tpweek162-deepseek-v4.md
 ---
 
 # DeepSeek-V4
@@ -110,6 +111,19 @@ V4の最大のシステム革新の一つ。
 |------|---------------|-----------------|
 | **トークンあたりFLOPs** | 27%（**3.7x削減**） | 10%（**10x削減**） |
 | **KVキャッシュサイズ** | 10%（**10x削減**） | 7%（**14x削減**） |
+
+### KV-Cache Reduction: 2% of Baseline
+
+DeepSeek V4 compressed attention achieves **KV-cache at just 2%** of naive attention at 1M context:
+
+| Technique | Effective KV-cache |
+|-----------|-------------------|
+| CSA (stride 4) | 25% of naive |
+| HCA (stride 128) | 0.8% for global context |
+| Combined (CSA+HCA+SWA) | ~2% of naive |
+
+A model needing 1TB KV-cache with standard attention needs only ~20GB — enabling single-node inference.
+
 
 > 1MコンテキストでV4-ProのFLOPsはV3.2の約1/4、KVキャッシュは1/10。これはHybrid AttentionとmHCの相乗効果による。
 

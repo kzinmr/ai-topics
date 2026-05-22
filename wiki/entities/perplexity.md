@@ -1,7 +1,7 @@
 ---
 title: "Perplexity"
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-22
 type: entity
 tags:
   - entity
@@ -20,6 +20,7 @@ related:
 sources:
   - raw/newsletters/2026-05-06-ainews-silicon-valley-gets-serious-about-services.md
   - https://open.substack.com/pub/swyx/p/ainews-silicon-valley-gets-serious
+  - raw/newsletters/2026-05-22-ainews-openai-gpt-next-disproves.md
 ---
 
 
@@ -77,3 +78,12 @@ Perplexity's verticalization strategy leverages:
 ## Sources
 
 - [AINews: Silicon Valley gets Serious about Services](https://open.substack.com/pub/swyx/p/ainews-silicon-valley-gets-serious) — May 6, 2026
+
+### Context Compression System (May 2026)
+
+Perplexity announced a query-aware, citation-preserving context compression system:
+
+- Reduces context tokens by up to **70%**
+- **50x compression** on SimpleQA with frontier-quality results
+- Preserves citations in compressed output
+- Compression is query-aware: knows what matters for current question

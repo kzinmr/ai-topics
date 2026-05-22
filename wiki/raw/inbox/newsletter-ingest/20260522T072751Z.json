@@ -1,0 +1,535 @@
+{
+  "ok": true,
+  "run_id": "20260522T071604Z",
+  "triaged_at": "20260522T072751Z",
+  "parent_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "summary": {
+    "total_newsletters": 9,
+    "critical": 5,
+    "high": 1,
+    "low": 3,
+    "skip": 0
+  },
+  "classifications": [
+    {
+      "message_id": "<20260521072836.3.a8d899f8f31bdcde@mg-d1.substack.com>",
+      "subject": "[AINews] OpenAI GPT-next disproves 80 year old Erdős planar unit distance problem for under $1000",
+      "source_label": "uid=120",
+      "date": "2026-05-21",
+      "importance": "critical",
+      "relevance_score": 95,
+      "primary_topics": [
+        "math-breakthrough",
+        "agent-benchmarks",
+        "open-source-models",
+        "inference-time-scaling"
+      ],
+      "public_url": "https://open.substack.com/pub/swyx/p/ainews-openai-gpt-next-disproves",
+      "key_items": [
+        {
+          "title": "OpenAI Math Breakthrough: Erdős Unit Distance Problem",
+          "description": "GPT-5.6/next disproves 80-year-old Erdős conjecture for under $1000 in compute. 125 pages of reasoning, verified by Timothy Gowers as first clear example of AI solving a well-known open math problem.",
+          "wiki_targets": [
+            "concepts/inference-time-scaling.md",
+            "concepts/ai-math-reasoning.md"
+          ],
+          "priority": 1
+        },
+        {
+          "title": "InferenceBench: Agent R&D Automation Benchmark",
+          "description": "New benchmark for AI R&D automation agents. Frontier agents struggle with system-level engineering, inverse scaling observed (smaller models more robust).",
+          "wiki_targets": [
+            "concepts/agent-benchmarks.md",
+            "concepts/ai-rd-automation.md"
+          ],
+          "priority": 2
+        },
+        {
+          "title": "MINTEval: Long-Context Memory Systems Benchmark",
+          "description": "Tests memory under 138.8K avg tokens (max 1.8M). Best accuracy only 33.4%. Argues memory should be a dedicated learned subsystem.",
+          "wiki_targets": [
+            "concepts/agent-memory.md",
+            "concepts/long-context-evaluation.md"
+          ],
+          "priority": 3
+        },
+        {
+          "title": "Cohere Command A+ Open Release",
+          "description": "218B MoE / 25B active, Apache 2.0. Runs on 2×H100 at W4A4. Intelligence Index 37 (≈Claude 4.5 Haiku).",
+          "wiki_targets": [
+            "entities/cohere.md"
+          ],
+          "priority": 4
+        },
+        {
+          "title": "ThoughtTrace: User Thought Dataset",
+          "description": "10,174 thought annotations across 2,155 conversations. +41.7% for user behavior prediction, +25.6% for alignment.",
+          "wiki_targets": [
+            "concepts/alignment-evaluation.md"
+          ],
+          "priority": 5
+        }
+      ],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-21-ainews-openai-gpt-next-disproves-80-year-old-erd-s-planar-unit-distance-problem-.md"
+    },
+    {
+      "message_id": "<20260521130323.3.91e32894177b2cac@mg-d1.substack.com>",
+      "subject": "Google's take on openclaw",
+      "source_label": "uid=121",
+      "date": "2026-05-21",
+      "importance": "critical",
+      "relevance_score": 92,
+      "primary_topics": [
+        "anthropic",
+        "google-io-2026",
+        "ai-agents",
+        "coding-agents",
+        "mcp"
+      ],
+      "public_url": "https://open.substack.com/pub/bensbites/p/googles-take-on-openclaw",
+      "key_items": [
+        {
+          "title": "Andrej Karpathy Joins Anthropic",
+          "description": "Karpathy joins Anthropic's pre-training team under Nick Joseph. Will lead group using Claude to accelerate pre-training research.",
+          "wiki_targets": [
+            "entities/andrej-karpathy.md",
+            "entities/anthropic.md"
+          ],
+          "priority": 1
+        },
+        {
+          "title": "Anthropic Financials: $10.9B Q2 Revenue, First Operating Profit",
+          "description": "Anthropic projects $10.9B revenue for June quarter. Will pay $1.25B/month for compute. Valuation may surpass OpenAI.",
+          "wiki_targets": [
+            "entities/anthropic.md"
+          ],
+          "priority": 2
+        },
+        {
+          "title": "Google Gemini Spark & Antigravity",
+          "description": "Gemini Spark: 24/7 personal agent across Workspace. Antigravity: desktop app/CLI agent/SDK/VS Code fork, now a Codex clone.",
+          "wiki_targets": [
+            "entities/google-gemini.md",
+            "concepts/coding-agents.md"
+          ],
+          "priority": 3
+        },
+        {
+          "title": "Figma Design Agent",
+          "description": "Design agent inside canvas: generates multiple directions in parallel, uses design system, collaborates in-file.",
+          "wiki_targets": [
+            "concepts/design-agents.md",
+            "entities/figma.md"
+          ],
+          "priority": 4
+        },
+        {
+          "title": "Active Graph: Long-Running Agent Framework",
+          "description": "Open-source framework for long-running agents: remembers events, reacts to new ones, compares runs.",
+          "wiki_targets": [
+            "concepts/agent-frameworks.md"
+          ],
+          "priority": 5
+        },
+        {
+          "title": "Factory's Droid: Deferred Context Engine",
+          "description": "Reduces context size by 40% by loading tools more selectively in AI agents.",
+          "wiki_targets": [
+            "concepts/agent-optimization.md"
+          ],
+          "priority": 6
+        },
+        {
+          "title": "VS Code Extension Compromise: 3,800 GitHub Repos Exfiltrated",
+          "description": "Poisoned third-party VS Code extension compromised GitHub employee device, exfiltrated ~3,800 internal repos.",
+          "wiki_targets": [
+            "concepts/ai-security.md"
+          ],
+          "priority": 7
+        }
+      ],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-21-google-s-take-on-openclaw.md"
+    },
+    {
+      "message_id": "<20260521.173103.be45f130@mta22>",
+      "subject": "OpenAI's Math Breakthrough Opens a New Era",
+      "source_label": "uid=122",
+      "date": "2026-05-21",
+      "importance": "high",
+      "relevance_score": 70,
+      "primary_topics": [
+        "math-breakthrough",
+        "openai"
+      ],
+      "public_url": null,
+      "key_items": [
+        {
+          "title": "OpenAI Math Breakthrough Coverage",
+          "description": "Beehiiv-sourced coverage of OpenAI's math breakthrough. Likely overlaps with AINews coverage. Links are beehiiv tracking URLs.",
+          "wiki_targets": [
+            "concepts/ai-math-reasoning.md"
+          ],
+          "priority": 3
+        }
+      ],
+      "note": "Beehiiv tracking URLs; all 20 links are tracking redirects. Content likely overlaps with uid=120 (swyx AINews). Deprioritize unless unique angle found.",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-21-openai-s-math-breakthrough-opens-a-new-era.md"
+    },
+    {
+      "message_id": "<20260521191353.3.1b59ada5512c7102@mg-d1.substack.com>",
+      "subject": "True Positive Weekly #162",
+      "source_label": "uid=123",
+      "date": "2026-05-21",
+      "importance": "high",
+      "relevance_score": 78,
+      "primary_topics": [
+        "mcp",
+        "agent-runtime",
+        "deepseek",
+        "agent-skills"
+      ],
+      "public_url": "https://open.substack.com/pub/aiweekly/p/true-positive-weekly-162",
+      "key_items": [
+        {
+          "title": "Hidden Technical Debt of AI Systems: Agent Runtime",
+          "description": "Article on agent runtime technical debt in AI systems.",
+          "wiki_targets": [
+            "concepts/agent-runtime.md"
+          ],
+          "priority": 2
+        },
+        {
+          "title": "How to Correctly Use MCP Servers with AI Agents",
+          "description": "Guide on proper MCP server integration patterns with AI agents.",
+          "wiki_targets": [
+            "concepts/mcp.md"
+          ],
+          "priority": 1
+        },
+        {
+          "title": "Google Research: Empirical Research Assistance (ERA)",
+          "description": "Four ways Google Research scientists use ERA for empirical research.",
+          "wiki_targets": [
+            "concepts/ai-research-tools.md"
+          ],
+          "priority": 3
+        },
+        {
+          "title": "DeepSeek V4 Compressed Attention: KV-Cache to 2%",
+          "description": "DeepSeek V4 achieves extreme KV-cache compression down to 2%.",
+          "wiki_targets": [
+            "concepts/kv-cache.md",
+            "entities/deepseek.md"
+          ],
+          "priority": 4
+        },
+        {
+          "title": "Breaking Opus 4.7 with ChatGPT (Hacking Claude's Memory)",
+          "description": "Project demonstrating Claude memory exploitation via ChatGPT.",
+          "wiki_targets": [
+            "concepts/ai-security.md"
+          ],
+          "priority": 5
+        },
+        {
+          "title": "Agent Skills for Google Products",
+          "description": "Tool for agent skills targeting Google products and technologies.",
+          "wiki_targets": [
+            "concepts/agent-skills.md"
+          ],
+          "priority": 6
+        }
+      ],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-21-true-positive-weekly-162.md"
+    },
+    {
+      "message_id": "<20260521200539.3.c4dfddc744c75784@mg-d0.substack.com>",
+      "subject": "You'll lose your job in 2027.",
+      "source_label": "uid=124",
+      "date": "2026-05-21",
+      "importance": "low",
+      "relevance_score": 30,
+      "primary_topics": [
+        "ai-job-displacement",
+        "opinion"
+      ],
+      "public_url": "https://open.substack.com/pub/elenaverna/p/youll-lose-your-job-in-2027",
+      "key_items": [
+        {
+          "title": "AI Job Displacement Prediction",
+          "description": "Elena Verna's opinion piece predicting AI-driven job losses by 2027. Growth/product leadership perspective.",
+          "wiki_targets": [
+            "concepts/ai-economics.md"
+          ],
+          "priority": 8
+        }
+      ],
+      "note": "Opinion/speculation piece, tangentially relevant. Low priority for wiki ingestion.",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-21-you-ll-lose-your-job-in-2027.md"
+    },
+    {
+      "message_id": "<20260521203740.3.2e32ac6e05e50490@mg-d0.substack.com>",
+      "subject": "Giving Agents Computers — Ivan Burazin, Daytona",
+      "source_label": "uid=125",
+      "date": "2026-05-21",
+      "importance": "critical",
+      "relevance_score": 98,
+      "primary_topics": [
+        "agent-infrastructure",
+        "sandbox",
+        "computer-use",
+        "daytona",
+        "rl-workloads"
+      ],
+      "public_url": "https://open.substack.com/pub/swyx/p/daytona",
+      "key_items": [
+        {
+          "title": "Daytona: Composable Computers for AI Agents",
+          "description": "Daytona provides sandbox/computer-use infrastructure for AI agents via API. 74% MoM growth, 850K sandboxes/day by single customer, 60ms spin-up, 50K concurrent in 75s.",
+          "wiki_targets": [
+            "entities/daytona.md",
+            "concepts/agent-sandbox.md",
+            "concepts/computer-use.md"
+          ],
+          "priority": 1
+        },
+        {
+          "title": "RL Workloads Now 50% of Daytona Usage",
+          "description": "RL/eval workloads surged from zero to 50% of usage in months. Square-wave pattern: zero to 100K CPUs instantly. Replacing Kubernetes for RL.",
+          "wiki_targets": [
+            "concepts/rl-training-infra.md"
+          ],
+          "priority": 2
+        },
+        {
+          "title": "Agent-First Versioning Pattern",
+          "description": "Customers dump entire codebase as JSON snapshot to S3 per time sequence - no diffs needed when fast enough.",
+          "wiki_targets": [
+            "concepts/agent-development.md"
+          ],
+          "priority": 3
+        },
+        {
+          "title": "CI Bottleneck from Agent PRs",
+          "description": "Companies generating 1000+ PRs/day from AI agents, causing CI queue congestion.",
+          "wiki_targets": [
+            "concepts/agent-development.md"
+          ],
+          "priority": 4
+        },
+        {
+          "title": "Future AI-Native Cloud Vision",
+          "description": "Ivan Burazin predicts purpose-built cloud for agents: sandboxes, web search, databases. Not the end of agent infra primitives.",
+          "wiki_targets": [
+            "concepts/agent-infrastructure.md"
+          ],
+          "priority": 5
+        }
+      ],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-21-giving-agents-computers-ivan-burazin-daytona.md"
+    },
+    {
+      "message_id": "<20260521205355.3.c5dcd2d5722eae9b@mg-d0.substack.com>",
+      "subject": "EDA Market Primer",
+      "source_label": "uid=126",
+      "date": "2026-05-21",
+      "importance": "low",
+      "relevance_score": 15,
+      "primary_topics": [
+        "semiconductor",
+        "eda",
+        "chip-design"
+      ],
+      "public_url": "https://open.substack.com/pub/semianalysis/p/eda-market-primer",
+      "key_items": [
+        {
+          "title": "EDA Market Analysis",
+          "description": "Electronic Design Automation market primer. Synopsys/Cadence/Siemens control 85%+. $16B market growing 13% CAGR. Tangential to AI/LLM topics.",
+          "wiki_targets": [],
+          "priority": 9
+        }
+      ],
+      "note": "Not directly relevant to LLM/AI Agent wiki. Semiconductor infrastructure background material. Skip unless cross-referencing AI chip design.",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-21-eda-market-primer.md"
+    },
+    {
+      "message_id": "<20260522055058.3.6796b57a80fe8d8a@mg-d0.substack.com>",
+      "subject": "[AINews] New AI Infra unicorns: Exa, Modal, TurboPuffer",
+      "source_label": "uid=127",
+      "date": "2026-05-22",
+      "importance": "critical",
+      "relevance_score": 93,
+      "primary_topics": [
+        "ai-infrastructure",
+        "funding",
+        "mcp",
+        "agent-design",
+        "codex"
+      ],
+      "public_url": "https://open.substack.com/pub/swyx/p/ainews-new-ai-infra-unicorns-exa",
+      "key_items": [
+        {
+          "title": "Exa: $250M at $2.2B Series C",
+          "description": "AI search company reaching unicorn status.",
+          "wiki_targets": [
+            "entities/exa.md"
+          ],
+          "priority": 2
+        },
+        {
+          "title": "Modal: $355M at $4.7B Series C",
+          "description": "Serverless GPU cloud rebuilding cloud stack for AI workloads.",
+          "wiki_targets": [
+            "entities/modal.md"
+          ],
+          "priority": 1
+        },
+        {
+          "title": "TurboPuffer: $100M ARR Profitable on <$1M Raised",
+          "description": "Context retrieval infrastructure company achieving extraordinary capital efficiency.",
+          "wiki_targets": [
+            "entities/turbopuffer.md"
+          ],
+          "priority": 3
+        },
+        {
+          "title": "Agent Harnesses Driving Gains (physics-intern, mini-swe-agent)",
+          "description": "physics-intern boosts Gemini 3.1 Pro from 17.7→31.4 on benchmarks. mini-swe-agent on ProgramBench.",
+          "wiki_targets": [
+            "concepts/agent-harnesses.md"
+          ],
+          "priority": 4
+        },
+        {
+          "title": "Agent Design Maturation Patterns",
+          "description": "Start single-agent; adopt manager/sub-agent topology only when tool sprawl/prompt bloat unmanageable.",
+          "wiki_targets": [
+            "concepts/agent-design-patterns.md"
+          ],
+          "priority": 5
+        },
+        {
+          "title": "Weaviate Built-in MCP Server",
+          "description": "Vector DB with built-in MCP server enables coding agents to use hybrid BM25+vector retrieval on repos.",
+          "wiki_targets": [
+            "concepts/mcp.md",
+            "entities/weaviate.md"
+          ],
+          "priority": 6
+        },
+        {
+          "title": "LangChain: Sandbox Auth Proxy + Typed Streaming Protocol",
+          "description": "Agent-world boundaries via sandbox auth proxy. Typed streaming for tools, subagents, media, interrupts.",
+          "wiki_targets": [
+            "concepts/agent-frameworks.md"
+          ],
+          "priority": 7
+        },
+        {
+          "title": "vLLM Elastic Expert Parallelism",
+          "description": "Live resizing of MoE DP/EP topology without restarts via GPU-to-GPU transfers over NVLink/RDMA.",
+          "wiki_targets": [
+            "concepts/moe-inference.md",
+            "entities/vllm.md"
+          ],
+          "priority": 8
+        },
+        {
+          "title": "Codex Appshots & Remote Computer Use",
+          "description": "Capture screenshot+text from Mac apps. Securely use Mac apps from phone even when Mac is locked.",
+          "wiki_targets": [
+            "concepts/computer-use.md"
+          ],
+          "priority": 9
+        },
+        {
+          "title": "RAEv2: Faster Representation Autoencoders",
+          "description": "10x faster convergence. Summing last K encoder layers improves reconstruction+generation without added inference cost.",
+          "wiki_targets": [
+            "concepts/representation-learning.md"
+          ],
+          "priority": 10
+        }
+      ],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-22-ainews-new-ai-infra-unicorns-exa-modal-turbopuffer.md"
+    },
+    {
+      "message_id": "<20260522064547.3.365e80f516fe8b87@mg-d1.substack.com>",
+      "subject": "Datasette Agent: an AI assistant for Datasette built on LLM",
+      "source_label": "uid=128",
+      "date": "2026-05-22",
+      "importance": "critical",
+      "relevance_score": 91,
+      "primary_topics": [
+        "ai-agent-frameworks",
+        "datasette",
+        "simon-willison",
+        "google-gemini",
+        "local-models"
+      ],
+      "public_url": "https://open.substack.com/pub/simonw/p/datasette-agent-an-ai-assistant-for",
+      "key_items": [
+        {
+          "title": "Datasette Agent: AI Assistant for Datasette",
+          "description": "Simon Willison's new extensible AI agent framework for Datasette, built on LLM library. Plugin ecosystem: charts (Observable Plot), image gen (ChatGPT 2.0), code sandbox (Fly Sprites).",
+          "wiki_targets": [
+            "entities/datasette-agent.md",
+            "entities/simon-willison.md",
+            "concepts/agent-frameworks.md"
+          ],
+          "priority": 1
+        },
+        {
+          "title": "Local Model Support: Gemma-4-26b-a4b via LM Studio",
+          "description": "Datasette Agent works with open-weight models on local hardware. One-liner setup with LM Studio. Reliable tool calls and SQLite generation.",
+          "wiki_targets": [
+            "concepts/local-llm.md"
+          ],
+          "priority": 2
+        },
+        {
+          "title": "LLM Library v0.32a0 Refactoring",
+          "description": "Extracting LLM agent abstractions from Datasette Agent into the core LLM Python library.",
+          "wiki_targets": [
+            "entities/llm-library.md"
+          ],
+          "priority": 3
+        },
+        {
+          "title": "Gemini 3.5 Flash Details & Pricing",
+          "description": "1M context, 65K output tokens. $1.50/$9.00 per 1M input/output. #1 on APEX-Agents-AA. No computer-use capability. Knowledge cutoff: Jan 2025.",
+          "wiki_targets": [
+            "entities/google-gemini.md"
+          ],
+          "priority": 4
+        },
+        {
+          "title": "Google Gemini Spark Personal Agent",
+          "description": "24/7 personal agent connecting to Gmail, Calendar, Drive, Docs, Sheets, Slides, YouTube, Maps. Secure runtime with ephemeral VMs per task, DLP enforcement.",
+          "wiki_targets": [
+            "concepts/ai-agents.md",
+            "entities/google-gemini.md"
+          ],
+          "priority": 5
+        },
+        {
+          "title": "Antigravity CLI Replaces Gemini CLI",
+          "description": "Antigravity: desktop app, CLI agent, SDK, VS Code fork. Old Gemini CLI (Apache 2.0) stops working June 18, 2026.",
+          "wiki_targets": [
+            "concepts/coding-agents.md"
+          ],
+          "priority": 6
+        }
+      ],
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-22-datasette-agent-an-ai-assistant-for-datasette-built-on-llm.md"
+    }
+  ],
+  "downstream_actions": [
+    "newsletter-wiki-ingest: Process all 5 critical + 1 high newsletters for wiki ingestion",
+    "Priority order: uid=125 (Daytona), uid=128 (Datasette Agent), uid=120 (AINews math), uid=127 (Infra unicorns), uid=121 (Google openclaw), uid=123 (True Positive Weekly)",
+    "Skip/low priority for wiki: uid=122 (beehiiv duplicate), uid=124 (job displacement opinion), uid=126 (EDA market)",
+    "Entity pages needed: daytona.md, datasette-agent.md, exa.md, modal.md, turbopuffer.md",
+    "Concept pages needed: agent-sandbox.md, agent-design-patterns.md, agent-memory.md, agent-harnesses.md, ai-math-reasoning.md",
+    "Update existing: simon-willison.md, anthropic.md, andrej-karpathy.md, google-gemini.md, cohere.md, vllm.md, weaviate.md"
+  ]
+}

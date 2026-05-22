@@ -2,10 +2,11 @@
 title: "Andrej Karpathy"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-20
+updated: 2026-05-22
 type: entity
 sources:
   - raw/articles/daringfireball.net--linked-2026-05-19-karpathy-anthropic--c6d1c3dc.md
+  - raw/newsletters/2026-05-22-bens-bites-googles-take-on-openclaw.md
 ---
 
 # Andrej Karpathy (@karpathy)
@@ -13,6 +14,8 @@ sources:
 ## Overview
 
 **Andrej Karpathy** (born October 23, 1986, Bratislava, Czechoslovakia) is a leading AI researcher and educator, widely regarded as one of the most effective communicators of deep learning concepts to a broad audience. He relocated to Toronto, Canada at age 15 (~2001). He is a **co-founder of OpenAI** (2015), former **Senior Director of AI at Tesla** (2017-2022) where he led the Autopilot vision team, and founder/CEO of **Eureka Labs** (2024) — an AI-native education platform. He coined the terms **"vibe coding"** (February 2025) and **"agentic engineering"** (February 2026), both of which became widely adopted descriptions of AI-assisted software development.
+
+**May 2026:** Karpathy joined Anthropic pre-training team under Nick Joseph, building a group focused on using Claude to accelerate pre-training research.
 
 His YouTube series **"Neural Networks: Zero to Hero"** is one of the most popular free deep learning educational resources on the internet. His Stanford course **CS231n: Convolutional Neural Networks for Visual Recognition** (2015-2017) grew from 150 to 750 students and became one of the university's most popular classes.
 
@@ -39,6 +42,7 @@ His YouTube series **"Neural Networks: Zero to Hero"** is one of the most popula
 | Jan 2026 | Viral "programming in English" thread — 7.5M+ impressions |
 | Feb 2026 | Coins **"agentic engineering"**; publishes **microgpt** |
 | Mar 2026 | Releases **autoresearch**; receives NVIDIA DGX Station GB300 from Jensen Huang |
+| May 2026 | Joins **Anthropic pre-training team** (Nick Joseph) — using Claude to accelerate pre-training research |
 | Dec 2025 | Phase shift: 80% manual → 80% AI agent coding; publishes "2025 LLM Year in Review" |
 
 ## Research Contributions

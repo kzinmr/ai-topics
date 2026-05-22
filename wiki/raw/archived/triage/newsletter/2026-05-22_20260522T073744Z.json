@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-05-22T07:37:56.258866+00:00",
+  "triage_run_id": "20260522T073744Z",
+  "source": "newsletter",
+  "summary_ja": "2026-05-21/22配信の9ニュースレターをトリアージ。Take=10件: entities/daytona-io/ivan-burazinエンリッチ(Daytona podcast新スペック)、entities/cohere(Command A+ Apache 2.0)、entities/modal-labs($355M Series C)、entities/hark/weaviate/exa新規作成、concepts/context-compression(Perplexity圧縮)、concepts/deepseek-v4(KV-cache 2%)、entities/factory(Deferred Context Engine 40%)、entities/andrej-karpathy(Anthropic参加エンリッチ)。Reference=3件: Turbopuffer $100M ARR、OpenAI Erdős問題、MINTEval。Skip=3件: Elena Verna(キャリア)、EDA Market Primer(半導体/非AI)、Superintel(全403/重複)。",
+  "decisions": [
+    {
+      "item_id": "may22_ainews_turbopuffer_arr",
+      "source": "newsletter",
+      "source_name": "AINews / Latent Space",
+      "title": "Turbopuffer $100M ARR and Profitable",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-new-ai-infra-unicorns-exa",
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/turbopuffer: $100M ARR到達(19ヶ月で$1M→$100M)、黒字化、調達額$1M未満。Entity pageは05-20作成済みで基本情報はある。ARR数字の追加が主。",
+      "candidate_wiki_path": "entities/turbopuffer",
+      "body_excerpt": "Turbopuffer crossed $100M run-rate in March, 19 months after $1M, profitable, raised less than $1M."
+    },
+    {
+      "item_id": "may21_ainews_openai_erdos",
+      "source": "newsletter",
+      "source_name": "AINews / Latent Space",
+      "title": "OpenAI Erdős Problem - Math Breakthrough",
+      "url": "https://open.substack.com/pub/swyx/p/ainews-openai-gpt-next-disproves",
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/openai: GPT-5.6(推定)がErdős平面単位距離問題(1946)を<$1000/32時間で解決。125ページ。Timothy Gowersが「既知の数学問題をAIが解いた初の例」と評価。推論時スケーリングがパラダイム。広範な概念よりopenai entityへの追記が適切。",
+      "candidate_wiki_path": "entities/openai",
+      "body_excerpt": "GPT-5.6(推定)が1946年のErdős平面単位距離問題を32時間未満/$1,000以下で解決。125ページ。Timothy Gowers: 'first really clear example of AI solving a well-known open math problem.'"
+    },
+    {
+      "item_id": "may21_elenaverna_job2027",
+      "source": "newsletter",
+      "source_name": "Elena Verna",
+      "title": "You'll lose your job in 2027",
+      "url": "https://open.substack.com/pub/elenaverna/p/youll-lose-your-job-in-2027",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ キャリアアドバイス記事。AI時代のキャリア適応について一般的見解。具体的なAI技術の洞察やベンチマークは含まれずWiki技術焦点に合致しない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "キャリアアドバイス: AIスキルの6段階。ビジネス戦略/キャリア変革の視点。技術的内容は薄い。"
+    },
+    {
+      "item_id": "may21_semianalysis_eda",
+      "source": "newsletter",
+      "source_name": "SemiAnalysis",
+      "title": "EDA Market Primer",
+      "url": "https://open.substack.com/pub/semianalysis/p/eda-market-primer",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ EDA(電子設計自動化)市場分析。Synopsys/Cadence/Siemensで85%+シェア、$18B市場。半導体/チップ設計インフラ文脈でのAI関連性はあるが、直接的なLLM/AIエージェント技術ではない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "EDAソフトウェア市場プライマー: Big-3で85%+シェア、$18B市場、13% CAGR。ノード移行・検証・AIアクセラレータが成長要因。"
+    },
+    {
+      "item_id": "may21_superintel_403",
+      "source": "newsletter",
+      "source_name": "Superintel (beehiiv)",
+      "title": "OpenAI's Math Breakthrough Opens a New Era",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-21-openai-s-math-breakthrough-opens-a-new-era.md",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ Beehiiv全20リンク403。件名からOpenAI Erdős問題と推定。AINewsが本トリアージ内で詳細カバー済みのため重複スキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-21\n**Subject:** OpenAI’s Math Breakthrough Opens a New Era\n**Collected:** 2026-05-22T07:15:56.015213+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/yauFOpE%2FU%2FtRJXfsff99qmpiVXCQgN6o%2BPg9LfK5UelfHXcjP1K%2FYuAdLuaD%0ANETbcI3yb%2"
+    }
+  ]
+}

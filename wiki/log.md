@@ -3,6 +3,37 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-22] newsletter-wiki-ingest | 10 takes + 3 references processed
+
+- **Source**: Newsletter triage (May 21-22 newsletters: AINews, Ben's Bites, True Positive Weekly #162, Superintel)
+
+### New Pages Created
+- **entities/hark.md** — GPU infrastructure company, $700M at $6B valuation, 200-hour autonomous runs
+- **entities/weaviate.md** — Open-source vector database, Weaviate 1.37 with built-in MCP server + MMR reranking
+- **entities/exa.md** — AI-native search platform, $250M Series C at $2.2B valuation
+- **concepts/evaluation-coding-agents.md** — Coding agent evaluation benchmarks (MINTEval, long-context memory)
+
+### Pages Enriched (Entities)
+- **entities/daytona-io.md** — 60ms sandboxes, 850K/day, custom scheduler (no K8s), RL/evals = 50%, CLI > MCP
+- **entities/cohere.md** — Command A+ Apache 2.0: 218B MoE/25B active, multimodal, 48 languages, W4A4 on 2xH100
+- **entities/modal-labs.md** — $355M Series C at $4.7B, validating agent-native computing thesis
+- **entities/perplexity.md** — Query-aware context compression: 70% reduction, 50x on SimpleQA
+- **entities/factory.md** — Deferred Context Engine: 40% context reduction via selective tool loading
+- **entities/andrej-karpathy.md** — Joined Anthropic pre-training team under Nick Joseph (May 2026)
+- **entities/turbopuffer.md** — $100M ARR milestone, profitable with <$1M raised (reference)
+- **entities/openai.md** — Erdős problem solved by GPT-5.5+: 1946 math problem, $1K/32h, T. Gowers praise (reference)
+
+### Pages Enriched (Concepts)
+- **concepts/deepseek-v4.md** — KV-cache compressed to 2% of baseline via CSA+HCA+SWA
+- **concepts/context-compression.md** — Perplexity query-aware system: up to 70% reduction, 50x on SimpleQA
+
+### Index Updates
+- Added 3 new entities, 1 new concept to index.md
+- Updated 8 existing entity descriptions, 2 concept descriptions
+- Entities section count: 651 → 654, Total pages: 2075 → 2079
+
+---
+
 ## [2026-05-22] enrich 2 | comparisons/hermes-vs-openclaw + entities/hermes-agent (DeepLearning.AI newsletter)
 
 - **Source**: DeepLearning.AI newsletter — "Hermes vs. OpenClaw, Cybersecurity Alarms Ring" (May 22, 2026)

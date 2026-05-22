@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-22 | Total pages: 2075 | Indexed entries: 1217 | Not in index: 858 |
+> Last updated: 2026-05-22 | Total pages: 2079 | Indexed entries: 1221 | Not in index: 858 |
 
-## Entities (651 pages)
+## Entities (654 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -93,7 +93,7 @@
 - [[entities/amazon-rivr]] — March 2026 acquisition of Zurich-based autonomous robotics startup Rivr by Amazon.
 - [[entities/amazon-bedrock-agentcore]] — AWS's fully-managed agentic AI platform for building, deploying, and operating AI agents at scale. Framework-agnostic, composable services.
 - [[entities/amp]] — **Amp** — Coding agent CLI developed at Sourcegraph by Thorsten Ball. Frontier-chasing philosophy: editor extensions killed Feb 2026, CLI rebuilt as Neo (May 2026) with auto-compaction, Plugin API, remote control. Author of "The Coding Agent Is Dead" manifesto.
-- [[entities/andrej-karpathy]] — **Andrej Karpathy** (born October 23, 1986, Bratislava, Czechoslovakia) is a leading AI researcher and educator, widely regarded as one of the most effective communicators of deep learning concepts...
+- [[entities/andrej-karpathy]] — **Andrej Karpathy** (born October 23, 1986, Bratislava, Czechoslovakia). Co-founder OpenAI, Tesla AI, Eureka Labs. Joined Anthropic pre-training team (May 2026). Coined vibe coding / agentic engineering.
 - [[entities/andrew-nesbitt]] — **URL:** https://nesbitt.io
 - [[entities/andrew-chen]] — Andrew Chen — General Partner at a16z (speedrun). Author of "The Cold Start Problem." Local AI home lab practitioner (DGX Spark, 5090 eGPU, Strix Halo). Runs OpenClaw + Hermes Agent. → [[concepts/local-ai]]
 - [[entities/antoine-buteau]] — **Name** | Antoine Buteau | BizOps leader, automation architecture writer. Author of 10-part Automation Series.
@@ -172,7 +172,7 @@
 - [[entities/datasette-agent]] — Extensible AI assistant for Datasette/SQLite by Simon Willison (May 2026). Conversational SQL generation, chart plugins, LLM library integration. Live demo at agent.datasette.io.
 - [[entities/david-fowler]] — David Fowler (@davidfowl) — Distinguished Engineer at Microsoft. Creator of NuGet, SignalR, ASP.NET Core, Aspire (agent-ready DevOps). Tally (AI bank tx classifier). "AI Made Us Faster. That Was the Problem" (May 2026).
 - [[entities/dax-raad]] — **X** | @thdxr |
-- [[entities/daytona-io]] — CEO: Ivan Burazin. Composable computing environments (sandboxes) for AI agents.
+- [[entities/daytona-io]] — CEO: Ivan Burazin. 60ms sandboxes, 850K/day. Custom scheduler (no K8s), bare metal. RL/evals = 50% of usage. CLI > MCP philosophy (May 2026).
 - [[entities/daytona-sandbox]] — Daytona's self-hosted sandbox for Claude Managed Agents (May 2026). Three-party architecture, dual orchestrator (polling/webhook), snapshot-based sandboxes, 30-day lifecycle.
 - [[entities/deepseek]] — Chinese open-source LLM provider driving **cost disruption**. DeepSeek V4 (1.6T Pro / 284B Flash, MoE, 1M context, MIT license) confirmed running on Huawei Ascend 950 for inference — partial decoupling from Western hardware.
 - [[entities/deliberate-coder]] — **URL:** https://www.benmvp.com (blog), https://github.com/benmvp (GitHub)
@@ -212,8 +212,9 @@
 - [[entities/eugeneyan]] — **X** | @eugeneyan |
 - [[entities/every-inc]] — AI-native media & software company. Publishers of the daily newsletter, creators of Compound Engineering plugin (7K+ stars). 5 products (Spiral, Cora, Sparkle, Monologue, Lex) with single-person teams. CEO: Dan Shipper.
 - [[entities/evanhahn-com]] — **Blog** | evanhahn.com |
+- [[entities/exa]] — Exa — AI-native search platform ("search lab for agents"). $250M Series C at $2.2B valuation (May 2026).
 - [[entities/fabiensanglard-net]] — **Blog** | fabiensanglard.net |
-- [[entities/factory]] — Factory (Factory AI) — Autonomous coding agents ("Droids") for enterprise. $1.5B valuation ($150M Series C, April 2026). Founded 2023 by Matan Grinberg and Eno Reyes. Model-agnostic routing, deep CI/CD integration. Free Droid tier launched April 2026.
+- [[entities/factory]] — Factory (Factory AI) — Autonomous coding agents ("Droids") for enterprise. $1.5B valuation. Deferred Context Engine: 40% context reduction via selective tool loading (May 2026).
 - [[entities/farhan-thawar]] — Farhan Thawar — Head of Engineering (VP Engineering) at Shopify. Leads 23,000-engineer AI transformation toward 90% autonomous coding. Philosophy: "pair with smart people on problems." Championed 1,000-intern program and Code Red tech debt elimination.
 - [[entities/fei-fei-li]] — **フルネーム** | Fei-Fei Li（李飞飞） |
 - [[entities/fidji-simo]] — CEO, OpenAI AGI Deployment (May 2026: medical leave); ex-AppLovin CEO, Meta VP. Key figure in OpenAI's product reorganization.
@@ -255,6 +256,7 @@
 - [[entities/hailey-schoelkopf]] — Research Scientist at EleutherAI, primary maintainer of the LM Evaluation Harness (lm-eval). Co-author of Pythia (ICML 2023).
 - [[entities/hamel-husain]] — **Role** | Independent Consultant (Parlance Labs), R&D at AnswerAI, Scout at Bain Capital |
 - [[entities/han-lee]] — Han Lee (Hanchung Lee) — Senior Director of Data + AI at Moody's Analytics. Author of "Han, Not Solo" blog (RSS tracked). Wrote the foundational "Hidden Technical Debt of AI Systems" trilogy: [[raw/articles/2026-03-21_leehanchung_rl-environments-for-llm-agents|RL Environments Taxonomy]] (Mar 2026) → [[concepts/agent-runtime|Agent Runtime]] (Apr 2026) → [[raw/articles/2026-05-08_leehanchung_hidden-technical-debt-agent-harness|Agent Harness]] (May 2026). Other key work: Data Aggregation Is Not a Moat, Don't Outsource Your Understanding (cognitive offloading vs surrender).
+- [[entities/hark]] — Hark — GPU infrastructure company. $700M at $6B valuation (May 2026). 200-hour autonomous runs.
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM (founded 2022), built on GPT-3.5. Evolved toward agentic personal OS.
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
 - [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent（150K GitHub stars, #1 OpenRouter global token usage）。Persistent memory、self-improving skills（Curatorシステムで90日未使用スキルを自動整理）、Agentic Loopを収録。OpenClawのorchestratorとのACP連携によるdual-agent architectureでexecution specialistとして機能。Shann (@shannhk) の4-level fleet operation model、21-step SEO pipeline。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
@@ -381,7 +383,7 @@
 - [[entities/openai-cua]] — OpenAIの**CUA（Computer-Using Agent）**モデルは、GPT-4oのビジョン機能と強化学習を組み合わせて、スクリーンショットを見てGUIを操作するエージェント。2025年1月に「Operator」として公開され、2025年7月にChatGPTエージェントに完全統合された。
 - [[entities/openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
 - [[entities/openai-codex]] — OpenAIのAIコーディングエージェント。CLIベースOSS、gpt-5.3-codexモデル。自律実行・コンパクション。Codex for Work: データサイエンス・営業・BizOpsチーム向けユースケース。Human-in-the-Loop機能: Steering/Queuing/音声入力、Durable Threads、Thread Automations、Goals、サイドパネル、共有メモリ(Obsidian vault)、モバイル対応。プロンプト設計は[[concepts/codex-prompting]]参照。
-- [[entities/openai]] — **Type** | AI Research & Product Company |
+- [[entities/openai]] — AI Research & Product Company (2015). GPT-5.6 solved 1946 Erdos problem ($1K/32h, 125 pages, T. Gowers: "first clear example of AI solving open math problem").
 - [[entities/openai-deployment-company]] — OpenAI Deployment Company (DeployCo) — $4B enterprise AI deployment JV. Majority OpenAI-owned. 19 global investors including TPG, Bain Capital, Goldman Sachs, McKinsey. Acquired Tomoro (~150 FDEs). Launched May 2026.
 - [[entities/openclaw]] — Open-source always-on AI agent framework created by **Peter Steinberger**。Gateway-first architectureでmulti-agent routing、ACP sub-agent spawning、cron/webhook schedulingを備え、orchestratorとしてHermes Agent等のexecution specialistを統括。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
 - [[entities/opencode]] — 最も人気のあるオープンソースAIコーディングエージェント。155K GitHub Stars、MITライセンス、850+コントリビューター。75+ LLMプロバイダ対応、マルチサーフェス（TUI/Desktop/IDE）。Plan/Build/Generalの3エージェント、LSP統合、GitHubネイティブ統合。
@@ -496,7 +498,7 @@
 - [[entities/tom-renner]] — **Blog** | tomrenner.com |
 - [[entities/troy-hunt]] — **URL:** https://www.troyhunt.com
 - [[entities/trycua-cua]] — TryCua (Cua)
-- [[entities/turbopuffer]] — Object-Storage-Native vector + full-text search engine. Built on S3/GCS, SPFresh ANN v3 (100B vec @ 200ms), RaBitQ/AVX-512, FTS v2 (20x), Native Filtering, Continuous Recall. Cursor (95% cheaper), Notion AI, Linear, Superhuman.
+- [[entities/turbopuffer]] — Object-Storage-Native search. $100M ARR/profitable with <$1M raised (May 2026). SPFresh ANN v3, FTS v2. Customers: Cursor, Notion AI, Linear, Superhuman.
 - [[entities/ubtech-robotics]] — One of China's most valuable AI and robotics companies. Focuses on service robots and humanoid platforms for education and commercial applications.
 - [[entities/unitree-robotics]] — Hangzhou-based humanoid and quadruped robot manufacturer. Founded 2016 by Wang Xingxing (former DJI engineer, age 26 at founding). World's #1 humanoid robot seller in 2025.
 - [[entities/ultraworkers]] — GitHub organization hosting **[[concepts/claw-code]]**, the Rust implementation of the `claw` CLI agent harness. Fastest repo in history to surpass 100K stars. Home of Sigrid Jin and Yeachan Heo's autonomous development demo.
@@ -509,6 +511,7 @@
 - [[entities/vibevoice]] — Microsoft Research's next-token diffusion TTS model for long-form, multi-speaker conversational audio (up to 90 min, 4 speakers). ICLR 2026 Oral. Open-source (MIT). [[entities/vibevoice|→詳細]]
 - [[entities/walden-yan]] — **Role** | Co-Founder & Chief Product Officer (CPO), Cognition AI |
 - [[entities/warp-terminal]] — AI-native terminal and Agentic Development Environment (ADE). Open-sourced April 2026 under AGPLv3 with OpenAI as founding sponsor. Oz orchestration platform.
+- [[entities/weaviate]] — Weaviate — Open-source vector database with built-in MCP server. Weaviate 1.37: MMR reranking, hybrid BM25+vector for coding agents.
 - [[entities/webmcp]] — **WebMCP**は、W3C Web Machine Learning Community Groupで開発されているブラウザ標準。GoogleとMicrosoftが共同で策定し、AIエージェントがWebアプリケーションと構造的に対話するための`navigator.modelContext` APIを定義する。2026年2月にChrome 146で早期プレビューが開始された。
 - [[entities/wes-mckinney]] — Wes McKinney — pandas creator, Apache Arrow/Ibis co-creator, Principal Architect at Posit. Agentic engineering pioneer: RoboRev continuous code review daemon, Agents View session DB, Middleman dashboard, spicytakes.org (1M+ lines agentically). "I almost don't read code now." Superpowers skills framework (Jesse Vincent). Agent Ergonomics thesis. GP at Composed Ventures.
 - [[entities/westenberg]] — **Blog** | joanwestenberg.com |
@@ -609,7 +612,7 @@
 - [[entities/vercel-labs]] — Vercel Labs — R&D division of Vercel. Creator of Zero, a systems language built for agent-first development (May 2026).
 - [[entities/vercel-sandbox]] — Vercel's self-hosted sandbox for Claude Managed Agents (May 2026). Webhook-driven control plane, firewall-level credential brokering, microVM-based, TypeScript-native (tsx runner), OIDC token auth.
 - [[entities/radixark]] — RadixArk — AI inference infrastructure startup. $100M seed (May 2026), built on SGLang inference + Miles (large-scale RL).
-- [[entities/perplexity]] — Perplexity — AI search platform expanding into vertical products: Professional Finance Computer (35 analyst workflows), NEJM/BMJ premium medical access.
+- [[entities/perplexity]] — Perplexity — AI search platform. Query-aware context compression: 70% reduction, 50x on SimpleQA (May 2026). Vertical products: Professional Finance, NEJM/BMJ medical access.
 - [[entities/arena-ai]] — Arena (arena.ai) — AI model evaluation and comparison platform. Chatbot Arena leaderboard with blind pairwise comparisons across text, vision, code, and search.
 - [[entities/pinecone]] — Pinecone — Vector database company (pinecone.io). Managed vector search for AI/LLM embeddings. $138M Series B at $750M valuation. Founded 2019 by Edo Liberty.
 - [[entities/abridge]] — Abridge — AI for healthcare clinical conversations. Automates medical documentation.
@@ -624,7 +627,7 @@
 - [[entities/cartesia]] — Cartesia — State space models. Creator of Sonic AI voice model. Efficient audio generation.
 - [[entities/chalk]] — Chalk — Real-time feature platform for machine learning. Online feature computation.
 - [[entities/cognition]] — Cognition — Maker of Devin, the first autonomous AI coding agent. Also makes Windsurf IDE.
-- [[entities/cohere]] — Cohere — Enterprise AI platform. Founded by Transformer paper co-author Aidan Gomez. $6.8B valuation.
+- [[entities/cohere]] — Cohere — Enterprise AI platform. Command A+ released Apache 2.0 (218B MoE/25B active, multimodal, 48 languages, W4A4 on 2xH100).
 - [[entities/decagon]] — Decagon — AI customer support agents. $4.5B valuation. 10M+ customers served.
 - [[entities/elevenlabs]] — ElevenLabs — AI voice and speech synthesis. $11B valuation. $500M+ ARR. Claude Code integration for ElevenAgents (May 2026).
 - [[entities/eventual]] — Eventual — Data and AI platform.
@@ -637,7 +640,7 @@
 - [[entities/mercor]] — Mercor — AI recruiting and hiring platform. $10B valuation. Founded by Brendan Foody (age 22).
 - [[entities/merge]] — Merge — Unified API for integrations. Connect to 200+ platforms through a single API.
 - [[entities/metronome]] — Metronome — Usage-based billing platform. Acquired by Stripe. OpenAI is flagship customer.
-- [[entities/modal-labs]] — Modal Labs — Serverless GPU cloud platform. Founded by Erik Bernhardsson. Python-native containerless execution.
+- [[entities/modal-labs]] — Modal Labs — Serverless GPU cloud platform. $355M Series C at $4.7B (May 2026). Validating agent-native computing thesis.
 - [[entities/modal-sandbox]] — Modal's self-hosted sandbox for Claude Managed Agents (May 2026). GPU access (H100), 100K+ concurrent sandboxes, burst pricing, connect tokens, custom images with uv_sync.
 - [[entities/nominal]] — Nominal — AI and analytics platform.
 - [[entities/nuro]] — Nuro — Autonomous delivery vehicles. Pivoted to Nuro Driver licensing platform in 2024.
@@ -774,6 +777,7 @@
 - [[concepts/embeddings]] — Dense vector representations encoding entities as coordinates. Triples training (anchor/similar/dissimilar), dot product + sigmoid + contrastive loss, Two-Tower architecture for cold-start, transformer sentence embeddings (BERT CLS). Doug Turnbull's Maven course module.
 - [[concepts/echo-rl]] — ECHO: hybrid GRPO + environment-prediction training objective for CLI agents. Learns world models "for free" from terminal response tokens already in the rollout. Nearly doubles TerminalBench-2.0 pass@1 at zero extra cost. By Vaishnavi Shrivastava & Dimitris Papailiopoulos (MSR AI Frontiers, 2026-05).
 - [[concepts/elastic-training]] — Elastic Training (Once-For-All) — Optimize entire model family in single training run. Baidu's Ernie 5.1 achieved 94% pre-training cost reduction. Varies depth, width, sparsity simultaneously. Industry implications for training economics.
+- [[concepts/evaluation-coding-agents]] — Coding Agent Evaluation — Benchmarks for agentic coding (MINTEval: avg 138.8K context, 27.9% average, memory as learned subsystem).
 - [[concepts/genai-handbook]] — GenAI Handbook (William Brown)
 - [[concepts/gepa]] — GEPA (Genetic-Pareto Prompt Evolution): reflective prompt optimizer using execution traces + evolutionary search. 35× fewer rollouts than GRPO, ICLR 2026 Oral. Offline skill optimization pipeline for Hermes Agent via NousResearch/hermes-agent-self-evolution.
 - [[concepts/gemini-3-1-flash-lite]] — Gemini 3.1 Flash-Lite — Google's fastest and most cost-efficient Gemini 3 series model. GA May 8, 2026. Ultra-low latency for agentic tasks (JetBrains, Gladly, Astrocade, Ramp). ~60% lower cost than thinking-tier models.
@@ -858,7 +862,7 @@
 - [[concepts/deepseek-v3]] — DeepSeek-V3: 671B MoEモデル（37B活性化/トークン）。MLA、補助損失なし負荷分散、MTP、FP8訓練、DualPipeなど複数の革新的技術を導入。14.8Tトークンで$5.576Mの訓練コスト。GPT-4oクラスの性能を達成したマイルストーン論文（arXiv:2412.19437, Dec 2024）。
 - [[concepts/deepseek-v3-2]] — DeepSeek-V3.2: 685Bパラメータ。DSA（学習可能スパースアテンション、$O(L^2)→O(Lk)$）、スケーラブルRL（GRPO強化）、大規模エージェントタスク合成（1,827環境・85Kプロンプト）の3革新。V3.2-SpecialeはIMO 2025・IOI 2025金メダル、ICPC World Finals世界2位。GPT-5/Gemini-3.0-Proに迫る（arXiv:2512.02556, Dec 2025）。
 - [[concepts/deepseek-r1]] — DeepSeek-R1: Pure RL（GRPO）で推論能力の創発を初の大規模実証。Nature掲載。R1-Zero（純粋RL）/ R1（4段階パイプライン）/ 蒸留モデル。自己検証・アハモーメント。AIME 79.8%, MATH-500 97.3%。$294Kでo1級性能。
-- [[concepts/deepseek-v4]] — DeepSeek-V4: 1.6T Pro/284B Flash、1MコンテキストMoE。Hybrid Attention（CSA+HCA+SWA）、mHC、Muon Optimizer、MegaMoE、TileLang DSL、On-Policy Distillation、FP4 QAT。V3.2比FLOPs 3.7-10x削減、KVキャッシュ10-14x削減。Codeforces 3206（人間23位相当）。
+- [[concepts/deepseek-v4]] — DeepSeek-V4: 1.6T Pro/284B Flash、1MコンテキストMoE。KV-cache圧縮でbaselineの2%に。Hybrid Attention（CSA+HCA+SWA）、mHC、Muon。FLOPs 3.7-10x削減、KV 10-14x削減。Codeforces 3206。
 - [[concepts/deepseek-v4-serving]] — DeepSeek-V4 production serving on B200 GPUs: prefix caching, KV cache policy, KV cache eviction, multi-turn latency, memory bandwidth, token-per-second optimization.
 - [[concepts/defenseclaw]] — Cisco's open-source agentic governance layer for OpenClaw. Pre-run scanning (5 scanners), runtime threat detection, non-advisory enforcement. Built on NVIDIA OpenShell. Announced RSAC 2026.
 - [[concepts/delphi-scaling-laws]] — Open Athena (Marin) の公開スケーリングスイート。3e20 FLOPs のフィットから 1e23 FLOPs を 0.2% の誤差で予測（300× extrapolation）。IsoFLOP sweep、token-horizon LR correction、AdamH。

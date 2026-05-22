@@ -2,7 +2,7 @@
 title: "Modal Labs"
 type: entity
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-22
 tags:
   - company
   - infrastructure
@@ -11,6 +11,7 @@ aliases: ["Modal", "Modal Labs, Inc."]
 sources:
   - https://modal.com/
   - https://modal.com/company
+  - raw/newsletters/2026-05-22-ainews-new-ai-infra-unicorns-exa.md
 ---
 
 # Modal Labs
@@ -30,7 +31,7 @@ Modal is a serverless GPU cloud platform for AI and data teams. It lets develope
 
 - Founded by Erik Bernhardsson (ex-CTO of Better.com, former Spotify data lead) and Akshat Bubna
 - Built custom infrastructure including a proprietary file system, container runtime, and scheduler
-- In talks to raise at a $2.5 billion valuation as of February 2026
+- **May 2026:** Raised **$355M Series C at $4.65-4.7B valuation** — validating the agent-native computing thesis
 - Trusted by teams at Decagon, Cognition, and many AI startups for inference and fine-tuning
 
 ## Products & Technology
@@ -42,3 +43,9 @@ Modal provides a serverless compute platform with GPU access (H100, A100, etc.) 
 - [[entities/together-ai]] — competitor in GPU cloud / inference infrastructure
 - [[entities/decagon]] — customer; runs real-time voice AI agents on Modal
 - [[entities/cognition]] — customer; uses Modal for Devin's cloud compute workloads
+
+## Developments (May 2026)
+
+### $355M Series C at $4.7B Valuation
+
+Modal raised **$355M in Series C** at a **$4.65-4.7B valuation**. The raise validates the thesis that agent-native computing is rebuilding the cloud stack for AI workloads.

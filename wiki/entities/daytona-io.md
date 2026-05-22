@@ -2,7 +2,7 @@
 title: "Daytona"
 type: entity
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-22
 tags:
   - entity
   - company
@@ -12,6 +12,7 @@ related: [ivan-burazin, headless-saas, agent-sandboxing, agent-serverless]
 sources:
   - https://www.daytona.io/
   - https://github.com/daytonaio/daytona
+  - raw/newsletters/2026-05-22-ainews-daytona-podcast.md
 ---
 
 # Daytona
@@ -54,3 +55,24 @@ Daytona builds **composable computers (sandboxes) for AI agents** — fast, stat
 
 - [Daytona.io](https://www.daytona.io/)
 - [GitHub: daytonaio/daytona](https://github.com/daytonaio/daytona)
+
+## Developments (May 2026)
+
+### Daytona Podcast
+
+Ivan Burazin presented new technical details in a podcast (May 2026):
+
+**Performance:**
+- **60ms** sandbox provisioning
+- **50,000 sandboxes** in **75 seconds**
+- **850,000 sandboxes/day** for largest customer
+
+**Architecture:**
+- **Custom scheduler** — no Kubernetes; bare metal + NVMe
+- **Dynamic resize** without restart
+- **3 isolation layers**: Docker + Sysbox + custom networking
+- **Usage shift**: RL/evals are now 50% of total sandbox usage
+
+**Philosophy:**
+- **CLI > MCP** — CLI is more composable for agent-computer interaction
+- Vision: AI cloud is closer to Stripe than AWS

@@ -2,7 +2,7 @@
 title: "Cohere"
 type: entity
 created: 2026-05-08
-updated: 2026-05-20
+updated: 2026-05-22
 tags:
   - company
   - model
@@ -12,6 +12,7 @@ sources:
   - https://cohere.com/
   - https://cohere.com/blog
   - raw/articles/2026-05-20_cohere_cohere-acquires-reliant-ai-expand-sovereign-enterprise-ai.md
+  - raw/newsletters/2026-05-22-ainews-openai-gpt-next-disproves.md
 ---
 
 # Cohere
@@ -39,6 +40,23 @@ Cohere is a Canadian-American enterprise AI company founded in 2019 by former Go
 ## Acquisitions & Expansion
 
 ### Reliant AI Acquisition (May 2026)
+
+### Command A+ Open Release (May 2026)
+
+Cohere released **Command A+** under **Apache 2.0** — its first fully permissive open-source model.
+
+| Detail | Value |
+|--------|-------|
+| **Parameters** | 218B MoE / 25B active |
+| **License** | Apache 2.0 |
+| **Capabilities** | Multimodal, 48 languages |
+| **Hardware** | 2xH100 with W4A4 quantization |
+| **Inference** | vLLM day-0 support |
+| **Benchmark** | AA AI Index: 37 points |
+| **Architecture** | Parallel Transformer blocks, LayerNorm to RMSNorm |
+
+This marks a strategic shift for Cohere — from proprietary enterprise deployments to open-source community engagement.
+
 
 In May 2026, Cohere acquired **Reliant AI**, a Montreal/Berlin-based biopharma AI company, to expand its sovereign enterprise AI platform into healthcare and life sciences. The acquisition brings Reliant AI's research team, proprietary biomedical datasets, and domain-optimized technology into Cohere's enterprise-grade sovereign AI platform.
 

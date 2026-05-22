@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-05-20
+updated: 2026-05-22
 tags:
   - company
   - model
@@ -22,6 +22,7 @@ sources:
   - raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md
   - raw/articles/openai.com--signals-research-2026q1-update--45f994a1.md
   - raw/newsletters/2026-05-15-codex-goes-everywhere.md
+  - raw/newsletters/2026-05-22-ainews-openai-gpt-next-disproves.md
 ---
 
 # OpenAI
@@ -239,6 +240,17 @@ Key developments:
 - OpenAI was not interested in working with Apple on the new models because "it felt burned by the initial relationship"
 
 > Sources: [9to5Mac](https://9to5mac.com/2026/05/14/openai-preparing-legal-action-against-apple/), [Bloomberg](https://www.bloomberg.com/news/articles/2026-05-14/openai-apple-partnership-frays-setting-up-possible-legal-fight) (May 14, 2026)
+
+
+
+### Erdős Problem — Math Breakthrough (May 2026)
+
+OpenAI's GPT-5.5+ (estimated GPT-5.6) solved the 1946 Erdős plane unit distance problem:
+
+- **Cost**: Under $1,000 / 32 hours of compute
+- **Output**: 125-page solution
+- **Timothy Gowers** (Fields Medalist): 'First really clear example of AI solving a well-known open math problem'
+- **Implication**: Paradigm shift for test-time reasoning scaling
 
 ## Security Architecture
 

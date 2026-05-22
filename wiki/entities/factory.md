@@ -2,7 +2,7 @@
 title: "Factory"
 type: entity
 created: 2026-05-08
-updated: 2026-05-18
+updated: 2026-05-22
 tags:
   - company
   - coding-agents
@@ -16,6 +16,7 @@ sources:
   - https://tech-insider.org/factory-ai-150-million-series-c-khosla-coding-droids-2026/
   - raw/articles/2026-04-03-free-droid-for-all.md
   - https://www.businessinsider.com/coinbase-layoffs-ai-brian-armstrong-job-cuts-letter-2026-5
+  - raw/newsletters/2026-05-22-bens-bites-googles-take-on-openclaw.md
 related:
   - [[concepts/subagent-patterns]]
   - [[entities/cursor-ai]]
@@ -125,3 +126,11 @@ The $150M will fund:
 - **Research:** Doubling the team to solve "long-horizon agent reliability"
 - **Product:** Enhancing model routing and always-on background agents
 - **Go-to-Market:** Scaling headcount from ~80 to ~250 by end of 2027
+
+### Deferred Context Engine (May 2026)
+
+Factory introduced the **Deferred Context Engine** — Droid loads tools selectively rather than loading all definitions into context:
+
+- Reduces context size by **~40%**
+- Droid dynamically determines which tools to load based on task
+- Addresses context window bloat in multi-tool agent systems

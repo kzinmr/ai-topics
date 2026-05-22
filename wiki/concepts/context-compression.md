@@ -1,7 +1,7 @@
 ---
 title: "Context Compression Techniques"
 created: 2026-04-18
-updated: 2026-04-18
+updated: 2026-05-22
 type: concept
 tags:
   - context-management
@@ -107,3 +107,14 @@ Related: [[concepts/context-window-management]] discusses how to organize compre
 
 -  — Context compression techniques analysis- OpenAI Cookbook, "Context engineering patterns" (2025)
 - Anthropic, "Effective context engineering for AI agents" (2025)
+
+## Perplexity Query-Aware Context Compression (May 2026)
+
+Perplexity's production system introduced a new approach:
+
+- **Query-awareness**: Compression guided by the specific query; relevant portions preserved
+- **Citation preservation**: Maintains source attribution through compression
+- **Up to 70% token reduction** with frontier quality
+- **50x compression on SimpleQA** — extreme ratios with query-directed compression
+
+Represents a practical deployment of learned compression at production scale.
