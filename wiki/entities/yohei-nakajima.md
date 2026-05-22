@@ -1,7 +1,7 @@
 ---
 title: "Yohei Nakajima"
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-05-22
 type: entity
 tags:
   - person
@@ -17,6 +17,8 @@ sources:
   - "https://yoheinakajima.com/"
   - "https://github.com/yoheinakajima"
   - "raw/articles/2026-05-19_yoheinakajima_state-of-statefulness-ai-agents.md"
+  - "raw/articles/2026-05-19_yoheinakajima_activegraph-continuity-layer.md"
+  - "raw/papers/2026-05-22_2605.21997_the-log-is-the-agent-activegraph.md"
   - "https://yoheinakajima.com/the-future-of-autonomous-agents/"
   - "https://yoheinakajima.com/better-ways-to-build-self-improving-ai-agents/"
   - "https://github.com/yoheinakajima/babyagi3"
@@ -83,7 +85,15 @@ Synthesized NeurIPS 2025 papers into six mechanisms for agent self-improvement:
 
 **Part 2**: "ActiveGraph: A Continuity Layer for Long-Running Agents" — concrete design response. Positioned as conceptually "BabyAGI 4." Introduces ActiveGraph: a graph that models the *world the computation acts on* (not the computation itself). Five-layer architecture: Events (append-only), Behaviors (reactions), Relations (semantics), Patches (proposal vs acceptance), Traces (not debugging — **the product**). Everything becomes state: tasks, claims, evidence, contradictions, decisions, failures, proposed self-improvements. Self-improvement via trace → evaluate → patch → fork → diff → promote. Closing thesis: "LLMs reason. Agent loops act. Active Graph explores continuity."
 
-Both articles documented in [[concepts/agent-statefulness]].
+Both articles documented in [[concepts/agent-statefulness]]. The architecture was formalized as **arXiv:2605.21997** "The Log is the Agent" (May 2026) with open-source release (`pip install activegraph`, Apache-2.0) and full documentation at [docs.activegraph.ai](https://docs.activegraph.ai). See **[[concepts/activegraph]]** for the complete architecture.
+
+### ActiveGraph Paper (May 2026)
+- **Title**: "The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems" (arXiv:2605.21997)
+- **Core contributions**: Event-sourced agent model (graph = deterministic fold over event log), deterministic replay via content-addressed cache, cheap forking with structural diff, graph-shape subscriptions (Cypher subset), relation-behaviours
+- **Key properties**: Deterministic replay, cheap forking (branch at any event without re-executing shared prefix), end-to-end lineage (every object records what behaviour created it and which event caused it)
+- **No orchestrator**: Coordination is purely emergent from graph-state subscriptions — no top-level workflow script
+- **Worked example**: `activegraph quickstart` reproduces full investment diligence (93 objects, 76 relations, 7 behaviour types)
+- **Source**: `raw/papers/2026-05-22_2605.21997_the-log-is-the-agent-activegraph.md`
 
 ### Other Projects
 
@@ -99,6 +109,7 @@ Both articles documented in [[concepts/agent-statefulness]].
 
 ## Related Pages
 
+- [[concepts/activegraph]] — The formal event-sourced reactive graph architecture (arXiv:2605.21997)
 - [[concepts/agent-statefulness]] — The evolution of state management in AI agents
 - [[concepts/babyagi]] — BabyAGI concept page
 - [[concepts/memory-systems-design-patterns]] — Anthropic vs OpenAI vs Cognition memory patterns

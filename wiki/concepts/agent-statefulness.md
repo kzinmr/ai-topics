@@ -23,7 +23,9 @@ tags:
 aliases: [agent-state-management, filesystem-as-context, agent-persistence, stateful-agents]
 sources:
   - "raw/articles/2026-05-19_yoheinakajima_state-of-statefulness-ai-agents.md"
+  - "raw/articles/2026-05-19_yoheinakajima_activegraph-continuity-layer.md"
   - "raw/articles/2026-05-07_yage_agent-filesystem-survey.md"
+  - "raw/papers/2026-05-22_2605.21997_the-log-is-the-agent-activegraph.md"
   - "https://github.com/yoheinakajima/babyagi3"
   - "https://www.anthropic.com/engineering/code-execution-with-mcp"
   - "https://arxiv.org/abs/2601.03204"
@@ -189,7 +191,9 @@ The ecosystem already understands that memory matters, traces matter, graphs mat
 
 ## ActiveGraph: A Concrete Design Response (Nakajima, Part 2)
 
-The sequel article "ActiveGraph: A Continuity Layer for Long-Running Agents" answers the diagnosis with a concrete architecture. Positioned as conceptually "BabyAGI 4" — the loop stays small; the continuity layer becomes the point.
+The sequel article "ActiveGraph: A Continuity Layer for Long-Running Agents" answers the diagnosis with a concrete architecture. Positioned as conceptually "BabyAGI 4" — the loop stays small; the continuity layer becomes the point. **Formalized as arXiv:2605.21997** (May 2026) with open-source release (`pip install activegraph`), documentation at [docs.activegraph.ai](https://docs.activegraph.ai), and a reproducible quickstart example.
+
+> See **[[concepts/activegraph]]** for the full architecture: event-sourced agent model, deterministic replay via content-addressed cache, cheap forking with structural diff, graph-shape subscriptions (Cypher), and the worked investment diligence example.
 
 ### The Core Distinction: World Graph vs Workflow Graph
 
@@ -289,6 +293,7 @@ For AI Agent architecture design, the statefulness discussion — synthesizing b
 
 ## Related Pages
 
+- [[concepts/activegraph]] — The formal event-sourced reactive graph architecture (arXiv:2605.21997)
 - [[concepts/agent-runtime]] — The execution environment for persistent, stateful agents
 - [[concepts/memory-systems-design-patterns]] — Anthropic vs OpenAI vs Cognition memory design
 - [[concepts/context-repositories]] — Letta's git-based agent memory

@@ -8,6 +8,21 @@
 - **Skip (already captured)**: `substack.com--redirect-49e1a4a9...` → `concepts/functional-emotions-llms.md` (updated 2026-05-20), `substack.com--redirect-f8601173...` → `concepts/gpu-cloud-rankings.md` (created 2026-05-20)
 - **Archive**: `wiki/raw/archived/triage/backlog/2026-05-22_20260522T120023Z.json`
 
+
+## 2026-05-22 wiki-graph-analysis | Weekly graph health check
+- **Total pages**: 1,986 (649 entities, 1,310 concepts, 20 comparisons, 6 events, 1 query)
+- **Index coverage**: 62.2% (1,233 indexed / 1,986 on disk)
+- **Unindexed pages**: 753 (752 concepts, 6 entities, 1 comparisons)
+- **Orphan pages**: 474 (323 content-rich, 149 skeleton/stub, 2 minimal)
+- **Broken wikilinks**: 707 unique targets (506 cat/slug, 120 plain, 20 cross-category)
+- **Duplicate entities**: 4 confirmed pairs (deliberate-coder/deliberatecoder, eugene-yan/eugeneyan, lilian-weng/lilianweng, samuel-colvin/samuelcolvin)
+- **Frontmatter gaps**: sources=760, type=35, created=24, updated=16, tags=11
+- **Oversized pages**: 140 (>200 lines)
+- **Non-canonical tags**: 126 (top: person=101, concept=45, entity=10)
+- **Stale pages**: 0 (all updated within 90 days)
+- **Index corruption**: 0 line-prefix, 0 pipe-table, 5 triple-bracket, 0 standalone pipe
+
+
 ## 2026-05-22 created | entities/browse-sh — Browse.sh browser skills catalog (+5 related pages enriched)
 - **Created**: `entities/browse-sh.md` — Open catalog of 100+ curated browser skills by Browserbase. Autobrowse AI-driven skill generation, 45% cost reduction on Craigslist benchmark. `npm i -g browse`.
 - **Enriched**: `entities/browserbase.md` — Added Browse.sh launch and Autobrowse to key features and related entities
@@ -2127,4 +2142,13 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - **Saved raw article** — raw/articles/2026-05-20_clavie-tsukuba-ir-talk-colbert-late-interaction.md (extracted via htmlpresent + browser_console chunks)
 - **Updated entities/benjamin-clavie.md** — Added Tsukuba IR Talk to timeline, Recent Themes section, and sources. Bumped updated date to 2026-05-22
 - **Updated wiki/SCHEMA.md** — Added tags: colbert, late-interaction, maxsim, multi-vector (Techniques category)
+
+## 2026-05-22 created | concepts/activegraph.md (arXiv:2605.21997) + raw paper + enriched related pages
+- **Saved raw paper** — `raw/papers/2026-05-22_2605.21997_the-log-is-the-agent-activegraph.md` — Full paper summary for Yohei Nakajima's "The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems"
+- **Registered in papers_index** — `papers_index.py --add` for arxiv:2605.21997
+- **Created concepts/activegraph.md** — Event-Sourced Reactive Graph concept page. Architecture: append-only event log → deterministic graph projection → reactive behaviours with graph-shape subscriptions (Cypher). Three unique properties: deterministic replay (content-addressed cache), cheap forking (branch at any event), end-to-end lineage. Comparison table vs LangGraph, Temporal, Vector Memory, BabyAGI 3. Worked example: investment diligence (93 objects, 76 relations, 7 behaviour types).
+- **Updated concepts/agent-statefulness.md** — Added paper source, updated ActiveGraph section header with arXiv reference + wikilink to concepts/activegraph, added to Related Pages
+- **Updated entities/yohei-nakajima.md** — Added ActiveGraph Paper subsection with contributions/properties, updated sources, added concepts/activegraph to Related Pages. Bumped updated date to 2026-05-22.
+- **Updated wiki/SCHEMA.md** — Added tags: reactive-systems (Infrastructure), agent-forking, lineage-tracking (AI Agents)
+- **Updated wiki/index.md** — Added concepts/activegraph entry, updated counts: Total 2086→2088, Indexed 1223→1224
 - **Updated wiki/index.md** — Added concepts/colbert. Counts: Total 2079→2080, Indexed 1221→1222

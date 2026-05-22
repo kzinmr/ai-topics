@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-22 | Total pages: 2086 | Indexed entries: 1223 | Not in index: 858 |
+> Last updated: 2026-05-22 | Total pages: 2088 | Indexed entries: 1224 | Not in index: 859 |
 
 ## Entities (656 pages)
 
@@ -670,6 +670,7 @@
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
+- [[concepts/activegraph]] — Event-Sourced Reactive Graph for agentic systems (arXiv:2605.21997). Inverts conventional architecture: append-only event log as source of truth, graph as deterministic projection, behaviours react to graph-shape changes. Three unique properties: deterministic replay (content-addressed cache), cheap forking (branch at any event), end-to-end lineage. Open source (Apache-2.0): `pip install activegraph`. Created by Yohei Nakajima.
 - [[concepts/activitypub]] — ActivityPub — W3C decentralized social networking protocol (2018). Mastodon, Threads, PeerTube. Used for federated AI agent communication
 - [[concepts/adversarial-interoperability]] — Adversarial Interoperability — Theory and practice of interoperating with platforms against their wishes. Cory Doctorow's framework for competitive tech policy
 - [[concepts/agent-documentation]] — Agent Documentation — Writing documentation optimized for AI coding agents: structured specs, clear interfaces, docstrings as semantic contracts
