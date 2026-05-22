@@ -44,6 +44,24 @@
 - **Source**: X bookmark / X Article (article.plain_text)
 
 
+
+## [2026-05-22] watchdog | Auto-fix wiki index corruption
+
+### Auto-Fixed
+- **5 triple-bracket corruptions** ([[[ → [[) in index.md: clefourrier, clicky, claris-filemaker-agentic-coding, ai-ready-apis, ai-supply-chain-security
+- **Index header count** corrected: 2,088 → 1,987 (actual filesystem count)
+- **Indexed/Not-in-index counts** updated: 1,237 / 750
+
+### Needs Attention (reported, not auto-fixed)
+- **753 unindexed pages** (too large — 10+ files threshold)
+- **760 pages missing `sources:` field** (too large)
+- **474 orphan pages** (needs human review)
+- **707 broken wikilinks** (needs human review)
+- **4 duplicate entity pairs** (needs human review)
+- **140 oversized pages** (>200 lines)
+
+---
+
 ## [2026-05-22] crawl | Active crawl: 5 new pages from trending AI topics
 
 - **Sources**: Google Blog (Gemini 3.5 Flash), GitHub (HiDream-O1-Image), arXiv (ScheduleFree+, Orthrus, Attractor Models)

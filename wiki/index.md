@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-22 | Total pages: 2088 | Indexed entries: 1224 | Not in index: 859 |
+> Last updated: 2026-05-22 | Total pages: 1987 | Indexed entries: 1237 | Not in index: 750 |
 
 ## Entities (656 pages)
 
@@ -150,9 +150,9 @@
 - [[entities/claude-design]] — Anthropic Labs product for collaborative visual design, powered by Claude Opus 4.7's vision model. Released April 17, 2026 in research preview.
 - [[entities/claude-mythos]] — Anthropic's next-generation model, developed after . Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
 - [[entities/claude-orbit]] — Claude Orbit — Anthropic's proactive AI assistant, leaked May 5, 2026 inside Claude Cowork. Auto-generates briefings from Gmail, Slack, GitHub, Calendar, Drive, Figma without prompting. Roots in Claude Code leak's KAIROS/DREAM/ULTRAPLAN features.
-- [[[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
-- [[[entities/clicky]] — Clicky — Free macOS AI assistant by Farza. Voice + screen capture → Claude → blue triangle pointing. No account/API key needed. Built in 3 weeks. Same approach as Google Magic Pointer (independently discovered same week).
-- [[[entities/claris-filemaker-agentic-coding]] — Claris (Apple subsidiary)
+- [[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
+- [[entities/clicky]] — Clicky — Free macOS AI assistant by Farza. Voice + screen capture → Claude → blue triangle pointing. No account/API key needed. Built in 3 weeks. Same approach as Google Magic Pointer (independently discovered same week).
+- [[entities/claris-filemaker-agentic-coding]] — Claris (Apple subsidiary)
 - [[entities/codex]] — OpenAI製のオープンソースAIコーディングエージェント。Apache-2.0、Rust製、79.3K GitHub Stars。GPT-5.5/5.4ネイティブ＋カスタムプロバイダ＋ローカルモデル対応。CLI/Desktop/IDE/Webのマルチサーフェス。ChatGPT Plus/Proに含まれ、サブスクリプション壁なし。
 - [[entities/cloudflare]] — Global cloud platform; Project Glasswing participant. Published Mythos Preview harness architecture (May 2026): Recon→Hunt→Validate→Gapfill→Dedupe→Trace→Feedback→Report. Also repositioning as "agentic cloud" with Agents SDK, Project Think.
 - [[entities/cloudflare-sandbox]] — Cloudflare's self-hosted sandbox for Claude Managed Agents (May 2026). Dual sandbox primitives (microVM + V8 isolates), proxy-based zero-trust credential brokering, Browser Run, email tools, Workers AI integration.
@@ -666,7 +666,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1399 pages)
+## Concepts (554 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -717,8 +717,8 @@
 - [[concepts/ai-evals]] — AI Evals (AI Evaluation Systems)
 - [[concepts/ai-index-report-2026]] — 2026 AI Index Report
 - [[concepts/ai-coding-agent-criticism]] — AI Coding Agent Criticism
-- [[[concepts/ai-ready-apis]] — AI-Ready APIs（AIエージェント向けAPI設計）。AIエージェントをAPI消費者として想定したAPI設計の概念。機械可読スキーマ、エージェント認識セキュリティ、コントラクトテストの重要性。Postman 2025調査（5,700人対象）のAI-APIギャップ分析を含む。
-- [[[concepts/ai-supply-chain-security]] — AI Supply Chain Security — Four supply-chain incidents in 50 days (Apr-May 2026): Codex CI injection, LiteLLM/Mercor breach, Claude Code source map leak, TanStack worm (84 malicious npm packages with valid SLSA L3). Attacks target release pipelines, not models. VentureBeat's 7-class attack surface framework.
+- [[concepts/ai-ready-apis]] — AI-Ready APIs（AIエージェント向けAPI設計）。AIエージェントをAPI消費者として想定したAPI設計の概念。機械可読スキーマ、エージェント認識セキュリティ、コントラクトテストの重要性。Postman 2025調査（5,700人対象）のAI-APIギャップ分析を含む。
+- [[concepts/ai-supply-chain-security]] — AI Supply Chain Security — Four supply-chain incidents in 50 days (Apr-May 2026): Codex CI injection, LiteLLM/Mercor breach, Claude Code source map leak, TanStack worm (84 malicious npm packages with valid SLSA L3). Attacks target release pipelines, not models. VentureBeat's 7-class attack surface framework.
 - [[concepts/ai-services-joint-ventures]] — **AI Services JVs (May 2026)**: OpenAI ($4B "The Deployment Company") and Anthropic ($1.5B Blackstone/Goldman JV) create PE-backed ventures to buy engineering services/consulting firms. Explicitly mirrors Palantir's embed-engineers-in-customer-ops model. Marks the shift from API-first to full-stack services enterprise AI. → Reuters scoop.
 - [[concepts/ai-memory-systems]] — AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較
 - [[concepts/ai-output-format-progression]] — AI出力フォーマット進化（Karpathy）: raw text → markdown → HTML → interactive neural videos/simulations。Audio in, Vision out。HTMLが次期デフォルト出力形式に。Thariq Shihiparの8カテゴリのHTMLアーティファクトユースケースを含む。
@@ -1231,7 +1231,7 @@
 - [[events/google-io-2026]] — Google I/O 2026（2026-05-20）— Gemini Spark（個人AIエージェント）、Antigravityプラットフォーム、Gemini 3.5 Flash発表。OpenCLaw対抗。Gemini CLI→Antigravity CLI移行（OSS→プロプライエタリ）。エージェントセキュリティ（prompt injection）懸念。
 - [[events/isomorphic-labs-series-b]] — Isomorphic Labs $2.1B Series B (May 2026) — Thrive Capital-led, AI drug discovery. Targeting human clinical trials by end of 2026. Demis Hassabis.
 
-## Comparisons (18 pages)
+## Comparisons (20 pages)
 
 - [[comparisons/agent-memory-systems-comparison]] — Agent Memory Systems Comparison — OpenClaw/Claude Code/Codex/Hermes 4ハーネスのメモリアーキテクチャ比較。ファイルファースト共通哲学、ベクトル検索vs全文検索、非同期vs同期vs Bounded Snapshot、Pre-Compaction Flush、Bustamante 3タイプ分類、選択ガイド付き。
 - [[comparisons/agent-orchestration-frameworks]] — Agent Orchestration Frameworks
