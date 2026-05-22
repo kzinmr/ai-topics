@@ -3,6 +3,11 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## 2026-05-22 raw-backlog-ingest | 5 articles triaged, 0 takes (3 non-AI skip, 2 already captured)
+- **Skip (non-AI)**: `danluu.com--fsyncgate--a3db25a4.md` (PostgreSQL fsync email thread), `danluu.com--diseconomies-scale--f3d3e873.md` (platform moderation essay), `danluu.com--su3su2u1-hpmor--5a2bbcdc.md` (HPMOR book review)
+- **Skip (already captured)**: `substack.com--redirect-49e1a4a9...` → `concepts/functional-emotions-llms.md` (updated 2026-05-20), `substack.com--redirect-f8601173...` → `concepts/gpu-cloud-rankings.md` (created 2026-05-20)
+- **Archive**: `wiki/raw/archived/triage/backlog/2026-05-22_20260522T120023Z.json`
+
 ## 2026-05-22 created | entities/browse-sh — Browse.sh browser skills catalog (+5 related pages enriched)
 - **Created**: `entities/browse-sh.md` — Open catalog of 100+ curated browser skills by Browserbase. Autobrowse AI-driven skill generation, 45% cost reduction on Craigslist benchmark. `npm i -g browse`.
 - **Enriched**: `entities/browserbase.md` — Added Browse.sh launch and Autobrowse to key features and related entities
