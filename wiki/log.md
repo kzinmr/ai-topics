@@ -2057,5 +2057,12 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 
 ## 2026-05-22 updated | wiki/index.md + wiki/log.md
 - **Updated index.md** — Added datasette-agent (entities), artificial-contributors-open-source (concepts), prompt-engineering-evaluation (concepts)
-  - Updated counts: Total 2072→2075, Indexed 1214→1217, Entities 650→651, Concepts 1397→1399
-- **Updated log.md** — This entry
+- Updated counts: Total 2072→2075, Indexed 1214→1217, Entities 650→651, Concepts 1397→1399
+- Updated log.md — This entry
+
+## 2026-05-22 created | concepts/colbert.md + updated entities/benjamin-clavie.md
+- **Created concepts/colbert.md** — ColBERT (Late Interaction Retrieval) concept page based on Benjamin Clavié's Tsukuba IR Talk (2026-05-20). Covers: three IR paradigms comparison, MaxSim scoring operator, dilution avoidance, OOD generalization (BrowseComp-Plus, LIMIT, ViDoRe), data efficiency, tradeoffs (32x storage, two-step pipeline), open problems (agentic redefinition, instruction-following collapse, oracle gap). Fulfills dangling wikilinks from benjamin-clavie.md, jo-kristian-bergum.md, late-interaction.md
+- **Saved raw article** — raw/articles/2026-05-20_clavie-tsukuba-ir-talk-colbert-late-interaction.md (extracted via htmlpresent + browser_console chunks)
+- **Updated entities/benjamin-clavie.md** — Added Tsukuba IR Talk to timeline, Recent Themes section, and sources. Bumped updated date to 2026-05-22
+- **Updated wiki/SCHEMA.md** — Added tags: colbert, late-interaction, maxsim, multi-vector (Techniques category)
+- **Updated wiki/index.md** — Added concepts/colbert. Counts: Total 2079→2080, Indexed 1221→1222

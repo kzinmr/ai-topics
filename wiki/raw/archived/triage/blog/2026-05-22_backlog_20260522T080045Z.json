@@ -1,0 +1,57 @@
+{
+  "archived_at": "2026-05-22T08:04:00+00:00",
+  "checkpoint_run_id": "20260522T080045Z",
+  "source": "backlog",
+  "decisions": [
+    {
+      "item_id": "chiark.greenend.org.uk--sgtatham-quasiblog-parsing--784cc4ed.md",
+      "source": "blog",
+      "source_name": "chiark.greenend.org.uk/~sgtatham",
+      "title": "In which I have Opinions about parsing and grammars",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/parsing/",
+      "recommended_action": "skip",
+      "reason": "Non-AI content. Compiler theory/parsing essay by Simon Tatham (PuTTY author). 3216 lines on CFGs, LR parsers, declarative vs imperative parsing. No AI/LLM/agent relevance.",
+      "body_excerpt": "I've been interested in parsing since I was a teenager. I first got into the subject by reading the dragon book in the early 1990s..."
+    },
+    {
+      "item_id": "ciechanow.ski--moon--e9e036f8.md",
+      "source": "blog",
+      "source_name": "Bartosz Ciechanowski",
+      "title": "Moon - Bartosz Ciechanowski",
+      "url": "https://ciechanow.ski/moon/",
+      "recommended_action": "skip",
+      "reason": "Non-AI content. Interactive astronomy/physics education piece about the Moon's geology, tides, and eclipses. No AI/LLM/agent relevance.",
+      "body_excerpt": "Let's take a look at the Moon as seen from space in all its sunlit glory. You can drag it around to change your point of view..."
+    },
+    {
+      "item_id": "2026-01-05_nvidia_vera-rubin-platform.md",
+      "source": "blog",
+      "source_name": "NVIDIA Technical Blog",
+      "title": "Inside the NVIDIA Vera Rubin Platform: Six New Chips, One AI Supercomputer",
+      "url": null,
+      "recommended_action": "skip",
+      "reason": "Already captured. Existing concepts/nvidia-vera-rubin.md (346 lines, 36KB) already incorporates all technical specs from this article: Vera CPU 88 Olympus cores, Spatial Multithreading, NVLink-C2C, Rubin GPU HBM4/22TB/s, NVLink 6 switch, Transformer Engine Gen 3.",
+      "body_excerpt": "NVIDIA Grace to Vera - scaling the CPU for AI factories. Vera delivers 2.4x higher memory bandwidth and 3x greater memory capacity..."
+    },
+    {
+      "item_id": "substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--197ff517.md",
+      "source": "newsletter",
+      "source_name": "Latent Space Podcast",
+      "title": "Extreme Harness Engineering for Token Billionaires: 1M LOC, 1B toks/day, 0% human code, 0% human review",
+      "url": "https://substack.com/redirect/2/eyJlIj...x4Ni",
+      "recommended_action": "skip",
+      "reason": "Already captured. Existing entities/ryan-lopopolo--core-ideas.md (158 lines, 9.4KB) already covers all themes: Spec-driven development, Ghost Library, $land skill, build loop optimization, human bottleneck shift, token utilization targets.",
+      "body_excerpt": "Ryan's keynote at AIE Europe. Move over, context engineering. Now it's time for Harness engineering and the age of the token billionaires..."
+    },
+    {
+      "item_id": "boyter.org--posts-an-informal-survey-of-10-million-github-bitbucket-gitl--f7966207.md",
+      "source": "blog",
+      "source_name": "Ben Boyter",
+      "title": "Processing 40 TB of code from ~10 million projects with a dedicated server and Go for $100",
+      "url": "https://boyter.org/posts/an-informal-survey-of-10-million-github-bitbucket-gitlab-projects/",
+      "recommended_action": "skip",
+      "reason": "Non-AI content. Code metrics survey of 9.9M repos / 40TB using scc CLI. General DevOps/code analysis blog. No AI/LLM/agent relevance.",
+      "body_excerpt": "The command line tool I created Sloc Cloc and Code (scc) counts lines of code, comments and makes a complexity estimate for files inside a directory..."
+    }
+  ]
+}
