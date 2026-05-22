@@ -4,7 +4,7 @@ type: concept
 status: incomplete
 description: "Agentic security encompasses the security patterns, protocols, and tools for protecting AI agents, MCP servers, and the agent-to-API communication layer."
 created: 2026-04-27
-updated: 2026-04-28
+updated: 2026-05-22
 tags:
   - concept
   - security
@@ -42,6 +42,33 @@ aliases: [AI agent security, MCP security, agent stack security]
 - Sandboxed execution environments (Docker, gVisor, Firecracker microVM)
 - Tool-use enforcement and credential scoping
 - Capabilities-based security model (zero-initial, grant-granted)
+
+### 7. Credential Management in Agent Sandboxes (Auth Proxy Pattern)
+
+LangChain's LangSmith Sandboxes introduced an **Auth Proxy** pattern (May 2026) that moves credential handling out of the agent runtime entirely:
+
+**Core principle**: Agents need the *effect* of a credential (the ability to call an API) — not *possession* of the credential itself.
+
+**How it works**:
+1. Agent/sandboxed code makes an outbound request
+2. Auth Proxy intercepts it at the network layer (infrastructure-level, not HTTP_PROXY)
+3. Proxy checks configured policy for the destination → blocks, allows, or injects headers
+4. Request continues with injected credentials — agent never sees the API key
+
+**Credential types**:
+- `workspace_secret`: References platform-stored secrets
+- `plaintext`: For non-sensitive headers
+- `opaque`: Write-only, encrypted at rest, never retrievable
+- `dynamic callbacks`: For OAuth tokens, per-user-scoped tokens, tokens needing refresh
+
+**Key design decisions**:
+- **Fail-closed**: If callback fails, reject the sandbox request (don't send without credentials)
+- **Per-destination rules**: e.g., only allow `api.openai.com` + `api.github.com/repos/*`
+- **Control plane outside runtime**: The proxy is infrastructure, not exposed to agent instructions
+
+This pattern is critical because agents with credentials in the runtime have a wide exposure surface: every tool call, package install, log line, and file write is a possible credential leak path. Header injection moves credentials out of that blast radius.
+
+Source: [[entities/langchain|LangChain]] — [Auth Proxy for LangSmith Sandboxes](https://x.com/i/article/2057309362889326593), May 2026
 
 ### 5. Package Security for AI Agents (Nesbitt.io, April 2026)
 

@@ -9,9 +9,9 @@ tags:
   - deep-agents
   - state-management
 created: 2026-04-27
-updated: 2026-05-14
+updated: 2026-05-22
 aliases: [LangChain Framework, LangChain AI]
-sources: [https://www.langchain.com/, https://github.com/langchain-ai/langchain, https://en.wikipedia.org/wiki/LangChain, raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md, raw/articles/2026-04-29_langchain-harness-profiles.md, raw/articles/2026-05-12_langchain-delta-channels.md]
+sources: [https://www.langchain.com/, https://github.com/langchain-ai/langchain, https://en.wikipedia.org/wiki/LangChain, raw/articles/2025-04-20_langchain-how-to-think-about-agent-frameworks.md, raw/articles/2026-04-29_langchain-harness-profiles.md, raw/articles/2026-05-12_langchain-delta-channels.md, raw/articles/2026-05-21_langchain_auth-proxy-langsmith-sandboxes.md]
 ---
 
 
@@ -137,6 +137,36 @@ See [[concepts/harness-profiles|Harness Profiles]] for details.
 **DeltaChannel** is a new LangGraph channel type (beta v1.2) that writes only incremental updates at each checkpoint, with full snapshots every K steps. This bounds resume costs for agents running thousands of steps — enabling production-grade, long-running agents.
 
 See [[concepts/delta-channels|Delta Channels]] for details.
+
+## LangSmith Sandbox Auth Proxy (May 2026)
+
+LangSmith Sandboxes introduced an **Auth Proxy** to control the network boundary between agent-generated code and external services. Instead of putting API keys into sandboxes as environment variables, the proxy sits on the outbound network path and enforces policy for which destinations are allowed and how authentication is applied.
+
+### Key Design Decisions
+
+| Aspect | Design |
+|--------|--------|
+| Credential storage | **Outside the runtime** — workspace secrets, opaque encrypted, or dynamic callbacks |
+| Network enforcement | **Infrastructure-level** (not HTTP_PROXY) — transparent regardless of runtime/SDK |
+| Default posture | **Fail-closed** — if callback fails, reject the sandbox request |
+| Scope | Per-destination rules (e.g., only api.openai.com + api.github.com/repos/*) |
+
+### Header Types
+- `workspace_secret`: References a secret in LangSmith workspace settings
+- `plaintext`: Stored as-is for non-sensitive headers
+- `opaque`: Write-only, encrypted at rest, never returned by API
+
+### Dynamic Credentials (Callbacks)
+For OAuth tokens, per-user-scoped tokens, and credentials that need refresh, the proxy supports a callback pattern. The proxy calls a configured endpoint → receives `{"headers": {...}}` → injects and caches for TTL. Fails closed on error.
+
+### Future Directions
+- **DNS remapping**: Redirect requests to internal package mirrors
+- **Network logging**: Audit trail of agent service calls and domain access
+- **Request transformation**: PII redaction, organization metadata injection
+
+This design follows the principle that agent infrastructure needs **control planes outside the runtime** — not exposed to agent instructions and decisions.
+
+See [[concepts/agentic-security]] for broader agent security patterns.
 
 ## Related Concepts
 - [[concepts/langgraph]] — Low-level agent orchestration framework

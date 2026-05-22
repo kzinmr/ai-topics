@@ -15,6 +15,7 @@ tags:
 status: L2
 sources:
   - raw/articles/2026-05-11_kylejeong_firecracker-agent-infra.md
+  - raw/articles/2026-05-18_browse-sh-browserbase_agent-skills-catalog.md
   - https://kylejeong.com
   - https://browserbase.com
 ---
@@ -39,6 +40,7 @@ Kyle writes technical deep-dives that bridge infrastructure concepts with AI age
 - **"What is Firecracker, and why do all the Agent Infra companies care about it?"** (May 2026) — Explains Firecracker microVM architecture and why agent infrastructure companies (Browserbase, E2B, Daytona, Modal) need VM-level isolation for running untrusted code
 - **"How we build Agents at Browserbase"** (April 2026) — Internal agent development practices at Browserbase
 - **"Introducing BrowserEnv: Train browser agents on real websites"** (May 2026) — With Shubhankar Srivastava
+- **"Browse.sh, a catalog of browser skills for the Agentic future"** (May 2026) — Launch article for Browse.sh, an open catalog of 100+ curated browser skills with Autobrowse system. Demonstrates 45% cost reduction on Craigslist ($0.22 → $0.12/run)
 - **"Transformers, more than meets the eye"** (January 2026) — Transformer architecture explainer
 - **"What on earth is Kubernetes?"** (December 2025) — Kubernetes fundamentals explainer
 - **"What's the big deal about computer-use?"** (December 2025) — History and evolution of computer-use AI
@@ -55,4 +57,5 @@ Kyle's writing is characterized by:
 - [[concepts/firecracker]] — Firecracker microVMs
 - [[concepts/sandbox]] — AI agent sandboxing
 - [[concepts/browser-automation]] — Web browser automation for agents
-- [[concepts/computer-use]] — Computer-use AI agents
+  - [[entities/browse-sh]] — Browse.sh browser skills catalog
+  - [[concepts/computer-use]] — Computer-use AI agents

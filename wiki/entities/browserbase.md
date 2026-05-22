@@ -6,17 +6,18 @@ aliases:
 - browserbase-hq
 - stagehand
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-05-22
 tags:
   - entity
   - developer-tooling
   - browser-agent
   - infrastructure
 sources:
-- https://www.browserbase.com/
-- https://www.browserbase.com/blog/stagehand-v3
-- https://docs.browserbase.com/introduction/stagehand
-- https://www.browserbase.com/blog/introducing-the-stagehand-api
+  - raw/articles/2026-05-18_browse-sh-browserbase_agent-skills-catalog.md
+  - https://www.browserbase.com/
+  - https://www.browserbase.com/blog/stagehand-v3
+  - https://docs.browserbase.com/introduction/stagehand
+  - https://www.browserbase.com/blog/introducing-the-stagehand-api
 
 ---
 
@@ -74,11 +75,12 @@ sources:
 1. **ホストブラウザフリート**: スケール対応のセキュアなブラウザ環境
 2. **Session Inspector**: 全てのAI決定を可視化・デバッグ
 3. **Model Gateway**: LLMリクエストをBrowserbase APIキーでルーティング
-4. **MCP Server**: インフラ上で直接実行（2026年3月）
-5. **Fetch API**: ブラウザベースのデータ取得（2026年3月）
-6. **Search**: ブラウザ内検索機能（2026年3月）
-7. **Concurrency**: フリープランで1→3に拡張（2026年3月）
-8. **Prime Intellect連携**: ブラウザエージェントのトレーニング・評価（2026年3月）
+4. **Browse.sh** (2026年5月): 100+のブラウザスキル公開カタログ。AutobrowseによるAI駆動スキル生成。`npm i -g browse`。エージェントのサイト再発見コストを45%削減
+5. **MCP Server**: インフラ上で直接実行（2026年3月）
+6. **Fetch API**: ブラウザベースのデータ取得（2026年3月）
+7. **Search**: ブラウザ内検索機能（2026年3月）
+8. **Concurrency**: フリープランで1→3に拡張（2026年3月）
+9. **Prime Intellect連携**: ブラウザエージェントのトレーニング・評価（2026年3月）
 
 ## browser-useとの違い
 
@@ -92,6 +94,7 @@ sources:
 
 ## 関連エンティティ
 
+- [[entities/browse-sh]] — ブラウザスキル公開カタログ
 - [[entities/browser-use]] — オープンソースブラウザ自動化
 - [[concepts/death-of-browser]] — ブラウザの脱人間化潮流
 - [[entities/webmcp]] — 標準化プロトコル

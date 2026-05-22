@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-22 | Total pages: 2085 | Indexed entries: 1222 | Not in index: 858 |
+> Last updated: 2026-05-22 | Total pages: 2086 | Indexed entries: 1223 | Not in index: 858 |
 
 ## Entities (656 pages)
 
@@ -129,6 +129,7 @@
 - [[entities/boris-cherny]] — **X/Twitter** | @bcherny__ |
 - [[entities/bradford-morgan-white]] — **URL:** https://abortretry.fail (Substack), https://bradford.la (technology blog)
 - [[entities/brian-armstrong]] — Brian Armstrong — Coinbase CEO. In May 2026 letter, announced AI-driven restructuring: "aggressive, practical, and swift" AI adoption, shifting from operations-heavy to AI-first workforce.
+- [[entities/browse-sh]] — **Browse.sh** is an open catalog of 100+ curated browser skills by Browserbase (May 2026). Agent-navigable website playbooks with Autobrowse AI-driven skill generation. 45% cost reduction vs generic agent loops.
 - [[entities/browser-use]] — **browser-use**は、ETH Zurich出身者によって開発されたオープンソースのブラウザ自動化フレームワーク。AIエージェントがPlaywright経由でWebサイトを操作できるようにする。「Make websites accessible for AI agents」をミッションに掲げる。
 - [[entities/browserbase]] — **Browserbase**は、AIエージェント向けの信頼性の高いブラウザ自動化インフラを提供するプラットフォーム。「the where（どこで実行するか）」を担当し、Stagehand（the what）とStagehand API（the how）と統合された3層アーキテクチャを構築している。
 - [[entities/brutecat-com]] — **Blog** | brutecat.com |

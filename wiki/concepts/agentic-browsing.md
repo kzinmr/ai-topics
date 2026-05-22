@@ -4,10 +4,12 @@ type: concept
 status: incomplete
 description: "Agentic browsing refers to AI agents that autonomously navigate websites, click buttons, fill forms, and execute multi-step web workflows on behalf of users."
 created: 2026-04-27
-updated: 2026-04-28
+updated: 2026-05-22
 tags:
   - concept
   - browser-agent
+sources:
+  - raw/articles/2026-05-18_browse-sh-browserbase_agent-skills-catalog.md
 aliases: [browser agents, web navigation agents, autonomous browsing]
 ---
 
@@ -34,7 +36,7 @@ aliases: [browser agents, web navigation agents, autonomous browsing]
 | **Chrome Auto Browse** | Google | Gemini-powered persistent AI panel, deeply integrated with Gmail, Maps, Calendar |
 | **Perplexity Comet** | Perplexity AI | Web research-focused browsing agent |
 | **Computer Use** | Anthropic | Screenshot-based GUI navigation for Claude |
-| **Browserbase** | Browserbase Inc. | Cloud-hosted browser infrastructure for agents |
+| **Browserbase** | Browserbase Inc. | Cloud-hosted browser infrastructure for agents. Launched **Browse.sh** (May 2026): 100+ curated browser skills catalog, 45% cost reduction via skill reuse |
 | **Skyvern** | Skyvern AI | Visual understanding for complex web UIs |
 
 ## Applications
@@ -48,6 +50,7 @@ aliases: [browser agents, web navigation agents, autonomous browsing]
 ## Related Concepts
 
 - [[entities/browser-use]] — Open-source browser automation framework for AI agents
+- [[entities/browse-sh]] — Curated browser skills catalog
 - [[entities/browserbase]] — Cloud browser infrastructure for AI agents
 - [[entities/anthropic-computer-use]] — Claude's screenshot-based GUI navigation
 - [[concepts/model-context-protocol-mcp]] — Standard protocol for model-tool interaction

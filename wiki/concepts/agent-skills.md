@@ -10,10 +10,11 @@ tags:
   - claude-code
 aliases:
   - Agent Skills open standard
-  - equipping-agents-with-skills
-status: active
+created: 2026-04-25
+updated: 2026-05-22
 sources:
   - raw/articles/2026-05-08_anthropic-engineering_equipping-agents-for-the-real-world-with-agent-skills.md
+  - raw/articles/2026-05-18_browse-sh-browserbase_agent-skills-catalog.md
   - https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
 related:
   - building-effective-agents
@@ -87,6 +88,7 @@ Claudeの文書編集機能を支えるSkill:
 
 ## See Also
 
+- [[entities/browse-sh]] — Browse.sh: 100+ curated browser skills catalog by Browserbase
 - [[concepts/agent-skills-overview]] — Agent Skills 概念クラスターマップ（親ページ）
 - [[concepts/building-effective-agents]] — Building effective agents
 - [[concepts/effective-harnesses-for-long-running-agents]] — Long-running agent harnesses

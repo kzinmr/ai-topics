@@ -3,6 +3,27 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## 2026-05-22 created | entities/browse-sh — Browse.sh browser skills catalog (+5 related pages enriched)
+- **Created**: `entities/browse-sh.md` — Open catalog of 100+ curated browser skills by Browserbase. Autobrowse AI-driven skill generation, 45% cost reduction on Craigslist benchmark. `npm i -g browse`.
+- **Enriched**: `entities/browserbase.md` — Added Browse.sh launch and Autobrowse to key features and related entities
+- **Enriched**: `entities/kyle-jeong.md` — Added Browse.sh article to writings, updated sources and related pages
+- **Enriched**: `concepts/agent-skills.md` — Added Browse.sh as browser skill catalog reference in See Also
+- **Enriched**: `concepts/agentic-browsing.md` — Updated Browserbase description with Browse.sh, added to Related Concepts
+- **Raw articles**: `2026-05-18_browse-sh-browserbase_agent-skills-catalog.md` (X article, getxapi: false)
+- **Source**: X bookmark / X Article (article.plain_text)
+
+## 2026-05-22 enriched | concepts/forward-deployed-engineering — Practical FDE guide (Audit → Evals → Deployment)
+- **Enriched**: `concepts/forward-deployed-engineering.md` — Added 2 major sections: "The FDE Job: Audit → Evals → Deployment" (Varick's 3-phase framework with decision principles) and "How to Become an FDE (30-Day Roadmap)" (4 checkpoints + 3 career paths). Fixed duplicate `created` field.
+- **Raw articles**: `2026-05-20_varick_forward-deployed-engineering-101.md` (X article, getxapi: false)
+- **Source**: X bookmark / X Article (article.plain_text)
+
+## 2026-05-22 enriched | entities/langchain + concepts/agentic-security — LangSmith Auth Proxy
+- **Enriched**: `entities/langchain.md` — Added "LangSmith Sandbox Auth Proxy (May 2026)" section with key design decisions, header types, dynamic credentials, future directions
+- **Enriched**: `concepts/agentic-security.md` — Added Section 7: "Credential Management in Agent Sandboxes (Auth Proxy Pattern)" with credential types, fail-closed design, control plane principle
+- **Raw articles**: `2026-05-21_langchain_auth-proxy-langsmith-sandboxes.md` (X article, getxapi: false)
+- **Source**: X bookmark / X Article (article.plain_text)
+
+
 ## [2026-05-22] crawl | Active crawl: 5 new pages from trending AI topics
 
 - **Sources**: Google Blog (Gemini 3.5 Flash), GitHub (HiDream-O1-Image), arXiv (ScheduleFree+, Orthrus, Attractor Models)
