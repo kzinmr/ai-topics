@@ -18,6 +18,7 @@ sources:
   - raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams
   - raw/articles/2026-04-30_lessons-from-building-ai-agents-financial-services.md
   - raw/articles/2026-03-26_daniel-tunkelang_agentic-search-agile-engineering.md
+  - raw/articles/2026-03-24_hornet_deep-research-is-a-retrieval-problem.md
   - raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
   - raw/papers/2026-03-20_2603.20432_coding-agents-effective-long-context-processors.md
   - raw/articles/2025-12-04_sid-1-agentic-retrieval.md

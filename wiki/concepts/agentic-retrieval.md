@@ -16,6 +16,7 @@ tags:
   - bm25
   - rag
 sources:
+  - raw/articles/2026-03-24_hornet_deep-research-is-a-retrieval-problem.md
   - raw/articles/2026-05-20_hornet_this-is-what-agentic-retrieval-looks-like.md
 ---
 
@@ -94,12 +95,14 @@ Poor retrieval compounds across multi-call sessions. Each turn's search results 
 
 ## Related Concepts
 
-- [[concepts/deep-research]] — The application pattern driving agentic retrieval demand
-- [[concepts/rag]] — Retrieval-Augmented Generation (evolving toward agentic retrieval)
+- [[concepts/deep-research]] — Deep research is fundamentally a retrieval problem (BrowseComp-Plus oracle evidence)
+- [[concepts/hornet]] — Retrieval engine purpose-built for agent workloads
+- [[concepts/vespa]] — The engine where many Hornet engineers previously worked
 - [[concepts/bm25]] — Keyword retrieval backbone; performs differently in agent loops vs. one-shot
 - [[concepts/mutually-assured-distraction]] — Compounding error: better retrieval → more convincing distractors → more confident wrong answers
 - [[concepts/browsecomp]] — The benchmark revealing the agentic retrieval bottleneck
 - [[concepts/agent-loop]] — The iterative reasoning pattern that produces agentic workloads
+- [[concepts/rag]] — Retrieval-Augmented Generation (evolving toward agentic retrieval)
 
 ## Open Questions
 

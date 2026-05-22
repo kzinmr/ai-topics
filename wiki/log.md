@@ -3,6 +3,19 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-22] enrich 2 | concepts/deep-research.md (new) + Part 1 series linking
+
+- **Source**: hornet.dev blog — "Deep research is a retrieval problem" (Jo Kristian Bergum, Mar 24, 2026)
+- **Raw article**: `raw/articles/2026-03-24_hornet_deep-research-is-a-retrieval-problem.md`
+- **concepts/deep-research.md**: NEW — core thesis: deep research is fundamentally a retrieval problem, BrowseComp-Plus oracle evidence (GPT-4.1 93%→15%), three evaluation layers, cross-linked to agentic-retrieval/hornet/agentic-search
+- **concepts/agentic-retrieval.md**: Added Part 1 source + deep-research wikilink
+- **concepts/agentic-search.md**: Added Part 1 article to sources
+- **concepts/hornet.md**: Added Part 1 source + deep-research wikilink
+- **entities/jo-kristian-bergum.md**: Added Part 1 to writings list and timeline
+- **index.md**: Added deep-research entry
+
+---
+
 ## [2026-05-22] enrich | concepts/hornet.md, concepts/agentic-retrieval.md, entities/jo-kristian-bergum.md
 
 - **Source**: hornet.dev blog — "This is what agentic retrieval looks like" (Jo Kristian Bergum, May 20, 2026)

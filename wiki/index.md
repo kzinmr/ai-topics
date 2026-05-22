@@ -852,6 +852,7 @@
 - [[concepts/coalitional-agency]] — Richard Ngo の提唱する「スケールフリーな知的エージェンシー理論」。知性は競争と協調を行うサブエージェントの連合体（coalition）として成立し、この原理はニューロンから文明まで普遍的に適用される。EUM と Active Inference の両方を批判的に統合。予測市場・オークション・投票による内部調整メカニズムを提案。
 - [[concepts/accelerate]]
 - [[concepts/deepclaude]] — Open-source tool enabling Claude Code's agent loop with DeepSeek V4 Pro, demonstrating agent framework interoperability.
+- [[concepts/deep-research]] — Deep Research: fundamentally a retrieval problem (BrowseComp-Plus oracle evidence). GPT-4.1 93%→15% accuracy gap. Three evaluation layers (one-shot/session/end-to-end). Part 1+2 of Hornet agentic retrieval series.
 - [[concepts/deep-research-agent-from-scratch]] — Deep Research Agent from Scratch（深層リサーチエージェントのゼロから構築） — 生の Gemini API 呼び出しから 10 ステップでフルリサーチエージェントを構築。Phase swapping（plan/execute モード切替）、決定論的ガードレール、動的サブエージェント並列起動（Exa検索）。Ivan Leo (Google DeepMind) + Hugo Bowne-Anderson の2026年3月ワークショップ。 [[raw/articles/2026-03-28_youtube_deep-research-agent-workshop]]
 - [[concepts/deepseek-v3]] — DeepSeek-V3: 671B MoEモデル（37B活性化/トークン）。MLA、補助損失なし負荷分散、MTP、FP8訓練、DualPipeなど複数の革新的技術を導入。14.8Tトークンで$5.576Mの訓練コスト。GPT-4oクラスの性能を達成したマイルストーン論文（arXiv:2412.19437, Dec 2024）。
 - [[concepts/deepseek-v3-2]] — DeepSeek-V3.2: 685Bパラメータ。DSA（学習可能スパースアテンション、$O(L^2)→O(Lk)$）、スケーラブルRL（GRPO強化）、大規模エージェントタスク合成（1,827環境・85Kプロンプト）の3革新。V3.2-SpecialeはIMO 2025・IOI 2025金メダル、ICPC World Finals世界2位。GPT-5/Gemini-3.0-Proに迫る（arXiv:2512.02556, Dec 2025）。

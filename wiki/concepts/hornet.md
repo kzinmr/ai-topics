@@ -17,6 +17,7 @@ tags:
   - search
   - deep-research
 sources:
+  - raw/articles/2026-03-24_hornet_deep-research-is-a-retrieval-problem.md
   - raw/articles/2026-05-20_hornet_this-is-what-agentic-retrieval-looks-like.md
 ---
 
@@ -91,6 +92,7 @@ Founded by ex-Vespa engineers from Yahoo/Fast Search:
 
 - [[entities/jo-kristian-bergum]] — Founder and CEO
 - [[concepts/agentic-retrieval]] — The paradigm Hornet serves
+- [[concepts/deep-research]] — Deep research is fundamentally a retrieval problem
 - [[concepts/vespa]] — The search engine where the team previously built
 - [[concepts/bm25]] — Keyword retrieval backbone used in BrowseComp-Plus analysis
 - [[concepts/mutually-assured-distraction]] — Retrieval-reasoning compounding error Hornet addresses
