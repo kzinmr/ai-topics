@@ -3,6 +3,16 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+
+## [2026-05-22] health-fix | Orphan batch registration (20 pages)
+
+### Pages Added to Index
+- **Entities**: [[entities/aaron-levie]], [[entities/box-com]], [[entities/marc-andreessen]]
+- **Concepts**: [[concepts/swe-bench]], [[concepts/mismeasure-of-open-source]], [[concepts/openai-symphony]], [[concepts/fsdp-qlora]], [[concepts/personal-superintelligence]], [[concepts/gnu-ai-reimplementations]], [[concepts/model-context-protocol-mcp]], [[concepts/gpt-models]], [[concepts/synthetic-data]], [[concepts/speech-audio-asr-tts-voice]], [[concepts/stanford-cs336-language-modeling-from-scratch]], [[concepts/subagents]], [[concepts/gemini]], [[concepts/coala]], [[concepts/cognitive-cost-of-agents]], [[concepts/reasoning-compression]], [[concepts/memory-systems-design-patterns]]
+- All pages verified: >800 bytes, non-TODO, real content
+- Index structure: clean (validate_index.py ✅)
+
+---
 ## 2026-05-22 raw-backlog-ingest | 5 articles triaged, 0 takes (3 non-AI skip, 2 already captured)
 - **Skip (non-AI)**: `danluu.com--fsyncgate--a3db25a4.md` (PostgreSQL fsync email thread), `danluu.com--diseconomies-scale--f3d3e873.md` (platform moderation essay), `danluu.com--su3su2u1-hpmor--5a2bbcdc.md` (HPMOR book review)
 - **Skip (already captured)**: `substack.com--redirect-49e1a4a9...` → `concepts/functional-emotions-llms.md` (updated 2026-05-20), `substack.com--redirect-f8601173...` → `concepts/gpu-cloud-rankings.md` (created 2026-05-20)
@@ -42,6 +52,7 @@
 - **Enriched**: `concepts/agentic-security.md` — Added Section 7: "Credential Management in Agent Sandboxes (Auth Proxy Pattern)" with credential types, fail-closed design, control plane principle
 - **Raw articles**: `2026-05-21_langchain_auth-proxy-langsmith-sandboxes.md` (X article, getxapi: false)
 - **Source**: X bookmark / X Article (article.plain_text)
+
 
 
 
