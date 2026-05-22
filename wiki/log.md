@@ -3,7 +3,21 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-22] enrich | Skeleton entity enrichment — Varun Trivedy, Samuel Colvin, Daniel van Strien, Ryan Lopopolo
 
+### Pages Enriched (from thin/skeleton state to full quality)
+- [[entities/vtrivedy10]] — **Varun "Viv" Trivedy** (@vtrivedy10). LangChain agent harness lead, DeepAgents maintainer, harness engineering thought leader. Added: full bio (PhD Temple, AWS scientist), career timeline, DeepAgents details, Terminal Bench 2.0 case study (Top 30→Top 5 via harness only), "8 Theses" harness framework, publication list, philosophy. Sources: vtrivedy.com/about, LangChain blog, raw article 2026-05-06.
+- [[entities/samuel-colvin]] — **Samuel Colvin**. Pydantic creator, PydanticAI / Pydantic Logfire founder. Added: Pydantic Stack overview (Pydantic+PydanticAI+Logfire), 500M+ monthly downloads, Sequoia backing, open-source project catalog (FastUI, arq, devtools, dirty-equals), career background, philosophy. Sources: pydantic.dev, PyCon speaker profiles, GitHub.
+- [[entities/daniel-van-strien]] — **Daniel van Strien**. Machine Learning Librarian at Hugging Face. Added: full overview (British Library→HF journey), Living with Machines project, GLAM+AI bridge work, AI Design Patterns book, synthetic datasets (awesome-synthetic-datasets 330★), dataset curation contributions, philosophy. Sources: danielvanstrien.xyz, GitHub, HF profile.
+- [[entities/ryan-lopopolo]] — **Ryan Lopopolo** (@_lopopolo). OpenAI Frontier team, Harness Engineering originator, Symphony creator. Added: 1M LOC zero-human-code experiment, "token billionaire" (~1B tokens/day), Symphony orchestration details, ghost library spec format, dark factory pattern, key theses (agent legibility, steering over writing), speaking history. Sources: tessl.io, Latent Space podcast, OpenAI blog, ZenML case study.
+
+### Sources
+- vtrivedy.com/about, vtrivedy.com/projects, langchain.com/blog (May 2026)
+- pydantic.dev, github.com/samuelcolvin, pycon.us (2024/2026)
+- danielvanstrien.xyz, livingwithmachines.ac.uk, github.com/davanstrien
+- tessl.io/speaker/ryanlopopolo, frontiermodels.cc Latent Space podcast (May 2026), openai.com/harness-engineering
+
+---
 
 ## [2026-05-22] ingest | Nightly dreaming consolidation — Agent Execution Tax + 6 enrichments
 

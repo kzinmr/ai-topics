@@ -169,7 +169,7 @@
 - [[entities/daniel-han]] — **X/Twitter** | @danielhanchen |
 - [[entities/daniel-miessler]] — Cybersecurity and AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ GitHub stars), SecLists, PAI. Author of Autonomous Component Optimization and Intent-Based Engineering concepts.
 - [[entities/daniel-tunkelang]] — **X/Twitter** | @dtunkelang | **Medium** | [dtunkelang.medium.com](https://dtunkelang.medium.com/) | Search consultant, Endeca co-founder (faceted search pioneer). PhD CS (CMU), MIT. Founded HCIR symposium. 24 US patents. Author: [Query Understanding series](https://queryunderstanding.com/) (24 articles, 2016–2024), *Faceted Search* (Springer). Bag-of-documents model (2023–2026): distills retrieval pipelines into single embedding model. Advises Etsy, Flipkart. RSS monitored via blogwatcher. [[concepts/query-understanding]] [[concepts/information-retrieval]] [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
-- [[entities/daniel-van-strien]] — **X** | @vanstriendaniel |
+- [[entities/daniel-van-strien]] — Daniel van Strien — Machine Learning Librarian at Hugging Face. Focuses on datasets, GLAM+AI bridge, and data curation. Former British Library Digital Curator (Living with Machines). Creator of awesome-synthetic-datasets. Author of AI Design Patterns for Information Professionals.
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
 - [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.
 - [[entities/dario-amodei]] — **Role** | Co-founder & CEO, Anthropic |
@@ -435,9 +435,9 @@
 - [[entities/righto-com]] — **Blog** | righto.com |
 - [[entities/ryan-carson]] — **X** | @ryancarson |
 - [[entities/ryan-dahl]] — Ryan Dahl is a software engineer best known as the creator of **Node.js** (2009) and **Deno** (2018), two foundational JavaScript/TypeScript runtimes. His work has shaped the modern server-side Jav...
-- [[entities/ryan-lopopolo]] — **X/Twitter** | @_lopopolo |
+- [[entities/ryan-lopopolo]] — Ryan Lopopolo (@_lopopolo) — OpenAI Frontier team. Originator of Harness Engineering (definitive OpenAI blog). Creator of Symphony (Elixir-based multi-agent orchestration). 1B+ tokens/day "token billionaire." Zero-human-code 1M+ LOC experiment.
 - [[entities/sam-altman]] — **Full Name** | Samuel Harris Altman |
-- [[entities/samuel-colvin]] — **Name** | Samuel Colvin |
+- [[entities/samuel-colvin]] — Samuel Colvin — Creator of Pydantic (500M+ monthly downloads). Founder & CEO of Pydantic Inc. (backed by Sequoia, Partech). Creator of PydanticAI (type-safe agent framework) and Pydantic Logfire (observability).
 - [[entities/sandro-puppo]] — Co-founder of Cua (YC X25) and Lucebox. Focus on local LLM inference optimization and computer-use agent infrastructure.
 - [[entities/sankalp-sinha]] — **Sankalp Sinha**, known online as **dejavucoder** (@dejavucoder), is an **AI engineer** and applied LLM researcher based in India. He focuses on AI-assisted coding, agentic workflows, LLM evaluati...
 - [[entities/sap-business-ai-platform]] — SAP Business AI Platform — Unified enterprise AI foundation announced at SAP Sapphire 2026. SAP Knowledge Graph, Joule Studio, Autonomous Suite. Anthropic Claude as primary reasoning engine for Joule agents.
@@ -513,7 +513,7 @@
 - [[entities/varun-trivedy]] — **X** | @Vtrivedy10 |
 - [[entities/vincent-weisser]] — Vincent Weisser — Co-founder & CEO of Prime Intellect. Building open superintelligence stack. $20.5M raised.
 - [[entities/vincent-warmerdam]] — Vincent Warmerdam (@koaning) — Engineer at marimo (reactive notebook platform). Author of Agent-Harness.ipynb insights: shared notebook canvas, marimo linter solved 60% of agent errors, incremental generation, calm engineering philosophy. Ex-Rasa.
-- [[entities/vtrivedy10]] — **X** | @vtrivedy10 |
+- [[entities/vtrivedy10]] — Varun 'Viv' Trivedy (@vtrivedy10) — LangChain agent harness lead, DeepAgents maintainer. PhD CS (Temple), ex-AWS Scientist. Terminal Bench 2.0: Top 30→Top 5 via harness-only changes. Author of "The Anatomy of an Agent Harness."
 - [[entities/vibevoice]] — Microsoft Research's next-token diffusion TTS model for long-form, multi-speaker conversational audio (up to 90 min, 4 speakers). ICLR 2026 Oral. Open-source (MIT). [[entities/vibevoice|→詳細]]
 - [[entities/walden-yan]] — **Role** | Co-Founder & Chief Product Officer (CPO), Cognition AI |
 - [[entities/warp-terminal]] — AI-native terminal and Agentic Development Environment (ADE). Open-sourced April 2026 under AGPLv3 with OpenAI as founding sponsor. Oz orchestration platform.
