@@ -1,7 +1,7 @@
 ---
 title: "Hermes Agent vs OpenClaw"
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-22
 type: comparison
 tags:
   - comparison
@@ -20,6 +20,8 @@ sources:
   - https://github.com/openclaw/openclaw
   - https://docs.openclaw.ai
   - https://hermes-agent.nousresearch.com
+  - raw/articles/2026-05-22_deeplearning-ai_hermes-vs-openclaw-newsletter.md
+  - https://info.deeplearning.ai/hermes-vs.-openclaw-cybersecurity-alarms-ring-more-interactive-conversations-can-agents-do-human-work
 ---
 
 # Hermes Agent vs OpenClaw
@@ -50,6 +52,30 @@ OpenClaw: [Messaging Platforms] → [Gateway Core: Sessions, Routing, Cron, Chan
 ```
 
 **Hermes** optimizes for the agent becoming more capable over time — self-improving skills, compounding memory, GEPA optimization. **OpenClaw** optimizes for a persistent assistant reachable from anywhere — 11+ channels, deterministic scheduling, multi-agent routing through a single control plane.
+
+## Traction Signal: OpenRouter Leaderboard
+
+As of May 2026, **Hermes Agent has overtaken OpenClaw** on OpenRouter's daily token-consumption leaderboard — a real-time indicator of community usage volume. This signals accelerating adoption of Hermes's self-improving agent paradigm. ([Source](https://info.deeplearning.ai/hermes-vs.-openclaw-cybersecurity-alarms-ring-more-interactive-conversations-can-agents-do-human-work))
+
+## Agentic Loop: How Hermes Operates
+
+Hermes Agent's inner loop, as described in the DeepLearning.AI analysis:
+
+1. **Assemble prompt** — personality (SOUL.md) + instructions + tools + skills + memory + conversation history
+2. **Summarize** — if assembled prompt exceeds context window, compress earlier messages
+3. **Send to LLM** — execute completion
+4. **Dispatch** — tool call, skill execution, or user response
+5. **Loop** — repeat until final response is reached
+
+OpenClaw follows a similar pattern but through its Gateway daemon: Gateway receives message → routes to correct agent session → assembles context from bootstrap files + vector search → dispatches to LLM via CLI backend → returns response.
+
+## Caveats & Tradeoffs
+
+| Concern | Detail |
+|---|---|
+| **Token efficiency** | Some users note Hermes Agent is **less token-efficient** than OpenClaw. Hermes loads all bundled skills (~123+ SKILL.md files at launch), while OpenClaw's tool-gating pattern loads only relevant tools per task. This makes Hermes more capable out of the box but costlier per-turn. |
+| **Skill explosion** | Hermes's self-authoring creates adjacent redundant skills. The Curator (90-day inactive archiving) mitigates this but doesn't prevent it. OpenClaw avoids it entirely via explicit creation governance. (See [[hermes-vs-openclaw-architecture|architecture deep-dive]] for details.) |
+| **Maturity** | OpenClaw has a larger, more mature community (372k stars, 13,700+ ClawHub skills). Hermes's ecosystem is growing faster but smaller (~150k stars, bootstrapping Skills Hub). |
 
 ## Verdict
 

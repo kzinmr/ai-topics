@@ -3,6 +3,16 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-22] enrich 2 | comparisons/hermes-vs-openclaw + entities/hermes-agent (DeepLearning.AI newsletter)
+
+- **Source**: DeepLearning.AI newsletter — "Hermes vs. OpenClaw, Cybersecurity Alarms Ring" (May 22, 2026)
+- **Raw article**: `raw/articles/2026-05-22_deeplearning-ai_hermes-vs-openclaw-newsletter.md`
+- **comparisons/hermes-vs-openclaw.md**: Added Traction Signal (OpenRouter leaderboard overtake), Agentic Loop section (5-step inner loop), Caveats & Tradeoffs (token efficiency, skill explosion, maturity). Updated sources + date.
+- **entities/hermes-agent.md**: Added Curator システム (90日未使用スキル自動アーカイブ + LLM判定), Agentic Loop (5-step prompt→LLM→dispatch→loop), Token効率 row in OpenClaw比較表. Updated sources + date.
+- **index.md**: Updated both entries (hermes-agent: Curator + Agentic Loop; hermes-vs-openclaw: expanded description)
+
+---
+
 ## [2026-05-22] enrich 2 | concepts/deep-research.md (new) + Part 1 series linking
 
 - **Source**: hornet.dev blog — "Deep research is a retrieval problem" (Jo Kristian Bergum, Mar 24, 2026)

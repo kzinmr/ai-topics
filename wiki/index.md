@@ -256,7 +256,7 @@
 - [[entities/han-lee]] — Han Lee (Hanchung Lee) — Senior Director of Data + AI at Moody's Analytics. Author of "Han, Not Solo" blog (RSS tracked). Wrote the foundational "Hidden Technical Debt of AI Systems" trilogy: [[raw/articles/2026-03-21_leehanchung_rl-environments-for-llm-agents|RL Environments Taxonomy]] (Mar 2026) → [[concepts/agent-runtime|Agent Runtime]] (Apr 2026) → [[raw/articles/2026-05-08_leehanchung_hidden-technical-debt-agent-harness|Agent Harness]] (May 2026). Other key work: Data Aggregation Is Not a Moat, Don't Outsource Your Understanding (cognitive offloading vs surrender).
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM (founded 2022), built on GPT-3.5. Evolved toward agentic personal OS.
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
-- [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent（150K GitHub stars, #1 OpenRouter global token usage）。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawのorchestratorとのACP連携によるdual-agent architectureでexecution specialistとして機能。Shann (@shannhk) の4-level fleet operation model、21-step SEO pipelineを収録。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
+- [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent（150K GitHub stars, #1 OpenRouter global token usage）。Persistent memory、self-improving skills（Curatorシステムで90日未使用スキルを自動整理）、Agentic Loopを収録。OpenClawのorchestratorとのACP連携によるdual-agent architectureでexecution specialistとして機能。Shann (@shannhk) の4-level fleet operation model、21-step SEO pipeline。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
 - [[entities/hoeem]] — X/Twitter クリエイター（@hooeem, 169K+ フォロワー）。Claude Certified Architect 試験の全5ドメインを解説したX Articleが60Kブックマーク。Claude Code・Agent SDK・MCPの実践的教育コンテンツを発信。
 - [[entities/hillel-wayne]] — **Blog** | hillelwayne.com |
 - [[entities/hugging-face]] — **The GitHub of AI** — the central open-source infrastructure layer for machine learning. Platform for sharing, discovering, and deploying ML models, datasets, and demos.
@@ -1229,7 +1229,7 @@
 - [[comparisons/frontier-models-2026-04]] — Frontier Models 2026 04
 - [[comparisons/gpt-image-2-vs-nano-banana-2]] — Gpt Image 2 Vs Nano Banana 2
 - [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison。elvisの9時間ソースコード分析 + OpenAI/Anthropicドキュメント分析 + Kilo blog (Brendan O'Leary, 2026-05)。Dual-Agent Architecture (Orchestrator + Execution Specialist via ACP) セクション追加。
-- [[comparisons/hermes-vs-openclaw]] — Hermes Agent vs OpenClaw。Kilo blog framing quote中心の俯瞰比較。9次元比較表（architecture philosophy, memory, skills, identity, backends, models, platforms, scheduling, stars/community）+ verdict/synthesis。
+- [[comparisons/hermes-vs-openclaw]] — Hermes Agent vs OpenClaw。9次元比較表 + Traction Signal（OpenRouter leaderboardで逆転）+ Agentic Loop + Caveats（token効率、skill爆発、成熟度）+ verdict + dual-agent architecture（[[comparisons/hermes-vs-openclaw-architecture|アーキテクチャ詳細]]）。DeepLearning.AI 2026-05分析 + Kilo blog + Shann実践レポート。
 - [[comparisons/llm-integration-patterns]] — Llm Integration Patterns
 - [[comparisons/local-llm-models-april-2026]] — Local Llm Models April 2026
 - [[comparisons/bing-api-alternatives-2026]] — Bing Search API alternatives comparison: Parallel Search, Exa AI, SerpAPI, Tavily (2026)

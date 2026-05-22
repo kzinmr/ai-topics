@@ -13,7 +13,7 @@ tags:
 status: complete
 description: "Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawから移行中のユーザーが増加。"
 created: 2026-04-27
-updated: 2026-05-19
+updated: 2026-05-22
 sources:
   - "https://x.com/i/article/2045080054917476451"
   - "raw/articles/2026-04-28_15-hermes-agent-features.md"
@@ -21,6 +21,8 @@ sources:
   - "raw/articles/2026-05-13_nvidia_rtx-ai-garage-hermes-agent-dgx-spark.md"
   - "raw/articles/2026-05-06_kilo_hermes-vs-openclaw-when-to-reach.md"
   - "raw/articles/2026-05-15_shann_hermes-agent-operator.md"
+  - "raw/articles/2026-05-22_deeplearning-ai_hermes-vs-openclaw-newsletter.md"
+  - "https://info.deeplearning.ai/hermes-vs.-openclaw-cybersecurity-alarms-ring-more-interactive-conversations-can-agents-do-human-work"
 related:
   - "[[concepts/harness-engineering]]"
   - "[[concepts/hermes-agent-use-cases]]"
@@ -73,6 +75,21 @@ related:
 - 類似タスクでそのskillをloadして高速・正確に実行
 - `~/.hermes/skills/`に読み書き可能なmarkdownファイルとして保存
 
+**Curator システム**（DeepLearning.AI 2026年5月）:
+- 90日以上未使用のスキルをバックグラウンドでアーカイブ
+- LLMが各スキルの keep / merge / archive を判定
+- スキルの爆発的増加を緩和する仕組み（ただし完全な防止には至っていない。[[comparisons/hermes-vs-openclaw-architecture|アーキテクチャ比較]]参照）
+
+### Agentic Loop（DeepLearning.AI 2026年5月）
+Hermesの内部ループ:
+1. **Prompt Assembly** — personality (SOUL.md) + instructions + tools + skills + memory + conversation history
+2. **Summarization** — 文脈窓を超える場合、古いメッセージを圧縮
+3. **LLM送信** — 組み立てたプロンプトをモデルに送信
+4. **Dispatch** — tool call / skill execution / user response のいずれかを実行
+5. **Loop** — 最終応答まで繰り返し
+
+このループはOpenClawのGateway-drivenアプローチと対照的。Hermesはagent-centric、OpenClawはgateway-centric。→ [[comparisons/hermes-vs-openclaw]]
+
 ### 3. Always-On Execution
 - 24/7サーバー上で稼働
 - Telegram、Discord、Slack、WhatsApp、Signal、Email、15+プラットフォームにsingle gatewayで接続
@@ -88,6 +105,7 @@ related:
 | Self-improvement | なし | あり（使用ほど賢くなる） |
 | Platform統合 | 50+（広範） | 15+（主要すべて） |
 | セキュリティ | 標準 | 強い |
+| Token効率 | **高い**（必要なツールのみロード） | **低い**（全bundled skills 123+をロード、コスト高め） |
 
 ## Milestones (May 2026)
 
