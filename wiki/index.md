@@ -1236,7 +1236,7 @@
 - [[comparisons/evals-skills]] — Evals Skills
 - [[comparisons/frontier-models-2026-04]] — Frontier Models 2026 04
 - [[comparisons/gpt-image-2-vs-nano-banana-2]] — Gpt Image 2 Vs Nano Banana 2
-- [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison。elvisの9時間ソースコード分析 + OpenAI/Anthropicドキュメント分析 + Kilo blog (Brendan O'Leary, 2026-05)。Dual-Agent Architecture (Orchestrator + Execution Specialist via ACP) セクション追加。
+- [[comparisons/hermes-vs-openclaw-architecture]] — Hermes Agent vs OpenClaw Architecture Comparison。elvisの9時間ソースコード分析。Dual-Agent Architecture (Orchestrator + Execution Specialist via ACP)。Control Plane Depth分析（セッション可視性、スケジューリング決定性、子エージェントライフサイクル、レーン分離、デバッグ決定性 — ACPとチャネル数を超えたorchestrator優位性の本質）。DeepLearning.AI 2026-05分析 + Kilo blog。
 - [[comparisons/hermes-vs-openclaw]] — Hermes Agent vs OpenClaw。9次元比較表 + Traction Signal（OpenRouter leaderboardで逆転）+ Agentic Loop + Caveats（token効率、skill爆発、成熟度）+ verdict + dual-agent architecture（[[comparisons/hermes-vs-openclaw-architecture|アーキテクチャ詳細]]）。DeepLearning.AI 2026-05分析 + Kilo blog + Shann実践レポート。
 - [[comparisons/llm-integration-patterns]] — Llm Integration Patterns
 - [[comparisons/local-llm-models-april-2026]] — Local Llm Models April 2026

@@ -3,6 +3,22 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-22] enrich | comparisons/hermes-vs-openclaw-architecture (Control Plane Depth analysis)
+
+- **Source**: kzinmr analysis — ACPとチャネル数を超えた OpenClaw orchestrator 優位性
+- **comparisons/hermes-vs-openclaw-architecture.md**: Added Control Plane Depth section（6軸比較表）covering:
+  - セッション可視性（Gateway as Single Source of Truth vs AIAgent分散）
+  - スケジューリング決定性（jobs.json vs 自然言語cron）
+  - 外部イベント駆動（Webhook + Gmail Pub/Sub vs なし）
+  - 子エージェントライフサイクル（spawn/steer/cancel/close/status vs 結果待ちのみ）
+  - 実行レーン分離（Background lane vs 親コンテキスト占有）
+  - デバッグ決定性（5段階優先順位 + grep vs 追跡困難）
+  - 本質: Gateway は単なるメッセージ中継所ではなく「制御の単一真実源」
+- **Updated sources + date** (2026-05-22)
+- **index.md**: Updated entry
+
+---
+
 ## [2026-05-22] blog-wiki-ingest | Triage processed: 1 take + 1 reference
 
 - **Source**: Blog triage (May 22 blogs: seangoedecke.com, simonwillison.net)

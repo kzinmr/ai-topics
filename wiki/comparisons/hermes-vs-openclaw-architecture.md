@@ -1,7 +1,7 @@
 ---
 title: "Hermes Agent vs OpenClaw Architecture Comparison"
 created: 2026-04-18
-updated: 2026-05-14
+updated: 2026-05-22
 type: comparison
 tags:
   - ai-agents
@@ -18,6 +18,8 @@ sources:
   - "https://github.com/steipete/openclaw"
   - "raw/articles/2026-05-07_chatgpt-hermes-vs-openclaw-comparison.md"
   - "raw/articles/2026-05-06_kilo_hermes-vs-openclaw-when-to-reach.md"
+  - "raw/articles/2026-05-22_deeplearning-ai_hermes-vs-openclaw-newsletter.md"
+  - "https://info.deeplearning.ai/hermes-vs.-openclaw-cybersecurity-alarms-ring-more-interactive-conversations-can-agents-do-human-work"
 ---
 
 # Hermes Agent vs OpenClaw Architecture Comparison
@@ -155,6 +157,21 @@ The Kilo FAQ confirms: *"Yes. Experienced users run OpenClaw as the orchestrator
 | **Channel breadth** | 10+ messaging platforms through one Gateway | Orchestrate from anywhere; delegate execution to specialists |
 | **Agent-to-agent communication** | Session tools for inter-agent messaging | Orchestrator can coordinate multiple specialist agents |
 | **Completion announce channel** | Parent-owned ACP sessions with result channel back to parent | Orchestrator receives structured completion metadata from workers |
+
+### Control Plane Depth: Why OpenClaw Outperforms as Orchestrator
+
+ACP 連携とチャネル数は「繋がる力」の表面に過ぎない。OpenClaw が orchestrator として優れる本質は、**制御基盤としての設計深度**にある。5つの軸で分析する。
+
+| 制御軸 | Hermes | OpenClaw | Orchestratorとしての影響 |
+|---|---|---|---|
+| **セッション可視性** | AIAgent に分散。全セッション状態は各 Agent に問い合わせないと不明。 | Gateway に集中。**Single Source of Truth**。1箇所で全セッション把握。 | orchestrator は全ワーカーの状態を即座に知る必要がある。Hermes では各子エージェントにポーリングが必要。 |
+| **スケジューリング決定性** | 自然言語 cron。LLM が解釈 → 曖昧さ・ハルシネーションの余地あり。 | `jobs.json` に決定的記述。解釈の余地ゼロ。 | orchestrator は「なぜ今このタスクが動いたか」を常に説明できる必要がある。Hermes では「LLM がそう判断したから」。 |
+| **外部イベント駆動** | なし（Gateway 経由の自然言語 cron のみ） | **Webhook + Gmail Pub/Sub** で外部システムと連携 | orchestrator はユーザーメッセージ以外のトリガー（CI failure, 監視アラート, メール着信）に反応する必要がある。 |
+| **子エージェントのライフサイクル** | `delegate_task` → spawn 後は結果待ちのみ。途中介入不可。 | `/acp spawn/steer/cancel/close/status`。**フルライフサイクル制御**。 | 並行実行中のワーカーが誤った方向に進んだ時、Hermes は cancel して再 spawn。OpenClaw は `/acp steer` で軌道修正。 |
+| **実行レーン分離** | 親コンテキストを占有。`delegate_task` は非同期だが親のコンテキストを消費。 | **Background lane** 分離。ACP session は別レーンで実行。親は即座に次のタスクへ。 | orchestrator が 3 ワーカーに同時委任し、全ワーカーが裏で動いている間もユーザーとの対話を継続できる。 |
+| **デバッグ決定性** | スキルが自動生成され、どのスキルが効いたか追跡困難。「午前3時の障害 → 原因特定に時間」 | 5段階スキル優先順位 + TOOLS.md明示ルーティング。**「grep 一発で原因特定」**。 | orchestrator が間違ったツールを選ぶと全ワーカーが連鎖失敗。決定論的デバッグは orchestrator の信頼性に直結。 |
+
+**本質**: OpenClaw の Gateway は単なる「メッセージ中継所」ではない。**制御の単一真実源（Single Source of Truth）であり、すべてが決定的・可視的・ノンブロッキングに設計されている**。これは orchestrator に求められる「壊れても原因が特定できる」「複数タスクを同時管理できる」「外部イベントに反応できる」という要件に、Hermes より根本的に適した設計である。
 
 **Skill ecosystem evidence (13,700+ skills):**
 - `agent-orchestrator`: "Meta-agent skill that decomposes complex tasks into parallelizable subtasks, spawns specialized sub-agents with dynamically generated SKILL.md files, and consolidates their outputs"

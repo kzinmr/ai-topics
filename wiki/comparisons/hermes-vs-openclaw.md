@@ -51,7 +51,7 @@ Hermes:   [Messaging Platforms] → Gateway → [AIAgent Core: SOUL → Memory �
 OpenClaw: [Messaging Platforms] → [Gateway Core: Sessions, Routing, Cron, Channels] → Agent Runtime → CLI Backends
 ```
 
-**Hermes** optimizes for the agent becoming more capable over time — self-improving skills, compounding memory, GEPA optimization. **OpenClaw** optimizes for a persistent assistant reachable from anywhere — 11+ channels, deterministic scheduling, multi-agent routing through a single control plane.
+**Hermes** optimizes for the agent becoming more capable over time — self-improving skills, compounding memory, GEPA optimization. **OpenClaw** optimizes for a persistent assistant reachable from anywhere — 11+ channels, deterministic scheduling, multi-agent routing through a single control plane. For the deeper orchestrator advantage — **session visibility, deterministic debugging, sub-agent lifecycle control, background lane isolation** — see [[hermes-vs-openclaw-architecture#control-plane-depth-why-openclaw-outperforms-as-orchestrator|Control Plane Depth analysis]] in the architecture deep-dive.
 
 ## Traction Signal: OpenRouter Leaderboard
 
