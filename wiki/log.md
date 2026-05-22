@@ -3,6 +3,26 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-22] crawl | Active crawl: 5 new pages from trending AI topics
+
+- **Sources**: Google Blog (Gemini 3.5 Flash), GitHub (HiDream-O1-Image), arXiv (ScheduleFree+, Orthrus, Attractor Models)
+
+### New Pages Created
+- **entities/gemini-3-5-flash.md** — Gemini 3.5 Flash: Google's frontier agent model (May 2026). Terminal-Bench 2.1 76.2%, 4x faster, Antigravity subagent harness, Gemini Spark
+- **entities/hidream-o1-image.md** — HiDream-O1-Image: Open-source 8B image gen model (MIT). #8 AA T2I Arena. Pixel-level Unified Transformer. 2048×2048
+- **concepts/schedulefree-plus.md** — ScheduleFree+: Meta FAIR LR-free/schedule-free LLM training. 31% training time reduction, Polyak step size
+- **concepts/orthrus-parallel-generation.md** — Orthrus: Dual-view diffusion + AR for 7.8x parallel token generation speedup. O(1) KV-cache overhead
+- **concepts/attractor-models.md** — Attractor Models: Two-stage fixed-point architecture. 46.6% perplexity reduction, equilibrium internalization
+
+### Raw Articles Saved
+- raw/articles/2026-05-19_google-gemini-3-5-flash.md
+- raw/articles/2026-05-08_hidream-o1-image-generation.md
+- raw/articles/2026-05-18_schedulefree-plus-llm-training.md
+- raw/articles/2026-05-22_orthrus-parallel-token-generation.md
+- raw/articles/2026-05-12_attractor-models-language-reasoning.md
+
+---
+
 ## [2026-05-22] enrich | comparisons/hermes-vs-openclaw-architecture (Control Plane Depth analysis)
 
 - **Source**: kzinmr analysis — ACPとチャネル数を超えた OpenClaw orchestrator 優位性

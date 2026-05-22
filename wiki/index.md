@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-22 | Total pages: 2080 | Indexed entries: 1222 | Not in index: 858 |
+> Last updated: 2026-05-22 | Total pages: 2085 | Indexed entries: 1222 | Not in index: 858 |
 
-## Entities (654 pages)
+## Entities (656 pages)
 
 - [[entities/adam-rosenthal]] — Adam Rosenthal
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
@@ -229,6 +229,7 @@
 - [[entities/fourier-intelligence]] — Chinese company specializing in rehabilitation robotics and general-purpose humanoid robots. Combines medical expertise with advanced robotics technology.
 - [[entities/gemini]] — Google's multimodal AI model family. I/O 2026: Gemini 3.5 Flash, Omni (world model video gen), Spark (24/7 AI agent), Daily Brief. 900M+ monthly users. Powered by Antigravity harness.
 - [[entities/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform announced at Cloud Next 2026. Evolves Vertex AI into full-stack agent build/scale/govern/optimize platform with 200+ models, Agent Studio, ADK, Memory Bank, Agent Sandbox.
+- [[entities/gemini-3-5-flash]] — Gemini 3.5 Flash — Google's frontier agent model (May 2026). Terminal-Bench 2.1 76.2%, MCP Atlas 83.6%, 4x faster than competitors. Antigravity subagent harness, Gemini Spark personal agent.
 - [[entities/gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind. 60M+ downloads. MTP drafters (May 2026) deliver 3x faster inference with no quality degradation.
 - [[entities/geoffrey-hinton]] — **Full Name** | Geoffrey Everest Hinton |
 - [[entities/geoffrey-litt]] — **X** | @geoffreylitt |
@@ -260,6 +261,7 @@
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM (founded 2022), built on GPT-3.5. Evolved toward agentic personal OS.
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
 - [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent（150K GitHub stars, #1 OpenRouter global token usage）。Persistent memory、self-improving skills（Curatorシステムで90日未使用スキルを自動整理）、Agentic Loopを収録。OpenClawのorchestratorとのACP連携によるdual-agent architectureでexecution specialistとして機能。Shann (@shannhk) の4-level fleet operation model、21-step SEO pipeline。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
+- [[entities/hidream-o1-image]] — HiDream-O1-Image — Open-source 8B image generation model (MIT license). #8 on AA Text to Image Arena. Pixel-level Unified Transformer (UiT), 2048×2048. Surpasses FLUX.2 and GPT Image 2 on GenEval/DPG-Bench.
 - [[entities/hoeem]] — X/Twitter クリエイター（@hooeem, 169K+ フォロワー）。Claude Certified Architect 試験の全5ドメインを解説したX Articleが60Kブックマーク。Claude Code・Agent SDK・MCPの実践的教育コンテンツを発信。
 - [[entities/hillel-wayne]] — **Blog** | hillelwayne.com |
 - [[entities/hugging-face]] — **The GitHub of AI** — the central open-source infrastructure layer for machine learning. Platform for sharing, discovering, and deploying ML models, datasets, and demos.
@@ -735,6 +737,7 @@
 - [[concepts/anthropic-multi-agent-research]] — Anthropic Multi-Agent Research System (Claude Research): Orchestrator-Workerパターン、並列サブエージェント、Memory機構、Tool-Testing Agent。単一エージェント比90.2%性能向上、prompt engineering 8原則、token使用量が性能分散の80%を説明。
 - [[concepts/ai-vulnerability-discovery]] — AI Vulnerability Discovery
 - [[concepts/antangelmed]] — 103B-parameter open-source medical MoE model. 1/32 activation ratio (6.1B active). GRPO-trained. 7× efficiency over dense architectures.
+- [[concepts/attractor-models]] — Attractor Models — Two-stage architecture: backbone proposes embeddings, attractor solves fixed-point equilibrium. 46.6% perplexity reduction, O(1) training memory. Equilibrium internalization lets solver be removed at inference.
 - [[concepts/automated-competitor-analysis]] — Automated competitor analysis with AI agents: Discover → Extract → Monitor pipeline, signal taxonomy
 - [[concepts/automation-series]] — Antoine Buteau's Automation Series
 - [[concepts/autoresearch-bm25-msmarco]] — Autoresearch for BM25 Optimization on MSMarco — Doug Turnbull case study. Dual-gate agentic optimization of BM25 ranking. Overfitting lessons through validation data leakage.
@@ -825,6 +828,7 @@
 - [[concepts/on-policy-distillation]] — On-Policy Distillation (OPD) — Post-training technique combining on-policy sampling with dense token-level teacher supervision via reverse KL. Introduced by Kevin Lu / Thinking Machines Lab (Oct 2025). 9-30× compute reduction vs SFT, 50-100× vs RL.
 - [[concepts/on-policy-self-distillation]] — On-Policy Self-Distillation (OPSD) — 同一モデルがstudent/teacherを兼ねる自己蒸留。教師は正解ラベルをprivileged contextとして参照しJSD_βでtoken-level監視。GRPOの1/64のtokenコストで同等以上の推論性能（Siyan Zhao, UCLA/Meta, 2026）。SDARの基盤技術。
 - [[concepts/organizational-moat]] — 組織モート: Jaya Gupta (Foundation Capital) が提唱。AI時代において製品・コード・カテゴリはすべて模倣可能であり、会社の「形」（採用・権力分配・ステータス階層）だけが最後の競争優位になると主張。5つの構造的検証テスト。3.2M views。
+- [[concepts/orthrus-parallel-generation]] — Orthrus — Dual-architecture Transformer: frozen AR backbone + trainable diffusion head over shared KV cache. Up to 7.8× speedup, O(1) KV-cache overhead, 16% trainable params, lossless output guarantee.
 - [[concepts/proof-of-useful-work]] — Proof of Useful Work (PoUW): blockchain consensus using AI inference instead of hash puzzles. Pearl Network + Together AI partnership (May 2026).
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information（予測的V-情報）：観測者の計算制約を考慮したShannon情報理論の変分拡張。DPI違反、高次元でのPAC推定保証、構造学習・公平表現学習への応用（Xu et al., ICLR 2020）。
 - [[concepts/probabilistic-engineering]] — 確率的エンジニアリング: Tim Davis (Modular) が提唱。AIエージェントによるコード生成が支配的になる中、コードベースの正当性が「知っている」から「信じている」に変わるパラダイムシフト。生成は安価だが検証は高価。24-7従業員、役割分裂、Jevonsの逆説のコード応用を含む。
@@ -987,6 +991,7 @@
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
 - [[concepts/rlvr]] — RLVR (Reinforcement Learning with Verifiable Rewards): 決定論的検証器からの外部報酬によるRL訓練パラダイム。GRPOと組み合わせて報酬モデルもクリティックモデルも排除。o1→o3で10x RL compute。ART·E ($80でo3超え)。Tülu 3で命名、DeepSeek-R1で普及。
 - [[concepts/sana-vm]] — SANA-WM — NVIDIAの2.6Bパラメータオープンソース世界モデル。単一GPUで60秒720p動画生成。Gated DeltaNet + Softmaxハイブリッド。Apache 2.0。
+- [[concepts/schedulefree-plus]] — ScheduleFree+ — Meta FAIR training method (May 2026). LR-free + schedule-free LLM training via iterate averaging + Polyak step size. 31% training time reduction at 1000 tokens/param. Outperforms WSD schedules.
 - [[concepts/seirenes]] — Self-play RL framework using adversarial distractions to harden LLM reasoning robustness (arXiv May 2026)
 - [[concepts/session-hierarchy-management]] — Session Hierarchy Management
 - [[concepts/shopify-ai-engineering]] — Shopify's AI-first engineering approach: LLM proxy, 1,000-intern program, strategy:execution flip, no token limits, GSD tooling, coding interviews for directors.
