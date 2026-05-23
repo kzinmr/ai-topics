@@ -2,7 +2,7 @@
 title: "Reiner Pope"
 type: entity
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-23
 tags:
   - person
   - hardware
@@ -12,6 +12,7 @@ tags:
 sources:
   - "raw/articles/dwarkesh.com--p-reiner-pope--11ee10e4.md"
   - "raw/articles/2026-04-30_x--dwarkesh-reiner-pope-blackboard-lecture.md"
+  - raw/articles/dwarkesh.com--p-reiner-pope-2--1d86197d.md
 ---
 
 # Reiner Pope
@@ -65,6 +66,8 @@ Because of RL, models may be 100× overtrained beyond Chinchilla-optimal. Infere
 
 - [[entities/dwarkesh-patel]] — Host of the blackboard lecture
 - [[entities/matx]] — Pope's chip startup
+- [[concepts/hardware-acceleration]] — Systolic arrays and Tensor Core evolution
+- [[entities/nvidia]] — GPU architecture evolution (Volta→Tensor Cores→B300)
 - [[entities/openai]] — Referenced in scaling analysis
 - [[entities/anthropic]] — Referenced in scaling analysis
 
@@ -76,7 +79,71 @@ Because of RL, models may be 100× overtrained beyond Chinchilla-optimal. Infere
 - [[concepts/kv-cache]] — Memory bandwidth implications
 - [[concepts/hardware-acceleration]] — Chip design and TPU architecture
 
-## Sources
+## Second Blackboard Lecture: Chip Design from Bottom Up (May 2026)
 
-- [Dwarkesh Podcast: Reiner Pope — The math behind how LLMs are trained and served](https://www.dwarkesh.com/p/reiner-pope) (April 2026)
-- MatX: https://matx.com
+In a second Dwarkesh Patel blackboard lecture (May 22, 2026), Pope delivered a **ground-up chip design tutorial** — starting from logic gates and building up to modern AI accelerator architecture. Sponsored by Crusoe (Gold Tier in SemiAnalysis ClusterMAX), Cursor, and Jane Street.
+
+### From Logic Gates to Multiply-Accumulate
+
+**Primitives:**
+- **AND gate**: Produces the partial products for multiplication — for p×q bit multiplication, p×q AND gates are needed
+- **Full adder (3→2 compressor)**: Takes 3 single-bit inputs, produces 2-bit output (sum + carry). Essentially counts bits and expresses in binary
+- **Dadda multiplier**: Standard area-efficient multiplier using full adders. For p×q multiplication: p×q AND gates + p×q full adders
+- **Key insight**: A multiply-accumulate operation (MAC) produces **clean algebra**: input bits = p×q + p+q, output = p+q, so full adders used = p×q
+
+**Why multiply-accumulate is the natural primitive:**
+1. At every step of a matrix multiply, a MAC happens: `output[i,k] += input[i,j] × input[j,k]`
+2. Accumulation needs higher precision than multiplication — multiply uses low-precision (e.g., FP4), accumulation uses higher precision (e.g., FP8) to prevent rounding error accumulation
+
+### Precision Tradeoffs and Quadratic Scaling
+
+Pope explained why halving bit precision should give **more than 2× the FLOP count** — a nuance Nvidia acknowledged starting with B300:
+
+| Bit Precision | Relative Circuit Area | Nvidia Spec |
+|---------------|----------------------|-------------|
+| FP8 | Baseline (×1) | Standard |
+| FP4 | ~×0.25 (quadratic scaling) | B300: 3× faster than FP8 |
+
+The quadratic scaling in bit width (2 fewer bits = 4× less area for the multiply) is the **single reason low-precision arithmetic has worked so well for neural nets**. Nvidia's B300 product specs acknowledge this: FP4 is 3× faster than FP8, not just 2×.
+
+### Data Movement Cost Dominance
+
+A critical insight Pope demonstrated: **data movement dwarfs computation cost**:
+
+- For a simple multiply-accumulate with an 8-entry register file:
+  - **Data movement (mux + register file access)**: 3 × n × p AND gates
+  - **Actual computation (multiplier)**: p × q AND gates
+  - With n=8, q=4: **data movement is 6× more expensive** than the logic itself
+
+This is why pre-Volta GPUs (where each CUDA core had its own register file + ALU) were fundamentally inefficient — almost all die area went to synchronization and data movement, not computation.
+
+### The Systolic Array Solution
+
+The motivation for **Nvidia's Tensor Cores** (introduced with Volta) was to solve the data movement problem:
+
+1. **Go two levels up** in the matrix multiply loop — bake the entire inner loop into fixed-function hardware
+2. **Store the weight matrix locally** in the systolic array — trickle-feed it once, then reuse for many vectors
+3. **Minimize register file bandwidth**: Only O(x) data crosses the systolic array boundary instead of O(xy), where x,y are matrix dimensions
+
+**Key sizing tradeoff**: The fundamental chip design decision is:
+- **Systolic array size** vs **register file size** (both competing for the same die area budget)
+- Bigger register file = more flexibility for diverse workloads
+- Bigger systolic array = more raw matrix multiply throughput
+- "All chip design decisions are sizing decisions"
+
+### Pipeline Registers and Clock Cycles
+
+Pope explained how chips synchronize at massive scale:
+- **Clock cycle = global synchronization heartbeat**: All circuitry pauses every ~nanosecond
+- **Pipeline register insertion**: Splitting logic into smaller clouds with registers between them allows higher clock speeds (but costs area in storage)
+- **Clock speed ≠ throughput**: Faster clocks need more pipeline registers (area overhead), reducing work per cycle. Throughput = work/cycle × cycles/second
+- **Feedback loops**: The hardest constraint. Loops (running sums, recurrent operations) cannot be split with pipeline registers without changing the computation — these feedback paths set the chip's maximum clock speed
+
+### Related Topics Covered
+
+- **Mux (multiplexer) circuit**: O(n × p) AND gates + O(n−1 × p) OR gates — selecting one of n registers costs more than the actual computation
+- **FPGA vs ASIC**: "A GPU is just a bunch of tiny TPUs" — the tradeoff between programmability and efficiency
+- **Cache vs scratchpad**: Control logic overhead vs deterministic latency
+- **CPU vs GPU cores**: CPUs have much larger cores because of control logic, branch prediction, out-of-order execution — GPU cores are "dumb" but massively parallel
+
+## Sources

@@ -3,9 +3,9 @@ title: Simon Willison
 type: entity
 aliases: [simonw]
 created: 2025-01-01
-updated: 2026-05-22
+updated: 2026-05-23
 status: L3
-sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md]
+sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-engineering-patterns/, raw/articles/2026-05-06_simon-willison_vibe-coding-convergence.md, raw/articles/2026-05-06_simon-willison_code-w-claude-2026.md, raw/articles/simonwillison.net--2026-may-19-5-minute-llms--498c7192.md, raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md]
 tags: [person, blogger]
 ---
 
@@ -180,6 +180,20 @@ Anthropicが「Code w/ Claude」イベントで発表したSpaceX/xAIとのデ�
 > "We reserve the right to reclaim the compute if their AI engages in actions that harm humanity. Presumably the criteria for 'harm humanity' are decided by Elon himself."
 
 Willisonはこれを新たな形の**サプライチェーンリスク**と見ており、Anthropicが計算資源制約下で下した判断の倫理的・戦略的トレードオフを浮き彫りにした。
+
+### AI Memory Shortage Impact on Consumer Electronics (May 2026)
+
+Simon linked to David Oks' analysis of the **memory shortage's effect on consumer electronics** — the clearest explanation of why products using memory are getting more expensive:
+
+- Memory manufacturers (now only 3 remaining large companies) have **fixed wafer capacity**
+- Wafer allocation to HBM (high-bandwidth memory for GPUs): **2% → 20% by end of 2026**
+- **1GB of HBM consumes 3×+ the wafer capacity** of 1GB of DDR or LPDDR
+- Consumer-device RAM production constrained for years — already impacting the sub-$100 smartphone market (critical to Africa and South Asia)
+- Memory companies learned: **always under-provision**, never over-provision (after watching rivals go extinct)
+
+> "The original title of the piece was 'AI is killing the cheap smartphone' but I'm using the Hacker News rephrased title, which I think does more justice to the content." — Simon Willison
+
+Source: [The memory shortage is causing a repricing of consumer electronics](https://simonwillison.net/2026/May/22/memory-shortage/)
 
 ## Key Quotes
 

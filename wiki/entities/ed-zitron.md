@@ -4,7 +4,7 @@ description: Tech columnist and AI industry critic. Author of Where's Your Ed At
 url: https://www.wheresyoured.at/
 type: entity
 created: 2026-05-09
-updated: 2026-05-22
+updated: 2026-05-23
 aliases: [edward-zitron, "Where's Your Ed At"]
 tags:
   - person
@@ -19,8 +19,8 @@ sources:
   - raw/articles/wheresyoured.at--anthropics-profitability-swindle--d54ac6ec.md
   - https://www.wheresyoured.at/
   - raw/articles/wheresyoured.at--ai-is-too-expensive--2387fc59.md
-  - https://www.wheresyoured.at/
-  - raw/articles/wheresyoured.at--ai-is-too-expensive--2387fc59.mdpremium-ais-circular-psychosis/
+  - raw/articles/wheresyoured.at--news-openai-had-a-negative-122-operating-margin-in-q1-2026-a--78435c26.md
+  - https://www.wheresyoured.at/news-openai-had-a-negative-122-operating-margin-in-q1-2026-and-chatgpt-growth-has-stalled/
 ---
 
 # Ed Zitron

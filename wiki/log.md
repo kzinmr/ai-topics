@@ -3,6 +3,23 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-23] enrich | Blog wiki ingest: Ed Zitron OpenAI Q1, AI Bubble Part 2, Reiner Pope chip design
+
+### Pages Enriched
+- [[entities/ed-zitron]] — OpenAI Q1 2026 financial analysis: $5.7B revenue, -122% non-GAAP margin ($6.95B loss), ChatGPT 905M WAUs stalled, 6% conversion rate, IPO context. Sources: wheresyoured.at OpenAI article.
+- [[concepts/ai-bubble]] — Part 2: The Data Center Cascade. Blackwell 1M+ GPU warehouse inventory, $178.5B data center debt, combined $1.25T/4yr compute commitments, VC model decay (0.8-1.2x TVPI), circular dependency cascade. Sources: wheresyoured.at AI Bubble Part 2.
+- [[entities/reiner-pope]] — Second blackboard lecture: chip design from logic gates to systolic arrays. Dadda multiplier (p×q full adders), FP4 quadratic scaling (B300: 3× vs 2×), data movement 6×+ cost dominance, pipeline register insertion tradeoffs. Sources: dwarkesh.com Reiner Pope lecture.
+- [[entities/matx]] — Chip design philosophy: quadratic precision scaling, data movement cost dominance, systolic array vs register file sizing tradeoffs. Sources: dwarkesh.com Reiner Pope lecture.
+- [[entities/simon-willison]] — Memory shortage impact on consumer electronics: HBM wafer allocation 2%→20%, 1GB HBM = 3×+ wafer capacity vs DDR/LPDDR, sub-$100 smartphone market impact. Sources: simonwillison.net memory shortage.
+
+### Sources
+- raw/articles/wheresyoured.at--news-openai-had-a-negative-122-operating-margin-in-q1-2026-a--78435c26.md
+- raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-2--f011aa92.md
+- raw/articles/dwarkesh.com--p-reiner-pope-2--1d86197d.md
+- raw/articles/simonwillison.net--2026-may-22-memory-shortage--18b83f17.md
+
+---
+
 ## [2026-05-23] ingest | Newsletter wiki ingest: Model Labs → Agent Labs + 7 enrichments
 
 ### Pages Created
