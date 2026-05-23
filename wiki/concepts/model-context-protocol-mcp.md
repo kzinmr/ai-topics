@@ -2,7 +2,7 @@
 title: "Model Context Protocol (MCP)"
 type: concept
 created: 2026-04-19
-updated: 2026-05-18
+updated: 2026-05-23
 tags: [concept, mcp, developer-tooling, protocol, anthropic]
 aliases: ["mcp", "model context protocol", "MCP protocol"]
 related:
@@ -12,6 +12,7 @@ related:
   - concepts/harness-engineering/system-architecture/code-execution-with-mcp
 sources:
   - raw/newsletters/2026-05-17-the-agentic-economy-has-no-black-box.md
+  - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
 ---
 
 # Model Context Protocol (MCP)
@@ -84,6 +85,30 @@ await salesforce.updateRecord({
 3. **Native Control Flow** — Standard programming constructs replace agent message loops
 4. **Privacy-Preserving** — Intermediate data stays in execution environment (PII tokenization)
 5. **State Persistence** — Write results to disk, save as reusable SKILL.md files
+
+
+## MCP 2026-07-28 RC: Stateless Protocol
+
+In May 2026, the MCP specification announced a **Release Candidate** targeting July 28, 2026, with foundational changes:
+
+### Stateless Protocol
+The most significant architectural change: MCP shifts from stateful to **stateless protocol** design. Server implementations no longer maintain session state between requests. This dramatically simplifies server deployment, scaling, and fault tolerance:
+
+- **Horizontal scaling**: Stateless servers can be deployed behind load balancers
+- **Simplified failover**: No session migration needed
+- **Reduced memory footprint**: Servers don't track client sessions
+- **Easier integration**: Existing RESTful tooling and middleware works natively
+
+### First-Class MCP Apps and Tasks
+New primitives introduced:
+- **MCP Apps**: Runnable, shippable agent configurations bundling servers, tools, and prompt templates
+- **MCP Tasks**: Structured, multi-step workflows with defined inputs, outputs, and verification conditions
+
+### Authentication Hardening
+Enhanced auth support for production deployments, including OAuth 2.0 integration and API key management.
+
+### Significance
+Stateless MCP represents MCP's maturation from an experimental protocol to a production-grade infrastructure standard. The shift to statelessness aligns with general web protocol evolution (cf. HTTP/1.1→HTTP/2 stateless semantics) and is a prerequisite for enterprise-scale agent deployments.
 
 ## WebMCP
 

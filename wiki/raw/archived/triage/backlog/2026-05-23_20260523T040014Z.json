@@ -1,0 +1,73 @@
+{
+  "checkpoint_run_id": "20260523T040014Z",
+  "summary_ja": "raw-backlog-ingest batch: 5 items processed. All non-AI or already captured. take=0.",
+  "total_scanned": 5,
+  "new_gaps_found": 0,
+  "decisions": [
+    {
+      "item_id": "danluu.com--futurist-predictions--7775e8b3.md",
+      "source": "backlog",
+      "source_name": "articles",
+      "title": "danluu.com",
+      "url": "https://danluu.com/futurist-predictions/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--futurist-predictions--7775e8b3.md",
+      "size_bytes": 195214,
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI: futurist prediction accuracy analysis (Kurzweil, Tetlock). General tech commentary, not LLM/agent-specific.",
+      "body_excerpt": "---\ntitle: \"Futurist prediction methods and accuracy\"\nurl: \"https://danluu.com/futurist-predictions/\"\nfetched_at: 2026-05-05T07:01:29.267721+00:00\nsource: \"Dan Luu\"\ntags: [blog, raw]\n---\n\n# Futurist prediction methods and accuracy\n\nSource: https://danluu.com/futurist-predictions/\n\nI've been reading ",
+      "processed_at": "2026-05-23T04:01:53.139046+00:00"
+    },
+    {
+      "item_id": "danluu.com--ftc-google-antitrust--b7ebd331.md",
+      "source": "backlog",
+      "source_name": "articles",
+      "title": "danluu.com",
+      "url": "https://danluu.com/ftc-google-antitrust/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--ftc-google-antitrust--b7ebd331.md",
+      "size_bytes": 192948,
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI: FTC Google antitrust investigation analysis (2011-2012). Policy/legal commentary.",
+      "body_excerpt": "---\ntitle: \"What the FTC got wrong in the Google antitrust investigation\"\nurl: \"https://danluu.com/ftc-google-antitrust/\"\nfetched_at: 2026-05-05T07:01:28.858818+00:00\nsource: \"Dan Luu\"\ntags: [blog, raw]\n---\n\n# What the FTC got wrong in the Google antitrust investigation\n\nSource: https://danluu.com/f",
+      "processed_at": "2026-05-23T04:01:53.139089+00:00"
+    },
+    {
+      "item_id": "substack.com--redirect-ac2fa23e-f7ad-4d8d-a446-de1668967f28--9ceafa4a.md",
+      "source": "backlog",
+      "source_name": "articles",
+      "title": "substack.com",
+      "url": "https://substack.com/redirect/ac2fa23e-f7ad-4d8d-a446-de1668967f28",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-ac2fa23e-f7ad-4d8d-a446-de1668967f28--9ceafa4a.md",
+      "size_bytes": 186482,
+      "recommended_action": "skip",
+      "reason_ja": "Already captured: gpt-oss entity page exists (entities/gpt-oss.md, updated 2026-05-01). Genie 3 covered in jim-fan.md. AINews digest, secondary source.",
+      "body_excerpt": "---\ntitle: \"OpenAI's gpt-oss 20B and 120B, Claude Opus 4.1, DeepMind Genie 3\"\nurl: \"https://substack.com/redirect/ac2fa23e-f7ad-4d8d-a446-de1668967f28?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E\"\nfetched_at: 2026-04-14T08:44:13.351794+00:00\nsource_date: 2026-04-14\ntags: [newslet",
+      "processed_at": "2026-05-23T04:01:53.139114+00:00"
+    },
+    {
+      "item_id": "boyter.org--china-trip--1a5990fc.md",
+      "source": "backlog",
+      "source_name": "articles",
+      "title": "boyter.org",
+      "url": "https://boyter.org/china-trip/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/boyter.org--china-trip--1a5990fc.md",
+      "size_bytes": 156720,
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI: Personal travel memoir from 2004 university exchange in Harbin, China.",
+      "body_excerpt": "---\ntitle: \"Ben E. C. Boyter\"\nurl: \"https://boyter.org/china-trip/\"\nfetched_at: 2026-05-05T07:02:04.489188+00:00\nsource: \"Ben Boyter\"\ntags: [blog, raw]\n---\n\n# Ben E. C. Boyter\n\nSource: https://boyter.org/china-trip/\n\nEverything below is from when I was in University and went on exchange to Heilongji",
+      "processed_at": "2026-05-23T04:01:53.139147+00:00"
+    },
+    {
+      "item_id": "chiark.greenend.org.uk--sgtatham-quasiblog-aperiodic-followup--bc73ba2a.md",
+      "source": "backlog",
+      "source_name": "articles",
+      "title": "chiark.greenend.org.uk",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-followup/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-aperiodic-followup--bc73ba2a.md",
+      "size_bytes": 147655,
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI: Simon Tatham's mathematical article on finite-state transducers for aperiodic tilings (Penrose, hat, Spectre).",
+      "body_excerpt": "---\ntitle: \"Beyond “Beyond the wall”\"\nurl: \"https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-followup/\"\nfetched_at: 2026-05-01T07:00:57.354154+00:00\nsource: \"chiark.greenend.org.uk/~sgtatham\"\ntags: [blog, raw]\n---\n\n# Beyond “Beyond the wall”\n\nSource: https://www.chiark.greenend.org.u",
+      "processed_at": "2026-05-23T04:01:53.139173+00:00"
+    }
+  ]
+}

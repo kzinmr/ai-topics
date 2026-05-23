@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-22 | Total pages: 1988 | Indexed entries: 1238 | Not in index: 750 |
+> Last updated: 2026-05-23 | Total pages: 1990 | Indexed entries: 1240 | Not in index: 750 |
 
 ## Entities (659 pages)
 
@@ -254,7 +254,7 @@
 - [[entities/gpjt]] — Giles Thomas is a software engineer and blogger known for his detailed, hands-on series **"Writing an LLM from scratch"** — a comprehensive, iterative exploration of building and training large lan...
 - [[entities/grad]] — **X/Twitter** | @Grad62304977 |
 - [[entities/grantslatton-com]] — **Blog:** grantslatton.com
-- [[entities/greg-brockman]] — **Role** | Co-founder & President, OpenAI |
+- [[entities/greg-brockman]] — Greg Brockman — OpenAI co-founder/President. May 2026: "the model alone is no longer the product" — defining thesis of agent-first industry shift.
 - [[entities/grok-imagine]] — xAI's full-stack video generation platform (Feb 2026). Leads DesignArena image-to-video benchmark (Elo 1,329). 1.245B videos in first 30 days. $4.20/min vs Sora $30/min.
 - [[entities/grok-4-3]] — xAI's latest LLM (May 2026) featuring always-on reasoning, 1M token context, aggressive pricing ($1.25/$2.50 per 1M tokens), and Custom Voices suite.
 - [[entities/gwern]] — **Blog** | gwern.net |
@@ -378,7 +378,7 @@
 - [[entities/nvidia-nemotron-labs-diffusion]] — NVIDIA's tri-mode LM (3B/8B/14B): AR + diffusion + self-speculation decoding in one checkpoint, 6× tokens/forward over Qwen3-8B
 - [[entities/nvidia-nemotron-3-nano-omni]] — NVIDIA Nemotron 3 Nano Omni: fully open-source multimodal MoE model (30B-A3B) unifying video, audio, image, and text. Functions as perception sub-agent in agentic systems.
 - [[entities/nvidia-sana-wm]] — NVIDIA's 2.6B open-source world model: 720p 60s video generation on single GPU, hybrid linear attention, precise 6-DoF camera control
-- [[entities/nvidia]] — NVIDIA is a semiconductor and AI infrastructure company. In the context of this wiki, NVIDIA is significant for:
+- [[entities/nvidia]] — NVIDIA — Semiconductor and AI infrastructure company. Q1 FY2027: $81.6B revenue (+85% YoY), $75.2B Data Center (+92%), $91B guidance. Segment reorg: Hyperscale/ACIE/Edge.
 - [[entities/notion]] — Knowledge work decacorn. Custom Agents (4-5 rebuilds), Agent Lab thesis, three-tier evals. Meeting Notes as growth loop. CLI + MCP for agent-native workspace.
 - [[entities/microsoft]] — **Type** | AI Research & Product Company | Cloud infrastructure leader with Azure, GitHub Copilot, and OpenAI partnership renegotiated April 2026.
 - [[entities/mit-ibm-computing-research-lab]] — Joint MIT-IBM research lab (Apr 2026) exploring convergence of AI, algorithms, and quantum computing. Successor to MIT-IBM Watson AI Lab.
@@ -388,7 +388,7 @@
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml programmer and technology writer.
 - [[entities/openai-cua]] — OpenAIの**CUA（Computer-Using Agent）**モデルは、GPT-4oのビジョン機能と強化学習を組み合わせて、スクリーンショットを見てGUIを操作するエージェント。2025年1月に「Operator」として公開され、2025年7月にChatGPTエージェントに完全統合された。
 - [[entities/openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
-- [[entities/openai-codex]] — OpenAIのAIコーディングエージェント。CLIベースOSS、gpt-5.3-codexモデル。自律実行・コンパクション。Codex for Work: データサイエンス・営業・BizOpsチーム向けユースケース。Human-in-the-Loop機能: Steering/Queuing/音声入力、Durable Threads、Thread Automations、Goals、サイドパネル、共有メモリ(Obsidian vault)、モバイル対応。プロンプト設計は[[concepts/codex-prompting]]参照。
+- [[entities/openai-codex]] — OpenAIのAIコーディングエージェント。CLIベースOSS、gpt-5.3-codexモデル。自律実行・コンパクション。Codex Thursday No.6: Appshots, /goal, remote computer use, annotation mode, plugin sharing.-Loop機能: Steering/Queuing/音声入力、Durable Threads、Thread Automations、Goals、サイドパネル、共有メモリ(Obsidian vault)、モバイル対応。プロンプト設計は[[concepts/codex-prompting]]参照。
 - [[entities/openai]] — AI Research & Product Company (2015). GPT-5.6 solved 1946 Erdos problem ($1K/32h, 125 pages, T. Gowers: "first clear example of AI solving open math problem").
 - [[entities/openai-deployment-company]] — OpenAI Deployment Company (DeployCo) — $4B enterprise AI deployment JV. Majority OpenAI-owned. 19 global investors including TPG, Bain Capital, Goldman Sachs, McKinsey. Acquired Tomoro (~150 FDEs). Launched May 2026.
 - [[entities/openclaw]] — Open-source always-on AI agent framework created by **Peter Steinberger**。Gateway-first architectureでmulti-agent routing、ACP sub-agent spawning、cron/webhook schedulingを備え、orchestratorとしてHermes Agent等のexecution specialistを統括。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
@@ -669,7 +669,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (572 pages)
+## Concepts (574 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -677,6 +677,7 @@
 - [[concepts/activitypub]] — ActivityPub — W3C decentralized social networking protocol (2018). Mastodon, Threads, PeerTube. Used for federated AI agent communication
 - [[concepts/adversarial-interoperability]] — Adversarial Interoperability — Theory and practice of interoperating with platforms against their wishes. Cory Doctorow's framework for competitive tech policy
 - [[concepts/agent-documentation]] — Agent Documentation — Writing documentation optimized for AI coding agents: structured specs, clear interfaces, docstrings as semantic contracts
+- [[concepts/agent-distillation]] — Agent Distillation — Distilling entire agent workflows (multi-step reasoning, tool use) into model weights for ~100x cheaper inference.
 - [[concepts/agent-first-codebase-design]] — Agent-First Codebase Design — Structuring repositories and codebases for maximum AI agent comprehension and effectiveness
 - [[concepts/agent-first-design]] — Agent-First Design — Programming languages designed for AI agents as first-class users. Ronacher's framework + Vercel Zero implementation.
 - [[concepts/agentic-alternative-to-graphrag]] — Agentic Alternative to GraphRAG — Moving beyond GraphRAG to agent-based retrieval patterns
@@ -831,7 +832,8 @@
 - [[concepts/memory-systems-design-patterns]] — Memory Systems Design Patterns — Anthropic vs OpenAI vs Cognition: comparative analysis of AI agent memory architectures.
 - [[concepts/model-quantization]] — Model Quantization
 - [[concepts/model-routing]] — Per-turn model routing for AI coding agents. Augment Prism: 20-30% cost reduction at similar quality. Cache-aware routing decisions.
-- [[concepts/model-context-protocol-mcp]] — Model Context Protocol (MCP) — Anthropic's open protocol for connecting LLMs to external tools, data sources, and services.
+- [[concepts/model-context-protocol-mcp]] — MCP — Anthropic's open protocol. 2026-07-28 RC: stateless protocol, first-class MCP Apps and Tasks, auth hardening. Foundation for agent tooling.
+- [[concepts/model-labs-to-agent-labs]] — Model Labs to Agent Labs — Industry thesis: every model lab is restructuring around agent infrastructure. Brockman: "the model alone is no longer the product".
 - [[concepts/object-storage-queue]] — Object Storage Queue: S3のCASを利用した分散キュー実装パターン。Group Commit、Stateless Broker、HeartbeatによるJob Recovery。ゼロディスクアーキテクチャの応用。Absurd（PG Queue）との比較を含む。 — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
 - [[concepts/openai-tanstack-supply-chain-2026]] — OpenAI's response to the Mini Shai-Hulud npm supply chain attack (May 2026). TanStack malicious package, code-signing certificate compromise, corporate device infection, security hardening measures.
 - [[concepts/openai-symphony]] — OpenAI Symphony — OpenAI's multi-agent orchestration framework for enterprise automation workflows.
@@ -884,7 +886,7 @@
 - [[concepts/deepseek-v3]] — DeepSeek-V3: 671B MoEモデル（37B活性化/トークン）。MLA、補助損失なし負荷分散、MTP、FP8訓練、DualPipeなど複数の革新的技術を導入。14.8Tトークンで$5.576Mの訓練コスト。GPT-4oクラスの性能を達成したマイルストーン論文（arXiv:2412.19437, Dec 2024）。
 - [[concepts/deepseek-v3-2]] — DeepSeek-V3.2: 685Bパラメータ。DSA（学習可能スパースアテンション、$O(L^2)→O(Lk)$）、スケーラブルRL（GRPO強化）、大規模エージェントタスク合成（1,827環境・85Kプロンプト）の3革新。V3.2-SpecialeはIMO 2025・IOI 2025金メダル、ICPC World Finals世界2位。GPT-5/Gemini-3.0-Proに迫る（arXiv:2512.02556, Dec 2025）。
 - [[concepts/deepseek-r1]] — DeepSeek-R1: Pure RL（GRPO）で推論能力の創発を初の大規模実証。Nature掲載。R1-Zero（純粋RL）/ R1（4段階パイプライン）/ 蒸留モデル。自己検証・アハモーメント。AIME 79.8%, MATH-500 97.3%。$294Kでo1級性能。
-- [[concepts/deepseek-v4]] — DeepSeek-V4: 1.6T Pro/284B Flash、1MコンテキストMoE。KV-cache圧縮でbaselineの2%に。Hybrid Attention（CSA+HCA+SWA）、mHC、Muon。FLOPs 3.7-10x削減、KV 10-14x削減。Codeforces 3206。
+- [[concepts/deepseek-v4]] — DeepSeek-V4: 1.6T Pro/284B Flash、1MコンテキストMoE。永久75%値下げ: $0.435/M入力·$0.87/M出力（競合比3-19x安）。Hybrid Attention·mHC·Muon。削減、KV 10-14x削減。Codeforces 3206。
 - [[concepts/deepseek-v4-serving]] — DeepSeek-V4 production serving on B200 GPUs: prefix caching, KV cache policy, KV cache eviction, multi-turn latency, memory bandwidth, token-per-second optimization.
 - [[concepts/defenseclaw]] — Cisco's open-source agentic governance layer for OpenClaw. Pre-run scanning (5 scanners), runtime threat detection, non-advisory enforcement. Built on NVIDIA OpenShell. Announced RSAC 2026.
 - [[concepts/delphi-scaling-laws]] — Open Athena (Marin) の公開スケーリングスイート。3e20 FLOPs のフィットから 1e23 FLOPs を 0.2% の誤差で予測（300× extrapolation）。IsoFLOP sweep、token-horizon LR correction、AdamH。
@@ -928,7 +930,7 @@
 - [[concepts/pydantic-ai-harness]] — pydantic-ai-harness — Official Capability Library for Pydantic AI
 - [[concepts/pytorch-fsdp]] — PyTorch FSDP (Fully Sharded Data Parallel)
 - [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation)
-- [[concepts/qwen]] — Qwen model family: Alibaba's open-source LLM series (Apache 2.0). MoE variants achieve frontier-adjacent performance on consumer GPUs. Qwen3.6-35B-A3B flagship with thinking preservation.
+- [[concepts/qwen]] — Qwen model family: Alibaba's open-source LLM series (Apache 2.0). Qwen3.7 Max: 56.6 AA Intelligence Index (+4.8pt). Gains in reasoning, coding, agentic capability. GPUs. Qwen3.6-35B-A3B flagship with thinking preservation.
 - [[concepts/qwen-3-6-35b]] — Qwen 3.6-35B-A3B: Sparse MoE (35B total, 3B active). 73.4% SWE-bench Verified, runs on single RTX 4090. Introduces thinking preservation for iterative coding workflows.
 - [[concepts/query-understanding]] — Query Understanding: 検索クエリ解釈の体系的学問。Daniel Tunkelangによる24記事シリーズ（2016-2024）で体系化。6層スタック（文字→トークン→書き換え→文脈→会話→結果）。LLM-Powered実践編（Doug Turnbull）：structured QU、embedding collapse対策、synonym抽出+BM25、カテゴリ分類（NDCG +12%）。
 - [[concepts/rag-not-dead-series]] — RAG Is Not Dead — 7-Part Series

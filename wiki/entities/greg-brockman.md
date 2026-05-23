@@ -2,7 +2,7 @@
 title: Greg Brockman
 type: entity
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-05-23
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
 tags:
   - person
@@ -10,7 +10,8 @@ tags:
   - model
   - coding-agents
   - infrastructure
-sources: []
+sources:
+  - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
 ---
 
 
@@ -74,6 +75,21 @@ Co-founded OpenAI with **Sam Altman**, **Elon Musk**, **Ilya Sutskever**, **Wojc
 
 ### The 2019 Capped-Profit Transition
 Brockman was instrumental in OpenAI's transition from pure non-profit to **capped-profit structure**, arguing that this was essential to secure the compute resources and talent needed to compete at the frontier of AI development. This decision later became the basis for Elon Musk's lawsuit against OpenAI.
+
+
+### May 2026: "The model alone is no longer the product"
+
+On May 22-23 2026, Brockman posted on X: *"the model alone is no longer the product"* — a statement that rapidly became the defining thesis for the industry-wide shift from model-centric to agent-centric product definition. The post received 627 replies and 6.5K likes.
+
+**Context**: The post came as OpenAI was preparing for its IPO, signaling that the company's product strategy was pivoting from model API sales to an agent platform (Codex, Codex for Work, Managed Agents).
+
+**Industry resonance**: The quote was immediately cited by multiple industry analysts and became the lead thesis for AINews' "All Model Labs are now Agent Labs" edition. Within 48 hours, AI21 Labs announced the shutdown of its model team to pivot to agents, and DeepSeek announced its first Harness team.
+
+**See also**: [[concepts/model-labs-to-agent-labs]] — the full industry thesis.
+
+### October 2025: Model routing vision
+
+Described the future of model usage as a **commoditized routing layer**: agents calling different models for different sub-tasks, comparing results, and selecting the best — rather than committing to a single model.
 
 ## Recent Technical Focus (2024–2025)
 

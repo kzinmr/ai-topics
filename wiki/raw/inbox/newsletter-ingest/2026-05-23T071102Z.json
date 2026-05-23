@@ -1,0 +1,270 @@
+{
+  "run_id": "20260523T071102Z",
+  "triaged_at": "2026-05-23T07:17:12.385034Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletters": [
+    {
+      "message_id": "<20260522.190302.9af56dd5@mta23>",
+      "subject": "Nvidia's AI Factory Boom Hits $81.6B",
+      "date": "2026-05-22",
+      "source_label": "uid=129",
+      "source_name": "Unknown (beehiiv newsletter, uid=129)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-22-nvidia-s-ai-factory-boom-hits-81-6b.md",
+      "overall_relevance": "medium",
+      "overall_priority": "low",
+      "summary": "General tech/business newsletter. Covers NVIDIA earnings ($81.6B), a quantum chip research note, SpaceX IPO, ChatGPT PowerPoint beta, Qwen3.7 Max, AI policy, and Demis Hassabis interview. Mix of AI-relevant and non-AI topics. The Qwen3.7 Max section is the most directly wiki-relevant. All 20 links are beehiiv tracking URLs (unresolvable to targets without following each redirect).",
+      "classified_articles": [
+        {
+          "index": 1,
+          "title_guess": "NVIDIA Q1 FY2027 Earnings ($81.6B)",
+          "relevance": "medium",
+          "priority": "low",
+          "reason": "AI infrastructure context. Hardware/capex data — tangentially relevant to AI infrastructure tracking. Not specific enough for a wiki page.",
+          "suggested_action": "none"
+        },
+        {
+          "index": 2,
+          "title_guess": "40-Picosecond Quantum Chip (U Tokyo)",
+          "relevance": "low",
+          "priority": "low",
+          "reason": "Far-future research prototype (~2030 timeline). Not practical AI engineering knowledge.",
+          "suggested_action": "none"
+        },
+        {
+          "index": 3,
+          "title_guess": "SpaceX IPO / Anthropic $1.25B/month compute",
+          "relevance": "low",
+          "priority": "low",
+          "reason": "Anthropic compute spend is a notable datapoint for AI economics, but primarily a SpaceX/finance story.",
+          "suggested_action": "none"
+        },
+        {
+          "index": 4,
+          "title_guess": "ChatGPT for PowerPoint (beta)",
+          "relevance": "medium",
+          "priority": "low",
+          "reason": "OpenAI product feature. Relevant to AI tools/productivity but a minor feature announcement.",
+          "suggested_action": "could_note_on_openai_page"
+        },
+        {
+          "index": 5,
+          "title_guess": "Qwen3.7 Max — Alibaba Model",
+          "relevance": "high",
+          "priority": "high",
+          "reason": "Frontier model release. 56.6 on AA Intelligence Index (+4.8). Key model to track in wiki entities.",
+          "suggested_action": "create_or_update_entity",
+          "suggested_page": "entities/qwen3-7-max.md"
+        },
+        {
+          "index": 6,
+          "title_guess": "AI Policy: Trump cancels EO / Newsom CA order",
+          "relevance": "medium",
+          "priority": "low",
+          "reason": "Policy context — federal vs state approaches. Background for AI governance tracking.",
+          "suggested_action": "none"
+        },
+        {
+          "index": 7,
+          "title_guess": "Demis Hassabis Interview",
+          "relevance": "medium",
+          "priority": "low",
+          "reason": "Leadership interview. Could enrich DeepMind/Hassabis entity page if transcript available.",
+          "suggested_action": "none"
+        },
+        {
+          "index": "8-20",
+          "title_guess": "Remaining beehiiv tracking links (unresolved)",
+          "relevance": "unknown",
+          "priority": "low",
+          "reason": "All beehiiv redirect URLs — cannot determine targets without following each link. Likely supplementary links from the above newsletter sections.",
+          "suggested_action": "none"
+        }
+      ],
+      "wiki_ingest_recommendation": "skip — only Qwen3.7 Max section is high-relevance, and AINews already covers Qwen3.7 more thoroughly."
+    },
+    {
+      "message_id": "<20260523042117.3.abab10a98e627c15@mg-d0.substack.com>",
+      "subject": "[AINews] All Model Labs are now Agent Labs",
+      "date": "2026-05-23",
+      "source_label": "uid=130",
+      "source_name": "AINews by swyx (Latent.Space)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md",
+      "overall_relevance": "critical",
+      "overall_priority": "critical",
+      "summary": "Premier AI newsletter covering the biggest shift in the AI industry: model labs pivoting to become agent labs. Key signals: Greg Brockman declares 'the model alone is no longer the product', AI21 shuts model team to pivot to agents, DeepSeek forms first Harness team. Comprehensive coverage of coding agents (Codex, Claude Devs), model pricing disruption (DeepSeek V4-Pro permanent 75% discount), MCP stateless RC, sandboxes, research (VPO, agent distillation, LT2). This is the single most important AI newsletter of the week for the wiki's domain.",
+      "classified_articles": [
+        {
+          "index": "1-7",
+          "title_guess": "Substack internal links (post, like, comment, share, app)",
+          "relevance": "low",
+          "priority": "low",
+          "reason": "Substack engagement/app links — not article content.",
+          "suggested_action": "none"
+        },
+        {
+          "index": 8,
+          "redirect_uuid": "510041f5-17ee-4c63-88bf-624504f90dfb",
+          "resolved_title": "Agent Labs: Welcome to GPT Wrapper Summer",
+          "relevance": "critical",
+          "priority": "critical",
+          "reason": "Core thesis article defining the 'Agent Labs' category. Framework for understanding industry structure. Foundational concept for wiki.",
+          "suggested_action": "create_concept_page",
+          "suggested_page": "concepts/agent-labs.md"
+        },
+        {
+          "index": 9,
+          "redirect_uuid": "516868b3-a3af-4750-ac67-d54e51dbb8b9",
+          "resolved_title": "[AINews] All Model Labs are now Agent Labs (full issue)",
+          "relevance": "critical",
+          "priority": "critical",
+          "reason": "Full AINews issue. Core content: Model Labs → Agent Labs thesis + Greg Brockman statement + AI21/DeepSeek pivots + coding agent updates + DeepSeek V4-Pro pricing + MCP RC + research. MULTIPLE wiki-relevant sections.",
+          "suggested_action": "create_or_update_multiple",
+          "suggested_pages": [
+            "concepts/model-labs-to-agent-labs.md",
+            "entities/deepseek-v4-pro.md (update pricing)",
+            "concepts/mcp-stateless-rc.md"
+          ]
+        },
+        {
+          "index": 10,
+          "redirect_uuid": "f8e535a0-6c81-47f9-bff9-c19b3b6a9703",
+          "resolved_title": "MCP 2026-07-28 RC announcement (stateless)",
+          "relevance": "critical",
+          "priority": "critical",
+          "reason": "MCP protocol evolution to stateless. Major infrastructure shift for agent tooling. First-class MCP Apps and Tasks, auth hardening.",
+          "suggested_action": "update_entity",
+          "suggested_page": "entities/mcp-model-context-protocol.md"
+        },
+        {
+          "index": 11,
+          "redirect_uuid": "6b5a914c-a4d5-47a5-98d3-3526f2b355b2",
+          "resolved_title": "X post: Core Automation + Joanne Jang on product vs model",
+          "relevance": "high",
+          "priority": "high",
+          "reason": "Industry discourse on model vs product. Joanne Jang: 'the model should be invisible... alpha is in making models feel natural.' Part of the Model→Agent narrative.",
+          "suggested_action": "incorporate_into_concept",
+          "suggested_page": "concepts/model-labs-to-agent-labs.md"
+        },
+        {
+          "index": 12,
+          "redirect_uuid": "1d448a33-7605-4741-a4a8-31573358d93e",
+          "resolved_title": "DeepSeek V4-Pro permanent 75% price cut",
+          "relevance": "critical",
+          "priority": "critical",
+          "reason": "DeepSeek V4-Pro permanent pricing: $0.435/M input, $0.87/M output. 3-19× cheaper than competitors. 'Intelligence too cheap to meter.' Major model economics signal.",
+          "suggested_action": "update_entity",
+          "suggested_page": "entities/deepseek-v4-pro.md"
+        },
+        {
+          "index": 13,
+          "redirect_uuid": "9e494292-7403-4c11-b620-e8a775b69b90",
+          "resolved_title": "Codex Thursday No. 6 update details",
+          "relevance": "critical",
+          "priority": "critical",
+          "reason": "Codex major update: Appshots, /goal improvements, remote computer use while locked, annotation mode, plugin sharing, analytics. User reports abandoning IDEs.",
+          "suggested_action": "update_entity",
+          "suggested_page": "entities/openai-codex.md"
+        },
+        {
+          "index": 14,
+          "redirect_uuid": "15fb9be4-975a-40f6-ba69-fe566b0aae77",
+          "resolved_title": "Agent distillation research (100x cheaper inference)",
+          "relevance": "high",
+          "priority": "high",
+          "reason": "Research: entire agentic workflow can be distilled into model weights, running at ~100× lower cost while preserving quality. Significant for agent economics.",
+          "suggested_action": "update_or_create_concept",
+          "suggested_page": "concepts/agent-distillation.md"
+        },
+        {
+          "index": 15,
+          "redirect_uuid": "54a3a67b-832d-4ccc-92dd-a2ad88d763a9",
+          "resolved_title": "Greg Brockman X post: 'the model alone is no longer the product'",
+          "relevance": "critical",
+          "priority": "critical",
+          "reason": "Direct quote from Greg Brockman (OpenAI president), 627 replies, 6.5K likes. Marks a strategic pivot at OpenAI ahead of IPO. Foundational signal.",
+          "suggested_action": "incorporate_into_concept",
+          "suggested_page": "concepts/model-labs-to-agent-labs.md"
+        },
+        {
+          "index": 16,
+          "redirect_uuid": "caa101d0-8365-4da9-a076-ab5bb602a516",
+          "resolved_title": "Gemini 3.5 Flash analysis / Qwen3.7-Max / Cursor Composer 2.5",
+          "relevance": "high",
+          "priority": "high",
+          "reason": "Model performance roundup: Gemini 3.5 Flash improvements + builder skepticism, Qwen3.7-Max analysis, Cursor Composer 2.5 cost advantages. Multiple model entity updates needed.",
+          "suggested_action": "update_multiple_entities",
+          "suggested_pages": [
+            "entities/gemini-3-5-flash.md",
+            "entities/qwen3-7-max.md",
+            "entities/cursor-composer.md"
+          ]
+        },
+        {
+          "index": 17,
+          "redirect_uuid": "80bed293-62db-405d-b0d3-bd60a9478496",
+          "resolved_title": "Vector Policy Optimization (VPO) / LT2 architecture",
+          "relevance": "high",
+          "priority": "high",
+          "reason": "RL research: VPO uses vector-valued rewards to prevent collapse. LT2 linear-time looped transformer. Research to track for techniques pages.",
+          "suggested_action": "update_concepts",
+          "suggested_pages": [
+            "concepts/grpo-rl-training.md (VPO addition)",
+            "concepts/transformer-architecture.md (LT2 note)"
+          ]
+        },
+        {
+          "index": 18,
+          "redirect_uuid": "2c258395-dc80-4280-ad83-a35585d05d54",
+          "resolved_title": "Scaling without Slop (swyx editorial)",
+          "relevance": "low",
+          "priority": "low",
+          "reason": "swyx meta/editorial on content quality and scaling Latent Space. Not AI technical knowledge.",
+          "suggested_action": "none"
+        },
+        {
+          "index": 19,
+          "redirect_uuid": "319f79bc-9ba8-4279-9445-16881405c3d0",
+          "resolved_title": "Greg Brockman X post (duplicate reference)",
+          "relevance": "critical",
+          "priority": "critical",
+          "reason": "Same Greg Brockman post — already covered in index 15.",
+          "suggested_action": "already_covered"
+        },
+        {
+          "index": 20,
+          "redirect_uuid": "878f3134-165b-42fc-969c-215dc711c0c3",
+          "resolved_title": "Additional AINews link (unresolved)",
+          "relevance": "unknown",
+          "priority": "low",
+          "reason": "Could not resolve — likely supplementary content from AINews.",
+          "suggested_action": "none"
+        }
+      ],
+      "wiki_ingest_recommendation": "INGEST — highest priority. This is the single most important newsletter of the week. Multiple critical wiki updates needed: Agent Labs concept page, Model-Labs-to-Agent-Labs concept page, DeepSeek V4-Pro pricing update, Codex update, MCP stateless RC update. Recommended to process through newsletter-wiki-ingest cron job."
+    }
+  ],
+  "summary_stats": {
+    "total_newsletters": 2,
+    "critical": 1,
+    "high_priority_sections": 0,
+    "low_priority": 1,
+    "total_articles_linked": 40,
+    "critical_articles": 7,
+    "high_articles": 8,
+    "low_articles": 12,
+    "unresolved_articles": 13,
+    "suggested_wiki_actions": [
+      "CREATE concept: concepts/agent-labs.md",
+      "CREATE concept: concepts/model-labs-to-agent-labs.md",
+      "UPDATE entity: entities/deepseek-v4-pro.md (permanent pricing)",
+      "UPDATE entity: entities/mcp-model-context-protocol.md (stateless RC)",
+      "UPDATE entity: entities/openai-codex.md (Thursday No. 6)",
+      "CREATE/UPDATE concept: concepts/agent-distillation.md",
+      "UPDATE entity: entities/gemini-3-5-flash.md",
+      "UPDATE entity: entities/qwen3-7-max.md",
+      "UPDATE entity: entities/cursor-composer.md",
+      "UPDATE concept: concepts/grpo-rl-training.md (VPO section)",
+      "UPDATE concept: concepts/transformer-architecture.md (LT2 note)"
+    ]
+  }
+}

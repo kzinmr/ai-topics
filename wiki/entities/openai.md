@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-05-22
+updated: 2026-05-23
 tags:
   - company
   - model
@@ -66,7 +66,10 @@ OpenAI is a leading AI research and product company known for developing the GPT
   - Durability: Snapshotting & rehydration for long-horizon tasks
 - **Symphony** — Agent orchestration framework (see [[concepts/harness-engineering]])
 - **Codex** — AI coding agent. Since GPT-5.4, Codex has been unified into the main model — there is no separate coding model line. No GPT-5.5-Codex will be released ([Romain Huet, Apr 2026](https://simonwillison.net/2026/Apr/25/romain-huet/)).
-  - **Codex Push (May 2026):** OpenAI aggressively targeting non-technical users. Migration tools to import from Claude Cowork. Workplace features (slides, sheets). iMessage handoff skill. `/pet` fun feature. See [[concepts/vibe-physics]] for scientific Codex applications.
+  - **Codex Push (May 2026):**
+
+- **ChatGPT for PowerPoint (May 2026 Beta)**: Create slides, update existing decks, turn source material into presentations. Available for ChatGPT Business, Enterprise, Edu, Free, Go, Pro, Plus users. Users must review formatting, claims, and numbers before sharing.
+ OpenAI aggressively targeting non-technical users. Migration tools to import from Claude Cowork. Workplace features (slides, sheets). iMessage handoff skill. `/pet` fun feature. See [[concepts/vibe-physics]] for scientific Codex applications.
 
 ### Other Products
 - **ChatGPT** — Conversational AI interface

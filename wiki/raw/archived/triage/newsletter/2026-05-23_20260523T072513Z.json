@@ -1,0 +1,54 @@
+{
+  "run_id": "20260523T072513Z",
+  "archived_at": "2026-05-23T07:25:13.669414",
+  "items": [
+    {
+      "item_id": "<20260522.190302.9af56dd5@mta23>-spacex-ipo",
+      "source": "newsletter",
+      "source_name": "Superintel (getsuperintel.com)",
+      "title": "SpaceX IPO filed — $4.9B loss, AI compute narrative",
+      "url": "https://link.mail.beehiiv.com/v1/c/P6dsh4ROFfw28hV5L8YNXXXkttm%2BXACT0f4CequqFLHBZtAabfpeC590978V%0A6xKLKRQjpDOihpN6qjew2D1SRM8u%2BAGdSKcl0P6SSo3bv9eQV9zxz20d4xu8%0AVj8%2BxGZD9ZY1FbOtnb1C4ae4CdT7gFjd2iwmuTO8LLpfFykPIf%2BPRfnKgi1k%0A5CuCkEGajIL5gr8X5gW8tmIoPIow7YWMNQ%3D%3D%0A/e4ded50d415c78bd",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-22-nvidia-s-ai-factory-boom-hits-81-6b.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ SpaceXのIPO財務詳細。AI関連はAnthropicの月$1.25Bコンピュート契約に言及のみ、全体として一般ビジネス/金融ニュース。Wiki対象外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "SpaceX $4.9B net loss on $18.67B revenue (2025). AI unit (X+xAI) $818M Q1 2026. Anthropic agreed to pay $1.25B/month for compute. Expected IPO valuation $1.75 trillion on Nasdaq as SPCX."
+    },
+    {
+      "item_id": "<20260522.190302.9af56dd5@mta23>-chatgpt-pp",
+      "source": "newsletter",
+      "source_name": "Superintel (getsuperintel.com)",
+      "title": "ChatGPT for PowerPoint beta",
+      "url": "https://link.mail.beehiiv.com/v1/c/OipUzx7G1eSSu%2FqPexdS8VA0f%2BIyc6CYlZfh7rvVm6jpwk76ur2r8DUo1xF4%0Axb%2Fjst0BTCWeYw5WozcWNG9kwWlZpYrTIVOv3H%2BQ2IvZyl%2FpLjcAKgyws9RN%0A%2F288EJRcHmzzpqzKqBD4eoBhG0Plr9HTN7kVg%2FMsjXwJ6fc1JnV9npQKo8Kc%0AfyvaVqlal%2FR%2BtxIbJhLNZuq7QUKJxHnhIQ%3D%3D%0A/0d6afee080a333a2",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-22-nvidia-s-ai-factory-boom-hits-81-6b.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ OpenAIのPowerPoint統合機能。マイナーな製品機能拡張だが、OpenAIエンティティの製品セクションに簡易メモ価値あり。本文はChatGPT for PowerPointのベータ機能説明で、スライド作成・編集・要約・再構成に対応。",
+      "candidate_wiki_path": "entities/openai.md",
+      "body_excerpt": "ChatGPT for PowerPoint beta — create slides, update existing decks, turn source material into presentations. Available globally for ChatGPT Business, Enterprise, Edu, Free, Go, Pro, Plus users. Users must review formatting, claims, and numbers before sharing."
+    },
+    {
+      "item_id": "<20260523042117.3.abab10a98e627c15@mg-d0.substack.com>-vpo-lt2",
+      "source": "newsletter",
+      "source_name": "AINews by swyx (Latent.Space)",
+      "title": "Vector Policy Optimization (VPO) — multi-objective RL + LT2 linear-time looped transformer",
+      "url": "https://substack.com/redirect/80bed293-62db-405d-b0d3-bd60a9478496?j=eyJ1Ij...tf6E",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ VPOはベクトル価値報酬でRL崩壊防止、LT2は線形時間ループトランスフォーマー。既存のGRPO訓練概念やトランスフォーマーアーキテクチャページへの参照追加が適切。独立ページまでは不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Vector Policy Optimization (VPO): uses vector-valued rewards to prevent collapse in RL training. LT2: linear-time looped transformer architecture. Both are research-stage techniques worth tracking for training techniques pages."
+    },
+    {
+      "item_id": "<20260523042117.3.abab10a98e627c15@mg-d0.substack.com>-gemini-qwen-cursor",
+      "source": "newsletter",
+      "source_name": "AINews by swyx (Latent.Space)",
+      "title": "Model roundup: Gemini 3.5 Flash analysis, Qwen3.7-Max, Cursor Composer 2.5 cost advantages",
+      "url": "https://substack.com/redirect/caa101d0-8365-4da9-a076-ab5bb602a516?j=eyJ1Ij...tf6E",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Gemini 3.5 Flashエンティティは5/22作成済みでGoogle I/O情報を網羅。Qwen3.7 Maxは別decisionでSuperintelから対応。Cursor Composer 2.5概念も5/20作成済み。AINewsの分析視点は参照として各エンティティに追加可能だが、新規情報は限定的。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Multi-model roundup: Gemini 3.5 Flash improvements with builder skepticism noted, Qwen3.7-Max competitive analysis, Cursor Composer 2.5 cost advantages over alternatives. Industry perspective on model landscape shifts."
+    }
+  ]
+}

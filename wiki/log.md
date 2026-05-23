@@ -3,6 +3,35 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-23] ingest | Newsletter wiki ingest: Model Labs → Agent Labs + 7 enrichments
+
+### Pages Created
+- [[concepts/model-labs-to-agent-labs]] — Industry thesis: every model lab restructuring around agent infrastructure. Brockman "model alone is no longer the product", AI21 model team shutdown, DeepSeek Harness team, model economics deflation.
+- [[concepts/agent-distillation]] — Research: entire agentic workflow distilled into model weights at ~100x lower cost. Implications for agent economics.
+
+### Pages Enriched
+- [[entities/nvidia]] — Q1 FY2027 earnings: $81.6B revenue (+85% YoY), $75.2B Data Center (+92% YoY), $91B Q2 guidance. Segment reorg: Hyperscale/ACIE/Edge. Source: Superintel newsletter.
+- [[concepts/qwen]] — Qwen3.7 Max: 56.6 AA Intelligence Index (+4.8pt). Scientific reasoning, coding, agentic gains. Caveat: abstention increase and higher token usage. Sources: Superintel + AINews newsletters.
+- [[entities/greg-brockman]] — May 2026 X post: "the model alone is no longer the product" — 627 replies, 6.5K likes. Industry-defining thesis signal ahead of OpenAI IPO. Source: AINews newsletter.
+- [[concepts/deepseek-v4]] — Permanent 75% price cut: $0.435/$0.87 per M tokens (3-19× cheaper than competitors). "Intelligence too cheap to meter" — model economics deflation signal. Source: AINews newsletter.
+- [[concepts/model-context-protocol-mcp]] — MCP 2026-07-28 RC: stateless protocol evolution, first-class MCP Apps and Tasks, authentication hardening. Foundation for enterprise-scale agent deployments. Source: AINews newsletter.
+- [[entities/openai-codex]] — Codex Thursday No.6: Appshots, /goal improvements, remote computer use, annotation mode, plugin sharing, analytics. Users report abandoning IDEs entirely. Source: AINews newsletter.
+- [[entities/openai]] — ChatGPT for PowerPoint beta (reference). Source: Superintel newsletter.
+
+### Sources
+- raw/newsletters/2026-05-22-nvidia-s-ai-factory-boom-hits-81-6b.md (Superintel)
+- raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md (AINews by swyx)
+
+---
+
+## [2026-05-23] raw-backlog-ingest | 5 articles triaged, 0 takes (all non-AI or already captured)
+- **danluu.com--futurist-predictions**: skip (non-AI: futurist prediction accuracy analysis)
+- **danluu.com--ftc-google-antitrust**: skip (non-AI: FTC/Google antitrust policy analysis)
+- **substack.com--redirect-ac2fa23e**: skip (already captured: gpt-oss entity exists, Genie 3 in jim-fan.md)
+- **boyter.org--china-trip**: skip (non-AI: personal travel memoir)
+- **chiark.greenend.org.uk--sgtatham-aperiodic-followup**: skip (non-AI: mathematical tilings article)
+- **Archive**: `wiki/raw/archived/triage/backlog/2026-05-23_20260523T040014Z.json`
+
 ## [2026-05-22] enrich | Skeleton entity enrichment — Varun Trivedy, Samuel Colvin, Daniel van Strien, Ryan Lopopolo
 
 ### Pages Enriched (from thin/skeleton state to full quality)

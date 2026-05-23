@@ -1,7 +1,7 @@
 ---
 title: Qwen Model Family
 created: 2026-04-25
-updated: 2026-05-09
+updated: 2026-05-23
 type: concept
 tags:
   - model
@@ -10,7 +10,10 @@ tags:
   - coding-agents
   - multimodal
   - local-llm
-sources: [raw/articles/2026-04-15_qwen-3.6-35b-a3b.md]
+sources:
+  - raw/articles/2026-04-15_qwen-3.6-35b-a3b.md
+  - raw/newsletters/2026-05-22-nvidia-s-ai-factory-boom-hits-81-6b.md
+  - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
 ---
 
 # Qwen Model Family
@@ -33,6 +36,19 @@ Qwen3.6-35B-A3B is the first open-weight Qwen3.6 model, achieving 73.4% on SWE-b
 - Qwen3.5-35B-A3B: Predecessor to 3.6-35B-A3B
 - Qwen3.5-27B: 27B dense model
 - Strong performance on coding and reasoning benchmarks
+
+
+### Qwen 3.7 Max (May 2026)
+
+| Attribute | Value |
+|-----------|-------|
+| AA Intelligence Index | **56.6** (+4.8pt over preview) |
+| Key Gains | Scientific reasoning, coding, agentic capability, reduced hallucination |
+| Caveat | Improvement partly from abstention (not answering uncertain questions) and higher token usage — not pure intelligence gain |
+
+Qwen3.7 Max represents Alibaba's frontier push. The 56.6 AA Intelligence Index score places it competitively against GPT-5.5 and Claude Opus 4.5 on scientific reasoning and coding benchmarks.
+
+**Caveat**: The 4.8-point jump is partially attributable to increased abstention rates (the model declines to answer when uncertain rather than guessing) and higher token usage per prompt. This means the apparent gain may not translate linearly to real-world agentic performance where answering is required.
 
 ## Key Characteristics
 

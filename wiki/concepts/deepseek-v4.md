@@ -1,7 +1,7 @@
 ---
 title: DeepSeek-V4
 created: 2026-05-08
-updated: 2026-05-22
+updated: 2026-05-23
 type: concept
 tags:
   - model
@@ -17,6 +17,7 @@ sources:
   - raw/articles/2026-05-08_hn-deepseek-v4-discussion.md
   - https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf
   - raw/newsletters/2026-05-22-tpweek162-deepseek-v4.md
+  - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
 ---
 
 # DeepSeek-V4
@@ -274,6 +275,22 @@ Hacker NewsでのV4公開議論 ([thread](https://news.ycombinator.com/item?id=4
 - **ダンピング戦略**: 市場シェア獲得のための超低価格戦略と分析する声
 - **制裁の実効性への疑問**: 米国の半導体輸出規制下でもフロンティア級AIの構築が可能であることを実証
 - **「欧州オプション」**: Mistral・Kyutaiが低コスト中国モデルと高性能米国モデルの狭間で板挟み
+
+
+## Pricing: Permanent 75% Cut (May 2026)
+
+On May 22-23 2026, DeepSeek announced a **permanent 75% price reduction** for V4-Pro, not a promotional offer:
+
+| Pricing | Input (per M tokens) | Output (per M tokens) |
+|---------|---------------------|----------------------|
+| V4-Pro (new) | **$0.435** | **$0.87** |
+| Competitive comparison | 3-19× cheaper | 3-19× cheaper |
+
+**Significance**: This pricing — $0.435/M input, $0.87/M output — makes V4-Pro 3-19× cheaper than competing frontier models (GPT-5.5, Claude Opus 4.5, Gemini 3.5 Flash). The "Intelligence too cheap to meter" meme captures the strategic implication: model economics are deflating so rapidly that **model quality becomes a threshold commodity**, and the real competitive advantage shifts to agent infrastructure and execution platforms.
+
+This pricing move is directly connected to [[concepts/model-labs-to-agent-labs]] thesis — when model inference costs collapse, model providers must differentiate on [[entities/greg-brockman|agent platforms]] rather than benchmark scores.
+
+**See also**: [[concepts/model-labs-to-agent-labs]] for the industry context of model economics deflation.
 
 ## 歴史的意義
 

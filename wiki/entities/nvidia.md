@@ -1,10 +1,11 @@
 ---
 title: NVIDIA
 created: 2026-04-26
-updated: 2026-05-22
+updated: 2026-05-23
 type: entity
 tags: [company, platform]
 sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md,
+  - raw/newsletters/2026-05-22-nvidia-s-ai-factory-boom-hits-81-6b.md,
   - raw/articles/2026-04-25-nvidia-dynamo-agentic-inference.md
   - raw/articles/2026-01-05_nvidia_vera-rubin-platform.md
   - https://www.tomshardware.com/tech-industry/artificial-intelligence/jensen-says-nvidia-now-has-zero-percent-market-share-in-china
@@ -61,6 +62,27 @@ This complements [[concepts/nvidia-vera-rubin]] by demonstrating NVIDIA's focus 
 - Tweet about agentic coding bottlenecks received 454 bookmarks
 - **Nemotron 3 Nano Omni** — Released April 2026. 30B parameters, 256K context length. Open multimodal model with leading accuracy and highest efficiency in the Nemotron family. Tweet received 471 bookmarks, 1149 likes, 393K impressions.
 - **China market share drops to 0%** — Jensen Huang confirms at Citadel Securities event (May 2026). From 95% to 0% share of China's AI accelerator market. Citing US export policy as "already largely backfired." $4.5B in charges in Q1 FY2026. 10-K filing warns of "material and adverse impact" from effective foreclosure from China. Huawei Ascend, Cambricon, Moore Threads filling the gap.
+
+
+### Q1 FY2027 Earnings: $81.6B Revenue, AI Infrastructure Era (May 2026)
+
+NVIDIA reported Q1 FY2027 results with record AI infrastructure revenue:
+
+| Metric | Value | Growth |
+|--------|-------|--------|
+| Revenue | **$81.6B** | +85% YoY, +20% sequential |
+| Data Center Revenue | **$75.2B** | +92% YoY |
+| Q2 Guidance | **~$91B** | ±2%, assumes zero China DC compute revenue |
+| Share Repurchase Authorization | **$80B** added | — |
+
+**Segment Restructuring**: NVIDIA reorganized reporting into:
+- **Data Center — Hyperscale**: Large cloud providers
+- **Data Center — ACIE** (AI Compute Infrastructure & Edge): Enterprise AI deployments
+- **Edge Computing**: IoT, robotics, autonomous systems
+
+**Jensen Huang**: *"The largest infrastructure expansion in human history."*
+
+**China exposure**: Revenue assumed to be $0 on the compute side due to export restrictions, though the 10-K filing warns of "material and adverse impact" from effective foreclosure from the Chinese market. [[concepts/nvidia-vera-rubin]] and [[entities/nvidia]] overall strategy now focuses on AI factory-scale deployments worldwide.
 
 ## Related
 
