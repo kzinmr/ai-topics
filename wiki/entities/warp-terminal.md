@@ -1,13 +1,14 @@
 ---
 title: Warp Terminal
 created: 2026-05-01
-updated: 2026-05-20
+updated: 2026-05-23
 type: entity
 tags: [product, tool, coding-agents, open-source, platform]
 sources:
   - https://www.warp.dev/blog/warp-is-now-open-source
   - https://open.substack.com/pub/bensbites/p/building-gets-easier
   - raw/articles/2026-05-20_warp_multi-harness-cloud-agent-orchestration.md
+  - raw/articles/2026-05-23_warp_bring-your-own-inference-to-warp.md
 ---
 
 # Warp Terminal

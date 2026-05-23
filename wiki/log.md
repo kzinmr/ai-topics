@@ -3,6 +3,22 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-23] dreaming-wiki-ingest | Nightly knowledge consolidation (Shoebox, BYOK, MOUs)
+
+### Entities Enriched
+- **[[entities/hex-technologies]]** — Added Data Agent Evaluation Lab (Shoebox) section: Shoebox eval architecture (pairwise experiment model, local+remote hybrid, custom rubric system, auto-research loop), Shorelane Commerce synthetic business (30K lines of data generators, realistic data debt), LLM judge calibration challenges
+- **[[entities/warp-terminal]]** — Added BYOK & Custom Inference section: BYOK on Free plan, custom inference endpoints (OpenRouter, LiteLLM, z.ai), Rust client harness plan, ACP support roadmap
+- **[[entities/gary-marcus]]** — Added S&P 500 Rule Change commentary: AI IPO index fund risk, profitability requirement waiver critique
+- **[[entities/cohere]]** — Added Strategic MOUs section: Indra Group (sovereign LLMs for Spanish/Canadian markets, defense applications), Multiverse Computing (quantum-inspired AI optimization partnership)
+
+### Sources
+- raw/articles/2026-05-23_hex-technologies_evaluate-data-agents.md
+- raw/articles/2026-05-23_warp_bring-your-own-inference-to-warp.md
+- raw/articles/garymarcus.substack.com--p-this-one-weird-trick-might-cost-your--a9a098c7.md
+- raw/articles/2026-05-21_cohere_cohere-announces-strategic-mous-with-indragroup-and-multiverse-computing.md
+
+---
+
 ## [2026-05-23] health-fix | Orphan page registration + index cleanup
 
 ### Changes

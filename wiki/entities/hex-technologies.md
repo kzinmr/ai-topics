@@ -2,12 +2,13 @@
 title: "Hex Technologies"
 type: entity
 created: 2026-05-08
-updated: 2026-05-17
+updated: 2026-05-23
 tags:
   - company
 aliases: ["Hex", "Hex Tech"]
 sources:
   - https://hex.tech
+  - raw/articles/2026-05-23_hex-technologies_evaluate-data-agents.md
 ---
 
 # Hex Technologies
@@ -48,6 +49,37 @@ Hex added the ability to attach Git repos to workspaces, enabling the Hex Agent 
 - **Customers**: Underdog (Camden Willeford), Stubhub (Alan Peters) report significantly improved ability to handle "nebulous" queries
 
 Authored by Andrew Lee (May 15, 2026).
+
+
+
+## Data Agent Evaluation Lab (Shoebox)
+
+In May 2026, Hex engineer Izzy Miller detailed how Hex evaluates data agents with a custom internal lab called **Shoebox** — originally a hacky trace viewer, evolved into a full-fledged agent observability and evaluation platform.
+
+### Shoebox Architecture
+
+- **Pairwise experiment model**: Every evaluation is designed as a pairwise comparison between a "candidate" run and a "baseline" run, not a standalone test. This biases teams to report treatment matrices and side-by-side trajectories rather than aggregated numbers in isolation.
+- **Local + remote hybrid**: Shoebox runs as part of the local Hex dev stack but connects to a shared internal Hex workspace where eval sets run daily to establish "production baselines." Engineers compare locally-executed candidate runs against remotely-executed baselines, with painstaking care to sync environments for apples-to-apples comparison.
+- **Custom rubric system**: Core eval sets ship with preconfigured rubrics (ToolEfficiency, SemanticLayerUsage, WorkspaceGuideAdherence) and ground truths. Anyone can configure deterministic, LLM-judged, or hybrid rubrics. Run-scoped "hypothesis objective" rubrics allow pairwise evaluation specific to a single experiment — these consider candidate and baseline trajectories side-by-side at judge time, with access to post-run metadata for speed/cost evaluation.
+- **Auto-research loop**: Shoebox exposes agent skills that let coding agents experiment against evals in an auto-research-like loop.
+
+### Shorelane Commerce — Synthetic Evaluation Business
+
+Hex created a fully synthetic B2B2C office-supplies platform called **Shorelane Commerce** to serve as a realistic evaluation environment:
+
+- **Scale**: ~$129M yearly revenue, three revenue streams (direct-to-consumer, business subscriptions with net-30 terms, third-party marketplace with 15-25% cut)
+- **Realistic data debt**: Migrated platforms in 2021 losing customer IDs, acquired a competitor (never fully merged data), renamed a sales channel in 2022 without backfilling, restructured plans in 2023 with grandfathered customers, five columns that could plausibly be called "revenue"
+- **Source systems**: Stripe, Salesforce, legacy Shopify (mostly red herring), three ad platforms with different conversion totals
+- **30,000 lines** of handcrafted data generators, dbt models, warehouse documentation, events, triggers, and stakeholder personas producing six years of realistic data across millions of rows and dozens of tables
+- **Evals look like**: "How many support refund requests in the last 30 days haven't been processed yet?" rather than contrived prompt tricks
+
+### Key Design Decisions
+
+- **No eval-reality drift**: Shoebox integrates deeply with the actual Hex application — product improvements automatically take effect in evaluations
+- **LLM judge calibration challenges**: Hex biases toward being overly harsh, but struggles with calibration (e.g., a 0.01pp difference accepted 35% of the time by the LLM judge)
+- **Environment sync is the hardest problem**: Maintaining consistent eval environments across local dev, shared baselines, and production configs requires a careful maze of export/reset scripts
+
+Authored by Izzy Miller, Engineering (May 22, 2026).
 
 
 ## Related

@@ -2,7 +2,7 @@
 title: "Cohere"
 type: entity
 created: 2026-05-08
-updated: 2026-05-22
+updated: 2026-05-23
 tags:
   - company
   - model
@@ -13,6 +13,7 @@ sources:
   - https://cohere.com/blog
   - raw/articles/2026-05-20_cohere_cohere-acquires-reliant-ai-expand-sovereign-enterprise-ai.md
   - raw/newsletters/2026-05-22-ainews-openai-gpt-next-disproves.md
+  - raw/articles/2026-05-21_cohere_cohere-announces-strategic-mous-with-indragroup-and-multiverse-computing.md
 ---
 
 # Cohere
@@ -74,6 +75,28 @@ In May 2026, Cohere acquired **Reliant AI**, a Montreal/Berlin-based biopharma A
 Cohere announced **North for Pharma**, an agentic AI system purpose-built for biopharma teams working across R&D, clinical development, and scientific analytics. This extends Cohere's North platform offerings for regulated industries (alongside finance and telecoms).
 
 The acquisition positions Cohere as a leader in sovereign enterprise AI for healthcare, building on its established presence in Canada and Germany.
+
+### Strategic MOUs: Indra Group & Multiverse Computing (May 2026)
+
+On May 20, 2026, Cohere announced two strategic MOUs expanding its sovereign AI footprint:
+
+**Indra Group (Spain)**: Through IndraMind (Indra's sovereign intelligence initiative), Cohere will:
+- Develop sovereign LLMs adapted to Castilian Spanish, Catalan, Valencian, Basque, and Galician
+- Integrate Cohere into IndraMind's intelligence ecosystem for critical-asset protection
+- Build an enterprise AI platform targeting new commercial opportunities between Spain and Canada
+- Develop defense-sector solutions for analysis, mission-planning, and interoperability in multinational operations
+- Signed during the institutional visit of Spain's King Felipe VI to Canada, under the Canada-Spain bilateral cooperation framework
+
+**Multiverse Computing (Spain/Canada)**: A quantum-inspired AI optimization company, Cohere will:
+- Explore commercial collaboration opportunities in Europe and Canada
+- Leverage the Canada-Spain bilateral framework for jointly pursued projects
+- Drive revenue growth across each other's home markets
+
+> "Enterprises no longer want to rent AI — they want to own it. Our partnerships with Indra Group and Multiverse Computing are designed to deliver true digital sovereignty." — Aidan Gomez, CEO
+
+These MOUs extend Cohere's sovereign AI strategy beyond acquisitions (Reliant AI) into international government-backed partnerships, positioning Cohere as the infrastructure layer for sovereign enterprise AI across Europe and Canada.
+
+
 ## Products & Technology
 
 Cohere's platform centers on three model families: Command for text generation and chat, Embed for vector embeddings and semantic retrieval, and Rerank for search quality improvement. The North platform brings AI productivity into the workplace. Aya is an open multilingual research initiative covering 70+ languages. Cohere emphasizes deployment flexibility including private cloud and on-premise.

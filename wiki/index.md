@@ -519,7 +519,7 @@
 - [[entities/vtrivedy10]] — Varun 'Viv' Trivedy (@vtrivedy10) — LangChain agent harness lead, DeepAgents maintainer. PhD CS (Temple), ex-AWS Scientist. Terminal Bench 2.0: Top 30→Top 5 via harness-only changes. Author of "The Anatomy of an Agent Harness."
 - [[entities/vibevoice]] — Microsoft Research's next-token diffusion TTS model for long-form, multi-speaker conversational audio (up to 90 min, 4 speakers). ICLR 2026 Oral. Open-source (MIT). [[entities/vibevoice|→詳細]]
 - [[entities/walden-yan]] — **Role** | Co-Founder & Chief Product Officer (CPO), Cognition AI |
-- [[entities/warp-terminal]] — AI-native terminal and Agentic Development Environment (ADE). Open-sourced April 2026 under AGPLv3 with OpenAI as founding sponsor. Oz orchestration platform.
+- [[entities/warp-terminal]] — AI-native terminal and Agentic Development Environment (ADE). Open-sourced April 2026 under AGPLv3 with OpenAI as founding sponsor. Oz orchestration platform. BYOK/custom inference (Free plan, OpenRouter/LiteLLM, ACP roadmap).
 - [[entities/weaviate]] — Weaviate — Open-source vector database with built-in MCP server. Weaviate 1.37: MMR reranking, hybrid BM25+vector for coding agents.
 - [[entities/webmcp]] — **WebMCP**は、W3C Web Machine Learning Community Groupで開発されているブラウザ標準。GoogleとMicrosoftが共同で策定し、AIエージェントがWebアプリケーションと構造的に対話するための`navigator.modelContext` APIを定義する。2026年2月にChrome 146で早期プレビューが開始された。
 - [[entities/wes-mckinney]] — Wes McKinney — pandas creator, Apache Arrow/Ibis co-creator, Principal Architect at Posit. Agentic engineering pioneer: RoboRev continuous code review daemon, Agents View session DB, Middleman dashboard, spicytakes.org (1M+ lines agentically). "I almost don't read code now." Superpowers skills framework (Jesse Vincent). Agent Ergonomics thesis. GP at Composed Ventures.
@@ -636,7 +636,7 @@
 - [[entities/cartesia]] — Cartesia — State space models. Creator of Sonic AI voice model. Efficient audio generation.
 - [[entities/chalk]] — Chalk — Real-time feature platform for machine learning. Online feature computation.
 - [[entities/cognition]] — Cognition — Maker of Devin, the first autonomous AI coding agent. Also makes Windsurf IDE.
-- [[entities/cohere]] — Cohere — Enterprise AI platform. Command A+ released Apache 2.0 (218B MoE/25B active, multimodal, 48 languages, W4A4 on 2xH100).
+- [[entities/cohere]] — Cohere — Enterprise AI platform. Command A+ released Apache 2.0 (218B MoE/25B active, multimodal, 48 languages, W4A4 on 2xH100). Strategic MOUs with Indra Group (sovereign AI Spain/Canada) and Multiverse Computing (quantum-inspired optimization).
 - [[entities/decagon]] — Decagon — AI customer support agents. $4.5B valuation. 10M+ customers served.
 - [[entities/elevenlabs]] — ElevenLabs — AI voice and speech synthesis. $11B valuation. $500M+ ARR. Claude Code integration for ElevenAgents (May 2026).
 - [[entities/eventual]] — Eventual — Data and AI platform.
@@ -644,7 +644,7 @@
 - [[entities/glean]] — Glean — Enterprise AI search and work assistant. Founded by ex-Google search engineers. $600M+ raised.
 - [[entities/harvey]] — Harvey — AI for legal industry. $8B valuation. 100K+ lawyers across 60%+ of AmLaw 100.
 - [[entities/hebbia]] — Hebbia — AI for knowledge work. Product: Matrix. $700M valuation. 30% of top 50 asset managers.
-- [[entities/hex-technologies]] — Hex Technologies — Collaborative data science and AI notebooks platform.
+- [[entities/hex-technologies]] — Hex Technologies — Collaborative data science and AI notebooks platform. Shoebox eval lab for data agents (pairwise experiments, Shorelane Commerce synthetic business).
 - [[entities/linear]] — Linear — Project management software known for exceptional design quality and local-first performance architecture ($1.25B valuation). See [[concepts/local-first-architecture]].
 - [[entities/mercor]] — Mercor — AI recruiting and hiring platform. $10B valuation. Founded by Brendan Foody (age 22).
 - [[entities/merge]] — Merge — Unified API for integrations. Connect to 200+ platforms through a single API.
