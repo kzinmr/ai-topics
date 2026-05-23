@@ -3,6 +3,36 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-23] watchdog | Header count fix + health verification
+
+### Issues Fixed
+- **Header counts updated** in wiki/index.md:
+  - `## Entities (651 pages)` (was 659, actual flat FS: 651)
+  - `## Concepts (1316 pages)` (was 574, actual flat FS: 1316)
+  - `Indexed entries: 1261` (was 1240, actual index entries: 1261)
+  - `Not in index: 733` (was 750)
+
+### Health Verification
+- Index corruption: ✅ Clean (0 pipe-prefix, 0 triple-bracket, 0 line-number issues)
+- Log health: ✅ Clean (0 pipe lines, 1 Wiki Log header, 2,295 lines)
+- Duplicate entries: ✅ None found
+- Frontmatter gaps (757 missing `sources`, 32 missing `type`, 11 missing `tags`) — exceeds auto-fix threshold
+- Index coverage gap: 733 files not in index — exceeds auto-fix threshold (needs batch pass)
+- Pipeline: x_accounts job stale (26h) — non-critical, likely transient
+
+### Action Items (Need Human Direction)
+1. **Index coverage**: 733 L2 pages not in index.md (74% concepts coverage)
+2. **Frontmatter sources**: 757 pages missing `sources:` field
+3. **Broken wikilinks**: 707 targets from graph analysis (mostly namespace errors)
+4. **Duplicate entities**: 4 pairs per graph analysis (eugene-yan/eugeneyan, etc.)
+5. **Orphan pages**: 474 pages with no inbound links
+
+---
+
+---
+
+## [YYYY-MM-DD] action | subject`
+
 ## [2026-05-23] active-crawl | Gemini Antigravity, Spark, Qwen 3.7 Max, Erdős problem
 
 ### Pages Created
