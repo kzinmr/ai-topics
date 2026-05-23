@@ -3,6 +3,29 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-23] active-crawl | Gemini Antigravity, Spark, Qwen 3.7 Max, Erdős problem
+
+### Pages Created
+- [[entities/google-antigravity]] — Google's agent-first development platform (I/O 2026). Antigravity 2.0 desktop/CLI/SDK, Managed Agents API, AGENTS.md/SKILL.md customization. Sources: Google I/O 2026 developer highlights, Gemini API docs.
+- [[entities/qwen-3-7-max]] — Alibaba's latest agent reasoning model (May 20, 2026). 1M token context, 35-hour autonomous kernel optimization (1,158 tool calls, 10.1× speedup). AA Index #5, Terminal Bench 2.0 69.7. Environment Scaling training. Sources: explainx.ai, ai-trends.today.
+- [[concepts/gemini-spark]] — Google's 24/7 personal AI agent (I/O 2026). Cloud-based, Workspace-integrated, proactive task execution. Sources: Google blog (Gemini app evolution).
+- [[concepts/erdos-unit-distance-problem]] — OpenAI model disproves 80-year-old Erdős conjecture (1946). First AI math result deemed publishable in top journal. Sources: Scientific American.
+
+### Pages Enriched
+- [[entities/gemini-3-5-flash]] — Expanded Antigravity harness section (2.0, CLI, SDK, Managed Agents), expanded Gemini Spark section (recurring tasks, custom skills, Workspace integration). Updated sources.
+
+### Sources
+- https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/
+- https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/
+- https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/
+- https://ai.google.dev/gemini-api/docs/antigravity-agent
+- https://explainx.ai/blog/qwen-3-7-max-agent-frontier-long-horizon-autonomy
+- https://ai-trends.today/qwen-introduces-qwen3-7-max-a-reasoning-agent-model-with-a-1m-token-context-window/
+- https://www.scientificamerican.com/article/ai-just-solved-an-80-year-old-erdos-problem-and-mathematicians-are-amazed/
+
+
+---
+
 ## [2026-05-23] enrich | Blog wiki ingest: Ed Zitron OpenAI Q1, AI Bubble Part 2, Reiner Pope chip design
 
 ### Pages Enriched

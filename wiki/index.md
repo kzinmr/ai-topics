@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-23 | Total pages: 1990 | Indexed entries: 1240 | Not in index: 750 |
+> Last updated: 2026-05-23 | Total pages: 1994 | Indexed entries: 1240 | Not in index: 750 |
 
 ## Entities (659 pages)
 
@@ -234,6 +234,7 @@
 - [[entities/gemini]] — Google's multimodal AI model family. I/O 2026: Gemini 3.5 Flash, Omni (world model video gen), Spark (24/7 AI agent), Daily Brief. 900M+ monthly users. Powered by Antigravity harness.
 - [[entities/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform announced at Cloud Next 2026. Evolves Vertex AI into full-stack agent build/scale/govern/optimize platform with 200+ models, Agent Studio, ADK, Memory Bank, Agent Sandbox.
 - [[entities/gemini-3-5-flash]] — Gemini 3.5 Flash — Google's frontier agent model (May 2026). Terminal-Bench 2.1 76.2%, MCP Atlas 83.6%, 4x faster than competitors. Antigravity subagent harness, Gemini Spark personal agent.
+- [[entities/gemini-spark]] — Googleの24/7パーソナルAIエージェント（I/O 2026）。Gemini 3.5 Flash + Antigravity harness上で動作。定期タスク、カスタムスキル学習、Workspace深層統合。クラウド常駐型。
 - [[entities/gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind. 60M+ downloads. MTP drafters (May 2026) deliver 3x faster inference with no quality degradation.
 - [[entities/geoffrey-hinton]] — **Full Name** | Geoffrey Everest Hinton |
 - [[entities/geoffrey-litt]] — **X** | @geoffreylitt |
@@ -246,6 +247,7 @@
 - [[entities/glm-5v-turbo]] — Model that turns designs into code, part of the multimodal AI wave from Chinese labs.
 - [[entities/gm8xx8]] — High-taste AI research curator on X/Twitter and HuggingFace (89K+ HF followers, 17K+ posts). Bio: "HIGH-TASTE AI | OPEN MODELS." Curates across proof theory, scaling laws, multimodal systems, and robotics. X account since 2010; AI curation since 2022.
 - [[entities/google-adk]] — Google Agent Development Kit (ADK) 2.0: graph-based workflow engine for multi-agent AI, GA May 2026, 20K ⭐
+- [[entities/google-antigravity]] — Googleのエージェントファースト開発プラットフォーム（I/O 2026）。Antigravity 2.0デスクトップ、CLI、SDK。Managed Agents API（隔離Linuxサンドボックス、AGENTS.md/SKILL.mdカスタマイズ）。Gemini 3.5 Flash最適化。
 - [[entities/google-tpu]] — Google's custom ASIC for ML workloads, now split into specialized **TPU 8t** (training) and **TPU 8i** (inference) chips at the 8th generation. Designed for agentic AI, world models, Mixture-of-Exp...
 - [[entities/gpt-5.5]] — OpenAI's April 2026 model release; outperforms Opus 4.7, 40% more token efficient than GPT-5.4
 - [[entities/gpt-5-5-instant]] — OpenAI's updated default ChatGPT model (May 2026). 52.5% fewer hallucinations, improved STEM/vision, self-correction capability.
@@ -415,6 +417,7 @@
 - [[entities/pratik-bhavsar]] — **X** | @ptkbhv |
 - [[entities/project-mariner]] — Google's autonomous web browsing AI agent (Chrome extension). Shut down in May 2026 due to poor performance and high costs. See: [[concepts/google-project-mariner-shutdown]]
 - [[entities/qwen3-6-plus]] — Alibabaのエージェント指向言語モデル。実世界の自律的ワークフローを対象としている。
+- [[entities/qwen-3-7-max]] — Alibabaの最新エージェント推論モデル（2026-05-20）。1Mトークンコンテキスト、35時間自律カーネル最適化（1,158ツール呼び出し、10.1×高速化）。AA Index #5、Terminal Bench 2.0 69.7。Environment Scaling訓練。クローズドウェイト。
 - [[entities/rachelbythebay-com]] — **Blog** | rachelbythebay.com/w |
 - [[entities/railway]] — Railway — Agent-native cloud platform. 3M users, 35-person team, $124M raised. Own-metal data centers with 70% margins. Multi-cloud bursting. Coding agent spend ~$200K/month. Jake Cooper.
 - [[entities/rahul]] — **URL:** https://rahul.gs/
@@ -991,6 +994,7 @@
 - [[concepts/content-understanding]] — Content Understanding: 検索インデックス内のコンテンツ表現・強化の体系。Daniel Tunkelangの8記事シリーズ（2021-2022）。分類→アノテーション→類似性→構造→品質→モデレーション・情報抽出。Query Understandingと対をなす検索の基盤。
 - [[concepts/enterprise-ai-deployment-jv]] — Both OpenAI ($4B "The Deployment Company") and Anthropic ($1.5B with Blackstone/Goldman Sachs) forming JVs with PE firms to build deployment services arms. Model competition expanding to deployment competition.
 - [[concepts/enterprise-ai-operating-model]] — IBM's four-pillar framework (Think 2026): Agents, Data, Automation, Hybrid. watsonx Orchestrate multi-agent control plane, IBM Confluent real-time data, IBM Sovereign Core governance.
+- [[concepts/erdos-unit-distance-problem]] — OpenAIの内部モデルが80年来のErdős単位距離予想（1946年）を反証（2026-05-21）。高次元格子→平面射影による反例。「人間だけならトップジャーナル掲載レベル」初のAI数学成果。
 - [[concepts/entropix]] — xjdr's entropy-based adaptive LLM sampling (3.4K ⭐). Uses entropy/varentropy quadrant to select sampling strategy at inference time. Training-free CoT simulation.
 - [[concepts/open-weights-licensing-tightening]] — Trend of leading open weights AI model providers tightening license terms in 2026. Meta dropped open weights, Alibaba Qwen API-first, Mistral commercial restrictions, Kimi attribution clause. DeepSeek exception. Contestable markets theory, oligopoly risk.
 - [[concepts/mrcr]] — MRCR — Multi-Round Coreference Resolution。複数needleの長文コンテキストeval。Google DeepMindのLSQフレームワーク発。OpenAIがOSS版を公開。Claude Opus 4.6が8-needle 1Mで93%。

@@ -1,10 +1,10 @@
 ---
 title: Gemini 3.5 Flash
 created: 2026-05-22
-updated: 2026-05-22
+updated: 2026-05-23
 type: entity
 tags: [entity, model, google, multimodal, llm, text-generation, agentic-engineering, inference, agent-sdk, coding-agents, ai-agents, orchestration, multi-agent]
-sources: [raw/articles/2026-05-19_google-gemini-3-5-flash.md, https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/]
+sources: [raw/articles/2026-05-19_google-gemini-3-5-flash.md, https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/, https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/, https://ai.google.dev/gemini-api/docs/antigravity-agent]
 ---
 
 # Gemini 3.5 Flash
@@ -27,7 +27,13 @@ Gemini 3.5 Flash delivers **frontier-level intelligence at Flash-series speed** 
 
 ## Antigravity Harness
 
-The updated **Antigravity harness** powering Gemini 3.5 Flash enables **collaborative subagents** for enterprise-scale multi-step workflows under supervision. Demo scenarios include:
+The updated **[[entities/google-antigravity|Antigravity harness]]** powering Gemini 3.5 Flash enables **collaborative subagents** for enterprise-scale multi-step workflows under supervision. Antigravity is Google's agent-first development platform with desktop (Antigravity 2.0), CLI, and SDK surfaces — all sharing the same harness powering [[concepts/gemini-spark|Gemini Spark]] and AI Mode in Search.
+
+### Managed Agents in Gemini API
+
+A single API call provisions an isolated Linux sandbox with code execution, file management, and web access. Agents are customized via AGENTS.md and SKILL.md files. **Automatic context compaction** at ~135K tokens enables long-running sessions. Powered by Gemini 3.5 Flash.
+
+Demo scenarios include:
 
 - Paper-to-playable-game synthesis (6 hours, two agents)
 - Legacy code migration (messy codebase → Next.js)
@@ -47,7 +53,14 @@ The updated **Antigravity harness** powering Gemini 3.5 Flash enables **collabor
 
 ## Gemini Spark
 
-A personal AI agent running **24/7** on Gemini 3.5 Flash. Takes actions on user's behalf under their direction. Rolling out to Google AI Ultra subscribers (US).
+**[[concepts/gemini-spark|Gemini Spark]]** is a 24/7 personal AI agent running on Gemini 3.5 Flash, powered by the Antigravity harness. Cloud-based — continues working even when the user closes their laptop. Deeply integrated with Workspace (Gmail, Docs, Slides). Supports:
+
+- **Recurring tasks**: "Flag hidden subscription fees in monthly credit card statements"
+- **Teach new skills**: Custom workflows like school update digesting
+- **Complete workflows**: Meeting notes → polished Docs → companion emails
+- **Upcoming**: Text/email Spark, custom sub-agents, local browser operation (summer 2026)
+
+Rolling out to Google AI Ultra subscribers (US).
 
 ## Safety
 
