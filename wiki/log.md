@@ -3,6 +3,23 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-23] skeleton-enrich-daily | Daily skeleton enrichment — Tobi Lütke, nrehiew, Evis Drenova
+
+### Pages Enriched (from L2 thin state to enriched quality)
+
+- **[[entities/tobi-lutke]]** — **Tobi Lütke** (@tobi). Shopify CEO, Ruby on Rails core member, Snowdevil founder. Enriched from 41 lines / 1.9KB to 210+ lines / 9.7KB. Added: full biography (Koblenz birth, Siemens apprenticeship, Canada move, Snowdevil→Shopify pivot), open-source contributions (qmd 24.6K★, Liquid, ActiveMerchant, DelayedJob), personal projects (AudioPriorityBar, try, highlights), AI philosophy (River agent, "AI as baseline expectation" memo, apprenticeship model), race car driving (IMSA LMP2), $1 salary, published essays, spiritual/philosophical positions. Sources: tobi.lutke.com, Wikipedia, GitHub, Faster Than Normal profile.
+
+- **[[entities/nrehiew]]** — **wh / nrehiew** (@nrehiew_). AI/ML researcher and writer. Enriched from 42 lines / 1.7KB to 130+ lines / 6.9KB. Added: professional background (CV research, enterprise AI, recommendation systems, startup), blog publications (6 articles), Over-Editing research in coding models (GPT-5.4 worst, Opus 4.6 best, RL > SFT/DPO/rejection sampling), ML commentary (DeepSeek V4 compute estimate at ~1e25 FLOPs, GRPO replication findings, Prefill-as-a-Service analysis, pedagogical RL engagement), open-source projects (r-nn Rust tensor lib 71★, Eagle 41★, minARImageGen, minTTC). Sources: nrehiew.github.io, GitHub, Latent Space.
+
+- **[[entities/evis-drenova]]** — **Evis Drenova** (@evisdrenova). Principal SWE @ Entire. Enriched from 42 lines / 1.7KB to 180+ lines / 9.2KB. Added: full biography (Albanian-born, Boston-raised, UMass BS, Chicago Booth MBA), career timeline (Experian, Oracle, IBM, TrueData, Skyflow, Neosync YC S22, Entire), Neosync acquisition by Grow Therapy, joining Entire after turning down foundation model labs, agentic code search study (1,983 checkpoints, 48.8% search-related, 9× speedup only 1.6% gain), writing catalog (evis.dev blog with 20+ posts on ML/Rust/AI-society, The Early Days Substack). Sources: evis.dev, talent.substack interview, LinkedIn, GitHub.
+
+### Sources
+- tobi.lutke.com, wikipedia.org, github.com/tobi, fasterthannormal.co
+- nrehiew.github.io, github.com/nrehiew, latent.space coverage
+- evis.dev, evis.substack.com, talent.substack.com, linkedin.com/in/evis-drenova
+
+---
+
 ## [2026-05-23] dreaming-wiki-ingest | Nightly knowledge consolidation (Shoebox, BYOK, MOUs)
 
 ### Entities Enriched

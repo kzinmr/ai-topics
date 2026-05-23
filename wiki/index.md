@@ -25,7 +25,7 @@
 - [[entities/deepmind]] — Google DeepMind — Alphabet's central AI research lab (AlphaGo, AlphaFold, Gemini). May 2026: AI Pointer / Magic Pointer — context-aware cursor powered by Gemini, reimagining the 50-year-old mouse pointer.
 - [[entities/dex-horthy]] — Dex Horthy (@dexhorthy): AIエージェントハーネスエンジニアリングの研究者
 - [[entities/elie-bakouch]] — Elie Bakouch — Training LLMs at Prime Intellect, previously HuggingFace (SmolLM, FineWeb, FinePDF). Latent Space podcast guest.
-- [[entities/evis-drenova]] — Evis Drenova
+- [[entities/evis-drenova]] — Evis Drenova — Principal SWE @ Entire. Co-founder Neosync (YC S22, acq. Grow Therapy). Agentic code search study (1,983 checkpoints). Privacy, Rust, AI infrastructure.
 - [[entities/dynomight-net]] — Dynomight — Data science & society blog
 - [[entities/fintool]] — Fintool
 - [[entities/ed-zitron-s-where-s-your-ed-at]] — Ed Zitron (Where’s Your Ed At) — AI industry, business critique
@@ -78,7 +78,7 @@
 - [[entities/siyan-zhao]] — Siyan Zhao — UCLA / Meta Superintelligence Labs researcher. Lead author of On-Policy Self-Distillation (OPSD) for LLM reasoning post-training (2026). Same-model self-distillation with privileged ground-truth context.
 - [[entities/tambo]] — Tambo (tambo.co) — オープンソースGenerative UIツールキットfor React。AIエージェントが既存コンポーネントで応答
 - [[entities/thibault-sottiaux]] — OpenAI executive. Led Codex development; May 2026 promoted to lead core product and platform teams (ChatGPT + Codex + API). Overseeing "super app" development.
-- [[entities/tobi-lutke]] — Tobi Lutke — Shopify CEO. Revealed River: internal Slack-native AI coding agent built on apprenticeship model. Self-taught programmer, dropped out at 16.
+- [[entities/tobi-lutke]] — Tobi Lütke — Shopify CEO, Ruby on Rails core member, Snowdevil founder. River AI agent, qmd (24.6K★), $1 salary, IMSA LMP2 racer. Apprenticeship philosophy.
 - [[entities/0xjeff]] — 0xJeff — Crypto/DeFi analyst and Hermes Agent power user. 8 years PE/VC/IB. Known for documenting Hermes as personal analyst pipeline.
 - [[entities/abacaj]] — **Name** | Anton Bacaj |
 - [[entities/adam-mastroianni]] — **Blog** | Experimental History (Substack) |
