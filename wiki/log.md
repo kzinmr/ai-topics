@@ -3,6 +3,29 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-23] create+enrich | Hanchung Lee entity page, Agent Runtime concept enrichment, Sarah Chieng YouTube references
+
+### Pages Created
+- **[[entities/hanchunglee]]** — Hanchung Lee (Han Lee, @hanchunglee) — Focused entity page on the Agent Runtime analysis from his "Hidden Technical Debt" series. 9.4KB. Sections: Overview, Core Ideas (runtime as primary technical debt, sandboxing necessity, isolation primitive stack, runtime shift, web app vs agent runtime), Key Work (Hidden Technical Debt trilogy, AI adoption articles), X Activity Themes, Related People/Entities. Sources: leehanchung.github.io, raw article.
+
+### Pages Enriched
+- **[[concepts/agent-runtime]]** — Added 4 major sections (3.8KB new content): **State Model** (snapshot/replay/rollback primitives, Cognition/Manus/Daytona production evidence), **Network Boundary Design** (6 patterns from no-network to full internet, design principles), **Lifecycle Management** (5 operations, async gap problem, cost distribution insight), **Web App Runtime vs Agent Runtime** comparison (8-dimension table). Updated frontmatter: added `state-management`, `networking`, `agent-security` tags. Added [[entities/hanchunglee]] wikilink. Updated date to 2026-05-23. Total page grew from ~34KB to ~38KB.
+- **[[entities/milksandmatcha]]** — Added **Recent Activity (May 2026)** section with two YouTube interviews: (1) Jason Liu (OpenAI/Codex) on zero-latency AI (shared May 21, 2026), (2) Sara Hooker (Adaption/DeepMind) on GPU bottlenecks via Big Chip Club (shared May 22, 2026). Updated frontmatter: `updated: 2026-05-23`, added `youtube` and `podcast` tags. Cross-linked [[entities/jason-liu]] and [[entities/sara-hooker]].
+
+### Index Updates
+- Added `[[entities/hanchunglee]]` entry under Entities section (between han-lee and hark)
+- Updated `[[concepts/agent-runtime]]` description to include new sections
+- Updated `[[entities/milksandmatcha]]` description with recent YouTube shares
+- Updated header counts: Entities 651→652, Total 2014→2015, Indexed 1281→1282
+
+### Sources
+- raw/articles/2026-04-24_leehanchung_hidden-technical-debt-agent-runtime.md
+- https://leehanchung.github.io/blogs/2026/04/24/hidden-technical-debt-agent-runtime/
+- https://www.youtube.com/watch?v=z_7GCp0BApc (Jason Liu)
+- https://www.youtube.com/watch?v=ys5mjpOs6_o (Sara Hooker)
+
+---
+
 ## [2026-05-23] skeleton-enrich-daily | Daily skeleton enrichment — Tobi Lütke, nrehiew, Evis Drenova
 
 ### Pages Enriched (from L2 thin state to enriched quality)
@@ -2367,3 +2390,27 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - **Updated wiki/SCHEMA.md** — Added tags: reactive-systems (Infrastructure), agent-forking, lineage-tracking (AI Agents)
 - **Updated wiki/index.md** — Added concepts/activegraph entry, updated counts: Total 2086→2088, Indexed 1223→1224
 - **Updated wiki/index.md** — Added concepts/colbert. Counts: Total 2079→2080, Indexed 1221→1222
+
+## [2026-05-23] created | 3 new wiki pages: rlancemartin, trq212, claude-managed-agents + index updates
+
+### Pages Created
+
+- **[[entities/rlancemartin]]** — Lance Martin (@rlancemartin) entity page. DevRel/DX engineer at Anthropic. Covers his role maintaining the claude-api skill, authoring self-hosted sandbox cookbooks, and evangelizing the Claude Managed Agents "brain/hands" architecture. Sections: Overview, Core Ideas (decouple brain from hands, self-hosted sandboxes, skills as onboarding surface, context engineering), Key Work (claude-api skill, self-hosted sandbox cookbooks, sandbox partner launch comparison table), X Activity Themes, Related People/Entities. 8,033 bytes. Cross-referenced with [[entities/lance-martin]] and [[concepts/claude-managed-agents]].
+
+- **[[entities/trq212]]** — Thariq Shihipar (@trq212) entity page. MTS at Anthropic on Claude Code. Focused on his HTML-first philosophy from the May 20, 2026 blog post "Using Claude Code: The unreasonable effectiveness of HTML." Sections: Overview, Core Ideas (5 reasons: information density, visual clarity, sharing, interactivity, data ingestion; output surface as design problem; disposable micro-apps), Key Work (blog post, companion site, use cases table), X Activity Themes. 7,859 bytes. Cross-referenced with [[entities/thariq-shihipar]].
+
+- **[[concepts/claude-managed-agents]]** — Claude Managed Agents concept page. Anthropic's REST API-based platform for cloud-hosted autonomous agents. Architecture: brain/hands separation, session-based durable context, tool dispatch split. Includes sandbox provider comparison table (Cloudflare/Modal/Vercel/Daytona — 12 dimensions), self-hosted environment model, orchestration modes, credential security spectrum, tools and capabilities, getting started guide. 16,052 bytes. Cross-referenced with [[comparisons/claude-managed-agents-sandbox-providers]].
+
+### Index Updates
+
+- Added entries for all 3 pages under correct sections
+- Updated header counts: Entities 652→654, Concepts 1336→1337, Total 2015→2018, Indexed 1282→1285
+
+### Sources
+- raw/articles/2026-05-19_cloudflare_claude-managed-agents.md
+- raw/articles/2026-05-19_modal_claude-managed-agents-sandboxes.md
+- raw/articles/2026-05-19_vercel_claude-managed-agents-sandbox.md
+- raw/articles/2026-05-19_daytona_claude-managed-agents.md
+- raw/articles/2026-05-20_anthropic_unreasonable-effectiveness-html.md
+- https://github.com/anthropics/skills/tree/main/skills/claude-api
+- https://github.com/anthropics/claude-cookbooks/tree/main/managed_agents/self_hosted_sandboxes

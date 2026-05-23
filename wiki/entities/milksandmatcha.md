@@ -1,8 +1,8 @@
 ---
 title: "Sarah Chieng (MilksandMatcha)"
-tags: [person]
+tags: [person, youtube, podcast]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-23
 type: entity
 ---
 
@@ -56,6 +56,14 @@ Sarah advocates for:
 - **[@brickywhat](https://x.com/brickywhat)** — Originator of the term "sloperator" used in their single-agent critique.
 - **Zhenwei Gao, James Wang** — Provided input on Back of House research and trials.
 - **[@halleychangg](https://x.com/halleychangg)** — Illustrator for Back of House pattern diagrams.
+
+## Recent Activity (May 2026)
+
+- **Jason Liu (OpenAI) on Building with Zero-Latency AI** (shared May 21, 2026) — Sarah shared this YouTube interview featuring Jason Liu ([@jxnlco](https://x.com/jxnlco)), DX Engineer on the Codex team at OpenAI and creator of the Instructor library (6M+ monthly downloads). The conversation covers practical strategies for building AI-powered applications that feel instantaneous to users, context engineering approaches, and the Codex platform capabilities. [[entities/jason-liu]]
+  - 📺 [Watch on YouTube](https://www.youtube.com/watch?v=z_7GCp0BApc)
+
+- **Sara Hooker (Adaption) on GPU Bottlenecks and the Future of AI** (shared May 22, 2026) — Sarah shared this Big Chip Club interview with Sara Hooker, author of "The Hardware Lottery" and researcher at Google DeepMind. The discussion explores how GPU availability and hardware constraints shape AI research directions, the economics of large-scale training, and the future of AI hardware. [[entities/sara-hooker]]
+  - 📺 [Watch on YouTube](https://www.youtube.com/watch?v=ys5mjpOs6_o)
 
 ## Related Concepts
 

@@ -1,18 +1,21 @@
 ---
 title: "Agent Runtime"
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-05-23
 type: concept
 tags:
   - agent-runtime
   - architecture
   - infrastructure
   - agent-safety
+  - agent-security
   - isolation
   - sandbox
   - harness-engineering
   - virtualization
   - technical-debt
+  - state-management
+  - networking
 sources:
   - "raw/articles/2026-04-24_leehanchung_hidden-technical-debt-agent-runtime.md"
   - "https://leehanchung.github.io/blogs/2026/04/24/hidden-technical-debt-agent-runtime/"
@@ -329,6 +332,68 @@ Five primitives in serious use, with very different trade-offs:
 - **gVisor is the middle path** — Stronger isolation than namespaces without full VM cost. Trade-off: some syscalls are slower or unsupported.
 - **V8 isolates are the wrong primitive for general agent workloads** — Cannot run arbitrary Python, install packages, or execute compiled binaries.
 
+## The State Model: Snapshot, Replay, Rollback
+
+State management is not a nice-to-have in agent systems — it is the foundation of debugging, evaluation, and iterative improvement. The runtime must provide primitives for capturing, restoring, and replaying agent state across turns, episodes, and sessions.
+
+### Core Primitives
+
+| Primitive | Description | Use Case |
+|---|---|---|
+| **Filesystem snapshots** | Copy-on-write filesystem state capture | Rollback after destructive operations; checkpoint before risky tool calls |
+| **Memory snapshots** | Full process memory capture via CRIU or VM snapshot | Suspend/resume for long-running agents; async gap survival |
+| **Session replay** | Deterministic re-execution from recorded trajectories | Debugging failure modes; regression testing; eval reproducibility |
+| **State export/import** | Checkpoint-restore across environments | Migration between runtimes; sharing agent progress; CI/CD integration |
+
+### Production Evidence
+
+- **Cognition (Devin)**: Hypervisor-level snapshotting of full machine state (memory, process tree, filesystem) to survive async gaps. The agent shuts down while idle and resumes exactly where it left off when a CI result arrives. Building this took longer than any other piece of infrastructure they shipped.
+- **Manus**: Snapshotted all agent runtimes in restorable formats for future replay — users can replay everything an agent has done.
+- **Daytona**: Snapshot-based sandboxes with 30-day lifecycle, enabling fork-and-resume workflows.
+
+> *"The ability to snapshot and replay agent sessions is not a nice-to-have. It is the foundation of debugging, evaluation, and iterative improvement of agent behavior."* — Han Lee
+
+## Network Boundary Design
+
+The runtime's network boundary defines what the agent can reach and what can reach it. Lee catalogs six patterns, from most to least restrictive:
+
+### Six Patterns
+
+| # | Pattern | Description | Use Case |
+|---|---|---|---|
+| 1 | **No network** | Air-gapped sandbox; zero external connectivity | RL training rollouts where determinism matters; classified data processing |
+| 2 | **Egress-only allowlist** | Explicit domains only via firewall rules | Production agents that need specific APIs; reduces blast radius |
+| 3 | **Proxy-mediated** | All traffic routed through a controllable proxy with logging, filtering, and rate limiting | Enterprise deployments requiring audit trails and content filtering |
+| 4 | **Credential brokering** | Sandbox never sees raw secrets; runtime injects short-lived tokens at call time | Agents that need authenticated API access; prevents credential exfiltration |
+| 5 | **VPN/VPC peering** | Private network access to internal services | Enterprise agents operating within corporate networks |
+| 6 | **Full internet** | Unrestricted outbound access | Research/exploration agents; highest risk profile |
+
+### Design Principles
+
+- **Default-deny**: Start with no network and open only what's needed. The pattern number should increase only with justification.
+- **Credential brokering is a hard requirement** for any agent that touches production data. The sandbox must never hold long-lived credentials.
+- **Proxy-mediated is the pragmatic default** for most enterprise deployments — it enables observability without the operational overhead of allowlist maintenance.
+
+## Lifecycle Management
+
+The runtime must treat agent execution as a managed lifecycle, not a fire-and-forget API call. Lee identifies five lifecycle operations:
+
+| Operation | Description | Latency Expectation |
+|---|---|---|
+| **Cold start** | Provision new sandbox from base image | ~125 ms (Firecracker) to seconds (full VM) |
+| **Warm start** | Resume from a pre-built snapshot | Sub-second from snapshot |
+| **Suspend** | Pause execution and save state to disk | Milliseconds to seconds depending on memory size |
+| **Resume** | Restore execution from suspended state | Sub-second from snapshot |
+| **Teardown** | Destroy sandbox, archive artifacts, release resources | Seconds |
+
+### The Async Gap Problem
+
+Production agents encounter **async gaps** — periods of minutes, hours, or days where the agent must wait (for CI results, human review, external events) while preserving its working state. Lifecycle management must handle suspend/resume across these gaps without losing context, tool state, or filesystem modifications.
+
+### Cost Distribution Insight
+
+> *"For a typical agent task that takes 30 minutes: 15 seconds is model inference, 30 seconds is tool execution, and 29 minutes is waiting for the runtime to do its job. The runtime is where the time goes."* — Han Lee
+
 ## The Sandbox-as-a-Service Landscape
 
 A category of startups has emerged in the last two years, almost all building on the primitives above:
@@ -408,6 +473,25 @@ This is the direct agent-systems analog of the technical debt patterns described
 
 > The agent has to live on a runtime. The teams that internalize that early will spend the next two years compounding the advantage. The teams that do not will spend the next two years paying down a debt they did not know they were taking on. — Han Lee
 
+## Web App Runtime vs Agent Runtime
+
+Lee draws a sharp contrast between the runtime assumptions of traditional web applications and those required by autonomous agents:
+
+| Concern | Web App Runtime | Agent Runtime |
+|---|---|---|
+| **User drives interaction** | Yes — user clicks, types, navigates | No — agent is autonomous, makes its own decisions |
+| **Refresh fixes most things** | Yes — reload clears transient state | No — state must persist correctly across turns and interruptions |
+| **Session isolation** | Nice to have — mostly for security | Mandatory — one compromised session must not reach others |
+| **Network boundary** | Firewall rules at service level | Per-session network policy with credential brokering |
+| **State snapshot** | Rarely needed — stateless is preferred | Foundation of debugging, evaluation, and recovery |
+| **Multi-tenancy** | Request-level — requests are independent | Session-level — each session needs complete isolation |
+| **Failure model** | Return error, let user retry | Survive, recover, adapt — the agent will keep going |
+| **Lifetime** | Seconds (request-response) | Minutes to hours to days (async gap survival) |
+
+> *"A web app's runtime can be sloppy because the user is the one driving and a refresh fixes most things. An agent's runtime cannot, because the agent will keep going long after a human would have stopped to ask a question."* — Han Lee
+
+This comparison explains why agent runtimes cannot simply reuse web infrastructure primitives. Web runtimes are built for stateless, request-response, user-driven interaction. Agent runtimes require stateful, autonomous, session-level isolation with snapshot/replay capabilities. The gap between these two models is the primary source of **runtime debt** — the mismatch between what agents need and what existing cloud infrastructure provides.
+
 ## Relationship to Other Concepts
 
 - **[[concepts/agent-harness]]** — The harness + model run inside the runtime. The runtime is the execution environment; the harness is the orchestration layer within it. Han Lee's taxonomy: $H$ (harness) and $S$ (state) are runtime components. **Distinction from the execution semantics view**: the harness decides *what the agent attempts*; the runtime (as control system) decides *how execution proceeds* — managing lifecycle, tool mediation, state continuity, scheduling, events, safety, and observability independent of the harness's orchestration choices.
@@ -415,7 +499,8 @@ This is the direct agent-systems analog of the technical debt patterns described
 - **[[concepts/reduce-offload-isolate]]** — Anthropic/Lance Martin's three principles for stripping harness complexity. The runtime's isolation model directly impacts how well you can "isolate" sub-agent contexts.
 - **[[concepts/harness-commoditization]]** — As models absorb harness features, the runtime (not the harness) may become the durable differentiator.
 - **[[concepts/workflow-orchestration-frameworks]]** — Workflow frameworks describe *execution topology* (what should happen); the runtime maintains *execution continuity* (how execution proceeds). LangGraph is closer to a workflow framework; Claude Agent SDK and PI are closer to runtimes.
-- **[[entities/han-lee]]** — Original source of the infrastructure-centric runtime framing and the runtime debt concept.
+- [[entities/han-lee]] — Original source of the infrastructure-centric runtime framing and the runtime debt concept.
+- [[entities/hanchunglee]] — Focused page on Lee's Agent Runtime analysis, isolation primitives, and core ideas from the Hidden Technical Debt series.
 - **[[concepts/runtime-opinionated-sdk]]** — Claude/OpenAI Agents SDKs as mini runtimes that embed a specific execution model (reactive tool loop, runtime-owned tool orchestration, composable actors, native observability). These SDKs provide an *agent execution abstraction*, not an *LLM call abstraction* — developers configure behavior, not control flow.
 
 ## References

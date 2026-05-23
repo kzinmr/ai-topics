@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-23 | Total pages: 2014 | Indexed entries: 1281 | Not in index: 713 |
+> Last updated: 2026-05-23 | Total pages: 2018 | Indexed entries: 1284 | Not in index: 713 |
 
-## Entities (651 pages)
+## Entities (654 pages)
 
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -263,6 +263,7 @@
 - [[entities/hailey-schoelkopf]] — Research Scientist at EleutherAI, primary maintainer of the LM Evaluation Harness (lm-eval). Co-author of Pythia (ICML 2023).
 - [[entities/hamel-husain]] — **Role** | Independent Consultant (Parlance Labs), R&D at AnswerAI, Scout at Bain Capital |
 - [[entities/han-lee]] — Han Lee (Hanchung Lee) — Senior Director of Data + AI at Moody's Analytics. Author of "Han, Not Solo" blog (RSS tracked). Wrote the foundational "Hidden Technical Debt of AI Systems" trilogy: [[raw/articles/2026-03-21_leehanchung_rl-environments-for-llm-agents|RL Environments Taxonomy]] (Mar 2026) → [[concepts/agent-runtime|Agent Runtime]] (Apr 2026) → [[raw/articles/2026-05-08_leehanchung_hidden-technical-debt-agent-harness|Agent Harness]] (May 2026). Other key work: Data Aggregation Is Not a Moat, Don't Outsource Your Understanding (cognitive offloading vs surrender).
+- [[entities/hanchunglee]] — Hanchung Lee (Han Lee, @hanchunglee) — Focused entity page on the Agent Runtime analysis from his "Hidden Technical Debt" series. Covers: isolation primitive stack, sandboxing necessity (4 reasons), runtime shift, web app vs agent runtime comparison. See [[entities/han-lee]] for full biography and article catalog.
 - [[entities/hark]] — Hark — GPU infrastructure company. $700M at $6B valuation (May 2026). 200-hour autonomous runs.
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM (founded 2022), built on GPT-3.5. Evolved toward agentic personal OS.
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
@@ -354,7 +355,7 @@
 - [[entities/micahflee]] — **Micah Lee** (he/him, pronounced "my-kah") is a security researcher, investigative data journalist, software engineer, and author. He is best known for building practical open-source privacy tools...
 - [[entities/michael-stapelberg]] — **Blog** | michael.stapelberg.ch |
 - [[entities/miguel-grinberg]] — **Miguel Grinberg** is a Python educator, open-source maintainer, and software engineer best known for his influential tutorials, deep technical blog posts, and long-running contributions to the Py...
-- [[entities/milksandmatcha]] — Sarah Chieng is an AI agent educator and developer advocate focused on practical multi-agent workflow patterns. She is known for co-authoring the **"Back of House"** framework with @0xSero, which m...
+- [[entities/milksandmatcha]] — Sarah Chieng is an AI agent educator and developer advocate focused on practical multi-agent workflow patterns. Co-author of the **"Back of House"** framework with @0xSero. Recent shares: YouTube interviews with Jason Liu (OpenAI/Codex) on zero-latency AI and Sara Hooker (Adaption/DeepMind) on GPU bottlenecks (May 2026).
 - [[entities/mimi]] — **Mimi (Kyutai)** | Ultra-low-rate streaming speech codec: 24 kHz → 12.5 Hz → 1.1 kbps, 80 ms latency. WavLM-distilled semantic layer. Designed for Moshi full-duplex spoken dialogue.
 - [[entities/minimax]] — MiniMax AI — Chinese AI company, M2.7 coding model scoring 56-59 on SWE-Bench Pro (open weights). Part of China's agentic coding sprint alongside Kimi K2.6 and Z.ai GLM-5.1.
 - [[entities/minimaxir-com]] — **Max Woolf** (@minimaxir) is a data scientist, open-source developer, and technical blogger based in San Francisco. He is a Senior Data Scientist at concepts/buzzfeed, where he has applied machine...
@@ -436,6 +437,7 @@
 - [[entities/ring-2-6-1t]] — 1T MoE thinking model (63B active) by InclusionAI. Optimized for coding agents, tool use. Free on OpenRouter. Released May 2026.
 - [[entities/rivet-dev]] — AI agent infrastructure company. Products: agentOS (WASM/V8 isolate runtime), Sandbox Agent SDK (universal coding agent API), Docker Sandbox MicroVM research. CTO: Nathan Flurry.
 - [[entities/righto-com]] — **Blog** | righto.com |
+- [[entities/rlancemartin]] — Lance Martin (@rlancemartin) — Developer Relations / DX engineer at Anthropic. Maintains the claude-api skill, authored self-hosted sandbox cookbooks, and evangelizes the Claude Managed Agents "brain/hands" architecture. See also [[entities/lance-martin|full profile]].
 - [[entities/ryan-carson]] — **X** | @ryancarson |
 - [[entities/ryan-dahl]] — Ryan Dahl is a software engineer best known as the creator of **Node.js** (2009) and **Deno** (2018), two foundational JavaScript/TypeScript runtimes. His work has shaped the modern server-side Jav...
 - [[entities/ryan-lopopolo]] — Ryan Lopopolo (@_lopopolo) — OpenAI Frontier team. Originator of Harness Engineering (definitive OpenAI blog). Creator of Symphony (Elixir-based multi-agent orchestration). 1B+ tokens/day "token billionaire." Zero-human-code 1M+ LOC experiment.
@@ -490,6 +492,7 @@
 - [[entities/teortaxestex]] — **X/Twitter** | @teortaxesTex |
 - [[entities/terrible-software]] — **URL:** https://terriblesoftware.org
 - [[entities/thariq-shihipar]] — **X** | @trq212 |
+- [[entities/trq212]] — Thariq Shihipar (@trq212) — MTS at Anthropic on Claude Code. Advocates HTML as the superior output format for AI agent-generated content (5 reasons: information density, visual clarity, sharing, interactivity, data ingestion). See also [[entities/thariq-shihipar|full profile]].
 - [[entities/the-harness-blog]] — Working notebook on harness engineering and agentic AI for AEC. 25 posts across 6 topics by [[entities/theodoros-galanos|Theodoros Galanos]].
 - [[entities/the-old-new-thing]] — **URL:** https://devblogs.microsoft.com/oldnewthing/
 - [[entities/the-silicon-underground]] — **URL:** https://dfarq.homeip.net
@@ -877,7 +880,6 @@
 - [[concepts/claude-code-sandboxing]] — Claude CodeのOSレベルサンドボックス。Linux bubblewrap/macOS seatbeltでファイルシステム+ネットワーク隔離。許可プロンプト84%削減。Claude Code on the Web（クラウド隔離実行）を含む。オープンソース化。
 - [[concepts/claude-code-skills]] — Claude Code Skills — 機序と役割パターン。Skillsはフォルダであり、Progressive Disclosure・動的Hooks・メモリ永続化の機序をもつ。9つの役割パターン: Library/API Reference, Product Verification, Data Fetching, Business Process, Code Scaffolding, Code Quality, CI/CD, Runbooks, Infrastructure Ops。Thariq ShihiparによるAnthropic社内実践知。
 - [[concepts/claude-diary]] — Lance Martin's Claude Code plugin for agent continual learning. Diary entries → reflection → CLAUDE.md updates. Implements CoALA/Generative Agents memory patterns.
-- [[concepts/claude-managed-agents]] — Anthropic's Managed Agents platform: memory stores (file-as-memory), multi-agent orchestration (coordinator + 20 sub-agents), outcomes loop (rubric-driven grader), Dreams (memory curation), webhooks (push notifications). May 2026: Self-hosted sandboxes (public beta) + MCP tunnels (research preview) for enterprise deployment. GA with Dreams in Research Preview.
 - [[concepts/claude-model-family]] — Build with Claude — Developer Guide — Anthropic開発者ガイドの4本柱（Quick Start / Advanced Capabilities / Architectural Patterns / Optimization）に従った実践的リファレンス。Extended Thinking / Vision / Computer Useの使いどころ、Tool Use / MCP / Agents & Skills / RAGの設計指針、Prompt Engineering / Caching / Evalsの最適化技法。モデルタイムライン・3階層リファレンス・エコシステム概要はAppendixに集約。
 - [[concepts/claude-think-tool]] — Claudeの「think」ツール。複雑なツールチェーン中に専用の思考スペースを提供。Extended Thinking（応答前の深い事前検討）とは異なり、応答生成中の外部情報処理に焦点。τ-Bench Airline domainでbaseline比+54%（pass^1: 0.332→0.584）。2025年12月時点ではExtended Thinkingの改善により推奨度低下。
 - [[concepts/closing-the-software-loop]] — Benedict Brady on automated software improvement loops. From user feedback → agent implementation → deployment, inspired by Karpathy's "operation vacation". Three phases of dev loop evolution.
@@ -1068,7 +1070,7 @@
 - [[concepts/agent-orchestration]] — Agent Orchestration — Coordinating and governing multiple AI agents at enterprise scale. IBM watsonx Orchestrate as agentic control plane. Shift from building agents to governing thousands across platforms. Policy enforcement, auditability, interoperability.
 - [[concepts/agent-orchestration-frameworks]] — Comparative analysis of major AI agent orchestration frameworks as of 2026: LangGraph, CrewAI, AutoGen, Semantic Kernel, Pydantic AI, and OpenAI Agents SDK. Frameworks differ on multi-agent topology (linear DAG vs graph-based vs hierarchical), state management, and human-in-the-loop support.
 - [[concepts/agent-statefulness]] — Two complementary framings on agent state: (1) Infrastructure evolution — Gen 1 Raw Context → Gen 2 Memory Systems → Gen 3 Filesystem as Context (yage.ai, Anthropic, Manus). (2) Architectural philosophy — Nakajima's thesis that "models are stateless between turns. Everything else exists because of that." Covers six distinct memory problems, agents mutating (capability evolution), events + graphs complementarity ("events capture what happened, graphs represent what is"), branching problem, reactive→stateful shift, strange convergence with old systems ideas (event sourcing, actors, blackboard), missing primitive, AND ActiveGraph (Nakajima Part 2): a concrete continuity layer design where the graph models the *world* the computation acts on. Five-layer architecture: Events, Behaviors, Relations, Patches, Traces. Everything becomes state. Self-improvement via trace→evaluate→patch→fork→diff→promote. "LLMs reason. Agent loops act. Active Graph explores continuity." Source: Nakajima's two-part X Article series (May 2026) + yage.ai survey.
-- [[concepts/agent-runtime]] — The execution environment where AI agents operate: dual perspective covering **infrastructure substrate** (compute, filesystem, sandboxing, isolation primitives) and **execution semantics** (lifecycle management, tool mediation, state continuity, scheduling, events, safety, observability — the control system that makes agents persistent execution entities). Covers isolation primitive stack, sandbox-as-a-service landscape, hyperscaler offerings, runtime shift, runtime debt, 5-layer agent stack, historical arc (Framework→Workflow→Runtime), **control flow ownership shift** (why runtime-centric now), structural inversion (graph primary vs loop primary), what dies/survives in agent infrastructure, and the Model↔Runtime separation. Sources: Han Lee's Hidden Technical Debt, kzinmr's 3-part analysis (2026-05-15).
+- [[concepts/agent-runtime]] — The execution environment where AI agents operate: dual perspective covering **infrastructure substrate** (compute, filesystem, sandboxing, isolation primitives) and **execution semantics** (lifecycle management, tool mediation, state continuity, scheduling, events, safety, observability — the control system that makes agents persistent execution entities). Covers isolation primitive stack (containers, Firecracker, gVisor, Kata, V8 isolates), state model (snapshot/replay/rollback), network boundary design (6 patterns), lifecycle management, sandbox-as-a-service landscape, hyperscaler offerings, web app vs agent runtime comparison, runtime shift, runtime debt, 5-layer agent stack, historical arc (Framework→Workflow→Runtime), **control flow ownership shift**, structural inversion (graph primary vs loop primary), and what dies/survives in agent infrastructure. Sources: Han Lee's Hidden Technical Debt, kzinmr's 3-part analysis (2026-05-15).
 - [[concepts/agent-sandboxing]]
 - [[concepts/agent-sandboxing-patterns]] — Browser Use's production agent sandboxing architecture (millions of concurrent web agents). Two patterns: isolate the tool (simpler) vs. isolate the agent (control plane architecture with zero-secret sandboxes, scalable independently). Core philosophy: "your agent should have nothing worth stealing and nothing worth preserving."
 - [[concepts/agent-survival-benchmark]]
@@ -1259,6 +1261,7 @@
 - [[concepts/claude-code-source-patterns]] — Claude Code Source Patterns — Leaked Source Analysis
 - [[concepts/claude-code-tips]] — Claude Code Tips
 - [[concepts/claude-design]] — Claude Design
+- [[concepts/claude-managed-agents]] — Anthropic's REST API-based platform for cloud-hosted autonomous agents at scale. Architecture: "decouple the brain from the hands" — agent loop on Anthropic side, code execution in self-hosted sandboxes (Cloudflare/Modal/Vercel/Daytona). Launched April 2026 with sandbox partnerships announced May 19, 2026.
 - [[concepts/claude-memory]] — Claude Memory — File-Based Memory Architecture
 - [[concepts/claude-memory-tool]] — Cognition's Memory Tool — Copying Claude's Approach
 - [[concepts/claude-opus-4-6]] — Claude Opus 4.6
