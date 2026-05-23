@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-23 | Total pages: 1994 | Indexed entries: 1261 | Not in index: 733 |
+> Last updated: 2026-05-23 | Total pages: 2014 | Indexed entries: 1281 | Not in index: 713 |
 
 ## Entities (651 pages)
 
@@ -234,7 +234,7 @@
 - [[entities/gemini]] — Google's multimodal AI model family. I/O 2026: Gemini 3.5 Flash, Omni (world model video gen), Spark (24/7 AI agent), Daily Brief. 900M+ monthly users. Powered by Antigravity harness.
 - [[entities/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform announced at Cloud Next 2026. Evolves Vertex AI into full-stack agent build/scale/govern/optimize platform with 200+ models, Agent Studio, ADK, Memory Bank, Agent Sandbox.
 - [[entities/gemini-3-5-flash]] — Gemini 3.5 Flash — Google's frontier agent model (May 2026). Terminal-Bench 2.1 76.2%, MCP Atlas 83.6%, 4x faster than competitors. Antigravity subagent harness, Gemini Spark personal agent.
-- [[entities/gemini-spark]] — Googleの24/7パーソナルAIエージェント（I/O 2026）。Gemini 3.5 Flash + Antigravity harness上で動作。定期タスク、カスタムスキル学習、Workspace深層統合。クラウド常駐型。
+- [[concepts/gemini-spark]] — Googleの24/7パーソナルAIエージェント（I/O 2026）。Gemini 3.5 Flash + Antigravity harness上で動作。定期タスク、カスタムスキル学習、Workspace深層統合。クラウド常駐型。
 - [[entities/gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind. 60M+ downloads. MTP drafters (May 2026) deliver 3x faster inference with no quality degradation.
 - [[entities/geoffrey-hinton]] — **Full Name** | Geoffrey Everest Hinton |
 - [[entities/geoffrey-litt]] — **X** | @geoffreylitt |
@@ -672,7 +672,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1316 pages)
+## Concepts (1336 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -1250,6 +1250,26 @@
 - [[concepts/chaos-engineering-for-microservices]] — Chaos Engineering for Microservices (specific)
 
 ## Events (6 pages)
+- [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson
+- [[concepts/claude-47-tokenizer]] — Claude 4.7 Tokenizer Change
+- [[concepts/claude-agent-sdk-sre-patterns]] — Claude Agent SDK — SRE Agent Pattern
+- [[concepts/claude-code-best-practices]] — Claude Code Best Practices
+- [[concepts/claude-code-leak]] — Claude Code Source Leak
+- [[concepts/claude-code-routines]] — Claude Code Routines
+- [[concepts/claude-code-source-patterns]] — Claude Code Source Patterns — Leaked Source Analysis
+- [[concepts/claude-code-tips]] — Claude Code Tips
+- [[concepts/claude-design]] — Claude Design
+- [[concepts/claude-memory]] — Claude Memory — File-Based Memory Architecture
+- [[concepts/claude-memory-tool]] — Cognition's Memory Tool — Copying Claude's Approach
+- [[concepts/claude-opus-4-6]] — Claude Opus 4.6
+- [[concepts/claude-perfect-memory]] — Claude Perfect Memory
+- [[concepts/claude-sonnet-4.6]] — Claude Sonnet 4.6
+- [[concepts/cli-over-mcp-pattern]] — CLI Over MCP Pattern
+- [[concepts/clinical-ai]] — Clinical AI
+- [[concepts/closing-agent-loop]] — Closing the Agent Loop — Write → Catch → Fix → Merge
+- [[concepts/cloud-data-warehouses]] — Cloud Data Warehouses
+- [[concepts/code-execution-with-mcp]] — Code Execution with MCP — Treating MCP Servers as Code APIs
+- [[concepts/code-intelligence-for-llms]] — Code Intelligence for LLMs
 
 - [[events/openai-may-2026-reorg]] — OpenAIの2026年5月製品再編。Greg Brockmanが全製品を統括、ChatGPTとCodexを統合、Thibault Sottiauxがコア製品責任者に。Fidji Simoは病欠。
 - [[events/anthropic-code-w-claude-2026]] — Anthropic Code w/ Claude 2026 — AnthropicがClaude Codeを強化する新製品発表（2026-05-06）

@@ -3,6 +3,17 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-23] health-fix | Orphan page registration + index cleanup
+
+### Changes
+- **Added 20 orphan concept pages to wiki/index.md** (batch-append at concepts section boundary)
+  - claude-concept pages: claude-47-tokenizer, claude-agent-sdk-sre-patterns, claude-code-best-practices, claude-code-leak, claude-code-routines, claude-code-source-patterns, claude-code-tips, claude-design, claude-memory, claude-memory-tool, claude-opus-4-6, claude-perfect-memory, claude-sonnet-4.6
+  - Other concept pages: chatgpt-memory-bitter-lesson, cli-over-mcp-pattern, clinical-ai, closing-agent-loop, cloud-data-warehouses, code-execution-with-mcp, code-intelligence-for-llms
+- **Fixed ghost entry**: `entities/gemini-spark` -> `concepts/gemini-spark` (namespace error)
+- **Updated header counts**: Concepts 1316->1336, Total pages 1994->2014, Indexed 1261->1281, Not-in-index 733->713
+- **Verified**: validate_index.py clean (1306 lines), 0 ghost entries
+
+
 ## [2026-05-23] watchdog | Header count fix + health verification
 
 ### Issues Fixed
