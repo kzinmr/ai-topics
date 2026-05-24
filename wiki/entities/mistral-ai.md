@@ -2,7 +2,7 @@
 title: Mistral AI
 type: entity
 created: 2026-05-04
-updated: 2026-05-11
+updated: 2026-05-24
 tags:
   - company
   - model
@@ -12,6 +12,7 @@ aliases:
   - Mistral AI SAS
 sources:
   - raw/articles/2026-05-04_thorsten-ball-joy-and-curiosity-84.md
+  - raw/articles/2026-05-24_mistral-ai_accelerate-ai-native-industry.md
 ---
 
 # Mistral AI
@@ -45,6 +46,18 @@ Mistral differentiates through three pillars:
 1. **European sovereignty**: Positioned as the AI company that governments and enterprises can trust with data sovereignty under EU regulations
 2. **Efficiency**: Smaller, more cost-efficient models vs. US competitors (OpenAI, Anthropic)
 3. **Open ecosystem**: Open-weight models for customization and on-premise deployment, alongside proprietary offerings
+
+## Acquisition of Emmi AI (May 2026)
+
+On May 22, 2026, Mistral AI announced the acquisition of **Emmi AI**, an Austrian Physics AI pioneer. This acquisition strengthens Mistral's position as an AI transformation partner for industrial enterprises, extending model capabilities to understand and model physics, and enabling AI agents to use existing engineering tools.
+
+**Key details:**
+- **Target**: Emmi AI — Physics AI company founded in Austria, specializing in real-time power grid stabilization, injection molding simulation, automotive safety testing, and digital twin optimization
+- **Team**: 30+ researchers and engineers led by co-founders including Johannes Brandstetter (CSO), joining Mistral's Science and Applied AI teams
+- **Strategic impact**: Accelerates Mistral's Science roadmap, advancing understanding of fundamental physics and leveraging unique industrial data. Positions Mistral for aerospace, automotive, and semiconductor sectors
+- **CEO quote** (Arthur Mensch): "This strategic acquisition cements Mistral AI's leadership in industrial AI and positions us as the partner of choice for manufacturers in high-stakes sectors like aerospace, automotive, or semiconductors"
+- **CSO quote** (Guillaume Lample): "By engineering the first comprehensive AI stack fueled by Physics AI, we are set to deliver real-time simulations and sophisticated digital twins"
+- **Emmi CSO quote** (Johannes Brandstetter): "At Emmi AI, we have dedicated ourselves to solving high-stakes physical challenges, ranging from the real-time stabilization of power grids to the intricate simulation of injection molding and automotive safety testing"
 
 ## Key Products
 

@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-05-22
+updated: 2026-05-24
 tags:
   - company
   - voice-ai
@@ -12,6 +12,7 @@ sources:
   - https://elevenlabs.io
   - raw/articles/2026-05-19_elevenlabs_building-elevenagents-with-claude-code.md
   - raw/articles/2026-05-22_elevenlabs_elevenreader-launches-premium-audiobooks.md
+  - raw/articles/2026-05-23_elevenlabs_22-million-earned-by-voice-creators-on-elevenlabs.md
 ---
 
 # ElevenLabs
@@ -38,6 +39,21 @@ ElevenLabs launched **200,000 premium audiobooks** in ElevenReader, expanding th
 - 400+ employees; investors include BlackRock, NVIDIA, Andreessen Horowitz, and celebrity investors
 - 1M+ users within 5 months of beta launch; headquartered in London
 - Partners include Deutsche Telekom, Klarna, Revolut, Cisco, Harvey, and the Ukrainian government
+
+### Voice Marketplace Economics (May 2026)
+
+ElevenLabs' **Voice Marketplace** enables voice creators to upload Professional Voice Clones, set licensing terms (use cases, price tiers, notice periods up to 2 years), and earn ongoing royalties from every generation. As of May 2026:
+
+- **$22M total paid to creators** — doubling from $11M in November 2025 (6 months)
+- **10,400+ creators** earning on the platform across **32 languages**
+- **Creator stories**:
+  - **Brad Barlow** — Radio host with 20 voices live on marketplace; uses ElevenLabs for nearly all station audio production
+  - **Jessica Anne Bogart** — Professional voice actor who earned more from the Voice Marketplace in her tenure than from the previous 5 years of her acting career combined
+  - **Simon Patrick** — User #202 on ElevenLabs Discord; his voice "Christopher" earns a full-time living; his daughter Abby's voice "Amelia" allowed her to quit her day job and write full-time (7th published book)
+- **Music Marketplace expansion**: Same architecture launched March 2026, exploring expansion across ElevenCreative
+- **Consent & control**: Creators retain full control — can update terms, restrict use cases, or remove voice from marketplace (with notice period buffer)
+
+This model creates a **new economic paradigm for voice IP**: replacing one-time licensing fees with ongoing usage-based royalties. The marketplace serves radio, audiobooks, game development, e-learning, marketing, and podcast production.
 
 ## Products & Technology
 - **ElevenAgents**: Conversational AI agents with voice; deployed by Klarna, Revolut, Deutsche Telekom

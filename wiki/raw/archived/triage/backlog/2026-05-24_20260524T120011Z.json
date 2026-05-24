@@ -1,0 +1,61 @@
+{
+  "checkpoint_run_id": "20260524T120011Z",
+  "summary_ja": "raw-backlog-ingest バッチ（5件）。2件は既存wikiページで既にカバー済み（Claude Mythos Preview、ClusterMAX）。残り3件は非AIコンテンツ（検索品質比較、レトロコンピュータ、Reactフロントエンド開発）のためスキップ。",
+  "decisions": [
+    {
+      "item_id": "substack.com--redirect-e1fbd24b-42ca-48d9-aa4a-fa4e4ba392dc--dea26355.md",
+      "source": "backlog",
+      "title": "Claude Mythos Preview",
+      "url": "https://substack.com/redirect/e1fbd24b-42ca-48d9-aa4a-fa4e4ba392dc?j=eyJ1Ij...tf6E",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-e1fbd24b-42ca-48d9-aa4a-fa4e4ba392dc--dea26355.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にwikiで包括的にカバー済み。entities/claude-mythos.md、concepts/claude-mythos-glasswing.md、concepts/ai-vulnerability-discovery.mdにProject Glasswingのゼロデイ発見能力、エクスプロイト開発スコア、調整開示プロセスが収録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Claude Mythos Preview Anthropic blog - cybersecurity capabilities, Project Glasswing, zero-day discovery, exploit development scaffolds. Model achieved 595 crashes at tiers 1-2, 10 full control flow hijacks on patched targets vs Sonnet/Opus 4.6 single tier-3 crash each."
+    },
+    {
+      "item_id": "substack.com--redirect-c88959e9-6efb-4d36-90b6-081c569c822f--43ca92e8.md",
+      "source": "backlog",
+      "title": "The GPU Cloud ClusterMAX Rating System | How to Rent GPUs",
+      "url": "https://substack.com/redirect/c88959e9-6efb-4d36-90b6-081c569c822f?j=eyJ1Ij...tf6E",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-c88959e9-6efb-4d36-90b6-081c569c822f--43ca92e8.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にwikiでカバー済み。concepts/gpu-cloud-rankings.mdにClusterMAX 2.0レーティングシステム、entities/semianalysis.mdにSemiAnalysis組織ページが収録済み。本記事は初期版ClusterMAXを含むが、May 20のraw-backlog-ingestで既に処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "SemiAnalysis GPU Cloud ClusterMAX Rating System - 5-tier evaluation (Platinum/Gold/Silver/Bronze/UnderPerform), CoreWeave only Platinum, tenant isolation via VLANs/DPUs, InfiniBand security keys, NCCL/RCCL networking, Slurm vs Kubernetes managed offerings, H100/GB200 pricing dynamics."
+    },
+    {
+      "item_id": "danluu.com--seo-spam--1e6eb0e1.md",
+      "source": "backlog",
+      "title": "How bad are search results? Let's compare Google, Bing, Marginalia, Kagi, Mwmbl, and ChatGPT",
+      "url": "https://danluu.com/seo-spam/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--seo-spam--1e6eb0e1.md",
+      "recommended_action": "skip",
+      "reason_ja": "検索エンジンスパム品質比較記事。ChatGPTは6エンジン中の1つとして言及のみ。本文はSEO劣化、コンテンツファーム、検索結果の質の定性的評価が中心で、AI/LLM技術そのものについての洞察は皆無。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Search engine quality comparison: Google, Bing, Marginalia, Kagi, Mwmbl, ChatGPT across queries like download youtube videos, ad blocker, firefox download. Focus on SEO spam, content farms, scam results. ChatGPT rated V.Bad-Good across 7 queries - mentioned only as one engine in comparison, no AI technical content."
+    },
+    {
+      "item_id": "oldvcr.blogspot.com--2025-12-the-texas-instruments-cc-40-invades-html--ac09a89c.md",
+      "source": "backlog",
+      "title": "The Texas Instruments CC-40 invades Gopherspace (plus TI-74 BASICALC)",
+      "url": "https://oldvcr.blogspot.com/2025/12/the-texas-instruments-cc-40-invades.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/oldvcr.blogspot.com--2025-12-the-texas-instruments-cc-40-invades-html--ac09a89c.md",
+      "recommended_action": "skip",
+      "reason_ja": "1980年代TIポケットコンピュータの歴史記事。Hexbusインターフェース、Gopherspace、アセンブリ言語シェル - レトロコンピューティング愛好家向けコンテンツ。AI/LLMとの関連性なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Vintage computing history: Texas Instruments CC-40 (1983) and TI-74 BASICALC (1985), Hexbus serial interface, Gopherspace terminal programming in assembly language, TMS7000 8-bit processor, Commodore price wars, Winter/Summer CES 1983. Retro computing nostalgia - zero AI/LLM relevance."
+    },
+    {
+      "item_id": "overreacted.io--react-for-two-computers--fe10d36e.md",
+      "source": "backlog",
+      "title": "React for Two Computers",
+      "url": "https://overreacted.io/react-for-two-computers/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/overreacted.io--react-for-two-computers--fe10d36e.md",
+      "recommended_action": "skip",
+      "reason_ja": "Dan AbramovのReact Server Componentsに関するフロントエンド開発記事。タグと関数呼び出しの比較、レンダリングアーキテクチャ - ウェブ開発フレームワークの話題。AI/LLM技術との関連性なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Dan Abramov (overreacted.io) essay on React Server Components. Explores philosophical difference between JSX tags and function calls, rendering architecture for two computers (server and client), React Conf talk companion notes. Frontend web development - zero AI/LLM content."
+    }
+  ]
+}

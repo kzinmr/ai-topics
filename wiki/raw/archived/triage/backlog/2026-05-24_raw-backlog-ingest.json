@@ -1,0 +1,56 @@
+{
+  "checkpoint_run_id": "20260524T160021Z",
+  "summary_ja": "Raw backlog ingest: 5件処理済み。2件は既存wikiページに既に取り込み済み、3件は非AIコンテンツのためスキップ。",
+  "decisions": [
+    {
+      "item_id": "dwarkesh.com--p-reiner-pope--11ee10e4.md",
+      "source": "backlog",
+      "title": "dwarkesh.com",
+      "url": "dwarkesh.com--p-reiner-pope--11ee10e4.md",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dwarkesh.com--p-reiner-pope--11ee10e4.md",
+      "recommended_action": "skip",
+      "reason_ja": "already captured in entities/reiner-pope.md and entities/matx.md",
+      "body_excerpt": "Already captured or non-AI content"
+    },
+    {
+      "item_id": "oldvcr.blogspot.com--2025-08-make-your-apple-ii-or-commodore-64-html--e2e83f7c.md",
+      "source": "backlog",
+      "title": "oldvcr.blogspot.com",
+      "url": "oldvcr.blogspot.com--2025-08-make-your-apple-ii-or-commodore-64-html--e2e83f7c.md",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/oldvcr.blogspot.com--2025-08-make-your-apple-ii-or-commodore-64-html--e2e83f7c.md",
+      "recommended_action": "skip",
+      "reason_ja": "non-AI: retro computing 8-bit highway navigation",
+      "body_excerpt": "Already captured or non-AI content"
+    },
+    {
+      "item_id": "oldvcr.blogspot.com--2026-02-the-scriptovision-super-micro-script-html--01f725c5.md",
+      "source": "backlog",
+      "title": "oldvcr.blogspot.com",
+      "url": "oldvcr.blogspot.com--2026-02-the-scriptovision-super-micro-script-html--01f725c5.md",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/oldvcr.blogspot.com--2026-02-the-scriptovision-super-micro-script-html--01f725c5.md",
+      "recommended_action": "skip",
+      "reason_ja": "non-AI: video titler hardware teardown",
+      "body_excerpt": "Already captured or non-AI content"
+    },
+    {
+      "item_id": "michael.stapelberg.ch--posts-2025-06-01-nixos-installation-declarative--d8dbbf51.md",
+      "source": "backlog",
+      "title": "michael.stapelberg.ch",
+      "url": "michael.stapelberg.ch--posts-2025-06-01-nixos-installation-declarative--d8dbbf51.md",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/michael.stapelberg.ch--posts-2025-06-01-nixos-installation-declarative--d8dbbf51.md",
+      "recommended_action": "skip",
+      "reason_ja": "non-AI: declarative Linux OS installation",
+      "body_excerpt": "Already captured or non-AI content"
+    },
+    {
+      "item_id": "substack.com--redirect-6b46ec4c-ff7c-43b5-9e62-b0d4bf1dca99--bb1f035d.md",
+      "source": "backlog",
+      "title": "substack.com",
+      "url": "substack.com--redirect-6b46ec4c-ff7c-43b5-9e62-b0d4bf1dca99--bb1f035d.md",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-6b46ec4c-ff7c-43b5-9e62-b0d4bf1dca99--bb1f035d.md",
+      "recommended_action": "skip",
+      "reason_ja": "already captured in entities/aaron-levie.md and entities/box-com.md",
+      "body_excerpt": "Already captured or non-AI content"
+    }
+  ]
+}

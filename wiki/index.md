@@ -555,7 +555,7 @@
 - [[entities/zodchiii]] — zodchiii (@zodchiii) — Pseudonymous X/Twitter content creator covering AI coding, finance, and vibe coding. Published viral breakdown of Shopify's Claude Code infrastructure setup. Runs Telegram channel @zodchixquant.
 
 - [[entities/palantir]] — AI-powered decision infrastructure company. The Palantir Ontology contextualizes computation within "lived reality" for enterprise agent workflows. Q1 2026: $1.63B revenue (+84% gov), Maven elevated to permanent Pentagon program. **May 2026: The Palantir Model goes global** — OpenAI ($4B Deployment Company) and Anthropic ($1.5B JV) both replicate Palantir's embed-engineers-in-customer-operations playbook. See [[concepts/ai-services-joint-ventures]].
-- [[entities/mistral-ai]] — French AI company. Released Mistral Workflows (enterprise orchestration layer) and Voxtral TTS in April 2026.
+- [[entities/mistral-ai]] — French AI company. Mistral Workflows + Voxtral TTS (Apr 2026). Acquired Emmi AI (Physics AI) for industrial engineering agents (May 2026).
 - [[entities/talkie]] — Open-weight 13B historical LLM trained exclusively on pre-1930 data. By David Duvenaud, Alec Radford, and @status_effects.
 - [[entities/david-duvenaud]] — AI researcher. Co-announced Talkie, a 13B LLM trained exclusively on pre-1930 data.
 - [[entities/periodic-ai]] — AI research company with physical lab focused on RL scaling for frontier LLMs (1T+ parameters).
@@ -645,7 +645,7 @@
 - [[entities/cognition]] — Cognition — Maker of Devin, the first autonomous AI coding agent. Also makes Windsurf IDE.
 - [[entities/cohere]] — Cohere — Enterprise AI platform. Command A+ released Apache 2.0 (218B MoE/25B active, multimodal, 48 languages, W4A4 on 2xH100). Strategic MOUs with Indra Group (sovereign AI Spain/Canada) and Multiverse Computing (quantum-inspired optimization).
 - [[entities/decagon]] — Decagon — AI customer support agents. $4.5B valuation. 10M+ customers served.
-- [[entities/elevenlabs]] — ElevenLabs — AI voice and speech synthesis. $11B valuation. $500M+ ARR. Claude Code integration for ElevenAgents (May 2026).
+- [[entities/elevenlabs]] — ElevenLabs — AI voice and speech synthesis. $11B valuation. $500M+ ARR. Claude Code integration for ElevenAgents. $22M Voice Marketplace (doubled in 6mo, 10,400+ creators).
 - [[entities/eventual]] — Eventual — Data and AI platform.
 - [[entities/faire]] — Faire — Wholesale marketplace connecting independent brands with retailers.
 - [[entities/glean]] — Glean — Enterprise AI search and work assistant. Founded by ex-Google search engineers. $600M+ raised.

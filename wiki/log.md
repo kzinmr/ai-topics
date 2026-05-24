@@ -3,6 +3,18 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-24] dreaming-wiki-ingest | Nightly knowledge consolidation
+
+### Pages Updated
+- `entities/mistral-ai.md` — Added Emmi AI acquisition section (Physics AI, 30+ researchers, industrial engineering agents)
+- `entities/elevenlabs.md` — Added Voice Marketplace Economics section ($22M total, 10,400+ creators, 32 languages)
+
+### Raw Articles
+- `raw/articles/2026-05-24_mistral-ai_accelerate-ai-native-industry.md`
+- `raw/articles/2026-05-23_elevenlabs_22-million-earned-by-voice-creators-on-elevenlabs.md`
+
+---
+
 ## [2026-05-24] auto-fix | Header count drift corrected
 
 ### Changes
