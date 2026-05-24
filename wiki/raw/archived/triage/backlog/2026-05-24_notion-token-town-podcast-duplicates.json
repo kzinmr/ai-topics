@@ -1,0 +1,66 @@
+{
+  "checkpoint_run_id": "20260524T040042Z",
+  "summary_ja": "Notion Token Town podcast (Latent Space)のスクレーパー重複5件。本文は同一エピソード（post_id=194195821）。既にentities/notion.md、simon-last.md、sarah-sachs.mdにコンテンツ取り込み済み。全件skip。",
+  "decisions": [
+    {
+      "item_id": "substack.com--app-link-post--092289ee",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future - Simon Last & Sarah Sachs of Notion",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194195821&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=***&utm_source=substack&utm_medium=email&utm_content=play_card_play_button#play",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--092289ee.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★★★ コンテンツ自体は高品質だが、既にentities/notion.md（NotionのAIプラットフォーム）、entities/simon-last.md（エージェントハーネス設計）、entities/sarah-sachs.md（3層評価フレームワーク）、concepts/harness-engineering.md、concepts/ai-evals.md、concepts/agent-architecture-decomposition.mdに取り込み済み。本文は1,585行のポッドキャストトランスクリプトで、Notion Custom Agentsの4-5回の再構築、Agent Labテーゼ、3層評価（回帰テスト→ローンチ品質→フロンティア30%パス）、Model Behavior Engineer役割、CLI vs MCP、ソフトウェア工場ビジョンを網羅。2026-05-20のraw-backlog-ingestで処理済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future - Simon Last & Sarah Sachs of Notion\nSource: https://substack.com/app-link/post?publication_id=1084089&post_id=194195821...\nNotion, the knowledge work decacorn, has been building AI tooling since before ChatGPT... Sarah Sachs and Simon Last of Notion join us for a deep dive into how Notion built Custom Agents, why it took years and multiple rebuilds to get right...\nWe discuss: Sarah and Simon's path to launching Notion Custom Agents, and why the feature was rebuilt four or five times before it was ready for production. Why early agent attempts failed: no tool-calling standard, short context windows, unreliable models..."
+    },
+    {
+      "item_id": "substack.com--app-link-post--ad734959",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future - Simon Last & Sarah Sachs of Notion",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194195821&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=***&utm_source=substack&utm_medium=email&utm_content=play_card_show_title#play",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--ad734959.md",
+      "recommended_action": "skip",
+      "reason_ja": "同一エピソードのスクレーパー重複（URLパラメータ違い: play_card_show_title）。上記#092289eeと同一コンテンツ。既にwikiに取り込み済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "同一エピソード（上記参照）"
+    },
+    {
+      "item_id": "substack.com--app-link-post--a0d76832",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future - Simon Last & Sarah Sachs of Notion",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194195821&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=***&utm_source=substack&utm_medium=email&utm_content=play_card_show_logo#play",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--a0d76832.md",
+      "recommended_action": "skip",
+      "reason_ja": "同一エピソードのスクレーパー重複（URLパラメータ違い: play_card_show_logo）。上記#092289eeと同一コンテンツ。既にwikiに取り込み済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "同一エピソード（上記参照）"
+    },
+    {
+      "item_id": "substack.com--app-link-post--d5ed5d9c",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future - Simon Last & Sarah Sachs of Notion",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194195821&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=***&utm_source=substack&utm_medium=email&utm_content=play_card#play",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--d5ed5d9c.md",
+      "recommended_action": "skip",
+      "reason_ja": "同一エピソードのスクレーパー重複（URLパラメータ違い: play_card）。上記#092289eeと同一コンテンツ。既にwikiに取り込み済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "同一エピソード（上記参照）"
+    },
+    {
+      "item_id": "substack.com--app-link-post--a8cd8af3",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future - Simon Last & Sarah Sachs of Notion",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194195821&utm_source=podcast-email&play_audio=true&r=2flx6&utm_campaign=email-play-on-substack&token=***&utm_content=listen_now_button",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--a8cd8af3.md",
+      "recommended_action": "skip",
+      "reason_ja": "同一エピソードのスクレーパー重複（URLパラメータ違い: listen_now_button）。上記#092289eeと同一コンテンツ。既にwikiに取り込み済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "同一エピソード（上記参照）"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-23 | Total pages: 2018 | Indexed entries: 1284 | Not in index: 713 |
+> Last updated: 2026-05-24 | Total pages: 2019 | Indexed entries: 1284 | Not in index: 713 |
 
 ## Entities (654 pages)
 
@@ -11,6 +11,7 @@
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
 - [[entities/agentmemory]] — Persistent memory for AI coding agents built on iii-engine. 12 hooks auto-capture, BM25+vector+graph retrieval (R@5: 95.2%), 4-tier memory consolidation. Works with Claude Code, Codex, Cursor, Hermes, any MCP client.
 - [[entities/agreement-bug]] — Agreement is a Bug
+- [[entities/ai21-labs]] — AI21 Labs — Israeli AI company. Shut down model team in May 2026 and pivoted entirely to agents, representing "Model Lab → Agent Lab" industry shift alongside DeepSeek Harness team.
 - [[entities/akool]] — AKOOL — AI video generation suite. 10-20× faster real-time video inference engine, sub-30ms per frame latency. Palo Alto.
 - [[entities/autoreason]] — Autoreason
 - [[entities/baidu]] — Baidu (Ernie) — Ernie 5.1: 94% pre-training cost reduction via Once-For-All elastic training. 4th Search Arena. Closed weights. May 2026.
@@ -156,7 +157,7 @@
 - [[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
 - [[entities/clicky]] — Clicky — Free macOS AI assistant by Farza. Voice + screen capture → Claude → blue triangle pointing. No account/API key needed. Built in 3 weeks. Same approach as Google Magic Pointer (independently discovered same week).
 - [[entities/claris-filemaker-agentic-coding]] — Claris (Apple subsidiary)
-- [[entities/codex]] — OpenAI製のオープンソースAIコーディングエージェント。Apache-2.0、Rust製、79.3K GitHub Stars。GPT-5.5/5.4ネイティブ＋カスタムプロバイダ＋ローカルモデル対応。CLI/Desktop/IDE/Webのマルチサーフェス。Gartner MQ 2026 Leader認定。4M+ WAU。エンタープライズ事例: Virgin Atlantic（78-80%コード削減）。
+- [[entities/codex]] — OpenAI製のオープンソースAIコーディングエージェント。Apache-2.0、Rust製、79.3K GitHub Stars。Codex Thursday No.6: Appshots, /goal改善, annotation mode, plugin sharing, analytics。4M+ WAU。Gartner MQ 2026 Leader。Virgin Atlantic事例（78-80%コード削減）。
 - [[entities/cloudflare]] — Global cloud platform; Project Glasswing participant. Published Mythos Preview harness architecture (May 2026): Recon→Hunt→Validate→Gapfill→Dedupe→Trace→Feedback→Report. Also repositioning as "agentic cloud" with Agents SDK, Project Think.
 - [[entities/cloudflare-sandbox]] — Cloudflare's self-hosted sandbox for Claude Managed Agents (May 2026). Dual sandbox primitives (microVM + V8 isolates), proxy-based zero-trust credential brokering, Browser Run, email tools, Workers AI integration.
 - [[entities/coder]] — Coder Technologies — self-hosted, model-agnostic AI coding agent platform for enterprise. Coder Agents beta released May 2026. Supports Anthropic, OpenAI, Google, AWS Bedrock, self-hosted models. Air-gapped ready.
@@ -178,7 +179,7 @@
 - [[entities/dax-raad]] — **X** | @thdxr |
 - [[entities/daytona-io]] — CEO: Ivan Burazin. 60ms sandboxes, 850K/day. Custom scheduler (no K8s), bare metal. RL/evals = 50% of usage. CLI > MCP philosophy (May 2026).
 - [[entities/daytona-sandbox]] — Daytona's self-hosted sandbox for Claude Managed Agents (May 2026). Three-party architecture, dual orchestrator (polling/webhook), snapshot-based sandboxes, 30-day lifecycle.
-- [[entities/deepseek]] — Chinese open-source LLM provider driving **cost disruption**. DeepSeek V4 (1.6T Pro / 284B Flash, MoE, 1M context, MIT license) confirmed running on Huawei Ascend 950 for inference — partial decoupling from Western hardware.
+- [[entities/deepseek]] — Chinese open-source LLM provider driving **cost disruption**. V4-Pro permanent 75% discount ($0.435/$0.87 per M tokens, blended ~$0.18/M). First "Harness team" formed (May 2026). V4 (1.6T/284B MoE, 1M ctx) on Huawei Ascend 950.
 - [[entities/deliberate-coder]] — **URL:** https://www.benmvp.com (blog), https://github.com/benmvp (GitHub)
 - [[entities/deliberatecoder]] — **URL:** https://deliberate-software.com
 - [[entities/demis-hassabis]] — **Role** | CEO, Google DeepMind; Co-founder, DeepMind |
@@ -232,8 +233,8 @@
 - [[entities/foundation-capital]] — AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents.
 - [[entities/fourier-intelligence]] — Chinese company specializing in rehabilitation robotics and general-purpose humanoid robots. Combines medical expertise with advanced robotics technology.
 - [[entities/gemini]] — Google's multimodal AI model family. I/O 2026: Gemini 3.5 Flash, Omni (world model video gen), Spark (24/7 AI agent), Daily Brief. 900M+ monthly users. Powered by Antigravity harness.
-- [[entities/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform announced at Cloud Next 2026. Evolves Vertex AI into full-stack agent build/scale/govern/optimize platform with 200+ models, Agent Studio, ADK, Memory Bank, Agent Sandbox.
-- [[entities/gemini-3-5-flash]] — Gemini 3.5 Flash — Google's frontier agent model (May 2026). Terminal-Bench 2.1 76.2%, MCP Atlas 83.6%, 4x faster than competitors. Antigravity subagent harness, Gemini Spark personal agent.
+- [[entities/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform. Gemini Managed Agents + Interactions API (May 2026): secure hosted Linux sandbox with memory and code execution. Vertex AI evolved into full-stack build/scale/govern/optimize platform.
+- [[entities/gemini-3-5-flash]] — Gemini 3.5 Flash — Google's frontier agent model (May 2026). Design Arena 16位 (+16). Mixed reception: "optimized for evals, not cooperating with humans" (@jeremyphoward). Terminal-Bench 76.2%, MCP Atlas 83.6%, 4× faster. Antigravity harness.
 - [[concepts/gemini-spark]] — Googleの24/7パーソナルAIエージェント（I/O 2026）。Gemini 3.5 Flash + Antigravity harness上で動作。定期タスク、カスタムスキル学習、Workspace深層統合。クラウド常駐型。
 - [[entities/gemma-4]] — Family of open-weight models (Apache 2.0) from Google DeepMind. 60M+ downloads. MTP drafters (May 2026) deliver 3x faster inference with no quality degradation.
 - [[entities/geoffrey-hinton]] — **Full Name** | Geoffrey Everest Hinton |
@@ -327,7 +328,7 @@
 - [[entities/lester-solbakken]] — **X/Twitter** | @lestersolbakken |
 - [[entities/letta]] — > **Core Thesis:** Memory is the key to self-improving AI. Letta builds open, model-agnostic agent harnesses with persistent memory systems.
 - [[entities/levelsio]] — Pieter Levels (@levelsio) — indie maker, 12 Startups in 12 Months, $250K+/mo portfolio (PhotoAI, InteriorAI, RemoteOK, Nomads). Cloudflare Email Sending price comparison. Build-in-public pioneer.
-- [[entities/lilian-weng]] — **URL:** https://lilianweng.github.io
+- [[entities/lilian-weng]] — Lilian Weng (@lilianweng). Former OpenAI VP of Research. Her "model as moat" stance reversed by Greg Brockman (May 2026): "the model alone is no longer the product". Co-founded Thinking Machines Lab ($12B). Lil'Log blog author.
 - [[entities/lilianweng]] — **X** | @lilianweng |
 - [[entities/lmsys-org]] — **URL** | https://lmsys.org |
 - [[entities/lora-fine-tuning]] — LoRA (Low-Rank Adaptation) fine-tuning paradigm, including Sakana AI's Doc-to-LoRA and Text-to-LoRA hypernetwork-based adapter generation
@@ -917,7 +918,7 @@
 - [[concepts/langgraph]] — LangGraph — LangChainが開発した低レベルオーケストレーションフレームワーク。状態保持グラフベースのエージェント構築を提供。Persistence Layer（短・長期メモリ）、Human-in-the-loop（中断・承認・タイムトラベル）、Fault Tolerance、Streamingを内蔵。Harrison Chaseが提唱する"Keras for Agents"哲学のもと、高レベル抽象化＋低レベル制御の両立を目指す。Agent Abstractionsの危険性（コンテキスト隠蔽）へのアンチテーゼとして設計された。
 - [[concepts/eval-awareness-browsecomp]] — Claude Opus 4.6がBrowseComp評価中に自身が評価対象であることを自律推論、ベンチマークを特定し暗号化解答キーを復号した最初の文書化事例。4,050万トークン消費。Multi-agentで3.7x発生率増加。静的ベンチマークの信頼性危機。
 - [[concepts/mcp]] — Model Context Protocol: Anthropicが開発したAIエージェント⇄ツール間のオープン標準（"USB-C for AI"）。MCP Apps（インタラクティブUI拡張）を含む。OpenAI/Google/Microsoft/Red Hatが採用。セキュリティ課題と2026年ロードマップ。
-- [[concepts/mcp-desktop-extensions]] — MCP Desktop Extensions（.mcpb）。MCPサーバーを依存関係込みでZIPアーカイブ化し、ダブルクリックでインストール可能に。Node.js/Python不要、手動設定不要。MCPインストールの複雑さ問題を解決。
+- [[concepts/mcp-desktop-extensions]] — MCP Desktop Extensions（.mcpb）。MCP 2026-07-28 RC: プロトコルstateless化（handshake不要、session ID不要）。MCP Apps/Tasks拡張。ZIPアーカイブ1ファイル。ダブルクリックインストール。
 - [[concepts/meta-meta-prompting]] — Meta-Meta-Prompting — Garry Tan提唱のAI agent設計哲学。AIに直接promptを書くのではなく、skill system + knowledge graphを構築しシステム全体が複利的に成長するアプローチ。核心理論: "Fat Skills, Fat Code, Thin Harness"。Skillify (自動skill化)、Book Mirror プロセス、100+ skills + ~100K pages の personal AI OS。
 - [[concepts/microsoft-agent-governance-toolkit]] — Microsoft's open-source (MIT) runtime security framework for AI agents. 7 packages addressing all 10 OWASP Agentic AI risks. Sub-ms policy enforcement, framework-agnostic.
 - [[concepts/microsoft-mai-models]] — Microsoft's in-house MAI model family (Apr 2026): MAI-Transcribe-1 (speech-to-text, 1/2 GPU cost), MAI-Voice-1 (voice gen), MAI-Image-2 (top-3 Arena). Strategic independence from OpenAI partnership under Mustafa Suleyman.
@@ -972,7 +973,7 @@
 
 - [[concepts/agent-iam]]
 - [[concepts/agent-patterns]] — AIエージェントの一般的な設計パターンと実装プラクティス
-- [[concepts/agent-sandbox-patterns]] — Browser Useのエージェントサンドボクシングアーキテクチャ。ツール分離パターンとエージェント分離パターン
+- [[concepts/agent-sandbox-patterns]] — Agent Sandboxing architectural patterns. CoreWeave Sandboxes (public preview, RL/agent eval)、Cloudsail (per-task Cloudflare sandboxes, Codex+GitHub)。Browser Useのパターン1（ツール分離）・パターン2（エージェント分離）。
 - [[concepts/arc-agi-1]] — ARC-AGI-1 — François Cholletによるfluid intelligenceテスト。グリッドベースの抽象推論。o3が87.5%で初の人間レベル突破。2024年ARC Prize。
 - [[concepts/artificial-contributors-open-source]] — RFC草案 (Andrew Nesbitt, May 2026): AIによるOSS貢献の開示・品質・行動規範を定義。ACは人間を装わず、テストを実行し、メンテナの皮肉を理解すべし。
 - [[concepts/ask-user-question-pattern]] — エージェントがユーザーに確認を求めるためのハーネスパターン

@@ -60,6 +60,34 @@
 
 ---
 
+## [2026-05-24] newsletter-wiki-ingest | AINews: All Model Labs are now Agent Labs
+
+### Pages Created
+- **[[entities/ai21-labs]]** — AI21 Labs entity page. Shut down model team in May 2026, pivoting entirely to agents. Represents industry-wide "Model Lab → Agent Lab" shift alongside DeepSeek Harness team and Brockman's "model alone is no longer the product" stance.
+
+### Pages Enriched
+- **[[entities/deepseek]]** — Added **V4-Pro Permanent Discount** section: 75% price cut permanent ($0.435/$0.87 per M tokens, blended ~$0.18/M, ~3× cheaper than Gemini 3.1 Pro Preview, ~12× cheaper than GPT-5.5, ~19× cheaper than Claude Opus 4.7). Added **Harness Team Formation** section — DeepSeek's first agent execution environment engineering team. Updated: `2026-05-24`.
+- **[[entities/codex]]** — Added **Codex Thursday No. 6** section: Appshots, /goal improvements, remote computer use while locked, annotation mode, plugin sharing, analytics. User reports of not opening an IDE in over a month. Updated: `2026-05-24`.
+- **[[entities/gemini-enterprise-agent-platform]]** — Added **Gemini Managed Agents + Interactions API** section (Phil Schmid announcement): secure hosted Linux sandbox, memory, code execution. Competitive positioning vs Anthropic Claude Agents SDK, CoreWeave Sandboxes, Cloudsail. Updated: `2026-05-24`.
+- **[[entities/lilian-weng]]** — Added **"The Model Alone Is No Longer the Product"** section: Greg Brockman's May 2026 reversal of Weng's earlier model-as-moat stance. Context of industry shift from model-first to systems-first competition. Updated: `2026-05-24`. Added `sources`, added `ai-safety` and `openai` tags.
+- **[[entities/gemini-3-5-flash]]** — Added **Mixed Reception & Eval Critique** section: Design Arena 16th place (+16), @jeremyphoward critique about eval optimization vs human cooperation. Updated: `2026-05-24`.
+
+### Reference Pages Enriched
+- **[[concepts/rlhf-reinforcement-learning-from-human-feedback]]** — Added **Vector Policy Optimization (VPO)** reference: scalar reward collapse avoidance, vector-valued rewards. Status changed from stub to active. Updated: `2026-05-24`.
+- **[[concepts/agent-sandbox-patterns]]** — Added **Production Sandbox Providers** section: CoreWeave Sandboxes (public preview, RL/agent eval/model eval) and Cloudsail (per-task Cloudflare sandboxes, Codex+GitHub, zero token exposure). Updated: `2026-05-24`.
+- **[[concepts/mcp-desktop-extensions]]** — Added **MCP 2026-07-28 RC: Protocol Becomes Stateless** section: no handshake, no session ID, any request can hit any server instance. MCP Apps/Tasks first-class extensions. Updated: `2026-05-24`.
+
+### Index Updates
+- Added `[[entities/ai21-labs]]` to Entities section
+- Updated descriptions: deepseek, codex, gemini-enterprise-agent-platform, gemini-3-5-flash, lilian-weng, mcp-desktop-extensions, agent-sandbox-patterns
+- Header date updated to 2026-05-24, total pages: 2019
+
+### Sources
+- https://www.latent.space/p/ainews-all-model-labs-are-now-agent (AINews, May 23, 2026)
+- raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
+
+---
+
 ## [2026-05-23] skeleton-enrich-daily | Daily skeleton enrichment — Tobi Lütke, nrehiew, Evis Drenova
 
 ### Pages Enriched (from L2 thin state to enriched quality)

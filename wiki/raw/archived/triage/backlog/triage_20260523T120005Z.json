@@ -1,0 +1,57 @@
+[
+  {
+    "item_id": "backlog-20260523-01",
+    "source": "backlog",
+    "title": "Futurist prediction methods and accuracy",
+    "url": "https://danluu.com/futurist-predictions/",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--futurist-predictions--7775e8b3.md",
+    "recommended_action": "skip",
+    "reason": "非AIコンテンツ。未来学者（Kurzweil、Toffler、Naisbitt等）の予測手法の精度分析。AI/LLM/エージェントに関する技術的知見なし。",
+    "candidate_wiki_path": null,
+    "body_excerpt": "I've been reading a lot of predictions from people who are looking to understand what problems humanity will face 10-50 years out (and sometimes longer) in order to work in areas that will be instrumental for the future and wondering how accurate these predictions of the future are..."
+  },
+  {
+    "item_id": "backlog-20260523-02",
+    "source": "backlog",
+    "title": "What the FTC got wrong in the Google antitrust investigation",
+    "url": "https://danluu.com/ftc-google-antitrust/",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--ftc-google-antitrust--b7ebd331.md",
+    "recommended_action": "skip",
+    "reason": "非AIコンテンツ。2011-2012年のFTCによるGoogle独占禁止法調査の内部文書分析。AI/LLM関連の技術的知見なし。",
+    "candidate_wiki_path": null,
+    "body_excerpt": "From 2011-2012, the FTC investigated the possibility of pursuing antitrust action against Google. The FTC decided to close the investigation and not much was publicly known about what happened until Politico released 312 pages of internal FTC memos..."
+  },
+  {
+    "item_id": "backlog-20260523-03",
+    "source": "backlog",
+    "title": "OpenAI's gpt-oss 20B and 120B, Claude Opus 4.1, DeepMind Genie 3",
+    "url": "https://substack.com/redirect/ac2fa23e-f7ad-4d8d-a446-de1668967f28?j=eyJ1Ij...tf6E",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-ac2fa23e-f7ad-4d8d-a446-de1668967f28--9ceafa4a.md",
+    "recommended_action": "skip",
+    "reason": "already_archived。log.mdに記載済み: 'skip (already captured: gpt-oss entity exists, Genie 3 in jim-fan.md)'",
+    "candidate_wiki_path": null,
+    "body_excerpt": "They put the Open back in OpenAI! AI News for 8/4/2025-8/5/2025..."
+  },
+  {
+    "item_id": "backlog-20260523-04",
+    "source": "backlog",
+    "title": "Ben E. C. Boyter",
+    "url": "https://boyter.org/china-trip/",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/boyter.org--china-trip--1a5990fc.md",
+    "recommended_action": "skip",
+    "reason": "非AIコンテンツ。2004年の中国旅行記（個人日記）。AI/技術関連性なし。",
+    "candidate_wiki_path": null,
+    "body_excerpt": "Everything below is from when I was in University and went on exchange to Heilongjiang University in Harbin China..."
+  },
+  {
+    "item_id": "backlog-20260523-05",
+    "source": "backlog",
+    "title": "Beyond 'Beyond the wall'",
+    "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-followup/",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-aperiodic-followup--bc73ba2a.md",
+    "recommended_action": "skip",
+    "reason": "非AIコンテンツ。有限状態トランスデューサーと非周期タイリングに関する数学/アルゴリズム記事。AI/LLMエージェント文脈なし。",
+    "candidate_wiki_path": null,
+    "body_excerpt": "Some more thoughts on finite-state transducers for aperiodic tilings [Simon Tatham, 2024-07-16]..."
+  }
+]

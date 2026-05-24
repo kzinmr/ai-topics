@@ -2,7 +2,7 @@
 title: "Desktop Extensions (MCP Bundle)"
 type: concept
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-24
 tags:
   - mcp
   - developer-tooling
@@ -70,3 +70,22 @@ Desktop Extensionsはこれらすべてを抽象化する。
 - [[concepts/mcp]] — Model Context Protocol overview
 - [[model-context-protocol-mcp]] — Detailed MCP specification
 - [[entities/claude-code]] — Claude Code agent harness
+
+## MCP 2026-07-28 RC: Protocol Becomes Stateless
+
+The MCP specification's release candidate for 2026-07-28 introduces a fundamental architectural change: **the protocol is now stateless**.
+
+### Key Changes
+- **No handshake** — Connections no longer require an initial negotiation phase
+- **No session ID** — Any request can hit any server instance, simplifying load balancing
+- **First-class extensions** — New `MCP Apps` and `MCP Tasks` extension points
+- **Auth hardening** — Improved authentication flow for production deployments
+- **Clearer deprecation policy** — Structured sunset process for older protocol elements
+
+### Implications
+- **Easier scaling** — Stateless design removes sticky-session concerns, enabling simpler horizontal scaling
+- **Simpler load balancing** — Any server can handle any request, reducing infrastructure complexity
+- **Better resilience** — No session state to recover on server restart
+
+> Source: [AINews May 23, 2026](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)
+

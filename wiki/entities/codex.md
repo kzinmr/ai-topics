@@ -28,6 +28,7 @@ sources:
   - raw/articles/openai.com--index-gartner-2026-agentic-coding-leader--3f8a2c71.md
   - raw/articles/openai.com--index-virgin-atlantic--7b2d9e41.md
   - raw/concepts/openai-codex-superapp.md
+  - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
 related:
   - "[[concepts/openai-codex-superapp]]"
   - "[[entities/claude-code]]"
@@ -168,6 +169,27 @@ OpenAI published a detailed technical post on building the Codex Windows sandbox
 - Asynchronous ACL setup for read access to user profile directories (Windows doesn't grant cross-user read by default)
 
 > Source: [Building a safe, effective sandbox to enable Codex on Windows](https://openai.com/index/building-codex-windows-sandbox) (May 2026)
+
+
+## Codex Thursday No. 6 (May 2026)
+
+OpenAI shipped **Codex Thursday No. 6** with several notable feature additions and improvements:
+
+### New Features
+- **Appshots** — New screenshot/image workflow capability for visual debugging and design review
+- **`/goal` improvements** — Enhanced autonomous looping with better completion detection and error recovery
+- **Remote computer use while locked** — Codex can operate remote machines even when the local session is locked, enabling true background agent operation
+- **Annotation mode** — Interactive code annotation for code review and documentation generation
+- **Plugin sharing** — Share plugins between team members and across workspaces
+- **Analytics** — Usage tracking and performance metrics for Codex workflows
+
+### Industry Response
+- Gdb (OpenAI) remarked: *"hard to remember coding before Codex"*
+- Users report **not opening an IDE in over a month**
+- Rough edges remain: remote workflow reliability still lags behind T3 Code's implementation
+
+> Source: [AINews May 23, 2026](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)
+
 
 ## Pricing
 

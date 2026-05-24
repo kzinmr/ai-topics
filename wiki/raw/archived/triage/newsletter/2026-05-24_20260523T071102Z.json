@@ -1,0 +1,92 @@
+{
+  "archived_at": "2026-05-24T07:31:29.889000+00:00",
+  "triage_run_id": "20260523T071102Z",
+  "source": "newsletter",
+  "summary_ja": "2つのニュースレターをトリアージ。AINews「All Model Labs are now Agent Labs」（swyx/latent.space, 2026-05-23）から6件のtake（AI21新規entity、DeepSeek値下げ+Harness team、Codex Thursday No.6、MCP stateless化、Gemini Managed Agents、Lilian Weng更新）と3件のreference（VPO、Gemini 3.5 Flash評価、CoreWeave/Cloudsail sandbox）。Superintel「Nvidia's AI Factory Boom Hits $81.6B」（2026-05-22）は全20リンク中、既存entityページ（nvidia/anthropic/openai/qwen-3-7-max）に既収録のため全skip（sponsered Deel IT含む）。計6 take / 3 reference / 6 skip（他はnoiseとしてフィルター）。",
+  "decisions": [
+    {
+      "item_id": "<20260523042117.3.abab10a98e627c15@mg-d0.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "[AINews] All Model Labs are now Agent Labs",
+      "title": "Vector Policy Optimization (VPO) - RL Research",
+      "url": "https://www.latent.space/p/ainews-all-model-labs-are-now-agent",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ Vector Policy Optimization: scalar reward collapse回避、vector-valued rewards最適化。RL関連概念ページへの言及追加推奨。独立ページには至らないが、RL researchの進展として記録価値あり。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-23\n**Subject:** [AINews] All Model Labs are now Agent Labs\n**Collected:** 2026-05-23T07:11:00.753391+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGF0ZW50LnNwYWNlL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jY"
+    },
+    {
+      "item_id": "<20260522.190302.9af56dd5@mta23>-1",
+      "source": "newsletter",
+      "source_name": "Nvidia's AI Factory Boom Hits $81.6B",
+      "title": "Nvidia $81.6B Earnings / AI Infrastructure Era",
+      "url": "https://link.mail.beehiiv.com/v1/c/iQTpwsSF%2BW58kex77M9sRsuYXKTExV643XOcDWC8uyiYBAMOawMZeBUYM0us%0A1EdUcwpYk2LIIujhOtbeoY%2BRuxC53GK2xnUipacsPPqzACCpiXQx2uQ2TPxq%0Ap0ClQo%2BZJxBVIQYOgb%2BiPPhMbBXuQPMAKk0f0ZiY5zpFltutZM3J%2F2NqhFoB%0AmzcwukpbAIfFcuUodhBuaQ5hpIgorqoCEg%3D%3D%0A/b91ab703ff1bbf72",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-22-nvidia-s-ai-factory-boom-hits-81-6b.md",
+      "recommended_action": "skip",
+      "reason_ja": "Nvidia $81.6B決算詳細は既にentities/nvidia.md（2026-05-23更新）に収録済み。同ニュースレターがsourcesに記載。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-22\n**Subject:** Nvidia's AI Factory Boom Hits $81.6B\n**Collected:** 2026-05-23T07:10:59.281471+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/iQTpwsSF%2BW58kex77M9sRsuYXKTExV643XOcDWC8uyiYBAMOawMZeBUYM0us%0A1EdUcwpYk2LIIujhOtbeoY%"
+    },
+    {
+      "item_id": "<20260522.190302.9af56dd5@mta23>-4",
+      "source": "newsletter",
+      "source_name": "Nvidia's AI Factory Boom Hits $81.6B",
+      "title": "Deel IT Strategy Toolkit (Sponsored)",
+      "url": "https://link.mail.beehiiv.com/v1/c/ff0dWxA1BtZkxccTVsouh59GJcx64lR%2B4m5JvXMgS1HP5L3pjAsw0GaDdfxa",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-22-nvidia-s-ai-factory-boom-hits-81-6b.md",
+      "recommended_action": "skip",
+      "reason_js": "skip - sponsored content (Deel IT). No AI/LLM relevance.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-22\n**Subject:** Nvidia's AI Factory Boom Hits $81.6B\n**Collected:** 2026-05-23T07:10:59.281471+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/iQTpwsSF%2BW58kex77M9sRsuYXKTExV643XOcDWC8uyiYBAMOawMZeBUYM0us%0A1EdUcwpYk2LIIujhOtbeoY%"
+    },
+    {
+      "item_id": "<20260522.190302.9af56dd5@mta23>-5",
+      "source": "newsletter",
+      "source_name": "Nvidia's AI Factory Boom Hits $81.6B",
+      "title": "University of Tokyo 40ps Magnetic Switching",
+      "url": "https://www.techradar.com/...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-22-nvidia-s-ai-factory-boom-hits-81-6b.md",
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI hardware research（40ピコ秒磁気スイッチング）。量子コンピューティング基礎研究でAI直接関係なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-22\n**Subject:** Nvidia's AI Factory Boom Hits $81.6B\n**Collected:** 2026-05-23T07:10:59.281471+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/iQTpwsSF%2BW58kex77M9sRsuYXKTExV643XOcDWC8uyiYBAMOawMZeBUYM0us%0A1EdUcwpYk2LIIujhOtbeoY%"
+    },
+    {
+      "item_id": "<20260522.190302.9af56dd5@mta23>-6",
+      "source": "newsletter",
+      "source_name": "Nvidia's AI Factory Boom Hits $81.6B",
+      "title": "SpaceX IPO / Anthropic $1.25B/mo Compute Deal",
+      "url": "https://www.axios.com/...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-22-nvidia-s-ai-factory-boom-hits-81-6b.md",
+      "recommended_action": "skip",
+      "reason_ja": "SpaceX IPO詳細・Anthropic $1.25B/月 compute契約は既にentities/anthropic.md（SpaceXAI Colossus 1節）に詳細収録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-22\n**Subject:** Nvidia's AI Factory Boom Hits $81.6B\n**Collected:** 2026-05-23T07:10:59.281471+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/iQTpwsSF%2BW58kex77M9sRsuYXKTExV643XOcDWC8uyiYBAMOawMZeBUYM0us%0A1EdUcwpYk2LIIujhOtbeoY%"
+    },
+    {
+      "item_id": "<20260522.190302.9af56dd5@mta23>-7",
+      "source": "newsletter",
+      "source_name": "Nvidia's AI Factory Boom Hits $81.6B",
+      "title": "ChatGPT for PowerPoint Beta",
+      "url": "https://link.mail.beehiiv.com/v1/c/OipUzx7G1eSSu%2FqPexdS8VA0f",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-22-nvidia-s-ai-factory-boom-hits-81-6b.md",
+      "recommended_action": "skip",
+      "reason_ja": "ChatGPT for PowerPoint betaは既にentities/openai.md（2026-05-23更新）に収録済み。スライド作成/編集機能が記載。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-22\n**Subject:** Nvidia's AI Factory Boom Hits $81.6B\n**Collected:** 2026-05-23T07:10:59.281471+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/iQTpwsSF%2BW58kex77M9sRsuYXKTExV643XOcDWC8uyiYBAMOawMZeBUYM0us%0A1EdUcwpYk2LIIujhOtbeoY%"
+    },
+    {
+      "item_id": "<20260522.190302.9af56dd5@mta23>-1",
+      "source": "newsletter",
+      "source_name": "Nvidia's AI Factory Boom Hits $81.6B",
+      "title": "Qwen3.7 Max 56.6 AA Index",
+      "url": "https://link.mail.beehiiv.com/v1/c/iQTpwsSF...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-22-nvidia-s-ai-factory-boom-hits-81-6b.md",
+      "recommended_action": "skip",
+      "reason_ja": "Qwen3.7 Max 56.6 AA Indexスコアは既にentities/qwen-3-7-max.md（2026-05-23作成）に収録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-22\n**Subject:** Nvidia's AI Factory Boom Hits $81.6B\n**Collected:** 2026-05-23T07:10:59.281471+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/iQTpwsSF%2BW58kex77M9sRsuYXKTExV643XOcDWC8uyiYBAMOawMZeBUYM0us%0A1EdUcwpYk2LIIujhOtbeoY%"
+    }
+  ]
+}

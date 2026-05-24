@@ -1,0 +1,67 @@
+{
+  "checkpoint_run_id": "20260523T200031Z",
+  "source": "backlog",
+  "summary_ja": "rawバックログ5件をトリアージ。うち2件はAI無関係（ビンテージコンピュータ、古代人類遺伝子学ポッドキャスト）、3件は既存エンティティページに既に収録済み（Notion Custom Agentsポッドキャスト、Marc Andreessen/OpenClawポッドキャスト、およびそのURL重複）。takeなし。",
+  "decisions": [
+    {
+      "item_id": "oldvcr-am1000e",
+      "source": "backlog",
+      "source_name": "oldvcr.blogspot.com",
+      "title": "Refurb weekend double header: Alpha Micro AM-1000E and AM-1200",
+      "url": "https://oldvcr.blogspot.com/2026/03/refurb-weekend-double-header-alpha.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/oldvcr.blogspot.com--2026-03-refurb-weekend-double-header-alpha-html--9945b2ae.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 1980年代のAlpha Micro 68000ベースマルチユーザーシステムの修復作業記録。AI/LLM/エージェント技術と無関係。ビンテージコンピュータ趣味のブログ記事。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "I've mentioned previously my great affection for Alpha Microsystems hardware, which are rather obscure computers nowadays, but back in the 1980 and 1990s were fairly sophisticated 68000-based multiuser systems..."
+    },
+    {
+      "item_id": "dwarkesh-david-reich-2",
+      "source": "backlog",
+      "source_name": "dwarkesh.com",
+      "title": "David Reich - Why the Bronze Age was an inflection point in human evolution",
+      "url": "https://www.dwarkesh.com/p/david-reich-2",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/dwarkesh.com--p-david-reich-2--6c65332c.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ ハーバード大学David Reich教授との古代DNA・人類進化に関するポッドキャストトランスクリプト。青铜器時代の自然選択加速がテーマ。AI/LLM技術と無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "David Reich is back. He and collaborator Ali Akbari just published a paper that overturns a long-standing consensus about human evolution — that natural selection has been dormant in our species since the agricultural revolution."
+    },
+    {
+      "item_id": "notion-token-town",
+      "source": "backlog",
+      "source_name": "latent.space (Substack)",
+      "title": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future",
+      "url": "https://substack.com/redirect/2/eyJlIj...TC6s",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--c27d9b81.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ Notion Custom AgentsのLatent Spaceポッドキャスト。既にentities/notion.md（134行）、entities/sarah-sachs.md（79行）、entities/simon-last.md（95行）に詳細収録済み。agent harness進化、eval框架、software factoryビジョンなど全テーマがカバーされている。",
+      "candidate_wiki_path": "entities/notion.md",
+      "body_excerpt": "Sarah Sachs and Simon Last of Notion join us for a deep dive into how Notion built Custom Agents, why it took years and multiple rebuilds to get right, and what it means to turn a productivity tool into an agent-native system of record for enterprise work."
+    },
+    {
+      "item_id": "marc-andreessen-ls-podcast",
+      "source": "backlog",
+      "source_name": "latent.space (Substack)",
+      "title": "Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why \"This Time Is Different\"",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193082940",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--48be8440.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★★☆☆ Marc AndreessenのLatent Spaceポッドキャスト。既にentities/marc-andreessen.md（107行）に「80-Year Overnight Success」「OpenClaw + Pi」「Death of the Browser」「Proof of Human」全セクション収録。entities/openclaw.md（316行）にも記載済み。",
+      "candidate_wiki_path": "entities/marc-andreessen.md",
+      "body_excerpt": "Fresh off raising a monster $15B, Marc Andreessen has lived through multiple computing platform shifts firsthand, from Mosaic and Netscape to cofounding A16z."
+    },
+    {
+      "item_id": "marc-andreessen-ls-podcast-dup",
+      "source": "backlog",
+      "source_name": "latent.space (Substack)",
+      "title": "Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why \"This Time Is Different\"",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193082940&utm_content=play_card_show_title",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--3824613e.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 上記#48be8440と同一エピソード。URLパラメータ違いのみ（play_card_show_title vs play_card_show_logo）。本文コンテンツ完全に重複。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Fresh off raising a monster $15B, Marc Andreessen has lived through multiple computing platform shifts firsthand, from Mosaic and Netscape to cofounding A16z."
+    }
+  ]
+}

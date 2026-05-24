@@ -1,0 +1,88 @@
+{
+  "run_id": "20260524T072354Z",
+  "triaged_at": "2026-05-24T07:24:00.000000Z",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "newsletters": [
+    {
+      "message_id": "<20260523.163941.34ba5f1b@mta23>",
+      "subject": "# Saturday DeepDive: The Battle for AI...",
+      "date": "2026-05-23",
+      "source_label": "uid=131",
+      "source_name": "Superintelligence (getsuperintel) — Saturday DeepDive",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-23-saturday-deepdive-the-battle-for-ai.md",
+      "overall_relevance": "medium",
+      "overall_priority": "low",
+      "summary": "Superintelligence newsletter's Saturday DeepDive edition (paid tier). Single feature article: 'The Battle for AI Silicon: Who Controls the Chips That Power the Intelligence Revolution?' by Kim Isenberg. Covers NVIDIA's platform dominance (~$81.6B/quarter revenue, CUDA + NVLink moat), Google TPU v8t/8i split, AMD/Cerebras/Groq challengers, and China/Huawei parallel ecosystem. Substantial preview available but full analysis behind paywall. Topic is AI hardware infrastructure — tangentially relevant to wiki's inference/training infrastructure domain but primarily a market/strategy analysis piece rather than LLM/Agent technical knowledge. The remaining 14 links are social media profiles, subscription pages, and beehiiv tracking meta.",
+      "classified_articles": [
+        {
+          "index": "1-3",
+          "resolved_url": "https://link.mail.beehiiv.com/v1/c/... (beehiiv redirects to same article)",
+          "resolved_title": "The Battle for AI Silicon: Who Controls the Chips That Power the Intelligence Revolution?",
+          "author": "Kim Isenberg",
+          "relevance": "low",
+          "priority": "low",
+          "reason": "AI hardware market analysis. Covers NVIDIA's $81.6B revenue, CUDA/NVLink moats, Google TPU v8t/8i, AMD/Cerebras/Groq/China challenges. Tangentially relevant to wiki's 'inference/training infrastructure' domain but primarily a business/market piece. Paywalled — only NVIDIA section fully available.",
+          "suggested_action": "could_note_on_ai-infrastructure_concept",
+          "suggested_page": "concepts/ai-hardware-infrastructure.md (minor reference)",
+          "key_data_points": [
+            "NVIDIA Q1 FY2027: $81.6B revenue, $75.2B Data Center (+92% YoY)",
+            "NVIDIA gross margins ~75%",
+            "CUDA: ~4M developers worldwide",
+            "Global AI compute doubling every ~7 months (Epoch AI)",
+            "NVIDIA >60% of total AI compute",
+            "DeepSeek V4 running natively on Chinese chips",
+            "NVIDIA roadmap: Blackwell Ultra (2026) → Vera Rubin (2H 2026) → Rubin Ultra (2027, up to 1TB HBM4e)"
+          ]
+        },
+        {
+          "index": 4,
+          "resolved_title": "Superintelligence .edu free subscription page",
+          "relevance": "low",
+          "priority": "low",
+          "reason": "Subscription/signup landing page. Not content.",
+          "suggested_action": "none"
+        },
+        {
+          "index": 5,
+          "resolved_title": "Superintelligence AI LLC LinkedIn page",
+          "relevance": "low",
+          "priority": "low",
+          "reason": "Company LinkedIn profile. Lists past articles including several wiki-relevant ones ('The Agentic Economy Has No Black Box', 'Codex Goes Everywhere', 'Trustworthy AI Is Really About Delegated Agency') — but these are from prior newsletters already covered (or missed). The LinkedIn page itself is not ingestible content.",
+          "suggested_action": "track_past_articles",
+          "notable_past_articles": [
+            "The Agentic Economy Has No Black Box (cross-party agent failures)",
+            "Codex Goes Everywhere (OpenAI coding agents)",
+            "Frontier AI beats the cyber trend (autonomous cyber attacks)",
+            "The AI Cursor Arrives (Google's cursor AI)",
+            "The End of Turn-Based Voice-AI (interaction models)",
+            "Trustworthy AI Is Really About Delegated Agency (agent delegation)"
+          ]
+        },
+        {
+          "index": "6-15",
+          "resolved_title": "Social media profiles + beehiiv meta (X, Instagram, Threads, TikTok, LinkedIn, beehiiv status)",
+          "relevance": "low",
+          "priority": "low",
+          "reason": "Newsletter footer links — social profiles and tracking pixels. Not article content. Links 6=Twitter/X, 7=Instagram, 8=Threads, 9=LinkedIn (duplicate), 10=TikTok, 11-15=additional social/beehiiv tracking.",
+          "suggested_action": "none"
+        }
+      ],
+      "wiki_ingest_recommendation": "skip — single article is AI hardware market analysis (tangential to wiki's LLM/Agent focus). Key data points about NVIDIA and AI compute growth could be noted on an ai-hardware-infrastructure concept page if one exists, but not worth creating a new page for this alone. The past LinkedIn articles (agent economy, Codex, delegation) were likely covered in prior newsletters from this publisher."
+    }
+  ],
+  "summary_stats": {
+    "total_newsletters": 1,
+    "critical": 0,
+    "high_priority": 0,
+    "low_priority": 1,
+    "total_articles_linked": 17,
+    "substantive_articles": 1,
+    "social_or_meta_links": 16,
+    "paywalled_articles": 1,
+    "critical_articles": 0,
+    "high_articles": 0,
+    "low_articles": 1,
+    "non_content_articles": 16,
+    "suggested_wiki_actions": []
+  }
+}

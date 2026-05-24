@@ -1,14 +1,16 @@
 ---
 title: Gemini Enterprise Agent Platform
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-24
 type: entity
 tags:
   - platform
   - ai-agents
   - google
   - company
-sources: [raw/articles/2026-04-22_google-cloud-next-gemini-enterprise-agent-platform.md]
+sources:
+  - raw/articles/2026-04-22_google-cloud-next-gemini-enterprise-agent-platform.md
+  - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
 ---
 
 # Gemini Enterprise Agent Platform
@@ -65,6 +67,27 @@ Workspace Studio (no-code agent builder), Box, Workday, Salesforce, ServiceNow a
 
 ## Relationship to TPU Strategy
 Paired with 8th-gen dual-chip TPUs: **TPU 8t** (training: 9,600 per superpod, 2PB HBM, 3x Ironwood) and **TPU 8i** (inference: 1,152 per pod, 3x SRAM, optimized for millions of concurrent agents). See [[entities/google-tpu]].
+
+
+## Gemini Managed Agents + Interactions API (May 2026)
+
+Phil Schmid (Google) announced **Gemini Managed Agents** with the **Interactions API**, giving agents a secure hosted Linux sandbox with memory and code execution — part of Google's broader push into managed agent infrastructure.
+
+### Key Capabilities
+- **Secure hosted Linux sandbox** — Isolated execution environment for agent code and browser automation
+- **Memory** — Persistent agent memory across sessions (complementing the Memory Bank pillar)
+- **Code execution** — Native code execution within the sandbox environment
+- **Interactions API** — Programmatic interface for managing agent lifecycle, sandbox provisioning, and memory state
+
+### Competitive Positioning
+Gemini Managed Agents competes directly with:
+- [[entities/anthropic|Anthropic Claude Agents SDK]] — Managed execution with Brain/Hands/Session architecture
+- [[entities/openai|OpenAI Codex]] — Container-based sandbox with approval gates
+- [[entities/coreweave|CoreWeave Sandboxes]] — RL/agent tool use/model eval sandboxes (public preview, May 2026)
+- [[concepts/agent-harness|Cloudsail]] — Per-task Cloudflare sandboxes with shell + Codex + GitHub access
+
+> Source: [AINews May 23, 2026](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)
+
 
 ## Related
 - [[entities/google]] — parent company and broader AI strategy

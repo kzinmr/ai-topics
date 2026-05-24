@@ -1,7 +1,7 @@
 ---
 title: DeepSeek
 created: 2026-04-26
-updated: 2026-05-12
+updated: 2026-05-24
 type: entity
 tags: [company, open-source, model, inference, training, benchmark]
 sources:
@@ -15,6 +15,7 @@ sources:
   - raw/papers/2025-12-02_2512.02556_deepseek-v3.2-technical-report.md
   - raw/articles/2026-05-08_martinfowler-deepseek-papers.md
   - raw/papers/2026-04-xx_deepseek-v4-technical-report.md
+  - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
 ---
 
 # DeepSeek
@@ -118,6 +119,42 @@ DeepSeek V4 is confirmed to run on **Huawei Ascend 950** chips for inference and
 - **[[concepts/deepseek-v3|DeepSeek V3]]** (December 2024) — 671B total / 37B active params, MoE. Landmark technical report (arXiv:2412.19437): first FP8 training at 671B scale, auxiliary-loss-free load balancing, multi-token prediction, DualPipe. Trained on 14.8T tokens for $5.576M (2.788M H800 GPU hours). Achieved GPT-4o-class performance at <1/20th the training cost. MIT license.
 - **[[concepts/deepseek-v3-2|DeepSeek V3.2 / V3.2 Speciale]]** (December 2025) — 685B params。**DSA**（DeepSeek Sparse Attention：学習可能なスパースアテンションによる $O(L^2)→O(Lk)$ 効率化）、**スケーラブルRL**（GRPO強化：Unbiased KL推定 + Off-Policy Sequence Masking + Keep Routing Mask、ポストトレーニング予算が事前学習の10%超）、**大規模エージェントタスク合成**（1,827環境・85Kプロンプト）の3つの革新。V3.2-SpecialeはIMO 2025・IOI 2025で金メダル、ICPC World Finals世界2位。GPT-5/Gemini-3.0-Proに迫る性能。DSAはV4、GLM-5.1にも波及。技術レポート（arXiv:2512.02556）。
 - **[[concepts/deepseek-r1|DeepSeek R1]]** (January 2025) — Reasoning-focused model. **Nature**掲載（Vol. 645, 2025）。Pure RL（GRPO）で推論能力の創発を初めて大規模実証。「アハモーメント」、自己検証・内省の自律的獲得。AIME 2024: 79.8%, MATH-500: 97.3%（o1-1217に匹敵）。蒸留によりQwen-1.5B/7B、Llama-8B/70Bにも展開。訓練コスト$294K。推論パターンはV3へも蒸留。
+
+
+## V4-Pro Permanent Discount (May 2026)
+
+In May 2026, DeepSeek made a **permanent 75% discount** on V4-Pro pricing, triggering strong market reaction as it materially changes the cost/performance frontier:
+
+| Metric | V4-Pro Price |
+|--------|--------------|
+| **Input** | **$0.435/M tokens** (was $1.74) |
+| **Output** | **$0.87/M tokens** (was $3.48) |
+| **Cached Input** | **$0.0036/M tokens** |
+| **Blended** | **~$0.18/M tokens** (75% below previous) |
+
+**Cost comparison vs competitors (blended):**
+- ~3× cheaper than [[entities/gemini|Gemini 3.1 Pro Preview]]
+- ~12× cheaper than GPT-5.5
+- ~19× cheaper than [[entities/anthropic|Claude Opus 4.7]]
+
+The discount makes inference "too cheap to meter" at the blended rate, accelerating the trend toward agent-native pricing where model cost becomes a negligible component of total agent operation cost.
+
+## Harness Team Formation (May 2026)
+
+DeepSeek created its first **"Harness team"** — an agent execution environment engineering team — signaling the lab's recognition that the moat is shifting from standalone model performance to the **model + harness + workflow + UI + memory** stack. This follows the same trajectory as OpenAI (Codex harness), Anthropic (Claude Agents SDK), and AI21 Labs (full pivot to agents).
+
+The Harness team's formation validates the "Systems over Models" thesis and represents a strategic response to the industry-wide shift where [[concepts/agent-harness|agent harness]] infrastructure is becoming a competitive differentiator.
+
+> Source: [AINews May 23, 2026](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)
+
+## Updated Pricing Table
+The pricing table in the Models section (pre-discount) should be read in context with the permanent discount above. The current API pricing is:
+
+| Model | Input | Output |
+|-------|-------|--------|
+| **V4-Flash** | $0.14 | $0.28 |
+| **V4-Pro** | ~~$1.74~~ → **$0.435** (75% off) | ~~$3.48~~ → **$0.87** (75% off) |
+
 
 ## Strategy
 

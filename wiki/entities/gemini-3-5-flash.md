@@ -4,7 +4,12 @@ created: 2026-05-22
 updated: 2026-05-23
 type: entity
 tags: [entity, model, google, multimodal, llm, text-generation, agentic-engineering, inference, agent-sdk, coding-agents, ai-agents, orchestration, multi-agent]
-sources: [raw/articles/2026-05-19_google-gemini-3-5-flash.md, https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/, https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/, https://ai.google.dev/gemini-api/docs/antigravity-agent]
+sources:
+  - raw/articles/2026-05-19_google-gemini-3-5-flash.md
+  - https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/
+  - https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/
+  - https://ai.google.dev/gemini-api/docs/antigravity-agent
+  - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
 ---
 
 # Gemini 3.5 Flash
@@ -72,6 +77,19 @@ Developed under Google's [[concepts/frontier-safety-framework|Frontier Safety Fr
 - [[entities/gemini-enterprise-agent-platform|Gemini Enterprise Agent Platform]] and Gemini Enterprise
 - Gemini app and AI Mode in Search (billions of users)
 - Coming: Gemini 3.5 Pro (internal use already, public next month)
+
+
+## Mixed Reception & Eval Critique (May 2026)
+
+While Gemini 3.5 Flash shows strong benchmark gains — ranking **16th on Design Arena** (+16 positions) with GDPval improvements — the reception among builders is mixed:
+
+- **@jeremyphoward critique**: The model feels *"optimized for evals, not cooperating with humans"* — suggesting benchmark-focused improvements came at the cost of real-world usability
+- **Higher cost than expected**: Despite the "Flash" branding implying affordability, some builders report the real-world cost is significantly higher than claimed benchmarks suggest
+- **Benchmark-vs-Reality gap**: The strong eval improvements don't translate proportionally to practical coding or agentic workflows
+
+This pattern echoes broader concerns about benchmark specialization in the model industry, where eval optimization can diverge from human-aligned improvement.
+
+> Source: [AINews May 23, 2026](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)
 
 ## Related
 

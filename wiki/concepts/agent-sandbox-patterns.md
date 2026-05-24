@@ -2,7 +2,7 @@
 title: "Agent Sandboxing Patterns: Architectural Approaches for Isolated Agent Execution"
 type: concept
 created: 2026-04-30
-updated: 2026-05-02
+updated: 2026-05-24
 tags:
   - concept
   - ai-agents
@@ -93,3 +93,25 @@ class AgentGateway(Protocol):
 - [[concepts/process-supervision]] — managing long-running agent processes
 - [[concepts/agentic-security]] — broader security patterns
 - [[entities/larsen-cundric]] — author, Browser Use engineer
+
+## Production Sandbox Providers (May 2026)
+
+Several platform-level sandbox offerings emerged in May 2026, filling the gap between in-house Docker/Unikraft setups and managed agent platforms:
+
+### CoreWeave Sandboxes (Public Preview)
+CoreWeave launched sandboxes as a public preview service targeting:
+- **Reinforcement learning workloads** — Isolated environments for RL training with GPU access
+- **Agent tool use** — Sandboxes optimized for multi-step agent tool calling
+- **Model evaluation** — Reproducible benchmark execution environments
+
+### Cloudsail (by cnakazawa)
+Cloudsail provides **per-task Cloudflare sandboxes** with:
+- Shell access
+- [[entities/codex|Codex]] integration
+- GitHub access
+- **Zero token exposure** — No credentials leaked to the sandbox environment
+- Per-task isolation: each agent run gets a fresh sandbox
+
+This is part of the broader trend where [[concepts/agent-harness|agent harness]] infrastructure is being offered as a managed service rather than requiring in-house engineering, alongside [[entities/gemini-enterprise-agent-platform|Gemini Managed Agents]] and [[concepts/agent-sandbox-patterns|traditional Docker/Unikraft setups]].
+
+> Source: [AINews May 23, 2026](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)

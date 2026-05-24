@@ -2,15 +2,13 @@
 title: "Lilian Weng (@lilianweng)"
 tags: [entity]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-24
 type: entity
----
 
 ## Related Entities
 
 - [[entities/chip-huyen]]
 - [[entities/will-brown]]
----
 
 # Lilian Weng (@lilianweng)
 
@@ -35,3 +33,29 @@ Her intellectual identity is shaped by two core traits she has named herself: **
 
 | Date | Event |
 |
+
+## Stance Reversal: "The Model Alone Is No Longer the Product" (May 2026)
+
+Greg Brockman (OpenAI) publicly signaled a major strategy shift with the statement **"the model alone is no longer the product"** — directly reversing a long-held view associated with Lilian Weng's tenure as head of OpenAI's Applied AI Research team and VP of Research.
+
+### Context
+
+During Weng's leadership of OpenAI Labs (2017–2024), the prevailing thesis was that **frontier models themselves** — not product wrappers or applications — constituted the durable competitive moat. This view shaped OpenAI's strategy during the GPT-4 era, prioritizing model capability over agent infrastructure.
+
+### The Reversal
+
+Brockman's May 2026 statement acknowledges that the industry has moved past this model-centric view:
+
+> *"The model alone is no longer the product."* — Greg Brockman (@gdb), May 2026
+
+This shift reflects:
+- The rise of [[concepts/agent-harness|agent harness]] as a competitive differentiator
+- The "Systems over Models" thesis gaining mainstream acceptance
+- Labs including [[entities/ai21-labs|AI21]], [[entities/deepseek|DeepSeek]], and Anthropic all pivoting toward agent-first strategies
+- OpenAI's own bet on [[entities/codex|Codex]] as the primary user interface
+
+### Implications for Weng's Legacy
+
+The reversal does not diminish Weng's contributions — her model-centric strategy was appropriate for its era and helped establish OpenAI's market position. However, the stance reversal marks a clear generational shift in AI strategy from **model-first to systems-first** competition.
+
+> Source: [AINews May 23, 2026](https://www.latent.space/p/ainews-all-model-labs-are-now-agent)
