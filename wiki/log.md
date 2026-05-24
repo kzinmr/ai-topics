@@ -3,6 +3,23 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-24] auto-fix | Header count drift corrected
+
+### Changes
+- `wiki/index.md` — Entities header 657→659, Concepts header 1336→1319 (flat file count vs actual)
+- validate_index.py passes after fix (exit 0)
+- No corruption found (0 pipe, 0 triple bracket, 0 space prefix)
+
+### Report
+- Wiki state: **clean structure, significant orphan/sources gap**
+- Log size: 2,516 lines (rotation candidate)
+- Unprocessed raw articles: 3,794
+- Stale pages: 281
+- Files not in index: 803+ (exceeds auto-fix threshold)
+- Frontmatter missing sources: 756 pages (exceeds auto-fix threshold)
+
+---
+
 ## [2026-05-24] trending-topics | Weekly AI report (May 19-24)
 
 ### Summary
