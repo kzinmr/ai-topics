@@ -3,6 +3,23 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-24] trending-topics | Weekly AI report (May 19-24)
+
+### Summary
+- Google I/O 2026: Gemini 3.5 Flash GA, Gemini Omni, Gemini Spark, Antigravity 2.0
+- Anthropic $900B valuation round closing, first quarterly profit ($559M)
+- OpenAI files confidential IPO S-1 (Sept target, $852B-$1T valuation)
+- Qwen3.7-Max: 35-hour autonomous coding, 10x speedup
+- Recursive self-improvement: Recursive startup ($650M), AutoTTS research, OpenAI safety hire
+- Meta Avocado delayed to June; Mini Shai-Hulud supply chain attack
+- Pope Leo XIV's Magnifica Humanitas (first AI encyclical) tomorrow
+- Claude Code 2.1.147 Workflows, Codex Mobile live
+
+### Raw Articles Saved
+- `raw/articles/2026-05-24_trending-topics-report.md`
+
+---
+
 ## [2026-05-24] active-crawl | Cohere Command A+, NVIDIA Nemotron-Labs Diffusion, Google Agent Executor, Gemini CLI, Stable Audio 3.0
 
 ### Pages Created
