@@ -32,7 +32,7 @@
 - [[entities/florian-brand]] — Florian Brand (@xeophon) — Research Engineer at Prime Intellect (evals). Editor at Interconnects (open models). OSWorld critique.
 - [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs. Author of "Misplaced panic over AI progress" (May 2026) critiquing METR's 50%-time-horizon methodology. "The illusion of Generative AI" (May 2026): neurosymbolic AI, world models, hyperscaling critique.
 - [[entities/garry-tan]] — Garry Tan — YC President & CEO, engineer-turned-VC, creator of G Stack. Proponent of "Meta-Meta-Prompting" and "Fat Skills, Fat Code, Thin Harness" AI agent architecture. Uses OpenClaw + Hermes Agent for routing.
-- [[entities/george-hotz]] — George Hotz (geohot)
+- [[entities/george-hotz]] — George Hotz (geohot) — hacker, comma.ai/tinygrad founder. AI safety analysis: singleton threat, evolutionary endgame.
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
 - [[entities/fred-schott]] — Fred K. Schott — Creator of Astro, open source developer
 - [[entities/grant-slatton]] — Grant Slatton
@@ -46,7 +46,7 @@
 - [[entities/luke-curley]] — Luke Curley (@lukeslhz) — Software Engineer at Discord, formerly Twitch. MoQ Working Group participant. Advocates for Media over QUIC over WebRTC for AI voice applications. Argues that WebRTC's packet dropping degrades LLM prompts, and users would prefer 200ms extra latency for accuracy.
 - [[entities/mac-studio-local-ai]] — Mac Studio Local AI
 - [[entities/mastra]] — Mastra — Open-source TypeScript AI agent framework (Gatsby team, 24K ⭐). ACP-compatible coding agents, workflows, voice AI providers, enterprise RBAC.
-- [[entities/merge-dev]] — Merge.dev: AIエージェントテスト統合プラットフォーム
+- [[entities/merge-dev]] — Merge.dev（Merge Agent Handler）— MCPサーバープロダクト。Cursor/Claude Code向けGitHub・Trello MCP、中央OAuth管理、エンタープライズアクセス制御・監査ログ。
 - [[entities/marc-andreessen]] — Marc Andreessen — Co-founder of Andreessen Horowitz (a16z), co-author of Mosaic browser, Netscape co-founder. AI optimist, "Software Is Eating the World" author.
 - [[entities/microsoft-agent-framework]] — Microsoft Agent Framework v1.0: unified Semantic Kernel + AutoGen SDK for .NET/Python, multi-agent orchestration, MCP/A2A support
 - [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto — HashiCorp
@@ -156,7 +156,7 @@
 - [[entities/clefourrier]] — **URL:** https://clefourrier.github.io/
 - [[entities/clicky]] — Clicky — Free macOS AI assistant by Farza. Voice + screen capture → Claude → blue triangle pointing. No account/API key needed. Built in 3 weeks. Same approach as Google Magic Pointer (independently discovered same week).
 - [[entities/claris-filemaker-agentic-coding]] — Claris (Apple subsidiary)
-- [[entities/codex]] — OpenAI製のオープンソースAIコーディングエージェント。Apache-2.0、Rust製、79.3K GitHub Stars。GPT-5.5/5.4ネイティブ＋カスタムプロバイダ＋ローカルモデル対応。CLI/Desktop/IDE/Webのマルチサーフェス。ChatGPT Plus/Proに含まれ、サブスクリプション壁なし。
+- [[entities/codex]] — OpenAI製のオープンソースAIコーディングエージェント。Apache-2.0、Rust製、79.3K GitHub Stars。GPT-5.5/5.4ネイティブ＋カスタムプロバイダ＋ローカルモデル対応。CLI/Desktop/IDE/Webのマルチサーフェス。Gartner MQ 2026 Leader認定。4M+ WAU。エンタープライズ事例: Virgin Atlantic（78-80%コード削減）。
 - [[entities/cloudflare]] — Global cloud platform; Project Glasswing participant. Published Mythos Preview harness architecture (May 2026): Recon→Hunt→Validate→Gapfill→Dedupe→Trace→Feedback→Report. Also repositioning as "agentic cloud" with Agents SDK, Project Think.
 - [[entities/cloudflare-sandbox]] — Cloudflare's self-hosted sandbox for Claude Managed Agents (May 2026). Dual sandbox primitives (microVM + V8 isolates), proxy-based zero-trust credential brokering, Browser Run, email tools, Workers AI integration.
 - [[entities/coder]] — Coder Technologies — self-hosted, model-agnostic AI coding agent platform for enterprise. Coder Agents beta released May 2026. Supports Anthropic, OpenAI, Google, AWS Bedrock, self-hosted models. Air-gapped ready.

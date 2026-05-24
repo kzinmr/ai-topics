@@ -3,7 +3,7 @@ title: OpenAI Codex (AI coding agent)
 type: entity
 aliases: [codex-cli, openai-codex, codex-agent]
 created: 2026-05-07
-updated: 2026-05-16
+updated: 2026-05-24
 status: L3
 tags:
   - entity
@@ -12,6 +12,7 @@ tags:
   - open-source
   - developer-tooling
   - ai-agents
+  - enterprise-ai
 sources:
   - https://github.com/openai/codex
   - https://developers.openai.com/codex/cli
@@ -19,9 +20,13 @@ sources:
   - https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)
   - https://developers.openai.com/codex/changelog
   - https://openai.com/index/introducing-codex/
+  - https://openai.com/index/gartner-2026-agentic-coding-leader
+  - https://openai.com/index/virgin-atlantic
   - raw/articles/simonwillison.net--2026-apr-28-openai-codex--558b4b74.md
   - raw/articles/2026-04-30_codex-cli-0-128-0-goal.md
   - raw/articles/openai.com--index-work-with-codex-from-anywhere--2026-05-16.md
+  - raw/articles/openai.com--index-gartner-2026-agentic-coding-leader--3f8a2c71.md
+  - raw/articles/openai.com--index-virgin-atlantic--7b2d9e41.md
   - raw/concepts/openai-codex-superapp.md
 related:
   - "[[concepts/openai-codex-superapp]]"
@@ -171,7 +176,46 @@ OpenAI published a detailed technical post on building the Codex Windows sandbox
 - **Business/Enterprise**: $0 seat fee through June 2026 promotion
 - **BYOK**: Use own API keys for custom providers
 
-## Positioning
+## Enterprise Recognition
+
+### Gartner Magic Quadrant Leader (May 2026)
+
+OpenAI was named a **Leader** in the Gartner® Magic Quadrant™ for Enterprise AI Coding Agents (May 20, 2026 report). The evaluation by Phillip Walsh, Matt Basier, Keith Holloway, and Nitish Tyagi recognized Codex's strengths across **Ability to Execute** and **Completeness of Vision**.
+
+**Key recognition areas:**
+- **Agentic software development**: Moving beyond autocomplete to delegated complex tasks
+- **Enterprise governance**: Approval gates, RBAC, customizable policies, OS-level sandboxing, auditable workspace governance
+- **Broad developer surface**: Codex app, IDE extensions, CLI, SDKs, and cloud-based orchestration
+- **Flexible deployment**: Options across self-hosted, cloud, and managed environments
+
+**Enterprise adoption metrics:**
+- **4M+ weekly active users**
+- **Enterprise customers**: Cisco (used Codex to build majority of its AI Defense platform, shortening delivery from quarters to weeks), Datadog, Dell Technologies, NVIDIA
+- **Post-evaluation improvements**: GPT-5.5 integration, stronger tool use, faster performance, deeper enterprise workflows
+- **Recent enterprise features**: Codex Security + GPT-5.5-Cyber, Remote SSH, HIPAA compliance, Codex on Amazon Bedrock
+- **GSI partners**: Accenture, Capgemini, Cognizant, Infosys, PwC, TCS
+
+> Source: [OpenAI named a Leader in enterprise coding agents by Gartner](https://openai.com/index/gartner-2026-agentic-coding-leader) (OpenAI Blog, May 22, 2026)
+
+### Enterprise Case Study: Virgin Atlantic
+
+Virgin Atlantic used Codex to ship a revamped mobile app with **near-complete unit test coverage and zero P1 defects at launch** — hitting the critical Christmas travel window. Neil Letchford (VP of Digital Engineering) reported:
+
+| Metric | Result |
+|--------|--------|
+| Codebase size reduction on legacy refactors | 78–80% |
+| Unit test coverage on new app | ~100% |
+| Legacy refactoring time | 30 min (down from 2 weeks) |
+
+**Key outcomes:**
+- **Mobile app launch**: Beta over Christmas, production within weeks, zero P1 tickets
+- **Legacy code modernization**: Multi-year codebases refactored in hours instead of weeks
+- **Front-end velocity**: Lead developer built complete working app from Figma prototype in one week
+- **Data platform**: Analyst teams now prototype internal apps directly against the data warehouse in hours — teams across network planning, customer experience, and maintenance build their own tools with Codex
+
+> "The trajectory of Codex is thinking beyond pure engineers. It's moving into a real tool for everyone." — Richard Masters, VP of Data and AI, Virgin Atlantic
+
+> Source: [How Virgin Atlantic ships faster with Codex](https://openai.com/index/virgin-atlantic) (OpenAI Blog, May 22, 2026)
 
 Codex has become the **main interface for ChatGPT** as of April 2026 — transforming from a coding tool into a **superapp** encompassing research, spreadsheets, decision tracking, and general work. Key strategic distinction from Claude Code:
 

@@ -3,7 +3,41 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
-## [2026-05-23] create+enrich | Hanchung Lee entity page, Agent Runtime concept enrichment, Sarah Chieng YouTube references
+## [2026-05-24] blog-ingest | George Hotz AI safety, Codex enterprise recognition, Merge MCP entity
+
+### Pages Created
+- **[[entities/merge-dev]]** — Merge.dev (Merge Agent Handler) — MCP server product connecting AI coding agents to GitHub/Trello APIs with centralized OAuth, scoped access control, and audit logging. Covers GitHub MCP server (PR inspection, issue schemas, repo permissions) and Trello MCP server (card schemas, board structure, webhook events). 4-step setup via `pipx install merge-api` + `merge login` + `merge connect-cursor`. Enterprise features: per-agent tool permissions, timestamped audit logs. Sources: merge.dev blog posts.
+
+### Pages Enriched
+- **[[entities/george-hotz]]** — Added **"There is Only One Bad AI Scenario"** section (May 23, 2026): Hotz's most direct AI safety analysis — rejects Skynet/gray goo as "too bizarre," instead warns of a "safetyism singleton" that slowly eliminates independent systems and evolutionary randomness through administrative control. "The only world-ending scenario is a singleton." Updated: `2026-05-24`, added `ai-safety` tag. Added raw article reference: geohot.github.io--...-one-bad-scenario-html--2f85be19.
+- **[[entities/codex]]** — Added **Enterprise Recognition** section with two subsections: (1) **Gartner Magic Quadrant Leader** (May 2026) — Leader in both Ability to Execute and Completeness of Vision, 4M+ WAU, Cisco AI Defense case study, GPT-5.5 integration, GSI partners; (2) **Virgin Atlantic case study** — 78-80% codebase reduction, ~100% test coverage, 30-min refactors (down from 2 weeks), zero P1 at launch. Updated: `2026-05-24`, added `enterprise-ai` tag, 2 new raw article references. Restored `status: L3`.
+
+### Index Updates
+- Updated `[[entities/george-hotz]]` description to include AI safety analysis
+- Updated `[[entities/merge-dev]]` description from "AIエージェントテスト統合プラットフォーム" to MCP-focused description
+- Updated `[[entities/codex]]` description with Gartner MQ 2026 recognition + Virgin Atlantic metrics
+- Header counts unchanged (merge-dev already existed, was rewritten)
+
+### Sources
+- https://geohot.github.io//blog/jekyll/update/2026/05/23/one-bad-scenario.html
+- https://openai.com/index/gartner-2026-agentic-coding-leader
+- https://openai.com/index/virgin-atlantic
+- https://www.merge.dev/blog/github-mcp-cursor
+- https://www.merge.dev/blog/trello-mcp-cursor
+
+### Skipped (non-AI or low wiki relevance)
+- susam.net: "Childhood Computing" — personal memoir
+- troyhunt.com: "Weekly Update 505" — security update
+- shkspr.mobi: "Age gates vs skill gates" — not AI
+- johndcook.com: Hilbert transform, Real/imaginary parts — pure math
+- righto.com: Spacelab computer — retro hardware
+- construction-physics.com: Reading List — not AI
+- LWN.net: Kernel updates — not AI
+- nesbitt.io: Package Management — ecosystem, not core AI
+- probablydance.com: Book Review — not AI
+- berthub.eu: Palantir — tech policy, saved for later review
+- simonwillison.net: "On the <dl>" — HTML semantics, not AI
+- AI Engineer YouTube talks (3 videos) — video content, not scraped
 
 ### Pages Created
 - **[[entities/hanchunglee]]** — Hanchung Lee (Han Lee, @hanchunglee) — Focused entity page on the Agent Runtime analysis from his "Hidden Technical Debt" series. 9.4KB. Sections: Overview, Core Ideas (runtime as primary technical debt, sandboxing necessity, isolation primitive stack, runtime shift, web app vs agent runtime), Key Work (Hidden Technical Debt trilogy, AI adoption articles), X Activity Themes, Related People/Entities. Sources: leehanchung.github.io, raw article.

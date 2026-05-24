@@ -1,61 +1,90 @@
 ---
-title: "Merge.dev"
+title: Merge.dev (Merge Agent Handler)
 type: entity
-created: 2026-05-10
-updated: 2026-05-10
-tags: [company, testing, ai-agents, developer-tooling]
-aliases: ["Merge"]
+created: 2026-05-24
+updated: 2026-05-24
+tags:
+  - entity
+  - company
+  - mcp
+  - developer-tooling
+  - ai-agents
+  - enterprise-ai
 sources:
-  - raw/articles/merge.dev--blog-testing-ai-agents--8daf268c.md
+  - https://www.merge.dev/blog/github-mcp-cursor
+  - https://www.merge.dev/blog/trello-mcp-cursor
+  - raw/articles/merge.dev--blog-github-mcp-cursor--805854f6.md
+  - raw/articles/merge.dev--blog-trello-mcp-cursor--46131e27.md
 ---
 
-# Merge.dev
+# Merge.dev (Merge Agent Handler)
 
-**URL:** https://merge.dev
-**Blog:** merge.dev/blog
-**Founded:** 2021
-**Leadership:** Not publicly disclosed
-**Key Products:** Unified API platform for integrations, AI agent testing tools
-**Focus:** Testing infrastructure for AI agents, integration automation
+> **Merge Agent Handler** is Merge.dev's MCP (Model Context Protocol) server product that connects AI coding agents (Cursor, Claude Code) to third-party SaaS APIs through a centralized OAuth management layer. Provides enterprise-grade access control, audit logging, and token lifecycle management for agent-to-API interactions.
+
+| | |
+|---|---|
+| **Website** | [merge.dev](https://www.merge.dev) |
+| **Product** | Merge Agent Handler |
+| **CLI** | `merge-api` (pipx install) |
+| **Focus** | MCP servers for SaaS APIs + enterprise governance |
 
 ## Overview
 
-Merge.dev is an API integration platform that has expanded into **AI agent testing infrastructure**. Their recent blog posts focus on systematic approaches to testing AI agents, particularly around MCP server tool calls, non-deterministic LLM behavior, and agent evaluation methodologies.
+Merge Agent Handler bridges AI coding agents and third-party APIs by providing managed MCP servers with centralized authentication. Instead of developers managing personal access tokens and configuring auth state per-project, Merge handles OAuth credentials, token rotation, and access control centrally.
 
-## AI Agent Testing Contributions (May 2026)
+## Core Products
 
-Merge.dev published a comprehensive guide on **how to test AI agents effectively** with 5 key tips:
+### GitHub MCP Server
 
-### 1. Measure Hit Rate
-- **Hit rate**: percentage of times an agent calls the correct tool for a given scenario
-- Define reference scenarios with expected tool calls
-- Use semantic equivalence checking (not exact string matches)
-- Reveals whether MCP server tools have exhaustive, appropriate names and descriptions
+Connects Cursor (and other MCP clients) to the GitHub API. Enables agents to:
 
-### 2. Track Pass/Fail Outcomes
-- Define specific prompts and expected output labels
-- Mark certain labels as passing, others as failing
-- Example: "Website is down" → expected: "Create Jira issue, High Priority" = pass
+- **PR inspection**: Fetch real PR diff structures, file changes, hunk data, review threads
+- **Issue data**: Retrieve issue schemas including labels, milestones, assignees, timeline events
+- **Repository permissions**: Query collaborator lists with role/permission fields
+- **Commit metadata**: Pull commit records with author identity, message body, associated PRs
+- **Workflow runs**: Fetch CI pipeline results with job-level step outcomes and log URLs
+- **Labels & milestones**: Query full label sets and open milestones with IDs
 
-### 3. Re-test After Model Changes
-- Re-run all existing tests when underlying models change
-- Newer models may phrase tool arguments differently or interpret instructions more loosely
-- Identifies where certain models underperform (e.g., invoke wrong tools)
+**Setup (4 steps)**: `pipx install merge-api` → `merge login` → `merge connect-cursor` from project root → first tool invocation triggers Magic Link OAuth.
 
-### 4. Test Multiple Models
-- Test every LLM your agents might use
-- Isolate potential issues by model
-- Enable comparison across different model capabilities
+**Why Merge vs self-hosted**: Self-hosted GitHub MCP servers use personal access tokens that carry full account access with no per-agent controls. Merge provides scoped access (e.g., read-only PR monitoring without write/delete), audit logging with timestamps/tool names/inputs, and centralized token rotation.
 
-### 5. MCP Server Testing
-- Official MCP servers often deployed with gaps (missing/inconsistent tool metadata, weak auth)
-- Test against projected prompts including edge cases, malformed inputs, permission constraints
-- Include adversarial scenarios (e.g., prompt injection attempts)
+### Trello MCP Server
 
-## Related Concepts
-- [[concepts/testing-ai-agents]] — Testing AI Agents: systematic evaluation methodologies
-- [[concepts/mcp]] — Model Context Protocol standard
-- [[concepts/agent-development-lifecycle]] — Agent development lifecycle
+Connects Cursor to Trello boards. Enables agents to:
+
+- **Card schemas**: Fetch real card objects with field names, nested member objects, due date formats
+- **List IDs**: Query board list structures for card creation targeting
+- **Label definitions**: Retrieve full label sets with IDs and color values
+- **Member permissions**: Query board member records with role/permission fields
+- **Checklist items**: Fetch cards with nested checklist item structures and completion states
+- **Webhook events**: Pull real board activity to understand event field structures
+
+## Architecture
+
+Merge Agent Handler uses a CLI-based MCP pattern:
+
+1. `merge-api` CLI installed via pipx
+2. `merge login` authenticates against Merge account (central OAuth)
+3. `merge connect-cursor` writes a `## Merge CLI` section to `.cursorrules`
+4. Cursor's agent calls `merge search-tools` and `merge execute-tool` to reach third-party APIs
+5. Merge handles OAuth token storage/refresh — no personal access tokens stored locally
+
+## Enterprise Features
+
+- **Scoped access control**: Per-agent tool permissions (e.g., PR read but never merge/delete)
+- **Audit logging**: Every call logged with timestamp, tool name, inputs
+- **Multi-user OAuth**: Handles Trello multi-workspace OAuth across users
+- **Centralized token rotation**: No per-project auth state management
+
+## Related
+
+- [[concepts/model-context-protocol-mcp]] — MCP protocol standard
+- [[entities/codex]] — Codex MCP dual support
+- [[entities/claude-code]] — Claude Code MCP integration
+- [[entities/cursor]] — Cursor IDE
 
 ## References
-- [How to test AI agents effectively (5 tips)](https://merge.dev/blog/testing-ai-agents) — May 2026
+
+- merge.dev--blog-github-mcp-cursor--805854f6
+- merge.dev--blog-trello-mcp-cursor--46131e27

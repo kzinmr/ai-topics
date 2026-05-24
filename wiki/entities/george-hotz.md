@@ -2,10 +2,11 @@
 title: George Hotz (geohot)
 type: entity
 created: 2026-05-04
-updated: 2026-05-21
+updated: 2026-05-24
 tags:
   - person
   - open-source
+  - ai-safety
 sources:
   - https://geohot.github.io/
   - https://geohot.github.io//blog/jekyll/update/2026/05/03/punk-or-why-i-dont-stream.html
@@ -71,15 +72,29 @@ In a May 20, 2026 post titled "[the singularity is nearer](https://geohot.github
 - **Taste over scale**: "The era of scaling yields clearly better AI is over, now we enter an era of efficiency and taste." Most things aren't optimization problems — "the whole hard problem is determining what to optimize for."
 - **AI costs**: AI has the property of "exponentially more money for linear returns" — solvable hard problems in theory but very expensive in practice.
 
+### "There is Only One Bad AI Scenario" (May 2026)
+
+In a May 23, 2026 post titled "[There is only one bad AI scenario](https://geohot.github.io//blog/jekyll/update/2026/05/23/one-bad-scenario.html)", Hotz offers a sober analysis of AI existential risk, rejecting both Skynet-style doomsday and gray goo scenarios as "science fiction domination fantasies" and "too bizarre to be true." Instead, he articulates a subtler dystopia:
+
+- **Administrative totalitarianism**: The threat isn't violent AI takeover but a **"safetyism" singleton** — an AI-mediated control layer that optimizes the current societal loss function of human domestication. "For your safety, reality must be mediated."
+- **The singleton as the only world-ending scenario**: "Not one big model on one server, but one effective control layer with no outside." The end comes not through war but through the total elimination of independent systems — "no independent actor can impose costs on it. No rival system can route around it. No uncontrolled evolutionary process can surprise it."
+- **Safetyism as an irresistible impulse**: Humans have repeatedly chosen safety over freedom — from COVID vaccine cards to cryptographic identity systems. The trend of technology is "more and more mediation of reality. For your safety. For your convenience. To make you legible."
+- **Evolution as the casualty**: "Humans are evolutionary creatures." Even terrible systems historically couldn't fully control generational reproduction because "entropy locally asserts itself, and reality cannot be perfectly controlled." A true AI singleton changes this — it eliminates the evolutionary randomness that eventually breaks totalitarian systems.
+- **No outside = no correction**: "That system is no longer answerable to reality. It is no longer subject to evolution. It cannot be corrected from the outside. That is the end." The doom is not a great war but "the slow and managed end of evolution."
+
+This post aligns with Hotz's broader themes from "Punk" — AI-mediated reality as wireheading, the loss of genuine agency — while extending the argument to the civilizational scale. It represents his most direct engagement with the AI safety debate.
+
 ## Sources
 
 - [geohot.github.io](https://geohot.github.io/)
 - [Punk, or why I don't stream anymore](https://geohot.github.io//blog/jekyll/update/2026/05/03/punk-or-why-i-dont-stream.html) (May 2026)
 - [The Real Singularity is the Friends We Made Along the Way](https://geohot.github.io//blog/jekyll/update/2026/05/09/real-singularity.html) (May 2026)
 - [the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/05/20/what-will-better-mean.html) (May 2026)
+- [There is only one bad AI scenario](https://geohot.github.io//blog/jekyll/update/2026/05/23/one-bad-scenario.html) (May 2026)
 
 ## References
 
 - geohot.github.io--blog-jekyll-update-2026-05-03-punk-or-why-i-dont-stream-html--3d6cc46d
 - geohot.github.io--blog-jekyll-update-2026-05-09-real-singularity-html--0dc737c4
 - geohot.github.io--blog-jekyll-update-2026-05-20-what-will-better-mean-html--a09e7f93
+- geohot.github.io--blog-jekyll-update-2026-05-23-one-bad-scenario-html--2f85be19
