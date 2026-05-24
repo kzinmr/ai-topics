@@ -1,0 +1,56 @@
+{
+  "checkpoint_run_id": "20260524T080057Z",
+  "summary_ja": "Raw backlog ingest — 5件中5件skip。Notion Token Town podcast 2件（既にエンティティページ収録済み）、Simon Tathamコルーチン記事 2件（純粋C/C++技術）、APOSD vs Clean Code討論 1件（一般ソフトウェア設計）。AI/LLM/Agent関連コンテンツなし。",
+  "decisions": [
+    {
+      "item_id": "substack.com--app-link-post--25ef0aa6",
+      "source": "backlog",
+      "title": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future - Simon Last & Sarah Sachs of Notion",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=194195821",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--25ef0aa6.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にentities/notion.md、entities/simon-last.md、entities/sarah-sachs.mdに全コンテンツ収録済み。同一ポッドキャストエピソードの別追跡URL。",
+      "body_excerpt": "Sarah Sachs and Simon Last of Notion join us for a deep dive into how Notion built Custom Agents, why it took years and multiple rebuilds to get right, and what it means to turn a productivity tool into an agent-native system of record for enterprise work."
+    },
+    {
+      "item_id": "substack.com--redirect-b11b7821-2edd-4d8c-93fa-6b622db06435--1de03c2f",
+      "source": "backlog",
+      "title": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs and the Software Factory Future - Simon Last & Sarah Sachs of Notion",
+      "url": "https://substack.com/redirect/b11b7821-2edd-4d8c-93fa-6b622db06435",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-b11b7821-2edd-4d8c-93fa-6b622db06435--1de03c2f.md",
+      "recommended_action": "skip",
+      "reason_ja": "既にentities/notion.md、entities/simon-last.md、entities/sarah-sachs.mdに全コンテンツ収録済み。同一ポッドキャストエピソードの別追跡URL（redirectパラメータ違い）。",
+      "body_excerpt": "For all those who missed out on London, see you in Miami next week! Notion, the knowledge work decacorn, has been building AI tooling since before ChatGPT..."
+    },
+    {
+      "item_id": "chiark.greenend.org.uk--sgtatham-quasiblog-coroutines-philosophy--12d3c7d2",
+      "source": "backlog",
+      "title": "Philosophy of coroutines",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/coroutines-philosophy/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-coroutines-philosophy--12d3c7d2.md",
+      "recommended_action": "skip",
+      "reason_ja": "Simon Tathamによるコルーチンの哲学的考察。純粋なC/C++プログラミング技術記事。LLM/Agent/AI関連性なし。",
+      "body_excerpt": "I've been a huge fan of coroutines since the mid-1990s. I encountered the idea as a student, when I first read about them..."
+    },
+    {
+      "item_id": "chiark.greenend.org.uk--sgtatham-quasiblog-coroutines-c-20--d6b197bf",
+      "source": "backlog",
+      "title": "Writing custom C++20 coroutine systems",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/coroutines-c++20/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-coroutines-c-20--d6b197bf.md",
+      "recommended_action": "skip",
+      "reason_ja": "C++20コルーチンシステムの実装詳細。純粋なプログラミング言語技術記事。LLM/Agent/AI関連性なし。",
+      "body_excerpt": "C++20's coroutine system has a lot of flexibility that Python's generators (for example) don't. But the flip side of that flexibility is that you have to do a lot of work if you want to use it..."
+    },
+    {
+      "item_id": "aposd-vs-clean-code-debate-2026-04",
+      "source": "backlog",
+      "title": "A Philosophy of Software Design vs Clean Code",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/aposd-vs-clean-code-debate-2026-04.md",
+      "recommended_action": "skip",
+      "reason_ja": "John OusterhoutとRobert Martinのソフトウェア設計哲学議論。一般的なコード設計原則（メソッド長、コメント、TDD）に関する討論。LLM/Agent/AI文脈なし。",
+      "body_excerpt": "This document is the result of a series of discussions, some online and some in person, held between Robert \"Uncle Bob\" Martin and John Ousterhout between September 2024 and February 2025..."
+    }
+  ]
+}

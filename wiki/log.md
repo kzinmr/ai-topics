@@ -3,6 +3,27 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 
+## [2026-05-24] active-crawl | Cohere Command A+, NVIDIA Nemotron-Labs Diffusion, Google Agent Executor, Gemini CLI, Stable Audio 3.0
+
+### Pages Created
+- **[[entities/command-a-plus]]** — Cohere's 218B MoE model, first fully Apache 2.0 licensed. 25B active params, 48 languages, W4A4 lossless quantization. Consolidates 5 Command family models. May 2026 release.
+- **[[concepts/nemotron-labs-diffusion]]** — NVIDIA's diffusion language model family (3B/8B/14B). Block-wise attention enables non-autoregressive inference via iterative denoising. Up to 6.4× faster than AR decoding. Converted from pretrained AR checkpoints. SGLang serving.
+- **[[concepts/agent-executor]]** — Google's open-source distributed agent runtime (May 20, 2026). Durable execution (event log + snapshotting), secure sandbox isolation, trajectory branching, connection recovery. Companion Agent Substrate project for Kubernetes.
+- **[[entities/gemini-cli]]** — Google's open-source AI coding agent CLI. 100K+ GitHub stars, 6,000+ community PRs. Sun-setting June 18, 2026 for non-enterprise users. Replaced by closed-source Antigravity CLI. Community labels it "bait and switch."
+- **[[entities/stable-audio-3]]** — Stability AI's 4-model audio generation family. Up to 6m20s tracks, Medium (1.4B) open weights. SAME autoencoder for semantic structure, no CFG for 2× speedup. Fully licensed training data (AudioSparx + Freesound).
+
+### Raw Articles Saved
+- `raw/articles/2026-05-20_cohere-command-a-plus.md` — Cohere official blog
+- `raw/articles/2026-05-23_nvidia-nemotron-labs-diffusion.md` — DEV Community deep dive / HuggingFace
+- `raw/articles/2026-05-20_google-agent-executor.md` — Google Cloud Blog (Jaana Dogan, Ethan Bao)
+- `raw/articles/2026-05-19_google-gemini-cli-sunset.md` — TechTimes
+- `raw/articles/2026-05-20_stable-audio-3.md` — Awesome Agents / arXiv:2605.17991
+
+### Index Updates
+- Added 5 index entries (3 entities, 2 concepts). Total pages: 2019→2024.
+
+---
+
 ## [2026-05-24] blog-ingest | George Hotz AI safety, Codex enterprise recognition, Merge MCP entity
 
 ### Pages Created

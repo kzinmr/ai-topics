@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-24 | Total pages: 2019 | Indexed entries: 1284 | Not in index: 713 |
+> Last updated: 2026-05-24 | Total pages: 2024 | Indexed entries: 1289 | Not in index: 713 |
 
-## Entities (654 pages)
+## Entities (657 pages)
 
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -19,6 +19,7 @@
 - [[entities/box-com]] — Box (box.com) — Enterprise cloud content management platform. AI-native platform with Box AI, Box Hubs, Box Canvas. Aaron Levie CEO.
 - [[entities/cerebras-systems]] — Cerebras Systems — Wafer-scale AI chips, CS-3 system, 1.2M cores on single wafer
 - [[entities/claude-perfect-memory]] — Claude Perfect Memory
+- [[entities/command-a-plus]] — Command A+ — Cohere's 218B MoE model, first fully Apache 2.0 licensed. 25B active params, 48 languages, W4A4 quantization, 2× H100 deployment. May 2026.
 - [[entities/company-ai-pilled]] — Company AI Pilled
 - [[entities/content-engine]] — Content Engine
 - [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
@@ -33,6 +34,7 @@
 - [[entities/florian-brand]] — Florian Brand (@xeophon) — Research Engineer at Prime Intellect (evals). Editor at Interconnects (open models). OSWorld critique.
 - [[entities/gary-marcus]] — Cognitive scientist, NYU professor emeritus, LLM skepticism (consciousness, understanding, sentience). Coined "Gullibility Gap" — human tendency to anthropomorphize AI outputs. Author of "Misplaced panic over AI progress" (May 2026) critiquing METR's 50%-time-horizon methodology. "The illusion of Generative AI" (May 2026): neurosymbolic AI, world models, hyperscaling critique.
 - [[entities/garry-tan]] — Garry Tan — YC President & CEO, engineer-turned-VC, creator of G Stack. Proponent of "Meta-Meta-Prompting" and "Fat Skills, Fat Code, Thin Harness" AI agent architecture. Uses OpenClaw + Hermes Agent for routing.
+- [[entities/gemini-cli]] — Gemini CLI — Google's open-source AI coding agent CLI (100K+ stars). Sun-setting June 18, 2026 for non-enterprise users. Replaced by closed-source Antigravity CLI.
 - [[entities/george-hotz]] — George Hotz (geohot) — hacker, comma.ai/tinygrad founder. AI safety analysis: singleton threat, evolutionary endgame.
 - [[entities/gkisokay]] — gkisokay — Hermes Agent advanced usage, agent watchdog architecture
 - [[entities/fred-schott]] — Fred K. Schott — Creator of Astro, open source developer
@@ -77,6 +79,7 @@
 - [[entities/seth-karten]] — Seth Karten — CS PhD at Princeton, creator of PokeChamp/PokeAgent, lead author of Continual Harness framework.
 - [[entities/sierra]] — Sierra — AI customer service platform ($15B valuation, $200M+ ARR). Enterprise conversational AI agents; τ-Knowledge benchmark for knowledge-grounded agent evaluation.
 - [[entities/siyan-zhao]] — Siyan Zhao — UCLA / Meta Superintelligence Labs researcher. Lead author of On-Policy Self-Distillation (OPSD) for LLM reasoning post-training (2026). Same-model self-distillation with privileged ground-truth context.
+- [[entities/stable-audio-3]] — Stable Audio 3.0 — Stability AI's 4-model audio generation family. Up to 6m20s tracks, 3/4 open weights. SAME autoencoder, no CFG, inpainting. May 2026.
 - [[entities/tambo]] — Tambo (tambo.co) — オープンソースGenerative UIツールキットfor React。AIエージェントが既存コンポーネントで応答
 - [[entities/thibault-sottiaux]] — OpenAI executive. Led Codex development; May 2026 promoted to lead core product and platform teams (ChatGPT + Codex + API). Overseeing "super app" development.
 - [[entities/tobi-lutke]] — Tobi Lütke — Shopify CEO, Ruby on Rails core member, Snowdevil founder. River AI agent, qmd (24.6K★), $1 salary, IMSA LMP2 racer. Apprenticeship philosophy.
@@ -685,6 +688,7 @@
 - [[concepts/adversarial-interoperability]] — Adversarial Interoperability — Theory and practice of interoperating with platforms against their wishes. Cory Doctorow's framework for competitive tech policy
 - [[concepts/agent-documentation]] — Agent Documentation — Writing documentation optimized for AI coding agents: structured specs, clear interfaces, docstrings as semantic contracts
 - [[concepts/agent-distillation]] — Agent Distillation — Distilling entire agent workflows (multi-step reasoning, tool use) into model weights for ~100x cheaper inference.
+- [[concepts/agent-executor]] — Agent Executor — Google's open-source distributed agent runtime. Durable execution, secure sandbox isolation, trajectory branching, connection recovery. May 2026.
 - [[concepts/agent-first-codebase-design]] — Agent-First Codebase Design — Structuring repositories and codebases for maximum AI agent comprehension and effectiveness
 - [[concepts/agent-first-design]] — Agent-First Design — Programming languages designed for AI agents as first-class users. Ronacher's framework + Vercel Zero implementation.
 - [[concepts/agentic-alternative-to-graphrag]] — Agentic Alternative to GraphRAG — Moving beyond GraphRAG to agent-based retrieval patterns
