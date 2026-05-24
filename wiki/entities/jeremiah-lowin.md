@@ -2,9 +2,9 @@
 title: Jeremiah Lowin
 type: entity
 entity_type: person
-status: L1
+status: L2
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-24
 tags:
   - person
   - ai-agents
@@ -19,12 +19,15 @@ sources:
   - https://github.com/jlowin
   - https://jlowin.dev/blog/fastmcp-3
   - https://jlowin.dev/blog/fastmcp-3-launch
+  - https://jlowin.dev/blog/fastmcp-3-2
+  - https://github.com/PrefectHQ/fastmcp/releases/tag/v3.3.0
   - https://jlowin.dev/blog/prefab
   - https://jlowin.dev/blog/ten-years-of-real-good-coffee
   - https://hugobowne.substack.com/p/agentic-engineering-and-the-lost
   - https://www.prefect.io/blog/how-jeremiah-lowin-turned-a-life-long-question-into-an-industry-leading-startup
   - https://news.ycombinator.com/item?id=47697566
   - https://www.youtube.com/watch?v=oVopa_3uZdo
+  - https://softwareengineeringdaily.com/2026/04/07/fastmcp-with-adam-azzam-and-jeremiah-lowin/
 description: "Founder & CEO of Prefect (data/AI workflow orchestration). Creator of FastMCP (standard Python MCP framework). Built Prefab (generative UI DSL), Cardboard (ephemeral presentation tool). Strategic adviser to Spotify, Positive Sum, OSV. Global Ambassador of Compass Coffee."
 ---
 
@@ -64,6 +67,9 @@ A Python framework for building agentic AI workflows, later archived as focus sh
 - **v2.6 (Jun 2025)**: Introduced Bearer token authentication for MCP servers and clients
 - **v3.0 (Jan 2026)**: Major re-architecture — support for custom providers (filesystems, REST APIs), component-level authorization, agent skills over MCP, composable servers, CLI tooling (`fastmcp list`, `fastmcp call`, `fastmcp discover`, `fastmcp generate-cli`), hot reload, and more
 - **v3.0 GA (Feb 2026)**: Moved from `jlowin/fastmcp` to `PrefectHQ/fastmcp`; FastMCP Cloud launched for MCP-native deployment
+- **v3.2 (Apr 2026)**: Introduced **MCP Apps** — a second protocol channel returning interactive applications (charts, dashboards, forms) instead of plain structured data. Integrated **Prefab** (generative Python UI framework) natively. Added five built-in providers: FileUpload, FormInput, Approval, Choice, GenerativeUI. Security hardening pass (SSRF, JWT alg restrictions, OAuth scope enforcement). Dev server with browser-based app preview and MCP message inspector. Install: `pip install "fastmcp[apps]"`.
+- **v3.3 "Slim Reaper" (May 2026)**: Shipped `fastmcp-slim` — a lightweight client-only distribution for CI/agent environments (`pip install fastmcp-slim[client]`). OAuth silent consent hardening, redirect URI allowlist matching, cache partitioned by access token. AzureB2CProvider. OTEL compliance with MCP semantic conventions. Thread affinity control (`run_in_thread=False`). 13 new contributors this release.
+- **v3.4.0b1 "Remote Possibility" (May 2026)**: Beta release for `fastmcp-remote` package, host compatibility, and remote authentication behavior.
 - **Key talks**: "Your MCP Server is Bad (and you should feel bad)" at AI Engineer Code Summit (2025) and ODSC AI East (2026); "Model Context Pragmatism" at MCP Dev Summit (2026)
 
 Lowin describes the MCP era as moving past "tool servers" toward the **context era**: source from anywhere, compose and transform freely, personalize per-user, track state across sessions, control access, run long operations, version APIs, observe everything.
@@ -117,6 +123,7 @@ Lowin serves as a strategic adviser to:
 | 2026 | ODSC AI East | Keynote — "Your MCP Server is Bad (and you should feel bad)" |
 | 2026 | MCP Dev Summit | "Model Context Pragmatism" |
 | 2026 | PyAI | Keynote — "Build Reasonable Software" |
+| 2026 | Software Engineering Daily | "FastMCP with Adam Azzam and Jeremiah Lowin" — MCP origin story, 3 pillars, 3.0 architecture |
 | 2025 | AI Engineer Code Summit | "Your MCP Server is Bad (and you should feel bad)" |
 | 2025 | First Commit with Nina | MCP as a standardized handshake for the AI era |
 

@@ -1,3 +1,14 @@
+## [2026-05-24] skeleton-enrich-daily | Daily skeleton enrichment — no skeletons found, enriched jeremiah-lowin (L1→L2)
+
+### Enriched
+- `entities/jeremiah-lowin.md` — L1→L2: Added FastMCP 3.2 (MCP Apps + Prefab + Generative UI), FastMCP 3.3 "Slim Reaper" (fastmcp-slim client-only distribution), FastMCP 3.4.0b1 "Remote Possibility" (remote auth). Added Software Engineering Daily podcast (Apr 2026) to Selected Talks. Updated sources.
+
+### Status
+- No `status: skeleton` entity pages found. All 659 entity pages are skeleton-free.
+- 1 remaining low-status page: `adam-rosenthal` (needs-identification — identity could not be verified across multiple searches)
+
+---
+
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
