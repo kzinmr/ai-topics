@@ -5,6 +5,24 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md and start fresh.
 
+## [2026-05-25] x-bookmarks-ingest | Shannon Scaling Law curation + Claude Code 7-Agent Software Factory
+
+### Bookmark 1: @gm8xx8 — Shannon Scaling Law
+- **Raw記事保存**: `raw/articles/2026-05-25_gm8xx8_shannon-scaling-law-tweet.md` — 情報理論（Shannonの雑音チャネル）を用いてLLM scalingの非単調性をモデル化するフレームワーク。モデルサイズ=帯域幅、トークン=信号、摂動=雑音。
+- **更新**: `entities/gm8xx8.md` — Recent Curation (May 2026) セクションに Shannon Scaling Law ツイートを追加。arXiv:2410.01243（LDPC符号を用いた情報理論的スケーリング則）への参照付き。
+
+### Bookmark 2: @sairahul1 — How to Build a Software Factory with Claude Code
+- **Raw記事保存**: `raw/articles/2026-05-25_sairahul1_claude-code-software-factory-7-agents.md` — Claude Code で7つの特化エージェントによるソフトウェアファクトリーを構築する実践ガイド。vibe coding の限界を克服する構造化パイプライン。
+- **新規ページ**: `entities/sairahul1.md` — Rahul (@sairahul1): AI engineer（Pixxel, Hyderabad）。Claude Code 7-agent Software Factory の考案者。Golang, Django, AWS。
+- **概念ページ強化**: `concepts/dark-factory-software-factory.md` — @sairahul1's 7-Agent Factory ケーススタディ追加。7エージェント構成表、パイプライン設計の要点（3 human checkpoints, CLAUDE.md, context isolation）、StrongDMとの比較表。
+- **エンティティ強化**: `entities/claude-code.md` — Usage & Workflows に 7-Agent Software Factory Workflow サブセクション追加。
+
+### Index更新
+- `entities/_index.md`: sairahul1 エントリ追加（ryan-lopopolo と sam-altman の間）
+- `wiki/index.md`: sairahul1 エントリ追加、Total pages: 2063→2064
+
+---
+
 ## [2026-05-25] dreaming | Nightly consolidation — Callosum, Heterogeneous Intelligence, DeepMind Antigravity ops
 
 ---

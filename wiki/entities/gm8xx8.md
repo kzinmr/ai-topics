@@ -4,13 +4,14 @@ tags:
   - person
   - lab
 created: 2026-04-24
-updated: 2026-05-04
+updated: 2026-05-25
 type: entity
 aliases: [Gm8xx8, gm8xx8]
 sources:
   - https://x.com/gm8xx8
   - https://huggingface.co/gm8xx8
   - https://github.com/gm8xx8
+  - raw/articles/2026-05-25_gm8xx8_shannon-scaling-law-tweet.md
 ---
 
 
@@ -169,6 +170,21 @@ gm8xx8's HuggingFace upvote activity shows engagement with:
 - **LateOn-Code Collection** (late interaction code retrieval)
 - **GLiNER/GLiClass** (efficient zero-shot classification)
 - **OpenEarthAgent** (earth science AI agents)
+
+## Recent Curation (May 2026)
+
+### Shannon Scaling Law (2026-05-25)
+
+Shared a conceptual framework tweet on **"Shannon Scaling Law"** — an information-theoretic model for where LLM scaling stops being monotonic:
+
+- **Model size** = bandwidth (channel capacity)
+- **Tokens** = signal (transmitted information)
+- **Data/model/perturbation effects** = noise (channel corruption)
+- **Target**: The failure mode classical power laws miss — non-monotonic loss degradation
+
+The framework draws on Shannon's noisy channel coding theorem to predict when additional compute yields diminishing or negative returns. Likely references arXiv:2410.01243 ("An Information Theory of Compute-Optimal Size Scaling, Emergence, and Plateaus in Language Models") which uses LDPC codes (achieving Shannon optimality) and random graph theory to explain both the Chinchilla rule and plateau phenomena.
+
+Source: [[raw/articles/2026-05-25_gm8xx8_shannon-scaling-law-tweet]]
 
 ## Notes
 

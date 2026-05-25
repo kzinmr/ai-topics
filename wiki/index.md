@@ -75,6 +75,7 @@
 - [[entities/riley-walz]] — Riley Walz (@rtwlz) — Software engineer and internet artist. Bop Spotter, Jmail, IMG_0001, Find My Parking Cops. OAI Labs at OpenAI (2026–). First peoplereadmes persona subject.
 - [[entities/romain-huet]] — Romain Huet — Head of Developer Experience at OpenAI, host of Builders Unscripted
 - [[entities/roocode]] — RooCode — AI-powered VS Code extension (shut down May 15, 2026). Community fork Zoo Code continues development. 24K stars, Steer Mode for local models.
+- [[entities/sairahul1]] — Rahul (@sairahul1): AI engineer, Claude Code 7-agent Software Factory author. Pixxel, Hyderabad.
 - [[entities/salesforce-headless-360]] — Salesforce's agent-first platform restructuring. Exposes full CRM via APIs, MCP, CLI. Browser UI is now optional.
 - [[entities/sapient-intelligence]] — Sapient Intelligence — Brain-inspired AGI company (Singapore/Beijing/PA). HRM-Text: 1B non-Transformer reasoning model trained for ~$1,000. HRM beat DeepSeek R1/o3 on ARC-AGI.
 - [[entities/samuelcolvin]] — samuelcolvin
