@@ -1,7 +1,7 @@
 ---
 title: Thomas Wiecki
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-25
 type: person
 tags:
   - person
@@ -12,6 +12,7 @@ tags:
   - open-source
 sources:
   - raw/articles/2026-05-12_hugobowne_agentic-engineering-verification.md
+  - raw/newsletters/2026-05-25-the-future-of-agentic-data-science.md
   - raw/articles/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
   - https://twiecki.io/
   - https://www.pymc-labs.com/team-detail/thomas-wiecki
@@ -51,6 +52,13 @@ Since May 2026, co-hosting with [[entities/hugo-bowne-anderson]] a live series w
 
 Building a course with Hugo on applying agentic engineering to data science workflows — hands-on cohort format with reusable skills, open-source code, and notebooks.
 
+In May 2026, Thomas co-hosted the Vanishing Gradients episode "The Future of Agentic Data Science":
+- **Decision Engines** — transforming data science from cost center to real-time decision hub
+- **Multiplayer Data Science** — democratizing what-if questions via natural language
+- **Full Agentic Data Science Stack** — orchestration + causal eval + decision framework
+- **Scripted Causal-Bayesian Workflows** — automating rigorous causal analysis at scale
+- **Encoding Professional Judgment as Skills** — domain expertise as reusable agent skills
+
 ## Key Philosophy
 
 Thomas approaches agentic engineering from a statistical perspective — treating agent outputs as probabilistic, needing verification rather than blind trust. His Bayesian background shapes how he thinks about agent reliability, uncertainty quantification, and the generator-evaluator workflow pattern.
@@ -63,7 +71,7 @@ Thomas approaches agentic engineering from a statistical perspective — treatin
 
 ## Related Entities
 
-- [[entities/hugo-bowne-anderson]] — Co-host of Show Us Your Agent Skills
+- [[entities/hugo-bowne-anderson]] — Co-host of Show Us Your Agent Skills and Vanishing Gradients (Agentic Data Science episode)
 - [[entities/wes-mckinney]] — Episode 1 guest
 - [[entities/jeremiah-lowin]] — Episode 1 guest
 - [[entities/randy-olson]] — Episode 1 guest

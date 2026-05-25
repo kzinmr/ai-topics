@@ -178,7 +178,7 @@
 - [[entities/daniel-van-strien]] — Daniel van Strien — Machine Learning Librarian at Hugging Face. Focuses on datasets, GLAM+AI bridge, and data curation. Former British Library Digital Curator (Living with Machines). Creator of awesome-synthetic-datasets. Author of AI Design Patterns for Information Professionals.
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
 - [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.
-- [[entities/dario-amodei]] — **Role** | Co-founder & CEO, Anthropic |
+- [[entities/dario-amodei]] — **Role** | Co-founder & CEO, Anthropic | Davos 2026: "10% growth and 10% unemployment at the same time" thesis on AI macroeconomic impact.
 - [[entities/datasette-agent]] — Extensible AI assistant for Datasette/SQLite by Simon Willison (May 2026). 0.1a4: Jump to menu integration in Datasette 1.0a30. Conversational SQL generation, chart plugins, LLM library integration. Live demo at agent.datasette.io.
 - [[entities/david-fowler]] — David Fowler (@davidfowl) — Distinguished Engineer at Microsoft. Creator of NuGet, SignalR, ASP.NET Core, Aspire (agent-ready DevOps). Tally (AI bank tx classifier). "AI Made Us Faster. That Was the Problem" (May 2026).
 - [[entities/dax-raad]] — **X** | @thdxr |
@@ -237,7 +237,7 @@
 - [[entities/forrest-chang]] — Creator of the andrej-karpathy-skills repo — fastest-growing single-file repo of 2026 (120K+ stars). Converted Karpathy's LLM coding observations into 4 behavioral CLAUDE.md rules.
 - [[entities/foundation-capital]] — AI-focused venture capital firm backed by Context Graphs and Agent Infrastructure thesis. Partner Jaya Gupta published influential posts on context graphs and managed agents.
 - [[entities/fourier-intelligence]] — Chinese company specializing in rehabilitation robotics and general-purpose humanoid robots. Combines medical expertise with advanced robotics technology.
-- [[entities/gemini]] — Google's multimodal AI model family. I/O 2026: Gemini 3.5 Flash, Omni (world model video gen), Spark (24/7 AI agent), Daily Brief. 900M+ monthly users. Powered by Antigravity harness.
+- [[entities/gemini]] — Google's multimodal AI model family. I/O 2026: Gemini 3.5 Flash (Terminal-Bench 76.2%, MCP Atlas 83.6%, 4× faster at half cost), Omni (world model video gen), Spark (24/7 AI agent), Daily Brief. AI Mode: 1B monthly users. Hassabis: Omni is "a step toward AGI." Powered by Antigravity harness.
 - [[entities/gemini-enterprise-agent-platform]] — Google Cloud's unified enterprise AI agent platform. Gemini Managed Agents + Interactions API (May 2026): secure hosted Linux sandbox with memory and code execution. Vertex AI evolved into full-stack build/scale/govern/optimize platform.
 - [[entities/gemini-3-5-flash]] — Gemini 3.5 Flash — Google's frontier agent model (May 2026). Design Arena 16位 (+16). Mixed reception: "optimized for evals, not cooperating with humans" (@jeremyphoward). Terminal-Bench 76.2%, MCP Atlas 83.6%, 4× faster. Antigravity harness.
 - [[concepts/gemini-spark]] — Googleの24/7パーソナルAIエージェント（I/O 2026）。Gemini 3.5 Flash + Antigravity harness上で動作。定期タスク、カスタムスキル学習、Workspace深層統合。クラウド常駐型。
@@ -270,7 +270,7 @@
 - [[entities/hamel-husain]] — **Role** | Independent Consultant (Parlance Labs), R&D at AnswerAI, Scout at Bain Capital |
 - [[entities/han-lee]] — Han Lee (Hanchung Lee) — Senior Director of Data + AI at Moody's Analytics. Author of "Han, Not Solo" blog (RSS tracked). Wrote the foundational "Hidden Technical Debt of AI Systems" trilogy: [[raw/articles/2026-03-21_leehanchung_rl-environments-for-llm-agents|RL Environments Taxonomy]] (Mar 2026) → [[concepts/agent-runtime|Agent Runtime]] (Apr 2026) → [[raw/articles/2026-05-08_leehanchung_hidden-technical-debt-agent-harness|Agent Harness]] (May 2026). Other key work: Data Aggregation Is Not a Moat, Don't Outsource Your Understanding (cognitive offloading vs surrender).
 - [[entities/hanchunglee]] — Hanchung Lee (Han Lee, @hanchunglee) — Focused entity page on the Agent Runtime analysis from his "Hidden Technical Debt" series. Covers: isolation primitive stack, sandboxing necessity (4 reasons), runtime shift, web app vs agent runtime comparison. See [[entities/han-lee]] for full biography and article catalog.
-- [[entities/hark]] — Hark — GPU infrastructure company. $700M at $6B valuation (May 2026). 200-hour autonomous runs.
+- [[entities/hark]] — Hark — GPU infrastructure company. $700M+ at $6B (oversubscribed, May 2026). Investors: Nvidia/AMD/Intel/Qualcomm/Salesforce Ventures. Roadmap: AI models summer 2026, then consumer devices. 200-hour autonomous runs.
 - [[entities/hearth-ai]] — Hearth AI — First agentic CRM (founded 2022), built on GPT-3.5. Evolved toward agentic personal OS.
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
 - [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent（150K GitHub stars, #1 OpenRouter global token usage）。Persistent memory、self-improving skills（Curatorシステムで90日未使用スキルを自動整理）、Agentic Loopを収録。OpenClawのorchestratorとのACP連携によるdual-agent architectureでexecution specialistとして機能。Shann (@shannhk) の4-level fleet operation model、21-step SEO pipeline。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
@@ -279,7 +279,7 @@
 - [[entities/hoeem]] — X/Twitter クリエイター（@hooeem, 169K+ フォロワー）。Claude Certified Architect 試験の全5ドメインを解説したX Articleが60Kブックマーク。Claude Code・Agent SDK・MCPの実践的教育コンテンツを発信。
 - [[entities/hillel-wayne]] — **Blog** | hillelwayne.com |
 - [[entities/hugging-face]] — **The GitHub of AI** — the central open-source infrastructure layer for machine learning. Platform for sharing, discovering, and deploying ML models, datasets, and demos.
-- [[entities/hugo-bowne-anderson]] — **Data scientist, educator, podcaster, consultant.** Independent AI & data science educator. Host of **Vanishing Gradients** podcast. Central voice in agent harness engineering (Reduce/Offload/Isolate with Lance Martin/Anthropic; context engineering with Jeff Huber/Chroma; self-extending agents with Ivan Leo). Agentic search breakthroughs (15-30% NDCG). Privacy engineering framework author. O'Reilly author, ex-DataCamp/Outerbounds/Coiled.
+- [[entities/hugo-bowne-anderson]] — **Data scientist, educator, podcaster, consultant.** Independent AI & data science educator. Host of **Vanishing Gradients** podcast. Central voice in agent harness engineering (Reduce/Offload/Isolate with Lance Martin/Anthropic; context engineering with Jeff Huber/Chroma; self-extending agents with Ivan Leo). Agentic search breakthroughs (15-30% NDCG). Privacy engineering framework author. Agentic Data Science podcast (May 2026): Decision Engines, Multiplayer DS, Causal-Bayesian workflows. O'Reilly author, ex-DataCamp/Outerbounds/Coiled.
 - [[entities/harrison-chase]] — CEO & Co-founder of LangChain. Articulated the "Open Models / Open Runtime / Open Harness" three-layer agent architecture framework. LangChain Deep Agents is the reference implementation of an Open Harness.
 - [[entities/hynek-schlawack]] — **X** | @hynek |
 - [[entities/hyperbo]] — hyperboドメインのAIエージェント記事・コンテンツ
@@ -508,7 +508,7 @@
 - [[entities/thoughtful-lab]] — AI research lab exploring modelcrafting: autonomous AI agents improving other AI models. Landmark experiment "Letting AI Posttrain AI" (Apr 2026).
 - [[entities/theodoros-galanos]] — AI researcher and harness engineering practitioner. Chief Science Officer at infrared.city, author of The Harness blog, creator of Lambda-RLM and AEC-Bench. @TheodoreGalanos.
 - [[entities/thin-bi-tool]] — 薄くなるBIツール — BI tools transitioning from comprehensive analysis platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
-- [[entities/thomas-wiecki]] — Thomas Wiecki — CEO of PyMC Labs, PyMC core developer, co-host of Show Us Your Agent Skills. Bayesian statistics expert.
+- [[entities/thomas-wiecki]] — Thomas Wiecki — CEO of PyMC Labs, PyMC core developer, co-host of Show Us Your Agent Skills. Vanishing Gradients Agentic Data Science episode (May 2026): Decision Engines, Multiplayer DS, Causal-Bayesian workflows. Bayesian statistics expert.
 - [[entities/thorsten-ball]] — **Thorsten Ball** — Software engineer, author of Writing An Interpreter In Go and Writing A Compiler In Go, works on Amp at Sourcegraph. Wrote "How to Build a Code-Editing Agent: The Emperor Has No Clothes Guide."
 - [[entities/tim-davis]] — Tim Davis — Modular executive, Compound Loop creator. Originated "probabilistic engineering" and "24-7 employee" concepts. Key thinker on AI-native team restructuring and agent fleet orchestration.
 - [[entities/tim-dettmers]] — Researcher (UW), creator of bitsandbytes, LLM.int8() (zero-degradation 8-bit inference), and QLoRA (4-bit fine-tuning). Discovered 6.7B parameter phase shift for emergent outlier features.

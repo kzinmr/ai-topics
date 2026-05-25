@@ -2,11 +2,12 @@
 title: "Gemini"
 type: entity
 created: 2026-04-25
-updated: 2026-05-20
+updated: 2026-05-25
 tags: [model, multimodal, text-generation, image-generation, video-generation, google, world-models, ai-agents]
 aliases: ["Gemini models", "Google Gemini"]
 sources:
   - raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md
+  - raw/newsletters/2026-05-24-google-goes-agentic-hark-s-big-bet-and-starbucks-milk-run.md
   - raw/articles/simonwillison.net--2026-may-19-gemini-35-flash--d5349c1f.md
   - raw/articles/2026-05-20_google_gemini-app-agentic.md
   - raw/articles/2026-05-20_google_gemini-omni.md
@@ -80,6 +81,27 @@ Google introduced the **Interactions API** alongside 3.5 Flash, providing server
 
 - **llm-gemini 0.32** — Added `gemini-3.5-flash` model support
 - **llm-gemini 0.32a0** — Added reasoning token streaming via `llm>=0.32a0`
+
+
+## Benchmarks & Performance
+
+Benchmark results for Gemini 3.5 Flash from Google I/O 2026:
+
+| Benchmark | Score | Notes |
+|-----------|-------|-------|
+| Terminal-Bench 2.1 | 76.2% | Best-in-class for agentic terminal tasks |
+| MCP Atlas | 83.6% | MCP protocol-based agent task completion |
+
+Google positions Gemini 3.5 Flash as **4× faster, at less than half the cost of rival frontier models** — a key competitive differentiator against GPT-5.5 and Claude 4 Opus.
+
+### AI Mode in Search
+AI Mode in Google Search has surpassed **1 billion monthly users**, making it one of the most widely deployed LLM-powered products globally.
+
+### Hassabis on Gemini Omni
+Demis Hassabis described Gemini Omni as **"a step toward AGI"** at I/O 2026, emphasizing its physics-grounded world modeling and multi-turn video generation as capabilities that go beyond conventional generative AI.
+
+### Gemini 3.5 Pro
+Gemini 3.5 Pro is **shipping next month** (expected June 2026), bringing the 3.5 series improvements to Google's most capable model tier.
 
 ## Image Generation
 

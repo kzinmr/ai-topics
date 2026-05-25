@@ -1,3 +1,30 @@
+# Wiki Log
+
+> Chronological record of all wiki actions. Append-only.
+> Format: `## [YYYY-MM-DD] action | subject`
+> Actions: ingest, update, query, lint, create, archive, delete
+> When this file exceeds 500 entries, rotate: rename to log-YYYY.md and start fresh.
+
+## [2026-05-25] newsletter | Newsletter wiki ingest: enriched gemini, hark, hugo-bowne-anderson, dario-amodei, thomas-wiecki
+
+### Pages Enriched
+- `entities/gemini.md` — Added Gemini 3.5 Flash benchmarks (Terminal-Bench 76.2%, MCP Atlas 83.6%, 4× faster at half cost), AI Mode in Search (1B monthly users), Hassabis "step toward AGI" quote on Omni. Source: The Signal newsletter.
+- `entities/hark.md` — Expanded investor details (Nvidia/AMD/Intel/Qualcomm/Salesforce Ventures participation), roadmap (AI models summer 2026 → consumer devices). Source: The Signal newsletter.
+- `entities/hugo-bowne-anderson.md` — Added Agentic Data Science podcast concepts (Decision Engines, Multiplayer Data Science, Full Agentic DS Stack, Causal-Bayesian Workflows, Encoding Professional Judgment as Skills). Source: Hugo Bowne-Anderson newsletter.
+- `entities/dario-amodei.md` — Added Davos 2026 "10% growth and 10% unemployment" commentary. Source: The Signal newsletter.
+- `entities/thomas-wiecki.md` — Expanded Agentic Data Science section with Vanishing Gradients podcast concepts (Decision Engines, Multiplayer DS, Causal-Bayesian workflows). Source: Hugo Bowne-Anderson newsletter.
+
+### Newsletter Sources
+- `raw/newsletters/2026-05-24-google-goes-agentic-hark-s-big-bet-and-starbucks-milk-run.md` — The Signal: Google I/O agentic shift, Hark funding, Dario Amodei Davos quote
+- `raw/newsletters/2026-05-25-the-future-of-agentic-data-science.md` — Hugo Bowne-Anderson: Thomas Wiecki on Agentic Data Science
+
+### Triage Pipeline
+Newsletter triage: 3 take + 2 reference from 2 newsletters (The Signal + Hugo Bowne-Anderson). Lenny's Podcast (AI Paradox) skipped (already captured by blog pipeline). Beehiiv (Exponential AI) all 403. Total 9 decisions.
+
+### Index updates
+- `index.md` — Updated descriptions for gemini, hark, hugo-bowne-anderson, dario-amodei, thomas-wiecki entities
+
+---
 ## [2026-05-25] wiki | Enriched deepseek entity with 10T USD grand strategy + raw article saved
 
 ### Pages
@@ -270,11 +297,6 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - 1 remaining low-status page: `adam-rosenthal` (needs-identification — identity could not be verified across multiple searches)
 
 ---
-
-# Wiki Log
-
-> Chronological record of all wiki actions. Append-only.
-> Format: `## [YYYY-MM-DD] action | subject`
 
 ## [2026-05-24] dreaming-wiki-ingest | Nightly knowledge consolidation
 

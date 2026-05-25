@@ -2,7 +2,7 @@
 title: Dario Amodei
 type: entity
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-05-25
 depth_tracking: {'L1_basic_profile': True, 'L2_timeline_works': True, 'L3_thought_analysis': True, 'L4_ongoing_monitoring': True}
 tags:
   - person
@@ -10,7 +10,8 @@ tags:
   - openai
   - agent-safety
   - interpretability
-sources: []
+sources:
+  - raw/newsletters/2026-05-24-google-goes-agentic-hark-s-big-bet-and-starbucks-milk-run.md
 ---
 
 
@@ -169,3 +170,14 @@ At the **India AI Impact Summit** (February 2026):
 - India AI Impact Summit keynote (February 2026)
 - Council on Foreign Relations CEO Speaker Series (March 2025)
 - Anthropic Responsible Scaling Policy documentation
+
+## Recent Commentary
+
+### Davos 2026: 10% Growth + 10% Unemployment
+
+At the World Economic Forum in Davos, Dario Amodei offered a provocative macroeconomic framing:
+
+> *"10% growth and 10% unemployment at the same time."*
+
+The thesis: AI could simultaneously boost GDP growth to historically high levels while destroying jobs faster than workers can transition. This challenges the traditional tradeoff between growth and employment, suggesting AI creates a decoupling where benefits (growth) and costs (displacement) accrue to different populations. Pew Research data: 50% of Americans more concerned than excited about AI (up from 37% in 2021).
+

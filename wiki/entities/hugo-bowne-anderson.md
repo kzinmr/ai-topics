@@ -1,7 +1,7 @@
 ---
 title: Hugo Bowne-Anderson
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-25
 type: person
 tags:
   - person
@@ -13,6 +13,7 @@ tags:
   - education
 sources:
   - raw/articles/2026-05-12_hugobowne_agentic-engineering-verification.md
+  - raw/newsletters/2026-05-25-the-future-of-agentic-data-science.md
   - raw/articles/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
   - https://hugobowne.substack.com/
 ---
@@ -55,6 +56,21 @@ Launched May 2026 with co-host **[[entities/thomas-wiecki]]** (PyMC Labs). A liv
 - **Episode 2 (upcoming)**: Hilary Mason (HiddenDoor), Bryan Bischof (Theory Ventures), Eric Ma (Moderna), Tomasz Tunguz (Theory Ventures)
 - **GitHub**: [show-us-your-agent-skills](https://github.com/hugobowne/show-us-your-agent-skills) — skills and workflows from the show
 
+
+### Future of Agentic Data Science (Podcast)
+
+In May 2026, Hugo published a podcast episode with **[[entities/thomas-wiecki]]** (co-creator of PyMC, founder of PyMC Labs) on the future of agentic data science. Key concepts:
+
+**Decision Engines** — Evolution of data science from static reporting/dashboards to real-time, continuously operating decision hubs. Turns data science from cost center into operational decision-making layer.
+
+**Multiplayer Data Science** — Democratizing what-if analysis so business stakeholders can probe models with natural language, finally fulfilling the original promise of data science tooling.
+
+**Full Agentic Data Science Stack** — Beyond harness and agent skills: orchestration layer (parallel analysis agents), causal evaluation layer (validating against known causal structures), decision framework (analysis → business actions).
+
+**Scripted Causal-Bayesian Workflows** — Automating Bayesian model building, testing, and deployment. Making rigorous causal analysis accessible at scale via agentic workflows.
+
+**Encoding Professional Judgment as Skills** — Domain experts encoding their judgment (which data, which models, which thresholds) as reusable agent skills — the core "Show Us Your Agent Skills" pattern applied to data science.
+
 ### Agentic Data Science Course
 
 Building a live cohort course on applying agentic engineering to data science: hands-on exercises, capstones, reusable agent skills, OSS code, and notebooks.
@@ -72,7 +88,7 @@ Hugo's work centers on the transition from "vibe coding" to **agentic engineerin
 
 ## Related Entities
 
-- [[entities/thomas-wiecki]] — Co-host of Show Us Your Agent Skills
+- [[entities/thomas-wiecki]] — Co-host of Show Us Your Agent Skills and Agentic Data Science podcast
 - [[entities/wes-mckinney]] — Episode 1 guest, creator of pandas and RoboRev
 - [[entities/jeremiah-lowin]] — Episode 1 guest, creator of FastMCP and Prefab
 - [[entities/randy-olson]] — Episode 1 guest, data viz verifier and digital twin
