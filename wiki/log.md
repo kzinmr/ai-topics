@@ -1305,6 +1305,11 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 ### Raw Articles Referenced
 - `raw/articles/2026-05-19_elevenlabs_building-elevenagents-with-claude-code.md`
 
+### Pages Enriched (article-driven)
+- [[entities/daniel-miessler]] — Added "Companies Are Just a Graph of Algorithms (May 2024)" section connecting to [[concepts/graph-of-algorithms]] and [[concepts/autonomous-component-optimization]]
+- [[concepts/graph-of-algorithms]] — New concept page from Miessler's thesis
+- `raw/articles/2024-05-06_daniel-miessler_companies-graph-of-algorithms.md` — Saved raw article
+
 ### Notes
 - dreaming-group pre-run failed (JSON parse error) — triage performed autonomously
 - dreaming-collect reported collected_articles=0 (all today's content consumed by other pipelines)
@@ -1323,6 +1328,7 @@ Newsletter triage checkpoint recovered from `${HERMES_HOME}/cron/data/newsletter
 - Reference: fast16 AI Stuxnet analogy → [[concepts/ai-safety]]
 
 ### Pages Created
+- [[concepts/graph-of-algorithms]] — Companies as interconnected graphs of algorithms (nodes=processes, edges=handoffs). Fractal decomposition, AI-driven transparency/optimization. [[entities/daniel-miessler]] (May 2024).
 - [[concepts/aurora-optimizer]] — Leverage-aware optimizer for rectangular matrices. Fixes Muon's hidden neuron death problem.
 
 ### Pages Enriched

@@ -50,3 +50,19 @@ Identified the **articulation gap** as the new primary bottleneck in AI — shif
 Argued that **75–99% of knowledge work is scaffolding** (maintaining tools, workflows, templates, knowledge bases) — and AI "crushes" this overhead, making expertise accessible to non-experts.
 
 Published analyses: [[concepts/autonomous-component-optimization]], [[concepts/intent-based-engineering]]
+
+### Companies Are Just a Graph of Algorithms (May 2024)
+
+Miessler proposed viewing companies as interconnected **graphs of algorithms** — where each node is a process/workflow and edges represent handoffs and dependencies. Key thesis points:
+
+- **Fractal decomposition:** Every business process can be broken into sub-processes indefinitely (macro → departmental → individual → sub-individual)
+- **Transparency as optimization fuel:** Once workflows are explicitly mapped, AI can detect waste, redundancy, and elimination opportunities
+- **The consultancy wave:** Firms like Accenture/KPMG/McKinsey will offer AI-driven transparency services, resulting in permanently leaner organizations
+- **Continuous optimization loops:** Post-mapping, AI perpetually interrogates every department for efficiency gains
+- **No exceptions:** Complexity means a larger graph, not a different kind of problem. AI excels at navigating large graphs
+
+> "The only way out of this is through."
+
+This framework directly connects to Miessler's later **Autonomous Component Optimization** concept — both treat organizational processes as decomposable, measurable, optimizable systems. It also anticipates [[concepts/harness-engineering]] patterns where agentic systems orchestrate workflow graphs.
+
+Related: [[concepts/graph-of-algorithms]]

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-26 | Total pages: 2033 | Indexed entries: 1298 | Not in index: 714 |
+> Last updated: 2026-05-26 | Total pages: 2034 | Indexed entries: 1299 | Not in index: 714 |
 
 ## Entities (660 pages)
 
@@ -173,7 +173,7 @@
 - [[entities/dan-shipper]] — Dan Shipper — CEO and cofounder of Every. Author of the "After Automation" paradox and the definition of AI slop as "visible sameness." 12 predictions on AI & work from Lenny's Podcast (May 2026).
 - [[entities/daniel-de-laney]] — **Blog** | danieldelaney.net |
 - [[entities/daniel-han]] — **X/Twitter** | @danielhanchen |
-- [[entities/daniel-miessler]] — Cybersecurity and AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ GitHub stars), SecLists, PAI. Author of Autonomous Component Optimization and Intent-Based Engineering concepts.
+- [[entities/daniel-miessler]] — Cybersecurity and AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ GitHub stars), SecLists, PAI. Author of Autonomous Component Optimization, Intent-Based Engineering, Graph of Algorithms, and The Scaffolding Ratio concepts.
 - [[entities/daniel-tunkelang]] — **X/Twitter** | @dtunkelang | **Medium** | [dtunkelang.medium.com](https://dtunkelang.medium.com/) | Search consultant, Endeca co-founder (faceted search pioneer). PhD CS (CMU), MIT. Founded HCIR symposium. 24 US patents. Author: [Query Understanding series](https://queryunderstanding.com/) (24 articles, 2016–2024), *Faceted Search* (Springer). Bag-of-documents model (2023–2026): distills retrieval pipelines into single embedding model. Advises Etsy, Flipkart. RSS monitored via blogwatcher. [[concepts/query-understanding]] [[concepts/information-retrieval]] [[raw/articles/2026-01-29_doug-turnbull_will-agents-replace-search-teams]]
 - [[entities/daniel-van-strien]] — Daniel van Strien — Machine Learning Librarian at Hugging Face. Focuses on datasets, GLAM+AI bridge, and data curation. Former British Library Digital Curator (Living with Machines). Creator of awesome-synthetic-datasets. Author of AI Design Patterns for Information Professionals.
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
@@ -682,7 +682,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1322 pages)
+## Concepts (1323 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -912,6 +912,8 @@
 - [[concepts/delphi-scaling-laws]] — Open Athena (Marin) の公開スケーリングスイート。3e20 FLOPs のフィットから 1e23 FLOPs を 0.2% の誤差で予測（300× extrapolation）。IsoFLOP sweep、token-horizon LR correction、AdamH。
 - [[concepts/gnap-git-native-agent-protocol]] — GNAP: Git-Native Agent Protocol — coordinate AI agent teams via git repo. 4 JSON files, zero servers. MIT licensed (farol-team). Complements MCP/A2A.
 - [[concepts/granite-4-1]] — IBMのApache 2.0オープンソースLLMファミリー（3B/8B/30B）。15T token訓練、512Kコンテキスト。8Bが前世代32B MoEに匹敵。GRPO+DAPOのRL訓練。
+- [[concepts/graph-of-algorithms]] — Companies as interconnected graphs of algorithms (nodes=processes, edges=handoffs). Fractal decomposition, AI-driven transparency/optimization. [[entities/daniel-miessler]] (May 2024).
+- [[concepts/grpo]] — Group Relative Policy Optimization: DeepSeek-R1で導入されたRLアルゴリズム。PPOのクリティックモデルを不要にし、大規模モデルのRL訓練の計算ボトルネックを解消。グループ内相対比較でアドバンテージ推定。
 - [[concepts/good-regulator-theorem]] — Good Regulator Theorem (Gooder Regulator): Conant & Ashby (1970) の「あらゆる良いレギュレータはシステムのモデルでなければならない」を John Wentworth (2021) が情報ボトルネック制約を加えて修正した選択定理。AIエージェントの世界モデル・評価設計・ハーネス効果の理論的基盤。tailcalled の [[concepts/causal-backbone-conjecture]] が批判的応答。
 - [[concepts/google-ai-pointer]] — Google AI Pointer (Magic Pointer) — DeepMind's reimagined mouse pointer powered by Gemini (May 2026). Four principles: maintain flow, show-and-tell, embrace "this/that", pixels→entities. Integrated into Chrome and Googlebook.
 - [[concepts/google-flow-music]] — Google Flow Music — Google Labs AI music creation tool powered by Lyria 3 Pro. May 2026 partnership with Believe/TuneCore for artist distribution. AI-assisted lyrics, melodies, instruments. Artist retains ownership.
