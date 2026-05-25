@@ -7,6 +7,28 @@
 
 ## [2026-05-25] dreaming | Nightly consolidation — Callosum, Heterogeneous Intelligence, DeepMind Antigravity ops
 
+---
+
+## [2026-05-25] raw-backlog-ingest | Arcee AI, Shopify AI infrastructure, new entity pages
+
+### Pages Created
+- [[entities/arcee-ai]] — Arcee AI: Trinity Large (400B/13B MoE), Muon optimizer, MergeKit, pivot from post-training to pretraining. 22,048 B300 GPUs, $20M training cost.
+- [[entities/lucas-atkins]] — Arcee AI CTO. Muon optimizer advocate, led Trinity Large training. Former HuggingFace.
+- [[entities/mark-mcquade]] — CEO of Arcee AI. Former HuggingFace team member. Pivoted Arcee from post-training to pretraining.
+- [[entities/mikhail-parakhin]] — CTO of Shopify. Former Microsoft (Windows, Edge, Bing, Ads). Tangle/Tangent/SimGym triad. No token limits policy.
+- [[entities/liquid-ai]] — Non-transformer neural architecture (Liquid Time-Constant Networks). Deployed at Shopify for low-latency workloads. MIT CSAIL origins.
+
+### Pages Enriched
+- [[concepts/open-model-consortium]] — Added Arcee AI section with Trinity Large technical benchmarks/specs.
+- [[concepts/shopify-ai-engineering]] — Added Tangle, Tangent, SimGym sections with infrastructure triad architecture diagram. Added Liquid AI deployment section.
+- [[entities/nathan-lambert]] — Added Arcee AI podcast interview coverage (Trinity, Muon optimizer, TorchTitan).
+- [[entities/shopify]] — Updated sources with Latent Space podcast transcript.
+
+### Skipped
+- ciechanow.ski--airfoil → SKIP (physics/aerodynamics education, not AI)
+- substack.com--redirect-d2f7fb05 → SKIP (duplicate of Arcee AI article)
+- substack.com--app-link-post → SKIP (duplicate of Shopify Latent Space podcast)
+
 ### Pages Created
 - [[entities/callosum]] — Callosum: heterogeneous intelligence inference startup. Principle of Maximum Heterogeneity. ULong 7-12x cheaper, Video Web Arena +18% vs GPT-5.2.
 - [[concepts/heterogeneous-intelligence]] — Heterogeneous Intelligence: paradigm of routing AI subtasks to optimal model+hardware combinations. Three compute eras: CPU → GPU → Heterogeneous.

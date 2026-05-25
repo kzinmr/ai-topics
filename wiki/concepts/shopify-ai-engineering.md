@@ -4,7 +4,7 @@ created: 2026-05-20
 updated: 2026-05-20
 type: concept
 tags: [shopify, ai-adoption, ai-infrastructure, llm-proxy, claude-code, ai-coding, coding-agents, agentic-engineering, strategy-execution, strategy, leadership, product-management, cost-optimization, developer-experience, career, education, startup, vibe-coding, mcp, code-review, multi-agent]
-sources: [raw/articles/2026-05-20_zodchiii_shopify-claude-code-setup.md, raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md]
+sources: [raw/articles/2026-05-20_zodchiii_shopify-claude-code-setup.md, raw/articles/2026-05-20_pragmatic-engineer_farhan-thawar-shopify-ai.md, raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--32394213.md]
 ---
 
 # Shopify's AI-First Engineering
@@ -89,6 +89,60 @@ GSD integrates AI deeply:
 - **AI-native tracking**: the tool understands what engineers are actually doing, not just what they report
 
 This reflects a broader [[developer-experience]] principle: tools shape behavior. By building their own PM tool, Shopify could optimize it for AI-augmented workflows rather than retrofitting AI onto a tool designed for pre-AI workflows.
+
+## Tangle, Tangent, and SimGym — AI Infrastructure Triad
+
+Under CTO [[entities/mikhail-parakhin|Mikhail Parakhin]], Shopify has developed three complementary AI infrastructure systems that go beyond the LLM proxy:
+
+### Tangle — Reproducible ML & Data Workflows
+
+**Tangle** is Shopify's reproducible ML and data workflow engine. It differs from traditional tools like Airflow:
+- **Content-addressed caching** — creates network effects across teams; if one team computes something, others benefit
+- Makes ML and data workflows reproducible, collaborative, and production-ready from the start
+- More than just orchestration — it's a **collaboration layer** for data science
+- Enables sharing of intermediate results, features, and model artifacts across the organization
+
+### Tangent — Auto-Research Loop
+
+**Tangent** is Shopify's automated research system:
+- Optimizes **search, themes, prompt compression, storage**, and more
+- Is becoming a **democratizing tool for PMs and domain experts**, not just ML engineers
+- Represents **AutoML finally feeling real in the LLM era** — the system can explore solution spaces and find better configurations without human intervention
+- Still has limitations — auto-research falls short in areas requiring deep domain expertise
+- When Tangent discovers better configurations, Tangle makes those results shareable across teams
+
+### SimGym — Customer Simulation
+
+**SimGym** is Shopify's customer simulation platform:
+- Simulates **merchant and buyer trajectories** using real historical behavior data
+- Runs **counterfactuals** to evaluate interventions (discounts, campaigns, notifications)
+- Evolved from comparing A/B variants to **telling merchants what to change on a single live storefront** to raise conversions
+- Is expensive to run (multimodal models, browser farms, serving and distillation costs)
+- Becomes much more powerful when combined with Tangle and Tangent
+- Key insight from Parakhin: **simulated customers only work if you have real historical behavior data** — Shopify's commerce data provides a defensible moat
+- Category-level behavior varies dramatically across commerce verticals
+- Ideas like **Chinese Restaurant Processes** are showing up again in practice for modeling merchant/buyer trajectories
+
+### How the Three Systems Interact
+
+```
+Tangent (Auto-Research) ──optimizes──→ Product Configurations
+                                              │
+Tangle (Reproducible Workflows) ──shares──→ Research Results
+                                              │
+SimGym (Customer Simulation) ──validates──→ Counterfactual Outcomes
+```
+
+Together, these three systems represent a **closed-loop AI infrastructure**: Tangent discovers better solutions, Tangle makes them reproducible and shareable, and SimGym validates them against simulated customer behavior. This is qualitatively different from the LLM proxy — the proxy manages AI tool access, while Tangle/Tangent/SimGym actively use AI to improve the product.
+
+## Liquid AI and Non-Transformer Architecture
+
+Shopify has deployed **[[entities/liquid-ai|Liquid AI]]** models in production for:
+- **Low-latency query understanding** — real-time search processing
+- **Large-scale catalog workloads** — millions of product entries
+- **Sidekick Pulse tasks** — AI assistant infrastructure
+
+CTO Mikhail Parakhin describes Liquid as "the first genuinely competitive non-transformer architecture" he has used in practice. The deployment signals Shopify's willingness to adopt non-Transformer architectures when they demonstrate clear efficiency advantages. Key question: can Liquid scale to frontier-level (100B+ parameters) with enough compute? If yes, Shopify would adopt it broadly.
 
 ## Coding Interviews for Directors and Above
 

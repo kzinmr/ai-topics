@@ -13,7 +13,8 @@ related:
   - entities/nathan-lambert
   - entities/geohot-github-io
   - concepts/open-source-ai-destruction
-sources: []
+sources:
+  - raw/articles/substack.com--redirect-a74f95f1-0e4a-44c1-8dea-64d936fa8d49--3f8b9141.md
 ---
 
 # Open Model Consortium
@@ -41,7 +42,10 @@ Nathan Lambert (Interconnects AI) views this as NVIDIA's attempt to "bankroll an
 Led by Percy Liang, Marin is an **open lab for building foundation models — together**. They're training powerful models from scratch and sharing every step programmatically: code, data, experiments, mistakes — all in real-time.
 
 ### Arcee AI
+
 A startup taking the most pragmatic approach to monetizing open models. With experience in post-training open models for specific customer domains, they realized they needed to both prove themselves and fill a niche by pretraining larger, higher-performance open models built in the U.S.A.
+
+**Trinity Large** (May 2026): 400B total / 13B active sparse MoE model. First public MoE training run at this scale on NVIDIA B300 GPUs (22,048 units). Trained on 17 trillion tokens for $20M total cost in 6 months. Uses Muon optimizer (not Adam), modified TorchTitan, and DeepSeek V3 auxiliary-loss-free MoE balancing. Benchmarks: AIME 2025 mid-80s, GPQA Diamond ~75, MMLU Pro ~82. Led by CTO [[entities/lucas-atkins|Lucas Atkins]] and CEO [[entities/mark-mcquade|Mark McQuade]].
 
 ## The Business Case for Open Models
 

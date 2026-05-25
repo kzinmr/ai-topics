@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-25 | Total pages: 2058 | Indexed entries: 1344 | Not in index: 692 |
+> Last updated: 2026-05-25 | Total pages: 2063 | Indexed entries: 1349 | Not in index: 692 |
 
-## Entities (667 pages)
+## Entities (672 pages)
 
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -47,15 +47,18 @@
 - [[entities/jaya-gupta]] — Jaya Gupta — Foundation Capital partner. Organizational moat theory, Context Graphs. Argues company shape is the last durable moat in AI. 3.2M-view X Article author.
 - [[entities/jo-bergum]] — Jo Kristian Bergum
 - [[entities/joan-westenberg]] — Joan Westenberg — Strategy and positioning consultant. "Position or Perish" narrative framework, messaging spine methodology.
+- [[entities/liquid-ai]] — Non-transformer neural architecture company. Deployed at Shopify for low-latency query understanding and catalog workloads. Founded by MIT CSAIL researchers (Ramin Hasani, Mathias Lechner).
+- [[entities/lucas-atkins]] — Arcee AI CTO. Muon optimizer advocate, led Trinity Large (400B/13B MoE) training on 22,048 B300 GPUs.
 - [[entities/lucebox]] — Lucebox
 - [[entities/luke-curley]] — Luke Curley (@lukeslhz) — Software Engineer at Discord, formerly Twitch. MoQ Working Group participant. Advocates for Media over QUIC over WebRTC for AI voice applications. Argues that WebRTC's packet dropping degrades LLM prompts, and users would prefer 200ms extra latency for accuracy.
 - [[entities/mac-studio-local-ai]] — Mac Studio Local AI
+- [[entities/mark-mcquade]] — CEO of Arcee AI. Former HuggingFace team member. Pivoted Arcee from post-training services to pretraining from scratch with Trinity Large.
 - [[entities/mastra]] — Mastra — Open-source TypeScript AI agent framework (Gatsby team, 24K ⭐). ACP-compatible coding agents, workflows, voice AI providers, enterprise RBAC.
 - [[entities/merge-dev]] — Merge.dev（Merge Agent Handler）— MCPサーバープロダクト。Cursor/Claude Code向けGitHub・Trello MCP、中央OAuth管理、エンタープライズアクセス制御・監査ログ。
 - [[entities/marc-andreessen]] — Marc Andreessen — Co-founder of Andreessen Horowitz (a16z), co-author of Mosaic browser, Netscape co-founder. AI optimist, "Software Is Eating the World" author.
 - [[entities/microsoft-agent-framework]] — Microsoft Agent Framework v1.0: unified Semantic Kernel + AutoGen SDK for .NET/Python, multi-agent orchestration, MCP/A2A support
+- [[entities/mikhail-parakhin]] — CTO of Shopify. Former Microsoft division head (Windows, Edge, Bing, Ads). Led Shopify's Tangle/Tangent/SimGym AI infrastructure triad. Advocates no token limits and non-transformer architectures.
 - [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto — HashiCorp
-- [[entities/john-berryman]] — John Berryman — AI/ML researcher
 - [[entities/moonshot-ai]] — Moonshot AI
 - [[entities/kim-isenberg]] — Kim ‘Chubby’ Isenberg — Tech blogger, developer
 - [[entities/nicolas-bustamante]] — Nicolas Bustamante

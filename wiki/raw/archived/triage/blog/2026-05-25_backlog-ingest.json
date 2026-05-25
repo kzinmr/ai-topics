@@ -1,0 +1,66 @@
+{
+  "checkpoint_run_id": "20260525T200559Z",
+  "summary_ja": "Raw backlog ingest: 5 articles triaged. 2 takes (Arcee AI podcast, Shopify/Latent Space podcast) created 5 new entity pages and enriched 4 existing pages. 3 skips (1 non-AI physics article, 2 duplicates).",
+  "decisions": [
+    {
+      "item_id": "ciechanow.ski--airfoil--ac33857b",
+      "source": "backlog",
+      "source_name": "ciechanow.ski",
+      "title": "Airfoil - Bartosz Ciechanowski",
+      "url": "https://ciechanow.ski/airfoil/",
+      "raw_path": "raw/articles/ciechanow.ski--airfoil--ac33857b.md",
+      "recommended_action": "skip",
+      "reason_ja": "物理学・空力学の教育用インタラクティブ記事。AI/LLM/エージェントと無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "The dream of soaring in the sky like a bird has captivated the human mind for ages."
+    },
+    {
+      "item_id": "substack.com--redirect-a74f95f1-0e4a-44c1-8dea-64d936fa8d49--3f8b9141",
+      "source": "backlog",
+      "source_name": "Interconnects Podcast",
+      "title": "Arcee AI goes all-in on open models built in the U.S.",
+      "url": "https://substack.com/redirect/a74f95f1-0e4a-44c1-8dea-64d936fa8d49",
+      "raw_path": "raw/articles/substack.com--redirect-a74f95f1-0e4a-44c1-8dea-64d936fa8d49--3f8b9141.md",
+      "recommended_action": "take",
+      "reason_ja": "★★★★★ Arcee AIのTrinity Large（400B/13B MoE）、Muonオプティマイザー、22,048 B300 GPUでのトレーニング詳細。Nathan LambertのInterconnectsポッドキャスト転載。新エンティティページ作成済み（arcee-ai, lucas-atkins, mark-mcquade）。",
+      "candidate_wiki_path": "entities/arcee-ai.md",
+      "body_excerpt": "Arcee AI is a the startup I've found to be taking the most real approach to monetizing their open models."
+    },
+    {
+      "item_id": "substack.com--redirect-d2f7fb05-9470-4e1d-8cc7-1ffa9beaec66--ae94b515",
+      "source": "backlog",
+      "source_name": "Interconnects Podcast",
+      "title": "Arcee AI goes all-in on open models built in the U.S.",
+      "url": "https://substack.com/redirect/d2f7fb05-9470-4e1d-8cc7-1ffa9beaec66",
+      "raw_path": "raw/articles/substack.com--redirect-d2f7fb05-9470-4e1d-8cc7-1ffa9beaec66--ae94b515.md",
+      "recommended_action": "skip",
+      "reason_ja": "上記Arcee AI記事の複製（同じSubstackリダイレクトURL、同じcontent_hash）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Arcee AI is a the startup I've found to be taking the most real approach to monetizing their open models."
+    },
+    {
+      "item_id": "substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--32394213",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Shopify's AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym - with Mikhail Parakhin, Shopify CTO",
+      "url": "https://substack.com/redirect/2/eyJlIj...",
+      "raw_path": "raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--32394213.md",
+      "recommended_action": "take",
+      "reason_ja": "★★★★★ ShopifyのAIインフラ（Tangle/Tangent/SimGym）、Mikhail Parakhin CTOのインタビュー。Liquid AIの実稼働デプロイ、トークン制限なしポリシー、96%自律コーディング目標。新エンティティページ（mikhail-parakhin, liquid-ai）、既存ページ（shopify-ai-engineering, shopify）大幅強化。",
+      "candidate_wiki_path": "entities/mikhail-parakhin.md",
+      "body_excerpt": "Shopify's AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym"
+    },
+    {
+      "item_id": "substack.com--app-link-post--2aba2f39",
+      "source": "backlog",
+      "source_name": "Latent Space Podcast",
+      "title": "Shopify's AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym - with Mikhail Parakhin, Shopify CTO",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=195067855",
+      "raw_path": "raw/articles/substack.com--app-link-post--2aba2f39.md",
+      "recommended_action": "skip",
+      "reason_ja": "上記Shopify記事の複製（同じLatent Spaceポッドキャスト転写、同じcontent_hash）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Shopify's AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym"
+    }
+  ]
+}
