@@ -1,3 +1,27 @@
+## [2026-05-25] Meta-Harness knowledge ingestion — Deedy + mary + concept enrichment
+
+### Created
+- `entities/deedydas.md` — Deedy Das, Menlo Ventures partner, meta-harness concept originator ("Autoresearch on steroids"), AI agent investor
+- `entities/howdymary.md` — mary (@howdymary), creator of hermes-agent-metaharness, OS/Brain agent architecture framing
+- `raw/articles/2026-04-06_deedydas_meta-harnesses-autoresearch.md` — Deedy's tweet on meta harnesses as hill-climbing agents
+- `raw/articles/2026-04-07_howdymary_meta-harness-hermes.md` — mary's tweet on Hermes meta-harness implementation
+
+### Enriched
+- `concepts/meta-harness.md` — Major expansion (~6.8KB → ~9.4KB): Added 3-layer interpretation (Academic/Practical/Conceptual), OS/Brain model, Hermes Agent Meta-Harness implementation details, Deedy's hill-climbing framing, "Don't Retrain, Re-Harness" principle, filesystem-as-interface pattern
+
+### Updated
+- `index.md` — Added 2 entity entries, 1 concept entry, updated counts
+
+### Key Insight
+Meta-Harness is the convergence of three angles: academic search over harness code (Stanford/MIT), practical outer-loop optimization for agent runtimes (howdymary/hermes-agent-metaharness), and conceptual hill-climbing agents on verifiable tasks (Deedy). All share the "optimize the OS, not the brain" philosophy.
+
+### Sources
+- https://x.com/deedydas/status/2041189706910875869
+- https://x.com/howdymary/status/2041616469084270917
+- https://github.com/howdymary/hermes-agent-metaharness
+- https://arxiv.org/abs/2603.28052
+
+###
 ## [2026-05-25] Palantir wiki infrastructure build-out — FDE/Ontology/Government
 
 ### Created

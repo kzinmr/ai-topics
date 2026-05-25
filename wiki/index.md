@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-24 | Total pages: 2024 | Indexed entries: 1289 | Not in index: 713 |
+> Last updated: 2026-05-25 | Total pages: 2027 | Indexed entries: 1292 | Not in index: 713 |
 
 ## Entities (659 pages)
 
@@ -23,6 +23,7 @@
 - [[entities/company-ai-pilled]] — Company AI Pilled
 - [[entities/content-engine]] — Content Engine
 - [[entities/dean-ball]] — Dean W. Ball — AI policy analyst, Hyperdimensional newsletter. Mythos governance framework, Independent Verification Organizations (IVOs), "Aviate, Navigate, Communicate" triage model.
+- [[entities/deedydas]] — Deedy Das — Partner at Menlo Ventures, former Glean/Google Search. Meta-harness concept originator ("Autoresearch on steroids"), AI agent investor (Anthropic, Goodfire, OpenRouter).
 - [[entities/datasette-llm-limits]] — Datasette LLM Limits
 - [[entities/deepmind]] — Google DeepMind — Alphabet's central AI research lab (AlphaGo, AlphaFold, Gemini). May 2026: AI Pointer / Magic Pointer — context-aware cursor powered by Gemini, reimagining the 50-year-old mouse pointer.
 - [[entities/dex-horthy]] — Dex Horthy (@dexhorthy): AIエージェントハーネスエンジニアリングの研究者
@@ -273,6 +274,7 @@
 - [[entities/herman-s-blog]] — **Blog** | herman.bearblog.dev |
 - [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent（150K GitHub stars, #1 OpenRouter global token usage）。Persistent memory、self-improving skills（Curatorシステムで90日未使用スキルを自動整理）、Agentic Loopを収録。OpenClawのorchestratorとのACP連携によるdual-agent architectureでexecution specialistとして機能。Shann (@shannhk) の4-level fleet operation model、21-step SEO pipeline。→ [[comparisons/hermes-vs-openclaw-architecture]], [[comparisons/hermes-vs-openclaw]]
 - [[entities/hidream-o1-image]] — HiDream-O1-Image — Open-source 8B image generation model (MIT license). #8 on AA Text to Image Arena. Pixel-level Unified Transformer (UiT), 2048×2048. Surpasses FLUX.2 and GPT Image 2 on GenEval/DPG-Bench.
+- [[entities/howdymary]] — mary (@howdymary) — Data scientist at marketmotionxyz. Creator of hermes-agent-metaharness, the first practical Meta-Harness implementation for Hermes Agent. OS/Brain agent architecture framing.
 - [[entities/hoeem]] — X/Twitter クリエイター（@hooeem, 169K+ フォロワー）。Claude Certified Architect 試験の全5ドメインを解説したX Articleが60Kブックマーク。Claude Code・Agent SDK・MCPの実践的教育コンテンツを発信。
 - [[entities/hillel-wayne]] — **Blog** | hillelwayne.com |
 - [[entities/hugging-face]] — **The GitHub of AI** — the central open-source infrastructure layer for machine learning. Platform for sharing, discovering, and deploying ML models, datasets, and demos.
@@ -844,6 +846,7 @@
 - [[concepts/ml-intern]] — HuggingFace's open-source autonomous ML engineer. Reads papers, trains models, ships code. Qwen3-1.7B 10%→32% GPQA in 10h (beats Claude Code).
 - [[concepts/model-distillation]] — Model Distillation
 - [[concepts/memory-systems-design-patterns]] — Memory Systems Design Patterns — Anthropic vs OpenAI vs Cognition: comparative analysis of AI agent memory architectures.
+- [[concepts/meta-harness]] — Meta-Harness — Stanford/MIT outer-loop harness optimization framework. OS/Brain separation for agent systems, automated hill-climbing on verifiable benchmarks, 6x performance gap via harness changes. Practical implementation: howdymary/hermes-agent-metaharness.
 - [[concepts/model-quantization]] — Model Quantization
 - [[concepts/model-routing]] — Per-turn model routing for AI coding agents. Augment Prism: 20-30% cost reduction at similar quality. Cache-aware routing decisions.
 - [[concepts/model-context-protocol-mcp]] — MCP — Anthropic's open protocol. 2026-07-28 RC: stateless protocol, first-class MCP Apps and Tasks, auth hardening. Foundation for agent tooling.
