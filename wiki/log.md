@@ -1,3 +1,10 @@
+## [2026-05-25] blog | Tenant Agent Pack——9つの技術レイヤーで読み解く
+
+### Blog post
+- `blog/2026-05-25_hermes_tenant-agent-pack-technical-architecture.md` — Tenant Agent Packを支える9技術レイヤー（メモリ分離・スキル・MCP・ポリシー・評価・ランタイム・サンドボックス・コンテキスト工学・可観測性）の詳細分析。wiki内の既存プリミティブとの対応づけと、不足領域（Pack Loader、Versioning、Template、Validation、Migration）の特定。
+
+---
+
 ## [2026-05-25] ingest | OpenAI Cookbook: Macro Evals for Agentic Systems
 
 ### Created
