@@ -1,0 +1,121 @@
+{
+  "run_id": "20260525T071152Z",
+  "triaged_at": "2026-05-25T07:11:52Z",
+  "summary": {
+    "total_newsletters": 4,
+    "critical": 1,
+    "high": 2,
+    "low": 1,
+    "skipped": 0
+  },
+  "newsletters": [
+    {
+      "message_id": "<20260524130257.3.9728450bc7f82883@mg-d0.substack.com>",
+      "subject": "Google Goes Agentic, Hark's Big Bet, and Starbucks' Milk Run",
+      "date": "2026-05-24",
+      "source": "The Signal by Alex Banks",
+      "source_label": "uid=133",
+      "importance": "critical",
+      "reason": "Google I/O 2026: Sundar Pichai announced 'agentic Gemini era' — a major ecosystem shift. Agentic AI now at Google scale across Search, Workspace, Cloud, and Android. Must-track for AI agent wiki.",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-24-google-goes-agentic-hark-s-big-bet-and-starbucks-milk-run.md",
+      "articles": [
+        {
+          "title": "Google Goes Agentic — The Signal Issue",
+          "url": "https://open.substack.com/pub/thesignal/p/google-goes-agentic-harks-big-bet",
+          "type": "newsletter_issue",
+          "relevance": "critical",
+          "why": "Curated summary of Google I/O 2026 announcements: agentic Gemini, Project Mariner (AI agents in Chrome), Gemini 2.5 integration across Google products. Key signals for the AI agent ecosystem."
+        },
+        {
+          "title": "Google I/O 2026: Sundar Pichai's Opening Keynote",
+          "url": "https://substack.com/redirect/f3e2a4ca-3ad9-4e97-87ac-a2824a4a016f",
+          "type": "external_article",
+          "relevance": "high",
+          "why": "Primary source: Sundar Pichai's keynote transcript. Full-stack AI innovation spanning silicon (TPU v6), models (Gemini 2.5), products (agentic Search, Workspace), platforms. 'Agentic Gemini era' framing."
+        }
+      ],
+      "suggested_wiki_pages": [
+        "Update entities/google.md with I/O 2026 agentic announcements",
+        "Create/update concepts/agentic-ai.md with Google's agentic Gemini framework",
+        "Update concepts/google-gemini.md with Gemini 2.5 capabilities",
+        "Create events/google-io-2026.md"
+      ]
+    },
+    {
+      "message_id": "<20260525053325.3.8c632050048101d1@mg-d0.substack.com>",
+      "subject": "The Future of Agentic Data Science",
+      "date": "2026-05-25",
+      "source": "Vanishing Gradients by Hugo Bowne-Anderson",
+      "source_label": "uid=135",
+      "importance": "high",
+      "reason": "Direct interview about agentic data science with Thomas Wiecki (PyMC Labs, Decision.AI). Core AI agent topic: how LLMs transform data science workflows into agentic research labs.",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-25-the-future-of-agentic-data-science.md",
+      "articles": [
+        {
+          "title": "The Future of Agentic Data Science",
+          "url": "https://open.substack.com/pub/hugobowne/p/the-future-of-agentic-data-science",
+          "type": "newsletter_issue",
+          "relevance": "high",
+          "why": "Hugo Bowne-Anderson interviews Thomas Wiecki on agentic data science — how LLMs move data science from cost center to value generator. Covers decision.ai, PyMC Labs, and research lab metaphors for agentic workflows."
+        }
+      ],
+      "suggested_wiki_pages": [
+        "Create concepts/agentic-data-science.md",
+        "Create/update entities/thomas-wiecki.md",
+        "Create/update entities/hugo-bowne-anderson.md",
+        "Create entities/decision-ai.md"
+      ]
+    },
+    {
+      "message_id": "<20260524.171640.b23b8ce9@mta6>",
+      "subject": "Demystifying the 'Exponential AI' Narrative",
+      "date": "2026-05-24",
+      "source": "Superintelligence by Amish Regmi",
+      "source_label": "uid=134",
+      "importance": "high",
+      "reason": "Rigorous analysis of AI scaling claims: separates true exponential trends from fast-but-decelerating growth. Directly relevant to tracking AI capability trajectory for the wiki.",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-24-demystifying-the-exponential-ai-narrative.md",
+      "articles": [
+        {
+          "title": "Demystifying the 'Exponential AI' Narrative",
+          "url": "https://link.mail.beehiiv.com/v1/c/CFeG1Luvkb2xO2mtDIzfDuxlEZ3fd0T0S7UQf4P1fvn%2FZfyr%2BPhb12gtpQ2J%0Ab53xsAIH4KwCuFxxJXLEA9mNozRFXmXxjA%2Bmgg%2FTMTWrzJr5XelnyiGQEQfm%0AR2GnaDkUNKs6YScpPfTtJa22T9ojMeV2a7eUy6Yvep%2ByBb5uwlzxyUgjIQgW%0Aa%2Bu8SQUH0Bwn03Iy51fsb4VaxvebeIpOwA%3D%3D%0A/4e1e9f488803c5b0",
+          "type": "external_article",
+          "relevance": "high",
+          "why": "Amish Regmi (AI engineer at Klaviyo, ex-Amazon inference infra) quantifies AI scaling: base multipliers, time units, doubling periods. Covers training compute (true exponential ~4.2x/yr), inference cost (2.5x/yr), benchmark scores (fast but saturating), and economic metrics."
+        }
+      ],
+      "suggested_wiki_pages": [
+        "Update concepts/ai-scaling-laws.md with quantified exponential analysis",
+        "Create/update entities/amish-regmi.md",
+        "Update concepts/ai-benchmarks.md with saturation analysis"
+      ]
+    },
+    {
+      "message_id": "<20260524123149.3.41ab5502d380b3e3@mg-d0.substack.com>",
+      "subject": "The AI paradox: More automation, more humans, more work | Dan Shipper",
+      "date": "2026-05-24",
+      "source": "Lenny's Podcast",
+      "source_label": "uid=132",
+      "importance": "low",
+      "reason": "Podcast interview (audio-only format) with Dan Shipper on the AI automation paradox. Interesting perspective but no new technical content or actionable links. External links are all media platform mirrors (YouTube, Spotify, Apple Podcasts).",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-24-the-ai-paradox-more-automation-more-humans-more-work-dan-shipper.md",
+      "articles": [
+        {
+          "title": "The AI paradox: More automation, more humans, more work | Dan Shipper",
+          "url": "https://open.substack.com/pub/lenny/p/the-ai-paradox-dan-shipper",
+          "type": "podcast",
+          "relevance": "medium",
+          "why": "Dan Shipper (CEO of Every/Chain of Thought) discusses how AI automation paradoxically increases human work and headcount. Relevant for AI impact on work but no unique technical insights for wiki."
+        }
+      ],
+      "suggested_wiki_pages": [
+        "Optionally update entities/dan-shipper.md with this interview"
+      ]
+    }
+  ],
+  "next_actions": [
+    "CRITICAL: Process Google I/O 2026 agentic Gemini announcement → update entities/google.md, concepts/agentic-ai.md, concepts/google-gemini.md",
+    "HIGH: Ingest Agentic Data Science interview → new concepts/agentic-data-science.md",
+    "HIGH: Ingest Exponential AI analysis → update concepts/ai-scaling-laws.md with quantitative data"
+  ]
+}

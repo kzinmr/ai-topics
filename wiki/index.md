@@ -184,7 +184,7 @@
 - [[entities/dax-raad]] — **X** | @thdxr |
 - [[entities/daytona-io]] — CEO: Ivan Burazin. 60ms sandboxes, 850K/day. Custom scheduler (no K8s), bare metal. RL/evals = 50% of usage. CLI > MCP philosophy (May 2026).
 - [[entities/daytona-sandbox]] — Daytona's self-hosted sandbox for Claude Managed Agents (May 2026). Three-party architecture, dual orchestrator (polling/webhook), snapshot-based sandboxes, 30-day lifecycle.
-- [[entities/deepseek]] — Chinese open-source LLM provider driving **cost disruption**. V4-Pro permanent 75% discount ($0.435/$0.87 per M tokens, blended ~$0.18/M). First "Harness team" formed (May 2026). V4 (1.6T/284B MoE, 1M ctx) on Huawei Ascend 950.
+- [[entities/deepseek]] — Chinese open-source LLM provider driving **cost disruption** + **10T USD hardware ecosystem strategy**. V4-Pro permanent 75% discount ($0.435/$0.87 per M tokens, blended ~$0.18/M). First "Harness team" formed (May 2026). V4 (1.6T/284B MoE, 1M ctx) on Huawei Ascend 950. Grand strategy: KV cache compression → Chinese NAND/LPDDR market creation; TileLang DSL → hardware vendor diversification; equity-collaboration model (OpenAI-AMD型). [[concepts/deepseek-v4]], [[concepts/deepseek-r1]], [[concepts/grpo]].
 - [[entities/deliberate-coder]] — **URL:** https://www.benmvp.com (blog), https://github.com/benmvp (GitHub)
 - [[entities/deliberatecoder]] — **URL:** https://deliberate-software.com
 - [[entities/demis-hassabis]] — **Role** | CEO, Google DeepMind; Co-founder, DeepMind |

@@ -1,7 +1,7 @@
 ---
 title: DeepSeek
 created: 2026-04-26
-updated: 2026-05-24
+updated: 2026-05-25
 type: entity
 tags: [company, open-source, model, inference, training, benchmark]
 sources:
@@ -16,6 +16,7 @@ sources:
   - raw/articles/2026-05-08_martinfowler-deepseek-papers.md
   - raw/papers/2026-04-xx_deepseek-v4-technical-report.md
   - raw/newsletters/2026-05-23-ainews-all-model-labs-are-now-agent-labs.md
+  - raw/articles/2026-05-22-deepseek-strategy.md
 ---
 
 # DeepSeek
@@ -158,10 +159,93 @@ The pricing table in the Models section (pre-discount) should be read in context
 
 ## Strategy
 
+### Core Thesis: 10 Trillion USD Hardware Ecosystem Play
+
+DeepSeekの戦略を理解する鍵は、短期的な収益（コーディングプラン販売など）ではなく、**中国発のAIハードウェアエコシステム全体を創出する10兆ドルゲーム**をプレイしているという視点である（@bookwormengr, May 2026）。Liang Wenfeng CEOの目は「AGI for everyone」という言葉通り、はるかに大きな獲物を見据えている。
+
+- **短期的収益を追求しない一貫した選択**: マルチモーダルモデルなし、音声モデルなし、動画モデルなし。2026年5月までハーネスチームすら存在しなかった（最近採用開始）
+- **全イノベーションがハードウェア制約の解放に向かう**: MoE、MLA、DSA、CSA、HSA、Engram、mHC — すべてが「より少ないHWリソースでより多くを達成する」方向性
+- **オープンソースコミットメント**: ソース公開によりグローバルな採用を加速し、エコシステムのデファクトスタンダード化を狙う
+
+### KV Cache Economics: メモリ産業の創造
+
+DeepSeekのKVキャッシュ圧縮革新が、中国メモリ産業全体の起爆剤となる構造：
+
+| 1Mコンテキスト時のKVキャッシュ | 消費HBM |
+|-------------------------------|---------|
+| **DeepSeek V4 (1.6T)** | **5.48 GB** |
+| GLM5 (~700B, MLA+DSA使用) | 60 GB |
+| Qwen3-235B-A22B (GQA) | 89 GB |
+
+**戦略的含意**:
+- 超小型KVキャッシュ → SSDへのオフロードが経済的に成立 → **NAND需要の爆発的増加**
+- 中国のYMTC（長江存儲）は3D NANDの巨人として台頭中。DeepSeekがNANDの巨大市場を創出
+- DeepSeekのキャッシュヒット価格はSonnet 4.6の**3%未満**、かつ複数時間保持 → 常識外れの低価格の裏にはKVキャッシュ効率がある
+- Dual Path論文の技術でSSDからのKVキャッシュ高速リロードも実現
+
+### Memory-Compute Trade-offs: LPDDR + Engram
+
+中国のGPU/ASICはEUVリソグラフィ不在のため、**トランジスタ密度で欧米に恒久的に劣後する**。DeepSeekはこの構造的制約を**メモリで計算を代替する**戦略で克服：
+
+- **LPDDRメモリ**: CXMT（長鑫存儲）は速度でわずか0.5世代、密度で1世代遅れ。十分にキャッチアップ可能な距離
+- **Engram**（Q1 2026）: N-gram埋め込みをO(1)ハッシュルックアップ化するモジュール。Transformerが計算で模倣していた知識検索をメモリ参照に置換 → 「1回のLPDDRルックアップ vs Transformerの全層forward pass」という極めて有利なトレードオフ
+- **SGLangの方式**: 重みをLPDDRに保持し、必要に応じてHBMにストリーム。DeepSeekの4ビット重み+多数エキスパートのMoEアーキテクチャがこの方式と親和的
+
+**結論**: 豊富なNANDとLPDDRメモリが中国製GPU/ASICの計算能力不足を補完し、西側製ハードウェアに依存しないAIインフラを可能にする。
+
+### Hardware Enablement: 中国半導体エコシステム全体の底上げ
+
+米国の輸出規制下で、DeepSeekの全イノベーションは**中国ハードウェア産業全体を競争力のある選択肢に変える**副次的効果を持つ：
+
+| DeepSeek革新 | 削減対象 | 恩恵を受ける中国HW産業 |
+|-------------|---------|---------------------|
+| MLA + CSA + HSA | HBM需要（最大98%削減） | YMTC（NAND/SSD）、CXMT（LPDDR） |
+| Engram | 計算FLOPs | CXMT（LPDDR）、ASICメーカー |
+| TileLang DSL | CUDA依存 | Moore Threads, MetaX, Biren, Iluvatar CoreX（全GPU/ASIC） |
+| MoE + 4-bit Weights | HBM帯域幅 | ネットワークチップメーカー |
+| MegaMoE + Dual Pipe | インターコネクト帯域 | 中国製NVLink相当チップ |
+
+**TileLangの戦略的意義**: カーネルを一度書けば全ハードウェアプラットフォームで動作 → CUDA moat（堀）を迂回。中国GPUメーカー（Moore Threads, MetaX, Biren, Iluvatar CoreX）のCUDA互換レイヤーを補完。AMDなど西側代替GPUの採用も促進。
+
+### Equity-Collaboration Model: OpenAI-AMD型の資本提携
+
+DeepSeekの収益化モデルは、OpenAIがAMD/Cerebrasと結んだワラント（新株引受権）契約と同じ構造が想定される：
+
+> "AMD has issued OpenAI a warrant for up to 160 million shares of AMD common stock, structured to vest as specific milestones are achieved." — AMD Press Release, Oct 2025
+
+- OpenAI: AMD/Cerebrasの消費マイルストーン達成で株式取得 → パートナーの成功が自社の利益に直結
+- DeepSeek: 中国のメモリ・ASIC・CPU・ネットワーキングスタック企業と同様の契約を締結し、緊密に協業してHWスタックをAIワークロード対応に育成
+- 西側AI銘柄の合計時価総額は10T USD超 → 中国でも同等規模の産業創出が可能
+- DeepSeek自身は**1T USD valuation**を達成しながら「AGI for everyone」を実現
+
+### Long Game: RL Post-Training + RSI
+
+ハードウェア選択肢の拡大と計算需要の削減により、DeepSeekはより野心的な訓練プロジェクトに着手可能になる：
+
+- **大規模RLポストトレーニング**: 数兆トークンの軌跡生成。1Mコンテキストの訓練で長期ホライズンタスクが可能に
+- **RSI（Recursive Self-Improvement / 自動研究）**: AI自身が実験を設計・実行。試行錯誤が膨大な計算を要するが、AGI→ASIに必要な能力。ハードウェア制約の解放がRSIを実現可能にする
+
+### Open-Source Feedback Loop
+
 - Open-source models with widespread free accessibility (MIT license)
 - Radical cost undercutting: API prices 90-97% lower than Western alternatives
 - Open-source feedback loop: adoption → rapid iteration → further adoption → reinforced industrial dominance
 - Rapid global uptake via open-source channels (available on OpenRouter, HuggingFace)
+- **標準化戦略**: MLA、DSA、GRPO等の革新がGLM、Kimi等の中国AIラボ全体に波及 → DeepSeekアーキテクチャが中国AI業界のデファクト標準に
+
+### Contrarian Nature
+
+DeepSeekの「逆張り」の歴史（@bookwormengrのHero's Journey分析より）：
+
+| 業界の常識 | DeepSeekの選択 |
+|-----------|---------------|
+| Denseモデル構築 | MoE（訓練困難だが効率的） |
+| PPO（標準RLアルゴリズム） | GRPO（新規発明、Critic不要） |
+| インクリメンタル改善 | 第一原理からの再発明 |
+| アプリケーション販売で即時収益 | ハードウェアエコシステム育成という長期ゲーム |
+| ソース非公開で競争優位維持 | オープンソースでデファクト標準化 |
+
+> Source: [@bookwormengr "DeepSeek's 10 trillion USD grand strategy"](https://x.com/bookwormengr/status/2057909493250539891) (May 22, 2026)
 
 ## Market Impact
 

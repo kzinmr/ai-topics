@@ -1,3 +1,16 @@
+## [2026-05-25] wiki | Enriched deepseek entity with 10T USD grand strategy + raw article saved
+
+### Pages
+- `entities/deepseek.md` — Enriched "Strategy" section with @bookwormengr's "10 trillion USD grand strategy" thesis (May 2026): KV cache economics (YMTC/NAND market creation), memory-compute trade-offs (LPDDR + Engram / CXMT), hardware enablement matrix (MLA→CSA→HSA→TileLang), equity-collaboration model (OpenAI-AMD型), contrarian nature table, RL Post-Training + RSI long game. Strategy section expanded from 5 lines to ~90 lines.
+
+### Raw articles
+- `raw/articles/2026-05-22-deepseek-strategy.md` — @bookwormengr X Article. Full strategic analysis covering DeepSeek V4 KV cache compression (5.48GB vs Qwen3 89GB at 1M ctx), Chinese semiconductor ecosystem enablement (YMTC, CXMT, Moore Threads, MetaX, Biren), Engram memory-compute substitution, equity model thesis.
+
+### Index updates
+- `index.md` — Updated deepseek entity description with 10T USD strategy, TileLang, equity-collaboration model, cross-references to concept pages. Page count: 2045.
+
+---
+
 ## [2026-05-25] blog | Blog ingest: enriched george-hotz, created armin-ronacher entity, ai-slop concept, datasette-agent concept
 
 ### Pages
