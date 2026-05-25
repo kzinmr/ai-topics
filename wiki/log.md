@@ -5,6 +5,26 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md and start fresh.
 
+## [2026-05-25] watchdog | Auto-fixes: duplicate grpo entry removed, header counts corrected
+
+### Fixes Applied
+- Removed duplicate `concepts/grpo` index entry (line 937, identical to line 931)
+- Updated section headers: Entities 662→666, Concepts 1332→1340
+- Corrected Total pages: 2047→2036, Indexed entries: 1316→1324, Not in index: 711→712
+
+### Verification
+- `concepts/grpo` now appears exactly once as a primary index entry
+- All section headers intact and validated against actual file counts
+- Index corruption checks: 0 pipe-prefix, 0 triple-bracket, 0 line-number prefix
+- Sources gap: 799/2139 pages (37.4%) — persistent issue, needs batch attention
+
+### Notes
+- Pipeline watchdog: `x_accounts` job stale (26h) — transient
+- Graph analysis from 2026-05-22 is 74.5h old; live verification shows many issues already resolved by wiki-health-fix
+- Top unresolved: 635 unindexed concepts, 799 missing `sources:`, 410 broken wikilinks — all require batch operations exceeding auto-fix scope
+
+---
+
 ## [2026-05-25] ingest | Magnifica Humanitas — Vatican AI Encyclical + Chris Olah Vatican remarks
 
 ### Pages Created

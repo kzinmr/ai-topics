@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-25 | Total pages: 2047 | Indexed entries: 1316 | Not in index: 711 |
+> Last updated: 2026-05-25 | Total pages: 2036 | Indexed entries: 1324 | Not in index: 712 |
 
-## Entities (662 pages)
+## Entities (666 pages)
 
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -688,7 +688,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1332 pages)
+## Concepts (1340 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -934,7 +934,6 @@
 - [[concepts/google-flow-music]] — Google Flow Music — Google Labs AI music creation tool powered by Lyria 3 Pro. May 2026 partnership with Believe/TuneCore for artist distribution. AI-assisted lyrics, melodies, instruments. Artist retains ownership.
 - [[concepts/google-project-mariner-shutdown]] — Google's shutdown of Project Mariner browser agent in May 2026 due to poor performance and high costs.
 - [[concepts/gpqa]] — GPQA — 大学院レベルのGoogle-proof Q&A。生物学・物理学・化学の448問（Diamond set 198問）。PhD専門家65-74%、非専門家34%。フロンティアモデルは~94%で飽和しつつある。
-- [[concepts/grpo]] — Group Relative Policy Optimization: DeepSeek-R1で導入されたRLアルゴリズム。PPOのクリティックモデルを不要にし、大規模モデルのRL訓練の計算ボトルネックを解消。グループ内相対比較でアドバンテージ推定。
 - [[concepts/pgr]] — pgr: Entire製のRust MCPエージェント指向コード検索ツール。definitions-first・パス認識ランキングでfirst-query MRR 0.32→0.41、Hit@1 26%→34%。検索速度よりもランキング品質がエージェント性能を改善することを実証。
 - [[concepts/poor-mans-continuous-learning]] — Poor Man's Continuous Learning: LLMエージェントがモデル重みを更新せずに、成功した出力・ユーザーの修正・ドメイン知識を外部ナレッジベースに蓄積して改善する設計パターン。Text-to-SQL文脈でAshpreet Bediが提唱。BQ Golden Queries、dbt Semantic Layer、LPE-SQLと同種のアプローチ。
 - [[concepts/post-training-distributional-view]] — ポストトレーニング分布論: wh (@nrehiew_) による分布論的視点からのSFT/RL/On-Policy Distillationの比較。言語モデル=系列上の分布、ポストトレーニング=分布再形成。SFT（モード追従）、RL（報酬形成）、OPD（直接分布マッチング）の質的差異。181K views。
