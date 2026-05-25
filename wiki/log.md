@@ -1,3 +1,21 @@
+## [2026-05-27] every.to / Dan Shipper — Agent-Native Architecture research
+
+### Created
+- `entities/every-inc.md` — Every, Inc.: AI-native media & software company. CEO Dan Shipper. Products: Spiral, Cora, Sparkle, Monologue, Lex. Compound Engineering philosophy. OpenClaw creator Peter Steinberger affiliated.
+- `concepts/folder-is-the-agent.md` — Folder Is The Agent: project directory (CLAUDE.md, AGENT.md, skills/) as agent memory/identity. OpenClaw pioneered filesystem-as-agent architecture.
+- `concepts/compound-engineering-every.md` — Compound Engineering (Every): AI-native development via orchestrating existing components vs rebuilding. Single-person teams ship multi-component products. Plugin 14K+ stars.
+- `concepts/agent-native-architecture.md` — Agent-Native Architecture: Dan Shipper framework (Jan 2026). 5 principles (Parity, Granularity, Composability, Emergent Capability, Improvement Over Time). Software designed with agents as first-class citizens.
+
+### Updated
+- `entities/dan-shipper.md` — Added Agent-Native Architecture authorship, Folder-Is-The-Agent, Compound Engineering advocacy. Renamed sections, added Every product catalog, Key Quotes.
+- `wiki/index.md` — Added 4 new concept/entity entries, updated counts (1305 indexed, 1327 concepts)
+
+### Key Insights
+- **Folder Is The Agent**: The project directory itself IS the agent's memory — CLAUDE.md/AGENT.md provide identity, skills/ provide capabilities, git history provides lineage. No separate vector DB needed for single-agent workflows.
+- **Compound Engineering**: Counter to "rebuild everything with AI" — instead, compose existing tools (APIs, MCP servers, SaaS) orchestrated by LLM. Single-person teams can ship what took 10-person teams before.
+- **Agent-Native Architecture**: 5 principles for building software where agents are first-class users, not afterthoughts. Parity (human+agent equality), Granularity (smaller units), Composability (agent-to-agent APIs), Emergent Capability (tool combinations), Improvement Over Time (agent feedback loops).
+- **OpenClaw Connection**: Every's architecture directly influenced OpenClaw's filesystem-as-memory design, which in turn influenced Hermes Agent's .hermes/ directory patterns.
+
 ## [2026-05-27] SaaSの未来とAI Agent開発者のキャリア戦略
 
 ### Created

@@ -33,8 +33,14 @@ Early prediction that work with AI would resemble human management — allocatin
 ### Lenny's Podcast Appearance (May 2026)
 Returned to [[entities/lenny|Lenny's Podcast]] with 12 bold predictions about AI and the future of work. Made the case that SaaS is not dead, CLIs are over, PMs and designers will thrive, and that automation is a "lie" — every agent needs a human who cares about it. Argued that Codex and Claude Code will become the operating system for knowledge work, with SaaS tools running inside them rather than AI being baked into SaaS.
 
+### Agent-Native Architecture (January 2026)
+Authored the foundational framework defining [[concepts/agent-native-architecture|Agent-Native Architecture]] — a design philosophy where agents are first-class citizens with UI parity, atomic tools, and composability. Co-authored with Claude. Established five core principles: Parity, Granularity, Composability, Emergent Capability, and Improvement Over Time.
+
+### OpenClaw
+Involved with the development of [[openclaw]], an open-source agent platform compatible with the Folder-Is-The-Agent pattern and Compound Engineering philosophy.
+
 ### Compound Engineering Advocacy
-Championed Every's [[concepts/compound-engineering-every|Compound Engineering]] philosophy and the open-source plugin (7,000+ GitHub stars). Frequently appears on podcasts (Lenny's Podcast, etc.) discussing AI-native development.
+Championed Every's [[concepts/compound-engineering-every|Compound Engineering]] philosophy and the open-source plugin (7,000+ → 14,000+ GitHub stars). Frequently appears on podcasts (Lenny's Podcast, etc.) discussing AI-native development.
 
 ## AI Usage Patterns
 

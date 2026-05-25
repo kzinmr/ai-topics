@@ -1,0 +1,66 @@
+{
+  "checkpoint_run_id": "20260525T040031Z",
+  "summary_ja": "5件すべてが既存パイプラインで処理済み。Dan ShipperのLenny's Podcast (entities/dan-shipper.md, 2026-05-25更新) と Ryan LopopoloのSymphony/Harness Engineeringインタビュー (entities/ryan-lopopolo.md, 2026-05-22更新) は既にwikiに反映済み。残り3件は同一post_idのSubstack追跡URLバリエーションの重複。take=0, reference=0, skip=5。",
+  "total_scanned": 5,
+  "already_processed": 5,
+  "takes": 0,
+  "references": 0,
+  "skips": 5,
+  "decisions": [
+    {
+      "item_id": "2026-05-24_lenny-podcast-dan-shipper-ai-paradox",
+      "source": "backlog",
+      "title": "The AI paradox: More automation, more humans, more work — Dan Shipper on Lenny's Podcast",
+      "url": "https://www.youtube.com/watch?v=4D3hDmGhFhA",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-24_lenny-podcast-dan-shipper-ai-paradox.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既にwikiに取り込み済み。entities/dan-shipper.mdが2026-05-25に更新され、12の予測、Key Themes、引用符、Lenny's Podcast appearanceの全セクションが記載済み。log.mdにも「Added Lenny's Podcast appearance: 12 predictions section, Key Themes, new quotes」と記録。重複処理不要。",
+      "candidate_wiki_path": "entities/dan-shipper.md",
+      "body_excerpt": "Full transcript of 94-min Lenny's Podcast with Dan Shipper covering 12 AI predictions, After Automation paradox, SaaS economics, and the future of knowledge work inside Codex/Claude Code."
+    },
+    {
+      "item_id": "substack.com--app-link-post--b45ed70f",
+      "source": "backlog",
+      "title": "Extreme Harness Engineering for Token Billionaires: Ryan Lopopolo, OpenAI Frontier & Symphony",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193478192",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--b45ed70f.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既にwikiに取り込み済み。entities/ryan-lopopolo.mdが2026-05-22に更新され、1M LOC zero-human-code experiment, token billionaire (~1B tokens/day), Symphony orchestration details, ghost library spec format, dark factory patternが記載済み。log.mdにも詳細記録済み。",
+      "candidate_wiki_path": "entities/ryan-lopopolo.md",
+      "body_excerpt": "Podcast transcript: Ryan Lopopolo on Harness Engineering, Symphony orchestration, 1M LOC codebase with zero human-written code, and OpenAI Frontier team's Codex usage patterns."
+    },
+    {
+      "item_id": "substack.com--app-link-post--bba2a796",
+      "source": "backlog",
+      "title": "Extreme Harness Engineering for Token Billionaires (email-play variant)",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193478192&utm_campaign=email-play-on-substack",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--bba2a796.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 同一post_id=193478192のSubstack追跡URL別バリアント。b45ed70fと同一内容。既にwiki取り込み済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Duplicate of b45ed70f — same post_id, different tracking params (email-play-on-substack variant)."
+    },
+    {
+      "item_id": "substack.com--app-link-post--9e20faa2",
+      "source": "backlog",
+      "title": "Extreme Harness Engineering for Token Billionaires (play_card variant)",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193478192&utm_content=play_card",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--9e20faa2.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 同一post_id=193478192のSubstack追跡URL別バリアント。b45ed70fと同一内容。既にwiki取り込み済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Duplicate of b45ed70f — same post_id, different tracking params (play_card variant)."
+    },
+    {
+      "item_id": "substack.com--app-link-post--4ef26801",
+      "source": "backlog",
+      "title": "Extreme Harness Engineering for Token Billionaires (share variant)",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193478192&utm_campaign=email-share&action=share",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--4ef26801.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 同一post_id=193478192のSubstack追跡URL別バリアント。b45ed70fと同一内容。既にwiki取り込み済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Duplicate of b45ed70f — same post_id, different tracking params (share/action variant)."
+    }
+  ]
+}

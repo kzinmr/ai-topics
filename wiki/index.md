@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2035 | Indexed entries: 1301 | Not in index: 714 |
+> Last updated: 2026-05-27 | Total pages: 2035 | Indexed entries: 1305 | Not in index: 714 |
 
 ## Entities (660 pages)
 
@@ -170,7 +170,7 @@
 - [[entities/copilot-cli]] — GitHub製ターミナルネイティブAIコーディングエージェント。6種類のビルトインサブエージェント（explore/code-review/research等）、`/fleet`並列実行、MCP拡張、BYOK/ローカルモデル対応（2026年4月+）。Copilot Free/Pro/Pro+/Business/Enterpriseに含まれる。
 - [[entities/corbett]] — **X/Twitter** | @corbtt |
 - [[entities/cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
-- [[entities/dan-shipper]] — Dan Shipper — CEO and cofounder of Every. Author of the "After Automation" paradox and the definition of AI slop as "visible sameness." 12 predictions on AI & work from Lenny's Podcast (May 2026).
+- [[entities/dan-shipper]] — Dan Shipper — CEO and cofounder of Every. Author of the "After Automation" paradox, Agent-Native Architecture framework, and the definition of AI slop as "visible sameness." 12 predictions on AI & work from Lenny's Podcast (May 2026).
 - [[entities/daniel-de-laney]] — **Blog** | danieldelaney.net |
 - [[entities/daniel-han]] — **X/Twitter** | @danielhanchen |
 - [[entities/daniel-miessler]] — Cybersecurity and AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ GitHub stars), SecLists, PAI. Author of Autonomous Component Optimization, Intent-Based Engineering, Graph of Algorithms, and The Scaffolding Ratio concepts.
@@ -220,7 +220,7 @@
 - [[entities/ethan-mollick]] — **URL:** https://www.oneusefulthing.org
 - [[entities/eugene-yan]] — **URL:** https://eugeneyan.com
 - [[entities/eugeneyan]] — **X** | @eugeneyan |
-- [[entities/every-inc]] — AI-native media & software company. Publishers of the daily newsletter, creators of Compound Engineering plugin (7K+ stars). 5 products (Spiral, Cora, Sparkle, Monologue, Lex) with single-person teams. CEO: Dan Shipper.
+- [[entities/every-inc]] — AI-native media & software company. Publishers of the daily newsletter, creators of Compound Engineering philosophy (open-source plugin 14K+ stars), Folder-Is-The-Agent pattern, Agent-Native Architecture framework. Products: Spiral, Cora, Sparkle, Monologue, Lex, OpenClaw. CEO: Dan Shipper. Team: ~30 running 5 products + media.
 - [[entities/evanhahn-com]] — **Blog** | evanhahn.com |
 - [[entities/exa]] — Exa — AI-native search platform ("search lab for agents"). $250M Series C at $2.2B valuation (May 2026).
 - [[entities/fabiensanglard-net]] — **Blog** | fabiensanglard.net |
@@ -682,7 +682,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1323 pages)
+## Concepts (1327 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -705,6 +705,7 @@
 - [[concepts/agentic-engineering-cognition-devin-workflow]] — Agentic Engineering: Cognition and Devin Workflows — Cognitive architectures for agentic engineering: Devin's approach and alternatives
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns — Design patterns for agentic software engineering: planning, execution, verification loops
 - [[concepts/agentic-manual-testing]] — Agentic Manual Testing — Using AI agents to automate exploratory and manual testing workflows
+- [[concepts/agent-native-architecture]] — Agent-Native Architecture — Dan Shipper/Every framework: 5 principles (Parity, Granularity, Composability, Emergent Capability, Improvement Over Time) for designing software where agents are first-class citizens. Co-authored with Claude.
 - [[concepts/agent-native-cloud]] — Agent-Native Cloud — Infrastructure paradigm designed for AI agents: version control beyond Git, observability at 1000x, orchestration beyond K8s, safe production forks, self-replicating infrastructure. Championed by Railway (Jake Cooper).
 - [[concepts/agent-ontology]] — Agent Ontology — Semantic representation of enterprise operations for AI agents. Substrate for working/episodic/semantic/procedural memory, decision lineage, logic binding, scenarios. See [[entities/palantir]].
 - [[concepts/agent-security-patterns]] — Agent Security Patterns — Security best practices for AI agent deployments: sandboxing, authentication, authorization, threat modeling
@@ -781,6 +782,7 @@
 - [[concepts/claude-md-rules]] — Karpathy's CLAUDE.md behavioral guidelines for AI coding agents (4→12 rules, 41%→3% mistake rate). 120K+ GitHub stars. Most-starred single-file repo of 2026.
 - [[concepts/claude-opus-4-7]] — Claude Opus 4.7: AnthropicのフロンティアLLM（2026年4月リリース）
 - [[concepts/colbert]] — ColBERT (Late Interaction Retrieval): neural IR architecture with MaxSim token-level scoring. Outperforms single-vector models with 1/60th the parameters on agentic search (BrowseComp-Plus), superior OOD generalization (ViDoRe), and order-of-magnitude data efficiency. Key tradeoffs: 32x storage, two-step retrieval pipeline.
+- [[concepts/compound-engineering-every]] — Compound Engineering (Every) — Dan Shipper/Every framework: AI-native development where existing components are orchestrated rather than rebuilt. Single-person teams ship multi-component products. Open-source compound-engineering-plugin (14K+ stars). See [[concepts/agent-native-architecture]] and [[concepts/folder-is-the-agent]].
 - [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling
 - [[concepts/codex-goal]] — Codex /goal Command — OpenAI's built-in Ralph loop (Codex CLI v0.128.0). Persisted goal with runtime continuation, model-side audit, TUI controls. Turns Codex into hours-long autonomous agent.- [[concepts/codex-goal-meta-prompting]] — Codex /goal Meta-Prompting — technique for using a second AI to generate high-quality /goal prompts for OpenAI Codex's long-horizon autonomous agent mode
 - [[concepts/claude-code-goal]] — Claude Code /goal Command — Goal-driven autonomous workflow via prompt-based Stop hook + evaluator model (Haiku). Condition-driven multi-turn execution: set a completion condition, Claude works until evaluator confirms it is met. Complementary to /loop and auto mode.
@@ -1074,6 +1076,7 @@
 - [[concepts/factorio-learning-environment]] — Factorio Learning Environment (FLE) — Factorioゲームを模したエージェントeval。コード+REPLで操作、ビジョン不要。24のlab-playタスク。NeurIPS 2025。
 - [[concepts/federation-of-experts]] — Federation of Experts (FoE) — communication-efficient distributed inference for MoE LLMs. Clusters experts by KV head, eliminates cross-node all-to-all. 5.2x latency reduction, 3.62x TTFT improvement.
 - [[concepts/flash-attention-4]] — FA4: Blackwell B200最適化のCUDAカーネル。1,605 TFLOPs/s（71%利用率）、cuDNN比1.3×高速。非同期パイプライン・ハイブリッドexp・条件的softmax rescaling。Tri Dao (Together AI/Princeton) ら。
+- [[concepts/folder-is-the-agent]] — Folder Is The Agent — Dan Shipper (Every) pattern: the project directory (CLAUDE.md, AGENT.md, skills/) IS the agent's memory, identity, and operating context. OpenClaw pioneered filesystem-as-agent architecture. Agents read files on startup to know who they are. See [[concepts/agent-native-architecture]].
 - [[concepts/forward-deployed-engineering]] — FDE: Frontier AI labs embedding engineers into enterprise customers. Models commoditize → deployment layer becomes the new moat. OpenAI $4B Deployment Co., Anthropic $1.5B JV, Google hiring hundreds.
 - [[concepts/frontier-swe-benchmark]] — FrontierSWE: 超高難度コーディングエージェントベンチマーク（Proximal Labs）。20時間制限、Implementation/Performance/Researchの3カテゴリ17タスク。GPT-5.5+Codexが平均ランク2.35（Dominance 83%）で首位。保守（GPT-5.4）vs攻撃的（Opus 4.6）の行動比較、overconfidence/cheating行動を記録。
 - [[concepts/frontier-lab-job-preparation]] — Frontier Lab Job Preparation — Vlad Feinberg（Google/TPU）によるフロンティアラボ就職ガイド。カーネルワークが最大のボトルネック、Chinchilla則導出、Jax実装、Pallasカーネル最適化。採用テスト基準。

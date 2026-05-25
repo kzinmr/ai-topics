@@ -1,84 +1,92 @@
 ---
-title: "Compound Engineering (Every Inc.)"
-created: 2026-05-02
-updated: 2026-05-02
+title: "Compound Engineering (Every)"
+created: 2026-05-25
+updated: 2026-05-25
 type: concept
 tags:
   - concept
-  - agentic-engineering
-  - harness-engineering
-  - product-management
-  - company
-aliases:
-  - compound-engineering-every
-  - every-compound-engineering
+  - ai-agent-engineering
+  - context-engineering
+  - software-engineering
+  - developer-tooling
+  - feedback-loop
+  - ai-automation
 sources:
-  - raw/articles/2026-05-02_guide-to-agent-native-product-management.md
+  - "https://every.to/guides/compound-engineering"
+  - "raw/articles/2026-04-17_every-to_folder-is-the-agent.md"
+  - "https://github.com/steipete/openclaw"
 ---
 
-# Compound Engineering (Every Inc.)
+# Compound Engineering
 
-Compound Engineering is an AI-native software development philosophy created by [[entities/every-inc|Every Inc.]], primarily authored by [[entities/kieran-klaassen|Kieran Klaassen]]. The core insight: **each unit of engineering work should make subsequent units easier—not harder.**
+**Origin**: Kieran Klaassen and the [[entities/every-inc|Every]] engineering team, 2025-2026
 
-This is distinct from [[concepts/compound-engineering-loop|Simon Willison's Compound Engineering Loop]], which focuses on the human-agent feedback cycle. Every's version is a complete engineering + product management philosophy with an installable plugin.
+Compound Engineering is Every's AI-native development philosophy where humans and AI agents work in a reinforcing loop that compounds in effectiveness over time.
 
 ## Core Philosophy
 
-> "Instead of features adding complexity and fragility, they teach the system new capabilities. Over time, the codebase becomes easier to understand, easier to modify, and easier to trust."
+Unlike traditional software engineering where humans write all the code, Compound Engineering establishes a loop:
+1. **Human sets up conditions** — prompts, context files, skills, architecture decisions
+2. **AI agents do iterative work** — code generation, testing, refactoring
+3. **Human reviews and refines** — taste, judgment, architectural decisions
+4. **Context accumulates** — each cycle builds institutional knowledge in the project
 
-### Traditional vs. Compound Engineering
+The key insight: **each cycle makes the next cycle more effective** because the accumulated context (CLAUDE.md, runbooks, postmortems, specialized agents) makes the AI more capable.
 
-| Aspect | Traditional | Compound Engineering |
-|--------|-------------|---------------------|
-| Codebase trajectory | Accumulates technical debt | Accumulates AI knowledge |
-| New features | Require negotiation with old code | Teach the system new capabilities |
-| Bug fixes | One-time fix | Eliminate entire categories of future errors |
-| Patterns | Remain ad-hoc | Become reusable tools |
-| Team structure | Armies of engineers | Highly leveraged individuals |
+## Relationship to Folder-Is-The-Agent
 
-## Implementation
+Compound Engineering is the methodology; [[concepts/folder-is-the-agent|Folder Is the Agent]] is the implementation pattern. The folder structure stores the "compound" — the accumulated knowledge that makes each iteration more productive.
 
-Compound Engineering is operationalized through the **compound-engineering-plugin** (GitHub: `EveryInc/compound-engineering-plugin`, 7,000+ stars), an agent-agnostic plugin for Claude Code, Codex, and other coding agents.
+## Key Practices
 
-### Available Skills
+### Context Accumulation
+- **CLAUDE.md/AGENT.md**: Coding conventions, naming standards, test structure
+- **docs/developer-docs/**: Architecture reports, system design decisions
+- **docs/runbooks/**: Operational patterns from real incidents
+- **docs/postmortems/**: Lessons learned from failures
+- **.claude/agents/**: Specialized agent configurations
+- **.claude/skills/**: Reusable capability definitions
 
-| Command | Purpose | Category |
-|---------|---------|----------|
-| `/ce-strategy` | Product strategy interviews (Rumelt framework) | Planning |
-| `/ce-product-pulse` | Automated product health reports | Monitoring |
-| `/ce-ideate` | Feature ideation | Planning |
-| `/ce-plan` | Feature planning and ticket generation | Planning |
-| `/ce-brainstorm` | Structured brainstorming | Planning |
+### Human-in-the-Loop Workflow
+> "Build it, use it, trust it, orchestrate it."
 
-### Adoption Scale (4 Stages)
+1. **Build**: Human creates the initial flow with AI assistance
+2. **Use**: Human operates the flow personally to understand it
+3. **Trust**: Flow proves predictable and reliable through use
+4. **Orchestrate**: Only then automate with dispatch layers
 
-1. **Stage 1:** Agents have file access + can run tests and git commits
-2. **Stage 2:** Agents have browser + local logs + PR creation
-3. **Stage 3:** Agents have production logs (read-only), error tracking, monitoring
-4. **Stage 4:** Full agent-native workflow with all MCP-connected tools
+Skipping steps 1-3 leads to agents producing work that's hard to evaluate, duplicate efforts, and lost trust.
 
-## Evidence of Effectiveness
+## Open Source Implementation
 
-- Every runs 5 software products (Spiral, Cora, Sparkle, Monologue, Lex) with single-person engineering teams
-- 7-figure revenue with ~15 total headcount
-- Referenced by Will Larson (lethain.com) as a notable engineering innovation
+Every released an open-source plugin (7,000+ → 14,000+ GitHub stars) that implements Compound Engineering principles. The plugin is [[openclaw]]-compatible and provides:
+- Structured context accumulation
+- Agent skill definitions
+- Workflow orchestration patterns
 
-## Relationship to [[concepts/compound-engineering-loop|Simon Willison's Loop]]
+## Results at Every
 
-These are complementary concepts at different scales:
+- Team of ~30 runs 5 software products + media operation
+- 95% of work emails handled by AI (via Cora)
+- No one writes code by hand — all engineering is AI-assisted
+- **44 folders-as-agents** running across projects
+- AI agents (@Claudie, @Andy, @Viktor) are first-class Slack team members
 
-| Dimension | Every's Compound Engineering | Simon's Compound Engineering Loop |
-|-----------|----------------------------|-----------------------------------|
-| Scope | Entire engineering + PM philosophy | Code-level feedback cycle |
-| Artifacts | Plugin, skills, strategy docs | Hoarded knowledge |
-| Focus | Business outcomes, product strategy | Code quality, iterative improvement |
-| Automation | Agent-managed planning + monitoring | Human-in-the-loop code review |
+## Industry Impact
+
+Compound Engineering represents a shift from:
+- **Traditional**: Human writes code → tests → deploys
+- **Compound**: Human sets context → AI iterates → Human reviews → Context improves → repeat
+
+This pattern influenced:
+- Anthropic's **Claude Managed Agents** (hosted service for sandboxing, state management, tool execution)
+- The broader **AI agent engineering** movement
+- Open-source tooling for agent context management
 
 ## Related Pages
-
-- [[entities/every-inc]] — Company
-- [[entities/kieran-klaassen]] — Creator
-- [[entities/marcus-moretti]] — PM guide author
-- [[concepts/agent-native-product-management]] — PM application
-- [[concepts/compound-engineering-loop]] — Simon Willison's related concept
-- [[concepts/harness-engineering]] — Related discipline
+- [[concepts/folder-is-the-agent]] — Implementation pattern
+- [[entities/every-inc]] — Origin company
+- [[entities/dan-shipper]] — Every's CEO, philosophy champion
+- [[concepts/agent-native-architecture]] — Design principles this embodies
+- [[openclaw]] — Compatible agent platform
+- [[concepts/human-sandwich]] — Human-AI collaboration pattern
