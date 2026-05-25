@@ -5,6 +5,18 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md and start fresh.
 
+## [2026-05-25] health | Orphan page registration (20 concept pages)
+
+### Changes
+- Registered 20 orphan concept pages in index.md (alphabetically inserted)
+- Pages: ai-patterns-for-glam, causal-backbone-conjecture, claw-code, codex-goal-meta-prompting,
+  codex-safety-at-openai, cognitive-debt, cognitive-load-*, company-ai-pilled,
+  compound-engineering-loop, compute-scaling-bottlenecks, content-engine,
+  context-compression, and 8 more
+- Updated section header count: Concepts (617→637 pages)
+- Updated total pages: 2036→2056, indexed entries: 1324→1344, not-in-index: 712→692
+- Verified: validate_index.py clean ✅
+
 ## [2026-05-25] watchdog | Auto-fixes: duplicate grpo entry removed, header counts corrected
 
 ### Fixes Applied

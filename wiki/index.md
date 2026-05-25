@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-25 | Total pages: 2036 | Indexed entries: 1324 | Not in index: 712 |
+> Last updated: 2026-05-25 | Total pages: 2056 | Indexed entries: 1344 | Not in index: 692 |
 
 ## Entities (666 pages)
 
@@ -688,7 +688,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1340 pages)
+## Concepts (637 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -747,6 +747,7 @@
 - [[concepts/ai-generated-issues-in-oss]] — AI-Generated Issues in Open Source (slop issues) — LLM生成の低品質Issue/PRがOSSメンテナンスにもたらす危機。誤診断がエージェント主導開発をミスリード。Piの90日統計: 3,145件中80%自動クローズ、<10%マージ。Armin Ronacherの"Building Pi With Pi"で文書化。[[entities/armin-ronacher]] [[entities/pi]]
 - [[concepts/ai-index-report-2026]] — 2026 AI Index Report
 - [[concepts/ai-coding-agent-criticism]] — AI Coding Agent Criticism
+- [[concepts/ai-patterns-for-glam]] — AI Design Patterns for Information Professionals (Boring AI)
 - [[concepts/ai-ready-apis]] — AI-Ready APIs（AIエージェント向けAPI設計）。AIエージェントをAPI消費者として想定したAPI設計の概念。機械可読スキーマ、エージェント認識セキュリティ、コントラクトテストの重要性。Postman 2025調査（5,700人対象）のAI-APIギャップ分析を含む。
 - [[concepts/ai-supply-chain-security]] — AI Supply Chain Security — Four supply-chain incidents in 50 days (Apr-May 2026): Codex CI injection, LiteLLM/Mercor breach, Claude Code source map leak, TanStack worm (84 malicious npm packages with valid SLSA L3). Attacks target release pipelines, not models. VentureBeat's 7-class attack surface framework.
 - [[concepts/ai-services-joint-ventures]] — **AI Services JVs (May 2026)**: OpenAI ($4B "The Deployment Company") and Anthropic ($1.5B Blackstone/Goldman JV) create PE-backed ventures to buy engineering services/consulting firms. Explicitly mirrors Palantir's embed-engineers-in-customer-ops model. Marks the shift from API-first to full-stack services enterprise AI. → Reuters scoop.
@@ -783,7 +784,26 @@
 - [[concepts/baudrillard-and-ai]] — ボードリヤールとAI — シミュラークルとシミュレーションのAI時代における現れ。ボードリヤールの4段階のイマージュ理論、ハイパーリアリティ、地図が領域に先行する「シミュラークルの先行」概念をLLM時代に適用。AIは模倣の失敗ではなくシミュラークルの完成形である。
 - [[concepts/bernstein]] — Deterministic multi-agent orchestrator. Python scheduler, zero LLM tokens on coordination, Git worktree isolation, 40+ agent adapters.
 - [[concepts/bm25]] — BM25 (Best Match 25): classical lexical retrieval algorithm (TF-IDF variant with saturation + length normalization). PI-SERINI (May 2026) demonstrated BM25 + capable LLM in agentic loop beats dense retrievers on BrowseComp-Plus (83.1% accuracy, 3.3x–10x cheaper). Tuned parameters: k1=25, b=1 for long documents. Key insight: agent reasoning about search results matters more than retrieval quality.
+- [[concepts/causal-backbone-conjecture]] — The Causal Backbone Conjecture
+- [[concepts/claude-agent-sdk-orchestration-hooks-subagents-plan-mode-output-styles]] — claude-agent-sdk orchestration, hooks, subagents, plan-mode
+- [[concepts/claude-code-prompt-engineering-context-management-caching-agent-architecture]] — claude-code prompt engineering, context management, caching, agent architecture
+- [[concepts/claw-code]] — Claw Code
 - [[concepts/coala]] — CoALA — Cognitive Architectures for Language Agents — Unified framework for agent cognitive architectures.
+- [[concepts/code-execution-agents-latency-monty-pydantic-ai-tool-calling-sandbox]] — Code execution agents latency, Monty, Pydantic AI, sandbox
+- [[concepts/codex-goal-meta-prompting]] — Codex /goal Meta-Prompting
+- [[concepts/codex-safety-at-openai]] — Codex Safety at OpenAI
+- [[concepts/cognition-devin-memory-tool-claude-code-competitive-analysis-context-management]] — Cognition Devin memory tool, Claude Code competitive analysis
+- [[concepts/cognitive-debt]] — Cognitive Debt
+- [[concepts/cognitive-load-patterns]] — Cognitive Load Patterns — Anti-Patterns and Solutions
+- [[concepts/cognitive-load-software-development]] — Cognitive Load in Software Development
+- [[concepts/cognitive-load-theory]] — Cognitive Load Theory — Core Concepts
+- [[concepts/cognitive-load-tool-support]] — Cognitive Load Tool Support — Agentic Engineering & Tooling
+- [[concepts/company-ai-pilled]] — Company AI-Pilled
+- [[concepts/compound-engineering-loop]] — Compound Engineering Loop
+- [[concepts/compute-scaling-bottlenecks]] — Compute Scaling Bottlenecks
+- [[concepts/concept-context-graph-decision-trace-system-of-record-foundation-capital]] — Context graph, decision trace, system of record — Foundation Capital
+- [[concepts/content-engine]] — Content Engine
+- [[concepts/context-compression]] — Context Compression Techniques
 - [[concepts/cyber-frontier-models]] — Cyber Frontier Models: LLMs specifically excelling at cybersecurity tasks (exploit chain construction, PoC generation). Coined by Cloudflare CSO Grant Bourzikas (May 2026). Characterized by step-change capabilities over general-purpose models.
 - [[concepts/cognitive-cost-of-agents]] — Cognitive Cost of Agents — The overhead of reasoning, planning, and verification when using AI coding agents.
 - [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
