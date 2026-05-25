@@ -1,3 +1,10 @@
+## [2026-05-25] blog | Agent Control Plane——13コンポーネントの技術アーキテクチャ
+
+### Blog post
+- `blog/2026-05-25_hermes_agent-control-plane-technical-architecture.md` — 13コアコンポーネントを3層（統治・実行・観測）に分類し、各コンポーネントをwikiプリミティブと対応づけ。A2A Signed Agent Cards、Ramp OBOU、Yale CELI 3層ガードレール、Palantir Decision Lineage、Browser Use Zero Secrets等。Google/ServiceNow/Workday/Palantirの4社実装比較表と充足度評価表。
+
+---
+
 ## [2026-05-25] blog | Tenant Agent Pack——9つの技術レイヤーで読み解く
 
 ### Blog post
