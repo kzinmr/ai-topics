@@ -83,6 +83,7 @@ The best results come from **combining** methods: keyword search + semantic sear
 ## Related Concepts
 
 - [[concepts/rag-not-dead-series]] — The 7-part series this concept is part of
+- [[concepts/drowning-in-documents-paradox]] — The theoretical reason naive single-vector RAG fails at scale
 - [[concepts/graph-db-overengineering-rag]] — Part 7: complementary perspective on not over-engineering retrieval
 - [[concepts/context-graph]] — Context engineering; relates to "context rot" when stuffing everything
 - [[concepts/harness-engineering]] — Measure-first design; retrieval should be evaluated, not assumed

@@ -2653,3 +2653,18 @@ Cross-pipeline dedup: blog-wiki-ingest (07:00, 07:50) already consumed OpenAI Co
 - raw/articles/2026-05-20_anthropic_unreasonable-effectiveness-html.md
 - https://github.com/anthropics/skills/tree/main/skills/claude-api
 - https://github.com/anthropics/claude-cookbooks/tree/main/managed_agents/self_hosted_sandboxes
+
+## [2026-05-26] enrich | entities/embeddings.md + raw paper 2603.29519 + concepts/drowning-in-documents-paradox.md
+
+- **Saved raw paper** — raw/papers/2026-03-31_2603.29519_single-vector-embeddings-limitations.md (Archish S et al., Microsoft Research India). Registered in papers_index.
+- **Enriched entities/embeddings.md** — Major rewrite adding: theoretical bounds (Observation 2.3/2.4, Proposition 2.5), Atomic LIMIT experiment table, goodness metric G, toy model single-vs-multi-vector comparison, score distribution analysis, expanded cross-references. Updated from 67 to 123 lines.
+- **Created concepts/drowning-in-documents-paradox.md** — Full concept page covering: intellectual genealogy (Reimers & Gurevych 2021 → Jacob et al. 2025 → Archish S et al. 2026), goodness metric G definition, √n vs √log n scaling analysis, empirical validation, connection to LIMIT failures, catastrophic forgetting as drowning amplifier, RAG/agent implications, mitigations table.
+- **Updated concepts/colbert.md** — Added drowning paradox + embeddings entity to related frontmatter; expanded "Why ColBERT Outperforms Single-Vector" section with drowning connection and G-metric comparison; added to Related Pages.
+- **Updated concepts/modern-retrieval-toolkit.md** — Added drowning-in-documents-paradox to Related Concepts.
+- **Updated wiki/SCHEMA.md** — Added `drowning-in-documents` tag under Techniques.
+- **Updated wiki/index.md** — Added concepts/drowning-in-documents-paradox. Counts: Total 2027→2029, Indexed 1292→1293.
+
+### Sources
+- raw/papers/2026-03-31_2603.29519_single-vector-embeddings-limitations.md
+- https://arxiv.org/abs/2603.29519
+- https://arxiv.org/abs/2012.14210 (Reimers & Gurevych, 2021)

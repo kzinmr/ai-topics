@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-25 | Total pages: 2027 | Indexed entries: 1292 | Not in index: 713 |
+> Last updated: 2026-05-26 | Total pages: 2029 | Indexed entries: 1293 | Not in index: 714 |
 
 ## Entities (659 pages)
 
@@ -1182,6 +1182,7 @@
 - [[concepts/direct-prompting-philosophy]] — Direct Prompting Philosophy: 「Just Talk To It」— 複雑なフレームワークより直接プロンプトを優先する哲学。
 - [[concepts/docker-sandbox-microvm-api]] — Docker Sandbox MicroVM API: AIコーディングエージェントを安全に実行するDocker Sandbox API。
 - [[concepts/dr-manhattan-syndrome-ai]] — Dr. Manhattan Syndrome in AI Leadership: AI業界リーダーが「人類(Humanity)」という抽象概念で語り、実際の人間の懸念と接続できなくなるコミュニケーション病理。Person Familiarの命名概念。
+- [[concepts/drowning-in-documents-paradox]] —  drowning-in-documents paradox: コーパスが増大するにつれて、関連文書がノイズに埋没する密ベクトル検索の根本的限界。Reimers & Gurevych (2021) が最初に特定し、Archish S et al. (2026) がシングルベクターモデルとマルチベクターモデルの理論的差異（G指標、√n vs √log nスケーリング）を定式化。
 - [[concepts/agent-memory]] — Agent Memory (Redirect)
 - [[concepts/agent-team-swarm]] — Agent Team / Swarm
 - [[concepts/agentic-pbt]] — Agentic Property-Based Testing (Anthropic + Hypothesis)

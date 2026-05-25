@@ -149,4 +149,6 @@ As Benjamin Clavié frames it:
 - [[entities/late-interaction]] — LIR Workshop @ ECIR 2026
 - [[concepts/agentic-search]] — Agentic search patterns where ColBERT excels
 - [[concepts/modern-retrieval-toolkit]] — The modern retrieval toolkit argument
+- [[concepts/drowning-in-documents-paradox]] — Why single-vector drowns at scale; why ColBERT doesn't
+- [[entities/embeddings]] — The theoretical limits of single-vector embeddings
 - [[entities/omar-khattab]] — DSPy creator, ColBERT originator
