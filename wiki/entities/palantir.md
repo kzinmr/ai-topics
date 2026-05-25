@@ -2,23 +2,31 @@
 title: "Palantir Technologies"
 type: entity
 created: 2026-04-30
-updated: 2026-05-11
+updated: 2026-05-25
 tags:
   - company
   - decision-centric
   - ai-agents
+  - enterprise-agents
+  - enterprise-ai
   - ai-adoption
+  - agent-governance
+  - ai-governance
+  - agent-security
 sources:
-  - raw/articles/2026-04-28_connecting-agents-to-decisions.md
+  - raw/articles/2026-04-28_x-article-connecting-agents-to-decisions-palantir.md
   - https://x.com/i/article/2049136883528011954
   - raw/newsletters/2026-05-09-the-man-who-studied-power-and-then-built-it-alex-karp-palantir-and-the-technolog.md
   - raw/articles/2026-05-05_reuters-openai-anthropic-jv-acquisitions.md
   - https://www.reuters.com/world/openai-anthropic-ventures-talks-buy-ai-services-firms-sources-say-2026-05-05/
+  - raw/articles/berthub.eu--articles-posts-some-notes-on-palantir--c6e723be.md
+  - https://berthub.eu/articles/posts/some-notes-on-palantir/
 related:
   - concepts/agent-ontology
   - concepts/decision-centric-architecture
   - concepts/enterprise-agents
   - concepts/ai-services-joint-ventures
+  - concepts/harness-engineering
 ---
 
 # Palantir Technologies
@@ -71,6 +79,97 @@ After decisions are executed, the Ontology enables **decision-centric learning**
 ### AgentCamps
 
 Palantir's hands-on onboarding program where customers achieve operational AI outcomes in hours rather than months. Key to rapid Ontology adoption.
+
+## The FDE (Forward Deployed Engineer) Model
+
+The FDE model is Palantir's operational backbone — and the key reason competitors struggle to replicate Palantir's enterprise adoption despite better-funded AI models.
+
+### What FDEs Do
+
+Forward Deployed Engineers are Palantir employees **embedded inside customer operations**. Unlike traditional consultants who deliver a report and leave, FDEs:
+
+1. **Integrate diverse data sources** — ERPs, MES, WMS, IoT streams, unstructured repositories, geospatial data stores — into the customer's Ontology
+2. **Build custom applications** using Workshop (low-code) and the Ontology SDK (code-level) that map to the customer's actual workflows
+3. **Onboard teams** through AgentCamps and ongoing mentorship, teaching customers to build their own agents
+4. **Adapt continuously** — as business conditions change, FDEs reconfigure data pipelines, logic bindings, and action writeback paths
+5. **Bridge the gap** between Palantir platform capabilities and the messy reality of the customer's operational systems
+
+### The "Free with the Software" Accounting Trick
+
+As cybersecurity expert Bert Hubert documented (May 2026), the FDE model relies on a procurement workaround:
+
+> "Palantir consultants 'come for free with the software' — or at least, they are prepaid, so they don't represent an hourly cost to departments using Palantir solutions."
+
+This is critical for government adoption: governments can approve software procurement budgets but struggle to hire individual technical employees at market rates. By bundling consulting into the software contract, Palantir effectively provides an outsourced IT integration department that government agencies can't build on their own.
+
+### Why the FDE Model Creates Lock-In
+
+Hubert identifies a structural dependency that makes Palantir extremely difficult to displace:
+
+> "To displace Palantir, it is not enough to show up with equivalent software. A substitute would ALSO have to come up with free support staff, to replicate the whole experience."
+
+The operational dependency is deeper than software licensing:
+- **Institutional knowledge**: FDEs accumulate deep understanding of the customer's data landscape, tribal knowledge, and decision patterns
+- **Ongoing adaptation**: The Ontology is not a one-time setup — it evolves continuously as FDEs add data sources, logic bindings, and action workflows
+- **Outsourced IT capacity**: Decades of government underinvestment in technical talent means departments can't operate without the embedded engineers
+
+### Industry Validation
+
+In May 2026, OpenAI ($4B "The Deployment Company") and Anthropic ($1.5B Blackstone/Goldman JV) announced they were replicating the FDE model at massive scale — explicitly benchmarking against Palantir. Both ventures are acquiring AI services firms to add "hundreds of engineers and consultants" who will embed in customer operations. See [[concepts/ai-services-joint-ventures]].
+
+This validates that the **API-only model is insufficient for enterprise AI** — the services layer is not a temporary bridge but a permanent requirement.
+
+### Related Platforms Using Forward Deployment
+
+- [[entities/hex-technologies]] — Founded by ex-Palantir engineers; applies similar embedded expertise model to data analytics
+- [[entities/decagon]] — Co-founder Ashwin Sreenivas is ex-Palantir
+- [[entities/vannevar-labs]] — Defense/IC data analytics peer with comparable embedded deployment model
+
+## Government Dependency & Controversy
+
+Palantir's government relationships are a source of both strength and controversy.
+
+### Scale of Government Business
+
+- **84% YoY growth** in U.S. Government revenue (Q1 2026)
+- **Maven AI System**: Elevated from experimental to **permanent Pentagon program of record**
+- **Defense/IC roots**: Founded with In-Q-Tel (CIA venture capital) seed money; deep Pentagon relationships built over 20+ years
+- **U.S. Army, Navy, Air Force, CDC, ICE, FBI, DHS** — among the federal customers
+
+### The Dependency Problem
+
+Bert Hubert's analysis (May 2026) frames Palantir as a consequence of **government IT atrophy**:
+
+1. **Government doesn't pay market rates** for technical talent — Palantir fills the gap with embedded engineers
+2. **Government doesn't offer inspiring environments** for technical growth — Palantir provides the career trajectory
+3. **The "accounting trick"** normalizes dependency: software budget lines can fund FDE teams, but personnel budget lines cannot hire equivalent in-house talent
+4. **Operational outsourcing**: Some departments have effectively outsourced data operations to Palantir — removing institutional capability to function without them
+
+### European Pushback
+
+In Europe, Palantir faces stronger opposition rooted in privacy and sovereignty concerns:
+
+- Privacy activists oppose police use of data integration platforms
+- European governments explore "sovereign cloud" alternatives
+- The question of data jurisdiction (U.S. company accessing European citizen data) creates legal and political friction
+- Hubert's proposed counter-strategy: **ask journalists to investigate** the operational dependency (how many Palantir staff on site? Do they have security clearances? Is there an exit plan?)
+
+### The Replacement Challenge
+
+Hubert argues that simply writing "better software with European values" won't displace Palantir because:
+
+1. **Software is only part of the product** — the embedded FDE service layer is the differentiator
+2. **Any replacement must also provide integration services** — which ideologically-motivated open-source projects are unlikely to offer
+3. **Government procurement structure** favors bundled software+services contracts over hiring in-house talent
+4. **Migration pain** is compounded by loss of embedded institutional knowledge
+
+> "To improve this situation, we don't just need equivalent, more ethical, or better software. We need to address the government's operational dependence on the company too." — Bert Hubert, May 2026
+
+### Open Questions
+
+- Will the EU's regulatory approach (GDPR, AI Act, Digital Sovereignty) create a compliance burden that weakens Palantir's European position, or strengthen it (as compliance complexity favors incumbents)?
+- Can governments rebuild in-house technical capacity, or is the FDE dependency structurally irreversible?
+- Does the OpenAI/Anthropic pivot to the FDE model validate or threaten Palantir's government moat?
 
 ## Real-World Examples
 
@@ -156,9 +255,13 @@ See [[concepts/ai-services-joint-ventures]] for the full comparison.
 ## Sources
 
 - [Connecting Agents to Decisions](https://x.com/i/article/2049136883528011954) — Palantir X Article, April 28, 2026
-- [raw/articles/2026-04-28_connecting-agents-to-decisions.md](../raw/articles/2026-04-28_connecting-agents-to-decisions.md)
+- [raw/articles/2026-04-28_x-article-connecting-agents-to-decisions-palantir.md](../raw/articles/2026-04-28_x-article-connecting-agents-to-decisions-palantir.md)
+- [Some notes on how we ended up with Palantir & how to replace it](https://berthub.eu/articles/posts/some-notes-on-palantir/) — Bert Hubert, May 2026
+- The Man Who Studied Power and Then Built It — Superintel newsletter, May 2026
+- Reuters: OpenAI/Anthropic JVs adopt Palantir Model — May 5, 2026
 
 ## References
 
 - 2026-04-28_x-article-connecting-agents-to-decisions-palantir
 - 2026-05-09_superintel-alex-karp-palantir-q1-2026-financials
+- 2026-05-24_berthub-some-notes-on-palantir

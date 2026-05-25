@@ -554,7 +554,7 @@
 - [[entities/zyphra]] — Open superintelligence research/cloud company. ZAYA1 MoE model family (VL-8B, 74B) trained on AMD. $110M Series A at $1B valuation. Apache 2.0 open-source models.
 - [[entities/zodchiii]] — zodchiii (@zodchiii) — Pseudonymous X/Twitter content creator covering AI coding, finance, and vibe coding. Published viral breakdown of Shopify's Claude Code infrastructure setup. Runs Telegram channel @zodchixquant.
 
-- [[entities/palantir]] — AI-powered decision infrastructure company. The Palantir Ontology contextualizes computation within "lived reality" for enterprise agent workflows. Q1 2026: $1.63B revenue (+84% gov), Maven elevated to permanent Pentagon program. **May 2026: The Palantir Model goes global** — OpenAI ($4B Deployment Company) and Anthropic ($1.5B JV) both replicate Palantir's embed-engineers-in-customer-operations playbook. See [[concepts/ai-services-joint-ventures]].
+- [[entities/palantir]] — AI-powered decision infrastructure company. Palantir Ontology (Data+Logic+Action+Security) enables human-agent teaming for enterprise/gov. FDE (Forward Deployed Engineer) model creates structural lock-in. Q1 2026: $1.63B (+84% gov). Maven: permanent Pentagon program. **May 2026: Palantir Model goes global** — OpenAI $4B/Anthropic $1.5B JVs replicate embed-engineers playbook. See [[concepts/decision-centric-architecture]], [[concepts/enterprise-agents]], [[concepts/agent-ontology]], [[concepts/ai-services-joint-ventures]].
 - [[entities/mistral-ai]] — French AI company. Mistral Workflows + Voxtral TTS (Apr 2026). Acquired Emmi AI (Physics AI) for industrial engineering agents (May 2026).
 - [[entities/talkie]] — Open-weight 13B historical LLM trained exclusively on pre-1930 data. By David Duvenaud, Alec Radford, and @status_effects.
 - [[entities/david-duvenaud]] — AI researcher. Co-announced Talkie, a 13B LLM trained exclusively on pre-1930 data.
@@ -702,6 +702,7 @@
 - [[concepts/agentic-engineering-patterns]] — Agentic Engineering Patterns — Design patterns for agentic software engineering: planning, execution, verification loops
 - [[concepts/agentic-manual-testing]] — Agentic Manual Testing — Using AI agents to automate exploratory and manual testing workflows
 - [[concepts/agent-native-cloud]] — Agent-Native Cloud — Infrastructure paradigm designed for AI agents: version control beyond Git, observability at 1000x, orchestration beyond K8s, safe production forks, self-replicating infrastructure. Championed by Railway (Jake Cooper).
+- [[concepts/agent-ontology]] — Agent Ontology — Semantic representation of enterprise operations for AI agents. Substrate for working/episodic/semantic/procedural memory, decision lineage, logic binding, scenarios. See [[entities/palantir]].
 - [[concepts/agent-security-patterns]] — Agent Security Patterns — Security best practices for AI agent deployments: sandboxing, authentication, authorization, threat modeling
 - [[concepts/agent-skills-skillmd]] — Agent Skills/SKILL.md — Agent skill definition and discovery format: SKILL.md frontmatter, skill retrieval, execution architecture
 - [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution — Postgres-Native Durable Execution: AI Agent文脈での非同期処理基盤。LLMループのチェックポイント化、Pi Agent統合パターン、Event駆動Agent間連携。Temporal/DBOS/PGMQとの比較を含む。
@@ -791,6 +792,7 @@
 - [[concepts/context-window-management]] — Context Window Management
 - [[concepts/death-of-browser]] — ブラウザの終焉: AIエージェント時代のWebアクセスパラダイムシフト
 - [[concepts/deerflow]] — ByteDanceのオープンソースSuperAgentハーネス。サブエージェント・メモリ・サンドボックス・スキルで数分〜数時間のタスクを処理。67.5K GitHub stars、MITライセンス。
+- [[concepts/decision-centric-architecture]] — Decision-Centric Architecture — Software design paradigm modeling enterprises around decisions (Data+Logic+Action+Security). Palantir Ontology origin. Complements [[concepts/harness-engineering]].
 - [[concepts/decoder-only-gpt]] — Decoder-Only GPT Architecture
 - [[concepts/deepspeed]] — Microsoft DeepSpeed
 - [[concepts/delta-channels]] — LangGraph DeltaChannel (beta v1.2, May 2026) — incremental checkpoint storage for long-running agents. Writes only deltas per step, full snapshots every K steps. Bounds resume cost for production agents running thousands of steps.
@@ -1001,6 +1003,7 @@
 - [[concepts/content-understanding]] — Content Understanding: 検索インデックス内のコンテンツ表現・強化の体系。Daniel Tunkelangの8記事シリーズ（2021-2022）。分類→アノテーション→類似性→構造→品質→モデレーション・情報抽出。Query Understandingと対をなす検索の基盤。
 - [[concepts/enterprise-ai-deployment-jv]] — Both OpenAI ($4B "The Deployment Company") and Anthropic ($1.5B with Blackstone/Goldman Sachs) forming JVs with PE firms to build deployment services arms. Model competition expanding to deployment competition.
 - [[concepts/enterprise-ai-operating-model]] — IBM's four-pillar framework (Think 2026): Agents, Data, Automation, Hybrid. watsonx Orchestrate multi-agent control plane, IBM Confluent real-time data, IBM Sovereign Core governance.
+- [[concepts/enterprise-agents]] — Enterprise Agents — Production AI agents in business/government. Human-agent teaming, staged actions (propose→review→commit), graded autonomy, FDE deployment model. See [[entities/palantir]].
 - [[concepts/erdos-unit-distance-problem]] — OpenAIの内部モデルが80年来のErdős単位距離予想（1946年）を反証（2026-05-21）。高次元格子→平面射影による反例。「人間だけならトップジャーナル掲載レベル」初のAI数学成果。
 - [[concepts/entropix]] — xjdr's entropy-based adaptive LLM sampling (3.4K ⭐). Uses entropy/varentropy quadrant to select sampling strategy at inference time. Training-free CoT simulation.
 - [[concepts/open-weights-licensing-tightening]] — Trend of leading open weights AI model providers tightening license terms in 2026. Meta dropped open weights, Alibaba Qwen API-first, Mistral commercial restrictions, Kimi attribution clause. DeepSeek exception. Contestable markets theory, oligopoly risk.

@@ -1,3 +1,19 @@
+## [2026-05-25] Palantir wiki infrastructure build-out — FDE/Ontology/Government
+
+### Created
+- `concepts/decision-centric-architecture.md` — Data/Logic/Action/Security framework, Palantir Ontology origin, comparison with data-centric and harness engineering
+- `concepts/enterprise-agents.md` — Human-agent teaming, staged actions (propose→review→commit), graded autonomy, FDE deployment model, case studies
+- `concepts/agent-ontology.md` — Semantic representation for agents, four memory types (working/episodic/semantic/procedural), decision lineage, logic binding, MCP comparison
+
+### Updated
+- `entities/palantir.md` — Major expansion (+~90 lines): FDE Model deep-dive (what FDEs do, "free with software" accounting trick, lock-in dynamics), Government Dependency & Controversy section (Bert Hubert analysis, European pushback, replacement challenge). Added tags: enterprise-agents, enterprise-ai, agent-governance, ai-governance, agent-security. New sources: Bert Hubert, Reuters JV article.
+- `SCHEMA.md` — Added `agent-ontology` tag to AI Agents taxonomy
+- `index.md` — Added 3 new concept pages, updated Palantir entity summary
+
+### Key Insight
+Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/Anthropic are now replicating this at $4B/$1.5B scale. Bert Hubert's analysis reveals the "free with software" accounting trick that makes government IT atrophy permanent. Four research vectors now covered: Ontology (decision-centric-architecture), FDE (enterprise-agents), Agent Memory (agent-ontology), Government Dependency (palantir.md).
+
+###
 ## [2026-05-25] Article ingestion: "Building Pi With Pi" by Armin Ronacher (lucumr.pocoo.org)
 
 ### Created
