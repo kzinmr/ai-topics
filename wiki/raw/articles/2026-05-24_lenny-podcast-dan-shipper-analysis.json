@@ -1,0 +1,215 @@
+{
+  "source": "Dan Shipper on Lenny's Podcast, 2026-05-24 (94 min)",
+  "compared_to": "After Automation essay by Dan Shipper (every.to, 2026-05-21)",
+  "summary": "The podcast expands significantly on the essay, adding 12 explicit predictions, the SaaS BYO-tokens economics thesis, the CLI-is-over design argument, the 'two agents better than one' architectural pattern, and richer role-based predictions for PMs/designers/forward-deployed engineers.",
+
+  "new_predictions": {
+    "description": "Predictions NOT present in the After Automation essay — entirely new content from the podcast",
+    "items": [
+      {
+        "prediction": "Every company will have one 'super-agent' inside their Slack that every employee talks to regularly",
+        "essay_coverage": "Essay describes agent employees but doesn't predict the super-agent centralization model",
+        "detail": "Dan flipped from personal agents to super-agent model after seeing OpenClaw adoption falter. 'Agents need people who care about them' — personal agents break when abandoned, so a centralized forward-deployed engineer maintains the company agent. Agents start at the top as general, then trickle down to specialized team agents. Examples: Shopify's 'River', Ramp's agent, Every's 'Claudie'",
+        "approx_timestamp": "~13:00-17:00"
+      },
+      {
+        "prediction": "SaaS is not dead — Dan is bullish on SaaS stocks and would buy them right now",
+        "essay_coverage": "Zero coverage — entirely new argument",
+        "detail": "'The SaaS apocalypse is dumb.' What agents do is increase the number of users of SaaS, not get rid of it. Every's SaaS spend is up year-over-year despite everyone using agents. Agents will drive an 'insane spike' in SaaS demand at very high volume, creating infrastructure and pricing challenges. 'I would buy SaaS stocks right now. I think the SaaS apocalypse is dumb, and SaaS stocks will be up majorly in the next couple years.'",
+        "approx_timestamp": "~36:22-39:00"
+      },
+      {
+        "prediction": "SaaS economics shift: users bring their own AI tokens into apps, improving SaaS margins",
+        "essay_coverage": "Zero coverage — entirely new argument",
+        "detail": "Key insight: when users use SaaS inside Codex/Co-work, the user's tokens pay for AI, not the vendor's. This saves SaaS margins — companies don't need to build AI into their product, they just need to make it agent-friendly. 'It puts SaaS back in its place... you don't need to build an agent naturally into your product.' Proof doesn't pay for tokens because users bring their AI to it. This changes what SaaS companies build and improves margins.",
+        "approx_timestamp": "~24:00-25:39, 36:22-39:00"
+      },
+      {
+        "prediction": "CLIs are over — 'We speed ran the CLI era'",
+        "essay_coverage": "Zero coverage — entirely new argument",
+        "detail": "CLIs were a transient moment that coincided with Claude Code's explosion. 'It's not that CLIs are going to completely go away... but we made GUIs for a reason.' Most technical people at Every no longer use CLIs as their main work surface. The idea that CLI is the secret sauce is wrong — the secret is the harness, and GUIs are better for it, especially for non-programmer work. The CLI era was 'nice while it lasted.'",
+        "approx_timestamp": "~31:13-32:36"
+      },
+      {
+        "prediction": "PMs will thrive in the AI era",
+        "essay_coverage": "Essay mentions generalists broadly but doesn't spotlight PMs as a specific winner role",
+        "detail": "Case study: Marcus at Every (PM by training, previously ran Axios writing product at tens of millions ARR). He is 'lightly technical' (knows what a DB migration is) but learned Cursor/Claude Code. Now 'ships faster than almost anyone on the team' because he pairs his spiky product sense with AI coding. PMs are liberated: 'he doesn't have to organize a whole team of people to do that. He can just do it.' Key skill: figuring out what to build, not the building itself.",
+        "approx_timestamp": "~68:39-70:52"
+      },
+      {
+        "prediction": "Full-stack designers will become superheroes",
+        "essay_coverage": "Zero coverage — entirely new argument",
+        "detail": "Designers are used to their beautiful interactions getting killed by engineering constraints. Now they can build it themselves — 'they're just making pull requests.' Designer creativity is the antidote to AI slop: they can make stuff that 'looks so different.' AI is a 'super tool' for creative people. Designers no longer need to hand off as much. Huge opportunity for them to start their own things.",
+        "approx_timestamp": "~71:05-72:42"
+      },
+      {
+        "prediction": "Forward deployed engineer is the new most essential role",
+        "essay_coverage": "Essay mentions centralized AI engineer team managing agents but doesn't name/define this role",
+        "detail": "'Every agent needs a human.' Even big model companies have teams managing their internal agents — those teams aren't going away. The forward deployed engineer is responsible for making sure the company's agents work and do the right thing. Example: Nitesh at Every. 'He spends most of his time actually talking to one of our agents in Slack.' This role looks different from traditional software building — more gardening/product-managing the agent. 'Automation was supposed to take away jobs, but it looks like it just created one — or many.'",
+        "approx_timestamp": "~53:47-55:30"
+      },
+      {
+        "prediction": "We will read way more AI-generated writing and we will like it",
+        "essay_coverage": "Essay covers AI-assisted writing but not the prediction that AI-generated docs will become preferred",
+        "detail": "Already happening with code plan documents — 'I don't want an engineer to handwrite a plan document. That would be obviously silly.' Example: Every's Q4 2025 planning was done entirely with Notion agents. Key distinction: good AI writing vs slop — slop is when 'it took them less time to make it than it takes me to read it' and they don't stand behind every line. Most email is prosaic — AI writes it better. Even Dan (a writer who cares deeply about writing) sends AI-written emails. Publishing mix of human + AI with labels.",
+        "approx_timestamp": "~62:10-68:20"
+      },
+      {
+        "prediction": "Building software for humans and agents to use together",
+        "essay_coverage": "Essay mentions human-agent collaboration but not this explicit design paradigm",
+        "detail": "The current model is building a CLI for agents to use independently. The future is human and agent using the same app simultaneously — the agent uses the CLI, the human uses the web UI, and they must stay in sync. New design considerations: agent concurrency (agents do 'a billion things at once'), approval inboxes, logs, rollback. New infrastructure challenge: agents making millions of requests. Example: GitHub struggling because 'really just people's agents in GitHub.' Agent-to-agent bug reports: 'an agent bug report is way better than a human bug report.'",
+        "approx_timestamp": "~28:42-31:12, 49:51-50:06"
+      },
+      {
+        "prediction": "AI job apocalypse is not happening",
+        "essay_coverage": "Essay states 'no tipping point coming' but podcast expands with structural argument why",
+        "detail": "Dan is 'simultaneously extremely AI-pilled and very bullish on humans.' Mass unemployment won't happen. Models make 'yesterday's human competence cheap' → it gets adopted everywhere → looks the same (commoditized) → not valuable → humans push into what's new and different. This is structurally built into how models work: they're always trailing the frontier. 'Benchmarks rising doesn't capture' this. CEO AI adoption is not optional: 'Your company's only going to go as far as your CEO goes in AI.' Sales is least changed role so far. Customer support fundamentally changed.",
+        "approx_timestamp": "~73:11-76:50"
+      },
+      {
+        "prediction": "The future of work will happen inside Codex or Claude Code",
+        "essay_coverage": "Essay describes usage but doesn't make the OS-level prediction this strongly",
+        "detail": "Codex/Co-work becomes the 'operating system for how you do all of your work.' Everything — email, documents, analytics — happens inside it, with an in-app browser. 'Take the AI agent and put a browser in it' (not AI in browser). Dan is in inbox zero for 10 days using this pattern. Codex is 'winning right now' in a horse race with Anthropic — OpenAI has 'regained the mandate of heaven.' Cursor is choosing to stay 'for programmers.' The definition of 'programmer' is expanding enough to create a big market.",
+        "approx_timestamp": "~18:08-27:42"
+      }
+    ]
+  },
+
+  "expanded_nuances": {
+    "description": "Topics covered in the essay that the podcast expands with significant new depth or framing",
+    "items": [
+      {
+        "topic": "Automation paradox ('Automation is a lie')",
+        "essay_baseline": "5-step feedback loop, automation creates MORE human work",
+        "podcast_expansion": "Dan explicitly names it: 'Automation is a lie' as a more provocative framing. Adds concrete personal experience: 'I've been feeling this paradox — we have so much automation, so much AI, and I also work way more.' Deepens with the manager metaphor: humans managing AI is like being a manager — 'managers actually spend a lot of time working.' They're not on the beach; they're checking in, making decisions. Differences between managing humans and managing models, but fundamentally 'it still requires a lot of time and attention.'",
+        "approx_timestamp": "~39:00-41:00"
+      },
+      {
+        "topic": "Senior Engineer Benchmark / Benchmark Trap",
+        "essay_baseline": "62/100 score, prompt framing dynamics, Zeno's Paradox",
+        "podcast_expansion": "Adds vivid narrative: 'I vibe coded so hard I got bursitis on my elbow' (vibe coder elbow). Two independent senior engineers rewrote it. GPT-5.5 is the only model with 'sense of agency and confidence to just rip out old code.' Other models 'paper over the edges.' Key prediction: 'Every coding model on the market will still do this in a year' — take an instruction literally instead of pushing back like a senior engineer would. The human engineer says 'This is a piece of shit. This guy doesn't know what he's doing. We're going to have to rewrite this.' Models won't volunteer that framing. Also: human-written code pre-2022 is now valuable data for data labeling companies.",
+        "approx_timestamp": "~40:36-47:00"
+      },
+      {
+        "topic": "Two agents are better than one",
+        "essay_baseline": "Not covered",
+        "podcast_expansion": "When Codex interacts with another agent, it can give far more context about the user than the user could type. Agents go 'back and forth talking about things that would take a long time for me to express directly.' This creates a 'speed up effect.' Onboarding example: instead of building a web form for user preferences, just have Codex tell the app everything it knows about the user. For technical products, when something breaks, the user tells Codex to fix it, and Codex talks to the app. 'The whole paradigm starts to change when you assume everyone's got an agent and those agents are talking to other agents.'",
+        "approx_timestamp": "~33:34-36:22"
+      },
+      {
+        "topic": "Data scientists drowning in bad analysis",
+        "essay_baseline": "Not covered in essay",
+        "podcast_expansion": "Data scientists' jobs used to be 'do analysis, answer questions.' Now everyone's doing analysis with AI and sharing wrong results. Most of their job is reviewing bad data science work. Solution: big model companies have a 'data science bot everyone can query' hooked to the data warehouse with permission-aware access. A team maintains this bot. This filters out the basic questions so data scientists can focus on deeper questions. 'If the team didn't exist, the data scientist would hate their lives.'",
+        "approx_timestamp": "~56:17-58:04"
+      },
+      {
+        "topic": "Ride the models / How to stay relevant",
+        "essay_baseline": "Essay implies this but doesn't name/operationalize it",
+        "podcast_expansion": "Dan coins 'ride the models' as the core survival strategy. When new models drop: keep 'turning over rocks' — retry things that didn't work before. Be curious and playful. 'The edge of AI is wherever AI meets a real human doing something' — not San Francisco. Every in Brooklyn is 'quite far ahead of people in San Francisco because we just use them for everything.' Key insight: model makers don't know everything about how to use their models; they need users to discover use cases. 'It's very hard to lose' if you do this consistently. Also: companies handicap employees by restricting model access — 'Maybe you have to do it on your off time.'",
+        "approx_timestamp": "~76:20-80:50"
+      },
+      {
+        "topic": "Codex vs Claude Code horse race",
+        "essay_baseline": "Brief mentions of tools used, no competitive analysis",
+        "podcast_expansion": "Detailed analysis: Anthropic was first with the local-computer agent paradigm when others were doing pair programming. OpenAI was 'very very behind' then 'surpassed them recently.' Codex desktop app skipped the evolutionary path (Claude Code → Co-work) and went straight to the final form. Codex has in-app browser (Claude Code doesn't let you browse external sites). Dan's daily driver is Codex. 'OpenAI has regained the mandate of heaven a little bit.' Cursor 'more distinctly choosing to be for programmers.' Cursor was 'essentially acquired by SpaceX.'",
+        "approx_timestamp": "~18:08-27:42, 91:10-92:50"
+      }
+    ]
+  },
+
+  "key_quotes": [
+    {
+      "quote": "Automation is a lie. Every agent needs a human. We have so much automation, so much AI, and I also work way more.",
+      "approx_timestamp": "~00:24-00:34 (cold open)",
+      "context": "Core thesis of the episode"
+    },
+    {
+      "quote": "I'm simultaneously extremely AI-pilled and very bullish on humans.",
+      "approx_timestamp": "~55:56",
+      "context": "Summarizing his seemingly contradictory position"
+    },
+    {
+      "quote": "We speed ran the CLI era. It was nice while it lasted, but I think CLIs are over.",
+      "approx_timestamp": "~31:26",
+      "context": "On why GUIs win over terminals for AI agents"
+    },
+    {
+      "quote": "The SaaS apocalypse is dumb. I would buy SaaS stocks right now. What agents do is increase the number of users of SaaS, not get rid of it.",
+      "approx_timestamp": "~36:22-37:13",
+      "context": "Most contrarian take of the episode"
+    },
+    {
+      "quote": "What models do in general is they make yesterday's human competence cheap... it becomes commoditized. It's not valuable anymore. What humans do is we go in there and we're like, 'Yeah, we have all this frozen human competence from yesterday. How do I use this to make something new and interesting?'",
+      "approx_timestamp": "~73:49-75:00",
+      "context": "Structural argument for why jobs won't disappear"
+    },
+    {
+      "quote": "Two agents are better than one.",
+      "approx_timestamp": "~33:45",
+      "context": "Architectural insight about agent-to-agent interaction"
+    },
+    {
+      "quote": "Agents need people who care about them.",
+      "approx_timestamp": "~14:50",
+      "context": "Why personal agents fail and centralized super-agents win"
+    },
+    {
+      "quote": "Your company's only going to go as far as your CEO goes in AI, and it's not something you can delegate.",
+      "approx_timestamp": "~59:28",
+      "context": "On leadership and AI adoption"
+    },
+    {
+      "quote": "Every agent needs a human.",
+      "approx_timestamp": "~54:02 (repeated throughout)",
+      "context": "Mantra of the episode, basis for forward deployed engineer role"
+    },
+    {
+      "quote": "The edge of AI is wherever AI meets a real human doing something.",
+      "approx_timestamp": "~78:46",
+      "context": "On why being a practitioner matters more than being in SF"
+    },
+    {
+      "quote": "Once a situation has been reduced to text, once it has become corpus, it is a corpse.",
+      "approx_timestamp": "Referenced from essay (~75:00 area in podcast)",
+      "context": "Carried over from the essay — why human expertise always stays ahead"
+    }
+  ],
+
+  "data_points": [
+    {
+      "stat": "Every doubled headcount from 15 to ~30 in the past year",
+      "context": "Despite being extremely AI-forward, they hired more humans",
+      "approx_timestamp": "~04:54"
+    },
+    {
+      "stat": "Every runs 6 software products internally (up from 2-3)",
+      "context": "AI enables more products with same/smaller team",
+      "approx_timestamp": "~07:01-07:05"
+    },
+    {
+      "stat": "GPT-5.5 scored 62/100 on Dan's Senior Engineer Benchmark (up from ~30 for previous models), senior humans score high 80s-low 90s",
+      "context": "Using Opus 4.7 plan; GPT-5.5 is the only model with the 'agency' to rip out old code",
+      "approx_timestamp": "~42:14-42:37"
+    },
+    {
+      "stat": "Model companies are getting to ~17 hours of autonomous task duration at 50% accuracy (Mythos preview)",
+      "context": "Benchmark from meter; Dan says this is real but doesn't capture the full picture",
+      "approx_timestamp": "~10:39-10:59"
+    },
+    {
+      "stat": "Every's SaaS spend is up year-over-year despite heavy AI adoption",
+      "context": "Evidence for SaaS bullishness thesis",
+      "approx_timestamp": "~38:04-38:10"
+    },
+    {
+      "stat": "Inbox zero for 10 days straight (unprecedented for Dan)",
+      "context": "Using Codex + Cora agent for email processing",
+      "approx_timestamp": "~22:21-22:23"
+    },
+    {
+      "stat": "OpenClaw: Pete gets thousands of PRs/day; spins up 50,000 Codex instances to sort them; merges ~1,000/day",
+      "context": "Illustration of the scale of AI-generated work and the review bottleneck",
+      "approx_timestamp": "~51:37-51:48"
+    }
+  ]
+}

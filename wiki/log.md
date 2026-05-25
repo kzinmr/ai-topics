@@ -1,3 +1,16 @@
+## [2026-05-26] Dan Shipper on Lenny's Podcast — full transcript ingestion + multi-page enrichment
+
+### Created
+- `raw/articles/2026-05-24_lenny-podcast-dan-shipper-ai-paradox.md` — Full transcript (94 min podcast, 2,806 segments)
+- `raw/articles/2026-05-24_lenny-podcast-dan-shipper-analysis.json` — Structured analysis comparing podcast vs essay
+
+### Updated
+- `entities/dan-shipper.md` — Added Lenny's Podcast appearance: 12 predictions section, Key Themes, new quotes, renamed "Selected Writing" → "Selected Writing & Talks"
+- `entities/lenny.md` — Added Dan Shipper to Notable Guests, "The AI Paradox" episode to AI-focused coverage
+- `concepts/after-automation.md` — Major expansion with podcast Nuances: "Automation is a Lie" framing, 12 Predictions, SaaS economics (BYO-tokens), Role Changes table, Architectural Shifts (two agents, CLI-is-over)
+- `wiki/SCHEMA.md` — Added `saas` tag to Meta category
+- `wiki/index.md` — Updated dan-shipper and lenny index entries
+
 ## [2026-05-26] After Automation — Dan Shipper article ingestion
 
 ### Created

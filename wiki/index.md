@@ -170,7 +170,7 @@
 - [[entities/copilot-cli]] — GitHub製ターミナルネイティブAIコーディングエージェント。6種類のビルトインサブエージェント（explore/code-review/research等）、`/fleet`並列実行、MCP拡張、BYOK/ローカルモデル対応（2026年4月+）。Copilot Free/Pro/Pro+/Business/Enterpriseに含まれる。
 - [[entities/corbett]] — **X/Twitter** | @corbtt |
 - [[entities/cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
-- [[entities/dan-shipper]] — Dan Shipper — CEO and cofounder of Every. Author of the "After Automation" paradox and the definition of AI slop as "visible sameness." Pioneer of AI-native operations.
+- [[entities/dan-shipper]] — Dan Shipper — CEO and cofounder of Every. Author of the "After Automation" paradox and the definition of AI slop as "visible sameness." 12 predictions on AI & work from Lenny's Podcast (May 2026).
 - [[entities/daniel-de-laney]] — **Blog** | danieldelaney.net |
 - [[entities/daniel-han]] — **X/Twitter** | @danielhanchen |
 - [[entities/daniel-miessler]] — Cybersecurity and AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ GitHub stars), SecLists, PAI. Author of Autonomous Component Optimization and Intent-Based Engineering concepts.
@@ -625,7 +625,7 @@
 - [[entities/databricks]] — Major AI/ML data platform company. Open-sourced MLflow and Unity Catalog. Published Memory Scaling research with MemAlign framework for AI agents.
 - [[entities/devin]] — First autonomous AI coding agent by Cognition AI. End-to-end software engineering: shell, code editor, browser, planner. Comparison with Claude Code and OpenAI Codex.
 - [[entities/kimi]] — Moonshot AI's LLM family. K2.6 is a 1T MoE (32B active) open-source coding model with agent swarm capabilities, 256K context, and 12-hour continuous execution.
-- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, and AI products.
+- [[entities/lenny]] — Lenny Rachitsky (ex-Airbnb), runs Lenny's Podcast (top 10 tech podcast). Covers AI evals, product management, Dan Shipper's AI paradox & 12 predictions (May 2026).
 - [[entities/shuvendu]] — Shuvendu Lahiri, Senior Principal Researcher at MSR RiSE. Works on intent formalization, formal verification for AI-generated code, and bridging formal methods with ML.
 - [[entities/vercel]] — Vercel — Frontend cloud platform (Next.js). Released deepsec open-source security harness using coding agents for vulnerability discovery and remediation (May 2026).
 - [[entities/vercel-labs]] — Vercel Labs — R&D division of Vercel. Creator of Zero, a systems language built for agent-first development (May 2026).

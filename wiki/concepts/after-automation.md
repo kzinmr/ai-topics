@@ -1,7 +1,7 @@
 ---
 title: "After Automation (Paradox)"
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-05-26
 type: concept
 tags:
   - concept
@@ -12,13 +12,18 @@ tags:
   - benchmark-framing
   - zeno-paradox
   - feedback-loop
+  - saas
+  - product-management
 sources:
   - raw/articles/2026-05-21_after-automation.md
+  - raw/articles/2026-05-24_lenny-podcast-dan-shipper-ai-paradox.md
 ---
 
 # After Automation Paradox
 
 > "The more we automate, the more expert human work there is to do." — Dan Shipper, CEO of Every
+>
+> "Automation is a lie. Every agent needs a human." — Dan Shipper on Lenny's Podcast, May 2026
 
 A counterintuitive observation from AI-first companies: aggressive AI automation does **not** reduce the amount of human work — it creates **more** demand for expert human judgment, even as models approach AGI-level capability.
 
@@ -68,6 +73,48 @@ Benchmark performance ≠ real-world agency. Benchmarks are framed by humans who
 |---|---|---|
 | Build systems | Review queues, evals, repo rules, CI to absorb AI-generated work | OpenClaw PR flood → maintainer tooling |
 | Do bigger work | Use AI to tackle problems previously impossible | Calif found first public macOS M5 kernel exploit in 5 days using Mythos Preview |
+
+## Economic Consequences (Lenny's Podcast, May 2026)
+
+### SaaS Is Not Dead — It's Growing
+
+Dan Shipper's contrarian take: "The SaaS apocalypse is dumb. I would buy SaaS stocks right now."
+
+- **Agents increase SaaS usage**, not replace it. Every's SaaS spend is **up** year-over-year despite everyone using agents
+- **BYO-tokens economics**: When users use SaaS inside Codex/Claude Code, the user's tokens pay for AI compute, not the vendor's. This **saves SaaS margins** — companies just need to make products agent-friendly
+- **Implication for SaaS companies**: Build products that are usable by both humans and AI agents. Don't try to build AI into everything — let users bring their own AI
+
+### The 12 Predictions
+
+On Lenny's Podcast, Dan made 12 predictions about the AI-native future:
+
+1. The future of work will happen inside **Codex or Claude Code**
+2. Every company will have one **"super-agent"** in Slack that every employee talks to
+3. **SaaS is not dead** — bullish on SaaS stocks
+4. **BYO-tokens** will improve SaaS margins as users bring their own AI into apps
+5. **PMs will thrive** in the AI era
+6. **Full-stack designers** will become superheroes
+7. The AI job apocalypse is **not happening**
+8. **Forward deployed engineer** is the new most essential role
+9. **CLIs are over** — "We speed ran the CLI era"
+10. **Automation is a lie** — every agent needs a human
+11. We will read way more **AI-generated writing** and will like it
+12. We'll build software for **humans and agents to use together**
+
+### Role Changes
+
+| Role | AI-Era Status | Key Insight |
+|---|---|---|
+| **Forward Deployed Engineer** | Most essential new role | Maintains/gardens the company's agents. "Every agent needs a human." |
+| **Product Manager** | Thriving | PMs with product sense can ship faster than engineers by pairing taste with AI coding |
+| **Full-Stack Designer** | Superhero | Can now build their own designs. Creativity is the antidote to AI slop |
+| **Data Scientist** | Drowning | Flooded with reviewing bad AI-generated analysis |
+
+### Architectural Shifts
+
+**"Two agents are better than one":** When Codex talks to another agent (rather than a human typing prompts), it gets far richer context. A second agent can observe, understand the full workspace, and provide context impossible for humans to articulate. This represents a paradigm shift from human-tool interaction to agent-agent interaction.
+
+**"CLIs are over":** CLIs were a transient moment coinciding with Claude Code's explosion. GUIs exist for a reason — even technical teams at Every are moving away from terminals as their primary work surface. The secret is the harness, not the interface modality.
 
 ## Related Pages
 

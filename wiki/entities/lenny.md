@@ -6,8 +6,9 @@ tags:
   - writing
   - product-management
   - evaluation
+  - podcast
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-25
 type: entity
 ---
 
@@ -56,6 +57,7 @@ Lenny's Podcast features interviews with world-class product leaders, growth exp
 - Sponsorship inquiries: podcast@lennyrachitsky.com
 
 **Notable Guests Include:**
+- **Dan Shipper** (Every CEO) — 12 predictions on AI & the future of work, the automation paradox, SaaS vs AI (May 2026)
 - **Dylan Field** (Figma CEO) — AI, design, and craft as competitive moats
 - **Julie Zhuo** (Former Facebook VP, Sundial CEO) — Managing people to managing AI
 - **Hamel Husain & Shreya Shankar** — AI evals (see below)
@@ -99,6 +101,7 @@ This episode also addressed the Claude Code "no evals" controversy, the distinct
 
 ### Other AI-Focused Coverage
 
+- **Dan Shipper: The AI Paradox (May 2026)** — "More automation, more humans, more work." Dan made 12 predictions about AI & work: Codex/Claude Code as the OS for work, one super-agent per company, SaaS is not dead, CLIs are over, PMs and full-stack designers will thrive, and the claim that "automation is a lie." See [[entities/dan-shipper#12-predictions-lennys-podcast-may-2026|Dan Shipper's 12 predictions]].
 - **Intercom's AI (Fin)** — Lenny's Newsletter covered how Intercom built their AI customer support agent "Fin," exploring practical AI product development lessons
 - **AI Prototyping for PMs** — Guide covering AI prototyping tools and techniques for product managers
 - Various episodes with AI company founders and product leaders discussing AI strategy
@@ -134,6 +137,7 @@ Lenny is an active angel investor with a portfolio including Figma, Vanta, Webfl
 The following raw articles in the wiki reference Lenny Rachitsky or Lenny's Podcast:
 
 - `lenny-podcast-ai-evals-hottest-skill-hamel-shreya-2025-09.md` — Detailed episode summary of the AI evals podcast with Hamel Husain and Shreya Shankar
+- `lenny-podcast-dan-shipper-ai-paradox-2026-05.md` — Dan Shipper episode: 12 predictions, automation paradox, Codex vs Claude Code
 - `lenny-why-ai-evals-are-hottest-new-skill-2025-09.md` — Newsletter version of the AI evals episode
 - `lenny-podcast-why-ai-evals-are-the-hottest-new-skill-2025-09.md` — Another detailed summary with timestamps and references
 - `open.substack.com--pub-lenny-p-why-half-of-product-managers-are-in-trouble--01134057.md` — Article on product management challenges (Substack redirect)
@@ -142,6 +146,7 @@ The following raw articles in the wiki reference Lenny Rachitsky or Lenny's Podc
 
 ## Related Entities
 
+- [[entities/dan-shipper]] — CEO of Every, guest on Lenny's Podcast (May 2026) with 12 predictions on AI & work
 - [[entities/hamel-husain]] — Guest on Lenny's Podcast for the AI evals episode; expert on AI engineering and evaluation methodology
 - [[entities/shreya-shankar]] — Guest on Lenny's Podcast for the AI evals episode; Berkeley PhD researcher on AI evaluation and DocETL creator
 - [[concepts/ai-evals]] — Core topic covered on Lenny's Podcast, the evaluation framework for AI products
