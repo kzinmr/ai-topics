@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-26 | Total pages: 2034 | Indexed entries: 1299 | Not in index: 714 |
+> Last updated: 2026-05-27 | Total pages: 2035 | Indexed entries: 1301 | Not in index: 714 |
 
 ## Entities (660 pages)
 
@@ -1325,7 +1325,8 @@
 - [[comparisons/palantir-platform-family]] — Palantir Platform Family — Gotham (2008, defense) vs Foundry (2016, commercial Ontology) vs Apollo (2018, continuous delivery everywhere) vs AIP (2023, LLM/agent layer). How the four platforms form an Enterprise Operating System.
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors — Databricks/Snowflake/Microsoft Fabric/C3.ai. Layer-in-stack analysis, pricing comparison, when to choose each, Palantir+Databricks 2025 partnership.
 
-## Queries (1 page)
+## Queries (2 pages)
 
 - [[queries/data-analysis-open-harness]] — データ分析に適したOpen Harnessはあるか？汎用coding harness転用 vs データ分析特化製品の選択肢整理（2026-05-14）
+- [[queries/saas-future-and-agent-developer-career]] — SaaSの未来とAI Agent開発者のキャリア戦略：パーソナルHarness普及・FDEモデル拡大・Service-as-Softwareへのシフト（2026-05-27）
 

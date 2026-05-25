@@ -1,4 +1,16 @@
-## [2026-05-26] Dan Shipper on Lenny's Podcast — full transcript ingestion + multi-page enrichment
+## [2026-05-27] SaaSの未来とAI Agent開発者のキャリア戦略
+
+### Created
+- `queries/saas-future-and-agent-developer-career.md` — SaaS vs FDE vs パーソナルAI Agentの3層トレンド分析とキャリア戦略提言。Harness Engineering、Service-as-Software、Agent-Nativeプロダクト開発へのシフトを定義。
+
+### Updated
+- `wiki/index.md` — Queriesセクションに新ページ追加、エントリー数更新
+
+### Key Insights
+- **3つの同時進行トレンド**: パーソナルHarnessの水平吸収、FDEモデルの垂直深化、SaaSフリーミアムの崩壊
+- **第三の道**: Agent-Nativeプロダクト開発者 — Harness Engineeringを中核能力とし、Agent向けAPI/MCPツール/状態管理を構築
+- **マネタイズの再定義**: シート課金 → 成果報酬（Service-as-Software）
+- **競争優位の源泉**: 機能数 → Harness品質・Evals・文脈蓄積
 
 ### Created
 - `raw/articles/2026-05-24_lenny-podcast-dan-shipper-ai-paradox.md` — Full transcript (94 min podcast, 2,806 segments)
