@@ -1,3 +1,21 @@
+## [2026-05-25] Article ingestion: "Building Pi With Pi" by Armin Ronacher (lucumr.pocoo.org)
+
+### Created
+- `raw/articles/2026-05-24_lucumr_building-pi-with-pi.md` — Full article text
+- `concepts/ai-generated-issues-in-oss.md` — New concept page on LLM-generated "slop issues" in OSS
+
+### Enriched
+- `entities/armin-ronacher.md` — L2→L3: Rewrote with comprehensive coverage of Flask/Jinja2/Pygments, Sentry decade, Earendil co-founder role, Pi contributions, philosophy (clanker vs agent, global invariants, upstream-first discipline), talks. Added "Building Pi With Pi" and Pi maintainer context.
+- `entities/pi.md` — Added Earendil acquisition (April 2026), 3-tier licensing model (MIT/Fair Source/Proprietary), `.pi` folder workflow (`/is`, `/wr`, `prompt-url-widget`), volume statistics (3,145 issues → 80% auto-closed → <10% PR merged), updated stars (~54K), contributors (210+), repository URL (earendil-works/pi). Updated sources and date.
+- `index.md` — Updated entries for pi-coding-agent, armin-ronacher, pi; added ai-generated-issues-in-oss
+
+### Sources
+- https://lucumr.pocoo.org/2026/5/24/pi-oss/
+- https://earendil.com/posts/press-release-april-8th/
+- https://mariozechner.at/posts/2026-04-08-ive-sold-out/
+- https://github.com/earendil-works/pi
+- https://pi.dev/
+
 ## [2026-05-24] skeleton-enrich-daily | Daily skeleton enrichment — no skeletons found, enriched jeremiah-lowin (L1→L2)
 
 ### Enriched

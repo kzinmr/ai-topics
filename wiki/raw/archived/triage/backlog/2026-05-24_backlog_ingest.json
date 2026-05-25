@@ -1,0 +1,52 @@
+[
+  {
+    "item_id": "chiark.greenend.org.uk--sgtatham-quasiblog-xor--cd697e44.md",
+    "source": "backlog",
+    "title": "XOR",
+    "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/xor/",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-xor--cd697e44.md",
+    "recommended_action": "skip",
+    "reason": "star_1 -- Simon TathamのXOR演算子解説記事。純粋なコンピュータサイエンス基礎（ブール論理、ビット演算）でAI/LLM/エージェントとの関連なし。",
+    "body_excerpt": "Recently I was called on to explain the 'XOR' operator to somebody who vaguely knew of its existence, but didn't have a good intuition for what it was useful for and how it behaved."
+  },
+  {
+    "item_id": "chiark.greenend.org.uk--sgtatham-quasiblog-parsing--784cc4ed.md",
+    "source": "backlog",
+    "title": "In which I have Opinions about parsing and grammars",
+    "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/parsing/",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-parsing--784cc4ed.md",
+    "recommended_action": "skip",
+    "reason": "star_2 -- Simon Tathamのパース・文法エッセイ。パーサジェネレータ、BNF、LL/LRパーサなど伝統的コンパイラ論。AIパーサ技術とは無関係。",
+    "body_excerpt": "I've been interested in parsing since I was a teenager. I first got into the subject by reading the dragon book in the early 1990s."
+  },
+  {
+    "item_id": "ciechanow.ski--moon--e9e036f8.md",
+    "source": "backlog",
+    "title": "Moon - Bartosz Ciechanowski",
+    "url": "https://ciechanow.ski/moon/",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/ciechanow.ski--moon--e9e036f8.md",
+    "recommended_action": "skip",
+    "reason": "star_1 -- Bartosz Ciechanowskiの月面インタラクティブ解説。天体力学・潮汐・重力の教育コンテンツ。AI/LLMとの関連なし。",
+    "body_excerpt": "Let's take a look at the Moon as seen from space in all its sunlit glory. You can drag it around to change your point of view."
+  },
+  {
+    "item_id": "2026-01-05_nvidia_vera-rubin-platform.md",
+    "source": "backlog",
+    "title": "Inside the NVIDIA Vera Rubin Platform: Six New Chips, One AI Supercomputer",
+    "url": "https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-01-05_nvidia_vera-rubin-platform.md",
+    "recommended_action": "skip",
+    "reason": "star_3 -- NVIDIA Vera Rubinプラットフォーム技術記事。既存conceptページ concepts/nvidia-vera-rubin.md が本記事をsourceとして2026-05-14に作成済み。重複。",
+    "body_excerpt": "Inside the NVIDIA Vera Rubin Platform: Six New Chips, One AI Supercomputer | NVIDIA Technical Blog... Jan 05, 2026 By Kyle Aubrey..."
+  },
+  {
+    "item_id": "substack.com--redirect-2-eyjlijoiahr0chm6ly9vcGVuln1ynn0ywnrlmnvbs9wdwivc--197ff517.md",
+    "source": "backlog",
+    "title": "Extreme Harness Engineering for Token Billionaires: 1M LOC, 1B toks/day - Ryan Lopopolo, OpenAI Frontier",
+    "url": "https://substack.com/redirect/2/eyJlIj...x4Ni",
+    "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--redirect-2-eyjlijoiahr0chm6ly9vcGVuln1ynn0ywnrlmnvbs9wdwivc--197ff517.md",
+    "recommended_action": "skip",
+    "reason": "star_3 -- Ryan LopopoloのExtreme Harness Engineering interview。1M LOC zero-human-code実験、Symphony、token billionaire。既存entityページ entities/ryan-lopopolo.md に2026-05-22更新で本記事内容が既に詳細反映済み。重複。",
+    "body_excerpt": "We're proud to release this ahead of Ryan's keynote at AIE Europe. Move over, context engineering. Now it's time for Harness engineering and the age of the token billionaires."
+  }
+]

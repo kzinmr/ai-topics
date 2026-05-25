@@ -1,0 +1,47 @@
+{
+  "checkpoint_run_id": "20260525T000043Z",
+  "summary_ja": "raw-backlog-ingest バッチ (2026-05-25): 5件中、Ryan Lopopolo/Harness Engineering ポッドキャスト記事4件は既に entities/ryan-lopopolo.md に収録済み(reference)。boyter.orgのコード統計調査記事はAI無関係でskip。新規takeなし。",
+  "decisions": [
+    {
+      "filename": "substack.com--redirect-2-eyjlijoiahr0chm6ly9vcgvulnn1ynn0ywnrlmnvbs9wdwivc--197ff517.md",
+      "url": "https://substack.com/redirect/2/eyJlIj...2YXM?&utm_source=substack&utm_medium=email",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ Ryan Lopopolo × Symphony/Harness Engineering のポッドキャストトランスクリプト。既に entities/ryan-lopopolo.md に収録済み (updated: 2026-05-22)。本文: 1M LOCゼロヒューマンコード実験、Symphonyオーケストレーション、token billionaire概念。",
+      "body_excerpt": "Extreme Harness Engineering for Token Billionaires: 1M LOC, 1B toks/day, 0% human code, 0% human review - Ryan Lopopolo, OpenAI Frontier & Symphony"
+    },
+    {
+      "filename": "substack.com--app-link-post--a4993331.md",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193478192",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 同上 — Ryan Lopopolo ポッドキャスト記事の別スクレイプバリアント。既にwikiに収録。",
+      "body_excerpt": "Extreme Harness Engineering for Token Billionaires (app-link variant)"
+    },
+    {
+      "filename": "substack.com--app-link-post--677478bb.md",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193478192",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 同上 — Ryan Lopopolo ポッドキャスト記事の別スクレイプバリアント。既にwikiに収録。",
+      "body_excerpt": "Extreme Harness Engineering for Token Billionaires (app-link play_button variant)"
+    },
+    {
+      "filename": "substack.com--app-link-post--9fec94dc.md",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193478192",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 同上 — Ryan Lopopolo ポッドキャスト記事の別スクレイプバリアント。既にwikiに収録。",
+      "body_excerpt": "Extreme Harness Engineering for Token Billionaires (app-link show_title variant)"
+    },
+    {
+      "filename": "boyter.org--posts-an-informal-survey-of-10-million-github-bitbucket-gitl--f7966207.md",
+      "url": "https://boyter.org/posts/an-informal-survey-of-10-million-github-bitbucket-gitlab-projects/",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Ben Boyter による1000万リポジトリのコード統計分析。言語分布、ファイル数、リポジトリサイズの調査。AI/LLM/エージェントとは無関係。非AIコンテンツ。本文: sccツールによるコード行数計測結果の可視化。",
+      "body_excerpt": "Processing 40 TB of code from ~10 million projects. scc (Sloc Cloc and Code) tool analysis of GitHub/Bitbucket/GitLab repositories."
+    }
+  ],
+  "processed_count": 5,
+  "take_count": 0,
+  "reference_count": 4,
+  "skip_count": 1,
+  "total_candidates_in_checkpoint": 5,
+  "pipeline": "backlog"
+}

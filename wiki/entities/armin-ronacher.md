@@ -1,83 +1,64 @@
 ---
 title: Armin Ronacher
+created: 2026-05-25
+updated: 2026-05-25
 type: entity
-aliases: [mitsuhiko]
-created: 2026-05-18
-updated: 2026-05-18
-tags:
-  - person
-  - open-source
-  - developer-tooling
-  - blogger
-  - model
-  - agentic-engineering
-  - infrastructure
-sources: [raw/articles/2026-05-18_armin-ronacher_a-language-for-agents.md, https://lucumr.pocoo.org/about/]
+tags: [person, open-source, ai-agent-engineering, blogger, entrepreneur, python, earendil, agentic-engineering]
+sources: [raw/articles/2026-05-24_lucumr_building-pi-with-pi.md]
 ---
 
-# Armin Ronacher (@mitsuhiko)
+# Armin Ronacher
 
-Austrian software engineer, creator of the **Flask** web framework, **Jinja2** templating engine, **Werkzeug** WSGI toolkit, and many other foundational Python libraries. Currently Principal Architect at **Sentry**, where he works on observability infrastructure. Writes at [lucumr.pocoo.org](https://lucumr.pocoo.org/).
+Armin Ronacher (aka **mitsuhiko**) is an Austrian open-source software developer and entrepreneur, best known as the creator of the **Flask** web framework, **Jinja2** templating engine, and **Pygments** syntax highlighter. He co-founded **Earendil** in 2025 and is a key contributor to the **Pi** coding agent.
 
-## Key Projects
+## Background
 
-- **[Flask](https://flask.palletsprojects.com/)** — Micro web framework; one of the most popular Python web frameworks alongside Django
-- **[Jinja2](https://jinja.palletsprojects.com/)** — Templating engine used widely across the Python ecosystem (Ansible, Salt, Pelican, etc.)
-- **[Werkzeug](https://werkzeug.palletsprojects.com/)** — WSGI utility library that underpins Flask
-- **[Click](https://click.palletsprojects.com/)** — Command-line interface creation toolkit
-- **[Sentry](https://sentry.io/)** — Principal Architect; observability and error tracking platform
-- **[Rye](https://github.com/astral-sh/rye)** — Python package manager (later merged into Astral's `uv`)
+- **Born**: May 10, 1989 (Austria)
+- **GitHub**: [mitsuhiko](https://github.com/mitsuhiko)
+- **Blog**: [lucumr.pocoo.org](https://lucumr.pocoo.org/)
+- **X/Twitter**: [@mitsuhiko](https://x.com/mitsuhiko)
 
-## AI & Agentic Programming
+## Key Open Source Contributions
 
-In February 2026, Ronacher published a landmark essay *"A Language For Agents"* arguing that the rise of AI coding agents will drive the creation of **new programming languages** optimized for agentic workflows. Key observations:
+Ronacher's early work emerged from the **Pocoo** umbrella project — an attempt to build a Python-based bulletin board that never reached a stable release but spawned many influential libraries:
 
-### Why New Languages Can Succeed
-- **Cost of writing code is dropping** → breadth of ecosystem matters less. Ronacher now uses TypeScript/JavaScript where he'd have used Python because agents perform better.
-- Missing functionality can be **reimplemented by the agent** from another language's library.
-- **Agent performance depends more on tooling and language stability** than on presence in training data.
-- Languages with rapid churn (Zig) or painful tooling (Swift) degrade agent success, even with good training data representation.
+- **Flask** — lightweight Python web framework; one of the two most popular alongside Django
+- **Jinja2** — widely-used Python templating engine
+- **Pygments** — universal syntax highlighter used by GitHub, documentation tools, and countless projects
+- **Sphinx** — Python documentation generator (co-creator)
+- **Werkzeug** — WSGI utility library underlying Flask
+- **Click** — Python CLI toolkit
+- **ItsDangerous** — cryptographic signing library
+- **MarkupSafe** — safe HTML string handling
 
-### What Agents Need from a Language
-Detailed design principles explored in [[concepts/agent-ergonomics#armin-ronachers-language-design-principles]]:
+These projects now live under the **Pallets** community organization.
 
-1. **Context without LSP** — A single coherent experience with and without language server protocol
-2. **Braced syntax** — Significant whitespace (Python) causes token inefficiency and surgical edit errors
-3. **Explicit flow context (effect markers)** — Declare required effects (time, rng, db) in function signatures, auto-propagated by formatter
-4. **Results over exceptions** — Agents fear exceptions; typed result types preferred
-5. **Minimal diffs & line-friendly syntax** — Agents read files line-by-line; multi-line strings confuse them
-6. **Grep-ability** — Go-style package-qualified symbols, discouraged aliasing
-7. **Local reasoning** — Code must be understandable in isolation, without hidden global deps
-8. **Dependency-aware build tools** — Clear package structure, forbidding circular imports, cached test results
+## Sentry (2015–2025)
 
-### What Agents Hate
-- **Macros** — Confusing for both humans and agents
-- **Re-exports & barrel files** — Break the one-to-one mapping between declaration and import location
-- **Aliasing** — Agents complain about many aliases; encourage good naming instead
-- **Flaky tests & dev env divergence** — Agents both create and suffer from flaky tests
+Ronacher spent roughly a decade at **Sentry**, the error monitoring and observability platform, helping build it from an open-source side project into a major developer tool company. His work there deeply informed his thinking on developer tooling, observability, and platform engineering.
 
-## Philosophy
+## Earendil (2025–present)
 
-Ronacher argues we're entering an era where facts about language design matter more than ever because **agents don't care about surveys** — we can measure what works by seeing how well agents perform. He calls for:
+In 2025, Ronacher co-founded **Earendil Inc.** with **Colin Daymond Hanna**. Earendil is a Public Benefit Corporation whose stated purpose is "to strengthen the agency of humanity by crafting software and open protocols that bridge division and ignorance and cultivate lasting joy and understanding."
 
-1. **Outsider art** — People who haven't built languages before trying their hand, bringing fresh perspectives
-2. **Deliberate documentation** — A systematic effort to document what works from first principles, moving beyond opinion wars to hard facts
+In April 2026, Earendil acquired the **Pi** coding agent (created by Mario Zechner), bringing both the project and Mario into the company. Ronacher is a hands-on contributor to Pi's codebase and writes extensively about agentic engineering on his blog.
 
-> *"The cost of writing code is going down, but because we are also producing more of it, understanding what the code does is becoming more important."*
+## Philosophy & Writing
 
-## Blog
-- **URL:** [lucumr.pocoo.org](https://lucumr.pocoo.org/)
-- **RSS:** [Atom](https://lucumr.pocoo.org/feed.atom) | [RSS](https://lucumr.pocoo.org/feed.xml)
-- **Topics:** Programming languages, Python, Rust, observability, AI agents, software engineering
+Ronacher blogs at [lucumr.pocoo.org](https://lucumr.pocoo.org/) about agentic engineering, the impact of AI on open source, and software craftsmanship. Key themes in his writing:
 
-## Social
-- **X/Twitter:** [@mitsuhiko](https://x.com/mitsuhiko)
-- **Mastodon:** [@mitsuhiko@hachyderm.io](https://hachyderm.io/@mitsuhiko)
-- **GitHub:** [mitsuhiko](https://github.com/mitsuhiko)
-- **Bluesky:** [@mitsuhiko](https://bsky.app/profile/mitsuhiko.bsky.social)
+- **"Clanker" over "agent"** — insists that agency belongs to humans; the term "agent" anthropomorphizes machines in a misleading way
+- **Global invariants over local fixes** — LLMs tend to over-engineer local defenses against malformed data rather than making bad states impossible
+- **Upstream-first discipline** — the right fix is to make upstream behavior correct, not to paper over misconfigured dependencies
+- **Issue quality matters for agent-assisted development** — when issues become input to coding agents, their shape and accuracy become critical
 
-## Related
-- [[concepts/agent-ergonomics]] — Agent-oriented language design (includes Ronacher's design principles)
-- [[concepts/programming-languages]] — Type systems, compilers, language design
-- [[entities/wes-mckinney]] — Author of the agent ergonomics thesis from the ecosystem/tooling perspective
-- [[concepts/harness-engineering/agentic-engineering]] — Professional patterns for coding agent usage
+## Talks
+
+- **"Me and the Machine"** (2026) — on agent-first engineering, Pi's minimal design philosophy, and rethinking pull requests when code is 100% AI-generated
+- **"Leaning In to Find Out"** (2026) — on using personal coding sessions as input for judgment, reducing variables, and building simpler harnesses
+
+## See Also
+
+- [[pi-coding-agent]] — the minimal coding agent harness Ronacher helps maintain
+- [[ai-generated-issues-in-oss]] — the problem of LLM-generated "slop issues" that Ronacher has documented
+- [[slop-issues]] (alias)

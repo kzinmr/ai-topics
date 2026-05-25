@@ -62,7 +62,7 @@
 - [[entities/palo-alto-networks]] — Global cybersecurity company. Acquired Portkey (May 2026) for AI agent security.
 - [[entities/parallel-web-systems]] — Parallel Web Systems Inc. — AI agent infrastructure (Search, Extract, Monitor APIs). SOC 2 Type 2, ZDR. Founded 2023.
 - [[entities/parchi]] — Parchi — AI-powered browser copilot (open-source Chrome/Firefox extension). Chat-driven browser automation: navigate, read, click, fill forms. BYOK or credits. MIT license.
-- [[entities/pi-coding-agent]] — pi (Coding Agent) [redirected to entities/pi]
+- [[entities/pi-coding-agent]] → [[entities/pi]] — Pi minimal terminal coding harness. Created by Mario Zechner, acquired by Earendil (Apr 2026). ~54K stars, MIT core + Fair Source + Proprietary licensing.
 - [[entities/portkey]] — AI agent security platform — inspects actions, stops risky behavior, 99.99% uptime. Acquired by Palo Alto Networks (Q4 2026).
 - [[entities/prime-intellect]] — Prime Intellect — "The Open Stack for Self-Improving Agents": decentralized AI platform, RL post-training (Lab), open-source renderers/verifiers/prime-rl. $20.5M funding. INTELLECT model series.
 - [[entities/ramp]] — Ramp
@@ -115,7 +115,7 @@
 - [[entities/apurva-gandhi]] — Apurva Gandhi — CMU PhD student, RAO (Recursive Agent Optimization), ex-Microsoft Copilot
 - [[entities/arize]] — AI observability & LLM evaluation platform. Built Phoenix OSS (2M+ monthly downloads). $131M raised. "Datadog for agents." Enterprise customers: Uber, Chime, eBay, Spotify.
 - [[entities/arlan-r]] — **Name** | Arlan Rakhmetzhanov |
-- [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko) — Creator of Flask, Jinja2, Werkzeug. Principal Architect at Sentry. Published "A Language For Agents" (Feb 2026) on agent-oriented programming language design. [[concepts/agent-ergonomics]]
+- [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko) — Creator of Flask, Jinja2, Pygments. Co-founder of Earendil (2025). Pi coding agent maintainer. Author of "A Language For Agents" (Feb 2026) and "Building Pi With Pi" (May 2026). Former Sentry principal architect. [[concepts/agent-ergonomics]] [[concepts/ai-generated-issues-in-oss]]
 - [[entities/atal-upadhyay]] — Atal Upadhyay — AI/ML engineer and technical blogger specializing in agent harness architecture, MCP, RAG, Agentic AI. Author of 9-component agent harness framework.
 - [[entities/avi-im]] — **Blog** | avi.im | Creator of **KVM**, author of [[concepts/zero-disk-architecture]]
 - [[entities/ashe-magalhaes]] — Ashe Magalhaes — Founder of Hearth AI (first agentic CRM), builder-as-artist philosophy, solar car racer, NASA satellite engineer
@@ -408,7 +408,7 @@
 - [[entities/perplexity-comet]] — Perplexity Cometは、Perplexity AIが開発したAIネイティブブラウザ。2025年7月にWindows/macOSでリリースされ、同年11月にAndroid、2026年3月にiOSに対応。「ブラウザをAIエージェントにする」戦略の最前線に位置する製品。
 - [[entities/peter-steinberger]] — Austrian software developer, creator of **OpenClaw** (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as **@steipete** on GitHub/Twitter. A pioneer of **AI-native dev...
 - [[entities/petra-donka]] — Petra Donka — Head of DevEx at Warp. Argues agents need feedback loops, not perfect prompts.
-- [[entities/pi]] — Mario Zechner（libGDX開発者）製ミニマルAIコーディングハーネス。~1K token system prompt、4ツールのみ（read/write/edit/bash）、45.5K GitHub Stars、MITライセンス。TypeScript拡張/スキル/テーマによる拡張。OpenClawの基盤。ローカルモデルに最適。**Runtime SubstrateとしてのPI**: 実行ループ、状態管理、タスクランタイム、ツールオーケストレーション、環境仲介、イベント処理、中断/復旧を担うプログラム可能なランタイム基盤。LangGraph/PydanticAIのオーケストレーションライブラリとは異なり、エージェントOSに近い。Source: kzinmr (2026-05-15)。
+- [[entities/pi]] — Mario Zechner製ミニマルAIコーディングハーネス。~1K token system prompt、4ツールのみ（read/write/edit/bash）、~54K GitHub Stars、MIT+Fai+Proprietaryライセンス。Earendil買収（2026年4月）。OpenClaw基盤。`.pi`フォルダによる`/is` `/wr` ワークフロー。Runtime Substrate（エージェントOS）。[[concepts/ai-generated-issues-in-oss]]
 - [[entities/pi-serini]] — Minimal search agent: BM25 + LLM agentic loop. 83.1% BrowseComp-Plus accuracy with gpt-5.5, beats dense retrievers at 3.3x–10x lower cost via prefix caching (82–90% cache hit rate). Hsu et al., arXiv:2605.10848.
 - [[entities/cory-doctorow]] — Canadian-British sci-fi author and digital rights activist. Coined "enshittification." Blogs at pluralistic.net. Critical voice on AI policy and corporate personhood.
 - [[entities/philiplaine-com]] — **URL:** https://philiplaine.com
@@ -731,6 +731,7 @@
 - [[concepts/ai-coding-reliability]] — AI Coding Reliability
 - [[concepts/ai-coding-cost-optimization]] — AI Coding Cost Optimization (Ronin's Complete System) — $4,200→$312/month through context discipline, multi-model routing, prompt caching, and 7 practical techniques. Router config, benchmarks, 30-day rollout plan.
 - [[concepts/ai-evals]] — AI Evals (AI Evaluation Systems)
+- [[concepts/ai-generated-issues-in-oss]] — AI-Generated Issues in Open Source (slop issues) — LLM生成の低品質Issue/PRがOSSメンテナンスにもたらす危機。誤診断がエージェント主導開発をミスリード。Piの90日統計: 3,145件中80%自動クローズ、<10%マージ。Armin Ronacherの"Building Pi With Pi"で文書化。[[entities/armin-ronacher]] [[entities/pi]]
 - [[concepts/ai-index-report-2026]] — 2026 AI Index Report
 - [[concepts/ai-coding-agent-criticism]] — AI Coding Agent Criticism
 - [[concepts/ai-ready-apis]] — AI-Ready APIs（AIエージェント向けAPI設計）。AIエージェントをAPI消費者として想定したAPI設計の概念。機械可読スキーマ、エージェント認識セキュリティ、コントラクトテストの重要性。Postman 2025調査（5,700人対象）のAI-APIギャップ分析を含む。

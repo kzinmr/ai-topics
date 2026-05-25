@@ -3,7 +3,7 @@ title: Pi (pi-coding-agent)
 type: entity
 aliases: [pi-coding-agent, pi-dev, pi-mono, mario-zechner-pi]
 created: 2026-05-07
-updated: 2026-05-15
+updated: 2026-05-25
 status: L3
 tags:
   - entity
@@ -12,14 +12,13 @@ tags:
   - developer-tooling
   - ai-agents
 sources:
-  - https://github.com/badlogic/pi-mono
+  - https://github.com/earendil-works/pi
   - https://pi.dev
   - https://mariozechner.at/posts/2025-11-30-pi-coding-agent/
-  - https://www.npmjs.com/package/@mariozechner/pi-coding-agent
+  - https://mariozechner.at/posts/2026-04-08-ive-sold-out/
+  - https://earendil.com/posts/press-release-april-8th/
+  - raw/articles/2026-05-24_lucumr_building-pi-with-pi.md
   - https://newsletter.pragmaticengineer.com/p/building-pi-and-what-makes-self-modifying
-  - https://prowe214.medium.com/agentic-coding-harnesses-a-comparison-4db34b87fd5c
-  - https://shittycodingagent.ai/
-  - raw/newsletters/2026-04-30-ainews-the-inference-inflection.md
   - raw/articles/2026-05-15_kzinmr_agent-stack-architecture-comparative-analysis.md
 related:
   - "[[entities/openclaw]]"
@@ -199,3 +198,56 @@ Armin の全 Pi 拡張（ブラウザ自動化、コードレビュー、TODO管
 > *"None of this was written by me, it was created by the agent to my specifications. I told Pi to make an extension and it did."*
 
 ワークショップでの Hugo+Ivan の Pure Python 再構築（[[concepts/agents-that-build-themselves]]）は、この Pi 哲学をコードで実証した形。Pi は [[concepts/self-evolving-agents]] の Level 5（Self-Modification）の最も成熟した実装例でもある。
+
+## Earendil による買収（2026年4月）
+
+2026年4月8日、**Earendil Inc.**（[[armin-ronacher|Armin Ronacher]] と Colin Daymond Hanna が2025年に設立した Public Benefit Corporation）が Pi を買収。Mario Zechner は Earendil の主要株主兼チームメンバーとして参加。「pi.dev は pi のホームであり続け、Earendil のロゴが追加されるだけ。pi は MIT ライセンスのままで、フォークボタンは常に機能する」と Mario は表明した。
+
+リポジトリは `badlogic/pi-mono` から `earendil-works/pi` へ移行。npm パッケージも `@mariozechner/pi-coding-agent` から `@earendil-works/pi-coding-agent` へ変更された。
+
+## ライセンスモデル
+
+Pi は3層ライセンスモデルを採用：
+
+1. **MIT（コア）** — コアエージェント。MIT、永久。交渉不可。
+2. **Fair Source（付加価値機能）** — 将来の商用機能は Fair Source ライセンス。無料利用可、ソース公開。Delayed Open Source Publication（DOSP）により一定期間後に完全オープンソース化。
+3. **Proprietary（エンタープライズ）** — エンタープライズ向け機能とクラウドインフラ。非公開ソース。
+
+## `.pi` フォルダによる開発ワークフロー
+
+Pi チームは Pi 自身を使って Pi を開発している。その開発ワークフローは `.pi` フォルダにコミットされており、3つの要素からなる：
+
+### `/is` — Issue 分析
+GitHub Issue をラベル付け・アサインし、スレッド全体とリンクを読み込み、エージェントに対して以下の指示を与える：
+
+> *"Do not trust analysis written in the issue. Independently verify behavior and derive your own analysis from the code and execution path."*
+
+### `prompt-url-widget` 拡張
+`/is` がプロンプトに配置した GitHub URL を検出し、`gh` で Issue タイトルと作成者を取得。UI ウィジェットとして表示し、セッション名を変更。セッション再開時にも状態を再構築するため、開発者は常にどの Issue に取り組んでいるか把握できる。
+
+### `/wr` — ラップアップ
+GitHub コンテキストを推測し、CHANGELOG を更新、最終コメントを下書き/投稿し、そのセッションで変更されたファイルのみをコミット、`closes #...` を付与し、`main` からプッシュ。
+
+この仕組みにより、**複数の Pi ウィンドウを並行して開き**、それぞれ異なる Issue を調査し、UI が調査を視覚的に区別。調査完了後に逐次的に処理する「慎重な並列処理」が可能になる。
+
+## Issue トラッカーのボリューム問題
+
+Pi の Issue トラッカーは、新規コントリビューターからの全 Issue/PR を自動クローズするポリシーを採用している。2026年初頭の90日間の統計（Earendil メンバーを除く）：
+
+| 指標 | 数値 | 割合 |
+|------|------|------|
+| 外部 Issue + PR | 3,145 | 100% |
+| 自動クローズ | 2,504 | ~80% |
+| 再オープン | — | 17% |
+| PR マージ | — | <10% |
+
+低品質スパムのソースには OpenClaw インスタンスや、Issue 作成を促すカスタムスキルが含まれる。これは LLM 生成の「slop issues」問題の一部であり、詳細は [[concepts/ai-generated-issues-in-oss|AI-Generated Issues in Open Source]] を参照。
+
+> *"If your clanker shits on someone else's issue tracker then it's not the fault of GitHub, it's yours alone."* — Armin Ronacher
+
+## 最新情報（2026年5月）
+
+- **GitHub Stars**: ~54,000 (2026年5月)
+- **コントリビューター**: 210+
+- **最新リリース**: v0.75.5 (2026-05-23)
+- **リポジトリ**: [earendil-works/pi](https://github.com/earendil-works/pi)
