@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-26 | Total pages: 2029 | Indexed entries: 1293 | Not in index: 714 |
+> Last updated: 2026-05-26 | Total pages: 2033 | Indexed entries: 1298 | Not in index: 714 |
 
-## Entities (659 pages)
+## Entities (660 pages)
 
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -170,6 +170,7 @@
 - [[entities/copilot-cli]] — GitHub製ターミナルネイティブAIコーディングエージェント。6種類のビルトインサブエージェント（explore/code-review/research等）、`/fleet`並列実行、MCP拡張、BYOK/ローカルモデル対応（2026年4月+）。Copilot Free/Pro/Pro+/Business/Enterpriseに含まれる。
 - [[entities/corbett]] — **X/Twitter** | @corbtt |
 - [[entities/cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
+- [[entities/dan-shipper]] — Dan Shipper — CEO and cofounder of Every. Author of the "After Automation" paradox and the definition of AI slop as "visible sameness." Pioneer of AI-native operations.
 - [[entities/daniel-de-laney]] — **Blog** | danieldelaney.net |
 - [[entities/daniel-han]] — **X/Twitter** | @danielhanchen |
 - [[entities/daniel-miessler]] — Cybersecurity and AI engineer, founder of Unsupervised Learning. Creator of Fabric AI Framework (30K+ GitHub stars), SecLists, PAI. Author of Autonomous Component Optimization and Intent-Based Engineering concepts.
@@ -681,13 +682,14 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1319 pages)
+## Concepts (1322 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
 - [[concepts/activegraph]] — Event-Sourced Reactive Graph for agentic systems (arXiv:2605.21997). Inverts conventional architecture: append-only event log as source of truth, graph as deterministic projection, behaviours react to graph-shape changes. Three unique properties: deterministic replay (content-addressed cache), cheap forking (branch at any event), end-to-end lineage. Open source (Apache-2.0): `pip install activegraph`. Created by Yohei Nakajima.
 - [[concepts/activitypub]] — ActivityPub — W3C decentralized social networking protocol (2018). Mastodon, Threads, PeerTube. Used for federated AI agent communication
 - [[concepts/adversarial-interoperability]] — Adversarial Interoperability — Theory and practice of interoperating with platforms against their wishes. Cory Doctorow's framework for competitive tech policy
+- [[concepts/after-automation]] — After Automation Paradox — Dan Shipper's thesis that more automation creates more expert human work, not less. 5-step feedback loop: commoditization → abundance → sameness → demand for difference → demand for experts. Includes the Human Sandwich pattern, Zeno's Paradox of AI benchmarks, and the concept of slop as "visible sameness."
 - [[concepts/agent-documentation]] — Agent Documentation — Writing documentation optimized for AI coding agents: structured specs, clear interfaces, docstrings as semantic contracts
 - [[concepts/agent-distillation]] — Agent Distillation — Distilling entire agent workflows (multi-step reasoning, tool use) into model weights for ~100x cheaper inference.
 - [[concepts/agent-executor]] — Agent Executor — Google's open-source distributed agent runtime. Durable execution, secure sandbox isolation, trajectory branching, connection recovery. May 2026.
@@ -746,6 +748,7 @@
 - [[concepts/ai-pre-release-testing]] — AI Pre-Release Government Testing — US government framework for evaluating frontier AI models for national security risks before public release. CAISI agreements with Microsoft, Google, xAI (May 2026). Triggered by Claude Mythos cybersecurity concerns.
 - [[concepts/ai-privacy-tools]] — AI Privacy Tools
 - [[concepts/ai-observability]] — AI Observability — Monitoring and Debugging LLM Applications
+- [[concepts/ai-slop]] — AI Slop — Dan Shipper's definition: "visible sameness, repeated ad nauseam." Low-quality, homogenous AI-generated content from commoditization of model outputs. Step 3 of the After Automation feedback loop. Related to zombie-internet, slop-fork, ai-generated-issues-in-oss.
 - [[concepts/ai-subprime]] — AI Subprime Crisis
 - [[concepts/ai-programming-as-theory-building]] — AI Programming as Theory Building
 - [[concepts/aider-polyglot]] — Aider Polyglot — 6言語対応コーディングベンチマーク。Exercismの225問をC++/Go/Java/JS/Python/Rustでテスト。GPT-5が88%でリード。
@@ -822,6 +825,7 @@
 - [[concepts/harness-commoditization]] — Harness Commoditization — Thesis that frontier model capability is commoditizing agent harnesses. As models become natively agentic, harness architecture ceases to be a meaningful differentiator — codebase organization becomes the bottleneck. Articulated by Amp in "The Coding Agent Is Dead" (Feb 2026).
 - [[concepts/harness-engineering]] — Harness Engineering
 - [[concepts/harness-profiles]] — Harness Profiles — model-specific tuning of agent prompts, tools, and middleware per LLM family. LangChain Deep Agents feature (Apr 2026). 10-20pt benchmark gains on tau2-bench.
+- [[concepts/human-sandwich]] — Human Sandwich Pattern — Kieran Klaassen's collaboration pattern where humans are "the bread on either end of the AI's work": humans frame tasks, AI executes, humans review/decide. Practiced at Every for coding, writing, and email via Codex, Claude Code, Cowork.
 - [[concepts/hornet]] — Hornet: retrieval engine purpose-built for AI agent workloads. Founded by ex-Vespa engineers (Jo Kristian Bergum). Model-agnostic, open-source, schema-first APIs, self-hosted. Addresses agent-specific query patterns: median 10-term queries (vs human 2), phrase quotes in 98% of sessions, 24 calls/session.
 - [[concepts/karpathy-loop]] — The Karpathy Loop — Autonomous Experiment Design
 - [[concepts/knowledge-shields]] — Knowledge Shields and Systems Understanding

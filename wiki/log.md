@@ -1,3 +1,17 @@
+## [2026-05-26] After Automation — Dan Shipper article ingestion
+
+### Created
+- `raw/articles/2026-05-21_after-automation.md` — Dan Shipper's "After Automation" essay from Every
+- `concepts/after-automation.md` — After Automation Paradox: the 5-step feedback loop showing more automation → more expert human work
+- `concepts/human-sandwich.md` — Kieran Klaassen's Human Sandwich collaboration pattern
+- `concepts/ai-slop.md` — AI Slop concept (Dan Shipper's "visible sameness" definition), fixing orphan reference from zombie-internet.md
+- `entities/dan-shipper.md` — Dan Shipper, CEO of Every, author of the After Automation paradox
+
+### Updated
+- `entities/every-inc.md` — Team size updated (~15 → ~30), added AI coworker agents (Claudie, Andy, Viktor, Fin), work patterns, agent maintenance reality
+- `wiki/SCHEMA.md` — Added tags: agent-employees, human-agent-collaboration, human-sandwich, ai-slop, automation-paradox, benchmark-framing, zeno-paradox
+- `wiki/index.md` — Added all new pages to index, updated counts (Entities: 659→660, Concepts: 1319→1322, Total: 2029→2033)
+
 ## [2026-05-25] Meta-Harness knowledge ingestion — Deedy + mary + concept enrichment
 
 ### Created
