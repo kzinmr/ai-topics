@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-25 | Total pages: 2045 | Indexed entries: 1312 | Not in index: 710 |
+> Last updated: 2026-05-25 | Total pages: 2045 | Indexed entries: 1315 | Not in index: 710 |
 
 ## Entities (662 pages)
 
@@ -17,6 +17,7 @@
 - [[entities/baidu]] — Baidu (Ernie) — Ernie 5.1: 94% pre-training cost reduction via Once-For-All elastic training. 4th Search Arena. Closed weights. May 2026.
 - [[entities/buildy]] — Buildy (buildy.so) — AIエージェントが構築・永続化するパーソナルWebアプリプラットフォーム
 - [[entities/box-com]] — Box (box.com) — Enterprise cloud content management platform. AI-native platform with Box AI, Box Hubs, Box Canvas. Aaron Levie CEO.
+- [[entities/centaur]] — Centaur — Paradigm/Tempo open-source (Apache 2.0) multiplayer self-hosted agent runtime. Iron Proxy credential isolation, Slack integration, durable execution since Jan 2026.
 - [[entities/cerebras-systems]] — Cerebras Systems — Wafer-scale AI chips, CS-3 system, 1.2M cores on single wafer
 - [[entities/claude-perfect-memory]] — Claude Perfect Memory
 - [[entities/command-a-plus]] — Command A+ — Cohere's 218B MoE model, first fully Apache 2.0 licensed. 25B active params, 48 languages, W4A4 quantization, 2× H100 deployment. May 2026.
@@ -498,6 +499,7 @@
 - [[entities/teknium]] — Ryan, known online as **Teknium** (@teknium1), is the **Co-founder and Head of Post-Training** at **Nous Research**. He is the lead architect behind both the **Hermes model family** and the **Herme...
 - [[entities/telegram]] — Telegram is a cloud-based messaging platform and bot ecosystem that supports extensive third-party integrations, AI-powered bots, Mini Apps (Web Apps), and managed bot infrastructure.
 - [[entities/telegram-managed-bots]] — Telegram Managed Bots
+- [[entities/tencent-hy3]] — Tencent Hy3 Preview — 295B/21B active MoE model, open-source. 256K context, 40% inference efficiency gain. Powers Yuanbao, CodeBuddy. OpenRouter access.
 - [[entities/teortaxestex]] — **X/Twitter** | @teortaxesTex |
 - [[entities/terrible-software]] — **URL:** https://terriblesoftware.org
 - [[entities/thariq-shihipar]] — **X** | @trq212 |
@@ -771,6 +773,7 @@
 - [[concepts/automated-competitor-analysis]] — Automated competitor analysis with AI agents: Discover → Extract → Monitor pipeline, signal taxonomy
 - [[concepts/automation-series]] — Antoine Buteau's Automation Series
 - [[concepts/autoresearch-bm25-msmarco]] — Autoresearch for BM25 Optimization on MSMarco — Doug Turnbull case study. Dual-gate agentic optimization of BM25 ranking. Overfitting lessons through validation data leakage.
+- [[concepts/autotts]] — AutoTTS — Agent-discovered test-time scaling. Claude Code iteratively discovers TTS algorithms. 70% token reduction vs self-consistency. UMD/UVA/Google/Meta research (May 2026).
 - [[concepts/aws-agent-toolkit]] — AWS Agent Toolkit — Production-ready suite (May 2026) for AI coding agents on AWS: 40+ agent skills, managed MCP server (GA), 3 plugins (Core, Data Analytics, Agents). Successor to AWS Labs.
 - [[concepts/aws-openai-bedrock-partnership]] — AWS-OpenAI Bedrock Partnership — OpenAI models on Bedrock, Codex on Bedrock, Bedrock Managed Agents (all limited preview, May 2026). Enterprise-grade security + AWS commitments.
 - [[concepts/back-of-house-multi-agent-patterns]] — Back of House Multi-Agent Patterns

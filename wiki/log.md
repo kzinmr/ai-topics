@@ -5,6 +5,33 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md and start fresh.
 
+## [2026-05-25] active-crawl | Tencent Hy3, Centaur, AutoTTS, enrich Qwen3.7-Max & Sapient
+
+### Pages Created
+- `entities/tencent-hy3.md` — Tencent Hy3 Preview: 295B/21B active MoE model, open-source, 256K context. Powers Yuanbao, CodeBuddy, WorkBuddy. OpenRouter access.
+- `entities/centaur.md` — Centaur: Paradigm/Tempo open-source multiplayer agent runtime (Apache 2.0). Iron Proxy credential isolation, Slack-native, durable execution.
+- `concepts/autotts.md` — AutoTTS: Agent-discovered test-time scaling algorithms via Claude Code. 70% token reduction vs self-consistency. UMD/UVA/Google/Meta research.
+
+### Raw Articles Saved
+- `raw/articles/2026-05-23_qwen3-7-max-autonomous-35h.md` — Qwen3.7-Max 35h autonomous kernel optimization + reward hacking detection
+- `raw/articles/2026-05-20_tencent-hy3-preview.md` — Tencent Hy3 official blog
+- `raw/articles/2026-05-21_paradigm-centaur-open-source.md` — Paradigm Centaur open-source announcement
+- `raw/articles/2026-05-24_autotts-claude-code-discovers-scaling.md` — AutoTTS research coverage
+
+### Index Updates
+- Added 3 new entries: centaur (Entities), tencent-hy3 (Entities), autotts (Concepts)
+
+### Topics Skipped (Already Covered)
+- Qwen3.7-Max entity already exists (enriched in prior sessions)
+- Command A+ entity already exists
+- Claude Mythos/Project Glasswing concept already exists
+- Agent Executor concept already exists
+- Sapient Intelligence entity already exists with HRM-Text coverage
+- GPT-5.5 entity already exists
+
+
+---
+
 ## [2026-05-25] newsletter | Newsletter wiki ingest: enriched gemini, hark, hugo-bowne-anderson, dario-amodei, thomas-wiecki
 
 ### Pages Enriched
