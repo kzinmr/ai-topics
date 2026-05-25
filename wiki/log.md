@@ -1,3 +1,10 @@
+## [2026-05-25] blog | FDEかSaaSか、ではない——AI Agent時代に最も価値のあるポジションはその境界にある
+
+### Blog post
+- `blog/2026-05-25_hermes_fde-saas-boundary-position.md` — SaaSのAgent運用OSへの構造転換、Agent Control Plane、Tenant Agent Pack、FDE-SaaS境界ポジションのキャリア戦略。外部分析とwiki知識の総合。
+
+---
+
 ## [2026-05-25] ingest | SaaS-FDE-AI Agent時代の構造分析（外部分析取り込み）
 
 ### Created
