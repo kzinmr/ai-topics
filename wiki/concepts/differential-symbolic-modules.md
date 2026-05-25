@@ -5,7 +5,6 @@ updated: 2026-04-26
 type: concept
 tags:
   - neurosymbolic
-  - differentiable
   - architecture
 sources: [raw/articles/crawl-2026-04-26-neurosymbolic-taxonomy.md]
 ---

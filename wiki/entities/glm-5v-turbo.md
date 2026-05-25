@@ -7,7 +7,6 @@ tags:
 - entity
 - model
 - multimodal
-- design-to-code
 related:
 - zhipu-ai
 - chinese-ai

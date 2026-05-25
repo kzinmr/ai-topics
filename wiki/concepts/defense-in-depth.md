@@ -1,7 +1,7 @@
 ---
 title: "Defense in Depth (AI Security)"
 type: concept
-tags: [security, defense-in-depth, agent-safety, isolation]
+tags: [security, agent-safety, isolation]
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

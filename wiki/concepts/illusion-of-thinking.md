@@ -3,7 +3,7 @@ title: "Apple's Illusion of Thinking & Neurosymbolic Robotics"
 type: concept
 created: 2026-04-13
 updated: 2026-04-13
-tags: [concept, neurosymbolic, robotics, apple-research, tower-of-hanoi]
+tags: [concept, neurosymbolic, robotics]
 aliases: ["illusion of thinking", "VLA generalization gap"]
 related:
   - concepts/neurosymbolic-ai

@@ -1,7 +1,7 @@
 ---
 title: "Agent Team / Swarm"
 type: concept
-tags: [multi-agent, orchestration, swarm, openai, anthropic, cognition]
+tags: [multi-agent, orchestration, openai, anthropic, cognition]
 status: complete
 created: 2026-04-15
 updated: 2026-04-28

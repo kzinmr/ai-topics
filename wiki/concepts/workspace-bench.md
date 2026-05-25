@@ -3,7 +3,7 @@ title: "Workspace-Bench 1.0"
 created: 2026-05-07
 updated: 2026-05-07
 type: concept
-tags: [benchmark, evaluation, ai-agents, coding-agents, multi-file, workspace]
+tags: [benchmark, evaluation, ai-agents, coding-agents]
 aliases: ["workspace-bench", "Workspace-Bench"]
 sources: [raw/papers/2026-05-05_arXiv_2605.03596_workspace-bench.md]
 ---

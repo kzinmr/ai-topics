@@ -3,7 +3,7 @@ title: 'Databricks'
 type: entity
 created: 2026-04-30
 updated: 2026-04-30
-tags: [company, platform, data-ai, mlops]
+tags: [company, platform, mlops]
 aliases:
   - databricks-inc
   - databricks-engineering

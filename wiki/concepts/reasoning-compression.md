@@ -9,7 +9,7 @@ aliases:
 description: "The principle that software complexity and reasoning requirements will be compressed over time as models improve, eliminating the need for extensive exploration and reducing the imperative shell to validation/evaluation only."
 category: concepts
 sub_category: AI Agent Architecture
-tags: [ai-agents, reasoning, complexity-reduction, temporal-compression, model-improvement, software-complexity]
+tags: [ai-agents, reasoning]
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

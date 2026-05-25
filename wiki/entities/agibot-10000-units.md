@@ -6,8 +6,6 @@ updated: 2026-04-10
 tags:
 - entity
 - robotics
-- humanoid
-- production
 related:
 - humanoid-robots
 - manufacturing

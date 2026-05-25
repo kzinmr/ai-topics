@@ -3,7 +3,7 @@ title: "Project Mariner — Google DeepMind's Web Browsing Agent"
 created: "2026-05-06"
 updated: "2026-05-06"
 type: entity
-tags: [ai-agents, google, product, agentic-browsing]
+tags: [ai-agents, google, product]
 sources: [raw/articles/2026-05-06_wired-google-project-mariner-shakeup.md]
 ---
 

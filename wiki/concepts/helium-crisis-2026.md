@@ -3,7 +3,7 @@ title: "Helium Crisis 2026"
 type: concept
 created: 2026-04-10
 updated: 2026-04-10
-tags: [concept, semiconductor, supply-chain, helium, chip-manufacturing]
+tags: [concept]
 related: [semiconductor, chip-shortage, geopolitical-risk, iran-conflict]
 sources: []
 ---

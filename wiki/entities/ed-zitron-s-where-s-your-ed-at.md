@@ -7,8 +7,6 @@ tags:
   - person
   - blogger
   - writing
-  - ai-skeptic
-  - marketing
   - company
 aliases:
 - wheresyoured.at

@@ -6,9 +6,6 @@ updated: 2026-04-10
 tags:
 - entity
 - model
-- chinese-ai
-- zai
-- glm
 related:
 - chinese-ai
 - open-weights

@@ -1,6 +1,6 @@
 ---
 title: "Autonomous Component Optimization"
-tags: [autoresearch, agent-loops, self-improvement, optimization]
+tags: [autoresearch, optimization]
 created: 2026-05-03
 updated: 2026-05-03
 type: concept

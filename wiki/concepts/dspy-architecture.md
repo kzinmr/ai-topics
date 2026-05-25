@@ -1,6 +1,6 @@
 ---
 title: "DSPy Architecture — Three Abstractions"
-tags: [concept, dspy, architecture, signature, module, teleprompter]
+tags: [concept, dspy, architecture]
 created: 2026-04-28
 updated: 2026-04-28
 type: concept

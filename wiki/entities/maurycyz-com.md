@@ -7,11 +7,6 @@ tags:
 - person
 - blogger
 - hn-popular
-- c-programming
-- electronics
-- web-minimalism
-- gopher
-- physics-simulation
 aliases:
 - maurycyz
 - maurycyz.com

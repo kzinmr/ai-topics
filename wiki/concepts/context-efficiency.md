@@ -4,7 +4,7 @@ type: concept
 description: "Framework for evaluating AI agent efficiency based on context acquisition — manual/point-fed vs sandboxed/automated injection"
 category: concepts
 sub_category: AI Agent Architecture
-tags: [ai-agents, context-management, agent-efficiency, automation]
+tags: [ai-agents, context-management, automation]
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

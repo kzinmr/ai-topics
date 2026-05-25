@@ -4,7 +4,7 @@ type: concept
 created: 2026-05-04
 updated: 2026-05-04
 status: Level3
-tags: [ssm, mamba, architecture, sub-quadratic, state-space-model, sequence-modeling]
+tags: [architecture]
 aliases: [structured-state-space, mamba-architecture, selective-ssm, s4-model, mamba-2, mamba-3, state-space-duality]
 sources:
   - https://arxiv.org/abs/2312.00752

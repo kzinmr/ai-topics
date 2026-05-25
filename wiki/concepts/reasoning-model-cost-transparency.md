@@ -3,7 +3,7 @@ title: "Reasoning Model Cost Transparency"
 type: concept
 created: 2026-04-09
 updated: 2026-04-09
-tags: [concept, llm-costs, reasoning-models, transparency]
+tags: [concept, transparency]
 related: [thinking-tokens, api-pricing, model-economics]
 sources: []
 ---

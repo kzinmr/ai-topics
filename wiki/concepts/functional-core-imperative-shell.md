@@ -8,7 +8,7 @@ aliases:
 description: "Architecture pattern where deterministic, verifiable processing forms the 'functional core' and human validation, evaluation, and decision-making form the 'imperative shell.' As AI agents improve, more work migrates to the core, leaving humans focused on judgment calls."
 category: concepts
 sub_category: AI Agent Architecture
-tags: [ai-agents, architecture-patterns, deterministic-core, human-in-the-loop, validation, decision-making]
+tags: [ai-agents, human-in-the-loop]
 status: complete
 created: 2026-04-30
 updated: 2026-04-30

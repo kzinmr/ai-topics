@@ -2,7 +2,7 @@
 title: "Personal OS for AI Agents"
 created: 2026-04-27
 updated: 2026-04-27
-tags: [personal-os, context-engineering, file-system, git-based]
+tags: [context-engineering]
 aliases: [personal-brain-os, file-based-ai-os]
 sources: [
   "https://x.com/koylanai/status/2025286163641118915"

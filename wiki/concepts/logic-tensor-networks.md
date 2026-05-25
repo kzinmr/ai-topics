@@ -9,8 +9,6 @@ tags:
   - concept
   - neurosymbolic
   - reasoning
-  - tensor
-  - differentiable-reasoning
 aliases: [LTN, Real Logic, Logic Tensor Network]
 sources: [https://arxiv.org/abs/2012.13635]
 ---

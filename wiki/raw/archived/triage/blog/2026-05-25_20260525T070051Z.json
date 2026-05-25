@@ -1,0 +1,140 @@
+{
+  "archived_at": "2026-05-25T07:32:56.631376+00:00",
+  "triage_run_id": "20260525T070051Z",
+  "source": "blog",
+  "summary_ja": "2026-05-25のブログトリッジ結果: 11件の候補中、5件は既に本日のblog-wiki-ingestパイプラインで処理済み（George Hotzの「The Eternal Sloptember」、Armin Ronacherの「Building Pi With Pi」、Simon Willisonのdatasette-agent・Armin Ronacher引用）。残り6件はAI/LLM非関連の記事（Joan Westenbergのエッセイ、NBAのSteve Kerr記事、Go rsyncの脆弱性分析、ソフトウェアサプライチェーンセキュリティ、レトロゲーム復元、Datasetteテストユーティリティ）。4件のunsaved記事も既にraw articleとしてキャプチャ済みかAI非関連。新たなtake/reference候補はなし。",
+  "decisions": [
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "datasette-agent 0.1a4",
+      "url": "https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-may-24-datasette-agent--ec49f1cf.md",
+      "recommended_action": "skip",
+      "reason_ja": "既に本日blog-wiki-ingestで処理済み: concepts/datasette-agent.md作成。log.md参照。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# datasette-agent 0.1a4\nSource: https://simonwillison.net/2026/May/24/datasette-agent/#atom-everything\nTaking advantage of the new\nmakeJumpSections()\nJavaScript plugin hook added in\nDatasette 1.0a30\n,\ndatasette-agent\nnow presents this \"Start a new agent chat\" interface as part of the Jump to menu, a"
+    },
+    {
+      "item_id": "blog-2",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "A quote from Armin Ronacher",
+      "url": "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-may-24-armin-ronacher--f295692f.md",
+      "recommended_action": "skip",
+      "reason_ja": "既に本日blog-wiki-ingestで処理済み: entities/armin-ronacher.md作成 + concepts/ai-slop.mdに統合。log.md参照。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# A quote from Armin Ronacher\nSource: https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything\n24th May 2026\nThe most frustrating failure mode right now is that people submit issues that are not in their own voice. They contain an observed problem somewhere, but it has been thrown into "
+    },
+    {
+      "item_id": "blog-3",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "datasette-fixtures 0.1a0",
+      "url": "https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-may-24-datasette-fixtures--94756da5.md",
+      "recommended_action": "skip",
+      "reason_ja": "Datasetteプラグインのテスト用フィクスチャユーティリティ。AI/LLMエージェント無関係。★☆☆☆☆",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# datasette-fixtures 0.1a0\nSource: https://simonwillison.net/2026/May/24/datasette-fixtures/#atom-everything\nOne of the smaller features in\nDatasette 1.0a30\nis this:\nNew documented\ndatasette.fixtures.populate_fixture_database(conn)\nhelper for creating the fixture database tables used by Datasette's "
+    },
+    {
+      "item_id": "blog-4",
+      "source": "blog",
+      "source_name": "geohot.github.io",
+      "title": "the singularity is nearer",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/05/24/the-eternal-sloptember.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/geohot.github.io--blog-jekyll-update-2026-05-24-the-eternal-sloptember-html--06dfb1d8.md",
+      "recommended_action": "skip",
+      "reason_ja": "既に本日blog-wiki-ingestで処理済み: entities/george-hotz.md強化。「The Eternal Sloptember」としてキャプチャ。log.md参照。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# the singularity is nearer\nSource: https://geohot.github.io//blog/jekyll/update/2026/05/24/the-eternal-sloptember.html\nI’m calling it now, the adoption of AI agents into software development will be one of the most costly mistakes in the field’s history. Agents cannot program, and it’s taking longe"
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "lucumr.pocoo.org",
+      "title": "Building Pi With Pi",
+      "url": "https://lucumr.pocoo.org/2026/5/24/pi-oss/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/lucumr.pocoo.org--2026-5-24-pi-oss--32605b95.md",
+      "recommended_action": "skip",
+      "reason_ja": "既に本日blog-wiki-ingestで処理済み: entities/armin-ronacher.md作成 + concepts/ai-slop.mdに統合。log.md参照。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Building Pi With Pi\nSource: https://lucumr.pocoo.org/2026/5/24/pi-oss/\nBuilding Pi With Pi\nwritten on May 24, 2026\nPi\nis now part of Earendil, but in the important sense it is\nstill\nMario’s\nproject.  He has been living with its\nissue tracker longer than I have, and he has been exposed to the weird"
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "joanwestenberg.com",
+      "title": "Why I can't stand the word \"driven\"",
+      "url": "https://www.joanwestenberg.com/why-i-cant-stand-the-word-driven/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/joanwestenberg.com--why-i-cant-stand-the-word-driven--397320cd.md",
+      "recommended_action": "skip",
+      "reason_ja": "完全なる非AIエッセイ:「driven」という言葉の語源（牛追い）をめぐる考察。技術/AI無関係。★☆☆☆☆",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Why I can't stand the word \"driven\"\nSource: https://www.joanwestenberg.com/why-i-cant-stand-the-word-driven/\nA man named Harry Readford once stole close to 1,000 head of cattle from Bowen Downs station in central Queensland and drove them south, down through the Channel Country and along the Strze"
+    },
+    {
+      "item_id": "blog-7",
+      "source": "blog",
+      "source_name": "nesbitt.io",
+      "title": "Signing is for the bad days",
+      "url": "https://nesbitt.io/2026/05/24/signing-is-for-the-bad-days.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/nesbitt.io--2026-05-24-signing-is-for-the-bad-days-html--0748a9e6.md",
+      "recommended_action": "skip",
+      "reason_ja": "ソフトウェアサプライチェーンセキュリティ（TUF/in-toto/Sigstore）の詳細技術記事。AI/LLMエージェント無関係。★☆☆☆☆",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Signing is for the bad days\nSource: https://nesbitt.io/2026/05/24/signing-is-for-the-bad-days.html\nI have had roughly the same conversation four or five times in the last month. I’m explaining why a registry should adopt Sigstore, or why a build pipeline should emit in-toto attestations, and the p"
+    },
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "xania.org",
+      "title": "Walking the dog with Claude",
+      "url": "http://xania.org/202605/walking-the-dog?utm_source=feed&utm_medium=rss",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/xania.org--202605-walking-the-dog--4271cbe1.md",
+      "recommended_action": "skip",
+      "reason_ja": "Matt Godbolt（Compiler Explorer作者）がClaudeをインタビュアーに使った個人的対話形式エッセイ。技術解説の「mum test」哲学など個人の内省が中心でAIエージェント技術への示唆は薄い。★★☆☆☆",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Walking the dog with Claude\nSource: http://xania.org/202605/walking-the-dog?utm_source=feed&utm_medium=rss\nWalking the dog with Claude\nWritten with LLM assistance.\nThe interview format is genuine; the prose is lightly tidied from voice notes.\nI had lunch with a pal yesterday, and we got onto the s"
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "Usborne Creepy Computer Games",
+      "url": "https://simonwillison.net/2026/May/24/usborne-mad-house/#atom-everything",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-may-24-usborne-mad-house--fb82b871.md",
+      "recommended_action": "skip",
+      "reason_ja": "Simon WillisonがClaudeに1983年UsborneのCreepy Computer GamesのPDFを読み込ませてJavaScript版ゲームを生成した軽い話。エンティティページを強化するほどのAI技術的価値はない。★☆☆☆☆",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Usborne Creepy Computer Games\nSource: https://simonwillison.net/2026/May/24/usborne-mad-house/#atom-everything\nVia\nHacker News\nI learned that UK publisher Usborne published\nfree PDFs of their 1980s Computer Books\n, some of which I remember working through on my Commodore 64 as a child.\nThese were "
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "Why Steve Kerr stayed with the Warriors",
+      "url": "https://www.espn.com/nba/story/_/id/48686303/steve-kerr-decision-return-coach-golden-state-warriors-steph-curry",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/espn.com--nba-story-id-48686303-steve-kerr-decision-return-coach-golde--859eff44.md",
+      "recommended_action": "skip",
+      "reason_ja": "完全なる非AI記事: ESPNのNBA Steve Kerr特集。AI/LLM技術との関連性は皆無。★☆☆☆☆",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Why Steve Kerr stayed with the Warriors\nSource: https://www.espn.com/nba/story/_/id/48686303/steve-kerr-decision-return-coach-golden-state-warriors-steph-curry\nSTEVE KERR WALKED\ninto the lobby of the Beverly Wilshire with a secret. Win or lose, he'd decided to retire as head coach of the Golden St"
+    },
+    {
+      "item_id": "blog-11",
+      "source": "blog",
+      "source_name": "michael.stapelberg.ch",
+      "title": "How my minimal, memory-safe Go rsync steers clear of vulnerabilities",
+      "url": "https://michael.stapelberg.ch/posts/2026-05-24-minimal-memory-safe-go-rsync-vulns/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/michael.stapelberg.ch--posts-2026-05-24-minimal-memory-safe-go-rsync-vulns--729bdbfc.md",
+      "recommended_action": "skip",
+      "reason_ja": "Go実装rsyncのメモリ安全性と脆弱性比較の詳細技術記事。AI/LLMエージェント無関係。★☆☆☆☆",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# How my minimal, memory-safe Go rsync steers clear of vulnerabilities\nSource: https://michael.stapelberg.ch/posts/2026-05-24-minimal-memory-safe-go-rsync-vulns/\nTable of contents\nBack in January 2025, multiple different security researchers published a total\nof\n6 security vulnerabilities in\nrsync\n,"
+    }
+  ]
+}

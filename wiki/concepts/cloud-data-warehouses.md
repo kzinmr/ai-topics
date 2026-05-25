@@ -1,7 +1,7 @@
 ---
 title: "Cloud Data Warehouses"
 type: concept
-tags: [data-warehouse, snowflake, bigquery, databricks, cloud-analytics]
+tags: [databricks]
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

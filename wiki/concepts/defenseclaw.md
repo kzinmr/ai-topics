@@ -3,7 +3,7 @@ title: "DefenseClaw"
 created: 2026-05-08
 updated: 2026-05-08
 type: concept
-tags: [agent-safety, security, infrastructure, open-source, sandbox, cisco, openclaw]
+tags: [agent-safety, security, infrastructure, open-source, sandbox, openclaw]
 sources: [raw/articles/2026-03-23_cisco-defenseclaw-rsac.md]
 ---
 

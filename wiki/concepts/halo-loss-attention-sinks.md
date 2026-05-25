@@ -7,7 +7,6 @@ tags:
   - concept
   - model
   - training
-  - loss-function
 related:
 - decoder-only-gpt
 - context-window-management

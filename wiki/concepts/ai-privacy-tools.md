@@ -3,7 +3,7 @@ title: "AI Privacy Tools"
 type: concept
 created: 2026-04-10
 updated: 2026-04-10
-tags: [concept, privacy, cors, browser-security, ai-agents, web-scraping]
+tags: [concept, privacy, ai-agents]
 aliases: ["ai-privacy-techniques", "cors-bypass", "agent-browser-security"]
 sources: []
 ---

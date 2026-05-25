@@ -5,7 +5,7 @@ created: 2026-04-27
 updated: 2026-04-27
 status: L2
 sources: ["https://x.com/i/article/2041112698885210112", "https://www.blotato.com/ (status: pending)"]
-tags: [content-automation, ai-content, pipeline, solo-founder, personal-brand, blotate]
+tags: []
 ---
 
 # Content Engine

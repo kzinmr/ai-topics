@@ -1,7 +1,7 @@
 ---
 title: "Durable Execution"
 type: concept
-tags: [durable-execution, agent-reliability, workflow, state-management]
+tags: [durable-execution, workflow, state-management]
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

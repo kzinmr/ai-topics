@@ -10,7 +10,6 @@ tags:
   - coding-agent
   - coding-agents
   - company
-  - partnership
 related:
 - coding-agents
 - ide-tools

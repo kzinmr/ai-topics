@@ -3,7 +3,7 @@ title: "Neurosymbolic AI"
 created: 2026-04-13
 updated: 2026-04-26
 type: concept
-tags: [neurosymbolic, ai-architecture, reasoning]
+tags: [neurosymbolic, reasoning]
 sources: [raw/articles/crawl-2026-04-26-neurosymbolic-taxonomy.md]
 ---
 

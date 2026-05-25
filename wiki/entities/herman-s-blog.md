@@ -7,9 +7,6 @@ tags:
   - person
   - blogger
   - hn-popular
-  - bear-blog
-  - web-philosophy
-  - indie-hacker
 aliases:
 - herman.bearblog.dev
 - herman

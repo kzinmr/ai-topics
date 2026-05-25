@@ -11,8 +11,6 @@ tags:
 - entity
 - product
 - browser-agent
-- ai-browser
-- perplexity
 status: active
 sources:
 - https://en.wikipedia.org/wiki/Perplexity_Comet

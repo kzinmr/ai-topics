@@ -3,7 +3,7 @@ title: "Anthropic-OpenClaw Conflict"
 type: concept
 created: 2026-04-13
 updated: 2026-04-13
-tags: [concept, anthropic, openclaw, third-party-tools, subscription-policy, peter-steinberger]
+tags: [concept, anthropic, openclaw]
 aliases: ["openclaw ban", "claude subscription cutoff", "third-party harness restriction"]
 related:
   - concepts/open-claw-ecosystem

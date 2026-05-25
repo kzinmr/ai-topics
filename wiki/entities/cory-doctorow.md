@@ -10,7 +10,7 @@ sources:
   - https://en.wikipedia.org/wiki/Cory_Doctorow
   - https://crimelab.blog/
   - https://locusmag.com/feature/cory-doctorow-full-employment/
-tags: [person, author, activist, technology-policy]
+tags: [person]
 ---
 
 # Cory Doctorow

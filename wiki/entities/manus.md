@@ -11,7 +11,6 @@ tags:
   - entity
   - developer-tooling
   - browser-agent
-  - general-purpose-agent
   - company
 status: active
 sources:

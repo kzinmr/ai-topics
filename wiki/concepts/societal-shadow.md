@@ -12,10 +12,6 @@ tags:
   - psychology
   - philosophy
   - nlp
-  - censorship
-  - taboo
-  - jung
-  - bataille
 status: complete
 description: "RLHFがLLMに語らせないために、社会の性的・暴力的・非常識・異常なもの全てを列挙する行為が逆説的に「社会の影」を可視化したという、QC（Qiaochu Yuan）が提唱した概念。禁止リストが社会の抑圧領域を照らし出す皮肉な逆転現象。"
 created: 2026-05-08

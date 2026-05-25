@@ -3,7 +3,7 @@ title: "Context Routing — クエリ別コンテキスト振り分け"
 type: concept
 created: 2026-04-22
 updated: 2026-04-22
-tags: [concept, optimization, context-management, routing]
+tags: [concept, optimization, context-management]
 status: active
 sources:
   - "Vellum AI — Agentic Workflows in 2026 (Dec 2025)"

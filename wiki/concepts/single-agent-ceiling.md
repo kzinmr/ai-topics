@@ -3,7 +3,7 @@ title: Single-Agent Ceiling
 type: concept
 created: 2026-04-18
 updated: 2026-04-18
-tags: [coding-agents, anti-patterns, single-agent, agent-limitations, sloperator]
+tags: [coding-agents]
 aliases: ["single-agent-limitations", "sloperator-anti-pattern"]
 sources: []
 ---

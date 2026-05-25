@@ -3,7 +3,7 @@ title: "Qwen3.6-27B"
 type: concept
 created: 2026-04-24
 updated: 2026-04-24
-tags: [model, qwen, openai, open-source, coding-agents, efficient-llm]
+tags: [model, qwen, openai, open-source, coding-agents]
 aliases: ["Qwen 3.6 27B", "Qwen3.6"]
 sources: []
 ---

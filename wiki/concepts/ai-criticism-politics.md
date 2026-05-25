@@ -3,7 +3,7 @@ title: Anti-AI Arguments Are Conservative Arguments
 type: concept
 created: 2026-04-24
 updated: 2026-04-24
-tags: [concept, ai-criticism, politics, ai-autonomy-debate]
+tags: [concept]
 aliases: [ai-politics, anti-ai-political-coding]
 sources: []
 ---

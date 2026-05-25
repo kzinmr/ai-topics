@@ -8,8 +8,6 @@ tags:
   - blogger
   - hn-popular
   - developer-tooling
-  - compiler-tools
-  - language-server
 aliases:
 - matklad
 - matklad.github.io

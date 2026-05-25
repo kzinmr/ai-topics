@@ -3,7 +3,7 @@ title: elvis
 created: 2026-04-18
 updated: 2026-04-18
 type: entity
-tags: [person, ai-agents, architecture-analysis]
+tags: [person, ai-agents]
 sources:
   - "https://x.com/elvis_/"
 ---

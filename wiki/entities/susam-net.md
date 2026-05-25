@@ -6,11 +6,7 @@ updated: 2026-04-10
 tags:
   - person
   - blogger
-  - mathematician
-  - puzzles
-  - common-lisp
   - open-source
-  - indie-web
 aliases:
 - susam.net
 sources: []

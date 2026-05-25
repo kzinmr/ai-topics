@@ -7,11 +7,6 @@ tags:
 - person
 - blogger
 - hn-popular
-- game-history
-- interactive-fiction
-- preservation
-- retro-computing
-- digital-culture
 aliases:
 - filfre.net
 - The Digital Antiquarian

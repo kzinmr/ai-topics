@@ -3,7 +3,7 @@ title: Content Engine
 created: 2026-04-27
 updated: 2026-04-27
 type: concept
-tags: [ai-adoption, content-creation, automation]
+tags: [ai-adoption, automation]
 aliases: ["AI Content Engine", "Content Pipeline"]
 sources: []
 status: complete

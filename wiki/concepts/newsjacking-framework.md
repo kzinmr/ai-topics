@@ -3,7 +3,7 @@ title: Newsjacking Framework
 created: 2026-04-19
 updated: 2026-04-19
 type: concept
-tags: [content-strategy, virality, psychology, attention-economy, triage, curation]
+tags: [psychology]
 aliases: ["newsjacking", "viral content strategy", "attention flywheel"]
 sources:
   - "https://www.elvis.so/p/5-viral-tweets-in-one-day"

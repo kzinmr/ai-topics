@@ -6,11 +6,7 @@ updated: 2026-04-10
 tags:
 - person
 - blogger
-- vintage-computing
-- hardware-repair
-- embedded-linux
 - reverse-engineering
-- macintosh
 aliases:
 - downtowndougbrown.com
 - doug-brown

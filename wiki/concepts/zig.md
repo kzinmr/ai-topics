@@ -3,7 +3,7 @@ title: "zig"
 type: concept
 created: 2026-04-25
 updated: 2026-05-01
-tags: [concept, programming-language, open-source, anti-llm, developer-tooling]
+tags: [concept, programming-language, open-source, developer-tooling]
 status: L2
 sources:
   - "raw/articles/simonwillison.net--2026-apr-30-zig-anti-ai--e30e52cf.md"

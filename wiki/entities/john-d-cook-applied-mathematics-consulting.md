@@ -7,11 +7,7 @@ tags:
 - person
 - blogger
 - hn-popular
-- applied-mathematics
-- statistics
-- ai-reliability
 - formal-methods
-- data-privacy
 aliases:
 - johndcook.com
 - john-d-cook-applied-mathematics-consulting

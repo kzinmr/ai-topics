@@ -7,7 +7,7 @@ sources:
   - "http://antirez.com/news/162"
   - "http://antirez.com/news/159"
   - "http://antirez.com/news/160"
-tags: [concept, ai-reimplementations, gnu, clean-room, automatic-programming, open-source]
+tags: [concept, open-source]
 aliases: ["clean-room-ai-reimplementations", "ai-driven-reimplementations"]
 ---
 

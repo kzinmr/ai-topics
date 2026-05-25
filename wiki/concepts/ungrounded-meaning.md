@@ -3,7 +3,7 @@ title: "Ungrounded Meaning"
 type: concept
 created: 2026-04-16
 updated: 2026-04-16
-tags: [concept, grounding, semantics, computational-linguistics]
+tags: [concept]
 aliases: ["semantic emulation", "form-meaning gap"]
 related:
   - entities/shunyu-yao

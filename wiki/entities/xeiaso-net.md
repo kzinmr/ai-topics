@@ -7,8 +7,6 @@ tags:
   - person
   - blogger
   - hn-popular
-  - infrastructure-engineering
-  - nix
   - security
   - open-source
 aliases:

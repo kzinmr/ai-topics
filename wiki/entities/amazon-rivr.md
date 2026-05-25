@@ -9,7 +9,6 @@ tags:
   - company
   - aws
   - robotics
-  - rivr
 related:
 - amazon
 - robotics

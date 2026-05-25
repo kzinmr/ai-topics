@@ -10,7 +10,6 @@ tags:
   - reverse-engineering
   - hardware
   - timeline
-  - microcode
 aliases:
 - righto.com
 - kenshirriff

@@ -9,9 +9,6 @@ tags:
   - blogger
   - hn-popular
   - developer-tooling
-  - functional-programming
-  - game-dev
-  - cryptocurrency
   - writing
 aliases:
 - chadnauseam.com

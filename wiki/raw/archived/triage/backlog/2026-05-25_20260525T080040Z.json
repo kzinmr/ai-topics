@@ -1,0 +1,43 @@
+{
+  "checkpoint_run_id": "20260525T080040Z",
+  "archived_at": "2026-05-25T08:02:29.316161+00:00",
+  "summary_ja": "raw-backlog-ingest batch: 5 candidates, 0 takes, 5 skips (2 already in wiki, 1 non-AI, 2 duplicates)",
+  "total_processed": 5,
+  "decisions": [
+    {
+      "filename": "2026-05-24_lenny-podcast-dan-shipper-ai-paradox.md",
+      "source": "backlog",
+      "recommended_action": "skip",
+      "reason_ja": "entities/dan-shipper.mdに既に包括的に収録済み（12 Predictionsセクション、2026-05-25作成）。本文はLenny's Podcast transcript。Dan ShipperのAI予測（Codex/Claude CodeがOS化、SaaS不滅、CLIs終了、自動化は嘘、PMとデザイナーが勝利）が既存エンティティページに既に構造化されているためskip。",
+      "body_excerpt": "Podcast transcript: Dan Shipper 12 predictions on AI future of work - Codex/Claude Code as OS, SaaS bullish, CLIs over, automation is a lie, PMs thrive, full-stack designers win, no AI job apocalypse, forward-deployed engineers essential."
+    },
+    {
+      "filename": "espn.com--nba-story-id-48686303-steve-kerr-decision-return-coach-golde--859eff44.md",
+      "source": "backlog",
+      "recommended_action": "skip",
+      "reason_ja": "Non-AI content - NBA sports news about Steve Kerr Warriors coaching decision. Zero AI/LLM relevance.",
+      "body_excerpt": "Why Steve Kerr stayed with the Warriors - sports article about NBA coach retirement decision. Zero AI/LLM relevance."
+    },
+    {
+      "filename": "substack.com--app-link-post--b45ed70f.md",
+      "source": "backlog",
+      "recommended_action": "skip",
+      "reason_ja": "entities/ryan-lopopolo.mdに既に包括的に収録済み（Symphony, Harness Engineering, Token Billionaire sections, 2026-05-22 updated）。Ryan Lopopolo podcast interview about 1M LOC zero human code experiment, Symphony orchestration, dark factory pattern - all documented.",
+      "body_excerpt": "Podcast transcript: Ryan Lopopolo on extreme harness engineering - 1M LOC zero human code, Symphony orchestration in Elixir, 1B tokens/day, OpenAI Frontier, ghost libraries, spec-driven software."
+    },
+    {
+      "filename": "substack.com--app-link-post--bba2a796.md",
+      "source": "backlog",
+      "recommended_action": "skip",
+      "reason_ja": "Duplicate of b45ed70f - same Ryan Lopopolo podcast, only URL params differ (play_card_duration vs play_card_show_logo).",
+      "body_excerpt": "DUPLICATE: Same content as b45ed70f - Ryan Lopopolo podcast interview. Only URL query params differ."
+    },
+    {
+      "filename": "substack.com--app-link-post--9e20faa2.md",
+      "source": "backlog",
+      "recommended_action": "skip",
+      "reason_ja": "Duplicate of b45ed70f - same Ryan Lopopolo podcast, only URL params differ (play_card vs play_card_show_logo).",
+      "body_excerpt": "DUPLICATE: Same content as b45ed70f - Ryan Lopopolo podcast interview. Only URL query params differ."
+    }
+  ]
+}

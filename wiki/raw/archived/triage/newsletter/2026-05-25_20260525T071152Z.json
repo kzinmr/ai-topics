@@ -1,0 +1,56 @@
+{
+  "archived_at": "2026-05-25T07:29:47.499357+00:00",
+  "triage_run_id": "20260525T071152Z",
+  "source": "newsletter",
+  "summary_ja": "2026-05-24/25のニュースレター4件をトリアージ。Lenny's Podcast「AIパラドックス」は既にraw記事として取り込み済み（同日別パイプライン）。The Signal「Google Goes Agentic」からGemini 3.5 Flashベンチマーク不足（Terminal-Bench 76.2%, MCP Atlas 83.6%）とHark投資家情報(Nvidia/AMD/Intel/Qualcomm参加)のエンリッチを特定。Beehiiv「指数関数的AIナラティブ」は全リンク403(Cloudflare)で評価不能、主題は憶測の域。Hugo Bowne-Anderson「エージェントデータサイエンスの未来」はThomas Wieckiとのポッドキャスト内容が既存entityページに未反映。計4件のtake（entityエンリッチ）を特定。",
+  "decisions": [
+    {
+      "item_id": "<20260524123149.3.41ab5502d380b3e3@mg-d0.substack.com>-1",
+      "source": "newsletter",
+      "source_name": "The AI paradox: More automation, more humans, more work | Dan Shipper",
+      "title": "Lenny's Podcast: The AI Paradox (Dan Shipper)",
+      "url": "https://open.substack.com/pub/lenny/p/the-ai-paradox-dan-shipper",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-24-the-ai-paradox-more-automation-more-humans-more-work-dan-shipper.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 既に2026-05-24に別パイプラインでraw記事(raw/articles/2026-05-24_lenny-podcast-dan-shipper-ai-paradox.md, 121KB)として取り込み済み。log.mdに同日処理記録あり。全20リンクはSubstack UIノイズ(play card×9, @lenny, like, comment, share, redirect)で実質コンテンツ無し。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-24\n**Subject:** The AI paradox: More automation, more humans, more work | Dan Shipper\n**Collected:** 2026-05-25T07:11:47.315929+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cubGVubnlzbmV3c2xldHRlci5jb20vc3Vic2"
+    },
+    {
+      "item_id": "<20260524130257.3.9728450bc7f82883@mg-d0.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "Google Goes Agentic, Hark's Big Bet, and Starbucks' Milk Run",
+      "title": "Reference: Dario Amodei 10% Growth + 10% Unemployment",
+      "url": "https://open.substack.com/pub/thesignal/p/google-goes-agentic-harks-big-bet",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-24-google-goes-agentic-hark-s-big-bet-and-starbucks-milk-run.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/dario-amodei.md 参考情報。ダボスでDario Amodeiが「GDP成長10%と失業率10%が同時に起こりうる」発言。経済哲学的な論点で技術データ不足だが、dario-amodei.mdは2026-04-14更新(42日経過)でスケルトン状態。軽微なエンリッチ候補。",
+      "candidate_wiki_path": "entities/dario-amodei.md",
+      "body_excerpt": "# Newsletter Digest - 2026-05-24\n**Subject:** Google Goes Agentic, Hark’s Big Bet, and Starbucks' Milk Run\n**Collected:** 2026-05-25T07:11:48.620414+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1"
+    },
+    {
+      "item_id": "<20260524.171640.b23b8ce9@mta6>-1",
+      "source": "newsletter",
+      "source_name": "Demystifying the 'Exponential AI' Narrative",
+      "title": "Skip: All beehiiv links Cloudflare 403",
+      "url": "https://link.mail.beehiiv.com/v1/c/Dlp63COnhqWkNconhdoUJTNZ7IZmySmHw5axl40V8vd4aHv8gAXb",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-24-demystifying-the-exponential-ai-narrative.md",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ Beehiivリンク20件、全件403(Cloudflare Challenge)。Subject line「Demystifying the Exponential AI Narrative」から主題はAI指数関数的成長ナラティブへの批判的検討と推定。Opinion/Commentary系で技術データを含む可能性低く、内容が読めないため評価不能。skipped (all beehiiv links 403, subject-line analysis indicates opinion piece).",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-05-24\n**Subject:** Demystifying the “Exponential AI” Narrative\n**Collected:** 2026-05-25T07:11:49.986227+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v1/c/Dlp63COnhqWkNconhdoUJTNZ7IZmySmHw5axl40V8vd4aHv8gAXb%2FVJBzADA%0AMSIaqjlisnVg1V6G"
+    },
+    {
+      "item_id": "<20260525053325.3.8c632050048101d1@mg-d0.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "The Future of Agentic Data Science",
+      "title": "Reference: Agentic Data Science Course & Thomas Wiecki enrichment",
+      "url": "https://open.substack.com/pub/hugobowne/p/the-future-of-agentic-data-science",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-05-25-the-future-of-agentic-data-science.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ entities/thomas-wiecki.md 参考情報。Thomas WieckiのAgentic Data Science節にDecision Intelligence/Decision Engine/Decision Lab OSSの文脈が不足。同エンティティは2026-05-14更新(11日経過)でエピソード未収録だが、Show Us Your Agent Skills co-hostとしての記述が主で、本エピソードの深い技術概念(Causal-Bayesian workflows, Decision Engines)は軽微なエンリッチ領域。",
+      "candidate_wiki_path": "entities/thomas-wiecki.md",
+      "body_excerpt": "# Newsletter Digest - 2026-05-25\n**Subject:** The Future of Agentic Data Science\n**Collected:** 2026-05-25T07:11:51.417383+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9odWdvYm93bmUuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jY"
+    }
+  ]
+}

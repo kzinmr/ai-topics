@@ -7,9 +7,6 @@ tags:
   - person
   - blogger
   - hn-popular
-  - c++
-  - compiler-explorer
-  - assembly
   - open-source
   - developer-tooling
 aliases:

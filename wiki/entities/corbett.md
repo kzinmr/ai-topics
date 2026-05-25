@@ -9,7 +9,6 @@ tags:
   - company
   - fine-tuning
   - training
-  - openpipe
   - infrastructure
 aliases:
 - '@corbtt'

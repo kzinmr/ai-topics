@@ -1,7 +1,7 @@
 ---
 title: "Human-in-the-Loop"
 type: concept
-tags: [human-in-the-loop, hitl, agent-safety, oversight]
+tags: [human-in-the-loop, agent-safety]
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

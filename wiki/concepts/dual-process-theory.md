@@ -1,7 +1,7 @@
 ---
 title: "Dual Process Theory (AI)"
 type: concept
-tags: [dual-process, system1-system2, reasoning, cognitive-architecture]
+tags: [reasoning]
 status: L3
 created: 2026-04-27
 updated: 2026-04-28

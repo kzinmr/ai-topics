@@ -6,12 +6,8 @@ updated: 2026-04-10
 tags:
   - person
   - blogger
-  - open-source-maintainer
   - security
-  - node-js
   - developer-tooling
-  - helmet-js
-  - ghost
 aliases:
 - evanhahn.com
 - evan-hahn

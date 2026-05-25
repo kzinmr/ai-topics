@@ -5,7 +5,7 @@ created: 2026-04-27
 updated: 2026-04-27
 status: L2
 sources: [https://core.telegram.org/bots/features#managed-bots, https://core.telegram.org/bots]
-tags: [telegram, bots, managed-bots, platform-feature, bot-management]
+tags: []
 ---
 
 # Telegram Managed Bots

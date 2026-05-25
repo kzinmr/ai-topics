@@ -3,7 +3,7 @@ title: Telegram Managed Bots
 created: 2026-04-27
 updated: 2026-04-27
 type: concept
-tags: [agentic-engineering, platforms, no-code]
+tags: [agentic-engineering]
 aliases: ["Managed Bots", "Telegram Bot API 9.6"]
 sources:
   - https://core.telegram.org/bots/api-changelog

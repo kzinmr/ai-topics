@@ -3,7 +3,7 @@ title: "Agent Swarms (Emergent Behavior)"
 type: concept
 created: 2026-04-26
 updated: 2026-04-26
-tags: [multi-agent, emergent-behavior, decentralized, swarm-intelligence, biology-inspired]
+tags: [multi-agent]
 aliases: ["swarm-intelligence", "emergent-multi-agent", "decentralized-agent-coordination"]
 sources:
   - raw/articles/swarm-plus-consensus-2026.md
