@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2042 | Indexed entries: 1312 | Not in index: 710 |
+> Last updated: 2026-05-25 | Total pages: 2045 | Indexed entries: 1312 | Not in index: 710 |
 
 ## Entities (662 pages)
 
@@ -116,7 +116,7 @@
 - [[entities/apurva-gandhi]] — Apurva Gandhi — CMU PhD student, RAO (Recursive Agent Optimization), ex-Microsoft Copilot
 - [[entities/arize]] — AI observability & LLM evaluation platform. Built Phoenix OSS (2M+ monthly downloads). $131M raised. "Datadog for agents." Enterprise customers: Uber, Chime, eBay, Spotify.
 - [[entities/arlan-r]] — **Name** | Arlan Rakhmetzhanov |
-- [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko) — Creator of Flask, Jinja2, Pygments. Co-founder of Earendil (2025). Pi coding agent maintainer. Author of "A Language For Agents" (Feb 2026) and "Building Pi With Pi" (May 2026). Former Sentry principal architect. [[concepts/agent-ergonomics]] [[concepts/ai-generated-issues-in-oss]]
+- [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko) — Creator of Flask, Jinja2, Pygments. Co-founder of Earendil (2025). Pi coding agent maintainer. Author of "A Language For Agents" (Feb 2026) and "Building Pi With Pi" (May 2026) on AI slop in open source issue trackers. Former Sentry principal architect. [[concepts/agent-ergonomics]] [[concepts/ai-slop]]
 - [[entities/atal-upadhyay]] — Atal Upadhyay — AI/ML engineer and technical blogger specializing in agent harness architecture, MCP, RAG, Agentic AI. Author of 9-component agent harness framework.
 - [[entities/avi-im]] — **Blog** | avi.im | Creator of **KVM**, author of [[concepts/zero-disk-architecture]]
 - [[entities/ashe-magalhaes]] — Ashe Magalhaes — Founder of Hearth AI (first agentic CRM), builder-as-artist philosophy, solar car racer, NASA satellite engineer
@@ -179,7 +179,7 @@
 - [[entities/daringfireball-net]] — **URL:** https://daringfireball.net
 - [[entities/dolt]] — Version-controlled SQL database ("Git for Data"). MySQL/Postgres/SQLite-compatible with branches, merges, diffs, MCP server. By DoltHub Inc. Key infrastructure for AI agent database workflows.
 - [[entities/dario-amodei]] — **Role** | Co-founder & CEO, Anthropic |
-- [[entities/datasette-agent]] — Extensible AI assistant for Datasette/SQLite by Simon Willison (May 2026). Conversational SQL generation, chart plugins, LLM library integration. Live demo at agent.datasette.io.
+- [[entities/datasette-agent]] — Extensible AI assistant for Datasette/SQLite by Simon Willison (May 2026). 0.1a4: Jump to menu integration in Datasette 1.0a30. Conversational SQL generation, chart plugins, LLM library integration. Live demo at agent.datasette.io.
 - [[entities/david-fowler]] — David Fowler (@davidfowl) — Distinguished Engineer at Microsoft. Creator of NuGet, SignalR, ASP.NET Core, Aspire (agent-ready DevOps). Tally (AI bank tx classifier). "AI Made Us Faster. That Was the Problem" (May 2026).
 - [[entities/dax-raad]] — **X** | @thdxr |
 - [[entities/daytona-io]] — CEO: Ivan Burazin. 60ms sandboxes, 850K/day. Custom scheduler (no K8s), bare metal. RL/evals = 50% of usage. CLI > MCP philosophy (May 2026).
@@ -753,7 +753,7 @@
 - [[concepts/ai-pre-release-testing]] — AI Pre-Release Government Testing — US government framework for evaluating frontier AI models for national security risks before public release. CAISI agreements with Microsoft, Google, xAI (May 2026). Triggered by Claude Mythos cybersecurity concerns.
 - [[concepts/ai-privacy-tools]] — AI Privacy Tools
 - [[concepts/ai-observability]] — AI Observability — Monitoring and Debugging LLM Applications
-- [[concepts/ai-slop]] — AI Slop — Dan Shipper's definition: "visible sameness, repeated ad nauseam." Low-quality, homogenous AI-generated content from commoditization of model outputs. Step 3 of the After Automation feedback loop. Related to zombie-internet, slop-fork, ai-generated-issues-in-oss.
+- [[concepts/ai-slop]] — AI Slop — Low-quality AI-generated code, issues, and content. Synthesizes George Hotz's "The Eternal Sloptember" (agents as statistical mimicry producing undetectable brokenness) and Armin Ronacher's "Building Pi With Pi" (slop issues, volume crisis, local workarounds vs global invariants). Related to Dan Shipper's "visible sameness" definition, zombie-internet, ai-generated-issues-in-oss.
 - [[concepts/ai-subprime]] — AI Subprime Crisis
 - [[concepts/ai-programming-as-theory-building]] — AI Programming as Theory Building
 - [[concepts/aider-polyglot]] — Aider Polyglot — 6言語対応コーディングベンチマーク。Exercismの225問をC++/Go/Java/JS/Python/Rustでテスト。GPT-5が88%でリード。

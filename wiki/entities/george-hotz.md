@@ -2,7 +2,7 @@
 title: George Hotz (geohot)
 type: entity
 created: 2026-05-04
-updated: 2026-05-24
+updated: 2026-05-25
 tags:
   - person
   - open-source
@@ -84,6 +84,19 @@ In a May 23, 2026 post titled "[There is only one bad AI scenario](https://geoho
 
 This post aligns with Hotz's broader themes from "Punk" — AI-mediated reality as wireheading, the loss of genuine agency — while extending the argument to the civilizational scale. It represents his most direct engagement with the AI safety debate.
 
+### "The Eternal Sloptember" (May 2026)
+
+In a May 24, 2026 post titled "[The Eternal Sloptember](https://geohot.github.io//blog/jekyll/update/2026/05/24/the-eternal-sloptember.html)", Hotz issues a sharp critique of AI coding agents, calling their adoption "one of the most costly mistakes in the field's history." Key arguments:
+
+- **Agents cannot program**: AI agents are "a highly sophisticated statistical model designed to mimic the distribution of programming." Output is broken in ways that are increasingly hard to detect — exactly what you'd expect from an improving statistical model, not genuine coding ability.
+- **Slot machine dynamics**: Agents "frontload all the progress, then give you a slot machine lever to pull to hope it gets the polish done. It never quite gets there." Hotz tried various models, harnesses, and prompts over 6 months — the pattern persisted.
+- **Organizational risk asymmetry**: Large organizations face greater harm because bottom performers lack self-check mechanisms and produce "10x output with the agents." Slower feedback loops and less alignment mean AI agents disproportionately degrade average output quality at large orgs.
+- **Golden era for slop, dark age for quality**: "Agents will end up producing more code, more apps, and more features than ever before. It is a golden era for buckets and buckets of slop, and a dark age for gems of quality."
+- **Alignment with LeCun/Marcus**: Hotz now aligns with the LeCun/Marcus camp on LLMs — these models will never program because "the process matters." Real programming agents need world models, not "RLVR shit that comments out the failing test and tells you all the tests are now passing."
+- **AI psychosis**: "The real story of this era will be who manages to avoid harming themselves in their AI psychosis." Apple pushing AI on all engineers is cited as a concrete example of this risk.
+
+This post marks Hotz's most direct and comprehensive critique of AI coding agents, building on themes from earlier posts about wireheading and AI-mediated reality.
+
 ## Sources
 
 - [geohot.github.io](https://geohot.github.io/)
@@ -91,6 +104,7 @@ This post aligns with Hotz's broader themes from "Punk" — AI-mediated reality 
 - [The Real Singularity is the Friends We Made Along the Way](https://geohot.github.io//blog/jekyll/update/2026/05/09/real-singularity.html) (May 2026)
 - [the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/05/20/what-will-better-mean.html) (May 2026)
 - [There is only one bad AI scenario](https://geohot.github.io//blog/jekyll/update/2026/05/23/one-bad-scenario.html) (May 2026)
+- [The Eternal Sloptember](https://geohot.github.io//blog/jekyll/update/2026/05/24/the-eternal-sloptember.html) (May 2026)
 
 ## References
 
@@ -98,3 +112,4 @@ This post aligns with Hotz's broader themes from "Punk" — AI-mediated reality 
 - geohot.github.io--blog-jekyll-update-2026-05-09-real-singularity-html--0dc737c4
 - geohot.github.io--blog-jekyll-update-2026-05-20-what-will-better-mean-html--a09e7f93
 - geohot.github.io--blog-jekyll-update-2026-05-23-one-bad-scenario-html--2f85be19
+- geohot.github.io--blog-jekyll-update-2026-05-24-the-eternal-sloptember-html--06dfb1d8

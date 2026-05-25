@@ -1,3 +1,19 @@
+## [2026-05-25] blog | Blog ingest: enriched george-hotz, created armin-ronacher entity, ai-slop concept, datasette-agent concept
+
+### Pages
+- `entities/george-hotz.md` — Enriched with "The Eternal Sloptember" (May 2026): Hotz's critique of AI coding agents as statistical mimicry, slot machine dynamics, organizational risk asymmetry, alignment with LeCun/Marcus.
+- `entities/armin-ronacher.md` — Created. Armin Ronacher (@mitsuhiko), creator of Flask/Jinja2/Werkzeug, Earendil Pi maintainer. "Building Pi With Pi" on AI slop in open source: slop issues, volume crisis (3,145 issues/PRs, <10% merge rate), local workarounds vs global invariants.
+- `concepts/ai-slop.md` — Created. Synthesizes George Hotz's "The Eternal Sloptember" and Armin Ronacher's "Building Pi With Pi" into comprehensive concept page on AI-generated low-quality code/issues/content.
+- `concepts/datasette-agent.md` — Created. Datasette AI agent plugin v0.1a4: Jump to menu integration via Datasette 1.0a30's makeJumpSections() hook.
+
+### Raw articles
+- `raw/articles/2026-05-25_deepmind-agents-at-scale-youtube.md` — DeepMind agents at scale talk summary
+- `raw/articles/2026-05-25_callosum-heterogeneous-intelligence-youtube.md` — Callosum heterogeneous intelligence talk summary
+
+### Index updates
+- `index.md` — Updated armin-ronacher, datasette-agent, ai-slop descriptions. Page count: 2045.
+
+---
 ## [2026-05-24] wiki | Enriched cli-first-development (stub→full) + created yan5xu entity
 
 ### Pages
