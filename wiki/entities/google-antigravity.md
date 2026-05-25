@@ -1,10 +1,14 @@
 ---
 title: Google Antigravity
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-05-25
 type: entity
 tags: [entity, product, google, platform, agentic-engineering, coding-agents, ai-agents, agent-sdk, agent-framework, multi-agent, orchestration, developer-tooling, cli, infrastructure]
-sources: [https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/, https://ai.google.dev/gemini-api/docs/antigravity-agent, https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/]
+sources:
+  - https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/
+  - https://ai.google.dev/gemini-api/docs/antigravity-agent
+  - https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/
+  - raw/articles/2026-05-25_deepmind-agents-at-scale-youtube
 ---
 
 # Google Antigravity
@@ -75,6 +79,59 @@ When paired with Antigravity, Gemini 3.5 Flash demonstrated:
 - Pay-as-you-go pricing based on underlying Gemini token usage
 - Preview status — features and schemas may change
 - Unsupported: `temperature`, `top_p`, `top_k`, structured outputs, MCP tool (not yet)
+
+
+## DeepMind Internal Operations
+
+At the AI Engineer Conference (May 2026), KP Sawhney and Ian Ballantyne of Google DeepMind detailed how Antigravity is used **internally** at DeepMind — offering a rare window into production-scale agent operations.
+
+### Token Quota & Resource Management
+
+> "Google DeepMind employees have worse token quotas than paying customers. That is not a mistake."
+
+- Customers get priority access; internal teams that spike usage are contacted by 24/7 SRE teams and asked to stop
+- Quota enforcement: "Honestly right now it's kind of brute force with the quota."
+
+### Darwinian Skills Library
+
+DeepMind maintains a **large, shared library of skills** built by domain experts across the organization:
+
+- Skills compete for survival — only the most effective ones persist
+- Darwinian natural selection process: "making sure that only the best ones survive"
+- Domain experts contribute skills; usage data determines retention
+
+### Model Mixing Strategy
+
+> "Mixing and matching between models like Gemma 4 which are effectively free from a quota perspective, and then using the more advanced models for specific components of the agentic system."
+
+- [[entities/gemma-4|Gemma 4]] handles bulk/cheap work (internal GPUs/TPUs)
+- Advanced models reserved for critical reasoning components
+- Quota-efficient allocation reduces cost while maintaining quality
+
+### Code Review Automation
+
+Per-language auto-review models fine-tuned on:
+- Internal style guides
+- Good code examples from production codebases
+- Automated review for common patterns and anti-patterns
+
+### Deep Research Pipeline Evolution
+
+DeepMind's deep research pipeline is evolving from:
+1. **Current**: Passing massive context blobs between pipeline stages
+2. **Future**: Shared filesystem collaboration between pipeline components
+   > "Why not have the different parts of that pipeline collaborate in a shared file system?"
+
+### Antigravity IDE Features
+
+The internal Antigravity IDE (Visual Studio–like) includes:
+- **Built-in agent manager** — spawn multiple agents on different projects
+- **Per-agent planning system**, to-do lists, and browser interaction
+- **Scratch pad** revealing the agent's reasoning trace for debugging and intervention
+
+### Sources
+
+- [[raw/articles/2026-05-25_deepmind-agents-at-scale-youtube|How Google DeepMind Runs Agents at Scale — AI Engineer Conference (2026-05-24)]]
 
 ## Related
 

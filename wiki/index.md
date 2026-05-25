@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-25 | Total pages: 2056 | Indexed entries: 1344 | Not in index: 692 |
+> Last updated: 2026-05-25 | Total pages: 2058 | Indexed entries: 1344 | Not in index: 692 |
 
-## Entities (666 pages)
+## Entities (667 pages)
 
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -144,6 +144,7 @@
 - [[entities/brutecat-com]] — **Blog** | brutecat.com |
 - [[entities/bryan-bischof]] — **X** | @BEBischof |
 - [[entities/byterover]] — **ByteRover** is a portable, file-based memory layer for coding agents with 92-96% retrieval accuracy. Replaces vector DB with LLM-curated Markdown context tree. BYO Vietnam. Open source (Elastic 2.0).
+- [[entities/callosum]] — Callosum — heterogenous intelligence inference startup. Principle of Maximum Heterogeneity: multi-model, multi-chip routing for cost-performance. ULong: 7-12x cheaper, Video Web Arena: +18% vs GPT-5.2. £3M Aria Institute grant.
 - [[entities/caisi]] — Center for AI Standards and Innovation (CAISI) — US government hub for AI model testing within NIST/Department of Commerce. May 2026: signed pre-release testing agreements with Microsoft, Google, xAI. Evaluated DeepSeek V4 Pro. Director: Chris Fall.
 - [[entities/cat-wu]] — Head of Product at Anthropic, responsible for Claude Code and Anthropic's product development strategy.
 - [[entities/cats-with-power-tools]] — **URL:** https://blog.pixelmelt.dev (primary), https://blog.exploit.cat (secondary)
@@ -688,7 +689,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (637 pages)
+## Concepts (638 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -856,7 +857,8 @@
 - [[concepts/harness-commoditization]] — Harness Commoditization — Thesis that frontier model capability is commoditizing agent harnesses. As models become natively agentic, harness architecture ceases to be a meaningful differentiator — codebase organization becomes the bottleneck. Articulated by Amp in "The Coding Agent Is Dead" (Feb 2026).
 - [[concepts/harness-engineering]] — Harness Engineering
 - [[concepts/harness-profiles]] — Harness Profiles — model-specific tuning of agent prompts, tools, and middleware per LLM family. LangChain Deep Agents feature (Apr 2026). 10-20pt benchmark gains on tau2-bench.
-- [[concepts/human-sandwich]] — Human Sandwich Pattern — Kieran Klaassen's collaboration pattern where humans are "the bread on either end of the AI's work": humans frame tasks, AI executes, humans review/decide. Practiced at Every for coding, writing, and email via Codex, Claude Code, Cowork.
+- [[concepts/heterogeneous-intelligence]] — Heterogeneous Intelligence — paradigm of routing AI subtasks to optimal model+hardware combinations. Principle of Maximum Heterogeneity: formal proof across neuroscience/economics/ecology. Three compute eras: CPU → GPU → Heterogeneous. 7-12x cost savings demonstrated on ULong benchmark.
+- [[concepts/human-sandwich] — Human Sandwich Pattern — Kieran Klaassen's collaboration pattern where humans are "the bread on either end of the AI's work": humans frame tasks, AI executes, humans review/decide. Practiced at Every for coding, writing, and email via Codex, Claude Code, Cowork.
 - [[concepts/hornet]] — Hornet: retrieval engine purpose-built for AI agent workloads. Founded by ex-Vespa engineers (Jo Kristian Bergum). Model-agnostic, open-source, schema-first APIs, self-hosted. Addresses agent-specific query patterns: median 10-term queries (vs human 2), phrase quotes in 98% of sessions, 24 calls/session.
 - [[concepts/karpathy-loop]] — The Karpathy Loop — Autonomous Experiment Design
 - [[concepts/knowledge-shields]] — Knowledge Shields and Systems Understanding

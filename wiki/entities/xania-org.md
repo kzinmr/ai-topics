@@ -2,7 +2,7 @@
 title: Matt Godbolt
 type: entity
 created: 2026-04-09
-updated: 2026-04-10
+updated: 2026-05-25
 tags:
   - person
   - blogger
@@ -14,7 +14,8 @@ aliases:
 - compiler-explorer
 - godbolt
 - mattgodbolt
-sources: []
+sources:
+  - raw/articles/xania.org--202605-walking-the-dog--4271cbe1.md
 ---
 
 # Matt Godbolt

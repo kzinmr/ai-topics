@@ -5,6 +5,27 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md and start fresh.
 
+## [2026-05-25] dreaming | Nightly consolidation — Callosum, Heterogeneous Intelligence, DeepMind Antigravity ops
+
+### Pages Created
+- [[entities/callosum]] — Callosum: heterogeneous intelligence inference startup. Principle of Maximum Heterogeneity. ULong 7-12x cheaper, Video Web Arena +18% vs GPT-5.2.
+- [[concepts/heterogeneous-intelligence]] — Heterogeneous Intelligence: paradigm of routing AI subtasks to optimal model+hardware combinations. Three compute eras: CPU → GPU → Heterogeneous.
+
+### Pages Enriched
+- [[entities/google-antigravity]] — Added "DeepMind Internal Operations" section: token quotas, Darwinian skills library, model mixing (Gemma 4 + advanced models), code review automation, deep research pipeline evolution, Antigravity IDE features.
+- [[entities/xania-org]] — Added "Walking the Dog with Claude" section: voice-input interview-style writing technique with Claude mobile app.
+
+### Raw Sources Cited
+- raw/articles/2026-05-25_callosum-heterogeneous-intelligence-youtube.md
+- raw/articles/2026-05-25_deepmind-agents-at-scale-youtube.md
+- raw/articles/xania.org--202605-walking-the-dog--4271cbe1.md
+
+### Index Updates
+- Added 2 new index entries: entities/callosum, concepts/heterogeneous-intelligence
+- Updated section counts: Entities 666→667, Concepts 637→638, Total pages 2056→2058
+
+---
+
 ## [2026-05-25] health | Orphan page registration (20 concept pages)
 
 ### Changes
