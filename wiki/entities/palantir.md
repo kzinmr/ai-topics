@@ -194,6 +194,53 @@ Hubert argues that simply writing "better software with European values" won't d
 - **Co-founders**: Alex Karp (CEO), Peter Thiel, Stephen Cohen, Joe Lonsdale, Nathan Gettings
 - **Alex Karp Background**: PhD in philosophy from University of Frankfurt, studied critical theory (Frankfurt School) — wrote about how language legitimizes power before building a data analytics platform
 
+## Alex Karp's Philosophy: Critical Theory Meets Defense Tech
+
+Alex Karp is one of the most unusual CEOs in technology — a philosopher running a defense contractor. His intellectual background directly shapes Palantir's product strategy and corporate identity.
+
+### Frankfurt School Roots
+
+Karp studied under Jürgen Habermas at the University of Frankfurt, completing a PhD on the relationship between language, power, and legitimacy. The Frankfurt School tradition (critical theory) is fundamentally concerned with **how institutions legitimize themselves through language and systems** — a lens Karp applies to technology.
+
+Key influences visible in Palantir's approach:
+
+- **Ontology as language**: The Ontology "surfaces data in the language of the enterprise" — this is a critical theory concept (how systems of representation structure what can be said and done)
+- **Decision-centric, not data-centric**: Shift from "what is true" (data) to "what should be done" (decisions) — mirrors the Frankfurt School's focus on praxis over pure theory
+- **Governance by design**: The insistence that security and ethics must be built into the platform, not bolted on — reflects critical theory's skepticism of systems that claim neutrality
+
+### "The Technological Republic" (2025)
+
+Karp's book (co-authored) articulates a worldview that connects Palantir's mission to Western civilizational values:
+
+- **Technology as sovereignty**: Nations that cannot build and control their own AI infrastructure cede sovereignty to those that can
+- **"Bad times are good for us"**: Karp's controversial Q1 2026 earnings call statement reflects a worldview where instability (geopolitical, economic) drives demand for decision-making infrastructure — and Palantir is architected for instability
+- **Defense as moral imperative**: Unlike most Silicon Valley CEOs who distance themselves from defense work, Karp frames it as essential to preserving liberal democracy — a position that attracts both loyalty and criticism
+
+### Philosophical Tensions
+
+Karp's position creates inherent tensions that define Palantir's public identity:
+
+| Tension | Manifestation |
+|---------|---------------|
+| **Philosopher vs. CEO** | Academic critical theory background vs. running a $1.63B/quarter public company |
+| **Privacy vs. Power** | Frankfurt School's critique of surveillance vs. building the world's most powerful data integration platform for intelligence agencies |
+| **Ethics vs. Profit** | Rhetoric of "Western values" vs. contracts with controversial government agencies |
+| **Openness vs. Secrecy** | Published a book about technological governance vs. the company's historically opaque operations |
+
+### Impact on Agent Design
+
+Karp's philosophy directly influences Palantir's approach to AI agents:
+
+- **Graded autonomy**: Agents don't get power by default — they earn it. This reflects a deep skepticism of unchecked systems (critical theory's core concern)
+- **Human-in-the-loop as moral imperative**: The reviewer/approver role is not just about accuracy — it's about maintaining human moral responsibility for decisions
+- **"The Palantir Model" as ideology**: Embedding engineers in customer operations is not just a business model — Karp frames it as method of spreading a particular approach to technology governance (controlled, auditable, human-supervised)
+
+### Further Reading
+
+- Alex Karp, "The Technological Republic" (2025)
+- Superintel newsletter profile: "The Man Who Studied Power and Then Built It" (May 2026)
+- Karp's Q1 2026 earnings call transcript (investors.palantir.com)
+
 ## The Palantir Model Goes Global (May 2026)
 
 In May 2026, Palantir's two-decade-old approach to enterprise software — embedding engineers inside customer operations — was validated as the **industry standard** when both OpenAI and Anthropic announced they were replicating the model at massive scale.

@@ -90,12 +90,37 @@ This creates a virtuous cycle: **better agents → more decisions captured → r
 
 ## Deployment Patterns
 
-### Palantir AgentCamps
+### Palantir AgentCamps & AIP Bootcamps
 
-Palantir's "AgentCamps" are hands-on onboarding sessions where customer teams achieve operational AI outcomes in hours (not months). Key aspects:
-- **Hands-on-keyboards**: Teams work directly with their own data and systems
-- **Rapid prototyping**: Go from concept to working agent in a single session
-- **Trust-building**: Teams see immediate value before committing to broader deployment
+Palantir's onboarding methodology is arguably as important as its technology. **AgentCamps** (now also branded as **AIP Bootcamps**) are intensive, hands-on sessions where customer teams achieve operational AI outcomes in **hours, not months**.
+
+#### The Bootcamp Model
+
+- **Duration**: 5-day intensive (AIP Bootcamp)
+- **Format**: Customer teams work directly with their own data and systems — not toy datasets
+- **Outcome**: A working AI use case by the end of the week
+- **Conversion rate**: Reported ~75% — teams see immediate value and expand deployment
+
+#### Why It Works
+
+1. **Hands-on-keyboards, not slide decks**: Teams don't watch demos — they build. The Ontology is bootstrapped with their actual data sources.
+2. **FDE-led mentorship**: Palantir Forward Deployed Engineers guide teams through their first integrations, agent builds, and workflow deployments — transferring skills, not just delivering a product
+3. **Immediate operational value**: The first use case is chosen for impact — inventory optimization, supplier risk assessment, customer service triage. Teams leave with something their boss can see working.
+4. **Trust through experience**: The best way to convince a skeptical operations leader that AI agents are safe is to let them watch an agent stage a decision, explore its downstream effects in a scenario, and decide whether to commit — all in a controlled environment with their own data.
+5. **Compressed sales cycle**: Traditional enterprise software sales take months. Bootcamps collapse this to days by making the value self-evident.
+
+#### The AgentCamp → AIP Evolution
+
+The original AgentCamp brand focused on general Ontology onboarding. The AIP Bootcamp specifically targets the AI/agent layer — getting customers from "we have data in Foundry" to "we have agents making operational recommendations" in a week. This reflects Palantir's strategic shift: **the platform's value is increasingly measured by how fast customers get to agent-driven workflows**, not how fast they get to dashboards.
+
+#### Scalability Limits
+
+The bootcamp model is effective but **fundamentally FDE-bound** — it requires Palantir engineers on site. This creates a scaling tension:
+- More customers → more bootcamps needed → more FDEs needed
+- Palantir's top 20 customers average $93.9M/year — the model works for large accounts
+- For smaller accounts, self-serve onboarding (AI FDE, AIP Analyst) may eventually reduce FDE dependency
+
+The bootcamp model is also the template that OpenAI and Anthropic are racing to replicate (see [[concepts/ai-services-joint-ventures]]) — validating that "hands-on onboarding" is not a nice-to-have but a **core enterprise AI competency**.
 
 ### FDE (Forward Deployed Engineer) Model
 

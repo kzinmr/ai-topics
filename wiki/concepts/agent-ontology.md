@@ -122,6 +122,57 @@ The [[concepts/mcp|Model Context Protocol (MCP)]] provides tools and resources t
 
 MCP tools could be seen as a lightweight form of "Logic Binding" — the ontology provides the richer context that makes MCP tools operationally meaningful.
 
+## Global Branching (Zero-Downtime Ontology Evolution)
+
+Global Branching is Palantir's framework for safely evolving the Ontology without downtime. It applies **Git-like branching semantics** to the enterprise knowledge graph:
+
+- **Branch**: Create a sandboxed copy of the Ontology (or a subset) where schema changes, new object types, or logic updates can be developed
+- **Develop**: Make changes to the branch — add new object types, modify link types, update action definitions
+- **Test**: Validate changes against production data without affecting live operations
+- **Merge**: Promote the branch to production with zero downtime
+
+This is critical for enterprises where the Ontology is the operational backbone — you cannot take it offline for schema updates. Global Branching enables:
+
+- Multiple teams to evolve different parts of the Ontology simultaneously
+- Safe rollback if a change has unintended consequences
+- CI/CD-like pipelines for Ontology changes (test → stage → production)
+- Agent-accessible branching — agents can propose Ontology changes in branches for human review
+
+### Conceptual Parallel: ActiveGraph
+
+Global Branching has conceptual overlap with [[concepts/activegraph|ActiveGraph]] (Yohei Nakajima, 2026), which takes the idea further: an append-only event log as source of truth, with the graph as a deterministic projection. ActiveGraph also supports branching at any event, making it a potential open-source alternative for ontology versioning.
+
+## Embedded Ontology (OSDK)
+
+The **Embedded Ontology** is a lightweight version of the Ontology that runs at the edge — on IoT devices, factory floor terminals, mobile applications, and disconnected environments. It is accessed via the **Ontology SDK (OSDK)**.
+
+### Key Capabilities
+
+- **Offline-first**: Operates without continuous connectivity, syncing when connection is restored
+- **Low latency**: Decisions made at the edge don't round-trip to central servers
+- **Same semantics**: Objects, properties, links, and actions work identically to the full Ontology
+- **Decision capture**: Decisions made at the edge (e.g., a warehouse worker rerouting a shipment) flow back into the central Ontology's decision lineage
+
+### The Edge Decision Problem
+
+Without an embedded ontology, edge decisions create a **lineage gap**:
+
+> Warehouse worker reroutes shipment on a handheld scanner → decision not captured → central Ontology has no record of why inventory diverged from plan.
+
+With an embedded ontology:
+
+> Worker's handheld runs Embedded Ontology → rerouting captured as an Action with full context (which shipment, why, authorized by whom) → synced to central Ontology when connectivity returns → decision lineage complete.
+
+### OSDK for Custom Applications
+
+The Ontology SDK allows developers to build custom applications that read from and write to the Ontology programmatically. This enables:
+
+- **Mobile apps** for field workers (see Palantir's OSDK + Mobile Applications blog post)
+- **Custom UIs** beyond Workshop (Palantir's low-code application builder)
+- **External system integration** — any application can interact with the Ontology via the SDK
+
+The OSDK is part of the Ontology Toolchain, which encompasses "the entire expressivity of the Language and the power of the Engine."
+
 ## Open Questions
 
 - Can agent ontology be implemented as a **protocol** (like MCP) rather than a **platform** (like Palantir)? Or is the deep integration with operational systems inherently platform-dependent?

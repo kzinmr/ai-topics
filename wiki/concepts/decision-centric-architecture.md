@@ -88,6 +88,50 @@ Decision-centric architecture and [[concepts/harness-engineering|harness enginee
 
 Both are necessary for production AI: the harness provides the execution environment, the ontology provides the decision context. Without the ontology, agents have file access but no understanding of business decisions. Without the harness, ontology-empowered agents have no execution runtime.
 
+## Decision-Centric Security
+
+A defining characteristic of decision-centric architecture is that security is not a layer on top — it is **integrated into every decision component** (Data, Logic, Action).
+
+### The Palantir Security Model
+
+Palantir's security architecture (as described in their official docs and FY2025 10-K) operates across three spheres:
+
+| Sphere | Scope |
+|--------|-------|
+| **Infrastructure security** | Zero-trust: every component identity-gated, device-health verified, autonomously enforced via Apollo-mandated encryption, firewalls, runtime configs |
+| **Platform security** | Granular access controls on Ontology objects/properties/links, enforced for both humans and agents. Role-based, marking-based, and purpose-based policies that connect with automated lineage and auditing |
+| **Enterprise security** | Cross-platform governance: SSO integration, change management, release management, compliance frameworks |
+
+### Dynamic Policy Computation
+
+Unlike static RBAC, Palantir's security policies are **computed dynamically at runtime** for every interaction:
+
+- **Row- and column-level restrictions** on underlying datasets
+- **Attributes of user groups** (including those flowing via SSO)
+- **Security markings** that propagate across data pipelines
+- **Purpose-based constraints** — why is this data being accessed?
+
+This means the same user (or agent) might have different access depending on *why* they're querying — a capability that static "role → permission" mappings cannot express.
+
+### Agent-Specific Security
+
+For AI agents, security extends beyond data access to **tool governance**:
+
+1. **Tool invocations depend on underlying access** — an agent can only call a tool if it has access to the objects, properties, and links that tool touches
+2. **Runtime validations** — tools can contain validation logic dependent on granular submission criteria
+3. **Precise authorization grants** — explicitly dictate allowable operations, preventing privilege escalation (e.g., querying data across organizational boundaries)
+4. **Telemetry security** — agent logs are governed by the same data markings and security primitives as the underlying data
+
+### Why This Matters for Agent Architecture
+
+Decision-centric security addresses a gap in current agent frameworks:
+
+- **MCP security** is server-level — a tool is available or not. It doesn't model *this specific agent can query this specific patient record but not that one*.
+- **Sandbox security** (Docker, VMs) is compute-level — it prevents the agent from escaping, not from accessing wrong data.
+- **API-key security** grants all-or-nothing access to model endpoints.
+
+Decision-centric security provides the **fine-grained, context-aware, lineage-tracked** security model that production enterprise agents require — and it's built into the architecture from day one, not retrofitted.
+
 ## Open Questions
 
 - Can decision-centric architecture be productized as a standalone framework (like an open-source Ontology SDK), or is it inherently a platform play?

@@ -11,6 +11,8 @@ related:
   - concepts/agentic-search
   - entities/late-interaction
   - concepts/modern-retrieval-toolkit
+  - concepts/drowning-in-documents-paradox
+  - entities/embeddings
 sources:
   - raw/articles/2026-05-20_clavie-tsukuba-ir-talk-colbert-late-interaction.md
 ---
@@ -49,9 +51,13 @@ For each query token embedding, MaxSim finds the **maximum** cosine similarity a
 
 ## Why ColBERT Outperforms Single-Vector
 
+ColBERT's superiority over single-vector embeddings is not an accident of engineering — it reflects fundamental theoretical advantages. The paper **"On Strengths and Limitations of Single-Vector Embeddings"** (Archish S et al., 2026, [[entities/embeddings]]) provides the definitive account: single-vector models are limited not by dimensionality but by domain shift, catastrophic forgetting, and susceptibility to the [[concepts/drowning-in-documents-paradox]]. Multi-vector models (ColBERT-style) solve all three.
+
 ### 1. Dilution Avoidance
 
 Single-vector models compress an entire document into one vector (768–4096 dimensions). This is a form of **regression to the mean**: highly discriminative semantic units get smoothened out, losing their strong relevance/irrelevance signal. ColBERT preserves all individual token-level semantics.
+
+This dilution is the root cause of the drowning-in-documents paradox — when relevant signals are diluted into noise, increasing the corpus size drowns them out. ColBERT's MaxSim operator avoids this by scoring at the token level, achieving `G ≈ Θ(K √(D / (m log n)))` instead of single-vector's `G ≈ √D × K / √(mn)`.
 
 ### 2. Superior Out-of-Domain Generalization
 

@@ -918,6 +918,7 @@
 - [[concepts/poor-mans-continuous-learning]] — Poor Man's Continuous Learning: LLMエージェントがモデル重みを更新せずに、成功した出力・ユーザーの修正・ドメイン知識を外部ナレッジベースに蓄積して改善する設計パターン。Text-to-SQL文脈でAshpreet Bediが提唱。BQ Golden Queries、dbt Semantic Layer、LPE-SQLと同種のアプローチ。
 - [[concepts/post-training-distributional-view]] — ポストトレーニング分布論: wh (@nrehiew_) による分布論的視点からのSFT/RL/On-Policy Distillationの比較。言語モデル=系列上の分布、ポストトレーニング=分布再形成。SFT（モード追従）、RL（報酬形成）、OPD（直接分布マッチング）の質的差異。181K views。
 - [[concepts/pass-k-metric]] — pass^k: τ-benchファミリーが導入したエージェント信頼性評価指標。同一タスクk回の独立試行で全成功を要求し、一貫性を測定する。GPT-4o pass@1 ~45%でもpass^8 <25%の脆弱性を露呈。[[concepts/tau-bench|τ-bench]]実運用信頼性の基礎。
+- [[concepts/palantir-ai-fde]] — AI FDE (Foundry Decision Engine) — Palantir's data integration engine (50+ source connectors) and AI agent natural-language interface roadmap. From raw ingestion to Ontology binding. Contrasts with RAG and MCP approaches. See [[entities/palantir]].
 - [[concepts/pentagon-ai-contracts-2026]] — Pentagon signs AI deals with 8 companies (May 2026): SpaceX, OpenAI, Google, Microsoft, NVIDIA, AWS, Oracle, Reflection. Anthropic excluded over AI safety stance — under litigation. Google DeepMind UK staff 98% unionize over Pentagon contract.
 - [[concepts/petri-alignment]] — Anthropic's open-source AI safety evaluation tool. Petri 3.0 donated to Meridian Labs (May 2026) for independent stewardship. "Dish" real-system-prompt testing, Bloom behavior assessments.
 - [[concepts/peoplereadmes]] — Open-source framework by Muratcan Koylan for creating persona context systems to study how exceptional technical builders operate. Pipeline: public evidence → source map → project analysis → tacit-knowledge extraction → technical model → prompt system → eval rubric. First persona: Riley Walz.
@@ -1089,6 +1090,7 @@
 - [[concepts/agent-architecture-decomposition]] — Three-layer framework for production AI agents: Open Models (intelligence), Open Runtime (execution environment), Open Harness (orchestration). Covers Agent on bash vs Agent on Python REPL (RLM, Pydantic AI), Micro-VM interpreters (Pydantic Monty), and MCP as universal adapter for heterogeneous agents.
 - [[concepts/agentic-ai-skills]] — Agentic AI Skills Design is the discipline of writing reusable documents that teach AI systems how to approach entire categories of tasks — not what to do in one specific situation, but the process...
 - [[concepts/scaling-hypothesis]] — Gwern Branwen's formalization of the theory that scale alone drives AI capability emergence. Contrasts strong scaling hypothesis (OpenAI) vs weak scaling hypothesis (DeepMind). Covers blessings of scale, emergent agency ("It From Byte"), the pretraining thesis/last bits theory, and the hardware overhang argument.
+- [[concepts/scenario-based-simulation]] — Scenario-Based Simulation — Sandboxed decision staging pattern: fork enterprise model → stage changes → explore downstream effects → compare alternatives → human review → commit. Core pattern in Palantir Ontology, generalizable to coding agents (dry runs, feature branches). See [[entities/palantir]].
 - [[concepts/test-time-scaling]] — 推論時に追加計算を割り当てて出力品質を向上させるパラダイム。CoT→自己無撞着→Best-of-N→PRMビームサーチ→Tree-of-Thought→RL訓練型推論（o1/o3/R1）の技法階層。Snell et al. (2024) の計算最適配分。モデルパラメータ14倍のスケーリングより効果的な場合がある。GRPO/RLVRとの訓練連関。
 - [[concepts/areal]] — AReaL: Ant GroupのRLライブラリ。非同期トレーニングに特化し、interruptible rolloutsとPPO staleness対応で最大スループットを追求。DeepSpeed/Megatron対応、vLLM/SGLang推論。
 - [[concepts/simpleqa]] — SimpleQA — 事実知識のサニティチェック。4,326問の敵対的収集質問。RL学習後の知識喪失検出に重要。SimpleQA Verified（DeepMind 2025）ではトップスコア55.6%。
@@ -1313,6 +1315,8 @@
 - [[comparisons/open-source-rl-libraries-comparison]] — Open Source RL Libraries比較ポータル: TRL/Verl/OpenRLHF/RAGEN/NeMo-RL/ROLL/AReaL/slime/Verifiers/SkyRLの10ライブラリ比較。Anyscale 2025。
 - [[comparisons/open-harness-vs-agent-framework]] — Open Harness 対 Agent Framework/SDK — 投資対象としての本質的差異（2026-05-14）。**§9 Runtime-Centric vs Workflow-Centric追加**: runtime-centric family (ClaudeCode/Codex/PI/OpenClaw/Hermes) vs workflow-centric (LangGraph/PydanticAI)。PI as Runtime Substrate分析。Source: kzinmr (2026-05-15)。
 - [[comparisons/claude-managed-agents-sandbox-providers]] — Claude Managed Agents Self-Hosted Sandbox Providers — Cloudflare/Daytona/Modal/Vercel Sandboxの4プロバイダ比較。アーキテクチャ、サンドボックス技術、セキュリティ、スケール、ツーリング、価格の9次元比較 + 選択ガイド（2026-05-19）。
+- [[comparisons/palantir-platform-family]] — Palantir Platform Family — Gotham (2008, defense) vs Foundry (2016, commercial Ontology) vs Apollo (2018, continuous delivery everywhere) vs AIP (2023, LLM/agent layer). How the four platforms form an Enterprise Operating System.
+- [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors — Databricks/Snowflake/Microsoft Fabric/C3.ai. Layer-in-stack analysis, pricing comparison, when to choose each, Palantir+Databricks 2025 partnership.
 
 ## Queries (1 page)
 

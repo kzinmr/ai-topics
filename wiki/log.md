@@ -22,6 +22,47 @@ Meta-Harness is the convergence of three angles: academic search over harness co
 - https://arxiv.org/abs/2603.28052
 
 ###
+## [2026-05-25] Palantir research expansion — 4 new pages + 4 enrichments (Batch 2)
+
+### Created
+- `concepts/palantir-ai-fde.md` — Palantir's Foundry Decision Engine: data integration engine (50+ source connectors, raw ingestion philosophy, robustness principles), AI FDE roadmap (natural-language Foundry operation), comparison with RAG and MCP
+- `concepts/scenario-based-simulation.md` — Scenario staging pattern: fork → stage → explore → compare → review → commit. Palantir implementation + generalizable to coding agents (dry runs, feature branches). Sandboxed, comparable, governance-preserving.
+- `comparisons/palantir-platform-family.md` — Gotham (2008, defense) → Foundry (2016, commercial Ontology) → Apollo (2018, continuous delivery anywhere) → AIP (2023, LLM/agent layer). Architecture diagram, sub-components, revenue dynamics.
+- `comparisons/palantir-vs-competitors.md` — Palantir vs Databricks/Snowflake/Microsoft Fabric/C3.ai. 4-layer stack model, 12-dimension comparison table, pricing comparison ($1M+ vs $3K-50K/month), 2025 Databricks partnership, when-to-choose guide.
+
+### Enriched
+- `concepts/decision-centric-architecture.md` — Added "Decision-Centric Security" section: three-sphere model (Infrastructure/Platform/Enterprise), dynamic policy computation, agent-specific tool governance, contrast with MCP/sandbox/API-key security
+- `concepts/agent-ontology.md` — Added "Global Branching" (Git-like ontology versioning, ActiveGraph parallel) + "Embedded Ontology/OSDK" (edge-first, offline-first, decision lineage at the edge)
+- `concepts/enterprise-agents.md` — Replaced AgentCamps stub with full methodology deep-dive: 5-day AIP Bootcamp model, 5 success factors, ~75% conversion rate, scalability limits, AgentCamp→AIP evolution
+- `entities/palantir.md` — Added "Alex Karp's Philosophy: Critical Theory Meets Defense Tech" section: Frankfurt School roots (Habermas), Ontology-as-language, "The Technological Republic," philosophical tensions table, impact on agent design
+
+### Updated
+- `SCHEMA.md` — Added `palantir` tag to People/Orgs taxonomy
+- `index.md` — Added 4 new pages + +2 comparison entries
+- `log.md` — This entry
+
+### Research Matrix Complete
+
+```
+Palantir研究の9軸が揃った:
+
+技術アーキテクチャ系 (5):
+  1. Ontology        → concepts/decision-centric-architecture (+Security section)
+  2. Ontology Memory  → concepts/agent-ontology (+Global Branching, Embedded Ontology)
+  3. AI FDE           → concepts/palantir-ai-fde (data integration engine + agent interface)
+  4. Scenario Sim     → concepts/scenario-based-simulation (sandboxed decision staging)
+  5. Platform Family  → comparisons/palantir-platform-family (Gotham→Foundry→Apollo→AIP)
+
+製品・競争戦略系 (2):
+  6. Competitors      → comparisons/palantir-vs-competitors (vs Databricks/Snowflake/Fabric/C3.ai)
+  7. Alex Karp        → entities/palantir##alex-karps-philosophy (Critical Theory + Defense Tech)
+
+AIセキュリティ・運用系 (2):
+  8. Security         → concepts/decision-centric-architecture##decision-centric-security
+  9. AgentCamps       → concepts/enterprise-agents##palantir-agentcamps--aip-bootcamps
+```
+
+###
 ## [2026-05-25] Palantir wiki infrastructure build-out — FDE/Ontology/Government
 
 ### Created
