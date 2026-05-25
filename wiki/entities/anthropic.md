@@ -11,7 +11,7 @@ tags:
 status: complete
 description: "AI safety-focused company behind Claude. Launched Claude Managed Agents for enterprise deployment. Also released Claude Code CLI agent and Promptfoo for prompt testing."
 created: 2026-04-27
-updated: 2026-05-22
+updated: 2026-05-25
 sources: [
   "raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md",
   "https://x.com/RLanceMartin/status/2041927992986009773",
@@ -29,6 +29,7 @@ sources: [
   - raw/articles/2026-05-18_sap-anthropic-claude-business-ai-platform.md
   - raw/newsletters/2026-05-19-can-i-get-my-agents-on-the-phone.md
   - raw/articles/wheresyoured.at--anthropics-profitability-swindle--d54ac6ec.md
+  - raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md
 ]
 related: []
 ---
@@ -423,6 +424,28 @@ Combined with Claude Managed Agents' **Self-Hosted Sandboxes + MCP Tunnels** (la
 At SAP Sapphire 2026, Anthropic and SAP announced plans to embed Claude as a primary reasoning and agentic engine across SAP's AI-enabled portfolio, powering Joule and Joule agents via the [[entities/sap-business-ai-platform]]. Claude connects to the platform to coordinate tasks across SAP S/4HANA, SuccessFactors, and Ariba via MCP. Christian Klein (SAP CEO) and Daniela Amodei (Anthropic president) jointly announced the partnership.
 
 Key focus industries: public sector, healthcare, education, life sciences, utilities.
+
+## Applied AI / FDE サービス戦略 (2026年5月)
+
+### FDE (Forward Deployed Engineer) 採用
+
+Anthropic の FDE 求人要項では、以下の責務が明示されている：
+
+- **顧客システムへの深い入り込み**：顧客の本番環境に直接入り、Claude、MCPサーバー、サブエージェント、Agent Skills を活用した本番アプリケーションを構築
+- **再利用可能なパターンの抽出**：「反復可能なデプロイメントパターンを特定・体系化し、Product/Engineering チームにフィードバックする」ことが中核的責務
+
+これは、OpenAI が採用しているのと同じ **FDE → Product フィードバックループ** の哲学を Anthropic も共有していることを示している。
+
+### エンタープライズ AI サービス合弁会社
+
+Blackstone、Hellman & Friedman、Goldman Sachs とのパートナーシップにより、中堅企業向けのエンタープライズ AI サービス会社を設立：
+
+- 重要業務への Claude 組み込みを支援
+- 業界特化型のデプロイメントパターンを蓄積
+
+### 戦略的意味
+
+Anthropic は OpenAI（DeployCo）と同じ構造的転換を進めている — **API/モデルプロバイダーからデプロイメントサービスプロバイダーへの進化**。FDE モデルはフロンティアラボ全体で業界標準となりつつある。
 
 ## Related
 - [[entities/anthropic]] — The model family

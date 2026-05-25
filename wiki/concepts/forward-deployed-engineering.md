@@ -1,7 +1,7 @@
 ---
 title: "Forward Deployed Engineering (FDE)"
 created: 2026-05-18
-updated: 2026-05-22
+updated: 2026-05-25
 tags:
   - company
   - strategy
@@ -10,6 +10,7 @@ tags:
 sources:
   - raw/newsletters/2026-05-17-anthropic-pulls-away-openai-strikes-back-and-google-s-gemini-rising.md
   - raw/articles/2026-05-20_varick_forward-deployed-engineering-101.md
+  - raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md
 ---
 
 # Forward Deployed Engineering (FDE)
@@ -84,6 +85,43 @@ Varickの30日間ロードマップ:
 - **SWE**: コミュニケーション能力が最重要。作ったものをビジネス価値に翻訳して説明できること
 
 > **最重要スキル**: 「非技術系の意思決定者にAIができること・できないことを説明できるか」。これができないとFDEにはなれない。
+
+## FDE-SaaS合成：最も価値のあるポジション
+
+### 「FDE vs SaaS」という誤った二分法
+
+FDEとSaaSを対立軸として捉えるのは危険なバイナリ思考である。最も勝てるポジションは、純粋なFDEでも純粋なSaaSでもない。それは**FDEが現場で発見したパターンを、再利用可能なプロダクト・プラットフォームのプリミティブへと迅速に変換する能力**だ。
+
+### 業界リーダーが示す方向性
+
+- **OpenAI FDE求人要項**: 「実用的なパターンをツール・プレイブック・ビルディングブロックとして体系化（codify）する」
+- **Anthropic FDE求人要項**: 「再現可能なデプロイメントパターンを特定・体系化し、Product/Engineeringへフィードバックする」
+
+トップレベルのFDEとは、「個別顧客向けに何でも作れる人」ではない。**現場でしか見えない要件を発見し、それを再利用可能な抽象化へと変換できる人**である。
+
+### 最も価値の高いキャリアタイトル
+
+| タイトル | 特徴 |
+|----------|------|
+| **Forward Deployed Product Engineer** | FDEの現場感覚 + プロダクト構築の両輪 |
+| **AI Agent Platform Engineer** | エージェント基盤そのものを設計・汎用化 |
+| **Agentic Product Engineer** | 自律エージェントを製品に組み込む |
+| **Applied AI Product Engineer** | 応用AI領域でプロダクトを主導 |
+
+### 避けるべきポジション
+
+- **純粋FDE**: コンサルティング比重が高く、プロダクト構築の時間が少ない。現場のパターンをコード化しても、それが再利用される仕組みがない
+- **旧来型SaaS開発者**: 共有画面・機能を作るだけ。AIエージェント時代のパラダイムシフトに乗り遅れる
+
+### アクションプラン
+
+| 時期 | アクション |
+|------|-----------|
+| **3ヶ月** | 現職でFDE的な仕事を始める。顧客1社のワークフローを選び、Agentを構築し、効果を測定する |
+| **6ヶ月** | 2〜3社に拡大。共通パターンと差異パターンを特定し、再利用可能な抽象化の種を見つける |
+| **12ヶ月** | 決断 — 現職がFDE-プロダクト合成モデルを受け入れるなら留まる。そうでなければFDE/Applied AI側へ移る |
+
+> FDEとSaaSの境界に立つ人材が、AIエージェント時代の最も希少で価値のあるポジションである。
 
 ## Open Questions
 

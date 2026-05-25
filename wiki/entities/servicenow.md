@@ -1,7 +1,7 @@
 ---
 title: "ServiceNow"
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-25
 type: entity
 tags:
   - company
@@ -9,7 +9,7 @@ tags:
   - ai-agents
   - developer-tooling
   - automation
-sources: [raw/articles/2026-05-06_servicenow-build-agent.md, https://www.servicenow.com/]
+sources: [raw/articles/2026-05-06_servicenow-build-agent.md, https://www.servicenow.com/, raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md]
 ---
 
 # ServiceNow
@@ -42,6 +42,12 @@ At Knowledge 2026, ServiceNow launched **Build Agent in ServiceNow Studio** — 
 ## AI Agent Strategy
 
 ServiceNow positions itself as an **AI control tower** — providing governed, enterprise-grade agent deployment across IT, HR, security, and customer service workflows. The Yokohama Release introduced Agentic AI capabilities including AI Agent Studio and Now Assist Skill Kit.
+
+### AI Agent Orchestrator
+
+ServiceNowの**AI Agent Orchestrator**は、複数Agentを部門横断で協調させる「control tower」機能。個別のAgentを超えて、組織全体のAgent連携を管理・統制する役割を担う。
+
+これは[[concepts/agent-control-plane|Agent Control Plane]]の具体的事例であり、ServiceNowが単なるITSMプラットフォームから**Agent時代の統治レイヤー**へ進化していることを示す。([ソース分析](raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md))
 
 ## Related Pages
 

@@ -2,7 +2,7 @@
 title: "Google (AI/ML)"
 type: entity
 created: 2026-04-25
-updated: 2026-05-21
+updated: 2026-05-25
 tags: [company, lab, product, platform, infrastructure]
 aliases: ["Google DeepMind", "Google Research"]
 sources: [
@@ -12,7 +12,8 @@ sources: [
   raw/newsletters/2026-04-24-chatgpt-images-2-0-is-genuinely-fantastic.md,
   raw/newsletters/2026-05-03-gemini-gets-to-work-claude-s-big-pull-and-openai-unchained.md,
   raw/articles/2025-12-10_google-cloud_alphaevolve.md,
-  raw/newsletters/2026-05-20-ainews-google-i-o-2026-gemini-3-5-flash-omni-nanobanana-for-video-spark-backgrou.md
+  raw/newsletters/2026-05-20-ainews-google-i-o-2026-gemini-3-5-flash-omni-nanobanana-for-video-spark-backgrou.md,
+  raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md
 ]
 ---
 # Google (AI/ML)
@@ -227,6 +228,40 @@ Source: Superintel Google I/O 2026 newsletter (May 2026)
 ### Significance
 
 This positions Google as having re-entered the frontier model race after a period of lagging behind OpenAI and Anthropic. The combination of Gemini 3.5 Flash for performance, Omni for multimodal, Antigravity 2.0 for multi-agent orchestration, and Spark for persistent agents creates a full-stack AI platform that competes with both consumer (ChatGPT) and developer (Codex/Symphony) offerings from competitors.
+
+## Gemini Enterprise Agent Platform
+
+Googleは企業向けAgentプラットフォームとして、エージェントの構築・スケーリング・ガバナンス・最適化を包括的に提供する戦略を打ち出している。
+
+### コアコンポーネント
+
+| コンポーネント | 役割 |
+|---|---|
+| **Agent Identity** | エージェントの認証・認可・アイデンティティ管理 |
+| **Agent Registry** | エージェントの登録・発見・バージョン管理 |
+| **Agent Gateway** | エージェント間通信・APIゲートウェイ・トラフィック制御 |
+| **Simulation** | エージェントの本番前テスト・シミュレーション環境 |
+| **Evaluation** | エージェントの品質評価・パフォーマンス計測 |
+| **Observability** | エージェントの監視・ロギング・トレーシング |
+
+このコンポーネント群は、Googleを「**Agent Control Plane（エージェント制御層）**」モデルへとポジショニングするものであり、単なるモデル提供者からエンタープライズAgentインフラ全体を掌握するプラットフォーマーへの進化を示している。
+
+### FDE（Forward Deployed Engineer）戦略
+
+Google Cloudは**Forward Deployed Engineers（FDE）**を活用し、システムインテグレーター（SI）と連携しながら、エンタープライズ顧客の深い技術的課題を解決するアプローチを取っている。
+
+- FDEはSIとパートナーシップを組み、顧客固有のニーズに対応
+- 単なるSaaS提供ではなく、現場密着型のエンジニアリングサービスを併用
+- これにより、汎用プラットフォームではカバーしきれないエンタープライズの個別要件に対応
+
+### 戦略的ポジション
+
+Googleは以下の**二正面戦略**を展開している：
+
+1. **Agentガバナンス層の構築**: Agent Identity、Registry、Gatewayなどを通じて、企業がエージェントを安全に管理・運用するためのコントロールプレーンを提供
+2. **FDEによる現場密着サービス**: SIとの連携を通じて、企業固有の課題に対する深い技術支援を提供
+
+この「プラットフォーム＋FDE」の組み合わせは、**OpenAI**や**Anthropic**と同様のデュアルアプローチであり、モデル性能競争からエンタープライズAgent運用インフラの覇権争いへと競争軸がシフトしていることを示している。
 
 ## Relationships
 - [[concepts/gemini]] — Google's multimodal model family (detailed entity)

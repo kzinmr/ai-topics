@@ -1,3 +1,26 @@
+## [2026-05-25] ingest | SaaS-FDE-AI Agent時代の構造分析（外部分析取り込み）
+
+### Created
+- `concepts/saas-agent-era.md` — AI Agent時代のSaaS構造転換。機能配布プラットフォームからAgent運用OSへのレイヤー変化、危険なSaaSと強いSaaSの分類
+- `concepts/agent-control-plane.md` — Agent統治・運用インフラ。Agent Registry、Identity、権限、監査、評価を含む13コアコンポーネント
+- `concepts/tenant-agent-pack.md` — コアコード分岐せずに顧客別Agent動作を運用アーティファクトで管理する設計パターン
+- `concepts/outcome-based-pricing.md` — AI Agent向け成果課金モデルへの転換
+
+### Enriched
+- `concepts/forward-deployed-engineering.md` — FDE-SaaS合成セクション追加（境界ポジションのキャリア戦略）
+- `entities/openai-deployment-company.md` — FDE実務セクション追加（東京FDEポジション詳細）
+- `entities/anthropic.md` — Applied AI / FDEサービス戦略セクション追加
+- `entities/google.md` — Gemini Enterprise Agent Platformセクション追加
+- `entities/servicenow.md` — AI Agent Orchestrator情報追加
+
+### SCHEMA additions
+- Tags: `agent-platform`, `pricing`, `business-model`, `agent-infrastructure`, `control-plane`, `multi-tenancy`, `audit`
+
+### Source
+- `raw/articles/2026-05-25_saas-fde-ai-agent-era_career-strategy.md`（19の情報源参照を含む外部分析）
+
+---
+
 ## [2026-05-27] every.to / Dan Shipper — Agent-Native Architecture research
 
 ### Created

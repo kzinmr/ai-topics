@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2035 | Indexed entries: 1305 | Not in index: 714 |
+> Last updated: 2026-05-27 | Total pages: 2039 | Indexed entries: 1309 | Not in index: 710 |
 
 ## Entities (660 pages)
 
@@ -682,7 +682,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1327 pages)
+## Concepts (1331 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -690,6 +690,7 @@
 - [[concepts/activitypub]] — ActivityPub — W3C decentralized social networking protocol (2018). Mastodon, Threads, PeerTube. Used for federated AI agent communication
 - [[concepts/adversarial-interoperability]] — Adversarial Interoperability — Theory and practice of interoperating with platforms against their wishes. Cory Doctorow's framework for competitive tech policy
 - [[concepts/after-automation]] — After Automation Paradox — Dan Shipper's thesis that more automation creates more expert human work, not less. 5-step feedback loop: commoditization → abundance → sameness → demand for difference → demand for experts. Includes the Human Sandwich pattern, Zeno's Paradox of AI benchmarks, and the concept of slop as "visible sameness."
+- [[concepts/agent-control-plane]] — Agent Control Plane: エンタープライズ規模でAI Agentを管理する統治・運用インフラ。Agent Registry、Identity、権限管理、実行ログ、コスト管理、評価、監査、ロールバックを含む。Google Gemini Enterprise Agent PlatformやServiceNow Orchestratorが具体例。
 - [[concepts/agent-documentation]] — Agent Documentation — Writing documentation optimized for AI coding agents: structured specs, clear interfaces, docstrings as semantic contracts
 - [[concepts/agent-distillation]] — Agent Distillation — Distilling entire agent workflows (multi-step reasoning, tool use) into model weights for ~100x cheaper inference.
 - [[concepts/agent-executor]] — Agent Executor — Google's open-source distributed agent runtime. Durable execution, secure sandbox isolation, trajectory branching, connection recovery. May 2026.
@@ -870,6 +871,7 @@
 - [[concepts/on-policy-self-distillation]] — On-Policy Self-Distillation (OPSD) — 同一モデルがstudent/teacherを兼ねる自己蒸留。教師は正解ラベルをprivileged contextとして参照しJSD_βでtoken-level監視。GRPOの1/64のtokenコストで同等以上の推論性能（Siyan Zhao, UCLA/Meta, 2026）。SDARの基盤技術。
 - [[concepts/organizational-moat]] — 組織モート: Jaya Gupta (Foundation Capital) が提唱。AI時代において製品・コード・カテゴリはすべて模倣可能であり、会社の「形」（採用・権力分配・ステータス階層）だけが最後の競争優位になると主張。5つの構造的検証テスト。3.2M views。
 - [[concepts/orthrus-parallel-generation]] — Orthrus — Dual-architecture Transformer: frozen AR backbone + trainable diffusion head over shared KV cache. Up to 7.8× speedup, O(1) KV-cache overhead, 16% trainable params, lossless output guarantee.
+- [[concepts/outcome-based-pricing]] — AI Agent向けアウトカムベース価格モデル。席課金から成果課金（解決件数・完了ワークフロー・削減時間）への転換。Zendesk Outcome-Based Pricing、Salesforce Agentforce Flex Creditsが先駆的事例。
 - [[concepts/proof-of-useful-work]] — Proof of Useful Work (PoUW): blockchain consensus using AI inference instead of hash puzzles. Pearl Network + Together AI partnership (May 2026).
 - [[concepts/predictive-v-information]] — Predictive $\mathcal{V}$-Information（予測的V-情報）：観測者の計算制約を考慮したShannon情報理論の変分拡張。DPI違反、高次元でのPAC推定保証、構造学習・公平表現学習への応用（Xu et al., ICLR 2020）。
 - [[concepts/probabilistic-engineering]] — 確率的エンジニアリング: Tim Davis (Modular) が提唱。AIエージェントによるコード生成が支配的になる中、コードベースの正当性が「知っている」から「信じている」に変わるパラダイムシフト。生成は安価だが検証は高価。24-7従業員、役割分裂、Jevonsの逆説のコード応用を含む。
@@ -1036,6 +1038,7 @@
 - [[concepts/rl-harness-lifecycle]] — RL-Harness Lifecycle
 - [[concepts/rlm-recursive-language-models]] — RLM (Recursive Language Models)
 - [[concepts/rlvr]] — RLVR (Reinforcement Learning with Verifiable Rewards): 決定論的検証器からの外部報酬によるRL訓練パラダイム。GRPOと組み合わせて報酬モデルもクリティックモデルも排除。o1→o3で10x RL compute。ART·E ($80でo3超え)。Tülu 3で命名、DeepSeek-R1で普及。
+- [[concepts/saas-agent-era]] — AI Agent時代のSaaS構造転換。機能配布プラットフォームからAgent運用OSへ。UIのthin化、カスタマイズのアーティファクト分離、マルチテナンシーのAgent次元への拡張、価値単位の成果主義への移行。危険なSaaSと強いSaaSの分類を含む。
 - [[concepts/sana-vm]] — SANA-WM — NVIDIAの2.6Bパラメータオープンソース世界モデル。単一GPUで60秒720p動画生成。Gated DeltaNet + Softmaxハイブリッド。Apache 2.0。
 - [[concepts/schedulefree-plus]] — ScheduleFree+ — Meta FAIR training method (May 2026). LR-free + schedule-free LLM training via iterate averaging + Polyak step size. 31% training time reduction at 1000 tokens/param. Outperforms WSD schedules.
 - [[concepts/seirenes]] — Self-play RL framework using adversarial distractions to harden LLM reasoning robustness (arXiv May 2026)
@@ -1054,6 +1057,7 @@
 - [[concepts/subquadratic-attention]] — Subquadratic Attention — Attention mechanisms scaling sub-quadratically (better than O(n²)). Mamba, RWKV, Hyena, and SubQ's first commercial attempt (12M context, $29M seed). Open questions about frontier-scale quality.
 - [[concepts/swe-bench]] — SWE-bench & SWE-bench Verified — Standardized benchmark for evaluating coding agents on real-world software engineering tasks from GitHub issues.
 - [[concepts/swe-bench-agent-scaffolding]] — Claude 3.5 SonnetがSWE-bench Verified 49%達成時のエージェント設計。哲学は「可能な限りモデルに制御を委ね、scaffoldingを最小限に」。Bash Tool + Edit Tool + 最小限プロンプト。同一モデル×scaffolding最適化の重要性を実証。
+- [[concepts/tenant-agent-pack]] — Tenant Agent Pack: コアコードを分岐せずに、顧客ごとのAI Agentの振る舞いを運用アーティファクト（メモリ、スキル、権限ポリシー、評価セット、承認条件、コスト上限）として管理する設計パターン。FDEが現場で発見した要求を符号化する単位。
 - [[concepts/tool-use-tax]] — Performance degradation in LLM agents caused by tool-calling protocol overhead. In noisy environments, native CoT can outperform tool-augmented reasoning. G-STEP partial mitigation.
 - [[concepts/speech-audio-asr-tts-voice]] — Speech, Audio, ASR, TTS, Voice — Speech recognition, audio processing, text-to-speech, and voice AI technologies.
 - [[concepts/tau-bench]] — τ-bench: Sierra AI ResearchのAIエージェント評価ベンチマークスイート。複数ターン対話・ドメインポリシー遵守・pass^k信頼性の3軸で評価。τ-bench（2024/航空・小売）→τ²-bench（2025/Telecomデュアルコントロール）→τ³-Bench（2026/τ-Knowledge+τ-Voice）へ進化。GPT-4o<50%、pass^8<25%、音声エージェント26-38%の現実を定量化。業界標準のデファクト評価基盤。
