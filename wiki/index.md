@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-27 | Total pages: 2039 | Indexed entries: 1309 | Not in index: 710 |
+> Last updated: 2026-05-27 | Total pages: 2042 | Indexed entries: 1312 | Not in index: 710 |
 
-## Entities (660 pages)
+## Entities (662 pages)
 
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -424,6 +424,7 @@
 - [[entities/pluralistic-net]] — **Blog** | pluralistic.net |
 - [[entities/pratik-bhavsar]] — **X** | @ptkbhv |
 - [[entities/project-mariner]] — Google's autonomous web browsing AI agent (Chrome extension). Shut down in May 2026 due to poor performance and high costs. See: [[concepts/google-project-mariner-shutdown]]
+- [[entities/promptfoo]] — Promptfoo — オープンソースのLLM/エージェント評価フレームワーク。OpenAI Agents SDK評価をネイティブサポート。Macro Evals Cookbookでlower-level eval層として使用。
 - [[entities/qwen3-6-plus]] — Alibabaのエージェント指向言語モデル。実世界の自律的ワークフローを対象としている。
 - [[entities/qwen-3-7-max]] — Alibabaの最新エージェント推論モデル（2026-05-20）。1Mトークンコンテキスト、35時間自律カーネル最適化（1,158ツール呼び出し、10.1×高速化）。AA Index #5、Terminal Bench 2.0 69.7。Environment Scaling訓練。クローズドウェイト。
 - [[entities/rachelbythebay-com]] — **Blog** | rachelbythebay.com/w |
@@ -477,6 +478,7 @@
 - [[entities/simon-willison]] — Django co-creator, open-source advocate, and leading voice in AI-assisted software development. Founder of Datasette and prolific blogger at simonwillison.net.
 - [[entities/simon-last]] — Product/engineering leader at Notion. Led Custom Agents through 4-5 rebuilds. Software factory advocate. CLI over MCP.
 - [[entities/simone-salis]] — **URL:** https://simone.org
+- [[entities/slalom]] — Slalom — グローバルビジネス・テクノロジーコンサルティング企業。OpenAIとのパートナーシップでMacro Evals for Agentic Systemsを共同開発。
 - [[entities/skyfall-dev]] — **URL:** https://skyfall.dev
 - [[entities/snyk]] — Snyk — developer security platform. Integrated Anthropic Claude into AI Security Platform (May 2026) for vulnerability discovery and automated remediation.
 - [[entities/softwaredoug]] — Doug Turnbull (softwaredoug) — Search and relevance engineering expert, Principal Engineer at Daydream. Co-author of "Relevant Search" and "AI-Powered Search". Creator of Cheat at Search Essentials, Elasticsearch LTR plugin.
@@ -682,7 +684,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (1331 pages)
+## Concepts (1332 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -844,6 +846,7 @@
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
 - [[concepts/local-first-software]] — Local-First Software
 - [[concepts/mastra-acp-agents]] — Mastra ACP Agents — ACP互換コーディングエージェントをMastraツール/サブエージェントとして実行。スーパーバイザー委任・ワークフローステップ対応。@mastra/acp@0.1.0 (May 2026)。
+- [[concepts/macro-evals-for-agentic-systems]] — Macro Evals for Agentic Systems — マルチエージェントシステムの集団レベル行動パターン発見手法。Lower-level evals → BERTopicクラスタリング → AgentTrace診断。OpenAI × Slalom (May 2026)。
 - [[concepts/mandate-equinox]] — Mandate Equinox — OpenAIとAnthropicが約6ヶ月周期で優位性を交代するコーディングエージェント市場の競合サイクル概念。DanB（@irl_danB）が提唱。
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
 - [[concepts/mismeasure-of-open-source]] — The Mismeasure of Open Source — Critical analysis of how "open source" is defined and measured in AI/ML.

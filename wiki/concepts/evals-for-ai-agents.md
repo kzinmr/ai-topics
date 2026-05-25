@@ -20,6 +20,7 @@ related:
   - swe-bench
   - ai-resistant-evaluations
   - infrastructure-noise-agent-evals
+  - macro-evals-for-agentic-systems
 ---
 
 # Evals for AI Agents
@@ -97,3 +98,4 @@ Anthropicによる、AIエージェント評価の体系的ガイド。「評価
 - [[concepts/swe-bench]] — SWE-bench coding benchmark
 - [[concepts/ai-resistant-evaluations]] — AI-resistant evaluation design
 - [[concepts/infrastructure-noise-agent-evals]] — Infrastructure noise in evals
+- [[concepts/macro-evals-for-agentic-systems]] — Macro evals: population-level behavior pattern discovery (OpenAI × Slalom)

@@ -1,3 +1,21 @@
+## [2026-05-25] ingest | OpenAI Cookbook: Macro Evals for Agentic Systems
+
+### Created
+- `concepts/macro-evals-for-agentic-systems.md` — マルチエージェントシステムの集団レベル行動パターン発見手法。Lower-level evals → BERTopicクラスタリング → AgentTrace診断。OpenAI × Slalom。
+- `entities/promptfoo.md` — オープンソースLLM/エージェント評価フレームワーク（stub）
+- `entities/slalom.md` — グローバルビジネス・テクノロジーコンサルティング企業（stub）
+
+### Enriched
+- `concepts/evals-for-ai-agents.md` — macro-evals-for-agentic-systems へのクロスリファレンス追加
+
+### Raw
+- `raw/articles/2026-05-19_openai_macro-evals-for-agentic-systems.md`
+
+### Tags
+- SCHEMA.md: `trace-analysis`, `bertopic`, `clustering` (Techniques), `promptfoo` (Products) 追加
+
+---
+
 ## [2026-05-25] blog | FDEかSaaSか、ではない——AI Agent時代に最も価値のあるポジションはその境界にある
 
 ### Blog post
