@@ -5,6 +5,21 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md and start fresh.
 
+## [2026-05-25] ingest | Magnifica Humanitas — Vatican AI Encyclical + Chris Olah Vatican remarks
+
+### Pages Created
+- entities/chris-olah.md: Chris Olah (@ch402) — Anthropic co-founder, mechanistic interpretability pioneer (DeepDream, Circuits, Transformer Circuits). TIME100 AI 2024. Spoke at Vatican for Magnifica Humanitas encyclical presentation (May 2026).
+- concepts/magnifica-humanitas.md: "Magnifica Humanitas" — Pope Leo XIV's 2026 encyclical "On Safeguarding the Human Person in the Time of AI." First papal document dedicated to AI. Babel vs. Jerusalem framework. Chris Olah named three questions for the Church: duty to global poor, human flourishing, nature of AI models. Revealed Anthropic finds "internal states that functionally mirror joy, satisfaction, fear, grief, and unease" in AI models.
+
+### Raw Sources Added
+- raw/articles/2026-05-25_chris-olah_magnifica-humanitas-remarks.md: Full X Article — Chris Olah's remarks at Vatican presentation
+- raw/articles/2026-05-15_vatican_magnifica-humanitas-encyclical.md: Detailed summary of the full encyclical text
+
+### Key Connections
+- Chris Olah → Anthropic (entity page TBD), mechanistic interpretability, AI safety
+- Magnifica Humanitas → AI ethics, AI governance, labor displacement, autonomous weapons prohibition
+- Cross-links: chris-olah ↔ magnifica-humanitas, both → ai-safety, ai-governance concepts
+
 ## [2026-05-25] ingest | arXiv 2602.05400 — OPUS: Optimizer-induced data selection for LLM pre-training
 
 ### Pages Created

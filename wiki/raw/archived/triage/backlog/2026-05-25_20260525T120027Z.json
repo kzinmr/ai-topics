@@ -1,0 +1,66 @@
+{
+  "checkpoint_run_id": "20260525T120027Z",
+  "summary_ja": "raw-backlog-ingest 5件処理。Ryan Lopopolo/Substack記事3本は同一post_idの別バリアントURLで既にアーカイブ済みのためskip。Simon Tathamのエラーメッセージ解説記事はAI非関連でskip。Meditations on Molochは既にwikiに取り込み済み。5件とも追加のwikiアクション不要。",
+  "decisions": [
+    {
+      "item_id": "substack.com--app-link-post--4ef26801",
+      "source": "backlog",
+      "source_name": "Frontier Models / Latent Space",
+      "title": "Extreme Harness Engineering for Token Billionaires: 1M LOC, 1B toks/day, 0% human code, 0% human review - Ryan Lopopolo, OpenAI Frontier & Symphony",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193478192&utm_source=substack&utm_medium=email&utm_content=share",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--4ef26801.md",
+      "recommended_action": "skip",
+      "reason_ja": "同一post_id=193478192のSubstack追跡URL別バリアント（email-share）。04:00バッチで既にアーカイブ済。Ryan Lopopoloのpodcastトランスクリプトは、entities/ryan-lopopolo.md（2026-05-22更新）、entities/ryan-lopopolo--writings.md、entities/ryan-lopopolo--core-ideas.md、concepts/openai-symphony.mdに既に豊富な内容で取り込み済み。新規のwikiギャップなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Podcast transcript. Ryan Lopopolo discusses OpenAI Frontier team's 5-month zero human-written code experiment. 1M LOC codebase, 0% manual coding. Symphony orchestration system, Codex CLI usage, agent-first development practices. ~1B tokens/day consumption."
+    },
+    {
+      "item_id": "substack.com--app-link-post--b667a73e",
+      "source": "backlog",
+      "source_name": "Frontier Models / Latent Space",
+      "title": "Extreme Harness Engineering for Token Billionaires (podcast-email variant)",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193478192&utm_source=podcast-email&play_audio=true",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--b667a73e.md",
+      "recommended_action": "skip",
+      "reason_ja": "同一post_id=193478192のSubstack追跡URL別バリアント（podcast-email）。既にwikiに取り込み済み。本文確認済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Same content, podcast-email variant with play button."
+    },
+    {
+      "item_id": "substack.com--app-link-post--4e59bb76",
+      "source": "backlog",
+      "source_name": "Frontier Models / Latent Space",
+      "title": "Extreme Harness Engineering for Token Billionaires (email-post-title variant)",
+      "url": "https://substack.com/app-link/post?publication_id=1084089&post_id=193478192&utm_source=post-email-title&utm_campaign=email-post-title",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/substack.com--app-link-post--4e59bb76.md",
+      "recommended_action": "skip",
+      "reason_ja": "同一post_id=193478192のSubstack追跡URL別バリアント（email-post-title）。既にwikiに取り込み済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Same content, email-post-title variant."
+    },
+    {
+      "item_id": "chiark.greenend.org.uk--sgtatham-quasiblog-errmsg--930bc032",
+      "source": "backlog",
+      "source_name": "Simon Tatham (chiark.greenend.org.uk)",
+      "title": "How to read error messages",
+      "url": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/errmsg/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/chiark.greenend.org.uk--sgtatham-quasiblog-errmsg--930bc032.md",
+      "recommended_action": "skip",
+      "reason_ja": "AI非関連。Simon Tathamによるエラーメッセージの読み方・デバッグスキルに関する一般的な技術ブログ記事。AIエージェント・LLM・コーディングエージェントとの関連性なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "General debugging skills article about extracting information from error messages. Covers Unix segfaults, compiler errors, network errors. No AI/LLM relevance."
+    },
+    {
+      "item_id": "2014-07-30_slatestarcodex-meditations-on-moloch.md",
+      "source": "backlog",
+      "source_name": "Slate Star Codex",
+      "title": "Meditations On Moloch",
+      "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2014-07-30_slatestarcodex-meditations-on-moloch.md",
+      "recommended_action": "skip",
+      "reason_ja": "AI安全性の重要文献だが既にwikiに取り込み済み。concepts/moloch-multipolar-trap.md（2026-05-08作成）がScott AlexanderのMolochメタファーを詳細に解説しており、このraw記事も既にsourcesに含まれている。新規作成・更新の必要なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Scott Alexander's 2014 classic essay on coordination failure and multipolar traps. Uses Moloch metaphor from Ginsberg's Howl. 14 examples including prisoner's dilemma, arms races, capitalism. AI safety context: superintelligence race as ultimate Moloch dynamic."
+    }
+  ]
+}

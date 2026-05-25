@@ -155,6 +155,7 @@
 - [[entities/chipro]] — **X** | @chipro |
 - [[entities/chris-tate]] — **X/Twitter** | @ctatedev |
 - [[entities/chris-hayduk]] — Chris Hayduk — FDE at OpenAI (Life Sciences), cross-disciplinary AI writer, agent loops and agentic AI thought leader. Author of "A Tale of Two Futures."
+- [[entities/chris-olah]] — Chris Olah (@ch402) — Anthropic co-founder, mechanistic interpretability pioneer. DeepDream, Circuits/Transformer Circuits research, TIME100 AI 2024. Spoke at Vatican for Magnifica Humanitas encyclical (May 2026).
 - [[entities/claude-code]] — AnthropicのAIコーディングエージェント。CLI、デスクトップアプリ、VS Code/JetBrains拡張、Web、iOS、Slackマルチサーフェスで動作。Boris Chernyによって開発され、2025年7月にAnthropicからOpenAIへ移管された。
 - [[entities/claude-design]] — Anthropic Labs product for collaborative visual design, powered by Claude Opus 4.7's vision model. Released April 17, 2026 in research preview.
 - [[entities/claude-mythos]] — Anthropic's next-generation model, developed after . Withheld from public release due to safety concerns regarding vulnerability exploitation capabilities.
@@ -851,6 +852,7 @@
 - [[concepts/llm-patterns-eugene-yan]] — LLM Patterns (Eugene Yan)
 - [[concepts/local-first-software]] — Local-First Software
 - [[concepts/mastra-acp-agents]] — Mastra ACP Agents — ACP互換コーディングエージェントをMastraツール/サブエージェントとして実行。スーパーバイザー委任・ワークフローステップ対応。@mastra/acp@0.1.0 (May 2026)。
+- [[concepts/magnifica-humanitas]] — Magnifica Humanitas — Pope Leo XIV's 2026 encyclical "On Safeguarding the Human Person in the Time of AI." First papal document dedicated to AI. Chris Olah (Anthropic) spoke at Vatican presentation.
 - [[concepts/macro-evals-for-agentic-systems]] — Macro Evals for Agentic Systems — マルチエージェントシステムの集団レベル行動パターン発見手法。Lower-level evals → BERTopicクラスタリング → AgentTrace診断。OpenAI × Slalom (May 2026)。
 - [[concepts/mandate-equinox]] — Mandate Equinox — OpenAIとAnthropicが約6ヶ月周期で優位性を交代するコーディングエージェント市場の競合サイクル概念。DanB（@irl_danB）が提唱。
 - [[concepts/mismanaged-geniuses-hypothesis]] — The Mismanaged Geniuses Hypothesis (MGH)
