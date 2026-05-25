@@ -282,7 +282,8 @@
     272|- [[entities/xeiaso-net]] — Xe Iaso is an infrastructure humanist — someone who thinks deeply about the social and economic structures that underpin the internet, and builds tools to protect the small, independent web from the f
     273|- [[xjdr]] — Jeff Rose (known online as xjdr) is a systems developer, AI/ML researcher, and infrastructure engineer with a career spanning high-performance distributed systems, operating system design, and cutting
     274|- [[yacine-mahdid]] — Yacine Mahdid is a software engineer and computational neuroscience researcher based in Ottawa, Canada. He works at a Canadian startup and has previously been affiliated with McGill University (Comput
-    275|- [[entities/yann-lecun]] — フランス系アメリカ人コンピュータサイエンティスト。CNNの発明者、2018年チューリング賞受賞者。Meta元チーフAIサイエンティスト、NYU教授。
-    276|- [[zach-mueller]] — Zach Mueller is one of the most authoritative voices in distributed deep learning training within the open-source AI community. As the Technical Lead for Hugging Face Accelerate, he maintains the libr
-    277|- [[zakirullin]] — Artem Zakirullin — Software Architect, author of "Cognitive load is what matters" (12K+ GitHub stars), a framework on minimizing cognitive complexity in software design
-    278|- [[zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.
+    275|- [[entities/yan5xu]] — AI researcher and former engineer at Manus AI and Monica. Analyzed agent-friendly CLI design using GitHub CLI as case study. Self-described as "AI wild researcher." ~15.7K X followers.
+    276|- [[entities/yann-lecun]] — フランス系アメリカ人コンピュータサイエンティスト。CNNの発明者、2018年チューリング賞受賞者。Meta元チーフAIサイエンティスト、NYU教授。
+    277|- [[zach-mueller]] — Zach Mueller is one of the most authoritative voices in distributed deep learning training within the open-source AI community. As the Technical Lead for Hugging Face Accelerate, he maintains the libr
+    278|- [[zakirullin]] — Artem Zakirullin — Software Architect, author of "Cognitive load is what matters" (12K+ GitHub stars), a framework on minimizing cognitive complexity in software design
+    279|- [[zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.

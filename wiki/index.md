@@ -545,6 +545,7 @@
 - [[entities/xjdr]] — xjdr (@_xjdr) — AI researcher, founder at Noumena Network. Creator of entropix (entropy-based LLM sampling, 3.4K ⭐) and primary architect of nmoe (B200-first MoE training, RDEP). JAX partisan. "high taste ai sommelier."
 - [[entities/xpeng]] — Chinese electric vehicle manufacturer with integrated robotics and flying vehicle divisions. Builds cars, robots, and flying vehicles on a single AI-powered platform.
 - [[entities/yacine-mahdid]] — **URL:** https://yacine.ca/
+- [[entities/yan5xu]] — AI researcher and former engineer at Manus AI and Monica. Analyzed agent-friendly CLI design using GitHub CLI as case study. Self-described as "AI wild researcher." ~15.7K X followers.
 - [[entities/yann-lecun]] — **フルネーム** | Yann André LeCun |
 - [[entities/yeachan-heo]] — Creator of **Oh-My-Codex (OmX)** workflow layer for Codex CLI and **Oh-My-Claudecode (OMC)**. Algorithmic trader in Seoul. Primary collaborator on **[[concepts/claw-code]]** Rust implementation.
 - [[entities/yohei-nakajima]] — Creator of BabyAGI (first popular open-source autonomous agent, 20k+ GitHub stars, 70+ citations). General Partner at Untapped Capital. Three-category agent taxonomy (hand-crafted/specialized/general), BabyAGI evolutionary series (OG→Bee→Cat→2→2o→3), three-layer memory architecture (event log→knowledge graph→hierarchical summaries), self-improving agents synthesis (NeurIPS 2025 review), and "The State of Statefulness in AI Agents" (May 2026).
@@ -784,6 +785,7 @@
 - [[concepts/claude-mythos-glasswing]] — Claude Mythos & Project Glasswing
 - [[concepts/claude-md-rules]] — Karpathy's CLAUDE.md behavioral guidelines for AI coding agents (4→12 rules, 41%→3% mistake rate). 120K+ GitHub stars. Most-starred single-file repo of 2026.
 - [[concepts/claude-opus-4-7]] — Claude Opus 4.7: AnthropicのフロンティアLLM（2026年4月リリース）
+- [[concepts/cli-first-development]] — CLI-First Development: designing command-line interfaces with AI coding agents as first-class users. Resource/command layer split, --json/--jq pre-context trimming, semantic defaults, consistent flags. Case study: GitHub CLI (gh). Analyzed by [[entities/yan5xu]].
 - [[concepts/colbert]] — ColBERT (Late Interaction Retrieval): neural IR architecture with MaxSim token-level scoring. Outperforms single-vector models with 1/60th the parameters on agentic search (BrowseComp-Plus), superior OOD generalization (ViDoRe), and order-of-magnitude data efficiency. Key tradeoffs: 32x storage, two-step retrieval pipeline.
 - [[concepts/compound-engineering-every]] — Compound Engineering (Every) — Dan Shipper/Every framework: AI-native development where existing components are orchestrated rather than rebuilt. Single-person teams ship multi-component products. Open-source compound-engineering-plugin (14K+ stars). See [[concepts/agent-native-architecture]] and [[concepts/folder-is-the-agent]].
 - [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling

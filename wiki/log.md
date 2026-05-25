@@ -1,3 +1,18 @@
+## [2026-05-24] wiki | Enriched cli-first-development (stub→full) + created yan5xu entity
+
+### Pages
+- `concepts/cli-first-development.md` — Enriched from stub. Agent-friendly CLI design principles from yan5xu's gh CLI analysis: resource/command layer split, --json/--jq pre-context trimming, semantic defaults, consistent flags, non-interactive mode.
+- `entities/yan5xu.md` — New entity. AI researcher (ex-Manus AI, ex-Monica), author of agent-friendly CLI design analysis. ~15.7K X followers.
+
+### Raw articles
+- `raw/articles/2026-05-23_yan5xu_agent-friendly-cli-design.md` — X Article: "从 github cli 学习如何设计 agent friendly cli"
+
+### Index updates
+- `index.md` — Added concept entry + entity entry
+- `entities/_index.md` — Added yan5xu (line 275/289)
+
+---
+
 ## [2026-05-25] blog | Agent Control Plane——13コンポーネントの技術アーキテクチャ
 
 ### Blog post
