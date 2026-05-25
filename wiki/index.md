@@ -92,7 +92,7 @@
 - [[entities/agi-bot]] — Chinese humanoid robot manufacturer. Second-largest Chinese humanoid robot seller after Unitree.
 - [[entities/agibot-10000-units]] — Real-world demand for humanoid robots accelerates as AGIBot ships 10,000 units.
 - [[entities/ai-engineer-youtube]] — AI Engineer YouTubeチャンネル (@aiDotEngineer) — 466K登録者、700+ talks。AI Engineerカンファレンスシリーズの公式チャンネル。エージェント設計、AIコーディング、インフラ、フロンティアモデル。RSS監視対象。
-- [[entities/akira-realmcore]] — **X** | @realmcore_ |
+- [[entities/akira-realmcore]] — **X** | @realmcore_ | Random Labs co-founder, creator of Slate (swarm-native coding agent, YC S24), Thread Weaving architecture, RLM for coding.
 - [[entities/akshay-pachaar]] — AI/ML educator, co-founder of DailyDoseOfDS, 270K X followers. Hermes Agent masterclass (1.3M impressions), "The Anatomy of an Agent Harness" author
 - [[entities/alec-radford]] — **Role** | AI Researcher (former OpenAI); Advisor, Thinking Machines Lab |
 - [[entities/alex-banks]] — **Name** | Alex Banks |
@@ -250,7 +250,7 @@
 - [[entities/geoffreylitt-com]] — **URL:** https://geoffreylitt.com
 - [[entities/geohot-github-io]] — **Projects:** comma.ai (Founder/CEO), tinygrad (Creator), tiny corp (Founder). **Essays:** "Punk, or why I don't stream anymore" (May 2026) — critique of AI-mediated culture, wireheading, "information war" on inner reality, anti-streaming stance.
 - [[entities/georgi-gerganov]] — **X/Twitter** | @ggerganov |
-- [[entities/grant-sanderson-3blue1brown]] — **Alias** | 3Blue1Brown | YouTube math/ML educator. Essence of calculus/linear algebra, Neural networks series, "But what is a GPT?" — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
+- [[entities/grant-sanderson-3blue1brown]] — **Alias** | 3Blue1Brown | YouTube math/ML educator (8.3M subscribers). Creator of Manim animation engine (open-source). Neural networks, linear algebra, calculus series. Stanford graduate, former Khan Academy fellow. MIT computational thinking co-lecturer.
 - [[entities/gilesthomas]] — ML研究者、教育者、ソフトウェア開発者。PythonAnywhere創設者。gilesthomas.com
 - [[entities/glm-5-zai]] — New state-of-the-art open weights LLM from Z.ai (智谱AI).
 - [[entities/glm-5v-turbo]] — Model that turns designs into code, part of the multimodal AI wave from Chinese labs.
@@ -301,7 +301,7 @@
 - [[entities/jarred-sumner]] — Jarred Sumner is a self-taught software engineer, best known as the creator of **Bun** — an all-in-one JavaScript and TypeScript runtime, bundler, package manager, and test runner — and for joining...
 - [[entities/ivan-leo]] — Ivan Leo — Google DeepMind, ex-Manus. Co-hosted "Building Your Own OpenClaw from Scratch" workshop with Hugo Bowne-Anderson. Self-extending agents, agent architecture, live coding education. [[raw/articles/2026-02-28_substack_agents-that-build-themselves]]
 - [[entities/jason-liu]] — Jason Liu (@jxnlco) — Creator of Instructor library (6M+ monthly downloads, cited by OpenAI). DX Engineer at OpenAI (Codex team). Former Staff ML Engineer at Stitch Fix. Context engineering, RAG systems, structured outputs. Published "Getting the Most Out of Codex" (May 2026): cataloging Codex app capabilities — durable threads, voice/steering/queuing, side panel, shared memory, automations.
-- [[entities/jay-alammar]] — **Blog** | jalammar.github.io | Visual ML explainer. "The Illustrated Transformer", "The Illustrated Word2Vec" — cited as 🟢 top-tier resource in [[concepts/genai-handbook|GenAI Handbook]].
+- [[entities/jay-alammar]] — **Blog** | jalammar.github.io | Director & Engineering Fellow at Cohere. Co-author of "Hands-On Large Language Models" (O'Reilly). Creator of "The Illustrated Transformer," "The Illustrated BERT," Ecco (2K+ GitHub stars). Deeplearning.ai co-creator.
 - [[entities/flue]] — Flue — TypeScript framework for building Claude Code-style coding agents. Announced May 2026.
 - [[entities/cursor-ai]] — Cursor AI — AI-powered code editor and coding agent platform. CI-fix agents monitor GitHub and auto-fix CI failures. SpaceX holds acquisition right for $60B.
 - [[entities/jayden-milne]] — **Blog:** thejaymo.net

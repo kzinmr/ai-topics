@@ -391,9 +391,26 @@ Palantir's structural moat is NOT the software — it's the FDE model. OpenAI/An
 - https://earendil.com/posts/press-release-april-8th/
 - https://mariozechner.at/posts/2026-04-08-ive-sold-out/
 - https://github.com/earendil-works/pi
-- https://pi.dev/
+|- https://pi.dev/
 
-## [2026-05-24] skeleton-enrich-daily | Daily skeleton enrichment — no skeletons found, enriched jeremiah-lowin (L1→L2)
+## [2026-05-25] skeleton-enrich-daily | Daily skeleton enrichment — enriched 3 skeleton pages
+
+### Enriched
+
+1. **`entities/jay-alammar.md`** — From skeleton to full page (5.2KB). Director & Engineering Fellow at Cohere. Co-author of "Hands-On Large Language Models" (O'Reilly, 2024). Creator of "The Illustrated Transformer," "The Illustrated BERT," Ecco (2K+ GitHub stars). Co-creator of Deeplearning.ai and Udacity courses. Blog migrated to Substack.
+
+2. **`entities/grant-sanderson-3blue1brown.md`** — From skeleton to full page (5.8KB). YouTube math/ML educator (8.3M subscribers, 747M views). Creator of Manim animation engine (open-source, MIT License). Stanford Math & CS graduate. Former Khan Academy fellow. MIT computational thinking co-lecturer. 2026 Stanford MRC visiting lecturer on high-dimensional geometry in ML.
+
+3. **`entities/akira-realmcore.md`** — From skeleton to full page (5.3KB). Random Labs co-founder (YC S24), creator of Slate — first "swarm-native" coding agent using Thread Weaving architecture. Episodic memory with rolling compression (2-day sessions). Dynamic pruning algorithm. Model-agnostic routing (Claude/Codex/GLM). RLM for coding advocate.
+
+### Updated
+- `wiki/index.md` — Updated descriptions for all three entity pages.
+
+### Status
+- All previously-skeleton entity pages are now enriched to L2+ quality.
+- Remaining low-status pages: `adam-rosenthal` (needs-identification), `promptfoo` (stub), `slalom` (stub).
+
+|
 
 ### Enriched
 - `entities/jeremiah-lowin.md` — L1→L2: Added FastMCP 3.2 (MCP Apps + Prefab + Generative UI), FastMCP 3.3 "Slim Reaper" (fastmcp-slim client-only distribution), FastMCP 3.4.0b1 "Remote Possibility" (remote auth). Added Software Engineering Daily podcast (Apr 2026) to Selected Talks. Updated sources.
