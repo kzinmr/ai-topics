@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-25 | Total pages: 2045 | Indexed entries: 1315 | Not in index: 710 |
+> Last updated: 2026-05-25 | Total pages: 2047 | Indexed entries: 1316 | Not in index: 711 |
 
 ## Entities (662 pages)
 
@@ -877,6 +877,7 @@
 - [[concepts/openai-o-series-gpt5-unification]] — OpenAI o1/o3→GPT-5統合 (2024-2025): o1 (Sep 2024)→o3発表 (Dec 2024)→Altmanロードマップ転換でo3キャンセル (Feb 2025)→GPT-5にThinkingモードとして吸収 (Aug 2025)。3コンポーネント統合アーキテクチャ（Main+Thinking+Router）。
 - [[concepts/on-policy-distillation]] — On-Policy Distillation (OPD) — Post-training technique combining on-policy sampling with dense token-level teacher supervision via reverse KL. Introduced by Kevin Lu / Thinking Machines Lab (Oct 2025). 9-30× compute reduction vs SFT, 50-100× vs RL.
 - [[concepts/on-policy-self-distillation]] — On-Policy Self-Distillation (OPSD) — 同一モデルがstudent/teacherを兼ねる自己蒸留。教師は正解ラベルをprivileged contextとして参照しJSD_βでtoken-level監視。GRPOの1/64のtokenコストで同等以上の推論性能（Siyan Zhao, UCLA/Meta, 2026）。SDARの基盤技術。
+- [[concepts/opus-data-selection]] — OPUS: Optimizer-induced Projected Utility Selection — 動的データ選択フレームワーク。AdamW/Muonの最適化幾何に合わせて学習サンプルをスコアリング。Ghost+CountSketchで4.7%オーバーヘッド。6倍のデータ効率向上（Qwen3-8B継続事前学習）。
 - [[concepts/organizational-moat]] — 組織モート: Jaya Gupta (Foundation Capital) が提唱。AI時代において製品・コード・カテゴリはすべて模倣可能であり、会社の「形」（採用・権力分配・ステータス階層）だけが最後の競争優位になると主張。5つの構造的検証テスト。3.2M views。
 - [[concepts/orthrus-parallel-generation]] — Orthrus — Dual-architecture Transformer: frozen AR backbone + trainable diffusion head over shared KV cache. Up to 7.8× speedup, O(1) KV-cache overhead, 16% trainable params, lossless output guarantee.
 - [[concepts/outcome-based-pricing]] — AI Agent向けアウトカムベース価格モデル。席課金から成果課金（解決件数・完了ワークフロー・削減時間）への転換。Zendesk Outcome-Based Pricing、Salesforce Agentforce Flex Creditsが先駆的事例。

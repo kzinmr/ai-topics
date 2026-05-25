@@ -5,6 +5,17 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md and start fresh.
 
+## [2026-05-25] ingest | arXiv 2602.05400 — OPUS: Optimizer-induced data selection for LLM pre-training
+
+### Pages Created
+- concepts/opus-data-selection.md: OPUS — 動的かつ最適化器認識型のデータ選択フレームワーク。AdamW/Muonのupdate spaceでスコアリング。Ghost+CountSketchで4.7%オーバーヘッド。GPT-2 30Bトークンで200Bランダム超え。Qwen3-8B継続事前学習で6倍のデータ効率。
+
+### Pages Updated
+- concepts/fineweb.md: スタブ→充実化。15Tトークンデータセットの概要、キュレーションパイプライン、FineWeb 2多言語対応、OPUSのベンチマークとしての役割を追加。
+
+### Raw Sources Added
+- raw/papers/2026-02-05_2602.05400_opus-data-selection.md: arXiv論文全文サマリー
+
 ## [2026-05-25] active-crawl | Tencent Hy3, Centaur, AutoTTS, enrich Qwen3.7-Max & Sapient
 
 ### Pages Created
