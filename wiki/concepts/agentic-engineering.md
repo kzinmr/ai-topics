@@ -1,7 +1,7 @@
 ---
 title: "Agentic Engineering"
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-26
 type: concept
 tags:
   - concept
@@ -14,6 +14,7 @@ tags:
 sources:
   - raw/articles/2026-05-12_hugobowne_agentic-engineering-verification.md
   - raw/articles/2026-05-08_vanishing-gradients_show-us-your-agent-skills-ep1.md
+  - raw/articles/2026-05-25_nolanlawson_using-ai-to-write-better-code-slowly.md
 ---
 
 # Agentic Engineering
@@ -58,6 +59,21 @@ Skills are minimal wrappers that call tools, not fat abstractions. Key design pa
 
 Agents make throwaway tools viable — tools built for a single task, used once, and discarded. This was previously economically infeasible.
 
+### 6. Slow Coding: Quality Over Velocity
+
+Articulated by [[entities/nolan-lawson]] in May 2026, **slow coding** is a deliberate counterpoint to "vibe coding" and AI-generated "slop." Instead of using AI to generate code fast, slow coding uses AI to **find bugs** and **verify correctness** — systematically improving quality rather than velocity.
+
+Core practices:
+
+- **Multi-agent parallel review** — Run 3+ bug-finding agents (Claude sub-agent, Codex, Cursor Bugbot) on every PR, cross-check results for near-zero false positives
+- **Context clearing** — Wait for all sub-agents to finish before independent review, preventing anchoring bias
+- **Triage-driven cycles** — Fix all criticals/highs first, re-run agents, repeat until clean; abandon PRs with fundamental flaws
+- **Side-quest acceptance** — Tangential bug discoveries (pre-existing issues, missing tests) are embraced as codebase health improvements, not productivity losses
+
+> "I haven't necessarily seen my velocity go up. … I end up on a tangential side-quest where I'm writing unit tests and fixing subtle flaws that pre-date the PR." — Nolan Lawson
+
+Slow coding represents the opposite of 10× productivity, but catches wrongheaded approaches early and makes codebases better for the next developer.
+
 ## Contrast with Vibe Coding
 
 | Dimension | Vibe Coding | Agentic Engineering |
@@ -76,6 +92,7 @@ Agents make throwaway tools viable — tools built for a single task, used once,
 - **[[entities/randy-olson]]** — Tufte-encoding verifier skills, digital twin thought partner, generator-evaluator workflows
 - **[[entities/garry-tan]]** — "Fat Skills, Fat Code, Thin Harness" architecture
 - **[[entities/hugo-bowne-anderson]]** — Documenting and teaching agentic engineering through Vanishing Gradients
+- **[[entities/nolan-lawson]]** — Slow coding methodology, multi-agent parallel code review pipeline, quality-over-velocity philosophy
 
 ## Key Tools and Projects
 

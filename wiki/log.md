@@ -1,6 +1,13 @@
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
+## [2026-05-26] manual | Ingest Nolan Lawson article + create entity + create concept
+- **Raw article:** `raw/articles/2026-05-25_nolanlawson_using-ai-to-write-better-code-slowly.md` — Nolan Lawson, "Using AI to Write Better Code More Slowly" (nolanlawson.com)
+- **Entity:** `entities/nolan-lawson.md` — Nolan Lawson, web developer at Socket, Pinafore/PouchDB creator, multi-agent code review advocate
+- **Concept:** `concepts/code-review-agents.md` — Multi-agent parallel code review, triage-driven cycles, near-zero false positive rate
+- **Enriched:** `concepts/agentic-engineering.md` — Added "Slow Coding: Quality Over Velocity" (Principle 6), added Nolan Lawson to Key Practitioners
+- **Sources:** nolanlawson.com/about, nolanlawson.com post (2026-05-25), web search
+
 ## [2026-05-26] manual | Ingest SkillOpt paper (arXiv:2605.23904)
 
 ### Pages Created

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-26 | Total pages: 2065 | Indexed entries: 1351 | Not in index: 692 |
+> Last updated: 2026-05-26 | Total pages: 2068 | Indexed entries: 1353 | Not in index: 693 |
 
 ## Entities (672 pages)
 
@@ -63,6 +63,7 @@
 - [[entities/kim-isenberg]] — Kim ‘Chubby’ Isenberg — Tech blogger, developer
 - [[entities/nicolas-bustamante]] — Nicolas Bustamante
 - [[entities/nrehiew]] — wh (@nrehiew_) — AI/ML researcher. Distributional lens on post-training: SFT vs RL vs On-Policy Distillation. 181K-view X post author.
+- [[entities/nolan-lawson]] — Nolan Lawson — Web developer at Socket, Pinafore/PouchDB creator, "Read the Tea Leaves" blog. Multi-agent parallel code review, slow coding methodology.
 - [[entities/odyssey-ml]] — Odyssey ML — Multimodal world model company. Starchild-1 (real-time audio+video), Odyssey-2, Agora-1 (multi-agent simulation). Led by Oliver Cameron.
 - [[entities/palo-alto-networks]] — Global cybersecurity company. Acquired Portkey (May 2026) for AI agent security.
 - [[entities/parallel-web-systems]] — Parallel Web Systems Inc. — AI agent infrastructure (Search, Extract, Monitor APIs). SOC 2 Type 2, ZDR. Founded 2023.
@@ -796,6 +797,7 @@
 - [[concepts/claw-code]] — Claw Code
 - [[concepts/coala]] — CoALA — Cognitive Architectures for Language Agents — Unified framework for agent cognitive architectures.
 - [[concepts/code-execution-agents-latency-monty-pydantic-ai-tool-calling-sandbox]] — Code execution agents latency, Monty, Pydantic AI, sandbox
+- [[concepts/code-review-agents]] — Code Review Agents — Multi-agent parallel code review using AI (Claude sub-agents, Codex, Cursor Bugbot). Near-zero false positive rate through cross-validation. Triage-driven review cycles.
 - [[concepts/codex-goal-meta-prompting]] — Codex /goal Meta-Prompting
 - [[concepts/codex-safety-at-openai]] — Codex Safety at OpenAI
 - [[concepts/cognition-devin-memory-tool-claude-code-competitive-analysis-context-management]] — Cognition Devin memory tool, Claude Code competitive analysis
