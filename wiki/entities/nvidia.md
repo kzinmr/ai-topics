@@ -1,7 +1,7 @@
 ---
 title: NVIDIA
 created: 2026-04-26
-updated: 2026-05-23
+updated: 2026-05-26
 type: entity
 tags: [company, platform]
 sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md,
@@ -10,6 +10,7 @@ sources: [raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md,
   - raw/articles/2026-01-05_nvidia_vera-rubin-platform.md
   - https://www.tomshardware.com/tech-industry/artificial-intelligence/jensen-says-nvidia-now-has-zero-percent-market-share-in-china
   - raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md
+  - raw/articles/substack.com--redirect-fc937db9-1f9f-4d17-8d14-568f58e27526--f7737c4f.md
 ---
 
 # NVIDIA Corporation
@@ -84,8 +85,34 @@ NVIDIA reported Q1 FY2027 results with record AI infrastructure revenue:
 
 **China exposure**: Revenue assumed to be $0 on the compute side due to export restrictions, though the 10-K filing warns of "material and adverse impact" from effective foreclosure from the Chinese market. [[concepts/nvidia-vera-rubin]] and [[entities/nvidia]] overall strategy now focuses on AI factory-scale deployments worldwide.
 
+## Nemotron Open Model Strategy
+
+Led by [[entities/bryan-catanzaro|Bryan Catanzaro]] (VP Applied Deep Learning Research), NVIDIA's Nemotron effort represents a unique open model strategy:
+
+### "AI as Infrastructure" Thesis
+NVIDIA views AI as foundational infrastructure — like the internet — that should be openly developed so organizations across every sector can customize it for their specific needs.
+
+### Two Jobs of Nemotron
+1. **Systems R&D** — Understanding AI workloads to design better NVIDIA hardware (GPUs, interconnects, memory). The expensive experimentation justifies internal investment.
+2. **Ecosystem Support** — Enabling broader AI ecosystem growth drives NVIDIA's business. "Whenever AI is able to grow in any sort of direction, that's an opportunity for us to grow our business."
+
+### Organizational Scale
+- **~500 full-time** technical staff on Nemotron technologies
+- **~2,000 interested** contributors across NVIDIA
+- Decentralized "volunteer" culture with "Pilot in Command" structure for 20 project areas
+
+### Open Dataset Releases (2025)
+NVIDIA releases pretraining datasets (CC-v2, CC-Math-v1, Code-v2, Specialized-v1) taking on legal risk that few other companies accept. They also release post-training recipes and NeMo Gym RLVR datasets.
+
+### "Intelligence per Second" Philosophy
+Catanzaro's prediction: models that optimize for compute acceleration (intelligence per unit time) will win because they train on more data, get more post-training cycles, and iterate faster during deployment.
+
 ## Related
 
+- [[entities/bryan-catanzaro]] — VP Applied Deep Learning Research, leads Nemotron open model effort
+- [[entities/nvidia-nemotron-3-nano-omni]] — Nemotron 3 Nano Omni multimodal model
+- [[entities/nvidia-nemotron-labs-diffusion]] — Nemotron-Labs-Diffusion tri-mode language model
+- [[entities/nemotron-cascade-2]] — Nemotron Cascade 2 model
 - [[concepts/nvidia-vera-rubin]]
 - [[concepts/nvidia-dynamo]]
 - [[concepts/kv-aware-routing]]

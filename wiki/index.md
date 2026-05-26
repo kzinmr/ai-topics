@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-26 | Total pages: 2092 | Indexed entries: 1372 | Not in index: 674 |
+> Last updated: 2026-05-26 | Total pages: 2093 | Indexed entries: 1373 | Not in index: 674 |
 
 ## Entities (674 pages)
 
@@ -151,6 +151,7 @@
 - [[entities/browserbase]] — **Browserbase** is a platform providing reliable browser automation infrastructure for AI agents. It handles "the where" and has built a three-layer architecture integrated with Stagehand (the what) and the Stagehand API (the how).
 - [[entities/brutecat-com]] — **Blog** | brutecat.com |
 - [[entities/bryan-bischof]] — **X** | @BEBischof |
+- [[entities/bryan-catanzaro]] — Bryan Catanzaro (@ctnzr) — VP Applied Deep Learning Research at NVIDIA. Leads Nemotron open model effort (~500 staff). "AI as infrastructure" thesis. Megatron-LM, NeMo Framework, DLSS.
 - [[entities/byterover]] — **ByteRover** is a portable, file-based memory layer for coding agents with 92-96% retrieval accuracy. Replaces vector DB with LLM-curated Markdown context tree. BYO Vietnam. Open source (Elastic 2.0).
 - [[entities/callosum]] — Callosum — heterogenous intelligence inference startup. Principle of Maximum Heterogeneity: multi-model, multi-chip routing for cost-performance. ULong: 7-12x cheaper, Video Web Arena: +18% vs GPT-5.2. £3M Aria Institute grant.
 - [[entities/caisi]] — Center for AI Standards and Innovation (CAISI) — US government hub for AI model testing within NIST/Department of Commerce. May 2026: signed pre-release testing agreements with Microsoft, Google, xAI. Evaluated DeepSeek V4 Pro. Director: Chris Fall.
