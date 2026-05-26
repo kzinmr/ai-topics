@@ -11,6 +11,39 @@
 | 2026-05-26 14:50 | Updated | entities/dimitris-papailiopoulos.md — added new paper source, co-authors |
 | 2026-05-26 14:50 | Updated | entities/vaishnavi-shrivastava.md — added new paper source, co-authors |
 | 2026-05-26 14:50 | Updated | index.md — added 3 new entity entries, updated echo-rl concept entry |
+
+## [2026-05-26] health-fix | Added 19 orphan concept pages to index.md
+
+### Pages Added
+- concepts/context-efficiency — Context Efficiency in AI Agents
+- concepts/context-fragments — Context Fragments
+- concepts/context-management — Context Management
+- concepts/context-rot — Context Rot
+- concepts/context-routing — Context Routing
+- concepts/continual-learning — Continual Learning
+- concepts/critique-shadowing — Critique Shadowing
+- concepts/cryptography-patterns — Cryptography Patterns
+- concepts/cursor-ide — Cursor IDE
+- concepts/cybersecurity-proof-of-work — Cybersecurity Proof of Work
+- concepts/datasette-agent — datasette-agent
+- concepts/ds4-deepseek-flash-metal — ds4.c — DeepSeek V4 Flash Metal
+- concepts/dspy-architecture — DSPy Architecture
+- concepts/dspy-modules — DSPy Modules Reference
+- concepts/dspy-optimization — DSPy Optimization
+- concepts/dual-process-theory — Dual Process Theory (AI)
+- concepts/durable-execution — Durable Execution
+- concepts/dynamic-software — Dynamic Software
+- concepts/ecs-fargate-scaling — ECS Fargate Scaling
+
+### Stats
+- Concepts section: 643 → 662
+- Indexed entries: 1353 → 1372
+- Total pages: 2073 → 2092
+- Not in index: 693 → 674
+- Index corruption: none detected
+
+---
+
 ## [2026-05-26] watchdog | Index header fix + structural audit
 
 ### Auto-fixed

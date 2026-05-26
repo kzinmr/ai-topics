@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-26 | Total pages: 2073 | Indexed entries: 1353 | Not in index: 693 |
+> Last updated: 2026-05-26 | Total pages: 2092 | Indexed entries: 1372 | Not in index: 674 |
 
 ## Entities (674 pages)
 
@@ -699,7 +699,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (643 pages)
+## Concepts (662 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -1325,6 +1325,25 @@
 - [[concepts/chain-of-thought-reasoning]] — Chain-of-Thought Reasoning
 - [[concepts/chaos-engineering]] — Chaos Engineering for Microservices
 - [[concepts/chaos-engineering-for-microservices]] — Chaos Engineering for Microservices (specific)
+- [[concepts/context-efficiency]] — Context Efficiency in AI Agents — Framework for evaluating AI agent efficiency based on context acquisition
+- [[concepts/context-fragments]] — Context Fragments — Memory state fragmentation in long-running AI agent loops
+- [[concepts/context-management]] — Context Management — Techniques for managing agent context windows and memory state
+- [[concepts/context-rot]] — Context Rot — Degradation of retrieved context quality over time, especially in RAG pipelines
+- [[concepts/context-routing]] — Context Routing — Query-aware context routing strategies
+- [[concepts/continual-learning]] — Continual Learning — Continuous improvement through web research and feedback loops
+- [[concepts/critique-shadowing]] — Critique Shadowing — Shadow critique method for AI safety and self-evaluation
+- [[concepts/cryptography-patterns]] — Cryptography Patterns — Bitwarden Encryption Architecture and design patterns
+- [[concepts/cursor-ide]] — Cursor IDE — AI-native code editor built on VS Code with LLM-powered agent features
+- [[concepts/cybersecurity-proof-of-work]] — Cybersecurity Proof of Work — Proactive security measures as proof of defensive effort
+- [[concepts/datasette-agent]] — datasette-agent — AI agent interface for Datasette, enabling LLM-powered database exploration
+- [[concepts/ds4-deepseek-flash-metal]] — ds4.c — DeepSeek V4 Flash Metal — antirez's Metal inference engine for DeepSeek V4 Flash
+- [[concepts/dspy-architecture]] — DSPy Architecture — Three Abstractions: Signatures, Modules, and Optimizers in the DSPy framework
+- [[concepts/dspy-modules]] — DSPy Modules Reference — ChainOfThought, ReAct, MultiChainComparison and other DSPy module patterns
+- [[concepts/dspy-optimization]] — DSPy Optimization — Teleprompters, Assertions, Fine-tuning strategies for DSPy programs
+- [[concepts/dual-process-theory]] — Dual Process Theory (AI) — Applying Kahneman's System 1/System 2 model to LLM reasoning frameworks
+- [[concepts/durable-execution]] — Durable Execution — State persistence and recovery patterns for long-running AI agent workflows
+- [[concepts/dynamic-software]] — Dynamic Software — Self-modifying code paradigms and agent-adaptive software architecture
+- [[concepts/ecs-fargate-scaling]] — ECS Fargate Scaling — AWS Fargate autoscaling strategies for containerized AI services
 
 ## Events (6 pages)
 - [[concepts/chatgpt-memory-bitter-lesson]] — ChatGPT Memory & The Bitter Lesson
