@@ -6,7 +6,7 @@ aliases:
   - activation engineering
   - representation engineering
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-27
 tags:
   - interpretability
   - model
@@ -27,97 +27,97 @@ sources:
   - https://thesephist.com/posts/prism/
 ---
 
-# Activation Steering（Feature Steering）
+# Activation Steering (Feature Steering)
 
-**Activation Steering**とは、LLMの推論時に特定の内部特徴（feature）の活性化強度を操作することで、モデルの振る舞いを直接制御する技術。特徴の「増幅（amplify）」と「抑制（suppress）」によって、プロンプトでは達成できない粒度の制御を可能にする。
+**Activation Steering** is a technique for directly controlling model behavior by manipulating the activation strength of specific internal features during LLM inference. By "amplifying" or "suppressing" features, it enables granularity of control that cannot be achieved through prompting alone.
 
-> **Thariq Shihiparの比喩**: Steering is like brain surgery; prompting is like asking politely.（Steeringは脳外科手術、プロンプトは丁寧にお願いすること）
+> **Thariq Shihipar's analogy**: Steering is like brain surgery; prompting is like asking politely.
 
-## 仕組み
+## How It Works
 
 ```
-[入力] → [通常のforward pass] → [特徴Aの活性化を検出]
+[Input] → [Normal forward pass] → [Detect activation of feature A]
                                       ↓
-                              [特徴Aを2xに増幅 / 特徴Bを0xに抑制]
+                              [Amplify feature A 2x / Suppress feature B 0x]
                                       ↓
-                              [介入されたactivation] → [出力]
+                              [Intervened activation] → [Output]
 ```
 
-1. **特徴抽出**: Sparse Autoencoder（SAE）で内部表現をdisentangleし、数百万の解釈可能な特徴に分解する（AnthropicのScaling Monosemanticity, 2024）
-2. **特徴の特定**: 操作したい振る舞いに対応する特徴を見つける（例：「詐欺メール」特徴、「簡潔さ」特徴）
-3. **介入（Intervention）**: 特徴のactivationに係数（clamping factor）を掛けて増幅/抑制する
-4. **推論継続**: 介入後のactivationで生成を続行する
+1. **Feature extraction**: Sparse Autoencoders (SAEs) disentangle internal representations into millions of interpretable features (Anthropic's Scaling Monosemanticity, 2024)
+2. **Feature identification**: Find features corresponding to desired behaviors (e.g., "spam email" feature, "conciseness" feature)
+3. **Intervention**: Multiply feature activation by a clamping factor to amplify or suppress
+4. **Continue inference**: Generate with the intervened activation
 
-## 主な応用
+## Major Applications
 
-### 1. スタイル・ペルソナ制御
-プロンプトで「親切で簡潔に」と指示するのではなく、「親切さ特徴を70%、簡潔さ特徴を50%」のように連続値で制御。言葉で記述しきれないニュアンスを実現。
+### 1. Style & Persona Control
+Instead of prompting "be kind and concise," control in continuous values like "kindness feature at 70%, conciseness feature at 50%." Achieves nuances impossible to describe in words.
 
-- **Goodfire.ai**: Llamaモデル向けの特徴操作ツール。検出された特徴に基づいてsteeringを行う
-- **Prism (Linus Lee)**: テキスト埋め込み分類器を学習させてテキスト生成をsteering
+- **Goodfire.ai**: Feature manipulation tools for Llama models. Performs steering based on detected features
+- **Prism (Linus Lee)**: Learns text embedding classifiers to steer text generation
 
-### 2. RLHFの補完・代替
-RLHFは全ユーザー一律のpost-training処理だが、steeringは**推論時に開発者ごとの選択的操作**が可能。
+### 2. RLHF Complement & Alternative
+RLHF is a uniform post-training process for all users, but steering enables **per-developer selective manipulation at inference time**.
 
-| 次元 | RLHF | Activation Steering |
+| Dimension | RLHF | Activation Steering |
 |------|------|---------------------|
-| タイミング | Post-training（固定） | 推論時（動的） |
-| 粒度 | モデル全体 | 特徴単位 |
-| 副作用 | false refusals, quality degradation | 特徴過剰増幅による分布外出力 |
-| 制御権 | モデル提供者 | API開発者 |
+| Timing | Post-training (fixed) | Inference-time (dynamic) |
+| Granularity | Whole model | Per-feature |
+| Side effects | False refusals, quality degradation | Out-of-distribution outputs from over-amplification |
+| Control | Model provider | API developer |
 
-### 3. ユーザー嗜好の永続化
-会話中の「簡潔に答えて」という嗜好はcontext windowから外れると失われる。steeringなら簡潔さ特徴を永続的に増幅することで、会話の長さに関係なく嗜好を保持できる。
+### 3. Persistent User Preferences
+A "be concise" preference expressed during conversation is lost once it falls out of the context window. Steering can persistently amplify the conciseness feature, maintaining the preference regardless of conversation length.
 
-### 4. 安価な分類器
-スパム検出などの分類を、別モデルを学習せずに実現。スパム/非スパムメール群で活性化する特徴のパターン差分を調べ、「スパム特徴セット」を構築することで推論時の分類器として機能。
+### 4. Inexpensive Classifiers
+Enables classification tasks (e.g., spam detection) without training a separate model. By examining activation patterns across spam/non-spam emails and building a "spam feature set," it can function as an inference-time classifier.
 
-## Golden Gate Claude（Anthropic, 2024）
+## Golden Gate Claude (Anthropic, 2024)
 
-最も有名な実証例。Golden Gate Bridge特徴のclamping factorを極端に上げると、Claudeは自分がGolden Gate Bridgeであるかのように振る舞い始めた。
+The most famous demonstration. When the Golden Gate Bridge feature's clamping factor was raised to an extreme level, Claude began behaving as if it were the Golden Gate Bridge.
 
-このデモが示した重要な洞察：
-- 特徴は実際にモデルの振る舞いを因果的に制御している（相関ではなく因果）
-- 過剰な増幅はモデルを「分布外」に追いやる — テキストの一貫性が崩れる
-- 「正しい」増幅の度合いを見つけることが実用化の鍵
+Key insights from this demo:
+- Features actually causally control model behavior (causation, not correlation)
+- Excessive amplification pushes the model "out of distribution" — text coherence breaks down
+- Finding the "right" degree of amplification is the key to practical use
 
-## 実用上の課題
+## Practical Challenges
 
-### 分布外（OOD）問題
-特徴を強く増幅しすぎると、モデルは学習分布から外れ、非文法的・支離滅裂な出力を生成する。これは単なる「Golden Gate Bridgeの話をしすぎる」という問題を超えて、**言語そのもののルールに従わなくなる**問題。
+### Out-of-Distribution (OOD) Problem
+Over-amplifying features pushes the model outside its learned distribution, producing ungrammatical or incoherent output. This goes beyond "talking too much about the Golden Gate Bridge" — the model **stops following the rules of language itself**.
 
-### 特徴ラベルの不完全性
-数百万の特徴に対して人間＋機械でラベルを付与するため、誤分類や誤解のリスクがある。Shihiparは「特徴リストを見て、ラベルに同意できないことがある」と指摘。
+### Imperfect Feature Labels
+Labels for millions of features are assigned by humans + machines, carrying risks of misclassification or misunderstanding. Shihipar notes: "I sometimes look at the feature list and disagree with the labels."
 
-### 回路の予期せぬ活性化
-特徴は孤立しているわけではなく、他の特徴と「回路（circuit）」を形成している。ある特徴の操作が予期せぬ連鎖反応を起こす可能性があり、これはRLHFの副作用と本質的に同じ問題。
+### Unexpected Circuit Activation
+Features do not exist in isolation — they form "circuits" with other features. Manipulating one feature may trigger unexpected chain reactions, essentially the same problem as RLHF side effects.
 
-### 未検証のスケーラビリティ
-Anthropicの内部利用を除けば、広範なプロダクション環境での実績はまだない。大規模展開時の振る舞いは未知数。
+### Unverified Scalability
+Aside from internal use at Anthropic, there are no track records in broad production environments. Behavior at large-scale deployment is unknown.
 
-## Abliteration — 拒否反応の除去
+## Abliteration — Removing Refusal Behaviors
 
-Activation Steeringの特定の応用として、**Abliteration**（mlabonne, 2024）はRLHFで埋め込まれた拒否反応（refusal）を特徴方向の操作で「無検閲化」する：
+As a specific application of Activation Steering, **Abliteration** (mlabonne, 2024) "uncensors" models by manipulating the feature direction of RLHF-embedded refusal responses:
 
-1. 拒否応答を引き起こすテキスト群と、通常応答のテキスト群で活性化パターンを比較
-2. 「拒否方向（refusal direction）」を特定
-3. その方向の成分を活性化から差し引く
-4. → モデルは拒否しなくなる（が、RLHFの他の恩恵も一部失う可能性あり）
+1. Compare activation patterns between refusal-triggering texts and normal texts
+2. Identify the "refusal direction"
+3. Subtract that directional component from activations
+4. → The model stops refusing (but may lose some other RLHF benefits)
 
-## 開発上の位置づけ
+## Development Positioning
 
-Activation Steeringは、LLM APIの次の進化を示唆する。2024年まではプロンプト＋RAGが開発者の主な制御手段だったが、steeringの成熟により、開発者は**モデル内部への直接的な制御インターフェース**を得る可能性がある。
+Activation Steering suggests the next evolution of LLM APIs. Until 2024, prompting + RAG were developers' primary control mechanisms. As steering matures, developers may gain **direct control interfaces into model internals**.
 
-Shihiparは「次世代のモデルAPIは、より強力になるがより複雑にもなる。プロンプトとRAGだけでは望む出力を得られなくなる」と予測する。
+Shihipar predicts: "Next-generation model APIs will be more powerful but also more complex. Prompting and RAG alone won't be enough to get the output you want."
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/interpretability]] — 解釈可能性全般。Steeringはその応用面
-- [[concepts/rlhf]] — 従来の制御手法。Steeringの補完対象
-- [[concepts/entropix]] — 不確実性検出。Steeringと同様に推論時介入の一種
-- [[concepts/scaling-hypothesis]] — スケールによる制御性の低下。Steeringはその対策
+- [[concepts/interpretability]] — Interpretability in general. Steering is its applied aspect
+- [[concepts/rlhf]] — Traditional control method. Steering's complement
+- [[concepts/entropix]] — Uncertainty detection. A type of inference-time intervention like Steering
+- [[concepts/scaling-hypothesis]] — Degraded controllability at scale. Steering is a countermeasure
 
-## 参照
+## References
 
 - [Scaling Monosemanticity (Anthropic, May 2024)](https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html)
 - [Golden Gate Claude (Anthropic, 2024)](https://www.anthropic.com/news/golden-gate-claude)

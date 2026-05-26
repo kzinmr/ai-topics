@@ -1,12 +1,12 @@
 ---
-title: "Skill Graph — 相互接続MarkdownファイルによるAIエージェントプレイブック"
+title: "Skill Graph — Interconnected Markdown Files as an AI Agent Playbook"
 type: concept
 aliases:
   - skill-graph
   - content-skill-graph
-  - スキルグラフ
+  - skill-graph
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-27
 tags:
   - concept
   - skill-graph
@@ -21,126 +21,126 @@ sources:
 
 # Skill Graph
 
-相互接続されたMarkdownファイルのフォルダをAIエージェントの「プレイブック」として機能させるアーキテクチャ。各ファイルは1つの「知識ノード」であり、`[[wikilinks]]`で相互参照される。AIエージェントはエントリポイント（index.md）からリンクを辿って必要な知識ノードだけをコンテキストウィンドウにロードし、完全な理解を構築してからタスクを実行する。
+An architecture in which a folder of interconnected Markdown files serves as an AI agent's "playbook." Each file is a "knowledge node," cross-referenced via `[[wikilinks]]`. The AI agent starts from an entry point (index.md), follows links to load only the needed knowledge nodes into its context window, builds a complete understanding, and then executes the task.
 
-## 核心理論
+## Core Theory
 
 > "One flat .md file gives you a TOOL. A graph gives you a TEAM." — Ronin
 
 > "The bigger the context, the worse the reasoning. Skill graphs solve this: most knowledge stays on disk. Only what matters enters the context window." — Linas Beliūnas
 
-### 従来のプロンプト vs スキルグラフ
+### Traditional Prompting vs. Skill Graph
 
-| アプローチ | 動作 | 結果 |
+| Approach | Behavior | Result |
 |-----------|------|------|
-| **単一プロンプト** | 1つの指示、ゼロコンテキスト | 毎回「記憶喪失の天才」を雇うようなもの |
-| **フラットファイル** | 1つの大きなリファレンス文書 | TOOL（単純な参照先） |
-| **スキルグラフ** | 30+の相互接続.mdファイル | TEAM（プラットフォーム専門家、トーン適応、オーディエンス別対応） |
+| **Single prompt** | One instruction, zero context | Like hiring a "genius with amnesia" every time |
+| **Flat file** | One large reference document | TOOL (simple lookup reference) |
+| **Skill graph** | 30+ interconnected .md files | TEAM (platform specialist, tone adaptation, audience-specific responses) |
 
-## アーキテクチャ
+## Architecture
 
-### 標準フォルダ構造（Roninの17ファイルモデル）
+### Standard Folder Structure (Ronin's 17-file Model)
 
 ```
 /content-skill-graph
-├── index.md                  # コマンドセンター（エントリポイント）
-├── platforms/                # プラットフォーム別プレイブック
-│   ├── x.md                  # X/Twitter: 短形式、フック駆動、カジュアル小文字
-│   ├── linkedin.md           # LinkedIn: 個人的ナラティブ、プロフェッショナル
-│   ├── instagram.md          # Instagram: ビジュアル優先、カルーセル
-│   ├── tiktok.md             # TikTok: 生の画面収録、2秒フック
-│   ├── youtube.md            # YouTube: 深いチュートリアル、8-12分
-│   ├── threads.md            # Threads: 会話的、意見駆動
-│   ├── facebook.md           # Facebook: コミュニティ議論
-│   └── newsletter.md         # Newsletter: 最も個人的、舞台裏
-├── voice/                    # ブランドボイスDNA
-│   ├── brand-voice.md        # 全プラットフォーム共通の核的人格
-│   └── platform-tone.md      # プラットフォーム別のトーン適応
-├── engine/                   # 運用エンジン
-│   ├── hooks.md              # フックパターン（パフォーマンスの80%）
-│   ├── repurpose.md          # 1アイデア→10プラットフォーム変換チェーン
-│   ├── scheduling.md         # コンテンツカレンダー
-│   └── content-types.md      # 形式定義（スレッド/カルーセル/動画/長文）
-└── audience/                 # オーディエンスセグメント
-    ├── builders.md           # 技術者向け
-    └── casual.md             # 一般向け
+├── index.md                  # Command center (entry point)
+├── platforms/                # Platform-specific playbooks
+│   ├── x.md                  # X/Twitter: short-form, hook-driven, casual lowercase
+│   ├── linkedin.md           # LinkedIn: personal narrative, professional
+│   ├── instagram.md          # Instagram: visual-first, carousel
+│   ├── tiktok.md             # TikTok: raw screen recording, 2-second hook
+│   ├── youtube.md            # YouTube: deep tutorials, 8-12 min
+│   ├── threads.md            # Threads: conversational, opinion-driven
+│   ├── facebook.md           # Facebook: community discussion
+│   └── newsletter.md         # Newsletter: most personal, behind-the-scenes
+├── voice/                    # Brand voice DNA
+│   ├── brand-voice.md        # Core personality across all platforms
+│   └── platform-tone.md      # Platform-specific tone adaptation
+├── engine/                   # Operational engine
+│   ├── hooks.md              # Hook patterns (80% of performance)
+│   ├── repurpose.md          # 1 idea → 10 platform conversion chain
+│   ├── scheduling.md         # Content calendar
+│   └── content-types.md      # Format definitions (thread/carousel/video/long-form)
+└── audience/                 # Audience segments
+    ├── builders.md           # For technical people
+    └── casual.md             # For general audience
 ```
 
-### コアコンポーネント
+### Core Components
 
-#### index.md（コマンドセンター）
-目次ではない。**ブリーフィング**である。以下を含む：
-- **Identity**: 誰で、何をしているか（ニッチの具体性が最重要）
-- **System Purpose**: このグラフが生成するもの
-- **Node Map with Context**: `[[x]] — short-form, hook-driven, 280 chars max` のような文脈付きリンク
-- **Execution Instructions**: ステップバイステップの実行手順
+#### index.md (Command Center)
+Not a table of contents. It is a **briefing**. Includes:
+- **Identity**: Who you are and what you do (niche specificity is paramount)
+- **System Purpose**: What this graph generates
+- **Node Map with Context**: Context-bearing links like `[[x]] — short-form, hook-driven, 280 chars max`
+- **Execution Instructions**: Step-by-step execution procedures
 
-#### platform-tone.md（DNA適応層）
-同じ人格を各プラットフォームの文化に適応させる「橋」。パーティーでの話し方 vs ビジネスディナー vs ポッドキャスト面接のような違い。
+#### platform-tone.md (DNA Adaptation Layer)
+A "bridge" adapting the same personality to each platform's culture. Like the difference between speaking at a party vs. a business dinner vs. a podcast interview.
 
-#### repurpose.md（変換チェーン）
-**1つのアイデアが入り、10のプラットフォームネイティブ投稿が出る。再フォーマットではない、再思考である。**
-チェーン順序: X → LinkedIn → Instagram → TikTok → YouTube → Newsletter → Threads → Facebook
+#### repurpose.md (Conversion Chain)
+**One idea goes in, 10 platform-native posts come out. It's not reformatting — it's rethinking.**
+Chain order: X → LinkedIn → Instagram → TikTok → YouTube → Newsletter → Threads → Facebook
 
-**リトマス試験**:
+**Litmus test**:
 > "If someone followed me on ALL platforms, would they be annoyed seeing the same thing everywhere?"
 > If yes → reformatting. If no → 8 unique pieces from one idea.
 
-## 運用方法
+## How to Use
 
-### Method 1: Claude Projects（推奨）
-1. Projectを作成 → 全ファイルをアップロード
-2. トピックを与える
-3. Claudeがindex.mdを読み、wikilinksを辿り、接続ノードを読み、8つのプラットフォームネイティブ投稿を出力
+### Method 1: Claude Projects (Recommended)
+1. Create a Project → upload all files
+2. Give a topic
+3. Claude reads index.md, follows wikilinks, reads connected nodes, outputs 8 platform-native posts
 
-### Method 2: コンテキスト貼り付け
-- index.mdの内容を任意のAIチャットに貼り付け
-- 実行指示を追加
-- トピックを与える
+### Method 2: Context Paste
+- Paste index.md content into any AI chat
+- Add execution instructions
+- Give a topic
 
-### Method 3: Cursor / Claude Code（最も強力）
-- グラフをローカルファイルシステムに保持
-- エージェントが直接ファイルを読み取り・更新
-- グラフ自体が時間とともに進化（hooks.mdの更新、platform-tone.mdの調整）
+### Method 3: Cursor / Claude Code (Most Powerful)
+- Keep the graph on local filesystem
+- Agent directly reads and updates files
+- The graph itself evolves over time (updating hooks.md, adjusting platform-tone.md)
 
-## 設計原則
+## Design Principles
 
-| 原則 | 説明 |
+| Principle | Description |
 |------|------|
-| **Graph > Flat File** | 1つのフラット.md = TOOL。グラフ = TEAM |
-| **Wikilinks as Navigation** | `[[wikilinks]]` でAIが研究者のように引用を辿る |
-| **Platform-Native Repurposing** | 再フォーマットではなく再思考 |
-| **Evolutionary Design** | 毎週hooks.mdを更新、パフォーマンスに基づいて改善 |
-| **Compound Interest** | 学びをファイルにエンコードすることでシステムが賢くなる |
+| **Graph > Flat File** | One flat .md = TOOL. Graph = TEAM |
+| **Wikilinks as Navigation** | `[[wikilinks]]` let AI follow citations like a researcher |
+| **Platform-Native Repurposing** | Rethinking, not reformatting |
+| **Evolutionary Design** | Update hooks.md weekly, improve based on performance |
+| **Compound Interest** | Encoding learnings into files makes the system smarter over time |
 
-## Context Engineeringとの関係
+## Relationship to Context Engineering
 
-スキルグラフはContext Engineering（[[concepts/harness-engineering/context-engineering]]）の**応用実装**である：
+The Skill Graph is an **applied implementation** of Context Engineering ([[concepts/harness-engineering/context-engineering]]):
 
-| Context Engineering概念 | スキルグラフでの対応 |
+| Context Engineering Concept | Skill Graph Equivalent |
 |------------------------|-------------------|
-| 動的コンテキストローディング | Wikilinksによる選択的ノード読み込み |
-| Attention Budget | 必要なノードだけをコンテキストにロード（大部分はディスク上） |
-| 4ファイルアーキテクチャ（Khairallah） | voice/ + audience/ フォルダに展開 |
-| JITコンテキスト | index.md→wikilinks→必要なノードの段階的発見 |
-| 構造化メモ（Anthropic） | フォルダ構造そのものが永続的メモリシステム |
+| Dynamic context loading | Selective node loading via Wikilinks |
+| Attention Budget | Only load needed nodes into context (most stays on disk) |
+| 4-file architecture (Khairallah) | Expanded into voice/ + audience/ folders |
+| JIT context | Gradual discovery via index.md → wikilinks → needed nodes |
+| Structured memory (Anthropic) | The folder structure itself is a persistent memory system |
 
-## Autoresearch Desk への応用
+## Application to Autoresearch Desk
 
-既存のwikiは既にスキルグラフである（構造化.md + `[[wikilinks]]`）が、**キュレーション用に最適化**されており、**配信用に最適化されていない**。
+The existing wiki is already a skill graph (structured .md + `[[wikilinks]]`), but it is **optimized for curation**, not **optimized for distribution**.
 
-Autoresearch Desk化に必要な追加：
-1. **index.mdの作成**: wikiの「コマンドセンター」 — エージェントが配信タスクを理解するためのブリーフィング
-2. **platforms/フォルダ**: Discord / Slack / Telegram / X の各チャネル別プレイブック
-3. **engine/repurpose.md**: wiki知識→マルチチャネル変換チェーン
-4. **audience/フォルダ**: 技術実践者 / AI研究者 / プロダクトビルダー / 知識労働者
+What is needed to convert it into an Autoresearch Desk:
+1. **Create index.md**: A "command center" for the wiki — a briefing for the agent to understand distribution tasks
+2. **platforms/ folder**: Platform-specific playbooks for Discord / Slack / Telegram / X
+3. **engine/repurpose.md**: Wiki knowledge → multi-channel conversion chain
+4. **audience/ folder**: Technical practitioners / AI researchers / Product builders / Knowledge workers
 
-→ 詳細: [[concepts/agent-media]]
+→ Details: [[concepts/agent-media]]
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/agent-skills-overview]] — Agent Skills 概念クラスターマップ（親ページ）
-- [[concepts/harness-engineering/context-engineering]] — Context Engineeringの技術的基盤
-- [[concepts/agent-media]] — Autoresearch Desk: Wikiからマルチチャネル配信エンジンへ
-- [[entities/ronin-deronin]] — Ronin: スキルグラフアーキテクチャの提唱者
-- [[entities/khairallah-al-awady]] — Khairallah: 4ファイルアーキテクチャによる実践者フレームワーク
+- [[concepts/agent-skills-overview]] — Agent Skills concept cluster map (parent page)
+- [[concepts/harness-engineering/context-engineering]] — Technical foundation of Context Engineering
+- [[concepts/agent-media]] — Autoresearch Desk: from Wiki to multi-channel distribution engine
+- [[entities/ronin-deronin]] — Ronin: proposer of the skill graph architecture
+- [[entities/khairallah-al-awady]] — Khairallah: practitioner framework via 4-file architecture

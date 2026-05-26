@@ -2,7 +2,7 @@
 title: CMU LLMs — Methods and Applications
 type: concept
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-27
 status: Level2
 tags:
   - education
@@ -20,132 +20,132 @@ sources:
 
 # CMU LLMs: Methods and Applications
 
-> **Chenyan Xiong & Daphne Ipolito**（CMU LTI）による**LLM応用実践コース**。2026年春開講。プロンプトからエージェント、マルチモーダル、デプロイメントまで、LLMを使いこなすための全範囲をカバー。Yoav Goldbergのガイド中で**最も入門しやすい**バランスの取れたコース。
+> A **practical LLM application course** taught by **Chenyan Xiong & Daphne Ipolito** (CMU LTI). Offered Spring 2026. Covers the full range of LLM proficiency — from prompting to agents, multimodal, and deployment. The **most beginner-friendly** and well-balanced course in Yoav Goldberg's guide.
 
 ---
 
-## なぜこのコースが特別か
+## Why This Course Is Special
 
-1. **最新版（2026年春）** — このガイドの3コース中で最も新しい。GRPO、Deep Research、Multi-agent等の最新トピックを含む
-2. **「使う側」に特化** — 「作る」より「応用する」。エンジニア・プロダクトマネージャーに最適
-3. **実践的課題** — 3つの課題（プロンプト→エージェント→マルチモーダル）が実務直結
-4. **CMU LTIの幅広さ** — コード生成（Zora Wang）、音楽生成（Chris Donahue）、生物学（Lei Li）、ロボティクス（Leena Mathur）まで、応用先の多様性
-
----
-
-## カリキュラム詳細とWikiマッピング
-
-### フェーズ1: 基礎とコア技術（1月）
-
-| 週 | トピック | 関連Wiki概念 |
-|----|---------|-------------|
-| 1-2 | LLMの起源と理論（Bengio 2003 → 現代） | `concepts/decoder-only-gpt`, `concepts/transformer-architecture` |
-| 2-3 | プロンプトエンジニアリング | `concepts/context-engineering`, `concepts/direct-prompting-philosophy` |
-| 3-4 | ファインチューニング vs 他の手法 | `concepts/fine-tuning/peft-lora-qlora`, `concepts/fine-tuning/_index` |
-| 4 | 埋め込みと知識表現 | — |
-
-> **独自の価値:** プロンプトエンジニアリングを「科学」として捉える。ランダムな種系列への敏感さ（*Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design*）を扱うのは、他のコースにはない実践的視点。
-
-### フェーズ2: 検索と高度なインタラクション（2月）
-
-| 週 | トピック | 関連Wiki概念 |
-|----|---------|-------------|
-| 5-7 | **RAG（3回連続）**: 知識格納、実装、Deep Research | `concepts/agentic-rag`, `concepts/context-rot`, `concepts/graph-db-overengineering-rag` |
-| 7-8 | 対話システム: タスク指向、ツール使用、ペルソナ | `concepts/agent-orchestration-frameworks`, `concepts/agent-harness` |
-| 8 | **クリエイティブAI**: ライティング支援、アイデア創出 | — |
-| 9 | **評価**: LLM-as-Judge、合成データ、シミュレーション | `concepts/llm-as-judge`, `concepts/critique-shadowing` |
-| 9 | **マルチエージェント**アーキテクチャ | `concepts/agent-architecture-decomposition`, `concepts/agent-swarms` |
-
-> **独自の価値:** **RAGを3週連続で**扱うのは、このコースの最大の特徴。Deep Research（複数ステップの情報収集＋合成）までカバーするRAGの深堀りは、他のLLMコースにはない。**評価フェーズ**でLLM-as-Judgeと合成データ生成を組み合わせるのも実践的。
-
-### フェーズ3: 安全性、倫理、専門領域（3月）
-
-| 週 | トピック | 関連Wiki概念 |
-|----|---------|-------------|
-| 10 | LLMの安全性とRed Teaming | `concepts/ai-safety`, `concepts/excessive-agency`, `concepts/red-teaming-adversarial-eval` |
-| 11 | **コード生成**（Zora Wang ゲスト） | `concepts/coding-agents`, `concepts/ai-coding-reliability` |
-| 11 | **マルチモーダル**: 画像生成、VLM | `concepts/ai-image-generation`, `concepts/multimodal/_index` |
-| 12 | **多言語LLM**: 非英語圏（Shaily Bhatt ゲスト） | — |
-| 12 | **World Models**（Mingkai Deng ゲスト） | — |
-
-> **独自の価値:** **多言語LLM**のトピックを含むのは、このコースの大きな強み。非英語圏・非米国文化の文脈でLLMがどう機能するかを議論する。Shaily Bhatt（MSR India）のような専門家をゲストに迎えている。
-
-### フェーズ4: テキストを超えて＋デプロイ（4月）
-
-| 週 | トピック | 関連Wiki概念 |
-|----|---------|-------------|
-| 13 | **科学応用**: 生物学（Lei Li）、音楽生成（Chris Donahue）、数学推論 | — |
-| 14 | **Physical AI**: ロボット、身体化AI（Leena Mathur） | — |
-| 14-15 | **デプロイ戦略** | `concepts/ai-infrastructure-engineering/model-serving-autoscaling`, `concepts/token-economics` |
-
-> **独自の価値:** **AI x 科学**という応用指向の最終フェーズは、他のLLMコースにはないユニークな特徴。生物学（タンパク質、創薬）、音楽生成、数学、ロボティクスと、LLMが「言語モデル」から「基盤モデル」へ拡張される姿を俯瞰できる。
+1. **Latest edition (Spring 2026)** — The newest of the 3 courses in this guide. Covers GRPO, Deep Research, Multi-agent, and other cutting-edge topics
+2. **"User-side" focus** — Emphasizes "applying" over "building." Ideal for engineers and product managers
+3. **Practical assignments** — 3 assignments (prompting → agents → multimodal) that directly connect to real-world work
+4. **CMU LTI breadth** — Code generation (Zora Wang), music generation (Chris Donahue), biology (Lei Li), robotics (Leena Mathur) — diverse application areas
 
 ---
 
-## このコースのポートフォリオ全体での位置づけ
+## Curriculum Details and Wiki Mapping
+
+### Phase 1: Foundations & Core Techniques (January)
+
+| Week | Topic | Related Wiki Concepts |
+|----|---------|-------------|
+| 1-2 | LLM origins and theory (Bengio 2003 → present) | `concepts/decoder-only-gpt`, `concepts/transformer-architecture` |
+| 2-3 | Prompt engineering | `concepts/context-engineering`, `concepts/direct-prompting-philosophy` |
+| 3-4 | Fine-tuning vs other methods | `concepts/fine-tuning/peft-lora-qlora`, `concepts/fine-tuning/_index` |
+| 4 | Embeddings and knowledge representation | — |
+
+> **Unique value:** Treats prompt engineering as a "science." Addressing sensitivity to random seed series (*Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design*) is a practical perspective not found in other courses.
+
+### Phase 2: Retrieval & Advanced Interaction (February)
+
+| Week | Topic | Related Wiki Concepts |
+|----|---------|-------------|
+| 5-7 | **RAG (3 consecutive weeks)**: Knowledge storage, implementation, Deep Research | `concepts/agentic-rag`, `concepts/context-rot`, `concepts/graph-db-overengineering-rag` |
+| 7-8 | Dialogue systems: Task-oriented, tool use, personas | `concepts/agent-orchestration-frameworks`, `concepts/agent-harness` |
+| 8 | **Creative AI**: Writing assistance, idea generation | — |
+| 9 | **Evaluation**: LLM-as-Judge, synthetic data, simulation | `concepts/llm-as-judge`, `concepts/critique-shadowing` |
+| 9 | **Multi-agent** architectures | `concepts/agent-architecture-decomposition`, `concepts/agent-swarms` |
+
+> **Unique value:** **Dedicating 3 consecutive weeks to RAG** is this course's biggest strength. Covering Deep Research (multi-step information gathering + synthesis) goes deeper into RAG than any other LLM course. Combining **LLM-as-Judge with synthetic data generation** in the evaluation phase is also highly practical.
+
+### Phase 3: Safety, Ethics & Specialized Domains (March)
+
+| Week | Topic | Related Wiki Concepts |
+|----|---------|-------------|
+| 10 | LLM safety and Red Teaming | `concepts/ai-safety`, `concepts/excessive-agency`, `concepts/red-teaming-adversarial-eval` |
+| 11 | **Code generation** (Zora Wang guest) | `concepts/coding-agents`, `concepts/ai-coding-reliability` |
+| 11 | **Multimodal**: Image generation, VLM | `concepts/ai-image-generation`, `concepts/multimodal/_index` |
+| 12 | **Multilingual LLM**: Non-English contexts (Shaily Bhatt guest) | — |
+| 12 | **World Models** (Mingkai Deng guest) | — |
+
+> **Unique value:** Including **multilingual LLM** topics is a major strength. Discusses how LLMs function in non-English, non-US cultural contexts with experts like Shaily Bhatt (MSR India) as guests.
+
+### Phase 4: Beyond Text + Deployment (April)
+
+| Week | Topic | Related Wiki Concepts |
+|----|---------|-------------|
+| 13 | **Scientific applications**: Biology (Lei Li), music generation (Chris Donahue), math reasoning | — |
+| 14 | **Physical AI**: Robotics, embodied AI (Leena Mathur) | — |
+| 14-15 | **Deployment strategies** | `concepts/ai-infrastructure-engineering/model-serving-autoscaling`, `concepts/token-economics` |
+
+> **Unique value:** The **AI x Science** application-focused final phase is a unique feature not found in other LLM courses. From biology (proteins, drug discovery) to music generation, mathematics, and robotics — it provides a panoramic view of LLMs expanding from "language models" to "foundation models."
+
+---
+
+## Position in the Overall Course Portfolio
 
 ```mermaid
 flowchart TD
-    A["Yoav Goldberg<br/>2025 Guide"] --> B["CS336<br/>Stanford<br/>作り方"]
-    A --> C["COS597R<br/>Princeton<br/>研究"]
-    A --> D["CMU LLMs<br/>応用（← ここ）"]
+    A["Yoav Goldberg<br/>2025 Guide"] --> B["CS336<br/>Stanford<br/>Building"]
+    A --> C["COS597R<br/>Princeton<br/>Research"]
+    A --> D["CMU LLMs<br/>Application (← Here)"]
     
-    B --> B1["Assignment 1: Transformer実装"]
-    B --> B2["Assignment 2: Triton / GPU最適化"]
-    B --> B3["Assignment 3: スケーリング則"]
+    B --> B1["Assignment 1: Transformer implementation"]
+    B --> B2["Assignment 2: Triton / GPU optimization"]
+    B --> B3["Assignment 3: Scaling laws"]
     B --> B4["Assignment 4: Common Crawl"]
     B --> B5["Assignment 5: Alignment/RL"]
     
-    C --> C1["論文: 事前学習・スケーリング"]
-    C --> C2["論文: データ・アライメント"]
-    C --> C3["論文: 推論・RAG"]
-    C --> C4["論文: ハードウェア・マルチモーダル"]
+    C --> C1["Papers: Pretraining, Scaling"]
+    C --> C2["Papers: Data, Alignment"]
+    C --> C3["Papers: Reasoning, RAG"]
+    C --> C4["Papers: Hardware, Multimodal"]
     
-    D --> D1["実践: プロンプト・Finetuning"]
-    D --> D2["実践: RAG（3週連続）"]
-    D --> D3["実践: エージェント"]
-    D --> D4["実践: 評価・安全性"]
-    D --> D5["応用: コード・マルチモーダル"]
-    D --> D6["応用: 科学・ロボット"]
+    D --> D1["Practice: Prompting, Finetuning"]
+    D --> D2["Practice: RAG (3 weeks straight)"]
+    D --> D3["Practice: Agents"]
+    D --> D4["Practice: Evaluation, Safety"]
+    D --> D5["Applications: Code, Multimodal"]
+    D --> D6["Applications: Science, Robotics"]
 ```
 
 ---
 
-## このコースの限界
+## Limitations of This Course
 
-- **理論の深さが限定的** — 最先端の理論を深掘りしたい研究者には物足りない。それはCOS597Rの役割
-- **実装が少ない** — 3課題だが、CS336ほどのコード量はない。LLMを「作る」側の知識はカバーしない
-- **応用範囲の広さが浅さにつながる** — 多様なトピックをカバーする一方、各トピックの深さは限定的
-- **受動的学習になりがち** — 講義主体の形式で、Debate Panelのような批判的議論の訓練はない
+- **Limited theoretical depth** — Researchers seeking cutting-edge theoretical depth will find this insufficient; that's the role of COS597R
+- **Less implementation** — 3 assignments, but not as much code as CS336. Does not cover "building" LLMs
+- **Breadth can lead to shallowness** — While covering diverse topics, depth in each topic is limited
+- **Tends toward passive learning** — Lecture-driven format without the critical debate training found in Debate Panels
 
 ---
 
-## 学習優先順位の中での位置づけ
+## Position Among Learning Priorities
 
-| 側面 | CMU LLMs | 代替コース |
+| Aspect | CMU LLMs | Alternative Courses |
 |------|---------|-----------|
-| 入門しやすさ | 🟢 **最高。前提知識最小限** | CS336: Python習熟必須 |
-| 応用範囲 | 🟢 LLM全応用力タログ | COS597R: 研究に特化 |
-| 理論の深さ | 🟡 応用に必要な分だけ | COS597R: 論文ベースで深い |
-| 実装量 | 🟡 3課題（適度） | CS336: 5課題（大量） |
-| 最新トピック | 🟢 2026年春版で最新 | COS597R: 2024年で固定 |
+| Accessibility | 🟢 **Best. Minimal prerequisites** | CS336: Python proficiency required |
+| Application scope | 🟢 Full LLM application catalog | COS597R: Research-focused |
+| Theoretical depth | 🟡 Just enough for application | COS597R: Paper-based, deeper |
+| Implementation volume | 🟡 3 assignments (moderate) | CS336: 5 assignments (intensive) |
+| Cutting-edge topics | 🟢 Spring 2026 edition, most current | COS597R: Fixed at 2024 |
 
 ---
 
-## 関連Wikiページ
+## Related Wiki Pages
 
-- [[concepts/learning-llms-in-2025]] — Yoav Goldbergの全体ガイド
-- [[concepts/stanford-cs336-language-modeling-from-scratch]] — もう一つのおすすめ（実装寄り）
-- [[concepts/princeton-cos597r-deep-dive-llm]] — もう一つのおすすめ（研究寄り）
-- [[concepts/agentic-rag]] — RAG（第5-7週）
-- [[concepts/llm-as-judge]] — LLM評価（第9週）
-- [[concepts/agent-orchestration-frameworks]] — マルチエージェント（第9週）
-- [[concepts/ai-image-generation]] — マルチモーダル（第11週）
-- [[concepts/ai-safety]] — 安全性（第10週）
-- [[concepts/fine-tuning/peft-lora-qlora]] — ファインチューニング（第3-4週）
-- [[concepts/context-engineering]] — プロンプトエンジニアリング（第2-3週）
-- [[concepts/coding-agents]] — コード生成（第11週）
+- [[concepts/learning-llms-in-2025]] — Yoav Goldberg's overall guide
+- [[concepts/stanford-cs336-language-modeling-from-scratch]] — Another recommendation (implementation-focused)
+- [[concepts/princeton-cos597r-deep-dive-llm]] — Another recommendation (research-focused)
+- [[concepts/agentic-rag]] — RAG (weeks 5-7)
+- [[concepts/llm-as-judge]] — LLM evaluation (week 9)
+- [[concepts/agent-orchestration-frameworks]] — Multi-agent (week 9)
+- [[concepts/ai-image-generation]] — Multimodal (week 11)
+- [[concepts/ai-safety]] — Safety (week 10)
+- [[concepts/fine-tuning/peft-lora-qlora]] — Fine-tuning (weeks 3-4)
+- [[concepts/context-engineering]] — Prompt engineering (weeks 2-3)
+- [[concepts/coding-agents]] — Code generation (week 11)
 
 ---
 
-> **このページはメタ知識（知識マップ）です。** CMU LLMs: Methods and Applications のカリキュラム構造をWiki概念にマッピングしています。実際の講義資料や課題はcmu-llms.org/schedule/ を参照してください。
+> **This page is meta-knowledge (knowledge map).** It maps the curriculum structure of CMU LLMs: Methods and Applications to wiki concepts. For actual lecture materials and assignments, refer to cmu-llms.org/schedule/.

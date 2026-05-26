@@ -5,7 +5,7 @@ tags:
   - protocol
   - infrastructure
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-27
 type: concept
 related:
   - concepts/zero-disk-architecture
@@ -15,29 +15,29 @@ related:
 
 # Object Storage Queue Pattern
 
-## 概要
+## Overview
 
-**Object Storage Queue**は、Amazon S3 / GCSなどの**オブジェクトストレージをキューとして直接利用する**アーキテクチャパターン。turbopuffer社が自社のインデキシングジョブキューとして実装・公開した方式が代表例。
+**Object Storage Queue** is an architectural pattern that uses **object storage (Amazon S3 / GCS) directly as a queue**. The representative implementation was published by turbopuffer, who built their indexing job queue on this approach.
 
-ゼロディスクアーキテクチャ（[[concepts/zero-disk-architecture]]）の一分野であり、状態を一切ローカルディスクに持たず、オブジェクトストレージのCAS（Compare-And-Set）能力を活用して分散キューを実現する。
+It is a branch of the zero-disk architecture ([[concepts/zero-disk-architecture]]) that holds no state on local disk and leverages object storage's CAS (Compare-And-Set) capability to implement a distributed queue.
 
 > "Why are we so obsessed with building on object storage? Because it's simple, predictable, easy to be on-call for, and extremely scalable." — turbopuffer
 
 ---
 
-## アーキテクチャ
+## Architecture
 
-### 5層の進化的設計
+### 5-Layer Evolutionary Design
 
-| 段階 | コンポーネント | 仕組み |
+| Stage | Component | Mechanism |
 |:---|:---|:---|
-| **1. Foundation** | 単一JSONファイル | キュー全体を1つの`queue.json`で表現。Pusherが読んで追記してCAS書き戻し。Workerが読んで進行中マークして書き戻し |
-| **2. スループット** | Group Commit | リクエストをメモリバッファに集約し、1回のCAS書き込みでフラッシュ。RPS制限（GCS ~1 req/s）を回避 |
-| **3. 競合解消** | Stateless Broker | 全クライアントに代わって単一のGroup Commitループを実行するステートレス仲介者。ACKは永続化完了後 |
-| **4. HA** | Broker Failover | Brokerアドレスを`queue.json`内に記録。タイムアウト時に新Brokerが起動。CASにより一意性保証。旧Brokerは最初のCAS失敗で引退 |
-| **5. 信頼性** | Job Heartbeats | Workerが定期的にハートビートを送信。タイムアウト超過でジョブを再クレーム可能 |
+| **1. Foundation** | Single JSON file | Entire queue represented as one `queue.json`. Pusher reads, appends, CAS-writes back. Worker reads, marks in-progress, writes back |
+| **2. Throughput** | Group Commit | Requests aggregated in memory buffer, flushed in one CAS write. Bypasses RPS limits (GCS ~1 req/s) |
+| **3. Contention Resolution** | Stateless Broker | A stateless intermediary running a single Group Commit loop on behalf of all clients. ACKs only after persistence |
+| **4. HA** | Broker Failover | Broker address recorded in `queue.json`. New broker starts on timeout. CAS guarantees uniqueness. Old broker retires on first CAS failure |
+| **5. Reliability** | Job Heartbeats | Workers periodically send heartbeats. Jobs can be re-claimed after timeout |
 
-### データ構造
+### Data Structure
 
 ```json
 {
@@ -48,90 +48,90 @@ related:
 
 - `○` = pending
 - `◐` = in-progress
-- `(♥)` = heartbeat（最終更新時刻）
+- `(♥)` = heartbeat (last update timestamp)
 
 ---
 
-## Zero Disk Architectureとの関係
+## Relationship to Zero Disk Architecture
 
-[[concepts/zero-disk-architecture]]の最も純粋な実装例の1つ。
+One of the purest implementations of [[concepts/zero-disk-architecture]].
 
-| Zero Diskの要件 | Object Storage Queueの実装 |
+| Zero Disk Requirement | Object Storage Queue Implementation |
 |:---|:---|
-| 永続状態をすべてS3/GCSに | 全キュー状態 = 単一JSONファイル on S3/GCS |
-| 計算ノードはステートレス | BrokerもWorkerも完全ステートレス |
-| CASによる一貫性 | S3の条件付き書き込み（If-Match）で競合解決 |
-| 耐久性 | S3/GCSの99.999999999%耐久性をそのまま活用 |
-| インスタント起動/停止 | Brokerは初回CAS失敗で即引退。Workerはどこでも起動可能 |
+| All persistent state on S3/GCS | Full queue state = single JSON file on S3/GCS |
+| Compute nodes are stateless | Both Broker and Worker are fully stateless |
+| Consistency via CAS | Contention resolved via S3 conditional writes (If-Match) |
+| Durability | Leverages S3/GCS 99.999999999% durability directly |
+| Instant start/stop | Broker retires on first CAS failure. Workers can start anywhere |
 
-### LCD Modelの適用
+### LCD Model Application
 
-[[concepts/zero-disk-architecture]]のLCD Model（Latency vs Cost vs Durability）は、Object Storage Queueで以下のように調整される：
+The LCD Model (Latency vs Cost vs Durability) from [[concepts/zero-disk-architecture]] is adjusted as follows for Object Storage Queue:
 
-| 要素 | 選択 | トレードオフ |
+| Element | Choice | Trade-off |
 |:---|:---|:---|
-| **Latency** | Group Commitでバッファリング | 各リクエストに~200msの書き込みレイテンシ |
-| **Cost** | 単一JSONファイル、最小限のAPIコール | S3のCAS書き込み1リクエストでNジョブ処理 |
-| **Durability** | BrokerはS3永続化後にACK | 書き込み完了までリクエストは未承認 |
+| **Latency** | Buffered via Group Commit | ~200ms write latency per request |
+| **Cost** | Single JSON file, minimal API calls | One S3 CAS write processes N jobs |
+| **Durability** | Broker ACKs after S3 persistence | Request unacknowledged until write completes |
 
 ---
 
-## Absurd（Postgres Queue）との比較
+## Comparison with Absurd (Postgres Queue)
 
-[[concepts/absurd-durable-execution]]が「Just Postgres」を掲げるのに対し、Object Storage Queueは「Just S3」に相当する。両者は「Just One Service」という精神を共有するが、トレードオフの性質が根本的に異なる。
+While [[concepts/absurd-durable-execution]] champions "Just Postgres," Object Storage Queue is the equivalent of "Just S3." Both share the "Just One Service" philosophy but differ fundamentally in their trade-offs.
 
-### 比較マトリクス
+### Comparison Matrix
 
-| 軸 | Object Storage Queue (turbopuffer方式) | Absurd (Postgres方式) |
+| Dimension | Object Storage Queue (turbopuffer method) | Absurd (Postgres method) |
 |:---|:---|:---|
-| **ベース基盤** | S3 / GCS | PostgreSQL |
-| **書き込みレイテンシ** | ~200ms（CAS PUT） | <10ms（SKIP LOCKED + INSERT） |
-| **スループット** | Group Commitで数千〜数万 req/s | 数百〜数千 jobs/sec |
-| **MVCC Bloat** | **なし**（オブジェクトストアにはMVCCがない） | **あり**（記事参照） |
-| **一貫性モデル** | CAS（Compare-And-Set） | トランザクション + SKIP LOCKED |
-| **スケール限界** | 事実上無制限（S3のスケール） | テーブルサイズ + VACUUMの制約 |
-| **セルフホスト** | 不可能（S3/GCS依存） | 可能（Postgresのみ） |
-| **キュー全体の可視性** | JSONファイルを読めば全部わかる | SQLクエリ |
-| **運用の複雑性** | Broker層のHA設計が必要 | VACUUM / MVCC管理が必要 |
-| **コスト（小規模）** | ~$0.02/GB + API呼び出し | 無料（既存Postgres） |
-| **コスト（大規模）** | ほぼ一定（S3単価） | ストレージ + VACUUM I/Oで上昇 |
+| **Base infrastructure** | S3 / GCS | PostgreSQL |
+| **Write latency** | ~200ms (CAS PUT) | <10ms (SKIP LOCKED + INSERT) |
+| **Throughput** | Thousands to tens of thousands req/s via Group Commit | Hundreds to thousands jobs/sec |
+| **MVCC Bloat** | **None** (object stores have no MVCC) | **Present** (see article) |
+| **Consistency model** | CAS (Compare-And-Set) | Transactions + SKIP LOCKED |
+| **Scale limit** | Virtually unlimited (S3 scale) | Table size + VACUUM constraints |
+| **Self-hosting** | Impossible (depends on S3/GCS) | Possible (Postgres only) |
+| **Full queue visibility** | Read the JSON file | SQL query |
+| **Operational complexity** | Requires HA design for Broker layer | Requires VACUUM / MVCC management |
+| **Cost (small scale)** | ~$0.02/GB + API calls | Free (existing Postgres) |
+| **Cost (large scale)** | Nearly constant (S3 unit pricing) | Increases with storage + VACUUM I/O |
 
-### 決定的な違い：MVCCの不在
+### Key Difference: Absence of MVCC
 
-最大の差異は**MVCCが存在しない**こと。PlanetScaleの記事が指摘したPostgres Queueの死亡スパイラル（デッドタプル蓄積 → ロック時間増加 → スループット低下）は、オブジェクトストレージベースのキューでは原理的に発生しない。
+The biggest difference is the **absence of MVCC**. The death spiral of Postgres Queues identified by PlanetScale (dead tuple accumulation → increased lock time → throughput degradation) cannot occur in object-storage-based queues by design.
 
-代わりにObject Storage Queueが抱えるリスク：
+Risks that Object Storage Queue instead faces:
 
-| リスク | 影響 | 緩和策 |
+| Risk | Impact | Mitigation |
 |:---|:---|:---|
-| **高い書き込みレイテンシ** | 各PUTに~200ms | Group Commitでペイロードを増やす |
-| **CAS競合** | 高競合下でリトライ頻発 | Brokerによる直列化 + Group Commit |
-| **単一ファイルのサイズ限界** | JSONファイルが巨大化すると読み書きのレイテンシ増大 | 複数ファイル分割（未実装だが理論可能） |
-| **Brokerの単一点** | Brokerが死ぬと新Broker選出まで停止 | タイムアウト検出 + 自動Failover |
-| **オブジェクトストア依存** | GCSのRPS制限等のクラウド依存制約 | Group Commitで実質的に回避 |
+| **High write latency** | ~200ms per PUT | Increase payload via Group Commit |
+| **CAS contention** | Frequent retries under high contention | Broker serialization + Group Commit |
+| **Single file size limit** | JSON file growth increases read/write latency | Multi-file sharding (theoretically possible, not yet implemented) |
+| **Broker single point of failure** | Stops until new broker is elected | Timeout detection + automatic Failover |
+| **Object store dependency** | Cloud-dependent constraints like GCS RPS limits | Effectively bypassed by Group Commit |
 
 ---
 
-## 実装パターンと応用
+## Implementation Patterns and Applications
 
-### 適用可能なユースケース
+### Suitable Use Cases
 
-1. **高スループットなバッチジョブキュー** — インデキシング、エンコード、バッチ推論（turbopuffer本家のユースケース）
-2. **ゼロディスク環境でのキュー** — Lambda + S3構成。状態を一切ローカルに置かない設計と親和性が高い
-3. **簡易分散キュー** — PostgresやRedisを立てたくない小さなチーム。S3があれば動作する
-4. **AI Agentのジョブディスパッチ** — AbsurdがPostgresベースなのに対し、こちらはクラウドネイティブなAgent間連携基盤として
+1. **High-throughput batch job queues** — Indexing, encoding, batch inference (turbopuffer's original use case)
+2. **Queues in zero-disk environments** — Lambda + S3 configurations. Highly compatible with designs that keep no local state
+3. **Simple distributed queues** — For small teams without Postgres or Redis. Works with just S3
+4. **AI Agent job dispatch** — As a cloud-native inter-agent coordination base, contrasting with Absurd's Postgres-based approach
 
-### 非推奨なユースケース
+### Unsuitable Use Cases
 
-1. **低レイテンシ（<50ms）必須** — CAS PUTの~200msの壁
-2. **大量の小メッセージ** — 1メッセージごとにPUTするのはコスト効率が悪い
-3. **厳密なトランザクション保証必須** — at-least-once semantics、CASベースの単一行一貫性
+1. **Low latency (<50ms) required** — The ~200ms CAS PUT wall
+2. **High volume of small messages** — PUTting per-message is cost-inefficient
+3. **Strict transactional guarantees required** — At-least-once semantics, CAS-based single-row consistency
 
 ---
 
-## 参考文献
+## References
 
 - [How to Build a Distributed Queue in a Single JSON File on Object Storage](https://turbopuffer.com/blog/object-storage-queue) — turbopuffer ([[raw/articles/2026-05-07_object-storage-queue-turbopuffer]])
-- [[concepts/zero-disk-architecture]] — ゼロディスクアーキテクチャ概念
-- [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution（対照的なアプローチ）
-- [[entities/turbopuffer]] — turbopuffer社（本パターンの実装者）
+- [[concepts/zero-disk-architecture]] — Zero-disk architecture concept
+- [[concepts/absurd-durable-execution]] — Postgres-Native Durable Execution (contrasting approach)
+- [[entities/turbopuffer]] — turbopuffer (implementer of this pattern)

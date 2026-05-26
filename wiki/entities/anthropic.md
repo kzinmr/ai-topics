@@ -323,112 +323,112 @@ Anthropic's research priorities:
 
 ## Code w/ Claude 2026 — Product Launches (May 2026)
 
-Anthropic は Code w/ Claude 2026 イベントで複数の新製品・機能を発表した：
+At the Code w/ Claude 2026 event, Anthropic announced multiple new products and features:
 
 ### Microsoft 365 GA
 
-Claude の Microsoft 365 統合が大幅に進展：
+Significant progress on Claude's Microsoft 365 integration:
 
-- **Excel, PowerPoint, Word**: 一般提供（GA）開始
-- **Outlook**: パブリックベータ公開
-- Microsoft アプリ間で Claude が会話コンテキストを保持
+- **Excel, PowerPoint, Word**: General Availability (GA) launched
+- **Outlook**: Public beta released
+- Claude maintains conversational context across Microsoft apps
 
-### Dreaming — Managed Agents 研究プレビュー
+### Dreaming — Managed Agents Research Preview
 
-「Dreaming（夢想）」機能が研究プレビューとしてローンチ。Managed Agents プラットフォーム上で動作し、以下がパブリックベータに移行：
+The "Dreaming" feature launched as a research preview. Running on the Managed Agents platform, the following moved to public beta:
 
-- **Outcomes**: エージェントの成果物管理
-- **Multi-agent orchestration**: 複数エージェントの協調実行
-- **Webhooks**: 外部サービス連携
+- **Outcomes**: Agent deliverable management
+- **Multi-agent orchestration**: Coordinated execution of multiple agents
+- **Webhooks**: External service integration
 
-### 金融サービス向けテンプレート
+### Financial Services Templates
 
-Cowork / Claude Code のプラグインとして、または Managed Agents として本番実行可能な金融サービス用エージェントテンプレートを提供：
+Providing production-grade agent templates for financial services — available as Cowork / Claude Code plugins or run as Managed Agents:
 
-- 投資ピッチ作成
-- バリュエーションレビュー
-- 月末決算処理
+- Investment pitch creation
+- Valuation review
+- Month-end closing processing
 
-### 資金調達と評価額
+### Funding and Valuation
 
-Financial Times 報道（2026年5月）：
+Financial Times reporting (May 2026):
 
-- **最大$50Bの資金調達**を協議中
-- **評価額$1T近辺**を目標 — OpenAI の $852B を上回る
-- 調達資金はほぼ全額**計算資源の拡大**に充当予定（供給制約が顧客サービスに影響を与えている）
+- Negotiating a **funding round of up to $50B**
+- Targeting a **~$1T valuation** — surpassing OpenAI's $852B
+- Funds to be deployed almost entirely toward **compute expansion** (supply constraints are impacting customer service)
 
-### 計算資源パートナーシップの全体像
+### Compute Partnership Overview
 
-Anthropic は複数の大規模計算資源契約を締結：
+Anthropic has secured multiple large-scale compute agreements:
 
-| パートナー | 規模 | 状況 |
+| Partner | Scale | Status |
 |-----------|------|------|
-| **SpaceXAI (Colossus 1)** | 300MW / 220K+ GPU; $1.25B/month | 2026年5月発効 |
-| **Amazon** | 最大5GW（2026年末までに~1GW新規） | 契約締結済み |
-| **Google + Broadcom** | 5GW | 2027年稼働開始予定 |
-| **Microsoft + NVIDIA** | $30B Azure容量 | 戦略的パートナーシップ |
-| **Fluidstack** | $50B 米国AIインフラ投資 | 発表済み |
+| **SpaceXAI (Colossus 1)** | 300MW / 220K+ GPU; $1.25B/month | Effective May 2026 |
+| **Amazon** | Up to 5GW (~1GW new by end of 2026) | Contract signed |
+| **Google + Broadcom** | 5GW | Expected operational 2027 |
+| **Microsoft + NVIDIA** | $30B Azure capacity | Strategic partnership |
+| **Fluidstack** | $50B US AI infrastructure investment | Announced |
 
-Claude は **AWS Trainium、Google TPU、NVIDIA GPU** の複数ハードウェアで訓練・実行されている。
+Claude is trained and run across **AWS Trainium, Google TPU, and NVIDIA GPU** hardware.
 
 **SpaceX S-1 Filing Details (May 2026)**: SpaceX's S-1 registration statement reveals the full terms of the Cloud Services Agreement with Anthropic: $1.25 billion per month through May 2029, with capacity ramping in May and June 2026 at a reduced fee. The agreements may be terminated by either party upon 90 days' notice. Notably, SpaceX also uses this compute capacity for its own AI applications (including Grok 5, training at COLOSSUS II), positioning Anthropic as both a customer and a revenue source for SpaceX's growing AI compute business.
 
 Source: [Simon Willison quoting SpaceX S-1](raw/articles/simonwillison.net--2026-may-20-spacex-s1--48fe0f3d.md)
 
-### 収益性論争: 「黒字化」の実態 (May 2026)
+### Profitability Debate: The Reality Behind "Profitability" (May 2026)
 
-2026年5月21日、Wall Street Journal が Anthropic の「初の黒字四半期」報道を掲載:
+On May 21, 2026, the Wall Street Journal reported on Anthropic's "first profitable quarter":
 
-- Q1 2026 売上: **$4.8B** → Q2 2026 売上予測: **$10.9B**
-- Q2 2026 営業利益: **$559M** (EBITDAベース)
-- ウォールストリートジャーナル自身が脚注: 「非公開企業のため会計基準は不明」
+- Q1 2026 Revenue: **$4.8B** → Q2 2026 Revenue Forecast: **$10.9B**
+- Q2 2026 Operating Profit: **$559M** (EBITDA basis)
+- Wall Street Journal's own footnote: "Accounting standards are unclear as the company is private"
 
-しかし、Ed Zitron（[[entities/ed-zitron-s-where-s-your-ed-at]]）の詳細分析により、この「黒字化」は本質的に**会計上の演出**であることが明らかに:
+However, detailed analysis by Ed Zitron ([[entities/ed-zitron-s-where-s-your-ed-at]]) revealed that this "profitability" is essentially an **accounting construct**:
 
-#### SpaceX 割引の構造
+#### SpaceX Discount Structure
 
-SpaceX S-1 提出書類に開示された Colossus 契約の真実:
-- 通常料金: $1.25B/月（= $15B/年）
-- **May-June 2026 は「立ち上げ期間」として割引料金** — つまり黒字化を謳う四半期と**完全に一致**
-- 7月以降は通常料金に戻り、年間計算では非黒字に戻る見込み
+The truth about the Colossus contract revealed in SpaceX's S-1 filing:
+- Standard rate: $1.25B/month (= $15B/year)
+- **May-June 2026 has discounted "ramp-up period" pricing** — meaning it **precisely coincides** with the quarter being touted as profitable
+- Rates return to standard from July onward, reverting to non-profitable on an annual basis
 
-#### ARR / 収益データの矛盾
+#### ARR / Revenue Data Inconsistencies
 
-Anthropic が公表してきた ARR 数字間の不整合:
+Discrepancies among Anthropic's publicly stated ARR figures:
 
-| 日付 | 主張 | 月換算 |
+| Date | Claim | Monthly Equivalent |
 |------|------|--------|
-| 2026/02/12 | ARR $14B | ~$1.17B/月 |
-| 2026/03/03 | ARR $19B (Dario Amodei) | ~$1.58B/月 |
-| 2026/03/09 | 累積収益「$5B超」(CFO Krishna Rao, 宣誓供述) | — |
-| 2026/04/06 | ARR $30B | ~$2.5B/月 |
-| Q1 2026 | WSJ 報道: $4.8B | — |
+| 2026/02/12 | ARR $14B | ~$1.17B/month |
+| 2026/03/03 | ARR $19B (Dario Amodei) | ~$1.58B/month |
+| 2026/03/09 | Cumulative revenue "over $5B" (CFO Krishna Rao, sworn testimony) | — |
+| 2026/04/06 | ARR $30B | ~$2.5B/month |
+| Q1 2026 | WSJ report: $4.8B | — |
 
-CFO の宣誓供述における「$5B超」と WSJ の Q1 単独 $4.8B という数字は深刻な矛盾をはらむ。Rao が裁判所に対して自社ビジネスを 30-40% 過小に申告したとは考えにくい。
+The CFO's sworn testimony of "over $5B" cumulative and WSJ's standalone Q1 figure of $4.8B represent a serious contradiction. It is unlikely that Rao understated the business by 30-40% to a court.
 
-#### 総費用の試算
+#### Total Cost Estimate
 
-「黒字化」が持続不可能である理由:
-- SpaceX に $1.25B/月 × 12 = $15B/年
-- AWS/Google Cloud も同規模以上と仮定 → 各 $1.25B/月
-- 四半期あたり計算資源コスト: ~$11.25B
-- 年間計算資源コスト: ~$45B
-- 加えて2026年1月時点で推論コストが予想比23%高い (The Information 報道)
+Why the "profitability" is unsustainable:
+- SpaceX: $1.25B/month × 12 = $15B/year
+- AWS/Google Cloud assumed at similar or larger scale → $1.25B/month each
+- Quarterly compute cost: ~$11.25B
+- Annual compute cost: ~$45B
+- Additionally, inference costs were 23% above projections as of January 2026 (The Information reporting)
 
-#### 追加的な収益水増しの可能性
+#### Potential Revenue Inflation Methods
 
-Zitron が指摘する手法:
-- 大口企業からのトークン前払い（12ヶ月分の$50Mを一括計上）
-- Claude 追加クレジット購入の前払い計上（10-30%割引）
-- 年間契約の前倒し計上
-- 訓練負荷の意図的な抑制による推論余力確保
+Techniques identified by Zitron:
+- Token prepayments from large enterprises (lump-sum recognition of $50M for 12 months)
+- Upfront recognition of Claude additional credit purchases (10-30% discount)
+- Front-loading annual contract revenue
+- Intentional suppression of training load to free up inference capacity
 
-#### アナリストの評価
+#### Analyst Assessment
 
-Zitron の結論:
-> 「会計不正とは言わないが、数字の指圧級マッサージ（shiatsu-grade massaging）ではある。Anthropic はコストを抑制できると知っている特定の四半期を選んで『黒字』をリークし、ジャーナリストに『コストは増加する可能性がある』という逃げ道を与え、NVIDIA 決算発表日に合わせてリリースした」
+Zitron's conclusion:
+> "I'm not saying it's accounting fraud, but it is shiatsu-grade massaging of numbers. Anthropic deliberately selected a specific quarter they knew they could suppress costs, leaked the 'profitability' story, gave journalists an escape hatch by noting 'costs may increase,' and timed the release to coincide with NVIDIA's earnings day."
 
-「AIバブル懐疑派」への直接的な呼びかけとして、**真にAnthropicの成功を願うなら、むしろこの数字に懐疑的であるべき**と主張。WeWork の「2ヶ月目から黒字」主張との類似性を指摘。
+As a direct appeal to "AI bubble skeptics," he argues that **those who genuinely want Anthropic to succeed should be skeptical of these numbers**. He draws parallels to WeWork's claim of profitability "from month two."
 
 Source: [Ed Zitron — Anthropic's "Profitability" Swindle](raw/articles/wheresyoured.at--anthropics-profitability-swindle--d54ac6ec.md)
 
@@ -455,27 +455,27 @@ At SAP Sapphire 2026, Anthropic and SAP announced plans to embed Claude as a pri
 
 Key focus industries: public sector, healthcare, education, life sciences, utilities.
 
-## Applied AI / FDE サービス戦略 (2026年5月)
+## Applied AI / FDE Service Strategy (May 2026)
 
-### FDE (Forward Deployed Engineer) 採用
+### FDE (Forward Deployed Engineer) Hiring
 
-Anthropic の FDE 求人要項では、以下の責務が明示されている：
+Anthropic's FDE job postings specify the following responsibilities:
 
-- **顧客システムへの深い入り込み**：顧客の本番環境に直接入り、Claude、MCPサーバー、サブエージェント、Agent Skills を活用した本番アプリケーションを構築
-- **再利用可能なパターンの抽出**：「反復可能なデプロイメントパターンを特定・体系化し、Product/Engineering チームにフィードバックする」ことが中核的責務
+- **Deep integration into customer systems**: Enter customer production environments directly, building production applications using Claude, MCP servers, sub-agents, and Agent Skills
+- **Extract reusable patterns**: "Identify and systematize repeatable deployment patterns, feeding them back to Product/Engineering teams" as a core responsibility
 
-これは、OpenAI が採用しているのと同じ **FDE → Product フィードバックループ** の哲学を Anthropic も共有していることを示している。
+This shows that Anthropic shares the same **FDE → Product feedback loop** philosophy that OpenAI employs.
 
-### エンタープライズ AI サービス合弁会社
+### Enterprise AI Services Joint Venture
 
-Blackstone、Hellman & Friedman、Goldman Sachs とのパートナーシップにより、中堅企業向けのエンタープライズ AI サービス会社を設立：
+In partnership with Blackstone, Hellman & Friedman, and Goldman Sachs, establishing an enterprise AI services company for mid-market organizations:
 
-- 重要業務への Claude 組み込みを支援
-- 業界特化型のデプロイメントパターンを蓄積
+- Supporting Claude integration into mission-critical operations
+- Accumulating industry-specific deployment patterns
 
-### 戦略的意味
+### Strategic Implications
 
-Anthropic は OpenAI（DeployCo）と同じ構造的転換を進めている — **API/モデルプロバイダーからデプロイメントサービスプロバイダーへの進化**。FDE モデルはフロンティアラボ全体で業界標準となりつつある。
+Anthropic is undergoing the same structural transformation as OpenAI (DeployCo) — **evolving from an API/model provider to a deployment service provider**. The FDE model is becoming an industry standard across frontier labs.
 
 ## Related
 - [[entities/anthropic]] — The model family

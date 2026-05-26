@@ -2,116 +2,116 @@
 title: "Ian Goodfellow"
 tags: [person]
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-27
 type: entity
 ---
 
 # Ian Goodfellow
 
-## 🔑 基本プロフィール
+## 🔑 Basic Profile
 
-| 項目 | 内容 |
+| Item | Details |
 |------|------|
-| **フルネーム** | Ian Joseph Goodfellow |
-| **生年月日** | 1987年 |
-| **国籍** | アメリカ人 |
-| **学歴** | Stanford University（コンピュータサイエンス学士・修士、2009年）、Université de Montréal（機械学習PhD、2014年） |
-| **現在の役職** | Google DeepMind 研究員（2022年5月-現在） |
-| **主な業績** | Generative Adversarial Networks (GANs) の発明（2014年）、敵対的機械学習のパイオニア、Deep Learning教科書（2016年）の主要著者 |
-| **業界経験** | Willow Garage、Google Brain、OpenAI、Apple、Google DeepMind |
+| **Full Name** | Ian Joseph Goodfellow |
+| **Date of Birth** | 1987 |
+| **Nationality** | American |
+| **Education** | Stanford University (BS/MS Computer Science, 2009), Université de Montréal (PhD Machine Learning, 2014) |
+| **Current Position** | Google DeepMind Researcher (May 2022–Present) |
+| **Key Achievements** | Invented Generative Adversarial Networks (GANs, 2014), pioneer in adversarial machine learning, lead author of Deep Learning textbook (2016) |
+| **Industry Experience** | Willow Garage, Google Brain, OpenAI, Apple, Google DeepMind |
 
-## 📜 教育と初期の影響
+## 📜 Education & Early Influences
 
-- **高校**: San Dieguito High School Academy（2004年卒業）。ディベート部に3年間所属。分析的厳密性と感情的回復力を養った：
-  > *"ディベーターは皆、失敗に感情的に対処する方法を学ぶ。"*
-- **Stanford University（2009年）**: コンピュータサイエンスの学士・修士号取得。Andrew NgとGary Bradskiの指導を受ける。Stanford AI Robotプロジェクトに貢献。
-- **Université de Montréal（2014年）**: 機械学習PhD取得。Yoshua BengioとAaron Courvilleの指導（LISA/Milaラボ）。
-  - 論文: *Deep Learning of Representations and Its Application to Computer Vision*
+- **High School**: San Dieguito High School Academy (graduated 2004). 3 years in debate club, building analytical rigor and emotional resilience:
+  > *"Debaters all learn how to emotionally deal with failure."*
+- **Stanford University (2009)**: BS/MS in Computer Science. Mentored by Andrew Ng and Gary Bradski. Contributed to Stanford AI Robot project.
+- **Université de Montréal (2014)**: PhD in Machine Learning. Advised by Yoshua Bengio and Aaron Courville (LISA/Mila lab).
+  - Thesis: *Deep Learning of Representations and Its Application to Computer Vision*
 
-## 💼 経歴タイムライン
+## 💼 Career Timeline
 
-| 期間 | 組織 | 役割と焦点 |
+| Period | Organization | Role & Focus |
 |:---|:---|:---|
-| **2009年** | Willow Garage | サマーインターン（ロボティクス） |
-| **2013-2016** | Google Brain | 研究インターン→研究員。Street Viewの複数数字認識（>96%精度）をリード |
-| **2016-2017** | OpenAI | 研究員。初期のAI安全性とAGIアラインメント議論 |
-| **2017-2019** | Google Brain | スタッフ研究員。ML堅牢性と敵対的セキュリティ |
-| **2019-2022** | Apple (SPG) | 機械学習ディレクター。プライバシー保護ML、フェデレーテッドラーニング、差分プライバシー |
-| **2022-現在** | Google DeepMind | 研究員。核融合AI、LLM事実性、RLアラインメント |
+| **2009** | Willow Garage | Summer intern (robotics) |
+| **2013–2016** | Google Brain | Research intern → Researcher. Led Street View multi-digit number recognition (>96% accuracy) |
+| **2016–2017** | OpenAI | Researcher. Early AI safety and AGI alignment discussions |
+| **2017–2019** | Google Brain | Staff researcher. ML robustness and adversarial security |
+| **2019–2022** | Apple (SPG) | Director of Machine Learning. Privacy-preserving ML, federated learning, differential privacy |
+| **2022–Present** | Google DeepMind | Researcher. Fusion AI, LLM factuality, RL alignment |
 
-**注目**: 2022年4月、Appleのオフィス復帰義務に抗議して退職。
+**Notable**: Resigned from Apple in April 2022 in protest of the return-to-office mandate.
 
-## 🧠 基礎研究と技術的貢献
+## 🧠 Foundational Research & Technical Contributions
 
 ### 1. Generative Adversarial Networks (GANs, 2014)
 
-- **概念**: 2つのニューラルネットワークが競い合うミニマックスゲーム。生成器（G）が合成データを作成し、識別器（D）が本物 vs 偽物を分類。
-- **オリジナルの目的関数**:
+- **Concept**: A minimax game where two neural networks compete. Generator (G) creates synthetic data, Discriminator (D) classifies real vs. fake.
+- **Original objective function**:
   ```math
   \min_G \max_D V(D, G) = \mathbb{E}_{x \sim p_{data}(x)} [\log D(x)] + \mathbb{E}_{z \sim p_z(z)} [\log (1 - D(G(z)))]
   ```
-- **影響**: 従来の生成的モデルの扱いにくい尤度計算を克服。DCGANsや高忠実度画像合成に進化。現代の生成的AIの基礎を築いた。
+- **Impact**: Overcame intractable likelihood calculations of traditional generative models. Evolved into DCGANs and high-fidelity image synthesis. Laid the foundation for modern generative AI.
 
-### 2. 敵対的機械学習とセキュリティ
+### 2. Adversarial Machine Learning & Security
 
-- **敵対的例**: 人間には知覚できない入力摂動が、高次元空間での線形動作により高信頼度の誤分類を引き起こすことを実証。
-- **Fast Gradient Sign Method (FGSM)**: 計算効率的な攻撃生成手法：
+- **Adversarial examples**: Demonstrated that input perturbations imperceptible to humans cause high-confidence misclassifications due to linear behavior in high-dimensional spaces.
+- **Fast Gradient Sign Method (FGSM)**: A computationally efficient attack generation method:
   ```math
   \eta = \epsilon \cdot \operatorname{sign}(\nabla_x J(\theta, x, y))
   ```
-- **防御**: **敵対的トレーニング**（クリーンデータと摂動データの反復トレーニング）と**差分プライバシー**を先駆的に統合。
-- **実世界のリスク**: 安全クリティカルシステム（例：改ざんされた道路標識に対する自動運転車の脆弱性）の脆弱性を浮き彫りにした。
+- **Defense**: Pioneered integration of **adversarial training** (iterative training on clean and perturbed data) with **differential privacy**.
+- **Real-world risk**: Highlighted vulnerabilities in safety-critical systems (e.g., self-driving car susceptibility to tampered road signs).
 
-### 3. オープンソースとツール
+### 3. Open Source & Tools
 
-- **CleverHans**: 標準化された敵対的テストライブラリを共同作成。
-- **TensorFlow**: 深層学習の民主化に貢献。主要コントリビューター。
+- **CleverHans**: Co-created a standardized adversarial testing library.
+- **TensorFlow**: Major contributor — helped democratize deep learning.
 
-## 📊 出版物とインパクトメトリクス（2025年11月現在）
+## 📊 Publications & Impact Metrics (as of November 2025)
 
-- *Deep Learning*（教科書、2016年、Yoshua Bengio & Aaron Courvilleと共著）：**〜87,798 引用**。グローバルな学術標準。
-- *"Generative Adversarial Nets"*（NeurIPS 2014）：**〜105,000 引用**。生成的AIの基礎論文。
-- *"Explaining and Harnessing Adversarial Examples"*（2015年）：**〜27,773 引用**。MLセキュリティの脆弱性を定義。
-- *"MONA: Myopic Optimization with Non-myopic Approval..."*（ICML 2025）：強化学習におけるマルチステップ報酬ハッキングを緩和するフレームワーク。
+- *Deep Learning* (textbook, 2016, with Yoshua Bengio & Aaron Courville): **~87,798 citations**. Global academic standard.
+- *"Generative Adversarial Nets"* (NeurIPS 2014): **~105,000 citations**. Foundational paper for generative AI.
+- *"Explaining and Harnessing Adversarial Examples"* (2015): **~27,773 citations**. Defined ML security vulnerabilities.
+- *"MONA: Myopic Optimization with Non-myopic Approval..."* (ICML 2025): Framework mitigating multi-step reward hacking in reinforcement learning.
 
-## 🏆 受賞歴と認識
+## 🏆 Awards & Recognition
 
-- **MIT Technology Review**: 35 Innovators Under 35（2017年）
-- **Foreign Policy**: 100 Leading Global Thinkers（2019年）
-- **Fortune**: 40 Under 40（2019年）
-- **アイントホーフェン工科大学**: Holst Memorial Lecture Award（2023年）
-- **NeurIPS**: Test of Time Award（2024年）GANs論文に対して
+- **MIT Technology Review**: 35 Innovators Under 35 (2017)
+- **Foreign Policy**: 100 Leading Global Thinkers (2019)
+- **Fortune**: 40 Under 40 (2019)
+- **Eindhoven University of Technology**: Holst Memorial Lecture Award (2023)
+- **NeurIPS**: Test of Time Award (2024) for the GANs paper
 
-## 🔭 現在の焦点と戦略的方向性（2025年）
+## 🔭 Current Focus & Strategic Direction (2025)
 
-- **核融合AI**: Commonwealth Fusion Systemsと協力して**TORAX**（オープンソースプラズマ物理シミュレーター）を共同開発。強化学習によりトカマク運転を安定化。
-- **LLM事実性とアラインメント**: 大規模言語モデルの真実性向上と、複雑なマルチステップ環境での報酬ハッキング問題に対処。
-- **AI安全性提唱**: 産業界と学界の両方で、倫理的デプロイメント、本番システムにおける堅牢性、プライバシー保護アーキテクチャを強調。
+- **Fusion AI**: Co-developing **TORAX** (open-source plasma physics simulator) with Commonwealth Fusion Systems. Using reinforcement learning to stabilize tokamak operations.
+- **LLM Factuality & Alignment**: Improving truthfulness of large language models and addressing reward hacking in complex multi-step environments.
+- **AI Safety Advocacy**: Emphasizing ethical deployment, robustness in production systems, and privacy-preserving architecture across both industry and academia.
 
-## 🔗 関連人物・プロジェクト
+## 🔗 Related People & Projects
 
-- **Yoshua Bengio**: PhD指導者。深層学習のパイオニア。GANs研究に影響。
-- **Andrew Ng**: Stanford時代のメンター。敵対的機械学習の研究に影響。
-- **Alexey Dosovitskiy**: Transformerアーキテクチャの開発者。GANsと競合する生成的アプローチ。
-- **CleverHans**: 敵対的テストの標準ライブラリ。Goodfellowが共同作成。
-- **TORAX**: 核融合プラズマ制御のオープンソースシミュレーター。Goodfellowが共同開発。
+- **Yoshua Bengio**: PhD advisor. Deep learning pioneer. Influenced GANs research.
+- **Andrew Ng**: Stanford mentor. Influenced adversarial ML research.
+- **Alexey Dosovitskiy**: Developer of Transformer architecture. Competing generative approaches to GANs.
+- **CleverHans**: Standard adversarial testing library co-created by Goodfellow.
+- **TORAX**: Open-source simulator for fusion plasma control co-developed by Goodfellow.
 
-## 📚 代表的な引用
+## 📚 Representative Quotes
 
-> *"ディベーターは皆、失敗に感情的に対処する方法を学ぶ。"* — ディベート部の経験について
+> *"Debaters all learn how to emotionally deal with failure."* — On his debate club experience
 
-> *"敵対的例は、ニューラルネットワークの線形性に起因する。"* — Explaining and Harnessing Adversarial Examples（2015年）
+> *"Adversarial examples arise from the linearity of neural networks."* — Explaining and Harnessing Adversarial Examples (2015)
 
 ---
 
-*最終更新: 2026年4月14日*
-*データソース: Grokipedia、Ian Goodfellowウェブサイト、学術論文、NeurIPS/ICML発表*
-*深度: L2（基本プロフィール、経歴、研究貢献、受賞歴）→ L3へ升级予定（哲学、引用分析、概念的枠組み）*
+*Last updated: April 14, 2026*
+*Data sources: Grokipedia, Ian Goodfellow website, academic papers, NeurIPS/ICML presentations*
+*Depth: L2 (basic profile, career, research contributions, awards) → upgrade to L3 planned (philosophy, citation analysis, conceptual frameworks)*
 
 ## See Also
 
-- [[entities/yann-lecun]] — CNNの発明者。深層学習とコンピュータビジョンのパイオニア。
-- [[fei-fei-li]] — ImageNetの作成者。データ駆動型AIの先駆者。
-- [[yoshua-bengio]] — GoodfellowのPhD指導者。深層学習のパイオニア。
-- [[generative-adversarial-networks]] — Goodfellowが発明した生成的モデルの基盤技術。
-- [[adversarial-machine-learning]] — Goodfellowが先駆けた敵対的機械学習とセキュリティ分野。
+- [[entities/yann-lecun]] — CNN inventor. Deep learning and computer vision pioneer.
+- [[entities/fei-fei-li]] — ImageNet creator. Data-driven AI pioneer.
+- [[entities/yoshua-bengio]] — Goodfellow's PhD advisor. Deep learning pioneer.
+- [[concepts/generative-adversarial-networks]] — Foundational generative model technology invented by Goodfellow.
+- [[concepts/adversarial-machine-learning]] — Adversarial ML and security field pioneered by Goodfellow.
