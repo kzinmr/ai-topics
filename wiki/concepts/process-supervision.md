@@ -10,78 +10,77 @@ tags:
 sources:
   - raw/articles/crawl-2026-04-28-process-supervision.md
 ---
-
 # Process Supervision for AI Agent Runtimes
 
-Process Supervision（プロセス監視）は、長時間実行されるエージェントプロセスのライフサイクル管理、障害検出・復旧、リソース監視を行う基盤技術。AIエージェントを本番運用するための**Harness Engineeringの前提概念**。
+Process Supervision is the foundational technology for lifecycle management, failure detection/recovery, and resource monitoring of long-running agent processes. It is a **prerequisite concept for Harness Engineering** when operating AI agents in production.
 
-## 背景: なぜプロセス監視が重要か
+## Background: Why Process Supervision Matters
 
-AIエージェントは従来のマイクロサービスよりも複雑な障害モードを持つ：
-- LLM呼び出しのタイムアウトやレイテンシスパイク
-- 無限ループ（トークン消費爆発）
-- 部分的なツール実行失敗からの状態不整合
-- クラッシュ後のチェックポイント喪失
+AI agents have more complex failure modes than traditional microservices:
+- LLM call timeouts and latency spikes
+- Infinite loops (token consumption explosion)
+- State inconsistency from partial tool execution failures
+- Checkpoint loss after crashes
 
-Harness Engineeringは「エージェントを実行する環境」を設計するが、その前提としてプロセスの死活監視と自動復旧の仕組みが不可欠となる。
+Harness Engineering designs the "environment for running agents," but its prerequisite is a mechanism for process health monitoring and auto-recovery.
 
-## 主要概念
+## Key Concepts
 
-### 1. スーパーバイザーパターン
+### 1. Supervisor Pattern
 
-スーパーバイザーは管理対象プロセスのライフサイクルを監視するデーモン：
+A supervisor is a daemon that monitors the lifecycle of managed processes:
 
 ```
-[マネージャー] → [スーパーバイザー] → [子プロセスA]
-                                    → [子プロセスB]
-                                    → [子プロセスC]
+[Manager] → [Supervisor] → [Child Process A]
+                            → [Child Process B]
+                            → [Child Process C]
 ```
 
-| 機能 | 説明 |
+| Feature | Description |
 |------|------|
-| **自動再起動** | クラッシュしたプロセスを即座に再起動 |
-| **レート制限** | 再起動ループを防止（max_retries + backoff） |
-| **通知** | 障害イベントを外部システムに伝達 |
-| **Graceful Shutdown** | SIGTERM送信後、猶予期間を経てSIGKILL |
+| **Auto-restart** | Immediately restart crashed processes |
+| **Rate limiting** | Prevent restart loops (max_retries + backoff) |
+| **Notifications** | Relay failure events to external systems |
+| **Graceful Shutdown** | Send SIGTERM, then SIGKILL after grace period |
 
-### 2. スーパーバイザーの状態機械
+### 2. Supervisor State Machine
 
 ```
-[作成] → [起動中] → [実行中] → [停止中] → [停止]
-                   → [クラッシュ] → [起動中] (自動再起動)
-                   → [クラッシュ] → [停止] (最大リトライ超過)
+[Created] → [Starting] → [Running] → [Stopping] → [Stopped]
+                   → [Crashed] → [Starting] (auto-restart)
+                   → [Crashed] → [Stopped] (max retries exceeded)
 ```
 
-### 3. チェックポイントベースの耐久性
+### 3. Checkpoint-Based Durability
 
-エージェントは各決定・ツール呼び出し後に状態を永続ストレージに書き込む：
-- 実行状態（どのステップまで完了したか）
-- ツール実行結果（再実行を避ける）
-- エージェントメモリ/コンテキストの要約
-- タイムスタンプ
+Agents write state to persistent storage after each decision and tool call:
+- Execution state (which steps completed)
+- Tool execution results (avoid re-execution)
+- Agent memory/context summary
+- Timestamps
 
-**回復フロー:**
-1. スーパーバイザーがプロセスクラッシュを検出
-2. プロセスを再起動
-3. エージェントが最後のチェックポイントから状態復元
-4. 未完了のステップから処理再開（冪等性保証付き）
+**Recovery Flow:**
+1. Supervisor detects process crash
+2. Restart the process
+3. Agent restores state from the last checkpoint
+4. Resume processing from incomplete steps (with idempotency guarantees)
 
-## AIエージェント向け実装アプローチ
+## Implementation Approaches for AI Agents
 
-| アプローチ | 説明 | 適切なユースケース |
+| Approach | Description | Suitable For |
 |-----------|------|-----------------|
-| **Dedicated (Temporal)** | Temporalのような耐久性ワークフローエンジン | ミッションクリティカル |
-| **LLM Framework (LangGraph)** | LangGraphのチェックポイント機構 | LLMエコシステム内のチーム |
-| **Agent Runtime (OmniDaemon)** | Agent Supervisorによるプロセス分離 + 自動再起動 | マルチエージェントシステム |
-| **Custom (s6/supervisord)** | Unix process supervisor + カスタム起動スクリプト | 軽量・シンプルなユースケース |
+| **Dedicated (Temporal)** | Durable workflow engine like Temporal | Mission-critical applications |
+| **LLM Framework (LangGraph)** | LangGraph's checkpoint mechanism | Teams within the LLM ecosystem |
+| **Agent Runtime (OmniDaemon)** | Agent Supervisor with process isolation + auto-restart | Multi-agent systems |
+| **Custom (s6/supervisord)** | Unix process supervisor + custom startup scripts | Lightweight, simple use cases |
 
-### OmniDaemon: Agent Supervisorパターン
+### OmniDaemon: Agent Supervisor Pattern
 
-OmniDaemonは各エージェントを独立プロセスで実行し、Agent Supervisorがライフサイクルを管理:
-- **Fault Isolation:** エージェントAのクラッシュがエージェントBに影響しない
-- **Resource Safety:** 厳格なメモリ/CPU境界
-- **Observability:** メトリクス、ログ、状態追跡のビルトイン
-- **Reliability:** リトライ、DLQ（Dead Letter Queue）、ハートビート
+OmniDaemon runs each agent as an independent process, with an Agent Supervisor managing the lifecycle:
+- **Fault Isolation:** A crash in Agent A does not affect Agent B
+- **Resource Safety:** Strict memory/CPU boundaries
+- **Observability:** Built-in metrics, logs, and state tracking
+- **Reliability:** Retry, DLQ (Dead Letter Queue), heartbeats
 
 ```python
 supervisor = await create_supervisor_from_directory(
@@ -91,26 +90,26 @@ supervisor = await create_supervisor_from_directory(
 )
 ```
 
-## 回復パターン
+## Recovery Patterns
 
-| パターン | 説明 |
+| Pattern | Description |
 |---------|------|
-| **Exponential Backoff** | 失敗間隔を倍増（1s → 2s → 4s → 8s） |
-| **Circuit Breaker** | 連続失敗後に即時拒否、クールダウン後再開 |
-| **Dead-Letter Queue** | 処理不能なイベントを別キューに隔離 |
-| **Graceful Degradation** | 非クリティカルツールのスキップと継続 |
+| **Exponential Backoff** | Double failure intervals (1s → 2s → 4s → 8s) |
+| **Circuit Breaker** | Immediate rejection after consecutive failures, resume after cooldown |
+| **Dead-Letter Queue** | Isolate unprocessable events to a separate queue |
+| **Graceful Degradation** | Skip non-critical tools and continue |
 
-## エージェント固有の監視要件
+## Agent-Specific Monitoring Requirements
 
-従来のプロセス監視とは異なり、AIエージェントには以下が必要：
-- **トークン消費監視:** 予算超過の検出と停止
-- **ループ検出:** 同一ツールの繰り返し呼び出しパターン
-- **レイテンシ異常検知:** LLM応答の異常な遅延や異常な長さ
-- **コンテキスト消費チェック:** コンテキストウィンドウ溢れの事前検知
+Unlike traditional process monitoring, AI agents require:
+- **Token consumption monitoring:** Detect and stop budget overruns
+- **Loop detection:** Repeated same-tool invocation patterns
+- **Latency anomaly detection:** Abnormally slow or long LLM responses
+- **Context consumption checks:** Pre-detect context window overflow
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/harness-engineering]] — 上位概念: Harness Engineeringの必須前提技術
-- [[concepts/agent-sandboxing]] — プロセス分離とサンドボックスの関係
-- [[concepts/closing-agent-loop]] — ループ検出とプロセス終了条件
-- [[concepts/context-engineering]] — コンテキスト消費監視との連携
+- [[concepts/harness-engineering]] — Higher-level concept: prerequisite technology for Harness Engineering
+- [[concepts/agent-sandboxing]] — Relationship between process isolation and sandboxing
+- [[concepts/closing-agent-loop]] — Loop detection and process termination conditions
+- [[concepts/context-engineering]] — Coordination with context consumption monitoring

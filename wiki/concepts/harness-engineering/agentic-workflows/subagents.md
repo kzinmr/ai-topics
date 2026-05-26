@@ -18,42 +18,42 @@ sources:
 
 # Subagents
 
-メインのAIエージェントが**独立したサブエージェントを並列に起動**し、それぞれが隔離されたコンテキストとターミナルセッションでタスクを実行するパターン。
+A pattern where the main AI agent spawns **independent sub-agents in parallel**, each executing tasks in an isolated context and terminal session.
 
-## 設計原則
+## Design Principles
 
-### 1. 独立性
+### 1. Independence
 > "Each subagent gets its own conversation, terminal session, and toolset. Only the final summary is returned."
 
-- サブエージェント間は**コンテキストを共有しない**
-- メインエージェントとの会話はサブエージェントに伝わらない
-- 各サブエージェントは独立した環境で動作
+- Sub-agents **do not share context** with each other
+- The main agent's conversation is not passed to sub-agents
+- Each sub-agent operates in an independent environment
 
-### 2. 並列性
+### 2. Parallelism
 > "Batch mode: up to 3 tasks to run in parallel. All run concurrently and results are returned together."
 
-- 複数の独立したタスクを**同時に実行**
-- 結果は配列で返ってくる
-- 待ち時間が大幅に短縮
+- Multiple independent tasks run **simultaneously**
+- Results are returned as an array
+- Significantly reduced wait times
 
-### 3. 自己完結性
+### 3. Self-Containment
 > "Subagents have NO memory of your conversation. Pass all relevant info via the 'context' field."
 
-- サブエージェントへの指示は**完全に自己完結**である必要がある
-- メインの会話履歴は自動的に渡されない
-- 必要なファイルパス、エラーメッセージ、制約条件を明示的に渡す
+- Instructions to sub-agents must be **fully self-contained**
+- The main conversation history is not automatically passed
+- Explicitly pass required file paths, error messages, and constraints
 
-## 使用すべき場合
+## When to Use
 
-| ✅ 向いている | ❌ 向いていない |
+| ✅ Appropriate For | ❌ Not Appropriate For |
 |-------------|---------------|
-| 推論重視のサブタスク（デバッグ、コードレビュー、リサーチ） | 推論不要の単純作業（`execute_code`で十分） |
-| コンテキストが溢れる大規模データ処理 | 単一のツール呼び出し（直接呼び出す） |
-| 並列独立ワークストリーム（AとBを同時にリサーチ） | ユーザーとの対話が必要なタスク（サブエージェントは質問できない） |
+| Reasoning-heavy subtasks (debugging, code review, research) | Simple mechanical tasks (use `execute_code` instead) |
+| Large data processing that would overflow context | Single tool calls (invoke directly) |
+| Parallel independent workstreams (research A and B simultaneously) | Tasks requiring user interaction (sub-agents cannot ask questions) |
 
-## 実装パターン
+## Implementation Patterns
 
-### 基本: 単一サブエージェント
+### Basic: Single Sub-agent
 ```yaml
 delegate_task:
   goal: "Research the latest developments in agentic engineering"
@@ -62,7 +62,7 @@ delegate_task:
   max_iterations: 50
 ```
 
-### 並列: バッチモード
+### Parallel: Batch Mode
 ```yaml
 delegate_task:
   tasks:
@@ -75,7 +75,7 @@ delegate_task:
   max_iterations: 50
 ```
 
-### ACPモード: 外部エージェント連携
+### ACP Mode: External Agent Integration
 ```yaml
 delegate_task:
   goal: "Run Claude Code for deep analysis"
@@ -83,19 +83,19 @@ delegate_task:
   acp_args: ["--acp", "--stdio", "--model", "claude-sonnet-4"]
 ```
 
-## Hermesでの実装例
+## Hermes Implementation Example
 
-Hermesは`delegate_task`ツールを使用して、サブエージェントを**戦略的に**起動する:
+Hermes uses the `delegate_task` tool to launch sub-agents **strategically**:
 
 ```
-1. メインエージェントがタスクを分析
-2. 推論が必要か判断 → 必要ならdelegate_task
-3. サブエージェントに自己完結な指示を渡す
-4. 結果が返ってくるまで他の作業を継続
-5. 結果を統合してユーザーに報告
+1. Main agent analyzes the task
+2. Determines if reasoning is needed → if so, delegate_task
+3. Passes self-contained instructions to sub-agent
+4. Continues other work while waiting for results
+5. Integrates results and reports to user
 ```
 
-### 具体例: Xアカウントのエンリッチメント
+### Example: X Account Enrichment
 ```
 delegate_task:
   goal: "Research this person's X activity, blog, projects, and contributions"
@@ -104,50 +104,50 @@ delegate_task:
   max_iterations: 50
 ```
 
-## 注意点
+## Caveats
 
-### イテレーション制限
+### Iteration Limits
 > "Sub-agents of delegate_task can hit iteration limits (around 50) when processing more than 5 entities, which can prevent file writing from completing."
 
-- サブエージェントは**最大イテレーション数**を持つ
-- 複雑なタスクでは制限に達する可能性がある
-- 5つ以上のエンティティを処理する場合は**バッチ分割**が必要
+- Sub-agents have **maximum iteration limits**
+- Complex tasks may hit these limits
+- Processing 5+ entities requires **batch splitting**
 
-### コンテキスト圧縮
-サブエージェントは**独自のコンテキスト**を持つため:
-- メインエージェントのメモリは共有されない
-- 必要な情報は`context`フィールドで明示的に渡す
-- 「この会話で話したあれ」は通用しない
+### Context Compression
+Since sub-agents have **their own context**:
+- The main agent's memory is not shared
+- Required information must be explicitly passed via the `context` field
+- "That thing we discussed earlier" does not apply
 
-### サブエージェントの要約はLossy（情報が損失する）
+### Sub-Agent Summaries Are Lossy
 
 > *"Always have the main agent read relevant files itself. Sub-agent summaries are lossy; cross-attention in the main context window improves pairwise reasoning."*
 > — Sankalp (Claude Code 2.0 Guide)
 
-サブエージェントの戻り値（要約）には重要な詳細情報が欠落する。精度が求められる判断は**メインエージェントに直接ファイルを読ませる**。
+Sub-agent return values (summaries) are missing important details. For decisions requiring precision, **have the main agent read the files directly**.
 
-**使い分け指針**:
-| タスク | 推奨 | 理由 |
+**Guidance**:
+| Task | Recommended | Reason |
 |--------|------|------|
-| ファイルの内容を深く理解 | メインエージェント | クロスアテンションで正確な推論 |
-| 独立した調査・リサーチ | サブエージェント | 並列実行で高速 |
-| バグ発見・コードレビュー | サブエージェント（Codex等） | 別のモデル視点で発見力向上 |
-| 複雑なリファクタリング | メインエージェント | 文脈理解が不可欠 |
+| Deep file understanding | Main agent | Accurate reasoning via cross-attention |
+| Independent research | Sub-agent | Fast parallel execution |
+| Bug finding, code review | Sub-agent (Codex, etc.) | Different model perspectives improve detection |
+| Complex refactoring | Main agent | Context understanding is essential |
 
-### エラーハンドリング
-- サブエージェントが失敗してもメインエージェントは継続できる
-- 結果は配列で返ってくるので、部分的な成功も処理可能
-- エラー情報は`context`として次のサブエージェントに渡せる
+### Error Handling
+- If a sub-agent fails, the main agent can continue
+- Results are returned as arrays, so partial success can be handled
+- Error information can be passed as `context` to the next sub-agent
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/agentic-engineering]] — 上位概念
-- [[concepts/context-window-management]] — サブエージェントはコンテキスト問題を回避する手段
-- [[concepts/harness-engineering/agentic-workflows/cognitive-debt]] — サブエージェントの自己完結性は認知負債を減らす
-- [[concepts/multi-agent-autonomy-scale]] — サブエージェントは自律性の中間レベル
+- [[concepts/agentic-engineering]] — Higher-level concept
+- [[concepts/context-window-management]] — Sub-agents circumvent context window problems
+- [[concepts/harness-engineering/agentic-workflows/cognitive-debt]] — Sub-agent self-containment reduces cognitive debt
+- [[concepts/multi-agent-autonomy-scale]] — Sub-agents represent a middle level of autonomy
 
-## 参照
+## References
 
-- [[entities/simon-willison]] — 概念提唱者、Hermesでの実装者
+- [[entities/simon-willison]] — Concept originator, Hermes implementer
 - [Subagents guide](https://simonwillison.net/guides/agentic-engineering-patterns/subagents/)
 - [Hermes delegate_task documentation](~/wiki/concepts/harness-engineering/)

@@ -40,9 +40,9 @@ related:
 
 # Claude Code Best Practices
 
-Anthropic公式のClaude Code（エージェント型コーディングツール）使用ベストプラクティスと、経験豊富なユーザーからの実践パターン。
+Best practices for using Claude Code (Anthropic's agentic coding tool) from official Anthropic documentation and experienced users.
 
-## 核心哲学
+## Core Philosophy
 
 > "AI is not magic — it's a very smart intern with an excellent tailwind."
 > — Sankalp, after 20 years of programming experience
@@ -51,52 +51,52 @@ Anthropic公式のClaude Code（エージェント型コーディングツール
 
 > "Context window fills fast, and performance degrades as it fills. Every message, file read, and command output consumes tokens. Managing context is the #1 priority."
 
-**エージェント環境では「書いてレビュー」から「記述して検証」へのシフトが必要。コンテキスト管理が最優先事項。**
+**The agentic environment requires a shift from "write & review" to "describe & verify." Context management is the top priority.**
 
-## 検証とワークフロー
+## Verification & Workflow
 
-### Claudeに作業を検証させる方法（最高レバレッジ）
+### How to Have Claude Verify Its Work (Highest Leverage)
 
 > "Give Claude a way to verify its work. Without clear success criteria, you become the only feedback loop."
 
-| 戦略 | 前 | 後 |
+| Strategy | Before | After |
 |---|---|---|
-| **検証基準の提供** | `「メールアドレスを検証する関数を実装して」` | `「validateEmail関数を書いて。テストケース: user@example.comはtrue、invalidはfalse、user@.comはfalse。実装後にテストを実行して」` |
-| **UI変更の視覚的検証** | `「ダッシュボードを良くして」` | `「[スクリーンショットを貼付] このデザインを実装して。結果のスクリーンショットを撮ってオリジナルと比較して。違いをリストアップして修正して」` |
-| **根本原因の対処** | `「ビルドが失敗してる」` | `「ビルドがこのエラーで失敗: [エラーを貼付]。修正してビルドが成功することを検証して。根本原因に対処して、エラーを抑制しないで」` |
+| **Provide verification criteria** | `"Implement a function to validate email addresses"` | `"Write a validateEmail function. Test cases: user@example.com returns true, invalid returns false, user@.com returns false. Run the tests after implementation"` |
+| **Visual verification of UI changes** | `"Make the dashboard better"` | `"[Attach screenshot] Implement this design. Take a screenshot of the result and compare with the original. List the differences and fix them"` |
+| **Address root causes** | `"The build is failing"` | `"The build fails with this error: [paste error]. Fix it and verify the build passes. Address the root cause — don't suppress the error"` |
 
-- **検証に投資**: テストスイート、リンター、Bashコマンド。`「検証を堅牢にするのに投資しよう」`
-- **Claude Chrome拡張** をUI反復に使用
+- **Invest in verification**: Test suites, linters, Bash commands. `"Let's invest in making verification robust"`
+- Use the **Claude Chrome extension** for UI iteration
 
 ### Explore → Plan → Implement → Commit
 
-調査と実行を分離し、間違った問題を解決するのを避ける。
+Separate exploration from execution to avoid solving the wrong problem.
 
 1. **Explore**: `read /src/auth and understand how we handle sessions and login...`
-2. **Plan**: `I want to add Google OAuth. What files need to change? Create a plan.` → `Ctrl+G` でエディタで計画を編集
+2. **Plan**: `I want to add Google OAuth. What files need to change? Create a plan.` → edit the plan with Ctrl+G in the editor
 3. **Implement**: `implement the OAuth flow from your plan. write tests... run the test suite and fix any failures.`
 4. **Commit**: `commit with a descriptive message and open a PR`
 
-複雑/不確実なタスクには**Plan Mode**を使用。簡単な修正はスキップ。
+For complex or uncertain tasks, use **Plan Mode**. Skip for simple fixes.
 
-## プロンプティングとコミュニケーション
+## Prompting & Communication
 
-### 具体的なコンテキストの提供
-- **スコープタスク**: ファイル、シナリオ、テスト設定を指定
-- **ソースへのポインタ**: `「ExecutionFactoryのgit履歴を見て、APIがどう進化したか要約して」`
-- **パターンの参照**: `「既存のウィジェットの実装を見て... HotDogWidget.phpが良い例。パターンに従って...」`
-- **症状の説明**: `「ユーザーがセッションタイムアウト後にログインに失敗すると報告。src/auth/の認証フローをチェックして...問題を再現する失敗するテストを書いて、修正して」`
+### Provide Specific Context
+- **Scope the task**: Specify files, scenarios, test configurations
+- **Point to sources**: `"Look at the git history of ExecutionFactory and summarize how the API evolved"`
+- **Reference patterns**: `"Look at the existing widget implementation... HotDogWidget.php is a good example. Follow that pattern..."`
+- **Describe symptoms**: `"Users report login failures after session timeout. Check the auth flow in src/auth/... Write a failing test that reproduces the issue, then fix it"`
 
-### Claudeにインタビューさせる
-大規模機能の場合:
+### Have Claude Interview You
+For large features:
 ```text
 I want to build [brief description]. Interview me in detail using the AskUserQuestion tool.
 Ask about technical implementation, UI/UX, edge cases, concerns, and tradeoffs.
 Keep interviewing until we've covered everything, then write a complete spec to SPEC.md.
 ```
-**クリーンなコンテキストで新しいセッションを開始**して仕様を実装。
+**Start a fresh session with clean context** to implement the spec.
 
-## CLAUDE.md（永続コンテキスト）
+## CLAUDE.md (Persistent Context)
 
 ### Team-Level CLAUDE.md
 
@@ -120,11 +120,11 @@ A shared `CLAUDE.md` in the project root serves as a "configuration file" for th
 - State management via React Query + Zustand
 ```
 
-- `/init` でスターターファイルを生成。**短く人間可読に**保つ
-- **✅ 含める**: Claudeが推測できないBashコマンド、非標準コードスタイル、テスト設定、リポジトリエチケット、アーキテクチャ決定、環境の癖、一般的な落とし穴
-- **❌ 除外**: Claudeが推測可能なもの、標準規約、詳細なAPIドキュメント、頻繁に変わる情報、長いチュートリアル、ファイルごとの説明、自明なルール
-- **インポート構文**: `See @README.md... Git workflow: @docs/git-instructions.md`
-- **場所**: `~/.claude/CLAUDE.md`（グローバル）、`./CLAUDE.md`（プロジェクト）、`./CLAUDE.local.md`（個人、`.gitignore`）、親/子ディレクトリ（自動ロード）
+- Generate starter files with `/init`. Keep it **short and human-readable**
+- **✅ Include**: Bash commands Claude can't guess, non-standard code styles, test setup, repo etiquette, architecture decisions, environment quirks, common pitfalls
+- **❌ Exclude**: What Claude can infer, standard conventions, detailed API docs, frequently changing info, long tutorials, file-by-file explanations, trivial rules
+- **Import syntax**: `See @README.md... Git workflow: @docs/git-instructions.md`
+- **Location**: `~/.claude/CLAUDE.md` (global), `./CLAUDE.md` (project), `./CLAUDE.local.md` (personal, `.gitignore`), parent/child directories (auto-loaded)
 
 > "If Claude keeps doing something you don't want despite having a rule against it, the file is probably too long." Prune ruthlessly.
 
@@ -135,16 +135,16 @@ A shared `CLAUDE.md` in the project root serves as a "configuration file" for th
 3. **Include anti-patterns** — "Don't use X" is as valuable as "Use Y"
 4. **Version control it** — CLAUDE.md should evolve with the project
 
-## コンテキスト管理
+## Context Management
 
 > "Managing context is the #1 priority."
 
-**コンテキストは有限リソース**。コンテキストを浪費するものはパフォーマンスを劣化させる。
+**Context is a finite resource.** Anything that wastes context degrades performance.
 
-- **ファイル読み込みを制限**: Claudeが必要とする正確なファイルのみを読み込む。推測可能なものは読み込ませない
-- **出力を最小化**: 長いコマンド出力はファイルにリダイレクト。必要な部分のみを表示
-- **段階的アプローチ**: 大きなタスクを小さなステップに分解。各ステップで検証
-- **外部メモリ**: Claude Codeのメモリファイル（`memory.md`等）を活用
+- **Limit file reads**: Only load the exact files Claude needs. Don't load what can be inferred
+- **Minimize output**: Redirect long command output to files. Show only necessary portions
+- **Incremental approach**: Break large tasks into small steps. Verify at each step
+- **External memory**: Leverage Claude Code's memory files (`memory.md`, etc.)
 
 ### Session Hygiene
 
@@ -364,16 +364,16 @@ These best practices embody the agentic engineering philosophy:
 | Context management | CLAUDE.md, session hygiene |
 | Tool augmentation | MCP servers for extended capabilities |
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/harness-engineering]] — 上位インデックス
-- [[concepts/context-engineering]] — コンテキストエンジニアリング
-- [[concepts/building-effective-agents]] — エージェント構築の基本原理
-- [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] — エージェントとのGit使用
-- [[concepts/inference-speed-development]] — 高速イテレーション開発
-- [[concepts/claude-code-source-patterns]] — Claude Code内部パターン
-- [[concepts/context-window-management]] — コンテキスト管理
-- [[concepts/ai-coding-reliability]] — AIコーディングの信頼性
+- [[concepts/harness-engineering]] — Higher-level index
+- [[concepts/context-engineering]] — Context engineering
+- [[concepts/building-effective-agents]] — Foundational principles of agent building
+- [[concepts/harness-engineering/agentic-workflows/using-git-with-agents]] — Using Git with agents
+- [[concepts/inference-speed-development]] — Fast iteration development
+- [[concepts/claude-code-source-patterns]] — Claude Code internal patterns
+- [[concepts/context-window-management]] — Context management
+- [[concepts/ai-coding-reliability]] — AI coding reliability
 
 ## Sources
 

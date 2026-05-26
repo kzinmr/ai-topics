@@ -20,43 +20,42 @@ sources:
   - url: "https://ranthebuilder.cloud/blog/claude-code-best-practices-lessons-from-real-projects"
     title: "Claude Code Best Practices: Lessons from Real Projects (Ran Isenberg, 2026)"
 ---
-
 # Claude Code Best Practices
 
-**Claude Code Best Practices** は、Anthropic の AI コーディングエージェント「Claude Code」を最大限に活用するための設計パターンと運用ノウハウの集大成。**CLAUDE.md の設定**、**プロンプティングパターン**、**ワークフロー習慣**の3つに大別される。
+**Claude Code Best Practices** is a collection of design patterns and operational knowledge for maximizing Anthropic's AI coding agent, Claude Code. It is organized into three categories: **CLAUDE.md setup**, **prompting patterns**, and **workflow habits**.
 
-## 3つの基本カテゴリ
+## Three Basic Categories
 
-### 1. プロジェクトセットアップ
+### 1. Project Setup
 
-#### CLAUDE.md（最重要）
-プロジェクトの「メモリーカード」。1回の作成で毎セッション20〜30%のトークンを節約：
+#### CLAUDE.md (Most Important)
+A project's "memory card." A single setup saves 20–30% tokens per session:
 ```
-# プロジェクト概要と対象読者
-# 技術スタックとフレームワークバージョン
-# 主要なビルド・テスト・デプロイコマンド
-# プロジェクト構造
-# コーディング規約
-# 重要なルール（秘密情報非コミット、アクセシビリティ要件など）
+# Project overview and target audience
+# Tech stack and framework versions
+# Key build, test, and deploy commands
+# Project structure
+# Coding conventions
+# Important rules (no committing secrets, accessibility requirements, etc.)
 ```
-**重要**: 200行以内に抑える。肥大化は逆効果。
+**Important**: Keep under 200 lines. Bloating is counterproductive.
 
-#### CLAUDE.md 階層（3レベル）
-Claude Certified Architect 試験では CLAUDE.md の3レベル階層が頻出（Domain 3, 20%）:
+#### CLAUDE.md Hierarchy (3 Levels)
+The Claude Certified Architect exam frequently tests the 3-level hierarchy of CLAUDE.md (Domain 3, 20%):
 
-| レベル | 場所 | 特性 |
+| Level | Location | Characteristics |
 |--------|------|------|
-| ユーザーレベル | `~/.claude/CLAUDE.md` | バージョン管理されない、共有されない |
-| プロジェクトレベル | `.claude/CLAUDE.md` | バージョン管理、チーム共有 |
-| ディレクトリレベル | サブディレクトリ内のファイル | ディレクトリバインド |
+| User level | `~/.claude/CLAUDE.md` | Not version-controlled, not shared |
+| Project level | `.claude/CLAUDE.md` | Version-controlled, team-shared |
+| Directory level | Files in subdirectories | Directory-bound |
 
-**試験の罠**: チームメンバーが指示を見逃す → ユーザーレベル設定に含まれているため（バージョン管理されず、共有されない）。
+**Exam trap**: Team members miss instructions → because they are in user-level settings (not version-controlled, not shared).
 
-#### パス固有ルール（`.claude/rules/`）
-YAML frontmatter の glob パターン（例: `**/*.test.tsx`）で**コードベース全体**に規約を適用。ディレクトリレベルの CLAUDE.md ではこれができない（ディレクトリバインド）。試験で問われる重要概念。
+#### Path-Specific Rules (`.claude/rules/`)
+Apply conventions to the **entire codebase** via YAML frontmatter glob patterns (e.g., `**/*.test.tsx`). Directory-level CLAUDE.md cannot do this (directory-bound). Key concept tested in exams.
 
 #### .claudeignore
-`.gitignore` と同様に、Claude Code がスキップするファイルを指定：
+Like `.gitignore`, specifies files Claude Code should skip:
 ```
 node_modules/
 .next/
@@ -66,60 +65,60 @@ dist/
 coverage/
 .env*
 ```
-トークン消費を50〜70%削減可能。
+Can reduce token consumption by 50–70%.
 
-#### ルール（`.claude/rules/*.md`）
-トピック別のモジュラー設定：
-- テストガイドライン
-- データ可視化規約
-- API 設計ルール
+#### Rules (`.claude/rules/*.md`)
+Modular, topic-specific configuration:
+- Test guidelines
+- Data visualization conventions
+- API design rules
 
-### 2. プロンプティングパターン
+### 2. Prompting Patterns
 
-| パターン | 説明 | 使用タイミング |
+| Pattern | Description | When to Use |
 |---------|------|--------------|
-| **Plan Mode** | 実行前に計画を確認 | 3ファイル以上に影響する変更 |
-| **Feedback Loops** | 品質を2〜3倍向上 | コードレビュー・リファクタリング |
-| **Pattern Reference** | 既存パターンを参照 | 新しいAPIルート作成など |
-| **One Task Per Session** | 1セッション=1タスク | 複雑なマルチステップ作業 |
+| **Plan Mode** | Review plan before execution | Changes affecting 3+ files |
+| **Feedback Loops** | 2–3x quality improvement | Code review, refactoring |
+| **Pattern Reference** | Reference existing patterns | Creating new API routes, etc. |
+| **One Task Per Session** | 1 session = 1 task | Complex multi-step work |
 
-### 3. ワークフロー習慣
+### 3. Workflow Habits
 
-- **/compact**: コンテキスト圧縮（200Kウィンドウ管理）
-- **Hooks**: 確定的な品質ゲート（毎回必ず実行）
-- **Slash Commands**: カスタムコマンド（git, test, PR）
-- **Git Worktrees**: 5つの Claude エージェントを並列実行
-- **Subagents**: セキュリティレビューなどの専門タスクを委譲
+- **/compact**: Context compression (200K window management)
+- **Hooks**: Deterministic quality gates (always executed)
+- **Slash Commands**: Custom commands (git, test, PR)
+- **Git Worktrees**: Run 5 Claude agents in parallel
+- **Subagents**: Delegate specialized tasks (security review, etc.)
 
-## 上級テクニック
+## Advanced Techniques
 
-| テクニック | 説明 |
+| Technique | Description |
 |-----------|------|
-| **Hooks は必須、CLAUDE.md は助言** | Hooks は確定的に実行、CLAUDE.md は参考情報 |
-| **Subagents は別コンテキスト** | サブエージェントは独立したコンテキストウィンドウで動作 |
-| **Skills は自動発火** | `.claude/skills/` の SKILL.md が文脈に応じて自動適用 |
-| **承認疲れ対策** | Allowlist + Sandbox で頻繁な承認を効率化 |
-| **2回失敗 = /clear** | 2回連続失敗したらセッションリセット |
-| **1回のセッション=1タスク** | 集中したコンテキストで最高のパフォーマンス |
+| **Hooks are mandatory, CLAUDE.md is advisory** | Hooks execute deterministically; CLAUDE.md is reference info |
+| **Subagents have separate context** | Sub-agents operate in independent context windows |
+| **Skills auto-fire** | `SKILL.md` in `.claude/skills/` auto-applies based on context |
+| **Approval fatigue mitigation** | Streamline frequent approvals with Allowlist + Sandbox |
+| **2 failures = /clear** | Reset session after 2 consecutive failures |
+| **1 session = 1 task** | Focused context for best performance |
 
-## よくある落とし穴
+## Common Pitfalls
 
-| 落とし穴 | 対策 |
+| Pitfall | Countermeasure |
 |---------|------|
-| CLAUDE.md が長すぎる | 200行以内、リンクで外部化 |
-| 複数タスクを1セッションで | タスクごとに /compact または新規セッション |
-| 承認を毎回要求 | Allowlist + Sandbox 設定 |
-| Hooks を使わない | 確定的な品質ゲートを設定 |
-| 計画なしで実行 | Plan Mode で事前確認 |
+| CLAUDE.md too long | Keep under 200 lines, externalize with links |
+| Multiple tasks in one session | Use /compact or new session per task |
+| Requesting approval every time | Configure Allowlist + Sandbox |
+| Not using Hooks | Set up deterministic quality gates |
+| Executing without planning | Verify upfront with Plan Mode |
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/claude-perfect-memory]] — Claude Code の永続メモリ設計
-- [[concepts/agent-loop-orchestration]] — エージェントループパターン
-- [[concepts/monty-sandbox]] — コード実行サンドボックス
-- [[concepts/claude-certified-architect-domains]] — Claude認定アーキテクト5ドメイン知識（agentic loop, hooks, hub-and-spoke, コンテキスト管理）
+- [[concepts/claude-perfect-memory]] — Claude Code's persistent memory design
+- [[concepts/agent-loop-orchestration]] — Agent loop patterns
+- [[concepts/monty-sandbox]] — Code execution sandbox
+- [[concepts/claude-certified-architect-domains]] — Claude Certified Architect's 5 domain knowledge (agentic loop, hooks, hub-and-spoke, context management)
 
-## ソース
+## Sources
 
 - [Official Claude Code Best Practices (Anthropic)](https://code.claude.com/docs/en/best-practices)
 - [Claude Code Best Practices: 15 Tips from 6 Projects](https://aiorg.dev/blog/claude-code-best-practices)

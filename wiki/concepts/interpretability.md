@@ -23,69 +23,68 @@ sources:
   - https://www.anthropic.com/news/golden-gate-claude
   - https://thesephist.com/posts/prism/
 ---
-
 # Interpretability (LLM)
 
-**Interpretability**とは、LLMの内部で「何が起きているか」を理解しようとする研究分野。モデルが「考えている」ことを可視化し、具体的な特徴（feature）や回路（circuit）として説明することを目指す。
+**Interpretability** is a research field that seeks to understand "what is happening" inside an LLM. It aims to visualize what models are "thinking" and explain it in terms of concrete features and circuits.
 
-> **一言で**: LLMのブラックボックスを開けて、中の歯車を見えるようにする営み。
+> **In a word**: The endeavor to open the LLM's black box and see the gears inside.
 
-## 背景：なぜ解釈可能性なのか
+## Background: Why Interpretability
 
-LLMの性能が指数関数的に向上するにつれて、「モデルがなぜその出力をしたのか」を説明できないことが、安全性と信頼性の最大のボトルネックになっている。プロンプトで望む出力を得られても、モデル内部で実際に何が起きているかは不明のまま。
+As LLM performance improves exponentially, the inability to explain "why the model produced that output" has become the biggest bottleneck for safety and reliability. Even when prompts produce desired outputs, what is actually happening inside the model remains unknown.
 
-[[concepts/scaling-hypothesis]]が示す通り、モデルが賢くなるほど人間が設計した「構造」が消えていき、内部の説明可能性は低下する。解釈可能性研究は、この**性能と制御性のトレードオフ**に正面から取り組む試みである。
+As [[concepts/scaling-hypothesis]] shows, the more capable models become, the more human-designed "structure" disappears, and internal explainability decreases. Interpretability research is a direct attempt to confront this **trade-off between performance and controllability**.
 
-## 主要なアプローチ
+## Major Approaches
 
-### Feature Extraction（特徴抽出）
-LLMの内部表現（activation）を「特徴」に分解する。各特徴は特定の概念に対応する（例：「Golden Gate Bridge」「アラビア語」「詐欺メール」）。
+### Feature Extraction
+Decomposes LLM's internal representations (activations) into "features." Each feature corresponds to a specific concept (e.g., "Golden Gate Bridge," "Arabic," "spam email").
 
-- AnthropicのSparse Autoencoder（SAE）による特徴分解が代表的
-- 数百万の特徴を抽出し、それぞれが何を表すかラベル付けする
-- 同じ入力に対しては、同じ特徴が信頼性高く活性化する
+- Anthropic's Sparse Autoencoder (SAE) feature decomposition is representative
+- Extracts millions of features, labels what each represents
+- The same features reliably activate for the same inputs
 
-### Circuit Analysis（回路解析）
-複数の特徴がどう接続し、相互作用するかを追跡する。特定の能力（数学的推論、コード生成など）の背後にある「計算回路」を特定する。
+### Circuit Analysis
+Tracks how multiple features connect and interact. Identifies the "computational circuits" behind specific capabilities (mathematical reasoning, code generation, etc.).
 
-### Activation Steering（活性化操作）→ [[concepts/activation-steering]]
-特定の特徴の活性化強度を操作することで、モデルの振る舞いを制御する技術。解釈可能性の「理解する」側面から「制御する」側面への応用。
+### Activation Steering → [[concepts/activation-steering]]
+A technique to control model behavior by manipulating the activation strength of specific features. An application of interpretability moving from "understanding" to "controlling."
 
-## ランドマーク
+## Landmarks
 
-| 年 | 成果 | 意味 |
+| Year | Achievement | Significance |
 |----|------|------|
-| 2023 | Anthropic, 「Toy Models of Superposition」 | 特徴が重ね合わさっていることを理論化 |
-| 2024.3 | Anthropic, 「Scaling Monosemanticity」 | Claude 3 Sonnetから数百万の解釈可能な特徴を抽出 |
-| 2024.5 | Golden Gate Claude | 特定の特徴を増幅するとClaudeがその「人格」になることを実証 |
-| 2024.10 | Entropix（XJDR, 解説：Thariq Shihipar） | エントロピー/バレントロピーによる不確実性検出 |
-| 2024.11 | Goodfire.ai | Llamaモデル向けの特徴操作ツール |
-| 2025 | Abliteration (mlabonne) | RLHF拒否反応を特徴方向の削除で「無検閲化」 |
+| 2023 | Anthropic, "Toy Models of Superposition" | Theoretically established that features are superimposed |
+| 2024.3 | Anthropic, "Scaling Monosemanticity" | Extracted millions of interpretable features from Claude 3 Sonnet |
+| 2024.5 | Golden Gate Claude | Demonstrated that amplifying specific features makes Claude adopt that "personality" |
+| 2024.10 | Entropix (XJDR, explained by Thariq Shihipar) | Uncertainty detection via entropy/varentropy |
+| 2024.11 | Goodfire.ai | Feature manipulation tool for Llama models |
+| 2025 | Abliteration (mlabonne) | "Uncensoring" models by deleting RLHF refusal feature directions |
 
-## 開発者にとっての意義
+## Significance for Developers
 
-Thariq Shihiparは「Should Developers Care about Interpretability?」（2024.11）で、解釈可能性が単なる学術的興味ではなく実用的なエンジニアリングツールであることを以下の応用で示している：
+Thariq Shihipar, in "Should Developers Care about Interpretability?" (Nov 2024), demonstrates that interpretability is not merely academic but a practical engineering tool with these applications:
 
-1. **言葉で記述できないスタイルの制御**: 「70%親切、50%簡潔、80%プロフェッショナル」のようなニュアンス
-2. **RLHFの副作用回避**: 推論時の選択的操作で、全ユーザー一律のRLHF後処理を回避
-3. **ユーザー嗜好の永続的記憶**: 会話が長くなると失われる「簡潔に答えて」のような嗜好を特徴操作で保持
-4. **安価で再現性のある分類**: スパム検出などを、別モデルを学習せずに特徴活性化パターンで実現
+1. **Controlling styles that can't be described in words**: Nuances like "70% kind, 50% concise, 80% professional"
+2. **Avoiding RLHF side effects**: Selective manipulation at inference time avoids one-size-fits-all RLHF post-processing
+3. **Persistent user preferences**: Maintaining preferences like "answer concisely" that are lost in long conversations, via feature manipulation
+4. **Cheap, reproducible classification**: Implementing spam detection etc. via feature activation patterns without training separate models
 
-## 制約と課題
+## Limitations and Challenges
 
-- **分布外への逸脱**: 特徴の過剰増幅はモデルを「言語のルールに従わない」状態にしうる（brain surgery vs プロンプトは「丁寧にお願いする」こと）
-- **特徴ラベルの信頼性**: 人間＋機械によるラベリングは誤分類のリスクがある
-- **回路の副作用**: ある特徴の操作が予期せぬ他の特徴・回路を活性化する可能性（RLHFと同様の問題）
-- **広範な実用化は未達**: Anthropicの内部利用を除き、本格的なプロダクション活用事例は限定的
+- **Out-of-distribution deviation**: Over-amplifying features can make models "disobey linguistic rules" (brain surgery vs prompting is like "asking politely")
+- **Feature label reliability**: Human + machine labeling carries misclassification risk
+- **Circuit side effects**: Manipulating one feature may unexpectedly activate other features/circuits (similar problem to RLHF)
+- **Broad practical adoption not yet achieved**: Beyond Anthropic's internal use, full production deployment cases are limited
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/activation-steering]] — 特徴操作の具体的技術
-- [[concepts/scaling-hypothesis]] — スケールと制御性のトレードオフ
-- [[concepts/rlhf]] — 従来の制御手法。steeringはその補完/代替を目指す
-- [[concepts/entropix]] — 不確実性検出による適応的サンプリング
+- [[concepts/activation-steering]] — Concrete technique for feature manipulation
+- [[concepts/scaling-hypothesis]] — Trade-off between scale and controllability
+- [[concepts/rlhf]] — Traditional control method; steering aims to complement/replace it
+- [[concepts/entropix]] — Adaptive sampling via uncertainty detection
 
-## 参照
+## References
 
 - [Scaling Monosemanticity (Anthropic, 2024)](https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html)
 - [Golden Gate Claude (Anthropic, 2024)](https://www.anthropic.com/news/golden-gate-claude)
