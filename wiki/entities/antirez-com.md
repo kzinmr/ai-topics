@@ -44,7 +44,7 @@ His 2025 project voxtral.c — a bare-metal, pure-C implementation of a multimod
 | 2026 | Published "Implementing a clear room Z80 / ZX Spectrum emulator with Claude Code" — documenting AI pair programming in practice |
 | 2026 | Published "Redis patterns for coding" — documentation resource for LLMs and humans alike |
 | 2026 | Published "GNU and the AI reimplementations" — drawing parallels between GNU's clean-room UNIX rewrites and today's AI-generated code |
-| 2026 | Published "AI cybersecurity is not proof of work" — argues model intelligence, not GPU scale, wins in cybersecurity
+| 2026 | Published "AI cybersecurity is not proof of work" — argues model intelligence, not GPU scale, wins in cybersecurity |
 | 2026 | Published "First Token Cutoff LLM sampling" — critiques nucleus sampling (top-p) and proposes a new algorithm to avoid selecting suboptimal tokens that push generation toward hallucination |
 | 2026-05 | Released DS4 (DwarfStar 4) — local AI inference project running DeepSeek V4 Flash with asymmetric 2/8-bit quantization on consumer Macs. Achieved viral growth in first week. |
 
@@ -137,39 +137,39 @@ Sanfilippo crafts his own data structures (SDS for strings, Rax for radix trees)
 - **Joy-driven development**: Left and returned to Redis based on whether the work brought fulfillment
 - **Local AI frontier**: DS4 proves that quasi-frontier models can run on consumer hardware, challenging the cloud-only paradigm
 
-### DS4 (DwarfStar 4) — ローカル推論フロンティア (May 2026)
+### DS4 (DwarfStar 4) — Local Inference Frontier (May 2026)
 
-2026年5月、antirez は **DS4 (DwarfStar 4)** をリリース。DeepSeek V4 Flash を 2/8-bit 非対称量子化で Mac（96-128GB RAM）上で実行するローカル推論プロジェクト。
+In May 2026, antirez released **DS4 (DwarfStar 4)**, a local inference project that runs DeepSeek V4 Flash with 2/8-bit asymmetric quantization on consumer Macs (96-128GB RAM).
 
-#### 技術的ブレークスルー
-- **非対称量子化 (2/8-bit)**: ほとんどの層を 2-bit、重要な層のみ 8-bit で量子化 — 品質を維持しながらメモリ使用量を劇的削減
-- **ベクトルステアリング**: モデル挙動の制御機能を内蔵、クラウド API では不可能な自由度
-- **1週間で構築**: GPT-5.5 をコーディングパートナーとして活用、ただし「LLM と穏やかに話す方法を知っている必要がある」
+#### Technical Breakthrough
+- **Asymmetric quantization (2/8-bit)**: Most layers quantized to 2-bit, critical layers to 8-bit — dramatically reducing memory usage while maintaining quality
+- **Vector steering**: Built-in model behavior control, offering a degree of freedom impossible with cloud APIs
+- **Built in one week**: Using GPT-5.5 as a coding partner, though "you need to know how to talk gently to the LLM"
 
-#### 意義
+#### Significance
 > "It is the first time since I play with local inference that I find myself using a local model for serious stuff that I would normally ask to Claude / GPT."
 
-antirez にとって、これはローカル AI の転換点。DS4 の体験は「フロンティアモデル (B)」に圧倒的に近く、従来の「小さなローカルモデル (A)」とは質的に異なる。
+For antirez, this is a turning point for local AI. The DS4 experience is overwhelmingly close to "frontier model (B)," qualitatively different from conventional "small local models (A)."
 
-#### モデル非依存設計
-antirez は DS4 が DeepSeek V4 Flash 専用で終わるプロジェクトではないと明言している：「その時点でベストなオープンウェイトモデルで、かつハイエンド Mac や DGX Spark 級の"GPU in a box"で実用的に速いもの」が DS4 のエンジンになる。V4 Flash の次期チェックポイント、特にコーディング特化版への期待が表明されている。
+#### Model-Agnostic Design
+antirez explicitly states that DS4 is not a project that ends with DeepSeek V4 Flash: "It will be powered by whichever open-weight model is best at the time, and runs fast enough on a high-end Mac or DGX Spark-class 'GPU in a box.'" He expressed interest in V4 Flash's next checkpoints, especially coding-specialized variants.
 
-ドメイン特化バリアント（ds4-coding, ds4-legal, ds4-medical）の構想では「質問に応じて必要なモデルをロードするだけ (you just load what you need depending on the question)」というプラグイン的な運用が想定されている。
+Planned domain-specific variants (ds4-coding, ds4-legal, ds4-medical) envision a plug-in-like operation: "you just load what you need depending on the question."
 
-#### 将来計画
-- 品質ベンチマークの体系的実施
-- コーディングエージェントのプロジェクト内蔵
-- 自宅 CI 用ハードウェア設置（長期的な品質保証のため）
-- より多くのポート・プラットフォーム対応
-- **分散推論（シリアル・パラレル両対応）** — 最重要ポイントの一つ
-- ds4-coding, ds4-legal, ds4-medical などドメイン特化バリアント
+#### Future Plans
+- Systematic quality benchmarking
+- Built-in coding agent within the project
+- Home CI hardware setup (for long-term quality assurance)
+- More ports and platform support
+- **Distributed inference (both serial and parallel)** — one of the most important points
+- Domain-specific variants: ds4-coding, ds4-legal, ds4-medical
 
 > "AI is too critical to be just a provided service."
 
-#### 影響
-- [[concepts/ds4-dwarfstar-4]] — プロジェクト詳細
-- [[concepts/ds4-deepseek-flash-metal]] — Armin Ronacher の Metal 最適化フォーク
-- DS4 はローカル AI コミュニティで爆発的成長、antirez 曰く「Redis 初期以来の 14 時間/日体制」
+#### Impact
+- [[concepts/ds4-dwarfstar-4]] — Project details
+- [[concepts/ds4-deepseek-flash-metal]] — Armin Ronacher's Metal optimization fork
+- DS4 experienced explosive growth in the local AI community; antirez reports "14-hour/day schedule like the early Redis days"
 
 ### EDIT Tool Redesign for DS4 (May 2026)
 
@@ -216,41 +216,40 @@ antirez notes a whole-file CRC32 alternative where the edit only specifies line 
 
 This is a concrete example of **agentic engineering at the tool level** — optimizing for the specific constraints of local inference (token poverty, latency). It connects the [[concepts/agentic-engineering]] and [[concepts/ai-agent-engineering]] paradigm: the tool surface area directly determines agent efficiency.
 
-
 ### Distributed LLM Inference in DwarfStar (May 2026)
 
-antirez は DwarfStar プロジェクトの文脈で、3つの分散LLM推論アプローチを探求した。ローカル推論のハードウェア制約（NVIDIA 価格高騰、RAM 不足、Mac Studio の限界）に対する現実的な対応として、複数マシンを活用する戦略を検討している。
+In the context of the DwarfStar project, antirez explored three distributed LLM inference approaches. As a practical response to local inference hardware constraints (NVIDIA price increases, RAM shortages, Mac Studio limitations), he is considering strategies that leverage multiple machines.
 
-#### 背景
+#### Background
 
-ハイエンド NVIDIA カードのコスト上昇と RAM 不足により、ローカル推論の最適なマシンはラップトップになった：M5 Max 128GB は DeepSeek V4 Flash や Mimo V2.5 を 2-bit 量子化で ~500 t/s prefill、~35-40 t/s decoding で実行可能。しかし DwarfStar のようなプロジェクトでは、複数マシンをどう活用するかが次の課題。
+With the rising cost of high-end NVIDIA cards and RAM shortages, the optimal machine for local inference has become a laptop: an M5 Max 128GB can run DeepSeek V4 Flash or Mimo V2.5 at 2-bit quantization with ~500 t/s prefill and ~35-40 t/s decoding. However, for projects like DwarfStar, the next challenge is how to utilize multiple machines.
 
-#### 3つの分散推論アプローチ
+#### Three Distributed Inference Approaches
 
-| アプローチ | 方式 | 通信量 | メリット | デメリット |
-|-----------|------|--------|---------|-----------|
-| **層分割 (Layer Splitting)** | 2台のマシンにトランスフォーマー層を50%ずつロード、逐次実行 | アクティベーションのみ少量 | 単純、メモリ倍増、マイクロバッチでprefill高速化 | decodeは逐次（片方が待つ） |
-| **Apple RDMA垂直分割** | 両方のマシンに全エキスパートをロード、各層でエキスパート計算を分散 | アクティベーション微量 | 並列化可能、PRO版の大規模ルーテッドエキスパートに有効 | RDMA通信速度の制約、実装難易度大 |
-| **LLMアンサンブリング** | Shared-nothing、別々のモデルを別々のマシンで独立実行、最後にロジット結合または最適継続を選択 | 最低（ロジットのみ） | 最も革新的。異なる語彙でも動作。arXiv:2502.18036 で研究 | 未成熟、実証段階 |
+| Approach | Method | Communication | Pros | Cons |
+|----------|--------|---------------|------|------|
+| **Layer Splitting** | Load 50% of transformer layers on each of 2 machines, execute sequentially | Only small activations | Simple, doubles memory, micro-batching speeds up prefill | Decode is sequential (one machine waits) |
+| **Apple RDMA Vertical Splitting** | Load all experts on both machines, distribute expert computation per layer | Minimal activations | Parallelizable, effective for large routed experts in PRO version | RDMA speed constraints, high implementation difficulty |
+| **LLM Ensembling** | Shared-nothing, separate models on separate machines run independently, combine logits or select best continuation at the end | Minimal (logits only) | Most innovative. Works with different vocabularies. Studied in arXiv:2502.18036 | Immature, experimental stage |
 
-#### LLMアンサンブリング（最も革新的なアプローチ）
+#### LLM Ensembling (Most Innovative Approach)
 
-antirez が最も興味を持つのは第3のアプローチ。arXiv:2502.18036 で示されたように、2つの異なるモデル（例：Minimax M2.7 と DeepSeek V4 Flash）を完全に独立して実行し、以下の方法で結合する：
+antirez is most interested in the third approach. As demonstrated in arXiv:2502.18036, two different models (e.g., Minimax M2.7 and DeepSeek V4 Flash) run completely independently and are combined via:
 
-1. **Perplexity ベースの選択**: より確信度の高いモデルの継続を選ぶ — 暗黙のルーティングを持つ2エキスパートMoEと見なせる
-2. **ロジット結合**: 異なる語彙でも結合可能（複雑だが）
-3. **混合アプローチ**: 最近の論文では両手法の混合が最良と示唆
+1. **Perplexity-based selection**: Prefer the continuation from the more confident model — can be viewed as a 2-expert MoE with implicit routing
+2. **Logit combination**: Possible even with different vocabularies (complex but feasible)
+3. **Mixed approach**: Recent papers suggest a mix of both methods works best
 
 > "Maybe this is one of the most logical third approach to try, other than the first two."
 
-このアプローチは、各モデルが「異なる視点」を持ち寄ることで知識が補完されるという性質を持つ。\
-\
-#### 意義
+This approach has the property that each model brings a "different perspective," complementing knowledge.
 
-- DwarfStar の分散推論は「フロンティアモデルのローカル実行」という目標の最終フロンティア
-- 層分割とRDMA垂直分割は既知の技術だが、LLMアンサンブリングは比較的未開拓で、ローカル推論の文脈で特に実用的
-- 分散推論は DS4 の将来計画（ライン163参照）に明示されており、本稿はその具体的な技術ロードマップを提供
-- [[concepts/quantization]] と [[concepts/local-llm]] の交差点に位置する重要な発展
+#### Significance
+
+- DwarfStar's distributed inference is the final frontier for the goal of "local execution of frontier models"
+- Layer splitting and RDMA vertical splitting are known techniques, but LLM ensembling is relatively unexplored and particularly practical in the local inference context
+- Distributed inference is explicitly listed in DS4's future plans (see line ~165), and this article provides the concrete technical roadmap
+- Positioned at the intersection of [[concepts/quantization]] and [[concepts/local-llm]]
 
 #### Source
 - raw/articles/antirez.com--news-167--b10c3d4e.md
@@ -260,8 +259,9 @@ antirez が最も興味を持つのは第3のアプローチ。arXiv:2502.18036 
 - [[concepts/software-simplicity]] — His core design philosophy
 - [[concepts/ai-assisted-development]] — His nuanced position on LLMs as programming partners
 - [[concepts/open-source-licensing]] — His pragmatic view of sustainability and community
--  — SDS, Rax, and the philosophy of building from first principles
--  — Using documentation as an analytical tool-  — His distinction between passive and active AI-assisted coding
+- — SDS, Rax, and the philosophy of building from first principles
+- — Using documentation as an analytical tool
+- — His distinction between passive and active AI-assisted coding
 
 ## Influence Metrics
 
@@ -273,25 +273,23 @@ antirez が最も興味を持つのは第3のアプローチ。arXiv:2502.18036 
 - The Redis Manifesto remains one of the most referenced design documents in open-source software
 - "Don't fall into the anti-AI hype" sparked widespread discussion about the future of programming
 
-
 ### AI Cybersecurity: Not Proof of Work
 
-2026年4月、antirezはAIとサイバーセキュリティの関係について新しい洞察を発表。
+In April 2026, antirez published new insights on the relationship between AI and cybersecurity.
 
-#### Proof of Workとの違い
-- **PoW**: ハッシュ衝突探索は指数関数的に困難だが、十分な作業で必ず発見可能
-- **バグ発見**: コードの状態空間が飽和すると、発見率は「M（試行回数）」ではなく「I（モデルの知性レベル）」で制限される
+#### Difference from Proof of Work
+- **PoW**: Hash collision search is exponentially difficult, but with enough work, discovery is guaranteed
+- **Bug discovery**: When code state space saturates, discovery rate is limited by "I (model intelligence level)" rather than "M (number of trials)"
 
-#### OpenBSD SACKバグの事例
-- 弱いモデルを無限に実行しても、真のバグ（開始ウィンドウ検証欠如 + 整数オーバーフロー + NULL分岐）を発見できない
-- 弱いモデルは幻覚（hallucination）で「たまたま」正しいバグを指摘することはあるが、真の理解ではない
-- **強いモデルほど幻覚が少ない**ため、中間レベルのモデルが最も「バグを発見したフリ」をしにくい
+#### OpenBSD SACK Bug Case Study
+- Running weak models infinitely still won't discover true bugs (missing starting window validation + integer overflow + NULL branch)
+- Weak models may "coincidentally" point at the right bug through hallucination, but this is not true understanding
+- **Stronger models hallucinate less**, so mid-tier models are worst at "pretending to find bugs"
 
-#### 明日のサイバーセキュリティ
-> 「より多くのGPUが勝つ」のではなく、「より良いモデル、より早いアクセス」が勝つ
+#### Tomorrow's Cybersecurity
+> "It's not 'more GPUs win' — it's 'better model, faster access' that wins."
 
-#### 意義
-- AIセキュリティ競争は計算量の競争ではなく知性の競争
-- Mythos（Anthropicのセキュリティ特化モデル）のような高知性モデルが既存のバランスを崩す可能性
-- セキュリティ監査におけるAIの役割再定義が必要
-
+#### Significance
+- The AI security competition is a competition of intelligence, not computation
+- High-intelligence models like Mythos (Anthropic's security-specialized model) could disrupt the existing balance
+- The role of AI in security auditing needs redefinition

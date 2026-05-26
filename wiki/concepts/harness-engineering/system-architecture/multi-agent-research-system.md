@@ -20,80 +20,80 @@ sources:
 
 # Multi-Agent Research System
 
-Anthropicが構築した、複数のClaudeエージェントを並列に動作させるリサーチシステム。
+A research system built by Anthropic that operates multiple Claude agents in parallel.
 
-## 核心洞察
+## Core Insight
 
 > "Multi-agent systems work mainly because they help spend enough tokens to solve the problem."
 
 > "Token usage alone explains 80% of the performance variance in research tasks."
 
-**マルチエージェントシステムが機能する主な理由は、問題を解決するために十分なトークンを費やすことを可能にするため。**
+**The primary reason multi-agent systems work is that they enable spending enough tokens to solve the problem.**
 
-## アーキテクチャ
+## Architecture
 
-**パターン**: オーケストレーター-ワーカー（並列サブエージェント）
+**Pattern**: Orchestrator-Worker (parallel sub-agents)
 
 ```
-User Query → LeadResearcher (計画、200kトークン超でMemoryに保存)
-  → サブエージェント生成 (並列検索 + interleaved thinking)
-  → 発見を統合 → CitationAgent (ソース整合性検証)
+User Query → LeadResearcher (planning, saved to Memory at 200k+ tokens)
+  → Sub-agent generation (parallel search + interleaved thinking)
+  → Integrate findings → CitationAgent (source integrity verification)
   → Final Output
 ```
 
-**関心の分離**: 各サブエージェントが固有のツール、プロンプト、探索軌道を持ち、経路依存性を低減。
+**Separation of concerns**: Each sub-agent has its own tools, prompts, and exploration trajectories, reducing path dependency.
 
-## パフォーマンス指標
+## Performance Metrics
 
-| メトリクス | 値 |
-|-----------|-----|
-| **シングルOpus 4 vs マルチエージェント** | Opus 4 (lead) + Sonnet 4 (subagents) がシングルOpus 4を **90.2%** 上回る |
-| **トークン分散** | BrowseComp評価で、トークン使用量がパフォーマンス分散の **80%** を説明 |
-| **コスト現実** | シングルエージェントはチャットの約4倍、マルチエージェントは約15倍のトークンを使用 |
-| **適用範囲** | 高価値、高度に並列化可能なタスク。単一コンテキストウィンドウを超える情報 |
+| Metric | Value |
+|--------|-------|
+| **Single Opus 4 vs Multi-agent** | Opus 4 (lead) + Sonnet 4 (subagents) outperforms single Opus 4 by **90.2%** |
+| **Token variance** | On BrowseComp evaluation, token usage explains **80%** of performance variance |
+| **Cost reality** | Single-agent uses ~4× chat tokens, multi-agent uses ~15× |
+| **Applicability** | High-value, highly parallelizable tasks. Information exceeding single context window |
 
-**不適なケース**: 密結合/シーケンシャルワークフロー（ほとんどのコーディングタスクなど）
+**Unsuitable cases**: Tightly coupled / sequential workflows (e.g., most coding tasks)
 
-## プロンプトエンジニアリングの8原則
+## 8 Prompt Engineering Principles
 
-1. **ステップバイステップでシミュレート**: 正確なプロンプト/ツールをサンドボックスで実行し、失敗モード（果てしない検索、冗長なクエリ、誤ったツール選択）を特定
-2. **明示的な委任**: サブエージェントに明確な目的、出力フォーマット、ツール境界、ソースガイダンスを提供し、重複を防止
-3. **複雑さに応じて努力をスケール**:
-   - *単純*: 1エージェント、3〜10ツール呼び出し
-   - *中程度*: 2〜4エージェント、それぞれ10〜15呼び出し
-   - *複雑*: 10+エージェント、厳密に分割された責任
-4. **ツール設計を最適化**: ツールをユーザー意図にマッチさせる。不十分な説明は壊滅的な経路分岐を引き起こす。明示的ヒューリスティックを使用（例: `「汎用ツールより専門ツールを優先」`）
-5. **自己改善ループ**: Claude 4は自身のプロンプト/ツールをデバッグ可能。専用ツールテストエージェントが将来のタスク完了時間を **40%** 短縮
-6. **広から狭へ検索**: 短く広いクエリから開始 → 結果を評価 → 徐々に焦点を狭める
-7. **Extended Thinkingを活用**: thinkingトークンを計画、ツール選択、結果後のギャップ分析用の制御可能なスクラッチパッドとして使用
-8. **並列性を最大化**: リードが3〜5サブエージェントを同時に生成。サブエージェントが3+ツールを並列使用。リサーチ時間を最大 **90%** 短縮
+1. **Simulate step-by-step**: Run prompts/tools in sandbox, identify failure modes (endless search, redundant queries, incorrect tool selection)
+2. **Explicit delegation**: Provide sub-agents with clear objectives, output formats, tool boundaries, and source guidance to prevent overlap
+3. **Scale effort to complexity**:
+   - *Simple*: 1 agent, 3-10 tool calls
+   - *Medium*: 2-4 agents, 10-15 calls each
+   - *Complex*: 10+ agents with strictly divided responsibilities
+4. **Optimize tool design**: Match tools to user intent. Poor descriptions cause catastrophic path divergence. Use explicit heuristics (e.g., "prefer specialized tools over general ones")
+5. **Self-improvement loop**: Claude 4 can debug its own prompts/tools. Dedicated tool-testing agents reduce future task completion time by **40%**
+6. **Broad to narrow search**: Start with short, broad queries → evaluate results → gradually narrow focus
+7. **Leverage Extended Thinking**: Use thinking tokens as controllable scratchpad for planning, tool selection, and post-result gap analysis
+8. **Maximize parallelism**: Lead generates 3-5 sub-agents simultaneously. Sub-agents use 3+ tools in parallel. Reduces research time by up to **90%**
 
-## 評価戦略
+## Evaluation Strategy
 
-**課題**: 非決定的な経路により、ステップバイステップの検証が不可能
+**Challenge**: Non-deterministic paths make step-by-step verification impossible
 
-- **小規模から開始**: 約20の実際のクエリで、開発初期に迅速かつ高インパクトのフィードバック
-- **LLM-as-Judge**: 単一プロンプトで0.0〜1.0のスコアリング（事実精度、引用精度、完全性、ソース品質、ツール効率）。スケーラブルで人間の判断と一致
-- **人間の監視**: エッジケースと体系的バイアスをキャッチ（例: 初期エージェントがSEOコンテンツファームを学術PDFより優先 → ソース品質ヒューリスティックで解決）
-- **創発に焦点**: 個々のエージェントプロンプトだけでなく、相互作用フレームワークと分業を最適化
+- **Start small**: ~20 real queries provide rapid, high-impact feedback in early development
+- **LLM-as-Judge**: Single-prompt scoring from 0.0 to 1.0 (factual accuracy, citation accuracy, completeness, source quality, tool efficiency). Scalable and consistent with human judgment
+- **Human monitoring**: Catch edge cases and systematic biases (e.g., early agent prioritizing SEO content farms over academic PDFs → resolved with source quality heuristics)
+- **Focus on emergence**: Optimize not just individual agent prompts but interaction frameworks and division of labor
 
-## 本番信頼性
+## Production Reliability
 
-- **ステートフル実行**: 長時間実行プロセスには、耐障害性の実行、リトライロジック、定期的なチェックポイントが必要。エージェントは失敗ポイントから再開
-- **グレースフルデグラデーション**: ツール失敗をエージェントに通知。自律的に適応させる。AIの柔軟性と決定論的セーフガードを組み合わせる
-- **デバッグ**: 完全な本番トレーシング + 決定パターン/相互作用構造の監視（プライバシー保護、コンテンツロギングなし）
-- **デプロイメント**: レインボーデプロイメントでトラフィックを徐々にシフトし、アクティブなエージェントを途中で壊すのを回避
-- **現在のボトルネック**: 同期サブエージェント実行が情報フローをブロック。将来: 非同期実行でより高い並列性（調整/状態の複雑性を追加）
+- **Stateful execution**: Long-running processes require fault-tolerant execution, retry logic, and periodic checkpoints. Agents resume from failure points
+- **Graceful degradation**: Notify agents of tool failures. Let them adapt autonomously. Combine AI flexibility with deterministic safeguards
+- **Debugging**: Full production tracing + monitoring of decision patterns/interaction structures (privacy-preserving, no content logging)
+- **Deployment**: Rainbow deployments to gradually shift traffic without breaking active agents mid-flight
+- **Current bottleneck**: Synchronous sub-agent execution blocks information flow. Future: asynchronous execution for higher parallelism (adding coordination/state complexity)
 
-## 高度なマルチエージェントパターン
+## Advanced Multi-Agent Patterns
 
-- **エンドステート評価**: 状態変更エージェントの場合、中間ステップではなく最終結果を判断。複雑なワークフローに離散チェックポイントを使用
-- **長時間コンテキスト管理**: フェーズを要約 → 外部メモリに保存 → クリーンなコンテキストで新しいサブエージェントを生成 → 限界に近づいたら計画を取得
-- **ファイルシステムアーティファクト**: サブエージェントが構造化出力（コード、レポート、データ）を直接外部ストレージに書き込み、軽量な参照をコーディネーターに渡す。「伝言ゲーム」を排除し、トークンオーバーヘッドを削減
+- **End-state evaluation**: For state-changing agents, judge final results rather than intermediate steps. Use discrete checkpoints for complex workflows
+- **Long-running context management**: Summarize phases → save to external memory → spawn new sub-agents with clean context → retrieve plan when approaching limits
+- **Filesystem artifacts**: Sub-agents write structured outputs (code, reports, data) directly to external storage, passing lightweight references to coordinator. Eliminates "telephone game," reduces token overhead
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/harness-engineering]] — 上位インデックス
-- [[concepts/building-effective-agents]] — エージェント構築の基本原理
--  — オーケストレーター-ワーカーパターン
-- [[concepts/context-engineering]] — コンテキストエンジニアリング
+- [[concepts/harness-engineering]] — Top-level index
+- [[concepts/building-effective-agents]] — Fundamental principles of agent construction
+- — Orchestrator-worker pattern
+- [[concepts/context-engineering]] — Context engineering

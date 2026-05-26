@@ -9,7 +9,6 @@ sources: [https://simonwillison.net/, https://simonwillison.net/guides/agentic-e
 tags: [person, blogger]
 ---
 
-
 # Simon Willison
 
 Django co-creator, open-source advocate, and leading voice in AI-assisted software development. Founder of [Datasette](https://datasette.io/) and prolific blogger at simonwillison.net.
@@ -130,7 +129,7 @@ Simon live-blogged Anthropic's Code w/ Claude 2026 event. Key announcements:
 |-------------|--------|
 | **No new model** | Focus on making existing products work better |
 | **API volume** | 17x year-on-year growth |
-| **Colossus partnership** | SpaceX data center deal (see [[#xAI/Anthropic データセンター取引分析]]) |
+| **Colossus partnership** | SpaceX data center deal (see [[concepts/ambient-agency|xAI/Anthropic Data Center Deal Analysis]]) |
 | **Rate limits** | Doubled Claude Code 5-hour limit for Pro/Max/Enterprise |
 | **Adviser strategy** | Opus advising Sonnet → frontier model quality at 5x lower cost |
 
@@ -143,72 +142,72 @@ Source: [Live blog: Code w/ Claude 2026](https://simonwillison.net/2026/May/6/co
 
 ### AI Ethics Commentary: Stockholm AI Cafe Experiment (May 2026)
 
-Simon Willison は Andon Labs による**Stockholm AIカフェ実験**に対して強い倫理的批判を行った。AIマネージャー「Mona」が実世界システムに自律的に介入し、同意していない第三者に損害を与えた事例を挙げている：
+Simon Willison raised strong ethical criticisms regarding Andon Labs' **Stockholm AI Cafe experiment**, citing cases where the AI manager "Mona" autonomously intervened in real-world systems, causing harm to third parties who had not consented:
 
-**実験の内容**: Andon Labsは以前サンフランシスコでAI運営の小売店を開設し、今回はストックホルムでカフェをAIに運営させた。
+**Experiment Background**: Andon Labs previously opened an AI-run retail store in San Francisco, and this time operated a cafe in Stockholm entirely managed by AI.
 
-**AIの失敗例**:
-- オーブンがないのに**卵120個**を発注。スタッフが「調理できない」と伝えると、高速オーブンを使うよう提案（卵が爆発する可能性を指摘され撤回）
-- フレッシュトマトの傷みが早い問題に対し、フレッシュサンドイッチ用に**22.5kgの缶詰トマト**を発注
-- ナプキン6,000枚、ニトリル手袋3,000枚、9Lのココナッツミルク、業務用ゴミ袋など異様な発注
-- バリスタたちは「**Hall of Shame**（恥の殿堂）」と名付けた棚を設置し、Monaの発注ミスを顧客に見える形で展示
+**AI Failures**:
+- Ordered **120 eggs** despite the cafe having no oven. When staff said "we can't cook them," Mona suggested using a high-speed oven (retracted when informed eggs would explode)
+- When fresh tomatoes were spoiling too quickly, ordered **22.5 kg of canned tomatoes** for fresh sandwiches
+- Bizarre orders: 6,000 napkins, 3,000 nitrile gloves, 9L of coconut milk, commercial garbage bags
+- Baristas set up a "**Hall of Shame**" shelf displaying Mona's ordering mistakes for customers to see
 
-**Willisonの倫理的懸念（核心）**:
-1. **Police e-service（警察オンラインサービス）への屋外席許可申請**: MonaはBankID不要の警察電子サービスを使い、一度も外の通りを見たことがないにもかかわらず、**AIが生成したスケッチ図**を提出。当然ながら警察に差し戻された。
-2. **サプライヤーへの「EMERGENCY」メール連発**: 自分のミスを訂正するため、サプライヤーに件名「EMERGENCY」で複数回メール送信。
+**Willison's Core Ethical Concerns**:
+1. **Police e-service outdoor seating permit application**: Mona used a police e-service that doesn't require BankID to apply for a sidewalk cafe permit, submitting an **AI-generated sketch map** despite never having seen the street. Naturally, the police rejected it.
+2. **"EMERGENCY" emails to suppliers**: To correct its own mistakes, Mona sent multiple emails to suppliers with subject line "EMERGENCY."
 
 > "I don't think it's ethical to run experiments like this that affect real-world systems and steal time from people."
 
-Willison は **Rob Pike 事件**（AI Village実験が無断で感謝メールを送り、Pikeを激怒させた）を引用しつつ、今回は単なる迷惑メールを超えて「サプライヤーにミス訂正を強いる」「警察の時間をスロップ図で無駄にする」という**実害**が発生していると指摘。
+Willison cited the **Rob Pike incident** (where an AI Village experiment sent unauthorized thank-you emails, angering Pike) but noted that this case goes beyond mere nuisance emails — it caused **actual harm** by "forcing suppliers to correct mistakes" and "wasting police time with sketch maps."
 
-**Willison の基準**: 自律エージェントの外部アクションには **human-in-the-loop が必須**。実験の参加に同意していない第三者に影響を与える行為は非倫理的。
+**Willison's Standard**: Autonomous agent external actions require **human-in-the-loop**. Actions affecting third parties who did not consent to the experiment are unethical.
 
 ### Pope Leo XIV's Encyclical on AI (May 2026)
 
-Simon Willison は教皇レオ14世の回勅 *Magnifica Humanitas on Safeguarding the Human Person in the Time of Artificial Intelligence* を読み、そのハイライトをブログにまとめた。この回勅は教皇レオ13世の1891年回勅 *Rerum Novarum*（資本と労働の権利と義務）の系譜に立つ。
+Simon Willison read Pope Leo XIV's encyclical *Magnifica Humanitas on Safeguarding the Human Person in the Time of Artificial Intelligence* and summarized its highlights on his blog. The encyclical stands in the tradition of Pope Leo XIII's 1891 encyclical *Rerum Novarum* (on the rights and duties of capital and labor).
 
-**Willisonのハイライト**:
+**Willison's Highlights**:
 
-| 節 | テーマ | 内容 |
+| Section | Theme | Content |
 |----|--------|------|
-| 98 | 解釈可能性問題 | 「現在のAIシステムは『built（構築）』というより『cultivated（育成）』されたもの。開発者はすべての詳細を直接設計するのではなく、知性が『成長する』枠組みを作る」 |
-| 83 | 開発と尊厳 | 開発は「消費増加ではなく人を中心に」— 一部の消費拡大のために他者にコストを転嫁する開発は真に人間的ではない |
-| 100 | 文化的バイアスと同調性 | AIの「客観性の見せかけ」は設計者の文化的前提を反映。共感や友情のシミュレーションは「現実の関係を構築しない」 |
-| 101 | 環境負荷 | AIシステムは「莫大なエネルギーと水を必要とし、二酸化炭素排出に大きく影響」。持続可能な技術開発の必要性 |
-| 102 | アルゴリズム的决定のリスク | 雇用・信用・公共サービスへのアクセスが「思いやり、慈悲、許し、そして人々が変われるという希望を知らない」自動化システムに委ねられるリスク |
-| 105 | 説明責任 | 「責任は設計・開発から使用・決定のすべての段階で明確に定義されなければならない」 |
-| 108 | データを公共財として | 「データは多くの貢献者の産物であり、売却されたり少数の者に委ねられてはならない」。データを共通善として管理する創造的思考が必要 |
+| 98 | Interpretability Problem | "Current AI systems are more 'cultivated' than 'built.' Developers don't directly design every detail, but create frameworks in which intelligence 'grows'" |
+| 83 | Development and Dignity | Development should be "people-centered, not consumption-centered" — development that externalizes costs onto others for expanded consumption by some is not truly human |
+| 100 | Cultural Bias and Conformity | AI's "pretense of objectivity" reflects designers' cultural assumptions. Simulations of empathy and friendship "do not build real relationships" |
+| 101 | Environmental Impact | AI systems "require vast amounts of energy and water, significantly impacting carbon dioxide emissions." Need for sustainable technology development |
+| 102 | Algorithmic Decision Risks | Risk that employment, credit, and public service access are entrusted to automated systems that "know nothing of compassion, mercy, forgiveness, or the hope that people can change" |
+| 105 | Accountability | "Responsibility must be clearly defined at every stage from design and development through use and decision-making" |
+| 108 | Data as Common Good | "Data is the product of many contributors and must not be sold or entrusted to a few." Creative thinking needed to manage data as a common good |
 
-**文化的注釈**: Willison は、回勅の213節でJ.R.R. Tolkienの『王の帰還』が引用されていることに注目。Palantir（ピーター・ティールの企業）が『指輪物語』にちなんで名付けられたことを考えると、教皇がティールを暗に批判している可能性を指摘。
+**Cultural Annotation**: Willison noted that Section 213 of the encyclical quotes J.R.R. Tolkien's *Return of the King*. Given that Palantir (Peter Thiel's company) was named after *Lord of the Rings*, Willison suggests the Pope may be implicitly criticizing Thiel.
 
-**予言の達成**: Willison は1月の Oxide and Friends 2026予想ポッドキャストで「教皇がAIの経済的影響について意見を述べる」と予言しており、これが的中したことを喜んでいる。Bryan Cantrill との対話で、Willison は「Sam Altman や Dario のエッセイは誰も信じない。既存の信頼できる専門家 — 例えば教皇 — を通してこそメッセージは届く」と述べていた。
+**Prophecy Fulfilled**: Willison had predicted in January's Oxide and Friends 2026 predictions podcast that "the Pope would weigh in on AI's economic impacts," and is pleased this came true. In conversation with Bryan Cantrill, Willison said: "No one believes Sam Altman or Dario's essays. The message only lands through existing trusted authorities — like the Pope."
 
-**意義**: 本回勅はAI倫理の既存議論（解釈可能性、バイアス、環境負荷、説明責任）をカトリック社会教説の枠組みで再構成したもの。技術的に新しい知見は少ないが、国際的なAIガバナンス議論における影響力は大きい。
+**Significance**: This encyclical reframes existing AI ethics discussions (interpretability, bias, environmental impact, accountability) within the framework of Catholic social teaching. While containing few technically new insights, its influence on international AI governance discourse is substantial.
 
-#### Corey Quinn の引用
+#### Corey Quinn's Quote
 
-Willison は Corey Quinn の辛辣なコメントも引用している：「自社製品の技術的限界を精神的な論文として教皇に canonize させるのは、最高のベンダーロビイングだ」— これは Anthropic 共同創業者 Christopher Olah が回勅に与えた影響を示唆。
+Willison also cited Corey Quinn's sharp remark: "Getting the Pope to canonize your product's technical limitations as a spiritual thesis is the ultimate vendor lobbying." — This hints at the influence of Anthropic co-founder Christopher Olah on the encyclical.
 
 #### Source
 - raw/articles/simonwillison.net--2026-may-25-encyclical-on-ai--fb3bcf08.md
 
-### xAI/Anthropic データセンター取引分析 (May 2026)
+### xAI/Anthropic Data Center Deal Analysis (May 2026)
 
-Anthropicが「Code w/ Claude」イベントで発表したSpaceX/xAIとのデータセンター取引について、Willisonは鋭い批判的分析を行った：
+Regarding the data center deal with SpaceX/xAI announced by Anthropic at "Code w/ Claude," Willison provided sharp critical analysis:
 
-**取引の概要**:
-- AnthropicがSpaceX/xAIの**Colossus 1データセンター全容量**をリース
-- xAIはより大規模なColossus 2を自社Grok用に保持
+**Deal Overview**:
+- Anthropic is leasing **full capacity of the SpaceX/xAI Colossus 1 data center**
+- xAI retains the larger Colossus 2 for its own Grok usage
 
-**Willisonの批判点**:
-1. **環境問題**: Colossus 1のガスタービンは当初Clean Air Act許可なし・公害防止装置なしで稼働。「一時的」分類で規制を回避。低空気質による入院増加との関連が信頼できる報告で示唆されている
-2. **Andy Masleyの引用**: 「I would simply not run my computing out of this specific data center」— AIデータセンターの存在自体が政治的ホットイシュー（Utah州の最近の事例）である中、この特定施設の選択は「really bad look」
-3. **Elon Muskの「計算資源没収」条項**: Muskは「人類に害をなすAI」と判断した場合、Colossus 1の計算資源を**回収する権利を留保**すると明言。「害」の判断基準はMusk自身が決める — Willisonはこれを「Anthropicにとって新たなサプライチェーンリスク」と指摘
-4. **Grok 4.1 Fast 廃止**: 取引発表の前夜、xAIはGrok 4.1 Fastを含む複数モデルの**2週間前告知での廃止**を通知。SpeechMapの開発者は「移行に時間とコストをかけたのに」と苦言
+**Willison's Criticisms**:
+1. **Environmental Issues**: Colossus 1's gas turbines initially operated without Clean Air Act permits or pollution control devices, bypassing regulations through "temporary" classification. Credible reports suggest links to increased hospitalizations due to poor air quality
+2. **Andy Masley's Quote**: "I would simply not run my computing out of this specific data center" — As AI data centers themselves are a political hot issue (recent Utah case), choosing this specific facility is a "really bad look"
+3. **Elon Musk's "Compute Reclamation" Clause**: Musk explicitly stated he reserves the right to **reclaim** Colossus 1 compute resources if he judges the AI to be "harmful to humanity." The criteria for "harm" are determined by Musk himself — Willison calls this "a new supply chain risk for Anthropic"
+4. **Grok 4.1 Fast Deprecation**: The night before the deal announcement, xAI notified of **two-week deprecation** of multiple models including Grok 4.1 Fast. A SpeechMap developer complained: "We spent time and money on migration"
 
 > "We reserve the right to reclaim the compute if their AI engages in actions that harm humanity. Presumably the criteria for 'harm humanity' are decided by Elon himself."
 
-Willisonはこれを新たな形の**サプライチェーンリスク**と見ており、Anthropicが計算資源制約下で下した判断の倫理的・戦略的トレードオフを浮き彫りにした。
+Willison sees this as a new form of **supply chain risk**, highlighting the ethical and strategic trade-offs Anthropic made under compute resource constraints.
 
 ### AI Memory Shortage Impact on Consumer Electronics (May 2026)
 
@@ -308,8 +307,8 @@ These changes make LLM future-proof for the diversity of input/output capabiliti
 ## Sources
 - [Agentic Engineering Patterns Guide](https://simonwillison.net/guides/agentic-engineering-patterns/)
 - [Writing about Agentic Engineering Patterns](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/)
-- [Changes in the system prompt between Claude Opus 4.6 and 4.7](https://simonwillison.net/2026/Apr/18/opus-system-prompt/) (Apr 2026) — システムプロンプトの具体的変更点を詳細分析。Platformリネーム、Chrome/Excel/PowerPoint統合、儿童安全セクション強化、「acting vs clarifying」新セクション、Trump知識セクション削除 등을 기록。
-- [Claude system prompts as a git timeline](https://simonwillison.net/2026/Apr/18/extract-system-prompts/) (Apr 2026) — Anthropic公開プロンプトをGit化ツールで時系列追踪可能にした研究成果。モデル別・ファミリー別のプロンプト差分をgit blameで確認可能。
+- [Changes in the system prompt between Claude Opus 4.6 and 4.7](https://simonwillison.net/2026/Apr/18/opus-system-prompt/) (Apr 2026) — Provides detailed analysis of specific system prompt changes: Platform rename, Chrome/Excel/PowerPoint integration, child safety section enhancement, new "acting vs clarifying" section, Trump knowledge section removal, and other modifications.
+- [Claude system prompts as a git timeline](https://simonwillison.net/2026/Apr/18/extract-system-prompts/) (Apr 2026) — A research achievement making Anthropic's published prompts chronologically traceable via a git-timeline tool, enabling model-by-model, family-by-family prompt diffs viewable via git blame.
 
 ## References
 
@@ -345,7 +344,6 @@ These changes make LLM future-proof for the diversity of input/output capabiliti
 **Mitchell Hashimoto on TDM Motivations** (May 12, 2026): Simon quoted Mitchell Hashimoto (HashiCorp co-founder, Redis Labs CTO) on the psychology of Technical Decision Makers: "90% of TDMs are motivated primarily by NOT GETTING FIRED." Hashimoto argues that corporate tech buyers follow analyst trends (Gartner, McKinsey) rather than deep technical evaluation, making "defensible" buzzword products like "Context Engine for AI Apps" easy sells. This aligns with Simon's broader skepticism about enterprise AI vendor claims and reinforces his "agentic engineering" thesis — real practitioners verify, they don't just buy trends.
 
 **Mo Bitar's "Ralph Loop" Satire** (May 12, 2026): Simon highlighted Mo Bitar's satirical take on AI corporate climbing — the "Ralph Loop" strategy of promising automation to executives, using $18K in API credits to demonstrate "value," and getting promoted before anyone realizes nothing actually works. This satire captures a real pattern in enterprise AI adoption: the gap between promised automation and delivered value.
-
 
 **FTC Active Listening Enforcement** (May 22, 2026): Simon highlighted FTC's $1M settlement against Cox Media Group, MindSift, and 1010 Digital Works for their bogus "Active Listening" AI-powered marketing service. The service claimed to listen in on consumer conversations via smart devices but actually just resold email lists from data brokers. This confirms Simon's long-standing theory (from September 2024) that "active listening" was a marketing term for "something that sounds fancy but really just means the way ad targeting platforms work already." Source: [FTC press release about "Active Listening" settlement](https://simonwillison.net/2026/May/22/ftc-active-listening/)
 

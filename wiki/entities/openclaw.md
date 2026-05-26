@@ -123,101 +123,101 @@ http://127.0.0.1:18789/#token=<your-gateway-token>
 
 ## Core Architecture Patterns
 
-OpenClaw のアーキテクチャは Hugo Bowne-Anderson + Ivan Leo の2026年2月ワークショップ "Building Your Own OpenClaw from Scratch" で Pure Python 再構築を通じて詳細に解説された。
+OpenClaw's architecture was detailed through a Pure Python rebuild in the February 2026 workshop "Building Your Own OpenClaw from Scratch" by Hugo Bowne-Anderson + Ivan Leo.
 
-### Hooks System（フックシステム）
+### Hooks System
 
-エージェントのライフサイクルイベントに合成可能な副作用を追加：
+Composable side-effects added to agent lifecycle events:
 
 ```
-on_model_response → Telegram送信 / Richターミナル出力
-on_tool_call      → ビジュアルdiff表示 / ロギング
-on_tool_result    → データベース記録 / 観測可能性
+on_model_response → Telegram send / Rich terminal output
+on_tool_call      → Visual diff display / logging
+on_tool_result    → Database recording / observability
 ```
 
-コアループはフックの存在を**一切知らない** — `emit()` を呼ぶだけ。Telegram連携もロギングも、コアループに1行も変更を加えずに追加できる。
+The core loop **knows nothing about hooks** — it simply calls `emit()`. Telegram integration and logging can be added without a single line of change to the core loop.
 
-### Memory System（ファイルファースト・ハイブリッド検索メモリ） [[comparisons/agent-memory-systems-comparison]]
+### Memory System (File-First Hybrid Search Memory) [[comparisons/agent-memory-systems-comparison]]
 
-OpenClawは **ファイルを唯一の真実源（source of truth）** とするMarkdown駆動メモリシステムを採用。従来のRAGのようなベクトルDB依存を排し、**ハイブリッド検索（BM25 + ベクトル）** と **埋め込みプロバイダーの自動選択** を特徴とする。
+OpenClaw adopts a Markdown-driven memory system with **files as the single source of truth**. It eschews vector DB dependency found in traditional RAG, featuring **hybrid search (BM25 + vector)** and **automatic embedding provider selection**.
 
-出典: [[raw/articles/2026-01-25_snowan-gitbook_openclaw-memory-system-deep-dive]] (OpenClaw commit f99e3dd, Jan 2026)
+Source: [[raw/articles/2026-01-25_snowan-gitbook_openclaw-memory-system-deep-dive]] (OpenClaw commit f99e3dd, Jan 2026)
 
-#### メモリの3層構造
+#### Three-Layer Memory Structure
 
-| 層 | 保存場所 | 内容 | 読み込み条件 |
-|---|---|---|---|
-| **Ephemeral（日次ログ）** | `memory/YYYY-MM-DD.md` | 日々の活動・判断の追記型ログ | 今日＋昨日のログをセッション開始時に自動読み込み |
-| **Durable（永続知識）** | `MEMORY.md` | 重要な決定・プロジェクト規約・長期TODO | **プライベートセッションのみ** — グループコンテキストでは非公開 |
-| **Session（会話履歴）** | `sessions/YYYY-MM-DD-<slug>.md` | LLM生成の説明的スラグ付き会話トランスクリプト | セッション開始時に前回会話を自動保存、全文検索可能 |
+| Layer | Storage Location | Content | Load Condition |
+|------|-----------------|---------|---------------|
+| **Ephemeral (Daily Log)** | `memory/YYYY-MM-DD.md` | Append-only log of daily activities and decisions | Auto-loaded at session start: today + yesterday's logs |
+| **Durable (Persistent Knowledge)** | `MEMORY.md` | Critical decisions, project conventions, long-term TODOs | **Private sessions only** — not shared in group contexts |
+| **Session (Conversation History)** | `sessions/YYYY-MM-DD-<slug>.md` | Conversation transcripts with LLM-generated descriptive slugs | Previous conversation auto-saved at session start; full-text searchable |
 
-#### チャンキングアルゴリズム
+#### Chunking Algorithm
 
-スライディングウィンドウ + オーバーラップ方式:
-- **ターゲット**: ~400トークン/チャンク（~1600文字）
-- **オーバーラップ**: 80トークン（~320文字）で境界のコンテキスト切れを防止
-- **行認識**: 行番号付きで正確なソース帰属が可能
-- **SHA-256ハッシュによる重複排除**: 同一コンテンツ → キャッシュヒット → 再埋め込み不要
+Sliding window + overlap method:
+- **Target**: ~400 tokens/chunk (~1600 chars)
+- **Overlap**: 80 tokens (~320 chars) to prevent boundary context loss
+- **Line-aware**: Accurate source attribution with line numbers
+- **SHA-256 hash dedup**: Same content → cache hit → no re-embedding needed
 
-#### ハイブリッド検索: BM25 + ベクトル
+#### Hybrid Search: BM25 + Vector
 
-重み付きスコア融合（デフォルト: **70% ベクトル + 30% BM25**）:
+Weighted score fusion (default: **70% vector + 30% BM25**):
 
-| 検索方式 | 得意分野 | 実装 |
-|---|---|---|
-| **ベクトル検索（意味的類似度）** | 概念マッチ（"gateway host" ≈ "machine running gateway"） | SQLite + sqlite-vec拡張 / コサイン類似度 |
-| **BM25検索（語彙マッチ）** | 正確なトークン（エラーコード、関数名、ID） | SQLite FTS5 |
+| Search Method | Strengths | Implementation |
+|--------------|-----------|---------------|
+| **Vector Search (Semantic Similarity)** | Concept matching ("gateway host" ≈ "machine running gateway") | SQLite + sqlite-vec extension / cosine similarity |
+| **BM25 Search (Lexical Match)** | Exact tokens (error codes, function names, IDs) | SQLite FTS5 |
 
-#### 埋め込みプロバイダー自動選択
+#### Automatic Embedding Provider Selection
 
-**Local → OpenAI → Gemini** のフォールバックチェーン:
-1. **Local** (node-llama-cpp): embeddinggemma-300M (~600MB)、プライバシー重視・オフライン可・低速
-2. **OpenAI** (text-embedding-3-small): 1536次元、高速、Batch APIで50%コスト削減
-3. **Gemini** (gemini-embedding-001): 768次元、無料枠あり
+**Local → OpenAI → Gemini** fallback chain:
+1. **Local** (node-llama-cpp): embeddinggemma-300M (~600MB), privacy-focused, offline-capable, slow
+2. **OpenAI** (text-embedding-3-small): 1536 dimensions, fast, 50% cost reduction via Batch API
+3. **Gemini** (gemini-embedding-001): 768 dimensions, free tier available
 
-#### キャッシュファースト埋め込み + バッチ最適化
+#### Cache-First Embedding + Batch Optimization
 
-- SHA-256ハッシュベースの重複排除: 同一段落が複数ファイルに出現 → 1回だけ埋め込み
-- OpenAI Batch API: 同期API比50%コスト削減
-- 実例: 10,000チャンク → 同期$0.20 → Batch $0.10 → キャッシュ50%ヒットで$0.05
+- SHA-256 hash-based dedup: same paragraph appearing in multiple files → embed only once
+- OpenAI Batch API: 50% cost reduction vs synchronous API
+- Real example: 10,000 chunks → sync $0.20 → Batch $0.10 → 50% cache hit → $0.05
 
-#### Pre-Compaction Flush（コンパクション前自動フラッシュ） [[concepts/context-compaction]]
+#### Pre-Compaction Flush [[concepts/context-compaction]]
 
-OpenClawの最も革新的なメモリ機能。会話がコンテキストウィンドウ制限に近づくと、**サイレントなエージェントターン** を発動し、コンテキスト圧縮 **前** に永続メモリへの書き込みを促す。
+OpenClaw's most innovative memory feature. When a conversation approaches the context window limit, it triggers a **silent agent turn** to prompt writing to persistent memory **before** context compaction.
 
-- 200Kコンテキストの場合、約80%使用時に発動
-- 通常は `NO_REPLY`（保存すべき重要事項がない場合は無言）
-- コンパクションサイクルごとに1回のみ（スパム防止）
-- Read-onlyサンドボックスモードではスキップ
+- At 200K context, triggers at ~80% usage
+- Normally `NO_REPLY` (silent if nothing important to save)
+- Only once per compaction cycle (spam prevention)
+- Skipped in read-only sandbox mode
 
-#### セッションインデックス
+#### Session Index
 
-- JSONL解析でユーザー/アシスタントメッセージを抽出
-- デルタベースの増分インデックス（100KB or 50メッセージ閾値）
-- デバウンス付きバックグラウンド同期
+- JSONL parsing to extract user/assistant messages
+- Delta-based incremental indexing (100KB or 50-message threshold)
+- Debounced background sync
 
-#### メモリ検索ツール
+#### Memory Search Tools
 
-エージェントが利用できる2つのツール:
-- **`memory_search`**: ~700文字のスニペットを返す（ファイルパス、行範囲、関連度スコア付き）
-- **`memory_get`**: 特定のメモリファイルを行範囲フィルタ付きで読み取り
+Two tools available to the agent:
+- **`memory_search`**: Returns ~700 char snippets (with file path, line range, relevance score)
+- **`memory_get`**: Reads a specific memory file with line-range filtering
 
-#### 実測パフォーマンス
+#### Measured Performance
 
-- Local埋め込み: ~50 tokens/sec（M1 Mac, node-llama-cpp）
-- OpenAI埋め込み: ~1000 tokens/sec（バッチ使用時）
-- 検索レイテンシ: <100ms（10Kチャンク, ハイブリッド検索）
-- インデックスサイズ: ~5KB / 1Kトークン（1536次元埋め込み）
+- Local embedding: ~50 tokens/sec (M1 Mac, node-llama-cpp)
+- OpenAI embedding: ~1000 tokens/sec (with batching)
+- Search latency: <100ms (10K chunks, hybrid search)
+- Index size: ~5KB / 1K tokens (1536-dim embeddings)
 
-### Tool Factory & Self-Extension（ツールファクトリーと自己拡張）
+### Tool Factory & Self-Extension
 
-ツールは `AgentTool` を継承した Pydantic クラスとして定義され、エージェント自身が新しいツールを書いて追加できる：
+Tools are defined as Pydantic classes inheriting `AgentTool`, and the agent itself can write and add new tools:
 
 ```
 Agent reads agent_tools.py → writes new tool class → runtime detects via st_mtime → importlib.reload() → tool usable immediately
 ```
 
-完全な解説は [[concepts/agents-that-build-themselves]] を参照。
+See [[concepts/agents-that-build-themselves]] for the full explanation.
 
 ## Orchestration Capabilities
 
@@ -264,7 +264,7 @@ See [[comparisons/hermes-vs-openclaw-architecture]] for the full comparison.
 
 ## Related
 - [[concepts/openclaw]]
-- [[comparisons/agent-memory-systems-comparison]] — OpenClaw/Claude Code/Codex メモリシステム比較
+- [[comparisons/agent-memory-systems-comparison]] — OpenClaw/Claude Code/Codex memory system comparison
 - [[entities/telegram-managed-bots]]
 
 - [[entities/nvidia-nemoclaw]] — NemoClaw secure wrapper for OpenClaw
@@ -282,33 +282,33 @@ See [[comparisons/hermes-vs-openclaw-architecture]] for the full comparison.
 
 ## China Adoption & Market Impact (2026)
 
-2026年初頭、OpenClawは中国でウイルス的に普及し、開発者コミュニティからクラウド大手・地方政府・大企業を巻き込む全国的な現象へ発展した。詳細は [[concepts/china-openclaw-agentic-boom]] を参照。
+In early 2026, OpenClaw spread virally in China, evolving from a developer community phenomenon into a nationwide movement involving cloud giants, local governments, and large enterprises. Details in [[concepts/china-openclaw-agentic-boom]].
 
-### 普及を可能にした構造的要因
+### Structural Factors Enabling Adoption
 
-1. **世界最安のAPI推論コスト**: Alibaba・Baidu・ByteDance・MiniMax等の価格競争により、高頻度エージェントワークフローが個人・SMBでも経済的に成立
-2. **DeepSeek効果**: MoE・スパースアテンション・MLAでフロンティア級推論の計算要件を削減
-3. **推論側需要シフト**: 中国の1日あたりAIトークン消費量が100兆→140兆トークン（2025年末→2026年3月、+40%）
+1. **Cheapest API inference costs in the world**: Price competition between Alibaba, Baidu, ByteDance, MiniMax, etc. made high-frequency agent workflows economically viable for individuals and SMBs
+2. **DeepSeek effect**: MoE, sparse attention, and MLA reduced compute requirements for frontier-level inference
+3. **Inference-side demand shift**: China's daily AI token consumption grew from 100T → 140T tokens (late 2025 → March 2026, +40%)
 
-### 大手クラウド5社の同時対応
+### Simultaneous Response from Big 5 Cloud Providers
 
-全5社（Alibaba Cloud、Tencent Cloud、ByteDance Volcano Engine、JD Cloud、Baidu Cloud）が数日以内にワンクリックOpenClawデプロイを提供。TencentはQClaw（WeChatミニプログラム、13億ユーザー）、WorkBuddy、ClawPro（エンタープライズ）を展開。ByteDanceは2026年4月1日にOpenClaw公式中国ホストミラーをローンチ。
+All 5 major providers (Alibaba Cloud, Tencent Cloud, ByteDance Volcano Engine, JD Cloud, Baidu Cloud) offered one-click OpenClaw deployment within days. Tencent launched QClaw (WeChat mini-program, 1.3 billion users), WorkBuddy, and ClawPro (enterprise). ByteDance launched an official China-hosted OpenClaw mirror on April 1, 2026.
 
-### 政府支援
+### Government Support
 
-- 深セン市龍崗区：「一人会社（OPC）」向け最大RMB 1,000万（約$1.4M）補助金
-- 無錫市：OpenClaw活用ロボティクス向け最大RMB 500万（約$730K）
-- MIIT：エージェント向け国家標準策定中
+- Shenzhen Longgang District: Up to RMB 10 million (~$1.4M) subsidies for One-Person Companies (OPCs) using AI agents
+- Wuxi City: Up to RMB 5 million (~$730K) for OpenClaw-powered robotics
+- MIIT: Developing national standards for AI agents
 
-### セキュリティ露出
+### Security Exposure
 
-- CNCERT: 約23,000ユーザーの資産が公開インターネットに露出
-- Asia Tech Lens: 13.5万以上の露出インスタンス、うち4.2万以上が認証バイパス状態（2026年2月）
-- ClawHub/skills.sh上のスキルの13%がクリティカル脆弱性（Snyk調査）
+- CNCERT: ~23,000 users' assets exposed to the public internet
+- Asia Tech Lens: 135,000+ exposed instances, of which 42,000+ had authentication bypass (February 2026)
+- 13% of skills on ClawHub/skills.sh had critical vulnerabilities (Snyk survey)
 
-### サービス市場
+### Service Marketplace
 
-Taobao/XianyuでRMB 50〜700（$7〜100）のインストール・設定サービスが出現。Baidu北京本社・Tencent深センオフィスで無料インストール会に数百〜1,000人規模が集結。
+Installation and setup services ranging from RMB 50–700 ($7–100) appeared on Taobao/Xianyu. Free installation events at Baidu Beijing HQ and Tencent Shenzhen office drew hundreds to thousands of attendees.
 
 ## Media & Press
 

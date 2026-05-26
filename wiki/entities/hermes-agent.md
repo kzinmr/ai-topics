@@ -11,7 +11,7 @@ tags:
   - nous-research
   - self-improving
 status: complete
-description: "Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawから移行中のユーザーが増加。"
+description: "Open-source self-hosted AI agent by Nous Research. Features persistent memory, self-improving skills, and always-on execution. Growing number of users migrating from OpenClaw."
 created: 2026-04-27
 updated: 2026-05-22
 sources:
@@ -37,109 +37,108 @@ related:
 
 # Hermes Agent
 
-> **Definition:** Nous Researchが開発したopen-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionの3層モデルが特徴。
+> **Definition:** Open-source self-hosted AI agent developed by Nous Research. Features a three-layer model: persistent memory, self-improving skills, and always-on execution.
 
-## 基本情報
-- **開発元:** Nous Research（YaRN, Nomos, Psycheモデルファミリで知られる）
-- **リリース日:** 2026年2月25日
-- **ライセンス:** open-source
-- **対応OS:** Linux, macOS, WSL2（Windows native非対応）
+## Basic Information
+- **Developer:** Nous Research (known for YaRN, Nomos, Psyche model families)
+- **Release Date:** February 25, 2026
+- **License:** Open-source
+- **Supported OS:** Linux, macOS, WSL2 (no native Windows support)
 
-## 3層モデル
+## Three-Layer Model
 
 ### Knowledge Layer
-- built-in memory、session search、LLM-Wiki skill
-- Honcho integration（optional）
-- エージェントは答えるだけでなく、時間をかけて知識を蓄積
+- Built-in memory, session search, LLM-Wiki skill
+- Honcho integration (optional)
+- The agent doesn't just answer — it accumulates knowledge over time
 
 ### Execution Layer
-- multi-agent profiles、child agents、tool system
-- MCP support、persistent machine access
-- タスクを分解し、並列実行し、委任
+- Multi-agent profiles, child agents, tool system
+- MCP support, persistent machine access
+- Tasks can be decomposed, executed in parallel, and delegated
 
 ### Output Layer
-- cron jobs、gateway delivery（Telegram/Slack/Discord）
-- Web UI、file output
-- 結果がチャットウィンドウに閉じ込めず、real workflowにflow
+- Cron jobs, gateway delivery (Telegram/Slack/Discord)
+- Web UI, file output
+- Results flow into real workflows, not trapped in chat windows
 
-## 3つの差別化ポイント
+## Three Differentiators
 
 ### 1. Persistent Memory
-- MEMORY.md（環境事実、規約、経験）とUSER.md（ユーザー設定、通信スタイル、期待値）の2つのcore memoryファイル
-- 全てのセッションでfrozen snapshotとしてロード
-- 会話履歴をSQLite DB（full-text search）で保存。検索/要約/取得可能
+- Two core memory files: MEMORY.md (environment facts, conventions, experiences) and USER.md (user preferences, communication style, expectations)
+- Loaded as frozen snapshot across all sessions
+- Conversation history stored in SQLite DB (full-text search). Searchable, summarizable, retrievable
 
 ### 2. Self-Improving Skills
-- 複雑なタスク（5+ tool calls）完了後、自動的にskillをcreate
-- 構造化markdownファイルでprocedure、pitfalls、verification stepsをキャプチャ
-- 類似タスクでそのskillをloadして高速・正確に実行
-- `~/.hermes/skills/`に読み書き可能なmarkdownファイルとして保存
+- After completing complex tasks (5+ tool calls), skills are automatically created
+- Procedures, pitfalls, and verification steps captured as structured markdown files
+- On similar tasks, the skill is loaded for fast, accurate execution
+- Stored as readable/writable markdown files in `~/.hermes/skills/`
 
-**Curator システム**（DeepLearning.AI 2026年5月）:
-- 90日以上未使用のスキルをバックグラウンドでアーカイブ
-- LLMが各スキルの keep / merge / archive を判定
-- スキルの爆発的増加を緩和する仕組み（ただし完全な防止には至っていない。[[comparisons/hermes-vs-openclaw-architecture|アーキテクチャ比較]]参照）
+**Curator System** (DeepLearning.AI May 2026):
+- Background archiving of skills unused for 90+ days
+- LLM determines keep / merge / archive for each skill
+- Mechanism to mitigate skill explosion (though not fully preventive. See [[comparisons/hermes-vs-openclaw-architecture|architecture comparison]])
 
-### Agentic Loop（DeepLearning.AI 2026年5月）
-Hermesの内部ループ:
+### Agentic Loop (DeepLearning.AI May 2026)
+Hermes' internal loop:
 1. **Prompt Assembly** — personality (SOUL.md) + instructions + tools + skills + memory + conversation history
-2. **Summarization** — 文脈窓を超える場合、古いメッセージを圧縮
-3. **LLM送信** — 組み立てたプロンプトをモデルに送信
-4. **Dispatch** — tool call / skill execution / user response のいずれかを実行
-5. **Loop** — 最終応答まで繰り返し
+2. **Summarization** — compress old messages when exceeding context window
+3. **LLM Send** — send assembled prompt to model
+4. **Dispatch** — execute tool call / skill execution / user response
+5. **Loop** — repeat until final response
 
-このループはOpenClawのGateway-drivenアプローチと対照的。Hermesはagent-centric、OpenClawはgateway-centric。→ [[comparisons/hermes-vs-openclaw]]
+This loop contrasts with OpenClaw's Gateway-driven approach. Hermes is agent-centric, OpenClaw is gateway-centric. → [[comparisons/hermes-vs-openclaw]]
 
 ### 3. Always-On Execution
-- 24/7サーバー上で稼働
-- Telegram、Discord、Slack、WhatsApp、Signal、Email、15+プラットフォームにsingle gatewayで接続
-- natural-language cron（"毎朝8時にこれらのGitHubリポジトリをスキャンして要約"）
-- 無監視で実行
+- Runs 24/7 on a server
+- Connects to Telegram, Discord, Slack, WhatsApp, Signal, Email, 15+ platforms via single gateway
+- Natural-language cron ("scan these GitHub repos every morning and summarize")
+- Runs unattended
 
-## OpenClawとの比較
+## Comparison with OpenClaw
 
-| 特徴 | OpenClaw | Hermes |
-|------|----------|--------|
-| Learning Loop | static（手動skillインストール） | closed loop（~15 tool callsでskill生成） |
-| Memory | 手動セットアップ/サードパーティ依存 | built-in bounded curated memory |
-| Self-improvement | なし | あり（使用ほど賢くなる） |
-| Platform統合 | 50+（広範） | 15+（主要すべて） |
-| セキュリティ | 標準 | 強い |
-| Token効率 | **高い**（必要なツールのみロード） | **低い**（全bundled skills 123+をロード、コスト高め） |
+| Feature | OpenClaw | Hermes |
+|---------|----------|--------|
+| Learning Loop | static (manual skill install) | closed loop (~15 tool calls to generate skill) |
+| Memory | Manual setup / third-party dependency | Built-in bounded curated memory |
+| Self-improvement | None | Yes (gets smarter with use) |
+| Platform Integration | 50+ (broad) | 15+ (all major) |
+| Security | Standard | Strong |
+| Token Efficiency | **High** (loads only needed tools) | **Lower** (loads all bundled skills 123+, higher cost) |
 
 ## Milestones (May 2026)
 
-- **150,000 GitHub Stars**: 3ヶ月未満で達成（2026年5月19日時点）。Shann (@shannhk) の記事で確認
-- **Most Used Agent on OpenRouter**: OpenRouterのアプリ利用統計で世界1位（2026年5月第2週）。全モデル・フレームワーク中でグローバルトークン使用量最大
-- **NVIDIA RTX AI Garage Endorsement**: NVIDIA公式ブログでHermes AgentがRTX AI Garageプログラムの中心的エージェントフレームワークとして紹介（2026-05-13）
-- **123 Bundled Skills**: 出荷時点で123のスキルを内蔵。GitHub PRs、Obsidian、Google Workspace、Linear、Notion、Typefully、Perplexity、Deep Research等
-- **6 Deployment Targets**: Local、Docker、SSH、Daytona、Singularity、Modal
-- **20+ Messaging Surfaces**: Telegram、Discord、Slack、Email、Voice、CLI
+- **150,000 GitHub Stars**: Achieved in under 3 months (as of May 19, 2026). Confirmed in Shann's (@shannhk) article
+- **Most Used Agent on OpenRouter**: #1 globally in OpenRouter app usage stats (May 2026 week 2). Highest global token usage among all models and frameworks
+- **NVIDIA RTX AI Garage Endorsement**: Featured as the central agent framework in NVIDIA's RTX AI Garage program on the official NVIDIA blog (2026-05-13)
+- **123 Bundled Skills**: 123 skills included at shipping. Covering GitHub PRs, Obsidian, Google Workspace, Linear, Notion, Typefully, Perplexity, Deep Research, etc.
+- **6 Deployment Targets**: Local, Docker, SSH, Daytona, Singularity, Modal
+- **20+ Messaging Surfaces**: Telegram, Discord, Slack, Email, Voice, CLI
 
 ### Harness Engineering: "Same Model, Better Results"
 
-NVIDIAブログで明示的に言及された重要な特徴：**同一モデルを異なるフレームワークで比較した際、Hermesが一貫して優れた結果を出す**。これはHermesが単なるthin wrapperではなく、active orchestration layerとして機能するため。→ [[concepts/harness-engineering]]
+A key feature explicitly mentioned in the NVIDIA blog: **consistently superior results from Hermes when comparing the same model across different frameworks**. This is because Hermes functions not as a thin wrapper but as an active orchestration layer. → [[concepts/harness-engineering]]
 
-### NVIDIA DGX Spark 統合
+### NVIDIA DGX Spark Integration
 
-DGX SparkはHermes Agentの理想的なハードウェアとして位置づけられている：
-- **128GB unified memory**で120BクラスのMoEモデルを終日稼働
-- **Qwen 3.6 35B**（20GBメモリで120B級の知能）がDGX Spark上で推奨
-- **Hermes DGX Spark Playbook**: NVIDIA公式のセットアップガイドが利用可能
-- 常時稼働エージェント（always-on agent）としての設計がDGX Sparkの24/7運用と整合
+The DGX Spark is positioned as the ideal hardware for Hermes Agent:
+- **128GB unified memory** for running 120B-class MoE models 24/7
+- **Qwen 3.6 35B** (120B-class intelligence in 20GB memory) recommended on DGX Spark
+- **Hermes DGX Spark Playbook**: Official NVIDIA setup guide available
+- Always-on agent design aligns with DGX Spark's 24/7 operation
 
 → [[entities/nvidia-dgx-spark]], [[concepts/nvidia-rtx-ai-garage]]
 
-## 実際の使用例（Reddit/X/YouTube調査）
+## Real-World Usage Examples (Reddit/X/YouTube Survey)
 
-1. **📞 Pre-call client research** — 会議前にリレーションをauto-enrichしたdossierを作成（20-30分節約）
-2. **✉️ Meeting-note to follow-up** — 粗いノートをpolished follow-upに変換、TODOsをObsidianに書き込み
-3. **🎧 Weekly podcast digest** — Voxtral + Mistral Large 3 pipelineで10時間→2時間のhighlights reel
-4. **📬 Daily news briefings** — $5 VPS + GitHub student plan + Gemini + Ollamaでcron配信
-5. **⚙️ Content-ops pipeline** — ブログ作成、cold emails、YC/X/Reddit lead scraping
-6. **💬 24/7 personal assistant** — Telegram/WhatsApp across channels、Persistent memory
-7. **🛡️ Agent watchdog** — OpenClawのmonitoringにHermesを2時間cronで配置、障害検知→自動復旧（15秒以内）
-
+1. **📞 Pre-call client research** — Auto-enriched dossier before meetings (saves 20-30 minutes)
+2. **✉️ Meeting-note to follow-up** — Convert rough notes to polished follow-ups, write TODOs to Obsidian
+3. **🎧 Weekly podcast digest** — 10hr→2hr highlights reel via Voxtral + Mistral Large 3 pipeline
+4. **📬 Daily news briefings** — Cron delivery from $5 VPS + GitHub student plan + Gemini + Ollama
+5. **⚙️ Content-ops pipeline** — Blog creation, cold emails, YC/X/Reddit lead scraping
+6. **💬 24/7 personal assistant** — Across Telegram/WhatsApp channels, persistent memory
+7. **🛡️ Agent watchdog** — Hermes as 2-hour cron monitoring for OpenClaw, fault detection → auto-recovery (within 15 seconds)
 
 ## 15 Features Deep Dive (April 2026)
 The article "15 Hermes Agent features you've never touched" (2791 bookmarks, 913 likes, 350K impressions) covers advanced features including:
@@ -180,58 +179,58 @@ See [[comparisons/hermes-vs-openclaw-architecture]] for the full comparison.
 
 ## Shann's 4-Level Fleet Operation Model (May 2026)
 
-Shann (@shannhk)、EspressioのAIマーケターでHermesエージェントを全面的に運用している実践者によるマルチエージェント運用ガイド（[How to Become a Hermes Agent Operator](https://x.com/i/article/2055317817658900480), 2026-05-15）。
+Shann (@shannhk), AI marketer at Espressio and practitioner running Hermes agents in production, published a multi-agent operations guide ([How to Become a Hermes Agent Operator](https://x.com/i/article/2055317817658900480), 2026-05-15).
 
-### 3つのコアコンポーネント
-- **Brain** — `~/.hermes/memories/` にMEMORY.md（ビジネス事実）とUSER.md（ユーザー設定）。全セッション開始時に注入。SQLite+FTS5でセッション横断検索
-- **Personality** — `soul.md` でトーン定義。簡潔・皮肉・率直・フォーマル等、1つの基盤で6エージェントに異なる人格を付与可能
-- **Skillset** — 123の既製スキル + 自己改善ループ。エージェントが働く過程で新スキルを自動生成
+### 3 Core Components
+- **Brain** — `~/.hermes/memories/` contains MEMORY.md (business facts) and USER.md (user preferences). Injected at every session start. Cross-session search via SQLite+FTS5
+- **Personality** — Tone defined in `soul.md`. Can assign different personalities (concise, sarcastic, direct, formal, etc.) to 6 agents from one foundation
+- **Skillset** — 123 pre-built skills + self-improvement loop. Agents auto-generate new skills as they work
 
-### 4段階セットアップモデル
+### 4-Level Setup Model
 
-| Level | 構成 | ユースケース |
-|-------|------|-------------|
-| **Level 1** | 単一エージェント + コントロールルーム | 個人アシスタント、初期セットアップ |
-| **Level 2** | 複数スペシャリスト（直接対話） | 役割分離、認証情報スコープ分割 |
-| **Level 3** | Orchestrator + Specialists + Task Bus | 部門横断ワークフロー、委任と統合 |
-| **Level 4** | Level 3 + Cron自動化 | 週次SEOレポート、サーバーヘルスチェック、完全自律運用 |
+| Level | Configuration | Use Case |
+|-------|--------------|----------|
+| **Level 1** | Single agent + Control Room | Personal assistant, initial setup |
+| **Level 2** | Multi-specialist (direct dialogue) | Role separation, credential scope division |
+| **Level 3** | Orchestrator + Specialists + Task Bus | Cross-department workflows, delegation and integration |
+| **Level 4** | Level 3 + Cron automation | Weekly SEO reports, server health checks, fully autonomous operation |
 
-### Control Room パターン
+### Control Room Pattern
 ```
-/root/vps-agents/          → コントロールプレーン（ドキュメント、ルール、ランbook）
-                             生のシークレットは一切置かない
+/root/vps-agents/          → Control plane (docs, rules, runbooks)
+                             No raw secrets stored here
 
-/srv/<agent-name>/data/    → ライブランタイム（シークレット、メモリ、スキル、セッション、cron）
-                             各Hermesエージェントの実体
-```
-
-### SEO Agent 21-Step Pipeline（実運用ケーススタディ）
-
-全工程を1つのDockerコンテナで実行。3つのサブエージェントがフェーズごとにコンテキストを切り替え：
-
-| Phase | Steps | 内容 |
-|-------|-------|------|
-| Research + Ideate | 01-07 | キーワードシード→SERPスナップショット→競合抽出→意図分析→コンテンツギャップ→内部/外部検証 |
-| Production | 08-15 | アングルブリーフ→ビジュアル戦略→アウトライン→ドラフト→画像生成→フローチャート→QA |
-| Distribution | 16-21 | 公開準備→スキーマ→内部リンク→シンジケーション→分析→モニタリング |
-
-### Prototype → Production 方法論
-
-```
-Prototype (Hermes上) → 2-3回実運用テスト → 専用WorkspaceでFine-tune → VPSにデプロイ + Cron
+/srv/<agent-name>/data/    → Live runtime (secrets, memory, skills, sessions, cron)
+                             Actual instance of each Hermes agent
 ```
 
-Shann曰く: 「production agentをゼロから書くことはできない。育てるしかない。Hermesはその育成を高速化する。」
+### SEO Agent 21-Step Pipeline (Production Case Study)
 
-### Rails vs Linux フレーミング
-ShannによるHermesとOpenClawの哲学的対比：
-- **Hermes = Rails**: 意見の強いデフォルト、バッテリー同梱、エージェントがより多くの判断を行う
-- **OpenClaw = Linux**: プリミティブ、保証、明示的制御、エージェントは言われたことだけを行う
+Entire process runs in one Docker container. Three sub-agents switch contexts per phase:
 
-### モデル運用戦略
-- **Claude Opus 4.7**: クリエイティブ作業（コピーライティング、ボイス、フック生成）
-- **Codex (GPT 5.5)**: 構造化作業（コーディング、計画、マルチステップワークフロー、ブラウザ自動化）
-- 両方併用。Tool Gateway経由でエージェント・タスク単位でモデル切替
+| Phase | Steps | Content |
+|-------|-------|---------|
+| Research + Ideate | 01-07 | Keyword seed → SERP snapshot → competitor extraction → intent analysis → content gap → internal/external validation |
+| Production | 08-15 | Angle brief → visual strategy → outline → draft → image generation → flowchart → QA |
+| Distribution | 16-21 | Publish prep → schema → internal links → syndication → analytics → monitoring |
+
+### Prototype → Production Methodology
+
+```
+Prototype (on Hermes) → 2-3 real-world tests → Fine-tune in dedicated Workspace → Deploy to VPS + Cron
+```
+
+Shann: "You can't write a production agent from scratch. You have to grow it. Hermes accelerates that growth."
+
+### Rails vs Linux Framing
+Shann's philosophical contrast between Hermes and OpenClaw:
+- **Hermes = Rails**: Opinionated defaults, batteries included, agent makes more decisions
+- **OpenClaw = Linux**: Primitives, guarantees, explicit control, agent only does what it's told
+
+### Model Operations Strategy
+- **Claude Opus 4.7**: Creative work (copywriting, voice, hook generation)
+- **Codex (GPT 5.5)**: Structured work (coding, planning, multi-step workflows, browser automation)
+- Both used together. Model switching per agent/task via Tool Gateway
 
 → [[entities/shannhk]], [[concepts/hermes-agent-use-cases]]
 

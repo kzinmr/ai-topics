@@ -1,5 +1,5 @@
 ---
-title: "Harness Engineering — AI Agent環境設計の統合フレームワーク"
+title: "Harness Engineering — Integrated Framework for AI Agent Environment Design"
 type: concept
 aliases:
   - harness-engineering
@@ -23,21 +23,21 @@ sources:
   - "https://simonwillison.net/guides/agentic-engineering-patterns/"
 ---
 
-# Harness Engineering — 統合フレームワーク
+# Harness Engineering — Integrated Framework
 
-> **Definition:** Harness Engineeringは「Agent = Model + Harness」を基本方程式とする、エージェント駆動開発の環境設計哲学。エージェントが自律的にコードを書き、テストし、マージできるような「環境（harness）」を設計することに焦点を当てる。
+> **Definition:** Harness Engineering is an environment design philosophy for agent-driven development, based on the fundamental equation "Agent = Model + Harness." It focuses on designing environments ("harnesses") in which agents can autonomously write, test, and merge code.
 
-Ryan Lopopolo（OpenAI）が提唱し、Simon WillisonのAgentic Engineering、AnthropicのAI Agent Engineering、KarpathyのContext Engineeringを包含する**最上位概念**。
+Championed by Ryan Lopopolo (OpenAI), this is the **top-level concept** encompassing Simon Willison's Agentic Engineering, Anthropic's AI Agent Engineering, and Karpathy's Context Engineering.
 
-## 概念マップ
+## Concept Map
 
 ```
-Harness Engineering（最上位: Agent = Model + Harness）
+Harness Engineering (Top-level: Agent = Model + Harness)
 │
-├── agentic-engineering.md — Willison哲学: 人間がエージェントを「活用する」開発パターン
-├── agentic-engineering-patterns.md — Willison実践ガイド: TDD、サブエージェント、Cognitive Debt
+├── agentic-engineering.md — Willison philosophy: development patterns where humans "leverage" agents
+├── agentic-engineering-patterns.md — Willison practical guide: TDD, subagents, Cognitive Debt
 │
-├── agentic-workflows/ — 開発者ワークフロー（Agentic Engineeringのサブページ群, 23 files）
+├── agentic-workflows/ — Developer workflows (Agentic Engineering subpages, 23 files)
 │   ├── _index.md
 │   ├── agent-first-design.md
 │   ├── agentic-manual-testing.md
@@ -62,7 +62,7 @@ Harness Engineering（最上位: Agent = Model + Harness）
 │   ├── using-git-with-agents.md
 │   └── vibe-coding.md
 │
-├── system-architecture/ — システム構築（AI Agent Engineeringのサブページ群, 19 files）
+├── system-architecture/ — System construction (AI Agent Engineering subpages, 19 files)
 │   ├── _index.md
 │   ├── advanced-tool-use.md
 │   ├── agent-loop-orchestration.md
@@ -83,154 +83,154 @@ Harness Engineering（最上位: Agent = Model + Harness）
 │   ├── multi-agent-research-system.md
 │   └── writing-tools-for-agents.md
 │
-├── context-engineering.md — コンテキスト最適化（Karpathy + DSPy + Anthropic統合版）
+├── context-engineering.md — Context optimization (Karpathy + DSPy + Anthropic integrated version)
 ```
 
-## Harness Engineeringの核心哲学
+## Core Philosophy of Harness Engineering
 
 ### 1. Zero Human-Written Code
-意図的にコードを書かないことで、エージェントにエンドツーエンドの作業を強制。エージェントが失敗したとき、「何が足りないか？」（ツール、コンテキスト、構造）を考える。
+By intentionally not writing code, the agent is forced to perform end-to-end work. When the agent fails, the question becomes "what's missing?" — tools, context, structure.
 
 ### 2. Fast Build Loops (1-Minute Rule)
-内側ループのビルド時間を**1分以内**に制限。トークンは安価なので、コードベースを常に手入れする。
+Limit inner loop build time to **within 1 minute**. Tokens are cheap, so keep the codebase in constant shape.
 
 ### 3. Agent-Legible Software
-ソフトウェアは人間だけでなくモデルのために書かれる。コードベース、ワークフロー、組織全体を**エージェントの可読性**に最適化。
+Software is written not just for humans but for models. Optimize codebases, workflows, and entire organizations for **agent readability**.
 
 ### 4. Humans Become the Bottleneck
-希少なリソースはトークンから**同期人間の注意**へ移行。コードレビューからシステム構築、観測性、コンテキスト設計へ役割が変化。
+The scarce resource shifts from tokens to **synchronous human attention**. The role changes from code review to system construction, observability, and context design.
 
-## OpenAI Harness Experiment（実績）
+## OpenAI Harness Experiment (Results)
 
-| メトリクス | 値 |
-|------------|-----|
-| 期間 | 5ヶ月 |
-| 人間が書いたコード | **0行** |
-| 総コードベース | >1,000,000 LOC |
-| マージされたPR | 数千 |
-| トークン消費 | >1B tokens/day (~$2-3K/day) |
-| チームサイズ | 当初3名 |
-| 使用モデル | GPT-5.0 → 5.1 → 5.2 → 5.3 → 5.4 |
+| Metric | Value |
+|--------|-------|
+| Duration | 5 months |
+| Human-written code | **0 lines** |
+| Total codebase | >1,000,000 LOC |
+| Merged PRs | Thousands |
+| Token consumption | >1B tokens/day (~$2-3K/day) |
+| Team size | Initially 3 |
+| Models used | GPT-5.0 → 5.1 → 5.2 → 5.3 → 5.4 |
 
-## Agentic Engineeringとの関係
+## Relationship to Agentic Engineering
 
-| 次元 | Harness Engineering (Lopopolo) | Agentic Engineering (Willison) |
-|------|-------------------------------|-------------------------------|
-| 焦点 | 環境設計・構造 | 開発者のワークフロー・テスト・品質 |
-| 人間のコード | 0行（すべてエージェント） | 混合（人間が最終判断） |
-| メトリクス | スループット、PR数 | コード品質、テストカバレッジ |
-| 代表プロジェクト | Symphony, AGENTS.md | Datasette, LLM, Agentic Patterns Guide |
-| 関係 | **上位概念** | **サブセット（人間の活用側）** |
+| Dimension | Harness Engineering (Lopopolo) | Agentic Engineering (Willison) |
+|-----------|-------------------------------|-------------------------------|
+| Focus | Environment design, structure | Developer workflow, testing, quality |
+| Human code | 0 lines (all agent) | Mixed (human makes final judgment) |
+| Metrics | Throughput, PR count | Code quality, test coverage |
+| Representative projects | Symphony, AGENTS.md | Datasette, LLM, Agentic Patterns Guide |
+| Relationship | **Top-level concept** | **Subset (human utilization side)** |
 
 > "The bottleneck in agent-first software development is usually not the agent's ability to write code. It's the quality of the environment the agent operates in." — Ryan Lopopolo
 
 ## Symphony: Issue-Tracker-Driven Orchestration
 
-[Symphony](https://github.com/openai/symphony)はHarness Engineeringの具現化:
+[Symphony](https://github.com/openai/symphony) is the embodiment of Harness Engineering:
 
 > "Symphony shifts engineering from supervising coding agents to managing work — issues go in, PRs come out."
 
-### 仕組み
-1. **Linearポーリング** — eligibleなissueを定期的に取得
-2. **ワークスペース分離** — issueごとに独立した環境を作成
-3. **エージェント起動** — Codexエージェントがissueを処理
-4. **PR自動作成** — テスト・レビューを経てPRを提出
-5. **WORKFLOW.md** — リポジトリ内のポリシーファイルでエージェントの行動を制御
+### How It Works
+1. **Linear polling** — Periodically fetch eligible issues
+2. **Workspace isolation** — Create independent environments per issue
+3. **Agent launch** — Codex agent processes the issue
+4. **Auto PR creation** — Submit PR after testing/review
+5. **WORKFLOW.md** — Policy file in the repo controlling agent behavior
 
-## AGENTS.md パターン
+## AGENTS.md Pattern
 
 > "Treat your AGENTS.md as a table of contents (~100 lines) rather than a comprehensive encyclopedia. A monolithic instruction file crowds out task context."
 
-### 設計原則
-1. **小さなエントリポイント** — ~100行のAGENTS.mdが目次として機能
-2. **詳細は`docs/`ディレクトリ** — 構造化されたドキュメントをエージェントが参照
-3. **逐次的開示（Progressive Disclosure）** — 最初にすべてを与えず、必要な情報へのポインターを提供
+### Design Principles
+1. **Small entry point** — ~100 line AGENTS.md functions as a table of contents
+2. **Details in `docs/` directory** — Structured documentation for agents to reference
+3. **Progressive Disclosure** — Don't give everything at once; provide pointers to needed information
 
-## Context Engineeringとの関係
+## Relationship to Context Engineering
 
-Context EngineeringはHarness Engineeringの**横断技術コンポーネント**：
-- Harness = 「エージェントに何を見せ、何を隠すか」の環境設計
-- Context Engineering = その中でも特に「コンテキストウィンドウの最適化」テクニック
+Context Engineering is a **cross-cutting technical component** of Harness Engineering:
+- Harness = Environment design for "what to show the agent and what to hide"
+- Context Engineering = Within that, specifically "context window optimization" techniques
 
-Karpathyの定義：
+Karpathy's definition:
 > "Context engineering is the delicate art and science of filling the context window with just the right information for the next step."
 
-詳細: [[concepts/context-engineering]]
+Details: [[concepts/context-engineering]]
 
 ## Key Commentary
 
 ### Brett Taylor (OpenAI Chairman) Response
 > "Software dependencies are going away — they can just be vendored."
 
-Ryanは同意：依存関係を内部化（1K-10K LOCでも）は実行可能。エージェントは内部化したコードをアップストリームのパッチングよりも低い摩擦で深くレビュー・変更できる。
+Ryan agrees: internalizing dependencies (even 1K-10K LOC) is feasible. Agents can review and modify internalized code with lower friction than upstream patching.
 
 ### On Agent Self-Improvement
-- すべてのエージェントの軌道を取り込む → 毎日のエージェントループを実行 → チーム全体の学習を抽出 → リポジトリに反映
+- Capture all agent trajectories → run daily agent loop → extract team-wide learning → reflect in repository
 - "Everybody benefits from everybody else's behavior for free"
 
 ### On Model Trajectory
-- 各モデルリリース（5.0 → 5.4）が能力の上限を大幅に拡大
-- "Don't bet against the model" — 急速な能力向上に堅牢なシステムを構築
+- Each model release (5.0 → 5.4) significantly expanded capability ceilings
+- "Don't bet against the model" — build robust systems for rapidly improving capabilities
 
-## 人間の役割の再定義
+## Redefining the Human Role
 
-| 従来のエンジニア | Harness Engineeringのエンジニア |
-|-----------------|-------------------------------|
-| コードを書く | 環境を設計、意図を指定、フィードバックループを構築 |
-| PRをレビュー | 成果物を検証、受け入れ基準を定義 |
-| テストを書く | テスト戦略を設計、エージェントが実装 |
-| 問題を解決 | 問題の優先順位をつけ、エージェントに委任 |
+| Traditional Engineer | Harness Engineering Engineer |
+|---------------------|------------------------------|
+| Write code | Design environment, specify intent, build feedback loops |
+| Review PRs | Validate artifacts, define acceptance criteria |
+| Write tests | Design test strategy, agents implement |
+| Solve problems | Prioritize problems, delegate to agents |
 
-> 「エージェントが苦戦する場合、それは何か足りないものがあるというシグナル：ツール、ガードレール、ドキュメントを特定し、エージェント自身に修正を書かせる」
+> "When an agent struggles, it's a signal that something is missing: identify the tool, guardrail, or documentation, and have the agent write the fix itself."
 
-## 派生設計パターン
+## Derived Design Patterns
 
 ### CLI Design for Agents
-- エージェントはGUIよりCLIを好む
-- トークン効率的なCLIは冗長な出力を抑制（失敗のみ表示）
-- エージェントフレンドリーにツールをパッチ（例：`--silent`モード、構造化出力）
+- Agents prefer CLI over GUI
+- Token-efficient CLIs suppress verbose output (show failures only)
+- Patch tools to be agent-friendly (e.g., `--silent` mode, structured output)
 
 ### Agent Self-Improvement Loop
-- 全エージェントの軌道を取り込み → 毎日エージェントループ実行 → チーム全体の学習を抽出 → リポジトリに反映
-- 「Everybody benefits from everybody else's behavior for free」
+- Capture all agent trajectories → run daily agent loop → extract team-wide learning → reflect in repository
+- "Everybody benefits from everybody else's behavior for free"
 
-### Dependency Vendoring（Brett Taylor）
-- 「ソフトウェア依存関係は消え去る — ベンダー化できる」
-- 依存関係を内部化（1K-10K LOCでも）は実行可能
-- エージェントは内部化したコードをアップストリームパッチングより低い摩擦でレビュー・変更可能
+### Dependency Vendoring (Brett Taylor)
+- "Software dependencies can disappear — they can be vendored"
+- Internalizing dependencies (even 1K-10K LOC) is feasible
+- Agents can review and modify internalized code with lower friction than upstream patching
 
-## 他のAIエンジニアリングリーダーとの比較
+## Comparison with Other AI Engineering Leaders
 
-| 次元 | Harness Eng (Lopopolo) | Agentic Eng (Willison) | Loopy Era (Karpathy) |
-|------|----------------------|----------------------|---------------------|
-| 重点 | 環境設計・構造 | テスト・品質 | 自律的ループ・実験 |
-| 人間のコード | 0行 | 混合 | ほぼ0行 |
-| メトリクス | スループット | コード品質 | 実験回数 |
-| 代表プロジェクト | Symphony | Datasette, LLM | AutoResearch |
+| Dimension | Harness Eng (Lopopolo) | Agentic Eng (Willison) | Loopy Era (Karpathy) |
+|-----------|----------------------|----------------------|---------------------|
+| Focus | Environment design, structure | Testing, quality | Autonomous loops, experimentation |
+| Human code | 0 lines | Mixed | Nearly 0 lines |
+| Metrics | Throughput | Code quality | Experiment count |
+| Representative projects | Symphony | Datasette, LLM | AutoResearch |
 
-## 関連概念
+## Related Concepts
 
-### Harness配下のサブ概念
-- [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] — 開発者ワークフロー詳細（Willison, Sankalp, Steipeteパターン）
-- [[concepts/harness-engineering/system-architecture/container-context]] — システム構築パターン（Anthropic, OpenAI Responses API）
-- [[concepts/context-engineering]] — コンテキスト最適化技術（Karpathy + DSPy + Anthropic）
+### Sub-Concepts Under Harness
+- [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] — Developer workflow details (Willison, Sankalp, Steipete patterns)
+- [[concepts/harness-engineering/system-architecture/container-context]] — System construction patterns (Anthropic, OpenAI Responses API)
+- [[concepts/context-engineering]] — Context optimization techniques (Karpathy + DSPy + Anthropic)
 
-### 横断参照
-- [[concepts/karpathy-loop]] — Karpathyの自律的実験設計ループ
-- [[concepts/skill-architecture-patterns]] — スキル自己改善 vs 管理パターン
-- [[concepts/harness-engineering/system-architecture/context-compaction]] — コンテキスト圧縮メカニズム
-- [[concepts/harness-engineering/system-architecture/context-anxiety]] — Claude Sonnet 4.5のコンテキスト不安現象
-- [[concepts/mismanaged-geniuses-hypothesis]] — フロンティアLMはサブ最適なスキャフォールディングで未活用
+### Cross-References
+- [[concepts/karpathy-loop]] — Karpathy's autonomous experimental design loop
+- [[concepts/skill-architecture-patterns]] — Skill self-improvement vs. management patterns
+- [[concepts/harness-engineering/system-architecture/context-compaction]] — Context compaction mechanisms
+- [[concepts/harness-engineering/system-architecture/context-anxiety]] — Claude Sonnet 4.5's context anxiety phenomenon
+- [[concepts/mismanaged-geniuses-hypothesis]] — Frontier LMs underutilized by suboptimal scaffolding
 
 ## Sources
-- [[concepts/agentic-engineering]] — Simon WillisonのAgentic Engineering哲学
-- [[concepts/harness-engineering/agentic-engineering-patterns]] — Simon Willisonの実践パターンガイド
-- [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] — 開発者ワークフロー詳細（Willison, Sankalp, Steipeteパターン）
-- [[concepts/harness-engineering/system-architecture/container-context]] — システム構築パターン（Anthropic, OpenAI Responses API）
+- [[concepts/agentic-engineering]] — Simon Willison's Agentic Engineering philosophy
+- [[concepts/harness-engineering/agentic-engineering-patterns]] — Simon Willison's practical pattern guide
+- [[concepts/harness-engineering/agentic-workflows/interactive-explanations]] — Developer workflow details (Willison, Sankalp, Steipete patterns)
+- [[concepts/harness-engineering/system-architecture/container-context]] — System construction patterns (Anthropic, OpenAI Responses API)
 - Ryan Lopopolo, OpenAI Harness Engineering
 - Anthropic: Building Effective Agents, Context Engineering
 - OpenAI Cookbook: Context Engineering Patterns
 
 ---
 
-*Page restructured: 2026-04-19 | Agentic/AI Agent EngineeringをHarness配下に統合 | Context Engineering統合予定*
+*Page restructured: 2026-04-19 | Agentic/AI Agent Engineering integrated under Harness | Context Engineering pending integration*
