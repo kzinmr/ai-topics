@@ -2,6 +2,9 @@
 
 > Chronological record of all wiki actions. Append-only.
 
+| 2026-05-26 20:05 | Created | [[entities/bryan-catanzaro]] — VP Applied Deep Learning Research at NVIDIA. Nemotron open model strategy (~500 staff). "AI as infrastructure" thesis, Megatron-LM, DLSS.
+| 2026-05-26 20:05 | Updated | [[entities/nvidia]] — Added Nemotron Open Model Strategy section: AI as infrastructure thesis, two jobs (systems R&D + ecosystem), dataset releases, intelligence per second philosophy.
+| 2026-05-26 20:05 | Archived | 4 backlog items: boyter.org scc (non-AI), Yudkowsky singularity (already covered), danluu wage-fixing (non-AI), oldvcr Apple Network Server (non-AI)
 | 2026-05-26 19:00 | Enriched (stub→full) | [[entities/promptfoo]] — Full enrichment: 19.6K stars, 302.7K npm weekly DL, 260 contributors, 156 F500 customers, OpenAI acquisition, evaluation + red teaming + code scanning architecture. Sources: website, docs, GitHub, npm, acquisition blog post.
 | 2026-05-26 19:00 | Enriched (stub→full) | [[entities/slalom]] — Full enrichment: $2.9B revenue, 12K employees, 54 offices/12 countries, founders (Jackson/Tobin/Johnson), AWS Premier Tier, OpenAI partnership, "The Great AI Disconnect" survey, Macro Evals for Agentic Systems co-authorship. Sources: Wikipedia, AI consulting page, AWS SCA announcement, AI survey.
 | 2026-05-26 14:50 | Updated | ECHO paper (arxiv:2605.24517) ingested and wiki pages updated |
