@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-26 | Total pages: 2068 | Indexed entries: 1353 | Not in index: 693 |
+> Last updated: 2026-05-26 | Total pages: 2073 | Indexed entries: 1353 | Not in index: 693 |
 
-## Entities (672 pages)
+## Entities (674 pages)
 
 - [[entities/aaron-levie]] — Aaron Levie — CEO of Box, enterprise cloud content management, AI-native platform strategy.
 - [[entities/adam-rosenthal]] — Adam Rosenthal
@@ -177,6 +177,7 @@
 - [[entities/construction-physics-com]] — **URL:** https://constructionphysics.substack.com
 - [[entities/copilot-cli]] — GitHub-built terminal-native AI coding agent. 6 built-in sub-agents (explore/code-review/research, etc.), `/fleet` parallel execution, MCP extensions, BYOK/local model support (April 2026+). Included in Copilot Free/Pro/Pro+/Business/Enterprise.
 - [[entities/corbett]] — **X/Twitter** | @corbtt |
+- [[entities/corti]] — Corti — Healthcare AI frontier lab. Symphony STT: clinical-grade speech-to-text, 1.4% WER (93% lower than OpenAI/Whisper). 100M+ patients/year. Copenhagen HQ.
 - [[entities/cursor-3]] — Ground-up redesign of the Cursor IDE, replacing VS Code foundation with unified workspace built for agent-driven development.
 - [[entities/dan-shipper]] — Dan Shipper — CEO and cofounder of Every. Author of the "After Automation" paradox, Agent-Native Architecture framework, and the definition of AI slop as "visible sameness." 12 predictions on AI & work from Lenny's Podcast (May 2026).
 - [[entities/daniel-de-laney]] — **Blog** | danieldelaney.net |
@@ -613,6 +614,7 @@
 - [[entities/karpathy-research]] — Andrej Karpathy research contributions
 - [[entities/karpathy-writings]] — Andrej Karpathy writings and blog posts
 - [[entities/knowledgator]] — Open-Source ML research company focused on encoder-based models for information extraction (GLiNER, GLiClass, GLiREL)
+- [[entities/kore-ai]] — Kore.ai — Enterprise AI agent platform (Artemis, May 2026). Declarative Agent Blueprint Language (ABL), dual-brain architecture, 6 orchestration patterns. 500+ Global 2000 customers. Azure launch.
 - [[entities/langchain]] — LangChain — framework for building applications with LLMs via composable chains
 - [[entities/langsmith]] — LangSmith — LLM observability & evaluation platform. LangSmith Engine (May 2026): CI/CD for agents — auto-detects failures from traces, clusters issues, drafts fixes/evals.
 - [[entities/llama-3]] — Llama 3 / Llama 3.1 — Meta's open-source foundation language model family. 405B dense Transformer rivaling GPT-4. Established the two-stage development paradigm.
@@ -694,7 +696,7 @@
 - [[entities/muratcan-koylan]] — Muratcan Koylan (@koylanai) — Context Engineer at Sully.ai. Creator of Agent Skills for Context Engineering (15.6K ⭐), peoplereadmes, Personal Brain OS. Previously AI Agent Systems Manager at 99Ravens AI.
 - [[entities/eric-zhang]] — Eric Zhang (@ekzhang1) — MTS at Thinking Machines Lab. Creator of sshx (collaborative terminal), RCL config language. Previously Modal, Convex, Scale AI, Nvidia. Harvard grad, 2x IOI gold medalist.
 
-## Concepts (640 pages)
+## Concepts (643 pages)
 
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and co-founder of Reddit. RSS specification, Creative Commons architecture. [1986–2013]
 - [[concepts/a-philosophy-of-software-design-vs-clean-code]] — A Philosophy of Software Design vs Clean Code — John Ousterhout vs Robert C. Martin: contrasting approaches to software complexity management
@@ -733,6 +735,7 @@
 - [[concepts/agent-ergonomics]] — Programming language and toolchain design optimized for AI coding agents. McKinney's framework (compile speed, static binaries) + Ronacher's language syntax/feature design principles (effects, results, grep-ability, etc.)
 - [[concepts/agent-execution-tax]] — Agent Execution Tax: Fireworks AI concept. Structured output reliability bottleneck discovered from 720 browser agent runs. Kimi K2.5 0.0% vs Gemini 22.9% execution tax. Reliability-Adjusted Accuracy and Cost Per Successful Task.
 - [[concepts/agent-operator-patterns]] — Agent Operator Patterns: Collection of autonomous AI agent operation patterns by Shann Holmberg. Control Room, Brain Layers, Agent Creation Heuristics, 4-Level Fleet Operation Model, Prototype→Production Methodology. Scaling design from single agents to fully automated teams + applied analysis for wiki management systems.
+- [[concepts/agent-substrate]] — Google Cloud open-source project for ultra-scale AI agent infrastructure. Minimal control plane for millions of sub-second tool calls. Builds on Agent Sandbox on GKE (GA). Community-driven like early [[concepts/kubernetes]].
 - [[concepts/agentic-engineering]] — Agentic Engineering: disciplined software development using AI agents, where verification not code reading is the critical skill. Wes McKinney's software factory, RoboRev continuous review, generator-evaluator workflows. Evolution from vibe coding.
 - [[concepts/agentic-security]] — Security considerations for AI agents: supply chain attacks, package installation risks, threat model blind spots, cross-domain vulnerability amplification. — Programming language design principles optimized for AI coding agents (compile speed, distribution, runtime) over human readability. Wes McKinney's thesis: Go/Rust > Python for agentic loops.
 - [[concepts/agentic-identity]] — Modeling AI agents as financial actors. Ramp's OBOU (On Behalf Of User) framework for enterprise agent identity, compliance, and audit.
@@ -1008,6 +1011,7 @@
 - [[concepts/recursive-self-improvement]] — AI systems autonomously designing and training successor models. Jack Clark's 60% probability by end 2028. Compounding alignment risk, SWE-Bench 93.9% evidence.
 - [[concepts/reduce-offload-isolate]] — **Reduce, Offload, Isolate** — Three principles of agent context engineering proposed by Lance Martin (Anthropic) on the High Signal podcast. Reduce (context compression), Offload (move information outside prompts), Isolate (delegate to sub-agents). Manus underwent 5 redesigns; Anthropic strips down Claude Code's harness as models improve. Applying the Bitter Lesson to harness design.- [[concepts/rdep]] — Research Dispatch/Expert Parallelism — direct CUDA IPC dispatch/return replacing NCCL all-to-all for single-node MoE training. B200-first.
 - [[concepts/renderers-token-level-templating]] — renderers: Token-Level Templating — Prime Intellect's open-source Python library. Makes chat templates programmable, preserves token identity in multi-turn RL, 3x training efficiency. Token-In, Token-Out paradigm.
+- [[concepts/replaid-continuous-diffusion]] — RePlaid: arXiv paper (May 2026) showing continuous diffusion scales competitively with discrete DLMs. SOTA PPL 22.1 on OpenWebText among continuous DLMs. Only 20× compute gap to AR models. Complements [[concepts/nemotron-labs-diffusion]].
 - [[concepts/agent-engineering-guide-2026|Agent Engineering Guide 2026]] — What to learn, build, and skip in AI agents. Practitioner's guide applying Karpathy's filter at scale: context engineering, tool design, orchestrator-subagent, eval discipline, harness mindset, MCP.
 - [[concepts/agent-memory-engineering]] — Agent Memory Engineering: Nicolas Bustamante (Microsoft)'s comparison of Claude Code/Codex/Hermes memory architectures. "Every clever architecture lost. What won was LLM + Markdown + bash." Memory is not portable across harnesses because models are post-trained on their harnesses. Codex Memory Pipeline (Mem0, May 2026): two-phase async pipeline, markdown storage, grep search.
 - [[concepts/agent-media]] — Agent Media — Evolution from wiki to multi-channel Autoresearch Desk. Design philosophy for audience-aware knowledge distribution system integrating Khairallah's Context Engineering + Ronin's Skill Graph.
@@ -1070,6 +1074,7 @@
 - [[concepts/notion-cli]] — Notion CLI (ntn): official command-line tool for Notion API, Workers management, and file uploads. Designed for human developers and AI coding agents. Free on all plans.
 - [[concepts/notion-mcp]] — Notion MCP: official Notion MCP server (https://mcp.notion.com/mcp). Setup guides for Claude Code, Cursor, VS Code, Windsurf, ChatGPT, Codex. OAuth 2.0 authentication.
 - [[concepts/nemo-rl]] — NeMo-RL (NVIDIA): RL framework with clean interfaces and modular design. Multi-turn RL support, SFT+DPO+GRPO, FSDP/Megatron.
+- [[concepts/nvidia-ai-q]] — NVIDIA AI-Q: Open-source deep research agent blueprint. #1 on DeepResearch Bench I & II, beating OpenAI. Multi-agent orchestration (Planner/Researcher/Orchestrator), fine-tuned Nemotron-3-Super, LangGraph StateGraph. SKILL.md integration with Claude Code/Codex/Hermes Agent.
 - [[concepts/nvidia-dynamo]] — NVIDIA Dynamo: Inference architecture for agentic coding workloads. KV cache optimization, streaming tool dispatch, multi-turn inference analysis. Supports Claude Code/Codex/OpenClaw. 5x TTFT improvement.
 - [[concepts/nvidia-rtx-ai-garage]] — NVIDIA RTX AI Garage: Optimization, curation, and recommendation program for AI tools, models, and agents on RTX hardware. Validates and recommends agent frameworks like Hermes Agent, NemoClaw, OpenClaw for RTX PCs/workstations/DGX Spark. Provides NVFP4 quantization, Playbook recipes, and hands-on sessions.
 - [[concepts/nvidia-sana-wm]] — NVIDIA SANA-WM: 2.6B open-source world model (Apache 2.0, May 2026). Minute-long 720p video on single GPU. Hybrid Gated DeltaNet + softmax attention, dual-branch camera control. 15 days on 64 H100s, 36× faster than LingBot-World.

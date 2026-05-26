@@ -1,6 +1,35 @@
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
+## [2026-05-26] active-crawl | 5 trending topics
+
+### Topics Researched
+- **Agent Substrate** (Google Cloud, May 20): Open-source ultra-scale agent infrastructure. Agent Sandbox on GKE now GA.
+- **NVIDIA AI-Q** (May 2026): Open-source deep research agent blueprint, #1 on DeepResearch Bench I & II.
+- **RePlaid: Continuous Diffusion Scaling** (arXiv:2605.18530, May 18): Continuous diffusion scales competitively with discrete DLMs. SOTA PPL 22.1.
+- **Corti Symphony STT** (May 20): Clinical-grade speech-to-text, 1.4% WER (93% lower than OpenAI/Whisper).
+- **Kore.ai Artemis** (May 26): Enterprise multi-agent platform with declarative ABL. Azure launch.
+
+### Pages Created
+- [[concepts/agent-substrate]]
+- [[concepts/nvidia-ai-q]]
+- [[concepts/replaid-continuous-diffusion]]
+- [[entities/corti]]
+- [[entities/kore-ai]]
+
+### Raw Articles Saved
+- `raw/articles/2026-05-20_google-agent-substrate-gke.md`
+- `raw/articles/2026-05-26_nvidia-ai-q-deep-research.md`
+- `raw/articles/2026-05-18_replaid-continuous-diffusion-scaling.md`
+- `raw/articles/2026-05-20_corti-symphony-speech-to-text.md`
+- `raw/articles/2026-05-26_kore-ai-artemis-agent-platform.md`
+
+### Index Updated
+- Concepts: 640 → 643 | Entities: 672 → 674 | Total: 2068 → 2073
+
+
+---
+
 ## [2026-05-26] translate | JP→EN batch — 6 concept pages (16,846 JP chars)
 
 ### Pages Translated (JP→EN)
