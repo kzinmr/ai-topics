@@ -421,7 +421,7 @@ financials = await query_api({"ids": extract_ids(relevant)})  # PTC: execute
 analysis = llm_query(f"Compare: {relevant} vs {financials}")  # RLM: analyze
 ```
 
-Full analysis in [[concepts/dspy-rlm#RLM × Programmatic Tool Calling: 補完する2軸（関数軸 vs データ軸）]].
+Full analysis in [[concepts/dspy-rlm#RLM × Programmatic Tool Calling: 補完する2軸(関数軸 vs データ軸)]].
 
 ## Related Concepts
 
@@ -432,7 +432,7 @@ Full analysis in [[concepts/dspy-rlm#RLM × Programmatic Tool Calling: 補完す
 - **[[concepts/code-execution-with-mcp]]** — Middle architectural layer between PTC and CodeMode: MCP as code API with progressive disclosure
 - **[[concepts/code-mode]]** — Specific implementations (Cloudflare V8, Pydantic Monty) of the code-execution-over-tool-calling pattern
 - **[[concepts/context-folding]]** — Parallel approach: branch/return with summarization
-- **[[concepts/anthropic-multi-agent-research]]** — 構造的類似: タスク空間の水平分割によるコンテキスト制約突破 (MapReduceパターン)。RLMが入力の深さ分割なら、マルチエージェントはタスクの並列分割。同一のdivide-and-conquer発想。
+- **[[concepts/anthropic-multi-agent-research]]** — 構造的類似: タスク空間's 水平分割によるコンテキスト制約突破 (MapReduceパターン). RLMが入力's 深さ分割なら, マルチエージェントはタスク's 並列分割. 同一's divide-and-conquer発想. 
 - **[[concepts/inference-time-scaling]]** — RLM scales computation, not parameters
 - **[[concepts/typed-rlm]]** — Typed functional runtime variant (Huawei); formal proofs for termination, cost bounds, optimal partition
 - **[[entities/shunyu-yao]]** — "The Second Half" framework; RL generalization thesis

@@ -10,7 +10,7 @@ tags:
   - memory-systems
 sources:
   - raw/articles/crawl-2026-04-27-genericagent-self-evolving.md
-notes: "⚠️ 主ソース (arXiv:2604.17091) はarXiv-only、未査読。査読付き論文が出た場合に更新推奨"
+notes: "⚠️ 主ソース (arXiv:2604.17091) はarXiv-only, 未査読. 査読付き論文が出た場合に更新推奨"
 ---
 
 # GenericAgent: Token-Efficient Self-Evolving Agent

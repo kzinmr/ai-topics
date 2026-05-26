@@ -9,7 +9,7 @@ type: concept
 
 # Cognition/Devin Philosophy — Agentic Coding at Scale
 
-Cognition Labs（CEO: Scott Wu @ScottWu46）の Devin チームが発信する、AI coding agent に関する一貫した哲学。
+Cognition Labs(CEO: Scott Wu @ScottWu46)'s  Devin チームが発信する, AI coding agent に関する一貫した哲学. 
 
 > "I think the most important insight from Cognition is that **context continuity beats parallelism**." — Walden Yan
 

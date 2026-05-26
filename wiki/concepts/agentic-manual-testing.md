@@ -13,6 +13,6 @@ sources: []
 
 # Agentic Manual Testing
 
-> **Moved:** コンテンツは [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] に移動しました。
+> **Moved:** コンテンツは [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]] に移動しました. 
 
 詳細: [[concepts/harness-engineering/agentic-workflows/agentic-manual-testing]]

@@ -1,8 +1,8 @@
 ---
-title: "AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較"
+title: "AI Memory Systems — チャット vs コーディングエージェント's 設計哲学比較"
 type: concept
 aliases:
-  - ai-memory-systems-チャット-vs-コーディングエージェントの設計哲学比較
+  - ai-memory-systems-チャット-vs-コーディングエージェント's 設計哲学比較
 created: 2026-04-25
 updated: 2026-04-25
 tags:
@@ -11,13 +11,13 @@ status: stub
 
 ---
 
-# AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較
+# AI Memory Systems — チャット vs コーディングエージェント's 設計哲学比較
 
 > **TODO**: Enrich this page.
 
 ## Overview
 
-Stub page for AI Memory Systems — チャット vs コーディングエージェントの設計哲学比較.
+Stub page for AI Memory Systems — チャット vs コーディングエージェント's 設計哲学比較.
 
 ## Related Pages
 

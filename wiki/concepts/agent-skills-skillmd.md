@@ -13,8 +13,8 @@ redirect: concepts/agent-skills
 
 # Agent Skills (SKILL.md) → Redirected
 
-> **このページは [[concepts/agent-skills]] に統合されました。**
+> **こ's ページは [[concepts/agent-skills]] に統合されました. **
 
-Agent Skills オープン標準（Anthropic）のフォーマット詳細については [[concepts/agent-skills]] を参照してください。
+Agent Skills オープン標準(Anthropic)'s フォーマット詳細については [[concepts/agent-skills]] を参照してください. 
 
-Skills概念全体の俯瞰マップは [[concepts/agent-skills-overview]] を参照。
+Skills概念全体's 俯瞰マップは [[concepts/agent-skills-overview]] を参照. 

@@ -23,7 +23,7 @@ source_slack_channel: C077ACXR5UY
 source_slack_date: 2026-03-24
 source_slack_user: U076RPG60QY (Kazuki Inamura)
 source_message: |
-  "言ってて思ったけど、エージェントのサーバレスが今後育つとしたら、SaaS連携と権限とセキュリティの完備されたマネージド環境だろうな。ログが揮発する/しないとかでエンプラプランで搾り取るみたいなやつ (すでにありそう)"
+  "言ってて思ったけど, エージェント's サーバレスが今後育つとしたら, SaaS連携と権限とセキュリティ's 完備されたマネージド環境だろうな. ログが揮発する/しないとかでエンプラプランで搾り取るみたいなやつ (すでにありそう)"
 ---
 
 # Agent Serverless
@@ -36,7 +36,7 @@ source_message: |
 
 This concept emerged from a Slack discussion about the future of agent infrastructure (2026-03-24). The key insight:
 
-> *"言ってて思ったけど、エージェントのサーバレスが今後育つとしたら、SaaS連携と権限とセキュリティの完備されたマネージド環境だろうな。ログが揮発する/しないとかでエンプラプランで搾り取るみたいなやつ (すでにありそう)"*
+> *"言ってて思ったけど, エージェント's サーバレスが今後育つとしたら, SaaS連携と権限とセキュリティ's 完備されたマネージド環境だろうな. ログが揮発する/しないとかでエンプラプランで搾り取るみたいなやつ (すでにありそう)"*
 
 ## Core Components of Agent Serverless
 

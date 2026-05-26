@@ -55,7 +55,7 @@ related:
 
 ## Descript Audio Codec (DAC)
 
-**高忠実度・汎用音源向け強化版 — High-Fidelity Audio Compression with Improved RVQGAN**
+**高忠実度·汎用音源向け強化版 — High-Fidelity Audio Compression with Improved RVQGAN**
 
 - **Architecture**: Paper emphasizes improved vector quantization + improved adversarial/reconstruction losses from image domain
 - **Sample rates**: 16 / 24 / 44.1 kHz weights available

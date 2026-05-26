@@ -27,7 +27,7 @@ CodeMode is a **concrete implementation layer** below two higher-level concepts:
 ```
 Programmatic Tool Calling (API mechanism — allowed_callers, code_execution_20260120)
     └── Code Execution with MCP (Architectural pattern — MCP as code API)
-            └── CodeMode (Specific implementations — Cloudflare MCP, Pydantic Monty) ★ このページ
+            └── CodeMode (Specific implementations — Cloudflare MCP, Pydantic Monty) ★ こ's ページ
 ```
 
 - [[concepts/programmatic-tool-calling]] — The API-level mechanism enabling models to write code that calls tools

@@ -1,8 +1,8 @@
 ---
-title: "Proprietary Context — AI時代の組織ガバナンスとDiamond型組織図"
+title: "Proprietary Context — AI時代's 組織ガバナンスとDiamond型組織図"
 type: concept
 aliases:
-  - proprietary-context-ai時代の組織ガバナンスとdiamond型組織図
+  - proprietary-context-ai時代's 組織ガバナンスとdiamond型組織図
 created: 2026-04-25
 updated: 2026-04-25
 tags:
@@ -11,13 +11,13 @@ status: stub
 
 ---
 
-# Proprietary Context — AI時代の組織ガバナンスとDiamond型組織図
+# Proprietary Context — AI時代's 組織ガバナンスとDiamond型組織図
 
 > **TODO**: Enrich this page.
 
 ## Overview
 
-Stub page for Proprietary Context — AI時代の組織ガバナンスとDiamond型組織図.
+Stub page for Proprietary Context — AI時代's 組織ガバナンスとDiamond型組織図.
 
 ## Related Pages
 

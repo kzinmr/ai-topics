@@ -60,7 +60,7 @@ This shift means:
 
 ## Related Articles
 
-- [「薄くなる」BIツール](../raw/articles/2033336956961308721_薄くなるbiツール.md) — @ikki_stable, stable株式会社 (2026-03-16, 128 bookmarks)
+- ["薄くなる"BIツール](../raw/articles/2033336956961308721_薄くなるbiツール.md) — @ikki_stable, stable株式会社 (2026-03-16, 128 bookmarks)
 
 ## See Also
 

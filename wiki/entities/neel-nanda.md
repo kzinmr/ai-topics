@@ -41,6 +41,6 @@ These resources are cited as a 🟢 top-tier resource in the [[concepts/genai-ha
 
 ## Related Wiki Pages
 
-- [[concepts/mechanistic-interpretability]] — MIの概念ページ
+- [[concepts/mechanistic-interpretability]] — MI's 概念ページ
 - [[concepts/genai-handbook]] — 最重要リソースとして評価
 - [[concepts/ai-safety-and-alignment]]

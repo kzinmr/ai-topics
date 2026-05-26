@@ -35,7 +35,7 @@ Code Execution with MCP is the **architectural pattern** where MCP servers are t
 
 ```
 Programmatic Tool Calling (API mechanism — allowed_callers, code_execution_20260120)
-    └── Code Execution with MCP (Architectural pattern — MCP as code API) ★ このページ
+    └── Code Execution with MCP (Architectural pattern — MCP as code API) ★ こ's ページ
             └── CodeMode (Specific implementations — Cloudflare MCP, Pydantic Monty)
 ```
 

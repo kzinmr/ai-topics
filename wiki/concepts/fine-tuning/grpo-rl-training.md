@@ -118,4 +118,4 @@ Step   Reward    Reward_Std   KL
 - [[concepts/fine-tuning/quantization-overview]]
 - [[concepts/fine-tuning/unsloth]]
 - [[concepts/fine-tuning/pytorch-fsdp]]
-- [[concepts/rpg-regularized-policy-gradient]] — RPGフレームワークはGRPOのKL項における重要度重み付けミスマッチを特定・修正（Zhang et al., ICLR 2026）
+- [[concepts/rpg-regularized-policy-gradient]] — RPGフレームワークはGRPO's KL項における重要度重み付けミスマッチを特定·修正(Zhang et al., ICLR 2026)

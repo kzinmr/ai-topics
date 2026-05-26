@@ -13,6 +13,6 @@ sources: []
 
 # Building Effective Agents
 
-> **Moved:** コンテンツは [[concepts/harness-engineering/system-architecture/building-effective-agents]] に移動しました。
+> **Moved:** コンテンツは [[concepts/harness-engineering/system-architecture/building-effective-agents]] に移動しました. 
 
 詳細: [[concepts/harness-engineering/system-architecture/building-effective-agents]]

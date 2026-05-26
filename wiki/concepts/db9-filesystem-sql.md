@@ -162,7 +162,7 @@ LIMIT 5;
 ## Implications for Team Architecture
 
 As discussed in Slack (2026-03-30):
-> 「OpenClaw+OpenCodeベースでDiscord経由操作組んでたけど一瞬でいらなくなった」
+> "OpenClaw+OpenCodeベースでDiscord経由操作組んでたけど一瞬でいらなくなった"
 
 The db9 pattern makes Discord/Slack-based agent orchestration **trivial** — you don't need custom integration code. Just:
 1. Write agent outputs to files

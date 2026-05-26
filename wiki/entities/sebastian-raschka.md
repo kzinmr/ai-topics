@@ -41,7 +41,7 @@ Sebastian Raschka is a prominent ML researcher and educator known for his practi
 
 ## Related Wiki Pages
 
-- [[concepts/peft-lora-and-qlora]] — LoRAの概念ページ
+- [[concepts/peft-lora-and-qlora]] — LoRA's 概念ページ
 - [[concepts/qlora]]
 - [[concepts/genai-handbook]] — 最重要リソースとして評価
 - [[concepts/fine-tuning]]

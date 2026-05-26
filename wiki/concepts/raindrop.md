@@ -28,7 +28,7 @@ related:
 
 Raindrop is a monitoring platform for AI agents. Similar to how **Sentry** tracks errors in web apps, Raindrop discovers **silent agent failures** in production — failures that are invisible to traditional monitoring (e.g., agent giving wrong information confidently, forgetting user context, suboptimal tool paths, user frustration).
 
-**Founded:** Ben Hylak, Zubin Koticha, Alexis Gauba（San Francisco）
+**Founded:** Ben Hylak, Zubin Koticha, Alexis Gauba(San Francisco)
 **Funding:** $15M Seed (Dec 2025) — Lightspeed Venture Partners led, with Figma Ventures, Vercel Ventures, founders of Replit/Cognition/Framer/Speak/Notion, YC
 **Website:** https://www.raindrop.ai
 **Status:** Closed-source SaaS (no self-hosted option)
