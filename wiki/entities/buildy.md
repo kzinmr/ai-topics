@@ -12,85 +12,85 @@ related: [mcp, codex, claude-code, openclaw, cursor]
 
 # Buildy
 
-> Built by your AI. Used by both of you. — AI エージェントが「あなた専用」の Web アプリを構築・永続化するプラットフォーム
+> Built by your AI. Used by both of you. — A platform where AI agents build and persist personalized web apps for you
 
-Buildy は、AI エージェント（Claude Code / Codex / Cursor など）が **パーソナル Web アプリ** を構築・配信するためのランタイムプラットフォーム。ES module を POST するだけで公開 URL が発行され、実データを永続保存。1つのアカウントで複数の小さなアプリを持ち、どのエージェントからでも利用できる。
+Buildy is a runtime platform for AI agents (Claude Code / Codex / Cursor, etc.) to build and deliver **personal web apps**. Simply POST an ES module to get a public URL with persistent storage. Own multiple small apps under one account, accessible from any agent.
 
 **Website**: [buildy.so](https://buildy.so) | **API**: `app.buildy.so` | **Docs for AI**: [llms-full.txt](https://buildy.so/llms-full.txt)
 
-## 核心コンセプト
+## Core Concept
 
 > **"Built by your AI. Used by both of you."**
 
-Buildy は「AI がコードを書くこと」と「人間がそれを使うこと」のギャップを埋める。AI エージェントが Web アプリを書き、Buildy がそれをホストし、人間はブラウザ・スマホ・チャット内のどこからでもアクセスできる。
+Buildy bridges the gap between "AI writing code" and "humans using it." An AI agent writes a web app, Buildy hosts it, and the human accesses it from anywhere — browser, phone, or chat.
 
-## 3つの柱
+## Three Pillars
 
-| 柱 | 説明 |
+| Pillar | Description |
 |----|------|
-| **Persistence（永続性）** | 実URL + 実ストレージ。タブを閉じても明日もそこにある |
-| **Portability（可搬性）** | Codex で構築 → ChatGPT で利用 → Claude で更新。1つのMCP、全エージェント対応 |
-| **A Home（集約）** | 複数の小さなアプリを1アカウントで管理。習慣トラッカー、買い物リスト、予算管理…すべてここに |
+| **Persistence** | Real URL + real storage. Close the tab and it's still there tomorrow |
+| **Portability** | Build with Codex → use with ChatGPT → update with Claude. One MCP, all agents |
+| **A Home** | Manage multiple small apps in one account. Habit trackers, shopping lists, budgets... all here |
 
-## アーキテクチャ
+## Architecture
 
 ```
 AI Agent (Claude/Codex/Cursor/...) 
   → ES Module (Workers/WinterTC fetch handler + optional inline UI)
     → POST https://app.buildy.so/app
       → Public URL + KV Storage
-        ← ユーザーがブラウザ/スマホ/チャットでアクセス
+        ← User accesses via browser/phone/chat
 ```
 
-- **ランタイム**: Workers/WinterTC 互換の `fetch` ハンドラ
-- **ストレージ**: キーバリューストア（アプリ単位・シングルテナント）
-- **UI**: インライン HTML/CSS（iframe レンダリング）
-- **認証**: Device Code Pairing Flow (`/pair/start` → `/pair/poll`) または PAT (Personal Access Token)
+- **Runtime**: Workers/WinterTC-compatible `fetch` handler
+- **Storage**: Key-value store (per-app, single-tenant)
+- **UI**: Inline HTML/CSS (iframe rendering)
+- **Auth**: Device Code Pairing Flow (`/pair/start` → `/pair/poll`) or PAT (Personal Access Token)
 
-## 対応エージェント・クライアント
+## Supported Agents & Clients
 
-### コードエディタ系 (API経由)
+### Code Editors (via API)
 Cursor, Claude Code, Codex CLI, Cline, Windsurf, Continue, Zed, Gemini CLI
 
-### チャット系 (MCP経由)
+### Chat (via MCP)
 Claude Desktop, Claude.ai (Pro), ChatGPT (Plus + Developer Mode), Goose, Perplexity
 
-### 近日対応
-Grok, Gemini (チャット)
+### Coming Soon
+Grok, Gemini (chat)
 
-## 主な機能
+## Key Features
 
-| 機能 | 状態 | 説明 |
+| Feature | Status | Description |
 |------|------|------|
-| **Live URLs** | ✅ Live | 各アプリに実URL。ブラウザ・スマホ・共有可 |
-| **Persistent Storage** | ✅ Live | データ永続化。チャット閉じても明日も残る |
-| **Multi-Agent** | ✅ Live | 1 MCPインストールで Claude/ChatGPT/Codex/Cursor 全対応 |
-| **Build Anywhere, Use Anywhere** | ✅ Live | 構築したエージェントと別のエージェントで利用可能 |
+| **Live URLs** | ✅ Live | Real URL for each app. Accessible from browser, phone, shareable |
+| **Persistent Storage** | ✅ Live | Data persists. Close the chat and it's still there tomorrow |
+| **Multi-Agent** | ✅ Live | One MCP install, works with Claude/ChatGPT/Codex/Cursor |
+| **Build Anywhere, Use Anywhere** | ✅ Live | Build with one agent, use with another |
 | **Hooks / API** | ✅ Live | POST /api/log, call_app sync, cron digest |
-| **Share by Link** | ✅ Live | URL共有 → 相手がAIで開く、同じデータ |
-| **Custom Domains** | 🔜 Planned | 独自ドメイン |
+| **Share by Link** | ✅ Live | Share URL → recipient opens with AI, same data |
+| **Custom Domains** | 🔜 Planned | Custom domains |
 | **Notifications** | 🔜 Planned | Push/Email/SMS |
-| **Schedules** | 🔜 Planned | 定期実行（cron） |
-| **Shared Memory** | 🔜 Planned | アプリ間でコンテキスト共有 |
-| **Versions** | 🔜 Planned | エージェントの編集をアンドゥ、任意の地点にロールバック |
-| **Activity Log** | 🔜 Planned | 全読み書き・実行の監査ログ |
-| **Mobile Apps** | 🔜 Planned | iOS/Androidネイティブアプリ |
-| **Integrations** | 🔜 Planned | Gmail, Google Calendar, Sheets, Drive, Notion, Linear, GitHub 他24種 |
+| **Schedules** | 🔜 Planned | Scheduled execution (cron) |
+| **Shared Memory** | 🔜 Planned | Context sharing between apps |
+| **Versions** | 🔜 Planned | Undo agent edits, rollback to any point |
+| **Activity Log** | 🔜 Planned | Audit log of all reads/writes/executions |
+| **Mobile Apps** | 🔜 Planned | iOS/Android native apps |
+| **Integrations** | 🔜 Planned | Gmail, Google Calendar, Sheets, Drive, Notion, Linear, GitHub and 24 others |
 
-## 料金
+## Pricing
 
-最初の1アプリは **無料・サインアップ不要**。アカウント登録は「残したい」と思った時だけでよい。
+The first app is **free, no signup required**. Only register an account when you decide "I want to keep this."
 
-## 競合・関連
+## Competitors & Related
 
-- [[replit]] — AI Agent によるフルスタックアプリ開発。より本格的な開発向け
-- [[lindy]] — AI App Builder。Founder向けフルスタック
-- [[vercel-v0]] — AI UI 生成。コンポーネント単位
-- [[mcp]] — Buildy がエージェント接続に使うプロトコル
-- [[claude-code]], [[codex]], [[cursor]] — Buildy が主戦場とするコーディングエージェント
+- [[replit]] — Full-stack app development with AI Agent. For more serious development
+- [[lindy]] — AI App Builder. Full-stack for founders
+- [[vercel-v0]] — AI UI generation. Component-level
+- [[mcp]] — Protocol Buildy uses for agent connections
+- [[claude-code]], [[codex]], [[cursor]] — Coding agents where Buildy operates
 
-## 所感
+## Observations
 
-Buildy が面白いのは **「AI が作ったものを永続化する」** というレイヤーに特化している点。Vercel v0 や Replit Agent が「開発」に寄っているのに対し、Buildy は「使う」ことに重心を置く。`llms.txt` / `llms-full.txt` で AI 向けドキュメントを整備しているのも、AI-first な設計思想の表れ。
+What makes Buildy interesting is its focus on the **"persist what AI creates"** layer. While Vercel v0 and Replit Agent lean toward "development," Buildy emphasizes "usage." Its comprehensive AI-facing documentation (`llms.txt` / `llms-full.txt`) reflects an AI-first design philosophy.
 
-ユースケースは習慣トラッカー、買い物リスト、予算管理、ワークアウト記録など「小さな個人ツール」。エンタープライズではなく Personal AI の文脈で注目すべきプロダクト。
+Use cases include habit trackers, shopping lists, budget management, workout logs — "small personal tools." A product to watch in the Personal AI context rather than enterprise.

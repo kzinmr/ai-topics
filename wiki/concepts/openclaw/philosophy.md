@@ -24,93 +24,93 @@ sources:
 
 # OpenClaw Philosophy — Primitives Over Defaults
 
-OpenClawの設計哲学の中核は**「Primitives over Defaults」**（デフォルトではなくプリミティブを提供する）。これはLinuxカーネルやKubernetesの設計思想に近い。
+The core of OpenClaw's design philosophy is **"Primitives over Defaults"** — providing primitives rather than defaults. This is close to the design philosophy of the Linux kernel or Kubernetes.
 
-## 核心原則
+## Core Principles
 
-### 1. Explicit > Implicit（明示的 > 暗黙的）
+### 1. Explicit > Implicit
 > "Tool activation correctness is better on OpenClaw than Hermes for tasks where the agent has to pick the right CLI/API from ~50 options." — elvis
 
-エージェントが「どのスキルをロードすべきか」を実行時に推測させるのではなく、**優先度ルールをシステムプロンプトに明示的に記述する**。
+Rather than having the agent guess "which skill to load" at runtime, **priority rules are explicitly written into the system prompt.**
 
-**実装例:** Five-Tier Skill Precedence（5階層スキル優先度モデル）
+**Implementation:** Five-Tier Skill Precedence model
 
-### 2. Guarantees > Defaults（デフォルトではなく保証）
+### 2. Guarantees > Defaults
 > "You're not getting defaults, you're getting guarantees. OpenClaw does exactly what you told it to do, nothing more, nothing less. Boring in the best way." — elvis
 
-- デフォルトで何百ものスキルがバンドルされているわけではない
-- 最小限のベースラインスキルのみ
-- あとはユーザーが明示的に追加
+- Not bundling hundreds of skills by default
+- Only minimal baseline skills
+- Everything else explicitly added by the user
 
-### 3. Legibility > Autonomy（自律性より可読性）
+### 3. Legibility > Autonomy
 > "When something breaks at 3am, you can trace it in one grep instead of guessing which skill the agent triggered." — elvis
 
-Hermesのself-authoringスキルは「魔法のように」新しいスキルを生成するが、**何が起きているかの追跡が困難**。OpenClawは「魔法」を排除し、grepで追える決定論的動作を優先する。
+Hermes' self-authoring skills generate new skills "like magic," but **tracking what's happening is difficult**. OpenClaw eliminates the "magic" and prioritizes deterministic behavior that can be traced with grep.
 
-### 4. Bounded Growth > Organic Growth（制限付き成長 > 有機的成長）
+### 4. Bounded Growth > Organic Growth
 
 | | OpenClaw (Bounded) | Hermes (Organic) |
 |---|---|---|
-| スキル追加 | ClawHub経由、明示的承認 | エージェントが自律作成 |
-| 上限 | Byte caps, candidate caps | 無し |
-| セキュリティ | Symlink拒否、検証済みファイルのみ | プロンプト経由 |
-| コーパス劣化 | 防げない（意図が必要） | 発生する（Skill Explosion Problem） |
+| Skill addition | Via ClawHub, explicit approval | Agent autonomously creates |
+| Limits | Byte caps, candidate caps | None |
+| Security | Rejects symlinks, verified files only | Via prompting |
+| Corpus degradation | Preventable (requires intent) | Occurs (Skill Explosion Problem) |
 
-## Rails vs Linux/Kubernetes アナロジー
+## Rails vs Linux/Kubernetes Analogy
 
-elvisの分析による製品ポジショニングフレーム：
+Product positioning framework from elvis's analysis:
 
 | | Hermes = Rails | OpenClaw = Linux/K8s |
 |---|---|---|
-| 価値 | 「意見のあるデフォルト」 | 「最小限のプリミティブ」 |
-| 哲学 | happy path が最初から用意されている | 必要なものを自分で組み立てる |
-| トレードオフ | 初期生産性が高いが、カスタマイズが複雑 | 初期設定が必要だが、完全に制御可能 |
-| ターゲット | 「Day Oneから100+のことを知っているエージェント」 | 「指示されたことだけ、それ以上でも以下でもない」 |
+| Value | "Opinionated defaults" | "Minimal primitives" |
+| Philosophy | Happy path ready from the start | Build what you need yourself |
+| Tradeoff | High initial productivity, complex customization | Initial setup required, fully controllable |
+| Target | "Agent that knows 100+ things from Day One" | "Only what was instructed, nothing more, nothing less" |
 
 ## Ship Beats Perfect
 
 > "I don't read code anymore. I weave it." — Steinberger
 
-Steinbergerの開発哲学：
-- コードを一行一行読むのではなく、「織る」（weave）
-- 完璧さより出荷速度
-- 検証可能ならそれで良い（コンパイル→実行→テスト）
-- 美的判断（spacing, naming）より機能的判断（does it work?）
+Steinberger's development philosophy:
+- Rather than reading code line by line, "weave" it
+- Shipping speed over perfection
+- If it's verifiable, that's good enough (compile → run → test)
+- Functional judgment (does it work?) over aesthetic judgment (spacing, naming)
 
 ## Closed Loop Principle
 
 > "Code works well with AI because it's verifiable. You can compile it, run it, test it. That's the loop. You have to close the loop." — Steinberger
 
-AIエージェントが効果的に動作するためには：
-1. **検証可能な出力**を生成する構造にする
-2. CLIテストランナーを準備する
-3. 合成的ユーザーフローを定義する
-4. エージェントが自己検証できるようにする
+For AI agents to work effectively:
+1. Structure to produce **verifiable output**
+2. Prepare a CLI test runner
+3. Define synthetic user flows
+4. Enable agents to self-verify
 
 ## Polyagentmorous Development
 
 > "Powered by Vienna coffee culture" — steipete GitHub bio
 
-Steinbergerは**5-10のAIエージェントを並列にオーケストレーション**する：
+Steinberger **orchestrates 5-10 AI agents in parallel**:
 - Claude Code
 - OpenAI Codex
-- カスタムMCPサーバー
-- 各エージェントはスペシャリスト（ファイル操作、Webスクレイピング、ターミナル自動化、スクリーンショット分析）
-- 彼はコーダーではなく「指揮者」
+- Custom MCP servers
+- Each agent is a specialist (file operations, web scraping, terminal automation, screenshot analysis)
+- He is not a coder but a "conductor"
 
-## ローカルファーストとの関係
+## Relationship with Local-First
 
-OpenClawの哲学は[[concepts/local-first-software]]運動と深く関連：
-- ローカル推論（Ollama, LM Studio, llama.cpp）
-- ローカルファイルシステムアクセス
-- ローカルMCPサーバー
-- プラットフォーム依存の最小化
+OpenClaw's philosophy is deeply connected to the [[concepts/local-first-software]] movement:
+- Local inference (Ollama, LM Studio, llama.cpp)
+- Local filesystem access
+- Local MCP servers
+- Minimizing platform dependency
 
-## 関連
+## Related
 
-- [[concepts/openclaw]] — OpenClawコンセプト集約
+- [[concepts/openclaw]] — OpenClaw concept aggregation
 - [[concepts/openclaw/five-tier-precedence]] — Five-Tier Skill Precedence
-- [[concepts/skill-architecture-patterns]] — Hermesとの比較
-- [[concepts/local-first-software]] — ローカルファーストソフトウェア
-- [[entities/peter-steinberger]] — 設計者
-- [[comparisons/hermes-vs-openclaw-architecture]] — 詳細アーキテクチャ比較
+- [[concepts/skill-architecture-patterns]] — Comparison with Hermes
+- [[concepts/local-first-software]] — Local-first software
+- [[entities/peter-steinberger]] — Designer
+- [[comparisons/hermes-vs-openclaw-architecture]] — Detailed architecture comparison

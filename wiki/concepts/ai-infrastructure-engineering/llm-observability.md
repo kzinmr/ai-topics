@@ -22,101 +22,101 @@ related:
 
 # LLM Observability
 
-> LLMアプリケーションの本番監視とデバッグ。従来のオブザーバビリティ（メトリクス・ログ・トレース）に加え、LLM特有のシグナル（トークン消費、品質評価、エージェント行動追跡）を統合する。
+> Production monitoring and debugging for LLM applications. Integrates traditional observability (metrics, logs, traces) with LLM-specific signals (token consumption, quality evaluation, agent behavior tracking).
 
 ## Relationship to Existing Pages
 
-このページは [[concepts/ai-observability]] の上位概念であり、特に**推論インフラ**の観点からLLMオブザーバビリティを整理する。品質評価・エージェントトレースの詳細は既存ページを参照。
+This page is a superset of [[concepts/ai-observability]], organizing LLM observability specifically from an **inference infrastructure** perspective. See existing pages for details on quality evaluation and agent tracing.
 
 ## Outline
 
 ### 1. Inference Infrastructure Metrics
 
-#### レイテンシ指標
-| メトリクス | 定義 | 重要度 | 閾値目安 |
+#### Latency Metrics
+| Metric | Definition | Priority | Threshold |
 |-----------|------|--------|---------|
-| **TTFT** (Time to First Token) | リクエスト送信から最初のトークン生成まで | ⭐⭐⭐ | < 500ms (streaming), < 2s (interactive) |
-| **TPOT** (Time per Output Token) | 出力トークン1個あたりの生成時間 | ⭐⭐⭐ | < 10ms/token |
-| **ITL** (Inter-Token Latency) | トークン間隔 = 1/TPOT に相当 | ⭐⭐ | Stable, no spikes |
-| **End-to-end latency** | 全リクエスト完了時間 | ⭐⭐⭐ | ユースケース依存 |
+| **TTFT** (Time to First Token) | From request send to first token generation | ⭐⭐⭐ | < 500ms (streaming), < 2s (interactive) |
+| **TPOT** (Time per Output Token) | Generation time per output token | ⭐⭐⭐ | < 10ms/token |
+| **ITL** (Inter-Token Latency) | Token interval = 1/TPOT | ⭐⭐ | Stable, no spikes |
+| **End-to-end latency** | Full request completion time | ⭐⭐⭐ | Depends on use case |
 
-#### スループット指標
-| メトリクス | 定義 | 注釈 |
+#### Throughput Metrics
+| Metric | Definition | Notes |
 |-----------|------|------|
-| **Tokens/sec** (出力) | 秒間出力トークン数 | バッチサイズ×モデル速度 |
-| **Requests/sec** | 秒間リクエスト処理数 | プロンプト長依存 |
-| **Input tokens/sec** | 秒間入力トークン処理数 | プリフィルスループット |
-| **KV Cache hit rate** | プレフィックスキャッシュのヒット率 | SGLang RadixAttention有効性 |
+| **Tokens/sec** (output) | Output tokens per second | Batch size × model speed |
+| **Requests/sec** | Requests processed per second | Depends on prompt length |
+| **Input tokens/sec** | Input tokens processed per second | Prefill throughput |
+| **KV Cache hit rate** | Prefix cache hit rate | SGLang RadixAttention effectiveness |
 
-#### リソース指標
-| メトリクス | 監視理由 |
+#### Resource Metrics
+| Metric | Reason for Monitoring |
 |-----------|---------|
-| **GPU Utilization** | アイドルかcompute-boundか |
-| **VRAM Usage** | OOM予防、KV Cache圧迫検知 |
+| **GPU Utilization** | Idle or compute-bound |
+| **VRAM Usage** | OOM prevention, KV Cache pressure detection |
 | **Memory Bandwidth Utilization** | Memory-bound vs compute-bound |
-| **Power Draw** | コスト最適化、サーマルスロットリング検知 |
-| **NVLink / PCIe bandwidth** | マルチGPU通信のボトルネック検知 |
+| **Power Draw** | Cost optimization, thermal throttling detection |
+| **NVLink / PCIe bandwidth** | Multi-GPU communication bottleneck detection |
 
 ### 2. LLM-Specific Signals
 
-- **Token Cost Tracking**: モデル別・リクエスト別のトークン消費
-- **Prefill vs Decode Ratio**: プリフィル時間/デコード時間の比率（モデル・ワークロード特性）
-- **Batch Efficiency**: 実際のバッチサイズと理想バッチサイズの乖離
-- **KV Cache Pressure**: 現在のキャッシュ使用率と最大容量の比率
-- **Scheduling Delay**: リクエストがバッチスケジューラで待機した時間
+- **Token Cost Tracking**: Token consumption per model and per request
+- **Prefill vs Decode Ratio**: Ratio of prefill time to decode time (model/workload characteristics)
+- **Batch Efficiency**: Gap between actual and ideal batch size
+- **KV Cache Pressure**: Current cache usage vs maximum capacity ratio
+- **Scheduling Delay**: Time requests waited in the batch scheduler
 
 ### 3. Quality Signals (Inference Side)
 
-- **Generation diversity**: 同一プロンプトに対する出力のばらつき
-- **Token-level probability**: 低確率トークンの頻度（ハルシネーション指標）
-- **Response length distribution**: リクエストタイプ別の出力長分布
-- **Error rates**: レート制限、コンテキスト長超過、タイムアウト
+- **Generation diversity**: Output variance for identical prompts
+- **Token-level probability**: Frequency of low-probability tokens (hallucination indicator)
+- **Response length distribution**: Output length distribution by request type
+- **Error rates**: Rate limits, context length exceeded, timeouts
 
 ### 4. Observability Stack Components
 
-| レイヤー | ツール | 役割 |
+| Layer | Tools | Role |
 |---------|-------|------|
-| **Metrics collection** | Prometheus + node-exporter + DCGM | GPUメトリクス収集 |
-| **Logging** | ELK/Loki + vector | リクエスト・レスポンスログ |
-| **Tracing** | OpenTelemetry + Jaeger/Tempo | リクエストフロー追跡 |
-| **LLM-specific** | Arize AI, LangSmith, Weights & Biases | トークン・品質・エージェントトレース |
-| **Dashboard** | Grafana | 可視化・アラーティング |
-| **Alerting** | PagerDuty/OpsGenie + AlertManager | 異常検知・通知 |
+| **Metrics collection** | Prometheus + node-exporter + DCGM | GPU metric collection |
+| **Logging** | ELK/Loki + vector | Request/response logging |
+| **Tracing** | OpenTelemetry + Jaeger/Tempo | Request flow tracing |
+| **LLM-specific** | Arize AI, LangSmith, Weights & Biases | Token, quality, agent tracing |
+| **Dashboard** | Grafana | Visualization and alerting |
+| **Alerting** | PagerDuty/OpsGenie + AlertManager | Anomaly detection and notification |
 
 ### 5. vLLM Observability Integration
 
-- **vLLM Prometheus Metrics**: `/metrics` エンドポイントで公開
+- **vLLM Prometheus Metrics**: Exposed via `/metrics` endpoint
   - `vllm:time_to_first_token_seconds`
   - `vllm:time_per_output_token_seconds`
   - `vllm:request_success_total`
   - `vllm:gpu_cache_usage_perc`
   - `vllm:num_requests_waiting`
-- **OpenTelemetry Tracing**: vLLM v0.19+ でOTel trace propagation対応
-- **Logging**: `--log-requests` でリクエストログ出力
+- **OpenTelemetry Tracing**: OTel trace propagation supported in vLLM v0.19+
+- **Logging**: Request logging via `--log-requests`
 
 ### 6. Production Observability Patterns
 
 #### Cost Attribution
-- モデル別・エンドポイント別・ユーザー別のトークン消費追跡
-- プリフィル/デコード比率によるコスト内訳
-- KV Cache共有によるコスト削減効果の測定
+- Token consumption tracking by model, endpoint, and user
+- Cost breakdown by prefill/decode ratio
+- Measuring cost reduction from KV Cache sharing
 
 #### Degradation Detection
-- TTFTのP99スパイク → キューイング遅延 or リソース不足
-- TPOTのスパイク → メモリ帯域幅競合 or スロットリング
-- エラーレート上昇 → モデル障害 or 設定ミス
+- P99 TTFT spike → Queueing delay or resource shortage
+- TPOT spike → Memory bandwidth contention or throttling
+- Error rate increase → Model failure or misconfiguration
 
 #### Capacity Planning
-- GPU使用率とスループットの関係から将来のスケーリング予測
-- コンテキスト長分布の分析によるVRAM計画
-- ピーク負荷時のバッファリング設計
+- Future scaling prediction from GPU utilization and throughput
+- VRAM planning from context length distribution analysis
+- Buffer design for peak load
 
 ## Related Pages
 
-- [[concepts/ai-observability]] — Detailed LLM observability guide（品質・エージェントトレース）
+- [[concepts/ai-observability]] — Detailed LLM observability guide (quality, agent tracing)
 - [[concepts/serving-llms-vllm]] — vLLM metrics & monitoring
-- [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — スケーリングシグナルとしてのメトリクス
-- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — GPUリソース監視の基礎
+- [[concepts/ai-infrastructure-engineering/model-serving-autoscaling]] — Metrics as scaling signals
+- [[concepts/ai-infrastructure-engineering/gpu-vram-fundamentals]] — GPU resource monitoring fundamentals
 - [[concepts/ai-infrastructure-engineering/_index]] — Parent page
 
 ## TODO

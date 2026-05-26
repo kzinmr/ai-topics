@@ -7,70 +7,69 @@ tags: [coding-agents]
 aliases: ["single-agent-limitations", "sloperator-anti-pattern"]
 sources: []
 ---
+# Single-Agent Ceiling
 
-# Single-Agent Ceiling（単一エージェントの限界）
+> Proposed by: [[entities/milksandmatcha|Sarah Chieng]] (@MilksandMatcha) + [[entities/sero|Sero]] (@0xSero), April 2026
 
-> 提唱: [[entities/milksandmatcha|Sarah Chieng]] (@MilksandMatcha) + [[entities/sero|Sero]] (@0xSero), 2026年4月
+A limitation faced by every developer using AI coding agents. Becomes apparent the moment a project transitions from simple tasks (like a snake game in HTML) to a practical scale.
 
-AIコーディングエージェントを使用する全ての開発者が直面する限界。プロジェクトが単純なタスク（HTMLの蛇ゲームなど）から実用的な規模に成長した瞬間に顕在化する。
+## Structure of the Problem
 
-## 問題の構造
+Why single-agent AI coding becomes a "nightmare":
 
-単一エージェントAIコーディングが「悪夢」である理由：
+1. **Expecting too much from a single agent** — Trying to have one agent handle frontend, backend, testing, documentation, and deployment all at once
+2. **Not decomposing problems into sufficiently small, verifiable tasks** — Using a giant prompt asking "do everything"
 
-1. **単一エージェントに期待しすぎる** — フロントエンド、バックエンド、テスト、ドキュメント、デプロイメントまで全てを1つのエージェントにやらせようとする
-2. **問題を十分に小さく検証可能なタスクに分解していない** — 巨大なプロンプトで「全部やって」と依頼する
+## The "Sloperator" Anti-Pattern
 
-## 「Sloperator」アンチパターン
+> "Stop being a one-shot Sloperator" — Term originally coined by @brickywhat
 
-> 「Stop being a one-shot Sloperator」 — @brickywhat が最初に命名した用語
+**Typical Sloperator workflow:**
+1. Pay $200/month subscription
+2. Write a prompt (doing both prompt engineering and context engineering yourself)
+3. Wait 35+ minutes — the agent keeps displaying "synthesizing", "perusing", "effecting", "germinating"
+4. Result: bug-ridden code, bloated context window, counting remaining tokens on your left hand
+5. Compact the context, yell at the agent, explain everything from scratch again... repeat
+6. All the fun of AI coding completely disappears
 
-**典型的なSloperatorワークフロー:**
-1. $200/月のサブスクリプションを払う
-2. プロンプトを書く（プロンプトエンジニアリング + コンテキストエンジニアリングの両方を自分でやる）
-3. 35分以上待つ — エージェントは"synthesizing"、"perusing"、"effecting"、"germinating"と表示され続ける
-4. 結果: バグだらけのコード、肥大化したコンテキストウィンドウ、残りトークンを左手で数える状態
-5. コンテキストをcompactして、エージェントに怒鳴りつけて、もう一度最初から説明して...を繰り返す
-6. AIコーディングの楽しさが完全に消える
+## Why Single Agents Break Down
 
-## なぜ単一エージェントが破綻するか
+### Physical Limits of the Context Window
 
-### コンテキストウィンドウの物理的限界
+A single agent must hold all of the following within one conversation thread:
+- Original requirements (15,000-token master plan document)
+- Full conversation history up to now
+- Contents of loaded files
+- Contents of written files
+- Results of tool calls
 
-単一エージェントは1つの会話スレッド内に以下の全てを保持する必要がある：
-- 元の要件（15,000トークンのマスタープラン文書）
-- これまでの全会話履歴
-- 読み込んだファイルの内容
-- 書き出したファイルの内容
-- ツール呼び出しの結果
+These accumulate, bloating the context window. The agent can no longer distinguish between relevant and irrelevant information, resulting in quality degradation.
 
-これらが累積し、コンテキストウィンドウが肥大化。エージェントは関連情報と無関連情報を区別できなくなり、品質が低下する。
+### Lack of Verification
 
-### 検証の欠如
+A single agent "writes and tests its own code," so there is no objective verification step. Errors are overlooked and bugs accumulate.
 
-単一エージェントは「自分で書いて自分でテストする」ため、客観的な検証ステップが存在しない。エラーが見逃され、バグが累積する。
+### Impossibility of Parallel Processing
 
-### 並列処理の不可能性
+A single agent can only operate sequentially. Even with multiple independent tasks, they must be processed one at a time.
 
-単一エージェントはシーケンシャルにしか動作できない。複数の独立したタスクがあっても、順番に処理する必要がある。
+## Solution: Back of House Pattern
 
-## 解決策: Back of Houseパターン
+See [[concepts/back-of-house-patterns]] for details.
 
-詳細は [[concepts/back-of-house-patterns]] を参照。
+**Summary:**
+- Head Chef (Orchestrator) decomposes orders into tickets
+- Line Cook (Subagent) executes tasks in isolated contexts
+- Verification steps are separated (Gordon Ramsay Pattern)
+- Parallel processing is leveraged (Prep Line, Dinner Rush, Courses in Sequence)
 
-**要約:**
-- Head Chef（Orchestrator）が注文をチケットに分解
-- Line Cook（Subagent）が各自独立したコンテキストでタスクを実行
-- 検証ステップを分離（Gordon Ramsayパターン）
-- 並列処理を活用（Prep Line, Dinner Rush, Courses in Sequence）
+## Related Concepts
 
-## 関連概念
+- [[concepts/back-of-house-patterns]] — Kitchen metaphor for multi-agent orchestration
+- [[concepts/context-engineering]] — Context engineering
+- [[concepts/harness-engineering]] — Methodology for how engineers use agents
+- [[concepts/harness-engineering/agentic-workflows/subagents]] — Subagent delegation patterns
 
-- [[concepts/back-of-house-patterns]] — マルチエージェント・オーケストレーションの厨房メタファー
-- [[concepts/context-engineering]] — コンテキストエンジニアリング
-- [[concepts/harness-engineering]] — エンジニアのエージェント活用方法论
-- [[concepts/harness-engineering/agentic-workflows/subagents]] — サブエージェントの委任パターン
-
-## ソース
+## Sources
 
 -  — Sarah Chieng (@MilksandMatcha) + @0xSero (April 2026)
