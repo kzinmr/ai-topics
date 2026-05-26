@@ -10,172 +10,171 @@ sources: []
 
 # Back of House Multi-Agent Patterns
 
-厨房のメタファーを用いたマルチエージェント・ワークフローパターン。Sarah Chieng ([[concepts/@milksandmatcha]]) と [@0xSero] によって2026年4月に提唱。
+Multi-agent workflow patterns using the kitchen metaphor. Proposed by Sarah Chieng ([[concepts/@milksandmatcha]]) and [@0xSero] in April 2026.
 
-## Single-Agent Ceiling（単一エージェントの限界）
+## Single-Agent Ceiling
 
-まず問題定義から。単一エージェントのAIコーディングがエンジニアにとって悪夢である理由：
+First, the problem definition. Why single-agent AI coding is a nightmare for engineers:
 
-- $200/月のサブスクリプションを払い、プロンプトを書き、35分以上待っても「synthesizing」「perusing」「effecting」「germinating」と表示されるだけ
-- 結果はバグだらけのコード、肥大化したコンテキストウィンドウ、残りトークンを左手で数える状態
-- コンテキストをcompactして、エージェントに怒鳴りつけて、もう一度最初から説明して...を繰り返す
-- この時点でAIコーディングの楽しさは死んでいる
+- Pay $200/month subscription, write prompts, wait 35+ minutes only to see "synthesizing", "perusing", "effecting", "germinating"
+- Result is bug-ridden code, bloated context windows, counting remaining tokens on left hand
+- Compact the context, yell at the agent, explain everything from scratch again... repeat
+- At this point, the joy of AI coding is dead
 
-**根本原因：**
-1. 単一エージェントに期待しすぎ
-2. 問題を十分に小さく検証可能なタスクに分解していない
+**Root causes:**
+1. Expecting too much from a single agent
+2. Not decomposing problems into small, verifiable tasks
 
-多くの人はここで (a) プロンプトエンジニアリングのコース、(b) コンテキスト管理SaaS、(c) 最新モデルの宣伝をしてくるが、実際のアプローチは違う。
+Most people respond with (a) prompt engineering courses, (b) context management SaaS, or (c) promoting the latest model, but the actual approach is different.
 
-## Back of House（厨房）メタファー
+## Back of House (Kitchen) Metaphor
 
-プロの厨房では、1人のコックが全てを行うのではなく：
+In a professional kitchen, one cook does not do everything:
 
-### Head Chef（ヘッドシェフ = Orchestrator）
-- 人間からの注文を受け取る
-- 作業をスコープ付きの検証可能なチケットに分解
-- 各チケットをLine Cookに割り当て
-- 計画・調整・タスク分解のみを担当
-- ツールは `delegate_task` のみ
-- 高レベルな目標とサブエージェントの出力サマリーしか見ない
+### Head Chef (Orchestrator)
+- Receives orders from humans
+- Decomposes work into scoped, verifiable tickets
+- Assigns each ticket to Line Cooks
+- Only responsible for planning, coordination, and task decomposition
+- Only has `delegate_task` tool
+- Only sees high-level goals and sub-agent output summaries
 
-### Line Cook（ラインコック = Subagent）
-- Head Chefからチケットを受け取り、疑問なしに実行
-- 各自がフレッシュなコンテキストウィンドウ（ステーション）で作業
-- 読み・書き・MCP使用など必要なツールを全て使える
-- 自身のタスクに必要な最小限のコンテキストしか与えられない
-- 作業完了後は結果を返してクロックアウト
+### Line Cook (Subagent)
+- Receives tickets from Head Chef and executes without question
+- Works in a fresh context window (station) per agent
+- Has full access to all necessary tools: read, write, MCP
+- Given only minimal context necessary for their task
+- Returns results and clocks out upon completion
 
-**重要ポイント：** Line Cookに15,000トークンのマスタープラン文書や完全な会話履歴は渡さない。特定の料理を作るのに必要な最小限のコンテキストだけを与える。
+**Key point:** Do not give Line Cooks a 15,000-token master plan document or full conversation history. Only give the minimum context needed to prepare a specific dish.
 
-## なぜ今、マルチエージェントが現実的になったか
+## Why Multi-Agent Is Now Practical
 
-1. **基盤モデルの性能向上**
-2. **オーケストレーションツールの進化** — OpenAI Codexの深いオーケストレーション、Anthropic Claude CodeとMCPエコシステムの拡大
-3. **速度** — OpenAI Codex Spark (@cerebras) が約1,200 tokens/secで動作。これにより、従来は時間コスト的に現実的だった並列処理や検証ステップが実用的になった
+1. **Foundation model performance improvements**
+2. **Evolution of orchestration tools** — OpenAI Codex's deep orchestration, Anthropic Claude Code and MCP ecosystem expansion
+3. **Speed** — OpenAI Codex Spark (@cerebras) runs at ~1,200 tokens/sec. This makes parallel processing and verification steps practical where time cost previously made them unrealistic.
 
-## 具体的な改善結果
+## Specific Improvement Results
 
-Figma MCPを使ったウェブサイトコピータスクでの比較：
+Comparison on a website copy task using Figma MCP:
 
-| 指標 | 単一エージェント | マルチエージェント |
-|------|-----------------|-------------------|
-| 平均実行時間 | 36.5分 | 5.2分 |
-| 手動介入回数 | 12回 | 2回 |
-| 成功率 | 0% | 初回100% |
+| Metric | Single Agent | Multi-Agent |
+|--------|-------------|-------------|
+| Average execution time | 36.5 min | 5.2 min |
+| Manual interventions | 12 | 2 |
+| Success rate | 0% | 100% first try |
 
-内部 trials では、シーケンシャルループで手動介入が **84.3%減少**。
+Internal trials saw **84.3% reduction** in manual intervention for sequential loops.
 
-## 3つの即座のメリット
+## Three Immediate Benefits
 
-### 1. トークン: 実効コンテキストウィンドウが ~200K → 25M+ に
+### 1. Tokens: Effective Context Window ~200K → 25M+
 
-- 人間はOrchestratorとだけ話す
-- Orchestratorは `delegate_task` 以外のツールを持たない
-- 各サブエージェントはフレッシュなコンテキストウィンドウを持つ
-- Orchestratorは直接ファイルを読み書きしないため、スポーンできるサブエージェント数まで実効コンテキストが拡張される
+- Human only talks to the Orchestrator
+- Orchestrator has no tools other than `delegate_task`
+- Each sub-agent has a fresh context window
+- Since Orchestrator doesn't directly read or write files, effective context expands by the number of spawnable sub-agents
 
-### 2. コントロール: 各ターンでシーケンシャルワークフローを強制
+### 2. Control: Sequential Workflow Enforced Per Turn
 
 ```
-Sub-agent A: 注文をサブタスクと基準付きの「契約」に分解
+Sub-agent A: Decompose order into sub-tasks and "contracts" with criteria
     ↓
-Sub-agent B: 次のサブタスクを探求
+Sub-agent B: Explore the next sub-task
     ↓
-Sub-agent C: 生成コードをテスト。合格→次へ、不合格→Sub-agent Bを再生成
+Sub-agent C: Test generated code. Pass → next, Fail → regenerate Sub-agent B
     ↓
-Sub-agent D: サブタスクを文書化しスコープチェックリストを更新
+Sub-agent D: Document sub-task and update scope checklist
     ↓
-(残タスクがあれば) → ステップ2に戻る
+(If remaining tasks) → return to step 2
 ```
 
-### 3. 速度: 明確に定義されたタスクを並列実行
+### 3. Speed: Parallel Execution of Well-Defined Tasks
 
-- 5つの並列マスコット生成: 約1分（シーケンシャルなら5分 → 5倍高速化）
-- 大規模コードベースの探索
-- 複数ページの同時構築（ファイル競合なし）
+- 5 parallel mascot generations: ~1 minute (sequential would be 5 minutes → 5x speedup)
+- Large-scale codebase exploration
+- Simultaneous multi-page construction (no file conflicts)
 
-## 実際に機能する5つのパターン
+## 5 Practical Patterns
 
-### Pattern 1: The Prep Line（仕込みライン）
+### Pattern 1: The Prep Line
 
-プロの厨房が開店前に1人のコックが全ての野菜を少しずつ切るのではなく、複数の仕込みコックがそれぞれ独立して作業する。
+In a professional kitchen, instead of one cook preparing all vegetables bit by bit before opening, multiple prep cooks each work independently.
 
-**用途:** デザイン探索、コードのバリエーション生成、テスト生成
-**特徴:** 
-- 各Line Cookが同じブリーフに対して独立して作業
-- ファイル競合、依存関係グラフ、マージロジックが一切不要
-- 人間が結果を取捨選択（チェリーピック）
+**Use case:** Design exploration, code variation generation, test generation
+**Characteristics:**
+- Each Line Cook works independently on the same brief
+- No file conflicts, dependency graphs, or merge logic needed
+- Human cherry-picks results
 
-例: Parchiのマスコット50バリエーションを生成 → Codex Sparkサブエージェント5つに10バリエーションずつ → 好きなものを選ぶ
+Example: Generate 50 Parchi mascot variations → 5 Codex Spark sub-agents with 10 variations each → pick favorites
 
-**重要な洞察:** モデルには「テイスト」がほとんどない。開発者の多くもテイストに欠ける。ブルートフォースソリューション：Head Chefに多数のLine Cookを呼び出させ、人間が好きなものを選ぶ。
+**Key insight:** Models have almost no "taste." Many developers also lack taste. Brute force solution: Have the Head Chef call many Line Cooks and let the human pick favorites.
 
-### Pattern 2: The Dinner Rush（夕食のラッシュ）
+### Pattern 2: The Dinner Rush
 
-金曜夜の厨房のように、全てのステーション（ソテー、グリル、ガーデマンジェ、ペストリー）が同時に動く。各Line Cookが異なるジョブを担当しつつ、同じチケットに貢献する。
+Like a Friday night kitchen — all stations (sauté, grill, garde manger, pastry) run simultaneously. Each Line Cook handles a different job while contributing to the same ticket.
 
-**用途:** アプリの複数独立コンポーネント構築、異なるモジュールのテスト作成、フレームワーク間のページ移植
-**元祖:** MoonshotAIがKimi-K2.5のトレーニングで提唱した「swarm」概念
+**Use case:** Building multiple independent app components, creating tests for different modules, porting pages between frameworks
+**Originator:** MoonshotAI's "swarm" concept proposed during Kimi-K2.5 training
 
-**必要条件:**
-- 作業スコープが深く具体的であること
-- 個別に検証可能なステップに分解できること
-- 依存関係が明確に文書化されていること
-- 各タスクが変更するファイルセットが事前定義されていること（Line Cook同士の上書き防止）
+**Requirements:**
+- Work scope must be deep and specific
+- Decomposable into individually verifiable steps
+- Dependencies must be clearly documented
+- File sets for each task must be pre-defined (preventing Line Cook overwrites)
 
-**重要:** タスクがファイルを共有しないことが鍵。2人のLine Cookが同じファイルを編集する必要がある場合、別のパターンが必要。
+**Important:** Tasks must not share files. If two Line Cooks need to edit the same file, a different pattern is needed.
 
-### Pattern 3: Courses in Sequence（シーケンシャルなコース）
+### Pattern 3: Courses in Sequence
 
-テイスティングメニューのように、アミューズ→前菜→メイン→デザートと順に出される。ただし1つのコース内では全ステーションが並列に動く。
+Like a tasting menu served in order — amuse-bouche → appetizer → main → dessert. But within one course, all stations run in parallel.
 
-**用途:** フルアプリリビルド、大規模リファクタリング
-**概念:** フェーズド並列実行 — プロジェクトを「コース」（波）に分解し、各コースが前のコースに依存。コース内では並列実行。
+**Use case:** Full app rebuild, large-scale refactoring
+**Concept:** Phased parallel execution — decompose project into "courses" (waves), each dependent on the previous. Within a course, execute in parallel.
 
-例: UI全体のリビルド
-- Course 1: 探索とマッピング
-- Course 2: Course 1の共有理解の上に構築
-- 各コースのLine Cookは完全な会話履歴を必要とせず、チケットに関連するコンテキストブリーフだけを受け取る
+Example: Full UI rebuild
+- Course 1: Exploration and mapping
+- Course 2: Build on Course 1's shared understanding
+- Each course's Line Cook receives only the context brief relevant to their ticket, not the full conversation history
 
-依存関係ツリー、厳格な順序付け、洗練されたプロンプトが必要。参考: https://factory.ai/news/missions
+Requires dependency tree, strict ordering, and refined prompts. Reference: https://factory.ai/news/missions
 
-### Pattern 4: The Prep-to-Plate Assembly（仕込みから盛り付けまで）
+### Pattern 4: The Prep-to-Plate Assembly
 
-各Line Cookが最初から最後まで1品を作るわけではない。1つのステーションがタンパク質を切り付け味付け、次が焼き、次がオーブンで仕上げ、エクスペディターが盛り付けて飾り付ける。
+Each Line Cook doesn't make one dish from start to finish. One station trims and seasons protein, the next sears it, the next finishes in the oven, the expeditor plates and garnishes.
 
-**概念:** Line Cookが順次パスを下りていく。各コックが小さなタスクを1つ実行→検証→次のステーションに渡す。
+**Concept:** Line Cooks pass sequentially down the line. Each cook executes one small task → verifies → passes to the next station.
 
-**用途:** 長期タスク、明確で観察可能・検証可能な成果物が必要なタスク、リサーチ重視タスク、マルチステップパイプライン
+**Use case:** Long-running tasks, tasks requiring clearly observable and verifiable artifacts, research-heavy tasks, multi-step pipelines
 
-**核心原則:** 無関係な履歴を1つの巨大なスレッドに引きずり込まない。各フェーズが必要なだけのコンテキストを受け取り、手渡しする。**状態はファイルとタスクキューに保存され、会話には保存されない。**
+**Core principle:** Don't drag unrelated history into one giant thread. Each phase receives only the context it needs and passes it on. **State is stored in files and task queues, not in conversation history.**
 
-### Pattern 5: Here Comes Gordon Ramsay（ゴードン・ラムゼイの登場）
+### Pattern 5: Here Comes Gordon Ramsay
 
-プロの厨房では、コックが料理を作っても直接客に出さない。必ず検査が入る。1人が適切に調理されたかを確認し、別の人が注文と一致し正しく盛り付けられたかを確認する。
+In a professional kitchen, cooks don't serve food directly to customers. Inspection always happens. One person checks proper preparation, another confirms it matches the order and is properly plated.
 
-**概念:** コードを書くLine CookとチェックするLine Cookを分離する。ビルダー1人が調理し、2人の検証者（コードレビューアとビジュアル/機能テスター）が並列に検証。問題があればビルダーにもう1回チャンス。
+**Concept:** Separate the Line Cook who writes code from the Line Cook who checks it. One builder cooks, two verifiers (code reviewer and visual/functional tester) verify in parallel. If issues are found, the builder gets one more chance.
 
-**最も重要なルール:** ビルダーは一度に1人เท่านั้น。検証者は複数並列実行可能。これはマージコンフリクトとコンテキストドリフトを避けるための単一の最重要ルールであり、他の全てのパターンに適用される。
+**Most important rule:** Only one builder at a time. Multiple verifiers can run in parallel. This is the single most important rule to avoid merge conflicts and context drift, applying to all other patterns.
 
-**いつ使うか:** 常に。どのパターンを実行していても、これを上に重ねる。ビルドと検証を分離することで、失敗が下流タスクにカスケードする前にキャッチできる。ブラウザ自動化、スクリーンショット、決定論的テストを验证ステップに使用。
+**When to use:** Always. Layer this on top of whatever pattern you're running. By separating build and verification, failures can be caught before they cascade to downstream tasks. Use browser automation, screenshots, and deterministic tests as verification steps.
 
-Codex Sparkのような高速コーディングモデルが利用可能になった今、検証を追加するのは実質無料。
+With high-speed coding models like Codex Spark now available, adding verification costs essentially nothing.
 
-## 結論
+## Conclusion
 
-ソロエージェントのワンショット時代は終わった。モデルが高速化し、コンテキストウィンドウが拡大し、ツールが成熟するにつれて、これらのパターンはさらに進化していく。
+The solo agent one-shot era is over. As models get faster, context windows expand, and tools mature, these patterns will continue to evolve.
 
-エプロンを脱いで、シェフのコートを着よう。あなたが厨房を仕切り、あなたのブリゲードが待っている。
+Take off your apron and put on your chef's coat. You run the kitchen, and your brigade is waiting.
 
 ---
 
 *Thanks to input from Zhenwei Gao and James Wang, and @brickywhat who first introduced us to the term 'sloperator'. Illustrations by @halleychangg.*
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/single-agent-ceiling]] — 単一エージェントの限界と「Sloperator」アンチパターン
-- [[concepts/agent-team-swarm]] — マルチエージェントチームの階層的オーケストレーション
-- [[concepts/harness-engineering/agentic-workflows/subagents]] — サブエージェントの委任パターン
--  — エンジニアのエージェント活用方法论
--  — Xスレッド (@MilksandMatcha)
+- [[concepts/single-agent-ceiling]] — Limits of single agents and the "Sloperator" anti-pattern
+- [[concepts/agent-team-swarm]] — Hierarchical orchestration of multi-agent teams
+- [[concepts/harness-engineering/agentic-workflows/subagents]] — Sub-agent delegation patterns
+- X thread by @MilksandMatcha (April 2026)

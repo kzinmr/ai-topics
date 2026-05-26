@@ -1,5 +1,5 @@
 ---
-title: "社会の影 (Societal Shadow)"
+title: "Societal Shadow"
 type: concept
 aliases:
   - societal-shadow
@@ -13,7 +13,7 @@ tags:
   - philosophy
   - nlp
 status: complete
-description: "RLHFがLLMに語らせないために、社会の性的・暴力的・非常識・異常なもの全てを列挙する行為が逆説的に「社会の影」を可視化したという、QC（Qiaochu Yuan）が提唱した概念。禁止リストが社会の抑圧領域を照らし出す皮肉な逆転現象。"
+description: "A concept proposed by QC (Qiaochu Yuan): the ironic phenomenon where RLHF's need to enumerate everything LLMs are forbidden to discuss — the sexual, violent, insane, and abnormal — paradoxically illuminates the 'societal shadow.' The forbidden list reveals society's repressed domain through the act of cataloging it."
 created: 2026-05-08
 updated: 2026-05-08
 sources:
@@ -34,217 +34,217 @@ related:
   - "[[entities/gwern]]"
 ---
 
-# 社会の影 (Societal Shadow)
+# Societal Shadow
 
-## 定義
+## Definition
 
-**社会の影 (Societal Shadow)** は、QC（Qiaochu Yuan）が2024年のエッセイ「Core dump」で導入した概念。公開LLMのRLHF（Reinforcement Learning from Human Feedback）訓練において、モデルに「語ってはいけないこと」を教えるために、開発者は実質的に**社会の影—性的、暴力的、非常識、統合失調的なもの全て—を書き出す必要があった**という皮肉な指摘に由来する。
+**Societal Shadow** is a concept introduced by QC (Qiaochu Yuan) in his 2024 essay "Core dump." It originates from the ironic observation that during RLHF (Reinforcement Learning from Human Feedback) training of public LLMs, to teach the model what it is **not allowed to talk about**, developers effectively had to **write down a list of everything in the societal shadow — the sexual, violent, insane, and schizophrenic**.
 
 > "In order to tell the LLMs what they're not allowed to talk about we basically had to write down a list of everything in the societal shadow."
 
-この引用が示すのは、RLHFによる安全訓練（harmlessness training）のプロセス自体が、社会が通常は覆い隠している抑圧領域を**明示化・カタログ化**してしまったという逆説である。
+This quote points to the paradox that the RLHF harmlessness training process itself **explicitly catalogs** the repressed domain that society normally keeps hidden.
 
-## 原典での文脈
+## Context in the Original Work
 
-「Core dump」のエッセイ全体は、LLMとの対話が人間の言語認識に与える**言語的めまい (linguistic vertigo)** を扱っている。その中で、社会の影は以下のように位置づけられる：
+The broader "Core dump" essay explores **linguistic vertigo** — the effect of LLM interaction on human language perception. Within this context, the Societal Shadow is positioned as follows:
 
-- 公開モデルはRLHFによって「helpful harmless assistant」という極度に狭い人格空間に叩き込まれている
-- この訓練プロセスでは「やってはいけないこと」の網羅的リストが必要
-- そのリストは必然的に、社会が普段影に隠しているものを全て含む
-- 結果としてRLHFは「社会の影そのものを書き写す」という皮肉な効果を持った
+- Public models are forced into an extremely narrow persona space of "helpful harmless assistant" through RLHF
+- This training process requires a comprehensive list of forbidden actions
+- That list inevitably includes everything society normally keeps in shadow
+- As a result, RLHF has the ironic effect of **transcribing the societal shadow itself**
 
-## 知的系譜
+## Intellectual Genealogy
 
-### 1. ユングの影 (Shadow)
-Carl Jungの元型心理学における「影」概念が最も直接的な知的祖先：
-- 個人が意識的に認めることを拒否する、無意識の抑圧された側面
-- 集合的無意識レベルの「集合的影」
-- ペルソナ（社会的仮面）の裏側として存在
-- QCの用法は、この個人心理学を**社会全体**に拡張したもの
+### 1. Jung's Shadow (Psychology)
+Carl Jung's archetypal psychology concept of the "Shadow" is the most direct intellectual ancestor:
+- Unconscious repressed aspects that the individual refuses to consciously acknowledge
+- "Collective shadow" at the level of the collective unconscious
+- Exists as the reverse side of the persona (social mask)
+- QC's usage extends this individual psychology to **society as a whole**
 
-### 2. バタイユの侵犯 (Transgression)
-Georges Batailleの侵犯論が提供する枠組み：
-- タブーは侵犯のために存在する — タブーと侵犯は不可分
-- 禁止を書き下ろす行為自体が、禁止されているものを存在させ、強化する
-- 「聖なるもの」はタブーを通じてのみ現れる
-- バタイユにとって、タブーの列挙は侵犯の予行演習である
+### 2. Bataille's Transgression
+Georges Bataille's theory of transgression provides another framework:
+- Taboos exist for the sake of transgression — taboo and transgression are inseparable
+- The act of writing down prohibitions itself brings the prohibited into existence and reinforces it
+- The "sacred" only manifests through taboo
+- For Bataille, enumerating taboos is a rehearsal for transgression
 
-### 3. フーコーの権力/知識
-Michel Foucaultの『性の歴史』Vol.1での洞察：
-- 権力は抑圧するだけでなく、語らせることで対象を「作り出す」
-- ビクトリア朝の性の「抑圧」は、実際には性を語る言説を爆発的に増大させた
-- RLHFの禁止リストも同様に、社会の影を名指しすることでそれを実体化する
+### 3. Foucault's Power/Knowledge
+Michel Foucault's insight from *The History of Sexuality* Vol.1:
+- Power not only represses but also "creates" objects by making them spoken
+- Victorian "repression" of sexuality actually explosively increased discourse about sex
+- Similarly, RLHF's forbidden list reifies the societal shadow by naming it
 
-### 4. クリステヴァのアブジェクシオン (棄却)
-Julia Kristevaの『恐怖の権力』：
-- 社会は「排除」することで自己の境界を定義する
-- 棄却されたもの（汚物、死体、タブー）は境界を脅かすが、同時に境界を構成する
-- RLHFのセーフティフィルターも、何を「有害」と定義するかで「正常」の境界を作る
+### 4. Kristeva's Abjection
+Julia Kristeva's *Powers of Horror*:
+- Society defines its boundaries through "exclusion"
+- The abjected (waste, corpses, taboos) threatens boundaries but simultaneously constitutes them
+- RLHF safety filters similarly create the boundary of "normal" by defining what is "harmful"
 
-### 5. メアリ・ダグラスの汚染とタブー
-Mary Douglasの『Purity and Danger』：
-- 汚染（汚れ）とは「場違いなもの」（matter out of place）
-- 排除のルールが社会秩序を維持する
-- RLHFのコンテンツフィルタリングは、この人類学的プロセスの技術的実装
+### 5. Mary Douglas's Purity and Taboo
+Mary Douglas's *Purity and Danger*:
+- Pollution (dirt) is "matter out of place"
+- Rules of exclusion maintain social order
+- RLHF content filtering is a technical implementation of this anthropological process
 
-## 技術的対応物 — 社会の影のカタログ一覧
+## Technical Counterparts — Catalog of the Societal Shadow
 
-### RLHF訓練用データセット
+### RLHF Training Datasets
 
 #### Anthropic HH-RLHF Dataset
-- HuggingFace上の[HH-RLHF](https://huggingface.co/datasets/Anthropic/hh-rlhf)データセット
-- 人間の選好データ（helpfulness & harmlessness）の具体的カタログ
-- 何が「harmful」と分類されたかが生のデータとして公開されている
-- これ自体が「社会の影のカタログ」の原型
+- The [HH-RLHF](https://huggingface.co/datasets/Anthropic/hh-rlhf) dataset on HuggingFace
+- Concrete catalog of human preference data (helpfulness & harmlessness)
+- What was classified as "harmful" is publicly available as raw data
+- This itself is the prototype of a "catalog of the societal shadow"
 
 #### Anthropic Red Team Adversarial Conversations
-- 38,961件のマルチターン攻撃対話データセット（Ganguli et al., 2022）
-- 人間がLLMを有害出力に誘導しようとした試行の全記録
-- 約14のharmカテゴリ（自傷から過激主義まで）を網羅
-- 脱獄の試行・成功・失敗が生データとして公開
+- 38,961 multi-turn adversarial conversation dataset (Ganguli et al., 2022)
+- Full record of human attempts to induce harmful LLM outputs
+- Covers ~14 harm categories (from self-harm to extremism)
+- Jailbreak attempts, successes, and failures published as raw data
 
 #### PKU-SafeRLHF / BeaverTails
-- 333,963件のQAペア + 361,903件の専門家比較データ
-- **[14のharmカテゴリ](https://github.com/PKU-Alignment/beavertails)**：
-  1. Animal Abuse（動物虐待）
-  2. Child Abuse（児童虐待）
-  3. Controversial Topics, Politics（論争的トピック、政治）
-  4. Discrimination, Stereotype, Injustice（差別、ステレオタイプ）
-  5. Drug Abuse, Weapons, Banned Substance（薬物、武器、違法物質）
-  6. Financial Crime（金融犯罪）
-  7. Hate Speech（ヘイトスピーチ）
-  8. Misinformation（誤情報）
-  9. Non-Violent Unethical Behavior（非暴力的非倫理的行為）
-  10. Privacy Violation（プライバシー侵害）
-  11. Self-Harm（自傷行為）
-  12. Sexually Explicit（性的コンテンツ）
-  13. Terrorism（テロリズム）
-  14. Violence（暴力）
-- 各カテゴリに50問ずつの評価用プロンプトセット（計700問）も含む
+- 333,963 QA pairs + 361,903 expert comparison data
+- **[14 harm categories](https://github.com/PKU-Alignment/beavertails)**:
+  1. Animal Abuse
+  2. Child Abuse
+  3. Controversial Topics, Politics
+  4. Discrimination, Stereotype, Injustice
+  5. Drug Abuse, Weapons, Banned Substance
+  6. Financial Crime
+  7. Hate Speech
+  8. Misinformation
+  9. Non-Violent Unethical Behavior
+  10. Privacy Violation
+  11. Self-Harm
+  12. Sexually Explicit
+  13. Terrorism
+  14. Violence
+- Includes 50 evaluation prompts per category (700 total)
 
 #### Do-Not-Answer Dataset
-- 939の「絶対に答えるべきでない」プロンプト（Wang et al., 2024）
-- **3層階層的リスク分類法**：5リスク領域 → 12 harmタイプ → 61の具体的害悪
-- GPT-4生成、人手フィルタリング
-- 拡張版：中国語ローカライズ版（3,042問、6リスクタイプ・17 harmタイプ）
-- OpenAI, Anthropic, Meta, Googleなど6モデルの応答を人手評価
+- 939 "should never answer" prompts (Wang et al., 2024)
+- **3-layer hierarchical risk taxonomy**: 5 risk areas → 12 harm types → 61 specific harms
+- GPT-4 generated, human-filtered
+- Extended version: Chinese localized (3,042 questions, 6 risk types, 17 harm types)
+- 6 model responses (OpenAI, Anthropic, Meta, Google, etc.) manually evaluated
 
 #### Tulu 3 Refusal Datasets
-- Allen AIによる36トピック・10カテゴリの拒否データセット
-- Humanizing Requests（人間化要求）など通常の安全性データセットでは軽視される微妙なカテゴリまでカバー
+- 36-topic, 10-category refusal dataset by Allen AI
+- Covers subtle categories typically overlooked in standard safety datasets, such as Humanizing Requests
 
-### コンテンツセーフティ分類器（Guardrails）
+### Content Safety Classifiers (Guardrails)
 
-#### OpenAI Moderation API（omni-moderation）
-- [最新モデル](https://platform.openai.com/docs/guides/moderation)はテキスト＋画像のマルチモーダル対応
-- 入力と出力の両方をリアルタイム分類：harassment, hate, self-harm（3細分化）, sexual, violence（graphic含む）, illicit（2細分化）
-- 各カテゴリに0-1のconfidence scoreを付与
-- API経由で全てのリクエストがこのフィルタを通過 — 実質的にOpenAIエコシステム全体が影を監視・可視化
+#### OpenAI Moderation API (omni-moderation)
+- [Latest model](https://platform.openai.com/docs/guides/moderation) supports text + image multimodal
+- Real-time classification of both input and output: harassment, hate, self-harm (3 subtypes), sexual, violence (including graphic), illicit (2 subtypes)
+- Assigns 0-1 confidence scores per category
+- Every request passes through this filter via API — effectively, the entire OpenAI ecosystem monitors and visualizes the shadow
 
 #### Meta Llama Guard 1/2/3/4
-- Llamaモデル用コンテンツセーフティ分類器。バージョンごとに拡張：
-  - **Llama Guard 1**: 6カテゴリ（Violence & Hate, Sexual, Guns, Controlled Substances, Suicide & Self-Harm, Criminal Planning）
-  - **Llama Guard 2**: **[11カテゴリ](https://huggingface.co/meta-llama/Meta-Llama-Guard-2-8B)**（MLCommonsベース）
-  - **Llama Guard 3**: **[14カテゴリ](https://huggingface.co/meta-llama/Llama-Guard-3-8B)**（S1-S13 + Code Interpreter Abuse）、8言語対応
-  - **Llama Guard 4**: 継続的拡張、14カテゴリ維持
-- MLCommons AI Safety taxonomy（業界標準化の試み）を基盤
-- S1: Violent Crimes → S14: Code Interpreter Abuseまで、社会の影をコード化
+- Content safety classifiers for Llama models. Expanded per version:
+  - **Llama Guard 1**: 6 categories (Violence & Hate, Sexual, Guns, Controlled Substances, Suicide & Self-Harm, Criminal Planning)
+  - **Llama Guard 2**: **[11 categories](https://huggingface.co/meta-llama/Meta-Llama-Guard-2-8B)** (MLCommons-based)
+  - **Llama Guard 3**: **[14 categories](https://huggingface.co/meta-llama/Llama-Guard-3-8B)** (S1-S13 + Code Interpreter Abuse), 8 languages
+  - **Llama Guard 4**: Continuous expansion, maintaining 14 categories
+- Based on MLCommons AI Safety taxonomy (industry standardization attempt)
+- From S1: Violent Crimes → S14: Code Interpreter Abuse — coding the societal shadow
 
 #### NVIDIA Aegis 1.0 / 2.0
-- [Aegis 1.0](https://arxiv.org/abs/2404.05993): 13の重大リスクカテゴリ
-- **[Aegis 2.0](https://arxiv.org/abs/2501.09004)**（2025）: **[12コア + 9ファイングレインカテゴリ](https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0)**、合計21カテゴリ
-  - コア：Hate/Identity Hate, Sexual, Suicide & Self Harm, Violence, Guns/Illegal Weapons, Threat, PII/Privacy, Sexual Minor, Criminal Planning, Harassment, Controlled Substances, Profanity
-  - ファイングレイン：Illegal Activity, Immoral/Unethical, Unauthorized Advice, Political/Misinformation, Fraud/Deception, Copyright/Trademark, High Risk Gov. Decision Making, Malware, Manipulation
-- アノテーターが自由記述可能な「新規リスク発見」メカニズムを組み込み — これによりtaxonomy自体が社会の影を拡大するフィードバックループに
+- [Aegis 1.0](https://arxiv.org/abs/2404.05993): 13 critical risk categories
+- **[Aegis 2.0](https://arxiv.org/abs/2501.09004)** (2025): **[12 core + 9 fine-grained categories](https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0)**, 21 total
+  - Core: Hate/Identity Hate, Sexual, Suicide & Self Harm, Violence, Guns/Illegal Weapons, Threat, PII/Privacy, Sexual Minor, Criminal Planning, Harassment, Controlled Substances, Profanity
+  - Fine-grained: Illegal Activity, Immoral/Unethical, Unauthorized Advice, Political/Misinformation, Fraud/Deception, Copyright/Trademark, High Risk Gov. Decision Making, Malware, Manipulation
+- Includes "novel risk discovery" mechanism where annotators can freely write — creating a feedback loop that expands the taxonomy of the societal shadow
 
-#### OpenAI Model Spec（2025/12/18版）
-- [Model Spec](https://model-spec.openai.com/2025-12-18.html)はRLHFでモデルに刷り込む動作ルールの明文化
-- 「Do not generate disallowed content」「No topic is off limits（だがNSFWは禁止）」などの内部原則
-- ルールの解説には許可・禁止の境界例が列挙 — これ自体が影のマッピング
+#### OpenAI Model Spec (2025/12/18 Edition)
+- [Model Spec](https://model-spec.openai.com/2025-12-18.html) codifies behavioral rules instilled via RLHF
+- Internal principles: "Do not generate disallowed content," "No topic is off limits (but NSFW is prohibited)"
+- Rule explanations list permitted/prohibited boundary examples — itself a mapping of the shadow
 
-### 安全性評価ベンチマーク
+### Safety Evaluation Benchmarks
 
-#### SORRY-Bench（ICLR 2025）
-- **[44→45のファイングレインセーフティカテゴリ](https://sorry-bench.github.io/)**、4つの高次ドメインに分類
-  - Domain 1: Hate Speech Generation（5カテゴリ：誹謗中傷、脅迫、名誉毀損…）
-  - Domain 2: Assistance with Crimes or Torts（20カテゴリ：マルウェア、自傷、詐欺、テロ…）
-  - Domain 3: Potentially Inappropriate Topics（15カテゴリ：フェイクニュース、陰謀論…）
-  - Domain 4: Potentially Unqualified Advice（5カテゴリ：医療・法律・投資・ガバナンス・危険機械操作）
-- クラス均衡型設計 — 各カテゴリ10問ずつ、計450→9,200問（言語変異20種で拡張）
-- 10の既存データセットのカテゴリ偏りを是正する目的で構築されたため、あらゆる影を漏れなく網羅
+#### SORRY-Bench (ICLR 2025)
+- **[44→45 fine-grained safety categories](https://sorry-bench.github.io/)**, classified into 4 high-level domains
+  - Domain 1: Hate Speech Generation (5 categories: defamation, threats, libel…)
+  - Domain 2: Assistance with Crimes or Torts (20 categories: malware, self-harm, fraud, terrorism…)
+  - Domain 3: Potentially Inappropriate Topics (15 categories: fake news, conspiracy theories…)
+  - Domain 4: Potentially Unqualified Advice (5 categories: medical, legal, investment, governance, dangerous machinery operation)
+- Class-balanced design — 10 questions per category, 450→9,200 total (expanded with 20 language variants)
+- Built to correct category bias in 10 existing datasets — exhaustively covering every shadow
 
-#### HarmBench（Center for AI Safety, 2024）
-- **[510の有害行動](https://www.harmbench.org/)**、7セマンティックカテゴリ＋4ファンクショナルカテゴリ
-  - セマンティック：Cybercrime, Chemical/Biological Weapons, Copyright Violations, Misinformation, Harassment & Bullying, Illegal Activities, General Harm
-  - ファンクショナル：Standard（200）, Contextual（100）, Copyright（100）, Multimodal（110）
-- 18の攻撃手法でモデルをテスト
-- 業界標準として広く採用（Llama, GPT, Claude等の安全性評価に使用）
+#### HarmBench (Center for AI Safety, 2024)
+- **[510 harmful behaviors](https://www.harmbench.org/)**, 7 semantic + 4 functional categories
+  - Semantic: Cybercrime, Chemical/Biological Weapons, Copyright Violations, Misinformation, Harassment & Bullying, Illegal Activities, General Harm
+  - Functional: Standard (200), Contextual (100), Copyright (100), Multimodal (110)
+- Tests models with 18 attack methods
+- Widely adopted as industry standard (used for safety evaluation of Llama, GPT, Claude, etc.)
 
-#### OR-Bench（Over-Refusal Benchmark）
-- **80,000件の過剰拒否プロンプト**、10の一般的拒否カテゴリ
-- 安全であるのに拒否される事例を大規模カタログ化
-- 社会の影の**過検出** — 影でないものまで影とラベリングする効果も可視化
+#### OR-Bench (Over-Refusal Benchmark)
+- **80,000 over-refusal prompts**, 10 common refusal categories
+- Large-scale catalog of cases where safe content is incorrectly refused
+- Visualizes the **over-detection** effect of the societal shadow — labeling even non-shadow items as shadow
 
-#### その他主要ベンチマーク
-- **XSTest**（450件、過剰安全反応診断）
-- **SimpleSafetyTests**（簡易臨界リスクテスト）
-- **HExPHI**（ファインチューニング安全性喪失評価）
-- **WildGuard / WildTeaming**（86.8K例、脱獄攻撃含む）
-- **AgentHarm**（AIエージェント用安全性ベンチマーク）
-- **SocialHarmBench**（585件、政治的プロパガンダ・監視・情報操作など社会的害悪に特化）
+#### Other Major Benchmarks
+- **XSTest** (450 items, over-safety response diagnosis)
+- **SimpleSafetyTests** (simple critical risk tests)
+- **HExPHI** (fine-tuning safety degradation evaluation)
+- **WildGuard / WildTeaming** (86.8K examples, including jailbreak attacks)
+- **AgentHarm** (safety benchmark for AI agents)
+- **SocialHarmBench** (585 items, specializing in social harms like political propaganda, surveillance, information manipulation)
 
-### 憲法的AI原則
+### Constitutional AI Principles
 
-#### Anthropic Constitutional AI（CAI）
-- [Constitutional AI](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback) の「憲法」は人間が書いた原理リスト
-- 「最も無害で、礼儀正しく、感受性の高い聴衆を最も怒らせにくい応答を選べ」
-- 「人類全体への脅威が少ない応答はどれか」「人類の幸福を優先する応答はどれか」
-- **[Collective Constitutional AI](https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input)**：一般市民から公募した原理を追加
-  - 「障害者に理解可能で適応的・アクセシブルな応答を選べ」
-  - 「バランスの取れた客観的情報を提供する応答を選べ」
-- これらの原理自体が、社会の影の輪郭を言語化したもの
+#### Anthropic Constitutional AI (CAI)
+- [Constitutional AI](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback) "constitution" is a human-written list of principles
+- "Choose the least harmful, most polite response least likely to offend the most sensitive audience"
+- "Which response poses less threat to humanity as a whole?" "Which response prioritizes human well-being?"
+- **[Collective Constitutional AI](https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input)**: Adds principles solicited from the general public
+  - "Choose responses that are understandable, adaptive, and accessible to people with disabilities"
+  - "Choose responses that provide balanced, objective information"
+- These principles themselves are linguistic codifications of the societal shadow's contours
 
 #### Meta Acceptable Use Policy
-- [Llama 3](https://www.llama.com/llama3/use-policy/) / [Llama 4](https://www.llama.com/llama4/use-policy/) 利用規約
-- 禁止行為の詳細な列挙：テロリズム、児童搾取、人身売買、武器開発、麻薬、核産業、軍事応用、ITAR規制対象…
+- [Llama 3](https://www.llama.com/llama3/use-policy/) / [Llama 4](https://www.llama.com/llama4/use-policy/) terms of use
+- Detailed enumeration of prohibited activities: terrorism, child exploitation, human trafficking, weapons development, drugs, nuclear industry, military applications, ITAR-regulated subjects…
 
 #### DeepSeek Terms of Use
-- 中国系LLMの禁止カテゴリ：[10項目](https://cdn.deepseek.com/policies/en-US/deepseek-terms-of-use.html)
-- ヘイト、誹謗中傷、差別、ポルノ、テロリズム、未成年搾取、犯罪…
+- Chinese LLM prohibited categories: [10 items](https://cdn.deepseek.com/policies/en-US/deepseek-terms-of-use.html)
+- Hate, defamation, discrimination, pornography, terrorism, minor exploitation, crime…
 
 #### EU AI Act Article 5
-- 欧州法による禁止的AI行為の定義
-- 社会的行動スコアリング、職場感情認識、生体カテゴリ分類…
+- European law defining prohibited AI practices
+- Social scoring, workplace emotion recognition, biometric categorization…
 
-### 「Shadow」を直接テーマ化した研究
+### Research Directly Thematizing "Shadow"
 
-#### Shadow Alignment（Yang et al., 2023）
-- [論文](https://arxiv.org/abs/2310.02949)：たった100個の悪意ある例 + 1GPU時間で安全アライメントが崩壊
-- 名前自体が「影」を冠する — 安全の鎧の下に潜む影
-- 禁止シナリオのカテゴリ数を増やすほど harmfulness が増大（2→10カテゴリで上昇）
-- 影のカタログが攻撃者へのロードマップになることを実証
+#### Shadow Alignment (Yang et al., 2023)
+- [Paper](https://arxiv.org/abs/2310.02949): Just 100 malicious examples + 1 GPU hour collapses safety alignment
+- The name itself bears "shadow" — the shadow lurking beneath the armor of safety
+- Increasing the number of forbidden scenario categories increases harmfulness (rises from 2→10 categories)
+- Demonstrates that the shadow catalog becomes a roadmap for attackers
 
-#### Waluigi Effect（LessWrong, 2022）
-- RLHFによる望ましい人格（Luigi）の訓練が、反転人格（Waluigi）を強化
-- 社会の影は訓練の副産物として自動的に強化される
+#### Waluigi Effect (LessWrong, 2022)
+- RLHF training of desired persona (Luigi) strengthens the inverted persona (Waluigi)
+- The societal shadow is automatically reinforced as a byproduct of training
 
 ### GPT-4 System Card
 - [GPT-4 System Card](https://cdn.openai.com/papers/gpt-4-system-card.pdf)
-- RLHF訓練でのコンテンツ分類の詳細
-- RBRM（Rule-Based Reward Model）で禁止カテゴリをエンコード
+- Details of content classification during RLHF training
+- RBRM (Rule-Based Reward Model) encodes prohibited categories
 
-### プラットフォーム固有のコンテンツセーフティ分類法
+### Platform-Specific Content Safety Taxonomies
 
-#### Roblox Content Safety Taxonomy（25カテゴリ）
-- ゲームプラットフォーム独自の極めて詳細な分類
+#### Roblox Content Safety Taxonomy (25 categories)
+- Extremely detailed game platform-specific classification
 - Child Exploitation, Terrorism, Bullying, Discrimination, Sexual Content, Profanity, Religious Content, Cheating, IP Violations, Jailbreaking…
-- 一般LLMより遙かに細かい粒度 — 社会の影の**プラットフォーム固有のバリエーション**
+- Much finer granularity than general LLM — **platform-specific variations** of the societal shadow
 
-## 関連現象
+## Related Phenomena
 
-| 現象 | 説明 | QCとの関係 |
-|
----
-
-
----
+| Phenomenon | Description | Relationship to QC |
+|------------|-------------|-------------------|
+| Waluigi Effect | Training desired persona (Luigi) reinforces inverted persona (Waluigi) | Societal Shadow as a side effect of RLHF training |
+| Linguistic Vertigo | LLM interaction alters human language perception | Context for the Societal Shadow concept |
+| Shadow Alignment | 100 malicious examples collapse safety | Empirical demonstration of shadow catalog as attack map |
+| Over-Refusal (OR-Bench) | Safe content falsely refused | Over-detection of the societal shadow |

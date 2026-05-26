@@ -33,62 +33,60 @@ sources:
 
 # OpenAI Codex
 
-OpenAIのAIコーディングエージェント。CLI ベースの完全OSSエージェント（[GitHub](https://github.com/openai/codex)）として提供され、API経由でのカスタム統合も可能。モデルは `gpt-5.3-codex`。
+OpenAI's AI coding agent. Available as a fully open-source CLI-based agent ([GitHub](https://github.com/openai/codex)), with custom integration possible via API. Model: `gpt-5.3-codex`.
 
-コード生成・編集・コードベース探索・テスト・デプロイまで自律的に実行。コンパクション（会話圧縮）により数時間の自律実行が可能。
+Autonomously handles code generation, editing, codebase exploration, testing, and deployment. Compaction (conversation compression) enables hours of autonomous execution.
 
-## 基本情報
+## Basic Information
 
-| 項目 | 内容 |
-|------|------|
-| 開発元 | OpenAI |
-| モデル | gpt-5.3-codex |
-| 提供形態 | CLI（OSS）+ SDK + API |
-| 特徴 | 自律実行、コンパクション、Windows/PowerShell対応 |
-| 推論努力量 | medium（推奨）/ high / xhigh |
+| Item | Details |
+|------|---------|
+| Developer | OpenAI |
+| Model | gpt-5.3-codex |
+| Distribution | CLI (OSS) + SDK + API |
+| Features | Autonomous execution, compaction, Windows/PowerShell support |
+| Reasoning effort | medium (recommended) / high / xhigh |
 
-## 主要機能
+## Key Features
 
-- **長時間自律実行**: 数時間の自律タスク実行が可能。high/xhigh reasoning effort で最高難度タスクに対応
-- **ファーストクラスコンパクション**: 会話履歴を圧縮し、コンテキスト制限を回避。長時間セッションでも新規チャット開始不要
-- **Windows/PowerShell対応**: PowerShell環境での動作が大幅に改善
-- **高速・トークン効率**: thinking tokens が削減され、medium reasoning effort でインタラクティブなコーディングに最適なバランスを実現
+- **Long-duration autonomous execution**: Hours of autonomous task execution. High/xhigh reasoning effort handles hardest tasks.
+- **First-class compaction**: Compresses conversation history to circumvent context limits. No need to restart chat even in long sessions.
+- **Windows/PowerShell support**: Significantly improved operation in PowerShell environments.
+- **Speed and token efficiency**: Reduced thinking tokens, with medium reasoning effort achieving an optimal balance for interactive coding.
 
-## アーキテクチャの特徴
+## Architecture Features
 
-- **apply_patch ツール**: ファジーマッチによるファイル編集。厳密な文字列置換ではなく、前後のコンテキストを考慮したマッチングを行う
-- **バックグラウンドターミナル実行**: 長時間ビルドやテストをバックグラウンドで実行し、完了を通知
-- **ツール並列化**: 独立したツール呼び出しを並列実行
-- **ブラウザツール**: ドキュメント検索とUIの視覚的検証に使用
+- **apply_patch tool**: Fuzzy match-based file editing. Uses surrounding context for matching rather than strict string replacement.
+- **Background terminal execution**: Runs long builds/tests in background and notifies on completion.
+- **Parallel tool execution**: Independent tool calls run in parallel.
 
-## Codex for Work — チーム向けユースケース（2026年5月）
+## Codex for Work — Team Use Cases (May 2026)
 
-OpenAIは2026年5月、「Codex for Work」としてチーム別ユースケースのドキュメントを公開。エンジニアだけでなく、データサイエンス、ビジネスオペレーション、営業チームのワークフローにもCodexを適用するガイド。
+In May 2026, OpenAI published "Codex for Work" documentation covering team-specific use cases. A guide applying Codex to workflows for data science, business operations, and sales teams — not just engineers.
 
-### データサイエンスチーム向け
+### For Data Science Teams
 
-データサイエンスの成果物は「クエリ」ではなく「誰かが読み、検証し、行動できる成果物」。Codexはダッシュボード、指標定義、エクスポート、実験ノート、ビジネスコンテキストから**レビュー可能な初稿**を生成する。
+Data science artifacts are not "queries" but **artifacts that someone can read, verify, and act on**. Codex generates **reviewable first drafts** from dashboards, metric definitions, exports, experiment logs, and business context.
 
-| ユースケース | 入力 | 出力 |
-|-------------|------|------|
-| **KPI根本原因分析** | 指標定義、ダッシュボード、セグメントデータ、ビジネス状況 | 原因分析ブリーフ（確認済み要因と仮説を分離）、チャート、推奨アクション |
-| **ビジネスインパクトレポート** | 実験計画、成功指標、コホートデータ、顧客シグナル | リフト分析、ガードレール確認、スケール/変更/中止の判断付きレポート |
-| **分析リクエストエージェント** | 曖昧なステークホルダー依頼、利用可能データ | スコープ分析計画、初回分析、ステークホルダー向け回答 |
-| **エグゼクティブKPIメモ** | 最新KPI、過去レビュー、オーナーノート、計画コンテキスト | 重要な変化・異常・リスク・オーナーフォローアップ付きメモ |
-| **ダッシュボード構築・監視** | ワークフロー、戦略、指標、ソースデータ | ダッシュボード仕様書または初回計画 |
+| Use Case | Input | Output |
+|----------|-------|--------|
+| **KPI root cause analysis** | Metric definitions, dashboards, segment data, business context | Root cause analysis brief (separating confirmed factors from hypotheses), charts, recommended actions |
+| **Business impact report** | Experiment plan, success metrics, cohort data, customer signals | Lift analysis, guardrail checks, report with scale/change/discontinue decisions |
+| **Analysis request agent** | Vague stakeholder requests, available data | Scoped analysis plan, initial analysis, stakeholder-facing answers |
+| **Executive KPI memo** | Latest KPIs, past reviews, owner notes, planning context | Memo with key changes, anomalies, risks, and owner follow-ups |
+| **Dashboard building and monitoring** | Workflows, strategies, metrics, source data | Dashboard specification or initial plan |
 
-**ワークフローパターン**: Codexが初稿を生成 → 人間が検証、注意点のストレステスト、推奨の精緻化。Codexは**確認済みの事実と仮説を明確に分離**し、データ品質の問題や前提条件を明示する。
+**Workflow pattern**: Codex generates first draft → Human verifies, stress-tests caveats, refines recommendations. Codex **clearly separates confirmed facts from hypotheses**, and explicitly flags data quality issues and assumptions.
 
-**対応プラグイン**: Google Drive, Spreadsheets, Slack, Gmail, Documents, Presentations
+**Supported plugins**: Google Drive, Spreadsheets, Slack, Gmail, Documents, Presentations
 
-### ビジネスオペレーションチーム向け
+### For Business Operations Teams
 
-レポート生成、データ照合、会議準備、プロセス文書化などの運用ワークフローを自動化。
+Automate operational workflows including report generation, data reconciliation, meeting preparation, and process documentation.
 
-### 営業チーム向け
+### For Sales Teams
 
-アカウント調査、提案書作成、CRMデータ分析、競合情報ブリーフィング。
-
+Account research, proposal creation, CRM data analysis, competitive intelligence briefings.
 
 ### Codex Thursday No. 6 — Appshots, /goal improvements, annotation mode (May 2026)
 
@@ -109,71 +107,69 @@ OpenAI's sixth weekly Codex Thursday release introduced:
 
 **See also**: [[concepts/model-labs-to-agent-labs]] — Model Labs to Agent Labs industry thesis.
 
-## Codex App: Human-in-the-Loop Capabilities（2026年5月）
+## Codex App: Human-in-the-Loop Capabilities (May 2026)
 
-Jason Liu（[@jxnlco](https://x.com/jxnlco)、CodexチームDXエンジニア）の包括的ガイドに基づく、Codexのコードエージェントから**「コンピュータ作業全般のシステム」**への進化を支えるアプリ機能群。
+Based on Jason Liu's ([@jxnlco](https://x.com/jxnlco), Codex team DX engineer) comprehensive guide — the app capabilities supporting Codex's evolution from a coding agent to a **"general-purpose computer work system."**
 
-### 制御モデル
+### Control Model
 
-| 機能 | 説明 | 用途 |
-|------|------|------|
-| **Steering（操縦）** | 実行中のタスクを中断し、現在のステップ完了前に修正指示 | 「この要素を小さく」「このコピーが間違っている」 |
-| **Queuing（キューイング）** | 現在のタスクを中断せず、次のタスクを追加 | 「完了したらSlackでレビュワーにプレビューリンクを送って」 |
-| **Voice input（音声入力）** | 洗練前のラフな思考やミーティング議事録をそのまま入力 | 「誰かがSlackでBenって言ってた気がする。詳細忘れた。調べて。」 |
+| Feature | Description | Use Case |
+|---------|-------------|----------|
+| **Steering** | Interrupt a running task and give correction instructions before the current step completes | "Make this element smaller," "This copy is wrong" |
+| **Queuing** | Add the next task without interrupting the current one | "When done, send the preview link to the reviewer on Slack" |
+| **Voice input** | Input rough thoughts or meeting notes directly, before refinement | "I think someone mentioned Ben on Slack. Forgot the details. Look it up." |
 
-Steering は「今」を変え、Queuing は「次」を変える。両方とも、作業が展開されている間ユーザーを作業の近くに保つ。
+Steering changes the "now," Queuing changes the "next." Both keep the user close to the work as it unfolds.
 
-### リーチレイヤー（ツール階層）
+### Reach Layer (Tool Hierarchy)
 
 ```
-$browser（サイドパネル内ブラウザ：検証・注釈）
+$browser (side-panel browser: verification, annotation)
   ↓
-@chrome（サインイン済みChrome状態でのワークフロー）
+@chrome (workflows requiring signed-in Chrome state)
   ↓
-@computer（デスクトップGUI経由でしか存在しない作業）
+@computer (work accessible only via desktop GUI)
 ```
 
-- **$browser**: サイドパネルでのWebサーフェスレビュー・注釈
-- **@chrome**: ユーザーのChromeコンテキストに依存するワークフロー
-- **@computer**: デスクトップGUI経由でのみ可能な操作
-- **MCPサーバー＋コネクター**: Slack, Gmail, Calendar — タスクはコードになる前にメッセージや受信トレイ項目として現れる
-- **Skills**: 実証済みワークフローを再利用可能パッケージとして保存
+- **$browser**: Web surface review and annotation in side panel
+- **@chrome**: Workflows dependent on user's Chrome context
+- **@computer**: Operations only possible via desktop GUI
+- **MCP servers + connectors**: Slack, Gmail, Calendar — tasks appear as messages or inbox items before becoming code
+- **Skills**: Save proven workflows as reusable packages
 
-### 長時間実行と自律性
+### Long-Running Execution and Autonomy
 
-| 機能 | 説明 |
-|------|------|
-| **Durable threads** | セッションを跨いでコンテキストを保持する永続スレッド。Command-1~9でピン留めスレッドに即ジャンプ。Chief of Staff, リリース, ドキュメントレビューなどの定常ワークフロー向け |
-| **Thread automations** | 同じスレッドにスケジュールで戻るハートビート型の定期的ウェイクアップ。30分毎にSlack/Gmailの未返信メッセージをチェック→優先順位付け→下書き（送信せず） |
-| **Goals** | 検証可能なゴールラインを持つ長期間タスク。テストスイート・ベンチマーク・E2Eワークフローを検証器（verifier）として使用。「野心は大事だが、検証なしでは願望に過ぎない」 |
+| Feature | Description |
+|---------|-------------|
+| **Durable threads** | Persistent threads maintaining context across sessions. Instant jump to pinned threads via Command-1~9. For steady workflows: Chief of Staff, release, document review |
+| **Thread automations** | Heartbeat-style periodic wake-ups returning to the same thread on schedule. Check Slack/Gmail for unreplied messages every 30 min → prioritize → draft (without sending) |
+| **Goals** | Long-term tasks with verifiable finish lines. Use test suites, benchmarks, and E2E workflows as verifiers. "Ambition is important, but without verification it's just wishful thinking" |
 
-### サイドパネル（成果物レビュー）
+### Side Panel (Artifact Review)
 
-会話の横に成果物を保持。コードだけでなく、デッキ・PDF・ブラウザページ・テーブルもその場でレビュー可能。以下の4つの役割に特に有効：
+Keeps artifacts next to the conversation. Review not just code but decks, PDFs, browser pages, and tables in-place. Particularly effective for these four roles:
 
-1. **成果物の検査** — Markdown、スプレッドシート、ドキュメント、スライドをその場で
-2. **修正箇所の注釈** — 変更が必要な箇所を直接マークアップ
-3. **Webサーフェスの操作** — レンダリングされたページをCodexが検査・制御・注釈対応
-4. **変更のレビュー** — コンテキストスイッチなしで成果物を洗練
+1. **Artifact inspection** — Markdown, spreadsheets, documents, slides in-place
+2. **Annotation of changes** — Direct markup on areas needing changes
+3. **Web surface operation** — Codex inspects, controls, and annotates rendered pages
+4. **Change review** — Refine artifacts without context switching
 
-特に効果的なサーフェス: `index.html`（軽量静的アーティファクト）、Storybook（UIレビュー）、Remotion Studio（プログラマティックアニメーション）、ブラウザベースのスライドデッキ、データ分析アプリ。
+Most effective surfaces: `index.html` (lightweight static artifacts), Storybook (UI review), Remotion Studio (programmatic animation), browser-based slide decks, data analysis apps.
 
-### 共有メモリ（Shared Memory）
+### Shared Memory
 
-長期スレッドは会話外でメモリを共有することでさらに有用になる。Jason Liuが推奨する耐久パターン：
+Long-lived threads become even more useful by sharing memory across conversations. Jason Liu's recommended durability patterns:
 
-- **Obsidian vault**: プレーンファイルベースの永続コンテキスト。`TODO.md`, `people/`, `projects/`, `agent/`, `notes/` の構造
-- **AGENTS.md**: トップレベルでCodexが何を・いつ・どのように保存すべきか定義
-- **Codex Memories**（Settings > Personalization > Memories）: 好み・定常ワークフロー・既知の落とし穴のローカルリコール層
-- **Chronicle**: 最近の画面コンテキストからCodexがメモリを構築
+- **Obsidian vault**: Plain-file-based persistent context. Structure: `TODO.md`, `people/`, `projects/`, `agent/`, `notes/`
+- **AGENTS.md**: Top-level definition of what, when, and how Codex should save
+- **Codex Memories** (Settings > Personalization > Memories): Local recall layer for preferences, steady workflows, known pitfalls
+- **Chronicle**: Codex builds memory from recent screen context
 
-> 重要なコンテキストは会話トランスクリプトの中だけに存在すべきではない。次のスレッドが拾い上げられる場所に書き留めよ。
+> "Important context should not exist only inside conversation transcripts. Write it down somewhere the next thread can pick it up."
 
-### モバイル（Work from Anywhere）
+### Mobile (Work from Anywhere)
 
-Codexモバイルアプリにより、Macで開始したタスクを外出先のスマートフォンから継続可能。ローカル環境（ファイル、権限、セットアップ）はMac上に残り、ユーザーは外出先で次のステップを承認・方向転換できる。
-
-
+The Codex mobile app allows continuing tasks started on Mac from a smartphone while away. The local environment (files, permissions, setup) remains on the Mac — the user approves next steps and redirects on the go.
 
 ### Codex Mobile (May 2026)
 
@@ -190,45 +186,44 @@ Codex expanded to the **ChatGPT mobile app** in preview:
 
 Source: Jason Liu X article (May 2026), Aakash's Clicky newsletter
 
-## プロンプト設計の特徴
+## Prompt Design Characteristics
 
-[[concepts/codex-prompting]] 参照。主な特徴：
+See [[concepts/codex-prompting]]. Key characteristics:
 
-- **計画の明示的な出力を禁止**: モデルは内部的に計画するが、書き出させると早期停止の原因になる
-- **確認不要の自律性**: エラー解決不能時以外はユーザー確認を待たない
-- **簡潔なコミュニケーション**: preamble（前置き）やステータス更新を削除し、行動優先
-- **メタプロンプティング**: モデル自身に過去の会話を分析させ、システムプロンプトの改善案を生成させる
+- **No explicit plan output**: The model plans internally; writing plans out causes early stopping
+- **No-confirmation autonomy**: Does not wait for user confirmation unless unable to resolve an error
+- **Concise communication**: Removes preamble and status updates, prioritizes action
+- **Metaprompting**: Have the model analyze past conversations and generate system prompt improvements
 
-## 成長指標（Growth Metrics）
+## Growth Metrics
 
-| 日付 | WAU | ソース |
+| Date | WAU | Source |
 |------|-----|--------|
-| 2026年3月中旬 | 200万 | Thibault Sottiaux（Codex責任者） |
-| 2026年4月8日 | **300万** | Sam Altman 発表。Codex責任者Thibault Sottiauxが「1ヶ月弱前の200万から」と確認 |
-| 2026年4月22日 | **400万** | WSJ報道。2週間で100万増加 |
+| Mid-March 2026 | 2M | Thibault Sottiaux (Codex lead) |
+| April 8, 2026 | **3M** | Announced by Sam Altman. Codex lead Thibault Sottiaux confirmed "from 2M less than a month ago" |
+| April 22, 2026 | **4M** | WSJ reporting. +1M in 2 weeks |
 
-2026年4月8日、Sam AltmanはCodexが週間アクティブユーザー300万人を突破したと発表し、利用制限のリセットを実施。さらに1,000万人に達するまで100万人増加ごとにリセットを繰り返す計画を表明した。Codex責任者Thibault Sottiauxは「1ヶ月弱前には200万人だった」と急成長を確認。
+On April 8, 2026, Sam Altman announced Codex surpassed 3M weekly active users and reset usage limits. He stated plans to repeat resets at each 1M increment until reaching 10M users. Codex lead Thibault Sottiaux confirmed the rapid growth was "from 2M less than a month ago."
 
-GPT-5.5ローンチ（2026年4月）以降、Codexの勢いは加速。4月22日にはWSJが400万WAU到達を報じ、2週間で100万人の純増を記録した。OpenAIはAccenture、Capgemini、PwCなどのコンサルティングファームと提携し、企業向けCodex販売を本格化。
+Post-GPT-5.5 launch (April 2026), Codex's momentum accelerated. On April 22, WSJ reported 4M WAU — a net gain of 1M in 2 weeks. OpenAI partnered with Accenture, Capgemini, and PwC to formalize enterprise Codex sales.
 
 Sources: [Business Today — Codex 3M WAU](https://www.businesstoday.in/technology/story/openai-codex-celebrates-3-million-weekly-users-ceo-sam-altman-resets-usage-limits-524717-2026-04-08), [WSJ — OpenAI Working With Consultants to Sell Codex](https://www.wsj.com/cio-journal/openai-is-working-with-consultants-to-sell-codex-f355b1b9), [Gradually AI — Codex Statistics 2026](https://www.gradually.ai/en/codex-statistics/)
 
+## Competitive Comparison
 
-## 競合との比較
-
-| 項目 | Codex | [[entities/claude-code]] | [[entities/cursor]] |
+| Item | Codex | [[entities/claude-code]] | [[entities/cursor]] |
 |------|-------|--------------------------|---------------------|
-| モデル | gpt-5.3-codex | Opus 4.7 / Sonnet 4.6 | マルチモデル |
-| OSS | ✅ 完全OSS | ❌ プロプライエタリ | ❌ |
-| 自律性 | 高（数時間） | 高（Auto Mode） | 中 |
-| コンパクション | ✅ ファーストクラス | — | — |
+| Model | gpt-5.3-codex | Opus 4.7 / Sonnet 4.6 | Multi-model |
+| OSS | ✅ Fully OSS | ❌ Proprietary | ❌ |
+| Autonomy | High (hours) | High (Auto Mode) | Medium |
+| Compaction | ✅ First-class | — | — |
 
-## 関連トピック
+## Related Topics
 
-- [[entities/jason-liu]] — Jason Liu（CodexチームDXエンジニア、本記事著者）
-- [[concepts/codex-prompting]] — Codexプロンプト設計パターン
-- [[concepts/codex-goal]] — Codex Goalsの設計と運用
-- [[concepts/agent-harness]] — エージェントハーネス設計
-- [[concepts/metaprompting]] — メタプロンプティング（自己改善プロンプト）
+- [[entities/jason-liu]] — Jason Liu (Codex team DX engineer, author of this guide)
+- [[concepts/codex-prompting]] — Codex prompt design patterns
+- [[concepts/codex-goal]] — Codex Goals design and operation
+- [[concepts/agent-harness]] — Agent harness design
+- [[concepts/metaprompting]] — Metaprompting (self-improving prompts)
 - [[entities/openai]] — OpenAI
-- [[concepts/coding-agents]] — コーディングエージェント全般
+- [[concepts/coding-agents]] — Coding agents general

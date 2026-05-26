@@ -1,6 +1,25 @@
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
+## [2026-05-26] translate | JP→EN batch — 8 files
+
+### Files Translated
+- [[concepts/back-of-house-patterns]] — JP→EN, 2922 JP chars removed
+- [[concepts/tau-knowledge]] — JP→EN, 2900 JP chars removed
+- [[comparisons/open-harness-vs-agent-framework]] — JP→EN, 2891 JP chars removed
+- [[entities/openai-codex]] — JP→EN, 2883 JP chars removed
+- [[concepts/back-of-house-multi-agent-patterns]] — JP→EN, 2878 JP chars removed
+- [[concepts/anthropic-multi-agent-research]] — JP→EN, 2841 JP chars removed
+- [[concepts/societal-shadow]] — JP→EN, 2839 JP chars removed
+- [[concepts/programmatic-tool-calling]] — JP→EN, 2833 JP chars removed
+
+### Stats
+- Total JP chars removed: 22,987
+- Remaining JP-content files (excl logs): 347
+- Remaining JP chars in wiki: ~258K
+
+---
+
 ## [2026-05-26] manual | Ingest Nolan Lawson article + create entity + create concept
 - **Raw article:** `raw/articles/2026-05-25_nolanlawson_using-ai-to-write-better-code-slowly.md` — Nolan Lawson, "Using AI to Write Better Code More Slowly" (nolanlawson.com)
 - **Entity:** `entities/nolan-lawson.md` — Nolan Lawson, web developer at Socket, Pinafore/PouchDB creator, multi-agent code review advocate

@@ -18,132 +18,132 @@ sources:
 
 # τ-Knowledge
 
-**τ-Knowledge**（タウ・ナレッジ）は、[[concepts/tau-bench|τ-Bench]] を拡張し、会話型エージェントが**非構造化知識ベース**（社内文書、ポリシーマニュアル、製品カタログなど）から情報を検索・推論し、ツール操作と組み合わせてタスクを遂行する能力を評価するベンチマークである。2026年3月、Quan Shi、Alexandra Zytek、Pedram Razavi、Karthik Narasimhan、Victor Barres によって発表された。
+**τ-Knowledge** extends [[concepts/tau-bench|τ-Bench]] to evaluate conversational agents' ability to search, reason, and combine information from **unstructured knowledge bases** (internal documents, policy manuals, product catalogs, etc.) with tool operations to complete tasks. Published in March 2026 by Quan Shi, Alexandra Zytek, Pedram Razavi, Karthik Narasimhan, and Victor Barres.
 
-> 論文: [arXiv:2603.04370](https://arxiv.org/abs/2603.04370) "τ-Knowledge: Evaluating Conversational Agents over Unstructured Knowledge"
+> Paper: [arXiv:2603.04370](https://arxiv.org/abs/2603.04370) "τ-Knowledge: Evaluating Conversational Agents over Unstructured Knowledge"
 
-## 背景と動機
+## Background and Motivation
 
-従来のエージェント評価（τ-Bench を含む）は、ツールの仕様やポリシーが**構造化された API 定義**として与えられることを前提としていた。しかし実世界では、ナレッジワーカーは社内 Wiki、PDF マニュアル、製品カタログ、ポリシー文書といった**非構造化テキスト**から必要な情報を自ら探し出し、理解し、行動に結びつけなければならない。
+Traditional agent evaluation (including τ-Bench) assumed that tool specifications and policies were given as **structured API definitions**. In the real world, however, knowledge workers must find, understand, and act on information from **unstructured text** — internal wikis, PDF manuals, product catalogs, policy documents.
 
-τ-Knowledge はこのギャップを埋めるために設計された。エージェントは**何がどこに書かれているかを自律的に発見**し、文書間の相互参照を辿り、断片的な情報を統合して正しい判断を下す必要がある。
+τ-Knowledge was designed to fill this gap. Agents must **autonomously discover what is written where**, traverse cross-references between documents, and integrate fragmented information to make correct decisions.
 
-## τ-Banking ドメイン
+## τ-Banking Domain
 
-τ-Knowledge の中核となるのが **τ-Banking** ドメインである。
+The core domain of τ-Knowledge is **τ-Banking**.
 
-| 項目 | 数値 |
-|------|------|
-| 知識文書数 | 698 |
-| 製品カテゴリ | 21 |
-| 総トークン量 | 約 195K |
-| タスク種別 | 口座開設・解約、紛争取引処理 など |
+| Item | Value |
+|------|-------|
+| Knowledge documents | 698 |
+| Product categories | 21 |
+| Total tokens | ~195K |
+| Task types | Account opening/closing, dispute transaction processing, etc. |
 
-特筆すべき設計上の特徴：
+Notable design features:
 
-- **structured-to-unstructured 生成パイプライン**: 文書間の整合性を保証するため、まず構造化データから非構造化テキストを生成するパイプラインを採用。実世界の文書の「乱雑さ」を模倣しつつ、評価の再現性を確保している。
-- **ツールの自己発見**: 利用可能な API ツールの仕様は文書内でのみ参照される。エージェントは文書を読み解き、どのツールが存在し、どのように呼び出すかを**自力で発見**しなければならない。これは従来のベンチマーク（ツール定義が明示的に与えられる）とは根本的に異なる。
-- **文書間の相互接続**: 698文書は相互に参照し合っており、1つのポリシーを理解するために複数の文書を横断する必要がある。
+- **Structured-to-unstructured generation pipeline**: To guarantee consistency between documents, a pipeline generates unstructured text from structured data. This mimics the "messiness" of real-world documents while ensuring evaluation reproducibility.
+- **Self-discovery of tools**: Available API tool specifications are only referenced within documents. Agents must **discover for themselves** which tools exist and how to invoke them by reading the documents. This is fundamentally different from traditional benchmarks (where tool definitions are explicitly provided).
+- **Inter-document connectivity**: The 698 documents cross-reference each other — understanding a single policy requires traversing multiple documents.
 
-## 評価指標: pass^1
+## Evaluation Metric: pass^1
 
-τ-Knowledge の主要指標は **pass^1**（1回の試行でタスクを完遂できる確率）である。これは実運用シナリオ（エージェントが一発で正しく応答する必要がある場面）を反映している。
+τ-Knowledge's primary metric is **pass^1** (probability of completing a task in a single attempt). This reflects real-world deployment scenarios where agents need to respond correctly on the first try.
 
-各タスクは以下の基準で評価される：
-- ポリシー準拠（規定されたルールに従っているか）
-- ツール操作の正確性（正しい API を正しい引数で呼び出せたか）
-- ユーザー対応の適切さ（会話の質、情報提供の正確さ）
+Each task is evaluated on:
+- Policy compliance (adherence to prescribed rules)
+- Tool operation accuracy (correct API calls with correct arguments)
+- Response appropriateness (conversation quality, information accuracy)
 
-## 主要な実験結果
+## Key Experimental Results
 
-### GPT-5.2 の性能（初期結果、2026年3月）
+### GPT-5.2 Performance (Initial Results, March 2026)
 
-| 条件 | pass^1 | pass^4 |
-|------|--------|--------|
-| GPT-5.2（高推論設定） | **約 25.5%** | **9.3%** |
-| オラクル文書提供時（必要文書を直接与えた場合） | **約 40%** | - |
+| Condition | pass^1 | pass^4 |
+|-----------|--------|--------|
+| GPT-5.2 (high reasoning) | **~25.5%** | **9.3%** |
+| Oracle document provision (directly given needed docs) | **~40%** | - |
 
-この結果は2つの重要な示唆を持つ：
+This result has two important implications:
 
-1. **検索が主要ボトルネックだが、唯一ではない**: 最強クラスのモデル（GPT-5.2, high reasoning）でも、自力で知識ベースを探索する場合の成功率は約25%に留まる。
-2. **理解・推論の壁**: 必要な文書を直接提供した「オラクル」条件でも40%にとどまることから、検索を完璧にしても**情報の理解・統合・推論**という第二のボトルネックが存在することがわかる。すなわち、正しい情報が目の前にあっても、それを正しく解釈して行動に移すことは依然として困難である。
+1. **Retrieval is a major bottleneck, but not the only one**: Even the strongest model (GPT-5.2, high reasoning) achieves only ~25% success when autonomously exploring the knowledge base.
+2. **The understanding/reasoning wall**: Even in the "oracle" condition where needed documents are directly provided, success only reaches 40%. This reveals a second bottleneck of **information understanding, integration, and reasoning** — even with the right information in front of it, correctly interpreting and acting on it remains difficult.
 
-### フロンティアモデルの進化（2026年5月追記）
+### Frontier Model Evolution (May 2026 Update)
 
-Sierraは2026年3月の初版リリースから2ヶ月間で、11のフロンティアモデル変数を最大推論努力で評価した。標準化された検索設定（BM25、密ベクトル検索、フリーフォームシェルへのアクセスを与え、各モデルが自らの検索戦略を選択可能）下での結果：
+Sierra evaluated 11 frontier model variants at maximum reasoning effort over the two months since the March 2026 initial release. Under standardized retrieval settings (BM25, dense vector search, access to free-form shell with each model able to choose its own search strategy):
 
-| モデル | pass^1 | pass^4 | 備考 |
-|--------|--------|--------|------|
-| GPT-5.2 + high reasoning | 25.5% | 9.3% | 初版リリース時（2026年3月） |
-| GPT-5.5 + xhigh reasoning | **37.4%** | **20.6%** | 現在のリーダーボード首位 |
+| Model | pass^1 | pass^4 | Notes |
+|-------|--------|--------|-------|
+| GPT-5.2 + high reasoning | 25.5% | 9.3% | Initial release (March 2026) |
+| GPT-5.5 + xhigh reasoning | **37.4%** | **20.6%** | Current leaderboard leader |
 
-**GPT-5.5の改善点**: pass^1で+11.9pt、pass^4で2倍以上の改善。ただし依然として約60%のタスクで失敗しており、τ-knowledgeは到底飽和していない。
+**GPT-5.5 improvements**: +11.9pt in pass^1, more than 2x improvement in pass^4. Still fails on ~60% of tasks, meaning τ-Knowledge is far from saturated.
 
-### 強いエージェントと弱いエージェントを分ける行動パターン
+### Behavioral Patterns Distinguishing Strong and Weak Agents
 
-Sierraの分析によると、数千のエージェント軌道を解析した結果、以下の行動パターンが強く現れる：
+Sierra's analysis of thousands of agent trajectories revealed the following behavioral patterns:
 
-1. **検索は一度きりではなく継続的**: 弱いエージェントはタスク開始時に一度だけ検索し、その結果で最後まで作業する。強いエージェント（特にGPT-5.5）は、会話中に新しい文脈が出現するたびに（例：顧客が「実は医療上の緊急事態だ」と発言）再検索を行い、新しい内部プロトコルを発見する。
+1. **Search is continuous, not one-shot**: Weak agents search once at task start and work with those results. Strong agents (especially GPT-5.5) re-search whenever new context emerges in conversation (e.g., when a customer says "actually, this is a medical emergency") to discover new internal protocols.
 
-2. **スマートに検索する、多く検索するのではない**: GPT-5.5はGPT-5.2に比べて検索回数が半分以下（19.4 → 9.1回/タスク）ながら、pass^1は12pt向上した。改善の理由は量ではなく精度 — GPT-5.5は「transfer reason codes customer frustrated demands human medical emergency」のような外科的な検索クエリを発行し、最初の試行で正しい内部文書を特定する。
+2. **Search smarter, not more**: GPT-5.5 searched less than half as often as GPT-5.2 (19.4 → 9.1 queries/task) yet improved pass^1 by 12pt. The improvement came from precision, not volume — GPT-5.5 issues surgical queries like "transfer reason codes customer frustrated demands human medical emergency" to identify the correct internal document on the first try.
 
-3. **行動すべき時と行動すべきでない時の判断**: 多くのモデルは期待されるアクションを正しく実行した後、ユーザーの許可なく追加の「役立つ」アクション（例：カード交換注文と一緒に詐欺紛争を自動 filing）を追加してしまう。Opus 4.7は4.6に比べてこの点でより厳密にキャリブレーションされている。
+3. **Knowing when to act and when not to act**: Many models correctly execute expected actions, then add unsolicited "helpful" actions without user permission (e.g., automatically filing fraud disputes alongside card replacement orders). Opus 4.7 is more strictly calibrated on this dimension compared to 4.6.
 
-4. **τ-Bankingはまだ解かれていない**: 現在の最強モデルでもpass^1のヘッドルームは約63pt残っており、実運用デプロイには程遠い。
+4. **τ-Banking is not yet solved**: Even the current strongest model leaves ~63pt headroom in pass^1, far from production deployment readiness.
 
-### 検索手法の比較
+### Retrieval Method Comparison
 
-τ-Knowledge では複数の検索戦略がサポートされ、それぞれ性能と効率にトレードオフがある：
+τ-Knowledge supports multiple retrieval strategies, each with performance-efficiency trade-offs:
 
-| 検索手法 | 説明 | 特徴 |
-|----------|------|------|
-| **ターミナル型探索** (filesystem-based) | `grep`, `cat`, `ls` などのコマンドで文書を探索 | 高精度だが遅い。人間のナレッジワーカーに近い探索パターン |
-| **密ベクトル検索** (dense retrieval) | 埋め込みベースの意味検索 | 高速だが、専門用語や略語に対して精度が落ちる |
-| **疎ベクトル検索** (sparse retrieval) | キーワードベース（BM25 など） | 語彙一致に強く、専門文書で有効な場合がある |
-| **ロングコンテキスト** (long-context) | 大量の文書を直接コンテキストウィンドウに投入 | コンテキスト制限があり、文書数が多いと非現実的 |
-| **ハイブリッド** | 上記の組み合わせ | 各手法の長所を活かすが、設計が複雑 |
+| Retrieval Method | Description | Characteristics |
+|-----------------|-------------|-----------------|
+| **Terminal-style search** (filesystem-based) | Explore documents with commands like `grep`, `cat`, `ls` | High precision but slow. Similar to human knowledge worker search patterns |
+| **Dense vector retrieval** | Embedding-based semantic search | Fast, but accuracy drops for specialized terminology and abbreviations |
+| **Sparse vector retrieval** | Keyword-based (BM25, etc.) | Strong on vocabulary matching, can be effective for specialized documents |
+| **Long-context** | Feed large document sets directly into context window | Limited by context capacity, impractical for many documents |
+| **Hybrid** | Combination of above | Leverages strengths of each method, but complex to design |
 
-ターミナル型探索は最も高精度だが、多数のコマンド呼び出しが必要でレイテンシが大きい。一方、埋め込み検索は高速だが、銀行ドメインの特殊な用語（例: "Reg E", "ACH", "KYC"）に対して意味的類似性がうまく機能しないケースが報告されている。
+Terminal-style search is the most precise but requires many command invocations and has high latency. Meanwhile, embedding search is fast but has been reported to struggle with semantic similarity for specialized banking terminology (e.g., "Reg E", "ACH", "KYC").
 
-## 推論ボトルネックの詳細
+## Reasoning Bottleneck Details
 
-オラクル条件（正しい文書を提供）でも40%という結果から、以下のような**推論ボトルネック**が浮かび上がる：
+The 40% result in the oracle condition (providing correct documents) reveals the following **reasoning bottlenecks**:
 
-1. **マルチホップ推論**: あるポリシーが別のポリシーを「条件付きで上書き」する場合、エージェントは両方の文書を読み、優先順位を正しく判断する必要がある。
-2. **数値的条件の解釈**: 「$500以上の取引」「30日以内」「残高が最低$1,500」といった条件を文書から抽出し、ユーザーの状況と照合する必要がある。
-3. **例外処理の理解**: 通常ルールに加えて例外条項が存在し、それらを正しく適用する判断が求められる。
-4. **暗黙知の補完**: 文書に明示されていなくても、銀行業務のドメイン知識から当然期待される判断（例: 口座解約前に残高確認が必要）をエージェントが行えるか。
+1. **Multi-hop reasoning**: When one policy "conditionally overrides" another, agents must read both documents and correctly determine priority.
+2. **Numerical condition interpretation**: Extracting conditions like "transactions over $500", "within 30 days", "minimum balance of $1,500" from documents and matching them against user circumstances.
+3. **Exception handling**: Beyond standard rules, exception clauses exist and require correct judgment to apply.
+4. **Implicit knowledge completion**: Whether agents can perform expected judgments even when not explicitly stated in documents, based on domain knowledge of banking operations (e.g., checking account balance before closing an account).
 
-## τ-Bench ファミリーにおける位置づけ
+## Position in the τ-Bench Family
 
-τ-Knowledge は τ-Bench エコシステムの一部であり、以下のファミリーを構成する：
+τ-Knowledge is part of the τ-Bench ecosystem, constituting the following family:
 
-| ベンチマーク | 焦点 |
-|--------------|------|
-| [[concepts/tau-bench\|τ-Bench]] | 構造化ツールを用いた対話型エージェント評価 |
-| **τ-Knowledge** | 非構造化知識ベースからの情報検索・推論 |
-| [[concepts/tau-squared-bench\|τ²-Bench]] | より複雑なマルチエージェント・マルチツールシナリオ |
-| [[concepts/tau-voice\|τ-Voice]] | 音声インタラクションを含む評価 |
+| Benchmark | Focus |
+|-----------|-------|
+| [[concepts/tau-bench\|τ-Bench]] | Conversational agent evaluation with structured tools |
+| **τ-Knowledge** | Information retrieval and reasoning from unstructured knowledge bases |
+| [[concepts/tau-squared-bench\|τ²-Bench]] | More complex multi-agent, multi-tool scenarios |
+| [[concepts/tau-voice\|τ-Voice]] | Evaluation including voice interaction |
 
-τ-Knowledge が追加する新たな評価軸は「知識発見」であり、これは実世界のエージェント展開において不可欠な能力である。
+The new evaluation axis τ-Knowledge adds is "knowledge discovery," an essential capability for real-world agent deployment.
 
-## 実践的含意
+## Practical Implications
 
-1. **RAG だけでは不十分**: 検索強化生成（RAG）は必要だが、τ-Knowledge の結果は検索後の**推論品質**が同様に重要であることを示している。
-2. **検索戦略の最適化が鍵**: タスク特性に応じた検索手法の選択（ターミナル vs 埋め込み）が性能を大きく左右する。
-3. **ドメイン特化の必要性**: 銀行ドメインの専門用語・文書構造に対するチューニングが不可欠。
-4. **自律的ツール発見**: ツール定義が明示的に与えられない環境での運用能力は、現在の最先端モデルでも大きく不足している。
+1. **RAG alone is insufficient**: Retrieval-Augmented Generation is necessary, but τ-Knowledge results show that **reasoning quality** after retrieval is equally important.
+2. **Retrieval strategy optimization is key**: Choosing the right retrieval method (terminal vs. embedding) based on task characteristics significantly impacts performance.
+3. **Domain specialization is essential**: Tuning for banking domain terminology and document structure is critical.
+4. **Autonomous tool discovery**: Even state-of-the-art models significantly lack operational capability in environments where tool definitions are not explicitly provided.
 
-## 今後の課題
+## Future Challenges
 
-- 検索と推論を統合したエンドツーエンドの最適化
-- ドメイン特化型の埋め込みモデル・検索パイプラインの開発
-- マルチホップ推論を陽に訓練・評価する手法
-- オラクル条件とのギャップ（検索ボトルネック）を埋める検索アーキテクチャの探求
+- End-to-end optimization integrating retrieval and reasoning
+- Development of domain-specific embedding models and retrieval pipelines
+- Methods to explicitly train and evaluate multi-hop reasoning
+- Exploration of retrieval architectures to close the gap with oracle conditions (the retrieval bottleneck)
 
-## 関連ページ
+## Related Pages
 
-- [[concepts/tau-bench]] — ベースとなった対話型エージェントベンチマーク
-- [[concepts/tau-squared-bench]] — τ²-Bench: より高度な評価スイート
-- [[concepts/tau-voice]] — 音声インタラクション評価
+- [[concepts/tau-bench]] — The base conversational agent benchmark
+- [[concepts/tau-squared-bench]] — τ²-Bench: More advanced evaluation suite
+- [[concepts/tau-voice]] — Voice interaction evaluation
 - [[concepts/_index]]
