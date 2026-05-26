@@ -1,0 +1,30 @@
+{
+  "https://substack.com/app-link/post?publication_id=1084089&post_id=195067855": {
+    "action": "skip",
+    "reason": "Already processed 2026-05-25. entities/mikhail-parakhin.md, entities/shopify.md, entities/liquid-ai.md created. concepts/shopify-ai-engineering.md has Tangle/Tangent/SimGym content.",
+    "archited_at": "2026-05-26T12:09:54.756258+00:00",
+    "source": "backlog",
+    "run_id": "20260526T120515Z"
+  },
+  "https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=substack&utm_medium=email&utm_content=share": {
+    "action": "skip",
+    "reason": "Duplicate URL variation of a588e4d3 (share param). Same content already captured.",
+    "archited_at": "2026-05-26T12:09:54.756258+00:00",
+    "source": "backlog",
+    "run_id": "20260526T120515Z"
+  },
+  "https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=podcast-email&play_audio=true": {
+    "action": "skip",
+    "reason": "Duplicate URL variation (play_audio param). Same content already captured.",
+    "archited_at": "2026-05-26T12:09:54.756258+00:00",
+    "source": "backlog",
+    "run_id": "20260526T120515Z"
+  },
+  "https://substack.com/app-link/post?publication_id=1084089&post_id=195067855&utm_source=post-email-title": {
+    "action": "skip",
+    "reason": "Duplicate URL variation (email-post-title param). Same content already captured.",
+    "archited_at": "2026-05-26T12:09:54.756258+00:00",
+    "source": "backlog",
+    "run_id": "20260526T120515Z"
+  }
+}

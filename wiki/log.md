@@ -50,6 +50,32 @@
 
 ---
 
+## [2026-05-26] raw-backlog-ingest | 5 articles triaged from Latent Space / AINews
+
+### Triage Decisions
+- **take (1)**: `substack.com--redirect-8f8889e4` — "Cursor's Third Era: Cloud Agents" (Latent Space Podcast transcript, 950 lines)
+- **skip (4)**: 3× Shopify/Mikhail Parakhin duplicates (already in `concepts/shopify-ai-engineering.md`), 1× AINews duplicate redirect
+
+### Pages Enriched
+- [[entities/cursor-ai.md]] — Added "Cloud Agents (Apr 2026)" section with Three Pillars, Slash Commands, VM Architecture, Subagents, and Multi-Agent Parallelism insights from Latent Space Podcast transcript
+
+### Raw Articles Processed
+- `raw/articles/substack.com--redirect-8f8889e4-2fc6-4c7d-bd26-1e18bb34e4c2--6f599f56.md` (take → wiki)
+- `raw/articles/substack.com--app-link-post--a588e4d3.md` (skip → Shopify dup)
+- `raw/articles/substack.com--app-link-post--7bd43edb.md` (skip → Shopify dup)
+- `raw/articles/substack.com--app-link-post--91cf723c.md` (skip → Shopify dup)
+- `raw/articles/substack.com--app-link-post--2d77531a.md` (skip → Shopify dup)
+
+### Key Insights Captured
+- Cursor's shift from IDE tool to autonomous development platform via Cloud Agents
+- Video-based code review (Best-of-N evaluation across models)
+- VM snapshotting for persistent agent state
+- Cross-provider model synergy ("Council" pattern)
+- Datadog MCP for automated diagnostics
+
+
+---
+
 ## [2026-05-26] translate | JP→EN batch — 6 concept pages (16,846 JP chars)
 
 ### Pages Translated (JP→EN)

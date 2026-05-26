@@ -1,7 +1,7 @@
 ---
 title: "Cursor AI"
 created: 2026-05-06
-updated: 2026-05-20
+updated: 2026-05-26
 type: entity
 tags:
   - entity
@@ -123,6 +123,54 @@ Cursor disclosed training a **larger model from scratch** in partnership with **
 - [[entities/openai]] — Codex and Agents SDK competitor
 - [[entities/anthropic]] — Claude Code competitor
 
+## Cloud Agents (Apr 2026)
+
+Cursor launched **Cloud Agents** — AI agents running in dedicated cloud VMs with full computer use capabilities, acquired via the **Autotab** purchase. This represents Cursor's third era: from IDE tool to autonomous software development platform.
+
+### Three Pillars of Cloud Agent Workflow
+
+1. **Self-Testing**: Agents automatically test their own changes before returning results. They start Dev servers, iterate, and come back with a tested PR rather than an unverified diff. The model is calibrated to skip testing for trivial copy changes but test for complex features. Users can override with `/no test`.
+2. **Video Review**: Agents return a video demonstration of what they built, not just a code diff. This dramatically reduces review friction — humans watch a 22-second video instead of reviewing hundreds of lines of code. Enables **Best-of-N** evaluation: running multiple models head-to-head and comparing videos to pick the best output.
+3. **Full VM Remote Control**: Each cloud agent gets its own VM with full desktop access (VNC). Humans can interact with the VM directly — hover, type, explore. This "brain in a box" model removes context and capability limitations so the bottleneck becomes raw model intelligence.
+
+### Slash Commands and Specialized Tools
+
+- **`/repro`**: Agent reproduces a bug (video), fixes it, then demonstrates the fix (video). Reduces bug-merge confidence from hours to ~90 seconds.
+- **Bug Bot**: Internal tool that automatically fixes its own Bug Bot comments. Highly adopted — team policy is "don't leave Bug Bot comments unaddressed."
+- **Cloud Agent Diagnosis**: Uses Datadog MCP to spin up subagents that explore logs and diagnose issues automatically.
+- **Transcript-Based Debugging**: Agents can access other agents' transcripts (including chain-of-thought) to act as external debuggers or continue forked conversations.
+
+### VM Architecture Philosophy
+
+- **Snapshot-based setup**: Default approach is VM filesystem snapshotting (run install commands, snapshot the state).
+- **Persistent memory**: Agents can hibernate and rehydrate — browser state, open files, etc. persist across sessions.
+- **No file editor in Cursor Web**: Intentional design choice to push users toward delegation patterns rather than hand-coding.
+- **Unshipped features**: Native browser iframe (port forwarding to localhost) was removed as "eng rock" — remote desktop proved more general-purpose.
+
+### Model Selection and Routing
+
+- Cursor wants to offer model choice but is moving toward **auto-routing** (like the `auto` mode in desktop IDE).
+- Internal experiments show **synergistic output** from combining models across different providers (the "Council" pattern, named by Andrej Karpathy).
+- Best-of-N parallel agents run the same prompt across multiple models on isolated VMs — a significant advantage over local worktrees where port conflicts occur.
+
+### Subagents and Context Management
+
+- Built-in subagents (e.g., `explore`) for codebase exploration and long-running tasks.
+- Main agent defines task interfaces for subagents — can spin up 5+ parallel subagents.
+- Represents a shift from individual development to **collaborative development** where Slack becomes a development IDE.
+
+### Scaling DevOps for Small Teams
+
+- As cloud agents scale code generation, 10-person startups need the DevOps pipelines that 10,000-person companies built: release stages, checkpoints, automated regression detection, merge queues.
+- Cursor is democratizing enterprise-grade development workflows for small teams.
+- Team Marketplace allows sharing of MCP configurations and skills across the organization.
+
+### Multi-Agent Parallelism Insight
+
+Jonas (Cursor) noted that agents using models from **different providers** produce synergistic outputs — not just redundancy. This suggests that future agent systems may benefit from heterogeneous model ensembles rather than single-model scaling.
+
+---
+
 ## Sources
 
 - [AINews: Silicon Valley gets Serious about Services](https://open.substack.com/pub/swyx/p/ainews-silicon-valley-gets-serious) — May 6, 2026
@@ -130,3 +178,4 @@ Cursor disclosed training a **larger model from scratch** in partnership with **
 - [CNBC: Cursor raises $2.3B at $29.3B valuation](https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html) — November 13, 2025
 - [Paraform Talent Density Index](https://www.paraform.com/talent-density-index) — April 2026
 - [Business Insider: Inside Cursor's hiring strategy](https://www.businessinsider.com/cursor-interview-process-no-ai-on-site-project-coding-tool-2025-6) — June 2025
+- [Latent Space Podcast: Cursor's Third Era — Cloud Agents](https://substack.com/redirect/8f8889e4-2fc6-4c7d-bd26-1e18bb34e4c2) — Apr 15, 2026 (swyx × Jonas × Samantha, 950-line transcript)
