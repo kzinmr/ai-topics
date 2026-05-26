@@ -11,6 +11,7 @@
 - [[entities/addy-osmani]] — Addy Osmani — Google Cloud AI director, Chrome DevTools lead, Agent Harness Engineering framework
 - [[entities/agentmemory]] — Persistent memory for AI coding agents built on iii-engine. 12 hooks auto-capture, BM25+vector+graph retrieval (R@5: 95.2%), 4-tier memory consolidation. Works with Claude Code, Codex, Cursor, Hermes, any MCP client.
 - [[entities/agreement-bug]] — Agreement is a Bug
+- [[entities/ahmed-awadallah]] — Ahmed Awadallah — Research manager at Microsoft Research AI Frontiers, leads the team behind [[echo-rl|ECHO]] agent RL research.
 - [[entities/ai21-labs]] — AI21 Labs — Israeli AI company. Shut down model team in May 2026 and pivoted entirely to agents, representing "Model Lab → Agent Lab" industry shift alongside DeepSeek Harness team.
 - [[entities/akool]] — AKOOL — AI video generation suite. 10-20× faster real-time video inference engine, sub-30ms per frame latency. Palo Alto.
 - [[entities/autoreason]] — Autoreason
@@ -57,6 +58,7 @@
 - [[entities/merge-dev]] — Merge.dev (Merge Agent Handler) — MCP server product. GitHub·Trello MCP for Cursor/Claude Code, centralized OAuth management, enterprise access control·audit logging.
 - [[entities/marc-andreessen]] — Marc Andreessen — Co-founder of Andreessen Horowitz (a16z), co-author of Mosaic browser, Netscape co-founder. AI optimist, "Software Is Eating the World" author.
 - [[entities/microsoft-agent-framework]] — Microsoft Agent Framework v1.0: unified Semantic Kernel + AutoGen SDK for .NET/Python, multi-agent orchestration, MCP/A2A support
+- [[entities/microsoft-ai-frontiers]] — Microsoft AI Frontiers — Boutique research lab inside Microsoft Research. Produced [[echo-rl|ECHO]] (hybrid GRPO + environment prediction for CLI agents). Led by Ahmed Awadallah.
 - [[entities/mikhail-parakhin]] — CTO of Shopify. Former Microsoft division head (Windows, Edge, Bing, Ads). Led Shopify's Tangle/Tangent/SimGym AI infrastructure triad. Advocates no token limits and non-transformer architectures.
 - [[entities/mitchell-hashimoto-hashicorp]] — Mitchell Hashimoto — HashiCorp
 - [[entities/moonshot-ai]] — Moonshot AI
@@ -69,6 +71,7 @@
 - [[entities/parallel-web-systems]] — Parallel Web Systems Inc. — AI agent infrastructure (Search, Extract, Monitor APIs). SOC 2 Type 2, ZDR. Founded 2023.
 - [[entities/parchi]] — Parchi — AI-powered browser copilot (open-source Chrome/Firefox extension). Chat-driven browser automation: navigate, read, click, fill forms. BYOK or credits. MIT license.
 - [[entities/pi-coding-agent]] → [[entities/pi]] — Pi minimal terminal coding harness. Created by Mario Zechner, acquired by Earendil (Apr 2026). ~54K stars, MIT core + Fair Source + Proprietary licensing.
+- [[entities/piero-kauffmann]] — Piero Kauffmann — RL infrastructure researcher at Microsoft Research AI Frontiers. Built RL infra for [[echo-rl|ECHO]] experiments.
 - [[entities/portkey]] — AI agent security platform — inspects actions, stops risky behavior, 99.99% uptime. Acquired by Palo Alto Networks (Q4 2026).
 - [[entities/prime-intellect]] — Prime Intellect — "The Open Stack for Self-Improving Agents": decentralized AI platform, RL post-training (Lab), open-source renderers/verifiers/prime-rl. $20.5M funding. INTELLECT model series.
 - [[entities/ramp]] — Ramp
@@ -849,7 +852,7 @@
 - [[concepts/ds4-dwarfstar-4]] — DS4 (DwarfStar 4): antirez's local AI inference project. Runs DeepSeek V4 Flash with 2/8bit asymmetric quantization on 96-128GB Macs. Plans distributed inference and coding agent integration. First time using local models for serious work.
 - [[concepts/cognition-devin-philosophy]] — Cognition/Devin Philosophy
 - [[concepts/embeddings]] — Dense vector representations encoding entities as coordinates. Triples training (anchor/similar/dissimilar), dot product + sigmoid + contrastive loss, Two-Tower architecture for cold-start, transformer sentence embeddings (BERT CLS). Doug Turnbull's Maven course module.
-- [[concepts/echo-rl]] — ECHO: hybrid GRPO + environment-prediction training objective for CLI agents. Learns world models "for free" from terminal response tokens already in the rollout. Nearly doubles TerminalBench-2.0 pass@1 at zero extra cost. By Vaishnavi Shrivastava & Dimitris Papailiopoulos (MSR AI Frontiers, 2026-05).
+- [[concepts/echo-rl]] — ECHO: hybrid GRPO + environment-prediction training objective for CLI agents. Learns world models "for free" from terminal response tokens already in the rollout. Nearly doubles TerminalBench-2.0 pass@1 at zero extra cost. By Vaishnavi Shrivastava, Dimitris Papailiopoulos, Piero Kauffmann & Ahmed Awadallah (MSR AI Frontiers, 2026-05). Paper: [arxiv.org/abs/2605.24517](https://arxiv.org/abs/2605.24517).
 - [[concepts/elastic-training]] — Elastic Training (Once-For-All) — Optimize entire model family in single training run. Baidu's Ernie 5.1 achieved 94% pre-training cost reduction. Varies depth, width, sparsity simultaneously. Industry implications for training economics.
 - [[concepts/evaluation-coding-agents]] — Coding Agent Evaluation — Benchmarks for agentic coding (MINTEval: avg 138.8K context, 27.9% average, memory as learned subsystem).
 - [[concepts/fsdp-qlora]] — FSDP + Q-LoRA — Combining Fully Sharded Data Parallelism with Quantized Low-Rank Adaptation for large-scale fine-tuning.

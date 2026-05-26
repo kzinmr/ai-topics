@@ -1,6 +1,16 @@
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
+
+| 2026-05-26 14:50 | Updated | ECHO paper (arxiv:2605.24517) ingested and wiki pages updated |
+| 2026-05-26 14:50 | Created | entities/ahmed-awadallah.md |
+| 2026-05-26 14:50 | Created | entities/piero-kauffmann.md |
+| 2026-05-26 14:50 | Created | entities/microsoft-ai-frontiers.md |
+| 2026-05-26 14:50 | Added | raw/papers/2026-05-26_2605.24517_echo-terminal-agents-world-models.md |
+| 2026-05-26 14:50 | Updated | concepts/echo-rl.md — added new paper source, all four co-authors |
+| 2026-05-26 14:50 | Updated | entities/dimitris-papailiopoulos.md — added new paper source, co-authors |
+| 2026-05-26 14:50 | Updated | entities/vaishnavi-shrivastava.md — added new paper source, co-authors |
+| 2026-05-26 14:50 | Updated | index.md — added 3 new entity entries, updated echo-rl concept entry |
 ## [2026-05-26] translate | JP→EN batch — 8 files
 
 ### Files Translated

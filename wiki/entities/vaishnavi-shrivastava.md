@@ -2,10 +2,12 @@
 title: Vaishnavi Shrivastava
 type: person
 created: 2026-05-19
-updated: 2026-05-19
-tags: [person, researcher, microsoft, reinforcement-learning, agent-training]
+updated: 2026-05-26
+tags: [person, researcher, microsoft, reinforcement-learning, agent-training, world-models]
 sources:
   - raw/articles/2026-05-18_dimitris-papailiopoulos_echo-terminal-agents-world-models.md
+  - raw/papers/2026-05-26_2605.24517_echo-terminal-agents-world-models.md
+  - https://arxiv.org/abs/2605.24517
   - https://x.com/VaishShrivas
 aliases:
   - "@VaishShrivas"
@@ -28,7 +30,9 @@ Researcher at **Microsoft Research, AI Frontiers**. Primary author of [[echo-rl|
 ## Notable Work
 
 ### ECHO: Terminal Agents Learn World Models for Free (2026-05)
-Lead researcher and primary implementer of ECHO, co-authored with [[entities/dimitris-papailiopoulos|Dimitris Papailiopoulos]]. ECHO introduces a hybrid GRPO + environment cross-entropy loss that trains CLI agents on terminal responses — essentially learning a world model "for free" from tokens already in the rollout.
+Lead researcher and primary implementer of ECHO, co-authored with [[entities/dimitris-papailiopoulos|Dimitris Papailiopoulos]], [[entities/piero-kauffmann|Piero Kauffmann]], and [[entities/ahmed-awadallah|Ahmed Awadallah]]. ECHO introduces a hybrid GRPO + environment cross-entropy loss that trains CLI agents on terminal responses — essentially learning a world model "for free" from tokens already in the rollout.
+
+Paper: [arxiv.org/abs/2605.24517](https://arxiv.org/abs/2605.24517) (May 2026). Code: [github.com/microsoft/echo-rl](https://github.com/microsoft/echo-rl). Built on [[entities/nova-sky|NovaSky-AI]]'s SkyRL.
 
 Key contributions:
 - Designed and ran the full ECHO experiments (first cluster run launched March 29, 2026)
@@ -42,5 +46,8 @@ Work done at **AI Frontiers**, a boutique research lab inside Microsoft Research
 ## See Also
 
 - [[entities/dimitris-papailiopoulos]] — co-author
+- [[entities/piero-kauffmann]] — RL infrastructure co-author
+- [[entities/ahmed-awadallah]] — MSR AI Frontiers research lead
 - [[echo-rl]] — the ECHO training method
+- [[entities/microsoft-ai-frontiers]] — research lab
 - [[world-models-for-agents]] — world models in agent training

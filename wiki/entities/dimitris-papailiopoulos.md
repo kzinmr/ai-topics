@@ -2,10 +2,12 @@
 title: Dimitris Papailiopoulos
 type: person
 created: 2026-05-19
-updated: 2026-05-19
-tags: [person, researcher, microsoft, reinforcement-learning, agent-training]
+updated: 2026-05-26
+tags: [person, researcher, microsoft, reinforcement-learning, agent-training, world-models]
 sources:
   - raw/articles/2026-05-18_dimitris-papailiopoulos_echo-terminal-agents-world-models.md
+  - raw/papers/2026-05-26_2605.24517_echo-terminal-agents-world-models.md
+  - https://arxiv.org/abs/2605.24517
   - https://x.com/DimitrisPapail
 aliases:
   - "@DimitrisPapail"
@@ -29,12 +31,13 @@ Researcher at **Microsoft Research, AI Frontiers** lab. Professor at **UW-Madiso
 ## Notable Work
 
 ### ECHO: Terminal Agents Learn World Models for Free (2026-05)
-Co-authored with Vaishnavi Shrivastava. Introduced **[[echo-rl|ECHO]]**, a hybrid training objective that adds environment cross-entropy loss on terminal-output tokens alongside standard GRPO loss on action tokens. Key findings:
+Co-authored with Vaishnavi Shrivastava, Piero Kauffmann, and Ahmed Awadallah. Introduced **[[echo-rl|ECHO]]**, a hybrid training objective that adds environment cross-entropy loss on terminal-output tokens alongside standard GRPO loss on action tokens. Published at Microsoft Research AI Frontiers. Paper: [arxiv.org/abs/2605.24517](https://arxiv.org/abs/2605.24517). Code: [github.com/microsoft/echo-rl](https://github.com/microsoft/echo-rl).
+
+
+Key findings:
 - Nearly doubles TerminalBench-2.0 pass@1 at no extra cost
 - 2.3× faster training to same performance
 - Can substitute for expert SFT and enables verifier-free self-improvement
-
-Published at Microsoft Research AI Frontiers. Code: [github.com/microsoft/echo-rl](https://github.com/microsoft/echo-rl).
 
 ### Other Contributions
 - Known for advocating small-scale "microcosm" experiments to validate ideas before scaling (the "silly maze experiment" — testing ECHO on a 10M-param transformer navigating 2D mazes on a laptop)
@@ -47,6 +50,9 @@ Believes most clean ideas have a microcosm — a scaled-down version you can run
 ## See Also
 
 - [[entities/vaishnavi-shrivastava]] — co-author of ECHO
+- [[entities/piero-kauffmann]] — RL infrastructure for ECHO
+- [[entities/ahmed-awadallah]] — MSR AI Frontiers research lead
 - [[echo-rl]] — the ECHO training method
+- [[entities/microsoft-ai-frontiers]] — research lab
 - [[world-models-for-agents]] — world models in agent training
 - [[entities/will-brown]] — discussed continual learning for agents

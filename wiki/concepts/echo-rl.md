@@ -2,10 +2,12 @@
 title: ECHO (RL Training Method)
 type: concept
 created: 2026-05-19
-updated: 2026-05-19
-tags: [reinforcement-learning, grpo, agent-training, ai-agents, world-models, research]
+updated: 2026-05-26
+tags: [reinforcement-learning, grpo, agent-training, ai-agents, world-models, research, cli]
 sources:
   - raw/articles/2026-05-18_dimitris-papailiopoulos_echo-terminal-agents-world-models.md
+  - raw/papers/2026-05-26_2605.24517_echo-terminal-agents-world-models.md
+  - https://arxiv.org/abs/2605.24517
   - https://arxiv.org/abs/2510.16907
   - https://github.com/microsoft/echo-rl
 ---
@@ -58,6 +60,8 @@ With the verifier turned off entirely (only L_{env}), the model can still improv
 
 - [[entities/vaishnavi-shrivastava|Vaishnavi Shrivastava]] — lead researcher, MSR AI Frontiers
 - [[entities/dimitris-papailiopoulos|Dimitris Papailiopoulos]] — co-author, MSR AI Frontiers / UW-Madison
+- [[entities/piero-kauffmann|Piero Kauffmann]] — RL infrastructure, MSR AI Frontiers
+- [[entities/ahmed-awadallah|Ahmed Awadallah]] — research lead, MSR AI Frontiers
 
 ## Related Work
 
@@ -70,9 +74,11 @@ ECHO is the online, in-the-RL-loop, CLI-flavored version of the same idea: envir
 
 ## Code & Paper
 
-- Paper: [arxiv.org/abs/2510.16907](https://arxiv.org/abs/2510.16907)
+- Paper (arXiv): [arxiv.org/abs/2605.24517](https://arxiv.org/abs/2605.24517) (May 2026, published by Microsoft Research)
+- Earlier preprint: [arxiv.org/abs/2510.16907](https://arxiv.org/abs/2510.16907) (Oct 2025)
 - Code: [github.com/microsoft/echo-rl](https://github.com/microsoft/echo-rl)
 - Built on: [[entities/nova-sky|NovaSky-AI]]'s [SkyRL](https://github.com/NovaSky-AI/SkyRL)
+- Research lab: [[entities/microsoft-ai-frontiers]]
 
 ## See Also
 
