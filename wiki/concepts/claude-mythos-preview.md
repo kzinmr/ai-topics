@@ -2,7 +2,7 @@
 title: "Claude Mythos Preview"
 type: concept
 created: 2026-04-13
-updated: 2026-05-15
+updated: 2026-05-26
 tags:
   - concept
   - anthropic
@@ -77,63 +77,63 @@ The incident highlights risks of: inference endpoint discoverability, credential
 3. **Release caution**: The lockdown approach suggests Anthropic sees Mythos capabilities as exceeding what can be safely deployed publicly
 4. **Physical world integration**: Project Vend and Project Fetch signal Anthropic's interest in AI agents operating in real-world environments, not just digital tasks
 
-## Mozilla Firefox Hardening — 実運用での成果 (May 2026)
+## Mozilla Firefox Hardening — Real-World Results (May 2026)
 
-Mozilla は **Claude Mythos Preview** と他の AI モデルを活用し、Firefox の大規模セキュリティ監査を実施。2026年4月だけで **423件** のセキュリティバグを修正 — これは2025年全体の合計を上回る規模。
+Mozilla leveraged **Claude Mythos Preview** and other AI models to conduct a large-scale Firefox security audit. In April 2026 alone, they fixed **423** security bugs — surpassing the total for all of 2025.
 
-### バグ内訳
+### Bug Breakdown
 
-| 発見元 | 件数 |
+| Source | Count |
 |--------|------|
 | **Claude Mythos Preview** | 271 |
-| 外部報告 | 41 |
-| その他内部 (Fuzzing/手動) | 111 |
-| **合計** | **423** |
+| External Reports | 41 |
+| Other Internal (Fuzzing/Manual) | 111 |
+| **Total** | **423** |
 
-### 深刻度分布 (Mythos Preview 発見分)
-- **sec-high**: 180件
-- **sec-moderate**: 80件
-- **sec-low**: 11件
+### Severity Distribution (Mythos Preview Discoveries)
+- **sec-high**: 180
+- **sec-moderate**: 80
+- **sec-low**: 11
 
-### 特徴的な発見
+### Notable Discoveries
 
-- **Sandbox Escape（サンドボックス突破）**: 従来のファジングでは検出が極めて困難なバグを多数発見。モデルは Firefox ソースコードをパッチしてサンドボックス内限定実行が許可されている
-- **15年前のバグ** (Bug 2024437): `<legend>` 要素の再帰スタック深度とサイクルコレクションの問題
-- **20年前の XSLT バグ** (Bug 2025977): 再入可能呼び出しがポインタ使用中にハッシュテーブル再ハッシュを引き起こす
-- **JIT 最適化エラー** (Bug 2024918): WebAssembly GC struct で fake-object プリミティブ生成
-- **RLBox エスケープ** (Bug 2029813): プロセス内サンドボックスの検証ロジックのギャップを突破
+- **Sandbox Escape**: Discovered numerous bugs that were extremely difficult to detect with traditional fuzzing. The model is permitted to patch Firefox source code for sandbox-constrained execution only
+- **15-year-old bug** (Bug 2024437): Recursive stack depth in `<legend>` element and cycle collection issues
+- **20-year-old XSLT bug** (Bug 2025977): Reentrant call triggers hash table rehashing while pointer is in use
+- **JIT optimization error** (Bug 2024918): Fake-object primitive generation in WebAssembly GC struct
+- **RLBox Escape** (Bug 2029813): Breached validation logic gaps in in-process sandbox
 
-### パイプラインアーキテクチャ
+### Pipeline Architecture
 
-Mozilla は以下の要素からなるプロジェクト固有パイプラインを構築：
+Mozilla built a project-specific pipeline consisting of:
 
-1. **Discovery Subsystem**: 既存ファジング基盤上に構築されたエージェントハーネス
-2. **並列化**: 複数のエフェメラル VM でジョブを実行、各ジョブが特定ファイルを対象
-3. **統合**: Bugzilla で自動重複排除・追跡、エンジニアによるトリアージ
-4. **モデル非依存**: Claude Opus 4.6 → Mythos Preview への移行が容易
+1. **Discovery Subsystem**: Agent harness built atop existing fuzzing infrastructure
+2. **Parallelization**: Jobs executed across multiple ephemeral VMs, each targeting specific files
+3. **Integration**: Automatic deduplication and tracking in Bugzilla, with engineer triage
+4. **Model-agnostic**: Easy transition from Claude Opus 4.6 to Mythos Preview
 
-### 教訓
+### Lessons Learned
 
-Mozilla はすべてのソフトウェアプロジェクトに対し、**今すぐ AI ハーネスの使用を開始する**ことを推奨：
-> *"There is a bug in this part of the code, please find it and build a testcase."* という単純なプロンプトから始め、発見と検証の「内部ループ」の周りにオーケストレーションとツールを段階的に構築する。
+Mozilla recommends that **all software projects start using AI harnesses now**:
+> *"There is a bug in this part of the code, please find it and build a testcase."* Start with a simple prompt and gradually build orchestration and tooling around the "inner loop" of discovery and validation.
 
-今後の計画として、**ファイルベースのスキャンからパッチベースの CI スキャン**への移行を予定。
+Going forward, they plan to transition **from file-based scanning to patch-based CI scanning**.
 ### Apple M5 MIE Kernel Exploit (May 2026)
 
-[[concepts/ai-vulnerability-discovery|Calif チーム]]が **Claude Mythos Preview** を活用し、Apple M5 の MIE (Memory Integrity Enforcement) を突破する初の公開 macOS カーネルエクスプロイトを達成。
+The [[concepts/ai-vulnerability-discovery|Calif team]] leveraged **Claude Mythos Preview** to achieve the first public macOS kernel exploit bypassing MIE (Memory Integrity Enforcement) on the Apple M5.
 
-#### 成果概要
-- **標的**: macOS 26.4.1 (25E253) on bare-metal M5 + kernel MIE enabled
-- **攻撃**: データオンリーカーネルローカル特権昇格（非特権ユーザー → root shell）
-- **2つの脆弱性**をチェーン、通常のシステムコールのみ使用
-- **所要期間**: 2026年4月25日（バグ発見）→ 5月1日（動作確認）= **1週間**
-- **支援**: Mythos Preview がバグ特定とエクスプロイト開発全般を支援
+#### Results Summary
+- **Target**: macOS 26.4.1 (25E253) on bare-metal M5 + kernel MIE enabled
+- **Attack**: Data-only kernel local privilege escalation (unprivileged user → root shell)
+- Chained **2 vulnerabilities**, using only standard system calls
+- **Timeline**: April 25, 2026 (bug discovery) → May 1 (verification) = **1 week**
+- **Support**: Mythos Preview assisted with bug identification and overall exploit development
 
-#### 意義
-- Apple が **5年・数十億ドル** を投じた MIE（MTE ベースのハードウェアメモリ安全）を、5人のスタートアップが 1 週間で突破
-- MIE は既知の全公開エクスプロイトチェーン（Coruna, Darksword 含む）を無効化する設計だった
-- **AI 支援の決定的実証**: 「小チームが突然、組織全体が必要だったことを達成できる」
-- 55ページのテクニカルレポートは Apple の修正後に公開予定
+#### Significance
+- Five-person startup breached MIE (MTE-based hardware memory safety) — which Apple invested **5 years and billions of dollars** in — in one week
+- MIE was designed to neutralize all known public exploit chains (including Coruna, Darksword)
+- **Definitive demonstration of AI assistance**: "Small teams can suddenly achieve what entire organizations used to need"
+- The 55-page technical report will be published after Apple fixes are deployed
 
 > *"This work is a glimpse of what is coming. Apple built MIE in a world before Mythos Preview. We're about to learn how the best mitigation technology on Earth holds up during the first AI bugmageddon."*
 

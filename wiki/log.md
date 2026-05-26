@@ -14,6 +14,24 @@
 | 2026-05-26 14:50 | Updated | entities/vaishnavi-shrivastava.md — added new paper source, co-authors |
 | 2026-05-26 14:50 | Updated | index.md — added 3 new entity entries, updated echo-rl concept entry |
 
+## [2026-05-26] translate | JP->EN batch — 6 files (5,088 chars)
+
+### Files Translated
+- [[concepts/continual-learning.md]] — 858 chars -> 0
+- [[concepts/llm-as-judge.md]] — 858 chars -> 0
+- [[concepts/openclaw/five-tier-precedence.md]] — 855 chars -> 0
+- [[concepts/claude-mythos-preview.md]] — 843 chars -> 0
+- [[entities/china-ai-industry.md]] — 841 chars -> 0
+- [[concepts/harness-engineering/agentic-workflows/cli-first-development.md]] — 833 chars -> 0
+
+### Stats
+- Total JP chars removed: 5,088
+- Remaining JP content files: 220
+- Remaining JP chars: 83,954
+
+
+---
+
 ## [2026-05-26] translate | JP→EN batch — 8 entity/concept pages (6,831 chars)
 
 ### Files Translated

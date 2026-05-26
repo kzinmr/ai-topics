@@ -6,7 +6,7 @@ aliases:
   - cli-first-agents
   - command-line-first
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-05-26
 tags:
   - concept
   - agentic-engineering
@@ -18,114 +18,114 @@ sources:
 
 # CLI-First Development
 
-ソフトウェア開発を**CLI（コマンドラインインターフェース）から始める**アプローチ。エージェント時代の開発ワークフローの核心パターン。
+An approach that **starts software development from the CLI (Command Line Interface)**. A core pattern of agent-era development workflows.
 
-## 核心原則
+## Core Principle
 
 > *"Most apps are data pipelines. Starting with a CLI allows agents to execute, verify output, and close the feedback loop without UI overhead."*
 > — Peter Steinberger
 
-UIから始めるのではなく、まずCLIでコアロジックを構築し、エージェントが即座に実行・検証できる環境を作る。
+Instead of starting with a UI, first build the core logic as a CLI, creating an environment where agents can immediately execute and verify.
 
-## なぜCLI-Firstなのか
+## Why CLI-First?
 
-### 1. フィードバックループの高速化
+### 1. Faster Feedback Loops
 
-| 開始点 | エージェントの実行 | 検証方法 | フィードバック速度 |
+| Starting Point | Agent Execution | Verification Method | Feedback Speed |
 |--------|------------------|----------|------------------|
-| **CLI** | 即座に実行可能 | 標準出力・終了コード | 数秒 |
-| **Web UI** | ブラウザ操作が必要 | 視覚的確認 | 数分 |
-| **Mobile App** | シミュレーター/実機 | UIテスト | 数十分 |
+| **CLI** | Immediate execution | stdout / exit code | Seconds |
+| **Web UI** | Browser interaction needed | Visual inspection | Minutes |
+| **Mobile App** | Simulator / physical device | UI testing | Tens of minutes |
 
-### 2. エージェントとの相性
+### 2. Agent Compatibility
 
-- CLIは**構造化された入出力**を持つ → エージェントが理解しやすい
-- テスト自動化が容易 → エージェントが自己検証できる
-- バッチ処理・パイプライン化 → 並列実行が可能
+- CLI has **structured I/O** → easier for agents to understand
+- Easy test automation → agents can self-verify
+- Batch processing / pipelining → parallel execution is possible
 
-### 3. 認知負荷の削減
+### 3. Reduced Cognitive Load
 
-UIの細かい調整（パディング、色、レイアウト）に時間を取られることなく、**ロジックの正確性**に集中できる。
+Instead of spending time on UI tweaks (padding, colors, layout), you can focus on **logic correctness**.
 
-## Sankalpの実践：CC → Codex → Cursor
+## Sankalp's Practice: CC → Codex → Cursor
 
-Sankalpは以下のようにツールを使い分けている：
+Sankalp uses tools in this manner:
 
 ```
-Claude Code (CC)  →  メインドライバー。CLIベースで高速実装
+Claude Code (CC)  →  Main driver. Fast CLI-based implementation
      ↓
-GPT-5.2-Codex     →  レビュー・バグ発見。P1/P2の深刻度タグ付け
+GPT-5.2-Codex     →  Review and bug discovery. P1/P2 severity tagging
      ↓
-Cursor            →  手動編集・コードリーディング
+Cursor            →  Manual editing and code reading
 ```
 
-このパイプラインはCLI-firstの思想を反映している：
-1. CCでCLIから実装を開始
-2. Codexでバグを自動発見
-3. 必要に応じてCursorで手動修正
+This pipeline reflects the CLI-first philosophy:
+1. Start implementation from CLI with CC
+2. Auto-discover bugs with Codex
+3. Manual edits in Cursor when needed
 
-## Steipeteの実践：言語選択
+## Steipete's Practice: Language Selection
 
-| 用途 | 言語 | 理由 |
+| Use Case | Language | Reason |
 |------|------|------|
-| **CLI** | Go | シンプルな型システム、高速なリンティング、エージェントが扱いやすい |
-| **Web** | TypeScript | 豊富なエコシステム、エージェントの学習データが多い |
-| **macOS/UI** | Swift | Xcodeは不要。Swift build + Codexでシミュレーター操作 |
+| **CLI** | Go | Simple type system, fast linting, easy for agents to handle |
+| **Web** | TypeScript | Rich ecosystem, abundant agent training data |
+| **macOS/UI** | Swift | No Xcode needed. Simulator control via Swift build + Codex |
 
-## 実践パターン
+## Practice Patterns
 
-### パターン1: CLIプロトタイプ → Web拡張
+### Pattern 1: CLI Prototype → Web Extension
 
 ```bash
-# 1. CLIでコアロジックを構築
+# 1. Build core logic as CLI
 $ python cli_tool.py --input data.json --output result.json
 
-# 2. エージェントがCLIを検証・修正
+# 2. Agent verifies and fixes the CLI
 $ claude "Fix the date parsing in cli_tool.py"
 
-# 3. Web UIは後に追加
+# 3. Add Web UI later
 $ claude "Build a web frontend for cli_tool.py using FastAPI"
 ```
 
-### パターン2: テスト駆動CLI開発
+### Pattern 2: Test-Driven CLI Development
 
 ```bash
-# 1. テストを書く
+# 1. Write tests
 $ claude "Write tests for the data processing pipeline"
 
-# 2. CLIで実行
+# 2. Run via CLI
 $ python -m pytest tests/ -v
 
-# 3. 合格したらWeb UIに拡張
+# 3. Extend to Web UI after passing
 ```
 
-### パターン3: バックグラウンドタスク委任
+### Pattern 3: Background Task Delegation
 
 ```bash
-# メインエージェントがCLIタスクをバックグラウンドで実行
+# Main agent runs CLI task in background
 $ claude --background "Run the full test suite and report failures"
-# 別の作業を継続しながら、完了したら通知を受ける
+# Continue other work while receiving notification on completion
 ```
 
-## UIは「最後に」触る
+## UI is "Last"
 
-CLI-firstのアプローチでは、UIは以下の理由で最後に触る：
+In the CLI-first approach, UI is left for last for these reasons:
 
-1. **UIは主観的**：パディング1pxの違いに議論する時間はもったいない
-2. **UIは変更容易**：ロジックが固まってからUIを作れば、手戻りが少ない
-3. **エージェントはCLIが得意**：構造化された入出力を扱う方が正確
+1. **UI is subjective**: Debating 1px padding differences is a waste of time
+2. **UI is easy to change**: Building the UI after logic is solidified reduces rework
+3. **Agents excel at CLI**: Structured I/O is more precise to handle
 
 > *"Building software is like walking up a mountain. You don't go straight up, you circle around it and take turns, sometimes you get off path and have to walk a bit back, and it's imperfect, but eventually you get to where you need to be."*
 > — Peter Steinberger
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/agent-first-design]] — エージェント向けコード設計
-- [[concepts/context-window-management]] — CLIはコンテキスト消費が少ない
-- [[concepts/agentic-engineering]] — 上位概念
+- [[concepts/agent-first-design]] — Code design for agents
+- [[concepts/context-window-management]] — CLI consumes less context
+- [[concepts/agentic-engineering]] — Higher-level concept
 
-## 参照
+## References
 
--  — CLI-first開発の提唱者- [[entities/sankalp-sinha]] — CC → Codex → Cursorのパイプライン実践者
+- [[entities/peter-steinberger]] — CLI-first development advocate- [[entities/sankalp-sinha]] — CC → Codex → Cursor pipeline practitioner
 - [Shipping at Inference-Speed](https://steipete.me/posts/2025/shipping-at-inference-speed)
 - [A Guide to Claude Code 2.0](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/)

@@ -1,8 +1,8 @@
 ---
 title: "LLM-as-Judge: Evaluation Frameworks, Best Practices & Bias Types"
-description: "LLM-as-JudgeはLLMを使用してLLM出力を評価するパラダイム。3つのバイアス类型（ルーブリック順序、スコアID、参照解答）と7つのベストプラクティスを整理。高リスク評価にはGPT-4oクラスが必要。"
+description: "LLM-as-Judge is a paradigm for using LLMs to evaluate LLM outputs. Covers 3 bias types (rubric order, score ID, reference answer) and 7 best practices. High-risk evaluations require GPT-4o class models."
 created: 2026-04-20
-updated: 2026-04-20
+updated: 2026-05-26
 type: concept
 status: complete
 depth_tracking:
@@ -23,128 +23,128 @@ related:
 
 # LLM-as-Judge: Evaluation Frameworks & Bias Mitigation
 
-**LLM-as-Judge** は、LLMを使用してLLM出力を評価するパラダイム。比較評価（pairwise）よりも**スコアリング評価（absolute scoring）**が産業用途では実用的だが、3種類のバイアスに影響される。
+**LLM-as-Judge** is a paradigm that uses LLMs to evaluate LLM outputs. **Absolute scoring** is more practical for industrial use than pairwise comparison, but is affected by three types of bias.
 
 ## Three Scoring Biases (Li et al., 2025)
 
-### 1. Rubric Order Bias（ルーブリック順序バイアス）
+### 1. Rubric Order Bias
 
-スコアの説明順序が判断に影響する：
+The order in which score descriptions are presented affects judgment:
 
-| 順序タイプ | 効果 |
+| Order Type | Effect |
 |-----------|------|
-| Ascending-Numeric (1→5) | conventional — モデルは中央値に集まる傾向 |
-| Descending-Numeric (5→1) | **より正確** — 人間の評価との整合性が高い |
-| Random-Numeric | **最も悪い** — 論理的整合性が崩れ |
+| Ascending-Numeric (1→5) | conventional — models tend to cluster around the median |
+| Descending-Numeric (5→1) | **More accurate** — higher alignment with human evaluation |
+| Random-Numeric | **Worst** — breaks logical consistency |
 
-> **発見:** 上から下にスコアが下がるDescending順が、上げたスコアほど詳細説明つける構造と一致するため、より論理的。
+> **Finding:** Descending order (scores decreasing from top to bottom) is more logical because it aligns with the structure of giving more detailed explanation to higher scores.
 
-### 2. Score ID Bias（スコアIDバイアス）
+### 2. Score ID Bias
 
-同じ値を異なる記号的表現で書くと評価が変わる：
+Using different symbolic representations for the same value changes the evaluation:
 
-| 記号的表現 | 効果 |
+| Representation | Effect |
 |-----------|------|
-| Arabic numerals (1,2,3,4,5) | conventional — GPT-4oで中程度の精度 |
-| Letter-grades (E,D,C,B,A) | **DeepSeek-V3-671Bで精度向上** |
-| Roman numerals (i,ii,iii,iv,v) | **GPT-4oで精度向上** |
+| Arabic numerals (1,2,3,4,5) | conventional — moderate accuracy with GPT-4o |
+| Letter-grades (E,D,C,B,A) | **Improves accuracy with DeepSeek-V3-671B** |
+| Roman numerals (i,ii,iii,iv,v) | **Improves accuracy with GPT-4o** |
 
-### 3. Reference Answer Score Bias（参照解答バイアス）
+### 3. Reference Answer Score Bias
 
-参照解答に特定のスコアを添付すると評価が歪む——**最も危险的**：
+Attaching a specific score to a reference answer distorts evaluation — **the most dangerous**:
 
-| 参照スコア | 影響 |
+| Reference Score | Effect |
 |-----------|------|
-| Ref-5 (満点) | **最も安定、最も正確** |
-| Ref-1 to Ref-4 | 不安定、歪み大 |
+| Ref-5 (perfect score) | **Most stable, most accurate** |
+| Ref-1 to Ref-4 | Unstable, high distortion |
 
-> **実験結果:** GPT-4oでRef-5参照使用時、Flip Rate 45.54% — ほぼ半数のスコアが扰乱される
+> **Experimental results:** When using Ref-5 reference with GPT-4o, Flip Rate 45.54% — nearly half of scores are disrupted
 
-## Model Robustness差异
+## Model Robustness Differences
 
-| モデル | Flip Rate (最大) | MAD (最大) | 推奨シナリオ |
+| Model | Flip Rate (max) | MAD (max) | Recommended Scenario |
 |--------|-----------------|------------|-------------|
-| GPT-4o | <25% | <0.3 | 高リスク評価 |
-| DeepSeek-V3-671B | 中程度 | 中程度 | 中リスク評価 |
-| Qwen3-8B | **46.22%** | **0.5296** | 低リスク評価のみ |
+| GPT-4o | <25% | <0.3 | High-risk evaluation |
+| DeepSeek-V3-671B | Moderate | Moderate | Medium-risk evaluation |
+| Qwen3-8B | **46.22%** | **0.5296** | Low-risk evaluation only |
 
 ## 7 Best Practices for LLM-as-Judge
 
 ### 1. Ditch the 1-10 Scale
-- 離散的な小さなスケール（2-5段階）を 선호
-- 1-10は粒度が細すぎて不安定
+- Prefer small discrete scales (2-5 levels)
+- 1-10 is too granular and unstable
 
 ### 2. Start with Human Labels
-- 評価を真空状態で始めない
-- 人間の基底値（ground truth）でバリデーション
+- Don't start evaluation in a vacuum
+- Validate against human ground truth
 
 ### 3. Choose Judge Model Carefully
-- **高リスク評価:** GPT-4o classを使用
-- 小さいモデルは低リスク評価のみ
+- **High-risk evaluation:** Use GPT-4o class
+- Small models for low-risk evaluation only
 
 ### 4. Write Explicit Rubrics
-- 曖昧さのない明確な基準
-- 各スコアレベルの具体的条件
+- Clear, unambiguous criteria
+- Specific conditions for each score level
 
 ### 5. Prefer Decision-Based Checks
-- DAG/QAG (Question-Answer Generation) がfree-form scoringより安定
-- バイナリ判定 > 5段階スケール > 10段階スケール
+- DAG/QAG (Question-Answer Generation) is more stable than free-form scoring
+- Binary decisions > 5-level scale > 10-level scale
 
 ### 6. Use Ensembles
-- 複数のJudgeで多数決/平均
-- 単一Judgeより頑健
+- Majority vote / average across multiple judges
+- More robust than a single judge
 
 ### 7. Validate Against Human Baselines
-- 展開前に人間の評価と照合
-- バイアス補正プロシージャを適用
+- Compare against human evaluation before deployment
+- Apply bias correction procedures
 
 ## Evaluation Framework Types
 
 ### A. Multiple-Choice Benchmarks
 | Pros | Cons |
 |------|------|
-| 高速、能力比較に有用 | 自由回答には不向き |
-| トレンド把握に有用 | 推論チェーンを測定しない |
-| 実行が容易 | 実世界タスク成功を測定しない |
+| Fast, useful for capability comparison | Unsuitable for free-form responses |
+| Useful for trend tracking | Does not measure reasoning chains |
+| Easy to run | Does not measure real-world task success |
 
 ### B. Verifiers (Programmatic Grading)
-- 客観的検証可能な回答（数学、コード、構造化出力）に適する
-- 中間ステップも評価可能
-- **欠点:** verifier構築に多大な工数
+- Suitable for objectively verifiable responses (math, code, structured output)
+- Can evaluate intermediate steps
+- **Drawback:** High engineering cost to build verifiers
 
 ### C. Human Preference Leaderboards
 | Pros | Cons |
 |------|------|
-| スタイル偏好を捕捉 | が高コスト |
-| 有用性を測定 | 正しさを直接測定しない |
-| 安全性を暗黙的に測定 | 迭代サイクルが遅い |
+| Captures style preferences | High cost |
+| Measures usefulness | Does not directly measure correctness |
+| Implicitly measures safety | Slow iteration cycles |
 
-### D. LLM-as-Judge（今回分析対象）
+### D. LLM-as-Judge (This Analysis)
 | Pros | Cons |
 |------|------|
-| スケールしやすい | Judgeの質に依存 |
-| 柔軟なルーブリック設計 | ルーブリック設計が重要 |
+| Easy to scale | Depends on judge quality |
+| Flexible rubric design | Rubric design is critical |
 
 ## Bias Mitigation Summary
 
-| テクニック | 推奨度 | 効果 |
+| Technique | Recommendation | Effect |
 |-----------|--------|------|
-| Descending rubric order | ★★★ | 精度向上 |
-| Roman numerals (for GPT-4o) | ★★★ | 精度向上 |
-| Letter grades (for DeepSeek) | ★★★ | 精度向上 |
-| Full-mark reference answers | ★★★ | 安定性向上 |
-| Random rubric order | ★ | 非推奨 |
-| Low-scored references | ★ | 非推奨 |
-| Stronger judge model | ★★★ | 基本的には常に使用 |
+| Descending rubric order | ★★★ | Improved accuracy |
+| Roman numerals (for GPT-4o) | ★★★ | Improved accuracy |
+| Letter grades (for DeepSeek) | ★★★ | Improved accuracy |
+| Full-mark reference answers | ★★★ | Improved stability |
+| Random rubric order | ★ | Not recommended |
+| Low-scored references | ★ | Not recommended |
+| Stronger judge model | ★★★ | Generally always use |
 
 ## Integration with DSPy
 
-DSPyの文脈では、LLM-as-Judgeはteleprompterのmetricsとして使用される：
+In the context of DSPy, LLM-as-Judge is used as teleprompter metrics:
 
 ```python
 import dspy
 
-# LLM-as-judge metricの定義
+# Define LLM-as-judge metric
 class JudgeQuality(dspy.Signature):
     """Evaluate response quality on criteria."""
     response = dspy.InputField()
@@ -152,7 +152,7 @@ class JudgeQuality(dspy.Signature):
 
 judge = dspy.Predict(JudgeQuality)
 
-# メトリクスとして使用
+# Use as metric
 def quality_metric(example, pred, trace=None):
     result = judge(response=pred.response)
     return int(result.score) >= 4
@@ -160,8 +160,8 @@ def quality_metric(example, pred, trace=None):
 
 ## See Also
 
-- [[concepts/ai-evals]] — 評価全般の概念ページ
-- [[concepts/evaluation-flywheel]] — 評価の反復的改善サイクル
-- [[concepts/offline-evaluation]] — プロダクション前評価パイプライン
-- [[concepts/dspy]] — DSPyでの評価統合
-- [[comparisons/eval-tools-comparison]] — 評価ツール比較
+- [[concepts/ai-evals]] — General evaluation concept page
+- [[concepts/evaluation-flywheel]] — Iterative evaluation improvement cycle
+- [[concepts/offline-evaluation]] — Pre-production evaluation pipeline
+- [[concepts/dspy]] — Evaluation integration with DSPy
+- [[comparisons/eval-tools-comparison]] — Evaluation tool comparison
