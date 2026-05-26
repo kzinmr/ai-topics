@@ -1,6 +1,25 @@
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
+## [2026-05-26] translate | JP→EN batch — 8 files
+
+### Files Translated
+- concepts/stanford-cs336-language-modeling-from-scratch.md
+- concepts/agent-skills-overview.md
+- entities/claude-code--capabilities.md
+- concepts/agent-media.md
+- concepts/death-of-browser/_index.md
+- concepts/dark-factory-software-factory.md
+- concepts/codex-prompting.md
+- concepts/ai-organization/ai-org-from-hierarchy-to-intelligence.md
+
+### Summary
+- 12,235 JP chars removed across 8 files
+- Remaining backlog: 308 files, 184,295 JP chars
+- All 8 files verified 0 JP chars remaining
+
+---
+
 ## [2026-05-26] translate | JP→EN batch — 8 concept files
 
 ### Files Translated

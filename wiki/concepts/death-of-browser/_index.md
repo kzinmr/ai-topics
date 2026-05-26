@@ -1,5 +1,5 @@
 ---
-title: "Death of Browser — ブラウザの脱人間化"
+title: "Death of Browser — Dehumanization of the Browser"
 type: concept
 aliases:
   - post-browser-era
@@ -7,7 +7,7 @@ aliases:
   - ai-native-browser
   - browser-agent-trends
 created: 2026-04-13
-updated: 2026-04-13
+updated: 2026-05-26
 tags:
   - concept
   - methodology
@@ -16,183 +16,183 @@ status: active
 sources: []
 ---
 
-# Death of Browser — ブラウザの脱人間化
+# Death of Browser — Dehumanization of the Browser
 
-**「ブラウザは人間のUIだった。これからはエージェントのUIになる。」**
+**"The browser was the UI for humans. From now on, it's the UI for agents."**
 
-30年間、ブラウザは人間がウェブを操作するための唯一のインターフェースだった。しかし2024年後半から2026年にかけて、**ブラウザが「人間向けのウィンドウ」から「AIエージェントの実行環境」へ**とパラダイムシフトしている。この概念ページは、関連プレイヤー、技術アプローチ、トレンドを体系的にまとめたフロントページ。
+For 30 years, the browser was the only interface for humans to operate the web. But from late 2024 through 2026, **the browser is undergoing a paradigm shift from "a window for humans" to "an execution environment for AI agents."** This concept page serves as a front page systematically summarizing related players, technical approaches, and trends.
 
-## パラダイムシフトの3段階
+## Paradigm Shift: 3 Stages
 
 ```
 Stage 1 (2024)     Stage 2 (2025)         Stage 3 (2026)
 ─────────────      ──────────────         ──────────────
-人間が操作   →    AIが補助   →     AIが代行
-（クリック）      （チャット+提案）    （自律実行）
+Human operates →   AI assists    →   AI acts on behalf
+(clicking)         (chat + suggestions)  (autonomous execution)
 ```
 
-| フェーズ | 説明 | 代表例 |
-|---|---|---|
-| **Human-operated** | 人間がマウス/キーボードで操作 | 従来ブラウザ |
-| **AI-assisted** | AIが提案、人間が確認 | Copilot, Arc Max |
-| **AI-delegated** | AIが自律的にタスク実行 | Operator, Comet, Manus |
+| Phase | Description | Representative |
+||---|---|---|
+| **Human-operated** | Humans operate with mouse/keyboard | Traditional browser |
+| **AI-assisted** | AI suggests, human confirms | Copilot, Arc Max |
+| **AI-delegated** | AI executes tasks autonomously | Operator, Comet, Manus |
 
-## 主要プレイヤーマップ
+## Key Player Map
 
-### 🏢 ビッグテック
+### 🏢 Big Tech
 
-| プレイヤー | 製品 | アプローチ | ステータス |
-|---|---|---|---|
-| **Anthropic** | Computer Use | スクリーンショット + ビジョン | Claude Sonnet 4.6で大幅改善 |
-| **OpenAI** | CUA / Operator | スクリーンショット + RL | ChatGPTエージェント統合 |
-| **Google** | WebMCP (Chrome) | 構造化API標準 | Chrome 146で早期プレビュー |
-| **Microsoft** | WebMCP (Edge) | 構造化API標準 | W3C共同開発 |
-| **Perplexity** | Comet | 検索統合AIブラウザ | 4プラットフォーム対応 |
-| **Meta** | Manus（買収） | ローカルブラウザ拡張 | 2026年に買収完了 |
+| Player | Product | Approach | Status |
+||---|---|---|---|
+| **Anthropic** | Computer Use | Screenshot + Vision | Significantly improved with Claude Sonnet 4.6 |
+| **OpenAI** | CUA / Operator | Screenshot + RL | Integrated into ChatGPT agent |
+| **Google** | WebMCP (Chrome) | Structured API standard | Early preview in Chrome 146 |
+| **Microsoft** | WebMCP (Edge) | Structured API standard | W3C joint development |
+| **Perplexity** | Comet | Search-integrated AI browser | 4 platforms supported |
+| **Meta** | Manus (acquired) | Local browser extension | Acquisition completed in 2026 |
 
-### 🔧 オープンソース・インフラ
+### 🔧 Open Source & Infrastructure
 
-| プレイヤー | 製品 | 説明 | GitHub Stars |
-|---|---|---|---|
-| **browser-use** | browser-use | Python/TS製LLMブラウザ自動化 | 87,300+ |
-| **Browserbase** | Stagehand | ホストブラウザインフラ | $300M評価 |
-| **Browserless** | BaaS | セキュアブラウザインフラ | 業界レポート公開 |
+| Player | Product | Description | GitHub Stars |
+||---|---|---|---|
+| **browser-use** | browser-use | Python/TS LLM browser automation | 87,300+ |
+| **Browserbase** | Stagehand | Hosted browser infrastructure | $300M valuation |
+| **Browserless** | BaaS | Secure browser infrastructure | Industry report published |
 
-### 🏢 エンタープライズ
+### 🏢 Enterprise
 
-| プレイヤー | 製品 | 焦点 |
-|---|---|---|
-| **Kahana** | Oasis | 企業向けAIブラウザ（Zero Trust + DLP） |
-| **VeloFill** | - | エンタープライズ自動化 |
-| **LayerX Security** | - | ブラウザエージェントセキュリティ |
+| Player | Product | Focus |
+||---|---|---|
+| **Kahana** | Oasis | Enterprise AI browser (Zero Trust + DLP) |
+| **VeloFill** | — | Enterprise automation |
+| **LayerX Security** | — | Browser agent security |
 
-## 技術アプローチの分類
+## Technical Approach Classification
 
-### 1. スクリーンショットベース（Vision-First）
-**代表: Anthropic Computer Use, OpenAI CUA**
+### 1. Screenshot-Based (Vision-First)
+**Representative: Anthropic Computer Use, OpenAI CUA**
 
 ```
-タスク → スクリーンショット → ビジョンモデル解析 → 
-座標クリック/入力 → 次のスクリーンショット
+Task → Screenshot → Vision model analysis → 
+Coordinate click/input → Next screenshot
 ```
 
-| 長所 | 短所 |
+| Pros | Cons |
 |---|---|
-| 全てのUIに対応可能 | 遅い（画像送信） |
-| 動的UIに強い | トークン消費大 |
-| 新規サイトでも動作 | 座標精度に課題 |
+| Works with any UI | Slow (image transmission) |
+| Strong on dynamic UI | High token consumption |
+| Works on new sites | Coordinate accuracy issues |
 
-### 2. DOMベース（Structure-First）
-**代表: browser-use, Playwright, Puppeteer**
+### 2. DOM-Based (Structure-First)
+**Representative: browser-use, Playwright, Puppeteer**
 
 ```
-タスク → DOM解析 → 要素特定 → アクション実行
+Task → DOM analysis → Element identification → Execute action
 ```
 
-| 長所 | 短所 |
+| Pros | Cons |
 |---|---|
-| 高速、正確 | 動的UIに弱い |
-| トークン消費小 | シャドーDOM/iframeで困難 |
-| デバッグ容易 | セレクター維持コスト |
+| Fast, precise | Weak on dynamic UI |
+| Low token consumption | Difficult with Shadow DOM/iframes |
+| Easy to debug | Selector maintenance cost |
 
-### 3. 構造化プロトコル（Declarative）
-**代表: WebMCP, Stagehand**
+### 3. Structured Protocol (Declarative)
+**Representative: WebMCP, Stagehand**
 
 ```
-タスク → ツール発見 → 構造化呼び出し → 結果受信
+Task → Tool discovery → Structured call → Receive result
 ```
 
-| 長所 | 短所 |
+| Pros | Cons |
 |---|---|
-| 最も信頼性が高い | ウェブサイト側の実装が必要 |
-| 89%トークン削減 | 標準化途上 |
-| セキュリティ組み込み | 採用には時間がかかる |
+| Highest reliability | Requires website-side implementation |
+| 89% token reduction | Standardization still in progress |
+| Built-in security | Adoption takes time |
 
-### 4. ハイブリッド（The 2026 Standard）
-**代表: ChatGPT Agent, Browserbase Stagehand v3**
+### 4. Hybrid (The 2026 Standard)
+**Representative: ChatGPT Agent, Browserbase Stagehand v3**
 
 ```
-タスク → DOM優先 → ビジョンフォールバック → 構造化API（利用可能なら）
+Task → DOM first → Vision fallback → Structured API (if available)
 ```
 
 > "The future of browser agents lies not in vision or structure alone, but in orchestrating both intelligently."
 > — InfoWorld, November 2025
 
-## 重要トレンド（2026年）
+## Key Trends (2026)
 
-### 1. ブラウザエージェントの標準化
-- **WebMCP**: W3Cコミュニティグループ標準、Chrome 146でプレビュー
-- **MCP-B**: 非標準ブラウザ向けポリフィル実装
-- AnthropicのMCP（サーバー間）とWebMCP（ブラウザ内）は補完関係
+### 1. Browser Agent Standardization
+- **WebMCP**: W3C Community Group standard, preview in Chrome 146
+- **MCP-B**: Polyfill implementation for non-standard browsers
+- Anthropic's MCP (server-to-server) and WebMCP (in-browser) are complementary
 
-### 2. セキュリティ課題の顕在化
-- **CometJacking**: AIエージェントへのプロンプトインジェクション
-- ブラウザエージェント固有の攻撃ベクターが増加
-- Zero Trustアーキテクチャの必要性（Kahana Oasisのアプローチ）
+### 2. Security Challenges Emerge
+- **CometJacking**: Prompt injection into AI agents
+- Growing attack vectors specific to browser agents
+- Need for Zero Trust architecture (Kahana Oasis approach)
 
-### 3. エンタープライズ導入の加速
-- 2026年末までに業務Webトラフィックの25-35%がエージェント生成と予測
-- RPAからの移行（RPA 2.0）
-- 監査証跡、コンプライアンス要件
+### 3. Enterprise Adoption Accelerates
+- 25-35% of business web traffic predicted to be agent-generated by end of 2026
+- Migration from RPA (RPA 2.0)
+- Audit trails, compliance requirements
 
-### 4. ローカルブラウザ統合
-- Manus Browser Operator: ユーザーの認証セッションを活用
-- 有料ツール（CRM, SEO, 金融データ）へのアクセスが可能に
-- クラウドサンドボックスの限界を克服
+### 4. Local Browser Integration
+- Manus Browser Operator: Leverages the user's authenticated session
+- Enables access to paid tools (CRM, SEO, financial data)
+- Overcomes cloud sandbox limitations
 
-### 5. オープンソースエコシステムの成熟
-- browser-use: 87k+ stars、310コントリビューター
-- TypeScript/Python/Java/Go/Rubyマルチ言語対応
-- Claude Codeスキル統合
+### 5. Open Source Ecosystem Matures
+- browser-use: 87k+ stars, 310 contributors
+- Multi-language support: TypeScript/Python/Java/Go/Ruby
+- Claude Code skill integration
 
-## 技術比較マトリックス
+## Technical Comparison Matrix
 
-| 技術 | アプローチ | OSWorld | WebArena | セキュリティ | 標準化 |
+| Technology | Approach | OSWorld | WebArena | Security | Standardization |
 |---|---|---|---|---|---|
-| Anthropic CU | スクリーンショット | 22.0%+ | 58.1% | ASL-2 | 独自 |
-| OpenAI CUA | スクリーンショット + RL | 38.1% | 58.1% | 3層セーフガード | 独自 |
-| browser-use | DOM + LLM | N/A | N/A | クラウド/ローカル | OSS |
-| WebMCP | 構造化API | N/A | N/A | ブラウザネイティブ | W3C |
-| Stagehand | 自然言語コマンド | N/A | N/A | Inspector | OSS |
-| Manus | ハイブリッド | N/A | N/A | ローカル認証 | 独自 |
-| Comet | 検索統合 | N/A | N/A | CometJacking修正 | 独自 |
+| Anthropic CU | Screenshot | 22.0%+ | 58.1% | ASL-2 | Proprietary |
+| OpenAI CUA | Screenshot + RL | 38.1% | 58.1% | 3-layer safeguards | Proprietary |
+| browser-use | DOM + LLM | N/A | N/A | Cloud/local | OSS |
+| WebMCP | Structured API | N/A | N/A | Browser-native | W3C |
+| Stagehand | Natural language commands | N/A | N/A | Inspector | OSS |
+| Manus | Hybrid | N/A | N/A | Local auth | Proprietary |
+| Comet | Search-integrated | N/A | N/A | CometJacking fix | Proprietary |
 
-## 市場予測
+## Market Projections
 
-| 指標 | 2025 | 2026予測 |
+| Metric | 2025 | 2026 Forecast |
 |---|---|---|
-| AIブラウザ市場成長率 | - | 65% YoY |
-| エージェント生成トラフィック | <5% | 25-35% |
+| AI browser market growth rate | — | 65% YoY |
+| Agent-generated traffic | <5% | 25-35% |
 | browser-use GitHub Stars | 40k | 87k+ |
-| WebMCP対応ブラウザ | 1（Chrome Canary） | 2+（Edge追加予定） |
+| WebMCP-compatible browsers | 1 (Chrome Canary) | 2+ (Edge coming) |
 
-## 定点ウォッチ対象
+## Watch Points
 
-### 四半期チェック項目
-1. **ベンチマーク進化**: OSWorld, WebArena, WebVoyagerスコア
-2. **標準化進捗**: WebMCP仕様、W3Cトラック移行、Firefox/Safariシグナル
-3. **セキュリティ**: 新規攻撃ベクター、修正パッチ
-4. **エコシステム**: オープンソースプロジェクトの成長、M&A動向
-5. **エンタープライズ**: 導入事例、コンプライアンスフレームワーク
+### Quarterly Check Items
+1. **Benchmark evolution**: OSWorld, WebArena, WebVoyager scores
+2. **Standardization progress**: WebMCP spec, W3C track migration, Firefox/Safari signals
+3. **Security**: New attack vectors, patches
+4. **Ecosystem**: Open-source project growth, M&A activity
+5. **Enterprise**: Adoption cases, compliance frameworks
 
-### 要監視プレイヤー
-- **Anthropic**: Computer Use APIの改善、Claude Code統合
-- **OpenAI**: CUAモデルのAPI公開範囲、ChatGPT Agent進化
-- **Google**: Chrome WebMCP実装、Firefox/Safariの対応状況
-- **Microsoft**: Edge WebMCP実装、MCP-Bエコシステム
-- **browser-use**: 新機能リリース、クラウド版の成長
-- **Perplexity**: Cometの新機能、セキュリティ対応
-- **Meta (Manus)**: 買収後の統合、Browser Operatorの進化
-- **Kahana Oasis**: エンタープライズブラウザ市場の開拓
+### Players to Monitor
+- **Anthropic**: Computer Use API improvements, Claude Code integration
+- **OpenAI**: CUA model API release scope, ChatGPT Agent evolution
+- **Google**: Chrome WebMCP implementation, Firefox/Safari support status
+- **Microsoft**: Edge WebMCP implementation, MCP-B ecosystem
+- **browser-use**: New feature releases, cloud version growth
+- **Perplexity**: Comet new features, security response
+- **Meta (Manus)**: Post-acquisition integration, Browser Operator evolution
+- **Kahana Oasis**: Enterprise browser market development
 
-## 関連コンセプト
+## Related Concepts
 
-- [[concepts/harness-engineering]] — エージェント環境設計
--  — エージェントを活用したソフトウェア開発
--  — マネージドエージェントアーキテクチャ
+- [[concepts/harness-engineering]] — Agent environment design
+- [[concepts/agent-driven-development]] — Software development using agents
+- [[concepts/managed-agent-architecture]] — Managed agent architecture
 - [[concepts/model-context-protocol-mcp]] — Model Context Protocol
 
-## 関連エンティティ
+## Related Entities
 
 - [[entities/anthropic-computer-use]]
 - [[entities/openai-cua]]
@@ -200,7 +200,7 @@ Stage 1 (2024)     Stage 2 (2025)         Stage 3 (2026)
 - [[entities/browserbase]]
 - [[entities/webmcp]]
 - [[entities/manus]]
-- [[perplexity-comet]]
+- [[entities/perplexity-comet]]
 
 ## Sources
 

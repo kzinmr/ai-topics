@@ -1,11 +1,11 @@
 ---
-title: "Hierarchy to Intelligence — Blockの組織モデル変革"
+title: "Hierarchy to Intelligence — Block's Organizational Model Transformation"
 type: concept
 aliases:
   - block-hierarchy-to-intelligence
   - jack-dorsey-org-model
 created: 2026-04-13
-updated: 2026-04-15
+updated: 2026-05-26
 tags:
   - concept
   - company
@@ -17,111 +17,111 @@ depth_tracking:
 sources: []
 ---
 
-# Hierarchy to Intelligence — Blockの組織モデル変革
+# Hierarchy to Intelligence — Block's Organizational Model Transformation
 
-## 概要
+## Overview
 
-Jack Dorseyが2024年にBlock（旧Square）で実践した**Hierarchy to Intelligence**モデル。従来のヒエラルキー型意思決定を廃し、**「文脈駆動の自律実行 + 透明性ベースの監視」**への移行を宣言。AIを単なる生産性向上ツールではなく、**「協調メカニズムそのものの再設計」**として捉える。
+Jack Dorsey's **Hierarchy to Intelligence** model, implemented at Block (formerly Square) in 2024. Abandoning traditional hierarchical decision-making in favor of **"context-driven autonomous execution + transparency-based monitoring."** AI is framed not merely as a productivity enhancement tool, but as **"a redesign of the coordination mechanism itself."**
 
 > *"Most companies are focused on AI as a productivity enhancer. Few are focused on the potential of AI to change how we work together."*
 
-## AIの真のポテンシャル
+## AI's True Potential
 
-Blockの主張: AIは既存ワークフローを効率化する「コパイロット」ではなく、**中間管理の情報をルーティングする機能を代替する協調メカニズム**として機能する。
+Block's claim: AI is not a "copilot" that makes existing workflows more efficient, but a **coordination mechanism that replaces middle management's information routing function.**
 
-## 階層の歴史 — なぜヒエラルキーが生まれたか
+## The History of Hierarchy — Why Hierarchies Emerged
 
-組織の階層構造は技術的制約の産物だった:
+Organizational hierarchy was a product of technological constraints:
 
-| 時代 | イノベーション | 中核機能 |
+| Era | Innovation | Core Function |
 |------|--------------|---------|
-| **ローマ軍** | 階層型編成 (`contubernium` → `century` → `cohort` → `legion`) | 限られた通信手段での遠距離協調 |
-| **プロイセン (1806)** | 参謀本部 | 事前計算された決定、情報ルーティング、line vs staffの形式化 |
-| **米国鉄道 (1850s)** | 最初の組織図 (Daniel McCallum) | 軍事階層の商業化。大規模衝突防止 |
-| **テイラー主義** | 科学的管理法 | タスクの専門化・測定 → 機能別ピラミッド |
-| **戦後** | マトリクス組織 & 7Sフレームワーク | 中央基準と地方の俊敏性のバランス |
-| **テック時代** | スクワッド、ホラクラシー、フラット構造 | 大規模化で失敗。情報ルーティングの限界により階層に回帰 |
+| **Roman Army** | Hierarchical organization (`contubernium` → `century` → `cohort` → `legion`) | Long-distance coordination with limited communication means |
+| **Prussia (1806)** | General Staff | Pre-computed decisions, information routing, formalization of line vs staff |
+| **US Railroads (1850s)** | First organizational chart (Daniel McCallum) | Commercialization of military hierarchy. Preventing large-scale collisions |
+| **Taylorism** | Scientific management | Task specialization and measurement → functional pyramid |
+| **Post-war** | Matrix organization & 7S framework | Balancing central standards with local agility |
+| **Tech era** | Squads, holacracy, flat structures | Failed at scale. Reverted to hierarchy due to information routing limits |
 
 > *"The structure (8 → 80 → 480 → 5,000) was an information routing protocol built around a simple human limitation: a leader can effectively manage somewhere between three and eight people."*
 
 > *"The question was never whether you needed layers. The question was whether humans were the only option for what those layers do. They aren't anymore."*
 
-## Company World Model: AIによる情報ルーティングの代替
+## Company World Model: AI Replaces Information Routing
 
-Blockが構築した2つのワールドモデル:
+Two world models built by Block:
 
-### 1. Company World Model (内部)
-- リモートファースト、マシンリーダブルなアーティファクト（コード、決定、計画、進捗）で構築
-- 何が構築され、何がブロックされ、何がリソースされているかを継続的に追跡
-- **管理職のコンテキスト収集機能を代替**
+### 1. Company World Model (Internal)
+- Remote-first, built on machine-readable artifacts (code, decisions, plans, progress)
+- Continuously tracks what's being built, what's blocked, what's being resourced
+- **Replaces the context-gathering function of management**
 
-### 2. Customer World Model (外部)
-- 独自のプロプライエタリな双方向トランザクションデータ（Cash App購入者 + Square加盟店）
-- 顧客/加盟店ごとの金融リアリティを作成。運用ごとに複利
+### 2. Customer World Model (External)
+- Proprietary bi-directional transaction data (Cash App buyers + Square merchants)
+- Creates financial reality per customer/merchant. Compounds with every operation
 - > *"People lie on surveys. They ignore ads. They abandon carts. But when they spend, save, send, borrow, or repay, that's the truth."*
 
-## 4つのビルディングブロック
+## 4 Building Blocks
 
-従来のプロダクトチームが事前に決められたロードマップを構築するのではなく:
+Instead of traditional product teams building pre-determined roadmaps:
 
-| ブロック | 説明 | 例 |
+| Block | Description | Example |
 |---------|------|-----|
-| **1. Capabilities** | アトミックな金融プリミティブ（支払い、融資、銀行、給与、BNPL）。UIなし。規制・ネットワーク効果のモートで習得困難 | 決済処理エンジン、与信判断ロジック |
-| **2. World Model** | 双方向の運用・顧客インテリジェンス。生トランザクションデータ → 因果・予測モデルへ進化 | 季節的なキャッシュフロー予測 |
-| **3. Intelligence Layer** | Capabilitiesを文脈的なソリューションに**自律的に構成**。 failure signalが未来のロードマップ | 季節的落ち込みを検知 → 短期融資 + 返済_scheduleを自動提案 |
-| **4. Interfaces** | 配信面（Square、Cash App、Afterpay、TIDAL、bitkey）。配布には重要だが、**価値創造はモデル&インテリジェンス層**に存在 | ユーザー向けアプリ、加盟店ダッシュボード |
+| **1. Capabilities** | Atomic financial primitives (payments, lending, banking, payroll, BNPL). No UI. Hard to replicate due to regulatory moats and network effects | Payment processing engine, credit decision logic |
+| **2. World Model** | Bi-directional operational and customer intelligence. Raw transaction data → evolves into causal and predictive models | Seasonal cash flow forecasting |
+| **3. Intelligence Layer** | **Autonomously composes** Capabilities into contextual solutions. Failure signals become the future roadmap | Detect seasonal downturn → auto-suggest short-term loan + repayment schedule |
+| **4. Interfaces** | Delivery surfaces (Square, Cash App, Afterpay, TIDAL, bitkey). Important for distribution, but **value creation lies in the Model & Intelligence layers** | User-facing apps, merchant dashboards |
 
-> **ロードマップの根本的転換**: *"When the intelligence layer tries to compose a solution and can't because the capability doesn't exist, that failure signal is the future roadmap."* — 仮説駆動のPM計画から**現実駆動のバックログ生成**へ。
+> **Fundamental shift in roadmapping**: *"When the intelligence layer tries to compose a solution and can't because the capability doesn't exist, that failure signal is the future roadmap."* — From hypothesis-driven PM planning to **reality-driven backlog generation.**
 
-## AIネイティブ企業の3つのロール
+## 3 Roles in an AI-Native Company
 
-階層を反転: インテリジェンスはシステムに存在。人間は**直観、倫理、新規問題解決が必要なエッジ**で動作。
+Flipping the hierarchy: Intelligence resides in the system. Humans operate at **the edge where intuition, ethics, and novel problem-solving are needed.**
 
 ### 1. Individual Contributors (ICs)
-- システム層を構築・運用する専門技術者
-- ワールドモデルが文脈を提供。**承認チェーンは不要**
-- 深い専門性を活かしてCapabilityの実装・改善に集中
+- Technical specialists who build and operate the system layer
+- World model provides context. **No approval chains needed**
+- Focus on implementing and improving Capabilities using deep expertise
 
 ### 2. Directly Responsible Individuals (DRIs)
-- 横断的な問題/成果を一時的に所有（例: 90日間の加盟店離脱防止イニシアチブ）
-- capability、model、interfaceチームから**リソースをプルする権限**を持つ
-- プロジェクト完了後は解散。次のDRIが別の課題を所有
+- Temporarily own cross-cutting problems/outcomes (e.g., 90-day merchant churn prevention initiative)
+- Have **authority to pull resources** from capability, model, and interface teams
+- Dissolve after project completion. Next DRI owns another challenge
 
 ### 3. Player-Coaches
-- ハンズオンビルディングと人材育成を組み合わせ
-- 技術的クラフトと成長を担当
-- **アライメントと戦略はシステム&DRIsが自動化**
+- Combine hands-on building with talent development
+- Responsible for technical craft and growth
+- **Alignment and strategy are automated by the system & DRIs**
 
-## 従来の階層モデルとの比較
+## Comparison with Traditional Hierarchy Model
 
-| 次元 | 従来の階層 | Hierarchy to Intelligence |
+| Dimension | Traditional Hierarchy | Hierarchy to Intelligence |
 |------|-----------|---------------------------|
-| **意思決定** | 上意下達 | 文脈駆動・自律実行 |
-| **情報フロー** | サイロ化・制限 | 透明・オープン |
-| **管理の役割** | 指示・監視 | 文脈設計・ガードレール設定 |
-| **AIの位置付け** | ツール・補助 | 自律実行エージェント |
-| **スケーラビリティ** | 人头比に依存 | コンテキスト品質に依存 |
-| **ロードマップ生成** | 仮説駆動PM | 現実駆動（failure signal） |
+| **Decision-making** | Top-down | Context-driven, autonomous execution |
+| **Information flow** | Siloed, restricted | Transparent, open |
+| **Management role** | Direct, monitor | Context design, guardrail setting |
+| **AI positioning** | Tool, assistant | Autonomous execution agent |
+| **Scalability** | Depends on headcount ratio | Depends on context quality |
+| **Roadmap generation** | Hypothesis-driven PM | Reality-driven (failure signal) |
 
-## AIと企業アイデンティティ
+## AI and Corporate Identity
 
 > *"If the answer is nothing, AI is just a cost optimization story... If the answer is deep, AI doesn't augment your company. It reveals what your company actually is."*
 
-ブロックのモート: **エコノミックグラフ** — 数百万の加盟店/消費者にわたるリアルタイムの双方向トランザクションデータ。この理解はシステムが運用されるたびに複利で蓄積。
+Block's moat: **The Economic Graph** — real-time bi-directional transaction data spanning millions of merchants and consumers. This understanding compounds with every operation of the system.
 
-## 実行上の現実
+## Operational Reality
 
-移行は容易ではない。**「壊れてから動く」**状態を経験する。成功にはドメインに対する深い独自理解が必要。それがなければ、AIは短期的なコスト最適化ストーリーに終わる。
+The transition is not easy. Expect a **"break then move"** phase. Success requires deep proprietary understanding of the domain. Without it, AI ends up as a short-term cost optimization story.
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/ai-organization/ai-org-context-as-moat]] — Proprietary ContextとFission-Fusion
-- [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo FounderとSuper IC
--  — 開発者のAI活用ワークフロー
-- [[concepts/harness-engineering]] — エージェントの制御・構造化
-- [[concepts/context-engineering]] — コンテキストエンジニアリング
+- [[concepts/ai-organization/ai-org-context-as-moat]] — Proprietary Context and Fission-Fusion
+- [[concepts/ai-organization/ai-org-solo-founder-and-super-ic]] — Solo Founder and Super IC
+- [[concepts/ai-agent-development-workflow]] — Developer AI workflows
+- [[concepts/harness-engineering]] — Agent control and structuring
+- [[concepts/context-engineering]] — Context engineering
 
-## ソース
+## Sources
 
 - [Block: From Hierarchy to Intelligence](https://block.xyz/inside/from-hierarchy-to-intelligence) — 2024
 - [Jack Dorsey interviews on org design](https://block.xyz) — 2024-2025

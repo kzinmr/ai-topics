@@ -1,165 +1,165 @@
 ---
-title: "Agent Media — WikiからマルチチャネルAutoresearch Deskへの進化"
+title: "Agent Media — From Wiki to Multi-Channel Autoresearch Desk"
 type: concept
 aliases:
   - agent-media
   - autoresearch-desk
-  - エージェントメディア
+  - agent-media-concept
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-26
 tags:
   - concept
   - agent-media
   - skill-graph
   - context-engineering
 status: active
-description: "構造化知識ベース（wiki）を、audience-awareなマルチチャネル配信システムへ進化させる設計思想。KhairallahのContext Engineering + RoninのSkill Graphの統合。"
+description: "Design philosophy for evolving a structured knowledge base (wiki) into an audience-aware, multi-channel distribution system. Integration of Khairallah's Context Engineering + Ronin's Skill Graph."
 sources:
   - "Khairallah AL-Awady — How to Master Context Engineering (May 2026)"
   - "Ronin (@DeRonin_) — Skill Graph Content Engine (April 2026)"
-  - "Hermes wiki自身の構造と配信パイプライン"
+  - "Hermes wiki's own structure and delivery pipeline"
 ---
 
 # Agent Media — Autoresearch Desk
 
-**Agent Media**とは、構造化された知識ベース（wiki）をAIエージェントが「編集者」として運用し、複数チャネル・複数オーディエンスに**プラットフォームネイティブな形で知識を再配信する**システムの設計思想である。
+**Agent Media** is a system design philosophy in which a structured knowledge base (wiki) is operated by AI agents as "editors," redistributing knowledge in **platform-native forms** across multiple channels and audiences.
 
-従来のwikiは「人間が来て探す」プル型。Autoresearch Deskは「エージェントがオーディエンスに合わせて配信する」プッシュ型。
+A traditional wiki is a pull model — "humans come and search." An Autoresearch Desk is a push model — "agents deliver tailored content to audiences."
 
-## 設計の源泉
+## Design Origins
 
-Autoresearch Deskは2つの独立したフレームワークの交差点に成立する：
+The Autoresearch Desk emerges at the intersection of two independent frameworks:
 
-| フレームワーク | 提供するもの | 出典 |
+| Framework | What It Provides | Source |
 |--------------|------------|------|
-| **Context Engineering**（実践者視点） | 4ファイルアーキテクチャ、動的ローディング、メモリ進化ラダー、オーディエンス定義の必要性 | Khairallah AL-Awady |
-| **Skill Graph**（実装視点） | フォルダ構造、wikilink遷移、repurpose chain、platform-native再思考、Litmus Test | Ronin (@DeRonin_) |
+| **Context Engineering** (practitioner perspective) | 4-file architecture, dynamic loading, memory evolution ladder, need for audience definition | Khairallah AL-Awady |
+| **Skill Graph** (implementation perspective) | Folder structure, wikilink navigation, repurpose chain, platform-native rethinking, Litmus Test | Ronin (@DeRonin_) |
 
-## 現在のWiki vs Autoresearch Desk
+## Current Wiki vs Autoresearch Desk
 
-| 次元 | 現在のWiki | Autoresearch Desk |
+| Dimension | Current Wiki | Autoresearch Desk |
 |------|-----------|-------------------|
-| **配信モデル** | プル型（人間が来て探す） | プッシュ型（エージェントが届ける） |
-| **チャネル** | 単一（Discord） | マルチチャネル（Discord / Slack / Telegram / X） |
-| **オーディエンス認識** | なし（全員に同じ情報） | セグメント別（技術深度/ビジネス/クイック） |
-| **コンテンツ変換** | 生の更新通知 | プラットフォームネイティブ再構成 |
-| **フィードバックループ** | なし | エンゲージメント追跡→配信最適化 |
-| **index.md** | 存在するが配信用ではない | 配信エージェント用ブリーフィング |
+| **Delivery model** | Pull (humans come and search) | Push (agents deliver) |
+| **Channels** | Single (Discord) | Multi-channel (Discord / Slack / Telegram / X) |
+| **Audience awareness** | None (same info for everyone) | Segmented (tech depth / business / quick) |
+| **Content transformation** | Raw update notifications | Platform-native restructuring |
+| **Feedback loop** | None | Engagement tracking → delivery optimization |
+| **index.md** | Exists but not for delivery | Briefing for delivery agents |
 
-## アーキテクチャ設計
+## Architecture Design
 
-### 提案フォルダ構造
+### Proposed Folder Structure
 
-既存のwiki構造に `agent-media/` レイヤーを追加する：
+Adding an `agent-media/` layer to the existing wiki structure:
 
 ```
 wiki/
-├── concepts/          # 既存: 知識ノード
-├── entities/          # 既存: 人物・組織ノード
-├── raw/               # 既存: ソース記事
-├── SCHEMA.md          # 既存: 品質基準（= Standards File）
-├── index.md           # 既存: 全体インデックス（キュレーション用）
+├── concepts/          # Existing: Knowledge nodes
+├── entities/          # Existing: People/organization nodes
+├── raw/               # Existing: Source articles
+├── SCHEMA.md          # Existing: Quality standards (= Standards File)
+├── index.md           # Existing: Full index (for curation)
 │
-└── agent-media/       # NEW: 配信エンジンレイヤー
-    ├── index.md                # コマンドセンター（配信エージェント用ブリーフィング）
+└── agent-media/       # NEW: Delivery engine layer
+    ├── index.md                # Command center (briefing for delivery agent)
     ├── voice/
-    │   ├── brand-voice.md      # wikiの声：分析的・技術的正確・日本語/英語バイリンガル
-    │   └── channel-tone.md     # チャネル別トーン適応
-    ├── channels/               # チャネル別プレイブック
-    │   ├── discord.md          # リアルタイム、技術深度、対話的
-    │   ├── slack.md            # チーム向け、構造化、アクション指向
-    │   ├── telegram.md         # ビルダー向け、示唆重視、リンクベース
-    │   └── x.md                # パブリック、短形式、フック駆動
+    │   ├── brand-voice.md      # Wiki's voice: analytical, technically accurate, Japanese/English bilingual
+    │   └── channel-tone.md     # Channel-specific tone adaptation
+    ├── channels/               # Channel-specific playbooks
+    │   ├── discord.md          # Real-time, technical depth, conversational
+    │   ├── slack.md            # Team-oriented, structured, action-oriented
+    │   ├── telegram.md         # Builder-focused, insight-driven, link-based
+    │   └── x.md                # Public, short-form, hook-driven
     ├── engine/
-    │   ├── repurpose.md        # wiki知識→チャネル別変換チェーン
-    │   ├── hooks.md            # チャネル別フックパターン
-    │   └── scheduling.md       # 配信カレンダー（Daily Report等）
+    │   ├── repurpose.md        # Wiki knowledge → channel-specific transformation chain
+    │   ├── hooks.md            # Channel-specific hook patterns
+    │   └── scheduling.md       # Delivery calendar (Daily Report, etc.)
     └── audience/
-        ├── practitioners.md    # 技術実践者（エージェント開発者）
-        ├── researchers.md      # AI研究者
-        ├── builders.md         # プロダクトビルダー（PM/起業家）
-        └── knowledge-workers.md # 知識労働者（AI活用者）
+        ├── practitioners.md    # Technical practitioners (agent developers)
+        ├── researchers.md      # AI researchers
+        ├── builders.md         # Product builders (PMs/entrepreneurs)
+        └── knowledge-workers.md # Knowledge workers (AI adopters)
 ```
 
-### repurpose.md: Wiki知識→マルチチャネル変換チェーン
+### repurpose.md: Wiki Knowledge → Multi-Channel Transformation Chain
 
-Roninのrepurpose chainを知識配信に適応：
+Adapting Ronin's repurpose chain for knowledge delivery:
 
 ```
-1つのWiki更新（例: context-engineering概念ページの拡充）
+1 Wiki update (e.g., expanding the context-engineering concept page)
     │
-    ├─→ Discord: 技術的詳細 + コードレベル変更 + [[wikilinks]]
-    │   "context-engineeringにKhairallahの4ファイルアーキテクチャを追加。
-    │    動的コンテキストローディングの実装パターンは→ [[concepts/skill-graph]]"
+    ├─→ Discord: Technical details + code-level changes + [[wikilinks]]
+    │   "Added Khairallah's 4-file architecture to context-engineering.
+    │    Dynamic context loading implementation → [[concepts/skill-graph]]"
     │
-    ├─→ Slack: 構造化サマリー + アクションアイテム
-    │   "📋 Context Engineering精緻化: 3層モデル、4ファイルアーキテクチャ、
-    │    メモリ進化ラダーを追加。Autoresearch Desk設計に直接適用可能。"
+    ├─→ Slack: Structured summary + action items
+    │   "📋 Context Engineering refined: Added 3-layer model, 4-file architecture,
+    │    memory evolution ladder. Directly applicable to Autoresearch Desk design."
     │
-    ├─→ Telegram: 示唆 + リンク + ビジネス文脈
-    │   "AIエージェントが「記憶喪失の天才」ではなくなる方法。
-    │    Context Engineeringの実践フレームワークをwikiに統合しました。
-    │    詳細→ [link]"
+    ├─→ Telegram: Insights + links + business context
+    │   "How AI agents stop being 'geniuses with amnesia.'
+    │    Integrated the practical framework of Context Engineering into the wiki.
+    │    Details→ [link]"
     │
-    └─→ X: 短形式フック + 1インサイト
+    └─→ X: Short-form hook + 1 insight
         "prompt engineering = syntax.
          context engineering = infrastructure.
          infrastructure beats syntax every single time.
-         6週間でAIに「目」を与える方法をwiki化しました。"
+         How to give AI 'eyes' in 6 weeks — now wiki'd."
 ```
 
-### channel-tone.md: チャネル別トーン適応
+### channel-tone.md: Channel-Specific Tone Adaptation
 
-| チャネル | トーン | 深度 | 長さ | 頻度 |
+| Channel | Tone | Depth | Length | Frequency |
 |---------|--------|------|------|------|
-| **Discord** | 分析的・対話的・技術的正確 | 深い | 中〜長 | 更新発生時 |
-| **Slack** | 構造化・プロフェッショナル・アクション指向 | 中 | 中 | Daily Report |
-| **Telegram** | カジュアル・示唆重視・ビルダー向け | 浅〜中 | 短〜中 | 1-2/日 |
-| **X** | 短形式・フック駆動・公的 | 浅い | 280-2000字 | 1-2/日 |
+| **Discord** | Analytical, conversational, technically accurate | Deep | Medium–Long | On update |
+| **Slack** | Structured, professional, action-oriented | Medium | Medium | Daily Report |
+| **Telegram** | Casual, insight-driven, builder-focused | Shallow–Medium | Short–Medium | 1–2/day |
+| **X** | Short-form, hook-driven, public | Shallow | 280–2000 chars | 1–2/day |
 
-### hooks.md: チャネル別フックパターン
+### hooks.md: Channel-Specific Hook Patterns
 
-各チャネルの特性に合わせたフック：
+Hooks tailored to each channel's characteristics:
 
-| チャネル | 効果的なフック |
+| Channel | Effective Hooks |
 |---------|-------------|
-| **Discord** | "新しい概念ページを拡充しました" / "〜の実装パターンを追加" |
-| **Slack** | "📋 本日のWiki更新: [N]件" / "今週の重要トピック: [topic]" |
-| **Telegram** | "AIが「目」を持つとはどういうことか" / "ほとんどの人が見落としている〜" |
+| **Discord** | "Expanded a new concept page" / "Added implementation patterns for ~" |
+| **Slack** | "📋 Today's Wiki Update: [N] items" / "Weekly key topic: [topic]" |
+| **Telegram** | "What does it mean for AI to have 'eyes'" / "What most people overlook about ~" |
 | **X** | "prompt engineering is syntax. context engineering is infrastructure." |
 
-## 実装ロードマップ
+## Implementation Roadmap
 
-### Phase 1: Audience定義（今週）
-- `agent-media/audience/` の4ファイル作成
-- 各audienceの情報ニーズ、トーン期待値、チャネル選好を定義
+### Phase 1: Audience Definition (This Week)
+- Create 4 files in `agent-media/audience/`
+- Define each audience's information needs, tone expectations, and channel preferences
 
-### Phase 2: コマンドセンター（来週）
-- `agent-media/index.md` の作成
-- wikiのIdentity、配信目的、チャネルマップ、実行指示
-- 既存のDaily Report cron jobにaudience別分岐の実験
+### Phase 2: Command Center (Next Week)
+- Create `agent-media/index.md`
+- Wiki identity, delivery purpose, channel map, execution instructions
+- Experiment with audience-specific branching in existing Daily Report cron job
 
-### Phase 3: チャネルプレイブック（2週間以内）
-- Discord / Slack / Telegram / X のチャネル別ファイル作成
-- 既存の配信パイプラインをチャネル別テンプレートに移行
+### Phase 3: Channel Playbooks (Within 2 Weeks)
+- Create channel-specific files for Discord / Slack / Telegram / X
+- Migrate existing delivery pipeline to channel-specific templates
 
-### Phase 4: フィードバックループ（1ヶ月以内）
-- 各チャネルでのエンゲージメント追跡
-- どのaudienceにどの情報が響いたかの学習
-- hooks.md と channel-tone.md の継続的改善
+### Phase 4: Feedback Loop (Within 1 Month)
+- Track engagement on each channel
+- Learn which information resonates with which audience
+- Continuously improve hooks.md and channel-tone.md
 
-## 設計原則
+## Design Principles
 
-1. **Rethinking, not Reformatting** (Ronin): 同じ知識をチャネルごとに再思考。再フォーマットではない
-2. **Context tells WHY/WHAT, Channels tell HOW, Schedule tells WHEN/WHERE** (Khairallah): MCP統合パターンの応用
-3. **Litmus Test**: 「全チャネルをフォローしている人が同じものを見てうんざりするか？」 Yes→再フォーマットに過ぎない
-4. **Evolutionary Design** (Ronin): 週次で改善。パフォーマンスデータをファイルにエンコード
+1. **Rethinking, not Reformatting** (Ronin): Rethink the same knowledge for each channel. Not reformatting.
+2. **Context tells WHY/WHAT, Channels tell HOW, Schedule tells WHEN/WHERE** (Khairallah): Application of MCP integration patterns.
+3. **Litmus Test**: "Would someone following all channels be bored seeing the same thing?" Yes → it's mere reformatting.
+4. **Evolutionary Design** (Ronin): Improve weekly. Encode performance data into files.
 5. **Memory Evolution Ladder** (Khairallah): Manual → Structured KB → Vector DB+RAG → **Autoresearch Desk**
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/skill-graph]] — 相互接続MarkdownによるAIエージェントプレイブック
-- [[concepts/harness-engineering/context-engineering]] — Context Engineering（実践者フレームワーク含む）
-- [[entities/khairallah-al-awady]] — Khairallah AL-Awady: 4ファイルアーキテクチャ提唱者
-- [[entities/ronin-deronin]] — Ronin: Skill Graphアーキテクチャ提唱者
-- [[concepts/memory-systems-design-patterns]] — AIエージェントのメモリ設計パターン
+- [[concepts/skill-graph]] — Interconnected Markdown for AI agent playbooks
+- [[concepts/harness-engineering/context-engineering]] — Context Engineering (including practitioner framework)
+- [[entities/khairallah-al-awady]] — Khairallah AL-Awady: Proponent of the 4-file architecture
+- [[entities/ronin-deronin]] — Ronin: Proponent of the Skill Graph architecture
+- [[concepts/memory-systems-design-patterns]] — AI agent memory design patterns

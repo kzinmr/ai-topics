@@ -3,7 +3,7 @@ title: "Claude Code — Capabilities & Features"
 type: entity
 parent: claude-code
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-26
 tags:
   - product
   - ai-agents
@@ -36,127 +36,127 @@ Back to main profile: [[entities/claude-code]]
 ## Latest Features (April 2026)
 
 ### Ultraplan (Week 15 — v2.1.92–v2.1.101, Apr 6–10)
-Claude Codeの**クラウド計画機能**: CLIから計画をクラウドにドラフトし、Webエディタでレビュー・コメント、リモート実行またはローカルにPull可能。
+Claude Code's **cloud planning feature**: Draft a plan from the CLI to the cloud, review and comment in the Web editor, then execute remotely or pull locally.
 
-- 初回実行時に自動でクラウド環境を作成
-- Web上のインタラクティブエディタで計画を閲覧・編集
-- チームメンバーと計画を共有し、コメントベースでレビュー
-- 大規模リファクタリングや複雑なマルチステップタスクに最適
+- Auto-creates a cloud environment on first run
+- Browse and edit plans in an interactive Web editor
+- Share plans with team members for comment-based review
+- Ideal for large-scale refactoring or complex multi-step tasks
 
 ### Monitor Tool (v2.1.92+)
-バックグラウンドイベントを会話にストリーミングする新しいツール。Claudeが**ログをテールし、リアルタイムに反応**できる。
+A new tool that streams background events into conversations. Claude can **tail logs and react in real-time**.
 
-- 長時間ジョブの進捗モニタリング
-- エラーログの自動検出と対応
-- デプロイ監視と自動ロールバック判断
+- Progress monitoring for long-running jobs
+- Automatic error log detection and response
+- Deployment monitoring and auto-rollback decisions
 
 ### Auto Mode (Mar 24, 2026)
-`--dangerously-skip-permissions` の安全な代替。分類器がパーミッションプロンプトを処理:
+A safe alternative to `--dangerously-skip-permissions`. A classifier handles permission prompts:
 
-- 安全なアクション → 自動実行（中断なし）
-- リスクのあるアクション → ブロック
-- 手動承認と完全自動の間のバランスを提供
-- 長時間実行タスクに最適化
+- Safe actions → automatic execution (no interruption)
+- Risky actions → blocked
+- Provides a balance between manual approval and full automation
+- Optimized for long-running tasks
 
 ### Routines (Apr 14, 2026)
-一度設定したルーティンをスケジュール・APIコール・イベントトリガーで実行。
+Execute configured routines on schedule, via API calls, or event triggers.
 
-- 定期的なコードメンテナンスタスクの自動化
-- CI/CDパイプラインとの統合
-- イベント駆動型の自動修正ワークフロー
+- Automate periodic code maintenance tasks
+- Integration with CI/CD pipelines
+- Event-driven auto-fix workflows
 
 ### Redesigned Desktop App (Apr 14, 2026)
-複数のClaude Codeタスクを同時実行可能なデスクトップアプリに刷新。
+Redesigned as a desktop app capable of running multiple Claude Code tasks simultaneously.
 
-- 並列タスク管理
-- ビジュアルDiffの確認
-- サーバープレビュー機能
-- PRステータスの一元管理
+- Parallel task management
+- Visual diff review
+- Server preview functionality
+- Centralized PR status management
 
 ### CLI Computer Use (Research Preview — Week 14, v2.1.86+)
-CLIから直接**ネイティブアプリを操作**可能に:
+Directly **operate native applications** from the CLI:
 
-- GUIでのみ確認可能なUI変更を自動検証
-- アプリを開き、UIをクリック操作
-- ヘッドレス環境でのE2Eテスト自動化
+- Automatically verify UI changes visible only in the GUI
+- Open apps, click on UI elements
+- E2E test automation in headless environments
 
 ### Fast Mode (Research Preview)
-Opus 4.6ベースで**2.5倍高速**な実行モード:
+An execution mode **2.5x faster** based on Opus 4.6:
 
-| モード | 速度 | 価格（入力/出力 百万トークンあたり） |
+| Mode | Speed | Price (per million input/output tokens) |
 |--------|------|--------------------------------------|
 | Standard (Opus 4.7) | 1x | $15/$75 |
 | **Fast mode** (Opus 4.6) | **2.5x** | $30/$150 |
 
-- 短いタスクや高速なイテレーションに最適
-- 研究プレビュー段階
+- Ideal for short tasks and rapid iteration
+- Research preview stage
 
 ## Key Features
 
 ### NO_FLICKER Renderer
-`CLAUDE_CODE_NO_FLICKER=1` 実験的レンダラー:
-- 会話の成長に伴う画面のちらつき/ジャンプを解消
-- 会話の長さに関係なく一定のメモリ/CPUを維持
-- マウスサポート（クリックでカーソル配置、クリック可能なUI要素）
-- テキスト選択動作の改善
+`CLAUDE_CODE_NO_FLICKER=1` experimental renderer:
+- Eliminates screen flicker/jumping as conversation grows
+- Maintains constant memory/CPU regardless of conversation length
+- Mouse support (click to place cursor, clickable UI elements)
+- Improved text selection behavior
 
 ### Subagents
 > "Append 'use subagents' to any request where you want more compute."
 
-- バックグラウンド分析タスク
-- 複数ワークツリーでの並行コード探索
-- 長時間実行クエリやデータ処理
-- メインセッションのコンテキストを集中させたまま、サブエージェントがサイドタスクを処理
+- Background analysis tasks
+- Parallel code exploration across multiple working trees
+- Long-running queries and data processing
+- Sub-agents handle side tasks while main session stays focused
 
 ### MCP Integration
-- **BigQuery**: チームはBigQueryスキルをコードベースにチェックイン
-- **Slack**: ClaudeがMCPサーバー経由でSlackにアクセス
-- **Sentry**: Claudeが直接エラーログを読み取る
-- 設定は`.mcp.json`でリポジトリにチェックイン
-- **MCP懒加载** (v2.1.76): 数百のツールを事前ロードせず、コンテキストに関連するツールのみアクティブ化 → 起動オーバーヘッド削減
+- **BigQuery**: Teams check in BigQuery skills into their codebase
+- **Slack**: Claude accesses Slack via MCP server
+- **Sentry**: Claude reads error logs directly
+- Configuration checked into repository via `.mcp.json`
+- **MCP Lazy Loading** (v2.1.76): Rather than pre-loading hundreds of tools, only tools relevant to the current context are activated → reduced startup overhead
 
 ### Slash Commands
-- `/simplify` — PR shepherdingの自動化
-- `/batch` — 並行コードマイグレーション
-- `/commit-push-pr` — PR最終処理の自動化
-- `/techdebt` — セッション終了時にコードベースのスキャン
-- `/sync-context` — 7日間のSlack、GDrive、Asana、GitHubアクティビティをコンテキストとしてダンプ
-- `/team-onboarding` (v2.1.92+) — セットアップを再生可能ガイドにパッケージ化
-- `/autofix-pr` (v2.1.92+) — ターミナルからPR自動修正を有効化
-- `/loop` (v2.1.92+) — 間隔省略時にセルフペーシング対応
-- `/powerup` (v2.1.86+) — インタラクティブレッスン
+- `/simplify` — Automate PR shepherding
+- `/batch` — Parallel code migration
+- `/commit-push-pr` — Automate final PR processing
+- `/techdebt` — Scan codebase at session end
+- `/sync-context` — Dump 7 days of Slack, GDrive, Asana, GitHub activity as context
+- `/team-onboarding` (v2.1.92+) — Package setup as a replayable guide
+- `/autofix-pr` (v2.1.92+) — Enable automatic PR fixes from the terminal
+- `/loop` (v2.1.92+) — Self-pacing support with interval skipping
+- `/powerup` (v2.1.86+) — Interactive lessons
 
 ### Checkpointing
-ファイルレベルのリストアポイント。自律的マルチステップタスク用:
+File-level restore points for autonomous multi-step tasks:
 
-- セッション中のファイル変更を追跡
-- 任意の以前の状態に復元可能
-- gitと異なり**タスクレベル**で動作
+- Tracks file changes during a session
+- Can restore to any previous state
+- Operates at **task level**, unlike git
 - Python: `enable_file_checkpointing=True`, TypeScript: `enableFileCheckpointing: true`
 
 ### Hook System (v2.1.83+)
-条件付き `if` フック: 特定の条件で自動アクションを実行。ツール使用後のフォーマット実行など。
+Conditional `if` hooks: execute automatic actions under specific conditions. For example, running a formatter after tool use.
 
 ### Cross-App Context Sharing (Mar 2026)
-ExcelとPowerPointのClaudeアドイン間で会話コンテキストを共有。アクションが別アプリに引き継がれる。
+Share conversation context between Claude add-ins for Excel and PowerPoint. Actions carry over between applications.
 
 ### Custom Visualizations (Mar 12, 2026)
-Claudeがコード内で直接チャート、図、ビジュアライゼーションを動的に生成。
+Claude dynamically generates charts, diagrams, and visualizations directly in code.
 
 ### Skills System
-- カスタムコマンドでClaude Codeを拡張
-- `$ARGUMENTS`, `$ARGUMENTS[N]`, `${CLAUDE_SESSION_ID}` テンプレート変数
-- 拡張バンドルスキルライブラリ
-- ネストディレクトリからの自動発見
+- Extend Claude Code with custom commands
+- `$ARGUMENTS`, `$ARGUMENTS[N]`, `${CLAUDE_SESSION_ID}` template variables
+- Extended bundle skill library
+- Auto-discovery from nested directories
 
 ### PostToolUse Hooks
-Claudeのコード出力後、自動的にフォーマットを実行するフック。ツール使用パイプラインの一部として実行され、バージョン管理に至る前にフォーマット問題を捕捉。
+Hooks that automatically run formatting after Claude outputs code. Executed as part of the tool use pipeline, catching formatting issues before they reach version control.
 
 ### Claude Code Sourcemap Leak (March 2026)
-Claude Codeの全ソースコードがnpmパッケージの`.map`ファイル（sourcemap）を通じてリークした事件。内部情報:
-- **Undercover Mode**: Anthropic社員がOSSリポジトリでClaude Codeを使用時、AIが内部情報を漏らさないよう隠蔽するモード。内部モデルコードネームは動物名（Capybara, Tengu等）
-- **KAIROS**: 常時稼働型のClaudeアシスタント。15秒のブロッキング予算でユーザーの代わりに観察・行動
-- **Dream System**: `autoDream` — フォークされたサブエージェントがメモリ統合を実行（Orient → Gather → Consolidate → Pruneの4フェーズ）
-- **Coordinator Mode**: マルチエージェントオーケストレーション。Research → Synthesis → Implementation → Verificationの4フェーズ
-- **Penguin Mode**: Fast Modeの内部名称。APIエンドポイントは`/api/claude_code_penguin_mode`
-- **Buddy**: ターミナル内のTamagotchi風コンパニオンペットシステム（`BUDDY`コンパイル時フラグでゲート）
+Incident where Claude Code's full source code leaked through npm package `.map` (sourcemap) files. Internal information:
+- **Undercover Mode**: A mode for Anthropic employees to use Claude Code on OSS repositories without leaking internal information. Internal model codenames use animal names (Capybara, Tengu, etc.)
+- **KAIROS**: An always-on Claude assistant. Uses a 15-second blocking budget to observe and act on behalf of the user
+- **Dream System**: `autoDream` — Forked sub-agents performing memory consolidation (4 phases: Orient → Gather → Consolidate → Prune)
+- **Coordinator Mode**: Multi-agent orchestration. 4 phases: Research → Synthesis → Implementation → Verification
+- **Penguin Mode**: Internal name for Fast Mode. API endpoint is `/api/claude_code_penguin_mode`
+- **Buddy**: Tamagotchi-style companion pet system in the terminal (gated by `BUDDY` compile-time flag)
