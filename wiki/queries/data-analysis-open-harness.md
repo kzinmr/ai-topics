@@ -21,102 +21,102 @@ related:
   - concepts/agent-harness-comparison
 ---
 
-# データ分析に適したOpen Harnessはあるか？
+# What Open Harness Is Suitable for Data Analysis?
 
-> **質問**: データ分析に適したHarness、特にOpen Harnessには何があるか？
-> **質問者**: kzinmr（Discord #hermes-topic-manager, 2026-05-14）
-> **回答要旨**: データ分析専用の真のOpen Harnessはまだ発展途上。現状は汎用coding harness（OpenCode/Pi）にDB MCP connectorを付けて使うのが最も「Open」な選択肢。
+> **Question**: What harnesses are suitable for data analysis, especially Open Harness?
+> **Questioner**: kzinmr (Discord #hermes-topic-manager, 2026-05-14)
+> **Answer Summary**: True Open Harnesses dedicated to data analysis are still nascent. Currently, the most "Open" option is to use a general-purpose coding harness (OpenCode/Pi) with a DB MCP connector attached.
 
 ---
 
-## 前提: 「Open Harness」の定義
+## Premise: Defining "Open Harness"
 
-まず、本Wikiで「Open Harness」が指す範囲を確認する（[[comparisons/open-harness-vs-agent-framework]] より）：
+First, let us confirm the scope of "Open Harness" as used in this Wiki (from [[comparisons/open-harness-vs-agent-framework]]):
 
-| 分類 | Open Harness | Agent Framework / Runtime |
+| Category | Open Harness | Agent Framework / Runtime |
 |---|---|---|
-| **投資対象** | 人間がAI Agentを**使う**ための操作面 | AI Agentを**システムに組み込む**制御面 |
-| **主な利用者** | 開発者、運用者、個人、少人数チーム | プロダクト開発チーム、業務システムチーム |
-| **代表的ツール** | OpenClaw, Hermes Agent, OpenCode, Pi | LangGraph, Pydantic AI, OpenAI Agents SDK, Claude Agent SDK |
-| **評価軸** | Operator Workbench Readiness | Untrusted Product Runtime Readiness |
+| **Investment Target** | Operational surface for **using** AI Agents | Control surface for **embedding** AI Agents into systems |
+| **Primary Users** | Developers, operators, individuals, small teams | Product development teams, enterprise system teams |
+| **Representative Tools** | OpenClaw, Hermes Agent, OpenCode, Pi | LangGraph, Pydantic AI, OpenAI Agents SDK, Claude Agent SDK |
+| **Evaluation Axis** | Operator Workbench Readiness | Untrusted Product Runtime Readiness |
 
-**ポイント**: Open Harnessは「すぐ使える完成品」であり、Frameworkは「組み立てが必要な部品」。データ分析の文脈でもこの区別が重要。
+**Key point**: Open Harnesses are "ready-to-use finished products," while Frameworks are "parts that require assembly." This distinction matters in the data analysis context as well.
 
 ---
 
-## 選択肢マトリクス
+## Options Matrix
 
-### A. 汎用Coding Harnessをデータ分析に転用する
+### A. Repurposing General-Purpose Coding Harnesses for Data Analysis
 
-| Harness | データ分析適性 | モデル自由度 | 主な制約 |
+| Harness | Data Analysis Suitability | Model Freedom | Key Constraints |
 |---|---|---|---|
-| **OpenCode** | ★★★★☆ | 75+プロバイダ | default permissive（hardened config推奨）。MCP/custom toolsでDB接続。モデル選択の自由度が最大 |
-| **Pi** | ★★★★☆ | 20+プロバイダ + ローカル（MLX/GGUF） | 最小オーバーヘッド（<1K system prompt）。extensionでDBツール追加。Anthropic wallあり |
-| **Claude Code** | ★★★☆☆ | Anthropicモデルのみ | MCPでDB接続可能。subscription $20/mo。Anthropic wall |
-| **Codex CLI** | ★★★☆☆ | GPT-5.5推奨 + custom providers（DeepSeek等） | Apache-2.0 OSS。MCP dual対応。サブエージェントで分割可能 |
-| **Aider** | ★★★☆☆ | BYOM（全モデル） | トークン効率最良（Claude Codeの1/4.2）。Git-first設計 |
+| **OpenCode** | ★★★★☆ | 75+ providers | Default permissive (hardened config recommended). DB connection via MCP/custom tools. Maximum model selection freedom |
+| **Pi** | ★★★★☆ | 20+ providers + local (MLX/GGUF) | Minimal overhead (<1K system prompt). DB tools added via extension. Has Anthropic wall |
+| **Claude Code** | ★★★☆☆ | Anthropic models only | DB connection via MCP. Subscription $20/mo. Anthropic wall |
+| **Codex CLI** | ★★★☆☆ | GPT-5.5 recommended + custom providers (DeepSeek, etc.) | Apache-2.0 OSS. Dual MCP support. Split via sub-agents |
+| **Aider** | ★★★☆☆ | BYOM (all models) | Best token efficiency (1/4.2 of Claude Code). Git-first design |
 
-**共通の課題**: これらはコード生成向けに設計されているため、データ分析タスクでは「SQL生成→実行→検証→可視化」のループを自分で組む必要がある。MCP DB connectorを追加すれば最低限のDB接続は可能だが、スキーマ探索や意味的曖昧性の解決はハーネス側で提供されない。
+**Common challenge**: These are designed for code generation, so for data analysis tasks you need to build the "SQL generation → execution → verification → visualization" loop yourself. Adding an MCP DB connector enables basic DB connectivity, but schema exploration and semantic ambiguity resolution are not provided by the harness side.
 
-### B. データ分析特化エージェント / 製品
+### B. Data-Analysis-Specialized Agents / Products
 
-| ツール | アプローチ | Open Harnessか？ |
+| Tool | Approach | Is it an Open Harness? |
 |---|---|---|
-| **Cognition DANA / Devin** | SWE agentのデータ分析特化persona。MCPでRedshift/Snowflake/BQに接続。Knowledge設定でチーム共有。DANA専用persona（`/dana`）。エンドツーエンド（データ異常→コード原因→修正PR） | ❌ 製品型Closed Harness |
-| **OpenAI社内Data Agent** | GPT-5.2 + Codex pipeline crawling + 6層context grounding（Table Usage → Human Annotation → Codex Enrichment → Institutional Knowledge → Memory → Runtime Context）。600+PB, 70k+ datasets | ❌ 内製Bespoke（非公開） |
-| **Hex Technologies** | Agentic Notebooks — polyglot（SQL/Python/R）notebookにAI agent組み込み | ❌ 製品型Notebook Harness |
-| **OpenAI Agents SDK（2026年4月進化版）** | Configurable memory + sandbox-aware orchestration + filesystem tools + MCP。Open Harnessに近づきつつある | △ Frameworkからの進化中 |
+| **Cognition DANA / Devin** | SWE agent data-analysis-specific persona. Connects to Redshift/Snowflake/BQ via MCP. Team sharing via Knowledge settings. DANA-specific persona (`/dana`). End-to-end (data anomaly → code cause → fix PR) | ❌ Product-type Closed Harness |
+| **OpenAI Internal Data Agent** | GPT-5.2 + Codex pipeline crawling + 6-layer context grounding (Table Usage → Human Annotation → Codex Enrichment → Institutional Knowledge → Memory → Runtime Context). 600+PB, 70k+ datasets | ❌ Internal Bespoke (not public) |
+| **Hex Technologies** | Agentic Notebooks — AI agent embedded in polyglot (SQL/Python/R) notebooks | ❌ Product-type Notebook Harness |
+| **OpenAI Agents SDK (April 2026 evolved version)** | Configurable memory + sandbox-aware orchestration + filesystem tools + MCP. Approaching Open Harness | △ Evolving from Framework |
 
-### C. データ分析エージェントのアーキテクチャ分類
+### C. Architecture Classification of Data Analysis Agents
 
-データ分析エージェントの設計空間は、2つの軸で整理できる（[[concepts/data-analysis-agents]] より）：
+The design space of data analysis agents can be organized along two axes (from [[concepts/data-analysis-agents]]):
 
 |  | Approach A: Internal Bespoke | Approach B: SWE as Data Analyst |
 |---|---|---|
-| **代表** | OpenAI社内Data Agent | Cognition DANA / Devin |
-| **コア洞察** | "データの意味はパイプラインコードの中にある" | "SWE Agentの方がSQL専用ツールより良いアナリスト" |
-| **文脈** | 6層のgrounding context | コードベース全文検索 + git履歴 |
-| **検証** | Evals API golden SQL pairs | 最終SQL + Metabase playground link |
+| **Representative** | OpenAI Internal Data Agent | Cognition DANA / Devin |
+| **Core Insight** | "The meaning of data lives inside pipeline code" | "SWE Agents make better analysts than SQL-only tools" |
+| **Context** | 6-layer grounding context | Full codebase search + git history |
+| **Verification** | Evals API golden SQL pairs | Final SQL + Metabase playground link |
 
 ---
 
-## 結論
+## Conclusion
 
-### 現状のベストプラクティス
+### Current Best Practices
 
 ```
-個人/小規模なデータ分析:
-  Pi または OpenCode + MCP DB connector
-  → モデル自由、BYOK、permission設定でread-onlyに制限可能
+Individual/small-scale data analysis:
+  Pi or OpenCode + MCP DB connector
+  → Model freedom, BYOK, can be restricted to read-only via permission settings
 
-チーム共有のデータ分析workbench:
+Team-shared data analysis workbench:
   OpenClaw + OpenCode backend
-  → Slack/Discordから自然言語でDB問い合わせ、gatewayで制御
+  → Natural language DB queries from Slack/Discord, controlled via gateway
 
-製品化/SaaSとしてのデータ分析agent:
-  Agent Framework (LangGraph / Pydantic AI) が適切
-  → tenant isolation, audit, SLA, 状態管理が必要なため
+Productized/SaaS data analysis agent:
+  Agent Framework (LangGraph / Pydantic AI) is appropriate
+  → Because tenant isolation, audit, SLA, and state management are required
 ```
 
-### 未解決の課題
+### Unresolved Issues
 
-1. **データ分析専用の真のOpen Harnessはまだ存在しない** — Cognition DANAは強力だがClosed。HexはNotebook製品
-2. **汎用coding harnessの転用には限界がある** — スキーマ探索、意味的曖昧性の解決、検証ループは自前実装が必要
-3. **OpenAI Agents SDKの進化**は、FrameworkからOpen Harness方向への収束を示唆しているが、まだ発展途上
-4. **MCPによるDB接続の標準化**は進んでいるが、データ分析ワークフロー全体（discovery → schema understanding → query → verify → visualize → report）をカバーするharnessは不在
+1. **A true Open Harness dedicated to data analysis does not yet exist** — Cognition DANA is powerful but Closed. Hex is a notebook product.
+2. **Repurposing general-purpose coding harnesses has limitations** — Schema exploration, semantic ambiguity resolution, and verification loops require custom implementation.
+3. **The evolution of the OpenAI Agents SDK** suggests convergence from Framework toward Open Harness, but is still in development.
+4. **Standardization of DB connections via MCP** is progressing, but no harness covers the entire data analysis workflow (discovery → schema understanding → query → verify → visualize → report).
 
-### Karpathyの洞察との整合
+### Alignment with Karpathy's Insight
 
 > "good answers can be filed back into the wiki as new pages"
 
-本query自体がその実践例：このQ&Aは、[[comparisons/open-harness-vs-agent-framework]] の投資対象分類と [[concepts/data-analysis-agents]] のアーキテクチャ分析を横断し、**データ分析×Open Harness**という未カバーの交差点を可視化した。
+This query itself is a practical example: this Q&A cross-references the investment target classification from [[comparisons/open-harness-vs-agent-framework]] with the architecture analysis from [[concepts/data-analysis-agents]], visualizing the previously uncovered intersection of **data analysis × Open Harness**.
 
 ---
 
-## 関連ページ
+## Related Pages
 
-- [[concepts/data-analysis-agents]] — AIデータ分析エージェントの包括的概念
-- [[concepts/cognition-ai-data-analyst]] — Devinをデータ分析エージェントにする設計
-- [[comparisons/open-harness-vs-agent-framework]] — Open Harness対Agent Frameworkの本質的差異
-- [[concepts/agent-harness]] — Agent Harnessの概念定義
-- [[concepts/agent-harness-comparison]] — 9ハーネス比較ポータル
+- [[concepts/data-analysis-agents]] — Comprehensive concept of AI data analysis agents
+- [[concepts/cognition-ai-data-analyst]] — Design for turning Devin into a data analysis agent
+- [[comparisons/open-harness-vs-agent-framework]] — The essential difference between Open Harness and Agent Framework
+- [[concepts/agent-harness]] — Agent Harness concept definition
+- [[concepts/agent-harness-comparison]] — 9-harness comparison portal

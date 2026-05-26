@@ -1,0 +1,68 @@
+{
+  "checkpoint_run_id": "20260526T160057Z",
+  "source": "backlog",
+  "processed_at": "2026-05-26T16:00:57+00:00",
+  "summary_ja": "バックログ5件のうち、AI/LLM関連記事は0件。React/ソーシャルネットワーク/レトロコンピューティング/個人エッセイ/法的手続き記録はいずれもwiki価値なし。",
+  "decisions": [
+    {
+      "item_id": "overreacted.io--jsx-over-the-wire--6dbfcdfd.md",
+      "source": "backlog",
+      "source_name": "overreacted.io",
+      "title": "JSX Over The Wire",
+      "url": "https://overreacted.io/jsx-over-the-wire/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/overreacted.io--jsx-over-the-wire--6dbfcdfd.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ React Server ComponentsのWebアーキテクチャ解説記事。AI/LLM/エージェント技術とは無関係。Dan AbramovによるReact技術解説で品質は高いが、wikiのLLM/AIエージェントフォーカスから外れる。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Suppose you have an API route that returns some data as JSON: app.get('/api/likes/:postId', async (req, res) => { const postId = req.params.postId; const [post, friendLikes] = await Promise.all([getPost(postId), getFriendLikes(postId, {limit: 2})]);"
+    },
+    {
+      "item_id": "danluu.com--open-social-networks--7c4f68ed.md",
+      "source": "backlog",
+      "source_name": "Dan Luu",
+      "title": "Are closed social networks inevitable?",
+      "url": "https://danluu.com/open-social-networks/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--open-social-networks--7c4f68ed.md",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ 2010年頃のGoogle Buzz会話アーカイブ。ソーシャルネットワークのオープンvsクローズドに関する哲学的議論。AI技術コンテンツではない。Dan Luuの記事だがAI/インフラ関連ではない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "This is an archive of an old Google Buzz conversation (circa 2010?) on a variety of topics, including whether or not it's inevetible that a closed platform will dominate social."
+    },
+    {
+      "item_id": "oldvcr.blogspot.com--2025-06-see-jane-128-by-arktronics-run-html--c37733ff.md",
+      "source": "backlog",
+      "source_name": "oldvcr.blogspot.com",
+      "title": "See Jane 128 by Arktronics run",
+      "url": "https://oldvcr.blogspot.com/2025/06/see-jane-128-by-arktronics-run.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/oldvcr.blogspot.com--2025-06-see-jane-128-by-arktronics-run-html--c37733ff.md",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ Commodore 128とArktronics/Janeワードプロセッサのレトロコンピューティング史。Bobby Kotick（Activision）の初期キャリアに関する歴史的記事。AI技術とは無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "I still maintain that the 1986 Commodore 128DCR is the best 8-bit computer Commodore ever made: built-in 1571 disk drive, burst mode serial, detachable keyboard, 2MHz operation..."
+    },
+    {
+      "item_id": "paulgraham.com--worked-html--175df876.md",
+      "source": "backlog",
+      "source_name": "paulgraham.com",
+      "title": "What I Worked On",
+      "url": "http://www.paulgraham.com/worked.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/paulgraham.com--worked-html--175df876.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ Paul Grahamの個人回想エッセイ（2021年改訂）。13歳からのプログラミング経験、哲学からAIへの関心移行、Lisp学習体験などを含むが、技術解説ではなく自伝的エッセイ。LLM/AIエージェントの具体的な技術コンテンツではない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Before college the two main things I worked on, outside of school, were writing and programming. I didn't write essays. I wrote what beginning writers were supposed to write then..."
+    },
+    {
+      "item_id": "danluu.com--elon-twitter-texts--3ca1001d.md",
+      "source": "backlog",
+      "source_name": "Dan Luu",
+      "title": "Chat log exhibits from Twitter v. Musk case",
+      "url": "https://danluu.com/elon-twitter-texts/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/danluu.com--elon-twitter-texts--3ca1001d.md",
+      "recommended_action": "skip",
+      "reason_ja": "☆☆☆☆☆ Twitter v. Musk訴訟のチャットログOCR記録。Elon Muskの2FA設定問題や買収交渉に関連する法的手続きの記録。AI技術・LLM・エージェントとは無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "This is a scan/OCR of Exhibits H and J from the Twitter v. Musk case, with some of the conversations de-interleaved and of course converted from a fuzzy scan to text..."
+    }
+  ]
+}

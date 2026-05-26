@@ -20,99 +20,99 @@ sources:
 
 # Princeton COS597R: Deep Dive into Large Language Models
 
-> **Danqi Chen & Sanjeev Arora**（Princeton）による**論文ベースのLLM研究サーベイコース**。スケーリング則からデータキュレーション、アライメント、推論、RAG、ハードウェアまで、LLM研究の全スペクトラムをカバー。研究指向で、実装よりも**概念理解と批判的思考**を重視。2024年秋開講。
+> A **paper-based LLM research survey course** by **Danqi Chen & Sanjeev Arora (Princeton)**. Covers the full spectrum of LLM research: scaling laws, data curation, alignment, reasoning, RAG, and hardware. Research-oriented, emphasizing **conceptual understanding and critical thinking** over implementation. Offered Fall 2024.
 
 ---
 
-## なぜこのコースが特別か
+## Why This Course Is Special
 
-1. **豪華インストラクター** — Chen（長文脈・知識編集の専門家）+ Arora（理論家）の組み合わせで理論・実践の両面をカバー
-2. **論文ベースの深掘り** — 毎回1-2本の重要な論文を精読。Lectureship制度（学生が講義ノートを執筆）で議論を文書化
-3. **Debate Panel形式** — Presenter + 2 Critics + 2 Proponentsの構造で、論文を批判的に評価する訓練
-4. **2024年秋季のベストスナップショット** — GPT-4登場後、Llama 3公開後、DPO登場後のLLM研究の全体像を提供
+1. **Renowned Instructors** — Chen (long-context & knowledge editing specialist) + Arora (theorist) cover both theory and practice
+2. **Paper-based deep dives** — 1-2 key papers per session. Lectureship system (students write lecture notes) documents discussions
+3. **Debate Panel Format** — Presenter + 2 Critics + 2 Proponents structure trains critical evaluation of papers
+4. **Best Snapshot of Fall 2024** — Provides the full picture of LLM research post-GPT-4, post-Llama 3, post-DPO
 
 ---
 
-## カリキュラム詳細とWikiマッピング
+## Curriculum Details & Wiki Mapping
 
-### フェーズ1: 事前学習とスケーリング（9月）
+### Phase 1: Pre-training & Scaling (September)
 
-| 週 | トピック | キーペーパー | 関連Wiki概念 |
+| Week | Topic | Key Paper | Related Wiki Concepts |
 |----|---------|-------------|-------------|
 | 1-2 | Pre-training | GPT-3 (*Language Models are Few-Shot Learners*), Llama 3 | `concepts/decoder-only-gpt`, `concepts/transformer-architecture` |
-| 3 | Scaling Laws | Chinchilla (*Training Compute-Optimal LLMs*) | —（スケーリング則の概念ページ未作成） |
-| 4 | Emergent Abilities | *Are Emergent Abilities a Mirage?* | —（未カバー） |
+| 3 | Scaling Laws | Chinchilla (*Training Compute-Optimal LLMs*) | — (scaling laws concept page not yet created) |
+| 4 | Emergent Abilities | *Are Emergent Abilities a Mirage?* | — (not yet covered) |
 
-> **CS336との関係:** 同じスケーリング則を扱うが、COS597Rでは**論文を読んで概念を理解**するのに対し、CS336では**実験で検証**する点が対照的。両方をやると最も効果的。
+> **Relation to CS336:** Both cover scaling laws, but COS597R focuses on **reading papers to understand concepts**, while CS336 focuses on **experimentally verifying** them. Doing both is most effective.
 
-### フェーズ2: データとポストトレーニング（9月末〜10月）
+### Phase 2: Data & Post-Training (Late September - October)
 
-| 週 | トピック | キーペーパー | 関連Wiki概念 |
+| Week | Topic | Key Paper | Related Wiki Concepts |
 |----|---------|-------------|-------------|
-| 4 | Data Curation | Dolma (3T tokens), Phi-1.5 (データ品質vs量) | —（データキュレーションの概念ページ未作成） |
+| 4 | Data Curation | Dolma (3T tokens), Phi-1.5 (data quality vs. quantity) | — (data curation concept page not yet created) |
 | 5 | Instruction Tuning | FLAN, Tulu | `concepts/fine-tuning/instruction-fine-tuning` |
 | 6 | Preference Learning | InstructGPT, DPO | `concepts/fine-tuning/rlhf-dpo-preference` |
 | 7 | Constitutional AI | *Harmlessness from AI Feedback* | `concepts/ai-safety` |
-| 7 | Weak-to-Strong | Weak-to-Strong Generalization | `concepts/ai-safety`（関連） |
+| 7 | Weak-to-Strong | Weak-to-Strong Generalization | `concepts/ai-safety` (related) |
 
-> **独自の価値:** **DPOとRLHFの比較**を論文レベルで行えるのがこのコースの強み。InstructGPT（RLHFの原典）とDPO（その簡略化）を同じ週に読み、Debate Panelで議論する。
+> **Unique Value:** The strength of this course is the **paper-level comparison of DPO and RLHF**. Reading InstructGPT (the origin of RLHF) and DPO (its simplification) in the same week and debating them in the Panel.
 
-### フェーズ3: 高度な能力（10月〜11月）
+### Phase 3: Advanced Capabilities (October - November)
 
-| 週 | トピック | キーペーパー | 関連Wiki概念 |
+| Week | Topic | Key Paper | Related Wiki Concepts |
 |----|---------|-------------|-------------|
 | 8 | Long Context | RoPE, Long-context training | `concepts/attention-mechanism-variants`, `concepts/kv-cache` |
-| 9 | Reasoning | *Let's Verify Step by Step*, Test-Time Compute Scaling | `concepts/grpo-rl-training`（間接的）, `concepts/exec-plans` |
+| 9 | Reasoning | *Let's Verify Step by Step*, Test-Time Compute Scaling | `concepts/grpo-rl-training` (indirect), `concepts/exec-plans` |
 | 10 | Small Models | Sheared LLaMA, Gemma 2 | `concepts/model-quantization`, `concepts/fine-tuning/quantization-overview` |
 | 11 | RAG | *Retrieval from trillions of tokens* | `concepts/agentic-rag` |
-| 12 | Agents | LLM → Autonomous Agents の進化 | `concepts/agent-harness`, `concepts/agent-orchestration-frameworks` |
+| 12 | Agents | LLM → Autonomous Agents evolution | `concepts/agent-harness`, `concepts/agent-orchestration-frameworks` |
 
-> **独自の価値:** **Test-Time Compute Scaling**（OpenAI o1の基盤論文）をカリキュラムに含む。2024年秋時点で、この画期的な論文をコースで取り上げた数少ない例。
+> **Unique Value:** Includes **Test-Time Compute Scaling** (the foundational paper for OpenAI o1) in the curriculum. One of the few courses to cover this groundbreaking paper as of Fall 2024.
 
-### フェーズ4: 特殊トピック（11月）
+### Phase 4: Special Topics (November)
 
-| 週 | トピック | キーペーパー | 関連Wiki概念 |
+| Week | Topic | Key Paper | Related Wiki Concepts |
 |----|---------|-------------|-------------|
-| 13 | Hardware | FlashAttention, Mamba | `concepts/flashattention-pytorch-educational`, `concepts/local-llm/gguf`（間接的） |
+| 13 | Hardware | FlashAttention, Mamba | `concepts/flashattention-pytorch-educational`, `concepts/local-llm/gguf` (indirect) |
 | 14 | Multimodal | Visual Grounding (Saining Xie) | `concepts/ai-image-generation` |
 | 14 | Pruning/Distillation | — | — |
 
 ---
 
-## このコースの限界
+## Limitations of This Course
 
-- **実装ゼロ** — コードを一切書かない。概念理解に集中するため、「手を動かしたい」人には不向き
-- **2024年秋時点で固定** — GRPO、推論時計算の拡張（o1以降）、RLM、Agent Harness、Claude Mythos等はカバーされない
-- **論文読解力が必要** — 毎週1-2本の論文を読む負荷。前提知識としてCOS484（深層学習）相当が必要
-- **アクティブ参加が前提** — Pre-lecture form提出＋Debate Panel＋Lecture Scribing。独学ではScribeノート＋論文リストとしての活用に限定される
+- **Zero implementation** — No coding at all. Focuses on conceptual understanding; unsuitable for those who want hands-on practice.
+- **Frozen as of Fall 2024** — GRPO, test-time compute scaling (post-o1), RLM, Agent Harness, Claude Mythos, etc. are not covered.
+- **Paper reading proficiency required** — Load of 1-2 papers per week. Prerequisite knowledge equivalent to COS484 (Deep Learning) is needed.
+- **Active participation assumed** — Pre-lecture form submission + Debate Panel + Lecture Scribing. Self-study is limited to using Scribe notes + paper lists.
 
 ---
 
-## 学習優先順位の中での位置づけ
+## Position Within Learning Priorities
 
-| 側面 | COS597R | 代替コース |
+| Aspect | COS597R | Alternative Course |
 |------|---------|-----------|
-| 研究スキル | 🟢 **最高。論文精読＋批判的議論** | CS336: 実装スキルに集中 |
-| LLM知識の幅 | 🟢 事前学習→展開まで全範囲 | CMU LLMs: 応用重視、理論は薄い |
-| 実装経験 | ⚪ なし | CS336: 全部実装 |
-| 参加ハードル | 🔵 論文読解力が必要 | CMU LLMs: 最も入門しやすい |
-| アクセスのしやすさ | 🟢 全教材公開、Scribeノート充実 | — |
+| Research Skills | 🟢 **Best. Paper close-reading + critical discussion** | CS336: Focus on implementation skills |
+| LLM Knowledge Breadth | 🟢 Full range from pre-training to deployment | CMU LLMs: Application-focused, theory is light |
+| Implementation Experience | ⚪ None | CS336: Full implementation |
+| Participation Barrier | 🔵 Paper reading proficiency required | CMU LLMs: Most beginner-friendly |
+| Accessibility | 🟢 All materials public, rich Scribe notes | — |
 
 ---
 
-## 関連Wikiページ
+## Related Wiki Pages
 
-- [[concepts/learning-llms-in-2025]] — Yoav Goldbergの全体ガイド
-- [[concepts/stanford-cs336-language-modeling-from-scratch]] — 実装版の対抗馬
-- [[concepts/decoder-only-gpt]] — コース全体の前提アーキテクチャ
-- [[concepts/fine-tuning/rlhf-dpo-preference]] — 選好最適化（第6週）
-- [[concepts/grpo-rl-training]] — 推論時計算の後続（第9週の発展）
-- [[concepts/flashattention-pytorch-educational]] — FlashAttention（第13週）
-- [[concepts/agentic-rag]] — RAG（第11週）
-- [[concepts/ai-safety]] — Constitutional AI（第7週）
-- [[concepts/kv-cache]] — 長文脈（第8週）
-- [[concepts/attention-mechanism-variants]] — RoPE（第8週）
+- [[concepts/learning-llms-in-2025]] — Yoav Goldberg's comprehensive guide
+- [[concepts/stanford-cs336-language-modeling-from-scratch]] — The implementation-focused counterpart
+- [[concepts/decoder-only-gpt]] — The underlying architecture for the entire course
+- [[concepts/fine-tuning/rlhf-dpo-preference]] — Preference optimization (Week 6)
+- [[concepts/grpo-rl-training]] — Follow-up on test-time compute (extension of Week 9)
+- [[concepts/flashattention-pytorch-educational]] — FlashAttention (Week 13)
+- [[concepts/agentic-rag]] — RAG (Week 11)
+- [[concepts/ai-safety]] — Constitutional AI (Week 7)
+- [[concepts/kv-cache]] — Long context (Week 8)
+- [[concepts/attention-mechanism-variants]] — RoPE (Week 8)
 
 ---
 
-> **このページはメタ知識（知識マップ）です。** Princeton COS597Rのカリキュラム構造と論文ロードマップをWiki概念にマッピングしています。実際の講義ノートや論文はprinceton-cos597r.github.ioを参照してください。
+> **This page is meta-knowledge (a knowledge map).** It maps the Princeton COS597R curriculum structure and paper roadmap onto Wiki concepts. For actual lecture notes and papers, please refer to princeton-cos597r.github.io.

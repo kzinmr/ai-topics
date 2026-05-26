@@ -18,104 +18,104 @@ sources:
 
 # Agent-First Codebase Design
 
-コードベースを「人間がナビゲートしやすい」のではなく**「AIエージェントが作業しやすい」ように設計する**哲学。
+A philosophy of designing codebases for **"AI agents to work in efficiently"** rather than for "humans to navigate easily."
 
-## 核心原則
+## Core Principles
 
 > *"I don't design codebases to be easy to navigate for me, I engineer them so agents can work in it efficiently. Fighting the model is often a waste of time and tokens."*
 > — Peter Steinberger
 
-従来のコード設計は「人間が読んで理解しやすいこと」を第一に置いていた。エージェント時代では、**「エージェントが正確に操作できること」**が同等以上に重要になる。
+Traditional code design prioritized "being easy for humans to read and understand." In the agent era, **"being precisely operable by agents"** becomes equally or more important.
 
-## なぜAgent-Firstなのか
+## Why Agent-First
 
-| 次元 | 人間中心設計 | エージェント中心設計 |
+| Dimension | Human-Centered Design | Agent-Centered Design |
 |------|------------|-------------------|
-| 第一目標 | 可読性・表現力 | 操作の確実性 |
-| ナビゲーション | IDEの検索・ジャンプ機能に依存 | ファイル構造・命名規則で誘導 |
-| リファクタリング | 大規模変更を一度に実施 | 小さく分割してステップバイステップ |
-| テスト | カバレッジ重視 | エージェントの自己検証手段として重視 |
-| ドキュメント | 包括的なREADME | 構造化された`CLAUDE.md`/`AGENTS.md` |
+| Primary Goal | Readability & expressiveness | Operational reliability |
+| Navigation | Relies on IDE search & jump features | Guided by file structure & naming conventions |
+| Refactoring | Large-scale changes in one go | Split small, step-by-step |
+| Testing | Coverage-focused | Emphasized as agent self-verification mechanism |
+| Documentation | Comprehensive README | Structured `CLAUDE.md`/`AGENTS.md` |
 
-## 実践パターン
+## Practical Patterns
 
-### 1. 明確なファイル構造
+### 1. Clear File Structure
 
-エージェントはファイルの階層や命名規則からコンテキストを推測する。
+Agents infer context from file hierarchy and naming conventions.
 
 ```
 project/
-├── CLAUDE.md          # プロジェクト全体の指示・制約
-├── AGENTS.md          # エージェント向け開発ガイド
+├── CLAUDE.md          # Project-wide instructions and constraints
+├── AGENTS.md          # Agent development guide
 ├── docs/
-│   ├── architecture.md # システム設計の意図
-│   └── patterns.md    # 使用パターン集
+│   ├── architecture.md # System design intent
+│   └── patterns.md    # Usage patterns collection
 ├── src/
-│   ├── core/          # 安定した中核ロジック
-│   ├── features/      # 機能別モジュール
-│   └── utils/         # ユーティリティ
+│   ├── core/          # Stable core logic
+│   ├── features/      # Feature-specific modules
+│   └── utils/         # Utilities
 └── tests/
 ```
 
-### 2. 自己記述的な命名
+### 2. Self-Descriptive Naming
 
 > *"Good naming is better than comments for agents."*
 
-- 関数名：`fetchUserById()` ではなく `fetchUserById_orReturnNull()`
-- ファイル名：`auth.ts` ではなく `auth-middleware.ts`
-- 変数名：`data` ではなく `userProfileResponse`
+- Function name: `fetchUserById()` → `fetchUserById_orReturnNull()`
+- File name: `auth.ts` → `auth-middleware.ts`
+- Variable name: `data` → `userProfileResponse`
 
-### 3. 小さく独立したモジュール
+### 3. Small, Independent Modules
 
-エージェントは大きなファイルを一度に読むとコンテキストを消費する。小さなモジュールに分割することで：
-- トークン使用量を削減
-- 影響範囲の特定が容易
-- サブエージェントへの委任がしやすい
+Reading a large file at once consumes agent context. Splitting into small modules:
+- Reduces token usage
+- Makes impact scope identification easier
+- Makes delegation to sub-agents easier
 
-### 4. 実行可能なテスト
+### 4. Executable Tests
 
-エージェントにとってテストは「ドキュメント」であり「安全網」である。
+For agents, tests are "documentation" and "safety nets."
 
-- テストが通っている = 変更が安全
-- テストが落ちている = 何かを壊した
-- テストを書く = 仕様の明確化
+- Tests passing = changes are safe
+- Tests failing = something broke
+- Writing tests = clarifying specifications
 
-### 5. 構造化された指示ファイル
+### 5. Structured Instruction Files
 
-`CLAUDE.md` や `AGENTS.md` で以下の情報を構造化して提供：
-- プロジェクトの目的
-- 使用技術スタック
-- コーディング規約
-- 避けるべきパターン
-- 既存の解決策への参照
+Provide structured information in `CLAUDE.md` or `AGENTS.md`:
+- Project purpose
+- Technology stack
+- Coding conventions
+- Patterns to avoid
+- References to existing solutions
 
-## Steipeteの実践例
+## Steipete's Practical Examples
 
-Peter Steinbergerは以下のようにエージェント向けにコードベースを設計している：
+Peter Steinberger designs codebases for agents as follows:
 
-- **GoをCLIに選択**：型システムがシンプルでエージェントが扱いやすい
-- **TypeScriptをWebに選択**：エコシステムが整っており、エージェントの学習データが豊富
-- **`docs/`フォルダをプロジェクトごとに維持**：エージェントに読ませるためのコンテキストソース
-- **スクリプトで関連ドキュメントを強制読み込み**：エージェントが作業前に必要な情報を確実に取得
+- **Go for CLI**: Type system is simple and easy for agents to handle
+- **TypeScript for Web**: Ecosystem is mature, abundant training data for agents
+- **Maintain `docs/` per project**: Context source for agents to read
+- **Force-load relevant docs via scripts**: Ensure agents obtain necessary information before working
 
-## 人間中心設計との違い
+## Differences from Human-Centered Design
 
-Agent-First設計は人間中心設計の**否定**ではない。両者は補完関係にある：
+Agent-First design is **not a rejection** of human-centered design. The two are complementary:
 
-| | 人間中心 | Agent-First | 共通点 |
+| | Human-Centered | Agent-First | Common Ground |
 |---|---------|------------|--------|
-| 命名 | 意味を重視 | 操作結果を明示 | どちらも明確さを追求 |
-| 構造 | 関心の分離 | トークン効率 | モジュール化が鍵 |
-| ドキュメント | 背景・意図 | 手順・制約 | どちらも必要 |
-| テスト | 品質保証 | 自己検証手段 | 自動化が前提 |
+| Naming | Emphasizes meaning | Makes operation results explicit | Both pursue clarity |
+| Structure | Separation of concerns | Token efficiency | Modularity is key |
+| Documentation | Background & intent | Procedures & constraints | Both are needed |
+| Testing | Quality assurance | Self-verification mechanism | Automation is assumed |
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/context-window-management]] — エージェントのコンテキスト制約を理解する
-- [[concepts/harness-engineering/agentic-workflows/how-agents-work]] — エージェントの内部仕組み
-- [[concepts/harness-engineering/agentic-workflows/cli-first-development]] — CLI起点開発パターン
-- [[concepts/agentic-engineering]] — 上位概念
+- [[concepts/context-window-management]] — Understanding agent context constraints
+- [[concepts/harness-engineering/agentic-workflows/how-agents-work]] — How agents work internally
+- [[concepts/harness-engineering/agentic-workflows/cli-first-development]] — CLI-first development pattern
+- [[concepts/agentic-engineering]] — Higher-level concept
 
-## 参照
+## References
 
--  — Agent-First Designの提唱者- [Shipping at Inference-Speed](https://steipete.me/posts/2025/shipping-at-inference-speed)
+-  — Proponent of Agent-First Design- [Shipping at Inference-Speed](https://steipete.me/posts/2025/shipping-at-inference-speed)

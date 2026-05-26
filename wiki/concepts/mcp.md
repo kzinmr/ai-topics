@@ -17,84 +17,84 @@ sources: ["https://www.anthropic.com/news/model-context-protocol", "https://www.
 
 # MCP (Model Context Protocol)
 
-**MCP (Model Context Protocol)** は、Anthropicが2024年11月にオープンソース化した、LLMが外部ツール・データソースと通信するための**標準プロトコル**。AIアプリケーションと外部サービス間の「M×N統合問題」を解決する。
+**MCP (Model Context Protocol)** is an **open standard protocol** open-sourced by Anthropic in November 2024, enabling LLMs to communicate with external tools and data sources. It solves the "M×N integration problem" between AI applications and external services.
 
-## 概要
+## Overview
 
-| 項目 | 詳細 |
+| Item | Detail |
 |------|------|
-| **発表日** | 2024年11月25日 |
-| **開発者** | David Soria Parra, Justin Spahr-Summers (Anthropic) |
-| **設計インスピレーション** | MicrosoftのLanguage Server Protocol (LSP) |
-| **トランスポート** | JSON-RPC 2.0 (stdio, HTTP+SSE, Streamable HTTP) |
-| **ライセンス** | MIT (オープンソース) |
+| **Announced** | November 25, 2024 |
+| **Developers** | David Soria Parra, Justin Spahr-Summers (Anthropic) |
+| **Design Inspiration** | Microsoft's Language Server Protocol (LSP) |
+| **Transport** | JSON-RPC 2.0 (stdio, HTTP+SSE, Streamable HTTP) |
+| **License** | MIT (open source) |
 
-## 3つのプリミティブ
+## The Three Primitives
 
-| プリミティブ | 制御権 | 説明 |
+| Primitive | Control | Description |
 |-------------|--------|------|
-| **Tools** | モデル制御 | LLMが呼び出す外部機能（検索、計算、API呼び出し） |
-| **Resources** | アプリケーション制御 | 構造化データストリーム（ファイル内容、DBレコード） |
-| **Prompts** | ユーザー制御 | 再利用可能な指示テンプレート |
+| **Tools** | Model-controlled | External functions called by the LLM (search, computation, API calls) |
+| **Resources** | Application-controlled | Structured data streams (file contents, DB records) |
+| **Prompts** | User-controlled | Reusable instruction templates |
 
-## 実用的起源 (Practical Origins)
+## Practical Origins
 
-MCPは抽象的なアーキテクチャ設計からではなく、Anthropic社内で起きた**2つの実践的危機の収斂**から生まれた。
+MCP was born not from abstract architectural design, but from the **convergence of two practical crises** inside Anthropic.
 
-### 個人レベルのフラストレーション (David Soria Parra)
+### Personal Frustration (David Soria Parra)
 
-2024年半ば、David Soria Parraは「Claudeを使ってAnthropic内部の開発を加速する」ミッションで入社。彼が直面した日常的な問題：
+In mid-2024, David Soria Parra joined Anthropic with a mission to "accelerate Anthropic's internal development using Claude." The daily problem he faced:
 
-> Claude Desktop（強力な機能があるがファイルにアクセスできない）とIDE（ファイルにアクセスできるがClaudeの機能がない）の間で、**常にコピー＆ペースト**を繰り返していた。
+> Constantly **copy-pasting** between Claude Desktop (powerful features but no file access) and the IDE (file access but no Claude features).
 
-彼の問い：「アプリケーションがユーザーに独自の統合を構築させるには何が必要か？」
+His question: "What does it take for applications to let users build their own integrations?"
 
-Justin Spahr-Summersとともに、LSPをモデルにしたプロトコルを**約6週間**でプロトタイピング。最初の公開実装はZedエディタで登場。社内ハッカソンでは**MCPサーバーが3Dプリンターを制御**するデモが話題に。2024年11月25日にオープンソース化。
+Together with Justin Spahr-Summers, they prototyped a protocol modeled on LSP in **about 6 weeks**. The first public implementation appeared in the Zed editor. At an internal hackathon, a demo of an **MCP server controlling a 3D printer** became a talking point. Open-sourced on November 25, 2024.
 
-### 組織レベルの統合カオス (John Welsh)
+### Organization-Level Integration Chaos (John Welsh)
 
-John Welsh (Anthropic MTS) が AI Engineer World's Fair 2025 で語った社内実態：
+The internal reality as described by John Welsh (Anthropic MTS) at AI Engineer World's Fair 2025:
 
-- **2023年末〜2024年初頭**: LLMのツール呼び出しが実用レベルに到達
-- Anthropic社内の各チームが**無秩序に統合を構築**し始める（Google Drive, 地図, メッセージングシステムなど）
-- 各チームがカスタムエンドポイント (`/call-tool`, `/get-context`) を独自実装
-- **重複機能、非互換インターフェース、コード再利用不能** — Welsh はこれを「**integration chaos（統合カオス）**」と呼ぶ
-- あるサービスで動作する統合を別のサービスに移植するのに**数週間**かかる状態
+- **Late 2023 to early 2024**: LLM tool calling reached practical usability
+- Teams across Anthropic started **building integrations chaotically** (Google Drive, maps, messaging systems, etc.)
+- Each team implemented custom endpoints (`/call-tool`, `/get-context`) independently
+- **Duplicate functionality, incompatible interfaces, unreusable code** — Welsh calls this "**integration chaos**"
+- Porting an integration working for one service to another took **weeks**
 
-驚くべきことに、これらのカスタムエンドポイントの多くが**MCPと似たパターンに独立収斂**していた（ツール発見、リソース取得など）— プロトコルの設計が自然な収束点だった証拠。
+Remarkably, many of these custom endpoints had **independently converged on patterns similar to MCP** (tool discovery, resource acquisition, etc.) — evidence that the protocol design was a natural convergence point.
 
-### MCP Gateway — 「成功のピット」
+### MCP Gateway — "Pit of Success"
 
-AnthropicはMCPを社内標準として採用し、**MCP Gateway** を構築：
-- OAuth認証の一元管理
-- レート制限制御
-- オブザーバビリティ
-- 「正しいやり方を最も簡単なやり方にする」設計思想
+Anthropic adopted MCP as an internal standard and built the **MCP Gateway**:
+- Centralized OAuth authentication management
+- Rate limiting
+- Observability
+- Design philosophy: "Make the right way the easiest way"
 
 > *"It's not a competitive advantage to be good at plumbing integrations."* — John Welsh
 
-## MCPが解決した「M×N問題」
+## The "M×N Problem" MCP Solved
 
-MCP以前：M個のAIアプリケーション × N個の外部サービスの組み合わせ分だけカスタム統合が必要だった。
+Before MCP: M AI applications × N external services required custom integrations for every combination.
 
 | Before MCP | After MCP |
 |------------|-----------|
-| M × N のカスタム実装 | M + N の標準化された接続 |
-| OpenAI Function Calling, Google Extensions, LangChain Tools — すべてベンダー固有 | 単一プロトコルで全ベンダー対応 |
-| 新しいデータソースごとに独自実装 | MCPサーバーを1つ書くだけ |
+| M × N custom implementations | M + N standardized connections |
+| OpenAI Function Calling, Google Extensions, LangChain Tools — all vendor-specific | Single protocol for all vendors |
+| Custom implementation per new data source | Just write one MCP server |
 
-## 業界タイムライン
+## Industry Timeline
 
-| 日付 | イベント |
+| Date | Event |
 |------|----------|
-| Jun 2023 | OpenAI Function Calling 発表 |
-| 2023-2024 | Google Extensions, LangChain Tools が乱立 |
-| ~Jul 2024 | David Soria Parra が MCP コンセプト開発開始 |
-| Sep 2024 | Zedエディタで初の公開MCP実装 |
-| Nov 25, 2024 | AnthropicがMCPをオープンソース化 |
-| Jun 2025 | AI Engineer World's Fair 2025 でMCPトラック全編開催 |
+| Jun 2023 | OpenAI Function Calling announced |
+| 2023-2024 | Google Extensions, LangChain Tools proliferate |
+| ~Jul 2024 | David Soria Parra begins developing MCP concept |
+| Sep 2024 | First public MCP implementation in Zed editor |
+| Nov 25, 2024 | Anthropic open-sources MCP |
+| Jun 2025 | Full MCP track held at AI Engineer World's Fair 2025 |
 
-## 主要ソース
+## Key Sources
 
 - [John Welsh: "What we learned from shipping remote MCP support at Anthropic" (AIEWF 2025)](https://www.youtube.com/watch?v=0NHCyq8bBcM)
 - [Theo Chu: "MCP: Origins and Requests For Startups" (AIEWF 2025)](https://www.youtube.com/watch?v=x-8pBqWiTzk)
