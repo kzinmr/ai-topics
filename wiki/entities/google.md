@@ -231,37 +231,37 @@ This positions Google as having re-entered the frontier model race after a perio
 
 ## Gemini Enterprise Agent Platform
 
-Googleは企業向けAgentプラットフォームとして、エージェントの構築・スケーリング・ガバナンス・最適化を包括的に提供する戦略を打ち出している。
+Google has positioned itself as an enterprise-grade Agent platform, offering a comprehensive strategy for building, scaling, governing, and optimizing agents.
 
-### コアコンポーネント
+### Core Components
 
-| コンポーネント | 役割 |
+| Component | Role |
 |---|---|
-| **Agent Identity** | エージェントの認証・認可・アイデンティティ管理 |
-| **Agent Registry** | エージェントの登録・発見・バージョン管理 |
-| **Agent Gateway** | エージェント間通信・APIゲートウェイ・トラフィック制御 |
-| **Simulation** | エージェントの本番前テスト・シミュレーション環境 |
-| **Evaluation** | エージェントの品質評価・パフォーマンス計測 |
-| **Observability** | エージェントの監視・ロギング・トレーシング |
+| **Agent Identity** | Agent authentication, authorization, and identity management |
+| **Agent Registry** | Agent registration, discovery, and version management |
+| **Agent Gateway** | Inter-agent communication, API gateway, and traffic control |
+| **Simulation** | Pre-production testing and simulation environment for agents |
+| **Evaluation** | Agent quality evaluation and performance measurement |
+| **Observability** | Agent monitoring, logging, and tracing |
 
-このコンポーネント群は、Googleを「**Agent Control Plane（エージェント制御層）**」モデルへとポジショニングするものであり、単なるモデル提供者からエンタープライズAgentインフラ全体を掌握するプラットフォーマーへの進化を示している。
+These components position Google in the "**Agent Control Plane**" model, representing an evolution from a mere model provider to a platform owner controlling the entire enterprise agent infrastructure.
 
-### FDE（Forward Deployed Engineer）戦略
+### FDE (Forward Deployed Engineer) Strategy
 
-Google Cloudは**Forward Deployed Engineers（FDE）**を活用し、システムインテグレーター（SI）と連携しながら、エンタープライズ顧客の深い技術的課題を解決するアプローチを取っている。
+Google Cloud is leveraging **Forward Deployed Engineers (FDE)** in partnership with System Integrators (SIs) to solve deep technical challenges for enterprise customers.
 
-- FDEはSIとパートナーシップを組み、顧客固有のニーズに対応
-- 単なるSaaS提供ではなく、現場密着型のエンジニアリングサービスを併用
-- これにより、汎用プラットフォームではカバーしきれないエンタープライズの個別要件に対応
+- FDEs partner with SIs to address customer-specific needs
+- Not just SaaS delivery — on-site engineering services are used in parallel
+- This addresses enterprise-specific requirements that general-purpose platforms cannot fully cover
 
-### 戦略的ポジション
+### Strategic Position
 
-Googleは以下の**二正面戦略**を展開している：
+Google is pursuing the following **two-front strategy**:
 
-1. **Agentガバナンス層の構築**: Agent Identity、Registry、Gatewayなどを通じて、企業がエージェントを安全に管理・運用するためのコントロールプレーンを提供
-2. **FDEによる現場密着サービス**: SIとの連携を通じて、企業固有の課題に対する深い技術支援を提供
+1. **Building an Agent governance layer**: Providing a control plane for enterprises to securely manage and operate agents through Agent Identity, Registry, Gateway, etc.
+2. **FDE field-deployed services**: Providing deep technical support for enterprise-specific challenges through SI partnerships
 
-この「プラットフォーム＋FDE」の組み合わせは、**OpenAI**や**Anthropic**と同様のデュアルアプローチであり、モデル性能競争からエンタープライズAgent運用インフラの覇権争いへと競争軸がシフトしていることを示している。
+This "Platform + FDE" combination follows a dual approach similar to **OpenAI** and **Anthropic**, indicating that the competitive axis is shifting from model performance battles to dominance in enterprise agent operational infrastructure.
 
 ## Relationships
 - [[concepts/gemini]] — Google's multimodal model family (detailed entity)

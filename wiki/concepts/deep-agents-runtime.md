@@ -14,7 +14,7 @@ tags:
 status: complete
 description: "Production runtime primitives for deep AI agents — durable execution, memory, multi-tenancy, HITL, guardrails, observability, sandbox, and cron."
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-05-26
 sources:
   - "https://x.com/i/article/2046277232537256002"
 related:
@@ -26,61 +26,61 @@ related:
 
 # Deep Agents Runtime
 
-> **Definition:** Deep AgentsはLangChain/Anthropicが構築したプロダクション対応エージェントランタイム。durable execution、memory、multi-tenancy、guardrails、HITL、observability、sandboxed code execution、scheduled cronをパッケージ化。
+> **Definition:** Deep Agents is a production-grade agent runtime built by LangChain/Anthropic. It packages durable execution, memory, multi-tenancy, guardrails, HITL, observability, sandboxed code execution, and scheduled cron.
 
-## 生産環境で必要とされるランタイム要件
+## Production Runtime Requirements
 
-### 1. Durable Execution (永続実行)
-エージェントのループ（prompt → reasoning → tool call → observe → repeat）は数分〜数時間に及ぶ。単一の実行が数十回のモデル呼び出しやサブエージェントの生成を行うことがある。
+### 1. Durable Execution
+Agent loops (prompt → reasoning → tool call → observe → repeat) can span minutes to hours. A single execution may involve dozens of model calls or sub-agent spawns.
 
-**2つの核心要件:**
-- **Long runs survive infrastructure failures** — ワーカープロセスが死んでも、トークン代とtool callを無駄にしない。最後の完了ステップからresumeする
-- **Agents can stop and wait** — ヒトの承認を待機する際、ワーカープロセス/クライアント接続を占有しない。リソースを解放し、後で再開する
+**Two core requirements:**
+- **Long runs survive infrastructure failures** — If a worker process dies, don't waste token costs and tool calls. Resume from the last completed step.
+- **Agents can stop and wait** — When waiting for human approval, don't hold a worker process/client connection open. Free resources and resume later.
 
-**実装:**
-- 管理されたtask queue + automatic checkpointing
-- 各super-stepがPostgreSQL（デフォルト）にcheckpointをwrite（thread_idでkey）
-- ワーカー障害時はleaseがreleaseされ、別のワーカーがlatest checkpointから再開
-- 可変retry policies（backoff、max attempts、per-node exception）
+**Implementation:**
+- Managed task queue + automatic checkpointing
+- Each super-step writes a checkpoint to PostgreSQL (default), keyed by thread_id
+- On worker failure, the lease is released and another worker resumes from the latest checkpoint
+- Configurable retry policies (backoff, max attempts, per-node exception)
 
-### 2. Memory — 2層メモリ構造
-- **Short-term memory** — シングル会話内で蓄積される。checkpointに保存、thread_idでスコープ。会話終了後消失
-- **Long-term memory** — 会話間を横断する。ユーザー設定、プロジェクト規約、知識ベース。namespace tuplesでorganized（例: `(user_id, "memories")`）
+### 2. Memory — Two-Layer Memory Structure
+- **Short-term memory** — Accumulated within a single conversation. Saved to checkpoints, scoped by thread_id. Disappears after conversation ends.
+- **Long-term memory** — Crosses conversations. User settings, project conventions, knowledge bases. Organized by namespace tuples (e.g., `(user_id, "memories")`)
 
-**Long-term Memoryの保存場所:**
-- Agent Serverのbuilt-in store（key-value interface）
-- PostgreSQL backed、semantic search via embeddings
-- namespaceでuser/assistant/orgごとにスコープ可能
-- APIで直接query可能
+**Long-term Memory Storage:**
+- Agent Server's built-in store (key-value interface)
+- PostgreSQL backed, semantic search via embeddings
+- Scopable per user/assistant/org via namespaces
+- Directly queryable via API
 
-### 3. Multi-tenancy — 3層分離
-1. **Data isolation** — Custom auth middleware（`@auth.authenticate`）。リソースにownership metadataをタグ付け
-2. **Agent acting on behalf of user** — Agent AuthがOAuth danceとtoken storageを処理。ユーザーは1回認証、エージェントがその後で代わりに行動
-3. **Operator-level access control** — RBACでチームメンバーのデプロイ/設定/トレース権限を管理
+### 3. Multi-tenancy — Three-Layer Isolation
+1. **Data isolation** — Custom auth middleware (`@auth.authenticate`). Tags resources with ownership metadata.
+2. **Agent acting on behalf of user** — Agent Auth handles OAuth dance and token storage. User authenticates once, agent acts on their behalf afterward.
+3. **Operator-level access control** — RBAC manages team member permissions for deployment, configuration, and tracing.
 
 ### 4. Human-in-the-Loop (HITL)
-2つのシチュエーション:
-- **Tool call review** — 重要なアクション（メール送信、金融取引、ファイル削除）前にヒトが承認
-- **Clarifying question** — ヒトの判断/好みに依存する判断ポイント
+Two scenarios:
+- **Tool call review** — Human approval before critical actions (email sending, financial transactions, file deletion)
+- **Clarifying question** — Decision points that depend on human judgment/preferences
 
-**実装:**
-- `interrupt()` — 実行をpauseしpayloadをcallerにsurface
-- `Command(resume=...)` — ヒトのresponseでresume
-- checkpointがdurable storageに保存。resumeは任意のJSON-serializable value（approve/rejectだけでなく、edited draft、missing context、computed results）
+**Implementation:**
+- `interrupt()` — Pauses execution and surfaces payload to the caller
+- `Command(resume=...)` — Resumes with the human's response
+- Checkpoint saved to durable storage. Resume can be any JSON-serializable value (not just approve/reject — edited drafts, missing context, computed results)
 
 ### 5. Real-time Interaction
-- **Streaming** — partial outputをリアルタイムでclientにflow。4モード: full state snapshots、state updates only、token-by-token LLM output、custom events
-- **Thread streaming** — 長寿接続、follow-up/background/HITL-resumptionをすべて同じthreadでdelivery。`Last-Event-ID`でresume
-- **Double-texting** — 新しいmessageが古いrun中に送られてきた場合:
-  - `enqueue`（デフォルト）: 待機してsequential処理
-  - `reject`: 新しいinputを拒否
-  - `interrupt`: 現在のrunをhaltし、new inputをそのstateから処理
-  - `rollback`: 現在のrunをhaltし、すべてのprogressをrevertしてfresh runとして処理
+- **Streaming** — Flows partial output to the client in real-time. 4 modes: full state snapshots, state updates only, token-by-token LLM output, custom events.
+- **Thread streaming** — Long-lived connection, delivering follow-ups/background/HITL-resumption all on the same thread. Resume with `Last-Event-ID`.
+- **Double-texting** — When a new message arrives while an old run is in progress:
+  - `enqueue` (default): Queue and process sequentially
+  - `reject`: Reject the new input
+  - `interrupt`: Halt the current run, process new input from that state
+  - `rollback`: Halt the current run, revert all progress, process as a fresh run
 
 ### 6. Guardrails (Middleware)
-2つの主要ケース:
-- **PII Redaction** — モデルが見る前にsensitive dataをredact。every model callでdeterministically実行
-- **Cap expensive operations** — 有料external APIの呼出数をper runでキャップ
+Two main cases:
+- **PII Redaction** — Redacts sensitive data before the model sees it. Runs deterministically on every model call.
+- **Cap expensive operations** — Caps the number of paid external API calls per run.
 
 **LangChain built-in middleware:**
 PIIRedactionMiddleware, ModelRetryMiddleware, ModelFallbackMiddleware, ToolCallLimitMiddleware, SummarizationMiddleware, HumanInTheLoopMiddleware, OpenAIModerationMiddleware
@@ -88,29 +88,29 @@ PIIRedactionMiddleware, ModelRetryMiddleware, ModelFallbackMiddleware, ToolCallL
 **Hooks:** `before_model`, `wrap_model_call`, `wrap_tool_call`, `after_model`
 
 ### 7. Observability & Time Travel
-- 実行ツリーをout of the boxで取得（model calls、tool calls、subagent runs、middleware hooks）
-- 費用/エラー/ユーザー/カスタムタグでfilter
-- **Polly** — LangSmith AI assistantがtracesを分析しcommon failure modes/slow tool calls/repeated patternsをsurface
+- Execution tree available out of the box (model calls, tool calls, subagent runs, middleware hooks)
+- Filter by cost/errors/users/custom tags
+- **Polly** — LangSmith AI assistant analyzes traces and surfaces common failure modes, slow tool calls, repeated patterns
 - **Online Evals** — LLM-as-judge or custom scorers for production traces
-- **Time Travel** — checkpointからrewindしstateをmodifyしてbranch。fork元のthreadは保持。LLM/tool call/interruptがすべてre-triggerされる
+- **Time Travel** — Rewind from a checkpoint, modify state, and branch. The original fork thread is preserved. All LLM/tool call/interrupts are re-triggered
 
 ### 8. Sandboxed Code Execution
-- **Sandbox backends:** Daytona, Modal, Runloop, LangSmith Sandboxes（private preview）
-- LangSmith Sandboxes: templates for container images/resource limits/volumes, warm pools for cold start elimination, auth proxy sidecarでcredentials never enter sandbox
+- **Sandbox backends:** Daytona, Modal, Runloop, LangSmith Sandboxes (private preview)
+- LangSmith Sandboxes: templates for container images/resource limits/volumes, warm pools for cold start elimination, auth proxy sidecar ensures credentials never enter the sandbox
 
 ### 9. Integrations
-- **MCP** — Model Context Protocol（標準化されたagent-tool/data接続）
-- **A2A** — Agent-to-Agent standard（multi-agent architectures across deployments）
-- **Webhooks** — run completionでdownstreamをkick off
-- **Cron** — scheduled runs（stateful: threadにtie, stateless: fresh thread per execution）
+- **MCP** — Model Context Protocol (standardized agent-tool/data connection)
+- **A2A** — Agent-to-Agent standard (multi-agent architectures across deployments)
+- **Webhooks** — Kick off downstream processes on run completion
+- **Cron** — Scheduled runs (stateful: tied to threads; stateless: fresh thread per execution)
 
-### 10. Open Harness (Lock-in avoidance)
+### 10. Open Harness (Lock-in Avoidance)
 - MIT licensed harness + fully open source
-- AGENTS.md（open standard）for agent instructions
+- AGENTS.md (open standard) for agent instructions
 - Open protocols: MCP, A2A, Agent Protocol
-- inspection/customization/extension of every layer（rate limits, retry logic, model fallback, PII detection, file permissions）
+- Every layer can be inspected/customized/extended (rate limits, retry logic, model fallback, PII detection, file permissions)
 
-## 関連リソース
+## Related Resources
 - [Going to Production Guide](https://docs.deepagents.ai) — credential management, async patterns, frontend integration
 - [LangSmith Deployment & Agent Server docs](https://docs.langchain.com)
 - [Deep Agents deploy docs](https://docs.deepagents.ai/deploy)

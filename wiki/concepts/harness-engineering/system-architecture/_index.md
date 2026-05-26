@@ -1,12 +1,12 @@
 ---
-title: "System Architecture — Harness Engineering配下のシステム設計"
+title: "System Architecture — System Design Under Harness Engineering"
 type: concept
 aliases:
   - system-architecture
   - agent-system-design
   - agent-architecture-patterns
 created: 2026-04-12
-updated: 2026-04-19
+updated: 2026-05-26
 tags:
   - concept
   - methodology
@@ -17,70 +17,70 @@ parent: harness-engineering
 sources: []
 ---
 
-# System Architecture — Harness Engineering配下のシステム設計
+# System Architecture — System Design Under Harness Engineering
 
-AI Agentを「構築する」ためのシステム設計・アーキテクチャパターン。**Harness Engineeringのサブセクション**として位置づけられる。
+System design and architecture patterns for **building** AI agents. Positioned as a **sub-section of Harness Engineering**.
 
-Anthropic EngineeringブログとOpenAI Cookbookが主要出典。エージェントの内部構造、ツール設計、評価、コンテキスト管理などの技術的な側面をカバー。
+The Anthropic Engineering blog and OpenAI Cookbook are the primary sources. Covers technical aspects such as agent internal structure, tool design, evaluation, and context management.
 
-## Harness Engineering内での位置づけ
+## Positioning within Harness Engineering
 
-| レイヤー | 概念 | 焦点 |
+| Layer | Concept | Focus |
 |---------|------|------|
-| **最上位** | [[concepts/_index|Harness Engineering]] | Agent = Model + Harness（環境設計哲学） |
-| **横断技術** | [[concepts/context-engineering]] | コンテキストの選択・圧縮・配置（有限リソース管理） |
-| **応用（人間側）** | [[concepts/agentic-engineering]] | 開発者がエージェントを「活用する」パターン |
-| **応用（システム側）** | **System Architecture**（本ページ） | エージェントを「構築する」パターン |
+| **Top Layer** | [[concepts/_index|Harness Engineering]] | Agent = Model + Harness (environment design philosophy) |
+| **Cross-cutting** | [[concepts/context-engineering]] | Context selection, compression, placement (finite resource management) |
+| **Application (Human Side)** | [[concepts/agentic-engineering]] | Patterns for developers "using" agents |
+| **Application (System Side)** | **System Architecture** (this page) | Patterns for "building" agents |
 
-## コンセプト一覧
+## Concept List
 
-### 🏗️ エージェント設計パターン
+### 🏗️ Agent Design Patterns
 
-| ページ | 概要 | 出典 |
+| Page | Summary | Source |
 |-------|------|------|
-| [[concepts/building-effective-agents]] | ワークフロー vs エージェント、単純性から始める | Anthropic |
-| [[concepts/multi-agent-research-system]] | Orchestrator-Worker、並列サブエージェント | Anthropic |
+| [[concepts/building-effective-agents]] | Workflows vs agents, start with simplicity | Anthropic |
+| [[concepts/multi-agent-research-system]] | Orchestrator-Worker, parallel sub-agents | Anthropic |
 | [[concepts/harness-engineering/system-architecture/advanced-tool-use]] | Tool Search Tool / PTC / Tool Use Examples | Anthropic |
-| [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] | ツール設計の5原則、評価駆動最適化 | Anthropic |
-| [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] | MCPをコードAPIとして公開（98.7%トークン削減） | Anthropic |
+| [[concepts/harness-engineering/system-architecture/writing-tools-for-agents]] | 5 principles of tool design, evaluation-driven optimization | Anthropic |
+| [[concepts/harness-engineering/system-architecture/code-execution-with-mcp]] | Expose MCP as a code API (98.7% token reduction) | Anthropic |
 
-### 🔄 エージェント実行基盤（OpenAI Responses API）
+### 🔄 Agent Execution Infrastructure (OpenAI Responses API)
 
-| ページ | 概要 | 出典 |
+| Page | Summary | Source |
 |-------|------|------|
-| [[concepts/agent-loop-orchestration]] | モデル提案→シェル実行→結果フィードバックの自律ループ | OpenAI |
-| [[concepts/harness-engineering/system-architecture/context-compaction]] | 長期実行エージェントのコンテキスト圧縮メカニズム | OpenAI |
-| [[concepts/harness-engineering/system-architecture/container-context]] | ホスト型コンテナによる永続的なエージェント作業スペース | OpenAI |
-| [[concepts/agent-skills]] | SKILL.md バンドルによる再利用可能なワークフローパターン | OpenAI |
+| [[concepts/agent-loop-orchestration]] | Autonomous loop: model proposes → shell executes → feedback | OpenAI |
+| [[concepts/harness-engineering/system-architecture/context-compaction]] | Context compaction mechanism for long-running agents | OpenAI |
+| [[concepts/harness-engineering/system-architecture/container-context]] | Persistent agent workspace via host containers | OpenAI |
+| [[concepts/agent-skills]] | Reusable workflow patterns via SKILL.md bundles | OpenAI |
 
-### 🛡️ セキュリティ・制御
+### 🛡️ Security & Control
 
-| ページ | 概要 | 出典 |
+| Page | Summary | Source |
 |-------|------|------|
-| [[concepts/harness-engineering/system-architecture/agent-security-patterns]] | エグレスプロキシ、ドメインスコープシークレットインジェクション | OpenAI |
-| [[concepts/evals-for-ai-agents]] | エージェント評価の基本原則 | Anthropic |
-| [[concepts/infrastructure-noise]] | インフラ設定がベンチマークスコアに与える影響 | Anthropic |
+| [[concepts/harness-engineering/system-architecture/agent-security-patterns]] | Egress proxy, domain-scoped secret injection | OpenAI |
+| [[concepts/evals-for-ai-agents]] | Fundamental principles of agent evaluation | Anthropic |
+| [[concepts/infrastructure-noise]] | Impact of infrastructure settings on benchmark scores | Anthropic |
 
-### 🧠 コンテキスト・内部構造
+### 🧠 Context & Internal Structure
 
-| ページ | 概要 | 出典 |
+| Page | Summary | Source |
 |-------|------|------|
-| [[concepts/harness-design-long-running-apps]] | GAN Inspired Generator-Evaluatorループ、コンテキストリセット | Anthropic |
-| [[concepts/harness-engineering/system-architecture/effective-harnesses-for-long-running-agents]] | 長期実行エージェントのハーネス設計 | Anthropic |
-| [[concepts/claude-code-best-practices]] | Claude Code実践的ベストプラクティス | Sankalp + Anthropic |
+| [[concepts/harness-design-long-running-apps]] | GAN-inspired Generator-Evaluator loop, context reset | Anthropic |
+| [[concepts/harness-engineering/system-architecture/effective-harnesses-for-long-running-agents]] | Harness design for long-running agents | Anthropic |
+| [[concepts/claude-code-best-practices]] | Claude Code practical best practices | Sankalp + Anthropic |
 
-## Agentic Workflowsとの違い
+## Differences from Agentic Workflows
 
-| 次元 | Agentic Workflows | System Architecture |
+| Dimension | Agentic Workflows | System Architecture |
 |------|-------------------|---------------------|
-| 焦点 | 開発者のワークフロー | システムのアーキテクチャ |
-| 主語 | 「人間がエージェントをどう使うか」 | 「エージェントをどう作るか」 |
-| 代表例 | WillisonのRed/Green TDD、Cognitive Debt | AnthropicのBuilding Effective Agents |
-| レイヤー | 応用・活用 | 基盤・設計 |
+| Focus | Developer workflow | System architecture |
+| Subject | "How humans use agents" | "How to build agents" |
+| Representative | Willison's Red/Green TDD, Cognitive Debt | Anthropic's Building Effective Agents |
+| Layer | Application/Use | Foundation/Design |
 
-## 更新履歴
+## Update History
 
-| 日付 | 変更内容 |
+| Date | Changes |
 |------|---------|
-| 2026-04-12 | 初期作成 — Anthropic Engineering記事群を再分類 |
-| 2026-04-19 | Harness umbrella再編成: タイトル更新、重複エントリ削除、位置づけ表追加 |
+| 2026-04-12 | Initial creation — reclassified Anthropic Engineering articles |
+| 2026-04-19 | Harness umbrella reorganization: updated titles, removed duplicate entries, added positioning table |

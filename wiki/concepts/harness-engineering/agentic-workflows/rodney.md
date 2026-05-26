@@ -5,7 +5,7 @@ aliases:
   - rodney
   - rodney-cli
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-05-26
 tags:
   - tool
   - agentic-engineering
@@ -20,59 +20,59 @@ sources:
 
 # Rodney
 
-Simon Willisonが開発した**Chrome DevTools ProtocolベースのCLIブラウザ自動化ツール**。コーディングエージェントがWeb UIをテスト・検証するために設計。
+A **CLI browser automation tool based on the Chrome DevTools Protocol** developed by Simon Willison. Designed for coding agents to test and validate Web UIs.
 
-## 背景
+## Background
 
 > "I went looking for good options for managing a multi-turn browser session from a CLI and came up short, so I decided to try building something new."
 
-既存のブラウザ自動化ツール（Playwright、Selenium）はエージェントのCLI使用に適していなかったため、Willisonが自作。
+Existing browser automation tools (Playwright, Selenium) were not suitable for agent CLI use, so Willison built his own.
 
-## 技術スタック
+## Tech Stack
 
-- **ベース**: [Rod](https://go-rod.github.io/) Go library — Chrome DevTools Protocolの包括的ラッパー
-- **CLI**: Goバイナリ（数MBにコンパイル）、またはPython経由で `uvx rodney`
-- **名前の由来**: Rod library + Only Fools and Horsesへのオマージュ
+- **Base**: [Rod](https://go-rod.github.io/) Go library — Comprehensive Chrome DevTools Protocol wrapper
+- **CLI**: Go binary (compiled to a few MB), or via Python using `uvx rodney`
+- **Namesake**: Rod library + homage to Only Fools and Horses
 
-## 設計哲学
+## Design Philosophy
 
 > "This tool is not designed to be used by humans! The goal is for coding agents to be able to run `rodney --help` and see everything they need to know to start using the tool."
 
-**エージェントファーストCLI**: ヘルプテキストがLLMの消費用に構造化されている。
+**Agent-First CLI**: Help text is structured for LLM consumption.
 
-## 主要コマンド
+## Key Commands
 
-| コマンド | 説明 |
+| Command | Description |
 |----------|------|
-| `rodney start` | バックグラウンドでChromeを起動 |
-| `rodney start --show` | ブラウザウィンドウを可視化（デバッグ用） |
-| `rodney open URL` | ページを開く |
-| `rodney waitstable` | ページの読み込みが安定するまで待機 |
-| `rodney js '...'` | JavaScriptを実行し結果を取得 |
-| `rodney click SELECTOR` | 要素をクリック |
-| `rodney exists SELECTOR` | 要素の存在を確認 |
-| `rodney visible SELECTOR` | 要素の可視性を確認 |
-| `rodney assert` | JavaScriptテストを実行、失敗時exit code 1 |
-| `rodney connect PORT` | 既存のChromeインスタンスに接続 |
-| `rodney reload --hard` | ハードリロード |
-| `rodney clear-cache` | キャッシュクリア |
+| `rodney start` | Launch Chrome in the background |
+| `rodney start --show` | Show browser window (debugging) |
+| `rodney open URL` | Open a page |
+| `rodney waitstable` | Wait until page load stabilizes |
+| `rodney js '...'` | Execute JavaScript and return results |
+| `rodney click SELECTOR` | Click an element |
+| `rodney exists SELECTOR` | Check if element exists |
+| `rodney visible SELECTOR` | Check if element is visible |
+| `rodney assert` | Run JavaScript test, exit code 1 on failure |
+| `rodney connect PORT` | Connect to an existing Chrome instance |
+| `rodney reload --hard` | Hard reload |
+| `rodney clear-cache` | Clear cache |
 
-## Showboatとの連携
+## Showboat Integration
 
-Rodneyは[[concepts/showboat]]と組み合わせて使用することで、エージェントのWeb UIテストを**検証可能・監査可能な成果物**として記録できる。
+Rodney can be used with [[concepts/showboat]] to record agent Web UI tests as **verifiable and auditable artifacts**.
 
 ```bash
 showboat exec demo.md bash 'rodney start && rodney open https://example.com && rodney waitstable && rodney exists "h1"'
 ```
 
-この組み合わせにより:
-1. エージェントが実際にブラウザを操作
-2. その操作と結果がMarkdownドキュメントに記録
-3. 後から検証・レビュー可能
+This combination enables:
+1. The agent actually operates the browser
+2. Operations and results are recorded in Markdown documents
+3. Verifiable and reviewable later
 
-## テストパターン
+## Test Patterns
 
-### 基本的なWebアプリテストスクリプト
+### Basic Web App Test Script
 ```bash
 #!/bin/bash
 set -euo pipefail
@@ -102,35 +102,35 @@ fi
 echo "All checks passed"
 ```
 
-## コンテキスト管理との関係
+## Relationship to Context Management
 
-Rodneyのコマンドは**コンテキストウィンドウに優しい**:
-- テキストベースの出力のみ（LLMが直接解釈可能）
-- スクリーンショットもファイルとして保存、URLで参照
-- PlaywrightのフルAPIをコンテキストに入れる必要がない
+Rodney's commands are **context-window-friendly**:
+- Text-based output only (directly interpretable by LLMs)
+- Screenshots are saved as files and referenced via URL
+- No need to put Playwright's full API into the context
 
-## 比較: ブラウザ自動化ツール
+## Comparison: Browser Automation Tools
 
-| ツール | 開発元 | 特徴 |
+| Tool | Developer | Features |
 |--------|--------|------|
-| Playwright | Microsoft | 多言語バインディング、フル機能 |
-| agent-browser | Vercel | PlaywrightのCLIラッパー |
-| **Rodney** | Simon Willison | エージェント最適化、Showboat連携 |
-| shot-scraper | Simon Willison | スクリーンショット特化（Rodneyの前身） |
+| Playwright | Microsoft | Multi-language bindings, full features |
+| agent-browser | Vercel | Playwright CLI wrapper |
+| **Rodney** | Simon Willison | Agent-optimized, Showboat integration |
+| shot-scraper | Simon Willison | Screenshot-focused (Rodney's predecessor) |
 
-## バージョン履歴
+## Version History
 
-- **v0.4.0** (2026年2月17日): `rodney assert`、`--local`/`--global`セッション、`reload --hard`など追加
-- **v0.3.0** (2026年2月10日): 初回リリース
+- **v0.4.0** (February 17, 2026): Added `rodney assert`, `--local`/`--global` sessions, `reload --hard`, etc.
+- **v0.3.0** (February 10, 2026): Initial release
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/showboat]] — テスト成果物の記録ツール（Rodneyと併用）
-- [[concepts/agentic-manual-testing]] — Rodneyの主要ユースケース
-- [[concepts/harness-engineering/agentic-engineering]] — 上位概念
+- [[concepts/showboat]] — Test artifact recording tool (used with Rodney)
+- [[concepts/agentic-manual-testing]] — Rodney's primary use case
+- [[concepts/harness-engineering/agentic-engineering]] — Higher-level concept
 
-## 参照
+## References
 
-- [[entities/simon-willison]] — 開発者
-- [Rodney v0.4.0 リリースノート](https://simonwillison.net/2026/Feb/17/rodney/)
+- [[entities/simon-willison]] — Developer
+- [Rodney v0.4.0 Release Notes](https://simonwillison.net/2026/Feb/17/rodney/)
 - [Introducing Showboat and Rodney](https://simonwillison.net/2026/Feb/10/showboat-and-rodney/)

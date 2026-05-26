@@ -6,7 +6,7 @@ aliases:
   - nano-banana-pro
   - google-nano-banana
 created: 2026-04-25
-updated: 2026-04-29
+updated: 2026-05-26
 tags:
   - concept
   - image-generation
@@ -23,54 +23,54 @@ sources:
 
 # Nano Banana 2
 
-**Nano Banana 2** は、Google が Gemini 3 ファミリー向けに開発した最先端の AI 画像生成・編集モデル。深層推論能力と Web 検索からのリアルタイム情報を活用し、従来の画像生成モデルより正確で文脈を理解したビジュアルを生成する。
+**Nano Banana 2** is a cutting-edge AI image generation and editing model developed by Google for the Gemini 3 family. It leverages deep reasoning capabilities and real-time information from web search to produce more accurate and context-aware visuals than traditional image generation models.
 
-## 定義 / コアアイデア
+## Definition / Core Idea
 
-Nano Banana モデルは、単なるテキスト→画像変換ではなく、**実世界の知識と深層推論**を用いて画像を生成する。プロンプトを解釈する前に「理解」するフェーズを持ち、より正確で一貫性のある結果を提供する。
+Nano Banana models go beyond simple text-to-image conversion, using **real-world knowledge and deep reasoning** to generate images. Before interpreting a prompt, the model goes through a "comprehension" phase, delivering more accurate and consistent results.
 
-## モデルバリエーション
+## Model Variants
 
-| モデル | 特徴 | 用途 |
-|--------|------|------|
-| **Nano Banana**（高速） | 高速生成、キャラクター一貫性、写真合成 | カジュアルなコンテンツ作成 |
-| **Nano Banana Pro**（推論） | 高度なテキストレンダリング、精密編集、2K/4K アップスケーリング | プロフェッショナル業務 |
-| **Nano Banana 2** | リアルタイム Web 情報を活用、高精度ビジュアル | エンタープライズ・教育・旅行 |
+| Model | Features | Use Case |
+|-------|----------|----------|
+| **Nano Banana** (Fast) | Fast generation, character consistency, photo compositing | Casual content creation |
+| **Nano Banana Pro** (Reasoning) | Advanced text rendering, precision editing, 2K/4K upscaling | Professional workflows |
+| **Nano Banana 2** | Real-time web information, high-precision visuals | Enterprise, education, travel |
 
-## 主要機能
+## Key Features
 
-### 1. リアルタイム Web 検索連携
-- 最新の Web 情報を取得して画像生成に反映
-- 例：「現在のサンフランシスコの天気を反映したシーン」を生成可能
+### 1. Real-Time Web Search Integration
+- Fetches the latest web information and reflects it in image generation
+- Example: Can generate "a scene reflecting current weather in San Francisco"
 
-### 2. キャラクター一貫性（Character Consistency）
-- 複数の画像間で同一キャラクターの外見を維持
-- ストーリーボードや広告シリーズに重要
+### 2. Character Consistency
+- Maintains the same character's appearance across multiple images
+- Important for storyboards, ad campaigns
 
-### 3. 高度なエディット機能
-- **ローカル編集**: 画像の一部分のみを変更
-- **写真合成**: 複数の写真をシームレスに結合
-- **テキストレンダリング**: 画像内に鮮明なテキストを描画
+### 3. Advanced Editing Capabilities
+- **Local editing**: Modify only a portion of the image
+- **Photo compositing**: Seamlessly combine multiple photos
+- **Text rendering**: Render clear text within images
 
-### 4. プロンプティングフレームワーク
-Google の公式プロンプティングガイドでは以下のフレームワークを推奨：
-1. **構造化プロンプト**: `[ソース/検索要求] + [分析タスク] + [ビジュアル指示]`
-2. **アスペクト比制御**: 16:9, 9:16, 2:1 などをネイティブサポート
-3. **反復的洗練**: 生成結果に基づいてプロンプトを段階的に改善
+### 4. Prompting Framework
+Google's official prompting guide recommends the following framework:
+1. **Structured prompt**: `[Source/Search Request] + [Analysis Task] + [Visual Instruction]`
+2. **Aspect ratio control**: Native support for 16:9, 9:16, 2:1, etc.
+3. **Iterative refinement**: Gradually improve prompts based on generation results
 
-## 技術スタック
+## Tech Stack
 
-- **ベースモデル**: Gemini 3 ファミリーの画像生成能力
-- **SynthID**: DeepMind の不可視電子透かし技術（著作権・責任ある AI）
-- **Vertex AI**: エンタープライズ展開向け API
-- **Hugging Face**: コミュニティ向けモデル公開
+- **Base model**: Gemini 3 family image generation capabilities
+- **SynthID**: DeepMind's invisible watermarking technology (copyright/responsible AI)
+- **Vertex AI**: Enterprise deployment API
+- **Hugging Face**: Community model distribution
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/ai-image-generation]] — AI 画像生成の全体概観
-- [[concepts/reverse-engineering]] — 画像生成モデルの解析
+- [[concepts/ai-image-generation]] — Overview of AI image generation
+- [[concepts/reverse-engineering]] — Analysis of image generation models
 
-## ソース
+## Sources
 
 - [Google Cloud: Ultimate Nano Banana Prompting Guide](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana)
 - [Google Cloud: Bringing Nano Banana 2 to Enterprise](https://cloud.google.com/blog/products/ai-machine-learning/bringing-nano-banana-2-to-enterprise)

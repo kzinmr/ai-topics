@@ -2,7 +2,7 @@
 title: "Carlini C Compiler Agent Team"
 type: concept
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-26
 tags:
   - multi-agent
   - architecture
@@ -26,19 +26,19 @@ related:
 
 # Carlini C Compiler Agent Team
 
-Nicholas Carlini（Anthropic Safeguardsチーム）による、16体のClaudeエージェントを並列稼働させてRustベースのCコンパイラをゼロから構築した実験。agent teamアーキテクチャの限界検証と実践的知見の宝庫。
+Nicholas Carlini (Anthropic Safeguards team) conducted an experiment running 16 Claude agents in parallel to build a Rust-based C compiler from scratch. A validation of agent team architecture limits and a treasure trove of practical insights.
 
-## 実験概要
+## Experiment Overview
 
-| 項目 | 値 |
-|------|-----|
-| エージェント数 | 16体並列 |
-| Claude Codeセッション数 | 約2,000 |
-| API費用 | $20,000 |
-| 成果物 | 100,000行のCコンパイラ |
-| 検証 | Linux 6.9カーネルをx86/ARM/RISC-Vでコンパイル成功 |
+| Item | Value |
+|------|-------|
+| Agent Count | 16 parallel agents |
+| Claude Code Sessions | ~2,000 |
+| API Cost | $20,000 |
+| Deliverable | 100,000 lines of C compiler |
+| Validation | Successfully compiles Linux 6.9 kernel on x86/ARM/RISC-V |
 
-## アーキテクチャ
+## Architecture
 
 ### Infinite Agent Loop
 
@@ -51,52 +51,52 @@ while true; do
 done
 ```
 
-シンプルなループで、タスク完了後即座に次のタスクを自律的に選択。
+A simple loop where agents autonomously select the next task upon completion.
 
-### 並列タスクロック
+### Parallel Task Locking
 
-Gitベースの最小限の同期機構:
-- エージェントが `current_tasks/parse_if_statement.txt` のようなファイルを書き込んでロック
-- 競合時はgitの同期が第2エージェントに別タスク選択を強制
-- プル→マージ→プッシュ→ロック解除のサイクル
+Minimal Git-based synchronization mechanism:
+- Agents write files like `current_tasks/parse_if_statement.txt` to claim locks
+- On conflict, git synchronization forces the second agent to select a different task
+- Pull → merge → push → unlock cycle
 
-### コンテナ分離
+### Container Isolation
 
-各エージェントにDockerコンテナ + `/upstream` マウント + `/workspace` ローカルクローン。
+Each agent gets a Docker container + `/upstream` mount + `/workspace` local clone.
 
-## 実践的教訓
+## Practical Lessons
 
-### 1. 極めて高品質なテストを書く
-> Claudeは与えられた問題を自律的に解く。だからタスク検証器がほぼ完璧でなければ、Claudeは間違った問題を解いてしまう。
+### 1. Write Extremely High-Quality Tests
+> Claude autonomously solves given problems. So if the task verifier isn't nearly perfect, Claude will solve the wrong problem.
 
-- 高品質コンパイラテストスイートの選定
-- オープンソースパッケージのビルドスクリプト検証
-- Claudeのミスを観察→新しいテストを設計
+- Choosing a high-quality compiler test suite
+- Verifying open source package build scripts
+- Observing Claude's mistakes → designing new tests
 
-### 2. Claudeの立場に立つ
-環境設計の重要性。エージェントが自律的に方向性を見出せるよう、テスト・環境・フィードバックを設計。
+### 2. Think from Claude's Perspective
+The importance of environment design. Design tests, environments, and feedback so agents can autonomously find direction.
 
-### 3. CI/CDパイプラインの重要性
-新機能実装時に既存機能を壊す問題に対し、CI/CDと厳格なテスト強制で対処。
+### 3. Importance of CI/CD Pipelines
+Addressing the problem of new features breaking existing functionality through CI/CD and strict test enforcement.
 
-### 4. 特化エージェントの活用
-- ドキュメント維持エージェント
-- コード品質監視エージェント
-- 専門サブタスクエージェント
+### 4. Using Specialized Agents
+- Documentation maintenance agent
+- Code quality monitoring agent
+- Specialized subtask agents
 
-### 5. マージコンフリクト
-頻繁に発生するが、Claudeは十分賢く解決できる。
+### 5. Merge Conflicts
+Frequent, but Claude is smart enough to resolve them.
 
-## 限界
+## Limitations
 
-- オーケストレーションエージェント不使用（最小限プロトタイプ）
-- エージェント間通信メカニズム未実装
-- 高レベル目標管理プロセスなし
-- 各エージェントの自律的判断に依存（「次に明らかな」問題を選択）
+- No orchestration agent (minimal prototype)
+- No inter-agent communication mechanism
+- No high-level goal management process
+- Relies on each agent's autonomous judgment (choosing the "next obvious" problem)
 
-## エピソード
+## Episodes
 
-Claudeが誤って `pkill -9 bash` を実行し、自分自身（とループ）をkillした事例あり。
+Claude once accidentally ran `pkill -9 bash`, killing itself (and the loop).
 
 ## See Also
 
