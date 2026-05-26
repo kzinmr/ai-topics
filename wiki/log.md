@@ -1,6 +1,13 @@
 # Wiki Log
 
 > Chronological record of all wiki actions. Append-only.
+## [2026-05-26] newsletter-triage | 3 newsletters processed (2 takes, 5 references, 13 skips)
+- **Lenny's Podcast** "How I AI" — Felix Rieseberg (Anthropic) Claude Cowork philosophy → reference (entities/anthropic.md)
+- **Superintel** "AlphaProof Nexus" — DeepMind formal proof search → take (new concept: alpha-proof-nexus)
+- **SemiAnalysis** "Inside the 800VDC Revolution — Part 1" → reference (ai-infrastructure-engineering/)
+- Jack Clark Nobel predictions, Anthropic finance agents → reference
+- Saved to: cron/data/newsletter/triage_latest.json + archived 17 items
+
 ## [2026-05-26] translate | JP→EN batch — 8 files
 
 ### Files Translated
