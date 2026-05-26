@@ -2,10 +2,11 @@
 title: "Salvatore Sanfilippo (antirez)"
 tags: [person]
 created: 2026-04-24
-updated: 2026-05-20
+updated: 2026-05-26
 type: entity
 sources:
   - raw/articles/antirez.com--news-166--c7f12317.md
+  - raw/articles/antirez.com--news-167--b10c3d4e.md
 ---
 
 # Salvatore Sanfilippo (antirez)
@@ -215,6 +216,44 @@ antirez notes a whole-file CRC32 alternative where the edit only specifies line 
 
 This is a concrete example of **agentic engineering at the tool level** — optimizing for the specific constraints of local inference (token poverty, latency). It connects the [[concepts/agentic-engineering]] and [[concepts/ai-agent-engineering]] paradigm: the tool surface area directly determines agent efficiency.
 
+
+### Distributed LLM Inference in DwarfStar (May 2026)
+
+antirez は DwarfStar プロジェクトの文脈で、3つの分散LLM推論アプローチを探求した。ローカル推論のハードウェア制約（NVIDIA 価格高騰、RAM 不足、Mac Studio の限界）に対する現実的な対応として、複数マシンを活用する戦略を検討している。
+
+#### 背景
+
+ハイエンド NVIDIA カードのコスト上昇と RAM 不足により、ローカル推論の最適なマシンはラップトップになった：M5 Max 128GB は DeepSeek V4 Flash や Mimo V2.5 を 2-bit 量子化で ~500 t/s prefill、~35-40 t/s decoding で実行可能。しかし DwarfStar のようなプロジェクトでは、複数マシンをどう活用するかが次の課題。
+
+#### 3つの分散推論アプローチ
+
+| アプローチ | 方式 | 通信量 | メリット | デメリット |
+|-----------|------|--------|---------|-----------|
+| **層分割 (Layer Splitting)** | 2台のマシンにトランスフォーマー層を50%ずつロード、逐次実行 | アクティベーションのみ少量 | 単純、メモリ倍増、マイクロバッチでprefill高速化 | decodeは逐次（片方が待つ） |
+| **Apple RDMA垂直分割** | 両方のマシンに全エキスパートをロード、各層でエキスパート計算を分散 | アクティベーション微量 | 並列化可能、PRO版の大規模ルーテッドエキスパートに有効 | RDMA通信速度の制約、実装難易度大 |
+| **LLMアンサンブリング** | Shared-nothing、別々のモデルを別々のマシンで独立実行、最後にロジット結合または最適継続を選択 | 最低（ロジットのみ） | 最も革新的。異なる語彙でも動作。arXiv:2502.18036 で研究 | 未成熟、実証段階 |
+
+#### LLMアンサンブリング（最も革新的なアプローチ）
+
+antirez が最も興味を持つのは第3のアプローチ。arXiv:2502.18036 で示されたように、2つの異なるモデル（例：Minimax M2.7 と DeepSeek V4 Flash）を完全に独立して実行し、以下の方法で結合する：
+
+1. **Perplexity ベースの選択**: より確信度の高いモデルの継続を選ぶ — 暗黙のルーティングを持つ2エキスパートMoEと見なせる
+2. **ロジット結合**: 異なる語彙でも結合可能（複雑だが）
+3. **混合アプローチ**: 最近の論文では両手法の混合が最良と示唆
+
+> "Maybe this is one of the most logical third approach to try, other than the first two."
+
+このアプローチは、各モデルが「異なる視点」を持ち寄ることで知識が補完されるという性質を持つ。\
+\
+#### 意義
+
+- DwarfStar の分散推論は「フロンティアモデルのローカル実行」という目標の最終フロンティア
+- 層分割とRDMA垂直分割は既知の技術だが、LLMアンサンブリングは比較的未開拓で、ローカル推論の文脈で特に実用的
+- 分散推論は DS4 の将来計画（ライン163参照）に明示されており、本稿はその具体的な技術ロードマップを提供
+- [[concepts/quantization]] と [[concepts/local-llm]] の交差点に位置する重要な発展
+
+#### Source
+- raw/articles/antirez.com--news-167--b10c3d4e.md
 
 - [[concepts/redis]] — His defining creation, the in-memory data store
 - [[concepts/systems-programming]] — His domain of expertise: C, memory management, performance

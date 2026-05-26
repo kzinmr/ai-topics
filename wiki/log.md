@@ -56,6 +56,19 @@ Translated all Japanese text in `wiki/index.md` (1,375 lines) to English. 19 lin
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md and start fresh.
 
+
+## [2026-05-26] blog-wiki-ingest | DwarfStar distributed inference + encyclical enrichment
+
+### Pages Enriched
+- [[entities/antirez-com]] — Added "Distributed LLM Inference in DwarfStar" section covering 3 approaches: layer splitting, Apple RDMA vertical split, and LLM ensembling (arXiv:2502.18036)
+- [[entities/simon-willison]] — Added "Pope Leo XIV's Encyclical on AI" section with key highlights (§98 interpretability, §100 cultural bias, §101 environment, §108 data as public good) and Corey Quinn quote
+
+### Sources
+- raw/articles/antirez.com--news-167--b10c3d4e.md (antirez.com)
+- raw/articles/simonwillison.net--2026-may-25-encyclical-on-ai--fb3bcf08.md (simonwillison.net)
+
+---
+
 ## [2026-05-25] x-bookmarks-ingest | Shannon Scaling Law curation + Claude Code 7-Agent Software Factory
 
 ### Bookmark 1: @gm8xx8 — Shannon Scaling Law
