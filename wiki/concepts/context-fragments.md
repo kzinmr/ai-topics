@@ -24,76 +24,76 @@ sources: []
 
 # Context Fragments
 
-Vivek Trivedy (@vtrivedy10) が2026年4月に提唱した概念。コンテキストウィンドウを「harnessが選択的にロードするオブジェクトの集合」として捉えるフレームワーク。
+A concept proposed by Vivek Trivedy (@vtrivedy10) in April 2026. A framework that views the context window as "a collection of objects selectively loaded by the harness."
 
-## 核心的な定義
+## Core Definition
 
 > *"the context window is a precious artifact. Harnesses make decisions on how to populate, manage, edit, and organize it so agents can do work. Each loaded object can be thought of as a Context Fragment and represents an explicit decision by the user and harness designer of what needs a model needs to do work at any given time."*
 
-### Context Fragmentとは
+### What Is a Context Fragment
 
-各Context Fragmentは：
-- **明示的意思決定の産物** — ユーザーまたはharness設計者が「このデータは作業に必要」と判断してロードしたオブジェクト
-- **自己完結的な意味単位** — ファイル、ドキュメント、メモリ、ツール定義など
-- **動的に管理される** — harnessが追加・編集・削除・優先順位付けを行う
+Each Context Fragment:
+- **Product of explicit decision-making** — an object loaded because the user or harness designer determined "this data is needed for the task"
+- **Self-contained semantic unit** — files, documents, memories, tool definitions, etc.
+- **Dynamically managed** — the harness adds, edits, deletes, and prioritizes them
 
-## 源流：RLMとExternalized Objects
+## Origins: RLM and Externalized Objects
 
-このアイデアは [[concepts/rlm-recursive-language-models]] のAlex Zhang (@a1zhang) が提唱した「externalizing objects + loading into the context window」に由来する。RLMは「言語モデルは最終製品ではなく、プログラム内のモジュールである」というパラダイムを提示し、Context Fragmentsはその実装上の具体化と言える。
+This idea originates from Alex Zhang's (@a1zhang) concept of "externalizing objects + loading into the context window" in [[concepts/rlm-recursive-language-models]]. RLM presents the paradigm that "language models are modules within a program, not final products," and Context Fragments is its concrete implementation.
 
-## Harnessの役割
+## Harness Role
 
-Vivによるharnessの再定義：
+Viv's redefinition of the harness:
 
-| 従来のharness定義 | Context Fragments拡張 |
+| Traditional harness definition | Context Fragments extension |
 |-----------------|---------------------|
 | Model + Tool routing | Model + Context Fragment routing + Memory retrieval |
-| ツール呼び出しの管理 | どのオブジェクトをコンテキストにロードするか |
-| エージェントの行動制御 | コンテキストの「編集・整理・優先順位付け」 |
+| Managing tool calls | Which objects to load into context |
+| Controlling agent behavior | "Editing, organizing, prioritizing" context |
 
-## Experiential Memoryとの関係
+## Relationship with Experiential Memory
 
 > *"agent memory has a massive advantage as it can be accumulated across all agents which are easily forked and duplicated (unlike humans)."*
 
-Context Fragmentsは**Experiential Memory**（[[concepts/experiential-memory]]）の検索結果としてコンテキストウィンドウにロードされる。エージェント間のメモリ共有・フォーク・蓄積が可能になるため、個のエージェントの経験が集合知として再利用される。
+Context Fragments are loaded into the context window as search results from **Experiential Memory** ([[concepts/experiential-memory]]). Because agents can share, fork, and accumulate memories, individual agents' experiences are reused as collective knowledge.
 
-## The Bitter Lessonとの接続
+## Connection to The Bitter Lesson
 
-VivはRich Suttonの「Bitter Lesson」をエージェントメモリに適用する：
+Viv applies Rich Sutton's "Bitter Lesson" to agent memory:
 
 - **compute leveraged search > human-curated knowledge**
-- 大量の経験データから検索・蒸留・整理する能力が競争優位になる
-- オープンエコシステムが重要 — データの所有と利用
+- The ability to search, distill, and organize from large volumes of experiential data becomes a competitive advantage
+- Open ecosystems matter — data ownership and utilization
 
 ## Open Questions
 
-Vivが提起した未解決の問い：
+Open questions raised by Viv:
 
-1. **Traces → Memory Primitives** — 経験（トレース）を効率的に蒸留し、長期的なメモリプリミティブにする方法
-2. **JIT Search vs Weight Integration** — 検索はjust-in-timeか、モデル重みに統合すべきか
-3. **Self-Managing Context** — モデルが自身のコンテキストウィンドウを自己管理する方法。再帰的外部オブジェクト操作時のエラー率低減
+1. **Traces → Memory Primitives** — How to efficiently distill experiences (traces) into long-term memory primitives
+2. **JIT Search vs Weight Integration** — Should search be just-in-time, or integrated into model weights?
+3. **Self-Managing Context** — How models can self-manage their own context windows. Reducing error rates during recursive external object manipulation.
 
-## 実装上の含意
+## Implementation Implications
 
 ### Harness Design
 
-1. **Fragment selection policy** — どのオブジェクトをロードするか
-2. **Fragment lifecycle** — 追加、編集、削除、圧縮
-3. **Cross-fragment reasoning** — 複数フラグメントにまたがる推論
-4. **Error recovery** — フラグメント操作失敗時のリカバリ
+1. **Fragment selection policy** — Which objects to load
+2. **Fragment lifecycle** — Add, edit, delete, compress
+3. **Cross-fragment reasoning** — Reasoning across multiple fragments
+4. **Error recovery** — Recovery from fragment operation failures
 
 ### Memory Architecture
 
-- **L1: In-Context Fragments** — 現在の作業に必要なオブジェクト
-- **L2: Local Memory Store** — セッション間で永続化されたフラグメント
-- **L3: Shared Memory Pool** — エージェント間で共有・フォーク可能な蓄積メモリ
+- **L1: In-Context Fragments** — Objects needed for the current task
+- **L2: Local Memory Store** — Fragments persisted across sessions
+- **L3: Shared Memory Pool** — Accumulated memory shareable and forkable across agents
 
 ## Related Concepts
 
-- [[concepts/harness-engineering]] — Harness Designの拡張版
-- [[concepts/experiential-memory]] — エージェントの経験蓄積メモリ
-- [[concepts/chatgpt-memory-bitter-lesson]] — Bitter Lessonとメモリ
-- [[concepts/claude-memory]] — ファイルベースのメモリ（L2実装）
-- [[concepts/ai-agent-memory-middleware]] — クラウドスケールのメモリ（L3実装）
-- [[concepts/memory-systems-design-patterns]] — メモリ設計パターン横断分析
-- [[concepts/rlm-recursive-language-models]] — 源流となったRLM/Externalized Objects
+- [[concepts/harness-engineering]] — Extended version of Harness Design
+- [[concepts/experiential-memory]] — Agent experience accumulation memory
+- [[concepts/chatgpt-memory-bitter-lesson]] — Bitter Lesson and memory
+- [[concepts/claude-memory]] — File-based memory (L2 implementation)
+- [[concepts/ai-agent-memory-middleware]] — Cloud-scale memory (L3 implementation)
+- [[concepts/memory-systems-design-patterns]] — Cross-cutting memory design pattern analysis
+- [[concepts/rlm-recursive-language-models]] — The originating RLM/Externalized Objects

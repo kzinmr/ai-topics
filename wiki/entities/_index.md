@@ -24,7 +24,7 @@
                       24|- [[addy-osmani]] — Addy Osmani is a Director at Google Cloud AI, working on Gemini and Vertex AI. Previously, he was Engineering Lead for Chrome & Web Platform at Google, where he became one of the most prolific writers
                       25|- [[agentcraft]] — Open-source AI agent orchestrator with an RTS game interface. Built by Ido Salomon (@idosal1). Displays agents as hero units on a 3D map with missions, fog of war, and achievements. Supports Claude Code, OpenCode, and Cursor.
                       26|- [[agibot-10000-units]] — Real-world demand for humanoid robots accelerates as AGIBot ships 10,000 units.
-                      27|- [[akira-realmcore]] — Akira (@realmcore_) は Random Labs のAIエンジニアリングチームの中心的な声。同社は2024年設立、YC S24バッチのスタートアップで、創設者は Kiran と Mihir Chintawar。
+                      27|- [[akira-realmcore]] — Akira (@realmcore_) is a key voice on the AI engineering team at Random Labs. The company was founded in 2024 as a YC S24 batch startup by Kiran and Mihir Chintawar.
                       28|- [[alec-radford]] — Alec Radford represents the anti-traditional academic path in AI research: no PhD, no extensive publication record in top conferences, no public speaking circuit. Yet he is a co-author on some of the 
                       29|- [[alex-banks]] — Alex Banks is a British AI educator, creator, and entrepreneur who bridges the gap between cutting-edge AI research and practical, everyday application. He is best known for writing The Signal, a week
                     30|- [[entities/alex-chernysh]] — Alex Chernysh is an Applied AI Systems & Platform Engineer based in Tel Aviv. Creator and solo maintainer of Bernstein — the leading open-source deterministic orchestrator for 40+ CLI coding agents. Apache 2.0, 54K+ monthly PyPI installs.
@@ -39,7 +39,7 @@
 |- [[andy-nguyen]] — Andy Nguyen (@kevinnguyendn) is the Founder & CEO of ByteRover, a portable file-based memory layer for autonomous coding agents. Based in Da Nang, Vietnam. Former ML Engineer at OpenLab JSC.
 |- [[entities/anildash]] — Anil's most urgent recent thesis: 2026 is the decisive year for whether the open web survives. He argues that Big Tech's "hectobillionaires" are conducting a final assault on the open internet:
               38|- [[ankur-goyal]] — Ankur Goyal is a serial entrepreneur and AI industry veteran best known as the founder and CEO of Braintrust Data, an end-to-end platform for building and evaluating AI applications. Braintrust helps 
-              39|- [[entities/anthropic-computer-use]] — タスク指示 → スクリーンショット取得 → ビジョンモデルがUI要素認識 →
+              39|- [[entities/anthropic-computer-use]] — Task instruction → screenshot capture → vision model recognizes UI elements →
               40|- [[entities/anthropic]] — AI safety research company, developer of the Claude model family.
               41|- [[antirez-com]] — Salvatore "antirez" Sanfilippo is one of the most influential systems programmers of the modern era. He created Redis in 2009, which became one of the most widely deployed in-memory data stores in the
               42|- [[entities/arize]] — AI observability platform positioned as 'Datadog for agents' — monitoring agent decision quality, reasoning paths, and evaluation metrics at scale
@@ -47,7 +47,7 @@
               44|- [[entities/armin-ronacher]] — Armin Ronacher (@mitsuhiko, born 10 May 1989, Austria) is a software engineer, open-source developer, and entrepreneur who has profoundly shaped the Python ecosystem and is now building the next gener
               45|- [[ashpreet-bedi]] — Ashpreet Bedi is a software engineer and entrepreneur with over 15 years of experience building data infrastructure and machine learning systems at scale. He is the founder and CEO of Agno (formerly P
               46|- [[beej-us]] — Brian "Beej Jorgensen" Hall is one of the most influential technical educators of the internet era. His Beej's Guide to Network Programming has taught socket programming to generations of developers s
-              47|- [[benjamin-clavie]] — Benjamin Claviéはフランス出身のNLP/情報検索(IR)研究者で、現在はTokyo, Japanを拠点にMixedbreadでML R&Dに従事し、National Institute of Informatics (NII) のKasys lab（指導教員: Makoto P. Kato教授）でPhD課程在籍中。
+              47|- [[benjamin-clavie]] — Benjamin Clavie is a French NLP/information retrieval (IR) researcher currently based in Tokyo, Japan, working on ML R&D at Mixedbread and pursuing a PhD at National Institute of Informatics (NII)'s Kasys lab (advised by Prof. Makoto P. Kato).
               48|- [[benny-chen]] — Co-Founder of Fireworks AI, inference and model customization platform for open-weight models. Formerly Meta ML infrastructure. Pioneered Reinforcement Fine-Tuning (RFT) and the Eval Protocol.
             49|- [[entities/bernstein]] — Open-source deterministic multi-agent orchestrator for CLI coding agents. 44 agent adapters, Python scheduler, zero LLM tokens on coordination, HMAC audit trail. Created by Alex Chernysh. Apache 2.0.
               50|- [[berthub-eu]] — Bert is a systems-level thinker who operates at the intersection of software engineering, public policy, and scientific research. His work spans from RFCs that secure global DNS infrastructure to poli
@@ -109,9 +109,9 @@
             103|- [[eugeneyan]] — Eugene Yan is among the most pragmatic and grounded voices in applied machine learning. His career spans e-commerce ML at Alibaba/Lazada, healthtech at a Series A startup, recommendation systems at Am
             104|- [[evanhahn-com]] — Evan Hahn is a pragmatic engineer-philosopher — someone who writes code that protects millions of web applications daily, but whose writing consistently returns to the human, ethical, and craft dimens
             105|- [[fabiensanglard-net]] — Fabien treats game engines the way an archaeologist treats excavation sites: every layer tells a story about the constraints, decisions, and ingenuity of its creators. His Game Engine Black Book serie
-            106|- [[fei-fei-li]] — 中国系アメリカ人コンピュータサイエンティスト。ImageNetの作成者、Stanford HAI共同創設者。コンピュータビジョン、空間知能、ヒューマンセンタードAIのパイオニア。
+            106|- [[fei-fei-li]] — Chinese-American computer scientist. Creator of ImageNet, co-founder of Stanford HAI. Pioneer in computer vision, spatial intelligence, and human-centered AI.
             107|- [[fernando-borretti]] — Fernando Borretti is a software engineer, compiler author, and prolific technical writer who builds programming languages and writes deeply about software engineering practice, AI systems, and data mo
-            108|- [[figma]] — FigmaはClaude Designの登場により、SaaS AI時代の脆弱性を示すケーススタディとなっている。
+            108|- [[figma]] — Figma has become a case study in the vulnerability of SaaS in the AI era, following the emergence of Claude Design.
             109|- [[filfre-net]] — Jimmy Maher is the preeminent historian of interactive fiction and one of the most thorough chroniclers of computer gaming's formative decades. His blog, The Digital Antiquarian, has published hundred
             110|- [[fireworks-ai]] — AI inference and model customization platform for serving open-weight models at scale. 13T+ tokens/day. Multi-hardware (NVIDIA + AMD), FireAttention kernels, custom speculator training, RFT capabilities.
             111|- [[entities/florian-brand]] — Florian Brand operates at the intersection of AI infrastructure, open model research, and public-facing AI analysis. As a PhD student at the University of Trier and researcher at DFKI, his academic wo
@@ -135,11 +135,11 @@
     129|- [[gwern]] — Gwern Branwen (born c. 1984) is a pseudonymous independent researcher and writer based in the USA, known for his prolific contributions to AI, psychology, statistics, and rationalist thought under the
     130|- [[entities/hamel-husain]] — Hamel Husain is a veteran AI Engineer and Consultant with over 20 years of experience, currently operating as an independent consultant through Parlance Labs, an R&D member at AnswerAI (Jeremy Howard'
     131|- [[herman-s-blog]] — Herman created Bear Blog as an antidote to everything wrong with modern web platforms. The manifesto (implicit in his writing, explicit in the product) holds that:
-    132|- [[entities/hermes-agent]] — Nous Research製open-source self-hosted AI agent。Persistent memory、self-improving skills、always-on executionが特徴。OpenClawから移行中のユーザーが増加。
+    132|- [[entities/hermes-agent]] — Open-source self-hosted AI agent from Nous Research. Persistent memory, self-improving skills, always-on execution are key features. Growing user base migrating from OpenClaw.
     133|- [[entities/hillel-wayne]] — Hillel is a formal methods practitioner who bridges the gap between academic formal verification and practical software engineering. Unlike most formal methods advocates who focus purely on theory, Hi
     134|- [[hugo-bowne-anderson]] — Hugo's central thesis across all his work is that AI systems require a fundamentally different development paradigm than traditional software. His philosophy can be summarized in three pillars:
     135|- [[hynek-schlawack]] — Born from a late-night IRC session in January 2015, attrs has since surpassed 1 billion downloads and directly inspired Python 3.7's `dataclasses` module. structlog, launched in 2013, is the productio
-    136|- [[ian-goodfellow]] — アメリカのコンピュータサイエンティスト。Generative Adversarial Networks (GANs) の発明者、敵対的機械学習のパイオニア。Google DeepMind研究員。
+    136|- [[ian-goodfellow]] — American computer scientist. Inventor of Generative Adversarial Networks (GANs), pioneer in adversarial machine learning. Researcher at Google DeepMind.
     137|- [[ian-nuttall]]
     138|- [[iii-platform]] — Ian Nuttall is a serial indie hacker and developer-tools builder based in Nottingham, UK. He describes himself as a "serial internet biz builder with multiple 6 & 7 figure exits" who "makes software w
     139|- [[entities/ilya-sutskever]] — Ilya Sutskever is one of the most cited researchers in deep learning history. His career spans three pivotal moments in AI:
@@ -170,11 +170,11 @@
     164|- [[lilianweng]] — Lilian Weng occupies a rare position at the intersection of frontier AI research and practical safety engineering. As VP of Research at OpenAI, she leads the Preparedness team — responsible for safegu
     165|- [[lora-fine-tuning]] — LoRA (Low-Rank Adaptation) fine-tuning paradigm, including Sakana AI's Doc-to-LoRA and Text-to-LoRA hypernetwork-based adapter generation
     166|- [[malika-aubakirova]] — a16z infrastructure researcher, co-author of the OpenRouter State of AI 2025 study analyzing 100T tokens of real-world LLM usage.
-|- [[entities/manus]] — Manusの最大の差別化はローカルブラウザ拡張によるエージェント実行。クラウドのサンドボックスではなく、ユーザーの実際のブラウザ上で動作する。
+|- [[entities/manus]] — Manus's key differentiator is agent execution via local browser extension.It operates on the user's actual browser, not a cloud sandbox.
     167|- [[entities/mario-zechner]] — Mario Zechner is one of the most distinctive voices in the tech industry — a veteran game developer, systems programmer, and civic technologist who brings an engineer's pragmatism and a craftsman's ey
     168|- [[mark-chen]] — Mark Chen is the Chief Research Officer at OpenAI, where he leads frontier research in multimodal modeling and reasoning capabilities. He is the lead author of the Codex paper (which powers GitHub Cop
     169|- [[entities/martin-alderson]] — Martin's most viral essay documented how 13 markdown files (~156KB) in Anthropic's `knowledge-work-plugin` repository on GitHub triggered a $285 billion selloff in SaaS stocks on February 3, 2026 — ro
-    170|- [[martin-kleppmann]] — ケンブリッジ大学計算機科学技術学科准教授。分散システム、ローカルファースト協調ソフトウェア、暗号プロトコルを研究。
+    170|- [[martin-kleppmann]] — Associate Professor at the University of Cambridge Department of Computer Science and Technology. Researches distributed systems, local-first collaborative software, and cryptographic protocols.
     171|- [[matduggan-com]] — Mat Duggan is an American sysadmin and DevOps engineer living in Denmark who writes about the practical realities of infrastructure, open source sustainability, the evolution of technology platforms, 
     172|- [[mathematical-methods]] — Philosophical paper by Terence Tao and Tanya Klowden on the impact of AI on mathematical practice and human thought (arXiv:2603.26524)
     173|- [[matklad-github-io]] — Aleksey Kladov (blog handle "matklad") is one of the most influential writers on compiler tooling and IDE architecture in the modern open-source ecosystem. As the creator and primary architect of rust
@@ -202,7 +202,7 @@
     195|- [[entities/nvidia-nemoclaw]] — NVIDIA NemoClaw is a secure AI agent development framework designed for running AI agents with enterprise-grade isolation. It bundles OpenShell (sandbox runtime), OpenClaw (agent framework), a Privacy
     196|- [[oldvcr-blogspot-com]] — Kaiser is the creator and maintainer of  — the PowerPC-native Firefox fork that extended the usable life of aging Mac hardware long after Mozilla abandoned the platform. He has also cont
     197|- [[entities/omar-khattab]] — MIT EECS Assistant Professor. Creator of ColBERT (late interaction retrieval), DSPy (declarative LM programming), GEPA (genetic prompt optimization), and co-author of RLMs (Recursive Language Models). X: @lateinteraction
-    198|- [[entities/openai-cua]] — OpenAIのCUA（Computer-Using Agent）モデルは、GPT-4oのビジョン機能と強化学習を組み合わせて、スクリーンショットを見てGUIを操作するエージェント。2025年1月に「Operator」として公開され、2025年7月にChatGPTエージェントに完全統合された。
+    198|- [[entities/openai-cua]] — OpenAI's CUA (Computer-Using Agent) model combines GPT-4o's vision capabilities with reinforcement learning,creating an agent that looks at screenshots and operates GUIs. Released as "Operator" in January 2025, fully integrated into ChatGPT Agent in July 2025.
     199|- [[openai-spud]] — Internal codename for OpenAI's next major language model (potentially GPT-6 or GPT-5.5). Pre-training completed March 2026.
     200|- [[entities/openai]] — OpenAI is a leading AI research and product company known for developing the GPT series of large language models, ChatGPT, and a growing ecosystem of AI developer tools. The company has been at the fo
 |- [[openrouter]] — Unified API gateway for 300+ LLMs from multiple providers. Published the landmark State of AI 2025 study with a16z analyzing 100T tokens of real-world LLM usage.
@@ -211,14 +211,14 @@
     203|- [[entities/parchi]] — Parchi — AI-powered browser copilot (open-source Chrome/Firefox extension). Chat-driven browser automation. BYOK or credits. MIT license. Created by 0xSero.
 
     204|- [[paulgraham-com]] — Paul Graham is a programmer, essayist, and venture capitalist. Co-founder of Y Combinator (2005), the startup accelerator that has funded over 4,000 companies including Airbnb, Stripe, Dropbox, and Re
-    205|- [[perplexity-comet]] — Cometの核心は検索ファーストアーキテクチャ。従来のブラウザが「URLを入力 → ページをレンダリング → ユーザーが読む」というフローだったのに対し、Cometはユーザーの意図を直接理解し、エージェントがウェブ上でタスクを代行する。
+    205|- [[perplexity-comet]] — Comet's core is a search-first architecture. While traditional browsers follow a "enter URL → render page → user reads" flow, Comet directly understands user intent, and agents perform tasks on the web on behalf of users.
     206|- [[entities/peter-steinberger]] — Austrian software developer, creator of OpenClaw (originally "Clawdbot"), founder of PSPDFKit (exited to Apple ecosystem). Known as @steipete on GitHub/Twitter. A pioneer of AI-native development work
     207|- [[philiplaine-com]] — Philip Laine is a software engineer who writes about the practical challenges of building and maintaining cloud-native infrastructure. His blog, modestly tagged "random thoughts about software develop
     208|- [[entities/philipp-schmid]] — Philipp Schmid is one of the most prolific and influential technical educators in the AI ecosystem. His blog at philschmid.de has been a go-to resource for developers since 2021, covering everything f
     209|- [[entities/playerzero]] — AI agent startup building context graphs as 'engineering world models' — automating L2/L3 support while capturing the decision traces that explain why systems break
     210|- [[pluralistic-net]] — Cory Doctorow is one of the most influential tech-policy thinkers of his generation. His work connects antitrust theory, copyright law, digital rights, and platform economics into a unified critique o
     211|- [[pratik-bhavsar]] — Pratik Bhavsar is a practitioner-researcher at the intersection of LLM evaluation, agentic systems, and retrieval-augmented generation. His intellectual signature is the thesis that evaluation is the 
-    212|- [[entities/qwen3-6-plus]] — Alibabaのエージェント指向言語モデル。実世界の自律的ワークフローを対象としている。
+    212|- [[entities/qwen3-6-plus]] — Alibaba's agent-oriented language model.Targeted at real-world autonomous workflows.
     213|- [[rachelbythebay-com]] — Rachel by the Bay is one of the internet's most distinctive voices on systems administration, infrastructure reliability, and the art of keeping things running when nobody notices — until they break. 
     214|- [[rahul]] — Rahul Sengottuvelu is the Head of Applied AI at Ramp, where he leads the company's AI engineering strategy and product development. He co-founded and served as CTO of Cohere.io, an AI-powered customer
     215|- [[rakhim-exotext-com]] — Rakhim is notable for his willingness to shut down projects when they no longer serve their purpose — a philosophy that runs counter to the "growth at all costs" mentality of modern tech. He has built
@@ -262,19 +262,19 @@
     252|- [[the-old-new-thing]] — Raymond Chen is a Principal Software Engineer at Microsoft who has been involved in the evolution of Windows for more than 30 years. Since 2003, he has written The Old New Thing, one of the most respe
     253|- [[theodoros-galanos]] — AI researcher and harness engineering practitioner. Chief Science Officer at infrared.city, author of [[the-harness-blog|The Harness]] blog. Creator of Lambda-RLM and AEC-Bench. Focused on harness engineering for Architecture, Engineering, and Construction.
     254|- [[concepts/the-silicon-underground]] — Dave Farquhar is the author of The Silicon Underground, one of the most prolific and detailed blogs devoted to the history of personal computing, semiconductor technology, and the business dynamics of
-    255|- [[thin-bi-tool]] — 薄くなるBIツール — BI tools transitioning from comprehensive platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
+    255|- [[thin-bi-tool]] — Thinner BI tools — BI tools transitioning from comprehensive platforms to lightweight, visualization-focused tools (DWH-native semantic layer era)
     256|- [[thorsten-ball]] — **Thorsten Ball** — Software engineer, author of Writing An Interpreter In Go and Writing A Compiler In Go, works on Amp at Sourcegraph. Wrote "How to Build a Code-Editing Agent" guide.
     257|- [[thoughtful-lab]] — AI research lab exploring modelcrafting: autonomous AI agents improving other AI models. Landmark experiment "Letting AI Posttrain AI" (Apr 2026).
     258|- [[tim-sh]] — Sherratt is the creator of the GLAM Workbench, a comprehensive platform of Jupyter notebooks that teaches researchers how to work with cultural collection data. He served as Creative Technologist-in-R
     259|- [[tom-aarsen]] — Tom Aarsen is one of the most active and influential maintainers in the open-source NLP and embeddings ecosystem. Since late 2023, he has been the lead maintainer of Sentence Transformers, the most wi
     260|- [[tom-renner]] — Renner writing is distinctive for its willingness to question technology — even (especially) when it comes from within the tech industry. He has published essays arguing that LLMs are a 400-year-lo
     261|- [[troy-hunt]] — Troy Hunt is one of the most recognizable voices in cybersecurity education and data breach transparency. He is best known as the creator and operator of Have I Been Pwned (HIBP), a free service that 
-    262|- [[entities/turbopuffer]] — Object-Storage-Native検索エンジン（ベクトル＋全文検索）。SPFresh ANN + RaBitQ量子化 + AVX-512対応のANN v3（100B vectors @ 200ms p99）、FTS v2（20x高速全文検索）、Native Filtering、Continuous Recall測定。Team: Simon Hørup Eskildsen (CEO), Nathan VanBenschoten (Chief Architect), Adrien Grand, Morgan Gallant他。
+    262|- [[entities/turbopuffer]] — Object-storage-native search engine (vector + full-text search). SPFresh ANN + RaBitQ quantization + AVX-512 ANN v3 (100B vectors @ 200ms p99), FTS v2 (20x faster full-text search), Native Filtering, Continuous Recall measurement. Team: Simon Hørup Eskildsen (CEO), Nathan VanBenschoten (Chief Architect), Adrien Grand, Morgan Gallant, and others.
     263|- [[utcc-utoronto-ca-cks]] — Chris Siebenmann is an empirical systems thinker — a career sysadmin who writes about technology from the trenches rather than from theory. His blog is characterized by a distinctive voice: skeptical 
     264|- [[entities/varun-trivedy]] — Varun Trivedy (who goes by "Viv") is one of the leading voices in harness engineering — the discipline of building the infrastructure, tooling, and execution logic that wraps around AI models to make 
     265|- [[entities/vtrivedy10]] — Vivek Trivedy (also known as Varun Trivedy or Viv) is the Product Lead for Agents & Harnesses at LangChain. He is a leading voice in the emerging field of Harness Engineering — the discipline of desig
     266|- [[entities/walden-yan]] — Walden Yan is a Co-Founder and Chief Product Officer (CPO) at Cognition AI, where he leads product strategy and has become one of the most influential voices in the emerging field of context engineeri
-    267|- [[entities/webmcp]] — 従来のブラウザエージェント（スクリーンショット解析、DOMスクレイピング）は「推測ベース」だった。WebMCPは逆転の発想で、ウェブサイト側が構造化されたツール（名前、説明、JSON Schema入力）を明示的に登録し、エージェントがそれらを発見・呼び出せるようにする。
+    267|- [[entities/webmcp]] — Traditional browser agents (screenshot analysis, DOM scraping) were "guess-based."WebMCP inverts this: websites explicitly register structured tools (name, description, JSON Schema input),allowing agents to discover and call them.
     268|- [[westenberg]] — Westenberg writes at the intersection of technological critique, political philosophy, and cultural analysis. Her essays combine historical framing, economic data, and philosophical reasoning to argue
     269|- [[will-brown]] — William "Will" Brown is a Research Lead at [Prime Intellect](https://primeintellect.ai/), where he leads open-source research and infrastructure for agentic reinforcement learning. He is the original 
     270|- [[will-mcgugan]] — Will McGugan is one of the most creative and prolific Python developers of the modern era. His work is defined by a simple but powerful insight: terminals are underutilized as interactive interfaces, 
@@ -284,7 +284,7 @@
     274|- [[xjdr]] — Jeff Rose (known online as xjdr) is a systems developer, AI/ML researcher, and infrastructure engineer with a career spanning high-performance distributed systems, operating system design, and cutting
     275|- [[yacine-mahdid]] — Yacine Mahdid is a software engineer and computational neuroscience researcher based in Ottawa, Canada. He works at a Canadian startup and has previously been affiliated with McGill University (Comput
     276|- [[entities/yan5xu]] — AI researcher and former engineer at Manus AI and Monica. Analyzed agent-friendly CLI design using GitHub CLI as case study. Self-described as "AI wild researcher." ~15.7K X followers.
-    277|- [[entities/yann-lecun]] — フランス系アメリカ人コンピュータサイエンティスト。CNNの発明者、2018年チューリング賞受賞者。Meta元チーフAIサイエンティスト、NYU教授。
+    277|- [[entities/yann-lecun]] — French-American computer scientist. Inventor of CNNs, 2018 Turing Award winner. Former Chief AI Scientist at Meta, Professor at NYU.
     278|- [[zach-mueller]] — Zach Mueller is one of the most authoritative voices in distributed deep learning training within the open-source AI community. As the Technical Lead for Hugging Face Accelerate, he maintains the libr
     279|- [[zakirullin]] — Artem Zakirullin — Software Architect, author of "Cognitive load is what matters" (12K+ GitHub stars), a framework on minimizing cognitive complexity in software design
     280|- [[zoox-expansion]] — Amazon subsidiary Zoox executing largest growth phase in history with multi-city robotaxi rollout.

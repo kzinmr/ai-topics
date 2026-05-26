@@ -21,55 +21,55 @@ sources:
 
 # Reverse Engineering
 
-**Reverse Engineering（リバースエンジニアリング）** は、既存のシステムやソフトウェアの構造、動作、設計を分析して理解するプロセス。AI の文脈では、モデルの内部動作の解析、サンドボックスの回避、トレーニングデータの推測など、幅広い応用がある。
+**Reverse Engineering** is the process of analyzing existing systems or software to understand their structure, behavior, and design. In the AI context, it has broad applications including analyzing model internals, bypassing sandboxes, and inferring training data.
 
-## AI 分野でのリバースエンジニアリング
+## Reverse Engineering in AI
 
-### モデル解析
-- **モデル抽出攻撃**: 公開 API を通じてモデルの知識や重みを推測
-- **アーキテクチャ推定**: レイテンシ、応答パターンからモデル構造を推定
-- **プロンプト抽出**: システムプロンプトのリーク攻撃
-- **メンバーシップ推測**: 特定のデータが学習に使われたか判定
+### Model Analysis
+- **Model extraction attacks**: Inferring model knowledge or weights through public APIs
+- **Architecture estimation**: Inferring model structure from latency and response patterns
+- **Prompt extraction**: Leaking system prompts through attacks
+- **Membership inference**: Determining whether specific data was used in training
 
-### サンドボックス回避
-- AI エージェントのコード実行サンドボックス（[[concepts/monty-sandbox]] など）のセキュリティテスト
-- **Hack Monty**: Pydantic が $5,000 の報奨金プログラムを実施
-- コンテナエスケープ、ファイルシステムアクセス、環境変数リークの試行
+### Sandbox Evasion
+- Security testing of AI agent code execution sandboxes (e.g., [[concepts/monty-sandbox]])
+- **Hack Monty**: Pydantic ran a $5,000 bounty program
+- Attempting container escape, filesystem access, and environment variable leaks
 
-### プロトコル解析
-- プロプライエタリ API のリバースエンジニアリング
-- モデル応答パターンの統計的分析
-- レート制限・負荷分散の推測
+### Protocol Analysis
+- Reverse engineering proprietary APIs
+- Statistical analysis of model response patterns
+- Inferring rate limits and load balancing
 
-## 主要テクニック
+## Key Techniques
 
-| テクニック | 説明 | AI 分野での応用 |
+| Technique | Description | AI Application |
 |-----------|------|----------------|
-| **静的解析** | バイナリ/コードの静的構造分析 | モデルファイル形式の解析 |
-| **動的解析** | 実行時の挙動観察 | API 応答パターンの分析 |
-| **フォールトインジェクション** | エラーを意図的に発生させて挙動を観察 | サンドボックス限界の特定 |
-| **サイドチャネル攻撃** | タイミング、消費電力、EM放射の分析 | モデルサイズ・構造の推定 |
-| **グレーボックス解析** | 部分的に既知の情報と観測を組み合わせ | プロンプトインジェクション脆弱性の発見 |
+| **Static Analysis** | Static structural analysis of binaries/code | Analyzing model file formats |
+| **Dynamic Analysis** | Observing runtime behavior | Analyzing API response patterns |
+| **Fault Injection** | Intentionally triggering errors to observe behavior | Identifying sandbox boundaries |
+| **Side-Channel Attacks** | Analyzing timing, power consumption, EM emissions | Estimating model size and structure |
+| **Gray-Box Analysis** | Combining partial known information with observation | Discovering prompt injection vulnerabilities |
 
-## AI セキュリティとの関係
+## Relationship with AI Security
 
-リバースエンジニアリングは AI セキュリティの両面を持つ：
-- **攻撃側**: モデルの弱点発見、ジェイルブレイク、プロンプトインジェクション
-- **防御側**: 脆弱性の発見と修正、レッドチーミング、報奨金プログラム
+Reverse engineering has two sides in AI security:
+- **Offensive**: Finding model weaknesses, jailbreaks, prompt injection
+- **Defensive**: Discovering and fixing vulnerabilities, red teaming, bug bounty programs
 
-## 倫理的考慮事項
+## Ethical Considerations
 
-- **利用規約の遵守**: 多くの AI サービスはリバースエンジニアリングを禁止
-- **責任ある開示**: 発見した脆弱性は適切に報告
-- **教育的文脈**: セキュリティ研究と学習目的での使用
+- **Terms of Service compliance**: Many AI services prohibit reverse engineering
+- **Responsible disclosure**: Report discovered vulnerabilities appropriately
+- **Educational context**: Use for security research and learning purposes
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/monty-sandbox]] — サンドボックスセキュリティモデル
-- [[concepts/claude-code-best-practices]] — セキュアなコード実行
-- [[concepts/agent-loop-orchestration]] — エージェントセキュリティ
+- [[concepts/monty-sandbox]] — Sandbox security model
+- [[concepts/claude-code-best-practices]] — Secure code execution
+- [[concepts/agent-loop-orchestration]] — Agent security
 
-## ソース
+## Sources
 
 - [Monty Sandbox (Pydantic)](https://github.com/pydantic/monty)
 - [Hack Monty Bounty Program](https://pydantic.dev/articles/hack-monty)

@@ -14,56 +14,56 @@ status: "draft"
 
 # SQS Lambda ESM Scaling
 
-AWS LambdaのEvent Source Mapping (ESM)はSQSキューからメッセージをPullし、Lambda関数を自動起動する仕組み。Rehan van der Merweが100回以上の実験で得た知見をまとめる。
+AWS Lambda's Event Source Mapping (ESM) pulls messages from SQS queues and automatically invokes Lambda functions. This summarizes insights from 100+ experiments conducted by Rehan van der Merwe.
 
-## 基本スケーリング動作
+## Basic Scaling Behavior
 
-- **初期状態:** 5並列呼び出し（1バッチ/呼び出し）
-- **スケールアップ:** メッセージが残っている場合、毎分+300並列呼び出し
-- **上限:** ESMあたり最大1,250並列呼び出し
-- **重要:** キュー深度はスケーリングのトリガーにならない
+- **Initial state:** 5 concurrent invocations (1 batch/invocation)
+- **Scale-up:** +300 concurrent invocations per minute if messages remain
+- **Upper limit:** Maximum 1,250 concurrent invocations per ESM
+- **Important:** Queue depth does not trigger scaling
 
-## 7つのスケーリング挙動
+## 7 Scaling Behaviors
 
-### 1. キュー深度はスケーリングを駆動しない
-ESMはキュー深度をスケーリングシグナルとして使用しない。1Kメッセージでも1Mメッセージでも呼び出し・コールドスタート率は同一。
+### 1. Queue Depth Does Not Drive Scaling
+ESM does not use queue depth as a scaling signal. Invocation and cold start rates are identical for 1K and 1M messages.
 
-### 2. バッチサイズはコールドスタートに直接影響
-バッチサイズを大きくするとコールドスタートは減少するが、呼び出し率はほぼ一定。
+### 2. Batch Size Directly Affects Cold Starts
+Increasing batch size reduces cold starts, but invocation rates remain nearly constant.
 
-### 3. 急激なランプアップ後に急落
-ESMは最初に可能な限り速く関数を呼び出し、その後定常状態に急落。短時間関数ほど変動が激しい。
+### 3. Sharp Ramp-Up Followed by Sharp Drop
+ESM initially invokes functions as fast as possible, then drops sharply to a steady state. Shorter-running functions experience more volatility.
 
-### 4. 大規模デプロイはメトリクスのみのスパイク
-大きなパッケージ(~30MB)や環境変数の変更は報告された並列数をスパイクさせるが、スループットには影響しない。
+### 4. Large Deployments Cause Metric-Only Spikes
+Large packages (~30MB) or environment variable changes spike reported concurrency but do not affect throughput.
 
-### 5. ESMは最大並列数を超えて呼び出すことがある
-ESMは設定された最大並列数を超えて呼び出すことがある。Lambda並列数制限に達してもESMはメッセージをキューに戻さない。
+### 5. ESM May Invoke Beyond Max Concurrency
+ESM may invoke beyond the configured maximum concurrency. Even if Lambda concurrency limits are reached, ESM does not return messages to the queue.
 
-### 6. ESMは必要な以上の並列数をプロビジョニングする
-「バインドなし」並列数は定常スループットに必要な値より大幅に高い。
+### 6. ESM Provisions More Concurrency Than Needed
+"Unbound" concurrency is significantly higher than needed for steady-state throughput.
 
-### 7. エラーはスループットに壊滅的影響
-1%エラー率 → 20%スループット低下。10%エラー率 → 85%低下。
+### 7. Errors Devastate Throughput
+1% error rate → 20% throughput reduction. 10% error rate → 85% reduction.
 
-## AI Agent設計への示唆
+## Implications for AI Agent Design
 
-### タスクキューパターン
-- ESMの振る舞いはAI AgentのバックグラウンドタスクキューとしてSQS+Lambdaを使用する際に重要
-- キュー深度がスケーリングのトリガーにならないため、Agentは明示的なバックプレッシャー制御が必要
-- バッチサイズ調整によりコールドスタートを最小化できる
+### Task Queue Pattern
+- ESM behavior is critical when using SQS+Lambda as background task queues for AI agents
+- Since queue depth does not trigger scaling, agents need explicit backpressure control
+- Batch size tuning can minimize cold starts
 
-### 耐障害性設計
-- エラー発生時に投げるのではなく、Batch Item Failureを使用
-- べき等性は必須（at-least-onceデリバリー）
-- 並列数制限はESM max + 5に設定
+### Fault Tolerance Design
+- Use Batch Item Failure instead of throwing on errors
+- Idempotency is required (at-least-once delivery)
+- Set concurrency limit to ESM max + 5
 
-### スケーリング最適化
-- 短時間処理関数はより高い並列数制限が必要
-- 定常状態では必要な並列数の20-70%に設定可能
-- エラー率は絶対数ではなく成功率で監視
+### Scaling Optimization
+- Short-running functions need higher concurrency limits
+- Can be set to 20-70% of needed concurrency at steady state
+- Monitor error rate as success rate, not absolute count
 
-## 出典
+## References
 - [7 SQS Lambda ESM Scaling Behaviours](https://rehanvdm.com/blog/sqs-lambda-esm-scaling-behaviour/)
 
 ## See Also

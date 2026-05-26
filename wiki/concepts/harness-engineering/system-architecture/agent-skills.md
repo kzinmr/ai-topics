@@ -16,68 +16,68 @@ sources:
   - "https://openai.com/index/harness-engineering-leveraging-codex/"
   - "https://github.com/openai/skills"
 related:
-  - " — AIスキル（汎用概念）"
-  - "[[concepts/harness-engineering]] — ハーネスエンジニアリング"
-  - "[[concepts/harness-engineering/system-architecture/container-context]] — コンテナコンテキスト"
+  - " — AI Skills (general concept)"
+  - "[[concepts/harness-engineering]] — Harness Engineering"
+  - "[[concepts/harness-engineering/system-architecture/container-context]] — Container Context"
 ---
 
 # Agent Skills (SKILL.md bundles)
 
-エージェントが再利用可能なワークフローパターンを**SKILL.md bundles**としてパッケージ化する仕組み。同じマルチステップパターンを毎回再発見・再計画するコストを削減する。
+A mechanism for agents to package reusable workflow patterns as **SKILL.md bundles**. Reduces the cost of rediscovering and replanning the same multi-step patterns on every run.
 
-## 問題意識
+## Problem Statement
 
 > "Shell commands are powerful, but many tasks repeat the same multi-step patterns. Agents have to rediscover the workflow each run — replanning, reissuing commands, and relearning conventions — leading to inconsistent results and wasted execution."
 
-## SKILL.md 構造
+## SKILL.md Structure
 
 ```
 skill-folder/
-├── SKILL.md          # メタデータ + 手順説明
-├── api-specs/        # API仕様書
-├── ui-assets/        # UIスクリーンショット、CSS参照
-└── scripts/          # 実行スクリプト（Python, bash等）
+├── SKILL.md          # Metadata + procedure description
+├── api-specs/        # API specifications
+├── ui-assets/        # UI screenshots, CSS references
+└── scripts/          # Execution scripts (Python, bash, etc.)
 ```
 
-SKILL.mdには以下が含まれる:
-- **メタデータ**: スキル名、説明、バージョン、対応モデル
-- **手順**: エージェントが従うべきステップバイステップの指示
-- **トリガー条件**: どのプロンプト/状況でこのスキルを適用すべきか
+SKILL.md includes:
+- **Metadata**: Skill name, description, version, compatible models
+- **Procedure**: Step-by-step instructions for the agent to follow
+- **Trigger conditions**: Which prompts/situations should trigger this skill
 
-## スキル読み込みシーケンス（決定論的）
+## Skill Loading Sequence (Deterministic)
 
-OpenAI Responses APIでのスキル適用は**3段階の決定論的プロセス**で動作する:
+Skill application in the OpenAI Responses API operates via a **3-stage deterministic process:**
 
-1. **スキルメタデータ取得**: 名前、説明、バージョン
-2. **スキルバンドル取得**: コンテナにコピー、展開
-3. **コンテキスト更新**: スキルメタデータとコンテナパスをモデルコンテキストに追加
+1. **Fetch skill metadata**: Name, description, version
+2. **Fetch skill bundle**: Copy to container, unpack
+3. **Update context**: Add skill metadata and container path to model context
 
 ```
 ┌─────────────┐    ┌──────────────┐    ┌──────────────┐
-│ 1. メタデータ │ → │ 2. バンドル取得 │ → │ 3. コンテキスト │
-│   取得        │    │   コンテナに  │    │   更新         │
-│              │    │   コピー/展開  │    │              │
+│ 1. Metadata  │ → │ 2. Fetch bundle│ → │ 3. Context   │
+│   Fetch      │    │   Copy/unpack │    │   Update     │
+│              │    │   to container│    │              │
 └─────────────┘    └──────────────┘    └──────────────┘
 ```
 
-## スキルの探索的実行
+## Exploratory Skill Execution
 
-モデルはスキルを読み込んだ後、**プログレッシブに探索**する:
-- シェルコマンド（`ls`, `cat`等）でスキルファイルを確認
-- 必要な情報だけを選択的に読み込み
-- スクリプトをコンテナ内で直接実行
+After loading a skill, the model **progressively explores** it:
+- Examines skill files with shell commands (`ls`, `cat`, etc.)
+- Selectively loads only the needed information
+- Executes scripts directly inside the container
 
-これは**人間の開発者がドキュメントを読んでツールを使う**のと同じパターン。
+This mirrors the same pattern as **human developers reading documentation and using tools.**
 
-## バージョン管理
+## Version Management
 
-スキルは**バージョン付きバンドル**として管理:
-- スキルIDで識別
-- バージョン番号で追跡
-- APIでアップロード・取得・更新
+Skills are managed as **versioned bundles:**
+- Identified by skill ID
+- Tracked by version number
+- Uploaded, fetched, and updated via API
 
 ```python
-# スキル付きコンテナの作成
+# Creating a skilled container
 skilled_container = client.containers.create(
     name="agent-with-skills",
     skills=[
@@ -86,28 +86,28 @@ skilled_container = client.containers.create(
 )
 ```
 
-## OpenAI harness engineeringとの関係
+## Relationship with OpenAI Harness Engineering
 
-> "OpenAIはHarness Engineering（LLMをツールで拡張して特定タスクに固定）から、より汎用的なAI Agent Engineering（シェル+スキル+コンテナで自律的に複雑ワークフロー）へ移行している。"
+> "OpenAI is evolving from Harness Engineering (extending LLMs with tools for specific tasks) toward more general AI Agent Engineering (autonomous complex workflows via shell + skills + containers)."
 
-- **Harness**: 固定ツール → 固定タスク（例: web search tool）
-- **Skills**: 再利用可能ワークフロー → 複数タスクに適用可能
+- **Harness**: Fixed tools → fixed tasks (e.g., web search tool)
+- **Skills**: Reusable workflows → applicable to multiple tasks
 
-## ベストプラクティス
+## Best Practices
 
-1. **スコープを狭く**: 1スキル = 1明確なワークフロー
-2. **バージョンピン**: 本番では固定バージョン使用
-3. **自己完結**: スキル内で必要な全リソースをバンドル
-4. **段階的探索**: モデルが必要なファイルだけを選択的に読み込む設計
+1. **Narrow scope**: 1 skill = 1 clear workflow
+2. **Pin versions**: Use fixed versions in production
+3. **Self-contained**: Bundle all required resources within the skill
+4. **Progressive exploration**: Design so models selectively load only the files they need
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/harness-engineering]] — OpenAIのツール拡張アプローチ
-- [[concepts/harness-engineering/system-architecture/container-context]] — スキルが展開される実行環境
-- [[concepts/agent-loop-orchestration]] — スキル探索と実行のループ
--  — AIスキルの汎用概念
+- [[concepts/harness-engineering]] — OpenAI's tool extension approach
+- [[concepts/harness-engineering/system-architecture/container-context]] — Runtime environment where skills are deployed
+- [[concepts/agent-loop-orchestration]] — Skill exploration and execution loop
+-  — General concept of AI skills
 
-## 参照
+## References
 
 - [OpenAI: From model to agent](https://openai.com/index/equip-responses-api-computer-environment/)
 - [[entities/openai]] — OpenAI

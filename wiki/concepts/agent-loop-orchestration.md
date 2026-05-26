@@ -24,74 +24,74 @@ sources:
 
 # Agent Loop Orchestration
 
-**Agent Loop Orchestration** は、AI エージェントが目標を達成するために繰り返す「思考 → 行動 → 評価」のサイクル（Agent Loop）を設計・管理するアーキテクチャパターン。単一のエージェント内のループ制御から、複数エージェント間の複雑なワークフロー調整までを含む。
+**Agent Loop Orchestration** is an architectural pattern for designing and managing the "think → act → evaluate" cycle (Agent Loop) that AI agents repeat to achieve goals. It ranges from loop control within a single agent to complex workflow coordination across multiple agents.
 
-## 定義 / コアアイデア
+## Definition / Core Idea
 
-従来のチャットボットが「応答」を返すのに対し、AI エージェントは「行動」する。Agent Loop はこの行動の基本的な単位であり、以下の 5 ステップで構成される：
+While traditional chatbots return "responses," AI agents take "actions." The Agent Loop is the fundamental unit of this action, consisting of 5 steps:
 
 ```
-目標（LLM）
+Goal (LLM)
   ↓
-文脈収集（Agentic API + メモリ）
+Context gathering (Agentic API + Memory)
   ↓
-計画（LLM + オーケストレーション）
+Planning (LLM + Orchestration)
   ↓
-行動（ツール・API 呼び出し）
+Action (Tool/API calls)
   ↓
-評価（バリデータ + 観測可能性）
-  ↺ または Stop
+Evaluation (Validator + Observability)
+  ↺ Or Stop
 ```
 
-## 主要なループパターン
+## Key Loop Patterns
 
-### 1. シングルエージェントループ
-最も基本的なパターン。1 つのエージェントがツールを選択・実行しながらループする。
-- **ReAct（Reasoning + Acting）**: 思考と行動を交互に繰り返す
-- **Plan-and-Execute**: 最初に計画を立ててから一括実行
-- **Reflexion**: 実行結果を自己評価して改善
+### 1. Single-Agent Loop
+The most basic pattern. One agent loops while selecting and executing tools.
+- **ReAct (Reasoning + Acting)**: Alternates between thinking and acting
+- **Plan-and-Execute**: Plans first, then executes in batch
+- **Reflexion**: Self-evaluates execution results for improvement
 
-### 2. Planner-Executor ループ
-計画担当と実行担当を分離：
-- **Planner**: 高レベル計画を立案（何をするか）
-- **Executor**: 各ステップを実行し結果を報告
-- LangChain Agents、ReAct パターンで一般的
+### 2. Planner-Executor Loop
+Separates planning and execution roles:
+- **Planner**: Creates high-level plans (what to do)
+- **Executor**: Executes each step and reports results
+- Common in LangChain Agents and ReAct patterns
 
-### 3. グループチャットループ
-複数エージェントが一つの会話スレッドで協調：
-- エージェント間の自発的協調
-- Maker-Checker パターン（作成者→検証者ループ）
-- 透明性と監査可能性が高い
-- Microsoft AutoGen の GroupChat が代表例
+### 3. Group Chat Loop
+Multiple agents collaborate in a single conversation thread:
+- Spontaneous coordination between agents
+- Maker-Checker pattern (creator → verifier loop)
+- High transparency and auditability
+- Microsoft AutoGen's GroupChat is a representative example
 
-## ループ制御の重要な設計要素
+## Key Loop Control Design Elements
 
-| 要素 | 説明 | 実装例 |
+| Element | Description | Implementation |
 |------|------|--------|
-| **反復制限** | 無限ループ防止 | 最大 10 回のループ制限 |
-| **タイムアウト** | 各ステップの最大実行時間 | 30秒/アクション、全体5分 |
-| **状態管理** | ループ間での状態保持 | チェックポイント、メモリ |
-| **フォールバック** | ループ失敗時の代替行動 | 人間へのエスカレーション |
-| **評価基準** | ループ終了条件 | タスク完了判定、品質スコア |
+| **Iteration Limit** | Prevents infinite loops | Max 10 loop iterations |
+| **Timeout** | Max execution time per step | 30s/action, 5min total |
+| **State Management** | State persistence across loops | Checkpoints, memory |
+| **Fallback** | Alternative behavior on loop failure | Human escalation |
+| **Evaluation Criteria** | Loop termination conditions | Task completion, quality score |
 
-## 課題と対策
+## Challenges and Mitigations
 
-| 課題 | 対策 |
+| Challenge | Mitigation |
 |------|------|
-| 無限ループ | 反復上限 + タイムアウト + サーキットブレーカー |
-| トークン消費増大 | コンテキスト圧縮（/compact）、状態チェックポイント |
-| 非決定的挙動 | Plan Mode での事前計画、承認ゲート |
-| ツール実行エラー | リトライロジック、フォールバックハンドラ |
+| Infinite loops | Iteration limit + timeout + circuit breaker |
+| Token consumption growth | Context compression (/compact), state checkpoints |
+| Non-deterministic behavior | Pre-planning in Plan Mode, approval gates |
+| Tool execution errors | Retry logic, fallback handlers |
 
-## 関連概念
+## Related Concepts
 
-- [[concepts/agent-orchestration-frameworks]] — オーケストレーションフレームワーク比較
-- [[concepts/agent-swarms]] — 創発的マルチエージェントシステム
-- [[concepts/claude-code-best-practices]] — Claude Code のエージェントループ活用
-- [[concepts/autoreason]] — 自己改善型推論ループ
-- [[concepts/minimal-coding-agent]] — Thorsten Ballによる400行のGo実装。3ツール(read_file/list_files/edit_file)の最小エージェントループ
+- [[concepts/agent-orchestration-frameworks]] — Orchestration framework comparison
+- [[concepts/agent-swarms]] — Emergent multi-agent systems
+- [[concepts/claude-code-best-practices]] — Agent loop utilization in Claude Code
+- [[concepts/autoreason]] — Self-improving reasoning loop
+- [[concepts/minimal-coding-agent]] — Thorsten Ball's 400-line Go implementation. Minimal agent loop with 3 tools (read_file/list_files/edit_file)
 
-## ソース
+## Sources
 
 - [The Agent Loop: How AI Agents Actually Work (You.com)](https://you.com/resources/the-agent-loop-how-ai-agents-actually-work-and-how-to-build-one)
 - [AI Agent Orchestration Patterns (Azure Architecture Center)](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns)
