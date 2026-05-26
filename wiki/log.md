@@ -11,6 +11,26 @@
 | 2026-05-26 14:50 | Updated | entities/dimitris-papailiopoulos.md — added new paper source, co-authors |
 | 2026-05-26 14:50 | Updated | entities/vaishnavi-shrivastava.md — added new paper source, co-authors |
 | 2026-05-26 14:50 | Updated | index.md — added 3 new entity entries, updated echo-rl concept entry |
+## [2026-05-26] translate | JP→EN batch #2 — 8 files
+
+### Files Translated
+- [[queries/data-analysis-open-harness]] — Data analysis harness query (1064 JP chars removed)
+- [[concepts/princeton-cos597r-deep-dive-llm]] — Princeton COS597R course page (1047 JP chars removed)
+- [[concepts/evals-for-ai-agents]] — Agent evaluation guide (984 JP chars removed)
+- [[concepts/harness-engineering/agentic-workflows/agent-first-design]] — Agent-First Codebase Design (935 JP chars removed)
+- [[comparisons/agent-harnesses]] — 9-harness comparison (1024 JP chars removed)
+- [[concepts/openai-symphony]] — OpenAI Symphony page (993 JP chars removed)
+- [[concepts/sid-1]] — SID-1 agentic retrieval model (1014 JP chars removed)
+- [[concepts/mcp]] — Model Context Protocol (1000 JP chars removed)
+
+### Summary
+- Total JP chars removed: 8,061
+- Remaining JP files (non-log): 257
+- Remaining JP chars total: ~113K
+
+---
+
+
 ## [2026-05-26] translate | JP→EN batch — 8 files
 
 ### Files Translated
